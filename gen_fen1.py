@@ -28,13 +28,13 @@ ders = {
   },
   "uniteler": [
     {"ad": "1. Ünite: Uzay Çağı", "no": 1, "konular": [
-      {"id": "u1k1", "baslik": "Uzay ve Uzay Araçları", "sayfalar": "s. 14–18", "kaynakSayfalar": [[14, 18], [23, 23]], "hazir": True},
-      {"id": "u1k2", "baslik": "Teleskoplar ve Gözlemevleri", "sayfalar": "s. 18, 21–23", "kaynakSayfalar": [[18, 18], [21, 23]], "hazir": False},
-      {"id": "u1k3", "baslik": "Türkiye Uzayda", "sayfalar": "s. 19–20, 25–28", "kaynakSayfalar": [[19, 20], [25, 28]], "hazir": False},
-      {"id": "u1k4", "baslik": "Uzay Teknolojisinin Faydaları ve Uzay Kirliliği", "sayfalar": "s. 23–24, 29–32", "kaynakSayfalar": [[23, 24], [29, 32]], "hazir": False},
-      {"id": "u1k5", "baslik": "Yıldızların Doğumu ve Yaşamı", "sayfalar": "s. 33–41", "kaynakSayfalar": [[33, 41]], "hazir": False},
-      {"id": "u1k6", "baslik": "Takımyıldızlar", "sayfalar": "s. 42–44", "kaynakSayfalar": [[42, 44]], "hazir": False},
-      {"id": "u1k7", "baslik": "Galaksi ve Evren", "sayfalar": "s. 45–49", "kaynakSayfalar": [[45, 49]], "hazir": False}]},
+      {"id": "u1k1", "baslik": "Uzay ve Uzay Araçları", "sayfalar": "s. 15–19", "kaynakSayfalar": [[15, 19], [24, 24]], "hazir": True},
+      {"id": "u1k2", "baslik": "Teleskoplar ve Gözlemevleri", "sayfalar": "s. 19, 22–23", "kaynakSayfalar": [[19, 19], [22, 23]], "hazir": False},
+      {"id": "u1k3", "baslik": "Türkiye Uzayda", "sayfalar": "s. 20–21, 26–28", "kaynakSayfalar": [[20, 21], [26, 28]], "hazir": False},
+      {"id": "u1k4", "baslik": "Uzay Teknolojisinin Faydaları ve Uzay Kirliliği", "sayfalar": "s. 24–25, 30–32", "kaynakSayfalar": [[24, 25], [30, 32]], "hazir": False},
+      {"id": "u1k5", "baslik": "Yıldızların Doğumu ve Yaşamı", "sayfalar": "s. 34–42", "kaynakSayfalar": [[34, 42]], "hazir": False},
+      {"id": "u1k6", "baslik": "Takımyıldızlar", "sayfalar": "s. 43–45", "kaynakSayfalar": [[43, 45]], "hazir": False},
+      {"id": "u1k7", "baslik": "Galaksi ve Evren", "sayfalar": "s. 46–50", "kaynakSayfalar": [[46, 50]], "hazir": False}]},
     {"ad": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim", "no": 2, "konular": []},
     {"ad": "3. Ünite: Vücudumuzdaki Sistemler", "no": 3, "konular": []}
   ]
@@ -44,7 +44,7 @@ def S(soru, secenekler, dogru, ipucu, aciklama):
     return {"soru": soru, "secenekler": secenekler, "dogru": dogru, "ipucu": ipucu, "aciklama": aciklama}
 
 konu = {
-  "id": "u1k1", "unite": "1. Ünite: Uzay Çağı", "baslik": "Uzay ve Uzay Araçları", "sayfalar": "s. 14–18",
+  "id": "u1k1", "unite": "1. Ünite: Uzay Çağı", "baslik": "Uzay ve Uzay Araçları", "sayfalar": "s. 15–19",
   "giris": "Uzay, Dünya'nın atmosferinin dışında kalan çok geniş bir ortamdır. Güneş, Ay, yıldızlar ve gezegenler buradadır. İnsanlar uzayı tanımak için 6 önemli araç geliştirdi. Şimdi onları tek tek tanıyacağız.",
   "kavramlar": [
     {"ad": "Uzay Roketi", "renk": "#e63946", "svg": SVG["Uzay Roketi"],
@@ -52,37 +52,37 @@ konu = {
      "ek": "Yakıt, motor ve egzoz bölümleri vardır. Önceden tek kullanımlıktı, artık yeniden kullanılabiliyor. Dünya'dan kontrol edilir.",
      "akilda": "Uzay taksisi",
      "soru": S("Uzay roketinin görevi nedir?", ["Gök cisimlerini gözlemlemek", "Uzay araçlarını uzaya taşımak", "Astronotlara ev olmak"], 1,
-               "\"Akılda kalsın\" ifadesini hatırla: uzay taksisi. Taksi ne yapar?", "Roket, uzay araçlarını yeryüzünden yörüngeye veya daha uzağa taşır. (s. 17)")},
+               "\"Akılda kalsın\" ifadesini hatırla: uzay taksisi. Taksi ne yapar?", "Roket, uzay araçlarını yeryüzünden yörüngeye veya daha uzağa taşır. (s. 18)")},
     {"ad": "Yapay Uydu", "renk": "#c99a06", "svg": SVG["Yapay Uydu"],
      "aciklama": "Dünya'nın veya başka bir gök cisminin çevresinde belirli bir yörüngede döner.",
      "ek": "İletişim, gözlem ve keşif için kullanılır. Enerjisini güneş panellerinden alır. Dünya'dan kontrol edilir.",
      "akilda": "Televizyon, harita, hava durumu",
      "soru": S("Yapay uydu uzayda ne yapar?", ["Bir gök cisminin çevresinde belirli bir yörüngede döner", "Gezegenlerin yüzeyine iner", "Astronotları istasyona taşır"], 0,
-               "Uydunun hareketini düşün: bir şeyin etrafında ne yapıyordu?", "Yapay uydular belirli bir yörüngede dolanır; iletişim, gözlem ve keşif için kullanılır. (s. 17)")},
+               "Uydunun hareketini düşün: bir şeyin etrafında ne yapıyordu?", "Yapay uydular belirli bir yörüngede dolanır; iletişim, gözlem ve keşif için kullanılır. (s. 18)")},
     {"ad": "Uzay Sondası", "renk": "#d9602b", "svg": SVG["Uzay Sondası"],
      "aciklama": "Bir gök cismini ya da uzaydaki olayları incelemek için gönderilen robot araçtır.",
      "ek": "İçinde insan yoktur, Dünya'dan kontrol edilir. Enerjisi güneş panellerinden gelir.",
      "akilda": "Robot kâşif",
      "soru": S("Uzay sondasını kim kontrol eder?", ["İçindeki astronotlar", "Dünya'daki kontrol merkezi", "Uzay istasyonundaki pilot"], 1,
-               "Sonda bir robottur. Robotun içinde insan var mı?", "Uzay sondası robotik bir araçtır, içinde insan yoktur ve Dünya'dan kontrol edilir. (s. 17)")},
+               "Sonda bir robottur. Robotun içinde insan var mı?", "Uzay sondası robotik bir araçtır, içinde insan yoktur ve Dünya'dan kontrol edilir. (s. 18)")},
     {"ad": "Uzay Mekiği", "renk": "#5b6475", "svg": SVG["Uzay Mekiği"],
      "aciklama": "Astronotları, büyük uyduları ve malzemeleri uzay istasyonuna taşır.",
      "ek": "Yeniden kullanılabilir. Onu içindeki astronotlar kontrol eder.",
      "akilda": "Astronot servisi",
      "soru": S("Uzay mekiği neleri uzay istasyonuna taşır?", ["Sadece yakıt", "Hiçbir şey taşımaz, sadece gözlem yapar", "Astronotları, büyük uyduları ve malzemeleri"], 2,
-               "\"Astronot servisi\" ifadesini hatırla. Servis kimleri taşır?", "Uzay mekiği astronotları, büyük uyduları ve gerekli malzemeleri uzay istasyonuna taşır. (s. 17)")},
+               "\"Astronot servisi\" ifadesini hatırla. Servis kimleri taşır?", "Uzay mekiği astronotları, büyük uyduları ve gerekli malzemeleri uzay istasyonuna taşır. (s. 18)")},
     {"ad": "Uzay İstasyonu", "renk": "#1d6fa3", "svg": SVG["Uzay İstasyonu"],
      "aciklama": "Yörüngede dolanan, astronotların yaşayıp deney yaptığı araçtır.",
      "ek": "Düşük yer çekimli ortamda deney yapılır. Yeniden kullanılamaz ama bakım ve onarımla ömrü uzatılır.",
      "akilda": "Uzaydaki ev + laboratuvar",
      "soru": S("Astronotlar uzay istasyonunda ne yapar?", ["Yaşar ve bilimsel deney yapar", "Sadece fotoğraf çeker", "Roket yakıtı üretir"], 0,
-               "\"Ev + laboratuvar\" ifadesini düşün. Evde ne yapılır, laboratuvarda ne yapılır?", "Uzay istasyonunda astronotlar yaşar ve düşük yer çekimli ortamda deney yapar. (s. 18)")},
+               "\"Ev + laboratuvar\" ifadesini düşün. Evde ne yapılır, laboratuvarda ne yapılır?", "Uzay istasyonunda astronotlar yaşar ve düşük yer çekimli ortamda deney yapar. (s. 19)")},
     {"ad": "Teleskop", "renk": "#2d6a4f", "svg": SVG["Teleskop"],
      "aciklama": "Gök cisimlerini gözlemlemek için kullanılır.",
      "ek": "Artık Dünya'nın yörüngesine de çıkarılabiliyor. Orada daha net görüntü alır.",
      "akilda": "Uzayın dürbünü",
      "soru": S("Teleskop ne için kullanılır?", ["Uyduları uzaya taşımak için", "Gök cisimlerini gözlemlemek için", "Astronotların yaşaması için"], 1,
-               "Dürbünle ne yaparız?", "Teleskoplar gök cisimlerini gözlemlemek için kullanılır. (s. 18)")}
+               "Dürbünle ne yaparız?", "Teleskoplar gök cisimlerini gözlemlemek için kullanılır. (s. 19)")}
   ],
   "gruplar": [
     {"soru": "Kim kontrol eder?", "kutular": [
@@ -96,8 +96,8 @@ konu = {
       {"etiket": "Hayır (bakımla ömrü uzar)", "uyeler": ["Uzay İstasyonu"]}]}
   ],
   "biliyorMusun": [
-    "Türkiye'nin ilk yerli ve millî haberleşme uydusu Türksat 6A, 9 Temmuz 2024'te uzaya gönderildi. (s. 14)",
-    "Uydularımız sayesinde hava olayları gözlenir, fay hatları belirlenir, navigasyonla yol bulunur. (s. 14)"
+    "Türkiye'nin ilk yerli ve millî haberleşme uydusu Türksat 6A, 9 Temmuz 2024'te uzaya gönderildi. (s. 15)",
+    "Uydularımız sayesinde hava olayları gözlenir, fay hatları belirlenir, navigasyonla yol bulunur. (s. 15)"
   ],
   "akildaKalsin": [
     "Uzay boş değildir: az miktarda gaz, toz ve parçacık vardır.",
@@ -107,12 +107,12 @@ konu = {
     "Uzaya çıkarılan teleskop daha net görür."
   ],
   "merakKutusu": [
-    {"soru": "Uzay gerçekten bomboş mu?", "cevap": "Hayır. Uzayda çok az miktarda gaz, toz ve küçük parçacıklar vardır. (s. 15)"},
-    {"soru": "Roketler tekrar kullanılabilir mi?", "cevap": "Eskiden tek kullanımlıktı. Yeni teknolojiler sayesinde artık yeniden kullanılabilen roketler üretiliyor. (s. 17)"},
-    {"soru": "Uydular günlük hayatımızda ne işe yarar?", "cevap": "Hava olaylarını gözlemek, deprem bilimi için fay hatlarını belirlemek ve navigasyonla yol bulmak uydular sayesinde olur. (s. 14)"},
-    {"soru": "Uzay araçları enerjiyi nereden alır?", "cevap": "Yapay uydu, uzay sondası ve uzay istasyonu, güneş enerjisini elektrik enerjisine çeviren güneş panellerini kullanır. (s. 17–18)"},
-    {"soru": "Teleskop neden uzaya gönderilir?", "cevap": "Dünya'nın yörüngesine çıkarılan teleskoplar daha net görüntü elde eder. Nedenini bir sonraki konuda öğreneceğiz. (s. 18)"},
-    {"soru": "Uzay istasyonu eskirse ne olur?", "cevap": "Uzay istasyonu yeniden kullanılamaz ama bakım ve onarım yapılarak ömrü uzatılabilir. (s. 18)"}
+    {"soru": "Uzay gerçekten bomboş mu?", "cevap": "Hayır. Uzayda çok az miktarda gaz, toz ve küçük parçacıklar vardır. (s. 16)"},
+    {"soru": "Roketler tekrar kullanılabilir mi?", "cevap": "Eskiden tek kullanımlıktı. Yeni teknolojiler sayesinde artık yeniden kullanılabilen roketler üretiliyor. (s. 18)"},
+    {"soru": "Uydular günlük hayatımızda ne işe yarar?", "cevap": "Hava olaylarını gözlemek, deprem bilimi için fay hatlarını belirlemek ve navigasyonla yol bulmak uydular sayesinde olur. (s. 15)"},
+    {"soru": "Uzay araçları enerjiyi nereden alır?", "cevap": "Yapay uydu, uzay sondası ve uzay istasyonu, güneş enerjisini elektrik enerjisine çeviren güneş panellerini kullanır. (s. 18–19)"},
+    {"soru": "Teleskop neden uzaya gönderilir?", "cevap": "Dünya'nın yörüngesine çıkarılan teleskoplar daha net görüntü elde eder. Nedenini bir sonraki konuda öğreneceğiz. (s. 19)"},
+    {"soru": "Uzay istasyonu eskirse ne olur?", "cevap": "Uzay istasyonu yeniden kullanılamaz ama bakım ve onarım yapılarak ömrü uzatılabilir. (s. 19)"}
   ],
   "dusunVeYaz": [
     {"soru": "Uzay mekiği ile uzay roketi arasındaki bir benzerliği ve bir farkı yaz.",
@@ -121,23 +121,23 @@ konu = {
   ],
   "sorular": [
     S("Uzay için hangisi doğrudur?", ["Tamamen boştur", "Az miktarda gaz, toz ve parçacık vardır", "Sadece yıldızlar vardır"], 1,
-      "Uzayın tanımında \"tamamen boş olmayan\" ifadesi geçiyordu.", "Uzay tamamen boş değildir; çok az miktarda gaz, toz ve çeşitli parçacıklar bulunur. (s. 15)"),
+      "Uzayın tanımında \"tamamen boş olmayan\" ifadesi geçiyordu.", "Uzay tamamen boş değildir; çok az miktarda gaz, toz ve çeşitli parçacıklar bulunur. (s. 16)"),
     S("Uzay araçlarını yeryüzünden yörüngeye taşıyan araç hangisidir?", ["Uzay roketi", "Teleskop", "Uzay sondası"], 0,
-      "Uzay taksisi hangisiydi?", "Uzay roketi, uzay araçlarını yörüngeye veya daha uzak bölgelere taşır. (s. 17)"),
+      "Uzay taksisi hangisiydi?", "Uzay roketi, uzay araçlarını yörüngeye veya daha uzak bölgelere taşır. (s. 18)"),
     S("Bir gök cismini incelemek için gönderilen, Dünya'dan kontrol edilen robot araç hangisidir?", ["Uzay mekiği", "Uzay sondası", "Uzay istasyonu"], 1,
-      "\"Robot kâşif\" hangisiydi?", "Uzay sondası robotik bir araçtır ve Dünya'dan kontrol edilir. (s. 17)"),
+      "\"Robot kâşif\" hangisiydi?", "Uzay sondası robotik bir araçtır ve Dünya'dan kontrol edilir. (s. 18)"),
     S("İletişim, gözlem ve keşif için Dünya'nın çevresinde dolanan araç hangisidir?", ["Uzay mekiği", "Uzay roketi", "Yapay uydu"], 2,
-      "Televizyon ve hava durumu hangi araç sayesinde çalışıyordu?", "Yapay uydular belirli bir yörüngede dolanır ve Dünya'dan kontrol edilir. (s. 17)"),
+      "Televizyon ve hava durumu hangi araç sayesinde çalışıyordu?", "Yapay uydular belirli bir yörüngede dolanır ve Dünya'dan kontrol edilir. (s. 18)"),
     S("Uzay mekiğini kim kontrol eder?", ["Dünya'daki bilgisayarlar", "İçindeki astronotlar", "Uzay istasyonu"], 1,
-      "Mekik bir \"astronot servisi\". Servisi kim kullanır?", "Mekiğin kontrolünü içinde görev alan astronotlar yapar. (s. 17)"),
+      "Mekik bir \"astronot servisi\". Servisi kim kullanır?", "Mekiğin kontrolünü içinde görev alan astronotlar yapar. (s. 18)"),
     S("Astronotların düşük yer çekimli ortamda deney yaptığı araç hangisidir?", ["Uzay istasyonu", "Yapay uydu", "Teleskop"], 0,
-      "Uzaydaki ev + laboratuvar hangisiydi?", "Uzay istasyonunda astronotların yaşam alanı ve deney donanımı vardır. (s. 18)"),
+      "Uzaydaki ev + laboratuvar hangisiydi?", "Uzay istasyonunda astronotların yaşam alanı ve deney donanımı vardır. (s. 19)"),
     S("Hangisi güneş paneli kullanmaz?", ["Yapay uydu", "Uzay istasyonu", "Uzay roketi"], 2,
-      "Gruplayalım bölümündeki \"Güneş paneli kullanır mı?\" sorusunu hatırla.", "Kitaptaki örnek: Yapay uyduda güneş panelleri kullanılır, uzay roketinde kullanılmaz. (s. 23)"),
+      "Gruplayalım bölümündeki \"Güneş paneli kullanır mı?\" sorusunu hatırla.", "Kitaptaki örnek: Yapay uyduda güneş panelleri kullanılır, uzay roketinde kullanılmaz. (s. 24)"),
     S("Önceden tek kullanımlık olan, artık yeniden kullanılabilen araç hangisidir?", ["Uzay roketi", "Uzay istasyonu", "Uzay sondası"], 0,
-      "Uzay istasyonu yeniden kullanılamıyordu. Diğer iki seçeneği düşün.", "Yeni teknolojiler sayesinde uzay roketleri yeniden kullanılabilir şekilde üretiliyor. (s. 17)"),
+      "Uzay istasyonu yeniden kullanılamıyordu. Diğer iki seçeneği düşün.", "Yeni teknolojiler sayesinde uzay roketleri yeniden kullanılabilir şekilde üretiliyor. (s. 18)"),
     S("Teleskoplar Dünya'nın yörüngesine çıkarılınca ne olur?", ["Görüntü bulanıklaşır", "Sadece gündüz çalışır", "Daha net görüntü elde edilir"], 2,
-      "Uzaya çıkarmanın amacı daha iyi görmektir.", "Yörüngedeki teleskoplar daha net görüntüler elde eder. (s. 18)")
+      "Uzaya çıkarmanın amacı daha iyi görmektir.", "Yörüngedeki teleskoplar daha net görüntüler elde eder. (s. 19)")
   ]
 }
 
