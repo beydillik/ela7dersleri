@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ela'nın 7. Sınıf Defteri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="ortak/defter.css">
+<style>
+  .home { padding-block: 28px 60px; display: grid; gap: 26px; }
+  .intro-text { max-width: 60ch; margin: 0; font-size: 1.05em; }
+  .term { display: grid; gap: 12px; }
+  .term h2 { font-size: 26px; }
+  .subjects { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+  .subj { background: var(--surface); border-radius: 20px; box-shadow: var(--shadow); padding: 16px; display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; text-decoration: none; color: inherit; border: 2px solid transparent; }
+  a.subj:hover { border-color: var(--accent); }
+  .subj .m { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; font-family: var(--display); font-size: 26px; font-weight: 800; color: #fff; }
+  .subj .m svg { width: 64px; height: 64px; }
+  .subj h3 { font-size: 22px; }
+  .subj p { margin: 2px 0 0; font-size: 15px; color: var(--muted); font-weight: 700; }
+  .subj.off { opacity: .6; box-shadow: none; border: 2px dashed var(--line); }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="wrap"><div class="brand"><div class="eyebrow">7. Sınıf · 2026–2027</div><h1>Ela'nın 7. Sınıf Defteri</h1></div></div>
+</header>
+<div class="wrap home">
+  <p class="intro-text">Her ders için konular kitaptaki sırayla burada. Önce <b>Öğren</b> bölümünde konuyu adım adım çalış, sonra <b>Tekrar</b> ve <b>Test</b> ile pekiştir.</p>
+  <section class="term">
+    <h2>1. Dönem</h2>
+    <div class="subjects">
+      <a class="subj" href="fen1/">
+        <span class="m"><svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' aria-hidden="true"><circle cx='32' cy='32' r='32' fill='#ff7a33'/><ellipse cx='32' cy='36' rx='26' ry='9' fill='none' stroke='#f2c14e' stroke-width='2.5' transform='rotate(-18 32 36)'/><path d='M32 8v8' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/><circle cx='32' cy='7' r='4' fill='#f2c14e'/><rect x='16' y='16' width='32' height='28' rx='10' fill='#f5f6fa'/><rect x='20' y='22' width='24' height='13' rx='6' fill='#1b2340'/><circle cx='27' cy='28.5' r='3.2' fill='#8ee3d6'/><circle cx='37' cy='28.5' r='3.2' fill='#8ee3d6'/><path d='M27 39q5 3.5 10 0' stroke='#1b2340' stroke-width='2.2' fill='none' stroke-linecap='round'/><rect x='22' y='44' width='20' height='10' rx='4' fill='#1b2340'/><circle cx='32' cy='49' r='2.5' fill='#f2c14e'/></svg></span>
+        <span><h3>Fen Bilimleri</h3><p>Robot: Kuark</p></span></a>
+      <div class="subj off"><span class="m" style="background:#1f9e8f">P</span><span><h3>Matematik</h3><p>Robot: Pisi · yakında</p></span></div>
+      <div class="subj off"><span class="m" style="background:#c99a06">H</span><span><h3>Türkçe</h3><p>Robot: Hece · yakında</p></span></div>
+      <div class="subj off"><span class="m" style="background:#5b6475">P</span><span><h3>Sosyal Bilgiler</h3><p>Robot: Pusula · yakında</p></span></div>
+      <div class="subj off"><span class="m" style="background:#1d6fa3">P</span><span><h3>İngilizce</h3><p>Robot: Polly · yakında</p></span></div>
+    </div>
+  </section>
+</div>
+<script>
+(() => {
+  const cv = document.getElementById("stars"), r = cv.getBoundingClientRect(), d = devicePixelRatio || 1;
+  cv.width = r.width * d; cv.height = r.height * d; const g = cv.getContext("2d"); g.scale(d, d);
+  let s = 7; const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  for (let i = 0; i < r.width / 6; i++) { g.globalAlpha = .35 + rnd() * .6; g.fillStyle = "#fff"; g.beginPath(); g.arc(rnd() * r.width, rnd() * r.height, rnd() * 1.4 + .3, 0, 7); g.fill(); }
+})();
+</script>
+</body>
+</html>

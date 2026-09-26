@@ -1,0 +1,135 @@
+{
+ "kod": "fen1",
+ "ders": "Fen Bilimleri",
+ "sinif": "7. Sınıf",
+ "donem": "1. Dönem",
+ "bot": {
+  "ad": "Kuark",
+  "svg": "<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Kuark'><circle cx='32' cy='32' r='32' fill='#ff7a33'/><ellipse cx='32' cy='36' rx='26' ry='9' fill='none' stroke='#f2c14e' stroke-width='2.5' transform='rotate(-18 32 36)'/><path d='M32 8v8' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/><circle cx='32' cy='7' r='4' fill='#f2c14e'/><rect x='16' y='16' width='32' height='28' rx='10' fill='#f5f6fa'/><rect x='20' y='22' width='24' height='13' rx='6' fill='#1b2340'/><circle cx='27' cy='28.5' r='3.2' fill='#8ee3d6'/><circle cx='37' cy='28.5' r='3.2' fill='#8ee3d6'/><path d='M27 39q5 3.5 10 0' stroke='#1b2340' stroke-width='2.2' fill='none' stroke-linecap='round'/><rect x='22' y='44' width='20' height='10' rx='4' fill='#1b2340'/><circle cx='32' cy='49' r='2.5' fill='#f2c14e'/></svg>",
+  "karsilama": "Merhaba! Ben Kuark, Fen Bilimleri robotuyum. Şu an \"{konu}\" konusundayız. Ne merak ediyorsun?",
+  "oneriler": [
+   "Bu konuyu bana kısaca anlat",
+   "Bir örnekle açıklar mısın?",
+   "Bana kolay bir soru sor",
+   "Hangi kavramlar önemli?"
+  ]
+ },
+ "uniteler": [
+  {
+   "ad": "1. Ünite: Uzay Çağı",
+   "no": 1,
+   "konular": [
+    {
+     "id": "u1k1",
+     "baslik": "Uzay ve Uzay Araçları",
+     "sayfalar": "s. 14–18",
+     "kaynakSayfalar": [
+      [
+       14,
+       18
+      ],
+      [
+       23,
+       23
+      ]
+     ],
+     "hazir": true
+    },
+    {
+     "id": "u1k2",
+     "baslik": "Teleskoplar ve Gözlemevleri",
+     "sayfalar": "s. 18, 21–23",
+     "kaynakSayfalar": [
+      [
+       18,
+       18
+      ],
+      [
+       21,
+       23
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k3",
+     "baslik": "Türkiye Uzayda",
+     "sayfalar": "s. 19–20, 25–28",
+     "kaynakSayfalar": [
+      [
+       19,
+       20
+      ],
+      [
+       25,
+       28
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k4",
+     "baslik": "Uzay Teknolojisinin Faydaları ve Uzay Kirliliği",
+     "sayfalar": "s. 23–24, 29–32",
+     "kaynakSayfalar": [
+      [
+       23,
+       24
+      ],
+      [
+       29,
+       32
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k5",
+     "baslik": "Yıldızların Doğumu ve Yaşamı",
+     "sayfalar": "s. 33–41",
+     "kaynakSayfalar": [
+      [
+       33,
+       41
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k6",
+     "baslik": "Takımyıldızlar",
+     "sayfalar": "s. 42–44",
+     "kaynakSayfalar": [
+      [
+       42,
+       44
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k7",
+     "baslik": "Galaksi ve Evren",
+     "sayfalar": "s. 45–49",
+     "kaynakSayfalar": [
+      [
+       45,
+       49
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+   "no": 2,
+   "konular": []
+  },
+  {
+   "ad": "3. Ünite: Vücudumuzdaki Sistemler",
+   "no": 3,
+   "konular": []
+  }
+ ]
+}

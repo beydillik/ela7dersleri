@@ -1,0 +1,333 @@
+{
+ "id": "u1k1",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Uzay ve Uzay Araçları",
+ "sayfalar": "s. 14–18",
+ "giris": "Uzay, Dünya'nın atmosferinin dışında kalan çok geniş bir ortamdır. Güneş, Ay, yıldızlar ve gezegenler buradadır. İnsanlar uzayı tanımak için 6 önemli araç geliştirdi. Şimdi onları tek tek tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Uzay Roketi",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='80' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='86' cy='100' r='1.2'/></g><path d='M50 78 L38 92 L38 74 L50 64Z' fill='#e63946'/><path d='M70 78 L82 92 L82 74 L70 64Z' fill='#e63946'/><rect x='50' y='38' width='20' height='44' rx='4' fill='#f5f6fa'/><path d='M50 40 Q60 14 70 40Z' fill='#e63946'/><circle cx='60' cy='55' r='5' fill='#8ecae6' stroke='#457b9d' stroke-width='2'/><path d='M52 82 L60 106 L68 82Z' fill='#ffb703'/><path d='M56 82 L60 96 L64 82Z' fill='#ff7a33'/></svg>",
+   "aciklama": "Uzay araçlarını yeryüzünden yörüngeye veya daha uzağa taşır.",
+   "ek": "Yakıt, motor ve egzoz bölümleri vardır. Önceden tek kullanımlıktı, artık yeniden kullanılabiliyor. Dünya'dan kontrol edilir.",
+   "akilda": "Uzay taksisi",
+   "soru": {
+    "soru": "Uzay roketinin görevi nedir?",
+    "secenekler": [
+     "Gök cisimlerini gözlemlemek",
+     "Uzay araçlarını uzaya taşımak",
+     "Astronotlara ev olmak"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla: uzay taksisi. Taksi ne yapar?",
+    "aciklama": "Roket, uzay araçlarını yeryüzünden yörüngeye veya daha uzağa taşır. (s. 17)"
+   }
+  },
+  {
+   "ad": "Yapay Uydu",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='80' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='86' cy='100' r='1.2'/></g><circle cx='60' cy='150' r='62' fill='#1f9e8f'/><ellipse cx='48' cy='96' rx='16' ry='6' fill='#52b788'/><rect x='10' y='40' width='32' height='16' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='78' y='40' width='32' height='16' fill='#2d6cdf' stroke='#9cc3ff'/><path d='M18 40v16M26 40v16M34 40v16M86 40v16M94 40v16M102 40v16' stroke='#9cc3ff'/><path d='M42 48h36' stroke='#ced4da' stroke-width='2'/><rect x='50' y='36' width='20' height='24' rx='2' fill='#f2c14e'/><path d='M52 60 a8 8 0 0 0 16 0Z' fill='#f5f6fa'/><path d='M52 72 q8 -5 16 0 M48 78 q12 -7 24 0' stroke='#f2c14e' stroke-width='2' fill='none'/></svg>",
+   "aciklama": "Dünya'nın veya başka bir gök cisminin çevresinde belirli bir yörüngede döner.",
+   "ek": "İletişim, gözlem ve keşif için kullanılır. Enerjisini güneş panellerinden alır. Dünya'dan kontrol edilir.",
+   "akilda": "Televizyon, harita, hava durumu",
+   "soru": {
+    "soru": "Yapay uydu uzayda ne yapar?",
+    "secenekler": [
+     "Bir gök cisminin çevresinde belirli bir yörüngede döner",
+     "Gezegenlerin yüzeyine iner",
+     "Astronotları istasyona taşır"
+    ],
+    "dogru": 0,
+    "ipucu": "Uydunun hareketini düşün: bir şeyin etrafında ne yapıyordu?",
+    "aciklama": "Yapay uydular belirli bir yörüngede dolanır; iletişim, gözlem ve keşif için kullanılır. (s. 17)"
+   }
+  },
+  {
+   "ad": "Uzay Sondası",
+   "renk": "#d9602b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='80' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='86' cy='100' r='1.2'/></g><circle cx='96' cy='28' r='11' fill='#e76f51'/><ellipse cx='96' cy='28' rx='18' ry='4' fill='none' stroke='#f4a261' stroke-width='2'/><path d='M30 52 a24 24 0 0 0 48 0Z' fill='#f5f6fa' stroke='#adb5bd' stroke-width='2'/><path d='M54 52 V34' stroke='#adb5bd' stroke-width='2'/><rect x='46' y='70' width='16' height='14' fill='#f4a261' stroke='#8d5524'/><path d='M62 78 L96 96 M46 78 L16 96' stroke='#ced4da' stroke-width='2'/><circle cx='96' cy='96' r='4' fill='#ced4da'/><circle cx='16' cy='96' r='4' fill='#ced4da'/></svg>",
+   "aciklama": "Bir gök cismini ya da uzaydaki olayları incelemek için gönderilen robot araçtır.",
+   "ek": "İçinde insan yoktur, Dünya'dan kontrol edilir. Enerjisi güneş panellerinden gelir.",
+   "akilda": "Robot kâşif",
+   "soru": {
+    "soru": "Uzay sondasını kim kontrol eder?",
+    "secenekler": [
+     "İçindeki astronotlar",
+     "Dünya'daki kontrol merkezi",
+     "Uzay istasyonundaki pilot"
+    ],
+    "dogru": 1,
+    "ipucu": "Sonda bir robottur. Robotun içinde insan var mı?",
+    "aciklama": "Uzay sondası robotik bir araçtır, içinde insan yoktur ve Dünya'dan kontrol edilir. (s. 17)"
+   }
+  },
+  {
+   "ad": "Uzay Mekiği",
+   "renk": "#5b6475",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='80' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='86' cy='100' r='1.2'/></g><path d='M28 76 L60 54 L92 76Z' fill='#adb5bd'/><rect x='50' y='30' width='20' height='62' rx='8' fill='#f5f6fa' stroke='#6c757d'/><path d='M50 38 Q60 12 70 38Z' fill='#343a40'/><rect x='54' y='40' width='12' height='6' fill='#8ecae6'/><path d='M57 66 L60 50 L63 66Z' fill='#343a40'/><path d='M53 92 L60 110 L67 92Z' fill='#ffb703'/></svg>",
+   "aciklama": "Astronotları, büyük uyduları ve malzemeleri uzay istasyonuna taşır.",
+   "ek": "Yeniden kullanılabilir. Onu içindeki astronotlar kontrol eder.",
+   "akilda": "Astronot servisi",
+   "soru": {
+    "soru": "Uzay mekiği neleri uzay istasyonuna taşır?",
+    "secenekler": [
+     "Sadece yakıt",
+     "Hiçbir şey taşımaz, sadece gözlem yapar",
+     "Astronotları, büyük uyduları ve malzemeleri"
+    ],
+    "dogru": 2,
+    "ipucu": "\"Astronot servisi\" ifadesini hatırla. Servis kimleri taşır?",
+    "aciklama": "Uzay mekiği astronotları, büyük uyduları ve gerekli malzemeleri uzay istasyonuna taşır. (s. 17)"
+   }
+  },
+  {
+   "ad": "Uzay İstasyonu",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='80' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='86' cy='100' r='1.2'/></g><circle cx='60' cy='160' r='64' fill='#1d6fa3'/><path d='M8 58h104' stroke='#ced4da' stroke-width='3'/><g fill='#2d6cdf' stroke='#9cc3ff'><rect x='12' y='26' width='14' height='26'/><rect x='30' y='26' width='14' height='26'/><rect x='76' y='26' width='14' height='26'/><rect x='94' y='26' width='14' height='26'/><rect x='12' y='64' width='14' height='26'/><rect x='30' y='64' width='14' height='26'/><rect x='76' y='64' width='14' height='26'/><rect x='94' y='64' width='14' height='26'/></g><rect x='50' y='34' width='20' height='48' rx='8' fill='#f5f6fa' stroke='#6c757d'/><circle cx='60' cy='58' r='5' fill='#8ecae6'/></svg>",
+   "aciklama": "Yörüngede dolanan, astronotların yaşayıp deney yaptığı araçtır.",
+   "ek": "Düşük yer çekimli ortamda deney yapılır. Yeniden kullanılamaz ama bakım ve onarımla ömrü uzatılır.",
+   "akilda": "Uzaydaki ev + laboratuvar",
+   "soru": {
+    "soru": "Astronotlar uzay istasyonunda ne yapar?",
+    "secenekler": [
+     "Yaşar ve bilimsel deney yapar",
+     "Sadece fotoğraf çeker",
+     "Roket yakıtı üretir"
+    ],
+    "dogru": 0,
+    "ipucu": "\"Ev + laboratuvar\" ifadesini düşün. Evde ne yapılır, laboratuvarda ne yapılır?",
+    "aciklama": "Uzay istasyonunda astronotlar yaşar ve düşük yer çekimli ortamda deney yapar. (s. 18)"
+   }
+  },
+  {
+   "ad": "Teleskop",
+   "renk": "#2d6a4f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='80' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='86' cy='100' r='1.2'/></g><rect x='0' y='90' width='120' height='30' rx='0' fill='#2d6a4f'/><path d='M0 92 L36 80 L70 90 L120 82 V94 H0Z' fill='#40916c'/><path d='M60 60 L44 100 M60 60 L76 100 M60 60 V102' stroke='#adb5bd' stroke-width='3'/><path d='M30 70 L34 62 L92 30 L96 38Z' fill='#f5f6fa' stroke='#6c757d' stroke-width='1.5'/><path d='M92 30 L100 26 L104 34 L96 38Z' fill='#e63946'/><circle cx='60' cy='52' r='4' fill='#6c757d'/><circle cx='104' cy='12' r='3' fill='#f2c14e'/></svg>",
+   "aciklama": "Gök cisimlerini gözlemlemek için kullanılır.",
+   "ek": "Artık Dünya'nın yörüngesine de çıkarılabiliyor. Orada daha net görüntü alır.",
+   "akilda": "Uzayın dürbünü",
+   "soru": {
+    "soru": "Teleskop ne için kullanılır?",
+    "secenekler": [
+     "Uyduları uzaya taşımak için",
+     "Gök cisimlerini gözlemlemek için",
+     "Astronotların yaşaması için"
+    ],
+    "dogru": 1,
+    "ipucu": "Dürbünle ne yaparız?",
+    "aciklama": "Teleskoplar gök cisimlerini gözlemlemek için kullanılır. (s. 18)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Kim kontrol eder?",
+   "kutular": [
+    {
+     "etiket": "Dünya'dan kontrol edilir",
+     "uyeler": [
+      "Uzay Roketi",
+      "Yapay Uydu",
+      "Uzay Sondası"
+     ]
+    },
+    {
+     "etiket": "İçindeki insanlar kontrol eder",
+     "uyeler": [
+      "Uzay Mekiği",
+      "Uzay İstasyonu"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Güneş paneli kullanır mı?",
+   "kutular": [
+    {
+     "etiket": "Evet",
+     "uyeler": [
+      "Yapay Uydu",
+      "Uzay Sondası",
+      "Uzay İstasyonu"
+     ]
+    },
+    {
+     "etiket": "Hayır",
+     "uyeler": [
+      "Uzay Roketi"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Yeniden kullanılabilir mi?",
+   "kutular": [
+    {
+     "etiket": "Evet",
+     "uyeler": [
+      "Uzay Mekiği",
+      "Uzay Roketi"
+     ]
+    },
+    {
+     "etiket": "Hayır (bakımla ömrü uzar)",
+     "uyeler": [
+      "Uzay İstasyonu"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Türkiye'nin ilk yerli ve millî haberleşme uydusu Türksat 6A, 9 Temmuz 2024'te uzaya gönderildi. (s. 14)",
+  "Uydularımız sayesinde hava olayları gözlenir, fay hatları belirlenir, navigasyonla yol bulunur. (s. 14)"
+ ],
+ "akildaKalsin": [
+  "Uzay boş değildir: az miktarda gaz, toz ve parçacık vardır.",
+  "Roket taşır, uydu döner, sonda keşfeder.",
+  "Mekikte ve istasyonda astronot vardır.",
+  "Güneş paneli: uydu, sonda, istasyon. Roket kullanmaz.",
+  "Uzaya çıkarılan teleskop daha net görür."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Uzay gerçekten bomboş mu?",
+   "cevap": "Hayır. Uzayda çok az miktarda gaz, toz ve küçük parçacıklar vardır. (s. 15)"
+  },
+  {
+   "soru": "Roketler tekrar kullanılabilir mi?",
+   "cevap": "Eskiden tek kullanımlıktı. Yeni teknolojiler sayesinde artık yeniden kullanılabilen roketler üretiliyor. (s. 17)"
+  },
+  {
+   "soru": "Uydular günlük hayatımızda ne işe yarar?",
+   "cevap": "Hava olaylarını gözlemek, deprem bilimi için fay hatlarını belirlemek ve navigasyonla yol bulmak uydular sayesinde olur. (s. 14)"
+  },
+  {
+   "soru": "Uzay araçları enerjiyi nereden alır?",
+   "cevap": "Yapay uydu, uzay sondası ve uzay istasyonu, güneş enerjisini elektrik enerjisine çeviren güneş panellerini kullanır. (s. 17–18)"
+  },
+  {
+   "soru": "Teleskop neden uzaya gönderilir?",
+   "cevap": "Dünya'nın yörüngesine çıkarılan teleskoplar daha net görüntü elde eder. Nedenini bir sonraki konuda öğreneceğiz. (s. 18)"
+  },
+  {
+   "soru": "Uzay istasyonu eskirse ne olur?",
+   "cevap": "Uzay istasyonu yeniden kullanılamaz ama bakım ve onarım yapılarak ömrü uzatılabilir. (s. 18)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Uzay mekiği ile uzay roketi arasındaki bir benzerliği ve bir farkı yaz.",
+   "ornekCevap": "Benzerlik: İkisi de uzaya bir şeyler taşır ve yeniden kullanılabilir. Fark: Mekiği içindeki astronotlar kontrol eder, roket ise Dünya'dan kontrol edilir.",
+   "anahtarlar": [
+    "taşı",
+    "astronot",
+    "Dünya'dan",
+    "kontrol",
+    "yeniden"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Uzay için hangisi doğrudur?",
+   "secenekler": [
+    "Tamamen boştur",
+    "Az miktarda gaz, toz ve parçacık vardır",
+    "Sadece yıldızlar vardır"
+   ],
+   "dogru": 1,
+   "ipucu": "Uzayın tanımında \"tamamen boş olmayan\" ifadesi geçiyordu.",
+   "aciklama": "Uzay tamamen boş değildir; çok az miktarda gaz, toz ve çeşitli parçacıklar bulunur. (s. 15)"
+  },
+  {
+   "soru": "Uzay araçlarını yeryüzünden yörüngeye taşıyan araç hangisidir?",
+   "secenekler": [
+    "Uzay roketi",
+    "Teleskop",
+    "Uzay sondası"
+   ],
+   "dogru": 0,
+   "ipucu": "Uzay taksisi hangisiydi?",
+   "aciklama": "Uzay roketi, uzay araçlarını yörüngeye veya daha uzak bölgelere taşır. (s. 17)"
+  },
+  {
+   "soru": "Bir gök cismini incelemek için gönderilen, Dünya'dan kontrol edilen robot araç hangisidir?",
+   "secenekler": [
+    "Uzay mekiği",
+    "Uzay sondası",
+    "Uzay istasyonu"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Robot kâşif\" hangisiydi?",
+   "aciklama": "Uzay sondası robotik bir araçtır ve Dünya'dan kontrol edilir. (s. 17)"
+  },
+  {
+   "soru": "İletişim, gözlem ve keşif için Dünya'nın çevresinde dolanan araç hangisidir?",
+   "secenekler": [
+    "Uzay mekiği",
+    "Uzay roketi",
+    "Yapay uydu"
+   ],
+   "dogru": 2,
+   "ipucu": "Televizyon ve hava durumu hangi araç sayesinde çalışıyordu?",
+   "aciklama": "Yapay uydular belirli bir yörüngede dolanır ve Dünya'dan kontrol edilir. (s. 17)"
+  },
+  {
+   "soru": "Uzay mekiğini kim kontrol eder?",
+   "secenekler": [
+    "Dünya'daki bilgisayarlar",
+    "İçindeki astronotlar",
+    "Uzay istasyonu"
+   ],
+   "dogru": 1,
+   "ipucu": "Mekik bir \"astronot servisi\". Servisi kim kullanır?",
+   "aciklama": "Mekiğin kontrolünü içinde görev alan astronotlar yapar. (s. 17)"
+  },
+  {
+   "soru": "Astronotların düşük yer çekimli ortamda deney yaptığı araç hangisidir?",
+   "secenekler": [
+    "Uzay istasyonu",
+    "Yapay uydu",
+    "Teleskop"
+   ],
+   "dogru": 0,
+   "ipucu": "Uzaydaki ev + laboratuvar hangisiydi?",
+   "aciklama": "Uzay istasyonunda astronotların yaşam alanı ve deney donanımı vardır. (s. 18)"
+  },
+  {
+   "soru": "Hangisi güneş paneli kullanmaz?",
+   "secenekler": [
+    "Yapay uydu",
+    "Uzay istasyonu",
+    "Uzay roketi"
+   ],
+   "dogru": 2,
+   "ipucu": "Gruplayalım bölümündeki \"Güneş paneli kullanır mı?\" sorusunu hatırla.",
+   "aciklama": "Kitaptaki örnek: Yapay uyduda güneş panelleri kullanılır, uzay roketinde kullanılmaz. (s. 23)"
+  },
+  {
+   "soru": "Önceden tek kullanımlık olan, artık yeniden kullanılabilen araç hangisidir?",
+   "secenekler": [
+    "Uzay roketi",
+    "Uzay istasyonu",
+    "Uzay sondası"
+   ],
+   "dogru": 0,
+   "ipucu": "Uzay istasyonu yeniden kullanılamıyordu. Diğer iki seçeneği düşün.",
+   "aciklama": "Yeni teknolojiler sayesinde uzay roketleri yeniden kullanılabilir şekilde üretiliyor. (s. 17)"
+  },
+  {
+   "soru": "Teleskoplar Dünya'nın yörüngesine çıkarılınca ne olur?",
+   "secenekler": [
+    "Görüntü bulanıklaşır",
+    "Sadece gündüz çalışır",
+    "Daha net görüntü elde edilir"
+   ],
+   "dogru": 2,
+   "ipucu": "Uzaya çıkarmanın amacı daha iyi görmektir.",
+   "aciklama": "Yörüngedeki teleskoplar daha net görüntüler elde eder. (s. 18)"
+  }
+ ]
+}
