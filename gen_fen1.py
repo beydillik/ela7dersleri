@@ -30,7 +30,7 @@ ders = {
     {"ad": "1. Ünite: Uzay Çağı", "no": 1, "konular": [
       {"id": "u1k1", "baslik": "Uzay ve Uzay Araçları", "sayfalar": "s. 15–19", "kaynakSayfalar": [[15, 19], [24, 24]], "hazir": True},
       {"id": "u1k2", "baslik": "Teleskoplar ve Gözlemevleri", "sayfalar": "s. 19, 22–23", "kaynakSayfalar": [[19, 19], [22, 23]], "hazir": True},
-      {"id": "u1k3", "baslik": "Türkiye Uzayda", "sayfalar": "s. 20–21, 26–28", "kaynakSayfalar": [[20, 21], [26, 28]], "hazir": False},
+      {"id": "u1k3", "baslik": "Türkiye Uzayda", "sayfalar": "s. 20–21, 26–28", "kaynakSayfalar": [[20, 21], [26, 28]], "hazir": True},
       {"id": "u1k4", "baslik": "Uzay Teknolojisinin Faydaları ve Uzay Kirliliği", "sayfalar": "s. 24–25, 30–32", "kaynakSayfalar": [[24, 25], [30, 32]], "hazir": False},
       {"id": "u1k5", "baslik": "Yıldızların Doğumu ve Yaşamı", "sayfalar": "s. 34–42", "kaynakSayfalar": [[34, 42]], "hazir": False},
       {"id": "u1k6", "baslik": "Takımyıldızlar", "sayfalar": "s. 43–45", "kaynakSayfalar": [[43, 45]], "hazir": False},

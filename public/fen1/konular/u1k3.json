@@ -1,0 +1,365 @@
+{
+ "id": "u1k3",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Türkiye Uzayda",
+ "sayfalar": "s. 20–21, 26–28",
+ "giris": "Türkiye'nin uzayda çalışan uyduları var. Uzay için çalışan kurumlarımız ve uzaya giden ilk Türk astronotumuz da var. Bu konuda uydularımızı, kurumlarımızı ve uzay insanlarını tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Haberleşme Uydusu",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k3c1'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k3c1)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><circle cx='60' cy='190' r='88' fill='#1f9e8f'/><ellipse cx='40' cy='112' rx='14' ry='4' fill='#52b788'/><rect x='34' y='28' width='18' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='68' y='28' width='18' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><path d='M52 34h16' stroke='#ced4da' stroke-width='2'/><rect x='52' y='25' width='16' height='18' rx='2' fill='#f2c14e'/><path d='M52 43 a8 8 0 0 0 16 0Z' fill='#f5f6fa'/><path d='M50 58 q10 -6 20 0 M44 66 q16 -9 32 0 M38 74 q22 -12 44 0' stroke='#ffd166' stroke-width='2' fill='none'/><rect x='50' y='96' width='20' height='12' fill='#e9ecef'/><path d='M46 97 L60 86 L74 97Z' fill='#e63946'/><path d='M66 90 v-8 l5 -4' stroke='#adb5bd' stroke-width='2' fill='none'/></g></svg>",
+   "aciklama": "Haberleşme ve iletişim için kullanılan yapay uydudur. Türksat uydularımız bu türdendir.",
+   "ek": "Türkiye'nin uzaydaki ilk haberleşme uydusu Türksat 1B'dir (1994). Türksat 6A ise ilk yerli ve millî haberleşme uydumuzdur (2024). Uzayda aktif 6 haberleşme uydumuz var.",
+   "akilda": "Gökteki anten",
+   "soru": {
+    "soru": "Türksat uyduları ne için kullanılır?",
+    "secenekler": [
+     "Yer gözlemi ve keşif için",
+     "Haberleşme ve iletişim için",
+     "Astronot taşımak için"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla: gökteki anten. Anten ne işe yarar?",
+    "aciklama": "Türksat uyduları haberleşme ve iletişim için kullanılır. (s. 20)"
+   }
+  },
+  {
+   "ad": "Gözlem Uydusu",
+   "renk": "#2d6a4f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k3c2'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k3c2)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><circle cx='60' cy='196' r='96' fill='#52b788'/><g stroke='#2d6a4f' stroke-width='1.5'><path d='M20 112 L44 104 L50 118Z' fill='#95d5b2'/><path d='M54 102 L80 102 L84 118 L52 118Z' fill='#d8f3dc'/><path d='M86 104 L104 110 L100 120 L88 118Z' fill='#b7e4c7'/></g><rect x='34' y='24' width='18' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='68' y='24' width='18' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><path d='M52 30h16' stroke='#ced4da' stroke-width='2'/><rect x='52' y='21' width='16' height='18' rx='2' fill='#e9ecef'/><rect x='55' y='39' width='10' height='6' fill='#343a40'/><path d='M56 45 L34 100 L86 100 L64 45Z' fill='#ffd166' opacity='.28'/></g></svg>",
+   "aciklama": "Yeryüzünü gözlemleyip görüntü elde eden yapay uydudur. Göktürk 1, Göktürk 2 ve İMECE bu türdendir.",
+   "ek": "İMECE, Dünya'nın her yerinden görüntü alabilir. Hedef tespiti, doğal afet ve tarım gibi birçok alanda görev yapar. Uzayda aktif 3 gözlem uydumuz var.",
+   "akilda": "Gökteki fotoğrafçı",
+   "soru": {
+    "soru": "Hangisi bir gözlem uydumuzdur?",
+    "secenekler": [
+     "İMECE",
+     "Türksat 4A",
+     "Türksat 5B"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartında sayılan gözlem uydularının adlarına bak. Türksat'lar hangi türdendi?",
+    "aciklama": "İMECE bir yer gözlem uydusudur; Türksat uyduları ise haberleşme uydusudur. (s. 21)"
+   }
+  },
+  {
+   "ad": "TÜBİTAK UZAY",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k3c3'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k3c3)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><rect x='14' y='70' width='60' height='38' fill='#e9ecef'/><rect x='14' y='66' width='60' height='6' fill='#adb5bd'/><g fill='#8ecae6'><rect x='20' y='78' width='10' height='8'/><rect x='38' y='78' width='10' height='8'/><rect x='56' y='78' width='10' height='8'/><rect x='20' y='92' width='10' height='8'/><rect x='56' y='92' width='10' height='8'/></g><rect x='38' y='92' width='10' height='16' fill='#5b6475'/><path d='M78 60 a18 18 0 0 0 30 18Z' fill='#f5f6fa' stroke='#adb5bd' stroke-width='2'/><path d='M92 70 l10 -12' stroke='#adb5bd' stroke-width='2'/><circle cx='103' cy='57' r='2.5' fill='#ffd166'/><path d='M92 72 L96 108' stroke='#adb5bd' stroke-width='3'/><rect x='22' y='22' width='32' height='26' rx='3' fill='#2a9d8f'/><rect x='30' y='29' width='16' height='12' fill='#1b2340'/><path d='M26 22v-4M34 22v-4M42 22v-4M50 22v-4M26 48v4M34 48v4M42 48v4M50 48v4' stroke='#f2c14e' stroke-width='2'/></g></svg>",
+   "aciklama": "Türkiye'nin uzay alanındaki lider araştırma ve geliştirme kuruluşudur.",
+   "ek": "Yerli ve millî uydular, haberleşme sistemleri, yıldız izler ve uçuş bilgisayarları gibi projeler geliştirir. Amaç, teknolojide dışa bağımlılığı azaltmaktır.",
+   "akilda": "Uzay teknolojisi atölyesi",
+   "soru": {
+    "soru": "TÜBİTAK UZAY'ın projeleriyle ne amaçlanır?",
+    "secenekler": [
+     "Festival düzenlemek",
+     "Yeni yıldızlar keşfetmek",
+     "Teknolojide dışa bağımlılığı azaltmak"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartının son cümlesini tekrar oku: \"Amaç, ...\"",
+    "aciklama": "TÜBİTAK UZAY'ın projeleriyle ülkemizin teknolojide dışa bağımlılığının azaltılması amaçlanır. (s. 26)"
+   }
+  },
+  {
+   "ad": "Türkiye Uzay Ajansı",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k3c4'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k3c4)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><path d='M50 80 L40 96 L40 78 L50 70Z' fill='#e63946'/><path d='M70 80 L80 96 L80 78 L70 70Z' fill='#e63946'/><rect x='48' y='40' width='24' height='46' rx='5' fill='#f5f6fa'/><path d='M48 42 Q60 12 72 42Z' fill='#e63946'/><rect x='51' y='52' width='18' height='12' fill='#e30a17'/><circle cx='57' cy='58' r='4' fill='#fff'/><circle cx='58.4' cy='58' r='3.2' fill='#e30a17'/><path d='M63.5 58 l-2.2 .7 1.4 -1.9 v2.4 l-1.4 -1.9Z' fill='#fff'/><path d='M52 86 L60 110 L68 86Z' fill='#ffb703'/><path d='M56 86 L60 100 L64 86Z' fill='#ff7a33'/></g></svg>",
+   "aciklama": "Uzay ve havacılık alanındaki amaçlarımızı gerçekleştirmek için 2018'de kurulan devlet kuruluşudur. Kısa adı TUA'dır.",
+   "ek": "Uzay alanında nitelikli insan yetiştirmeyi hedefler. TUA'nın çalışmaları kapsamında ilk Türk uzay yolcusu Uluslararası Uzay İstasyonu'nda bilimsel deneyler yaptı.",
+   "akilda": "Uzay yolculuğunun planlayıcısı",
+   "soru": {
+    "soru": "Türkiye Uzay Ajansı (TUA) nasıl bir kuruluştur?",
+    "secenekler": [
+     "Bir devlet kuruluşudur",
+     "Bir teknoloji festivalidir",
+     "Bir gözlemevidir"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki tanımın sonuna bak: 2018'de kurulan ... kuruluşu.",
+    "aciklama": "TUA, 2018'de kurulmuş bir devlet kuruluşudur. (s. 26)"
+   }
+  },
+  {
+   "ad": "Astronomi ve Astronom",
+   "renk": "#f2a93b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k3c5'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k3c5)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><circle cx='76' cy='44' r='10' fill='#ffd166'/><ellipse cx='76' cy='44' rx='30' ry='12' fill='none' stroke='#8ecae6' stroke-width='1.5' stroke-dasharray='3 3'/><circle cx='104' cy='47' r='4' fill='#2d6cdf'/><circle cx='50' cy='40' r='3' fill='#e76f51'/><circle cx='32' cy='74' r='9' fill='#f1c27d'/><path d='M18 108 q0 -22 14 -24 q14 2 14 24Z' fill='#5b6475'/><rect x='40' y='86' width='22' height='16' rx='2' fill='#f5f6fa'/><path d='M44 91h14M44 96h10' stroke='#adb5bd' stroke-width='1.5'/><path d='M38 70 L62 52' stroke='#ced4da' stroke-width='5' stroke-linecap='round'/></g></svg>",
+   "aciklama": "Astronomi (gök bilimi), gök cisimlerinin konumlarını, hareketlerini, yapılarını ve uzaklıklarını inceleyen bilim dalıdır.",
+   "ek": "Astronom (gök bilimci), uzay araştırmaları alanında uzmanlaşmış bilim insanıdır. Nüzhet Toydemir Gökdoğan, Türkiye Cumhuriyeti'nin ilk kadın astronomudur.",
+   "akilda": "Astronom gökyüzünü inceler",
+   "soru": {
+    "soru": "Astronom kimdir?",
+    "secenekler": [
+     "İnsanlı uzay çalışmalarında görev yapan kişi",
+     "Uzay araştırmaları alanında uzmanlaşmış bilim insanı",
+     "Roketleri kontrol eden pilot"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\": astronom gökyüzünü inceler. İnceleyen kişiye ne denir?",
+    "aciklama": "Astronom (gök bilimci), uzay araştırmaları alanında uzmanlaşmış bilim insanıdır. (s. 26)"
+   }
+  },
+  {
+   "ad": "Astronot",
+   "renk": "#5b6475",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k3c6'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k3c6)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><rect x='34' y='82' width='52' height='40' rx='14' fill='#f5f6fa'/><rect x='48' y='90' width='24' height='14' rx='3' fill='#adb5bd'/><circle cx='54' cy='97' r='2' fill='#e63946'/><circle cx='62' cy='97' r='2' fill='#2d6cdf'/><circle cx='60' cy='56' r='32' fill='#f5f6fa' stroke='#ced4da' stroke-width='2'/><rect x='36' y='40' width='48' height='32' rx='16' fill='#1d3557'/><path d='M44 48 q8 -6 18 -4' stroke='#8ecae6' stroke-width='3' fill='none' stroke-linecap='round'/><circle cx='74' cy='62' r='2' fill='#fff' opacity='.7'/></g></svg>",
+   "aciklama": "İnsanlı uzay çalışmalarında görev yapan kişidir.",
+   "ek": "Ruslar astronot yerine kozmonot, Çinliler taykonot der. Uzaya çıkan ilk insan, 1961'de Vostok 1 aracıyla Dünya'nın yörüngesine giren kozmonot Yuri Gagarin'dir.",
+   "akilda": "Astronot uzaya gider",
+   "soru": {
+    "soru": "Ruslar astronot yerine hangi kelimeyi kullanır?",
+    "secenekler": [
+     "Kozmonot",
+     "Taykonot",
+     "Astronom"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartında iki ülkenin kullandığı iki kelime vardı. Hangisi Ruslarındı?",
+    "aciklama": "Ruslar astronot yerine kozmonot, Çinliler taykonot ifadesini kullanmıştır. (s. 26)"
+   }
+  },
+  {
+   "ad": "Alper Gezeravcı",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k3c7'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k3c7)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><circle cx='60' cy='196' r='90' fill='#1f9e8f'/><rect x='20' y='44' width='24' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='20' y='60' width='24' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='76' y='44' width='24' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='76' y='60' width='24' height='12' fill='#2d6cdf' stroke='#9cc3ff'/><path d='M44 58h32' stroke='#ced4da' stroke-width='3'/><rect x='50' y='48' width='20' height='20' rx='3' fill='#e9ecef'/><circle cx='60' cy='58' r='4' fill='#8ecae6'/><path d='M60 48 V30' stroke='#adb5bd' stroke-width='1.5'/><rect x='60' y='30' width='14' height='9' fill='#e30a17'/><circle cx='65' cy='34.5' r='2.8' fill='#fff'/><circle cx='66' cy='34.5' r='2.2' fill='#e30a17'/><g stroke='#adb5bd' stroke-width='1.2'><rect x='36' y='84' width='6' height='16' rx='3' fill='#c77dff'/><rect x='46' y='84' width='6' height='16' rx='3' fill='#52b788'/><rect x='56' y='84' width='6' height='16' rx='3' fill='#ffd166'/></g></g></svg>",
+   "aciklama": "İlk Türk astronotudur. 19 Ocak 2024'te Uluslararası Uzay İstasyonu'na gitmek için yola çıktı.",
+   "ek": "14 gün kalması planlanıyordu ama dönüşteki hava koşulları yüzünden 18 gün uzayda kaldı. Biyoloji, tıp, malzeme bilimi ve genetik gibi alanlarda 13 bilimsel deney yaptı.",
+   "akilda": "İlk Türk astronot: 18 gün, 13 deney",
+   "soru": {
+    "soru": "Alper Gezeravcı uzayda kaç gün kaldı?",
+    "secenekler": [
+     "14 gün",
+     "18 gün",
+     "13 gün"
+    ],
+    "dogru": 1,
+    "ipucu": "Planlanandan daha uzun kaldı. \"Akılda kalsın\" ifadesindeki gün sayısına bak.",
+    "aciklama": "Gezeravcı'nın 14 gün kalması planlanmıştı; hava koşulları nedeniyle 18 gün uzayda kaldı. (s. 27)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi nedir?",
+   "kutular": [
+    {
+     "etiket": "Uydu",
+     "uyeler": [
+      "Haberleşme Uydusu",
+      "Gözlem Uydusu"
+     ]
+    },
+    {
+     "etiket": "Kurum",
+     "uyeler": [
+      "TÜBİTAK UZAY",
+      "Türkiye Uzay Ajansı"
+     ]
+    },
+    {
+     "etiket": "Bilim ve uzay insanları",
+     "uyeler": [
+      "Astronomi ve Astronom",
+      "Astronot",
+      "Alper Gezeravcı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Türkiye'nin ilk uydusu Türksat 1A, 1994'te fırlatılırken rokette çıkan bir arıza yüzünden okyanusa düştü. Aynı yıl Türksat 1B başarıyla yörüngeye yerleşti. (s. 20)",
+  "TEKNOFEST, Türkiye'nin ilk ve tek havacılık, uzay ve teknoloji festivalidir. 2018'den beri her yıl farklı bir yerde yapılıyor. (s. 26)",
+  "Yuri Gagarin \"Kozmosun Kolomb'u\" olarak tanınır. Uçuşunda Dünya'nın 327 km üzerine çıktı. (s. 27)",
+  "Alper Gezeravcı'nın görev armasında ay-yıldızlı bayrağımız, 16 Türk devletini temsil eden 16 yıldız ve turkuaz renkli Türkiye haritası vardır. (s. 27)",
+  "Nüzhet Toydemir Gökdoğan 1978'de \"Tüm astronomların kullanacağı, uluslararası nitelikli büyük bir gözlemevi kurmalıyız.\" dedi. (s. 28)"
+ ],
+ "akildaKalsin": [
+  "Uzayda aktif 9 uydumuz var: 6'sı haberleşme, 3'ü gözlem uydusu.",
+  "Türksat uyduları haberleşme, Göktürk ve İMECE gözlem uydusudur.",
+  "Türksat 6A, ilk yerli ve millî haberleşme uydumuzdur.",
+  "TÜBİTAK UZAY uzay teknolojisi geliştirir; TUA uzay çalışmalarımızı yönetir.",
+  "Astronom gökyüzünü inceler, astronot uzaya gider.",
+  "Alper Gezeravcı ilk Türk astronotudur: 2024, 18 gün, 13 deney."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Türkiye'nin ilk uydusu neden uzaya ulaşamadı?",
+   "cevap": "Türksat 1A, 24 Ocak 1994'te fırlatılırken rokette bir arıza oldu ve okyanusa düştü. Aynı yıl Türksat 1B başarıyla yörüngeye yerleştirildi. (s. 20)"
+  },
+  {
+   "soru": "Görevi biten uydularımız var mı?",
+   "cevap": "Evet. Türksat 1B, 1C, 2A haberleşme uydularımız ve Bilsat, Rasat gözlem uydularımız görev süresini doldurdu. (s. 22)"
+  },
+  {
+   "soru": "Uzaya çıkan ilk insan kim?",
+   "cevap": "Sovyet kozmonotu Yuri Gagarin. 1961'de Vostok 1 aracıyla Dünya'nın yörüngesine giren ilk insan oldu. (s. 27)"
+  },
+  {
+   "soru": "Alper Gezeravcı uzaya nasıl gitti?",
+   "cevap": "19 Ocak 2024'te Florida'daki Kennedy Uzay Merkezi'nden Falcon 9 roketiyle yola çıktı ve Uluslararası Uzay İstasyonu'na gitti. (s. 27)"
+  },
+  {
+   "soru": "Gezeravcı uzaydan ilk mesajında ne dedi?",
+   "cevap": "Atatürk'ün \"İstikbal göklerdedir.\" sözüyle başladı. (s. 27)"
+  },
+  {
+   "soru": "Gezeravcı'nın deneylerini kimlerle birlikte yürüttü?",
+   "cevap": "TÜBİTAK UZAY, Axiom Space ve NASA ile birlikte. (s. 28)"
+  },
+  {
+   "soru": "Türkiye'nin ilk kadın astronomu kim?",
+   "cevap": "Nüzhet Toydemir Gökdoğan (1910–2003). Aynı zamanda ilk kadın dekan ve senatörümüzdür. Türk Matematik Derneği'ni ve Türk Astronomi Derneği'ni kuranlar arasındadır. (s. 28)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendi uydularımızı ve uzay teknolojimizi geliştirmek ülkemiz için neden önemlidir? Bir sebep yaz.",
+   "ornekCevap": "Kendi uydularımızı ve teknolojimizi üretirsek başka ülkelere bağımlı kalmayız. Haberleşme, doğal afet ve tarım gibi işler için kendi uydularımızı kullanabiliriz.",
+   "anahtarlar": [
+    "bağımlı",
+    "yerli",
+    "millî",
+    "haberleş",
+    "afet",
+    "tarım",
+    "teknoloji"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Türkiye'nin uzaydaki ilk haberleşme uydusu hangisidir?",
+   "secenekler": [
+    "Türksat 1A",
+    "İMECE",
+    "Türksat 1B"
+   ],
+   "dogru": 2,
+   "ipucu": "Türksat 1A uzaya ulaşabilmiş miydi?",
+   "aciklama": "Türksat 1A okyanusa düştü; uzaydaki ilk haberleşme uydumuz Türksat 1B oldu. (s. 20)"
+  },
+  {
+   "soru": "Türksat 1A neden uzaya ulaşamadı?",
+   "secenekler": [
+    "Yakıtı bittiği için",
+    "Rokette meydana gelen bir arıza nedeniyle",
+    "Başka bir uyduya çarptığı için"
+   ],
+   "dogru": 1,
+   "ipucu": "Sorun uyduda değil, onu taşıyan araçtaydı.",
+   "aciklama": "Türksat 1A, rokette meydana gelen bir arıza nedeniyle kalkıştan kısa süre sonra okyanusa düştü. (s. 20)"
+  },
+  {
+   "soru": "Ülkemizin uzayda aktif olarak çalışan kaç uydusu vardır?",
+   "secenekler": [
+    "6",
+    "3",
+    "9"
+   ],
+   "dogru": 2,
+   "ipucu": "6 haberleşme uydusu ve 3 gözlem uydusunu topla.",
+   "aciklama": "6'sı haberleşme, 3'ü yer gözlem ve keşif olmak üzere toplam 9 aktif uydumuz vardır. (s. 20)"
+  },
+  {
+   "soru": "Türkiye'nin ilk yerli ve millî haberleşme uydusu hangisidir?",
+   "secenekler": [
+    "Türksat 6A",
+    "Göktürk 2",
+    "Türksat 3A"
+   ],
+   "dogru": 0,
+   "ipucu": "Haberleşme Uydusu kartında 2024'te fırlatılan uyduyu hatırla.",
+   "aciklama": "Türksat 6A, Türkiye'nin ilk yerli ve millî haberleşme uydusudur. (s. 21)"
+  },
+  {
+   "soru": "İMECE uydusu hangi alanlarda görev yapar?",
+   "secenekler": [
+    "Hedef tespiti, doğal afet ve tarım",
+    "Televizyon yayını",
+    "Astronotları taşımak"
+   ],
+   "dogru": 0,
+   "ipucu": "İMECE bir gözlem uydusudur. Gözlem uydusu kartında sayılan alanlara bak.",
+   "aciklama": "İMECE; hedef tespiti ve teşhisi, doğal afet, tarım gibi birçok alanda görev yapar. (s. 21)"
+  },
+  {
+   "soru": "Yıldız izler ve uçuş bilgisayarı gibi sistemler geliştiren kuruluş hangisidir?",
+   "secenekler": [
+    "TEKNOFEST",
+    "TÜBİTAK UZAY",
+    "Türk Astronomi Derneği"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Uzay teknolojisi atölyesi\" diye akılda tuttuğumuz kurum hangisiydi?",
+   "aciklama": "TÜBİTAK UZAY; uydular, haberleşme sistemleri, yıldız izler ve uçuş bilgisayarları gibi projeler geliştirir. (s. 26)"
+  },
+  {
+   "soru": "İlk Türk uzay yolcusunun deneyleri hangi kurumun çalışmaları kapsamında yapıldı?",
+   "secenekler": [
+    "TEKNOFEST",
+    "Türk Matematik Derneği",
+    "Türkiye Uzay Ajansı"
+   ],
+   "dogru": 2,
+   "ipucu": "2018'de kurulan devlet kuruluşunu hatırla.",
+   "aciklama": "TUA'nın çalışmaları kapsamında ilk Türk uzay yolcusu Uluslararası Uzay İstasyonu'nda bilimsel deneyler yaptı. (s. 26)"
+  },
+  {
+   "soru": "TEKNOFEST nedir?",
+   "secenekler": [
+    "Bir uzay teleskobu",
+    "Bir haberleşme uydusu",
+    "Türkiye'nin havacılık, uzay ve teknoloji festivali"
+   ],
+   "dogru": 2,
+   "ipucu": "Adının sonundaki \"FEST\" neyin kısaltması olabilir?",
+   "aciklama": "TEKNOFEST, Türkiye'nin ilk ve tek havacılık, uzay ve teknoloji festivalidir. (s. 26)"
+  },
+  {
+   "soru": "Uzaya çıkan ilk insan kimdir?",
+   "secenekler": [
+    "Alper Gezeravcı",
+    "Yuri Gagarin",
+    "Nüzhet Toydemir Gökdoğan"
+   ],
+   "dogru": 1,
+   "ipucu": "Astronot kartında 1961'de uzaya çıkan kozmonottan söz ediliyordu.",
+   "aciklama": "Yuri Gagarin, 1961'de Vostok 1 ile Dünya'nın yörüngesine giren ilk insandır. (s. 27)"
+  },
+  {
+   "soru": "Gezeravcı'nın uzaydan ilk mesajında kullandığı Atatürk sözü hangisidir?",
+   "secenekler": [
+    "Hayatta en hakiki mürşit ilimdir.",
+    "İstikbal göklerdedir.",
+    "Yurtta sulh, cihanda sulh."
+   ],
+   "dogru": 1,
+   "ipucu": "Uzayla ilgili bir söz düşün: gökler...",
+   "aciklama": "Gezeravcı mesajına Atatürk'ün \"İstikbal göklerdedir.\" sözüyle başladı. (s. 27)"
+  },
+  {
+   "soru": "Alper Gezeravcı uzayda hangi alanlarda deney yaptı?",
+   "secenekler": [
+    "Biyoloji, tıp, malzeme bilimi ve genetik",
+    "Yalnızca astronomi",
+    "Tarım ve hayvancılık"
+   ],
+   "dogru": 0,
+   "ipucu": "Alper Gezeravcı kartındaki \"13 deney\" cümlesinde sayılan alanlara bak.",
+   "aciklama": "Gezeravcı biyoloji, tıp, malzeme bilimi ve genetik gibi alanlarda 13 deney yaptı. (s. 28)"
+  },
+  {
+   "soru": "Türkiye Cumhuriyeti'nin ilk kadın astronomu kimdir?",
+   "secenekler": [
+    "Cahit Arf",
+    "Mustafa İnan",
+    "Nüzhet Toydemir Gökdoğan"
+   ],
+   "dogru": 2,
+   "ipucu": "Astronomi ve Astronom kartının son cümlesini hatırla.",
+   "aciklama": "Nüzhet Toydemir Gökdoğan, Türkiye Cumhuriyeti'nin ilk kadın astronomudur. (s. 28)"
+  }
+ ]
+}
