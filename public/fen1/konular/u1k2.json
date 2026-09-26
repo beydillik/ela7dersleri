@@ -1,0 +1,334 @@
+{
+ "id": "u1k2",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Teleskoplar ve Gözlemevleri",
+ "sayfalar": "s. 19, 22–23",
+ "giris": "Gökyüzündeki cisimleri yakından görmek için teleskop kullanırız. Bazı teleskoplar uzayda, bazıları yeryüzündedir. Bu konuda iki teleskop türünü, ışık kirliliğini ve gözlemevlerini tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Teleskop",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k2c1'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k2c1)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><circle cx='92' cy='26' r='10' fill='#f2e6b8'/><circle cx='88' cy='23' r='2' fill='#d9cb94'/><circle cx='95' cy='30' r='1.5' fill='#d9cb94'/><g transform='rotate(-32 56 66)'><rect x='26' y='58' width='60' height='16' rx='3' fill='#f5f6fa'/><rect x='84' y='55' width='10' height='22' rx='2' fill='#8ecae6'/><rect x='20' y='61' width='8' height='10' rx='2' fill='#adb5bd'/><rect x='46' y='56' width='8' height='20' fill='#1d6fa3'/></g><path d='M56 70 L38 106 M56 70 L60 108 M56 70 L78 104' stroke='#ced4da' stroke-width='3' stroke-linecap='round'/></g></svg>",
+   "aciklama": "Gök cisimlerini gözlemlemek için kullanılan araçtır.",
+   "ek": "Gelişen uzay teknolojisi sayesinde teleskoplar artık Dünya'nın yörüngesine de çıkarılabiliyor. Böylece daha net görüntüler elde ediliyor.",
+   "akilda": "Gökyüzüne bakan göz",
+   "soru": {
+    "soru": "Teleskop ne için kullanılır?",
+    "secenekler": [
+     "Gök cisimlerini gözlemlemek için",
+     "Uzay araçlarını uzaya taşımak için",
+     "Haberleşme sağlamak için"
+    ],
+    "dogru": 0,
+    "ipucu": "Tanımda teleskobun neye baktığı yazıyordu: gök ...",
+    "aciklama": "Teleskoplar gök cisimlerini gözlemlemek için kullanılan araçlardır. (s. 19)"
+   }
+  },
+  {
+   "ad": "Uzay Teleskobu",
+   "renk": "#2d6cdf",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k2c2'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k2c2)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><circle cx='60' cy='190' r='90' fill='#8ecae6' opacity='.35'/><circle cx='60' cy='190' r='80' fill='#1f9e8f'/><ellipse cx='44' cy='118' rx='14' ry='4' fill='#52b788'/><g transform='rotate(-20 60 50)'><rect x='44' y='40' width='32' height='18' rx='4' fill='#e9ecef'/><rect x='74' y='42' width='6' height='14' fill='#343a40'/><rect x='22' y='44' width='20' height='10' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='78' y='30' width='0' height='0'/></g><path d='M104 20 L84 42' stroke='#ffd166' stroke-width='2' stroke-dasharray='3 3'/><path d='M100 30 L86 46' stroke='#ffd166' stroke-width='2' stroke-dasharray='3 3'/></g></svg>",
+   "aciklama": "Uzaya yerleştirilmiş teleskoptur.",
+   "ek": "Atmosfer, uzaydan gelen ışınların büyük bölümünü engeller. Hava kirliliği ve uyduların ışık izleri de gözlemi zorlaştırır. Uzay teleskobu bu sorunlarla karşılaşmaz, daha net ve ayrıntılı görüntü elde eder.",
+   "akilda": "Atmosferin üstünde, net görüntü",
+   "soru": {
+    "soru": "Uzay teleskobu neden daha net görüntü elde eder?",
+    "secenekler": [
+     "Daha ucuz olduğu için",
+     "Atmosferin engellemesiyle karşılaşmadığı için",
+     "Daha küçük olduğu için"
+    ],
+    "dogru": 1,
+    "ipucu": "Uzay teleskobu atmosferin altında mı, üstünde mi? Atmosfer ışınlara ne yapıyordu?",
+    "aciklama": "Uzay teleskobu atmosferin engellemesi, kirlilik ve ışık izleri gibi sorunlarla karşılaşmadığı için daha net görüntü elde eder. (s. 22)"
+   }
+  },
+  {
+   "ad": "Hubble Uzay Teleskobu",
+   "renk": "#6c757d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k2c3'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k2c3)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><g transform='rotate(-15 60 62)'><rect x='36' y='48' width='50' height='28' rx='4' fill='#ced4da'/><rect x='36' y='48' width='50' height='6' fill='#e9ecef'/><path d='M86 48 L100 40 L100 44 L86 54Z' fill='#adb5bd'/><rect x='84' y='48' width='4' height='28' fill='#495057'/><ellipse cx='88' cy='62' rx='3' ry='12' fill='#212529'/><rect x='20' y='54' width='16' height='16' rx='2' fill='#6c757d'/><rect x='44' y='22' width='14' height='26' fill='#2d6cdf' stroke='#9cc3ff'/><rect x='44' y='76' width='14' height='26' fill='#2d6cdf' stroke='#9cc3ff'/><path d='M44 30h14M44 38h14M44 84h14M44 92h14' stroke='#9cc3ff'/></g></g></svg>",
+   "aciklama": "İlk büyük ölçekli optik uzay teleskobudur. 24 Nisan 1990'da Dünya yörüngesine taşındı.",
+   "ek": "İlk görüntüleri net olmadığı için 1993'te onarıldı. O günden beri evrenin fotoğraflarını Dünya'ya gönderiyor.",
+   "akilda": "İlk büyük uzay gözü",
+   "soru": {
+    "soru": "Hubble'ın ilk görüntüleri net gelmeyince ne yapıldı?",
+    "secenekler": [
+     "Dünya'ya geri getirildi",
+     "1993'te onarıldı",
+     "Yerine yenisi gönderildi"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartında 1993 yılında Hubble'a ne yapıldığı yazıyordu.",
+    "aciklama": "Hubble'ın ilk görüntüleri net olmadığından teleskop 1993'te onarıldı. (s. 22)"
+   }
+  },
+  {
+   "ad": "James Webb Uzay Teleskobu",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k2c4'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k2c4)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><path d='M14 88 L60 70 L106 88 L60 106Z' fill='#c77dff' opacity='.55'/><path d='M20 90 L60 76 L100 90 L60 102Z' fill='#e0aaff' opacity='.7'/><path d='M28 90 L60 80 L92 90 L60 99Z' fill='#f1d4ff'/><path d='M60 62 L60 80' stroke='#adb5bd' stroke-width='3'/><polygon points='68.0,40.0 64.0,46.9 56.0,46.9 52.0,40.0 56.0,33.1 64.0,33.1' fill='#f2c14e' stroke='#b8860b' stroke-width='1'/><polygon points='68.0,54.0 64.0,60.9 56.0,60.9 52.0,54.0 56.0,47.1 64.0,47.1' fill='#f2c14e' stroke='#b8860b' stroke-width='1'/><polygon points='68.0,26.0 64.0,32.9 56.0,32.9 52.0,26.0 56.0,19.1 64.0,19.1' fill='#f2c14e' stroke='#b8860b' stroke-width='1'/><polygon points='56.0,33.0 52.0,39.9 44.0,39.9 40.0,33.0 44.0,26.1 52.0,26.1' fill='#f2c14e' stroke='#b8860b' stroke-width='1'/><polygon points='80.0,33.0 76.0,39.9 68.0,39.9 64.0,33.0 68.0,26.1 76.0,26.1' fill='#f2c14e' stroke='#b8860b' stroke-width='1'/><polygon points='56.0,47.0 52.0,53.9 44.0,53.9 40.0,47.0 44.0,40.1 52.0,40.1' fill='#f2c14e' stroke='#b8860b' stroke-width='1'/><polygon points='80.0,47.0 76.0,53.9 68.0,53.9 64.0,47.0 68.0,40.1 76.0,40.1' fill='#f2c14e' stroke='#b8860b' stroke-width='1'/><path d='M40 22 L60 8 L80 22' stroke='#ced4da' stroke-width='1.5' fill='none'/><circle cx='60' cy='8' r='2.5' fill='#ced4da'/></g></svg>",
+   "aciklama": "Günümüzün en gelişmiş ve uzaya yerleştirilen en büyük teleskobudur. 25 Aralık 2021'de uzaya gönderildi.",
+   "ek": "Tenis kortu büyüklüğündedir ve Hubble'dan 100 kat daha güçlüdür. Rokete sığması için origami tekniğiyle katlandı, uzaya ulaşınca açıldı.",
+   "akilda": "Origami gibi katlanan dev",
+   "soru": {
+    "soru": "James Webb Uzay Teleskobu rokete nasıl sığdırıldı?",
+    "secenekler": [
+     "Parçalara ayrılarak",
+     "Küçük bir model yapılarak",
+     "Origami tekniğiyle katlanarak"
+    ],
+    "dogru": 2,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla: kâğıt katlama sanatının adı neydi?",
+    "aciklama": "James Webb rokete sığması için origami tekniğiyle katlandı, uzayda açılarak gerçek boyutuna ulaştı. (s. 22)"
+   }
+  },
+  {
+   "ad": "Yer Tabanlı Teleskop",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k2c5'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k2c5)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><path d='M0 34 Q60 22 120 34' stroke='#8ecae6' stroke-width='3' fill='none' opacity='.7'/><path d='M26 4 L40 32' stroke='#ffd166' stroke-width='2'/><path d='M40 32 L58 94' stroke='#ffd166' stroke-width='2' stroke-dasharray='3 3'/><path d='M96 6 L84 30 L72 8' stroke='#ff6b6b' stroke-width='2' fill='none'/><path d='M0 104 L30 80 L50 94 L70 76 L120 104 V120 H0Z' fill='#495057'/><g transform='rotate(-28 64 88)'><rect x='52' y='82' width='30' height='10' rx='2' fill='#f5f6fa'/><rect x='80' y='80' width='6' height='14' fill='#8ecae6'/></g><path d='M64 90 L56 108 M64 90 L72 108' stroke='#ced4da' stroke-width='2.5'/></g></svg>",
+   "aciklama": "Yeryüzüne yerleştirilmiş teleskoptur.",
+   "ek": "Görünür ışık, kızılötesi ve radyo dalgaları gibi ışınları yakalar. Ama atmosferden geçemeyip geri yansıyan bazı ışınları yakalayamaz. Maliyeti düşük, bakımı ve yenilenmesi kolay olduğu için tercih edilir.",
+   "akilda": "Ucuz ve bakımı kolay",
+   "soru": {
+    "soru": "Yer tabanlı teleskoplar neden tercih edilir?",
+    "secenekler": [
+     "Maliyeti düşük, bakımı kolay olduğu için",
+     "Bütün ışınları yakalayabildiği için",
+     "Atmosferin üstünde olduğu için"
+    ],
+    "dogru": 0,
+    "ipucu": "\"Akılda kalsın\" ifadesine bak: ucuz ve ...",
+    "aciklama": "Yer tabanlı teleskoplar düşük maliyetli, bakımı ve yenilenmesi kolay olduğu için tercih edilir. (s. 23)"
+   }
+  },
+  {
+   "ad": "Işık Kirliliği",
+   "renk": "#ff9f1c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k2c6'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k2c6)'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='60' y='0' width='60' height='120' fill='#0f1428'/><g fill='#fff'><circle cx='72' cy='16' r='1.3'/><circle cx='88' cy='26' r='1.6'/><circle cx='104' cy='14' r='1.2'/><circle cx='78' cy='40' r='1'/><circle cx='98' cy='44' r='1.4'/><circle cx='110' cy='32' r='1'/><circle cx='84' cy='56' r='1.2'/><circle cx='106' cy='64' r='1'/><circle cx='70' cy='66' r='1.1'/></g><ellipse cx='30' cy='96' rx='44' ry='56' fill='#ff9f1c' opacity='.28'/><ellipse cx='30' cy='100' rx='30' ry='36' fill='#ffbf69' opacity='.3'/><circle cx='22' cy='18' r='1' fill='#fff' opacity='.5'/><rect x='6' y='72' width='14' height='34' fill='#343a40'/><rect x='22' y='60' width='16' height='46' fill='#495057'/><rect x='40' y='78' width='14' height='28' fill='#343a40'/><g fill='#ffd166'><rect x='9' y='76' width='3' height='3'/><rect x='14' y='84' width='3' height='3'/><rect x='26' y='64' width='3' height='3'/><rect x='32' y='72' width='3' height='3'/><rect x='26' y='82' width='3' height='3'/><rect x='44' y='84' width='3' height='3'/></g><path d='M0 106 H120 V120 H0Z' fill='#2b2f3a'/></g></svg>",
+   "aciklama": "Işık kaynakları konum, yön, zaman ve yoğunluk bakımından yanlış ve uygunsuz kullanıldığında oluşan kirliliktir.",
+   "ek": "Gökyüzü gözlemlerini olumsuz etkiler. Bu yüzden şehirlerde teleskopla net görüntü almak zordur; yaylalarda ve yüksek yerlerde çok daha net gözlem yapılır.",
+   "akilda": "Fazla ışık, kayıp yıldız",
+   "soru": {
+    "soru": "Şehirde teleskopla net görüntü almayı en çok ne zorlaştırır?",
+    "secenekler": [
+     "Yüksek rakım",
+     "Işık kirliliği",
+     "Temiz hava"
+    ],
+    "dogru": 1,
+    "ipucu": "Resimde şehrin üstündeki turuncu parıltıyı hatırla. Yıldızları ne saklıyordu?",
+    "aciklama": "Şehirlerdeki ışık kirliliği gökyüzü gözlemlerini olumsuz etkiler. (s. 23)"
+   }
+  },
+  {
+   "ad": "Gözlemevi",
+   "renk": "#5b6475",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k2c7'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k2c7)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='18' cy='20' r='1.2'/><circle cx='98' cy='16' r='1.5'/><circle cx='104' cy='60' r='1'/><circle cx='14' cy='56' r='1.3'/><circle cx='60' cy='12' r='1'/><circle cx='40' cy='30' r='1'/></g><path d='M0 110 L40 64 L60 74 L84 50 L120 96 V120 H0Z' fill='#495057'/><path d='M84 50 L92 60 L78 58Z' fill='#f5f6fa'/><rect x='38' y='70' width='36' height='20' fill='#e9ecef'/><path d='M36 70 A20 20 0 0 1 76 70Z' fill='#f5f6fa'/><path d='M53 51 L59 51 L60 70 L52 70Z' fill='#1b2340'/><g transform='rotate(-20 56 62)'><rect x='52' y='44' width='8' height='22' rx='2' fill='#8ecae6'/></g><rect x='52' y='78' width='8' height='12' fill='#adb5bd'/></g></svg>",
+   "aciklama": "Teleskopların yerleştirildiği kubbe benzeri yapılardır. Diğer adı rasathanedir.",
+   "ek": "Kubbesi gözlem sırasında açılır, gözlem yokken kapanır. Yerleşim yerlerinden uzak, yüksek, havası gözleme uygun, deprem kuşaklarından ve TV-radyo yayınlarından uzak yerlere kurulur. Ülkemizde TUG ve DAG gözlemevleri vardır.",
+   "akilda": "Teleskobun kubbeli evi",
+   "soru": {
+    "soru": "Gözlemevinin diğer adı nedir?",
+    "secenekler": [
+     "Uzay üssü",
+     "Uydu merkezi",
+     "Rasathane"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartındaki ilk cümlenin sonunu tekrar oku: \"Diğer adı ...\"",
+    "aciklama": "Teleskopların yerleştirildiği kubbe benzeri yapılara gözlemevi (rasathane) denir. (s. 23)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Nerede bulunur?",
+   "kutular": [
+    {
+     "etiket": "Uzayda",
+     "uyeler": [
+      "Uzay Teleskobu",
+      "Hubble Uzay Teleskobu",
+      "James Webb Uzay Teleskobu"
+     ]
+    },
+    {
+     "etiket": "Yeryüzünde",
+     "uyeler": [
+      "Yer Tabanlı Teleskop",
+      "Gözlemevi"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "James Webb Uzay Teleskobu bir tenis kortu büyüklüğündedir. (s. 22)",
+  "Origami katlama tekniğinden birçok uzay aracının tasarımında yararlanılmıştır. (s. 22)",
+  "NASA, Araba Tekeri Galaksisi'ni hem Hubble hem James Webb ile görüntüledi. James Webb'in görüntüsü daha net çıktı. (s. 22)",
+  "DAG tamamlandığında dünyanın en yüksek rakımda kurulan üçüncü gözlemevi olması bekleniyor. (s. 23)"
+ ],
+ "akildaKalsin": [
+  "Teleskop, gök cisimlerini gözlemleme aracıdır.",
+  "Teleskoplar ikiye ayrılır: uzay teleskobu ve yer tabanlı teleskop.",
+  "Uzay teleskobu atmosfere takılmaz, daha net görür.",
+  "Yer tabanlı teleskop ucuzdur, bakımı kolaydır.",
+  "Işık kirliliği gökyüzü gözlemini zorlaştırır.",
+  "Gözlemevi (rasathane) yüksek, karanlık ve sakin bir yere kurulur."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Teleskopları neden uzaya gönderiyoruz?",
+   "cevap": "Atmosfer uzaydan gelen ışınların büyük bölümünü engeller. Hava kirliliği ve uyduların ışık izleri de gözlemi zorlaştırır. Uzaydaki teleskop bu sorunlarla karşılaşmaz ve daha net görüntü elde eder. (s. 22)"
+  },
+  {
+   "soru": "Uzay teleskobu daha iyiyse neden yeryüzüne de teleskop kuruyoruz?",
+   "cevap": "Yer tabanlı teleskopların maliyeti düşüktür, bakımı ve yenilenmesi kolaydır. (s. 23)"
+  },
+  {
+   "soru": "Şehirde yıldızlar neden az görünür?",
+   "cevap": "Şehirdeki ışıklar ışık kirliliği oluşturur ve gökyüzü gözlemini zorlaştırır. Yaylalarda ve yüksek yerlerde çok daha net gözlem yapılabilir. (s. 23)"
+  },
+  {
+   "soru": "Gözlemevleri neden dağların tepesine kurulur?",
+   "cevap": "Yükseklere çıkıldıkça atmosfer tabakası incelir ve gözlemi zorlaştıran hava olaylarının etkisi azalır. (s. 23)"
+  },
+  {
+   "soru": "Gözlemevinin kubbesi neden açılıp kapanır?",
+   "cevap": "Kubbe gözlem sırasında açılır, gözlem yapılmadığında kapanır. (s. 23)"
+  },
+  {
+   "soru": "Türkiye'nin en büyük gözlemevi hangisi?",
+   "cevap": "TÜBİTAK Ulusal Gözlemevi (TUG). Antalya'da, Toros Dağları'ndaki Bakırlıtepe'de kuruludur ve Ocak 1997'den beri görev yapıyor. (s. 23)"
+  },
+  {
+   "soru": "DAG nerede kuruluyor?",
+   "cevap": "Erzurum'daki Karakaya Tepeleri'nde. Dört metre ayna çapıyla Avrupa'nın en büyük gözlemevleri arasında yer alması ve Hubble'dan daha kaliteli görüntüler elde etmesi bekleniyor. (s. 23)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir gözlemevi neden kalabalık bir şehrin ortasına kurulmaz? İki sebep yaz.",
+   "ornekCevap": "Şehirdeki ışıklar ışık kirliliği oluşturur ve gökyüzü net görünmez. Ayrıca gözlemevi yüksek rakımlı ve TV-radyo yayınlarından uzak bir yerde olmalıdır.",
+   "anahtarlar": [
+    "ışık",
+    "kirli",
+    "yüksek",
+    "rakım",
+    "yayın",
+    "uzak"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Teleskoplar yerleştirildikleri yere göre kaç sınıfa ayrılır?",
+   "secenekler": [
+    "İki",
+    "Üç",
+    "Dört"
+   ],
+   "dogru": 0,
+   "ipucu": "Gruplama oyunundaki kutuları say: uzayda ve ...",
+   "aciklama": "Teleskoplar uzay teleskobu ve yer tabanlı teleskop olarak iki sınıfa ayrılır. (s. 22)"
+  },
+  {
+   "soru": "Hangisi yeryüzünden gözlem yapmayı zorlaştıran bir etken DEĞİLDİR?",
+   "secenekler": [
+    "Atmosfer kirliliği",
+    "Uyduların gökyüzündeki ışık izleri",
+    "Gözlemevinin yüksek bir yerde olması"
+   ],
+   "dogru": 2,
+   "ipucu": "Gözlemevleri neden dağların tepesine kuruluyordu? Yükseklik iyi mi, kötü mü?",
+   "aciklama": "Yüksek rakım gözlemi kolaylaştırır; atmosfer kirliliği ve uyduların ışık izleri ise zorlaştırır. (s. 22)"
+  },
+  {
+   "soru": "Uzaya yerleştirilen en büyük teleskop hangisidir?",
+   "secenekler": [
+    "Hubble",
+    "James Webb",
+    "TUG"
+   ],
+   "dogru": 1,
+   "ipucu": "Tenis kortu büyüklüğündeki teleskobu hatırla.",
+   "aciklama": "James Webb, uzaya yerleştirilen en büyük teleskoptur. (s. 22)"
+  },
+  {
+   "soru": "Hubble Uzay Teleskobu hangi yıl Dünya yörüngesine taşındı?",
+   "secenekler": [
+    "1990",
+    "2021",
+    "1997"
+   ],
+   "dogru": 0,
+   "ipucu": "Hubble, James Webb'den çok daha eskidir.",
+   "aciklama": "Hubble, 24 Nisan 1990'da Dünya yörüngesine taşındı. (s. 22)"
+  },
+  {
+   "soru": "Yer tabanlı teleskopların bir dezavantajı nedir?",
+   "secenekler": [
+    "Bakımı zordur",
+    "Atmosferden geçemeyen bazı ışınları yakalayamaz",
+    "Maliyeti çok yüksektir"
+   ],
+   "dogru": 1,
+   "ipucu": "Yer tabanlı teleskobun avantajlarını hatırla: ucuz ve bakımı kolay. Geriye hangisi kalıyor?",
+   "aciklama": "Yer tabanlı teleskoplar, atmosferden geçemeyip geri yansıyan bazı ışınları yakalayamaz. (s. 23)"
+  },
+  {
+   "soru": "Gözlemevi kurulacak yerde hangisi ARANMAZ?",
+   "secenekler": [
+    "Yüksek rakımlı olması",
+    "Deprem kuşaklarından uzak olması",
+    "Şehir merkezine yakın olması"
+   ],
+   "dogru": 2,
+   "ipucu": "Şehir ışıkları gözlemi nasıl etkiliyordu?",
+   "aciklama": "Gözlemevi yerleşim merkezlerinden uzak, ışık kirliliğinden etkilenmeyecek bir yerde olmalıdır. (s. 23)"
+  },
+  {
+   "soru": "Işık kirliliği nasıl oluşur?",
+   "secenekler": [
+    "Işık kaynakları yanlış ve uygunsuz kullanıldığında",
+    "Yıldızlar çok parladığında",
+    "Gözlemevinin kubbesi kapalı kaldığında"
+   ],
+   "dogru": 0,
+   "ipucu": "Işık kirliliğinin tanımında ışık kaynaklarının nasıl kullanıldığı yazıyordu.",
+   "aciklama": "Işık kaynakları konum, yön, zaman ve yoğunluk bakımından yanlış ve uygunsuz kullanıldığında ışık kirliliği oluşur. (s. 23)"
+  },
+  {
+   "soru": "Yükseklere çıkıldıkça gözlem yapmak neden kolaylaşır?",
+   "secenekler": [
+    "Yıldızlara çok yaklaşıldığı için",
+    "Atmosfer incelir, hava olaylarının etkisi azalır",
+    "Hava daha sıcak olduğu için"
+   ],
+   "dogru": 1,
+   "ipucu": "Yükseklere çıktıkça atmosfer tabakası kalınlaşır mı, incelir mi? Bunun gözleme etkisini düşün.",
+   "aciklama": "Yükseklere çıkıldıkça atmosfer tabakası incelir, gözlemi zorlaştıran hava olaylarının etkisi azalır. (s. 23)"
+  },
+  {
+   "soru": "Türkiye'nin en büyük gözlemevi TUG nerededir?",
+   "secenekler": [
+    "Erzurum, Karakaya Tepeleri",
+    "Ankara, Elmadağ",
+    "Antalya, Bakırlıtepe"
+   ],
+   "dogru": 2,
+   "ipucu": "TUG, Toros Dağları'nda kurulmuştur. Toros Dağları hangi ilimizde?",
+   "aciklama": "TUG, Antalya'da Toros Dağları'nın zirvelerinden Bakırlıtepe'de kurulmuştur. (s. 23)"
+  },
+  {
+   "soru": "James Webb, Hubble'dan kaç kat daha güçlüdür?",
+   "secenekler": [
+    "1000",
+    "10",
+    "100"
+   ],
+   "dogru": 2,
+   "ipucu": "James Webb kavram kartındaki \"kat\" sayısına bak.",
+   "aciklama": "James Webb Uzay Teleskobu, Hubble'dan 100 kat daha güçlüdür. (s. 22)"
+  }
+ ]
+}
