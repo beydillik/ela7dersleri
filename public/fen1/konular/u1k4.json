@@ -1,0 +1,333 @@
+{
+ "id": "u1k4",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Uzay Teknolojisinin Faydaları ve Uzay Kirliliği",
+ "sayfalar": "s. 24–25, 30–32",
+ "giris": "Uzayı araştırmak için yeni teknolojiler geliştirildi. Bu teknolojilerin çoğunu bugün günlük hayatta kullanıyoruz. Ama uzay araştırmaları bir sorun da doğurdu: uzay kirliliği. Bu konuda ikisini de öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Sağlık Alanında",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k4c1'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k4c1)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><path d='M60 92 C30 72 24 52 36 40 C46 30 58 36 60 46 C62 36 74 30 84 40 C96 52 90 72 60 92Z' fill='#e63946'/><path d='M34 62 h14 l5 -10 l7 20 l6 -14 l4 4 h16' stroke='#fff' stroke-width='3' fill='none' stroke-linejoin='round'/><rect x='88' y='70' width='10' height='34' rx='5' fill='#f5f6fa' transform='rotate(25 93 87)'/><rect x='91' y='78' width='4' height='18' rx='2' fill='#e63946' transform='rotate(25 93 87)'/></g></svg>",
+   "aciklama": "Uzay araştırmaları için geliştirilen bazı teknolojiler bugün hastanelerde ve evlerimizde kullanılıyor.",
+   "ek": "MR, bilgisayarlı tomografi ve ultrason cihazları; dijital termometreler; yapay kalp pompası; saydam diş teli; hafızalı yataklar ve çizilmez gözlük camları bunlardan bazılarıdır.",
+   "akilda": "Uzaydan hastaneye",
+   "soru": {
+    "soru": "Aşağıdakilerden hangisi uzay araştırmaları sayesinde sağlık alanında kullanılan bir araçtır?",
+    "secenekler": [
+     "Streç film",
+     "Güneş paneli",
+     "Dijital termometre"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartındaki sağlık örneklerine bak: vücut sıcaklığını ne ölçer?",
+    "aciklama": "Vücut sıcaklığını ölçen dijital termometreler sağlık alanındaki örneklerdendir. (s. 25)"
+   }
+  },
+  {
+   "ad": "Gıda Alanında",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k4c2'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k4c2)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><rect x='24' y='50' width='38' height='50' rx='6' fill='#f2c14e'/><rect x='24' y='44' width='38' height='10' rx='3' fill='#e9ecef'/><circle cx='43' cy='76' r='10' fill='#fff' opacity='.85'/><path d='M38 76 h10 M43 71 v10' stroke='#f2c14e' stroke-width='3'/><path d='M86 40 C76 56 72 64 72 72 a14 14 0 0 0 28 0 C100 64 96 56 86 40Z' fill='#4cc9f0'/><path d='M80 74 a7 7 0 0 0 7 7' stroke='#fff' stroke-width='3' fill='none'/></g></svg>",
+   "aciklama": "Astronotlar için yapılan yiyecekler uzun süre bozulmaz, az yer kaplar ve kolay hazırlanır.",
+   "ek": "Bebek maması ve puding gibi toz gıdalar ile su filtreleri bu teknolojilerden doğmuştur.",
+   "akilda": "Bozulmayan pratik yiyecek",
+   "soru": {
+    "soru": "Uzay araştırmalarından gelen pratik yiyeceklerin bir özelliği hangisidir?",
+    "secenekler": [
+     "Çabuk bozulur",
+     "Uzun süre bozulmaz",
+     "Çok yer kaplar"
+    ],
+    "dogru": 1,
+    "ipucu": "Uzayda buzdolabı ve market yok. Astronotun yiyeceği nasıl olmalı?",
+    "aciklama": "Bu yiyecekler uzun süre bozulmaz, az yer kaplar ve kolay hazırlanır. (s. 25)"
+   }
+  },
+  {
+   "ad": "Ulaşım Alanında",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k4c3'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k4c3)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><circle cx='60' cy='168' r='80' fill='#1f9e8f'/><rect x='50' y='18' width='20' height='12' rx='2' fill='#f2c14e'/><rect x='34' y='20' width='14' height='8' fill='#2d6cdf'/><rect x='72' y='20' width='14' height='8' fill='#2d6cdf'/><path d='M60 32 L40 88 M60 32 L80 88' stroke='#ffd166' stroke-width='1.5' stroke-dasharray='3 3'/><path d='M60 58 a12 12 0 0 1 12 12 c0 10 -12 22 -12 22 s-12 -12 -12 -22 a12 12 0 0 1 12 -12Z' fill='#e63946'/><circle cx='60' cy='70' r='5' fill='#fff'/><rect x='22' y='98' width='26' height='10' rx='4' fill='#e9ecef'/><circle cx='28' cy='109' r='3' fill='#333'/><circle cx='42' cy='109' r='3' fill='#333'/></g></svg>",
+   "aciklama": "Akıllı telefonlarda ve otomobillerde kullanılan navigasyon, yani GPS, uzay teknolojisi sayesinde çalışır.",
+   "ek": "GPS'in açılımı Küresel Konumlama Sistemi'dir. Telefonla ya da otomobilde yol tarifi alırken bu sistemi kullanırız.",
+   "akilda": "GPS ile yol bul",
+   "soru": {
+    "soru": "Otomobillerde yol tarifi veren sistemin adı nedir?",
+    "secenekler": [
+     "MR",
+     "Duman dedektörü",
+     "GPS (Küresel Konumlama Sistemi)"
+    ],
+    "dogru": 2,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla: ... ile yol bul.",
+    "aciklama": "Navigasyon, yani Küresel Konumlama Sistemi (GPS), ulaşımda kullanılır. (s. 25)"
+   }
+  },
+  {
+   "ad": "Endüstri Alanında",
+   "renk": "#b5651d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k4c4'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k4c4)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><circle cx='60' cy='30' r='16' fill='#e9ecef'/><rect x='50' y='24' width='20' height='10' rx='4' fill='#f2c14e'/><path d='M36 52 h48 l6 50 h-60Z' fill='#ced4da'/><path d='M40 60 l10 8 l-8 8 l10 8 M80 60 l-10 8 l8 8 l-10 8' stroke='#adb5bd' stroke-width='2' fill='none'/><path d='M22 104 c4 -10 10 -10 8 -20 c8 6 10 14 6 20Z' fill='#f77f00'/><path d='M92 104 c4 -10 10 -10 8 -20 c8 6 10 14 6 20Z' fill='#f77f00'/></g></svg>",
+   "aciklama": "Astronot kıyafetleri ve uzay araçları için yapılan malzemeler fabrikalarda ve evlerde de işe yarıyor.",
+   "ek": "Yalıtım için termal battaniye, yansıtıcı olarak alüminyum folyo ve streç film, ısıya dayanıklı kıyafet ve duman dedektörü bunlara örnektir.",
+   "akilda": "Isıya karşı koruma",
+   "soru": {
+    "soru": "Aşağıdakilerden hangisi endüstri alanındaki örneklerden biridir?",
+    "secenekler": [
+     "Isıya dayanıklı kıyafet",
+     "Saydam diş teli",
+     "Toz puding"
+    ],
+    "dogru": 0,
+    "ipucu": "Diş teli sağlık, puding gıda alanındaydı. Geriye hangisi kalıyor?",
+    "aciklama": "Isıya dayanıklı kıyafet, termal battaniye ve duman dedektörü endüstri alanındaki örneklerdir. (s. 25)"
+   }
+  },
+  {
+   "ad": "Enerji ve İletişim Alanında",
+   "renk": "#2d6cdf",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k4c5'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k4c5)'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='26' r='12' fill='#ffd166'/><g stroke='#ffd166' stroke-width='3'><path d='M26 6v6M26 40v6M6 26h6M40 26h6M12 12l4 4M36 36l4 4M40 12l-4 4M12 40l4-4'/></g><path d='M18 96 L34 62 H74 L60 96Z' fill='#2d6cdf' stroke='#9cc3ff' stroke-width='2'/><path d='M26 79 H68 M39 62 L28 96 M54 62 L44 96' stroke='#9cc3ff' stroke-width='1.5'/><g stroke='#4cc9f0' stroke-width='4' fill='none' stroke-linecap='round'><path d='M78 58 a22 22 0 0 1 30 0'/><path d='M84 66 a13 13 0 0 1 18 0'/></g><circle cx='93' cy='74' r='4' fill='#4cc9f0'/></g></svg>",
+   "aciklama": "Uydulara enerji veren güneş panelleri bugün evlerde de elektrik üretiyor. İletişimde de uzay teknolojisinden yararlanıyoruz.",
+   "ek": "Yazılım teknolojisi sayesinde nesneler birbiriyle genel ağ (internet) üzerinden veri alışverişi yapabiliyor.",
+   "akilda": "Güneşten elektrik",
+   "soru": {
+    "soru": "Uzay teknolojisinden gelen ve enerji alanında kullanılan araç hangisidir?",
+    "secenekler": [
+     "Hafızalı yatak",
+     "Güneş paneli",
+     "Su filtresi"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\": ...ten elektrik.",
+    "aciklama": "Güneş panelleri enerji alanındaki örnektir. (s. 25)"
+   }
+  },
+  {
+   "ad": "Uzay Kirliliği",
+   "renk": "#6c757d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k4c6'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k4c6)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='12' cy='14' r='1'/><circle cx='108' cy='108' r='1.2'/></g><circle cx='60' cy='62' r='24' fill='#1f9e8f'/><path d='M44 56 c6 -6 12 0 18 -4 c4 8 -6 10 -10 16 c-6 -2 -10 -6 -8 -12Z' fill='#52b788'/><ellipse cx='60' cy='62' rx='48' ry='18' fill='none' stroke='#6c757d' stroke-dasharray='2 4'/><rect x='12' y='56' width='10' height='6' fill='#adb5bd' transform='rotate(20 17 59)'/><path d='M94 46 l8 -3 l3 7 l-8 3Z' fill='#ced4da'/><rect x='84' y='76' width='12' height='5' fill='#f2c14e' transform='rotate(-30 90 78)'/><circle cx='30' cy='80' r='3' fill='#adb5bd'/><path d='M48 38 l6 -2 l1 4 l-6 2Z' fill='#e9ecef'/><rect x='70' y='88' width='6' height='9' fill='#e63946' transform='rotate(40 73 92)'/><circle cx='100' cy='60' r='2' fill='#e9ecef'/></g></svg>",
+   "aciklama": "Görevini bitirmiş uydular, roket parçaları ve yakıt tankları Dünya'nın çevresinde kontrolsüz dolanır. Bunlara uzay çöpü denir.",
+   "ek": "Uzay Gözetim Ağı (SSN), radar ve teleskoplarla bu parçaları izler. Raporlara göre 130 milyondan fazla parça uzay çöpü olarak dolaşıyor.",
+   "akilda": "Yörüngedeki çöp",
+   "soru": {
+    "soru": "Aşağıdakilerden hangisi uzay çöpüne örnektir?",
+    "secenekler": [
+     "Görevini tamamlamış bir uydu",
+     "Görevdeki bir teleskop",
+     "Ay"
+    ],
+    "dogru": 0,
+    "ipucu": "Uzay çöpü, işlevini yitirmiş insan yapımı cisimlerdir. Hangisi işini bitirmiş?",
+    "aciklama": "Görevini tamamlamış uydular, roket parçaları ve yakıt tankları uzay çöpüdür. (s. 30)"
+   }
+  },
+  {
+   "ad": "Uzay Çöpünün Zararı ve Çözümü",
+   "renk": "#52b788",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k4c7'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k4c7)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><rect x='14' y='22' width='26' height='16' rx='3' fill='#f2c14e'/><rect x='2' y='26' width='12' height='8' fill='#2d6cdf'/><path d='M92 18 L56 30' stroke='#ffd166' stroke-width='3' stroke-dasharray='6 4'/><circle cx='52' cy='31' r='4' fill='#ced4da'/><path d='M46 30 l-4 -6 M46 32 l-6 2' stroke='#e63946' stroke-width='2'/><path d='M30 70 q30 -12 60 0 l-8 30 q-22 8 -44 0Z' fill='none' stroke='#52b788' stroke-width='2'/><path d='M36 76 l40 22 M50 72 l34 20 M44 96 l40 -24 M38 86 l40 -16' stroke='#52b788' stroke-width='1.5'/><rect x='54' y='80' width='10' height='6' fill='#adb5bd' transform='rotate(20 59 83)'/><path d='M60 60 v-12' stroke='#52b788' stroke-width='2'/></g></svg>",
+   "aciklama": "Uzay çöpleri çok hızlı hareket ettiği için küçük bir parça bile uzay aracına büyük zarar verebilir.",
+   "ek": "Önlem alınmazsa haberleşme, ulaşım ve uzay araştırmalarında aksamalar olabilir. Çözüm önerileri: çöpleri yakalayıp Dünya'ya getirmek ve daha çevreci teknolojiler geliştirmek.",
+   "akilda": "Küçük parça, büyük zarar",
+   "soru": {
+    "soru": "Küçük bir uzay çöpü bile uzay aracına neden büyük zarar verebilir?",
+    "secenekler": [
+     "Çok ağır olduğu için",
+     "Sıcak olduğu için",
+     "Çok yüksek hıza ulaştığı için"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartında parçaların nasıl hareket ettiği yazıyor.",
+    "aciklama": "Parçalar çok yüksek hızlara ulaşır; bu yüzden küçükler bile büyük zarar verebilir. (s. 32)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Uzay araştırmalarının faydası mı, yol açtığı sorun mu?",
+   "kutular": [
+    {
+     "etiket": "Günlük hayata faydası",
+     "uyeler": [
+      "Sağlık Alanında",
+      "Gıda Alanında",
+      "Ulaşım Alanında",
+      "Endüstri Alanında",
+      "Enerji ve İletişim Alanında"
+     ]
+    },
+    {
+     "etiket": "Yol açtığı sorun",
+     "uyeler": [
+      "Uzay Kirliliği",
+      "Uzay Çöpünün Zararı ve Çözümü"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Vücudun şeklini alan hafızalı yataklar ve çizilmez gözlük camları da uzay araştırmaları sayesinde hayatımıza girdi. (s. 25)",
+  "Dünya'nın çevresinde hâlâ görevde olan ya da görevini bitirmiş binlerce yapay uydu var. (s. 30)",
+  "Uzay kirliliği bugün yaşamımızı doğrudan etkilemiyor. Ama önlem alınmazsa giderek artacak. (s. 32)",
+  "Kitaptaki performans görevinde \"altı ayakkabı tekniği\" kullanılıyor: grupta herkes farklı renkte bir ayakkabı seçer ve soruna o ayakkabının bakış açısıyla çözüm arar. Örneğin turuncu lastik çizme tehlikeyi azaltmayı, pembe ev terliği duyarlılığı temsil eder. (s. 31)"
+ ],
+ "akildaKalsin": [
+  "Uzay için geliştirilen teknolojiler günlük hayatta da kullanılır.",
+  "Sağlıkta: MR, tomografi, dijital termometre, yapay kalp pompası.",
+  "Gıdada toz gıdalar ve su filtreleri; ulaşımda GPS; enerjide güneş panelleri.",
+  "Görevini bitirmiş uydular ve roket parçaları uzay çöpü olur.",
+  "Uzay çöpleri çok hızlıdır; küçük parçalar bile büyük zarar verir.",
+  "Çözüm: çöpleri yakalayıp Dünya'ya getirmek, çevreci teknolojiler geliştirmek."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Uzay için yapılan şeyler neden evimize kadar geldi?",
+   "cevap": "Uzayda çalışabilmek için yeni teknolojiler geliştirmek gerekti. Bu teknolojilerin bir kısmı zamanla günlük hayatta da kullanılmaya başlandı. (s. 24–25)"
+  },
+  {
+   "soru": "GPS nasıl oluyor da yolumuzu buluyor?",
+   "cevap": "GPS, Küresel Konumlama Sistemi demektir. Telefonlardaki ve otomobillerdeki navigasyon bu sistemle çalışır; kitapta ulaşım alanındaki örnek olarak verilir. (s. 25)"
+  },
+  {
+   "soru": "Astronotların yiyecekleri nasıl olmalı?",
+   "cevap": "Uzun süre bozulmamalı, az yer kaplamalı ve kolay hazırlanmalı. Toz gıdalar bu yüzden uygundur. (s. 25)"
+  },
+  {
+   "soru": "Uzayda kaç tane çöp var?",
+   "cevap": "Uzay Gözetim Ağı'nın raporlarına göre farklı büyüklükte 130 milyondan fazla parça uzay çöpü olarak dolaşıyor. (s. 30)"
+  },
+  {
+   "soru": "Uzay çöplerini kim izliyor?",
+   "cevap": "Uzay Gözetim Ağı (Space Surveillance Network, SSN) radar ve teleskoplarla bu parçaları tespit ediyor, raporluyor ve izliyor. (s. 30)"
+  },
+  {
+   "soru": "Uzay çöpü bizi etkiler mi?",
+   "cevap": "Şimdilik yaşamımızı doğrudan etkilemiyor. Ama önlem alınmazsa haberleşme, ulaşım, ulusal güvenlik ve uzay araştırmalarında aksamalar olabilir. (s. 32)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Uzay kirliliğini azaltmak için ne yapılabilir? Bir öneri yaz.",
+   "ornekCevap": "Görevini bitiren uydular yörüngeden kontrollü şekilde çıkarılabilir. Uzay çöpleri özel sistemlerle yakalanıp Dünya'ya getirilebilir. Daha çevreci teknolojiler geliştirilebilir.",
+   "anahtarlar": [
+    "yakala",
+    "topla",
+    "Dünya'ya getir",
+    "çevreci",
+    "sürdürülebilir",
+    "kontrollü",
+    "yörünge"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Uzay araştırmaları için geliştirilen teknolojiler için hangisi doğrudur?",
+   "secenekler": [
+    "Yalnızca uzayda kullanılır",
+    "Günlük hayatta da kullanılır",
+    "Hiç kullanılmaz"
+   ],
+   "dogru": 1,
+   "ipucu": "Konunun ilk cümlesini hatırla.",
+   "aciklama": "Bu teknolojilerin birçoğu zamanla günlük hayatta da kullanılmaya başlandı. (s. 24–25)"
+  },
+  {
+   "soru": "MR, tomografi ve ultrason cihazları hangi alandaki örneklerdir?",
+   "secenekler": [
+    "Gıda",
+    "Ulaşım",
+    "Sağlık"
+   ],
+   "dogru": 2,
+   "ipucu": "Bu cihazlar vücudu tarar. Onları nerede görürüz?",
+   "aciklama": "Vücut taraması yapan bu cihazlar sağlık alanındadır. (s. 25)"
+  },
+  {
+   "soru": "Su filtreleri hangi alandaki örneklerdendir?",
+   "secenekler": [
+    "Gıda",
+    "Enerji",
+    "Endüstri"
+   ],
+   "dogru": 0,
+   "ipucu": "Toz gıdalarla aynı kutudaydı.",
+   "aciklama": "Su filtreleri, toz gıdalarla birlikte gıda alanında verilmiştir. (s. 25)"
+  },
+  {
+   "soru": "Duman dedektörü hangi alandaki örneklerdendir?",
+   "secenekler": [
+    "Sağlık",
+    "Endüstri",
+    "Gıda"
+   ],
+   "dogru": 1,
+   "ipucu": "Termal battaniye ve ısıya dayanıklı kıyafetle aynı listede.",
+   "aciklama": "Duman dedektörü endüstri alanındaki örneklerdendir. (s. 25)"
+  },
+  {
+   "soru": "Hangisi sağlık alanında kullanılan uzay teknolojisi değildir?",
+   "secenekler": [
+    "Yapay kalp pompası",
+    "Saydam diş teli",
+    "Navigasyon (GPS)"
+   ],
+   "dogru": 2,
+   "ipucu": "Üçünden biri yol bulmak içindir.",
+   "aciklama": "GPS ulaşım alanındadır; diğer ikisi sağlık alanındadır. (s. 25)"
+  },
+  {
+   "soru": "Nesnelerin genel ağ üzerinden birbiriyle veri alışverişi yapması hangi alana örnektir?",
+   "secenekler": [
+    "İletişim",
+    "Gıda",
+    "Sağlık"
+   ],
+   "dogru": 0,
+   "ipucu": "Veri alışverişi = haberleşmek.",
+   "aciklama": "Bu, iletişim alanındaki örnektir. (s. 25)"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi uzay çöpü değildir?",
+   "secenekler": [
+    "İşlevini yitirmiş roket parçası",
+    "Boş yakıt tankı",
+    "Görevini sürdüren bir uydu"
+   ],
+   "dogru": 2,
+   "ipucu": "Uzay çöpü görevini tamamlamış, işe yaramayan parçalardır.",
+   "aciklama": "Görevini sürdüren uydu çöp değildir; işlevini yitirmiş parçalar çöptür. (s. 30)"
+  },
+  {
+   "soru": "Uzay çöplerini radar ve teleskoplarla izleyen sistem hangisidir?",
+   "secenekler": [
+    "GPS",
+    "Uzay Gözetim Ağı (SSN)",
+    "TÜBİTAK UZAY"
+   ],
+   "dogru": 1,
+   "ipucu": "Adında \"gözetim\" yani izleme kelimesi var.",
+   "aciklama": "Uzay Gözetim Ağı (SSN) kalıntıları tespit eder, raporlar ve izler. (s. 30)"
+  },
+  {
+   "soru": "Önlem alınmazsa uzay kirliliği hangi alanda aksamaya yol açabilir?",
+   "secenekler": [
+    "Haberleşme",
+    "Bitkilerin büyümesi",
+    "Deniz dalgaları"
+   ],
+   "dogru": 0,
+   "ipucu": "Uydular hangi işlerde kullanılıyordu?",
+   "aciklama": "Uzay araştırmaları, haberleşme, ulaşım ve ulusal güvenlikte aksamalar yaşanabilir. (s. 32)"
+  },
+  {
+   "soru": "Hangisi uzay kirliliğine karşı bir çözüm önerisidir?",
+   "secenekler": [
+    "Daha çok roket parçası bırakmak",
+    "Çöpleri yakalayıp Dünya'ya getirmek",
+    "Uyduları hiç izlememek"
+   ],
+   "dogru": 1,
+   "ipucu": "Kirliliği azaltan seçeneği bul.",
+   "aciklama": "Uzay çöplerini yakalayıp Dünya'ya getirmek ve çevreci teknolojiler geliştirmek çözüm önerileridir. (s. 32)"
+  }
+ ]
+}
