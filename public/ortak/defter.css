@@ -229,9 +229,9 @@ textarea { width: 100%; min-height: 120px; border: 2px solid var(--line); border
 .tests { display: grid; gap: 14px; }
 
 /* Bot */
-.bot-fab { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; align-items: center; gap: 8px; background: var(--night); color: var(--night-ink); border: 0; border-radius: 999px; padding: 6px 18px 6px 6px; font-weight: 800; box-shadow: 0 8px 24px rgba(27,35,64,.35); }
+.bot-fab { position: fixed; right: 16px; bottom: calc(80px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; align-items: center; gap: 8px; background: var(--night); color: var(--night-ink); border: 0; border-radius: 999px; padding: 6px 18px 6px 6px; font-weight: 800; box-shadow: 0 8px 24px rgba(27,35,64,.35); }
 .bot-fab svg { width: 44px; height: 44px; }
-.bot-panel { position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 41; width: min(420px, calc(100vw - 32px)); height: min(620px, calc(100vh - 32px)); background: var(--surface); border-radius: 22px; box-shadow: 0 16px 48px rgba(0,0,0,.3); display: grid; grid-template-rows: auto auto 1fr auto auto; overflow: hidden; }
+.bot-panel { position: fixed; right: 16px; bottom: calc(80px + env(safe-area-inset-bottom, 0px)); z-index: 41; width: min(420px, calc(100vw - 32px)); height: min(620px, calc(100vh - 96px)); background: var(--surface); border-radius: 22px; box-shadow: 0 16px 48px rgba(0,0,0,.3); display: grid; grid-template-rows: auto auto 1fr auto auto; overflow: hidden; }
 .bot-head { background: var(--night); color: var(--night-ink); display: flex; gap: 10px; align-items: center; padding: 10px 12px; }
 .bot-head svg { width: 42px; height: 42px; }
 .bot-head .t { flex: 1; }
