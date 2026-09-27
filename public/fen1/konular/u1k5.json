@@ -1,0 +1,316 @@
+{
+ "id": "u1k5",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Yıldızların Doğumu ve Yaşamı",
+ "sayfalar": "s. 34–42",
+ "giris": "Mehmet kampta gökyüzüne bakarken Güneş'in yaşamının bir gün bitip bitmeyeceğini merak etti. Yıldızlar da canlılar gibi doğar, yaşar ve yaşamları sona erer. Bu konuda bir yıldızın hayat hikâyesini öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Bulutsu",
+   "renk": "#b565d8",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k5c1'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k5c1)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><ellipse cx='52' cy='62' rx='34' ry='22' fill='#b565d8' opacity='.55'/><ellipse cx='74' cy='52' rx='28' ry='20' fill='#f07ab8' opacity='.5'/><ellipse cx='60' cy='76' rx='30' ry='16' fill='#4cc9f0' opacity='.35'/><ellipse cx='42' cy='50' rx='18' ry='12' fill='#e0aaff' opacity='.45'/><g fill='#fff'><circle cx='50' cy='60' r='3.2'/><circle cx='72' cy='54' r='2.4'/><circle cx='62' cy='72' r='2'/><circle cx='84' cy='66' r='1.6'/></g><g fill='#fff' opacity='.35'><circle cx='50' cy='60' r='7'/><circle cx='72' cy='54' r='5.5'/></g></g></svg>",
+   "aciklama": "Yıldızlar, bulutsu (nebula) denen yıldız oluşum bölgelerinde doğar.",
+   "ek": "Bulutsular hidrojen gazı, toz ve diğer materyallerden oluşur. Atbaşı, Orion ve Tarantula en bilinen bulutsulardandır.",
+   "akilda": "Yıldızların doğum yeri",
+   "soru": {
+    "soru": "Yıldızlar nerede doğar?",
+    "secenekler": [
+     "Bulutsularda",
+     "Kara deliklerde",
+     "Dünya atmosferinde"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartının ilk cümlesine bak: yıldız oluşum bölgelerine ne deniyordu?",
+    "aciklama": "Yıldızlar bulutsu denilen yıldız oluşum bölgelerinde doğar. (s. 41)"
+   }
+  },
+  {
+   "ad": "Ön Yıldız",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k5c2'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k5c2)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><path d='M60 60 m-40 0 a40 30 0 1 1 80 0' stroke='#b565d8' stroke-width='6' fill='none' opacity='.35'/><path d='M60 60 m-30 4 a30 22 0 1 0 60 -4' stroke='#b565d8' stroke-width='5' fill='none' opacity='.45'/><circle cx='60' cy='60' r='24' fill='#b565d8' opacity='.25'/><circle cx='60' cy='60' r='13' fill='#c1440e'/><circle cx='60' cy='60' r='7' fill='#e76f51'/><circle cx='60' cy='60' r='3' fill='#ffd166'/><g stroke='#e9ecef' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'><path d='M18 60 h14 m-5 -5 l5 5 l-5 5'/><path d='M102 60 h-14 m5 -5 l-5 5 l5 5'/><path d='M60 20 v14 m-5 -5 l5 5 l5 -5'/><path d='M60 100 v-14 m-5 5 l5 -5 l5 5'/></g></g></svg>",
+   "aciklama": "Gaz ve toz bulutu kütle çekimiyle çöker ve ısınır. Böylece ön yıldız denen donuk kırmızı bir yapı oluşur.",
+   "ek": "Ön yıldızın sıcaklığı arttıkça merkezinde çekirdek tepkimeleri başlar ve artık bir yıldız olur.",
+   "akilda": "Çöker, ısınır, yıldız olur",
+   "soru": {
+    "soru": "Ön yıldızın merkezinde ne başlayınca yıldız hâline gelir?",
+    "secenekler": [
+     "Soğuma",
+     "Çekirdek tepkimeleri",
+     "Süpernova patlaması"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartında sıcaklık artınca merkezde ne başladığı yazıyor.",
+    "aciklama": "Ön yıldızın sıcaklığı arttıkça merkezinde çekirdek tepkimeleri başlar ve yıldız hâline gelir. (s. 42)"
+   }
+  },
+  {
+   "ad": "Yaşamı Kütle Belirler",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k5c3'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k5c3)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><circle cx='30' cy='38' r='16' fill='#4cc9f0'/><circle cx='30' cy='38' r='22' fill='#4cc9f0' opacity='.25'/><rect x='54' y='33' width='26' height='10' rx='5' fill='#4cc9f0'/><circle cx='30' cy='86' r='8' fill='#ffd166'/><circle cx='30' cy='86' r='12' fill='#ffd166' opacity='.25'/><rect x='54' y='81' width='56' height='10' rx='5' fill='#ffd166'/><path d='M54 60 h56' stroke='#6c757d' stroke-width='1.5' stroke-dasharray='3 4'/><path d='M104 55 l6 5 l-6 5' stroke='#6c757d' stroke-width='1.5' fill='none'/></g></svg>",
+   "aciklama": "Yıldızların yaşam sürecini kütleleri belirler. Kütle ne kadar büyükse yaşam o kadar kısa olur.",
+   "ek": "Resimde büyük yıldızın çizgisi kısa, küçük yıldızın çizgisi uzun: büyük yıldız daha kısa yaşar.",
+   "akilda": "Büyük kütle, kısa yaşam",
+   "soru": {
+    "soru": "Kütlesi daha büyük olan bir yıldızın yaşamı nasıldır?",
+    "secenekler": [
+     "Daha uzun sürer",
+     "Aynı sürer",
+     "Daha kısa sürer"
+    ],
+    "dogru": 2,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla: büyük kütle, ... yaşam.",
+    "aciklama": "Yıldızların kütlesi ne kadar büyükse yaşamları o kadar kısa olur. (s. 42)"
+   }
+  },
+  {
+   "ad": "Küçük Kütleli Yıldız",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k5c4'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k5c4)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><circle cx='26' cy='34' r='9' fill='#ffd166'/><circle cx='26' cy='34' r='13' fill='#ffd166' opacity='.25'/><circle cx='88' cy='34' r='20' fill='#e63946'/><circle cx='88' cy='34' r='24' fill='#e63946' opacity='.25'/><circle cx='88' cy='88' r='17' fill='none' stroke='#4cc9f0' stroke-width='5' opacity='.8'/><circle cx='88' cy='88' r='22' fill='none' stroke='#b565d8' stroke-width='3' opacity='.5'/><circle cx='88' cy='88' r='3' fill='#fff'/><circle cx='28' cy='88' r='5' fill='#fff'/><circle cx='28' cy='88' r='9' fill='#fff' opacity='.25'/><g stroke='#e9ecef' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'><path d='M42 34 h20 m-5 -5 l5 5 l-5 5'/><path d='M88 60 v6 m-5 -5 l5 5 l5 -5'/><path d='M64 88 h-22 m5 -5 l-5 5 l5 5'/></g></g></svg>",
+   "aciklama": "Başlangıç kütlesi Güneş'in kütlesinin yaklaşık sekiz katından az olan yıldızlardır.",
+   "ek": "Önce kırmızı dev, sonra gezegenimsi bulutsu olurlar. En sonunda geriye beyaz cüce kalır. Güneş de bu yolu izleyecek.",
+   "akilda": "Kırmızı dev → beyaz cüce",
+   "soru": {
+    "soru": "Küçük kütleli bir yıldızdan en sonunda geriye ne kalır?",
+    "secenekler": [
+     "Beyaz cüce",
+     "Kara delik",
+     "Nötron yıldızı"
+    ],
+    "dogru": 0,
+    "ipucu": "Resimde son durakta küçücük beyaz bir nokta var. Adı neydi?",
+    "aciklama": "Küçük kütleli yıldızlardan geriye beyaz cüce kalır. (s. 42)"
+   }
+  },
+  {
+   "ad": "Büyük Kütleli Yıldız",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k5c5'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k5c5)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><circle cx='22' cy='30' r='11' fill='#4cc9f0'/><circle cx='22' cy='30' r='15' fill='#4cc9f0' opacity='.25'/><circle cx='84' cy='30' r='26' fill='#c1121f'/><circle cx='84' cy='30' r='30' fill='#e63946' opacity='.2'/><g transform='translate(84 88)'><path d='M0 -22 L5 -7 L20 -12 L9 0 L20 12 L5 7 L0 22 L-5 7 L-20 12 L-9 0 L-20 -12 L-5 -7Z' fill='#ffd166'/><circle r='7' fill='#fff'/></g><circle cx='22' cy='80' r='4' fill='#caf0f8'/><circle cx='22' cy='80' r='8' fill='#caf0f8' opacity='.3'/><ellipse cx='30' cy='102' rx='14' ry='5' fill='none' stroke='#f4a261' stroke-width='3'/><circle cx='30' cy='102' r='7' fill='#000'/><g stroke='#e9ecef' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'><path d='M36 30 h14 m-5 -5 l5 5 l-5 5'/><path d='M84 62 v4 m-5 -5 l5 5 l5 -5'/><path d='M60 88 h-16 m5 -5 l-5 5 l5 5'/></g></g></svg>",
+   "aciklama": "Başlangıç kütlesi yaklaşık sekiz Güneş kütlesinden büyük olan yıldızlardır.",
+   "ek": "Kırmızı süperdev olurlar, yaşamları süpernova patlamasıyla son bulur. Geriye nötron yıldızı ya da kara delik kalır.",
+   "akilda": "Süperdev → süpernova",
+   "soru": {
+    "soru": "Büyük kütleli yıldızların yaşamı hangi olayla son bulur?",
+    "secenekler": [
+     "Gezegenimsi bulutsu",
+     "Süpernova patlaması",
+     "Yıldız kayması"
+    ],
+    "dogru": 1,
+    "ipucu": "Resimdeki sarı patlamayı düşün. Bilgi kartında bu patlamanın adı geçiyor.",
+    "aciklama": "Büyük kütleli yıldızların hayatları süpernova patlaması ile son bulur. (s. 42)"
+   }
+  },
+  {
+   "ad": "Işık Yılı",
+   "renk": "#2d6cdf",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k5c6'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k5c6)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.8'><circle cx='16' cy='18' r='1.2'/><circle cx='102' cy='14' r='1.4'/><circle cx='108' cy='64' r='1'/><circle cx='12' cy='70' r='1.2'/><circle cx='60' cy='10' r='1'/></g><circle cx='20' cy='70' r='11' fill='#2d6cdf'/><path d='M13 66 q5 -4 9 0 t8 2' stroke='#52b788' stroke-width='4' fill='none'/><circle cx='100' cy='70' r='8' fill='#ffd166'/><circle cx='100' cy='70' r='13' fill='#ffd166' opacity='.25'/><path d='M88 70 H34' stroke='#ffd166' stroke-width='3' stroke-dasharray='6 5'/><path d='M40 64 l-7 6 l7 6' stroke='#ffd166' stroke-width='3' fill='none'/><rect x='44' y='24' width='32' height='28' rx='4' fill='#e9ecef'/><rect x='44' y='24' width='32' height='8' rx='3' fill='#e63946'/><text x='60' y='47' font-family='sans-serif' font-size='11' font-weight='bold' text-anchor='middle' fill='#1b2340'>1 yıl</text><path d='M22 92 H98' stroke='#90e0ef' stroke-width='2'/><path d='M22 87 v10 M98 87 v10' stroke='#90e0ef' stroke-width='2'/></g></svg>",
+   "aciklama": "Işığın boşlukta bir yılda aldığı mesafeye ışık yılı denir. Adında \"yıl\" olsa da zamanı değil uzaklığı ölçer.",
+   "ek": "Bir ışık yılı yaklaşık 9.460.000.000.000 km'dir. Güneş sistemine en yakın yıldız olan Proxima Centauri yaklaşık 4,24 ışık yılı uzaktadır.",
+   "akilda": "Yıl değil, yol",
+   "soru": {
+    "soru": "Işık yılı neyi ölçmek için kullanılır?",
+    "secenekler": [
+     "Zamanı",
+     "Sıcaklığı",
+     "Uzaklığı"
+    ],
+    "dogru": 2,
+    "ipucu": "\"Akılda kalsın\" ifadesine bak: yıl değil, ...",
+    "aciklama": "Işık yılı, gök cisimleri arasındaki uzaklığı ifade etmek için kullanılır. (s. 40)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu evre hangi yıldızın yaşamında görülür?",
+   "kutular": [
+    {
+     "etiket": "Küçük Kütleli Yıldız",
+     "uyeler": [
+      "Kırmızı Dev",
+      "Gezegenimsi Bulutsu",
+      "Beyaz Cüce"
+     ]
+    },
+    {
+     "etiket": "Büyük Kütleli Yıldız",
+     "uyeler": [
+      "Kırmızı Süperdev",
+      "Süpernova",
+      "Nötron Yıldızı",
+      "Kara Delik"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Yıldızlar yüzey sıcaklıklarına göre farklı renkte görünür: sıcak olanlar mavi ya da beyaz, orta sıcaklıktakiler sarı, soğuk olanlar turuncu ya da kırmızı. Güneş sarı-turuncu bir yıldızdır. (s. 40)",
+  "Tarantula Bulutsusu bizden yaklaşık 170 bin ışık yılı uzaktadır ve bilinen en sıcak, en büyük kütleli yıldızlara ev sahipliği yapar. (s. 41)",
+  "Atbaşı Bulutsusu adını, şekli denizatının başına benzediği için almıştır. Orion Bulutsusu ise gözlem aracı olmadan görülebilecek kadar parlaktır. (s. 41)",
+  "Işık saniyede yaklaşık 300.000 km yol alır. (s. 40)",
+  "Genç yıldızlar hızlı, yaşlı yıldızlar yavaş döner. Bilim insanları yıldızların yaşını tahmin ederken buna da bakar. (s. 37)",
+  "Bir teleskop, 520 ışık yılı uzaklıktaki AB Aurigae yıldızının etrafında yeni doğmakta olan bir gezegen görüntüledi. (s. 40)"
+ ],
+ "akildaKalsin": [
+  "Yıldızlar bulutsularda doğar.",
+  "Gaz ve toz bulutu çöküp ısınınca ön yıldız oluşur; merkezinde çekirdek tepkimeleri başlayınca yıldız olur.",
+  "Yıldızın yaşamını kütlesi belirler: kütle büyükse yaşam kısa olur.",
+  "Küçük kütleli yıldız: kırmızı dev → gezegenimsi bulutsu → beyaz cüce.",
+  "Büyük kütleli yıldız: kırmızı süperdev → süpernova → nötron yıldızı ya da kara delik.",
+  "Işık yılı bir uzaklık birimidir."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Güneş'in yaşamı bir gün bitecek mi?",
+   "cevap": "Evet, ama çok çok uzun bir süre sonra. Güneş'in kütlesi sekiz Güneş kütlesinden az olduğu için küçük kütleli yıldızların yolunu izler: kırmızı dev, gezegenimsi bulutsu ve beyaz cüce. (s. 42) Kitap dışı bilgi: NASA'ya göre Güneş yaşamının yarısına bile gelmedi; beyaz cüce olmasına yaklaşık 5 milyar yıl var. (science.nasa.gov/sun/facts)"
+  },
+  {
+   "soru": "Gökyüzünde gördüğümüz yıldızlar hâlâ orada mı?",
+   "cevap": "Yıldızlar o kadar uzak ki ışıklarının bize ulaşması yıllar sürer. Bu yüzden şu an gördüğümüz yıldızların bir kısmı artık ışık kaynağı olmayabilir. (s. 34, 40)"
+  },
+  {
+   "soru": "Yıldız kayması gerçekten kayan bir yıldız mı?",
+   "cevap": "Hayır. Uzaydan düşen yeterince büyük cisimler atmosfere girince sürtünmeyle yanar ve ışık izi bırakır. Bu olay Dünya atmosferinde olur, yıldızlarla ilgisi yoktur. (s. 38)"
+  },
+  {
+   "soru": "Güneş büyük bir yıldız mı?",
+   "cevap": "Dünya'ya göre çok büyüktür ama başka yıldızlarla karşılaştırınca küçük sayılır. Diğer yıldızlar çok uzakta olduğu için bize Güneş'ten küçük görünür. (s. 38)"
+  },
+  {
+   "soru": "Kara delik nedir?",
+   "cevap": "Kitapta kara delik, büyük kütleli bir yıldız süpernova patlamasıyla yaşamını bitirdikten sonra geriye kalabilecek iki yapıdan biri olarak geçer. Diğeri nötron yıldızıdır. (s. 42)"
+  },
+  {
+   "soru": "Uzaydaki uzaklıklar neden kilometreyle söylenmiyor?",
+   "cevap": "Çünkü sayılar çok büyük oluyor. Bir ışık yılı yaklaşık 9.460.000.000.000 km'dir. Bu yüzden gök cisimleri arasındaki uzaklık ışık yılıyla söylenir. (s. 40)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Küçük kütleli ve büyük kütleli yıldızların yaşamlarının nasıl sona erdiğini karşılaştır.",
+   "ornekCevap": "Küçük kütleli yıldız önce kırmızı dev, sonra gezegenimsi bulutsu olur ve geriye beyaz cüce kalır. Büyük kütleli yıldız kırmızı süperdev olur, süpernova patlamasıyla yaşamı biter ve geriye nötron yıldızı ya da kara delik kalır.",
+   "anahtarlar": [
+    "kırmızı dev",
+    "beyaz cüce",
+    "süperdev",
+    "süpernova",
+    "nötron",
+    "kara delik",
+    "kütle"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bulutsular nelerden oluşur?",
+   "secenekler": [
+    "Hidrojen gazı, toz ve diğer materyallerden",
+    "Su ve buzdan",
+    "Kaya ve demirden"
+   ],
+   "dogru": 0,
+   "ipucu": "Bulutsu kartındaki ek bilgiyi hatırla.",
+   "aciklama": "Bulutsular hidrojen gazı, toz ve diğer materyallerden oluşur. (s. 41)"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi bir bulutsu değildir?",
+   "secenekler": [
+    "Atbaşı",
+    "Orion",
+    "Proxima Centauri"
+   ],
+   "dogru": 2,
+   "ipucu": "Bu adlardan biri, Güneş sistemine en yakın yıldızın adıydı.",
+   "aciklama": "Proxima Centauri bir yıldızdır; Atbaşı ve Orion ise bulutsudur. (s. 40–41)"
+  },
+  {
+   "soru": "Ön yıldız nasıl oluşur?",
+   "secenekler": [
+    "Gaz ve toz bulutu kütle çekimiyle çöküp ısınınca",
+    "Bir yıldız patlayınca",
+    "İki gezegen çarpışınca"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Akılda kalsın\": çöker, ısınır, ...",
+   "aciklama": "Gaz ve toz bulutu kütle çekiminin etkisiyle çöker ve ısınarak ön yıldızı oluşturur. (s. 42)"
+  },
+  {
+   "soru": "Küçük kütleli bir yıldızın yaşam sırası hangisidir?",
+   "secenekler": [
+    "Kırmızı dev → Beyaz cüce → Gezegenimsi bulutsu",
+    "Kırmızı dev → Gezegenimsi bulutsu → Beyaz cüce",
+    "Kırmızı süperdev → Süpernova → Beyaz cüce"
+   ],
+   "dogru": 1,
+   "ipucu": "Beyaz cüce yolun en sonunda kalan şeydi.",
+   "aciklama": "Küçük kütleli yıldız önce kırmızı dev, sonra gezegenimsi bulutsu olur; geriye beyaz cüce kalır. (s. 42)"
+  },
+  {
+   "soru": "Küçük kütleli yıldızların başlangıç kütlesi Güneş'in kütlesinin yaklaşık kaç katından azdır?",
+   "secenekler": [
+    "2",
+    "100",
+    "8"
+   ],
+   "dogru": 2,
+   "ipucu": "Küçük Kütleli Yıldız kartındaki sayıya bak.",
+   "aciklama": "Küçük kütleli yıldızlar Güneş'in kütlesinin yaklaşık sekiz katından daha az başlangıç kütlesine sahiptir. (s. 42)"
+  },
+  {
+   "soru": "Büyük kütleli bir yıldız süpernova patlamasından sonra geriye ne bırakır?",
+   "secenekler": [
+    "Beyaz cüce",
+    "Nötron yıldızı ya da kara delik",
+    "Gezegenimsi bulutsu"
+   ],
+   "dogru": 1,
+   "ipucu": "Büyük Kütleli Yıldız kartında iki seçenek birlikte yazıyordu.",
+   "aciklama": "Büyük kütleli yıldızlardan geriye nötron yıldızı veya kara delik kalır. (s. 42)"
+  },
+  {
+   "soru": "Kırmızı süperdev evresi hangi yıldızların yaşamında görülür?",
+   "secenekler": [
+    "Büyük kütleli yıldızların",
+    "Küçük kütleli yıldızların",
+    "Bütün yıldızların"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Akılda kalsın\": süperdev → süpernova. Bu hangi yıldızın kartıydı?",
+   "aciklama": "Kırmızı süperdev, büyük kütleli yıldızların yaşam sürecinde yer alır. (s. 42)"
+  },
+  {
+   "soru": "Yıldızların yaşam süresini ne belirler?",
+   "secenekler": [
+    "Renkleri",
+    "Kütleleri",
+    "Dünya'ya uzaklıkları"
+   ],
+   "dogru": 1,
+   "ipucu": "Konunun üçüncü kavramının adını hatırla.",
+   "aciklama": "Yıldızların yaşam sürecini kütleleri belirler. (s. 42)"
+  },
+  {
+   "soru": "Işık yılı nedir?",
+   "secenekler": [
+    "Bir yıldızın yaşı",
+    "Işığın bir günde aldığı yol",
+    "Işığın boşlukta bir yılda aldığı mesafe"
+   ],
+   "dogru": 2,
+   "ipucu": "Işık yılı bir uzaklık birimiydi. Hangi seçenek bir uzaklığı anlatıyor?",
+   "aciklama": "Işığın boşlukta 1 yılda aldığı mesafeye ışık yılı denir. (s. 40)"
+  },
+  {
+   "soru": "Yıldız kayması nerede gerçekleşir?",
+   "secenekler": [
+    "Dünya atmosferinde",
+    "Yıldızların yüzeyinde",
+    "Bulutsuların içinde"
+   ],
+   "dogru": 0,
+   "ipucu": "Merak Kutusu'ndaki cevabı hatırla: cisimler nereye girince yanıyordu?",
+   "aciklama": "Yıldız kaymaları Dünya atmosferinde gerçekleşir. (s. 38)"
+  }
+ ]
+}
