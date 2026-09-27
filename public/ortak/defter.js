@@ -463,6 +463,23 @@
     } catch (e) { $("#content").innerHTML = `<div class="notice">Bu konu açılamadı. İnternet bağlantını kontrol edip sayfayı yenile.</div>`; }
   }
 
+  // Ünite seçimi: açık konu bu ünitedeyse dokunma; ünitede hazır konu varsa ilkini aç; yoksa "Yakında" göster.
+  function openUnit(ui) {
+    S.unit = ui; renderNav();
+    const cur = allTopics().find(k => k.id === S.konu);
+    if (cur && cur.ui === ui) { if (!S.data) openKonu(cur.id, false); return; }
+    const ready = S.ders.uniteler[ui].konular.find(k => k.hazir);
+    if (ready) { openKonu(ready.id, false); return; }
+    tts.stop(); S.data = null;
+    const u = S.ders.uniteler[ui];
+    const liste = u.konular.length
+      ? `<ol class="yakinda-liste">${u.konular.map(k => `<li>${esc(k.baslik)}</li>`).join("")}</ol>` : "";
+    $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(u.ad)}</span><span class="pill">Yakında</span></div>
+      <h2>Bu ünite yakında geliyor</h2></section>
+      <div class="notice"><p>Bu ünitenin konuları hazırlanıyor. Hazır olan konular, konu listesinden açılabilir hâle gelecek.</p>
+      ${liste ? `<p>Bu ünitede öğreneceklerimiz:</p>${liste}` : ""}</div>`;
+  }
+
   function drawStars() {
     const cv = $("#stars"); if (!cv) return;
     const r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
@@ -485,7 +502,7 @@
     const applyClass = on => { document.body.classList.toggle("sinif", on); sb.setAttribute("aria-pressed", on); };
     applyClass(store.get("ela7:sinif", false));
     sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data) setTab(S.tab); };
-    $("#units").onclick = e => { const b = e.target.closest(".unit-btn"); if (b) { S.unit = +b.dataset.u; renderNav(); } };
+    $("#units").onclick = e => { const b = e.target.closest(".unit-btn"); if (b) openUnit(+b.dataset.u); };
     $("#topics").onclick = e => { const b = e.target.closest(".topic"); if (b && !b.disabled) openKonu(b.dataset.id, true); };
     addEventListener("hashchange", () => openKonu(location.hash.slice(1), true));
     const ready = allTopics().filter(k => k.hazir);
