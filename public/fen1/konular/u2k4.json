@@ -1,0 +1,337 @@
+{
+ "id": "u2k4",
+ "unite": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+ "baslik": "Enerji Dönüşümleri ve Enerjinin Korunumu",
+ "sayfalar": "s. 71–80",
+ "giris": "Salıncak yukarı çıkarken yavaşlar, aşağı inerken hızlanır. Neden? Bu konuda kinetik ve potansiyel enerjinin birbirine nasıl dönüştüğünü öğreneceğiz. Enerjinin hiçbir zaman yok olmadığını da göreceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Enerji Dönüşümü",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 30 Q60 130 106 30' stroke='#8a93b8' stroke-width='4' fill='none'/><circle cx='20' cy='37' r='7' fill='#4cc9f0'/><circle cx='60' cy='73' r='7' fill='#4cc9f0' opacity='0.5'/><circle cx='100' cy='37' r='7' fill='#4cc9f0' opacity='0.3'/><text x='14' y='22' font-size='12' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>A</text><text x='60' y='98' font-size='12' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>B</text><text x='106' y='22' font-size='12' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>C</text><text x='60' y='36' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>iniş: PE→KE</text><text x='60' y='50' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>çıkış: KE→PE</text></svg>",
+   "aciklama": "Kinetik enerji ve potansiyel enerji birbirine dönüşebilir.",
+   "ek": "Pistteki futbol topu A'dan B'ye inerken potansiyel enerjisi azalır, kinetik enerjisi artar. B'den C'ye çıkarken potansiyel enerjisi artar, kinetik enerjisi azalır.",
+   "akilda": "İnerken KE, çıkarken PE artar",
+   "soru": {
+    "soru": "Top A noktasından B noktasına inerken kinetik enerjisi ne olur?",
+    "secenekler": [
+     "Artar",
+     "Azalır",
+     "Değişmez"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta \"A'dan B'ye inerken\" diye başlayan cümleyi oku.",
+    "aciklama": "Top aşağı inerken potansiyel enerjisi azalır, kinetik enerjisi artar. (s. 76)"
+   }
+  },
+  {
+   "ad": "Sarkaç ve Salıncak",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='40' y='14' width='40' height='5' rx='2' fill='#8a93b8'/><path d='M30 62 Q60 96 90 62' stroke='#ffd166' stroke-width='2' stroke-dasharray='4 3' fill='none'/><line x1='60' y1='18' x2='30' y2='60' stroke='#8a93b8' stroke-width='2' opacity='0.5'/><circle cx='30' cy='62' r='8' fill='#ffd166' opacity='0.5'/><line x1='60' y1='18' x2='60' y2='80' stroke='#f5f6fa' stroke-width='2'/><circle cx='60' cy='82' r='9' fill='#ffd166'/><line x1='60' y1='18' x2='90' y2='60' stroke='#8a93b8' stroke-width='2' opacity='0.5'/><circle cx='90' cy='62' r='8' fill='#ffd166' opacity='0.5'/><text x='20' y='46' font-size='11' fill='#b388ff' text-anchor='middle' font-family='sans-serif'>PE</text><text x='100' y='46' font-size='11' fill='#b388ff' text-anchor='middle' font-family='sans-serif'>PE</text><text x='60' y='108' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif'>KE en çok</text></svg>",
+   "aciklama": "Sarkaç en yüksek noktada en çok potansiyel enerjiye, en alt noktada en çok kinetik enerjiye sahiptir.",
+   "ek": "Salıncak da böyledir: Yukarı çıkarken kinetik enerji potansiyel enerjiye dönüşür, salıncak yavaşlar. Aşağı inerken potansiyel enerji kinetik enerjiye dönüşür, salıncak hızlanır.",
+   "akilda": "Tepede PE, dipte KE",
+   "soru": {
+    "soru": "Salıncak en alt noktadayken hangi enerjisi en fazladır?",
+    "secenekler": [
+     "Potansiyel enerji",
+     "Kinetik enerji",
+     "Esneklik potansiyel enerjisi"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki \"en alt noktada\" ifadesine bak.",
+    "aciklama": "En alt noktada salıncak en hızlıdır; kinetik enerjisi en fazladır. (s. 71, 72, 76)"
+   }
+  },
+  {
+   "ad": "Düşen Top",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='102' x2='110' y2='102' stroke='#8a93b8' stroke-width='3'/><circle cx='36' cy='24' r='10' fill='#ff7a33'/><path d='M31 24 h10 M36 14 v20' stroke='#1b2340' stroke-width='1.5'/><line x1='36' y1='40' x2='36' y2='78' stroke='#f5f6fa' stroke-width='2' stroke-dasharray='4 3'/><polygon points='36,84 31,76 41,76' fill='#f5f6fa'/><circle cx='36' cy='91' r='10' fill='#ff7a33' opacity='0.6'/><text x='82' y='28' font-size='11' fill='#b388ff' text-anchor='middle' font-family='sans-serif'>PE en çok</text><text x='82' y='94' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif'>KE en çok</text><text x='82' y='62' font-size='10' fill='#8a93b8' text-anchor='middle' font-family='sans-serif'>düşüyor</text></svg>",
+   "aciklama": "Yukarıdan serbest bırakılan top düşerken çekim potansiyel enerjisi azalır, kinetik enerjisi artar.",
+   "ek": "Bırakıldığı noktada potansiyel enerjisi en fazladır. Yere değmeden hemen önce kinetik enerjisi en fazladır.",
+   "akilda": "Düşerken PE → KE",
+   "soru": {
+    "soru": "Omuz hizasından bırakılan top düşerken hangi dönüşüm olur?",
+    "secenekler": [
+     "Kinetik enerji → potansiyel enerji",
+     "Esneklik potansiyel enerjisi → kinetik enerji",
+     "Çekim potansiyel enerjisi → kinetik enerji"
+    ],
+    "dogru": 2,
+    "ipucu": "Top yükseklikten geliyor. Yükseklikten gelen enerjinin adı neydi?",
+    "aciklama": "Top yükseklik kaybettikçe çekim potansiyel enerjisi kinetik enerjiye dönüşür. (s. 73, 76)"
+   }
+  },
+  {
+   "ad": "Eğik Düzlem",
+   "renk": "#06d6a0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='12,38 12,100 108,100' fill='#2c3761' stroke='#8a93b8' stroke-width='2'/><g transform='rotate(33 31 50)'><rect x='20' y='37' width='22' height='9' rx='3' fill='#06d6a0'/><circle cx='25' cy='47' r='3' fill='#f5f6fa'/><circle cx='37' cy='47' r='3' fill='#f5f6fa'/></g><line x1='54' y1='58' x2='82' y2='76' stroke='#ffd166' stroke-width='2'/><polygon points='88,80 78,78 83,71' fill='#ffd166'/><text x='34' y='20' font-size='10' fill='#b388ff' text-anchor='middle' font-family='sans-serif'>üst: PE</text><text x='92' y='114' font-size='10' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif'>alt: KE</text></svg>",
+   "aciklama": "Eğik düzlemin üstünden bırakılan araba aşağı inerken potansiyel enerjisi azalır, kinetik enerjisi artar.",
+   "ek": "En üst noktada potansiyel enerjisi, en alt noktada kinetik enerjisi en fazladır. Orta noktada ikisi arasındadır.",
+   "akilda": "Kaydıkça hızlanır",
+   "soru": {
+    "soru": "Araba eğik düzlemin hangi noktasında en hızlıdır?",
+    "secenekler": [
+     "En üst noktada",
+     "Orta noktada",
+     "En alt noktada"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta kinetik enerjinin en fazla olduğu nokta yazıyor.",
+    "aciklama": "En alt noktada kinetik enerji en fazladır, yani araba en hızlıdır. (s. 74)"
+   }
+  },
+  {
+   "ad": "Sıkışan Yay",
+   "renk": "#b388ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='40' width='8' height='56' fill='#8a93b8'/><polyline points='18,72 24,62 30,82 36,62 42,82 48,62 54,72' fill='none' stroke='#b388ff' stroke-width='3' stroke-linejoin='round'/><rect x='54' y='58' width='28' height='18' rx='3' fill='#06d6a0'/><circle cx='61' cy='79' r='4' fill='#f5f6fa'/><circle cx='75' cy='79' r='4' fill='#f5f6fa'/><line x1='10' y1='96' x2='112' y2='96' stroke='#8a93b8' stroke-width='2'/><line x1='88' y1='67' x2='104' y2='67' stroke='#ffd166' stroke-width='3'/><polygon points='110,67 102,62 102,72' fill='#ffd166'/><text x='46' y='50' font-size='10' fill='#b388ff' text-anchor='middle' font-family='sans-serif'>sıkışmış</text><text x='60' y='112' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>esneklik PE → KE</text></svg>",
+   "aciklama": "Sıkıştırılan yay esneklik potansiyel enerjisi depolar. Serbest bırakılınca bu enerji arabanın kinetik enerjisine dönüşür.",
+   "ek": "Yay ne kadar çok sıkışırsa o kadar çok enerji depolar.",
+   "akilda": "Esneklik PE → KE",
+   "soru": {
+    "soru": "Sıkışmış yay bırakılınca araba neden hareket eder?",
+    "secenekler": [
+     "Yaydaki esneklik potansiyel enerjisi kinetik enerjiye dönüşür",
+     "Arabanın ağırlığı azalır",
+     "Yay ısınır"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta \"serbest bırakılınca\" diye başlayan cümleye bak.",
+    "aciklama": "Yayın depoladığı esneklik potansiyel enerjisi arabanın kinetik enerjisine dönüşür. (s. 74)"
+   }
+  },
+  {
+   "ad": "Enerjinin Korunumu",
+   "renk": "#8ee3d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='30' width='26' height='40' fill='#b388ff'/><rect x='22' y='70' width='26' height='20' fill='#4cc9f0'/><rect x='72' y='30' width='26' height='20' fill='#b388ff'/><rect x='72' y='50' width='26' height='40' fill='#4cc9f0'/><text x='60' y='66' font-size='20' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>=</text><text x='35' y='26' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>önce</text><text x='85' y='26' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>sonra</text><text x='35' y='54' font-size='10' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>PE</text><text x='85' y='74' font-size='10' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>KE</text><text x='60' y='108' font-size='11' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>toplam aynı</text></svg>",
+   "aciklama": "Enerji yoktan var olmaz, var olan enerji de yok olmaz; ancak başka bir enerji türüne dönüşür. Buna enerjinin korunumu kanunu denir.",
+   "ek": "Bir bardaktaki suyu başka bardağa dökmek gibi düşün: Kap değişir ama su kaybolmaz. Enerji de tür değiştirir ama toplamı aynı kalır.",
+   "akilda": "Enerji yok olmaz, dönüşür",
+   "soru": {
+    "soru": "Enerjinin korunumu kanununa göre enerji ne olur?",
+    "secenekler": [
+     "Kullanılınca yok olur",
+     "Başka bir enerji türüne dönüşür",
+     "Yoktan var olur"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın ilk cümlesinin sonunda \"ancak …\" diye bir ifade var.",
+    "aciklama": "Enerji yok olmaz, yoktan da var olmaz; başka bir enerji türüne dönüşür. (s. 76)"
+   }
+  },
+  {
+   "ad": "Sürtünme ve Enerji",
+   "renk": "#ef476f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='88' x2='110' y2='88' stroke='#8a93b8' stroke-width='3'/><path d='M14 94 l6 -6 M26 94 l6 -6 M38 94 l6 -6 M50 94 l6 -6 M62 94 l6 -6 M74 94 l6 -6 M86 94 l6 -6 M98 94 l6 -6' stroke='#8a93b8' stroke-width='1.5'/><circle cx='50' cy='74' r='14' fill='#ef476f'/><path d='M20 70 h14 M16 76 h14' stroke='#f5f6fa' stroke-width='2' stroke-linecap='round'/><path d='M44 52 q-4 -6 0 -12 q4 -6 0 -12 M56 52 q-4 -6 0 -12 q4 -6 0 -12' stroke='#ff7a33' stroke-width='2' fill='none'/><path d='M76 64 q6 8 0 16 M84 58 q10 14 0 28' stroke='#ffd166' stroke-width='2' fill='none'/><text x='50' y='22' font-size='11' fill='#ff7a33' text-anchor='middle' font-family='sans-serif'>ısı</text><text x='100' y='56' font-size='11' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>ses</text><text x='60' y='112' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>yavaşlar, durur</text></svg>",
+   "aciklama": "Hareketli cismin kinetik enerjisi, sürtünme kuvvetinin etkisiyle ısı, ses ve diğer enerji türlerine dönüşür.",
+   "ek": "Bu dönüşüm yüzünden hareketi yavaşlayan cisim bir süre sonra durur. Enerji yok olmamıştır, başka türlere dönüşmüştür.",
+   "akilda": "Sürtünme: KE → ısı, ses",
+   "soru": {
+    "soru": "Yerde yuvarlanan top neden bir süre sonra durur?",
+    "secenekler": [
+     "Kinetik enerjisi sürtünmeyle ısı ve sese dönüşür",
+     "Enerjisi yok olur",
+     "Potansiyel enerjisi artar"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta kinetik enerjinin sürtünmeyle neye dönüştüğü yazıyor.",
+    "aciklama": "Sürtünme kuvveti kinetik enerjiyi ısı, ses ve diğer enerji türlerine dönüştürür; top yavaşlar ve durur. (s. 76)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kart neyi anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Çekim potansiyel enerjisi ⇄ kinetik enerji",
+     "uyeler": [
+      "Sarkaç ve Salıncak",
+      "Düşen Top",
+      "Eğik Düzlem"
+     ]
+    },
+    {
+     "etiket": "Esneklik potansiyel enerjisi → kinetik enerji",
+     "uyeler": [
+      "Sıkışan Yay"
+     ]
+    },
+    {
+     "etiket": "Enerjinin kuralları",
+     "uyeler": [
+      "Enerji Dönüşümü",
+      "Enerjinin Korunumu",
+      "Sürtünme ve Enerji"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Cezerî'nin tasarladığı su saatlerinden biri 1976'da Londra Bilim Müzesinde, diğeri de 1/2 ölçeğinde İstanbul Teknik Üniversitesinde yeniden yapılıp çalıştırıldı. (s. 77)",
+  "Cezerî'nin aletleri yer çekimi kuvvetiyle çalışırdı: düşürülen bir ağırlık, boşalan bir kaptaki şamandıra ya da batan bir cisimle. (s. 77)",
+  "Hermann von Helmholtz, enerjinin korunumu kanununu matematiksel olarak göstermiştir. (s. 80)",
+  "İş birimi \"joule\", enerji çeşitlerinin birbirine dönüşebildiğini keşfeden James Prescott Joule'e ithafen verilmiştir. (s. 80)"
+ ],
+ "akildaKalsin": [
+  "Kinetik enerji ve potansiyel enerji birbirine dönüşebilir.",
+  "Cisim aşağı inerken potansiyel enerjisi azalır, kinetik enerjisi artar.",
+  "Cisim yukarı çıkarken kinetik enerjisi azalır, potansiyel enerjisi artar.",
+  "Sıkışan yayın esneklik potansiyel enerjisi, serbest kalınca kinetik enerjiye dönüşür.",
+  "Enerji yoktan var olmaz, yok da olmaz; başka bir türe dönüşür (enerjinin korunumu kanunu).",
+  "Sürtünme, kinetik enerjiyi ısı ve sese dönüştürür; bu yüzden cisim bir süre sonra durur."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Salıncak neden yukarı çıkarken yavaşlar?",
+   "cevap": "Yukarı çıkarken kinetik enerji potansiyel enerjiye dönüşür. Kinetik enerji azaldığı için salıncak yavaşlar. Aşağı inerken tersi olur ve salıncak hızlanır. (s. 71, 76)"
+  },
+  {
+   "soru": "Enerji yok olmuyorsa yuvarlanan top neden durur?",
+   "cevap": "Topun kinetik enerjisi, zeminle arasındaki sürtünme kuvvetiyle ısı, ses ve diğer enerji türlerine dönüşür. Enerji yok olmaz, başka türe geçer; top da yavaşlayıp durur. (s. 76)"
+  },
+  {
+   "soru": "Sürtünme olmasaydı pistteki kaykaycı ne yapardı?",
+   "cevap": "Sürtünme ihmal edilirse kaykaycı pistin iki ucu (A ve C) arasında gidip gelir; enerjisi potansiyel ve kinetik enerji arasında dönüşür durur. (s. 78)"
+  },
+  {
+   "soru": "Sarkaç sürtünme olmadan bırakılırsa ne kadar yükseğe çıkar?",
+   "cevap": "Enerji korunduğu için sarkaç, bırakıldığı yüksekliğe kadar çıkar. En alt noktada en hızlı, iki uçta en yavaştır. (s. 76, 79)"
+  },
+  {
+   "soru": "Cezerî kimdir?",
+   "cevap": "Cezerî, Diyarbakır'da (Âmid) Artuklu hanedanının himayesinde çalışmış bir bilgindir. 1205'te tamamladığı \"Kitab-ül Hiyel\" adlı eserinde su saatleri, çeşmeler ve otomatik müzik aletleri gibi makineleri çizip anlatmıştır. (s. 77)"
+  },
+  {
+   "soru": "Enerji dönüşümlerini nasıl özetleyebilirim?",
+   "cevap": "Kitap bir balık kılçığı diyagramı öneriyor: Balığın başına olayı, kılçıklara ise ona etki eden nedenleri yazarsın. (s. 76)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Pistte kayan bir kaykaycı A noktasından aşağı iniyor, B'den geçip C'ye çıkıyor. Kinetik ve potansiyel enerjisi nasıl değişir? Sürtünme olsaydı ne olurdu?",
+   "ornekCevap": "A'dan B'ye inerken potansiyel enerjisi azalır, kinetik enerjisi artar. B'den C'ye çıkarken kinetik enerjisi azalır, potansiyel enerjisi artar. Sürtünme olsaydı kinetik enerjinin bir kısmı ısı ve sese dönüşür, kaykaycı yavaşlar ve bir süre sonra durur.",
+   "anahtarlar": [
+    "potansiyel",
+    "kinetik",
+    "azal",
+    "art",
+    "sürtün",
+    "dur"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Sürtünme yokken kaykaycı pistte A'dan B'ye aşağı inerken potansiyel enerjisi ne olur?",
+   "secenekler": [
+    "Artar",
+    "Azalır",
+    "Değişmez"
+   ],
+   "dogru": 1,
+   "ipucu": "Aşağı inen cismin yüksekliği ne oluyor?",
+   "aciklama": "Yükseklik azaldıkça potansiyel enerji azalır, kinetik enerji artar. (s. 76, 78)"
+  },
+  {
+   "soru": "Kaykaycı B'den C'ye yukarı çıkarken kinetik enerjisi ne olur?",
+   "secenekler": [
+    "Azalır",
+    "Artar",
+    "Değişmez"
+   ],
+   "dogru": 0,
+   "ipucu": "Yukarı çıkan salıncak hızlanır mı, yavaşlar mı?",
+   "aciklama": "Yukarı çıkarken kinetik enerji potansiyel enerjiye dönüşür, yani azalır. (s. 76, 78)"
+  },
+  {
+   "soru": "Sürtünme ihmal edilmezse kaykaycıya ne olur?",
+   "secenekler": [
+    "Hep aynı hızla gidip gelir",
+    "Yavaşlar ve bir süre sonra durur",
+    "Giderek hızlanır"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Sürtünme ve Enerji\" kartını hatırla.",
+   "aciklama": "Kinetik enerji sürtünmeyle ısı ve sese dönüşür; hareket yavaşlar ve durur. (s. 76, 78)"
+  },
+  {
+   "soru": "K noktasından bırakılan sarkacın bilyesi en alt nokta L'deyken hangisi doğrudur?",
+   "secenekler": [
+    "Potansiyel enerjisi en fazladır",
+    "İki enerjisi de sıfırdır",
+    "Kinetik enerjisi en fazladır"
+   ],
+   "dogru": 2,
+   "ipucu": "En alt noktada sarkaç en hızlı mıdır, en yavaş mı?",
+   "aciklama": "En alt noktada sarkaç en hızlıdır; kinetik enerjisi en fazladır. (s. 76, 79)"
+  },
+  {
+   "soru": "Sürtünme yokken K'dan bırakılan sarkaç M noktasında ne kadar yükseğe çıkar?",
+   "secenekler": [
+    "K'dan daha yükseğe",
+    "K ile aynı yüksekliğe",
+    "K'dan çok daha alçağa"
+   ],
+   "dogru": 1,
+   "ipucu": "Enerji yoktan var olmaz, yok da olmaz.",
+   "aciklama": "Enerji korunduğu için sarkaç bırakıldığı yüksekliğe kadar çıkar. (s. 76, 79)"
+  },
+  {
+   "soru": "Duvara dayalı yay sıkıştırılıp bırakılıyor; önündeki cisim düz zeminde ilerleyip rampaya tırmanıyor. Enerji dönüşümü hangisidir?",
+   "secenekler": [
+    "Esneklik PE → kinetik enerji → çekim PE",
+    "Çekim PE → kinetik enerji → esneklik PE",
+    "Kinetik enerji → esneklik PE → ısı"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce yay (esneklik), sonra hareket, sonra yükseklik.",
+   "aciklama": "Yayın esneklik potansiyel enerjisi kinetik enerjiye, rampada da çekim potansiyel enerjisine dönüşür. (s. 74, 79)"
+  },
+  {
+   "soru": "Hangisi enerjinin korunumu kanununu anlatır?",
+   "secenekler": [
+    "Enerji yoktan var edilebilir",
+    "Enerji kullanılınca yok olur",
+    "Enerji yok olmaz, başka türe dönüşür"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Enerjinin Korunumu\" kartının akılda kalsın kısmına bak.",
+   "aciklama": "Enerji yoktan var olmaz, yok da olmaz; başka bir enerji türüne dönüşür. (s. 76)"
+  },
+  {
+   "soru": "Kinetik enerji sürtünme kuvvetiyle hangi enerjilere dönüşür?",
+   "secenekler": [
+    "Isı, ses ve diğer enerji türlerine",
+    "Yalnızca esneklik potansiyel enerjisine",
+    "Hiçbir enerjiye dönüşmez"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartta topun yanında hangi iki kelime yazıyordu?",
+   "aciklama": "Kinetik enerji sürtünmeyle ısı, ses ve diğer enerji türlerine dönüşür. (s. 76)"
+  },
+  {
+   "soru": "Merve salıncakta en yüksek noktadan aşağı inerken ne olur?",
+   "secenekler": [
+    "Potansiyel enerji artar, kinetik enerji azalır",
+    "İki enerji de artar",
+    "Potansiyel enerji azalır, kinetik enerji artar"
+   ],
+   "dogru": 2,
+   "ipucu": "Aşağı inerken salıncak hızlanıyordu.",
+   "aciklama": "İnerken potansiyel enerji kinetik enerjiye dönüşür; salıncak hızlanır. (s. 71, 76)"
+  },
+  {
+   "soru": "Pistteki futbol topunun kinetik enerjisi hangi noktada en büyüktür?",
+   "secenekler": [
+    "A noktasında",
+    "B noktasında",
+    "C noktasında"
+   ],
+   "dogru": 1,
+   "ipucu": "B, pistin en alçak noktası.",
+   "aciklama": "Top B noktasında kinetik enerjisinin en büyük değerine ulaşır. (s. 76)"
+  }
+ ]
+}
