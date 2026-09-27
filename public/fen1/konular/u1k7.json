@@ -1,0 +1,323 @@
+{
+ "id": "u1k7",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Galaksi ve Evren",
+ "sayfalar": "s. 46–50",
+ "giris": "Yıldızlar gökyüzünde tek başına dağılmış değil. Büyük gruplar hâlinde bir arada dururlar. Bu konuda galaksileri, bizim galaksimiz Samanyolu'nu ve her şeyi içine alan evreni öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Galaksi",
+   "renk": "#9d8df1",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k7c1'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k7c1)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='14' cy='16' r='1.1'/><circle cx='104' cy='12' r='1.3'/><circle cx='110' cy='104' r='1'/><circle cx='10' cy='96' r='1.1'/></g><g transform='translate(60 60) scale(1.35)'><ellipse rx='30' ry='30' fill='#9d8df1' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#ffd166'/><circle r='10' fill='#ffd166' opacity='.3'/></g><g fill='#fff'><circle cx='34' cy='44' r='1.6'/><circle cx='82' cy='76' r='1.6'/><circle cx='72' cy='36' r='1.3'/><circle cx='44' cy='82' r='1.3'/></g><circle cx='88' cy='50' r='3' fill='#4cc9f0'/><circle cx='30' cy='66' r='2.5' fill='#f4a261'/></g></svg>",
+   "aciklama": "Yıldız, gezegen, bulutsu, gök taşı gibi gök cisimlerinden oluşan yapılara galaksi denir.",
+   "ek": "Galaksinin diğer adı gök adadır. Uzay denizinde gök cisimlerinden oluşmuş bir ada gibi düşünebilirsin.",
+   "akilda": "Gök cisimlerinden ada",
+   "soru": {
+    "soru": "Galaksinin diğer adı nedir?",
+    "secenekler": [
+     "Gök ada",
+     "Gök taşı",
+     "Takımyıldız"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki \"ada\" benzetmesini hatırla.",
+    "aciklama": "Galaksiye gök ada da denir. (s. 48)"
+   }
+  },
+  {
+   "ad": "Galaksilerin Farkları",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k7c2'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k7c2)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='14' cy='16' r='1.1'/><circle cx='104' cy='12' r='1.3'/><circle cx='110' cy='104' r='1'/><circle cx='10' cy='96' r='1.1'/></g><g transform='translate(36 38) scale(0.75)'><ellipse rx='30' ry='30' fill='#4cc9f0' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#4cc9f0' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#4cc9f0' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#ffd166'/><circle r='10' fill='#ffd166' opacity='.3'/></g><ellipse cx='86' cy='40' rx='20' ry='11' fill='#f4a261' opacity='.8'/><ellipse cx='86' cy='40' rx='8' ry='4' fill='#ffd166'/><g fill='#e9ecef' opacity='.85'><circle cx='40' cy='90' r='2'/><circle cx='48' cy='84' r='2.5'/><circle cx='56' cy='94' r='1.8'/><circle cx='34' cy='98' r='1.6'/><circle cx='52' cy='100' r='2'/></g><g transform='translate(92 90) scale(0.45)'><ellipse rx='30' ry='30' fill='#9d8df1' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#ffd166'/><circle r='10' fill='#ffd166' opacity='.3'/></g></g></svg>",
+   "aciklama": "Galaksiler birbirinin aynısı değildir. Büyüklükleri, şekilleri ve içlerindeki gök cismi sayıları farklıdır.",
+   "akilda": "Boy, şekil, sayı farklı",
+   "soru": {
+    "soru": "Aşağıdakilerden hangisi galaksiler arasında farklı olabilir?",
+    "secenekler": [
+     "Hiçbir özellikleri farklı değildir",
+     "Yalnızca renkleri",
+     "Büyüklükleri ve şekilleri"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta galaksilerin üç farklı özelliği sayılıyor. Hangisi o listede?",
+    "aciklama": "Galaksilerin büyüklükleri, şekilleri ve gök cismi sayıları farklıdır. (s. 48)"
+   }
+  },
+  {
+   "ad": "Edwin Hubble",
+   "renk": "#5c677d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k7c3'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k7c3)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='14' cy='16' r='1.1'/><circle cx='104' cy='12' r='1.3'/><circle cx='110' cy='104' r='1'/><circle cx='10' cy='96' r='1.1'/></g><path d='M0 104 H120 V120 H0Z' fill='#2d6a4f'/><circle cx='34' cy='58' r='7' fill='#f4a261'/><path d='M34 65 v22 M34 72 l12 -6 M34 87 l-7 16 M34 87 l7 16' stroke='#f4a261' stroke-width='4' stroke-linecap='round' fill='none'/><g transform='rotate(-35 62 62)'><rect x='46' y='56' width='40' height='11' rx='3' fill='#adb5bd'/><rect x='84' y='54' width='6' height='15' rx='2' fill='#6c757d'/></g><path d='M60 74 L50 104 M60 74 L70 104' stroke='#6c757d' stroke-width='3'/><g transform='translate(94 26) scale(0.5)'><ellipse rx='30' ry='30' fill='#9d8df1' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#ffd166'/><circle r='10' fill='#ffd166' opacity='.3'/></g></g></svg>",
+   "aciklama": "Galaksileri ilk keşfeden bilim insanı Edwin Hubble'dır (Edvin Habıl).",
+   "ek": "1920'lerde Samanyolu'nun ötesinde sayısız galaksi olduğunu keşfetti. Hubble Uzay Teleskobu adını ondan alır.",
+   "akilda": "Galaksileri ilk bulan",
+   "soru": {
+    "soru": "Galaksileri ilk keşfeden bilim insanı kimdir?",
+    "secenekler": [
+     "Albert Einstein",
+     "Edwin Hubble",
+     "Ali Yar"
+    ],
+    "dogru": 1,
+    "ipucu": "Adı bir uzay teleskobuna da verilen bilim insanını düşün.",
+    "aciklama": "Galaksileri ilk keşfeden bilim insanı Edwin Hubble'dır. (s. 48)"
+   }
+  },
+  {
+   "ad": "Samanyolu Galaksisi",
+   "renk": "#5a4fcf",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k7c4'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k7c4)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='14' cy='16' r='1.1'/><circle cx='104' cy='12' r='1.3'/><circle cx='110' cy='104' r='1'/><circle cx='10' cy='96' r='1.1'/></g><g transform='translate(60 60) scale(1.5)'><ellipse rx='30' ry='30' fill='#e9ecef' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#e9ecef' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#e9ecef' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#fff3b0'/><circle r='10' fill='#fff3b0' opacity='.3'/></g><circle cx='79' cy='83' r='4' fill='#e63946'/><path d='M79 79 L79 70' stroke='#e63946' stroke-width='2'/><rect x='56' y='98' width='50' height='14' rx='5' fill='#e63946'/><text x='81' y='108' font-family='sans-serif' font-size='9' font-weight='bold' fill='#fff' text-anchor='middle'>Buradayız</text></g></svg>",
+   "aciklama": "Dünya'nın da içinde bulunduğu Güneş sistemi, Samanyolu galaksisinde yer alır.",
+   "ek": "Samanyolu sarmal kolları olan bir galaksidir. Güneş sistemi bu kollardan Avcı (Orion) kolunda bulunur.",
+   "akilda": "Bizim galaksimiz",
+   "soru": {
+    "soru": "Güneş sistemi hangi galaksidedir?",
+    "secenekler": [
+     "Samanyolu",
+     "Andromeda",
+     "Avcı"
+    ],
+    "dogru": 0,
+    "ipucu": "Çizimdeki \"Buradayız\" işaretinin olduğu galaksinin adını kartta bul.",
+    "aciklama": "Güneş sistemi Samanyolu galaksisinde, onun Avcı (Orion) kolunda yer alır. (s. 48)"
+   }
+  },
+  {
+   "ad": "Andromeda Galaksisi",
+   "renk": "#f28482",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k7c5'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k7c5)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='14' cy='16' r='1.1'/><circle cx='104' cy='12' r='1.3'/><circle cx='110' cy='104' r='1'/><circle cx='10' cy='96' r='1.1'/></g><g transform='translate(34 70) scale(0.7)'><ellipse rx='30' ry='30' fill='#e9ecef' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#e9ecef' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#e9ecef' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#fff3b0'/><circle r='10' fill='#fff3b0' opacity='.3'/></g><g transform='translate(80 48) scale(1.3)'><ellipse rx='30' ry='30' fill='#f28482' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#f28482' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#f28482' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#ffd166'/><circle r='10' fill='#ffd166' opacity='.3'/></g><text x='34' y='104' font-family='sans-serif' font-size='9' fill='#e9ecef' text-anchor='middle'>Samanyolu</text><text x='80' y='98' font-family='sans-serif' font-size='9' fill='#f28482' text-anchor='middle'>Andromeda</text></g></svg>",
+   "aciklama": "Samanyolu galaksisine en yakın galaksi Andromeda'dır.",
+   "ek": "Andromeda da sarmal yapıdadır. Çapı Samanyolu'nun yaklaşık iki katıdır.",
+   "akilda": "En yakın komşu galaksi",
+   "soru": {
+    "soru": "Andromeda galaksisinin çapı Samanyolu'nun yaklaşık kaç katıdır?",
+    "secenekler": [
+     "Yarısı",
+     "İki katı",
+     "On katı"
+    ],
+    "dogru": 1,
+    "ipucu": "Çizimde Andromeda, Samanyolu'ndan ne kadar büyük çizilmiş? Kartın ikinci cümlesine bak.",
+    "aciklama": "Andromeda'nın çapı Samanyolu'nun yaklaşık iki katı kadardır. (s. 48)"
+   }
+  },
+  {
+   "ad": "Evren",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k7c6'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k7c6)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='14' cy='16' r='1.1'/><circle cx='104' cy='12' r='1.3'/><circle cx='110' cy='104' r='1'/><circle cx='10' cy='96' r='1.1'/></g><rect x='12' y='12' width='96' height='96' rx='16' fill='none' stroke='#4cc9f0' stroke-width='2' stroke-dasharray='5 4'/><g transform='translate(36 38) scale(0.5)'><ellipse rx='30' ry='30' fill='#9d8df1' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#9d8df1' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#ffd166'/><circle r='10' fill='#ffd166' opacity='.3'/></g><g transform='translate(82 36) scale(0.4)'><ellipse rx='30' ry='30' fill='#f28482' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#f28482' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#f28482' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#ffd166'/><circle r='10' fill='#ffd166' opacity='.3'/></g><g transform='translate(60 80) scale(0.55)'><ellipse rx='30' ry='30' fill='#e9ecef' opacity='.15'/><path d='M0 0 C12 -4 20 6 16 16 C12 26 -4 30 -16 24' stroke='#e9ecef' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><path d='M0 0 C-12 4 -20 -6 -16 -16 C-12 -26 4 -30 16 -24' stroke='#e9ecef' stroke-width='5' fill='none' stroke-linecap='round' opacity='.85'/><circle r='6' fill='#fff3b0'/><circle r='10' fill='#fff3b0' opacity='.3'/></g><circle cx='88' cy='82' r='4' fill='#4cc9f0'/><circle cx='30' cy='84' r='3' fill='#f4a261'/><path d='M96 62 l6 -3' stroke='#adb5bd' stroke-width='2.5' stroke-linecap='round'/></g></svg>",
+   "aciklama": "Dünya, yıldızlar, gezegenler, galaksiler, sistemler, asteroitler gibi tüm gök cisimlerini içine alan boşluğa evren denir.",
+   "akilda": "Her şeyi içine alır",
+   "soru": {
+    "soru": "Tüm gök cisimlerini içine alan boşluğa ne denir?",
+    "secenekler": [
+     "Galaksi",
+     "Bulutsu",
+     "Evren"
+    ],
+    "dogru": 2,
+    "ipucu": "Çizimde bütün galaksileri çevreleyen kesikli çizgiyi düşün. Kartta onun adı ne?",
+    "aciklama": "Tüm gök cisimlerini içine alan boşluğa evren denir. (s. 48)"
+   }
+  },
+  {
+   "ad": "İç İçe Kavramlar",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><defs><clipPath id='u1k7c7'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#u1k7c7)'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.7'><circle cx='14' cy='16' r='1.1'/><circle cx='104' cy='12' r='1.3'/><circle cx='110' cy='104' r='1'/><circle cx='10' cy='96' r='1.1'/></g><circle cx='60' cy='60' r='50' fill='#4cc9f0' opacity='.15' stroke='#4cc9f0' stroke-width='2'/><circle cx='60' cy='66' r='36' fill='#9d8df1' opacity='.2' stroke='#9d8df1' stroke-width='2'/><circle cx='60' cy='74' r='20' fill='#f4a261' opacity='.25' stroke='#f4a261' stroke-width='2'/><circle cx='60' cy='80' r='6' fill='#ffd166'/><text x='60' y='20' font-family='sans-serif' font-size='8' fill='#4cc9f0' text-anchor='middle'>Evren</text><text x='60' y='38' font-family='sans-serif' font-size='8' fill='#c8bfff' text-anchor='middle'>Galaksi</text><text x='60' y='62' font-family='sans-serif' font-size='8' fill='#f4a261' text-anchor='middle'>Sistem</text><text x='60' y='98' font-family='sans-serif' font-size='8' fill='#ffd166' text-anchor='middle'>Yıldız</text></g></svg>",
+   "aciklama": "Yıldız, galaksi ve evren birbiriyle ilişkili ve birbirini kapsayan kavramlardır. Yıldız sistemin, sistem galaksinin, galaksi de evrenin içindedir.",
+   "ek": "Kitap bunu evinin Türkiye'deki yerine benzetmeni ister: Evin mahallede, mahallen şehirde, şehrin Türkiye'dedir. Dünya da Güneş sisteminde, Güneş sistemi Samanyolu'nda, Samanyolu da evrendedir.",
+   "akilda": "Yıldız ⊂ galaksi ⊂ evren",
+   "soru": {
+    "soru": "Hangisi en büyüğüdür ve diğerlerini içine alır?",
+    "secenekler": [
+     "Galaksi",
+     "Evren",
+     "Güneş sistemi"
+    ],
+    "dogru": 1,
+    "ipucu": "Çizimdeki en dıştaki halkanın adını oku.",
+    "aciklama": "Evren; sistemleri ve galaksileri de içine alan en kapsayıcı kavramdır. (s. 46–48)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kart neyi anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Genel kavram",
+     "uyeler": [
+      "Galaksi",
+      "Galaksilerin Farkları",
+      "Evren",
+      "İç İçe Kavramlar"
+     ]
+    },
+    {
+     "etiket": "Bir galaksinin adı",
+     "uyeler": [
+      "Samanyolu Galaksisi",
+      "Andromeda Galaksisi"
+     ]
+    },
+    {
+     "etiket": "Bilim insanı",
+     "uyeler": [
+      "Edwin Hubble"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Edwin Hubble 1923'te Andromeda galaksisini keşfetti ve galaksileri sınıflandırmak için bir sistem oluşturdu. (s. 50)",
+  "Ord. Prof. Dr. Ali Yar, Türkiye'nin ilk uçak mühendisidir. 1933'te Atatürk'ün isteğiyle \"Kozmografya\" adlı astronomi ders kitabını yazdı. (s. 50)",
+  "Albert Einstein'ın Genel Görelilik Kuramı 1916'da yayımlandı. 1922'de Nobel Fizik Ödülü'ne layık görüldü. (s. 50)",
+  "Robert Goddard 1926'da tarihteki ilk sıvı yakıtlı roketi üretip başarıyla test etti. (s. 50)"
+ ],
+ "akildaKalsin": [
+  "Yıldız, gezegen, bulutsu, gök taşı gibi gök cisimlerinden oluşan yapıya galaksi (gök ada) denir.",
+  "Galaksilerin büyüklüğü, şekli ve içindeki gök cismi sayısı farklıdır.",
+  "Galaksileri ilk keşfeden bilim insanı Edwin Hubble'dır.",
+  "Güneş sistemi, Samanyolu galaksisinin Avcı (Orion) kolundadır.",
+  "Samanyolu'na en yakın galaksi Andromeda'dır; çapı Samanyolu'nun yaklaşık iki katıdır.",
+  "Tüm gök cisimlerini içine alan boşluğa evren denir."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Evrendeki adresimiz ne?",
+   "cevap": "Dünya → Güneş sistemi → Samanyolu galaksisinin Avcı (Orion) kolu → evren. (s. 48)"
+  },
+  {
+   "soru": "Bize en yakın galaksi hangisi?",
+   "cevap": "Samanyolu'na en yakın galaksi Andromeda'dır. İkisi de sarmal yapıdadır. (s. 48)"
+  },
+  {
+   "soru": "Andromeda mı büyük, Samanyolu mu?",
+   "cevap": "Andromeda daha büyüktür. Çapı Samanyolu'nun yaklaşık iki katı kadardır. (s. 48)"
+  },
+  {
+   "soru": "Hubble Uzay Teleskobu adını nereden alıyor?",
+   "cevap": "Galaksileri ilk keşfeden gök bilimci Edwin Hubble'dan. 1920'lerde Samanyolu'nun ötesinde sayısız galaksi olduğunu buldu. (s. 48, 50)"
+  },
+  {
+   "soru": "Bütün galaksiler aynı mı görünür?",
+   "cevap": "Hayır. Galaksilerin büyüklükleri, şekilleri ve içlerindeki gök cismi sayıları birbirinden farklıdır. (s. 48)"
+  },
+  {
+   "soru": "Galaksi ile evren aynı şey mi?",
+   "cevap": "Hayır. Galaksi, gök cisimlerinden oluşan bir yapıdır. Evren ise bütün galaksileri ve tüm gök cisimlerini içine alan boşluktur. (s. 48)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Evinin Türkiye'deki yeri ile Dünya'nın evrendeki yeri arasında nasıl bir benzerlik kurarsın? Yaz.",
+   "ornekCevap": "Evim mahallemde, mahallem şehrimde, şehrim de Türkiye'dedir. Dünya da Güneş sisteminde, Güneş sistemi Samanyolu galaksisinde, Samanyolu galaksisi de evrendedir. İkisinde de küçük olan büyüğün içindedir.",
+   "anahtarlar": [
+    "güneş sistem",
+    "samanyolu",
+    "galaksi",
+    "evren",
+    "içinde"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Yıldız, gezegen, bulutsu ve gök taşı gibi gök cisimlerinden oluşan yapıya ne denir?",
+   "secenekler": [
+    "Takımyıldız",
+    "Galaksi",
+    "Bulutsu"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Gök ada\" da denen yapıyı hatırla.",
+   "aciklama": "Bu yapılara galaksi (gök ada) denir. (s. 48)"
+  },
+  {
+   "soru": "Güneş sistemi Samanyolu galaksisinin hangi kolunda bulunur?",
+   "secenekler": [
+    "Avcı (Orion) kolu",
+    "Büyükayı kolu",
+    "Andromeda kolu"
+   ],
+   "dogru": 0,
+   "ipucu": "Takımyıldızlar konusunda adını duyduğun bir avcıyı düşün.",
+   "aciklama": "Güneş sistemi Samanyolu'nun Avcı (Orion) kolundadır. (s. 48)"
+  },
+  {
+   "soru": "Samanyolu galaksisine en yakın galaksi hangisidir?",
+   "secenekler": [
+    "Kutup Yıldızı",
+    "Tarantula",
+    "Andromeda"
+   ],
+   "dogru": 2,
+   "ipucu": "Seçeneklerden yalnızca biri galaksi adıdır.",
+   "aciklama": "Samanyolu'na en yakın galaksi Andromeda'dır. (s. 48)"
+  },
+  {
+   "soru": "Samanyolu ve Andromeda galaksileri hangi yapıdadır?",
+   "secenekler": [
+    "Sarmal",
+    "Kare",
+    "Düz çizgi"
+   ],
+   "dogru": 0,
+   "ipucu": "Samanyolu kartında \"kolları\" olduğu yazıyordu.",
+   "aciklama": "Samanyolu ve Andromeda sarmal yapıdadır. (s. 48)"
+  },
+  {
+   "soru": "Edwin Hubble hangi galaksiyi 1923'te keşfetti?",
+   "secenekler": [
+    "Samanyolu",
+    "Andromeda",
+    "Güneş"
+   ],
+   "dogru": 1,
+   "ipucu": "Samanyolu'na en yakın galaksiyi düşün.",
+   "aciklama": "Hubble 1923'te Andromeda galaksisini keşfetti. (s. 50)"
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "Bütün galaksiler aynı büyüklüktedir",
+    "Galaksilerin şekilleri birbirinden farklıdır",
+    "Galaksilerde yalnızca yıldız bulunur"
+   ],
+   "dogru": 1,
+   "ipucu": "Galaksilerin Farkları kartını hatırla.",
+   "aciklama": "Galaksilerin büyüklükleri, şekilleri ve gök cismi sayıları farklıdır; içlerinde gezegen, bulutsu, gök taşı da vardır. (s. 48)"
+  },
+  {
+   "soru": "Dünya, yıldızlar, gezegenler ve galaksilerin hepsini içine alan yapı hangisidir?",
+   "secenekler": [
+    "Evren",
+    "Güneş sistemi",
+    "Samanyolu"
+   ],
+   "dogru": 0,
+   "ipucu": "En dıştaki, her şeyi kapsayan halka hangisiydi?",
+   "aciklama": "Tüm gök cisimlerini içine alan boşluğa evren denir. (s. 48–49)"
+  },
+  {
+   "soru": "Küçükten büyüğe doğru sıralama hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "Evren – galaksi – Dünya",
+    "Galaksi – Dünya – evren",
+    "Dünya – galaksi – evren"
+   ],
+   "dogru": 2,
+   "ipucu": "Ev → şehir → ülke benzetmesini düşün: en küçük olan en başta.",
+   "aciklama": "Dünya Güneş sistemindedir, sistem galaksidedir, galaksi de evrendedir. (s. 46–48)"
+  },
+  {
+   "soru": "Güneş sistemi ile Samanyolu galaksisi arasındaki ilişki hangisidir?",
+   "secenekler": [
+    "Samanyolu, Güneş sisteminin içindedir",
+    "Güneş sistemi, Samanyolu'nun içindedir",
+    "İkisi birbirinden bağımsızdır"
+   ],
+   "dogru": 1,
+   "ipucu": "Samanyolu kartındaki \"Buradayız\" işaretini düşün.",
+   "aciklama": "Güneş sistemi Samanyolu galaksisinde yer alır. (s. 48)"
+  }
+ ]
+}
