@@ -1,0 +1,331 @@
+{
+ "id": "u2k3",
+ "unite": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+ "baslik": "Potansiyel Enerji",
+ "sayfalar": "s. 68–70",
+ "giris": "Önceki konuda hareket eden cisimlerin enerjisini, yani kinetik enerjiyi öğrendik. Bazı cisimler hareket etmese de enerji depolar. Bu konuda potansiyel enerjiyi ve iki çeşidini öğreneceğiz: çekim ve esneklik potansiyel enerjisi.",
+ "kavramlar": [
+  {
+   "ad": "Potansiyel Enerji",
+   "renk": "#b388ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='30' width='40' height='50' rx='6' fill='none' stroke='#b388ff' stroke-width='4'/><rect x='27' y='55' width='30' height='20' rx='3' fill='#b388ff'/><rect x='36' y='24' width='12' height='8' rx='2' fill='#b388ff'/><circle cx='88' cy='40' r='9' fill='#ef476f'/><line x1='88' y1='31' x2='90' y2='26' stroke='#8d5a3b' stroke-width='2'/><ellipse cx='94' cy='28' rx='4' ry='2' fill='#06d6a0'/><line x1='70' y1='28' x2='106' y2='28' stroke='#8d5a3b' stroke-width='4' stroke-linecap='round'/><line x1='76' y1='82' x2='100' y2='82' stroke='#8a93b8' stroke-width='2'/><text x='60' y='104' font-size='12' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>depolanmış enerji</text></svg>",
+   "aciklama": "Cisimlerin durumlarından dolayı depoladıkları kabul edilen enerjiye potansiyel enerji denir.",
+   "ek": "Potansiyel enerji, çekim potansiyel enerjisi ve esneklik potansiyel enerjisi olmak üzere iki başlıkta incelenir. Onu şarj edilmiş bir pil gibi düşün: Enerji hazır bekler.",
+   "akilda": "Durumdan gelen, depolanan enerji",
+   "soru": {
+    "soru": "Potansiyel enerji nereden gelir?",
+    "secenekler": [
+     "Cismin rengi",
+     "Cismin durumu",
+     "Cismin sesi"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın ilk cümlesinde \"… dolayı depoladıkları\" ifadesine bak.",
+    "aciklama": "Potansiyel enerji, cisimlerin durumlarından dolayı depoladıkları kabul edilen enerjidir. (s. 68)"
+   }
+  },
+  {
+   "ad": "Çekim Potansiyel Enerjisi",
+   "renk": "#06d6a0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='60' width='12' height='38' fill='#8d5a3b'/><circle cx='28' cy='42' r='22' fill='#06d6a0'/><path d='M40 50 q18 -2 28 0' stroke='#8d5a3b' stroke-width='4' fill='none' stroke-linecap='round'/><circle cx='66' cy='62' r='9' fill='#ef476f'/><line x1='66' y1='53' x2='68' y2='48' stroke='#8d5a3b' stroke-width='2'/><ellipse cx='72' cy='50' rx='4' ry='2' fill='#06d6a0'/><line x1='10' y1='98' x2='110' y2='98' stroke='#8a93b8' stroke-width='2'/><line x1='92' y1='62' x2='92' y2='96' stroke='#ffd166' stroke-width='2' stroke-dasharray='4 3'/><polygon points='92,58 88,66 96,66' fill='#ffd166'/><polygon points='92,98 88,90 96,90' fill='#ffd166'/><text x='98' y='52' font-size='11' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>h</text><text x='60' y='20' font-size='11' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>yükseklik</text></svg>",
+   "aciklama": "Yer çekimi kuvvetinin etkisiyle cisimlerin bulunduğu yükseklikten dolayı sahip olduğu enerjiye çekim potansiyel enerjisi denir.",
+   "ek": "Ağaç dalında duran elma çekim potansiyel enerjisine sahiptir.",
+   "akilda": "Yükseklikten gelen enerji",
+   "soru": {
+    "soru": "Ağaç dalında duran elmanın enerjisi hangisidir?",
+    "secenekler": [
+     "Esneklik potansiyel enerjisi",
+     "Kinetik enerji",
+     "Çekim potansiyel enerjisi"
+    ],
+    "dogru": 2,
+    "ipucu": "Elma yerden yüksekte duruyor. Kart, yükseklikten gelen enerjiye ne ad veriyor?",
+    "aciklama": "Elma bulunduğu yükseklikten dolayı çekim potansiyel enerjisine sahiptir. (s. 68)"
+   }
+  },
+  {
+   "ad": "Ağırlık ve Çekim Potansiyel Enerjisi",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='50' width='92' height='6' fill='#8a93b8'/><circle cx='36' cy='38' r='8' fill='#ffd166'/><circle cx='84' cy='34' r='12' fill='#ff7a33'/><rect x='10' y='84' width='100' height='16' rx='3' fill='#4cc9f0'/><path d='M28 84 q-4 -10 0 -14 M36 84 v-12 M44 84 q4 -10 0 -14' stroke='#4cc9f0' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M70 84 q-8 -18 -2 -24 M78 84 q-2 -20 0 -24 M86 84 q2 -20 0 -24 M94 84 q8 -18 2 -24' stroke='#4cc9f0' stroke-width='3' fill='none' stroke-linecap='round'/><text x='36' y='24' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>hafif</text><text x='84' y='16' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>ağır</text></svg>",
+   "aciklama": "Çekim potansiyel enerjisi cismin ağırlığına bağlıdır. Ağırlık kütleye bağlı olduğu için kütleye de bağlıdır.",
+   "ek": "Aynı yükseklikten, aynı şekilde havuza daha ağır biri atlarsa daha fazla su sıçratır.",
+   "akilda": "Ağır cisim, daha çok enerji",
+   "soru": {
+    "soru": "Aynı yükseklikten havuza atlayan iki kişiden hangisi daha çok su sıçratır?",
+    "secenekler": [
+     "Daha ağır olan",
+     "Daha hafif olan",
+     "İkisi eşit sıçratır"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki havuz örneğini hatırla: ağırlık artınca ne oluyor?",
+    "aciklama": "Aynı yükseklikten ağırlığı fazla olanın çekim potansiyel enerjisi daha fazladır, daha çok su sıçratır. (s. 68)"
+   }
+  },
+  {
+   "ad": "Yükseklik ve Çekim Potansiyel Enerjisi",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='70' width='8' height='14' fill='#8a93b8'/><rect x='18' y='68' width='18' height='4' fill='#8a93b8'/><rect x='80' y='30' width='8' height='54' fill='#8a93b8'/><rect x='76' y='28' width='22' height='4' fill='#8a93b8'/><circle cx='27' cy='60' r='6' fill='#ffd166'/><circle cx='87' cy='20' r='6' fill='#ffd166'/><rect x='6' y='84' width='108' height='16' rx='3' fill='#4cc9f0'/><path d='M40 84 q2 -8 6 -10 M46 84 q2 -6 4 -6' stroke='#4cc9f0' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M60 84 q-4 -20 2 -26 M68 84 q0 -22 2 -28 M100 84 q4 -20 -2 -26 M108 84 q6 -16 2 -22' stroke='#4cc9f0' stroke-width='3' fill='none' stroke-linecap='round'/><text x='27' y='112' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>alçak</text><text x='87' y='112' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>yüksek</text></svg>",
+   "aciklama": "Çekim potansiyel enerjisi cismin yüksekliğine de bağlıdır. Yükseklik arttıkça bu enerji artar.",
+   "ek": "Havuza atladığınız yükseklik arttıkça havuzdan sıçrayan su miktarı da artar.",
+   "akilda": "Daha yüksek, daha çok enerji",
+   "soru": {
+    "soru": "Havuza daha yüksek bir yerden atlarsan ne olur?",
+    "secenekler": [
+     "Daha az su sıçrar",
+     "Daha çok su sıçrar",
+     "Hiç su sıçramaz"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki \"yükseklik arttıkça\" ifadesini oku.",
+    "aciklama": "Atlanan yükseklik arttıkça çekim potansiyel enerjisi artar, sıçrayan su miktarı da artar. (s. 68)"
+   }
+  },
+  {
+   "ad": "Esnek Cisim",
+   "renk": "#8ee3d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='30' cy='44' rx='18' ry='10' fill='none' stroke='#ff7a33' stroke-width='4'/><rect x='70' y='32' width='36' height='24' rx='5' fill='#ffd166'/><circle cx='80' cy='40' r='2' fill='#b38a1e'/><circle cx='94' cy='46' r='2' fill='#b38a1e'/><circle cx='86' cy='50' r='2' fill='#b38a1e'/><polyline points='28,76 52,81 28,85 52,90 28,95 52,99 28,104' fill='none' stroke='#8ee3d6' stroke-width='3' stroke-linejoin='round'/><text x='30' y='70' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>lastik</text><text x='88' y='70' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>sünger</text><text x='88' y='96' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>sarmal yay</text></svg>",
+   "aciklama": "Kuvvet uygulandığında şekli değişen, kuvvet ortadan kalkınca eski hâline dönen cisimlere esnek cisim denir.",
+   "ek": "Paket lastiği, sünger ve sarmal yay birer esnek cisimdir.",
+   "akilda": "Şekli değişir, geri döner",
+   "soru": {
+    "soru": "Hangisi esnek bir cisimdir?",
+    "secenekler": [
+     "Sünger",
+     "Taş",
+     "Cam bardak"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta sayılan üç örneği hatırla.",
+    "aciklama": "Sünger sıkılınca şekli değişir, bırakılınca eski hâline döner; esnek bir cisimdir. (s. 68)"
+   }
+  },
+  {
+   "ad": "Esneklik Potansiyel Enerjisi",
+   "renk": "#ef476f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='22' y1='20' x2='22' y2='100' stroke='#8a93b8' stroke-width='4' stroke-linecap='round'/><line x1='98' y1='20' x2='98' y2='100' stroke='#8a93b8' stroke-width='4' stroke-linecap='round'/><polyline points='22,40 70,58 22,76' fill='none' stroke='#ff7a33' stroke-width='3' stroke-linejoin='round'/><circle cx='72' cy='58' r='5' fill='#ffd166'/><line x1='78' y1='58' x2='94' y2='58' stroke='#4cc9f0' stroke-width='3' stroke-linecap='round'/><polygon points='98,58 90,53 90,63' fill='#4cc9f0'/><text x='60' y='14' font-size='10' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>gerildi</text><text x='60' y='112' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>enerji depoladı</text></svg>",
+   "aciklama": "Esnek cisimler, eski hâllerine dönebilmek için enerji depolar. Bu enerjiye esneklik potansiyel enerjisi denir.",
+   "ek": "Paket lastiği gerildiğinde, sarmal yay sıkıştırıldığında veya gerildiğinde esneklik potansiyel enerjisi depolanır.",
+   "akilda": "Gerilince ya da sıkışınca depolanır",
+   "soru": {
+    "soru": "Gerilmiş bir paket lastiğinde hangi enerji depolanır?",
+    "secenekler": [
+     "Çekim potansiyel enerjisi",
+     "Işık enerjisi",
+     "Esneklik potansiyel enerjisi"
+    ],
+    "dogru": 2,
+    "ipucu": "Paket lastiği esnek bir cisim. Esnek cisimlerin depoladığı enerjinin adı kartta yazıyor.",
+    "aciklama": "Gerilen paket lastiği esneklik potansiyel enerjisi depolar. (s. 68)"
+   }
+  },
+  {
+   "ad": "Kinetik ve Potansiyel Enerji",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='60' y1='14' x2='60' y2='106' stroke='#8a93b8' stroke-width='2' stroke-dasharray='4 4'/><line x1='8' y1='84' x2='54' y2='84' stroke='#8a93b8' stroke-width='2'/><circle cx='36' cy='72' r='11' fill='#ff7a33'/><g stroke='#4cc9f0' stroke-width='3' stroke-linecap='round'><line x1='12' y1='68' x2='20' y2='68'/><line x1='10' y1='76' x2='22' y2='76'/></g><line x1='66' y1='84' x2='112' y2='84' stroke='#8a93b8' stroke-width='2'/><rect x='84' y='52' width='8' height='32' fill='#8d5a3b'/><rect x='78' y='48' width='20' height='5' fill='#8d5a3b'/><circle cx='88' cy='40' r='8' fill='#b388ff'/><text x='33' y='34' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif'>kinetik</text><text x='88' y='24' font-size='11' fill='#b388ff' text-anchor='middle' font-family='sans-serif'>potansiyel</text><text x='33' y='102' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>hareketten</text><text x='88' y='102' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>konumdan</text></svg>",
+   "aciklama": "Kinetik enerjiye cisim hareketinden dolayı sahiptir. Potansiyel enerjiye ise konumundan (durumundan) dolayı sahiptir.",
+   "ek": "İkisi de enerjinin çeşididir ve birimleri joule'dür. Yuvarlanan top kinetik, rafta duran top potansiyel enerji örneğidir.",
+   "akilda": "Hareket → kinetik, konum → potansiyel",
+   "soru": {
+    "soru": "Bir cisim konumundan dolayı hangi enerjiye sahiptir?",
+    "secenekler": [
+     "Kinetik enerji",
+     "Potansiyel enerji",
+     "Ses enerjisi"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki okları hatırla: hareket → ?, konum → ?",
+    "aciklama": "Cisim konumundan dolayı potansiyel enerjiye, hareketinden dolayı kinetik enerjiye sahiptir. (s. 70)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kart neyi anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Potansiyel enerji nedir?",
+     "uyeler": [
+      "Potansiyel Enerji",
+      "Kinetik ve Potansiyel Enerji"
+     ]
+    },
+    {
+     "etiket": "Yükseklikten gelen enerji",
+     "uyeler": [
+      "Çekim Potansiyel Enerjisi",
+      "Ağırlık ve Çekim Potansiyel Enerjisi",
+      "Yükseklik ve Çekim Potansiyel Enerjisi"
+     ]
+    },
+    {
+     "etiket": "Şekil değiştirmekten gelen enerji",
+     "uyeler": [
+      "Esnek Cisim",
+      "Esneklik Potansiyel Enerjisi"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Havuza daha yüksekten atlarsan daha çok su sıçrar; bunun sebebi çekim potansiyel enerjisinin yüksekliğe bağlı olmasıdır. (s. 68)",
+  "Sünger de bir esnek cisimdir: Sıkınca şekli değişir, bırakınca eski hâline döner. (s. 68)",
+  "Çekim potansiyel enerjisi ağırlığa bağlıdır; ağırlık da kütleye bağlı olduğu için bu enerji kütleye de bağlıdır. (s. 68)"
+ ],
+ "akildaKalsin": [
+  "Cisimlerin durumlarından dolayı depoladıkları enerjiye potansiyel enerji denir.",
+  "Potansiyel enerjinin iki çeşidi vardır: çekim potansiyel enerjisi ve esneklik potansiyel enerjisi.",
+  "Çekim potansiyel enerjisi yükseklikten gelir; ağırlığa (kütleye) ve yüksekliğe bağlıdır.",
+  "Paket lastiği, sünger ve sarmal yay esnek cisimlerdir.",
+  "Esnek cisim gerilince ya da sıkışınca esneklik potansiyel enerjisi depolar.",
+  "Kinetik enerji hareketten, potansiyel enerji konumdan gelir."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Yerde duran bir topun çekim potansiyel enerjisi var mı?",
+   "cevap": "Çekim potansiyel enerjisi cismin bulunduğu yükseklikten gelir. Top yükseğe kaldırıldıkça bu enerjisi artar. Rafta duran top, yerdekinden daha fazla çekim potansiyel enerjisine sahiptir. (s. 68)"
+  },
+  {
+   "soru": "Salıncakta oturan çocuğun hangi enerjisi vardır?",
+   "cevap": "Salıncak yerden yüksekte olduğu için çocuk bulunduğu yükseklikten dolayı çekim potansiyel enerjisine sahiptir. Sallanırken hareket ettiği için kinetik enerjisi de olur. (s. 68, 70)"
+  },
+  {
+   "soru": "Paket lastiğini daha çok germek neyi değiştirir?",
+   "cevap": "Lastik gerildiğinde eski hâline dönmek için enerji depolar. Daha çok gerersen daha çok enerji depolar. Kitaptaki boşluk doldurma sorusu da bunu soruyor. (s. 68, 70)"
+  },
+  {
+   "soru": "Tükenmez kalemin içindeki yay ne işe yarar?",
+   "cevap": "Kalemin ucuna bastığında yay sıkışır ve esneklik potansiyel enerjisi depolar. Bırakınca bu enerjiyle eski hâline döner ve ucu geri iter. (s. 64, 68)"
+  },
+  {
+   "soru": "Dağın tepesindeki taş ile yamacın ortasındaki aynı taştan hangisinin enerjisi daha fazladır?",
+   "cevap": "Tepedeki taşın. Aynı taş olduğu için ağırlıkları eşittir; daha yüksekte olanın çekim potansiyel enerjisi daha fazladır. (s. 68)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Günlük hayattan bir çekim potansiyel enerjisi, bir de esneklik potansiyel enerjisi örneği yaz. Her birinde enerjinin neden depolandığını açıkla.",
+   "ornekCevap": "Rafta duran vazo çekim potansiyel enerjisine sahiptir, çünkü yerden yüksekte durur. Gerilmiş okçu yayı esneklik potansiyel enerjisine sahiptir, çünkü gerilince eski hâline dönmek için enerji depolar.",
+   "anahtarlar": [
+    "yüksek",
+    "ger",
+    "sıkış",
+    "esnek",
+    "depola"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Potansiyel enerjinin iki çeşidi hangileridir?",
+   "secenekler": [
+    "Işık ve ısı enerjisi",
+    "Çekim ve esneklik potansiyel enerjisi",
+    "Kinetik ve elektrik enerjisi"
+   ],
+   "dogru": 1,
+   "ipucu": "İlk kartın \"ek\" kısmında iki başlık sayılıyor.",
+   "aciklama": "Potansiyel enerji, çekim potansiyel enerjisi ve esneklik potansiyel enerjisi olmak üzere iki başlıkta incelenir. (s. 68)"
+  },
+  {
+   "soru": "Çekim potansiyel enerjisi hangi iki şeye bağlıdır?",
+   "secenekler": [
+    "Ağırlık ve yükseklik",
+    "Renk ve şekil",
+    "Hız ve sıcaklık"
+   ],
+   "dogru": 0,
+   "ipucu": "Havuz örneğinde neyi değiştirince daha çok su sıçradı?",
+   "aciklama": "Çekim potansiyel enerjisi cismin ağırlık ve yüksekliğine bağlıdır. (s. 68)"
+  },
+  {
+   "soru": "Sıkıştırılmış bir sarmal yay hangi enerjiye sahiptir?",
+   "secenekler": [
+    "Kinetik enerji",
+    "Çekim potansiyel enerjisi",
+    "Esneklik potansiyel enerjisi"
+   ],
+   "dogru": 2,
+   "ipucu": "Sarmal yay esnek bir cisimdir.",
+   "aciklama": "Sarmal yay sıkıştırıldığında veya gerildiğinde esneklik potansiyel enerjisi depolar. (s. 68)"
+  },
+  {
+   "soru": "\"Gerilen bir sarmal yayın esneklik potansiyel enerjisi vardır.\" Bu ifade doğru mu?",
+   "secenekler": [
+    "Doğru",
+    "Yanlış",
+    "Yalnızca yay yere düşerse doğru"
+   ],
+   "dogru": 0,
+   "ipucu": "Esneklik potansiyel enerjisi kartında yay için ne söyleniyor?",
+   "aciklama": "Doğru. Gerilen veya sıkıştırılan sarmal yay esneklik potansiyel enerjisi depolar. (s. 68, 70)"
+  },
+  {
+   "soru": "Aynı ağırlıktaki iki kitaptan biri alt rafta, diğeri üst rafta duruyor. Hangisinin çekim potansiyel enerjisi daha fazladır?",
+   "secenekler": [
+    "Alt raftaki",
+    "Üst raftaki",
+    "İkisi eşittir"
+   ],
+   "dogru": 1,
+   "ipucu": "Ağırlıklar aynı. Geriye hangi etken kalıyor?",
+   "aciklama": "Ağırlıkları eşitse daha yüksekte olanın çekim potansiyel enerjisi daha fazladır. (s. 68)"
+  },
+  {
+   "soru": "Hangisi esnek bir cisim değildir?",
+   "secenekler": [
+    "Paket lastiği",
+    "Sarmal yay",
+    "Tuğla"
+   ],
+   "dogru": 2,
+   "ipucu": "Esnek cisim kuvvet kalkınca eski hâline döner. Hangisi böyle davranmaz?",
+   "aciklama": "Paket lastiği ve sarmal yay esnek cisimdir; tuğla kuvvet uygulanınca eski hâline dönen bir cisim değildir. (s. 68)"
+  },
+  {
+   "soru": "Paket lastiğinin depolayacağı enerjiyi artırmak için ne yapmak gerekir?",
+   "secenekler": [
+    "Gerilme miktarını artırmak",
+    "Lastiği boyamak",
+    "Lastiği yere koymak"
+   ],
+   "dogru": 0,
+   "ipucu": "Lastik ne zaman enerji depoluyordu?",
+   "aciklama": "Paket lastiği gerildiğinde enerji depolar; depolanan enerjiyi artırmak için gerilme miktarını artırmak gerekir. (s. 68, 70)"
+  },
+  {
+   "soru": "Kinetik enerji ile potansiyel enerji arasındaki fark nedir?",
+   "secenekler": [
+    "Kinetik hareketten, potansiyel konumdan gelir",
+    "İkisi de yalnızca hareketten gelir",
+    "Kinetik konumdan, potansiyel hareketten gelir"
+   ],
+   "dogru": 0,
+   "ipucu": "Son kartın \"akılda kalsın\" kısmını hatırla.",
+   "aciklama": "Cisim kinetik enerjiye hareketinden, potansiyel enerjiye konumundan dolayı sahiptir. (s. 70)"
+  },
+  {
+   "soru": "Hangisinde çekim potansiyel enerjisi vardır?",
+   "secenekler": [
+    "Gerilmiş okçu yayı",
+    "Dalda duran elma",
+    "Sıkılmış sünger"
+   ],
+   "dogru": 1,
+   "ipucu": "Yükseklikten gelen enerjiyi ara.",
+   "aciklama": "Dalda duran elma bulunduğu yükseklikten dolayı çekim potansiyel enerjisine sahiptir; diğerleri esneklik potansiyel enerjisi örneğidir. (s. 68)"
+  },
+  {
+   "soru": "Ağırlık kütleye bağlı olduğuna göre çekim potansiyel enerjisi için ne söylenebilir?",
+   "secenekler": [
+    "Kütleye bağlı değildir",
+    "Yalnızca hıza bağlıdır",
+    "Kütleye de bağlıdır"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Ağırlık ve Çekim Potansiyel Enerjisi\" kartının ilk cümlelerini hatırla.",
+   "aciklama": "Ağırlık kütleye bağlı olduğu için çekim potansiyel enerjisi aynı zamanda cismin kütlesine de bağlıdır. (s. 68)"
+  }
+ ]
+}
