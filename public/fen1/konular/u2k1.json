@@ -1,0 +1,339 @@
+{
+ "id": "u2k1",
+ "unite": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+ "baslik": "Fiziksel Anlamda İş",
+ "sayfalar": "s. 59–63",
+ "giris": "Günlük hayatta ödev yapmaya da, bilgisayarda çalışmaya da \"iş\" deriz. Fen bilimlerinde ise iş kelimesinin özel bir anlamı var. Bu konuda fiziksel anlamda işin ne olduğunu, hangi koşullarda yapıldığını ve birimini öğreneceğiz. Çizimlerde turuncu ok kuvveti, mavi ok hareketi gösteriyor.",
+ "kavramlar": [
+  {
+   "ad": "Fiziksel Anlamda İş",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='60' y1='14' x2='60' y2='106' stroke='#3a4468' stroke-width='2' stroke-dasharray='4 4'/><rect x='14' y='44' width='32' height='22' rx='3' fill='#8ee3d6'/><rect x='18' y='48' width='24' height='14' fill='#1b2340'/><path d='M10 70h40l-4 6H14z' fill='#8a93b8'/><text x='30' y='96' font-size='11' fill='#8a93b8' text-anchor='middle' font-family='sans-serif'>günlük</text><rect x='74' y='52' width='26' height='22' rx='3' fill='#c68b59'/><path d='M74 63.0h26' stroke='#8a5a34' stroke-width='2'/><line x1='64' y1='63' x2='65.0' y2='63.0' stroke='#ff7a33' stroke-width='3' stroke-linecap='round'/><polygon points='74.0,63.0 65.0,58.0 65.0,68.0' fill='#ff7a33'/><line x1='76' y1='84' x2='95.0' y2='84.0' stroke='#4cc9f0' stroke-width='3' stroke-linecap='round'/><polygon points='104.0,84.0 95.0,79.0 95.0,89.0' fill='#4cc9f0'/><text x='90' y='104' font-size='11' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>fiziksel</text></svg>",
+   "aciklama": "Bilim insanlarının tanımladığı fiziksel anlamda iş, günlük yaşamda kullandığımız iş kavramından farklıdır.",
+   "ek": "Günlük dilde bilgisayar başında çalışmaya da iş deriz. Fizikte ise iş için bir cisme kuvvet uygulanmalı ve cisim bu kuvvetin doğrultusunda yer değiştirmelidir.",
+   "akilda": "Fizikteki iş başkadır",
+   "soru": {
+    "soru": "Fiziksel anlamda iş ile günlük yaşamdaki iş kavramı için ne söylenebilir?",
+    "secenekler": [
+     "Birbirinden farklıdır",
+     "Tamamen aynıdır",
+     "İkisi de yalnızca yorulmak demektir"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartının ilk cümlesini tekrar oku.",
+    "aciklama": "Bilim insanlarının tanımladığı fiziksel anlamda iş, günlük yaşamdaki iş kavramından farklıdır. (s. 62)"
+   }
+  },
+  {
+   "ad": "Kuvvet Uygulamak",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='98' x2='110' y2='98' stroke='#8a93b8' stroke-width='2'/><circle cx='30' cy='48' r='6' fill='#f5f6fa'/><path d='M30 54v20M30 74l-7 14M30 74l7 14' stroke='#f5f6fa' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M30 60l26 4' stroke='#f5f6fa' stroke-width='3.5' stroke-linecap='round'/><rect x='56' y='62' width='34' height='36' rx='3' fill='#c68b59'/><path d='M56 80.0h34' stroke='#8a5a34' stroke-width='2'/><line x1='40' y1='44' x2='47.0' y2='44.0' stroke='#ff7a33' stroke-width='5' stroke-linecap='round'/><polygon points='56.0,44.0 47.0,39.0 47.0,49.0' fill='#ff7a33'/><text x='48' y='34' font-size='14' fill='#ff7a33' text-anchor='middle' font-weight='700' font-family='sans-serif'>F</text></svg>",
+   "aciklama": "Fiziksel anlamda iş yapılabilmesi için birinci koşul, cisim üzerine net bir kuvvet uygulanmasıdır.",
+   "ek": "Kuvvet bir itme ya da çekmedir. Birimi newtondur, \"nivtın\" diye okunur ve N ile gösterilir.",
+   "akilda": "Önce kuvvet gerekir",
+   "soru": {
+    "soru": "Fiziksel anlamda iş yapmanın birinci koşulu nedir?",
+    "secenekler": [
+     "Cismin rengini değiştirmek",
+     "Cisme net bir kuvvet uygulamak",
+     "Cisme uzun süre bakmak"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın başlığı sana yol gösteriyor.",
+    "aciklama": "Birinci koşul, cisim üzerine net bir kuvvet uygulanmasıdır. (s. 62)"
+   }
+  },
+  {
+   "ad": "Kuvvet Doğrultusunda Hareket",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='98' x2='110' y2='98' stroke='#8a93b8' stroke-width='2'/><rect x='14' y='64' width='30' height='34' rx='3' fill='none' stroke='#8a93b8' stroke-width='2' stroke-dasharray='4 3'/><rect x='74' y='64' width='30' height='34' rx='3' fill='#c68b59'/><path d='M74 81.0h30' stroke='#8a5a34' stroke-width='2'/><line x1='44' y1='50' x2='65.0' y2='50.0' stroke='#ff7a33' stroke-width='4' stroke-linecap='round'/><polygon points='74.0,50.0 65.0,45.0 65.0,55.0' fill='#ff7a33'/><line x1='30' y1='110' x2='79.0' y2='110.0' stroke='#4cc9f0' stroke-width='4' stroke-linecap='round'/><polygon points='88.0,110.0 79.0,105.0 79.0,115.0' fill='#4cc9f0'/><text x='59' y='40' font-size='11' fill='#ff7a33' text-anchor='middle' font-family='sans-serif'>kuvvet</text></svg>",
+   "aciklama": "İkinci koşul: Cisim, uygulanan kuvvetin doğrultusunda hareket etmeli, yani yer değiştirmelidir.",
+   "ek": "Arabayı ittiği yöne doğru hareket ettiren adam fiziksel anlamda iş yapmıştır.",
+   "akilda": "Kuvvet yönünde yer değiştirme",
+   "soru": {
+    "soru": "Arabayı ittiği yöne doğru hareket ettiren adam için ne söylenebilir?",
+    "secenekler": [
+     "Kuvvet uygulamamıştır",
+     "İş yapmamıştır",
+     "Fiziksel anlamda iş yapmıştır"
+    ],
+    "dogru": 2,
+    "ipucu": "Araba, kuvvetin doğrultusunda hareket etmiş mi? Karttaki örneğe bak.",
+    "aciklama": "Araba uygulanan kuvvet doğrultusunda hareket ettiği için adam fiziksel anlamda iş yapmıştır. (s. 62)"
+   }
+  },
+  {
+   "ad": "Kuvvet Var, Hareket Yok",
+   "renk": "#ff5d73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='98' x2='110' y2='98' stroke='#8a93b8' stroke-width='2'/><rect x='72' y='26' width='40' height='72' fill='#8a4a36'/><rect x='72' y='26' width='19' height='11' fill='#b5654a'/><rect x='92' y='26' width='20' height='11' fill='#b5654a'/><rect x='72' y='38' width='9' height='11' fill='#b5654a'/><rect x='82' y='38' width='19' height='11' fill='#b5654a'/><rect x='102' y='38' width='10' height='11' fill='#b5654a'/><rect x='72' y='50' width='19' height='11' fill='#b5654a'/><rect x='92' y='50' width='20' height='11' fill='#b5654a'/><rect x='72' y='62' width='9' height='11' fill='#b5654a'/><rect x='82' y='62' width='19' height='11' fill='#b5654a'/><rect x='102' y='62' width='10' height='11' fill='#b5654a'/><rect x='72' y='74' width='19' height='11' fill='#b5654a'/><rect x='92' y='74' width='20' height='11' fill='#b5654a'/><rect x='72' y='86' width='9' height='11' fill='#b5654a'/><rect x='82' y='86' width='19' height='11' fill='#b5654a'/><rect x='102' y='86' width='10' height='11' fill='#b5654a'/><circle cx='40' cy='48' r='6' fill='#f5f6fa'/><path d='M40 54v20M40 74l-7 14M40 74l7 14' stroke='#f5f6fa' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M40 60l30 2' stroke='#f5f6fa' stroke-width='3.5' stroke-linecap='round'/><line x1='46' y1='40' x2='61.0' y2='40.0' stroke='#ff7a33' stroke-width='4' stroke-linecap='round'/><polygon points='70.0,40.0 61.0,35.0 61.0,45.0' fill='#ff7a33'/><path d='M84 104l16 0' stroke='#4cc9f0' stroke-width='3' opacity='.5'/><path d='M86 100l12 10M98 100l-12 10' stroke='#ff5d73' stroke-width='3.5' stroke-linecap='round'/></svg>",
+   "aciklama": "Cisme kuvvet uygulandığı hâlde cisim hareket etmiyorsa fiziksel anlamda iş yapılmamış olur.",
+   "ek": "Taşımacılık çalışanları koliye yukarı yönde kuvvet uyguladı ama koli yukarı hareket etmedi. Bu yüzden fiziksel anlamda iş yapılmadı. Sınıfın duvarını çok güçlü itmek de böyledir.",
+   "akilda": "Hareket yoksa iş yok",
+   "soru": {
+    "soru": "Koliye yukarı doğru kuvvet uygulayan ama koliyi kaldıramayan çalışanlar fiziksel anlamda iş yapmış olur mu?",
+    "secenekler": [
+     "Evet, çünkü kuvvet uyguladılar",
+     "Hayır, çünkü koli hareket etmedi",
+     "Evet, çünkü yoruldular"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın \"akılda kalsın\" kısmını hatırla.",
+    "aciklama": "Koli yukarı yönde hareket etmediği için fiziksel anlamda iş yapılmamıştır. (s. 62)"
+   }
+  },
+  {
+   "ad": "Kuvvet ile Hareket Farklı Doğrultuda",
+   "renk": "#9d8df1",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='98' x2='110' y2='98' stroke='#8a93b8' stroke-width='2'/><circle cx='44' cy='50' r='6' fill='#f5f6fa'/><path d='M44 56v20M44 76l-7 14M44 76l7 14' stroke='#f5f6fa' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M44 62l14 6' stroke='#f5f6fa' stroke-width='3.5' stroke-linecap='round'/><rect x='52' y='68' width='18' height='16' rx='3' fill='#9d8df1'/><line x1='61' y1='68' x2='61.0' y2='41.0' stroke='#ff7a33' stroke-width='4' stroke-linecap='round'/><polygon points='61.0,32.0 56.0,41.0 66.0,41.0' fill='#ff7a33'/><line x1='72' y1='104' x2='99.0' y2='104.0' stroke='#4cc9f0' stroke-width='4' stroke-linecap='round'/><polygon points='108.0,104.0 99.0,99.0 99.0,109.0' fill='#4cc9f0'/><path d='M61 40h8v-8' stroke='#ffd166' stroke-width='0' fill='none'/><text x='88' y='40' font-size='11' fill='#ff7a33' text-anchor='middle' font-family='sans-serif'>yukarı</text><text x='90' y='92' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif'>ileri</text></svg>",
+   "aciklama": "Cisim hareket etse bile, hareketi uygulanan kuvvetin doğrultusunda değilse o kuvvet fiziksel anlamda iş yapmaz.",
+   "ek": "Çantanı sırtında taşırken ona yukarı doğru kuvvet uygularsın, ama sen ileri doğru yürürsün. Kuvvet yukarı, hareket ileri: Doğrultular aynı değil.",
+   "akilda": "Doğrultular aynı olmalı",
+   "soru": {
+    "soru": "Çantanı sırtında taşıyıp düz yolda yürürken çantaya uyguladığın kuvvet hangi yöndedir?",
+    "secenekler": [
+     "Yukarı doğru",
+     "İleri doğru",
+     "Aşağı doğru"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki çizimde turuncu ok hangi yöne bakıyor?",
+    "aciklama": "Çantayı taşımak için ona yukarı doğru kuvvet uygularız, ama çanta ileri doğru hareket eder. Bu yüzden bu kuvvet fiziksel anlamda iş yapmaz. (s. 61–62)"
+   }
+  },
+  {
+   "ad": "İşin Büyüklüğü",
+   "renk": "#8ee3d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='30' width='18' height='16' rx='3' fill='#c68b59'/><path d='M14 38.0h18' stroke='#8a5a34' stroke-width='2'/><line x1='4' y1='38' x2='5.0' y2='38.0' stroke='#ff7a33' stroke-width='3' stroke-linecap='round'/><polygon points='14.0,38.0 5.0,33.0 5.0,43.0' fill='#ff7a33'/><line x1='16' y1='54' x2='31.0' y2='54.0' stroke='#4cc9f0' stroke-width='3' stroke-linecap='round'/><polygon points='40.0,54.0 31.0,49.0 31.0,59.0' fill='#4cc9f0'/><line x1='8' y1='62' x2='112' y2='62' stroke='#3a4468' stroke-width='2' stroke-dasharray='4 4'/><rect x='28' y='72' width='18' height='16' rx='3' fill='#c68b59'/><path d='M28 80.0h18' stroke='#8a5a34' stroke-width='2'/><line x1='4' y1='80' x2='19.0' y2='80.0' stroke='#ff7a33' stroke-width='6' stroke-linecap='round'/><polygon points='28.0,80.0 19.0,75.0 19.0,85.0' fill='#ff7a33'/><line x1='30' y1='98' x2='97.0' y2='98.0' stroke='#4cc9f0' stroke-width='3' stroke-linecap='round'/><polygon points='106.0,98.0 97.0,93.0 97.0,103.0' fill='#4cc9f0'/><text x='84' y='42' font-size='12' fill='#8a93b8' text-anchor='middle' font-family='sans-serif'>az iş</text><text x='88' y='84' font-size='12' fill='#ffd166' text-anchor='middle' font-weight='700' font-family='sans-serif'>çok iş</text></svg>",
+   "aciklama": "Fiziksel anlamda yapılan iş, uygulanan kuvvet ve cismin bu kuvvet doğrultusundaki yer değiştirmesi ile doğru orantılıdır.",
+   "ek": "Doğru orantılı demek, biri artınca diğerinin de artması demektir. Kuvvet artarsa iş artar. Cisim daha uzağa giderse iş yine artar.",
+   "akilda": "Daha çok kuvvet, daha çok iş",
+   "soru": {
+    "soru": "Aynı kutuyu aynı kuvvetle 2 metre yerine 4 metre iterek hareket ettirirsen yaptığın iş ne olur?",
+    "secenekler": [
+     "Azalır",
+     "Değişmez",
+     "Artar"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta \"doğru orantılı\" ne anlama geliyordu?",
+    "aciklama": "İş, kuvvet doğrultusundaki yer değiştirmeyle doğru orantılıdır. Yol artınca iş de artar. (s. 62)"
+   }
+  },
+  {
+   "ad": "Joule",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='38' height='30' rx='8' fill='#ff7a33'/><text x='31' y='41' font-size='16' fill='#1b2340' text-anchor='middle' font-weight='700' font-family='sans-serif'>N</text><rect x='70' y='20' width='38' height='30' rx='8' fill='#4cc9f0'/><text x='89' y='41' font-size='16' fill='#1b2340' text-anchor='middle' font-weight='700' font-family='sans-serif'>m</text><path d='M31 54l29 16M89 54l-29 16' stroke='#8a93b8' stroke-width='2.5'/><circle cx='60' cy='88' r='20' fill='#ffd166'/><text x='60' y='96' font-size='22' fill='#1b2340' text-anchor='middle' font-weight='700' font-family='sans-serif'>J</text></svg>",
+   "aciklama": "Kuvvet newton (N), yer değiştirme metre (m) olarak alınırsa işin birimi joule olur.",
+   "ek": "Joule \"jul\" diye okunur ve kısaca J harfiyle gösterilir. Bu ad, bilim insanı James Prescott Joule'a ithaf edilmiştir.",
+   "akilda": "İşin birimi: J",
+   "soru": {
+    "soru": "İşin birimi nedir?",
+    "secenekler": [
+     "Newton",
+     "Joule",
+     "Metre"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın başlığına ve J harfine bak.",
+    "aciklama": "Kuvvet newton, yer değiştirme metre alınırsa iş birimi joule (J) olur. (s. 62)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kart neyi anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "İş için gereken koşul",
+     "uyeler": [
+      "Kuvvet Uygulamak",
+      "Kuvvet Doğrultusunda Hareket"
+     ]
+    },
+    {
+     "etiket": "İş yapılmayan durum",
+     "uyeler": [
+      "Kuvvet Var, Hareket Yok",
+      "Kuvvet ile Hareket Farklı Doğrultuda"
+     ]
+    },
+    {
+     "etiket": "İşi ölçmek",
+     "uyeler": [
+      "İşin Büyüklüğü",
+      "Joule"
+     ]
+    },
+    {
+     "etiket": "Temel kavram",
+     "uyeler": [
+      "Fiziksel Anlamda İş"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "İş birimi joule, İngiliz matematikçi ve fizikçi James Prescott Joule'un (1818-1889) adını taşır. Joule mekanik, ısı ve elektrik gibi enerji çeşitlerinin birbirine dönüşebildiğini keşfetmiştir. (s. 80)",
+  "Kuvvet birimi newton, \"nivtın\" diye okunur. Joule ise \"jul\" diye okunur. (s. 62)",
+  "Berber, terzi, oto tamircisi, öğretmen, doktor ve mühendis gibi meslek sahipleri de çalışırken cisimlere kuvvet uygular. (s. 60)"
+ ],
+ "akildaKalsin": [
+  "Fiziksel anlamda iş, günlük yaşamdaki iş kavramından farklıdır.",
+  "İş için iki koşul gerekir: Cisme net kuvvet uygulanmalı ve cisim bu kuvvet doğrultusunda hareket etmelidir.",
+  "Kuvvet uygulandığı hâlde cisim hareket etmezse iş yapılmaz.",
+  "Cisim, kuvvetin doğrultusunda hareket etmiyorsa o kuvvet iş yapmaz.",
+  "İş, kuvvet ve yer değiştirme ile doğru orantılıdır.",
+  "İşin birimi joule'dür (J)."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Sınıfın duvarını bütün gücümle itersem iş yapmış olur muyum?",
+   "cevap": "Fiziksel anlamda hayır. Duvara kuvvet uygularsın ama duvar yerinden oynamaz. Cisim yer değiştirmediği için iş yapılmaz. (s. 60, 62)"
+  },
+  {
+   "soru": "Halter kaldıran sporcu iş yapar mı?",
+   "cevap": "Halteri yukarı kaldırırken evet. Kuvvet yukarı doğrudur, halter de yukarı doğru hareket eder. Halteri başının üstünde hareketsiz tutarken ise halter yer değiştirmediği için iş yapılmaz. (s. 61–62)"
+  },
+  {
+   "soru": "Ahmet kitap kolisini yerden kaldırıp merdivenlerden çıkardı. Hangi anlarda iş yaptı?",
+   "cevap": "Koliyi yerden kaldırırken ve merdivenlerden çıkarırken koli, kuvvetle aynı doğrultuda (yukarı) hareket eder, yani iş yapılır. Koliyi düz yolda sallamadan taşırken kuvvet yukarı, hareket ileri olduğu için iş yapılmaz. (s. 62–63)"
+  },
+  {
+   "soru": "Testereyi aşağı doğru iten marangoz iş yapar mı?",
+   "cevap": "Evet. Marangoz testereyi aşağı doğru iter ve testere de aşağı doğru hareket eder. Kuvvet ve hareket aynı doğrultuda. (s. 61)"
+  },
+  {
+   "soru": "Bilgisayar başında çalışmak neden fiziksel anlamda iş sayılmayabilir?",
+   "cevap": "Çünkü fiziksel anlamda iş için bir cisme kuvvet uygulanıp cismin bu kuvvet doğrultusunda yer değiştirmesi gerekir. Günlük dilde \"iş\" dediğimiz her şey bu koşulları taşımaz. (s. 62)"
+  },
+  {
+   "soru": "İşin birimine neden joule denmiş?",
+   "cevap": "Enerji çeşitlerinin birbirine dönüşebildiğini keşfeden bilim insanı James Prescott Joule'a ithafen bu ad verilmiştir. (s. 80)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bugün evde ya da okulda yaptığın iki hareketi düşün. Birinde fiziksel anlamda iş yaptın, diğerinde yapmadın. Hangisi hangisi, nedeniyle yaz.",
+   "ornekCevap": "Yerdeki çantamı masaya kaldırdığımda iş yaptım, çünkü çantaya yukarı doğru kuvvet uyguladım ve çanta yukarı doğru hareket etti. Duvara yaslanıp ittiğimde iş yapmadım, çünkü duvar yerinden oynamadı, yani yer değiştirmedi.",
+   "anahtarlar": [
+    "kuvvet",
+    "doğrultu",
+    "hareket",
+    "yer değiştir"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Fiziksel anlamda iş yapılabilmesi için kaç koşul gerekir?",
+   "secenekler": [
+    "Bir",
+    "İki",
+    "Üç"
+   ],
+   "dogru": 1,
+   "ipucu": "Kuvvet ve hareketle ilgili koşulları say.",
+   "aciklama": "İki koşul gerekir: net kuvvet uygulanmalı ve cisim bu kuvvet doğrultusunda hareket etmelidir. (s. 62)"
+  },
+  {
+   "soru": "Aşağıdakilerin hangisinde fiziksel anlamda iş yapılır?",
+   "secenekler": [
+    "Oyuncak arabayı iterek hareket ettiren çocuk",
+    "Duvarı iten çocuk",
+    "Kaldıramadığı koliyi çeken çalışan"
+   ],
+   "dogru": 0,
+   "ipucu": "Hangi cisim kuvvetin doğrultusunda yer değiştiriyor?",
+   "aciklama": "Oyuncak araba itildiği yönde hareket eder, bu yüzden iş yapılır. Duvar ve koli yer değiştirmez. (s. 61–62)"
+  },
+  {
+   "soru": "Sırtında çantasıyla düz yolda okula yürüyen öğrencinin çantaya uyguladığı kuvvet neden iş yapmaz?",
+   "secenekler": [
+    "Çanta çok hafif olduğu için",
+    "Öğrenci yorulmadığı için",
+    "Çanta, kuvvetin doğrultusunda hareket etmediği için"
+   ],
+   "dogru": 2,
+   "ipucu": "Kuvvet yukarı, hareket ileri. Bu ikisi aynı doğrultuda mı?",
+   "aciklama": "Kuvvet yukarı doğrudur, çanta ise ileri doğru hareket eder. Doğrultular farklı olduğu için iş yapılmaz. (s. 61–62)"
+  },
+  {
+   "soru": "Kuvvet newton (N), yol metre (m) olarak alınırsa işin birimi nedir?",
+   "secenekler": [
+    "Joule (J)",
+    "Kilogram (kg)",
+    "Newton (N)"
+   ],
+   "dogru": 0,
+   "ipucu": "Birim, bir bilim insanının adını taşıyor.",
+   "aciklama": "İşin birimi joule'dür ve J ile gösterilir. (s. 62)"
+  },
+  {
+   "soru": "Fiziksel anlamda yapılan iş hangi iki şeyle doğru orantılıdır?",
+   "secenekler": [
+    "Cismin rengi ve sıcaklığı",
+    "Uygulanan kuvvet ve kuvvet doğrultusundaki yer değiştirme",
+    "Geçen süre ve yorgunluk"
+   ],
+   "dogru": 1,
+   "ipucu": "\"İşin Büyüklüğü\" kartını hatırla.",
+   "aciklama": "İş, uygulanan net kuvvet ve cismin bu kuvvet doğrultusundaki yer değiştirmesi ile doğru orantılıdır. (s. 62)"
+  },
+  {
+   "soru": "Ahmet kitap kolisini merdivenlerden yukarı çıkarıyor. Bu sırada fiziksel anlamda iş yapılır mı?",
+   "secenekler": [
+    "Hayır, çünkü koli ağırdır",
+    "Hayır, çünkü Ahmet yürüyor",
+    "Evet, çünkü koli yukarı doğru hareket ediyor"
+   ],
+   "dogru": 2,
+   "ipucu": "Ahmet koliye hangi yönde kuvvet uygular, koli hangi yöne gider?",
+   "aciklama": "Ahmet koliye yukarı doğru kuvvet uygular ve koli yukarı doğru yer değiştirir. Bu yüzden iş yapılır. (s. 63)"
+  },
+  {
+   "soru": "Eşit kütleli iki süt kutusundan biri 50 cm, diğeri 1 m yükseklikteki rafa kaldırılıyor. Hangisinde daha çok iş yapılır?",
+   "secenekler": [
+    "1 m yükseğe kaldırılanda",
+    "50 cm yükseğe kaldırılanda",
+    "İkisinde de eşit"
+   ],
+   "dogru": 0,
+   "ipucu": "Kuvvet aynı. Yol daha uzun olunca iş ne olur?",
+   "aciklama": "Kuvvet aynıyken yer değiştirme arttıkça iş de artar. 1 m yükseğe kaldırılan kutuda daha çok iş yapılır. (s. 62)"
+  },
+  {
+   "soru": "\"Fiziksel anlamda iş\" için hangisi doğrudur?",
+   "secenekler": [
+    "Günlük yaşamdaki iş kavramıyla tamamen aynıdır",
+    "Günlük yaşamdaki iş kavramından farklıdır",
+    "Yalnızca meslek sahipleri yapabilir"
+   ],
+   "dogru": 1,
+   "ipucu": "Bilim insanlarının tanımını hatırla.",
+   "aciklama": "Bilim insanlarının tanımladığı fiziksel anlamda iş, günlük yaşamdaki iş kavramından farklıdır. (s. 62)"
+  },
+  {
+   "soru": "Aynı kutuyu aynı mesafede önce az, sonra çok kuvvetle hareket ettiriyoruz. Hangisinde daha çok iş yapılır?",
+   "secenekler": [
+    "Az kuvvetle ittiğimizde",
+    "İkisinde de eşit",
+    "Çok kuvvetle ittiğimizde"
+   ],
+   "dogru": 2,
+   "ipucu": "Yol aynı. Kuvvet artınca iş ne olur?",
+   "aciklama": "İş, kuvvetle doğru orantılıdır. Yol aynıyken kuvvet artarsa iş de artar. (s. 62)"
+  },
+  {
+   "soru": "Halteri başının üstünde hareketsiz tutan sporcu için ne söylenebilir?",
+   "secenekler": [
+    "Halter yer değiştirmediği için iş yapmaz",
+    "Çok güç harcadığı için iş yapar",
+    "Kuvvet uygulamamaktadır"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Kuvvet Var, Hareket Yok\" kartını düşün.",
+   "aciklama": "Sporcu kuvvet uygular ama halter hareket etmez. Yer değiştirme olmadığı için fiziksel anlamda iş yapılmaz. (s. 62)"
+  }
+ ]
+}
