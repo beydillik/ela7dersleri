@@ -431,7 +431,7 @@
   }
 
   function setTab(t) {
-    tts.stop(); S.tab = t; store.set(key("sekme"), t);
+    tts.stop(); S.tab = t; store.set(key("sekme:" + S.konu), t); // sekme her konu için ayrı hatırlanır
     $$(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === t));
     const p = $("#panel");
     ({ ogren: renderOgren, bak: renderBak, tekrar: renderTekrar, test: renderTest })[t](p);
@@ -448,7 +448,7 @@
         <button class="tab" role="tab" data-tab="test">${ICON.test}Test</button></div></section>
       <div class="panel" id="panel"></div>`;
     $$(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
-    setTab(store.get(key("sekme"), "ogren"));
+    setTab(store.get(key("sekme:" + S.konu), "ogren")); // hiç açılmamış konu Öğren'den başlar
     S.onKonu && S.onKonu();
   }
 
