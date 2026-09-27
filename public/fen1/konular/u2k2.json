@@ -1,0 +1,330 @@
+{
+ "id": "u2k2",
+ "unite": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+ "baslik": "Enerji ve Kinetik Enerji",
+ "sayfalar": "s. 64–67",
+ "giris": "Önceki konuda fiziksel anlamda işi öğrendik. İş yapabilmek için enerji gerekir. Bu konuda enerjinin ne olduğunu, hangi şekillerde karşımıza çıktığını ve hareket eden cisimlerin enerjisini, yani kinetik enerjiyi öğreneceğiz. Çizimlerde mavi ok hareketi ve hızı gösteriyor.",
+ "kavramlar": [
+  {
+   "ad": "Enerji",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='28' y='34' width='56' height='44' rx='6' fill='none' stroke='#ffd166' stroke-width='4'/><rect x='84' y='48' width='7' height='16' rx='2' fill='#ffd166'/><polygon points='62,40 44,60 56,60 50,74 70,52 58,52 64,40' fill='#ffd166'/><text x='60' y='102' font-size='12' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif' >iş yapabilme</text></svg>",
+   "aciklama": "Enerji, iş yapabilme yeteneği olarak tanımlanır. İş yapabilmek için enerji gerekir.",
+   "ek": "Tahta blokları üst üste dizen çocuk da, el arabasıyla çiçek taşıyan adam da fiziksel anlamda iş yapar. Bunun için enerjiye ihtiyaçları vardır.",
+   "akilda": "İş yapabilme yeteneği",
+   "soru": {
+    "soru": "Enerji nasıl tanımlanır?",
+    "secenekler": [
+     "İş yapabilme yeteneği",
+     "Bir cismin rengi",
+     "Bir cismin boyu"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın ilk cümlesinde tanım var.",
+    "aciklama": "Enerji, iş yapabilme yeteneği olarak tanımlanır. (s. 64)"
+   }
+  },
+  {
+   "ad": "Joule",
+   "renk": "#8ee3d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='52' r='30' fill='#8ee3d6'/><text x='60' y='65' font-size='36' fill='#1b2340' text-anchor='middle' font-family='sans-serif' font-weight='700'>J</text><text x='60' y='102' font-size='13' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif' >joule (jul)</text></svg>",
+   "aciklama": "Enerjinin birimi de işin birimi gibi joule'dür.",
+   "ek": "Joule \"jul\" diye okunur ve J harfiyle gösterilir. İşi ve enerjiyi aynı birimle ölçeriz.",
+   "akilda": "İş ve enerji: joule",
+   "soru": {
+    "soru": "Enerjinin birimi nedir?",
+    "secenekler": [
+     "Newton",
+     "Joule",
+     "Metre"
+    ],
+    "dogru": 1,
+    "ipucu": "Kart, enerjinin birimini işin birimiyle karşılaştırıyor.",
+    "aciklama": "Enerjinin birimi de işin birimi gibi joule'dür. (s. 64)"
+   }
+  },
+  {
+   "ad": "Enerjinin Farklı Şekilleri",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='32' cy='34' r='11' fill='#ffd166'/><g stroke='#ffd166' stroke-width='3' stroke-linecap='round'><line x1='32' y1='15' x2='32' y2='19'/><line x1='32' y1='49' x2='32' y2='53'/><line x1='13' y1='34' x2='17' y2='34'/><line x1='47' y1='34' x2='51' y2='34'/></g><circle cx='88' cy='32' r='12' fill='#fff3b0'/><rect x='83' y='43' width='10' height='9' rx='2' fill='#8a93b8'/><g stroke='#fff3b0' stroke-width='2' stroke-linecap='round'><line x1='70' y1='26' x2='66' y2='24'/><line x1='106' y1='26' x2='110' y2='24'/><line x1='88' y1='14' x2='88' y2='10'/></g><path d='M14 80 q20 -10 40 0 t36 0' stroke='#8ee3d6' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M20 96 q16 -7 32 0' stroke='#8ee3d6' stroke-width='3' fill='none' stroke-linecap='round'/><ellipse cx='98' cy='76' rx='8' ry='4' fill='#06d6a0' transform='rotate(25 98 76)'/><ellipse cx='84' cy='96' rx='8' ry='4' fill='#06d6a0' transform='rotate(-30 84 96)'/><text x='32' y='66' font-size='10' fill='#ffd166' text-anchor='middle' font-family='sans-serif' >ısı</text><text x='88' y='66' font-size='10' fill='#fff3b0' text-anchor='middle' font-family='sans-serif' >ışık</text></svg>",
+   "aciklama": "Enerji çok farklı şekillerde karşımıza çıkar: Güneş'in Dünya'yı ısıtması, lambanın etrafı aydınlatması, rüzgârın yaprakları savurması gibi.",
+   "ek": "Günlük hayatta enerji; potansiyel, kinetik, ışık, ısı, elektrik enerjisi gibi farklı şekillerde karşımıza çıkar.",
+   "akilda": "Enerjinin birçok şekli var",
+   "soru": {
+    "soru": "Hangisi kitapta sayılan enerji çeşitlerinden biridir?",
+    "secenekler": [
+     "Renk enerjisi",
+     "Şekil enerjisi",
+     "Işık enerjisi"
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki lamba örneğini düşün: Lamba etrafı ne yapıyor?",
+    "aciklama": "Işık enerjisi, günlük hayatta karşılaştığımız enerji çeşitlerinden biridir. (s. 64)"
+   }
+  },
+  {
+   "ad": "Kinetik Enerji",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='98' x2='110' y2='98' stroke='#8a93b8' stroke-width='2'/><circle cx='74' cy='78' r='20' fill='#ff7a33'/><path d='M54 78h40M74 58v40' stroke='#b3541e' stroke-width='2'/><g stroke='#4cc9f0' stroke-width='3' stroke-linecap='round'><line x1='20' y1='68' x2='42' y2='68'/><line x1='12' y1='78' x2='46' y2='78'/><line x1='20' y1='88' x2='42' y2='88'/></g><line x1='40' y1='36' x2='90' y2='36' stroke='#4cc9f0' stroke-width='4' stroke-linecap='round'/><polygon points='100,36 90,30 90,42' fill='#4cc9f0'/><text x='70' y='24' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif' >hareket</text></svg>",
+   "aciklama": "Cismin hareketinden dolayı sahip olduğu enerjiye kinetik enerji denir.",
+   "ek": "Kinetik enerjiye hareket enerjisi de denir. Parkta bisiklet süren çocuk ve denizde ilerleyen tekne kinetik enerjiye sahiptir.",
+   "akilda": "Hareket eden cismin enerjisi",
+   "soru": {
+    "soru": "Hangisi kinetik enerjiye sahiptir?",
+    "secenekler": [
+     "Rafta duran kitap",
+     "Denizde ilerleyen tekne",
+     "Masada duran vazo"
+    ],
+    "dogru": 1,
+    "ipucu": "Kinetik enerji hareketle ilgilidir. Hangisi hareket ediyor?",
+    "aciklama": "Denizde ilerleyen tekne hareket ettiği için kinetik enerjiye sahiptir. (s. 64, 66)"
+   }
+  },
+  {
+   "ad": "Kütle ve Kinetik Enerji",
+   "renk": "#c77dff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='36' r='13' fill='#ff7a33'/><path d='M13 36h26M26 23v26' stroke='#b3541e' stroke-width='2'/><line x1='48' y1='36' x2='86' y2='36' stroke='#4cc9f0' stroke-width='4' stroke-linecap='round'/><polygon points='96,36 86,30 86,42' fill='#4cc9f0'/><text x='26' y='62' font-size='11' fill='#ff7a33' text-anchor='middle' font-family='sans-serif' >ağır</text><circle cx='26' cy='84' r='13' fill='#f5f6fa' stroke='#8a93b8' stroke-width='2'/><line x1='48' y1='84' x2='86' y2='84' stroke='#4cc9f0' stroke-width='4' stroke-linecap='round'/><polygon points='96,84 86,78 86,90' fill='#4cc9f0'/><text x='26' y='110' font-size='11' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif' >hafif</text><text x='72' y='22' font-size='10' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif' >aynı hız</text></svg>",
+   "aciklama": "Kinetik enerji cismin kütlesine bağlıdır. Hızları aynıysa kütlesi büyük olan cismin kinetik enerjisi daha fazladır.",
+   "ek": "Yedikule oyununda aynı hızla atılan basketbol topu altı taş, plastik top ise iki taş devirdi. Basketbol topunun kütlesi daha büyük olduğu için kinetik enerjisi de daha fazladır.",
+   "akilda": "Kütle artarsa enerji artar",
+   "soru": {
+    "soru": "Aynı hızla atılan basketbol topu, plastik toptan daha çok taş devirdi. Nedeni nedir?",
+    "secenekler": [
+     "Basketbol topunun kütlesi daha büyük",
+     "Plastik topun rengi farklı",
+     "Basketbol topu daha yavaş"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta iki topun hangi özelliğinin farklı olduğu yazıyor.",
+    "aciklama": "Hızları aynı olduğunda kütlesi büyük olan basketbol topunun kinetik enerjisi daha fazladır. (s. 67)"
+   }
+  },
+  {
+   "ad": "Hız ve Kinetik Enerji",
+   "renk": "#ff5d73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='32' width='34' height='14' rx='4' fill='#ff5d73'/><rect x='20' y='23' width='18' height='11' rx='3' fill='#ff5d73'/><rect x='23' y='26' width='12' height='6' rx='1' fill='#1b2340'/><circle cx='20' cy='47' r='5' fill='#f5f6fa'/><circle cx='38' cy='47' r='5' fill='#f5f6fa'/><line x1='54' y1='38' x2='66' y2='38' stroke='#4cc9f0' stroke-width='4' stroke-linecap='round'/><polygon points='76,38 66,32 66,44' fill='#4cc9f0'/><text x='88' y='28' font-size='10' fill='#8a93b8' text-anchor='middle' font-family='sans-serif' >yavaş</text><rect x='12' y='80' width='34' height='14' rx='4' fill='#ff5d73'/><rect x='20' y='71' width='18' height='11' rx='3' fill='#ff5d73'/><rect x='23' y='74' width='12' height='6' rx='1' fill='#1b2340'/><circle cx='20' cy='95' r='5' fill='#f5f6fa'/><circle cx='38' cy='95' r='5' fill='#f5f6fa'/><line x1='54' y1='86' x2='98' y2='86' stroke='#4cc9f0' stroke-width='4' stroke-linecap='round'/><polygon points='108,86 98,80 98,92' fill='#4cc9f0'/><text x='82' y='72' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif' >hızlı</text></svg>",
+   "aciklama": "Kinetik enerji cismin hızına bağlıdır. Kütleleri aynıysa hızı fazla olan cismin kinetik enerjisi daha fazladır.",
+   "ek": "Lunaparkta kütleleri aynı olan Erdem ve Fatih özdeş araçlarla yarıştı. Daha hızlı giden Erdem'in aracı fren yapınca daha uzun mesafede durdu, çünkü kinetik enerjisi daha fazlaydı.",
+   "akilda": "Hız artarsa enerji artar",
+   "soru": {
+    "soru": "Erdem'in aracı frenden sonra neden daha uzun mesafede durdu?",
+    "secenekler": [
+     "Aracın rengi farklıydı",
+     "Hızı fazlaydı, kinetik enerjisi daha büyüktü",
+     "Kütlesi daha azdı"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta iki aracın hangi özelliğinin farklı olduğuna bak.",
+    "aciklama": "Kütleler aynıyken hızı fazla olan Erdem'in aracının kinetik enerjisi daha büyüktür. (s. 67)"
+   }
+  },
+  {
+   "ad": "Doğru Orantı",
+   "renk": "#06d6a0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='20' y1='74' x2='20' y2='46' stroke='#c77dff' stroke-width='4' stroke-linecap='round'/><polygon points='20,38 12,48 28,48' fill='#c77dff'/><text x='20' y='90' font-size='11' fill='#c77dff' text-anchor='middle' font-family='sans-serif' >kütle</text><text x='40' y='62' font-size='18' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif' >+</text><line x1='58' y1='74' x2='58' y2='46' stroke='#ff5d73' stroke-width='4' stroke-linecap='round'/><polygon points='58,38 50,48 66,48' fill='#ff5d73'/><text x='58' y='90' font-size='11' fill='#ff5d73' text-anchor='middle' font-family='sans-serif' >hız</text><text x='77' y='62' font-size='18' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif' >=</text><line x1='98' y1='82' x2='98' y2='31' stroke='#4cc9f0' stroke-width='6' stroke-linecap='round'/><polygon points='98,22 89,33 107,33' fill='#4cc9f0'/><text x='98' y='100' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif' >kinetik</text><text x='98' y='112' font-size='11' fill='#4cc9f0' text-anchor='middle' font-family='sans-serif' >enerji</text></svg>",
+   "aciklama": "Kinetik enerji kütle ve hızla doğru orantılıdır.",
+   "ek": "Kütlesi ve hızı artan cismin kinetik enerjisi artar. Kütlesi ve hızı azalan cismin kinetik enerjisi azalır.",
+   "akilda": "Kütle ve hız birlikte",
+   "soru": {
+    "soru": "Bir cismin hızı azalırsa kinetik enerjisi ne olur?",
+    "secenekler": [
+     "Artar",
+     "Hiç değişmez",
+     "Azalır"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ikinci cümlesinde \"azalan\" kelimesini bul.",
+    "aciklama": "Hızı azalan cismin kinetik enerjisi azalır. (s. 67)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kart neyi anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Enerji nedir?",
+     "uyeler": [
+      "Enerji",
+      "Joule",
+      "Enerjinin Farklı Şekilleri"
+     ]
+    },
+    {
+     "etiket": "Hareket enerjisi",
+     "uyeler": [
+      "Kinetik Enerji"
+     ]
+    },
+    {
+     "etiket": "Kinetik enerjiyi değiştiren",
+     "uyeler": [
+      "Kütle ve Kinetik Enerji",
+      "Hız ve Kinetik Enerji",
+      "Doğru Orantı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kinetik enerjiye hareket enerjisi de denir. (s. 64)",
+  "Tükenmez kalemlerin açılıp kapanmasını sağlayan küçük yaylar bile belirli bir enerjiye sahiptir. (s. 64)",
+  "Uçan bir kuş, potaya giden basketbol topu ve denizde yüzen balık hareket ettikleri için kinetik enerjiye sahiptir. (s. 64, 66)"
+ ],
+ "akildaKalsin": [
+  "Enerji, iş yapabilme yeteneğidir.",
+  "Enerjinin birimi, işin birimi gibi joule'dür.",
+  "Enerji ısı, ışık, elektrik, kinetik ve potansiyel enerji gibi farklı şekillerde karşımıza çıkar.",
+  "Cismin hareketinden dolayı sahip olduğu enerjiye kinetik enerji denir.",
+  "Kinetik enerji kütleye ve hıza bağlıdır.",
+  "Kütlesi ve hızı artan cismin kinetik enerjisi artar, azalan cismin azalır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Futbol maçında seyirciler mi, futbolcular mı daha çok enerji harcar?",
+   "cevap": "Futbolcular. Koşarken ve topa vururken sürekli kuvvet uygulayıp hareket ederler, yani daha çok iş yaparlar. İş yapabilmek için enerji gerekir. (s. 64)"
+  },
+  {
+   "soru": "Duran bir bisikletin kinetik enerjisi var mı?",
+   "cevap": "Yok. Kinetik enerji, cismin hareketinden dolayı sahip olduğu enerjidir. Bisiklet hareket etmeye başlayınca kinetik enerjisi olur, hızlandıkça da artar. (s. 66–67)"
+  },
+  {
+   "soru": "Barajda biriken su da enerjiye sahip mi?",
+   "cevap": "Evet. Ama bu enerji suyun hareketinden değil, bulunduğu yerden (konumundan) gelir. Buna potansiyel enerji denir; bir sonraki konuda öğreneceğiz. (s. 64–65)"
+  },
+  {
+   "soru": "Aynı hızla giden bir kamyon ile bir otomobilden hangisinin kinetik enerjisi daha fazladır?",
+   "cevap": "Kamyonun. Hızları aynıysa kütlesi büyük olanın kinetik enerjisi daha fazladır. (s. 67)"
+  },
+  {
+   "soru": "İş ile enerji neden aynı birimle, joule ile ölçülür?",
+   "cevap": "Enerji iş yapabilme yeteneğidir; iş yapmak için enerji harcanır. Bu yüzden ikisi birbirine çok yakındır ve kitapta ikisinin birimi de joule olarak verilir. (s. 64)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Günlük hayattan kinetik enerjiye sahip iki örnek yaz. Birinin kinetik enerjisini nasıl artırabileceğini açıkla.",
+   "ornekCevap": "Bisiklet süren çocuk ve koşan köpek kinetik enerjiye sahiptir, çünkü hareket ediyorlar. Çocuk daha hızlı pedal çevirirse hızı artar, bu yüzden kinetik enerjisi de artar.",
+   "anahtarlar": [
+    "hareket",
+    "hız",
+    "kütle",
+    "art"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "İş yapabilmek için ne gerekir?",
+   "secenekler": [
+    "Gölge",
+    "Enerji",
+    "Ses"
+   ],
+   "dogru": 1,
+   "ipucu": "Konunun ilk kartını hatırla.",
+   "aciklama": "İş yapabilmek için enerji gerekir. (s. 64)"
+  },
+  {
+   "soru": "Lambanın etrafı aydınlatması neye örnektir?",
+   "secenekler": [
+    "Enerjinin farklı şekillerde karşımıza çıkmasına",
+    "İşin birimine",
+    "Kütlenin azalmasına"
+   ],
+   "dogru": 0,
+   "ipucu": "Güneş, lamba ve rüzgâr örneklerinin verildiği kartı düşün.",
+   "aciklama": "Enerji; Güneş'in ısıtması, lambanın aydınlatması gibi farklı şekillerde karşımıza çıkar. (s. 64)"
+  },
+  {
+   "soru": "Hangisinin enerjisi hareketinden kaynaklanmaz?",
+   "secenekler": [
+    "Topa doğru koşan çocuklar",
+    "Virajı dönen yarış arabası",
+    "Barajda biriken su"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisi yerinde duruyor?",
+   "aciklama": "Barajda biriken su hareket etmez; enerjisi konumundan kaynaklanır. Diğer ikisi hareket ettiği için kinetik enerjiye sahiptir. (s. 65)"
+  },
+  {
+   "soru": "Kinetik enerji hangi iki etkene bağlıdır?",
+   "secenekler": [
+    "Renk ve şekil",
+    "Kütle ve hız",
+    "Sıcaklık ve ses"
+   ],
+   "dogru": 1,
+   "ipucu": "Yedikule oyunu ve lunapark yarışı örneklerini hatırla.",
+   "aciklama": "Kinetik enerji iki etkene bağlı olarak değişir: kütle ve hız. (s. 67)"
+  },
+  {
+   "soru": "Kütleleri aynı iki koşucudan daha hızlı koşanın kinetik enerjisi için ne söylenir?",
+   "secenekler": [
+    "Daha fazladır",
+    "Daha azdır",
+    "İkisininki eşittir"
+   ],
+   "dogru": 0,
+   "ipucu": "Erdem ile Fatih'in yarışını düşün.",
+   "aciklama": "Kütleler aynıysa hızı fazla olanın kinetik enerjisi daha fazladır. (s. 67)"
+  },
+  {
+   "soru": "Aynı hızla giden bir kamyon ile bir otomobilden hangisinin kinetik enerjisi daha fazladır?",
+   "secenekler": [
+    "Otomobilin",
+    "İkisininki eşittir",
+    "Kamyonun"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisinin kütlesi daha büyük?",
+   "aciklama": "Hızları aynıyken kütlesi büyük olan kamyonun kinetik enerjisi daha fazladır. (s. 67)"
+  },
+  {
+   "soru": "Yavaşlayan bir bisikletin kinetik enerjisi nasıl değişir?",
+   "secenekler": [
+    "Artar",
+    "Azalır",
+    "Değişmez"
+   ],
+   "dogru": 1,
+   "ipucu": "Hız azalınca ne olduğunu \"Doğru Orantı\" kartında bul.",
+   "aciklama": "Hızı azalan cismin kinetik enerjisi azalır. (s. 67)"
+  },
+  {
+   "soru": "Enerjinin birimi hangisidir?",
+   "secenekler": [
+    "Joule",
+    "Newton",
+    "Kilogram"
+   ],
+   "dogru": 0,
+   "ipucu": "İşin birimiyle aynı.",
+   "aciklama": "Enerjinin birimi de işin birimi gibi joule'dür. (s. 64)"
+  },
+  {
+   "soru": "Kinetik enerjinin diğer adı nedir?",
+   "secenekler": [
+    "Işık enerjisi",
+    "Isı enerjisi",
+    "Hareket enerjisi"
+   ],
+   "dogru": 2,
+   "ipucu": "Kinetik enerji neyden dolayı sahip olunan enerjidir?",
+   "aciklama": "Kitapta kinetik enerji \"kinetik (hareket) enerjisi\" diye geçer. (s. 64)"
+  },
+  {
+   "soru": "Kütlesi ve hızı artan bir cismin kinetik enerjisi ne olur?",
+   "secenekler": [
+    "Artar",
+    "Azalır",
+    "Sıfır olur"
+   ],
+   "dogru": 0,
+   "ipucu": "Doğru orantı: biri artarsa diğeri de...",
+   "aciklama": "Kütlesi ve hızı artan cismin kinetik enerjisi artar. (s. 67)"
+  }
+ ]
+}
