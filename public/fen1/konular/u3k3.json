@@ -1,0 +1,318 @@
+{
+  "id": "u3k3",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Kalp, Damarlar ve Kan Dolaşımı",
+  "sayfalar": "s. 101–106, 108",
+  "giris": "Koşunca kalbinin hızlı attığını hissetmişsindir. Kalbin, kanı durmadan vücudunda dolaştırır. Bu konuda dolaşım sistemini, damar çeşitlerini ve kanın izlediği iki yolu öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Dolaşım Sistemi",
+      "renk": "#e63946",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 22 C96 22 104 50 104 60' stroke='#ff6b6b' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M104 60 C104 92 80 100 60 100' stroke='#ff6b6b' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M60 100 C24 100 16 72 16 60' stroke='#5aa9e6' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M16 60 C16 30 34 22 60 22' stroke='#5aa9e6' stroke-width='5' fill='none' stroke-linecap='round'/><polygon points='100,66 104,73 108,66' fill='#ff6b6b'/><polygon points='12,56 16,49 20,56' fill='#5aa9e6'/><path transform='translate(60 58) scale(0.7)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><text x='60' y='14' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>damarlar</text><text x='60' y='114' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kan dolaşır</text><text x='60' y='62' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalp</text></svg>",
+      "aciklama": "Oksijeni, besinleri ve hormonları hücrelere taşıyan, atıkları hücrelerden uzaklaştıran sisteme dolaşım sistemi denir.",
+      "ek": "Dolaşım sistemi üç yapıdan oluşur: kan, kalp ve damarlar.",
+      "akilda": "Kan + kalp + damarlar",
+      "soru": {
+        "soru": "Dolaşım sistemi hangi yapılardan oluşur?",
+        "secenekler": [
+          "Kan, kalp ve damarlar",
+          "Mide, bağırsak ve karaciğer",
+          "Akciğer, burun ve soluk borusu"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartındaki 'üç yapı' cümlesine bak.",
+        "aciklama": "Dolaşım sistemi kan, kalp ve damarlardan oluşur. (s. 104)"
+      }
+    },
+    {
+      "ad": "Kalp",
+      "renk": "#ff6b6b",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path transform='translate(60 58) scale(1.15)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><path d='M22 40 l-8 -6 M22 58 h-10 M22 76 l-8 6' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><path d='M98 40 l8 -6 M98 58 h10 M98 76 l8 6' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><text x='60' y='62' font-size='11' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kas</text><text x='60' y='108' font-size='9' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>kasılır – gevşer</text><text x='60' y='18' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kanı pompalar</text></svg>",
+      "aciklama": "Kalp, özel kas dokusundan oluşan bir organdır. Kasılıp gevşeyerek kanın damarlarda dolaşmasını sağlar.",
+      "ek": "Elini göğsüne koyunca hissettiğin atış, kalbinin kasılıp gevşemesidir.",
+      "akilda": "Kalp = kan pompası",
+      "soru": {
+        "soru": "Kalp, kanı damarlarda nasıl dolaştırır?",
+        "secenekler": [
+          "Kanı süzerek",
+          "Kasılıp gevşeyerek",
+          "Kanı ısıtarak"
+        ],
+        "dogru": 1,
+        "ipucu": "Karttaki 'kasılıp …' ifadesini hatırla.",
+        "aciklama": "Kalp, kasılıp gevşeme hareketiyle kanın damarlarda dolaşmasını sağlar. (s. 104)"
+      }
+    },
+    {
+      "ad": "Atardamar",
+      "renk": "#ff6b6b",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path transform='translate(28 60) scale(0.55)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><rect x='44' y='52' width='54' height='16' rx='8' fill='#ff6b6b'/><polygon points='98,56 105,60 98,64' fill='#ff6b6b'/><path d='M58 60 h24' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/><polygon points='82,56 89,60 82,64' fill='#1b2340'/><text x='28' y='90' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalp</text><text x='80' y='90' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>vücuda</text><text x='60' y='24' font-size='10' fill='#ff6b6b' text-anchor='middle' font-family='sans-serif'>kalpten çıkar</text></svg>",
+      "aciklama": "Atardamarlar, kalpten çıkan kanı vücuda taşır.",
+      "ek": "Kalpten akciğerlere giden atardamar dışındaki bütün atardamarlar oksijence zengin kan taşır. Kanın atardamar duvarına yaptığı basıncı bileğinde parmaklarınla hissedebilirsin; buna nabız denir.",
+      "akilda": "Atardamar: kalpten çıkar",
+      "soru": {
+        "soru": "Kalpten çıkan kanı vücuda taşıyan damar hangisidir?",
+        "secenekler": [
+          "Toplardamar",
+          "Kılcal damar",
+          "Atardamar"
+        ],
+        "dogru": 2,
+        "ipucu": "Kalpten ÇIKAN kan hangi damara girer? Karttaki başlığa bak.",
+        "aciklama": "Atardamarlar kalpten çıkan kanı vücuda taşır. (s. 104)"
+      }
+    },
+    {
+      "ad": "Toplardamar",
+      "renk": "#5aa9e6",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path transform='translate(92 60) scale(0.55)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><rect x='14' y='52' width='58' height='16' rx='8' fill='#5aa9e6'/><path d='M24 60 h32' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/><polygon points='56,56 63,60 56,64' fill='#1b2340'/><text x='92' y='90' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalp</text><text x='36' y='90' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>vücuttan</text><text x='60' y='24' font-size='10' fill='#5aa9e6' text-anchor='middle' font-family='sans-serif'>kalbe getirir</text></svg>",
+      "aciklama": "Toplardamarlar, vücuda dağılan kanı toplayıp tekrar kalbe getirir.",
+      "ek": "Akciğerlerden kalbe gelen toplardamar dışındaki bütün toplardamarlar oksijeni az kan taşır.",
+      "akilda": "Toplardamar: kalbe getirir",
+      "soru": {
+        "soru": "Vücuttaki kanı toplayıp kalbe getiren damar hangisidir?",
+        "secenekler": [
+          "Toplardamar",
+          "Atardamar",
+          "Kılcal damar"
+        ],
+        "dogru": 0,
+        "ipucu": "Adı da ipucu: kanı 'toplar'.",
+        "aciklama": "Toplardamarlar vücuda dağılan kanı toplayarak tekrar kalbe getirir. (s. 104)"
+      }
+    },
+    {
+      "ad": "Kılcal Damar",
+      "renk": "#f5a3c7",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='36' width='24' height='46' rx='10' fill='#ff6b6b'/><rect x='86' y='36' width='24' height='46' rx='10' fill='#5aa9e6'/><path d='M34 44 C52 52 68 36 86 44' stroke='#f5a3c7' stroke-width='1.6' fill='none'/><path d='M34 54 C52 48 68 60 86 54' stroke='#f5a3c7' stroke-width='1.6' fill='none'/><path d='M34 64 C52 71 68 57 86 64' stroke='#f5a3c7' stroke-width='1.6' fill='none'/><path d='M34 74 C52 66 68 82 86 74' stroke='#f5a3c7' stroke-width='1.6' fill='none'/><circle cx='52' cy='94' r='6' fill='#52b788'/><circle cx='68' cy='94' r='6' fill='#52b788'/><path d='M50 84 v-4 M70 80 v4' stroke='#ffd166' stroke-width='2'/><text x='22' y='30' font-size='8' fill='#ff6b6b' text-anchor='middle' font-family='sans-serif'>atar</text><text x='98' y='30' font-size='8' fill='#5aa9e6' text-anchor='middle' font-family='sans-serif'>topla</text><text x='60' y='20' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>çok ince</text><text x='60' y='114' font-size='8' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>madde alışverişi</text></svg>",
+      "aciklama": "Kılcal damarlar atardamarlarla toplardamarları birbirine bağlar. Çok incedirler.",
+      "ek": "Kan ile hücreler arasındaki madde alışverişi kılcal damarlarda olur.",
+      "akilda": "İnce damar, madde alışverişi",
+      "soru": {
+        "soru": "Kan ile hücreler arasındaki madde alışverişi hangi damarlarda olur?",
+        "secenekler": [
+          "Atardamarlarda",
+          "Kılcal damarlarda",
+          "Toplardamarlarda"
+        ],
+        "dogru": 1,
+        "ipucu": "En ince damarları düşün.",
+        "aciklama": "Kılcal damarlar kan ile hücreler arasında madde alışverişini sağlar. (s. 104)"
+      }
+    },
+    {
+      "ad": "Küçük Kan Dolaşımı",
+      "renk": "#f4a6b8",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='36' cy='30' rx='16' ry='20' fill='#f4a6b8'/><ellipse cx='84' cy='30' rx='16' ry='20' fill='#f4a6b8'/><path transform='translate(60 86) scale(0.55)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><path d='M50 78 C40 70 36 64 36 54' stroke='#5aa9e6' stroke-width='5' fill='none' stroke-linecap='round'/><polygon points='32,56 36,49 40,56' fill='#5aa9e6'/><path d='M84 54 C84 64 80 70 70 76' stroke='#ff6b6b' stroke-width='5' fill='none' stroke-linecap='round'/><polygon points='72,70 65,74 72,78' fill='#ff6b6b'/><text x='60' y='62' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>akciğerler</text><text x='60' y='114' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalp → akciğer → kalp</text></svg>",
+      "aciklama": "Kalpten çıkan kanın akciğerlere gidip tekrar kalbe dönmesine küçük kan dolaşımı denir.",
+      "ek": "Oksijeni az kan, kalbin sağ tarafından atardamarla akciğerlere gider. Akciğerde oksijen alır, karbon dioksit verir. Oksijenlenen kan toplardamarla kalbin sol tarafına döner.",
+      "akilda": "Kalp → akciğer → kalp",
+      "soru": {
+        "soru": "Küçük kan dolaşımında kan kalpten nereye gider?",
+        "secenekler": [
+          "Tüm vücuda",
+          "Mideye",
+          "Akciğerlere"
+        ],
+        "dogru": 2,
+        "ipucu": "Karttaki çizimde kalbin üstündeki organa bak.",
+        "aciklama": "Küçük kan dolaşımında kan kalpten akciğerlere gider ve tekrar kalbe döner. (s. 105)"
+      }
+    },
+    {
+      "ad": "Büyük Kan Dolaşımı",
+      "renk": "#52b788",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path transform='translate(60 28) scale(0.55)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><rect x='24' y='72' width='72' height='26' rx='10' fill='#52b788'/><path d='M70 40 C84 48 86 56 86 66' stroke='#ff6b6b' stroke-width='5' fill='none' stroke-linecap='round'/><polygon points='82,64 86,71 90,64' fill='#ff6b6b'/><path d='M34 68 C34 56 38 48 48 42' stroke='#5aa9e6' stroke-width='5' fill='none' stroke-linecap='round'/><polygon points='46,40 53,44 46,48' fill='#5aa9e6'/><text x='60' y='89' font-size='10' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>tüm vücut</text><text x='60' y='114' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalp → vücut → kalp</text></svg>",
+      "aciklama": "Kalpten çıkan kanın tüm vücuda yayılıp tekrar kalbe dönmesine büyük kan dolaşımı denir.",
+      "ek": "Oksijence zengin kan, kalbin sol tarafından atardamarla vücuda gider. Hücrelerde oksijen azalır, karbon dioksit artar. Bu kan toplardamarlarla kalbin sağ tarafına döner.",
+      "akilda": "Kalp → vücut → kalp",
+      "soru": {
+        "soru": "Büyük kan dolaşımında vücuda giden kan nasıldır?",
+        "secenekler": [
+          "Oksijence zengin",
+          "Oksijeni az",
+          "Karbon dioksidi çok"
+        ],
+        "dogru": 0,
+        "ipucu": "Kan akciğerden oksijen alıp kalbe dönmüştü; şimdi vücuda gidiyor.",
+        "aciklama": "Büyük kan dolaşımında oksijen oranı yüksek kan kalbin sol tarafından tüm vücuda gönderilir. (s. 105)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Hangisi hangi gruba girer?",
+      "kutular": [
+        {
+          "etiket": "Kanı pompalayan organ",
+          "uyeler": [
+            "Kalp"
+          ]
+        },
+        {
+          "etiket": "Damar çeşitleri",
+          "uyeler": [
+            "Atardamar",
+            "Toplardamar",
+            "Kılcal Damar"
+          ]
+        },
+        {
+          "etiket": "Kanın izlediği yollar",
+          "uyeler": [
+            "Küçük Kan Dolaşımı",
+            "Büyük Kan Dolaşımı"
+          ]
+        }
+      ]
+    }
+  ],
+  "biliyorMusun": [
+    "Küçük kan dolaşımını ilk keşfeden bilim insanı İbnü'n Nefîs'tir (1213–1288). Batılı bilim insanları bu dolaşımdan ondan yıllar sonra bahsetmiştir. (s. 106)"
+  ],
+  "akildaKalsin": [
+    "Dolaşım sistemi kan, kalp ve damarlardan oluşur.",
+    "Kalp kasılıp gevşeyerek kanı pompalar.",
+    "Atardamar kanı kalpten götürür, toplardamar kalbe getirir.",
+    "Kılcal damarlarda kan ile hücreler madde alışverişi yapar.",
+    "Küçük dolaşım: kalp → akciğer → kalp.",
+    "Büyük dolaşım: kalp → vücut → kalp."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Bileğimde hissettiğim atış nedir?",
+      "cevap": "Buna nabız denir. Kalp kasılıp gevşedikçe kan atardamarın duvarına basınç yapar; bunu parmaklarınla hissedersin. Nabız, kalbin atış hızını gösterir. (s. 105)"
+    },
+    {
+      "soru": "Koşunca kalbim neden daha hızlı atıyor?",
+      "cevap": "Kitap, nabzın yaşa, cinsiyete ve yaptığımız etkinliğe göre değişebildiğini söyler. Koşmak gibi hareketli işlerde kalbin daha hızlı atar. (s. 105)"
+    },
+    {
+      "soru": "Nabız dakikada kaç kez atar?",
+      "cevap": "Yetişkinlerde dinlenirken genellikle dakikada 60–100 kez atar. (s. 105)"
+    },
+    {
+      "soru": "Bütün atardamarlar oksijenli kan mı taşır?",
+      "cevap": "Hayır. Kalpten akciğerlere giden atardamar oksijeni az kan taşır. Diğer bütün atardamarlar oksijence zengin kan taşır. (s. 104)"
+    },
+    {
+      "soru": "Küçük ve büyük dolaşım ayrı ayrı mı çalışır?",
+      "cevap": "Hayır, birlikte çalışırlar. Birlikte hücrelere oksijen ve besin götürür, karbon dioksit gibi atıkları uzaklaştırırlar. (s. 105)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Bir kan damlası kalpten çıkıyor. Önce akciğerlere, sonra tüm vücuda gidip yine kalbe dönüyor. Bu yolculuğu hangi damarlardan geçtiğini ve oksijeninin ne zaman arttığını, ne zaman azaldığını yazarak anlat.",
+      "ornekCevap": "Oksijeni az kan kalbin sağ tarafından atardamarla akciğerlere gider. Akciğerde oksijeni artar, karbon dioksiti azalır. Toplardamarla kalbin sol tarafına döner (küçük kan dolaşımı). Sonra atardamarla tüm vücuda gider. Hücrelerde oksijeni azalır, karbon dioksiti artar. Toplardamarlarla kalbin sağ tarafına döner (büyük kan dolaşımı).",
+      "anahtarlar": [
+        "akciğer",
+        "atardamar",
+        "toplardamar",
+        "oksijen",
+        "karbon dioksit",
+        "vücu"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "Hücrelerde oluşan atık maddeleri uzaklaştırmak hangi sistemin görevidir?",
+      "secenekler": [
+        "Dolaşım sistemi",
+        "İskelet sistemi",
+        "Duyu organları"
+      ],
+      "dogru": 0,
+      "ipucu": "Bu konunun adındaki sistemi düşün.",
+      "aciklama": "Dolaşım sistemi hücrelerde oluşan atık maddelerin vücuttan uzaklaştırılmasını sağlar. (s. 104)"
+    },
+    {
+      "soru": "Kalp hangi dokudan oluşur?",
+      "secenekler": [
+        "Kemik dokusu",
+        "Özel kas dokusu",
+        "Yağ dokusu"
+      ],
+      "dogru": 1,
+      "ipucu": "Kalp kasılıp gevşiyor; bunu hangi doku yapabilir?",
+      "aciklama": "Kalp, özel kas dokusundan oluşan bir organdır. (s. 104)"
+    },
+    {
+      "soru": "Atardamarlarla toplardamarları birbirine bağlayan damarlar hangileridir?",
+      "secenekler": [
+        "Atardamarlar",
+        "Toplardamarlar",
+        "Kılcal damarlar"
+      ],
+      "dogru": 2,
+      "ipucu": "İki damar çeşidi arasında köprü olan en ince damarlar.",
+      "aciklama": "Kılcal damarlar atardamarlarla toplardamarları birbirine bağlar. (s. 104)"
+    },
+    {
+      "soru": "Hangi toplardamar oksijence zengin kan taşır?",
+      "secenekler": [
+        "Akciğerlerden kalbe gelen toplardamar",
+        "Bacaktan kalbe gelen toplardamar",
+        "Kollardan kalbe gelen toplardamar"
+      ],
+      "dogru": 0,
+      "ipucu": "Kan oksijeni nerede alıyordu?",
+      "aciklama": "Akciğerlerden kalbe gelen toplardamar dışındaki toplardamarlar oksijeni az kan taşır; akciğerden gelen ise oksijenlenmiş kanı taşır. (s. 104–105)"
+    },
+    {
+      "soru": "Küçük kan dolaşımında akciğere ulaşan kanda ne olur?",
+      "secenekler": [
+        "Oksijeni azalır",
+        "Oksijeni artar, karbon dioksiti azalır",
+        "Hiçbir şey değişmez"
+      ],
+      "dogru": 1,
+      "ipucu": "Akciğer, nefesle aldığımız havanın gittiği yerdir.",
+      "aciklama": "Akciğerlere ulaşan kanın oksijen oranı artar, karbon dioksit oranı azalır. (s. 105)"
+    },
+    {
+      "soru": "Büyük kan dolaşımında vücuttan dönen kan kalbin hangi tarafına gelir?",
+      "secenekler": [
+        "Sol tarafına",
+        "Hiçbir tarafına gelmez",
+        "Sağ tarafına"
+      ],
+      "dogru": 2,
+      "ipucu": "Oksijeni az kan hangi taraftan akciğere gidiyordu?",
+      "aciklama": "Karbon dioksit oranı artan kan toplardamarlarla kalbin sağ tarafına gelir. (s. 105)"
+    },
+    {
+      "soru": "Kitaptaki oyunda kırmızı ve mavi not kâğıtları neyi temsil eder?",
+      "secenekler": [
+        "Kırmızı: oksijence zengin kan, mavi: oksijeni az kan",
+        "Kırmızı: kalp, mavi: akciğer",
+        "Kırmızı: atık, mavi: besin"
+      ],
+      "dogru": 0,
+      "ipucu": "Kırmızı kâğıt akciğerde alınıyor, mavi kâğıt kılcal damarlarda alınıyor.",
+      "aciklama": "Akciğerde oksijen alınır; kılcal damarlarda hücrelere verilir. Bu yüzden kırmızı kâğıt oksijence zengin kanı, mavi kâğıt oksijeni az kanı gösterir. (s. 105, 108)"
+    },
+    {
+      "soru": "\"Kalp → vücut → kalp\" yolu hangi dolaşımdır?",
+      "secenekler": [
+        "Küçük kan dolaşımı",
+        "Büyük kan dolaşımı",
+        "Sindirim"
+      ],
+      "dogru": 1,
+      "ipucu": "Kan tüm vücudu dolaşıyorsa yol kısa mı uzun mu?",
+      "aciklama": "Kalpten çıkan kanın vücuda yayılıp tekrar kalbe dönmesine büyük kan dolaşımı denir. (s. 105)"
+    },
+    {
+      "soru": "Nabız neyi gösterir?",
+      "secenekler": [
+        "Vücut sıcaklığını",
+        "Nefes sayısını",
+        "Kalp atış hızını"
+      ],
+      "dogru": 2,
+      "ipucu": "Nabzı kalp kasılıp gevşedikçe hissederiz.",
+      "aciklama": "Nabız kalp atış hızını gösterir. (s. 105)"
+    }
+  ]
+}

@@ -250,7 +250,7 @@
     h.push(`<section><div class="sec-title"><h3>Akılda Kalsın</h3></div><ul class="remember">${d.akildaKalsin.map(a => `<li>${esc(a)}</li>`).join("")}</ul></section>`);
     if (d.merakKutusu && d.merakKutusu.length) h.push(`<section><div class="sec-title"><h3>Merak Kutusu</h3><span>Soruya dokun, cevabı aç</span></div><div class="merak">` +
       d.merakKutusu.map(m => `<details><summary>${esc(m.soru)}</summary><p>${esc(m.cevap)}</p></details>`).join("") + `</div></section>`);
-    h.push(`<p class="src">Kaynak: MEB Fen Bilimleri 7. Sınıf Ders Kitabı, ${esc(d.sayfalar)}.</p>`);
+    h.push(`<p class="src">Kaynak: MEB Fen Bilimleri 7. Sınıf Ders Kitabı, ${esc(d.sayfalar)}.<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>`);
     root.innerHTML = h.join("");
   }
 
