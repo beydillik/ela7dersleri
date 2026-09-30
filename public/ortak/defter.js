@@ -480,21 +480,66 @@
       ${liste ? `<p>Bu ünitede öğreneceklerimiz:</p>${liste}` : ""}</div>`;
   }
 
+  // Başlık bandı deseni: varsayılan yıldızlar; ders.json "tema.desen" ile değişir (ör. "harita").
+  const DESEN = {
+    yildiz(g, w, h, rnd) {
+      for (let i = 0; i < Math.round(w / 6); i++) { g.globalAlpha = .35 + rnd() * .6; g.fillStyle = "#fff"; g.beginPath(); g.arc(rnd() * w, rnd() * h, rnd() * 1.4 + .3, 0, 7); g.fill(); }
+    },
+    harita(g, w, h, rnd) {
+      const cream = "245,236,215";
+      g.strokeStyle = `rgba(${cream},.07)`; g.lineWidth = 1; g.setLineDash([3, 5]);       // enlem-boylam ızgarası
+      for (let x = 40; x < w; x += 90) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); }
+      for (let y = 30; y < h; y += 45) { g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke(); }
+      g.setLineDash([]);
+      const n = Math.max(2, Math.round(w / 380));                                          // eş yükselti eğrileri
+      for (let c = 0; c < n; c++) {
+        const cx = (c + .3 + rnd() * .5) * w / n, cy = h * (.25 + rnd() * .6), p1 = rnd() * 6, p2 = rnd() * 6, base = 18 + rnd() * 16;
+        for (let k = 0; k < 6; k++) {
+          const R = base + k * 16; g.beginPath();
+          for (let a = 0; a <= 6.3; a += .08) { const rr = R * (1 + .16 * Math.sin(3 * a + p1) + .07 * Math.sin(5 * a + p2)); const x = cx + rr * 1.5 * Math.cos(a), y = cy + rr * .8 * Math.sin(a); a ? g.lineTo(x, y) : g.moveTo(x, y); }
+          g.closePath(); g.strokeStyle = `rgba(${cream},${.2 - k * .025})`; g.lineWidth = k === 0 ? 1.6 : 1.1; g.stroke();
+        }
+      }
+      g.strokeStyle = `rgba(233,178,74,${w > 640 ? .75 : .5})`; g.lineWidth = 2.2; g.setLineDash([2, 7]); g.lineCap = "round";   // kesikli rota
+      const pts = [[-10, h * .82], [w * .18, h * .55], [w * .38, h * .78], [w * .6, h * .4], [w + 10, h * .62]];
+      g.beginPath(); g.moveTo(...pts[0]);
+      for (let i = 1; i < pts.length; i++) { const [x0, y0] = pts[i - 1], [x1, y1] = pts[i]; g.quadraticCurveTo((x0 + x1) / 2, y0 - 22, x1, y1); }
+      g.stroke(); g.setLineDash([]);
+      g.fillStyle = "rgba(233,178,74,.9)";
+      pts.slice(1, -1).forEach(([x, y]) => { g.beginPath(); g.arc(x, y, 3.2, 0, 7); g.fill(); });
+      if (w > 640) {                                                                        // pusula gülü
+        const cx = w * .72, cy = h * .45, R = Math.min(38, h * .36); g.save(); g.translate(cx, cy); g.globalAlpha = .38;
+        g.strokeStyle = `rgb(${cream})`; g.lineWidth = 1.2; g.beginPath(); g.arc(0, 0, R * .78, 0, 7); g.stroke();
+        for (let i = 0; i < 8; i++) { const L = i % 2 ? R * .55 : R, s = i % 2 ? 3 : 5; g.rotate(Math.PI / 4); g.beginPath(); g.moveTo(0, -L); g.lineTo(s, 0); g.lineTo(-s, 0); g.closePath(); g.fillStyle = i === 7 ? "rgb(200,85,61)" : `rgb(${cream})`; g.fill(); }
+        g.restore();
+      }
+    }
+  };
   function drawStars() {
     const cv = $("#stars"); if (!cv) return;
     const r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
     cv.width = r.width * dpr; cv.height = r.height * dpr;
     const g = cv.getContext("2d"); g.scale(dpr, dpr);
     let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
-    for (let i = 0; i < Math.round(r.width / 6); i++) { g.globalAlpha = .35 + rnd() * .6; g.fillStyle = "#fff"; g.beginPath(); g.arc(rnd() * r.width, rnd() * r.height, rnd() * 1.4 + .3, 0, 7); g.fill(); }
+    const desen = DESEN[S.ders && S.ders.tema && S.ders.tema.desen] || DESEN.yildiz;
+    desen(g, r.width, r.height, rnd);
+  }
+
+  // Derse özgü tema: ders.json'da "tema": {"ad": "...", "desen": "...", "font": "<Google Fonts family parametresi>"}.
+  // Tema yoksa (ör. fen1) hiçbir şey değişmez.
+  function applyTema(t) {
+    if (!t || !t.ad) return;
+    document.documentElement.dataset.tema = t.ad;
+    if (t.font) { const l = document.createElement("link"); l.rel = "stylesheet"; l.href = `https://fonts.googleapis.com/css2?family=${t.font}&display=swap`; document.head.appendChild(l); }
   }
 
   async function boot() {
-    tts.init(); drawStars(); addEventListener("resize", drawStars);
+    tts.init(); addEventListener("resize", drawStars);
     try {
       const r = await fetch("ders.json", { cache: "no-cache" }); if (!r.ok) throw 0;
       S.ders = await r.json();
-    } catch (e) { $("#content").innerHTML = `<div class="notice">Ders bilgisi açılamadı. Sayfayı yenile.</div>`; return; }
+    } catch (e) { drawStars(); $("#content").innerHTML = `<div class="notice">Ders bilgisi açılamadı. Sayfayı yenile.</div>`; return; }
+    applyTema(S.ders.tema); drawStars();
     document.title = `${S.ders.ders} · ${S.ders.donem} — Ela'nın Defteri`;
     $("#dersBaslik").textContent = S.ders.ders;
     $("#dersEtiket").textContent = `${S.ders.sinif} · ${S.ders.donem}`;

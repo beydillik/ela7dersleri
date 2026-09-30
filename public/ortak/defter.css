@@ -272,3 +272,56 @@ textarea { width: 100%; min-height: 120px; border: 2px solid var(--line); border
   .bot-fab { padding: 6px; }
 }
 @media (prefers-reduced-motion: reduce) { .fcard .inner, .meter i, .progress .bar i { transition: none; } .mitem.shake, .chip.shake { animation: none; } }
+
+/* ============================================================
+   Derse özgü temalar — <html data-tema="…"> (ders.json → tema.ad)
+   Tema tanımlı olmayan dersler (fen1) yukarıdaki varsayılanı kullanır.
+   ============================================================ */
+
+/* Sosyal Bilgiler — "Atlas": parşömen zemin, harita yeşili bant, kiremit vurgular */
+:root[data-tema="sos"] {
+  --bg: #f6f0e2; --surface: #fffcf5; --surface-2: #efe5cf; --ink: #2e2519; --muted: #6c5d46;
+  --line: #e2d4b7; --night: #1f4a44; --night-ink: #f7efdc; --unit: #9c4a2c;
+  --accent: #c8553d; --accent-soft: #f7ddd1; --teal: #2f7d6d; --gold: #e0a93b; --gold-soft: #f8ebc8;
+  --ok: #2d7a3e; --ok-soft: #e2f0dc; --bad: #b8392b; --bad-soft: #f8dfd9; --hint: #7a5200;
+  --svgbg: #33291f;
+  --shadow: 0 1px 2px rgba(60,42,20,.07), 0 6px 18px rgba(60,42,20,.08);
+  --display: "Zilla Slab", "Rockwell", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-tema="sos"]:not([data-theme="light"]) {
+    --bg: #17140f; --surface: #221d16; --surface-2: #2c261d; --ink: #f2eadb; --muted: #bba98c;
+    --line: #3b3327; --night: #10302c; --unit: #b95d3b; --accent-soft: #3d241a; --gold-soft: #352b18;
+    --ok: #74c98a; --ok-soft: #1c3322; --bad: #ff8f80; --bad-soft: #3d1f1a; --hint: #e8b64f;
+    --svgbg: #2a2219;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
+  }
+}
+:root[data-tema="sos"][data-theme="dark"] {
+    --bg: #17140f; --surface: #221d16; --surface-2: #2c261d; --ink: #f2eadb; --muted: #bba98c;
+    --line: #3b3327; --night: #10302c; --unit: #b95d3b; --accent-soft: #3d241a; --gold-soft: #352b18;
+    --ok: #74c98a; --ok-soft: #1c3322; --bad: #ff8f80; --bad-soft: #3d1f1a; --hint: #e8b64f;
+    --svgbg: #2a2219;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
+}
+/* Kâğıt dokusu: çok hafif enlem-boylam ızgarası */
+[data-tema="sos"] body {
+  background-color: var(--bg);
+  background-image: linear-gradient(to right, rgba(156,74,44,.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(156,74,44,.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+[data-tema="sos"] h1, [data-tema="sos"] h2, [data-tema="sos"] h3, [data-tema="sos"] .front .fname, [data-tema="sos"] .back .bigk { font-weight: 700; letter-spacing: .005em; }
+[data-tema="sos"] .masthead { border-bottom: 4px solid var(--gold); }
+[data-tema="sos"] .masthead::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px;
+  background: repeating-linear-gradient(90deg, var(--night-ink) 0 14px, transparent 14px 28px); opacity: .55; }
+[data-tema="sos"] .head-btn[aria-pressed="true"] { color: #2e2519; }
+[data-tema="sos"] .topics { box-shadow: 0 2px 8px rgba(60,42,20,.08); }
+/* Konu numaraları: haritadaki durak işareti */
+[data-tema="sos"] .topic .num { border: 2px dashed var(--line); }
+[data-tema="sos"] .topic[aria-current="true"] .num { border: 2px solid var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+/* Bilgi kartı: haritanın çift çizgili çerçevesi */
+[data-tema="sos"] .stage { border: 1px solid var(--line); outline: 1px solid var(--line); outline-offset: -7px; }
+[data-tema="sos"] .facts { background: var(--night); background-image: radial-gradient(circle at 92% 18%, rgba(224,169,59,.18) 0 28px, transparent 29px); }
+/* Kavram çizimlerinin zemini temaya uysun (SVG'deki ilk rect) */
+[data-tema="sos"] svg[viewBox="0 0 120 120"] > rect:first-child { fill: var(--svgbg); }
+[data-tema="sos"] .bot-fab { box-shadow: 0 8px 24px rgba(31,74,68,.4); }
