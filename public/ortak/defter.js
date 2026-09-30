@@ -356,7 +356,7 @@
     const b = S.ders.bot; if (!b) return;
     const hist = {};
     const fab = document.createElement("button");
-    fab.className = "bot-fab"; fab.innerHTML = `${b.svg}<span>${esc(b.ad)}'a sor</span>`;
+    fab.className = "bot-fab"; fab.innerHTML = `${b.svg}<span>${esc(b.dugme || b.ad + "'a sor")}</span>`;
     const panel = document.createElement("section");
     panel.className = "bot-panel"; panel.hidden = true; panel.setAttribute("aria-label", b.ad);
     panel.innerHTML = `<div class="bot-head">${b.svg}<div class="t"><b>${esc(b.ad)}</b><small>${esc(S.ders.ders)} robotu</small></div><button aria-label="Kapat" id="botClose">×</button></div>

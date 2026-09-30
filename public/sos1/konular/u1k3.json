@@ -1,0 +1,289 @@
+{
+ "id": "u1k3",
+ "unite": "1. Öğrenme Alanı: Birlikte Yaşamak",
+ "baslik": "İletişim Engelleri ve Olumlu İletişim",
+ "sayfalar": "s. 22–29",
+ "giris": "Bazen iletişim iyi gitmez ve insanlar birbirini yanlış anlar. Bu konuda iletişimi zorlaştıran engelleri öğreneceğiz: günlük hayatta ve dijital ortamda. Sen dilini tanıyacağız. Sonra sevgi ve saygıya dayanan barışçıl iletişimi göreceğiz.",
+ "kavramlar": [
+  {
+   "ad": "İletişim Çatışması",
+   "renk": "#ff5c7a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='30' cy='62' r='18' fill='#f2c14e'/><circle cx='24' cy='58' r='2.6' fill='#1b2340'/><circle cx='36' cy='58' r='2.6' fill='#1b2340'/><path d='M20 51l7 3M40 51l-7 3' stroke='#1b2340' stroke-width='2.6' stroke-linecap='round'/><path d='M23 71q7-6 14 0' stroke='#1b2340' stroke-width='2.8' fill='none' stroke-linecap='round'/><circle cx='90' cy='62' r='18' fill='#8ec5ff'/><circle cx='84' cy='58' r='2.6' fill='#1b2340'/><circle cx='96' cy='58' r='2.6' fill='#1b2340'/><path d='M80 51l7 3M100 51l-7 3' stroke='#1b2340' stroke-width='2.6' stroke-linecap='round'/><path d='M83 71q7-6 14 0' stroke='#1b2340' stroke-width='2.8' fill='none' stroke-linecap='round'/><path d='M62 34l-10 18h10l-8 20 18-26H62l8-12z' fill='#ff5c7a'/><path d='M22 30l-6-8M34 28l2-9M86 28l-2-9M98 30l6-8' stroke='#ff5c7a' stroke-width='3.5' stroke-linecap='round'/><rect x='22' y='92' width='76' height='8' rx='4' fill='#ff5c7a' opacity='.35'/></svg>",
+   "aciklama": "Dikkatsizlik, sabırsızlık, empati kuramama ve düşünceyi yanlış ifade etme iletişim çatışmalarına yol açabilir.",
+   "ek": "Bu çatışmalar bazen kişinin kendi davranışından, bazen de konuştuğu kişiden kaynaklanır. Günlük yaşamda da dijital ortamda da görülür.",
+   "akilda": "Sabırsızlık kavga getirir",
+   "soru": {
+    "soru": "Hangisi iletişim çatışmasına yol açabilir?",
+    "secenekler": [
+     "Sabırlı olmak",
+     "Sabırsızlık",
+     "Empati kurmak"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartında çatışmaya yol açan nedenler sayılıyordu: dikkatsizlik, …, empati kuramama.",
+    "aciklama": "Kitaba göre dikkatsizlik, sabırsızlık, empati kuramama ve düşünceyi yanlış ifade etme iletişim çatışmalarına yol açabilir. (s. 22)"
+   }
+  },
+  {
+   "ad": "İletişim Engeli",
+   "renk": "#e8a33d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 26h32a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H26l-9 8v-8h-7a6 6 0 0 1-6-6V32a6 6 0 0 1 6-6z' fill='#f5f6fa'/><circle cx='18' cy='39' r='3' fill='#1b2340'/><circle cx='27' cy='39' r='3' fill='#1b2340'/><circle cx='36' cy='39' r='3' fill='#1b2340'/><g fill='#e8a33d' stroke='#1b2340' stroke-width='2'><rect x='46' y='40' width='14' height='12'/><rect x='60' y='40' width='14' height='12'/><rect x='53' y='52' width='14' height='12'/><rect x='46' y='64' width='14' height='12'/><rect x='60' y='64' width='14' height='12'/><rect x='53' y='76' width='14' height='12'/><rect x='46' y='88' width='14' height='12'/><rect x='60' y='88' width='14' height='12'/></g><path d='M78 66h30a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6h-7v8l-9-8H78a6 6 0 0 1-6-6V72a6 6 0 0 1 6-6z' fill='#8ec5ff'/><text x='93' y='86' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1b2340' text-anchor='middle'>?</text></svg>",
+   "aciklama": "İletişim engeli, duygu, düşünce ve bilgilerin doğru ve açık şekilde aktarılmasını zorlaştıran ya da tamamen engelleyen her şeydir.",
+   "ek": "Bu engeller tutum, davranış, sözlü ya da sözsüz olabilir. Mesaj gönderilirken, anlaşılırken ya da geri bildirim verilirken aksamaya yol açar. Böylece iletişim amacına ulaşamaz.",
+   "akilda": "Mesajın önündeki duvar",
+   "soru": {
+    "soru": "İletişim engeli ne yapar?",
+    "secenekler": [
+     "Mesajın doğru aktarılmasını zorlaştırır",
+     "İletişimi her zaman kolaylaştırır",
+     "Sadece yazılı mesajlarda görülür"
+    ],
+    "dogru": 0,
+    "ipucu": "Resimdeki duvarı düşün. Kartta engel, mesajın aktarılmasını ne yapıyordu?",
+    "aciklama": "İletişim engeli, duygu, düşünce ve bilgilerin doğru, açık ve etkili aktarılmasını zorlaştırır ya da tamamen engeller. (s. 22)"
+   }
+  },
+  {
+   "ad": "Günlük Hayatta Engeller",
+   "renk": "#8ec5ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='50' r='18' fill='#f2c14e'/><circle cx='28' cy='46' r='2.6' fill='#1b2340'/><circle cx='40' cy='46' r='2.6' fill='#1b2340'/><path d='M27 59q7-6 14 0' stroke='#1b2340' stroke-width='2.8' fill='none' stroke-linecap='round'/><path d='M8 88q26-16 52 0v20H8z' fill='#f2c14e' opacity='.55'/><circle cx='86' cy='50' r='18' fill='#8ec5ff'/><path d='M76 58h20' stroke='#1b2340' stroke-width='2.6' stroke-linecap='round'/><circle cx='80' cy='50' r='2.4' fill='#1b2340'/><circle cx='92' cy='50' r='2.4' fill='#1b2340'/><path d='M62 88q24-16 48 0v20H62z' fill='#8ec5ff' opacity='.55'/><rect x='78' y='70' width='16' height='26' rx='3' fill='#f5f6fa' stroke='#1b2340' stroke-width='2'/><rect x='81' y='74' width='10' height='15' fill='#b58cff'/><path d='M44 20h24a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H56l-6 6v-6h-6a5 5 0 0 1-5-5v-8a5 5 0 0 1 5-5z' fill='#f5f6fa'/><path d='M50 26l12 8M62 26l-12 8' stroke='#ff5c7a' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Konuşurken sürekli telefonu kontrol etmek, sözü kesmek, sık sık öğüt vermek ve alaycı konuşmak etkili iletişimi bozar.",
+   "ek": "Resimdeki gibi biri konuşurken diğeri telefona bakıyorsa konuşan kişi dinlenmediğini hisseder.",
+   "akilda": "Telefonu bırak, dinle",
+   "soru": {
+    "soru": "Arkadaşın sana bir şey anlatırken hangisi iletişimi bozar?",
+    "secenekler": [
+     "Göz teması kurmak",
+     "Sonuna kadar dinlemek",
+     "Sürekli telefonu kontrol etmek"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta etkili iletişimi bozan davranışlar sayılıyordu. İlki telefonla ilgiliydi.",
+    "aciklama": "Konuşurken sürekli telefonu kontrol etmek etkili iletişimi bozar. (s. 22)"
+   }
+  },
+  {
+   "ad": "Dijital Ortamda Engeller",
+   "renk": "#b58cff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='36' y='14' width='48' height='92' rx='9' fill='#f5f6fa'/><rect x='41' y='24' width='38' height='68' rx='3' fill='#2a3560'/><circle cx='60' cy='99' r='3' fill='#1b2340'/><path d='M45 32h24a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H53l-6 5v-5h-2a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4z' fill='#b58cff'/><text x='57' y='45' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#fff' text-anchor='middle'>?!</text><path d='M48 70a17 17 0 0 1 24 0' stroke='#8ec5ff' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M53 76a10 10 0 0 1 14 0' stroke='#8ec5ff' stroke-width='3.5' fill='none' stroke-linecap='round'/><circle cx='60' cy='82' r='2.8' fill='#8ec5ff'/><path d='M48 64l24 24' stroke='#ff5c7a' stroke-width='4' stroke-linecap='round'/><path d='M92 30l10-6M94 44h12M92 58l10 6' stroke='#f2c14e' stroke-width='3.5' stroke-linecap='round'/><path d='M16 38a14 14 0 1 1 10 20' stroke='#f2c14e' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M22 52l4 7 6-5' stroke='#f2c14e' stroke-width='3.5' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Dijital ortamda net olmayan mesajlar, bağlantının kopması ve dijital dili herkesin bilmemesi iletişimi engeller.",
+   "ek": "Kitap ayrıca dijital ortamda insanların daha kolay kırıcı olabildiğini ve iletinin geç gidebildiğini söyler.",
+   "akilda": "Mesajın net olsun",
+   "soru": {
+    "soru": "Hangisi dijital ortamda iletişimi engeller?",
+    "secenekler": [
+     "Mesajın net olmaması",
+     "Mesajı açık yazmak",
+     "Kibar bir dil kullanmak"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın ilk cümlesini hatırla: dijital ortamda … olmayan mesajlar.",
+    "aciklama": "Dijital ortamlarda mesajların net olmaması etkili iletişimi engeller. (s. 22)"
+   }
+  },
+  {
+   "ad": "Sen Dili",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M44 18h60a8 8 0 0 1 8 8v26a8 8 0 0 1-8 8H74l-14 12V60H44a8 8 0 0 1-8-8V26a8 8 0 0 1 8-8z' fill='#ff7a33'/><text x='74' y='48' font-family='Arial, sans-serif' font-size='22' font-weight='700' fill='#fff' text-anchor='middle'>SEN!</text><path d='M14 96h30l16-10a5 5 0 0 0-5-8l-11 6h-2V74a5 5 0 0 0-10 0v8H20a6 6 0 0 0-6 6z' fill='#f2c14e'/><path d='M60 84h40' stroke='#f2c14e' stroke-width='9' stroke-linecap='round'/><circle cx='100' cy='98' r='12' fill='#ff5c7a'/><path d='M95 93l10 10M105 93l-10 10' stroke='#fff' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Sen dili, karşıdaki kişiyi suçlayan, yargılayan ve eleştiren ifadelerle konuşmaktır.",
+   "ek": "Sen dili davranışa değil, doğrudan kişiye odaklanır. Benlik saygısını zedeler ve karşıdaki kişinin iletişimden kaçmasına neden olur. Örnek: \"Beni hiç dinlemiyorsun!\"",
+   "akilda": "Suçlar, kırar",
+   "soru": {
+    "soru": "Hangisi sen diline örnektir?",
+    "secenekler": [
+     "\"Sözüm kesilince üzülüyorum.\"",
+     "\"Odanı hiç toplamıyorsun!\"",
+     "\"İstersen birlikte bakalım.\""
+    ],
+    "dogru": 1,
+    "ipucu": "Sen dili karşıdakini suçlar. Hangi cümle birini suçluyor?",
+    "aciklama": "\"Odanı hiç toplamıyorsun, her yeri dağınık bırakıyorsun.\" cümlesi kitapta sen diline örnek olarak verilir. (s. 22)"
+   }
+  },
+  {
+   "ad": "Barışçıl İletişim",
+   "renk": "#6cc070",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='32' cy='54' r='18' fill='#f2c14e'/><circle cx='26' cy='50' r='2.6' fill='#1b2340'/><circle cx='38' cy='50' r='2.6' fill='#1b2340'/><path d='M25 59q7 7 14 0' stroke='#1b2340' stroke-width='2.8' fill='none' stroke-linecap='round'/><circle cx='88' cy='54' r='18' fill='#8ec5ff'/><circle cx='82' cy='50' r='2.6' fill='#1b2340'/><circle cx='94' cy='50' r='2.6' fill='#1b2340'/><path d='M81 59q7 7 14 0' stroke='#1b2340' stroke-width='2.8' fill='none' stroke-linecap='round'/><path d='M60 60c-8-5-12-9-12-14a6 6 0 0 1 12-3 6 6 0 0 1 12 3c0 5-4 9-12 14z' fill='#ff5c7a'/><path d='M16 96q14-12 28-4l10 4h12l10-4q14-8 28 4' stroke='#6cc070' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M44 22q16-12 32 0' stroke='#6cc070' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-dasharray='5 5'/><circle cx='60' cy='14' r='4' fill='#6cc070'/></svg>",
+   "aciklama": "Barışçıl iletişim, sevgi, saygı ve anlayışla konuşmaktır; kızmak yerine yapıcı sözler seçilir.",
+   "ek": "İletişim sadece sözcüklerle kurulmaz; bakışlar, ses tonu ve beden dili de önemlidir. Örnek: Kardeşin eşyana yanlışlıkla zarar verince kızmak yerine \"Bir dahaki sefere daha dikkatli ol, olur mu?\" demek.",
+   "akilda": "Sevgiyle, saygıyla konuş",
+   "soru": {
+    "soru": "Grup çalışmasında arkadaşın soruyu yanlış anladı. Hangisi barışçıl iletişime örnektir?",
+    "secenekler": [
+     "\"Hiçbir şeyi anlamıyorsun!\"",
+     "Hiç konuşmadan başka yere gitmek",
+     "\"İstersen birlikte tekrar bakalım.\""
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta kızmak yerine yapıcı sözler seçildiği yazıyordu. Hangi cümle yardım teklif ediyor?",
+    "aciklama": "Soruyu yanlış anlayan arkadaşa \"İstersen birlikte tekrar bakalım.\" demek barışçıl iletişime örnektir. (s. 23)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Karşımızdaki kişiyle göz teması kurmak ona \"Seni önemsiyorum ve dikkatle dinliyorum.\" mesajı verir. (s. 28)",
+  "Sevgi temelli bir iletişim, insanlar arasındaki ilişkilerin olumlu yönde gelişmesine ve iletişimin güçlenmesine katkıda bulunur. (s. 23)",
+  "Sınıfta etkili iletişim yöntemlerini kullanmak arkadaşlık ilişkilerini daha sağlam hâle getirir. (s. 22)"
+ ],
+ "akildaKalsin": [
+  "Dikkatsizlik, sabırsızlık ve empati kuramama çatışmaya yol açabilir.",
+  "İletişim engeli, mesajın doğru aktarılmasını zorlaştırır.",
+  "Telefonla uğraşmak, söz kesmek, alay etmek iletişimi bozar.",
+  "Dijitalde mesajın net olsun; kırıcı olma.",
+  "Sen dili suçlar ve kişiyi hedef alır; ben dili duyguyu anlatır.",
+  "Barışçıl iletişim sevgi, saygı ve anlayışa dayanır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Sen dili ile ben dili arasındaki fark ne?",
+   "cevap": "Sen dili karşıdakini suçlar, kişiyi hedef alır ve benlik saygısını zedeler (s. 22). Ben dili ise suçlamadan kendi duyguyu anlatır, davranışı merkeze alır ve benlik saygısını olumlu etkiler (s. 19)."
+  },
+  {
+   "soru": "Çatışma hep karşımdaki kişiden mi kaynaklanır?",
+   "cevap": "Hayır. Kitaba göre iletişim çatışmaları kimi zaman kişinin kendi davranışlarından, kimi zaman da iletişim kurduğu kişiden kaynaklanabilir. (s. 22)"
+  },
+  {
+   "soru": "Öğüt vermek de mi iletişimi bozar?",
+   "cevap": "Evet. Kitap, sık sık öğüt vermenin de sözü kesmek ve alaycı konuşmak gibi etkili iletişimi bozan davranışlardan olduğunu söyler. (s. 22)"
+  },
+  {
+   "soru": "Bağlantı koparsa neden iletişim engellenir?",
+   "cevap": "Ağ bağlantısı kopunca ileti geç gider. Mesaj zamanında ulaşmayınca iletişim aksar. (s. 22)"
+  },
+  {
+   "soru": "Ahmet ile Merve neden tartıştı?",
+   "cevap": "Birlikte proje hazırlayacaklardı. Ahmet bilgisayarda sunum hazırlamak, Merve ise resim ve afişlerle anlatmak istiyordu. İkisi de kendi fikrinin doğru olduğunu düşündüğü için tartışma başladı. (s. 26)"
+  },
+  {
+   "soru": "Olumlu iletişim bize ne kazandırır?",
+   "cevap": "İnsanları anlamaya çalışmak, saygıyla dinlemek ve barışçıl yaklaşmak bireye güven ve mutluluk verir. Sevgi, saygı, yardımlaşma ve dostluk gibi değerler gelişir. (s. 22)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Ahmet ile Merve'nin tartışması nasıl uzlaşmaya dönüşebilir? Onlara iki öneri yaz.",
+   "ornekCevap": "Önce birbirlerini sözünü kesmeden dinleyebilirler. Ben dilini kullanıp birbirlerini suçlamadan konuşabilirler. İki fikri birleştirip hem bilgisayar sunumu hem de resim ve afiş kullanabilirler.",
+   "anahtarlar": [
+    "dinle",
+    "saygı",
+    "ben dili",
+    "empati",
+    "birleştir",
+    "ortak",
+    "anla"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi iletişim çatışmalarına yol açan nedenlerden biri değildir?",
+   "secenekler": [
+    "Dikkatsizlik",
+    "Düşünceyi yanlış ifade etme",
+    "Saygıyla dinlemek"
+   ],
+   "dogru": 2,
+   "ipucu": "Çatışmanın nedenleri olumsuz davranışlardı. Hangisi olumlu bir davranış?",
+   "aciklama": "Dikkatsizlik, sabırsızlık, empati kuramama ve düşünceyi yanlış ifade etme çatışmaya yol açar. Saygıyla dinlemek ise etkili iletişim için önemlidir. (s. 22)"
+  },
+  {
+   "soru": "İletişim engelleri iletişimin hangi aşamalarında aksamaya neden olur?",
+   "secenekler": [
+    "Sadece mesaj yazılırken",
+    "Mesajın gönderilmesi, algılanması, yorumlanması ve geri bildirimde",
+    "Hiçbir aşamada"
+   ],
+   "dogru": 1,
+   "ipucu": "İletişim Engeli kartının ek bilgisini hatırla: gönderilirken, anlaşılırken ve …",
+   "aciklama": "İletişim engelleri mesajın gönderilmesi, algılanması, yorumlanması veya geri bildirim sürecinde aksamalara yol açar. (s. 22)"
+  },
+  {
+   "soru": "Sen anlatırken arkadaşın sık sık sözünü kesiyor. Bu davranış için ne söylenebilir?",
+   "secenekler": [
+    "Etkili iletişimi bozar",
+    "Etkin dinlemeye örnektir",
+    "Barışçıl iletişimdir"
+   ],
+   "dogru": 0,
+   "ipucu": "Günlük Hayatta Engeller kartındaki davranışları hatırla.",
+   "aciklama": "Karşıdaki kişinin sözünü kesmek etkili iletişimi bozan davranışlardandır. (s. 22)"
+  },
+  {
+   "soru": "Hangisi dijital ortamdaki iletişim engellerinden biridir?",
+   "secenekler": [
+    "Göz teması kurmak",
+    "Dijital dili herkesin bilmemesi",
+    "Sözünü kesmek"
+   ],
+   "dogru": 1,
+   "ipucu": "Soru dijital ortamı soruyor. Göz teması ve söz kesmek yüz yüze konuşmada olur.",
+   "aciklama": "Dijital dili herkesin bilmemesi, dijital ortamlarda etkili iletişimi engeller. (s. 22)"
+  },
+  {
+   "soru": "Sen dili neye odaklanır?",
+   "secenekler": [
+    "Kişinin davranışına",
+    "Konuşanın kendi duygusuna",
+    "Doğrudan kişiliğe"
+   ],
+   "dogru": 2,
+   "ipucu": "Sen Dili kartında \"davranışa değil, doğrudan …\" yazıyordu.",
+   "aciklama": "Sen dili davranış, tutum ya da duyguya odaklanmaz; doğrudan kişiliği hedef alır. (s. 22)"
+  },
+  {
+   "soru": "Sen dili ile kurulan cümleler genellikle neye yol açar?",
+   "secenekler": [
+    "Yanlış anlaşılma ve tartışmaya",
+    "Dostluğun güçlenmesine",
+    "Benlik saygısının artmasına"
+   ],
+   "dogru": 0,
+   "ipucu": "Sen dili suçlar ve kırar. Bunun sonucu olumlu mu olur?",
+   "aciklama": "Sen dili ile kurulan cümleler genellikle yanlış anlaşılmalara ve tartışmalara neden olur. (s. 22)"
+  },
+  {
+   "soru": "Kitaba göre iletişim hangileriyle kurulur?",
+   "secenekler": [
+    "Yalnızca sözcüklerle",
+    "Sözcükler, bakışlar, ses tonu ve beden diliyle",
+    "Yalnızca yazılı mesajlarla"
+   ],
+   "dogru": 1,
+   "ipucu": "Barışçıl İletişim kartında \"İletişim sadece sözcüklerle kurulmaz\" yazıyordu.",
+   "aciklama": "Etkili iletişim yalnızca sözcüklerle kurulmaz; bakışlar, ses tonu, beden dili ve davranışlar da iletişimin parçasıdır. (s. 23)"
+  },
+  {
+   "soru": "Kardeşin kitabını yanlışlıkla yırttı. Barışçıl iletişime uygun olan hangisi?",
+   "secenekler": [
+    "Hemen bağırmak",
+    "\"Bir dahaki sefere daha dikkatli ol, olur mu?\" demek",
+    "Onunla hiç konuşmamak"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartta kızmak yerine hangi cümlenin söylendiğini hatırla.",
+   "aciklama": "Kardeşin yanlışlıkla zarar verdiğinde kızmak yerine \"Bir dahaki sefere daha dikkatli ol, olur mu?\" demek barışçıl iletişime örnektir. (s. 23)"
+  },
+  {
+   "soru": "Etkili iletişimle hangi değerler gelişir?",
+   "secenekler": [
+    "Sevgi, saygı, yardımlaşma, dostluk",
+    "Kıskançlık ve öfke",
+    "Yalnızlık"
+   ],
+   "dogru": 0,
+   "ipucu": "Olumlu iletişim bize güven ve mutluluk verir. Hangi seçenekte olumlu değerler var?",
+   "aciklama": "Etkili iletişimle sevgi, saygı, yardımlaşma, dostluk gibi değerler gelişir. (s. 22)"
+  },
+  {
+   "soru": "Göz teması kurmak karşıdakine hangi mesajı verir?",
+   "secenekler": [
+    "\"Acele et, sıkıldım.\"",
+    "\"Seni dinlemiyorum.\"",
+    "\"Seni önemsiyorum ve dikkatle dinliyorum.\""
+   ],
+   "dogru": 2,
+   "ipucu": "Biliyor musun? bölümündeki göz teması bilgisini hatırla.",
+   "aciklama": "Göz teması kurmak \"Seni önemsiyorum ve dikkatle dinliyorum.\" mesajı verir. (s. 28)"
+  }
+ ]
+}
