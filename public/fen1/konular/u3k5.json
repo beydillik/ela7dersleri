@@ -1,0 +1,316 @@
+{
+  "id": "u3k5",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Kan ve Organ Bağışı",
+  "sayfalar": "s. 109–112, 116",
+  "giris": "Ameliyat olan ya da hasta olan birçok insan kana veya yeni bir organa ihtiyaç duyabilir. Bu konuda kan bağışını, organ bağışını ve bu bağışların toplum için neden önemli olduğunu öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Kan Bağışı",
+      "renk": "#e63946",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='34' y='20' width='52' height='66' rx='12' fill='#e63946'/><rect x='34' y='20' width='52' height='14' rx='6' fill='#f5f6fa'/><path d='M60 86 V104' stroke='#f5f6fa' stroke-width='3'/><path transform='translate(60 62) scale(0.45)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#f5f6fa'/><text x='60' y='114' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>gönüllü bağış</text></svg>",
+      "aciklama": "İhtiyaç duyulan kanın gönüllü ve sağlıklı kişiler tarafından verilmesine kan bağışı denir.",
+      "ek": "Ameliyatlar, uzun süren hastalıklar ve kan hastalıkları nedeniyle birçok insan kana ihtiyaç duyabilir. Kan bağışı için Türk Kızılaya veya hastanelerdeki ilgili birimlere başvurulabilir.",
+      "akilda": "Gönüllü, sağlıklı kişi verir",
+      "soru": {
+        "soru": "Kan bağışı kimler tarafından yapılır?",
+        "secenekler": [
+          "Yalnızca doktorlar",
+          "Gönüllü ve sağlıklı kişiler",
+          "Yalnızca hastalar"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartındaki tanımda iki özellik yazıyor.",
+        "aciklama": "İhtiyaç duyulan kanın gönüllü ve sağlıklı kişilerce verilmesine kan bağışı denir. (s. 111)"
+      }
+    },
+    {
+      "ad": "Kimler Kan Verebilir?",
+      "renk": "#f4a261",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='42' r='11' fill='#f4a261'/><path d='M18 92 Q18 58 34 58 Q50 58 50 92Z' fill='#f4a261'/><text x='84' y='40' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>18–65 yaş</text><text x='84' y='60' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>50 kg üstü</text><text x='84' y='80' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>sağlıklı</text><text x='60' y='110' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kadın 4 ay, erkek 3 ay</text></svg>",
+      "aciklama": "18–65 yaş arasında, 50 kilogramın üzerinde ve sağlıklı her birey kan bağışçısı olabilir.",
+      "ek": "Kadınlar dört ayda bir, erkekler üç ayda bir kan verebilir. 18 yaşından küçükler kan bağışı yapamaz.",
+      "akilda": "18–65 yaş, 50 kg üstü",
+      "soru": {
+        "soru": "Kan bağışı yapabilmek için en az kaç yaşında olmak gerekir?",
+        "secenekler": [
+          "18",
+          "12",
+          "15"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartındaki yaş aralığının ilk sayısına bak.",
+        "aciklama": "18–65 yaş aralığındaki sağlıklı bireyler kan bağışçısı olabilir. (s. 111)"
+      }
+    },
+    {
+      "ad": "Kan Bağışında 4 Adım",
+      "renk": "#2a9d8f",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M32 36 H88 V84 H32' stroke='#2a9d8f' stroke-width='3' fill='none'/><g fill='#2a9d8f'><circle cx='32' cy='36' r='11'/><circle cx='88' cy='36' r='11'/><circle cx='88' cy='84' r='11'/><circle cx='32' cy='84' r='11'/></g><text x='32' y='40' font-size='11' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>1</text><text x='88' y='40' font-size='11' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>2</text><text x='88' y='88' font-size='11' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>3</text><text x='32' y='88' font-size='11' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>4</text><text x='32' y='18' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kayıt</text><text x='88' y='18' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>muayene</text><text x='88' y='108' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kan alma</text><text x='32' y='108' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>ikram</text></svg>",
+      "aciklama": "Kan bağışı dört adımda yapılır: kayıt, doktor muayenesi, kan alma işlemi, ikram ve dinlenme.",
+      "ek": "Kayıtta Bağışçı Bilgi Formu doldurulur. Kan verdikten sonra 10–15 dakika dinlenilir; ikram edilen meyve suyu sıvı kaybını gidermeye yardım eder.",
+      "akilda": "Kayıt → muayene → kan → ikram",
+      "soru": {
+        "soru": "Kan bağışında ilk adım hangisidir?",
+        "secenekler": [
+          "Kan alma",
+          "İkram ve dinlenme",
+          "Kayıt"
+        ],
+        "dogru": 2,
+        "ipucu": "Adımlardaki 1 numaraya bak.",
+        "aciklama": "Kan bağışında ilk adım kayıttır; Bağışçı Bilgi Formu doldurulur. (s. 109)"
+      }
+    },
+    {
+      "ad": "Organ Bağışı",
+      "renk": "#9b5de5",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 70 Q22 98 60 98 Q98 98 98 70' stroke='#f5f6fa' stroke-width='5' fill='none' stroke-linecap='round'/><path transform='translate(60 56) scale(0.8)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#9b5de5'/><text x='60' y='114' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kendi isteğiyle</text></svg>",
+      "aciklama": "Organ bağışı, kişinin doku ve organlarının başka hastaların tedavisinde kullanılmasına izin vermesidir.",
+      "ek": "Kişi bu izni hayattayken kendi isteğiyle verebilir ya da yaşamı tıbben sona erdikten sonra ailesi rıza gösterebilir. Organ bağışı gönüllülük esasına dayanır.",
+      "akilda": "Gönüllü izin, başka hastaya umut",
+      "soru": {
+        "soru": "Organ bağışı neye dayanır?",
+        "secenekler": [
+          "Zorunluluğa",
+          "Gönüllülüğe",
+          "Para ödemeye"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartındaki 'kendi isteğiyle' ifadesini düşün.",
+        "aciklama": "Organ bağışı kişinin kendi iradesiyle verdiği izne, yani gönüllülüğe dayanır. (s. 111, 116)"
+      }
+    },
+    {
+      "ad": "Organ Nakli",
+      "renk": "#00b4d8",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='42' r='7' fill='#90e0ef'/><path d='M16 68 Q16 51 26 51 Q36 51 36 68Z' fill='#90e0ef'/><circle cx='94' cy='42' r='7' fill='#00b4d8'/><path d='M84 68 Q84 51 94 51 Q104 51 104 68Z' fill='#00b4d8'/><path d='M40 58 H80' stroke='#f5f6fa' stroke-width='3'/><polygon points='80,52 90,58 80,64' fill='#f5f6fa'/><path d='M60 72 C44 70 42 102 58 102 C66 102 64 92 68 88 C72 84 73 72 60 72Z' fill='#c1121f'/><text x='86' y='100' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>sağlam</text><text x='86' y='110' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>organ</text><text x='26' y='24' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>bağışçı</text><text x='94' y='24' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>hasta</text></svg>",
+      "aciklama": "Görevini yapamayan bir organın yerine sağlam bir organın ameliyatla yerleştirilmesine organ nakli denir.",
+      "ek": "Yeni organ canlı bir kişiden veya yaşamını yitirmiş birinden (kadavradan) alınabilir.",
+      "akilda": "Bozuk organa sağlam organ",
+      "soru": {
+        "soru": "Görevini yapamayan organın yerine ameliyatla sağlam bir organ yerleştirilmesine ne denir?",
+        "secenekler": [
+          "Organ nakli",
+          "Kan bağışı",
+          "Pıhtılaşma"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının adını düşün.",
+        "aciklama": "Görevini yapamayan organın yerine sağlam organın ameliyatla nakledilmesi organ nakli işlemidir. (s. 111)"
+      }
+    },
+    {
+      "ad": "Organ Bağışının Kuralları",
+      "renk": "#ffd166",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#ffd166'><circle cx='24' cy='34' r='10'/><circle cx='24' cy='62' r='10'/><circle cx='24' cy='90' r='10'/></g><text x='24' y='38' font-size='9' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>18</text><text x='24' y='66' font-size='10' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>1</text><text x='24' y='94' font-size='10' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>2</text><text x='40' y='38' font-size='9' fill='#f5f6fa' text-anchor='start' font-family='sans-serif'>yaş ve üstü</text><text x='40' y='66' font-size='9' fill='#f5f6fa' text-anchor='start' font-family='sans-serif'>kan, doku uyumu</text><text x='40' y='94' font-size='9' fill='#f5f6fa' text-anchor='start' font-family='sans-serif'>tıbbi aciliyet</text><text x='60' y='114' font-size='8' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>ayrım yapılmaz</text></svg>",
+      "aciklama": "18 yaşından büyük ve akli dengesi yerinde olan herkes organlarının tamamını veya bir bölümünü bağışlayabilir.",
+      "ek": "Organ verilirken önce kan ve doku uyumuna, sonra hastanın tıbbi aciliyetine bakılır. Cinsiyet, ırk, din ve maddi durum ayrımı yapılmaz.",
+      "akilda": "Önce uyum, sonra aciliyet",
+      "soru": {
+        "soru": "Bağışlanan organ bir hastaya verilirken önce neye bakılır?",
+        "secenekler": [
+          "Hastanın zengin olup olmadığına",
+          "Hastanın nerede yaşadığına",
+          "Kan ve doku uyumuna"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartındaki 'önce' kelimesinden sonra ne yazıyor?",
+        "aciklama": "Organ bağışında öncelikle kan ve doku uyumu, ardından tıbbi aciliyet göz önünde bulundurulur. (s. 112)"
+      }
+    },
+    {
+      "ad": "Toplumsal Dayanışma",
+      "renk": "#52b788",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='28' cy='58' r='7' fill='#52b788'/><path d='M18 84 Q18 67 28 67 Q38 67 38 84Z' fill='#52b788'/><circle cx='60' cy='58' r='7' fill='#95d5b2'/><path d='M50 84 Q50 67 60 67 Q70 67 70 84Z' fill='#95d5b2'/><circle cx='92' cy='58' r='7' fill='#52b788'/><path d='M82 84 Q82 67 92 67 Q102 67 102 84Z' fill='#52b788'/><path d='M38 76 H50 M70 76 H82' stroke='#f5f6fa' stroke-width='3'/><path transform='translate(60 30) scale(0.4)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><text x='60' y='108' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>birlikte güçlüyüz</text></svg>",
+      "aciklama": "Kan ve organ bağışı, toplumsal dayanışma ve yardımlaşmanın en güzel örneklerindendir.",
+      "ek": "Bu bağışlar insanların hayatını kurtarır ve yaşam kalitesini artırır. Düzenli kan bağışı toplumun kan ihtiyacının karşılanması için çok önemlidir.",
+      "akilda": "Bağış = yardımlaşma",
+      "soru": {
+        "soru": "Kan ve organ bağışı toplumda neyi güçlendirir?",
+        "secenekler": [
+          "Rekabeti",
+          "Dayanışma ve yardımlaşmayı",
+          "Yalnızlığı"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının adı sana yardım eder.",
+        "aciklama": "Kan ve organ bağışı toplumsal dayanışma ve yardımlaşmanın en güzel örneklerindendir. (s. 112)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Hangisi hangi bağışla ilgili?",
+      "kutular": [
+        {
+          "etiket": "Kan bağışı",
+          "uyeler": [
+            "Kan Bağışı",
+            "Kimler Kan Verebilir?",
+            "Kan Bağışında 4 Adım"
+          ]
+        },
+        {
+          "etiket": "Organ bağışı",
+          "uyeler": [
+            "Organ Bağışı",
+            "Organ Nakli",
+            "Organ Bağışının Kuralları"
+          ]
+        }
+      ]
+    }
+  ],
+  "biliyorMusun": [
+    "Türk Kızılay, ülkemizin ihtiyacı olan kanın tamamını gönüllü ve sürekli bağışçılardan karşılamayı hedefler. Bağışlanan kan testlerden geçirilir, saklanır ve hastanelere ulaştırılır. (s. 111)",
+    "Kornea, kemik iliği, deri, kalp kapağı, böbrek, karaciğer, akciğer ve kalp gibi birçok yapı ve organ bağışlanabilir. (s. 112)"
+  ],
+  "akildaKalsin": [
+    "Kan bağışı: gönüllü ve sağlıklı kişilerin kan vermesidir.",
+    "18–65 yaş arası, 50 kg üstü, sağlıklı kişiler kan verebilir.",
+    "Kan bağışı 4 adımdır: kayıt, muayene, kan alma, ikram ve dinlenme.",
+    "Organ bağışı gönüllüdür; 18 yaşından büyükler yapabilir.",
+    "Organ nakli: bozuk organın yerine sağlam organ takılmasıdır.",
+    "Bağış, toplumsal dayanışmanın güzel bir örneğidir."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Ben şimdi kan verebilir miyim?",
+      "cevap": "Hayır. 18 yaşından küçükler kan bağışı yapamaz. Ama ailendeki yetişkinleri kan bağışına teşvik edebilirsin; kitaptaki Özgür de annesinin kan vermesine sevinmişti. (s. 109, 116)"
+    },
+    {
+      "soru": "Kan verdikten sonra neden meyve suyu veriyorlar?",
+      "cevap": "Kan veren kişi 10–15 dakika dinlenir. Bu sırada içilen meyve suyu sıvı kaybının giderilmesine yardım eder. (s. 109)"
+    },
+    {
+      "soru": "Bağışlanan kan nereye gidiyor?",
+      "cevap": "Kan, modern laboratuvarlarda testlerden geçirilir, temiz ortamlarda saklanır ve ihtiyacı olan hastalar için hastanelere ulaştırılır. (s. 111)"
+    },
+    {
+      "soru": "Kan sadece Kızılaya mı verilir?",
+      "cevap": "Hayır. Kan bağışı için Türk Kızılaya ya da hastanelerdeki ilgili birimlere başvurulabilir. (s. 111)"
+    },
+    {
+      "soru": "Bağışlanan organ kime verilir?",
+      "cevap": "Önce kan ve doku uyumuna, sonra hastanın ne kadar acil olduğuna bakılır. Cinsiyet, ırk, din ya da para durumu ayrımı yapılmaz. (s. 112)"
+    },
+    {
+      "soru": "Bir kişi ne sıklıkla kan verebilir?",
+      "cevap": "Kadınlar dört ayda bir, erkekler üç ayda bir kan verebilir. (s. 111)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Kitaptaki Özgür'ün annesi kan bağışı yaptı. Bir hafta sonra 'Bağışladığınız kan, ihtiyaç sahibine ulaşmıştır.' mesajı geldi. Kan bağışı hem bağışlanan kişi hem de toplum için neden önemlidir? Yaz.",
+      "ornekCevap": "Kan, ameliyat olan ya da hasta olan birinin hayatını kurtarabilir. Düzenli kan bağışı toplumun kan ihtiyacını karşılar. Kan bağışı yardımlaşmayı ve toplumsal dayanışmayı güçlendirir.",
+      "anahtarlar": [
+        "hayat",
+        "ihtiyaç",
+        "yardım",
+        "dayanışma"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "Kan bağışı yapmak isteyen biri nereye başvurabilir?",
+      "secenekler": [
+        "Türk Kızılaya veya hastanelerdeki ilgili birimlere",
+        "Belediyeye",
+        "Okula"
+      ],
+      "dogru": 0,
+      "ipucu": "Kan Bağışı kartının 'ek' kısmını hatırla.",
+      "aciklama": "Kan bağışı için Türk Kızılaya veya hastanelerdeki ilgili birimlere başvurulabilir. (s. 111)"
+    },
+    {
+      "soru": "'Kan bağışı ülkemizde yalnızca Türk Kızılaya yapılır.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Yanlıştır, yalnızca eczaneye yapılır",
+        "Yanlıştır, hastanelere de yapılabilir"
+      ],
+      "dogru": 2,
+      "ipucu": "Başvurulabilecek yerler bir tane mi, iki tane mi?",
+      "aciklama": "Kan bağışı Türk Kızılaya veya hastanelerdeki ilgili birimlere yapılabilir; bu yüzden ifade yanlıştır. (s. 111, 116)"
+    },
+    {
+      "soru": "Hangisi kan bağışçısı olabilir?",
+      "secenekler": [
+        "40 kilogram olan 20 yaşındaki sağlıklı biri",
+        "60 kilogram olan 30 yaşındaki sağlıklı biri",
+        "14 yaşındaki bir öğrenci"
+      ],
+      "dogru": 1,
+      "ipucu": "Yaş, kilo ve sağlık şartlarının üçüne birden uyan kişiyi bul.",
+      "aciklama": "18–65 yaş arasında, 50 kg üzerinde ve sağlıklı olan kişi kan verebilir. (s. 111)"
+    },
+    {
+      "soru": "Kan verdikten sonra ne kadar dinlenmek faydalıdır?",
+      "secenekler": [
+        "10–15 dakika",
+        "1 hafta",
+        "Hiç gerek yok"
+      ],
+      "dogru": 0,
+      "ipucu": "4 adımın sonuncusunu, ikram ve dinlenmeyi hatırla.",
+      "aciklama": "Kan verdikten sonra 10–15 dakika dinlenmek faydalıdır. (s. 109)"
+    },
+    {
+      "soru": "Kan bağışında doktor muayenesinden sonraki adım hangisidir?",
+      "secenekler": [
+        "Kayıt",
+        "Organ nakli",
+        "Kan alma işlemi"
+      ],
+      "dogru": 2,
+      "ipucu": "Adımların sırası: kayıt, muayene, ..., ikram.",
+      "aciklama": "Muayeneden sonra şartlar uygunsa kan alma aşamasına geçilir. (s. 109)"
+    },
+    {
+      "soru": "Organ bağışı yapabilmek için kişinin hangi şartı taşıması gerekir?",
+      "secenekler": [
+        "Doktor olmak",
+        "18 yaşından büyük ve akli dengesi yerinde olmak",
+        "Sporcu olmak"
+      ],
+      "dogru": 1,
+      "ipucu": "Kuralların ilk maddesindeki yaşı hatırla.",
+      "aciklama": "18 yaşından büyük ve akli dengesi yerinde olan herkes organ bağışlayabilir. (s. 112)"
+    },
+    {
+      "soru": "Bağışlanan organlar ihtiyaç sahiplerine verilirken hangisine göre ayrım yapılmaz?",
+      "secenekler": [
+        "Maddi duruma",
+        "Kan ve doku uyumuna",
+        "Tıbbi aciliyete"
+      ],
+      "dogru": 0,
+      "ipucu": "Organ verilirken bakılan iki şey var; üçüncüsü ayrım yapılmayan şeylerden biri.",
+      "aciklama": "Organlar cinsiyet, ırk, din ve maddi durum ayrımı yapılmadan nakledilir. (s. 112)"
+    },
+    {
+      "soru": "Organ nakli için organ nereden alınabilir?",
+      "secenekler": [
+        "Yalnızca hayvanlardan",
+        "Yalnızca fabrikadan",
+        "Canlı bir kişiden veya kadavradan"
+      ],
+      "dogru": 2,
+      "ipucu": "Organ Nakli kartının 'ek' kısmını hatırla.",
+      "aciklama": "Organ nakli için canlı bir kişiden veya kadavradan alınan sağlam organ kullanılır. (s. 111)"
+    },
+    {
+      "soru": "Kan bağışı hangi duyguyu geliştirir?",
+      "secenekler": [
+        "Kıskançlık",
+        "Yardımlaşma",
+        "Korku"
+      ],
+      "dogru": 1,
+      "ipucu": "Toplumsal Dayanışma kartını düşün.",
+      "aciklama": "Kan bağışı yardımlaşma duygusunu geliştirir ve toplumsal dayanışmayı güçlendirir. (s. 111, 116)"
+    }
+  ]
+}

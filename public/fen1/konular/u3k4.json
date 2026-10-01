@@ -1,0 +1,268 @@
+{
+  "id": "u3k4",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Kanın Yapısı ve Görevleri",
+  "sayfalar": "s. 107",
+  "giris": "Kalbin pompaladığı kan, vücudunda hiç durmadan dolaşır. Peki kan neden kırmızı? İçinde neler var? Bu konuda kanın görevlerini ve kanı oluşturan bölümleri öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Kan",
+      "renk": "#e63946",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 16 C60 16 32 52 32 72 A28 28 0 0 0 88 72 C88 52 60 16 60 16Z' fill='#e63946'/><circle cx='50' cy='70' r='6' fill='#ff8a8a'/><circle cx='68' cy='80' r='5' fill='#ff8a8a'/><circle cx='64' cy='62' r='4' fill='#ff8a8a'/><text x='60' y='112' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalp pompalar</text></svg>",
+      "aciklama": "Kan; vücutta madde taşınmasından sorumlu, kalp tarafından pompalanan kırmızı renkli sıvıdır.",
+      "ek": "Kan, yaşamımızın devam etmesi için hayati önem taşır.",
+      "akilda": "Kalbin pompaladığı sıvı",
+      "soru": {
+        "soru": "Kanı vücuda pompalayan organ hangisidir?",
+        "secenekler": [
+          "Mide",
+          "Kalp",
+          "Akciğer"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartında kanı kimin pompaladığı yazıyor.",
+        "aciklama": "Kan, kalp tarafından pompalanan kırmızı renkli sıvıdır. (s. 107)"
+      }
+    },
+    {
+      "ad": "Kanın Görevleri",
+      "renk": "#f4a261",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path transform='translate(12 18) scale(0.8 0.8)' d='M60 16 C60 16 32 52 32 72 A28 28 0 0 0 88 72 C88 52 60 16 60 16Z' fill='#e63946'/><text x='60' y='82' font-size='10' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kan</text><text x='22' y='22' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>besin, O₂</text><text x='98' y='22' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>atık</text><text x='22' y='70' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>pıhtı</text><text x='100' y='70' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>mikrop</text><text x='60' y='112' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>vücut sıcaklığı</text><path d='M48 40 L32 28 M72 40 L90 28 M42 66 L34 66 M78 66 L86 66 M60 98 L60 104' stroke='#f4a261' stroke-width='2'/></svg>",
+      "aciklama": "Kan; hücrelere besin, oksijen ve hormon taşır, atıkları ilgili organlara götürür.",
+      "ek": "Ayrıca yaralanınca pıhtılaşarak kan kaybını önler, vücudu mikroplara karşı korur ve vücut sıcaklığını düzenler.",
+      "akilda": "Taşır, korur, ısıtır",
+      "soru": {
+        "soru": "Aşağıdakilerden hangisi kanın görevlerinden biridir?",
+        "secenekler": [
+          "Vücut sıcaklığını düzenlemek",
+          "Besinleri sindirmek",
+          "Ses çıkarmak"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ikinci cümlesinin sonuna bak.",
+        "aciklama": "Kan vücut sıcaklığını düzenler. (s. 107)"
+      }
+    },
+    {
+      "ad": "Plazma",
+      "renk": "#e9c46a",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='44' y='14' width='32' height='88' rx='14' fill='none' stroke='#f5f6fa' stroke-width='3'/><rect x='47' y='22' width='26' height='44' fill='#e9c46a'/><path d='M47 66 H73 V88 A13 13 0 0 1 47 88Z' fill='#e63946'/><text x='98' y='46' font-size='9' fill='#e9c46a' text-anchor='middle' font-family='sans-serif'>plazma</text><text x='98' y='56' font-size='8' fill='#e9c46a' text-anchor='middle' font-family='sans-serif'>(sıvı)</text><text x='98' y='84' font-size='9' fill='#ff8a8a' text-anchor='middle' font-family='sans-serif'>kan</text><text x='98' y='94' font-size='8' fill='#ff8a8a' text-anchor='middle' font-family='sans-serif'>hücreleri</text></svg>",
+      "aciklama": "Plazma, kanın sıvı kısmıdır. Büyük bir kısmı sudur.",
+      "ek": "Plazmanın içinde besinler, atık maddeler, enzimler ve hormonlar bulunur.",
+      "akilda": "Kanın sıvı kısmı",
+      "soru": {
+        "soru": "Kanın sıvı kısmına ne ad verilir?",
+        "secenekler": [
+          "Alyuvar",
+          "Akyuvar",
+          "Plazma"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartının adı sana yardım eder.",
+        "aciklama": "Plazma kanın sıvı kısmını oluşturur. (s. 107)"
+      }
+    },
+    {
+      "ad": "Alyuvar",
+      "renk": "#d62828",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='42' cy='52' rx='20' ry='14' fill='#d62828'/><ellipse cx='42' cy='52' rx='9' ry='5' fill='#9d0208'/><ellipse cx='78' cy='44' rx='20' ry='14' fill='#d62828'/><ellipse cx='78' cy='44' rx='9' ry='5' fill='#9d0208'/><ellipse cx='64' cy='80' rx='20' ry='14' fill='#d62828'/><ellipse cx='64' cy='80' rx='9' ry='5' fill='#9d0208'/><text x='60' y='16' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kırmızı renk</text><text x='60' y='112' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>O₂ ve CO₂ taşır</text></svg>",
+      "aciklama": "Alyuvarlar kana kırmızı rengi veren ve kanda en çok sayıda bulunan hücrelerdir.",
+      "ek": "Oksijen ve karbon dioksidi taşırlar. Onları vücudun kargo arabaları gibi düşünebilirsin.",
+      "akilda": "Kırmızı, en çok, taşıyıcı",
+      "soru": {
+        "soru": "Kana kırmızı rengini veren hücre hangisidir?",
+        "secenekler": [
+          "Akyuvar",
+          "Alyuvar",
+          "Kan pulcuğu"
+        ],
+        "dogru": 1,
+        "ipucu": "Adında 'al' yani kırmızı geçen hücreyi düşün.",
+        "aciklama": "Kana kırmızı rengi veren hücreler alyuvarlardır. (s. 107)"
+      }
+    },
+    {
+      "ad": "Akyuvar",
+      "renk": "#b8c0ff",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='54' cy='60' r='28' fill='#e0e4ff'/><circle cx='46' cy='54' r='8' fill='#7b6cd9'/><circle cx='58' cy='50' r='7' fill='#7b6cd9'/><circle cx='60' cy='64' r='8' fill='#7b6cd9'/><g fill='#52b788'><circle cx='96' cy='40' r='7'/><circle cx='98' cy='78' r='6'/></g><path d='M89 40 l-4 0 M96 33 l0 -4 M103 40 l4 0 M96 47 l0 4 M92 78 l-4 0 M104 78 l4 0' stroke='#52b788' stroke-width='2'/><text x='54' y='106' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>mikroplarla savaşır</text></svg>",
+      "aciklama": "Akyuvarlar beyaz kan hücreleridir. Vücudu mikroplara karşı savunurlar.",
+      "ek": "Kanda en az sayıda bulunan hücreler akyuvarlardır. Vücudunun bekçileri gibidirler.",
+      "akilda": "Beyaz, en az, savunucu",
+      "soru": {
+        "soru": "Vücudu mikroplara karşı savunan kan hücresi hangisidir?",
+        "secenekler": [
+          "Akyuvar",
+          "Alyuvar",
+          "Plazma"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartındaki 'beyaz kan hücreleri' cümlesini oku.",
+        "aciklama": "Akyuvarlar vücudun mikroplara karşı savunmasında görevlidir. (s. 107)"
+      }
+    },
+    {
+      "ad": "Kan Pulcukları",
+      "renk": "#ffd166",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 40 H50 M70 40 H110 M10 80 H110' stroke='#ff8a8a' stroke-width='4'/><rect x='10' y='42' width='100' height='36' fill='#e63946' opacity='0.35'/><g fill='#ffd166'><circle cx='54' cy='40' r='5'/><circle cx='62' cy='38' r='5'/><circle cx='66' cy='44' r='4'/><circle cx='58' cy='46' r='4'/></g><text x='60' y='26' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>yaralanan yer</text><text x='60' y='102' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>pıhtılaşıp tıkar</text></svg>",
+      "aciklama": "Kan pulcukları yaralanmalarda damarın iç yüzeyinde pıhtılaşır.",
+      "ek": "Zedelenen kısmı tıkayarak kan kaybını önlerler; tıpkı bir yamanın deliği kapatması gibi.",
+      "akilda": "Pıhtı yapar, kanamayı durdurur",
+      "soru": {
+        "soru": "Parmağını kestiğinde kanamanın durmasını sağlayan yapı hangisidir?",
+        "secenekler": [
+          "Alyuvarlar",
+          "Plazma",
+          "Kan pulcukları"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartında 'pıhtılaşır' kelimesini ara.",
+        "aciklama": "Kan pulcukları yaralanmalarda pıhtılaşarak kan kaybını önler. (s. 107)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Hangisi hangi gruba girer?",
+      "kutular": [
+        {
+          "etiket": "Kanın sıvı kısmı",
+          "uyeler": [
+            "Plazma"
+          ]
+        },
+        {
+          "etiket": "Kan hücreleri",
+          "uyeler": [
+            "Alyuvar",
+            "Akyuvar",
+            "Kan Pulcukları"
+          ]
+        }
+      ]
+    }
+  ],
+  "biliyorMusun": [
+    "William Harvey, 1628 yılında yazdığı kitapta kalpten çıkan kanın atardamarlarla vücuda gönderildiğini ve toplardamarlarla tekrar kalbe getirildiğini anlatmıştır. (s. 107)"
+  ],
+  "akildaKalsin": [
+    "Kan, kalbin pompaladığı ve maddeleri taşıyan kırmızı sıvıdır.",
+    "Kan; besin, oksijen ve hormon taşır, atıkları uzaklaştırır.",
+    "Kan; pıhtılaşır, mikroplara karşı korur, vücut sıcaklığını düzenler.",
+    "Kan = plazma + kan hücreleri.",
+    "Kan hücreleri: alyuvar, akyuvar, kan pulcukları.",
+    "Alyuvar en çok, akyuvar en az bulunan hücredir."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Kan neden kırmızı?",
+      "cevap": "Kana kırmızı rengini alyuvarlar verir. Alyuvarlar kanda en çok bulunan hücrelerdir. (s. 107)"
+    },
+    {
+      "soru": "Kanın içinde en çok ne var?",
+      "cevap": "Kanın sıvı kısmı olan plazmanın büyük bölümü sudur. Hücreler arasında en çok alyuvar bulunur. (s. 107)"
+    },
+    {
+      "soru": "Dizimi sıyırınca kanama neden kendiliğinden duruyor?",
+      "cevap": "Kan pulcukları yaralanan yerde damarın iç yüzeyinde pıhtılaşır ve zedelenen kısmı tıkar. Böylece kan kaybı durur. (s. 107)"
+    },
+    {
+      "soru": "Hasta olduğumda vücudumu kim korur?",
+      "cevap": "Akyuvarlar, yani beyaz kan hücreleri, vücudu mikroplara karşı savunur. (s. 107)"
+    },
+    {
+      "soru": "Oksijen kanda neyle taşınır?",
+      "cevap": "Oksijen ve karbon dioksidi alyuvarlar taşır. (s. 107)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Bisikletten düştün ve dizin kanadı. Kanının hangi bölümleri bu durumda sana yardım eder? Her birinin ne yaptığını yaz.",
+      "ornekCevap": "Kan pulcukları yaralanan yerde pıhtılaşır ve damarı tıkayarak kan kaybını durdurur. Akyuvarlar yaradan girebilecek mikroplara karşı vücudu savunur.",
+      "anahtarlar": [
+        "pulcuk",
+        "pıhtı",
+        "akyuvar",
+        "mikrop"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "Kan hangi iki bölümden oluşur?",
+      "secenekler": [
+        "Kalp ve damarlar",
+        "Plazma ve kan hücreleri",
+        "Su ve tuz"
+      ],
+      "dogru": 1,
+      "ipucu": "Kan 'sıvı kısım' ve 'hücreler' olarak ikiye ayrılır.",
+      "aciklama": "Kan, kan plazması ve kan hücrelerinden oluşur. (s. 107)"
+    },
+    {
+      "soru": "Kanda en az sayıda bulunan hücre hangisidir?",
+      "secenekler": [
+        "Akyuvar",
+        "Alyuvar",
+        "Kan pulcuğu"
+      ],
+      "dogru": 0,
+      "ipucu": "Beyaz kan hücrelerinin kartına bak.",
+      "aciklama": "Akyuvarlar kanda en az sayıda bulunan hücrelerdir. (s. 107)"
+    },
+    {
+      "soru": "Oksijen ve karbon dioksidi taşıyan kan hücresi hangisidir?",
+      "secenekler": [
+        "Akyuvar",
+        "Kan pulcuğu",
+        "Alyuvar"
+      ],
+      "dogru": 2,
+      "ipucu": "Kargo arabasına benzetilen hücreyi hatırla.",
+      "aciklama": "Alyuvarlar oksijen ve karbon dioksidin taşınmasında görevlidir. (s. 107)"
+    },
+    {
+      "soru": "Plazmanın büyük bir kısmı neden oluşur?",
+      "secenekler": [
+        "Kemikten",
+        "Sudan",
+        "Yağdan"
+      ],
+      "dogru": 1,
+      "ipucu": "Plazma kanın sıvı kısmıdır; sıvı kısmın çoğu nedir?",
+      "aciklama": "Kan plazmasının büyük bir miktarını su oluşturur. (s. 107)"
+    },
+    {
+      "soru": "Aşağıdakilerden hangisi kan hücresi değildir?",
+      "secenekler": [
+        "Plazma",
+        "Alyuvar",
+        "Kan pulcuğu"
+      ],
+      "dogru": 0,
+      "ipucu": "Kanın sıvı kısmının adı hangisi?",
+      "aciklama": "Plazma kanın sıvı kısmıdır; alyuvar, akyuvar ve kan pulcukları ise kan hücreleridir. (s. 107)"
+    },
+    {
+      "soru": "Kan, hücrelerde oluşan atık maddeleri ne yapar?",
+      "secenekler": [
+        "Hücrede biriktirir",
+        "Besine dönüştürür",
+        "İlgili organlara taşır"
+      ],
+      "dogru": 2,
+      "ipucu": "Kanın görevlerinden 'taşımak' ile ilgili olanı düşün.",
+      "aciklama": "Kan, hücrelerde oluşan atık maddeleri ilgili organlara taşır. (s. 107)"
+    },
+    {
+      "soru": "Akyuvarlar başka hangi adla anılır?",
+      "secenekler": [
+        "Kırmızı kan hücreleri",
+        "Beyaz kan hücreleri",
+        "Sarı kan hücreleri"
+      ],
+      "dogru": 1,
+      "ipucu": "Adındaki 'ak' kelimesi hangi rengi anlatır?",
+      "aciklama": "Beyaz kan hücreleri olan akyuvarlar vücudu mikroplara karşı savunur. (s. 107)"
+    }
+  ]
+}

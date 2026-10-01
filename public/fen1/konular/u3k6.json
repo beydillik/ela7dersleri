@@ -1,0 +1,279 @@
+{
+  "id": "u3k6",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Dolaşım Sisteminin Sağlığı",
+  "sayfalar": "s. 113–116",
+  "giris": "Kalbin ve damarların bir ömür boyu çalışır. Onları korumak senin elinde! Bu konuda dolaşım sistemine iyi gelen ve zarar veren alışkanlıkları öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Sağlıklı Dolaşım",
+      "renk": "#e63946",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path transform='translate(60 54) scale(0.9)' d='M0 28 C-40 0 -36 -28 -16 -28 C-8 -28 -2 -22 0 -16 C2 -22 8 -28 16 -28 C36 -28 40 0 0 28Z' fill='#e63946'/><path d='M12 98 H40 L48 84 L56 108 L64 92 H108' stroke='#52b788' stroke-width='3' fill='none' stroke-linejoin='round'/><path d='M48 52 L57 61 L74 42' stroke='#f5f6fa' stroke-width='5' fill='none' stroke-linecap='round'/></svg>",
+      "aciklama": "Dolaşım sistemi yaşamımız için hayati öneme sahiptir; onun sağlığı yaşam kalitemizi doğrudan etkiler.",
+      "ek": "Uyku düzeni, dengeli beslenme, sosyal ve sportif faaliyetler dolaşım sistemine iyi gelir. Teknoloji bağımlılığı ise zarar verir.",
+      "akilda": "Sağlıklı kalp, kaliteli yaşam",
+      "soru": {
+        "soru": "Aşağıdakilerden hangisi dolaşım sistemi sağlığına zarar verir?",
+        "secenekler": [
+          "Uyku düzeni",
+          "Teknoloji bağımlılığı",
+          "Dengeli beslenme"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının son cümlesine bak.",
+        "aciklama": "Teknoloji bağımlılığının dolaşım sistemi sağlığına olumsuz etkileri vardır. (s. 114)"
+      }
+    },
+    {
+      "ad": "Düzenli Uyku",
+      "renk": "#7b6cd9",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M54 24 A30 30 0 1 0 84 70 A24 24 0 1 1 54 24Z' fill='#ffd166'/><text x='86' y='34' font-size='12' fill='#b8c0ff' text-anchor='middle' font-family='sans-serif'>z</text><text x='96' y='24' font-size='10' fill='#b8c0ff' text-anchor='middle' font-family='sans-serif'>z</text><text x='60' y='108' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>çocuk: 8–10 saat</text></svg>",
+      "aciklama": "Vücudun dinlenmesi için çocukların günde 8–10 saat, yetişkinlerin 7–9 saat uyuması gerekir.",
+      "ek": "Düzenli uyku, dolaşım sisteminin sağlığı için çok önemlidir.",
+      "akilda": "Çocuklar 8–10 saat uyur",
+      "soru": {
+        "soru": "Çocukların günde kaç saat uyuması gerekir?",
+        "secenekler": [
+          "8–10 saat",
+          "4–5 saat",
+          "13–15 saat"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartında çocuklar için yazan sayılara bak.",
+        "aciklama": "Çocukların günde 8–10 saat uyuması gerekir. (s. 115)"
+      }
+    },
+    {
+      "ad": "Dengeli Beslenme",
+      "renk": "#52b788",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='50' cy='64' r='34' fill='#f5f6fa'/><circle cx='50' cy='64' r='26' fill='#e0e4ff'/><circle cx='42' cy='58' r='10' fill='#e63946'/><path d='M42 48 q4 -6 8 -4' stroke='#52b788' stroke-width='3' fill='none'/><ellipse cx='60' cy='74' rx='9' ry='5' fill='#52b788'/><ellipse cx='58' cy='56' rx='5' ry='4' fill='#e9c46a'/><path d='M92 40 H108 L105 92 H95Z' fill='#90e0ef' opacity='0.85'/><text x='100' y='106' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>su</text></svg>",
+      "aciklama": "Yeterli su içmek; meyve, sebze, tam tahıl, sağlıklı yağlar ve proteinli besinler yemek kalp ve damarları korur.",
+      "ek": "Zeytinyağı, ceviz yağı ve fındık yağı sağlıklı yağlardır. Hazır gıdalardan, aşırı şeker ve tuzdan kaçınmalıyız.",
+      "akilda": "Su, meyve, sebze",
+      "soru": {
+        "soru": "Kalp ve damar sağlığı için hangisinden kaçınmalıyız?",
+        "secenekler": [
+          "Sebzelerden",
+          "Sudan",
+          "Aşırı tuzdan"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartının 'kaçınmalıyız' cümlesini oku.",
+        "aciklama": "Hazır gıdalardan, aşırı şeker ve tuz kullanımından kaçınmalıyız. (s. 115)"
+      }
+    },
+    {
+      "ad": "Spor ve Sosyal Faaliyetler",
+      "renk": "#f4a261",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='54' cy='26' r='9' fill='#f4a261'/><path d='M54 36 L48 64 M50 46 L34 54 M50 46 L68 40 M48 64 L32 84 M48 64 L66 78 L70 96' stroke='#f4a261' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='92' cy='92' r='11' fill='#f5f6fa'/><path d='M84 86 L100 98 M100 86 L84 98' stroke='#1b2340' stroke-width='2'/><text x='60' y='114' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kan hızlı dolaşır</text></svg>",
+      "aciklama": "Spor yapmak kanın vücutta hızlı dolaşmasını sağlar; organlara daha çok oksijen ve besin ulaşır.",
+      "ek": "Sosyal ve sportif faaliyetler kişiyi stresten uzak tutarak kalp ve damar sağlığını korur.",
+      "akilda": "Hareket et, kalbi koru",
+      "soru": {
+        "soru": "Spor yapmak kan dolaşımını nasıl etkiler?",
+        "secenekler": [
+          "Kan dolaşımını yavaşlatır",
+          "Kanın hızlı dolaşmasını sağlar",
+          "Kanı durdurur"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartında spor yapınca kanın nasıl dolaştığı yazıyor.",
+        "aciklama": "Spor yapmak kanın vücutta hızlı dolaşımını sağlar. (s. 115)"
+      }
+    },
+    {
+      "ad": "Uzun Ekran Süresi",
+      "renk": "#5aa9e6",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='22' width='62' height='44' rx='6' fill='#5aa9e6'/><rect x='24' y='28' width='50' height='32' fill='#1b2340'/><path d='M42 66 V76 M56 66 V76 M34 78 H64' stroke='#5aa9e6' stroke-width='4'/><circle cx='94' cy='40' r='14' fill='none' stroke='#ffd166' stroke-width='3'/><path d='M94 32 V40 L100 44' stroke='#ffd166' stroke-width='3' fill='none'/><text x='60' y='100' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>ara ver,</text><text x='60' y='112' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kısa yürüyüş yap</text></svg>",
+      "aciklama": "Uzun süre ekran başında kalmak hareketsizliğe neden olur; bu da kalbi ve kan dolaşımını olumsuz etkiler.",
+      "ek": "Ekran karşısında geçirdiğimiz süreyi kısaltmalı ya da düzenli aralıklarla kısa yürüyüşler yapmalıyız.",
+      "akilda": "Ekranı kısalt, yürüyüşe çık",
+      "soru": {
+        "soru": "Uzun süre ekran başında kalmak neden dolaşım sistemine zarar verir?",
+        "secenekler": [
+          "Hareketsiz bıraktığı için",
+          "Çok hareket ettirdiği için",
+          "Çok su içirdiği için"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartında 'hareketsizlik' kelimesini ara.",
+        "aciklama": "Uzun süre ekran başında vakit geçirmek hareketsiz kalmaya neden olur ve dolaşım sistemini olumsuz etkiler. (s. 115)"
+      }
+    },
+    {
+      "ad": "Yağlı, Tuzlu ve Hazır Gıdalar",
+      "renk": "#d62828",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M20 52 Q50 24 80 52Z' fill='#e9c46a'/><rect x='18' y='54' width='64' height='8' rx='3' fill='#52b788'/><rect x='18' y='64' width='64' height='10' rx='4' fill='#8d5524'/><path d='M20 76 H80 Q80 86 50 86 Q20 86 20 76Z' fill='#e9c46a'/><rect x='88' y='50' width='18' height='36' rx='5' fill='#f5f6fa'/><g fill='#1b2340'><circle cx='93' cy='56' r='1.5'/><circle cx='101' cy='56' r='1.5'/><circle cx='97' cy='60' r='1.5'/></g><path d='M14 20 L106 100 M106 20 L14 100' stroke='#ff6b6b' stroke-width='4' opacity='0.85'/><text x='60' y='112' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>damarları yorar</text></svg>",
+      "aciklama": "Çok yağlı, tuzlu ve hazır gıdalarla beslenmek ve hareketsiz kalmak damar rahatsızlıklarına yol açabilir.",
+      "ek": "Kitaptaki Mehmet böyle beslendiği ve az hareket ettiği için damar rahatsızlığı yaşadı. Doktor ona su içmesini, az yağlı, az tuzlu ve taze yiyecekler yemesini, spor yapmasını önerdi.",
+      "akilda": "Az yağ, az tuz, çok hareket",
+      "soru": {
+        "soru": "Mehmet'in damar rahatsızlığı yaşamasının nedeni neydi?",
+        "secenekler": [
+          "Çok su içmesi",
+          "Her gün spor yapması",
+          "Yağlı, tuzlu, hazır gıdalar ve hareketsizlik"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartının başlığındaki üç yiyecek türünü düşün.",
+        "aciklama": "Mehmet çok hareket etmiyor; genellikle çok yağlı, tuzlu ve hazır gıdalar tercih ediyordu. (s. 113)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Dolaşım sistemine iyi mi gelir, zarar mı verir?",
+      "kutular": [
+        {
+          "etiket": "İyi gelir",
+          "uyeler": [
+            "Düzenli Uyku",
+            "Dengeli Beslenme",
+            "Spor ve Sosyal Faaliyetler"
+          ]
+        },
+        {
+          "etiket": "Zarar verir",
+          "uyeler": [
+            "Uzun Ekran Süresi",
+            "Yağlı, Tuzlu ve Hazır Gıdalar"
+          ]
+        }
+      ]
+    }
+  ],
+  "akildaKalsin": [
+    "Dolaşım sisteminin sağlığı yaşam kalitemizi doğrudan etkiler.",
+    "Çocuklar günde 8–10 saat uyumalıdır.",
+    "Yeterli su, meyve, sebze ve sağlıklı yağlar kalbi korur.",
+    "Spor, kanın hızlı dolaşmasını sağlar ve stresi azaltır.",
+    "Uzun ekran süresi ve hareketsizlik dolaşım sistemine zarar verir.",
+    "Çevremizdekileri de sağlıklı yaşam konusunda uyarmalıyız."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Uyku kalbimle ne alakalı?",
+      "cevap": "Uyurken vücudun dinlenir. Düzenli uyku, dolaşım sisteminin sağlığı açısından çok önemlidir. Çocukların günde 8–10 saat uyuması gerekir. (s. 115)"
+    },
+    {
+      "soru": "Hangi yağlar sağlıklıdır?",
+      "cevap": "Kitap zeytinyağı, ceviz yağı ve fındık yağını sağlıklı yağlara örnek verir. (s. 115)"
+    },
+    {
+      "soru": "Oyun oynarken ekrandan kalkmam neden önemli?",
+      "cevap": "Uzun süre ekran başında kalmak hareketsizliğe yol açar ve kalbi, kan dolaşımını olumsuz etkiler. Süreyi kısaltmak ya da aralarda kısa yürüyüşler yapmak gerekir. (s. 115)"
+    },
+    {
+      "soru": "Spor yapınca neden nefes nefese kalıyorum?",
+      "cevap": "Spor yaparken kan vücutta daha hızlı dolaşır ve organlara daha fazla oksijen ve besin taşınır. (s. 115)"
+    },
+    {
+      "soru": "Sigara ve alkol damarlara zarar verir mi?",
+      "cevap": "Evet. Kitabın 'Neler Öğrendik?' bölümüne göre sigara ve alkol tüketimi kan damarlarına zarar verir. (s. 116)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Kendi günlük alışkanlıklarını düşün. Dolaşım sisteminin sağlığı için hayatında hangi değişiklikleri yapabilirsin? En az üç tane yaz.",
+      "ornekCevap": "Her gün 8–10 saat uyurum. Daha çok su içer, meyve ve sebze yerim; hazır gıda ve tuzlu atıştırmalıkları azaltırım. Ekran süremi kısaltır, aralarda kısa yürüyüşler yaparım. Haftada birkaç gün spor yaparım.",
+      "anahtarlar": [
+        "uyu",
+        "su",
+        "sebze",
+        "spor",
+        "ekran",
+        "yürü"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "Yetişkinlerin günde kaç saat uyuması gerekir?",
+      "secenekler": [
+        "3–4 saat",
+        "7–9 saat",
+        "12–14 saat"
+      ],
+      "dogru": 1,
+      "ipucu": "Düzenli Uyku kartında yetişkinler için yazan sayılara bak.",
+      "aciklama": "Yetişkinlerin günde 7–9 saat uyuması gerekir. (s. 115)"
+    },
+    {
+      "soru": "Hangisi sağlıklı yağlara örnektir?",
+      "secenekler": [
+        "Zeytinyağı",
+        "Kızartma yağı",
+        "Margarin"
+      ],
+      "dogru": 0,
+      "ipucu": "Dengeli Beslenme kartının 'ek' kısmında üç örnek var.",
+      "aciklama": "Zeytinyağı, ceviz yağı ve fındık yağı sağlıklı yağlara örnektir. (s. 115)"
+    },
+    {
+      "soru": "'Düzenli egzersiz kan dolaşımını yavaşlatır.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Yanlıştır, dolaşımı durdurur",
+        "Yanlıştır, dolaşımı hızlandırır"
+      ],
+      "dogru": 2,
+      "ipucu": "Spor kartında kanın nasıl dolaştığı yazıyordu.",
+      "aciklama": "Spor yapmak kanın vücutta hızlı dolaşımını sağlar; bu yüzden ifade yanlıştır. (s. 115, 116)"
+    },
+    {
+      "soru": "Sosyal ve sportif faaliyetler kişiyi neden uzak tutar?",
+      "secenekler": [
+        "Arkadaşlarından",
+        "Stresten",
+        "Sudan"
+      ],
+      "dogru": 1,
+      "ipucu": "Spor ve Sosyal Faaliyetler kartının 'ek' kısmını hatırla.",
+      "aciklama": "Sosyal ve sportif faaliyetler kişiyi stresten uzak tutarak kalp ve damar sağlığını korur. (s. 115)"
+    },
+    {
+      "soru": "Doktor, Mehmet'e hangisini önermedi?",
+      "secenekler": [
+        "Daha çok hazır gıda yemesini",
+        "Yeteri kadar su içmesini",
+        "Sporu hayatının parçası yapmasını"
+      ],
+      "dogru": 0,
+      "ipucu": "Doktor Mehmet'in hangi alışkanlığından uzak durmasını istemişti?",
+      "aciklama": "Doktor Mehmet'e su içmesini, az yağlı, az tuzlu, taze yiyecekler yemesini ve spor yapmasını önerdi. (s. 113)"
+    },
+    {
+      "soru": "Uzun süre ekran başında kalan biri dolaşım sistemi için ne yapmalıdır?",
+      "secenekler": [
+        "Daha çok tuz yemeli",
+        "Uykusunu azaltmalı",
+        "Ekran süresini kısaltmalı ya da aralarda kısa yürüyüş yapmalı"
+      ],
+      "dogru": 2,
+      "ipucu": "Uzun Ekran Süresi kartının 'ek' kısmını hatırla.",
+      "aciklama": "Ekran karşısındaki süre kısaltılmalı ya da düzenli aralıklarla kısa yürüyüşler yapılmalıdır. (s. 115)"
+    },
+    {
+      "soru": "Sigara ve alkol tüketimi için hangisi doğrudur?",
+      "secenekler": [
+        "Kalbi güçlendirir",
+        "Kan damarlarına zarar verir",
+        "Kan dolaşımını düzenler"
+      ],
+      "dogru": 1,
+      "ipucu": "Merak Kutusu'ndaki son soruyu hatırla.",
+      "aciklama": "Sigara ve alkol tüketimi kan damarlarına zarar verir. (s. 116)"
+    },
+    {
+      "soru": "Çevremizdeki insanlar için ne yapmalıyız?",
+      "secenekler": [
+        "Sağlıklı yaşam davranışları konusunda onları uyarmalıyız",
+        "Onlara hazır gıda önermeliyiz",
+        "Hiçbir şey yapmamalıyız"
+      ],
+      "dogru": 0,
+      "ipucu": "Kalp ve damar sağlığını yalnızca kendimiz için mi korumalıyız?",
+      "aciklama": "Çevremizdekileri de kalp ve damar rahatsızlıklarına dikkat etmeleri ve sağlıklı yaşam davranışları kazanmaları konusunda uyarmalıyız. (s. 115)"
+    }
+  ]
+}
