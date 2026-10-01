@@ -1,0 +1,341 @@
+{
+  "id": "u3k7",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Solunum Sistemi ve Organları",
+  "sayfalar": "s. 117–122",
+  "giris": "Her gün sayısız kez nefes alıp veriyoruz. Peki aldığımız hava vücudumuzda hangi yoldan geçiyor? Bu konuda solunum sistemini oluşturan yapı ve organları ve soluk alıp verirken neler olduğunu öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Solunum Sistemi",
+      "renk": "#5aa9e6",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='18' r='10' fill='none' stroke='#5aa9e6' stroke-width='3'/><path d='M60 28 V40 M60 40 L52 50 M60 40 L68 52' stroke='#f5f6fa' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M54 40 C40 40 26 52 24 74 C22 90 28 98 38 96 C48 94 54 88 54 80Z' fill='#e76f8a' opacity='0.9'/><path d='M66 44 C78 44 90 54 92 74 C94 88 88 94 80 92 C72 90 66 86 66 80Z' fill='#e76f8a' opacity='0.9'/><path d='M18 104 Q60 92 102 104' stroke='#9b5de5' stroke-width='3' fill='none'/><path d='M84 18 H100' stroke='#52b788' stroke-width='3'/><path d='M84 18 l5 -4 M84 18 l5 4' stroke='#52b788' stroke-width='3'/><text x='104' y='32' font-size='9' fill='#52b788' text-anchor='middle' font-family='sans-serif'>O₂</text><path d='M20 18 H36' stroke='#ffd166' stroke-width='3'/><path d='M20 18 l5 -4 M20 18 l5 4' stroke='#ffd166' stroke-width='3'/><text x='24' y='32' font-size='9' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>CO₂</text></svg>",
+      "aciklama": "Soluk alıp vermemizi sağlayan sisteme solunum sistemi denir; oksijenin kana geçmesini, karbon dioksidin kandan uzaklaştırılmasını sağlar.",
+      "ek": "Hücreler enerji üretirken atık madde olarak karbon dioksit oluşur. Solunum sistemi burun, yutak, gırtlak, soluk borusu ve akciğerlerden oluşur.",
+      "akilda": "Oksijen içeri, karbon dioksit dışarı",
+      "soru": {
+        "soru": "Solunum sistemi sayesinde hangi gaz kana geçer?",
+        "secenekler": [
+          "Oksijen",
+          "Karbon dioksit",
+          "Su buharı"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ilk cümlesinde kana geçen gazın adı var.",
+        "aciklama": "Akciğerler oksijenin kana geçmesini, atık madde olan karbon dioksidin kandan uzaklaştırılmasını sağlar. (s. 119)"
+      }
+    },
+    {
+      "ad": "Burun",
+      "renk": "#f4a261",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 18 C34 34 40 50 52 66 C56 72 52 78 44 78 L36 78' stroke='#f4a261' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M40 70 l4 -4 M46 72 l4 -4 M38 64 l4 -3' stroke='#f5f6fa' stroke-width='2'/><path d='M72 22 C66 32 66 38 72 38 C78 38 78 32 72 22Z' fill='#90e0ef'/><text x='96' y='34' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>nem</text><path d='M72 50 C66 58 68 66 72 66 C78 66 80 58 72 50Z M72 58 C70 62 72 64 74 62' fill='#ff8c42'/><text x='98' y='62' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>ısı</text><path d='M66 80 v12 M72 78 v14 M78 80 v12' stroke='#f5f6fa' stroke-width='2'/><circle cx='70' cy='86' r='2' fill='#8d99ae'/><circle cx='76' cy='90' r='2' fill='#8d99ae'/><text x='100' y='90' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>temiz</text><text x='60' y='112' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>hava burundan girer</text></svg>",
+      "aciklama": "Solunum sistemi burunla başlar; burun aldığımız havayı nemlendirir, ısıtır ve temizler.",
+      "ek": "Burnun içindeki mukus sıvısı kuru havayı nemlendirir, kılcal damarlar havayı ısıtır, kıllar toz ve mikropları tutar. Burundan giren hava yine burundan çıkar.",
+      "akilda": "Nemlendir, ısıt, temizle",
+      "soru": {
+        "soru": "Burundaki kılların görevi nedir?",
+        "secenekler": [
+          "Havayı ısıtmak",
+          "Toz ve mikropları tutmak",
+          "Ses oluşturmak"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ek kısmında kılların ne yaptığı yazıyor.",
+        "aciklama": "Burundaki kıllar havadaki toz ve mikropları tutarak havayı temizler. (s. 121)"
+      }
+    },
+    {
+      "ad": "Yutak ve Gırtlak",
+      "renk": "#e9c46a",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 30 H64 V44' stroke='#8d99ae' stroke-width='3' fill='none'/><text x='38' y='24' font-size='8' fill='#8d99ae' text-anchor='middle' font-family='sans-serif'>burun</text><path d='M56 44 H74 V58 H56Z' fill='#e9c46a'/><text x='40' y='54' font-size='8' fill='#e9c46a' text-anchor='middle' font-family='sans-serif'>yutak</text><rect x='64' y='60' width='14' height='16' rx='3' fill='#f4a261'/><path d='M67 68 h3 M72 68 h3' stroke='#1b2340' stroke-width='2'/><text x='103' y='76' font-size='8' fill='#f4a261' text-anchor='middle' font-family='sans-serif'>gırtlak</text><path d='M71 76 V106' stroke='#52b788' stroke-width='9'/><text x='96' y='100' font-size='7' fill='#52b788' text-anchor='middle' font-family='sans-serif'>soluk b.</text><path d='M58 58 V106' stroke='#8d5524' stroke-width='7'/><text x='36' y='100' font-size='7' fill='#c08a5a' text-anchor='middle' font-family='sans-serif'>yemek b.</text><path d='M82 62 q5 4 0 8 M88 58 q7 8 0 16' stroke='#ffd166' stroke-width='2' fill='none'/><text x='100' y='52' font-size='8' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>ses</text></svg>",
+      "aciklama": "Yutak, burun ve ağız boşluğunun arkasında, soluk borusu ile yemek borusunu birleştiren esnek bir yapıdır; burundan gelen hava buradan gırtlağa geçer.",
+      "ek": "Gırtlak, yutak ile soluk borusu arasındadır. Esnek ve kıkırdak yapıdadır. İçindeki ses telleri sesin oluşmasını sağlar.",
+      "akilda": "Ses telleri gırtlakta",
+      "soru": {
+        "soru": "Sesimizi oluşturan ses telleri nerede bulunur?",
+        "secenekler": [
+          "Yutakta",
+          "Burunda",
+          "Gırtlakta"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartının ek kısmında ses tellerinin hangi yapıda olduğu yazıyor.",
+        "aciklama": "Gırtlağın yapısında ses telleri bulunur; bu teller sesin oluşmasını sağlar. (s. 121)"
+      }
+    },
+    {
+      "ad": "Soluk Borusu ve Bronşlar",
+      "renk": "#52b788",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 14 V54' stroke='#52b788' stroke-width='9'/><path d='M54 20 h12 M54 28 h12 M54 36 h12 M54 44 h12' stroke='#1b2340' stroke-width='2'/><path d='M60 54 L38 72 M60 54 L82 72' stroke='#52b788' stroke-width='6' stroke-linecap='round'/><path d='M38 72 L26 86 M38 72 L42 90 M82 72 L94 86 M82 72 L78 90' stroke='#95d5b2' stroke-width='3' stroke-linecap='round'/><g fill='#e76f8a'><circle cx='24' cy='90' r='4'/><circle cx='42' cy='94' r='4'/><circle cx='96' cy='90' r='4'/><circle cx='78' cy='94' r='4'/></g><text x='86' y='20' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>gövde</text><text x='102' y='64' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>dallar</text><text x='60' y='112' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>yapraklar = alveoller</text></svg>",
+      "aciklama": "Soluk borusu, havayı gırtlaktan akciğerlere ulaştıran kıkırdak yapılı borudur; akciğere doğru iki kola, yani bronşlara ayrılır.",
+      "ek": "Bronşlar akciğerin içinde dallara ayrılarak bronşçukları oluşturur; bronşçuklar havayı alveollere iletir. Kitaptaki benzetme: ağacın gövdesi soluk borusuna, dalları bronşlara, yaprakları alveollere benzer.",
+      "akilda": "Gövde, dallar, yapraklar",
+      "soru": {
+        "soru": "Kitaptaki ağaç benzetmesinde ağacın gövdesi hangi yapıya benzetilir?",
+        "secenekler": [
+          "Soluk borusuna",
+          "Bronşlara",
+          "Alveollere"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ek kısmındaki ağaç benzetmesini oku.",
+        "aciklama": "Ağacın gövdesi soluk borusuna, dalları bronşlara, yaprakları alveollere benzetilebilir. (s. 120)"
+      }
+    },
+    {
+      "ad": "Akciğerler ve Alveoller",
+      "renk": "#e76f8a",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 14 V40' stroke='#95d5b2' stroke-width='5'/><g fill='#f8b4c4' stroke='#e76f8a' stroke-width='2'><circle cx='46' cy='56' r='14'/><circle cx='74' cy='56' r='14'/><circle cx='60' cy='76' r='15'/></g><path d='M24 92 C40 70 30 50 46 40 M96 92 C80 70 90 50 74 40' stroke='#e63946' stroke-width='2.5' fill='none'/><path d='M30 96 C50 86 70 86 90 96' stroke='#4895ef' stroke-width='2.5' fill='none'/><text x='60' y='80' font-size='9' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>alveol</text><text x='30' y='112' font-size='8' fill='#52b788' text-anchor='middle' font-family='sans-serif'>O₂ → kan</text><text x='90' y='112' font-size='8' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>CO₂ → hava</text></svg>",
+      "aciklama": "Akciğerler göğüs kafesinin içinde, sağ ve sol iki parçadan oluşan süngerimsi organlardır; sağ akciğer soldakinden büyüktür.",
+      "ek": "Bronşçukların uçlarında alveol denen hava keseleri vardır. Alveollerin etrafını kılcal damarlar sarar. Havadaki oksijen kana, kandaki karbon dioksit havaya alveollerde geçer.",
+      "akilda": "Gaz değişimi alveolde",
+      "soru": {
+        "soru": "Oksijenin kana geçtiği hava keselerine ne ad verilir?",
+        "secenekler": [
+          "Bronş",
+          "Alveol",
+          "Gırtlak"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ek kısmında hava keselerinin adı geçiyor.",
+        "aciklama": "Alveoller, havadaki oksijenin kana, kandaki karbon dioksidin havaya geçtiği hava keseleridir. (s. 122)"
+      }
+    },
+    {
+      "ad": "Diyafram",
+      "renk": "#9b5de5",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M54 40 C40 40 26 52 24 74 C22 90 28 98 38 96 C48 94 54 88 54 80Z' fill='#e76f8a' opacity='0.85' transform='translate(0 -16)'/><path d='M66 44 C78 44 90 54 92 74 C94 88 88 94 80 92 C72 90 66 86 66 80Z' fill='#e76f8a' opacity='0.85' transform='translate(0 -16)'/><path d='M60 19 V28' stroke='#52b788' stroke-width='6'/><path d='M14 90 Q60 64 106 90' stroke='#9b5de5' stroke-width='7' fill='none' stroke-linecap='round'/><text x='60' y='106' font-size='8' fill='#b8c0ff' text-anchor='middle' font-family='sans-serif'>karın boşluğu</text><text x='60' y='14' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>göğüs boşluğu</text></svg>",
+      "aciklama": "Diyafram, göğüs boşluğu ile karın boşluğunu birbirinden ayıran, solunum sistemine yardımcı olan bir kastır.",
+      "ek": "Diyafram, kaburgalar arasındaki kaslarla birlikte kasılıp gevşer. Böylece akciğerlerin genişleyip daralmasına yardım eder ve hava kolayca girip çıkar.",
+      "akilda": "Diyafram bir kastır",
+      "soru": {
+        "soru": "Diyafram hangi iki boşluğu birbirinden ayırır?",
+        "secenekler": [
+          "Göğüs boşluğu ile karın boşluğunu",
+          "Burun boşluğu ile ağız boşluğunu",
+          "Sağ akciğer ile sol akciğeri"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ilk cümlesinde iki boşluğun adı var.",
+        "aciklama": "Diyafram, göğüs boşluğu ile karın boşluğunu birbirinden ayıran kaslı yapıdır. (s. 121)"
+      }
+    },
+    {
+      "ad": "Soluk Alma ve Verme",
+      "renk": "#00b4d8",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 46 V114' stroke='#3a4470' stroke-width='2' stroke-dasharray='4 3'/><text x='30' y='18' font-size='9' fill='#52b788' text-anchor='middle' font-family='sans-serif'>soluk alma</text><text x='90' y='18' font-size='9' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>soluk verme</text><ellipse cx='22' cy='56' rx='10' ry='18' fill='#e76f8a'/><ellipse cx='40' cy='56' rx='10' ry='18' fill='#e76f8a'/><path d='M10 82 H52' stroke='#9b5de5' stroke-width='5' stroke-linecap='round'/><path d='M31 26 V36 M31 36 l-4 -5 M31 36 l4 -5' stroke='#52b788' stroke-width='3' fill='none'/><ellipse cx='84' cy='58' rx='7' ry='13' fill='#e76f8a'/><ellipse cx='98' cy='58' rx='7' ry='13' fill='#e76f8a'/><path d='M68 86 Q91 64 114 86' stroke='#9b5de5' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M91 38 V26 M91 26 l-4 5 M91 26 l4 5' stroke='#ffd166' stroke-width='3' fill='none'/><text x='31' y='100' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>düzleşir</text><text x='91' y='100' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kubbeleşir</text><text x='31' y='110' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>(kasılır)</text><text x='91' y='110' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>(gevşer)</text></svg>",
+      "aciklama": "Soluk alırken diyafram kasılıp düzleşir, göğüs boşluğu genişler ve akciğerler hava ile dolar.",
+      "ek": "Soluk verirken diyafram gevşeyip kubbeleşir, göğüs boşluğu daralır ve akciğerlerdeki hava dışarı atılır. Heyecan, korku ve spor gibi durumlarda hücrelerin oksijen ihtiyacı artar, soluk alıp verme hızlanır.",
+      "akilda": "Kasıl: al, gevşe: ver",
+      "soru": {
+        "soru": "Soluk alırken diyafram ne yapar?",
+        "secenekler": [
+          "Gevşeyip kubbeleşir",
+          "Kasılıp düzleşir",
+          "Hiç hareket etmez"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ilk cümlesinde diyaframın ne yaptığı yazıyor.",
+        "aciklama": "Soluk alırken diyafram kası kasılır ve düzleşir; göğüs boşluğu genişler. (s. 122)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Solunum sistemini oluşturan yapı ve organ mı, solunuma yardımcı kas mı?",
+      "kutular": [
+        {
+          "etiket": "Solunum sisteminin yapı ve organları",
+          "uyeler": [
+            "Burun",
+            "Yutak ve Gırtlak",
+            "Soluk Borusu ve Bronşlar",
+            "Akciğerler ve Alveoller"
+          ]
+        },
+        {
+          "etiket": "Solunuma yardımcı kas",
+          "uyeler": [
+            "Diyafram"
+          ]
+        }
+      ]
+    }
+  ],
+  "biliyorMusun": [
+    "Sağ akciğer, sol akciğerden daha büyüktür. (s. 121)",
+    "Doğru nefes almak için göğüs kafesi yerine diyaframı hareket ettirmeli, burundan nefes alırken karnı şişirmeli, nefesi 3–4 saniye tutmalı ve nefes vermeyi almaktan daha yavaş yapmalıyız. (s. 119)",
+    "Kitaptaki Defne, sahneye çıkınca heyecanlandı. Burnundan derin ve yavaş nefes alıp 3–4 saniye tuttu, sonra yavaşça verdi ve heyecanını yendi. (s. 117)"
+  ],
+  "akildaKalsin": [
+    "Solunum sistemi; burun, yutak, gırtlak, soluk borusu ve akciğerlerden oluşur.",
+    "Havanın yolu: burun → yutak → gırtlak → soluk borusu → bronş → bronşçuk → alveol.",
+    "Burun havayı nemlendirir, ısıtır ve temizler.",
+    "Alveollerde oksijen kana, karbon dioksit havaya geçer.",
+    "Diyafram kasılınca soluk alırız, gevşeyince soluk veririz.",
+    "Heyecan, korku ve sporda oksijen ihtiyacı artar; solunum hızlanır."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Burundan nefes almak neden daha iyi?",
+      "cevap": "Burnun içindeki mukus sıvısı havayı nemlendirir, kılcal damarlar ısıtır, kıllar toz ve mikropları tutar. Doğru nefes alma yönteminde de nefes burundan alınır. (s. 119, 121)"
+    },
+    {
+      "soru": "Sesim nereden çıkıyor?",
+      "cevap": "Gırtlağın yapısında ses telleri bulunur. Bu teller sesin oluşmasını sağlar. (s. 121)"
+    },
+    {
+      "soru": "Koşunca neden nefes nefese kalıyorum?",
+      "cevap": "Spor, heyecan ve korku gibi durumlarda hücrelerin oksijen ihtiyacı artar. Bu yüzden soluk alıp verme hızın da artar. (s. 122)"
+    },
+    {
+      "soru": "Karbon dioksit vücudumda nereden çıkıyor?",
+      "cevap": "Hücreler besinleri parçalayarak enerji üretir. Bu sırada oluşan atık maddelerden biri karbon dioksittir. Akciğerler onu kandan uzaklaştırır. (s. 119)"
+    },
+    {
+      "soru": "Akciğerler neden süngere benziyor?",
+      "cevap": "Akciğerler süngerimsi yapıda organlardır. İçlerinde bronşçukların uçlarında bulunan çok sayıda hava kesesi, yani alveol vardır. (s. 121, 122)"
+    },
+    {
+      "soru": "Heyecanlanınca nefesimi nasıl sakinleştirebilirim?",
+      "cevap": "Kitaptaki Defne gibi burnundan derin ve yavaş bir nefes alıp 3–4 saniye tutabilir, sonra yavaşça verebilirsin. Bunu birkaç kez tekrarlamak nefesi kontrol altına alır. (s. 117, 119)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Bir yudum havanın burnundan girip kana karışana kadarki yolculuğunu anlat. Hangi yapılardan geçer, en sonda ne olur?",
+      "ornekCevap": "Hava burundan girer; burada nemlenir, ısınır ve temizlenir. Sonra yutak ve gırtlaktan geçip soluk borusuna gelir. Soluk borusu bronşlara, bronşlar bronşçuklara ayrılır. Hava bronşçukların ucundaki alveollere ulaşır. Alveollerde oksijen kana geçer, kandaki karbon dioksit ise havaya geçer.",
+      "anahtarlar": [
+        "burun",
+        "yutak",
+        "gırtla",
+        "soluk boru",
+        "bronş",
+        "alveol",
+        "oksijen"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "Solunum sistemi organlarının havanın geçiş sırasına göre doğru dizilişi hangisidir?",
+      "secenekler": [
+        "Burun → gırtlak → yutak → soluk borusu",
+        "Burun → yutak → gırtlak → soluk borusu",
+        "Yutak → burun → soluk borusu → gırtlak"
+      ],
+      "dogru": 1,
+      "ipucu": "Yutak burnun hemen arkasında; gırtlak ise yutak ile soluk borusunun arasında.",
+      "aciklama": "Hava burundan yutağa, yutaktan gırtlağa, gırtlaktan soluk borusuna geçer. (s. 121)"
+    },
+    {
+      "soru": "'Akciğerler sağ ve sol olmak üzere iki parçadan oluşur.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Yanlıştır, akciğer tek parçadır",
+        "Yanlıştır, akciğer üç parçadır",
+        "Doğrudur"
+      ],
+      "dogru": 2,
+      "ipucu": "Akciğerler ve Alveoller kartının ilk cümlesini hatırla.",
+      "aciklama": "Akciğer, sağ ve sol akciğer olmak üzere iki parçadan oluşur. (s. 121, 128)"
+    },
+    {
+      "soru": "Burnun içindeki mukus sıvısının görevi nedir?",
+      "secenekler": [
+        "Kuru havayı nemlendirmek",
+        "Havayı soğutmak",
+        "Ses çıkarmak"
+      ],
+      "dogru": 0,
+      "ipucu": "Burun kartındaki üç görevden birini mukus sıvısı yapar.",
+      "aciklama": "Burnun iç yüzeyindeki mukus sıvısı kuru havayı nemlendirir. (s. 121)"
+    },
+    {
+      "soru": "Bronşçukların görevi nedir?",
+      "secenekler": [
+        "Sesi oluşturmak",
+        "Havayı alveollere iletmek",
+        "Besinleri mideye iletmek"
+      ],
+      "dogru": 1,
+      "ipucu": "Bronşçuklar dalların en ucundaki küçük hava kanallarıdır; havayı nereye götürürler?",
+      "aciklama": "Bronşçuklar, havanın alveollere iletilmesini sağlayan küçük hava kanallarıdır. (s. 122)"
+    },
+    {
+      "soru": "'Kaburga kasları nefes alırken gevşer, nefes verirken kasılır.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Yanlıştır; nefes alırken kasılır, verirken gevşer",
+        "Yanlıştır; kaburga kasları solunumda hiç çalışmaz"
+      ],
+      "dogru": 1,
+      "ipucu": "Soluk alırken diyafram ne yapıyordu? Kaburgalar arasındaki kaslar da aynısını yapar.",
+      "aciklama": "Soluk alırken kaburgaların arasındaki kaslar kasılır, soluk verirken gevşer. Bu yüzden ifade yanlıştır. (s. 122, 128)"
+    },
+    {
+      "soru": "Soluk verirken hangisi olur?",
+      "secenekler": [
+        "Göğüs boşluğu genişler",
+        "Akciğerlerin hacmi artar",
+        "Göğüs boşluğu daralır"
+      ],
+      "dogru": 2,
+      "ipucu": "Soluk verirken hava dışarı atılır; göğüs boşluğu büyür mü, küçülür mü?",
+      "aciklama": "Soluk verirken göğüs boşluğu daralır, akciğerlerin hacmi azalır ve hava dışarı atılır. (s. 122)"
+    },
+    {
+      "soru": "Yutak hangi iki boruyu birleştirir?",
+      "secenekler": [
+        "Soluk borusu ile yemek borusunu",
+        "Sağ bronş ile sol bronşu",
+        "Soluk borusu ile kan damarlarını"
+      ],
+      "dogru": 0,
+      "ipucu": "Yutak ve Gırtlak kartının ilk cümlesini oku.",
+      "aciklama": "Yutak, soluk borusu ile yemek borusunu birleştiren esnek bir yapıdır. (s. 121)"
+    },
+    {
+      "soru": "Kitaptaki ağaç benzetmesinde ağacın yaprakları hangi yapıya benzetilir?",
+      "secenekler": [
+        "Bronşlara",
+        "Soluk borusuna",
+        "Alveollere"
+      ],
+      "dogru": 2,
+      "ipucu": "Gövde soluk borusu, dallar bronşlardı. Dalların ucundaki küçük keseler hangileriydi?",
+      "aciklama": "Ağacın yapraklarını alveollere benzetebiliriz. (s. 120)"
+    },
+    {
+      "soru": "Spor yaparken soluk alıp verme hızımız neden artar?",
+      "secenekler": [
+        "Hücrelerin oksijen ihtiyacı arttığı için",
+        "Akciğerler küçüldüğü için",
+        "Diyafram çalışmayı bıraktığı için"
+      ],
+      "dogru": 0,
+      "ipucu": "Soluk Alma ve Verme kartının ek kısmının son cümlesine bak.",
+      "aciklama": "Heyecan, korku, spor yapma gibi durumlarda hücrelerin oksijen ihtiyacı arttığı için soluk alıp verme hızı artar. (s. 122)"
+    },
+    {
+      "soru": "Diyaframla ilgili hangisi doğrudur?",
+      "secenekler": [
+        "Kıkırdak yapılı bir hava borusudur",
+        "Akciğerlerin hacminin artıp azalmasına yardımcı olan bir kastır",
+        "Ses tellerinin bulunduğu yapıdır"
+      ],
+      "dogru": 1,
+      "ipucu": "Diyafram kartının 'akılda kalsın' kısmını hatırla.",
+      "aciklama": "Diyafram, solunum sırasında akciğerlerin genişleyip daralmasına yardımcı olan bir kastır. (s. 121, 128)"
+    },
+    {
+      "soru": "Doğru nefes alırken hangisini yapmalıyız?",
+      "secenekler": [
+        "Ağızdan hızlı hızlı nefes almalıyız",
+        "Nefes vermeyi almaktan daha hızlı yapmalıyız",
+        "Burundan nefes alırken karnımızı şişirmeliyiz"
+      ],
+      "dogru": 2,
+      "ipucu": "Biliyor musun kutusundaki doğru nefes alma kurallarını hatırla.",
+      "aciklama": "Burnumuzdan nefes alırken akciğerlerimizin hava ile dolması için karnımızı şişirmeliyiz. (s. 119)"
+    }
+  ]
+}

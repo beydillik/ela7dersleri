@@ -1,0 +1,351 @@
+{
+  "id": "u3k8",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Solunum Sağlığı ve Bağımlılık",
+  "sayfalar": "s. 123–128",
+  "giris": "Solunum sistemimiz bir ömür boyu çalışır. Onu korumak için neler yapmalı, nelerden uzak durmalıyız? Bu konuda solunum sisteminin sağlığını, bağımlılığın zararlarını ve bağımlılıkla mücadelede bize yardım edenleri öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Hava Kirliliği",
+      "renk": "#8d99ae",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='50' width='12' height='40' fill='#8d99ae'/><rect x='32' y='40' width='12' height='50' fill='#8d99ae'/><rect x='12' y='70' width='50' height='20' fill='#6c757d'/><g fill='#5c677d'><circle cx='24' cy='40' r='8'/><circle cx='34' cy='28' r='10'/><circle cx='48' cy='20' r='11'/><circle cx='62' cy='24' r='8'/></g><rect x='68' y='76' width='38' height='14' rx='5' fill='#e63946'/><path d='M74 76 L80 66 H96 L100 76Z' fill='#e63946'/><circle cx='76' cy='92' r='5' fill='#f5f6fa'/><circle cx='98' cy='92' r='5' fill='#f5f6fa'/><g fill='#5c677d'><circle cx='62' cy='86' r='4'/><circle cx='54' cy='82' r='5'/></g><text x='60' y='112' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>trafik ve fabrika dumanı</text></svg>",
+      "aciklama": "Yoğun araç trafiği ve fabrikalar hava kirliliğine yol açar; kirli hava solunum sistemi sağlığını olumsuz etkiler.",
+      "ek": "Kitaptaki Elif büyük bir şehirde yaşıyordu ve nefes darlığı, öksürük gibi rahatsızlıklar yaşadı. Doktor bunun nedeninin hava kirliliği olduğunu söyledi.",
+      "akilda": "Kirli hava solunuma zarar",
+      "soru": {
+        "soru": "Doktora göre Elif'in yaşadığı yerde hava kirliliğine ne yol açıyordu?",
+        "secenekler": [
+          "Ağaçlar ve parklar",
+          "Yoğun araç trafiği ve fabrikalar",
+          "Deniz havası"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ilk cümlesinde hava kirliliğinin iki nedeni yazıyor.",
+        "aciklama": "Doktor, yoğun araç trafiğinin ve fabrikaların hava kirliliğine yol açtığını söyledi. (s. 123)"
+      }
+    },
+    {
+      "ad": "Dengeli Beslenme",
+      "renk": "#52b788",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='50' cy='56' r='32' fill='#f5f6fa'/><circle cx='50' cy='56' r='24' fill='#e0e4ff'/><circle cx='42' cy='50' r='9' fill='#e63946'/><ellipse cx='60' cy='64' rx='9' ry='5' fill='#52b788'/><ellipse cx='56' cy='46' rx='6' ry='4' fill='#e9c46a'/><path d='M90 32 H106 L103 82 H93Z' fill='#90e0ef' opacity='0.85'/><path d='M20 100 Q60 90 100 100' stroke='#9b5de5' stroke-width='4' fill='none'/><text x='60' y='114' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>diyafram rahat çalışır</text></svg>",
+      "aciklama": "Aşırı kilo almaktan kaçınmalı; öğünlerde karbohidrat, protein, yağ, vitamin, su ve mineral içeren besinleri yeterli ve dengeli almalıyız.",
+      "ek": "Böylece diyaframın hareketi kolaylaşır ve soluk alıp verme rahatlar.",
+      "akilda": "Dengeli beslen, rahat nefes al",
+      "soru": {
+        "soru": "Dengeli beslenmek solunumu nasıl etkiler?",
+        "secenekler": [
+          "Diyaframın hareketini kolaylaştırır",
+          "Akciğerleri küçültür",
+          "Soluk almayı zorlaştırır"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ek kısmında diyaframa ne olduğu yazıyor.",
+        "aciklama": "Yeterli ve dengeli beslenmek diyaframın hareketini kolaylaştırır, soluk alış verişi rahatlar. (s. 125)"
+      }
+    },
+    {
+      "ad": "Spor ve Temiz Hava",
+      "renk": "#f4a261",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='96' cy='22' r='10' fill='#ffd166'/><path d='M24 96 V66' stroke='#8d5524' stroke-width='5'/><circle cx='24' cy='56' r='16' fill='#52b788'/><circle cx='66' cy='34' r='8' fill='#f4a261'/><path d='M66 42 L62 66 M64 50 L50 58 M64 50 L78 56 M62 66 L52 86 M62 66 L74 80 L78 96' stroke='#f4a261' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M10 98 H110' stroke='#52b788' stroke-width='3'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>temiz havada yürüyüş</text></svg>",
+      "aciklama": "Spor yapmak nefes alıp verme ihtiyacını artırır; bu da akciğerleri ve solunumda görevli kasları güçlendirir.",
+      "ek": "Solunum sistemi sağlığı için temiz havada yürüyüş ya da egzersiz yapmalıyız.",
+      "akilda": "Spor akciğeri güçlendirir",
+      "soru": {
+        "soru": "Spor yapmak akciğerlere ne kazandırır?",
+        "secenekler": [
+          "Onları zayıflatır",
+          "Onları güçlendirir",
+          "Onları küçültür"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ilk cümlesinin sonuna bak.",
+        "aciklama": "Spor, akciğerleri ve solunumda görevli kasları güçlendirir. (s. 125)"
+      }
+    },
+    {
+      "ad": "Havalandırma ve Maske",
+      "renk": "#90e0ef",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='50' height='56' rx='4' fill='none' stroke='#90e0ef' stroke-width='4'/><path d='M39 18 V74 M14 46 H64' stroke='#90e0ef' stroke-width='3'/><path d='M70 30 q8 -6 16 0 t16 0 M70 44 q8 -6 16 0 t16 0' stroke='#f5f6fa' stroke-width='3' fill='none'/><path d='M28 88 Q46 80 64 88 L62 104 Q46 110 30 104Z' fill='#f5f6fa'/><path d='M34 94 H58 M34 100 H58' stroke='#8d99ae' stroke-width='1.5'/><path d='M28 90 L16 84 M64 90 L76 84' stroke='#f5f6fa' stroke-width='2'/><text x='94' y='100' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>tozda</text><text x='94' y='110' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>maske</text></svg>",
+      "aciklama": "Uzun süre vakit geçirdiğimiz kapalı mekânları havalandırmalı, kirli ve tozlu ortamlardan uzak durmalıyız.",
+      "ek": "Tozlu ortamlarda akciğerlerimizi korumak için maske kullanmalıyız.",
+      "akilda": "Pencereyi aç, tozdan korun",
+      "soru": {
+        "soru": "Uzun süre kaldığımız kapalı ortamlar için ne yapmalıyız?",
+        "secenekler": [
+          "Pencereleri hiç açmamalıyız",
+          "İçeride toz kaldırmalıyız",
+          "Belirli aralıklarla havalandırmalıyız"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartının ilk cümlesinde kapalı mekânlar için ne yapılacağı yazıyor.",
+        "aciklama": "Uzun süre vakit geçirilen kapalı mekânlar havalandırılmalıdır. (s. 125, 128)"
+      }
+    },
+    {
+      "ad": "Bağımlılık",
+      "renk": "#e63946",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='none' stroke='#e63946' stroke-width='6'><rect x='14' y='46' width='30' height='20' rx='10'/><rect x='38' y='46' width='30' height='20' rx='10'/><rect x='62' y='46' width='30' height='20' rx='10'/></g><path d='M94 56 H108' stroke='#e63946' stroke-width='6' stroke-linecap='round'/><text x='60' y='32' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>bırakmak istese de</text><text x='60' y='88' font-size='9' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>bırakamamak</text><text x='60' y='104' font-size='7' fill='#b8c0ff' text-anchor='middle' font-family='sans-serif'>fiziksel · ruhsal · sosyal zarar</text></svg>",
+      "aciklama": "Bağımlılık; bir maddenin ruhsal, fiziksel ya da sosyal sorunlara yol açmasına rağmen alınmaya devam edilmesi, bırakma isteğine rağmen bırakılamamasıdır.",
+      "ek": "Kontrolü sağlanmadan kullanılan her madde ya da yapılan her davranış bağımlılık oluşturabilir. Bağımlılık yapıcı maddeler solunum ve dolaşım sistemi rahatsızlıklarına yol açabilir; aile ve arkadaş ilişkilerini de olumsuz etkiler.",
+      "akilda": "İstese de bırakamamak",
+      "soru": {
+        "soru": "Bağımlılığın tanımına göre bağımlı kişi neyi yapamaz?",
+        "secenekler": [
+          "Bırakmak istese de maddeyi bırakamaz",
+          "Hiç uyuyamaz",
+          "Hiç su içemez"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartındaki tanımın son kısmını oku.",
+        "aciklama": "Bağımlılık, bırakma isteğine rağmen bir maddenin bırakılamamasıdır. (s. 125)"
+      }
+    },
+    {
+      "ad": "Yeşilay",
+      "renk": "#2a9d8f",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='20' width='54' height='50' rx='6' fill='#f5f6fa'/><rect x='22' y='20' width='54' height='14' rx='6' fill='#2a9d8f'/><text x='49' y='31' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>MART</text><text x='49' y='58' font-size='16' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>1–7</text><path d='M92 70 C80 60 78 48 86 46 C90 45 92 48 92 50 C92 48 94 45 98 46 C106 48 104 60 92 70Z' fill='#52b788'/><text x='46' y='104' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>Yeşilay Haftası</text></svg>",
+      "aciklama": "Yeşilay, bağımlılıklardan bireyi ve toplumu korumak ve insanları bilinçlendirmek için çalışan bir sivil toplum kuruluşudur.",
+      "ek": "Dr. Mazhar Osman Uzman ve arkadaşları 5 Mart 1920'de 'Hilâl-i Ahdar' adıyla kurdu. Her yıl 1–7 Mart Yeşilay Haftası'dır. Tütün, teknoloji ve kumar bağımlılığı gibi alanlarda çalışır; ücretsiz destek veren Yeşilay Danışmanlık Merkezi vardır.",
+      "akilda": "1–7 Mart Yeşilay Haftası",
+      "soru": {
+        "soru": "Yeşilay Haftası her yıl hangi tarihlerde kutlanır?",
+        "secenekler": [
+          "1–7 Ocak",
+          "1–7 Mart",
+          "1–7 Eylül"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının 'akılda kalsın' kısmına bak.",
+        "aciklama": "Her yıl 1–7 Mart tarihleri Yeşilay Haftası olarak kutlanır. (s. 126)"
+      }
+    },
+    {
+      "ad": "Destek Hatları",
+      "renk": "#ffd166",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='38' y='14' width='44' height='80' rx='8' fill='#ffd166'/><rect x='43' y='24' width='34' height='56' rx='3' fill='#1b2340'/><text x='60' y='50' font-size='12' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>ALO</text><text x='60' y='68' font-size='14' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>171</text><circle cx='60' cy='87' r='3' fill='#1b2340'/><text x='60' y='110' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>sigara bırakma hattı</text></svg>",
+      "aciklama": "Sigarayı bırakmak isteyenler ALO 171 Sigara Bırakma Danışma Hattı'nı arayarak uzmanlardan yardım alabilir.",
+      "ek": "Yasak alanda tütün kullanılırsa Yeşil Dedektör uygulamasıyla ihbar edilebilir. Bağımlı kişiler aile hekimlerinden ve devlet hastanelerinin psikiyatri polikliniklerinden destek alabilir; aileleri ve çevreleri de onlara destek olmalıdır.",
+      "akilda": "ALO 171: sigarayı bırak",
+      "soru": {
+        "soru": "Sigarayı bırakmak isteyen biri hangi hattı arayabilir?",
+        "secenekler": [
+          "ALO 112",
+          "ALO 155",
+          "ALO 171"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartında ve çizimde yazan numaraya bak.",
+        "aciklama": "Tütün bağımlılığından kurtulmak isteyenler ALO 171 Sigara Bırakma Danışma Hattı'nı arayabilir. (s. 126)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Solunum sistemine iyi mi gelir, zarar mı verir?",
+      "kutular": [
+        {
+          "etiket": "İyi gelir",
+          "uyeler": [
+            "Dengeli Beslenme",
+            "Spor ve Temiz Hava",
+            "Havalandırma ve Maske"
+          ]
+        },
+        {
+          "etiket": "Zarar verir",
+          "uyeler": [
+            "Hava Kirliliği",
+            "Bağımlılık"
+          ]
+        }
+      ]
+    }
+  ],
+  "biliyorMusun": [
+    "'Hilâl-i Ahdar' adı 'yeşil hilal' anlamına gelir. Bu kuruluş bugün Yeşilay Vakfı olarak çalışmaktadır. (s. 126)",
+    "Yeşilay, Birinci Dünya Savaşı yıllarında bağımlılık yapıcı maddeler yaygınlaşınca halkın vatan savunmasındaki mücadele ruhunu korumak için kuruldu. (s. 126)",
+    "Yeşil Dedektör ile yapılan ihbarda işletmenin konumu Dumansız Hava Sahası Denetim Sistemi'ne düşer ve denetim ekipleri yasağa uymayanlara müdahale eder. (s. 126)"
+  ],
+  "akildaKalsin": [
+    "Hava kirliliği nefes darlığı ve öksürük gibi sorunlara yol açabilir.",
+    "Dengeli beslenmek diyaframın hareketini kolaylaştırır.",
+    "Spor, akciğerleri ve solunum kaslarını güçlendirir.",
+    "Kapalı alanları havalandır, tozlu ortamda maske kullan.",
+    "Bağımlılık, isteğe rağmen bırakamamaktır; solunum ve dolaşım sistemine zarar verir.",
+    "Yeşilay ve ALO 171 bağımlılıkla mücadelede yardım eder."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Sigara sadece akciğerlere mi zarar verir?",
+      "cevap": "Hayır. Bağımlılık yapıcı maddeler solunum ve dolaşım sistemi rahatsızlıklarına yol açabilir. Bağımlılık, kişinin sosyal çevresini ve ailesiyle ilişkilerini de olumsuz etkiler. (s. 126, 128)"
+    },
+    {
+      "soru": "Ekran ya da oyun da bağımlılık yapar mı?",
+      "cevap": "Kitaba göre kontrolü sağlanmadan yapılan her davranış bağımlılık oluşturabilir. Yeşilay'ın çalışma alanları arasında teknoloji bağımlılığı da vardır. (s. 125, 126)"
+    },
+    {
+      "soru": "Stres solunumu etkiler mi?",
+      "cevap": "Kitap, solunum sistemi sağlığı için stresten ve bağımlılıktan uzak durmayı, sosyal ilişkileri güçlendirmeyi ve zihin sağlığı için çeşitli uğraşlar edinmeyi önerir. (s. 125)"
+    },
+    {
+      "soru": "Kilo almak nefes almayı nasıl etkiler?",
+      "cevap": "Kitap aşırı kilo alımından kaçınmayı ve dengeli beslenmeyi önerir. Böylece diyaframın hareketi kolaylaşır ve soluk alıp verme rahatlar. (s. 125)"
+    },
+    {
+      "soru": "Bağımlı bir kişi nereden yardım alabilir?",
+      "cevap": "Aile hekimlerinden, devlet hastanelerinin psikiyatri polikliniklerinden, tedavi ve eğitim merkezlerinden destek alabilir. Yeşilay Danışmanlık Merkezi de ücretsiz destek verir. (s. 126)"
+    },
+    {
+      "soru": "Elif'in ailesi taşınmak dışında ne yapabilirdi?",
+      "cevap": "Kitap bu soruyu sınıfta tartışmaya bırakır. Kitabın önerileri fikir verebilir: kirli ve tozlu ortamlardan uzak durmak, temiz havada yürüyüş yapmak, tozlu ortamlarda maske kullanmak. (s. 123, 125, 128)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Solunum sisteminin sağlığını olumsuz etkileyen bir alışkanlığını düşün. Bu alışkanlığı düzeltmek için hayatında neyi değiştirebilirsin?",
+      "ornekCevap": "Odamda uzun süre pencereyi açmadan ders çalışıyorum. Bundan sonra odamı belirli aralıklarla havalandıracağım. Ayrıca hafta sonları temiz havada yürüyüş yapacağım, tozlu ortamlarda maske takacağım.",
+      "anahtarlar": [
+        "havalandır",
+        "temiz hava",
+        "yürüyüş",
+        "spor",
+        "maske",
+        "beslen"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "'Tütün ürünlerinden uzak durmalıyız.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Yanlıştır",
+        "Sadece yetişkinler için doğrudur"
+      ],
+      "dogru": 0,
+      "ipucu": "Bağımlılık kartında bağımlılık yapıcı maddelerin hangi sistemlere zarar verdiği yazıyordu.",
+      "aciklama": "Bağımlılık yapıcı maddeler solunum ve dolaşım sistemi rahatsızlıklarına yol açabilir; bu yüzden tütün ürünlerinden uzak durmalıyız. (s. 126, 128)"
+    },
+    {
+      "soru": "'Tütün ürünleri sadece solunum sistemi sağlığına zarar verir.' ifadesi neden yanlıştır?",
+      "secenekler": [
+        "Tütün hiçbir sisteme zarar vermez",
+        "Dolaşım sistemine de zarar verir",
+        "Yalnızca sindirim sistemine zarar verir"
+      ],
+      "dogru": 1,
+      "ipucu": "'Sadece' kelimesine dikkat et. Bağımlılık kartında iki sistemin adı geçiyordu.",
+      "aciklama": "Bağımlılık yapıcı maddeler hem solunum hem de dolaşım sistemi rahatsızlıklarına yol açabilir. (s. 126, 128)"
+    },
+    {
+      "soru": "'Ağızdan nefes alıp vermeliyiz.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Yanlıştır; burundan nefes almalıyız",
+        "Yanlıştır; nefesi yalnızca gırtlaktan almalıyız"
+      ],
+      "dogru": 1,
+      "ipucu": "Bir önceki konuda havayı nemlendiren, ısıtan ve temizleyen organ hangisiydi?",
+      "aciklama": "Burun havayı nemlendirir, ısıtır ve temizler; doğru nefes alırken de nefes burundan alınır. (s. 119, 121, 128)"
+    },
+    {
+      "soru": "Yeşilay ilk kurulduğunda hangi adı taşıyordu?",
+      "secenekler": [
+        "Kızılay",
+        "Yeşil Dedektör",
+        "Hilâl-i Ahdar"
+      ],
+      "dogru": 2,
+      "ipucu": "Yeşilay kartının ek kısmında kuruluş adı yazıyor; anlamı 'yeşil hilal'dir.",
+      "aciklama": "Yeşilay, 5 Mart 1920'de Hilâl-i Ahdar adıyla kuruldu. (s. 126)"
+    },
+    {
+      "soru": "Yeşil Dedektör uygulaması ne için kullanılır?",
+      "secenekler": [
+        "Yasak alanda tütün kullanımını ihbar etmek için",
+        "Hava durumunu öğrenmek için",
+        "Kilo takibi yapmak için"
+      ],
+      "dogru": 0,
+      "ipucu": "Destek Hatları kartının ek kısmını hatırla.",
+      "aciklama": "Yasak alanlarda tütün ürünü tüketilirse vatandaşlar Yeşil Dedektör uygulamasıyla ihbarda bulunabilir. (s. 126)"
+    },
+    {
+      "soru": "Hangisi solunum sistemi sağlığı için doğru bir davranış değildir?",
+      "secenekler": [
+        "Açık ve temiz havada yürüyüş yapmak",
+        "Kirli ve tozlu ortamlarda uzun süre kalmak",
+        "Kapalı ortamları havalandırmak"
+      ],
+      "dogru": 1,
+      "ipucu": "Havalandırma ve Maske kartında nelerden uzak durmamız gerektiği yazıyordu.",
+      "aciklama": "Solunum sistemi sağlığı için kirli ve tozlu ortamlardan uzak durulmalıdır. (s. 125)"
+    },
+    {
+      "soru": "Bağımlı bireyler aşağıdakilerden hangisinden destek alabilir?",
+      "secenekler": [
+        "Hava durumu sitelerinden",
+        "Fabrikalardan",
+        "Aile hekimlerinden"
+      ],
+      "dogru": 2,
+      "ipucu": "Destek Hatları kartında bağımlı kişilerin başvurabileceği yerler yazıyordu.",
+      "aciklama": "Bağımlı bireyler aile hekimlerinden ve devlet hastanelerinin psikiyatri polikliniklerinden destek alabilir. (s. 126)"
+    },
+    {
+      "soru": "Yeşilay'ın çalışma alanlarından biri hangisidir?",
+      "secenekler": [
+        "Teknoloji bağımlılığı",
+        "Uzay araştırmaları",
+        "Deprem tahmini"
+      ],
+      "dogru": 0,
+      "ipucu": "Yeşilay kartının ek kısmında üç çalışma alanı sayılıyor.",
+      "aciklama": "Yeşilay'ın tütün, teknoloji, kumar bağımlılığı gibi çalışma alanları vardır. (s. 126)"
+    },
+    {
+      "soru": "Spor yapmak solunum sistemi için neden faydalıdır?",
+      "secenekler": [
+        "Nefes ihtiyacını tamamen ortadan kaldırdığı için",
+        "Akciğerleri ve solunumda görevli kasları güçlendirdiği için",
+        "Diyaframı hareketsiz bıraktığı için"
+      ],
+      "dogru": 1,
+      "ipucu": "Spor ve Temiz Hava kartının ilk cümlesini hatırla.",
+      "aciklama": "Spor yapmak nefes alıp verme ihtiyacını artırır; bu da akciğerleri ve solunum kaslarını güçlendirir. (s. 125)"
+    },
+    {
+      "soru": "Elif, hava kirliliği yüzünden hangi rahatsızlıkları yaşadı?",
+      "secenekler": [
+        "Diş ağrısı ve ateş",
+        "Mide ağrısı",
+        "Nefes darlığı ve öksürük"
+      ],
+      "dogru": 2,
+      "ipucu": "Hava Kirliliği kartının ek kısmında Elif'in yaşadıkları yazıyor.",
+      "aciklama": "Elif nefes darlığı, öksürük gibi solunum sistemi rahatsızlıkları yaşıyordu. (s. 123)"
+    },
+    {
+      "soru": "Yeşilay'ı kimler, hangi yıl kurdu?",
+      "secenekler": [
+        "Dr. Mazhar Osman Uzman ve arkadaşları, 1920",
+        "Sağlık Bakanlığı, 2020",
+        "Bir grup sporcu, 1950"
+      ],
+      "dogru": 0,
+      "ipucu": "Yeşilay kartının ek kısmının ilk cümlesine bak.",
+      "aciklama": "Dr. Mazhar Osman Uzman ve arkadaşları 5 Mart 1920'de Hilâl-i Ahdar adıyla bir vakıf kurdu. (s. 126)"
+    },
+    {
+      "soru": "Solunum sistemi sağlığı için öğünlerde neye dikkat etmeliyiz?",
+      "secenekler": [
+        "Yalnızca tatlı yemeye",
+        "Besinleri yeterli ve dengeli almaya",
+        "Öğün atlamaya"
+      ],
+      "dogru": 1,
+      "ipucu": "Dengeli Beslenme kartının ilk cümlesini hatırla.",
+      "aciklama": "Öğünlerde karbohidrat, protein, yağ, vitamin, su ve mineral içeren besinler yeterli ve dengeli alınmalıdır. (s. 125)"
+    }
+  ]
+}
