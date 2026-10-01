@@ -1,0 +1,354 @@
+{
+ "id": "u3k7",
+ "unite": "3. Öğrenme Alanı: Ortak Mirasımız",
+ "baslik": "Sanayi İnkılabı ve Fransız İhtilali",
+ "sayfalar": "s. 121–124",
+ "giris": "18. yüzyılda Avrupa'da iki büyük değişim yaşandı: Sanayi İnkılabı ve Fransız İhtilali. Bu konuda üretimin makinelerle nasıl değiştiğini ve halkın krallığa karşı ayaklanmasını öğreneceğiz. İkisinin de Osmanlı Devleti'ni nasıl etkilediğini göreceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Sanayi İnkılabı",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 92V54l20 12V54l20 12V54l20 12V36h12v-14h10v70z' fill='#9aa4bf'/><path d='M22 76h8v8h-8zM42 76h8v8h-8zM62 76h8v8h-8z' fill='#f2c14e'/><circle cx='88' cy='14' r='6' fill='#6c757d'/><circle cx='98' cy='10' r='5' fill='#6c757d' opacity='0.7'/><circle cx='106' cy='6' r='4' fill='#6c757d' opacity='0.5'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#4ea8de'>Fabrika</text></svg>",
+   "aciklama": "Sanayi İnkılabı, XVIII. yüzyılın ikinci yarısında İngiltere'de başlayan büyük ekonomik ve toplumsal değişimdir.",
+   "ek": "James Watt'ın geliştirdiği buhar makinesi üretimi değiştirdi. El emeğine dayalı küçük atölyelerin yerini makineli fabrikalar aldı. Kısa sürede daha fazla ve ucuz mal üretildi; ticaret gelişti, şehirler hızla büyüdü. Buharlı makineler tren, gemi ve dokuma tezgâhlarında da kullanıldı.",
+   "akilda": "İngiltere, buhar, fabrika",
+   "soru": {
+    "soru": "Sanayi İnkılabı hangi ülkede başladı?",
+    "secenekler": [
+     "Fransa",
+     "İngiltere",
+     "İtalya"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartının ilk cümlesinde ülkenin adı var.",
+    "aciklama": "Sanayi İnkılabı XVIII. yüzyılın ikinci yarısında İngiltere'de başladı. (s. 121)"
+   }
+  },
+  {
+   "ad": "İşçi Sınıfı",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 72l12-10l12 10v14H10zM24 76l10-8l10 8v10H24z' fill='#8d6e63'/><path d='M48 56h14M56 50l8 6l-8 6' stroke='#f2c14e' stroke-width='3' fill='none'/><path d='M70 86V30h14v56zM86 86V44h12v42zM100 86V36h10v50z' fill='#9aa4bf'/><path d='M74 36h6M74 46h6M74 56h6M90 50h4M90 60h4' stroke='#f2c14e' stroke-width='3'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#f4a261'>Köyden şehre</text></svg>",
+   "aciklama": "Sanayi İnkılabı ile kırsal alanlardan şehirlere göç arttı ve fabrikalarda çalışan işçi sınıfı ortaya çıktı.",
+   "ek": "Fabrikalarda çalışma koşulları ağır olduğu için sosyal sorunlar da yaşandı.",
+   "akilda": "Köyden şehre, fabrikaya",
+   "soru": {
+    "soru": "Sanayi İnkılabı ile hangi yeni sınıf ortaya çıktı?",
+    "secenekler": [
+     "İşçi sınıfı",
+     "Asker sınıfı",
+     "Şövalye sınıfı"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın başlığına bak.",
+    "aciklama": "Kırsal alanlardan şehirlere göçler arttı ve fabrikalarda çalışan işçi sınıfı ortaya çıktı. (s. 121)"
+   }
+  },
+  {
+   "ad": "Ham Madde ve Pazar",
+   "renk": "#e9c46a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 80l10-14l14 4l6 12z' fill='#343a40'/><path d='M30 82l8-10l10 4l2 8z' fill='#495057'/><circle cx='68' cy='58' r='8' fill='#e6e9f2'/><circle cx='78' cy='66' r='7' fill='#e6e9f2'/><circle cx='62' cy='70' r='7' fill='#e6e9f2'/><path d='M70 74v12' stroke='#2a9d8f' stroke-width='3'/><path d='M86 30h22M100 22l8 8l-8 8' stroke='#f2c14e' stroke-width='3' fill='none'/><text x='40' y='34' font-size='10' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>kömür, pamuk</text><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#e9c46a'>Ham madde</text></svg>",
+   "aciklama": "Üretim arttıkça fabrikaların ham madde ve pazar ihtiyacı da arttı.",
+   "ek": "Fabrikalar kömür, demir, pamuk, kauçuk gibi ham maddelere büyük ölçüde ihtiyaç duydu. İngiltere ve Fransa gibi güçlü Avrupa devletleri, ham madde kaynakları zengin olan Afrika, Asya ve Amerika'ya yönelik sömürgecilik faaliyetlerini hızlandırdı.",
+   "akilda": "Ham madde → sömürgecilik",
+   "soru": {
+    "soru": "Avrupa devletleri ham madde ihtiyacını karşılamak için neyi hızlandırdı?",
+    "secenekler": [
+     "Tarımı",
+     "Sömürgecilik faaliyetlerini",
+     "Haçlı seferlerini"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartının ek kısmının son cümlesine bak.",
+    "aciklama": "İngiltere, Fransa gibi devletler ham madde için Afrika, Asya ve Amerika'ya yönelik sömürgecilik faaliyetlerini hızlandırdı. (s. 121)"
+   }
+  },
+  {
+   "ad": "Sanayi İnkılabı ve Osmanlı",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M20 48l30-20l30 20v40H20z' fill='#8d6e63'/><path d='M30 56h40v32H30z' fill='#6c757d'/><path d='M30 62h40M30 68h40M30 74h40M30 80h40' stroke='#495057' stroke-width='2'/><path d='M96 26v50M88 68l8 10l8-10' stroke='#e63946' stroke-width='4' fill='none'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#e76f51'>Atölyeler kapandı</text></svg>",
+   "aciklama": "Sanayi İnkılabı Osmanlı Devleti'ni özellikle ekonomik alanda olumsuz etkiledi.",
+   "ek": "Avrupa'da makinelerle yapılan seri ve ucuz üretim, Osmanlı'daki el tezgâhlarını ve küçük imalathaneleri zor duruma düşürdü. Ucuz Avrupa malları yüzünden yerli üretim azaldı, birçok imalathane kapandı, işsizlik arttı. Ekonomideki gerileme siyasi ve askerî gücü de zayıflattı.",
+   "akilda": "Ucuz mal, kapanan atölye",
+   "soru": {
+    "soru": "Avrupa'dan gelen ucuz mallar Osmanlı'daki imalathaneleri nasıl etkiledi?",
+    "secenekler": [
+     "Daha çok iş buldular",
+     "Hiç etkilenmediler",
+     "Birçoğu kapandı"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın çiziminde kepengi inmiş bir dükkân var.",
+    "aciklama": "Avrupa'dan gelen ucuz mallar yerli üretimin azalmasına ve birçok imalathanenin kapanmasına yol açtı. (s. 122)"
+   }
+  },
+  {
+   "ad": "Fransız İhtilali",
+   "renk": "#c8553d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M16 92V36h18v10h10V36h32v10h10V36h18v56z' fill='#9aa4bf'/><path d='M16 36v-8h6v8M28 36v-8h6v8M86 36v-8h6v8M98 36v-8h6v8' fill='#9aa4bf' stroke='#9aa4bf' stroke-width='2'/><path d='M50 92V66q10-12 20 0v26z' fill='#1b2340'/><path d='M60 10v26' stroke='#e6e9f2' stroke-width='2'/><path d='M60 10h18v10H60z' fill='#e63946'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#e76f51'>Bastille 1789</text></svg>",
+   "aciklama": "Fransız İhtilali, 1789'da Fransa'da halkın monarşi (krallık) yönetimine karşı başlattığı büyük ayaklanmadır.",
+   "ek": "Savaş harcamaları ekonomiyi zayıflatmıştı; soylular ve din görevlileri vergi vermezken vergi yükü halkın üzerindeydi. Aydınlanma ile yayılan özgürlük, eşitlik, adalet düşünceleri değişim isteğini artırdı. Kral XVI. Louis yeni vergi koymak isteyince 14 Temmuz 1789'da halk Bastille Hapishanesini ele geçirdi; bu olay ihtilalin başlangıcı kabul edilir.",
+   "akilda": "1789, Bastille",
+   "soru": {
+    "soru": "Fransız İhtilali'nin başlangıcı kabul edilen olay hangisidir?",
+    "secenekler": [
+     "Bastille Hapishanesinin ele geçirilmesi",
+     "Kralın yeni bir saray yaptırması",
+     "Bir savaşın kazanılması"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminde ve 'akılda kalsın' kısmında yazan yeri hatırla.",
+    "aciklama": "14 Temmuz 1789'da halkın Bastille Hapishanesini ele geçirmesi Fransız İhtilali'nin başlangıcı kabul edilir. (s. 123)"
+   }
+  },
+  {
+   "ad": "İhtilalin Sonuçları",
+   "renk": "#9b5de5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 18h56v70H24z' fill='#e6e9f2'/><path d='M32 30h40M32 38h40M32 46h40M32 54h28' stroke='#9aa4bf' stroke-width='2'/><path d='M90 40v40M76 46h28' stroke='#f2c14e' stroke-width='3'/><path d='M76 46l-6 14h12zM104 46l-6 14h12z' fill='#f2c14e'/><path d='M82 82h16' stroke='#f2c14e' stroke-width='3'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#c77dff'>Haklar ve eşitlik</text></svg>",
+   "aciklama": "İhtilal sürecinde kralın yetkileri sınırlandırıldı ve İnsan ve Yurttaş Hakları Bildirgesi yayımlandı.",
+   "ek": "Bu bildirgeyle insanların özgür ve kanun önünde eşit olduğu kabul edildi, insan hakları yasal güvenceye alındı. Eşitlik, özgürlük ve adalet düşünceleri birçok ülkeye yayıldı. 'Her millete bir devlet' anlayışı olan milliyetçilik güçlendi; çok milletli imparatorluklarda bağımsızlık hareketleri başladı, bazıları parçalandı.",
+   "akilda": "Haklar ve milliyetçilik",
+   "soru": {
+    "soru": "Milliyetçilik akımı hangi anlayışla yayıldı?",
+    "secenekler": [
+     "Her şehre bir kral",
+     "Her millete bir devlet",
+     "Her ülkeye bir kilise"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartında tırnak içinde yazan ifadeye bak.",
+    "aciklama": "Milliyetçilik, Fransız İhtilali sonrası Avrupa'da 'her millete bir devlet' anlayışıyla yayıldı. (s. 123)"
+   }
+  },
+  {
+   "ad": "Fransız İhtilali ve Osmanlı",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 30h30v40H10zM45 30h30v40H45zM80 30h30v40H80z' fill='#e6e9f2'/><text x='25' y='55' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#1b2340'>1839</text><text x='60' y='55' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#1b2340'>1856</text><text x='95' y='55' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#1b2340'>1876</text><path d='M10 82h100' stroke='#2a9d8f' stroke-width='3'/><path d='M104 77l6 5l-6 5' stroke='#2a9d8f' stroke-width='3' fill='none'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#2a9d8f'>Yenilikler</text></svg>",
+   "aciklama": "Milliyetçilik akımı çok milletli Osmanlı'yı, özellikle Balkanlardaki gayrimüslim toplulukları etkiledi ve isyanlar çıktı.",
+   "ek": "Osmanlı devleti bir arada tutmak için yenilikler yaptı: 1839'da Tanzimat Fermanı ile herkesin can ve mal güvenliğinin korunacağı açıklandı; 1856'da Islahat Fermanı ile gayrimüslimlere yeni haklar verildi; 1876'da Kanun-i Esasi ilan edilip Meclis-i Mebusan açıldı. Ancak farklı milletleri bir arada tutmak zamanla zorlaştı.",
+   "akilda": "Milliyetçilik → isyanlar",
+   "soru": {
+    "soru": "Milliyetçilik düşüncesi Osmanlı'da özellikle hangi bölgedeki toplulukları etkiledi?",
+    "secenekler": [
+     "Anadolu'daki",
+     "Arabistan'daki",
+     "Balkanlardaki"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartının ilk cümlesinde bölgenin adı geçiyor.",
+    "aciklama": "Milliyetçilik düşüncesi özellikle Balkanlarda yaşayan gayrimüslim toplulukları kısa sürede etkisi altına aldı. (s. 124)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi büyük olayla ilgili?",
+   "kutular": [
+    {
+     "etiket": "Sanayi İnkılabı (üretim)",
+     "uyeler": [
+      "Sanayi İnkılabı",
+      "İşçi Sınıfı",
+      "Ham Madde ve Pazar",
+      "Sanayi İnkılabı ve Osmanlı"
+     ]
+    },
+    {
+     "etiket": "Fransız İhtilali (yönetim ve haklar)",
+     "uyeler": [
+      "Fransız İhtilali",
+      "İhtilalin Sonuçları",
+      "Fransız İhtilali ve Osmanlı"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Bu gelişme Avrupa'da mı yaşandı, yoksa Osmanlı'ya etkisi mi?",
+   "kutular": [
+    {
+     "etiket": "Avrupa'da",
+     "uyeler": [
+      "Sanayi İnkılabı",
+      "İşçi Sınıfı",
+      "Ham Madde ve Pazar",
+      "Fransız İhtilali",
+      "İhtilalin Sonuçları"
+     ]
+    },
+    {
+     "etiket": "Osmanlı'ya etkisi",
+     "uyeler": [
+      "Sanayi İnkılabı ve Osmanlı",
+      "Fransız İhtilali ve Osmanlı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Sanayi İnkılabı, insanlık tarihindeki en büyük ekonomik ve toplumsal değişimlerden biridir. (s. 121)",
+  "Buharlı makineler sonradan tren, gemi ve dokuma tezgâhlarında da kullanıldı. (s. 121)",
+  "İhtilalden önce Fransa'da soylular ve din görevlileri vergi vermiyordu; vergi yükü halkın üzerindeydi. (s. 123)",
+  "Islahat Fermanı ile gayrimüslimler devlet memuru olabilme ve kendi okullarını açabilme hakkı kazandı. (s. 124)",
+  "1876'da Meclis-i Mebusan'ın açılmasıyla halkın yönetime katılması sağlandı. (s. 124)"
+ ],
+ "akildaKalsin": [
+  "Sanayi İnkılabı: XVIII. yüzyılın ikinci yarısı, İngiltere.",
+  "Buhar makinesi → küçük atölyelerin yerine fabrikalar.",
+  "Şehirlere göç arttı, işçi sınıfı ortaya çıktı.",
+  "Ham madde ve pazar ihtiyacı sömürgeciliği hızlandırdı.",
+  "Fransız İhtilali 1789: Bastille, İnsan ve Yurttaş Hakları Bildirgesi.",
+  "Milliyetçilik Osmanlı'da isyanlara yol açtı; Tanzimat, Islahat ve Kanun-i Esasi ile yenilikler yapıldı."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Buhar makinesini kim geliştirdi?",
+   "cevap": "James Watt. Onun geliştirdiği buhar makinesi üretimde büyük değişimlere yol açtı. (s. 121)"
+  },
+  {
+   "soru": "Fabrikalar hangi ham maddelere ihtiyaç duydu?",
+   "cevap": "Kömür, demir, pamuk, kauçuk gibi ham maddelere. (s. 121)"
+  },
+  {
+   "soru": "Sanayi İnkılabı Osmanlı'da işsizliği neden artırdı?",
+   "cevap": "Ucuz Avrupa malları yerli üretimi azalttı, birçok imalathane kapandı ve işsizlik arttı. (s. 122)"
+  },
+  {
+   "soru": "Monarşi ne demek?",
+   "cevap": "Monarşi, krallık yönetimidir. (s. 123)"
+  },
+  {
+   "soru": "Fransız kralı ihtilalden önce ne yapmak istedi?",
+   "cevap": "Kral XVI. Louis ekonomik krizi çözmek için yeni vergiler koymak istedi; bu da halkın tepkisini artırdı. (s. 123)"
+  },
+  {
+   "soru": "Tanzimat Fermanı ile ne açıklandı?",
+   "cevap": "1839'da ilan edilen Tanzimat Fermanı ile herkesin can ve mal güvenliğinin korunacağı açıklandı. (s. 124)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Sence Fransız İhtilali'nin en önemli sonucu nedir? Nedenini de yaz.",
+   "ornekCevap": "Bence en önemli sonuç İnsan ve Yurttaş Hakları Bildirgesi'dir. Çünkü bu bildirgeyle insanların özgür ve kanun önünde eşit olduğu kabul edildi ve insan hakları yasal güvenceye alındı. (Milliyetçiliğin yayılmasını seçip imparatorlukların parçalanmasını da gerekçe olarak yazabilirsin.)",
+   "anahtarlar": [
+    "bildirge",
+    "eşit",
+    "özgür",
+    "hak",
+    "milliyetçi"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Sanayi İnkılabı'nda üretimi değiştiren buluş hangisidir?",
+   "secenekler": [
+    "Pusula",
+    "Buhar makinesi",
+    "Matbaa"
+   ],
+   "dogru": 1,
+   "ipucu": "Sanayi İnkılabı kartında James Watt'ın geliştirdiği makineyi hatırla.",
+   "aciklama": "James Watt'ın buhar makinesini geliştirmesi üretimde büyük değişimlere yol açtı. (s. 121)"
+  },
+  {
+   "soru": "Sanayi İnkılabı'ndan önce üretim nerede yapılıyordu?",
+   "secenekler": [
+    "Büyük fabrikalarda",
+    "Gemilerde",
+    "Küçük atölyelerde"
+   ],
+   "dogru": 2,
+   "ipucu": "Fabrikalar neyin yerini aldı?",
+   "aciklama": "Küçük atölyelerde el emeğine dayalı üretim yerini makinelerin kullanıldığı fabrikalara bıraktı. (s. 121)"
+  },
+  {
+   "soru": "Fabrikalar sayesinde nasıl mal üretildi?",
+   "secenekler": [
+    "Daha fazla ve ucuz",
+    "Daha az ve pahalı",
+    "Yalnızca el yapımı"
+   ],
+   "dogru": 0,
+   "ipucu": "Sanayi İnkılabı kartının ek kısmını hatırla.",
+   "aciklama": "Çoğalan fabrikalar sayesinde kısa sürede daha fazla ve ucuz mal üretildi. (s. 121)"
+  },
+  {
+   "soru": "Fabrikalarda çalışma koşulları nasıldı?",
+   "secenekler": [
+    "Çok rahat",
+    "Ağırdı",
+    "Yalnızca yarım gündü"
+   ],
+   "dogru": 1,
+   "ipucu": "İşçi Sınıfı kartının ek cümlesine bak.",
+   "aciklama": "Çalışma koşulları ağır olduğu için sosyal sorunlar da yaşandı. (s. 121)"
+  },
+  {
+   "soru": "Ekonomideki gerileme Osmanlı'yı başka hangi alanlarda etkiledi?",
+   "secenekler": [
+    "Siyasi ve askerî alanda",
+    "Yalnızca sanatta",
+    "Hiçbir alanda"
+   ],
+   "dogru": 0,
+   "ipucu": "Sanayi İnkılabı ve Osmanlı kartının son cümlesini hatırla.",
+   "aciklama": "Ekonomik gerileme zamanla siyasi ve askerî gücü de etkiledi. (s. 122)"
+  },
+  {
+   "soru": "İhtilalden önce Fransa'da vergi yükü kimin üzerindeydi?",
+   "secenekler": [
+    "Soyluların",
+    "Din görevlilerinin",
+    "Halkın"
+   ],
+   "dogru": 2,
+   "ipucu": "Soylular ve din görevlileri vergi veriyor muydu?",
+   "aciklama": "Soylular ve din görevlileri vergi vermezken vergi yükü büyük ölçüde halkın üzerindeydi. (s. 123)"
+  },
+  {
+   "soru": "Fransız halkının değişim isteğini artıran düşünceler hangileridir?",
+   "secenekler": [
+    "Fetih ve zafer",
+    "Özgürlük, eşitlik, adalet",
+    "Vergi ve saray"
+   ],
+   "dogru": 1,
+   "ipucu": "Bu düşünceler Aydınlanma Çağı ile yayılmıştı.",
+   "aciklama": "Aydınlanma Çağı ile yayılan özgürlük, eşitlik ve adalet düşünceleri halkın değişim isteğini artırdı. (s. 123)"
+  },
+  {
+   "soru": "İnsan ve Yurttaş Hakları Bildirgesi ile ne kabul edildi?",
+   "secenekler": [
+    "Kralın her şeye tek başına karar vermesi",
+    "Kilisenin vergi toplaması",
+    "İnsanların özgür ve kanun önünde eşit olması"
+   ],
+   "dogru": 2,
+   "ipucu": "İhtilalin Sonuçları kartını hatırla.",
+   "aciklama": "Bildirge ile insanların özgür ve kanun önünde eşit olduğu anlayışı kabul edildi. (s. 123)"
+  },
+  {
+   "soru": "1856'da gayrimüslimlere yeni haklar veren belge hangisidir?",
+   "secenekler": [
+    "Islahat Fermanı",
+    "Tanzimat Fermanı",
+    "Kanun-i Esasi"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartın çizimindeki ortadaki yılı düşün.",
+   "aciklama": "1856'da yayımlanan Islahat Fermanı ile gayrimüslimlere yeni haklar verildi. (s. 124)"
+  },
+  {
+   "soru": "Kanun-i Esasi'nin ilanıyla hangi meclis açıldı?",
+   "secenekler": [
+    "Divan-ı Hümayun",
+    "Meclis-i Mebusan",
+    "Kilise meclisi"
+   ],
+   "dogru": 1,
+   "ipucu": "Fransız İhtilali ve Osmanlı kartının ek kısmını hatırla.",
+   "aciklama": "1876'da Kanun-i Esasi ilan edilerek meşrutiyete geçildi ve Meclis-i Mebusan açıldı. (s. 124)"
+  }
+ ]
+}
