@@ -1,0 +1,294 @@
+{
+  "id": "u3k10",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Boşaltım Sisteminin Sağlığı",
+  "sayfalar": "s. 135–139",
+  "giris": "Böbreklerimiz her gün kanımızı temizler. Onları korumak için hangi alışkanlıklar önemli? Bu konuda su içme, beslenme, spor, sosyal faaliyetler, teknoloji kullanımı ve hijyenin boşaltım sistemine etkilerini öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Yeterli Su İçmek",
+      "renk": "#90e0ef",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M36 22 H84 L78 98 H42Z' fill='none' stroke='#f5f6fa' stroke-width='4'/><path d='M39 46 H81 L78 98 H42Z' fill='#90e0ef' opacity='0.85'/><path d='M46 58 q4 -6 8 0 M64 70 q4 -6 8 0' stroke='#f5f6fa' stroke-width='2' fill='none'/><path d='M100 26 q-6 10 0 12 q6 -2 0 -12Z M100 50 q-6 10 0 12 q6 -2 0 -12Z' fill='#90e0ef'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>gün içinde yeterli su</text></svg>",
+      "aciklama": "Gün içinde yeterli miktarda su içmek; böbrek taşı oluşumu ve idrar yolu enfeksiyonları gibi rahatsızlıkları azaltır.",
+      "ek": "Yeterli su vücudun sıvı dengesini korur, ödem oluşumunu engeller, vücut sıcaklığını düzenler ve bağırsakların düzenli çalışmasını sağlar.",
+      "akilda": "Su, böbrek taşına kalkan",
+      "soru": {
+        "soru": "Gün içinde yeterli su içmek hangi rahatsızlığı azaltır?",
+        "secenekler": [
+          "Böbrek taşı oluşumunu",
+          "Diş çürüğünü",
+          "Göz bozukluğunu"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ilk cümlesinde iki rahatsızlık sayılıyor.",
+        "aciklama": "Yeterli su içmek böbrek taşı oluşumu ve idrar yolu enfeksiyonları gibi rahatsızlıkları azaltır. (s. 137)"
+      }
+    },
+    {
+      "ad": "Dengeli Beslenme",
+      "renk": "#52b788",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='34' width='28' height='50' rx='8' fill='#f5f6fa'/><rect x='22' y='26' width='28' height='12' rx='4' fill='#8d99ae'/><circle cx='30' cy='31' r='1.6' fill='#1b2340'/><circle cx='36' cy='31' r='1.6' fill='#1b2340'/><circle cx='42' cy='31' r='1.6' fill='#1b2340'/><text x='36' y='64' font-size='10' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>tuz</text><path d='M16 22 L56 92' stroke='#e63946' stroke-width='5' stroke-linecap='round'/><circle cx='84' cy='58' r='24' fill='#f5f6fa'/><circle cx='84' cy='58' r='18' fill='#e0e4ff'/><circle cx='78' cy='52' r='6' fill='#e63946'/><ellipse cx='90' cy='64' rx='7' ry='4' fill='#52b788'/><ellipse cx='88' cy='48' rx='5' ry='3' fill='#e9c46a'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>az tuz, dengeli tabak</text></svg>",
+      "aciklama": "Yeterli ve dengeli beslenme böbreklerin sağlığı için önemlidir. Tuz ve protein ağırlıklı gıdalarla beslenmek böbreklerin daha çok çalışmasına neden olur.",
+      "ek": "Gereğinden fazla su içmek de böbrekleri daha çok çalıştırır. Yani su da besin de ne az ne çok, yeterli olmalı.",
+      "akilda": "Az tuz, ölçülü protein",
+      "soru": {
+        "soru": "Hangi gıdalarla beslenmek böbreklerin daha çok çalışmasına neden olur?",
+        "secenekler": [
+          "Taze sebzeler",
+          "Meyveler",
+          "Tuz ve protein ağırlıklı gıdalar"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartının ikinci cümlesinde iki tür gıda geçiyor.",
+        "aciklama": "Tuz ve protein ağırlıklı gıdalarla beslenmek böbreklerin daha çok çalışmasına neden olur. (s. 137)"
+      }
+    },
+    {
+      "ad": "Sportif Faaliyetler",
+      "renk": "#f4a261",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='52' cy='26' r='8' fill='#f4a261'/><path d='M52 34 L48 60 M50 44 L34 52 M50 44 L66 50 M48 60 L36 82 M48 60 L62 74 L66 92' stroke='#f4a261' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M92 44 C84 32 72 40 78 50 L92 64 L106 50 C112 40 100 32 92 44Z' fill='#e63946'/><path d='M74 76 H82 L86 68 L90 84 L94 76 H108' stroke='#e63946' stroke-width='2.5' fill='none'/><path d='M10 98 H110' stroke='#52b788' stroke-width='3'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalp hızlanır</text></svg>",
+      "aciklama": "Düzenli egzersiz kan dolaşımını ve kalp atışını hızlandırır. Böylece böbrekler daha sağlıklı çalışır.",
+      "akilda": "Spor böbreğe iyi gelir",
+      "soru": {
+        "soru": "Düzenli egzersiz böbreklere nasıl yardım eder?",
+        "secenekler": [
+          "Böbrekleri durdurur",
+          "İdrar oluşumunu tamamen bitirir",
+          "Kan dolaşımını hızlandırır, böbrekler daha sağlıklı çalışır"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartında egzersizin kan dolaşımına etkisi yazıyor.",
+        "aciklama": "Düzenli egzersiz kan dolaşımını ve kalp atışını hızlandırır; böylece böbrekler daha sağlıklı çalışır. (s. 137)"
+      }
+    },
+    {
+      "ad": "Sosyal Faaliyetler",
+      "renk": "#9b5de5",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='38' r='11' fill='#9b5de5'/><circle cx='60' cy='32' r='12' fill='#f4a261'/><circle cx='86' cy='38' r='11' fill='#2a9d8f'/><path d='M20 84 Q34 54 48 84Z' fill='#9b5de5'/><path d='M44 84 Q60 48 76 84Z' fill='#f4a261'/><path d='M72 84 Q86 54 100 84Z' fill='#2a9d8f'/><path d='M29 40 q5 4 10 0 M55 34 q5 4 10 0 M81 40 q5 4 10 0' stroke='#1b2340' stroke-width='2' fill='none'/><text x='60' y='100' font-size='8' fill='#b8c0ff' text-anchor='middle' font-family='sans-serif'>stres uzakta</text><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>arkadaşlarla vakit</text></svg>",
+      "aciklama": "Sosyal faaliyetler stresten uzak kalmamızı sağlar. Stres vücutta birçok olumsuz etkiye yol açabileceği için bu, boşaltım sisteminin sağlığı için önemlidir.",
+      "akilda": "Az stres, sağlıklı böbrek",
+      "soru": {
+        "soru": "Sosyal faaliyetler boşaltım sisteminin sağlığına nasıl katkı sağlar?",
+        "secenekler": [
+          "Daha çok tuz yememizi sağlar",
+          "Stresten uzak kalmamızı sağlar",
+          "Su içme ihtiyacını ortadan kaldırır"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ilk cümlesine bak.",
+        "aciklama": "İnsanlar sosyal faaliyetlerle stresten uzak kalarak daha sağlıklı bir yaşam tarzı benimseyebilir. (s. 137)"
+      }
+    },
+    {
+      "ad": "Teknoloji Bağımlılığı",
+      "renk": "#e63946",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='54' y='18' width='54' height='38' rx='4' fill='#4361ee'/><rect x='58' y='22' width='46' height='30' fill='#90e0ef'/><path d='M81 56 V66 M70 66 H92' stroke='#8d99ae' stroke-width='4'/><circle cx='26' cy='40' r='9' fill='#f4a261'/><path d='M26 50 V72 H44 V92 M26 60 L46 58' stroke='#f4a261' stroke-width='5' fill='none' stroke-linecap='round'/><rect x='14' y='72' width='24' height='6' fill='#8d5524'/><path d='M74 76 H96 L88 86 L96 96 H74 L82 86Z' fill='none' stroke='#ffd166' stroke-width='3'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>uzun süre hareketsiz</text></svg>",
+      "aciklama": "Ekran başında uzun süre hareketsiz kalmak kan akış hızını yavaşlatabilir. Bu da boşaltım sistemini olumsuz etkiler.",
+      "ek": "Az su içmek, stres, uyku bozuklukları ve bağırsak sorunları da böbreklerin verimli çalışmasını engelleyebilir. Bu yüzden teknoloji kullanımını kontrol altında tutmalıyız.",
+      "akilda": "Ekranı sınırla, hareket et",
+      "soru": {
+        "soru": "Ekran başında uzun süre hareketsiz kalmak vücutta neye yol açabilir?",
+        "secenekler": [
+          "Kalbin daha güçlü çalışmasına",
+          "Kan akış hızının yavaşlamasına",
+          "Böbrek taşlarının azalmasına"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ilk cümlesinde hareketsizliğin kana etkisi yazıyor.",
+        "aciklama": "Hareketsizlik kan akış hızını yavaşlatabilir. (s. 137)"
+      }
+    },
+    {
+      "ad": "Kişisel Hijyen",
+      "renk": "#2a9d8f",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='26' y='58' width='56' height='30' rx='10' fill='#2a9d8f'/><rect x='34' y='64' width='40' height='8' rx='4' fill='#8ee3d6'/><circle cx='42' cy='44' r='8' fill='none' stroke='#f5f6fa' stroke-width='2'/><circle cx='62' cy='36' r='11' fill='none' stroke='#f5f6fa' stroke-width='2'/><circle cx='84' cy='46' r='6' fill='none' stroke='#f5f6fa' stroke-width='2'/><circle cx='94' cy='28' r='5' fill='none' stroke='#f5f6fa' stroke-width='2'/><path d='M96 64 q-6 10 0 12 q6 -2 0 -12Z' fill='#90e0ef'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>temizlik sağlıktır</text></svg>",
+      "aciklama": "Kişisel hijyene (temizliğe) özen göstermek sağlıklı yaşam için çok önemlidir.",
+      "ek": "Kitaptaki etkinlikte, idrar yolu rahatsızlıkları yaşamamak için kişisel hijyene dikkat etmemiz gerektiği belirtiliyor.",
+      "akilda": "Temizlik idrar yolunu korur",
+      "soru": {
+        "soru": "İdrar yolu rahatsızlıkları yaşamamak için neye dikkat etmeliyiz?",
+        "secenekler": [
+          "Kişisel hijyenimize",
+          "Hiç su içmemeye",
+          "Bol tuz yemeye"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ek kısmında idrar yolu rahatsızlıkları geçiyor.",
+        "aciklama": "İdrar yolu rahatsızlıkları yaşamamak için kişisel hijyene dikkat etmeliyiz. (s. 137, 138)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Boşaltım sistemine iyi mi gelir, zarar mı verir?",
+      "kutular": [
+        {
+          "etiket": "İyi gelir",
+          "uyeler": [
+            "Yeterli Su İçmek",
+            "Dengeli Beslenme",
+            "Sportif Faaliyetler",
+            "Sosyal Faaliyetler",
+            "Kişisel Hijyen"
+          ]
+        },
+        {
+          "etiket": "Zarar verir",
+          "uyeler": [
+            "Teknoloji Bağımlılığı"
+          ]
+        }
+      ]
+    }
+  ],
+  "biliyorMusun": [
+    "Kitaptaki Uygar Bey'de boşaltım sistemi rahatsızlığı bulundu. Doktor ona yeterince su içmesini önerdi ve tedavi sonunda sağlığına kavuştu. (s. 135)",
+    "Böbrek yetmezliği olan Mehmet haftada üç gün diyaliz merkezine gidiyordu. Böbrek nakli olduktan sonra diyaliz, seyahat engeli ve su içme kısıtlaması gibi sıkıntıları geride kaldı. (s. 139)"
+  ],
+  "akildaKalsin": [
+    "Gün içinde yeterli su iç; az da çok da böbreği zorlar.",
+    "Tuz ve protein ağırlıklı beslenme böbrekleri daha çok çalıştırır.",
+    "Düzenli spor kan dolaşımını hızlandırır, böbrekler daha sağlıklı çalışır.",
+    "Sosyal faaliyetler stresten uzak tutar.",
+    "Ekran başında uzun süre hareketsiz kalma.",
+    "Kişisel hijyene özen göster."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Susamadığım sürece su içmesem olur mu?",
+      "cevap": "Kitaba göre gün içinde yeterli miktarda su içmeliyiz. Yeterli su; böbrek taşı ve idrar yolu enfeksiyonlarını azaltır, vücudun sıvı dengesini korur ve vücut sıcaklığını düzenler. (s. 137, 138)"
+    },
+    {
+      "soru": "Çok fazla su içmek daha mı iyi?",
+      "cevap": "Hayır. Gereğinden fazla su içmek böbreklerin daha çok çalışmasına neden olur. Önemli olan yeterli miktarda içmektir. (s. 137)"
+    },
+    {
+      "soru": "Bilgisayar oyunu böbreklerimi nasıl etkiler?",
+      "cevap": "Ekran başında uzun süre hareketsiz kalmak kan akış hızını yavaşlatabilir. Oyun sırasında az su içmek, stres ve uykusuzluk da böbreklerin verimli çalışmasını engelleyebilir. (s. 137)"
+    },
+    {
+      "soru": "Stres böbrekleri neden ilgilendirir?",
+      "cevap": "Kitaba göre stres vücutta birçok olumsuz etkiye yol açabilir. Sosyal faaliyetler stresten uzak kalmamıza yardım eder; bu da boşaltım sisteminin sağlığını korur. (s. 137)"
+    },
+    {
+      "soru": "Böbrekleri çalışmayan biri nasıl yaşar?",
+      "cevap": "Kitaptaki Mehmet böbrek yetmezliği yüzünden haftada üç gün diyaliz merkezindeki makinelere bağlanıyordu. Uygun donör bulunup böbrek nakli yapılınca bu sıkıntılar geride kaldı. (s. 139)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Boşaltım sisteminin sağlığını olumsuz etkileyen bir alışkanlığını düşün. Bu alışkanlığı düzeltmek için hayatında neyi değiştirebilirsin?",
+      "ornekCevap": "Ders çalışırken su içmeyi unutuyorum ve uzun süre ekran başında oturuyorum. Masama bir şişe su koyup gün içinde düzenli içeceğim. Ekran süremi sınırlayıp ara verip hareket edeceğim, haftada birkaç gün spor yapacağım. Cips gibi tuzlu yiyecekleri de azaltacağım.",
+      "anahtarlar": [
+        "su",
+        "tuz",
+        "spor",
+        "egzersiz",
+        "ekran",
+        "hijyen",
+        "hareket"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "'Büyüme ve gelişimimiz için bol bol tuzlu gıdalar yemeliyiz.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Yanlıştır",
+        "Sadece yazın doğrudur"
+      ],
+      "dogru": 1,
+      "ipucu": "Dengeli Beslenme kartında tuzlu gıdaların böbreklere etkisi yazıyordu.",
+      "aciklama": "Yanlıştır. Tuz ağırlıklı gıdalarla beslenmek böbreklerin daha çok çalışmasına neden olur. (s. 137, 138)"
+    },
+    {
+      "soru": "'Susamadığımız sürece su içmemeliyiz.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Sadece kışın doğrudur",
+        "Yanlıştır"
+      ],
+      "dogru": 2,
+      "ipucu": "Yeterli Su İçmek kartında 'gün içinde' ne yapmamız gerektiği yazıyordu.",
+      "aciklama": "Yanlıştır. Gün içinde yeterli miktarda su içmeliyiz. (s. 137, 138)"
+    },
+    {
+      "soru": "'Aşırı protein alımından uzak durmalıyız.' ifadesi için ne söylenebilir?",
+      "secenekler": [
+        "Doğrudur",
+        "Yanlıştır",
+        "Hiçbir etkisi yoktur"
+      ],
+      "dogru": 0,
+      "ipucu": "Dengeli Beslenme kartında protein ağırlıklı gıdaların böbreğe etkisi yazıyordu.",
+      "aciklama": "Doğrudur. Protein ağırlıklı gıdalarla beslenmek böbreklerin daha çok çalışmasına neden olur. (s. 137, 138)"
+    },
+    {
+      "soru": "Hangisi yeterli su içmenin faydalarından biridir?",
+      "secenekler": [
+        "Bağırsakları yavaşlatır",
+        "Vücut sıcaklığını düzenler",
+        "Böbrek taşı oluşumunu artırır"
+      ],
+      "dogru": 1,
+      "ipucu": "Yeterli Su İçmek kartının ek kısmını hatırla.",
+      "aciklama": "Yeterli su vücut sıcaklığını düzenler, sıvı dengesini korur ve bağırsakların düzenli çalışmasını sağlar. (s. 137)"
+    },
+    {
+      "soru": "Gereğinden fazla su içmek böbrekleri nasıl etkiler?",
+      "secenekler": [
+        "Böbrekleri tamamen dinlendirir",
+        "Böbrekleri küçültür",
+        "Böbreklerin daha çok çalışmasına neden olur"
+      ],
+      "dogru": 2,
+      "ipucu": "Dengeli Beslenme kartının ek kısmında suyun fazlası da anlatılıyordu.",
+      "aciklama": "Gereğinden fazla su içmek böbreklerin daha çok çalışmasına neden olur. (s. 137)"
+    },
+    {
+      "soru": "Düzenli egzersiz yapan birinde böbrekler için ne söylenebilir?",
+      "secenekler": [
+        "Daha yavaş çalışır",
+        "Çalışmayı bırakır",
+        "Daha sağlıklı çalışır"
+      ],
+      "dogru": 2,
+      "ipucu": "Sportif Faaliyetler kartının son cümlesine dön.",
+      "aciklama": "Düzenli egzersiz kan dolaşımını hızlandırır; böylece böbrekler daha sağlıklı çalışır. (s. 137)"
+    },
+    {
+      "soru": "Teknoloji bağımlılığı böbreklerin verimli çalışmasını hangi yolla engelleyebilir?",
+      "secenekler": [
+        "Su içmeyi azaltıp uykuyu bozarak",
+        "Spor yapmayı artırarak",
+        "Stresi azaltarak"
+      ],
+      "dogru": 0,
+      "ipucu": "Teknoloji Bağımlılığı kartının ek kısmında sayılanları hatırla.",
+      "aciklama": "Sıvı alımının azalması, stres, uyku bozuklukları ve bağırsak sorunları böbreklerin verimli çalışmasını engelleyebilir. (s. 137)"
+    },
+    {
+      "soru": "Uygar Bey'in doktoru boşaltım sistemi rahatsızlığı için ona ne önerdi?",
+      "secenekler": [
+        "Hiç hareket etmemesini",
+        "Yeterince su içmesini",
+        "Bol tuzlu yemesini"
+      ],
+      "dogru": 1,
+      "ipucu": "Su içmenin boşaltım sistemine faydalarını düşün.",
+      "aciklama": "Doktor, Uygar Bey'e yeterince su içmesini önerdi. (s. 135)"
+    },
+    {
+      "soru": "Hangisi boşaltım sisteminin sağlığını korumak için doğru bir davranıştır?",
+      "secenekler": [
+        "Ekran başında saatlerce oturmak",
+        "Arkadaşlarla sosyal faaliyetlere katılmak",
+        "Gün boyu su içmemek"
+      ],
+      "dogru": 1,
+      "ipucu": "Stresten uzak tutan faaliyet hangisiydi?",
+      "aciklama": "Sosyal faaliyetler stresten uzak kalmayı sağlar; bu, boşaltım sisteminin sağlığı için önemlidir. (s. 137)"
+    }
+  ]
+}

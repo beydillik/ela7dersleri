@@ -1,0 +1,322 @@
+{
+  "id": "u3k9",
+  "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+  "baslik": "Boşaltım Sistemi ve Organları",
+  "sayfalar": "s. 129–134",
+  "giris": "Vücudumuzda oluşan atıklar ve fazla su nasıl dışarı atılır? Bu konuda boşaltım sistemini oluşturan dört yapı ve organı, idrarın yolculuğunu ve boşaltıma yardım eden diğer organları öğreneceğiz.",
+  "kavramlar": [
+    {
+      "ad": "Boşaltım Sistemi",
+      "renk": "#f4a261",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M34 18 C18 18 14 46 30 54 C38 58 42 50 38 44 C35 40 35 36 39 32 C44 26 42 18 34 18Z' fill='#c1121f'/><path d='M86 18 C102 18 106 46 90 54 C82 58 78 50 82 44 C85 40 85 36 81 32 C76 26 78 18 86 18Z' fill='#c1121f'/><path d='M38 44 Q46 62 54 72 M82 44 Q74 62 66 72' stroke='#ffd166' stroke-width='3' fill='none'/><path d='M46 70 Q60 62 74 70 Q78 88 60 92 Q42 88 46 70Z' fill='#f4a261'/><path d='M60 92 V104' stroke='#ffd166' stroke-width='4' stroke-linecap='round'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>4 yapı ve organ</text></svg>",
+      "aciklama": "Kanı süzerek kandaki atıkları ve fazla suyu vücuttan atan sisteme boşaltım sistemi denir.",
+      "ek": "Boşaltım sistemi; böbrekler, üreter (idrar borusu), mesane (idrar kesesi) ve üretra (idrar kanalı) olmak üzere birbiriyle uyumlu çalışan dört yapı ve organdan oluşur.",
+      "akilda": "Kanı süz, atığı at",
+      "soru": {
+        "soru": "Boşaltım sistemi kandaki neleri vücuttan atar?",
+        "secenekler": [
+          "Besinleri ve oksijeni",
+          "Atıkları ve fazla suyu",
+          "Alyuvarları"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartındaki tanımda kandan atılan iki şey yazıyor.",
+        "aciklama": "Boşaltım sistemi kanı süzerek kandaki atıkları ve fazla suyu vücuttan atar. (s. 130)"
+      }
+    },
+    {
+      "ad": "Böbrekler",
+      "renk": "#c1121f",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 14 C30 14 24 66 52 78 C64 84 70 70 62 60 C57 54 57 46 62 40 C70 30 72 14 60 14Z' fill='#c1121f'/><path d='M8 30 H40' stroke='#e63946' stroke-width='4'/><path d='M34 24 L42 30 L34 36' fill='none' stroke='#e63946' stroke-width='4'/><path d='M66 42 H100' stroke='#ff8fa3' stroke-width='4'/><path d='M94 36 L102 42 L94 48' fill='none' stroke='#ff8fa3' stroke-width='4'/><text x='100' y='32' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>yararlı</text><path d='M58 80 V96' stroke='#ffd166' stroke-width='4'/><circle cx='58' cy='100' r='4' fill='#ffd166'/><text x='86' y='96' font-size='7' fill='#ffd166' text-anchor='middle' font-family='sans-serif'>atık=idrar</text><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kanı süzer</text></svg>",
+      "aciklama": "Böbrekler kanı süzer (filtreler); yararlı maddeleri tekrar kana geçirir, fazla su, tuz, vitamin, hormon ve üre gibi atıkları kandan uzaklaştırır.",
+      "ek": "Kandan süzülen bu atık maddeler idrarı oluşturur.",
+      "akilda": "Böbrek = kanın süzgeci",
+      "soru": {
+        "soru": "Böbreklerde kandan süzülen atık maddeler neyi oluşturur?",
+        "secenekler": [
+          "Teri",
+          "Kanı",
+          "İdrarı"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartının ek kısmında atıkların neye dönüştüğü yazıyor.",
+        "aciklama": "Böbreklerde kandan süzülen atık maddeler idrarı oluşturur. (s. 132)"
+      }
+    },
+    {
+      "ad": "Üreter (İdrar Borusu)",
+      "renk": "#ffd166",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M34 18 C18 18 14 46 30 54 C38 58 42 50 38 44 C35 40 35 36 39 32 C44 26 42 18 34 18Z' fill='#c1121f'/><path d='M86 18 C102 18 106 46 90 54 C82 58 78 50 82 44 C85 40 85 36 81 32 C76 26 78 18 86 18Z' fill='#c1121f'/><path d='M38 44 Q46 64 54 78 M82 44 Q74 64 66 78' stroke='#ffd166' stroke-width='5' fill='none'/><circle cx='45' cy='60' r='3' fill='#f5f6fa'/><circle cx='75' cy='60' r='3' fill='#f5f6fa'/><path d='M46 78 Q60 72 74 78 Q76 94 60 96 Q44 94 46 78Z' fill='#8d99ae'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>böbrek → mesane</text></svg>",
+      "aciklama": "Üreter (idrar borusu), böbreklerde oluşan idrarı mesaneye (idrar kesesine) ileten boru şeklindeki yapıdır.",
+      "akilda": "Boru: böbrekten keseye",
+      "soru": {
+        "soru": "Üreter (idrar borusu) idrarı nereye iletir?",
+        "secenekler": [
+          "Mesaneye (idrar kesesine)",
+          "Akciğerlere",
+          "Kalbe"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartında idrar borusunun idrarı nereye taşıdığı yazıyor.",
+        "aciklama": "Üreter, böbreklerde oluşan idrarı mesaneye iletir. (s. 132)"
+      }
+    },
+    {
+      "ad": "Mesane (İdrar Kesesi)",
+      "renk": "#9b5de5",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M50 14 Q50 26 40 30 M70 14 Q70 26 80 30' stroke='#ffd166' stroke-width='4' fill='none'/><path d='M30 40 Q60 22 90 40 Q100 80 60 90 Q20 80 30 40Z' fill='none' stroke='#9b5de5' stroke-width='5'/><path d='M26 62 Q60 58 94 62 Q92 82 60 88 Q28 82 26 62Z' fill='#ffd166' opacity='0.85'/><path d='M60 90 V100' stroke='#9b5de5' stroke-width='4'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>idrar depolanır</text></svg>",
+      "aciklama": "Mesane (idrar kesesi), idrarın vücut dışına atılıncaya kadar depolandığı yerdir.",
+      "ek": "Mesane kaslı bir yapıya sahiptir. Belirli bir doluluğa ulaşınca boşaltım (tuvalete gitme) ihtiyacı oluşur.",
+      "akilda": "Kese idrarı biriktirir",
+      "soru": {
+        "soru": "Mesane belirli bir doluluğa ulaşınca ne olur?",
+        "secenekler": [
+          "İdrar böbreğe geri döner",
+          "Boşaltım ihtiyacı oluşur",
+          "Kan süzülmeye başlar"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ek kısmının son cümlesini oku.",
+        "aciklama": "Kaslı yapıdaki idrar kesesi belirli bir doluluğa ulaşınca boşaltım ihtiyacı oluşur. (s. 132)"
+      }
+    },
+    {
+      "ad": "Üretra (İdrar Kanalı)",
+      "renk": "#2a9d8f",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M34 22 Q60 8 86 22 Q92 50 60 56 Q28 50 34 22Z' fill='#9b5de5'/><path d='M34 36 Q60 32 86 36 Q86 50 60 54 Q34 50 34 36Z' fill='#ffd166'/><path d='M60 56 V88' stroke='#2a9d8f' stroke-width='8'/><circle cx='60' cy='68' r='2.5' fill='#ffd166'/><circle cx='60' cy='78' r='2.5' fill='#ffd166'/><path d='M50 88 L60 100 L70 88' fill='none' stroke='#f5f6fa' stroke-width='4'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>vücut dışına</text></svg>",
+      "aciklama": "Üretra (idrar kanalı), idrar kesesinde biriken idrarın vücuttan uzaklaştırılmasını sağlayan kanaldır.",
+      "akilda": "Kanal: dışarıya çıkış",
+      "soru": {
+        "soru": "İdrar kesesinde biriken idrar hangi yapı yardımıyla vücuttan atılır?",
+        "secenekler": [
+          "Üreter (idrar borusu)",
+          "Böbrek",
+          "Üretra (idrar kanalı)"
+        ],
+        "dogru": 2,
+        "ipucu": "Bilgi kartında idrarı dışarı çıkaran kanalın adı yazıyor.",
+        "aciklama": "İdrar kesesinde biriktirilen idrar, üretra (idrar kanalı) yardımıyla vücuttan uzaklaştırılır. (s. 132)"
+      }
+    },
+    {
+      "ad": "Deri",
+      "renk": "#e9c46a",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 70 H110 V96 H10Z' fill='#e9c46a'/><path d='M10 70 H110' stroke='#f4a261' stroke-width='4'/><path d='M36 70 V56 M60 70 V50 M84 70 V58' stroke='#f4a261' stroke-width='2'/><path d='M36 50 q-6 10 0 12 q6 -2 0 -12Z M60 42 q-7 11 0 14 q7 -3 0 -14Z M84 52 q-6 10 0 12 q6 -2 0 -12Z' fill='#90e0ef'/><rect x='94' y='14' width='8' height='30' rx='4' fill='#f5f6fa'/><circle cx='98' cy='46' r='6' fill='#e63946'/><rect x='96' y='26' width='4' height='18' fill='#e63946'/><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>terleme</text></svg>",
+      "aciklama": "Deri, boşaltıma yardımcı bir organdır. Vücuttaki su ve tuzun bir kısmı terleme yoluyla vücuttan uzaklaştırılır.",
+      "ek": "Terleme aynı zamanda vücut sıcaklığını dengeler.",
+      "akilda": "Ter = su + tuz",
+      "soru": {
+        "soru": "Terleme ile vücuttan ne atılır?",
+        "secenekler": [
+          "Su ve tuzun bir kısmı",
+          "Karbon dioksit",
+          "Sindirilmeyen besinler"
+        ],
+        "dogru": 0,
+        "ipucu": "Bilgi kartının ikinci cümlesinde terlemeyle atılan iki madde yazıyor.",
+        "aciklama": "Vücuttaki su ve tuzun bir kısmı terleme yoluyla vücuttan uzaklaştırılır. (s. 133)"
+      }
+    },
+    {
+      "ad": "Diğer Yardımcı Organlar",
+      "renk": "#90e0ef",
+      "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 14 V24 M24 24 Q14 24 12 40 Q12 50 22 48 Q26 46 24 30 M24 24 Q34 24 36 40 Q36 50 26 48' stroke='#ff8fa3' stroke-width='3' fill='#ff8fa3'/><text x='24' y='62' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>akciğer</text><path d='M48 18 H74 V44 H48Z M54 26 Q62 20 68 26 Q62 34 56 30 Q62 38 68 36' fill='none' stroke='#e9c46a' stroke-width='4'/><text x='61' y='62' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>kalın bağ.</text><path d='M84 30 Q96 14 110 24 Q112 40 96 44 Q84 44 84 30Z' fill='#8d5524'/><text x='98' y='62' font-size='7' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>karaciğer</text><text x='24' y='80' font-size='6.5' fill='#90e0ef' text-anchor='middle' font-family='sans-serif'>CO₂ +</text><text x='24' y='89' font-size='6.5' fill='#90e0ef' text-anchor='middle' font-family='sans-serif'>su buharı</text><text x='61' y='80' font-size='6.5' fill='#90e0ef' text-anchor='middle' font-family='sans-serif'>artık</text><text x='61' y='89' font-size='6.5' fill='#90e0ef' text-anchor='middle' font-family='sans-serif'>besin</text><text x='98' y='80' font-size='6.5' fill='#90e0ef' text-anchor='middle' font-family='sans-serif'>zararlıyı</text><text x='98' y='89' font-size='6.5' fill='#90e0ef' text-anchor='middle' font-family='sans-serif'>azaltır</text><text x='60' y='113' font-size='8' fill='#f5f6fa' text-anchor='middle' font-family='sans-serif'>boşaltıma yardım</text></svg>",
+      "aciklama": "Akciğerler, solunum sonucu oluşan karbon dioksit ve su buharını; kalın bağırsak, sindirilmeyen besinleri ve fazla suyu vücuttan atar.",
+      "ek": "Karaciğer de boşaltıma yardımcıdır: Sindirim sonucu oluşan zararlı maddelerin daha az zararlı maddelere dönüşmesini sağlar.",
+      "akilda": "Akciğer, bağırsak, karaciğer yardımcı",
+      "soru": {
+        "soru": "Karbon dioksit ve su buharı hangi organ yoluyla vücuttan atılır?",
+        "secenekler": [
+          "Kalın bağırsak",
+          "Akciğerler",
+          "Mesane"
+        ],
+        "dogru": 1,
+        "ipucu": "Bilgi kartının ilk cümlesinde karbon dioksidi atan organ yazıyor.",
+        "aciklama": "Akciğerler, solunum sonucu oluşan karbon dioksit ve su buharının vücuttan atılmasını sağlar. (s. 133)"
+      }
+    }
+  ],
+  "gruplar": [
+    {
+      "soru": "Boşaltım sisteminin kendi organı mı, boşaltıma yardımcı organ mı?",
+      "kutular": [
+        {
+          "etiket": "Boşaltım sistemi",
+          "uyeler": [
+            "Böbrekler",
+            "Üreter (İdrar Borusu)",
+            "Mesane (İdrar Kesesi)",
+            "Üretra (İdrar Kanalı)"
+          ]
+        },
+        {
+          "etiket": "Boşaltıma yardımcı",
+          "uyeler": [
+            "Deri",
+            "Diğer Yardımcı Organlar"
+          ]
+        }
+      ]
+    }
+  ],
+  "biliyorMusun": [
+    "Böbrekler kanı süzerken her şeyi atmaz; yararlı maddelerin tekrar kana geçmesini sağlar. (s. 132)",
+    "Terleme sadece atık atmaz, vücut sıcaklığını da dengeler. (s. 133)",
+    "İdrar kesesi kaslı bir yapıdadır; bu yüzden idrar biriktikçe genişleyebilir ve dolunca tuvalete gitme ihtiyacı duyarız. (s. 132)"
+  ],
+  "akildaKalsin": [
+    "Boşaltım sistemi kanı süzerek atıkları ve fazla suyu vücuttan atar.",
+    "Dört yapı ve organ: böbrekler, üreter, mesane, üretra.",
+    "İdrarın yolu: böbrek → üreter → mesane → üretra → dışarı.",
+    "Böbrekler yararlı maddeleri kana geri verir, atıklardan idrar oluşur.",
+    "Deri (terleme), akciğerler, kalın bağırsak ve karaciğer boşaltıma yardım eder."
+  ],
+  "merakKutusu": [
+    {
+      "soru": "Bora çok su içtiği hâlde neden tuvalete gitme ihtiyacı duymadı?",
+      "cevap": "Bora maçta çok terlemişti. Vücuttaki su ve tuzun bir kısmı terleme yoluyla deriden atılır. Suyun bir kısmı ter olarak atıldığı için idrar kesesi geç doldu. (s. 129, 133)"
+    },
+    {
+      "soru": "Böbrekler kandaki her şeyi dışarı atar mı?",
+      "cevap": "Hayır. Böbrekler kanı süzerken yararlı maddelerin tekrar kana geçmesini sağlar; yalnızca fazla su, tuz, vitamin, hormon, üre gibi atıkları uzaklaştırır. (s. 132)"
+    },
+    {
+      "soru": "Neden tuvalete her an değil de belli aralıklarla gideriz?",
+      "cevap": "İdrar, dışarı atılıncaya kadar idrar kesesinde (mesane) depolanır. Kese belirli bir doluluğa ulaşınca boşaltım ihtiyacı oluşur. (s. 132)"
+    },
+    {
+      "soru": "Nefes verirken de boşaltım yapıyor muyuz?",
+      "cevap": "Evet. Akciğerler, solunum sonucu oluşan karbon dioksit ve su buharının vücuttan atılmasını sağlar. (s. 133)"
+    },
+    {
+      "soru": "Karaciğerin boşaltımla ne ilgisi var?",
+      "cevap": "Karaciğer boşaltıma yardımcı bir organdır. Sindirim sonucu oluşan zararlı maddelerin daha az zararlı maddelere dönüşmesini sağlar. (s. 133)"
+    }
+  ],
+  "dusunVeYaz": [
+    {
+      "soru": "Bir bardak su içtin. Bir süre sonra tuvalete gitme ihtiyacı duydun. Bu sırada boşaltım sistemindeki yapı ve organlar sırasıyla ne iş yaptı?",
+      "ornekCevap": "Önce böbrekler kanı süzdü; fazla su ve atıklardan idrar oluştu. İdrar borusu (üreter) idrarı idrar kesesine (mesane) taşıdı. Kese dolunca tuvalete gitme ihtiyacı oluştu. Sonra idrar, idrar kanalıyla (üretra) vücut dışına atıldı.",
+      "anahtarlar": [
+        "böbre",
+        "süz",
+        "boru",
+        "kese",
+        "kanal"
+      ]
+    }
+  ],
+  "sorular": [
+    {
+      "soru": "İdrarın vücuttaki yolu hangi sırayla doğru verilmiştir?",
+      "secenekler": [
+        "Mesane → böbrek → üretra → üreter",
+        "Böbrek → üreter → mesane → üretra",
+        "Üreter → böbrek → üretra → mesane"
+      ],
+      "dogru": 1,
+      "ipucu": "İdrar önce oluşur, sonra taşınır, sonra depolanır, en son dışarı atılır.",
+      "aciklama": "İdrar böbreklerde oluşur, üreterle mesaneye taşınır, mesanede depolanır, üretrayla dışarı atılır. (s. 132)"
+    },
+    {
+      "soru": "Boşaltım sistemi kaç temel yapı ve organdan oluşur?",
+      "secenekler": [
+        "İki",
+        "Dört",
+        "Altı"
+      ],
+      "dogru": 1,
+      "ipucu": "Boşaltım Sistemi kartındaki ek bilgiyi hatırla.",
+      "aciklama": "Böbrekler, üreter, mesane ve üretra olmak üzere dört temel yapı ve organdan oluşur. (s. 132)"
+    },
+    {
+      "soru": "Kanı süzen (filtreleyen) organ hangisidir?",
+      "secenekler": [
+        "Böbrekler",
+        "Mesane",
+        "Üretra"
+      ],
+      "dogru": 0,
+      "ipucu": "Böbrekler kartında 'kanın süzgeci' diye bir not vardı.",
+      "aciklama": "Böbrekler kanı süzerek (filtreleyerek) atıkları kandan uzaklaştırır. (s. 132)"
+    },
+    {
+      "soru": "İdrarın vücut dışına atılıncaya kadar depolandığı yer neresidir?",
+      "secenekler": [
+        "Üreter (idrar borusu)",
+        "Böbrek",
+        "Mesane (idrar kesesi)"
+      ],
+      "dogru": 2,
+      "ipucu": "Depolamak, biriktirmek demektir. Hangi organ 'kese'ydi?",
+      "aciklama": "İdrar, vücut dışına atılıncaya kadar mesanede (idrar kesesi) depolanır. (s. 132)"
+    },
+    {
+      "soru": "Aşağıdakilerden hangisi böbreklerin kandan uzaklaştırdığı maddelerden biri DEĞİLDİR?",
+      "secenekler": [
+        "Üre",
+        "Karbon dioksit",
+        "Fazla su"
+      ],
+      "dogru": 1,
+      "ipucu": "Karbon dioksidi hangi organın attığını Diğer Yardımcı Organlar kartında görmüştün.",
+      "aciklama": "Böbrekler fazla su, tuz, vitamin, hormon ve üre gibi atıkları uzaklaştırır. Karbon dioksidi akciğerler atar. (s. 132, 133)"
+    },
+    {
+      "soru": "Terlemenin vücuda katkılarından biri hangisidir?",
+      "secenekler": [
+        "Kanı süzer",
+        "İdrarı depolar",
+        "Vücut sıcaklığını dengeler"
+      ],
+      "dogru": 2,
+      "ipucu": "Deri kartının ek kısmını hatırla.",
+      "aciklama": "Terleme ile su ve tuzun bir kısmı atılır; terleme aynı zamanda vücut sıcaklığını dengeler. (s. 133)"
+    },
+    {
+      "soru": "Sindirilmeyen besinlerin ve fazla suyun vücuttan atılmasını sağlayan organ hangisidir?",
+      "secenekler": [
+        "Kalın bağırsak",
+        "Deri",
+        "Böbrek"
+      ],
+      "dogru": 0,
+      "ipucu": "Diğer Yardımcı Organlar kartının ilk cümlesine dön.",
+      "aciklama": "Kalın bağırsak, sindirilmeyen besinlerin ve fazla suyun vücuttan atılmasını sağlar. (s. 133)"
+    },
+    {
+      "soru": "Sindirim sonucu oluşan zararlı maddeleri daha az zararlı hâle getiren organ hangisidir?",
+      "secenekler": [
+        "Akciğerler",
+        "Karaciğer",
+        "Mesane"
+      ],
+      "dogru": 1,
+      "ipucu": "Diğer Yardımcı Organlar kartının ek kısmında bu organ anlatılıyor.",
+      "aciklama": "Karaciğer, sindirim sonucu oluşan zararlı maddelerin daha az zararlı maddelere dönüşmesini sağlar. (s. 133)"
+    },
+    {
+      "soru": "Böbreklerde oluşan idrarı mesaneye ileten boru şeklindeki yapı hangisidir?",
+      "secenekler": [
+        "Üretra (idrar kanalı)",
+        "Kılcal damar",
+        "Üreter (idrar borusu)"
+      ],
+      "dogru": 2,
+      "ipucu": "Adında 'boru' geçen yapıyı düşün.",
+      "aciklama": "Üreter (idrar borusu), böbreklerde oluşan idrarı mesaneye iletir. (s. 132)"
+    },
+    {
+      "soru": "Bora maçta çok terledi. Çok su içmesine rağmen idrara sıkışmadı. Bunun nedeni ne olabilir?",
+      "secenekler": [
+        "Suyun bir kısmı terle atıldı",
+        "Böbrekleri çalışmayı bıraktı",
+        "Su akciğerlerde depolandı"
+      ],
+      "dogru": 0,
+      "ipucu": "Deri kartında terlemeyle neyin atıldığını hatırla.",
+      "aciklama": "Vücuttaki su ve tuzun bir kısmı terleme yoluyla atılır; bu yüzden idrar kesesi daha geç dolar. (s. 129, 133)"
+    }
+  ]
+}
