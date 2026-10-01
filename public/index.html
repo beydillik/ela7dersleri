@@ -4,53 +4,187 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ela'nın 7. Sınıf Defteri</title>
+<meta name="theme-color" content="#f2f6fc">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
-<link rel="stylesheet" href="ortak/defter.css">
 <style>
-  .home { padding-block: 28px 60px; display: grid; gap: 26px; }
-  .intro-text { max-width: 60ch; margin: 0; font-size: 1.05em; }
-  .term { display: grid; gap: 12px; }
-  .term h2 { font-size: 26px; }
-  .subjects { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
-  .subj { background: var(--surface); border-radius: 20px; box-shadow: var(--shadow); padding: 16px; display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; text-decoration: none; color: inherit; border: 2px solid transparent; }
-  a.subj:hover { border-color: var(--accent); }
-  .subj .m { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; font-family: var(--display); font-size: 26px; font-weight: 800; color: #fff; }
-  .subj .m svg { width: 64px; height: 64px; }
-  .subj h3 { font-size: 22px; }
-  .subj p { margin: 2px 0 0; font-size: 15px; color: var(--muted); font-weight: 700; }
-  .subj.off { opacity: .6; box-shadow: none; border: 2px dashed var(--line); }
+  /* Ana sayfa teması: kareli defter kâğıdı. Ders sayfalarının temasından bağımsızdır. */
+  :root {
+    --paper: #f2f6fc;
+    --grid: #dbe4f2;
+    --ink: #1f2a44;
+    --muted: #5d6a85;
+    --card: #ffffff;
+    --margin: #f08a8a;
+    --pencil: #ffcf3f;
+    --display: "Baloo 2", "Nunito", system-ui, sans-serif;
+    --body: "Nunito", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; color: var(--ink); font: 17px/1.5 var(--body);
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+    min-height: 100vh;
+  }
+  .wrap { width: min(1180px, 100% - 32px); margin-inline: auto; }
+
+  /* Başlık */
+  .top { padding: 44px 0 10px; position: relative; }
+  .top::before { /* defterin kırmızı kenar çizgisi */
+    content: ""; position: absolute; left: -14px; top: 0; bottom: -20px; width: 2px; background: var(--margin); opacity: .55;
+  }
+  .grade { display: inline-block; font: 800 15px/1 var(--body); background: var(--ink); color: #fff; padding: 7px 12px; border-radius: 999px; }
+  h1 { font: 800 clamp(38px, 7vw, 68px)/1.02 var(--display); margin: 14px 0 0; letter-spacing: -.5px; }
+  h1 .line { position: relative; display: inline-block; }
+  h1 .line svg { position: absolute; left: -2%; bottom: -6px; width: 104%; height: 18px; }
+  .intro { max-width: 58ch; margin: 18px 0 0; font-size: 18px; color: var(--muted); }
+  .intro b { color: var(--ink); }
+
+  .term { margin-top: 34px; }
+  .term h2 { font: 800 28px/1.1 var(--display); margin: 0 0 14px; }
+
+  /* Ders defterleri */
+  .books { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(330px, 100%), 1fr)); gap: 22px; }
+  .nb {
+    --c: #888; position: relative; display: flex; flex-direction: column;
+    background: var(--card); border-radius: 6px 18px 18px 6px; padding: 22px 22px 0 40px;
+    box-shadow: 0 1px 0 #c9d4e6, 0 10px 24px -14px rgba(31, 42, 68, .45);
+    min-height: 360px;
+  }
+  .nb::before { /* renkli cilt sırtı */
+    content: ""; position: absolute; inset: 0 auto 0 0; width: 20px; border-radius: 6px 0 0 6px;
+    background: var(--c);
+    background-image: radial-gradient(circle at 10px 12px, rgba(255,255,255,.75) 3px, transparent 3.5px);
+    background-size: 20px 24px;
+  }
+  .nb-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; position: relative; z-index: 1; }
+  .nb h3 { font: 800 30px/1.05 var(--display); margin: 0; color: var(--c); filter: saturate(1.1) brightness(.85); }
+  .nb .count { font-weight: 800; font-size: 14px; color: var(--muted); white-space: nowrap; }
+
+  .units { list-style: none; margin: 16px 0 18px; padding: 0; display: grid; gap: 2px; position: relative; z-index: 1; }
+  .units a, .units .u {
+    display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; align-items: center;
+    padding: 10px 0; text-decoration: none; color: inherit;
+    border-bottom: 2px dotted var(--grid);
+  }
+  .units li:last-child a, .units li:last-child .u { border-bottom: 0; }
+  .units .no { grid-column: 1; font-size: 13px; font-weight: 800; color: var(--c); filter: brightness(.8); }
+  .units .name { grid-column: 1; font-weight: 800; font-size: 18px; line-height: 1.25; }
+  .units .st { grid-column: 2; grid-row: 1 / span 2; font-size: 13px; font-weight: 800; padding: 4px 9px; border-radius: 999px; background: var(--paper); color: var(--muted); }
+  .units .st.full { background: var(--c); color: #fff; }
+  .units a:hover .name, .units a:focus-visible .name { text-decoration: underline; text-decoration-color: var(--c); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+  .units a:focus-visible { outline: 3px solid var(--c); outline-offset: 2px; border-radius: 6px; }
+  .empty { margin: 16px 0 18px; color: var(--muted); font-weight: 700; flex: 1; }
+  .empty b { color: var(--ink); }
+
+  .open { align-self: flex-start; margin: auto 0 16px; font: 800 16px/1 var(--body); text-decoration: none; color: #fff; background: var(--c); padding: 11px 16px; border-radius: 12px; position: relative; z-index: 1; }
+  .open:hover { filter: brightness(.92); }
+  .open:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+  .robot {
+    margin: 0 -22px 0 -20px; padding: 12px 22px 14px 20px; display: flex; align-items: center; gap: 12px;
+    border-top: 2px solid var(--paper); border-radius: 0 0 18px 0; position: relative; z-index: 1;
+    font-weight: 700; color: var(--muted);
+  }
+  .robot b { color: var(--ink); font-weight: 800; }
+  .robot .m { width: 46px; height: 46px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 800 22px/1 var(--display); color: #fff; background: var(--c); }
+  .robot .m svg { width: 46px; height: 46px; display: block; }
+
+  .nb.soon { box-shadow: 0 1px 0 #c9d4e6; background: rgba(255, 255, 255, .78); }
+  .nb.soon h3 { filter: saturate(.6); }
+
+  footer { margin: 46px auto 0; padding: 18px 0 40px; border-top: 2px solid var(--grid); color: var(--muted); font-size: 15px; font-weight: 600; }
+  footer p { margin: 0; }
+
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .top { padding-top: 30px; }
+    .top::before { display: none; }
+    .nb { padding-left: 34px; min-height: 0; }
+    .nb::before { width: 16px; background-size: 16px 24px; background-image: radial-gradient(circle at 8px 12px, rgba(255,255,255,.75) 2.5px, transparent 3px); }
+    .nb h3 { font-size: 26px; }
+    .robot { margin-left: -14px; padding-left: 14px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    h1 .line path { stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw .9s .25s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+  }
 </style>
 </head>
 <body>
-<header class="masthead">
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="wrap"><div class="brand"><div class="eyebrow">7. Sınıf · 2026–2027</div><h1>Ela'nın 7. Sınıf Defteri</h1></div></div>
+<header class="wrap top">
+  <span class="grade">7. Sınıf · 2026–2027</span>
+  <h1>Ela'nın <span class="line">Ders Defteri<svg viewBox="0 0 400 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C 90 4, 180 16, 260 8 S 360 6, 396 10" fill="none" stroke="#ffcf3f" stroke-width="8" stroke-linecap="round"/></svg></span></h1>
+  <p class="intro">Her dersin defterinde üniteler kitaptaki sırayla duruyor. Bir üniteye dokun, önce <b>Öğren</b> bölümünde konuyu adım adım çalış, sonra <b>Tekrar</b> ve <b>Test</b> ile pekiştir.</p>
 </header>
-<div class="wrap home">
-  <p class="intro-text">Her ders için konular kitaptaki sırayla burada. Önce <b>Öğren</b> bölümünde konuyu adım adım çalış, sonra <b>Tekrar</b> ve <b>Test</b> ile pekiştir.</p>
-  <section class="term">
-    <h2>1. Dönem</h2>
-    <div class="subjects">
-      <a class="subj" href="fen1/">
-        <span class="m"><svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' aria-hidden="true"><circle cx='32' cy='32' r='32' fill='#ff7a33'/><ellipse cx='32' cy='36' rx='26' ry='9' fill='none' stroke='#f2c14e' stroke-width='2.5' transform='rotate(-18 32 36)'/><path d='M32 8v8' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/><circle cx='32' cy='7' r='4' fill='#f2c14e'/><rect x='16' y='16' width='32' height='28' rx='10' fill='#f5f6fa'/><rect x='20' y='22' width='24' height='13' rx='6' fill='#1b2340'/><circle cx='27' cy='28.5' r='3.2' fill='#8ee3d6'/><circle cx='37' cy='28.5' r='3.2' fill='#8ee3d6'/><path d='M27 39q5 3.5 10 0' stroke='#1b2340' stroke-width='2.2' fill='none' stroke-linecap='round'/><rect x='22' y='44' width='20' height='10' rx='4' fill='#1b2340'/><circle cx='32' cy='49' r='2.5' fill='#f2c14e'/></svg></span>
-        <span><h3>Fen Bilimleri</h3><p>Robot: Kuark</p></span></a>
-      <div class="subj off"><span class="m" style="background:#1f9e8f">P</span><span><h3>Matematik</h3><p>Robot: Pisi · yakında</p></span></div>
-      <div class="subj off"><span class="m" style="background:#c99a06">H</span><span><h3>Türkçe</h3><p>Robot: Hece · yakında</p></span></div>
-      <a class="subj" href="sos1/">
-        <span class="m"><svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' aria-hidden="true"><circle cx='32' cy='32' r='32' fill='#e8a33d'/><ellipse cx='18' cy='46' rx='5' ry='4.5' fill='#6cc070'/><ellipse cx='38' cy='46' rx='5' ry='4.5' fill='#6cc070'/><path d='M9 41l-5 3 6 1z' fill='#6cc070'/><circle cx='51' cy='34' r='7.5' fill='#6cc070'/><circle cx='53.5' cy='31.5' r='1.7' fill='#1b2340'/><path d='M51 37.5q2.5 1.8 5 0' stroke='#1b2340' stroke-width='1.6' fill='none' stroke-linecap='round'/><path d='M6 43a22 21 0 0 1 44 0z' fill='#2f6f4f'/><rect x='5' y='41' width='46' height='5' rx='2.5' fill='#1f4d37'/><circle cx='28' cy='31' r='8' fill='#f5f6fa' stroke='#1f4d37' stroke-width='1.5'/><path d='M28 23.5l2.6 7.5h-5.2z' fill='#e0503a'/><path d='M28 38.5l2.6-7.5h-5.2z' fill='#1b2340'/><circle cx='28' cy='31' r='1.4' fill='#e8a33d'/></svg></span>
-        <span><h3>Sosyal Bilgiler</h3><p>Robot: Pusula</p></span></a>
-      <div class="subj off"><span class="m" style="background:#1d6fa3">P</span><span><h3>İngilizce</h3><p>Robot: Polly · yakında</p></span></div>
-    </div>
+
+<main class="wrap">
+  <section class="term" aria-labelledby="d1">
+    <h2 id="d1">1. Dönem</h2>
+    <div class="books" id="books"></div>
   </section>
-</div>
+</main>
+
+<footer class="wrap">
+  <p>Kaynak: MEB Fen Bilimleri 7. Sınıf Ders Kitabı, Ela BEYDİLLİ için hazırlandı,<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>
+</footer>
+
 <script>
 (() => {
-  const cv = document.getElementById("stars"), r = cv.getBoundingClientRect(), d = devicePixelRatio || 1;
-  cv.width = r.width * d; cv.height = r.height * d; const g = cv.getContext("2d"); g.scale(d, d);
-  let s = 7; const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
-  for (let i = 0; i < r.width / 6; i++) { g.globalAlpha = .35 + rnd() * .6; g.fillStyle = "#fff"; g.beginPath(); g.arc(rnd() * r.width, rnd() * r.height, rnd() * 1.4 + .3, 0, 7); g.fill(); }
+  // Dersler. "kod" verilenlerin ünite listesi ve robot çizimi kendi ders.json dosyasından okunur;
+  // yeni ders açıldığında buraya kodunu yazmak yeterli.
+  const DERSLER = [
+    { kod: "fen1", ders: "Fen Bilimleri",   bot: "Kuark",  renk: "#ff7a33" },
+    { kod: "sos1", ders: "Sosyal Bilgiler", bot: "Pusula", renk: "#2f8f5f" },
+    { kod: null,   ders: "Matematik",       bot: "Pisi",   renk: "#1f9e8f" },
+    { kod: null,   ders: "Türkçe",          bot: "Hece",   renk: "#c99a06" },
+    { kod: null,   ders: "İngilizce",       bot: "Polly",  renk: "#1d6fa3" }
+  ];
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const box = document.getElementById("books");
+
+  const robot = (x, svg) => `<div class="robot"><span class="m" aria-hidden="true">${svg || esc(x.bot[0])}</span>
+    <span>Dersin yardımcı robotu: <b>${esc(x.bot)}</b></span></div>`;
+
+  function kart(x, d) {
+    const head = (count) => `<div class="nb-head"><h3>${esc(x.ders)}</h3>${count ? `<span class="count">${count}</span>` : ""}</div>`;
+    if (!x.kod) {
+      return `<article class="nb soon" style="--c:${x.renk}">${head("yakında")}
+        <p class="empty">Kitap metni gelince üniteler burada görünecek.</p>${robot(x)}</article>`;
+    }
+    if (d === undefined) {
+      return `<article class="nb" style="--c:${x.renk}">${head("")}<p class="empty">Üniteler yükleniyor…</p>${robot(x)}</article>`;
+    }
+    if (!d) {
+      return `<article class="nb" style="--c:${x.renk}">${head("")}
+        <p class="empty">Ünite listesi şu an yüklenemedi. Derse girmek için aşağıdaki düğmeyi kullan.</p>
+        <a class="open" href="${x.kod}/">Derse git</a>${robot(x)}</article>`;
+    }
+    const units = d.uniteler.map(u => {
+      const m = /^(.+?):\s*(.+)$/.exec(u.ad) || [null, "", u.ad];
+      const hazir = u.konular.filter(k => k.hazir);
+      const st = `<span class="st${hazir.length === u.konular.length ? " full" : ""}">${hazir.length}/${u.konular.length} konu</span>`;
+      const inner = `<span class="no">${esc(m[1])}</span><span class="name">${esc(m[2])}</span>${st}`;
+      return hazir.length
+        ? `<li><a href="${x.kod}/#${encodeURIComponent(hazir[0].id)}">${inner}</a></li>`
+        : `<li><span class="u">${inner}</span></li>`;
+    }).join("");
+    const top = d.uniteler.reduce((a, u) => a + u.konular.length, 0);
+    return `<article class="nb" style="--c:${x.renk}">${head(`${d.uniteler.length} ünite · ${top} konu`)}
+      <ul class="units">${units}</ul>
+      <a class="open" href="${x.kod}/">Derse git</a>${robot(x, d.bot && d.bot.svg)}</article>`;
+  }
+
+  box.innerHTML = DERSLER.map(x => kart(x)).join("");
+  Promise.all(DERSLER.map(x => x.kod
+    ? fetch(`${x.kod}/ders.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : null).catch(() => null)
+    : null)).then(list => { box.innerHTML = DERSLER.map((x, i) => kart(x, list[i])).join(""); });
 })();
 </script>
 </body>
