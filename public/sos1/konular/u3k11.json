@@ -1,0 +1,380 @@
+{
+ "id": "u3k11",
+ "unite": "3. Öğrenme Alanı: Ortak Mirasımız",
+ "baslik": "Osmanlı'da Eğitim ve Hukuk",
+ "sayfalar": "s. 142–145",
+ "giris": "Osmanlı Devleti'nde eğitim, toplumun ve devletin ihtiyaçlarına göre düzenlendi. Bu konuda sıbyan mekteplerinden üniversiteye kadar Osmanlı okullarını tanıyacağız. Sonra Osmanlı hukuk sistemini ve önemli kanunlarını öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Sıbyan Mektebi",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='60' width='80' height='6' fill='#8d6e63'/><path d='M60 30l-28 14h56z' fill='#4ea8de'/><circle cx='40' cy='52' r='6' fill='#e0b58a'/><circle cx='60' cy='52' r='6' fill='#e0b58a'/><circle cx='80' cy='52' r='6' fill='#e0b58a'/><rect x='34' y='72' width='52' height='16' rx='2' fill='#e6e9f2'/><text x='60' y='84' font-size='9' font-family='sans-serif' text-anchor='middle' fill='#1b2340'>elif be</text><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#4ea8de'>5-6 yaşında</text></svg>",
+   "aciklama": "Sıbyan mekteplerinde okuma-yazma, basit dinî bilgiler ve Kur'an öğretilirdi.",
+   "ek": "Çocuklar 5-6 yaşında başlar, 3-4 yıl okurdu. Erkeklerin yanında 8-9 yaşına kadar kızlar da eğitim görürdü. Bu okulların düzenli bir programı ve belli bir eğitim süresi yoktu. Öğrenilenlerin çoğu günlük hayatı kolaylaştıran bilgilerdi.",
+   "akilda": "İlk eğitim, okuma-yazma",
+   "soru": {
+    "soru": "Sıbyan mekteplerinde çocuklar kaç yaşında okula başlardı?",
+    "secenekler": [
+     "5-6 yaşında",
+     "10-11 yaşında",
+     "14-15 yaşında"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminin altındaki yazıya bak.",
+    "aciklama": "Sıbyan mekteplerinde çocuklar 5-6 yaşında okula başlar ve 3-4 yıl eğitim görürdü. (s. 142)"
+   }
+  },
+  {
+   "ad": "Medrese",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='40' width='88' height='46' fill='#2a9d8f'/><path d='M45.0 40a15.0 15.0 0 0 1 30 0z' fill='#2a9d8f'/><path d='M24 86v-22a6 6 0 0 1 12 0v22zM44 86v-22a6 6 0 0 1 12 0v22zM64 86v-22a6 6 0 0 1 12 0v22zM84 86v-22a6 6 0 0 1 12 0v22z' fill='#1b2340'/><circle cx='30' cy='50' r='3' fill='#f2c14e'/><circle cx='90' cy='50' r='3' fill='#f2c14e'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#2a9d8f'>Üst düzey eğitim</text></svg>",
+   "aciklama": "Medreseler Osmanlı'da daha üst düzey eğitimin verildiği okullardır.",
+   "ek": "Medreselerde dinî ilimlerin yanında matematik, astronomi, mantık, felsefe ve tıp dersleri de okutuldu. Medreseler kadı, müderris (öğretmen), din görevlisi ve yönetici yetiştirdi.",
+   "akilda": "Kadı ve müderris yetiştirir",
+   "soru": {
+    "soru": "Hangisi medreselerde okutulan derslerden biridir?",
+    "secenekler": [
+     "Astronomi",
+     "Telgraf",
+     "Ebru"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın 'ek' kısmında ders adları sıralanıyor.",
+    "aciklama": "Medreselerde dinî ilimlerin yanında matematik, astronomi, mantık, felsefe, tıp gibi dersler okutuldu. (s. 142)"
+   }
+  },
+  {
+   "ad": "Enderun Mektebi",
+   "renk": "#9b5de5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='34' width='80' height='52' fill='#9b5de5'/><path d='M14 34h92l-46-20z' fill='#c77dff'/><rect x='48' y='58' width='24' height='28' fill='#1b2340'/><path d='M60 22l2 5h5l-4 3l1.5 5l-4.5-3l-4.5 3l1.5-5l-4-3h5z' fill='#f2c14e'/><rect x='28' y='44' width='12' height='10' fill='#e6e9f2'/><rect x='80' y='44' width='12' height='10' fill='#e6e9f2'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#c77dff'>Sarayın okulu</text></svg>",
+   "aciklama": "Enderun Mektebi, saray içinde kurulan ve devletin üst düzey yöneticilerini yetiştiren okuldur.",
+   "ek": "Devletin sınırları genişledikçe idari, askerî ve mali alanlarda yetişmiş insana ihtiyaç arttı. Enderun bu ihtiyacı karşılamak için açıldı. Başarılı öğrenciler sonra devlet görevlisi, komutan veya yönetici oldu.",
+   "akilda": "Saray içinde yönetici okulu",
+   "soru": {
+    "soru": "Enderun Mektebi nerede kurulmuştu?",
+    "secenekler": [
+     "Bir köyde",
+     "Saray içinde",
+     "Bir gemide"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çiziminin altındaki yazıyı oku.",
+    "aciklama": "Enderun Mektebi saray içinde kurulan, devletin üst düzey yöneticilerini yetiştiren bir okuldu. (s. 142)"
+   }
+  },
+  {
+   "ad": "Batı Tarzı Okullar",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='30' width='92' height='56' fill='#f4a261'/><path d='M10 30h100l-50-18z' fill='#e9c46a'/><path d='M24 40h8v38h-8zM44 40h8v38h-8zM68 40h8v38h-8zM88 40h8v38h-8z' fill='#e6e9f2'/><path d='M56 52l4 -6l4 6l-4 6z' fill='#1b2340'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#f4a261'>XVIII. yüzyıl</text></svg>",
+   "aciklama": "XVIII. yüzyıldan itibaren Avrupa'dan etkilenen Osmanlı, yabancı dil ve fen bilimlerinin okutulduğu Batı tarzı okullar açtı.",
+   "ek": "Askerî eksikleri gidermek için Mühendishane-i Bahri-i Hümayun (Deniz Mühendislik Okulu) ve Mühendishane-i Berri-i Hümayun (Kara Mühendislik Okulu) açıldı. Sonra rüştiyeler (ortaokul düzeyi), idadîler (lise düzeyi) ve ilk üniversite sayılan Darülfünun (İstanbul Üniversitesi) açıldı.",
+   "akilda": "Önce asker, sonra herkes için",
+   "soru": {
+    "soru": "Batı tarzı ilk okullar özellikle hangi alandaki eksikleri gidermek için açıldı?",
+    "secenekler": [
+     "Sanat",
+     "Askerî alan",
+     "Tarım"
+    ],
+    "dogru": 1,
+    "ipucu": "Mühendishaneler deniz ve kara için kuruldu; bu hangi alanı gösterir?",
+    "aciklama": "Özellikle askerî alandaki eksiklikleri gidermek için Mühendishane-i Bahri-i Hümayun ve Mühendishane-i Berri-i Hümayun açıldı. (s. 142)"
+   }
+  },
+  {
+   "ad": "Meslek Okulları",
+   "renk": "#e9c46a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='44' r='14' fill='none' stroke='#e9c46a' stroke-width='6' stroke-dasharray='6 4'/><circle cx='34' cy='44' r='6' fill='#e9c46a'/><path d='M64 30h40v10h-40z' fill='#4ea8de'/><path d='M84 40v40' stroke='#9aa4bf' stroke-width='3'/><path d='M64 34q-10 20 4 40M104 34q10 20-4 40' stroke='#f2c14e' stroke-width='2' fill='none'/><rect x='22' y='68' width='26' height='16' rx='3' fill='#2a9d8f'/><path d='M35 72v8M31 76h8' stroke='#e6e9f2' stroke-width='2'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#e9c46a'>Bir meslek öğren</text></svg>",
+   "aciklama": "Osmanlı'da mesleki eğitime de önem verildi; Tanzimat sonrasında modern meslek okulları açıldı.",
+   "ek": "Başlangıçta gençlere meslek ve ahlakı lonca teşkilatları öğretiyordu. Sonra Telgraf Mektebi, Eczacı Mektebi, Kaptan ve Çarkçı Yüksek Deniz Mektebi, hâkim yetiştiren Mekteb-i Hukuk-ı Şâhâne ve sanayi için Mekteb-i Sanayi okulları açıldı.",
+   "akilda": "Önce lonca, sonra meslek okulu",
+   "soru": {
+    "soru": "Modern meslek okullarından önce gençlere meslek ve ahlakı kim öğretirdi?",
+    "secenekler": [
+     "Lonca teşkilatları",
+     "Darülfünun",
+     "Divan-ı Hümayun"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın 'akılda kalsın' kısmına bak.",
+    "aciklama": "Başlangıçta gençlere meslek ve ahlak öğreten lonca teşkilatları vardı; Tanzimat sonrasında modern meslek okulları açıldı. (s. 143)"
+   }
+  },
+  {
+   "ad": "Şer'i ve Örfi Hukuk",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 20v62' stroke='#9aa4bf' stroke-width='4'/><path d='M30 34h60' stroke='#9aa4bf' stroke-width='4'/><path d='M30 34l-12 26h24zM90 34l-12 26h24z' fill='none' stroke='#e6e9f2' stroke-width='2'/><path d='M18 60a12 6 0 0 0 24 0zM78 60a12 6 0 0 0 24 0z' fill='#e63946'/><rect x='44' y='82' width='32' height='6' rx='2' fill='#9aa4bf'/><text x='30' y='76' font-size='8' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>Şer'i</text><text x='90' y='76' font-size='8' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>Örfi</text><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#ff6b7a'>İki hukuk</text></svg>",
+   "aciklama": "Osmanlı hukuku ikiye ayrılır: İslam dininin kurallarına dayanan Şer'i Hukuk ve padişahların koyduğu kurallarla geleneksel uygulamalardan oluşan Örfi Hukuk.",
+   "ek": "Osmanlı'da adalet devletin en temel görevi sayıldı. Adalet işlerini kadılar yürüttü. Mahkemelerde Müslüman ve gayrimüslim tebaaya inançlarına göre adaletli davranılması esas alındı.",
+   "akilda": "İki kol: Şer'i ve Örfi",
+   "soru": {
+    "soru": "Padişahların koyduğu kurallar ve geleneksel uygulamalardan oluşan hukuka ne denir?",
+    "secenekler": [
+     "Şer'i Hukuk",
+     "Örfi Hukuk",
+     "Mecelle"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın ilk cümlesinde iki hukuk türü anlatılıyor; ikincisine bak.",
+    "aciklama": "Padişahların devlet düzenini sağlamak için koyduğu kurallar ve geleneksel uygulamalardan oluşan hukuka Örfi Hukuk denir. (s. 144)"
+   }
+  },
+  {
+   "ad": "Kanunname",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='30' y='20' width='60' height='68' fill='#f5e6c8'/><rect x='24' y='14' width='72' height='10' rx='5' fill='#c9a66b'/><rect x='24' y='84' width='72' height='10' rx='5' fill='#c9a66b'/><path d='M40 36h40M40 46h40M40 56h40M40 66h26' stroke='#8d6e63' stroke-width='2'/><circle cx='76' cy='72' r='7' fill='#e63946'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#f2c14e'>Padişahın kanunları</text></svg>",
+   "aciklama": "Kanunname, padişahların koşullar gerektikçe çıkardığı kuralların toplandığı kanun metnidir.",
+   "ek": "Osmanlı kanunu ferman şeklinde ortaya çıktı. Kanunnameler devlet işlerinin düzenli yürümesini sağladı. Hazırlanmasında şeyhülislam, kazasker, nişancı gibi görevliler de yer aldı.",
+   "akilda": "Ferman ferman toplanır",
+   "soru": {
+    "soru": "Kanunnamelerin hazırlanmasında hangi görevliler de yer aldı?",
+    "secenekler": [
+     "Şeyhülislam, kazasker, nişancı",
+     "Mimar, ressam, hattat",
+     "Esnaf, çiftçi, tüccar"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın 'ek' kısmının son cümlesine bak.",
+    "aciklama": "Kanunnamelerin hazırlanmasında şeyhülislam, kazasker, nişancı gibi devlet görevlileri de yer aldı. (s. 144)"
+   }
+  },
+  {
+   "ad": "Mecelle ve Kanun-ı Esasi",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='22' width='38' height='54' rx='3' fill='#2a9d8f'/><rect x='20' y='26' width='30' height='46' fill='#1b2340'/><text x='35' y='52' font-size='7.5' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>Mecelle</text><rect x='66' y='22' width='38' height='54' rx='3' fill='#4ea8de'/><rect x='70' y='26' width='30' height='46' fill='#1b2340'/><text x='85' y='46' font-size='7' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>Kanun-ı</text><text x='85' y='56' font-size='7' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>Esasi</text><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#2a9d8f'>Modern hukuk</text></svg>",
+   "aciklama": "Mecelle, Ahmet Cevdet Paşa öncülüğünde hazırlanan ve İslam dünyasının medeni kanun niteliğindeki ilk hukuk metnidir. Kanun-ı Esasi ise ilk anayasadır.",
+   "ek": "Kanun-ı Esasi II. Abdülhamit Dönemi'nde ilan edildi. Böylece ilk anayasal düzene geçildi ve halkın hakları güvence altına alındı.",
+   "akilda": "Mecelle: ilk medeni kanun; Kanun-ı Esasi: ilk anayasa",
+   "soru": {
+    "soru": "Kanun-ı Esasi ile ne yapıldı?",
+    "secenekler": [
+     "İlk resmî gazete çıkarıldı",
+     "İlk anayasal düzene geçildi",
+     "Divan kuruldu"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın 'akılda kalsın' kısmında Kanun-ı Esasi'nin karşısında ne yazıyor?",
+    "aciklama": "II. Abdülhamit Dönemi'nde ilan edilen Kanun-ı Esasi ile ilk anayasal düzene geçildi ve halkın hakları güvence altına alındı. (s. 144)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Eğitimle mi, hukukla mı ilgili?",
+   "kutular": [
+    {
+     "etiket": "Eğitim",
+     "uyeler": [
+      "Sıbyan Mektebi",
+      "Medrese",
+      "Enderun Mektebi",
+      "Batı Tarzı Okullar",
+      "Meslek Okulları"
+     ]
+    },
+    {
+     "etiket": "Hukuk",
+     "uyeler": [
+      "Şer'i ve Örfi Hukuk",
+      "Kanunname",
+      "Mecelle ve Kanun-ı Esasi"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Zaman şeridi: Bu okullar hangi dönemde öne çıktı?",
+   "kutular": [
+    {
+     "etiket": "İlk dönemler",
+     "uyeler": [
+      "Sıbyan Mektebi",
+      "Medrese"
+     ]
+    },
+    {
+     "etiket": "Daha sonra",
+     "uyeler": [
+      "Enderun Mektebi"
+     ]
+    },
+    {
+     "etiket": "XVIII. yüzyıldan itibaren",
+     "uyeler": [
+      "Batı Tarzı Okullar",
+      "Meslek Okulları"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Sıbyan mekteplerinde öğrendiğini uygulamak önemliydi. (s. 142)",
+  "II. Mahmud Dönemi'nde ilköğretimin zorunlu hâle getirilmesi için ilk çalışmalar yapıldı. (s. 143)",
+  "Sanayi-i Nefise Mektebi (Güzel Sanatlar Okulu) Cumhuriyet Dönemi'nde de varlığını sürdürdü. (s. 143)",
+  "Mecelle'nin 8. maddesine göre asıl olan, kişinin suçsuz olmasıdır. (s. 145)"
+ ],
+ "akildaKalsin": [
+  "Sıbyan mektebinde okuma-yazma ve temel bilgiler; medresede üst düzey eğitim verildi.",
+  "Enderun Mektebi saray içinde yönetici yetiştirdi.",
+  "XVIII. yüzyıldan itibaren mühendishaneler, rüştiyeler, idadîler ve Darülfünun açıldı.",
+  "Meslek eğitimini önce loncalar, Tanzimat sonrasında meslek okulları verdi.",
+  "Osmanlı hukuku Şer'i ve Örfi Hukuk olarak ikiye ayrılır; adaleti kadılar yürüttü.",
+  "Mecelle ilk medeni kanun niteliğinde, Kanun-ı Esasi ilk anayasadır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Kızlar da okula gidebiliyor muydu?",
+   "cevap": "Evet. Sıbyan mekteplerinde erkeklerin yanında 8-9 yaşına kadar kızlar da eğitim görürdü. (s. 142)"
+  },
+  {
+   "soru": "Darülfünun bugün hangi üniversitedir?",
+   "cevap": "İstanbul Üniversitesi. Osmanlı Devleti'nin ilk üniversitesi sayılır. (s. 143)"
+  },
+  {
+   "soru": "Darüşşafaka ne için açıldı?",
+   "cevap": "Kimsesiz çocuklara eğitim vermek için. (s. 143)"
+  },
+  {
+   "soru": "Öğretmenler nerede yetişirdi?",
+   "cevap": "Öğretmen yetiştirmek için kız ve erkek öğretmen okulları açıldı. (s. 143)"
+  },
+  {
+   "soru": "\"Adalet mülkün temelidir\" sözü ne anlatır?",
+   "cevap": "Osmanlı'da adaletin devletin en temel görevi sayıldığını anlatır. Padişahlar toplum düzenini korumakla yükümlüydü. (s. 144)"
+  },
+  {
+   "soru": "Hâkimleri hangi okul yetiştirirdi?",
+   "cevap": "Mekteb-i Hukuk-ı Şâhâne. (s. 143)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Osmanlı'daki eğitimle bugünkü eğitim arasında bir benzerlik ve bir farklılık yaz.",
+   "ornekCevap": "Benzerlik: Osmanlı'da da ortaokul düzeyinde rüştiyeler, lise düzeyinde idadîler ve üniversite (Darülfünun) vardı. Farklılık: Sıbyan mekteplerinin düzenli bir eğitim programı ve belli bir eğitim süresi yoktu.",
+   "anahtarlar": [
+    "rüştiye",
+    "idadi",
+    "idadî",
+    "ortaokul",
+    "lise",
+    "üniversite",
+    "Darülfünun",
+    "program",
+    "süre"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Sıbyan mekteplerinde ne öğretilirdi?",
+   "secenekler": [
+    "Mühendislik ve fen bilimleri",
+    "Telgraf ve eczacılık",
+    "Okuma-yazma, basit dinî bilgiler ve Kur'an"
+   ],
+   "dogru": 2,
+   "ipucu": "Sıbyan Mektebi kartının ilk cümlesine bak.",
+   "aciklama": "Sıbyan mekteplerinde okuma-yazma, basit dinî bilgiler ve Kur'an öğretilirdi. (s. 142)"
+  },
+  {
+   "soru": "Medreseler hangi görevlileri yetiştirirdi?",
+   "secenekler": [
+    "Kaptan ve çarkçı",
+    "Ressam ve heykeltıraş",
+    "Kadı, müderris, din görevlisi, yönetici"
+   ],
+   "dogru": 2,
+   "ipucu": "Medrese kartının 'akılda kalsın' kısmını hatırla.",
+   "aciklama": "Medreseler devletin kadı, müderris, din görevlisi ve yönetici yetiştiren önemli eğitim kurumlarıydı. (s. 142)"
+  },
+  {
+   "soru": "Enderun'daki başarılı öğrenciler ileride ne olurdu?",
+   "secenekler": [
+    "Çiftçi",
+    "Tüccar",
+    "Devlet görevlisi, komutan veya yönetici"
+   ],
+   "dogru": 2,
+   "ipucu": "Enderun 'yönetici okulu' idi.",
+   "aciklama": "Enderun'daki başarılı öğrenciler sonraki yıllarda devlet görevlisi, komutan veya yönetici olarak görev aldı. (s. 142)"
+  },
+  {
+   "soru": "Mühendishane-i Berri-i Hümayun'un Türkçesi nedir?",
+   "secenekler": [
+    "Deniz Mühendislik Okulu",
+    "Güzel Sanatlar Okulu",
+    "Kara Mühendislik Okulu"
+   ],
+   "dogru": 2,
+   "ipucu": "'Bahri' deniz demektir; 'Berri' ise öbürü.",
+   "aciklama": "Mühendishane-i Berri-i Hümayun, Kara Mühendislik Okulu'dur. (s. 142)"
+  },
+  {
+   "soru": "Rüştiyeler hangi düzeyde okullardı?",
+   "secenekler": [
+    "Ortaokul",
+    "İlkokul",
+    "Üniversite"
+   ],
+   "dogru": 0,
+   "ipucu": "Batı Tarzı Okullar kartında parantez içine bak.",
+   "aciklama": "Rüştiyeler ortaokul düzeyinde, idadîler lise düzeyinde okullardı. (s. 143)"
+  },
+  {
+   "soru": "Telgraf Mektebi hangi alanda uzman yetiştirmek için açıldı?",
+   "secenekler": [
+    "Sağlık",
+    "İletişim",
+    "Tarım"
+   ],
+   "dogru": 1,
+   "ipucu": "Telgraf ne işe yarar? Haber göndermeyi düşün.",
+   "aciklama": "İletişim için Telgraf Mektebi açıldı. (s. 143)"
+  },
+  {
+   "soru": "Osmanlı'da adalet işlerini kim yürütürdü?",
+   "secenekler": [
+    "Defterdarlar",
+    "Loncalar",
+    "Kadılar"
+   ],
+   "dogru": 2,
+   "ipucu": "Şer'i ve Örfi Hukuk kartının 'ek' kısmına bak.",
+   "aciklama": "Osmanlı hukuk sisteminde adalet işlerini kadılar yürüttü. (s. 144)"
+  },
+  {
+   "soru": "Osmanlı kanunu hangi şekilde ortaya çıkmıştır?",
+   "secenekler": [
+    "Ferman şeklinde",
+    "Gazete haberi şeklinde",
+    "Şiir şeklinde"
+   ],
+   "dogru": 0,
+   "ipucu": "Kanunname kartının 'akılda kalsın' kısmını hatırla.",
+   "aciklama": "Osmanlı kanunu ferman şeklinde ortaya çıktı; fermanlar bir kanunname oluşturdu. (s. 144)"
+  },
+  {
+   "soru": "Mecelle kimin öncülüğünde hazırlandı?",
+   "secenekler": [
+    "Mustafa Reşid Paşa",
+    "Ahmet Cevdet Paşa",
+    "Mimar Sinan"
+   ],
+   "dogru": 1,
+   "ipucu": "Mecelle ve Kanun-ı Esasi kartının ilk cümlesine bak.",
+   "aciklama": "Mecelle Ahmet Cevdet Paşa öncülüğünde hazırlandı. (s. 144)"
+  },
+  {
+   "soru": "Kanun-ı Esasi hangi padişah döneminde ilan edildi?",
+   "secenekler": [
+    "II. Mahmud",
+    "III. Selim",
+    "II. Abdülhamit"
+   ],
+   "dogru": 2,
+   "ipucu": "Mecelle ve Kanun-ı Esasi kartının 'ek' kısmına bak.",
+   "aciklama": "Kanun-ı Esasi II. Abdülhamit Dönemi'nde ilan edildi. (s. 144)"
+  }
+ ]
+}

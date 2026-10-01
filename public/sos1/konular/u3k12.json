@@ -1,0 +1,365 @@
+{
+ "id": "u3k12",
+ "unite": "3. Öğrenme Alanı: Ortak Mirasımız",
+ "baslik": "Sanat, Günlük Hayat, Vakıflar ve Ahilik",
+ "sayfalar": "s. 145–152",
+ "giris": "Osmanlı sanatı hem Doğu hem Batı etkisi taşıyan özgün bir kimlik kazandı. Bu konuda Osmanlı mimarisini, süsleme sanatlarını ve günlük hayatı tanıyacağız. Vakıfların, Ahiliğin ve loncaların toplumda yardımlaşmayı nasıl sağladığını da öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Osmanlı Mimarisi",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M38.0 54a22.0 22.0 0 0 1 44 0z' fill='#4ea8de'/><rect x='38' y='54' width='44' height='28' fill='#4ea8de'/><path d='M30 54a8 8 0 0 1 16 0zM74 54a8 8 0 0 1 16 0z' fill='#4ea8de'/><rect x='18' y='22' width='5' height='60' fill='#9aa4bf'/><path d='M18 22l2.5-10l2.5 10z' fill='#9aa4bf'/><rect x='97' y='22' width='5' height='60' fill='#9aa4bf'/><path d='M97 22l2.5-10l2.5 10z' fill='#9aa4bf'/><path d='M60 28v4' stroke='#f2c14e' stroke-width='2'/><path d='M54 82v-14a6 6 0 0 1 12 0v14z' fill='#1b2340'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#4ea8de'>Mimar Sinan</text></svg>",
+   "aciklama": "Mimari, Osmanlı sanatının en önemli alanlarından biridir: camiler, köprüler, kervansaraylar ve çeşmeler en güzel örnekleridir.",
+   "ek": "Osmanlı sanatı, fethedilen yerlerdeki kültürleri kendi gelenekleriyle birleştirerek hem Doğu hem Batı etkisi taşıyan özgün bir kimlik kazandı. Mimar Sinan, Süleymaniye ve Selimiye Camileriyle Osmanlı mimarisine teknik, estetik ve mühendislik katkıları sağladı.",
+   "akilda": "Cami, köprü, kervansaray, çeşme",
+   "soru": {
+    "soru": "Selimiye ve Süleymaniye Camilerini hangi mimar yaptı?",
+    "secenekler": [
+     "Mimar Sinan",
+     "Ahi Evran",
+     "Ahmet Cevdet Paşa"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminin altındaki yazıya bak.",
+    "aciklama": "Mimar Sinan, yaptığı Süleymaniye ve Selimiye Camileri ile Osmanlı mimarisine önemli katkılar sağladı. (s. 145)"
+   }
+  },
+  {
+   "ad": "Süsleme Sanatları",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='42' height='42' rx='4' fill='#4ea8de'/><path d='M35 22l8 15l-8 15l-8-15z' fill='#e6e9f2'/><circle cx='35' cy='37' r='4' fill='#e63946'/><rect x='64' y='16' width='42' height='42' rx='4' fill='#f5e6c8'/><path d='M72 44q8-18 16-4t14-12' stroke='#1b2340' stroke-width='3' fill='none'/><circle cx='76' cy='30' r='2' fill='#1b2340'/><text x='35' y='72' font-size='9' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>çini</text><text x='85' y='72' font-size='9' font-family='sans-serif' text-anchor='middle' fill='#e6e9f2'>hat</text><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#ff6b7a'>Çini ve hat</text></svg>",
+   "aciklama": "Osmanlı'da en yaygın süsleme sanatları çini, tezhip, minyatür ve hattır.",
+   "ek": "Hat, güzel yazı yazma sanatıdır; Kur'an-ı Kerim ve resmî belgelerin yazımında kullanıldı. Minyatürlerde tarihî olaylar ve saray hayatı resmedildi. Halıcılık, ebru, ahşap oyma ve bakırcılık da günlük hayatta sıkça kullanılan sanat dallarıydı.",
+   "akilda": "Hat = güzel yazı",
+   "soru": {
+    "soru": "Güzel yazı yazma sanatına ne denir?",
+    "secenekler": [
+     "Minyatür",
+     "Hat",
+     "Ebru"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın 'akılda kalsın' kısmına bak.",
+    "aciklama": "Güzel yazı yazma sanatı olan hat, özellikle Kur'an-ı Kerim ve resmî belgelerin yazımında kullanıldı. (s. 146)"
+   }
+  },
+  {
+   "ad": "Mehter Takımı",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='40' cy='54' r='20' fill='#e63946'/><ellipse cx='40' cy='44' rx='20' ry='7' fill='#f5e6c8'/><path d='M22 48l36 14M58 48l-36 14' stroke='#f2c14e' stroke-width='2'/><path d='M70 70l30-40' stroke='#f2c14e' stroke-width='5'/><path d='M96 26l10-6l-2 14z' fill='#f2c14e'/><path d='M78 24q4-6 8 0M84 16q4-6 8 0' stroke='#e6e9f2' stroke-width='2' fill='none'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#f2c14e'>Ordunun müziği</text></svg>",
+   "aciklama": "Mehter Takımı, Osmanlı ordusunun resmî müzik topluluğudur.",
+   "ek": "Mehter, Türk müziğinin gelişmesinde önemli rol oynadı. Ünlü besteci Mozart da Osmanlı dönemi Türk müziğinden etkilendi; Türk Marşı bunun bir örneği olarak görülür.",
+   "akilda": "Ordunun resmî müziği",
+   "soru": {
+    "soru": "Mehter Takımı neydi?",
+    "secenekler": [
+     "Bir resim okulu",
+     "Osmanlı ordusunun resmî müzik topluluğu",
+     "Bir esnaf örgütü"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çiziminin altındaki yazıyı oku.",
+    "aciklama": "Osmanlı ordusunun resmî müzik topluluğu olan Mehter Takımı, Türk müziğinin gelişmesinde önemli rol oynadı. (s. 146)"
+   }
+  },
+  {
+   "ad": "Günlük Hayat",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='76' width='100' height='8' fill='#8d6e63'/><path d='M14 76v-26l14-12l14 12v26z' fill='#e9c46a'/><path d='M44 76v-30l16-14l16 14v30z' fill='#2a9d8f'/><path d='M78 76v-26l14-12l14 12v26z' fill='#f4a261'/><rect x='24' y='58' width='8' height='8' fill='#1b2340'/><rect x='55' y='54' width='10' height='22' fill='#1b2340'/><rect x='88' y='58' width='8' height='8' fill='#1b2340'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#2a9d8f'>Cami, çarşı, mahalle</text></svg>",
+   "aciklama": "Osmanlı'da günlük hayat; dinî inançlar, gelenekler ve yaşanılan yere göre şekillendi. Şehirlerde yaşam cami, çarşı ve mahalle etrafında örgütlendi.",
+   "ek": "Yardımlaşma, saygı ve komşuluk hep ön plandaydı. Meddah, Karagöz, orta oyunu gibi gösteriler izlendi. Misafir güler yüzle karşılandı; sofraya önce büyükler oturdu, israf edilmedi. Ticaretin kalbi bedesten denilen korunaklı çarşılardı. Köylerde geçim kaynağı tarım ve hayvancılıktı.",
+   "akilda": "Komşuluk ve misafirperverlik",
+   "soru": {
+    "soru": "Osmanlı şehirlerinde ticaretin kalbi neresiydi?",
+    "secenekler": [
+     "Bedesten",
+     "Medrese",
+     "Darüşşifa"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın 'ek' kısmında 'ticaretin kalbi' sözünü ara.",
+    "aciklama": "Osmanlı şehirlerinde ticaretin kalbi bedesten denilen korunaklı çarşılarda atardı. (s. 147)"
+   }
+  },
+  {
+   "ad": "Vakıf",
+   "renk": "#9b5de5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 88q-34-20-34-44a17 17 0 0 1 34-6a17 17 0 0 1 34 6q0 24-34 44z' fill='#9b5de5'/><path d='M46 52h28v20h-28z' fill='#e6e9f2'/><path d='M42 52l18-12l18 12z' fill='#f2c14e'/><rect x='56' y='60' width='8' height='12' fill='#9b5de5'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#c77dff'>Topluma bağış</text></svg>",
+   "aciklama": "Vakıf, kişilerin mal veya mülklerini toplum yararına kullanılmak üzere süresiz olarak bağışlamasıdır.",
+   "ek": "Vakfedilen mallar satılamaz, devredilemez, miras bırakılamaz. Cami, medrese, darüşşifa, imarethane, han, köprü gibi yapılar vakıflarla halkın hizmetine sunuldu; giderleri bağışlanan dükkân, tarla, bahçe gelirlerinden karşılandı. Hizmetlerden yararlanmada din, dil, ırk ya da cinsiyet ayrımı yapılmadı.",
+   "akilda": "Bağışlanır, satılamaz",
+   "soru": {
+    "soru": "Vakfedilen bir mal için hangisi doğrudur?",
+    "secenekler": [
+     "Satılabilir",
+     "Miras bırakılabilir",
+     "Satılamaz ve miras bırakılamaz"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın 'akılda kalsın' kısmına bak.",
+    "aciklama": "Vakfedilen mallar satılamaz, devredilemez ve miras bırakılamaz. (s. 148)"
+   }
+  },
+  {
+   "ad": "Ahilik",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 74l18-18l10 10l-18 18z' fill='#9aa4bf'/><path d='M50 50l18-18' stroke='#8d6e63' stroke-width='6'/><path d='M66 68h36' stroke='#e6e9f2' stroke-width='3'/><path d='M70 68l-6 16h44l-6-16' fill='#f4a261'/><path d='M84 30q8-10 16 0q-8 14-16 22q-8-8-16-22q8-10 16 0z' fill='#e63946'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#f4a261'>Ahi Evran</text></svg>",
+   "aciklama": "Ahilik, Anadolu'da XIII. ve XIX. yüzyıllar arasında halkı meslek alanında yetiştiren ve ahlaki yönden eğiten bir örgütlenmedir. Kurucusu Ahi Evran'dır.",
+   "ek": "Ahilikte meslek eğitimi ile ahlaki ve dinî eğitim bir arada verildi; kalite ve helal kazanç esas alındı. Bacıyan-ı Rum (Anadolu Bacıları) sayesinde kadınlar da meslek sahibi oldu. Ahiler kazançlarını fakirler ve kimsesizlerle paylaştı.",
+   "akilda": "Meslek + güzel ahlak",
+   "soru": {
+    "soru": "Ahi teşkilatının kurucusu kimdir?",
+    "secenekler": [
+     "Mimar Sinan",
+     "Ahi Evran",
+     "Ahmet Cevdet Paşa"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çiziminin altında adı yazıyor.",
+    "aciklama": "Ahi teşkilatının kurucusu Ahi Evran'dır. (s. 149)"
+   }
+  },
+  {
+   "ad": "Lonca",
+   "renk": "#e9c46a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='40' r='9' fill='#e0b58a'/><path d='M22 76v-20q12-10 24 0v20z' fill='#e9c46a'/><circle cx='60' cy='36' r='9' fill='#e0b58a'/><path d='M48 72v-20q12-10 24 0v20z' fill='#2a9d8f'/><circle cx='86' cy='40' r='9' fill='#e0b58a'/><path d='M74 76v-20q12-10 24 0v20z' fill='#4ea8de'/><path d='M40 66h40' stroke='#f2c14e' stroke-width='3'/><text x='60' y='108' font-size='11' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='#e9c46a'>Aynı meslek, bir örgüt</text></svg>",
+   "aciklama": "Lonca, aynı meslekten esnaf ve sanatkârların bir araya gelerek oluşturduğu, devlet denetimindeki meslek örgütüdür.",
+   "ek": "Ticaret gelişip şehirler büyüyünce Ahi teşkilatı bazı yönlerden yetersiz kaldı ve yerini loncalara bıraktı. Loncalar Ahilikteki meslek ahlakını ve dayanışmayı büyük ölçüde sürdürdü. Görevleri: esnaf arasında dayanışma, üretimi düzenleme, kaliteyi denetleme, fiyatları kontrol etme.",
+   "akilda": "Ahilikten sonra lonca",
+   "soru": {
+    "soru": "Ahi teşkilatı yetersiz kalınca yerini hangi örgüte bıraktı?",
+    "secenekler": [
+     "Lonca teşkilatına",
+     "Divan-ı Hümayun'a",
+     "Enderun Mektebi'ne"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın 'akılda kalsın' kısmına bak.",
+    "aciklama": "Ahi teşkilatı bazı yönlerden yetersiz kaldı ve yerini lonca teşkilatına bıraktı. (s. 150)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Sanat mı, günlük hayat mı, yardımlaşma ve meslek örgütü mü?",
+   "kutular": [
+    {
+     "etiket": "Sanat",
+     "uyeler": [
+      "Osmanlı Mimarisi",
+      "Süsleme Sanatları",
+      "Mehter Takımı"
+     ]
+    },
+    {
+     "etiket": "Günlük hayat",
+     "uyeler": [
+      "Günlük Hayat"
+     ]
+    },
+    {
+     "etiket": "Yardımlaşma ve meslek örgütü",
+     "uyeler": [
+      "Vakıf",
+      "Ahilik",
+      "Lonca"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Zaman şeridi: Esnaf örgütlerinden hangisi önce, hangisi sonra?",
+   "kutular": [
+    {
+     "etiket": "Önce",
+     "uyeler": [
+      "Ahilik"
+     ]
+    },
+    {
+     "etiket": "Sonra",
+     "uyeler": [
+      "Lonca"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Osmanlı'da göl temizleyen, leylekleri koruyan, kitapları tamir eden, öğrencilere piknik yaptıran vakıflar bile vardı. (s. 149)",
+  "Bir kaynağa göre vakıflar sayesinde insan vakıf bir yerde doğar, vakıf kitaplardan okur, vakıf bir medresede hocalık ederdi. (s. 148)",
+  "Üsküdar'daki Sadaka Taşı'na herkes para bırakır, ihtiyacı olan yalnızca ertesi günün ekmek parasını alırdı. (s. 151)",
+  "Mozart'ın Türk Marşı, onun Osmanlı dönemi Türk müziğine ilgisinin bir örneği olarak görülür. (s. 146)"
+ ],
+ "akildaKalsin": [
+  "Osmanlı mimarisinin örnekleri: camiler, köprüler, kervansaraylar, çeşmeler; en ünlü mimar Mimar Sinan.",
+  "Süsleme sanatları: çini, tezhip, minyatür, hat.",
+  "Mehter Takımı ordunun resmî müzik topluluğuydu.",
+  "Günlük hayatta yardımlaşma, saygı, komşuluk ve misafirperverlik ön plandaydı.",
+  "Vakıflarla hizmetler devlet hazinesine yük olmadan sürdü; Osmanlı'ya \"Vakıf Medeniyeti\" denir.",
+  "Ahilik Ahi Evran'ın kurduğu meslek ve ahlak örgütüdür; yerini loncalara bıraktı."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Minyatürlerde neler resmedilirdi?",
+   "cevap": "Tarihî olaylar ve saray hayatı. (s. 146)"
+  },
+  {
+   "soru": "Osmanlı'da insanlar nasıl eğlenirdi?",
+   "cevap": "Meddah, Karagöz, orta oyunu gibi gösteriler izlerlerdi. Ramazan ayı, bayramlar, düğünler ve şenlikler de birlikte eğlenilen günlerdi. (s. 147)"
+  },
+  {
+   "soru": "Osmanlı'ya neden \"Vakıf Medeniyeti\" denir?",
+   "cevap": "Vakıflar devletin yükünü hafifleterek birçok kamu hizmetinin halk tarafından karşılanmasını sağladı. (s. 149)"
+  },
+  {
+   "soru": "Bugün eski vakıflarla kim ilgileniyor?",
+   "cevap": "Vakıflar Genel Müdürlüğü. Osmanlı ve Selçuklu vakıflarının korunması, bakımı ve onarımı bu kurumun görevidir. (s. 149)"
+  },
+  {
+   "soru": "Ahilikte kadınlar da meslek sahibi olabilir miydi?",
+   "cevap": "Evet. Bacıyan-ı Rum (Anadolu Bacıları) sayesinde kadınlar da meslek sahibi oldu. (s. 149)"
+  },
+  {
+   "soru": "Ahilikte \"dili kapalı olmalı\" ne demek?",
+   "cevap": "Gıybet ve kötü sözden uzak durmak demek. (s. 150)"
+  },
+  {
+   "soru": "Konargöçerler nasıl yaşardı?",
+   "cevap": "Yaylak ve kışlaklar arasında gidip gelerek hayvancılıkla uğraşırlar, zamanla yerleşik hayata geçerlerdi. (s. 147)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Ahi teşkilatının kurallarından hangisinin bugün de yaşatılması gerektiğini düşünüyorsun? Neden?",
+   "ornekCevap": "Eli açık olmak, yani cömert olmak bugün de yaşatılmalı. Ahiler kazançlarını fakirler ve kimsesizlerle paylaştı. Böyle yaparsak ihtiyacı olan insanlara yardım eder, toplumda dayanışmayı güçlendiririz.",
+   "anahtarlar": [
+    "cömert",
+    "eli açık",
+    "merhamet",
+    "misafir",
+    "kapısı",
+    "sofrası",
+    "dürüst",
+    "kusur",
+    "kötü söz",
+    "gıybet",
+    "yardım",
+    "paylaş",
+    "dayanışma"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Osmanlı sanatı neden özgün bir kimlik kazandı?",
+   "secenekler": [
+    "Sadece Avrupa'yı taklit ettiği için",
+    "Hiçbir kültürden etkilenmediği için",
+    "Fethedilen yerlerin kültürlerini kendi gelenekleriyle birleştirdiği için"
+   ],
+   "dogru": 2,
+   "ipucu": "Osmanlı Mimarisi kartının 'ek' kısmının ilk cümlesine bak.",
+   "aciklama": "Osmanlı sanatı fethedilen yerlerdeki farklı kültürleri kendi gelenekleriyle birleştirerek özgün bir kimlik kazandı. (s. 145)"
+  },
+  {
+   "soru": "Minyatürlerde neler resmedilirdi?",
+   "secenekler": [
+    "Haritalar ve gemiler",
+    "Yalnızca çiçekler",
+    "Tarihî olaylar ve saray hayatı"
+   ],
+   "dogru": 2,
+   "ipucu": "Süsleme Sanatları kartının 'ek' kısmına bak.",
+   "aciklama": "Minyatürlerde tarihî olaylar ve saray hayatı resmedildi. (s. 146)"
+  },
+  {
+   "soru": "Mozart'ın Türk Marşı neyin örneğidir?",
+   "secenekler": [
+    "Mozart'ın Osmanlı dönemi Türk müziğine ilgisinin",
+    "Osmanlı mimarisinin",
+    "Lonca kurallarının"
+   ],
+   "dogru": 0,
+   "ipucu": "Mehter Takımı kartının 'ek' kısmına bak.",
+   "aciklama": "Türk Marşı, Mozart'ın Osmanlı dönemi Türk müziğine ilgisinin bir örneği olarak değerlendirilir. (s. 146)"
+  },
+  {
+   "soru": "Osmanlı evlerinde sofraya önce kimler otururdu?",
+   "secenekler": [
+    "Çocuklar",
+    "Büyükler",
+    "Misafirler"
+   ],
+   "dogru": 1,
+   "ipucu": "Günlük Hayat kartında sofra kurallarını hatırla.",
+   "aciklama": "Evlerde yemekler yerde kurulan sofralarda yenir, sofraya önce büyükler otururdu. (s. 147)"
+  },
+  {
+   "soru": "Halkın büyük bölümünün yaşadığı köylerde geçim kaynağı neydi?",
+   "secenekler": [
+    "Bedesten ticareti",
+    "Gemicilik",
+    "Tarım ve hayvancılık"
+   ],
+   "dogru": 2,
+   "ipucu": "Günlük Hayat kartının son cümlesine bak.",
+   "aciklama": "Köylerde geçim kaynağı tarım ve hayvancılıktı. (s. 147)"
+  },
+  {
+   "soru": "Vakıf yapılarının giderleri nasıl karşılanırdı?",
+   "secenekler": [
+    "Vakfa bağışlanan dükkân, tarla, bahçe gelirlerinden",
+    "Devlet hazinesinden",
+    "Yabancı devletlerin yardımıyla"
+   ],
+   "dogru": 0,
+   "ipucu": "Vakıf kartının 'ek' kısmına bak.",
+   "aciklama": "Vakıf yapılarının giderleri vakfa bağışlanan dükkân, tarla, bahçe gibi yerlerin gelirlerinden karşılandı. Böylece devlet hazinesine yük olunmadı. (s. 148)"
+  },
+  {
+   "soru": "Vakıf anlayışının temelleri hangi devlet zamanında atıldı?",
+   "secenekler": [
+    "Bizans",
+    "Selçuklular",
+    "Memlükler"
+   ],
+   "dogru": 1,
+   "ipucu": "Osmanlı'dan önce Anadolu'da hangi Türk devleti vardı?",
+   "aciklama": "Selçukluların temellerini attığı vakıf anlayışı Osmanlı Devleti zamanında altın çağını yaşadı. (s. 148)"
+  },
+  {
+   "soru": "Ahilikte \"kapısı açık olmalı\" kuralı ne anlama gelir?",
+   "secenekler": [
+    "Cömert olmak",
+    "Kusur görmemek",
+    "Misafirperver olmak"
+   ],
+   "dogru": 2,
+   "ipucu": "Kapıyı kime açarız? Gelen konuğu düşün.",
+   "aciklama": "Kapısı açık olmalı: misafirperver olmak. (s. 150)"
+  },
+  {
+   "soru": "Hangisi loncaların görevlerinden biridir?",
+   "secenekler": [
+    "Fiyatları kontrol altında tutmak",
+    "Fetva vermek",
+    "Donanmayı yönetmek"
+   ],
+   "dogru": 0,
+   "ipucu": "Lonca kartının 'ek' kısmında görevler sıralanıyor.",
+   "aciklama": "Loncalar dayanışmayı sağlar, üretimi düzenler, kaliteyi denetler ve fiyatları kontrol altında tutardı. (s. 150)"
+  },
+  {
+   "soru": "Osmanlı'da medrese, cami, darüşşifa ve vakıfların ortaya çıkmasında hangi değerlerin etkisi vardı?",
+   "secenekler": [
+    "Yalnızca ticaret ve kazanç",
+    "Yardımlaşma, dayanışma, adalet, merhamet",
+    "Savaş ve fetih"
+   ],
+   "dogru": 1,
+   "ipucu": "Vakıflar ve Ahilik neyi amaçlıyordu? Yardımlaşmayı düşün.",
+   "aciklama": "İslam dininin yardımlaşma, dayanışma, adalet, merhamet gibi değerleri Osmanlı toplum hayatında kendini gösterdi; medreseler, darüşşifalar, külliyeler ve vakıflar bunun sonucuydu. (s. 151)"
+  }
+ ]
+}
