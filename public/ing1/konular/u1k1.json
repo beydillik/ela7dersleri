@@ -1,0 +1,345 @@
+{
+ "id": "u1k1",
+ "unite": "Unit 1: Appearance and Personality",
+ "baslik": "Görünüşü Anlatma (Appearance)",
+ "sayfalar": "s. 10–20",
+ "giris": "Bu konuda insanların dış görünüşünü anlatan İngilizce kelimeleri öğreneceğiz: boy, beden, yüz ve saç. İngilizce kelimelerin yanındaki hoparlöre dokunarak dinleyebilirsin. Kaplumbağa düğmesi kelimeyi yavaş okur. Bu konunun sorusu: {{What does she look like?}} Yani: O nasıl görünüyor?",
+ "kavramlar": [
+  {
+   "ad": "tall",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 104h76' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='34' y='40' width='20' height='64' rx='8' fill='#3cc47c'/><circle cx='44' cy='28' r='11' fill='#ffd6a5'/><circle cx='40.1' cy='26.9' r='1.3' fill='#1b2340'/><circle cx='47.9' cy='26.9' r='1.3' fill='#1b2340'/><path d='M40.1 31.3 q3.8 3.3 7.7 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='66' y='72' width='20' height='32' rx='8' fill='#ff7a33'/><circle cx='76' cy='61' r='10' fill='#ffd6a5'/><circle cx='72.5' cy='60.0' r='1.2' fill='#1b2340'/><circle cx='79.5' cy='60.0' r='1.2' fill='#1b2340'/><path d='M72.5 64.0 q3.5 3.0 7.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M100 100V22M94 30l6-8 6 8' stroke='#f2c14e' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Uzun boylu demektir. Boyu uzun olan birini anlatır.",
+   "ek": "Zıttı {{short}}: kısa boylu. İkisinin arası {{medium height}}: orta boylu.",
+   "akilda": "uzun boylu",
+   "ornek": "Jim is tall and thin.",
+   "ornekTr": "Jim uzun boylu ve zayıftır. (s. 13)",
+   "soru": {
+    "soru": "{{Tom is tall.}} Bu cümleye göre Tom nasıl biri?",
+    "secenekler": [
+     "Uzun boylu",
+     "Kısa boylu",
+     "Sarışın"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki ilk kelimeye bak: {{tall}} boyla ilgili.",
+    "aciklama": "{{tall}} uzun boylu demektir. (s. 13)"
+   }
+  },
+  {
+   "ad": "slim",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='52' y='44' width='16' height='58' rx='7' fill='#4ea8de'/><circle cx='60' cy='31' r='12' fill='#ffd6a5'/><circle cx='55.8' cy='29.8' r='1.4' fill='#1b2340'/><circle cx='64.2' cy='29.8' r='1.4' fill='#1b2340'/><path d='M55.8 34.6 q4.2 3.6 8.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M24 72h18M36 66l7 6-7 6M96 72H78M84 66l-7 6 7 6' stroke='#f2c14e' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "İnce, zayıf demektir. Kitaptaki tanım: ortalamadan daha ince olan kişi.",
+   "ek": "Benzer kelime: {{thin}}. Zıttı: {{fat}} (şişman) ya da {{plump}} (tombul).",
+   "akilda": "ince, zayıf",
+   "ornek": "Mehmet is tall and slim.",
+   "ornekTr": "Mehmet uzun boylu ve incedir. (s. 14)",
+   "soru": {
+    "soru": "{{slim}} kelimesinin anlamı hangisidir?",
+    "secenekler": [
+     "Kıvırcık",
+     "İnce, zayıf",
+     "Genç"
+    ],
+    "dogru": 1,
+    "ipucu": "Resimdeki oklar kişiyi ne yapıyor? Bedeni anlatıyor.",
+    "aciklama": "{{slim}} ince, zayıf demektir. (s. 10)"
+   }
+  },
+  {
+   "ad": "beautiful",
+   "renk": "#ff5a8a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M36 58q-4-34 24-34t24 34v34H36z' fill='#7a4a2a'/><circle cx='60' cy='54' r='18' fill='#ffd6a5'/><circle cx='53.7' cy='52.2' r='2.2' fill='#1b2340'/><circle cx='66.3' cy='52.2' r='2.2' fill='#1b2340'/><path d='M53.7 59.4 q6.3 5.4 12.6 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><circle cx='50' cy='60' r='3' fill='#ff8fa3' opacity='.7'/><circle cx='70' cy='60' r='3' fill='#ff8fa3' opacity='.7'/><path d='M40 96q20-14 40 0' fill='#ff5a8a'/><path d='M96 22l3 7 7 3-7 3-3 7-3-7-7-3 7-3zM22 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2z' fill='#f2c14e'/></svg>",
+   "aciklama": "Güzel demektir. Kitapta genellikle kızlar ve kadınlar için kullanılır.",
+   "ek": "Kitapta erkekler için {{handsome}} (yakışıklı) kullanılıyor. Zıttı: {{ugly}} (çirkin).",
+   "akilda": "güzel",
+   "ornek": "My mother Helen is beautiful with blue eyes.",
+   "ornekTr": "Annem Helen mavi gözlü, güzel bir kadındır. (s. 16)",
+   "soru": {
+    "soru": "Kitapta bir erkeğin yakışıklı olduğunu anlatmak için hangi kelime kullanılır?",
+    "secenekler": [
+     "slim",
+     "curly",
+     "handsome"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın alt kısmına bak: erkekler için kullanılan kelime yazıyor.",
+    "aciklama": "Kitapta Jim, Mark ve Frank için {{handsome}} kullanılır. (s. 13–16)"
+   }
+  },
+  {
+   "ad": "cute",
+   "renk": "#ffb03a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='30' fill='#ffd6a5'/><circle cx='49.5' cy='57.0' r='3.6' fill='#1b2340'/><circle cx='70.5' cy='57.0' r='3.6' fill='#1b2340'/><path d='M49.5 69.0 q10.5 9.0 21.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><circle cx='44' cy='68' r='5' fill='#ff8fa3' opacity='.8'/><circle cx='76' cy='68' r='5' fill='#ff8fa3' opacity='.8'/><path d='M30 40q-6-14 6-14q4 6-6 14zM90 40q6-14-6-14q-4 6 6 14z' fill='#c58b5a'/><path d='M96 92c-6-6-12 2-6 7l6 5 6-5c6-5 0-13-6-7z' fill='#ff5a6e'/></svg>",
+   "aciklama": "Sevimli, tatlı demektir. Hem kızlar hem erkekler için kullanılır.",
+   "ek": "Kitapta Mike için de Laura için de {{cute}} denir.",
+   "akilda": "sevimli, tatlı",
+   "ornek": "He is cute with a nice smile.",
+   "ornekTr": "Güzel gülüşüyle sevimli biridir. (s. 13)",
+   "soru": {
+    "soru": "{{He is cute with a nice smile.}} Bu cümle ne anlatıyor?",
+    "secenekler": [
+     "Kısa boylu olduğunu",
+     "Güzel gülüşlü ve sevimli olduğunu",
+     "Sarı saçlı olduğunu"
+    ],
+    "dogru": 1,
+    "ipucu": "{{cute}} sevimli demekti, {{smile}} de gülüş.",
+    "aciklama": "{{cute}} sevimli, {{nice smile}} güzel gülüş demektir. (s. 13)"
+   }
+  },
+  {
+   "ad": "young",
+   "renk": "#ff5a6e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M84 56q16-30 0-34q-14 4 0 34z' fill='#ff5a6e'/><path d='M84 56q-2 14-14 22' stroke='#f5f6fa' stroke-width='1.5' fill='none'/><rect x='34' y='72' width='26' height='32' rx='9' fill='#3cc47c'/><circle cx='47' cy='58' r='13' fill='#ffd6a5'/><circle cx='42.5' cy='56.7' r='1.6' fill='#1b2340'/><circle cx='51.5' cy='56.7' r='1.6' fill='#1b2340'/><path d='M42.5 61.9 q4.5 3.9 9.1 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M34 52q13-12 26 0z' fill='#4ea8de'/><path d='M58 52h8' stroke='#4ea8de' stroke-width='4' stroke-linecap='round'/><path d='M58 82l12-4' stroke='#ffd6a5' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Genç demektir. Yaşı küçük olan birini anlatır.",
+   "ek": "Zıttı {{old}}: yaşlı. Örnek: {{She has gray hair. She is old.}} (Saçı gri, yaşlıdır.)",
+   "akilda": "genç",
+   "ornek": "His name is Mark. He is young and handsome.",
+   "ornekTr": "Onun adı Mark. Genç ve yakışıklıdır. (s. 14)",
+   "soru": {
+    "soru": "{{young}} kelimesinin zıttı hangisidir?",
+    "secenekler": [
+     "old",
+     "tall",
+     "cute"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartında zıt anlamlı kelime yazıyor: yaşlı.",
+    "aciklama": "{{young}} genç, {{old}} yaşlı demektir. (s. 19, 20)"
+   }
+  },
+  {
+   "ad": "curly",
+   "renk": "#c58b5a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='38' cy='44' r='9' fill='#5a3a22'/><circle cx='48' cy='32' r='9' fill='#5a3a22'/><circle cx='60' cy='28' r='9' fill='#5a3a22'/><circle cx='72' cy='32' r='9' fill='#5a3a22'/><circle cx='82' cy='44' r='9' fill='#5a3a22'/><circle cx='86' cy='58' r='9' fill='#5a3a22'/><circle cx='34' cy='58' r='9' fill='#5a3a22'/><circle cx='36' cy='72' r='9' fill='#5a3a22'/><circle cx='84' cy='72' r='9' fill='#5a3a22'/><circle cx='60' cy='60' r='20' fill='#ffd6a5'/><circle cx='53.0' cy='58.0' r='2.4' fill='#1b2340'/><circle cx='67.0' cy='58.0' r='2.4' fill='#1b2340'/><path d='M53.0 66.0 q7.0 6.0 14.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Kıvırcık demektir. Saçı anlatırken kullanılır.",
+   "ek": "Diğer saç kelimeleri: {{straight}} (düz), {{wavy}} (dalgalı), {{long}} (uzun), {{short}} (kısa).",
+   "akilda": "kıvırcık (saç)",
+   "ornek": "She has curly brown hair.",
+   "ornekTr": "Kıvırcık kahverengi saçları var. (s. 17)",
+   "soru": {
+    "soru": "Düz saçı anlatmak için hangi kelimeyi kullanırız?",
+    "secenekler": [
+     "curly",
+     "wavy",
+     "straight"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta saç kelimeleri sıralanmış: düz olanı bul.",
+    "aciklama": "{{straight}} düz, {{curly}} kıvırcık, {{wavy}} dalgalı demektir. (s. 11, 20)"
+   }
+  },
+  {
+   "ad": "blonde",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M34 60q-2-36 26-36t26 36v38q-8 4-12 0V62H46v36q-4 4-12 0z' fill='#f2c14e'/><circle cx='60' cy='58' r='17' fill='#ffd6a5'/><circle cx='54.0' cy='56.3' r='2.0' fill='#1b2340'/><circle cx='66.0' cy='56.3' r='2.0' fill='#1b2340'/><path d='M54.0 63.1 q5.9 5.1 11.9 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M43 50q17-14 34 0' stroke='#f2c14e' stroke-width='8' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Sarışın demektir. Sarı saçlı birini anlatır.",
+   "ek": "Zıttı {{dark}}: esmer, koyu saçlı.",
+   "akilda": "sarışın",
+   "ornek": "My mother has long straight blonde hair.",
+   "ornekTr": "Annemin uzun, düz, sarı saçları var. (s. 16)",
+   "soru": {
+    "soru": "{{blonde}} kelimesinin anlamı hangisidir?",
+    "secenekler": [
+     "Esmer",
+     "Sarışın",
+     "Yaşlı"
+    ],
+    "dogru": 1,
+    "ipucu": "Resimdeki saçın rengine bak.",
+    "aciklama": "{{blonde}} sarışın, sarı saçlı demektir. (s. 15, 16)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kelime neyi anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Boy ve beden",
+     "uyeler": [
+      "tall",
+      "slim"
+     ]
+    },
+    {
+     "etiket": "Yüz ve yaş",
+     "uyeler": [
+      "beautiful",
+      "cute",
+      "young"
+     ]
+    },
+    {
+     "etiket": "Saç",
+     "uyeler": [
+      "curly",
+      "blonde"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki ödev örneğinde Albert Einstein anlatılıyor: {{He had white, messy hair and a big moustache.}} Beyaz, dağınık saçları ve büyük bir bıyığı vardı. (s. 18)",
+  "Saçı anlatırken kitaptaki örneklerde önce uzunluk, sonra şekil, en son renk gelir: {{long straight blonde hair}}. (s. 16)"
+ ],
+ "akildaKalsin": [
+  "Görünüşü sormak için: {{What does she look like?}} (O nasıl görünüyor?)",
+  "Boy: {{tall}} uzun, {{short}} kısa. Beden: {{slim}} ince, {{plump}} tombul.",
+  "Erkek için {{handsome}}, kız için {{beautiful}}; ikisi için de {{cute}}.",
+  "Saç: {{curly}} kıvırcık, {{straight}} düz, {{wavy}} dalgalı, {{blonde}} sarışın.",
+  "Özellik için {{is}}, saç ve göz için {{has}}: {{She is tall. She has blue eyes.}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{look like}} ile {{be like}} arasındaki fark ne?",
+   "cevap": "{{What does she look like?}} dış görünüşü sorar: güzel, uzun boylu gibi. {{What is she like?}} kişiliği sorar: dürüst, cömert gibi. Kitapta ikisi art arda soruluyor. (s. 17)"
+  },
+  {
+   "soru": "Ne zaman {{is}}, ne zaman {{has}} kullanırım?",
+   "cevap": "Kişinin kendisini anlatırken {{is}}: {{She is beautiful.}} Saçı, gözü gibi sahip olduğu bir şeyi anlatırken {{has}}: {{She has curly brown hair.}} (s. 17)"
+  },
+  {
+   "soru": "{{beautiful with blue eyes}} ne demek?",
+   "cevap": "Mavi gözlü, güzel demektir. {{with}} burada \"-lı, -li\" anlamı katar: {{Helen is beautiful with blue eyes.}} (s. 16)"
+  },
+  {
+   "soru": "{{thin}} ile {{slim}} aynı mı?",
+   "cevap": "İkisi de zayıf, ince anlamına gelir. Kitapta Jim için {{tall and thin}}, Mehmet için {{tall and slim}} deniyor. (s. 13, 14)"
+  },
+  {
+   "soru": "Kitapta başka hangi görünüş kelimeleri var?",
+   "cevap": "{{plump}} tombul, {{pretty}} hoş, {{attractive}} çekici, {{well-built}} yapılı, {{moustache}} bıyık. (s. 12, 13, 20)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendini İngilizce iki cümleyle anlat. Birinci cümle {{I am}} ile, ikinci cümle {{I have}} ile başlasın.",
+   "ornekCevap": "I am tall and slim. I have long straight brown hair and green eyes.",
+   "anahtarlar": [
+    "i am",
+    "i have",
+    "hair",
+    "eyes"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "curly",
+    "tall",
+    "cute"
+   ],
+   "dogru": 1,
+   "ipucu": "Boyla ilgili kelimeyi duydun. Bir daha dinle, istersen yavaş dinle.",
+   "aciklama": "Duyduğun kelime {{tall}}: uzun boylu. (s. 13)",
+   "dinle": "tall"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "blonde",
+    "young",
+    "slim"
+   ],
+   "dogru": 2,
+   "ipucu": "Bedenle ilgili bir kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{slim}}: ince, zayıf. (s. 10)",
+   "dinle": "slim"
+  },
+  {
+   "soru": "Görünüşü sormak için hangi soru kullanılır?",
+   "secenekler": [
+    "What does she look like?",
+    "How old is she?",
+    "Where is she?"
+   ],
+   "dogru": 0,
+   "ipucu": "Konunun başındaki soruyu hatırla: içinde {{look}} vardı.",
+   "aciklama": "{{What does she look like?}} O nasıl görünüyor? demektir. (s. 17)"
+  },
+  {
+   "soru": "{{Jim is tall and thin.}} Bu cümleye göre Jim nasıl biri?",
+   "secenekler": [
+    "Kısa ve tombul",
+    "Uzun boylu ve zayıf",
+    "Genç ve sarışın"
+   ],
+   "dogru": 1,
+   "ipucu": "{{tall}} ve {{thin}} kelimelerinin anlamlarını düşün.",
+   "aciklama": "Jim uzun boylu ve zayıftır. (s. 13)"
+  },
+  {
+   "soru": "Hangisi saçı anlatan bir kelimedir?",
+   "secenekler": [
+    "wavy",
+    "young",
+    "tall"
+   ],
+   "dogru": 0,
+   "ipucu": "Saç kelimeleri {{curly}} kartındaydı.",
+   "aciklama": "{{wavy}} dalgalı demektir ve saçı anlatır. (s. 20)"
+  },
+  {
+   "soru": "{{beautiful}} kelimesinin zıttı hangisidir?",
+   "secenekler": [
+    "cute",
+    "pretty",
+    "ugly"
+   ],
+   "dogru": 2,
+   "ipucu": "{{beautiful}} kartının alt kısmında zıt anlamlı kelime yazıyor.",
+   "aciklama": "{{beautiful}} güzel, {{ugly}} çirkin demektir. (s. 11, 19)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{She ___ curly brown hair.}}",
+   "secenekler": [
+    "is",
+    "has",
+    "are"
+   ],
+   "dogru": 1,
+   "ipucu": "Saç sahip olunan bir şey. Akılda Kalsın'daki {{is}} ve {{has}} kuralını hatırla.",
+   "aciklama": "Saç için {{has}} kullanılır: {{She has curly brown hair.}} (s. 17)"
+  },
+  {
+   "soru": "{{He is young and handsome.}} Bu cümlede hangi bilgi yoktur?",
+   "secenekler": [
+    "Yaşı",
+    "Saçının rengi",
+    "Yakışıklı olduğu"
+   ],
+   "dogru": 1,
+   "ipucu": "Cümledeki iki kelimeye bak: {{young}} ve {{handsome}}. Saç geçiyor mu?",
+   "aciklama": "Cümle yalnızca genç ve yakışıklı olduğunu söyler; saç rengi yoktur. (s. 14)"
+  },
+  {
+   "soru": "{{My mother has long straight blonde hair.}} Annenin saçı nasıldır?",
+   "secenekler": [
+    "Kısa, kıvırcık, siyah",
+    "Uzun, dalgalı, kahverengi",
+    "Uzun, düz, sarı"
+   ],
+   "dogru": 2,
+   "ipucu": "{{long}}, {{straight}} ve {{blonde}} kelimelerini tek tek düşün.",
+   "aciklama": "{{long}} uzun, {{straight}} düz, {{blonde}} sarı saçlı demektir. (s. 16)"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "cute",
+    "curly",
+    "young"
+   ],
+   "dogru": 0,
+   "ipucu": "Sevimli demek olan kelime. Bir daha dinle.",
+   "aciklama": "Duyduğun kelime {{cute}}: sevimli, tatlı. (s. 13)",
+   "dinle": "cute"
+  }
+ ]
+}
