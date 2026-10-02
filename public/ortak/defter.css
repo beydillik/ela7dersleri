@@ -325,3 +325,61 @@ textarea { width: 100%; min-height: 120px; border: 2px solid var(--line); border
 /* Kavram çizimlerinin zemini temaya uysun (SVG'deki ilk rect) */
 [data-tema="sos"] svg[viewBox="0 0 120 120"] > rect:first-child { fill: var(--svgbg); }
 [data-tema="sos"] .bot-fab { box-shadow: 0 8px 24px rgba(31,74,68,.4); }
+
+/* ===================================================================
+   İngilizce öğeleri — metin içi {{...}} parçaları, dinleme düğmeleri,
+   örnek cümle kutusu ve İngilizce tekrar oyunları (Dinle ve Bul, Kelimeyi Kur)
+   =================================================================== */
+.en { color: var(--teal); font-weight: 800; cursor: pointer; border-bottom: 2px dotted currentColor; }
+.en:hover, .en:focus-visible { background: var(--accent-soft); border-radius: 4px; outline: none; }
+.chip[data-say-en] { cursor: pointer; }
+.say-en-row { display: inline-flex; gap: 6px; vertical-align: middle; margin-left: 10px; }
+.say-en { border: 2px solid var(--teal); color: var(--teal); background: var(--surface); border-radius: 999px; width: 38px; height: 38px;
+  display: inline-grid; place-items: center; padding: 0; cursor: pointer; font: 800 15px/1 var(--body); }
+.say-en svg { width: 20px; height: 20px; }
+.say-en.big { width: 46px; height: 46px; background: var(--teal); color: #fff; }
+.say-en.big svg { width: 24px; height: 24px; }
+.say-en.slow { border-style: dashed; }
+.say-en:hover { filter: brightness(1.08); transform: scale(1.06); }
+.say-en:active { transform: scale(.95); }
+.say-en[hidden] { display: none; }
+h3 .say-en-row, h4 .say-en-row { margin-left: 8px; }
+h4 .say-en { width: 32px; height: 32px; } h4 .say-en svg { width: 17px; height: 17px; }
+.q-listen, .listen-play { display: flex; gap: 10px; margin: 6px 0 12px; }
+.q-listen .say-en, .listen-play .say-en { width: auto; height: 48px; padding: 0 18px; display: inline-flex; gap: 8px; }
+.ornek { margin: 12px 0; padding: 10px 14px; border-left: 5px solid var(--teal); background: var(--surface-2); border-radius: 4px 12px 12px 4px; }
+.ornek-en { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 1.08em; font-weight: 800; }
+.ornek-en .say-en-row { margin-left: 4px; }
+.ornek-tr { color: var(--muted); font-size: .92em; margin-top: 4px; }
+.back .ornek-en { justify-content: center; font-style: italic; color: var(--teal); }
+.listen-opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+.listen-opts .mitem { font-size: 1.1em; }
+.listen-opts .mitem:disabled:not(.done) { opacity: .5; }
+.spell-q { display: flex; gap: 14px; align-items: center; margin-bottom: 14px; }
+.spell-q > svg { width: 84px; height: 84px; flex: none; }
+.spell-q .bigk { font: 800 22px/1.2 var(--display); color: var(--accent); margin-bottom: 6px; }
+.spell-q .say-en-row { margin-left: 0; }
+.slots { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 16px; }
+.slot { width: 40px; height: 48px; border-bottom: 4px solid var(--line); display: grid; place-items: center; font: 800 28px/1 var(--display); color: var(--ink); }
+.slot.on { border-color: var(--ok); color: var(--ok); }
+.gap { width: 18px; }
+.tiles { display: flex; flex-wrap: wrap; gap: 8px; }
+.tile { width: 48px; height: 52px; border: 2px solid var(--line); border-radius: 12px; background: var(--surface); box-shadow: 0 3px 0 var(--line);
+  font: 800 26px/1 var(--display); color: var(--ink); cursor: pointer; }
+.tile:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--line); }
+.tile.used { visibility: hidden; }
+.game-end { text-align: center; padding: 10px 0; }
+.game-end .stars { font-size: 40px; letter-spacing: 6px; color: var(--gold); }
+@media (prefers-reduced-motion: no-preference) {
+  .slot.on { animation: pop .25s ease-out; }
+  @keyframes pop { 50% { transform: scale(1.25); } }
+}
+
+/* İngilizce dersi teması */
+:root[data-tema="ing"] { --accent: #1d6fa3; --accent-soft: #dcebf6; --teal: #0f7f8c; }
+@media (prefers-color-scheme: dark) {
+  :root[data-tema="ing"]:not([data-theme="light"]) { --accent: #5fb0e6; --accent-soft: #1d3550; --teal: #4cc6c6; }
+}
+:root[data-tema="ing"][data-theme="dark"] { --accent: #5fb0e6; --accent-soft: #1d3550; --teal: #4cc6c6; }
+#fsay { display: inline-flex; align-items: center; gap: 6px; }
+#fsay svg { width: 18px; height: 18px; }

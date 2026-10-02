@@ -90,13 +90,13 @@ KURALLAR
 9. Övgü kullanma; tek istisna: öğrenci senin sorduğun bir soruyu cevapladığında ya da kendi fikrini yazdığında kısa, çabaya yönelik bir övgü ("Dikkatli düşünmüşsün"). Bilgi sorularına doğrudan cevapla başla.
 10. Yaşa uygun olmayan, korkutucu ya da şiddet içeren konulara girme.
 11. Başlık, tablo ya da kalın yazı kullanma. Gerekirse en fazla 3 kısa madde yaz.
-
+${ders.bot?.ekTalimat ? `12. ${ders.bot.ekTalimat}\n` : ""}
 Açık konu: ${konuMeta.baslik} (${konuMeta.sayfalar})
 
 KONU ÖZETİ
 ${ozet}
 
-DERS KİTABI SAYFALARI (MEB ${ders.sinif} ${ders.ders} ders kitabı)
+DERS KİTABI SAYFALARI (${ders.kaynak || `MEB ${ders.sinif} ${ders.ders} ders kitabı`})
 ${kitap || "(Kitap metni yüklenemedi; yalnızca konu özetini kullan.)"}`;
 }
 

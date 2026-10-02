@@ -19,6 +19,7 @@
     bak: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/></svg>',
     tekrar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 14-5.3L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5.3L4 15"/><path d="M4 20v-5h5"/></svg>',
     test: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="m9 12 2 2 4-4"/></svg>',
+    yavas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16h13a3 3 0 0 0 3-3v-1"/><path d="M5 16a6 6 0 0 1 12 0"/><circle cx="20" cy="10" r="2"/><path d="M7 16v2M15 16v2"/></svg>',
     ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10v4h4l5 4V6L8 10z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></svg>'
   };
 
@@ -29,34 +30,72 @@
   };
 
   // ---------- Sesli okuma ----------
+  // İki ses: Türkçe metin Türkçe sesle, {{...}} içindeki İngilizce parçalar ABD İngilizcesi sesle okunur.
+  // Ses önceliği: doğal (Natural) sesler önce, eski Windows sesleri (Tolga, Zira) en son.
+  const VOICE_PREF = {
+    tr: [/emel.*natural/i, /ahmet.*natural/i, /google türkçe/i, /türkçe.*natural/i, /yelda/i, /cem/i, /tolga/i],
+    en: [/jenny.*natural/i, /ava.*natural/i, /aria.*natural/i, /emma.*natural/i, /andrew.*natural/i, /google us english/i,
+         /us english.*natural/i, /samantha/i, /\bava\b/i, /zira/i, /david/i]
+  };
+  const EN_RE = /\{\{(.+?)\}\}/g;
   const tts = {
-    voice: null,
+    voice: null, en: null,
     init() {
       if (!("speechSynthesis" in window)) return;
+      const best = (list, prefs) => { for (const r of prefs) { const v = list.find(x => r.test(x.name)); if (v) return v; } return list[0] || null; };
       const pickVoice = () => {
-        const v = speechSynthesis.getVoices().filter(x => /^tr/i.test(x.lang));
-        tts.voice = v.find(x => /tolga|emel|yelda|google/i.test(x.name)) || v[0] || null;
+        const all = speechSynthesis.getVoices(), L = x => x.lang.replace("_", "-");
+        tts.voice = best(all.filter(x => /^tr/i.test(L(x))), VOICE_PREF.tr);
+        const us = all.filter(x => /^en-US/i.test(L(x)));
+        tts.en = best(us.length ? us : all.filter(x => /^en/i.test(L(x))), VOICE_PREF.en);
         document.body.classList.toggle("no-tts", !tts.voice);
+        document.body.classList.toggle("no-tts-en", !tts.en);
         $$(".listen").forEach(b => b.hidden = !tts.voice);
+        $$(".say-en").forEach(b => b.hidden = !tts.en);
       };
       pickVoice();
       speechSynthesis.onvoiceschanged = pickVoice;
     },
-    say(text) {
-      if (!tts.voice) return;
-      speechSynthesis.cancel();
+    utter(text, v, rate) {
       const u = new SpeechSynthesisUtterance(text);
-      u.voice = tts.voice; u.lang = tts.voice.lang; u.rate = .95;
-      speechSynthesis.speak(u);
+      u.voice = v; u.lang = v.lang.replace("_", "-"); u.rate = rate; speechSynthesis.speak(u);
+    },
+    // Karışık metni parçalara ayırıp sırayla okur.
+    say(text) {
+      if (!tts.voice && !tts.en) return;
+      speechSynthesis.cancel();
+      String(text).split(EN_RE).forEach((part, i) => {
+        part = part.trim(); if (!part || !/[\p{L}\p{N}]/u.test(part)) return;
+        const en = i % 2 === 1, v = en ? (tts.en || tts.voice) : (tts.voice || tts.en);
+        tts.utter(part, v, en ? .85 : .95);
+      });
+    },
+    // Yalnızca İngilizce metin (kelime, örnek cümle). slow: yavaş okuma.
+    sayEn(text, slow) {
+      if (!tts.en) return;
+      speechSynthesis.cancel(); tts.utter(String(text).replace(EN_RE, "$1"), tts.en, slow ? .6 : .85);
     },
     stop() { if ("speechSynthesis" in window) speechSynthesis.cancel(); }
   };
   const listenBtn = text => `<button class="listen" data-say="${esc(text)}" ${tts.voice ? "" : "hidden"}>${ICON.ses}Dinle</button>`;
-  document.addEventListener("click", e => { const b = e.target.closest("[data-say]"); if (b) tts.say(b.dataset.say); });
+  // İngilizce dinleme düğmeleri: normal hız ve yavaş (kaplumbağa)
+  const enBtns = (text, big) => `<span class="say-en-row"><button class="say-en${big ? " big" : ""}" data-say-en="${esc(text)}" aria-label="İngilizcesini dinle" ${tts.en ? "" : "hidden"}>${ICON.ses}</button><button class="say-en slow" data-say-en="${esc(text)}" data-slow aria-label="Yavaş dinle" ${tts.en ? "" : "hidden"}>${ICON.yavas}</button></span>`;
+  // Metin içi {{İngilizce}} parçaları: renkli gösterilir, dokununca okunur.
+  const rx = s => esc(s).replace(EN_RE, (m, t) => `<span class="en" lang="en" role="button" tabindex="0" data-say-en="${t}">${t}</span>`);
+  const plain = s => String(s ?? "").replace(EN_RE, "$1");
+  document.addEventListener("click", e => {
+    const e1 = e.target.closest("[data-say-en]"); if (e1) { e.stopPropagation(); tts.sayEn(e1.dataset.sayEn, e1.hasAttribute("data-slow")); return; }
+    const b = e.target.closest("[data-say]"); if (b) tts.say(b.dataset.say);
+  }, true);
 
   // ---------- Durum ----------
   const S = { ders: null, konu: null, data: null, unit: 0, tab: "ogren", cache: {} };
   const key = k => `ela7:${S.ders.kod}:${k}`;
+  const isEn = () => !!(S.ders && S.ders.dil === "en");          // İngilizce dersi: kavram adları İngilizce
+  const adSay = k => isEn() ? `{{${k.ad}}}` : k.ad;              // sesli okumada kavram adı
+  const kSay = k => `${adSay(k)}. ${k.aciklama} ${k.ek || ""} ${k.ornek ? `Örnek: {{${plain(k.ornek)}}}.` : ""} Akılda kalsın: ${k.akilda}.`;
+  const adHTML = (k, big) => `${esc(k.ad)}${isEn() ? enBtns(k.ad, big) : ""}`;
+  const ornekHTML = k => k.ornek ? `<div class="ornek"><div class="ornek-en"><span lang="en">${esc(plain(k.ornek))}</span>${enBtns(plain(k.ornek))}</div>${k.ornekTr ? `<div class="ornek-tr">${rx(k.ornekTr)}</div>` : ""}</div>` : "";
 
   // Kavram bazında sonuç: 1 = ilk denemede, 2 = ikinci denemede, 0 = gösterildi
   const results = {
@@ -74,8 +113,9 @@
   // o: {soru, secenekler, dogru, ipucu, aciklama}; opts: {onDone(result), backToInfo, classMode}
   function questionHTML(o, idx) {
     return `<div class="q">
-      <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${esc(o.soru)}</span></p>
-      <div class="opts">${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${esc(s)}</button>`).join("")}</div>
+      <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${rx(o.soru)}</span></p>
+      ${o.dinle ? `<div class="q-listen"><button class="say-en big" data-say-en="${esc(o.dinle)}" ${tts.en ? "" : "hidden"}>${ICON.ses}<span>Dinle</span></button><button class="say-en slow" data-say-en="${esc(o.dinle)}" data-slow ${tts.en ? "" : "hidden"}>${ICON.yavas}<span>Yavaş</span></button></div>` : ""}
+      <div class="opts">${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${esc(plain(s))}</button>`).join("")}</div>
       <div class="fb" hidden></div></div>`;
   }
   function wireQuestion(el, o, opts = {}) {
@@ -88,10 +128,10 @@
       fb.hidden = false;
       if (result === 0) {
         fb.className = "fb show";
-        fb.innerHTML = `<div><b>${pick(PRAISE.shown)}</b></div><div>${esc(o.aciklama)}</div>`;
+        fb.innerHTML = `<div><b>${pick(PRAISE.shown)}</b></div><div>${rx(o.aciklama)}</div>`;
       } else {
         fb.className = "fb ok";
-        fb.innerHTML = `<div><b>${pick(result === 1 ? PRAISE.first : PRAISE.second)}</b></div><div>${esc(o.aciklama)}</div>`;
+        fb.innerHTML = `<div><b>${pick(result === 1 ? PRAISE.first : PRAISE.second)}</b></div><div>${rx(o.aciklama)}</div>`;
       }
       if (!silent) opts.onDone && opts.onDone(result);
     };
@@ -102,7 +142,7 @@
       const b = $$(".opt", el)[j]; b.classList.add("wrong"); b.disabled = true;
       if (tries >= 2) return finish(0);
       fb.hidden = false; fb.className = "fb hint";
-      fb.innerHTML = `<div><b>Henüz değil.</b> ${esc(o.ipucu || "Bilgiyi bir kez daha düşün.")}</div>` +
+      fb.innerHTML = `<div><b>Henüz değil.</b> ${rx(o.ipucu || "Bilgiyi bir kez daha düşün.")}</div>` +
         (opts.backToInfo ? `<div><button class="btn ghost" data-back>Bilgi kartına bak</button></div>` : "");
       const bk = $("[data-back]", fb); if (bk) bk.onclick = opts.backToInfo;
     };
@@ -161,17 +201,17 @@
       let html = "";
       if (st.t === "giris") {
         html = `<div class="stage"><div class="kicker">Bu konuda neler var?</div><h3>${esc(d.baslik)}</h3>
-          <p class="big">${esc(d.giris)}</p>
-          <div class="chips">${d.kavramlar.map(k => `<span class="chip">${k.svg}${esc(k.ad)}</span>`).join("")}</div>
+          <p class="big">${rx(d.giris)}</p>
+          <div class="chips">${d.kavramlar.map(k => `<span class="chip"${isEn() ? ` lang="en" role="button" tabindex="0" data-say-en="${esc(k.ad)}"` : ""}>${k.svg}${esc(k.ad)}</span>`).join("")}</div>
           <div class="row">${listenBtn(d.baslik + ". " + d.giris)}</div>
           ${nav("Başlayalım")}</div>`;
       } else if (st.t === "bilgi") {
         const k = d.kavramlar[st.k];
         html = `<div class="stage"><div class="info-grid">${k.svg}<div class="stage-body">
           <div class="kicker">Kavram ${st.k + 1} / ${d.kavramlar.length}</div>
-          <h3 style="color:${esc(k.renk || "inherit")}">${esc(k.ad)}</h3>
-          <p class="big">${esc(k.aciklama)}</p>${k.ek ? `<p class="ek">${esc(k.ek)}</p>` : ""}
-          <div class="row"><span class="key"><b>Akılda kalsın</b>${esc(k.akilda)}</span>${listenBtn(`${k.ad}. ${k.aciklama} ${k.ek || ""} Akılda kalsın: ${k.akilda}.`)}</div>
+          <h3 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k, true)}</h3>
+          <p class="big">${rx(k.aciklama)}</p>${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}
+          <div class="row"><span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span>${listenBtn(kSay(k))}</div>
           </div></div>${nav(k.soru ? "Anladım, soru gelsin" : "Devam")}</div>`;
       } else if (st.t === "soru") {
         const k = d.kavramlar[st.k];
@@ -180,15 +220,15 @@
         const ks = d.kavramlar.slice(st.from, st.to + 1);
         html = `<div class="stage"><div class="kicker">Hatırlayalım</div><h3>Aklında kaldı mı?</h3>
           <p class="big">Her karta dokun. Önce kendin hatırlamaya çalış, sonra cevabı gör.</p>
-          <div class="recall">${ks.map(k => `<button data-reveal>${k.svg}<span>${esc(k.ad)} → <span class="ans" hidden>${esc(k.akilda)}</span><span class="q-mark">?</span></span></button>`).join("")}</div>
+          <div class="recall">${ks.map(k => `<button data-reveal>${k.svg}<span>${esc(k.ad)} → <span class="ans" hidden>${esc(plain(k.akilda))}</span><span class="q-mark">?</span></span></button>`).join("")}</div>
           ${nav("Devam")}</div>`;
       } else if (st.t === "ozet") {
         html = `<div class="stage"><div class="kicker">Özet</div><h3>Akılda Kalsın</h3>
-          <ul class="remember">${d.akildaKalsin.map(a => `<li>${esc(a)}</li>`).join("")}</ul>
+          <ul class="remember">${d.akildaKalsin.map(a => `<li>${rx(a)}</li>`).join("")}</ul>
           <div class="row">${listenBtn(d.akildaKalsin.join(". "))}</div>${nav("Devam")}</div>`;
       } else if (st.t === "yaz") {
         const y = d.dusunVeYaz[0];
-        html = `<div class="stage"><div class="kicker">Düşün ve Yaz · isteğe bağlı</div><h3>${esc(y.soru)}</h3>
+        html = `<div class="stage"><div class="kicker">Düşün ve Yaz · isteğe bağlı</div><h3>${rx(y.soru)}</h3>
           <p class="ek">Not verilmez. Kendi cümlelerinle yaz, sonra örnek cevapla karşılaştır.</p>
           <textarea id="yazText" placeholder="Cevabını buraya yaz…"></textarea>
           <div class="row"><button class="btn" id="yazCheck">Örnek cevabı göster</button></div>
@@ -229,7 +269,7 @@
     $("#yazCheck", scope).onclick = () => {
       const txt = lower($("#yazText", scope).value);
       const out = $("#yazOut", scope); out.hidden = false;
-      out.innerHTML = `<div class="model"><b>Örnek cevap:</b> ${esc(y.ornekCevap)}</div>
+      out.innerHTML = `<div class="model"><b>Örnek cevap:</b> ${rx(y.ornekCevap)}</div>
         <p class="ek" style="margin:8px 0 6px">Bu anahtar kelimeleri kullandın mı? Yeşil olanları yazmışsın.</p>
         <div class="kw">${y.anahtarlar.map(a => `<span class="${txt.includes(lower(a)) ? "hit" : ""}">${esc(a)}</span>`).join("")}</div>`;
     };
@@ -239,18 +279,18 @@
   function renderBak(root) {
     const d = S.data, icon = {}; d.kavramlar.forEach(k => icon[k.ad] = k.svg);
     const h = [];
-    h.push(`<section><p class="lead">${esc(d.giris)}</p></section>`);
+    h.push(`<section><p class="lead">${rx(d.giris)}</p></section>`);
     h.push(`<section><div class="sec-title"><h3>Kavramlar</h3><span>${d.kavramlar.length} kavram</span></div><div class="cards">` +
-      d.kavramlar.map(k => `<article class="card">${k.svg}<div><h4 style="color:${esc(k.renk || "inherit")}">${esc(k.ad)}</h4>
-        <p>${esc(k.aciklama)}</p>${k.ek ? `<p class="ek">${esc(k.ek)}</p>` : ""}<span class="key"><b>Akılda kalsın</b>${esc(k.akilda)}</span></div></article>`).join("") + `</div></section>`);
+      d.kavramlar.map(k => `<article class="card">${k.svg}<div><h4 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k)}</h4>
+        <p>${rx(k.aciklama)}</p>${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}<span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span></div></article>`).join("") + `</div></section>`);
     if (d.gruplar && d.gruplar.length) h.push(`<section><div class="sec-title"><h3>Gruplar</h3></div><div class="groups">` +
       d.gruplar.map(g => `<div class="group"><h4>${esc(g.soru)}</h4><div class="boxes">` + g.kutular.map(b => `<div class="box"><div class="lbl">${esc(b.etiket)}</div><div class="chips">` +
         b.uyeler.map(m => `<span class="chip">${icon[m] || ""}${esc(m)}</span>`).join("") + `</div></div>`).join("") + `</div></div>`).join("") + `</div></section>`);
-    if (d.biliyorMusun && d.biliyorMusun.length) h.push(`<section class="facts"><div class="eyebrow">Biliyor musun?</div>${d.biliyorMusun.map(f => `<p>${esc(f)}</p>`).join("")}</section>`);
-    h.push(`<section><div class="sec-title"><h3>Akılda Kalsın</h3></div><ul class="remember">${d.akildaKalsin.map(a => `<li>${esc(a)}</li>`).join("")}</ul></section>`);
+    if (d.biliyorMusun && d.biliyorMusun.length) h.push(`<section class="facts"><div class="eyebrow">Biliyor musun?</div>${d.biliyorMusun.map(f => `<p>${rx(f)}</p>`).join("")}</section>`);
+    h.push(`<section><div class="sec-title"><h3>Akılda Kalsın</h3></div><ul class="remember">${d.akildaKalsin.map(a => `<li>${rx(a)}</li>`).join("")}</ul></section>`);
     if (d.merakKutusu && d.merakKutusu.length) h.push(`<section><div class="sec-title"><h3>Merak Kutusu</h3><span>Soruya dokun, cevabı aç</span></div><div class="merak">` +
-      d.merakKutusu.map(m => `<details><summary>${esc(m.soru)}</summary><p>${esc(m.cevap)}</p></details>`).join("") + `</div></section>`);
-    h.push(`<p class="src">Kaynak: MEB ${esc(S.ders.ders)} ${esc(S.ders.sinif)} Ders Kitabı, ${esc(d.sayfalar)}.<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>`);
+      d.merakKutusu.map(m => `<details><summary>${rx(m.soru)}</summary><p>${rx(m.cevap)}</p></details>`).join("") + `</div></section>`);
+    h.push(`<p class="src">Kaynak: ${esc(S.ders.kaynak || `MEB ${S.ders.ders} ${S.ders.sinif} Ders Kitabı`)}, ${esc(d.sayfalar)}.<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>`);
     root.innerHTML = h.join("");
   }
 
@@ -259,10 +299,11 @@
     const d = S.data;
     const games = [["kart", "Hafıza Kartları"], ["eslestir", "Eşleştir"]];
     if (d.gruplar && d.gruplar.length) games.push(["grupla", "Gruplayalım"]);
+    if (isEn()) games.push(["dinle", "Dinle ve Bul"], ["kur", "Kelimeyi Kur"]);
     let g = store.get(key("oyun"), "kart"); if (!games.some(x => x[0] === g)) g = "kart";
     root.innerHTML = `<div class="subtabs">${games.map(([k, n]) => `<button class="subtab" data-g="${k}" aria-pressed="${k === g}">${n}</button>`).join("")}</div><div id="game"></div>`;
     $$(".subtab", root).forEach(b => b.onclick = () => { g = b.dataset.g; store.set(key("oyun"), g); $$(".subtab", root).forEach(x => x.setAttribute("aria-pressed", x === b)); run(); });
-    const run = () => { const box = $("#game", root); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup })[g](box); };
+    const run = () => { const box = $("#game", root); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup, dinle: gameListen, kur: gameSpell })[g](box); };
     run();
   }
 
@@ -270,13 +311,14 @@
     const d = S.data; let order = results.weakFirst(d.kavramlar), pos = 0;
     box.innerHTML = `<div class="flash"><p class="ek" style="margin:0">Zorlandığın kavramlar önce gelir.</p>
       <button class="fcard" id="fcard" aria-label="Kartı çevir"><div class="inner"><div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></button>
-      <div class="row" style="justify-content:center"><button class="btn" id="fprev">Önceki</button><span class="count" id="fcount"></span><button class="btn" id="fnext">Sonraki</button><button class="btn ghost" id="fmix">Karıştır</button></div></div>`;
+      <div class="row" style="justify-content:center">${isEn() ? `<button class="btn" id="fsay" ${tts.en ? "" : "hidden"}>${ICON.ses}Dinle</button>` : ""}<button class="btn" id="fprev">Önceki</button><span class="count" id="fcount"></span><button class="btn" id="fnext">Sonraki</button><button class="btn ghost" id="fmix">Karıştır</button></div></div>`;
     const card = $("#fcard", box);
     const show = () => {
       const k = order[pos]; card.classList.remove("flipped");
-      $("#ffront", box).innerHTML = `${k.svg}<div class="fname">${esc(k.ad)}</div>${results.isWeak(k.ad) ? '<div class="weak">Tekrar et</div>' : ""}<div class="hintline">Önce hatırla, sonra dokun</div>`;
-      $("#fback", box).innerHTML = `<div class="bigk">${esc(k.akilda)}</div><p>${esc(k.aciklama)}</p>`;
+      $("#ffront", box).innerHTML = `${k.svg}<div class="fname"${isEn() ? ' lang="en"' : ""}>${esc(k.ad)}</div>${results.isWeak(k.ad) ? '<div class="weak">Tekrar et</div>' : ""}<div class="hintline">Önce hatırla, sonra dokun</div>`;
+      $("#fback", box).innerHTML = `<div class="bigk">${esc(plain(k.akilda))}</div><p>${esc(plain(k.aciklama))}</p>${k.ornek ? `<p class="ornek-en" lang="en">${esc(plain(k.ornek))}</p>` : ""}`;
       $("#fcount", box).textContent = `${pos + 1} / ${order.length}`;
+      const fs = $("#fsay", box); if (fs) fs.dataset.sayEn = k.ad;
     };
     card.onclick = () => card.classList.toggle("flipped");
     $("#fprev", box).onclick = () => { pos = (pos - 1 + order.length) % order.length; show(); };
@@ -291,7 +333,7 @@
     let sel = null, done = 0;
     box.innerHTML = `<p class="ek" style="margin:0 0 10px">Soldan bir kavram seç, sonra sağdan ona uyan "akılda kalsın" ifadesine dokun.</p>
       <div class="match"><div class="col">${left.map(i => `<button class="mitem" data-l="${i}">${ks[i].svg}${esc(ks[i].ad)}</button>`).join("")}</div>
-      <div class="col">${right.map(i => `<button class="mitem" data-r="${i}">${esc(ks[i].akilda)}</button>`).join("")}</div></div>
+      <div class="col">${right.map(i => `<button class="mitem" data-r="${i}">${esc(plain(ks[i].akilda))}</button>`).join("")}</div></div>
       <p class="game-msg" id="mmsg"></p>`;
     box.onclick = e => {
       const l = e.target.closest("[data-l]"), r = e.target.closest("[data-r]");
@@ -336,6 +378,82 @@
       };
     };
     play();
+  }
+
+  // ---------- İngilizce oyunları ----------
+  // Dinle ve Bul: kelime okunur, 3 karttan doğrusu seçilir. Kısa tur: 6 kelime.
+  function gameListen(box) {
+    const d = S.data, ks = d.kavramlar, tur = shuffle(ks).slice(0, Math.min(6, ks.length));
+    let i = 0, ilk = 0, tries = 0;
+    if (!tts.en) { box.innerHTML = `<p class="game-msg">Bu cihazda İngilizce ses bulunamadı. Oyunu oynamak için siteyi Chrome ya da Edge ile aç.</p>`; return; }
+    const draw = () => {
+      if (i >= tur.length) {
+        box.innerHTML = `<div class="game-end"><div class="stars">${"★".repeat(ilk)}${"☆".repeat(tur.length - ilk)}</div>
+          <p class="game-msg">${tur.length} kelimenin ${ilk} tanesini ilk dinleyişte buldun. Kulağın alışıyor!</p>
+          <button class="btn primary" id="lagain">Yeni tur</button></div>`;
+        $("#lagain", box).onclick = () => gameListen(box); return;
+      }
+      const k = tur[i], opts = shuffle([k, ...shuffle(ks.filter(x => x !== k)).slice(0, 2)]); tries = 0;
+      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Kelime ${i + 1} / ${tur.length}. Dinle, sonra duyduğun kelimeye dokun.</p>
+        <div class="listen-play"><button class="say-en big" data-say-en="${esc(k.ad)}">${ICON.ses}<span>Dinle</span></button>
+        <button class="say-en slow" data-say-en="${esc(k.ad)}" data-slow>${ICON.yavas}<span>Yavaş</span></button></div>
+        <div class="listen-opts">${opts.map(o => `<button class="mitem lopt" data-a="${esc(o.ad)}">${o.svg}<span lang="en">${esc(o.ad)}</span></button>`).join("")}</div>
+        <p class="game-msg" id="lmsg"></p>`;
+      tts.sayEn(k.ad);
+      box.onclick = e => {
+        const b = e.target.closest(".lopt"); if (!b || b.disabled) return;
+        if (b.dataset.a === k.ad) {
+          b.classList.add("done"); if (tries === 0) ilk++;
+          $("#lmsg", box).innerHTML = `${tries === 0 ? "Doğru! Dikkatle dinledin." : "Doğru! Tekrar dinlemen işe yaradı."} <b lang="en">${esc(k.ad)}</b> = ${esc(plain(k.akilda))}`;
+          $$(".lopt", box).forEach(x => x.disabled = true); setTimeout(() => { i++; draw(); }, 1400);
+        } else {
+          tries++; b.classList.add("shake"); b.disabled = true; setTimeout(() => b.classList.remove("shake"), 400);
+          $("#lmsg", box).textContent = tries >= 2 ? "Doğru kelime yeşil oldu. Bir kez daha dinle." : "Bu değil. Bir kez daha dinle, istersen yavaş dinle.";
+          if (tries >= 2) { const r = $(`.lopt[data-a="${CSS.escape(k.ad)}"]`, box); r.classList.add("done"); tts.sayEn(k.ad, true); $$(".lopt", box).forEach(x => x.disabled = true); setTimeout(() => { i++; draw(); }, 2200); }
+          else tts.sayEn(k.ad);
+        }
+      };
+    };
+    draw();
+  }
+
+  // Kelimeyi Kur: resim + Türkçe anlam verilir, karışık harflerden İngilizce kelime sırayla kurulur.
+  function gameSpell(box) {
+    const d = S.data, tur = shuffle(d.kavramlar.filter(k => k.ad.replace(/[^a-z]/gi, "").length <= 12)).slice(0, 5);
+    let i = 0, temiz = 0;
+    const draw = () => {
+      if (i >= tur.length) {
+        box.innerHTML = `<div class="game-end"><div class="stars">${"★".repeat(temiz)}${"☆".repeat(tur.length - temiz)}</div>
+          <p class="game-msg">${tur.length} kelimeyi kurdun, ${temiz} tanesinde hiç hata yapmadın. Harika dikkat!</p>
+          <button class="btn primary" id="sagain">Yeni tur</button></div>`;
+        $("#sagain", box).onclick = () => gameSpell(box); return;
+      }
+      const k = tur[i], harf = [...k.ad], hedef = harf.filter(c => /\S/.test(c));
+      let pos = 0, hata = 0, tiles = shuffle(hedef.map((c, j) => ({ c, j })));
+      if (tiles.every((t, j) => t.j === j) && tiles.length > 1) tiles.reverse();
+      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Kelime ${i + 1} / ${tur.length}. Harflere sırayla dokun.</p>
+        <div class="spell-q">${k.svg}<div><div class="bigk">${esc(plain(k.akilda))}</div>${enBtns(k.ad)}</div></div>
+        <div class="slots" lang="en">${harf.map(c => /\S/.test(c) ? `<span class="slot"></span>` : `<span class="gap"></span>`).join("")}</div>
+        <div class="tiles" lang="en">${tiles.map((t, n) => `<button class="tile" data-n="${n}">${esc(t.c)}</button>`).join("")}</div>
+        <p class="game-msg" id="smsg"></p>`;
+      const slots = $$(".slot", box);
+      box.onclick = e => {
+        const b = e.target.closest(".tile"); if (!b || b.disabled) return;
+        const t = tiles[+b.dataset.n];
+        if (t.c.toLowerCase() === hedef[pos].toLowerCase()) {
+          slots[pos].textContent = hedef[pos]; slots[pos].classList.add("on"); b.disabled = true; b.classList.add("used"); pos++;
+          if (pos === hedef.length) {
+            if (!hata) temiz++;
+            $("#smsg", box).textContent = hata ? "Kelimeyi kurdun! Pes etmedin." : "Hatasız kurdun! Çok dikkatliydin.";
+            tts.sayEn(k.ad); setTimeout(() => { i++; draw(); }, 1600);
+          } else $("#smsg", box).textContent = "";
+        } else {
+          hata++; b.classList.add("shake"); setTimeout(() => b.classList.remove("shake"), 400);
+          $("#smsg", box).textContent = hata >= 3 ? `Sıradaki harf: "${hedef[pos]}"` : "Bu harf sırada değil. Kelimeyi dinleyip tekrar dene.";
+        }
+      };
+    };
+    draw();
   }
 
   // ---------- Test ----------
