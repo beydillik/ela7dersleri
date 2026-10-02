@@ -103,6 +103,11 @@
   }
   .cover svg.dd { position: absolute; right: 8px; top: 8px; width: 150px; height: 104px; color: var(--title); opacity: var(--doodle); pointer-events: none; }
   .cover h3 { position: relative; font: 800 32px/1.02 var(--display); margin: 0; color: var(--title); max-width: 60%; }
+  .cover h3 a { color: inherit; text-decoration: none; }
+  .cover h3 a::after { content: "›"; display: inline-block; margin-left: .15em; transition: transform .2s; }
+  .cover h3 a:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 4px; }
+  .cover h3 a:hover::after { transform: translateX(4px); }
+  .cover h3 a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
   .cover .count { position: relative; display: inline-block; margin-top: 8px; font-weight: 800; font-size: 14px; color: var(--title); }
 
   .units { list-style: none; margin: 0; padding: 8px 22px 6px; display: grid; }
@@ -119,9 +124,6 @@
   .units a:focus-visible { outline: 3px solid var(--c); outline-offset: 2px; border-radius: 6px; }
   .empty { margin: 0; padding: 16px 22px 18px; color: var(--muted); font-weight: 700; }
 
-  .open { align-self: flex-start; margin: 6px 22px 16px; font: 800 16px/1 var(--body); text-decoration: none; color: #fff; background: var(--c); padding: 11px 16px; border-radius: 12px; }
-  .open:hover { filter: brightness(.92); }
-  .open:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 
   .robot { margin-top: auto; padding: 12px 22px 14px; display: flex; align-items: center; gap: 12px; border-top: 2px solid var(--line); font-weight: 700; color: var(--muted); }
   .robot b { color: var(--ink); font-weight: 800; }
@@ -146,6 +148,36 @@
   @media (prefers-reduced-motion: no-preference) {
     h1 .line path { stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw .9s .25s ease-out forwards; }
     @keyframes draw { to { stroke-dashoffset: 0; } }
+    /* Kolaj: sakin, yavaş hareketler (dikkat dağıtmasın diye küçük genlik) */
+    .collage [class^="a-"], .collage [class*=" a-"] { transform-box: fill-box; transform-origin: center; }
+    .a-wob { animation: wob 6s ease-in-out infinite; }
+    .a-flt { animation: flt 4s ease-in-out infinite; }
+    .a-bob { animation: flt 5s ease-in-out infinite; }
+    .d2 { animation-delay: -1.3s; } .d3 { animation-delay: -2.6s; }
+    .a-twk circle { animation: twk 2.4s ease-in-out infinite; } .a-twk circle + circle { animation-delay: -1.2s; }
+    .a-pls { animation: pls 3.2s ease-in-out infinite; }
+    .collage .a-page { transform-origin: left center; animation: page 5s ease-in-out infinite; }
+    .collage .a-ndl { animation: ndl 4.5s ease-in-out infinite; }
+    .a-star { animation: star 3s ease-in-out infinite; }
+    @keyframes wob { 50% { transform: rotate(8deg); } }
+    @keyframes flt { 50% { transform: translateY(-7px); } }
+    @keyframes twk { 50% { opacity: .2; } }
+    @keyframes pls { 50% { transform: scale(1.12); } }
+    @keyframes page { 0%, 60%, 100% { transform: scaleX(1); } 75% { transform: scaleX(.35); } }
+    @keyframes ndl { 0%, 100% { transform: rotate(-25deg); } 50% { transform: rotate(25deg); } }
+    @keyframes star { 50% { transform: rotate(25deg) scale(1.3); } }
+    /* Ders kartları: sırayla gelir, kapak çizimi hafifçe süzülür, üstüne gelince sallanır */
+    .nb { animation: in .5s ease-out both; } .nb:nth-child(2) { animation-delay: .08s; } .nb:nth-child(3) { animation-delay: .16s; }
+    .nb:nth-child(4) { animation-delay: .24s; } .nb:nth-child(5) { animation-delay: .32s; }
+    .nb { transition: transform .2s, box-shadow .2s; }
+    .nb:hover { transform: translateY(-4px); }
+    .cover svg.dd { animation: flt 5s ease-in-out infinite; }
+    .nb:nth-child(even) .cover svg.dd { animation-delay: -2.5s; }
+    .nb:hover .cover svg.dd { animation: wig .6s ease-in-out; }
+    .robot .m { transition: transform .3s; }
+    .nb:hover .robot .m { transform: rotate(-12deg) scale(1.08); }
+    @keyframes in { from { opacity: 0; transform: translateY(14px); } }
+    @keyframes wig { 25% { transform: rotate(-5deg); } 75% { transform: rotate(5deg); } }
   }
 </style>
 </head>
@@ -167,17 +199,17 @@
   </div>
   <!-- Bütün derslerden küçük çizimler -->
   <svg class="collage" viewBox="0 0 440 230" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <g stroke="#ff7a33" stroke-width="4"><circle cx="70" cy="62" r="26"/><ellipse cx="70" cy="62" rx="48" ry="13" transform="rotate(-18 70 62)"/></g>
-    <g fill="#ff7a33"><circle cx="138" cy="24" r="3"/><circle cx="18" cy="118" r="2.5"/></g>
-    <text x="146" y="66" fill="#1f9e8f" font-family="Baloo 2, sans-serif" font-weight="800" font-size="46">π</text>
-    <g stroke="#1f9e8f" stroke-width="4"><path d="M190 150 L230 74 L270 150 Z"/><path d="M256 150 v-12 h14"/></g>
-    <g stroke="#2f8f5f" stroke-width="4"><circle cx="372" cy="46" r="30"/><path d="M342 46 h60 M372 16 q-18 30 0 60 q18 -30 0 -60"/></g>
-    <text x="294" y="110" fill="#c99a06" font-family="Baloo 2, sans-serif" font-weight="800" font-size="40">Aa</text>
-    <g stroke="#c99a06" stroke-width="4"><path d="M300 190 q30 -12 60 0 v-50 q-28 -12 -60 0 Z"/><path d="M360 190 q30 -12 60 0 v-50 q-28 -12 -60 0"/></g>
-    <g stroke="#1d6fa3" stroke-width="4"><path d="M40 196 h96 a10 10 0 0 0 10 -10 v-26 a10 10 0 0 0 -10 -10 h-96 a10 10 0 0 0 -10 10 v26 a10 10 0 0 0 10 10 h6 l-6 14 l18 -14"/></g>
-    <text x="48" y="182" fill="#1d6fa3" font-family="Baloo 2, sans-serif" font-weight="800" font-size="24">Hello!</text>
-    <g stroke="#2f8f5f" stroke-width="3.5"><circle cx="210" cy="196" r="20"/><path d="M210 180 l5 16 -5 16 -5 -16 z" fill="#2f8f5f"/></g>
-    <path d="M150 118 l6 -14 6 14 -14 -9 h16 z" fill="#ffcf3f"/>
+    <g class="a-wob" stroke="#ff7a33" stroke-width="4"><circle cx="70" cy="62" r="26"/><ellipse cx="70" cy="62" rx="48" ry="13" transform="rotate(-18 70 62)"/></g>
+    <g class="a-twk" fill="#ff7a33"><circle cx="138" cy="24" r="3"/><circle cx="18" cy="118" r="2.5"/></g>
+    <text class="a-flt" x="146" y="66" fill="#1f9e8f" font-family="Baloo 2, sans-serif" font-weight="800" font-size="46">π</text>
+    <g class="a-flt d2" stroke="#1f9e8f" stroke-width="4"><path d="M190 150 L230 74 L270 150 Z"/><path d="M256 150 v-12 h14"/></g>
+    <g class="a-wob d3" stroke="#2f8f5f" stroke-width="4"><circle cx="372" cy="46" r="30"/><path d="M342 46 h60 M372 16 q-18 30 0 60 q18 -30 0 -60"/></g>
+    <text class="a-pls" x="294" y="110" fill="#c99a06" font-family="Baloo 2, sans-serif" font-weight="800" font-size="40">Aa</text>
+    <g stroke="#c99a06" stroke-width="4"><path d="M300 190 q30 -12 60 0 v-50 q-28 -12 -60 0 Z"/><path class="a-page" d="M360 190 q30 -12 60 0 v-50 q-28 -12 -60 0"/></g>
+    <g class="a-bob"><g stroke="#1d6fa3" stroke-width="4"><path d="M40 196 h96 a10 10 0 0 0 10 -10 v-26 a10 10 0 0 0 -10 -10 h-96 a10 10 0 0 0 -10 10 v26 a10 10 0 0 0 10 10 h6 l-6 14 l18 -14"/></g>
+    <text x="48" y="182" fill="#1d6fa3" font-family="Baloo 2, sans-serif" font-weight="800" font-size="24">Hello!</text></g>
+    <g stroke="#2f8f5f" stroke-width="3.5"><circle cx="210" cy="196" r="20"/><path class="a-ndl" d="M210 180 l5 16 -5 16 -5 -16 z" fill="#2f8f5f"/></g>
+    <path class="a-star" d="M150 118 l6 -14 6 14 -14 -9 h16 z" fill="#ffcf3f"/>
   </svg>
 </header>
 
@@ -233,28 +265,26 @@
 
   const robot = (x, svg) => `<div class="robot"><span class="m" aria-hidden="true">${svg || esc(x.bot[0])}</span>
     <span>Dersin yardımcı robotu: <b>${esc(x.bot)}</b></span></div>`;
-  const kapak = (x, count) => `<div class="cover">${cizim(x.ders)}<h3>${esc(x.ders)}</h3>${count ? `<br><span class="count">${count}</span>` : ""}</div>`;
+  const kapak = (x, count, link) => `<div class="cover">${cizim(x.ders)}<h3>${link ? `<a href="${x.kod}/">${esc(x.ders)}</a>` : esc(x.ders)}</h3>${count ? `<br><span class="count">${count}</span>` : ""}</div>`;
 
   function kart(x, d) {
     if (!x.kod) return `<article class="nb soon" style="--c:${x.renk}">${kapak(x, "yakında")}
         <p class="empty">Kitap metni gelince üniteler burada görünecek.</p>${robot(x)}</article>`;
-    if (d === undefined) return `<article class="nb" style="--c:${x.renk}">${kapak(x)}<p class="empty">Üniteler yükleniyor…</p>${robot(x)}</article>`;
-    if (!d) return `<article class="nb" style="--c:${x.renk}">${kapak(x)}
-        <p class="empty">Ünite listesi şu an yüklenemedi. Derse girmek için aşağıdaki düğmeyi kullan.</p>
-        <a class="open" href="${x.kod}/">Derse git</a>${robot(x)}</article>`;
+    if (d === undefined) return `<article class="nb" style="--c:${x.renk}">${kapak(x, "", true)}<p class="empty">Üniteler yükleniyor…</p>${robot(x)}</article>`;
+    if (!d) return `<article class="nb" style="--c:${x.renk}">${kapak(x, "", true)}
+        <p class="empty">Ünite listesi şu an yüklenemedi. Derse girmek için dersin adına dokun.</p>${robot(x)}</article>`;
     const units = d.uniteler.map(u => {
       const m = /^(.+?):\s*(.+)$/.exec(u.ad) || [null, "", u.ad];
       const hazir = u.konular.filter(k => k.hazir);
-      const st = `<span class="st${hazir.length === u.konular.length ? " full" : ""}">${hazir.length}/${u.konular.length} konu</span>`;
+      const st = `<span class="st${hazir.length === u.konular.length ? " full" : ""}">${u.konular.length} konu</span>`;
       const inner = `<span class="no">${esc(m[1])}</span><span class="name">${esc(m[2])}</span>${st}`;
       return hazir.length
         ? `<li><a href="${x.kod}/#${encodeURIComponent(hazir[0].id)}">${inner}</a></li>`
         : `<li><span class="u">${inner}</span></li>`;
     }).join("");
     const top = d.uniteler.reduce((a, u) => a + u.konular.length, 0);
-    return `<article class="nb" style="--c:${x.renk}">${kapak(x, `${d.uniteler.length} ünite · ${top} konu`)}
-      <ul class="units">${units}</ul>
-      <a class="open" href="${x.kod}/">Derse git</a>${robot(x, d.bot && d.bot.svg)}</article>`;
+    return `<article class="nb" style="--c:${x.renk}">${kapak(x, `${d.uniteler.length} ünite · ${top} konu`, true)}
+      <ul class="units">${units}</ul>${robot(x, d.bot && d.bot.svg)}</article>`;
   }
 
   box.innerHTML = DERSLER.map(x => kart(x)).join("");
