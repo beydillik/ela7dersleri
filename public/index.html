@@ -125,6 +125,11 @@
   .empty { margin: 0; padding: 16px 22px 18px; color: var(--muted); font-weight: 700; }
 
 
+  .daily { display: flex; align-items: center; gap: 12px; margin: 4px 22px 14px; padding: 10px 14px; border-radius: 14px; text-decoration: none; color: var(--ink);
+    background: color-mix(in srgb, var(--c) 12%, var(--card)); border: 2px solid color-mix(in srgb, var(--c) 40%, transparent); }
+  .daily b { display: block; font-size: 17px; } .daily small { display: block; color: var(--muted); font-weight: 700; font-size: 14px; }
+  .daily .dz { font-size: 26px; color: #f2b01e; } .daily .dn { margin-left: auto; min-width: 30px; height: 30px; border-radius: 999px; display: grid; place-items: center; background: var(--c); color: #fff; font-weight: 800; }
+  .daily:hover b { text-decoration: underline; text-decoration-color: var(--c); text-decoration-thickness: 3px; }
   .robot { margin-top: auto; padding: 12px 22px 14px; display: flex; align-items: center; gap: 12px; border-top: 2px solid var(--line); font-weight: 700; color: var(--muted); }
   .robot b { color: var(--ink); font-weight: 800; }
   .robot .m { width: 46px; height: 46px; flex: none; border-radius: 50%; display: grid; place-items: center; font: 800 22px/1 var(--display); color: #fff; background: var(--c); }
@@ -174,6 +179,7 @@
     .cover svg.dd { animation: flt 5s ease-in-out infinite; }
     .nb:nth-child(even) .cover svg.dd { animation-delay: -2.5s; }
     .nb:hover .cover svg.dd { animation: wig .6s ease-in-out; }
+    .daily .dz { display: inline-block; animation: star 3s ease-in-out infinite; }
     .robot .m { transition: transform .3s; }
     .nb:hover .robot .m { transform: rotate(-12deg) scale(1.08); }
     @keyframes in { from { opacity: 0; transform: translateY(14px); } }
@@ -267,6 +273,16 @@
     <span>Dersin yardımcı robotu: <b>${esc(x.bot)}</b></span></div>`;
   const kapak = (x, count, link) => `<div class="cover">${cizim(x.ders)}<h3>${link ? `<a href="${x.kod}/">${esc(x.ders)}</a>` : esc(x.ders)}</h3>${count ? `<br><span class="count">${count}</span>` : ""}</div>`;
 
+  // İngilizce: Günün Tekrarı bağlantısı; sayaç bu cihazdaki aralıklı tekrar kaydından (ela7:<kod>:srs) okunur.
+  function gunluk(x) {
+    let n = 0;
+    try {
+      const s = JSON.parse(localStorage.getItem(`ela7:${x.kod}:srs`) || "{}"), t = new Date();
+      const bugun = `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, "0")}-${String(t.getDate()).padStart(2, "0")}`;
+      n = Math.min(8, Object.values(s).filter(e => e.n <= bugun).length); // bir tur en çok 8 kelime
+    } catch (e) {}
+    return `<a class="daily" href="${x.kod}/#gunluk"><span class="dz">★</span><span><b>Günün Tekrarı</b><small>${n ? `${n} kelime seni bekliyor` : "Bugünkü kelimeleri tekrar et"}</small></span>${n ? `<span class="dn">${n}</span>` : ""}</a>`;
+  }
   function kart(x, d) {
     if (!x.kod) return `<article class="nb soon" style="--c:${x.renk}">${kapak(x, "yakında")}
         <p class="empty">Kitap metni gelince üniteler burada görünecek.</p>${robot(x)}</article>`;
@@ -284,7 +300,7 @@
     }).join("");
     const top = d.uniteler.reduce((a, u) => a + u.konular.length, 0);
     return `<article class="nb" style="--c:${x.renk}">${kapak(x, `${d.uniteler.length} ünite · ${top} konu`, true)}
-      <ul class="units">${units}</ul>${robot(x, d.bot && d.bot.svg)}</article>`;
+      <ul class="units">${units}</ul>${d.dil === "en" ? gunluk(x) : ""}${robot(x, d.bot && d.bot.svg)}</article>`;
   }
 
   box.innerHTML = DERSLER.map(x => kart(x)).join("");
