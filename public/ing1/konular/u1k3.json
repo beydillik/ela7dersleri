@@ -1,0 +1,500 @@
+{
+ "id": "u1k3",
+ "unite": "Unit 1: Appearance and Personality",
+ "baslik": "Karşılaştırma (taller than, more … than)",
+ "sayfalar": "s. 11–26",
+ "giris": "Bu konuda iki kişiyi karşılaştırmayı öğreneceğiz: kim daha uzun, kim daha genç, kim daha dışa dönük? İngilizcede karşılaştırırken {{than}} kelimesini kullanırız. Örnek: {{He's more outgoing than Jim.}} O, Jim'den daha dışa dönük.",
+ "kavramlar": [
+  {
+   "ad": "taller than",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 104h84' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='31.0' y='46' width='18' height='58' rx='7' fill='#3cc47c'/><circle cx='40' cy='36' r='11' fill='#ffd6a5'/><circle cx='36.1' cy='34.9' r='1.3' fill='#1b2340'/><circle cx='43.9' cy='34.9' r='1.3' fill='#1b2340'/><path d='M36.1 39.9 q3.8 3.3 7.7 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='69.0' y='74' width='18' height='30' rx='7' fill='#ff7a33'/><circle cx='78' cy='65' r='10' fill='#ffd6a5'/><circle cx='74.5' cy='64.0' r='1.2' fill='#1b2340'/><circle cx='81.5' cy='64.0' r='1.2' fill='#1b2340'/><path d='M74.5 68.5 q3.5 3.0 7.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M100 100V30M94 38l6-8 6 8' stroke='#f2c14e' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "-den daha uzun (boylu) demektir. Kısa sıfatın sonuna {{-er}} eklenir, arkasından {{than}} gelir.",
+   "ek": "{{tall}} → {{taller}}. Kitapta: {{young}} → {{younger}}, {{old}} → {{older}}. (Kural kitap dışı: British Council LearnEnglish Teens.)",
+   "akilda": "-den daha uzun",
+   "ornek": "Jim is taller than Mike.",
+   "ornekTr": "Jim, Mike'tan daha uzun boylu. (s. 13)",
+   "soru": {
+    "soru": "{{Jim is taller than Mike.}} Hangisi doğru?",
+    "secenekler": [
+     "Mike daha uzun boylu.",
+     "Jim daha uzun boylu.",
+     "İkisi aynı boyda."
+    ],
+    "dogru": 1,
+    "ipucu": "{{than}} kelimesinden önce gelen kişi daha uzun olandır.",
+    "aciklama": "{{Jim is taller than Mike.}} Jim, Mike'tan daha uzun. (s. 13)"
+   }
+  },
+  {
+   "ad": "younger than",
+   "renk": "#ff5a8a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 104h84' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='27.0' y='64' width='18' height='40' rx='7' fill='#5a6280'/><circle cx='36' cy='53' r='12' fill='#ffd6a5'/><circle cx='31.8' cy='51.8' r='1.4' fill='#1b2340'/><circle cx='40.2' cy='51.8' r='1.4' fill='#1b2340'/><path d='M31.8 57.2 q4.2 3.6 8.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M24 50q12-16 24 0' fill='#c9ccd6'/><path d='M50 70l10 4v30' stroke='#c58b5a' stroke-width='4' stroke-linecap='round' fill='none'/><rect x='75.0' y='80' width='18' height='24' rx='7' fill='#ff5a8a'/><circle cx='84' cy='71' r='10' fill='#ffd6a5'/><circle cx='80.5' cy='70.0' r='1.2' fill='#1b2340'/><circle cx='87.5' cy='70.0' r='1.2' fill='#1b2340'/><path d='M80.5 74.5 q3.5 3.0 7.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M74 62q10-10 20 0' fill='#7a4a2a'/><path d='M100 30l3 6 6 3-6 3-3 6-3-6-6-3 6-3z' fill='#f2c14e'/></svg>",
+   "aciklama": "-den daha genç (küçük) demektir. {{young}} kelimesine {{-er}} eklenir.",
+   "ek": "Zıttı {{older than}}: -den daha yaşlı, daha büyük. Kitapta: {{She is older than Tom and me.}} (s. 16)",
+   "akilda": "-den daha genç",
+   "ornek": "Nina is younger than Dave.",
+   "ornekTr": "Nina, Dave'den daha genç. (s. 26)",
+   "soru": {
+    "soru": "Nina 15, Dave 18 yaşında. Hangi cümle doğru?",
+    "secenekler": [
+     "Dave is younger than Nina.",
+     "Nina is older than Dave.",
+     "Nina is younger than Dave."
+    ],
+    "dogru": 2,
+    "ipucu": "Yaşı küçük olan kim? {{younger}} daha genç demekti.",
+    "aciklama": "15 yaşındaki Nina daha genç: {{Nina is younger than Dave.}} (s. 26)"
+   }
+  },
+  {
+   "ad": "slimmer than",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 104h84' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='29.0' y='58' width='14' height='46' rx='7' fill='#4ea8de'/><circle cx='36' cy='48' r='11' fill='#ffd6a5'/><circle cx='32.1' cy='46.9' r='1.3' fill='#1b2340'/><circle cx='39.9' cy='46.9' r='1.3' fill='#1b2340'/><path d='M32.1 51.9 q3.8 3.3 7.7 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='63.0' y='64' width='34' height='40' rx='7' fill='#ff7a33'/><circle cx='80' cy='53' r='12' fill='#ffd6a5'/><circle cx='75.8' cy='51.8' r='1.4' fill='#1b2340'/><circle cx='84.2' cy='51.8' r='1.4' fill='#1b2340'/><path d='M75.8 57.2 q4.2 3.6 8.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M20 72h8M44 72h8M24 68l-4 4 4 4M48 68l4 4-4 4' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "-den daha ince demektir. {{slim}} kelimesinde son harf ikilenir: {{slimmer}}.",
+   "ek": "Kısa kelime bir ünlü + bir ünsüzle bitiyorsa son harf ikilenir: {{big}} → {{bigger}}. (Kural kitap dışı: British Council LearnEnglish Teens.)",
+   "akilda": "-den daha ince",
+   "ornek": "He's taller and slimmer than me.",
+   "ornekTr": "O, benden daha uzun ve daha ince. (s. 23)",
+   "soru": {
+    "soru": "{{slim}} kelimesine {{-er}} eklenince nasıl yazılır?",
+    "secenekler": [
+     "slimer",
+     "slimmer",
+     "more slim"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta son harf için ne yazıyordu? İkilenir.",
+    "aciklama": "Son harf ikilenir: {{slim}} → {{slimmer}}. (s. 23)"
+   }
+  },
+  {
+   "ad": "heavier than",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 42v50' stroke='#5a6280' stroke-width='5'/><path d='M44 104h32l-16-12z' fill='#5a6280'/><path d='M18 50l84-16' stroke='#c9ccd6' stroke-width='5' stroke-linecap='round'/><circle cx='60' cy='42' r='5' fill='#f2c14e'/><rect x='14' y='22' width='26' height='26' rx='4' fill='#ff7a33'/><rect x='84' y='22' width='16' height='14' rx='3' fill='#4ea8de'/><path d='M27 60v20M21 74l6 6 6-6' stroke='#f2c14e' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "-den daha ağır (kilolu) demektir. {{heavy}} kelimesindeki {{y}}, {{i}} olur: {{heavier}}.",
+   "ek": "Kitapta bir örnek daha: {{funny}} → {{funnier}} (daha komik). (s. 24) (Kural kitap dışı: British Council LearnEnglish Teens.)",
+   "akilda": "-den daha ağır",
+   "ornek": "Dave is heavier than Nina.",
+   "ornekTr": "Dave, Nina'dan daha ağır. (s. 26)",
+   "soru": {
+    "soru": "{{heavy}} kelimesinin karşılaştırma hâli hangisi?",
+    "secenekler": [
+     "heavyer",
+     "more heavy",
+     "heavier"
+    ],
+    "dogru": 2,
+    "ipucu": "Terazide ağır kutuyu hatırla: {{y}} harfi neye dönüşüyordu?",
+    "aciklama": "{{y}} → {{i}} olur ve {{-er}} eklenir: {{heavier}}. (s. 26)"
+   }
+  },
+  {
+   "ad": "more outgoing than",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 104h84' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='17.0' y='78' width='18' height='26' rx='7' fill='#5a6280'/><circle cx='26' cy='70' r='9' fill='#ffd6a5'/><circle cx='22.9' cy='69.1' r='1.2' fill='#1b2340'/><circle cx='29.1' cy='69.1' r='1.2' fill='#1b2340'/><path d='M23.5 73.2h5.0' stroke='#1b2340' stroke-width='2' stroke-linecap='round'/><rect x='67.0' y='70' width='18' height='34' rx='7' fill='#3cc47c'/><circle cx='76' cy='61' r='10' fill='#ffd6a5'/><circle cx='72.5' cy='60.0' r='1.2' fill='#1b2340'/><circle cx='79.5' cy='60.0' r='1.2' fill='#1b2340'/><path d='M72.5 64.5 q3.5 3.0 7.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='91.0' y='80' width='18' height='24' rx='7' fill='#4ea8de'/><circle cx='100' cy='73' r='8' fill='#ffd6a5'/><circle cx='97.2' cy='72.2' r='1.2' fill='#1b2340'/><circle cx='102.8' cy='72.2' r='1.2' fill='#1b2340'/><path d='M97.2 75.8 q2.8 2.4 5.6 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='47.0' y='80' width='18' height='24' rx='7' fill='#ff5a8a'/><circle cx='56' cy='73' r='8' fill='#ffd6a5'/><circle cx='53.2' cy='72.2' r='1.2' fill='#1b2340'/><circle cx='58.8' cy='72.2' r='1.2' fill='#1b2340'/><path d='M53.2 75.8 q2.8 2.4 5.6 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M84 70l10-18' stroke='#ffd6a5' stroke-width='5' stroke-linecap='round'/><path d='M60 22h40q6 0 6 6v8q0 6-6 6H78l-6 6v-6H60q-6 0-6-6v-8q0-6 6-6z' fill='#f5f6fa'/><circle cx='70' cy='32' r='3' fill='#ff5a6e'/><circle cx='80' cy='32' r='3' fill='#f2c14e'/><circle cx='90' cy='32' r='3' fill='#3cc47c'/></svg>",
+   "aciklama": "-den daha dışa dönük demektir. Uzun sıfatlara {{-er}} eklenmez; önüne {{more}} gelir.",
+   "ek": "Kitapta: {{more hardworking}}, {{more easy-going}}, {{more punctual}}, {{more stubborn}}. (Kural kitap dışı: British Council LearnEnglish Teens.)",
+   "akilda": "-den daha dışa dönük",
+   "ornek": "He's more outgoing than Jim.",
+   "ornekTr": "O, Jim'den daha dışa dönük. (s. 13)",
+   "soru": {
+    "soru": "Hangi cümle doğru?",
+    "secenekler": [
+     "He's more outgoing than Jim.",
+     "He's outgoinger than Jim.",
+     "He's more outgoinger than Jim."
+    ],
+    "dogru": 0,
+    "ipucu": "Uzun kelimeye {{-er}} eklenmiyordu; önüne ne geliyordu?",
+    "aciklama": "Uzun sıfat: {{more outgoing than}}. (s. 13)"
+   }
+  },
+  {
+   "ad": "better than",
+   "renk": "#c58b5a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 104h84' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='16' y='70' width='26' height='34' rx='3' fill='#c9ccd6'/><rect x='47' y='50' width='26' height='54' rx='3' fill='#f2c14e'/><rect x='78' y='82' width='26' height='22' rx='3' fill='#c58b5a'/><circle cx='60' cy='34' r='12' fill='#ffd6a5'/><circle cx='55.8' cy='32.8' r='1.4' fill='#1b2340'/><circle cx='64.2' cy='32.8' r='1.4' fill='#1b2340'/><path d='M55.8 38.2 q4.2 3.6 8.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M54 18l3 4 3-6 3 6 3-4v6H54z' fill='#f2c14e'/><circle cx='29' cy='60' r='8' fill='#ffd6a5'/><circle cx='91' cy='72' r='8' fill='#ffd6a5'/></svg>",
+   "aciklama": "-den daha iyi demektir. {{good}} düzensizdir: {{gooder}} denmez, {{better}} denir.",
+   "ek": "Zıttı {{worse than}}: -den daha kötü ({{bad}} → {{worse}}). Kitaptaki dinlemede: {{better / worse than everyone else}}. (s. 11) (Kural kitap dışı: British Council LearnEnglish Teens.)",
+   "akilda": "-den daha iyi",
+   "soru": {
+    "soru": "{{good}} kelimesinin karşılaştırma hâli hangisi?",
+    "secenekler": [
+     "gooder",
+     "better",
+     "more good"
+    ],
+    "dogru": 1,
+    "ipucu": "Bu kelime düzensizdi; kartın başlığına bak.",
+    "aciklama": "{{good}} → {{better}}, {{bad}} → {{worse}}. (s. 11)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu karşılaştırma nasıl yapılmış?",
+   "kutular": [
+    {
+     "etiket": "Sadece -er eklenmiş",
+     "uyeler": [
+      "taller than",
+      "younger than"
+     ]
+    },
+    {
+     "etiket": "-er eklenirken yazılış değişmiş",
+     "uyeler": [
+      "slimmer than",
+      "heavier than"
+     ]
+    },
+    {
+     "etiket": "-er yok: more ya da düzensiz",
+     "uyeler": [
+      "more outgoing than",
+      "better than"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "{{more}} tek başına da kullanılır: {{I like Henry more than my other friends.}} Henry'yi diğer arkadaşlarımdan daha çok seviyorum. (s. 23)",
+  "Kitaptaki testte Dave 182 cm, Nina 162 cm. Bu yüzden {{Nina is taller than Dave.}} cümlesi yanlıştır. (s. 26)"
+ ],
+ "akildaKalsin": [
+  "{{than}} = -den, -dan (daha).",
+  "Kısa sıfat + {{-er}} + {{than}}: {{taller than}}, {{younger than}}.",
+  "Yazılışa dikkat: {{slim}} → {{slimmer}}, {{heavy}} → {{heavier}}.",
+  "Uzun sıfatlarda {{more}}: {{more outgoing than}}.",
+  "Düzensizler: {{good}} → {{better}}, {{bad}} → {{worse}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden bazen {{-er}}, bazen {{more}} kullanılıyor?",
+   "cevap": "Kısa kelimelere {{-er}} eklenir: {{taller}}, {{younger}}. Uzun kelimelerin önüne {{more}} gelir: {{more outgoing}}, {{more hardworking}}. Örnekler kitapta, kural kitap dışı (British Council LearnEnglish Teens). (s. 13, 16)"
+  },
+  {
+   "soru": "{{slimmer}} kelimesinde neden iki {{m}} var?",
+   "cevap": "Kısa bir kelime bir ünlü + bir ünsüzle bitiyorsa, {{-er}} eklenirken son harf ikilenir: {{slim}} → {{slimmer}}. Kural kitap dışı (British Council LearnEnglish Teens); örnek kitapta. (s. 23)"
+  },
+  {
+   "soru": "{{than}} cümlede nereye gelir?",
+   "cevap": "Karşılaştırma kelimesinden hemen sonra, karşılaştırılan kişiden önce: {{Nina is younger than Dave.}} (s. 26)"
+  },
+  {
+   "soru": "İki özelliği aynı anda karşılaştırabilir miyim?",
+   "cevap": "Evet, {{and}} ile bağlarsın: {{He's taller and slimmer than me.}} O, benden daha uzun ve daha ince. (s. 23)"
+  },
+  {
+   "soru": "{{than me}} mi denir, {{than I}} mı?",
+   "cevap": "Kitaptaki örneklerde {{than me}} kullanılıyor: {{He is more hardworking than me.}} O, benden daha çalışkan. (s. 16)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendini bir aile üyenle ya da arkadaşınla karşılaştır. Bir cümlede {{-er than}}, bir cümlede {{more ... than}} kullan.",
+   "ornekCevap": "I am taller than my sister. My sister is more outgoing than me.",
+   "anahtarlar": [
+    "er than",
+    "more",
+    "than"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "older",
+    "younger",
+    "taller"
+   ],
+   "dogru": 1,
+   "ipucu": "Yaşla ilgili, daha genç anlamındaki kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{younger}}: daha genç. (s. 26)",
+   "dinle": "younger"
+  },
+  {
+   "soru": "Dinle. Hangisini duydun?",
+   "secenekler": [
+    "more outgoing",
+    "more punctual",
+    "more stubborn"
+   ],
+   "dogru": 0,
+   "ipucu": "Arkadaşlarıyla takılmayı seven kişiyi anlatan kelime.",
+   "aciklama": "Duyduğun {{more outgoing}}: daha dışa dönük. (s. 13)",
+   "dinle": "more outgoing"
+  },
+  {
+   "soru": "{{than}} kelimesinin anlamı hangisi?",
+   "secenekler": [
+    "ve",
+    "ama",
+    "-den, -dan (daha)"
+   ],
+   "dogru": 2,
+   "ipucu": "{{Jim is taller than Mike.}} Jim, Mike'TAN daha uzun.",
+   "aciklama": "{{than}}, Türkçedeki -den, -dan ekine karşılık gelir. (s. 13)"
+  },
+  {
+   "soru": "{{Anne is ___ punctual than Jane.}} Boşluğa ne gelir?",
+   "secenekler": [
+    "more",
+    "better",
+    "-er"
+   ],
+   "dogru": 0,
+   "ipucu": "{{punctual}} uzun bir kelime. Uzun kelimelerin önüne ne geliyordu?",
+   "aciklama": "{{Anne is more punctual than Jane.}} (s. 21)"
+  },
+  {
+   "soru": "{{tall}} kelimesinin karşılaştırma hâli hangisi?",
+   "secenekler": [
+    "more tall",
+    "taller",
+    "tallier"
+   ],
+   "dogru": 1,
+   "ipucu": "Kısa kelime: sadece {{-er}} eklenir.",
+   "aciklama": "{{tall}} → {{taller}}. (s. 13)"
+  },
+  {
+   "soru": "Dave 182 cm, Nina 162 cm. Hangi cümle doğru?",
+   "secenekler": [
+    "Nina is taller than Dave.",
+    "Dave is taller than Nina.",
+    "Dave is shorter than Nina."
+   ],
+   "dogru": 1,
+   "ipucu": "Boyu uzun olan kim? {{than}}'dan önce o gelmeli.",
+   "aciklama": "182 cm, 162 cm'den uzundur: Dave daha uzun. (s. 26)"
+  },
+  {
+   "soru": "{{bad}} kelimesinin karşılaştırma hâli hangisi?",
+   "secenekler": [
+    "badder",
+    "more bad",
+    "worse"
+   ],
+   "dogru": 2,
+   "ipucu": "{{good}} gibi düzensiz bir kelime. {{better}} kartında zıttı yazıyordu.",
+   "aciklama": "{{bad}} → {{worse}}, daha kötü. (s. 11)"
+  },
+  {
+   "soru": "Jack, Henry için {{He's taller and slimmer than me.}} diyor. Kim daha kısa?",
+   "secenekler": [
+    "Jack",
+    "Henry",
+    "İkisi aynı"
+   ],
+   "dogru": 0,
+   "ipucu": "{{me}} burada konuşan kişi: Jack.",
+   "aciklama": "Henry daha uzun, yani Jack daha kısa: {{Jack is shorter than Henry.}} (s. 23)"
+  },
+  {
+   "soru": "{{funny}} kelimesinin karşılaştırma hâli hangisi?",
+   "secenekler": [
+    "funnier",
+    "funnyer",
+    "more funny"
+   ],
+   "dogru": 0,
+   "ipucu": "{{heavy}} → {{heavier}} gibi: {{y}} harfi {{i}} olur.",
+   "aciklama": "{{funny}} → {{funnier}}. Kitapta: {{is funnier than you}}. (s. 24)"
+  },
+  {
+   "soru": "Rosie: {{Tom is my brother. He is younger than me.}} Hangisi doğru?",
+   "secenekler": [
+    "Tom, Rosie'den büyük.",
+    "Tom, Rosie'den küçük.",
+    "Tom ve Rosie aynı yaşta."
+   ],
+   "dogru": 1,
+   "ipucu": "{{younger}} daha genç, yani daha küçük demekti.",
+   "aciklama": "{{He is younger than me.}} Tom, Rosie'den daha küçük. (s. 16)"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "than",
+   "tr": "-den, -dan (daha)"
+  },
+  {
+   "en": "older",
+   "tr": "daha yaşlı, daha büyük",
+   "ornek": "She is older than Tom and me.",
+   "ornekTr": "O, Tom'dan ve benden büyük. (s. 16)"
+  },
+  {
+   "en": "shorter",
+   "tr": "daha kısa",
+   "ornek": "Jack is shorter than Henry.",
+   "ornekTr": "Jack, Henry'den daha kısa. (s. 23)"
+  },
+  {
+   "en": "funnier",
+   "tr": "daha komik"
+  },
+  {
+   "en": "worse",
+   "tr": "daha kötü"
+  },
+  {
+   "en": "more hardworking",
+   "tr": "daha çalışkan",
+   "ornek": "He is more hardworking than me.",
+   "ornekTr": "O, benden daha çalışkan. (s. 16)"
+  },
+  {
+   "en": "more easy-going",
+   "tr": "daha uysal"
+  },
+  {
+   "en": "more stubborn",
+   "tr": "daha inatçı",
+   "ornek": "Mike's more stubborn, but neither of them are selfish.",
+   "ornekTr": "Mike daha inatçı, ama ikisi de bencil değil. (s. 13)"
+  },
+  {
+   "en": "more punctual",
+   "tr": "daha dakik",
+   "ornek": "Anne is more punctual than Jane.",
+   "ornekTr": "Anne, Jane'den daha dakik. (s. 21)"
+  },
+  {
+   "en": "more than",
+   "tr": "-den daha çok",
+   "ornek": "I like Henry more than my other friends.",
+   "ornekTr": "Henry'yi diğer arkadaşlarımdan daha çok seviyorum. (s. 23)"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Jim is taller than Mike.",
+   "tr": "Jim, Mike'tan daha uzun boylu. (s. 13)"
+  },
+  {
+   "en": "He's more outgoing than Jim.",
+   "tr": "O, Jim'den daha dışa dönük. (s. 13)"
+  },
+  {
+   "en": "He is more hardworking than me.",
+   "tr": "O, benden daha çalışkan. (s. 16)"
+  },
+  {
+   "en": "Anne is more punctual than Jane.",
+   "tr": "Anne, Jane'den daha dakik. (s. 21)"
+  },
+  {
+   "en": "He's taller and slimmer than me.",
+   "tr": "O, benden daha uzun ve daha ince. (s. 23)"
+  },
+  {
+   "en": "Nina is younger than Dave.",
+   "tr": "Nina, Dave'den daha genç. (s. 26)"
+  },
+  {
+   "en": "Dave is heavier than Nina.",
+   "tr": "Dave, Nina'dan daha ağır. (s. 26)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Rosie's Family",
+  "sayfa": "s. 16",
+  "cumleler": [
+   {
+    "en": "Hello. I'm Rosie.",
+    "tr": "Merhaba. Ben Rosie."
+   },
+   {
+    "en": "This is my family.",
+    "tr": "Bu benim ailem."
+   },
+   {
+    "en": "My father Frank is a handsome man.",
+    "tr": "Babam Frank yakışıklı bir adam."
+   },
+   {
+    "en": "He has nice brown eyes, and his hair is black.",
+    "tr": "Güzel kahverengi gözleri var, saçı siyah."
+   },
+   {
+    "en": "My mother Helen is beautiful with blue eyes and long straight blonde hair.",
+    "tr": "Annem Helen mavi gözlü, uzun düz sarı saçlı, güzel bir kadın."
+   },
+   {
+    "en": "Tom is my brother.",
+    "tr": "Tom benim erkek kardeşim."
+   },
+   {
+    "en": "He is younger than me, but he is taller.",
+    "tr": "Benden küçük ama daha uzun boylu."
+   },
+   {
+    "en": "He is a smart boy.",
+    "tr": "Akıllı bir çocuk."
+   },
+   {
+    "en": "He is more hardworking than me.",
+    "tr": "Benden daha çalışkan."
+   },
+   {
+    "en": "And Sheila, she is my sister.",
+    "tr": "Ve Sheila, o benim kız kardeşim."
+   },
+   {
+    "en": "She is older than Tom and me.",
+    "tr": "Tom'dan ve benden büyük."
+   },
+   {
+    "en": "She is a cute girl.",
+    "tr": "Sevimli bir kız."
+   },
+   {
+    "en": "She is more easy-going than me because I am stubborn.",
+    "tr": "Benden daha uysal, çünkü ben inatçıyım."
+   },
+   {
+    "en": "I love my family a lot.",
+    "tr": "Ailemi çok seviyorum."
+   }
+  ],
+  "sorular": [
+   {
+    "soru": "Tom, Rosie'ye göre nasıl?",
+    "secenekler": [
+     "Daha büyük ve daha kısa",
+     "Daha küçük ama daha uzun",
+     "Aynı yaşta"
+    ],
+    "dogru": 1,
+    "ipucu": "{{He is younger than me, but he is taller.}} cümlesine bak.",
+    "aciklama": "Tom, Rosie'den küçük ama daha uzun boylu. (s. 16)"
+   },
+   {
+    "soru": "Ailenin en büyük çocuğu kim?",
+    "secenekler": [
+     "Sheila",
+     "Tom",
+     "Rosie"
+    ],
+    "dogru": 0,
+    "ipucu": "{{She is older than Tom and me.}} cümlesi kimi anlatıyor?",
+    "aciklama": "Sheila, Tom'dan ve Rosie'den büyük. (s. 16)"
+   },
+   {
+    "soru": "Sheila neden Rosie'den daha uysal?",
+    "secenekler": [
+     "Çünkü Sheila daha uzun.",
+     "Çünkü Tom daha çalışkan.",
+     "Çünkü Rosie inatçı."
+    ],
+    "dogru": 2,
+    "ipucu": "{{because I am stubborn}} kısmını hatırla.",
+    "aciklama": "{{She is more easy-going than me because I am stubborn.}} (s. 16)"
+   }
+  ]
+ }
+}

@@ -1,0 +1,556 @@
+{
+ "id": "u1k2",
+ "unite": "Unit 1: Appearance and Personality",
+ "baslik": "Kişiliği Anlatma (Personality)",
+ "sayfalar": "s. 10–26",
+ "giris": "Bu konuda insanların kişiliğini, yani nasıl biri olduklarını anlatan İngilizce kelimeleri öğreneceğiz: dürüst mü, cömert mi, inatçı mı? İngilizce kelimelere dokunarak dinleyebilirsin. Bu konunun sorusu: {{What is she like?}} Yani: O nasıl biri?",
+ "kavramlar": [
+  {
+   "ad": "honest",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='44' cy='66' r='22' fill='#ffd6a5'/><circle cx='36.3' cy='63.8' r='2.6' fill='#1b2340'/><circle cx='51.7' cy='63.8' r='2.6' fill='#1b2340'/><path d='M36.3 73.7 q7.7 6.6 15.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M66 20h40q6 0 6 6v22q0 6-6 6H82l-8 8v-8h-8q-6 0-6-6V26q0-6 6-6z' fill='#f5f6fa'/><path d='M74 37l7 7 14-14' stroke='#3cc47c' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M30 98q14-10 28 0' fill='#3cc47c'/></svg>",
+   "aciklama": "Dürüst demektir. Dürüst kişi her zaman doğruyu söyler.",
+   "ek": "Kitapta dürüst kişi için: {{She never tells lies.}} Hiç yalan söylemez. (s. 15)",
+   "akilda": "dürüst",
+   "ornek": "She's always honest, generous and fair.",
+   "ornekTr": "O her zaman dürüst, cömert ve adildir. (s. 12)",
+   "soru": {
+    "soru": "{{She never tells lies.}} (Hiç yalan söylemez.) Bu kişi nasıl biri?",
+    "secenekler": [
+     "honest",
+     "stubborn",
+     "selfish"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartına bak: her zaman doğruyu söyleyen kişi.",
+    "aciklama": "Yalan söylemeyen kişi {{honest}}: dürüsttür. (s. 15)"
+   }
+  },
+  {
+   "ad": "generous",
+   "renk": "#ff5a8a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='25.0' y='68' width='18' height='36' rx='7' fill='#4ea8de'/><circle cx='34' cy='59' r='10' fill='#ffd6a5'/><circle cx='30.5' cy='58.0' r='1.2' fill='#1b2340'/><circle cx='37.5' cy='58.0' r='1.2' fill='#1b2340'/><path d='M30.5 62.5 q3.5 3.0 7.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='79.0' y='68' width='18' height='36' rx='7' fill='#ff7a33'/><circle cx='88' cy='59' r='10' fill='#ffd6a5'/><circle cx='84.5' cy='58.0' r='1.2' fill='#1b2340'/><circle cx='91.5' cy='58.0' r='1.2' fill='#1b2340'/><path d='M84.5 62.5 q3.5 3.0 7.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M44 76h14M74 76h4' stroke='#ffd6a5' stroke-width='6' stroke-linecap='round'/><rect x='52' y='60' width='22' height='20' rx='3' fill='#ff5a8a'/><path d='M63.0 60v20M52 70.0h22' stroke='#f5f6fa' stroke-width='3'/><path d='M58 60q5-10 5 0q0-10 5 0' stroke='#f2c14e' stroke-width='3' fill='none'/><path d='M63 30c-4-4-9 1-5 5l5 4 5-4c4-4-1-9-5-5z' fill='#ff5a6e'/></svg>",
+   "aciklama": "Cömert demektir. Kitaptaki tanım: vermeye ve paylaşmaya istekli olan kişi.",
+   "ek": "Kitaptaki İngilizce tanım: {{Willing to give and share.}} (s. 10)",
+   "akilda": "cömert",
+   "ornek": "Mark is a generous boy.",
+   "ornekTr": "Mark cömert bir çocuktur. (s. 14)",
+   "soru": {
+    "soru": "{{She buys gifts for her friends.}} (Arkadaşlarına hediye alır.) Bu kişi nasıl biri?",
+    "secenekler": [
+     "punctual",
+     "generous",
+     "stubborn"
+    ],
+    "dogru": 1,
+    "ipucu": "Hediye almak, vermek ve paylaşmaktır. Kartta hangi kelime öyleydi?",
+    "aciklama": "Vermeyi ve paylaşmayı seven kişi {{generous}}: cömerttir. (s. 10, 15)"
+   }
+  },
+  {
+   "ad": "punctual",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='58' r='34' fill='#f5f6fa'/><circle cx='60' cy='58' r='34' stroke='#f2c14e' stroke-width='6' fill='none'/><circle cx='60' cy='32' r='2.5' fill='#1b2340'/><circle cx='86' cy='58' r='2.5' fill='#1b2340'/><circle cx='60' cy='84' r='2.5' fill='#1b2340'/><circle cx='34' cy='58' r='2.5' fill='#1b2340'/><path d='M60 58V36M60 58h14' stroke='#1b2340' stroke-width='5' stroke-linecap='round'/><circle cx='60' cy='58' r='4' fill='#ff5a6e'/><circle cx='92' cy='92' r='15' fill='#3cc47c'/><path d='M85 92l5 5 9-10' stroke='#f5f6fa' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Dakik demektir. Dakik kişi her yere zamanında gelir, geç kalmaz.",
+   "ek": "Kitaptaki tanım: {{Arriving or taking place at an arranged time.}} Kararlaştırılan saatte gelmek. (s. 10)",
+   "akilda": "dakik, zamanında",
+   "ornek": "She is punctual, honest and smart.",
+   "ornekTr": "O dakik, dürüst ve akıllıdır. (s. 17)",
+   "soru": {
+    "soru": "{{She goes everywhere on time.}} (Her yere zamanında gider.) Bu kişi nasıl biri?",
+    "secenekler": [
+     "outgoing",
+     "selfish",
+     "punctual"
+    ],
+    "dogru": 2,
+    "ipucu": "Saat resmini hatırla: zamanında gelen kişi.",
+    "aciklama": "Her yere zamanında giden kişi {{punctual}}: dakiktir. (s. 10, 15)"
+   }
+  },
+  {
+   "ad": "outgoing",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 104h84' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='21.0' y='74' width='18' height='30' rx='7' fill='#4ea8de'/><circle cx='30' cy='66' r='9' fill='#ffd6a5'/><circle cx='26.9' cy='65.1' r='1.2' fill='#1b2340'/><circle cx='33.1' cy='65.1' r='1.2' fill='#1b2340'/><path d='M26.9 69.2 q3.1 2.7 6.3 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='81.0' y='74' width='18' height='30' rx='7' fill='#ff7a33'/><circle cx='90' cy='66' r='9' fill='#ffd6a5'/><circle cx='86.8' cy='65.1' r='1.2' fill='#1b2340'/><circle cx='93.2' cy='65.1' r='1.2' fill='#1b2340'/><path d='M86.8 69.2 q3.1 2.7 6.3 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='51.0' y='64' width='18' height='40' rx='7' fill='#3cc47c'/><circle cx='60' cy='54' r='11' fill='#ffd6a5'/><circle cx='56.1' cy='52.9' r='1.3' fill='#1b2340'/><circle cx='63.9' cy='52.9' r='1.3' fill='#1b2340'/><path d='M56.1 57.9 q3.8 3.3 7.7 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M70 66l14-20' stroke='#ffd6a5' stroke-width='6' stroke-linecap='round'/><path d='M86 34q6 2 6 8M92 28q8 4 8 14' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Dışa dönük, sosyal demektir. Arkadaşlarıyla vakit geçirmeyi sever, çok arkadaşı olur.",
+   "ek": "Kitapta Mike hep arkadaşlarıyla takılır: {{Mike always hangs out with his friends.}} (s. 13)",
+   "akilda": "dışa dönük, sosyal",
+   "ornek": "She isn't very outgoing, but she is very punctual.",
+   "ornekTr": "Çok dışa dönük değildir ama çok dakiktir. (s. 14)",
+   "soru": {
+    "soru": "{{She has a lot of friends.}} (Çok arkadaşı var.) Bu kişi nasıl biri?",
+    "secenekler": [
+     "outgoing",
+     "honest",
+     "punctual"
+    ],
+    "dogru": 0,
+    "ipucu": "Resimde ortadaki çocuk arkadaşlarının arasında el sallıyor.",
+    "aciklama": "Çok arkadaşı olan, sosyal kişi {{outgoing}}: dışa dönüktür. (s. 13, 15)"
+   }
+  },
+  {
+   "ad": "easy-going",
+   "renk": "#c58b5a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 92q46 26 92 0' stroke='#c58b5a' stroke-width='5' fill='none'/><path d='M14 92V30M106 92V30' stroke='#5a6280' stroke-width='4' stroke-linecap='round'/><path d='M30 88q30 14 62 0l-4-14H34z' fill='#4ea8de'/><circle cx='42' cy='68' r='14' fill='#ffd6a5'/><path d='M34.4 66.6 q2.7 2.4 5.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M44.2 66.6 q2.7 2.4 5.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M37.1 72.9 q4.9 4.2 9.8 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M84 34v18M84 34l10-3v18' stroke='#f2c14e' stroke-width='3' fill='none'/><circle cx='81' cy='52' r='4' fill='#f2c14e'/><circle cx='91' cy='49' r='4' fill='#f2c14e'/></svg>",
+   "aciklama": "Uysal, rahat demektir. Kolay kolay kızmaz, herkesle iyi geçinir.",
+   "ek": "Kitaptaki ankette {{easy-going}} için: {{relaxed and friendly}} (rahat ve arkadaş canlısı). (s. 26)",
+   "akilda": "uysal, rahat",
+   "ornek": "He's always kind and easy-going.",
+   "ornekTr": "O her zaman nazik ve uysaldır. (s. 14)",
+   "soru": {
+    "soru": "{{easy-going}} biri nasıldır?",
+    "secenekler": [
+     "Çok kızgın",
+     "Rahat ve arkadaş canlısı",
+     "Hep geç kalan"
+    ],
+    "dogru": 1,
+    "ipucu": "Resimdeki kişi hamakta gözleri kapalı dinleniyor.",
+    "aciklama": "Kitapta {{easy-going}} kişiler {{relaxed and friendly}} diye anlatılıyor. (s. 26)"
+   }
+  },
+  {
+   "ad": "stubborn",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='50' cy='58' r='26' fill='#ffd6a5'/><circle cx='40.9' cy='55.4' r='3.1' fill='#1b2340'/><circle cx='59.1' cy='55.4' r='3.1' fill='#1b2340'/><path d='M42.7 67.1h14.6' stroke='#1b2340' stroke-width='2' stroke-linecap='round'/><path d='M32 40l12 5M68 40l-12 5' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><path d='M26 92h48' stroke='#ffd6a5' stroke-width='10' stroke-linecap='round'/><path d='M30 98l40-12' stroke='#ff7a33' stroke-width='10' stroke-linecap='round'/><rect x='88' y='30' width='18' height='60' rx='3' fill='#c58b5a'/><path d='M88 46h18M88 62h18M88 78h18M97 30v16M97 62v16' stroke='#7a4a2a' stroke-width='2'/></svg>",
+   "aciklama": "İnatçı demektir. Bildiğinden kolay kolay vazgeçmez.",
+   "ek": "Kitapta bu özellik olumsuz sayılır: {{There is one negative thing about her.}} Onun olumsuz bir yanı var. (s. 10, 25)",
+   "akilda": "inatçı",
+   "ornek": "Laura is a little stubborn.",
+   "ornekTr": "Laura biraz inatçıdır. (s. 14)",
+   "soru": {
+    "soru": "{{Laura is a little stubborn.}} Bu cümle ne anlatıyor?",
+    "secenekler": [
+     "Laura biraz inatçı.",
+     "Laura çok cömert.",
+     "Laura hep dakik."
+    ],
+    "dogru": 0,
+    "ipucu": "Resimdeki yüz kollarını kavuşturmuş, kaşları çatık.",
+    "aciklama": "{{stubborn}} inatçı, {{a little}} biraz demektir. (s. 14)"
+   }
+  },
+  {
+   "ad": "selfish",
+   "renk": "#ff5a6e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 104h84' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/><rect x='28' y='52' width='26' height='52' rx='8' fill='#ff7a33'/><circle cx='41' cy='40' r='12' fill='#ffd6a5'/><circle cx='36.8' cy='38.8' r='1.4' fill='#1b2340'/><circle cx='45.2' cy='38.8' r='1.4' fill='#1b2340'/><path d='M36.8 44.2 q4.2 3.6 8.4 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><rect x='26' y='58' width='20' height='14' rx='3' fill='#ff5a8a'/><path d='M36.0 58v14M26 65.0h20' stroke='#f5f6fa' stroke-width='3'/><rect x='30' y='72' width='24' height='16' rx='3' fill='#4ea8de'/><path d='M42.0 72v16M30 80.0h24' stroke='#f5f6fa' stroke-width='3'/><rect x='34' y='88' width='16' height='12' rx='3' fill='#f2c14e'/><path d='M42.0 88v12M34 94.0h16' stroke='#1b2340' stroke-width='3'/><path d='M24 66q-6 16 6 26M58 66q6 16-6 26' stroke='#ffd6a5' stroke-width='6' fill='none' stroke-linecap='round'/><rect x='79.0' y='74' width='18' height='30' rx='7' fill='#5a6280'/><circle cx='88' cy='65' r='10' fill='#ffd6a5'/><circle cx='84.5' cy='64.0' r='1.2' fill='#1b2340'/><circle cx='91.5' cy='64.0' r='1.2' fill='#1b2340'/><path d='M84.5 69.7 q3.5 -3.0 7.0 0' stroke='#1b2340' stroke-width='2' fill='none' stroke-linecap='round'/><path d='M72 84h8M96 84h8' stroke='#ffd6a5' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Bencil demektir. Kitaptaki tanım: yalnızca kendini düşünen, başkalarını düşünmeyen kişi.",
+   "ek": "Kitaptaki İngilizce tanım: {{Caring only about yourself, not others.}} (s. 10)",
+   "akilda": "bencil",
+   "ornek": "I like her because she isn't selfish.",
+   "ornekTr": "Onu seviyorum çünkü bencil değil. (s. 23)",
+   "soru": {
+    "soru": "{{selfish}} kişi ne yapar?",
+    "secenekler": [
+     "Herkese yardım eder.",
+     "Sadece kendini düşünür.",
+     "Her yere zamanında gider."
+    ],
+    "dogru": 1,
+    "ipucu": "Resimdeki kişi bütün kutuları kendine almış.",
+    "aciklama": "{{selfish}}: yalnızca kendini düşünen, bencil kişi. (s. 10)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu özellik olumlu mu, olumsuz mu?",
+   "kutular": [
+    {
+     "etiket": "Olumlu özellik",
+     "uyeler": [
+      "honest",
+      "generous",
+      "punctual",
+      "outgoing",
+      "easy-going"
+     ]
+    },
+    {
+     "etiket": "Olumsuz özellik",
+     "uyeler": [
+      "stubborn",
+      "selfish"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki bir ankette 100 gence arkadaşlıkta en önemli özellik soruluyor. Neredeyse yarısı (%49) {{honest}} diyor. (s. 26)",
+  "Kitaptaki ödev örneğinde Einstein şöyle anlatılıyor: {{Einstein was very intelligent and curious.}} Çok zeki ve meraklıydı. (s. 18)"
+ ],
+ "akildaKalsin": [
+  "Kişiliği sormak için: {{What is she like?}} (O nasıl biri?)",
+  "{{honest}} dürüst, {{generous}} cömert, {{punctual}} dakik.",
+  "{{outgoing}} dışa dönük, {{easy-going}} uysal ve rahat.",
+  "Olumsuz özellikler: {{stubborn}} inatçı, {{selfish}} bencil.",
+  "{{always}} her zaman, {{never}} asla: {{He is always honest and polite.}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{What is she like?}} ile {{What does she look like?}} aynı soru mu?",
+   "cevap": "Hayır. {{What does she look like?}} dış görünüşü sorar: güzel, uzun boylu gibi. {{What is she like?}} kişiliği sorar: dakik, dürüst gibi. Kitapta ikisi art arda soruluyor. (s. 17)"
+  },
+  {
+   "soru": "Dakik biri geç kalır mı?",
+   "cevap": "Kalmaz. Kitapta Frank kendini dakik diye anlatıyor ve şöyle diyor: {{I don't like being late.}} Geç kalmayı sevmem. (s. 22)"
+  },
+  {
+   "soru": "Kitapta başka hangi kişilik kelimeleri var?",
+   "cevap": "{{smart}} akıllı, {{kind}} nazik, {{helpful}} yardımsever, {{patient}} sabırlı, {{fair}} adil, {{polite}} kibar, {{hardworking}} çalışkan, {{supportive}} destekleyici. (s. 12, 14, 16, 25)"
+  },
+  {
+   "soru": "Bir kişinin hem iyi hem kötü özelliği olabilir mi?",
+   "cevap": "Evet. Kitapta Jack, arkadaşı Henry için {{He can sometimes be really stubborn, but I don't care much about it.}} diyor: Bazen çok inatçı olabiliyor ama pek umursamıyorum. (s. 23)"
+  },
+  {
+   "soru": "{{neither of them are selfish}} ne demek?",
+   "cevap": "İkisi de bencil değil demektir. Kitapta Jim ve Mike için söyleniyor; ikisi de paylaşmayı sever. (s. 13)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "En iyi arkadaşının kişiliğini İngilizce bir iki cümleyle anlat. {{My best friend is}} ile başla.",
+   "ornekCevap": "My best friend is Merve. She's always honest, generous and fair.",
+   "anahtarlar": [
+    "my best friend",
+    "is",
+    "always"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "selfish",
+    "honest",
+    "stubborn"
+   ],
+   "dogru": 1,
+   "ipucu": "Dürüst anlamındaki kelimeyi duydun. İstersen yavaş dinle.",
+   "aciklama": "Duyduğun kelime {{honest}}: dürüst. (s. 12)",
+   "dinle": "honest"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "outgoing",
+    "generous",
+    "punctual"
+   ],
+   "dogru": 2,
+   "ipucu": "Saatle, zamanla ilgili kelimeyi duydun.",
+   "aciklama": "Duyduğun kelime {{punctual}}: dakik. (s. 17)",
+   "dinle": "punctual"
+  },
+  {
+   "soru": "Birinin kişiliğini sormak için hangi soru kullanılır?",
+   "secenekler": [
+    "What is she like?",
+    "What does she look like?",
+    "How old is she?"
+   ],
+   "dogru": 0,
+   "ipucu": "Konunun başındaki soruyu hatırla: içinde {{look}} yoktu.",
+   "aciklama": "{{What is she like?}} O nasıl biri? demektir; kişiliği sorar. (s. 17)"
+  },
+  {
+   "soru": "Hangi kelime olumsuz bir özelliği anlatır?",
+   "secenekler": [
+    "generous",
+    "easy-going",
+    "stubborn"
+   ],
+   "dogru": 2,
+   "ipucu": "Gruplama oyununu hatırla: iki olumsuz özellik vardı.",
+   "aciklama": "{{stubborn}} (inatçı) olumsuz bir özelliktir. (s. 10, 25)"
+  },
+  {
+   "soru": "{{Caring only about yourself, not others.}} Bu tanım hangi kelimenin?",
+   "secenekler": [
+    "selfish",
+    "honest",
+    "outgoing"
+   ],
+   "dogru": 0,
+   "ipucu": "Yalnızca kendini düşünmek... Kutuları kendine alan kişiyi hatırla.",
+   "aciklama": "Bu, kitapta {{selfish}} (bencil) kelimesinin tanımı. (s. 10)"
+  },
+  {
+   "soru": "{{Willing to give and share.}} Bu tanım hangi kelimenin?",
+   "secenekler": [
+    "punctual",
+    "generous",
+    "stubborn"
+   ],
+   "dogru": 1,
+   "ipucu": "Vermek ve paylaşmak: hediye kutusu resmini hatırla.",
+   "aciklama": "Bu, kitapta {{generous}} (cömert) kelimesinin tanımı. (s. 10)"
+  },
+  {
+   "soru": "Kitaptaki metne göre Mehmet nasıl biri? {{He's always kind and easy-going.}}",
+   "secenekler": [
+    "Nazik ve uysal",
+    "İnatçı ve bencil",
+    "Dakik ve sosyal"
+   ],
+   "dogru": 0,
+   "ipucu": "{{kind}} nazik demekti; {{easy-going}} kartını hatırla.",
+   "aciklama": "{{kind}} nazik, {{easy-going}} uysal demektir. (s. 14)"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "honest",
+    "easy-going",
+    "outgoing"
+   ],
+   "dogru": 2,
+   "ipucu": "Arkadaşlarıyla takılmayı seven kişiyi anlatan kelime.",
+   "aciklama": "Duyduğun kelime {{outgoing}}: dışa dönük. (s. 13)",
+   "dinle": "outgoing"
+  },
+  {
+   "soru": "{{Mark is a generous boy. He is always honest and polite.}} Hangisi Mark için doğru?",
+   "secenekler": [
+    "Mark bencil.",
+    "Mark cömert ve dürüst.",
+    "Mark inatçı."
+   ],
+   "dogru": 1,
+   "ipucu": "Cümlede {{generous}} ve {{honest}} kelimeleri var.",
+   "aciklama": "Mark cömert, dürüst ve kibar biri. (s. 14)"
+  },
+  {
+   "soru": "Kitaptaki ankette arkadaşlıkta en önemli özellik hangisi seçilmiş?",
+   "secenekler": [
+    "funny",
+    "generous",
+    "honest"
+   ],
+   "dogru": 2,
+   "ipucu": "Neredeyse yarısı (%49) bu özelliği seçmişti. Biliyor musun? kutusuna bak.",
+   "aciklama": "Gençlerin %49'u {{honest}} demiş. (s. 26)"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "smart",
+   "tr": "akıllı",
+   "ornek": "She is very smart.",
+   "ornekTr": "O çok akıllıdır. (s. 14)"
+  },
+  {
+   "en": "kind",
+   "tr": "nazik, iyi kalpli",
+   "ornek": "He's always kind and easy-going.",
+   "ornekTr": "O her zaman nazik ve uysaldır. (s. 14)"
+  },
+  {
+   "en": "helpful",
+   "tr": "yardımsever"
+  },
+  {
+   "en": "patient",
+   "tr": "sabırlı"
+  },
+  {
+   "en": "fair",
+   "tr": "adil"
+  },
+  {
+   "en": "polite",
+   "tr": "kibar",
+   "ornek": "He is always honest and polite.",
+   "ornekTr": "O her zaman dürüst ve kibardır. (s. 14)"
+  },
+  {
+   "en": "hardworking",
+   "tr": "çalışkan"
+  },
+  {
+   "en": "funny",
+   "tr": "komik, eğlenceli"
+  },
+  {
+   "en": "tolerant",
+   "tr": "hoşgörülü"
+  },
+  {
+   "en": "supportive",
+   "tr": "destekleyici",
+   "ornek": "She's supportive, smart and understanding.",
+   "ornekTr": "O destekleyici, akıllı ve anlayışlıdır. (s. 25)"
+  },
+  {
+   "en": "understanding",
+   "tr": "anlayışlı"
+  },
+  {
+   "en": "intelligent",
+   "tr": "zeki"
+  },
+  {
+   "en": "curious",
+   "tr": "meraklı"
+  },
+  {
+   "en": "creative",
+   "tr": "yaratıcı"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Mark is a generous boy.",
+   "tr": "Mark cömert bir çocuktur. (s. 14)"
+  },
+  {
+   "en": "He is always honest and polite.",
+   "tr": "O her zaman dürüst ve kibardır. (s. 14)"
+  },
+  {
+   "en": "Laura is a little stubborn.",
+   "tr": "Laura biraz inatçıdır. (s. 14)"
+  },
+  {
+   "en": "He likes helping people.",
+   "tr": "İnsanlara yardım etmeyi sever. (s. 14)"
+  },
+  {
+   "en": "She goes everywhere on time.",
+   "tr": "Her yere zamanında gider. (s. 15)"
+  },
+  {
+   "en": "She is punctual, honest and smart.",
+   "tr": "O dakik, dürüst ve akıllıdır. (s. 17)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Selma, Mehmet, Mark and Laura",
+  "sayfa": "s. 14",
+  "cumleler": [
+   {
+    "en": "This is Selma.",
+    "tr": "Bu Selma."
+   },
+   {
+    "en": "She likes staying in her room and reading books.",
+    "tr": "Odasında kalıp kitap okumayı sever."
+   },
+   {
+    "en": "She isn't very outgoing, but she is very punctual.",
+    "tr": "Çok dışa dönük değildir ama çok dakiktir."
+   },
+   {
+    "en": "She is tall.",
+    "tr": "Uzun boyludur."
+   },
+   {
+    "en": "Her eyes are big and brown.",
+    "tr": "Gözleri büyük ve kahverengidir."
+   },
+   {
+    "en": "She looks beautiful with her headscarf.",
+    "tr": "Başörtüsüyle güzel görünür."
+   },
+   {
+    "en": "Mehmet is a nice man.",
+    "tr": "Mehmet iyi bir adamdır."
+   },
+   {
+    "en": "He's always kind and easy-going.",
+    "tr": "Her zaman nazik ve uysaldır."
+   },
+   {
+    "en": "He likes helping people.",
+    "tr": "İnsanlara yardım etmeyi sever."
+   },
+   {
+    "en": "Mehmet is tall and slim.",
+    "tr": "Mehmet uzun boylu ve incedir."
+   },
+   {
+    "en": "He has short black hair and brown eyes.",
+    "tr": "Kısa siyah saçları ve kahverengi gözleri var."
+   },
+   {
+    "en": "His name is Mark.",
+    "tr": "Onun adı Mark."
+   },
+   {
+    "en": "He is young and handsome.",
+    "tr": "Genç ve yakışıklıdır."
+   },
+   {
+    "en": "He has blue eyes and brown hair.",
+    "tr": "Mavi gözleri ve kahverengi saçları var."
+   },
+   {
+    "en": "Mark is a generous boy.",
+    "tr": "Mark cömert bir çocuktur."
+   },
+   {
+    "en": "He is always honest and polite.",
+    "tr": "Her zaman dürüst ve kibardır."
+   },
+   {
+    "en": "Laura is very cute with green eyes and long straight hair.",
+    "tr": "Laura yeşil gözlü, uzun düz saçlı, çok sevimli biridir."
+   },
+   {
+    "en": "Her hair is brown.",
+    "tr": "Saçı kahverengidir."
+   },
+   {
+    "en": "She has a nice smile.",
+    "tr": "Güzel bir gülüşü var."
+   },
+   {
+    "en": "Laura is a little stubborn.",
+    "tr": "Laura biraz inatçıdır."
+   },
+   {
+    "en": "She is very smart.",
+    "tr": "Çok akıllıdır."
+   }
+  ],
+  "sorular": [
+   {
+    "soru": "Kim çok dakik?",
+    "secenekler": [
+     "Laura",
+     "Selma",
+     "Mark"
+    ],
+    "dogru": 1,
+    "ipucu": "{{She isn't very outgoing, but she is very punctual.}} cümlesi kimi anlatıyor?",
+    "aciklama": "Selma çok dışa dönük değil ama çok dakik. (s. 14)"
+   },
+   {
+    "soru": "İnsanlara yardım etmeyi kim sever?",
+    "secenekler": [
+     "Mehmet",
+     "Laura",
+     "Selma"
+    ],
+    "dogru": 0,
+    "ipucu": "{{He likes helping people.}} cümlesi kimden sonra geliyor?",
+    "aciklama": "Mehmet nazik, uysal ve yardımsever biri. (s. 14)"
+   },
+   {
+    "soru": "Laura'nın olumsuz özelliği hangisi?",
+    "secenekler": [
+     "Bencil",
+     "Geç kalan",
+     "Biraz inatçı"
+    ],
+    "dogru": 2,
+    "ipucu": "{{Laura is a little ...}} cümlesini hatırla.",
+    "aciklama": "{{Laura is a little stubborn.}} Laura biraz inatçı. (s. 14)"
+   }
+  ]
+ }
+}
