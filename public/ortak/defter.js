@@ -937,6 +937,43 @@
     yildiz(g, w, h, rnd) {
       for (let i = 0; i < Math.round(w / 6); i++) { g.globalAlpha = .35 + rnd() * .6; g.fillStyle = "#fff"; g.beginPath(); g.arc(rnd() * w, rnd() * h, rnd() * 1.4 + .3, 0, 7); g.fill(); }
     },
+    // İngilizce (MEB) — "Airmail": süzülen konuşma balonları
+    balon(g, w, h, rnd) {
+      const sozler = ["Hello!", "Hi!", "?", "Yes!", "ABC", "Wow!", "OK", "Bye!", "!", "Aa"];
+      const n = Math.max(5, Math.round(w / 150)), x0 = w > 700 ? w * .36 : 0;
+      for (let i = 0; i < n; i++) {
+        const x = x0 + (i + .15 + rnd() * .7) * (w - x0) / n, y = h * (.18 + rnd() * .62), s = .7 + rnd() * .7, t = sozler[Math.floor(rnd() * sozler.length)];
+        g.save(); g.translate(x, y); g.rotate((rnd() - .5) * .35); g.scale(s, s);
+        g.font = "800 15px 'Fredoka', 'Baloo 2', sans-serif"; const tw = g.measureText(t).width, bw = tw + 22, bh = 30;
+        g.globalAlpha = .09 + rnd() * .1; g.fillStyle = "#fff"; g.beginPath();
+        if (g.roundRect) g.roundRect(-bw / 2, -bh / 2, bw, bh, 14); else g.rect(-bw / 2, -bh / 2, bw, bh);
+        g.moveTo(-6, bh / 2 - 1); g.lineTo(-12, bh / 2 + 9); g.lineTo(2, bh / 2 - 1); g.fill();
+        g.globalAlpha = Math.min(.5, g.globalAlpha * 2.4); g.fillStyle = i % 3 === 0 ? "#ff8a7a" : "#bfe0ff"; g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(t, 0, 1);
+        g.restore();
+      }
+      for (let i = 0; i < Math.round(w / 40); i++) { g.globalAlpha = .2 + rnd() * .35; g.fillStyle = "#fff"; g.beginPath(); g.arc(rnd() * w, rnd() * h, rnd() * 1.2 + .3, 0, 7); g.fill(); }
+    },
+    // İngilizce (Own It) — "Explorer notebook": ünite kelimeleri, yıldız ve ok karalamaları
+    kelime(g, w, h, rnd) {
+      const kel = ["inspire", "art", "words", "healthy", "planet", "create", "celebrate", "school", "travel", "brave", "music", "idea", "explore", "smile"];
+      const n = Math.max(6, Math.round(w / 120));
+      for (let i = 0; i < n; i++) {
+        const x0 = w > 700 ? w * .36 : 0, x = x0 + (i + .1 + rnd() * .8) * (w - x0) / n, y = h * (.2 + rnd() * .65), sz = 13 + rnd() * 16; // geniş ekranda başlığın sağında
+        g.save(); g.translate(x, y); g.rotate((rnd() - .5) * .5);
+        g.globalAlpha = .1 + rnd() * .14; g.fillStyle = i % 4 === 0 ? "#ffd166" : "#e9e0ff";
+        g.font = `700 ${sz}px 'Fredoka', 'Baloo 2', sans-serif`; g.textAlign = "center"; g.fillText(kel[Math.floor(rnd() * kel.length)], 0, 0);
+        g.restore();
+      }
+      g.strokeStyle = "rgba(255,209,102,.35)"; g.lineWidth = 2; g.lineCap = "round"; g.lineJoin = "round";
+      for (let i = 0; i < Math.max(2, Math.round(w / 420)); i++) {   // yıldız karalaması
+        const cx = rnd() * w, cy = h * (.2 + rnd() * .6), r = 7 + rnd() * 6; g.beginPath();
+        for (let k = 0; k <= 10; k++) { const a = -Math.PI / 2 + k * Math.PI / 5, rr = k % 2 ? r * .45 : r; g.lineTo(cx + rr * Math.cos(a), cy + rr * Math.sin(a)); }
+        g.stroke();
+      }
+      g.strokeStyle = "rgba(233,224,255,.22)";                          // kıvrımlı ok
+      const y0 = h * .78; g.beginPath(); g.moveTo(w * .05, y0); g.bezierCurveTo(w * .25, y0 - 30, w * .4, y0 + 25, w * .58, y0 - 8); g.stroke();
+      g.beginPath(); g.moveTo(w * .58 - 10, y0 - 14); g.lineTo(w * .58, y0 - 8); g.lineTo(w * .58 - 9, y0 + 2); g.stroke();
+    },
     harita(g, w, h, rnd) {
       const cream = "245,236,215";
       g.strokeStyle = `rgba(${cream},.07)`; g.lineWidth = 1; g.setLineDash([3, 5]);       // enlem-boylam ızgarası

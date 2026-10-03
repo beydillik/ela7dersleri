@@ -1,0 +1,366 @@
+{
+ "id": "u1k1",
+ "unite": "Unit 1: Be inspired",
+ "baslik": "Describing people 1 (calm, cheerful, confident…)",
+ "sayfalar": "SB s. 11, 17, 128 · WB s. 8, 13",
+ "giris": "Bu konuda bir insanın kişiliğini anlatan 6 İngilizce sıfat öğreneceğiz. Kitaptaki ipucu: yeni bir sıfat öğrenince zıttını da öğren. Bu yüzden her kartta kelimenin zıttı da var. Kartlardaki İngilizce tanımlar kitabın kendi tanımları, onları da dinleyebilirsin.",
+ "kavramlar": [
+  {
+   "ad": "calm",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 92 q12 -8 24 0 t24 0 t24 0 t24 0' stroke='#4ea8de' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M22 104 q10 -6 20 0 t20 0 t20 0 t20 0' stroke='#2b6fa0' stroke-width='3' fill='none' stroke-linecap='round'/><circle cx='60' cy='50' r='24' fill='#ffd6a5'/><path d='M48.0 47.6 q3.6 3.6 7.2 0 M64.8 47.6 q3.6 3.6 7.2 0' stroke='#1b2340' stroke-width='2.4' fill='none' stroke-linecap='round'/><path d='M54.0 57.2 q6.0 4.8 12.0 0' stroke='#1b2340' stroke-width='2.4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Sakin demektir. Kitaptaki tanım: {{is relaxed and doesn't worry}} (rahattır ve endişelenmez).",
+   "ek": "Zıttı {{anxious}}: endişeli, kaygılı.",
+   "akilda": "sakin",
+   "ornek": "My parents are always very calm when they deal with problems.",
+   "ornekTr": "Annemle babam sorunlarla uğraşırken hep çok sakindir. (SB s. 128)",
+   "soru": {
+    "soru": "{{She's very calm.}} Bu cümleye göre o nasıl biri?",
+    "secenekler": [
+     "Sakin",
+     "Endişeli",
+     "Huysuz"
+    ],
+    "dogru": 0,
+    "ipucu": "Resimdeki kapalı gözlere ve yumuşak dalgalara bak: {{calm}} ne demekti?",
+    "aciklama": "{{calm}} sakin, rahat demektir. (SB s. 11)"
+   }
+  },
+  {
+   "ad": "cheerful",
+   "renk": "#ffb03a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 60 L104.0 60.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L98.1 82.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L82.0 98.1' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L60.0 104.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L38.0 98.1' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L21.9 82.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L16.0 60.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L21.9 38.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L38.0 21.9' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L60.0 16.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L82.0 21.9' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><path d='M60 60 L98.1 38.0' stroke='#ffb03a' stroke-width='5' stroke-linecap='round'/><circle cx='60' cy='60' r='27' fill='#ffd166'/><circle cx='50.5' cy='55.3' r='3.0' fill='#1b2340'/><circle cx='69.5' cy='55.3' r='3.0' fill='#1b2340'/><path d='M46 66 q14 14 28 0z' fill='#1b2340'/><circle cx='44' cy='66' r='4' fill='#ff8fa3' opacity='.8'/><circle cx='76' cy='66' r='4' fill='#ff8fa3' opacity='.8'/></svg>",
+   "aciklama": "Neşeli demektir. Kitaptaki tanım: {{is happy}} (mutludur).",
+   "ek": "Zıttı {{grumpy}}: huysuz, somurtkan.",
+   "akilda": "neşeli",
+   "ornek": "She never gives up, she's cheerful.",
+   "ornekTr": "Asla pes etmez, neşelidir. (SB s. 17)",
+   "soru": {
+    "soru": "{{cheerful}} kelimesinin zıttı hangisi?",
+    "secenekler": [
+     "calm",
+     "grumpy",
+     "sociable"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın alt kısmında zıt anlamlı kelime yazıyor: huysuz olan.",
+    "aciklama": "{{cheerful}} neşeli, {{grumpy}} huysuz demektir. (SB s. 11)"
+   }
+  },
+  {
+   "ad": "confident",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M40 104 h40 v-6 h-40z' fill='#5a6280'/><path d='M48 98 v-30 h24 v30z' fill='#9b7bff'/><path d='M48 70 l-14 -22 M72 70 l14 -22' stroke='#ffd6a5' stroke-width='7' stroke-linecap='round'/><circle cx='60' cy='54' r='13' fill='#ffd6a5'/><circle cx='55.5' cy='52.7' r='1.4' fill='#1b2340'/><circle cx='64.5' cy='52.7' r='1.4' fill='#1b2340'/><path d='M54.8 57.9 q5.2 5.9 10.4 0' stroke='#1b2340' stroke-width='2.4' fill='none' stroke-linecap='round'/><path d='M60 10 l4 9 10 1 -8 6 3 10 -9 -6 -9 6 3 -10 -8 -6 10 -1z' fill='#ffd166'/></svg>",
+   "aciklama": "Kendine güvenen demektir. Kitaptaki tanım: {{feels they can do something well}} (bir şeyi iyi yapabileceğini hisseder).",
+   "ek": "Zıttı {{shy}}: utangaç, çekingen.",
+   "akilda": "kendine güvenen",
+   "ornek": "People think I'm confident, but I'm usually shy.",
+   "ornekTr": "İnsanlar kendime güvendiğimi düşünür ama genelde utangacımdır. (WB s. 8)",
+   "soru": {
+    "soru": "Sahneye çıkıp rahatça şarkı söyleyen biri için hangisini kullanırız?",
+    "secenekler": [
+     "shy",
+     "anxious",
+     "confident"
+    ],
+    "dogru": 2,
+    "ipucu": "Kollarını havaya kaldıran kişinin resmini hatırla.",
+    "aciklama": "Kendine güvenen biri {{confident}}'tir. (SB s. 11)"
+   }
+  },
+  {
+   "ad": "helpful",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18.4 80.8 q15.6 -31.2 31.2 0z' fill='#3cc47c'/><circle cx='34' cy='46' r='12' fill='#ffd6a5'/><path d='M71.7 81.9 q14.3 -28.6 28.6 0z' fill='#4ea8de'/><circle cx='86' cy='50' r='11' fill='#ffd6a5'/><path d='M44 74 q16 -10 32 0' stroke='#ffd6a5' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M60 30 c-5 -6 -13 -1 -8 6 l8 7 8 -7 c5 -7 -3 -12 -8 -6z' fill='#ff5a6e'/></svg>",
+   "aciklama": "Yardımsever demektir. Kitaptaki tanım: {{helps other people}} (başkalarına yardım eder).",
+   "ek": "Zıttı başına {{un-}} ekleyerek yapılır: {{unhelpful}} (yardım etmeyen).",
+   "akilda": "yardımsever",
+   "ornek": "She is an inspiring person because she's ambitious and helpful.",
+   "ornekTr": "O, ilham veren biri çünkü hırslı ve yardımseverdir. (SB s. 17)",
+   "soru": {
+    "soru": "{{helpful}} kelimesinin zıttı nasıl yapılır?",
+    "secenekler": [
+     "Başına un- eklenir: unhelpful",
+     "Başına im- eklenir: imhelpful",
+     "Sonuna -er eklenir: helpfuler"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki ek bilgiye bak: zıttı hangi ekle yapılıyordu?",
+    "aciklama": "{{helpful}} → {{unhelpful}}. (SB s. 11)"
+   }
+  },
+  {
+   "ad": "patient",
+   "renk": "#c58b5a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 18 h36 M30 102 h36' stroke='#c58b5a' stroke-width='5' stroke-linecap='round'/><path d='M34 20 q0 24 14 40 q-14 16 -14 40 h28 q0 -24 -14 -40 q14 -16 14 -40z' fill='none' stroke='#e9e0ff' stroke-width='3'/><path d='M40 30 q8 14 8 26 q0 -12 8 -26z M38 98 q10 -16 20 0z' fill='#ffd166'/><circle cx='88' cy='66' r='17' fill='#ffd6a5'/><circle cx='82.0' cy='64.3' r='1.9' fill='#1b2340'/><circle cx='94.0' cy='64.3' r='1.9' fill='#1b2340'/><path d='M82.9 71.1 q5.1 4.2 10.2 0' stroke='#1b2340' stroke-width='2.4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Sabırlı demektir. Kitaptaki tanım: {{doesn't get angry when things take a long time}} (işler uzun sürünce kızmaz).",
+   "ek": "Zıttı başına {{im-}} ekleyerek yapılır: {{impatient}} (sabırsız).",
+   "akilda": "sabırlı",
+   "ornek": "She's the calmest and most patient teacher at our school.",
+   "ornekTr": "Okulumuzun en sakin ve en sabırlı öğretmenidir. (WB s. 13)",
+   "soru": {
+    "soru": "Otobüs çok geciktiği hâlde hiç kızmadan bekleyen biri nasıldır?",
+    "secenekler": [
+     "impatient",
+     "patient",
+     "grumpy"
+    ],
+    "dogru": 1,
+    "ipucu": "Kum saatini hatırla: işler uzun sürünce kızmayan kişi.",
+    "aciklama": "Kızmadan bekleyen kişi {{patient}}'tir: sabırlı. (SB s. 11)"
+   }
+  },
+  {
+   "ad": "sociable",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M15.7 89.9 q14.3 -28.6 28.6 0z' fill='#ff7a33'/><circle cx='30' cy='58' r='11' fill='#ffd6a5'/><path d='M44.4 86.8 q15.6 -31.2 31.2 0z' fill='#3cc47c'/><circle cx='60' cy='52' r='12' fill='#ffd6a5'/><path d='M75.7 89.9 q14.3 -28.6 28.6 0z' fill='#9b7bff'/><circle cx='90' cy='58' r='11' fill='#ffd6a5'/><rect x='66' y='14' width='38' height='20' rx='9' fill='#f5f6fa'/><path d='M74 33 l-4 8 10 -8z' fill='#f5f6fa'/><circle cx='77' cy='24' r='2.4' fill='#1b2340'/><circle cx='85' cy='24' r='2.4' fill='#1b2340'/><circle cx='93' cy='24' r='2.4' fill='#1b2340'/></svg>",
+   "aciklama": "Sosyal, arkadaş canlısı demektir. Kitaptaki tanım: {{likes being with other people}} (başkalarıyla birlikte olmayı sever).",
+   "ek": "Zıttı {{unsociable}}: insanlarla birlikte olmayı pek sevmeyen.",
+   "akilda": "sosyal, arkadaş canlısı",
+   "ornek": "I'm sociable because I love making friends and being with people.",
+   "ornekTr": "Sosyalim çünkü arkadaş edinmeyi ve insanlarla birlikte olmayı severim. (SB s. 11)",
+   "soru": {
+    "soru": "{{I love making friends.}} diyen biri için hangi kelime uygun?",
+    "secenekler": [
+     "sociable",
+     "patient",
+     "calm"
+    ],
+    "dogru": 0,
+    "ipucu": "Üç arkadaşın birlikte olduğu resmi hatırla.",
+    "aciklama": "Arkadaş edinmeyi seven biri {{sociable}}'dır. (SB s. 11)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "anxious",
+   "tr": "endişeli, kaygılı"
+  },
+  {
+   "en": "grumpy",
+   "tr": "huysuz, somurtkan"
+  },
+  {
+   "en": "shy",
+   "tr": "utangaç, çekingen",
+   "ornek": "People think I'm confident, but I'm usually shy.",
+   "ornekTr": "İnsanlar kendime güvendiğimi düşünür ama genelde utangacımdır. (WB s. 8)"
+  },
+  {
+   "en": "unhelpful",
+   "tr": "yardım etmeyen"
+  },
+  {
+   "en": "impatient",
+   "tr": "sabırsız"
+  },
+  {
+   "en": "unsociable",
+   "tr": "insanlardan uzak duran, sosyal olmayan"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Zıttı nasıl yapılır?",
+   "kutular": [
+    {
+     "etiket": "Başına un- eklenir",
+     "uyeler": [
+      "helpful",
+      "sociable"
+     ]
+    },
+    {
+     "etiket": "Başına im- eklenir",
+     "uyeler": [
+      "patient"
+     ]
+    },
+    {
+     "etiket": "Bambaşka bir kelime",
+     "uyeler": [
+      "calm",
+      "cheerful",
+      "confident"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "She never gives up, she's cheerful.",
+   "tr": "Asla pes etmez, neşelidir. (SB s. 17)"
+  },
+  {
+   "en": "My parents are always very calm.",
+   "tr": "Annemle babam hep çok sakindir. (SB s. 128)"
+  },
+  {
+   "en": "People think I'm confident, but I'm usually shy.",
+   "tr": "İnsanlar kendime güvendiğimi düşünür ama genelde utangacımdır. (WB s. 8)"
+  },
+  {
+   "en": "I'm sociable because I love making friends.",
+   "tr": "Sosyalim çünkü arkadaş edinmeyi severim. (SB s. 11)"
+  },
+  {
+   "en": "She's the most patient teacher at our school.",
+   "tr": "Okulumuzun en sabırlı öğretmenidir. (WB s. 13)"
+  }
+ ],
+ "biliyorMusun": [
+  "Kitabın öğrenme ipucu: {{When you learn a new adjective, write the opposite.}} Yeni bir sıfat öğrendiğinde zıttını da yaz. (SB s. 11)",
+  "Kitapta 12 kişilik sıfatı bir renk çarkında gösteriliyor. Bu konuda 6 tanesini öğrendin; kalanlar (sensible, sensitive, talented, ambitious, active, inspiring) bir sonraki konuda. (SB s. 11)"
+ ],
+ "akildaKalsin": [
+  "Zıt: {{calm}} ↔ {{anxious}}, {{cheerful}} ↔ {{grumpy}}, {{confident}} ↔ {{shy}}.",
+  "{{un-}} ekiyle zıt: {{helpful}} → {{unhelpful}}, {{sociable}} → {{unsociable}}.",
+  "{{im-}} ekiyle zıt: {{patient}} → {{impatient}}.",
+  "Neden olduğunu {{because}} ile söyle: {{I'm sociable because I love making friends.}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{un-}} ve {{im-}} ne işe yarıyor?",
+   "cevap": "Kelimenin başına gelince anlamı tersine çevirir, Türkçedeki \"-sız, -siz\" gibi: {{helpful}} yardımsever → {{unhelpful}} yardım etmeyen; {{patient}} sabırlı → {{impatient}} sabırsız. (SB s. 11)"
+  },
+  {
+   "soru": "Her zıt anlamlı kelime ekle mi yapılır?",
+   "cevap": "Hayır. {{calm}}'ın zıttı {{anxious}}, {{cheerful}}'ın zıttı {{grumpy}}, {{confident}}'ın zıttı {{shy}}; bunlar bambaşka kelimeler. Bu yüzden kitap zıtları da ezberlemeni öneriyor. (SB s. 11)"
+  },
+  {
+   "soru": "{{calm}} ile {{patient}} aynı şey mi?",
+   "cevap": "Benzer ama aynı değil. {{calm}} rahat ve endişesiz olmak; {{patient}} işler uzun sürünce kızmamak. Kitapta bir öğretmen ikisiyle birlikte anlatılıyor: {{the calmest and most patient teacher}}. (WB s. 13)"
+  },
+  {
+   "soru": "Kendimi nasıl anlatırım?",
+   "cevap": "Kitaptaki örnek gibi: sıfatı söyle, sonra {{because}} ile nedenini ekle. {{I'm sociable because I love making friends and being with people.}} (SB s. 11)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendini iki sıfatla anlat ve nedenini yaz: {{I'm ... because ...}}",
+   "ornekCevap": "I'm cheerful because I smile a lot. I'm sociable because I love being with my friends.",
+   "anahtarlar": [
+    "i'm",
+    "because"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "cheerful",
+    "confident",
+    "calm"
+   ],
+   "dogru": 1,
+   "ipucu": "Kendine güvenmekle ilgili kelime. Bir daha dinle, istersen yavaş dinle.",
+   "aciklama": "Duyduğun kelime {{confident}}: kendine güvenen. (SB s. 11)",
+   "dinle": "confident"
+  },
+  {
+   "soru": "{{is happy}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "cheerful",
+    "patient",
+    "helpful"
+   ],
+   "dogru": 0,
+   "ipucu": "Gülen güneş kartını hatırla.",
+   "aciklama": "Kitapta {{cheerful}} için tanım {{is happy}}. (SB s. 11)"
+  },
+  {
+   "soru": "{{shy}} kelimesinin zıttı hangisi?",
+   "secenekler": [
+    "calm",
+    "sociable",
+    "confident"
+   ],
+   "dogru": 2,
+   "ipucu": "{{confident}} kartının alt kısmına bak.",
+   "aciklama": "{{confident}} kendine güvenen, {{shy}} utangaç. (SB s. 11, WB s. 8)"
+  },
+  {
+   "soru": "Hangi kelimenin zıttı {{im-}} ile yapılır?",
+   "secenekler": [
+    "helpful",
+    "patient",
+    "cheerful"
+   ],
+   "dogru": 1,
+   "ipucu": "Kum saati kartını hatırla.",
+   "aciklama": "{{patient}} → {{impatient}}. (SB s. 11)"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "sociable",
+    "helpful",
+    "anxious"
+   ],
+   "dogru": 0,
+   "ipucu": "Arkadaşlarla birlikte olmayı seven kişi. Bir daha dinle.",
+   "aciklama": "Duyduğun kelime {{sociable}}: sosyal. (SB s. 11)",
+   "dinle": "sociable"
+  },
+  {
+   "soru": "{{helps other people}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "patient",
+    "calm",
+    "helpful"
+   ],
+   "dogru": 2,
+   "ipucu": "Kelimenin içinde {{help}} (yardım) var.",
+   "aciklama": "{{helpful}}: başkalarına yardım eden. (SB s. 11)"
+  },
+  {
+   "soru": "{{My parents are always very calm when they deal with problems.}} Annesi ve babası sorunlar karşısında nasıl?",
+   "secenekler": [
+    "Sakin",
+    "Endişeli",
+    "Sabırsız"
+   ],
+   "dogru": 0,
+   "ipucu": "{{calm}} kelimesinin anlamını düşün.",
+   "aciklama": "Sorunlar karşısında sakin kalırlar. (SB s. 128)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I'm sociable ___ I love making friends.}}",
+   "secenekler": [
+    "but",
+    "because",
+    "and"
+   ],
+   "dogru": 1,
+   "ipucu": "Neden olduğunu anlatan kelime gerekiyor.",
+   "aciklama": "{{because}}: çünkü. (SB s. 11)"
+  },
+  {
+   "soru": "Hiç gülümsemeyen, sürekli somurtan biri için hangisini kullanırız?",
+   "secenekler": [
+    "cheerful",
+    "confident",
+    "grumpy"
+   ],
+   "dogru": 2,
+   "ipucu": "{{cheerful}} kartında zıt anlamlı kelime yazıyor.",
+   "aciklama": "{{grumpy}}: huysuz, somurtkan. (SB s. 11)"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "patient",
+    "impatient",
+    "helpful"
+   ],
+   "dogru": 1,
+   "ipucu": "Başında bir ek olan kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{impatient}}: sabırsız. (SB s. 11)",
+   "dinle": "impatient"
+  }
+ ]
+}

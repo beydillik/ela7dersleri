@@ -37,7 +37,7 @@ function sayfalariSec(metin: string, araliklar: number[][]): string {
   const sayfa = new Map<number, string>();
   for (let i = 1; i < parcalar.length; i += 2) sayfa.set(Number(parcalar[i]), parcalar[i - 1].trim());
   const secilen: string[] = [];
-  for (const [a, b] of araliklar) for (let n = a; n <= b; n++) if (sayfa.has(n)) secilen.push(`[Kitap sayfası ${n}]\n${sayfa.get(n)}`);
+  for (const [a, b] of araliklar) for (let n = a; n <= b; n++) if (sayfa.has(n)) secilen.push(`[${n >= 1000 ? `Workbook sayfası ${n - 1000}` : `Kitap sayfası ${n}`}]\n${sayfa.get(n)}`); // 1000+ = Workbook (Own It)
   return secilen.join("\n\n").slice(0, 60000);
 }
 

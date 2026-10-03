@@ -227,7 +227,7 @@
 </main>
 
 <footer class="wrap">
-  <p>Kaynak: MEB 7. Sınıf Ders Kitapları, Ela BEYDİLLİ için hazırlandı,<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>
+  <p>Kaynak: MEB 7. Sınıf Ders Kitapları ve okulun kullandığı yardımcı kitaplar, Ela BEYDİLLİ için hazırlandı,<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>
 </footer>
 
 <script>
@@ -251,7 +251,9 @@
     "Türkçe": `${T(70, 38, 34, "Aa")}<path d="M14 94 q22 -9 42 0 v-38 q-20 -9 -42 0 Z M56 94 q22 -9 42 0 v-38 q-20 -9 -42 0"/>${T(112, 94, 34, "“”")}`,
     "Sosyal Bilgiler": `<circle cx="104" cy="38" r="26"/><path d="M78 38 h52 M104 12 q-15 26 0 52 q15 -26 0 -52"/>
       <circle cx="38" cy="66" r="20"/><path d="M38 50 l5 16 -5 16 -5 -16 z" fill="currentColor"/>`,
-    "İngilizce": `<path d="M60 14 h64 a10 10 0 0 1 10 10 v24 a10 10 0 0 1 -10 10 h-42 l-16 14 l4 -14 h-10 a10 10 0 0 1 -10 -10 v-24 a10 10 0 0 1 10 -10 z"/>
+    "İngilizce (Own It)": `<rect x="58" y="12" width="66" height="62" rx="6" transform="rotate(4 91 43)"/><path d="M68 34 h44 M68 46 h36 M68 58 h28" transform="rotate(4 91 43)"/>
+      <path d="M126 70 l14 -30 6 3 -14 30 -8 4z"/>${T(8, 100, 26, "A+")}<path d="M28 30 l4 9 10 1 -8 6 3 10 -9 -6 -9 6 3 -10 -8 -6 10 -1z"/>`,
+    "İngilizce (MEB)": `<path d="M60 14 h64 a10 10 0 0 1 10 10 v24 a10 10 0 0 1 -10 10 h-42 l-16 14 l4 -14 h-10 a10 10 0 0 1 -10 -10 v-24 a10 10 0 0 1 10 -10 z"/>
       ${T(66, 44, 20, "Hello!")}${T(8, 100, 26, "ABC")}`
   };
   const cizim = ad => `<svg class="dd" viewBox="0 0 150 104" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${CIZIM[ad] || ""}</svg>`;
@@ -262,7 +264,8 @@
   const DERSLER = [
     { kod: "fen1", ders: "Fen Bilimleri",   bot: "Kuark",  renk: "#ff7a33" },
     { kod: "sos1", ders: "Sosyal Bilgiler", bot: "Pusula", renk: "#2f8f5f" },
-    { kod: "ing1", ders: "İngilizce",       bot: "Polly",  renk: "#1d6fa3" },
+    { kod: "ing1", ders: "İngilizce (MEB)", bot: "Polly",  renk: "#1d6fa3" },
+    { kod: "own1", ders: "İngilizce (Own It)", bot: "Hoot", renk: "#6c4bd8" },
     { kod: null,   ders: "Matematik",       bot: "Pisi",   renk: "#1f9e8f" },
     { kod: null,   ders: "Türkçe",          bot: "Hece",   renk: "#c99a06" }
   ];

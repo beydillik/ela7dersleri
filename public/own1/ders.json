@@ -1,0 +1,494 @@
+{
+ "kod": "own1",
+ "ders": "İngilizce (Own It)",
+ "sinif": "7. Sınıf",
+ "donem": "1. Dönem",
+ "dil": "en",
+ "kaynak": "Own it! 3 Student's Book ve Workbook (Cambridge University Press)",
+ "tema": {
+  "ad": "own",
+  "desen": "kelime",
+  "font": "Fredoka:wght@400;500;600;700"
+ },
+ "bot": {
+  "ad": "Hoot",
+  "dugme": "Hoot'a sor",
+  "svg": "<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Hoot'><circle cx='32' cy='32' r='32' fill='#6c4bd8'/><path d='M18 20 L14 8 L25 15z M46 20 L50 8 L39 15z' fill='#4b2fa8'/><ellipse cx='32' cy='36' rx='17' ry='19' fill='#8a6cf0'/><ellipse cx='32' cy='42' rx='10' ry='11' fill='#e9e0ff'/><path d='M27 39 q2 2 4 0 M33 43 q2 2 4 0 M27 47 q2 2 4 0' stroke='#b9a6f5' stroke-width='1.4' fill='none' stroke-linecap='round'/><circle cx='24.5' cy='27' r='7.5' fill='#fff'/><circle cx='39.5' cy='27' r='7.5' fill='#fff'/><circle cx='25.5' cy='27.5' r='3.6' fill='#251b3d'/><circle cx='38.5' cy='27.5' r='3.6' fill='#251b3d'/><circle cx='26.6' cy='26.2' r='1.2' fill='#fff'/><circle cx='39.6' cy='26.2' r='1.2' fill='#fff'/><path d='M29.5 32 L32 36.5 L34.5 32z' fill='#ffb84d'/><path d='M15 36 q-5 8 1 14 q3-7 3-14z M49 36 q5 8 -1 14 q-3-7 -3-14z' fill='#5a3cc4'/><path d='M26 55 v3 M30 55 v3 M34 55 v3 M38 55 v3' stroke='#ffb84d' stroke-width='2' stroke-linecap='round'/><path d='M18 16 h28 l-2 -5 h-24z' fill='#251b3d'/><path d='M32 11 l13 -3 -13 -3 -13 3z' fill='#251b3d'/><path d='M44 8 v6' stroke='#ffd166' stroke-width='1.6'/></svg>",
+  "karsilama": "Hello! Ben Hoot, Own It İngilizce robotuyum. Şu an \"{konu}\" konusundayız. Kelime, kalıp ya da cümle sorabilirsin.",
+  "oneriler": [
+   "Bu kelimeyle bir cümle kur",
+   "Bu kuralı basitçe anlat",
+   "Bana kolay bir soru sor",
+   "Bu cümle Türkçede ne demek?"
+  ],
+  "ekTalimat": "Bu bir İngilizce dersi (Own it! 3). Açıklamaları Türkçe yap; İngilizce kelime ve cümleleri İngilizce yaz ve yanına parantez içinde Türkçe anlamını ekle. Dilbilgisi sorularında kuralı kısa bir örnek cümleyle göster. Sayfa 1000 ve üstü Workbook sayfasıdır (1009 = Workbook s. 9); sayfa verirken 'SB s. N' ya da 'WB s. N' yaz. Öğrenci İngilizce yazarsa küçük hatalarını nazikçe düzelt."
+ },
+ "uniteler": [
+  {
+   "ad": "Starter: Welcome!",
+   "no": 0,
+   "konular": [
+    {
+     "id": "u0k1",
+     "baslik": "Technology and Feelings (tekrar)",
+     "sayfalar": "SB s. 4–5",
+     "kaynakSayfalar": [
+      [
+       4,
+       5
+      ],
+      [
+       127,
+       127
+      ],
+      [
+       1004,
+       1005
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u0k2",
+     "baslik": "Zamanlar Tekrarı: present simple, present continuous, past simple",
+     "sayfalar": "SB s. 6–9",
+     "kaynakSayfalar": [
+      [
+       6,
+       9
+      ],
+      [
+       1006,
+       1007
+      ],
+      [
+       1086,
+       1087
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "Unit 1: Be inspired",
+   "no": 1,
+   "konular": [
+    {
+     "id": "u1k1",
+     "baslik": "Describing people 1 (calm, cheerful, confident…)",
+     "sayfalar": "SB s. 11, 17, 128 · WB s. 8, 13",
+     "kaynakSayfalar": [
+      [
+       11,
+       11
+      ],
+      [
+       17,
+       17
+      ],
+      [
+       128,
+       128
+      ],
+      [
+       1008,
+       1009
+      ],
+      [
+       1013,
+       1013
+      ],
+      [
+       1106,
+       1106
+      ]
+     ],
+     "hazir": true
+    },
+    {
+     "id": "u1k2",
+     "baslik": "Describing people 2 (sensible, sensitive, talented…)",
+     "sayfalar": "SB s. 11, 128 · WB s. 8",
+     "kaynakSayfalar": [
+      [
+       11,
+       11
+      ],
+      [
+       128,
+       128
+      ],
+      [
+       1008,
+       1009
+      ],
+      [
+       1106,
+       1106
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k3",
+     "baslik": "Past simple ve past continuous (when, while, as)",
+     "sayfalar": "SB s. 12–13 · WB s. 10, 88–89",
+     "kaynakSayfalar": [
+      [
+       12,
+       13
+      ],
+      [
+       1010,
+       1011
+      ],
+      [
+       1088,
+       1089
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k4",
+     "baslik": "Phrasal verbs (look up to, give up…)",
+     "sayfalar": "SB s. 14, 128 · WB s. 12",
+     "kaynakSayfalar": [
+      [
+       14,
+       14
+      ],
+      [
+       128,
+       128
+      ],
+      [
+       1012,
+       1012
+      ],
+      [
+       1106,
+       1106
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k5",
+     "baslik": "used to",
+     "sayfalar": "SB s. 15–17 · WB s. 13–15",
+     "kaynakSayfalar": [
+      [
+       15,
+       21
+      ],
+      [
+       118,
+       118
+      ],
+      [
+       1013,
+       1015
+      ],
+      [
+       1088,
+       1089
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "Unit 2: What is art?",
+   "no": 2,
+   "konular": [
+    {
+     "id": "u2k1",
+     "baslik": "Visual and performing arts",
+     "sayfalar": "SB s. 23",
+     "kaynakSayfalar": [
+      [
+       23,
+       23
+      ],
+      [
+       129,
+       129
+      ],
+      [
+       1016,
+       1016
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k2",
+     "baslik": "Present perfect",
+     "sayfalar": "SB s. 24–25",
+     "kaynakSayfalar": [
+      [
+       24,
+       25
+      ],
+      [
+       1017,
+       1018
+      ],
+      [
+       1090,
+       1091
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k3",
+     "baslik": "Music and theatre",
+     "sayfalar": "SB s. 26",
+     "kaynakSayfalar": [
+      [
+       26,
+       26
+      ],
+      [
+       129,
+       129
+      ],
+      [
+       1019,
+       1020
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k4",
+     "baslik": "already, just, still, yet",
+     "sayfalar": "SB s. 27–28",
+     "kaynakSayfalar": [
+      [
+       27,
+       33
+      ],
+      [
+       119,
+       119
+      ],
+      [
+       1020,
+       1023
+      ],
+      [
+       1090,
+       1091
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "Unit 3: Spread the word!",
+   "no": 3,
+   "konular": [
+    {
+     "id": "u3k1",
+     "baslik": "Communicating",
+     "sayfalar": "SB s. 35",
+     "kaynakSayfalar": [
+      [
+       35,
+       35
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       1024,
+       1024
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k2",
+     "baslik": "can, could, will be able to",
+     "sayfalar": "SB s. 36–37",
+     "kaynakSayfalar": [
+      [
+       36,
+       37
+      ],
+      [
+       1025,
+       1026
+      ],
+      [
+       1092,
+       1093
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k3",
+     "baslik": "say ve tell kalıpları",
+     "sayfalar": "SB s. 38",
+     "kaynakSayfalar": [
+      [
+       38,
+       38
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       1027,
+       1027
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k4",
+     "baslik": "for / since, How long…?",
+     "sayfalar": "SB s. 39",
+     "kaynakSayfalar": [
+      [
+       39,
+       39
+      ],
+      [
+       1028,
+       1028
+      ],
+      [
+       1092,
+       1093
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k5",
+     "baslik": "Present perfect mi, past simple mı?",
+     "sayfalar": "SB s. 39–40",
+     "kaynakSayfalar": [
+      [
+       39,
+       45
+      ],
+      [
+       120,
+       120
+      ],
+      [
+       1028,
+       1031
+      ],
+      [
+       1092,
+       1093
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "Unit 4: Healthy body, healthy mind",
+   "no": 4,
+   "konular": [
+    {
+     "id": "u4k1",
+     "baslik": "Health and fitness",
+     "sayfalar": "SB s. 47",
+     "kaynakSayfalar": [
+      [
+       47,
+       47
+      ],
+      [
+       131,
+       131
+      ],
+      [
+       1032,
+       1032
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4k2",
+     "baslik": "Quantifiers",
+     "sayfalar": "SB s. 48–49",
+     "kaynakSayfalar": [
+      [
+       48,
+       49
+      ],
+      [
+       1033,
+       1034
+      ],
+      [
+       1094,
+       1095
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4k3",
+     "baslik": "Healthy eating",
+     "sayfalar": "SB s. 50",
+     "kaynakSayfalar": [
+      [
+       50,
+       50
+      ],
+      [
+       131,
+       131
+      ],
+      [
+       1035,
+       1036
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4k4",
+     "baslik": "should, shouldn't, ought to",
+     "sayfalar": "SB s. 51–52",
+     "kaynakSayfalar": [
+      [
+       51,
+       57
+      ],
+      [
+       121,
+       121
+      ],
+      [
+       1036,
+       1039
+      ],
+      [
+       1094,
+       1095
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  }
+ ]
+}
