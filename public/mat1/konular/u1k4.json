@@ -1,0 +1,773 @@
+{
+ "id": "u1k4",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Rasyonel Sayıların Farklı Gösterimleri",
+ "sayfalar": "s. 41–49",
+ "giris": "Bir sayıyı iki türlü yazabiliriz: kesirle ([[1/5]]) ya da virgülle (0,2). Bu konuda kesirleri ondalık gösterime, ondalık gösterimleri kesre çevireceğiz. Bazı bölmelerin hiç bitmediğini de göreceğiz!",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu ondalık sayılar, genişletme ve sadeleştirme bilgilerinin üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+  "maddeler": [
+   {
+    "ad": "Ondalık gösterim ve basamaklar",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='26' width='92' height='40' rx='8' fill='#2b355c'/><text x='28' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f5f6fa'>0</text><text x='44' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f2c14e'>,</text><text x='62' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#ffa26b'>2</text><text x='86' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#6fb3ff'>5</text><text x='62' y='82' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#ffa26b'>onda</text><text x='86' y='82' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#6fb3ff'>yüzde</text><text x='60' y='106' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>= 25/100</text></svg>",
+    "anlatim": "Virgülden sonraki ilk basamak onda birler, ikinci basamak yüzde birler basamağıdır. 0,7 = [[7/10]], yani onda yedi. 0,25 = [[25/100]], yani yüzde yirmi beş.",
+    "akilda": "1 basamak = 10, 2 basamak = 100",
+    "ornek": {
+     "problem": "0,25 sayısını kesir olarak yazalım.",
+     "adimlar": [
+      {
+       "metin": "Virgülden sonra kaç basamak var? 2 basamak: 2 ve 5.",
+       "islem": "2 basamak"
+      },
+      {
+       "metin": "2 basamak varsa payda 100 olur.",
+       "islem": "Payda = 100"
+      },
+      {
+       "metin": "Virgülü sil, sayıyı paya yaz.",
+       "islem": "0,25 = [[25/100]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "0,3 hangi kesre eşittir?",
+      "secenekler": [
+       "[[3/10]]",
+       "[[3/100]]",
+       "[[1/3]]"
+      ],
+      "dogru": 0,
+      "ipucu": "Virgülden sonra 1 basamak var. 1 basamak olunca payda kaç olur?",
+      "aciklama": "0,3 = onda üç = [[3/10]]."
+     },
+     {
+      "soru": "[[45/100]] kesrini ondalık gösterimle yaz.",
+      "cevap": "0,45",
+      "ipucu": "Payda 100: virgülden sonra 2 basamak olur. Önce 0, sonra virgül.",
+      "aciklama": "[[45/100]] = yüzde kırk beş = 0,45.",
+      "denk": true
+     }
+    ]
+   },
+   {
+    "ad": "Genişletme",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='26' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f5f6fa'>1</text><line x1='15.0' y1='50' x2='37.0' y2='50' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='26' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f5f6fa'>4</text><text x='94' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>25</text><line x1='84.1' y1='50' x2='103.9' y2='50' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='94' y='70' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>100</text><path d='M44 58 Q60 40 74 58' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M74 58 l-1 -9 -6 5z' fill='#f2c14e'/><text x='60' y='36' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>×25</text><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#9aa3bf'>üstü ve altı</text></svg>",
+    "anlatim": "Bir kesrin payını ve paydasını aynı sayıyla çarparsak kesrin değeri değişmez. Buna genişletme denir: [[1/4]] = [[25/100]].",
+    "akilda": "Üstü ve altı aynı sayıyla çarp",
+    "ornek": {
+     "problem": "[[3/5]] kesrinin paydasını 10 yapalım.",
+     "adimlar": [
+      {
+       "metin": "5'i kaçla çarparsak 10 olur?",
+       "islem": "5 × 2 = 10"
+      },
+      {
+       "metin": "Payı da aynı sayıyla çarp.",
+       "islem": "3 × 2 = 6"
+      },
+      {
+       "metin": "Yeni kesri yaz.",
+       "islem": "[[3/5]] = [[6/10]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[2/5]] kesrinin paydası 10 olan denki hangisidir?",
+      "secenekler": [
+       "[[2/10]]",
+       "[[4/10]]",
+       "[[5/10]]"
+      ],
+      "dogru": 1,
+      "ipucu": "5 × 2 = 10. Payı da 2 ile çarp.",
+      "aciklama": "2 × 2 = 4, 5 × 2 = 10: [[2/5]] = [[4/10]]."
+     },
+     {
+      "soru": "[[1/4]] kesrinin paydasını 100 yapmak için pay ve paydayı kaçla çarparız?",
+      "cevap": "25",
+      "ipucu": "4 × ? = 100. 25'er 25'er say: 25, 50, 75, 100.",
+      "aciklama": "4 × 25 = 100. Pay ve payda 25 ile çarpılır: [[1/4]] = [[25/100]]."
+     }
+    ]
+   },
+   {
+    "ad": "Sadeleştirme",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='46' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='60' y='18' width='46' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='14' y='56' width='23' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='37' y='56' width='23' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='60' y='56' width='23' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='83' y='56' width='23' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><text x='36' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>1/2</text><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>=</text><text x='86' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>2/4</text></svg>",
+    "anlatim": "Pay ve paydayı aynı sayıya bölersek kesrin değeri değişmez. Artık birlikte bölünemiyorlarsa kesir en sade hâlindedir: [[6/10]] = [[3/5]].",
+    "akilda": "Üstü ve altı aynı sayıya böl",
+    "ornek": {
+     "problem": "[[25/100]] kesrini sadeleştirelim.",
+     "adimlar": [
+      {
+       "metin": "25 ve 100'ün ikisi de 25'e bölünür.",
+       "islem": "25 ÷ 25 = 1   ve   100 ÷ 25 = 4"
+      },
+      {
+       "metin": "Yeni kesri yaz. 1 ve 4 birlikte bölünemez: en sade hâl.",
+       "islem": "[[25/100]] = [[1/4]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[6/10]] kesrinin en sade hâli hangisidir?",
+      "secenekler": [
+       "[[3/5]]",
+       "[[6/5]]",
+       "[[1/2]]"
+      ],
+      "dogru": 0,
+      "ipucu": "6 ve 10'un ikisi de 2'ye bölünür.",
+      "aciklama": "6 ÷ 2 = 3, 10 ÷ 2 = 5: [[3/5]]."
+     },
+     {
+      "soru": "[[50/100]] kesrinin en sade hâlini yaz.",
+      "cevap": "1/2",
+      "ipucu": "50 ve 100'ün ikisi de 50'ye bölünür. Kesir çizgisi için / tuşunu kullan.",
+      "aciklama": "50 ÷ 50 = 1, 100 ÷ 50 = 2: [[1/2]].",
+      "kesir": true
+     }
+    ]
+   },
+   {
+    "ad": "2'ye ve 5'e bölünebilme",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='36' cy='46' r='22' fill='#ffa26b'/><text x='36' y='54' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#1b2340'>2</text><circle cx='84' cy='46' r='22' fill='#6fb3ff'/><text x='84' y='54' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#1b2340'>5</text><text x='36' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>çift</text><text x='84' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>0 ya da 5</text><text x='60' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#9aa3bf'>son rakama bak</text></svg>",
+    "anlatim": "Son rakamı çift olan (0, 2, 4, 6, 8) sayılar 2'ye tam bölünür. Son rakamı 0 ya da 5 olan sayılar 5'e tam bölünür.",
+    "akilda": "Son rakama bak",
+    "ornek": {
+     "problem": "40 sayısı 2'ye ve 5'e bölünür mü?",
+     "adimlar": [
+      {
+       "metin": "Son rakam 0. 0 çift bir rakamdır: 2'ye bölünür.",
+       "islem": "40 ÷ 2 = 20"
+      },
+      {
+       "metin": "Son rakam 0: 5'e de bölünür.",
+       "islem": "40 ÷ 5 = 8"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Hangisi 5'e tam bölünür?",
+      "secenekler": [
+       "12",
+       "25",
+       "33"
+      ],
+      "dogru": 1,
+      "ipucu": "Son rakamı 0 ya da 5 olan sayıyı ara.",
+      "aciklama": "25'in son rakamı 5: 25 ÷ 5 = 5."
+     },
+     {
+      "soru": "Hangisi 2'ye tam bölünür?",
+      "secenekler": [
+       "15",
+       "9",
+       "14"
+      ],
+      "dogru": 2,
+      "ipucu": "Son rakamı çift olan sayıyı ara.",
+      "aciklama": "14'ün son rakamı 4, çifttir: 14 ÷ 2 = 7."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Kesir Çizgisi Bölmedir",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='50' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='26' fill='#f5f6fa'>1</text><line x1='15.7' y1='56' x2='44.3' y2='56' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='30' y='84' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='26' fill='#f5f6fa'>5</text><text x='60' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#f2c14e'>=</text><text x='92' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f5f6fa'>1÷5</text><rect x='22' y='86' width='76' height='22' rx='11' fill='#f2c14e'/><text x='60' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>= 0,2</text></svg>",
+   "aciklama": "Kesir çizgisi bölme demektir: [[1/5]] = 1 ÷ 5. Payı paydaya bölersek sayının virgüllü yazılışını, yani ondalık gösterimini buluruz.",
+   "ek": "Kitaptaki kutu sütün hacmi [[1/5]] L. 1 ÷ 5 = 0,2 olduğu için sütün hacmi 0,2 L'dir. Aynı sayının iki farklı gösterimi: [[1/5]] = 0,2. (s. 41)",
+   "akilda": "Çizgi = bölme",
+   "cozum": {
+    "baslik": "[[1/2]] kaç eder?",
+    "problem": "[[1/2]] kesrini ondalık gösterimle yazalım.",
+    "adimlar": [
+     {
+      "metin": "Kesir çizgisi bölmedir. Payı paydaya böleceğiz.",
+      "islem": "[[1/2]] = 1 ÷ 2"
+     },
+     {
+      "metin": "1'in içinde 2 yok. Bölüme 0 yaz, virgül koy, 1'in yanına 0 ekle: 10 oldu.",
+      "islem": "0,…   10 ÷ 2"
+     },
+     {
+      "metin": "10'un içinde 2 tam 5 kere var. Kalan 0: bölme bitti.",
+      "islem": "10 ÷ 2 = 5   →   0,5"
+     }
+    ],
+    "sonuc": "[[1/2]] = 0,5. Yarım, onda beş demektir."
+   },
+   "soru": {
+    "soru": "[[3/4]] kesrindeki kesir çizgisi hangi işlemi gösterir?",
+    "secenekler": [
+     "3 × 4",
+     "4 − 3",
+     "3 ÷ 4"
+    ],
+    "dogru": 2,
+    "ipucu": "Kesir çizgisi hangi işlem demekti? Pay, paydaya …",
+    "aciklama": "Kesir çizgisi bölmedir: [[3/4]] = 3 ÷ 4 = 0,75. (s. 41)"
+   }
+  },
+  {
+   "ad": "Paydayı 10, 100, 1000 Yap",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='14' width='7' height='7' fill='#ffa26b'/><rect x='28' y='14' width='7' height='7' fill='#ffa26b'/><rect x='36' y='14' width='7' height='7' fill='#ffa26b'/><rect x='44' y='14' width='7' height='7' fill='#ffa26b'/><rect x='52' y='14' width='7' height='7' fill='#ffa26b'/><rect x='60' y='14' width='7' height='7' fill='#ffa26b'/><rect x='68' y='14' width='7' height='7' fill='#ffa26b'/><rect x='76' y='14' width='7' height='7' fill='#ffa26b'/><rect x='84' y='14' width='7' height='7' fill='#ffa26b'/><rect x='92' y='14' width='7' height='7' fill='#ffa26b'/><rect x='20' y='22' width='7' height='7' fill='#ffa26b'/><rect x='28' y='22' width='7' height='7' fill='#ffa26b'/><rect x='36' y='22' width='7' height='7' fill='#ffa26b'/><rect x='44' y='22' width='7' height='7' fill='#ffa26b'/><rect x='52' y='22' width='7' height='7' fill='#ffa26b'/><rect x='60' y='22' width='7' height='7' fill='#ffa26b'/><rect x='68' y='22' width='7' height='7' fill='#ffa26b'/><rect x='76' y='22' width='7' height='7' fill='#ffa26b'/><rect x='84' y='22' width='7' height='7' fill='#ffa26b'/><rect x='92' y='22' width='7' height='7' fill='#ffa26b'/><rect x='20' y='30' width='7' height='7' fill='#ffa26b'/><rect x='28' y='30' width='7' height='7' fill='#ffa26b'/><rect x='36' y='30' width='7' height='7' fill='#ffa26b'/><rect x='44' y='30' width='7' height='7' fill='#ffa26b'/><rect x='52' y='30' width='7' height='7' fill='#ffa26b'/><rect x='60' y='30' width='7' height='7' fill='#2b355c'/><rect x='68' y='30' width='7' height='7' fill='#2b355c'/><rect x='76' y='30' width='7' height='7' fill='#2b355c'/><rect x='84' y='30' width='7' height='7' fill='#2b355c'/><rect x='92' y='30' width='7' height='7' fill='#2b355c'/><rect x='20' y='38' width='7' height='7' fill='#2b355c'/><rect x='28' y='38' width='7' height='7' fill='#2b355c'/><rect x='36' y='38' width='7' height='7' fill='#2b355c'/><rect x='44' y='38' width='7' height='7' fill='#2b355c'/><rect x='52' y='38' width='7' height='7' fill='#2b355c'/><rect x='60' y='38' width='7' height='7' fill='#2b355c'/><rect x='68' y='38' width='7' height='7' fill='#2b355c'/><rect x='76' y='38' width='7' height='7' fill='#2b355c'/><rect x='84' y='38' width='7' height='7' fill='#2b355c'/><rect x='92' y='38' width='7' height='7' fill='#2b355c'/><rect x='20' y='46' width='7' height='7' fill='#2b355c'/><rect x='28' y='46' width='7' height='7' fill='#2b355c'/><rect x='36' y='46' width='7' height='7' fill='#2b355c'/><rect x='44' y='46' width='7' height='7' fill='#2b355c'/><rect x='52' y='46' width='7' height='7' fill='#2b355c'/><rect x='60' y='46' width='7' height='7' fill='#2b355c'/><rect x='68' y='46' width='7' height='7' fill='#2b355c'/><rect x='76' y='46' width='7' height='7' fill='#2b355c'/><rect x='84' y='46' width='7' height='7' fill='#2b355c'/><rect x='92' y='46' width='7' height='7' fill='#2b355c'/><rect x='20' y='54' width='7' height='7' fill='#2b355c'/><rect x='28' y='54' width='7' height='7' fill='#2b355c'/><rect x='36' y='54' width='7' height='7' fill='#2b355c'/><rect x='44' y='54' width='7' height='7' fill='#2b355c'/><rect x='52' y='54' width='7' height='7' fill='#2b355c'/><rect x='60' y='54' width='7' height='7' fill='#2b355c'/><rect x='68' y='54' width='7' height='7' fill='#2b355c'/><rect x='76' y='54' width='7' height='7' fill='#2b355c'/><rect x='84' y='54' width='7' height='7' fill='#2b355c'/><rect x='92' y='54' width='7' height='7' fill='#2b355c'/><rect x='20' y='62' width='7' height='7' fill='#2b355c'/><rect x='28' y='62' width='7' height='7' fill='#2b355c'/><rect x='36' y='62' width='7' height='7' fill='#2b355c'/><rect x='44' y='62' width='7' height='7' fill='#2b355c'/><rect x='52' y='62' width='7' height='7' fill='#2b355c'/><rect x='60' y='62' width='7' height='7' fill='#2b355c'/><rect x='68' y='62' width='7' height='7' fill='#2b355c'/><rect x='76' y='62' width='7' height='7' fill='#2b355c'/><rect x='84' y='62' width='7' height='7' fill='#2b355c'/><rect x='92' y='62' width='7' height='7' fill='#2b355c'/><rect x='20' y='70' width='7' height='7' fill='#2b355c'/><rect x='28' y='70' width='7' height='7' fill='#2b355c'/><rect x='36' y='70' width='7' height='7' fill='#2b355c'/><rect x='44' y='70' width='7' height='7' fill='#2b355c'/><rect x='52' y='70' width='7' height='7' fill='#2b355c'/><rect x='60' y='70' width='7' height='7' fill='#2b355c'/><rect x='68' y='70' width='7' height='7' fill='#2b355c'/><rect x='76' y='70' width='7' height='7' fill='#2b355c'/><rect x='84' y='70' width='7' height='7' fill='#2b355c'/><rect x='92' y='70' width='7' height='7' fill='#2b355c'/><rect x='20' y='78' width='7' height='7' fill='#2b355c'/><rect x='28' y='78' width='7' height='7' fill='#2b355c'/><rect x='36' y='78' width='7' height='7' fill='#2b355c'/><rect x='44' y='78' width='7' height='7' fill='#2b355c'/><rect x='52' y='78' width='7' height='7' fill='#2b355c'/><rect x='60' y='78' width='7' height='7' fill='#2b355c'/><rect x='68' y='78' width='7' height='7' fill='#2b355c'/><rect x='76' y='78' width='7' height='7' fill='#2b355c'/><rect x='84' y='78' width='7' height='7' fill='#2b355c'/><rect x='92' y='78' width='7' height='7' fill='#2b355c'/><rect x='20' y='86' width='7' height='7' fill='#2b355c'/><rect x='28' y='86' width='7' height='7' fill='#2b355c'/><rect x='36' y='86' width='7' height='7' fill='#2b355c'/><rect x='44' y='86' width='7' height='7' fill='#2b355c'/><rect x='52' y='86' width='7' height='7' fill='#2b355c'/><rect x='60' y='86' width='7' height='7' fill='#2b355c'/><rect x='68' y='86' width='7' height='7' fill='#2b355c'/><rect x='76' y='86' width='7' height='7' fill='#2b355c'/><rect x='84' y='86' width='7' height='7' fill='#2b355c'/><rect x='92' y='86' width='7' height='7' fill='#2b355c'/><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>25/100 = 0,25</text></svg>",
+   "aciklama": "Paydayı genişletip 10, 100 ya da 1000 yapabiliyorsak ondalık gösterimi bulmak çok kolaydır: [[1/4]] = [[25/100]] = 0,25.",
+   "ek": "Payda 10 ise virgülden sonra 1 basamak, 100 ise 2 basamak, 1000 ise 3 basamak olur. Kitaptaki madenî para [[1/4]] cm kalınlığında: 0,25 cm. (s. 41, 44)",
+   "akilda": "10, 100, 1000'e genişlet",
+   "cozum": {
+    "baslik": "[[7/20]] kesrini çevirelim",
+    "problem": "[[7/20]] kesrini ondalık gösterimle yazalım.",
+    "adimlar": [
+     {
+      "metin": "20'yi kaçla çarparsak 10, 100 ya da 1000 olur? 20 × 5 = 100.",
+      "islem": "20 × 5 = 100"
+     },
+     {
+      "metin": "Payı da 5 ile çarp.",
+      "islem": "7 × 5 = 35"
+     },
+     {
+      "metin": "Yeni kesir: [[35/100]]. Payda 100: virgülden sonra 2 basamak.",
+      "islem": "[[7/20]] = [[35/100]] = 0,35"
+     }
+    ],
+    "sonuc": "[[7/20]] = 0,35. Paydayı 100 yapınca iş kolaylaştı."
+   },
+   "sende": {
+    "baslik": "Şimdi sen çevir",
+    "problem": "[[3/25]] kesrini ondalık gösterimle yazalım.",
+    "adimlar": [
+     {
+      "metin": "Paydayı 100 yapmak için 25'i kaçla çarpmalıyız?",
+      "soru": {
+       "soru": "25 × ? = 100",
+       "cevap": "4",
+       "ipucu": "25'er 25'er say: 25, 50, 75, 100. Kaç kere saydın?",
+       "aciklama": "25 × 4 = 100."
+      },
+      "islem": "25 × 4 = 100"
+     },
+     {
+      "metin": "Payı da aynı sayıyla çarp.",
+      "soru": {
+       "soru": "3 × 4 kaçtır? Yeni payı yaz.",
+       "cevap": "12",
+       "ipucu": "3'ü 4 kere topla: 3 + 3 + 3 + 3.",
+       "aciklama": "3 × 4 = 12. Yeni kesir [[12/100]]."
+      },
+      "islem": "[[3/25]] = [[12/100]]"
+     },
+     {
+      "metin": "Payda 100: virgülden sonra 2 basamak.",
+      "soru": {
+       "soru": "[[12/100]] kesrini ondalık gösterimle yaz.",
+       "cevap": "0,12",
+       "ipucu": "Önce 0, sonra virgül, sonra 1 ve 2.",
+       "aciklama": "[[12/100]] = 0,12.",
+       "denk": true
+      },
+      "islem": "0,12"
+     }
+    ],
+    "sonuc": "Harika! [[3/25]] = [[12/100]] = 0,12."
+   },
+   "soru": {
+    "soru": "[[3/5]] kesrini ondalık gösterimle yaz.",
+    "cevap": "0,6",
+    "ipucu": "5'i 10 yapmak için 2 ile çarp. Payı da 2 ile çarp.",
+    "aciklama": "[[3/5]] = [[6/10]] = 0,6. (s. 44)",
+    "denk": true,
+    "yardim": {
+     "adimlar": [
+      "Paydayı 10 yapabilir misin? 5 × ? = 10.",
+      "Payı da aynı sayıyla çarp.",
+      "Payda 10 ise virgülden sonra 1 basamak olur. Önce 0, sonra virgül."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Sonlu Ondalık Gösterim",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='30' width='92' height='36' rx='10' fill='#2b355c'/><text x='56' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f5f6fa'>0,25</text><circle cx='92' cy='48' r='9' fill='#5fd08f'/><path d='M87 48 l4 4 7 -8' stroke='#1b2340' stroke-width='3' fill='none' stroke-linecap='round'/><text x='60' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>bölme bitti</text></svg>",
+   "aciklama": "Bazı bölmeler bir yerde biter. Virgülden sonra belli sayıda basamak kalır: 0,2 ya da 0,25 gibi. Buna sonlu ondalık gösterim denir.",
+   "ek": "Kitapta [[72/15]] TL'lik fon kartonu 4,8 TL, [[185/2]] g'lık el sabunu 92,5 g ediyor. İkisinde de bölme bitiyor. (s. 41–42)",
+   "akilda": "Bölme biter = sonlu",
+   "soru": {
+    "soru": "Hangisi sonlu ondalık gösterimdir?",
+    "secenekler": [
+     "0,333…",
+     "0,75",
+     "0,1666…"
+    ],
+    "dogru": 1,
+    "ipucu": "Hangisinde rakamlar bitiyor, sonunda üç nokta yok?",
+    "aciklama": "0,75'te bölme bitmiş: sonludur. Üç noktalılarda rakamlar hiç bitmez. (s. 42)"
+   }
+  },
+  {
+   "ad": "Devirli Ondalık Gösterim",
+   "renk": "#3274d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='22' y='58' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='30' fill='#f5f6fa'>0,</text><text x='59.2' y='58' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='30' fill='#f5f6fa'>3</text><line x1='60.2' y1='33.400000000000006' x2='76.80000000000001' y2='33.400000000000006' stroke='#f5f6fa' stroke-width='2.4' stroke-linecap='round'/><text x='78' y='58' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#f2c14e'>=</text><text x='60' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#6fb3ff'>0,3333…</text><path d='M88 30 a14 14 0 1 1 -4 -10' stroke='#6fb3ff' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M84 20 l-1 -8 8 4z' fill='#6fb3ff'/></svg>",
+   "aciklama": "Bazı bölmeler hiç bitmez. Virgülden sonra aynı rakam ya da rakamlar sonsuza kadar tekrar eder: [[1/3]] = 0,333… Buna devirli ondalık gösterim denir.",
+   "ek": "Tekrar eden (devreden) rakamların üstüne çizgi çekilir: 0,333… = 0,[[d:3]]. Kitaptaki küçük su şişesi [[1/3]] L, yani 0,[[d:3]] L'dir. (s. 41–42)",
+   "akilda": "Rakam tekrar eder, üstüne çizgi",
+   "cozum": {
+    "baslik": "1 ÷ 3 neden bitmiyor?",
+    "problem": "[[1/3]] kesrini ondalık gösterimle yazalım.",
+    "adimlar": [
+     {
+      "metin": "1'in içinde 3 yok. Bölüme 0 ve virgül yaz, 1'in yanına 0 ekle: 10.",
+      "islem": "0,…   10 ÷ 3"
+     },
+     {
+      "metin": "10'un içinde 3, 3 kere var. 3 × 3 = 9. Kalan 1.",
+      "islem": "0,3   kalan 1"
+     },
+     {
+      "metin": "Kalan yine 1! Yanına 0 ekle: yine 10. Yine 3, yine kalan 1…",
+      "islem": "0,33   kalan 1"
+     },
+     {
+      "metin": "Bölme hiç bitmeyecek. Tekrar eden 3'ün üstüne çizgi çekeriz.",
+      "islem": "0,333… = 0,[[d:3]]"
+     }
+    ],
+    "sonuc": "[[1/3]] = 0,[[d:3]]. Kalan hep aynı gelirse rakamlar da hep aynı gelir."
+   },
+   "soru": {
+    "soru": "0,4545… sayısı devir çizgisiyle nasıl yazılır?",
+    "secenekler": [
+     "0,[[d:45]]",
+     "0,4[[d:5]]",
+     "0,[[d:4]]5"
+    ],
+    "dogru": 0,
+    "ipucu": "Hangi rakamlar birlikte tekrar ediyor: yalnız 5 mi, 45 mi?",
+    "aciklama": "45, 45, 45… diye tekrar ediyor. Çizgi ikisinin de üstüne çekilir: 0,[[d:45]]. (s. 45)"
+   }
+  },
+  {
+   "ad": "Sonlu mu, Devirli mi?",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='36' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>7</text><line x1='20.1' y1='42' x2='39.9' y2='42' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='30' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>20</text><text x='66' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='9' fill='#f5f6fa'>20 ÷ 2 = 10</text><text x='66' y='48' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='9' fill='#f5f6fa'>10 ÷ 2 = 5</text><text x='66' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='9' fill='#f5f6fa'>5 ÷ 5 = 1</text><rect x='22' y='80' width='76' height='24' rx='12' fill='#5fd08f'/><text x='60' y='97' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>1 kaldı: sonlu</text></svg>",
+   "aciklama": "Kesri önce en sade hâline getir, sonra paydaya bak. Paydada 2 ve 5'ten başka asal çarpan (3, 7, 11… gibi) yoksa sonlu; varsa devirli ondalık gösterim olur.",
+   "ek": "Kolay yol: Paydayı 2'ye ve 5'e bölebildiğin kadar böl. Geriye 1 kalırsa sonlu, başka bir sayı kalırsa devirlidir. Her rasyonel sayının mutlaka bir ondalık gösterimi vardır. (s. 43)",
+   "akilda": "Paydada yalnız 2 ve 5 → sonlu",
+   "cozum": {
+    "baslik": "İkisinin de paydası 15, ama…",
+    "problem": "Kitapta fon kartonu [[72/15]] TL, kurşun kalem [[92/15]] g. Paydaları aynı. Hangisi sonlu, hangisi devirli?",
+    "adimlar": [
+     {
+      "metin": "Önce sadeleştir. 72 ve 15'in ikisi de 3'e bölünür.",
+      "islem": "[[72/15]] = [[24/5]]"
+     },
+     {
+      "metin": "Payda 5. 5'i 5'e böl: 1 kaldı. Sonlu!",
+      "islem": "[[24/5]] = 4,8"
+     },
+     {
+      "metin": "[[92/15]] sadeleşmez. 15'i 5'e böl: 3 kaldı. 3 de asal çarpan. Devirli!",
+      "islem": "[[92/15]] = 6,1333… = 6,1[[d:3]]"
+     }
+    ],
+    "sonuc": "Paydalar aynı olsa da sonuç farklı. Sırrı sadeleştirmede: [[72/15]] sadeleşince paydadaki 3 gitti. (s. 42–43)"
+   },
+   "sende": {
+    "baslik": "Önce sadeleştir!",
+    "problem": "[[3/12]] sayısının ondalık gösterimi sonlu mu, devirli mi?",
+    "adimlar": [
+     {
+      "metin": "Önce en sade hâle getir.",
+      "soru": {
+       "soru": "[[3/12]] kesrinin en sade hâlini yaz.",
+       "cevap": "1/4",
+       "ipucu": "3 ve 12'nin ikisi de 3'e bölünür. Kesir çizgisi için / tuşu.",
+       "aciklama": "3 ÷ 3 = 1, 12 ÷ 3 = 4: [[1/4]].",
+       "kesir": true
+      },
+      "islem": "[[3/12]] = [[1/4]]"
+     },
+     {
+      "metin": "Paydayı 2'ye bölebildiğin kadar böl: 4 ÷ 2 = 2, 2 ÷ 2 = …",
+      "soru": {
+       "soru": "Geriye hangi sayı kaldı?",
+       "cevap": "1",
+       "ipucu": "2 ÷ 2 kaçtır?",
+       "aciklama": "2 ÷ 2 = 1. Geriye 1 kaldı."
+      },
+      "islem": "4 → 2 → 1"
+     },
+     {
+      "metin": "Geriye 1 kaldı. O hâlde?",
+      "soru": {
+       "soru": "[[3/12]] sayısının ondalık gösterimi nasıldır?",
+       "secenekler": [
+        "Sonlu",
+        "Devirli",
+        "Ondalık gösterimi yoktur"
+       ],
+       "dogru": 0,
+       "ipucu": "Geriye 1 kalırsa sonlu, başka sayı kalırsa devirli.",
+       "aciklama": "Geriye 1 kaldı: sonlu. [[3/12]] = [[1/4]] = 0,25."
+      },
+      "islem": "Sonlu: 0,25"
+     }
+    ],
+    "sonuc": "Harika! 12'de 3 vardı ama sadeleşince gitti. Bu yüzden önce sadeleştiriyoruz."
+   },
+   "soru": {
+    "soru": "[[1/6]] sayısının ondalık gösterimi nasıldır?",
+    "secenekler": [
+     "Sonlu",
+     "Devirli",
+     "Ondalık gösterimi yoktur"
+    ],
+    "dogru": 1,
+    "ipucu": "6'yı 2'ye böl. Geriye 1 mi kalıyor, başka bir sayı mı?",
+    "aciklama": "6 ÷ 2 = 3. Geriye 3 kaldı: devirli. [[1/6]] = 0,1[[d:6]]. (s. 43)"
+   }
+  },
+  {
+   "ad": "Ondalıktan Kesre",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f5f6fa'>1,32</text><path d='M60 52 v14' stroke='#f2c14e' stroke-width='3'/><path d='M60 70 l-5 -7 h10z' fill='#f2c14e'/><text x='60' y='86' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>132</text><line x1='51.2' y1='92' x2='68.8' y2='92' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='60' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>100</text></svg>",
+   "aciklama": "Virgülden sonra kaç basamak varsa paydaya 1 ve yanına o kadar 0 yazarız. Virgülü silip sayıyı paya yazarız. Sonra sadeleştiririz.",
+   "ek": "Kitapta bir öğrencinin boyu 1,32 m = [[132/100]] m = [[33/25]] m. Termostaki kahve 0,7 L = [[7/10]] L. (s. 44)",
+   "akilda": "Basamak kadar sıfır",
+   "soru": {
+    "soru": "Termostaki kahve 0,7 L. Bu sayıyı kesir olarak yaz.",
+    "cevap": "7/10",
+    "ipucu": "Virgülden sonra 1 basamak var: payda 10. Kesir çizgisi için / tuşu.",
+    "aciklama": "0,7 = [[7/10]]. (s. 44)",
+    "kesir": true,
+    "denk": true,
+    "yardim": {
+     "adimlar": [
+      "Virgülden sonra kaç basamak var?",
+      "1 basamak varsa payda 10 olur.",
+      "Virgülü sil, sayıyı paya yaz. Önce pay, sonra / tuşu, sonra payda."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Devirliden Kesre",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='16' y='50' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='26' fill='#f5f6fa'>0,</text><text x='48.24' y='50' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='26' fill='#f5f6fa'>3</text><line x1='49.24' y1='28.68' x2='63.36' y2='28.68' stroke='#f5f6fa' stroke-width='2.4' stroke-linecap='round'/><text x='64' y='50' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#f2c14e'>=</text><text x='92' y='38' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#f5f6fa'>3</text><line x1='79.9' y1='44' x2='104.1' y2='44' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='92' y='68' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#f5f6fa'>9</text><rect x='16' y='86' width='88' height='22' rx='11' fill='#2b355c'/><text x='60' y='101' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>devreden → 9</text></svg>",
+   "aciklama": "Paya, sayının tamamından (virgülsüz ve çizgisiz) devretmeyen kısmı çıkarırız. Paydaya, devreden her basamak için bir 9, virgülden sonra devretmeyen her basamak için bir 0 yazarız.",
+   "ek": "En kolayları: 0,[[d:3]] = [[3/9]], 0,[[d:26]] = [[26/99]]. Devretmeyen basamak varsa: 0,1[[d:6]] = [[15/90]], çünkü 16 − 1 = 15; bir 9, bir 0. (s. 45–46)",
+   "akilda": "Devreden 9, devretmeyen 0",
+   "cozum": {
+    "baslik": "0,1[[d:6]] kaçtır?",
+    "problem": "0,1[[d:6]] sayısını kesre çevirelim.",
+    "adimlar": [
+     {
+      "metin": "Sayının tamamını virgülsüz, çizgisiz yaz: 016, yani 16.",
+      "islem": "Tamamı: 16"
+     },
+     {
+      "metin": "Devretmeyen kısmı yaz: çizgisiz kısım 01, yani 1.",
+      "islem": "Devretmeyen: 1"
+     },
+     {
+      "metin": "Pay: tamamından devretmeyeni çıkar.",
+      "islem": "Pay = 16 − 1 = 15"
+     },
+     {
+      "metin": "Payda: devreden 1 basamak → bir 9. Virgülden sonra devretmeyen 1 basamak → bir 0.",
+      "islem": "Payda = 90"
+     },
+     {
+      "metin": "Kesri yaz ve sadeleştir.",
+      "islem": "[[15/90]] = [[1/6]]"
+     }
+    ],
+    "sonuc": "0,1[[d:6]] = [[15/90]] = [[1/6]]. Kontrol: [[1/6]] gerçekten 0,1666… çıkar."
+   },
+   "sende": {
+    "baslik": "Kitaptaki sayıyı sen çevir",
+    "problem": "0,[[d:4]] sayısını kesre çevirelim.",
+    "adimlar": [
+     {
+      "metin": "Virgülden sonra devretmeyen basamak var mı?",
+      "soru": {
+       "soru": "0,[[d:4]] sayısında virgülden sonra devretmeyen basamak var mı?",
+       "secenekler": [
+        "Yok, hepsi devrediyor",
+        "Var, 1 tane",
+        "Var, 2 tane"
+       ],
+       "dogru": 0,
+       "ipucu": "Çizgi hangi rakamın üstünde? Virgülden sonra çizgisiz rakam var mı?",
+       "aciklama": "Virgülden sonra yalnız 4 var ve o devrediyor."
+      },
+      "islem": "Devretmeyen yok → 0 yazılmaz"
+     },
+     {
+      "metin": "Pay: tamamı 4, devretmeyen kısım 0.",
+      "soru": {
+       "soru": "Pay kaç olur?",
+       "cevap": "4",
+       "ipucu": "4 − 0 = ?",
+       "aciklama": "4 − 0 = 4."
+      },
+      "islem": "Pay = 4"
+     },
+     {
+      "metin": "Payda: devreden 1 basamak var.",
+      "soru": {
+       "soru": "Payda kaç olur?",
+       "cevap": "9",
+       "ipucu": "Devreden her basamak için bir 9 yazılır.",
+       "aciklama": "1 devreden basamak → 9."
+      },
+      "islem": "0,[[d:4]] = [[4/9]]"
+     }
+    ],
+    "sonuc": "Harika! 0,[[d:4]] = [[4/9]]. (s. 46)"
+   },
+   "soru": {
+    "soru": "0,[[d:5]] hangi kesre eşittir?",
+    "secenekler": [
+     "[[5/10]]",
+     "[[5/99]]",
+     "[[5/9]]"
+    ],
+    "dogru": 2,
+    "ipucu": "Devreden kaç basamak var? Her biri için bir 9 yazılır.",
+    "aciklama": "Devreden 1 basamak → payda 9: 0,[[d:5]] = [[5/9]]. (s. 46)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Bilardoda 15 numaralı top ve bir beyaz top vardır. Kitaptaki Ahmet ilk atışında 15 topun 7'sini cebe sokuyor: [[7/15]] = 0,4[[d:6]]. (s. 49)",
+  "Kitaptaki madenî para [[1/4]] cm, yani 0,25 cm kalınlığında. 100 tanesini üst üste koysan 25 cm'lik bir kule olur. (s. 41)"
+ ],
+ "akildaKalsin": [
+  "Kesir çizgisi bölme demektir: [[1/5]] = 1 ÷ 5 = 0,2.",
+  "Paydayı 10, 100, 1000 yapabiliyorsan ondalık gösterimi bulmak kolaydır.",
+  "Bölme biterse sonlu (0,25), hiç bitmezse devirli (0,[[d:3]]) ondalık gösterim olur.",
+  "En sade hâldeki paydada yalnız 2 ve 5 varsa sonlu; başka asal çarpan varsa devirli.",
+  "Ondalıktan kesre: virgülden sonraki basamak kadar sıfır, sonra sadeleştir.",
+  "Devirliden kesre: devreden basamak kadar 9, devretmeyen kadar 0."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "0,999… gerçekten 1'e eşit mi?",
+   "cevap": "Evet. [[1/3]] = 0,[[d:3]]. İki tarafı 3 ile çarparsan 1 = 0,[[d:9]] olur. Kural da aynı sonucu verir: 0,[[d:9]] = [[9/9]] = 1. Kitapta Sena ile Mete bunu tartışıyor. (s. 47–48)"
+  },
+  {
+   "soru": "Her rasyonel sayının ondalık gösterimi var mı?",
+   "cevap": "Evet. Bazılarınınki sonlu, bazılarınınki devirlidir ama hepsinin bir ondalık gösterimi vardır. (s. 43)"
+  },
+  {
+   "soru": "Devir çizgisi neden çekilir?",
+   "cevap": "Rakamlar sonsuza kadar tekrar ettiği için hepsini yazamayız. Çizgi \"bu rakamlar hep tekrar ediyor\" demektir. (s. 42, 45)"
+  },
+  {
+   "soru": "0,3 ile 0,[[d:3]] aynı sayı mı?",
+   "cevap": "Hayır. 0,3 = [[3/10]], 0,[[d:3]] = [[3/9]] = [[1/3]]. 0,[[d:3]] biraz daha büyüktür. (s. 41–42)"
+  },
+  {
+   "soru": "Paydasında 3 olan her kesir devirli mi?",
+   "cevap": "Önce sadeleştir! [[3/12]] sadeleşince [[1/4]] olur, sonludur. [[6/3]] ise 2'dir. Kurala en sade hâle bakarak karar verilir. (s. 43)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "[[1/3]] ve [[1/4]] kesirlerinden hangisinin ondalık gösterimi sonlu, hangisinin devirlidir? Neden?",
+   "ornekCevap": "[[1/4]] sonludur, çünkü paydası 4'te yalnız 2 var; 4'ü 100'e genişletebilirim: 0,25. [[1/3]] devirlidir, çünkü paydasında 3 var: 1 ÷ 3 hiç bitmez, 0,[[d:3]] olur.",
+   "anahtarlar": [
+    "sonlu",
+    "devir",
+    "payda",
+    "bitmez",
+    "3"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "[[2/5]] kesrini ondalık gösterime çevir ve sayı doğrusunda yerine dokun.",
+   "nokta": 0.4,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 1,
+    "bolme": 10
+   },
+   "ipucu": "[[2/5]] = 2 ÷ 5. Ya da paydayı 10 yap: 5 × 2 = 10, 2 × 2 = 4. Her küçük parça 0,1.",
+   "aciklama": "[[2/5]] = [[4/10]] = 0,4: 0'dan sağa 4 parça. (s. 41, 44)",
+   "kavram": "Kesir Çizgisi Bölmedir"
+  },
+  {
+   "soru": "[[9/25]] kesrini ondalık gösterimle yaz.",
+   "cevap": "0,36",
+   "ipucu": "25'i 100 yapmak için kaçla çarparsın? Payı da aynı sayıyla çarp.",
+   "aciklama": "25 × 4 = 100, 9 × 4 = 36: [[9/25]] = [[36/100]] = 0,36. (s. 44)",
+   "denk": true,
+   "kavram": "Paydayı 10, 100, 1000 Yap",
+   "yardim": {
+    "adimlar": [
+     "Paydayı 100 yap: 25 × ? = 100. 25'er 25'er say.",
+     "Payı da aynı sayıyla çarp: 9 × 4 = ?",
+     "Payda 100: virgülden sonra 2 basamak. Önce 0, sonra virgül."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisinin ondalık gösterimi devirlidir?",
+   "secenekler": [
+    "[[3/8]]",
+    "[[2/9]]",
+    "[[7/10]]"
+   ],
+   "dogru": 1,
+   "ipucu": "Paydaları 2'ye ve 5'e bölebildiğin kadar böl. Hangisinde 1'den başka sayı kalıyor?",
+   "aciklama": "9'u 2'ye de 5'e de bölemeyiz; 9 = 3 × 3. [[2/9]] devirlidir: 0,[[d:2]]. (s. 43)",
+   "kavram": "Sonlu mu, Devirli mi?",
+   "yardim": {
+    "adimlar": [
+     "Her kesrin paydasına bak: 8, 9, 10.",
+     "Paydayı 2'ye ve 5'e bölebildiğin kadar böl.",
+     "Geriye 1 kalan sonludur. Geriye başka sayı kalan hangisi?"
+    ]
+   }
+  },
+  {
+   "soru": "Kitapta bir küp şekerin kütlesi [[16/6]] g, yani 2,666… g. Bu sayının doğru yazımı hangisidir?",
+   "secenekler": [
+    "2,[[d:6]]",
+    "2,6",
+    "[[d:2]],6"
+   ],
+   "dogru": 0,
+   "ipucu": "Hangi rakam tekrar ediyor? Çizgi yalnızca tekrar eden rakamın üstüne çekilir.",
+   "aciklama": "6 hep tekrar ediyor: 2,666… = 2,[[d:6]]. (s. 41)",
+   "kavram": "Devirli Ondalık Gösterim"
+  },
+  {
+   "soru": "Bir öğrencinin boyu 1,32 m. Bunu paydası 100 olan bir kesir olarak yaz.",
+   "cevap": "132/100",
+   "ipucu": "Virgülden sonra 2 basamak var. Virgülü sil, sayıyı paya yaz.",
+   "aciklama": "1,32 = [[132/100]]. Sadeleşince [[33/25]] olur. (s. 44)",
+   "kesir": true,
+   "kavram": "Ondalıktan Kesre",
+   "yardim": {
+    "adimlar": [
+     "Virgülden sonra kaç basamak var? 3 ve 2.",
+     "2 basamak varsa payda 100 olur.",
+     "Virgülü sil: 1,32 → 132. Bu sayı paya yazılır."
+    ]
+   }
+  },
+  {
+   "soru": "0,6 sayısının yerine dokun.",
+   "nokta": 0.6,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 1,
+    "bolme": 10
+   },
+   "ipucu": "0 ile 1 arası 10 eş parçaya bölündü. Her parça 0,1. 0'dan sağa 6 parça say.",
+   "aciklama": "0,6 = [[6/10]]: 0'dan sağa 6 parça. (s. 44)",
+   "kavram": "Ondalıktan Kesre"
+  },
+  {
+   "soru": "[[18/15]] için hangisi doğrudur?",
+   "secenekler": [
+    "Sadeleşince [[6/5]] olur; ondalık gösterimi sonludur.",
+    "Paydasında 3 olduğu için devirlidir.",
+    "Ondalık gösterimi yoktur."
+   ],
+   "dogru": 0,
+   "ipucu": "Önce sadeleştir: 18 ve 15'in ikisi de 3'e bölünür. Sonra paydaya bak.",
+   "aciklama": "[[18/15]] = [[6/5]]. Paydada yalnız 5 var: sonlu. [[6/5]] = 1,2. (s. 43)",
+   "kavram": "Sonlu mu, Devirli mi?"
+  },
+  {
+   "soru": "Bilardoda Ahmet ikinci atışında masada kalan 8 topun 3'ünü cebe soktu. Bu oranı ondalık gösterimle yaz.",
+   "cevap": "0,375",
+   "ipucu": "Oran [[3/8]]. 8'i 1000 yapmak için kaçla çarpmalısın? 8 × 125 = 1000.",
+   "aciklama": "[[3/8]] = [[375/1000]] = 0,375. (s. 49)",
+   "denk": true,
+   "kavram": "Paydayı 10, 100, 1000 Yap",
+   "yardim": {
+    "hatirla": "Paydayı 10, 100 ya da 1000 yapabiliyorsak ondalık gösterimi bulmak kolaydır. Payda 1000 ise virgülden sonra 3 basamak olur.",
+    "adimlar": [
+     "Önce oranı kesirle yaz: 8 topun 3'ü.",
+     "8'i 10 ya da 100 yapamazsın ama 1000 yapabilirsin: 8 × 125 = 1000.",
+     "Payı da 125 ile çarp: 3 × 125 = 375.",
+     "Payda 1000: virgülden sonra 3 basamak."
+    ]
+   }
+  },
+  {
+   "soru": "0,[[d:26]] hangi kesre eşittir?",
+   "secenekler": [
+    "[[26/100]]",
+    "[[26/90]]",
+    "[[26/99]]"
+   ],
+   "dogru": 2,
+   "ipucu": "Devreden kaç basamak var? Devretmeyen basamak var mı?",
+   "aciklama": "İki basamak devrediyor → 99; devretmeyen yok: 0,[[d:26]] = [[26/99]]. (s. 45)",
+   "kavram": "Devirliden Kesre"
+  },
+  {
+   "soru": "0,3 ile 0,[[d:3]] için hangisi doğrudur?",
+   "secenekler": [
+    "İkisi aynı sayıdır.",
+    "0,3 = [[3/10]], 0,[[d:3]] = [[3/9]]; farklı sayılardır.",
+    "0,3 devirli bir sayıdır."
+   ],
+   "dogru": 1,
+   "ipucu": "Çizgi ne demekti? 0,3 bitiyor mu, 0,[[d:3]] bitiyor mu?",
+   "aciklama": "0,3 sonludur: [[3/10]]. 0,[[d:3]] = 0,333… = [[3/9]]. Farklı sayılardır. (s. 42, 45)",
+   "kavram": "Devirli Ondalık Gösterim"
+  },
+  {
+   "soru": "Hava sıcaklığı −14,2 °C. Bu sayıyı paydası 10 olan bir kesir olarak yaz.",
+   "cevap": "-142/10",
+   "ipucu": "Virgülden sonra 1 basamak var: payda 10. Eksiyi unutma: önce − tuşu.",
+   "aciklama": "−14,2 = [[-142/10]]. Sadeleşince [[-71/5]] olur. (s. 44)",
+   "kesir": true,
+   "kabul": [
+    "142/-10"
+   ],
+   "kavram": "Ondalıktan Kesre",
+   "yardim": {
+    "adimlar": [
+     "Virgülden sonra kaç basamak var? Payda kaç olur?",
+     "Virgülü sil: 14,2 → 142.",
+     "Eksi işaretini unutma: önce − tuşu, sonra pay, / ve payda."
+    ]
+   }
+  },
+  {
+   "soru": "Kitapta kutu süt [[1/5]] L, küçük su şişesi [[1/3]] L. Hangisi doğrudur?",
+   "secenekler": [
+    "İkisinin de ondalık gösterimi sonludur.",
+    "Süt 0,2 L, su 0,[[d:3]] L'dir.",
+    "Su 0,3 L'dir."
+   ],
+   "dogru": 1,
+   "ipucu": "Paydalara bak: 5 ve 3. Hangisinde 2 ve 5'ten başka asal çarpan var?",
+   "aciklama": "[[1/5]] = 0,2 sonludur. [[1/3]] = 0,[[d:3]] devirlidir. (s. 41–42)",
+   "kavram": "Sonlu Ondalık Gösterim"
+  }
+ ]
+}

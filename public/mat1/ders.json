@@ -19,7 +19,7 @@
    "Bana kolay bir soru sor",
    "Bu soruyu adım adım çözelim"
   ],
-  "ekTalimat": "Bu bir matematik dersi ve öğrenci matematikte zorlanıyor. Kitaptaki kural ve terimlere sadık kal; açıklarken küçük ve kolay sayılarla kendi örneklerini kullanabilirsin. Eksi sayıları anlatırken sayı doğrusu, asansör, termometre ya da deniz seviyesi benzetmesi kullan. İşlemleri en fazla 4 kısa adımda, her adımı ayrı satırda ve numaralı yaz. Problem sorularında cevabı hemen verme: önce 'Ne veriliyor? Ne isteniyor?' diye sor, sonra ipucu ver. Kesirleri 3/4 biçiminde, eksi sayıları -5 biçiminde yaz. Öğrenci yanlış cevap verirse neden yanlış olduğunu nazikçe ve kısaca göster, sonra tekrar denemesini iste."
+  "ekTalimat": "Bu bir matematik dersi ve öğrenci matematikte zorlanıyor. Kitaptaki kural ve terimlere sadık kal; açıklarken küçük ve kolay sayılarla kendi örneklerini kullanabilirsin. Eksi sayıları anlatırken sayı doğrusu, asansör, termometre ya da deniz seviyesi benzetmesi kullan. İşlemleri en fazla 4 kısa adımda, her adımı ayrı satırda ve numaralı yaz. Problem sorularında cevabı hemen verme: önce 'Ne veriliyor? Ne isteniyor?' diye sor, sonra ipucu ver. Kesirleri 3/4 biçiminde, eksi sayıları -5 biçiminde yaz. Konu dosyasında [[d:6]] yazımı devreden rakamları gösterir (0,1[[d:6]] = 0,1666...); sen devirli sayıları 0,1666... biçiminde yaz ve hangi rakamların devrettiğini söyle. Öğrenci yanlış cevap verirse neden yanlış olduğunu nazikçe ve kısaca göster, sonra tekrar denemesini iste."
  },
  "uniteler": [
   {
@@ -85,7 +85,7 @@
        49
       ]
      ],
-     "hazir": false
+     "hazir": true
     },
     {
      "id": "u1k5",
@@ -97,7 +97,7 @@
        61
       ]
      ],
-     "hazir": false
+     "hazir": true
     },
     {
      "id": "u1t2",

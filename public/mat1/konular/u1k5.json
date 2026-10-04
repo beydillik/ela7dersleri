@@ -1,0 +1,937 @@
+{
+ "id": "u1k5",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Karşılaştırma ve Sıralama",
+ "sayfalar": "s. 50–61",
+ "giris": "Mars mı daha soğuk, Neptün mü? [[-1/2]] mi büyük, [[-1/5]] mi? Bu konuda tam sayıları ve rasyonel sayıları karşılaştırıp sıralamayı öğreneceğiz. Sayı doğrusu en büyük yardımcımız olacak.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu sayı doğrusu, mutlak değer, payda eşitleme ve ondalık gösterim bilgilerinin üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+  "maddeler": [
+   {
+    "ad": "Eksi sayılar sayı doğrusunda",
+    "sinif": "Konu 1",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='62' x2='110' y2='62' stroke='#f5f6fa' stroke-width='3'/><path d='M8 62l7-4v8zM112 62l-7-4v8z' fill='#f5f6fa'/><line x1='20' y1='55' x2='20' y2='69' stroke='#6fb3ff' stroke-width='3'/><text x='20' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#6fb3ff'>−2</text><line x1='40' y1='55' x2='40' y2='69' stroke='#6fb3ff' stroke-width='3'/><text x='40' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#6fb3ff'>−1</text><line x1='60' y1='55' x2='60' y2='69' stroke='#f2c14e' stroke-width='3'/><text x='60' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>0</text><line x1='80' y1='55' x2='80' y2='69' stroke='#ffa26b' stroke-width='3'/><text x='80' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#ffa26b'>1</text><line x1='100' y1='55' x2='100' y2='69' stroke='#ffa26b' stroke-width='3'/><text x='100' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#ffa26b'>2</text><path d='M58 44 H22' stroke='#6fb3ff' stroke-width='3' stroke-linecap='round'/><path d='M22 44l6-4v8z' fill='#6fb3ff'/><path d='M62 44 H98' stroke='#ffa26b' stroke-width='3' stroke-linecap='round'/><path d='M98 44l-6-4v8z' fill='#ffa26b'/></svg>",
+    "anlatim": "Sayı doğrusunda 0'ın sağında pozitif sayılar, solunda negatif sayılar vardır. Eksi bir sayıyı bulmak için 0'dan sola doğru sayarız.",
+    "akilda": "Sol eksi, sağ artı",
+    "ornek": {
+     "problem": "−5'i sayı doğrusunda bulalım.",
+     "adimlar": [
+      {
+       "metin": "−5 eksi bir sayı. Eksi sayılar 0'ın solunda.",
+       "islem": "Yön: sola"
+      },
+      {
+       "metin": "0'dan sola 5 aralık say.",
+       "sayiDogrusu": {
+        "min": -6,
+        "max": 3,
+        "oklar": [
+         {
+          "bas": 0,
+          "son": -5,
+          "etiket": "5 aralık",
+          "renk": "#2364c7"
+         }
+        ],
+        "isaretler": [
+         {
+          "x": -5,
+          "etiket": "−5",
+          "renk": "#2364c7"
+         }
+        ]
+       },
+       "islem": "0 → −5"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Sayı doğrusunda −2'nin yerine dokun.",
+      "nokta": -2,
+      "sayiDogrusu": {
+       "min": -5,
+       "max": 5
+      },
+      "ipucu": "0'ı bul. Sola doğru 2 aralık say.",
+      "aciklama": "−2, 0'ın 2 birim solundadır."
+     },
+     {
+      "soru": "Hangisi sayı doğrusunda 0'ın sağındadır?",
+      "secenekler": [
+       "−4",
+       "4",
+       "−1"
+      ],
+      "dogru": 1,
+      "ipucu": "0'ın sağında artı sayılar vardır.",
+      "aciklama": "4 pozitiftir, 0'ın sağındadır."
+     }
+    ]
+   },
+   {
+    "ad": "Mutlak değer",
+    "sinif": "Konu 3",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f5f6fa'>|−3| = 3</text><line x1='8' y1='86' x2='112' y2='86' stroke='#f5f6fa' stroke-width='3'/><line x1='24' y1='80' x2='24' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><text x='24' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−3</text><line x1='36' y1='80' x2='36' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><line x1='48' y1='80' x2='48' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><line x1='60' y1='80' x2='60' y2='92' stroke='#f2c14e' stroke-width='2.5'/><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><line x1='72' y1='80' x2='72' y2='92' stroke='#ffa26b' stroke-width='2.5'/><line x1='84' y1='80' x2='84' y2='92' stroke='#ffa26b' stroke-width='2.5'/><line x1='96' y1='80' x2='96' y2='92' stroke='#ffa26b' stroke-width='2.5'/><text x='96' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>3</text><path d='M58 80 Q41 60 26 80' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M26 80 l2 -9 6 6z' fill='#f2c14e'/><text x='42' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>3</text></svg>",
+    "anlatim": "Bir sayının 0'a olan uzaklığına mutlak değer denir. İşareti sil, sayı kalır: |−6| = 6. Mutlak değer hiç eksi olmaz.",
+    "akilda": "Mutlak değer = 0'a uzaklık",
+    "ornek": {
+     "problem": "|−9| kaçtır?",
+     "adimlar": [
+      {
+       "metin": "−9, 0'dan kaç birim uzakta? 9 birim."
+      },
+      {
+       "metin": "Uzaklık eksi olmaz.",
+       "islem": "|−9| = 9"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "|−6| kaçtır?",
+      "cevap": "6",
+      "ipucu": "−6, 0'dan kaç birim uzakta? İşareti sil.",
+      "aciklama": "|−6| = 6."
+     },
+     {
+      "soru": "Hangisi 0'a daha uzaktır?",
+      "secenekler": [
+       "−7",
+       "5",
+       "0"
+      ],
+      "dogru": 0,
+      "ipucu": "Mutlak değerlerine bak: hangisinin 0'a uzaklığı daha çok?",
+      "aciklama": "|−7| = 7, |5| = 5. −7 daha uzaktır."
+     }
+    ]
+   },
+   {
+    "ad": "Payda eşitleme",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='26' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f5f6fa'>1</text><line x1='15.0' y1='50' x2='37.0' y2='50' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='26' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f5f6fa'>4</text><text x='94' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>25</text><line x1='84.1' y1='50' x2='103.9' y2='50' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='94' y='70' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>100</text><path d='M44 58 Q60 40 74 58' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M74 58 l-1 -9 -6 5z' fill='#f2c14e'/><text x='60' y='36' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>×25</text><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#9aa3bf'>üstü ve altı</text></svg>",
+    "anlatim": "İki kesrin paydasını aynı yapmak için kesirleri genişletiriz. Paydalardan birinin, diğerinin katı olmasına bakarız: [[1/2]] ve [[3/4]] için [[1/2]] = [[2/4]].",
+    "akilda": "Paydaları aynı yap",
+    "ornek": {
+     "problem": "[[2/3]] ile [[3/4]] kesirlerinin paydalarını eşitleyelim.",
+     "adimlar": [
+      {
+       "metin": "3'ün de 4'ün de katı olan bir sayı bul: 3 × 4 = 12.",
+       "islem": "Ortak payda: 12"
+      },
+      {
+       "metin": "[[2/3]] kesrini 4 ile genişlet.",
+       "islem": "[[2/3]] = [[8/12]]"
+      },
+      {
+       "metin": "[[3/4]] kesrini 3 ile genişlet.",
+       "islem": "[[3/4]] = [[9/12]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[1/3]] kesrini paydası 6 olacak şekilde genişlet. Pay kaç olur?",
+      "cevap": "2",
+      "ipucu": "3 × 2 = 6. Payı da 2 ile çarp.",
+      "aciklama": "1 × 2 = 2: [[1/3]] = [[2/6]]."
+     },
+     {
+      "soru": "[[1/2]] ile [[2/5]] kesirlerinin paydaları hangi sayıda eşitlenebilir?",
+      "secenekler": [
+       "10",
+       "7",
+       "3"
+      ],
+      "dogru": 0,
+      "ipucu": "Hem 2'nin hem 5'in katı olan sayıyı ara.",
+      "aciklama": "10, hem 2'nin hem 5'in katıdır: [[5/10]] ve [[4/10]]."
+     }
+    ]
+   },
+   {
+    "ad": "Kesirden ondalığa",
+    "sinif": "Geçen konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='14' width='7' height='7' fill='#ffa26b'/><rect x='28' y='14' width='7' height='7' fill='#ffa26b'/><rect x='36' y='14' width='7' height='7' fill='#ffa26b'/><rect x='44' y='14' width='7' height='7' fill='#ffa26b'/><rect x='52' y='14' width='7' height='7' fill='#ffa26b'/><rect x='60' y='14' width='7' height='7' fill='#ffa26b'/><rect x='68' y='14' width='7' height='7' fill='#ffa26b'/><rect x='76' y='14' width='7' height='7' fill='#ffa26b'/><rect x='84' y='14' width='7' height='7' fill='#ffa26b'/><rect x='92' y='14' width='7' height='7' fill='#ffa26b'/><rect x='20' y='22' width='7' height='7' fill='#ffa26b'/><rect x='28' y='22' width='7' height='7' fill='#ffa26b'/><rect x='36' y='22' width='7' height='7' fill='#ffa26b'/><rect x='44' y='22' width='7' height='7' fill='#ffa26b'/><rect x='52' y='22' width='7' height='7' fill='#ffa26b'/><rect x='60' y='22' width='7' height='7' fill='#ffa26b'/><rect x='68' y='22' width='7' height='7' fill='#ffa26b'/><rect x='76' y='22' width='7' height='7' fill='#ffa26b'/><rect x='84' y='22' width='7' height='7' fill='#ffa26b'/><rect x='92' y='22' width='7' height='7' fill='#ffa26b'/><rect x='20' y='30' width='7' height='7' fill='#ffa26b'/><rect x='28' y='30' width='7' height='7' fill='#ffa26b'/><rect x='36' y='30' width='7' height='7' fill='#ffa26b'/><rect x='44' y='30' width='7' height='7' fill='#ffa26b'/><rect x='52' y='30' width='7' height='7' fill='#ffa26b'/><rect x='60' y='30' width='7' height='7' fill='#2b355c'/><rect x='68' y='30' width='7' height='7' fill='#2b355c'/><rect x='76' y='30' width='7' height='7' fill='#2b355c'/><rect x='84' y='30' width='7' height='7' fill='#2b355c'/><rect x='92' y='30' width='7' height='7' fill='#2b355c'/><rect x='20' y='38' width='7' height='7' fill='#2b355c'/><rect x='28' y='38' width='7' height='7' fill='#2b355c'/><rect x='36' y='38' width='7' height='7' fill='#2b355c'/><rect x='44' y='38' width='7' height='7' fill='#2b355c'/><rect x='52' y='38' width='7' height='7' fill='#2b355c'/><rect x='60' y='38' width='7' height='7' fill='#2b355c'/><rect x='68' y='38' width='7' height='7' fill='#2b355c'/><rect x='76' y='38' width='7' height='7' fill='#2b355c'/><rect x='84' y='38' width='7' height='7' fill='#2b355c'/><rect x='92' y='38' width='7' height='7' fill='#2b355c'/><rect x='20' y='46' width='7' height='7' fill='#2b355c'/><rect x='28' y='46' width='7' height='7' fill='#2b355c'/><rect x='36' y='46' width='7' height='7' fill='#2b355c'/><rect x='44' y='46' width='7' height='7' fill='#2b355c'/><rect x='52' y='46' width='7' height='7' fill='#2b355c'/><rect x='60' y='46' width='7' height='7' fill='#2b355c'/><rect x='68' y='46' width='7' height='7' fill='#2b355c'/><rect x='76' y='46' width='7' height='7' fill='#2b355c'/><rect x='84' y='46' width='7' height='7' fill='#2b355c'/><rect x='92' y='46' width='7' height='7' fill='#2b355c'/><rect x='20' y='54' width='7' height='7' fill='#2b355c'/><rect x='28' y='54' width='7' height='7' fill='#2b355c'/><rect x='36' y='54' width='7' height='7' fill='#2b355c'/><rect x='44' y='54' width='7' height='7' fill='#2b355c'/><rect x='52' y='54' width='7' height='7' fill='#2b355c'/><rect x='60' y='54' width='7' height='7' fill='#2b355c'/><rect x='68' y='54' width='7' height='7' fill='#2b355c'/><rect x='76' y='54' width='7' height='7' fill='#2b355c'/><rect x='84' y='54' width='7' height='7' fill='#2b355c'/><rect x='92' y='54' width='7' height='7' fill='#2b355c'/><rect x='20' y='62' width='7' height='7' fill='#2b355c'/><rect x='28' y='62' width='7' height='7' fill='#2b355c'/><rect x='36' y='62' width='7' height='7' fill='#2b355c'/><rect x='44' y='62' width='7' height='7' fill='#2b355c'/><rect x='52' y='62' width='7' height='7' fill='#2b355c'/><rect x='60' y='62' width='7' height='7' fill='#2b355c'/><rect x='68' y='62' width='7' height='7' fill='#2b355c'/><rect x='76' y='62' width='7' height='7' fill='#2b355c'/><rect x='84' y='62' width='7' height='7' fill='#2b355c'/><rect x='92' y='62' width='7' height='7' fill='#2b355c'/><rect x='20' y='70' width='7' height='7' fill='#2b355c'/><rect x='28' y='70' width='7' height='7' fill='#2b355c'/><rect x='36' y='70' width='7' height='7' fill='#2b355c'/><rect x='44' y='70' width='7' height='7' fill='#2b355c'/><rect x='52' y='70' width='7' height='7' fill='#2b355c'/><rect x='60' y='70' width='7' height='7' fill='#2b355c'/><rect x='68' y='70' width='7' height='7' fill='#2b355c'/><rect x='76' y='70' width='7' height='7' fill='#2b355c'/><rect x='84' y='70' width='7' height='7' fill='#2b355c'/><rect x='92' y='70' width='7' height='7' fill='#2b355c'/><rect x='20' y='78' width='7' height='7' fill='#2b355c'/><rect x='28' y='78' width='7' height='7' fill='#2b355c'/><rect x='36' y='78' width='7' height='7' fill='#2b355c'/><rect x='44' y='78' width='7' height='7' fill='#2b355c'/><rect x='52' y='78' width='7' height='7' fill='#2b355c'/><rect x='60' y='78' width='7' height='7' fill='#2b355c'/><rect x='68' y='78' width='7' height='7' fill='#2b355c'/><rect x='76' y='78' width='7' height='7' fill='#2b355c'/><rect x='84' y='78' width='7' height='7' fill='#2b355c'/><rect x='92' y='78' width='7' height='7' fill='#2b355c'/><rect x='20' y='86' width='7' height='7' fill='#2b355c'/><rect x='28' y='86' width='7' height='7' fill='#2b355c'/><rect x='36' y='86' width='7' height='7' fill='#2b355c'/><rect x='44' y='86' width='7' height='7' fill='#2b355c'/><rect x='52' y='86' width='7' height='7' fill='#2b355c'/><rect x='60' y='86' width='7' height='7' fill='#2b355c'/><rect x='68' y='86' width='7' height='7' fill='#2b355c'/><rect x='76' y='86' width='7' height='7' fill='#2b355c'/><rect x='84' y='86' width='7' height='7' fill='#2b355c'/><rect x='92' y='86' width='7' height='7' fill='#2b355c'/><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>25/100 = 0,25</text></svg>",
+    "anlatim": "Paydayı 10, 100 ya da 1000 yaparak kesri ondalık gösterime çevirebiliriz: [[1/4]] = [[25/100]] = 0,25.",
+    "akilda": "10, 100, 1000'e genişlet",
+    "ornek": {
+     "problem": "[[3/5]] kesrini ondalık gösterimle yazalım.",
+     "adimlar": [
+      {
+       "metin": "5 × 2 = 10. Payı da 2 ile çarp.",
+       "islem": "[[3/5]] = [[6/10]]"
+      },
+      {
+       "metin": "Payda 10: virgülden sonra 1 basamak.",
+       "islem": "[[6/10]] = 0,6"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[1/4]] kesrini ondalık gösterimle yaz.",
+      "cevap": "0,25",
+      "ipucu": "4 × 25 = 100. Payı da 25 ile çarp.",
+      "aciklama": "[[1/4]] = [[25/100]] = 0,25.",
+      "denk": true
+     },
+     {
+      "soru": "[[4/5]] hangisine eşittir?",
+      "secenekler": [
+       "0,45",
+       "0,8",
+       "0,5"
+      ],
+      "dogru": 1,
+      "ipucu": "5 × 2 = 10. Payı da 2 ile çarp.",
+      "aciklama": "[[4/5]] = [[8/10]] = 0,8."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Sağdaki Büyüktür",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='8' y1='70' x2='112' y2='70' stroke='#f5f6fa' stroke-width='3'/><line x1='24' y1='64' x2='24' y2='76' stroke='#6fb3ff' stroke-width='2.5'/><text x='24' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−3</text><line x1='36' y1='64' x2='36' y2='76' stroke='#6fb3ff' stroke-width='2.5'/><line x1='48' y1='64' x2='48' y2='76' stroke='#6fb3ff' stroke-width='2.5'/><line x1='60' y1='64' x2='60' y2='76' stroke='#f2c14e' stroke-width='2.5'/><text x='60' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><line x1='72' y1='64' x2='72' y2='76' stroke='#ffa26b' stroke-width='2.5'/><line x1='84' y1='64' x2='84' y2='76' stroke='#ffa26b' stroke-width='2.5'/><line x1='96' y1='64' x2='96' y2='76' stroke='#ffa26b' stroke-width='2.5'/><text x='96' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>3</text><path d='M16 42 H104' stroke='#f2c14e' stroke-width='3.5' stroke-linecap='round'/><path d='M106 42 l-9 -5 v10z' fill='#f2c14e'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>büyür</text><text x='30' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>küçük</text><text x='92' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>büyük</text></svg>",
+   "aciklama": "Sayı doğrusunda bir sayı, solundaki sayılardan büyük, sağındaki sayılardan küçüktür. Sağa gittikçe sayılar büyür, sola gittikçe küçülür.",
+   "ek": "+1, −3'ün sağında: +1 > −3. −5, −2'nin solunda: −5 < −2. Kitaptaki gezegenlerde Mars (−65 °C), Neptün'den (−200 °C) daha sıcaktır, çünkü sayı doğrusunda daha sağdadır. (s. 50–51)",
+   "akilda": "Sağdaki büyük",
+   "sayiDogrusu": {
+    "min": -6,
+    "max": 3,
+    "isaretler": [
+     {
+      "x": -5,
+      "etiket": "−5",
+      "renk": "#2364c7"
+     },
+     {
+      "x": -2,
+      "etiket": "−2",
+      "renk": "#2364c7"
+     }
+    ]
+   },
+   "cozum": {
+    "baslik": "−7 mi büyük, −12 mi?",
+    "problem": "−7 ile −12'yi karşılaştıralım.",
+    "sayiDogrusu": {
+     "min": -13,
+     "max": 1,
+     "gizle": [
+      -11,
+      -10,
+      -9,
+      -8,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1
+     ],
+     "isaretler": [
+      {
+       "x": -12,
+       "etiket": "−12",
+       "renk": "#2364c7"
+      },
+      {
+       "x": -7,
+       "etiket": "−7",
+       "renk": "#2364c7"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "İkisi de eksi: ikisi de 0'ın solunda."
+     },
+     {
+      "metin": "−12, 0'dan 12 birim sola; −7 ise 7 birim sola gider. −12 daha solda.",
+      "islem": "−12 daha solda"
+     },
+     {
+      "metin": "Soldaki küçüktür.",
+      "islem": "−12 < −7"
+     }
+    ],
+    "sonuc": "−12 < −7. Sayı doğrusunda yerlerini bulmak her zaman işe yarar. (s. 51)"
+   },
+   "soru": {
+    "soru": "Hangisi doğrudur?",
+    "secenekler": [
+     "−5 > +7",
+     "−100 < −99",
+     "−7 < −12"
+    ],
+    "dogru": 1,
+    "ipucu": "Her çift için düşün: hangisi sayı doğrusunda daha solda?",
+    "aciklama": "−100, −99'un solundadır: −100 < −99. (s. 51)"
+   }
+  },
+  {
+   "ad": "Negatif, Sıfır, Pozitif",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='44' width='34' height='30' rx='15' fill='#6fb3ff'/><text x='25' y='65' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#1b2340'>−</text><text x='50' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f2c14e'>&lt;</text><circle cx='66' cy='59' r='14' fill='#f2c14e'/><text x='66' y='65' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#1b2340'>0</text><text x='84' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f2c14e'>&lt;</text><rect x='92' y='44' width='22' height='30' rx='11' fill='#ffa26b'/><text x='103' y='65' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#1b2340'>+</text></svg>",
+   "aciklama": "Pozitif sayılar her zaman 0'dan büyüktür. Negatif sayılar her zaman 0'dan küçüktür. Bu yüzden her pozitif sayı, her negatif sayıdan büyüktür.",
+   "ek": "İşaretler farklıysa hesap yapmaya gerek yok: [[1/100]] > [[-50/3]]. Kitaptaki Dikkat kutusunun ilk kısa yolu budur: pozitif mi, negatif mi? (s. 53, 57)",
+   "akilda": "Negatif < 0 < pozitif",
+   "soru": {
+    "soru": "Hangisi doğrudur?",
+    "secenekler": [
+     "[[-1/2]] > 0",
+     "0,1 > [[-9/2]]",
+     "−3 > 2"
+    ],
+    "dogru": 1,
+    "ipucu": "Bir pozitif sayı ile bir negatif sayıdan hangisi her zaman büyüktür?",
+    "aciklama": "0,1 pozitif, [[-9/2]] negatif. Pozitif her zaman büyüktür. (s. 53)"
+   }
+  },
+  {
+   "ad": "Negatiflerde Uzak Olan Küçük",
+   "renk": "#3274d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='8' y1='78' x2='112' y2='78' stroke='#f5f6fa' stroke-width='3'/><line x1='12' y1='70' x2='12' y2='86' stroke='#6fb3ff' stroke-width='3'/><line x1='60' y1='70' x2='60' y2='86' stroke='#f2c14e' stroke-width='3'/><line x1='108' y1='70' x2='108' y2='86' stroke='#ffa26b' stroke-width='3'/><text x='12' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>−1</text><text x='60' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>0</text><text x='108' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>1</text><circle cx='36' cy='78' r='5' fill='#6fb3ff'/><circle cx='50' cy='78' r='5' fill='#6fb3ff'/><circle cx='70' cy='78' r='5' fill='#ffa26b'/><circle cx='84' cy='78' r='5' fill='#ffa26b'/><path d='M84 66 Q60 30 36 66' stroke='#6fb3ff' stroke-width='2.5' fill='none' stroke-dasharray='4 3'/><path d='M70 66 Q60 48 50 66' stroke='#6fb3ff' stroke-width='2.5' fill='none' stroke-dasharray='4 3'/><text x='60' y='26' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>ayna</text></svg>",
+   "aciklama": "İki negatif sayıdan 0'a daha uzak olan, yani mutlak değeri büyük olan daha küçüktür: |−12| > |−7| olduğu için −12 < −7.",
+   "ek": "Borç gibi düşün: 12 TL borcu olan, 7 TL borcu olandan daha zordadır. Kesirlerde de aynı: [[1/5]] < [[1/2]] ama [[-1/2]] < [[-1/5]]. Kitaptaki mor karton deneyinde pozitiflerin sırası, eksi işareti gelince tersine döner. (s. 52–53)",
+   "akilda": "Eksiler ters sıralanır",
+   "sayiDogrusu": {
+    "min": -1,
+    "max": 1,
+    "bolme": 10,
+    "isaretler": [
+     {
+      "x": -0.5,
+      "etiket": "−1/2",
+      "renk": "#2364c7"
+     },
+     {
+      "x": -0.2,
+      "etiket": "−1/5",
+      "renk": "#2364c7"
+     },
+     {
+      "x": 0.2,
+      "etiket": "1/5",
+      "renk": "#d9480f"
+     },
+     {
+      "x": 0.5,
+      "etiket": "1/2",
+      "renk": "#d9480f"
+     }
+    ]
+   },
+   "cozum": {
+    "baslik": "[[-1/2]] mi büyük, [[-1/5]] mi?",
+    "problem": "[[-1/2]] ile [[-1/5]] sayılarını karşılaştıralım.",
+    "adimlar": [
+     {
+      "metin": "Önce eksileri sil: [[1/2]] ile [[1/5]]. [[1/2]] = 0,5 ve [[1/5]] = 0,2.",
+      "islem": "[[1/2]] > [[1/5]]"
+     },
+     {
+      "metin": "Eksi gelince sıra döner. 0'a daha uzak olan [[-1/2]] daha soldadır.",
+      "sayiDogrusu": {
+       "min": -1,
+       "max": 1,
+       "bolme": 10,
+       "isaretler": [
+        {
+         "x": -0.5,
+         "etiket": "−1/2",
+         "renk": "#2364c7"
+        },
+        {
+         "x": -0.2,
+         "etiket": "−1/5",
+         "renk": "#2364c7"
+        }
+       ]
+      },
+      "islem": "[[-1/2]] daha solda"
+     },
+     {
+      "metin": "Soldaki küçüktür.",
+      "islem": "[[-1/2]] < [[-1/5]]"
+     }
+    ],
+    "sonuc": "[[-1/2]] < [[-1/5]]. Pozitiflerde büyük olan, negatif olunca küçük olur."
+   },
+   "sende": {
+    "baslik": "Şimdi sen karşılaştır",
+    "problem": "[[-3/4]] ile [[-1/4]] sayılarını karşılaştıralım.",
+    "adimlar": [
+     {
+      "metin": "Önce eksileri sil.",
+      "soru": {
+       "soru": "Hangisi büyüktür?",
+       "secenekler": [
+        "[[3/4]]",
+        "[[1/4]]",
+        "İkisi eşittir"
+       ],
+       "dogru": 0,
+       "ipucu": "Paydalar aynı: payı büyük olan büyüktür.",
+       "aciklama": "[[3/4]] > [[1/4]]."
+      },
+      "islem": "[[3/4]] > [[1/4]]"
+     },
+     {
+      "metin": "Eksi gelince sıra döner.",
+      "soru": {
+       "soru": "Hangisi doğrudur?",
+       "secenekler": [
+        "[[-3/4]] < [[-1/4]]",
+        "[[-3/4]] > [[-1/4]]",
+        "[[-3/4]] = [[-1/4]]"
+       ],
+       "dogru": 0,
+       "ipucu": "0'a daha uzak olan negatif sayı daha küçüktür.",
+       "aciklama": "[[-3/4]] 0'a daha uzak: [[-3/4]] < [[-1/4]]."
+      },
+      "islem": "[[-3/4]] < [[-1/4]]"
+     },
+     {
+      "metin": "Sayı doğrusunda kontrol et.",
+      "soru": {
+       "soru": "[[-3/4]] sayısının yerine dokun.",
+       "nokta": -0.75,
+       "sayiDogrusu": {
+        "min": -1,
+        "max": 1,
+        "bolme": 4
+       },
+       "ipucu": "0'dan sola git. 0 ile −1 arası 4 eş parça; 3 parça say.",
+       "aciklama": "[[-3/4]], [[-1/4]]'ün solundadır, yani daha küçüktür."
+      },
+      "islem": "Soldaki küçük ✓"
+     }
+    ],
+    "sonuc": "Harika! [[-3/4]] < [[-1/4]]."
+   },
+   "soru": {
+    "soru": "Hangisi en küçüktür?",
+    "secenekler": [
+     "[[-1/3]]",
+     "[[-2/3]]",
+     "0"
+    ],
+    "dogru": 1,
+    "ipucu": "Negatif sayılardan 0'a daha uzak olan daha küçüktür.",
+    "aciklama": "[[-2/3]], 0'a [[-1/3]]'ten daha uzaktır; en küçüğü odur. (s. 53)"
+   }
+  },
+  {
+   "ad": "Dikey Sayı Doğrusu",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='0' y='46' width='120' height='74' fill='#1d4f7a' opacity='.55'/><line x1='30' y1='12' x2='30' y2='110' stroke='#f5f6fa' stroke-width='3'/><path d='M30 8 l-5 8 h10z' fill='#f5f6fa'/><line x1='22' y1='46' x2='38' y2='46' stroke='#f2c14e' stroke-width='3'/><text x='14' y='50' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><path d='M58 70 q10 -8 20 0 q-10 8 -20 0z M78 70 l8 -6 v12z' fill='#ffa26b'/><circle cx='70' cy='98' r='6' fill='#6fb3ff'/><path d='M70 104 v8 M64 108 h12' stroke='#6fb3ff' stroke-width='3' stroke-linecap='round'/><text x='100' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>yukarı</text><text x='100' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>büyük</text></svg>",
+   "aciklama": "Dikey sayı doğrusunda yukarı çıktıkça sayılar büyür, aşağı indikçe küçülür. Yukarıdaki sayı, aşağıdaki sayıdan büyüktür.",
+   "ek": "Kitapta okyanusun farklı derinliklerinde yaşayan canlılar dikey sayı doğrusunda gösteriliyor. Daha derinde yaşayan canlının konumu daha küçük bir sayıdır. (s. 54)",
+   "akilda": "Yukarıdaki büyük",
+   "sayiDogrusu": {
+    "min": -4,
+    "max": 1,
+    "dikey": true,
+    "birim": 28,
+    "sifirEtiketi": "Deniz seviyesi",
+    "isaretler": [
+     {
+      "x": -1,
+      "etiket": "Balık −1 m",
+      "renk": "#2364c7"
+     },
+     {
+      "x": -3,
+      "etiket": "Dalgıç −3 m",
+      "renk": "#2364c7"
+     }
+    ]
+   },
+   "soru": {
+    "soru": "Dikey sayı doğrusunda A noktası, B noktasının üstünde. Hangisi doğrudur?",
+    "secenekler": [
+     "A > B",
+     "A < B",
+     "A = B"
+    ],
+    "dogru": 0,
+    "ipucu": "Dikey sayı doğrusunda yukarıdaki sayı büyük müdür, küçük müdür?",
+    "aciklama": "Yukarıdaki sayı büyüktür: A > B. (s. 54)",
+    "sayiDogrusu": {
+     "min": -4,
+     "max": 1,
+     "dikey": true,
+     "birim": 24,
+     "gizle": [
+      -3,
+      -1
+     ],
+     "isaretler": [
+      {
+       "x": -1,
+       "etiket": "A",
+       "renk": "#2364c7"
+      },
+      {
+       "x": -3,
+       "etiket": "B",
+       "renk": "#2364c7"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Paydaları ya da Payları Eşitle",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='22' width='10' height='24' fill='#6fb3ff'/><rect x='21' y='22' width='10' height='24' fill='#6fb3ff'/><rect x='32' y='22' width='10' height='24' fill='#6fb3ff'/><rect x='43' y='22' width='10' height='24' fill='#2b355c'/><rect x='54' y='22' width='10' height='24' fill='#2b355c'/><rect x='65' y='22' width='10' height='24' fill='#2b355c'/><rect x='76' y='22' width='10' height='24' fill='#2b355c'/><text x='104' y='39' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>3/7</text><rect x='10' y='56' width='10' height='24' fill='#ffa26b'/><rect x='21' y='56' width='10' height='24' fill='#ffa26b'/><rect x='32' y='56' width='10' height='24' fill='#ffa26b'/><rect x='43' y='56' width='10' height='24' fill='#ffa26b'/><rect x='54' y='56' width='10' height='24' fill='#ffa26b'/><rect x='65' y='56' width='10' height='24' fill='#2b355c'/><rect x='76' y='56' width='10' height='24' fill='#2b355c'/><text x='104' y='73' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>5/7</text><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>3/7 &lt; 5/7</text></svg>",
+   "aciklama": "Paydalar eşitse payı büyük olan büyüktür: [[3/7]] < [[5/7]]. Paydalar farklıysa önce kesirleri genişletip paydaları eşitleriz.",
+   "ek": "Paylar eşitse paydası küçük olan büyüktür: [[2/3]] > [[2/5]]. Kitapta basketbolcuların başarıları [[5/12]], [[3/8]], [[2/6]] payları 30'a eşitlenerek karşılaştırılıyor: [[30/72]] > [[30/80]] > [[30/90]]. (s. 55–56)",
+   "akilda": "Altlar eşitse üstlere bak",
+   "cozum": {
+    "baslik": "[[2/3]] mü büyük, [[3/4]] mü?",
+    "problem": "[[2/3]] ile [[3/4]] kesirlerini karşılaştıralım.",
+    "adimlar": [
+     {
+      "metin": "Paydalar farklı: 3 ve 4. İkisinin de katı olan 12'yi seç.",
+      "islem": "Ortak payda: 12"
+     },
+     {
+      "metin": "İki kesri de paydası 12 olacak şekilde genişlet.",
+      "islem": "[[2/3]] = [[8/12]]   ve   [[3/4]] = [[9/12]]"
+     },
+     {
+      "metin": "Paydalar eşit: payı büyük olan büyüktür.",
+      "islem": "[[8/12]] < [[9/12]]  →  [[2/3]] < [[3/4]]"
+     }
+    ],
+    "sonuc": "[[2/3]] < [[3/4]]. Paydalar eşitlenince karşılaştırmak kolaylaşır."
+   },
+   "sende": {
+    "baslik": "Şimdi sen eşitle",
+    "problem": "[[3/5]] ile [[7/10]] kesirlerini karşılaştıralım.",
+    "adimlar": [
+     {
+      "metin": "10, 5'in katıdır. [[3/5]] kesrinin paydasını 10 yapalım.",
+      "soru": {
+       "soru": "5'i kaçla çarparsak 10 olur?",
+       "cevap": "2",
+       "ipucu": "5 × ? = 10",
+       "aciklama": "5 × 2 = 10."
+      },
+      "islem": "5 × 2 = 10"
+     },
+     {
+      "metin": "Payı da aynı sayıyla çarp.",
+      "soru": {
+       "soru": "[[3/5]] = ?/10. Yeni pay kaç?",
+       "cevap": "6",
+       "ipucu": "3 × 2 = ?",
+       "aciklama": "3 × 2 = 6: [[3/5]] = [[6/10]]."
+      },
+      "islem": "[[3/5]] = [[6/10]]"
+     },
+     {
+      "metin": "Şimdi paydalar eşit: [[6/10]] ile [[7/10]].",
+      "soru": {
+       "soru": "Hangisi doğrudur?",
+       "secenekler": [
+        "[[3/5]] < [[7/10]]",
+        "[[3/5]] > [[7/10]]",
+        "[[3/5]] = [[7/10]]"
+       ],
+       "dogru": 0,
+       "ipucu": "Paydalar eşitse payı büyük olan büyüktür: 6 mı, 7 mi?",
+       "aciklama": "6 < 7, yani [[3/5]] < [[7/10]]."
+      },
+      "islem": "[[3/5]] < [[7/10]]"
+     }
+    ],
+    "sonuc": "Harika! [[3/5]] < [[7/10]]."
+   },
+   "soru": {
+    "soru": "Hangisi büyüktür?",
+    "secenekler": [
+     "[[4/9]]",
+     "[[7/9]]",
+     "İkisi eşittir"
+    ],
+    "dogru": 1,
+    "ipucu": "Paydalar eşit. Payı büyük olan büyüktür.",
+    "aciklama": "Paydalar eşit, 7 > 4: [[7/9]] > [[4/9]]. (s. 55–56)"
+   }
+  },
+  {
+   "ad": "Kısa Yollar",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='70' x2='108' y2='70' stroke='#f5f6fa' stroke-width='3'/><line x1='16' y1='62' x2='16' y2='78' stroke='#f2c14e' stroke-width='3'/><text x='16' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>0</text><line x1='60' y1='62' x2='60' y2='78' stroke='#f2c14e' stroke-width='3'/><text x='60' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>½</text><line x1='104' y1='62' x2='104' y2='78' stroke='#f2c14e' stroke-width='3'/><text x='104' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>1</text><circle cx='22' cy='70' r='5' fill='#6fb3ff'/><circle cx='68' cy='70' r='5' fill='#ffa26b'/><circle cx='99' cy='70' r='5' fill='#ffa26b'/><text x='22' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#6fb3ff'>1/10</text><text x='68' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#ffa26b'>5/9</text><text x='99' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#ffa26b'>9/10</text></svg>",
+   "aciklama": "Bazen hesap yapmaya gerek yoktur. Sayıların işaretine, tam kısmına ya da 0'a, [[1/2]]'ye, 1'e yakınlığına bakarız. Olmazsa ondalık gösterime çeviririz.",
+   "ek": "Kitaptaki Dikkat kutusunun kısa yolları: işaret, tam kısım ([[2 1/5]] > [[1 7/8]]), 0'a, [[1/2]]'ye ve 1'e yakınlık, eşit pay ya da payda, ondalık gösterim. [[9/10]] 1'e çok yakın; [[1/10]] ise 0'a. (s. 57)",
+   "akilda": "Önce kolay yolu ara",
+   "cozum": {
+    "baslik": "Hesapsız sıralayalım",
+    "problem": "[[5/9]], [[1/10]] ve [[9/10]] sayılarını küçükten büyüğe sıralayalım.",
+    "adimlar": [
+     {
+      "metin": "[[1/10]], 10 parçadan yalnız 1 tanesi: 0'a çok yakın.",
+      "islem": "[[1/10]] → 0'a yakın"
+     },
+     {
+      "metin": "[[9/10]], 10 parçadan 9 tanesi: 1'e çok yakın.",
+      "islem": "[[9/10]] → 1'e yakın"
+     },
+     {
+      "metin": "[[5/9]] yarıdan biraz fazla (9'un yarısı 4,5): ortada.",
+      "islem": "[[5/9]] → [[1/2]]'ye yakın"
+     },
+     {
+      "metin": "Şimdi sırala.",
+      "islem": "[[1/10]] < [[5/9]] < [[9/10]]"
+     }
+    ],
+    "sonuc": "Hiç payda eşitlemeden sıraladık. Önce kısa yol, olmazsa payda eşitle ya da ondalığa çevir."
+   },
+   "soru": {
+    "soru": "[[2 1/5]] ile [[1 7/8]] için hangisi doğrudur?",
+    "secenekler": [
+     "[[2 1/5]] > [[1 7/8]]",
+     "[[2 1/5]] < [[1 7/8]]",
+     "İkisi eşittir"
+    ],
+    "dogru": 0,
+    "ipucu": "Önce tam kısımlara bak: 2 mi büyük, 1 mi?",
+    "aciklama": "Tam kısımlar farklı: 2 > 1. Kesirlere bakmaya gerek yok. (s. 57)"
+   }
+  },
+  {
+   "ad": "Arada Hep Bir Sayı Var",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='8' y1='70' x2='112' y2='70' stroke='#f5f6fa' stroke-width='3'/><line x1='24' y1='62' x2='24' y2='78' stroke='#ffa26b' stroke-width='3'/><line x1='96' y1='62' x2='96' y2='78' stroke='#ffa26b' stroke-width='3'/><circle cx='42' cy='70' r='3.5' fill='#f2c14e'/><circle cx='60' cy='70' r='5' fill='#f2c14e'/><circle cx='78' cy='70' r='3.5' fill='#f2c14e'/><circle cx='60' cy='46' r='16' fill='none' stroke='#f5f6fa' stroke-width='3'/><path d='M71 57 l12 12' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/><text x='60' y='51' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>?</text><text x='24' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>2/8</text><text x='96' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>4/8</text><text x='60' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>3/8</text></svg>",
+   "aciklama": "−1 ile 0 arasında hiç tam sayı yoktur. Ama herhangi iki rasyonel sayı arasında en az bir rasyonel sayı bulunur.",
+   "ek": "Aradaki sayıyı bulmak için paydaları büyütürüz. Kitapta [[-3/5]] ile [[-2/5]] arasında bir sayı aranıyor: paydayı 10 yapınca [[-6/10]] ile [[-4/10]] olur, arada [[-5/10]] vardır. Bu iş hiç bitmez. (s. 59–60)",
+   "akilda": "Arada hep bir sayı var",
+   "cozum": {
+    "baslik": "[[1/4]] ile [[1/2]] arasında ne var?",
+    "problem": "[[1/4]] ile [[1/2]] arasında bir rasyonel sayı bulalım.",
+    "adimlar": [
+     {
+      "metin": "Paydaları 8 yap.",
+      "islem": "[[1/4]] = [[2/8]]   ve   [[1/2]] = [[4/8]]"
+     },
+     {
+      "metin": "2 ile 4 arasında 3 var.",
+      "islem": "[[2/8]] < [[3/8]] < [[4/8]]"
+     },
+     {
+      "metin": "Sayı doğrusunda bak.",
+      "sayiDogrusu": {
+       "min": 0,
+       "max": 1,
+       "bolme": 8,
+       "isaretler": [
+        {
+         "x": 0.25,
+         "etiket": "1/4",
+         "renk": "#d9480f"
+        },
+        {
+         "x": 0.375,
+         "etiket": "3/8",
+         "renk": "#b7791f"
+        },
+        {
+         "x": 0.5,
+         "etiket": "1/2",
+         "renk": "#d9480f"
+        }
+       ]
+      },
+      "islem": "[[3/8]] arada"
+     }
+    ],
+    "sonuc": "[[1/4]] < [[3/8]] < [[1/2]]. Paydayı büyütünce aradaki sayılar ortaya çıkar."
+   },
+   "sende": {
+    "baslik": "Şimdi sen bul",
+    "problem": "[[1/5]] ile [[2/5]] arasında bir sayı bulalım.",
+    "adimlar": [
+     {
+      "metin": "Paydayı 10 yapalım.",
+      "soru": {
+       "soru": "[[1/5]] = ?/10. Pay kaç?",
+       "cevap": "2",
+       "ipucu": "5 × 2 = 10. Payı da 2 ile çarp.",
+       "aciklama": "1 × 2 = 2: [[1/5]] = [[2/10]]."
+      },
+      "islem": "[[1/5]] = [[2/10]]"
+     },
+     {
+      "metin": "Diğerini de çevir.",
+      "soru": {
+       "soru": "[[2/5]] = ?/10. Pay kaç?",
+       "cevap": "4",
+       "ipucu": "2 × 2 = ?",
+       "aciklama": "2 × 2 = 4: [[2/5]] = [[4/10]]."
+      },
+      "islem": "[[2/5]] = [[4/10]]"
+     },
+     {
+      "metin": "2 ile 4 arasında hangi sayı var?",
+      "soru": {
+       "soru": "Aradaki kesrin payı kaç? ?/10",
+       "cevap": "3",
+       "ipucu": "2'den büyük, 4'ten küçük tam sayı.",
+       "aciklama": "[[2/10]] < [[3/10]] < [[4/10]]."
+      },
+      "islem": "[[3/10]] arada"
+     }
+    ],
+    "sonuc": "Harika! [[1/5]] < [[3/10]] < [[2/5]]."
+   },
+   "soru": {
+    "soru": "[[1/4]] ile [[1/2]] arasındaki sayıya dokun.",
+    "nokta": 0.375,
+    "sayiDogrusu": {
+     "min": 0,
+     "max": 1,
+     "bolme": 8
+    },
+    "ipucu": "0 ile 1 arası 8 parça. [[1/4]] = [[2/8]], [[1/2]] = [[4/8]]. Aradaki çizgi hangisi?",
+    "aciklama": "[[2/8]] ile [[4/8]] arasında [[3/8]] vardır. (s. 60)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Güneş'e en yakın gezegen Merkür'dür ama en sıcak gezegen Venüs'tür (464 °C). Venüs'ün yoğun atmosferi sera etkisi oluşturur. (s. 50)",
+  "Arabalarda radyatördeki suyun kışın donmaması için antifriz kullanılır. Kitaptaki antifriz −36,8 °C'ta donar; bundan soğuk havada işe yaramaz. (s. 61)",
+  "Futbolda puanlar eşitse averajı büyük olan takım üstte yer alır. Yenilen gol atılandan fazlaysa averaj eksi olur. (s. 51)"
+ ],
+ "akildaKalsin": [
+  "Sayı doğrusunda sağdaki sayı büyüktür; dikey sayı doğrusunda yukarıdaki büyüktür.",
+  "Negatif < 0 < pozitif. Her pozitif sayı her negatif sayıdan büyüktür.",
+  "İki negatif sayıdan 0'a daha uzak olan küçüktür: eksiler ters sıralanır.",
+  "Paydalar eşitse paya bak; değilse paydaları ya da payları eşitle.",
+  "Önce kısa yol: işaret, tam kısım, 0'a, [[1/2]]'ye ve 1'e yakınlık, ondalık gösterim.",
+  "İki rasyonel sayı arasında her zaman başka bir rasyonel sayı vardır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "−100 mü büyük, −99 mu?",
+   "cevap": "−99 büyüktür. −100, 0'a daha uzaktır ve sayı doğrusunda −99'un solundadır. (s. 51)"
+  },
+  {
+   "soru": "Paylar eşitse hangisi büyük?",
+   "cevap": "Paydası küçük olan. [[2/3]] bütünü 3'e, [[2/5]] 5'e böler; 3'e bölünen pastanın dilimleri daha büyüktür. (s. 55–56)"
+  },
+  {
+   "soru": "−1 ile 0 arasında kaç rasyonel sayı var?",
+   "cevap": "Sayamayacağımız kadar çok! İki sayı arasına hep yeni bir sayı yerleştirebiliriz; paydayı büyüttükçe yenileri çıkar. (s. 59–60)"
+  },
+  {
+   "soru": "Isı hangi yöne akar?",
+   "cevap": "Sıcaklığı yüksek olandan düşük olana. −3 °C'taki bir nesneden −7 °C'taki nesneye doğru akar, çünkü −3 > −7. (s. 61)"
+  },
+  {
+   "soru": "Averaj eksi olabilir mi?",
+   "cevap": "Evet. Yenilen goller atılan gollerden fazlaysa averaj eksidir. Puanlar eşitse −1 averajlı takım, −2 averajlı takımın üstündedir. (s. 51)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "[[-1/2]] ile [[-1/3]] sayılarından hangisi büyüktür? Nasıl karar verdiğini anlat.",
+   "ornekCevap": "[[-1/3]] daha büyüktür. Eksileri silince [[1/2]] > [[1/3]]. Negatiflerde sıra döner; [[-1/2]] 0'a daha uzak olduğu için daha küçüktür.",
+   "anahtarlar": [
+    "uzak",
+    "sıfır",
+    "ters",
+    "dön",
+    "sol"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kitapta Mars'ın yüzey sıcaklığı −65 °C, Neptün'ünki −200 °C. Hangisi daha sıcaktır?",
+   "secenekler": [
+    "Mars",
+    "Neptün",
+    "İkisi eşittir"
+   ],
+   "dogru": 0,
+   "ipucu": "Daha sıcak olan, sayı doğrusunda daha sağda olandır.",
+   "aciklama": "−65 > −200: Mars daha sıcaktır. (s. 50)",
+   "kavram": "Sağdaki Büyüktür"
+  },
+  {
+   "soru": "−3'ten büyük olan en küçük tam sayıya dokun.",
+   "nokta": -2,
+   "sayiDogrusu": {
+    "min": -6,
+    "max": 3
+   },
+   "ipucu": "−3'ten büyük sayılar onun sağındadır. Sağdaki ilk tam sayı hangisi?",
+   "aciklama": "−3'ün hemen sağındaki tam sayı −2'dir. (s. 51)",
+   "kavram": "Sağdaki Büyüktür"
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "[[-5/6]] > [[1/8]]",
+    "0 < [[-2/7]]",
+    "[[-9/4]] < [[1/9]]"
+   ],
+   "dogru": 2,
+   "ipucu": "Her seçenekte işaretlere bak. Negatif mi büyük, pozitif mi?",
+   "aciklama": "[[-9/4]] negatif, [[1/9]] pozitif. Negatif her zaman küçüktür. (s. 53)",
+   "kavram": "Negatif, Sıfır, Pozitif"
+  },
+  {
+   "soru": "Hangisi en küçüktür?",
+   "secenekler": [
+    "−7",
+    "−1",
+    "−12"
+   ],
+   "dogru": 2,
+   "ipucu": "Hepsi negatif. 0'a en uzak olanı bul.",
+   "aciklama": "−12, 0'a en uzak olandır; en küçüğü odur. (s. 51)",
+   "kavram": "Negatiflerde Uzak Olan Küçük"
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "[[-3/8]] < [[-5/8]]",
+    "[[-5/8]] < [[-3/8]]",
+    "[[-5/8]] = [[-3/8]]"
+   ],
+   "dogru": 1,
+   "ipucu": "Eksileri sil: [[5/8]] mi büyük, [[3/8]] mü? Negatif olunca sıra döner.",
+   "aciklama": "[[5/8]] > [[3/8]], eksi gelince [[-5/8]] < [[-3/8]]. (s. 53)",
+   "kavram": "Negatiflerde Uzak Olan Küçük"
+  },
+  {
+   "soru": "İki takımın puanı eşit. A takımının averajı −2. B takımı sıralamada A'nın üstünde ise B'nin averajı en az kaç olabilir? (Averaj bir tam sayıdır.)",
+   "cevap": "-1",
+   "ipucu": "B'nin averajı −2'den büyük olmalı. −2'den büyük en küçük tam sayı hangisi?",
+   "aciklama": "−2'den büyük en küçük tam sayı −1'dir. (s. 51)",
+   "sayiDogrusu": {
+    "min": -5,
+    "max": 2
+   },
+   "kavram": "Sağdaki Büyüktür",
+   "yardim": {
+    "hatirla": "Sayı doğrusunda sağdaki sayı büyüktür. Averajı büyük olan takım üstte yer alır.",
+    "adimlar": [
+     "B, A'nın üstünde: B'nin averajı A'nınkinden büyük olmalı.",
+     "Sayı doğrusunda −2'yi bul. Ondan büyük sayılar sağında.",
+     "−2'nin hemen sağındaki tam sayı hangisi?"
+    ]
+   }
+  },
+  {
+   "soru": "Kitaptaki basketbolcular atışlarının [[5/12]], [[3/8]] ve [[2/6]] kadarını sayıya çevirdi. Büyükten küçüğe sıralama hangisidir?",
+   "secenekler": [
+    "[[5/12]] > [[3/8]] > [[2/6]]",
+    "[[2/6]] > [[3/8]] > [[5/12]]",
+    "[[3/8]] > [[5/12]] > [[2/6]]"
+   ],
+   "dogru": 0,
+   "ipucu": "Payları 30 yap: [[30/72]], [[30/80]], [[30/90]]. Paylar eşitse paydası küçük olan büyüktür.",
+   "aciklama": "[[30/72]] > [[30/80]] > [[30/90]], yani [[5/12]] > [[3/8]] > [[2/6]]. (s. 55–56)",
+   "kavram": "Paydaları ya da Payları Eşitle",
+   "yardim": {
+    "adimlar": [
+     "Payları eşitle: 5, 3 ve 2'nin hepsi 30'a genişletilebilir.",
+     "[[5/12]] = [[30/72]], [[3/8]] = [[30/80]], [[2/6]] = [[30/90]].",
+     "Paylar eşitse paydası küçük olan büyüktür."
+    ]
+   }
+  },
+  {
+   "soru": "[[-7/3]] sayısından küçük olan en büyük tam sayı kaçtır?",
+   "cevap": "-3",
+   "ipucu": "[[-7/3]] = [[-2 1/3]]. Hangi iki tam sayı arasında? Küçük olan solda.",
+   "aciklama": "[[-7/3]] = [[-2 1/3]], −2 ile −3 arasındadır. Ondan küçük en büyük tam sayı −3'tür. (s. 60)",
+   "sayiDogrusu": {
+    "min": -4,
+    "max": 0,
+    "bolme": 3,
+    "isaretler": [
+     {
+      "x": -2.3333333333333335,
+      "etiket": "−7/3",
+      "renk": "#2364c7"
+     }
+    ]
+   },
+   "kavram": "Sağdaki Büyüktür",
+   "yardim": {
+    "adimlar": [
+     "Eksiyi kenara koy: 7 ÷ 3 = 2, kalan 1. Yani [[-7/3]] = [[-2 1/3]].",
+     "[[-2 1/3]] hangi iki tam sayı arasında? −2 ile …",
+     "Küçük olan solda. [[-7/3]]'ün solundaki ilk tam sayı hangisi?",
+     "Eksiyi unutma: önce − tuşu."
+    ]
+   }
+  },
+  {
+   "soru": "[[-3/2]] ile [[-1/2]] arasındaki tam sayıya dokun.",
+   "nokta": -1,
+   "sayiDogrusu": {
+    "min": -3,
+    "max": 1,
+    "bolme": 2
+   },
+   "ipucu": "[[-3/2]] = [[-1 1/2]]. Bu iki sayının arasında hangi tam sayı var?",
+   "aciklama": "[[-3/2]] < −1 < [[-1/2]]. Aradaki tam sayı −1'dir. (s. 59)",
+   "kavram": "Arada Hep Bir Sayı Var"
+  },
+  {
+   "soru": "Paydası 10 olan ve [[2/5]] ile [[3/5]] arasında bulunan kesri yaz.",
+   "cevap": "5/10",
+   "ipucu": "Paydaları 10 yap: [[2/5]] = ?/10, [[3/5]] = ?/10. Aradaki payı bul.",
+   "aciklama": "[[4/10]] < [[5/10]] < [[6/10]]. (s. 60)",
+   "kesir": true,
+   "denk": true,
+   "kavram": "Arada Hep Bir Sayı Var",
+   "yardim": {
+    "adimlar": [
+     "[[2/5]] kesrini paydası 10 olacak şekilde genişlet: 5 × 2 = 10.",
+     "[[3/5]] kesrini de genişlet.",
+     "Paylar arasındaki sayıyı bul ve paydasını 10 yaz."
+    ]
+   }
+  },
+  {
+   "soru": "Bir dalgıç deniz seviyesinin [[3/2]] m altında, bir balık [[5/2]] m altında. Hangisi doğrudur?",
+   "secenekler": [
+    "Dalgıcın konumu daha büyük bir sayıdır.",
+    "Balığın konumu daha büyük bir sayıdır.",
+    "İkisi eşittir."
+   ],
+   "dogru": 0,
+   "ipucu": "Konumları yaz: [[-3/2]] ve [[-5/2]]. Dikey sayı doğrusunda hangisi daha yukarıda?",
+   "aciklama": "[[-3/2]] > [[-5/2]]. Dalgıç daha yukarıda, sayısı daha büyük. (s. 54)",
+   "kavram": "Dikey Sayı Doğrusu"
+  },
+  {
+   "soru": "Hangisi [[1/2]]'den büyüktür?",
+   "secenekler": [
+    "[[4/9]]",
+    "[[3/7]]",
+    "[[5/8]]"
+   ],
+   "dogru": 2,
+   "ipucu": "Paydanın yarısını bul. Pay, paydanın yarısından büyük mü?",
+   "aciklama": "8'in yarısı 4; 5 > 4 olduğu için [[5/8]] > [[1/2]]. [[4/9]] ve [[3/7]] yarıdan küçüktür. (s. 57)",
+   "kavram": "Kısa Yollar"
+  }
+ ]
+}

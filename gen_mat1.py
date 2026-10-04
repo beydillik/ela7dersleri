@@ -874,6 +874,615 @@ def u1k3():
     }
 
 
+# ---------- u1k4 çizimleri ----------
+def devir_svg(x, y, tam, devir, renk="#f5f6fa", boy=20):
+    """SVG içinde devirli ondalık: tam kısım + üstü çizili devreden rakamlar (sola yaslı)."""
+    g = txt(x, y, tam, renk, boy, hiza="start")
+    gen = boy * 0.62
+    x2 = x + len(tam) * gen
+    g += txt(x2, y, devir, renk, boy, hiza="start")
+    g += f"<line x1='{x2 + 1}' y1='{y - boy * 0.82}' x2='{x2 + len(devir) * gen - 1}' y2='{y - boy * 0.82}' stroke='{renk}' stroke-width='2.4' stroke-linecap='round'/>"
+    return g
+
+
+def svg_h_ondalik():
+    g = "<rect x='14' y='26' width='92' height='40' rx='8' fill='#2b355c'/>"
+    g += txt(28, 56, "0", "#f5f6fa", 24) + txt(44, 56, ",", "#f2c14e", 24) + txt(62, 56, "2", OB, 24) + txt(86, 56, "5", NB, 24)
+    g += txt(62, 82, "onda", OB, 10) + txt(86, 82, "yüzde", NB, 10)
+    g += txt(60, 106, "= 25/100", "#f5f6fa", 14)
+    return bg(g)
+
+
+def svg_h_genislet():
+    g = kesir_svg(26, 48, "1", "4", "#f5f6fa", 20) + kesir_svg(94, 48, "25", "100", "#f5f6fa", 18)
+    g += "<path d='M44 58 Q60 40 74 58' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M74 58 l-1 -9 -6 5z' fill='#f2c14e'/>"
+    g += txt(60, 36, "×25", "#f2c14e", 13) + txt(60, 104, "üstü ve altı", "#9aa3bf", 10)
+    return bg(g)
+
+
+def svg_h_bolunme():
+    g = f"<circle cx='36' cy='46' r='22' fill='{OB}'/>" + txt(36, 54, "2", "#1b2340", 24)
+    g += f"<circle cx='84' cy='46' r='22' fill='{NB}'/>" + txt(84, 54, "5", "#1b2340", 24)
+    g += txt(36, 92, "çift", "#f5f6fa", 11) + txt(84, 92, "0 ya da 5", "#f5f6fa", 11)
+    g += txt(60, 110, "son rakama bak", "#9aa3bf", 10)
+    return bg(g)
+
+
+def svg_bolme():
+    g = kesir_svg(30, 54, "1", "5", "#f5f6fa", 26)
+    g += txt(60, 64, "=", "#f2c14e", 22)
+    g += txt(92, 64, "1÷5", "#f5f6fa", 20)
+    g += "<rect x='22' y='86' width='76' height='22' rx='11' fill='#f2c14e'/>" + txt(60, 102, "= 0,2", "#1b2340", 14)
+    return bg(g)
+
+
+def svg_onluk():
+    g = ""
+    for r in range(10):
+        for c in range(10):
+            g += f"<rect x='{20 + c * 8}' y='{14 + r * 8}' width='7' height='7' fill='{OB if r * 10 + c < 25 else '#2b355c'}'/>"
+    g += txt(60, 108, "25/100 = 0,25", "#f5f6fa", 13)
+    return bg(g)
+
+
+def svg_sonlu():
+    g = "<rect x='14' y='30' width='92' height='36' rx='10' fill='#2b355c'/>" + txt(56, 56, "0,25", "#f5f6fa", 24)
+    g += "<circle cx='92' cy='48' r='9' fill='#5fd08f'/><path d='M87 48 l4 4 7 -8' stroke='#1b2340' stroke-width='3' fill='none' stroke-linecap='round'/>"
+    g += txt(60, 92, "bölme bitti", "#5fd08f", 13)
+    return bg(g)
+
+
+def svg_devir():
+    g = devir_svg(22, 58, "0,", "3", "#f5f6fa", 30)
+    g += txt(78, 58, "=", "#f2c14e", 22)
+    g += txt(60, 92, "0,3333…", NB, 16)
+    g += f"<path d='M88 30 a14 14 0 1 1 -4 -10' stroke='{NB}' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M84 20 l-1 -8 8 4z' fill='{NB}'/>"
+    return bg(g)
+
+
+def svg_25():
+    g = kesir_svg(30, 40, "7", "20", "#f5f6fa", 18)
+    g += txt(66, 34, "20 ÷ 2 = 10", "#f5f6fa", 9, 700) + txt(66, 48, "10 ÷ 2 = 5", "#f5f6fa", 9, 700) + txt(66, 62, "5 ÷ 5 = 1", "#f5f6fa", 9, 700)
+    g += "<rect x='22' y='80' width='76' height='24' rx='12' fill='#5fd08f'/>" + txt(60, 97, "1 kaldı: sonlu", "#1b2340", 11)
+    return bg(g)
+
+
+def svg_ond_kesir():
+    g = txt(60, 42, "1,32", "#f5f6fa", 24)
+    g += "<path d='M60 52 v14' stroke='#f2c14e' stroke-width='3'/><path d='M60 70 l-5 -7 h10z' fill='#f2c14e'/>"
+    g += kesir_svg(60, 90, "132", "100", "#f5f6fa", 16)
+    return bg(g)
+
+
+def svg_dev_kesir():
+    g = devir_svg(16, 50, "0,", "3", "#f5f6fa", 26)
+    g += txt(64, 50, "=", "#f2c14e", 22) + kesir_svg(92, 42, "3", "9", "#f5f6fa", 22)
+    g += "<rect x='16' y='86' width='88' height='22' rx='11' fill='#2b355c'/>" + txt(60, 101, "devreden → 9", "#f2c14e", 11)
+    return bg(g)
+
+
+# =================================================================
+def u1k4():
+    sd = lambda mn, mx, bol, **ek: dict({"min": mn, "max": mx, "bolme": bol}, **ek)
+    return {
+        "id": "u1k4", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Rasyonel Sayıların Farklı Gösterimleri", "sayfalar": "s. 41–49",
+        "giris": "Bir sayıyı iki türlü yazabiliriz: kesirle ([[1/5]]) ya da virgülle (0,2). Bu konuda kesirleri ondalık gösterime, ondalık gösterimleri kesre çevireceğiz. Bazı bölmelerin hiç bitmediğini de göreceğiz!",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu ondalık sayılar, genişletme ve sadeleştirme bilgilerinin üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+            "maddeler": [
+                {"ad": "Ondalık gösterim ve basamaklar", "sinif": "Önceki yıllar", "svg": svg_h_ondalik(),
+                 "anlatim": "Virgülden sonraki ilk basamak onda birler, ikinci basamak yüzde birler basamağıdır. 0,7 = [[7/10]], yani onda yedi. 0,25 = [[25/100]], yani yüzde yirmi beş.",
+                 "akilda": "1 basamak = 10, 2 basamak = 100",
+                 "ornek": {"problem": "0,25 sayısını kesir olarak yazalım.", "adimlar": [
+                     {"metin": "Virgülden sonra kaç basamak var? 2 basamak: 2 ve 5.", "islem": "2 basamak"},
+                     {"metin": "2 basamak varsa payda 100 olur.", "islem": "Payda = 100"},
+                     {"metin": "Virgülü sil, sayıyı paya yaz.", "islem": "0,25 = [[25/100]]"}]},
+                 "sorular": [
+                     S("0,3 hangi kesre eşittir?", ["[[3/10]]", "[[3/100]]", "[[1/3]]"], 0,
+                       "Virgülden sonra 1 basamak var. 1 basamak olunca payda kaç olur?", "0,3 = onda üç = [[3/10]]."),
+                     G("[[45/100]] kesrini ondalık gösterimle yaz.", "0,45", "Payda 100: virgülden sonra 2 basamak olur. Önce 0, sonra virgül.",
+                       "[[45/100]] = yüzde kırk beş = 0,45.", denk=True)]},
+                {"ad": "Genişletme", "sinif": "Önceki yıllar", "svg": svg_h_genislet(),
+                 "anlatim": "Bir kesrin payını ve paydasını aynı sayıyla çarparsak kesrin değeri değişmez. Buna genişletme denir: [[1/4]] = [[25/100]].",
+                 "akilda": "Üstü ve altı aynı sayıyla çarp",
+                 "ornek": {"problem": "[[3/5]] kesrinin paydasını 10 yapalım.", "adimlar": [
+                     {"metin": "5'i kaçla çarparsak 10 olur?", "islem": "5 × 2 = 10"},
+                     {"metin": "Payı da aynı sayıyla çarp.", "islem": "3 × 2 = 6"},
+                     {"metin": "Yeni kesri yaz.", "islem": "[[3/5]] = [[6/10]]"}]},
+                 "sorular": [
+                     S("[[2/5]] kesrinin paydası 10 olan denki hangisidir?", ["[[2/10]]", "[[4/10]]", "[[5/10]]"], 1,
+                       "5 × 2 = 10. Payı da 2 ile çarp.", "2 × 2 = 4, 5 × 2 = 10: [[2/5]] = [[4/10]]."),
+                     G("[[1/4]] kesrinin paydasını 100 yapmak için pay ve paydayı kaçla çarparız?", "25", "4 × ? = 100. 25'er 25'er say: 25, 50, 75, 100.",
+                       "4 × 25 = 100. Pay ve payda 25 ile çarpılır: [[1/4]] = [[25/100]].")]},
+                {"ad": "Sadeleştirme", "sinif": "Önceki yıllar", "svg": svg_h_denk(),
+                 "anlatim": "Pay ve paydayı aynı sayıya bölersek kesrin değeri değişmez. Artık birlikte bölünemiyorlarsa kesir en sade hâlindedir: [[6/10]] = [[3/5]].",
+                 "akilda": "Üstü ve altı aynı sayıya böl",
+                 "ornek": {"problem": "[[25/100]] kesrini sadeleştirelim.", "adimlar": [
+                     {"metin": "25 ve 100'ün ikisi de 25'e bölünür.", "islem": "25 ÷ 25 = 1   ve   100 ÷ 25 = 4"},
+                     {"metin": "Yeni kesri yaz. 1 ve 4 birlikte bölünemez: en sade hâl.", "islem": "[[25/100]] = [[1/4]]"}]},
+                 "sorular": [
+                     S("[[6/10]] kesrinin en sade hâli hangisidir?", ["[[3/5]]", "[[6/5]]", "[[1/2]]"], 0,
+                       "6 ve 10'un ikisi de 2'ye bölünür.", "6 ÷ 2 = 3, 10 ÷ 2 = 5: [[3/5]]."),
+                     G("[[50/100]] kesrinin en sade hâlini yaz.", "1/2", "50 ve 100'ün ikisi de 50'ye bölünür. Kesir çizgisi için / tuşunu kullan.",
+                       "50 ÷ 50 = 1, 100 ÷ 50 = 2: [[1/2]].", kesir=True)]},
+                {"ad": "2'ye ve 5'e bölünebilme", "sinif": "Önceki yıllar", "svg": svg_h_bolunme(),
+                 "anlatim": "Son rakamı çift olan (0, 2, 4, 6, 8) sayılar 2'ye tam bölünür. Son rakamı 0 ya da 5 olan sayılar 5'e tam bölünür.",
+                 "akilda": "Son rakama bak",
+                 "ornek": {"problem": "40 sayısı 2'ye ve 5'e bölünür mü?", "adimlar": [
+                     {"metin": "Son rakam 0. 0 çift bir rakamdır: 2'ye bölünür.", "islem": "40 ÷ 2 = 20"},
+                     {"metin": "Son rakam 0: 5'e de bölünür.", "islem": "40 ÷ 5 = 8"}]},
+                 "sorular": [
+                     S("Hangisi 5'e tam bölünür?", ["12", "25", "33"], 1, "Son rakamı 0 ya da 5 olan sayıyı ara.", "25'in son rakamı 5: 25 ÷ 5 = 5."),
+                     S("Hangisi 2'ye tam bölünür?", ["15", "9", "14"], 2, "Son rakamı çift olan sayıyı ara.", "14'ün son rakamı 4, çifttir: 14 ÷ 2 = 7.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Kesir Çizgisi Bölmedir", "renk": "#1f9e8f", "svg": svg_bolme(),
+             "aciklama": "Kesir çizgisi bölme demektir: [[1/5]] = 1 ÷ 5. Payı paydaya bölersek sayının virgüllü yazılışını, yani ondalık gösterimini buluruz.",
+             "ek": "Kitaptaki kutu sütün hacmi [[1/5]] L. 1 ÷ 5 = 0,2 olduğu için sütün hacmi 0,2 L'dir. Aynı sayının iki farklı gösterimi: [[1/5]] = 0,2. (s. 41)",
+             "akilda": "Çizgi = bölme",
+             "cozum": {"baslik": "[[1/2]] kaç eder?", "problem": "[[1/2]] kesrini ondalık gösterimle yazalım.",
+                       "adimlar": [
+                           {"metin": "Kesir çizgisi bölmedir. Payı paydaya böleceğiz.", "islem": "[[1/2]] = 1 ÷ 2"},
+                           {"metin": "1'in içinde 2 yok. Bölüme 0 yaz, virgül koy, 1'in yanına 0 ekle: 10 oldu.", "islem": "0,…   10 ÷ 2"},
+                           {"metin": "10'un içinde 2 tam 5 kere var. Kalan 0: bölme bitti.", "islem": "10 ÷ 2 = 5   →   0,5"}],
+                       "sonuc": "[[1/2]] = 0,5. Yarım, onda beş demektir."},
+             "soru": S("[[3/4]] kesrindeki kesir çizgisi hangi işlemi gösterir?", ["3 × 4", "4 − 3", "3 ÷ 4"], 2,
+                       "Kesir çizgisi hangi işlem demekti? Pay, paydaya …", "Kesir çizgisi bölmedir: [[3/4]] = 3 ÷ 4 = 0,75. (s. 41)")},
+            {"ad": "Paydayı 10, 100, 1000 Yap", "renk": "#e8590c", "svg": svg_onluk(),
+             "aciklama": "Paydayı genişletip 10, 100 ya da 1000 yapabiliyorsak ondalık gösterimi bulmak çok kolaydır: [[1/4]] = [[25/100]] = 0,25.",
+             "ek": "Payda 10 ise virgülden sonra 1 basamak, 100 ise 2 basamak, 1000 ise 3 basamak olur. Kitaptaki madenî para [[1/4]] cm kalınlığında: 0,25 cm. (s. 41, 44)",
+             "akilda": "10, 100, 1000'e genişlet",
+             "cozum": {"baslik": "[[7/20]] kesrini çevirelim", "problem": "[[7/20]] kesrini ondalık gösterimle yazalım.",
+                       "adimlar": [
+                           {"metin": "20'yi kaçla çarparsak 10, 100 ya da 1000 olur? 20 × 5 = 100.", "islem": "20 × 5 = 100"},
+                           {"metin": "Payı da 5 ile çarp.", "islem": "7 × 5 = 35"},
+                           {"metin": "Yeni kesir: [[35/100]]. Payda 100: virgülden sonra 2 basamak.", "islem": "[[7/20]] = [[35/100]] = 0,35"}],
+                       "sonuc": "[[7/20]] = 0,35. Paydayı 100 yapınca iş kolaylaştı."},
+             "sende": {"baslik": "Şimdi sen çevir", "problem": "[[3/25]] kesrini ondalık gösterimle yazalım.",
+                       "adimlar": [
+                           {"metin": "Paydayı 100 yapmak için 25'i kaçla çarpmalıyız?",
+                            "soru": G("25 × ? = 100", "4", "25'er 25'er say: 25, 50, 75, 100. Kaç kere saydın?", "25 × 4 = 100."),
+                            "islem": "25 × 4 = 100"},
+                           {"metin": "Payı da aynı sayıyla çarp.",
+                            "soru": G("3 × 4 kaçtır? Yeni payı yaz.", "12", "3'ü 4 kere topla: 3 + 3 + 3 + 3.", "3 × 4 = 12. Yeni kesir [[12/100]]."),
+                            "islem": "[[3/25]] = [[12/100]]"},
+                           {"metin": "Payda 100: virgülden sonra 2 basamak.",
+                            "soru": G("[[12/100]] kesrini ondalık gösterimle yaz.", "0,12", "Önce 0, sonra virgül, sonra 1 ve 2.", "[[12/100]] = 0,12.", denk=True),
+                            "islem": "0,12"}],
+                       "sonuc": "Harika! [[3/25]] = [[12/100]] = 0,12."},
+             "soru": G("[[3/5]] kesrini ondalık gösterimle yaz.", "0,6", "5'i 10 yapmak için 2 ile çarp. Payı da 2 ile çarp.",
+                       "[[3/5]] = [[6/10]] = 0,6. (s. 44)", denk=True)},
+            {"ad": "Sonlu Ondalık Gösterim", "renk": "#2f9e44", "svg": svg_sonlu(),
+             "aciklama": "Bazı bölmeler bir yerde biter. Virgülden sonra belli sayıda basamak kalır: 0,2 ya da 0,25 gibi. Buna sonlu ondalık gösterim denir.",
+             "ek": "Kitapta [[72/15]] TL'lik fon kartonu 4,8 TL, [[185/2]] g'lık el sabunu 92,5 g ediyor. İkisinde de bölme bitiyor. (s. 41–42)",
+             "akilda": "Bölme biter = sonlu",
+             "soru": S("Hangisi sonlu ondalık gösterimdir?", ["0,333…", "0,75", "0,1666…"], 1,
+                       "Hangisinde rakamlar bitiyor, sonunda üç nokta yok?", "0,75'te bölme bitmiş: sonludur. Üç noktalılarda rakamlar hiç bitmez. (s. 42)")},
+            {"ad": "Devirli Ondalık Gösterim", "renk": "#3274d6", "svg": svg_devir(),
+             "aciklama": "Bazı bölmeler hiç bitmez. Virgülden sonra aynı rakam ya da rakamlar sonsuza kadar tekrar eder: [[1/3]] = 0,333… Buna devirli ondalık gösterim denir.",
+             "ek": "Tekrar eden (devreden) rakamların üstüne çizgi çekilir: 0,333… = 0,[[d:3]]. Kitaptaki küçük su şişesi [[1/3]] L, yani 0,[[d:3]] L'dir. (s. 41–42)",
+             "akilda": "Rakam tekrar eder, üstüne çizgi",
+             "cozum": {"baslik": "1 ÷ 3 neden bitmiyor?", "problem": "[[1/3]] kesrini ondalık gösterimle yazalım.",
+                       "adimlar": [
+                           {"metin": "1'in içinde 3 yok. Bölüme 0 ve virgül yaz, 1'in yanına 0 ekle: 10.", "islem": "0,…   10 ÷ 3"},
+                           {"metin": "10'un içinde 3, 3 kere var. 3 × 3 = 9. Kalan 1.", "islem": "0,3   kalan 1"},
+                           {"metin": "Kalan yine 1! Yanına 0 ekle: yine 10. Yine 3, yine kalan 1…", "islem": "0,33   kalan 1"},
+                           {"metin": "Bölme hiç bitmeyecek. Tekrar eden 3'ün üstüne çizgi çekeriz.", "islem": "0,333… = 0,[[d:3]]"}],
+                       "sonuc": "[[1/3]] = 0,[[d:3]]. Kalan hep aynı gelirse rakamlar da hep aynı gelir."},
+             "soru": S("0,4545… sayısı devir çizgisiyle nasıl yazılır?", ["0,[[d:45]]", "0,4[[d:5]]", "0,[[d:4]]5"], 0,
+                       "Hangi rakamlar birlikte tekrar ediyor: yalnız 5 mi, 45 mi?", "45, 45, 45… diye tekrar ediyor. Çizgi ikisinin de üstüne çekilir: 0,[[d:45]]. (s. 45)")},
+            {"ad": "Sonlu mu, Devirli mi?", "renk": "#7b4fc9", "svg": svg_25(),
+             "aciklama": "Kesri önce en sade hâline getir, sonra paydaya bak. Paydada 2 ve 5'ten başka asal çarpan (3, 7, 11… gibi) yoksa sonlu; varsa devirli ondalık gösterim olur.",
+             "ek": "Kolay yol: Paydayı 2'ye ve 5'e bölebildiğin kadar böl. Geriye 1 kalırsa sonlu, başka bir sayı kalırsa devirlidir. Her rasyonel sayının mutlaka bir ondalık gösterimi vardır. (s. 43)",
+             "akilda": "Paydada yalnız 2 ve 5 → sonlu",
+             "cozum": {"baslik": "İkisinin de paydası 15, ama…", "problem": "Kitapta fon kartonu [[72/15]] TL, kurşun kalem [[92/15]] g. Paydaları aynı. Hangisi sonlu, hangisi devirli?",
+                       "adimlar": [
+                           {"metin": "Önce sadeleştir. 72 ve 15'in ikisi de 3'e bölünür.", "islem": "[[72/15]] = [[24/5]]"},
+                           {"metin": "Payda 5. 5'i 5'e böl: 1 kaldı. Sonlu!", "islem": "[[24/5]] = 4,8"},
+                           {"metin": "[[92/15]] sadeleşmez. 15'i 5'e böl: 3 kaldı. 3 de asal çarpan. Devirli!", "islem": "[[92/15]] = 6,1333… = 6,1[[d:3]]"}],
+                       "sonuc": "Paydalar aynı olsa da sonuç farklı. Sırrı sadeleştirmede: [[72/15]] sadeleşince paydadaki 3 gitti. (s. 42–43)"},
+             "sende": {"baslik": "Önce sadeleştir!", "problem": "[[3/12]] sayısının ondalık gösterimi sonlu mu, devirli mi?",
+                       "adimlar": [
+                           {"metin": "Önce en sade hâle getir.",
+                            "soru": G("[[3/12]] kesrinin en sade hâlini yaz.", "1/4", "3 ve 12'nin ikisi de 3'e bölünür. Kesir çizgisi için / tuşu.",
+                                      "3 ÷ 3 = 1, 12 ÷ 3 = 4: [[1/4]].", kesir=True),
+                            "islem": "[[3/12]] = [[1/4]]"},
+                           {"metin": "Paydayı 2'ye bölebildiğin kadar böl: 4 ÷ 2 = 2, 2 ÷ 2 = …",
+                            "soru": G("Geriye hangi sayı kaldı?", "1", "2 ÷ 2 kaçtır?", "2 ÷ 2 = 1. Geriye 1 kaldı."),
+                            "islem": "4 → 2 → 1"},
+                           {"metin": "Geriye 1 kaldı. O hâlde?",
+                            "soru": S("[[3/12]] sayısının ondalık gösterimi nasıldır?", ["Sonlu", "Devirli", "Ondalık gösterimi yoktur"], 0,
+                                      "Geriye 1 kalırsa sonlu, başka sayı kalırsa devirli.", "Geriye 1 kaldı: sonlu. [[3/12]] = [[1/4]] = 0,25."),
+                            "islem": "Sonlu: 0,25"}],
+                       "sonuc": "Harika! 12'de 3 vardı ama sadeleşince gitti. Bu yüzden önce sadeleştiriyoruz."},
+             "soru": S("[[1/6]] sayısının ondalık gösterimi nasıldır?", ["Sonlu", "Devirli", "Ondalık gösterimi yoktur"], 1,
+                       "6'yı 2'ye böl. Geriye 1 mi kalıyor, başka bir sayı mı?", "6 ÷ 2 = 3. Geriye 3 kaldı: devirli. [[1/6]] = 0,1[[d:6]]. (s. 43)")},
+            {"ad": "Ondalıktan Kesre", "renk": "#1d6fa3", "svg": svg_ond_kesir(),
+             "aciklama": "Virgülden sonra kaç basamak varsa paydaya 1 ve yanına o kadar 0 yazarız. Virgülü silip sayıyı paya yazarız. Sonra sadeleştiririz.",
+             "ek": "Kitapta bir öğrencinin boyu 1,32 m = [[132/100]] m = [[33/25]] m. Termostaki kahve 0,7 L = [[7/10]] L. (s. 44)",
+             "akilda": "Basamak kadar sıfır",
+             "soru": G("Termostaki kahve 0,7 L. Bu sayıyı kesir olarak yaz.", "7/10", "Virgülden sonra 1 basamak var: payda 10. Kesir çizgisi için / tuşu.",
+                       "0,7 = [[7/10]]. (s. 44)", kesir=True, denk=True)},
+            {"ad": "Devirliden Kesre", "renk": "#c92a2a", "svg": svg_dev_kesir(),
+             "aciklama": "Paya, sayının tamamından (virgülsüz ve çizgisiz) devretmeyen kısmı çıkarırız. Paydaya, devreden her basamak için bir 9, virgülden sonra devretmeyen her basamak için bir 0 yazarız.",
+             "ek": "En kolayları: 0,[[d:3]] = [[3/9]], 0,[[d:26]] = [[26/99]]. Devretmeyen basamak varsa: 0,1[[d:6]] = [[15/90]], çünkü 16 − 1 = 15; bir 9, bir 0. (s. 45–46)",
+             "akilda": "Devreden 9, devretmeyen 0",
+             "cozum": {"baslik": "0,1[[d:6]] kaçtır?", "problem": "0,1[[d:6]] sayısını kesre çevirelim.",
+                       "adimlar": [
+                           {"metin": "Sayının tamamını virgülsüz, çizgisiz yaz: 016, yani 16.", "islem": "Tamamı: 16"},
+                           {"metin": "Devretmeyen kısmı yaz: çizgisiz kısım 01, yani 1.", "islem": "Devretmeyen: 1"},
+                           {"metin": "Pay: tamamından devretmeyeni çıkar.", "islem": "Pay = 16 − 1 = 15"},
+                           {"metin": "Payda: devreden 1 basamak → bir 9. Virgülden sonra devretmeyen 1 basamak → bir 0.", "islem": "Payda = 90"},
+                           {"metin": "Kesri yaz ve sadeleştir.", "islem": "[[15/90]] = [[1/6]]"}],
+                       "sonuc": "0,1[[d:6]] = [[15/90]] = [[1/6]]. Kontrol: [[1/6]] gerçekten 0,1666… çıkar."},
+             "sende": {"baslik": "Kitaptaki sayıyı sen çevir", "problem": "0,[[d:4]] sayısını kesre çevirelim.",
+                       "adimlar": [
+                           {"metin": "Virgülden sonra devretmeyen basamak var mı?",
+                            "soru": S("0,[[d:4]] sayısında virgülden sonra devretmeyen basamak var mı?", ["Yok, hepsi devrediyor", "Var, 1 tane", "Var, 2 tane"], 0,
+                                      "Çizgi hangi rakamın üstünde? Virgülden sonra çizgisiz rakam var mı?", "Virgülden sonra yalnız 4 var ve o devrediyor."),
+                            "islem": "Devretmeyen yok → 0 yazılmaz"},
+                           {"metin": "Pay: tamamı 4, devretmeyen kısım 0.",
+                            "soru": G("Pay kaç olur?", "4", "4 − 0 = ?", "4 − 0 = 4."),
+                            "islem": "Pay = 4"},
+                           {"metin": "Payda: devreden 1 basamak var.",
+                            "soru": G("Payda kaç olur?", "9", "Devreden her basamak için bir 9 yazılır.", "1 devreden basamak → 9."),
+                            "islem": "0,[[d:4]] = [[4/9]]"}],
+                       "sonuc": "Harika! 0,[[d:4]] = [[4/9]]. (s. 46)"},
+             "soru": S("0,[[d:5]] hangi kesre eşittir?", ["[[5/10]]", "[[5/99]]", "[[5/9]]"], 2,
+                       "Devreden kaç basamak var? Her biri için bir 9 yazılır.", "Devreden 1 basamak → payda 9: 0,[[d:5]] = [[5/9]]. (s. 46)")}
+        ],
+        "biliyorMusun": [
+            "Bilardoda 15 numaralı top ve bir beyaz top vardır. Kitaptaki Ahmet ilk atışında 15 topun 7'sini cebe sokuyor: [[7/15]] = 0,4[[d:6]]. (s. 49)",
+            "Kitaptaki madenî para [[1/4]] cm, yani 0,25 cm kalınlığında. 100 tanesini üst üste koysan 25 cm'lik bir kule olur. (s. 41)"],
+        "akildaKalsin": [
+            "Kesir çizgisi bölme demektir: [[1/5]] = 1 ÷ 5 = 0,2.",
+            "Paydayı 10, 100, 1000 yapabiliyorsan ondalık gösterimi bulmak kolaydır.",
+            "Bölme biterse sonlu (0,25), hiç bitmezse devirli (0,[[d:3]]) ondalık gösterim olur.",
+            "En sade hâldeki paydada yalnız 2 ve 5 varsa sonlu; başka asal çarpan varsa devirli.",
+            "Ondalıktan kesre: virgülden sonraki basamak kadar sıfır, sonra sadeleştir.",
+            "Devirliden kesre: devreden basamak kadar 9, devretmeyen kadar 0."],
+        "merakKutusu": [
+            {"soru": "0,999… gerçekten 1'e eşit mi?", "cevap": "Evet. [[1/3]] = 0,[[d:3]]. İki tarafı 3 ile çarparsan 1 = 0,[[d:9]] olur. Kural da aynı sonucu verir: 0,[[d:9]] = [[9/9]] = 1. Kitapta Sena ile Mete bunu tartışıyor. (s. 47–48)"},
+            {"soru": "Her rasyonel sayının ondalık gösterimi var mı?", "cevap": "Evet. Bazılarınınki sonlu, bazılarınınki devirlidir ama hepsinin bir ondalık gösterimi vardır. (s. 43)"},
+            {"soru": "Devir çizgisi neden çekilir?", "cevap": "Rakamlar sonsuza kadar tekrar ettiği için hepsini yazamayız. Çizgi \"bu rakamlar hep tekrar ediyor\" demektir. (s. 42, 45)"},
+            {"soru": "0,3 ile 0,[[d:3]] aynı sayı mı?", "cevap": "Hayır. 0,3 = [[3/10]], 0,[[d:3]] = [[3/9]] = [[1/3]]. 0,[[d:3]] biraz daha büyüktür. (s. 41–42)"},
+            {"soru": "Paydasında 3 olan her kesir devirli mi?", "cevap": "Önce sadeleştir! [[3/12]] sadeleşince [[1/4]] olur, sonludur. [[6/3]] ise 2'dir. Kurala en sade hâle bakarak karar verilir. (s. 43)"}],
+        "dusunVeYaz": [{"soru": "[[1/3]] ve [[1/4]] kesirlerinden hangisinin ondalık gösterimi sonlu, hangisinin devirlidir? Neden?",
+                        "ornekCevap": "[[1/4]] sonludur, çünkü paydası 4'te yalnız 2 var; 4'ü 100'e genişletebilirim: 0,25. [[1/3]] devirlidir, çünkü paydasında 3 var: 1 ÷ 3 hiç bitmez, 0,[[d:3]] olur.",
+                        "anahtarlar": ["sonlu", "devir", "payda", "bitmez", "3"]}],
+        "sorular": [
+            N("[[2/5]] kesrini ondalık gösterime çevir ve sayı doğrusunda yerine dokun.", 0.4, sd(0, 1, 10),
+              "[[2/5]] = 2 ÷ 5. Ya da paydayı 10 yap: 5 × 2 = 10, 2 × 2 = 4. Her küçük parça 0,1.",
+              "[[2/5]] = [[4/10]] = 0,4: 0'dan sağa 4 parça. (s. 41, 44)"),
+            G("[[9/25]] kesrini ondalık gösterimle yaz.", "0,36", "25'i 100 yapmak için kaçla çarparsın? Payı da aynı sayıyla çarp.",
+              "25 × 4 = 100, 9 × 4 = 36: [[9/25]] = [[36/100]] = 0,36. (s. 44)", denk=True),
+            S("Hangisinin ondalık gösterimi devirlidir?", ["[[3/8]]", "[[2/9]]", "[[7/10]]"], 1,
+              "Paydaları 2'ye ve 5'e bölebildiğin kadar böl. Hangisinde 1'den başka sayı kalıyor?",
+              "9'u 2'ye de 5'e de bölemeyiz; 9 = 3 × 3. [[2/9]] devirlidir: 0,[[d:2]]. (s. 43)"),
+            S("Kitapta bir küp şekerin kütlesi [[16/6]] g, yani 2,666… g. Bu sayının doğru yazımı hangisidir?", ["2,[[d:6]]", "2,6", "[[d:2]],6"], 0,
+              "Hangi rakam tekrar ediyor? Çizgi yalnızca tekrar eden rakamın üstüne çekilir.", "6 hep tekrar ediyor: 2,666… = 2,[[d:6]]. (s. 41)"),
+            G("Bir öğrencinin boyu 1,32 m. Bunu paydası 100 olan bir kesir olarak yaz.", "132/100",
+              "Virgülden sonra 2 basamak var. Virgülü sil, sayıyı paya yaz.", "1,32 = [[132/100]]. Sadeleşince [[33/25]] olur. (s. 44)", kesir=True),
+            N("0,6 sayısının yerine dokun.", 0.6, sd(0, 1, 10),
+              "0 ile 1 arası 10 eş parçaya bölündü. Her parça 0,1. 0'dan sağa 6 parça say.", "0,6 = [[6/10]]: 0'dan sağa 6 parça. (s. 44)"),
+            S("[[18/15]] için hangisi doğrudur?", ["Sadeleşince [[6/5]] olur; ondalık gösterimi sonludur.", "Paydasında 3 olduğu için devirlidir.", "Ondalık gösterimi yoktur."], 0,
+              "Önce sadeleştir: 18 ve 15'in ikisi de 3'e bölünür. Sonra paydaya bak.",
+              "[[18/15]] = [[6/5]]. Paydada yalnız 5 var: sonlu. [[6/5]] = 1,2. (s. 43)"),
+            G("Bilardoda Ahmet ikinci atışında masada kalan 8 topun 3'ünü cebe soktu. Bu oranı ondalık gösterimle yaz.", "0,375",
+              "Oran [[3/8]]. 8'i 1000 yapmak için kaçla çarpmalısın? 8 × 125 = 1000.",
+              "[[3/8]] = [[375/1000]] = 0,375. (s. 49)", denk=True),
+            S("0,[[d:26]] hangi kesre eşittir?", ["[[26/100]]", "[[26/90]]", "[[26/99]]"], 2,
+              "Devreden kaç basamak var? Devretmeyen basamak var mı?", "İki basamak devrediyor → 99; devretmeyen yok: 0,[[d:26]] = [[26/99]]. (s. 45)"),
+            S("0,3 ile 0,[[d:3]] için hangisi doğrudur?", ["İkisi aynı sayıdır.", "0,3 = [[3/10]], 0,[[d:3]] = [[3/9]]; farklı sayılardır.", "0,3 devirli bir sayıdır."], 1,
+              "Çizgi ne demekti? 0,3 bitiyor mu, 0,[[d:3]] bitiyor mu?", "0,3 sonludur: [[3/10]]. 0,[[d:3]] = 0,333… = [[3/9]]. Farklı sayılardır. (s. 42, 45)"),
+            G(f"Hava sıcaklığı {M}14,2 °C. Bu sayıyı paydası 10 olan bir kesir olarak yaz.", "-142/10",
+              f"Virgülden sonra 1 basamak var: payda 10. Eksiyi unutma: önce {M} tuşu.", f"{M}14,2 = [[-142/10]]. Sadeleşince [[-71/5]] olur. (s. 44)",
+              kesir=True, kabul=["142/-10"]),
+            S("Kitapta kutu süt [[1/5]] L, küçük su şişesi [[1/3]] L. Hangisi doğrudur?", ["İkisinin de ondalık gösterimi sonludur.", "Süt 0,2 L, su 0,[[d:3]] L'dir.", "Su 0,3 L'dir."], 1,
+              "Paydalara bak: 5 ve 3. Hangisinde 2 ve 5'ten başka asal çarpan var?",
+              "[[1/5]] = 0,2 sonludur. [[1/3]] = 0,[[d:3]] devirlidir. (s. 41–42)")]
+    }
+
+
+# ---------- u1k5 çizimleri ----------
+def svg_sag_buyuk():
+    g = _sd_mini(70, range(-3, 4), 24, 12, etiket=(-3, 0, 3))
+    g += "<path d='M16 42 H104' stroke='#f2c14e' stroke-width='3.5' stroke-linecap='round'/><path d='M106 42 l-9 -5 v10z' fill='#f2c14e'/>"
+    g += txt(60, 30, "büyür", "#f2c14e", 13) + txt(30, 110, "küçük", NB, 11) + txt(92, 110, "büyük", OB, 11)
+    return bg(g)
+
+
+def svg_isaretler():
+    g = f"<rect x='8' y='44' width='34' height='30' rx='15' fill='{NB}'/>" + txt(25, 65, M, "#1b2340", 22)
+    g += txt(50, 66, "&lt;", "#f2c14e", 20) + "<circle cx='66' cy='59' r='14' fill='#f2c14e'/>" + txt(66, 65, "0", "#1b2340", 16)
+    g += txt(84, 66, "&lt;", "#f2c14e", 20) + f"<rect x='92' y='44' width='22' height='30' rx='11' fill='{OB}'/>" + txt(103, 65, "+", "#1b2340", 20)
+    return bg(g)
+
+
+def svg_ters():
+    g = "<line x1='8' y1='78' x2='112' y2='78' stroke='#f5f6fa' stroke-width='3'/>"
+    for x, r in ((12, NB), (60, "#f2c14e"), (108, OB)):
+        g += f"<line x1='{x}' y1='70' x2='{x}' y2='86' stroke='{r}' stroke-width='3'/>"
+    g += txt(12, 102, M + "1", NB, 11) + txt(60, 102, "0", "#f2c14e", 11) + txt(108, 102, "1", OB, 11)
+    g += f"<circle cx='36' cy='78' r='5' fill='{NB}'/><circle cx='50' cy='78' r='5' fill='{NB}'/><circle cx='70' cy='78' r='5' fill='{OB}'/><circle cx='84' cy='78' r='5' fill='{OB}'/>"
+    g += f"<path d='M84 66 Q60 30 36 66' stroke='{NB}' stroke-width='2.5' fill='none' stroke-dasharray='4 3'/><path d='M70 66 Q60 48 50 66' stroke='{NB}' stroke-width='2.5' fill='none' stroke-dasharray='4 3'/>"
+    g += txt(60, 26, "ayna", "#f2c14e", 12)
+    return bg(g)
+
+
+def svg_dikey():
+    g = "<rect x='0' y='46' width='120' height='74' fill='#1d4f7a' opacity='.55'/>"
+    g += "<line x1='30' y1='12' x2='30' y2='110' stroke='#f5f6fa' stroke-width='3'/><path d='M30 8 l-5 8 h10z' fill='#f5f6fa'/>"
+    g += "<line x1='22' y1='46' x2='38' y2='46' stroke='#f2c14e' stroke-width='3'/>" + txt(14, 50, "0", "#f2c14e", 12)
+    g += f"<path d='M58 70 q10 -8 20 0 q-10 8 -20 0z M78 70 l8 -6 v12z' fill='{OB}'/>"
+    g += f"<circle cx='70' cy='98' r='6' fill='{NB}'/><path d='M70 104 v8 M64 108 h12' stroke='{NB}' stroke-width='3' stroke-linecap='round'/>"
+    g += txt(100, 30, "yukarı", "#f2c14e", 10) + txt(100, 42, "büyük", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg_payda_es():
+    g = ""
+    for row, (n, renk) in enumerate(((3, NB), (5, OB))):
+        y = 22 + row * 34
+        for i in range(7):
+            g += f"<rect x='{10 + i * 11}' y='{y}' width='10' height='24' fill='{renk if i < n else '#2b355c'}'/>"
+        g += txt(104, y + 17, f"{n}/7", "#f5f6fa", 11)
+    g += txt(60, 104, "3/7 &lt; 5/7", "#f2c14e", 15)
+    return bg(g)
+
+
+def svg_kisayol():
+    g = "<line x1='12' y1='70' x2='108' y2='70' stroke='#f5f6fa' stroke-width='3'/>"
+    for x, t in ((16, "0"), (60, "½"), (104, "1")):
+        g += f"<line x1='{x}' y1='62' x2='{x}' y2='78' stroke='#f2c14e' stroke-width='3'/>" + txt(x, 96, t, "#f2c14e", 14)
+    g += f"<circle cx='22' cy='70' r='5' fill='{NB}'/><circle cx='68' cy='70' r='5' fill='{OB}'/><circle cx='99' cy='70' r='5' fill='{OB}'/>"
+    g += txt(22, 52, "1/10", NB, 10) + txt(68, 52, "5/9", OB, 10) + txt(99, 40, "9/10", OB, 10)
+    return bg(g)
+
+
+def svg_arada2():
+    g = "<line x1='8' y1='70' x2='112' y2='70' stroke='#f5f6fa' stroke-width='3'/>"
+    g += f"<line x1='24' y1='62' x2='24' y2='78' stroke='{OB}' stroke-width='3'/><line x1='96' y1='62' x2='96' y2='78' stroke='{OB}' stroke-width='3'/>"
+    for x in (42, 60, 78):
+        g += f"<circle cx='{x}' cy='70' r='{5 if x == 60 else 3.5}' fill='#f2c14e'/>"
+    g += "<circle cx='60' cy='46' r='16' fill='none' stroke='#f5f6fa' stroke-width='3'/><path d='M71 57 l12 12' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/>"
+    g += txt(60, 51, "?", "#f2c14e", 14) + txt(24, 96, "2/8", OB, 11) + txt(96, 96, "4/8", OB, 11) + txt(60, 110, "3/8", "#f2c14e", 11)
+    return bg(g)
+
+
+# =================================================================
+def u1k5():
+    sd = lambda mn, mx, **ek: dict({"min": mn, "max": mx}, **ek)
+    return {
+        "id": "u1k5", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Karşılaştırma ve Sıralama", "sayfalar": "s. 50–61",
+        "giris": "Mars mı daha soğuk, Neptün mü? [[-1/2]] mi büyük, [[-1/5]] mi? Bu konuda tam sayıları ve rasyonel sayıları karşılaştırıp sıralamayı öğreneceğiz. Sayı doğrusu en büyük yardımcımız olacak.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu sayı doğrusu, mutlak değer, payda eşitleme ve ondalık gösterim bilgilerinin üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+            "maddeler": [
+                {"ad": "Eksi sayılar sayı doğrusunda", "sinif": "Konu 1", "svg": svg_dogru(),
+                 "anlatim": "Sayı doğrusunda 0'ın sağında pozitif sayılar, solunda negatif sayılar vardır. Eksi bir sayıyı bulmak için 0'dan sola doğru sayarız.",
+                 "akilda": "Sol eksi, sağ artı",
+                 "ornek": {"problem": f"{M}5'i sayı doğrusunda bulalım.", "adimlar": [
+                     {"metin": f"{M}5 eksi bir sayı. Eksi sayılar 0'ın solunda.", "islem": "Yön: sola"},
+                     {"metin": "0'dan sola 5 aralık say.",
+                      "sayiDogrusu": sd(-6, 3, oklar=[{"bas": 0, "son": -5, "etiket": "5 aralık", "renk": NEG}], isaretler=[{"x": -5, "etiket": f"{M}5", "renk": NEG}]),
+                      "islem": f"0 → {M}5"}]},
+                 "sorular": [
+                     N(f"Sayı doğrusunda {M}2'nin yerine dokun.", -2, sd(-5, 5), "0'ı bul. Sola doğru 2 aralık say.", f"{M}2, 0'ın 2 birim solundadır."),
+                     S("Hangisi sayı doğrusunda 0'ın sağındadır?", [f"{M}4", "4", f"{M}1"], 1, "0'ın sağında artı sayılar vardır.", "4 pozitiftir, 0'ın sağındadır.")]},
+                {"ad": "Mutlak değer", "sinif": "Konu 3", "svg": svg_mutlak(),
+                 "anlatim": f"Bir sayının 0'a olan uzaklığına mutlak değer denir. İşareti sil, sayı kalır: |{M}6| = 6. Mutlak değer hiç eksi olmaz.",
+                 "akilda": "Mutlak değer = 0'a uzaklık",
+                 "ornek": {"problem": f"|{M}9| kaçtır?", "adimlar": [
+                     {"metin": f"{M}9, 0'dan kaç birim uzakta? 9 birim."},
+                     {"metin": "Uzaklık eksi olmaz.", "islem": f"|{M}9| = 9"}]},
+                 "sorular": [
+                     G(f"|{M}6| kaçtır?", "6", f"{M}6, 0'dan kaç birim uzakta? İşareti sil.", f"|{M}6| = 6."),
+                     S("Hangisi 0'a daha uzaktır?", [f"{M}7", "5", "0"], 0, "Mutlak değerlerine bak: hangisinin 0'a uzaklığı daha çok?", f"|{M}7| = 7, |5| = 5. {M}7 daha uzaktır.")]},
+                {"ad": "Payda eşitleme", "sinif": "Önceki yıllar", "svg": svg_h_genislet(),
+                 "anlatim": "İki kesrin paydasını aynı yapmak için kesirleri genişletiriz. Paydalardan birinin, diğerinin katı olmasına bakarız: [[1/2]] ve [[3/4]] için [[1/2]] = [[2/4]].",
+                 "akilda": "Paydaları aynı yap",
+                 "ornek": {"problem": "[[2/3]] ile [[3/4]] kesirlerinin paydalarını eşitleyelim.", "adimlar": [
+                     {"metin": "3'ün de 4'ün de katı olan bir sayı bul: 3 × 4 = 12.", "islem": "Ortak payda: 12"},
+                     {"metin": "[[2/3]] kesrini 4 ile genişlet.", "islem": "[[2/3]] = [[8/12]]"},
+                     {"metin": "[[3/4]] kesrini 3 ile genişlet.", "islem": "[[3/4]] = [[9/12]]"}]},
+                 "sorular": [
+                     G("[[1/3]] kesrini paydası 6 olacak şekilde genişlet. Pay kaç olur?", "2", "3 × 2 = 6. Payı da 2 ile çarp.", "1 × 2 = 2: [[1/3]] = [[2/6]]."),
+                     S("[[1/2]] ile [[2/5]] kesirlerinin paydaları hangi sayıda eşitlenebilir?", ["10", "7", "3"], 0,
+                       "Hem 2'nin hem 5'in katı olan sayıyı ara.", "10, hem 2'nin hem 5'in katıdır: [[5/10]] ve [[4/10]].")]},
+                {"ad": "Kesirden ondalığa", "sinif": "Geçen konu", "svg": svg_onluk(),
+                 "anlatim": "Paydayı 10, 100 ya da 1000 yaparak kesri ondalık gösterime çevirebiliriz: [[1/4]] = [[25/100]] = 0,25.",
+                 "akilda": "10, 100, 1000'e genişlet",
+                 "ornek": {"problem": "[[3/5]] kesrini ondalık gösterimle yazalım.", "adimlar": [
+                     {"metin": "5 × 2 = 10. Payı da 2 ile çarp.", "islem": "[[3/5]] = [[6/10]]"},
+                     {"metin": "Payda 10: virgülden sonra 1 basamak.", "islem": "[[6/10]] = 0,6"}]},
+                 "sorular": [
+                     G("[[1/4]] kesrini ondalık gösterimle yaz.", "0,25", "4 × 25 = 100. Payı da 25 ile çarp.", "[[1/4]] = [[25/100]] = 0,25.", denk=True),
+                     S("[[4/5]] hangisine eşittir?", ["0,45", "0,8", "0,5"], 1, "5 × 2 = 10. Payı da 2 ile çarp.", "[[4/5]] = [[8/10]] = 0,8.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Sağdaki Büyüktür", "renk": "#1f9e8f", "svg": svg_sag_buyuk(),
+             "aciklama": "Sayı doğrusunda bir sayı, solundaki sayılardan büyük, sağındaki sayılardan küçüktür. Sağa gittikçe sayılar büyür, sola gittikçe küçülür.",
+             "ek": f"+1, {M}3'ün sağında: +1 > {M}3. {M}5, {M}2'nin solunda: {M}5 < {M}2. Kitaptaki gezegenlerde Mars ({M}65 °C), Neptün'den ({M}200 °C) daha sıcaktır, çünkü sayı doğrusunda daha sağdadır. (s. 50–51)",
+             "akilda": "Sağdaki büyük",
+             "sayiDogrusu": sd(-6, 3, isaretler=[{"x": -5, "etiket": f"{M}5", "renk": NEG}, {"x": -2, "etiket": f"{M}2", "renk": NEG}]),
+             "cozum": {"baslik": f"{M}7 mi büyük, {M}12 mi?", "problem": f"{M}7 ile {M}12'yi karşılaştıralım.",
+                       "sayiDogrusu": sd(-13, 1, gizle=[-11, -10, -9, -8, -6, -5, -4, -3, -2, -1],
+                                         isaretler=[{"x": -12, "etiket": f"{M}12", "renk": NEG}, {"x": -7, "etiket": f"{M}7", "renk": NEG}]),
+                       "adimlar": [
+                           {"metin": "İkisi de eksi: ikisi de 0'ın solunda."},
+                           {"metin": f"{M}12, 0'dan 12 birim sola; {M}7 ise 7 birim sola gider. {M}12 daha solda.", "islem": f"{M}12 daha solda"},
+                           {"metin": "Soldaki küçüktür.", "islem": f"{M}12 < {M}7"}],
+                       "sonuc": f"{M}12 < {M}7. Sayı doğrusunda yerlerini bulmak her zaman işe yarar. (s. 51)"},
+             "soru": S("Hangisi doğrudur?", [f"{M}5 > +7", f"{M}100 < {M}99", f"{M}7 < {M}12"], 1,
+                       "Her çift için düşün: hangisi sayı doğrusunda daha solda?", f"{M}100, {M}99'un solundadır: {M}100 < {M}99. (s. 51)")},
+            {"ad": "Negatif, Sıfır, Pozitif", "renk": ZER, "svg": svg_isaretler(),
+             "aciklama": "Pozitif sayılar her zaman 0'dan büyüktür. Negatif sayılar her zaman 0'dan küçüktür. Bu yüzden her pozitif sayı, her negatif sayıdan büyüktür.",
+             "ek": "İşaretler farklıysa hesap yapmaya gerek yok: [[1/100]] > [[-50/3]]. Kitaptaki Dikkat kutusunun ilk kısa yolu budur: pozitif mi, negatif mi? (s. 53, 57)",
+             "akilda": "Negatif < 0 < pozitif",
+             "soru": S("Hangisi doğrudur?", ["[[-1/2]] > 0", "0,1 > [[-9/2]]", f"{M}3 > 2"], 1,
+                       "Bir pozitif sayı ile bir negatif sayıdan hangisi her zaman büyüktür?", "0,1 pozitif, [[-9/2]] negatif. Pozitif her zaman büyüktür. (s. 53)")},
+            {"ad": "Negatiflerde Uzak Olan Küçük", "renk": "#3274d6", "svg": svg_ters(),
+             "aciklama": "İki negatif sayıdan 0'a daha uzak olan, yani mutlak değeri büyük olan daha küçüktür: |" + M + "12| > |" + M + "7| olduğu için " + M + "12 < " + M + "7.",
+             "ek": "Borç gibi düşün: 12 TL borcu olan, 7 TL borcu olandan daha zordadır. Kesirlerde de aynı: [[1/5]] < [[1/2]] ama [[-1/2]] < [[-1/5]]. Kitaptaki mor karton deneyinde pozitiflerin sırası, eksi işareti gelince tersine döner. (s. 52–53)",
+             "akilda": "Eksiler ters sıralanır",
+             "sayiDogrusu": {"min": -1, "max": 1, "bolme": 10, "isaretler": [{"x": -0.5, "etiket": "−1/2", "renk": NEG}, {"x": -0.2, "etiket": "−1/5", "renk": NEG},
+                                                                          {"x": 0.2, "etiket": "1/5", "renk": POS}, {"x": 0.5, "etiket": "1/2", "renk": POS}]},
+             "cozum": {"baslik": "[[-1/2]] mi büyük, [[-1/5]] mi?", "problem": "[[-1/2]] ile [[-1/5]] sayılarını karşılaştıralım.",
+                       "adimlar": [
+                           {"metin": "Önce eksileri sil: [[1/2]] ile [[1/5]]. [[1/2]] = 0,5 ve [[1/5]] = 0,2.", "islem": "[[1/2]] > [[1/5]]"},
+                           {"metin": "Eksi gelince sıra döner. 0'a daha uzak olan [[-1/2]] daha soldadır.",
+                            "sayiDogrusu": {"min": -1, "max": 1, "bolme": 10, "isaretler": [{"x": -0.5, "etiket": "−1/2", "renk": NEG}, {"x": -0.2, "etiket": "−1/5", "renk": NEG}]},
+                            "islem": "[[-1/2]] daha solda"},
+                           {"metin": "Soldaki küçüktür.", "islem": "[[-1/2]] < [[-1/5]]"}],
+                       "sonuc": "[[-1/2]] < [[-1/5]]. Pozitiflerde büyük olan, negatif olunca küçük olur."},
+             "sende": {"baslik": "Şimdi sen karşılaştır", "problem": "[[-3/4]] ile [[-1/4]] sayılarını karşılaştıralım.",
+                       "adimlar": [
+                           {"metin": "Önce eksileri sil.",
+                            "soru": S("Hangisi büyüktür?", ["[[3/4]]", "[[1/4]]", "İkisi eşittir"], 0, "Paydalar aynı: payı büyük olan büyüktür.", "[[3/4]] > [[1/4]]."),
+                            "islem": "[[3/4]] > [[1/4]]"},
+                           {"metin": "Eksi gelince sıra döner.",
+                            "soru": S("Hangisi doğrudur?", ["[[-3/4]] < [[-1/4]]", "[[-3/4]] > [[-1/4]]", "[[-3/4]] = [[-1/4]]"], 0,
+                                      "0'a daha uzak olan negatif sayı daha küçüktür.", "[[-3/4]] 0'a daha uzak: [[-3/4]] < [[-1/4]]."),
+                            "islem": "[[-3/4]] < [[-1/4]]"},
+                           {"metin": "Sayı doğrusunda kontrol et.",
+                            "soru": N("[[-3/4]] sayısının yerine dokun.", -0.75, {"min": -1, "max": 1, "bolme": 4},
+                                      f"0'dan sola git. 0 ile {M}1 arası 4 eş parça; 3 parça say.", "[[-3/4]], [[-1/4]]'ün solundadır, yani daha küçüktür."),
+                            "islem": "Soldaki küçük ✓"}],
+                       "sonuc": "Harika! [[-3/4]] < [[-1/4]]."},
+             "soru": S("Hangisi en küçüktür?", ["[[-1/3]]", "[[-2/3]]", "0"], 1,
+                       "Negatif sayılardan 0'a daha uzak olan daha küçüktür.", "[[-2/3]], 0'a [[-1/3]]'ten daha uzaktır; en küçüğü odur. (s. 53)")},
+            {"ad": "Dikey Sayı Doğrusu", "renk": "#1d6fa3", "svg": svg_dikey(),
+             "aciklama": "Dikey sayı doğrusunda yukarı çıktıkça sayılar büyür, aşağı indikçe küçülür. Yukarıdaki sayı, aşağıdaki sayıdan büyüktür.",
+             "ek": "Kitapta okyanusun farklı derinliklerinde yaşayan canlılar dikey sayı doğrusunda gösteriliyor. Daha derinde yaşayan canlının konumu daha küçük bir sayıdır. (s. 54)",
+             "akilda": "Yukarıdaki büyük",
+             "sayiDogrusu": {"min": -4, "max": 1, "dikey": True, "birim": 28, "sifirEtiketi": "Deniz seviyesi",
+                             "isaretler": [{"x": -1, "etiket": f"Balık {M}1 m", "renk": NEG}, {"x": -3, "etiket": f"Dalgıç {M}3 m", "renk": NEG}]},
+             "soru": S("Dikey sayı doğrusunda A noktası, B noktasının üstünde. Hangisi doğrudur?", ["A > B", "A < B", "A = B"], 0,
+                       "Dikey sayı doğrusunda yukarıdaki sayı büyük müdür, küçük müdür?",
+                       "Yukarıdaki sayı büyüktür: A > B. (s. 54)",
+                       sayiDogrusu={"min": -4, "max": 1, "dikey": True, "birim": 24, "gizle": [-3, -1],
+                                    "isaretler": [{"x": -1, "etiket": "A", "renk": NEG}, {"x": -3, "etiket": "B", "renk": NEG}]})},
+            {"ad": "Paydaları ya da Payları Eşitle", "renk": "#e8590c", "svg": svg_payda_es(),
+             "aciklama": "Paydalar eşitse payı büyük olan büyüktür: [[3/7]] < [[5/7]]. Paydalar farklıysa önce kesirleri genişletip paydaları eşitleriz.",
+             "ek": "Paylar eşitse paydası küçük olan büyüktür: [[2/3]] > [[2/5]]. Kitapta basketbolcuların başarıları [[5/12]], [[3/8]], [[2/6]] payları 30'a eşitlenerek karşılaştırılıyor: [[30/72]] > [[30/80]] > [[30/90]]. (s. 55–56)",
+             "akilda": "Altlar eşitse üstlere bak",
+             "cozum": {"baslik": "[[2/3]] mü büyük, [[3/4]] mü?", "problem": "[[2/3]] ile [[3/4]] kesirlerini karşılaştıralım.",
+                       "adimlar": [
+                           {"metin": "Paydalar farklı: 3 ve 4. İkisinin de katı olan 12'yi seç.", "islem": "Ortak payda: 12"},
+                           {"metin": "İki kesri de paydası 12 olacak şekilde genişlet.", "islem": "[[2/3]] = [[8/12]]   ve   [[3/4]] = [[9/12]]"},
+                           {"metin": "Paydalar eşit: payı büyük olan büyüktür.", "islem": "[[8/12]] < [[9/12]]  →  [[2/3]] < [[3/4]]"}],
+                       "sonuc": "[[2/3]] < [[3/4]]. Paydalar eşitlenince karşılaştırmak kolaylaşır."},
+             "sende": {"baslik": "Şimdi sen eşitle", "problem": "[[3/5]] ile [[7/10]] kesirlerini karşılaştıralım.",
+                       "adimlar": [
+                           {"metin": "10, 5'in katıdır. [[3/5]] kesrinin paydasını 10 yapalım.",
+                            "soru": G("5'i kaçla çarparsak 10 olur?", "2", "5 × ? = 10", "5 × 2 = 10."),
+                            "islem": "5 × 2 = 10"},
+                           {"metin": "Payı da aynı sayıyla çarp.",
+                            "soru": G("[[3/5]] = ?/10. Yeni pay kaç?", "6", "3 × 2 = ?", "3 × 2 = 6: [[3/5]] = [[6/10]]."),
+                            "islem": "[[3/5]] = [[6/10]]"},
+                           {"metin": "Şimdi paydalar eşit: [[6/10]] ile [[7/10]].",
+                            "soru": S("Hangisi doğrudur?", ["[[3/5]] < [[7/10]]", "[[3/5]] > [[7/10]]", "[[3/5]] = [[7/10]]"], 0,
+                                      "Paydalar eşitse payı büyük olan büyüktür: 6 mı, 7 mi?", "6 < 7, yani [[3/5]] < [[7/10]]."),
+                            "islem": "[[3/5]] < [[7/10]]"}],
+                       "sonuc": "Harika! [[3/5]] < [[7/10]]."},
+             "soru": S("Hangisi büyüktür?", ["[[4/9]]", "[[7/9]]", "İkisi eşittir"], 1,
+                       "Paydalar eşit. Payı büyük olan büyüktür.", "Paydalar eşit, 7 > 4: [[7/9]] > [[4/9]]. (s. 55–56)")},
+            {"ad": "Kısa Yollar", "renk": "#7b4fc9", "svg": svg_kisayol(),
+             "aciklama": "Bazen hesap yapmaya gerek yoktur. Sayıların işaretine, tam kısmına ya da 0'a, [[1/2]]'ye, 1'e yakınlığına bakarız. Olmazsa ondalık gösterime çeviririz.",
+             "ek": "Kitaptaki Dikkat kutusunun kısa yolları: işaret, tam kısım ([[2 1/5]] > [[1 7/8]]), 0'a, [[1/2]]'ye ve 1'e yakınlık, eşit pay ya da payda, ondalık gösterim. [[9/10]] 1'e çok yakın; [[1/10]] ise 0'a. (s. 57)",
+             "akilda": "Önce kolay yolu ara",
+             "cozum": {"baslik": "Hesapsız sıralayalım", "problem": "[[5/9]], [[1/10]] ve [[9/10]] sayılarını küçükten büyüğe sıralayalım.",
+                       "adimlar": [
+                           {"metin": "[[1/10]], 10 parçadan yalnız 1 tanesi: 0'a çok yakın.", "islem": "[[1/10]] → 0'a yakın"},
+                           {"metin": "[[9/10]], 10 parçadan 9 tanesi: 1'e çok yakın.", "islem": "[[9/10]] → 1'e yakın"},
+                           {"metin": "[[5/9]] yarıdan biraz fazla (9'un yarısı 4,5): ortada.", "islem": "[[5/9]] → [[1/2]]'ye yakın"},
+                           {"metin": "Şimdi sırala.", "islem": "[[1/10]] < [[5/9]] < [[9/10]]"}],
+                       "sonuc": "Hiç payda eşitlemeden sıraladık. Önce kısa yol, olmazsa payda eşitle ya da ondalığa çevir."},
+             "soru": S("[[2 1/5]] ile [[1 7/8]] için hangisi doğrudur?", ["[[2 1/5]] > [[1 7/8]]", "[[2 1/5]] < [[1 7/8]]", "İkisi eşittir"], 0,
+                       "Önce tam kısımlara bak: 2 mi büyük, 1 mi?", "Tam kısımlar farklı: 2 > 1. Kesirlere bakmaya gerek yok. (s. 57)")},
+            {"ad": "Arada Hep Bir Sayı Var", "renk": "#2f9e44", "svg": svg_arada2(),
+             "aciklama": f"{M}1 ile 0 arasında hiç tam sayı yoktur. Ama herhangi iki rasyonel sayı arasında en az bir rasyonel sayı bulunur.",
+             "ek": "Aradaki sayıyı bulmak için paydaları büyütürüz. Kitapta [[-3/5]] ile [[-2/5]] arasında bir sayı aranıyor: paydayı 10 yapınca [[-6/10]] ile [[-4/10]] olur, arada [[-5/10]] vardır. Bu iş hiç bitmez. (s. 59–60)",
+             "akilda": "Arada hep bir sayı var",
+             "cozum": {"baslik": "[[1/4]] ile [[1/2]] arasında ne var?", "problem": "[[1/4]] ile [[1/2]] arasında bir rasyonel sayı bulalım.",
+                       "adimlar": [
+                           {"metin": "Paydaları 8 yap.", "islem": "[[1/4]] = [[2/8]]   ve   [[1/2]] = [[4/8]]"},
+                           {"metin": "2 ile 4 arasında 3 var.", "islem": "[[2/8]] < [[3/8]] < [[4/8]]"},
+                           {"metin": "Sayı doğrusunda bak.",
+                            "sayiDogrusu": {"min": 0, "max": 1, "bolme": 8, "isaretler": [{"x": 0.25, "etiket": "1/4", "renk": POS}, {"x": 0.375, "etiket": "3/8", "renk": ZER}, {"x": 0.5, "etiket": "1/2", "renk": POS}]},
+                            "islem": "[[3/8]] arada"}],
+                       "sonuc": "[[1/4]] < [[3/8]] < [[1/2]]. Paydayı büyütünce aradaki sayılar ortaya çıkar."},
+             "sende": {"baslik": "Şimdi sen bul", "problem": "[[1/5]] ile [[2/5]] arasında bir sayı bulalım.",
+                       "adimlar": [
+                           {"metin": "Paydayı 10 yapalım.",
+                            "soru": G("[[1/5]] = ?/10. Pay kaç?", "2", "5 × 2 = 10. Payı da 2 ile çarp.", "1 × 2 = 2: [[1/5]] = [[2/10]]."),
+                            "islem": "[[1/5]] = [[2/10]]"},
+                           {"metin": "Diğerini de çevir.",
+                            "soru": G("[[2/5]] = ?/10. Pay kaç?", "4", "2 × 2 = ?", "2 × 2 = 4: [[2/5]] = [[4/10]]."),
+                            "islem": "[[2/5]] = [[4/10]]"},
+                           {"metin": "2 ile 4 arasında hangi sayı var?",
+                            "soru": G("Aradaki kesrin payı kaç? ?/10", "3", "2'den büyük, 4'ten küçük tam sayı.", "[[2/10]] < [[3/10]] < [[4/10]]."),
+                            "islem": "[[3/10]] arada"}],
+                       "sonuc": "Harika! [[1/5]] < [[3/10]] < [[2/5]]."},
+             "soru": N("[[1/4]] ile [[1/2]] arasındaki sayıya dokun.", 0.375, {"min": 0, "max": 1, "bolme": 8},
+                       "0 ile 1 arası 8 parça. [[1/4]] = [[2/8]], [[1/2]] = [[4/8]]. Aradaki çizgi hangisi?", "[[2/8]] ile [[4/8]] arasında [[3/8]] vardır. (s. 60)")}
+        ],
+        "biliyorMusun": [
+            "Güneş'e en yakın gezegen Merkür'dür ama en sıcak gezegen Venüs'tür (464 °C). Venüs'ün yoğun atmosferi sera etkisi oluşturur. (s. 50)",
+            f"Arabalarda radyatördeki suyun kışın donmaması için antifriz kullanılır. Kitaptaki antifriz {M}36,8 °C'ta donar; bundan soğuk havada işe yaramaz. (s. 61)",
+            "Futbolda puanlar eşitse averajı büyük olan takım üstte yer alır. Yenilen gol atılandan fazlaysa averaj eksi olur. (s. 51)"],
+        "akildaKalsin": [
+            "Sayı doğrusunda sağdaki sayı büyüktür; dikey sayı doğrusunda yukarıdaki büyüktür.",
+            "Negatif < 0 < pozitif. Her pozitif sayı her negatif sayıdan büyüktür.",
+            "İki negatif sayıdan 0'a daha uzak olan küçüktür: eksiler ters sıralanır.",
+            "Paydalar eşitse paya bak; değilse paydaları ya da payları eşitle.",
+            "Önce kısa yol: işaret, tam kısım, 0'a, [[1/2]]'ye ve 1'e yakınlık, ondalık gösterim.",
+            "İki rasyonel sayı arasında her zaman başka bir rasyonel sayı vardır."],
+        "merakKutusu": [
+            {"soru": f"{M}100 mü büyük, {M}99 mu?", "cevap": f"{M}99 büyüktür. {M}100, 0'a daha uzaktır ve sayı doğrusunda {M}99'un solundadır. (s. 51)"},
+            {"soru": "Paylar eşitse hangisi büyük?", "cevap": "Paydası küçük olan. [[2/3]] bütünü 3'e, [[2/5]] 5'e böler; 3'e bölünen pastanın dilimleri daha büyüktür. (s. 55–56)"},
+            {"soru": f"{M}1 ile 0 arasında kaç rasyonel sayı var?", "cevap": "Sayamayacağımız kadar çok! İki sayı arasına hep yeni bir sayı yerleştirebiliriz; paydayı büyüttükçe yenileri çıkar. (s. 59–60)"},
+            {"soru": "Isı hangi yöne akar?", "cevap": f"Sıcaklığı yüksek olandan düşük olana. {M}3 °C'taki bir nesneden {M}7 °C'taki nesneye doğru akar, çünkü {M}3 > {M}7. (s. 61)"},
+            {"soru": "Averaj eksi olabilir mi?", "cevap": f"Evet. Yenilen goller atılan gollerden fazlaysa averaj eksidir. Puanlar eşitse {M}1 averajlı takım, {M}2 averajlı takımın üstündedir. (s. 51)"}],
+        "dusunVeYaz": [{"soru": "[[-1/2]] ile [[-1/3]] sayılarından hangisi büyüktür? Nasıl karar verdiğini anlat.",
+                        "ornekCevap": "[[-1/3]] daha büyüktür. Eksileri silince [[1/2]] > [[1/3]]. Negatiflerde sıra döner; [[-1/2]] 0'a daha uzak olduğu için daha küçüktür.",
+                        "anahtarlar": ["uzak", "sıfır", "ters", "dön", "sol"]}],
+        "sorular": [
+            S(f"Kitapta Mars'ın yüzey sıcaklığı {M}65 °C, Neptün'ünki {M}200 °C. Hangisi daha sıcaktır?", ["Mars", "Neptün", "İkisi eşittir"], 0,
+              "Daha sıcak olan, sayı doğrusunda daha sağda olandır.", f"{M}65 > {M}200: Mars daha sıcaktır. (s. 50)"),
+            N(f"{M}3'ten büyük olan en küçük tam sayıya dokun.", -2, sd(-6, 3),
+              f"{M}3'ten büyük sayılar onun sağındadır. Sağdaki ilk tam sayı hangisi?", f"{M}3'ün hemen sağındaki tam sayı {M}2'dir. (s. 51)"),
+            S("Hangisi doğrudur?", ["[[-5/6]] > [[1/8]]", "0 < [[-2/7]]", "[[-9/4]] < [[1/9]]"], 2,
+              "Her seçenekte işaretlere bak. Negatif mi büyük, pozitif mi?", "[[-9/4]] negatif, [[1/9]] pozitif. Negatif her zaman küçüktür. (s. 53)"),
+            S("Hangisi en küçüktür?", [f"{M}7", f"{M}1", f"{M}12"], 2,
+              "Hepsi negatif. 0'a en uzak olanı bul.", f"{M}12, 0'a en uzak olandır; en küçüğü odur. (s. 51)"),
+            S("Hangisi doğrudur?", ["[[-3/8]] < [[-5/8]]", "[[-5/8]] < [[-3/8]]", "[[-5/8]] = [[-3/8]]"], 1,
+              "Eksileri sil: [[5/8]] mi büyük, [[3/8]] mü? Negatif olunca sıra döner.", "[[5/8]] > [[3/8]], eksi gelince [[-5/8]] < [[-3/8]]. (s. 53)"),
+            G("İki takımın puanı eşit. A takımının averajı " + M + "2. B takımı sıralamada A'nın üstünde ise B'nin averajı en az kaç olabilir? (Averaj bir tam sayıdır.)", "-1",
+              f"B'nin averajı {M}2'den büyük olmalı. {M}2'den büyük en küçük tam sayı hangisi?", f"{M}2'den büyük en küçük tam sayı {M}1'dir. (s. 51)",
+              sayiDogrusu=sd(-5, 2)),
+            S("Kitaptaki basketbolcular atışlarının [[5/12]], [[3/8]] ve [[2/6]] kadarını sayıya çevirdi. Büyükten küçüğe sıralama hangisidir?",
+              ["[[5/12]] > [[3/8]] > [[2/6]]", "[[2/6]] > [[3/8]] > [[5/12]]", "[[3/8]] > [[5/12]] > [[2/6]]"], 0,
+              "Payları 30 yap: [[30/72]], [[30/80]], [[30/90]]. Paylar eşitse paydası küçük olan büyüktür.",
+              "[[30/72]] > [[30/80]] > [[30/90]], yani [[5/12]] > [[3/8]] > [[2/6]]. (s. 55–56)"),
+            G("[[-7/3]] sayısından küçük olan en büyük tam sayı kaçtır?", "-3",
+              f"[[-7/3]] = [[-2 1/3]]. Hangi iki tam sayı arasında? Küçük olan solda.", f"[[-7/3]] = [[-2 1/3]], {M}2 ile {M}3 arasındadır. Ondan küçük en büyük tam sayı {M}3'tür. (s. 60)",
+              sayiDogrusu={"min": -4, "max": 0, "bolme": 3, "isaretler": [{"x": -7 / 3, "etiket": "−7/3", "renk": NEG}]}),
+            N("[[-3/2]] ile [[-1/2]] arasındaki tam sayıya dokun.", -1, {"min": -3, "max": 1, "bolme": 2},
+              f"[[-3/2]] = [[-1 1/2]]. Bu iki sayının arasında hangi tam sayı var?", f"[[-3/2]] < {M}1 < [[-1/2]]. Aradaki tam sayı {M}1'dir. (s. 59)"),
+            G("Paydası 10 olan ve [[2/5]] ile [[3/5]] arasında bulunan kesri yaz.", "5/10",
+              "Paydaları 10 yap: [[2/5]] = ?/10, [[3/5]] = ?/10. Aradaki payı bul.", "[[4/10]] < [[5/10]] < [[6/10]]. (s. 60)", kesir=True, denk=True),
+            S(f"Bir dalgıç deniz seviyesinin [[3/2]] m altında, bir balık [[5/2]] m altında. Hangisi doğrudur?",
+              ["Dalgıcın konumu daha büyük bir sayıdır.", "Balığın konumu daha büyük bir sayıdır.", "İkisi eşittir."], 0,
+              "Konumları yaz: [[-3/2]] ve [[-5/2]]. Dikey sayı doğrusunda hangisi daha yukarıda?", "[[-3/2]] > [[-5/2]]. Dalgıç daha yukarıda, sayısı daha büyük. (s. 54)"),
+            S("Hangisi [[1/2]]'den büyüktür?", ["[[4/9]]", "[[3/7]]", "[[5/8]]"], 2,
+              "Paydanın yarısını bul. Pay, paydanın yarısından büyük mü?", "8'in yarısı 4; 5 > 4 olduğu için [[5/8]] > [[1/2]]. [[4/9]] ve [[3/7]] yarıdan küçüktür. (s. 57)")]
+    }
+
+
 # =================================================================
 # Ara Duraklar (konu tarama): kapsanan konuların özeti + konuları birleştiren yeni sorular.
 # Motor ayrıca kapsanan konuların kendi sorularından "eskiSoru" kadarını (zorlanılan kavramlar önce) ekler.
@@ -932,7 +1541,7 @@ def u1t1():
 
 
 TARAMALAR = [u1t1]
-KONULAR = [u1k1, u1k2, u1k3] + TARAMALAR
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
@@ -946,6 +1555,10 @@ TEST_KAVRAM = {
              "Sayı Doğrusunda Gösterme", "Eksi Bütüne Aittir", "Eksi Bütüne Aittir", "Eksinin Yeri", None, "Sayı Doğrusunda Gösterme"],
     "u1k3": ["Mutlak Değer", "Eksik ya da Fazla", "Mutlak Değeri Verilen Sayı", None, "Mutlak Değer Eksi Olmaz", "Mutlak Değeri Verilen Sayı",
              "Eksi de Artı da Aynı", "Eksik ya da Fazla", "Mutlak Değeri Verilen Sayı", "Mutlak Değer", "Mutlak Değer", "Başlangıç Noktası"],
+    "u1k4": ["Kesir Çizgisi Bölmedir", "Paydayı 10, 100, 1000 Yap", "Sonlu mu, Devirli mi?", "Devirli Ondalık Gösterim", "Ondalıktan Kesre", "Ondalıktan Kesre",
+             "Sonlu mu, Devirli mi?", "Paydayı 10, 100, 1000 Yap", "Devirliden Kesre", "Devirli Ondalık Gösterim", "Ondalıktan Kesre", "Sonlu Ondalık Gösterim"],
+    "u1k5": ["Sağdaki Büyüktür", "Sağdaki Büyüktür", "Negatif, Sıfır, Pozitif", "Negatiflerde Uzak Olan Küçük", "Negatiflerde Uzak Olan Küçük", "Sağdaki Büyüktür",
+             "Paydaları ya da Payları Eşitle", "Sağdaki Büyüktür", "Arada Hep Bir Sayı Var", "Arada Hep Bir Sayı Var", "Dikey Sayı Doğrusu", "Kısa Yollar"],
 }
 YARDIM = {
     "u1k1": {
@@ -995,6 +1608,36 @@ YARDIM = {
         "Bir çay fabrikasında hedef 500": {"adimlar": [
             "Başlangıç noktası: hedef 500 gram.", "496'dan 500'e kaç gram var? 497, 498, 499, 500 diye say.", "Eksik olması fark etmez; sadece kaç gram uzak?"]},
     },
+    "u1k4": {
+        "[[3/5]] kesrini ondalık": {"adimlar": [
+            "Paydayı 10 yapabilir misin? 5 × ? = 10.", "Payı da aynı sayıyla çarp.", "Payda 10 ise virgülden sonra 1 basamak olur. Önce 0, sonra virgül."]},
+        "Termostaki kahve 0,7": {"adimlar": [
+            "Virgülden sonra kaç basamak var?", "1 basamak varsa payda 10 olur.", "Virgülü sil, sayıyı paya yaz. Önce pay, sonra / tuşu, sonra payda."]},
+        "[[9/25]] kesrini ondalık": {"adimlar": [
+            "Paydayı 100 yap: 25 × ? = 100. 25'er 25'er say.", "Payı da aynı sayıyla çarp: 9 × 4 = ?", "Payda 100: virgülden sonra 2 basamak. Önce 0, sonra virgül."]},
+        "Bir öğrencinin boyu 1,32": {"adimlar": [
+            "Virgülden sonra kaç basamak var? 3 ve 2.", "2 basamak varsa payda 100 olur.", "Virgülü sil: 1,32 → 132. Bu sayı paya yazılır."]},
+        "Bilardoda Ahmet ikinci": {
+            "hatirla": "Paydayı 10, 100 ya da 1000 yapabiliyorsak ondalık gösterimi bulmak kolaydır. Payda 1000 ise virgülden sonra 3 basamak olur.",
+            "adimlar": ["Önce oranı kesirle yaz: 8 topun 3'ü.", "8'i 10 ya da 100 yapamazsın ama 1000 yapabilirsin: 8 × 125 = 1000.",
+                        "Payı da 125 ile çarp: 3 × 125 = 375.", "Payda 1000: virgülden sonra 3 basamak."]},
+        "Hava sıcaklığı " + M + "14,2": {"adimlar": [
+            "Virgülden sonra kaç basamak var? Payda kaç olur?", "Virgülü sil: 14,2 → 142.", f"Eksi işaretini unutma: önce {M} tuşu, sonra pay, / ve payda."]},
+        "Hangisinin ondalık gösterimi devirlidir": {"adimlar": [
+            "Her kesrin paydasına bak: 8, 9, 10.", "Paydayı 2'ye ve 5'e bölebildiğin kadar böl.", "Geriye 1 kalan sonludur. Geriye başka sayı kalan hangisi?"]},
+    },
+    "u1k5": {
+        "İki takımın puanı eşit": {
+            "hatirla": "Sayı doğrusunda sağdaki sayı büyüktür. Averajı büyük olan takım üstte yer alır.",
+            "adimlar": ["B, A'nın üstünde: B'nin averajı A'nınkinden büyük olmalı.", f"Sayı doğrusunda {M}2'yi bul. Ondan büyük sayılar sağında.", f"{M}2'nin hemen sağındaki tam sayı hangisi?"]},
+        "[[-7/3]] sayısından küçük": {"adimlar": [
+            "Eksiyi kenara koy: 7 ÷ 3 = 2, kalan 1. Yani [[-7/3]] = [[-2 1/3]].", f"[[-2 1/3]] hangi iki tam sayı arasında? {M}2 ile …",
+            "Küçük olan solda. [[-7/3]]'ün solundaki ilk tam sayı hangisi?", f"Eksiyi unutma: önce {M} tuşu."]},
+        "Paydası 10 olan ve": {"adimlar": [
+            "[[2/5]] kesrini paydası 10 olacak şekilde genişlet: 5 × 2 = 10.", "[[3/5]] kesrini de genişlet.", "Paylar arasındaki sayıyı bul ve paydasını 10 yaz."]},
+        "Kitaptaki basketbolcular": {"adimlar": [
+            "Payları eşitle: 5, 3 ve 2'nin hepsi 30'a genişletilebilir.", "[[5/12]] = [[30/72]], [[3/8]] = [[30/80]], [[2/6]] = [[30/90]].", "Paylar eşitse paydası küçük olan büyüktür."]},
+    },
     "u1t1": {
         "Bir dalgıç deniz seviyesinin 12": {"adimlar": [
             f"Deniz seviyesi 0. Dalgıç altında ({M}12), martı üstünde (+5).", "Dalgıçtan deniz seviyesine kaç metre?", "Deniz seviyesinden martıya kaç metre?", "İki parçayı topla."]},
@@ -1028,7 +1671,7 @@ import re
 def bosluk(x):
     """Sayı ile birimi ayrı satıra düşmesin: '−8 m' → '−8\u00a0m' (bölünmez boşluk)."""
     if isinstance(x, str):
-        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|TL|°C|kat|birim|MB|metre|derece|g|gram|dakika)\b", "\\1\u00a0\\2", x)
+        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|cm|L|TL|°C|kat|birim|MB|metre|derece|g|gram|dakika)\b", "\\1\u00a0\\2", x)
     if isinstance(x, list):
         return [bosluk(v) for v in x]
     if isinstance(x, dict):
