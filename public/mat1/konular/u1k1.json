@@ -1,0 +1,754 @@
+{
+ "id": "u1k1",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Tam Sayılar ve Sayı Doğrusu",
+ "sayfalar": "s. 15–24",
+ "giris": "Bu konuda eksi sayılarla tanışacağız. Sıfırın altına inen sıcaklıkları, denizin altındaki derinlikleri ve yerin altındaki katları sayılarla yazmayı öğreneceğiz. Sonra hepsini sayı doğrusunda göstereceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, sayı doğrusu ve sayıları karşılaştırma bilgilerinin üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+  "maddeler": [
+   {
+    "ad": "Sayı doğrusu",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='66' x2='108' y2='66' stroke='#f5f6fa' stroke-width='3'/><line x1='18' y1='60' x2='18' y2='72' stroke='#f5f6fa' stroke-width='3'/><text x='18' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>0</text><line x1='35' y1='60' x2='35' y2='72' stroke='#f5f6fa' stroke-width='3'/><text x='35' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>1</text><line x1='52' y1='60' x2='52' y2='72' stroke='#f5f6fa' stroke-width='3'/><text x='52' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>2</text><line x1='69' y1='60' x2='69' y2='72' stroke='#f5f6fa' stroke-width='3'/><text x='69' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>3</text><line x1='86' y1='60' x2='86' y2='72' stroke='#f5f6fa' stroke-width='3'/><text x='86' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>4</text><line x1='103' y1='60' x2='103' y2='72' stroke='#f5f6fa' stroke-width='3'/><text x='103' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>5</text><path d='M18 54 Q61 22 103 54' stroke='#f2c14e' stroke-width='3' fill='none'/><path d='M103 54l-8-2 5-6z' fill='#f2c14e'/></svg>",
+    "anlatim": "Sayı doğrusu, sayıların sırayla dizildiği bir çizgidir. Ardışık sayılar arasındaki aralıklar eşittir. Sağa gittikçe sayılar büyür.",
+    "akilda": "Sağa gittikçe büyür",
+    "ornek": {
+     "problem": "Sayı doğrusunda 5'i nasıl buluruz?",
+     "adimlar": [
+      {
+       "metin": "0'dan başla."
+      },
+      {
+       "metin": "Sağa doğru 5 aralık say: 1, 2, 3, 4, 5.",
+       "sayiDogrusu": {
+        "min": 0,
+        "max": 8,
+        "oklar": [
+         {
+          "bas": 0,
+          "son": 5,
+          "etiket": "5 aralık"
+         }
+        ],
+        "isaretler": [
+         {
+          "x": 5,
+          "etiket": "5"
+         }
+        ]
+       }
+      },
+      {
+       "metin": "Durduğun yer 5'tir.",
+       "islem": "0 → 5"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Sayı doğrusunda 6'nın yerine dokun.",
+      "nokta": 6,
+      "sayiDogrusu": {
+       "min": 0,
+       "max": 10
+      },
+      "ipucu": "0'dan başla ve sağa doğru 6 aralık say.",
+      "aciklama": "6, 0'ın 6 aralık sağındadır."
+     },
+     {
+      "soru": "A noktası hangi sayıyı gösteriyor?",
+      "cevap": "7",
+      "ipucu": "0'dan başlayıp A'ya kadar aralıkları say.",
+      "aciklama": "0'dan A'ya kadar 7 aralık var. A = 7.",
+      "sayiDogrusu": {
+       "min": 0,
+       "max": 10,
+       "isaretler": [
+        {
+         "x": 7,
+         "etiket": "A"
+        }
+       ],
+       "gizle": [
+        7
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Büyük mü, küçük mü?",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='34' y='74' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='40' fill='#ffa26b'>9</text><text x='60' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='36' fill='#f2c14e'>&gt;</text><text x='88' y='74' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='30' fill='#f5f6fa'>5</text><path d='M22 92 h78' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/></svg>",
+    "anlatim": "Sayı doğrusunda sağdaki sayı, soldaki sayıdan büyüktür. Büyüktür işareti >, küçüktür işareti < ile gösterilir. İşaretin açık ağzı her zaman büyük sayıya bakar.",
+    "akilda": "Ağız büyüğe açılır",
+    "ornek": {
+     "problem": "3 ile 8'i karşılaştıralım.",
+     "adimlar": [
+      {
+       "metin": "İkisini sayı doğrusunda bul. 8 daha sağda.",
+       "sayiDogrusu": {
+        "min": 0,
+        "max": 10,
+        "isaretler": [
+         {
+          "x": 3,
+          "etiket": "3"
+         },
+         {
+          "x": 8,
+          "etiket": "8"
+         }
+        ]
+       }
+      },
+      {
+       "metin": "Sağdaki büyüktür. O hâlde 8 daha büyük."
+      },
+      {
+       "metin": "İşaretin ağzını büyüğe aç.",
+       "islem": "8 > 3   ya da   3 < 8"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Hangisi doğrudur?",
+      "secenekler": [
+       "9 > 5",
+       "9 < 5",
+       "5 > 9"
+      ],
+      "dogru": 0,
+      "ipucu": "Hangisi daha büyük: 9 mu, 5 mi? İşaretin ağzı büyüğe açılır.",
+      "aciklama": "9, 5'ten büyüktür. Ağız 9'a bakar: 9 > 5."
+     },
+     {
+      "soru": "Hangisi doğrudur?",
+      "secenekler": [
+       "12 < 7",
+       "7 < 12",
+       "7 > 12"
+      ],
+      "dogru": 1,
+      "ipucu": "Hangisi daha büyük: 7 mi, 12 mi? Ağız büyüğe bakmalı.",
+      "aciklama": "12 daha büyük. Ağız 12'ye bakar: 7 < 12."
+     }
+    ]
+   },
+   {
+    "ad": "Aradaki farkı bulma",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='92' width='16' height='16' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='36' y='76' width='16' height='32' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='52' y='60' width='16' height='48' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='68' y='44' width='16' height='64' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='84' y='28' width='16' height='80' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><path d='M26 84 Q60 30 92 24' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M92 24l-9 0 5 7z' fill='#f2c14e'/><text x='98' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f2c14e'>?</text></svg>",
+    "anlatim": "İki sayı arasında kaç birim olduğunu bulmak için büyük sayıdan küçük sayıyı çıkarırız. Sayı doğrusunda aradaki aralıkları sayarak da bulabiliriz.",
+    "akilda": "Büyükten küçüğü çıkar",
+    "ornek": {
+     "problem": "Bir apartmanda 3. kattan 8. kata çıkan asansör kaç kat çıkar?",
+     "adimlar": [
+      {
+       "metin": "Büyük sayı 8, küçük sayı 3."
+      },
+      {
+       "metin": "Büyükten küçüğü çıkar.",
+       "islem": "8 − 3 = 5"
+      },
+      {
+       "metin": "Asansör 5 kat çıkar."
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Bir apartmanda 2. kattan 9. kata çıkan asansör kaç kat çıkar?",
+      "cevap": "7",
+      "ipucu": "Büyük sayıdan küçük sayıyı çıkar: 9 − 2.",
+      "aciklama": "9 − 2 = 7. Asansör 7 kat çıkar.",
+      "birim": "kat"
+     },
+     {
+      "soru": "Ali 4 yaşında, ablası 11 yaşında. Aralarında kaç yaş fark var?",
+      "cevap": "7",
+      "ipucu": "Büyük sayıdan küçük sayıyı çıkar: 11 − 4.",
+      "aciklama": "11 − 4 = 7 yaş fark var.",
+      "birim": "yaş"
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Sıfırın İki Anlamı",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='80' x2='106' y2='80' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><line x1='30' y1='74' x2='30' y2='86' stroke='#6fb3ff' stroke-width='3'/><line x1='90' y1='74' x2='90' y2='86' stroke='#ffa26b' stroke-width='3'/><line x1='60' y1='80' x2='60' y2='26' stroke='#f5f6fa' stroke-width='3'/><path d='M60 26 L88 34 L60 42z' fill='#f2c14e'/><circle cx='60' cy='80' r='14' fill='#f2c14e'/><text x='60' y='86' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#1b2340'>0</text><text x='30' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#6fb3ff'>−</text><text x='90' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#ffa26b'>+</text></svg>",
+   "aciklama": "0 bazen \"hiç yok\" demektir: 0 MB internet, hiç internet kalmadı demektir. Bazen de bir başlangıç çizgisidir: 0 °C, deniz seviyesi, zemin kat gibi.",
+   "ek": "Başlangıç çizgisi olan 0'ın altına da inebiliriz. Hava 0 °C'un altına düşebilir, bir araç deniz seviyesinin altına dalabilir. İşte bu yüzden yeni sayılara ihtiyaç var. (s. 15–16, 18)",
+   "akilda": "0 = başlangıç çizgisi",
+   "soru": {
+    "soru": "Hangisinde 0, \"hiç yok\" anlamındadır?",
+    "secenekler": [
+     "Telefonda 0 MB internet kaldı.",
+     "Hava sıcaklığı 0 °C.",
+     "Asansör 0. katta (zemin kat)."
+    ],
+    "dogru": 0,
+    "ipucu": "Hangisinde bir şey tamamen bitmiş? Sıcaklık ve kat için 0 bir başlangıç çizgisidir.",
+    "aciklama": "0 MB = hiç internet kalmadı. 0 °C ve zemin kat ise başlangıç çizgisidir; altına inilebilir. (s. 15)"
+   }
+  },
+  {
+   "ad": "Negatif Tam Sayılar",
+   "renk": "#3274d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='52' y='14' width='16' height='76' rx='8' fill='#f5f6fa'/><circle cx='60' cy='94' r='13' fill='#6fb3ff'/><rect x='56' y='66' width='8' height='28' fill='#6fb3ff'/><line x1='40' y1='52' x2='80' y2='52' stroke='#f2c14e' stroke-width='3' stroke-dasharray='4 3'/><text x='32' y='57' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>0</text><g stroke='#6fb3ff' stroke-width='2.4' stroke-linecap='round'><path d='M24 78v20M14 88h20M17 81l14 14M31 81l-14 14'/></g><text x='92' y='82' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−5</text></svg>",
+   "aciklama": "Başlangıç çizgisinin altında ya da gerisinde kalan sayılardır. Önlerine \"−\" işareti konur. Okurken önce işareti, sonra sayıyı söyleriz: −8, \"eksi sekiz\" diye okunur.",
+   "ek": "Deringöz adlı su altı aracı deniz seviyesinin 8 metre altında. Konumu: −8 m. (s. 17–18)",
+   "akilda": "Altında = eksi (−)",
+   "sayiDogrusu": {
+    "min": -10,
+    "max": 10,
+    "dikey": true,
+    "birim": 16,
+    "sifirEtiketi": "Deniz seviyesi",
+    "gizle": [
+     -9,
+     -7,
+     -5,
+     -3,
+     -1,
+     1,
+     3,
+     5,
+     7,
+     9
+    ],
+    "isaretler": [
+     {
+      "x": -8,
+      "etiket": "Deringöz −8 m",
+      "renk": "#2364c7"
+     },
+     {
+      "x": 10,
+      "etiket": "Ekip +10 m",
+      "renk": "#d9480f"
+     }
+    ]
+   },
+   "soru": {
+    "soru": "Bir dalgıç deniz seviyesinin 5 metre altında. Konumunu hangi sayı gösterir?",
+    "secenekler": [
+     "+5 m",
+     "−5 m",
+     "0 m"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Altında\" kelimesine dikkat. Altında olanların önüne hangi işaret konur?",
+    "aciklama": "Deniz seviyesinin altı negatiftir: −5 m. (s. 18, 20)"
+   }
+  },
+  {
+   "ad": "Pozitif Tam Sayılar",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='52' y='14' width='16' height='76' rx='8' fill='#f5f6fa'/><circle cx='60' cy='94' r='13' fill='#ffa26b'/><rect x='56' y='30' width='8' height='64' fill='#ffa26b'/><line x1='40' y1='52' x2='80' y2='52' stroke='#f2c14e' stroke-width='3' stroke-dasharray='4 3'/><text x='32' y='57' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>0</text><circle cx='24' cy='28' r='9' fill='#f2c14e'/><g stroke='#f2c14e' stroke-width='2.4' stroke-linecap='round'><path d='M24 12v4M24 40v4M8 28h4M36 28h4M13 17l3 3M32 36l3 3M35 17l-3 3M16 36l-3 3'/></g><text x='92' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+5</text></svg>",
+   "aciklama": "Başlangıç çizgisinin üstünde ya da ilerisinde kalan sayılardır. Önlerine \"+\" işareti konur. Bu işaret yazılmasa da olur: +4 ile 4 aynı sayıdır.",
+   "ek": "Araştırma ekibi deniz seviyesinin 10 metre üstünde: +10 m. Okurken \"artı on\" deriz. (s. 17, 20)",
+   "akilda": "Üstünde = artı (+)",
+   "soru": {
+    "soru": "Hangisi +7 ile aynı sayıdır?",
+    "secenekler": [
+     "−7",
+     "0,7",
+     "7"
+    ],
+    "dogru": 2,
+    "ipucu": "Pozitif sayıların önündeki + işareti yazılmayabilir.",
+    "aciklama": "+7 = 7. Pozitif sayıların önündeki + yazılmayabilir. (s. 20)"
+   }
+  },
+  {
+   "ad": "Kelimeden Sayıya",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='18' width='54' height='34' rx='7' fill='#f5f6fa'/><line x1='19' y1='28' x2='58' y2='28' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='36' x2='50' y2='36' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='44' x2='42' y2='44' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><rect x='12' y='68' width='54' height='34' rx='7' fill='#f5f6fa'/><line x1='19' y1='78' x2='58' y2='78' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='86' x2='50' y2='86' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='94' x2='42' y2='94' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><path d='M70 35 h10 M76 30 l5 5 -5 5 M70 85 h10 M76 80 l5 5 -5 5' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='96' cy='35' r='15' fill='#6fb3ff'/><text x='96' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#1b2340'>−</text><circle cx='96' cy='85' r='15' fill='#ffa26b'/><text x='96' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#1b2340'>+</text></svg>",
+   "aciklama": "Problemlerde \"eksi\" kelimesi pek yazmaz. İşareti kelimelerden anlarız. Altı, borç, gider, zarar → eksi (−). Üstü, alacak, gelir, kâr → artı (+).",
+   "ek": "Bir cümleyi sayıya çevirirken üç soru sor: Başlangıç (0) nerede? Yön hangisi, altı mı üstü mü? Kaç birim? (Kelime listesi: s. 20)",
+   "akilda": "Altı, borç, gider → −",
+   "cozum": {
+    "baslik": "Cümleyi sayıya çevirelim",
+    "problem": "Bir maden ocağı yer yüzeyinin 40 metre altındadır. Bu konumu tam sayıyla yazalım.",
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0) nerede? Yer yüzeyi.",
+      "islem": "Yer yüzeyi = 0"
+     },
+     {
+      "metin": "Yön hangisi? Cümle \"altında\" diyor. Altı eksidir.",
+      "islem": "Yön: −"
+     },
+     {
+      "metin": "Kaç birim? 40 metre.",
+      "islem": "Miktar: 40"
+     },
+     {
+      "metin": "İşareti ve sayıyı birleştir.",
+      "islem": "−40 m"
+     }
+    ],
+    "sonuc": "Maden ocağının konumu −40 m'dir."
+   },
+   "sende": {
+    "baslik": "Şimdi sen çevir",
+    "problem": "Mert'in kartında 120 TL borç var. Bu durumu tam sayıyla yazalım.",
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0): Kartta ne para var ne borç.",
+      "islem": "Boş kart = 0"
+     },
+     {
+      "metin": "Yön hangisi?",
+      "soru": {
+       "soru": "\"Borç\" hangi işareti gösterir?",
+       "secenekler": [
+        "Artı (+)",
+        "Eksi (−)",
+        "İşaret yok"
+       ],
+       "dogru": 1,
+       "ipucu": "Borç, gider ve zarar hangi gruptaydı?",
+       "aciklama": "Borç eksidir."
+      },
+      "islem": "Yön: −"
+     },
+     {
+      "metin": "Kaç birim?",
+      "soru": {
+       "soru": "Borç kaç TL?",
+       "cevap": "120",
+       "ipucu": "Cümledeki sayıya bak.",
+       "aciklama": "Borç 120 TL.",
+       "birim": "TL"
+      },
+      "islem": "Miktar: 120"
+     },
+     {
+      "metin": "Şimdi işareti ve sayıyı birleştir.",
+      "soru": {
+       "soru": "Mert'in kartındaki durumu yaz.",
+       "cevap": "-120",
+       "ipucu": "Önce − tuşuna, sonra sayılara dokun.",
+       "aciklama": "Borç eksidir: −120 TL.",
+       "birim": "TL"
+      },
+      "islem": "−120 TL"
+     }
+    ],
+    "sonuc": "Harika! 120 TL borç = −120 TL. Kitaptaki Mert'in kartı da böyle çalışıyor. (s. 18)"
+   },
+   "soru": {
+    "soru": "Bir dükkân bu ay 500 TL zarar etti. Bu durumu hangi sayı gösterir?",
+    "secenekler": [
+     "−500 TL",
+     "+500 TL",
+     "0 TL"
+    ],
+    "dogru": 0,
+    "ipucu": "Zarar hangi gruptaydı: altı, borç, gider, zarar…",
+    "aciklama": "Zarar eksidir: −500 TL. (s. 20)"
+   }
+  },
+  {
+   "ad": "Sayı Doğrusu",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='62' x2='110' y2='62' stroke='#f5f6fa' stroke-width='3'/><path d='M8 62l7-4v8zM112 62l-7-4v8z' fill='#f5f6fa'/><line x1='20' y1='55' x2='20' y2='69' stroke='#6fb3ff' stroke-width='3'/><text x='20' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#6fb3ff'>−2</text><line x1='40' y1='55' x2='40' y2='69' stroke='#6fb3ff' stroke-width='3'/><text x='40' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#6fb3ff'>−1</text><line x1='60' y1='55' x2='60' y2='69' stroke='#f2c14e' stroke-width='3'/><text x='60' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>0</text><line x1='80' y1='55' x2='80' y2='69' stroke='#ffa26b' stroke-width='3'/><text x='80' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#ffa26b'>1</text><line x1='100' y1='55' x2='100' y2='69' stroke='#ffa26b' stroke-width='3'/><text x='100' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#ffa26b'>2</text><path d='M58 44 H22' stroke='#6fb3ff' stroke-width='3' stroke-linecap='round'/><path d='M22 44l6-4v8z' fill='#6fb3ff'/><path d='M62 44 H98' stroke='#ffa26b' stroke-width='3' stroke-linecap='round'/><path d='M98 44l-6-4v8z' fill='#ffa26b'/></svg>",
+   "aciklama": "Tam sayıları bir çizgi üzerinde gösteririz. 0 tam ortadadır. Pozitif sayılar 0'ın sağında, negatif sayılar 0'ın solundadır.",
+   "ek": "Termometreyi yan yatırdığını düşün: yukarısı sağa, aşağısı sola gelir. Sağa gittikçe sayılar büyür. (s. 19–20)",
+   "akilda": "Sol eksi, sağ artı",
+   "sayiDogrusu": {
+    "min": -6,
+    "max": 6,
+    "isaretli": true
+   },
+   "cozum": {
+    "baslik": "−4'ü sayı doğrusunda bulalım",
+    "adimlar": [
+     {
+      "metin": "Önce 0'ı bul. 0 başlangıç noktasıdır."
+     },
+     {
+      "metin": "Sayı eksi mi, artı mı? −4 eksi. Eksi sayılar 0'ın solunda.",
+      "islem": "Yön: sola"
+     },
+     {
+      "metin": "0'dan sola doğru 4 aralık say.",
+      "sayiDogrusu": {
+       "min": -6,
+       "max": 6,
+       "oklar": [
+        {
+         "bas": 0,
+         "son": -4,
+         "etiket": "4 aralık sola",
+         "renk": "#2364c7"
+        }
+       ],
+       "isaretler": [
+        {
+         "x": -4,
+         "etiket": "−4",
+         "renk": "#2364c7"
+        }
+       ]
+      },
+      "islem": "0 → −4"
+     }
+    ],
+    "sonuc": "−4, 0'ın 4 birim solundadır."
+   },
+   "soru": {
+    "soru": "Sayı doğrusunda +5'in yerine dokun.",
+    "nokta": 5,
+    "sayiDogrusu": {
+     "min": -6,
+     "max": 6
+    },
+    "ipucu": "Artı sayılar 0'ın sağında. 0'dan sağa 5 aralık say.",
+    "aciklama": "+5, 0'ın 5 birim sağındadır. (s. 20)"
+   }
+  },
+  {
+   "ad": "Tam Sayılar Ailesi",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='40' width='42' height='28' rx='14' fill='#6fb3ff'/><text x='29' y='59' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>−3 −2 −1</text><circle cx='60' cy='54' r='13' fill='#f2c14e'/><text x='60' y='60' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#1b2340'>0</text><rect x='74' y='40' width='38' height='28' rx='14' fill='#ffa26b'/><text x='93' y='59' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>1 2 3</text><path d='M10 78 q0 8 8 8 h84 q8 0 8 -8' stroke='#f5f6fa' stroke-width='2.5' fill='none'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>TAM SAYILAR</text><path d='M48 32 q0 -8 8 -8 h46 q8 0 8 8' stroke='#5fd08f' stroke-width='2.5' fill='none'/><text x='80' y='18' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#5fd08f'>DOĞAL</text></svg>",
+   "aciklama": "Negatif tam sayılar, sıfır ve pozitif tam sayılar bir araya gelince tam sayıları oluşturur.",
+   "ek": "Sıfır ne pozitif ne negatiftir; bu yüzden sıfırın işareti yoktur. Doğal sayılar (0, 1, 2, 3…) da tam sayıların içindedir. (s. 20)",
+   "akilda": "Eksiler + 0 + artılar",
+   "soru": {
+    "soru": "Hangisi tam sayıdır ama doğal sayı değildir?",
+    "secenekler": [
+     "−6",
+     "0",
+     "6"
+    ],
+    "dogru": 0,
+    "ipucu": "Doğal sayılar 0, 1, 2, 3… diye gider. İçinde eksi sayı var mı?",
+    "aciklama": "−6 negatif bir tam sayıdır. Doğal sayılarda eksi sayı yoktur. (s. 20)"
+   }
+  },
+  {
+   "ad": "İki Sayı Arasındaki Uzaklık",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='8' y1='78' x2='112' y2='78' stroke='#f5f6fa' stroke-width='3'/><line x1='16' y1='72' x2='16' y2='84' stroke='#6fb3ff' stroke-width='3'/><text x='16' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−2</text><line x1='34' y1='72' x2='34' y2='84' stroke='#6fb3ff' stroke-width='3'/><text x='34' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−1</text><line x1='52' y1='72' x2='52' y2='84' stroke='#f2c14e' stroke-width='3'/><text x='52' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><line x1='70' y1='72' x2='70' y2='84' stroke='#ffa26b' stroke-width='3'/><text x='70' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>1</text><line x1='88' y1='72' x2='88' y2='84' stroke='#ffa26b' stroke-width='3'/><text x='88' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>2</text><line x1='106' y1='72' x2='106' y2='84' stroke='#ffa26b' stroke-width='3'/><text x='106' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>3</text><path d='M16 70 Q61 18 106 70' stroke='#f2c14e' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M106 70l-9-3 6-6z' fill='#f2c14e'/><circle cx='61' cy='34' r='13' fill='#f2c14e'/><text x='61' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#1b2340'>5</text></svg>",
+   "aciklama": "İki tam sayı arasındaki uzaklığı, sayı doğrusunda aradaki aralıkları sayarak buluruz. Uzaklık her zaman pozitif bir sayıdır.",
+   "ek": "Aralıkları tek tek saymak her zaman işe yarar. Yol 0'dan geçiyorsa iki parçaya bölmek işi kolaylaştırır. (s. 22–23)",
+   "akilda": "Aralıkları say",
+   "cozum": {
+    "baslik": "−2 ile +3 arası kaç birim?",
+    "sayiDogrusu": {
+     "min": -4,
+     "max": 5,
+     "isaretler": [
+      {
+       "x": -2,
+       "etiket": "−2",
+       "renk": "#2364c7"
+      },
+      {
+       "x": 3,
+       "etiket": "+3",
+       "renk": "#d9480f"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "İki sayıyı sayı doğrusunda bul. Aralarında 0 var."
+     },
+     {
+      "metin": "−2'den 0'a kadar say: 2 aralık.",
+      "sayiDogrusu": {
+       "min": -4,
+       "max": 5,
+       "oklar": [
+        {
+         "bas": -2,
+         "son": 0,
+         "etiket": "2",
+         "renk": "#2364c7"
+        }
+       ]
+      },
+      "islem": "−2 → 0 : 2 birim"
+     },
+     {
+      "metin": "0'dan +3'e kadar say: 3 aralık.",
+      "sayiDogrusu": {
+       "min": -4,
+       "max": 5,
+       "oklar": [
+        {
+         "bas": 0,
+         "son": 3,
+         "etiket": "3",
+         "renk": "#d9480f"
+        }
+       ]
+      },
+      "islem": "0 → +3 : 3 birim"
+     },
+     {
+      "metin": "İki parçayı topla.",
+      "islem": "2 + 3 = 5 birim"
+     }
+    ],
+    "sonuc": "−2 ile +3 arasında 5 birim uzaklık vardır."
+   },
+   "sende": {
+    "baslik": "Asansörle kaç kat?",
+    "problem": "Bir AVM'de otopark −3. katta, sinema +4. katta. Otoparktan sinemaya asansörle kaç kat çıkılır?",
+    "sayiDogrusu": {
+     "min": -4,
+     "max": 5,
+     "dikey": true,
+     "birim": 28,
+     "sifirEtiketi": "Zemin kat",
+     "isaretler": [
+      {
+       "x": -3,
+       "etiket": "Otopark −3",
+       "renk": "#2364c7"
+      },
+      {
+       "x": 4,
+       "etiket": "Sinema +4",
+       "renk": "#d9480f"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "Otoparktan zemin kata (0) kaç kat var?",
+      "soru": {
+       "soru": "−3'ten 0'a kaç kat çıkılır?",
+       "cevap": "3",
+       "ipucu": "−3, −2, −1, 0… aralıkları say.",
+       "aciklama": "−3'ten 0'a 3 kat.",
+       "birim": "kat"
+      },
+      "islem": "−3 → 0 : 3 kat"
+     },
+     {
+      "metin": "Zemin kattan sinemaya kaç kat var?",
+      "soru": {
+       "soru": "0'dan +4'e kaç kat çıkılır?",
+       "cevap": "4",
+       "ipucu": "0'dan yukarı doğru aralıkları say.",
+       "aciklama": "0'dan +4'e 4 kat.",
+       "birim": "kat"
+      },
+      "islem": "0 → +4 : 4 kat"
+     },
+     {
+      "metin": "İki parçayı topla.",
+      "soru": {
+       "soru": "Toplam kaç kat çıkılır?",
+       "cevap": "7",
+       "ipucu": "3 + 4 = ?",
+       "aciklama": "3 + 4 = 7 kat.",
+       "birim": "kat"
+      },
+      "islem": "3 + 4 = 7 kat"
+     }
+    ],
+    "sonuc": "Otoparktan sinemaya 7 kat çıkılır. Asansörde de tam böyle sayarız."
+   },
+   "soru": {
+    "soru": "Sayı doğrusunda −1 ile +4 arasında kaç birim var?",
+    "cevap": "5",
+    "ipucu": "−1'den 0'a kaç aralık? 0'dan +4'e kaç aralık? İkisini topla.",
+    "aciklama": "−1 → 0: 1 birim, 0 → +4: 4 birim. 1 + 4 = 5 birim. (s. 23)",
+    "birim": "birim",
+    "sayiDogrusu": {
+     "min": -3,
+     "max": 6,
+     "isaretler": [
+      {
+       "x": -1,
+       "etiket": "−1",
+       "renk": "#2364c7"
+      },
+      {
+       "x": 4,
+       "etiket": "+4",
+       "renk": "#d9480f"
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Türkiye saati, dünya saatinin başlangıcı kabul edilen UTC'ye göre 3 saat ileride olduğu için UTC+3; New York saati 5 saat geride olduğu için UTC−5 diye yazılır. (s. 21)",
+  "Bazı aşılar +2 °C ile +8 °C arasında, bazıları ise −20 °C'ta saklanır. (s. 21)",
+  "Uzman bir dalgıç en fazla 40 metre derinliğe, yani −40 m'ye kadar dalabilir. (s. 21)"
+ ],
+ "akildaKalsin": [
+  "0 bazen \"hiç yok\", bazen \"başlangıç çizgisi\" demektir.",
+  "Başlangıcın altı, borç, gider, zarar → eksi (−).",
+  "Başlangıcın üstü, alacak, gelir, kâr → artı (+).",
+  "Sayı doğrusunda negatifler 0'ın solunda, pozitifler sağındadır.",
+  "Sıfırın işareti yoktur. +4 ile 4 aynı sayıdır.",
+  "İki sayı arasındaki uzaklığı aralıkları sayarak buluruz."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Hava 0 °C ise hiç sıcaklık yok mu demek?",
+   "cevap": "Hayır. 0 °C bir başlangıç çizgisidir. Hava bundan daha da soğuyabilir: −5 °C gibi. (s. 15–16)"
+  },
+  {
+   "soru": "Sıfır neden ne artı ne eksi?",
+   "cevap": "Çünkü 0 başlangıç noktasıdır; pozitiflerle negatiflerin tam ortasında durur. Bu yüzden sıfırın işareti yoktur. (s. 20)"
+  },
+  {
+   "soru": "−8 nasıl okunur?",
+   "cevap": "Önce işaret, sonra sayı söylenir: \"eksi sekiz\". (s. 18)"
+  },
+  {
+   "soru": "+5 ile 5 aynı mı?",
+   "cevap": "Evet. Pozitif sayıların önündeki + işareti yazılmayabilir: +4 = 4. (s. 20)"
+  },
+  {
+   "soru": "Asansördeki −1 düğmesi ne demek?",
+   "cevap": "Zemin kat 0 kabul edilir. −1, zemin katın bir kat altı demektir. (s. 20, 22)"
+  },
+  {
+   "soru": "Tam sayılar günlük hayatta nerede işe yarar?",
+   "cevap": "Hava sıcaklığında, dalış derinliğinde, ülkeler arasındaki saat farkında ve gıdaların soğukta saklanmasında. (s. 21)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Günlük hayattan eksi bir sayıyla anlatılabilecek bir durum yaz. Sayısını da yaz.",
+   "ornekCevap": "Kışın Kars'ta hava sıfırın 9 derece altına düştü. Sıcaklık −9 °C oldu.",
+   "anahtarlar": [
+    "alt",
+    "eksi",
+    "−",
+    "borç"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hava sıcaklığı sıfırın 6 derece altına düştü. Sıcaklık kaç derecedir?",
+   "secenekler": [
+    "−6 °C",
+    "0 °C",
+    "+6 °C"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Sıfırın altı\" hangi işaretle gösterilir?",
+   "aciklama": "Sıfırın altı negatiftir: −6 °C. (s. 19–20)"
+  },
+  {
+   "soru": "Bir denizaltı deniz seviyesinin 35 metre altında. Konumunu tam sayıyla yaz.",
+   "cevap": "-35",
+   "ipucu": "\"Altında\" eksi demek. Önce − tuşuna, sonra sayıya dokun.",
+   "aciklama": "Deniz seviyesinin 35 m altı: −35 m. (s. 17–18)",
+   "birim": "m"
+  },
+  {
+   "soru": "Sayı doğrusunda sıfırın 4 birim solundaki sayıya dokun.",
+   "nokta": -4,
+   "sayiDogrusu": {
+    "min": -6,
+    "max": 6
+   },
+   "ipucu": "0'ı bul. Sola doğru 4 aralık say.",
+   "aciklama": "0'ın 4 birim solunda −4 vardır. (s. 20)"
+  },
+  {
+   "soru": "Hangisi negatif bir tam sayıyla anlatılır?",
+   "secenekler": [
+    "Ayşe 50 TL kazandı.",
+    "Asansör zemin katın 2 kat altına indi.",
+    "Uçak deniz seviyesinin 10 km üstünde."
+   ],
+   "dogru": 1,
+   "ipucu": "Altı, borç, gider, zarar… Hangi cümlede bu kelimelerden biri var?",
+   "aciklama": "Zemin katın 2 kat altı: −2. Kazanç ve \"üstünde\" pozitiftir. (s. 20)"
+  },
+  {
+   "soru": "Sıfır için hangisi doğrudur?",
+   "secenekler": [
+    "Sıfır pozitif bir tam sayıdır.",
+    "Sıfır negatif bir tam sayıdır.",
+    "Sıfırın işareti yoktur."
+   ],
+   "dogru": 2,
+   "ipucu": "Sıfır, sayı doğrusunun neresinde duruyordu?",
+   "aciklama": "Sıfır ne pozitif ne negatiftir; işareti yoktur. (s. 20)"
+  },
+  {
+   "soru": "A noktası hangi tam sayıyı gösteriyor?",
+   "cevap": "-5",
+   "ipucu": "A, 0'ın solunda mı sağında mı? 0'dan A'ya kadar aralıkları say.",
+   "aciklama": "A, 0'ın 5 birim solunda: −5. (s. 20, 23)",
+   "sayiDogrusu": {
+    "min": -6,
+    "max": 6,
+    "isaretler": [
+     {
+      "x": -5,
+      "etiket": "A"
+     }
+    ],
+    "gizle": [
+     -5
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi doğal sayıdır?",
+   "secenekler": [
+    "−1",
+    "−10",
+    "0"
+   ],
+   "dogru": 2,
+   "ipucu": "Doğal sayılar 0, 1, 2, 3… Eksi sayı doğal sayı olur mu?",
+   "aciklama": "0 bir doğal sayıdır. Eksi sayılar doğal sayı değildir. (s. 20)"
+  },
+  {
+   "soru": "Bir binada otopark −2. katta, Elif +5. katta oturuyor. Otoparktan Elif'in katına kaç kat çıkılır?",
+   "cevap": "7",
+   "ipucu": "−2'den 0'a kaç kat? 0'dan +5'e kaç kat? İkisini topla.",
+   "aciklama": "−2 → 0: 2 kat, 0 → +5: 5 kat. 2 + 5 = 7 kat. (s. 22)",
+   "birim": "kat"
+  },
+  {
+   "soru": "Termometrede 0 °C'un 3 derece üstüne dokun.",
+   "nokta": 3,
+   "sayiDogrusu": {
+    "min": -5,
+    "max": 5,
+    "dikey": true,
+    "birim": 26,
+    "sifirEtiketi": "0 °C"
+   },
+   "ipucu": "\"Üstü\" artı demek. 0'dan yukarı 3 aralık say.",
+   "aciklama": "0 °C'un 3 derece üstü +3 °C'tur. (s. 19–20)"
+  },
+  {
+   "soru": "Mert'in kartında hafta başında 300 TL vardı. O hafta 400 TL harcadı. Kart borçlanabildiğine göre hafta sonunda kartın durumu nedir?",
+   "secenekler": [
+    "+100 TL",
+    "−100 TL",
+    "−400 TL"
+   ],
+   "dogru": 1,
+   "ipucu": "300 TL'yi harcayınca kart 0 olur. Fazladan kaç TL harcadı? Fazlası borçtur.",
+   "aciklama": "300 TL harcayınca kart 0 olur. Kalan 100 TL borç olur: −100 TL. (s. 18)"
+  }
+ ]
+}

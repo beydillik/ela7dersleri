@@ -1,0 +1,350 @@
+{
+ "kod": "mat1",
+ "ders": "Matematik",
+ "sinif": "7. Sınıf",
+ "donem": "1. Dönem",
+ "tema": {
+  "ad": "mat",
+  "desen": "sayi",
+  "font": "Lexend:wght@400;500;600;700"
+ },
+ "bot": {
+  "ad": "Pisi",
+  "dugme": "Pisi'ye sor",
+  "svg": "<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Pisi'><circle cx='32' cy='32' r='32' fill='#1f9e8f'/><path d='M14 30 L12 10 L27 21z M50 30 L52 10 L37 21z' fill='#f2a65a'/><path d='M15.5 26 L14.5 14 L23.5 21z M48.5 26 L49.5 14 L40.5 21z' fill='#ffd7b0'/><ellipse cx='32' cy='36' rx='20' ry='18' fill='#f2a65a'/><path d='M24 20 q2 4 0 7 M32 18 v7 M40 20 q-2 4 0 7' stroke='#d9803a' stroke-width='2.2' fill='none' stroke-linecap='round'/><ellipse cx='32' cy='43' rx='11' ry='8' fill='#fff3e6'/><circle cx='24.5' cy='34' r='4.6' fill='#fff'/><circle cx='39.5' cy='34' r='4.6' fill='#fff'/><circle cx='25.3' cy='34.6' r='2.6' fill='#16302c'/><circle cx='38.7' cy='34.6' r='2.6' fill='#16302c'/><circle cx='26.1' cy='33.6' r='.9' fill='#fff'/><circle cx='39.5' cy='33.6' r='.9' fill='#fff'/><path d='M29.8 40 h4.4 l-2.2 2.6z' fill='#e8590c'/><path d='M32 42.6 v2 M32 44.6 q-3 2.4 -5.5 .6 M32 44.6 q3 2.4 5.5 .6' stroke='#16302c' stroke-width='1.4' fill='none' stroke-linecap='round'/><path d='M8 40 h11 M8 44 h11 M45 40 h11 M45 44 h11' stroke='#fff3e6' stroke-width='1.3' stroke-linecap='round'/><rect x='18' y='50' width='28' height='9' rx='4.5' fill='#134e4a'/><text x='32' y='57.5' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#ffd166'>−1 0 +1</text></svg>",
+  "karsilama": "Miyav! Ben Pisi, Matematik robotuyum. Şu an \"{konu}\" konusundayız. Takıldığın bir yer mi var? Birlikte adım adım bakalım.",
+  "oneriler": [
+   "Bunu bana basitçe anlat",
+   "Kolay bir örnek verir misin?",
+   "Bana kolay bir soru sor",
+   "Bu soruyu adım adım çözelim"
+  ],
+  "ekTalimat": "Bu bir matematik dersi ve öğrenci matematikte zorlanıyor. Kitaptaki kural ve terimlere sadık kal; açıklarken küçük ve kolay sayılarla kendi örneklerini kullanabilirsin. Eksi sayıları anlatırken sayı doğrusu, asansör, termometre ya da deniz seviyesi benzetmesi kullan. İşlemleri en fazla 4 kısa adımda, her adımı ayrı satırda ve numaralı yaz. Problem sorularında cevabı hemen verme: önce 'Ne veriliyor? Ne isteniyor?' diye sor, sonra ipucu ver. Kesirleri 3/4 biçiminde, eksi sayıları -5 biçiminde yaz. Öğrenci yanlış cevap verirse neden yanlış olduğunu nazikçe ve kısaca göster, sonra tekrar denemesini iste."
+ },
+ "uniteler": [
+  {
+   "ad": "1. Tema: Sayılar ve Nicelikler",
+   "no": 1,
+   "konular": [
+    {
+     "id": "u1k1",
+     "baslik": "Tam Sayılar ve Sayı Doğrusu",
+     "sayfalar": "s. 15–24",
+     "kaynakSayfalar": [
+      [
+       15,
+       24
+      ]
+     ],
+     "hazir": true
+    },
+    {
+     "id": "u1k2",
+     "baslik": "Rasyonel Sayılar",
+     "sayfalar": "s. 25–34",
+     "kaynakSayfalar": [
+      [
+       25,
+       34
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k3",
+     "baslik": "Mutlak Değer",
+     "sayfalar": "s. 35–40",
+     "kaynakSayfalar": [
+      [
+       35,
+       40
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k4",
+     "baslik": "Rasyonel Sayıların Farklı Gösterimleri",
+     "sayfalar": "s. 41–49",
+     "kaynakSayfalar": [
+      [
+       41,
+       49
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k5",
+     "baslik": "Karşılaştırma ve Sıralama",
+     "sayfalar": "s. 50–61",
+     "kaynakSayfalar": [
+      [
+       50,
+       61
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k6",
+     "baslik": "Tam Sayılarla Toplama ve Çıkarma",
+     "sayfalar": "s. 62–72",
+     "kaynakSayfalar": [
+      [
+       62,
+       72
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k7",
+     "baslik": "Tam Sayılarla Çarpma ve Bölme",
+     "sayfalar": "s. 73–81",
+     "kaynakSayfalar": [
+      [
+       73,
+       81
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k8",
+     "baslik": "Rasyonel Sayılarla Toplama ve Çıkarma",
+     "sayfalar": "s. 82–89",
+     "kaynakSayfalar": [
+      [
+       82,
+       89
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k9",
+     "baslik": "Rasyonel Sayılarla Çarpma",
+     "sayfalar": "s. 89–96",
+     "kaynakSayfalar": [
+      [
+       89,
+       96
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k10",
+     "baslik": "Üslü İfadeler",
+     "sayfalar": "s. 97–102",
+     "kaynakSayfalar": [
+      [
+       97,
+       102
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k11",
+     "baslik": "Rasyonel Sayılarla Bölme",
+     "sayfalar": "s. 102–107",
+     "kaynakSayfalar": [
+      [
+       102,
+       107
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k12",
+     "baslik": "Çok Adımlı İşlemler",
+     "sayfalar": "s. 108–116",
+     "kaynakSayfalar": [
+      [
+       108,
+       116
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "2. Tema: Geometrik Nicelikler",
+   "no": 2,
+   "konular": [
+    {
+     "id": "u2k1",
+     "baslik": "Cisimlerin Farklı Yönlerden Görünümleri",
+     "sayfalar": "s. 117–124",
+     "kaynakSayfalar": [
+      [
+       117,
+       124
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k2",
+     "baslik": "Prizmanın Açınımı ve Yüzey Alanı",
+     "sayfalar": "s. 125–133",
+     "kaynakSayfalar": [
+      [
+       125,
+       133
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k3",
+     "baslik": "Hacmi Birim Küplerle Anlama",
+     "sayfalar": "s. 134–137",
+     "kaynakSayfalar": [
+      [
+       134,
+       137
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k4",
+     "baslik": "Dikdörtgenler Prizmasının Hacmi",
+     "sayfalar": "s. 138–143",
+     "kaynakSayfalar": [
+      [
+       138,
+       143
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k5",
+     "baslik": "Hacim Ölçme Birimleri",
+     "sayfalar": "s. 144–151",
+     "kaynakSayfalar": [
+      [
+       144,
+       151
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k6",
+     "baslik": "Yüzey Alanı ve Hacim Problemleri",
+     "sayfalar": "s. 152–158",
+     "kaynakSayfalar": [
+      [
+       152,
+       158
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "3. Tema: İstatistiksel Araştırma",
+   "no": 3,
+   "konular": [
+    {
+     "id": "u3k1",
+     "baslik": "Kategorik ve Nicel Veri",
+     "sayfalar": "s. 159–164",
+     "kaynakSayfalar": [
+      [
+       159,
+       164
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k2",
+     "baslik": "Araştırma Sorusu ve Veri Toplama",
+     "sayfalar": "s. 165–170",
+     "kaynakSayfalar": [
+      [
+       165,
+       170
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k3",
+     "baslik": "Veriyi Görselleştirme ve Özetleme",
+     "sayfalar": "s. 171–172",
+     "kaynakSayfalar": [
+      [
+       171,
+       172
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k4",
+     "baslik": "Veriyi Yorumlama ve Karar Verme",
+     "sayfalar": "s. 173–189",
+     "kaynakSayfalar": [
+      [
+       173,
+       189
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k5",
+     "baslik": "Araştırma Süreçlerini İnceleme",
+     "sayfalar": "s. 190–200",
+     "kaynakSayfalar": [
+      [
+       190,
+       200
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "4. Tema: Dönüşüm",
+   "no": 4,
+   "konular": [
+    {
+     "id": "u4k1",
+     "baslik": "Yansıma Dönüşümü",
+     "sayfalar": "s. 201–210",
+     "kaynakSayfalar": [
+      [
+       201,
+       210
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4k2",
+     "baslik": "Orta Dikme ve Açıortay",
+     "sayfalar": "s. 211–217",
+     "kaynakSayfalar": [
+      [
+       211,
+       217
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  }
+ ]
+}

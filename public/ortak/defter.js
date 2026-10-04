@@ -41,6 +41,18 @@
          /us english.*natural/i, /samantha/i, /\bava\b/i, /zira/i, /david/i]
   };
   const EN_RE = /\{\{(.+?)\}\}/g;
+  // Matematik ifadelerini Türkçe okunuşa çevirir: -3 → eksi 3, [[3/4]] → 4'te 3, < → küçüktür.
+  const BULUNMA = n => { const s = String(n), son = s.replace(/0+$/, "") || "0", z = s.length - son.length, d = +son.slice(-1);
+    if (z === 1) return ({ 1: "da", 2: "de", 3: "da", 4: "ta", 5: "de", 6: "ta", 7: "te", 8: "de", 9: "da" })[d] || "da";
+    if (z >= 2) return z === 2 ? "de" : "de";
+    return ({ 0: "da", 1: "de", 2: "de", 3: "te", 4: "te", 5: "te", 6: "da", 7: "de", 8: "de", 9: "da" })[d]; };
+  const mathSay = s => String(s)
+    .replace(/\[\[(-?)(?:(\d+) )?(-?\d+)\/(-?\d+)\]\]/g, (m, sg, w, a, b) => `${sg ? "eksi " : ""}${w ? w + " tam " : ""}${b.replace("-", "eksi ")}'${BULUNMA(b.replace("-", ""))} ${a.replace("-", "eksi ")}`)
+    .replace(/\|([^|]{1,12})\|/g, "mutlak değer $1")
+    .replace(/(^|[\s(=:,;])[-−](\d)/g, "$1eksi $2").replace(/(^|[\s(=:,;])\+(\d)/g, "$1artı $2")
+    .replace(/(\d)[\s\u00a0]?°C/g, "$1 derece").replace(/(\d)[\s\u00a0]m\b/g, "$1 metre").replace(/\s*→\s*/g, ", ")
+    .replace(/\s<\s/g, " küçüktür ").replace(/\s>\s/g, " büyüktür ").replace(/\s=\s/g, " eşittir ")
+    .replace(/(\d)\s[-−]\s/g, "$1 eksi ").replace(/(\d|\))\s\+\s/g, "$1 artı ").replace(/\s[×·]\s/g, " çarpı ").replace(/\s÷\s/g, " bölü ");
   const tts = {
     voice: null, en: null,
     init() {
@@ -69,8 +81,10 @@
       if (!tts.voice && !tts.en) return;
       speechSynthesis.cancel();
       String(text).split(EN_RE).forEach((part, i) => {
+        const en = i % 2 === 1;
+        if (!en) part = mathSay(part);
         part = part.trim(); if (!part || !/[\p{L}\p{N}]/u.test(part)) return;
-        const en = i % 2 === 1, v = en ? (tts.en || tts.voice) : (tts.voice || tts.en);
+        const v = en ? (tts.en || tts.voice) : (tts.voice || tts.en);
         tts.utter(part, v, en ? .85 : .95);
       });
     },
@@ -84,9 +98,12 @@
   const listenBtn = text => `<button class="listen" data-say="${esc(text)}" ${tts.voice ? "" : "hidden"}>${ICON.ses}Dinle</button>`;
   // İngilizce dinleme düğmeleri: normal hız ve yavaş (kaplumbağa)
   const enBtns = (text, big) => `<span class="say-en-row"><button class="say-en${big ? " big" : ""}" data-say-en="${esc(text)}" aria-label="İngilizcesini dinle" ${tts.en ? "" : "hidden"}>${ICON.ses}</button><button class="say-en slow" data-say-en="${esc(text)}" data-slow aria-label="Yavaş dinle" ${tts.en ? "" : "hidden"}>${ICON.yavas}</button></span>`;
+  // Matematik: metin içinde [[3/4]], [[-3/4]], [[2 3/4]], [[-2 3/4]] alt alta kesir olarak gösterilir.
+  const FR_RE = /\[\[(-?)(?:(\d+) )?(-?\d+)\/(-?\d+)\]\]/g;
+  const fx = h => h.replace(FR_RE, (m, s, w, a, b) => `<span class="kesir-w">${s ? "−" : ""}${w || ""}<span class="kesir"><span>${a.replace("-", "−")}</span><span>${b.replace("-", "−")}</span></span></span>`);
   // Metin içi {{İngilizce}} parçaları: renkli gösterilir, dokununca okunur.
-  const rx = s => esc(s).replace(EN_RE, (m, t) => `<span class="en" lang="en" role="button" tabindex="0" data-say-en="${t}">${t}</span>`);
-  const plain = s => String(s ?? "").replace(EN_RE, "$1");
+  const rx = s => fx(esc(s).replace(EN_RE, (m, t) => `<span class="en" lang="en" role="button" tabindex="0" data-say-en="${t}">${t}</span>`));
+  const plain = s => String(s ?? "").replace(EN_RE, "$1").replace(FR_RE, (m, s_, w, a, b) => `${s_}${w ? w + " " : ""}${a}/${b}`);
   document.addEventListener("click", e => {
     const e1 = e.target.closest("[data-say-en]"); if (e1) { e.stopPropagation(); tts.sayEn(e1.dataset.sayEn, e1.hasAttribute("data-slow")); return; }
     const b = e.target.closest("[data-say]"); if (b) tts.say(b.dataset.say);
@@ -115,14 +132,23 @@
 
   // ---------- Çoklu deneme soru bileşeni ----------
   // o: {soru, secenekler, dogru, ipucu, aciklama}; opts: {onDone(result), backToInfo, classMode}
+  // Soru türleri: seçenekli (secenekler + dogru), sayı doğrusunda nokta seçme (nokta + sayiDogrusu),
+  // sayı yazma (cevap; tuş takımıyla). sayiDogrusu seçenekli ve yazmalı sorularda da yalnızca gösterim olarak eklenebilir.
+  const qKind = o => o.nokta !== undefined ? "nokta" : o.cevap !== undefined ? "girdi" : "secim";
   function questionHTML(o, idx) {
-    return `<div class="q">
+    const kind = qKind(o);
+    const body = kind === "nokta" ? `<div class="sd-wrap sd-pick">${sdHTML(o.sayiDogrusu || {}, true)}</div>`
+      : kind === "girdi" ? `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}${keypadHTML(o)}`
+      : `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}<div class="opts">${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${fx(esc(String(s).replace(EN_RE, "$1")))}</button>`).join("")}</div>`;
+    return `<div class="q q-${kind}">
       <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${rx(o.soru)}</span></p>
       ${o.dinle ? `<div class="q-listen"><button class="say-en big" data-say-en="${esc(o.dinle)}" ${tts.en ? "" : "hidden"}>${ICON.ses}<span>Dinle</span></button><button class="say-en slow" data-say-en="${esc(o.dinle)}" data-slow ${tts.en ? "" : "hidden"}>${ICON.yavas}<span>Yavaş</span></button></div>` : ""}
-      <div class="opts">${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${esc(plain(s))}</button>`).join("")}</div>
+      ${body}
       <div class="fb" hidden></div></div>`;
   }
   function wireQuestion(el, o, opts = {}) {
+    const kind = qKind(o);
+    if (kind !== "secim") return wireMathQuestion(el, o, opts, kind);
     let tries = 0, finished = false, picked = null;
     const state = opts.state || { wrong: [], result: undefined };
     const fb = $(".fb", el);
@@ -171,9 +197,11 @@
 
   // ---------- Öğren (adım adım) ----------
   function buildSteps(d) {
-    const steps = [{ t: "giris" }];
+    const steps = d.hazirlik && d.hazirlik.maddeler && d.hazirlik.maddeler.length ? [{ t: "hazir" }, { t: "giris" }] : [{ t: "giris" }];
     d.kavramlar.forEach((k, i) => {
       steps.push({ t: "bilgi", k: i });
+      if (k.cozum) steps.push({ t: "cozum", k: i, f: "cozum" });
+      if (k.sende) steps.push({ t: "cozum", k: i, f: "sende" });
       if (k.soru) steps.push({ t: "soru", k: i });
       if ((i + 1) % 3 === 0 && i < d.kavramlar.length - 1) steps.push({ t: "hatirla", from: i - 2, to: i });
     });
@@ -204,7 +232,16 @@
       $("#pgTxt").textContent = `Adım ${pos + 1} / ${steps.length}`;
       $("#pgBar").style.width = ((pos + 1) / steps.length * 100) + "%";
       let html = "";
-      if (st.t === "giris") {
+      if (st.t === "hazir") {
+        html = `<div class="stage hz"><div id="hzBox" class="stage-body"></div>${nav("Konuya başla")}</div>`;
+      } else if (st.t === "cozum") {
+        const k = d.kavramlar[st.k], c = k[st.f], sende = st.f === "sende";
+        const doldu = qstate[pos] && qstate[pos].bitti;
+        html = `<div class="stage"><div class="kicker">${sende ? "Sıra sende" : "Birlikte çözelim"} · ${esc(k.ad)}</div>
+          <h3>${rx(c.baslik || (sende ? "Şimdi sen dene" : "Adım adım bakalım"))}</h3>
+          ${sende ? `<p class="ek">Boş adımları sen dolduracaksın. Takılırsan bir önceki örneğe bakabilirsin.</p>` : ""}
+          <div id="cozBox"></div>${nav("Devam", !!doldu)}</div>`;
+      } else if (st.t === "giris") {
         html = `<div class="stage"><div class="kicker">Bu konuda neler var?</div><h3>${esc(d.baslik)}</h3>
           <p class="big">${rx(d.giris)}</p>
           <div class="chips">${d.kavramlar.map(k => `<span class="chip"${isEn() ? ` lang="en" role="button" tabindex="0" data-say-en="${esc(k.ad)}"` : ""}>${k.svg}${esc(k.ad)}</span>`).join("")}</div>
@@ -217,7 +254,7 @@
           <h3 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k, true)}</h3>
           <p class="big">${rx(k.aciklama)}</p>${formulHTML(k.formul)}${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}
           <div class="row"><span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span>${listenBtn(kSay(k))}</div>
-          </div></div>${nav(k.soru ? "Anladım, soru gelsin" : "Devam")}</div>`;
+          </div></div>${k.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(k.sayiDogrusu)}</div>` : ""}${nav(k.cozum ? "Bir örnekle bakalım" : k.soru ? "Anladım, soru gelsin" : "Devam")}</div>`;
       } else if (st.t === "soru") {
         const k = d.kavramlar[st.k];
         html = `<div class="stage"><div class="kicker">Soru · ${esc(k.ad)}</div><div id="qbox">${questionHTML(k.soru)}</div>${nav("Devam", !!(qstate[pos] && qstate[pos].result !== undefined))}</div>`;
@@ -267,6 +304,11 @@
         });
       }
       $$("[data-reveal]", stage).forEach(b => b.onclick = () => { $(".ans", b).hidden = false; $(".q-mark", b).hidden = true; });
+      if (st.t === "hazir") renderHazirlik($("#hzBox", stage), d.hazirlik, () => go(pos + 1));
+      if (st.t === "cozum") {
+        qstate[pos] = qstate[pos] || {};
+        runCozum($("#cozBox", stage), d.kavramlar[st.k][st.f], qstate[pos], () => { const n = $("[data-next]", stage); if (n) n.disabled = false; });
+      }
       if (st.t === "yaz") wireWrite(stage, d.dusunVeYaz[0]);
       if (st.t === "duvar") renderWall($("#wallBox", stage), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}` });
       $$("[data-goto]", stage).forEach(b => b.onclick = () => setTab(b.dataset.goto));
@@ -290,9 +332,12 @@
     const d = S.data, icon = {}; d.kavramlar.forEach(k => icon[k.ad] = k.svg);
     const h = [];
     h.push(`<section><p class="lead">${rx(d.giris)}</p></section>`);
-    h.push(`<section><div class="sec-title"><h3>Kavramlar</h3><span>${d.kavramlar.length} kavram</span></div><div class="cards">` +
+    if (d.hazirlik && d.hazirlik.maddeler) h.push(`<section><div class="sec-title"><h3>Önce Hatırla</h3><span>Bu konu için gereken eski bilgiler</span></div><div class="merak hz-bak">` +
+      d.hazirlik.maddeler.map(m => `<details><summary>${esc(m.ad)}${m.sinif ? ` <small>· ${esc(m.sinif)}</small>` : ""}</summary><p>${rx(m.anlatim)}</p>${m.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(m.sayiDogrusu)}</div>` : ""}${m.ornek ? cozumStatik(m.ornek) : ""}</details>`).join("") + `</div></section>`);
+    h.push(`<section><div class="sec-title"><h3>Kavramlar</h3><span>${d.kavramlar.length} kavram</span></div><div class="cards${d.kavramlar.some(k => k.sayiDogrusu || k.cozum) ? " genis" : ""}">` +
       d.kavramlar.map(k => `<article class="card">${k.svg}<div><h4 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k)}</h4>
-        <p>${rx(k.aciklama)}</p>${formulHTML(k.formul)}${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}<span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span></div></article>`).join("") + `</div></section>`);
+        <p>${rx(k.aciklama)}</p>${formulHTML(k.formul)}${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}<span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span>
+        ${k.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(k.sayiDogrusu)}</div>` : ""}${k.cozum ? `<details class="coz-ac"><summary>Örnek çözümü gör</summary>${cozumStatik(k.cozum)}</details>` : ""}</div></article>`).join("") + `</div></section>`);
     if (d.gruplar && d.gruplar.length) h.push(`<section><div class="sec-title"><h3>Gruplar</h3></div><div class="groups">` +
       d.gruplar.map(g => `<div class="group"><h4>${esc(g.soru)}</h4><div class="boxes">` + g.kutular.map(b => `<div class="box"><div class="lbl">${esc(b.etiket)}</div><div class="chips">` +
         b.uyeler.map(m => `<span class="chip">${icon[m] || ""}${esc(m)}</span>`).join("") + `</div></div>`).join("") + `</div></div>`).join("") + `</div></section>`);
@@ -824,6 +869,217 @@
       `${n ? `<span class="fop">${b.r === "sonuc" ? "=" : "+"}</span>` : ""}<span class="fblok fr-${esc(b.r || "diger")}"><b lang="en">${esc(b.t)}</b>${b.alt ? `<small>${esc(b.alt)}</small>` : ""}</span>`).join("")}</div>`).join("")}</div>`;
   }
 
+  // =================================================================
+  // ---------- Matematik modülü (yalnızca konu dosyasında ilgili alan varsa çalışır) ----------
+  // sayiDogrusu: sayı doğrusu çizimi · nokta / cevap: sayı doğrusunda seçme ve tuş takımıyla yazma soruları
+  // cozum / sende: adım adım çözüm ve boşluklu "sıra sende" örneği · hazirlik: konu başı "Hazır mısın?" kontrolü
+  // =================================================================
+  const sayiYaz = (v, isaretli) => { const n = Number(v), t = Number.isInteger(n) ? String(Math.abs(n)) : String(Math.abs(n)).replace(".", ","); return n < 0 ? "−" + t : n > 0 && isaretli ? "+" + t : t; };
+  let sdSay = 0;
+  // c: {min, max, dikey, bolme, isaretli, sifirEtiketi, isaretler:[{x, etiket, renk}], oklar:[{bas, son, etiket, renk}], gizle:[sayı]}
+  function sdHTML(c, pick) {
+    const min = c.min ?? -5, max = c.max ?? 5, n = Math.max(1, max - min), dikey = !!c.dikey, bol = c.bolme || 1;
+    const is = c.isaretler || [], ok = c.oklar || [], gizle = new Set(c.gizle || []), id = "sd" + (++sdSay);
+    const renk = r => r || "#ff7a33";
+    const defs = `<defs>${ok.map((o, i) => `<marker id="${id}m${i}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="${esc(renk(o.renk))}"/></marker>`).join("")}</defs>`;
+    const cls = v => v < 0 ? "sd-neg" : v > 0 ? "sd-pos" : "sd-0";
+    const tam = []; for (let v = min; v <= max; v++) tam.push(v);
+    if (!dikey) {
+      const dar = window.innerWidth < 640, U = dar ? Math.max(27, Math.min(44, 340 / n)) : Math.max(30, Math.min(58, 640 / n)), pad = dar ? 22 : 26;  // telefonda yazılar küçülmesin
+      const archMax = ok.reduce((m, o) => Math.max(m, Math.min(52, 16 + Math.abs(o.son - o.bas) * U * .22)), 0);
+      const Ly = (ok.length ? archMax + 22 : 0) + (is.some(p => p.etiket) ? 30 : 14), W = n * U + pad * 2, H = Ly + (c.sifirEtiketi ? 52 : 36);
+      const X = v => pad + (v - min) * U;
+      let g = `<line x1="${pad - 16}" y1="${Ly}" x2="${W - pad + 16}" y2="${Ly}" class="sd-line"/><path d="M${pad - 22} ${Ly}l9-5v10z M${W - pad + 22} ${Ly}l-9-5v10z" class="sd-uc"/>`;
+      if (bol > 1) for (let v = min; v < max; v++) for (let k = 1; k < bol; k++) g += `<line x1="${X(v + k / bol)}" y1="${Ly - 4}" x2="${X(v + k / bol)}" y2="${Ly + 4}" class="sd-tick"/>`;
+      tam.forEach(v => { g += `<line x1="${X(v)}" y1="${Ly - 8}" x2="${X(v)}" y2="${Ly + 8}" class="sd-tick${v === 0 ? " sd-tick0" : ""}"/>`;
+        if (!gizle.has(v)) g += `<text x="${X(v)}" y="${Ly + 27}" text-anchor="middle" class="sd-num ${cls(v)}">${sayiYaz(v, c.isaretli)}</text>`; });
+      if (c.sifirEtiketi && min <= 0 && max >= 0) g += `<text x="${X(0)}" y="${Ly + 45}" text-anchor="middle" class="sd-lbl">${esc(c.sifirEtiketi)}</text>`;
+      ok.forEach((o, i) => { const a = X(o.bas), b = X(o.son), h = Math.min(52, 16 + Math.abs(o.son - o.bas) * U * .22), m = (a + b) / 2;
+        g += `<path d="M${a} ${Ly - 9} Q${m} ${Ly - 9 - h * 2} ${b} ${Ly - 9}" fill="none" stroke="${esc(renk(o.renk))}" stroke-width="3" stroke-linecap="round" marker-end="url(#${id}m${i})"/>`;
+        if (o.etiket) g += `<text x="${m}" y="${Ly - 13 - h}" text-anchor="middle" class="sd-ok" fill="${esc(renk(o.renk))}">${esc(o.etiket)}</text>`; });
+      is.forEach(p => { g += `<circle cx="${X(p.x)}" cy="${Ly}" r="7.5" fill="${esc(renk(p.renk))}" class="sd-pt"/>`;
+        if (p.etiket) g += `<text x="${X(p.x)}" y="${Ly - 15}" text-anchor="middle" class="sd-ptl" fill="${esc(renk(p.renk))}">${esc(p.etiket)}</text>`; });
+      if (pick) tam.forEach(v => { g += `<g class="sd-hit" data-x="${v}" role="button" tabindex="0" aria-label="${sayiYaz(v)}"><rect x="${X(v) - U / 2}" y="0" width="${U}" height="${H}" fill="transparent"/><circle cx="${X(v)}" cy="${Ly}" r="12" class="sd-ring"/></g>`; });
+      return `<svg class="sd" viewBox="0 0 ${W} ${H}" style="max-width:${Math.round(W * 1.15)}px" role="img" aria-label="Sayı doğrusu">${defs}${g}</svg>`;
+    }
+    // Dikey sayı doğrusu: pozitifler yukarıda (deniz seviyesi, termometre, asansör)
+    const U = c.birim || 30, pad = 18, Lx = 58, uzun = Math.max(0, ...is.map(p => String(p.etiket || "").length), String(c.sifirEtiketi || "").length), W = Math.max(200, Lx + 30 + uzun * 9.5 + (ok.length ? 70 : 0)), H = n * U + pad * 2;
+    const Y = v => pad + (max - v) * U;
+    let g = `<line x1="${Lx}" y1="${pad - 12}" x2="${Lx}" y2="${H - pad + 12}" class="sd-line"/><path d="M${Lx} ${pad - 18}l-5 9h10z M${Lx} ${H - pad + 18}l-5-9h10z" class="sd-uc"/>`;
+    if (c.sifirEtiketi && min <= 0 && max >= 0) g += `<line x1="${Lx}" y1="${Y(0)}" x2="${W - 4}" y2="${Y(0)}" class="sd-sifir"/><text x="${W - 6}" y="${Y(0) - 6}" class="sd-lbl" text-anchor="end">${esc(c.sifirEtiketi)}</text>`;
+    tam.forEach(v => { g += `<line x1="${Lx - 8}" y1="${Y(v)}" x2="${Lx + 8}" y2="${Y(v)}" class="sd-tick${v === 0 ? " sd-tick0" : ""}"/>`;
+      if (!gizle.has(v)) g += `<text x="${Lx - 14}" y="${Y(v) + 6}" class="sd-num ${cls(v)}" text-anchor="end">${sayiYaz(v, c.isaretli)}</text>`; });
+    ok.forEach((o, i) => { const a = Y(o.bas), b = Y(o.son), h = Math.min(46, 14 + Math.abs(o.son - o.bas) * U * .2), m = (a + b) / 2;
+      g += `<path d="M${Lx + 10} ${a} Q${Lx + 10 + h * 2} ${m} ${Lx + 10} ${b}" fill="none" stroke="${esc(renk(o.renk))}" stroke-width="3" stroke-linecap="round" marker-end="url(#${id}m${i})"/>`;
+      if (o.etiket) g += `<text x="${Lx + 18 + h}" y="${m + 5}" class="sd-ok" text-anchor="start" fill="${esc(renk(o.renk))}">${esc(o.etiket)}</text>`; });
+    is.forEach(p => { g += `<circle cx="${Lx}" cy="${Y(p.x)}" r="7.5" fill="${esc(renk(p.renk))}" class="sd-pt"/>`;
+      if (p.etiket) g += `<text x="${Lx + 16}" y="${Y(p.x) + 6}" class="sd-ptl" text-anchor="start" fill="${esc(renk(p.renk))}">${esc(p.etiket)}</text>`; });
+    if (pick) tam.forEach(v => { g += `<g class="sd-hit" data-x="${v}" role="button" tabindex="0" aria-label="${sayiYaz(v)}"><rect x="0" y="${Y(v) - U / 2}" width="${W}" height="${U}" fill="transparent"/><circle cx="${Lx}" cy="${Y(v)}" r="11" class="sd-ring"/></g>`; });
+    return `<svg class="sd sd-dikey" viewBox="0 0 ${W} ${H}" style="max-width:${W}px" role="img" aria-label="Dikey sayı doğrusu">${defs}${g}</svg>`;
+  }
+
+  // Tuş takımı: tablette klavye açılmadan, büyük tuşlarla sayı yazma (eksi işareti ve virgül dahil)
+  function keypadHTML(o) {
+    const t = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "−", "0", ","];
+    return `<div class="kp"><div class="kp-ekran" tabindex="0" role="textbox" aria-label="Cevabın">${o.onEk ? `<span class="kp-ek">${esc(o.onEk)}</span>` : ""}<span class="kp-txt"></span><span class="kp-imlec"></span>${o.birim ? `<span class="kp-ek">${esc(o.birim)}</span>` : ""}</div>
+      <div class="kp-tus">${t.map(k => `<button class="kp-k${k === "−" ? " kp-eksi" : ""}" data-k="${k}">${k}</button>`).join("")}
+      <button class="kp-k kp-sil" data-k="sil" aria-label="Sil">⌫</button><button class="btn primary kp-ok" data-k="ok">Kontrol et</button></div></div>`;
+  }
+  const normSayi = s => String(s).replace(/\s/g, "").replace(/[−–]/g, "-").replace(/\./g, ",").replace(/^\+/, "").replace(/^-0$/, "0");
+
+  function wireMathQuestion(el, o, opts, kind) {
+    let tries = 0, finished = false, buf = "";
+    const state = opts.state || { wrong: [], result: undefined };
+    const fb = $(".fb", el), txt = $(".kp-txt", el), ekran = $(".kp-ekran", el);
+    const dogruMu = v => kind === "nokta" ? Number(v) === Number(o.nokta) : [o.cevap, ...(o.kabul || [])].some(c => normSayi(c) === normSayi(v));
+    const dogruYazi = kind === "nokta" ? sayiYaz(o.nokta) : String(o.cevap).replace(/^-/, "−");
+    const ciz = () => { if (txt) txt.textContent = buf.replace(/^-/, "−"); };
+    const finish = (result, silent) => {
+      finished = true; state.result = result;
+      if (kind === "nokta") { $$(".sd-hit", el).forEach(g => { g.classList.add("kapali"); if (+g.dataset.x === Number(o.nokta)) g.classList.add("on"); }); }
+      else { buf = String(o.cevap); ciz(); ekran.classList.add(result === 0 ? "goster" : "dogru"); $$(".kp-k, .kp-ok", el).forEach(b => b.disabled = true); }
+      fb.hidden = false;
+      fb.className = result === 0 ? "fb show" : "fb ok";
+      fb.innerHTML = `<div><b>${pick(result === 0 ? PRAISE.shown : result === 1 ? PRAISE.first : PRAISE.second)}</b>${result === 0 ? ` Doğru cevap: <b class="dc">${esc(dogruYazi)}</b>` : ""}</div><div>${rx(o.aciklama || "")}</div>`;
+      if (!silent) opts.onDone && opts.onDone(result);
+    };
+    const answer = v => {
+      if (finished) return;
+      if (dogruMu(v)) return finish(tries === 0 ? 1 : 2);
+      tries++;
+      if (kind === "nokta") { const g = $(`.sd-hit[data-x="${v}"]`, el); if (g) g.classList.add("bad"); }
+      else { ekran.classList.add("shake", "yanlis"); setTimeout(() => ekran.classList.remove("shake"), 400); }
+      if (tries >= 2) return finish(0);
+      fb.hidden = false; fb.className = "fb hint";
+      fb.innerHTML = `<div><b>Henüz değil.</b> ${rx(o.ipucu || "Bilgiyi bir kez daha düşün.")}</div>` +
+        (opts.backToInfo ? `<div><button class="btn ghost" data-back>Bilgi kartına bak</button></div>` : "");
+      const bk = $("[data-back]", fb); if (bk) bk.onclick = opts.backToInfo;
+      if (kind === "girdi") { buf = ""; setTimeout(() => { ekran.classList.remove("yanlis"); ciz(); }, 700); }
+    };
+    if (kind === "nokta") {
+      const svg = $(".sd", el);
+      svg.addEventListener("click", e => { const g = e.target.closest(".sd-hit"); if (g && !g.classList.contains("bad")) answer(+g.dataset.x); });
+      svg.addEventListener("keydown", e => { const g = e.target.closest(".sd-hit"); if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); answer(+g.dataset.x); } });
+    } else {
+      const bas = k => {
+        if (finished) return;
+        if (k === "ok") { if (!buf || buf === "-") { fb.hidden = false; fb.className = "fb hint"; fb.innerHTML = "<div><b>Önce cevabını yaz.</b> Tuşlara dokunarak sayıyı yaz.</div>"; return; } return answer(buf); }
+        if (k === "sil") buf = buf.slice(0, -1);
+        else if (k === "−" || k === "-") buf = buf.startsWith("-") ? buf.slice(1) : "-" + buf;
+        else if (k === "," || k === ".") { if (!buf.includes(",")) buf += (buf === "" || buf === "-" ? "0" : "") + ","; }
+        else if (/^\d$/.test(k) && buf.replace(/[-,]/g, "").length < 7) buf += k;
+        ekran.classList.remove("yanlis"); ciz();
+      };
+      $(".kp-tus", el).addEventListener("click", e => { const b = e.target.closest("[data-k]"); if (b && !b.disabled) bas(b.dataset.k); });
+      ekran.addEventListener("keydown", e => {
+        const m = { Enter: "ok", Backspace: "sil" }[e.key] || e.key;
+        if (/^[\d,.\-−]$/.test(m) || m === "ok" || m === "sil") { e.preventDefault(); bas(m); }
+      });
+      ekran.addEventListener("click", () => ekran.focus());
+    }
+    if (state.result !== undefined) finish(state.result, true);
+    return { get finished() { return finished; } };
+  }
+
+  // Adım adım çözüm. c: {baslik, problem, sayiDogrusu, adimlar:[{metin, islem, sayiDogrusu, soru}], sonuc}
+  // Adımda "soru" varsa (Sıra sende) adım boş gelir; öğrenci cevaplayınca işlem satırı açılır ve sonraki adıma geçilir.
+  function adimHTML(a, n, acik) {
+    return `<li class="adim${a.soru ? " bos" : ""}" data-n="${n}"><div class="adim-no">${n + 1}</div><div class="adim-ic">
+      <p>${rx(a.metin || "")}</p>${a.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(a.sayiDogrusu)}</div>` : ""}
+      ${a.soru ? `<div class="adim-soru">${questionHTML(a.soru)}</div>` : ""}
+      ${a.islem ? `<div class="islem"${a.soru && !acik ? " hidden" : ""}>${rx(a.islem)}</div>` : ""}</div></li>`;
+  }
+  function cozumStatik(c) {
+    return `<div class="cozum statik">${c.problem ? `<div class="problem">${rx(c.problem)}</div>` : ""}${c.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(c.sayiDogrusu)}</div>` : ""}
+      <ol class="adimlar">${c.adimlar.map((a, n) => adimHTML({ ...a, soru: null }, n, true)).join("")}</ol>${c.sonuc ? `<div class="sonuc">${rx(c.sonuc)}</div>` : ""}</div>`;
+  }
+  // st: {acik: kaç adım açıldı, q: {adım: soru durumu}}; bitti(): bütün adımlar açılınca bir kez çağrılır
+  function runCozum(box, c, st, bitti) {
+    const yan = c.sayiDogrusu && c.sayiDogrusu.dikey;   // dikey sayı doğrusu adımların yanında durur (geniş ekranda)
+    box.innerHTML = `<div class="cozum${yan ? " yan" : ""}">${c.problem ? `<div class="problem">${rx(c.problem)}</div>` : ""}
+      <div class="coz-govde">${c.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(c.sayiDogrusu)}</div>` : ""}<div class="coz-adim">
+      <ol class="adimlar"></ol><div class="row"><button class="btn primary" data-adim>Sonraki adım</button>${listenBtn([c.problem, ...c.adimlar.map(a => `${a.metin || ""} ${a.islem || ""}`)].join(". "))}</div>
+      <div class="sonuc" hidden>${rx(c.sonuc || "")}</div></div></div></div>`;
+    const ol = $(".adimlar", box), btn = $("[data-adim]", box);
+    st.q = st.q || {};
+    const guncelle = () => {
+      const son = c.adimlar[st.acik - 1], bekliyor = son && son.soru && !(st.q[st.acik - 1] && st.q[st.acik - 1].result !== undefined);
+      btn.hidden = st.acik >= c.adimlar.length || bekliyor;
+      if (st.acik >= c.adimlar.length && !bekliyor) { if (c.sonuc) $(".sonuc", box).hidden = false; if (!st.bitti) { st.bitti = true; bitti && bitti(); } }
+    };
+    const ac = n => {
+      const a = c.adimlar[n]; ol.insertAdjacentHTML("beforeend", adimHTML(a, n, false));
+      const li = ol.lastElementChild;
+      if (a.soru) {
+        st.q[n] = st.q[n] || { wrong: [], result: undefined };
+        wireQuestion($(".q", li), a.soru, { state: st.q[n], onDone: () => { const i = $(".islem", li); if (i) i.hidden = false; li.classList.remove("bos"); guncelle(); } });
+        if (st.q[n].result !== undefined) { const i = $(".islem", li); if (i) i.hidden = false; li.classList.remove("bos"); }
+      }
+    };
+    st.acik = Math.max(1, st.acik || 0);
+    for (let n = 0; n < st.acik; n++) ac(n);
+    btn.onclick = () => { ac(st.acik); st.acik++; guncelle(); ol.lastElementChild.scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+    guncelle();
+  }
+
+  // ---------- Hazır mısın? (konu başı ön koşul kontrolü) ----------
+  // d.hazirlik = {baslik, giris, maddeler:[{ad, sinif, svg, anlatim, akilda, sayiDogrusu, ornek: cozum, sorular:[soru, yedek soru]}]}
+  // Her madde için bir soru sorulur; sonuçta eksik görülen maddeler için kısa hatırlatma + yeni soru önerilir.
+  function renderHazirlik(box, h, ilerle) {
+    const sk = key("hazirlik:" + S.konu);
+    let kayit = store.get(sk, null);     // {r: [1|2|0], t: [true: tekrar edip doğru yaptı]}
+    const ms = h.maddeler, kaydet = () => store.set(sk, kayit);
+    const durum = i => kayit.t[i] ? "tamam" : kayit.r[i] === 1 ? "tamam" : kayit.r[i] === 2 ? "orta" : "eksik";
+    const giris = () => {
+      box.innerHTML = `<div class="kicker">Başlamadan önce</div><h3>${esc(h.baslik || "Hazır mısın?")}</h3>
+        <p class="big">${rx(h.giris || "Bu konu, daha önce öğrendiğin bazı bilgilerin üzerine kuruluyor. Önce onları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.")}</p>
+        <div class="hz-liste">${ms.map((m, i) => `<span class="hz-chip">${m.svg || ""}<span><b>${esc(m.ad)}</b>${m.sinif ? `<small>${esc(m.sinif)}</small>` : ""}</span></span>`).join("")}</div>
+        <div class="row"><button class="btn primary" data-hz-basla>Kontrol edelim (${ms.length} soru)</button><button class="btn ghost" data-hz-atla>Bu bölümü geç</button></div>`;
+      $("[data-hz-basla]", box).onclick = () => { kayit = { r: [], t: [] }; soru(0); };
+      $("[data-hz-atla]", box).onclick = ilerle;
+    };
+    const soru = i => {
+      if (i >= ms.length) { kaydet(); return rapor(); }
+      const m = ms[i], q = m.sorular[0];
+      box.innerHTML = `<div class="kicker">Hazır mısın? · Soru ${i + 1} / ${ms.length}</div><h3>${esc(m.ad)}</h3>
+        <div id="hzq">${questionHTML(q)}</div><div class="row"><button class="btn primary" data-hz-devam hidden>${i < ms.length - 1 ? "Sonraki soru" : "Sonucu gör"}</button></div>`;
+      wireQuestion($("#hzq .q", box), q, { onDone: r => { kayit.r[i] = r; $("[data-hz-devam]", box).hidden = false; } });
+      $("[data-hz-devam]", box).onclick = () => soru(i + 1);
+    };
+    const rapor = () => {
+      const eksik = ms.filter((m, i) => durum(i) === "eksik"), orta = ms.filter((m, i) => durum(i) === "orta");
+      const adlar = l => { const a = l.map(m => `"${m.ad}"`); return a.length > 1 ? a.slice(0, -1).join(", ") + " ve " + a[a.length - 1] : a[0]; };
+      const mesaj = eksik.length ? `Önce şunlara birlikte tekrar bakalım: <b>${esc(adlar(eksik))}</b>. Her birinde kısa bir hatırlatma ve yeni bir soru var. Hazır hissedince bu yılki konuya başla.`
+        : orta.length ? `Hazırsın! Yalnızca <b>${esc(adlar(orta))}</b> konusuna bir göz atmak iyi olur. İstersen hemen başlayabilirsin.`
+        : "Hazırsın! Gereken bilgileri hatırlıyorsun. Bu yılki konuya başlayabilirsin.";
+      box.innerHTML = `<div class="kicker">Hazır mısın? · Sonuç</div><h3>${eksik.length ? "Biraz hatırlayalım" : "Harika, hazırsın!"}</h3>
+        <p class="big">${mesaj}</p>
+        <div class="hz-rapor">${ms.map((m, i) => { const d_ = durum(i);
+          return `<div class="hz-satir ${d_}"><span class="hz-ik" aria-hidden="true">${d_ === "tamam" ? "✓" : d_ === "orta" ? "~" : "!"}</span>
+          <span class="hz-ad"><b>${esc(m.ad)}</b><small>${kayit.t[i] ? "Tekrar ettin, şimdi biliyorsun" : d_ === "tamam" ? "Biliyorsun" : d_ === "orta" ? "İpucuyla buldun" : "Tekrar etmek iyi olur"}${m.sinif ? ` · ${esc(m.sinif)}` : ""}</small></span>
+          <button class="btn${d_ === "eksik" ? " primary" : " ghost"}" data-hz-tekrar="${i}">${d_ === "tamam" ? "Hatırlatmayı aç" : "Tekrar bak"}</button></div>`; }).join("")}</div>
+        <div class="row"><button class="btn${eksik.length ? "" : " primary"}" data-hz-ilerle>${eksik.length ? "Yine de konuya başla" : "Konuya başla"}</button><button class="btn ghost" data-hz-yeniden>Kontrolü baştan yap</button></div>`;
+      $$("[data-hz-tekrar]", box).forEach(b => b.onclick = () => tekrar(+b.dataset.hzTekrar));
+      $("[data-hz-ilerle]", box).onclick = ilerle;
+      $("[data-hz-yeniden]", box).onclick = () => { kayit = { r: [], t: [] }; soru(0); };
+    };
+    const tekrar = i => {
+      const m = ms[i], q2 = m.sorular[1] || m.sorular[0];
+      box.innerHTML = `<div class="kicker">Hatırlayalım · ${esc(m.sinif || "")}</div>
+        <div class="info-grid">${m.svg || ""}<div class="stage-body"><h3>${esc(m.ad)}</h3><p class="big">${rx(m.anlatim)}</p>
+        ${m.akilda ? `<div class="row"><span class="key"><b>Akılda kalsın</b>${rx(m.akilda)}</span>${listenBtn(m.ad + ". " + m.anlatim)}</div>` : ""}</div></div>
+        ${m.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(m.sayiDogrusu)}</div>` : ""}
+        ${m.ornek ? `<div class="kicker">Örnek</div><div id="hzOrnek"></div>` : ""}
+        <div id="hzSoru" ${m.ornek ? "hidden" : ""}><div class="kicker">Şimdi sen dene</div>${questionHTML(q2)}</div>
+        <div class="row"><button class="btn ghost" data-hz-geri>Listeye dön</button></div>`;
+      if (m.ornek) runCozum($("#hzOrnek", box), m.ornek, {}, () => { $("#hzSoru", box).hidden = false; });
+      wireQuestion($("#hzSoru .q", box), q2, { onDone: r => { if (r) { kayit.t[i] = true; kaydet(); } } });
+      $("[data-hz-geri]", box).onclick = rapor;
+      box.scrollIntoView({ block: "start", behavior: "smooth" });
+    };
+    if (kayit && kayit.r && kayit.r.length === ms.length) rapor(); else giris();
+  }
+
   // ---------- Hatayı Bul: cümledeki yanlış kelime(ler)e dokun, sonra doğrusunu seç ----------
   // d.hatalar = [{cumle, yanlis, secenekler[3], dogru, tr?, aciklama}] — "yanlis" cümlede birebir geçen parça.
   function gameErrors(box) {
@@ -885,7 +1141,7 @@
       <div class="tests">${d.sorular.map((q, i) => `<div class="card-q" data-q="${i}">${questionHTML(q, i + 1)}</div>`).join("")}</div>`;
     let first = 0, answered = 0;
     const upd = () => { $("#score", root).textContent = `${first} / ${d.sorular.length} ilk denemede doğru · ${answered} cevaplandı`; $("#meter", root).style.width = (first / d.sorular.length * 100) + "%"; };
-    $$(".card-q", root).forEach(el => wireQuestion($(".q", el), d.sorular[+el.dataset.q], { classMode: cls, onDone: r => { answered++; if (r === 1) first++; upd(); } }));
+    $$(".card-q", root).forEach(el => wireQuestion($(".q", el), d.sorular[+el.dataset.q], { classMode: cls && qKind(d.sorular[+el.dataset.q]) === "secim", onDone: r => { answered++; if (r === 1) first++; upd(); } }));
     $("#qreset", root).onclick = () => renderTest(root);
     upd();
   }
@@ -1062,6 +1318,26 @@
       g.strokeStyle = "rgba(233,224,255,.22)";                          // kıvrımlı ok
       const y0 = h * .78; g.beginPath(); g.moveTo(w * .05, y0); g.bezierCurveTo(w * .25, y0 - 30, w * .4, y0 + 25, w * .58, y0 - 8); g.stroke();
       g.beginPath(); g.moveTo(w * .58 - 10, y0 - 14); g.lineTo(w * .58, y0 - 8); g.lineTo(w * .58 - 9, y0 + 2); g.stroke();
+    },
+    // Matematik — "Kareli defter": ince kare ızgara, süzülen sayılar/işaretler, altta sayı doğrusu
+    sayi(g, w, h, rnd) {
+      g.strokeStyle = "rgba(255,255,255,.06)"; g.lineWidth = 1;
+      for (let x = 0; x < w; x += 22) { g.beginPath(); g.moveTo(x + .5, 0); g.lineTo(x + .5, h); g.stroke(); }
+      for (let y = 0; y < h; y += 22) { g.beginPath(); g.moveTo(0, y + .5); g.lineTo(w, y + .5); g.stroke(); }
+      const ks = ["−3", "+5", "0", "½", "−1", "+2", "¾", "−7", "×", "÷", "=", "+", "−", "|−4|", "0,5", "<", ">"];
+      const x0 = w > 700 ? w * .38 : 0, n = Math.max(5, Math.round((w - x0) / 95));
+      for (let i = 0; i < n; i++) {
+        const x = x0 + (i + .15 + rnd() * .7) * (w - x0) / n, y = h * (.18 + rnd() * .5), sz = 16 + rnd() * 18, t = ks[Math.floor(rnd() * ks.length)];
+        g.save(); g.translate(x, y); g.rotate((rnd() - .5) * .3);
+        g.globalAlpha = .14 + rnd() * .16; g.fillStyle = t.startsWith("−") ? "#9fd8ff" : t.startsWith("+") ? "#ffb48a" : i % 3 ? "#ffffff" : "#ffd166";
+        g.font = `700 ${sz}px 'Lexend', 'Baloo 2', sans-serif`; g.textAlign = "center"; g.fillText(t, 0, 0); g.restore();
+      }
+      const ly = h - 16, x1 = w > 700 ? w * .4 : w * .06, x2 = w - 20, adim = 34;   // sayı doğrusu
+      g.globalAlpha = .45; g.strokeStyle = "#ffffff"; g.lineWidth = 2; g.beginPath(); g.moveTo(x1, ly); g.lineTo(x2, ly); g.stroke();
+      const orta = Math.round(((x1 + x2) / 2 - x1) / adim) * adim + x1;
+      for (let x = orta, k = 0; x > x1 + 4; x -= adim, k++) { g.beginPath(); g.moveTo(x, ly - 5); g.lineTo(x, ly + 5); g.strokeStyle = k ? "rgba(159,216,255,.85)" : "#fff"; g.stroke(); }
+      for (let x = orta + adim; x < x2 - 4; x += adim) { g.beginPath(); g.moveTo(x, ly - 5); g.lineTo(x, ly + 5); g.strokeStyle = "rgba(255,180,138,.85)"; g.stroke(); }
+      g.globalAlpha = 1;
     },
     harita(g, w, h, rnd) {
       const cream = "245,236,215";
