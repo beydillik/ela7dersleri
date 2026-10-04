@@ -47,7 +47,7 @@
     if (z >= 2) return z === 2 ? "de" : "de";
     return ({ 0: "da", 1: "de", 2: "de", 3: "te", 4: "te", 5: "te", 6: "da", 7: "de", 8: "de", 9: "da" })[d]; };
   const mathSay = s => String(s)
-    .replace(/\[\[(-?)(?:(\d+) )?(-?\d+)\/(-?\d+)\]\]/g, (m, sg, w, a, b) => `${sg ? "eksi " : ""}${w ? w + " tam " : ""}${b.replace("-", "eksi ")}'${BULUNMA(b.replace("-", ""))} ${a.replace("-", "eksi ")}`)
+    .replace(/\[\[(-?)(?:(\d+) )?([-−]?\d+)\/(-?\d+)\]\]/g, (m, sg, w, a, b) => `${sg ? "eksi " : ""}${w ? w + " tam " : ""}${b.replace("-", "eksi ")}'${BULUNMA(b.replace("-", ""))} ${a.replace(/[-−]/, "eksi ")}`)
     .replace(/\|([^|]{1,12})\|/g, "mutlak değer $1")
     .replace(/(^|[\s(=:,;])[-−](\d)/g, "$1eksi $2").replace(/(^|[\s(=:,;])\+(\d)/g, "$1artı $2")
     .replace(/(\d)[\s\u00a0]?°C/g, "$1 derece").replace(/(\d)[\s\u00a0]m\b/g, "$1 metre").replace(/\s*→\s*/g, ", ")
@@ -99,7 +99,7 @@
   // İngilizce dinleme düğmeleri: normal hız ve yavaş (kaplumbağa)
   const enBtns = (text, big) => `<span class="say-en-row"><button class="say-en${big ? " big" : ""}" data-say-en="${esc(text)}" aria-label="İngilizcesini dinle" ${tts.en ? "" : "hidden"}>${ICON.ses}</button><button class="say-en slow" data-say-en="${esc(text)}" data-slow aria-label="Yavaş dinle" ${tts.en ? "" : "hidden"}>${ICON.yavas}</button></span>`;
   // Matematik: metin içinde [[3/4]], [[-3/4]], [[2 3/4]], [[-2 3/4]] alt alta kesir olarak gösterilir.
-  const FR_RE = /\[\[(-?)(?:(\d+) )?(-?\d+)\/(-?\d+)\]\]/g;
+  const FR_RE = /\[\[(-?)(?:(\d+) )?([-−]?\d+)\/(-?\d+)\]\]/g;  // [[-9/3]] eksi kesrin önünde, [[−9/3]] (U+2212) payda, [[9/-3]] paydada
   const fx = h => h.replace(FR_RE, (m, s, w, a, b) => `<span class="kesir-w">${s ? "−" : ""}${w || ""}<span class="kesir"><span>${a.replace("-", "−")}</span><span>${b.replace("-", "−")}</span></span></span>`);
   // Metin içi {{İngilizce}} parçaları: renkli gösterilir, dokununca okunur.
   const rx = s => fx(esc(s).replace(EN_RE, (m, t) => `<span class="en" lang="en" role="button" tabindex="0" data-say-en="${t}">${t}</span>`));
@@ -875,8 +875,22 @@
   // cozum / sende: adım adım çözüm ve boşluklu "sıra sende" örneği · hazirlik: konu başı "Hazır mısın?" kontrolü
   // =================================================================
   const sayiYaz = (v, isaretli) => { const n = Number(v), t = Number.isInteger(n) ? String(Math.abs(n)) : String(Math.abs(n)).replace(".", ","); return n < 0 ? "−" + t : n > 0 && isaretli ? "+" + t : t; };
+  // Kesirli yazımı sayıya çevirir: 2,5 · "-13/5" · "9/-3" · "−2 3/5" (tam sayılı kesir; eksi bütüne aittir)
+  const kesirSayi = v => {
+    if (typeof v === "number") return v;
+    const s = String(v).trim().replace(/[−–]/g, "-").replace(",", ".");
+    const m = s.match(/^(-?)(?:(\d+)\s+)?(-?\d+)\/(-?\d+)$/);
+    if (!m) return s === "" || s === "-" ? NaN : Number(s);
+    if (+m[4] === 0) return NaN;
+    return (m[1] ? -1 : 1) * ((m[2] ? +m[2] : 0) + (+m[3]) / (+m[4]));
+  };
+  const ayniSayi = (a, b) => { const x = kesirSayi(a), y = kesirSayi(b); return isFinite(x) && isFinite(y) && Math.abs(x - y) < 1e-6; };
+  // Ara çizgideki noktayı tam sayılı kesir olarak yazar: -2.6 (bolme 5) → "−2 3/5"
+  const kesirYaz = (v, bol) => { const a = Math.abs(v), t = Math.floor(a + 1e-9), p = Math.round((a - t) * bol);
+    return p === 0 || p === bol ? sayiYaz(Math.round(v)) : `${v < 0 ? "−" : ""}${t ? t + " " : ""}${p}/${bol}`; };
   let sdSay = 0;
   // c: {min, max, dikey, bolme, isaretli, sifirEtiketi, isaretler:[{x, etiket, renk}], oklar:[{bas, son, etiket, renk}], gizle:[sayı]}
+  // bolme > 1 (yatay): ara çizgiler çizilir; seçme sorusunda ara çizgilere de dokunulur (nokta: -2.6 ya da "-13/5").
   function sdHTML(c, pick) {
     const min = c.min ?? -5, max = c.max ?? 5, n = Math.max(1, max - min), dikey = !!c.dikey, bol = c.bolme || 1;
     const is = c.isaretler || [], ok = c.oklar || [], gizle = new Set(c.gizle || []), id = "sd" + (++sdSay);
@@ -885,7 +899,8 @@
     const cls = v => v < 0 ? "sd-neg" : v > 0 ? "sd-pos" : "sd-0";
     const tam = []; for (let v = min; v <= max; v++) tam.push(v);
     if (!dikey) {
-      const dar = window.innerWidth < 640, U = dar ? Math.max(27, Math.min(44, 340 / n)) : Math.max(30, Math.min(58, 640 / n)), pad = dar ? 22 : 26;  // telefonda yazılar küçülmesin
+      const dar = window.innerWidth < 640, U0 = dar ? Math.max(27, Math.min(44, 340 / n)) : Math.max(30, Math.min(58, 640 / n)), pad = dar ? 22 : 26;  // telefonda yazılar küçülmesin
+      const U = bol > 1 ? Math.max(U0, Math.min((dar ? 340 : 640) / n, bol * (dar ? 26 : 40))) : U0;  // ara çizgiler parmakla seçilebilecek kadar aralıklı
       const archMax = ok.reduce((m, o) => Math.max(m, Math.min(52, 16 + Math.abs(o.son - o.bas) * U * .22)), 0);
       const Ly = (ok.length ? archMax + 22 : 0) + (is.some(p => p.etiket) ? 30 : 14), W = n * U + pad * 2, H = Ly + (c.sifirEtiketi ? 52 : 36);
       const X = v => pad + (v - min) * U;
@@ -899,7 +914,9 @@
         if (o.etiket) g += `<text x="${m}" y="${Ly - 13 - h}" text-anchor="middle" class="sd-ok" fill="${esc(renk(o.renk))}">${esc(o.etiket)}</text>`; });
       is.forEach(p => { g += `<circle cx="${X(p.x)}" cy="${Ly}" r="7.5" fill="${esc(renk(p.renk))}" class="sd-pt"/>`;
         if (p.etiket) g += `<text x="${X(p.x)}" y="${Ly - 15}" text-anchor="middle" class="sd-ptl" fill="${esc(renk(p.renk))}">${esc(p.etiket)}</text>`; });
-      if (pick) tam.forEach(v => { g += `<g class="sd-hit" data-x="${v}" role="button" tabindex="0" aria-label="${sayiYaz(v)}"><rect x="${X(v) - U / 2}" y="0" width="${U}" height="${H}" fill="transparent"/><circle cx="${X(v)}" cy="${Ly}" r="12" class="sd-ring"/></g>`; });
+      if (pick) tam.forEach(v => { for (let k = 0; k < bol && (k === 0 || v < max); k++) {
+        const x = +(v + k / bol).toFixed(6), w = U / bol;
+        g += `<g class="sd-hit" data-x="${x}" role="button" tabindex="0" aria-label="${k ? kesirYaz(x, bol) : sayiYaz(v)}"><rect x="${X(x) - w / 2}" y="0" width="${w}" height="${H}" fill="transparent"/><circle cx="${X(x)}" cy="${Ly}" r="${k ? 8 : 12}" class="sd-ring"/></g>`; } });
       return `<svg class="sd" viewBox="0 0 ${W} ${H}" style="max-width:${Math.round(W * 1.15)}px" role="img" aria-label="Sayı doğrusu">${defs}${g}</svg>`;
     }
     // Dikey sayı doğrusu: pozitifler yukarıda (deniz seviyesi, termometre, asansör)
@@ -920,7 +937,7 @@
 
   // Tuş takımı: tablette klavye açılmadan, büyük tuşlarla sayı yazma (eksi işareti ve virgül dahil)
   function keypadHTML(o) {
-    const t = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "−", "0", ","];
+    const t = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "−", "0", o.kesir ? "/" : ","];  // kesir: true → virgül yerine kesir çizgisi
     return `<div class="kp"><div class="kp-ekran" tabindex="0" role="textbox" aria-label="Cevabın">${o.onEk ? `<span class="kp-ek">${esc(o.onEk)}</span>` : ""}<span class="kp-txt"></span><span class="kp-imlec"></span>${o.birim ? `<span class="kp-ek">${esc(o.birim)}</span>` : ""}</div>
       <div class="kp-tus">${t.map(k => `<button class="kp-k${k === "−" ? " kp-eksi" : ""}" data-k="${k}">${k}</button>`).join("")}
       <button class="kp-k kp-sil" data-k="sil" aria-label="Sil">⌫</button><button class="btn primary kp-ok" data-k="ok">Kontrol et</button></div></div>`;
@@ -931,12 +948,13 @@
     let tries = 0, finished = false, buf = "";
     const state = opts.state || { wrong: [], result: undefined };
     const fb = $(".fb", el), txt = $(".kp-txt", el), ekran = $(".kp-ekran", el);
-    const dogruMu = v => kind === "nokta" ? Number(v) === Number(o.nokta) : [o.cevap, ...(o.kabul || [])].some(c => normSayi(c) === normSayi(v));
-    const dogruYazi = kind === "nokta" ? sayiYaz(o.nokta) : String(o.cevap).replace(/^-/, "−");
+    // denk: true → değeri aynı olan her yazım kabul (2/4 = 1/2); yoksa yalnızca cevap ve kabul listesi
+    const dogruMu = v => kind === "nokta" ? ayniSayi(v, o.nokta) : [o.cevap, ...(o.kabul || [])].some(c => normSayi(c) === normSayi(v) || (o.denk && ayniSayi(c, v)));
+    const dogruYazi = kind === "nokta" ? (typeof o.nokta === "string" ? o.nokta.replace(/-/g, "−") : sayiYaz(o.nokta)) : String(o.cevap).replace(/-/g, "−");
     const ciz = () => { if (txt) txt.textContent = buf.replace(/^-/, "−"); };
     const finish = (result, silent) => {
       finished = true; state.result = result;
-      if (kind === "nokta") { $$(".sd-hit", el).forEach(g => { g.classList.add("kapali"); if (+g.dataset.x === Number(o.nokta)) g.classList.add("on"); }); }
+      if (kind === "nokta") { $$(".sd-hit", el).forEach(g => { g.classList.add("kapali"); if (ayniSayi(g.dataset.x, o.nokta)) g.classList.add("on"); }); }
       else { buf = String(o.cevap); ciz(); ekran.classList.add(result === 0 ? "goster" : "dogru"); $$(".kp-k, .kp-ok", el).forEach(b => b.disabled = true); }
       fb.hidden = false;
       fb.className = result === 0 ? "fb show" : "fb ok";
@@ -963,17 +981,18 @@
     } else {
       const bas = k => {
         if (finished) return;
-        if (k === "ok") { if (!buf || buf === "-") { fb.hidden = false; fb.className = "fb hint"; fb.innerHTML = "<div><b>Önce cevabını yaz.</b> Tuşlara dokunarak sayıyı yaz.</div>"; return; } return answer(buf); }
+        if (k === "ok") { if (!buf || buf === "-" || buf.endsWith("/")) { fb.hidden = false; fb.className = "fb hint"; fb.innerHTML = "<div><b>Önce cevabını yaz.</b> Tuşlara dokunarak sayıyı yaz.</div>"; return; } return answer(buf); }
         if (k === "sil") buf = buf.slice(0, -1);
         else if (k === "−" || k === "-") buf = buf.startsWith("-") ? buf.slice(1) : "-" + buf;
-        else if (k === "," || k === ".") { if (!buf.includes(",")) buf += (buf === "" || buf === "-" ? "0" : "") + ","; }
-        else if (/^\d$/.test(k) && buf.replace(/[-,]/g, "").length < 7) buf += k;
+        else if (k === "," || k === ".") { if (!buf.includes(",") && !buf.includes("/")) buf += (buf === "" || buf === "-" ? "0" : "") + ","; }
+        else if (k === "/") { if (o.kesir && /\d$/.test(buf) && !buf.includes("/") && !buf.includes(",")) buf += "/"; }
+        else if (/^\d$/.test(k) && buf.replace(/[-,/]/g, "").length < 7) buf += k;
         ekran.classList.remove("yanlis"); ciz();
       };
       $(".kp-tus", el).addEventListener("click", e => { const b = e.target.closest("[data-k]"); if (b && !b.disabled) bas(b.dataset.k); });
       ekran.addEventListener("keydown", e => {
         const m = { Enter: "ok", Backspace: "sil" }[e.key] || e.key;
-        if (/^[\d,.\-−]$/.test(m) || m === "ok" || m === "sil") { e.preventDefault(); bas(m); }
+        if (/^[\d,.\-−/]$/.test(m) || m === "ok" || m === "sil") { e.preventDefault(); bas(m); }
       });
       ekran.addEventListener("click", () => ekran.focus());
     }
