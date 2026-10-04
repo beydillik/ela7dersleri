@@ -1,0 +1,243 @@
+{
+ "id": "u1t2",
+ "tur": "tarama",
+ "unite": "Unit 1: Appearance and Personality",
+ "baslik": "Ünite 1 Sonu Taraması",
+ "sayfalar": "Konu 1–3 · s. 10–26",
+ "giris": "Ünite 1 bitti, tebrikler! Bu son durakta üç konuyu birlikte tekrar ediyoruz. Özetleri oku, kartlara dokun, sonra tarama testini çöz. Not yok; sonunda hangi kelimelere tekrar bakacağını göreceksin.",
+ "buyukResim": "Önce bir insanın görünüşünü ({{tall}}, {{curly}}) ve kişiliğini ({{honest}}, {{stubborn}}) anlatmayı öğrendik. Sonra aynı kelimelerle iki kişiyi karşılaştırdık: {{taller than}}, {{more stubborn than}}. Yani üçüncü konu, ilk ikisinin kelimelerini kullanır.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Görünüşü sormak için: {{What does she look like?}}",
+    "Boy ve beden: {{tall}} uzun, {{slim}} ince. Yüz: {{beautiful}} güzel, {{cute}} sevimli.",
+    "Saç ve göz için {{has}}: {{She has curly hair and blue eyes.}}"
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Kişiliği sormak için: {{What is she like?}}",
+    "Olumlu: {{honest}} dürüst, {{generous}} cömert, {{punctual}} dakik, {{outgoing}} sosyal.",
+    "Olumsuz: {{stubborn}} inatçı, {{selfish}} bencil."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Kısa sıfat + {{-er}} + {{than}}: {{taller than}}, {{younger than}}.",
+    "Uzun sıfatta {{more}}: {{more outgoing than}}, {{more stubborn than}}.",
+    "Düzensiz: {{good}} → {{better}}. Yazılış: {{slim}} → {{slimmer}}, {{heavy}} → {{heavier}}."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Görünüş mü, kişilik mi, karşılaştırma mı?",
+   "kutular": [
+    {
+     "etiket": "Görünüş",
+     "uyeler": [
+      "tall",
+      "curly",
+      "blonde"
+     ]
+    },
+    {
+     "etiket": "Kişilik",
+     "uyeler": [
+      "honest",
+      "generous",
+      "stubborn"
+     ]
+    },
+    {
+     "etiket": "Karşılaştırma",
+     "uyeler": [
+      "taller than",
+      "more outgoing than",
+      "better than"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Ne duydun?",
+   "secenekler": [
+    "Tom daha genç ama daha uzun.",
+    "Tom daha yaşlı ve daha uzun.",
+    "Tom daha genç ve daha kısa."
+   ],
+   "dogru": 0,
+   "ipucu": "İki karşılaştırma kelimesi var: biri yaş, biri boy. Yavaş dinle düğmesini dene.",
+   "aciklama": "{{Tom is younger than me, but he is taller.}} Tom benden genç ama daha uzun (s. 16).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "younger than"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "taller than"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "tall"
+    }
+   ],
+   "dinle": "Tom is younger than me, but he is taller."
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "He's more stubborn than Jim.",
+    "He's taller than Jim.",
+    "He's more outgoing than Jim."
+   ],
+   "dogru": 2,
+   "ipucu": "Duyduğun cümlede {{more}} var. Sonra gelen kişilik kelimesine dikkat et.",
+   "aciklama": "Duyduğun cümle {{He's more outgoing than Jim.}}: Jim'den daha dışa dönük (s. 13).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "more outgoing than"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "outgoing"
+    }
+   ],
+   "dinle": "He's more outgoing than Jim."
+  },
+  {
+   "soru": "Mike's ___ than Jim, but neither of them are selfish.",
+   "secenekler": [
+    "more stubborn",
+    "stubborner",
+    "more stubborner"
+   ],
+   "dogru": 0,
+   "ipucu": "{{stubborn}} uzun bir sıfat. Uzun sıfatlarda {{-er}} mi gelir, {{more}} mü?",
+   "aciklama": "Uzun sıfatlarda {{more}} kullanılır, {{-er}} eklenmez: {{more stubborn}} (s. 13).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "more outgoing than"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "stubborn"
+    }
+   ]
+  },
+  {
+   "soru": "Henry is handsome. He's taller and ___ than me.",
+   "secenekler": [
+    "more slim",
+    "slimer",
+    "slimmer"
+   ],
+   "dogru": 2,
+   "ipucu": "{{slim}} kısa bir sıfat. {{-er}} eklerken son harfe ne olur?",
+   "aciklama": "{{slim}} → {{slimmer}}: son harf iki kez yazılır (s. 23).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "slimmer than"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "slim"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kısa sıfatlar {{more}} değil, {{-er}} alır.",
+     "{{slim}} kelimesi tek ünlü + tek ünsüzle bitiyor.",
+     "Böyle kelimelerde son harf ikilenir."
+    ]
+   }
+  },
+  {
+   "soru": "Dave: 18 yaşında, 182 cm, 88 kg. Nina: 15 yaşında, 162 cm, 50 kg. Hangisi doğru?",
+   "secenekler": [
+    "Nina is heavier than Dave.",
+    "Nina is younger than Dave.",
+    "Dave is younger than Nina."
+   ],
+   "dogru": 1,
+   "ipucu": "Önce yaşlara bak: 15 mi küçük, 18 mi?",
+   "aciklama": "Nina 15, Dave 18 yaşında. Yani {{Nina is younger than Dave.}} Dave daha ağır: {{Dave is heavier than Nina.}} (s. 26).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "younger than"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "heavier than"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "young"
+    }
+   ]
+  },
+  {
+   "soru": "Rosie: \"Sheila is more easy-going than me because I am stubborn.\" Rosie nasıl biri?",
+   "secenekler": [
+    "easy-going",
+    "stubborn",
+    "selfish"
+   ],
+   "dogru": 1,
+   "ipucu": "{{because}} kelimesinden sonra Rosie kendini anlatıyor.",
+   "aciklama": "Rosie {{I am stubborn}} diyor: inatçı. Bu yüzden Sheila ondan daha uysal (s. 16).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "stubborn"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "easy-going"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "more outgoing than"
+    }
+   ]
+  },
+  {
+   "soru": "Rachel's brother is very popular because he can play football ___ than everyone else.",
+   "secenekler": [
+    "gooder",
+    "better",
+    "more good"
+   ],
+   "dogru": 1,
+   "ipucu": "{{good}} düzensiz bir sıfat; kural dışı bir hâli var.",
+   "aciklama": "{{good}} → {{better}}: düzensizdir, {{-er}} ya da {{more}} almaz (s. 11).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "better than"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "outgoing"
+    }
+   ]
+  }
+ ]
+}

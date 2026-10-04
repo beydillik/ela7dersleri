@@ -1,0 +1,216 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "Unit 1: Appearance and Personality",
+ "baslik": "Ara Durak 1: İnsanları Anlatma",
+ "sayfalar": "Konu 1–2 · s. 10–26",
+ "giris": "İki konu bitti! Şimdi kısa bir mola verelim. Önce özetleri oku ve kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bir insanı iki yönden anlatırız: nasıl görünüyor ve nasıl biri. Kitaptaki tanıtımlarda ikisi hep birlikte geçer: önce boy, saç ve göz, sonra kişilik. İki soruyu karıştırmamak bu durağın sırrı: {{look like}} görünüş, {{like}} kişilik.",
+ "kapsar": [
+  "u1k1",
+  "u1k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Görünüşü sormak için: {{What does she look like?}}",
+    "Boy ve beden: {{tall}} uzun, {{slim}} ince. Yüz: {{beautiful}} güzel, {{cute}} sevimli.",
+    "Saç ve göz için {{has}}: {{She has curly hair and blue eyes.}}"
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Kişiliği sormak için: {{What is she like?}}",
+    "Olumlu: {{honest}} dürüst, {{generous}} cömert, {{punctual}} dakik, {{outgoing}} sosyal.",
+    "Olumsuz: {{stubborn}} inatçı, {{selfish}} bencil."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Görünüş mü, kişilik mi?",
+   "kutular": [
+    {
+     "etiket": "Görünüş",
+     "uyeler": [
+      "tall",
+      "slim",
+      "curly",
+      "blonde"
+     ]
+    },
+    {
+     "etiket": "Kişilik",
+     "uyeler": [
+      "honest",
+      "generous",
+      "stubborn",
+      "selfish"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "She is tall and honest.",
+    "She is short and honest.",
+    "She is tall and selfish."
+   ],
+   "dogru": 0,
+   "ipucu": "Cümlede bir görünüş, bir de kişilik kelimesi var. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{She is tall and honest.}}: O uzun boylu ve dürüst. {{tall}} görünüşü, {{honest}} kişiliği anlatır.",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "tall"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "honest"
+    }
+   ],
+   "dinle": "She is tall and honest."
+  },
+  {
+   "soru": "Dinle. Bu soru neyi soruyor?",
+   "secenekler": [
+    "Görünüşünü",
+    "Kişiliğini",
+    "Yaşını"
+   ],
+   "dogru": 1,
+   "ipucu": "Soruda {{look}} kelimesi var mı? Yoksa kişilik sorulur.",
+   "aciklama": "{{What is she like?}} = O nasıl biri? Kişiliği sorar. Görünüş için {{What does she look like?}} denir (s. 17).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "honest"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "beautiful"
+    }
+   ],
+   "dinle": "What is she like?"
+  },
+  {
+   "soru": "Merve is my best friend. She's tall and ___ with long brown hair and green eyes.",
+   "secenekler": [
+    "generous",
+    "beautiful",
+    "punctual"
+   ],
+   "dogru": 1,
+   "ipucu": "Boşluktan sonra saç ve göz anlatılıyor. Bu bir görünüş cümlesi.",
+   "aciklama": "{{She's tall and beautiful with long brown hair.}} Görünüş cümlesine görünüş kelimesi gelir: {{beautiful}} (s. 12).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "beautiful"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "generous"
+    }
+   ]
+  },
+  {
+   "soru": "Jim ___ blue eyes. He ___ honest and generous.",
+   "secenekler": [
+    "is / has",
+    "has / has",
+    "has / is"
+   ],
+   "dogru": 2,
+   "ipucu": "Göz ve saç için hangi fiil? Özellik için hangisi?",
+   "aciklama": "Göz, saç için {{has}}; özellik için {{is}}: {{Jim has blue eyes. He is honest.}} (s. 13).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "tall"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "honest"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "İlk boşluktan sonra ne geliyor: göz mü, özellik mi?",
+     "Göz ve saç için 'sahip olmak' fiili kullanılır.",
+     "İkinci boşlukta bir özellik var: 'olmak' fiili."
+    ]
+   }
+  },
+  {
+   "soru": "Jim likes staying at home, but Mike always hangs out with his friends. Mike nasıl biri?",
+   "secenekler": [
+    "outgoing",
+    "selfish",
+    "punctual"
+   ],
+   "dogru": 0,
+   "ipucu": "Her zaman arkadaşlarıyla dışarıda olan biri sosyal midir?",
+   "aciklama": "Mike hep arkadaşlarıyla takılıyor; o {{outgoing}}, yani dışa dönük. Kitapta: {{He's more outgoing than Jim.}} (s. 13).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "outgoing"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "cute"
+    }
+   ]
+  },
+  {
+   "soru": "She goes everywhere on time. She has long curly hair. Bu kız için hangisi doğru?",
+   "secenekler": [
+    "She is punctual and curly-haired.",
+    "She is selfish and blonde.",
+    "She is stubborn and slim."
+   ],
+   "dogru": 0,
+   "ipucu": "Her yere zamanında giden biri nasıldır? Saçı nasıl?",
+   "aciklama": "Her yere zamanında giden {{punctual}} (dakik) olur (s. 15). Saçı {{curly}} (kıvırcık).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "punctual"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "curly"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi görünüşü DEĞİL, kişiliği anlatır?",
+   "secenekler": [
+    "blonde",
+    "slim",
+    "stubborn"
+   ],
+   "dogru": 2,
+   "ipucu": "Biri fotoğrafta görülmez, ancak davranışında anlaşılır.",
+   "aciklama": "{{stubborn}} (inatçı) bir kişilik özelliğidir. {{blonde}} ve {{slim}} görünüşü anlatır.",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "stubborn"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "blonde"
+    }
+   ]
+  }
+ ]
+}
