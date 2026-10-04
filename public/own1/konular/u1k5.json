@@ -1,0 +1,670 @@
+{
+ "id": "u1k5",
+ "unite": "Unit 1: Be inspired",
+ "baslik": "used to",
+ "sayfalar": "SB s. 15–18 · WB s. 12, 88–89",
+ "giris": "Bu konuda eskiden yapıp artık yapmadığımız şeyleri anlatacağız: {{I used to be shy.}} (Eskiden utangaçtım.) Önce olumlu, sonra olumsuz ve soru; sonra {{used to}}'nun nerede KULLANILMADIĞINI göreceğiz. Oku ve Dinle sekmesinde Kelvin Doe'nun hikâyesi var.",
+ "kavramlar": [
+  {
+   "ad": "used to (+)",
+   "renk": "#ffb03a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><circle cx='18' cy='66' r='5' fill='#ffb03a'/><circle cx='30' cy='66' r='5' fill='#ffb03a'/><circle cx='42' cy='66' r='5' fill='#ffb03a'/><circle cx='54' cy='66' r='5' fill='#ffb03a'/><circle cx='66' cy='66' r='5' fill='#ffb03a'/><path d='M78 52 v28' stroke='#ff5a6e' stroke-width='5' stroke-linecap='round'/><text x='42' y='40' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='#ffb03a'>used to</text><text x='92' y='72' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='#ff5a6e'>✕</text></svg>",
+   "aciklama": "Geçmişte bir süre yaptığımız ama ARTIK yapmadığımız alışkanlıklar ve durumlar: \"eskiden ...rdı\".",
+   "ek": "{{used to}}'dan sonra fiil yalın: {{used to play}}. Bütün öznelerle aynı: {{I / He / They used to play football.}} Örnek: {{We used to walk to school, but now we cycle.}} (WB s. 88)",
+   "akilda": "eskiden ...rdı",
+   "ornek": "He used to be a rugby player.",
+   "ornekTr": "Eskiden ragbi oyuncusuydu. (SB s. 15)",
+   "formul": [
+    [
+     {
+      "t": "I / He / They",
+      "r": "ozne"
+     },
+     {
+      "t": "used to",
+      "r": "yard",
+      "alt": "hep aynı"
+     },
+     {
+      "t": "play",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{He used to be a rugby player.}} Şimdi ne?",
+    "secenekler": [
+     "Artık ragbi oyuncusu değil",
+     "Hâlâ ragbi oyuncusu",
+     "Yarın ragbi oyuncusu olacak"
+    ],
+    "dogru": 0,
+    "ipucu": "Resimdeki kırmızı çizgi: alışkanlık durdu.",
+    "aciklama": "{{used to}} geçmişte olan ama artık bitmiş durumları anlatır. (WB s. 88)"
+   }
+  },
+  {
+   "ad": "didn't use to (–)",
+   "renk": "#ff5a6e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><circle cx='18' cy='66' r='5' fill='#6b7393'/><circle cx='30' cy='66' r='5' fill='#6b7393'/><circle cx='42' cy='66' r='5' fill='#6b7393'/><circle cx='54' cy='66' r='5' fill='#6b7393'/><circle cx='66' cy='66' r='5' fill='#6b7393'/><text x='60' y='38' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='13' fill='#ff5a6e'>didn't use to</text><path d='M82 68 l6 6 12 -14' stroke='#3cc47c' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Olumsuz: eskiden yapmazdık (ama şimdi yapıyoruz). {{didn't}} + {{use to}} + yalın fiil. Dikkat: {{use}} sonunda {{-d}} yok!",
+   "ek": "Örnek: {{I didn't use to like coffee.}} Şimdi her sabah bir fincan içiyorum. (WB s. 12)",
+   "akilda": "eskiden ...mazdı",
+   "ornek": "Henry Fraser didn't use to be an artist.",
+   "ornekTr": "Henry Fraser eskiden sanatçı değildi. (SB s. 15)",
+   "formul": [
+    [
+     {
+      "t": "I / She / We",
+      "r": "ozne"
+     },
+     {
+      "t": "didn't",
+      "r": "olumsuz"
+     },
+     {
+      "t": "use to",
+      "r": "yard",
+      "alt": "-d YOK"
+     },
+     {
+      "t": "like",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru?",
+    "secenekler": [
+     "I didn't used to like coffee.",
+     "I didn't use to like coffee.",
+     "I don't used to like coffee."
+    ],
+    "dogru": 1,
+    "ipucu": "Formüldeki kırmızı uyarı: {{didn't}}'ten sonra {{use}} nasıl yazılıyordu?",
+    "aciklama": "{{didn't}} geçmişi zaten gösterir, {{-d}} gelmez: {{didn't use to}}. (WB s. 88)"
+   }
+  },
+  {
+   "ad": "Did … use to? (?)",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><circle cx='18' cy='66' r='5' fill='#9b7bff'/><circle cx='30' cy='66' r='5' fill='#9b7bff'/><circle cx='42' cy='66' r='5' fill='#9b7bff'/><circle cx='54' cy='66' r='5' fill='#9b7bff'/><circle cx='66' cy='66' r='5' fill='#9b7bff'/><text x='92' y='76' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='40' fill='#ffd166'>?</text><text x='60' y='38' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='13' fill='#9b7bff'>Did … use to</text></svg>",
+   "aciklama": "Soru: {{Did}} + özne + {{use to}} + yalın fiil? Kısa cevap: {{Yes, I did.}} / {{No, I didn't.}}",
+   "ek": "Kitaptaki Get it right! kutusu: {{Did you used to walk to school?}} YANLIŞ. (SB s. 15)",
+   "akilda": "eskiden ...r mıydı?",
+   "ornek": "Did you use to walk to school?",
+   "ornekTr": "Eskiden okula yürüyerek mi giderdin? (SB s. 15)",
+   "formul": [
+    [
+     {
+      "t": "Did",
+      "r": "yard",
+      "alt": "başa"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "use to",
+      "r": "yard",
+      "alt": "-d YOK"
+     },
+     {
+      "t": "walk",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "What",
+      "r": "diger",
+      "alt": "soru kelimesi"
+     },
+     {
+      "t": "did",
+      "r": "yard"
+     },
+     {
+      "t": "he",
+      "r": "ozne"
+     },
+     {
+      "t": "use to",
+      "r": "yard"
+     },
+     {
+      "t": "be",
+      "r": "fiil"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Did you use to like vegetables?}} sorusuna kısa cevap hangisi?",
+    "secenekler": [
+     "Yes, I used.",
+     "Yes, I was.",
+     "Yes, I did."
+    ],
+    "dogru": 2,
+    "ipucu": "Soru {{Did}} ile başladı; cevapta da o kelime kullanılır.",
+    "aciklama": "{{Did ...?}} → {{Yes, I did.}} / {{No, I didn't.}} (WB s. 88)"
+   }
+  },
+  {
+   "ad": "past simple: bir kez / süre",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='24' width='76' height='72' rx='8' fill='#f5f6fa'/><rect x='22' y='24' width='76' height='16' rx='8' fill='#4ea8de'/><rect x='30' y='48' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='45' y='48' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='60' y='48' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='75' y='48' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='30' y='62' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='45' y='62' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='60' y='62' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='75' y='62' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='30' y='76' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='45' y='76' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='60' y='76' width='10' height='9' rx='2' fill='#c9cfe0'/><rect x='75' y='76' width='10' height='9' rx='2' fill='#c9cfe0'/><circle cx='65' cy='66' r='10' fill='none' stroke='#ff5a6e' stroke-width='3'/><text x='60' y='36' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>1×</text></svg>",
+   "aciklama": "Bir kez olan olaylar, kaç kez olduğu ya da ne kadar sürdüğü için {{used to}} KULLANILMAZ; past simple kullanılır.",
+   "ek": "Doğru: {{My brother lived there for four years.}} Yanlış: {{My brother used to live there for four years.}} (WB s. 88)",
+   "akilda": "bir kez → past simple",
+   "ornek": "They went to the cinema yesterday.",
+   "ornekTr": "Dün sinemaya gittiler. (WB s. 88)",
+   "formul": [
+    [
+     {
+      "t": "They",
+      "r": "ozne"
+     },
+     {
+      "t": "went",
+      "r": "fiil",
+      "alt": "past simple"
+     },
+     {
+      "t": "yesterday",
+      "r": "diger",
+      "alt": "bir kez"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru?",
+    "secenekler": [
+     "They used to go to the cinema yesterday.",
+     "They went to the cinema yesterday.",
+     "They use to go to the cinema yesterday."
+    ],
+    "dogru": 1,
+    "ipucu": "{{yesterday}} = tek bir kez. Takvimde tek gün işaretliydi.",
+    "aciklama": "Bir kez olan olay: {{They went to the cinema yesterday.}} (WB s. 88)"
+   }
+  },
+  {
+   "ad": "şimdi: present simple",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='34' y='44' width='40' height='44' rx='6' fill='#f5f6fa'/><path d='M74 54 q16 0 16 12 t-16 12' stroke='#f5f6fa' stroke-width='5' fill='none'/><path d='M44 36 q-4 -8 2 -14 M56 36 q-4 -8 2 -14' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='38' y='50' width='32' height='10' fill='#8a6a4a'/><text x='60' y='106' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='14' fill='#3cc47c'>NOW</text></svg>",
+   "aciklama": "{{used to}}'nun şimdiki zaman hâli yoktur. Bugünkü alışkanlıklar için present simple kullanılır.",
+   "ek": "Yanlış: {{My cousin uses to drink coffee.}} Doğru: {{My cousin drinks coffee in the morning.}} (WB s. 88)",
+   "akilda": "şimdi → present simple",
+   "ornek": "My cousin drinks coffee in the morning.",
+   "ornekTr": "Kuzenim sabahları kahve içer. (WB s. 88)",
+   "formul": [
+    [
+     {
+      "t": "My cousin",
+      "r": "ozne"
+     },
+     {
+      "t": "drinks",
+      "r": "fiil",
+      "alt": "present simple"
+     },
+     {
+      "t": "in the morning",
+      "r": "diger",
+      "alt": "bugünkü alışkanlık"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Bugünkü bir alışkanlık için hangisi doğru?",
+    "secenekler": [
+     "I use to play tennis.",
+     "I play tennis.",
+     "I used to play tennis now."
+    ],
+    "dogru": 1,
+    "ipucu": "Kart: {{used to}}'nun şimdiki hâli yok.",
+    "aciklama": "Bugünkü alışkanlık: present simple: {{I play tennis.}} (WB s. 88)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangi kalıp?",
+   "kutular": [
+    {
+     "etiket": "used to kalıpları (+ – ?)",
+     "uyeler": [
+      "used to (+)",
+      "didn't use to (–)",
+      "Did … use to? (?)"
+     ]
+    },
+    {
+     "etiket": "used to KULLANILMAZ",
+     "uyeler": [
+      "past simple: bir kez / süre",
+      "şimdi: present simple"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "He used to be a rugby player.",
+   "tr": "Eskiden ragbi oyuncusuydu. (SB s. 15)"
+  },
+  {
+   "en": "Henry Fraser didn't use to be an artist.",
+   "tr": "Henry Fraser eskiden sanatçı değildi. (SB s. 15)"
+  },
+  {
+   "en": "Did you use to walk to school?",
+   "tr": "Eskiden okula yürüyerek mi giderdin? (SB s. 15)"
+  },
+  {
+   "en": "I used to be really shy.",
+   "tr": "Eskiden çok utangaçtım. (WB s. 12)"
+  },
+  {
+   "en": "I didn't use to like coffee.",
+   "tr": "Eskiden kahve sevmezdim. (WB s. 12)"
+  },
+  {
+   "en": "Our neighbours used to have a horse.",
+   "tr": "Komşularımızın eskiden bir atı vardı. (WB s. 89)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Did you used to walk to school?",
+   "yanlis": "used",
+   "secenekler": [
+    "use",
+    "using",
+    "uses"
+   ],
+   "dogru": 0,
+   "tr": "Eskiden okula yürüyerek mi giderdin?",
+   "aciklama": "{{Did}} ile {{use}} sonuna {{-d}} gelmez: {{Did you use to ...?}} (SB s. 15)"
+  },
+  {
+   "cumle": "I use to live in the countryside.",
+   "yanlis": "use",
+   "secenekler": [
+    "using",
+    "used",
+    "uses"
+   ],
+   "dogru": 1,
+   "tr": "Eskiden kırsalda yaşardım.",
+   "aciklama": "Olumlu cümlede {{used to}}: {{I used to live in the countryside.}} (WB s. 12)"
+  },
+  {
+   "cumle": "We didn't used to have the internet.",
+   "yanlis": "used",
+   "secenekler": [
+    "uses",
+    "using",
+    "use"
+   ],
+   "dogru": 2,
+   "tr": "Eskiden internetimiz yoktu.",
+   "aciklama": "{{didn't}}'ten sonra {{use to}}: {{We didn't use to have the internet.}} (WB s. 12)"
+  },
+  {
+   "cumle": "They used to go to the cinema yesterday.",
+   "yanlis": "used to go",
+   "secenekler": [
+    "went",
+    "go",
+    "were go"
+   ],
+   "dogru": 0,
+   "tr": "Dün sinemaya gittiler.",
+   "aciklama": "Bir kez olan olay past simple: {{went}}. (WB s. 88)"
+  },
+  {
+   "cumle": "My cousin uses to drink coffee in the morning.",
+   "yanlis": "uses to drink",
+   "secenekler": [
+    "used drinks",
+    "drinks",
+    "is use to drink"
+   ],
+   "dogru": 1,
+   "tr": "Kuzenim sabahları kahve içer.",
+   "aciklama": "{{used to}}'nun şimdiki hâli yok; bugünkü alışkanlık: {{drinks}}. (WB s. 88)"
+  },
+  {
+   "cumle": "He used to playing football.",
+   "yanlis": "playing",
+   "secenekler": [
+    "plays",
+    "played",
+    "play"
+   ],
+   "dogru": 2,
+   "tr": "Eskiden futbol oynardı.",
+   "aciklama": "{{used to}}'dan sonra yalın fiil: {{used to play}}. (WB s. 88)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Kelvin Doe",
+  "sayfa": "SB s. 18",
+  "sozluk": {
+   "imagine": "hayal etmek",
+   "electricity": "elektrik",
+   "neighbourhood": "mahalle",
+   "come on": "(ışık) yanmak",
+   "once a week": "haftada bir",
+   "materials": "malzemeler",
+   "useful": "işe yarar",
+   "get tired of": "-den bıkmak",
+   "rubbish": "çöp",
+   "electronic items": "elektronik eşyalar",
+   "repair": "tamir etmek",
+   "battery": "pil",
+   "participated in": "katıldı",
+   "radio station": "radyo istasyonu",
+   "proud of": "-den gurur duyan"
+  },
+  "bolumler": [
+   {
+    "baslik": "Kelvin büyürken",
+    "cumleler": [
+     {
+      "en": "Can you imagine life with no TV?",
+      "tr": "Televizyonsuz bir hayatı hayal edebilir misin?"
+     },
+     {
+      "en": "What about life without a computer, or music or even lights?",
+      "tr": "Peki bilgisayarsız, müziksiz, hatta ışıksız bir hayat?"
+     },
+     {
+      "en": "Kelvin Doe is an inspiring young man from Freetown, Sierra Leone.",
+      "tr": "Kelvin Doe, Sierra Leone'nin Freetown şehrinden ilham veren genç bir adam."
+     },
+     {
+      "en": "When he was growing up, the electricity in his neighbourhood didn't always work, so the lights only used to come on once a week.",
+      "tr": "O büyürken mahallesindeki elektrik her zaman çalışmazdı, bu yüzden ışıklar haftada yalnızca bir kez yanardı."
+     },
+     {
+      "en": "As a boy, Kelvin was interested in how things worked and he used to get excited about making things.",
+      "tr": "Kelvin çocukken eşyaların nasıl çalıştığını merak ederdi ve bir şeyler yapmak onu heyecanlandırırdı."
+     },
+     {
+      "en": "While he was hanging out with his friends, Kelvin used to find materials in the street and make useful things from them.",
+      "tr": "Arkadaşlarıyla takılırken sokakta malzeme bulur ve onlardan işe yarar şeyler yapardı."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Kelvin'in mahallesinde ışıklar ne sıklıkla yanardı?",
+      "secenekler": [
+       "Her gün",
+       "Haftada bir",
+       "Hiç"
+      ],
+      "dogru": 1,
+      "ipucu": "{{once a week}} kalıbını bul.",
+      "aciklama": "{{the lights only used to come on once a week}}: haftada bir. (SB s. 18)"
+     },
+     {
+      "soru": "Kelvin arkadaşlarıyla takılırken ne yapardı?",
+      "secenekler": [
+       "Sokakta malzeme bulup işe yarar şeyler yapardı",
+       "Radyo dinlerdi",
+       "Futbol oynardı"
+      ],
+      "dogru": 0,
+      "ipucu": "{{While he was hanging out with his friends}} cümlesini oku.",
+      "aciklama": "{{used to find materials in the street and make useful things}}. (SB s. 18)"
+     }
+    ]
+   },
+   {
+    "baslik": "Pil ve radyo",
+    "cumleler": [
+     {
+      "en": "His mum used to get tired of finding pieces of rubbish everywhere, but he made some amazing things.",
+      "tr": "Annesi her yerde çöp parçaları bulmaktan bıkardı ama o harika şeyler yaptı."
+     },
+     {
+      "en": "He used old electronic items to repair broken TVs and radios.",
+      "tr": "Bozuk televizyon ve radyoları tamir etmek için eski elektronik eşyaları kullandı."
+     },
+     {
+      "en": "At 13, he even made a battery so that his family and neighbours had lights at night.",
+      "tr": "13 yaşında, ailesi ve komşuları geceleri ışığa kavuşsun diye bir pil bile yaptı."
+     },
+     {
+      "en": "When Kelvin was at secondary school, he participated in a summer innovation camp.",
+      "tr": "Kelvin ortaokuldayken bir yaz yenilik kampına katıldı."
+     },
+     {
+      "en": "Students had to think of a way to deal with a problem in their community.",
+      "tr": "Öğrenciler toplumlarındaki bir sorunla başa çıkmanın yolunu bulmalıydı."
+     },
+     {
+      "en": "Radio is important in Sierra Leone and Kelvin knew that his community would be proud of their own radio station.",
+      "tr": "Sierra Leone'de radyo önemlidir ve Kelvin, toplumunun kendi radyo istasyonuyla gurur duyacağını biliyordu."
+     },
+     {
+      "en": "So, while he was there, Kelvin built a radio station.",
+      "tr": "Böylece Kelvin oradayken bir radyo istasyonu kurdu."
+     },
+     {
+      "en": "He played music on the radio and when he wasn't playing music, he interviewed people about life in Freetown.",
+      "tr": "Radyoda müzik çaldı; müzik çalmadığı zamanlarda insanlarla Freetown'daki hayat üzerine röportaj yaptı."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Kelvin 13 yaşında ne yaptı?",
+      "secenekler": [
+       "Bir televizyon aldı",
+       "Bir pil yaptı",
+       "Kampa gitti"
+      ],
+      "dogru": 1,
+      "ipucu": "{{At 13}} ile başlayan cümleye bak.",
+      "aciklama": "{{At 13, he even made a battery}}. (SB s. 18)"
+     },
+     {
+      "soru": "Kelvin kamptayken ne kurdu?",
+      "secenekler": [
+       "Bir okul",
+       "Bir tamir dükkânı",
+       "Bir radyo istasyonu"
+      ],
+      "dogru": 2,
+      "ipucu": "{{while he was there}} cümlesini oku.",
+      "aciklama": "{{Kelvin built a radio station}}. (SB s. 18)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Kelvin Doe'nun mahallesinde ışıklar haftada yalnızca bir kez yanardı; o da 13 yaşında komşuları için bir pil yaptı. (SB s. 18)",
+  "Kitaptaki {{Get it right!}} kutusu: soruda {{Did you use to ...?}} yazılır, {{Did you used to ...?}} yanlıştır. (SB s. 15)"
+ ],
+ "akildaKalsin": [
+  "{{used to}} + yalın fiil = eskiden yapardım, artık yapmıyorum ({{I used to be shy.}}).",
+  "Olumsuz: {{didn't use to}}; soru: {{Did you use to ...?}} ({{use}}'da {{-d}} yok!).",
+  "Bir kez ya da \"ne kadar süre\": past simple ({{They went to the cinema yesterday.}}).",
+  "Bugünkü alışkanlık: present simple ({{My cousin drinks coffee.}})."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden bazen {{used}}, bazen {{use}}?",
+   "cevap": "Olumlu cümlede {{used to}}. {{didn't}} ya da {{Did}} varsa geçmişi onlar gösterir, {{use}} yalın kalır: {{didn't use to}}, {{Did you use to ...?}} (WB s. 88)"
+  },
+  {
+   "soru": "{{used to}}'dan sonra fiil nasıl olur?",
+   "cevap": "Her zaman yalın: {{used to play}}, {{used to be}}. {{-ing}} ya da {{-ed}} almaz. (WB s. 88)"
+  },
+  {
+   "soru": "\"Dün sinemaya gittim\" için {{used to}} olur mu?",
+   "cevap": "Olmaz. Tek bir kez olan olaylar için past simple: {{They went to the cinema yesterday.}} {{used to}} tekrar eden, artık bitmiş alışkanlıklar içindir. (WB s. 88)"
+  },
+  {
+   "soru": "Kelvin'in hikâyesinde {{used to}} nerede geçiyor?",
+   "cevap": "{{the lights only used to come on once a week}} (ışıklar haftada bir yanardı) ve {{he used to get excited about making things}} (bir şeyler yapmak onu heyecanlandırırdı). (SB s. 18)"
+  },
+  {
+   "soru": "Bugün yaptığım bir şey için ne kullanırım?",
+   "cevap": "Present simple: {{My cousin drinks coffee in the morning.}} {{used to}}'nun şimdiki zaman hâli yok. (WB s. 88)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Küçükken yaptığın ama artık yapmadığın bir şeyi yaz: {{When I was younger, I used to ...}} Sonra şimdi ne yaptığını ekle.",
+   "ornekCevap": "When I was younger, I used to play with dolls. Now I play basketball.",
+   "anahtarlar": [
+    "used to",
+    "now"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "He used to be a rugby player.",
+    "He is a rugby player.",
+    "He uses to be a rugby player."
+   ],
+   "dogru": 0,
+   "dinle": "He used to be a rugby player.",
+   "kavram": "used to (+)",
+   "ipucu": "{{used to}} sesine dikkat et. Yavaş dinle düğmesini dene.",
+   "aciklama": "{{He used to be a rugby player.}} (SB s. 15)"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I didn't like coffee.",
+    "I didn't use to like coffee.",
+    "I don't like coffee."
+   ],
+   "dogru": 1,
+   "dinle": "I didn't use to like coffee.",
+   "kavram": "didn't use to (–)",
+   "ipucu": "{{didn't}}'ten sonra iki kelime daha var.",
+   "aciklama": "{{I didn't use to like coffee.}} (WB s. 12)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Henry Fraser ___ be an artist.}}",
+   "secenekler": [
+    "didn't use to",
+    "didn't used to",
+    "doesn't use to"
+   ],
+   "dogru": 0,
+   "kavram": "didn't use to (–)",
+   "ipucu": "{{didn't}}'ten sonra {{use}}'a {{-d}} gelir mi?",
+   "aciklama": "{{Henry Fraser didn't use to be an artist.}} (SB s. 15)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Did you ___ walk to school?}}",
+   "secenekler": [
+    "used to",
+    "using to",
+    "use to"
+   ],
+   "dogru": 2,
+   "kavram": "Did … use to? (?)",
+   "ipucu": "Get it right! kutusu: {{Did}} ile {{-d}} yok.",
+   "aciklama": "{{Did you use to walk to school?}} (SB s. 15)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Our neighbours ___ a horse.}}",
+   "secenekler": [
+    "used to have",
+    "use to have",
+    "used to having"
+   ],
+   "dogru": 0,
+   "kavram": "used to (+)",
+   "ipucu": "Olumlu cümle; {{used to}}'dan sonra yalın fiil.",
+   "aciklama": "{{Our neighbours used to have a horse.}} (WB s. 89)"
+  },
+  {
+   "soru": "Hangisi doğru?",
+   "secenekler": [
+    "My brother used to live there for four years.",
+    "My brother lived there for four years.",
+    "My brother use to live there for four years."
+   ],
+   "dogru": 1,
+   "kavram": "past simple: bir kez / süre",
+   "ipucu": "{{for four years}} = ne kadar sürdüğü.",
+   "aciklama": "Süre söyleniyorsa past simple: {{lived}}. (WB s. 88)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{My cousin ___ coffee in the morning.}} (bugün, her sabah)",
+   "secenekler": [
+    "used to drink",
+    "uses to drink",
+    "drinks"
+   ],
+   "dogru": 2,
+   "kavram": "şimdi: present simple",
+   "ipucu": "Bugünkü alışkanlık; {{used to}}'nun şimdiki hâli var mıydı?",
+   "aciklama": "{{My cousin drinks coffee in the morning.}} (WB s. 88)"
+  },
+  {
+   "soru": "{{used to}} neyi anlatır?",
+   "secenekler": [
+    "Şimdi yaptığımız bir şeyi",
+    "Geçmişte yapıp artık yapmadığımız bir şeyi",
+    "Gelecekteki bir planı"
+   ],
+   "dogru": 1,
+   "kavram": "used to (+)",
+   "ipucu": "Resimdeki kırmızı çizgiyi hatırla.",
+   "aciklama": "{{used to}}: geçmişteki, artık bitmiş alışkanlık ve durumlar. (WB s. 88)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{What did you use to ___?}} — {{I used to build castles.}}",
+   "secenekler": [
+    "built",
+    "building",
+    "build"
+   ],
+   "dogru": 2,
+   "kavram": "Did … use to? (?)",
+   "ipucu": "{{use to}}'dan sonra yalın fiil.",
+   "aciklama": "{{What did you use to build?}} (SB s. 15)"
+  },
+  {
+   "soru": "{{Did you use to have mobile phones?}} — {{No, we ___.}}",
+   "secenekler": [
+    "didn't",
+    "weren't",
+    "don't"
+   ],
+   "dogru": 0,
+   "kavram": "Did … use to? (?)",
+   "ipucu": "Soru {{Did}} ile başladı.",
+   "aciklama": "{{Did ...?}} → {{No, we didn't.}} (WB s. 12)"
+  }
+ ],
+ "kelimeOyunlari": false
+}

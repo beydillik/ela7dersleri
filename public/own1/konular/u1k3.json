@@ -1,0 +1,727 @@
+{
+ "id": "u1k3",
+ "unite": "Unit 1: Be inspired",
+ "baslik": "Past simple ve past continuous (when, while, as)",
+ "sayfalar": "SB s. 12–13 · WB s. 10, 88–89",
+ "giris": "Bu konuda geçmişte süren işleri anlatmayı öğreneceğiz: {{I was sleeping}} (uyuyordum). Sonra iki olayı {{when}}, {{while}} ve {{as}} ile bağlayacağız. Oku ve Dinle sekmesinde Daniel Kish'in hikâyesi var; kitap örnek cümleleri bu metinden alıyor.",
+ "kavramlar": [
+  {
+   "ad": "was / were + -ing",
+   "renk": "#ffb03a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><path d='M20 70 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0' stroke='#ffb03a' stroke-width='6' fill='none' stroke-linecap='round'/><text x='40' y='50' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='20' fill='#ffb03a'>-ing</text><circle cx='88' cy='40' r='12' fill='#f5f6fa'/><path d='M88 32 v8 l6 4' stroke='#1b2340' stroke-width='3' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Past continuous (geçmişte süren zaman). Geçmişte belli bir anda devam etmekte olan bir işi anlatır: \"...yordu\".",
+   "ek": "{{I / He / She / It}} → {{was}}; {{We / You / They}} → {{were}}. Örnek: {{At seven o'clock, I was waiting for the bus.}} (WB s. 88)",
+   "akilda": "...yordu (süren iş)",
+   "ornek": "Soon he was cycling to school.",
+   "ornekTr": "Kısa süre sonra okula bisikletle gidiyordu. (SB s. 12)",
+   "formul": [
+    [
+     {
+      "t": "I / He / She / It",
+      "r": "ozne"
+     },
+     {
+      "t": "was",
+      "r": "yard",
+      "alt": "be (geçmiş)"
+     },
+     {
+      "t": "cycling",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     }
+    ],
+    [
+     {
+      "t": "We / You / They",
+      "r": "ozne"
+     },
+     {
+      "t": "were",
+      "r": "yard",
+      "alt": "be (geçmiş)"
+     },
+     {
+      "t": "cycling",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{They ___ playing football.}} Boşluğa hangisi gelir?",
+    "secenekler": [
+     "was",
+     "were",
+     "are"
+    ],
+    "dogru": 1,
+    "ipucu": "Formüle bak: {{They}} hangi kelimeyle kullanılıyordu?",
+    "aciklama": "{{We / You / They}} ile {{were}}: {{They were playing football.}} (WB s. 88)"
+   }
+  },
+  {
+   "ad": "wasn't / weren't + -ing",
+   "renk": "#ff5a6e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><path d='M20 70 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0' stroke='#6b7393' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='48' cy='40' r='20' fill='none' stroke='#ff5a6e' stroke-width='6'/><path d='M34 54 L62 26' stroke='#ff5a6e' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Olumsuz: geçmişte o anda o işi YAPMIYORDU. {{was}} / {{were}}'den sonra {{not}} gelir.",
+   "ek": "Kısaltma: {{was not}} → {{wasn't}}, {{were not}} → {{weren't}}. (WB s. 88)",
+   "akilda": "...mıyordu",
+   "ornek": "She wasn't watching videos on the computer – she was studying!",
+   "ornekTr": "Bilgisayarda video izlemiyordu, ders çalışıyordu! (WB s. 10)",
+   "formul": [
+    [
+     {
+      "t": "He / She",
+      "r": "ozne"
+     },
+     {
+      "t": "wasn't",
+      "r": "olumsuz",
+      "alt": "was + not"
+     },
+     {
+      "t": "watching",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     }
+    ],
+    [
+     {
+      "t": "We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "weren't",
+      "r": "olumsuz",
+      "alt": "were + not"
+     },
+     {
+      "t": "watching",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I ___ sleeping. I was reading.}} Boşluğa hangisi gelir?",
+    "secenekler": [
+     "weren't",
+     "didn't",
+     "wasn't"
+    ],
+    "dogru": 2,
+    "ipucu": "{{I}} ile {{was}} kullanılır; olumsuzu neydi?",
+    "aciklama": "{{I}} → {{was}}, olumsuzu {{wasn't}}: {{I wasn't sleeping.}} (WB s. 88)"
+   }
+  },
+  {
+   "ad": "Was / Were … -ing?",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><path d='M20 70 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0' stroke='#9b7bff' stroke-width='6' fill='none' stroke-linecap='round'/><text x='60' y='56' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='52' fill='#ffd166'>?</text><text x='28' y='36' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>Was</text><text x='92' y='36' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>Were</text></svg>",
+   "aciklama": "Soru: {{Was}} / {{Were}} cümlenin başına geçer. Kısa cevap: {{Yes, I was.}} / {{No, they weren't.}}",
+   "ek": "Soru kelimesi varsa en başa: {{What were you doing?}} (WB s. 88)",
+   "akilda": "...yor muydu?",
+   "ornek": "What were you doing in the kitchen? I heard a strange noise.",
+   "ornekTr": "Mutfakta ne yapıyordun? Garip bir ses duydum. (WB s. 10)",
+   "formul": [
+    [
+     {
+      "t": "Was / Were",
+      "r": "yard",
+      "alt": "başa geçer"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "sleeping",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "What",
+      "r": "diger",
+      "alt": "soru kelimesi"
+     },
+     {
+      "t": "were",
+      "r": "yard"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "doing",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru bir soru?",
+    "secenekler": [
+     "Were you sleeping?",
+     "You were sleeping?",
+     "Did you sleeping?"
+    ],
+    "dogru": 0,
+    "ipucu": "Formüle bak: {{Was / Were}} cümlenin neresine geçiyor?",
+    "aciklama": "{{Were}} başa geçer: {{Were you sleeping?}} (WB s. 88)"
+   }
+  },
+  {
+   "ad": "when",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><path d='M18 66 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0' stroke='#4ea8de' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M56 30 l-10 16 h8 l-6 16 14 -20 h-8 l6 -12z' fill='#ff5a6e'/><text x='30' y='32' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='13' fill='#c9cfe0'>zzz</text></svg>",
+   "aciklama": "{{when}} = ...dığında, ...iken. İki olayı bağlar. Sık kullanılan kalıp: bir iş sürüyordu ({{was / were + -ing}}) + {{when}} + kısa bir olay oldu (past simple).",
+   "ek": "Örnek: {{I was sleeping when you called me last night.}} Uyuyordum (süren) → sen aradın (kısa). (WB s. 10)",
+   "akilda": "sürerken → kısa olay",
+   "ornek": "One day, a clever friend was watching Daniel on his bike when he realised something incredible.",
+   "ornekTr": "Bir gün zeki bir arkadaşı, Daniel'i bisikletinin üstünde izlerken inanılmaz bir şey fark etti. (SB s. 12)",
+   "formul": [
+    [
+     {
+      "t": "I was sleeping",
+      "r": "fiil",
+      "alt": "süren iş"
+     },
+     {
+      "t": "when",
+      "r": "diger",
+      "alt": "bağlaç"
+     },
+     {
+      "t": "you called",
+      "r": "kelime",
+      "alt": "kısa olay (past simple)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I was sleeping when you called.}} Hangi olay KISA ve ani?",
+    "secenekler": [
+     "I was sleeping",
+     "you called",
+     "ikisi de uzun"
+    ],
+    "dogru": 1,
+    "ipucu": "Resimde uzun dalga mı, şimşek mi kısa?",
+    "aciklama": "{{was sleeping}} süren iş, {{called}} kısa olay (past simple). (WB s. 10)"
+   }
+  },
+  {
+   "ad": "while",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><path d='M18 50 v-8 H82 v8' stroke='#3cc47c' stroke-width='3' fill='none' stroke-linecap='round'/><text x='50' y='34' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='15' fill='#3cc47c'>while</text><path d='M18 66 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0' stroke='#3cc47c' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='66' cy='66' r='7' fill='#ffd166'/></svg>",
+   "aciklama": "{{while}} = ...iken, ...sırasında. Arkasından genelde süren iş ({{was / were + -ing}}) gelir.",
+   "ek": "Örnek: {{While he was eating, the phone rang.}} O yemek yerken telefon çaldı. (WB s. 88)",
+   "akilda": "...iken, sırasında",
+   "ornek": "While he was studying at university, he planned an echolocation training programme.",
+   "ornekTr": "Üniversitede okurken bir ekolokasyon eğitim programı planladı. (SB s. 12)",
+   "formul": [
+    [
+     {
+      "t": "While",
+      "r": "diger",
+      "alt": "bağlaç"
+     },
+     {
+      "t": "he was eating",
+      "r": "fiil",
+      "alt": "süren iş"
+     },
+     {
+      "t": "the phone rang",
+      "r": "kelime",
+      "alt": "o sırada olan"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{While}} ne demek?",
+    "secenekler": [
+     "...dan sonra",
+     "...iken, sırasında",
+     "çünkü"
+    ],
+    "dogru": 1,
+    "ipucu": "Resimdeki köprü süren işin tamamını kapsıyor.",
+    "aciklama": "{{while}} = ...iken: {{While he was eating}} = o yemek yerken. (WB s. 88)"
+   }
+  },
+  {
+   "ad": "as",
+   "renk": "#ff8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 92 H104' stroke='#c9cfe0' stroke-width='3' stroke-linecap='round'/><path d='M98 87 l7 5 -7 5' stroke='#c9cfe0' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='26' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#c9cfe0'>PAST</text><text x='96' y='108' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='10' fill='#ffd166'>NOW</text><path d='M18 52 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0' stroke='#ff8fa3' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M18 72 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0 q4 -5 8 0 q4 5 8 0' stroke='#ffd166' stroke-width='5' fill='none' stroke-linecap='round'/><text x='10' y='56' text-anchor='start' font-family='sans-serif' font-weight='800' font-size='11' fill='#ff8fa3'>1</text><text x='10' y='76' text-anchor='start' font-family='sans-serif' font-weight='800' font-size='11' fill='#ffd166'>2</text><text x='60' y='34' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='18' fill='#ff8fa3'>as</text></svg>",
+   "aciklama": "{{as}} = ...iken; {{while}} gibi. Aynı anda olan iki olayı bağlar.",
+   "ek": "Örnek: {{As Heather was walking, she was singing a song.}} Heather yürürken şarkı söylüyordu. (WB s. 88)",
+   "akilda": "...iken (aynı anda)",
+   "ornek": "As Daniel cycled, he was making clicking sounds with his tongue.",
+   "ornekTr": "Daniel bisiklet sürerken diliyle tık sesleri çıkarıyordu. (SB s. 12)",
+   "formul": [
+    [
+     {
+      "t": "As",
+      "r": "diger",
+      "alt": "bağlaç"
+     },
+     {
+      "t": "Heather was walking",
+      "r": "fiil",
+      "alt": "1. olay"
+     },
+     {
+      "t": "she was singing",
+      "r": "fiil",
+      "alt": "2. olay (aynı anda)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{As Heather was walking, she was singing.}} İki olay ne zaman oluyor?",
+    "secenekler": [
+     "Biri bitince öteki başlıyor",
+     "Hiçbiri olmuyor",
+     "Aynı anda"
+    ],
+    "dogru": 2,
+    "ipucu": "Resimdeki iki dalga yan yana mı, arka arkaya mı?",
+    "aciklama": "{{as}} aynı anda olan iki olayı bağlar: yürürken şarkı söylüyordu. (WB s. 88)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kart hangi gruba girer?",
+   "kutular": [
+    {
+     "etiket": "Süren iş kalıbı (+ – ?)",
+     "uyeler": [
+      "was / were + -ing",
+      "wasn't / weren't + -ing",
+      "Was / Were … -ing?"
+     ]
+    },
+    {
+     "etiket": "İki olayı bağlayan kelime",
+     "uyeler": [
+      "when",
+      "while",
+      "as"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Soon he was cycling to school.",
+   "tr": "Kısa süre sonra okula bisikletle gidiyordu. (SB s. 12)"
+  },
+  {
+   "en": "While he was eating, the phone rang.",
+   "tr": "O yemek yerken telefon çaldı. (WB s. 88)"
+  },
+  {
+   "en": "I was sleeping when you called me.",
+   "tr": "Sen beni aradığında uyuyordum. (WB s. 10)"
+  },
+  {
+   "en": "I was waiting for the bus.",
+   "tr": "Otobüsü bekliyordum. (WB s. 88)"
+  },
+  {
+   "en": "Chloe was wearing jeans yesterday.",
+   "tr": "Chloe dün kot pantolon giyiyordu. (WB s. 88)"
+  },
+  {
+   "en": "It was snowing all day yesterday.",
+   "tr": "Dün bütün gün kar yağıyordu. (WB s. 89)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "I was sleep when you called me.",
+   "yanlis": "sleep",
+   "secenekler": [
+    "sleeping",
+    "slept",
+    "sleeps"
+   ],
+   "dogru": 0,
+   "tr": "Sen aradığında uyuyordum.",
+   "aciklama": "Süren iş: {{was}} + fiil{{-ing}} → {{was sleeping}}. (WB s. 10)"
+  },
+  {
+   "cumle": "They was playing football in the park.",
+   "yanlis": "was",
+   "secenekler": [
+    "is",
+    "did",
+    "were"
+   ],
+   "dogru": 2,
+   "tr": "Parkta futbol oynuyorlardı.",
+   "aciklama": "{{They}} ile {{were}} kullanılır: {{They were playing}}. (WB s. 88)"
+  },
+  {
+   "cumle": "What did you doing at eight o'clock?",
+   "yanlis": "did",
+   "secenekler": [
+    "was",
+    "were",
+    "are"
+   ],
+   "dogru": 1,
+   "tr": "Saat sekizde ne yapıyordun?",
+   "aciklama": "Süren iş sorusu: {{were}} + {{you}} + fiil{{-ing}}: {{What were you doing?}} (WB s. 88)"
+  },
+  {
+   "cumle": "She wasn't watch videos – she was studying!",
+   "yanlis": "watch",
+   "secenekler": [
+    "watched",
+    "watching",
+    "watches"
+   ],
+   "dogru": 1,
+   "tr": "Video izlemiyordu, ders çalışıyordu!",
+   "aciklama": "Olumsuzda da fiil {{-ing}} alır: {{wasn't watching}}. (WB s. 10)"
+  },
+  {
+   "cumle": "While I was walking home, I see my friend.",
+   "yanlis": "see",
+   "secenekler": [
+    "saw",
+    "seeing",
+    "sees"
+   ],
+   "dogru": 0,
+   "tr": "Eve yürürken arkadaşımı gördüm.",
+   "aciklama": "Geçmişte olan kısa olay past simple: {{see}} → {{saw}}. (WB s. 88)"
+  },
+  {
+   "cumle": "It was rain all day yesterday.",
+   "yanlis": "rain",
+   "secenekler": [
+    "rains",
+    "rained",
+    "raining"
+   ],
+   "dogru": 2,
+   "tr": "Dün bütün gün yağmur yağıyordu.",
+   "aciklama": "{{was}} + fiil{{-ing}}: {{It was raining}}. (WB s. 10)"
+  }
+ ],
+ "okuma": {
+  "baslik": "The man who taught himself to see",
+  "sayfa": "SB s. 12",
+  "sozluk": {
+   "lost his sight": "görme yetisini kaybetti",
+   "independent": "bağımsız",
+   "rode bikes": "bisiklete bindiler",
+   "teach himself": "kendi kendine öğretmek",
+   "next to a wall": "bir duvarın yanında",
+   "realised": "fark etti",
+   "incredible": "inanılmaz",
+   "clicking sounds": "tık sesleri",
+   "tongue": "dil (ağızdaki)",
+   "sound waves": "ses dalgaları",
+   "bounce off": "(bir şeye çarpıp) geri sekmek",
+   "echolocation": "ekolokasyon (sesle görme)",
+   "shape": "şekil",
+   "brain": "beyin",
+   "blind": "görme engelli"
+  },
+  "bolumler": [
+   {
+    "baslik": "Daniel bisiklete biniyor",
+    "cumleler": [
+     {
+      "en": "The inspiring Daniel Kish lost his sight when he was a baby, but he learned to use sound to become more independent.",
+      "tr": "İlham veren Daniel Kish bebekken görme yetisini kaybetti ama daha bağımsız olmak için sesi kullanmayı öğrendi."
+     },
+     {
+      "en": "When he was growing up, his friends all rode bikes to school.",
+      "tr": "O büyürken arkadaşlarının hepsi okula bisikletle giderdi."
+     },
+     {
+      "en": "Daniel wanted to be active like his friends, so he decided to teach himself to cycle by riding next to a wall.",
+      "tr": "Daniel de arkadaşları gibi hareketli olmak istedi; bu yüzden bir duvarın yanında sürerek kendi kendine bisiklet sürmeyi öğrenmeye karar verdi."
+     },
+     {
+      "en": "Soon he was cycling to school.",
+      "tr": "Kısa süre sonra okula bisikletle gidiyordu."
+     },
+     {
+      "en": "One day, a clever friend was watching Daniel on his bike when he realised something incredible: Daniel was using his ears to 'see' objects around him.",
+      "tr": "Bir gün zeki bir arkadaşı, Daniel'i bisikletinin üstünde izlerken inanılmaz bir şey fark etti: Daniel etrafındaki nesneleri 'görmek' için kulaklarını kullanıyordu."
+     },
+     {
+      "en": "As Daniel cycled, he was making clicking sounds with his tongue.",
+      "tr": "Daniel bisiklet sürerken diliyle tık sesleri çıkarıyordu."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Daniel bisiklet sürmeyi nasıl öğrendi?",
+      "secenekler": [
+       "Bir duvarın yanında sürerek",
+       "Bir kursa giderek",
+       "Arkadaşının arkasında oturarak"
+      ],
+      "dogru": 0,
+      "ipucu": "{{next to a wall}} kalıbını bul.",
+      "aciklama": "{{by riding next to a wall}}: bir duvarın yanında sürerek. (SB s. 12)"
+     },
+     {
+      "soru": "Arkadaşı ne fark etti?",
+      "secenekler": [
+       "Daniel çok hızlı sürüyordu",
+       "Daniel kulaklarıyla 'görüyordu'",
+       "Daniel'in bisikleti yeniydi"
+      ],
+      "dogru": 1,
+      "ipucu": "{{realised}} kelimesinden sonraki kısma bak.",
+      "aciklama": "{{Daniel was using his ears to 'see' objects}}: kulaklarıyla görüyordu. (SB s. 12)"
+     }
+    ]
+   },
+   {
+    "baslik": "Yarasalar gibi görmek",
+    "cumleler": [
+     {
+      "en": "Bats make similar sounds, and the sound waves travel through the air until they hit something.",
+      "tr": "Yarasalar da benzer sesler çıkarır; ses dalgaları bir şeye çarpana kadar havada ilerler."
+     },
+     {
+      "en": "The bats then listen to the sound waves as they bounce off the object and return to them with information.",
+      "tr": "Sonra yarasalar, nesneye çarpıp bilgiyle geri dönen ses dalgalarını dinler."
+     },
+     {
+      "en": "Using this technique, called echolocation, Daniel knows the size, position and shape of an object so he can 'see' it in his head.",
+      "tr": "Ekolokasyon denen bu yöntemle Daniel bir nesnenin boyutunu, yerini ve şeklini bilir; böylece onu kafasında 'görebilir'."
+     },
+     {
+      "en": "Daniel believes anyone can train their brain to learn echolocation.",
+      "tr": "Daniel, herkesin beynini ekolokasyonu öğrenecek şekilde çalıştırabileceğine inanıyor."
+     },
+     {
+      "en": "While he was studying at university, he planned an echolocation training programme.",
+      "tr": "Üniversitede okurken bir ekolokasyon eğitim programı planladı."
+     },
+     {
+      "en": "Now, he travels around the world giving talks and teaching the technique to other blind people.",
+      "tr": "Şimdi dünyayı dolaşıp konuşmalar yapıyor ve bu yöntemi başka görme engellilere öğretiyor."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Ekolokasyonla Daniel bir nesnenin neyini bilir?",
+      "secenekler": [
+       "Rengini",
+       "Fiyatını",
+       "Boyutunu, yerini ve şeklini"
+      ],
+      "dogru": 2,
+      "ipucu": "{{the size, position and shape}} kalıbına bak.",
+      "aciklama": "{{size, position and shape}}: boyut, yer ve şekil. (SB s. 12)"
+     },
+     {
+      "soru": "Daniel üniversitede okurken ne yaptı?",
+      "secenekler": [
+       "Bisiklet yarışına katıldı",
+       "Bir eğitim programı planladı",
+       "Yarasaları inceledi"
+      ],
+      "dogru": 1,
+      "ipucu": "{{While he was studying at university}} cümlesini oku.",
+      "aciklama": "{{he planned an echolocation training programme}}. (SB s. 12)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Yarasalar 'kör' diye bilinir ama aslında dünyayı sesle çok iyi 'görürler'. Daniel Kish de dilini şaklatarak aynı yöntemi kullanıyor. (SB s. 12)",
+  "Kitaptaki kural: {{when}}, {{while}} ve {{as}} \"o sırada\" anlamına gelir ya da aynı anda olan iki olayı bağlar. (WB s. 88)"
+ ],
+ "akildaKalsin": [
+  "Süren iş: {{was / were}} + fiil{{-ing}} ({{I was sleeping}}, {{they were playing}}).",
+  "Olumsuz: {{wasn't / weren't}} + fiil{{-ing}}. Soru: {{Was / Were}} başa geçer.",
+  "{{when}}: iş sürüyordu → kısa olay oldu ({{I was sleeping when you called}}).",
+  "{{while}} ve {{as}}: ...iken, aynı anda ({{While he was eating, the phone rang.}}).",
+  "Kısa, bitmiş olay past simple: {{called}}, {{rang}}, {{saw}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{was}} mı {{were}} mi?",
+   "cevap": "Özneye bak: {{I}}, {{he}}, {{she}}, {{it}} → {{was}}. {{we}}, {{you}}, {{they}} → {{were}}. {{You}} tek kişi olsa da {{were}} alır: {{What were you doing?}} (WB s. 88)"
+  },
+  {
+   "soru": "Past simple ile past continuous'ı nasıl ayırırım?",
+   "cevap": "Past simple bitmiş, kısa olay: {{the phone rang}} (telefon çaldı). Past continuous o sırada süren iş: {{he was eating}} (yemek yiyordu). Türkçede \"-dı\" ile \"-yordu\" farkı gibi. (WB s. 88)"
+  },
+  {
+   "soru": "{{when}} ile {{while}} aynı şey mi?",
+   "cevap": "Kitaba göre ikisi de \"o sırada\" demek olabilir. Pratik ipucu: kısa, ani olay çoğu zaman {{when}}'den sonra gelir ({{when you called}}); {{while}}'dan sonra genelde süren iş gelir ({{while he was eating}}). (WB s. 88)"
+  },
+  {
+   "soru": "{{As}} ne zaman kullanılır?",
+   "cevap": "{{As}} da \"...iken\" demek, {{while}} gibi. Kitaptaki cümle: {{As Daniel cycled, he was making clicking sounds with his tongue.}} Bisiklet sürerken aynı anda tık sesi çıkarıyordu. (SB s. 12)"
+  },
+  {
+   "soru": "Kısa cevap nasıl verilir?",
+   "cevap": "{{Were you sleeping?}} → {{Yes, I was.}} ya da {{No, I wasn't.}} Cevapta {{-ing}}'li fiil tekrar edilmez. (WB s. 88)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Dün akşam saat sekizde ne yapıyordun? İki cümle yaz: {{At eight o'clock, I was ...}} ve {{when}} ile bir olay ekle.",
+   "ornekCevap": "At eight o'clock, I was watching TV. I was watching TV when my dad came home.",
+   "anahtarlar": [
+    "was",
+    "ing",
+    "when"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "It was raining.",
+    "It rained.",
+    "It is raining."
+   ],
+   "dogru": 0,
+   "dinle": "It was raining.",
+   "kavram": "was / were + -ing",
+   "ipucu": "{{was}} ve {{-ing}} sesini duydun mu? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{It was raining.}}: yağmur yağıyordu. (WB s. 10)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{We ___ playing football at five o'clock.}}",
+   "secenekler": [
+    "was",
+    "were",
+    "did"
+   ],
+   "dogru": 1,
+   "kavram": "was / were + -ing",
+   "ipucu": "{{We}} ile hangisi kullanılır?",
+   "aciklama": "{{We}} → {{were}}: {{We were playing football.}} (WB s. 88)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{She ___ watching TV. She was reading.}}",
+   "secenekler": [
+    "weren't",
+    "didn't",
+    "wasn't"
+   ],
+   "dogru": 2,
+   "kavram": "wasn't / weren't + -ing",
+   "ipucu": "{{She}} ile {{was}} kullanılır; olumsuzu?",
+   "aciklama": "{{She wasn't watching TV.}} (WB s. 88)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{What ___ you doing at eight o'clock?}}",
+   "secenekler": [
+    "were",
+    "did",
+    "was"
+   ],
+   "dogru": 0,
+   "kavram": "Was / Were … -ing?",
+   "ipucu": "Süren iş sorusu; {{you}} ile hangisi?",
+   "aciklama": "{{What were you doing?}} (WB s. 88)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I was walking home ___ I saw my friend.}}",
+   "secenekler": [
+    "but",
+    "when",
+    "so"
+   ],
+   "dogru": 1,
+   "kavram": "when",
+   "ipucu": "Yürürken (süren) → arkadaşımı gördüm (kısa olay).",
+   "aciklama": "{{I was walking home when I saw my friend.}} (WB s. 10)"
+  },
+  {
+   "soru": "{{I was sleeping when you called me.}} Uzun süren iş hangisi?",
+   "secenekler": [
+    "you called me",
+    "I was sleeping",
+    "when"
+   ],
+   "dogru": 1,
+   "kavram": "when",
+   "ipucu": "{{-ing}}'li kısım hangisi?",
+   "aciklama": "{{I was sleeping}} süren iş; {{you called}} kısa olay. (WB s. 10)"
+  },
+  {
+   "soru": "Hangisi doğru?",
+   "secenekler": [
+    "While I was do my homework, the phone rang.",
+    "While I did my homework, the phone was ring.",
+    "While I was doing my homework, the phone rang."
+   ],
+   "dogru": 2,
+   "kavram": "while",
+   "ipucu": "{{while}}'dan sonra süren iş: {{was}} + fiil{{-ing}}.",
+   "aciklama": "{{While I was doing my homework, the phone rang.}} (WB s. 88)"
+  },
+  {
+   "soru": "Dinle. Hangi bağlacı duydun?",
+   "secenekler": [
+    "when",
+    "while",
+    "as"
+   ],
+   "dogru": 2,
+   "dinle": "As Heather was walking, she was singing a song.",
+   "kavram": "as",
+   "ipucu": "Cümlenin ilk kelimesine dikkat et; çok kısa bir kelime.",
+   "aciklama": "{{As Heather was walking, she was singing a song.}} (WB s. 88)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{It ___ all day yesterday, so we didn't play football.}}",
+   "secenekler": [
+    "was snowing",
+    "were snowing",
+    "snowing"
+   ],
+   "dogru": 0,
+   "kavram": "was / were + -ing",
+   "ipucu": "{{It}} ile {{was}}; ardından fiil{{-ing}}.",
+   "aciklama": "{{It was snowing all day yesterday.}} (WB s. 89)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{She didn't see the car when she ___ the street.}}",
+   "secenekler": [
+    "crossed was",
+    "was crossing",
+    "were crossing"
+   ],
+   "dogru": 1,
+   "kavram": "when",
+   "ipucu": "Caddeden geçiyordu (süren iş); {{She}} ile {{was}}.",
+   "aciklama": "{{She didn't see the car when she was crossing the street.}} (WB s. 10)"
+  }
+ ],
+ "kelimeOyunlari": false
+}
