@@ -87,7 +87,26 @@
     "dogru": 0,
     "ipucu": "Karttaki ek bilgiye bak: zıttı hangi ekle yapılıyordu?",
     "aciklama": "{{helpful}} → {{unhelpful}}. (SB s. 11)"
-   }
+   },
+   "formul": [
+    [
+     {
+      "t": "un-",
+      "r": "ek",
+      "alt": "olumsuzluk eki"
+     },
+     {
+      "t": "helpful",
+      "r": "kelime",
+      "alt": "yardımsever"
+     },
+     {
+      "t": "unhelpful",
+      "r": "sonuc",
+      "alt": "yardım etmeyen"
+     }
+    ]
+   ]
   },
   {
    "ad": "patient",
@@ -108,7 +127,26 @@
     "dogru": 1,
     "ipucu": "Kum saatini hatırla: işler uzun sürünce kızmayan kişi.",
     "aciklama": "Kızmadan bekleyen kişi {{patient}}'tir: sabırlı. (SB s. 11)"
-   }
+   },
+   "formul": [
+    [
+     {
+      "t": "im-",
+      "r": "ek",
+      "alt": "olumsuzluk eki"
+     },
+     {
+      "t": "patient",
+      "r": "kelime",
+      "alt": "sabırlı"
+     },
+     {
+      "t": "impatient",
+      "r": "sonuc",
+      "alt": "sabırsız"
+     }
+    ]
+   ]
   },
   {
    "ad": "sociable",
@@ -129,7 +167,43 @@
     "dogru": 0,
     "ipucu": "Üç arkadaşın birlikte olduğu resmi hatırla.",
     "aciklama": "Arkadaş edinmeyi seven biri {{sociable}}'dır. (SB s. 11)"
-   }
+   },
+   "formul": [
+    [
+     {
+      "t": "I'm",
+      "r": "ozne",
+      "alt": "ben …-im"
+     },
+     {
+      "t": "sociable",
+      "r": "kelime",
+      "alt": "sıfat"
+     },
+     {
+      "t": "because …",
+      "r": "diger",
+      "alt": "çünkü + neden"
+     }
+    ],
+    [
+     {
+      "t": "un-",
+      "r": "ek",
+      "alt": "olumsuzluk eki"
+     },
+     {
+      "t": "sociable",
+      "r": "kelime",
+      "alt": "sosyal"
+     },
+     {
+      "t": "unsociable",
+      "r": "sonuc",
+      "alt": "sosyal olmayan"
+     }
+    ]
+   ]
   }
  ],
  "kelimeler": [
@@ -361,6 +435,80 @@
    "ipucu": "Başında bir ek olan kelime. Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun kelime {{impatient}}: sabırsız. (SB s. 11)",
    "dinle": "impatient"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "My brother is very unpatient.",
+   "yanlis": "unpatient",
+   "secenekler": [
+    "inpatient",
+    "impatient",
+    "patientless"
+   ],
+   "dogru": 1,
+   "tr": "Kardeşim çok sabırsızdır.",
+   "aciklama": "{{patient}}'ın zıttı {{im-}} ile yapılır: {{impatient}}. (SB s. 11)"
+  },
+  {
+   "cumle": "She's grumpy and she always smiles.",
+   "yanlis": "grumpy",
+   "secenekler": [
+    "cheerful",
+    "anxious",
+    "shy"
+   ],
+   "dogru": 0,
+   "tr": "Neşelidir ve hep gülümser.",
+   "aciklama": "Hep gülümseyen biri {{cheerful}}'dır; {{grumpy}} huysuz demektir. (SB s. 11)"
+  },
+  {
+   "cumle": "I'm sociable because I hate being with people.",
+   "yanlis": "hate",
+   "secenekler": [
+    "don't like",
+    "never like",
+    "love"
+   ],
+   "dogru": 2,
+   "tr": "Sosyalim çünkü insanlarla birlikte olmayı severim.",
+   "aciklama": "{{sociable}} insanlarla birlikte olmayı seven kişidir; {{hate}} nefret etmek demektir. (SB s. 11)"
+  },
+  {
+   "cumle": "Martin isn't calm today. He's cheerful because of his exam tomorrow.",
+   "yanlis": "cheerful",
+   "secenekler": [
+    "patient",
+    "anxious",
+    "helpful"
+   ],
+   "dogru": 1,
+   "tr": "Martin bugün sakin değil. Yarınki sınavı yüzünden endişeli.",
+   "aciklama": "Sakin olmayan, sınav yüzünden kaygılanan biri {{anxious}}'tır. (WB s. 8)"
+  },
+  {
+   "cumle": "People think I'm confident, but I'm usually sociable.",
+   "yanlis": "sociable",
+   "secenekler": [
+    "shy",
+    "calm",
+    "cheerful"
+   ],
+   "dogru": 0,
+   "tr": "İnsanlar kendime güvendiğimi düşünür ama genelde utangacımdır.",
+   "aciklama": "{{but}} (ama) zıt bir şey getirir: {{confident}}'ın zıttı {{shy}}. (WB s. 8)"
+  },
+  {
+   "cumle": "He never helps me. He's very helpful.",
+   "yanlis": "helpful",
+   "secenekler": [
+    "helpless",
+    "unhelpful",
+    "inhelpful"
+   ],
+   "dogru": 1,
+   "tr": "Bana hiç yardım etmez. Hiç yardımsever değildir.",
+   "aciklama": "Yardım etmeyen biri {{unhelpful}}'dır; zıttı {{un-}} ile yapılır. (SB s. 11)"
   }
  ]
 }

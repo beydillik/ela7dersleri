@@ -1,0 +1,652 @@
+{
+ "id": "u1k2",
+ "unite": "Unit 1: Be inspired",
+ "baslik": "Describing people 2 (sensible, sensitive, talented…)",
+ "sayfalar": "SB s. 11–12, 17, 20, 128 · WB s. 8, 13",
+ "giris": "Bu konuda kitaptaki renk çarkının diğer 6 kişilik sıfatını öğreneceğiz. Dikkat: {{sensible}} ile {{sensitive}} birbirine çok benziyor ama anlamları farklı! Konunun sonunda Oku ve Dinle bölümünde, ilham veren bir genç hakkında yazılmış bir mektubu okuyacaksın.",
+ "kavramlar": [
+  {
+   "ad": "sensible",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 18 a24 24 0 0 1 14 43 v10 h-28 v-10 a24 24 0 0 1 14 -43z' fill='#ffd166'/><rect x='47' y='74' width='26' height='7' rx='3' fill='#c9cfe0'/><rect x='50' y='83' width='20' height='6' rx='3' fill='#c9cfe0'/><path d='M49 42 l8 8 15 -16' stroke='#1f8a4c' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M22 30 l-8 -4 M98 30 l8 -4 M20 50 h-9 M100 50 h9' stroke='#ffd166' stroke-width='3.5' stroke-linecap='round'/></svg>",
+   "aciklama": "Mantıklı, akıllıca davranan demektir. Kitaptaki tanım: {{makes good decisions}} (iyi kararlar verir).",
+   "ek": "Zıttı {{silly}}: saçma, aptalca davranan. Dikkat: {{sensitive}} ile karıştırma!",
+   "akilda": "mantıklı",
+   "ornek": "He's silly and immature, but she's sensible.",
+   "ornekTr": "Erkek kardeşi saçma ve çocukça davranır ama o mantıklıdır. (WB s. 8)",
+   "soru": {
+    "soru": "Her zaman iyi kararlar veren biri nasıldır?",
+    "secenekler": [
+     "sensitive",
+     "sensible",
+     "silly"
+    ],
+    "dogru": 1,
+    "ipucu": "Ampul ve onay işareti olan kartı hatırla: {{makes good decisions}}.",
+    "aciklama": "İyi kararlar veren biri {{sensible}}'dır: mantıklı. (SB s. 11)"
+   }
+  },
+  {
+   "ad": "sensitive",
+   "renk": "#ff8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M16 104 q16 -34 32 0z' fill='#4ea8de'/><circle cx='32' cy='60' r='12' fill='#ffd6a5'/><circle cx='27.8' cy='58.8' r='1.3' fill='#1b2340'/><circle cx='36.2' cy='58.8' r='1.3' fill='#1b2340'/><path d='M27 68 q5 -4 10 0' stroke='#1b2340' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M27 62 q-1 4 1 6' stroke='#8ee3d6' stroke-width='2.5' fill='none' stroke-linecap='round'/><path d='M62 104 q20 -38 40 0z' fill='#ff8fa3'/><circle cx='82' cy='58' r='13' fill='#ffd6a5'/><circle cx='77.5' cy='56.7' r='1.4' fill='#1b2340'/><circle cx='86.5' cy='56.7' r='1.4' fill='#1b2340'/><path d='M77.7 61.9 q4.3 3.6 8.6 0' stroke='#1b2340' stroke-width='2.3' fill='none' stroke-linecap='round'/><path d='M68 82 q-14 2 -26 -4' stroke='#ffd6a5' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M58 26 c-5 -6 -13 -1 -8 6 l8 7 8 -7 c5 -7 -3 -12 -8 -6z' fill='#ff5a6e'/></svg>",
+   "aciklama": "Duyarlı, hassas demektir. Kitaptaki tanım: {{understands how other people feel}} (başkalarının ne hissettiğini anlar).",
+   "ek": "Zıttı başına {{in-}} ekleyerek yapılır: {{insensitive}} (duyarsız).",
+   "akilda": "duyarlı, hassas",
+   "ornek": "She's also sensitive to people's feelings.",
+   "ornekTr": "Ayrıca insanların duygularına karşı duyarlıdır. (WB s. 13)",
+   "soru": {
+    "soru": "Arkadaşı üzgünken bunu hemen fark eden biri için hangisini kullanırız?",
+    "secenekler": [
+     "sensitive",
+     "sensible",
+     "active"
+    ],
+    "dogru": 0,
+    "ipucu": "Üzgün arkadaşına sarılan kişinin resmini hatırla.",
+    "aciklama": "Başkalarının ne hissettiğini anlayan biri {{sensitive}}'tir. (SB s. 11)"
+   },
+   "formul": [
+    [
+     {
+      "t": "in-",
+      "r": "ek",
+      "alt": "olumsuzluk eki"
+     },
+     {
+      "t": "sensitive",
+      "r": "kelime",
+      "alt": "duyarlı"
+     },
+     {
+      "t": "insensitive",
+      "r": "sonuc",
+      "alt": "duyarsız"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "ambitious",
+   "renk": "#ffb03a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 104 L48 44 L64 66 L78 48 L110 104z' fill='#5a6280'/><path d='M48 44 L56 57 L44 60z M78 48 L86 61 L72 60z' fill='#f5f6fa'/><path d='M78 48 V18' stroke='#f5f6fa' stroke-width='3'/><path d='M78 18 h22 l-6 7 6 7 h-22z' fill='#ffb03a'/><path d='M18 98 h14 v-8 h14 v-8 h14' stroke='#ffd166' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Hırslı, başarılı olmak isteyen demektir. Kitaptaki tanım: {{wants to be successful}} (başarılı olmak ister).",
+   "ek": "Zıttı başına {{un-}} ekleyerek yapılır: {{unambitious}} (hırssız).",
+   "akilda": "hırslı",
+   "ornek": "She's quite ambitious – she's got lots of goals.",
+   "ornekTr": "Oldukça hırslıdır, birçok hedefi vardır. (WB s. 8)",
+   "soru": {
+    "soru": "{{She's got lots of goals.}} (Birçok hedefi var.) Bu kişi nasıl biri?",
+    "secenekler": [
+     "lazy",
+     "ambitious",
+     "silly"
+    ],
+    "dogru": 1,
+    "ipucu": "Zirvesinde bayrak olan dağ resmini hatırla.",
+    "aciklama": "Hedefleri olan, başarılı olmak isteyen biri {{ambitious}}'tır. (WB s. 8)"
+   },
+   "formul": [
+    [
+     {
+      "t": "un-",
+      "r": "ek",
+      "alt": "olumsuzluk eki"
+     },
+     {
+      "t": "ambitious",
+      "r": "kelime",
+      "alt": "hırslı"
+     },
+     {
+      "t": "unambitious",
+      "r": "sonuc",
+      "alt": "hırssız"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "talented",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='78' width='92' height='26' rx='4' fill='#f5f6fa'/><path d='M27.1 78 v26' stroke='#c9cfe0' stroke-width='1.5'/><path d='M40.2 78 v26' stroke='#c9cfe0' stroke-width='1.5'/><path d='M53.3 78 v26' stroke='#c9cfe0' stroke-width='1.5'/><path d='M66.4 78 v26' stroke='#c9cfe0' stroke-width='1.5'/><path d='M79.5 78 v26' stroke='#c9cfe0' stroke-width='1.5'/><path d='M92.6 78 v26' stroke='#c9cfe0' stroke-width='1.5'/><rect x='24.0' y='78' width='7' height='15' fill='#1b2340'/><rect x='37.1' y='78' width='7' height='15' fill='#1b2340'/><rect x='63.3' y='78' width='7' height='15' fill='#1b2340'/><rect x='76.4' y='78' width='7' height='15' fill='#1b2340'/><rect x='89.5' y='78' width='7' height='15' fill='#1b2340'/><path d='M48 62 V24 l26 -6 v36' stroke='#9b7bff' stroke-width='5' fill='none' stroke-linejoin='round'/><ellipse cx='42' cy='62' rx='8' ry='6' fill='#9b7bff'/><ellipse cx='68' cy='56' rx='8' ry='6' fill='#9b7bff'/><path d='M94 16 l3.5 8 8.5 1 -6.5 5.5 2 8.5 -7.5 -4.5 -7.5 4.5 2 -8.5 -6.5 -5.5 8.5 -1z' fill='#ffd166'/></svg>",
+   "aciklama": "Yetenekli demektir. Kitaptaki tanım: {{is naturally good at something}} (bir şeyde doğuştan iyidir).",
+   "ek": "Zıttı başına {{un-}} ekleyerek yapılır: {{untalented}} (yeteneksiz).",
+   "akilda": "yetenekli",
+   "ornek": "He has the most amazing voice. He's so talented.",
+   "ornekTr": "Harika bir sesi var. Çok yeteneklidir. (SB s. 20)",
+   "soru": {
+    "soru": "{{She can play the piano and is very good at sport.}} O nasıl biri?",
+    "secenekler": [
+     "talented",
+     "insensitive",
+     "unambitious"
+    ],
+    "dogru": 0,
+    "ipucu": "Piyano ve nota resmini hatırla: bir şeyde doğuştan iyi olmak.",
+    "aciklama": "Piyano çalabilen ve sporda çok iyi olan biri {{talented}}'dır. (WB s. 8)"
+   },
+   "formul": [
+    [
+     {
+      "t": "un-",
+      "r": "ek",
+      "alt": "olumsuzluk eki"
+     },
+     {
+      "t": "talented",
+      "r": "kelime",
+      "alt": "yetenekli"
+     },
+     {
+      "t": "untalented",
+      "r": "sonuc",
+      "alt": "yeteneksiz"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "active",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='70' cy='26' r='10' fill='#ffd6a5'/><path d='M66 38 L56 66 M58 46 L76 54 L84 46 M58 46 L42 52 M56 66 L72 80 L70 98 M56 66 L44 84 L28 86' stroke='#4ea8de' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M14 40 h18 M10 56 h20 M16 72 h14' stroke='#ffd166' stroke-width='4' stroke-linecap='round'/><path d='M24 104 h72' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Hareketli, aktif demektir. Kitaptaki tanım: {{does a lot of exercise}} (çok egzersiz yapar).",
+   "ek": "Zıttı {{lazy}}: tembel.",
+   "akilda": "hareketli, aktif",
+   "ornek": "Daniel wanted to be active like his friends.",
+   "ornekTr": "Daniel arkadaşları gibi hareketli olmak istiyordu. (SB s. 12)",
+   "soru": {
+    "soru": "Her gün koşan ve yüzen biri için hangisini kullanırız?",
+    "secenekler": [
+     "lazy",
+     "sensible",
+     "active"
+    ],
+    "dogru": 2,
+    "ipucu": "Koşan kişinin resmini hatırla: çok egzersiz yapar.",
+    "aciklama": "Çok egzersiz yapan biri {{active}}'tir. (SB s. 11)"
+   }
+  },
+  {
+   "ad": "inspiring",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 104 q18 -40 36 0z' fill='#ff7a33'/><circle cx='32' cy='60' r='13' fill='#ffd6a5'/><circle cx='27.4' cy='58.7' r='1.4' fill='#1b2340'/><circle cx='36.5' cy='58.7' r='1.4' fill='#1b2340'/><path d='M27.7 63.9 q4.3 3.6 8.6 0' stroke='#1b2340' stroke-width='2.3' fill='none' stroke-linecap='round'/><path d='M14.9 49.7 L8.0 45.6' stroke='#ffd166' stroke-width='3.5' stroke-linecap='round'/><path d='M23.7 41.8 L20.3 34.5' stroke='#ffd166' stroke-width='3.5' stroke-linecap='round'/><path d='M35.4 40.3 L36.8 32.4' stroke='#ffd166' stroke-width='3.5' stroke-linecap='round'/><path d='M45.9 45.7 L51.5 39.9' stroke='#ffd166' stroke-width='3.5' stroke-linecap='round'/><path d='M68 104 q18 -36 36 0z' fill='#3cc47c'/><circle cx='86' cy='64' r='12' fill='#ffd6a5'/><circle cx='81.8' cy='62.8' r='1.3' fill='#1b2340'/><circle cx='90.2' cy='62.8' r='1.3' fill='#1b2340'/><path d='M82.0 67.6 q4.0 3.4 7.9 0' stroke='#1b2340' stroke-width='2.3' fill='none' stroke-linecap='round'/><path d='M86 22 a11 11 0 0 1 6 20 v5 h-12 v-5 a11 11 0 0 1 6 -20z' fill='#ffd166'/><rect x='81' y='48' width='10' height='4' rx='2' fill='#c9cfe0'/><path d='M50 44 q12 -16 24 -14' stroke='#ffd166' stroke-width='2.5' fill='none' stroke-dasharray='3 5' stroke-linecap='round'/></svg>",
+   "aciklama": "İlham veren demektir. Kitaptaki tanım: {{makes you feel you want to do something}} (sende bir şey yapma isteği uyandırır).",
+   "ek": "Zıttı {{un-}} ile: {{uninspiring}}. Birini örnek aldığını söylemek için: {{I look up to her.}}",
+   "akilda": "ilham veren",
+   "ornek": "Anoka is an inspiring person because she's ambitious and helpful.",
+   "ornekTr": "Anoka ilham veren biridir çünkü hırslı ve yardımseverdir. (SB s. 17)",
+   "soru": {
+    "soru": "Seni de bir şeyler yapmaya heveslendiren biri nasıldır?",
+    "secenekler": [
+     "inspiring",
+     "insensitive",
+     "lazy"
+    ],
+    "dogru": 0,
+    "ipucu": "Işık saçan kişi ve diğerinin üstünde yanan ampulü hatırla.",
+    "aciklama": "Sende bir şey yapma isteği uyandıran biri {{inspiring}}'dir. (SB s. 11)"
+   },
+   "formul": [
+    [
+     {
+      "t": "In my view,",
+      "r": "diger",
+      "alt": "bana göre"
+     },
+     {
+      "t": "Anoka is inspiring",
+      "r": "kelime",
+      "alt": "kişi + sıfat"
+     },
+     {
+      "t": "because …",
+      "r": "diger",
+      "alt": "çünkü + neden"
+     }
+    ]
+   ]
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "silly",
+   "tr": "saçma, aptalca davranan",
+   "ornek": "You're so silly sometimes. Why can't you be more sensible?",
+   "ornekTr": "Bazen çok saçmasın. Neden daha mantıklı olamıyorsun? (WB s. 8)"
+  },
+  {
+   "en": "insensitive",
+   "tr": "duyarsız"
+  },
+  {
+   "en": "unambitious",
+   "tr": "hırssız, hedefi olmayan"
+  },
+  {
+   "en": "untalented",
+   "tr": "yeteneksiz"
+  },
+  {
+   "en": "lazy",
+   "tr": "tembel",
+   "ornek": "When she was young, my cat was always active. Now she's just lazy.",
+   "ornekTr": "Kedim gençken hep hareketliydi. Şimdi sadece tembel. (WB s. 8)"
+  },
+  {
+   "en": "uninspiring",
+   "tr": "ilham vermeyen, sıkıcı"
+  },
+  {
+   "en": "look up to",
+   "tr": "birini örnek almak",
+   "ornek": "I look up to her.",
+   "ornekTr": "Onu örnek alıyorum. (SB s. 17)"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Zıttı nasıl yapılır?",
+   "kutular": [
+    {
+     "etiket": "Başına in- eklenir",
+     "uyeler": [
+      "sensitive"
+     ]
+    },
+    {
+     "etiket": "Başına un- eklenir",
+     "uyeler": [
+      "ambitious",
+      "talented",
+      "inspiring"
+     ]
+    },
+    {
+     "etiket": "Bambaşka bir kelime",
+     "uyeler": [
+      "sensible",
+      "active"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Daniel wanted to be active like his friends.",
+   "tr": "Daniel arkadaşları gibi hareketli olmak istiyordu. (SB s. 12)"
+  },
+  {
+   "en": "He has the most amazing voice.",
+   "tr": "Harika bir sesi var. (SB s. 20)"
+  },
+  {
+   "en": "She's also sensitive to people's feelings.",
+   "tr": "Ayrıca insanların duygularına karşı duyarlıdır. (WB s. 13)"
+  },
+  {
+   "en": "He's silly, but she's sensible.",
+   "tr": "O saçma davranır ama kız mantıklıdır. (WB s. 8)"
+  },
+  {
+   "en": "Anoka is an inspiring person.",
+   "tr": "Anoka ilham veren biridir. (SB s. 17)"
+  },
+  {
+   "en": "Why can't you be more sensible?",
+   "tr": "Neden daha mantıklı olamıyorsun? (WB s. 8)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "She always makes good decisions. She's very sensitive.",
+   "yanlis": "sensitive",
+   "secenekler": [
+    "silly",
+    "sensible",
+    "active"
+   ],
+   "dogru": 1,
+   "tr": "Her zaman iyi kararlar verir. Çok mantıklıdır.",
+   "aciklama": "İyi kararlar veren biri {{sensible}}'dır. {{sensitive}} duyarlı demek; ikisini karıştırma! (SB s. 11)"
+  },
+  {
+   "cumle": "I'm very sensible – I get upset easily.",
+   "yanlis": "sensible",
+   "secenekler": [
+    "sensitive",
+    "talented",
+    "lazy"
+   ],
+   "dogru": 0,
+   "tr": "Çok hassasım, kolay üzülürüm.",
+   "aciklama": "Kolay üzülen biri hassastır: {{sensitive}}. (WB s. 8)"
+  },
+  {
+   "cumle": "My cat was always active when she was young. Now she's just sensible.",
+   "yanlis": "sensible",
+   "secenekler": [
+    "silly",
+    "talented",
+    "lazy"
+   ],
+   "dogru": 2,
+   "tr": "Kedim gençken hep hareketliydi. Şimdi sadece tembel.",
+   "aciklama": "{{active}}'in zıttı {{lazy}}'dir: tembel. (WB s. 8)"
+  },
+  {
+   "cumle": "She can play the piano and is very good at sport. She's untalented.",
+   "yanlis": "untalented",
+   "secenekler": [
+    "unambitious",
+    "talented",
+    "insensitive"
+   ],
+   "dogru": 1,
+   "tr": "Piyano çalabilir ve sporda çok iyidir. Yeteneklidir.",
+   "aciklama": "Bunları iyi yapan biri {{talented}}'dır; {{untalented}} yeteneksiz demek. (WB s. 8)"
+  },
+  {
+   "cumle": "He doesn't understand how other people feel. He's unsensitive.",
+   "yanlis": "unsensitive",
+   "secenekler": [
+    "insensitive",
+    "sensible",
+    "imsensitive"
+   ],
+   "dogru": 0,
+   "tr": "Başkalarının ne hissettiğini anlamaz. Duyarsızdır.",
+   "aciklama": "{{sensitive}}'in zıttı {{in-}} ile yapılır: {{insensitive}}. (WB s. 8)"
+  },
+  {
+   "cumle": "Anoka wants to be successful. She's very lazy.",
+   "yanlis": "lazy",
+   "secenekler": [
+    "silly",
+    "uninspiring",
+    "ambitious"
+   ],
+   "dogru": 2,
+   "tr": "Anoka başarılı olmak istiyor. Çok hırslıdır.",
+   "aciklama": "Başarılı olmak isteyen biri {{ambitious}}'tır. (SB s. 11, 17)"
+  }
+ ],
+ "okuma": {
+  "baslik": "A letter to a magazine",
+  "sayfa": "SB s. 17",
+  "sozluk": {
+   "editor": "editör (dergiyi yöneten kişi)",
+   "competition": "yarışma",
+   "Personally": "kişisel olarak, bence",
+   "tsunami": "dev deniz dalgası",
+   "destroyed": "yok etti",
+   "coast": "kıyı, sahil",
+   "plant": "(ağaç) dikmek",
+   "environment": "çevre, doğa",
+   "environmental": "çevreyle ilgili",
+   "In my view": "bana göre",
+   "look up to": "örnek almak",
+   "schoolgirl": "kız öğrenci",
+   "cares about": "önemsiyor",
+   "In my opinion": "bence"
+  },
+  "bolumler": [
+   {
+    "baslik": "Kim kazanmalı, ne yaptı?",
+    "cumleler": [
+     {
+      "en": "Dear Editor, I am writing about your 'Inspiring person' competition.",
+      "tr": "Sayın Editör, 'İlham Veren Kişi' yarışmanız hakkında yazıyorum."
+     },
+     {
+      "en": "Personally, I think Anoka Primrose Abeyrathne should win the next 'Inspiring person' competition.",
+      "tr": "Bence bir sonraki 'İlham Veren Kişi' yarışmasını Anoka Primrose Abeyrathne kazanmalı."
+     },
+     {
+      "en": "In 2004, Anoka was living in Sri Lanka when a tsunami destroyed lots of the coast, so she decided to start a project to plant new trees.",
+      "tr": "2004'te Anoka Sri Lanka'da yaşarken bir tsunami kıyının büyük kısmını yok etti; o da yeni ağaçlar dikmek için bir proje başlatmaya karar verdi."
+     },
+     {
+      "en": "Now she works with other young people to take care of the environment and help people around the world.",
+      "tr": "Şimdi diğer gençlerle birlikte çevreyi korumak ve dünyanın dört bir yanındaki insanlara yardım etmek için çalışıyor."
+     },
+     {
+      "en": "For me, her most exciting project is called 'Make It Green Again'.",
+      "tr": "Bana göre en heyecan verici projesinin adı 'Make It Green Again' (Yeniden Yeşillendir)."
+     },
+     {
+      "en": "For this project, Anoka made Sri Lanka's first environmental music video because she wanted people to think about the environment.",
+      "tr": "Bu proje için Anoka, Sri Lanka'nın ilk çevre temalı müzik videosunu yaptı çünkü insanların çevreyi düşünmesini istiyordu."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Luke kimin kazanmasını istiyor?",
+      "secenekler": [
+       "Anoka",
+       "Kendisinin",
+       "Bir öğretmenin"
+      ],
+      "dogru": 0,
+      "ipucu": "İkinci cümleye bak: {{I think ... should win}}.",
+      "aciklama": "Luke, Anoka'nın kazanmasını istiyor. (SB s. 17)"
+     },
+     {
+      "soru": "Tsunamiden sonra Anoka ne yapmaya karar verdi?",
+      "secenekler": [
+       "Bir müzik okulu açmaya",
+       "Yeni ağaçlar dikmeye",
+       "Sri Lanka'dan taşınmaya"
+      ],
+      "dogru": 1,
+      "ipucu": "Üçüncü cümlede {{plant new trees}} geçiyor; {{plant}} kelimesine dokun.",
+      "aciklama": "{{she decided to start a project to plant new trees}}: yeni ağaçlar dikmeye karar verdi. (SB s. 17)"
+     }
+    ]
+   },
+   {
+    "baslik": "Neden ilham veriyor?",
+    "cumleler": [
+     {
+      "en": "In my view, Anoka is an inspiring person because she's ambitious and helpful.",
+      "tr": "Bana göre Anoka ilham veren biri çünkü hırslı ve yardımsever."
+     },
+     {
+      "en": "I look up to her because she used to be a normal schoolgirl and now she's changing the world.",
+      "tr": "Onu örnek alıyorum çünkü eskiden sıradan bir kız öğrenciydi, şimdi ise dünyayı değiştiriyor."
+     },
+     {
+      "en": "In my opinion, Anoka should win because she cares about the environment.",
+      "tr": "Bence Anoka kazanmalı çünkü çevreyi önemsiyor."
+     },
+     {
+      "en": "Thank you for reading this letter.",
+      "tr": "Bu mektubu okuduğunuz için teşekkürler."
+     },
+     {
+      "en": "Yours, Luke Black",
+      "tr": "Saygılarımla, Luke Black"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Luke'a göre Anoka neden ilham veren biri?",
+      "secenekler": [
+       "Çünkü çok ünlü",
+       "Çünkü yarışmayı daha önce kazandı",
+       "Çünkü hırslı ve yardımsever"
+      ],
+      "dogru": 2,
+      "ipucu": "İlk cümlede {{because}}'dan sonra gelen iki sıfata bak.",
+      "aciklama": "{{because she's ambitious and helpful}}: çünkü hırslı ve yardımsever. (SB s. 17)"
+     },
+     {
+      "soru": "{{I look up to her}} ne demek?",
+      "secenekler": [
+       "Ona tepeden bakıyorum",
+       "Onu örnek alıyorum",
+       "Onu arıyorum"
+      ],
+      "dogru": 1,
+      "ipucu": "{{look up to}} kelimesine dokunup Türkçesine bak.",
+      "aciklama": "{{look up to}}: birini örnek almak. (SB s. 17)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Anoka'nın 'Make It Green Again' projesi için yaptığı video, Sri Lanka'nın ilk çevre temalı müzik videosu. (SB s. 17)",
+  "Kitap fikir bildirmek için üç kalıp veriyor: {{Personally, I think ...}}, {{In my view, ...}}, {{In my opinion, ...}} (SB s. 17)"
+ ],
+ "akildaKalsin": [
+  "{{sensible}} = mantıklı (iyi karar verir); {{sensitive}} = duyarlı (duyguları anlar).",
+  "Zıt: {{sensible}} ↔ {{silly}}, {{active}} ↔ {{lazy}}.",
+  "{{in-}} ile: {{insensitive}}. {{un-}} ile: {{unambitious}}, {{untalented}}, {{uninspiring}}.",
+  "Fikir bildirmek: {{In my view, ...}} / {{In my opinion, ...}} + {{because ...}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{sensible}} ile {{sensitive}}'i nasıl ayırırım?",
+   "cevap": "{{sensible}} kafayla ilgili: iyi kararlar verir, mantıklıdır. {{sensitive}} kalple ilgili: başkalarının ne hissettiğini anlar, duyarlıdır. Kitaptaki tanımlar: {{makes good decisions}} ve {{understands how other people feel}}. (SB s. 11)"
+  },
+  {
+   "soru": "Ne zaman {{in-}}, ne zaman {{un-}}?",
+   "cevap": "Kuralı yok, kelimeyle birlikte ezberlemek gerekiyor. Bu konuda yalnızca {{sensitive}} {{in-}} alıyor ({{insensitive}}); {{ambitious}}, {{talented}} ve {{inspiring}} {{un-}} alıyor. Workbook'taki tablo da böyle ayırıyor. (WB s. 8)"
+  },
+  {
+   "soru": "{{look up to}} ne demek?",
+   "cevap": "Birini örnek almak, ona hayranlık duymak. Luke mektubunda {{I look up to her}} diyor: onu örnek alıyorum. Bu kalıbı 4. konuda (phrasal verbs) daha ayrıntılı göreceksin. (SB s. 17)"
+  },
+  {
+   "soru": "Fikrimi İngilizce nasıl söylerim?",
+   "cevap": "Mektuptaki gibi: {{Personally, I think ...}}, {{In my view, ...}} ya da {{In my opinion, ...}} ile başla, nedenini {{because}} ile ekle. (SB s. 17)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Tanıdığın ilham veren birini iki cümleyle anlat: {{... is an inspiring person because ...}}",
+   "ornekCevap": "My mother is an inspiring person because she's ambitious and sensitive. I look up to her.",
+   "anahtarlar": [
+    "inspiring",
+    "because"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "sensitive",
+    "sensible",
+    "silly"
+   ],
+   "dogru": 1,
+   "ipucu": "İyi karar vermekle ilgili kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{sensible}}: mantıklı. (SB s. 11)",
+   "dinle": "sensible"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "sensitive",
+    "sensible",
+    "insensitive"
+   ],
+   "dogru": 0,
+   "ipucu": "Duygularla ilgili kelime; başında ek yok.",
+   "aciklama": "Duyduğun kelime {{sensitive}}: duyarlı. (SB s. 11)",
+   "dinle": "sensitive"
+  },
+  {
+   "soru": "{{is naturally good at something}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "active",
+    "ambitious",
+    "talented"
+   ],
+   "dogru": 2,
+   "ipucu": "Piyano ve nota kartını hatırla.",
+   "aciklama": "{{talented}}: bir şeyde doğuştan iyi olan. (SB s. 11)"
+  },
+  {
+   "soru": "{{active}} kelimesinin zıttı hangisi?",
+   "secenekler": [
+    "lazy",
+    "silly",
+    "inactive"
+   ],
+   "dogru": 0,
+   "ipucu": "{{active}} kartının alt kısmına bak.",
+   "aciklama": "{{active}} hareketli, {{lazy}} tembel. (SB s. 11, WB s. 8)"
+  },
+  {
+   "soru": "Hangi kelimenin zıttı {{in-}} ile yapılır?",
+   "secenekler": [
+    "talented",
+    "sensitive",
+    "ambitious"
+   ],
+   "dogru": 1,
+   "ipucu": "Gruplayalım oyunundaki tek üyeli kutuyu hatırla.",
+   "aciklama": "{{sensitive}} → {{insensitive}}. (WB s. 8)"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "inspiring",
+    "ambitious",
+    "active"
+   ],
+   "dogru": 1,
+   "ipucu": "Başarılı olmak isteyen kişi. Bir daha dinle.",
+   "aciklama": "Duyduğun kelime {{ambitious}}: hırslı. (SB s. 11)",
+   "dinle": "ambitious"
+  },
+  {
+   "soru": "{{You're so silly sometimes.}} Bu cümlede {{silly}} hangi kelimenin zıttı?",
+   "secenekler": [
+    "sensitive",
+    "talented",
+    "sensible"
+   ],
+   "dogru": 2,
+   "ipucu": "{{sensible}} kartının alt kısmına bak.",
+   "aciklama": "{{silly}} saçma; zıttı {{sensible}} mantıklı. (WB s. 8)"
+  },
+  {
+   "soru": "{{makes you feel you want to do something}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "inspiring",
+    "sensible",
+    "active"
+   ],
+   "dogru": 0,
+   "ipucu": "Işık saçan kişi kartını hatırla.",
+   "aciklama": "{{inspiring}}: ilham veren. (SB s. 11)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{In my ___, Anoka should win.}}",
+   "secenekler": [
+    "opinion",
+    "think",
+    "because"
+   ],
+   "dogru": 0,
+   "ipucu": "Mektupta fikir bildiren kalıplardan biri: {{In my ...}}",
+   "aciklama": "{{In my opinion}}: bence. (SB s. 17)"
+  },
+  {
+   "soru": "Hangisi {{un-}} ile zıt anlam yapmaz?",
+   "secenekler": [
+    "talented",
+    "ambitious",
+    "active"
+   ],
+   "dogru": 2,
+   "ipucu": "{{active}}'in zıttı bambaşka bir kelimeydi.",
+   "aciklama": "{{active}}'in zıttı {{lazy}}; ötekiler {{untalented}}, {{unambitious}}. (SB s. 11)"
+  }
+ ]
+}

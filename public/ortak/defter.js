@@ -215,7 +215,7 @@
         html = `<div class="stage"><div class="info-grid">${k.svg}<div class="stage-body">
           <div class="kicker">Kavram ${st.k + 1} / ${d.kavramlar.length}</div>
           <h3 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k, true)}</h3>
-          <p class="big">${rx(k.aciklama)}</p>${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}
+          <p class="big">${rx(k.aciklama)}</p>${formulHTML(k.formul)}${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}
           <div class="row"><span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span>${listenBtn(kSay(k))}</div>
           </div></div>${nav(k.soru ? "Anladım, soru gelsin" : "Devam")}</div>`;
       } else if (st.t === "soru") {
@@ -292,7 +292,7 @@
     h.push(`<section><p class="lead">${rx(d.giris)}</p></section>`);
     h.push(`<section><div class="sec-title"><h3>Kavramlar</h3><span>${d.kavramlar.length} kavram</span></div><div class="cards">` +
       d.kavramlar.map(k => `<article class="card">${k.svg}<div><h4 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k)}</h4>
-        <p>${rx(k.aciklama)}</p>${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}<span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span></div></article>`).join("") + `</div></section>`);
+        <p>${rx(k.aciklama)}</p>${formulHTML(k.formul)}${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}<span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span></div></article>`).join("") + `</div></section>`);
     if (d.gruplar && d.gruplar.length) h.push(`<section><div class="sec-title"><h3>Gruplar</h3></div><div class="groups">` +
       d.gruplar.map(g => `<div class="group"><h4>${esc(g.soru)}</h4><div class="boxes">` + g.kutular.map(b => `<div class="box"><div class="lbl">${esc(b.etiket)}</div><div class="chips">` +
         b.uyeler.map(m => `<span class="chip">${icon[m] || ""}${esc(m)}</span>`).join("") + `</div></div>`).join("") + `</div></div>`).join("") + `</div></section>`);
@@ -314,10 +314,11 @@
     if (isEn()) games.push(["dinle", "Dinle ve Bul"], ["kur", "Kelimeyi Kur"]);
     if (d.cumleler && d.cumleler.length) games.push(["cumle", "Cümle Kur"]);
     if (d.resimEslestir) games.push(["resim", "Resim Eşleştir"]);
+    if (d.hatalar && d.hatalar.length) games.push(["hata", "Hatayı Bul"]);
     let g = store.get(key("oyun"), "kart"); if (!games.some(x => x[0] === g)) g = "kart";
     root.innerHTML = `<div class="subtabs">${games.map(([k, n]) => `<button class="subtab" data-g="${k}" aria-pressed="${k === g}">${n}</button>`).join("")}</div><div id="game"></div>`;
     $$(".subtab", root).forEach(b => b.onclick = () => { g = b.dataset.g; store.set(key("oyun"), g); $$(".subtab", root).forEach(x => x.setAttribute("aria-pressed", x === b)); run(); });
-    const run = () => { const box = $("#game", root); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup, dinle: gameListen, kur: gameSpell, cumle: gameSentence, resim: gamePicture })[g](box); };
+    const run = () => { const box = $("#game", root); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup, dinle: gameListen, kur: gameSpell, cumle: gameSentence, resim: gamePicture, hata: gameErrors })[g](box); };
     run();
   }
 
@@ -760,32 +761,120 @@
   }
 
   // ---------- Oku ve Dinle: kitaptaki okuma metni, cümle cümle sesli ve vurgulu ----------
+  // Okuma metni: isteğe bağlı "bolumler" (uzun metin parçalara bölünür) ve "sozluk" (zor kelimeye dokununca Türkçesi).
+  // Eski biçim (okuma.cumleler + okuma.sorular) tek bölüm olarak çalışır.
+  const reEsc = x => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  function glossify(text, sozluk) {
+    const keys = Object.keys(sozluk || {}).sort((a, b) => b.length - a.length);
+    if (!keys.length) return esc(text);
+    const map = {}; keys.forEach(k => map[lower(k)] = sozluk[k]);
+    const re = new RegExp(`\\b(${keys.map(k => reEsc(esc(k))).join("|")})\\b`, "gi");
+    return esc(text).replace(re, m => `<span class="gl" role="button" tabindex="0" data-tr="${esc(map[lower(m)] || "")}">${m}</span>`);
+  }
   function renderOkuma(root) {
-    const o = S.data.okuma; let yavas = false, tr = false, calan = -1, zaman = null;
-    root.innerHTML = `<div class="stage"><div class="kicker">Oku ve Dinle · ${esc(o.sayfa || "")}</div><h3 lang="en">${esc(o.baslik || "Reading")}</h3>
-      <p class="ek">Bir cümleye dokun, o cümle okunur. "Baştan oku" bütün metni okur ve okunan cümle renklenir. Önce Türkçesine bakmadan anlamaya çalış.</p>
-      <div class="row okuma-ctl"><button class="btn primary" id="oPlay">${ICON.ses}Baştan oku</button><button class="btn" id="oStop">Durdur</button>
-        <button class="btn ghost" id="oSlow" aria-pressed="false">${ICON.yavas}Yavaş</button><button class="btn ghost" id="oTr" aria-pressed="false">Türkçesini göster</button></div>
-      <div class="okuma" lang="en">${o.cumleler.map((c, n) => `<p class="oc" data-i="${n}"><span class="oen">${esc(c.en)}</span><span class="otr" lang="tr">${rx(c.tr)}</span></p>`).join("")}</div></div>
-      ${o.sorular && o.sorular.length ? `<div class="stage"><div class="kicker">Metni anladın mı?</div><div class="tests">${o.sorular.map((q, n) => `<div class="card-q" data-q="${n}">${questionHTML(q, n + 1)}</div>`).join("")}</div></div>` : ""}`;
-    const isaretle = n => $$(".oc", root).forEach((p, j) => p.classList.toggle("now", j === n));
-    const dur = () => { calan = -1; clearTimeout(zaman); tts.stop(); isaretle(-1); };
-    const oku = (n, devam) => {
-      if (!tts.en || n >= o.cumleler.length) { dur(); return; }
-      calan = n; isaretle(n); speechSynthesis.cancel();
-      const txt = o.cumleler[n].en, u = tts.utter(txt, tts.en, yavas ? .6 : .85);
-      let gitti = false;
-      const sonraki = () => { if (gitti || calan !== n) return; gitti = true; clearTimeout(zaman); if (devam) setTimeout(() => calan === n && oku(n + 1, true), 350); else isaretle(-1); };
-      u.onend = sonraki;
-      zaman = setTimeout(sonraki, (txt.split(/\s+/).length * 520 + 1200) / (yavas ? .6 : .85)); // bazı seslerde onend gelmeyebilir
+    const o = S.data.okuma;
+    const bolumler = o.bolumler && o.bolumler.length ? o.bolumler : [{ cumleler: o.cumleler, sorular: o.sorular }];
+    let bi = Math.min(store.get(key("okuma:" + S.konu), 0), bolumler.length - 1), yavas = false, tr = false, calan = -1, zaman = null;
+    const ciz = () => {
+      const bl = bolumler[bi], cs = bl.cumleler, qs = bl.sorular || [];
+      root.innerHTML = `<div class="stage"><div class="kicker">Oku ve Dinle · ${esc(o.sayfa || "")}</div><h3 lang="en">${esc(o.baslik || "Reading")}</h3>
+        ${bolumler.length > 1 ? `<div class="subtabs okuma-bol">${bolumler.map((x, n) => `<button class="subtab" data-b="${n}" aria-pressed="${n === bi}">Bölüm ${n + 1}${x.baslik ? ` · ${esc(x.baslik)}` : ""}</button>`).join("")}</div>` : ""}
+        <p class="ek">Bir cümleye dokun, o cümle okunur. "Baştan oku" bu bölümü okur ve okunan cümle renklenir.${o.sozluk ? " Altı noktalı kelimeye dokunursan Türkçesi çıkar." : ""} Önce Türkçesine bakmadan anlamaya çalış.</p>
+        <div class="row okuma-ctl"><button class="btn primary" id="oPlay">${ICON.ses}Baştan oku</button><button class="btn" id="oStop">Durdur</button>
+          <button class="btn ghost" id="oSlow" aria-pressed="${yavas}">${ICON.yavas}Yavaş</button><button class="btn ghost" id="oTr" aria-pressed="${tr}">Türkçesini göster</button></div>
+        <div class="okuma${tr ? " show-tr" : ""}" lang="en">${cs.map((c, n) => `<p class="oc" data-i="${n}"><span class="oen">${glossify(c.en, o.sozluk)}</span><span class="otr" lang="tr">${rx(c.tr)}</span></p>`).join("")}</div>
+        ${bi < bolumler.length - 1 ? `<div class="row"><button class="btn" id="oNext">Bölüm ${bi + 2}'ye geç</button></div>` : ""}</div>
+        ${qs.length ? `<div class="stage"><div class="kicker">${bolumler.length > 1 ? `Bölüm ${bi + 1}: ` : ""}Metni anladın mı?</div><div class="tests">${qs.map((q, n) => `<div class="card-q" data-q="${n}">${questionHTML(q, n + 1)}</div>`).join("")}</div></div>` : ""}`;
+      const isaretle = n => $$(".oc", root).forEach((p, j) => p.classList.toggle("now", j === n));
+      const dur = () => { calan = -1; clearTimeout(zaman); tts.stop(); isaretle(-1); };
+      const oku = (n, devam) => {
+        if (!tts.en || n >= cs.length) { dur(); return; }
+        calan = n; isaretle(n); speechSynthesis.cancel();
+        const txt = cs[n].en, u = tts.utter(txt, tts.en, yavas ? .6 : .85);
+        let gitti = false;
+        const sonraki = () => { if (gitti || calan !== n) return; gitti = true; clearTimeout(zaman); if (devam) setTimeout(() => calan === n && oku(n + 1, true), 350); else isaretle(-1); };
+        u.onend = sonraki;
+        zaman = setTimeout(sonraki, (txt.split(/\s+/).length * 520 + 1200) / (yavas ? .6 : .85)); // bazı seslerde onend gelmeyebilir
+      };
+      const git = n => { dur(); bi = n; store.set(key("okuma:" + S.konu), n); ciz(); };
+      $("#oPlay", root).onclick = () => oku(0, true);
+      $("#oStop", root).onclick = dur;
+      $("#oSlow", root).onclick = e => { yavas = !yavas; e.currentTarget.setAttribute("aria-pressed", yavas); };
+      $("#oTr", root).onclick = e => { tr = !tr; e.currentTarget.setAttribute("aria-pressed", tr); root.querySelector(".okuma").classList.toggle("show-tr", tr); };
+      $$(".okuma-bol .subtab", root).forEach(x => x.onclick = () => git(+x.dataset.b));
+      const nx = $("#oNext", root); if (nx) nx.onclick = () => { git(bi + 1); root.scrollIntoView({ behavior: "smooth", block: "start" }); };
+      $(".okuma", root).onclick = e => {
+        const g = e.target.closest(".gl");
+        if (g) { const ac = !g.classList.contains("open"); $$(".gl.open", root).forEach(x => x.classList.remove("open")); if (ac) { g.classList.add("open"); tts.sayEn(g.textContent); } return; }
+        if (e.target.closest(".en")) return;
+        const p = e.target.closest(".oc"); if (p) { p.classList.add("peek"); oku(+p.dataset.i, false); }
+      };
+      $$(".card-q", root).forEach(el => wireQuestion($(".q", el), qs[+el.dataset.q], {}));
+      if (!tts.en) $(".okuma-ctl", root).insertAdjacentHTML("afterend", `<p class="game-msg">Bu cihazda İngilizce ses bulunamadı; metni okuyabilirsin ama dinleyemezsin.</p>`);
     };
-    $("#oPlay", root).onclick = () => oku(0, true);
-    $("#oStop", root).onclick = dur;
-    $("#oSlow", root).onclick = e => { yavas = !yavas; e.currentTarget.setAttribute("aria-pressed", yavas); };
-    $("#oTr", root).onclick = e => { tr = !tr; e.currentTarget.setAttribute("aria-pressed", tr); root.querySelector(".okuma").classList.toggle("show-tr", tr); };
-    $(".okuma", root).onclick = e => { if (e.target.closest(".en")) return; const p = e.target.closest(".oc"); if (p) { p.classList.add("peek"); oku(+p.dataset.i, false); } };
-    $$(".card-q", root).forEach(el => wireQuestion($(".q", el), o.sorular[+el.dataset.q], {}));
-    if (!tts.en) $(".okuma-ctl", root).insertAdjacentHTML("afterend", `<p class="game-msg">Bu cihazda İngilizce ses bulunamadı; metni okuyabilirsin ama dinleyemezsin.</p>`);
+    ciz();
+  }
+
+  // ---------- Formül şeridi (dilbilgisi kalıbı renkli bloklarla) ----------
+  // kavram.formul = [[{t, r, alt?}, …], …] — her iç dizi bir satır. r (rol): ozne, yard, fiil, ek, kelime, sonuc, olumsuz, diger.
+  // Bloklar arasında "+", "sonuc" bloğundan önce "=" yazılır.
+  function formulHTML(f) {
+    if (!f || !f.length) return "";
+    return `<div class="formul" aria-label="Kalıp">${f.map(row => `<div class="frow">${row.map((b, n) =>
+      `${n ? `<span class="fop">${b.r === "sonuc" ? "=" : "+"}</span>` : ""}<span class="fblok fr-${esc(b.r || "diger")}"><b lang="en">${esc(b.t)}</b>${b.alt ? `<small>${esc(b.alt)}</small>` : ""}</span>`).join("")}</div>`).join("")}</div>`;
+  }
+
+  // ---------- Hatayı Bul: cümledeki yanlış kelime(ler)e dokun, sonra doğrusunu seç ----------
+  // d.hatalar = [{cumle, yanlis, secenekler[3], dogru, tr?, aciklama}] — "yanlis" cümlede birebir geçen parça.
+  function gameErrors(box) {
+    const tur = shuffle(S.data.hatalar).slice(0, 6);
+    let i = 0, temiz = 0;
+    const draw = () => {
+      if (i >= tur.length) {
+        box.innerHTML = `<div class="game-end"><div class="stars">${"★".repeat(temiz)}${"☆".repeat(tur.length - temiz)}</div>
+          <p class="game-msg">${tur.length} hatayı düzelttin, ${temiz} tanesini hiç yanılmadan buldun. Dedektif gibi dikkatliydin!</p><button class="btn primary" id="hagain">Yeni tur</button></div>`;
+        $("#hagain", box).onclick = () => gameErrors(box); return;
+      }
+      const h = tur[i], k = h.cumle.indexOf(h.yanlis);
+      const once = h.cumle.slice(0, k).split(/\s+/).filter(Boolean), sonra = h.cumle.slice(k + h.yanlis.length).split(/\s+/).filter(Boolean);
+      const parca = [...once.map(t => ({ t })), { t: h.yanlis, hedef: true }, ...sonra.map(t => ({ t }))];
+      let bulDeneme = 0, secDeneme = 0;
+      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Cümle ${i + 1} / ${tur.length}. Bu cümlede bir hata var. Yanlış olan kelimeye dokun.</p>
+        <div class="hata-cumle" lang="en">${parca.map((p, n) => !p.hedef && /^[^\p{L}\p{N}]+$/u.test(p.t) ? `<span class="hpunc">${esc(p.t)}</span>` : `<button class="tok htok" data-n="${n}">${esc(p.t)}</button>`).join("")}</div>
+        ${h.tr ? `<p class="ek hata-tr" hidden>${rx(h.tr)}</p>` : ""}
+        <div id="hsec"></div><p class="game-msg" id="hmsg"></p>`;
+      const msg = t => $("#hmsg", box).innerHTML = t;
+      box.onclick = e => {
+        const t = e.target.closest(".htok"); if (!t || t.disabled || $("#hsec .opts", box)) return;
+        const p = parca[+t.dataset.n];
+        if (!p.hedef) {
+          bulDeneme++; t.classList.add("shake"); setTimeout(() => t.classList.remove("shake"), 400);
+          if (bulDeneme >= 2) { const tr = $(".hata-tr", box); if (tr) tr.hidden = false; $(`.htok[data-n="${once.length}"]`, box).classList.add("ipucu"); msg("İpucu: Türkçesini oku. Hatalı kelime parlayan kutuda."); }
+          else msg("Bu kelime doğru. Cümleyi bir daha oku, hangi kelime yanlış duruyor?");
+          return;
+        }
+        t.classList.add("bad"); t.classList.remove("ipucu");
+        msg(bulDeneme ? "Buldun! Şimdi doğrusunu seç." : "Harika, hatayı hemen buldun! Şimdi doğrusunu seç.");
+        $("#hsec", box).innerHTML = `<div class="opts">${h.secenekler.map((s, j) => `<button class="opt" data-o="${j}" lang="en">${"abc"[j]}) ${esc(s)}</button>`).join("")}</div>`;
+        $("#hsec .opts", box).onclick = ev => {
+          const b = ev.target.closest(".opt"); if (!b || b.disabled) return;
+          const j = +b.dataset.o;
+          const bitir = ok => {
+            $$("#hsec .opt", box).forEach((x, n) => { x.disabled = true; if (n === h.dogru) x.classList.add("right"); });
+            t.textContent = h.secenekler[h.dogru]; t.classList.remove("bad"); t.classList.add("ok");
+            if (ok && !bulDeneme && !secDeneme) temiz++;
+            msg(`<b>${ok ? (secDeneme ? "Doğru! İkinci denemede buldun." : "Doğru!") : "Doğrusu yeşil olan."}</b> ${rx(h.aciklama || "")}`);
+            tts.sayEn(h.cumle.slice(0, k) + h.secenekler[h.dogru] + h.cumle.slice(k + h.yanlis.length));
+            const n = document.createElement("button"); n.className = "btn primary"; n.textContent = "Sonraki cümle"; n.onclick = () => { i++; draw(); }; $("#hmsg", box).after(n);
+          };
+          if (j === h.dogru) return bitir(true);
+          secDeneme++; b.classList.add("wrong"); b.disabled = true;
+          if (secDeneme >= 2) return bitir(false);
+          msg("Henüz değil. Cümlenin anlamını ve kuralı düşün, bir daha dene.");
+        };
+      };
+    };
+    draw();
   }
 
   // ---------- Test ----------
