@@ -1,0 +1,232 @@
+{
+ "id": "u1t2",
+ "tur": "tarama",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Ara Durak 2: Uzay Teknolojisi ve Biz",
+ "sayfalar": "Konu 3–4 · s. 20–21, 24–28, 30–32",
+ "giris": "İki konu daha bitti! Türkiye'nin uzay çalışmalarını ve uzay teknolojisinin hayatımıza etkisini birlikte tekrar edelim. Önce özetleri oku, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Türkiye de uzaya uydu gönderiyor, astronot yolluyor. Uzay için geliştirilen teknolojiler (GPS, güneş paneli, dijital termometre) hayatımızı kolaylaştırıyor. Ama görevi biten uydular uzay çöpüne dönüşüyor. Uydularımızı korumak için bu çöpü azaltmamız gerekiyor.",
+ "kapsar": [
+  "u1k3",
+  "u1k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Uzayda aktif 9 uydumuz var: 6'sı haberleşme (Türksat), 3'ü gözlem (Göktürk 1, Göktürk 2, İMECE).",
+    "TÜBİTAK UZAY uzay teknolojisi geliştirir. TUA (2018) uzay çalışmalarımızı yönetir.",
+    "Alper Gezeravcı ilk Türk astronotudur: 2024, 18 gün, 13 deney."
+   ]
+  },
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Uzay için geliştirilen teknolojiler günlük hayatta da kullanılır: MR, toz gıda, GPS, güneş paneli, duman dedektörü.",
+    "Görevini bitirmiş uydular, roket parçaları ve yakıt tankları uzay çöpü olur.",
+    "Uzay çöpü çok hızlıdır, küçük parça bile zarar verir. Çözüm: yakalayıp Dünya'ya getirmek, çevreci teknoloji."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Uzayda mı dolaşır, yeryüzünde mi kullanılır?",
+   "kutular": [
+    {
+     "etiket": "Uzayda dolaşır",
+     "uyeler": [
+      "Türksat 6A",
+      "İMECE",
+      "Görevi biten uydu",
+      "Roket parçası"
+     ]
+    },
+    {
+     "etiket": "Yeryüzünde kullanılır",
+     "uyeler": [
+      "Dijital termometre",
+      "Duman dedektörü",
+      "Evdeki güneş paneli",
+      "Su filtresi"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Uzay teknolojisi hangi alanda işimize yarıyor?",
+   "kutular": [
+    {
+     "etiket": "Sağlık",
+     "uyeler": [
+      "MR cihazı",
+      "Dijital termometre"
+     ]
+    },
+    {
+     "etiket": "Gıda",
+     "uyeler": [
+      "Toz gıda",
+      "Su filtresi"
+     ]
+    },
+    {
+     "etiket": "Ulaşım",
+     "uyeler": [
+      "GPS (navigasyon)"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Görevini tamamlamış bir haberleşme uydusu Dünya'nın çevresinde kontrolsüz dolanıyor. Bu uyduya artık ne denir?",
+   "secenekler": [
+    "Uzay çöpü",
+    "Gözlem uydusu",
+    "Uzay sondası"
+   ],
+   "dogru": 0,
+   "ipucu": "Görevi biten uydular, roket parçaları ve yakıt tankları ne olur? \"Yörüngedeki ...\"",
+   "aciklama": "Görevini tamamlamış uydular, roket parçaları ve yakıt tankları uzay çöpüdür (s. 30).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Haberleşme Uydusu"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Uzay Kirliliği"
+    }
+   ]
+  },
+  {
+   "soru": "Uzay çöpleri Türksat gibi haberleşme uydularımız için neden tehlikelidir?",
+   "secenekler": [
+    "Işık kirliliği yaptıkları için",
+    "Çok hızlı oldukları için küçük bir parça bile uyduya zarar verebilir",
+    "Uyduların güneş panellerini çalıştırdıkları için"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Küçük parça, büyük ...\" Uzay çöpleri nasıl hareket eder?",
+   "aciklama": "Uzay çöpleri çok yüksek hızlara ulaşır; küçük parçalar bile büyük zarar verebilir. Önlem alınmazsa haberleşmede aksamalar olabilir (s. 32).",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Uzay Çöpünün Zararı ve Çözümü"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Haberleşme Uydusu"
+    }
+   ]
+  },
+  {
+   "soru": "Telefondaki navigasyonla yol buluyoruz. Bu uzay teknolojisi hangi alana girer?",
+   "secenekler": [
+    "Sağlık",
+    "Gıda",
+    "Ulaşım"
+   ],
+   "dogru": 2,
+   "ipucu": "GPS'in açılımını hatırla: Küresel Konumlama Sistemi. Yol tarifi hangi alanla ilgilidir?",
+   "aciklama": "Navigasyon, yani Küresel Konumlama Sistemi (GPS), ulaşım alanındaki örnektir (s. 25).",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Ulaşım Alanında"
+    }
+   ]
+  },
+  {
+   "soru": "Kurum ve görev eşleştirmelerinden hangisi doğrudur?",
+   "secenekler": [
+    "TUA → MR cihazı üretir",
+    "TÜBİTAK UZAY → yerli uydu ve uçuş bilgisayarı geliştirir",
+    "TEKNOFEST → uzay çöplerini radarla izler"
+   ],
+   "dogru": 1,
+   "ipucu": "Hangi kurumun akılda kalsın sözü \"uzay teknolojisi atölyesi\" idi? Uzay çöplerini izleyen sistemin adı neydi?",
+   "aciklama": "TÜBİTAK UZAY uydular, yıldız izler ve uçuş bilgisayarları geliştirir (s. 26). Uzay çöplerini Uzay Gözetim Ağı (SSN) izler (s. 30).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "TÜBİTAK UZAY"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Türkiye Uzay Ajansı"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Uzay Kirliliği"
+    }
+   ]
+  },
+  {
+   "soru": "Alper Gezeravcı uzayda biyoloji ve tıp alanında da deney yaptı. Uzay araştırmalarının sağlığa katkısına örnek hangisidir?",
+   "secenekler": [
+    "Duman dedektörü",
+    "Termal battaniye",
+    "Dijital termometre"
+   ],
+   "dogru": 2,
+   "ipucu": "Hastanede ve evde vücut sıcaklığını ölçmek için ne kullanırız?",
+   "aciklama": "Gezeravcı biyoloji, tıp ve genetik gibi alanlarda 13 deney yaptı (s. 28). Dijital termometre sağlık alanındaki örnektir; duman dedektörü ve termal battaniye endüstri alanındadır (s. 25).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Alper Gezeravcı"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Sağlık Alanında"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Endüstri Alanında"
+    }
+   ]
+  },
+  {
+   "soru": "Alper Gezeravcı planlanandan uzun, 18 gün uzayda kaldı. Astronot yiyecekleri bu yüzden nasıl olmalıdır?",
+   "secenekler": [
+    "Taze ve çabuk bozulan",
+    "Uzun süre bozulmayan, az yer kaplayan",
+    "Büyük ve ağır paketli"
+   ],
+   "dogru": 1,
+   "ipucu": "Uzayda market yok, yer de dar. Toz gıdaları düşün.",
+   "aciklama": "Gezeravcı hava koşulları yüzünden 18 gün uzayda kaldı (s. 27). Astronotlar için yapılan yiyecekler uzun süre bozulmaz, az yer kaplar ve kolay hazırlanır (s. 25).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Alper Gezeravcı"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Gıda Alanında"
+    }
+   ]
+  },
+  {
+   "soru": "Yeni uydular gönderirken uzay kirliliğini artırmamak için ne yapılabilir?",
+   "secenekler": [
+    "Daha çevreci uzay teknolojileri geliştirmek",
+    "Görevi biten uyduları yörüngede bırakmak",
+    "Roket parçalarını uzayda bırakmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Kitaptaki iki çözüm önerisini hatırla: çöpleri yakalayıp Dünya'ya getirmek ve ...",
+   "aciklama": "Çözüm önerileri: uzay çöplerini yakalayıp Dünya'ya getirmek ve daha çevreci teknolojiler geliştirmek (s. 32).",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Uzay Çöpünün Zararı ve Çözümü"
+    }
+   ]
+  }
+ ]
+}

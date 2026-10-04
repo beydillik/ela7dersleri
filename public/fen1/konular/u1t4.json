@@ -1,0 +1,283 @@
+{
+ "id": "u1t4",
+ "tur": "tarama",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–7 · s. 15–50",
+ "giris": "Uzay Çağı ünitesinin sonuna geldin! Yedi konunun en önemli bilgilerini birlikte tekrar edelim. Özetleri oku, kartlara dokun, sonra tarama testini çöz. Not yok; neyi hatırladığını görmek için.",
+ "buyukResim": "Bu ünitede yeryüzünden uzaya doğru ilerledik. Önce uzaya gönderdiğimiz araçları ve teleskopları tanıdık. Sonra Türkiye'nin uzay çalışmalarını ve uzay teknolojisinin hayatımıza faydalarını öğrendik. En son gökyüzüne baktık: yıldızların hayatı, takımyıldızlar, galaksiler ve evren.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3",
+  "u1k4",
+  "u1k5",
+  "u1k6",
+  "u1k7"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Roket taşır, uydu döner, sonda keşfeder.",
+    "Mekikte ve istasyonda astronot vardır. Roket, uydu ve sonda Dünya'dan kontrol edilir.",
+    "Güneş paneli: uydu, sonda ve istasyon kullanır. Roket kullanmaz."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Teleskoplar ikiye ayrılır: uzay teleskobu ve yer tabanlı teleskop.",
+    "Uzay teleskobu atmosfere takılmaz, daha net görür. Yer tabanlı teleskop ucuzdur, bakımı kolaydır.",
+    "Gözlemevi (rasathane) yüksek, şehirden uzak, ışık kirliliği olmayan bir yere kurulur."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Uzayda aktif 9 uydumuz var: 6'sı haberleşme (Türksat), 3'ü gözlem (Göktürk 1, Göktürk 2, İMECE).",
+    "TÜBİTAK UZAY uzay teknolojisi geliştirir. TUA (2018) uzay çalışmalarımızı yönetir.",
+    "Alper Gezeravcı ilk Türk astronotudur: 2024, 18 gün, 13 deney."
+   ]
+  },
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Uzay için geliştirilen teknolojiler günlük hayatta da kullanılır: MR, toz gıda, GPS, güneş paneli, duman dedektörü.",
+    "Görevini bitirmiş uydular, roket parçaları ve yakıt tankları uzay çöpü olur.",
+    "Uzay çöpü çok hızlıdır, küçük parça bile zarar verir. Çözüm: yakalayıp Dünya'ya getirmek, çevreci teknoloji."
+   ]
+  },
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "Yıldızlar bulutsuda doğar. Gaz ve toz çöküp ısınınca ön yıldız, çekirdek tepkimeleri başlayınca yıldız olur.",
+    "Küçük kütleli: kırmızı dev → gezegenimsi bulutsu → beyaz cüce. Büyük kütleli: kırmızı süperdev → süpernova → nötron yıldızı ya da kara delik.",
+    "Kütle büyükse yaşam kısa. Işık yılı zamanı değil uzaklığı ölçer."
+   ]
+  },
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Birbirine yakın görünen, şekil oluşturan yıldızlara takımyıldız denir. Yıldız kümesi ise kütle çekimiyle bağlıdır.",
+    "Büyükayı 7 yıldızlı bir cezveye benzer.",
+    "Cezvenin uçtaki iki yıldızının arası × 5 = Kutup Yıldızı. O hep kuzeyi gösterir."
+   ]
+  },
+  {
+   "konu": "u1k7",
+   "maddeler": [
+    "Gök cisimlerinden oluşan yapıya galaksi (gök ada) denir.",
+    "Güneş sistemi Samanyolu'nun Avcı (Orion) kolundadır. En yakın galaksi Andromeda'dır.",
+    "Küçükten büyüğe: Dünya → Güneş sistemi → Samanyolu → evren."
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "İnsan yapımı mı, doğal mı?",
+   "kutular": [
+    {
+     "etiket": "İnsan yapımı araç",
+     "uyeler": [
+      "Yapay Uydu",
+      "Uzay Sondası",
+      "Hubble Uzay Teleskobu",
+      "Türksat 6A"
+     ]
+    },
+    {
+     "etiket": "Doğal gök cismi ya da yapısı",
+     "uyeler": [
+      "Kutup Yıldızı",
+      "Bulutsu",
+      "Andromeda Galaksisi",
+      "Beyaz cüce"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Uzaya mı gitti, gökyüzünü mü inceledi?",
+   "kutular": [
+    {
+     "etiket": "Uzaya gitti",
+     "uyeler": [
+      "Alper Gezeravcı",
+      "Yuri Gagarin"
+     ]
+    },
+    {
+     "etiket": "Gökyüzünü inceledi (astronom)",
+     "uyeler": [
+      "Nüzhet Toydemir Gökdoğan",
+      "Edwin Hubble"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hubble Uzay Teleskobu adını kimden alır?",
+   "secenekler": [
+    "Edwin Hubble",
+    "Yuri Gagarin",
+    "Alper Gezeravcı"
+   ],
+   "dogru": 0,
+   "ipucu": "Galaksileri ilk keşfeden gök bilimcinin adını hatırla.",
+   "aciklama": "Edwin Hubble, Hubble Uzay Teleskobu'na adını veren gök bilimcidir; galaksileri ilk o keşfetti (s. 48, 50).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Hubble Uzay Teleskobu"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Edwin Hubble"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Astronot"
+    }
+   ]
+  },
+  {
+   "soru": "Gözlemevinde teleskopla Kutup Yıldızı'nı inceleyen bilim insanına ne denir?",
+   "secenekler": [
+    "Astronot",
+    "Astronom",
+    "Kozmonot"
+   ],
+   "dogru": 1,
+   "ipucu": "Akılda kalsın: \"... gökyüzünü inceler, ... uzaya gider.\"",
+   "aciklama": "Astronom (gök bilimci), gök cisimlerini inceleyen bilim insanıdır; astronot ise uzaya gider (s. 26). Kozmonot, Rusların astronota verdiği addır (s. 26).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Astronomi ve Astronom"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Astronot"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Kutup Yıldızı"
+    }
+   ]
+  },
+  {
+   "soru": "Şehirdeki ışık kirliliği yüzünden hangisini görmek zorlaşır?",
+   "secenekler": [
+    "Telefondaki navigasyonu",
+    "Uydudan gelen televizyon yayınını",
+    "Gökyüzündeki takımyıldızları"
+   ],
+   "dogru": 2,
+   "ipucu": "Işık kirliliği hangi işi bozuyordu: gökyüzü gözlemini mi, iletişimi mi?",
+   "aciklama": "Işık kirliliği gökyüzü gözlemlerini olumsuz etkiler (s. 23). Takımyıldızlar gökyüzünü gözleyerek görülür (s. 44).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Işık Kirliliği"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Takımyıldız"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi ışık yılı ile ölçülür?",
+   "secenekler": [
+    "Bir yıldızın bize uzaklığı",
+    "Bir uydunun yörüngede kaldığı süre",
+    "Gezeravcı'nın uzayda kaldığı gün sayısı"
+   ],
+   "dogru": 0,
+   "ipucu": "Işık yılı zamanı mı ölçer, uzaklığı mı? \"Yıl değil, ...\"",
+   "aciklama": "Işık yılı gök cisimleri arasındaki uzaklığı ifade etmek için kullanılır (s. 40). Gezeravcı'nın uzayda kaldığı süre ise gün ile söylenir: 18 gün (s. 27).",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Işık Yılı"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Alper Gezeravcı"
+    }
+   ]
+  },
+  {
+   "soru": "James Webb, Hubble'dan 100 kat daha güçlüdür. Bu güç en çok hangi işe yarar?",
+   "secenekler": [
+    "Uzay çöplerini toplamaya",
+    "Telefonla yol bulmaya",
+    "Uzaktaki galaksileri daha net görmeye"
+   ],
+   "dogru": 2,
+   "ipucu": "Teleskobun görevi neydi? NASA'nın iki teleskopla çektiği Araba Tekeri fotoğrafını hatırla.",
+   "aciklama": "James Webb, Hubble'dan 100 kat güçlüdür. Araba Tekeri Galaksisi'nin James Webb ile çekilen görüntüsü daha net çıktı (s. 22).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "James Webb Uzay Teleskobu"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Galaksi"
+    }
+   ]
+  },
+  {
+   "soru": "Eskiden insanlar yönlerini yıldızlara bakarak bulurdu. Bugün telefonda yönümüzü ne ile buluruz?",
+   "secenekler": [
+    "Kutup Yıldızı ile",
+    "GPS (navigasyon) ile",
+    "Teleskop ile"
+   ],
+   "dogru": 1,
+   "ipucu": "Uzay teknolojisinin ulaşım alanındaki örneğini hatırla: Küresel Konumlama Sistemi.",
+   "aciklama": "Eski çağlarda insanlar yönlerini yıldızları gözleyerek bulurdu (s. 43). Bugün telefonlardaki navigasyon (GPS) uzay teknolojisiyle çalışır (s. 25).",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Yıldızlarla Yön Bulma"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Ulaşım Alanında"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi insanların uzaya gönderdiği bir araç DEĞİLDİR?",
+   "secenekler": [
+    "Uzay sondası",
+    "Yapay uydu",
+    "Bulutsu"
+   ],
+   "dogru": 2,
+   "ipucu": "Yıldızların doğum yeri neydi? Onu insanlar mı yaptı?",
+   "aciklama": "Uzay sondası ve yapay uydu insanların gönderdiği uzay araçlarıdır (s. 18). Bulutsu ise yıldızların doğduğu doğal oluşum bölgesidir (s. 41).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Uzay Sondası"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Yapay Uydu"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Bulutsu"
+    }
+   ]
+  }
+ ]
+}

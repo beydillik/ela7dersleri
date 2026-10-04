@@ -1,0 +1,243 @@
+{
+ "id": "u1t3",
+ "tur": "tarama",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Ara Durak 3: Yıldızlardan Evrene",
+ "sayfalar": "Konu 5–7 · s. 34–50",
+ "giris": "Üç konu bitti! Bir yıldızın hayatından başlayıp bütün evrene kadar uzandık. Şimdi bunları birlikte tekrar edelim. Önce özetleri oku, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Önce tek bir yıldızın hayatını izledik: bulutsuda doğar, kütlesine göre farklı biçimde ölür. Sonra gökyüzündeki yıldızları birleştirip takımyıldız şekilleri çizdik. En son yıldızlar, gezegenler ve bulutsular bir araya gelince galaksi, hepsini içine alan boşluk da evren oldu. Küçükten büyüğe bir yolculuk.",
+ "kapsar": [
+  "u1k5",
+  "u1k6",
+  "u1k7"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "Yıldızlar bulutsuda doğar. Gaz ve toz çöküp ısınınca ön yıldız, çekirdek tepkimeleri başlayınca yıldız olur.",
+    "Küçük kütleli: kırmızı dev → gezegenimsi bulutsu → beyaz cüce. Büyük kütleli: kırmızı süperdev → süpernova → nötron yıldızı ya da kara delik.",
+    "Kütle büyükse yaşam kısa. Işık yılı zamanı değil uzaklığı ölçer."
+   ]
+  },
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Birbirine yakın görünen, şekil oluşturan yıldızlara takımyıldız denir. Yıldız kümesi ise kütle çekimiyle bağlıdır.",
+    "Büyükayı 7 yıldızlı bir cezveye benzer.",
+    "Cezvenin uçtaki iki yıldızının arası × 5 = Kutup Yıldızı. O hep kuzeyi gösterir."
+   ]
+  },
+  {
+   "konu": "u1k7",
+   "maddeler": [
+    "Gök cisimlerinden oluşan yapıya galaksi (gök ada) denir.",
+    "Güneş sistemi Samanyolu'nun Avcı (Orion) kolundadır. En yakın galaksi Andromeda'dır.",
+    "Küçükten büyüğe: Dünya → Güneş sistemi → Samanyolu → evren."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 9,
+ "gruplar": [
+  {
+   "soru": "Bu bir bulutsu mu, takımyıldız mı, galaksi mi?",
+   "kutular": [
+    {
+     "etiket": "Bulutsu",
+     "uyeler": [
+      "Atbaşı",
+      "Orion Bulutsusu",
+      "Tarantula"
+     ]
+    },
+    {
+     "etiket": "Takımyıldız",
+     "uyeler": [
+      "Büyükayı",
+      "Kraliçe",
+      "Avcı"
+     ]
+    },
+    {
+     "etiket": "Galaksi",
+     "uyeler": [
+      "Samanyolu",
+      "Andromeda"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Atbaşı ve Orion için hangisi doğrudur?",
+   "secenekler": [
+    "İkisi de takımyıldızdır.",
+    "İkisi de bulutsudur; yıldızlar bulutsularda doğar.",
+    "İkisi de galaksidir."
+   ],
+   "dogru": 1,
+   "ipucu": "Yıldızların doğum yerine ne ad veriliyordu? En bilinen örnekleri hatırla.",
+   "aciklama": "Atbaşı, Orion ve Tarantula en bilinen bulutsulardandır; yıldızlar bulutsularda doğar (s. 41).",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Bulutsu"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "En Çok Bilinen Takımyıldızlar"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Galaksi"
+    }
+   ]
+  },
+  {
+   "soru": "Güneş sistemimiz Samanyolu galaksisinin hangi kolunda bulunur? (Bu ad bir takımyıldızın da adıdır.)",
+   "secenekler": [
+    "Avcı (Orion) kolu",
+    "Büyükayı kolu",
+    "Andromeda kolu"
+   ],
+   "dogru": 0,
+   "ipucu": "En çok bilinen takımyıldızlardan biri ok-yay taşıyan bir avcıya benzer.",
+   "aciklama": "Güneş sistemi Samanyolu'nun Avcı (Orion) kolundadır (s. 48). Avcı aynı zamanda en çok bilinen takımyıldızlardandır (s. 45).",
+   "kaynak": [
+    {
+     "konu": "u1k7",
+     "kavram": "Samanyolu Galaksisi"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "En Çok Bilinen Takımyıldızlar"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi en kapsayıcıdır, yani diğerlerinin hepsini içine alır?",
+   "secenekler": [
+    "Yıldız kümesi",
+    "Galaksi",
+    "Evren"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Her şeyi içine alır\" sözü hangi kavram içindi?",
+   "aciklama": "Evren, yıldızları, galaksileri ve tüm gök cisimlerini içine alan boşluktur (s. 48).",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Yıldız Kümesi"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Evren"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "İç İçe Kavramlar"
+    }
+   ]
+  },
+  {
+   "soru": "Güneş, küçük kütleli bir yıldızdır. Güneş'in yaşamının sonunda geriye ne kalacak?",
+   "secenekler": [
+    "Kara delik",
+    "Beyaz cüce",
+    "Nötron yıldızı"
+   ],
+   "dogru": 1,
+   "ipucu": "Küçük kütleli yıldızın yolu: kırmızı dev → gezegenimsi bulutsu → ...",
+   "aciklama": "Küçük kütleli yıldızlar önce kırmızı dev, sonra gezegenimsi bulutsu olur; geriye beyaz cüce kalır (s. 42).",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Küçük Kütleli Yıldız"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Büyük Kütleli Yıldız"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Güneş'in kütlesi sekiz Güneş kütlesinden az mı, çok mu?",
+     "Küçük kütleli yıldızın son evresi hangisiydi? Kara delik ve nötron yıldızı büyük kütleli yıldızlardan kalır."
+    ]
+   }
+  },
+  {
+   "soru": "Kutup Yıldızı'nı bulmak için ne yapılır?",
+   "secenekler": [
+    "Andromeda'ya bakılır, 7 kat ilerlenir.",
+    "Kraliçe takımyıldızına bakılır, 2 kat ilerlenir.",
+    "Büyükayı'nın uçtaki iki yıldızının arası 5 kat uzatılır."
+   ],
+   "dogru": 2,
+   "ipucu": "Cezveye benzeyen takımyıldızı hatırla. \"Uçtaki iki yıldız × ...\"",
+   "aciklama": "Büyükayı'da cezvenin uç kısmındaki iki yıldızın arasındaki mesafenin 5 katı uzakta Kutup Yıldızı vardır (s. 44). Andromeda bir galaksidir (s. 48).",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Kutup Yıldızı'nı Bulma"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Büyükayı"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Andromeda Galaksisi"
+    }
+   ]
+  },
+  {
+   "soru": "Işık yılı neyi ölçer?",
+   "secenekler": [
+    "Bir yıldızın yaşını",
+    "Gök cisimleri arasındaki uzaklığı",
+    "Bir galaksinin şeklini"
+   ],
+   "dogru": 1,
+   "ipucu": "Adında \"yıl\" var ama akılda kalsın: \"Yıl değil, ...\"",
+   "aciklama": "Işık yılı, ışığın boşlukta bir yılda aldığı mesafedir; gök cisimleri arasındaki uzaklığı ifade eder (s. 40).",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Işık Yılı"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Galaksilerin Farkları"
+    }
+   ]
+  },
+  {
+   "soru": "Yıldızları, gezegenleri, bulutsuları ve gök taşlarını bir arada içine alan yapıya ne denir?",
+   "secenekler": [
+    "Galaksi",
+    "Takımyıldız",
+    "Ön yıldız"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Gök ada\" da denen yapıyı düşün.",
+   "aciklama": "Yıldız, gezegen, bulutsu, gök taşı gibi gök cisimlerinden oluşan yapıya galaksi (gök ada) denir (s. 48).",
+   "kaynak": [
+    {
+     "konu": "u1k7",
+     "kavram": "Galaksi"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Takımyıldız"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Ön Yıldız"
+    }
+   ]
+  }
+ ]
+}

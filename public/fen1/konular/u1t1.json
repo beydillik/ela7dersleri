@@ -1,0 +1,244 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "1. Ünite: Uzay Çağı",
+ "baslik": "Ara Durak 1: Uzayı Keşfetmek",
+ "sayfalar": "Konu 1–2 · s. 15–19, 22–24",
+ "giris": "İki konu bitti! Şimdi kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Uzayı iki yolla keşfediyoruz. Ya araçları uzaya göndeririz: roket, uydu, sonda, mekik, istasyon. Ya da teleskopla uzaktan bakarız. Teleskop iki konuyu birbirine bağlar: roketle yörüngeye çıkarılınca daha net görür.",
+ "kapsar": [
+  "u1k1",
+  "u1k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Roket taşır, uydu döner, sonda keşfeder.",
+    "Mekikte ve istasyonda astronot vardır. Roket, uydu ve sonda Dünya'dan kontrol edilir.",
+    "Güneş paneli: uydu, sonda ve istasyon kullanır. Roket kullanmaz."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Teleskoplar ikiye ayrılır: uzay teleskobu ve yer tabanlı teleskop.",
+    "Uzay teleskobu atmosfere takılmaz, daha net görür. Yer tabanlı teleskop ucuzdur, bakımı kolaydır.",
+    "Gözlemevi (rasathane) yüksek, şehirden uzak, ışık kirliliği olmayan bir yere kurulur."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Uzayda mı, yeryüzünde mi?",
+   "kutular": [
+    {
+     "etiket": "Uzayda",
+     "uyeler": [
+      "Yapay Uydu",
+      "Uzay Sondası",
+      "Uzay İstasyonu",
+      "Hubble Uzay Teleskobu",
+      "James Webb Uzay Teleskobu"
+     ]
+    },
+    {
+     "etiket": "Yeryüzünde",
+     "uyeler": [
+      "Yer Tabanlı Teleskop",
+      "Gözlemevi"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Asıl görevi ne?",
+   "kutular": [
+    {
+     "etiket": "Taşır",
+     "uyeler": [
+      "Uzay Roketi",
+      "Uzay Mekiği"
+     ]
+    },
+    {
+     "etiket": "Gözlemler, inceler",
+     "uyeler": [
+      "Uzay Sondası",
+      "Hubble Uzay Teleskobu",
+      "Gözlemevi"
+     ]
+    },
+    {
+     "etiket": "Astronotlar içinde yaşar",
+     "uyeler": [
+      "Uzay İstasyonu"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "James Webb Uzay Teleskobu uzaya gönderilirken katlanıp bir aracın içine sığdırıldı. Bu araç hangisidir?",
+   "secenekler": [
+    "Uzay roketi",
+    "Uzay sondası",
+    "Gözlemevi"
+   ],
+   "dogru": 0,
+   "ipucu": "Hangi araç başka uzay araçlarını yeryüzünden yörüngeye taşır? \"Uzay taksisi\"ni hatırla.",
+   "aciklama": "Webb, rokete sığması için origami tekniğiyle katlandı (s. 22). Roket, uzay araçlarını yeryüzünden yörüngeye taşır (s. 18).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Uzay Roketi"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "James Webb Uzay Teleskobu"
+    }
+   ]
+  },
+  {
+   "soru": "Şehirde yaşayan Ela gece yıldızlara bakmak istiyor ama net göremiyor. Hangisi bu sorunla KARŞILAŞMAZ?",
+   "secenekler": [
+    "Şehir merkezindeki bir teleskop",
+    "Uzay teleskobu",
+    "Evin balkonundaki teleskop"
+   ],
+   "dogru": 1,
+   "ipucu": "Şehirdeki fazla ışık neyi bozar? Hangi teleskop atmosferin ve şehrin ışıklarının üstündedir?",
+   "aciklama": "Şehirdeki ışık kirliliği gökyüzü gözlemini zorlaştırır (s. 23). Uzay teleskobu atmosfer, kirlilik ve ışık izleri gibi sorunlarla karşılaşmaz (s. 22).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Işık Kirliliği"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Uzay Teleskobu"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Teleskop"
+    }
+   ]
+  },
+  {
+   "soru": "Hangi eşleştirme doğrudur?",
+   "secenekler": [
+    "Uzay sondası → gök cismini inceleyen robot",
+    "Uzay roketi → astronotların yaşadığı yer",
+    "Gözlemevi → uzayda dolanan teleskop"
+   ],
+   "dogru": 0,
+   "ipucu": "Her aracın \"akılda kalsın\" sözünü hatırla: robot kâşif, uzay taksisi, teleskobun kubbeli evi.",
+   "aciklama": "Uzay sondası gök cismini incelemek için gönderilen robot araçtır (s. 18). Astronotlar uzay istasyonunda yaşar (s. 19). Gözlemevi yeryüzündeki kubbeli yapıdır (s. 23).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Uzay Sondası"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Uzay Roketi"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Gözlemevi"
+    }
+   ]
+  },
+  {
+   "soru": "Hubble'ın ilk görüntüleri net değildi, bu yüzden 1993'te onarıldı. Kitaba göre bakım ve onarımla ömrü uzatılabilen başka araç hangisidir?",
+   "secenekler": [
+    "Uzay roketi",
+    "Uzay sondası",
+    "Uzay istasyonu"
+   ],
+   "dogru": 2,
+   "ipucu": "Astronotların yaşadığı \"uzaydaki ev\"i düşün. Yeniden kullanılamaz ama ona ne yapılır?",
+   "aciklama": "Hubble 1993'te onarıldı (s. 22). Uzay istasyonu yeniden kullanılamaz ama bakım ve onarımla ömrü uzatılabilir (s. 19).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Hubble Uzay Teleskobu"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Uzay İstasyonu"
+    }
+   ]
+  },
+  {
+   "soru": "Teleskoplar hakkında hangisi DOĞRUDUR?",
+   "secenekler": [
+    "Yer tabanlı teleskop, atmosferin geri yansıttığı ışınları da yakalar.",
+    "Yer tabanlı teleskobun bakımı ve yenilenmesi çok zordur.",
+    "Uzay teleskobu atmosfere takılmadığı için daha net görüntü alır."
+   ],
+   "dogru": 2,
+   "ipucu": "İki teleskop türünü karşılaştır: hangisi ucuz ve bakımı kolay, hangisi daha net görür?",
+   "aciklama": "Uzay teleskobu atmosferin engellemesiyle karşılaşmaz, daha net görür (s. 22). Yer tabanlı teleskop bazı ışınları yakalayamaz ama bakımı kolaydır (s. 23).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Uzay Teleskobu"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Yer Tabanlı Teleskop"
+    }
+   ]
+  },
+  {
+   "soru": "Teleskoplar artık roketlerle Dünya'nın yörüngesine çıkarılabiliyor. Bunun en önemli faydası nedir?",
+   "secenekler": [
+    "Teleskop daha ucuza yapılır.",
+    "Daha net görüntü elde edilir.",
+    "Teleskobun bakımı kolaylaşır."
+   ],
+   "dogru": 1,
+   "ipucu": "Ucuz ve bakımı kolay olan, yeryüzündeki teleskoptu. Yörüngedeki teleskobun üstünlüğü neydi?",
+   "aciklama": "Yörüngeye çıkarılan teleskoplar daha net görüntü elde eder (s. 19, 22). Ucuzluk ve kolay bakım ise yer tabanlı teleskobun üstünlüğüdür (s. 23).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Teleskop"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Uzay Teleskobu"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Yer Tabanlı Teleskop"
+    }
+   ]
+  },
+  {
+   "soru": "Gözlemevleri neden şehirden uzak ve yüksek yerlere kurulur?",
+   "secenekler": [
+    "Uzay roketlerine yakın olsun diye",
+    "Işık kirliliğinden ve atmosferin etkisinden uzak olsun diye",
+    "Astronotlar orada yaşasın diye"
+   ],
+   "dogru": 1,
+   "ipucu": "Yükseğe çıkınca atmosfer ne olur? Şehrin ışıkları gözlemi nasıl etkiler?",
+   "aciklama": "Gözlemevi ışık kirliliğinden etkilenmeyecek bir yere kurulur. Yükseklerde atmosfer incelir, gözlemi zorlaştıran hava olaylarının etkisi azalır (s. 23).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Gözlemevi"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Işık Kirliliği"
+    }
+   ]
+  }
+ ]
+}
