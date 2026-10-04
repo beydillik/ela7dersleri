@@ -1,0 +1,519 @@
+{
+ "id": "u0k1",
+ "unite": "Starter: Welcome!",
+ "baslik": "Feelings, Technology and Music (tekrar)",
+ "sayfalar": "SB s. 4–5, 7, 127",
+ "giris": "Kitabın ilk ünitesi bir tekrar ünitesi. Bu konuda duyguları anlatan 6 kelimeyi öğreneceğiz. Teknoloji ve müzik kelimeleri de Kelime Duvarı'nda seni bekliyor. Duyguyu anlatmak için kalıp: {{I feel ...}} ya da {{I'm ...}}",
+ "kavramlar": [
+  {
+   "ad": "angry",
+   "renk": "#ff5a3c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='34' fill='#ff9a7a'/><path d='M38 46 l16 6 M82 46 l-16 6' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><circle cx='47' cy='56' r='4' fill='#1b2340'/><circle cx='73' cy='56' r='4' fill='#1b2340'/><path d='M46 82 q14 -10 28 0' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M88 22 l6 -8 M96 30 l9 -4 M100 42 h9' stroke='#ff5a3c' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Kızgın, öfkeli demektir.",
+   "ek": "Birine kızgınsan: {{angry with}} birisi. Örnek: {{Andi's angry with me.}}",
+   "akilda": "kızgın",
+   "ornek": "Andi's angry with me. I forgot to reply to his text.",
+   "ornekTr": "Andi bana kızgın. Mesajına cevap vermeyi unuttum. (SB s. 4)",
+   "soru": {
+    "soru": "{{Andi's angry with me.}} Andi nasıl hissediyor?",
+    "secenekler": [
+     "Heyecanlı",
+     "Kızgın",
+     "Sıkılmış"
+    ],
+    "dogru": 1,
+    "ipucu": "Kırmızı, kaşları çatık yüzü hatırla.",
+    "aciklama": "{{angry}}: kızgın. (SB s. 4)"
+   },
+   "formul": [
+    [
+     {
+      "t": "Andi's",
+      "r": "ozne",
+      "alt": "Andi …-dır"
+     },
+     {
+      "t": "angry",
+      "r": "kelime",
+      "alt": "kızgın"
+     },
+     {
+      "t": "with me",
+      "r": "diger",
+      "alt": "bana"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "bored",
+   "renk": "#8ee3d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='34' fill='#ffd6a5'/><path d='M40 56 h14 M66 56 h14' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><path d='M48 80 h24' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><text x='86' y='34' font-family='sans-serif' font-weight='800' font-size='16' fill='#8ee3d6'>z</text><text x='96' y='22' font-family='sans-serif' font-weight='800' font-size='20' fill='#8ee3d6'>Z</text></svg>",
+   "aciklama": "Sıkılmış demektir. Yapacak ilginç bir şey olmayınca hissedilir.",
+   "ek": "Dikkat: sıkılan kişi {{bored}}, sıkıcı olan şey {{boring}}.",
+   "akilda": "sıkılmış",
+   "ornek": "It's brilliant. I'm never bored here.",
+   "ornekTr": "Harika. Burada hiç sıkılmıyorum. (SB s. 5)",
+   "soru": {
+    "soru": "Çok uzun ve ilginç olmayan bir film izleyen biri nasıl hisseder?",
+    "secenekler": [
+     "bored",
+     "excited",
+     "angry"
+    ],
+    "dogru": 0,
+    "ipucu": "\"Zzz\" yazan, uykulu yüzü hatırla.",
+    "aciklama": "{{bored}}: sıkılmış. (SB s. 4)"
+   }
+  },
+  {
+   "ad": "embarrassed",
+   "renk": "#ff6f8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='34' fill='#ffd6a5'/><circle cx='47' cy='56' r='4' fill='#1b2340'/><circle cx='73' cy='56' r='4' fill='#1b2340'/><path d='M50 80 q10 -6 20 0' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><ellipse cx='40' cy='70' rx='9' ry='6' fill='#ff6f8f'/><ellipse cx='80' cy='70' rx='9' ry='6' fill='#ff6f8f'/><path d='M90 40 q6 8 0 12 q-6 -4 0 -12z' fill='#8ee3d6'/></svg>",
+   "aciklama": "Utanmış, mahcup demektir. Komik ya da kötü bir şey olup herkes görünce hissedilir.",
+   "ek": "Kitaptaki örnek: bir çorap kırmızı, bir çorap pembe! (SB s. 4)",
+   "akilda": "utanmış",
+   "ornek": "I sometimes feel embarrassed when I fall over.",
+   "ornekTr": "Düştüğümde bazen utanırım. (SB s. 5)",
+   "soru": {
+    "soru": "Okulda herkesin önünde düşen biri nasıl hisseder?",
+    "secenekler": [
+     "excited",
+     "bored",
+     "embarrassed"
+    ],
+    "dogru": 2,
+    "ipucu": "Yanakları kızarmış yüzü hatırla.",
+    "aciklama": "{{embarrassed}}: utanmış. (SB s. 5)"
+   }
+  },
+  {
+   "ad": "excited",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='34' fill='#ffd6a5'/><path d='M40 54 q7 -8 14 0 M66 54 q7 -8 14 0' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M42 70 q18 22 36 0z' fill='#1b2340'/><path d='M18 26 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z M100 20 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z' fill='#ffd166'/></svg>",
+   "aciklama": "Heyecanlı demektir. Güzel bir şey olacağı için sabırsızlanınca hissedilir.",
+   "ek": "Kitaptaki örnek: doğum günü partisi olan çocuk {{excited}}! (SB s. 4)",
+   "akilda": "heyecanlı",
+   "ornek": "I always feel excited when the weekend starts.",
+   "ornekTr": "Hafta sonu başladığında hep heyecanlanırım. (SB s. 4)",
+   "soru": {
+    "soru": "Yarın doğum günü partisi olan biri nasıl hisseder?",
+    "secenekler": [
+     "upset",
+     "excited",
+     "bored"
+    ],
+    "dogru": 1,
+    "ipucu": "Yıldızlı, kocaman gülen yüzü hatırla.",
+    "aciklama": "{{excited}}: heyecanlı. (SB s. 4)"
+   },
+   "formul": [
+    [
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "always feel",
+      "r": "fiil",
+      "alt": "hep hissederim"
+     },
+     {
+      "t": "excited",
+      "r": "kelime",
+      "alt": "duygu"
+     },
+     {
+      "t": "when …",
+      "r": "diger",
+      "alt": "-dığında"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "nervous",
+   "renk": "#e7e2b8",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='34' fill='#e7e2b8'/><circle cx='47' cy='56' r='4' fill='#1b2340'/><circle cx='73' cy='56' r='4' fill='#1b2340'/><path d='M44 80 q4 -5 8 0 t8 0 t8 0 t8 0' stroke='#1b2340' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M88 34 q7 9 0 14 q-7 -5 0 -14z M96 54 q5 7 0 10 q-5 -3 0 -10z' fill='#8ee3d6'/></svg>",
+   "aciklama": "Gergin, endişeli demektir. Sınavdan ya da sunumdan önce hissedilir.",
+   "ek": "Kitapta Izzy yeni bir kaykay hareketinden önce {{nervous}} hissediyor. (SB s. 5)",
+   "akilda": "gergin",
+   "ornek": "I always feel nervous before I do one.",
+   "ornekTr": "Bir hareketi yapmadan önce hep gerilirim. (SB s. 5)",
+   "soru": {
+    "soru": "Sunumdan hemen önce eli titreyen biri nasıl hisseder?",
+    "secenekler": [
+     "nervous",
+     "bored",
+     "angry"
+    ],
+    "dogru": 0,
+    "ipucu": "Terleyen, ağzı dalgalı yüzü hatırla.",
+    "aciklama": "{{nervous}}: gergin. (SB s. 4)"
+   }
+  },
+  {
+   "ad": "upset",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='34' fill='#ffd6a5'/><path d='M40 48 l12 4 M80 48 l-12 4' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/><circle cx='47' cy='56' r='4' fill='#1b2340'/><circle cx='73' cy='56' r='4' fill='#1b2340'/><path d='M46 84 q14 -12 28 0' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M47 63 q-5 9 0 13 q5 -4 0 -13z' fill='#4ea8de'/></svg>",
+   "aciklama": "Üzgün, morali bozuk demektir. Bir şey kötü gidince hissedilir.",
+   "ek": "Kitapta Dylan robotu düşünce {{upset}} oluyor. (SB s. 5)",
+   "akilda": "üzgün",
+   "ornek": "I feel upset when my robot falls over!",
+   "ornekTr": "Robotum devrilince üzülüyorum! (SB s. 5)",
+   "soru": {
+    "soru": "{{I feel upset.}} Bu kişi nasıl hissediyor?",
+    "secenekler": [
+     "Heyecanlı",
+     "Utanmış",
+     "Üzgün"
+    ],
+    "dogru": 2,
+    "ipucu": "Gözyaşı olan yüzü hatırla.",
+    "aciklama": "{{upset}}: üzgün. (SB s. 5)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "app",
+   "tr": "uygulama"
+  },
+  {
+   "en": "device",
+   "tr": "cihaz (telefon, tablet)"
+  },
+  {
+   "en": "emoji",
+   "tr": "emoji"
+  },
+  {
+   "en": "screen",
+   "tr": "ekran"
+  },
+  {
+   "en": "social media",
+   "tr": "sosyal medya"
+  },
+  {
+   "en": "video chat",
+   "tr": "görüntülü konuşma",
+   "ornek": "Next time let's do a video chat.",
+   "ornekTr": "Bir dahaki sefere görüntülü konuşalım. (SB s. 5)"
+  },
+  {
+   "en": "bass",
+   "tr": "bas gitar"
+  },
+  {
+   "en": "DJ",
+   "tr": "DJ (müzik çalan kişi)",
+   "ornek": "My sister works as a DJ for a radio station.",
+   "ornekTr": "Ablam bir radyoda DJ olarak çalışıyor. (SB s. 127)"
+  },
+  {
+   "en": "drums",
+   "tr": "davul",
+   "ornek": "Matt plays the drums in a jazz band.",
+   "ornekTr": "Matt bir caz grubunda davul çalıyor. (SB s. 127)"
+  },
+  {
+   "en": "fans",
+   "tr": "hayranlar",
+   "ornek": "His fans are excited about his new album.",
+   "ornekTr": "Hayranları yeni albümü için heyecanlı. (SB s. 127)"
+  },
+  {
+   "en": "folk",
+   "tr": "halk müziği"
+  },
+  {
+   "en": "heavy metal",
+   "tr": "heavy metal (sert rock)",
+   "ornek": "I find heavy metal too loud and boring.",
+   "ornekTr": "Heavy metali fazla gürültülü ve sıkıcı buluyorum. (SB s. 127)"
+  },
+  {
+   "en": "jazz",
+   "tr": "caz"
+  },
+  {
+   "en": "keyboard",
+   "tr": "klavye, elektronik org"
+  },
+  {
+   "en": "rap",
+   "tr": "rap"
+  },
+  {
+   "en": "reggae",
+   "tr": "reggae",
+   "ornek": "Everyone in my family loves reggae.",
+   "ornekTr": "Ailemdeki herkes reggae sever. (SB s. 127)"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu duygu iyi mi, kötü mü?",
+   "kutular": [
+    {
+     "etiket": "İyi bir duygu",
+     "uyeler": [
+      "excited"
+     ]
+    },
+    {
+     "etiket": "Kötü bir duygu",
+     "uyeler": [
+      "angry",
+      "bored",
+      "embarrassed",
+      "nervous",
+      "upset"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "It's brilliant. I'm never bored here.",
+   "tr": "Harika. Burada hiç sıkılmıyorum. (SB s. 5)"
+  },
+  {
+   "en": "I feel upset when my robot falls over!",
+   "tr": "Robotum devrilince üzülüyorum! (SB s. 5)"
+  },
+  {
+   "en": "Andi's angry with me.",
+   "tr": "Andi bana kızgın. (SB s. 4)"
+  },
+  {
+   "en": "I always feel excited when the weekend starts.",
+   "tr": "Hafta sonu başladığında hep heyecanlanırım. (SB s. 4)"
+  },
+  {
+   "en": "His fans are excited about his new album.",
+   "tr": "Hayranları yeni albümü için heyecanlı. (SB s. 127)"
+  },
+  {
+   "en": "Matt plays the drums in a jazz band.",
+   "tr": "Matt bir caz grubunda davul çalıyor. (SB s. 127)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Oops! One red sock, one pink sock. I feel excited.",
+   "yanlis": "excited",
+   "secenekler": [
+    "bored",
+    "embarrassed",
+    "angry"
+   ],
+   "dogru": 1,
+   "tr": "Eyvah! Bir çorap kırmızı, bir çorap pembe. Utanıyorum.",
+   "aciklama": "Herkesin göreceği komik bir hata utandırır: {{embarrassed}}. (SB s. 4)"
+  },
+  {
+   "cumle": "Andi's nervous with me. I forgot to reply to his text.",
+   "yanlis": "nervous",
+   "secenekler": [
+    "angry",
+    "excited",
+    "bored"
+   ],
+   "dogru": 0,
+   "tr": "Andi bana kızgın. Mesajına cevap vermeyi unuttum.",
+   "aciklama": "Mesajına cevap vermeyince kızgın olur: {{angry with me}}. (SB s. 4)"
+  },
+  {
+   "cumle": "It's my birthday! Party at my house tonight! I'm feeling upset.",
+   "yanlis": "upset",
+   "secenekler": [
+    "nervous",
+    "bored",
+    "excited"
+   ],
+   "dogru": 2,
+   "tr": "Doğum günüm! Bu akşam evimde parti var! Heyecanlıyım.",
+   "aciklama": "Parti öncesi duygu {{excited}}: heyecanlı. (SB s. 4)"
+  },
+  {
+   "cumle": "This film is so long. I'm really excited.",
+   "yanlis": "excited",
+   "secenekler": [
+    "bored",
+    "embarrassed",
+    "upset"
+   ],
+   "dogru": 0,
+   "tr": "Bu film çok uzun. Gerçekten sıkıldım.",
+   "aciklama": "Uzun ve ilgisiz bir şey insanı sıkar: {{bored}}. (SB s. 4)"
+  },
+  {
+   "cumle": "I feel bored before my presentation. Wish me luck!",
+   "yanlis": "bored",
+   "secenekler": [
+    "angry",
+    "nervous",
+    "excited"
+   ],
+   "dogru": 1,
+   "tr": "Sunumumdan önce gerginim. Bana şans dile!",
+   "aciklama": "Sunumdan önce hissedilen {{nervous}}: gergin. (SB s. 4)"
+  },
+  {
+   "cumle": "My robot falls over and I feel excited.",
+   "yanlis": "excited",
+   "secenekler": [
+    "embarrassed",
+    "bored",
+    "upset"
+   ],
+   "dogru": 2,
+   "tr": "Robotum devriliyor ve üzülüyorum.",
+   "aciklama": "Kitapta Dylan robotu düşünce {{upset}} oluyor. (SB s. 5)"
+  }
+ ],
+ "biliyorMusun": [
+  "Kitabın öğrenme ipucu: Yeni kelimeleri örnek bir cümle içinde yazarsan daha kolay hatırlarsın. Örnek: {{I always feel excited when the weekend starts.}} (SB s. 4)"
+ ],
+ "akildaKalsin": [
+  "Duyguyu anlatmak: {{I feel ...}} ya da {{I'm ...}}",
+  "İyi duygu: {{excited}}. Kötü duygular: {{angry}}, {{bored}}, {{embarrassed}}, {{nervous}}, {{upset}}.",
+  "Birine kızgınsan: {{angry with}} + kişi.",
+  "Sıkılan kişi {{bored}}, sıkıcı olan şey {{boring}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{bored}} ile {{boring}} farkı ne?",
+   "cevap": "{{bored}} senin hissin: {{I'm bored.}} (sıkıldım). {{boring}} bir şeyin özelliği: {{I find heavy metal too loud and boring.}} (Heavy metali sıkıcı buluyorum). (SB s. 5, 127)"
+  },
+  {
+   "soru": "{{nervous}} ile {{embarrassed}} nasıl ayrılır?",
+   "cevap": "{{nervous}} bir şeyden ÖNCE hissedilir (sunumdan önce gerginlik). {{embarrassed}} bir şey OLDUKTAN sonra (düşünce utanmak). Izzy ikisini de yaşıyor: hareketten önce {{nervous}}, düşünce {{embarrassed}}. (SB s. 5)"
+  },
+  {
+   "soru": "Kitapta hangi müzik kelimeleri var?",
+   "cevap": "Müzik türleri: {{folk}}, {{heavy metal}}, {{jazz}}, {{rap}}, {{reggae}}. Çalgılar: {{bass}}, {{drums}}, {{keyboard}}. Kişiler: {{DJ}}, {{fans}}. Hepsi Kelime Duvarı'nda. (SB s. 7)"
+  },
+  {
+   "soru": "Teknoloji kelimeleri neden tanıdık geliyor?",
+   "cevap": "Çoğu Türkçeye de girmiş: {{app}} (uygulama, \"app\"), {{emoji}}, {{video chat}}. Yazılışları da İngilizcedeki gibi. (SB s. 4)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendinle ilgili iki cümle yaz: ne zaman heyecanlanırsın, ne zaman sıkılırsın? {{I feel excited when ...}} / {{I feel bored when ...}}",
+   "ornekCevap": "I feel excited when I go to a concert. I feel bored when it rains at the weekend.",
+   "anahtarlar": [
+    "feel",
+    "when"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "nervous",
+    "excited",
+    "upset"
+   ],
+   "dogru": 1,
+   "ipucu": "İyi bir duyguyu anlatan kelime. Bir daha dinle.",
+   "aciklama": "Duyduğun kelime {{excited}}: heyecanlı. (SB s. 4)",
+   "dinle": "excited"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "embarrassed",
+    "angry",
+    "bored"
+   ],
+   "dogru": 0,
+   "ipucu": "En uzun kelime; yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{embarrassed}}: utanmış. (SB s. 4)",
+   "dinle": "embarrassed"
+  },
+  {
+   "soru": "Hangisi iyi bir duygudur?",
+   "secenekler": [
+    "upset",
+    "angry",
+    "excited"
+   ],
+   "dogru": 2,
+   "ipucu": "Gruplayalım oyunundaki tek kişilik kutuyu hatırla.",
+   "aciklama": "{{excited}} heyecanlı; ötekiler kötü duygular. (SB s. 4)"
+  },
+  {
+   "soru": "{{I'm never bored here.}} Dylan kampta ne hissediyor?",
+   "secenekler": [
+    "Hiç sıkılmıyor",
+    "Hep sıkılıyor",
+    "Bazen sıkılıyor"
+   ],
+   "dogru": 0,
+   "ipucu": "{{never}} \"asla, hiç\" demek.",
+   "aciklama": "{{never bored}}: hiç sıkılmıyor. (SB s. 5)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Andi's angry ___ me.}}",
+   "secenekler": [
+    "at",
+    "with",
+    "to"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartta {{angry}} ile birlikte gelen kelimeye bak.",
+   "aciklama": "{{angry with}} + kişi: birine kızgın olmak. (SB s. 4)"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "upset",
+    "angry",
+    "nervous"
+   ],
+   "dogru": 2,
+   "ipucu": "Sınavdan önce hissedilen duygu.",
+   "aciklama": "Duyduğun kelime {{nervous}}: gergin. (SB s. 4)",
+   "dinle": "nervous"
+  },
+  {
+   "soru": "Hangisi bir müzik aleti?",
+   "secenekler": [
+    "drums",
+    "fans",
+    "jazz"
+   ],
+   "dogru": 0,
+   "ipucu": "Kelime Duvarı'ndaki müzik kelimelerine bak.",
+   "aciklama": "{{drums}}: davul. {{fans}} hayranlar, {{jazz}} bir müzik türü. (SB s. 7)"
+  },
+  {
+   "soru": "{{The video chat isn't working again!}} Bu kişi nasıl hissedebilir?",
+   "secenekler": [
+    "excited",
+    "upset",
+    "bored"
+   ],
+   "dogru": 1,
+   "ipucu": "Bir şey bozulunca, kötü gidince hissedilen duygu.",
+   "aciklama": "Kitapta görüntülü konuşma çalışmayınca kişi {{upset}} hissediyor. (SB s. 4)"
+  },
+  {
+   "soru": "{{screen}} kelimesinin anlamı hangisi?",
+   "secenekler": [
+    "Uygulama",
+    "Cihaz",
+    "Ekran"
+   ],
+   "dogru": 2,
+   "ipucu": "Telefonun dokunduğun camlı yüzü.",
+   "aciklama": "{{screen}}: ekran. (SB s. 4)"
+  }
+ ]
+}

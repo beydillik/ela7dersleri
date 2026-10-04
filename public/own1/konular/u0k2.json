@@ -1,0 +1,763 @@
+{
+ "id": "u0k2",
+ "unite": "Starter: Welcome!",
+ "baslik": "Zamanlar tekrarı: present simple, present continuous, past simple",
+ "sayfalar": "SB s. 5–6, 8 · WB s. 86–87",
+ "giris": "Bu konu bir tekrar: geniş zaman, şimdiki zaman, sıklık zarfları ve geçmiş zaman. Her kartta kuralın renkli formülü var. Oku ve Dinle sekmesinde Izzy ile Dylan'ın mesajlaşmasını okuyacaksın; kitap bu konudaki örnek cümleleri o mesajlardan alıyor.",
+ "kavramlar": [
+  {
+   "ad": "present simple",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='26' width='76' height='70' rx='8' fill='#f5f6fa'/><rect x='22' y='26' width='76' height='18' rx='8' fill='#ff7a59'/><path d='M38 20 v12 M82 20 v12' stroke='#c9cfe0' stroke-width='5' stroke-linecap='round'/><circle cx='36' cy='56' r='4.5' fill='#3cc47c'/><circle cx='52' cy='56' r='4.5' fill='#c9cfe0'/><circle cx='68' cy='56' r='4.5' fill='#3cc47c'/><circle cx='84' cy='56' r='4.5' fill='#c9cfe0'/><circle cx='36' cy='70' r='4.5' fill='#3cc47c'/><circle cx='52' cy='70' r='4.5' fill='#c9cfe0'/><circle cx='68' cy='70' r='4.5' fill='#3cc47c'/><circle cx='84' cy='70' r='4.5' fill='#c9cfe0'/><circle cx='36' cy='84' r='4.5' fill='#3cc47c'/><circle cx='52' cy='84' r='4.5' fill='#c9cfe0'/><circle cx='68' cy='84' r='4.5' fill='#3cc47c'/><circle cx='84' cy='84' r='4.5' fill='#c9cfe0'/><path d='M96 86 a14 14 0 1 1 -6 -18' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M92 62 l-2 8 8 -1' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Geniş zaman. Alışkanlıkları, her gün yaptığımız şeyleri ve gerçekleri anlatır.",
+   "ek": "Olumsuz: {{don't}} / {{doesn't}} + fiil. Örnek: {{We don't always do the same thing.}} (SB s. 5)",
+   "akilda": "alışkanlık, rutin",
+   "ornek": "In the morning we usually study computer languages.",
+   "ornekTr": "Sabahları genelde bilgisayar dilleri çalışırız. (SB s. 5)",
+   "soru": {
+    "soru": "Hangisi bir alışkanlığı anlatır?",
+    "secenekler": [
+     "I use my phone every day.",
+     "I'm using my phone now.",
+     "I used my phone yesterday."
+    ],
+    "dogru": 0,
+    "ipucu": "Takvimde her gün tekrarlanan noktaları hatırla: {{every day}}.",
+    "aciklama": "{{every day}} ile alışkanlık anlatılır: geniş zaman. (WB s. 86)"
+   },
+   "formul": [
+    [
+     {
+      "t": "I / You / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "study",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     }
+    ],
+    [
+     {
+      "t": "He / She / It",
+      "r": "ozne"
+     },
+     {
+      "t": "likes",
+      "r": "fiil",
+      "alt": "fiil + -s"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "present continuous",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='40' cy='44' r='22' fill='#f5f6fa'/><path d='M40 30 v14 l9 6' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><text x='22' y='90' font-family='sans-serif' font-weight='800' font-size='18' fill='#ffd166'>NOW</text><rect x='66' y='64' width='34' height='26' rx='4' fill='#9b7bff'/><circle cx='83' cy='54' r='9' fill='#ffd6a5'/><path d='M70 64 l-6 -12 M96 64 l6 -12' stroke='#ffd6a5' stroke-width='5' stroke-linecap='round'/><path d='M74 98 h-6 M82 98 h-6 M90 98 h-6 M98 98 h-6' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Şimdiki zaman. Şu anda olan şeyleri anlatır.",
+   "ek": "Olumsuz: {{isn't}} / {{aren't}}. Örnek: {{My robot isn't working very well.}} Soru: {{Are you having fun?}} (SB s. 5)",
+   "akilda": "şu an oluyor",
+   "ornek": "Today we're building robots!",
+   "ornekTr": "Bugün robot yapıyoruz! (SB s. 5)",
+   "soru": {
+    "soru": "{{Today we're building robots!}} Bu cümlede hangi zaman var?",
+    "secenekler": [
+     "Geçmiş zaman",
+     "Şimdiki zaman",
+     "Geniş zaman"
+    ],
+    "dogru": 1,
+    "ipucu": "{{are building}}: {{be}} + fiil + {{-ing}} formülünü hatırla.",
+    "aciklama": "{{are building}} şimdiki zamandır: şu an yapıyorlar. (SB s. 5)"
+   },
+   "formul": [
+    [
+     {
+      "t": "I am / He is / They are",
+      "r": "yard",
+      "alt": "be"
+     },
+     {
+      "t": "building",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "adverbs of frequency",
+   "renk": "#ffb03a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='20' width='12' height='66' rx='3' fill='#3cc47c'/><rect x='31' y='32' width='12' height='54' rx='3' fill='#8edc6c'/><rect x='46' y='44' width='12' height='42' rx='3' fill='#ffd166'/><rect x='61' y='56' width='12' height='30' rx='3' fill='#ffb03a'/><rect x='76' y='70' width='12' height='16' rx='3' fill='#ff7a59'/><rect x='91' y='82' width='12' height='4' rx='3' fill='#ff5a6e'/><text x='14' y='104' font-family='sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>100%</text><text x='86' y='104' font-family='sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>0%</text></svg>",
+   "aciklama": "Sıklık zarfları. Bir şeyin ne sıklıkla olduğunu söyler: {{always}} (her zaman), {{usually}} (genelde), {{often}} (sık sık), {{sometimes}} (bazen), {{hardly ever}} (neredeyse hiç), {{never}} (asla).",
+   "ek": "Kural: ana fiilden ÖNCE, {{be}}'den SONRA gelir. (SB s. 6)",
+   "akilda": "always → never",
+   "ornek": "You're never on time!",
+   "ornekTr": "Hiç zamanında gelmiyorsun! (SB s. 5)",
+   "soru": {
+    "soru": "Doğru sıralama hangisi?",
+    "secenekler": [
+     "I get always up early.",
+     "Always I am late.",
+     "I always get up early."
+    ],
+    "dogru": 2,
+    "ipucu": "Kural kartını hatırla: zarf ana fiilden önce gelir.",
+    "aciklama": "{{I always get up early.}}: zarf ({{always}}) fiilden ({{get up}}) önce. (SB s. 6)"
+   },
+   "formul": [
+    [
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "always",
+      "r": "diger",
+      "alt": "sıklık zarfı"
+     },
+     {
+      "t": "get up early",
+      "r": "fiil",
+      "alt": "ana fiil"
+     }
+    ],
+    [
+     {
+      "t": "I am",
+      "r": "yard",
+      "alt": "be"
+     },
+     {
+      "t": "never",
+      "r": "diger",
+      "alt": "sıklık zarfı"
+     },
+     {
+      "t": "late",
+      "r": "kelime"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "present simple for future",
+   "renk": "#ff8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='22' width='92' height='76' rx='8' fill='#0f1530' stroke='#ffd166' stroke-width='3'/><text x='22' y='46' font-family='monospace' font-weight='700' font-size='11.5' fill='#ffd166'>FILM   21.00</text><text x='22' y='66' font-family='monospace' font-weight='700' font-size='11.5' fill='#8ee3d6'>TRAIN  09.15</text><text x='22' y='86' font-family='monospace' font-weight='700' font-size='11.5' fill='#ff8fa3'>CLASS  10.30</text></svg>",
+   "aciklama": "Saati belli, programlı gelecek olaylar (film, tren, ders) için de geniş zaman kullanılır.",
+   "ek": "Örnek: {{My mum starts work at 10 am on Friday.}} (WB s. 86)",
+   "akilda": "programlı gelecek",
+   "ornek": "The film starts at 21.00.",
+   "ornekTr": "Film saat 21.00'de başlıyor. (SB s. 6)",
+   "soru": {
+    "soru": "{{The film starts at 21.00.}} Bu cümle ne zamanı anlatıyor?",
+    "secenekler": [
+     "Geçmişi",
+     "Bir alışkanlığı",
+     "Programlı bir gelecek olayı"
+    ],
+    "dogru": 2,
+    "ipucu": "Tren ve film saatlerinin yazdığı panoyu hatırla.",
+    "aciklama": "Saati belli olan film gelecekte başlayacak: {{present simple for future}}. (SB s. 6)"
+   },
+   "formul": [
+    [
+     {
+      "t": "The film",
+      "r": "ozne"
+     },
+     {
+      "t": "starts",
+      "r": "fiil",
+      "alt": "geniş zaman"
+     },
+     {
+      "t": "at 21.00",
+      "r": "diger",
+      "alt": "saat / gün"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "past simple (+)",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M86 40 a30 30 0 1 0 6 32' stroke='#4ea8de' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M78 34 l10 6 -2 12' stroke='#4ea8de' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='58' y='68' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='20' fill='#ffd166'>-ed</text></svg>",
+   "aciklama": "Geçmiş zaman. Bitmiş olayları anlatır. Düzenli fiillere {{-ed}} eklenir; düzensiz fiiller değişir.",
+   "ek": "Düzensiz: {{give}} → {{gave}}, {{go}} → {{went}}, {{have}} → {{had}}. Örnek: {{They gave a concert.}} (SB s. 8)",
+   "akilda": "geçmiş: -ed",
+   "ornek": "I played lots of music.",
+   "ornekTr": "Bol bol müzik çaldım. (SB s. 8)",
+   "soru": {
+    "soru": "{{play}} fiilinin geçmiş hâli hangisi?",
+    "secenekler": [
+     "played",
+     "plaid",
+     "playing"
+    ],
+    "dogru": 0,
+    "ipucu": "Düzenli fiil: sonuna {{-ed}} ekle.",
+    "aciklama": "{{play}} → {{played}}. (SB s. 8)"
+   },
+   "formul": [
+    [
+     {
+      "t": "play",
+      "r": "kelime",
+      "alt": "düzenli fiil"
+     },
+     {
+      "t": "-ed",
+      "r": "ek"
+     },
+     {
+      "t": "played",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "give",
+      "r": "kelime",
+      "alt": "düzensiz fiil"
+     },
+     {
+      "t": "gave",
+      "r": "sonuc",
+      "alt": "ezberlenir"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "past simple (– ?)",
+   "renk": "#ff5a6e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='34' width='48' height='34' rx='10' fill='#ff5a6e'/><text x='18' y='57' font-family='sans-serif' font-weight='800' font-size='14' fill='#fff'>didn't</text><rect x='58' y='62' width='48' height='34' rx='10' fill='#4ea8de'/><text x='68' y='85' font-family='sans-serif' font-weight='800' font-size='16' fill='#fff'>Did?</text></svg>",
+   "aciklama": "Geçmiş zamanda olumsuz için {{didn't}} + fiil, soru için {{Did}} + özne + fiil kullanılır. Fiil yalın hâline döner.",
+   "ek": "Soru örneği: {{Where did you work last summer?}} (SB s. 8)",
+   "akilda": "didn't / Did + yalın fiil",
+   "ornek": "They didn't want to be in hospital.",
+   "ornekTr": "Hastanede olmak istemediler. (SB s. 8)",
+   "soru": {
+    "soru": "Doğru cümle hangisi?",
+    "secenekler": [
+     "Did you went to the beach?",
+     "Did you go to the beach?",
+     "Do you went to the beach?"
+    ],
+    "dogru": 1,
+    "ipucu": "{{Did}}'den sonra fiil yalın hâline döner.",
+    "aciklama": "{{Did you go ...?}}: {{Did}} + özne + yalın fiil. (SB s. 8)"
+   },
+   "formul": [
+    [
+     {
+      "t": "They",
+      "r": "ozne"
+     },
+     {
+      "t": "didn't",
+      "r": "olumsuz"
+     },
+     {
+      "t": "want",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     }
+    ],
+    [
+     {
+      "t": "Did",
+      "r": "yard"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "go",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     },
+     {
+      "t": "…?",
+      "r": "diger"
+     }
+    ]
+   ]
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kural hangi zamana ait?",
+   "kutular": [
+    {
+     "etiket": "Şimdi ve her zaman (present)",
+     "uyeler": [
+      "present simple",
+      "present continuous",
+      "present simple for future"
+     ]
+    },
+    {
+     "etiket": "Geçmiş (past)",
+     "uyeler": [
+      "past simple (+)",
+      "past simple (– ?)"
+     ]
+    },
+    {
+     "etiket": "Ne sıklıkla?",
+     "uyeler": [
+      "adverbs of frequency"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "We don't always do the same thing.",
+   "tr": "Her zaman aynı şeyi yapmayız. (SB s. 5)"
+  },
+  {
+   "en": "Today we're building robots!",
+   "tr": "Bugün robot yapıyoruz! (SB s. 5)"
+  },
+  {
+   "en": "I always feel nervous before I do one.",
+   "tr": "Bir hareketi yapmadan önce hep gerilirim. (SB s. 5)"
+  },
+  {
+   "en": "You're never on time!",
+   "tr": "Hiç zamanında gelmiyorsun! (SB s. 5)"
+  },
+  {
+   "en": "They gave a concert.",
+   "tr": "Bir konser verdiler. (SB s. 8)"
+  },
+  {
+   "en": "Where did you go on your last holiday?",
+   "tr": "Son tatilinde nereye gittin? (SB s. 8)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Today we build robots!",
+   "yanlis": "build",
+   "secenekler": [
+    "built",
+    "are building",
+    "builds"
+   ],
+   "dogru": 1,
+   "tr": "Bugün robot yapıyoruz!",
+   "aciklama": "{{Today}} = şu an oluyor: {{are building}} (şimdiki zaman). (SB s. 5)"
+  },
+  {
+   "cumle": "I never am late.",
+   "yanlis": "never am",
+   "secenekler": [
+    "am never",
+    "never be",
+    "am not never"
+   ],
+   "dogru": 0,
+   "tr": "Asla geç kalmam.",
+   "aciklama": "Sıklık zarfı {{be}}'den SONRA gelir: {{I am never late.}} (SB s. 6)"
+  },
+  {
+   "cumle": "My sister play the drums every day.",
+   "yanlis": "play",
+   "secenekler": [
+    "playing",
+    "played",
+    "plays"
+   ],
+   "dogru": 2,
+   "tr": "Kız kardeşim her gün davul çalar.",
+   "aciklama": "{{He / She / It}} ile geniş zamanda fiile {{-s}} gelir: {{plays}}. (WB s. 86)"
+  },
+  {
+   "cumle": "They didn't wanted to be in hospital.",
+   "yanlis": "wanted",
+   "secenekler": [
+    "want",
+    "wants",
+    "wanting"
+   ],
+   "dogru": 0,
+   "tr": "Hastanede olmak istemediler.",
+   "aciklama": "{{didn't}}'ten sonra fiil yalın hâline döner: {{want}}. (SB s. 8)"
+  },
+  {
+   "cumle": "Did you went to the beach last summer?",
+   "yanlis": "went",
+   "secenekler": [
+    "goes",
+    "go",
+    "going"
+   ],
+   "dogru": 1,
+   "tr": "Geçen yaz plaja gittin mi?",
+   "aciklama": "{{Did}}'den sonra yalın fiil: {{go}}. (SB s. 8)"
+  },
+  {
+   "cumle": "My robot isn't work very well.",
+   "yanlis": "work",
+   "secenekler": [
+    "worked",
+    "works",
+    "working"
+   ],
+   "dogru": 2,
+   "tr": "Robotum çok iyi çalışmıyor.",
+   "aciklama": "Şimdiki zaman: {{isn't}} + fiil + {{-ing}}: {{isn't working}}. (SB s. 5)"
+  }
+ ],
+ "okuma": {
+  "baslik": "A message on an app",
+  "sayfa": "SB s. 5",
+  "sozluk": {
+   "tech camp": "teknoloji kampı",
+   "brilliant": "harika",
+   "computer languages": "bilgisayar dilleri (kodlama)",
+   "I bet": "eminim öyledir",
+   "competition": "yarışma",
+   "a bit": "biraz",
+   "worried": "endişeli",
+   "having the time of my life": "hayatımın en güzel zamanını geçiriyorum",
+   "tricks": "(kaykay) hareketleri",
+   "fall over": "düşmek",
+   "falls over": "devrilir",
+   "hardly ever": "neredeyse hiç",
+   "got to go": "gitmem lazım",
+   "on time": "zamanında",
+   "messaging app": "mesajlaşma uygulaması"
+  },
+  "bolumler": [
+   {
+    "baslik": "Tech camp",
+    "cumleler": [
+     {
+      "en": "Izzy: Hey, Dylan! How's tech camp? Are you having fun?",
+      "tr": "Izzy: Selam Dylan! Teknoloji kampı nasıl? Eğleniyor musun?"
+     },
+     {
+      "en": "Dylan: It's brilliant. I'm never bored here.",
+      "tr": "Dylan: Harika. Burada hiç sıkılmıyorum."
+     },
+     {
+      "en": "Izzy: What do you do every day?",
+      "tr": "Izzy: Her gün ne yapıyorsunuz?"
+     },
+     {
+      "en": "Dylan: In the morning we usually study computer languages, and in the afternoon we learn how to write apps.",
+      "tr": "Dylan: Sabahları genelde bilgisayar dilleri çalışıyoruz, öğleden sonra da uygulama yazmayı öğreniyoruz."
+     },
+     {
+      "en": "Dylan: But we don't always do the same thing. Today we're building robots!",
+      "tr": "Dylan: Ama her zaman aynı şeyi yapmıyoruz. Bugün robot yapıyoruz!"
+     },
+     {
+      "en": "Izzy: That sounds cool!",
+      "tr": "Izzy: Kulağa harika geliyor!"
+     },
+     {
+      "en": "Dylan: It is, but it isn't as easy as it looks!",
+      "tr": "Dylan: Öyle ama göründüğü kadar kolay değil!"
+     },
+     {
+      "en": "Izzy: I bet.",
+      "tr": "Izzy: Eminim öyledir."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Dylan hangi kampta?",
+      "secenekler": [
+       "Teknoloji kampında",
+       "Kaykay kampında",
+       "Müzik kampında"
+      ],
+      "dogru": 0,
+      "ipucu": "İlk cümlede {{tech camp}}'e dokun.",
+      "aciklama": "Dylan teknoloji kampında. (SB s. 5)"
+     },
+     {
+      "soru": "Dylan'lar BUGÜN ne yapıyor?",
+      "secenekler": [
+       "Uygulama yazıyorlar",
+       "Robot yapıyorlar",
+       "Bilgisayar dili çalışıyorlar"
+      ],
+      "dogru": 1,
+      "ipucu": "{{Today}} ile başlayan cümleyi bul; şimdiki zaman var.",
+      "aciklama": "{{Today we're building robots!}}: bugün robot yapıyorlar. Uygulama yazmak her günkü rutin. (SB s. 5)"
+     }
+    ]
+   },
+   {
+    "baslik": "Skateboarding camp",
+    "cumleler": [
+     {
+      "en": "Dylan: There's a competition tomorrow. I'm excited but also a bit worried.",
+      "tr": "Dylan: Yarın bir yarışma var. Heyecanlıyım ama biraz da endişeliyim."
+     },
+     {
+      "en": "Dylan: My robot isn't working very well. Anyway, how's skateboarding camp?",
+      "tr": "Dylan: Robotum pek iyi çalışmıyor. Neyse, kaykay kampı nasıl?"
+     },
+     {
+      "en": "Izzy: I'm having the time of my life. I'm learning lots of new tricks.",
+      "tr": "Izzy: Hayatımın en güzel zamanını geçiriyorum. Bir sürü yeni hareket öğreniyorum."
+     },
+     {
+      "en": "Izzy: I always feel nervous before I do one, and I sometimes feel embarrassed when I fall over.",
+      "tr": "Izzy: Bir hareketi yapmadan önce hep gerilirim, düştüğümde de bazen utanırım."
+     },
+     {
+      "en": "Dylan: I feel upset when my robot falls over!",
+      "tr": "Dylan: Robotum devrilince ben de üzülüyorum!"
+     },
+     {
+      "en": "Izzy: Oh, don't be upset!",
+      "tr": "Izzy: Ah, üzülme!"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Izzy düştüğünde bazen nasıl hissediyor?",
+      "secenekler": [
+       "Heyecanlı",
+       "Kızgın",
+       "Utanmış"
+      ],
+      "dogru": 2,
+      "ipucu": "{{when I fall over}} geçen cümleye bak.",
+      "aciklama": "{{I sometimes feel embarrassed when I fall over.}} (SB s. 5)"
+     },
+     {
+      "soru": "Dylan yarınki yarışma için nasıl hissediyor?",
+      "secenekler": [
+       "Sadece sıkılmış",
+       "Heyecanlı ama biraz endişeli",
+       "Kızgın"
+      ],
+      "dogru": 1,
+      "ipucu": "{{I'm excited but also a bit worried.}} cümlesine bak.",
+      "aciklama": "{{excited}} heyecanlı, {{a bit worried}} biraz endişeli. (SB s. 5)"
+     }
+    ]
+   },
+   {
+    "baslik": "Got to go!",
+    "cumleler": [
+     {
+      "en": "Dylan: Listen, have you got any photos of you on your skateboard? I'm making an app for social media.",
+      "tr": "Dylan: Baksana, kaykayın üstünde fotoğrafın var mı? Sosyal medya için bir uygulama yapıyorum."
+     },
+     {
+      "en": "Izzy: No. I hardly ever take photos.",
+      "tr": "Izzy: Hayır. Neredeyse hiç fotoğraf çekmem."
+     },
+     {
+      "en": "Dylan: OK, don't worry. Anyway, got to go. The next class is starting and everyone's waiting for me.",
+      "tr": "Dylan: Tamam, dert etme. Neyse, gitmem lazım. Sıradaki ders başlıyor ve herkes beni bekliyor."
+     },
+     {
+      "en": "Izzy: You're never on time! Listen, we always use this messaging app to talk. Next time let's do a video chat.",
+      "tr": "Izzy: Hiç zamanında gelmiyorsun! Baksana, konuşmak için hep bu mesajlaşma uygulamasını kullanıyoruz. Bir dahaki sefere görüntülü konuşalım."
+     },
+     {
+      "en": "Dylan: Good idea! Bye!",
+      "tr": "Dylan: İyi fikir! Hoşça kal!"
+     },
+     {
+      "en": "Izzy: Bye! Good luck with your robot!",
+      "tr": "Izzy: Hoşça kal! Robotunla iyi şanslar!"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Izzy ne sıklıkla fotoğraf çekiyor?",
+      "secenekler": [
+       "Neredeyse hiç",
+       "Her zaman",
+       "Genelde"
+      ],
+      "dogru": 0,
+      "ipucu": "{{hardly ever}} kelimesine dokun.",
+      "aciklama": "{{I hardly ever take photos.}}: neredeyse hiç fotoğraf çekmez. (SB s. 5)"
+     },
+     {
+      "soru": "Dylan neden hemen gitmek zorunda?",
+      "secenekler": [
+       "Robotu bozuldu",
+       "Sıradaki ders başlıyor",
+       "Kaykay kampına gidiyor"
+      ],
+      "dogru": 1,
+      "ipucu": "{{got to go}}'dan sonraki cümleye bak.",
+      "aciklama": "{{The next class is starting and everyone's waiting for me.}} (SB s. 5)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Kitaptaki {{Get it right!}} kutusu: sıklık zarfları ana fiilden önce, {{be}}'den sonra gelir: {{I always get up early.}} / {{I am never late.}} (SB s. 6)",
+  "{{often}}, {{sometimes}} ve {{usually}} cümlenin başına da gelebilir: {{Sometimes, my family and I listen to music.}} (WB s. 86)"
+ ],
+ "akildaKalsin": [
+  "Her gün / alışkanlık: {{present simple}} ({{I study}}, {{she studies}}).",
+  "Şu an: {{am / is / are}} + fiil{{-ing}} ({{we're building}}).",
+  "Sıklık zarfı: fiilden önce, {{be}}'den sonra ({{I always get up}}, {{I am never late}}).",
+  "Programlı gelecek: {{The film starts at 21.00.}}",
+  "Geçmiş: fiil{{-ed}} ya da düzensiz fiil; olumsuz/soru: {{didn't}} / {{Did}} + yalın fiil."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Geniş zaman mı şimdiki zaman mı, nasıl anlarım?",
+   "cevap": "İpucu kelimelere bak: {{every day}}, {{usually}}, {{always}} → geniş zaman. {{now}}, {{at the moment}}, {{today}} → şimdiki zaman. Dylan'ın cümlesinde ikisi de var: {{we usually study}} (her gün) ve {{Today we're building}} (şu an). (SB s. 5, WB s. 86)"
+  },
+  {
+   "soru": "{{He}} ile neden fiile {{-s}} geliyor?",
+   "cevap": "Geniş zamanda {{he}}, {{she}}, {{it}} ile fiilin sonuna {{-s}} eklenir: {{My sister likes rock music.}} Diğer öznelerde ek yok: {{I use my phone every day.}} (WB s. 86)"
+  },
+  {
+   "soru": "Gelecek için neden geniş zaman?",
+   "cevap": "Saati, günü belli olan programlı olaylar için kullanılır: film, tren, ders. {{The film starts at 21.00.}} (SB s. 6)"
+  },
+  {
+   "soru": "{{Did}}'li soruda fiil neden {{-ed}} almıyor?",
+   "cevap": "Geçmiş zamanı {{did}} zaten gösteriyor, fiil yalın kalır: {{Where did you work last summer?}} Olumsuzda da aynı: {{They didn't want ...}} (SB s. 8)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendi gününü anlat: her gün yaptığın bir şey ({{I usually ...}}) ve şu an yaptığın bir şey ({{Now I'm ...}}).",
+   "ornekCevap": "I usually go to school by bus. Now I'm studying English on my computer.",
+   "anahtarlar": [
+    "usually",
+    "i'm",
+    "ing"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Boşluğa hangisi gelir? {{Look! Dylan ___ a robot now.}}",
+   "secenekler": [
+    "builds",
+    "is building",
+    "built"
+   ],
+   "dogru": 1,
+   "ipucu": "{{now}} şu an demek.",
+   "aciklama": "{{now}} → şimdiki zaman: {{is building}}. (WB s. 86)"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I ___ my phone every day.}}",
+   "secenekler": [
+    "use",
+    "am using",
+    "used"
+   ],
+   "dogru": 0,
+   "ipucu": "{{every day}} alışkanlık anlatır.",
+   "aciklama": "{{every day}} → geniş zaman: {{use}}. (WB s. 86)"
+  },
+  {
+   "soru": "En sık olandan en az olana doğru sıralama hangisi?",
+   "secenekler": [
+    "never, sometimes, always",
+    "always, sometimes, never",
+    "sometimes, always, never"
+   ],
+   "dogru": 1,
+   "ipucu": "Çubuk grafiği hatırla: %100'den %0'a.",
+   "aciklama": "{{always}} (%100) → {{sometimes}} → {{never}} (%0). (SB s. 6)"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "usually",
+    "hardly ever",
+    "sometimes"
+   ],
+   "dogru": 1,
+   "ipucu": "İki kelimelik sıklık zarfı.",
+   "aciklama": "Duyduğun {{hardly ever}}: neredeyse hiç. (SB s. 6)",
+   "dinle": "hardly ever"
+  },
+  {
+   "soru": "{{The train leaves soon.}} Bu cümle neyi anlatır?",
+   "secenekler": [
+    "Programlı gelecek",
+    "Geçmiş",
+    "Alışkanlık"
+   ],
+   "dogru": 0,
+   "ipucu": "Tren saatleri gibi programlı olaylar…",
+   "aciklama": "Tren saati belli: geniş zamanla gelecek. (SB s. 6)"
+  },
+  {
+   "soru": "{{go}} fiilinin geçmiş hâli hangisi?",
+   "secenekler": [
+    "goed",
+    "went",
+    "gone"
+   ],
+   "dogru": 1,
+   "ipucu": "Düzensiz fiil; {{-ed}} almaz.",
+   "aciklama": "{{go}} → {{went}}. (SB s. 8)"
+  },
+  {
+   "soru": "Olumsuz cümle hangisi doğru?",
+   "secenekler": [
+    "I didn't go to the beach.",
+    "I didn't went to the beach.",
+    "I don't went to the beach."
+   ],
+   "dogru": 0,
+   "ipucu": "{{didn't}} + yalın fiil.",
+   "aciklama": "{{I didn't go to the beach.}} (SB s. 8)"
+  },
+  {
+   "soru": "{{You're never on time!}} Bu cümlede {{never}} neden {{are}}'dan sonra?",
+   "secenekler": [
+    "Çünkü fiil -ing aldı",
+    "Çünkü sıklık zarfı be'den sonra gelir",
+    "Çünkü soru cümlesi"
+   ],
+   "dogru": 1,
+   "ipucu": "{{Get it right!}} kuralını hatırla.",
+   "aciklama": "Sıklık zarfı {{be}}'den sonra gelir. (SB s. 6)"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "We're building robots.",
+    "We built robots.",
+    "We build robots."
+   ],
+   "dogru": 0,
+   "ipucu": "Fiilin sonunda {{-ing}} var mı? Yavaş dinle.",
+   "aciklama": "Duyduğun {{We're building robots.}}: şimdiki zaman. (SB s. 5)",
+   "dinle": "We're building robots."
+  },
+  {
+   "soru": "{{Where ___ you go on your last holiday?}}",
+   "secenekler": [
+    "do",
+    "were",
+    "did"
+   ],
+   "dogru": 2,
+   "ipucu": "Geçmiş zamanda soru yardımcısı.",
+   "aciklama": "{{Where did you go ...?}} (SB s. 8)"
+  }
+ ],
+ "kelimeOyunlari": false
+}

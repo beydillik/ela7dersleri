@@ -311,7 +311,7 @@
     const d = S.data;
     const games = [["kart", "Hafıza Kartları"], ["eslestir", "Eşleştir"]];
     if (d.gruplar && d.gruplar.length) games.push(["grupla", "Gruplayalım"]);
-    if (isEn()) games.push(["dinle", "Dinle ve Bul"], ["kur", "Kelimeyi Kur"]);
+    if (isEn() && d.kelimeOyunlari !== false) games.push(["dinle", "Dinle ve Bul"], ["kur", "Kelimeyi Kur"]); // dilbilgisi konularında kapatılır
     if (d.cumleler && d.cumleler.length) games.push(["cumle", "Cümle Kur"]);
     if (d.resimEslestir) games.push(["resim", "Resim Eşleştir"]);
     if (d.hatalar && d.hatalar.length) games.push(["hata", "Hatayı Bul"]);

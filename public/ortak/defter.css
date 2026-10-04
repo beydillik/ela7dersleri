@@ -571,3 +571,10 @@ a.head-btn { text-decoration: none; display: inline-flex; align-items: center; }
 .hata-tr { margin: 0 0 10px; }
 #hsec .opts { margin-bottom: 8px; }
 .hpunc { align-self: center; margin-left: -6px; font: 800 20px/1 var(--display); }
+/* Konuya Bak'taki dar kartlarda formül şeridi küçülür */
+.card .formul { gap: 5px; margin: 8px 0; }
+.card .frow { gap: 4px; }
+.card .fblok { padding: 3px 7px; min-width: 0; border-radius: 9px; }
+.card .fblok b { font-size: 14px; }
+.card .fblok small { font-size: 10px; }
+.card .fop { font-size: 15px; }
