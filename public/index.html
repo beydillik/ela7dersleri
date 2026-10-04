@@ -261,13 +261,13 @@
   // ---------- Dersler ----------
   // "kod" verilenlerin ünite listesi ve robot çizimi kendi ders.json dosyasından okunur;
   // yeni ders açıldığında buraya kodunu yazmak yeterli.
-  const DERSLER = [
+  const DERSLER = [ // ana sayfadaki sıra (Kemal'in istediği sıra)
+    { kod: null,   ders: "Türkçe",          bot: "Hece",   renk: "#c99a06" },
+    { kod: null,   ders: "Matematik",       bot: "Pisi",   renk: "#1f9e8f" },
     { kod: "fen1", ders: "Fen Bilimleri",   bot: "Kuark",  renk: "#ff7a33" },
-    { kod: "sos1", ders: "Sosyal Bilgiler", bot: "Pusula", renk: "#2f8f5f" },
     { kod: "ing1", ders: "İngilizce (MEB)", bot: "Polly",  renk: "#1d6fa3" },
     { kod: "own1", ders: "İngilizce (Own It)", bot: "Hoot", renk: "#6c4bd8" },
-    { kod: null,   ders: "Matematik",       bot: "Pisi",   renk: "#1f9e8f" },
-    { kod: null,   ders: "Türkçe",          bot: "Hece",   renk: "#c99a06" }
+    { kod: "sos1", ders: "Sosyal Bilgiler", bot: "Pusula", renk: "#2f8f5f" }
   ];
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const box = document.getElementById("books");
