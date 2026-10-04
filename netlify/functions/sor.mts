@@ -51,11 +51,21 @@ async function kaynakHazirla(origin: string, dersKod: string, konuId: string) {
 
   const konuRes = await fetch(`${origin}/${dersKod}/konular/${konuId}.json`);
   const konu = konuRes.ok ? await konuRes.json() : null;
-  const ozet = konu ? [
-    `Konu: ${konu.baslik} (${konu.sayfalar})`, konu.giris,
-    ...konu.kavramlar.map((k: any) => `- ${k.ad}: ${k.aciklama} ${k.ek || ""} (Akılda kalsın: ${k.akilda})`),
-    "Akılda kalsın: " + konu.akildaKalsin.join(" / ")
-  ].join("\n") : "";
+  let ozet = "";
+  if (konu && konu.tur === "tarama") {   // Ara Durak: kapsanan konuların özetleri birlikte
+    const alt = await Promise.all((konu.kapsar || []).map(async (id: string) => {
+      try { const r = await fetch(`${origin}/${dersKod}/konular/${id}.json`); return r.ok ? await r.json() : null; } catch { return null; }
+    }));
+    ozet = [`Ara Durak (tekrar ve tarama): ${konu.baslik}. Öğrenci şu konuları birlikte tekrar ediyor:`,
+      ...alt.filter(Boolean).map((k: any) => `- ${k.baslik} (${k.sayfalar}): ` + k.kavramlar.map((x: any) => `${x.ad}: ${x.akilda}`).join("; ") + ". Akılda kalsın: " + k.akildaKalsin.join(" / "))
+    ].join("\n");
+  } else if (konu) {
+    ozet = [
+      `Konu: ${konu.baslik} (${konu.sayfalar})`, konu.giris,
+      ...konu.kavramlar.map((k: any) => `- ${k.ad}: ${k.aciklama} ${k.ek || ""} (Akılda kalsın: ${k.akilda})`),
+      "Akılda kalsın: " + konu.akildaKalsin.join(" / ")
+    ].join("\n");
+  }
 
   // Kitap dosyası fonksiyona "included_files" ile eklenir; çalışma klasörü ortama göre değişebildiği için birkaç yer denenir
   let kitap = "";
@@ -162,7 +172,7 @@ export default async (req: Request, context: Context) => {
   let govde: any;
   try { govde = await req.json(); } catch { return json({ hata: "Geçersiz istek" }, 400); }
   const dersKod = String(govde?.ders || ""), konuId = String(govde?.konu || "");
-  if (!/^[a-z]{2,8}[12]$/.test(dersKod) || !/^u\d{1,2}k\d{1,2}$/.test(konuId)) return json({ hata: "Geçersiz ders veya konu" }, 400);
+  if (!/^[a-z]{2,8}[12]$/.test(dersKod) || !/^u\d{1,2}[kt]\d{1,2}$/.test(konuId)) return json({ hata: "Geçersiz ders veya konu" }, 400);
   const mesajlar: Mesaj[] = (Array.isArray(govde.mesajlar) ? govde.mesajlar : []).slice(-8)
     .filter((m: any) => (m?.rol === "user" || m?.rol === "bot") && typeof m.metin === "string" && m.metin.trim())
     .map((m: any) => ({ rol: m.rol, metin: m.metin.slice(0, 600) }));

@@ -122,8 +122,10 @@ def G(soru, cevap, ipucu, aciklama, **ek):          # tuş takımıyla sayı yaz
     return d
 
 
-def N(soru, nokta, sd, ipucu, aciklama):             # sayı doğrusunda noktaya dokunma
-    return {"soru": soru, "nokta": nokta, "sayiDogrusu": sd, "ipucu": ipucu, "aciklama": aciklama}
+def N(soru, nokta, sd, ipucu, aciklama, **ek):       # sayı doğrusunda noktaya dokunma
+    d = {"soru": soru, "nokta": nokta, "sayiDogrusu": sd, "ipucu": ipucu, "aciklama": aciklama}
+    d.update(ek)
+    return d
 
 
 # =================================================================
@@ -612,7 +614,325 @@ def u1k2():
     }
 
 
-KONULAR = [u1k1, u1k2]
+# ---------- u1k3 çizimleri ----------
+def svg_referans():
+    g = "<rect x='20' y='90' width='80' height='16' rx='6' fill='#f5f6fa'/>" + txt(60, 102, "200 g", "#1b2340", 11)
+    g += "<rect x='56' y='72' width='8' height='18' fill='#9aa3bf'/><rect x='28' y='66' width='64' height='8' rx='4' fill='#f5f6fa'/>"
+    g += "<path d='M40 30 h40 l-4 36 h-32z' fill='#c98a4b'/><path d='M40 30 h40 l-2 7 h-36z' fill='#a8703b'/>" + txt(60, 56, "200 g", "#fff4e6", 11)
+    g += "<path d='M60 30 V12' stroke='#f2c14e' stroke-width='2.5'/><path d='M60 12 l16 5 -16 5z' fill='#f2c14e'/>"
+    return bg(g)
+
+
+def svg_hata():
+    g = "<line x1='10' y1='76' x2='110' y2='76' stroke='#f5f6fa' stroke-width='3'/>"
+    for i in range(7):
+        x = 18 + i * 14
+        r = "#f2c14e" if i == 3 else "#f5f6fa"
+        g += f"<line x1='{x}' y1='{70 if i != 3 else 66}' x2='{x}' y2='{82 if i != 3 else 86}' stroke='{r}' stroke-width='{2.5 if i != 3 else 3.5}'/>"
+    g += txt(18, 100, "197", NB, 11) + txt(60, 100, "200", "#f2c14e", 12) + txt(102, 100, "203", OB, 11)
+    g += f"<path d='M58 66 Q39 34 20 66' stroke='{NB}' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M62 66 Q81 34 100 66' stroke='{OB}' stroke-width='3' fill='none' stroke-linecap='round'/>"
+    g += txt(39, 40, "3 g", NB, 13) + txt(81, 40, "3 g", OB, 13)
+    return bg(g)
+
+
+def _sd_mini(y, vals, x0, adim, etiket=(), renk_etiket=True):
+    """120×120 çizimlerde küçük yatay sayı doğrusu."""
+    g = f"<line x1='8' y1='{y}' x2='112' y2='{y}' stroke='#f5f6fa' stroke-width='3'/>"
+    for i, v in enumerate(vals):
+        x = x0 + i * adim
+        r = NB if v < 0 else OB if v > 0 else "#f2c14e"
+        g += f"<line x1='{x}' y1='{y - 6}' x2='{x}' y2='{y + 6}' stroke='{r}' stroke-width='2.5'/>"
+        if v in etiket:
+            g += txt(x, y + 22, (M + str(-v)) if v < 0 else str(v), r, 12)
+    return g
+
+
+def svg_mutlak():
+    g = txt(60, 46, f"|{M}3| = 3", "#f5f6fa", 24)
+    g += _sd_mini(86, range(-3, 4), 24, 12, etiket=(-3, 0, 3))
+    g += "<path d='M58 80 Q41 60 26 80' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M26 80 l2 -9 6 6z' fill='#f2c14e'/>"
+    g += txt(42, 66, "3", "#f2c14e", 12)
+    return bg(g)
+
+
+def svg_ayna():
+    g = _sd_mini(80, range(-4, 5), 12, 12, etiket=(-4, 0, 4))
+    g += f"<path d='M58 72 Q35 40 12 72' stroke='{NB}' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M62 72 Q85 40 108 72' stroke='{OB}' stroke-width='3' fill='none' stroke-linecap='round'/>"
+    g += f"<circle cx='12' cy='80' r='6' fill='{NB}'/><circle cx='108' cy='80' r='6' fill='{OB}'/>"
+    g += txt(34, 46, "4", NB, 16) + txt(86, 46, "4", OB, 16) + txt(60, 40, "=", "#f2c14e", 20)
+    return bg(g)
+
+
+def svg_eksi_yok():
+    g = "<rect x='14' y='72' width='92' height='24' rx='4' fill='#f2c14e'/>"
+    for i in range(11):
+        x = 20 + i * 8
+        g += f"<line x1='{x}' y1='72' x2='{x}' y2='{84 if i % 5 == 0 else 79}' stroke='#1b2340' stroke-width='2'/>"
+    g += txt(30, 93, "0", "#1b2340", 9)
+    g += f"<line x1='46' y1='36' x2='74' y2='36' stroke='{NB}' stroke-width='7' stroke-linecap='round'/>"
+    g += "<circle cx='60' cy='36' r='22' fill='none' stroke='#ff6b6b' stroke-width='4.5'/><line x1='45' y1='51' x2='75' y2='21' stroke='#ff6b6b' stroke-width='4.5' stroke-linecap='round'/>"
+    return bg(g)
+
+
+def svg_iki_cevap():
+    g = txt(60, 40, "| ? | = 4", "#f5f6fa", 20)
+    g += _sd_mini(80, range(-4, 5), 12, 12, etiket=(-4, 0, 4))
+    g += f"<circle cx='12' cy='80' r='7' fill='{NB}'/><circle cx='108' cy='80' r='7' fill='{OB}'/>"
+    g += txt(12, 66, "?", NB, 14) + txt(108, 66, "?", OB, 14)
+    return bg(g)
+
+
+# =================================================================
+def u1k3():
+    sd = lambda mn, mx, **ek: dict({"min": mn, "max": mx}, **ek)
+    kat = lambda mn, mx, **ek: dict({"min": mn, "max": mx, "dikey": True, "birim": 28, "sifirEtiketi": "Zemin kat"}, **ek)
+    return {
+        "id": "u1k3", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Mutlak Değer", "sayfalar": "s. 35–40",
+        "giris": "Bir sayı 0'dan ne kadar uzakta? Bu konuda bunu ölçmeyi öğreneceğiz. Eksi ya da artı olması fark etmez; sadece kaç birim uzakta olduğuna bakacağız. Bu uzaklığa mutlak değer denir.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu, geçen iki konudaki sayı doğrusu bilgilerinin üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+            "maddeler": [
+                {"ad": "Eksi sayılar sayı doğrusunda", "sinif": "Geçen konu", "svg": svg_dogru(),
+                 "anlatim": "Sayı doğrusunda 0'ın sağında pozitif sayılar, solunda negatif sayılar vardır. Eksi bir sayıyı bulmak için 0'dan sola doğru sayarız.",
+                 "akilda": "Sol eksi, sağ artı",
+                 "ornek": {"problem": f"{M}2'yi sayı doğrusunda bulalım.", "adimlar": [
+                     {"metin": f"{M}2 eksi bir sayı. Eksi sayılar 0'ın solunda.", "islem": "Yön: sola"},
+                     {"metin": "0'dan sola 2 aralık say.",
+                      "sayiDogrusu": sd(-4, 4, oklar=[{"bas": 0, "son": -2, "etiket": "2 aralık", "renk": NEG}], isaretler=[{"x": -2, "etiket": f"{M}2", "renk": NEG}]),
+                      "islem": f"0 → {M}2"}]},
+                 "sorular": [
+                     N(f"Sayı doğrusunda {M}4'ün yerine dokun.", -4, sd(-6, 6), "0'ı bul. Sola doğru 4 aralık say.", f"{M}4, 0'ın 4 birim solundadır."),
+                     S("Hangisi sayı doğrusunda 0'ın solundadır?", ["5", f"{M}5", "0"], 1, "0'ın solunda eksi sayılar vardır.", f"{M}5 negatiftir, 0'ın solundadır.")]},
+                {"ad": "İki sayı arasındaki uzaklık", "sinif": "Geçen konu", "svg": svg_uzaklik(),
+                 "anlatim": "İki sayı arasındaki uzaklığı, sayı doğrusunda aradaki aralıkları sayarak buluruz. Uzaklık her zaman pozitif bir sayıdır.",
+                 "akilda": "Aralıkları say",
+                 "ornek": {"problem": f"0 ile {M}5 arasında kaç birim var?", "adimlar": [
+                     {"metin": f"0'dan başla, {M}5'e kadar sola doğru aralıkları say: 1, 2, 3, 4, 5.",
+                      "sayiDogrusu": sd(-6, 2, oklar=[{"bas": 0, "son": -5, "etiket": "5 aralık", "renk": NEG}])},
+                     {"metin": "Uzaklık 5 birimdir. Uzaklığa eksi demeyiz.", "islem": "5 birim"}]},
+                 "sorular": [
+                     G(f"Sayı doğrusunda 0 ile {M}6 arasında kaç birim var?", "6", f"0'dan {M}6'ya kadar aralıkları say.", f"0 ile {M}6 arasında 6 aralık var: 6 birim.", birim="birim"),
+                     G(f"Sayı doğrusunda {M}2 ile +3 arasında kaç birim var?", "5", f"{M}2'den 0'a kaç aralık? 0'dan +3'e kaç aralık? İkisini topla.", f"{M}2 → 0: 2 birim, 0 → +3: 3 birim. 2 + 3 = 5 birim.", birim="birim")]},
+                {"ad": "Kesir ve ondalık sayıyı yerleştirme", "sinif": "Geçen konu", "svg": svg_sd_rasyonel(),
+                 "anlatim": "Bir kesri ya da ondalık sayıyı sayı doğrusunda bulmak için önce işaretine bakarız, sonra hangi iki tam sayı arasında olduğunu buluruz. 1,5 sayısı 1 ile 2'nin tam ortasındadır.",
+                 "akilda": "İşaret, ara, böl, ilerle",
+                 "ornek": {"problem": "[[-1/2]] sayısını bulalım.", "adimlar": [
+                     {"metin": "İşaret eksi: 0'dan sola gideceğiz.", "islem": "Yön: sola"},
+                     {"metin": f"[[1/2]] yarım demek. 0 ile {M}1'in tam ortası.",
+                      "sayiDogrusu": {"min": -2, "max": 1, "bolme": 2, "isaretler": [{"x": -0.5, "etiket": "−1/2", "renk": NEG}]},
+                      "islem": f"[[-1/2]], 0 ile {M}1 arasında"}]},
+                 "sorular": [
+                     N("[[-1/2]] sayısının yerine dokun.", -0.5, {"min": -2, "max": 1, "bolme": 2},
+                       f"Eksi: 0'dan sola. 0 ile {M}1 arası 2 eş parça; 1 parça say.", "[[-1/2]], 0'ın yarım birim solundadır."),
+                     S(f"{M}1,5 hangi iki tam sayı arasındadır?", [f"1 ile 2", f"{M}1 ile {M}2", f"0 ile {M}1"], 1,
+                       "Önce işarete bak: eksi. Sonra virgülden önceki sayıya bak: 1.", f"{M}1,5 sayısı {M}1 ile {M}2'nin tam ortasındadır.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Başlangıç Noktası", "renk": "#1f9e8f", "svg": svg_referans(),
+             "aciklama": "Bir şeyi ölçerken önce bir başlangıç noktası seçeriz. Kahve fabrikasında her paketin 200 gram olması isteniyor. Bu yüzden paketler 200 grama göre kontrol edilir.",
+             "ek": "Başlangıç noktasına referans noktası da denir. Bazıları amaca göre değişir: çay paketinde 500 gram, şeker paketinde 1000 gram. Bazıları herkes için aynıdır: deniz seviyesi her zaman 0'dır. (s. 35–36)",
+             "akilda": "Önce başlangıcı bul",
+             "soru": S("Bir fabrikada her un paketinin 1000 gram olması isteniyor. Paketler hangi sayıya göre kontrol edilir?", ["1000 grama", "0 grama", "500 grama"], 0,
+                       "Fabrika paketlerin kaç gram olmasını istiyor? Başlangıç noktası odur.",
+                       "Hedef 1000 gram. Paketler 1000 grama göre kontrol edilir; 1000 gram başlangıç noktasıdır. (s. 36)")},
+            {"ad": "Eksik ya da Fazla", "renk": "#7b4fc9", "svg": svg_hata(),
+             "aciklama": "197 gramlık paket hedefin 3 gram eksiği, 203 gramlık paket 3 gram fazlası. İkisinin de hata miktarı 3 gramdır. Eksik ya da fazla olması fark etmez; sadece kaç birim uzakta olduğuna bakarız.",
+             "ek": "Kitapta buna \"hata miktarı\" deniyor. Hata miktarı, başlangıç noktasına olan uzaklıktır. (s. 35–36)",
+             "akilda": "Az ya da çok, uzaklık aynı",
+             "cozum": {"baslik": "Hangi makine daha çok hata yaptı?",
+                       "problem": "Kahve fabrikasında hedef 200 gram. 1. makinenin paketi 197 gram, 3. makinenin paketi 203 gram geldi. Hata miktarlarını karşılaştıralım.",
+                       "adimlar": [
+                           {"metin": "Başlangıç noktası nerede? Hedef kütle.", "islem": "Başlangıç = 200 g"},
+                           {"metin": "197 gram, 200 gramdan kaç eksik?", "islem": "200 − 197 = 3 g eksik → hata 3 g"},
+                           {"metin": "203 gram, 200 gramdan kaç fazla?", "islem": "203 − 200 = 3 g fazla → hata 3 g"},
+                           {"metin": "Biri eksik, biri fazla. Ama ikisi de 200'e 3 gram uzakta.", "islem": "3 g = 3 g"}],
+                       "sonuc": "İki makinenin hata miktarı eşit: 3 gram. Eksik ya da fazla olması hata miktarını değiştirmez. (s. 35)"},
+             "soru": G("Hedef 200 gram. 199 gramlık paketin hata miktarı kaç gramdır?", "1",
+                       "199 ile 200 arasında kaç gram var?", "200 − 199 = 1. Paket 1 gram eksik; hata miktarı 1 gram. (s. 35)", birim="g")},
+            {"ad": "Mutlak Değer", "renk": "#3274d6", "svg": svg_mutlak(),
+             "aciklama": "Bir sayının 0'a olan uzaklığına o sayının mutlak değeri denir. Sayı doğrusunda 0, bütün sayılar için ortak başlangıç noktasıdır.",
+             "ek": f"Mutlak değer, sayının iki yanına dik çizgi çizerek gösterilir: |{M}3| = 3. Bu, \"{M}3'ün 0'a uzaklığı 3 birimdir\" demektir. (s. 37)",
+             "akilda": "Mutlak değer = 0'a uzaklık",
+             "sayiDogrusu": sd(-4, 4, oklar=[{"bas": 0, "son": -3, "etiket": "3 birim", "renk": NEG}], isaretler=[{"x": -3, "etiket": f"{M}3", "renk": NEG}]),
+             "cozum": {"baslik": "Asansörle zemin kata uzaklık",
+                       "problem": "Dört arkadaş bir AVM'nin zemin katında buluştu. Ece 2 kat aşağıdaki markete, Ahmet 2 kat yukarıdaki teknoloji mağazasına gitti. Zemin kata uzaklıklarını bulalım.",
+                       "sayiDogrusu": kat(-3, 3, isaretler=[{"x": -2, "etiket": "Market (Ece)", "renk": NEG}, {"x": 2, "etiket": "Teknoloji (Ahmet)", "renk": POS}]),
+                       "adimlar": [
+                           {"metin": "Başlangıç (0) nerede? Zemin kat.", "islem": "Zemin kat = 0"},
+                           {"metin": "Ece aşağı indi. Aşağı eksidir.", "islem": f"Ece: {M}2"},
+                           {"metin": "Ahmet yukarı çıktı. Yukarı artıdır.", "islem": "Ahmet: +2"},
+                           {"metin": "Zemin kata uzaklıkları kaç kat?", "islem": f"|{M}2| = 2   ve   |+2| = 2"}],
+                       "sonuc": "Farklı katlara gittiler ama zemin kata uzaklıkları aynı: 2 kat. (s. 37)"},
+             "sende": {"baslik": "Ada otoparka iniyor",
+                       "problem": "Ada aynı AVM'de 3 kat aşağıdaki otoparka gitti. Ada'nın katını ve zemin kata uzaklığını bulalım.",
+                       "sayiDogrusu": kat(-4, 3),
+                       "adimlar": [
+                           {"metin": "Ada asansörde hangi düğmeye basmalı?",
+                            "soru": G("Otoparkın katını tam sayıyla yaz.", "-3", f"Aşağı eksidir. Önce {M} tuşuna, sonra sayıya dokun.", f"Zemin katın 3 kat altı: {M}3."),
+                            "islem": f"Ada: {M}3"},
+                           {"metin": "Otopark zemin kata kaç kat uzaklıkta?",
+                            "soru": G("Zemin kata uzaklık kaç kat?", "3", "0'dan aşağı doğru aralıkları say. Uzaklığa eksi demeyiz.", "Otopark zemin kata 3 kat uzaklıkta.", birim="kat"),
+                            "islem": "3 kat"},
+                           {"metin": "Şimdi bunu mutlak değerle yaz.",
+                            "soru": S("Hangisi doğrudur?", [f"|{M}3| = {M}3", f"|{M}3| = 3", f"|3| = {M}3"], 1,
+                                      "Mutlak değer bir uzaklıktır. Uzaklık eksi olur mu?", f"{M}3'ün 0'a uzaklığı 3'tür: |{M}3| = 3."),
+                            "islem": f"|{M}3| = 3"}],
+                       "sonuc": f"Harika! Ada'nın katı {M}3, zemin kata uzaklığı |{M}3| = 3 kat. (s. 37)"},
+             "soru": G(f"|{M}7| kaçtır?", "7", f"{M}7, 0'dan kaç birim uzakta? Sayı doğrusunda aralıkları say.",
+                       f"{M}7'nin 0'a uzaklığı 7 birimdir: |{M}7| = 7. (s. 37)", sayiDogrusu=sd(-8, 1, isaretler=[{"x": -7, "etiket": f"{M}7", "renk": NEG}]))},
+            {"ad": "Eksi de Artı da Aynı", "renk": "#e8590c", "svg": svg_ayna(),
+             "aciklama": f"{M}4 ve +4, 0'ın iki yanında, 0'a aynı uzaklıktadır. Bu yüzden mutlak değerleri aynıdır: |{M}4| = |+4| = 4.",
+             "ek": f"Kolay yol: İşareti sil, sayı kalır. Kesirde ve ondalık sayıda da aynısı olur: |[[-15/8]]| = [[15/8]], |{M}1,5| = 1,5. (s. 37–38)",
+             "akilda": "İşareti sil, sayı kalır",
+             "sayiDogrusu": sd(-5, 5, isaretler=[{"x": -4, "etiket": f"{M}4", "renk": NEG}, {"x": 4, "etiket": "+4", "renk": POS}]),
+             "soru": S(f"|{M}9| ile |+9| için hangisi doğrudur?", [f"|{M}9| daha küçüktür.", "İkisi de 9'dur.", f"|{M}9| = {M}9"], 1,
+                       f"{M}9 ve +9, 0'a kaçar birim uzakta?", f"{M}9 ve +9 0'a eşit uzaklıkta: |{M}9| = |+9| = 9. (s. 37)")},
+            {"ad": "Mutlak Değer Eksi Olmaz", "renk": "#c92a2a", "svg": svg_eksi_yok(),
+             "aciklama": "Uzaklık eksi olamaz. Bu yüzden bir sayının mutlak değeri ya 0 ya da pozitif bir sayıdır. Sıfırın mutlak değeri sıfırdır: |0| = 0.",
+             "ek": f"Sondaj makinesi yer yüzeyinin 8,6 metre altında suya ulaştı. Konumu {M}8,6 m'dir ama yüzeye uzaklığı |{M}8,6| = 8,6 m'dir. (s. 37–38)",
+             "akilda": "Mutlak değer hiç eksi olmaz",
+             "soru": S("Hangisi doğrudur?", [f"|{M}6| = {M}6", "|0| = 1", f"|{M}6| = 6"], 2,
+                       "Mutlak değer bir uzaklıktır. 0'ın uzaklığı kaçtır, eksi bir uzaklık olur mu?",
+                       f"|{M}6| = 6 ve |0| = 0. Mutlak değer hiç eksi olmaz. (s. 37)")},
+            {"ad": "Mutlak Değeri Verilen Sayı", "renk": "#1d6fa3", "svg": svg_iki_cevap(),
+             "aciklama": "Mutlak değeri 4 olan sayıyı arıyorsak 0'a 4 birim uzaklıktaki sayıları buluruz. İki tane vardır: biri sağda (+4), biri solda (−4).",
+             "ek": "Yalnızca 0'ın mutlak değeri 0'dır. Mutlak değeri eksi olan bir sayı ise yoktur, çünkü uzaklık eksi olmaz. (s. 37–38)",
+             "akilda": "İki cevap: sağda ve solda",
+             "cozum": {"baslik": "Üçgen hangi sayı olabilir?",
+                       "problem": "Kitapta bir sayı üçgenle gösterilmiş ve mutlak değeri 12 verilmiş: |▲| = 12. Üçgen hangi sayılar olabilir?",
+                       "adimlar": [
+                           {"metin": "|▲| = 12 ne demek? Üçgen, 0'a 12 birim uzaklıkta.", "islem": "0'a uzaklık: 12"},
+                           {"metin": "0'ın sağında, 12 birim uzakta hangi sayı var?", "islem": "▲ = +12"},
+                           {"metin": "0'ın solunda, 12 birim uzakta hangi sayı var?", "islem": f"▲ = {M}12"},
+                           {"metin": "İki cevabı birlikte yaz.", "islem": f"▲ = 12   ya da   ▲ = {M}12"}],
+                       "sonuc": f"Mutlak değeri 12 olan iki sayı vardır: 12 ve {M}12. (s. 38)"},
+             "sende": {"baslik": "Kenan aracını nereye park etti?",
+                       "problem": "Çok katlı bir otoparkta giriş zemin kat kabul ediliyor; zeminin üstünde de altında da katlar var. Kenan aracını zemine 3 kat uzaklıktaki bir kata park etti. Hangi katlarda olabilir?",
+                       "sayiDogrusu": kat(-4, 4, sifirEtiketi="Zemin kat (giriş)"),
+                       "adimlar": [
+                           {"metin": "Zeminin 3 kat üstü hangi kat?",
+                            "soru": G("Zeminin 3 kat üstündeki katı yaz.", "3", "Yukarı artıdır. 0'dan yukarı 3 aralık say.", "Zeminin 3 kat üstü +3. kattır."),
+                            "islem": "+3"},
+                           {"metin": "Zeminin 3 kat altı hangi kat?",
+                            "soru": G("Zeminin 3 kat altındaki katı yaz.", "-3", f"Aşağı eksidir. Önce {M} tuşuna dokun.", f"Zeminin 3 kat altı {M}3. kattır."),
+                            "islem": f"{M}3"},
+                           {"metin": "Kenan hangi katlarda olabilir?",
+                            "soru": S("Doğru cevap hangisi?", ["Yalnız +3. kat", f"Yalnız {M}3. kat", f"+3. kat ya da {M}3. kat"], 2,
+                                      "Zemine 3 kat uzaklıkta kaç kat var? Yukarıyı da aşağıyı da düşün.", f"İki kat da zemine 3 kat uzaklıkta: +3 ve {M}3."),
+                            "islem": f"+3 ya da {M}3"}],
+                       "sonuc": f"Harika! Zemine 3 kat uzaklıkta iki kat var: +3 ve {M}3. (s. 40)"},
+             "soru": N("Mutlak değeri 2 olan negatif sayının yerine dokun.", -2, sd(-5, 5),
+                       f"Mutlak değeri 2 olan sayılar 0'a 2 birim uzakta. Negatif olan 0'ın solundadır.", f"|{M}2| = 2 ve {M}2 negatiftir. (s. 37–38)")}
+        ],
+        "biliyorMusun": [
+            "Marketteki birçok paketin üzerinde kütlenin yanında küçük bir \"e\" işareti vardır. Bu işaret, paketin kurallara uygun hazırlandığını gösterir. Kurallara göre 100 gramlık bir paket en fazla 4,5 gram eksik olabilir. (s. 35)",
+            "Kitapta Ömer, saatlerinin ne kadar ileri ya da geri olduğunu TÜBİTAK Ulusal Metroloji Enstitüsünün (UME) gösterdiği saate göre kontrol ediyor. Doğru saat orada başlangıç noktasıdır. (s. 36)"],
+        "akildaKalsin": [
+            "Ölçmeden önce başlangıç (referans) noktasını bul.",
+            "Eksik ya da fazla olması fark etmez; uzaklık aynıdır.",
+            "Bir sayının 0'a uzaklığına mutlak değer denir.",
+            f"|{M}4| = |+4| = 4: İşareti sil, sayı kalır.",
+            "Mutlak değer hiç eksi olmaz. |0| = 0.",
+            f"Mutlak değeri 4 olan iki sayı vardır: 4 ve {M}4."],
+        "merakKutusu": [
+            {"soru": "Mutlak değer neden hiç eksi olmuyor?", "cevap": "Çünkü mutlak değer bir uzaklıktır. \"Okul evime eksi 3 km uzakta\" demeyiz. Uzaklık ya 0'dır ya da pozitiftir. (s. 37)"},
+            {"soru": f"|{M}3| nasıl okunur?", "cevap": f"\"Eksi üçün mutlak değeri\" diye okunur. Sonucu 3'tür: |{M}3| = 3."},
+            {"soru": "Başlangıç noktası hep 0 mı?", "cevap": "Hayır. Çay fabrikasında başlangıç 500 gram, şeker fabrikasında 1000 gram olabilir. Ama sayı doğrusunda ve deniz seviyesinde başlangıç 0'dır. (s. 36–37)"},
+            {"soru": "Mutlak değeri aynı olan iki sayı nerede durur?", "cevap": f"Sayı doğrusunda 0'ın iki yanında, 0'a eşit uzaklıkta dururlar: {M}5 ve +5 gibi. (s. 37)"},
+            {"soru": "Kesirlerin de mutlak değeri olur mu?", "cevap": "Evet. Her rasyonel sayının 0'a bir uzaklığı vardır: |[[-15/8]]| = [[15/8]]. (s. 37)"}],
+        "dusunVeYaz": [{"soru": "Günlük hayattan bir başlangıç noktası örneği yaz. Bir şeyin bu noktaya ne kadar uzak olduğunu anlat.",
+                        "ornekCevap": f"Termometrede 0 °C başlangıç noktasıdır. Hava {M}5 °C olunca sıcaklık 0 °C'a 5 derece uzaktadır: |{M}5| = 5.",
+                        "anahtarlar": ["başlangıç", "uzak", "0", "referans"]}],
+        "sorular": [
+            G(f"|{M}8| kaçtır?", "8", f"{M}8, 0'dan kaç birim uzakta?", f"{M}8'in 0'a uzaklığı 8 birimdir: |{M}8| = 8. (s. 37)"),
+            S("Kahve fabrikasında hedef 200 gram. Hangi paketin hata miktarı daha büyüktür?", ["197 gramlık paket", "205 gramlık paket", "İkisi eşittir"], 1,
+              "Her paketin 200'e kaç gram uzak olduğunu bul: 200 − 197 = ?, 205 − 200 = ?",
+              "197 gram → 3 gram eksik, hata 3 g. 205 gram → 5 gram fazla, hata 5 g. 5 > 3. (s. 35)"),
+            N("Mutlak değeri 3 olan pozitif sayının yerine dokun.", 3, sd(-5, 5),
+              "0'a 3 birim uzakta iki sayı var. Pozitif olan 0'ın sağındadır.", "|+3| = 3 ve +3 pozitiftir. (s. 37)"),
+            G("Bir sondaj makinesi yer yüzeyinin 8,6 metre altında suya ulaştı. Makinenin konumunu yaz.", "-8,6",
+              f"\"Altında\" eksi demek. Önce {M} tuşuna, sonra 8, virgül ve 6'ya dokun.", f"Yüzeyin 8,6 m altı: {M}8,6 m. (s. 38)", birim="m"),
+            G(f"Sondaj makinesinin konumu {M}8,6 m. Bu konumun yer yüzeyine uzaklığı kaç metredir?", "8,6",
+              f"Uzaklık mutlak değerdir: |{M}8,6| = ? Uzaklık eksi olur mu?", f"|{M}8,6| = 8,6. Makine yüzeye 8,6 m uzaktadır. (s. 38)", birim="m"),
+            S("Mutlak değeri 5 olan sayılar hangileridir?", ["Yalnız 5", f"Yalnız {M}5", f"5 ve {M}5"], 2,
+              "0'a 5 birim uzaklıkta kaç sayı var? Sağa ve sola bak.", f"0'ın sağında 5, solunda {M}5 var. İkisinin de mutlak değeri 5'tir. (s. 38)"),
+            G("|[[-3/4]]| kaçtır? Kesir olarak yaz.", "3/4", "İşareti sil, sayı kalır. Kesir çizgisi için / tuşunu kullan.",
+              "|[[-3/4]]| = [[3/4]]. Mutlak değer hiç eksi olmaz. (s. 37–38)", kesir=True),
+            G("UME'ye göre saat 14.00. Ömer'in kol saati 14.05'i gösteriyor. Kol saati kaç dakika hatalı?", "5",
+              "Saat 14.00'ten kaç dakika ileride?", "14.05 − 14.00 = 5. Kol saati 5 dakika ileride; hata 5 dakikadır. (s. 36)", birim="dakika"),
+            N("0'a 4 birim uzaklıktaki negatif sayıya dokun.", -4, sd(-6, 6),
+              "0'dan sola doğru 4 aralık say.", f"0'ın 4 birim solunda {M}4 vardır: |{M}4| = 4. (s. 37)"),
+            S("Mutlak değeri 3'ten küçük olan tam sayılar hangileridir?", ["0, 1, 2", f"{M}2, {M}1, 0, 1, 2", f"{M}3, {M}2, {M}1, 0, 1, 2, 3"], 1,
+              f"0'a uzaklığı 0, 1 ya da 2 olan sayıları düşün. Eksi sayıları unutma. 3 ve {M}3'ün mutlak değeri 3'ten küçük mü?",
+              f"|{M}2| = 2, |{M}1| = 1, |0| = 0, |1| = 1, |2| = 2. 3 ve {M}3'ün mutlak değeri 3'tür, 3'ten küçük değildir. (s. 38)"),
+            S("AVM'nin zemin katından Ahmet 2 kat yukarı, Ece 2 kat aşağı gitti. Hangisi doğrudur?",
+              ["Zemin kata uzaklıkları eşittir: 2 kat.", "Ahmet zemin kata daha uzaktır.", f"Ece'nin zemin kata uzaklığı {M}2 kattır."], 0,
+              "İkisi de zeminden kaç kat uzaklaştı? Uzaklık eksi olur mu?", "İkisi de zemin kata 2 kat uzaktadır. Uzaklık eksi olmaz. (s. 37)"),
+            G("Bir çay fabrikasında hedef 500 gram. Bir paket 496 gram geldi. Hata miktarı kaç gramdır?", "4",
+              "Başlangıç noktası 500 gram. 496 ile 500 arasında kaç gram var?", "500 − 496 = 4. Hata miktarı 4 gramdır. (s. 36)", birim="g")]
+    }
+
+
+# =================================================================
+# Ara Duraklar (konu tarama): kapsanan konuların özeti + konuları birleştiren yeni sorular.
+# Motor ayrıca kapsanan konuların kendi sorularından "eskiSoru" kadarını (zorlanılan kavramlar önce) ekler.
+def K(konu, kavram=None):
+    return {"konu": konu, "kavram": kavram} if kavram else {"konu": konu}
+
+
+def u1t1():
+    return {
+        "id": "u1t1", "tur": "tarama", "unite": "1. Tema: Sayılar ve Nicelikler",
+        "baslik": "Ara Durak 1: Sayıların Yeri ve Uzaklığı", "sayfalar": "Konu 1–3 · s. 15–40",
+        "giris": "Üç konu bitti! Şimdi durup neler öğrendiğimize bakalım. Önce kısa özetleri oku ve kartları çevir. Sonra 10 soruluk tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": "Bu üç konu birbirine bağlı. Önce tam sayıları sayı doğrusuna yerleştirdik: eksiler solda, artılar sağda. Sonra iki tam sayının arasındaki kesirleri bulduk. En son da her sayının 0'a ne kadar uzak olduğunu ölçtük: mutlak değer.",
+        "kapsar": ["u1k1", "u1k2", "u1k3"],
+        "hatirla": [
+            {"konu": "u1k1", "maddeler": [
+                f"Altı, borç, gider, zarar → eksi ({M}). Üstü, alacak, gelir, kâr → artı (+).",
+                "Sayı doğrusunda negatifler 0'ın solunda, pozitifler sağındadır. Sıfırın işareti yoktur.",
+                "İki sayı arasındaki uzaklık için aralıkları say. 0'dan geçiyorsa iki parçaya böl, topla."]},
+            {"konu": "u1k2", "maddeler": [
+                "Kesir şeklinde yazılabilen sayılar rasyonel sayıdır. Payda asla 0 olamaz.",
+                "[[-1 1/2]] sayısındaki eksi, sayının tamamına aittir: eksiyi kenara koy, çevir, geri ekle.",
+                "Sayı doğrusunda bulmak için: işaret, ara, böl, ilerle."]},
+            {"konu": "u1k3", "maddeler": [
+                "Bir sayının 0'a uzaklığına mutlak değer denir.",
+                f"|{M}4| = |+4| = 4: İşareti sil, sayı kalır. Mutlak değer hiç eksi olmaz.",
+                f"Mutlak değeri 4 olan iki sayı vardır: 4 ve {M}4."]}],
+        "eskiSoru": 4,
+        "sorular": [
+            S("Hava sıcaklığı sıfırın 5 derece altında. Bu sıcaklığın 0 °C'a uzaklığı kaç derecedir?", ["5 derece", f"{M}5 derece", "0 derece"], 0,
+              "Önce sıcaklığı yaz: sıfırın altı eksidir. Sonra 0'a uzaklığını düşün. Uzaklık eksi olur mu?",
+              f"Sıcaklık {M}5 °C. 0 °C'a uzaklığı |{M}5| = 5 derecedir.",
+              kaynak=[K("u1k1", "Negatif Tam Sayılar"), K("u1k3", "Mutlak Değer")]),
+            G("Bir dalgıç deniz seviyesinin 12 metre altında, bir martı 5 metre üstünde uçuyor. Aralarında kaç metre var?", "17",
+              f"Dalgıç {M}12, martı +5. Yol 0'dan geçiyor: {M}12'den 0'a kaç metre? 0'dan +5'e kaç metre? İkisini topla.",
+              f"{M}12 → 0: 12 m, 0 → +5: 5 m. 12 + 5 = 17 m.", birim="m",
+              kaynak=[K("u1k1", "Kelimeden Sayıya"), K("u1k1", "İki Sayı Arasındaki Uzaklık")]),
+            N("Mutlak değeri [[1/2]] olan negatif sayının yerine dokun.", -0.5, {"min": -2, "max": 1, "bolme": 2},
+              f"0'a yarım birim uzaklıkta iki sayı var. Negatif olan 0'ın solunda; 0 ile {M}1'in tam ortasında.",
+              f"|[[-1/2]]| = [[1/2]] ve [[-1/2]] negatiftir. 0 ile {M}1'in tam ortasındadır.",
+              kaynak=[K("u1k3", "Mutlak Değeri Verilen Sayı"), K("u1k2", "Sayı Doğrusunda Gösterme")]),
+            S("|[[-5/2]]| hangi sayıya eşittir?", ["[[-2 1/2]]", "[[1 1/2]]", "[[2 1/2]]"], 2,
+              "İşareti sil: [[5/2]] kalır. Sonra 5'i 2'ye böl: bölüm tam kısım, kalan pay olur.",
+              "|[[-5/2]]| = [[5/2]]. 5 ÷ 2 = 2, kalan 1: [[5/2]] = [[2 1/2]]. Mutlak değer eksi olmaz.",
+              kaynak=[K("u1k3", "Eksi de Artı da Aynı"), K("u1k2", "Eksi Bütüne Aittir")]),
+            S("Hangisi doğrudur?", [f"|{M}2| = {M}2", f"[[-6/3]] = {M}2", "[[6/0]] = 0"], 1,
+              "Üçüne de tek tek bak: Mutlak değer eksi olur mu? Payda 0 olabilir mi? 6 ÷ 3 kaçtır?",
+              f"[[-6/3]] = {M}2 doğrudur. |{M}2| = 2 olmalıydı. [[6/0]] ise tanımsızdır; payda 0 olamaz.",
+              kaynak=[K("u1k2", "Payda Sıfır Olamaz"), K("u1k3", "Mutlak Değer Eksi Olmaz")]),
+            G("Meryem'in aklındaki sayının mutlak değeri 3, Cansel'inkinin 2. Bu iki sayı arasındaki uzaklık en çok kaç birim olabilir?", "5",
+              f"Meryem'in sayısı 3 ya da {M}3, Cansel'inki 2 ya da {M}2. En uzak olmaları için biri 0'ın sağında, biri solunda olmalı.",
+              f"{M}3 ile +2 (ya da +3 ile {M}2) arası: 3 + 2 = 5 birim. Kitapta aynı soru 12 ve 8 ile soruluyor. (s. 38)", birim="birim",
+              sayiDogrusu={"min": -4, "max": 4},
+              kaynak=[K("u1k3", "Mutlak Değeri Verilen Sayı"), K("u1k1", "İki Sayı Arasındaki Uzaklık")])]
+    }
+
+
+TARAMALAR = [u1t1]
+KONULAR = [u1k1, u1k2, u1k3] + TARAMALAR
 
 import re
 
@@ -620,7 +940,7 @@ import re
 def bosluk(x):
     """Sayı ile birimi ayrı satıra düşmesin: '−8 m' → '−8\u00a0m' (bölünmez boşluk)."""
     if isinstance(x, str):
-        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|TL|°C|kat|birim|MB|metre|derece)\b", "\\1\u00a0\\2", x)
+        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|TL|°C|kat|birim|MB|metre|derece|g|gram|dakika)\b", "\\1\u00a0\\2", x)
     if isinstance(x, list):
         return [bosluk(v) for v in x]
     if isinstance(x, dict):

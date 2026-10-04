@@ -23,7 +23,8 @@
     yazdir: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg>',
     okuma: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3z"/><path d="M21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg>',
     yavas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16h13a3 3 0 0 0 3-3v-1"/><path d="M5 16a6 6 0 0 1 12 0"/><circle cx="20" cy="10" r="2"/><path d="M7 16v2M15 16v2"/></svg>',
-    ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10v4h4l5 4V6L8 10z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></svg>'
+    ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10v4h4l5 4V6L8 10z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></svg>',
+    durak: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4"/><path d="M6 4h11l-2.5 4L17 12H6"/></svg>'
   };
 
   const PRAISE = {
@@ -335,7 +336,7 @@
     if (d.hazirlik && d.hazirlik.maddeler) h.push(`<section><div class="sec-title"><h3>Önce Hatırla</h3><span>Bu konu için gereken eski bilgiler</span></div><div class="merak hz-bak">` +
       d.hazirlik.maddeler.map(m => `<details><summary>${esc(m.ad)}${m.sinif ? ` <small>· ${esc(m.sinif)}</small>` : ""}</summary><p>${rx(m.anlatim)}</p>${m.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(m.sayiDogrusu)}</div>` : ""}${m.ornek ? cozumStatik(m.ornek) : ""}</details>`).join("") + `</div></section>`);
     h.push(`<section><div class="sec-title"><h3>Kavramlar</h3><span>${d.kavramlar.length} kavram</span></div><div class="cards${d.kavramlar.some(k => k.sayiDogrusu || k.cozum) ? " genis" : ""}">` +
-      d.kavramlar.map(k => `<article class="card">${k.svg}<div><h4 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k)}</h4>
+      d.kavramlar.map(k => `<article class="card" data-ad="${esc(k.ad)}">${k.svg}<div><h4 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k)}</h4>
         <p>${rx(k.aciklama)}</p>${formulHTML(k.formul)}${k.ek ? `<p class="ek">${rx(k.ek)}</p>` : ""}${ornekHTML(k)}<span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span>
         ${k.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(k.sayiDogrusu)}</div>` : ""}${k.cozum ? `<details class="coz-ac"><summary>Örnek çözümü gör</summary>${cozumStatik(k.cozum)}</details>` : ""}</div></article>`).join("") + `</div></section>`);
     if (d.gruplar && d.gruplar.length) h.push(`<section><div class="sec-title"><h3>Gruplar</h3></div><div class="groups">` +
@@ -349,6 +350,11 @@
     h.push(`<p class="src">Kaynak: ${esc(S.ders.kaynak || `MEB ${S.ders.ders} ${S.ders.sinif} Ders Kitabı`)}, ${esc(d.sayfalar)}.<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>`);
     root.innerHTML = h.join("");
     if (isEn()) renderWall($("#bakWall", root), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}` });
+    // Ara Durak'tan "Konuda bak" ile gelindiyse ilgili kavram kartını göster ve vurgula
+    if (S.hedef) {
+      const c = $$(".card", root).find(x => x.dataset.ad === S.hedef); S.hedef = null;
+      if (c) { c.classList.add("vurgu"); setTimeout(() => c.scrollIntoView({ block: "center", behavior: "smooth" }), 200); setTimeout(() => c.classList.remove("vurgu"), 3500); }
+    }
   }
 
   // ---------- Tekrar ----------
@@ -555,7 +561,7 @@
 
   // Hazır bütün konuları yükle (Defter ve Günün Tekrarı için)
   async function loadAll() {
-    const ready = allTopics().filter(k => k.hazir);
+    const ready = allTopics().filter(k => k.hazir && !isDurak(k));
     await Promise.all(ready.map(async t => {
       if (S.cache[t.id]) return;
       try { const r = await fetch("konular/" + t.id + ".json", { cache: "no-cache" }); if (r.ok) S.cache[t.id] = await r.json(); } catch (e) {}
@@ -1152,6 +1158,167 @@
     draw();
   }
 
+  // ---------- Ara Durak (konu tarama ve gözden geçirme) ----------
+  // ders.json'da konu listesine {"id": "u1t1", "tur": "tarama", ...} olarak girer; konu dosyası:
+  // {id, tur: "tarama", unite, baslik, sayfalar, giris, buyukResim?, kapsar: [konu id],
+  //  hatirla?: [{konu, maddeler: [3 kısa özet]}]  (yoksa konunun ilk 3 "akildaKalsin" maddesi),
+  //  eskiSoru?: 4 (kapsanan konuların kendi sorularından seçilecek soru sayısı; zorlanılan kavramlar önce),
+  //  sorular: [konuları birleştiren yeni sorular; her biri "kaynak": [{konu, kavram?}]]}
+  // Sonuç cihazda tutulur; başarı ≥ %80 ise tekrar 3 → 10 → 30 gün sonra, değilse 2 gün sonra önerilir.
+  const isDurak = k => !!(k && k.tur === "tarama");
+  const DURAK_ARALIK = [3, 10, 30];
+  const AYLAR = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+  const tarihYaz = s => { if (s === gun()) return "bugün"; const [, a, g] = String(s).split("-"); return `${+g} ${AYLAR[+a - 1]}`; };
+  const sonucOf = id => store.get(key("sonuc:" + id), {});
+  const durakKayit = {
+    get(id) { return store.get(key("durak:" + id), null); },
+    zaman(id) { const r = durakKayit.get(id); return !!(r && r.n && r.n <= gun()); },
+    kaydet(id, sonuc) {
+      const eski = durakKayit.get(id) || {}, dogru = sonuc.filter(x => x.r === 1).length, iyi = dogru / sonuc.length >= .8;
+      const k = iyi ? Math.min((eski.k ?? -1) + 1, DURAK_ARALIK.length - 1) : 0;
+      const r = { t: gun(), sonuc, dogru, toplam: sonuc.length, k, n: gun(iyi ? DURAK_ARALIK[k] : 2), kez: (eski.kez || 0) + 1 };
+      store.set(key("durak:" + id), r); return r;
+    }
+  };
+  // Ünite içindeki konu sırası (ara duraklar sayılmaz)
+  const konuNoOf = id => { const t = allTopics().find(k => k.id === id); if (!t) return ""; return S.ders.uniteler[t.ui].konular.slice(0, t.ki + 1).filter(k => !isDurak(k)).length; };
+  const durakDurum = r => `<div class="dk-durum"><b>Son tarama:</b> ${tarihYaz(r.t)} · ${r.dogru} / ${r.toplam} ilk denemede doğru<br><b>Sonraki tekrar:</b> ${r.n <= gun() ? "<span class=\"dk-simdi\">şimdi</span>" : tarihYaz(r.n)}</div>`;
+
+  // Ara Durak'tan bir konuya (ve kavramına) git; konuda "Ara Durak'a dön" düğmesi görünür.
+  function gitKonu(id, kavram) { store.set(key("sekme:" + id), "bak"); S.hedef = kavram || null; S.donus = S.konu; openKonu(id, true); }
+
+  async function yukleKonular(ids) {
+    await Promise.all(ids.map(async id => {
+      if (S.cache[id]) return;
+      try { const r = await fetch("konular/" + id + ".json", { cache: "no-cache" }); if (r.ok) S.cache[id] = await r.json(); } catch (e) {}
+    }));
+  }
+
+  function renderDurak() {
+    const d = S.data;
+    $("#content").innerHTML = `<section class="konu-head durak-head"><div class="meta"><span>${esc(d.unite)}</span><span class="pill">${ICON.durak}Ara Durak</span><span class="pill">${esc(d.sayfalar)}</span></div>
+      <h2>${esc(d.baslik)}</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" data-tab="hatirla">${ICON.bak}Hatırla</button>
+        <button class="tab" role="tab" data-tab="tarama">${ICON.test}Tarama Testi</button></div></section>
+      <div class="panel" id="panel"></div>`;
+    $$(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
+    let sk = store.get(key("sekme:" + S.konu), "hatirla"); if (sk !== "tarama") sk = "hatirla";
+    setTab(sk);
+    S.onKonu && S.onKonu();
+  }
+
+  function renderHatirla(root) {
+    const d = S.data, kayit = durakKayit.get(S.konu), h = [];
+    h.push(`<section><p class="lead">${rx(d.giris)}</p>${kayit ? durakDurum(kayit) : ""}</section>`);
+    if (d.buyukResim) h.push(`<section class="facts"><div class="eyebrow">Büyük resim</div><p>${rx(d.buyukResim)}</p></section>`);
+    d.kapsar.forEach(id => {
+      const k = S.cache[id]; if (!k) return;
+      const hm = (d.hatirla || []).find(x => x.konu === id), maddeler = hm ? hm.maddeler : k.akildaKalsin.slice(0, 3), r = sonucOf(id);
+      h.push(`<section class="durak-konu"><div class="sec-title"><h3><span class="dk-no">${konuNoOf(id)}</span>${esc(k.baslik)}</h3>
+        <button class="btn ghost" data-git="${esc(id)}">Konuya git</button></div>
+        <ul class="remember">${maddeler.map(a => `<li>${rx(a)}</li>`).join("")}</ul>
+        <p class="ek dk-ipucu">Kartlara dokun. Önce kendin hatırlamaya çalış, sonra cevabı gör.</p>
+        <div class="recall">${k.kavramlar.map(kv => `<button data-reveal>${kv.svg}<span>${esc(kv.ad)}${kv.ad in r && r[kv.ad] !== 1 ? ' <small class="dk-zor">zorlanmıştın</small>' : ""} → <span class="ans" hidden>${rx(kv.akilda)}</span><span class="q-mark">?</span></span></button>`).join("")}</div></section>`);
+    });
+    h.push(`<div class="row"><button class="btn primary" data-goto="tarama">Tarama testine geç</button></div>`);
+    root.innerHTML = h.join("");
+    $$("[data-reveal]", root).forEach(b => b.onclick = () => { $(".ans", b).hidden = false; $(".q-mark", b).hidden = true; });
+    $$("[data-git]", root).forEach(b => b.onclick = () => gitKonu(b.dataset.git));
+    $$("[data-goto]", root).forEach(b => b.onclick = () => setTab(b.dataset.goto));
+  }
+
+  // Soru listesi: kapsanan konuların kendi sorularından (zorlanılan kavramlar önce, konulara dağıtılarak) + yeni sorular, sırayla karışık.
+  function durakSorulari(d) {
+    const yeni = (d.sorular || []).map(q => ({ q, kaynak: q.kaynak || [] }));
+    const havuz = d.kapsar.map(id => {
+      const k = S.cache[id]; if (!k) return [];
+      const r = sonucOf(id), zor = ad => ad in r && r[ad] !== 1;
+      const kv = k.kavramlar.filter(x => x.soru).map(x => ({ q: x.soru, kaynak: [{ konu: id, kavram: x.ad }], zor: zor(x.ad) }));
+      const ts = (k.sorular || []).map(q => ({ q, kaynak: [{ konu: id }] }));
+      return [...shuffle(kv.filter(x => x.zor)), ...shuffle([...kv.filter(x => !x.zor), ...ts])];
+    });
+    const eski = [], n = d.eskiSoru ?? 4;
+    for (let t = 0; eski.length < n && havuz.some(h => h.length); t++) { const h = havuz[t % havuz.length]; if (h.length) eski.push(h.shift()); }
+    const e = shuffle(eski), liste = [];
+    while (e.length || yeni.length) { if (e.length) liste.push(e.shift()); if (yeni.length) liste.push(yeni.shift()); }
+    return liste;
+  }
+
+  function renderTarama(root) {
+    const d = S.data; S.durakOyun = S.durakOyun || {};
+    let st = S.durakOyun[S.konu];
+    const toplam = (d.sorular || []).length + (d.eskiSoru ?? 4);
+    const basla = () => { st = S.durakOyun[S.konu] = { liste: durakSorulari(d), i: 0, sonuc: [], q: {} }; ciz(); };
+    const giris = () => {
+      const kayit = durakKayit.get(S.konu);
+      root.innerHTML = `<div class="stage"><div class="kicker">Tarama testi</div><h3>${kayit ? "Tekrar tarayalım" : "Neler aklında kalmış?"}</h3>
+        <p class="big">${toplam} soru var. Bazıları konulardaki sorulardan, bazıları konuları birleştiren yeni sorular. Her soruda 2 hakkın var. Not yok; sonunda hangi konuya tekrar bakman gerektiğini göstereceğim.</p>
+        ${kayit ? durakDurum(kayit) : ""}
+        <div class="row"><button class="btn primary" data-basla>Başla</button>${kayit ? `<button class="btn ghost" data-rapor>Son sonucu gör</button>` : ""}</div></div>`;
+      $("[data-basla]", root).onclick = basla;
+      const rb = $("[data-rapor]", root); if (rb) rb.onclick = () => rapor(kayit);
+    };
+    // Yanlış ya da ipucuyla bulunan soruda: ilgili kavramın kısa hatırlatması ve konuya dönüş düğmesi
+    const hatirlat = (box, it) => {
+      const parca = it.kaynak.slice(0, 2).map(x => {
+        const k = S.cache[x.konu]; if (!k) return "";
+        const kv = x.kavram && k.kavramlar.find(y => y.ad === x.kavram);
+        return kv ? `<div class="dk-hat-ic">${kv.svg}<div><b>${esc(kv.ad)}</b> <small>· ${konuNoOf(x.konu)}. konu</small><p>${rx(kv.aciklama)}</p>
+            <div class="row"><span class="key"><b>Akılda kalsın</b>${rx(kv.akilda)}</span><button class="btn ghost" data-git="${esc(x.konu)}" data-kv="${esc(kv.ad)}">Konuda bak</button></div></div></div>`
+          : `<div class="dk-hat-ic"><div><b>${esc(k.baslik)}</b> <small>· ${konuNoOf(x.konu)}. konu</small><ul class="remember">${k.akildaKalsin.slice(0, 2).map(a => `<li>${rx(a)}</li>`).join("")}</ul>
+            <div class="row"><button class="btn ghost" data-git="${esc(x.konu)}">Konuya bak</button></div></div></div>`;
+      }).join("");
+      box.innerHTML = parca ? `<div class="dk-hat"><div class="kicker">Hatırlatma</div>${parca}</div>` : "";
+      $$("[data-git]", box).forEach(b => b.onclick = () => gitKonu(b.dataset.git, b.dataset.kv));
+    };
+    const ciz = () => {
+      const it = st.liste[st.i], son = st.i === st.liste.length - 1;
+      const konular = [...new Set(it.kaynak.map(x => x.konu))].map(id => `${konuNoOf(id)}. konu`).join(" + ");
+      root.innerHTML = `<div class="stage"><div class="progress"><span>Soru ${st.i + 1} / ${st.liste.length}</span><div class="bar"><i style="width:${(st.i + 1) / st.liste.length * 100}%"></i></div></div>
+        <div class="kicker">${it.kaynak.length > 1 ? "Konuları birleştir" : "Hatırla"}${konular ? " · " + esc(konular) : ""}</div>
+        <div id="dq">${questionHTML(it.q)}</div><div id="dkHat"></div>
+        <div class="stage-nav"><button class="btn ghost" data-bitir>Testi bırak</button><button class="btn primary" data-sonraki disabled>${son ? "Sonucu gör" : "Sonraki soru"}</button></div></div>`;
+      st.q[st.i] = st.q[st.i] || { wrong: [], result: undefined };
+      const qs = st.q[st.i], sonraki = $("[data-sonraki]", root);
+      wireQuestion($("#dq .q", root), it.q, { state: qs, onDone: r => { st.sonuc[st.i] = { r, kaynak: it.kaynak }; sonraki.disabled = false; if (r !== 1) hatirlat($("#dkHat", root), it); } });
+      if (qs.result !== undefined) { sonraki.disabled = false; if (qs.result !== 1) hatirlat($("#dkHat", root), it); }
+      sonraki.onclick = () => {
+        tts.stop();
+        if (!son) { st.i++; ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); return; }
+        const kayit = durakKayit.kaydet(S.konu, st.sonuc.map(x => ({ r: x.r, kaynak: x.kaynak })));
+        delete S.durakOyun[S.konu]; renderNav(); rapor(kayit);
+      };
+      $("[data-bitir]", root).onclick = () => { delete S.durakOyun[S.konu]; giris(); };
+    };
+    const rapor = kayit => {
+      const sonuc = kayit.sonuc, c = v => sonuc.filter(x => x.r === v).length;
+      const satirlar = d.kapsar.map(id => {
+        const k = S.cache[id], ilgili = sonuc.filter(x => x.kaynak.some(y => y.konu === id));
+        if (!k || !ilgili.length) return "";
+        const bir = ilgili.filter(x => x.r === 1).length, durum = ilgili.some(x => x.r === 0) ? "eksik" : ilgili.some(x => x.r === 2) ? "orta" : "tamam";
+        return `<div class="hz-satir ${durum}"><span class="hz-ik" aria-hidden="true">${durum === "tamam" ? "✓" : durum === "orta" ? "~" : "!"}</span>
+          <span class="hz-ad"><b>${konuNoOf(id)}. ${esc(k.baslik)}</b><small>${bir} / ${ilgili.length} ilk denemede · ${durum === "tamam" ? "İyi hatırlıyorsun" : durum === "orta" ? "İpuçlarıyla buldun" : "Kısa bir tekrar iyi olur"}</small></span>
+          <button class="btn${durum === "eksik" ? " primary" : " ghost"}" data-git="${esc(id)}">Konuya git</button></div>`;
+      }).join("");
+      const zayif = []; sonuc.filter(x => x.r !== 1).forEach(x => x.kaynak.forEach(y => { if (y.kavram && !zayif.some(z => z.konu === y.konu && z.kavram === y.kavram)) zayif.push(y); }));
+      const eksikVar = sonuc.some(x => x.r === 0), iyi = kayit.dogru / kayit.toplam >= .8;
+      const mesaj = iyi ? "Harika! Bu konuları iyi hatırlıyorsun. Öğrendiklerin yerine oturmuş."
+        : eksikVar ? "Çok iyi çalıştın. Aşağıda ! olan konulara kısa bir tekrar yapalım. Sonra testi yeniden dene; ikinci seferde çok daha kolay gelecek."
+        : "İpuçlarını kullanarak hepsini buldun. Bu, iyi çalışmanın işareti. Turuncu kavramlara bir göz atman yeter.";
+      root.innerHTML = `<div class="stage"><div class="kicker">Ara Durak · Sonuç</div><h3>${iyi ? "Aklında kalmış!" : "Neredeyse tamam!"}</h3><p class="big">${mesaj}</p>
+        <div class="done-stats"><div class="stat"><b>${c(1)}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${c(2)}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c(0)}</b><span>birlikte öğrendik</span></div></div>
+        <div class="hz-rapor">${satirlar}</div>
+        ${zayif.length ? `<div><div class="kicker">Tekrar bakman gereken kavramlar</div><div class="dk-liste">${zayif.map(z => `<button data-git="${esc(z.konu)}" data-kv="${esc(z.kavram)}">${konuNoOf(z.konu)}. konu · ${esc(z.kavram)}</button>`).join("")}</div></div>` : ""}
+        <p class="dk-sonraki">${ICON.tekrar}<span>Bu durağı <b>${tarihYaz(kayit.n)}</b> tekrar tara. Zamanı gelince konu listesinde haber vereceğim.</span></p>
+        <div class="row"><button class="btn primary" data-yeniden>Testi yeniden yap</button><button class="btn ghost" data-goto="hatirla">Hatırla'ya dön</button></div></div>`;
+      $$("[data-git]", root).forEach(b => b.onclick = () => gitKonu(b.dataset.git, b.dataset.kv));
+      $("[data-yeniden]", root).onclick = basla;
+      $("[data-goto]", root).onclick = () => setTab("hatirla");
+    };
+    if (st) ciz(); else giris();
+  }
+
   // ---------- Test ----------
   function renderTest(root) {
     const d = S.data, cls = document.body.classList.contains("sinif");
@@ -1238,8 +1405,11 @@
   function renderNav() {
     $("#units").innerHTML = S.ders.uniteler.map((u, i) => `<button class="unit-btn" data-u="${i}" aria-pressed="${i === S.unit}">${esc(u.ad)}</button>`).join("");
     const u = S.ders.uniteler[S.unit];
-    $("#topics").innerHTML = u.konular.length ? u.konular.map((k, i) => `<button class="topic" data-id="${esc(k.id)}" ${k.hazir ? "" : "disabled"} aria-current="${S.konu === k.id}">
-      <span class="num">${i + 1}</span><span>${esc(k.baslik)}</span>${k.hazir ? "" : '<span class="soon">yakında</span>'}</button>`).join("")
+    let no = 0;
+    $("#topics").innerHTML = u.konular.length ? u.konular.map(k => { const dk = isDurak(k); if (!dk) no++;
+      const ek = !k.hazir ? '<span class="soon">yakında</span>' : dk && durakKayit.zaman(k.id) ? '<span class="due">tekrar zamanı</span>' : "";
+      return `<button class="topic${dk ? " durak" : ""}" data-id="${esc(k.id)}" ${k.hazir ? "" : "disabled"} aria-current="${S.konu === k.id}">
+      <span class="num">${dk ? ICON.durak : no}</span><span>${esc(k.baslik)}</span>${ek}</button>`; }).join("")
       : `<div class="empty-unit">Bu ünitenin konuları sırası gelince eklenecek.</div>`;
     const cur = $(".topic[aria-current='true']"); if (cur) cur.scrollIntoView({ block: "nearest", inline: "nearest" });
   }
@@ -1248,12 +1418,15 @@
     tts.stop(); S.tab = t; store.set(key("sekme:" + S.konu), t); // sekme her konu için ayrı hatırlanır
     $$(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === t));
     const p = $("#panel");
-    ({ ogren: renderOgren, bak: renderBak, tekrar: renderTekrar, test: renderTest, okuma: renderOkuma })[t](p);
+    ({ ogren: renderOgren, bak: renderBak, tekrar: renderTekrar, test: renderTest, okuma: renderOkuma, hatirla: renderHatirla, tarama: renderTarama })[t](p);
   }
 
   function renderKonu(no) {
     const d = S.data;
-    $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(d.unite)}</span><span class="pill">Konu ${no}</span><span class="pill">${esc(d.sayfalar)}</span></div>
+    const donus = S.donus && allTopics().find(k => k.id === S.donus && isDurak(k));
+    const vade = !donus && allTopics().find(k => isDurak(k) && k.hazir && durakKayit.zaman(k.id));
+    $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(d.unite)}</span><span class="pill">Konu ${no}</span><span class="pill">${esc(d.sayfalar)}</span>${donus ? `<button class="btn ghost dk-don" data-donus>← Ara Durak'a dön</button>` : ""}</div>
+      ${vade ? `<div class="dk-vade">${ICON.tekrar}<span><b>${esc(vade.baslik)}</b> için tekrar zamanı geldi.</span><button class="btn" data-vade="${esc(vade.id)}">Aç</button></div>` : ""}
       <h2>${esc(d.baslik)}</h2>
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="ogren">${ICON.ogren}Öğren</button>
@@ -1262,6 +1435,8 @@
         <button class="tab" role="tab" data-tab="test">${ICON.test}Test</button>${d.okuma ? `<button class="tab" role="tab" data-tab="okuma">${ICON.okuma}Oku ve Dinle</button>` : ""}</div></section>
       <div class="panel" id="panel"></div>`;
     $$(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
+    const db = $("[data-donus]"); if (db) db.onclick = () => { const id = S.donus; S.donus = null; openKonu(id, true); };
+    const vb = $("[data-vade]"); if (vb) vb.onclick = () => openKonu(vb.dataset.vade, true);
     let sk = store.get(key("sekme:" + S.konu), "ogren"); if (sk === "okuma" && !d.okuma) sk = "ogren";
     setTab(sk); // hiç açılmamış konu Öğren'den başlar
     S.onKonu && S.onKonu();
@@ -1273,8 +1448,10 @@
     if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id);
     try {
       if (!S.cache[id]) { const r = await fetch("konular/" + id + ".json", { cache: "no-cache" }); if (!r.ok) throw 0; S.cache[id] = await r.json(); }
-      S.data = S.cache[id]; renderKonu(t.ki + 1);
-      if (isEn()) { store.set(key("acildi:" + id), true); srs.add(wordsOf(S.data)); }
+      S.data = S.cache[id];
+      if (isDurak(S.data)) { S.donus = null; await yukleKonular(S.data.kapsar || []); if (S.konu !== id) return; renderDurak(); }
+      else renderKonu(konuNoOf(id));
+      if (isEn() && !isDurak(S.data)) { store.set(key("acildi:" + id), true); srs.add(wordsOf(S.data)); }
       if (scroll) $("#content").scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (e) { $("#content").innerHTML = `<div class="notice">Bu konu açılamadı. İnternet bağlantını kontrol edip sayfayı yenile.</div>`; }
   }
@@ -1421,7 +1598,7 @@
     applyClass(store.get("ela7:sinif", false));
     sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data) setTab(S.tab); };
     $("#units").onclick = e => { const b = e.target.closest(".unit-btn"); if (b) openUnit(+b.dataset.u); };
-    $("#topics").onclick = e => { const b = e.target.closest(".topic"); if (b && !b.disabled) openKonu(b.dataset.id, true); };
+    $("#topics").onclick = e => { const b = e.target.closest(".topic"); if (b && !b.disabled) { S.donus = null; openKonu(b.dataset.id, true); } };
     const yol = h => h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : openKonu(h, true);
     addEventListener("hashchange", () => yol(location.hash.slice(1)));
     if (isEn()) {

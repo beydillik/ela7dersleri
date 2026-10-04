@@ -704,3 +704,36 @@ a.head-btn { text-decoration: none; display: inline-flex; align-items: center; }
 [data-tema="mat"] .bot-fab { box-shadow: 0 8px 24px rgba(19,78,74,.4); }
 .coz-govde, .coz-adim { display: grid; gap: 12px; min-width: 0; }
 @media (min-width: 720px) { .cozum.yan .coz-govde { grid-template-columns: auto 1fr; align-items: start; gap: 20px; } }
+
+/* Ara Durak (konu tarama): konu listesinde bayraklı, kesik çerçeveli; tekrar zamanı rozeti */
+.topic.durak { border-style: dashed; border-color: var(--teal); }
+.topic.durak .num, [data-tema] .topic.durak .num { background: var(--teal); color: #fff; border: 0; }
+.topic.durak .num svg { width: 16px; height: 16px; }
+.topic .due { font-size: 12px; font-weight: 800; color: #fff; background: var(--accent); border-radius: 999px; padding: 1px 9px; }
+.durak-head .pill svg { width: 14px; height: 14px; vertical-align: -2px; margin-right: 4px; }
+.durak-konu .sec-title { align-items: center; justify-content: space-between; }
+.durak-konu .sec-title h3 { display: flex; align-items: center; gap: 10px; font-size: 22px; }
+.dk-no { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; background: var(--teal); color: #fff; font-family: var(--display); font-size: 17px; flex: 0 0 auto; }
+.durak-konu .remember { margin-bottom: 12px; }
+.dk-ipucu { color: var(--muted); font-size: 15px; margin: 0 0 8px; }
+.dk-zor { font-size: 12px; font-weight: 800; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 8px; }
+.dk-durum { background: var(--surface-2); border-radius: 14px; padding: 10px 14px; font-size: 15px; margin-top: 12px; line-height: 1.6; }
+.dk-simdi { color: var(--accent); font-weight: 800; }
+.dk-hat { border: 2px dashed var(--teal); border-radius: 16px; padding: 12px 14px; display: grid; gap: 10px; animation: adimGel .25s ease-out; }
+.dk-hat .kicker { color: var(--teal); }
+.dk-hat-ic { display: flex; gap: 12px; align-items: flex-start; }
+.dk-hat-ic > div { min-width: 0; display: grid; gap: 6px; }
+.dk-hat-ic > svg { width: 64px; height: 64px; flex: 0 0 auto; border-radius: 12px; }
+.dk-hat-ic p { margin: 0; }
+.dk-hat-ic small { color: var(--muted); font-weight: 700; }
+.dk-hat .remember li { font-size: 1em; padding-top: 8px; padding-bottom: 8px; }
+.dk-liste { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.dk-liste button { border: 2px solid var(--accent); background: var(--accent-soft); color: var(--ink); border-radius: 999px; padding: 6px 14px; font-weight: 700; font: inherit; font-size: 15px; cursor: pointer; }
+.dk-sonraki { display: flex; gap: 10px; align-items: center; margin: 0; background: var(--gold-soft); border-radius: 14px; padding: 10px 14px; }
+.dk-sonraki svg, .dk-vade svg { width: 22px; height: 22px; flex: 0 0 auto; }
+.dk-vade { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; background: var(--gold-soft); border-radius: 14px; padding: 8px 12px; margin: 8px 0; font-size: 15px; }
+.dk-vade span { flex: 1 1 200px; }
+.dk-don { margin-left: auto; padding: 4px 12px; font-size: 14px; }
+.card.vurgu { outline: 4px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 640px) { .dk-hat-ic > svg { width: 48px; height: 48px; } .durak-konu .sec-title h3 { font-size: 19px; } }
+@media (prefers-reduced-motion: reduce) { .dk-hat { animation: none; } }

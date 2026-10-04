@@ -294,14 +294,14 @@
         <p class="empty">Ünite listesi şu an yüklenemedi. Derse girmek için dersin adına dokun.</p>${robot(x)}</article>`;
     const units = d.uniteler.map(u => {
       const m = /^(.+?):\s*(.+)$/.exec(u.ad) || [null, "", u.ad];
-      const hazir = u.konular.filter(k => k.hazir);
-      const st = `<span class="st${hazir.length === u.konular.length ? " full" : ""}">${u.konular.length} konu</span>`;
+      const konular = u.konular.filter(k => k.tur !== "tarama"), hazir = konular.filter(k => k.hazir);   // ara duraklar konu sayılmaz
+      const st = `<span class="st${hazir.length === konular.length ? " full" : ""}">${konular.length} konu</span>`;
       const inner = `<span class="no">${esc(m[1])}</span><span class="name">${esc(m[2])}</span>${st}`;
       return hazir.length
         ? `<li><a href="${x.kod}/#${encodeURIComponent(hazir[0].id)}">${inner}</a></li>`
         : `<li><span class="u">${inner}</span></li>`;
     }).join("");
-    const top = d.uniteler.reduce((a, u) => a + u.konular.length, 0);
+    const top = d.uniteler.reduce((a, u) => a + u.konular.filter(k => k.tur !== "tarama").length, 0);
     return `<article class="nb" style="--c:${x.renk}">${kapak(x, `${d.uniteler.length} ünite · ${top} konu`, true)}
       <ul class="units">${units}</ul>${d.dil === "en" ? gunluk(x) : ""}${robot(x, d.bot && d.bot.svg)}</article>`;
   }

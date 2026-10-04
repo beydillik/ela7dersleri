@@ -1,0 +1,165 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Ara Durak 1: Sayıların Yeri ve Uzaklığı",
+ "sayfalar": "Konu 1–3 · s. 15–40",
+ "giris": "Üç konu bitti! Şimdi durup neler öğrendiğimize bakalım. Önce kısa özetleri oku ve kartları çevir. Sonra 10 soruluk tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+ "buyukResim": "Bu üç konu birbirine bağlı. Önce tam sayıları sayı doğrusuna yerleştirdik: eksiler solda, artılar sağda. Sonra iki tam sayının arasındaki kesirleri bulduk. En son da her sayının 0'a ne kadar uzak olduğunu ölçtük: mutlak değer.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Altı, borç, gider, zarar → eksi (−). Üstü, alacak, gelir, kâr → artı (+).",
+    "Sayı doğrusunda negatifler 0'ın solunda, pozitifler sağındadır. Sıfırın işareti yoktur.",
+    "İki sayı arasındaki uzaklık için aralıkları say. 0'dan geçiyorsa iki parçaya böl, topla."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Kesir şeklinde yazılabilen sayılar rasyonel sayıdır. Payda asla 0 olamaz.",
+    "[[-1 1/2]] sayısındaki eksi, sayının tamamına aittir: eksiyi kenara koy, çevir, geri ekle.",
+    "Sayı doğrusunda bulmak için: işaret, ara, böl, ilerle."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Bir sayının 0'a uzaklığına mutlak değer denir.",
+    "|−4| = |+4| = 4: İşareti sil, sayı kalır. Mutlak değer hiç eksi olmaz.",
+    "Mutlak değeri 4 olan iki sayı vardır: 4 ve −4."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "sorular": [
+  {
+   "soru": "Hava sıcaklığı sıfırın 5 derece altında. Bu sıcaklığın 0 °C'a uzaklığı kaç derecedir?",
+   "secenekler": [
+    "5 derece",
+    "−5 derece",
+    "0 derece"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce sıcaklığı yaz: sıfırın altı eksidir. Sonra 0'a uzaklığını düşün. Uzaklık eksi olur mu?",
+   "aciklama": "Sıcaklık −5 °C. 0 °C'a uzaklığı |−5| = 5 derecedir.",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Negatif Tam Sayılar"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Mutlak Değer"
+    }
+   ]
+  },
+  {
+   "soru": "Bir dalgıç deniz seviyesinin 12 metre altında, bir martı 5 metre üstünde uçuyor. Aralarında kaç metre var?",
+   "cevap": "17",
+   "ipucu": "Dalgıç −12, martı +5. Yol 0'dan geçiyor: −12'den 0'a kaç metre? 0'dan +5'e kaç metre? İkisini topla.",
+   "aciklama": "−12 → 0: 12 m, 0 → +5: 5 m. 12 + 5 = 17 m.",
+   "birim": "m",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Kelimeden Sayıya"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "İki Sayı Arasındaki Uzaklık"
+    }
+   ]
+  },
+  {
+   "soru": "Mutlak değeri [[1/2]] olan negatif sayının yerine dokun.",
+   "nokta": -0.5,
+   "sayiDogrusu": {
+    "min": -2,
+    "max": 1,
+    "bolme": 2
+   },
+   "ipucu": "0'a yarım birim uzaklıkta iki sayı var. Negatif olan 0'ın solunda; 0 ile −1'in tam ortasında.",
+   "aciklama": "|[[-1/2]]| = [[1/2]] ve [[-1/2]] negatiftir. 0 ile −1'in tam ortasındadır.",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Mutlak Değeri Verilen Sayı"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Sayı Doğrusunda Gösterme"
+    }
+   ]
+  },
+  {
+   "soru": "|[[-5/2]]| hangi sayıya eşittir?",
+   "secenekler": [
+    "[[-2 1/2]]",
+    "[[1 1/2]]",
+    "[[2 1/2]]"
+   ],
+   "dogru": 2,
+   "ipucu": "İşareti sil: [[5/2]] kalır. Sonra 5'i 2'ye böl: bölüm tam kısım, kalan pay olur.",
+   "aciklama": "|[[-5/2]]| = [[5/2]]. 5 ÷ 2 = 2, kalan 1: [[5/2]] = [[2 1/2]]. Mutlak değer eksi olmaz.",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Eksi de Artı da Aynı"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Eksi Bütüne Aittir"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "|−2| = −2",
+    "[[-6/3]] = −2",
+    "[[6/0]] = 0"
+   ],
+   "dogru": 1,
+   "ipucu": "Üçüne de tek tek bak: Mutlak değer eksi olur mu? Payda 0 olabilir mi? 6 ÷ 3 kaçtır?",
+   "aciklama": "[[-6/3]] = −2 doğrudur. |−2| = 2 olmalıydı. [[6/0]] ise tanımsızdır; payda 0 olamaz.",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Payda Sıfır Olamaz"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Mutlak Değer Eksi Olmaz"
+    }
+   ]
+  },
+  {
+   "soru": "Meryem'in aklındaki sayının mutlak değeri 3, Cansel'inkinin 2. Bu iki sayı arasındaki uzaklık en çok kaç birim olabilir?",
+   "cevap": "5",
+   "ipucu": "Meryem'in sayısı 3 ya da −3, Cansel'inki 2 ya da −2. En uzak olmaları için biri 0'ın sağında, biri solunda olmalı.",
+   "aciklama": "−3 ile +2 (ya da +3 ile −2) arası: 3 + 2 = 5 birim. Kitapta aynı soru 12 ve 8 ile soruluyor. (s. 38)",
+   "birim": "birim",
+   "sayiDogrusu": {
+    "min": -4,
+    "max": 4
+   },
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Mutlak Değeri Verilen Sayı"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "İki Sayı Arasındaki Uzaklık"
+    }
+   ]
+  }
+ ]
+}
