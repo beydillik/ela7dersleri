@@ -1,0 +1,199 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "2. Öğrenme Alanı: Evimiz Dünya",
+ "baslik": "Ara Durak 1: Küreselleşme",
+ "sayfalar": "Konu 1–2 · s. 58–67",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "İki konu da küreselleşmeyi anlatıyor. İlki ekonomi, ulaşım ve iletişimdeki etkileri; ikincisi kültür, sağlık ve çevredeki etkileri. Küreselleşmenin iyi yanları da sorunları da var. Değerlerimizi korumak bizim sorumluluğumuz.",
+ "kapsar": [
+  "u2k1",
+  "u2k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Küreselleşme, dünyanın birbirine daha bağlı hâle gelmesidir.",
+    "Ticaret dünya çapında bir boyut kazandı; küçük yerel işletmeler zor durumda kalabildi.",
+    "Hızlı ulaşım, genel ağ ve e-ticaret hayatı kolaylaştırdı."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Küreselleşme kültürel çeşitliliği artırabilir ama yerel kültürleri tehlikeye de atabilir.",
+    "Teşhis ve tedavi kolaylaştı, ama hastalıklar da daha hızlı yayılıyor.",
+    "Çevre sorunları küresel oldu; çözüm bireyden başlar: bilinçli tüketim, israfı önlemek."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Küreselleşmenin hangi alanı?",
+   "kutular": [
+    {
+     "etiket": "Ekonomi",
+     "uyeler": [
+      "Dünya Çapında Ticaret",
+      "E-Ticaret"
+     ]
+    },
+    {
+     "etiket": "Ulaşım ve iletişim",
+     "uyeler": [
+      "Hızlı Ulaşım",
+      "Orta Koridor",
+      "İletişim Teknolojileri"
+     ]
+    },
+    {
+     "etiket": "Kültür, sağlık ve çevre",
+     "uyeler": [
+      "Kültürel Etkileşim",
+      "Sağlıkta Küreselleşme",
+      "Küresel Çevre Sorunları"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Ela başka ülkelerden e-ticaretle ihtiyacından fazla ürün alıyor. Bu alışkanlık hangi soruna katkı yapar?",
+   "secenekler": [
+    "Küresel çevre sorunlarına",
+    "Dilde bozulmaya",
+    "Hızlı ulaşımın azalmasına"
+   ],
+   "dogru": 0,
+   "ipucu": "Artan tüketim doğal kaynaklara ne yapar? Çözüm olarak \"ihtiyaç kadarını almak\" nerede geçiyordu?",
+   "aciklama": "E-ticaretle başka ülkelerden alışveriş yapılabiliyor (s. 62). Artan üretim, tüketim ve ulaşım doğal kaynakların yoğun kullanılmasına yol açar (s. 63). Çözüm bilinçli tüketim ve israfı önlemektir (s. 64).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "E-Ticaret"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Küresel Çevre Sorunları"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Yerelden Evrensele"
+    }
+   ]
+  },
+  {
+   "soru": "COVID-19 salgını kısa sürede bütün dünyaya yayıldı. Küreselleşmenin hangi özelliği insanların dünyada daha çok etkileşim kurmasını sağlar?",
+   "secenekler": [
+    "Ana dile yabancı sözcüklerin girmesi",
+    "Hızlı ulaşımla seyahatlerin artması",
+    "Kültür Yolu Festivalleri"
+   ],
+   "dogru": 1,
+   "ipucu": "Sanayi İnkılabı'ndan sonra taşıtlar nasıl değişti? Bu, seyahatleri ve insanların karşılaşmasını nasıl etkiledi?",
+   "aciklama": "Hızlı ulaşım iş ve turizm seyahatlerini artırdı, insanlar daha fazla etkileşim kurdu (s. 61). Küreselleşme hastalıkların yayılmasını da hızlandırdı; en somut örnek COVID-19'dur (s. 63).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Hızlı Ulaşım"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Sağlıkta Küreselleşme"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi küreselleşmenin getirdiği sorunlardan biri DEĞİLDİR?",
+   "secenekler": [
+    "Küçük yerel işletmelerin zor durumda kalması",
+    "Yerel kültürlerin yok olma tehlikesi",
+    "Bilgiye ulaşmanın kolaylaşması"
+   ],
+   "dogru": 2,
+   "ipucu": "Seçeneklerden hangisi bir kolaylık, hangileri bir sorun?",
+   "aciklama": "Küçük yerel işletmelerin zor durumda kalması (s. 60) ve yerel kültürlerin tehlikeye girmesi (s. 62) sorunlardır. Genel ağ sayesinde bilgiye ulaşmanın kolaylaşması ise olumlu bir etkidir (s. 62).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Uluslararası Şirketler ve Yerel İşletmeler"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Kültürel Etkileşim"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "İletişim Teknolojileri"
+    }
+   ]
+  },
+  {
+   "soru": "Çin'de üretilen bir ürün Orta Koridor üzerinden Avrupa'ya taşınıyor. Bu hangisinin örneğidir?",
+   "secenekler": [
+    "Dilde bozulma",
+    "Dünya çapında ticaret",
+    "Sağlıkta küreselleşme"
+   ],
+   "dogru": 1,
+   "ipucu": "Bir ülkede üretilip başka bir ülkede satılan ürünler ticaretin hangi boyutunu gösterir?",
+   "aciklama": "Modern ulaşım ve iletişim sayesinde ticaret dünya çapında bir boyut kazandı (s. 60). Orta Koridor Çin'den Türkiye üzerinden Avrupa'ya uzanan ulaşım yoludur (s. 61).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Dünya Çapında Ticaret"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Orta Koridor"
+    }
+   ]
+  },
+  {
+   "soru": "Ela başka ülkelerin dizilerini izlemekte özgürdür. Kitaba göre aynı zamanda hangi sorumluluğu taşır?",
+   "secenekler": [
+    "Hiç yabancı dizi izlememek",
+    "Yerel işletmeleri kapatmak",
+    "Kendi dilini ve kültürünü korumak"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Özgürlük sorumlulukla anlam kazanır\" sözünü hatırla. Bireyler neyi koruma sorumluluğu taşır?",
+   "aciklama": "Özgürlük sorumlulukla birlikte anlam kazanır; bireyler dilini, kültürünü ve değerlerini korumalı, medya içeriklerini seçerken eleştirel düşünmelidir (s. 65). Kültürel etkileşim yerel kültürleri tehlikeye atabilir (s. 62).",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Özgürlük ve Sorumluluk"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Kültürel Etkileşim"
+    }
+   ]
+  },
+  {
+   "soru": "Genel ağ sayesinde dünyanın öbür ucuna saniyeler içinde ulaşabiliriz. Bu imkân kültürümüzü yaşatmak için nasıl kullanılabilir?",
+   "secenekler": [
+    "Dijital sergilerle el sanatlarımızı tanıtarak",
+    "Ana dile yabancı sözcükler ekleyerek",
+    "İhtiyacımızdan fazla alışveriş yaparak"
+   ],
+   "dogru": 0,
+   "ipucu": "Kültür Yolu Festivalleri değerlerimizi hangi modern yollarla yaşatıyor?",
+   "aciklama": "Genel ağ sayesinde dünyanın öbür ucuna saniyeler içinde ulaşılabilir (s. 60). Kültür Yolu Festivallerinde el sanatlarımız dijital sergiler, konserler ve tiyatrolarla geniş kitlelere ulaştırılır (s. 65).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Küreselleşme"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Kültür Yolu Festivalleri"
+    }
+   ]
+  }
+ ]
+}

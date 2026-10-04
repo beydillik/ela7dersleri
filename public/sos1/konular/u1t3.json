@@ -1,0 +1,251 @@
+{
+ "id": "u1t3",
+ "tur": "tarama",
+ "unite": "1. Öğrenme Alanı: Birlikte Yaşamak",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–6 · s. 12–50",
+ "giris": "Bu bölümün bütün konularını bitirdin, çok çalıştın! Şimdi hepsini birlikte tarayalım. Her konudan en önemli bilgileri hatırla, sonra testi çöz. Not yok; neye tekrar bakacağını birlikte bulacağız.",
+ "buyukResim": "Birlikte Yaşamak ünitesi iki parçadan oluşur. İlk üç konu insanlar arasındaki iletişimi anlatır: iyi iletişim bizi birbirimize yaklaştırır. Son üç konu toplum olarak bir arada yaşamayı anlatır: eşit haklar, zor günde dayanışma ve millî kimlik.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3",
+  "u1k4",
+  "u1k5",
+  "u1k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Üç yol: sözlü (konuşma), yazılı (yazı), sözsüz (beden, jest, mimik).",
+    "Kitle iletişim araçları geniş kitlelere çok kısa sürede ulaşır."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Empati: kendini karşındakinin yerine koymak.",
+    "Ben dili suçlamaz, duyguyu anlatır."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Telefonla uğraşmak, söz kesmek, alay etmek iletişimi bozar.",
+    "Sen dili suçlar; barışçıl iletişim sevgi ve saygıya dayanır."
+   ]
+  },
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Anayasa 10. madde: Herkes kanun önünde eşittir.",
+    "Fırsat eşitliği: Kim olursa olsun herkese aynı haklar."
+   ]
+  },
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "Millî mesele, milletin tamamını ilgilendirir.",
+    "1919 Millî Mücadele, 2016 15 Temmuz, 2023 6 Şubat: millet hep birlik oldu."
+   ]
+  },
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Millî kimlik; soy, dil, din, tarih, vatan ve kültürden oluşur.",
+    "Vatanseverlik barış zamanında da sorumluluklarımızı yerine getirmektir."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi alanla ilgili?",
+   "kutular": [
+    {
+     "etiket": "İletişim",
+     "uyeler": [
+      "Empati",
+      "Ben Dili",
+      "Sen Dili"
+     ]
+    },
+    {
+     "etiket": "Haklar ve eşitlik",
+     "uyeler": [
+      "Fırsat Eşitliği",
+      "Kanun Önünde Eşitlik",
+      "Erişilebilirlik Düzenlemeleri"
+     ]
+    },
+    {
+     "etiket": "Millî birlik ve kimlik",
+     "uyeler": [
+      "Millî Mücadele",
+      "Afetlerde Dayanışma",
+      "Millî Kimlik"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Sınıfa özel gereksinimli yeni bir arkadaş geldi. Hangisi hem etkili iletişime hem fırsat eşitliğine uygundur?",
+   "secenekler": [
+    "Onu dikkatle dinleyip derslere eşit katılmasına destek olmak",
+    "Ona sürekli öğüt vermek",
+    "Onunla yalnızca yazılı mesajla konuşmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Etkin dinlemeyi ve \"herkese aynı fırsat\" sözünü hatırla. Sık sık öğüt vermek iletişime ne yapıyordu?",
+   "aciklama": "Etkin dinlemede konuşan kişi dikkatle dinlenir (s. 20). Özel gereksinimli bireylerin eğitimle desteklenmesi fırsat eşitliğidir (s. 33). Sık sık öğüt vermek etkili iletişimi bozar (s. 22).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Etkin Dinleme"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Fırsat Eşitliği"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Günlük Hayatta Engeller"
+    }
+   ]
+  },
+  {
+   "soru": "Bir yardım kampanyası kısa sürede bütün ülkeye duyurulmak isteniyor. Hangisi en uygundur?",
+   "secenekler": [
+    "Mektupla tek tek haber vermek",
+    "Kitle iletişim araçlarını kullanmak",
+    "Sözsüz iletişimle anlatmak"
+   ],
+   "dogru": 1,
+   "ipucu": "Hangi araçlar \"çok kişiye, çok hızlı\" ulaşır?",
+   "aciklama": "Kitle iletişim araçları geniş kitlelere çok kısa sürede ulaşır (s. 17). Zor dönemlerde yardımlaşma ve dayanışma önemlidir (s. 44).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Kitle İletişim Araçları"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Birlik ve Dayanışma Ruhu"
+    }
+   ]
+  },
+  {
+   "soru": "Orhun Yazıtları taşa yazılarak bugüne ulaşmıştır. Hangisi doğrudur?",
+   "secenekler": [
+    "Sözlü iletişime örnektir.",
+    "Sözsüz iletişime örnektir.",
+    "Yazılı iletişime örnektir ve millî kimlik bilincini anlatır."
+   ],
+   "dogru": 2,
+   "ipucu": "Taşa yazılmış bir ileti hangi yolla aktarılır?",
+   "aciklama": "İletinin yazı aracılığıyla aktarılması yazılı iletişimdir (s. 17). Orhun Yazıtları millî kimlik bilincinin en güzel örneklerinden biridir (s. 46).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Yazılı İletişim"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Orhun Yazıtları"
+    }
+   ]
+  },
+  {
+   "soru": "Hangi iki kavram birbirine en yakındır?",
+   "secenekler": [
+    "Empati ve merhamet",
+    "Sen dili ve barışçıl iletişim",
+    "İletişim engeli ve etkin dinleme"
+   ],
+   "dogru": 0,
+   "ipucu": "Biri karşındakinin yerine kendini koymak, öbürü başkalarının zorluklarını anlamaktır.",
+   "aciklama": "Empati, kendini karşındakinin yerine koymaktır (s. 18). Merhamet, başkalarının zorluklarını anlayarak duyarlı davranmaktır (s. 36). Sen dili ise suçlar, barışçıl iletişimin zıttıdır (s. 22–23).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Empati"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Sevgi, Şefkat, Merhamet"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi birlikte yaşamayı ZORLAŞTIRIR?",
+   "secenekler": [
+    "Fırsat eşitliği sağlamak",
+    "Alaycı konuşmak ve sözü kesmek",
+    "Afette yardımlaşmak"
+   ],
+   "dogru": 1,
+   "ipucu": "Hangisi insanları birbirinden uzaklaştırır? İletişim engellerini hatırla.",
+   "aciklama": "Toplumda insanlar birlik içinde yaşar (s. 12). Sözü kesmek ve alaycı konuşmak etkili iletişimi bozar (s. 22). Fırsat eşitliği ve yardımlaşma ise birlikte yaşamayı güçlendirir (s. 33, 43).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Birlikte Yaşama"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Günlük Hayatta Engeller"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Fırsat Eşitliği"
+    }
+   ]
+  },
+  {
+   "soru": "Vatanseverlik için hangisi doğrudur?",
+   "secenekler": [
+    "Yalnızca savaşta silah kuşanmaktır.",
+    "Yalnızca spor yarışmalarında gösterilir.",
+    "Barış zamanında da sorumluluklarını yerine getirmektir."
+   ],
+   "dogru": 2,
+   "ipucu": "\"Barışta da vatan sevgisi\" sözünü hatırla.",
+   "aciklama": "Vatanseverlik sadece savaşta silah kuşanmak değil, barış zamanında da vatandaşlık sorumluluklarını yerine getirmektir (s. 47). Zor dönemlerde insanlar çevrelerinden de sorumlu olduklarını anlamıştır (s. 44).",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Vatanseverlik"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Sorumluluk ve Görev Bilinci"
+    }
+   ]
+  },
+  {
+   "soru": "Kitap toplumu bir yapbozun parçalarına benzetir. Bu benzetme hangi olaya en çok uyar?",
+   "secenekler": [
+    "Millî Mücadele'de halkın elindekini orduyla paylaşması",
+    "Konuşurken telefona bakmak",
+    "Dijital ortamda belirsiz mesaj yazmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Yapboz parçaları bir araya gelince bütün olur. Hangi olayda insanlar bir araya gelmiş?",
+   "aciklama": "Toplum, yapboz parçaları gibi birlik içinde yaşar (s. 12). Tekâlif-i Millîye kapsamında halk elindekini orduyla paylaştı (s. 45).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Birlikte Yaşama"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Tekâlif-i Millîye Emirleri"
+    }
+   ]
+  }
+ ]
+}

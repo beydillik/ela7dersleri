@@ -1,0 +1,209 @@
+{
+ "id": "u3t5",
+ "tur": "tarama",
+ "unite": "3. Öğrenme Alanı: Ortak Mirasımız",
+ "baslik": "Ara Durak 5: Osmanlı Kültürü ve Kurumları",
+ "sayfalar": "Konu 10–12 · s. 136–152",
+ "giris": "Üç konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bu üç konu Osmanlı'nın nasıl yönetildiğini ve nasıl yaşandığını anlatıyor: devlet yönetimi, eğitim ve hukuk, sanat ve günlük hayat. Kurumlar birbirine bağlıydı: medrese kadı yetiştirir, Divan'da kazasker kadıları atar, vakıflar külliyeleri yaşatırdı.",
+ "kapsar": [
+  "u3k10",
+  "u3k11",
+  "u3k12"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k10",
+   "maddeler": [
+    "Külliyede cami, medrese, darüşşifa, imaret gibi yapılar bir aradadır.",
+    "Divan-ı Hümayun en önemli yönetim kurumuydu.",
+    "Veziriazam padişahtan sonra en yetkili kişiydi."
+   ]
+  },
+  {
+   "konu": "u3k11",
+   "maddeler": [
+    "Sıbyan mektebinde temel bilgiler, medresede üst düzey eğitim verildi.",
+    "Enderun Mektebi saray içinde yönetici yetiştirdi.",
+    "Mecelle ilk medeni kanun niteliğinde, Kanun-ı Esasi ilk anayasadır."
+   ]
+  },
+  {
+   "konu": "u3k12",
+   "maddeler": [
+    "Osmanlı mimarisinin en ünlü ustası Mimar Sinan'dır.",
+    "Vakıflarla hizmetler devlet hazinesine yük olmadan sürdü.",
+    "Ahilik Ahi Evran'ın kurduğu meslek ve ahlak örgütüdür; yerini loncalara bıraktı."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi alana ait?",
+   "kutular": [
+    {
+     "etiket": "Yönetim",
+     "uyeler": [
+      "Padişah",
+      "Divan-ı Hümayun",
+      "Veziriazam"
+     ]
+    },
+    {
+     "etiket": "Eğitim ve hukuk",
+     "uyeler": [
+      "Medrese",
+      "Enderun Mektebi",
+      "Kanunname"
+     ]
+    },
+    {
+     "etiket": "Sanat ve toplum",
+     "uyeler": [
+      "Süsleme Sanatları",
+      "Vakıf",
+      "Ahilik"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir külliyedeki medrese ve darüşşifanın giderleri nasıl karşılanırdı?",
+   "secenekler": [
+    "Vakıflarla; bağışlanan dükkân, tarla gibi mülklerin gelirleriyle",
+    "Yalnızca padişahın kendi parasıyla",
+    "Hastalardan ve öğrencilerden para alınarak"
+   ],
+   "dogru": 0,
+   "ipucu": "Toplum yararına süresiz bağışlanan mallara ne denir?",
+   "aciklama": "Külliyede cami, medrese, darüşşifa gibi yapılar bir aradadır (s. 136). Bu yapılar vakıflarla halkın hizmetine sunuldu; giderleri bağışlanan dükkân, tarla gibi mülklerin gelirleriyle karşılandı (s. 148).",
+   "kaynak": [
+    {
+     "konu": "u3k10",
+     "kavram": "Külliye"
+    },
+    {
+     "konu": "u3k12",
+     "kavram": "Vakıf"
+    },
+    {
+     "konu": "u3k11",
+     "kavram": "Medrese"
+    }
+   ]
+  },
+  {
+   "soru": "Medreselerde yetişen kadılar adalet işlerini yürütürdü. Divan'da kadıları atayan üye kimdi?",
+   "secenekler": [
+    "Defterdar",
+    "Kazasker",
+    "Nişancı"
+   ],
+   "dogru": 1,
+   "ipucu": "Divan üyelerinden hangisi büyük davalara bakardı?",
+   "aciklama": "Medreseler kadı yetiştirirdi (s. 142); adalet işlerini kadılar yürütürdü (s. 144). Divan'da kazasker büyük davalara bakar, kadı ve müderris atardı (s. 141).",
+   "kaynak": [
+    {
+     "konu": "u3k11",
+     "kavram": "Medrese"
+    },
+    {
+     "konu": "u3k11",
+     "kavram": "Şer'i ve Örfi Hukuk"
+    },
+    {
+     "konu": "u3k10",
+     "kavram": "Divan Üyeleri"
+    }
+   ]
+  },
+  {
+   "soru": "Gençlere meslek ve ahlakı başlangıçta kim öğretiyordu? Tanzimat'tan sonra ne açıldı?",
+   "secenekler": [
+    "Enderun; sıbyan mektebi",
+    "Divan; medrese",
+    "Lonca teşkilatları; modern meslek okulları"
+   ],
+   "dogru": 2,
+   "ipucu": "Aynı meslekten esnafın oluşturduğu örgütün adını hatırla.",
+   "aciklama": "Başlangıçta gençlere meslek ve ahlakı lonca teşkilatları öğretiyordu; Tanzimat sonrasında modern meslek okulları açıldı (s. 143). Lonca, aynı meslekten esnafın meslek örgütüdür (s. 150).",
+   "kaynak": [
+    {
+     "konu": "u3k11",
+     "kavram": "Meslek Okulları"
+    },
+    {
+     "konu": "u3k12",
+     "kavram": "Lonca"
+    }
+   ]
+  },
+  {
+   "soru": "Enderun Mektebi'nde başarılı olan öğrenciler sonra hangi görevlere gelirdi?",
+   "secenekler": [
+    "Devlet görevlisi, komutan veya yönetici olurlardı.",
+    "Yalnızca sıbyan mektebi öğretmeni olurlardı.",
+    "Yalnızca lonca ustası olurlardı."
+   ],
+   "dogru": 0,
+   "ipucu": "Enderun neden açılmıştı? Devletin hangi alanlarda yetişmiş insana ihtiyacı vardı?",
+   "aciklama": "Enderun Mektebi devletin üst düzey yöneticilerini yetiştirirdi; başarılı öğrenciler devlet görevlisi, komutan veya yönetici olurdu (s. 142). Taşra ve merkez yönetimi için yetişmiş görevliler gerekiyordu (s. 139).",
+   "kaynak": [
+    {
+     "konu": "u3k11",
+     "kavram": "Enderun Mektebi"
+    },
+    {
+     "konu": "u3k10",
+     "kavram": "Merkez ve Taşra Yönetimi"
+    }
+   ]
+  },
+  {
+   "soru": "Mimar Sinan'ın yaptığı Süleymaniye'de cami, medrese ve darüşşifa bir aradadır. Bu yapı topluluğuna ne denir?",
+   "secenekler": [
+    "Lonca",
+    "Külliye",
+    "Kanunname"
+   ],
+   "dogru": 1,
+   "ipucu": "Farklı işlevli yapıların bir arada bulunduğu topluluğun adını hatırla.",
+   "aciklama": "Cami, medrese, darüşşifa gibi yapıların bir arada bulunduğu topluluğa külliye denir (s. 136). Mimar Sinan, Süleymaniye ve Selimiye Camileriyle Osmanlı mimarisinin en ünlü ustasıdır (s. 145).",
+   "kaynak": [
+    {
+     "konu": "u3k10",
+     "kavram": "Külliye"
+    },
+    {
+     "konu": "u3k12",
+     "kavram": "Osmanlı Mimarisi"
+    }
+   ]
+  },
+  {
+   "soru": "Kanunnamelerin hazırlanmasında nişancı da yer alırdı. Nişancı Divan'da hangi işi yapardı?",
+   "secenekler": [
+    "Büyük davalara bakardı.",
+    "Devletin gelir ve giderini denetlerdi.",
+    "Belgelere padişahın tuğrasını çekerdi."
+   ],
+   "dogru": 2,
+   "ipucu": "Defterdar parayla, kazasker davalarla ilgilenir. Nişancı yazışmalarla ilgilidir.",
+   "aciklama": "Kanunnamelerin hazırlanmasında şeyhülislam, kazasker, nişancı gibi görevliler yer aldı (s. 144). Nişancı antlaşma yazışmalarını yürütür, belgelere padişahın tuğrasını çekerdi (s. 141).",
+   "kaynak": [
+    {
+     "konu": "u3k11",
+     "kavram": "Kanunname"
+    },
+    {
+     "konu": "u3k10",
+     "kavram": "Divan Üyeleri"
+    }
+   ]
+  }
+ ]
+}

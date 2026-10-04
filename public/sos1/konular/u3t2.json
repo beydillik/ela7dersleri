@@ -1,0 +1,195 @@
+{
+ "id": "u3t2",
+ "tur": "tarama",
+ "unite": "3. Öğrenme Alanı: Ortak Mirasımız",
+ "baslik": "Ara Durak 2: Büyük Fetihler",
+ "sayfalar": "Konu 3–4 · s. 96–109",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bu iki konu Osmanlı'nın en güçlü dönemindeki büyük başarıları anlatıyor: önce İstanbul'un Fethi (1453), sonra Mısır Seferi (1516–1517) ve Preveze Deniz Zaferi (1538). Bu başarılarla önemli ticaret yolları Osmanlı'ya geçti ve Osmanlı denizlerde de güçlendi.",
+ "kapsar": [
+  "u3k3",
+  "u3k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "II. Mehmed 1451'de tahta çıktı.",
+    "Osmanlı Rumeli Hisarı'nı yaptırdı; gemiler karadan Haliç'e indirildi.",
+    "29 Mayıs 1453'te şehir fethedildi; II. Mehmed \"Fatih\" unvanını aldı."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Mercidabık (1516) ve Ridaniye (1517) ile Memlük Devleti'ne son verildi.",
+    "Yavuz'dan sonra padişahlar halife unvanını taşıdı; kutsal emanetler Topkapı Sarayı'na getirildi.",
+    "Barbaros 1538'de Preveze'de Haçlı donanmasını yendi."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Hangi olayla ilgili?",
+   "kutular": [
+    {
+     "etiket": "İstanbul'un Fethi",
+     "uyeler": [
+      "Rumeli Hisarı",
+      "Şahi Topları",
+      "Gemilerin Karadan Yürütülmesi"
+     ]
+    },
+    {
+     "etiket": "Mısır Seferi",
+     "uyeler": [
+      "Memlük Devleti",
+      "Mercidabık ve Ridaniye",
+      "Halifelik ve Kutsal Emanetler"
+     ]
+    },
+    {
+     "etiket": "Preveze Deniz Zaferi",
+     "uyeler": [
+      "Barbaros Hayreddin Paşa",
+      "Preveze Deniz Zaferi"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bu olaylar hangi sırayla yaşandı?",
+   "secenekler": [
+    "İstanbul'un Fethi → Mısır Seferi → Preveze Deniz Zaferi",
+    "Mısır Seferi → İstanbul'un Fethi → Preveze Deniz Zaferi",
+    "Preveze Deniz Zaferi → Mısır Seferi → İstanbul'un Fethi"
+   ],
+   "dogru": 0,
+   "ipucu": "Yılları hatırla: 1453, 1516–1517, 1538.",
+   "aciklama": "İstanbul 1453'te fethedildi (s. 101). Mercidabık 1516'da, Ridaniye 1517'de kazanıldı (s. 103). Preveze Deniz Zaferi 1538'de kazanıldı (s. 105).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Fethin Sonuçları"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Mercidabık ve Ridaniye"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Preveze Deniz Zaferi"
+    }
+   ]
+  },
+  {
+   "soru": "İstanbul'un Fethi ve Mısır Seferi'nin ortak ekonomik sonucu hangisidir?",
+   "secenekler": [
+    "Osmanlı'nın gelirleri azaldı.",
+    "Önemli ticaret yolları Osmanlı denetimine geçti.",
+    "Osmanlı denizcilikten vazgeçti."
+   ],
+   "dogru": 1,
+   "ipucu": "Fetihten sonra İpek Yolu'na, Mısır Seferi'nden sonra Baharat Yolu'na ne oldu?",
+   "aciklama": "İstanbul'un fethiyle İpek Yolu Osmanlı kontrolüne geçti (s. 101). Mısır Seferi ile Baharat Yolu Osmanlı denetimine geçti (s. 104).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Fethin Sonuçları"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Mısır Seferi'nin Sonuçları"
+    }
+   ]
+  },
+  {
+   "soru": "Hem İstanbul'un Fethi'nde hem Preveze'de Osmanlı'nın başarısında hangisi önemli rol oynadı?",
+   "secenekler": [
+    "Lale bahçeleri",
+    "Matbaa",
+    "Donanma (gemiler)"
+   ],
+   "dogru": 2,
+   "ipucu": "Haliç'e ne indirildi? Barbaros neyi hilal şeklinde dizdi?",
+   "aciklama": "İstanbul kuşatmasında gemiler karadan yürütülerek Haliç'e indirildi (s. 101). Preveze'de Barbaros donanmayı hilal şeklinde dizerek Haçlı donanmasını yendi (s. 105).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Gemilerin Karadan Yürütülmesi"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Preveze Deniz Zaferi"
+    }
+   ]
+  },
+  {
+   "soru": "Fetihten sonra İstanbul başkent oldu ve Anadolu ile Balkanlardaki Osmanlı toprakları birleşti. Fethin hangi nedeni böylece ortadan kalktı?",
+   "secenekler": [
+    "İstanbul'un toprak bütünlüğüne engel olması",
+    "Baharat Yolu'nun Memlüklerde olması",
+    "Halifeliğin Kahire'de olması"
+   ],
+   "dogru": 0,
+   "ipucu": "İstanbul, Osmanlı'nın hangi iki toprak parçasının arasında kalıyordu?",
+   "aciklama": "İstanbul, Anadolu ile Balkanlardaki Osmanlı toprakları arasında kalarak toprak bütünlüğüne engel oluyordu (s. 97). Fetihten sonra Osmanlı toprakları birleşti (s. 101).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Fethin Nedenleri"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Fethin Sonuçları"
+    }
+   ]
+  },
+  {
+   "soru": "Mısır Seferi'nden sonra kutsal emanetler hangi şehre getirildi? Bu şehri hangi padişah fethetmişti?",
+   "secenekler": [
+    "Kahire; Yavuz Sultan Selim",
+    "İstanbul; Fatih Sultan Mehmed",
+    "Bursa; Orhan Bey"
+   ],
+   "dogru": 1,
+   "ipucu": "Emanetler hangi sarayda korunur? O saray hangi şehirde?",
+   "aciklama": "Kutsal emanetler İstanbul'a getirilip Topkapı Sarayı'nda korundu (s. 104). İstanbul'u 1453'te II. Mehmed fethetti ve \"Fatih\" unvanını aldı (s. 101).",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Halifelik ve Kutsal Emanetler"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Fethin Sonuçları"
+    }
+   ]
+  },
+  {
+   "soru": "Doğu Roma, İstanbul kuşatmasında Avrupa'dan yardım istemişti. Preveze'de de Avrupalı devletler birleşmişti. Hangisi doğrudur?",
+   "secenekler": [
+    "İstanbul'a çok büyük bir Haçlı ordusu geldi.",
+    "Preveze'de Haçlı donanması kazandı.",
+    "İstanbul'a az sayıda Haçlı askeri geldi; Preveze'de Haçlı donanması yenildi."
+   ],
+   "dogru": 2,
+   "ipucu": "Kuşatmada Avrupa'dan gelen yardım çok muydu? Preveze'yi kim kazandı?",
+   "aciklama": "Doğu Roma Avrupa'dan yardım istedi ama az sayıda Haçlı askeri geldi (s. 99). 1538'de Barbaros'un donanması Preveze'de Haçlı donanmasını yendi (s. 105).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Doğu Roma'nın Savunması"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Preveze Deniz Zaferi"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,194 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "1. Öğrenme Alanı: Birlikte Yaşamak",
+ "baslik": "Ara Durak 1: İletişim",
+ "sayfalar": "Konu 1–3 · s. 12–29",
+ "giris": "Üç konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce iletişimin ne olduğunu ve türlerini öğrendik. Sonra iletişimi güçlendiren yolları gördük: empati, ben dili, etkin dinleme. Son konuda da iletişimi bozan engelleri ve sen dilini öğrendik. Ben dili ile sen dili birbirinin zıttıdır.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "İletişim: duygu, düşünce, bilgi ve deneyimi karşılıklı paylaşmak.",
+    "Üç yol: sözlü (konuşma), yazılı (yazı), sözsüz (beden, jest, mimik).",
+    "Kitle iletişim araçları geniş kitlelere çok kısa sürede ulaşır."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Empati: kendini karşındakinin yerine koymak.",
+    "Ben dili suçlamaz, duyguyu anlatır.",
+    "Etkin dinlemede göz teması kurulur, söz kesilmez."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "İletişim engeli, mesajın doğru aktarılmasını zorlaştırır.",
+    "Telefonla uğraşmak, söz kesmek, alay etmek iletişimi bozar.",
+    "Sen dili suçlar ve kişiyi hedef alır."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "İletişimi güçlendirir mi, zorlaştırır mı?",
+   "kutular": [
+    {
+     "etiket": "Güçlendirir",
+     "uyeler": [
+      "Empati",
+      "Ben Dili",
+      "Etkin Dinleme",
+      "Barışçıl İletişim"
+     ]
+    },
+    {
+     "etiket": "Zorlaştırır",
+     "uyeler": [
+      "Sen Dili",
+      "Günlük Hayatta Engeller",
+      "Dijital Ortamda Engeller"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Ayşe arkadaşına telefondan \"Beni hiç dinlemiyorsun!\" diye mesaj yazdı. Bu hangi iletişim türü ve hangi dildir?",
+   "secenekler": [
+    "Yazılı iletişim ve sen dili",
+    "Sözlü iletişim ve ben dili",
+    "Sözsüz iletişim ve sen dili"
+   ],
+   "dogru": 0,
+   "ipucu": "Mesaj konuşarak mı, yazarak mı gitti? Cümle karşıdakini mi suçluyor, yoksa duyguyu mu anlatıyor?",
+   "aciklama": "İleti yazıyla aktarıldığı için yazılı iletişimdir (s. 17). \"Beni hiç dinlemiyorsun!\" karşıdakini suçlar; bu sen dilidir (s. 22).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Yazılı İletişim"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Sen Dili"
+    }
+   ]
+  },
+  {
+   "soru": "Kerem konuşurken arkadaşı sürekli telefonuna bakıyor. Arkadaşı hangi etkili iletişim yolunu unutuyor?",
+   "secenekler": [
+    "Ben dili",
+    "Etkin dinleme",
+    "Kitle iletişim araçları"
+   ],
+   "dogru": 1,
+   "ipucu": "Konuşan kişiyi doğru anlamak için ne yapmak gerekir? Göz teması kimin işidir?",
+   "aciklama": "Konuşurken sürekli telefonu kontrol etmek iletişimi bozar (s. 22). Etkin dinlemede konuşan kişi dikkatle dinlenir, göz teması kurulur (s. 20).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Günlük Hayatta Engeller"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Etkin Dinleme"
+    }
+   ]
+  },
+  {
+   "soru": "\"Sen hep dağınıksın!\" bir sen dili cümlesidir. Hangisi aynı düşüncenin ben diliyle söylenişidir?",
+   "secenekler": [
+    "Sen hiç odanı toplamazsın zaten.",
+    "Odanı topla, yoksa seninle konuşmam.",
+    "Odanın dağınık olmasından rahatsız oluyorum."
+   ],
+   "dogru": 2,
+   "ipucu": "Ben dili kişiyi değil davranışı anlatır ve senin duygunu söyler.",
+   "aciklama": "Ben dili suçlamadan duyguyu anlatır; kitaptaki örnek: \"Odanın dağınık olmasından rahatsız oluyorum.\" (s. 19). Sen dili ise kişiyi suçlar (s. 22).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Ben Dili"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Sen Dili"
+    }
+   ]
+  },
+  {
+   "soru": "Ela arkadaşını dinlerken gülümsüyor ve başını onaylayarak sallıyor. Bu hangisine örnektir?",
+   "secenekler": [
+    "Sözsüz iletişim; olumlu beden dili",
+    "Yazılı iletişim; ileti",
+    "Sözlü iletişim; iyi konuşmacı"
+   ],
+   "dogru": 0,
+   "ipucu": "Ela bir şey söylüyor mu, yazıyor mu? Yoksa yüzüyle ve başıyla mı anlatıyor?",
+   "aciklama": "Beden hareketleri, jest ve mimiklerle aktarılan iletişim sözsüz iletişimdir (s. 17). Gülümsemek ve başı onaylayarak sallamak olumlu beden dilidir (s. 20).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Sözsüz İletişim"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "Beden Dili"
+    }
+   ]
+  },
+  {
+   "soru": "Empati kuramamak bir konuşmada neye yol açabilir?",
+   "secenekler": [
+    "Etkili iletişime",
+    "İletişim çatışmasına",
+    "Kitle iletişimine"
+   ],
+   "dogru": 1,
+   "ipucu": "Dikkatsizlik ve sabırsızlıkla birlikte sayılan şeyleri hatırla. Bunlar kavgaya mı, anlaşmaya mı götürür?",
+   "aciklama": "Empati, kendini karşındakinin yerine koymaktır (s. 18). Empati kuramamak, dikkatsizlik ve sabırsızlık iletişim çatışmalarına yol açabilir (s. 22).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Empati"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "İletişim Çatışması"
+    }
+   ]
+  },
+  {
+   "soru": "Sınıf grubuna yazılan bir mesaj yanlış anlaşıldı. Kitaptaki sınıf yazışmasında Kerem ne önerir?",
+   "secenekler": [
+    "Daha çok mesaj yazmayı",
+    "Gruptan çıkmayı",
+    "Yüz yüze konuşmayı"
+   ],
+   "dogru": 2,
+   "ipucu": "Yazılı mesajlar bazen farklı anlaşılabilir. Kerem konuşmanın hangi yolunu seçiyor?",
+   "aciklama": "Kitaptaki yazışmada Kerem yüz yüze konuşmayı önerir (s. 13). Dijital ortamda net olmayan mesajlar iletişimi engeller (s. 22).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Yazılı İletişim"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Dijital Ortamda Engeller"
+    }
+   ]
+  }
+ ]
+}

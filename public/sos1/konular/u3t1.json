@@ -1,0 +1,215 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "3. Öğrenme Alanı: Ortak Mirasımız",
+ "baslik": "Ara Durak 1: Kuruluş ve Büyüme",
+ "sayfalar": "Konu 1–2 · s. 86–95",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Osmanlı küçük bir beylik olarak kuruldu ve kısa sürede büyüdü. Bunu planlı fetihlerle, fethettiği yerlere halk yerleştirerek (iskân) ve halka adaletli davranarak (istimalet) başardı. Güçlü merkezî otorite de devleti düzenli tuttu.",
+ "kapsar": [
+  "u3k1",
+  "u3k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "1071 Malazgirt Savaşı'ndan sonra Anadolu'da Türk beylikleri kuruldu.",
+    "Başkentler sırasıyla: Bursa (Orhan Bey), Edirne (I. Murad), İstanbul (Fatih).",
+    "Cihan devleti: dünya çapında büyük güce ve etkiye sahip devlet."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Fetih: Osmanlı batıya, Doğu Roma ve Balkanlara ilerledi.",
+    "İskân: Anadolu'dan Türk-Müslüman topluluklar yeni topraklara yerleştirildi.",
+    "İstimalet: Halka adaletli ve anlayışlı davranarak gönlünü kazanmak."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Zaman şeridi: Osmanlı Beyliği'nin kuruluşundan önce mi, sonra mı?",
+   "kutular": [
+    {
+     "etiket": "Önce",
+     "uyeler": [
+      "Malazgirt ve Türk Beylikleri"
+     ]
+    },
+    {
+     "etiket": "Sonra",
+     "uyeler": [
+      "Orhan Bey ve I. Murad Dönemleri",
+      "Fatih, Yavuz ve Kanuni Dönemleri"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Hangi politikayla ilgili?",
+   "kutular": [
+    {
+     "etiket": "Fetih",
+     "uyeler": [
+      "Fetih Politikası",
+      "Türkmen ve Ahi Desteği"
+     ]
+    },
+    {
+     "etiket": "İskân",
+     "uyeler": [
+      "İskân Politikası",
+      "İmar ve Yeni Şehirler"
+     ]
+    },
+    {
+     "etiket": "İstimalet",
+     "uyeler": [
+      "İstimalet Politikası",
+      "Derviş ve Abdallar"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi doğru zaman sırasıdır?",
+   "secenekler": [
+    "Malazgirt Savaşı → Türk beylikleri → Osmanlı Beyliği'nin kuruluşu",
+    "Osmanlı Beyliği'nin kuruluşu → Malazgirt Savaşı → Türk beylikleri",
+    "Türk beylikleri → Osmanlı Beyliği'nin kuruluşu → Malazgirt Savaşı"
+   ],
+   "dogru": 0,
+   "ipucu": "Malazgirt Savaşı 1071'de oldu. Osmanlı, Türk beyliklerinden biriydi.",
+   "aciklama": "Malazgirt Savaşı 1071'de yapıldı ve ardından Anadolu'da Türk beylikleri kuruldu (s. 86). Osmanlı Beyliği de bu beyliklerden biri olarak Osman Bey Dönemi'nde kuruldu (s. 88).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Malazgirt ve Türk Beylikleri"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Osmanlı Beyliği'nin Kuruluşu"
+    }
+   ]
+  },
+  {
+   "soru": "Osmanlı başkentleri hangi sırayla değişti?",
+   "secenekler": [
+    "Edirne → Bursa → İstanbul",
+    "Bursa → Edirne → İstanbul",
+    "İstanbul → Bursa → Edirne"
+   ],
+   "dogru": 1,
+   "ipucu": "Orhan Bey, I. Murad ve Fatih dönemlerinde hangi şehirler başkent oldu?",
+   "aciklama": "Orhan Bey Dönemi'nde Bursa, I. Murad Dönemi'nde Edirne, Fatih Dönemi'nde İstanbul başkent oldu (s. 89).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Orhan Bey ve I. Murad Dönemleri"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Fatih, Yavuz ve Kanuni Dönemleri"
+    }
+   ]
+  },
+  {
+   "soru": "Osmanlı fethettiği yerlerde halka adaletli ve anlayışlı davrandı. Bunun sonucu ne oldu?",
+   "secenekler": [
+    "Halk yerinden göç etti.",
+    "Ticaret yolları kapandı.",
+    "Huzur sağlandı, halkın devlete bağlılığı arttı."
+   ],
+   "dogru": 2,
+   "ipucu": "İstimaletin amacını ve derviş-abdalların katkısını hatırla.",
+   "aciklama": "İstimaletin amacı huzur ve düzeni sağlamak, halkın gönlünü kazanmaktı (s. 95). Derviş ve abdallar huzur ortamına ve halkın devlete bağlılığının artmasına katkı sağladı (s. 95). Güçlü merkezî otorite sayesinde Osmanlı uzun yıllar ayakta kaldı (s. 93).",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "İstimalet Politikası"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Derviş ve Abdallar"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Merkezî Otorite"
+    }
+   ]
+  },
+  {
+   "soru": "Osmanlı Beyliği Doğu Roma İmparatorluğu'nun sınırında kuruldu. Bu konum Osmanlı'nın hangi yöne büyümesini kolaylaştırdı?",
+   "secenekler": [
+    "Doğuya doğru göç etmeyi",
+    "Yalnızca denizde ticaret yapmayı",
+    "Batıya doğru fetih politikasını"
+   ],
+   "dogru": 2,
+   "ipucu": "Beylik kimin sınırındaki fetihlerle büyüdü? Osmanlı hangi yöne ilerledi?",
+   "aciklama": "Osmanlı Beyliği, Doğu Roma sınırındaki fetihlerle büyümeye başladı (s. 88). Osmanlı batıya ilerledi; zayıflayan Doğu Roma ve Balkanlar üzerine yoğunlaştı (s. 94).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Osmanlı Beyliği'nin Kuruluşu"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Fetih Politikası"
+    }
+   ]
+  },
+  {
+   "soru": "İskân edilen yeni yerlerde cami, köprü, medrese, han ve yollar yapılması neyi güçlendirdi?",
+   "secenekler": [
+    "Osmanlı hâkimiyetini",
+    "Balkanlardaki karışıklığı",
+    "Mezhep çatışmalarını"
+   ],
+   "dogru": 0,
+   "ipucu": "Bu yapılar halkın yaşamını kolaylaştırdı. Devletin bölgedeki gücü bundan nasıl etkilendi?",
+   "aciklama": "Yeni yerleşim alanlarında cami, köprü, medrese, han ve yollar yapıldı; halkın yaşamı kolaylaştı ve Osmanlı hâkimiyeti pekişti (s. 94).",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "İmar ve Yeni Şehirler"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "İskân Politikası"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi Osmanlı'nın hızla büyümesini kolaylaştıran nedenlerden biri DEĞİLDİR?",
+   "secenekler": [
+    "Türkmen ve Ahi desteği",
+    "Doğu Roma'nın çok güçlü olması",
+    "Güçlü merkezî otorite"
+   ],
+   "dogru": 1,
+   "ipucu": "Kitapta Doğu Roma nasıl anlatılıyordu: güçlü mü, zayıflayan mı?",
+   "aciklama": "Türkmen ve Ahi desteği Osmanlı'nın askerî gücünü artırdı (s. 94). Güçlü merkezî otorite devleti düzenli tuttu (s. 93). Osmanlı ise zayıflayan Doğu Roma üzerine ilerledi (s. 94).",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Türkmen ve Ahi Desteği"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Merkezî Otorite"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Fetih Politikası"
+    }
+   ]
+  }
+ ]
+}

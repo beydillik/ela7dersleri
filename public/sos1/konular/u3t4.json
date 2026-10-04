@@ -1,0 +1,203 @@
+{
+ "id": "u3t4",
+ "tur": "tarama",
+ "unite": "3. Öğrenme Alanı: Ortak Mirasımız",
+ "baslik": "Ara Durak 4: Osmanlı'da Yenileşme",
+ "sayfalar": "Konu 8–9 · s. 125–135",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Avrupa güçlenirken Osmanlı da yenilikler yaptı. Sırasıyla: Lale Devri (III. Ahmed), Nizâm-ı Cedîd (III. Selim), II. Mahmud'un yenilikleri ve Tanzimat Fermanı. Hepsinin amacı devleti yeniden güçlendirmekti.",
+ "kapsar": [
+  "u3k8",
+  "u3k9"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k8",
+   "maddeler": [
+    "Lale Devri: 1718 Pasarofça Antlaşması – 1730 Patrona Halil İsyanı.",
+    "1720 Tulumbacılar Ocağı, 1727 ilk Türk matbaası.",
+    "III. Selim'in yeniliklerine Nizâm-ı Cedîd (Yeni Düzen) denir."
+   ]
+  },
+  {
+   "konu": "u3k9",
+   "maddeler": [
+    "1826 Vaka-i Hayriye: II. Mahmud Yeniçeri Ocağı'nı kaldırdı.",
+    "Divan kaldırıldı, nazırlıklar kuruldu; 1831'de Takvim-i Vekayi çıktı.",
+    "3 Kasım 1839 Tanzimat Fermanı: padişah kendi yetkilerini sınırladı."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Zaman şeridi: Hangi padişah döneminde?",
+   "kutular": [
+    {
+     "etiket": "III. Ahmed (Lale Devri)",
+     "uyeler": [
+      "Lale Devri",
+      "İlk Türk Matbaası",
+      "Tulumbacılar Ocağı"
+     ]
+    },
+    {
+     "etiket": "III. Selim",
+     "uyeler": [
+      "Nizâm-ı Cedîd Ordusu",
+      "III. Selim'in Diğer Yenilikleri"
+     ]
+    },
+    {
+     "etiket": "II. Mahmud",
+     "uyeler": [
+      "Vaka-i Hayriye",
+      "Nazırlıklar",
+      "Takvim-i Vekayi"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bu dönemler ve olaylar hangi sırayla yaşandı?",
+   "secenekler": [
+    "Lale Devri → Nizâm-ı Cedîd → Tanzimat Fermanı",
+    "Nizâm-ı Cedîd → Lale Devri → Tanzimat Fermanı",
+    "Tanzimat Fermanı → Lale Devri → Nizâm-ı Cedîd"
+   ],
+   "dogru": 0,
+   "ipucu": "Lale Devri 1718'de başladı. Tanzimat Fermanı 1839'da ilan edildi. III. Selim hangi yüzyılın sonunda yenilik yaptı?",
+   "aciklama": "Lale Devri 1718–1730 arasıdır (s. 125). Nizâm-ı Cedîd, XVIII. yüzyılın sonlarında III. Selim'in başlattığı yeniliklerdir (s. 126). Tanzimat Fermanı 3 Kasım 1839'da ilan edildi (s. 129).",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Lale Devri"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Nizâm-ı Cedîd"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Tanzimat Fermanı"
+    }
+   ]
+  },
+  {
+   "soru": "III. Selim ve II. Mahmud'un Yeniçeri Ocağı ile ilgili yaptıkları için hangisi doğrudur?",
+   "secenekler": [
+    "III. Selim Yeniçeri Ocağı'nı kaldırdı.",
+    "III. Selim Yeniçeri Ocağı'nın yanında yeni bir ordu kurdu; II. Mahmud Yeniçeri Ocağı'nı kaldırdı.",
+    "II. Mahmud Nizâm-ı Cedîd Ordusu'nu kurdu."
+   ],
+   "dogru": 1,
+   "ipucu": "Nizâm-ı Cedîd Ordusu kimin yanında kuruldu? Vaka-i Hayriye'de ne oldu?",
+   "aciklama": "III. Selim, Yeniçeri Ocağı'nın yanında Nizâm-ı Cedîd Ordusu'nu kurdu (s. 127). II. Mahmud 1826'da Yeniçeri Ocağı'nı kaldırdı; buna Vaka-i Hayriye denir (s. 128).",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Nizâm-ı Cedîd Ordusu"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Vaka-i Hayriye"
+    }
+   ]
+  },
+  {
+   "soru": "İlk Türk matbaası (1727) ile Takvim-i Vekayi (1831) arasındaki ortak yön nedir?",
+   "secenekler": [
+    "İkisi de itfaiye teşkilatıdır.",
+    "İkisi de ordu kurumudur.",
+    "İkisi de bilgi ve haberin halka ulaşmasını kolaylaştırdı."
+   ],
+   "dogru": 2,
+   "ipucu": "Matbaa kitapları, gazete ise devlet kararlarını ne yaptı?",
+   "aciklama": "Matbaa sayesinde kitap basımı hızlandı, bilgiye erişim kolaylaştı (s. 125). Takvim-i Vekayi ile devlet kararları halka duyuruldu (s. 128).",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "İlk Türk Matbaası"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Takvim-i Vekayi"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi Osmanlı'nın Batı'yı örnek almasına bir örnek DEĞİLDİR?",
+   "secenekler": [
+    "Türk Modası'nın Avrupa'da yayılması",
+    "Yirmisekiz Mehmed Çelebi'nin Fransa'ya elçi gönderilmesi",
+    "Batı'daki fabrika modelinin örnek alınması"
+   ],
+   "dogru": 0,
+   "ipucu": "Seçeneklerden birinde Osmanlı Batı'dan değil, Batı Osmanlı'dan etkileniyor.",
+   "aciklama": "Fransa'ya elçi gönderilmesi (s. 125) ve fabrikalaşma modelinin örnek alınması (s. 130) Batı'yı örnek almaktır. Türk Modası ise Avrupa'nın Osmanlı kültüründen etkilenmesidir (s. 133).",
+   "kaynak": [
+    {
+     "konu": "u3k9",
+     "kavram": "Türk Modası"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Batı ile Yakın İlişkiler"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Sanayileşme Çabaları"
+    }
+   ]
+  },
+  {
+   "soru": "Hangi yenilik doğru eşleşmiştir?",
+   "secenekler": [
+    "Takvim-i Vekayi → ilk matbaa",
+    "Tulumbacılar Ocağı → ilk itfaiye teşkilatı",
+    "Nazırlıklar → ilk ordu"
+   ],
+   "dogru": 1,
+   "ipucu": "Tulumba suyla yangın söndürmeye yarar. Takvim-i Vekayi bir gazetedir; nazırlık ise bakanlıktır.",
+   "aciklama": "Tulumbacılar Ocağı Osmanlı'nın ilk itfaiye teşkilatıdır (s. 126). Takvim-i Vekayi ilk resmî gazetedir; nazırlıklar bakanlıklardır (s. 128).",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Tulumbacılar Ocağı"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Takvim-i Vekayi"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Nazırlıklar"
+    }
+   ]
+  },
+  {
+   "soru": "III. Selim'in Nizâm-ı Cedîd'i ile II. Mahmud'un yeniliklerinin ortak amacı nedir?",
+   "secenekler": [
+    "Lale yetiştirmek",
+    "Yeni topraklar fethetmek",
+    "Devleti yeniden güçlendirmek"
+   ],
+   "dogru": 2,
+   "ipucu": "İki padişah da devlet gerileyince harekete geçti. Ne istiyorlardı?",
+   "aciklama": "III. Selim devleti yeniden güçlendirmek için Nizâm-ı Cedîd'i başlattı (s. 126). II. Mahmud da devleti güçlendirmek için birçok alanda yenilik yaptı (s. 128).",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Nizâm-ı Cedîd"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "II. Mahmud"
+    }
+   ]
+  }
+ ]
+}
