@@ -1,0 +1,248 @@
+{
+ "id": "u2t2",
+ "tur": "tarama",
+ "unite": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+ "baslik": "Ara Durak 2: Potansiyel Enerji ve Dönüşüm",
+ "sayfalar": "Konu 3–4 · s. 68–80",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Cisimler yükseklikleri ya da esneklikleri sayesinde enerji depolar: potansiyel enerji. Bu depolanmış enerji, cisim hareket edince kinetik enerjiye dönüşür; yukarı çıkarken yine potansiyel enerjiye döner. Enerji hiç kaybolmaz, yalnızca tür değiştirir.",
+ "kapsar": [
+  "u2k3",
+  "u2k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Cismin durumundan dolayı depoladığı enerjiye potansiyel enerji denir.",
+    "Çekim potansiyel enerjisi yükseklikten gelir; ağırlığa (kütleye) ve yüksekliğe bağlıdır.",
+    "Esnek cisim (paket lastiği, sünger, yay) gerilince ya da sıkışınca esneklik potansiyel enerjisi depolar."
+   ]
+  },
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "İnerken potansiyel enerji azalır, kinetik enerji artar. Çıkarken tersi olur.",
+    "Enerji yoktan var olmaz, yok olmaz; başka türe dönüşür (enerjinin korunumu).",
+    "Sürtünme kinetik enerjiyi ısı ve sese dönüştürür; cisim yavaşlar ve durur."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu cisimde hangi enerji var?",
+   "kutular": [
+    {
+     "etiket": "Çekim potansiyel enerjisi",
+     "uyeler": [
+      "Dalda duran elma",
+      "Üst raftaki kitap",
+      "En yüksekteki salıncak"
+     ]
+    },
+    {
+     "etiket": "Esneklik potansiyel enerjisi",
+     "uyeler": [
+      "Gerilmiş paket lastiği",
+      "Sıkışmış yay",
+      "Sıkılmış sünger"
+     ]
+    },
+    {
+     "etiket": "Kinetik enerji",
+     "uyeler": [
+      "Rampadan inen araba",
+      "Düşmekte olan top"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Hangi enerji dönüşümü oluyor?",
+   "kutular": [
+    {
+     "etiket": "Potansiyel → kinetik",
+     "uyeler": [
+      "Salıncağın aşağı inmesi",
+      "Topun yere düşmesi",
+      "Yayın arabayı fırlatması"
+     ]
+    },
+    {
+     "etiket": "Kinetik → potansiyel",
+     "uyeler": [
+      "Salıncağın yukarı çıkması",
+      "Topun rampaya tırmanması"
+     ]
+    },
+    {
+     "etiket": "Kinetik → ısı, ses",
+     "uyeler": [
+      "Kızağın sürtünmeyle durması"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dalda duran elma yere düşerken hangi enerji hangisine dönüşür?",
+   "secenekler": [
+    "Çekim potansiyel enerjisi → kinetik enerji",
+    "Kinetik enerji → esneklik potansiyel enerjisi",
+    "Kinetik enerji → çekim potansiyel enerjisi"
+   ],
+   "dogru": 0,
+   "ipucu": "Dalda duran elmanın enerjisi yükseklikten gelir. Düşerken yükseklik azalır, hız artar.",
+   "aciklama": "Dalda duran elma çekim potansiyel enerjisine sahiptir (s. 68). Düşerken çekim potansiyel enerjisi azalır, kinetik enerjisi artar (s. 73, 76).",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Çekim Potansiyel Enerjisi"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Düşen Top"
+    }
+   ]
+  },
+  {
+   "soru": "Sıkıştırılıp bırakılan yay oyuncak arabayı ileri fırlatıyor. Yayın hangi enerjisi arabanın kinetik enerjisine dönüşür?",
+   "secenekler": [
+    "Çekim potansiyel enerjisi",
+    "Esneklik potansiyel enerjisi",
+    "Isı enerjisi"
+   ],
+   "dogru": 1,
+   "ipucu": "Yay esnek bir cisimdir. Sıkıştırılınca ne tür enerji depolar?",
+   "aciklama": "Sıkıştırılan yay esneklik potansiyel enerjisi depolar (s. 68). Serbest bırakılınca bu enerji arabanın kinetik enerjisine dönüşür (s. 74).",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Esneklik Potansiyel Enerjisi"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Sıkışan Yay"
+    }
+   ]
+  },
+  {
+   "soru": "Salıncak en yüksek noktadayken hangi enerjisi en fazladır?",
+   "secenekler": [
+    "Kinetik enerji",
+    "Ses enerjisi",
+    "Çekim potansiyel enerjisi"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Tepede ..., dipte KE.\" Yükseklik artınca hangi enerji artar?",
+   "aciklama": "Yükseklik arttıkça çekim potansiyel enerjisi artar (s. 68). Salıncak en yüksek noktada en çok potansiyel enerjiye, en alt noktada en çok kinetik enerjiye sahiptir (s. 76).",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Sarkaç ve Salıncak"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Yükseklik ve Çekim Potansiyel Enerjisi"
+    }
+   ]
+  },
+  {
+   "soru": "Ağır bir top ile hafif bir top aynı yükseklikten bırakılıyor. Yere değmeden hemen önce hangisinin kinetik enerjisi daha fazladır?",
+   "secenekler": [
+    "Hafif topun",
+    "Ağır topun",
+    "İkisininki eşittir"
+   ],
+   "dogru": 1,
+   "ipucu": "Önce başlangıçtaki çekim potansiyel enerjilerini karşılaştır. Düşerken bu enerji neye dönüşür?",
+   "aciklama": "Aynı yükseklikte ağırlığı fazla olanın çekim potansiyel enerjisi daha fazladır (s. 68). Düşerken çekim potansiyel enerjisi kinetik enerjiye dönüşür (s. 76). Bu yüzden ağır topun kinetik enerjisi daha fazla olur.",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Ağırlık ve Çekim Potansiyel Enerjisi"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Düşen Top"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Aynı yükseklikte ağır olanın mı, hafif olanın mı çekim potansiyel enerjisi daha fazla?",
+     "Düşerken potansiyel enerji kinetik enerjiye dönüşür. Başta çok olan, sonda da çok olur."
+    ]
+   }
+  },
+  {
+   "soru": "Enerjinin korunumu kanununa göre hangisi doğrudur?",
+   "secenekler": [
+    "Top durunca enerjisi yok olur.",
+    "Enerji yoktan var edilebilir.",
+    "Enerji yok olmaz, başka bir türe dönüşür."
+   ],
+   "dogru": 2,
+   "ipucu": "Bardaktaki suyu başka bardağa dökmeyi düşün: kap değişir, su ...",
+   "aciklama": "Enerji yoktan var olmaz, var olan enerji de yok olmaz; ancak başka bir enerji türüne dönüşür (s. 76).",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Enerjinin Korunumu"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Sürtünme ve Enerji"
+    }
+   ]
+  },
+  {
+   "soru": "Gerilen paket lastiği bırakılınca kâğıt topu fırlatıyor. Lastik ne kadar çok gerilirse ne olur?",
+   "secenekler": [
+    "Daha çok enerji depolar, top daha hızlı fırlar.",
+    "Daha az enerji depolar, top yavaş gider.",
+    "Depoladığı enerji hiç değişmez."
+   ],
+   "dogru": 0,
+   "ipucu": "Yay için kitap ne diyordu? \"Ne kadar çok sıkışırsa o kadar çok ...\"",
+   "aciklama": "Paket lastiği gerildiğinde esneklik potansiyel enerjisi depolar; gerilme artarsa depolanan enerji artar (s. 68, 70). Bu enerji kinetik enerjiye dönüşür (s. 74).",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Esneklik Potansiyel Enerjisi"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Sıkışan Yay"
+    }
+   ]
+  },
+  {
+   "soru": "Rampadan kayan kızak düz zeminde bir süre gidip duruyor. Kızağın kinetik enerjisine ne oldu?",
+   "secenekler": [
+    "Yok oldu.",
+    "Sürtünmeyle ısı ve ses enerjisine dönüştü.",
+    "Esneklik potansiyel enerjisine dönüştü."
+   ],
+   "dogru": 1,
+   "ipucu": "Enerji yok olur mu? Kızağı yavaşlatan kuvvet hangisiydi?",
+   "aciklama": "Kinetik enerji sürtünme kuvvetinin etkisiyle ısı, ses ve diğer enerji türlerine dönüşür; cisim yavaşlar ve durur. Enerji yok olmaz (s. 76).",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Sürtünme ve Enerji"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Enerjinin Korunumu"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Eğik Düzlem"
+    }
+   ]
+  }
+ ]
+}

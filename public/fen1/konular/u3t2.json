@@ -1,0 +1,220 @@
+{
+ "id": "u3t2",
+ "tur": "tarama",
+ "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+ "baslik": "Ara Durak 2: Kalp ve Kan",
+ "sayfalar": "Konu 3–4 · s. 101–108",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Kalp bir pompa, damarlar yollar, kan da bu yollarda giden taşıyıcıdır. Alyuvarlar akciğerden aldıkları oksijeni hücrelere götürür. Kılcal damarlarda kan hücrelere besin ve oksijen verir, atıkları alır.",
+ "kapsar": [
+  "u3k3",
+  "u3k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Dolaşım sistemi = kalp + damarlar + kan.",
+    "Atardamar kanı kalpten götürür, toplardamar kalbe getirir, kılcal damarda madde alışverişi olur.",
+    "Küçük dolaşım: kalp → akciğer → kalp. Büyük dolaşım: kalp → vücut → kalp."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Kan = plazma (sıvı kısım) + kan hücreleri.",
+    "Alyuvar kana kırmızı rengi verir, oksijen taşır, en çok bulunan hücredir.",
+    "Akyuvar mikroplara karşı savunur (en az bulunur). Kan pulcukları pıhtı yapar."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Kanın parçası mı, damar mı?",
+   "kutular": [
+    {
+     "etiket": "Kanın parçası",
+     "uyeler": [
+      "Plazma",
+      "Alyuvar",
+      "Akyuvar",
+      "Kan Pulcukları"
+     ]
+    },
+    {
+     "etiket": "Damar",
+     "uyeler": [
+      "Atardamar",
+      "Toplardamar",
+      "Kılcal Damar"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Görevi ne?",
+   "kutular": [
+    {
+     "etiket": "Oksijen taşır",
+     "uyeler": [
+      "Alyuvar"
+     ]
+    },
+    {
+     "etiket": "Mikroplara karşı savunur",
+     "uyeler": [
+      "Akyuvar"
+     ]
+    },
+    {
+     "etiket": "Pıhtı yapar",
+     "uyeler": [
+      "Kan Pulcukları"
+     ]
+    },
+    {
+     "etiket": "Kanı pompalar",
+     "uyeler": [
+      "Kalp"
+     ]
+    },
+    {
+     "etiket": "Madde alışverişi yapılır",
+     "uyeler": [
+      "Kılcal Damar"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kan akciğerlere gidince oksijen alır. Oksijeni taşıyan kan hücreleri hangileridir?",
+   "secenekler": [
+    "Akyuvarlar",
+    "Alyuvarlar",
+    "Kan pulcukları"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Kırmızı, en çok, taşıyıcı.\"",
+   "aciklama": "Akciğerlere ulaşan kanın oksijen oranı artar (s. 105). Oksijen ve karbon dioksidin taşınmasında alyuvarlar görevlidir (s. 107).",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Alyuvar"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Küçük Kan Dolaşımı"
+    }
+   ]
+  },
+  {
+   "soru": "Kılcal damarlarda kan ile hücreler arasında madde alışverişi olur. Kan hücrelere neler verir?",
+   "secenekler": [
+    "Besin, oksijen ve hormon",
+    "Yalnızca karbon dioksit",
+    "Yalnızca pıhtı"
+   ],
+   "dogru": 0,
+   "ipucu": "Kanın görevlerini hatırla: hücrelere ne taşır, hücrelerden ne alır?",
+   "aciklama": "Kılcal damarlar kan ile hücreler arasında madde alışverişini sağlar (s. 104). Kan hücrelere besin, oksijen ve hormon taşır, atıkları uzaklaştırır (s. 107).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Kılcal Damar"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Kanın Görevleri"
+    }
+   ]
+  },
+  {
+   "soru": "Kalbin pompaladığı kanın büyük kısmı sudan oluşan sıvı kısmına ne denir?",
+   "secenekler": [
+    "Alyuvar",
+    "Toplardamar",
+    "Plazma"
+   ],
+   "dogru": 2,
+   "ipucu": "Kan iki kısımdan oluşur: kan hücreleri ve ...",
+   "aciklama": "Kalp, kasılıp gevşeyerek kanı pompalar (s. 104). Plazma kanın sıvı kısmıdır; büyük bir kısmı sudur (s. 107).",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Plazma"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Kalp"
+    }
+   ]
+  },
+  {
+   "soru": "Dizini sıyıran Ela'nın kanaması bir süre sonra kendiliğinden duruyor. Bu, hangisi sayesinde olur?",
+   "secenekler": [
+    "Kan pulcukları",
+    "Akyuvarlar",
+    "Kılcal damarlar"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Pıhtı yapar, kanamayı durdurur.\"",
+   "aciklama": "Kan pulcukları yaralanmalarda pıhtılaşarak kan kaybını önler (s. 107).",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Kan Pulcukları"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Kılcal Damar"
+    }
+   ]
+  },
+  {
+   "soru": "Küçük kan dolaşımında akciğerlere giden kanın oksijen oranı ne olur?",
+   "secenekler": [
+    "Azalır",
+    "Artar",
+    "Değişmez"
+   ],
+   "dogru": 1,
+   "ipucu": "Küçük dolaşım: kalp → akciğer → kalp. Akciğerde kan neyi alır?",
+   "aciklama": "Akciğerlere ulaşan kanın oksijen oranı artar, karbon dioksit oranı azalır (s. 105). Oksijeni alyuvarlar taşır (s. 107).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Küçük Kan Dolaşımı"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Alyuvar"
+    }
+   ]
+  },
+  {
+   "soru": "Vücuttan kalbe dönen kanı taşıyan damar ve bu kanın özelliği hangisidir?",
+   "secenekler": [
+    "Atardamar; oksijeni çok kan",
+    "Kılcal damar; plazmasız kan",
+    "Toplardamar; karbon dioksiti çok kan"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Toplardamar: kalbe getirir.\" Hücreler oksijeni aldıktan sonra kanda ne artar?",
+   "aciklama": "Toplardamarlar vücuda dağılan kanı toplayıp kalbe getirir (s. 104). Karbon dioksit oranı artan kan toplardamarlarla kalbin sağ tarafına gelir (s. 105).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Toplardamar"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Kanın Görevleri"
+    }
+   ]
+  }
+ ]
+}

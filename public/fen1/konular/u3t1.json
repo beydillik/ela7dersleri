@@ -1,0 +1,206 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+ "baslik": "Ara Durak 1: Sindirim",
+ "sayfalar": "Konu 1–2 · s. 89–100",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce besinin vücudumuzdaki yolculuğunu öğrendik: ağızdan başlayıp anüse kadar. Sonra bu yolculuğun sağlıklı olması için ne yapmamız gerektiğini gördük. Her sağlık önerisi bir organa iyi gelir: iyi çiğnemek ağza, yeterli su kalın bağırsağa, spor bağırsaklara.",
+ "kapsar": [
+  "u3k1",
+  "u3k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Besinin yolu: ağız → yutak → yemek borusu → mide → ince bağırsak → kalın bağırsak → anüs.",
+    "Sindirim ağızda başlar, ince bağırsakta tamamlanır. Yutak ve yemek borusunda sindirim olmaz.",
+    "Villuslar besinleri kana geçirir; kalın bağırsakta su emilir. Karaciğer ve pankreas yardımcıdır."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Dengeli beslen, yeterli su iç, öğün atlama.",
+    "Paketli, hazır ve çok yağlı yiyecekler mideye zarar verebilir.",
+    "Spor bağırsakları çalıştırır. Stres ve ekran başında hareketsizlik sindirimi bozar."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu organda sindirim olur mu?",
+   "kutular": [
+    {
+     "etiket": "Sindirim olur",
+     "uyeler": [
+      "Ağız",
+      "Mide",
+      "İnce Bağırsak"
+     ]
+    },
+    {
+     "etiket": "Sindirim olmaz",
+     "uyeler": [
+      "Yutak ve Yemek Borusu",
+      "Kalın Bağırsak ve Anüs"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Sindirim sistemine iyi mi gelir, zarar mı verir?",
+   "kutular": [
+    {
+     "etiket": "İyi gelir",
+     "uyeler": [
+      "Yeterince çiğnemek",
+      "Düzenli kahvaltı",
+      "Yeterli su içmek",
+      "Spor yapmak"
+     ]
+    },
+    {
+     "etiket": "Zarar verir",
+     "uyeler": [
+      "Çiğnemeden hızlı yutmak",
+      "Ayaküstü paketli yemek",
+      "Öne eğilerek uzun oturmak",
+      "Ekran başında yemek"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Özden yemeklerini yeterince çiğnemeden, hızlıca yutuyordu. Hangi sindirim aşamasını aksatıyordu?",
+   "secenekler": [
+    "Ağızda başlayan fiziksel sindirimi",
+    "Kalın bağırsaktaki su emilimini",
+    "Yemek borusundaki sindirimi"
+   ],
+   "dogru": 0,
+   "ipucu": "Çiğneme hangi organda olur ve besini nasıl değiştirir?",
+   "aciklama": "Özden besinleri yeterince çiğnemeden yutuyordu ve sindirim sorunları yaşadı (s. 100). Çiğneme besini küçük parçalara ayıran fiziksel sindirimdir ve ağızda başlar (s. 92, 95).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Ağız"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Sindirim"
+    }
+   ]
+  },
+  {
+   "soru": "Düzenli spor yapmak hangi organların kasılıp gevşeme hareketlerini uyararak sindirime yardım eder?",
+   "secenekler": [
+    "Karaciğerin",
+    "Bağırsakların",
+    "Pankreasın"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Hareket et, ... çalışsın.\"",
+   "aciklama": "Düzenli fiziksel aktivite bağırsakların kasılma ve gevşeme hareketlerini uyarır, hareketliliğini artırır (s. 99).",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Düzenli Egzersiz"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "İnce Bağırsak"
+    }
+   ]
+  },
+  {
+   "soru": "Hangi eşleştirme doğrudur?",
+   "secenekler": [
+    "Yeterli su içmek → sindirime zarar verir",
+    "Paketli gıdalar → sindirimi korur",
+    "Düzenli öğünler → sindirimi korur"
+   ],
+   "dogru": 2,
+   "ipucu": "Sağlık konusundaki \"akılda kalsın\" sözlerini hatırla: \"Su iç, öğün atlama.\"",
+   "aciklama": "Yeterli su içmek ve düzenli, dengeli öğünler sindirim organlarının sağlıklı çalışmasına yardım eder. Paketli gıdalar ise zarar verebilir (s. 99).",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Su ve Düzenli Öğünler"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Hazır ve Paketli Gıdalar"
+    }
+   ]
+  },
+  {
+   "soru": "Aşırı yağlı yiyecekler sindirimi zorlar. Yağların sindirimine yardımcı olan safra sıvısı hangi organda üretilir?",
+   "secenekler": [
+    "Mide",
+    "Karaciğer",
+    "Kalın bağırsak"
+   ],
+   "dogru": 1,
+   "ipucu": "Sindirime yardımcı iki organı hatırla. Safra hangisinden gelir?",
+   "aciklama": "Aşırı yağlı yiyecekler mide rahatsızlıklarına neden olabilir (s. 99). Safra sıvısı karaciğerden salgılanır ve yağların sindirimine yardım eder (s. 92, 95).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Karaciğer ve Pankreas"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Hazır ve Paketli Gıdalar"
+    }
+   ]
+  },
+  {
+   "soru": "Yeterli su içmek sindirime yardım eder. Sindirim sisteminde suyun emildiği organ hangisidir?",
+   "secenekler": [
+    "Yemek borusu",
+    "Ağız",
+    "Kalın bağırsak"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Su emilir, atık atılır\" sözü hangi organ içindi?",
+   "aciklama": "Kalın bağırsakta su, bazı mineral ve vitaminler emilir (s. 95). Yeterli su içmek sindirim organlarının sağlıklı çalışmasına yardım eder (s. 99).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Kalın Bağırsak ve Anüs"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Su ve Düzenli Öğünler"
+    }
+   ]
+  },
+  {
+   "soru": "Dengeli beslenmek için öğünlerde neleri yeterince almalıyız?",
+   "secenekler": [
+    "Protein, karbohidrat, yağ ve vitamin",
+    "Yalnızca karbohidrat",
+    "Yalnızca hazır ve paketli gıdalar"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Her besinden yeterince.\" Midede sindirimi başlayan besini de hatırla.",
+   "aciklama": "Yeterli miktarda protein, karbohidrat, yağ ve vitamin almak sindirimi dengeler ve düzenler (s. 99). Proteinlerin kimyasal sindirimi midede başlar (s. 95).",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Dengeli Beslenme"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Mide"
+    }
+   ]
+  }
+ ]
+}

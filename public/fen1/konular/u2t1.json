@@ -1,0 +1,208 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+ "baslik": "Ara Durak 1: İş ve Hareket Enerjisi",
+ "sayfalar": "Konu 1–2 · s. 59–67, 80",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "İş yapabilmek için enerji gerekir; zaten enerji, iş yapabilme yeteneğidir. İkisinin birimi de aynıdır: joule. Bir cismi itip hareket ettirdiğimizde iş yaparız ve cisim hareket ettiği için kinetik enerji kazanır.",
+ "kapsar": [
+  "u2k1",
+  "u2k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "İş için iki koşul: cisme kuvvet uygulanmalı ve cisim bu kuvvetin doğrultusunda yer değiştirmeli.",
+    "Kuvvet var ama hareket yoksa ya da hareket kuvvetle aynı doğrultuda değilse iş yapılmaz.",
+    "İş, kuvvet ve yer değiştirme ile doğru orantılıdır. Birimi joule (J)."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Enerji, iş yapabilme yeteneğidir. Birimi de joule'dür.",
+    "Hareket eden cismin enerjisine kinetik (hareket) enerji denir.",
+    "Kinetik enerji kütle ve hıza bağlıdır: ikisi artarsa enerji de artar."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Fiziksel anlamda iş yapılıyor mu?",
+   "kutular": [
+    {
+     "etiket": "İş yapılıyor",
+     "uyeler": [
+      "Koliyi merdivenden yukarı çıkarmak",
+      "Oyuncak arabayı itip yürütmek",
+      "Süt kutusunu rafa kaldırmak"
+     ]
+    },
+    {
+     "etiket": "İş yapılmıyor",
+     "uyeler": [
+      "Duvarı var gücüyle itmek",
+      "Halteri hareketsiz tutmak",
+      "Çantayla düz yolda yürümek"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Kinetik enerjisi var mı?",
+   "kutular": [
+    {
+     "etiket": "Var: hareket ediyor",
+     "uyeler": [
+      "Denizde ilerleyen tekne",
+      "Bisiklet süren çocuk",
+      "Lunaparkta giden araç"
+     ]
+    },
+    {
+     "etiket": "Yok: hareket etmiyor",
+     "uyeler": [
+      "Rafta duran kitap",
+      "Barajda biriken su"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hem işin hem de enerjinin birimi hangisidir?",
+   "secenekler": [
+    "Newton",
+    "Joule",
+    "Metre"
+   ],
+   "dogru": 1,
+   "ipucu": "İşin birimini hatırla: \"jul\" diye okunur. Enerjinin birimi de onunla aynıdır.",
+   "aciklama": "Kuvvet newton, yer değiştirme metre alınırsa işin birimi joule olur (s. 62). Enerjinin birimi de işin birimi gibi joule'dür (s. 64).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Joule"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Joule"
+    }
+   ]
+  },
+  {
+   "soru": "Tahta blokları üst üste dizen çocuk fiziksel anlamda iş yapar. Bunu yapabilmek için neye ihtiyacı vardır?",
+   "secenekler": [
+    "Enerjiye",
+    "Daha ağır bloklara",
+    "Hiçbir şeye"
+   ],
+   "dogru": 0,
+   "ipucu": "Enerjinin tanımını hatırla: \"iş yapabilme ...\"",
+   "aciklama": "Blokları dizen çocuk fiziksel anlamda iş yapar; bunun için enerjiye ihtiyacı vardır. Enerji, iş yapabilme yeteneğidir (s. 64).",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Enerji"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Fiziksel Anlamda İş"
+    }
+   ]
+  },
+  {
+   "soru": "Ali oyuncak arabayı itiyor; araba itildiği yönde gittikçe hızlanıyor. Hangisi doğrudur?",
+   "secenekler": [
+    "İş yapılır; araba hızlandığı için kinetik enerjisi de artar.",
+    "İş yapılmaz; arabanın kinetik enerjisi azalır.",
+    "İş yapılmaz; çünkü araba hareket etmez."
+   ],
+   "dogru": 0,
+   "ipucu": "Önce iş için iki koşula bak: kuvvet var mı, cisim o yönde gidiyor mu? Sonra hızı artan cismin kinetik enerjisini düşün.",
+   "aciklama": "Oyuncak araba itildiği yönde hareket ettiği için iş yapılır (s. 61–62). Hızı artan cismin kinetik enerjisi artar (s. 67).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Kuvvet Doğrultusunda Hareket"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Hız ve Kinetik Enerji"
+    }
+   ]
+  },
+  {
+   "soru": "Ece sınıfın duvarını var gücüyle itiyor ama duvar kıpırdamıyor. Hangisi doğrudur?",
+   "secenekler": [
+    "Duvar hareket ettiği için iş yapılıyor.",
+    "Duvarın kinetik enerjisi artıyor.",
+    "Kuvvet uygulanıyor ama duvar hareket etmediği için iş yapılmıyor."
+   ],
+   "dogru": 2,
+   "ipucu": "\"Hareket yoksa iş ...\" Kinetik enerji de hareket eden cisimde olur.",
+   "aciklama": "Kuvvet uygulandığı hâlde cisim hareket etmiyorsa iş yapılmaz (s. 62). Kinetik enerji hareketten gelir; hareket etmeyen duvarın kinetik enerjisi yoktur (s. 64).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Kuvvet Var, Hareket Yok"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Kinetik Enerji"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisinde hem fiziksel anlamda iş yapılır hem de cisim kinetik enerjiye sahiptir?",
+   "secenekler": [
+    "Halteri başının üstünde hareketsiz tutan sporcu",
+    "El arabasını iterek ilerleyen bahçıvan",
+    "Duvarı iten öğrenci"
+   ],
+   "dogru": 1,
+   "ipucu": "Hangisinde cisim, itildiği yönde gerçekten hareket ediyor?",
+   "aciklama": "El arabasıyla çiçek taşıyan kişi fiziksel anlamda iş yapar (s. 64). El arabası hareket ettiği için kinetik enerjiye sahiptir (s. 64). Halter ve duvar hareket etmez (s. 62).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Kuvvet Doğrultusunda Hareket"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Kinetik Enerji"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Kuvvet Var, Hareket Yok"
+    }
+   ]
+  },
+  {
+   "soru": "İş ile kuvvet arasında ve kinetik enerji ile hız arasında nasıl bir ilişki vardır?",
+   "secenekler": [
+    "İkisi de ters orantılıdır: biri artınca diğeri azalır.",
+    "Aralarında hiçbir ilişki yoktur.",
+    "İkisi de doğru orantılıdır: biri artınca diğeri de artar."
+   ],
+   "dogru": 2,
+   "ipucu": "\"Daha çok kuvvet, daha çok iş.\" \"Hız artarsa enerji ...\"",
+   "aciklama": "İş, kuvvet ve yer değiştirme ile doğru orantılıdır (s. 62). Kinetik enerji kütle ve hızla doğru orantılıdır (s. 67).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "İşin Büyüklüğü"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Doğru Orantı"
+    }
+   ]
+  }
+ ]
+}

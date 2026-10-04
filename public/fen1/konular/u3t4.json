@@ -1,0 +1,208 @@
+{
+ "id": "u3t4",
+ "tur": "tarama",
+ "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+ "baslik": "Ara Durak 4: Solunum",
+ "sayfalar": "Konu 7–8 · s. 117–128",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Hava burundan girip alveollere kadar uzun bir yol izler. Bu yolu korumak bizim elimizde: temiz hava, spor ve dengeli beslenme solunumu güçlendirir. Kirli hava ve tütün ürünleri ise bu yola zarar verir.",
+ "kapsar": [
+  "u3k7",
+  "u3k8"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k7",
+   "maddeler": [
+    "Havanın yolu: burun → yutak → gırtlak → soluk borusu → bronş → bronşçuk → alveol.",
+    "Burun havayı nemlendirir, ısıtır ve temizler. Ses telleri gırtlaktadır.",
+    "Alveolde oksijen kana, karbon dioksit havaya geçer. Diyafram kasılınca soluk alırız."
+   ]
+  },
+  {
+   "konu": "u3k8",
+   "maddeler": [
+    "Hava kirliliği nefes darlığı ve öksürüğe yol açabilir; kapalı yerleri havalandır.",
+    "Spor akciğerleri ve solunum kaslarını güçlendirir.",
+    "Bağımlılık, istese de bırakamamaktır. Yeşilay ve ALO 171 yardım eder."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Solunuma iyi mi gelir, zarar mı verir?",
+   "kutular": [
+    {
+     "etiket": "İyi gelir",
+     "uyeler": [
+      "Burundan nefes almak",
+      "Sınıfı havalandırmak",
+      "Düzenli spor",
+      "Tozlu yerde maske takmak"
+     ]
+    },
+    {
+     "etiket": "Zarar verir",
+     "uyeler": [
+      "Sigara dumanı",
+      "Yoğun trafik ve fabrika dumanı",
+      "Kapalı ve tozlu oda"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Kim ya da ne yardım eder?",
+   "kutular": [
+    {
+     "etiket": "Bağımlılıkla mücadele eden kuruluş",
+     "uyeler": [
+      "Yeşilay"
+     ]
+    },
+    {
+     "etiket": "Sigarayı bırakma danışma hattı",
+     "uyeler": [
+      "ALO 171"
+     ]
+    },
+    {
+     "etiket": "Yasak alanda tütün ihbarı",
+     "uyeler": [
+      "Yeşil Dedektör"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dışarıda hava kirli ve tozlu. Burnumuz içeri aldığımız havaya ne yapar?",
+   "secenekler": [
+    "Yalnızca soğutur",
+    "Nemlendirir, ısıtır ve temizler",
+    "Oksijeni kana geçirir"
+   ],
+   "dogru": 1,
+   "ipucu": "Burun için üç kelime vardı: nemlendir, ...",
+   "aciklama": "Yoğun trafik ve fabrikalar hava kirliliğine yol açar (s. 123). Burun aldığımız havayı nemlendirir, ısıtır ve temizler; burundaki kıllar tozu tutar (s. 121).",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Burun"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Hava Kirliliği"
+    }
+   ]
+  },
+  {
+   "soru": "Spor yaparken nefes alıp verme neden hızlanır?",
+   "secenekler": [
+    "Akciğerler küçüldüğü için",
+    "Burun tıkandığı için",
+    "Hücrelerin oksijen ihtiyacı arttığı için"
+   ],
+   "dogru": 2,
+   "ipucu": "Spor, heyecan ve korkuda vücudun neye daha çok ihtiyacı olur?",
+   "aciklama": "Spor yapma gibi durumlarda hücrelerin oksijen ihtiyacı artar, soluk alıp verme hızlanır (s. 122). Bu da akciğerleri ve solunum kaslarını güçlendirir (s. 125).",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Soluk Alma ve Verme"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Spor ve Temiz Hava"
+    }
+   ]
+  },
+  {
+   "soru": "Tütün ürünleri solunum sistemine zarar verir. Oksijenin kana geçtiği, korunması gereken hava keseleri hangileridir?",
+   "secenekler": [
+    "Gırtlak",
+    "Alveoller",
+    "Diyafram"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Gaz değişimi ... olur.\" Ağacın yaprakları gibi.",
+   "aciklama": "Bağımlılık yapıcı maddeler solunum sistemi rahatsızlıklarına yol açabilir (s. 126). Alveoller, oksijenin kana, karbon dioksidin havaya geçtiği hava keseleridir (s. 122).",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Akciğerler ve Alveoller"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Bağımlılık"
+    }
+   ]
+  },
+  {
+   "soru": "Dengeli beslenmek ve aşırı kilodan kaçınmak hangi solunum kasının hareketini kolaylaştırır?",
+   "secenekler": [
+    "Gırtlak",
+    "Yutak",
+    "Diyafram"
+   ],
+   "dogru": 2,
+   "ipucu": "Göğüs boşluğunu karın boşluğundan ayıran kası hatırla.",
+   "aciklama": "Yeterli ve dengeli beslenmek diyaframın hareketini kolaylaştırır, soluk alış verişi rahatlar (s. 125). Diyafram solunuma yardımcı bir kastır (s. 121).",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Dengeli Beslenme"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Diyafram"
+    }
+   ]
+  },
+  {
+   "soru": "Sigarayı bırakmak isteyen biri nereden yardım alabilir?",
+   "secenekler": [
+    "ALO 171 Sigara Bırakma Danışma Hattı",
+    "Yeşil Dedektör uygulaması",
+    "Hilâl-i Ahdar"
+   ],
+   "dogru": 0,
+   "ipucu": "\"ALO 171: sigarayı bırak.\" Yeşil Dedektör ihbar içindir, Hilâl-i Ahdar ise Yeşilay'ın eski adıdır.",
+   "aciklama": "Sigarayı bırakmak isteyenler ALO 171 Sigara Bırakma Danışma Hattı'nı arayabilir. Yeşil Dedektör yasak alanda tütün ihbarı içindir; Hilâl-i Ahdar, Yeşilay'ın 1920'deki kuruluş adıdır (s. 126).",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Destek Hatları"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Yeşilay"
+    }
+   ]
+  },
+  {
+   "soru": "Soluk verirken ne olur?",
+   "secenekler": [
+    "Diyafram gevşer, göğüs boşluğu daralır, hava dışarı atılır.",
+    "Diyafram kasılır, akciğerler havayla dolar.",
+    "Hava alveollerden kana geçer."
+   ],
+   "dogru": 0,
+   "ipucu": "\"Kasıl: al, gevşe: ...\"",
+   "aciklama": "Soluk verirken göğüs boşluğu daralır, akciğerlerin hacmi azalır ve hava dışarı atılır; soluk alırken ise diyafram kasılır (s. 122).",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Soluk Alma ve Verme"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Diyafram"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,320 @@
+{
+ "id": "u3t6",
+ "tur": "tarama",
+ "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–10 · s. 89–139",
+ "giris": "Vücudumuzdaki Sistemler ünitesinin sonuna geldin! Dört sistemi ve onları nasıl koruyacağımızı birlikte tekrar edelim. Özetleri oku, kartlara dokun, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Dört sistem bir takım gibi çalışır. Sindirim sistemi besinleri kana geçirir, solunum sistemi oksijeni kana verir. Dolaşım sistemi bunları hücrelere taşır, atıkları geri alır. Boşaltım sistemi atıkları kandan süzüp dışarı atar; karbon dioksidi de akciğerler atar. Spor, dengeli beslenme ve yeterli su hepsine iyi gelir.",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3",
+  "u3k4",
+  "u3k5",
+  "u3k6",
+  "u3k7",
+  "u3k8",
+  "u3k9",
+  "u3k10"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Besinin yolu: ağız → yutak → yemek borusu → mide → ince bağırsak → kalın bağırsak → anüs.",
+    "Sindirim ağızda başlar, ince bağırsakta tamamlanır. Yutak ve yemek borusunda sindirim olmaz."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Dengeli beslen, yeterli su iç, öğün atlama.",
+    "Paketli, hazır ve çok yağlı yiyecekler mideye zarar verebilir."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Dolaşım sistemi = kalp + damarlar + kan.",
+    "Atardamar kanı kalpten götürür, toplardamar kalbe getirir, kılcal damarda madde alışverişi olur."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Kan = plazma (sıvı kısım) + kan hücreleri.",
+    "Alyuvar kana kırmızı rengi verir, oksijen taşır, en çok bulunan hücredir."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Kan bağışı: 18–65 yaş, 50 kg üstü, sağlıklı ve gönüllü kişiler.",
+    "Kan bağışı 4 adım: kayıt → muayene → kan alma → ikram ve dinlenme."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Çocuklar günde 8–10 saat uyumalı.",
+    "Su, meyve, sebze ve sağlıklı yağlar kalbi korur; çok yağlı, tuzlu, hazır gıda damarlara zarar verir."
+   ]
+  },
+  {
+   "konu": "u3k7",
+   "maddeler": [
+    "Havanın yolu: burun → yutak → gırtlak → soluk borusu → bronş → bronşçuk → alveol.",
+    "Burun havayı nemlendirir, ısıtır ve temizler. Ses telleri gırtlaktadır."
+   ]
+  },
+  {
+   "konu": "u3k8",
+   "maddeler": [
+    "Hava kirliliği nefes darlığı ve öksürüğe yol açabilir; kapalı yerleri havalandır.",
+    "Spor akciğerleri ve solunum kaslarını güçlendirir."
+   ]
+  },
+  {
+   "konu": "u3k9",
+   "maddeler": [
+    "Boşaltım sistemi kanı süzer; atıkları ve fazla suyu vücuttan atar.",
+    "İdrarın yolu: böbrek → üreter → mesane → üretra → dışarı."
+   ]
+  },
+  {
+   "konu": "u3k10",
+   "maddeler": [
+    "Yeterli su iç: böbrek taşı ve idrar yolu enfeksiyonu riski azalır.",
+    "Tuz ve protein ağırlıklı beslenme böbrekleri daha çok çalıştırır."
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Hangi sisteme ait?",
+   "kutular": [
+    {
+     "etiket": "Sindirim",
+     "uyeler": [
+      "Mide",
+      "İnce Bağırsak"
+     ]
+    },
+    {
+     "etiket": "Dolaşım",
+     "uyeler": [
+      "Kalp",
+      "Atardamar"
+     ]
+    },
+    {
+     "etiket": "Solunum",
+     "uyeler": [
+      "Soluk Borusu ve Bronşlar",
+      "Diyafram"
+     ]
+    },
+    {
+     "etiket": "Boşaltım",
+     "uyeler": [
+      "Böbrekler",
+      "Mesane (İdrar Kesesi)"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Görevi ne?",
+   "kutular": [
+    {
+     "etiket": "Besinleri kana geçirir",
+     "uyeler": [
+      "İnce Bağırsak"
+     ]
+    },
+    {
+     "etiket": "Oksijeni kana geçirir",
+     "uyeler": [
+      "Akciğerler ve Alveoller"
+     ]
+    },
+    {
+     "etiket": "Kanı pompalar",
+     "uyeler": [
+      "Kalp"
+     ]
+    },
+    {
+     "etiket": "Kanı süzer",
+     "uyeler": [
+      "Böbrekler"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Besinler ince bağırsakta kana geçer. Bu besinleri hücrelere hangi sistem taşır?",
+   "secenekler": [
+    "Solunum sistemi",
+    "Dolaşım sistemi",
+    "Boşaltım sistemi"
+   ],
+   "dogru": 1,
+   "ipucu": "Kalp, damarlar ve kandan oluşan sistemi düşün.",
+   "aciklama": "Villuslar besinlerin kana geçmesini sağlar (s. 95). Dolaşım sistemi besinleri, oksijeni ve hormonları hücrelere taşır (s. 104).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "İnce Bağırsak"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Dolaşım Sistemi"
+    }
+   ]
+  },
+  {
+   "soru": "Alveollerde kana geçen oksijeni hücrelere taşıyan kan hücresi hangisidir?",
+   "secenekler": [
+    "Alyuvar",
+    "Akyuvar",
+    "Kan pulcukları"
+   ],
+   "dogru": 0,
+   "ipucu": "Kana kırmızı rengi veren, en çok bulunan hücre.",
+   "aciklama": "Alveollerde oksijen kana geçer (s. 122). Oksijenin taşınmasında alyuvarlar görevlidir (s. 107).",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Akciğerler ve Alveoller"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Alyuvar"
+    }
+   ]
+  },
+  {
+   "soru": "Hücrelerde oluşan karbon dioksit vücuttan nasıl atılır?",
+   "secenekler": [
+    "Böbreklerde süzülüp idrara karışır.",
+    "İnce bağırsakta emilir.",
+    "Kanla akciğerlere taşınır, soluk verirken dışarı atılır."
+   ],
+   "dogru": 2,
+   "ipucu": "Küçük dolaşımı hatırla: kan akciğerde neyi bırakır, neyi alır?",
+   "aciklama": "Akciğerlere ulaşan kanın karbon dioksit oranı azalır (s. 105). Akciğerler karbon dioksidin kandan uzaklaştırılmasını sağlar (s. 119) ve bu yüzden boşaltıma da yardım eder (s. 133).",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Küçük Kan Dolaşımı"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Solunum Sistemi"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Diğer Yardımcı Organlar"
+    }
+   ]
+  },
+  {
+   "soru": "Hem sindirim sisteminde hem de solunum sisteminde yer alan yapı hangisidir?",
+   "secenekler": [
+    "Mide",
+    "Yutak",
+    "Böbrek"
+   ],
+   "dogru": 1,
+   "ipucu": "Hem besinin hem havanın geçtiği, soluk borusu ile yemek borusunu birleştiren yapı.",
+   "aciklama": "Besin ağızdan yutağa, oradan yemek borusuna geçer (s. 92). Yutak, soluk borusu ile yemek borusunu birleştirir; hava da buradan gırtlağa geçer (s. 121).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Yutak ve Yemek Borusu"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Yutak ve Gırtlak"
+    }
+   ]
+  },
+  {
+   "soru": "Kalın bağırsak sindirim sisteminin bir parçasıdır. Başka hangi sisteme de yardım eder?",
+   "secenekler": [
+    "Boşaltım sistemine",
+    "Solunum sistemine",
+    "Dolaşım sistemine"
+   ],
+   "dogru": 0,
+   "ipucu": "Kalın bağırsak sindirilmeyen besinleri ve fazla suyu ne yapar?",
+   "aciklama": "Kalın bağırsakta su emilir, sindirilmeyen besinler atılır (s. 95). Kalın bağırsak, sindirilmeyen besinleri ve fazla suyu atarak boşaltıma yardım eder (s. 133).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Kalın Bağırsak ve Anüs"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Diğer Yardımcı Organlar"
+    }
+   ]
+  },
+  {
+   "soru": "Kan, hücrelerde oluşan atıkları taşır. Bu atıkları kandan süzen organ hangisidir?",
+   "secenekler": [
+    "Karaciğer",
+    "Kalp",
+    "Böbrekler"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Kanın süzgeci\" hangi organdı?",
+   "aciklama": "Kan, hücrelerde oluşan atık maddeleri ilgili organlara taşır (s. 107). Böbrekler kanı süzerek üre gibi atıkları kandan uzaklaştırır (s. 132).",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Kanın Görevleri"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Böbrekler"
+    }
+   ]
+  },
+  {
+   "soru": "Düzenli spor yapmanın sistemlerimize faydası için hangisi doğrudur?",
+   "secenekler": [
+    "Yalnızca sindirim sistemine iyi gelir.",
+    "Bağırsakları çalıştırır, kanı hızlı dolaştırır, akciğerleri güçlendirir.",
+    "Hiçbir sisteme etkisi yoktur."
+   ],
+   "dogru": 1,
+   "ipucu": "Her sağlık konusunda spor için ne yazıyordu? Sindirim, dolaşım, solunum, boşaltım…",
+   "aciklama": "Spor bağırsakların hareketliliğini artırır (s. 99), kanın hızlı dolaşmasını sağlar (s. 115), akciğerleri güçlendirir (s. 125) ve böbreklerin sağlıklı çalışmasına yardım eder (s. 137).",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Düzenli Egzersiz"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Spor ve Sosyal Faaliyetler"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Spor ve Temiz Hava"
+    },
+    {
+     "konu": "u3k10",
+     "kavram": "Sportif Faaliyetler"
+    }
+   ]
+  }
+ ]
+}

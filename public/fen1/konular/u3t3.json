@@ -1,0 +1,226 @@
+{
+ "id": "u3t3",
+ "tur": "tarama",
+ "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+ "baslik": "Ara Durak 3: Dolaşımı Korumak",
+ "sayfalar": "Konu 5–6 · s. 109–116",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Kan hayatidir. Kendi dolaşım sistemimizi uyku, beslenme ve sporla koruruz. Sağlıklı yetişkinler kan bağışıyla, istekli kişiler organ bağışıyla başkalarının hayatına da destek olur. İkisi de sağlık ve yardımlaşmayla ilgilidir.",
+ "kapsar": [
+  "u3k5",
+  "u3k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Kan bağışı: 18–65 yaş, 50 kg üstü, sağlıklı ve gönüllü kişiler.",
+    "Kan bağışı 4 adım: kayıt → muayene → kan alma → ikram ve dinlenme.",
+    "Organ bağışı gönüllüdür, 18 yaşından büyükler yapar. Bağış toplumsal dayanışmadır."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Çocuklar günde 8–10 saat uyumalı.",
+    "Su, meyve, sebze ve sağlıklı yağlar kalbi korur; çok yağlı, tuzlu, hazır gıda damarlara zarar verir.",
+    "Spor kanın hızlı dolaşmasını sağlar. Uzun ekran süresi dolaşıma zarar verir."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Kan bağışı mı, organ bağışı mı, dolaşım sağlığı mı?",
+   "kutular": [
+    {
+     "etiket": "Kan bağışı",
+     "uyeler": [
+      "Kimler Kan Verebilir?",
+      "Kan Bağışında 4 Adım"
+     ]
+    },
+    {
+     "etiket": "Organ bağışı",
+     "uyeler": [
+      "Organ Nakli",
+      "Organ Bağışının Kuralları"
+     ]
+    },
+    {
+     "etiket": "Dolaşım sağlığı",
+     "uyeler": [
+      "Düzenli Uyku",
+      "Spor ve Sosyal Faaliyetler",
+      "Uzun Ekran Süresi"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Kalbe ve damarlara iyi mi gelir, zarar mı verir?",
+   "kutular": [
+    {
+     "etiket": "İyi gelir",
+     "uyeler": [
+      "Günde 8–10 saat uyku",
+      "Zeytinyağı ve ceviz",
+      "Düzenli yürüyüş"
+     ]
+    },
+    {
+     "etiket": "Zarar verir",
+     "uyeler": [
+      "Çok tuzlu yemek",
+      "Saatlerce ekran başında oturmak",
+      "Sigara dumanı"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi kan bağışçısı olabilir?",
+   "secenekler": [
+    "16 yaşında, 55 kg, sağlıklı",
+    "30 yaşında, 60 kg, sağlıklı",
+    "40 yaşında, 45 kg, sağlıklı"
+   ],
+   "dogru": 1,
+   "ipucu": "Üç şartı kontrol et: yaş 18–65 arası mı, kilo 50'nin üstünde mi, sağlıklı mı?",
+   "aciklama": "18–65 yaş arasında, 50 kilogramın üzerinde ve sağlıklı her birey kan bağışçısı olabilir (s. 111).",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Kimler Kan Verebilir?"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Yaşı 18'den küçük olan elendi mi?",
+     "Kilosu 50'nin altında olan elendi mi? Geriye kim kaldı?"
+    ]
+   }
+  },
+  {
+   "soru": "Doktor, kalp ve damar sağlığı için Mehmet'e ne önerdi?",
+   "secenekler": [
+    "Daha çok yağlı ve tuzlu yemesini",
+    "Ekran başında daha çok dinlenmesini",
+    "Su içmesini, az yağlı, az tuzlu, taze yiyecekler yemesini ve spor yapmasını"
+   ],
+   "dogru": 2,
+   "ipucu": "Mehmet'in sorunu neydi? Çok hareket etmiyor, yağlı ve tuzlu yiyordu. Doktor bunun tersini önerir.",
+   "aciklama": "Mehmet hareketsizdi ve çok yağlı, tuzlu, hazır gıdalar yiyordu. Doktor ona su içmesini, az yağlı, az tuzlu, taze yiyecekler yemesini ve spor yapmasını önerdi (s. 113).",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Yağlı, Tuzlu ve Hazır Gıdalar"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Spor ve Sosyal Faaliyetler"
+    }
+   ]
+  },
+  {
+   "soru": "Kan ve organ bağışının topluma faydası nedir?",
+   "secenekler": [
+    "Bağışçının kilosunu artırır.",
+    "Toplumsal dayanışmayı ve yardımlaşmayı güçlendirir.",
+    "Hastaların kan grubunu değiştirir."
+   ],
+   "dogru": 1,
+   "ipucu": "\"Bağış = ...\"",
+   "aciklama": "Kan ve organ bağışı toplumsal dayanışma ve yardımlaşmanın en güzel örneklerindendir (s. 112).",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Toplumsal Dayanışma"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Kan Bağışı"
+    }
+   ]
+  },
+  {
+   "soru": "Organ bağışında organ hangi hastaya önce verilir?",
+   "secenekler": [
+    "Önce kan ve doku uyumu olan, sonra tıbbi aciliyeti en yüksek hastaya",
+    "En önce başvuran hastaya",
+    "Maddi durumu en iyi olan hastaya"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Önce uyum, sonra ...\" Organlar ayrım yapılmadan verilir.",
+   "aciklama": "Organ bağışında önce kan ve doku uyumuna, sonra tıbbi aciliyete bakılır. Cinsiyet, ırk, din ve maddi durum ayrımı yapılmaz (s. 112).",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Organ Bağışının Kuralları"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Organ Bağışı"
+    }
+   ]
+  },
+  {
+   "soru": "Dolaşım sistemimizin sağlığı için çocukların günde kaç saat uyuması gerekir?",
+   "secenekler": [
+    "5–6 saat",
+    "8–10 saat",
+    "12–14 saat"
+   ],
+   "dogru": 1,
+   "ipucu": "Yetişkinler 7–9 saat uyur. Çocuklar biraz daha fazla.",
+   "aciklama": "Çocukların günde 8–10 saat, yetişkinlerin 7–9 saat uyuması gerekir (s. 115).",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Düzenli Uyku"
+    }
+   ]
+  },
+  {
+   "soru": "Organ nakli nedir?",
+   "secenekler": [
+    "Kan verdikten sonra dinlenmek",
+    "Kanın kalpten akciğere gitmesi",
+    "Görevini yapamayan organın yerine sağlam bir organın ameliyatla yerleştirilmesi"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Bozuk organa sağlam organ.\"",
+   "aciklama": "Görevini yapamayan bir organın yerine sağlam bir organın ameliyatla yerleştirilmesine organ nakli denir (s. 111).",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Organ Nakli"
+    }
+   ]
+  },
+  {
+   "soru": "Kalp ve damar sağlığı için hangisi YANLIŞTIR?",
+   "secenekler": [
+    "Uzun süre ekran başında kalmak kalbe iyi gelir.",
+    "Spor yapmak kanın hızlı dolaşmasını sağlar.",
+    "Zeytinyağı sağlıklı bir yağdır."
+   ],
+   "dogru": 0,
+   "ipucu": "Hareketsizlik dolaşıma iyi mi gelir? \"Ekranı kısalt, ...\"",
+   "aciklama": "Uzun süre ekran başında kalmak hareketsizliğe neden olur ve dolaşım sistemini olumsuz etkiler. Spor kanın hızlı dolaşmasını sağlar; zeytinyağı sağlıklı yağdır (s. 115).",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Uzun Ekran Süresi"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Spor ve Sosyal Faaliyetler"
+    }
+   ]
+  }
+ ]
+}

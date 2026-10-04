@@ -1,0 +1,265 @@
+{
+ "id": "u2t3",
+ "tur": "tarama",
+ "unite": "2. Ünite: Kuvvet ve Enerjiyi Keşfedelim",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–4 · s. 59–80",
+ "giris": "Kuvvet ve Enerji ünitesinin sonuna geldin! Dört konunun en önemli bilgilerini birlikte tekrar edelim. Özetleri oku, kartlara dokun, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Bu ünitede bir zincir kurduk. Kuvvet uygulayıp cismi hareket ettirince iş yaparız. İş yapabilmek için enerji gerekir. Enerji iki şekilde karşımıza çıktı: hareketten gelen kinetik enerji ve durumdan gelen potansiyel enerji. Bu ikisi birbirine dönüşür ve enerji asla yok olmaz.",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3",
+  "u2k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "İş için iki koşul: cisme kuvvet uygulanmalı ve cisim bu kuvvetin doğrultusunda yer değiştirmeli.",
+    "Kuvvet var ama hareket yoksa ya da hareket kuvvetle aynı doğrultuda değilse iş yapılmaz.",
+    "İş, kuvvet ve yer değiştirme ile doğru orantılıdır. Birimi joule (J)."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Enerji, iş yapabilme yeteneğidir. Birimi de joule'dür.",
+    "Hareket eden cismin enerjisine kinetik (hareket) enerji denir.",
+    "Kinetik enerji kütle ve hıza bağlıdır: ikisi artarsa enerji de artar."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Cismin durumundan dolayı depoladığı enerjiye potansiyel enerji denir.",
+    "Çekim potansiyel enerjisi yükseklikten gelir; ağırlığa (kütleye) ve yüksekliğe bağlıdır.",
+    "Esnek cisim (paket lastiği, sünger, yay) gerilince ya da sıkışınca esneklik potansiyel enerjisi depolar."
+   ]
+  },
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "İnerken potansiyel enerji azalır, kinetik enerji artar. Çıkarken tersi olur.",
+    "Enerji yoktan var olmaz, yok olmaz; başka türe dönüşür (enerjinin korunumu).",
+    "Sürtünme kinetik enerjiyi ısı ve sese dönüştürür; cisim yavaşlar ve durur."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Neye bağlıdır?",
+   "kutular": [
+    {
+     "etiket": "Kuvvet ve yer değiştirmeye",
+     "uyeler": [
+      "İş"
+     ]
+    },
+    {
+     "etiket": "Kütle ve hıza",
+     "uyeler": [
+      "Kinetik enerji"
+     ]
+    },
+    {
+     "etiket": "Ağırlık ve yüksekliğe",
+     "uyeler": [
+      "Çekim potansiyel enerjisi"
+     ]
+    },
+    {
+     "etiket": "Gerilme ya da sıkışmaya",
+     "uyeler": [
+      "Esneklik potansiyel enerjisi"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Hangi enerjiye sahip?",
+   "kutular": [
+    {
+     "etiket": "Kinetik enerji",
+     "uyeler": [
+      "Denizde ilerleyen tekne",
+      "Bisiklet süren çocuk"
+     ]
+    },
+    {
+     "etiket": "Çekim potansiyel enerjisi",
+     "uyeler": [
+      "Barajda biriken su",
+      "Dalda duran elma"
+     ]
+    },
+    {
+     "etiket": "Esneklik potansiyel enerjisi",
+     "uyeler": [
+      "Gerilmiş paket lastiği",
+      "Sıkılmış sünger"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "İş, kinetik enerji ve potansiyel enerjinin ortak birimi hangisidir?",
+   "secenekler": [
+    "Joule",
+    "Newton",
+    "Metre"
+   ],
+   "dogru": 0,
+   "ipucu": "Newton kuvvetin, metre yolun birimidir. Geriye ne kaldı?",
+   "aciklama": "İşin birimi joule'dür (s. 62). Enerjinin birimi de işin birimi gibi joule'dür (s. 64).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Joule"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Joule"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Kinetik ve Potansiyel Enerji"
+    }
+   ]
+  },
+  {
+   "soru": "Ahmet kitap kolisini merdivenlerden yukarı çıkardı. Hangisi doğrudur?",
+   "secenekler": [
+    "İş yapılmadı; koli yalnızca taşındı.",
+    "İş yapıldı; kolinin çekim potansiyel enerjisi arttı.",
+    "İş yapıldı; ama kolinin enerjisi hiç değişmedi."
+   ],
+   "dogru": 1,
+   "ipucu": "Kuvvet yukarı, hareket de yukarı mı? Koli yükseğe çıkınca hangi enerjisi artar?",
+   "aciklama": "Koliye yukarı kuvvet uygulanır ve koli yukarı yer değiştirir; iş yapılır (s. 63). Yükseklik arttıkça çekim potansiyel enerjisi artar (s. 68).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Kuvvet Doğrultusunda Hareket"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Yükseklik ve Çekim Potansiyel Enerjisi"
+    }
+   ]
+  },
+  {
+   "soru": "Halteri başının üstünde hareketsiz tutan sporcu için hangisi doğrudur?",
+   "secenekler": [
+    "İş yapıyor; halterin kinetik enerjisi artıyor.",
+    "İş yapmıyor; halterin hiç enerjisi yok.",
+    "İş yapmıyor; ama yüksekte duran halterin çekim potansiyel enerjisi var."
+   ],
+   "dogru": 2,
+   "ipucu": "Halter hareket ediyor mu? Hareket etmeyen ama yüksekte duran cismin hangi enerjisi olur?",
+   "aciklama": "Halter hareket etmediği için iş yapılmaz (s. 62). Yüksekte duran cisim, yüksekliğinden dolayı çekim potansiyel enerjisine sahiptir (s. 68).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Kuvvet Var, Hareket Yok"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Çekim Potansiyel Enerjisi"
+    }
+   ]
+  },
+  {
+   "soru": "Kaykaycı rampanın en alt noktasında en hızlıdır. Bu noktada hangi enerjisi en fazladır?",
+   "secenekler": [
+    "Kinetik enerji",
+    "Çekim potansiyel enerjisi",
+    "Esneklik potansiyel enerjisi"
+   ],
+   "dogru": 0,
+   "ipucu": "Hızı en fazla olan cismin hangi enerjisi en fazladır? \"Dipte ...\"",
+   "aciklama": "Aşağı inerken potansiyel enerji kinetik enerjiye dönüşür; en alt noktada kinetik enerji en fazladır (s. 76). Hız artınca kinetik enerji artar (s. 67).",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Enerji Dönüşümü"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Hız ve Kinetik Enerji"
+    }
+   ]
+  },
+  {
+   "soru": "Bir kova suyu 1 metre yerine 2 metre yükseğe kaldırırsak ne olur?",
+   "secenekler": [
+    "Daha az iş yapılır, potansiyel enerji azalır.",
+    "Daha çok iş yapılır, çekim potansiyel enerjisi artar.",
+    "Yapılan iş değişmez."
+   ],
+   "dogru": 1,
+   "ipucu": "İş yer değiştirmeyle doğru orantılıydı. Yükseklik artınca çekim potansiyel enerjisi ne olur?",
+   "aciklama": "Kuvvet aynıyken yer değiştirme artarsa iş artar (s. 62). Yükseklik arttıkça çekim potansiyel enerjisi artar (s. 68).",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "İşin Büyüklüğü"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Yükseklik ve Çekim Potansiyel Enerjisi"
+    }
+   ]
+  },
+  {
+   "soru": "Pedal çevirmeyi bırakan çocuğun bisikleti bir süre sonra duruyor. Hangisi doğrudur?",
+   "secenekler": [
+    "Bisikletin kinetik enerjisi yok oldu.",
+    "Bisikletin kinetik enerjisi arttı.",
+    "Kinetik enerji sürtünmeyle ısı ve sese dönüştü."
+   ],
+   "dogru": 2,
+   "ipucu": "Enerjinin korunumunu hatırla: enerji yok olmaz, ...",
+   "aciklama": "Bisiklet süren çocuk kinetik enerjiye sahiptir (s. 64). Sürtünme kinetik enerjiyi ısı ve sese dönüştürür, cisim yavaşlar ve durur; enerji yok olmaz (s. 76).",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Kinetik Enerji"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Sürtünme ve Enerji"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Enerjinin Korunumu"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisinde enerji depolanmıştır ama cisim hareket etmemektedir?",
+   "secenekler": [
+    "Sıkıştırılmış yay",
+    "Denizde ilerleyen tekne",
+    "Düşmekte olan elma"
+   ],
+   "dogru": 0,
+   "ipucu": "Hareket eden cisimlerin kinetik enerjisi vardır. Hangisi durduğu hâlde enerji saklıyor?",
+   "aciklama": "Sıkıştırılan yay esneklik potansiyel enerjisi depolar (s. 68). İlerleyen tekne ve düşen elma hareket ettiği için kinetik enerjiye sahiptir (s. 64, 76).",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Esneklik Potansiyel Enerjisi"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Kinetik ve Potansiyel Enerji"
+    }
+   ]
+  }
+ ]
+}

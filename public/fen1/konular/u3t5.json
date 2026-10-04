@@ -1,0 +1,214 @@
+{
+ "id": "u3t5",
+ "tur": "tarama",
+ "unite": "3. Ünite: Vücudumuzdaki Sistemler",
+ "baslik": "Ara Durak 5: Boşaltım",
+ "sayfalar": "Konu 9–10 · s. 129–139",
+ "giris": "İki konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Böbrekler kanı süzen bir süzgeç gibidir; atıklar idrar olur ve dışarı atılır. Deri, akciğerler ve kalın bağırsak da bu işe yardım eder. Yeterli su, dengeli beslenme ve spor böbreklerin rahat çalışmasını sağlar.",
+ "kapsar": [
+  "u3k9",
+  "u3k10"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k9",
+   "maddeler": [
+    "Boşaltım sistemi kanı süzer; atıkları ve fazla suyu vücuttan atar.",
+    "İdrarın yolu: böbrek → üreter → mesane → üretra → dışarı.",
+    "Yardımcılar: deri (ter), akciğerler (karbon dioksit), kalın bağırsak, karaciğer."
+   ]
+  },
+  {
+   "konu": "u3k10",
+   "maddeler": [
+    "Yeterli su iç: böbrek taşı ve idrar yolu enfeksiyonu riski azalır.",
+    "Tuz ve protein ağırlıklı beslenme böbrekleri daha çok çalıştırır.",
+    "Spor, sosyal faaliyet ve kişisel hijyen boşaltım sistemini korur; uzun ekran süresi zarar verir."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Hangi organ neyi vücuttan atar?",
+   "kutular": [
+    {
+     "etiket": "İdrar",
+     "uyeler": [
+      "Böbrekler"
+     ]
+    },
+    {
+     "etiket": "Ter (su ve tuz)",
+     "uyeler": [
+      "Deri"
+     ]
+    },
+    {
+     "etiket": "Karbon dioksit ve su buharı",
+     "uyeler": [
+      "Akciğerler"
+     ]
+    },
+    {
+     "etiket": "Sindirilmeyen besinler",
+     "uyeler": [
+      "Kalın bağırsak"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Böbreklere iyi mi gelir, zarar mı verir?",
+   "kutular": [
+    {
+     "etiket": "İyi gelir",
+     "uyeler": [
+      "Gün içinde yeterli su",
+      "Düzenli spor",
+      "Kişisel hijyen",
+      "Arkadaşlarla sosyal faaliyet"
+     ]
+    },
+    {
+     "etiket": "Zarar verir",
+     "uyeler": [
+      "Çok tuzlu yemek",
+      "Saatlerce ekran başında oturmak",
+      "Çok az su içmek"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Böbreklerde kandan süzülen atıklar idrarı oluşturur. Yeterli su içmek böbreklerde hangi sorunu azaltır?",
+   "secenekler": [
+    "Böbrek taşı oluşumunu",
+    "Ses tellerinin kısılmasını",
+    "Kanın pıhtılaşmasını"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Su, böbrek taşına ...\"",
+   "aciklama": "Böbreklerde kandan süzülen atıklar idrarı oluşturur (s. 132). Yeterli su içmek böbrek taşı oluşumu ve idrar yolu enfeksiyonlarını azaltır (s. 137).",
+   "kaynak": [
+    {
+     "konu": "u3k10",
+     "kavram": "Yeterli Su İçmek"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Böbrekler"
+    }
+   ]
+  },
+  {
+   "soru": "İdrar yolu rahatsızlıkları yaşamamak için hangisi önemlidir?",
+   "secenekler": [
+    "Az su içmek",
+    "Kişisel hijyene özen göstermek",
+    "Uzun süre hareketsiz oturmak"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Temizlik idrar yolunu ...\"",
+   "aciklama": "İdrar yolu rahatsızlıkları yaşamamak için kişisel hijyene dikkat etmeliyiz (s. 137). İdrar, üretra (idrar kanalı) ile vücuttan atılır (s. 132).",
+   "kaynak": [
+    {
+     "konu": "u3k10",
+     "kavram": "Kişisel Hijyen"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Üretra (İdrar Kanalı)"
+    }
+   ]
+  },
+  {
+   "soru": "Çok tuzlu yiyecekler yiyen birinin hangi organları daha çok çalışmak zorunda kalır?",
+   "secenekler": [
+    "Akciğerleri",
+    "Mesanesi",
+    "Böbrekleri"
+   ],
+   "dogru": 2,
+   "ipucu": "Fazla tuzu kandan süzen organ hangisidir?",
+   "aciklama": "Böbrekler kandaki fazla su ve tuzu süzer (s. 132). Tuz ağırlıklı beslenmek böbreklerin daha çok çalışmasına neden olur (s. 137).",
+   "kaynak": [
+    {
+     "konu": "u3k10",
+     "kavram": "Dengeli Beslenme"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Böbrekler"
+    }
+   ]
+  },
+  {
+   "soru": "Spor yapınca çok terleriz. Terleme ile vücuttan ne atılır?",
+   "secenekler": [
+    "Su ve tuzun bir kısmı",
+    "İdrar",
+    "Karbon dioksit"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Ter = ... + ...\"",
+   "aciklama": "Deri boşaltıma yardımcı bir organdır; vücuttaki su ve tuzun bir kısmı terleme yoluyla atılır (s. 133).",
+   "kaynak": [
+    {
+     "konu": "u3k9",
+     "kavram": "Deri"
+    },
+    {
+     "konu": "u3k10",
+     "kavram": "Sportif Faaliyetler"
+    }
+   ]
+  },
+  {
+   "soru": "Düzenli egzersiz böbreklere nasıl yardım eder?",
+   "secenekler": [
+    "İdrarı mesanede tutar.",
+    "Kan dolaşımını hızlandırır, böbrekler daha sağlıklı çalışır.",
+    "Böbreklerin çalışmasını durdurur."
+   ],
+   "dogru": 1,
+   "ipucu": "Spor kalp atışını ve kan dolaşımını ne yapar? Böbrekler kanı süzer.",
+   "aciklama": "Düzenli egzersiz kan dolaşımını ve kalp atışını hızlandırır; böylece böbrekler daha sağlıklı çalışır (s. 137).",
+   "kaynak": [
+    {
+     "konu": "u3k10",
+     "kavram": "Sportif Faaliyetler"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Böbrekler"
+    }
+   ]
+  },
+  {
+   "soru": "Böbreklerde oluşan idrar sırasıyla hangi yollardan geçerek dışarı atılır?",
+   "secenekler": [
+    "Üretra → mesane → üreter",
+    "Mesane → üreter → üretra",
+    "Üreter → mesane → üretra"
+   ],
+   "dogru": 2,
+   "ipucu": "Önce boru, sonra kese, en son kanal.",
+   "aciklama": "İdrar böbreklerde oluşur, üreterle mesaneye taşınır, mesanede depolanır, üretra ile dışarı atılır (s. 132).",
+   "kaynak": [
+    {
+     "konu": "u3k9",
+     "kavram": "Üreter (İdrar Borusu)"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Mesane (İdrar Kesesi)"
+    }
+   ]
+  }
+ ]
+}
