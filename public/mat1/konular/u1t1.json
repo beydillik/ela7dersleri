@@ -75,7 +75,15 @@
      "konu": "u1k1",
      "kavram": "İki Sayı Arasındaki Uzaklık"
     }
-   ]
+   ],
+   "yardim": {
+    "adimlar": [
+     "Deniz seviyesi 0. Dalgıç altında (−12), martı üstünde (+5).",
+     "Dalgıçtan deniz seviyesine kaç metre?",
+     "Deniz seviyesinden martıya kaç metre?",
+     "İki parçayı topla."
+    ]
+   }
   },
   {
    "soru": "Mutlak değeri [[1/2]] olan negatif sayının yerine dokun.",
@@ -159,7 +167,14 @@
      "konu": "u1k1",
      "kavram": "İki Sayı Arasındaki Uzaklık"
     }
-   ]
+   ],
+   "yardim": {
+    "adimlar": [
+     "Mutlak değeri 3 olan sayılar: 3 ve −3. Mutlak değeri 2 olanlar: 2 ve −2.",
+     "En uzak olmaları için biri 0'ın solunda, biri sağında olmalı: −3 ile +2 gibi.",
+     "−3'ten 0'a kaç birim? 0'dan +2'ye kaç birim? Topla."
+    ]
+   }
   }
  ]
 }

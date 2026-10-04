@@ -230,7 +230,14 @@
     "cevap": "1",
     "ipucu": "199 ile 200 arasında kaç gram var?",
     "aciklama": "200 − 199 = 1. Paket 1 gram eksik; hata miktarı 1 gram. (s. 35)",
-    "birim": "g"
+    "birim": "g",
+    "yardim": {
+     "adimlar": [
+      "Başlangıç noktası 200 gram.",
+      "199'dan 200'e kaç gram var? Say.",
+      "Eksik ya da fazla olması fark etmez; sadece kaç gram uzak?"
+     ]
+    }
    }
   },
   {
@@ -365,6 +372,13 @@
        "etiket": "−7",
        "renk": "#2364c7"
       }
+     ]
+    },
+    "yardim": {
+     "adimlar": [
+      "|−7|, −7'nin 0'a uzaklığı demek.",
+      "Sayı doğrusunda −7'den 0'a kaç aralık var? Say.",
+      "Uzaklık eksi olmaz."
      ]
     }
    }
@@ -565,7 +579,15 @@
    "soru": "|−8| kaçtır?",
    "cevap": "8",
    "ipucu": "−8, 0'dan kaç birim uzakta?",
-   "aciklama": "−8'in 0'a uzaklığı 8 birimdir: |−8| = 8. (s. 37)"
+   "aciklama": "−8'in 0'a uzaklığı 8 birimdir: |−8| = 8. (s. 37)",
+   "kavram": "Mutlak Değer",
+   "yardim": {
+    "adimlar": [
+     "|−8|, −8'in 0'a uzaklığıdır.",
+     "−8 ile 0 arasındaki aralıkları say. Ya da kısa yol: işareti sil.",
+     "Uzaklık eksi olmaz; cevabın önüne − koyma."
+    ]
+   }
   },
   {
    "soru": "Kahve fabrikasında hedef 200 gram. Hangi paketin hata miktarı daha büyüktür?",
@@ -576,7 +598,8 @@
    ],
    "dogru": 1,
    "ipucu": "Her paketin 200'e kaç gram uzak olduğunu bul: 200 − 197 = ?, 205 − 200 = ?",
-   "aciklama": "197 gram → 3 gram eksik, hata 3 g. 205 gram → 5 gram fazla, hata 5 g. 5 > 3. (s. 35)"
+   "aciklama": "197 gram → 3 gram eksik, hata 3 g. 205 gram → 5 gram fazla, hata 5 g. 5 > 3. (s. 35)",
+   "kavram": "Eksik ya da Fazla"
   },
   {
    "soru": "Mutlak değeri 3 olan pozitif sayının yerine dokun.",
@@ -586,21 +609,38 @@
     "max": 5
    },
    "ipucu": "0'a 3 birim uzakta iki sayı var. Pozitif olan 0'ın sağındadır.",
-   "aciklama": "|+3| = 3 ve +3 pozitiftir. (s. 37)"
+   "aciklama": "|+3| = 3 ve +3 pozitiftir. (s. 37)",
+   "kavram": "Mutlak Değeri Verilen Sayı"
   },
   {
    "soru": "Bir sondaj makinesi yer yüzeyinin 8,6 metre altında suya ulaştı. Makinenin konumunu yaz.",
    "cevap": "-8,6",
    "ipucu": "\"Altında\" eksi demek. Önce − tuşuna, sonra 8, virgül ve 6'ya dokun.",
    "aciklama": "Yüzeyin 8,6 m altı: −8,6 m. (s. 38)",
-   "birim": "m"
+   "birim": "m",
+   "yardim": {
+    "hatirla": "Başlangıç (0) yer yüzeyidir. Yüzeyin altı eksi, üstü artı ile yazılır.",
+    "adimlar": [
+     "Başlangıç (0): yer yüzeyi.",
+     "Makine aşağı indi. \"Altında\" hangi işaret?",
+     "Önce − tuşuna dokun, sonra 8, virgül ve 6."
+    ]
+   }
   },
   {
    "soru": "Sondaj makinesinin konumu −8,6 m. Bu konumun yer yüzeyine uzaklığı kaç metredir?",
    "cevap": "8,6",
    "ipucu": "Uzaklık mutlak değerdir: |−8,6| = ? Uzaklık eksi olur mu?",
    "aciklama": "|−8,6| = 8,6. Makine yüzeye 8,6 m uzaktadır. (s. 38)",
-   "birim": "m"
+   "birim": "m",
+   "kavram": "Mutlak Değer Eksi Olmaz",
+   "yardim": {
+    "adimlar": [
+     "Uzaklık mutlak değerdir: |−8,6|.",
+     "İşareti sil, sayı kalır.",
+     "Virgül tuşunu kullanmayı unutma."
+    ]
+   }
   },
   {
    "soru": "Mutlak değeri 5 olan sayılar hangileridir?",
@@ -611,21 +651,38 @@
    ],
    "dogru": 2,
    "ipucu": "0'a 5 birim uzaklıkta kaç sayı var? Sağa ve sola bak.",
-   "aciklama": "0'ın sağında 5, solunda −5 var. İkisinin de mutlak değeri 5'tir. (s. 38)"
+   "aciklama": "0'ın sağında 5, solunda −5 var. İkisinin de mutlak değeri 5'tir. (s. 38)",
+   "kavram": "Mutlak Değeri Verilen Sayı"
   },
   {
    "soru": "|[[-3/4]]| kaçtır? Kesir olarak yaz.",
    "cevap": "3/4",
    "ipucu": "İşareti sil, sayı kalır. Kesir çizgisi için / tuşunu kullan.",
    "aciklama": "|[[-3/4]]| = [[3/4]]. Mutlak değer hiç eksi olmaz. (s. 37–38)",
-   "kesir": true
+   "kesir": true,
+   "kavram": "Eksi de Artı da Aynı",
+   "yardim": {
+    "adimlar": [
+     "Mutlak değer hiç eksi olmaz.",
+     "İşareti silince geriye hangi kesir kalıyor?",
+     "Kesri yazmak için önce pay, sonra / tuşu, sonra payda."
+    ]
+   }
   },
   {
    "soru": "UME'ye göre saat 14.00. Ömer'in kol saati 14.05'i gösteriyor. Kol saati kaç dakika hatalı?",
    "cevap": "5",
    "ipucu": "Saat 14.00'ten kaç dakika ileride?",
    "aciklama": "14.05 − 14.00 = 5. Kol saati 5 dakika ileride; hata 5 dakikadır. (s. 36)",
-   "birim": "dakika"
+   "birim": "dakika",
+   "kavram": "Eksik ya da Fazla",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç noktası doğru saat: 14.00.",
+     "Kol saati 14.05'i gösteriyor. 14.00'ten 14.05'e kaç dakika var?",
+     "İleri ya da geri olması fark etmez; sadece kaç dakika?"
+    ]
+   }
   },
   {
    "soru": "0'a 4 birim uzaklıktaki negatif sayıya dokun.",
@@ -635,7 +692,8 @@
     "max": 6
    },
    "ipucu": "0'dan sola doğru 4 aralık say.",
-   "aciklama": "0'ın 4 birim solunda −4 vardır: |−4| = 4. (s. 37)"
+   "aciklama": "0'ın 4 birim solunda −4 vardır: |−4| = 4. (s. 37)",
+   "kavram": "Mutlak Değeri Verilen Sayı"
   },
   {
    "soru": "Mutlak değeri 3'ten küçük olan tam sayılar hangileridir?",
@@ -646,7 +704,8 @@
    ],
    "dogru": 1,
    "ipucu": "0'a uzaklığı 0, 1 ya da 2 olan sayıları düşün. Eksi sayıları unutma. 3 ve −3'ün mutlak değeri 3'ten küçük mü?",
-   "aciklama": "|−2| = 2, |−1| = 1, |0| = 0, |1| = 1, |2| = 2. 3 ve −3'ün mutlak değeri 3'tür, 3'ten küçük değildir. (s. 38)"
+   "aciklama": "|−2| = 2, |−1| = 1, |0| = 0, |1| = 1, |2| = 2. 3 ve −3'ün mutlak değeri 3'tür, 3'ten küçük değildir. (s. 38)",
+   "kavram": "Mutlak Değer"
   },
   {
    "soru": "AVM'nin zemin katından Ahmet 2 kat yukarı, Ece 2 kat aşağı gitti. Hangisi doğrudur?",
@@ -657,14 +716,23 @@
    ],
    "dogru": 0,
    "ipucu": "İkisi de zeminden kaç kat uzaklaştı? Uzaklık eksi olur mu?",
-   "aciklama": "İkisi de zemin kata 2 kat uzaktadır. Uzaklık eksi olmaz. (s. 37)"
+   "aciklama": "İkisi de zemin kata 2 kat uzaktadır. Uzaklık eksi olmaz. (s. 37)",
+   "kavram": "Mutlak Değer"
   },
   {
    "soru": "Bir çay fabrikasında hedef 500 gram. Bir paket 496 gram geldi. Hata miktarı kaç gramdır?",
    "cevap": "4",
    "ipucu": "Başlangıç noktası 500 gram. 496 ile 500 arasında kaç gram var?",
    "aciklama": "500 − 496 = 4. Hata miktarı 4 gramdır. (s. 36)",
-   "birim": "g"
+   "birim": "g",
+   "kavram": "Başlangıç Noktası",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç noktası: hedef 500 gram.",
+     "496'dan 500'e kaç gram var? 497, 498, 499, 500 diye say.",
+     "Eksik olması fark etmez; sadece kaç gram uzak?"
+    ]
+   }
   }
  ]
 }

@@ -24,6 +24,7 @@
     okuma: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3z"/><path d="M21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg>',
     yavas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16h13a3 3 0 0 0 3-3v-1"/><path d="M5 16a6 6 0 0 1 12 0"/><circle cx="20" cy="10" r="2"/><path d="M7 16v2M15 16v2"/></svg>',
     ses: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10v4h4l5 4V6L8 10z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></svg>',
+    ampul: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.2h5c0-.9.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg>',
     durak: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4"/><path d="M6 4h11l-2.5 4L17 12H6"/></svg>'
   };
 
@@ -143,18 +144,54 @@
       : `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}<div class="opts">${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${fx(esc(String(s).replace(EN_RE, "$1")))}</button>`).join("")}</div>`;
     return `<div class="q q-${kind}">
       <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${rx(o.soru)}</span></p>
+      <div class="yardim-satir"><button class="yardim-btn" type="button" data-yardim hidden>${ICON.ampul}İpucu</button></div><div class="yardim" hidden></div>
       ${o.dinle ? `<div class="q-listen"><button class="say-en big" data-say-en="${esc(o.dinle)}" ${tts.en ? "" : "hidden"}>${ICON.ses}<span>Dinle</span></button><button class="say-en slow" data-say-en="${esc(o.dinle)}" data-slow ${tts.en ? "" : "hidden"}>${ICON.yavas}<span>Yavaş</span></button></div>` : ""}
       ${body}
       <div class="fb" hidden></div></div>`;
   }
+  // ---------- İpucu (soru cevaplanmadan önce isteğe bağlı yardım) ----------
+  // Sırayla açılır: 1) Hatırla: bağlı kavramın kısa anlatımı (o.yardim.hatirla ya da opts.kavram),
+  // 2) çözüme yönlendiren adımlar (o.yardim.adimlar; yoksa o.ipucu). Cevabı söylemez.
+  // İpucu kullanılırsa doğru cevap "ipucuyla doğru" (2) sayılır. İlk yanlışta açılmamış sıradaki adım kendiliğinden açılır.
+  function wireYardim(el, o, opts, state) {
+    const btn = $("[data-yardim]", el), box = $(".yardim", el);
+    const none = { used: false, yanlis: () => false, bitti() {} };
+    if (!btn || !box) return none;
+    const kv = opts.kavram, y = o.yardim || {};
+    const hat = y.hatirla ? { metin: y.hatirla } : kv && (kv.aciklama || kv.akilda) ? { ad: kv.ad, metin: kv.aciklama || "", akilda: kv.akilda, svg: kv.svg } : null;
+    const adim = y.adimlar && y.adimlar.length ? y.adimlar : o.ipucu ? [o.ipucu] : [];
+    const parca = [...(hat ? [{ t: "hat", ...hat }] : []), ...adim.map((m, i) => ({ t: "adim", m, i, n: adim.length }))];
+    if (!parca.length) return none;
+    state.yardim = state.yardim || 0;
+    const ciz = () => {
+      box.hidden = !state.yardim;
+      box.innerHTML = `<div class="y-kicker">${ICON.ampul}İpucu</div>` + parca.slice(0, state.yardim).map(p => p.t === "hat"
+        ? `<div class="y-hat">${p.svg || ""}<div><b>Hatırla${p.ad ? ": " + (isEn() ? `<span lang="en">${esc(p.ad)}</span>` : esc(p.ad)) : ""}</b>${p.metin ? `<p>${rx(p.metin)}</p>` : ""}${p.akilda ? `<span class="key"><b>Akılda kalsın</b>${rx(p.akilda)}</span>` : ""}</div></div>`
+        : `<div class="y-adim">${p.n > 1 ? `<span class="y-no">${p.i + 1}</span>` : ""}<p>${rx(p.m)}</p></div>`).join("")
+        + (state.yardim ? `<div class="row">${listenBtn(parca.slice(0, state.yardim).map(p => p.t === "hat" ? `${p.ad || ""}. ${p.metin} ${p.akilda || ""}` : p.m).join(". "))}</div>` : "");
+      btn.hidden = !!state.bitti || state.yardim >= parca.length;
+      btn.innerHTML = `${ICON.ampul}${state.yardim ? "Bir ipucu daha" : "İpucu"}`;
+    };
+    btn.onclick = () => { state.yardim++; ciz(); box.scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+    ciz();
+    return {
+      get used() { return state.yardim > 0; },
+      // "yeni": panelde yeni bir adım açıldı; "hepsi": ipuçlarının hepsi zaten açık; false: ipucu hiç kullanılmadı
+      yanlis() { if (!state.yardim) return false; if (state.yardim < parca.length) { state.yardim++; ciz(); return "yeni"; } return "hepsi"; },
+      bitti() { state.bitti = true; btn.hidden = true; }
+    };
+  }
+  const yanlisMetin = (o, yr) => yr === "yeni" ? "İpucuna yeni bir adım ekledim. Ona bak ve tekrar dene."
+    : yr === "hepsi" ? "İpucunu bir kez daha, adım adım oku. Sonra tekrar dene." : rx(o.ipucu || "Bilgiyi bir kez daha düşün.");
+
   function wireQuestion(el, o, opts = {}) {
     const kind = qKind(o);
     if (kind !== "secim") return wireMathQuestion(el, o, opts, kind);
     let tries = 0, finished = false, picked = null;
     const state = opts.state || { wrong: [], result: undefined };
-    const fb = $(".fb", el);
+    const fb = $(".fb", el), yr = wireYardim(el, o, opts, state);
     const finish = (result, silent) => {
-      finished = true; state.result = result;
+      finished = true; state.result = result; yr.bitti();
       $$(".opt", el).forEach((b, j) => { b.disabled = true; if (j === o.dogru) b.classList.add("right"); });
       fb.hidden = false;
       if (result === 0) {
@@ -162,18 +199,18 @@
         fb.innerHTML = `<div><b>${pick(PRAISE.shown)}</b></div><div>${rx(o.aciklama)}</div>`;
       } else {
         fb.className = "fb ok";
-        fb.innerHTML = `<div><b>${pick(result === 1 ? PRAISE.first : PRAISE.second)}</b></div><div>${rx(o.aciklama)}</div>`;
+        fb.innerHTML = `<div><b>${result === 1 ? pick(PRAISE.first) : tries === 0 ? "Doğru! İpucunu iyi kullandın." : pick(PRAISE.second)}</b></div><div>${rx(o.aciklama)}</div>`;
       }
       if (!silent) opts.onDone && opts.onDone(result);
     };
     const answer = j => {
       if (finished) return;
-      if (j === o.dogru) return finish(tries === 0 ? 1 : 2);
+      if (j === o.dogru) return finish(tries === 0 && !yr.used ? 1 : 2);
       tries++; if (!state.wrong.includes(j)) state.wrong.push(j);
       const b = $$(".opt", el)[j]; b.classList.add("wrong"); b.disabled = true;
       if (tries >= 2) return finish(0);
       fb.hidden = false; fb.className = "fb hint";
-      fb.innerHTML = `<div><b>Henüz değil.</b> ${rx(o.ipucu || "Bilgiyi bir kez daha düşün.")}</div>` +
+      fb.innerHTML = `<div><b>Henüz değil.</b> ${yanlisMetin(o, yr.yanlis())}</div>` +
         (opts.backToInfo ? `<div><button class="btn ghost" data-back>Bilgi kartına bak</button></div>` : "");
       const bk = $("[data-back]", fb); if (bk) bk.onclick = opts.backToInfo;
     };
@@ -185,7 +222,7 @@
         let rv = $(".reveal", el);
         if (!rv) { rv = document.createElement("div"); rv.className = "row reveal"; rv.innerHTML = `<button class="btn primary">Cevabı göster</button>`; el.appendChild(rv);
           $("button", rv).onclick = () => { rv.remove(); $$(".opt", el).forEach(x => x.classList.remove("picked"));
-            if (picked === o.dogru) finish(1); else { $$(".opt", el)[picked].classList.add("wrong"); finish(0); } }; }
+            if (picked === o.dogru) finish(yr.used ? 2 : 1); else { $$(".opt", el)[picked].classList.add("wrong"); finish(0); } }; }
         return;
       }
       answer(j);
@@ -299,7 +336,7 @@
         const k = d.kavramlar[st.k];
         qstate[pos] = qstate[pos] || { wrong: [], result: undefined };
         wireQuestion($("#qbox .q", stage), k.soru, {
-          state: qstate[pos],
+          state: qstate[pos], kavram: k,
           onDone: res => { results.set(k.ad, res); $("[data-next]", stage).disabled = false; },
           backToInfo: () => go(pos - 1)
         });
@@ -308,7 +345,7 @@
       if (st.t === "hazir") renderHazirlik($("#hzBox", stage), d.hazirlik, () => go(pos + 1));
       if (st.t === "cozum") {
         qstate[pos] = qstate[pos] || {};
-        runCozum($("#cozBox", stage), d.kavramlar[st.k][st.f], qstate[pos], () => { const n = $("[data-next]", stage); if (n) n.disabled = false; });
+        runCozum($("#cozBox", stage), d.kavramlar[st.k][st.f], qstate[pos], () => { const n = $("[data-next]", stage); if (n) n.disabled = false; }, d.kavramlar[st.k]);
       }
       if (st.t === "yaz") wireWrite(stage, d.dusunVeYaz[0]);
       if (st.t === "duvar") renderWall($("#wallBox", stage), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}` });
@@ -953,29 +990,29 @@
   function wireMathQuestion(el, o, opts, kind) {
     let tries = 0, finished = false, buf = "";
     const state = opts.state || { wrong: [], result: undefined };
-    const fb = $(".fb", el), txt = $(".kp-txt", el), ekran = $(".kp-ekran", el);
+    const fb = $(".fb", el), txt = $(".kp-txt", el), ekran = $(".kp-ekran", el), yr = wireYardim(el, o, opts, state);
     // denk: true → değeri aynı olan her yazım kabul (2/4 = 1/2); yoksa yalnızca cevap ve kabul listesi
     const dogruMu = v => kind === "nokta" ? ayniSayi(v, o.nokta) : [o.cevap, ...(o.kabul || [])].some(c => normSayi(c) === normSayi(v) || (o.denk && ayniSayi(c, v)));
     const dogruYazi = kind === "nokta" ? (typeof o.nokta === "string" ? o.nokta.replace(/-/g, "−") : sayiYaz(o.nokta)) : String(o.cevap).replace(/-/g, "−");
     const ciz = () => { if (txt) txt.textContent = buf.replace(/^-/, "−"); };
     const finish = (result, silent) => {
-      finished = true; state.result = result;
+      finished = true; state.result = result; yr.bitti();
       if (kind === "nokta") { $$(".sd-hit", el).forEach(g => { g.classList.add("kapali"); if (ayniSayi(g.dataset.x, o.nokta)) g.classList.add("on"); }); }
       else { buf = String(o.cevap); ciz(); ekran.classList.add(result === 0 ? "goster" : "dogru"); $$(".kp-k, .kp-ok", el).forEach(b => b.disabled = true); }
       fb.hidden = false;
       fb.className = result === 0 ? "fb show" : "fb ok";
-      fb.innerHTML = `<div><b>${pick(result === 0 ? PRAISE.shown : result === 1 ? PRAISE.first : PRAISE.second)}</b>${result === 0 ? ` Doğru cevap: <b class="dc">${esc(dogruYazi)}</b>` : ""}</div><div>${rx(o.aciklama || "")}</div>`;
+      fb.innerHTML = `<div><b>${result === 0 ? pick(PRAISE.shown) : result === 1 ? pick(PRAISE.first) : tries === 0 ? "Doğru! İpucunu iyi kullandın." : pick(PRAISE.second)}</b>${result === 0 ? ` Doğru cevap: <b class="dc">${esc(dogruYazi)}</b>` : ""}</div><div>${rx(o.aciklama || "")}</div>`;
       if (!silent) opts.onDone && opts.onDone(result);
     };
     const answer = v => {
       if (finished) return;
-      if (dogruMu(v)) return finish(tries === 0 ? 1 : 2);
+      if (dogruMu(v)) return finish(tries === 0 && !yr.used ? 1 : 2);
       tries++;
       if (kind === "nokta") { const g = $(`.sd-hit[data-x="${v}"]`, el); if (g) g.classList.add("bad"); }
       else { ekran.classList.add("shake", "yanlis"); setTimeout(() => ekran.classList.remove("shake"), 400); }
       if (tries >= 2) return finish(0);
       fb.hidden = false; fb.className = "fb hint";
-      fb.innerHTML = `<div><b>Henüz değil.</b> ${rx(o.ipucu || "Bilgiyi bir kez daha düşün.")}</div>` +
+      fb.innerHTML = `<div><b>Henüz değil.</b> ${yanlisMetin(o, yr.yanlis())}</div>` +
         (opts.backToInfo ? `<div><button class="btn ghost" data-back>Bilgi kartına bak</button></div>` : "");
       const bk = $("[data-back]", fb); if (bk) bk.onclick = opts.backToInfo;
       if (kind === "girdi") { buf = ""; setTimeout(() => { ekran.classList.remove("yanlis"); ciz(); }, 700); }
@@ -1019,7 +1056,7 @@
       <ol class="adimlar">${c.adimlar.map((a, n) => adimHTML({ ...a, soru: null }, n, true)).join("")}</ol>${c.sonuc ? `<div class="sonuc">${rx(c.sonuc)}</div>` : ""}</div>`;
   }
   // st: {acik: kaç adım açıldı, q: {adım: soru durumu}}; bitti(): bütün adımlar açılınca bir kez çağrılır
-  function runCozum(box, c, st, bitti) {
+  function runCozum(box, c, st, bitti, kavram) {
     const yan = c.sayiDogrusu && c.sayiDogrusu.dikey;   // dikey sayı doğrusu adımların yanında durur (geniş ekranda)
     box.innerHTML = `<div class="cozum${yan ? " yan" : ""}">${c.problem ? `<div class="problem">${rx(c.problem)}</div>` : ""}
       <div class="coz-govde">${c.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(c.sayiDogrusu)}</div>` : ""}<div class="coz-adim">
@@ -1037,7 +1074,7 @@
       const li = ol.lastElementChild;
       if (a.soru) {
         st.q[n] = st.q[n] || { wrong: [], result: undefined };
-        wireQuestion($(".q", li), a.soru, { state: st.q[n], onDone: () => { const i = $(".islem", li); if (i) i.hidden = false; li.classList.remove("bos"); guncelle(); } });
+        wireQuestion($(".q", li), a.soru, { state: st.q[n], kavram, onDone: () => { const i = $(".islem", li); if (i) i.hidden = false; li.classList.remove("bos"); guncelle(); } });
         if (st.q[n].result !== undefined) { const i = $(".islem", li); if (i) i.hidden = false; li.classList.remove("bos"); }
       }
     };
@@ -1068,7 +1105,7 @@
       const m = ms[i], q = m.sorular[0];
       box.innerHTML = `<div class="kicker">Hazır mısın? · Soru ${i + 1} / ${ms.length}</div><h3>${esc(m.ad)}</h3>
         <div id="hzq">${questionHTML(q)}</div><div class="row"><button class="btn primary" data-hz-devam hidden>${i < ms.length - 1 ? "Sonraki soru" : "Sonucu gör"}</button></div>`;
-      wireQuestion($("#hzq .q", box), q, { onDone: r => { kayit.r[i] = r; $("[data-hz-devam]", box).hidden = false; } });
+      wireQuestion($("#hzq .q", box), q, { kavram: { ad: m.ad, aciklama: m.anlatim, akilda: m.akilda, svg: m.svg }, onDone: r => { kayit.r[i] = r; $("[data-hz-devam]", box).hidden = false; } });
       $("[data-hz-devam]", box).onclick = () => soru(i + 1);
     };
     const rapor = () => {
@@ -1098,7 +1135,7 @@
         <div id="hzSoru" ${m.ornek ? "hidden" : ""}><div class="kicker">Şimdi sen dene</div>${questionHTML(q2)}</div>
         <div class="row"><button class="btn ghost" data-hz-geri>Listeye dön</button></div>`;
       if (m.ornek) runCozum($("#hzOrnek", box), m.ornek, {}, () => { $("#hzSoru", box).hidden = false; });
-      wireQuestion($("#hzSoru .q", box), q2, { onDone: r => { if (r) { kayit.t[i] = true; kaydet(); } } });
+      wireQuestion($("#hzSoru .q", box), q2, { kavram: { ad: m.ad, aciklama: m.anlatim, akilda: m.akilda, svg: m.svg }, onDone: r => { if (r) { kayit.t[i] = true; kaydet(); } } });
       $("[data-hz-geri]", box).onclick = rapor;
       box.scrollIntoView({ block: "start", behavior: "smooth" });
     };
@@ -1200,12 +1237,25 @@
       <h2>${esc(d.baslik)}</h2>
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="hatirla">${ICON.bak}Hatırla</button>
-        <button class="tab" role="tab" data-tab="tarama">${ICON.test}Tarama Testi</button></div></section>
+        <button class="tab" role="tab" data-tab="tarama">${ICON.test}Tarama Testi</button>${d.oyunlar === false ? "" : `<button class="tab" role="tab" data-tab="oyunlar">${ICON.tekrar}Oyunlar</button>`}</div></section>
       <div class="panel" id="panel"></div>`;
     $$(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
-    let sk = store.get(key("sekme:" + S.konu), "hatirla"); if (sk !== "tarama") sk = "hatirla";
+    S.durakAsil = d;
+    let sk = store.get(key("sekme:" + S.konu), "hatirla"); if (sk !== "tarama" && !(sk === "oyunlar" && d.oyunlar !== false)) sk = "hatirla";
     setTab(sk);
     S.onKonu && S.onKonu();
+  }
+
+  // Oyunlar sekmesi: kapsanan konuların tekrar oyunları karışık oynanır (kart, eşleştir, gruplama; İngilizcede kelime ve cümle oyunları).
+  // Kavramlardan "oyunKavram" kadarı (varsayılan 8) seçilir: zorlanılanlar önce, konulara dengeli dağıtılarak.
+  function durakOyunVerisi(d) {
+    const ks = d.kapsar.map(id => S.cache[id]).filter(Boolean), n = d.oyunKavram || 8;
+    const havuz = ks.map(k => { const r = sonucOf(k.id), zor = x => x.ad in r && r[x.ad] !== 1; return [...shuffle(k.kavramlar.filter(zor)), ...shuffle(k.kavramlar.filter(x => !zor(x)))]; });
+    const sec = []; for (let t = 0; sec.length < n && havuz.some(h => h.length); t++) { const h = havuz[t % havuz.length]; if (h.length) sec.push(h.shift()); }
+    const hepsi = f => ks.flatMap(k => k[f] || []);
+    return { ...d, kavramlar: shuffle(sec), gruplar: [...(d.gruplar || []), ...hepsi("gruplar")],   // durağın kendi (konular arası) gruplamaları önce
+      cumleler: hepsi("cumleler"), hatalar: hepsi("hatalar"), kelimeler: hepsi("kelimeler"),
+      resimEslestir: ks.some(k => k.resimEslestir), kelimeOyunlari: ks.every(k => k.kelimeOyunlari !== false) };
   }
 
   function renderHatirla(root) {
@@ -1281,7 +1331,8 @@
         <div class="stage-nav"><button class="btn ghost" data-bitir>Testi bırak</button><button class="btn primary" data-sonraki disabled>${son ? "Sonucu gör" : "Sonraki soru"}</button></div></div>`;
       st.q[st.i] = st.q[st.i] || { wrong: [], result: undefined };
       const qs = st.q[st.i], sonraki = $("[data-sonraki]", root);
-      wireQuestion($("#dq .q", root), it.q, { state: qs, onDone: r => { st.sonuc[st.i] = { r, kaynak: it.kaynak }; sonraki.disabled = false; if (r !== 1) hatirlat($("#dkHat", root), it); } });
+      const k0 = it.kaynak.find(x => x.kavram) || {}, kv0 = k0.konu && S.cache[k0.konu] ? S.cache[k0.konu].kavramlar.find(y => y.ad === k0.kavram) : (it.q.kavram && S.cache[(it.kaynak[0] || {}).konu] ? S.cache[it.kaynak[0].konu].kavramlar.find(y => y.ad === it.q.kavram) : null);
+      wireQuestion($("#dq .q", root), it.q, { state: qs, kavram: kv0, onDone: r => { st.sonuc[st.i] = { r, kaynak: it.kaynak }; sonraki.disabled = false; if (r !== 1) hatirlat($("#dkHat", root), it); } });
       if (qs.result !== undefined) { sonraki.disabled = false; if (qs.result !== 1) hatirlat($("#dkHat", root), it); }
       sonraki.onclick = () => {
         tts.stop();
@@ -1327,7 +1378,8 @@
       <div class="tests">${d.sorular.map((q, i) => `<div class="card-q" data-q="${i}">${questionHTML(q, i + 1)}</div>`).join("")}</div>`;
     let first = 0, answered = 0;
     const upd = () => { $("#score", root).textContent = `${first} / ${d.sorular.length} ilk denemede doğru · ${answered} cevaplandı`; $("#meter", root).style.width = (first / d.sorular.length * 100) + "%"; };
-    $$(".card-q", root).forEach(el => wireQuestion($(".q", el), d.sorular[+el.dataset.q], { classMode: cls && qKind(d.sorular[+el.dataset.q]) === "secim", onDone: r => { answered++; if (r === 1) first++; upd(); } }));
+    const kvBul = q => q.kavram ? d.kavramlar.find(k => k.ad === q.kavram) : null;
+    $$(".card-q", root).forEach(el => wireQuestion($(".q", el), d.sorular[+el.dataset.q], { kavram: kvBul(d.sorular[+el.dataset.q]), classMode: cls && qKind(d.sorular[+el.dataset.q]) === "secim", onDone: r => { answered++; if (r === 1) first++; upd(); } }));
     $("#qreset", root).onclick = () => renderTest(root);
     upd();
   }
@@ -1416,13 +1468,14 @@
 
   function setTab(t) {
     tts.stop(); S.tab = t; store.set(key("sekme:" + S.konu), t); // sekme her konu için ayrı hatırlanır
+    if (S.durakAsil) S.data = t === "oyunlar" ? durakOyunVerisi(S.durakAsil) : S.durakAsil;   // Ara Durak oyunları birleşik veriyle çalışır
     $$(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === t));
     const p = $("#panel");
-    ({ ogren: renderOgren, bak: renderBak, tekrar: renderTekrar, test: renderTest, okuma: renderOkuma, hatirla: renderHatirla, tarama: renderTarama })[t](p);
+    ({ ogren: renderOgren, bak: renderBak, tekrar: renderTekrar, test: renderTest, okuma: renderOkuma, hatirla: renderHatirla, tarama: renderTarama, oyunlar: renderTekrar })[t](p);
   }
 
   function renderKonu(no) {
-    const d = S.data;
+    const d = S.data; S.durakAsil = null;
     const donus = S.donus && allTopics().find(k => k.id === S.donus && isDurak(k));
     const vade = !donus && allTopics().find(k => isDurak(k) && k.hazir && durakKayit.zaman(k.id));
     $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(d.unite)}</span><span class="pill">Konu ${no}</span><span class="pill">${esc(d.sayfalar)}</span>${donus ? `<button class="btn ghost dk-don" data-donus>← Ara Durak'a dön</button>` : ""}</div>

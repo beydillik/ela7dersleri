@@ -581,7 +581,8 @@
    ],
    "dogru": 2,
    "ipucu": "Ardışık iki tam sayı arasında başka tam sayı olur mu?",
-   "aciklama": "0 ile 1 ardışık tam sayılardır; aralarında başka tam sayı yoktur. (s. 25)"
+   "aciklama": "0 ile 1 ardışık tam sayılardır; aralarında başka tam sayı yoktur. (s. 25)",
+   "kavram": "Aradaki Sayılar"
   },
   {
    "soru": "[[1/4]] sayısının yerine dokun.",
@@ -592,7 +593,8 @@
     "bolme": 4
    },
    "ipucu": "0 ile 1 arası 4 eş parçaya bölündü. 0'dan sağa 1 küçük parça say.",
-   "aciklama": "[[1/4]], 0'dan sağa 1 parçadadır. (s. 32)"
+   "aciklama": "[[1/4]], 0'dan sağa 1 parçadadır. (s. 32)",
+   "kavram": "Sayı Doğrusunda Gösterme"
   },
   {
    "soru": "Hangisi tanımsızdır?",
@@ -603,14 +605,24 @@
    ],
    "dogru": 2,
    "ipucu": "Paydası 0 olan bir kesir arıyoruz.",
-   "aciklama": "[[7/0]] tanımsızdır; payda 0 olamaz. [[0/7]] = 0, [[7/7]] = 1. (s. 28)"
+   "aciklama": "[[7/0]] tanımsızdır; payda 0 olamaz. [[0/7]] = 0, [[7/7]] = 1. (s. 28)",
+   "kavram": "Payda Sıfır Olamaz"
   },
   {
    "soru": "[[12/16]] kesrinin en sade hâlini yaz.",
    "cevap": "3/4",
    "ipucu": "12 ve 16'nın ikisi de 4'e bölünür. Kesir çizgisi için / tuşunu kullan.",
    "aciklama": "12 ÷ 4 = 3, 16 ÷ 4 = 4. En sade hâl [[3/4]]. (s. 27)",
-   "kesir": true
+   "kesir": true,
+   "yardim": {
+    "hatirla": "Sadeleştirmek, pay ve paydayı aynı sayıya bölmektir. Kesrin değeri değişmez. Pay ve payda artık birlikte bölünemiyorsa kesir en sade hâlindedir.",
+    "adimlar": [
+     "12 ve 16'yı birlikte bölen bir sayı bul: 2 mi, 4 mü?",
+     "En büyüğünü seçersen tek seferde biter.",
+     "Payı da paydayı da o sayıya böl.",
+     "Önce payı, sonra / tuşunu, sonra paydayı yaz."
+    ]
+   }
   },
   {
    "soru": "Hangisi doğrudur?",
@@ -621,13 +633,21 @@
    ],
    "dogru": 1,
    "ipucu": "Tam sayılar paydası kaç olan rasyonel sayılardır?",
-   "aciklama": "Her tam sayı paydası 1 olan bir rasyonel sayıdır. Ama [[1/2]] gibi tam sayı olmayan rasyonel sayılar da vardır. (s. 29–30)"
+   "aciklama": "Her tam sayı paydası 1 olan bir rasyonel sayıdır. Ama [[1/2]] gibi tam sayı olmayan rasyonel sayılar da vardır. (s. 29–30)",
+   "kavram": "Sayı Aileleri"
   },
   {
    "soru": "[[20/5]] hangi tam sayıya eşittir?",
    "cevap": "4",
    "ipucu": "20'yi 5'e böl.",
-   "aciklama": "20 ÷ 5 = 4. Yani [[20/5]] = 4, bir tam sayıdır. (s. 30)"
+   "aciklama": "20 ÷ 5 = 4. Yani [[20/5]] = 4, bir tam sayıdır. (s. 30)",
+   "kavram": "Sayı Aileleri",
+   "yardim": {
+    "adimlar": [
+     "Kesir çizgisi bölme demektir: [[20/5]] = 20 ÷ 5.",
+     "5'er 5'er say: 5, 10, 15, 20… Kaç kere saydın?"
+    ]
+   }
   },
   {
    "soru": "[[-1/2]] sayısının yerine dokun.",
@@ -638,7 +658,8 @@
     "bolme": 2
    },
    "ipucu": "Negatif: 0'dan sola git. 0 ile −1 arası 2 eş parça; 1 parça say.",
-   "aciklama": "[[-1/2]], 0'ın yarım birim solundadır. (s. 32)"
+   "aciklama": "[[-1/2]], 0'ın yarım birim solundadır. (s. 32)",
+   "kavram": "Sayı Doğrusunda Gösterme"
   },
   {
    "soru": "[[-7/4]] sayısı hangi iki tam sayı arasındadır?",
@@ -649,7 +670,8 @@
    ],
    "dogru": 1,
    "ipucu": "Eksiyi kenara koy: 7 ÷ 4 = 1, kalan 3. Tam kısım kaç?",
-   "aciklama": "[[-7/4]] = [[-1 3/4]]. Bu sayı −1 ile −2 arasındadır. (s. 32)"
+   "aciklama": "[[-7/4]] = [[-1 3/4]]. Bu sayı −1 ile −2 arasındadır. (s. 32)",
+   "kavram": "Eksi Bütüne Aittir"
   },
   {
    "soru": "[[-1 2/3]] sayısını bileşik kesir olarak yaz.",
@@ -659,7 +681,16 @@
    "kesir": true,
    "kabul": [
     "5/-3"
-   ]
+   ],
+   "kavram": "Eksi Bütüne Aittir",
+   "yardim": {
+    "adimlar": [
+     "Eksiyi kenara koy. Şimdilik [[1 2/3]] ile çalış.",
+     "Tam kısmı payda ile çarp: 1 × 3.",
+     "Çıkan sayıya payı ekle. Bu yeni pay olur; payda 3 kalır.",
+     "Eksiyi geri ekle: önce − tuşuna, sonra pay, / ve payda."
+    ]
+   }
   },
   {
    "soru": "Hangisi diğer ikisinden farklı bir sayıdır?",
@@ -670,7 +701,8 @@
    ],
    "dogru": 2,
    "ipucu": "Hangisinde hiç eksi yok?",
-   "aciklama": "[[-8/2]] ve [[8/-2]] ikisi de −4'tür. [[8/2]] ise +4'tür. (s. 33)"
+   "aciklama": "[[-8/2]] ve [[8/-2]] ikisi de −4'tür. [[8/2]] ise +4'tür. (s. 33)",
+   "kavram": "Eksinin Yeri"
   },
   {
    "soru": "Bir su sayacının göstergesinde 4 eş bölmeden 2'si dolu. Kullanılan su, hakkın ne kadarıdır?",
@@ -681,7 +713,14 @@
    ],
    "dogru": 0,
    "ipucu": "Önce kesri yaz: 4 bölmeden 2'si. Sonra sadeleştir.",
-   "aciklama": "4 bölmeden 2'si [[2/4]] = [[1/2]]. Suyun yarısı kullanılmış. (s. 26–27)"
+   "aciklama": "4 bölmeden 2'si [[2/4]] = [[1/2]]. Suyun yarısı kullanılmış. (s. 26–27)",
+   "yardim": {
+    "hatirla": "Denk kesirler aynı miktarı gösterir: [[2/4]] ile [[1/2]] sayı doğrusunda aynı yerdedir. Sadeleştirmek için pay ve paydayı aynı sayıya böleriz.",
+    "adimlar": [
+     "Önce kesri yaz: 4 eş bölmeden kaçı dolu?",
+     "Pay ve paydayı aynı sayıya bölerek sadeleştir."
+    ]
+   }
   },
   {
    "soru": "A noktası hangi rasyonel sayıyı gösteriyor? Bileşik kesir olarak yaz.",
@@ -703,6 +742,15 @@
       "etiket": "A",
       "renk": "#2364c7"
      }
+    ]
+   },
+   "kavram": "Sayı Doğrusunda Gösterme",
+   "yardim": {
+    "adimlar": [
+     "A, 0'ın solunda: sayı eksi.",
+     "A hangi iki tam sayı arasında? Bir birim kaç küçük parçaya bölünmüş?",
+     "−2'den sola kaç küçük parça gidilmiş? Önce tam sayılı kesir olarak düşün.",
+     "Tam sayılı kesri bileşik kesre çevir: tam × payda + pay. Eksiyi unutma."
     ]
    }
   }

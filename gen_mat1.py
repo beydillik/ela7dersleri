@@ -934,6 +934,94 @@ def u1t1():
 TARAMALAR = [u1t1]
 KONULAR = [u1k1, u1k2, u1k3] + TARAMALAR
 
+# =================================================================
+# İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
+# sonra "yardim.adimlar" adımlarını tek tek açar (yoksa "ipucu"yu). Cevabı söyleme; son adım cevaba bir adım kala dursun.
+# TEST_KAVRAM: test sorularının sırasıyla bağlı olduğu kavram (None: bağlantı yok).
+# YARDIM: soru metninin başıyla eşleşir (kavram sorusu, test ya da tarama sorusu); {"adimlar": [...], "hatirla"?: "kavram yerine özel hatırlatma"}.
+TEST_KAVRAM = {
+    "u1k1": ["Negatif Tam Sayılar", "Negatif Tam Sayılar", "Sayı Doğrusu", "Kelimeden Sayıya", "Tam Sayılar Ailesi",
+             "Sayı Doğrusu", "Tam Sayılar Ailesi", "İki Sayı Arasındaki Uzaklık", "Pozitif Tam Sayılar", "Kelimeden Sayıya"],
+    "u1k2": ["Aradaki Sayılar", "Sayı Doğrusunda Gösterme", "Payda Sıfır Olamaz", None, "Sayı Aileleri", "Sayı Aileleri",
+             "Sayı Doğrusunda Gösterme", "Eksi Bütüne Aittir", "Eksi Bütüne Aittir", "Eksinin Yeri", None, "Sayı Doğrusunda Gösterme"],
+    "u1k3": ["Mutlak Değer", "Eksik ya da Fazla", "Mutlak Değeri Verilen Sayı", None, "Mutlak Değer Eksi Olmaz", "Mutlak Değeri Verilen Sayı",
+             "Eksi de Artı da Aynı", "Eksik ya da Fazla", "Mutlak Değeri Verilen Sayı", "Mutlak Değer", "Mutlak Değer", "Başlangıç Noktası"],
+}
+YARDIM = {
+    "u1k1": {
+        f"Sayı doğrusunda {M}1 ile +4": {"adimlar": [
+            "Yol 0'dan geçiyor. Yolu iki parçaya böl.", f"{M}1'den 0'a kaç aralık var? Say.", "0'dan +4'e kaç aralık var? Say.", "İki parçayı topla."]},
+        "Bir denizaltı deniz seviyesinin 35": {"adimlar": [
+            "Başlangıç (0) nerede? Deniz seviyesi.", "\"Altında\" hangi işaret? Altı, borç, gider, zarar → eksi.", "Kaç birim? Cümledeki sayıya bak.", f"Önce {M} tuşuna, sonra sayılara dokun."]},
+        "A noktası hangi tam sayıyı": {"adimlar": [
+            "A, 0'ın solunda mı, sağında mı? Solundaysa sayı eksidir.", "0'dan A'ya kadar aralıkları tek tek say.", "İşareti ve saydığın sayıyı birlikte yaz."]},
+        f"Bir binada otopark {M}2": {"adimlar": [
+            "Zemin kat 0'dır. Otopark 0'ın altında, Elif'in katı üstünde.", "Otoparktan zemin kata kaç kat çıkılır?", "Zemin kattan Elif'in katına kaç kat çıkılır?", "İki parçayı topla."]},
+        "Mert'in kartında hafta başında": {"adimlar": [
+            "Kartta 300 TL var. 300 TL harcayınca kartta kaç TL kalır?", "Harcadığı 400 TL'nin kaç TL'si daha ödenecek? 400 − 300 = ?", "Kalan kısım borç olur. Borç hangi işaretle yazılır?"]},
+    },
+    "u1k2": {
+        "[[12/16]] kesrinin en sade": {
+            "hatirla": "Sadeleştirmek, pay ve paydayı aynı sayıya bölmektir. Kesrin değeri değişmez. Pay ve payda artık birlikte bölünemiyorsa kesir en sade hâlindedir.",
+            "adimlar": ["12 ve 16'yı birlikte bölen bir sayı bul: 2 mi, 4 mü?", "En büyüğünü seçersen tek seferde biter.", "Payı da paydayı da o sayıya böl.", "Önce payı, sonra / tuşunu, sonra paydayı yaz."]},
+        "[[20/5]] hangi tam": {"adimlar": [
+            "Kesir çizgisi bölme demektir: [[20/5]] = 20 ÷ 5.", "5'er 5'er say: 5, 10, 15, 20… Kaç kere saydın?"]},
+        "[[-1 2/3]] sayısını bileşik": {"adimlar": [
+            "Eksiyi kenara koy. Şimdilik [[1 2/3]] ile çalış.", "Tam kısmı payda ile çarp: 1 × 3.", "Çıkan sayıya payı ekle. Bu yeni pay olur; payda 3 kalır.",
+            f"Eksiyi geri ekle: önce {M} tuşuna, sonra pay, / ve payda."]},
+        "A noktası hangi rasyonel": {"adimlar": [
+            "A, 0'ın solunda: sayı eksi.", "A hangi iki tam sayı arasında? Bir birim kaç küçük parçaya bölünmüş?",
+            f"{M}2'den sola kaç küçük parça gidilmiş? Önce tam sayılı kesir olarak düşün.", "Tam sayılı kesri bileşik kesre çevir: tam × payda + pay. Eksiyi unutma."]},
+        "Bir su sayacının göstergesinde": {
+            "hatirla": "Denk kesirler aynı miktarı gösterir: [[2/4]] ile [[1/2]] sayı doğrusunda aynı yerdedir. Sadeleştirmek için pay ve paydayı aynı sayıya böleriz.",
+            "adimlar": ["Önce kesri yaz: 4 eş bölmeden kaçı dolu?", "Pay ve paydayı aynı sayıya bölerek sadeleştir."]},
+    },
+    "u1k3": {
+        "Hedef 200 gram. 199": {"adimlar": [
+            "Başlangıç noktası 200 gram.", "199'dan 200'e kaç gram var? Say.", "Eksik ya da fazla olması fark etmez; sadece kaç gram uzak?"]},
+        f"|{M}7| kaçtır": {"adimlar": [
+            f"|{M}7|, {M}7'nin 0'a uzaklığı demek.", f"Sayı doğrusunda {M}7'den 0'a kaç aralık var? Say.", "Uzaklık eksi olmaz."]},
+        f"|{M}8| kaçtır": {"adimlar": [
+            f"|{M}8|, {M}8'in 0'a uzaklığıdır.", f"{M}8 ile 0 arasındaki aralıkları say. Ya da kısa yol: işareti sil.", f"Uzaklık eksi olmaz; cevabın önüne {M} koyma."]},
+        "Bir sondaj makinesi yer yüzeyinin": {
+            "hatirla": "Başlangıç (0) yer yüzeyidir. Yüzeyin altı eksi, üstü artı ile yazılır.",
+            "adimlar": ["Başlangıç (0): yer yüzeyi.", "Makine aşağı indi. \"Altında\" hangi işaret?", f"Önce {M} tuşuna dokun, sonra 8, virgül ve 6."]},
+        "Sondaj makinesinin konumu": {"adimlar": [
+            f"Uzaklık mutlak değerdir: |{M}8,6|.", "İşareti sil, sayı kalır.", "Virgül tuşunu kullanmayı unutma."]},
+        "|[[-3/4]]| kaçtır": {"adimlar": [
+            "Mutlak değer hiç eksi olmaz.", "İşareti silince geriye hangi kesir kalıyor?", "Kesri yazmak için önce pay, sonra / tuşu, sonra payda."]},
+        "UME'ye göre saat 14.00": {"adimlar": [
+            "Başlangıç noktası doğru saat: 14.00.", "Kol saati 14.05'i gösteriyor. 14.00'ten 14.05'e kaç dakika var?", "İleri ya da geri olması fark etmez; sadece kaç dakika?"]},
+        "Bir çay fabrikasında hedef 500": {"adimlar": [
+            "Başlangıç noktası: hedef 500 gram.", "496'dan 500'e kaç gram var? 497, 498, 499, 500 diye say.", "Eksik olması fark etmez; sadece kaç gram uzak?"]},
+    },
+    "u1t1": {
+        "Bir dalgıç deniz seviyesinin 12": {"adimlar": [
+            f"Deniz seviyesi 0. Dalgıç altında ({M}12), martı üstünde (+5).", "Dalgıçtan deniz seviyesine kaç metre?", "Deniz seviyesinden martıya kaç metre?", "İki parçayı topla."]},
+        "Meryem'in aklındaki": {"adimlar": [
+            f"Mutlak değeri 3 olan sayılar: 3 ve {M}3. Mutlak değeri 2 olanlar: 2 ve {M}2.",
+            f"En uzak olmaları için biri 0'ın solunda, biri sağında olmalı: {M}3 ile +2 gibi.", f"{M}3'ten 0'a kaç birim? 0'dan +2'ye kaç birim? Topla."]},
+    },
+}
+
+
+def yardim_uygula(d):
+    kv_adlari = {k["ad"] for k in d.get("kavramlar", [])}
+    tk = TEST_KAVRAM.get(d["id"])
+    if tk:
+        assert len(tk) == len(d["sorular"]), d["id"] + ": TEST_KAVRAM sayısı test sayısına eşit değil"
+        for q, k in zip(d["sorular"], tk):
+            if k:
+                assert k in kv_adlari, f"{d['id']}: kavram yok: {k}"
+                q["kavram"] = k
+    sorular = [k["soru"] for k in d.get("kavramlar", []) if k.get("soru")] + d["sorular"]
+    for bas, y in YARDIM.get(d["id"], {}).items():
+        es = [q for q in sorular if q["soru"].startswith(bas)]
+        assert len(es) == 1, f"{d['id']}: '{bas}' {len(es)} soruyla eşleşti"
+        es[0]["yardim"] = y
+    return d
+
+
 import re
 
 
@@ -950,6 +1038,6 @@ def bosluk(x):
 
 if __name__ == "__main__":
     for f in KONULAR:
-        d = bosluk(f())
+        d = bosluk(yardim_uygula(f()))
         json.dump(d, open(f"public/mat1/konular/{d['id']}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         print(d["id"], "yazıldı")

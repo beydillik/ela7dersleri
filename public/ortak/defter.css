@@ -737,3 +737,21 @@ a.head-btn { text-decoration: none; display: inline-flex; align-items: center; }
 .card.vurgu { outline: 4px solid var(--gold); outline-offset: 3px; }
 @media (max-width: 640px) { .dk-hat-ic > svg { width: 48px; height: 48px; } .durak-konu .sec-title h3 { font-size: 19px; } }
 @media (prefers-reduced-motion: reduce) { .dk-hat { animation: none; } }
+
+/* İpucu: soru cevaplanmadan önce isteğe bağlı yardım (hatırlatma + adım adım yönlendirme) */
+.yardim-satir { display: flex; justify-content: flex-end; margin: -4px 0 0; }
+.yardim-btn { display: inline-flex; align-items: center; gap: 6px; border: 2px solid var(--gold); background: var(--gold-soft); color: var(--ink); border-radius: 999px; padding: 4px 14px; font-weight: 800; font-size: 15px; cursor: pointer; }
+.yardim-btn svg { width: 18px; height: 18px; }
+.yardim-btn[hidden] { display: none; }
+.yardim { border: 2px solid var(--gold); background: var(--gold-soft); border-radius: 14px; padding: 10px 14px; display: grid; gap: 8px; margin: 6px 0 10px; animation: adimGel .25s ease-out; }
+.y-kicker { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--hint); }
+.y-kicker svg { width: 16px; height: 16px; }
+.y-hat { display: flex; gap: 12px; align-items: flex-start; }
+.y-hat > svg { width: 52px; height: 52px; flex: 0 0 auto; border-radius: 10px; }
+.y-hat > div { display: grid; gap: 4px; min-width: 0; }
+.y-hat p, .y-adim p { margin: 0; }
+.y-hat .key { justify-self: start; background: var(--surface); }
+.y-adim { display: flex; gap: 10px; align-items: flex-start; font-weight: 700; }
+.y-no { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--gold); color: #1b2340; font-size: 14px; font-weight: 800; flex: 0 0 auto; }
+.yardim .row { margin: 0; }
+@media (prefers-reduced-motion: reduce) { .yardim { animation: none; } }

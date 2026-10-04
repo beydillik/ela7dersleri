@@ -583,6 +583,14 @@
        "renk": "#d9480f"
       }
      ]
+    },
+    "yardim": {
+     "adimlar": [
+      "Yol 0'dan geçiyor. Yolu iki parçaya böl.",
+      "−1'den 0'a kaç aralık var? Say.",
+      "0'dan +4'e kaç aralık var? Say.",
+      "İki parçayı topla."
+     ]
     }
    }
   }
@@ -648,14 +656,24 @@
    ],
    "dogru": 0,
    "ipucu": "\"Sıfırın altı\" hangi işaretle gösterilir?",
-   "aciklama": "Sıfırın altı negatiftir: −6 °C. (s. 19–20)"
+   "aciklama": "Sıfırın altı negatiftir: −6 °C. (s. 19–20)",
+   "kavram": "Negatif Tam Sayılar"
   },
   {
    "soru": "Bir denizaltı deniz seviyesinin 35 metre altında. Konumunu tam sayıyla yaz.",
    "cevap": "-35",
    "ipucu": "\"Altında\" eksi demek. Önce − tuşuna, sonra sayıya dokun.",
    "aciklama": "Deniz seviyesinin 35 m altı: −35 m. (s. 17–18)",
-   "birim": "m"
+   "birim": "m",
+   "kavram": "Negatif Tam Sayılar",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç (0) nerede? Deniz seviyesi.",
+     "\"Altında\" hangi işaret? Altı, borç, gider, zarar → eksi.",
+     "Kaç birim? Cümledeki sayıya bak.",
+     "Önce − tuşuna, sonra sayılara dokun."
+    ]
+   }
   },
   {
    "soru": "Sayı doğrusunda sıfırın 4 birim solundaki sayıya dokun.",
@@ -665,7 +683,8 @@
     "max": 6
    },
    "ipucu": "0'ı bul. Sola doğru 4 aralık say.",
-   "aciklama": "0'ın 4 birim solunda −4 vardır. (s. 20)"
+   "aciklama": "0'ın 4 birim solunda −4 vardır. (s. 20)",
+   "kavram": "Sayı Doğrusu"
   },
   {
    "soru": "Hangisi negatif bir tam sayıyla anlatılır?",
@@ -676,7 +695,8 @@
    ],
    "dogru": 1,
    "ipucu": "Altı, borç, gider, zarar… Hangi cümlede bu kelimelerden biri var?",
-   "aciklama": "Zemin katın 2 kat altı: −2. Kazanç ve \"üstünde\" pozitiftir. (s. 20)"
+   "aciklama": "Zemin katın 2 kat altı: −2. Kazanç ve \"üstünde\" pozitiftir. (s. 20)",
+   "kavram": "Kelimeden Sayıya"
   },
   {
    "soru": "Sıfır için hangisi doğrudur?",
@@ -687,7 +707,8 @@
    ],
    "dogru": 2,
    "ipucu": "Sıfır, sayı doğrusunun neresinde duruyordu?",
-   "aciklama": "Sıfır ne pozitif ne negatiftir; işareti yoktur. (s. 20)"
+   "aciklama": "Sıfır ne pozitif ne negatiftir; işareti yoktur. (s. 20)",
+   "kavram": "Tam Sayılar Ailesi"
   },
   {
    "soru": "A noktası hangi tam sayıyı gösteriyor?",
@@ -706,6 +727,14 @@
     "gizle": [
      -5
     ]
+   },
+   "kavram": "Sayı Doğrusu",
+   "yardim": {
+    "adimlar": [
+     "A, 0'ın solunda mı, sağında mı? Solundaysa sayı eksidir.",
+     "0'dan A'ya kadar aralıkları tek tek say.",
+     "İşareti ve saydığın sayıyı birlikte yaz."
+    ]
    }
   },
   {
@@ -717,14 +746,24 @@
    ],
    "dogru": 2,
    "ipucu": "Doğal sayılar 0, 1, 2, 3… Eksi sayı doğal sayı olur mu?",
-   "aciklama": "0 bir doğal sayıdır. Eksi sayılar doğal sayı değildir. (s. 20)"
+   "aciklama": "0 bir doğal sayıdır. Eksi sayılar doğal sayı değildir. (s. 20)",
+   "kavram": "Tam Sayılar Ailesi"
   },
   {
    "soru": "Bir binada otopark −2. katta, Elif +5. katta oturuyor. Otoparktan Elif'in katına kaç kat çıkılır?",
    "cevap": "7",
    "ipucu": "−2'den 0'a kaç kat? 0'dan +5'e kaç kat? İkisini topla.",
    "aciklama": "−2 → 0: 2 kat, 0 → +5: 5 kat. 2 + 5 = 7 kat. (s. 22)",
-   "birim": "kat"
+   "birim": "kat",
+   "kavram": "İki Sayı Arasındaki Uzaklık",
+   "yardim": {
+    "adimlar": [
+     "Zemin kat 0'dır. Otopark 0'ın altında, Elif'in katı üstünde.",
+     "Otoparktan zemin kata kaç kat çıkılır?",
+     "Zemin kattan Elif'in katına kaç kat çıkılır?",
+     "İki parçayı topla."
+    ]
+   }
   },
   {
    "soru": "Termometrede 0 °C'un 3 derece üstüne dokun.",
@@ -737,7 +776,8 @@
     "sifirEtiketi": "0 °C"
    },
    "ipucu": "\"Üstü\" artı demek. 0'dan yukarı 3 aralık say.",
-   "aciklama": "0 °C'un 3 derece üstü +3 °C'tur. (s. 19–20)"
+   "aciklama": "0 °C'un 3 derece üstü +3 °C'tur. (s. 19–20)",
+   "kavram": "Pozitif Tam Sayılar"
   },
   {
    "soru": "Mert'in kartında hafta başında 300 TL vardı. O hafta 400 TL harcadı. Kart borçlanabildiğine göre hafta sonunda kartın durumu nedir?",
@@ -748,7 +788,15 @@
    ],
    "dogru": 1,
    "ipucu": "300 TL'yi harcayınca kart 0 olur. Fazladan kaç TL harcadı? Fazlası borçtur.",
-   "aciklama": "300 TL harcayınca kart 0 olur. Kalan 100 TL borç olur: −100 TL. (s. 18)"
+   "aciklama": "300 TL harcayınca kart 0 olur. Kalan 100 TL borç olur: −100 TL. (s. 18)",
+   "kavram": "Kelimeden Sayıya",
+   "yardim": {
+    "adimlar": [
+     "Kartta 300 TL var. 300 TL harcayınca kartta kaç TL kalır?",
+     "Harcadığı 400 TL'nin kaç TL'si daha ödenecek? 400 − 300 = ?",
+     "Kalan kısım borç olur. Borç hangi işaretle yazılır?"
+    ]
+   }
   }
  ]
 }
