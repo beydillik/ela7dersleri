@@ -1540,7 +1540,54 @@ def u1t1():
     }
 
 
-TARAMALAR = [u1t1]
+def u1t2():
+    return {
+        "id": "u1t2", "tur": "tarama", "unite": "1. Tema: Sayılar ve Nicelikler",
+        "baslik": "Ara Durak 2: Gösterim ve Sıralama", "sayfalar": "Konu 4–5 · s. 41–61",
+        "giris": "İki konu daha bitti! Durup bakalım. Önce kısa özetleri oku ve kartları çevir. Sonra 10 soruluk tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": f"Bir sayıyı kesir ya da ondalık olarak yazabiliyoruz: [[-1/4]] ile {M}0,25 aynı sayıdır. Karşılaştırırken bu çok işe yarar: iki sayıyı aynı gösterime çevir, sonra sayı doğrusunda yerlerine bak. Sağdaki büyüktür, eksiler ters sıralanır.",
+        "kapsar": ["u1k4", "u1k5"],
+        "hatirla": [
+            {"konu": "u1k4", "maddeler": [
+                "Kesir çizgisi bölme demektir: [[1/5]] = 1 ÷ 5 = 0,2. Paydayı 10, 100, 1000 yapabiliyorsan daha kolay.",
+                "Bölme biterse sonlu (0,25), hiç bitmezse devirli (0,[[d:3]]) ondalık gösterim olur. Paydada yalnız 2 ve 5 varsa sonludur.",
+                "Ondalıktan kesre: virgülden sonraki basamak kadar sıfır, sonra sadeleştir."]},
+            {"konu": "u1k5", "maddeler": [
+                "Sayı doğrusunda sağdaki büyüktür; dikey sayı doğrusunda yukarıdaki büyüktür.",
+                f"Negatif < 0 < pozitif. İki negatiften 0'a daha uzak olan küçüktür: {M}3 < {M}1.",
+                "Önce kısa yol ara; yoksa paydaları ya da payları eşitle, ya da ikisini de ondalığa çevir."]}],
+        "eskiSoru": 4,
+        "sorular": [
+            S("Hangisi [[-1/2]] ile 0 arasındadır?", ["[[-2/5]]", f"{M}0,6", f"{M}0,[[d:5]]"], 0,
+              f"Hepsini ondalığa çevir. [[-1/2]] = {M}0,5. Hangisi {M}0,5'ten 0'a daha yakın?",
+              f"[[-2/5]] = [[-4/10]] = {M}0,4. {M}0,5 < {M}0,4 < 0. {M}0,6 ve {M}0,555… ise {M}0,5'ten küçüktür; 0'a daha uzaktır.",
+              kaynak=[K("u1k5", "Kısa Yollar"), K("u1k4", "Paydayı 10, 100, 1000 Yap")]),
+            G(f"Üç şehirde sıcaklıklar ölçülüyor: {M}1,5 °C, [[-7/4]] °C ve {M}1,2 °C. En soğuk şehrin sıcaklığını ondalık gösterimle yaz.", "-1,75",
+              "[[-7/4]]'ü ondalığa çevir: paydayı 100 yap. Sonra üç sayıdan 0'a en uzak olanı bul.",
+              f"[[-7/4]] = [[-175/100]] = {M}1,75. {M}1,75 < {M}1,5 < {M}1,2. En soğuk {M}1,75 °C.",
+              birim="°C", denk=True,
+              kaynak=[K("u1k4", "Paydayı 10, 100, 1000 Yap"), K("u1k5", "Negatiflerde Uzak Olan Küçük")]),
+            N(f"{M}1 ile {M}0,5 arasında, paydası 4 olan sayının yerine dokun.", -0.75, {"min": -2, "max": 0, "bolme": 4},
+              f"{M}1 ile 0 arası 4 parçaya bölünmüş; her çizgi [[1/4]]. {M}0,5 = [[-2/4]]. Onunla {M}1 arasında hangi çizgi var?",
+              f"[[-3/4]] = {M}0,75. {M}1 < {M}0,75 < {M}0,5.",
+              kaynak=[K("u1k5", "Arada Hep Bir Sayı Var"), K("u1k4", "Ondalıktan Kesre")]),
+            S("Hangisinin ondalık gösterimi hem devirlidir hem de 0'dan küçüktür?", ["[[-3/8]]", "[[1/6]]", "[[-1/3]]"], 2,
+              "İki şey ara: işaret eksi mi? Paydada 2 ve 5'ten başka çarpan var mı?",
+              f"[[-1/3]] = {M}0,[[d:3]]: negatif ve devirli. [[-3/8]] sonludur ({M}0,375; 8 = 2 × 2 × 2). [[1/6]] devirlidir ama pozitiftir.",
+              kaynak=[K("u1k4", "Sonlu mu, Devirli mi?"), K("u1k5", "Negatif, Sıfır, Pozitif")]),
+            G(f"İki dalgıç deniz seviyesinin altında. A dalgıcı {M}2,35 m'de, B dalgıcı [[-12/5]] m'de. Daha derindeki dalgıcın konumunu ondalık gösterimle yaz.", "-2,4",
+              "[[-12/5]]'i ondalığa çevir. Daha derin olan, deniz seviyesine (0) daha uzak olandır.",
+              f"[[-12/5]] = [[-24/10]] = {M}2,4. {M}2,4 < {M}2,35, yani B daha derinde: {M}2,4 m.",
+              birim="m", denk=True, sayiDogrusu={"min": -3, "max": 0, "dikey": True, "sifirEtiketi": "Deniz seviyesi"},
+              kaynak=[K("u1k4", "Kesir Çizgisi Bölmedir"), K("u1k5", "Dikey Sayı Doğrusu")]),
+            S(f"{M}0,[[d:3]] ☐ {M}0,3 — kutuya hangi işaret gelir?", [">", "<", "="], 1,
+              f"{M}0,[[d:3]] = {M}0,333… Hangisi 0'a daha uzak? Eksilerde uzak olan küçüktür.",
+              f"{M}0,333… sayısı {M}0,3'ten 0'a daha uzaktır, yani daha küçüktür: {M}0,[[d:3]] < {M}0,3.",
+              kaynak=[K("u1k4", "Devirli Ondalık Gösterim"), K("u1k5", "Negatiflerde Uzak Olan Küçük")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2]
 KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5] + TARAMALAR
 
 # =================================================================
@@ -1644,6 +1691,18 @@ YARDIM = {
         "Meryem'in aklındaki": {"adimlar": [
             f"Mutlak değeri 3 olan sayılar: 3 ve {M}3. Mutlak değeri 2 olanlar: 2 ve {M}2.",
             f"En uzak olmaları için biri 0'ın solunda, biri sağında olmalı: {M}3 ile +2 gibi.", f"{M}3'ten 0'a kaç birim? 0'dan +2'ye kaç birim? Topla."]},
+    },
+    "u1t2": {
+        "Üç şehirde sıcaklıklar": {"adimlar": [
+            "Önce hepsini aynı gösterime getir: [[-7/4]]'ün paydasını 100 yap (4 × 25 = 100).",
+            f"[[-175/100]] ondalık olarak kaçtır? Virgülden sonra 2 basamak.",
+            f"Üç sayı da negatif. Eksilerde 0'a en uzak olan en küçüktür, yani en soğuktur.",
+            "Tam kısımlar eşit (1). Virgülden sonraki basamaklara bak: hangisi en büyük?"]},
+        "İki dalgıç deniz seviyesinin": {"adimlar": [
+            "Deniz seviyesi 0. İki dalgıç da altında, ikisi de eksi.",
+            "[[-12/5]]'in paydasını 10 yap (5 × 2 = 10). Kaç onda kaç olur?",
+            f"Şimdi {M}2,35 ile karşılaştır. Daha derin olan 0'a daha uzak olandır.",
+            "İkisinin tam kısmı 2. Onda birler basamağına bak."]},
     },
 }
 

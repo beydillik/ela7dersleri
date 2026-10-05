@@ -1,0 +1,176 @@
+{
+ "id": "u1t2",
+ "tur": "tarama",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Ara Durak 2: Gösterim ve Sıralama",
+ "sayfalar": "Konu 4–5 · s. 41–61",
+ "giris": "İki konu daha bitti! Durup bakalım. Önce kısa özetleri oku ve kartları çevir. Sonra 10 soruluk tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+ "buyukResim": "Bir sayıyı kesir ya da ondalık olarak yazabiliyoruz: [[-1/4]] ile −0,25 aynı sayıdır. Karşılaştırırken bu çok işe yarar: iki sayıyı aynı gösterime çevir, sonra sayı doğrusunda yerlerine bak. Sağdaki büyüktür, eksiler ters sıralanır.",
+ "kapsar": [
+  "u1k4",
+  "u1k5"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Kesir çizgisi bölme demektir: [[1/5]] = 1 ÷ 5 = 0,2. Paydayı 10, 100, 1000 yapabiliyorsan daha kolay.",
+    "Bölme biterse sonlu (0,25), hiç bitmezse devirli (0,[[d:3]]) ondalık gösterim olur. Paydada yalnız 2 ve 5 varsa sonludur.",
+    "Ondalıktan kesre: virgülden sonraki basamak kadar sıfır, sonra sadeleştir."
+   ]
+  },
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "Sayı doğrusunda sağdaki büyüktür; dikey sayı doğrusunda yukarıdaki büyüktür.",
+    "Negatif < 0 < pozitif. İki negatiften 0'a daha uzak olan küçüktür: −3 < −1.",
+    "Önce kısa yol ara; yoksa paydaları ya da payları eşitle, ya da ikisini de ondalığa çevir."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "sorular": [
+  {
+   "soru": "Hangisi [[-1/2]] ile 0 arasındadır?",
+   "secenekler": [
+    "[[-2/5]]",
+    "−0,6",
+    "−0,[[d:5]]"
+   ],
+   "dogru": 0,
+   "ipucu": "Hepsini ondalığa çevir. [[-1/2]] = −0,5. Hangisi −0,5'ten 0'a daha yakın?",
+   "aciklama": "[[-2/5]] = [[-4/10]] = −0,4. −0,5 < −0,4 < 0. −0,6 ve −0,555… ise −0,5'ten küçüktür; 0'a daha uzaktır.",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Kısa Yollar"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Paydayı 10, 100, 1000 Yap"
+    }
+   ]
+  },
+  {
+   "soru": "Üç şehirde sıcaklıklar ölçülüyor: −1,5 °C, [[-7/4]] °C ve −1,2 °C. En soğuk şehrin sıcaklığını ondalık gösterimle yaz.",
+   "cevap": "-1,75",
+   "ipucu": "[[-7/4]]'ü ondalığa çevir: paydayı 100 yap. Sonra üç sayıdan 0'a en uzak olanı bul.",
+   "aciklama": "[[-7/4]] = [[-175/100]] = −1,75. −1,75 < −1,5 < −1,2. En soğuk −1,75 °C.",
+   "birim": "°C",
+   "denk": true,
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Paydayı 10, 100, 1000 Yap"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Negatiflerde Uzak Olan Küçük"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Önce hepsini aynı gösterime getir: [[-7/4]]'ün paydasını 100 yap (4 × 25 = 100).",
+     "[[-175/100]] ondalık olarak kaçtır? Virgülden sonra 2 basamak.",
+     "Üç sayı da negatif. Eksilerde 0'a en uzak olan en küçüktür, yani en soğuktur.",
+     "Tam kısımlar eşit (1). Virgülden sonraki basamaklara bak: hangisi en büyük?"
+    ]
+   }
+  },
+  {
+   "soru": "−1 ile −0,5 arasında, paydası 4 olan sayının yerine dokun.",
+   "nokta": -0.75,
+   "sayiDogrusu": {
+    "min": -2,
+    "max": 0,
+    "bolme": 4
+   },
+   "ipucu": "−1 ile 0 arası 4 parçaya bölünmüş; her çizgi [[1/4]]. −0,5 = [[-2/4]]. Onunla −1 arasında hangi çizgi var?",
+   "aciklama": "[[-3/4]] = −0,75. −1 < −0,75 < −0,5.",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Arada Hep Bir Sayı Var"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Ondalıktan Kesre"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisinin ondalık gösterimi hem devirlidir hem de 0'dan küçüktür?",
+   "secenekler": [
+    "[[-3/8]]",
+    "[[1/6]]",
+    "[[-1/3]]"
+   ],
+   "dogru": 2,
+   "ipucu": "İki şey ara: işaret eksi mi? Paydada 2 ve 5'ten başka çarpan var mı?",
+   "aciklama": "[[-1/3]] = −0,[[d:3]]: negatif ve devirli. [[-3/8]] sonludur (−0,375; 8 = 2 × 2 × 2). [[1/6]] devirlidir ama pozitiftir.",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Sonlu mu, Devirli mi?"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Negatif, Sıfır, Pozitif"
+    }
+   ]
+  },
+  {
+   "soru": "İki dalgıç deniz seviyesinin altında. A dalgıcı −2,35 m'de, B dalgıcı [[-12/5]] m'de. Daha derindeki dalgıcın konumunu ondalık gösterimle yaz.",
+   "cevap": "-2,4",
+   "ipucu": "[[-12/5]]'i ondalığa çevir. Daha derin olan, deniz seviyesine (0) daha uzak olandır.",
+   "aciklama": "[[-12/5]] = [[-24/10]] = −2,4. −2,4 < −2,35, yani B daha derinde: −2,4 m.",
+   "birim": "m",
+   "denk": true,
+   "sayiDogrusu": {
+    "min": -3,
+    "max": 0,
+    "dikey": true,
+    "sifirEtiketi": "Deniz seviyesi"
+   },
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Kesir Çizgisi Bölmedir"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Dikey Sayı Doğrusu"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Deniz seviyesi 0. İki dalgıç da altında, ikisi de eksi.",
+     "[[-12/5]]'in paydasını 10 yap (5 × 2 = 10). Kaç onda kaç olur?",
+     "Şimdi −2,35 ile karşılaştır. Daha derin olan 0'a daha uzak olandır.",
+     "İkisinin tam kısmı 2. Onda birler basamağına bak."
+    ]
+   }
+  },
+  {
+   "soru": "−0,[[d:3]] ☐ −0,3 — kutuya hangi işaret gelir?",
+   "secenekler": [
+    ">",
+    "<",
+    "="
+   ],
+   "dogru": 1,
+   "ipucu": "−0,[[d:3]] = −0,333… Hangisi 0'a daha uzak? Eksilerde uzak olan küçüktür.",
+   "aciklama": "−0,333… sayısı −0,3'ten 0'a daha uzaktır, yani daha küçüktür: −0,[[d:3]] < −0,3.",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Devirli Ondalık Gösterim"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Negatiflerde Uzak Olan Küçük"
+    }
+   ]
+  }
+ ]
+}
