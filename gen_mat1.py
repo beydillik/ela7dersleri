@@ -1483,6 +1483,550 @@ def u1k5():
     }
 
 
+# ---------- u1k6 çizimleri ----------
+def svg6_yolculuk():
+    g = txt(60, 34, f"({M}2) + (+4)", "#f5f6fa", 15)
+    g += _sd_mini(86, range(-4, 5), 12, 12, etiket=(-2, 0, 2))
+    g += f"<path d='M36 78 Q60 44 84 78' stroke='{OB}' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M84 78 l-8 -3 4 -6z' fill='{OB}'/>"
+    g += f"<circle cx='36' cy='86' r='6' fill='{NB}'/><circle cx='84' cy='86' r='6' fill='#f2c14e'/>"
+    return bg(g)
+
+
+def svg6_ayni():
+    g = txt(60, 30, f"({M}3) + ({M}2)", "#f5f6fa", 15)
+    g += f"<rect x='18' y='44' width='48' height='22' rx='6' fill='{NB}'/>" + txt(42, 60, "3", "#1b2340", 14)
+    g += f"<rect x='70' y='44' width='32' height='22' rx='6' fill='{NB}'/>" + txt(86, 60, "2", "#1b2340", 14)
+    g += "<path d='M18 74 q0 8 8 8 h68 q8 0 8 -8' stroke='#f2c14e' stroke-width='2.5' fill='none'/>"
+    g += txt(60, 106, f"= {M}5", NB, 20)
+    return bg(g)
+
+
+def svg6_farkli():
+    g = txt(60, 28, f"({M}5) + (+3)", "#f5f6fa", 15)
+    g += f"<rect x='20' y='40' width='80' height='18' rx='5' fill='{NB}'/><rect x='20' y='40' width='48' height='18' rx='5' fill='#1b2340' opacity='.6'/>"
+    g += f"<rect x='20' y='64' width='48' height='18' rx='5' fill='{OB}'/>"
+    g += "<path d='M70 90 v6 h30 v-6' stroke='#f2c14e' stroke-width='2.5' fill='none'/>"
+    g += txt(38, 110, f"5 {M} 3", "#f5f6fa", 13) + txt(86, 112, f"{M}2", NB, 18)
+    return bg(g)
+
+
+def svg6_ters():
+    g = txt(60, 30, f"({M}3) + (+3)", "#f5f6fa", 15)
+    g += _sd_mini(72, range(-4, 5), 12, 12, etiket=(-3, 0, 3))
+    g += f"<path d='M60 64 Q42 34 24 64' stroke='{NB}' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M24 64 l1 -9 7 5z' fill='{NB}'/>"
+    g += f"<path d='M24 64 Q42 48 58 64' stroke='{OB}' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M58 64 l-8 -2 4 -6z' fill='{OB}'/>"
+    g += "<circle cx='60' cy='72' r='7' fill='#f2c14e'/>" + txt(60, 114, "= 0", "#f2c14e", 16)
+    return bg(g)
+
+
+def svg6_mutlak_once():
+    g = txt(60, 36, f"|{M}5| + |{M}9|", "#f5f6fa", 17)
+    g += "<path d='M60 46 v12' stroke='#f2c14e' stroke-width='3'/><path d='M60 66 l-6 -8 h12z' fill='#f2c14e'/>"
+    g += txt(60, 88, "5 + 9", OB, 18) + txt(60, 110, "= 14", "#f2c14e", 17)
+    return bg(g)
+
+
+def svg6_cikarma():
+    g = txt(60, 34, f"10 {M} ({M}6)", "#f5f6fa", 18)
+    g += "<path d='M47 42 v14 M77 42 v14' stroke='#f2c14e' stroke-width='3'/><path d='M47 62 l-5 -7 h10z M77 62 l-5 -7 h10z' fill='#f2c14e'/>"
+    g += txt(60, 84, "10 + (+6)", OB, 18) + txt(60, 110, "= 16", "#f2c14e", 16)
+    return bg(g)
+
+
+def svg6_arada():
+    g = "<rect x='49' y='28' width='22' height='32' rx='6' fill='none' stroke='#f2c14e' stroke-width='2.5'/>"
+    g += txt(30, 52, f"{M}4", NB, 24) + txt(60, 52, M, "#f2c14e", 24) + txt(88, 52, "5", OB, 24)
+    g += txt(60, 78, "çıkar", "#f2c14e", 12) + txt(60, 104, f"({M}4) {M} (+5)", "#f5f6fa", 14)
+    return bg(g)
+
+
+# =================================================================
+def u1k6():
+    sd = lambda mn, mx, **ek: dict({"min": mn, "max": mx}, **ek)
+    kat = lambda mn, mx, **ek: dict({"min": mn, "max": mx, "dikey": True, "birim": 28, "sifirEtiketi": "Zemin kat"}, **ek)
+    ok = lambda a, b, e, r: {"bas": a, "son": b, "etiket": e, "renk": r}
+    return {
+        "id": "u1k6", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Tam Sayılarla Toplama ve Çıkarma", "sayfalar": "s. 62–72",
+        "giris": "Sayı doğrusunda yürümeyi biliyorsun. Bu konuda eksi ve artı sayıları toplayıp çıkaracağız. Asansörle inip çıkmak, borç almak, denizaltının yükselmesi: hepsi birer toplama ya da çıkarma işlemi.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu; sayı doğrusu, işaret kelimeleri ve mutlak değer üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+            "maddeler": [
+                {"ad": "Eksi sayılar sayı doğrusunda", "sinif": "1. konu", "svg": svg_dogru(),
+                 "anlatim": "Sayı doğrusunda 0'ın sağında pozitif sayılar, solunda negatif sayılar vardır. Eksi bir sayıyı bulmak için 0'dan sola doğru sayarız.",
+                 "akilda": "Sol eksi, sağ artı",
+                 "ornek": {"problem": f"{M}3'ü sayı doğrusunda bulalım.", "adimlar": [
+                     {"metin": f"{M}3 eksi bir sayı. Eksi sayılar 0'ın solunda.", "islem": "Yön: sola"},
+                     {"metin": "0'dan sola 3 aralık say.",
+                      "sayiDogrusu": sd(-5, 3, oklar=[ok(0, -3, "3 aralık", NEG)], isaretler=[{"x": -3, "etiket": f"{M}3", "renk": NEG}]),
+                      "islem": f"0 → {M}3"}]},
+                 "sorular": [
+                     N(f"Sayı doğrusunda {M}5'in yerine dokun.", -5, sd(-7, 5), "0'ı bul. Sola doğru 5 aralık say.", f"{M}5, 0'ın 5 birim solundadır."),
+                     S("Hangisi sayı doğrusunda 0'ın solundadır?", ["4", "0", f"{M}4"], 2, "0'ın solunda eksi sayılar vardır.", f"{M}4 negatiftir, 0'ın solundadır.")]},
+                {"ad": "Kelimeden sayıya", "sinif": "1. konu", "svg": svg_kelime(),
+                 "anlatim": "Sözel problemlerde işareti kelime söyler. Altı, borç, gider, zarar, aşağı → eksi. Üstü, alacak, gelir, kâr, yukarı → artı.",
+                 "akilda": "Kelime işareti söyler",
+                 "ornek": {"problem": "Berk arkadaşından 65 TL borç aldı. Bunu tam sayıyla yazalım.", "adimlar": [
+                     {"metin": "İşaret kelimesini bul: borç.", "islem": "Borç → eksi"},
+                     {"metin": "Sayıyı işaretiyle yaz.", "islem": f"{M}65"}]},
+                 "sorular": [
+                     G("Deniz seviyesinin 100 metre altındaki bir denizaltının konumunu tam sayıyla yaz.", "-100",
+                       f"\"Altında\" eksi demek. Önce {M} tuşuna dokun.", f"Deniz seviyesinin 100 m altı: {M}100 m.", birim="m"),
+                     S("Hangisi artı (+) ile gösterilir?", ["5 TL borç", "3 kat aşağı", "20 TL kâr"], 2,
+                       "Kâr mı, borç mu, aşağı mı? Hangisi artı kelimesi?", "Kâr artıdır: +20. Borç ve aşağı eksidir.")]},
+                {"ad": "Mutlak değer", "sinif": "3. konu", "svg": svg_mutlak(),
+                 "anlatim": "Bir sayının 0'a uzaklığına mutlak değer denir. Kısa yol: işareti sil, sayı kalır. Mutlak değer hiç eksi olmaz.",
+                 "akilda": "İşareti sil, sayı kalır",
+                 "ornek": {"problem": f"|{M}9| kaçtır?", "adimlar": [
+                     {"metin": f"{M}9, 0'dan kaç birim uzakta?", "islem": "9 birim"},
+                     {"metin": "Uzaklık eksi olmaz.", "islem": f"|{M}9| = 9"}]},
+                 "sorular": [
+                     G(f"|{M}15| kaçtır?", "15", "İşareti sil, sayı kalır.", f"|{M}15| = 15."),
+                     S("Hangisinin mutlak değeri en büyüktür?", [f"{M}12", "8", "0"], 0,
+                       "Her sayının işaretini sil. Hangisi 0'a en uzak?", f"|{M}12| = 12, |8| = 8, |0| = 0. En büyüğü 12.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Toplama Bir Yolculuktur", "renk": "#1f9e8f", "svg": svg6_yolculuk(),
+             "aciklama": "Toplamayı sayı doğrusunda bir yolculuk gibi düşün. Birinci sayıdan başla. Artı bir sayı eklersen sağa, eksi bir sayı eklersen sola git.",
+             "ek": "Kitapta oyun puanları ve asansör örnekleri sayı doğrusunda böyle gösteriliyor: + işaretli puanlar sağa, − işaretli puanlar sola. (s. 63–64)",
+             "akilda": "Artı sağa, eksi sola",
+             "sayiDogrusu": sd(-5, 3, oklar=[ok(0, -4, f"{M}4", NEG), ok(-4, -2, "+2", POS)], isaretler=[{"x": -2, "etiket": f"{M}2", "renk": NEG}]),
+             "cozum": {"baslik": "Seda hangi katta?",
+                       "problem": "Seda zemin kattan asansöre bindi. Önce 4 kat aşağı indi, sonra 2 kat yukarı çıktı. Seda şimdi hangi katta?",
+                       "sayiDogrusu": kat(-5, 2, oklar=[ok(0, -4, "4 aşağı", NEG), ok(-4, -2, "2 yukarı", POS)]),
+                       "adimlar": [
+                           {"metin": "Başlangıç (0) nerede? Zemin kat.", "islem": "Zemin kat = 0"},
+                           {"metin": "4 kat aşağı indi. Aşağı eksidir: 0'dan 4 aralık aşağı.", "islem": f"0 + ({M}4) = {M}4"},
+                           {"metin": f"2 kat yukarı çıktı. Yukarı artıdır: {M}4'ten 2 aralık yukarı.", "islem": f"({M}4) + (+2) = {M}2"}],
+                       "sonuc": f"Seda {M}2. katta, yani zeminin 2 kat altında. İşlem: ({M}4) + (+2) = {M}2. (s. 62)"},
+             "sende": {"baslik": "Ali asansörde",
+                       "problem": "Ali zemin katın 6 kat altında. Asansörle 12 kat yukarı çıktı. Ali şimdi hangi katta?",
+                       "sayiDogrusu": sd(-7, 7),
+                       "adimlar": [
+                           {"metin": "Başlangıç: Ali nerede?",
+                            "soru": G("Ali'nin ilk katını tam sayıyla yaz.", "-6", f"Zeminin altı eksidir. Önce {M} tuşuna dokun.", f"Zeminin 6 kat altı: {M}6."),
+                            "islem": f"Başlangıç: {M}6"},
+                           {"metin": "Yön ve kaç birim? 12 kat yukarı.",
+                            "soru": S("12 kat yukarı nasıl yazılır?", [f"{M}12", "+12", "0"], 1, "Yukarı artı mı, eksi mi?", "Yukarı artıdır: +12."),
+                            "islem": "+12"},
+                           {"metin": f"Yolculuğu yap: {M}6'dan sağa 12 aralık git.",
+                            "soru": N(f"({M}6) + (+12) işleminin sonucuna dokun.", 6, sd(-7, 7),
+                                      f"{M}6'dan başla. 6 aralık sağa gidince 0'a varırsın. Kalan aralıkları da say.", f"{M}6'dan 12 aralık sağa: +6."),
+                            "islem": f"({M}6) + (+12) = +6"}],
+                       "sonuc": "Harika! Ali şimdi 6. katta. (s. 64)"},
+             "soru": N(f"({M}3) + (+5) işleminin sonucuna dokun.", 2, sd(-6, 6),
+                       f"{M}3'ten başla. +5 artı: sağa 5 aralık git.", f"{M}3'ten sağa 5 aralık: {M}2, {M}1, 0, 1, 2. Sonuç +2. (s. 64)")},
+            {"ad": "Aynı İşaret: Topla, İşareti Koru", "renk": "#7b4fc9", "svg": svg6_ayni(),
+             "aciklama": "İki sayının işareti aynıysa mutlak değerlerini topla. Sonucun başına ortak işaretlerini yaz.",
+             "ek": f"(+11) + (+8) = +19 ve ({M}20) + ({M}7) = {M}27. İki borç birleşince borç büyür; iki kâr birleşince kâr büyür. (s. 65)",
+             "akilda": "Aynı işaret: topla, işareti koru",
+             "cozum": {"baslik": "Berk'in toplam borcu",
+                       "problem": "Berk kitap almak için arkadaşından 65 TL, kuzeninden 85 TL borç aldı. Toplam borcunu tam sayıyla yazalım.",
+                       "adimlar": [
+                           {"metin": "Kelimeye bak: borç eksidir.", "islem": f"Arkadaşı: {M}65, kuzeni: {M}85"},
+                           {"metin": "İşlemi yaz.", "islem": f"({M}65) + ({M}85)"},
+                           {"metin": "İşaretler aynı (ikisi de eksi). Mutlak değerleri topla.", "islem": "65 + 85 = 150"},
+                           {"metin": "Ortak işareti başa yaz.", "islem": f"({M}65) + ({M}85) = {M}150"}],
+                       "sonuc": f"Berk'in toplam borcu 150 TL; tam sayıyla {M}150. (s. 62)"},
+             "soru": S(f"({M}20) + ({M}7) kaçtır?", [f"{M}13", "+27", f"{M}27"], 2,
+                       "İşaretler aynı mı? Aynıysa 20 ile 7'yi topla, ortak işareti koru.",
+                       f"İkisi de eksi: 20 + 7 = 27, işaret eksi: {M}27. (s. 65)")},
+            {"ad": "Farklı İşaret: Çıkar, Büyüğün İşareti", "renk": "#e8590c", "svg": svg6_farkli(),
+             "aciklama": "İşaretler farklıysa mutlak değeri büyük olandan küçük olanı çıkar. Sonuca, mutlak değeri büyük olanın işaretini koy.",
+             "ek": f"({M}15) + (+6) = {M}9: 15 − 6 = 9, büyük olan {M}15. ({M}12) + (+16) = +4: 16 − 12 = 4, büyük olan +16. İp çekme oyunu gibi düşün: güçlü taraf kazanır, fark kadar. (s. 65)",
+             "akilda": "Farklı işaret: çıkar, büyüğün işareti",
+             "cozum": {"baslik": "Denizaltı yükseliyor",
+                       "problem": "Deniz seviyesinin 100 metre altındaki bir denizaltı, yüzeye yaklaşmak için 50 metre yükseldi. Yeni konumu ne?",
+                       "adimlar": [
+                           {"metin": "Başlangıç (0) nerede? Deniz seviyesi. Denizaltı altında: eksi.", "islem": f"Başlangıç: {M}100"},
+                           {"metin": "Yön: yükseldi, yukarı artıdır. Kaç metre?", "islem": "+50"},
+                           {"metin": "İşaretler farklı: büyükten küçüğü çıkar.", "islem": f"({M}100) + (+50) → 100 {M} 50 = 50"},
+                           {"metin": f"Mutlak değeri büyük olan {M}100. Onun işaretini koy.", "islem": f"({M}100) + (+50) = {M}50"}],
+                       "sonuc": f"Denizaltı deniz seviyesinin 50 m altında: {M}50 m. (s. 62)"},
+             "sende": {"baslik": "Mehmet'in bakiyesi",
+                       "problem": f"Mehmet'in banka hesabında {M}175 TL var (bu bir borç). Hesabına 100 TL yatırdı. Yeni bakiyesi ne?",
+                       "adimlar": [
+                           {"metin": "İşlemi yaz: para yatırmak artıdır.", "islem": f"({M}175) + (+100)"},
+                           {"metin": "İşaretler farklı. Büyükten küçüğü çıkar.",
+                            "soru": G(f"175 {M} 100 kaçtır?", "75", "175'ten 100 çıkar.", f"175 {M} 100 = 75."),
+                            "islem": f"175 {M} 100 = 75"},
+                           {"metin": "Hangi sayının mutlak değeri büyük? Onun işaretini koy.",
+                            "soru": S("Sonucun işareti ne olur?", ["Eksi, çünkü 175 daha büyük", "Artı, çünkü para yatırdı", "İşareti olmaz"], 0,
+                                      "175 mi büyük, 100 mü? Büyük olanın işareti ne?", f"Mutlak değeri büyük olan {M}175; işaret eksi."),
+                            "islem": f"({M}175) + (+100) = {M}75"}],
+                       "sonuc": f"Harika! Mehmet'in bakiyesi {M}75 TL. Borcu azaldı ama bitmedi. (s. 68)"},
+             "soru": G(f"({M}12) + (+16) kaçtır?", "4",
+                       "İşaretler farklı: 16 ile 12'nin farkını bul. Hangisinin mutlak değeri büyük?",
+                       f"16 {M} 12 = 4. Büyük olan +16, işaret artı: +4. (s. 65)")},
+            {"ad": "Ters İşaretliler Toplanınca 0", "renk": "#b7791f", "svg": svg6_ters(),
+             "aciklama": "Bir sayı ile ters işaretlisini toplarsan sonuç 0 olur. Sola ne kadar gidersen sağa da o kadar gelirsin.",
+             "ek": f"Kitaptaki alıştırmada (+10) + ({M}10) işlemi var: sonuç 0. 3 kat inip 3 kat çıkan kişi yine zemin kattadır. (s. 66)",
+             "akilda": "Sayı + tersi = 0",
+             "soru": S(f"({M}8) + (+8) kaçtır?", [f"{M}16", "0", "+16"], 1,
+                       f"{M}8 ile +8 birbirinin tersi mi? 8 sola, 8 sağa gidersen nereye varırsın?",
+                       f"{M}8 ile +8 ters işaretlidir: toplamları 0. (s. 66)")},
+            {"ad": "Önce Mutlak Değer", "renk": "#c92a2a", "svg": svg6_mutlak_once(),
+             "aciklama": "İşlemde mutlak değer varsa önce onun sonucunu bul. Sonra işleme devam et.",
+             "ek": f"|{M}5| + |{M}9| = (+5) + (+9) = 14. Mutlak değer hiç eksi olmaz; bu yüzden ikisi de artı olur. (s. 66)",
+             "akilda": "Önce | | çözülür",
+             "soru": G(f"|{M}3| + ({M}8) kaçtır?", "-5",
+                       f"Önce |{M}3| kaç, onu bul. Sonra o sayıyı {M}8 ile topla.",
+                       f"|{M}3| = 3. (+3) + ({M}8): işaretler farklı, 8 {M} 3 = 5, büyük olan {M}8: {M}5. (s. 66)")},
+            {"ad": "Çıkarma = Tersiyle Toplama", "renk": "#1d6fa3", "svg": svg6_cikarma(),
+             "aciklama": "Tam sayılarda çıkarma yaparken çıkan sayının işaretini ters çevir ve topla. Sonra toplama kurallarını kullan.",
+             "ek": f"(+10) {M} ({M}8) = (+10) + (+8) = +18. ({M}12) {M} (+5) = ({M}12) + ({M}5) = {M}17. 6 {M} 9 = 6 + ({M}9) = {M}3. (s. 69)",
+             "akilda": "Çıkarmayı çevir, topla",
+             "cozum": {"baslik": "Karabatak ile balık",
+                       "problem": "Bir karabatak deniz seviyesinin 10 m üstünde uçuyor. Tam altında bir balık, deniz seviyesinin 6 m altında yüzüyor. Aralarındaki yükseklik farkı kaç metre?",
+                       "sayiDogrusu": {"min": -7, "max": 11, "dikey": True, "birim": 16, "sifirEtiketi": "Deniz seviyesi",
+                                       "isaretler": [{"x": 10, "etiket": "Karabatak", "renk": POS}, {"x": -6, "etiket": "Balık", "renk": NEG}]},
+                       "adimlar": [
+                           {"metin": "Başlangıç (0): deniz seviyesi. Konumları yaz.", "islem": f"Karabatak: +10, balık: {M}6"},
+                           {"metin": "Farkı bulmak için büyükten küçüğü çıkar.", "islem": f"(+10) {M} ({M}6)"},
+                           {"metin": "Çıkarmayı toplamaya çevir: çıkan sayının işaretini ters yap.", "islem": "(+10) + (+6)"},
+                           {"metin": "İşaretler aynı: topla.", "islem": "(+10) + (+6) = +16"}],
+                       "sonuc": "Fark 16 m. Kontrol: Deniz seviyesinden karabatağa 10 m, balığa 6 m; 10 + 6 = 16. (s. 67)"},
+             "sende": {"baslik": "Erzurum'da gece ile gündüz",
+                       "problem": f"Erzurum'da gündüz sıcaklığı {M}5 °C, gece sıcaklığı {M}13 °C. Gündüz ile gece arasında kaç derece fark var?",
+                       "sayiDogrusu": {"min": -14, "max": 1, "dikey": True, "birim": 16, "sifirEtiketi": "0 °C",
+                                       "isaretler": [{"x": -5, "etiket": "Gündüz", "renk": NEG}, {"x": -13, "etiket": "Gece", "renk": NEG}]},
+                       "adimlar": [
+                           {"metin": "Farkı bulmak için büyükten küçüğü çıkar. Hangisi büyük?",
+                            "soru": S("Hangisi daha büyüktür (daha sıcaktır)?", [f"{M}5 °C", f"{M}13 °C", "İkisi eşit"], 0,
+                                      "Dikey sayı doğrusunda hangisi daha yukarıda?", f"{M}5, {M}13'ten yukarıdadır; daha büyüktür."),
+                            "islem": f"({M}5) {M} ({M}13)"},
+                           {"metin": "Çıkarmayı toplamaya çevir.",
+                            "soru": S(f"({M}5) {M} ({M}13) hangisine eşittir?", [f"({M}5) + ({M}13)", f"({M}5) + (+13)", f"(+5) + ({M}13)"], 1,
+                                      "Yalnız çıkan sayının işaretini ters çevir. Birinci sayıya dokunma.", f"{M}13'ün tersi +13: ({M}5) + (+13)."),
+                            "islem": f"({M}5) + (+13)"},
+                           {"metin": "İşaretler farklı: büyükten küçüğü çıkar, büyüğün işaretini koy.",
+                            "soru": G(f"({M}5) + (+13) kaçtır?", "8", f"13 {M} 5 kaç? Büyük olan +13.", f"13 {M} 5 = 8, işaret artı: +8.", birim="derece"),
+                            "islem": "= +8"}],
+                       "sonuc": "Harika! Gündüz ile gece arasında 8 derece fark var. (s. 70)"},
+             "soru": G(f"4 {M} ({M}5) kaçtır?", "9", "Çıkarmayı toplamaya çevir: 4 + (+5).", f"4 {M} ({M}5) = 4 + (+5) = 9. (s. 69)")},
+            {"ad": "Aradaki Eksi Çıkarmadır", "renk": "#5f3dc4", "svg": svg6_arada(),
+             "aciklama": f"{M}4 {M} 5 işleminde ortadaki {M} çıkarma işaretidir. 5'in işareti artıdır, yazılmamıştır: {M}4 {M} 5 = ({M}4) {M} (+5).",
+             "ek": f"Sonra çıkarmayı çevirip topla: ({M}4) + ({M}5) = {M}9. Sayının başındaki {M} ile iki sayının arasındaki {M} işaretini karıştırma. (s. 69)",
+             "akilda": "Aradaki eksi = çıkar",
+             "soru": S(f"{M}4 {M} 5 kaçtır?", [f"{M}1", "+1", f"{M}9"], 2,
+                       f"Aradaki {M} çıkarma: ({M}4) {M} (+5). Çevir ve topla.",
+                       f"({M}4) {M} (+5) = ({M}4) + ({M}5) = {M}9. (s. 69)")}
+        ],
+        "biliyorMusun": [
+            f"Dünyadaki saatler UTC denen ortak bir zamana göre ayarlanır. İstanbul UTC+3, Tokyo UTC+9, Vancouver UTC{M}8'dir. İstanbul Tokyo'dan 6 saat geride, Vancouver'dan 11 saat ileridedir: (+3) {M} (+9) = {M}6 ve (+3) {M} ({M}8) = +11. (s. 71–72)",
+            "Gençtürk ailesi bir ayda lambaları kapatarak 100 TL, cihazları kapatarak 70 TL tasarruf etti; çamaşır makinesi yüzünden 60 TL fazla harcadı. Ailenin aylık değişimi de tam sayılarla toplanarak bulunur. (s. 62)"],
+        "akildaKalsin": [
+            "Toplama bir yolculuktur: artı sağa, eksi sola.",
+            "Aynı işaret: mutlak değerleri topla, ortak işareti koru.",
+            "Farklı işaret: büyükten küçüğü çıkar, büyüğün işaretini koy.",
+            "Bir sayı ile ters işaretlisinin toplamı 0'dır.",
+            f"Çıkarmayı çevir, topla: 4 {M} ({M}5) = 4 + (+5).",
+            "İşlemde | | varsa önce onu çöz."],
+        "merakKutusu": [
+            {"soru": "Pozitif sayının başına + yazmak zorunlu mu?", "cevap": f"Hayır. Pozitif sayıların + işareti çoğu zaman yazılmaz: 7 = +7. Ama negatif sayıların {M} işareti mutlaka yazılır. (s. 66)"},
+            {"soru": "Neden çıkarmayı toplamaya çeviriyoruz?", "cevap": f"Çünkü toplama kurallarını zaten biliyoruz. Bir sayıyı çıkarmak, tersini eklemekle aynı sonucu verir. Karabatak örneğinde 10 {M} ({M}6) ile 10 + 6 aynı sonucu verdi. (s. 67)"},
+            {"soru": "Toplayınca sayı hep büyür mü?", "cevap": f"Hayır. Eksi bir sayı eklersen sonuç küçülür: 5 + ({M}3) = 2. Sayı doğrusunda sola gitmiş olursun. (s. 65)"},
+            {"soru": "İki eksi sayının toplamı artı olabilir mi?", "cevap": f"Hayır. İki borç birleşince borç büyür: ({M}3) + ({M}4) = {M}7. (s. 65)"},
+            {"soru": "Saat dilimleri neden + ve − ile yazılır?", "cevap": "Bir ülkenin saati UTC'ye göre ileride ise + , geride ise − ile gösterilir. UTC+3, İstanbul'un saatinin 3 saat ileride olduğunu söyler. (s. 71)"}],
+        "dusunVeYaz": [{"soru": f"Hesabında {M}40 TL olan birine 25 TL para yatırılıyor. Yeni bakiyeyi bul ve nasıl bulduğunu anlat.",
+                        "ornekCevap": f"({M}40) + (+25) işlemini yaparım. İşaretler farklı: 40 {M} 25 = 15. 40 daha büyük ve eksi, sonuç {M}15 TL. Borç azaldı ama bitmedi.",
+                        "anahtarlar": ["farklı", "çıkar", "büyük", "15", "eksi"]}],
+        "sorular": [
+            G("Bir oyunda Alperen 1. bölümde 3 puan kaybetti, 2. bölümde 8 puan kazandı. Oyun sonu puanı kaçtır?", "5",
+              f"Kaybetmek eksi, kazanmak artı: ({M}3) + (+8).", f"({M}3) + (+8): 8 {M} 3 = 5, büyük olan +8: +5 puan. (s. 63)", birim="puan"),
+            S(f"({M}6) + ({M}5) + ({M}12) kaçtır?", [f"{M}23", "+23", f"{M}1"], 0,
+              "Üçünün de işareti aynı. Mutlak değerleri topla, ortak işareti koru.", f"6 + 5 + 12 = 23, işaret eksi: {M}23. (s. 66)"),
+            N(f"(+2) + ({M}7) işleminin sonucuna dokun.", -5, sd(-8, 4),
+              f"+2'den başla. {M}7 eksi: sola 7 aralık git.", f"+2'den sola 7 aralık: {M}5. (s. 66)"),
+            S("Hangisinin sonucu 0'dır?", ["(+7) + (+7)", f"({M}9) + (+9)", f"({M}5) + (+4)"], 1,
+              "Hangisinde bir sayı ile ters işaretlisi toplanıyor?", f"{M}9 ile +9 ters işaretlidir: toplamları 0. (s. 66)"),
+            G(f"(+5) {M} (+25) kaçtır?", "-20",
+              f"Çıkarmayı toplamaya çevir: (+5) + ({M}25).", f"(+5) + ({M}25): 25 {M} 5 = 20, büyük olan {M}25: {M}20. (s. 69)"),
+            S(f"Esma Hanım'ın hesabında {M}100 TL var. Hesabına 75 TL yatırdı. Yeni bakiyeyi hangi işlem verir?",
+              [f"({M}100) + 75", f"({M}100) {M} 75", f"({M}100) + ({M}75)"], 0,
+              "Para yatırmak artı mı, eksi mi? Bakiyeye eklenir mi, çıkar mı?", f"Yatırmak artıdır: ({M}100) + 75 = {M}25 TL. (s. 68)"),
+            G(f"|{M}5| + |{M}9| kaçtır?", "14", "Önce mutlak değerleri bul, sonra topla.", f"|{M}5| = 5, |{M}9| = 9. 5 + 9 = 14. (s. 66)"),
+            S(f"{M}3 {M} 4 {M} 5 kaçtır?", [f"{M}12", f"{M}4", "+6"], 0,
+              f"Aradaki her {M} çıkarmadır: ({M}3) + ({M}4) + ({M}5).", f"({M}3) + ({M}4) + ({M}5) = {M}12. (s. 69)"),
+            N("Ece zemin katta. Önce 5 kat aşağı indi, sonra 3 kat yukarı çıktı. Ece'nin katına dokun.", -2, kat(-6, 3),
+              "Zemin kat 0. 5 aralık aşağı, sonra 3 aralık yukarı.", f"({M}5) + (+3) = {M}2. Ece {M}2. katta. (s. 62)"),
+            G("Bir havucun yaprak ucu toprağın 18 cm üstünde, kök ucu toprağın 12 cm altında. Yaprak ucu ile kök ucu arasında kaç cm var?", "30",
+              f"Toprak seviyesi 0. Yaprak +18, kök {M}12. Büyükten küçüğü çıkar.", f"(+18) {M} ({M}12) = (+18) + (+12) = 30 cm. (s. 68)", birim="cm")]
+    }
+
+
+# ---------- u1k7 çizimleri ----------
+def svg6_carpim():
+    g = "".join(f"<circle cx='{30 + i * 20}' cy='{24 + j * 20}' r='7' fill='{OB}'/>" for i in range(4) for j in range(3))
+    g += txt(60, 100, "3 · 4 = 12", "#f5f6fa", 16)
+    return bg(g)
+
+
+def svg6_bolme_ters():
+    g = txt(60, 42, "12 ÷ 3 = 4", "#f5f6fa", 16)
+    g += "<path d='M50 54 v18 M70 54 v18' stroke='#f2c14e' stroke-width='3'/><path d='M50 50 l-5 7 h10z M70 76 l-5 -7 h10z' fill='#f2c14e'/>"
+    g += txt(60, 100, "3 · 4 = 12", OB, 16)
+    return bg(g)
+
+
+def svg6_tekrar():
+    g = txt(60, 30, f"4 · ({M}2)", "#f5f6fa", 16)
+    g += _sd_mini(80, range(-8, 1), 12, 12, etiket=(-8, -4, 0))
+    for a, b in ((108, 84), (84, 60), (60, 36), (36, 12)):
+        g += f"<path d='M{a} 72 Q{(a + b) / 2:.0f} 50 {b} 72' stroke='{NB}' stroke-width='2.6' fill='none' stroke-linecap='round'/>"
+    return bg(g)
+
+
+def svg6_isaret(vurgu):
+    g = txt(30, 34, "·", "#9aa3bf", 20) + txt(70, 34, "+", OB, 20) + txt(98, 34, M, NB, 20)
+    g += txt(30, 66, "+", OB, 20) + txt(30, 98, M, NB, 20)
+    g += "<path d='M18 42 h96 M44 14 v96' stroke='#5a6280' stroke-width='2'/>"
+    hucre = {(0, 0): "+", (0, 1): M, (1, 0): M, (1, 1): "+"}
+    for (r, c), s in hucre.items():
+        x, y = 70 + c * 28, 60 + r * 32
+        isik = (r == c) == (vurgu == "ayni")
+        if isik:
+            g += f"<rect x='{x - 13}' y='{y - 15}' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/>"
+        g += txt(x, y + 6, s, OB if s == "+" else NB, 20 if isik else 16, 800 if isik else 600)
+    return bg(g)
+
+
+def svg6_eksileri():
+    g = "".join(f"<circle cx='{x}' cy='44' r='14' fill='{NB}'/>" + txt(x, 51, M, "#1b2340", 20) for x in (24, 60, 96))
+    g += "<path d='M24 60 Q42 80 60 60' stroke='#f2c14e' stroke-width='2.5' fill='none'/>" + txt(42, 90, "+", OB, 16)
+    g += txt(60, 112, f"3 eksi: tek → {M}", "#f5f6fa", 12)
+    return bg(g)
+
+
+def svg6_maden():
+    g = "<line x1='14' y1='20' x2='106' y2='20' stroke='#c98a4b' stroke-width='3'/>" + txt(26, 16, "0", "#f2c14e", 12)
+    g += "<rect x='50' y='20' width='20' height='90' fill='#2b355c' stroke='#9aa3bf' stroke-width='1.5'/>"
+    for k in range(1, 7):
+        g += f"<circle cx='78' cy='{20 + k * 14}' r='3.5' fill='#f2c14e'/>"
+    g += f"<rect x='53' y='92' width='14' height='14' rx='2' fill='{OB}'/>" + txt(30, 110, f"{M}24", NB, 13)
+    g += txt(96, 62, "4 m", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg6_gosterim():
+    g = txt(60, 30, f"({M}12) ÷ 2", "#f5f6fa", 15) + txt(60, 56, f"({M}12) : 2", "#f5f6fa", 15)
+    g += txt(44, 80, f"{M}12", "#f5f6fa", 15) + "<line x1='28' y1='86' x2='60' y2='86' stroke='#f5f6fa' stroke-width='2.5'/>" + txt(44, 104, "2", "#f5f6fa", 15)
+    g += txt(92, 94, f"= {M}6", NB, 16)
+    return bg(g)
+
+
+def svg6_carp_bol():
+    g = "<line x1='60' y1='16' x2='60' y2='104' stroke='#5a6280' stroke-width='2'/>"
+    g += txt(30, 46, "×", "#f2c14e", 28) + txt(90, 46, "÷", "#f2c14e", 28)
+    for x in (12, 24, 36):
+        g += f"<path d='M{x} 70 q6 -10 12 0' stroke='{NB}' stroke-width='2.5' fill='none'/>"
+    g += f"<rect x='68' y='62' width='44' height='12' rx='3' fill='{NB}'/><path d='M83 60 v16 M97 60 v16' stroke='#1b2340' stroke-width='2.5'/>"
+    g += txt(30, 100, "tekrar", "#f5f6fa", 11) + txt(90, 100, "paylaştır", "#f5f6fa", 10)
+    return bg(g)
+
+
+# =================================================================
+def u1k7():
+    sd = lambda mn, mx, **ek: dict({"min": mn, "max": mx}, **ek)
+    ok = lambda a, b, e, r: {"bas": a, "son": b, "etiket": e, "renk": r}
+    return {
+        "id": "u1k7", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Tam Sayılarla Çarpma ve Bölme", "sayfalar": "s. 73–81",
+        "giris": "Bu konuda eksi ve artı sayılarla çarpma ve bölme yapacağız. İyi haber: işaret kuralı ikisinde de aynı! Klima kumandası, metro kartı ve maden asansörü bize yardım edecek.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu çarpım tablosu, bölme ve geçen konudaki toplama kuralı üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Çarpım tablosu", "sinif": "Önceki yıllar", "svg": svg6_carpim(),
+                 "anlatim": "Çarpma, aynı sayıyı tekrar tekrar toplamaktır: 3 · 4 = 4 + 4 + 4 = 12.",
+                 "akilda": "Çarpma = tekrarlı toplama",
+                 "ornek": {"problem": "6 · 7 kaçtır?", "adimlar": [
+                     {"metin": "6 tane 7'yi topla ya da çarpım tablosunu hatırla.", "islem": "7 + 7 + 7 + 7 + 7 + 7"},
+                     {"metin": "Sonucu yaz.", "islem": "6 · 7 = 42"}]},
+                 "sorular": [
+                     G("7 · 8 kaçtır?", "56", "7'ler tablosunu say: 7, 14, 21, ... 8 kere.", "7 · 8 = 56."),
+                     G("9 · 6 kaçtır?", "54", "9'lar tablosu: 9, 18, 27, ... 6 kere.", "9 · 6 = 54.")]},
+                {"ad": "Bölme, çarpmanın tersidir", "sinif": "Önceki yıllar", "svg": svg6_bolme_ters(),
+                 "anlatim": "42 ÷ 6 sorusunda \"6 kaç kere 42 eder?\" diye düşün. Bölmeyi çarpmayla kontrol edebilirsin.",
+                 "akilda": "Bölmeyi çarpmayla kontrol et",
+                 "ornek": {"problem": "24 ÷ 4 kaçtır?", "adimlar": [
+                     {"metin": "4 kaç kere 24 eder?", "islem": "4 · 6 = 24"},
+                     {"metin": "Demek ki:", "islem": "24 ÷ 4 = 6"}]},
+                 "sorular": [
+                     G("56 ÷ 8 kaçtır?", "7", "8 kaç kere 56 eder?", "8 · 7 = 56, yani 56 ÷ 8 = 7."),
+                     S("72 ÷ 9 kaçtır?", ["7", "8", "9"], 1, "9 kaç kere 72 eder?", "9 · 8 = 72, yani 72 ÷ 9 = 8.")]},
+                {"ad": "Eksi sayıları toplama", "sinif": "6. konu", "svg": svg6_ayni(),
+                 "anlatim": f"İki eksi sayıyı toplarken mutlak değerleri topla, eksiyi koru: ({M}2) + ({M}2) = {M}4.",
+                 "akilda": "Aynı işaret: topla, işareti koru",
+                 "ornek": {"problem": f"({M}3) + ({M}3) + ({M}3) kaçtır?", "adimlar": [
+                     {"metin": "İlk ikisini topla.", "islem": f"({M}3) + ({M}3) = {M}6"},
+                     {"metin": "Üçüncüyü ekle.", "islem": f"({M}6) + ({M}3) = {M}9"}]},
+                 "sorular": [
+                     G(f"({M}5) + ({M}5) kaçtır?", "-10", "İşaretler aynı: 5 + 5, işaret eksi.", f"5 + 5 = 10, işaret eksi: {M}10."),
+                     S(f"({M}2) + ({M}2) + ({M}2) kaçtır?", [f"{M}6", "+6", f"{M}4"], 0, "Üç tane 2'yi topla, eksiyi koru.", f"2 + 2 + 2 = 6, işaret eksi: {M}6.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Çarpma = Tekrarlı Toplama", "renk": "#1f9e8f", "svg": svg6_tekrar(),
+             "aciklama": f"4 · ({M}2), dört tane ({M}2)'yi toplamak demektir: ({M}2) + ({M}2) + ({M}2) + ({M}2) = {M}8.",
+             "ek": f"Klima kumandasında mavi tuşa her basışta sıcaklık 2 °C düşer. Mavi tuşa 4 kez basınca sıcaklık 4 · ({M}2) = {M}8 °C değişir. (s. 73)",
+             "akilda": "Kaç kere? Neyi? Topla",
+             "sayiDogrusu": sd(-9, 1, oklar=[ok(0, -2, f"{M}2", NEG), ok(-2, -4, f"{M}2", NEG), ok(-4, -6, f"{M}2", NEG), ok(-6, -8, f"{M}2", NEG)]),
+             "cozum": {"baslik": "Klima kumandası",
+                       "problem": "Klimanın mavi tuşuna her basışta oda sıcaklığı 2 °C azalıyor. Ela tuşa 3 kez bastı. Sıcaklık ne kadar değişti?",
+                       "adimlar": [
+                           {"metin": "Her basışta ne oluyor? Azalmak eksidir.", "islem": f"Bir basış: {M}2"},
+                           {"metin": "Kaç kez? 3 kez. Tekrarlı toplama yaz.", "islem": f"({M}2) + ({M}2) + ({M}2)"},
+                           {"metin": "Aynı işaret: topla, eksiyi koru.", "islem": f"= {M}6"},
+                           {"metin": "Bunu çarpmayla da yazabiliriz.", "islem": f"3 · ({M}2) = {M}6"}],
+                       "sonuc": f"Sıcaklık 6 °C azaldı: 3 · ({M}2) = {M}6. (s. 73)"},
+             "soru": G(f"2 · ({M}5) kaçtır?", "-10", f"2 tane ({M}5)'i topla.", f"({M}5) + ({M}5) = {M}10. (s. 73)")},
+            {"ad": "Farklı İşaret: Çarpım Eksi", "renk": "#e8590c", "svg": svg6_isaret("farkli"),
+             "aciklama": "Farklı işaretli iki tam sayının çarpımı negatiftir. Önce sayıları işaretsiz çarp, sonra başına eksi koy.",
+             "ek": f"({M}6) · (+3) = {M}18 ve (+9) · ({M}1) = {M}9. (s. 74)",
+             "akilda": "Farklı işaret → eksi",
+             "cozum": {"baslik": "Metro kartı",
+                       "problem": "Metroya her binişte öğrencinin kartından 7 TL düşüyor. Öğrenci bir günde 6 kez metroya bindi. Kartındaki bakiye ne kadar değişti?",
+                       "adimlar": [
+                           {"metin": "Her binişte ne oluyor? Para düşüyor: eksi.", "islem": f"Bir biniş: {M}7"},
+                           {"metin": "Kaç kez? 6 kez. Çarpma yaz.", "islem": f"6 · ({M}7)"},
+                           {"metin": "Önce işaretsiz çarp.", "islem": "6 · 7 = 42"},
+                           {"metin": "İşaretler farklı (+ ve −): sonuç eksi.", "islem": f"6 · ({M}7) = {M}42"}],
+                       "sonuc": f"Bakiye 42 TL azaldı: {M}42. (s. 74)"},
+             "sende": {"baslik": "Su deposu",
+                       "problem": "Bir su deposundan her gün 4 litre su boşaltılıyor. 5 gün sonunda depodaki su ne kadar değişir?",
+                       "adimlar": [
+                           {"metin": "Her gün değişim ne? Boşaltmak eksidir.",
+                            "soru": G("Bir günlük değişimi tam sayıyla yaz.", "-4", f"Boşaltmak eksi. Önce {M} tuşuna dokun.", f"Her gün {M}4 L.", birim="L"),
+                            "islem": f"Bir gün: {M}4"},
+                           {"metin": "5 gün: çarpma yaz ve önce işaretsiz çarp.",
+                            "soru": G("5 · 4 kaçtır?", "20", "5'ler tablosu: 5, 10, 15, 20.", "5 · 4 = 20."),
+                            "islem": "5 · 4 = 20"},
+                           {"metin": "İşaretler farklı. Sonucun işareti ne?",
+                            "soru": S(f"5 · ({M}4) kaçtır?", ["+20", f"{M}20", f"{M}9"], 1, "Farklı işaretlerin çarpımı artı mı, eksi mi?", f"Farklı işaret → eksi: {M}20."),
+                            "islem": f"5 · ({M}4) = {M}20"}],
+                       "sonuc": f"Harika! Depodaki su 20 L azalır: {M}20. (s. 74)"},
+             "soru": S(f"({M}6) · (+3) kaçtır?", [f"{M}18", "+18", f"{M}3"], 0,
+                       "Önce 6 · 3'ü bul. İşaretler farklı mı?", f"6 · 3 = 18, işaretler farklı: {M}18. (s. 74)")},
+            {"ad": "Aynı İşaret: Çarpım Artı", "renk": "#7b4fc9", "svg": svg6_isaret("ayni"),
+             "aciklama": f"Aynı işaretli iki tam sayının çarpımı pozitiftir: (+4) · (+8) = +32, ({M}5) · ({M}7) = +35.",
+             "ek": f"Kitaptaki örüntüye bak: 2 · ({M}2) = {M}4, 1 · ({M}2) = {M}2, 0 · ({M}2) = 0. Her adımda sonuç 2 artıyor. Devam edince ({M}1) · ({M}2) = +2 olur. (s. 73–74)",
+             "akilda": "Aynı işaret → artı",
+             "cozum": {"baslik": "Örüntüyü sürdürelim",
+                       "problem": f"3 · ({M}2) = {M}6, 2 · ({M}2) = {M}4, 1 · ({M}2) = {M}2, 0 · ({M}2) = 0. Sonra ne gelir?",
+                       "adimlar": [
+                           {"metin": "Soldaki sayı her seferinde 1 azalıyor.", "islem": f"3, 2, 1, 0, {M}1, …"},
+                           {"metin": "Sonuç her seferinde 2 artıyor.", "islem": f"{M}6, {M}4, {M}2, 0, …"},
+                           {"metin": "0'dan sonra 2 artarsa?", "islem": f"({M}1) · ({M}2) = +2"},
+                           {"metin": "Bir adım daha.", "islem": f"({M}2) · ({M}2) = +4"}],
+                       "sonuc": "İki eksi sayının çarpımı artı çıktı. (s. 73)"},
+             "soru": S(f"({M}5) · ({M}7) kaçtır?", [f"{M}35", "+35", f"{M}12"], 1,
+                       "Önce 5 · 7'yi bul. İşaretler aynı mı?", "5 · 7 = 35, işaretler aynı: +35. (s. 74)")},
+            {"ad": "Çok Çarpanda Eksileri Say", "renk": "#c92a2a", "svg": svg6_eksileri(),
+             "aciklama": "Çok sayıda çarpan varsa eksi işaretlerini say. Eksi sayısı çiftse sonuç artı, tekse sonuç eksi olur.",
+             "ek": f"Her iki eksi birbirini artıya çevirir. ({M}2) · ({M}3) · ({M}4): ilk ikisi +6 yapar, (+6) · ({M}4) = {M}24. Bir sayı 0 ile çarpılırsa sonuç her zaman 0'dır: 0 · ({M}22) = 0. (s. 75)",
+             "akilda": "Çift eksi artı, tek eksi eksi",
+             "soru": S(f"({M}2) · ({M}3) · ({M}4) çarpımının işareti nedir?", ["Artı", "Sıfır", "Eksi"], 2,
+                       "Kaç tane eksi var? Çift mi, tek mi?", f"3 eksi var, 3 tek: sonuç eksi. ({M}2) · ({M}3) · ({M}4) = {M}24. (s. 75)")},
+            {"ad": "Bölmede Aynı Kural", "renk": "#3274d6", "svg": svg6_maden(),
+             "aciklama": "Bölmede de işaret kuralı çarpmadakiyle aynıdır: aynı işaret → artı, farklı işaret → eksi.",
+             "ek": f"(+25) ÷ (+5) = +5, ({M}72) ÷ ({M}9) = +8, ({M}33) ÷ (+11) = {M}3. Bölen 0 olamaz. (s. 77)",
+             "akilda": "Bölmede de aynı kural",
+             "cozum": {"baslik": "Maden asansörü",
+                       "problem": "Bir maden asansörü yer seviyesinden 24 m aşağıya 8 saniyede indi. Her saniye kaç metre yer değiştirdi?",
+                       "adimlar": [
+                           {"metin": "Başlangıç (0): yer seviyesi. Aşağı eksidir.", "islem": f"Toplam: {M}24 m"},
+                           {"metin": "8 saniyeye eşit paylaştır: böl.", "islem": f"({M}24) ÷ 8"},
+                           {"metin": "Önce işaretsiz böl.", "islem": "24 ÷ 8 = 3"},
+                           {"metin": "İşaretler farklı: sonuç eksi.", "islem": f"({M}24) ÷ 8 = {M}3"}],
+                       "sonuc": f"Asansör her saniye 3 m aşağı iniyor: {M}3. (s. 76)"},
+             "sende": {"baslik": "Sultan'ın taksitleri",
+                       "problem": "Sultan arkadaşından 450 TL borç aldı. Borcunu 3 eşit taksitte ödeyecek. Her taksiti tam sayıyla yazalım.",
+                       "adimlar": [
+                           {"metin": "Borç eksidir.",
+                            "soru": G("Borcu tam sayıyla yaz.", "-450", f"Borç eksi. Önce {M} tuşuna dokun.", f"Borç: {M}450 TL.", birim="TL"),
+                            "islem": f"{M}450"},
+                           {"metin": "3 eşit parçaya böl. Önce işaretsiz böl.",
+                            "soru": G("450 ÷ 3 kaçtır?", "150", "3 kaç kere 450 eder? 3 · 100 = 300, kalan 150.", "3 · 150 = 450, yani 450 ÷ 3 = 150."),
+                            "islem": "450 ÷ 3 = 150"},
+                           {"metin": "İşaretler farklı. Sonucun işareti ne?",
+                            "soru": S(f"({M}450) ÷ 3 kaçtır?", ["+150", f"{M}150", f"{M}147"], 1, "Farklı işaret → artı mı, eksi mi?", f"Farklı işaret → eksi: {M}150."),
+                            "islem": f"({M}450) ÷ 3 = {M}150"}],
+                       "sonuc": f"Harika! Her taksit {M}150 TL. (s. 77)"},
+             "soru": G(f"({M}72) ÷ ({M}9) kaçtır?", "8", "Önce 72 ÷ 9'u bul. İşaretler aynı mı?", "72 ÷ 9 = 8, işaretler aynı: +8. (s. 77)")},
+            {"ad": "Bölmenin Farklı Yazılışları", "renk": "#b7791f", "svg": svg6_gosterim(),
+             "aciklama": f"Bölme işlemi üç şekilde yazılabilir: ({M}12) ÷ 2, ({M}12) : 2 ya da kesir çizgisiyle [[-12/2]]. Hepsinin sonucu {M}6'dır.",
+             "ek": "Kesir çizgisi bölme demektir; bunu 4. konuda da görmüştük. (s. 77)",
+             "akilda": "÷ = : = kesir çizgisi",
+             "soru": S(f"Hangisi ({M}20) ÷ 5 ile aynı sonucu verir?", [f"({M}20) · 5", f"({M}20) : 5", "20 : 5"], 1,
+                       "÷ işaretinin başka yazılışını ara. Sayılar ve işaretleri de aynı kalmalı.", f"({M}20) : 5 = {M}4, ({M}20) ÷ 5 ile aynıdır. (s. 77)")},
+            {"ad": "Çarp mı, Böl mü?", "renk": "#5f3dc4", "svg": svg6_carp_bol(),
+             "aciklama": "Aynı değişim tekrar ediyorsa çarp. Bir toplamı eşit parçalara ayırıyorsan ya da \"kaç kere?\" diye soruyorsan böl.",
+             "ek": f"Metro kartı: 6 kez {M}7 → 6 · ({M}7). Maden asansörü: {M}24 m'yi 8 saniyeye paylaştır → ({M}24) ÷ 8. (s. 74–76)",
+             "akilda": "Tekrar → çarp, paylaştır → böl",
+             "cozum": {"baslik": "Yarışmada kaç soru?",
+                       "problem": f"Bir yarışmada her yanlış cevap {M}3 puan. Tüm sorulara yanlış cevap veren bir yarışmacı {M}75 puan aldı. Kaç soruya cevap verdi?",
+                       "adimlar": [
+                           {"metin": f"Ne veriliyor? Bir yanlış {M}3, toplam {M}75.", "islem": f"Bir soru: {M}3, toplam: {M}75"},
+                           {"metin": f"Ne isteniyor? {M}3 kaç kere {M}75 eder? Bu bir bölme.", "islem": f"({M}75) ÷ ({M}3)"},
+                           {"metin": "Önce işaretsiz böl.", "islem": "75 ÷ 3 = 25"},
+                           {"metin": "İşaretler aynı: sonuç artı.", "islem": f"({M}75) ÷ ({M}3) = +25"}],
+                       "sonuc": "Yarışmacı 25 soruya cevap verdi. (s. 77)"},
+             "sende": {"baslik": "Serbest dalış",
+                       "problem": "Bir dalgıç her dakika 13 m derine iniyor. Deniz seviyesinden başladı ve 78 m derinliğe ulaştı. Kaç dakika geçti?",
+                       "adimlar": [
+                           {"metin": "Çarp mı, böl mü? \"Kaç kere?\" diye soruyoruz.",
+                            "soru": S("Hangi işlem yapılmalı?", [f"({M}78) ÷ ({M}13)", f"({M}78) · ({M}13)", f"({M}78) + ({M}13)"], 0,
+                                      f"{M}13 kaç kere {M}78 eder? Kaç kere sorusu hangi işlem?", f"Kaç kere → böl: ({M}78) ÷ ({M}13)."),
+                            "islem": f"({M}78) ÷ ({M}13)"},
+                           {"metin": "Önce işaretsiz böl.",
+                            "soru": G("78 ÷ 13 kaçtır?", "6", "13'ü say: 13, 26, 39, 52, 65, 78.", "13 · 6 = 78, yani 78 ÷ 13 = 6."),
+                            "islem": "78 ÷ 13 = 6"},
+                           {"metin": "İşaret ne olur?",
+                            "soru": S("Sonucun işareti nedir?", ["Artı, çünkü işaretler aynı", "Eksi, çünkü derine indi", "İşareti olmaz"], 0,
+                                      "İki sayının da işareti eksi. Aynı işaret → ?", "Aynı işaret → artı: +6."),
+                            "islem": f"({M}78) ÷ ({M}13) = +6"}],
+                       "sonuc": "Harika! 6 dakika geçti. (s. 78)"},
+             "soru": S("Feyza'nın internet paketinden video izlediği her dakika için 150 MB düşüyor. 15 dakikalık değişimi hangi işlem verir?",
+                       [f"15 · ({M}150)", f"({M}150) ÷ 15", f"15 + ({M}150)"], 0,
+                       "Aynı değişim 15 kere mi tekrar ediyor, yoksa bir toplamı mı paylaştırıyoruz?", f"Her dakika {M}150, 15 kere: 15 · ({M}150) = {M}2250 MB. (s. 74)")}
+        ],
+        "biliyorMusun": [
+            "Maden ocaklarında madenciler yer altı asansörleriyle iner. Kitaptaki asansörün tüneline her 4 metrede bir işaret lambası konmuş; 24 m inen madenciler 24 ÷ 4 = 6 lamba görür. (s. 76)",
+            "Türk sporcu Şahika Ercümen, serbest dalışta tek nefeste 107 m derine inerek 2025'te dünya rekoru kırdı. (s. 78)"],
+        "akildaKalsin": [
+            f"Çarpma, tekrarlı toplamadır: 4 · ({M}2) = ({M}2) + ({M}2) + ({M}2) + ({M}2).",
+            "Aynı işaret → artı; farklı işaret → eksi. Çarpmada da bölmede de.",
+            "Çok çarpanda eksileri say: çiftse artı, tekse eksi.",
+            "Bölme ÷, : ya da kesir çizgisiyle yazılır. Bölen 0 olamaz.",
+            "Aynı değişim tekrar ediyorsa çarp; paylaştırıyorsan ya da \"kaç kere?\" diyorsan böl."],
+        "merakKutusu": [
+            {"soru": "İki eksinin çarpımı neden artı?", "cevap": f"Kitaptaki örüntüye bak: soldaki çarpanı 1 azalttıkça sonuç 2 artıyor. 0'dan sonra da artmaya devam eder: ({M}1) · ({M}2) = +2. (s. 73)"},
+            {"soru": "Çarpma işaretini nasıl yazarız?", "cevap": f"Kitapta nokta (·) kullanılıyor: 6 · ({M}7). Eksi sayıyı parantez içine yazarız ki işaretler karışmasın. (s. 74)"},
+            {"soru": "0'a bölebilir miyiz?", "cevap": f"Hayır. Bilgi kutusunda \"böleni sıfırdan farklı\" yazar. Ama 0'ın kendisi bölünebilir: 0 ÷ ({M}15) = 0. (s. 77–78)"},
+            {"soru": "Çok sayıyı çarparken işareti hızlı nasıl bulurum?", "cevap": "Eksileri say: çiftse sonuç artı, tekse eksi. Sonra sayıları işaretsiz çarp. (s. 75)"},
+            {"soru": "Dağa çıkınca hava neden soğur?", "cevap": "Yükseldikçe hava basıncı azalır, bu yüzden sıcaklık genellikle düşer. Kitaptaki dağcı her 100 m'de 1 °C soğuyan bir yerde tırmanıyor. (s. 80)"}],
+        "dusunVeYaz": [{"soru": "Bir arkadaşın \"İki eksi sayının çarpımı da eksidir\" diyor. Ona doğrusunu bir örnekle anlat.",
+                        "ornekCevap": f"Yanlış. ({M}5) · ({M}7) = +35. Aynı işaretli iki sayının çarpımı artıdır. Kitaptaki örüntüde de 0 · ({M}2) = 0'dan sonra ({M}1) · ({M}2) = +2 geliyor.",
+                        "anahtarlar": ["artı", "aynı", "pozitif", "örüntü"]}],
+        "sorular": [
+            G(f"(+4) · ({M}10) kaçtır?", "-40", "Önce 4 · 10. İşaretler farklı mı?", f"4 · 10 = 40, işaretler farklı: {M}40. (s. 75)"),
+            S(f"({M}10) · ({M}10) kaçtır?", [f"{M}100", "+100", "0"], 1, "İşaretler aynı mı?", "10 · 10 = 100, işaretler aynı: +100. (s. 75)"),
+            N("Klimanın mavi tuşuna her basışta sıcaklık 2 °C azalıyor. Tuşa 3 kez basılınca sıcaklık değişimi kaç olur? Sayı doğrusunda dokun.", -6, sd(-8, 2),
+              f"0'dan başla, her basışta 2 aralık sola git. 3 kez.", f"3 · ({M}2) = {M}6. (s. 73)"),
+            S(f"({M}45) ÷ 9 kaçtır?", ["5", f"{M}36", f"{M}5"], 2, "Önce 45 ÷ 9. İşaretler farklı mı?", f"45 ÷ 9 = 5, işaretler farklı: {M}5. (s. 78)"),
+            G(f"({M}144) ÷ ({M}12) kaçtır?", "12", "Önce 144 ÷ 12. İşaretler aynı mı?", "144 ÷ 12 = 12, işaretler aynı: +12. (s. 78)"),
+            S(f"({M}3) · ({M}5) · ({M}6) çarpımının işareti nedir?", ["Eksi", "Artı", "Sıfır"], 0,
+              "Eksileri say: çift mi, tek mi?", f"3 eksi var, tek: sonuç eksi. ({M}3) · ({M}5) · ({M}6) = {M}90. (s. 75)"),
+            G("Bir apartmanda iki kat arası 3 m. Giriş katındaki asansör 18 m aşağı indi. Asansör hangi kata indi?", "-6",
+              f"Aşağı eksi: {M}18 m. Her kat 3 m. Kaç kat? Böl.", f"({M}18) ÷ 3 = {M}6. Asansör {M}6. katta. (s. 77)"),
+            S(f"Hangisi {M}4'e eşit değildir?", [f"({M}72) ÷ 18", f"72 : ({M}18)", f"({M}72) : ({M}18)"], 2,
+              "Hangisinde iki sayının işareti aynı? Aynı işaret → artı.", f"({M}72) : ({M}18) = +4. Diğer ikisinde işaretler farklı: {M}4. (s. 78)"),
+            N(f"0 · ({M}22) işleminin sonucuna dokun.", 0, sd(-5, 5),
+              "Bir sayıyı 0 ile çarparsan ne olur?", f"0 ile çarpılan her sayı 0 eder: 0 · ({M}22) = 0. (s. 75)"),
+            G("Bir dağcı her 100 m yukarı çıktığında hava 1 °C soğuyor. Dağcı 400 m yukarı çıktı. Sıcaklık kaç derece değişti?", "-4",
+              f"Önce kaç kere 100 m çıktığını bul: 400 ÷ 100. Her seferinde {M}1 °C.", f"400 ÷ 100 = 4 kere. 4 · ({M}1) = {M}4 °C. (s. 81)", birim="°C")]
+    }
+
+
 # =================================================================
 # Ara Duraklar (konu tarama): kapsanan konuların özeti + konuları birleştiren yeni sorular.
 # Motor ayrıca kapsanan konuların kendi sorularından "eskiSoru" kadarını (zorlanılan kavramlar önce) ekler.
@@ -1588,7 +2132,7 @@ def u1t2():
 
 
 TARAMALAR = [u1t1, u1t2]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5] + TARAMALAR
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
@@ -1606,6 +2150,10 @@ TEST_KAVRAM = {
              "Sonlu mu, Devirli mi?", "Paydayı 10, 100, 1000 Yap", "Devirliden Kesre", "Devirli Ondalık Gösterim", "Ondalıktan Kesre", "Sonlu Ondalık Gösterim"],
     "u1k5": ["Sağdaki Büyüktür", "Sağdaki Büyüktür", "Negatif, Sıfır, Pozitif", "Negatiflerde Uzak Olan Küçük", "Negatiflerde Uzak Olan Küçük", "Sağdaki Büyüktür",
              "Paydaları ya da Payları Eşitle", "Sağdaki Büyüktür", "Arada Hep Bir Sayı Var", "Arada Hep Bir Sayı Var", "Dikey Sayı Doğrusu", "Kısa Yollar"],
+    "u1k6": ["Farklı İşaret: Çıkar, Büyüğün İşareti", "Aynı İşaret: Topla, İşareti Koru", "Toplama Bir Yolculuktur", "Ters İşaretliler Toplanınca 0", "Çıkarma = Tersiyle Toplama",
+             "Toplama Bir Yolculuktur", "Önce Mutlak Değer", "Aradaki Eksi Çıkarmadır", "Toplama Bir Yolculuktur", "Çıkarma = Tersiyle Toplama"],
+    "u1k7": ["Farklı İşaret: Çarpım Eksi", "Aynı İşaret: Çarpım Artı", "Çarpma = Tekrarlı Toplama", "Bölmede Aynı Kural", "Bölmede Aynı Kural",
+             "Çok Çarpanda Eksileri Say", "Çarp mı, Böl mü?", "Bölmenin Farklı Yazılışları", "Çok Çarpanda Eksileri Say", "Çarp mı, Böl mü?"],
 }
 YARDIM = {
     "u1k1": {
@@ -1703,6 +2251,36 @@ YARDIM = {
             "[[-12/5]]'in paydasını 10 yap (5 × 2 = 10). Kaç onda kaç olur?",
             f"Şimdi {M}2,35 ile karşılaştır. Daha derin olan 0'a daha uzak olandır.",
             "İkisinin tam kısmı 2. Onda birler basamağına bak."]},
+    },
+    "u1k6": {
+        f"({M}12) + (+16) kaçtır": {"adimlar": [
+            "İşaretlere bak: biri eksi, biri artı. Farklı işaret.", "Mutlak değerleri yaz: 12 ve 16. Büyükten küçüğü çıkar.", "Hangisinin mutlak değeri büyük? Onun işaretini koy."]},
+        f"|{M}3| + ({M}8) kaçtır": {"adimlar": [
+            f"Önce |{M}3| kaç? İşareti sil.", f"Şimdi (+3) + ({M}8) işlemini yap. İşaretler farklı.", "8'den 3'ü çıkar. Büyük olan hangisi, işareti ne?"]},
+        f"4 {M} ({M}5) kaçtır": {"adimlar": [
+            "Çıkarmayı toplamaya çevir: çıkan sayının işaretini ters yap.", f"4 {M} ({M}5) = 4 + (?)", "İşaretler aynı: topla."]},
+        "Bir oyunda Alperen": {"adimlar": [
+            "Başlangıç (0): oyunun başı. Kaybetmek eksi, kazanmak artı.", f"İşlemi yaz: ({M}3) + (+8).", "İşaretler farklı: 8'den 3'ü çıkar. Büyük olanın işaretini koy."]},
+        f"(+5) {M} (+25) kaçtır": {"adimlar": [
+            f"Çıkarmayı toplamaya çevir: (+5) + ({M}25).", "İşaretler farklı: 25'ten 5'i çıkar.", "Mutlak değeri büyük olan hangisi? Onun işaretini koy."]},
+        f"|{M}5| + |{M}9| kaçtır": {"adimlar": [
+            f"Önce |{M}5| kaç?", f"Sonra |{M}9| kaç?", "İki sonucu topla."]},
+        "Bir havucun yaprak ucu": {"adimlar": [
+            f"Başlangıç (0): toprak seviyesi. Üstü artı, altı eksi: yaprak +18, kök {M}12.", f"Fark için büyükten küçüğü çıkar: (+18) {M} ({M}12).", "Çıkarmayı toplamaya çevir ve topla."]},
+    },
+    "u1k7": {
+        f"2 · ({M}5) kaçtır": {"adimlar": [
+            f"2 · ({M}5), 2 tane ({M}5) demek.", f"({M}5) + ({M}5) işlemini yap: aynı işaret, topla, eksiyi koru."]},
+        f"({M}72) ÷ ({M}9) kaçtır": {"adimlar": [
+            "Önce işaretsiz böl: 72 ÷ 9. 9 kaç kere 72 eder?", "İşaretler aynı mı, farklı mı?", "Aynı işaret → artı."]},
+        f"(+4) · ({M}10) kaçtır": {"adimlar": [
+            "Önce işaretsiz çarp: 4 · 10.", "İşaretler aynı mı, farklı mı?", f"Farklı işaret → eksi. Önce {M} tuşuna dokun."]},
+        f"({M}144) ÷ ({M}12) kaçtır": {"adimlar": [
+            "Önce işaretsiz böl: 144 ÷ 12. 12 kaç kere 144 eder? 12 · 10 = 120, kalan 24.", "İşaretler aynı mı?", "Aynı işaret → artı."]},
+        "Bir apartmanda iki kat arası": {"adimlar": [
+            f"Başlangıç (0): giriş katı. Aşağı eksi: {M}18 m.", "Her kat 3 m. Kaç kat? Bu bir paylaştırma: böl.", f"({M}18) ÷ 3: önce 18 ÷ 3, sonra işaret."]},
+        "Bir dağcı her 100 m": {"adimlar": [
+            "Kaç kere 100 m çıktı? 400 ÷ 100.", f"Her seferinde sıcaklık {M}1 °C değişiyor.", f"Kaç kere · ({M}1): işaretler farklı → eksi."]},
     },
 }
 

@@ -1,0 +1,780 @@
+{
+ "id": "u1k6",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Tam Sayılarla Toplama ve Çıkarma",
+ "sayfalar": "s. 62–72",
+ "giris": "Sayı doğrusunda yürümeyi biliyorsun. Bu konuda eksi ve artı sayıları toplayıp çıkaracağız. Asansörle inip çıkmak, borç almak, denizaltının yükselmesi: hepsi birer toplama ya da çıkarma işlemi.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu; sayı doğrusu, işaret kelimeleri ve mutlak değer üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+  "maddeler": [
+   {
+    "ad": "Eksi sayılar sayı doğrusunda",
+    "sinif": "1. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='10' y1='62' x2='110' y2='62' stroke='#f5f6fa' stroke-width='3'/><path d='M8 62l7-4v8zM112 62l-7-4v8z' fill='#f5f6fa'/><line x1='20' y1='55' x2='20' y2='69' stroke='#6fb3ff' stroke-width='3'/><text x='20' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#6fb3ff'>−2</text><line x1='40' y1='55' x2='40' y2='69' stroke='#6fb3ff' stroke-width='3'/><text x='40' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#6fb3ff'>−1</text><line x1='60' y1='55' x2='60' y2='69' stroke='#f2c14e' stroke-width='3'/><text x='60' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>0</text><line x1='80' y1='55' x2='80' y2='69' stroke='#ffa26b' stroke-width='3'/><text x='80' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#ffa26b'>1</text><line x1='100' y1='55' x2='100' y2='69' stroke='#ffa26b' stroke-width='3'/><text x='100' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#ffa26b'>2</text><path d='M58 44 H22' stroke='#6fb3ff' stroke-width='3' stroke-linecap='round'/><path d='M22 44l6-4v8z' fill='#6fb3ff'/><path d='M62 44 H98' stroke='#ffa26b' stroke-width='3' stroke-linecap='round'/><path d='M98 44l-6-4v8z' fill='#ffa26b'/></svg>",
+    "anlatim": "Sayı doğrusunda 0'ın sağında pozitif sayılar, solunda negatif sayılar vardır. Eksi bir sayıyı bulmak için 0'dan sola doğru sayarız.",
+    "akilda": "Sol eksi, sağ artı",
+    "ornek": {
+     "problem": "−3'ü sayı doğrusunda bulalım.",
+     "adimlar": [
+      {
+       "metin": "−3 eksi bir sayı. Eksi sayılar 0'ın solunda.",
+       "islem": "Yön: sola"
+      },
+      {
+       "metin": "0'dan sola 3 aralık say.",
+       "sayiDogrusu": {
+        "min": -5,
+        "max": 3,
+        "oklar": [
+         {
+          "bas": 0,
+          "son": -3,
+          "etiket": "3 aralık",
+          "renk": "#2364c7"
+         }
+        ],
+        "isaretler": [
+         {
+          "x": -3,
+          "etiket": "−3",
+          "renk": "#2364c7"
+         }
+        ]
+       },
+       "islem": "0 → −3"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Sayı doğrusunda −5'in yerine dokun.",
+      "nokta": -5,
+      "sayiDogrusu": {
+       "min": -7,
+       "max": 5
+      },
+      "ipucu": "0'ı bul. Sola doğru 5 aralık say.",
+      "aciklama": "−5, 0'ın 5 birim solundadır."
+     },
+     {
+      "soru": "Hangisi sayı doğrusunda 0'ın solundadır?",
+      "secenekler": [
+       "4",
+       "0",
+       "−4"
+      ],
+      "dogru": 2,
+      "ipucu": "0'ın solunda eksi sayılar vardır.",
+      "aciklama": "−4 negatiftir, 0'ın solundadır."
+     }
+    ]
+   },
+   {
+    "ad": "Kelimeden sayıya",
+    "sinif": "1. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='18' width='54' height='34' rx='7' fill='#f5f6fa'/><line x1='19' y1='28' x2='58' y2='28' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='36' x2='50' y2='36' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='44' x2='42' y2='44' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><rect x='12' y='68' width='54' height='34' rx='7' fill='#f5f6fa'/><line x1='19' y1='78' x2='58' y2='78' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='86' x2='50' y2='86' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><line x1='19' y1='94' x2='42' y2='94' stroke='#9aa3bf' stroke-width='3' stroke-linecap='round'/><path d='M70 35 h10 M76 30 l5 5 -5 5 M70 85 h10 M76 80 l5 5 -5 5' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='96' cy='35' r='15' fill='#6fb3ff'/><text x='96' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#1b2340'>−</text><circle cx='96' cy='85' r='15' fill='#ffa26b'/><text x='96' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#1b2340'>+</text></svg>",
+    "anlatim": "Sözel problemlerde işareti kelime söyler. Altı, borç, gider, zarar, aşağı → eksi. Üstü, alacak, gelir, kâr, yukarı → artı.",
+    "akilda": "Kelime işareti söyler",
+    "ornek": {
+     "problem": "Berk arkadaşından 65 TL borç aldı. Bunu tam sayıyla yazalım.",
+     "adimlar": [
+      {
+       "metin": "İşaret kelimesini bul: borç.",
+       "islem": "Borç → eksi"
+      },
+      {
+       "metin": "Sayıyı işaretiyle yaz.",
+       "islem": "−65"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Deniz seviyesinin 100 metre altındaki bir denizaltının konumunu tam sayıyla yaz.",
+      "cevap": "-100",
+      "ipucu": "\"Altında\" eksi demek. Önce − tuşuna dokun.",
+      "aciklama": "Deniz seviyesinin 100 m altı: −100 m.",
+      "birim": "m"
+     },
+     {
+      "soru": "Hangisi artı (+) ile gösterilir?",
+      "secenekler": [
+       "5 TL borç",
+       "3 kat aşağı",
+       "20 TL kâr"
+      ],
+      "dogru": 2,
+      "ipucu": "Kâr mı, borç mu, aşağı mı? Hangisi artı kelimesi?",
+      "aciklama": "Kâr artıdır: +20. Borç ve aşağı eksidir."
+     }
+    ]
+   },
+   {
+    "ad": "Mutlak değer",
+    "sinif": "3. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f5f6fa'>|−3| = 3</text><line x1='8' y1='86' x2='112' y2='86' stroke='#f5f6fa' stroke-width='3'/><line x1='24' y1='80' x2='24' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><text x='24' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−3</text><line x1='36' y1='80' x2='36' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><line x1='48' y1='80' x2='48' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><line x1='60' y1='80' x2='60' y2='92' stroke='#f2c14e' stroke-width='2.5'/><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><line x1='72' y1='80' x2='72' y2='92' stroke='#ffa26b' stroke-width='2.5'/><line x1='84' y1='80' x2='84' y2='92' stroke='#ffa26b' stroke-width='2.5'/><line x1='96' y1='80' x2='96' y2='92' stroke='#ffa26b' stroke-width='2.5'/><text x='96' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>3</text><path d='M58 80 Q41 60 26 80' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M26 80 l2 -9 6 6z' fill='#f2c14e'/><text x='42' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>3</text></svg>",
+    "anlatim": "Bir sayının 0'a uzaklığına mutlak değer denir. Kısa yol: işareti sil, sayı kalır. Mutlak değer hiç eksi olmaz.",
+    "akilda": "İşareti sil, sayı kalır",
+    "ornek": {
+     "problem": "|−9| kaçtır?",
+     "adimlar": [
+      {
+       "metin": "−9, 0'dan kaç birim uzakta?",
+       "islem": "9 birim"
+      },
+      {
+       "metin": "Uzaklık eksi olmaz.",
+       "islem": "|−9| = 9"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "|−15| kaçtır?",
+      "cevap": "15",
+      "ipucu": "İşareti sil, sayı kalır.",
+      "aciklama": "|−15| = 15."
+     },
+     {
+      "soru": "Hangisinin mutlak değeri en büyüktür?",
+      "secenekler": [
+       "−12",
+       "8",
+       "0"
+      ],
+      "dogru": 0,
+      "ipucu": "Her sayının işaretini sil. Hangisi 0'a en uzak?",
+      "aciklama": "|−12| = 12, |8| = 8, |0| = 0. En büyüğü 12."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Toplama Bir Yolculuktur",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−2) + (+4)</text><line x1='8' y1='86' x2='112' y2='86' stroke='#f5f6fa' stroke-width='3'/><line x1='12' y1='80' x2='12' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><line x1='24' y1='80' x2='24' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><line x1='36' y1='80' x2='36' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><text x='36' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−2</text><line x1='48' y1='80' x2='48' y2='92' stroke='#6fb3ff' stroke-width='2.5'/><line x1='60' y1='80' x2='60' y2='92' stroke='#f2c14e' stroke-width='2.5'/><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><line x1='72' y1='80' x2='72' y2='92' stroke='#ffa26b' stroke-width='2.5'/><line x1='84' y1='80' x2='84' y2='92' stroke='#ffa26b' stroke-width='2.5'/><text x='84' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>2</text><line x1='96' y1='80' x2='96' y2='92' stroke='#ffa26b' stroke-width='2.5'/><line x1='108' y1='80' x2='108' y2='92' stroke='#ffa26b' stroke-width='2.5'/><path d='M36 78 Q60 44 84 78' stroke='#ffa26b' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M84 78 l-8 -3 4 -6z' fill='#ffa26b'/><circle cx='36' cy='86' r='6' fill='#6fb3ff'/><circle cx='84' cy='86' r='6' fill='#f2c14e'/></svg>",
+   "aciklama": "Toplamayı sayı doğrusunda bir yolculuk gibi düşün. Birinci sayıdan başla. Artı bir sayı eklersen sağa, eksi bir sayı eklersen sola git.",
+   "ek": "Kitapta oyun puanları ve asansör örnekleri sayı doğrusunda böyle gösteriliyor: + işaretli puanlar sağa, − işaretli puanlar sola. (s. 63–64)",
+   "akilda": "Artı sağa, eksi sola",
+   "sayiDogrusu": {
+    "min": -5,
+    "max": 3,
+    "oklar": [
+     {
+      "bas": 0,
+      "son": -4,
+      "etiket": "−4",
+      "renk": "#2364c7"
+     },
+     {
+      "bas": -4,
+      "son": -2,
+      "etiket": "+2",
+      "renk": "#d9480f"
+     }
+    ],
+    "isaretler": [
+     {
+      "x": -2,
+      "etiket": "−2",
+      "renk": "#2364c7"
+     }
+    ]
+   },
+   "cozum": {
+    "baslik": "Seda hangi katta?",
+    "problem": "Seda zemin kattan asansöre bindi. Önce 4 kat aşağı indi, sonra 2 kat yukarı çıktı. Seda şimdi hangi katta?",
+    "sayiDogrusu": {
+     "min": -5,
+     "max": 2,
+     "dikey": true,
+     "birim": 28,
+     "sifirEtiketi": "Zemin kat",
+     "oklar": [
+      {
+       "bas": 0,
+       "son": -4,
+       "etiket": "4 aşağı",
+       "renk": "#2364c7"
+      },
+      {
+       "bas": -4,
+       "son": -2,
+       "etiket": "2 yukarı",
+       "renk": "#d9480f"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0) nerede? Zemin kat.",
+      "islem": "Zemin kat = 0"
+     },
+     {
+      "metin": "4 kat aşağı indi. Aşağı eksidir: 0'dan 4 aralık aşağı.",
+      "islem": "0 + (−4) = −4"
+     },
+     {
+      "metin": "2 kat yukarı çıktı. Yukarı artıdır: −4'ten 2 aralık yukarı.",
+      "islem": "(−4) + (+2) = −2"
+     }
+    ],
+    "sonuc": "Seda −2. katta, yani zeminin 2 kat altında. İşlem: (−4) + (+2) = −2. (s. 62)"
+   },
+   "sende": {
+    "baslik": "Ali asansörde",
+    "problem": "Ali zemin katın 6 kat altında. Asansörle 12 kat yukarı çıktı. Ali şimdi hangi katta?",
+    "sayiDogrusu": {
+     "min": -7,
+     "max": 7
+    },
+    "adimlar": [
+     {
+      "metin": "Başlangıç: Ali nerede?",
+      "soru": {
+       "soru": "Ali'nin ilk katını tam sayıyla yaz.",
+       "cevap": "-6",
+       "ipucu": "Zeminin altı eksidir. Önce − tuşuna dokun.",
+       "aciklama": "Zeminin 6 kat altı: −6."
+      },
+      "islem": "Başlangıç: −6"
+     },
+     {
+      "metin": "Yön ve kaç birim? 12 kat yukarı.",
+      "soru": {
+       "soru": "12 kat yukarı nasıl yazılır?",
+       "secenekler": [
+        "−12",
+        "+12",
+        "0"
+       ],
+       "dogru": 1,
+       "ipucu": "Yukarı artı mı, eksi mi?",
+       "aciklama": "Yukarı artıdır: +12."
+      },
+      "islem": "+12"
+     },
+     {
+      "metin": "Yolculuğu yap: −6'dan sağa 12 aralık git.",
+      "soru": {
+       "soru": "(−6) + (+12) işleminin sonucuna dokun.",
+       "nokta": 6,
+       "sayiDogrusu": {
+        "min": -7,
+        "max": 7
+       },
+       "ipucu": "−6'dan başla. 6 aralık sağa gidince 0'a varırsın. Kalan aralıkları da say.",
+       "aciklama": "−6'dan 12 aralık sağa: +6."
+      },
+      "islem": "(−6) + (+12) = +6"
+     }
+    ],
+    "sonuc": "Harika! Ali şimdi 6. katta. (s. 64)"
+   },
+   "soru": {
+    "soru": "(−3) + (+5) işleminin sonucuna dokun.",
+    "nokta": 2,
+    "sayiDogrusu": {
+     "min": -6,
+     "max": 6
+    },
+    "ipucu": "−3'ten başla. +5 artı: sağa 5 aralık git.",
+    "aciklama": "−3'ten sağa 5 aralık: −2, −1, 0, 1, 2. Sonuç +2. (s. 64)"
+   }
+  },
+  {
+   "ad": "Aynı İşaret: Topla, İşareti Koru",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−3) + (−2)</text><rect x='18' y='44' width='48' height='22' rx='6' fill='#6fb3ff'/><text x='42' y='60' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>3</text><rect x='70' y='44' width='32' height='22' rx='6' fill='#6fb3ff'/><text x='86' y='60' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>2</text><path d='M18 74 q0 8 8 8 h68 q8 0 8 -8' stroke='#f2c14e' stroke-width='2.5' fill='none'/><text x='60' y='106' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>= −5</text></svg>",
+   "aciklama": "İki sayının işareti aynıysa mutlak değerlerini topla. Sonucun başına ortak işaretlerini yaz.",
+   "ek": "(+11) + (+8) = +19 ve (−20) + (−7) = −27. İki borç birleşince borç büyür; iki kâr birleşince kâr büyür. (s. 65)",
+   "akilda": "Aynı işaret: topla, işareti koru",
+   "cozum": {
+    "baslik": "Berk'in toplam borcu",
+    "problem": "Berk kitap almak için arkadaşından 65 TL, kuzeninden 85 TL borç aldı. Toplam borcunu tam sayıyla yazalım.",
+    "adimlar": [
+     {
+      "metin": "Kelimeye bak: borç eksidir.",
+      "islem": "Arkadaşı: −65, kuzeni: −85"
+     },
+     {
+      "metin": "İşlemi yaz.",
+      "islem": "(−65) + (−85)"
+     },
+     {
+      "metin": "İşaretler aynı (ikisi de eksi). Mutlak değerleri topla.",
+      "islem": "65 + 85 = 150"
+     },
+     {
+      "metin": "Ortak işareti başa yaz.",
+      "islem": "(−65) + (−85) = −150"
+     }
+    ],
+    "sonuc": "Berk'in toplam borcu 150 TL; tam sayıyla −150. (s. 62)"
+   },
+   "soru": {
+    "soru": "(−20) + (−7) kaçtır?",
+    "secenekler": [
+     "−13",
+     "+27",
+     "−27"
+    ],
+    "dogru": 2,
+    "ipucu": "İşaretler aynı mı? Aynıysa 20 ile 7'yi topla, ortak işareti koru.",
+    "aciklama": "İkisi de eksi: 20 + 7 = 27, işaret eksi: −27. (s. 65)"
+   }
+  },
+  {
+   "ad": "Farklı İşaret: Çıkar, Büyüğün İşareti",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='28' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−5) + (+3)</text><rect x='20' y='40' width='80' height='18' rx='5' fill='#6fb3ff'/><rect x='20' y='40' width='48' height='18' rx='5' fill='#1b2340' opacity='.6'/><rect x='20' y='64' width='48' height='18' rx='5' fill='#ffa26b'/><path d='M70 90 v6 h30 v-6' stroke='#f2c14e' stroke-width='2.5' fill='none'/><text x='38' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>5 − 3</text><text x='86' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#6fb3ff'>−2</text></svg>",
+   "aciklama": "İşaretler farklıysa mutlak değeri büyük olandan küçük olanı çıkar. Sonuca, mutlak değeri büyük olanın işaretini koy.",
+   "ek": "(−15) + (+6) = −9: 15 − 6 = 9, büyük olan −15. (−12) + (+16) = +4: 16 − 12 = 4, büyük olan +16. İp çekme oyunu gibi düşün: güçlü taraf kazanır, fark kadar. (s. 65)",
+   "akilda": "Farklı işaret: çıkar, büyüğün işareti",
+   "cozum": {
+    "baslik": "Denizaltı yükseliyor",
+    "problem": "Deniz seviyesinin 100 metre altındaki bir denizaltı, yüzeye yaklaşmak için 50 metre yükseldi. Yeni konumu ne?",
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0) nerede? Deniz seviyesi. Denizaltı altında: eksi.",
+      "islem": "Başlangıç: −100"
+     },
+     {
+      "metin": "Yön: yükseldi, yukarı artıdır. Kaç metre?",
+      "islem": "+50"
+     },
+     {
+      "metin": "İşaretler farklı: büyükten küçüğü çıkar.",
+      "islem": "(−100) + (+50) → 100 − 50 = 50"
+     },
+     {
+      "metin": "Mutlak değeri büyük olan −100. Onun işaretini koy.",
+      "islem": "(−100) + (+50) = −50"
+     }
+    ],
+    "sonuc": "Denizaltı deniz seviyesinin 50 m altında: −50 m. (s. 62)"
+   },
+   "sende": {
+    "baslik": "Mehmet'in bakiyesi",
+    "problem": "Mehmet'in banka hesabında −175 TL var (bu bir borç). Hesabına 100 TL yatırdı. Yeni bakiyesi ne?",
+    "adimlar": [
+     {
+      "metin": "İşlemi yaz: para yatırmak artıdır.",
+      "islem": "(−175) + (+100)"
+     },
+     {
+      "metin": "İşaretler farklı. Büyükten küçüğü çıkar.",
+      "soru": {
+       "soru": "175 − 100 kaçtır?",
+       "cevap": "75",
+       "ipucu": "175'ten 100 çıkar.",
+       "aciklama": "175 − 100 = 75."
+      },
+      "islem": "175 − 100 = 75"
+     },
+     {
+      "metin": "Hangi sayının mutlak değeri büyük? Onun işaretini koy.",
+      "soru": {
+       "soru": "Sonucun işareti ne olur?",
+       "secenekler": [
+        "Eksi, çünkü 175 daha büyük",
+        "Artı, çünkü para yatırdı",
+        "İşareti olmaz"
+       ],
+       "dogru": 0,
+       "ipucu": "175 mi büyük, 100 mü? Büyük olanın işareti ne?",
+       "aciklama": "Mutlak değeri büyük olan −175; işaret eksi."
+      },
+      "islem": "(−175) + (+100) = −75"
+     }
+    ],
+    "sonuc": "Harika! Mehmet'in bakiyesi −75 TL. Borcu azaldı ama bitmedi. (s. 68)"
+   },
+   "soru": {
+    "soru": "(−12) + (+16) kaçtır?",
+    "cevap": "4",
+    "ipucu": "İşaretler farklı: 16 ile 12'nin farkını bul. Hangisinin mutlak değeri büyük?",
+    "aciklama": "16 − 12 = 4. Büyük olan +16, işaret artı: +4. (s. 65)",
+    "yardim": {
+     "adimlar": [
+      "İşaretlere bak: biri eksi, biri artı. Farklı işaret.",
+      "Mutlak değerleri yaz: 12 ve 16. Büyükten küçüğü çıkar.",
+      "Hangisinin mutlak değeri büyük? Onun işaretini koy."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Ters İşaretliler Toplanınca 0",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−3) + (+3)</text><line x1='8' y1='72' x2='112' y2='72' stroke='#f5f6fa' stroke-width='3'/><line x1='12' y1='66' x2='12' y2='78' stroke='#6fb3ff' stroke-width='2.5'/><line x1='24' y1='66' x2='24' y2='78' stroke='#6fb3ff' stroke-width='2.5'/><text x='24' y='94' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−3</text><line x1='36' y1='66' x2='36' y2='78' stroke='#6fb3ff' stroke-width='2.5'/><line x1='48' y1='66' x2='48' y2='78' stroke='#6fb3ff' stroke-width='2.5'/><line x1='60' y1='66' x2='60' y2='78' stroke='#f2c14e' stroke-width='2.5'/><text x='60' y='94' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><line x1='72' y1='66' x2='72' y2='78' stroke='#ffa26b' stroke-width='2.5'/><line x1='84' y1='66' x2='84' y2='78' stroke='#ffa26b' stroke-width='2.5'/><line x1='96' y1='66' x2='96' y2='78' stroke='#ffa26b' stroke-width='2.5'/><text x='96' y='94' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>3</text><line x1='108' y1='66' x2='108' y2='78' stroke='#ffa26b' stroke-width='2.5'/><path d='M60 64 Q42 34 24 64' stroke='#6fb3ff' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M24 64 l1 -9 7 5z' fill='#6fb3ff'/><path d='M24 64 Q42 48 58 64' stroke='#ffa26b' stroke-width='3' fill='none' stroke-linecap='round'/><path d='M58 64 l-8 -2 4 -6z' fill='#ffa26b'/><circle cx='60' cy='72' r='7' fill='#f2c14e'/><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>= 0</text></svg>",
+   "aciklama": "Bir sayı ile ters işaretlisini toplarsan sonuç 0 olur. Sola ne kadar gidersen sağa da o kadar gelirsin.",
+   "ek": "Kitaptaki alıştırmada (+10) + (−10) işlemi var: sonuç 0. 3 kat inip 3 kat çıkan kişi yine zemin kattadır. (s. 66)",
+   "akilda": "Sayı + tersi = 0",
+   "soru": {
+    "soru": "(−8) + (+8) kaçtır?",
+    "secenekler": [
+     "−16",
+     "0",
+     "+16"
+    ],
+    "dogru": 1,
+    "ipucu": "−8 ile +8 birbirinin tersi mi? 8 sola, 8 sağa gidersen nereye varırsın?",
+    "aciklama": "−8 ile +8 ters işaretlidir: toplamları 0. (s. 66)"
+   }
+  },
+  {
+   "ad": "Önce Mutlak Değer",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='36' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='17' fill='#f5f6fa'>|−5| + |−9|</text><path d='M60 46 v12' stroke='#f2c14e' stroke-width='3'/><path d='M60 66 l-6 -8 h12z' fill='#f2c14e'/><text x='60' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#ffa26b'>5 + 9</text><text x='60' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='17' fill='#f2c14e'>= 14</text></svg>",
+   "aciklama": "İşlemde mutlak değer varsa önce onun sonucunu bul. Sonra işleme devam et.",
+   "ek": "|−5| + |−9| = (+5) + (+9) = 14. Mutlak değer hiç eksi olmaz; bu yüzden ikisi de artı olur. (s. 66)",
+   "akilda": "Önce | | çözülür",
+   "soru": {
+    "soru": "|−3| + (−8) kaçtır?",
+    "cevap": "-5",
+    "ipucu": "Önce |−3| kaç, onu bul. Sonra o sayıyı −8 ile topla.",
+    "aciklama": "|−3| = 3. (+3) + (−8): işaretler farklı, 8 − 3 = 5, büyük olan −8: −5. (s. 66)",
+    "yardim": {
+     "adimlar": [
+      "Önce |−3| kaç? İşareti sil.",
+      "Şimdi (+3) + (−8) işlemini yap. İşaretler farklı.",
+      "8'den 3'ü çıkar. Büyük olan hangisi, işareti ne?"
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Çıkarma = Tersiyle Toplama",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>10 − (−6)</text><path d='M47 42 v14 M77 42 v14' stroke='#f2c14e' stroke-width='3'/><path d='M47 62 l-5 -7 h10z M77 62 l-5 -7 h10z' fill='#f2c14e'/><text x='60' y='84' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#ffa26b'>10 + (+6)</text><text x='60' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>= 16</text></svg>",
+   "aciklama": "Tam sayılarda çıkarma yaparken çıkan sayının işaretini ters çevir ve topla. Sonra toplama kurallarını kullan.",
+   "ek": "(+10) − (−8) = (+10) + (+8) = +18. (−12) − (+5) = (−12) + (−5) = −17. 6 − 9 = 6 + (−9) = −3. (s. 69)",
+   "akilda": "Çıkarmayı çevir, topla",
+   "cozum": {
+    "baslik": "Karabatak ile balık",
+    "problem": "Bir karabatak deniz seviyesinin 10 m üstünde uçuyor. Tam altında bir balık, deniz seviyesinin 6 m altında yüzüyor. Aralarındaki yükseklik farkı kaç metre?",
+    "sayiDogrusu": {
+     "min": -7,
+     "max": 11,
+     "dikey": true,
+     "birim": 16,
+     "sifirEtiketi": "Deniz seviyesi",
+     "isaretler": [
+      {
+       "x": 10,
+       "etiket": "Karabatak",
+       "renk": "#d9480f"
+      },
+      {
+       "x": -6,
+       "etiket": "Balık",
+       "renk": "#2364c7"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0): deniz seviyesi. Konumları yaz.",
+      "islem": "Karabatak: +10, balık: −6"
+     },
+     {
+      "metin": "Farkı bulmak için büyükten küçüğü çıkar.",
+      "islem": "(+10) − (−6)"
+     },
+     {
+      "metin": "Çıkarmayı toplamaya çevir: çıkan sayının işaretini ters yap.",
+      "islem": "(+10) + (+6)"
+     },
+     {
+      "metin": "İşaretler aynı: topla.",
+      "islem": "(+10) + (+6) = +16"
+     }
+    ],
+    "sonuc": "Fark 16 m. Kontrol: Deniz seviyesinden karabatağa 10 m, balığa 6 m; 10 + 6 = 16. (s. 67)"
+   },
+   "sende": {
+    "baslik": "Erzurum'da gece ile gündüz",
+    "problem": "Erzurum'da gündüz sıcaklığı −5 °C, gece sıcaklığı −13 °C. Gündüz ile gece arasında kaç derece fark var?",
+    "sayiDogrusu": {
+     "min": -14,
+     "max": 1,
+     "dikey": true,
+     "birim": 16,
+     "sifirEtiketi": "0 °C",
+     "isaretler": [
+      {
+       "x": -5,
+       "etiket": "Gündüz",
+       "renk": "#2364c7"
+      },
+      {
+       "x": -13,
+       "etiket": "Gece",
+       "renk": "#2364c7"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "Farkı bulmak için büyükten küçüğü çıkar. Hangisi büyük?",
+      "soru": {
+       "soru": "Hangisi daha büyüktür (daha sıcaktır)?",
+       "secenekler": [
+        "−5 °C",
+        "−13 °C",
+        "İkisi eşit"
+       ],
+       "dogru": 0,
+       "ipucu": "Dikey sayı doğrusunda hangisi daha yukarıda?",
+       "aciklama": "−5, −13'ten yukarıdadır; daha büyüktür."
+      },
+      "islem": "(−5) − (−13)"
+     },
+     {
+      "metin": "Çıkarmayı toplamaya çevir.",
+      "soru": {
+       "soru": "(−5) − (−13) hangisine eşittir?",
+       "secenekler": [
+        "(−5) + (−13)",
+        "(−5) + (+13)",
+        "(+5) + (−13)"
+       ],
+       "dogru": 1,
+       "ipucu": "Yalnız çıkan sayının işaretini ters çevir. Birinci sayıya dokunma.",
+       "aciklama": "−13'ün tersi +13: (−5) + (+13)."
+      },
+      "islem": "(−5) + (+13)"
+     },
+     {
+      "metin": "İşaretler farklı: büyükten küçüğü çıkar, büyüğün işaretini koy.",
+      "soru": {
+       "soru": "(−5) + (+13) kaçtır?",
+       "cevap": "8",
+       "ipucu": "13 − 5 kaç? Büyük olan +13.",
+       "aciklama": "13 − 5 = 8, işaret artı: +8.",
+       "birim": "derece"
+      },
+      "islem": "= +8"
+     }
+    ],
+    "sonuc": "Harika! Gündüz ile gece arasında 8 derece fark var. (s. 70)"
+   },
+   "soru": {
+    "soru": "4 − (−5) kaçtır?",
+    "cevap": "9",
+    "ipucu": "Çıkarmayı toplamaya çevir: 4 + (+5).",
+    "aciklama": "4 − (−5) = 4 + (+5) = 9. (s. 69)",
+    "yardim": {
+     "adimlar": [
+      "Çıkarmayı toplamaya çevir: çıkan sayının işaretini ters yap.",
+      "4 − (−5) = 4 + (?)",
+      "İşaretler aynı: topla."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Aradaki Eksi Çıkarmadır",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='49' y='28' width='22' height='32' rx='6' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='30' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#6fb3ff'>−4</text><text x='60' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f2c14e'>−</text><text x='88' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#ffa26b'>5</text><text x='60' y='78' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>çıkar</text><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>(−4) − (+5)</text></svg>",
+   "aciklama": "−4 − 5 işleminde ortadaki − çıkarma işaretidir. 5'in işareti artıdır, yazılmamıştır: −4 − 5 = (−4) − (+5).",
+   "ek": "Sonra çıkarmayı çevirip topla: (−4) + (−5) = −9. Sayının başındaki − ile iki sayının arasındaki − işaretini karıştırma. (s. 69)",
+   "akilda": "Aradaki eksi = çıkar",
+   "soru": {
+    "soru": "−4 − 5 kaçtır?",
+    "secenekler": [
+     "−1",
+     "+1",
+     "−9"
+    ],
+    "dogru": 2,
+    "ipucu": "Aradaki − çıkarma: (−4) − (+5). Çevir ve topla.",
+    "aciklama": "(−4) − (+5) = (−4) + (−5) = −9. (s. 69)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Dünyadaki saatler UTC denen ortak bir zamana göre ayarlanır. İstanbul UTC+3, Tokyo UTC+9, Vancouver UTC−8'dir. İstanbul Tokyo'dan 6 saat geride, Vancouver'dan 11 saat ileridedir: (+3) − (+9) = −6 ve (+3) − (−8) = +11. (s. 71–72)",
+  "Gençtürk ailesi bir ayda lambaları kapatarak 100 TL, cihazları kapatarak 70 TL tasarruf etti; çamaşır makinesi yüzünden 60 TL fazla harcadı. Ailenin aylık değişimi de tam sayılarla toplanarak bulunur. (s. 62)"
+ ],
+ "akildaKalsin": [
+  "Toplama bir yolculuktur: artı sağa, eksi sola.",
+  "Aynı işaret: mutlak değerleri topla, ortak işareti koru.",
+  "Farklı işaret: büyükten küçüğü çıkar, büyüğün işaretini koy.",
+  "Bir sayı ile ters işaretlisinin toplamı 0'dır.",
+  "Çıkarmayı çevir, topla: 4 − (−5) = 4 + (+5).",
+  "İşlemde | | varsa önce onu çöz."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Pozitif sayının başına + yazmak zorunlu mu?",
+   "cevap": "Hayır. Pozitif sayıların + işareti çoğu zaman yazılmaz: 7 = +7. Ama negatif sayıların − işareti mutlaka yazılır. (s. 66)"
+  },
+  {
+   "soru": "Neden çıkarmayı toplamaya çeviriyoruz?",
+   "cevap": "Çünkü toplama kurallarını zaten biliyoruz. Bir sayıyı çıkarmak, tersini eklemekle aynı sonucu verir. Karabatak örneğinde 10 − (−6) ile 10 + 6 aynı sonucu verdi. (s. 67)"
+  },
+  {
+   "soru": "Toplayınca sayı hep büyür mü?",
+   "cevap": "Hayır. Eksi bir sayı eklersen sonuç küçülür: 5 + (−3) = 2. Sayı doğrusunda sola gitmiş olursun. (s. 65)"
+  },
+  {
+   "soru": "İki eksi sayının toplamı artı olabilir mi?",
+   "cevap": "Hayır. İki borç birleşince borç büyür: (−3) + (−4) = −7. (s. 65)"
+  },
+  {
+   "soru": "Saat dilimleri neden + ve − ile yazılır?",
+   "cevap": "Bir ülkenin saati UTC'ye göre ileride ise + , geride ise − ile gösterilir. UTC+3, İstanbul'un saatinin 3 saat ileride olduğunu söyler. (s. 71)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Hesabında −40 TL olan birine 25 TL para yatırılıyor. Yeni bakiyeyi bul ve nasıl bulduğunu anlat.",
+   "ornekCevap": "(−40) + (+25) işlemini yaparım. İşaretler farklı: 40 − 25 = 15. 40 daha büyük ve eksi, sonuç −15 TL. Borç azaldı ama bitmedi.",
+   "anahtarlar": [
+    "farklı",
+    "çıkar",
+    "büyük",
+    "15",
+    "eksi"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir oyunda Alperen 1. bölümde 3 puan kaybetti, 2. bölümde 8 puan kazandı. Oyun sonu puanı kaçtır?",
+   "cevap": "5",
+   "ipucu": "Kaybetmek eksi, kazanmak artı: (−3) + (+8).",
+   "aciklama": "(−3) + (+8): 8 − 3 = 5, büyük olan +8: +5 puan. (s. 63)",
+   "birim": "puan",
+   "kavram": "Farklı İşaret: Çıkar, Büyüğün İşareti",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç (0): oyunun başı. Kaybetmek eksi, kazanmak artı.",
+     "İşlemi yaz: (−3) + (+8).",
+     "İşaretler farklı: 8'den 3'ü çıkar. Büyük olanın işaretini koy."
+    ]
+   }
+  },
+  {
+   "soru": "(−6) + (−5) + (−12) kaçtır?",
+   "secenekler": [
+    "−23",
+    "+23",
+    "−1"
+   ],
+   "dogru": 0,
+   "ipucu": "Üçünün de işareti aynı. Mutlak değerleri topla, ortak işareti koru.",
+   "aciklama": "6 + 5 + 12 = 23, işaret eksi: −23. (s. 66)",
+   "kavram": "Aynı İşaret: Topla, İşareti Koru"
+  },
+  {
+   "soru": "(+2) + (−7) işleminin sonucuna dokun.",
+   "nokta": -5,
+   "sayiDogrusu": {
+    "min": -8,
+    "max": 4
+   },
+   "ipucu": "+2'den başla. −7 eksi: sola 7 aralık git.",
+   "aciklama": "+2'den sola 7 aralık: −5. (s. 66)",
+   "kavram": "Toplama Bir Yolculuktur"
+  },
+  {
+   "soru": "Hangisinin sonucu 0'dır?",
+   "secenekler": [
+    "(+7) + (+7)",
+    "(−9) + (+9)",
+    "(−5) + (+4)"
+   ],
+   "dogru": 1,
+   "ipucu": "Hangisinde bir sayı ile ters işaretlisi toplanıyor?",
+   "aciklama": "−9 ile +9 ters işaretlidir: toplamları 0. (s. 66)",
+   "kavram": "Ters İşaretliler Toplanınca 0"
+  },
+  {
+   "soru": "(+5) − (+25) kaçtır?",
+   "cevap": "-20",
+   "ipucu": "Çıkarmayı toplamaya çevir: (+5) + (−25).",
+   "aciklama": "(+5) + (−25): 25 − 5 = 20, büyük olan −25: −20. (s. 69)",
+   "kavram": "Çıkarma = Tersiyle Toplama",
+   "yardim": {
+    "adimlar": [
+     "Çıkarmayı toplamaya çevir: (+5) + (−25).",
+     "İşaretler farklı: 25'ten 5'i çıkar.",
+     "Mutlak değeri büyük olan hangisi? Onun işaretini koy."
+    ]
+   }
+  },
+  {
+   "soru": "Esma Hanım'ın hesabında −100 TL var. Hesabına 75 TL yatırdı. Yeni bakiyeyi hangi işlem verir?",
+   "secenekler": [
+    "(−100) + 75",
+    "(−100) − 75",
+    "(−100) + (−75)"
+   ],
+   "dogru": 0,
+   "ipucu": "Para yatırmak artı mı, eksi mi? Bakiyeye eklenir mi, çıkar mı?",
+   "aciklama": "Yatırmak artıdır: (−100) + 75 = −25 TL. (s. 68)",
+   "kavram": "Toplama Bir Yolculuktur"
+  },
+  {
+   "soru": "|−5| + |−9| kaçtır?",
+   "cevap": "14",
+   "ipucu": "Önce mutlak değerleri bul, sonra topla.",
+   "aciklama": "|−5| = 5, |−9| = 9. 5 + 9 = 14. (s. 66)",
+   "kavram": "Önce Mutlak Değer",
+   "yardim": {
+    "adimlar": [
+     "Önce |−5| kaç?",
+     "Sonra |−9| kaç?",
+     "İki sonucu topla."
+    ]
+   }
+  },
+  {
+   "soru": "−3 − 4 − 5 kaçtır?",
+   "secenekler": [
+    "−12",
+    "−4",
+    "+6"
+   ],
+   "dogru": 0,
+   "ipucu": "Aradaki her − çıkarmadır: (−3) + (−4) + (−5).",
+   "aciklama": "(−3) + (−4) + (−5) = −12. (s. 69)",
+   "kavram": "Aradaki Eksi Çıkarmadır"
+  },
+  {
+   "soru": "Ece zemin katta. Önce 5 kat aşağı indi, sonra 3 kat yukarı çıktı. Ece'nin katına dokun.",
+   "nokta": -2,
+   "sayiDogrusu": {
+    "min": -6,
+    "max": 3,
+    "dikey": true,
+    "birim": 28,
+    "sifirEtiketi": "Zemin kat"
+   },
+   "ipucu": "Zemin kat 0. 5 aralık aşağı, sonra 3 aralık yukarı.",
+   "aciklama": "(−5) + (+3) = −2. Ece −2. katta. (s. 62)",
+   "kavram": "Toplama Bir Yolculuktur"
+  },
+  {
+   "soru": "Bir havucun yaprak ucu toprağın 18 cm üstünde, kök ucu toprağın 12 cm altında. Yaprak ucu ile kök ucu arasında kaç cm var?",
+   "cevap": "30",
+   "ipucu": "Toprak seviyesi 0. Yaprak +18, kök −12. Büyükten küçüğü çıkar.",
+   "aciklama": "(+18) − (−12) = (+18) + (+12) = 30 cm. (s. 68)",
+   "birim": "cm",
+   "kavram": "Çıkarma = Tersiyle Toplama",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç (0): toprak seviyesi. Üstü artı, altı eksi: yaprak +18, kök −12.",
+     "Fark için büyükten küçüğü çıkar: (+18) − (−12).",
+     "Çıkarmayı toplamaya çevir ve topla."
+    ]
+   }
+  }
+ ]
+}

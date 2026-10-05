@@ -1,0 +1,715 @@
+{
+ "id": "u1k7",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Tam Sayılarla Çarpma ve Bölme",
+ "sayfalar": "s. 73–81",
+ "giris": "Bu konuda eksi ve artı sayılarla çarpma ve bölme yapacağız. İyi haber: işaret kuralı ikisinde de aynı! Klima kumandası, metro kartı ve maden asansörü bize yardım edecek.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu çarpım tablosu, bölme ve geçen konudaki toplama kuralı üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Çarpım tablosu",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='30' cy='24' r='7' fill='#ffa26b'/><circle cx='30' cy='44' r='7' fill='#ffa26b'/><circle cx='30' cy='64' r='7' fill='#ffa26b'/><circle cx='50' cy='24' r='7' fill='#ffa26b'/><circle cx='50' cy='44' r='7' fill='#ffa26b'/><circle cx='50' cy='64' r='7' fill='#ffa26b'/><circle cx='70' cy='24' r='7' fill='#ffa26b'/><circle cx='70' cy='44' r='7' fill='#ffa26b'/><circle cx='70' cy='64' r='7' fill='#ffa26b'/><circle cx='90' cy='24' r='7' fill='#ffa26b'/><circle cx='90' cy='44' r='7' fill='#ffa26b'/><circle cx='90' cy='64' r='7' fill='#ffa26b'/><text x='60' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>3 · 4 = 12</text></svg>",
+    "anlatim": "Çarpma, aynı sayıyı tekrar tekrar toplamaktır: 3 · 4 = 4 + 4 + 4 = 12.",
+    "akilda": "Çarpma = tekrarlı toplama",
+    "ornek": {
+     "problem": "6 · 7 kaçtır?",
+     "adimlar": [
+      {
+       "metin": "6 tane 7'yi topla ya da çarpım tablosunu hatırla.",
+       "islem": "7 + 7 + 7 + 7 + 7 + 7"
+      },
+      {
+       "metin": "Sonucu yaz.",
+       "islem": "6 · 7 = 42"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "7 · 8 kaçtır?",
+      "cevap": "56",
+      "ipucu": "7'ler tablosunu say: 7, 14, 21, ... 8 kere.",
+      "aciklama": "7 · 8 = 56."
+     },
+     {
+      "soru": "9 · 6 kaçtır?",
+      "cevap": "54",
+      "ipucu": "9'lar tablosu: 9, 18, 27, ... 6 kere.",
+      "aciklama": "9 · 6 = 54."
+     }
+    ]
+   },
+   {
+    "ad": "Bölme, çarpmanın tersidir",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>12 ÷ 3 = 4</text><path d='M50 54 v18 M70 54 v18' stroke='#f2c14e' stroke-width='3'/><path d='M50 50 l-5 7 h10z M70 76 l-5 -7 h10z' fill='#f2c14e'/><text x='60' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#ffa26b'>3 · 4 = 12</text></svg>",
+    "anlatim": "42 ÷ 6 sorusunda \"6 kaç kere 42 eder?\" diye düşün. Bölmeyi çarpmayla kontrol edebilirsin.",
+    "akilda": "Bölmeyi çarpmayla kontrol et",
+    "ornek": {
+     "problem": "24 ÷ 4 kaçtır?",
+     "adimlar": [
+      {
+       "metin": "4 kaç kere 24 eder?",
+       "islem": "4 · 6 = 24"
+      },
+      {
+       "metin": "Demek ki:",
+       "islem": "24 ÷ 4 = 6"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "56 ÷ 8 kaçtır?",
+      "cevap": "7",
+      "ipucu": "8 kaç kere 56 eder?",
+      "aciklama": "8 · 7 = 56, yani 56 ÷ 8 = 7."
+     },
+     {
+      "soru": "72 ÷ 9 kaçtır?",
+      "secenekler": [
+       "7",
+       "8",
+       "9"
+      ],
+      "dogru": 1,
+      "ipucu": "9 kaç kere 72 eder?",
+      "aciklama": "9 · 8 = 72, yani 72 ÷ 9 = 8."
+     }
+    ]
+   },
+   {
+    "ad": "Eksi sayıları toplama",
+    "sinif": "6. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−3) + (−2)</text><rect x='18' y='44' width='48' height='22' rx='6' fill='#6fb3ff'/><text x='42' y='60' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>3</text><rect x='70' y='44' width='32' height='22' rx='6' fill='#6fb3ff'/><text x='86' y='60' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>2</text><path d='M18 74 q0 8 8 8 h68 q8 0 8 -8' stroke='#f2c14e' stroke-width='2.5' fill='none'/><text x='60' y='106' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>= −5</text></svg>",
+    "anlatim": "İki eksi sayıyı toplarken mutlak değerleri topla, eksiyi koru: (−2) + (−2) = −4.",
+    "akilda": "Aynı işaret: topla, işareti koru",
+    "ornek": {
+     "problem": "(−3) + (−3) + (−3) kaçtır?",
+     "adimlar": [
+      {
+       "metin": "İlk ikisini topla.",
+       "islem": "(−3) + (−3) = −6"
+      },
+      {
+       "metin": "Üçüncüyü ekle.",
+       "islem": "(−6) + (−3) = −9"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "(−5) + (−5) kaçtır?",
+      "cevap": "-10",
+      "ipucu": "İşaretler aynı: 5 + 5, işaret eksi.",
+      "aciklama": "5 + 5 = 10, işaret eksi: −10."
+     },
+     {
+      "soru": "(−2) + (−2) + (−2) kaçtır?",
+      "secenekler": [
+       "−6",
+       "+6",
+       "−4"
+      ],
+      "dogru": 0,
+      "ipucu": "Üç tane 2'yi topla, eksiyi koru.",
+      "aciklama": "2 + 2 + 2 = 6, işaret eksi: −6."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Çarpma = Tekrarlı Toplama",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>4 · (−2)</text><line x1='8' y1='80' x2='112' y2='80' stroke='#f5f6fa' stroke-width='3'/><line x1='12' y1='74' x2='12' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><text x='12' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−8</text><line x1='24' y1='74' x2='24' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><line x1='36' y1='74' x2='36' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><line x1='48' y1='74' x2='48' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><line x1='60' y1='74' x2='60' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><text x='60' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>−4</text><line x1='72' y1='74' x2='72' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><line x1='84' y1='74' x2='84' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><line x1='96' y1='74' x2='96' y2='86' stroke='#6fb3ff' stroke-width='2.5'/><line x1='108' y1='74' x2='108' y2='86' stroke='#f2c14e' stroke-width='2.5'/><text x='108' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><path d='M108 72 Q96 50 84 72' stroke='#6fb3ff' stroke-width='2.6' fill='none' stroke-linecap='round'/><path d='M84 72 Q72 50 60 72' stroke='#6fb3ff' stroke-width='2.6' fill='none' stroke-linecap='round'/><path d='M60 72 Q48 50 36 72' stroke='#6fb3ff' stroke-width='2.6' fill='none' stroke-linecap='round'/><path d='M36 72 Q24 50 12 72' stroke='#6fb3ff' stroke-width='2.6' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "4 · (−2), dört tane (−2)'yi toplamak demektir: (−2) + (−2) + (−2) + (−2) = −8.",
+   "ek": "Klima kumandasında mavi tuşa her basışta sıcaklık 2 °C düşer. Mavi tuşa 4 kez basınca sıcaklık 4 · (−2) = −8 °C değişir. (s. 73)",
+   "akilda": "Kaç kere? Neyi? Topla",
+   "sayiDogrusu": {
+    "min": -9,
+    "max": 1,
+    "oklar": [
+     {
+      "bas": 0,
+      "son": -2,
+      "etiket": "−2",
+      "renk": "#2364c7"
+     },
+     {
+      "bas": -2,
+      "son": -4,
+      "etiket": "−2",
+      "renk": "#2364c7"
+     },
+     {
+      "bas": -4,
+      "son": -6,
+      "etiket": "−2",
+      "renk": "#2364c7"
+     },
+     {
+      "bas": -6,
+      "son": -8,
+      "etiket": "−2",
+      "renk": "#2364c7"
+     }
+    ]
+   },
+   "cozum": {
+    "baslik": "Klima kumandası",
+    "problem": "Klimanın mavi tuşuna her basışta oda sıcaklığı 2 °C azalıyor. Ela tuşa 3 kez bastı. Sıcaklık ne kadar değişti?",
+    "adimlar": [
+     {
+      "metin": "Her basışta ne oluyor? Azalmak eksidir.",
+      "islem": "Bir basış: −2"
+     },
+     {
+      "metin": "Kaç kez? 3 kez. Tekrarlı toplama yaz.",
+      "islem": "(−2) + (−2) + (−2)"
+     },
+     {
+      "metin": "Aynı işaret: topla, eksiyi koru.",
+      "islem": "= −6"
+     },
+     {
+      "metin": "Bunu çarpmayla da yazabiliriz.",
+      "islem": "3 · (−2) = −6"
+     }
+    ],
+    "sonuc": "Sıcaklık 6 °C azaldı: 3 · (−2) = −6. (s. 73)"
+   },
+   "soru": {
+    "soru": "2 · (−5) kaçtır?",
+    "cevap": "-10",
+    "ipucu": "2 tane (−5)'i topla.",
+    "aciklama": "(−5) + (−5) = −10. (s. 73)",
+    "yardim": {
+     "adimlar": [
+      "2 · (−5), 2 tane (−5) demek.",
+      "(−5) + (−5) işlemini yap: aynı işaret, topla, eksiyi koru."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Farklı İşaret: Çarpım Eksi",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#9aa3bf'>·</text><text x='70' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='30' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='30' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><path d='M18 42 h96 M44 14 v96' stroke='#5a6280' stroke-width='2'/><text x='70' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#ffa26b'>+</text><rect x='85' y='45' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='98' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><rect x='57' y='77' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='70' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='98' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#ffa26b'>+</text></svg>",
+   "aciklama": "Farklı işaretli iki tam sayının çarpımı negatiftir. Önce sayıları işaretsiz çarp, sonra başına eksi koy.",
+   "ek": "(−6) · (+3) = −18 ve (+9) · (−1) = −9. (s. 74)",
+   "akilda": "Farklı işaret → eksi",
+   "cozum": {
+    "baslik": "Metro kartı",
+    "problem": "Metroya her binişte öğrencinin kartından 7 TL düşüyor. Öğrenci bir günde 6 kez metroya bindi. Kartındaki bakiye ne kadar değişti?",
+    "adimlar": [
+     {
+      "metin": "Her binişte ne oluyor? Para düşüyor: eksi.",
+      "islem": "Bir biniş: −7"
+     },
+     {
+      "metin": "Kaç kez? 6 kez. Çarpma yaz.",
+      "islem": "6 · (−7)"
+     },
+     {
+      "metin": "Önce işaretsiz çarp.",
+      "islem": "6 · 7 = 42"
+     },
+     {
+      "metin": "İşaretler farklı (+ ve −): sonuç eksi.",
+      "islem": "6 · (−7) = −42"
+     }
+    ],
+    "sonuc": "Bakiye 42 TL azaldı: −42. (s. 74)"
+   },
+   "sende": {
+    "baslik": "Su deposu",
+    "problem": "Bir su deposundan her gün 4 litre su boşaltılıyor. 5 gün sonunda depodaki su ne kadar değişir?",
+    "adimlar": [
+     {
+      "metin": "Her gün değişim ne? Boşaltmak eksidir.",
+      "soru": {
+       "soru": "Bir günlük değişimi tam sayıyla yaz.",
+       "cevap": "-4",
+       "ipucu": "Boşaltmak eksi. Önce − tuşuna dokun.",
+       "aciklama": "Her gün −4 L.",
+       "birim": "L"
+      },
+      "islem": "Bir gün: −4"
+     },
+     {
+      "metin": "5 gün: çarpma yaz ve önce işaretsiz çarp.",
+      "soru": {
+       "soru": "5 · 4 kaçtır?",
+       "cevap": "20",
+       "ipucu": "5'ler tablosu: 5, 10, 15, 20.",
+       "aciklama": "5 · 4 = 20."
+      },
+      "islem": "5 · 4 = 20"
+     },
+     {
+      "metin": "İşaretler farklı. Sonucun işareti ne?",
+      "soru": {
+       "soru": "5 · (−4) kaçtır?",
+       "secenekler": [
+        "+20",
+        "−20",
+        "−9"
+       ],
+       "dogru": 1,
+       "ipucu": "Farklı işaretlerin çarpımı artı mı, eksi mi?",
+       "aciklama": "Farklı işaret → eksi: −20."
+      },
+      "islem": "5 · (−4) = −20"
+     }
+    ],
+    "sonuc": "Harika! Depodaki su 20 L azalır: −20. (s. 74)"
+   },
+   "soru": {
+    "soru": "(−6) · (+3) kaçtır?",
+    "secenekler": [
+     "−18",
+     "+18",
+     "−3"
+    ],
+    "dogru": 0,
+    "ipucu": "Önce 6 · 3'ü bul. İşaretler farklı mı?",
+    "aciklama": "6 · 3 = 18, işaretler farklı: −18. (s. 74)"
+   }
+  },
+  {
+   "ad": "Aynı İşaret: Çarpım Artı",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#9aa3bf'>·</text><text x='70' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='30' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='30' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><path d='M18 42 h96 M44 14 v96' stroke='#5a6280' stroke-width='2'/><rect x='57' y='45' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='70' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#6fb3ff'>−</text><text x='70' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#6fb3ff'>−</text><rect x='85' y='77' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='98' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text></svg>",
+   "aciklama": "Aynı işaretli iki tam sayının çarpımı pozitiftir: (+4) · (+8) = +32, (−5) · (−7) = +35.",
+   "ek": "Kitaptaki örüntüye bak: 2 · (−2) = −4, 1 · (−2) = −2, 0 · (−2) = 0. Her adımda sonuç 2 artıyor. Devam edince (−1) · (−2) = +2 olur. (s. 73–74)",
+   "akilda": "Aynı işaret → artı",
+   "cozum": {
+    "baslik": "Örüntüyü sürdürelim",
+    "problem": "3 · (−2) = −6, 2 · (−2) = −4, 1 · (−2) = −2, 0 · (−2) = 0. Sonra ne gelir?",
+    "adimlar": [
+     {
+      "metin": "Soldaki sayı her seferinde 1 azalıyor.",
+      "islem": "3, 2, 1, 0, −1, …"
+     },
+     {
+      "metin": "Sonuç her seferinde 2 artıyor.",
+      "islem": "−6, −4, −2, 0, …"
+     },
+     {
+      "metin": "0'dan sonra 2 artarsa?",
+      "islem": "(−1) · (−2) = +2"
+     },
+     {
+      "metin": "Bir adım daha.",
+      "islem": "(−2) · (−2) = +4"
+     }
+    ],
+    "sonuc": "İki eksi sayının çarpımı artı çıktı. (s. 73)"
+   },
+   "soru": {
+    "soru": "(−5) · (−7) kaçtır?",
+    "secenekler": [
+     "−35",
+     "+35",
+     "−12"
+    ],
+    "dogru": 1,
+    "ipucu": "Önce 5 · 7'yi bul. İşaretler aynı mı?",
+    "aciklama": "5 · 7 = 35, işaretler aynı: +35. (s. 74)"
+   }
+  },
+  {
+   "ad": "Çok Çarpanda Eksileri Say",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='24' cy='44' r='14' fill='#6fb3ff'/><text x='24' y='51' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#1b2340'>−</text><circle cx='60' cy='44' r='14' fill='#6fb3ff'/><text x='60' y='51' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#1b2340'>−</text><circle cx='96' cy='44' r='14' fill='#6fb3ff'/><text x='96' y='51' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#1b2340'>−</text><path d='M24 60 Q42 80 60 60' stroke='#f2c14e' stroke-width='2.5' fill='none'/><text x='42' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#ffa26b'>+</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>3 eksi: tek → −</text></svg>",
+   "aciklama": "Çok sayıda çarpan varsa eksi işaretlerini say. Eksi sayısı çiftse sonuç artı, tekse sonuç eksi olur.",
+   "ek": "Her iki eksi birbirini artıya çevirir. (−2) · (−3) · (−4): ilk ikisi +6 yapar, (+6) · (−4) = −24. Bir sayı 0 ile çarpılırsa sonuç her zaman 0'dır: 0 · (−22) = 0. (s. 75)",
+   "akilda": "Çift eksi artı, tek eksi eksi",
+   "soru": {
+    "soru": "(−2) · (−3) · (−4) çarpımının işareti nedir?",
+    "secenekler": [
+     "Artı",
+     "Sıfır",
+     "Eksi"
+    ],
+    "dogru": 2,
+    "ipucu": "Kaç tane eksi var? Çift mi, tek mi?",
+    "aciklama": "3 eksi var, 3 tek: sonuç eksi. (−2) · (−3) · (−4) = −24. (s. 75)"
+   }
+  },
+  {
+   "ad": "Bölmede Aynı Kural",
+   "renk": "#3274d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='20' x2='106' y2='20' stroke='#c98a4b' stroke-width='3'/><text x='26' y='16' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>0</text><rect x='50' y='20' width='20' height='90' fill='#2b355c' stroke='#9aa3bf' stroke-width='1.5'/><circle cx='78' cy='34' r='3.5' fill='#f2c14e'/><circle cx='78' cy='48' r='3.5' fill='#f2c14e'/><circle cx='78' cy='62' r='3.5' fill='#f2c14e'/><circle cx='78' cy='76' r='3.5' fill='#f2c14e'/><circle cx='78' cy='90' r='3.5' fill='#f2c14e'/><circle cx='78' cy='104' r='3.5' fill='#f2c14e'/><rect x='53' y='92' width='14' height='14' rx='2' fill='#ffa26b'/><text x='30' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>−24</text><text x='96' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>4 m</text></svg>",
+   "aciklama": "Bölmede de işaret kuralı çarpmadakiyle aynıdır: aynı işaret → artı, farklı işaret → eksi.",
+   "ek": "(+25) ÷ (+5) = +5, (−72) ÷ (−9) = +8, (−33) ÷ (+11) = −3. Bölen 0 olamaz. (s. 77)",
+   "akilda": "Bölmede de aynı kural",
+   "cozum": {
+    "baslik": "Maden asansörü",
+    "problem": "Bir maden asansörü yer seviyesinden 24 m aşağıya 8 saniyede indi. Her saniye kaç metre yer değiştirdi?",
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0): yer seviyesi. Aşağı eksidir.",
+      "islem": "Toplam: −24 m"
+     },
+     {
+      "metin": "8 saniyeye eşit paylaştır: böl.",
+      "islem": "(−24) ÷ 8"
+     },
+     {
+      "metin": "Önce işaretsiz böl.",
+      "islem": "24 ÷ 8 = 3"
+     },
+     {
+      "metin": "İşaretler farklı: sonuç eksi.",
+      "islem": "(−24) ÷ 8 = −3"
+     }
+    ],
+    "sonuc": "Asansör her saniye 3 m aşağı iniyor: −3. (s. 76)"
+   },
+   "sende": {
+    "baslik": "Sultan'ın taksitleri",
+    "problem": "Sultan arkadaşından 450 TL borç aldı. Borcunu 3 eşit taksitte ödeyecek. Her taksiti tam sayıyla yazalım.",
+    "adimlar": [
+     {
+      "metin": "Borç eksidir.",
+      "soru": {
+       "soru": "Borcu tam sayıyla yaz.",
+       "cevap": "-450",
+       "ipucu": "Borç eksi. Önce − tuşuna dokun.",
+       "aciklama": "Borç: −450 TL.",
+       "birim": "TL"
+      },
+      "islem": "−450"
+     },
+     {
+      "metin": "3 eşit parçaya böl. Önce işaretsiz böl.",
+      "soru": {
+       "soru": "450 ÷ 3 kaçtır?",
+       "cevap": "150",
+       "ipucu": "3 kaç kere 450 eder? 3 · 100 = 300, kalan 150.",
+       "aciklama": "3 · 150 = 450, yani 450 ÷ 3 = 150."
+      },
+      "islem": "450 ÷ 3 = 150"
+     },
+     {
+      "metin": "İşaretler farklı. Sonucun işareti ne?",
+      "soru": {
+       "soru": "(−450) ÷ 3 kaçtır?",
+       "secenekler": [
+        "+150",
+        "−150",
+        "−147"
+       ],
+       "dogru": 1,
+       "ipucu": "Farklı işaret → artı mı, eksi mi?",
+       "aciklama": "Farklı işaret → eksi: −150."
+      },
+      "islem": "(−450) ÷ 3 = −150"
+     }
+    ],
+    "sonuc": "Harika! Her taksit −150 TL. (s. 77)"
+   },
+   "soru": {
+    "soru": "(−72) ÷ (−9) kaçtır?",
+    "cevap": "8",
+    "ipucu": "Önce 72 ÷ 9'u bul. İşaretler aynı mı?",
+    "aciklama": "72 ÷ 9 = 8, işaretler aynı: +8. (s. 77)",
+    "yardim": {
+     "adimlar": [
+      "Önce işaretsiz böl: 72 ÷ 9. 9 kaç kere 72 eder?",
+      "İşaretler aynı mı, farklı mı?",
+      "Aynı işaret → artı."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Bölmenin Farklı Yazılışları",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−12) ÷ 2</text><text x='60' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−12) : 2</text><text x='44' y='80' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>−12</text><line x1='28' y1='86' x2='60' y2='86' stroke='#f5f6fa' stroke-width='2.5'/><text x='44' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>2</text><text x='92' y='94' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#6fb3ff'>= −6</text></svg>",
+   "aciklama": "Bölme işlemi üç şekilde yazılabilir: (−12) ÷ 2, (−12) : 2 ya da kesir çizgisiyle [[-12/2]]. Hepsinin sonucu −6'dır.",
+   "ek": "Kesir çizgisi bölme demektir; bunu 4. konuda da görmüştük. (s. 77)",
+   "akilda": "÷ = : = kesir çizgisi",
+   "soru": {
+    "soru": "Hangisi (−20) ÷ 5 ile aynı sonucu verir?",
+    "secenekler": [
+     "(−20) · 5",
+     "(−20) : 5",
+     "20 : 5"
+    ],
+    "dogru": 1,
+    "ipucu": "÷ işaretinin başka yazılışını ara. Sayılar ve işaretleri de aynı kalmalı.",
+    "aciklama": "(−20) : 5 = −4, (−20) ÷ 5 ile aynıdır. (s. 77)"
+   }
+  },
+  {
+   "ad": "Çarp mı, Böl mü?",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='60' y1='16' x2='60' y2='104' stroke='#5a6280' stroke-width='2'/><text x='30' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='28' fill='#f2c14e'>×</text><text x='90' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='28' fill='#f2c14e'>÷</text><path d='M12 70 q6 -10 12 0' stroke='#6fb3ff' stroke-width='2.5' fill='none'/><path d='M24 70 q6 -10 12 0' stroke='#6fb3ff' stroke-width='2.5' fill='none'/><path d='M36 70 q6 -10 12 0' stroke='#6fb3ff' stroke-width='2.5' fill='none'/><rect x='68' y='62' width='44' height='12' rx='3' fill='#6fb3ff'/><path d='M83 60 v16 M97 60 v16' stroke='#1b2340' stroke-width='2.5'/><text x='30' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>tekrar</text><text x='90' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f5f6fa'>paylaştır</text></svg>",
+   "aciklama": "Aynı değişim tekrar ediyorsa çarp. Bir toplamı eşit parçalara ayırıyorsan ya da \"kaç kere?\" diye soruyorsan böl.",
+   "ek": "Metro kartı: 6 kez −7 → 6 · (−7). Maden asansörü: −24 m'yi 8 saniyeye paylaştır → (−24) ÷ 8. (s. 74–76)",
+   "akilda": "Tekrar → çarp, paylaştır → böl",
+   "cozum": {
+    "baslik": "Yarışmada kaç soru?",
+    "problem": "Bir yarışmada her yanlış cevap −3 puan. Tüm sorulara yanlış cevap veren bir yarışmacı −75 puan aldı. Kaç soruya cevap verdi?",
+    "adimlar": [
+     {
+      "metin": "Ne veriliyor? Bir yanlış −3, toplam −75.",
+      "islem": "Bir soru: −3, toplam: −75"
+     },
+     {
+      "metin": "Ne isteniyor? −3 kaç kere −75 eder? Bu bir bölme.",
+      "islem": "(−75) ÷ (−3)"
+     },
+     {
+      "metin": "Önce işaretsiz böl.",
+      "islem": "75 ÷ 3 = 25"
+     },
+     {
+      "metin": "İşaretler aynı: sonuç artı.",
+      "islem": "(−75) ÷ (−3) = +25"
+     }
+    ],
+    "sonuc": "Yarışmacı 25 soruya cevap verdi. (s. 77)"
+   },
+   "sende": {
+    "baslik": "Serbest dalış",
+    "problem": "Bir dalgıç her dakika 13 m derine iniyor. Deniz seviyesinden başladı ve 78 m derinliğe ulaştı. Kaç dakika geçti?",
+    "adimlar": [
+     {
+      "metin": "Çarp mı, böl mü? \"Kaç kere?\" diye soruyoruz.",
+      "soru": {
+       "soru": "Hangi işlem yapılmalı?",
+       "secenekler": [
+        "(−78) ÷ (−13)",
+        "(−78) · (−13)",
+        "(−78) + (−13)"
+       ],
+       "dogru": 0,
+       "ipucu": "−13 kaç kere −78 eder? Kaç kere sorusu hangi işlem?",
+       "aciklama": "Kaç kere → böl: (−78) ÷ (−13)."
+      },
+      "islem": "(−78) ÷ (−13)"
+     },
+     {
+      "metin": "Önce işaretsiz böl.",
+      "soru": {
+       "soru": "78 ÷ 13 kaçtır?",
+       "cevap": "6",
+       "ipucu": "13'ü say: 13, 26, 39, 52, 65, 78.",
+       "aciklama": "13 · 6 = 78, yani 78 ÷ 13 = 6."
+      },
+      "islem": "78 ÷ 13 = 6"
+     },
+     {
+      "metin": "İşaret ne olur?",
+      "soru": {
+       "soru": "Sonucun işareti nedir?",
+       "secenekler": [
+        "Artı, çünkü işaretler aynı",
+        "Eksi, çünkü derine indi",
+        "İşareti olmaz"
+       ],
+       "dogru": 0,
+       "ipucu": "İki sayının da işareti eksi. Aynı işaret → ?",
+       "aciklama": "Aynı işaret → artı: +6."
+      },
+      "islem": "(−78) ÷ (−13) = +6"
+     }
+    ],
+    "sonuc": "Harika! 6 dakika geçti. (s. 78)"
+   },
+   "soru": {
+    "soru": "Feyza'nın internet paketinden video izlediği her dakika için 150 MB düşüyor. 15 dakikalık değişimi hangi işlem verir?",
+    "secenekler": [
+     "15 · (−150)",
+     "(−150) ÷ 15",
+     "15 + (−150)"
+    ],
+    "dogru": 0,
+    "ipucu": "Aynı değişim 15 kere mi tekrar ediyor, yoksa bir toplamı mı paylaştırıyoruz?",
+    "aciklama": "Her dakika −150, 15 kere: 15 · (−150) = −2250 MB. (s. 74)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Maden ocaklarında madenciler yer altı asansörleriyle iner. Kitaptaki asansörün tüneline her 4 metrede bir işaret lambası konmuş; 24 m inen madenciler 24 ÷ 4 = 6 lamba görür. (s. 76)",
+  "Türk sporcu Şahika Ercümen, serbest dalışta tek nefeste 107 m derine inerek 2025'te dünya rekoru kırdı. (s. 78)"
+ ],
+ "akildaKalsin": [
+  "Çarpma, tekrarlı toplamadır: 4 · (−2) = (−2) + (−2) + (−2) + (−2).",
+  "Aynı işaret → artı; farklı işaret → eksi. Çarpmada da bölmede de.",
+  "Çok çarpanda eksileri say: çiftse artı, tekse eksi.",
+  "Bölme ÷, : ya da kesir çizgisiyle yazılır. Bölen 0 olamaz.",
+  "Aynı değişim tekrar ediyorsa çarp; paylaştırıyorsan ya da \"kaç kere?\" diyorsan böl."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "İki eksinin çarpımı neden artı?",
+   "cevap": "Kitaptaki örüntüye bak: soldaki çarpanı 1 azalttıkça sonuç 2 artıyor. 0'dan sonra da artmaya devam eder: (−1) · (−2) = +2. (s. 73)"
+  },
+  {
+   "soru": "Çarpma işaretini nasıl yazarız?",
+   "cevap": "Kitapta nokta (·) kullanılıyor: 6 · (−7). Eksi sayıyı parantez içine yazarız ki işaretler karışmasın. (s. 74)"
+  },
+  {
+   "soru": "0'a bölebilir miyiz?",
+   "cevap": "Hayır. Bilgi kutusunda \"böleni sıfırdan farklı\" yazar. Ama 0'ın kendisi bölünebilir: 0 ÷ (−15) = 0. (s. 77–78)"
+  },
+  {
+   "soru": "Çok sayıyı çarparken işareti hızlı nasıl bulurum?",
+   "cevap": "Eksileri say: çiftse sonuç artı, tekse eksi. Sonra sayıları işaretsiz çarp. (s. 75)"
+  },
+  {
+   "soru": "Dağa çıkınca hava neden soğur?",
+   "cevap": "Yükseldikçe hava basıncı azalır, bu yüzden sıcaklık genellikle düşer. Kitaptaki dağcı her 100 m'de 1 °C soğuyan bir yerde tırmanıyor. (s. 80)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir arkadaşın \"İki eksi sayının çarpımı da eksidir\" diyor. Ona doğrusunu bir örnekle anlat.",
+   "ornekCevap": "Yanlış. (−5) · (−7) = +35. Aynı işaretli iki sayının çarpımı artıdır. Kitaptaki örüntüde de 0 · (−2) = 0'dan sonra (−1) · (−2) = +2 geliyor.",
+   "anahtarlar": [
+    "artı",
+    "aynı",
+    "pozitif",
+    "örüntü"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "(+4) · (−10) kaçtır?",
+   "cevap": "-40",
+   "ipucu": "Önce 4 · 10. İşaretler farklı mı?",
+   "aciklama": "4 · 10 = 40, işaretler farklı: −40. (s. 75)",
+   "kavram": "Farklı İşaret: Çarpım Eksi",
+   "yardim": {
+    "adimlar": [
+     "Önce işaretsiz çarp: 4 · 10.",
+     "İşaretler aynı mı, farklı mı?",
+     "Farklı işaret → eksi. Önce − tuşuna dokun."
+    ]
+   }
+  },
+  {
+   "soru": "(−10) · (−10) kaçtır?",
+   "secenekler": [
+    "−100",
+    "+100",
+    "0"
+   ],
+   "dogru": 1,
+   "ipucu": "İşaretler aynı mı?",
+   "aciklama": "10 · 10 = 100, işaretler aynı: +100. (s. 75)",
+   "kavram": "Aynı İşaret: Çarpım Artı"
+  },
+  {
+   "soru": "Klimanın mavi tuşuna her basışta sıcaklık 2 °C azalıyor. Tuşa 3 kez basılınca sıcaklık değişimi kaç olur? Sayı doğrusunda dokun.",
+   "nokta": -6,
+   "sayiDogrusu": {
+    "min": -8,
+    "max": 2
+   },
+   "ipucu": "0'dan başla, her basışta 2 aralık sola git. 3 kez.",
+   "aciklama": "3 · (−2) = −6. (s. 73)",
+   "kavram": "Çarpma = Tekrarlı Toplama"
+  },
+  {
+   "soru": "(−45) ÷ 9 kaçtır?",
+   "secenekler": [
+    "5",
+    "−36",
+    "−5"
+   ],
+   "dogru": 2,
+   "ipucu": "Önce 45 ÷ 9. İşaretler farklı mı?",
+   "aciklama": "45 ÷ 9 = 5, işaretler farklı: −5. (s. 78)",
+   "kavram": "Bölmede Aynı Kural"
+  },
+  {
+   "soru": "(−144) ÷ (−12) kaçtır?",
+   "cevap": "12",
+   "ipucu": "Önce 144 ÷ 12. İşaretler aynı mı?",
+   "aciklama": "144 ÷ 12 = 12, işaretler aynı: +12. (s. 78)",
+   "kavram": "Bölmede Aynı Kural",
+   "yardim": {
+    "adimlar": [
+     "Önce işaretsiz böl: 144 ÷ 12. 12 kaç kere 144 eder? 12 · 10 = 120, kalan 24.",
+     "İşaretler aynı mı?",
+     "Aynı işaret → artı."
+    ]
+   }
+  },
+  {
+   "soru": "(−3) · (−5) · (−6) çarpımının işareti nedir?",
+   "secenekler": [
+    "Eksi",
+    "Artı",
+    "Sıfır"
+   ],
+   "dogru": 0,
+   "ipucu": "Eksileri say: çift mi, tek mi?",
+   "aciklama": "3 eksi var, tek: sonuç eksi. (−3) · (−5) · (−6) = −90. (s. 75)",
+   "kavram": "Çok Çarpanda Eksileri Say"
+  },
+  {
+   "soru": "Bir apartmanda iki kat arası 3 m. Giriş katındaki asansör 18 m aşağı indi. Asansör hangi kata indi?",
+   "cevap": "-6",
+   "ipucu": "Aşağı eksi: −18 m. Her kat 3 m. Kaç kat? Böl.",
+   "aciklama": "(−18) ÷ 3 = −6. Asansör −6. katta. (s. 77)",
+   "kavram": "Çarp mı, Böl mü?",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç (0): giriş katı. Aşağı eksi: −18 m.",
+     "Her kat 3 m. Kaç kat? Bu bir paylaştırma: böl.",
+     "(−18) ÷ 3: önce 18 ÷ 3, sonra işaret."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi −4'e eşit değildir?",
+   "secenekler": [
+    "(−72) ÷ 18",
+    "72 : (−18)",
+    "(−72) : (−18)"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisinde iki sayının işareti aynı? Aynı işaret → artı.",
+   "aciklama": "(−72) : (−18) = +4. Diğer ikisinde işaretler farklı: −4. (s. 78)",
+   "kavram": "Bölmenin Farklı Yazılışları"
+  },
+  {
+   "soru": "0 · (−22) işleminin sonucuna dokun.",
+   "nokta": 0,
+   "sayiDogrusu": {
+    "min": -5,
+    "max": 5
+   },
+   "ipucu": "Bir sayıyı 0 ile çarparsan ne olur?",
+   "aciklama": "0 ile çarpılan her sayı 0 eder: 0 · (−22) = 0. (s. 75)",
+   "kavram": "Çok Çarpanda Eksileri Say"
+  },
+  {
+   "soru": "Bir dağcı her 100 m yukarı çıktığında hava 1 °C soğuyor. Dağcı 400 m yukarı çıktı. Sıcaklık kaç derece değişti?",
+   "cevap": "-4",
+   "ipucu": "Önce kaç kere 100 m çıktığını bul: 400 ÷ 100. Her seferinde −1 °C.",
+   "aciklama": "400 ÷ 100 = 4 kere. 4 · (−1) = −4 °C. (s. 81)",
+   "birim": "°C",
+   "kavram": "Çarp mı, Böl mü?",
+   "yardim": {
+    "adimlar": [
+     "Kaç kere 100 m çıktı? 400 ÷ 100.",
+     "Her seferinde sıcaklık −1 °C değişiyor.",
+     "Kaç kere · (−1): işaretler farklı → eksi."
+    ]
+   }
+  }
+ ]
+}
