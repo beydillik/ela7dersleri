@@ -2734,6 +2734,237 @@ def u1k10():
     }
 
 
+# ---------- u1k11 Rasyonel Sayılarla Bölme ----------
+def svg11_sise():
+    g = ""
+    for i, x in enumerate((14, 46, 78)):
+        g += f"<rect x='{x}' y='34' width='14' height='40' fill='{OB}' stroke='#f5f6fa' stroke-width='1.5'/>"
+        g += f"<rect x='{x + 14}' y='34' width='14' height='40' fill='#c9733f' stroke='#f5f6fa' stroke-width='1.5'/>"
+        g += txt(x + 14, 26, "1 L", "#f5f6fa", 11)
+    g += txt(60, 102, "3 ÷ ½ = 6", "#f2c14e", 17)
+    return bg(g)
+
+
+def svg11_ters():
+    g = kesir_svg(32, 44, "2", "3", OB, 22) + kesir_svg(88, 44, "3", "2", OB, 22)
+    g += "<path d='M48 38 Q60 26 72 38' stroke='#f2c14e' stroke-width='2.5' fill='none'/><path d='M72 38 l-7 -1 4 -6z' fill='#f2c14e'/>"
+    g += "<path d='M72 66 Q60 78 48 66' stroke='#f2c14e' stroke-width='2.5' fill='none'/><path d='M48 66 l7 1 -4 6z' fill='#f2c14e'/>"
+    g += txt(60, 106, "çarpımı 1", "#f2c14e", 14)
+    return bg(g)
+
+
+def svg11_kct():
+    g = kesir_svg(36, 26, "4", "9", "#f5f6fa", 14) + txt(60, 36, "÷", "#f5f6fa", 18) + kesir_svg(84, 26, "7", "3", "#f5f6fa", 14)
+    g += "<path d='M60 52 v10 M55 58 l5 6 5 -6' stroke='#f2c14e' stroke-width='2.5' fill='none' stroke-linecap='round'/>"
+    g += kesir_svg(36, 76, "4", "9", "#f5f6fa", 14) + txt(60, 86, "·", "#f2c14e", 22) + kesir_svg(84, 76, "3", "7", OB, 14)
+    g += txt(60, 112, "koru · çevir · ters", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg11_esit():
+    g = kesir_svg(30, 38, "6", "7", OB, 18) + txt(60, 48, "÷", "#f5f6fa", 20) + kesir_svg(90, 38, "2", "7", OB, 18)
+    g += "<circle cx='30' cy='54' r='12' fill='none' stroke='#f2c14e' stroke-width='2'/><circle cx='90' cy='54' r='12' fill='none' stroke='#f2c14e' stroke-width='2'/>"
+    g += txt(60, 100, "6 ÷ 2 = 3", "#f2c14e", 16)
+    return bg(g)
+
+
+def svg11_tamli():
+    g = txt(60, 34, f"({M}3¼) ÷ 2⅔", NB, 15)
+    g += "<path d='M60 44 v10 M55 50 l5 6 5 -6' stroke='#f2c14e' stroke-width='2.5' fill='none' stroke-linecap='round'/>"
+    g += txt(60, 76, f"{M}13/4 · 3/8", NB, 15)
+    g += txt(60, 104, f"farklı → {M}", "#f2c14e", 14)
+    return bg(g)
+
+
+def svg11_cizgi():
+    g = txt(60, 34, "5/4", OB, 18) + "<line x1='34' y1='44' x2='86' y2='44' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/>" + txt(60, 66, "1/3", OB, 18)
+    g += txt(60, 100, "5/4 ÷ 1/3", "#f2c14e", 16)
+    return bg(g)
+
+
+def u1k11():
+    sk = lambda mn, mx, b, **ek: dict({"min": mn, "max": mx, "bolme": b}, **ek)
+    return {
+        "id": "u1k11", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Rasyonel Sayılarla Bölme", "sayfalar": "s. 102–107",
+        "giris": "Kesirleri çarpmayı öğrendin. Bölme çok kolay olacak, çünkü her bölmeyi bir çarpmaya çevireceğiz! Sirke şişeleri, asansör ve kablolar bize yardım edecek.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu kesirlerde çarpma, tam sayılı kesirler ve bölmede işaret üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Kesirlerde çarpma ve çapraz sadeleştirme", "sinif": "9. konu", "svg": svg9_capraz(),
+                 "anlatim": "Pay paya, payda paydaya çarpılır. Çarpmadan önce bir pay ile bir paydayı aynı sayıya bölerek sadeleştir: [[3/4]] · [[8/9]] → [[1/1]] · [[2/3]] = [[2/3]].",
+                 "akilda": "Önce sadeleştir, sonra çarp",
+                 "ornek": {"problem": "[[2/5]] · [[5/6]] kaçtır?", "adimlar": [
+                     {"metin": "Üstteki 5 ile alttaki 5'i 5'e böl.", "islem": "5 → 1, 5 → 1"},
+                     {"metin": "Üstteki 2 ile alttaki 6'yı 2'ye böl.", "islem": "2 → 1, 6 → 3"},
+                     {"metin": "Küçülen sayıları çarp.", "islem": "[[2/5]] · [[5/6]] = [[1/3]]"}]},
+                 "sorular": [
+                     G("[[4/7]] · [[7/8]] kaçtır? En sade hâliyle yaz.", "1/2", "7 ile 7'yi, 4 ile 8'i sadeleştir.", "7 → 1, 7 → 1; 4 → 1, 8 → 2: [[1/2]].", kesir=True),
+                     G("[[3/10]] · [[5/9]] kaçtır? En sade hâliyle yaz.", "1/6", "3 ile 9'u 3 böler, 5 ile 10'u 5 böler.", "3 → 1, 9 → 3; 5 → 1, 10 → 2: [[1/6]].", kesir=True)]},
+                {"ad": "Tam sayılı kesir → bileşik kesir", "sinif": "2. konu", "svg": svg_h_tamli(),
+                 "anlatim": "Tam kısmı payda ile çarp, payı ekle; payda aynı kalır: [[2 3/4]] = [[11/4]]. Eksi sayının tamamına aittir: [[-1 1/2]] = [[-3/2]].",
+                 "akilda": "Tam · payda + pay",
+                 "ornek": {"problem": "[[3 2/5]] sayısını bileşik kesre çevirelim.", "adimlar": [
+                     {"metin": "Tam kısmı payda ile çarp, payı ekle: 3 · 5 + 2.", "islem": "3 · 5 + 2 = 17"},
+                     {"metin": "Payda 5 kalır.", "islem": "[[3 2/5]] = [[17/5]]"}]},
+                 "sorular": [
+                     G("[[3 1/2]] sayısını bileşik kesir olarak yaz.", "7/2", "3 · 2 + 1 = ? Payda 2 kalır.", "3 · 2 + 1 = 7: [[7/2]].", kesir=True),
+                     G("[[-2 1/4]] sayısını bileşik kesir olarak yaz.", "-9/4", "Eksiyi kenara koy: 2 · 4 + 1 = ? Sonra eksiyi geri ekle.", "2 · 4 + 1 = 9: [[-9/4]].", kesir=True, kabul=["9/-4"])]},
+                {"ad": "Bölmede işaret", "sinif": "7. konu", "svg": svg6_isaret("farkli"),
+                 "anlatim": "Bölmede de çarpmadaki kural geçerli: aynı işaretli iki sayının bölümü artı, farklı işaretli iki sayının bölümü eksidir.",
+                 "akilda": "Aynı artı, farklı eksi",
+                 "ornek": {"problem": "(−20) ÷ 4 kaçtır?", "adimlar": [
+                     {"metin": "Önce işaretsiz böl: 20 ÷ 4.", "islem": "20 ÷ 4 = 5"},
+                     {"metin": "İşaretler farklı → eksi.", "islem": "(−20) ÷ 4 = −5"}]},
+                 "sorular": [
+                     G("(−18) ÷ (−6) kaçtır?", "3", "Önce 18 ÷ 6. İşaretler aynı mı?", "18 ÷ 6 = 3. İki eksi: aynı işaret → +3."),
+                     S("(+24) ÷ (−8) kaçtır?", ["+3", "−3", "−16"], 1, "Önce 24 ÷ 8. İşaretler farklı.", "24 ÷ 8 = 3. Farklı işaret → −3.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Kaç Tane Sığar?", "renk": "#1f9e8f", "svg": svg11_sise(),
+             "aciklama": "Bölme, “içinde kaç tane var?” sorusunun cevabıdır. 6 litre sirkeyi [[1/2]] litrelik şişelere doldurmak: 6'nın içinde kaç tane [[1/2]] var?",
+             "ek": "Kitaptaki modelde her litre 2 eş parçaya ayrılır: 6 · 2 = 12 şişe. Yani 6 ÷ [[1/2]] ile 6 · 2 aynı sonucu verir. (s. 102)",
+             "akilda": "Bölme: kaç tane sığar?",
+             "cozum": {"baslik": "Sirke şişeleri",
+                       "problem": "Zehra teyzenin 6 litre sirkesi var. Hepsini [[1/2]] litrelik şişelere dolduracak. Kaç şişe gerekir?",
+                       "adimlar": [
+                           {"metin": "Ne veriliyor? 6 litre sirke, şişeler [[1/2]] litre. Ne isteniyor? Şişe sayısı.", "islem": "6 ÷ [[1/2]]"},
+                           {"metin": "Her litreyi 2 eş parçaya ayır: 1 litre 2 şişeyi doldurur.", "islem": "1 litre → 2 şişe"},
+                           {"metin": "6 litre var: 6 kere 2 şişe.", "islem": "6 · 2 = 12"}],
+                       "sonuc": "12 şişe gerekir. 6 ÷ [[1/2]] = 6 · 2 = 12. (s. 102)"},
+             "soru": S("3 litre suyu [[1/4]] litrelik bardaklara dolduruyoruz. Kaç bardak dolar?", ["[[3/4]]", "7", "12"], 2,
+                       "1 litreye kaç tane [[1/4]] litrelik bardak sığar? Sonra 3 litre için düşün.",
+                       "1 litre = 4 bardak. 3 litre: 3 · 4 = 12 bardak. Yani 3 ÷ [[1/4]] = 12. (s. 102)")},
+            {"ad": "Ters Çevir", "renk": "#7b4fc9", "svg": svg11_ters(),
+             "aciklama": "Bir kesrin çarpma işlemine göre tersini bulmak için payla paydanın yerini değiştir. İşaret aynı kalır.",
+             "ek": "Bir sayı ile tersinin çarpımı 1'dir: [[2/7]] · [[7/2]] = 1. Tam sayıyı önce [[5/1]] gibi yaz: 5'in tersi [[1/5]]. 0'ın tersi yoktur. (s. 103)",
+             "akilda": "Pay ile payda yer değiştirir",
+             "soru": G("[[-4/9]] sayısının çarpma işlemine göre tersini yaz.", "-9/4",
+                       "Pay ile paydanın yerini değiştir. İşaret değişmez.", "4 ile 9 yer değiştirir, eksi kalır: [[-9/4]]. (s. 103)",
+                       kesir=True, kabul=["9/-4"])},
+            {"ad": "Böl = Tersiyle Çarp", "renk": "#e8590c", "svg": svg11_kct(),
+             "aciklama": "Bölmeyi çarpmaya çevir: birinci sayıyı koru, ÷ işaretini · yap, ikinci sayıyı ters çevir. Sonra bildiğin gibi çarp: önce çapraz sadeleştir.",
+             "ek": "Kitaptaki örnek: [[4/9]] ÷ [[7/3]] = [[4/9]] · [[3/7]]. 3 ile 9 sadeleşir: [[4/3]] · [[1/7]] = [[4/21]]. Yalnızca ikinci sayı ters çevrilir! (s. 104)",
+             "akilda": "Koru, çevir, ters çevir",
+             "cozum": {"baslik": "Kitaptaki örnek",
+                       "problem": "[[4/9]] ÷ [[7/3]] işlemini yapalım.",
+                       "adimlar": [
+                           {"metin": "Birinci sayıyı koru.", "islem": "[[4/9]]"},
+                           {"metin": "÷ işaretini · yap, ikinci sayıyı ters çevir: [[7/3]] → [[3/7]].", "islem": "[[4/9]] · [[3/7]]"},
+                           {"metin": "Çapraz sadeleştir: üstteki 3 ile alttaki 9'u 3 böler.", "islem": "3 → 1, 9 → 3"},
+                           {"metin": "Çarp: pay 4 · 1, payda 3 · 7.", "islem": "[[4/9]] ÷ [[7/3]] = [[4/21]]"}],
+                       "sonuc": "[[4/9]] ÷ [[7/3]] = [[4/21]]. (s. 104)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "[[5/6]] ÷ [[10/9]] işlemini yap.",
+                       "adimlar": [
+                           {"metin": "Koru, çevir, ters çevir.",
+                            "soru": S("[[5/6]] ÷ [[10/9]] hangi çarpmaya dönüşür?", ["[[6/5]] · [[10/9]]", "[[5/6]] · [[9/10]]", "[[5/6]] · [[10/9]]"], 1,
+                                      "Birinci sayı aynen kalır. Hangisi ters çevrilir?", "Birinciyi koru, ikinciyi ters çevir: [[5/6]] · [[9/10]]."),
+                            "islem": "[[5/6]] · [[9/10]]"},
+                           {"metin": "Çapraz sadeleştir: 5 ile 10'u 5'e, 9 ile 6'yı 3'e böl.",
+                            "soru": S("Sadeleşince ne kalır?", ["[[1/2]] · [[3/2]]", "[[1/2]] · [[3/1]]", "[[5/2]] · [[3/2]]"], 0,
+                                      "5 ÷ 5 = 1, 10 ÷ 5 = 2. 9 ÷ 3 = 3, 6 ÷ 3 = 2. Her sayı kendi yerinde kalır.", "5 → 1, 6 → 2, 9 → 3, 10 → 2: [[1/2]] · [[3/2]]."),
+                            "islem": "[[1/2]] · [[3/2]]"},
+                           {"metin": "Şimdi çarp.",
+                            "soru": G("Sonuç kaçtır?", "3/4", "Pay 1 · 3, payda 2 · 2.", "1 · 3 = 3, 2 · 2 = 4: [[3/4]].", kesir=True),
+                            "islem": "= [[3/4]]"}],
+                       "sonuc": "Harika! [[5/6]] ÷ [[10/9]] = [[3/4]]."},
+             "soru": G("[[3/5]] ÷ [[9/10]] kaçtır? En sade hâliyle yaz.", "2/3",
+                       "Koru, çevir, ters çevir: [[3/5]] · [[10/9]]. Sonra çapraz sadeleştir.",
+                       "[[3/5]] · [[10/9]]: 3 ile 9'u 3'e, 10 ile 5'i 5'e böl: [[1/1]] · [[2/3]] = [[2/3]]. (s. 104)", kesir=True)},
+            {"ad": "Paydalar Eşitse Payları Böl", "renk": "#1d6fa3", "svg": svg11_esit(),
+             "aciklama": "Paydaları eşit olan iki kesirde payları birbirine bölebilirsin.",
+             "ek": "Kitaptaki 1. yöntem: [[4/9]] ÷ [[7/3]] = [[4/9]] ÷ [[21/9]] = 4 ÷ 21 = [[4/21]]. Paydalar farklıysa önce eşitlemek gerekir; bu yüzden biz çoğunlukla tersiyle çarpacağız. (s. 104)",
+             "akilda": "Eşit payda: payları böl",
+             "cozum": {"baslik": "Eşit paydalar",
+                       "problem": "[[6/7]] ÷ [[2/7]] işlemini yapalım.",
+                       "adimlar": [
+                           {"metin": "Paydalar aynı mı? İkisi de 7.", "islem": "Payda: 7 = 7"},
+                           {"metin": "Payları böl: 6 ÷ 2.", "islem": "6 ÷ 2 = 3"},
+                           {"metin": "Kontrol: tersiyle çarp. 7 ile 7, 6 ile 2 sadeleşir.", "islem": "[[6/7]] · [[7/2]] = 3"}],
+                       "sonuc": "[[6/7]] ÷ [[2/7]] = 3. [[6/7]]'nin içinde 3 tane [[2/7]] var. (s. 104)"},
+             "soru": S("[[8/5]] ÷ [[2/5]] kaçtır?", ["4", "[[16/25]]", "[[4/5]]"], 0,
+                       "Paydalar eşit. Payları böl: 8 ÷ 2.", "Paydalar eşit, payları böl: 8 ÷ 2 = 4. (s. 104)")},
+            {"ad": "Tam Sayılı Kesir ve İşaret", "renk": "#c92a2a", "svg": svg11_tamli(),
+             "aciklama": "Tam sayılı kesri önce bileşik kesre çevir. İşaret, tam sayılarda bölmedeki gibi: aynı işaret artı, farklı işaret eksi.",
+             "ek": "Kitaptaki örnek: ([[-3 1/4]]) ÷ [[2 2/3]] = ([[-13/4]]) ÷ [[8/3]] = ([[-13/4]]) · [[3/8]] = [[-39/32]]. (s. 104)",
+             "akilda": "Önce çevir, sonra işaret",
+             "cozum": {"baslik": "Asansör iniyor",
+                       "problem": "Bir asansör zemin kattan [[11 1/5]] m aşağı indi. Katlar arası 2,8 m. Asansör kaçıncı katta?",
+                       "adimlar": [
+                           {"metin": "Başlangıç (0): zemin kat. Aşağı eksidir.", "islem": "[[-11 1/5]] m"},
+                           {"metin": "Kaç kat? Her kat 2,8 m: bu bir paylaştırma, böl. 2,8 = [[28/10]].", "islem": "([[-11 1/5]]) ÷ [[28/10]]"},
+                           {"metin": "Çevir: 11 · 5 + 1 = 56. Sonra koru, çevir, ters çevir.", "islem": "([[-56/5]]) · [[10/28]]"},
+                           {"metin": "Çapraz sadeleştir: 56 ile 28'i 28'e, 10 ile 5'i 5'e böl. İşaret: farklı → eksi.", "islem": "([[-2/1]]) · [[2/1]] = −4"}],
+                       "sonuc": "Asansör zemin katın 4 kat altında: −4. kat. (s. 104)"},
+             "sende": {"baslik": "Kablo kesiliyor",
+                       "problem": "Bir elektrik ustası [[9 3/5]] m kabloyu 8 eş parçaya ayıracak. Bir parça kaç metre?",
+                       "adimlar": [
+                           {"metin": "Ne veriliyor? [[9 3/5]] m kablo, 8 eş parça. Ne isteniyor? Bir parça.",
+                            "soru": S("Hangi işlem yapılır?", ["[[9 3/5]] · 8", "[[9 3/5]] ÷ 8", "8 ÷ [[9 3/5]]"], 1,
+                                      "Kabloyu 8 eş parçaya ayırıyoruz. Paylaştırınca hangi işlem?", "Kablo 8'e paylaştırılır: [[9 3/5]] ÷ 8."),
+                            "islem": "[[9 3/5]] ÷ 8"},
+                           {"metin": "Tam sayılı kesri çevir: 9 · 5 + 3.",
+                            "soru": G("[[9 3/5]] bileşik kesir olarak kaçtır?", "48/5", "9 · 5 + 3 = ? Payda 5 kalır.", "9 · 5 + 3 = 48: [[48/5]].", kesir=True),
+                            "islem": "[[48/5]] ÷ 8 = [[48/5]] · [[1/8]]"},
+                           {"metin": "48 ile 8'i 8 böler: 48 → 6, 8 → 1. Şimdi çarp.",
+                            "soru": G("Bir parça kaç metre? Bileşik kesir olarak yaz.", "6/5", "Pay 6 · 1, payda 5 · 1.", "[[6/5]] m = [[1 1/5]] m.", kesir=True, denk=True, birim="m"),
+                            "islem": "= [[6/5]] = [[1 1/5]] m"}],
+                       "sonuc": "Harika! Her parça [[1 1/5]] m. (s. 104)"},
+             "soru": S("([[-1 1/2]]) ÷ ([[-3/4]]) kaçtır?", ["−2", "2", "[[9/8]]"], 1,
+                       "Çevir: [[-1 1/2]] = [[-3/2]]. İki eksi → artı. Sonra koru, çevir, ters çevir.",
+                       "([[-3/2]]) · ([[-4/3]]): aynı işaret → artı. 3 ile 3, 4 ile 2 sadeleşir: 2. (s. 104)")},
+            {"ad": "Kesir Çizgisi de Bölmedir", "renk": "#b7791f", "svg": svg11_cizgi(),
+             "aciklama": "Bölme kesir çizgisiyle de gösterilebilir: üstteki sayı bölünen, alttaki bölendir. Bir sayıyı 1'e bölünce kendisi, 1'i bir sayıya bölünce o sayının tersi çıkar.",
+             "ek": "[[5/4]] ÷ [[1/3]] işlemi alt alta, kesir çizgisiyle de yazılabilir. Bölmede sayıların yeri değişirse sonuç değişir: bölmenin değişme özelliği yoktur. (s. 106)",
+             "akilda": "1'e böl: aynı. 1'i böl: ters.",
+             "soru": S("1 ÷ [[2/7]] kaçtır?", ["[[7/2]]", "[[2/7]]", "1"], 0,
+                       "1'i bir sayıya bölünce o sayının tersi çıkar.", "1 ÷ [[2/7]] = 1 · [[7/2]] = [[7/2]]. (s. 106)")}
+        ],
+        "akildaKalsin": [
+            "Bölme: içinde kaç tane sığar?",
+            "Bölmeyi çarpmaya çevir: birinciyi koru, ikinciyi ters çevir.",
+            "Ters çevirince işaret değişmez; 0'ın tersi yoktur.",
+            "Paydalar eşitse payları böl.",
+            "Tam sayılı kesri önce bileşik kesre çevir; işaret: aynı artı, farklı eksi.",
+            "Bir sayı ÷ 1 = kendisi; 1 ÷ bir sayı = tersi."],
+        "merakKutusu": [
+            {"soru": "Bölünce sayı hep küçülür mü?", "cevap": "Hayır. 1'den küçük bir sayıya bölersen sonuç büyür: 6 ÷ [[1/2]] = 12. 6 litrenin içine 12 tane yarım litre sığar. (s. 102)"},
+            {"soru": "Neden ikinci sayıyı ters çeviriyoruz?", "cevap": "Kitaptaki şişe modelinde 6'yı [[1/2]]'ye bölmek ile 6'yı 2 ile çarpmak aynı sonucu veriyor. 2, [[1/2]]'nin tersidir. (s. 102–103)"},
+            {"soru": "Birinci sayıyı da ters çevirsem olur mu?", "cevap": "Olmaz. Yalnızca bölen, yani ikinci sayı ters çevrilir. [[2/3]] ÷ [[3/4]] = [[8/9]]; birinciyi çevirip çarparsan [[3/2]] · [[3/4]] = [[9/8]] gibi yanlış bir sonuç çıkar."},
+            {"soru": "Bölmede sayıların yerini değiştirebilir miyim?", "cevap": "Hayır. [[2/3]] ÷ [[3/4]] = [[8/9]] ama [[3/4]] ÷ [[2/3]] = [[9/8]]. Bölmenin değişme özelliği yoktur. (s. 106)"},
+            {"soru": "0'a bölebilir miyiz?", "cevap": "Hayır. 0 ile hangi sayıyı çarparsan çarp 1 bulamazsın; bu yüzden 0'ın tersi yoktur. Kitap da 1'in yalnızca sıfır dışındaki sayılara bölümünden söz eder. (s. 106)"},
+            {"soru": "Ekmeği 8 kez kesersem kaç dilim olur?", "cevap": "9 dilim! Kitaptaki fırıncı [[20 2/5]] cm'lik ekmeği 8 kez kesiyor: 9 dilim çıkar. Bir dilim [[102/5]] ÷ 9 = [[34/15]] cm. Sayarken dikkat: kesim sayısı + 1 = dilim sayısı. (s. 105)"}],
+        "dusunVeYaz": [{"soru": "Can [[6/7]] ÷ [[2/3]] işleminde birinci kesri ters çevirip [[7/6]] · [[2/3]] = [[7/9]] buldu. Hatası ne? Doğru sonucu bul.",
+                        "ornekCevap": "Yanlış sayıyı ters çevirmiş. Birinci sayı korunur, ikinci sayı ters çevrilir: [[6/7]] · [[3/2]] = [[9/7]] = [[1 2/7]].",
+                        "anahtarlar": ["ikinci", "ters", "koru", "9"]}],
+        "sorular": [
+            S("[[2/3]] ÷ [[3/4]] kaçtır?", ["[[8/9]]", "[[1/2]]", "[[9/8]]"], 0,
+              "Koru, çevir, ters çevir: [[2/3]] · [[4/3]].", "[[2/3]] · [[4/3]] = [[8/9]]. (s. 105)"),
+            G("[[9/8]] ÷ [[1/3]] kaçtır?", "27/8", "Koru, çevir, ters çevir: [[9/8]] · 3.",
+              "[[9/8]] · [[3/1]] = [[27/8]] = [[3 3/8]]. (s. 105)", kesir=True, denk=True),
+            N("([[-1/2]]) ÷ [[2/3]] işleminin sonucuna sayı doğrusunda dokun.", -0.75, sk(-2, 1, 4),
+              "Farklı işaret → eksi. ([[-1/2]]) · [[3/2]].", "([[-1/2]]) · [[3/2]] = [[-3/4]]. (s. 105)"),
+            S("(−8) ÷ ([[-4/3]]) kaçtır?", ["6", "−6", "[[32/3]]"], 0,
+              "İki eksi → artı. (−8) · ([[-3/4]]).", "8 ile 4 sadeleşir: 2 · 3 = 6. Aynı işaret → +6. (s. 105)"),
+            S("[[1 1/3]] ÷ [[1 1/4]] kaçtır?", ["[[15/16]]", "[[1 1/12]]", "[[16/15]]"], 2,
+              "Önce ikisini de çevir: [[4/3]] ÷ [[5/4]].", "[[4/3]] · [[4/5]] = [[16/15]]. Tamları ayrı bölmek yanlış olur. (s. 105)"),
+            G("Bir elektrik ustası [[3/4]] m kabloyu [[1/8]] m'lik parçalara ayırıyor. Kaç parça elde eder?", "6",
+              "Kaç tane sığar? [[3/4]] ÷ [[1/8]].", "[[3/4]] · 8: 4 ile 8 sadeleşir: 3 · 2 = 6 parça. (Kitaptaki kablo örneğine benzer, s. 104)"),
+            S("[[10/3]] ÷ [[5/3]] kaçtır?", ["[[2/3]]", "2", "[[50/9]]"], 1,
+              "Paydalar eşit: payları böl.", "Paydalar eşit: 10 ÷ 5 = 2. (s. 104)"),
+            S("Hangisi doğrudur?", ["[[2/3]] ÷ 1 = [[3/2]]", "[[2/3]] ÷ [[3/4]] = [[3/4]] ÷ [[2/3]]", "1 ÷ [[2/3]] = [[3/2]]"], 2,
+              "1'e bölmek sayıyı değiştirmez. 1'i bir sayıya bölünce tersi çıkar.",
+              "1 ÷ [[2/3]] = [[3/2]]. [[2/3]] ÷ 1 = [[2/3]] olur; bölmede yer değiştirince sonuç değişir. (s. 106)"),
+            N("Derin dondurucudaki bir gıdanın sıcaklığı 3 dakikada [[3/2]] °C düştü. 1 dakikadaki ortalama değişime sayı doğrusunda dokun.", -0.5, sk(-2, 1, 2),
+              "Düşmek eksidir: ([[-3/2]]) ÷ 3.", "([[-3/2]]) · [[1/3]] = [[-1/2]] °C. (Kitaptaki derin dondurucu örneğine benzer, s. 104)"),
+            S("Hangi sayının çarpma işlemine göre tersi yoktur?", ["1", "0", "−1"], 1,
+              "Hangi sayıyla neyi çarparsan çarp 1 bulamazsın?", "0 ile hangi sayıyı çarparsan çarp sonuç 0 olur, 1 olamaz. Bu yüzden 0'ın tersi yoktur ve 0'a bölme yapılmaz."),
+            G("Esra'nın 5 m kurdelesi kaldı. Büyük bir hediye paketi için [[5/4]] m kurdele gerekiyor. En fazla kaç büyük paket süsleyebilir?", "4",
+              "Kaç tane sığar? 5 ÷ [[5/4]].", "5 ÷ [[5/4]] = 5 · [[4/5]] = 4 paket. (Kitaptaki kurdele problemine benzer, s. 106)")]
+    }
+
+
 # =================================================================
 # Ara Duraklar (konu tarama): kapsanan konuların özeti + konuları birleştiren yeni sorular.
 # Motor ayrıca kapsanan konuların kendi sorularından "eskiSoru" kadarını (zorlanılan kavramlar önce) ekler.
@@ -2893,7 +3124,7 @@ def u1t3():
 
 
 TARAMALAR = [u1t1, u1t2, u1t3]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10] + TARAMALAR
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
@@ -2921,6 +3152,8 @@ TEST_KAVRAM = {
              "Bir Sayının Kesrini Bulma", "Çarpmanın Özellikleri", "İşaret Tam Sayılardaki Gibi", "Bir Sayının Kesrini Bulma", "Çarpmanın Özellikleri"],
     "u1k10": ["Tekrarlı Çarpımı Kısalt", "Taban, Üs ve Değer", "Taban, Üs ve Değer", "Kesrin Kuvveti", "Eksi Taban: Çift Artı, Tek Eksi",
               "Eksi Taban: Çift Artı, Tek Eksi", "Özel Tabanlar: 1, 0 ve Üs 1", "Parantez Fark Yaratır", "Eksi Taban: Çift Artı, Tek Eksi", "Tekrarlı Çarpımı Kısalt"],
+    "u1k11": ["Böl = Tersiyle Çarp", "Böl = Tersiyle Çarp", "Tam Sayılı Kesir ve İşaret", "Tam Sayılı Kesir ve İşaret", "Tam Sayılı Kesir ve İşaret",
+              "Kaç Tane Sığar?", "Paydalar Eşitse Payları Böl", "Kesir Çizgisi de Bölmedir", "Böl = Tersiyle Çarp", "Ters Çevir", "Kaç Tane Sığar?"],
 }
 YARDIM = {
     "u1k1": {
@@ -3109,6 +3342,20 @@ YARDIM = {
             "Önce işaret: üs 2 çift → artı. 0'ın sağında.", "Pay 1 · 1, payda 2 · 2.", "Sayı doğrusunda 0 ile 1 arası 4 parçaya bölünmüş. Kaçıncı çizgi?"]},
         "Bir bakteri her 30 dakikada": {"adimlar": [
             "3 saat = 180 dakika. 30 dakikalık kaç parça var? 180 ÷ 30.", "Her parçada bakteri sayısı 2 ile çarpılır: 6 parça → 2[[u:6]].", "2'yi 6 kere çarp: 2, 4, 8, … diye ikiye katla."]},
+    },
+    "u1k11": {
+        "[[-4/9]] sayısının çarpma": {"adimlar": [
+            "Pay ile paydanın yerini değiştir: üstteki 4 alta, alttaki 9 üste.", "İşaret değişmez: eksi kalır.", "Önce − tuşu, sonra pay, / ve payda."]},
+        "[[3/5]] ÷ [[9/10]] kaçtır": {"adimlar": [
+            "Koru: [[3/5]]. Çevir: ÷ yerine ·. Ters çevir: [[9/10]] → [[10/9]].", "Çapraz sadeleştir: üstteki 3 ile alttaki 9; üstteki 10 ile alttaki 5.", "Küçülen sayıları çarp: pay payla, payda paydayla."]},
+        "[[9/8]] ÷ [[1/3]] kaçtır": {"adimlar": [
+            "Koru, çevir, ters çevir: [[1/3]]'ün tersi 3.", "[[9/8]] · 3: 3'ü [[3/1]] gibi düşün.", "Payları çarp: 9 · 3. Payda 8 kalır."]},
+        "Bir elektrik ustası [[3/4]]": {"adimlar": [
+            "Ne isteniyor? Parça sayısı: [[3/4]]'ün içinde kaç tane [[1/8]] sığar?", "Bölmeyi çarpmaya çevir: [[3/4]] · [[8/1]].", "Çapraz sadeleştir: 4 ile 8'i 4 böler. Sonra çarp."]},
+        "Esra'nın 5 m": {"adimlar": [
+            "Ne isteniyor? 5 m'nin içinde kaç tane [[5/4]] m sığar?", "Koru, çevir, ters çevir: 5 · [[4/5]].", "Çapraz sadeleştir: üstteki 5 ile alttaki 5. Sonra çarp."]},
+        "Derin dondurucudaki": {"adimlar": [
+            "Başlangıç (0): ilk sıcaklık. Düşmek eksidir: [[-3/2]].", "1 dakika için 3'e paylaştır: ([[-3/2]]) ÷ 3 = ([[-3/2]]) · [[1/3]].", "3 ile 3 sadeleşir. 0 ile −1 arası 2 parçaya bölünmüş; kaçıncı çizgi?"]},
     },
 }
 
