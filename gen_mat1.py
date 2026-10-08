@@ -3123,7 +3123,70 @@ def u1t3():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3]
+def u1t4():
+    return {
+        "id": "u1t4", "tur": "tarama", "unite": "1. Tema: Sayılar ve Nicelikler",
+        "baslik": "Ara Durak 4: Rasyonel Sayılarla İşlemler", "sayfalar": "Konu 8–11 · s. 82–107",
+        "giris": "Kesirlerle dört işlemi ve üslü ifadeleri öğrendin! Durup bakalım. Önce kısa özetleri oku ve kartları çevir. Sonra 10 soruluk tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": "Dört konunun kuralı farklı; işe başlamadan önce sor: Hangi işlemi yapıyorum? Toplama ve çıkarmada önce paydalar eşitlenir. Çarpmada pay paya, payda paydaya çarpılır; payda eşitlemeye gerek yok. Bölmede ikinci kesir ters çevrilir, sonra çarpılır. Üslü ifade de tekrarlı çarpmadır. İşaret kuralı hep tam sayılardaki gibi.",
+        "kapsar": ["u1k8", "u1k9", "u1k10", "u1k11"],
+        "hatirla": [
+            {"konu": "u1k8", "maddeler": [
+                "Paydalar eşitse payları topla, payda aynı kalır.",
+                "Paydalar farklıysa önce genişletip eşitle.",
+                "Çıkarmayı çevir, topla: çıkan sayının işaretini ters yap."]},
+            {"konu": "u1k9", "maddeler": [
+                "Pay paya, payda paydaya: paydaları eşitlemeye gerek yok.",
+                "Önce çapraz sadeleştir, sonra çarp. İşaret: aynı artı, farklı eksi.",
+                "Bir sayının kesrini bulmak için çarp: 12'nin [[1/3]]'ü = 12 · [[1/3]] = 4."]},
+            {"konu": "u1k10", "maddeler": [
+                "Üs, tabanın kaç kere çarpıldığıdır: 5[[u:3]] = 5 · 5 · 5. 5 · 3 değil!",
+                "Kesrin kuvvetinde pay da payda da kuvvetlenir.",
+                f"Eksi tabanda çift üs artı, tek üs eksi. Parantez yoksa eksi dışarıda kalır: {M}2[[u:2]] = {M}4."]},
+            {"konu": "u1k11", "maddeler": [
+                "Bölme: içinde kaç tane sığar?",
+                "Bölmeyi çarpmaya çevir: birinciyi koru, ikinciyi ters çevir.",
+                "Ters çevirince işaret değişmez; 0'ın tersi yoktur."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Bu kural hangi işlem için?", "kutular": [
+            {"etiket": "Toplama ve çıkarma", "uyeler": ["Önce Paydaları Eşitle", "Çıkarma = Tersini Ekle"]},
+            {"etiket": "Çarpma", "uyeler": ["Pay Paya, Payda Paydaya", "Önce Çapraz Sadeleştir"]},
+            {"etiket": "Bölme", "uyeler": ["Böl = Tersiyle Çarp", "Ters Çevir"]},
+            {"etiket": "Üslü ifade", "uyeler": ["Tekrarlı Çarpımı Kısalt", "Eksi Taban: Çift Artı, Tek Eksi"]}]}],
+        "sorular": [
+            G("Bir sürahide [[3/4]] litre su vardı. Ela bu suyun [[1/3]]'ünü içti. Sürahide kaç litre su kaldı?", "1/2",
+              "Önce Ela'nın kaç litre içtiğini bul: [[3/4]]'ün [[1/3]]'ü, yani çarp. Sonra [[3/4]]'ten çıkar.",
+              "İçilen: [[3/4]] · [[1/3]] = [[3/12]] = [[1/4]] litre. Kalan: [[3/4]] − [[1/4]] = [[2/4]] = [[1/2]] litre.",
+              kesir=True, denk=True, birim="litre",
+              kaynak=[K("u1k9", "Bir Sayının Kesrini Bulma"), K("u1k8", "Problemde Toplama ve Çıkarma")]),
+            S("([[-2/3]])[[u:2]] · ([[-9/4]]) kaçtır?", ["+1", f"{M}1", "[[-4/9]]"], 1,
+              "Önce üslü ifadeyi bul: eksi taban, çift üs. Sonra çarp; çarpmadan önce çapraz sadeleştir.",
+              f"([[-2/3]])[[u:2]] = [[4/9]] (çift üs → artı). [[4/9]] · [[-9/4]]: 4 ile 4, 9 ile 9 sadeleşir → {M}1. İşaretler farklı, sonuç eksi.",
+              kaynak=[K("u1k10", "Eksi Taban: Çift Artı, Tek Eksi"), K("u1k9", "Önce Çapraz Sadeleştir")]),
+            N("[[3/4]] ÷ ([[-3/2]]) işleminin sonucunun yerine dokun.", -0.5, {"min": -2, "max": 1, "bolme": 2},
+              "Bölmeyi çarpmaya çevir: [[3/4]]'ü koru, [[-3/2]]'yi ters çevir. İşaretler farklı → sonuç eksi.",
+              f"[[3/4]] ÷ ([[-3/2]]) = [[3/4]] · ([[-2/3]]) = [[-6/12]] = [[-1/2]]. 0 ile {M}1'in tam ortası.",
+              kaynak=[K("u1k11", "Böl = Tersiyle Çarp"), K("u1k9", "İşaret Tam Sayılardaki Gibi")]),
+            G("Bir şişede [[3/4]] litre, diğerinde [[1 1/2]] litre limonata var. Hepsini [[1/4]] litrelik bardaklara dolduracağız. Kaç bardak dolar?", "9",
+              "Önce iki şişedeki limonatayı topla (paydaları eşitle). Sonra toplamın içine [[1/4]] litre kaç kere sığar, bul.",
+              "[[1 1/2]] = [[3/2]] = [[6/4]]. Toplam: [[3/4]] + [[6/4]] = [[9/4]] litre. [[9/4]] ÷ [[1/4]] = [[9/4]] · 4 = 9 bardak.",
+              birim="bardak",
+              kaynak=[K("u1k8", "Önce Paydaları Eşitle"), K("u1k11", "Kaç Tane Sığar?")]),
+            S("Hangisi doğrudur?", ["[[1/2]] + [[1/3]] = [[2/5]]", "([[-1/2]])[[u:3]] = [[1/8]]", "[[2/3]] · [[3/4]] = [[1/2]]"], 2,
+              "Üçünü tek tek kontrol et: Toplamada paydalar eşitlendi mi? Eksi taban tek üste ne olur? Çarpmada sadeleştir.",
+              f"[[2/3]] · [[3/4]] = [[6/12]] = [[1/2]] doğru. [[1/2]] + [[1/3]] = [[3/6]] + [[2/6]] = [[5/6]] olmalıydı; paylar ve paydalar ayrı ayrı toplanmaz. ([[-1/2]])[[u:3]] = [[-1/8]]: tek üs, sonuç eksi.",
+              kaynak=[K("u1k8", "Önce Paydaları Eşitle"), K("u1k10", "Eksi Taban: Çift Artı, Tek Eksi")]),
+            G("Bir dalgıç deniz seviyesinin [[1 1/2]] metre altında. Sonra bulunduğu derinliğin yarısı kadar daha aşağı iniyor. Dalgıç şimdi kaç metrede? Bileşik kesir olarak yaz.", "-9/4",
+              f"Başlangıç: {M}[[1 1/2]] = [[-3/2]]. İnilen yol: [[3/2]]'nin yarısı (çarp). Aşağı eksidir; iki eksiyi topla.",
+              f"İnilen: [[3/2]] · [[1/2]] = [[3/4]] m. Yeni konum: [[-3/2]] + ([[-3/4]]) = [[-6/4]] + ([[-3/4]]) = [[-9/4]] m, yani [[-2 1/4]] m.",
+              kesir=True, denk=True, kabul=["9/-4"], birim="m",
+              sayiDogrusu={"min": -3, "max": 0, "dikey": True, "sifirEtiketi": "Deniz seviyesi"},
+              kaynak=[K("u1k9", "Bir Sayının Kesrini Bulma"), K("u1k8", "Tam Sayılı Kesirler")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4]
 KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11] + TARAMALAR
 
 # =================================================================
@@ -3267,6 +3330,19 @@ YARDIM = {
         "Bir dondurucunun sıcaklığı": {"adimlar": [
             "İlk sıcaklık +4 °C, son sıcaklık −16 °C.", f"Toplam değişim = son − ilk: ({M}16) {M} (+4). Çıkarmayı tersiyle toplamaya çevir.",
             "Bu değişim 5 saate eşit paylaşıldı: böl. Farklı işaret → eksi."]},
+    },
+    "u1t4": {
+        "Bir sürahide [[3/4]] litre": {"adimlar": [
+            "Başlangıç: sürahide [[3/4]] litre su.", "Yön: içilen su azalır, yani çıkaracağız.",
+            "Kaç birim? İçilen su [[3/4]]'ün [[1/3]]'ü: bir sayının kesri için çarp. Önce çapraz sadeleştir.",
+            "Paydalar aynı mı? [[3/4]]'ten içilen suyu çıkar ve sadeleştir."]},
+        "Bir şişede [[3/4]] litre": {"adimlar": [
+            "[[1 1/2]]'yi önce bileşik kesre çevir: 1 × 2 + 1.", "Paydaları 4'te eşitle ve iki şişeyi topla.",
+            "Kaç bardak? Toplamı [[1/4]]'e böl: birinciyi koru, ikinciyi ters çevir, çarp."]},
+        "Bir dalgıç deniz seviyesinin [[1 1/2]]": {"adimlar": [
+            f"Başlangıç (0): deniz seviyesi. Dalgıç altında: {M}[[1 1/2]] = [[-3/2]].",
+            "Yön: aşağı iniyor, eksi.", "Kaç birim? [[3/2]]'nin yarısı: [[3/2]] · [[1/2]].",
+            f"[[-3/2]]'yi paydası 4 olacak şekilde genişlet ve inilen yolu ekle. Önce {M} tuşu, sonra pay, / ve payda."]},
     },
     "u1k6": {
         f"({M}12) + (+16) kaçtır": {"adimlar": [
