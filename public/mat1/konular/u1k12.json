@@ -1,0 +1,642 @@
+{
+ "id": "u1k12",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Çok Adımlı İşlemler",
+ "sayfalar": "s. 108–116",
+ "giris": "Bir işlemde toplama, çarpma, üs ve parantez bir arada olabilir. Hangisini önce yapacağız? Bu konuda bir sıra öğreneceğiz. Sıra herkesi aynı cevaba götürür!",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda öğrendiğin bütün işlemleri bir arada kullanacağız. Önce işaret kurallarını, payda eşitlemeyi ve üslü ifadeleri hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "İşaret kuralları",
+    "sinif": "6–7. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#9aa3bf'>·</text><text x='70' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='30' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='30' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><path d='M18 42 h96 M44 14 v96' stroke='#5a6280' stroke-width='2'/><rect x='57' y='45' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='70' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#6fb3ff'>−</text><text x='70' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#6fb3ff'>−</text><rect x='85' y='77' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='98' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text></svg>",
+    "anlatim": "Toplamada: aynı işaret → topla, işareti koru; farklı işaret → büyükten küçüğü çıkar, büyüğün işaretini koy. Çarpma ve bölmede: aynı işaret artı, farklı işaret eksi.",
+    "akilda": "Topluyor muyum, çarpıyor muyum?",
+    "ornek": {
+     "problem": "(−6) + (−4) ile (−6) · (−4) aynı mı?",
+     "adimlar": [
+      {
+       "metin": "Toplama: aynı işaret, topla, eksiyi koru.",
+       "islem": "(−6) + (−4) = −10"
+      },
+      {
+       "metin": "Çarpma: aynı işaret, sonuç artı.",
+       "islem": "(−6) · (−4) = +24"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "(−7) + (+3) kaçtır?",
+      "cevap": "-4",
+      "ipucu": "İşaretler farklı: büyükten küçüğü çıkar. Büyük olan hangisinin işareti?",
+      "aciklama": "7 − 3 = 4. 7 daha büyük ve eksi: −4."
+     },
+     {
+      "soru": "(−5) · (−2) kaçtır?",
+      "secenekler": [
+       "−10",
+       "+10",
+       "−7"
+      ],
+      "dogru": 1,
+      "ipucu": "Çarpmada aynı işaret ne olur?",
+      "aciklama": "5 · 2 = 10. İki eksi: aynı işaret → +10."
+     }
+    ]
+   },
+   {
+    "ad": "Payda eşitleyerek toplama",
+    "sinif": "8. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12.0' y='16' width='30.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='42.0' y='16' width='30.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='12.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='18.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='30.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='42.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='54.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='66.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><text x='42' y='50' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f2c14e'>=</text><text x='98' y='17' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>1</text><line x1='90.85' y1='23' x2='105.15' y2='23' stroke='#6fb3ff' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='38' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>2</text><text x='98' y='63' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>5</text><line x1='90.85' y1='69' x2='105.15' y2='69' stroke='#6fb3ff' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='84' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>10</text><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>dilimler aynı boy</text></svg>",
+    "anlatim": "Paydalar farklıysa önce genişletip eşitle; sonra payları topla ya da çıkar, payda aynı kalır.",
+    "akilda": "Önce paydaları eşitle",
+    "ornek": {
+     "problem": "[[1/2]] + [[1/3]] kaçtır?",
+     "adimlar": [
+      {
+       "metin": "Ortak payda 6: [[1/2]] = [[3/6]], [[1/3]] = [[2/6]].",
+       "islem": "[[3/6]] + [[2/6]]"
+      },
+      {
+       "metin": "Payları topla, payda 6 kalır.",
+       "islem": "= [[5/6]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[1/2]] + [[1/4]] kaçtır?",
+      "cevap": "3/4",
+      "ipucu": "[[1/2]]'yi paydası 4 olacak şekilde genişlet.",
+      "aciklama": "[[1/2]] = [[2/4]]. [[2/4]] + [[1/4]] = [[3/4]].",
+      "kesir": true,
+      "denk": true
+     },
+     {
+      "soru": "[[2/3]] − [[1/6]] kaçtır?",
+      "cevap": "1/2",
+      "ipucu": "[[2/3]]'ü paydası 6 olacak şekilde genişlet.",
+      "aciklama": "[[2/3]] = [[4/6]]. [[4/6]] − [[1/6]] = [[3/6]] = [[1/2]].",
+      "kesir": true,
+      "denk": true
+     }
+    ]
+   },
+   {
+    "ad": "Üslü ifade ve eksi",
+    "sinif": "10. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='17' fill='#ffa26b'>(−3)² = 9</text><text x='60' y='68' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f2c14e'>≠</text><text x='60' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='17' fill='#6fb3ff'>−3² = −9</text></svg>",
+    "anlatim": "Üs, tabanın kaç kere çarpıldığıdır: 2[[u:3]] = 2 · 2 · 2 = 8. Parantez varsa eksi de çarpılır: (−3)[[u:2]] = +9. Parantez yoksa eksi dışarıda kalır: −3[[u:2]] = −9.",
+    "akilda": "Parantez varsa eksi de çarpılır",
+    "ornek": {
+     "problem": "(−2)[[u:2]] kaçtır?",
+     "adimlar": [
+      {
+       "metin": "İki tane (−2)'yi çarp.",
+       "islem": "(−2) · (−2)"
+      },
+      {
+       "metin": "Aynı işaret → artı.",
+       "islem": "= +4"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "(−2)[[u:3]] kaçtır?",
+      "secenekler": [
+       "−6",
+       "−8",
+       "+8"
+      ],
+      "dogru": 1,
+      "ipucu": "Üç tane (−2)'yi çarp. Kaç tane eksi var: tek mi, çift mi?",
+      "aciklama": "(−2) · (−2) · (−2) = −8. Tek üs → eksi."
+     },
+     {
+      "soru": "−3[[u:2]] kaçtır?",
+      "secenekler": [
+       "−9",
+       "+9",
+       "−6"
+      ],
+      "dogru": 0,
+      "ipucu": "Parantez var mı? Yoksa üs yalnızca 3'e ait.",
+      "aciklama": "Parantez yok: 3[[u:2]] = 9, başına eksi: −9."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Çok Adımlı İşlem",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='40' width='60' height='56' rx='8' fill='#f5f6fa'/><rect x='40' y='28' width='24' height='14' rx='5' fill='none' stroke='#f5f6fa' stroke-width='4'/><line x1='22' y1='58' x2='82' y2='58' stroke='#9aa3bf' stroke-width='3'/><text x='52' y='84' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>4 kg</text><circle cx='100' cy='30' r='10' fill='#f2c14e'/><text x='100' y='35' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><circle cx='100' cy='54' r='10' fill='#f2c14e'/><text x='100' y='59' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><circle cx='100' cy='78' r='10' fill='#f2c14e'/><text x='100' y='83' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>sınır 20 kg</text></svg>",
+   "aciklama": "İki ya da daha fazla işlem içeren ifadelere çok adımlı işlem denir. Bu işlemler belli bir sırayla yapılır. (s. 109)",
+   "ek": "Gerçek yaşamdaki problemler çoğu zaman tek işlemle çözülmez. Kitaptaki valiz probleminde önce eşyaların kütlesi, sonra valizin toplam kütlesi, en son da kalan kütle bulunur. (s. 108)",
+   "akilda": "Birden çok işlem, bir sıra",
+   "cozum": {
+    "baslik": "Valiz kaç kilo?",
+    "problem": "Melih Bey'in valizi boşken 4 kg. İçine her biri 3 kg olan 3 eşya koydu. Valizin sınırı 20 kg. Ek ücret ödememek için en fazla kaç kg daha eşya koyabilir?",
+    "adimlar": [
+     {
+      "metin": "Ne veriliyor? Boş valiz 4 kg, 3 eşya (her biri 3 kg), sınır 20 kg. Ne isteniyor? Daha kaç kg konabilir?"
+     },
+     {
+      "metin": "1. adım: Eşyaların kütlesi. 3 eşya, her biri 3 kg.",
+      "islem": "3 · 3 = 9"
+     },
+     {
+      "metin": "2. adım: Valizin şimdiki kütlesi. Boş valiz + eşyalar.",
+      "islem": "4 + 9 = 13"
+     },
+     {
+      "metin": "3. adım: Sınıra kaç kg kaldı?",
+      "islem": "20 − 13 = 7"
+     }
+    ],
+    "sonuc": "7 kg daha koyabilir. Tek işlem olarak: 20 − (4 + 3 · 3) = 7. Kitaptaki valizde sayılar kesirli ama yol aynı. (s. 108)"
+   },
+   "soru": {
+    "soru": "Hangisi çok adımlı bir işlemdir?",
+    "secenekler": [
+     "8 + 5",
+     "8 + 5 · 2",
+     "8 · 5"
+    ],
+    "dogru": 1,
+    "ipucu": "Kaç tane işlem işareti var? İki ya da daha fazla olanı ara.",
+    "aciklama": "8 + 5 · 2 içinde iki işlem var: toplama ve çarpma. Diğerlerinde tek işlem var. (s. 109)"
+   }
+  },
+  {
+   "ad": "İşlem Sırası",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='8' width='102' height='22' rx='4' fill='#2b355c' stroke='#f2c14e' stroke-width='2'/><text x='18' y='24' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>1</text><text x='42' y='24' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>üs</text><rect x='26' y='30' width='84' height='22' rx='4' fill='#2b355c' stroke='#ffa26b' stroke-width='2'/><text x='36' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#ffa26b'>2</text><text x='60' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>( )</text><rect x='44' y='52' width='66' height='22' rx='4' fill='#2b355c' stroke='#5fd08f' stroke-width='2'/><text x='54' y='68' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>3</text><text x='78' y='68' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>· ÷</text><rect x='62' y='74' width='48' height='22' rx='4' fill='#2b355c' stroke='#6fb3ff' stroke-width='2'/><text x='72' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>4</text><text x='96' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>+ −</text><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#9aa3bf'>yukarıdan aşağı</text></svg>",
+   "aciklama": "Çok adımlı işlemlerde sıra şöyledir: 1) üslü ifadeler, 2) parantez içindeki işlemler, 3) çarpma ya da bölme, 4) toplama ya da çıkarma. (s. 109)",
+   "ek": "Merdiveni yukarıdan aşağı in: önce üs, en son toplama ve çıkarma. (−3) gibi bir parantez yalnızca sayının işaretini gösterir; içinde işlem yoksa atlanır.",
+   "akilda": "Üs, parantez, çarp-böl, topla-çıkar",
+   "cozum": {
+    "baslik": "Kitaptaki işlem",
+    "problem": "12 − (−3) · (+4) işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "Üs var mı? Yok. Parantezlerin içinde işlem var mı? Yok; (−3) ve (+4) yalnızca işareti gösteriyor."
+     },
+     {
+      "metin": "Çarpma, çıkarmadan önce yapılır. Farklı işaret → eksi.",
+      "islem": "(−3) · (+4) = −12"
+     },
+     {
+      "metin": "Şimdi çıkarma: çıkarmayı tersiyle toplamaya çevir.",
+      "islem": "12 − (−12) = 12 + 12"
+     },
+     {
+      "metin": "Topla.",
+      "islem": "= 24"
+     }
+    ],
+    "sonuc": "12 − (−3) · (+4) = 24. Önce çıkarsaydık 12 − (−3) = 15, 15 · 4 = 60 gibi yanlış bir sonuç bulurduk. (s. 110)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "5 + 2 · (−4) işlemini yap.",
+    "adimlar": [
+     {
+      "metin": "Merdivene bak: üs yok, parantez içinde işlem yok.",
+      "soru": {
+       "soru": "Önce hangi işlem yapılır?",
+       "secenekler": [
+        "5 + 2",
+        "2 · (−4)",
+        "Fark etmez"
+       ],
+       "dogru": 1,
+       "ipucu": "Merdivende çarpma mı önce geliyor, toplama mı?",
+       "aciklama": "Çarpma toplamadan önce: 2 · (−4)."
+      },
+      "islem": "2 · (−4) = −8"
+     },
+     {
+      "metin": "Şimdi toplama.",
+      "soru": {
+       "soru": "5 + (−8) kaçtır?",
+       "cevap": "-3",
+       "ipucu": "İşaretler farklı: büyükten küçüğü çıkar, büyüğün işaretini koy.",
+       "aciklama": "8 − 5 = 3, büyük olan eksi: −3."
+      },
+      "islem": "5 + (−8) = −3"
+     }
+    ],
+    "sonuc": "Harika! 5 + 2 · (−4) = −3."
+   },
+   "soru": {
+    "soru": "3 + 4 · 2 kaçtır?",
+    "cevap": "11",
+    "ipucu": "Merdivene bak: çarpma mı önce, toplama mı?",
+    "aciklama": "Önce çarpma: 4 · 2 = 8. Sonra toplama: 3 + 8 = 11. Önce toplasaydık yanlışlıkla 14 bulurduk. (s. 109)",
+    "yardim": {
+     "adimlar": [
+      "İşlemde hangi işaretler var? Toplama ve çarpma.",
+      "Merdivende çarpma, toplamadan önce gelir: önce 4 · 2.",
+      "Bulduğun sayıyı 3 ile topla."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Aynı Öncelikte Soldan Sağa",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>20 ÷ 4 · 5</text><path d='M16 34 H100' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M104 34l-8-5v10z' fill='#f2c14e'/><circle cx='42' cy='84' r='10' fill='#ffa26b'/><text x='42' y='89' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><circle cx='78' cy='84' r='10' fill='#6fb3ff'/><text x='78' y='89' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>= 25</text></svg>",
+   "aciklama": "Aynı önceliğe sahip işlemlerde öncelik soldaki işleme aittir. Çarpma ile bölme kardeştir; toplama ile çıkarma da kardeştir. (s. 109)",
+   "ek": "Kardeşler yan yana gelince yazıyı okur gibi soldan sağa git. 20 ÷ 4 · 5: önce 20 ÷ 4 = 5, sonra 5 · 5 = 25. Önce çarpsaydık 20 ÷ 20 = 1 gibi yanlış bir sonuç bulurduk. 10 − 3 + 2 de aynı: 7 + 2 = 9.",
+   "akilda": "Kardeşler: soldan sağa",
+   "soru": {
+    "soru": "12 ÷ 2 · 3 kaçtır?",
+    "secenekler": [
+     "2",
+     "9",
+     "18"
+    ],
+    "dogru": 2,
+    "ipucu": "Bölme ve çarpma kardeş. Hangisi solda?",
+    "aciklama": "Soldan sağa: 12 ÷ 2 = 6, sonra 6 · 3 = 18. (s. 109)"
+   }
+  },
+  {
+   "ad": "Önce Parantez",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#ffa26b'>(2 + 1)² = 9</text><text x='60' y='68' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f2c14e'>≠</text><text x='60' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>2 + 1² = 3</text></svg>",
+   "aciklama": "Parantezin içindeki işlemler, dışarıdaki çarpma, bölme, toplama ve çıkarmadan önce yapılır. Parantezin kuvveti alınıyorsa önce parantezin içi yapılır, sonra kuvvet alınır. (s. 109)",
+   "ek": "Parantez “bunu önce yap” demektir. (2 + 1)[[u:2]] = 3[[u:2]] = 9 ama 2 + 1[[u:2]] = 2 + 1 = 3. Parantez sonucu değiştirir. (s. 109)",
+   "akilda": "Önce parantezin içi",
+   "cozum": {
+    "baslik": "İki parantez",
+    "problem": "[(−2) + (+7)] ÷ [(−10) + (+5)] işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "İki büyük parantezin içinde toplama var. Önce onları yap."
+     },
+     {
+      "metin": "Soldaki parantez: farklı işaret, 7 − 2, büyüğün işareti artı.",
+      "islem": "(−2) + (+7) = +5"
+     },
+     {
+      "metin": "Sağdaki parantez: farklı işaret, 10 − 5, büyüğün işareti eksi.",
+      "islem": "(−10) + (+5) = −5"
+     },
+     {
+      "metin": "Şimdi böl. Farklı işaret → eksi.",
+      "islem": "(+5) ÷ (−5) = −1"
+     }
+    ],
+    "sonuc": "Sonuç −1. (s. 110)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "(3 − 5)[[u:2]] + 1 işlemini yap.",
+    "adimlar": [
+     {
+      "metin": "Parantezin kuvveti alınıyor: önce parantezin içi.",
+      "soru": {
+       "soru": "3 − 5 kaçtır?",
+       "cevap": "-2",
+       "ipucu": "3'ten 5 adım geri git. 0'ı geçiyor musun?",
+       "aciklama": "3 − 5 = −2."
+      },
+      "islem": "(−2)[[u:2]] + 1"
+     },
+     {
+      "metin": "Şimdi üs.",
+      "soru": {
+       "soru": "(−2)[[u:2]] kaçtır?",
+       "secenekler": [
+        "−4",
+        "+4",
+        "−2"
+       ],
+       "dogru": 1,
+       "ipucu": "İki tane (−2)'yi çarp. Aynı işaret ne yapar?",
+       "aciklama": "(−2) · (−2) = +4."
+      },
+      "islem": "4 + 1"
+     },
+     {
+      "metin": "En son toplama.",
+      "islem": "= 5"
+     }
+    ],
+    "sonuc": "Harika! (3 − 5)[[u:2]] + 1 = 5."
+   },
+   "soru": {
+    "soru": "(4 + 2) · 3 kaçtır?",
+    "secenekler": [
+     "10",
+     "18",
+     "24"
+    ],
+    "dogru": 1,
+    "ipucu": "Önce parantezin içi: 4 + 2. Sonra çarp.",
+    "aciklama": "Parantez önce: 4 + 2 = 6. Sonra 6 · 3 = 18. Parantez olmasaydı 4 + 2 · 3 = 10 olurdu. (s. 109)"
+   }
+  },
+  {
+   "ad": "Kesir Çizgisi Ayırır",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='22' width='62' height='30' rx='8' fill='none' stroke='#ffa26b' stroke-width='2.5'/><text x='45' y='43' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#ffa26b'>3 + 9</text><line x1='12' y1='62' x2='78' y2='62' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/><rect x='14' y='72' width='62' height='30' rx='8' fill='none' stroke='#6fb3ff' stroke-width='2.5'/><text x='45' y='93' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#6fb3ff'>2 · 3</text><text x='98' y='68' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='17' fill='#f2c14e'>= 2</text></svg>",
+   "aciklama": "Bölme kesir çizgisiyle gösterildiğinde önce paydaki ve paydadaki işlemler yapılır, en son bölünür. (s. 111)",
+   "ek": "Kesir çizgisi, üstü ve altı ayrı parantezlere almak gibidir. Çizginin üstünde 3 + 9, altında 2 · 3 varsa: üst 3 + 9 = 12, alt 2 · 3 = 6, en son 12 ÷ 6 = 2. (s. 111)",
+   "akilda": "Önce üst, sonra alt, en son böl",
+   "soru": {
+    "soru": "Kesir çizgisinin üstünde 6 + 4, altında 7 − 2 yazıyor. Sonuç kaçtır?",
+    "secenekler": [
+     "10",
+     "5",
+     "2"
+    ],
+    "dogru": 2,
+    "ipucu": "Önce üstü bul, sonra altı. En son böl.",
+    "aciklama": "Üst: 6 + 4 = 10. Alt: 7 − 2 = 5. 10 ÷ 5 = 2. (s. 111)"
+   }
+  },
+  {
+   "ad": "Problemi İşleme Çevir",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='26' width='92' height='56' rx='10' fill='#f5f6fa'/><rect x='14' y='38' width='92' height='10' fill='#9aa3bf'/><text x='60' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='17' fill='#ffa26b'>920 TL</text><path d='M60 88 v10 M55 94 l5 5 5 -5' stroke='#f5f6fa' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='60' y='115' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>−40 TL</text></svg>",
+   "aciklama": "Sözel bir problemi çözerken önce “Ne veriliyor, ne isteniyor?” diye sor. Sonra hangi işlemin önce yapılacağına karar ver ve adım adım ilerle.",
+   "ek": "Her adımın bir anlamı olsun: “Bu sayı neyi gösteriyor?” Adımları birleştirince tek bir çok adımlı işlem çıkar; sırayı parantezle gösteririz. (s. 108)",
+   "akilda": "Ne veriliyor? Ne önce?",
+   "cozum": {
+    "baslik": "Yemekhane kartı",
+    "problem": "Nuran Hanım'ın yemek kartında 920 TL vardı. Her öğle yemeği için 120 TL çekiliyor. Bakiye eksiye düşebiliyor. Bir süre sonra bakiye −40 TL oldu. Kaç gün yemek yedi?",
+    "adimlar": [
+     {
+      "metin": "Ne veriliyor? Başta 920 TL, sonda −40 TL, her gün 120 TL. Ne isteniyor? Gün sayısı."
+     },
+     {
+      "metin": "Toplam ne kadar harcandı? 920'den −40'a inildi; yol 0'dan geçiyor: 920'den 0'a 920, 0'dan −40'a 40.",
+      "islem": "920 − (−40) = 920 + 40 = 960"
+     },
+     {
+      "metin": "Her gün 120 TL: 960'ın içinde kaç tane 120 var?",
+      "islem": "960 ÷ 120 = 8"
+     },
+     {
+      "metin": "Tek işlem olarak yaz; parantez önce yapılacağını gösterir.",
+      "islem": "[920 − (−40)] ÷ 120 = 8"
+     }
+    ],
+    "sonuc": "Nuran Hanım 8 gün yemek yedi. (s. 113)"
+   },
+   "sende": {
+    "baslik": "Ulaşım kartı",
+    "problem": "Ela'nın ulaşım kartında 50 TL var. Her binişte 15 TL düşüyor. Ela 4 kez bindi, sonra karta 30 TL yükledi. Kartta kaç TL var?",
+    "adimlar": [
+     {
+      "metin": "Ne veriliyor? 50 TL, 4 biniş (her biri 15 TL), 30 TL yükleme. İşlem: 50 − 4 · 15 + 30.",
+      "soru": {
+       "soru": "Önce hangi işlem yapılır?",
+       "secenekler": [
+        "50 − 4",
+        "4 · 15",
+        "15 + 30"
+       ],
+       "dogru": 1,
+       "ipucu": "Merdivene bak: çarpma mı önce, toplama-çıkarma mı?",
+       "aciklama": "Önce çarpma: 4 binişte 4 · 15 TL düşer."
+      },
+      "islem": "4 · 15 = 60"
+     },
+     {
+      "metin": "Şimdi 50 − 60 + 30. Çıkarma ile toplama kardeş: soldan sağa.",
+      "soru": {
+       "soru": "50 − 60 + 30 kaçtır?",
+       "cevap": "20",
+       "ipucu": "Soldan başla: 50 − 60 kaç? 0'ın altına iniyor musun? Sonra 30 ekle.",
+       "aciklama": "50 − 60 = −10, sonra −10 + 30 = 20.",
+       "birim": "TL"
+      },
+      "islem": "−10 + 30 = 20"
+     }
+    ],
+    "sonuc": "Harika! Kartta 20 TL var."
+   },
+   "soru": {
+    "soru": "Mert her biri 10 TL olan 3 kalem aldı ve 50 TL verdi. Para üstünü hangi işlem verir?",
+    "secenekler": [
+     "50 − 3 · 10",
+     "(50 − 3) · 10",
+     "50 − 3 + 10"
+    ],
+    "dogru": 0,
+    "ipucu": "Önce kalemlere ne kadar ödendiğini düşün, sonra 50'den çıkar. Hangi işlem önce çarpıyor?",
+    "aciklama": "Kalemler: 3 · 10 = 30 TL. Para üstü: 50 − 30 = 20 TL. 50 − 3 · 10 işleminde çarpma önce yapılır. (Kitaptaki para üstü problemine benzer, s. 109)"
+   }
+  }
+ ],
+ "akildaKalsin": [
+  "İki ya da daha fazla işlem varsa bir sıra izlenir.",
+  "Sıra: üs → parantez → çarpma-bölme → toplama-çıkarma.",
+  "Aynı öncelikteki kardeş işlemlerde soldan sağa git.",
+  "Parantezin kuvveti alınıyorsa önce parantezin içi.",
+  "Kesir çizgisinde önce üst, sonra alt, en son böl.",
+  "Sözel problemde önce sor: Ne veriliyor? Ne isteniyor? Ne önce?"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden bir işlem sırası var?",
+   "cevap": "Herkes farklı sırayla yapsa aynı işlemden farklı sonuçlar çıkardı: 2 + 3 · 4 işleminde biri 14, biri 20 bulurdu. Sıra kuralı herkesi aynı cevaba götürür."
+  },
+  {
+   "soru": "Çarpma her zaman bölmeden önce mi yapılır?",
+   "cevap": "Hayır. Çarpma ile bölme aynı önceliktedir; hangisi soldaysa o önce yapılır. Toplama ile çıkarma için de aynısı geçerli. (s. 109)"
+  },
+  {
+   "soru": "(−3) gibi bir parantez de önce mi yapılır?",
+   "cevap": "Bu parantezin içinde işlem yok; yalnızca sayının eksi olduğunu gösteriyor. Ama (−3)[[u:2]] gibi kuvveti varsa parantez önemlidir: eksi de çarpılır, +9 olur."
+  },
+  {
+   "soru": "Parantezi başka yere koyarsam sonuç değişir mi?",
+   "cevap": "Evet! 2 + 3 · 4 = 14 ama (2 + 3) · 4 = 20. Kitapta da bir eşitliğin doğru olması için parantezi doğru yere koyman isteniyor. (s. 109)"
+  },
+  {
+   "soru": "Kesir çizgisi neden parantez gibi?",
+   "cevap": "Çünkü kesir çizgisi bir bölmedir ve önce üstteki, sonra alttaki işlem biter. Pay ve paydayı ayrı parantezlere almış gibi düşünebilirsin. (s. 111)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Can 6 + 4 · 2 işleminin sonucunu 20 buldu. Hatası ne? Doğru sonucu bul.",
+   "ornekCevap": "Can önce toplamış: 6 + 4 = 10, 10 · 2 = 20. Ama çarpma toplamadan önce yapılır: 4 · 2 = 8, 6 + 8 = 14.",
+   "anahtarlar": [
+    "çarp",
+    "önce",
+    "14"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "2 + 3 · 4 kaçtır?",
+   "secenekler": [
+    "20",
+    "14",
+    "24"
+   ],
+   "dogru": 1,
+   "ipucu": "Çarpma mı önce, toplama mı?",
+   "aciklama": "Önce çarpma: 3 · 4 = 12. Sonra 2 + 12 = 14. (s. 109)",
+   "kavram": "İşlem Sırası"
+  },
+  {
+   "soru": "[(+9) + (+21)] ÷ 2 kaçtır?",
+   "cevap": "15",
+   "ipucu": "Önce parantezin içi, sonra bölme.",
+   "aciklama": "Parantez: 9 + 21 = 30. Sonra 30 ÷ 2 = 15. (s. 110)",
+   "kavram": "Önce Parantez",
+   "yardim": {
+    "adimlar": [
+     "Parantezin içinde işlem var: önce o.",
+     "Parantezin içi: 9 + 21.",
+     "Bulduğun sayıyı 2'ye böl."
+    ]
+   }
+  },
+  {
+   "soru": "2[[u:3]] + (−3)[[u:2]] kaçtır?",
+   "secenekler": [
+    "17",
+    "−1",
+    "12"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce iki üslü ifadeyi bul. (−3)[[u:2]]'de parantez var: eksi de çarpılır.",
+   "aciklama": "2[[u:3]] = 8, (−3)[[u:2]] = +9. 8 + 9 = 17. (s. 110)",
+   "kavram": "İşlem Sırası"
+  },
+  {
+   "soru": "(−1) + (−15) ÷ (−3) − (−2) işleminin sonucuna sayı doğrusunda dokun.",
+   "nokta": 6,
+   "sayiDogrusu": {
+    "min": -2,
+    "max": 8
+   },
+   "ipucu": "Önce bölme. Sonra soldan sağa toplama ve çıkarma.",
+   "aciklama": "Bölme: (−15) ÷ (−3) = +5. Sonra (−1) + 5 = 4. En son 4 − (−2) = 4 + 2 = 6. (s. 110)",
+   "kavram": "İşlem Sırası",
+   "yardim": {
+    "adimlar": [
+     "Merdivene bak: bölme, toplama ve çıkarmadan önce.",
+     "(−15) ÷ (−3): aynı işaret → artı.",
+     "Sonra soldan sağa: (−1) + bulduğun sayı.",
+     "En son − (−2): çıkarmayı tersiyle toplamaya çevir."
+    ]
+   }
+  },
+  {
+   "soru": "10 − 6 + 2 kaçtır?",
+   "secenekler": [
+    "2",
+    "4",
+    "6"
+   ],
+   "dogru": 2,
+   "ipucu": "Çıkarma ile toplama kardeş. Hangisi solda?",
+   "aciklama": "Soldan sağa: 10 − 6 = 4, sonra 4 + 2 = 6. Önce 6 + 2 yapsaydık 2 bulurduk. (s. 109)",
+   "kavram": "Aynı Öncelikte Soldan Sağa"
+  },
+  {
+   "soru": "Kesir çizgisinin üstünde 3 · 8, altında 10 − 4 yazıyor. Sonuç kaçtır?",
+   "secenekler": [
+    "24",
+    "6",
+    "4"
+   ],
+   "dogru": 2,
+   "ipucu": "Önce üstteki çarpma, sonra alttaki çıkarma. En son böl.",
+   "aciklama": "Üst: 3 · 8 = 24. Alt: 10 − 4 = 6. 24 ÷ 6 = 4. (s. 111)",
+   "kavram": "Kesir Çizgisi Ayırır"
+  },
+  {
+   "soru": "Tuğba kilogramı 40 TL olan elmadan ve kilogramı 30 TL olan mandalinadan 2'şer kilogram aldı. 200 TL verdi. Kaç TL para üstü alır?",
+   "cevap": "60",
+   "ipucu": "Önce 1 kilogramlık elma ve mandalinanın fiyatını topla, 2 ile çarp. Sonra 200'den çıkar.",
+   "aciklama": "1 kg elma + 1 kg mandalina: 40 + 30 = 70 TL. 2'şer kg: 2 · 70 = 140 TL. Para üstü: 200 − 140 = 60 TL. İşlem: 200 − 2 · (40 + 30) = 60. (Kitaptaki para üstü problemine benzer, s. 109)",
+   "birim": "TL",
+   "kavram": "Problemi İşleme Çevir",
+   "yardim": {
+    "adimlar": [
+     "Ne isteniyor? Para üstü: 200'den ödenen parayı çıkaracağız.",
+     "1 kg elma + 1 kg mandalina kaç TL?",
+     "2'şer kg aldı: bu toplamı 2 ile çarp.",
+     "200'den çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Asansör 3. kattaydı. 2 kez 4'er kat aşağı indi, sonra 1 kat yukarı çıktı. Asansörün durduğu kata dokun.",
+   "nokta": -4,
+   "sayiDogrusu": {
+    "min": -6,
+    "max": 4,
+    "dikey": true,
+    "birim": 24,
+    "sifirEtiketi": "Zemin kat"
+   },
+   "ipucu": "İşlem: 3 + 2 · (−4) + 1. Önce çarpma.",
+   "aciklama": "İniş: 2 · (−4) = −8. Sonra 3 + (−8) = −5, en son −5 + 1 = −4. Asansör −4. katta.",
+   "kavram": "Problemi İşleme Çevir",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç: 3. kat. Aşağı eksi, yukarı artı.",
+     "İniş: 2 kez 4 kat → 2 · (−4).",
+     "3'e bunu ekle, sonra 1 kat yukarı çık."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisinin sonucu en büyüktür?",
+   "secenekler": [
+    "(2 + 3)[[u:2]]",
+    "2 + 3[[u:2]]",
+    "2[[u:2]] + 3"
+   ],
+   "dogru": 0,
+   "ipucu": "Üçünü de hesapla. Parantezin kuvveti alınıyorsa önce parantezin içi.",
+   "aciklama": "(2 + 3)[[u:2]] = 5[[u:2]] = 25. 2 + 3[[u:2]] = 2 + 9 = 11. 2[[u:2]] + 3 = 4 + 3 = 7. En büyük 25. (s. 109)",
+   "kavram": "Önce Parantez"
+  },
+  {
+   "soru": "Bir depoda 40 litre su var. Musluk depoya saatte 2 litre su dolduruyor, vana saatte 6 litre boşaltıyor. İkisi birlikte 5 saat açık kalırsa depoda kaç litre su kalır?",
+   "cevap": "20",
+   "ipucu": "Önce 1 saatte depodaki değişimi bul: dolan artı, boşalan eksi. Sonra 5 ile çarp, 40 ile topla.",
+   "aciklama": "1 saatte: 2 + (−6) = −4 litre. 5 saatte: 5 · (−4) = −20 litre. Kalan: 40 + (−20) = 20 litre. İşlem: 40 + 5 · (2 − 6) = 20. (Kitaptaki su deposu problemine benzer, s. 109)",
+   "birim": "litre",
+   "kavram": "Problemi İşleme Çevir",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç: 40 litre. Dolan artı (+2), boşalan eksi (−6).",
+     "1 saatteki değişim: 2 + (−6).",
+     "5 saatlik değişim: 5 ile çarp.",
+     "40 ile topla."
+    ]
+   }
+  },
+  {
+   "soru": "Valiz boşken 5 kg. İçine her biri 2 kg olan 4 eşya konuyor. Valizin kütlesini hangi işlem verir?",
+   "secenekler": [
+    "(5 + 4) · 2",
+    "5 + 4 · 2",
+    "5 · 4 + 2"
+   ],
+   "dogru": 1,
+   "ipucu": "Önce eşyaların kütlesi: 4 eşya, her biri 2 kg. Sonra boş valizle topla. Hangi işlemde çarpma önce yapılıyor?",
+   "aciklama": "Eşyalar: 4 · 2 = 8 kg. Valiz: 5 + 8 = 13 kg. 5 + 4 · 2 işleminde çarpma önce yapılır, sonuç 13. (Kitaptaki valiz problemine benzer, s. 108)",
+   "kavram": "Çok Adımlı İşlem"
+  }
+ ]
+}

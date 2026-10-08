@@ -2965,6 +2965,260 @@ def u1k11():
     }
 
 
+# ---------- u1k12 çizimleri ----------
+def svg12_valiz():
+    g = "<rect x='22' y='40' width='60' height='56' rx='8' fill='#f5f6fa'/><rect x='40' y='28' width='24' height='14' rx='5' fill='none' stroke='#f5f6fa' stroke-width='4'/>"
+    g += "<line x1='22' y1='58' x2='82' y2='58' stroke='#9aa3bf' stroke-width='3'/>"
+    g += txt(52, 84, "4 kg", "#1b2340", 15)
+    for i, y in enumerate([30, 54, 78]):
+        g += f"<circle cx='100' cy='{y}' r='10' fill='#f2c14e'/>" + txt(100, y + 5, str(i + 1), "#1b2340", 13)
+    g += txt(60, 113, "sınır 20 kg", OB, 12)
+    return bg(g)
+
+
+def svg12_merdiven():
+    adim = [("1", "üs", "#f2c14e"), ("2", "( )", OB), ("3", "· ÷", "#5fd08f"), ("4", "+ −", NB)]
+    g = ""
+    for i, (n, e, r) in enumerate(adim):
+        x, y = 8 + i * 18, 8 + i * 22
+        g += f"<rect x='{x}' y='{y}' width='{110 - x}' height='22' rx='4' fill='#2b355c' stroke='{r}' stroke-width='2'/>"
+        g += txt(x + 10, y + 16, n, r, 13) + txt(x + 34, y + 16, e, "#f5f6fa", 14)
+    g += txt(60, 114, "yukarıdan aşağı", "#9aa3bf", 11)
+    return bg(g)
+
+
+def svg12_soldan():
+    g = txt(60, 62, "20 ÷ 4 · 5", "#f5f6fa", 18)
+    g += "<path d='M16 34 H100' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M104 34l-8-5v10z' fill='#f2c14e'/>"
+    g += f"<circle cx='42' cy='84' r='10' fill='{OB}'/>" + txt(42, 89, "1", "#1b2340", 13)
+    g += f"<circle cx='78' cy='84' r='10' fill='{NB}'/>" + txt(78, 89, "2", "#1b2340", 13)
+    g += txt(60, 112, "= 25", "#f2c14e", 15)
+    return bg(g)
+
+
+def svg12_parantez():
+    return bg(txt(60, 42, "(2 + 1)² = 9", OB, 15) + txt(60, 68, "≠", "#f2c14e", 20) + txt(60, 96, "2 + 1² = 3", NB, 15))
+
+
+def svg12_cizgi():
+    g = f"<rect x='14' y='22' width='62' height='30' rx='8' fill='none' stroke='{OB}' stroke-width='2.5'/>" + txt(45, 43, "3 + 9", OB, 16)
+    g += "<line x1='12' y1='62' x2='78' y2='62' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/>"
+    g += f"<rect x='14' y='72' width='62' height='30' rx='8' fill='none' stroke='{NB}' stroke-width='2.5'/>" + txt(45, 93, "2 · 3", NB, 16)
+    g += txt(98, 68, "= 2", "#f2c14e", 17)
+    return bg(g)
+
+
+def svg12_kart():
+    g = "<rect x='14' y='26' width='92' height='56' rx='10' fill='#f5f6fa'/><rect x='14' y='38' width='92' height='10' fill='#9aa3bf'/>"
+    g += txt(60, 72, "920 TL", OB, 17)
+    g += "<path d='M60 88 v10 M55 94 l5 5 5 -5' stroke='#f5f6fa' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/>"
+    g += txt(60, 115, f"{M}40 TL", NB, 15)
+    return bg(g)
+
+
+def u1k12():
+    return {
+        "id": "u1k12", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Çok Adımlı İşlemler", "sayfalar": "s. 108–116",
+        "giris": "Bir işlemde toplama, çarpma, üs ve parantez bir arada olabilir. Hangisini önce yapacağız? Bu konuda bir sıra öğreneceğiz. Sıra herkesi aynı cevaba götürür!",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda öğrendiğin bütün işlemleri bir arada kullanacağız. Önce işaret kurallarını, payda eşitlemeyi ve üslü ifadeleri hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "İşaret kuralları", "sinif": "6–7. konu", "svg": svg6_isaret("ayni"),
+                 "anlatim": "Toplamada: aynı işaret → topla, işareti koru; farklı işaret → büyükten küçüğü çıkar, büyüğün işaretini koy. Çarpma ve bölmede: aynı işaret artı, farklı işaret eksi.",
+                 "akilda": "Topluyor muyum, çarpıyor muyum?",
+                 "ornek": {"problem": f"({M}6) + ({M}4) ile ({M}6) · ({M}4) aynı mı?", "adimlar": [
+                     {"metin": "Toplama: aynı işaret, topla, eksiyi koru.", "islem": f"({M}6) + ({M}4) = {M}10"},
+                     {"metin": "Çarpma: aynı işaret, sonuç artı.", "islem": f"({M}6) · ({M}4) = +24"}]},
+                 "sorular": [
+                     G(f"({M}7) + (+3) kaçtır?", "-4", "İşaretler farklı: büyükten küçüğü çıkar. Büyük olan hangisinin işareti?",
+                       f"7 − 3 = 4. 7 daha büyük ve eksi: {M}4."),
+                     S(f"({M}5) · ({M}2) kaçtır?", [f"{M}10", "+10", f"{M}7"], 1, "Çarpmada aynı işaret ne olur?",
+                       "5 · 2 = 10. İki eksi: aynı işaret → +10.")]},
+                {"ad": "Payda eşitleyerek toplama", "sinif": "8. konu", "svg": svg8_esitle(),
+                 "anlatim": "Paydalar farklıysa önce genişletip eşitle; sonra payları topla ya da çıkar, payda aynı kalır.",
+                 "akilda": "Önce paydaları eşitle",
+                 "ornek": {"problem": "[[1/2]] + [[1/3]] kaçtır?", "adimlar": [
+                     {"metin": "Ortak payda 6: [[1/2]] = [[3/6]], [[1/3]] = [[2/6]].", "islem": "[[3/6]] + [[2/6]]"},
+                     {"metin": "Payları topla, payda 6 kalır.", "islem": "= [[5/6]]"}]},
+                 "sorular": [
+                     G("[[1/2]] + [[1/4]] kaçtır?", "3/4", "[[1/2]]'yi paydası 4 olacak şekilde genişlet.", "[[1/2]] = [[2/4]]. [[2/4]] + [[1/4]] = [[3/4]].", kesir=True, denk=True),
+                     G("[[2/3]] − [[1/6]] kaçtır?", "1/2", "[[2/3]]'ü paydası 6 olacak şekilde genişlet.", "[[2/3]] = [[4/6]]. [[4/6]] − [[1/6]] = [[3/6]] = [[1/2]].", kesir=True, denk=True)]},
+                {"ad": "Üslü ifade ve eksi", "sinif": "10. konu", "svg": svg10_parantez(),
+                 "anlatim": f"Üs, tabanın kaç kere çarpıldığıdır: 2[[u:3]] = 2 · 2 · 2 = 8. Parantez varsa eksi de çarpılır: ({M}3)[[u:2]] = +9. Parantez yoksa eksi dışarıda kalır: {M}3[[u:2]] = {M}9.",
+                 "akilda": "Parantez varsa eksi de çarpılır",
+                 "ornek": {"problem": f"({M}2)[[u:2]] kaçtır?", "adimlar": [
+                     {"metin": f"İki tane ({M}2)'yi çarp.", "islem": f"({M}2) · ({M}2)"},
+                     {"metin": "Aynı işaret → artı.", "islem": "= +4"}]},
+                 "sorular": [
+                     S(f"({M}2)[[u:3]] kaçtır?", [f"{M}6", f"{M}8", "+8"], 1, f"Üç tane ({M}2)'yi çarp. Kaç tane eksi var: tek mi, çift mi?",
+                       f"({M}2) · ({M}2) · ({M}2) = {M}8. Tek üs → eksi."),
+                     S(f"{M}3[[u:2]] kaçtır?", [f"{M}9", "+9", f"{M}6"], 0, "Parantez var mı? Yoksa üs yalnızca 3'e ait.",
+                       f"Parantez yok: 3[[u:2]] = 9, başına eksi: {M}9.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Çok Adımlı İşlem", "renk": "#1f9e8f", "svg": svg12_valiz(),
+             "aciklama": "İki ya da daha fazla işlem içeren ifadelere çok adımlı işlem denir. Bu işlemler belli bir sırayla yapılır. (s. 109)",
+             "ek": "Gerçek yaşamdaki problemler çoğu zaman tek işlemle çözülmez. Kitaptaki valiz probleminde önce eşyaların kütlesi, sonra valizin toplam kütlesi, en son da kalan kütle bulunur. (s. 108)",
+             "akilda": "Birden çok işlem, bir sıra",
+             "cozum": {"baslik": "Valiz kaç kilo?",
+                       "problem": "Melih Bey'in valizi boşken 4 kg. İçine her biri 3 kg olan 3 eşya koydu. Valizin sınırı 20 kg. Ek ücret ödememek için en fazla kaç kg daha eşya koyabilir?",
+                       "adimlar": [
+                           {"metin": "Ne veriliyor? Boş valiz 4 kg, 3 eşya (her biri 3 kg), sınır 20 kg. Ne isteniyor? Daha kaç kg konabilir?"},
+                           {"metin": "1. adım: Eşyaların kütlesi. 3 eşya, her biri 3 kg.", "islem": "3 · 3 = 9"},
+                           {"metin": "2. adım: Valizin şimdiki kütlesi. Boş valiz + eşyalar.", "islem": "4 + 9 = 13"},
+                           {"metin": "3. adım: Sınıra kaç kg kaldı?", "islem": "20 − 13 = 7"}],
+                       "sonuc": "7 kg daha koyabilir. Tek işlem olarak: 20 − (4 + 3 · 3) = 7. Kitaptaki valizde sayılar kesirli ama yol aynı. (s. 108)"},
+             "soru": S("Hangisi çok adımlı bir işlemdir?", ["8 + 5", "8 + 5 · 2", "8 · 5"], 1,
+                       "Kaç tane işlem işareti var? İki ya da daha fazla olanı ara.",
+                       "8 + 5 · 2 içinde iki işlem var: toplama ve çarpma. Diğerlerinde tek işlem var. (s. 109)")},
+            {"ad": "İşlem Sırası", "renk": "#7b4fc9", "svg": svg12_merdiven(),
+             "aciklama": "Çok adımlı işlemlerde sıra şöyledir: 1) üslü ifadeler, 2) parantez içindeki işlemler, 3) çarpma ya da bölme, 4) toplama ya da çıkarma. (s. 109)",
+             "ek": f"Merdiveni yukarıdan aşağı in: önce üs, en son toplama ve çıkarma. ({M}3) gibi bir parantez yalnızca sayının işaretini gösterir; içinde işlem yoksa atlanır.",
+             "akilda": "Üs, parantez, çarp-böl, topla-çıkar",
+             "cozum": {"baslik": "Kitaptaki işlem",
+                       "problem": f"12 − ({M}3) · (+4) işlemini yapalım.",
+                       "adimlar": [
+                           {"metin": f"Üs var mı? Yok. Parantezlerin içinde işlem var mı? Yok; ({M}3) ve (+4) yalnızca işareti gösteriyor."},
+                           {"metin": "Çarpma, çıkarmadan önce yapılır. Farklı işaret → eksi.", "islem": f"({M}3) · (+4) = {M}12"},
+                           {"metin": "Şimdi çıkarma: çıkarmayı tersiyle toplamaya çevir.", "islem": f"12 − ({M}12) = 12 + 12"},
+                           {"metin": "Topla.", "islem": "= 24"}],
+                       "sonuc": f"12 − ({M}3) · (+4) = 24. Önce çıkarsaydık 12 − ({M}3) = 15, 15 · 4 = 60 gibi yanlış bir sonuç bulurduk. (s. 110)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": f"5 + 2 · ({M}4) işlemini yap.",
+                       "adimlar": [
+                           {"metin": "Merdivene bak: üs yok, parantez içinde işlem yok.",
+                            "soru": S("Önce hangi işlem yapılır?", ["5 + 2", f"2 · ({M}4)", "Fark etmez"], 1,
+                                      "Merdivende çarpma mı önce geliyor, toplama mı?", f"Çarpma toplamadan önce: 2 · ({M}4)."),
+                            "islem": f"2 · ({M}4) = {M}8"},
+                           {"metin": "Şimdi toplama.",
+                            "soru": G(f"5 + ({M}8) kaçtır?", "-3", "İşaretler farklı: büyükten küçüğü çıkar, büyüğün işaretini koy.", f"8 − 5 = 3, büyük olan eksi: {M}3."),
+                            "islem": f"5 + ({M}8) = {M}3"}],
+                       "sonuc": f"Harika! 5 + 2 · ({M}4) = {M}3."},
+             "soru": G("3 + 4 · 2 kaçtır?", "11", "Merdivene bak: çarpma mı önce, toplama mı?",
+                       "Önce çarpma: 4 · 2 = 8. Sonra toplama: 3 + 8 = 11. Önce toplasaydık yanlışlıkla 14 bulurduk. (s. 109)")},
+            {"ad": "Aynı Öncelikte Soldan Sağa", "renk": "#e8590c", "svg": svg12_soldan(),
+             "aciklama": "Aynı önceliğe sahip işlemlerde öncelik soldaki işleme aittir. Çarpma ile bölme kardeştir; toplama ile çıkarma da kardeştir. (s. 109)",
+             "ek": "Kardeşler yan yana gelince yazıyı okur gibi soldan sağa git. 20 ÷ 4 · 5: önce 20 ÷ 4 = 5, sonra 5 · 5 = 25. Önce çarpsaydık 20 ÷ 20 = 1 gibi yanlış bir sonuç bulurduk. 10 − 3 + 2 de aynı: 7 + 2 = 9.",
+             "akilda": "Kardeşler: soldan sağa",
+             "soru": S("12 ÷ 2 · 3 kaçtır?", ["2", "9", "18"], 2,
+                       "Bölme ve çarpma kardeş. Hangisi solda?",
+                       "Soldan sağa: 12 ÷ 2 = 6, sonra 6 · 3 = 18. (s. 109)")},
+            {"ad": "Önce Parantez", "renk": "#1d6fa3", "svg": svg12_parantez(),
+             "aciklama": "Parantezin içindeki işlemler, dışarıdaki çarpma, bölme, toplama ve çıkarmadan önce yapılır. Parantezin kuvveti alınıyorsa önce parantezin içi yapılır, sonra kuvvet alınır. (s. 109)",
+             "ek": "Parantez “bunu önce yap” demektir. (2 + 1)[[u:2]] = 3[[u:2]] = 9 ama 2 + 1[[u:2]] = 2 + 1 = 3. Parantez sonucu değiştirir. (s. 109)",
+             "akilda": "Önce parantezin içi",
+             "cozum": {"baslik": "İki parantez",
+                       "problem": f"[({M}2) + (+7)] ÷ [({M}10) + (+5)] işlemini yapalım.",
+                       "adimlar": [
+                           {"metin": "İki büyük parantezin içinde toplama var. Önce onları yap."},
+                           {"metin": "Soldaki parantez: farklı işaret, 7 − 2, büyüğün işareti artı.", "islem": f"({M}2) + (+7) = +5"},
+                           {"metin": "Sağdaki parantez: farklı işaret, 10 − 5, büyüğün işareti eksi.", "islem": f"({M}10) + (+5) = {M}5"},
+                           {"metin": "Şimdi böl. Farklı işaret → eksi.", "islem": f"(+5) ÷ ({M}5) = {M}1"}],
+                       "sonuc": f"Sonuç {M}1. (s. 110)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "(3 − 5)[[u:2]] + 1 işlemini yap.",
+                       "adimlar": [
+                           {"metin": "Parantezin kuvveti alınıyor: önce parantezin içi.",
+                            "soru": G("3 − 5 kaçtır?", "-2", "3'ten 5 adım geri git. 0'ı geçiyor musun?", f"3 − 5 = {M}2."),
+                            "islem": f"({M}2)[[u:2]] + 1"},
+                           {"metin": "Şimdi üs.",
+                            "soru": S(f"({M}2)[[u:2]] kaçtır?", [f"{M}4", "+4", f"{M}2"], 1, f"İki tane ({M}2)'yi çarp. Aynı işaret ne yapar?", f"({M}2) · ({M}2) = +4."),
+                            "islem": "4 + 1"},
+                           {"metin": "En son toplama.", "islem": "= 5"}],
+                       "sonuc": "Harika! (3 − 5)[[u:2]] + 1 = 5."},
+             "soru": S("(4 + 2) · 3 kaçtır?", ["10", "18", "24"], 1,
+                       "Önce parantezin içi: 4 + 2. Sonra çarp.",
+                       "Parantez önce: 4 + 2 = 6. Sonra 6 · 3 = 18. Parantez olmasaydı 4 + 2 · 3 = 10 olurdu. (s. 109)")},
+            {"ad": "Kesir Çizgisi Ayırır", "renk": "#b7791f", "svg": svg12_cizgi(),
+             "aciklama": "Bölme kesir çizgisiyle gösterildiğinde önce paydaki ve paydadaki işlemler yapılır, en son bölünür. (s. 111)",
+             "ek": "Kesir çizgisi, üstü ve altı ayrı parantezlere almak gibidir. Çizginin üstünde 3 + 9, altında 2 · 3 varsa: üst 3 + 9 = 12, alt 2 · 3 = 6, en son 12 ÷ 6 = 2. (s. 111)",
+             "akilda": "Önce üst, sonra alt, en son böl",
+             "soru": S("Kesir çizgisinin üstünde 6 + 4, altında 7 − 2 yazıyor. Sonuç kaçtır?", ["10", "5", "2"], 2,
+                       "Önce üstü bul, sonra altı. En son böl.",
+                       "Üst: 6 + 4 = 10. Alt: 7 − 2 = 5. 10 ÷ 5 = 2. (s. 111)")},
+            {"ad": "Problemi İşleme Çevir", "renk": "#c92a2a", "svg": svg12_kart(),
+             "aciklama": "Sözel bir problemi çözerken önce “Ne veriliyor, ne isteniyor?” diye sor. Sonra hangi işlemin önce yapılacağına karar ver ve adım adım ilerle.",
+             "ek": "Her adımın bir anlamı olsun: “Bu sayı neyi gösteriyor?” Adımları birleştirince tek bir çok adımlı işlem çıkar; sırayı parantezle gösteririz. (s. 108)",
+             "akilda": "Ne veriliyor? Ne önce?",
+             "cozum": {"baslik": "Yemekhane kartı",
+                       "problem": f"Nuran Hanım'ın yemek kartında 920 TL vardı. Her öğle yemeği için 120 TL çekiliyor. Bakiye eksiye düşebiliyor. Bir süre sonra bakiye {M}40 TL oldu. Kaç gün yemek yedi?",
+                       "adimlar": [
+                           {"metin": f"Ne veriliyor? Başta 920 TL, sonda {M}40 TL, her gün 120 TL. Ne isteniyor? Gün sayısı."},
+                           {"metin": f"Toplam ne kadar harcandı? 920'den {M}40'a inildi; yol 0'dan geçiyor: 920'den 0'a 920, 0'dan {M}40'a 40.", "islem": f"920 − ({M}40) = 920 + 40 = 960"},
+                           {"metin": "Her gün 120 TL: 960'ın içinde kaç tane 120 var?", "islem": "960 ÷ 120 = 8"},
+                           {"metin": "Tek işlem olarak yaz; parantez önce yapılacağını gösterir.", "islem": f"[920 − ({M}40)] ÷ 120 = 8"}],
+                       "sonuc": "Nuran Hanım 8 gün yemek yedi. (s. 113)"},
+             "sende": {"baslik": "Ulaşım kartı",
+                       "problem": "Ela'nın ulaşım kartında 50 TL var. Her binişte 15 TL düşüyor. Ela 4 kez bindi, sonra karta 30 TL yükledi. Kartta kaç TL var?",
+                       "adimlar": [
+                           {"metin": "Ne veriliyor? 50 TL, 4 biniş (her biri 15 TL), 30 TL yükleme. İşlem: 50 − 4 · 15 + 30.",
+                            "soru": S("Önce hangi işlem yapılır?", ["50 − 4", "4 · 15", "15 + 30"], 1,
+                                      "Merdivene bak: çarpma mı önce, toplama-çıkarma mı?", "Önce çarpma: 4 binişte 4 · 15 TL düşer."),
+                            "islem": "4 · 15 = 60"},
+                           {"metin": "Şimdi 50 − 60 + 30. Çıkarma ile toplama kardeş: soldan sağa.",
+                            "soru": G("50 − 60 + 30 kaçtır?", "20", f"Soldan başla: 50 − 60 kaç? 0'ın altına iniyor musun? Sonra 30 ekle.",
+                                      f"50 − 60 = {M}10, sonra {M}10 + 30 = 20.", birim="TL"),
+                            "islem": f"{M}10 + 30 = 20"}],
+                       "sonuc": "Harika! Kartta 20 TL var."},
+             "soru": S("Mert her biri 10 TL olan 3 kalem aldı ve 50 TL verdi. Para üstünü hangi işlem verir?", ["50 − 3 · 10", "(50 − 3) · 10", "50 − 3 + 10"], 0,
+                       "Önce kalemlere ne kadar ödendiğini düşün, sonra 50'den çıkar. Hangi işlem önce çarpıyor?",
+                       "Kalemler: 3 · 10 = 30 TL. Para üstü: 50 − 30 = 20 TL. 50 − 3 · 10 işleminde çarpma önce yapılır. (Kitaptaki para üstü problemine benzer, s. 109)")}
+        ],
+        "akildaKalsin": [
+            "İki ya da daha fazla işlem varsa bir sıra izlenir.",
+            "Sıra: üs → parantez → çarpma-bölme → toplama-çıkarma.",
+            "Aynı öncelikteki kardeş işlemlerde soldan sağa git.",
+            "Parantezin kuvveti alınıyorsa önce parantezin içi.",
+            "Kesir çizgisinde önce üst, sonra alt, en son böl.",
+            "Sözel problemde önce sor: Ne veriliyor? Ne isteniyor? Ne önce?"],
+        "merakKutusu": [
+            {"soru": "Neden bir işlem sırası var?", "cevap": "Herkes farklı sırayla yapsa aynı işlemden farklı sonuçlar çıkardı: 2 + 3 · 4 işleminde biri 14, biri 20 bulurdu. Sıra kuralı herkesi aynı cevaba götürür."},
+            {"soru": "Çarpma her zaman bölmeden önce mi yapılır?", "cevap": "Hayır. Çarpma ile bölme aynı önceliktedir; hangisi soldaysa o önce yapılır. Toplama ile çıkarma için de aynısı geçerli. (s. 109)"},
+            {"soru": f"({M}3) gibi bir parantez de önce mi yapılır?", "cevap": f"Bu parantezin içinde işlem yok; yalnızca sayının eksi olduğunu gösteriyor. Ama ({M}3)[[u:2]] gibi kuvveti varsa parantez önemlidir: eksi de çarpılır, +9 olur."},
+            {"soru": "Parantezi başka yere koyarsam sonuç değişir mi?", "cevap": "Evet! 2 + 3 · 4 = 14 ama (2 + 3) · 4 = 20. Kitapta da bir eşitliğin doğru olması için parantezi doğru yere koyman isteniyor. (s. 109)"},
+            {"soru": "Kesir çizgisi neden parantez gibi?", "cevap": "Çünkü kesir çizgisi bir bölmedir ve önce üstteki, sonra alttaki işlem biter. Pay ve paydayı ayrı parantezlere almış gibi düşünebilirsin. (s. 111)"}],
+        "dusunVeYaz": [{"soru": "Can 6 + 4 · 2 işleminin sonucunu 20 buldu. Hatası ne? Doğru sonucu bul.",
+                        "ornekCevap": "Can önce toplamış: 6 + 4 = 10, 10 · 2 = 20. Ama çarpma toplamadan önce yapılır: 4 · 2 = 8, 6 + 8 = 14.",
+                        "anahtarlar": ["çarp", "önce", "14"]}],
+        "sorular": [
+            S("2 + 3 · 4 kaçtır?", ["20", "14", "24"], 1,
+              "Çarpma mı önce, toplama mı?", "Önce çarpma: 3 · 4 = 12. Sonra 2 + 12 = 14. (s. 109)"),
+            G("[(+9) + (+21)] ÷ 2 kaçtır?", "15",
+              "Önce parantezin içi, sonra bölme.", "Parantez: 9 + 21 = 30. Sonra 30 ÷ 2 = 15. (s. 110)"),
+            S(f"2[[u:3]] + ({M}3)[[u:2]] kaçtır?", ["17", f"{M}1", "12"], 0,
+              f"Önce iki üslü ifadeyi bul. ({M}3)[[u:2]]'de parantez var: eksi de çarpılır.",
+              f"2[[u:3]] = 8, ({M}3)[[u:2]] = +9. 8 + 9 = 17. (s. 110)"),
+            N(f"({M}1) + ({M}15) ÷ ({M}3) − ({M}2) işleminin sonucuna sayı doğrusunda dokun.", 6, {"min": -2, "max": 8},
+              "Önce bölme. Sonra soldan sağa toplama ve çıkarma.",
+              f"Bölme: ({M}15) ÷ ({M}3) = +5. Sonra ({M}1) + 5 = 4. En son 4 − ({M}2) = 4 + 2 = 6. (s. 110)"),
+            S("10 − 6 + 2 kaçtır?", ["2", "4", "6"], 2,
+              "Çıkarma ile toplama kardeş. Hangisi solda?",
+              "Soldan sağa: 10 − 6 = 4, sonra 4 + 2 = 6. Önce 6 + 2 yapsaydık 2 bulurduk. (s. 109)"),
+            S("Kesir çizgisinin üstünde 3 · 8, altında 10 − 4 yazıyor. Sonuç kaçtır?", ["24", "6", "4"], 2,
+              "Önce üstteki çarpma, sonra alttaki çıkarma. En son böl.",
+              "Üst: 3 · 8 = 24. Alt: 10 − 4 = 6. 24 ÷ 6 = 4. (s. 111)"),
+            G("Tuğba kilogramı 40 TL olan elmadan ve kilogramı 30 TL olan mandalinadan 2'şer kilogram aldı. 200 TL verdi. Kaç TL para üstü alır?", "60",
+              "Önce 1 kilogramlık elma ve mandalinanın fiyatını topla, 2 ile çarp. Sonra 200'den çıkar.",
+              "1 kg elma + 1 kg mandalina: 40 + 30 = 70 TL. 2'şer kg: 2 · 70 = 140 TL. Para üstü: 200 − 140 = 60 TL. İşlem: 200 − 2 · (40 + 30) = 60. (Kitaptaki para üstü problemine benzer, s. 109)",
+              birim="TL"),
+            N("Asansör 3. kattaydı. 2 kez 4'er kat aşağı indi, sonra 1 kat yukarı çıktı. Asansörün durduğu kata dokun.", -4,
+              {"min": -6, "max": 4, "dikey": True, "birim": 24, "sifirEtiketi": "Zemin kat"},
+              f"İşlem: 3 + 2 · ({M}4) + 1. Önce çarpma.",
+              f"İniş: 2 · ({M}4) = {M}8. Sonra 3 + ({M}8) = {M}5, en son {M}5 + 1 = {M}4. Asansör {M}4. katta."),
+            S("Hangisinin sonucu en büyüktür?", ["(2 + 3)[[u:2]]", "2 + 3[[u:2]]", "2[[u:2]] + 3"], 0,
+              "Üçünü de hesapla. Parantezin kuvveti alınıyorsa önce parantezin içi.",
+              "(2 + 3)[[u:2]] = 5[[u:2]] = 25. 2 + 3[[u:2]] = 2 + 9 = 11. 2[[u:2]] + 3 = 4 + 3 = 7. En büyük 25. (s. 109)"),
+            G("Bir depoda 40 litre su var. Musluk depoya saatte 2 litre su dolduruyor, vana saatte 6 litre boşaltıyor. İkisi birlikte 5 saat açık kalırsa depoda kaç litre su kalır?", "20",
+              "Önce 1 saatte depodaki değişimi bul: dolan artı, boşalan eksi. Sonra 5 ile çarp, 40 ile topla.",
+              f"1 saatte: 2 + ({M}6) = {M}4 litre. 5 saatte: 5 · ({M}4) = {M}20 litre. Kalan: 40 + ({M}20) = 20 litre. İşlem: 40 + 5 · (2 − 6) = 20. (Kitaptaki su deposu problemine benzer, s. 109)",
+              birim="litre"),
+            S("Valiz boşken 5 kg. İçine her biri 2 kg olan 4 eşya konuyor. Valizin kütlesini hangi işlem verir?", ["(5 + 4) · 2", "5 + 4 · 2", "5 · 4 + 2"], 1,
+              "Önce eşyaların kütlesi: 4 eşya, her biri 2 kg. Sonra boş valizle topla. Hangi işlemde çarpma önce yapılıyor?",
+              "Eşyalar: 4 · 2 = 8 kg. Valiz: 5 + 8 = 13 kg. 5 + 4 · 2 işleminde çarpma önce yapılır, sonuç 13. (Kitaptaki valiz problemine benzer, s. 108)")]
+    }
+
+
 # =================================================================
 # Ara Duraklar (konu tarama): kapsanan konuların özeti + konuları birleştiren yeni sorular.
 # Motor ayrıca kapsanan konuların kendi sorularından "eskiSoru" kadarını (zorlanılan kavramlar önce) ekler.
@@ -3187,7 +3441,7 @@ def u1t4():
 
 
 TARAMALAR = [u1t1, u1t2, u1t3, u1t4]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11] + TARAMALAR
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
@@ -3217,6 +3471,8 @@ TEST_KAVRAM = {
               "Eksi Taban: Çift Artı, Tek Eksi", "Özel Tabanlar: 1, 0 ve Üs 1", "Parantez Fark Yaratır", "Eksi Taban: Çift Artı, Tek Eksi", "Tekrarlı Çarpımı Kısalt"],
     "u1k11": ["Böl = Tersiyle Çarp", "Böl = Tersiyle Çarp", "Tam Sayılı Kesir ve İşaret", "Tam Sayılı Kesir ve İşaret", "Tam Sayılı Kesir ve İşaret",
               "Kaç Tane Sığar?", "Paydalar Eşitse Payları Böl", "Kesir Çizgisi de Bölmedir", "Böl = Tersiyle Çarp", "Ters Çevir", "Kaç Tane Sığar?"],
+    "u1k12": ["İşlem Sırası", "Önce Parantez", "İşlem Sırası", "İşlem Sırası", "Aynı Öncelikte Soldan Sağa", "Kesir Çizgisi Ayırır",
+              "Problemi İşleme Çevir", "Problemi İşleme Çevir", "Önce Parantez", "Problemi İşleme Çevir", "Çok Adımlı İşlem"],
 }
 YARDIM = {
     "u1k1": {
@@ -3432,6 +3688,20 @@ YARDIM = {
             "Ne isteniyor? 5 m'nin içinde kaç tane [[5/4]] m sığar?", "Koru, çevir, ters çevir: 5 · [[4/5]].", "Çapraz sadeleştir: üstteki 5 ile alttaki 5. Sonra çarp."]},
         "Derin dondurucudaki": {"adimlar": [
             "Başlangıç (0): ilk sıcaklık. Düşmek eksidir: [[-3/2]].", "1 dakika için 3'e paylaştır: ([[-3/2]]) ÷ 3 = ([[-3/2]]) · [[1/3]].", "3 ile 3 sadeleşir. 0 ile −1 arası 2 parçaya bölünmüş; kaçıncı çizgi?"]},
+    },
+    "u1k12": {
+        "3 + 4 · 2 kaçtır": {"adimlar": [
+            "İşlemde hangi işaretler var? Toplama ve çarpma.", "Merdivende çarpma, toplamadan önce gelir: önce 4 · 2.", "Bulduğun sayıyı 3 ile topla."]},
+        "[(+9) + (+21)] ÷ 2": {"adimlar": [
+            "Parantezin içinde işlem var: önce o.", "Parantezin içi: 9 + 21.", "Bulduğun sayıyı 2'ye böl."]},
+        "(−1) + (−15) ÷ (−3)": {"adimlar": [
+            "Merdivene bak: bölme, toplama ve çıkarmadan önce.", "(−15) ÷ (−3): aynı işaret → artı.", "Sonra soldan sağa: (−1) + bulduğun sayı.", "En son − (−2): çıkarmayı tersiyle toplamaya çevir."]},
+        "Tuğba kilogramı": {"adimlar": [
+            "Ne isteniyor? Para üstü: 200'den ödenen parayı çıkaracağız.", "1 kg elma + 1 kg mandalina kaç TL?", "2'şer kg aldı: bu toplamı 2 ile çarp.", "200'den çıkar."]},
+        "Asansör 3. kattaydı": {"adimlar": [
+            "Başlangıç: 3. kat. Aşağı eksi, yukarı artı.", "İniş: 2 kez 4 kat → 2 · (−4).", "3'e bunu ekle, sonra 1 kat yukarı çık."]},
+        "Bir depoda 40 litre": {"adimlar": [
+            "Başlangıç: 40 litre. Dolan artı (+2), boşalan eksi (−6).", "1 saatteki değişim: 2 + (−6).", "5 saatlik değişim: 5 ile çarp.", "40 ile topla."]},
     },
 }
 
