@@ -1,0 +1,220 @@
+{
+ "id": "u1t3",
+ "tur": "tarama",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Ara Durak 3: Tam Sayılarla İşlemler",
+ "sayfalar": "Konu 6–7 · s. 62–81",
+ "giris": "Dört işlemi tam sayılarla yapmayı öğrendin! Durup bakalım. Önce kısa özetleri oku ve kartları çevir. Sonra 10 soruluk tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+ "buyukResim": "İki konuda da işaret önemli ama kurallar farklı. Toplamada sayı doğrusunda yürürüz; iki eksi toplanınca sonuç yine eksidir: (−6) + (−4) = −10. Çarpmada ise aynı işaret artı yapar: (−6) · (−4) = +24. Karıştırmamak için önce sor: Topluyor muyum, çarpıyor muyum?",
+ "kapsar": [
+  "u1k6",
+  "u1k7"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Toplama bir yolculuktur: artı sağa, eksi sola.",
+    "Aynı işaret: topla, işareti koru. Farklı işaret: büyükten küçüğü çıkar, büyüğün işaretini koy.",
+    "Çıkarma, tersiyle toplamadır: 4 − (−5) = 4 + (+5)."
+   ]
+  },
+  {
+   "konu": "u1k7",
+   "maddeler": [
+    "Çarpma tekrarlı toplamadır: 3 · (−2) = (−2) + (−2) + (−2).",
+    "Aynı işaret → artı; farklı işaret → eksi. Bölmede de aynı kural.",
+    "Çok çarpanda eksileri say: çiftse artı, tekse eksi. Bölen 0 olamaz."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kurallar hangi durum için?",
+   "kutular": [
+    {
+     "etiket": "Aynı işaretli iki sayı",
+     "uyeler": [
+      "Aynı İşaret: Topla, İşareti Koru",
+      "Aynı İşaret: Çarpım Artı"
+     ]
+    },
+    {
+     "etiket": "Farklı işaretli iki sayı",
+     "uyeler": [
+      "Farklı İşaret: Çıkar, Büyüğün İşareti",
+      "Farklı İşaret: Çarpım Eksi",
+      "Ters İşaretliler Toplanınca 0"
+     ]
+    },
+    {
+     "etiket": "Toplamaya çevir",
+     "uyeler": [
+      "Çıkarma = Tersiyle Toplama",
+      "Çarpma = Tekrarlı Toplama"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Sabah hava sıcaklığı +5 °C. Sonra her saat 3 °C düşüyor. 4 saat sonra hava sıcaklığı kaç °C olur?",
+   "cevap": "-7",
+   "ipucu": "Düşüş eksidir: her saat −3. 4 saatlik değişim 4 · (−3). Sonra +5 ile topla.",
+   "aciklama": "Değişim: 4 · (−3) = −12. Yeni sıcaklık: (+5) + (−12) = −7 °C. İşaretler farklı: 12 − 5 = 7, büyüğün işareti eksi.",
+   "birim": "°C",
+   "sayiDogrusu": {
+    "min": -8,
+    "max": 6,
+    "dikey": true,
+    "birim": 22
+   },
+   "kaynak": [
+    {
+     "konu": "u1k7",
+     "kavram": "Farklı İşaret: Çarpım Eksi"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Farklı İşaret: Çıkar, Büyüğün İşareti"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Başlangıç: +5 °C.",
+     "Yön: düşüş eksidir. Her saat −3.",
+     "Kaç birim? 4 saatte toplam değişim 4 · (−3). İşaretler farklı → eksi.",
+     "+5 ile bu değişimi topla: işaretler farklı, büyükten küçüğü çıkar, büyüğün işaretini koy."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisinin sonucu artıdır (pozitiftir)?",
+   "secenekler": [
+    "(−6) + (−4)",
+    "(−6) · (−4)",
+    "(−6) − (+4)"
+   ],
+   "dogru": 1,
+   "ipucu": "Önce işleme bak: toplama mı, çarpma mı? Toplamada iki eksi eksi kalır; çarpmada aynı işaret ne yapar?",
+   "aciklama": "(−6) · (−4) = +24: aynı işaret, çarpım artı. (−6) + (−4) = −10: aynı işaret, topla, eksiyi koru. (−6) − (+4) = (−6) + (−4) = −10.",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Aynı İşaret: Topla, İşareti Koru"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Aynı İşaret: Çarpım Artı"
+    }
+   ]
+  },
+  {
+   "soru": "Asansör zemin katta. Her durakta 2 kat aşağı iniyor. 4 durak indikten sonra 3 kat yukarı çıktı. Asansörün katına dokun.",
+   "nokta": -5,
+   "sayiDogrusu": {
+    "min": -9,
+    "max": 2,
+    "dikey": true,
+    "birim": 24,
+    "sifirEtiketi": "Zemin kat"
+   },
+   "ipucu": "Önce iniş: 4 durak, her biri −2 kat → 4 · (−2). Oradan 3 aralık yukarı çık.",
+   "aciklama": "İniş: 4 · (−2) = −8. Sonra (−8) + (+3) = −5. Asansör −5. katta.",
+   "kaynak": [
+    {
+     "konu": "u1k7",
+     "kavram": "Çarpma = Tekrarlı Toplama"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Toplama Bir Yolculuktur"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Başlangıç (0): zemin kat.",
+     "Yön: aşağı eksi. 4 durakta 4 · (−2) kat iner.",
+     "Oradan 3 kat yukarı (artı) çık: sayı doğrusunda 3 aralık yukarı say."
+    ]
+   }
+  },
+  {
+   "soru": "Bir dondurucunun sıcaklığı 5 saatte +4 °C'tan −16 °C'a indi. Her saat aynı miktarda değiştiyse, saatte kaç derece değişti?",
+   "secenekler": [
+    "−4 °C",
+    "+4 °C",
+    "−20 °C"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce toplam değişimi bul: son sıcaklık − ilk sıcaklık. Sonra 5 saate eşit paylaştır.",
+   "aciklama": "Toplam değişim: (−16) − (+4) = (−16) + (−4) = −20 °C. Saatte: (−20) ÷ 5 = −4 °C. −20 toplam değişimdir, saatlik değil.",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Çıkarma = Tersiyle Toplama"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Çarp mı, Böl mü?"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "İlk sıcaklık +4 °C, son sıcaklık −16 °C.",
+     "Toplam değişim = son − ilk: (−16) − (+4). Çıkarmayı tersiyle toplamaya çevir.",
+     "Bu değişim 5 saate eşit paylaşıldı: böl. Farklı işaret → eksi."
+    ]
+   }
+  },
+  {
+   "soru": "Deniz'in ulaşım kartında 20 TL var. Kart eksiye düşebiliyor. Her binişte 8 TL düşüyor. Deniz 4 kez bindi. Kartın bakiyesi kaç TL oldu?",
+   "cevap": "-12",
+   "ipucu": "Gider eksidir: her biniş −8 TL. 4 binişte 4 · (−8). Sonra 20 TL ile topla.",
+   "aciklama": "Gider: 4 · (−8) = −32 TL. Bakiye: (+20) + (−32) = −12 TL. Kart 12 TL eksiye (borca) düştü.",
+   "birim": "TL",
+   "kaynak": [
+    {
+     "konu": "u1k7",
+     "kavram": "Farklı İşaret: Çarpım Eksi"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Farklı İşaret: Çıkar, Büyüğün İşareti"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Başlangıç: kartta +20 TL.",
+     "Yön: gider eksidir. Her biniş −8 TL.",
+     "Kaç birim? 4 binişte toplam gider 4 · (−8).",
+     "+20 ile bu gideri topla. Hangisinin mutlak değeri büyük? Sonuç eksiyse önce − tuşuna dokun."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisinin sonucu −12'dir?",
+   "secenekler": [
+    "(−3) · (−4)",
+    "(−8) − (−4)",
+    "|−3| · (−4)"
+   ],
+   "dogru": 2,
+   "ipucu": "Mutlak değer varsa önce onu bul: |−3| kaç? Sonra her işlemin işaretine bak.",
+   "aciklama": "|−3| · (−4) = 3 · (−4) = −12. (−3) · (−4) = +12 (aynı işaret). (−8) − (−4) = (−8) + (+4) = −4.",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Önce Mutlak Değer"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Farklı İşaret: Çarpım Eksi"
+    }
+   ]
+  }
+ ]
+}

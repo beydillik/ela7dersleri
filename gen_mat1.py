@@ -2131,7 +2131,61 @@ def u1t2():
     }
 
 
-TARAMALAR = [u1t1, u1t2]
+def u1t3():
+    return {
+        "id": "u1t3", "tur": "tarama", "unite": "1. Tema: Sayılar ve Nicelikler",
+        "baslik": "Ara Durak 3: Tam Sayılarla İşlemler", "sayfalar": "Konu 6–7 · s. 62–81",
+        "giris": "Dört işlemi tam sayılarla yapmayı öğrendin! Durup bakalım. Önce kısa özetleri oku ve kartları çevir. Sonra 10 soruluk tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": f"İki konuda da işaret önemli ama kurallar farklı. Toplamada sayı doğrusunda yürürüz; iki eksi toplanınca sonuç yine eksidir: ({M}6) + ({M}4) = {M}10. Çarpmada ise aynı işaret artı yapar: ({M}6) · ({M}4) = +24. Karıştırmamak için önce sor: Topluyor muyum, çarpıyor muyum?",
+        "kapsar": ["u1k6", "u1k7"],
+        "hatirla": [
+            {"konu": "u1k6", "maddeler": [
+                "Toplama bir yolculuktur: artı sağa, eksi sola.",
+                "Aynı işaret: topla, işareti koru. Farklı işaret: büyükten küçüğü çıkar, büyüğün işaretini koy.",
+                f"Çıkarma, tersiyle toplamadır: 4 {M} ({M}5) = 4 + (+5)."]},
+            {"konu": "u1k7", "maddeler": [
+                f"Çarpma tekrarlı toplamadır: 3 · ({M}2) = ({M}2) + ({M}2) + ({M}2).",
+                "Aynı işaret → artı; farklı işaret → eksi. Bölmede de aynı kural.",
+                "Çok çarpanda eksileri say: çiftse artı, tekse eksi. Bölen 0 olamaz."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Bu kurallar hangi durum için?", "kutular": [
+            {"etiket": "Aynı işaretli iki sayı", "uyeler": ["Aynı İşaret: Topla, İşareti Koru", "Aynı İşaret: Çarpım Artı"]},
+            {"etiket": "Farklı işaretli iki sayı", "uyeler": ["Farklı İşaret: Çıkar, Büyüğün İşareti", "Farklı İşaret: Çarpım Eksi", "Ters İşaretliler Toplanınca 0"]},
+            {"etiket": "Toplamaya çevir", "uyeler": ["Çıkarma = Tersiyle Toplama", "Çarpma = Tekrarlı Toplama"]}]}],
+        "sorular": [
+            G("Sabah hava sıcaklığı +5 °C. Sonra her saat 3 °C düşüyor. 4 saat sonra hava sıcaklığı kaç °C olur?", "-7",
+              f"Düşüş eksidir: her saat {M}3. 4 saatlik değişim 4 · ({M}3). Sonra +5 ile topla.",
+              f"Değişim: 4 · ({M}3) = {M}12. Yeni sıcaklık: (+5) + ({M}12) = {M}7 °C. İşaretler farklı: 12 − 5 = 7, büyüğün işareti eksi.",
+              birim="°C", sayiDogrusu={"min": -8, "max": 6, "dikey": True, "birim": 22},
+              kaynak=[K("u1k7", "Farklı İşaret: Çarpım Eksi"), K("u1k6", "Farklı İşaret: Çıkar, Büyüğün İşareti")]),
+            S("Hangisinin sonucu artıdır (pozitiftir)?", [f"({M}6) + ({M}4)", f"({M}6) · ({M}4)", f"({M}6) {M} (+4)"], 1,
+              "Önce işleme bak: toplama mı, çarpma mı? Toplamada iki eksi eksi kalır; çarpmada aynı işaret ne yapar?",
+              f"({M}6) · ({M}4) = +24: aynı işaret, çarpım artı. ({M}6) + ({M}4) = {M}10: aynı işaret, topla, eksiyi koru. ({M}6) {M} (+4) = ({M}6) + ({M}4) = {M}10.",
+              kaynak=[K("u1k6", "Aynı İşaret: Topla, İşareti Koru"), K("u1k7", "Aynı İşaret: Çarpım Artı")]),
+            N("Asansör zemin katta. Her durakta 2 kat aşağı iniyor. 4 durak indikten sonra 3 kat yukarı çıktı. Asansörün katına dokun.", -5,
+              {"min": -9, "max": 2, "dikey": True, "birim": 24, "sifirEtiketi": "Zemin kat"},
+              f"Önce iniş: 4 durak, her biri {M}2 kat → 4 · ({M}2). Oradan 3 aralık yukarı çık.",
+              f"İniş: 4 · ({M}2) = {M}8. Sonra ({M}8) + (+3) = {M}5. Asansör {M}5. katta.",
+              kaynak=[K("u1k7", "Çarpma = Tekrarlı Toplama"), K("u1k6", "Toplama Bir Yolculuktur")]),
+            S(f"Bir dondurucunun sıcaklığı 5 saatte +4 °C'tan {M}16 °C'a indi. Her saat aynı miktarda değiştiyse, saatte kaç derece değişti?",
+              [f"{M}4 °C", "+4 °C", f"{M}20 °C"], 0,
+              "Önce toplam değişimi bul: son sıcaklık − ilk sıcaklık. Sonra 5 saate eşit paylaştır.",
+              f"Toplam değişim: ({M}16) {M} (+4) = ({M}16) + ({M}4) = {M}20 °C. Saatte: ({M}20) ÷ 5 = {M}4 °C. {M}20 toplam değişimdir, saatlik değil.",
+              kaynak=[K("u1k6", "Çıkarma = Tersiyle Toplama"), K("u1k7", "Çarp mı, Böl mü?")]),
+            G("Deniz'in ulaşım kartında 20 TL var. Kart eksiye düşebiliyor. Her binişte 8 TL düşüyor. Deniz 4 kez bindi. Kartın bakiyesi kaç TL oldu?", "-12",
+              f"Gider eksidir: her biniş {M}8 TL. 4 binişte 4 · ({M}8). Sonra 20 TL ile topla.",
+              f"Gider: 4 · ({M}8) = {M}32 TL. Bakiye: (+20) + ({M}32) = {M}12 TL. Kart 12 TL eksiye (borca) düştü.",
+              birim="TL",
+              kaynak=[K("u1k7", "Farklı İşaret: Çarpım Eksi"), K("u1k6", "Farklı İşaret: Çıkar, Büyüğün İşareti")]),
+            S(f"Hangisinin sonucu {M}12'dir?", [f"({M}3) · ({M}4)", f"({M}8) {M} ({M}4)", f"|{M}3| · ({M}4)"], 2,
+              f"Mutlak değer varsa önce onu bul: |{M}3| kaç? Sonra her işlemin işaretine bak.",
+              f"|{M}3| · ({M}4) = 3 · ({M}4) = {M}12. ({M}3) · ({M}4) = +12 (aynı işaret). ({M}8) {M} ({M}4) = ({M}8) + (+4) = {M}4.",
+              kaynak=[K("u1k6", "Önce Mutlak Değer"), K("u1k7", "Farklı İşaret: Çarpım Eksi")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3]
 KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7] + TARAMALAR
 
 # =================================================================
@@ -2251,6 +2305,22 @@ YARDIM = {
             "[[-12/5]]'in paydasını 10 yap (5 × 2 = 10). Kaç onda kaç olur?",
             f"Şimdi {M}2,35 ile karşılaştır. Daha derin olan 0'a daha uzak olandır.",
             "İkisinin tam kısmı 2. Onda birler basamağına bak."]},
+    },
+    "u1t3": {
+        "Sabah hava sıcaklığı +5": {"adimlar": [
+            "Başlangıç: +5 °C.", f"Yön: düşüş eksidir. Her saat {M}3.",
+            f"Kaç birim? 4 saatte toplam değişim 4 · ({M}3). İşaretler farklı → eksi.",
+            "+5 ile bu değişimi topla: işaretler farklı, büyükten küçüğü çıkar, büyüğün işaretini koy."]},
+        "Deniz'in ulaşım kartında": {"adimlar": [
+            "Başlangıç: kartta +20 TL.", f"Yön: gider eksidir. Her biniş {M}8 TL.",
+            f"Kaç birim? 4 binişte toplam gider 4 · ({M}8).",
+            f"+20 ile bu gideri topla. Hangisinin mutlak değeri büyük? Sonuç eksiyse önce {M} tuşuna dokun."]},
+        "Asansör zemin katta": {"adimlar": [
+            "Başlangıç (0): zemin kat.", f"Yön: aşağı eksi. 4 durakta 4 · ({M}2) kat iner.",
+            "Oradan 3 kat yukarı (artı) çık: sayı doğrusunda 3 aralık yukarı say."]},
+        "Bir dondurucunun sıcaklığı": {"adimlar": [
+            "İlk sıcaklık +4 °C, son sıcaklık −16 °C.", f"Toplam değişim = son − ilk: ({M}16) {M} (+4). Çıkarmayı tersiyle toplamaya çevir.",
+            "Bu değişim 5 saate eşit paylaşıldı: böl. Farklı işaret → eksi."]},
     },
     "u1k6": {
         f"({M}12) + (+16) kaçtır": {"adimlar": [
