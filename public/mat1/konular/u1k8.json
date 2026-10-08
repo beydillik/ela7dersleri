@@ -1,0 +1,721 @@
+{
+ "id": "u1k8",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Rasyonel Sayılarla Toplama ve Çıkarma",
+ "sayfalar": "s. 82–87",
+ "giris": "Kesirleri toplamayı geçen yıllardan, eksi sayıları toplamayı geçen konudan biliyorsun. Şimdi ikisini birleştiriyoruz. Yeni kural yok: kesir bilgisi + tam sayı kuralı = rasyonel sayılarla toplama.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu genişletme, kesirlerde toplama ve tam sayılarda toplama üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Genişletme (denk kesir)",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='46' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='60' y='18' width='46' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='14' y='56' width='23' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='37' y='56' width='23' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='60' y='56' width='23' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='83' y='56' width='23' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><text x='36' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>1/2</text><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>=</text><text x='86' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>2/4</text></svg>",
+    "anlatim": "Bir kesrin payını ve paydasını aynı sayıyla çarparsak denk bir kesir buluruz. Buna genişletme denir; değer değişmez: [[1/2]] = [[2/4]].",
+    "akilda": "Pay da payda da aynı sayıyla",
+    "ornek": {
+     "problem": "[[2/3]] kesrini paydası 12 olacak şekilde genişletelim.",
+     "adimlar": [
+      {
+       "metin": "3'ü 12 yapan sayıyı bul: 3 · ? = 12.",
+       "islem": "3 · 4 = 12"
+      },
+      {
+       "metin": "Payı da aynı sayıyla çarp: 2 · 4.",
+       "islem": "[[2/3]] = [[8/12]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[3/4]] kesrini paydası 12 olacak şekilde genişlet.",
+      "cevap": "9/12",
+      "ipucu": "4 · 3 = 12. Payı da 3 ile çarp.",
+      "aciklama": "3 · 3 = 9, 4 · 3 = 12: [[9/12]].",
+      "kesir": true
+     },
+     {
+      "soru": "[[2/5]] kesrini paydası 10 olacak şekilde genişlet.",
+      "cevap": "4/10",
+      "ipucu": "5 · 2 = 10. Payı da 2 ile çarp.",
+      "aciklama": "2 · 2 = 4, 5 · 2 = 10: [[4/10]].",
+      "kesir": true
+     }
+    ]
+   },
+   {
+    "ad": "Kesirlerde toplama",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12.0' y='12' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='12' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='12' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='12' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='12' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='12.0' y='46' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='12.0' y='84' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='84' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='84' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='84' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='84' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><text x='42' y='41' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>+</text><text x='42' y='79' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>=</text><text x='98' y='13' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>2</text><line x1='91.4' y1='19' x2='104.6' y2='19' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='33' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>5</text><text x='98' y='47' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>1</text><line x1='91.4' y1='53' x2='104.6' y2='53' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='67' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>5</text><text x='98' y='85' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>3</text><line x1='91.4' y1='91' x2='104.6' y2='91' stroke='#ffa26b' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='105' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>5</text></svg>",
+    "anlatim": "Paydalar eşitse payları toplarız, payda aynı kalır: [[2/5]] + [[1/5]] = [[3/5]]. Paydalar farklıysa önce genişletip eşitleriz.",
+    "akilda": "Paylar toplanır, payda kalır",
+    "ornek": {
+     "problem": "[[1/2]] + [[1/4]] işlemini yapalım.",
+     "adimlar": [
+      {
+       "metin": "Paydalar farklı: 2 ve 4. 2'yi 4 yapmak için 2 ile genişlet.",
+       "islem": "[[1/2]] = [[2/4]]"
+      },
+      {
+       "metin": "Şimdi payları topla, payda 4 kalır.",
+       "islem": "[[2/4]] + [[1/4]] = [[3/4]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[2/9]] + [[5/9]] kaçtır?",
+      "secenekler": [
+       "[[7/18]]",
+       "[[7/9]]",
+       "[[3/9]]"
+      ],
+      "dogru": 1,
+      "ipucu": "Paydalar aynı. Yalnızca payları topla.",
+      "aciklama": "2 + 5 = 7, payda 9 kalır: [[7/9]]."
+     },
+     {
+      "soru": "[[1/3]] + [[1/6]] kaçtır?",
+      "cevap": "3/6",
+      "ipucu": "3'ü 6 yap: [[1/3]] = [[2/6]]. Sonra payları topla.",
+      "aciklama": "[[2/6]] + [[1/6]] = [[3/6]] = [[1/2]].",
+      "kesir": true,
+      "denk": true
+     }
+    ]
+   },
+   {
+    "ad": "Tam sayılarda toplama",
+    "sinif": "6. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='28' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>(−5) + (+3)</text><rect x='20' y='40' width='80' height='18' rx='5' fill='#6fb3ff'/><rect x='20' y='40' width='48' height='18' rx='5' fill='#1b2340' opacity='.6'/><rect x='20' y='64' width='48' height='18' rx='5' fill='#ffa26b'/><path d='M70 90 v6 h30 v-6' stroke='#f2c14e' stroke-width='2.5' fill='none'/><text x='38' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>5 − 3</text><text x='86' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#6fb3ff'>−2</text></svg>",
+    "anlatim": "Aynı işaret: topla, işareti koru. Farklı işaret: büyükten küçüğü çıkar, büyüğün işaretini koy. Çıkarmada çıkan sayının işaretini çevir ve topla.",
+    "akilda": "Aynı topla, farklı çıkar",
+    "ornek": {
+     "problem": "(−7) + (+3) kaçtır?",
+     "adimlar": [
+      {
+       "metin": "İşaretler farklı. Büyükten küçüğü çıkar.",
+       "islem": "7 − 3 = 4"
+      },
+      {
+       "metin": "Mutlak değeri büyük olan −7. Onun işaretini koy.",
+       "islem": "(−7) + (+3) = −4"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "(−9) + (+4) kaçtır?",
+      "cevap": "-5",
+      "ipucu": "İşaretler farklı: 9 − 4. Büyük olanın işareti ne?",
+      "aciklama": "9 − 4 = 5, büyük olan −9: −5."
+     },
+     {
+      "soru": "(−6) − (+2) kaçtır?",
+      "secenekler": [
+       "−4",
+       "−8",
+       "+8"
+      ],
+      "dogru": 1,
+      "ipucu": "Çıkarmayı çevir: (−6) + (−2). Aynı işaret.",
+      "aciklama": "(−6) + (−2) = −8."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Payda Aynıysa Payları Topla",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12.0' y='12' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='12' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='12' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='12' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='12' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='12.0' y='46' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='46' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='12.0' y='84' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='84' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='84' width='12.0' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='84' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='84' width='12.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><text x='42' y='41' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>+</text><text x='42' y='79' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>=</text><text x='98' y='13' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>2</text><line x1='91.4' y1='19' x2='104.6' y2='19' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='33' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>5</text><text x='98' y='47' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>1</text><line x1='91.4' y1='53' x2='104.6' y2='53' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='67' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>5</text><text x='98' y='85' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>3</text><line x1='91.4' y1='91' x2='104.6' y2='91' stroke='#ffa26b' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='105' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>5</text></svg>",
+   "aciklama": "Paydalar eşitse yalnızca payları topla; payda aynı kalır. Payları toplarken tam sayı kuralını kullan.",
+   "ek": "Negatif kesirde eksi işareti paya aittir: [[-5/10]] ile [[−5/10]] aynı sayıdır. Kitaptaki örnek: ([[-5/10]]) + ([[-2/10]]) işleminde paylar −5 ve −2; aynı işaret: 5 + 2 = 7, eksi kalır: [[-7/10]]. (s. 83)",
+   "akilda": "Payda sabit, paylar toplanır",
+   "cozum": {
+    "baslik": "Denizaltı iniyor",
+    "problem": "Bir denizaltı deniz seviyesinin [[3/8]] km altında. Sonra [[2/8]] km daha aşağı indi. Denizaltı şimdi nerede?",
+    "sayiDogrusu": {
+     "min": -1,
+     "max": 0,
+     "bolme": 8,
+     "oklar": [
+      {
+       "bas": 0,
+       "son": -0.375,
+       "etiket": "−3/8",
+       "renk": "#2364c7"
+      },
+      {
+       "bas": -0.375,
+       "son": -0.625,
+       "etiket": "−2/8",
+       "renk": "#2364c7"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0) nerede? Deniz seviyesi. Altı eksidir.",
+      "islem": "Başlangıç: [[-3/8]]"
+     },
+     {
+      "metin": "Yön: aşağı, yani eksi. Kaç birim? [[2/8]] km.",
+      "islem": "([[-3/8]]) + ([[-2/8]])"
+     },
+     {
+      "metin": "Paydalar aynı (8). Payları topla: (−3) + (−2). Aynı işaret: topla, eksiyi koru.",
+      "islem": "(−3) + (−2) = −5"
+     },
+     {
+      "metin": "Payda 8 kalır.",
+      "islem": "([[-3/8]]) + ([[-2/8]]) = [[-5/8]]"
+     }
+    ],
+    "sonuc": "Denizaltı deniz seviyesinin [[5/8]] km altında: [[-5/8]] km. (Kitaptaki denizaltı bağlamı, s. 82)"
+   },
+   "soru": {
+    "soru": "([[-1/4]]) + ([[3/4]]) işleminin sonucuna dokun.",
+    "nokta": 0.5,
+    "sayiDogrusu": {
+     "min": -1,
+     "max": 1,
+     "bolme": 4
+    },
+    "ipucu": "Paydalar aynı. Payları topla: (−1) + (+3).",
+    "aciklama": "(−1) + (+3) = +2. Sonuç [[2/4]] = [[1/2]]. (s. 83)"
+   }
+  },
+  {
+   "ad": "Önce Paydaları Eşitle",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12.0' y='16' width='30.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='42.0' y='16' width='30.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='12.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='18.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='30.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='36.0' y='62' width='6.0' height='14' fill='#6fb3ff' stroke='#f5f6fa' stroke-width='1.2'/><rect x='42.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='54.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='60.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><rect x='66.0' y='62' width='6.0' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><text x='42' y='50' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f2c14e'>=</text><text x='98' y='17' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>1</text><line x1='90.85' y1='23' x2='105.15' y2='23' stroke='#6fb3ff' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='38' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>2</text><text x='98' y='63' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>5</text><line x1='90.85' y1='69' x2='105.15' y2='69' stroke='#6fb3ff' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='84' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>10</text><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>dilimler aynı boy</text></svg>",
+   "aciklama": "Paydalar farklıysa önce genişletip paydaları eşitle. Sonra payları topla.",
+   "ek": "Farklı büyüklükteki dilimler toplanmaz; önce dilimleri aynı boya getiririz. Kitaptaki örnek: ([[-1/2]]) + ([[-1/5]]) = ([[-5/10]]) + ([[-2/10]]) = [[-7/10]]. (s. 83)",
+   "akilda": "Önce payda, sonra pay",
+   "cozum": {
+    "baslik": "Paydalar 2 ve 5",
+    "problem": "([[-1/2]]) + ([[-1/5]]) işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "Paydalar farklı. Ortak payda bul: büyük paydanın katlarını say: 5, 10. 10'u 2 de böler.",
+      "islem": "Ortak payda: 10"
+     },
+     {
+      "metin": "[[-1/2]] kesrini genişlet: 2 · 5 = 10, payı da 5 ile çarp.",
+      "islem": "[[-1/2]] = [[-5/10]]"
+     },
+     {
+      "metin": "[[-1/5]] kesrini genişlet: 5 · 2 = 10, payı da 2 ile çarp.",
+      "islem": "[[-1/5]] = [[-2/10]]"
+     },
+     {
+      "metin": "Payları topla: (−5) + (−2) = −7. Payda 10 kalır.",
+      "islem": "([[-5/10]]) + ([[-2/10]]) = [[-7/10]]"
+     }
+    ],
+    "sonuc": "([[-1/2]]) + ([[-1/5]]) = [[-7/10]]. (s. 83)"
+   },
+   "sende": {
+    "baslik": "Paydalar 4 ve 8",
+    "problem": "([[-3/4]]) + [[5/8]] işlemini yap.",
+    "adimlar": [
+     {
+      "metin": "4'ü 8 yapabiliriz: 4 · 2 = 8. Payı da 2 ile çarp.",
+      "soru": {
+       "soru": "[[-3/4]] kesrini paydası 8 olacak şekilde yaz.",
+       "cevap": "-6/8",
+       "ipucu": "3 · 2 = ? Eksiyi unutma: önce − tuşu.",
+       "aciklama": "3 · 2 = 6, 4 · 2 = 8: [[-6/8]].",
+       "kesir": true,
+       "kabul": [
+        "6/-8"
+       ]
+      },
+      "islem": "[[-3/4]] = [[-6/8]]"
+     },
+     {
+      "metin": "Payları topla: (−6) + (+5).",
+      "soru": {
+       "soru": "(−6) + (+5) kaçtır?",
+       "cevap": "-1",
+       "ipucu": "İşaretler farklı: 6 − 5. Büyük olan −6.",
+       "aciklama": "6 − 5 = 1, büyük olan −6: −1."
+      },
+      "islem": "(−6) + (+5) = −1"
+     },
+     {
+      "metin": "Payda 8 kalır.",
+      "islem": "([[-3/4]]) + [[5/8]] = [[-1/8]]"
+     }
+    ],
+    "sonuc": "Harika! Sonuç [[-1/8]]."
+   },
+   "soru": {
+    "soru": "[[1/2]] + ([[-1/4]]) kaçtır?",
+    "cevap": "1/4",
+    "ipucu": "[[1/2]] = [[2/4]]. Sonra payları topla: (+2) + (−1).",
+    "aciklama": "[[2/4]] + ([[-1/4]]) = [[1/4]]. (s. 83)",
+    "kesir": true,
+    "denk": true,
+    "yardim": {
+     "adimlar": [
+      "Paydalar 2 ve 4. 2'yi 4 yapmak için 2 ile genişlet.",
+      "[[1/2]] kaç dörtte kaç olur? Payı da 2 ile çarp.",
+      "Payları topla: (+2) + (−1). Payda 4 kalır."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Çıkarma = Tersini Ekle",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='30' cy='44' r='17' fill='#f5f6fa'/><text x='30' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#1b2340'>−</text><path d='M52 44 h18 M64 38 l7 6 -7 6' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='92' cy='44' r='17' fill='#ffa26b'/><text x='92' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#1b2340'>+</text><text x='60' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>çıkan sayının</text><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>işaretini çevir</text></svg>",
+   "aciklama": "Rasyonel sayılarda da çıkarmayı toplamaya çevir: çıkan sayının işaretini ters yap ve topla.",
+   "ek": "Tam sayılarda nasıl yapıyorsan öyle: önce çevir, sonra paydaları eşitle, sonra topla. (s. 83)",
+   "akilda": "Çıkarmayı çevir, topla",
+   "cozum": {
+    "baslik": "Kitaptaki örnek",
+    "problem": "([[-3/4]]) − ([[8/12]]) işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "Çıkan sayı +[[8/12]]. İşaretini ters çevir, toplamaya geç.",
+      "islem": "([[-3/4]]) + ([[-8/12]])"
+     },
+     {
+      "metin": "Paydaları eşitle: 4 · 3 = 12. Payı da 3 ile çarp.",
+      "islem": "[[-3/4]] = [[-9/12]]"
+     },
+     {
+      "metin": "Payları topla: (−9) + (−8). Aynı işaret: topla, eksiyi koru.",
+      "islem": "(−9) + (−8) = −17"
+     },
+     {
+      "metin": "Payda 12 kalır.",
+      "islem": "([[-3/4]]) − ([[8/12]]) = [[-17/12]]"
+     }
+    ],
+    "sonuc": "Sonuç [[-17/12]], yani [[-1 5/12]]. (s. 83)"
+   },
+   "soru": {
+    "soru": "([[-2/7]]) − ([[3/7]]) kaçtır?",
+    "secenekler": [
+     "[[1/7]]",
+     "[[-5/7]]",
+     "[[-1/7]]"
+    ],
+    "dogru": 1,
+    "ipucu": "Çıkarmayı çevir: ([[-2/7]]) + ([[-3/7]]). Aynı işaret.",
+    "aciklama": "([[-2/7]]) + ([[-3/7]]): 2 + 3 = 5, eksi kalır: [[-5/7]]. (s. 84)"
+   }
+  },
+  {
+   "ad": "Tam Sayılı Kesirler",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='24' cy='38' r='15' fill='#6fb3ff'/><circle cx='60' cy='38' r='15' fill='#6fb3ff'/><circle cx='96' cy='38' r='15' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><path d='M96 38 L96 23 A15 15 0 0 1 109 30.5 Z' fill='#6fb3ff'/><text x='20' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#6fb3ff'>−2</text><text x='42' y='80' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>1</text><line x1='35.4' y1='86' x2='48.6' y2='86' stroke='#6fb3ff' stroke-width='2.6' stroke-linecap='round'/><text x='42' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>6</text><text x='62' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>=</text><text x='86.75' y='89.25' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>−</text><text x='98' y='80' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>13</text><line x1='89.75' y1='86' x2='106.25' y2='86' stroke='#6fb3ff' stroke-width='2.6' stroke-linecap='round'/><text x='98' y='103' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>6</text></svg>",
+   "aciklama": "Tam sayılı kesirleri toplarken önce bileşik kesre çevir, sonra işlem yap. Eksi işareti sayının tamamına aittir.",
+   "ek": "Kitap ikinci bir yol da gösteriyor: tam kısımları kendi arasında, kesir kısımları kendi arasında toplamak. İkisi aynı sonucu verir; biz birinci yolu kullanacağız. (s. 84)",
+   "akilda": "Önce bileşik kesre çevir",
+   "cozum": {
+    "baslik": "Kitaptaki örnek",
+    "problem": "([[-2 1/6]]) + ([[1 2/6]]) işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "Eksiyi kenara koy: 2 · 6 + 1 = 13. Eksiyi geri ekle.",
+      "islem": "[[-2 1/6]] = [[-13/6]]"
+     },
+     {
+      "metin": "1 · 6 + 2 = 8.",
+      "islem": "[[1 2/6]] = [[8/6]]"
+     },
+     {
+      "metin": "Paydalar aynı. Payları topla: (−13) + (+8). Farklı işaret: 13 − 8 = 5, büyük olan −13.",
+      "islem": "(−13) + (+8) = −5"
+     },
+     {
+      "metin": "Payda 6 kalır.",
+      "islem": "([[-2 1/6]]) + ([[1 2/6]]) = [[-5/6]]"
+     }
+    ],
+    "sonuc": "Sonuç [[-5/6]]. (s. 84)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "([[-1 1/4]]) + [[3/4]] işlemini yap.",
+    "adimlar": [
+     {
+      "metin": "[[-1 1/4]] kesrini bileşik kesre çevir: 1 · 4 + 1.",
+      "soru": {
+       "soru": "[[-1 1/4]] bileşik kesir olarak kaçtır?",
+       "cevap": "-5/4",
+       "ipucu": "1 · 4 + 1 = ? Payda 4 kalır. Eksiyi unutma.",
+       "aciklama": "1 · 4 + 1 = 5: [[-5/4]].",
+       "kesir": true,
+       "kabul": [
+        "5/-4"
+       ]
+      },
+      "islem": "[[-1 1/4]] = [[-5/4]]"
+     },
+     {
+      "metin": "Payları topla: (−5) + (+3).",
+      "soru": {
+       "soru": "(−5) + (+3) kaçtır?",
+       "cevap": "-2",
+       "ipucu": "İşaretler farklı: 5 − 3. Büyük olan −5.",
+       "aciklama": "5 − 3 = 2, büyük olan −5: −2."
+      },
+      "islem": "= [[-2/4]]"
+     },
+     {
+      "metin": "Sonucu sadeleştir: 2 ve 4'ü 2 böler.",
+      "soru": {
+       "soru": "[[-2/4]] en sade hâliyle hangisi?",
+       "secenekler": [
+        "[[-1/2]]",
+        "[[-2/2]]",
+        "[[1/2]]"
+       ],
+       "dogru": 0,
+       "ipucu": "Pay ve paydayı 2'ye böl. Eksi kalır.",
+       "aciklama": "2 ÷ 2 = 1, 4 ÷ 2 = 2: [[-1/2]]."
+      },
+      "islem": "= [[-1/2]]"
+     }
+    ],
+    "sonuc": "Harika! ([[-1 1/4]]) + [[3/4]] = [[-1/2]]."
+   },
+   "soru": {
+    "soru": "([[-1 1/3]]) + ([[-2/3]]) kaçtır? Tam sayı olarak yaz.",
+    "cevap": "-2",
+    "ipucu": "Önce [[-1 1/3]] = [[-4/3]]. Sonra payları topla.",
+    "aciklama": "([[-4/3]]) + ([[-2/3]]) = [[-6/3]] = −2. (s. 84)",
+    "yardim": {
+     "adimlar": [
+      "[[-1 1/3]] kesrini bileşik kesre çevir: 1 · 3 + 1. Eksi kalır.",
+      "Paydalar aynı: payları topla. İkisi de eksi: aynı işaret.",
+      "Çıkan kesri tam sayıya çevir: payı paydaya böl."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Toplamanın Özellikleri",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='18' width='40' height='50' rx='8' fill='#2b355c'/><rect x='70' y='18' width='40' height='50' rx='8' fill='#2b355c'/><text x='22.75' y='43.25' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>−</text><text x='34' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>2</text><line x1='25.75' y1='40' x2='42.25' y2='40' stroke='#6fb3ff' stroke-width='2.6' stroke-linecap='round'/><text x='34' y='57' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>9</text><text x='90' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#ffa26b'>2</text><line x1='81.75' y1='40' x2='98.25' y2='40' stroke='#ffa26b' stroke-width='2.6' stroke-linecap='round'/><text x='90' y='57' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#ffa26b'>9</text><text x='60' y='50' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f2c14e'>+</text><path d='M30 74 Q60 88 90 74' stroke='#f2c14e' stroke-width='2.5' fill='none'/><circle cx='60' cy='100' r='13' fill='#f2c14e'/><text x='60' y='106' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#1b2340'>0</text></svg>",
+   "aciklama": "Toplarken sayıların yerini değiştirebilir (değişme), istediğin ikisini önce toplayabilirsin (birleşme). 0 eklemek sayıyı değiştirmez (etkisiz eleman).",
+   "ek": "Toplamları 0 olan iki sayı birbirinin tersidir (ters eleman): ([[-2/9]]) + [[2/9]] = 0. Kitaptaki örnekte ([[-2/9]] + [[1/3]]) + [[2/9]] işleminde tersler yan yana getirilir: [[1/3]] + 0 = [[1/3]]. Paydaları eşitlemeye bile gerek kalmaz. (s. 86)",
+   "akilda": "Tersini bul, 0 yap",
+   "soru": {
+    "soru": "[[-3/5]] sayısının toplama işlemine göre tersi hangisidir?",
+    "secenekler": [
+     "[[3/5]]",
+     "[[-5/3]]",
+     "0"
+    ],
+    "dogru": 0,
+    "ipucu": "Hangisiyle toplayınca sonuç 0 olur?",
+    "aciklama": "([[-3/5]]) + [[3/5]] = 0. Tersi [[3/5]]. (s. 86)"
+   }
+  },
+  {
+   "ad": "Problemde Toplama ve Çıkarma",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='36' width='62' height='11' rx='5' fill='#c98a4b'/><rect x='52' y='56' width='58' height='11' rx='5' fill='#a86f37'/><rect x='50' y='30' width='26' height='42' rx='4' fill='none' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='4 3'/><text x='60' y='94' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>üst üste</text><text x='60' y='109' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>bir kez say</text></svg>",
+   "aciklama": "Sözel problemde önce iskeleti kur: Başlangıç (0) nerede? Yön hangisi? Kaç birim? Sonra kesirleri topla ya da çıkar.",
+   "ek": "Kitaptaki dal probleminde iki dal üst üste bağlanır. Üst üste gelen kısım iki kez sayılmasın diye toplamdan çıkarılır. (s. 87)",
+   "akilda": "0? Yön? Kaç birim?",
+   "cozum": {
+    "baslik": "Dalları bağlıyoruz",
+    "problem": "Bir dal [[3/4]] m, diğeri [[1 1/2]] m. Dallar [[1/4]] m'lik kısımları üst üste gelecek biçimde bağlandı. Yeni dal kaç metre?",
+    "adimlar": [
+     {
+      "metin": "Ne veriliyor? İki dal ve üst üste gelen kısım. Ne isteniyor? Yeni dalın boyu.",
+      "islem": "[[3/4]] m, [[1 1/2]] m, üst üste [[1/4]] m"
+     },
+     {
+      "metin": "Dalları uç uca topla. [[1 1/2]] = [[3/2]] = [[6/4]].",
+      "islem": "[[3/4]] + [[6/4]] = [[9/4]]"
+     },
+     {
+      "metin": "Üst üste gelen kısım iki kez sayıldı: bir kez çıkar.",
+      "islem": "[[9/4]] − [[1/4]] = [[8/4]]"
+     },
+     {
+      "metin": "Sadeleştir: 8 ÷ 4.",
+      "islem": "[[8/4]] = 2"
+     }
+    ],
+    "sonuc": "Yeni dal 2 m. (Kitaptaki dal problemine benzer, s. 87)"
+   },
+   "sende": {
+    "baslik": "Denizaltı yükseliyor",
+    "problem": "Bir denizaltı deniz seviyesinin [[3/4]] km altına indi. Sonra [[1/8]] km yukarı çıktı. Denizaltının son konumu ne?",
+    "sayiDogrusu": {
+     "min": -1,
+     "max": 0,
+     "bolme": 8,
+     "isaretler": [
+      {
+       "x": -0.75,
+       "etiket": "−3/4",
+       "renk": "#2364c7"
+      }
+     ]
+    },
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0): deniz seviyesi. Altı eksi.",
+      "soru": {
+       "soru": "Denizaltının ilk konumunu rasyonel sayıyla yaz.",
+       "cevap": "-3/4",
+       "ipucu": "\"Altına\" eksi demek. Önce − tuşu, sonra 3, / ve 4.",
+       "aciklama": "Deniz seviyesinin [[3/4]] km altı: [[-3/4]].",
+       "kesir": true,
+       "denk": true,
+       "kabul": [
+        "3/-4"
+       ]
+      },
+      "islem": "Başlangıç: [[-3/4]]"
+     },
+     {
+      "metin": "Yön: yukarı, artı. İşlem: ([[-3/4]]) + [[1/8]]. Paydaları eşitle.",
+      "soru": {
+       "soru": "[[-3/4]] kesrinin paydası 8 olunca hangisi olur?",
+       "secenekler": [
+        "[[-6/8]]",
+        "[[-3/8]]",
+        "[[-4/8]]"
+       ],
+       "dogru": 0,
+       "ipucu": "4 · 2 = 8. Payı da 2 ile çarp.",
+       "aciklama": "3 · 2 = 6: [[-6/8]]."
+      },
+      "islem": "([[-6/8]]) + [[1/8]]"
+     },
+     {
+      "metin": "Payları topla: (−6) + (+1). Payda 8 kalır.",
+      "soru": {
+       "soru": "Son konum kaçtır? Kesir olarak yaz.",
+       "cevap": "-5/8",
+       "ipucu": "İşaretler farklı: 6 − 1. Büyük olan −6.",
+       "aciklama": "(−6) + (+1) = −5: [[-5/8]].",
+       "kesir": true,
+       "denk": true,
+       "kabul": [
+        "5/-8"
+       ]
+      },
+      "islem": "= [[-5/8]]"
+     }
+    ],
+    "sonuc": "Harika! Denizaltı deniz seviyesinin [[5/8]] km altında. (s. 82)"
+   },
+   "soru": {
+    "soru": "Bir kaplumbağa sayı doğrusunda 0'dan başlıyor. Önce [[3/4]] birim sağa, sonra [[5/4]] birim sola gidiyor. Kaplumbağanın yerine dokun.",
+    "nokta": -0.5,
+    "sayiDogrusu": {
+     "min": -2,
+     "max": 1,
+     "bolme": 4
+    },
+    "ipucu": "Sağa artı, sola eksi: [[3/4]] + ([[-5/4]]). Paydalar aynı.",
+    "aciklama": "[[3/4]] + ([[-5/4]]) = [[-2/4]] = [[-1/2]]."
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Her yıl yaklaşık 8 milyon ton atık deniz ve okyanuslara karışıyor. Ülkemizde denizleri korumak için Sıfır Atık Mavi projesi başlatıldı. (s. 82)",
+  "Denizaltı araştırma ekipleri farklı derinliklerdeki plastik yoğunluğunu ve canlıların davranışını kaydeder. Rota planlarken rasyonel sayılarla toplama ve çıkarma yaparlar. (s. 85)"
+ ],
+ "akildaKalsin": [
+  "Paydalar eşitse payları topla, payda aynı kalır.",
+  "Paydalar farklıysa önce genişletip eşitle.",
+  "Eksi işareti paya aittir; payları tam sayı kuralıyla topla.",
+  "Çıkarmayı çevir, topla: çıkan sayının işaretini ters yap.",
+  "Tam sayılı kesri önce bileşik kesre çevir.",
+  "Sayı + tersi = 0; tersleri yan yana getirmek işlemi kolaylaştırır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden paydaları toplamıyoruz?",
+   "cevap": "Payda dilimin büyüklüğünü söyler. [[1/4]] + [[2/4]] işleminde çeyrek dilimleri sayıyoruz: 1 çeyrek + 2 çeyrek = 3 çeyrek. Dilimin boyu değişmez, payda 4 kalır."
+  },
+  {
+   "soru": "Ortak paydayı nasıl bulurum?",
+   "cevap": "Büyük paydanın katlarını sırayla say (5, 10, 15, …) ve küçük paydanın da bölebildiği ilk sayıda dur. Paydaları birbiriyle çarpmak da her zaman işe yarar ama sayılar büyüyebilir."
+  },
+  {
+   "soru": "Eksi işaretini paya mı, paydaya mı yazmalıyım?",
+   "cevap": "İkisi de aynı sayıyı gösterir. Kitap, negatif rasyonel sayılarda eksinin paya dâhil olduğunu söyler; işlem yaparken eksiyi paya yazmak kolaylık sağlar. (s. 83)"
+  },
+  {
+   "soru": "Tam sayılı kesirde iki yol aynı sonucu verir mi?",
+   "cevap": "Evet. İster bileşik kesre çevir, ister tam kısımları ve kesir kısımları ayrı topla; sonuç aynıdır. (s. 84)"
+  },
+  {
+   "soru": "Önce inip sonra çıkmak ile önce çıkıp sonra inmek aynı yere mi götürür?",
+   "cevap": "Evet. Toplamada sayıların yeri değişse de sonuç değişmez; buna değişme özelliği denir. (s. 85–86)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Ayşe [[1/2]] + [[1/3]] işleminde payları ve paydaları ayrı ayrı toplayıp [[2/5]] buldu. Hatası ne? Doğru sonucu bul.",
+   "ornekCevap": "Ayşe paydaları da toplamış ama paydalar toplanmaz. Önce paydaları 6'da eşitlerim: [[3/6]] + [[2/6]] = [[5/6]].",
+   "anahtarlar": [
+    "payda",
+    "eşitle",
+    "topla",
+    "6"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "[[3/7]] + ([[-5/7]]) kaçtır?",
+   "secenekler": [
+    "[[8/7]]",
+    "[[-2/7]]",
+    "[[-2/14]]"
+   ],
+   "dogru": 1,
+   "ipucu": "Paydalar aynı. Payları topla: (+3) + (−5). Payda 7 kalır.",
+   "aciklama": "(+3) + (−5) = −2, payda 7: [[-2/7]]. Paydalar toplanmaz. (s. 84)",
+   "kavram": "Payda Aynıysa Payları Topla"
+  },
+  {
+   "soru": "([[-1/6]]) + ([[-1/3]]) kaçtır?",
+   "cevap": "-3/6",
+   "ipucu": "3'ü 6 yap: [[-1/3]] = [[-2/6]]. Sonra payları topla.",
+   "aciklama": "([[-1/6]]) + ([[-2/6]]) = [[-3/6]] = [[-1/2]]. (s. 83)",
+   "kesir": true,
+   "denk": true,
+   "kabul": [
+    "3/-6"
+   ],
+   "kavram": "Önce Paydaları Eşitle",
+   "yardim": {
+    "adimlar": [
+     "Paydalar 6 ve 3. 3'ü 6 yapmak için 2 ile genişlet.",
+     "[[-1/3]] kaç altıda kaç olur?",
+     "Payları topla: iki eksi, aynı işaret. Payda 6 kalır."
+    ]
+   }
+  },
+  {
+   "soru": "([[-1/2]]) + ([[-3/4]]) işleminin sonucuna dokun.",
+   "nokta": -1.25,
+   "sayiDogrusu": {
+    "min": -2,
+    "max": 0,
+    "bolme": 4
+   },
+   "ipucu": "[[-1/2]] = [[-2/4]]. Sonra payları topla: iki eksi.",
+   "aciklama": "([[-2/4]]) + ([[-3/4]]) = [[-5/4]] = [[-1 1/4]]. (s. 83)",
+   "kavram": "Önce Paydaları Eşitle"
+  },
+  {
+   "soru": "([[-5/6]]) − ([[-1/6]]) kaçtır?",
+   "secenekler": [
+    "[[-6/6]]",
+    "[[4/6]]",
+    "[[-4/6]]"
+   ],
+   "dogru": 2,
+   "ipucu": "Çıkarmayı çevir: ([[-5/6]]) + [[1/6]]. Farklı işaret.",
+   "aciklama": "([[-5/6]]) + [[1/6]]: 5 − 1 = 4, büyük olan −5: [[-4/6]] = [[-2/3]]. (s. 84)",
+   "kavram": "Çıkarma = Tersini Ekle"
+  },
+  {
+   "soru": "[[9/2]] − [[10/2]] kaçtır?",
+   "cevap": "-1/2",
+   "ipucu": "Çıkarmayı çevir: [[9/2]] + ([[-10/2]]). Paydalar aynı.",
+   "aciklama": "(+9) + (−10) = −1, payda 2: [[-1/2]]. (s. 84)",
+   "kesir": true,
+   "denk": true,
+   "kabul": [
+    "1/-2"
+   ],
+   "kavram": "Çıkarma = Tersini Ekle",
+   "yardim": {
+    "adimlar": [
+     "Çıkarmayı çevir: [[9/2]] + ([[-10/2]]).",
+     "Paydalar aynı. Payları topla: (+9) + (−10).",
+     "Payda 2 kalır. Sonuç eksiyse önce − tuşuna dokun."
+    ]
+   }
+  },
+  {
+   "soru": "([[-2 1/5]]) + ([[1 3/5]]) kaçtır?",
+   "secenekler": [
+    "[[-3/5]]",
+    "[[3/5]]",
+    "[[-3 4/5]]"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce bileşik kesre çevir: [[-11/5]] ve [[8/5]].",
+   "aciklama": "([[-11/5]]) + [[8/5]]: 11 − 8 = 3, büyük olan −11: [[-3/5]]. (s. 84)",
+   "kavram": "Tam Sayılı Kesirler"
+  },
+  {
+   "soru": "Hangisinde toplama işleminin ters eleman özelliği kullanılmıştır?",
+   "secenekler": [
+    "[[4/9]] + 0 = [[4/9]]",
+    "([[-4/9]]) + [[4/9]] = 0",
+    "[[1/9]] + [[4/9]] = [[4/9]] + [[1/9]]"
+   ],
+   "dogru": 1,
+   "ipucu": "Ters eleman: toplamları 0 olan iki sayı.",
+   "aciklama": "([[-4/9]]) + [[4/9]] = 0: ters eleman. 0 eklemek etkisiz eleman, yer değiştirmek değişme özelliğidir. (s. 86)",
+   "kavram": "Toplamanın Özellikleri"
+  },
+  {
+   "soru": "Termometre [[1/2]] °C gösteriyor. Sıcaklık [[3/2]] °C düştü. Yeni sıcaklığa dokun.",
+   "nokta": -1,
+   "sayiDogrusu": {
+    "min": -2,
+    "max": 2,
+    "bolme": 2
+   },
+   "ipucu": "Başlangıç [[1/2]]. Düşüş eksi: [[1/2]] + ([[-3/2]]). Paydalar aynı.",
+   "aciklama": "(+1) + (−3) = −2: [[-2/2]] = −1 °C.",
+   "kavram": "Problemde Toplama ve Çıkarma"
+  },
+  {
+   "soru": "Bir dalgıç deniz seviyesinin [[5/2]] m altında. [[3/4]] m yukarı çıktı. Yeni konumunu kesir olarak yaz.",
+   "cevap": "-7/4",
+   "ipucu": "Başlangıç [[-5/2]], yukarı artı: ([[-5/2]]) + [[3/4]]. Paydaları 4'te eşitle.",
+   "aciklama": "([[-10/4]]) + [[3/4]]: 10 − 3 = 7, büyük olan −10: [[-7/4]] m. (Kitaptaki denizaltı bağlamı, s. 85)",
+   "kesir": true,
+   "denk": true,
+   "kabul": [
+    "7/-4"
+   ],
+   "birim": "m",
+   "kavram": "Problemde Toplama ve Çıkarma",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç (0): deniz seviyesi. Altı eksi: [[-5/2]].",
+     "Yön: yukarı, artı: + [[3/4]].",
+     "Paydaları 4'te eşitle: [[-5/2]] = [[-10/4]].",
+     "Payları topla: (−10) + (+3). Payda 4 kalır."
+    ]
+   }
+  },
+  {
+   "soru": "Denizaltı önce [[7/3]] km aşağı inip sonra [[5/9]] km yukarı çıkıyor. Bir başkası önce [[5/9]] km çıkıp sonra [[7/3]] km iniyor. Hangisi doğrudur?",
+   "secenekler": [
+    "Birincisi daha derine iner",
+    "İkincisi daha derine iner",
+    "İkisi aynı yere varır"
+   ],
+   "dogru": 2,
+   "ipucu": "Toplamada sayıların yeri değişirse sonuç değişir mi?",
+   "aciklama": "([[-7/3]]) + [[5/9]] = [[5/9]] + ([[-7/3]]). Değişme özelliği: ikisi aynı yere varır. (s. 85)",
+   "kavram": "Toplamanın Özellikleri"
+  }
+ ]
+}

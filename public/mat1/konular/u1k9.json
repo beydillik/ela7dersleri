@@ -1,0 +1,707 @@
+{
+ "id": "u1k9",
+ "unite": "1. Tema: Sayılar ve Nicelikler",
+ "baslik": "Rasyonel Sayılarla Çarpma",
+ "sayfalar": "s. 88–95",
+ "giris": "Kesirleri çarpmayı ve eksi sayılarla çarpmayı biliyorsun. Bu konuda ikisini birleştiriyoruz. Çarpmanın güzel yanı: paydaları eşitlemek yok! Köstebek, bayram harçlığı ve halı bize yardım edecek.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu kesirlerde çarpma, tam sayılarda çarpmanın işareti, tam sayılı kesirler ve sadeleştirme üzerine kuruluyor. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Kesirlerde çarpma",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='10' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='10' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='10' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='24' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='24' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='24' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='38' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='38' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='38' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='52' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='52' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='52' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='66' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='66' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='66' width='24' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#ffa26b'>8 / 15</text></svg>",
+    "anlatim": "Kesirleri çarparken payı payla, paydayı paydayla çarparız: [[2/3]] · [[4/5]] = [[8/15]].",
+    "akilda": "Pay paya, payda paydaya",
+    "ornek": {
+     "problem": "[[1/2]] · [[3/4]] kaçtır?",
+     "adimlar": [
+      {
+       "metin": "Payları çarp: 1 · 3.",
+       "islem": "Pay: 3"
+      },
+      {
+       "metin": "Paydaları çarp: 2 · 4.",
+       "islem": "[[1/2]] · [[3/4]] = [[3/8]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[2/5]] · [[1/3]] kaçtır?",
+      "cevap": "2/15",
+      "ipucu": "Payları çarp: 2 · 1. Paydaları çarp: 5 · 3.",
+      "aciklama": "2 · 1 = 2, 5 · 3 = 15: [[2/15]].",
+      "kesir": true
+     },
+     {
+      "soru": "[[3/4]] · [[1/2]] kaçtır?",
+      "cevap": "3/8",
+      "ipucu": "Payları çarp: 3 · 1. Paydaları çarp: 4 · 2.",
+      "aciklama": "3 · 1 = 3, 4 · 2 = 8: [[3/8]].",
+      "kesir": true
+     }
+    ]
+   },
+   {
+    "ad": "Çarpmada işaret",
+    "sinif": "7. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#9aa3bf'>·</text><text x='70' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='30' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='30' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><path d='M18 42 h96 M44 14 v96' stroke='#5a6280' stroke-width='2'/><rect x='57' y='45' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='70' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#6fb3ff'>−</text><text x='70' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#6fb3ff'>−</text><rect x='85' y='77' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='98' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text></svg>",
+    "anlatim": "Aynı işaretli iki sayının çarpımı artı, farklı işaretli iki sayının çarpımı eksidir.",
+    "akilda": "Aynı artı, farklı eksi",
+    "ornek": {
+     "problem": "(−4) · 3 kaçtır?",
+     "adimlar": [
+      {
+       "metin": "Önce işaretsiz çarp: 4 · 3.",
+       "islem": "4 · 3 = 12"
+      },
+      {
+       "metin": "İşaretler farklı → eksi.",
+       "islem": "(−4) · 3 = −12"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "(−6) · (−5) kaçtır?",
+      "cevap": "30",
+      "ipucu": "Önce 6 · 5. İşaretler aynı mı?",
+      "aciklama": "6 · 5 = 30. İki eksi: aynı işaret → +30."
+     },
+     {
+      "soru": "(+7) · (−3) kaçtır?",
+      "secenekler": [
+       "+21",
+       "−21",
+       "−10"
+      ],
+      "dogru": 1,
+      "ipucu": "Önce 7 · 3. İşaretler farklı.",
+      "aciklama": "7 · 3 = 21. Farklı işaret → −21."
+     }
+    ]
+   },
+   {
+    "ad": "Tam sayılı kesir → bileşik kesir",
+    "sinif": "2. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='40' r='15' fill='#ffa26b'/><circle cx='60' cy='40' r='15' fill='#ffa26b'/><path d='M94 40 L94 25 A15 15 0 1 1 79 40 Z' fill='#ffa26b'/><circle cx='94' cy='40' r='15' fill='none' stroke='#f5f6fa' stroke-width='1.5'/><path d='M94 25 V55 M79 40 H109' stroke='#1b2340' stroke-width='1.6'/><text x='34' y='80' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>11</text><line x1='25.75' y1='86' x2='42.25' y2='86' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='34' y='103' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>4</text><text x='60' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>=</text><text x='78' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>2</text><text x='94' y='80' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>3</text><line x1='85.75' y1='86' x2='102.25' y2='86' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='94' y='103' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>4</text></svg>",
+    "anlatim": "Tam kısmı payda ile çarp, payı ekle; payda aynı kalır: [[2 3/4]] = [[11/4]]. Eksi sayının tamamına aittir: [[-1 1/2]] = [[-3/2]].",
+    "akilda": "Tam · payda + pay",
+    "ornek": {
+     "problem": "[[1 2/5]] sayısını bileşik kesre çevirelim.",
+     "adimlar": [
+      {
+       "metin": "Tam kısmı payda ile çarp, payı ekle: 1 · 5 + 2.",
+       "islem": "1 · 5 + 2 = 7"
+      },
+      {
+       "metin": "Payda 5 kalır.",
+       "islem": "[[1 2/5]] = [[7/5]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[2 1/3]] sayısını bileşik kesir olarak yaz.",
+      "cevap": "7/3",
+      "ipucu": "2 · 3 + 1 = ? Payda 3 kalır.",
+      "aciklama": "2 · 3 + 1 = 7: [[7/3]].",
+      "kesir": true
+     },
+     {
+      "soru": "[[-1 3/4]] sayısını bileşik kesir olarak yaz.",
+      "cevap": "-7/4",
+      "ipucu": "Eksiyi kenara koy: 1 · 4 + 3 = ? Sonra eksiyi geri ekle.",
+      "aciklama": "1 · 4 + 3 = 7: [[-7/4]].",
+      "kesir": true,
+      "kabul": [
+       "7/-4"
+      ]
+     }
+    ]
+   },
+   {
+    "ad": "Sadeleştirme",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='46' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='60' y='18' width='46' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='14' y='56' width='23' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='37' y='56' width='23' height='26' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.5'/><rect x='60' y='56' width='23' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><rect x='83' y='56' width='23' height='26' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.5'/><text x='36' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>1/2</text><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>=</text><text x='86' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>2/4</text></svg>",
+    "anlatim": "Pay ve paydayı aynı sayıya bölersek kesir sadeleşir; değer değişmez: [[6/8]] = [[3/4]].",
+    "akilda": "Pay da payda da aynı sayıya",
+    "ornek": {
+     "problem": "[[10/15]] kesrini sadeleştirelim.",
+     "adimlar": [
+      {
+       "metin": "10 ve 15'i birlikte bölen sayı: 5.",
+       "islem": "10 ÷ 5 = 2, 15 ÷ 5 = 3"
+      },
+      {
+       "metin": "Yeni kesri yaz.",
+       "islem": "[[10/15]] = [[2/3]]"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "[[12/18]] kesrinin en sade hâlini yaz.",
+      "cevap": "2/3",
+      "ipucu": "12 ve 18'i birlikte bölen en büyük sayı 6.",
+      "aciklama": "12 ÷ 6 = 2, 18 ÷ 6 = 3: [[2/3]].",
+      "kesir": true
+     },
+     {
+      "soru": "[[9/12]] en sade hâliyle hangisidir?",
+      "secenekler": [
+       "[[3/4]]",
+       "[[3/6]]",
+       "[[9/4]]"
+      ],
+      "dogru": 0,
+      "ipucu": "9 ve 12'yi 3 böler.",
+      "aciklama": "9 ÷ 3 = 3, 12 ÷ 3 = 4: [[3/4]]."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Pay Paya, Payda Paydaya",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='10' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='10' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='10' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='24' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='24' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='24' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='38' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='38' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='38' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='52' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='52' width='24' height='14' fill='#ffa26b' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='52' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='24' y='66' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='48' y='66' width='24' height='14' fill='#3a4570' stroke='#f5f6fa' stroke-width='1.2'/><rect x='72' y='66' width='24' height='14' fill='#2b355c' stroke='#f5f6fa' stroke-width='1.2'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#ffa26b'>8 / 15</text></svg>",
+   "aciklama": "Rasyonel sayıları çarparken payları çarpıp paya, paydaları çarpıp paydaya yaz. Paydaları eşitlemeye gerek yok!",
+   "ek": "Kitaptaki örnek: [[4/7]] · [[2/3]] = [[8/21]]. Toplamadan farklı olarak paydalar eşit olmak zorunda değil. (s. 90)",
+   "akilda": "Pay paya, payda paydaya",
+   "cozum": {
+    "baslik": "İlk çarpım",
+    "problem": "[[2/3]] · [[4/5]] işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "Payları çarp: 2 · 4.",
+      "islem": "Pay: 8"
+     },
+     {
+      "metin": "Paydaları çarp: 3 · 5.",
+      "islem": "Payda: 15"
+     },
+     {
+      "metin": "Yeni kesri yaz.",
+      "islem": "[[2/3]] · [[4/5]] = [[8/15]]"
+     },
+     {
+      "metin": "Sadeleşir mi? 8 ile 15'i birlikte bölen sayı yok.",
+      "islem": "[[8/15]] en sade"
+     }
+    ],
+    "sonuc": "[[2/3]] · [[4/5]] = [[8/15]]. (s. 90)"
+   },
+   "soru": {
+    "soru": "[[3/4]] · [[5/7]] kaçtır?",
+    "cevap": "15/28",
+    "ipucu": "Payları çarp: 3 · 5. Paydaları çarp: 4 · 7.",
+    "aciklama": "3 · 5 = 15, 4 · 7 = 28: [[15/28]]. (s. 90)",
+    "kesir": true,
+    "yardim": {
+     "adimlar": [
+      "Sadeleşen var mı? Üstteki 3, 5 ile alttaki 4, 7 arasında ortak bölen yok.",
+      "Payları çarp: 3 · 5.",
+      "Paydaları çarp: 4 · 7."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "İşaret Tam Sayılardaki Gibi",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#9aa3bf'>·</text><text x='70' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='98' y='34' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='30' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>+</text><text x='30' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><path d='M18 42 h96 M44 14 v96' stroke='#5a6280' stroke-width='2'/><text x='70' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#ffa26b'>+</text><rect x='85' y='45' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='98' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><rect x='57' y='77' width='26' height='26' rx='7' fill='none' stroke='#f2c14e' stroke-width='2.5'/><text x='70' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='98' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='16' fill='#ffa26b'>+</text></svg>",
+   "aciklama": "Önce işareti belirle: aynı işaret artı, farklı işaret eksi. Sonra işaretsiz kesirleri çarp.",
+   "ek": "Kitaptaki örnekler: ([[-6/11]]) · [[3/7]] = [[-18/77]] ve ([[-8/13]]) · ([[-1/3]]) = [[8/39]]. (s. 90)",
+   "akilda": "Önce işaret, sonra kesir",
+   "cozum": {
+    "baslik": "Köstebek kazıyor",
+    "problem": "Bir köstebek dakikada [[3/25]] m derine iniyor. 4 dakika sonra yer seviyesine göre nerede?",
+    "adimlar": [
+     {
+      "metin": "Başlangıç (0): yer seviyesi. Aşağı eksidir.",
+      "islem": "Her dakika: [[-3/25]]"
+     },
+     {
+      "metin": "4 dakika boyunca: 4 kere. Bu bir çarpma.",
+      "islem": "4 · ([[-3/25]])"
+     },
+     {
+      "metin": "İşaret: artı · eksi → eksi.",
+      "islem": "Sonuç eksi"
+     },
+     {
+      "metin": "4'ü [[4/1]] gibi düşün. Payları çarp: 4 · 3 = 12; payda 25.",
+      "islem": "4 · ([[-3/25]]) = [[-12/25]]"
+     }
+    ],
+    "sonuc": "Köstebek yer seviyesinin [[12/25]] m altında: [[-12/25]] m. (s. 88)"
+   },
+   "sende": {
+    "baslik": "İki eksi",
+    "problem": "([[-2/3]]) · ([[-5/7]]) işlemini yap.",
+    "adimlar": [
+     {
+      "metin": "Önce işaret: eksi · eksi.",
+      "soru": {
+       "soru": "Sonucun işareti ne olur?",
+       "secenekler": [
+        "Artı",
+        "Eksi",
+        "Sıfır"
+       ],
+       "dogru": 0,
+       "ipucu": "İşaretler aynı mı, farklı mı?",
+       "aciklama": "İki eksi: aynı işaret → artı."
+      },
+      "islem": "Aynı işaret → artı"
+     },
+     {
+      "metin": "Şimdi işaretsiz çarp: payları 2 · 5, paydaları 3 · 7.",
+      "soru": {
+       "soru": "[[2/3]] · [[5/7]] kaçtır?",
+       "cevap": "10/21",
+       "ipucu": "2 · 5 = ? 3 · 7 = ?",
+       "aciklama": "2 · 5 = 10, 3 · 7 = 21: [[10/21]].",
+       "kesir": true
+      },
+      "islem": "([[-2/3]]) · ([[-5/7]]) = [[10/21]]"
+     }
+    ],
+    "sonuc": "Harika! İki eksinin çarpımı artı: [[10/21]]."
+   },
+   "soru": {
+    "soru": "([[-1/6]]) · [[1/3]] kaçtır?",
+    "secenekler": [
+     "[[1/18]]",
+     "[[-1/18]]",
+     "[[-2/9]]"
+    ],
+    "dogru": 1,
+    "ipucu": "Önce işaret: eksi · artı. Sonra 1 · 1 ve 6 · 3.",
+    "aciklama": "Farklı işaret → eksi. 1 · 1 = 1, 6 · 3 = 18: [[-1/18]]. (s. 90)"
+   }
+  },
+  {
+   "ad": "Önce Çapraz Sadeleştir",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='34' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#f5f6fa'>5</text><line x1='18' y1='54' x2='50' y2='54' stroke='#f5f6fa' stroke-width='2.6'/><text x='34' y='78' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#f5f6fa'>1</text><text x='60' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f2c14e'>·</text><text x='74' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#6fb3ff'>−</text><text x='96' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#6fb3ff'>3</text><line x1='82' y1='54' x2='110' y2='54' stroke='#6fb3ff' stroke-width='2.6'/><text x='96' y='78' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#6fb3ff'>25</text><path d='M40 34 L28 46 M108 66 L84 80' stroke='#f2c14e' stroke-width='2.5'/><path d='M42 42 L84 70' stroke='#f2c14e' stroke-width='2' stroke-dasharray='4 3'/><text x='22' y='24' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>1</text><text x='108' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>5</text></svg>",
+   "aciklama": "Çarpmadan önce bir paydaki sayı ile bir paydadaki sayıyı aynı sayıya böl. Sayılar küçülür, işlem kolaylaşır; sonuç en sade çıkar.",
+   "ek": "Kitapta köstebeğin 5 dakikadaki konumu iki yolla bulunuyor: önce çarpıp sonra sadeleştirmek ya da çarparken 5 ile 25'i 5'e bölmek. İkisi de [[-3/5]] verir; ikinci yol daha kısa. Biz hep ikinci yolu kullanacağız. (s. 89)",
+   "akilda": "Önce sadeleştir, sonra çarp",
+   "cozum": {
+    "baslik": "Köstebek 5 dakika kazıyor",
+    "problem": "5 · ([[-3/25]]) işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "Önce işaret: artı · eksi → eksi.",
+      "islem": "Sonuç eksi"
+     },
+     {
+      "metin": "5'i [[5/1]] yaz. Üstte 5, altta 25 var. İkisini de 5 böler.",
+      "islem": "5 ÷ 5 = 1, 25 ÷ 5 = 5"
+     },
+     {
+      "metin": "Küçülmüş sayılarla çarp: pay 1 · 3, payda 1 · 5.",
+      "islem": "[[1/1]] · [[3/5]] = [[3/5]]"
+     },
+     {
+      "metin": "İşareti koy.",
+      "islem": "5 · ([[-3/25]]) = [[-3/5]]"
+     }
+    ],
+    "sonuc": "Köstebek 5 dakikada yer seviyesinin [[3/5]] m altına iner. (s. 89)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "[[4/9]] · ([[-3/8]]) işlemini yap.",
+    "adimlar": [
+     {
+      "metin": "Önce işaret: artı · eksi → eksi.",
+      "islem": "Sonuç eksi"
+     },
+     {
+      "metin": "Üstteki 4 ile alttaki 8'i sadeleştir.",
+      "soru": {
+       "soru": "4 ile 8'i hangi sayıya bölelim?",
+       "secenekler": [
+        "3",
+        "4",
+        "9"
+       ],
+       "dogru": 1,
+       "ipucu": "Hem 4'ü hem 8'i bölen en büyük sayı hangisi?",
+       "aciklama": "4 ÷ 4 = 1, 8 ÷ 4 = 2."
+      },
+      "islem": "4 → 1, 8 → 2"
+     },
+     {
+      "metin": "Üstteki 3 ile alttaki 9'u 3 böler.",
+      "soru": {
+       "soru": "3 ve 9, 3'e bölününce ne olur?",
+       "secenekler": [
+        "1 ve 3",
+        "3 ve 9",
+        "1 ve 9"
+       ],
+       "dogru": 0,
+       "ipucu": "3 ÷ 3 = ? 9 ÷ 3 = ?",
+       "aciklama": "3 ÷ 3 = 1, 9 ÷ 3 = 3."
+      },
+      "islem": "3 → 1, 9 → 3"
+     },
+     {
+      "metin": "Şimdi çarp: pay 1 · 1, payda 3 · 2.",
+      "soru": {
+       "soru": "Sonuç kaçtır? İşareti unutma.",
+       "cevap": "-1/6",
+       "ipucu": "Pay 1 · 1, payda 3 · 2. Önce − tuşu.",
+       "aciklama": "1 · 1 = 1, 3 · 2 = 6: [[-1/6]].",
+       "kesir": true,
+       "kabul": [
+        "1/-6"
+       ]
+      },
+      "islem": "= [[-1/6]]"
+     }
+    ],
+    "sonuc": "Harika! Sayılar küçüldü, sonuç zaten en sade: [[-1/6]]."
+   },
+   "soru": {
+    "soru": "[[5/12]] · [[6/25]] kaçtır? En sade hâliyle yaz.",
+    "cevap": "1/10",
+    "ipucu": "Çapraz bak: 5 ile 25'i 5 böler, 6 ile 12'yi 6 böler.",
+    "aciklama": "5 → 1, 25 → 5; 6 → 1, 12 → 2. [[1/2]] · [[1/5]] = [[1/10]]. (s. 90)",
+    "kesir": true,
+    "yardim": {
+     "adimlar": [
+      "Çapraz bak: üstteki 5 ile alttaki 25'i 5 böler.",
+      "Üstteki 6 ile alttaki 12'yi 6 böler.",
+      "Küçülen sayıları çarp: pay payla, payda paydayla."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Tam Sayılı Kesri Önce Çevir",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='20' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='24' fill='#f5f6fa'>2</text><text x='40' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>1</text><line x1='32.3' y1='52' x2='47.7' y2='52' stroke='#f5f6fa' stroke-width='2.6' stroke-linecap='round'/><text x='40' y='68' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>2</text><path d='M54 54 h14 M63 49 l6 5 -6 5' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='92' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>5</text><line x1='81.0' y1='50' x2='103.0' y2='50' stroke='#ffa26b' stroke-width='2.6' stroke-linecap='round'/><text x='92' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#ffa26b'>2</text><text x='60' y='106' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>önce çevir</text></svg>",
+   "aciklama": "Tam sayılı kesirle çarpmadan önce onu bileşik kesre çevir. Tam kısımları ve kesirleri ayrı çarpmak yanlış sonuç verir.",
+   "ek": "Kitaptaki örnek: ([[-1 1/5]]) · [[2 3/6]] = ([[-6/5]]) · [[15/6]] = −3. (s. 90)",
+   "akilda": "Önce bileşik kesir",
+   "cozum": {
+    "baslik": "Tam sayılı kesirle çarpma",
+    "problem": "([[-1 1/2]]) · [[4/9]] işlemini yapalım.",
+    "adimlar": [
+     {
+      "metin": "Çevir: 1 · 2 + 1 = 3. Eksi tamamına ait.",
+      "islem": "[[-1 1/2]] = [[-3/2]]"
+     },
+     {
+      "metin": "İşaret: eksi · artı → eksi.",
+      "islem": "Sonuç eksi"
+     },
+     {
+      "metin": "Çapraz sadeleştir: 3 ile 9'u 3'e, 4 ile 2'yi 2'ye böl.",
+      "islem": "[[1/1]] · [[2/3]]"
+     },
+     {
+      "metin": "Çarp ve işareti koy.",
+      "islem": "([[-1 1/2]]) · [[4/9]] = [[-2/3]]"
+     }
+    ],
+    "sonuc": "Sonuç [[-2/3]]. (s. 90)"
+   },
+   "soru": {
+    "soru": "[[2 1/2]] · [[2/5]] kaçtır?",
+    "secenekler": [
+     "1",
+     "[[4 2/10]]",
+     "[[4/5]]"
+    ],
+    "dogru": 0,
+    "ipucu": "Önce [[2 1/2]] = [[5/2]]. Sonra çapraz sadeleştir.",
+    "aciklama": "[[5/2]] · [[2/5]]: 5 ile 5, 2 ile 2 sadeleşir: 1. (s. 90)"
+   }
+  },
+  {
+   "ad": "Bir Sayının Kesrini Bulma",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='18' cy='40' r='9' fill='#f2c14e' stroke='#f2c14e' stroke-width='2'/><circle cx='39' cy='40' r='9' fill='#2b355c' stroke='#f2c14e' stroke-width='2'/><circle cx='60' cy='40' r='9' fill='#2b355c' stroke='#f2c14e' stroke-width='2'/><circle cx='81' cy='40' r='9' fill='#2b355c' stroke='#f2c14e' stroke-width='2'/><circle cx='102' cy='40' r='9' fill='#2b355c' stroke='#f2c14e' stroke-width='2'/><path d='M8 56 q10 8 20 0' stroke='#f2c14e' stroke-width='2' fill='none'/><text x='18' y='70' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>1</text><line x1='11.399999999999999' y1='76' x2='24.6' y2='76' stroke='#f2c14e' stroke-width='2.6' stroke-linecap='round'/><text x='18' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>5</text><text x='78' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f5f6fa'>’i = ·</text></svg>",
+   "aciklama": "Bir çokluğun [[1/5]]'ini bulmak, o çokluğu [[1/5]] ile çarpmaktır. Harcama, azalma gibi kelimeler varsa değişim eksi olur.",
+   "ek": "Kitaptaki örnek: Yiğit 1800 TL harçlığının [[1/5]]'ini kitaba harcadı: 1800 · ([[-1/5]]) = −360. Parası 360 TL azaldı. (s. 91)",
+   "akilda": "Sayının kesri: çarp",
+   "cozum": {
+    "baslik": "Bayram harçlığı",
+    "problem": "Yiğit'in 1800 TL harçlığı var. [[1/5]]'ini kitaba, [[2/9]]'unu sinemaya harcadı. Kalanı kumbarasına attı. Kumbarasına kaç TL attı?",
+    "adimlar": [
+     {
+      "metin": "Ne veriliyor? 1800 TL, [[1/5]]'i kitap, [[2/9]]'u sinema. Ne isteniyor? Kalan para.",
+      "islem": "Başlangıç: 1800 TL"
+     },
+     {
+      "metin": "Kitap: harcama eksidir. 1800 ile 5'i sadeleştir: 1800 ÷ 5 = 360.",
+      "islem": "1800 · ([[-1/5]]) = −360"
+     },
+     {
+      "metin": "Sinema: 1800 ÷ 9 = 200, sonra 200 · 2.",
+      "islem": "1800 · ([[-2/9]]) = −400"
+     },
+     {
+      "metin": "Değişimleri başlangıca ekle.",
+      "islem": "1800 + (−360) + (−400) = 1040"
+     }
+    ],
+    "sonuc": "Yiğit kumbarasına 1040 TL attı. (s. 91)"
+   },
+   "sende": {
+    "baslik": "Desenli halı",
+    "problem": "Alanı 16 m² olan bir halının [[3/8]]'ine yeni desen işlendi. Desenli alan kaç m²?",
+    "adimlar": [
+     {
+      "metin": "\"[[3/8]]'ine\" ne demek?",
+      "soru": {
+       "soru": "Hangi işlem yapılır?",
+       "secenekler": [
+        "16 + [[3/8]]",
+        "16 · [[3/8]]",
+        "16 − [[3/8]]"
+       ],
+       "dogru": 1,
+       "ipucu": "'i, 'ine eki görünce hangi işlemi düşünüyoruz?",
+       "aciklama": "'ine demek çarpmak: 16 · [[3/8]]."
+      },
+      "islem": "16 · [[3/8]]"
+     },
+     {
+      "metin": "Çapraz sadeleştir: 16 ile 8'i 8 böler: 16 → 2, 8 → 1.",
+      "soru": {
+       "soru": "16 · [[3/8]] kaçtır?",
+       "cevap": "6",
+       "ipucu": "16 → 2, 8 → 1. Şimdi 2 · 3.",
+       "aciklama": "2 · 3 = 6.",
+       "birim": "m²"
+      },
+      "islem": "2 · 3 = 6"
+     }
+    ],
+    "sonuc": "Harika! Desenli alan 6 m². (s. 89)"
+   },
+   "soru": {
+    "soru": "Bir sınıfta 30 öğrenci var. Öğrencilerin [[2/5]]'i gözlüklü. Kaç öğrenci gözlüklü?",
+    "cevap": "12",
+    "ipucu": "'i demek çarp: 30 · [[2/5]]. 30 ile 5'i sadeleştir.",
+    "aciklama": "30 ÷ 5 = 6, 6 · 2 = 12 öğrenci.",
+    "yardim": {
+     "adimlar": [
+      "'i demek çarp: 30 · [[2/5]].",
+      "Çapraz sadeleştir: 30 ile 5'i 5 böler.",
+      "Küçülen sayıları çarp."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Çarpmanın Özellikleri",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f5f6fa'>x · 1 = x</text><text x='60' y='82' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f2c14e'>x · 0 = 0</text><path d='M22 98 h76' stroke='#5a6280' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Çarparken sayıların yerini değiştirebilir, istediğin ikisini önce çarpabilirsin. 1 ile çarpmak sayıyı değiştirmez, 0 ile çarpmak sonucu 0 yapar.",
+   "ek": "Çarpımları 1 olan iki sayı birbirinin tersidir: [[2/7]] · [[7/2]] = 1. Dağılma: 24 · ([[3/8]] + [[1/3]]) = 24 · [[3/8]] + 24 · [[1/3]] = 9 + 8 = 17. (s. 93–94)",
+   "akilda": "1 korur, 0 yutar",
+   "soru": {
+    "soru": "[[-5/3]] sayısının çarpma işlemine göre tersi hangisidir?",
+    "secenekler": [
+     "[[5/3]]",
+     "[[-3/5]]",
+     "0"
+    ],
+    "dogru": 1,
+    "ipucu": "Hangisiyle çarpınca sonuç 1 olur? İşaret de aynı kalmalı.",
+    "aciklama": "([[-5/3]]) · ([[-3/5]]) = [[15/15]] = 1. (s. 94)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Köstebekler yaşamlarının çoğunu yer altında geçirir; güçlü ön ayaklarıyla toprağı hızla kazıp tüneller açarlar. (s. 88)",
+  "Bulut bilişimde dosyalar genel ağda saklanır. Bilgisayar bozulsa bile veriler zarar görmez. (s. 92)"
+ ],
+ "akildaKalsin": [
+  "Pay paya, payda paydaya: paydaları eşitlemeye gerek yok.",
+  "İşaret tam sayılardaki gibi: aynı artı, farklı eksi.",
+  "Önce çapraz sadeleştir, sonra çarp.",
+  "Tam sayılı kesri önce bileşik kesre çevir.",
+  "Bir sayının [[2/5]]'i = o sayı · [[2/5]].",
+  "1 ile çarpmak sayıyı korur, 0 ile çarpmak 0 yapar."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Çarpınca sayı hep büyür mü?",
+   "cevap": "Hayır. 1'den küçük bir kesirle çarparsan sonuç küçülür: 16 · [[3/8]] = 6. 16'nın bir parçasını almış olursun. (s. 89)"
+  },
+  {
+   "soru": "Çarpmada neden paydaları eşitlemiyoruz?",
+   "cevap": "Çünkü çarpmada parçaları yan yana koymuyoruz, bir parçanın parçasını alıyoruz. Paylar ve paydalar kendi aralarında çarpılır. (s. 90)"
+  },
+  {
+   "soru": "Çapraz sadeleştirmede hangi sayılar sadeleşir?",
+   "cevap": "Bir paydaki sayı ile bir paydadaki sayı; aynı kesirde de olabilir, çaprazda da. İki payı ya da iki paydayı birbiriyle sadeleştiremezsin."
+  },
+  {
+   "soru": "Bir sayı ile tersinin çarpımı neden 1?",
+   "cevap": "[[2/7]] · [[7/2]] = [[14/14]] = 1. Pay ile payda yer değiştirince hepsi sadeleşir. (s. 94)"
+  },
+  {
+   "soru": "0 ile çarpınca neden 0 çıkıyor?",
+   "cevap": "Kitaptaki yükleme aracı dakikada [[5/2]] GB aktarıyor; hiç çalıştırılmazsa hiç veri aktarılmaz: [[5/2]] · 0 = 0. (s. 92)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Ali [[2 1/2]] · [[2 1/3]] işleminde tamları ve kesirleri ayrı çarpıp [[4 1/6]] buldu. Doğru mu? Doğru sonucu bul.",
+   "ornekCevap": "Yanlış. Tam sayılı kesirler önce bileşik kesre çevrilir: [[5/2]] · [[7/3]] = [[35/6]] = [[5 5/6]].",
+   "anahtarlar": [
+    "bileşik",
+    "çevir",
+    "35",
+    "yanlış"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "([[-4/5]]) · [[3/7]] kaçtır?",
+   "secenekler": [
+    "[[-12/35]]",
+    "[[12/35]]",
+    "[[-7/12]]"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce işaret: eksi · artı. Sonra 4 · 3 ve 5 · 7.",
+   "aciklama": "Farklı işaret → eksi. 4 · 3 = 12, 5 · 7 = 35: [[-12/35]]. (s. 90)",
+   "kavram": "İşaret Tam Sayılardaki Gibi"
+  },
+  {
+   "soru": "([[-2/3]]) · ([[-3/4]]) kaçtır? En sade hâliyle yaz.",
+   "cevap": "1/2",
+   "ipucu": "İki eksi → artı. Çapraz sadeleştir: 3 ile 3, 2 ile 4.",
+   "aciklama": "3 → 1, 3 → 1; 2 → 1, 4 → 2. [[1/1]] · [[1/2]] = [[1/2]]. (s. 90)",
+   "kesir": true,
+   "kavram": "Önce Çapraz Sadeleştir",
+   "yardim": {
+    "adimlar": [
+     "Önce işaret: eksi · eksi → aynı işaret.",
+     "Çapraz sadeleştir: üstteki 3 ile alttaki 3; üstteki 2 ile alttaki 4.",
+     "Küçülen sayıları çarp."
+    ]
+   }
+  },
+  {
+   "soru": "[[1/2]] · ([[-3/2]]) işleminin sonucuna dokun.",
+   "nokta": -0.75,
+   "sayiDogrusu": {
+    "min": -2,
+    "max": 1,
+    "bolme": 4
+   },
+   "ipucu": "Farklı işaret → eksi. 1 · 3 = 3, 2 · 2 = 4.",
+   "aciklama": "[[1/2]] · ([[-3/2]]) = [[-3/4]]. (s. 90)",
+   "kavram": "İşaret Tam Sayılardaki Gibi"
+  },
+  {
+   "soru": "[[3/5]] · [[2/7]] kaçtır?",
+   "secenekler": [
+    "[[6/35]]",
+    "[[5/12]]",
+    "[[6/12]]"
+   ],
+   "dogru": 0,
+   "ipucu": "Payları çarp, paydaları çarp. Toplamıyoruz!",
+   "aciklama": "3 · 2 = 6, 5 · 7 = 35: [[6/35]]. (s. 90)",
+   "kavram": "Pay Paya, Payda Paydaya"
+  },
+  {
+   "soru": "([[-1 1/3]]) · [[3/8]] kaçtır?",
+   "secenekler": [
+    "[[-3/8]]",
+    "[[-1 1/8]]",
+    "[[-1/2]]"
+   ],
+   "dogru": 2,
+   "ipucu": "Önce [[-1 1/3]] = [[-4/3]]. Sonra çapraz sadeleştir.",
+   "aciklama": "([[-4/3]]) · [[3/8]]: 3 ile 3, 4 ile 8 sadeleşir: [[-1/2]]. (s. 90)",
+   "kavram": "Tam Sayılı Kesri Önce Çevir"
+  },
+  {
+   "soru": "Yiğit 600 TL harçlığının [[1/4]]'ünü harcadı. Parasındaki değişimi tam sayıyla yaz.",
+   "cevap": "-150",
+   "ipucu": "Harcamak eksidir: 600 · ([[-1/4]]).",
+   "aciklama": "600 ÷ 4 = 150. Harcama eksi: −150 TL. (s. 91)",
+   "birim": "TL",
+   "kavram": "Bir Sayının Kesrini Bulma",
+   "yardim": {
+    "adimlar": [
+     "Başlangıç: 600 TL. Harcamak eksidir: 600 · ([[-1/4]]).",
+     "600'ün dörtte biri: 600 ÷ 4.",
+     "İşareti unutma: önce − tuşu."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisinde çarpma işleminin yutan eleman özelliği vardır?",
+   "secenekler": [
+    "[[3/4]] · 1 = [[3/4]]",
+    "[[3/4]] · [[4/3]] = 1",
+    "[[3/4]] · 0 = 0"
+   ],
+   "dogru": 2,
+   "ipucu": "Yutan eleman her şeyi kendine çevirir. Hangi sayı?",
+   "aciklama": "0 ile çarpım 0'dır: yutan eleman. 1 etkisiz eleman, [[4/3]] tersidir. (s. 94)",
+   "kavram": "Çarpmanın Özellikleri"
+  },
+  {
+   "soru": "Bir köstebek dakikada [[1/4]] m derine iniyor. 6 dakika sonraki konumuna sayı doğrusunda dokun.",
+   "nokta": -1.5,
+   "sayiDogrusu": {
+    "min": -2,
+    "max": 0,
+    "bolme": 4
+   },
+   "ipucu": "Aşağı eksi: 6 · ([[-1/4]]). 6 tane çeyrek sola say.",
+   "aciklama": "6 · ([[-1/4]]) = [[-6/4]] = [[-1 2/4]], yani −1,5 m. (s. 88)",
+   "kavram": "İşaret Tam Sayılardaki Gibi"
+  },
+  {
+   "soru": "Bir halının alanı 12 m². Robot süpürge halının [[3/4]]'ünü süpürdü. Süpürülmeyen kısım kaç m²?",
+   "cevap": "3",
+   "ipucu": "Önce süpürülen kısmı bul: 12 · [[3/4]]. Sonra 12'den çıkar.",
+   "aciklama": "12 · [[3/4]] = 9 m² süpürüldü. 12 − 9 = 3 m² kaldı. (Kitaptaki robot süpürge problemine benzer, s. 95)",
+   "birim": "m²",
+   "kavram": "Bir Sayının Kesrini Bulma",
+   "yardim": {
+    "adimlar": [
+     "Ne isteniyor? Süpürülmeyen kısım.",
+     "Süpürülen kısım: 12 · [[3/4]]. 12 ile 4'ü sadeleştir.",
+     "Halının tamamından süpürülen kısmı çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "24 · ([[3/8]] + [[1/3]]) kaçtır?",
+   "cevap": "17",
+   "ipucu": "Dağılma özelliği: 24 · [[3/8]] + 24 · [[1/3]].",
+   "aciklama": "24 · [[3/8]] = 9, 24 · [[1/3]] = 8. 9 + 8 = 17. (s. 93)",
+   "kavram": "Çarpmanın Özellikleri",
+   "yardim": {
+    "adimlar": [
+     "Dağılma özelliği: 24 · [[3/8]] + 24 · [[1/3]].",
+     "24 · [[3/8]]: 24 ile 8'i sadeleştir.",
+     "24 · [[1/3]]: 24 ile 3'ü sadeleştir.",
+     "İki sonucu topla."
+    ]
+   }
+  }
+ ]
+}
