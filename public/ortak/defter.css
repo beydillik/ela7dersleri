@@ -593,6 +593,7 @@ a.head-btn { text-decoration: none; display: inline-flex; align-items: center; }
 .kesir { display: inline-grid; text-align: center; font-size: .82em; line-height: 1.05; margin: 0 2px; vertical-align: middle; }
 .kesir > span:first-child { border-bottom: 2px solid currentColor; padding: 0 3px 1px; }
 .kesir > span:last-child { padding: 1px 3px 0; }
+sup.us { font-size: .68em; font-weight: 800; vertical-align: super; line-height: 0; margin-left: .06em; }  /* üs: [[u:4]] */
 .devir { text-decoration: overline; text-decoration-thickness: 2px; text-underline-offset: 0; text-decoration-skip-ink: none; }  /* devirli ondalık: [[d:6]] */
 /* Sayı doğrusu */
 .sd-wrap { overflow-x: auto; padding: 4px 0; }

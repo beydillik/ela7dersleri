@@ -50,6 +50,7 @@
     return ({ 0: "da", 1: "de", 2: "de", 3: "te", 4: "te", 5: "te", 6: "da", 7: "de", 8: "de", 9: "da" })[d]; };
   const mathSay = s => String(s)
     .replace(/(\d*),(\d*)\[\[d:(\d+)\]\]/g, (m, a, b, c) => `${a || "0"} virgül ${b ? b + " " : ""}devreden ${c}`).replace(/\[\[d:(\d+)\]\]/g, " devreden $1")
+    .replace(/\[\[u:(\d+|n)\]\]/g, " üssü $1")
     .replace(/\[\[(-?)(?:(\d+) )?([-−]?\d+)\/(-?\d+)\]\]/g, (m, sg, w, a, b) => `${sg ? "eksi " : ""}${w ? w + " tam " : ""}${b.replace("-", "eksi ")}'${BULUNMA(b.replace("-", ""))} ${a.replace(/[-−]/, "eksi ")}`)
     .replace(/\|([^|]{1,12})\|/g, "mutlak değer $1")
     .replace(/(^|[\s(=:,;])[-−](\d)/g, "$1eksi $2").replace(/(^|[\s(=:,;])\+(\d)/g, "$1artı $2")
@@ -105,10 +106,12 @@
   const FR_RE = /\[\[(-?)(?:(\d+) )?([-−]?\d+)\/(-?\d+)\]\]/g;  // [[-9/3]] eksi kesrin önünde, [[−9/3]] (U+2212) payda, [[9/-3]] paydada
   // Devirli ondalık: 0,1[[d:6]] → devreden rakamların üstü çizili (0,16̄); sesli okumada "0 virgül 1 devreden 6".
   const DV_RE = /\[\[d:(\d+)\]\]/g;
-  const fx = h => h.replace(DV_RE, '<span class="devir">$1</span>').replace(FR_RE, (m, s, w, a, b) => `<span class="kesir-w">${s ? "−" : ""}${w || ""}<span class="kesir"><span>${a.replace("-", "−")}</span><span>${b.replace("-", "−")}</span></span></span>`);
+  // Üs: 5[[u:4]], ([[2/3]])[[u:5]] → üst simge; sesli okumada "5 üssü 4"; oyunlarda Unicode üst simge (5⁴).
+  const US_RE = /\[\[u:(\d+|n)\]\]/g, USTK = { 0: "⁰", 1: "¹", 2: "²", 3: "³", 4: "⁴", 5: "⁵", 6: "⁶", 7: "⁷", 8: "⁸", 9: "⁹", n: "ⁿ" };
+  const fx = h => h.replace(US_RE, '<sup class="us">$1</sup>').replace(DV_RE, '<span class="devir">$1</span>').replace(FR_RE, (m, s, w, a, b) => `<span class="kesir-w">${s ? "−" : ""}${w || ""}<span class="kesir"><span>${a.replace("-", "−")}</span><span>${b.replace("-", "−")}</span></span></span>`);
   // Metin içi {{İngilizce}} parçaları: renkli gösterilir, dokununca okunur.
   const rx = s => fx(esc(s).replace(EN_RE, (m, t) => `<span class="en" lang="en" role="button" tabindex="0" data-say-en="${t}">${t}</span>`));
-  const plain = s => String(s ?? "").replace(EN_RE, "$1").replace(DV_RE, (m, d) => d.replace(/\d/g, "$&\u0305")).replace(FR_RE, (m, s_, w, a, b) => `${s_}${w ? w + " " : ""}${a}/${b}`);
+  const plain = s => String(s ?? "").replace(EN_RE, "$1").replace(US_RE, (m, u) => [...u].map(c => USTK[c]).join("")).replace(DV_RE, (m, d) => d.replace(/\d/g, "$&\u0305")).replace(FR_RE, (m, s_, w, a, b) => `${s_}${w ? w + " " : ""}${a}/${b}`);
   document.addEventListener("click", e => {
     const e1 = e.target.closest("[data-say-en]"); if (e1) { e.stopPropagation(); tts.sayEn(e1.dataset.sayEn, e1.hasAttribute("data-slow")); return; }
     const b = e.target.closest("[data-say]"); if (b) tts.say(b.dataset.say);

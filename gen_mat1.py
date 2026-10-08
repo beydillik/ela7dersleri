@@ -2524,6 +2524,216 @@ def u1k9():
     }
 
 
+# ---------- u1k10 Üslü İfadeler ----------
+# Üs yazımı: metinde 5[[u:4]], ([[2/3]])[[u:5]] → ekranda üst simge, sesli okumada "5 üssü 4". SVG içinde Unicode üst simge.
+def svg10_bakteri():
+    g = "<circle cx='20' cy='48' r='9' fill='#5fd08f'/>"
+    g += "<circle cx='54' cy='38' r='8' fill='#5fd08f'/><circle cx='54' cy='58' r='8' fill='#5fd08f'/>"
+    for x, y in [(86, 36), (104, 36), (86, 58), (104, 58)]:
+        g += f"<circle cx='{x}' cy='{y}' r='7' fill='#5fd08f'/>"
+    g += "<path d='M32 48 h10 M38 44 l4 4 -4 4 M66 48 h8 M70 44 l4 4 -4 4' stroke='#f5f6fa' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/>"
+    g += txt(20, 82, "1", "#f5f6fa", 13) + txt(54, 82, "2", "#f5f6fa", 13) + txt(95, 82, "4", "#f5f6fa", 13)
+    g += txt(60, 106, "2 · 2 = 2²", "#f2c14e", 15)
+    return bg(g)
+
+
+def svg10_taban():
+    return bg(txt(48, 84, "5", "#f5f6fa", 60) + txt(80, 50, "4", OB, 28)
+              + txt(48, 106, "taban", NB, 12) + txt(94, 24, "üs", OB, 13) + txt(98, 84, "= 625", "#f2c14e", 13))
+
+
+def svg10_top():
+    g = "<line x1='8' y1='100' x2='112' y2='100' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/>"
+    g += f"<circle cx='16' cy='20' r='7' fill='{OB}'/>"
+    g += "<path d='M16 28 L24 98 Q42 30 60 98 Q72 60 84 98 Q92 78 100 98' stroke='#f2c14e' stroke-width='2.5' fill='none' stroke-linejoin='round'/>"
+    g += txt(42, 32, "1/2", "#f5f6fa", 11) + txt(72, 58, "1/4", "#f5f6fa", 11) + txt(94, 74, "1/8", "#f5f6fa", 10)
+    return bg(g)
+
+
+def svg10_isaret():
+    return bg(txt(60, 38, f"({M}2)² = +4", OB, 15) + txt(60, 66, f"({M}2)³ = {M}8", NB, 15)
+              + "<path d='M22 80 h76' stroke='#5a6280' stroke-width='2' stroke-linecap='round'/>"
+              + txt(36, 102, "çift +", OB, 13) + txt(86, 102, f"tek {M}", NB, 13))
+
+
+def svg10_ozel():
+    return bg(txt(60, 36, "1⁹ = 1", "#f5f6fa", 17) + txt(60, 66, "0⁷ = 0", "#f2c14e", 17) + txt(60, 96, "8¹ = 8", OB, 17))
+
+
+def svg10_parantez():
+    return bg(txt(60, 42, f"({M}3)² = 9", OB, 17) + txt(60, 68, "≠", "#f2c14e", 20) + txt(60, 96, f"{M}3² = {M}9", NB, 17))
+
+
+def u1k10():
+    sd = lambda mn, mx, **ek: dict({"min": mn, "max": mx}, **ek)
+    return {
+        "id": "u1k10", "unite": "1. Tema: Sayılar ve Nicelikler", "baslik": "Üslü İfadeler", "sayfalar": "s. 96–101",
+        "giris": "Aynı sayıyı tekrar tekrar çarpmanın kısa bir yazılışı var: üslü ifade. Çoğalan bakteriler, zıplayan bir top ve harita uygulaması bize yardım edecek. Bu konuda sadece çarpma var!",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Üslü ifadeler art arda çarpmaya, çarpmada işarete ve kesirlerde çarpmaya dayanıyor. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Art arda çarpma", "sinif": "Önceki yıllar", "svg": svg6_tekrar(),
+                 "anlatim": "Çok sayıyı çarparken soldan başla, ikişer ikişer çarp: 2 · 3 · 4 = 6 · 4 = 24.",
+                 "akilda": "İkişer ikişer çarp",
+                 "ornek": {"problem": "5 · 5 · 5 kaçtır?", "adimlar": [
+                     {"metin": "İlk ikisini çarp: 5 · 5.", "islem": "5 · 5 = 25"},
+                     {"metin": "Sonucu kalan 5 ile çarp.", "islem": "25 · 5 = 125"}]},
+                 "sorular": [
+                     G("3 · 3 · 3 kaçtır?", "27", "Önce 3 · 3. Sonra çıkan sayıyı 3 ile çarp.", "3 · 3 = 9, 9 · 3 = 27."),
+                     G("2 · 2 · 2 · 2 kaçtır?", "16", "İkişer ikişer: 2 · 2 = 4, sonra 4 · 2, sonra bir daha · 2.", "2 · 2 = 4, 4 · 2 = 8, 8 · 2 = 16.")]},
+                {"ad": "Çok çarpanda eksileri say", "sinif": "7. konu", "svg": svg6_eksileri(),
+                 "anlatim": "Çarpımda eksi işaretlerini say. Eksi sayısı çiftse sonuç artı, tekse sonuç eksi olur.",
+                 "akilda": "Çift eksi artı, tek eksi eksi",
+                 "ornek": {"problem": f"({M}2) · ({M}3) · ({M}1) kaçtır?", "adimlar": [
+                     {"metin": "Eksileri say: 3 tane. 3 tek sayı.", "islem": "Sonuç eksi"},
+                     {"metin": "İşaretsiz çarp: 2 · 3 · 1.", "islem": f"({M}2) · ({M}3) · ({M}1) = {M}6"}]},
+                 "sorular": [
+                     S(f"({M}1) · ({M}1) · ({M}1) çarpımının işareti nedir?", ["Artı", "Eksi", "Sıfır"], 1, "Kaç tane eksi var? Çift mi, tek mi?", "3 eksi var, 3 tek: sonuç eksi, −1."),
+                     G(f"({M}2) · ({M}2) kaçtır?", "4", "İşaretsiz çarp: 2 · 2. İki eksi: çift.", "2 · 2 = 4. İki eksi → artı: +4.")]},
+                {"ad": "Kesirlerde çarpma", "sinif": "9. konu", "svg": svg9_alan(),
+                 "anlatim": "Kesirleri çarparken payı payla, paydayı paydayla çarparız: [[2/3]] · [[2/3]] = [[4/9]].",
+                 "akilda": "Pay paya, payda paydaya",
+                 "ornek": {"problem": "[[1/2]] · [[1/2]] kaçtır?", "adimlar": [
+                     {"metin": "Payları çarp: 1 · 1.", "islem": "Pay: 1"},
+                     {"metin": "Paydaları çarp: 2 · 2.", "islem": "[[1/2]] · [[1/2]] = [[1/4]]"}]},
+                 "sorular": [
+                     G("[[1/3]] · [[1/3]] kaçtır?", "1/9", "Payları çarp: 1 · 1. Paydaları çarp: 3 · 3.", "1 · 1 = 1, 3 · 3 = 9: [[1/9]].", kesir=True),
+                     G("[[2/5]] · [[2/5]] kaçtır?", "4/25", "Payları çarp: 2 · 2. Paydaları çarp: 5 · 5.", "2 · 2 = 4, 5 · 5 = 25: [[4/25]].", kesir=True)]}
+            ]},
+        "kavramlar": [
+            {"ad": "Tekrarlı Çarpımı Kısalt", "renk": "#1f9e8f", "svg": svg10_bakteri(),
+             "aciklama": "Bir sayı kendisiyle tekrar tekrar çarpılıyorsa kısaca üslü ifade olarak yazarız: 5 · 5 · 5 · 5 = 5[[u:4]]. Sayıyı bir kez yaz, kaç kere çarpıldığını sağ üst köşeye küçük yaz.",
+             "ek": "Dikkat: 5[[u:4]], 5 · 4 değildir! 5[[u:4]] = 5 · 5 · 5 · 5 = 625, ama 5 · 4 = 20. (s. 98)",
+             "akilda": "Kaç kere çarpıldı? Üste yaz",
+             "cozum": {"baslik": "Bakteriler çoğalıyor",
+                       "problem": "Bir bakteri her 30 dakikada ikiye bölünüyor. Başta 1 bakteri var. 2 saat sonra kaç bakteri olur?",
+                       "adimlar": [
+                           {"metin": "2 saat = 120 dakika. 30 dakikalık kaç parça var?", "islem": "120 ÷ 30 = 4 bölünme"},
+                           {"metin": "Her bölünmede sayı 2 katına çıkıyor: 4 kere · 2.", "islem": "1 · 2 · 2 · 2 · 2"},
+                           {"metin": "2 sayısı 4 kere çarpılıyor. Kısa yazalım.", "islem": "2 · 2 · 2 · 2 = 2[[u:4]]"},
+                           {"metin": "Değerini bul: ikişer ikişer çarp.", "islem": "2 · 2 = 4, 4 · 2 = 8, 8 · 2 = 16"}],
+                       "sonuc": "2 saat sonra 16 bakteri olur: 2[[u:4]] = 16. (Kitaptaki bakteri etkinliğine benzer, s. 96)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "5 · 5 · 5 çarpımını üslü ifade olarak yaz ve değerini bul.",
+                       "adimlar": [
+                           {"metin": "Tekrar tekrar çarpılan sayı hangisi?",
+                            "soru": S("Tekrar eden sayı hangisi?", ["3", "5", "15"], 1, "Çarpımda hangi sayıyı tekrar tekrar görüyorsun?", "Tekrar eden sayı 5."),
+                            "islem": "Sayı: 5"},
+                           {"metin": "5 kaç kere çarpılıyor? Say.",
+                            "soru": G("5 kaç kere çarpılıyor?", "3", "5'leri tek tek say.", "Üç tane 5 var."),
+                            "islem": "5 · 5 · 5 = 5[[u:3]]"},
+                           {"metin": "Değerini bul: önce 5 · 5, sonra · 5.",
+                            "soru": G("5[[u:3]] kaçtır?", "125", "5 · 5 = 25. Şimdi 25 · 5.", "25 · 5 = 125."),
+                            "islem": "5[[u:3]] = 125"}],
+                       "sonuc": "Harika! 5 · 5 · 5 = 5[[u:3]] = 125."},
+             "soru": S("3 · 3 · 3 · 3 çarpımının üslü gösterimi hangisidir?", ["3[[u:4]]", "4[[u:3]]", "3 · 4"], 0,
+                       "Hangi sayı tekrar ediyor? Kaç kere?", "3 sayısı 4 kere çarpılıyor: 3[[u:4]]. (s. 99)")},
+            {"ad": "Taban, Üs ve Değer", "renk": "#7b4fc9", "svg": svg10_taban(),
+             "aciklama": "5[[u:4]] = 625 ifadesinde tekrar tekrar çarpılan 5'e taban, kaç kere çarpıldığını gösteren 4'e üs (kuvvet), sonuca da üslü ifadenin değeri denir.",
+             "ek": "5[[u:4]] \"beş üssü dört\" ya da \"beşin dördüncü kuvveti\" diye okunur. (s. 98)",
+             "akilda": "Taban altta, üs üstte",
+             "soru": G("2[[u:5]] kaçtır?", "32", "Taban 2, üs 5: 2 sayısını 5 kere çarp.",
+                       "2 · 2 · 2 · 2 · 2: 4, 8, 16, 32. (s. 101)")},
+            {"ad": "Kesrin Kuvveti", "renk": "#e8590c", "svg": svg10_top(),
+             "aciklama": "Taban kesir olabilir. O zaman kesri parantez içine yazarız. Payın da paydanın da kuvveti alınır: ([[2/3]])[[u:2]] = [[2/3]] · [[2/3]] = [[4/9]].",
+             "ek": "Kitaptaki örnek: ([[2/3]])[[u:5]] = [[32/243]]. 1'den küçük bir kesrin kuvveti alındıkça sayı küçülür. (s. 98)",
+             "akilda": "Pay da payda da kuvvetlenir",
+             "cozum": {"baslik": "Zıplayan top",
+                       "problem": "Bir top her yere çarpışta, önceki yüksekliğinin yarısı kadar yükseliyor. 3. çarpıştan sonra, ilk yüksekliğin kaçta kaçına çıkar?",
+                       "adimlar": [
+                           {"metin": "Her çarpışta yükseklik [[1/2]] ile çarpılıyor.", "islem": "1. çarpış: [[1/2]]"},
+                           {"metin": "3 çarpış: [[1/2]] üç kere çarpılıyor. Kısa yazalım.", "islem": "[[1/2]] · [[1/2]] · [[1/2]] = ([[1/2]])[[u:3]]"},
+                           {"metin": "Pay: 1 · 1 · 1.", "islem": "Pay: 1"},
+                           {"metin": "Payda: 2 · 2 · 2.", "islem": "([[1/2]])[[u:3]] = [[1/8]]"}],
+                       "sonuc": "Top ilk yüksekliğin [[1/8]]'ine çıkar. (s. 97)"},
+             "sende": {"baslik": "Harita büyüyor",
+                       "problem": "Bir harita uygulamasında \"+\" tuşuna her basınca ekrandaki uzunluk [[3/2]] katına çıkıyor. Tuşa 2 kez basınca uzunluk ilk uzunluğun kaç katı olur?",
+                       "adimlar": [
+                           {"metin": "2 kez basınca [[3/2]] iki kere çarpılır.",
+                            "soru": S("Hangi ifade doğru?", ["([[3/2]])[[u:2]]", "[[3/2]] · 2", "[[3/2]] + [[3/2]]"], 0, "Her basışta çarpıyoruz. Aynı kesir kaç kere çarpılıyor?", "[[3/2]] · [[3/2]] = ([[3/2]])[[u:2]]."),
+                            "islem": "([[3/2]])[[u:2]]"},
+                           {"metin": "Pay: 3 · 3. Payda: 2 · 2.",
+                            "soru": G("([[3/2]])[[u:2]] kaçtır?", "9/4", "3 · 3 = ? 2 · 2 = ?", "3 · 3 = 9, 2 · 2 = 4: [[9/4]].", kesir=True),
+                            "islem": "([[3/2]])[[u:2]] = [[9/4]]"}],
+                       "sonuc": "Harika! Uzunluk ilk uzunluğun [[9/4]] katı olur. Başta 8 cm ise 8 · [[9/4]] = 18 cm olur. (Kitaptaki harita etkinliğine benzer, s. 99)"},
+             "soru": G("([[1/2]])[[u:3]] kaçtır?", "1/8", "Pay: 1 · 1 · 1. Payda: 2 · 2 · 2.",
+                       "1 · 1 · 1 = 1, 2 · 2 · 2 = 8: [[1/8]]. (s. 97)", kesir=True)},
+            {"ad": "Eksi Taban: Çift Artı, Tek Eksi", "renk": "#3274d6", "svg": svg10_isaret(),
+             "aciklama": "Taban artıysa her kuvveti artıdır. Taban eksiyse eksileri say: üs çiftse sonuç artı, üs tekse sonuç eksi.",
+             "ek": f"({M}2)[[u:3]] = ({M}2) · ({M}2) · ({M}2) = {M}8: 3 eksi, tek. ({M}2)[[u:4]] = +16: 4 eksi, çift. (s. 100)",
+             "akilda": "Çift üs artı, tek üs eksi",
+             "cozum": {"baslik": "İşareti önce bul",
+                       "problem": f"({M}2)[[u:4]] ve ({M}2)[[u:5]] kaçtır?",
+                       "adimlar": [
+                           {"metin": f"({M}2)[[u:4]]: dört tane ({M}2) çarpılıyor. 4 çift sayı.", "islem": "İşaret: artı"},
+                           {"metin": "İşaretsiz değer: 2[[u:4]] = 16.", "islem": f"({M}2)[[u:4]] = +16"},
+                           {"metin": f"({M}2)[[u:5]]: beş tane ({M}2). 5 tek sayı.", "islem": "İşaret: eksi"},
+                           {"metin": "İşaretsiz değer: 2[[u:5]] = 32.", "islem": f"({M}2)[[u:5]] = {M}32"}],
+                       "sonuc": "Önce üsse bak, işareti bul; sonra işaretsiz hesapla. (s. 100)"},
+             "soru": N(f"({M}2)[[u:3]] kaçtır? Sayı doğrusunda dokun.", -8, sd(-8, 2),
+                       "Üs 3: tek mi, çift mi? Sonra 2 · 2 · 2.", f"3 tek: sonuç eksi. 2 · 2 · 2 = 8: ({M}2)[[u:3]] = {M}8. (s. 100)")},
+            {"ad": "Özel Tabanlar: 1, 0 ve Üs 1", "renk": "#b7791f", "svg": svg10_ozel(),
+             "aciklama": "1'in her kuvveti 1'dir. 0'ın kuvvetleri 0'dır. Üs 1 ise sayı kendisi kalır.",
+             "ek": f"Kitaptaki örnekler: 1[[u:2025]] = 1, 0[[u:7]] = 0, 1919[[u:1]] = 1919. ({M}1)'in kuvvetleri ya 1 ya {M}1 olur: ({M}1)[[u:19]] = {M}1, çünkü 19 tek. (s. 101)",
+             "akilda": "1 hep 1, 0 hep 0",
+             "soru": S("1[[u:2025]] kaçtır?", ["2025", "1", "0"], 1,
+                       "1'i kendisiyle kaç kere çarparsan çarp, ne olur?", "1 · 1 · 1 · … = 1. (s. 101)")},
+            {"ad": "Parantez Fark Yaratır", "renk": "#c92a2a", "svg": svg10_parantez(),
+             "aciklama": f"({M}3)[[u:2]] demek iki tane ({M}3)'ün çarpımı: +9. {M}3[[u:2]] demek önce 3[[u:2]], sonra başına eksi: {M}9.",
+             "ek": "Parantez yoksa üs sadece hemen önündeki sayıya aittir; eksi işareti kuvvete katılmaz. (s. 101, Dikkat kutusu)",
+             "akilda": "Parantez yoksa eksi dışarıda",
+             "cozum": {"baslik": "İki ifade aynı mı?",
+                       "problem": f"({M}3)[[u:2]] ile {M}3[[u:2]] ifadelerini karşılaştıralım.",
+                       "adimlar": [
+                           {"metin": f"Parantez var: taban {M}3. İki tane ({M}3) çarpılır.", "islem": f"({M}3) · ({M}3) = +9"},
+                           {"metin": "Parantez yok: üs sadece 3'e ait.", "islem": "3[[u:2]] = 3 · 3 = 9"},
+                           {"metin": "Eksi işareti en sonda başa gelir.", "islem": f"{M}3[[u:2]] = {M}9"},
+                           {"metin": "Sonuçları karşılaştır.", "islem": f"+9 ≠ {M}9"}],
+                       "sonuc": "Parantezin yeri sonucu değiştirir. (s. 101)"},
+             "soru": S(f"{M}4[[u:2]] kaçtır?", ["16", f"{M}16", f"{M}8"], 1,
+                       "Parantez var mı? Yoksa üs sadece 4'e ait.", f"Parantez yok: 4[[u:2]] = 16, başına eksi: {M}16. (s. 101)")}
+        ],
+        "biliyorMusun": [
+            "Telefon ve bilgisayarların depolama kapasiteleri genellikle 2'nin kuvvetleridir: 8, 16, 32, 64… (s. 98)",
+            "Yoğurt ve turşuda faydalı bakteriler vardır. Uygun ortamda bakteriler katlanarak, yani üssel olarak çoğalır. (s. 96, 98)"],
+        "akildaKalsin": [
+            "Tekrarlı çarpımı üslü yaz: 5 · 5 · 5 · 5 = 5[[u:4]].",
+            "Taban tekrar eden sayı, üs kaç kere çarpıldığı.",
+            "5[[u:4]], 5 · 4 değildir!",
+            "Kesrin kuvvetinde pay da payda da kuvvetlenir.",
+            "Eksi tabanda çift üs artı, tek üs eksi.",
+            f"({M}3)[[u:2]] = +9 ama {M}3[[u:2]] = {M}9."],
+        "merakKutusu": [
+            {"soru": "Bilgisayarların hafızası neden hep 8, 16, 32, 64 gibi sayılar?", "cevap": "Bu sayılar 2'nin kuvvetleridir: 2[[u:3]] = 8, 2[[u:4]] = 16, 2[[u:5]] = 32, 2[[u:6]] = 64. Depolama birimleri genellikle böyle büyür. (s. 98)"},
+            {"soru": "Üssel büyüme ne demek?", "cevap": "Bir değerin her adımda aynı miktar eklenerek değil, katlanarak değişmesidir. Bakteri sayısı 1, 2, 4, 8, 16… diye çok hızlı büyür. (s. 98)"},
+            {"soru": "Kesrin kuvvetini alınca sayı neden küçülüyor?", "cevap": "1'den küçük bir kesirle çarpınca sayının bir parçasını alırız. Top her zıplayışta yarıya iner: [[1/2]], [[1/4]], [[1/8]]… (s. 97)"},
+            {"soru": "Radyoaktif maddeler nasıl azalır?", "cevap": "Bazı radyoaktif maddelerin miktarı zamanla kendiliğinden yarıya iner. Bu azalma da üssel olur. (s. 98)"},
+            {"soru": f"({M}1)'in kuvvetleri neden hep 1 ya da {M}1?", "cevap": f"1 · 1 hep 1 olur; sadece işaret değişir. Üs çiftse +1, tekse {M}1: ({M}1)[[u:28]] = 1, ({M}1)[[u:29]] = {M}1. (s. 101)"}],
+        "dusunVeYaz": [{"soru": f"Ece, \"({M}2)[[u:6]] ile {M}2[[u:6]] aynı sayıdır\" dedi. Haklı mı? Açıkla.",
+                        "ornekCevap": f"Haklı değil. ({M}2)[[u:6]]'da taban {M}2; 6 tane eksi var, 6 çift → +64. {M}2[[u:6]]'da parantez yok, üs sadece 2'ye ait: 2[[u:6]] = 64, başına eksi → {M}64.",
+                        "anahtarlar": ["parantez", "64", "çift", "taban"]}],
+        "sorular": [
+            S("7 · 7 · 7 · 7 · 7 çarpımının üslü gösterimi hangisidir?", ["7[[u:5]]", "5[[u:7]]", "7 · 5"], 0,
+              "Taban tekrar eden sayı, üs kaç kere çarpıldığı.", "7 sayısı 5 kere çarpılıyor: 7[[u:5]]. (s. 99)"),
+            G("4[[u:3]] kaçtır?", "64", "4'ü 3 kere çarp: 4 · 4 · 4.", "4 · 4 = 16, 16 · 4 = 64. (s. 101)"),
+            S("6[[u:2]] ifadesinde taban ve üs hangisidir?", ["Taban 2, üs 6", "Taban 6, üs 2", "Taban 6, üs 6"], 1,
+              "Büyük yazılan sayı taban, sağ üstteki küçük sayı üs.", "Taban 6, üs 2: 6 · 6 = 36. (s. 98)"),
+            G("([[2/3]])[[u:2]] kaçtır?", "4/9", "Pay: 2 · 2. Payda: 3 · 3.", "2 · 2 = 4, 3 · 3 = 9: [[4/9]]. (s. 98)", kesir=True),
+            N(f"({M}1)[[u:5]] kaçtır? Sayı doğrusunda dokun.", -1, sd(-3, 3),
+              "Taban eksi, üs 5. 5 tek mi, çift mi?", f"5 tek: sonuç eksi. 1 · 1 · 1 · 1 · 1 = 1: ({M}1)[[u:5]] = {M}1. (s. 101)"),
+            S("Hangisinin değeri eksidir?", ["5[[u:3]]", f"({M}5)[[u:2]]", f"({M}5)[[u:3]]"], 2,
+              "Taban artıysa sonuç hep artı. Taban eksiyse üs tek mi, çift mi?", f"({M}5)[[u:3]]: taban eksi, üs 3 tek → eksi: {M}125. (s. 100)"),
+            S("0[[u:7]] + 1[[u:7]] kaçtır?", ["0", "7", "1"], 2,
+              "0'ın her kuvveti 0, 1'in her kuvveti 1.", "0[[u:7]] = 0, 1[[u:7]] = 1. 0 + 1 = 1. (s. 101)"),
+            G(f"{M}2[[u:4]] kaçtır?", "-16", "Parantez yok: üs sadece 2'ye ait.", f"2[[u:4]] = 16. Başına eksi: {M}16. (s. 101)"),
+            N("([[-1/2]])[[u:2]] kaçtır? Sayı doğrusunda dokun.", 0.25, sd(-1, 1, bolme=4),
+              "Taban eksi, üs 2 çift: sonuç artı. Pay 1 · 1, payda 2 · 2.", "Çift üs → artı. [[1/2]] · [[1/2]] = [[1/4]]. (s. 101)"),
+            G("Bir bakteri her 30 dakikada ikiye bölünüyor. Başta 1 bakteri var. 3 saat sonra kaç bakteri olur?", "64",
+              "3 saatte kaç tane 30 dakika var? Her seferinde 2 ile çarp.", "3 saat = 6 kere 30 dakika. 2[[u:6]] = 64 bakteri. (s. 96)")]
+    }
+
+
 # =================================================================
 # Ara Duraklar (konu tarama): kapsanan konuların özeti + konuları birleştiren yeni sorular.
 # Motor ayrıca kapsanan konuların kendi sorularından "eskiSoru" kadarını (zorlanılan kavramlar önce) ekler.
@@ -2683,7 +2893,7 @@ def u1t3():
 
 
 TARAMALAR = [u1t1, u1t2, u1t3]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9] + TARAMALAR
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
@@ -2709,6 +2919,8 @@ TEST_KAVRAM = {
              "Tam Sayılı Kesirler", "Toplamanın Özellikleri", "Problemde Toplama ve Çıkarma", "Problemde Toplama ve Çıkarma", "Toplamanın Özellikleri"],
     "u1k9": ["İşaret Tam Sayılardaki Gibi", "Önce Çapraz Sadeleştir", "İşaret Tam Sayılardaki Gibi", "Pay Paya, Payda Paydaya", "Tam Sayılı Kesri Önce Çevir",
              "Bir Sayının Kesrini Bulma", "Çarpmanın Özellikleri", "İşaret Tam Sayılardaki Gibi", "Bir Sayının Kesrini Bulma", "Çarpmanın Özellikleri"],
+    "u1k10": ["Tekrarlı Çarpımı Kısalt", "Taban, Üs ve Değer", "Taban, Üs ve Değer", "Kesrin Kuvveti", "Eksi Taban: Çift Artı, Tek Eksi",
+              "Eksi Taban: Çift Artı, Tek Eksi", "Özel Tabanlar: 1, 0 ve Üs 1", "Parantez Fark Yaratır", "Eksi Taban: Çift Artı, Tek Eksi", "Tekrarlı Çarpımı Kısalt"],
 }
 YARDIM = {
     "u1k1": {
@@ -2880,6 +3092,23 @@ YARDIM = {
             "Ne isteniyor? Süpürülmeyen kısım.", "Süpürülen kısım: 12 · [[3/4]]. 12 ile 4'ü sadeleştir.", "Halının tamamından süpürülen kısmı çıkar."]},
         "24 · ([[3/8]] + [[1/3]]) kaçtır": {"adimlar": [
             "Dağılma özelliği: 24 · [[3/8]] + 24 · [[1/3]].", "24 · [[3/8]]: 24 ile 8'i sadeleştir.", "24 · [[1/3]]: 24 ile 3'ü sadeleştir.", "İki sonucu topla."]},
+    },    "u1k10": {
+        "2[[u:5]] kaçtır": {"adimlar": [
+            "Taban 2, üs 5: 2 sayısını 5 kere yaz ve çarp.", "İkişer ikişer çarp: 2 · 2 = 4.", "Çıkan sayıyı her seferinde 2 ile çarp, toplam 5 tane 2 olana kadar."]},
+        "([[1/2]])[[u:3]] kaçtır": {"adimlar": [
+            "[[1/2]]'yi 3 kere çarp: [[1/2]] · [[1/2]] · [[1/2]].", "Payları çarp: 1 · 1 · 1.", "Paydaları çarp: 2 · 2 · 2. Önce pay, sonra / tuşu, sonra payda."]},
+        f"({M}2)[[u:3]] kaçtır": {"adimlar": [
+            "Önce işaret: üs 3. 3 tek mi, çift mi?", "Tek üs → sonuç eksi. Sayı doğrusunda 0'ın solunda.", "İşaretsiz değer: 2 · 2 · 2."]},
+        "4[[u:3]] kaçtır": {"adimlar": [
+            "Taban 4, üs 3: 4 · 4 · 4.", "Önce 4 · 4.", "Çıkan sayıyı 4 ile çarp."]},
+        "([[2/3]])[[u:2]] kaçtır": {"adimlar": [
+            "[[2/3]] · [[2/3]] demek.", "Payları çarp: 2 · 2.", "Paydaları çarp: 3 · 3. Önce pay, sonra / tuşu, sonra payda."]},
+        f"{M}2[[u:4]] kaçtır": {"adimlar": [
+            "Parantez var mı? Yok. Üs sadece 2'ye ait.", "Önce 2[[u:4]]: 2 · 2 · 2 · 2.", f"Eksi işareti en sonda başa gelir: önce {M} tuşu."]},
+        "([[-1/2]])[[u:2]] kaçtır": {"adimlar": [
+            "Önce işaret: üs 2 çift → artı. 0'ın sağında.", "Pay 1 · 1, payda 2 · 2.", "Sayı doğrusunda 0 ile 1 arası 4 parçaya bölünmüş. Kaçıncı çizgi?"]},
+        "Bir bakteri her 30 dakikada": {"adimlar": [
+            "3 saat = 180 dakika. 30 dakikalık kaç parça var? 180 ÷ 30.", "Her parçada bakteri sayısı 2 ile çarpılır: 6 parça → 2[[u:6]].", "2'yi 6 kere çarp: 2, 4, 8, … diye ikiye katla."]},
     },
 }
 
