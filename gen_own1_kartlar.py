@@ -132,9 +132,18 @@ body { font-family: 'Nunito', sans-serif; color: #251b3d; }
 .alt { position: absolute; bottom: 3.5mm; left: 7mm; right: 7mm; font-size: 6.5pt; color: #8a80a0; display: flex; justify-content: space-between; }
 .izgara { position: absolute; top: 11mm; left: 7mm; width: 196mm; height: 275mm; display: grid;
           grid-template-columns: 98mm 98mm; grid-template-rows: repeat(5, 55mm); }
-.kart { position: relative; border: .3mm dashed #b9aed0; display: grid; grid-template-rows: 27.5mm 27.5mm; }
+.kart { position: relative; display: grid; grid-template-rows: 27.5mm 27.5mm; }
 .kat { position: absolute; left: 0; right: 0; top: 27.5mm; border-top: .35mm dashed #6c4bd8; }
 .kat span { position: absolute; right: 2mm; top: -2.1mm; background: #fff; padding: 0 1mm; font-size: 5.5pt; color: #6c4bd8; letter-spacing: .3mm; }
+/* kesim çizgileri: kalın, koyu, uzun kesikli; katlama çizgisinden (ince mor) açıkça ayrı */
+.kes-y, .kes-d { position: absolute; z-index: 2; }
+.kes-y { left: -5mm; right: -5mm; height: 0; border-top: .7mm dashed #2a2438; }
+.kes-d { top: 0; width: 0; border-left: .7mm dashed #2a2438; }
+.kes-y b, .kes-d b { position: absolute; background: #fff; color: #2a2438; font-family: 'Nunito'; font-weight: 700; font-size: 6.6pt;
+       letter-spacing: .3mm; padding: 0 1.2mm; white-space: nowrap; line-height: 1; }
+.kes-y b { top: -1.75mm; }
+.kes-y b.sol { left: 6mm; } .kes-y b.sag { right: 6mm; }
+.kes-d b { left: -.35mm; transform: translate(-50%, 0) rotate(90deg); transform-origin: center; }
 .on, .arka { display: flex; gap: 3mm; padding: 2.6mm 3.2mm; align-items: center; }
 .on svg { width: 19mm; height: 19mm; flex: none; }
 .on .m { min-width: 0; }
@@ -189,6 +198,17 @@ def kart_html(k):
       <div class="kat"><span>KATLA</span></div></div>"""
 
 
+def kesim(dolu):
+    """Dolu satırlar için kesim çizgileri: yatay çizgiler satır sınırlarında, dikey çizgiler kenarlarda ve ortada."""
+    satir = -(-dolu // 2)
+    yuk = satir * 55
+    h = [f'<div class="kes-y" style="top:{r * 55}mm"><b class="sol">✂ KES</b><b class="sag">KES ✂</b></div>' for r in range(satir + 1)]
+    for x in (0, 98, 196):
+        etiket = "".join(f'<b style="top:{r * 55 + 13.75}mm">✂ KES</b>' for r in range(satir)) if x == 98 else ""
+        h.append(f'<div class="kes-d" style="left:{x}mm;height:{yuk}mm">{etiket}</div>')
+    return "".join(h)
+
+
 def belge(no, u, satirlar):
     e = html.escape
     yuvalar = [k for s_ in satirlar for k in (s_ + [None])[:2]]   # her satır 2 yuva; tek kalan satırın sağı boş
@@ -199,8 +219,8 @@ def belge(no, u, satirlar):
     kaynak = "Örnek cümleler: Own it! 3 Student's Book / Workbook (Cambridge University Press)"
     for s, grup in enumerate(parca, 1):
         sayfalar.append(f"""<section class="sayfa"><div class="ust"><span><b>Own it! 3 · {e(u['baslik'])}</b> · Vocabulary cards</span>
-          <span>Solda kelime, sağda zıttı / benzeri · ✂ kes · mor çizgiden katla</span></div>
-          <div class="izgara">{''.join(kart_html(k) for k in grup + [None] * (10 - len(grup)))}</div>
+          <span>Solda kelime, sağda zıttı / benzeri · ✂ <b style="font-size:8.5pt;color:#2a2438">kalın siyah çizgiden kes</b> · ince mor çizgiden katla</span></div>
+          <div class="izgara">{''.join(kart_html(k) for k in grup + [None] * (10 - len(grup)))}{kesim(len(grup))}</div>
           <div class="alt"><span>{kaynak}</span><span>{s} / {toplam}</span></div></section>""")
     satir = "".join(f"""<tr><td class="no">{i}</td><td class="kutu">☐☐☐</td><td class="w">{e(k['en'])}</td><td class="c">{vurgula(k['ornek'], k['en'])}</td>
         <td class="fold"></td><td class="t">{e(k['tr'])}</td><td class="z">{f'{e(k["ek"][0])}: {e(k["ek"][1])}' if k['ek'] else ''}</td></tr>"""
