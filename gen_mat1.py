@@ -3440,7 +3440,100 @@ def u1t4():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4]
+def u1t5():
+    return {
+        "id": "u1t5", "tur": "tarama", "unite": "1. Tema: Sayılar ve Nicelikler",
+        "baslik": "Tema Sonu Taraması", "sayfalar": "Konu 1–12 · s. 15–116",
+        "giris": "Birinci temanın sonuna geldin, tebrikler! Şimdi 12 konuyu birlikte gözden geçireceğiz. Önce kısa özetleri oku ve kartları çevir. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": "Bu temada sayılarla bir yolculuk yaptık. Önce sayıları sayı doğrusuna yerleştirdik: tam sayılar, kesirler, ondalıklar. Sonra onları karşılaştırıp sıraladık. Ardından dört işlemi ve üslü ifadeleri öğrendik; işaret kuralı hep aynı kaldı. En sonunda bütün işlemleri bir sırayla birleştirdik: üs, parantez, çarpma-bölme, toplama-çıkarma.",
+        "kapsar": ["u1k1", "u1k2", "u1k3", "u1k4", "u1k5", "u1k6", "u1k7", "u1k8", "u1k9", "u1k10", "u1k11", "u1k12"],
+        "hatirla": [
+            {"konu": "u1k1", "maddeler": [
+                f"Altı, borç, gider, zarar → eksi ({M}). Üstü, alacak, gelir, kâr → artı (+).",
+                "İki sayı arasındaki uzaklık: 0'dan geçiyorsa iki parçaya böl, topla."]},
+            {"konu": "u1k2", "maddeler": [
+                "Kesir şeklinde yazılabilen sayılar rasyonel sayıdır. Payda asla 0 olamaz.",
+                "[[-1 1/2]] sayısındaki eksi, sayının tamamına aittir."]},
+            {"konu": "u1k3", "maddeler": [
+                "Mutlak değer, bir sayının 0'a uzaklığıdır; hiç eksi olmaz.",
+                f"Mutlak değeri 4 olan iki sayı vardır: 4 ve {M}4."]},
+            {"konu": "u1k4", "maddeler": [
+                "Kesir çizgisi bölmedir: [[1/5]] = 1 ÷ 5 = 0,2.",
+                "Paydada yalnız 2 ve 5 varsa ondalık gösterim sonludur; yoksa devirlidir."]},
+            {"konu": "u1k5", "maddeler": [
+                "Sayı doğrusunda sağdaki büyüktür.",
+                f"İki negatiften 0'a uzak olan küçüktür: {M}3 < {M}1."]},
+            {"konu": "u1k6", "maddeler": [
+                "Aynı işaret: topla, işareti koru. Farklı işaret: büyükten küçüğü çıkar, büyüğün işareti.",
+                f"Çıkarma, tersiyle toplamadır: 4 {M} ({M}5) = 4 + 5."]},
+            {"konu": "u1k7", "maddeler": [
+                "Çarpma ve bölmede aynı işaret artı, farklı işaret eksi.",
+                "Çok çarpanda eksileri say: çiftse artı, tekse eksi."]},
+            {"konu": "u1k8", "maddeler": [
+                "Toplama ve çıkarmada önce paydaları eşitle.",
+                "Tam sayılı kesri önce bileşik kesre çevir."]},
+            {"konu": "u1k9", "maddeler": [
+                "Pay paya, payda paydaya çarpılır; önce çapraz sadeleştir.",
+                "Bir sayının kesrini bulmak için çarp: 12'nin [[1/3]]'ü = 4."]},
+            {"konu": "u1k10", "maddeler": [
+                "Üs, tabanın kaç kere çarpıldığıdır: 5[[u:3]] = 5 · 5 · 5.",
+                f"Parantez yoksa eksi dışarıda kalır: ({M}3)[[u:2]] = 9 ama {M}3[[u:2]] = {M}9."]},
+            {"konu": "u1k11", "maddeler": [
+                "Bölmeyi çarpmaya çevir: birinciyi koru, ikinciyi ters çevir.",
+                "Bölme sorusu: içinde kaç tane sığar?"]},
+            {"konu": "u1k12", "maddeler": [
+                "Sıra: üs → parantez → çarpma-bölme → toplama-çıkarma.",
+                "Aynı öncelikteki işlemlerde soldan sağa git."]}],
+        "eskiSoru": 6,
+        "oyunKavram": 10,
+        "gruplar": [{"soru": "Bu kural hangi işlem için?", "kutular": [
+            {"etiket": "Toplama ve çıkarma", "uyeler": ["Aynı İşaret: Topla, İşareti Koru", "Önce Paydaları Eşitle"]},
+            {"etiket": "Çarpma ve bölme", "uyeler": ["Aynı İşaret: Çarpım Artı", "Böl = Tersiyle Çarp"]},
+            {"etiket": "Üslü ifade", "uyeler": ["Eksi Taban: Çift Artı, Tek Eksi", "Parantez Fark Yaratır"]},
+            {"etiket": "İşlem sırası", "uyeler": ["Aynı Öncelikte Soldan Sağa", "Önce Parantez"]}]}],
+        "sorular": [
+            G(f"Selin'in yemek kartında 600 TL vardı. Her öğle yemeği için 90 TL çekiliyor; bakiye eksiye düşebiliyor. Bir süre sonra bakiye {M}30 TL oldu. Selin kaç gün yemek yedi?", "7",
+              f"Önce toplam harcamayı bul: 600'den {M}30'a kaç TL inildi? Sonra her gün 90 TL: kaç tane 90 sığar?",
+              f"Harcama: 600 {M} ({M}30) = 600 + 30 = 630 TL. Gün: 630 ÷ 90 = 7. Tek işlem: [600 {M} ({M}30)] ÷ 90 = 7. (Kitaptaki yemekhane kartı problemine benzer, s. 113)",
+              birim="gün",
+              kaynak=[K("u1k6", "Çıkarma = Tersiyle Toplama"), K("u1k7", "Çarp mı, Böl mü?"), K("u1k12", "Problemi İşleme Çevir")]),
+            S("Bir fotoğrafçı makinesini 90 cm uzaklığa odakladı. Rüzgârda sallanan lale üç karede 86 cm, 95 cm ve 88 cm uzaklıkta kaldı. Odak uzaklığına en yakın kare en net çıkar. Hangisi?",
+              ["1. kare (86 cm)", "2. kare (95 cm)", "3. kare (88 cm)"], 2,
+              "Her karenin 90'dan farkını bul. Eksik ya da fazla olması önemli değil; uzaklık hep artıdır.",
+              f"Farklar: 86 {M} 90 = {M}4, 95 {M} 90 = +5, 88 {M} 90 = {M}2. Uzaklıklar |{M}4| = 4, |+5| = 5, |{M}2| = 2. En yakın 3. kare. (s. 114)",
+              kaynak=[K("u1k3", "Eksik ya da Fazla"), K("u1k3", "Mutlak Değer"), K("u1k1", "İki Sayı Arasındaki Uzaklık")]),
+            G(f"Dört şehrin ocak ayı ortalama sıcaklıkları: 6 °C, {M}3 °C, 5 °C ve bilinmeyen bir sayı. Dört şehrin ortalaması 1 °C. Ortalama = toplam ÷ şehir sayısı. Bilinmeyen şehrin sıcaklığı kaç °C?", "-4",
+              "Ortalamadan toplamı bul: toplam = 4 · 1. Sonra bilinen üç sıcaklığı topla ve aradaki farkı bul.",
+              f"Toplam: 4 · 1 = 4. Bilinenler: 6 + ({M}3) + 5 = 8. Bilinmeyen: 4 {M} 8 = {M}4 °C. Kontrol: 8 + ({M}4) = 4, 4 ÷ 4 = 1. (Kitaptaki bölge sıcaklıkları sorusuna benzer, s. 115)",
+              birim="°C", sayiDogrusu={"min": -5, "max": 7, "dikey": True, "birim": 22},
+              kaynak=[K("u1k7", "Çarp mı, Böl mü?"), K("u1k6", "Farklı İşaret: Çıkar, Büyüğün İşareti"), K("u1k12", "Problemi İşleme Çevir")]),
+            N("Bir ipin [[3/4]]'ü kesildi. Sonra kalan parçanın yarısı da kesildi. Elde kalan ip, başlangıçtaki ipin kaçta kaçıdır? Sayı doğrusunda dokun.", "1/8",
+              {"min": 0, "max": 1, "bolme": 8},
+              "Önce [[3/4]] kesilince kalanı bul: 1 − [[3/4]]. Sonra o parçanın yarısı gidiyor, yarısı kalıyor.",
+              "İlk kesimden sonra kalan: 1 − [[3/4]] = [[1/4]]. Bunun yarısı kesilince [[1/4]] · [[1/2]] = [[1/8]] kalır. (Kitaptaki ip sorusuna benzer, s. 114)",
+              kaynak=[K("u1k8", "Problemde Toplama ve Çıkarma"), K("u1k9", "Bir Sayının Kesrini Bulma"), K("u1k2", "Sayı Doğrusunda Gösterme")]),
+            S("Hangisi doğrudur?",
+              [f"{M}2[[u:4]] ile ({M}2)[[u:4]] aynı sayıdır.", f"Bir sayının {M}1 ile çarpımı, o sayının toplama işlemine göre tersidir.", "İki negatif sayının çarpımı negatiftir."], 1,
+              f"Üçünü tek tek dene. Parantez yoksa eksi dışarıda mı kalır? 5 · ({M}1) kaç, 5'in tersi ne? ({M}2) · ({M}3) kaç?",
+              f"5 · ({M}1) = {M}5 ve 5 + ({M}5) = 0: {M}1 ile çarpmak toplama işlemine göre tersini verir. {M}2[[u:4]] = {M}16 ama ({M}2)[[u:4]] = 16. İki negatifin çarpımı pozitiftir. (s. 112)",
+              kaynak=[K("u1k10", "Parantez Fark Yaratır"), K("u1k6", "Ters İşaretliler Toplanınca 0"), K("u1k7", "Aynı İşaret: Çarpım Artı")]),
+            N("([[1/2]] − 2) · [[2/3]] işleminin sonucuna sayı doğrusunda dokun.", -1, {"min": -2, "max": 1, "bolme": 2},
+              "Önce parantez: 2'yi [[4/2]] yaz ve çıkar. Sonra [[2/3]] ile çarp; çapraz sadeleştir.",
+              f"Parantez: [[1/2]] − [[4/2]] = [[-3/2]]. Çarpım: ([[-3/2]]) · [[2/3]]: 3 ile 3, 2 ile 2 sadeleşir → {M}1.",
+              kaynak=[K("u1k12", "Önce Parantez"), K("u1k8", "Önce Paydaları Eşitle"), K("u1k9", "Önce Çapraz Sadeleştir")]),
+            G(f"{M}0,25 + [[3/4]] · 2 işleminin sonucunu ondalık gösterimle yaz.", "1,25",
+              "Önce çarpma: [[3/4]] · 2. Sonra kesri ondalığa çevir (paydayı 100 yap) ve topla.",
+              f"Çarpma: [[3/4]] · 2 = [[6/4]] = [[3/2]] = 1,5. Toplama: {M}0,25 + 1,5 = 1,25.",
+              denk=True,
+              kaynak=[K("u1k12", "İşlem Sırası"), K("u1k4", "Paydayı 10, 100, 1000 Yap"), K("u1k6", "Farklı İşaret: Çıkar, Büyüğün İşareti")]),
+            S("Hangisi en küçüktür?", [f"{M}3[[u:2]]", f"({M}2)[[u:3]]", "[[-1/2]] · 10"], 0,
+              "Üçünün değerini bul. Sonra eksilerde 0'a en uzak olanı seç.",
+              f"{M}3[[u:2]] = {M}9, ({M}2)[[u:3]] = {M}8, [[-1/2]] · 10 = {M}5. {M}9 < {M}8 < {M}5; en küçük {M}3[[u:2]].",
+              kaynak=[K("u1k10", "Parantez Fark Yaratır"), K("u1k5", "Negatiflerde Uzak Olan Küçük")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5]
 KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12] + TARAMALAR
 
 # =================================================================
@@ -3702,6 +3795,28 @@ YARDIM = {
             "Başlangıç: 3. kat. Aşağı eksi, yukarı artı.", "İniş: 2 kez 4 kat → 2 · (−4).", "3'e bunu ekle, sonra 1 kat yukarı çık."]},
         "Bir depoda 40 litre": {"adimlar": [
             "Başlangıç: 40 litre. Dolan artı (+2), boşalan eksi (−6).", "1 saatteki değişim: 2 + (−6).", "5 saatlik değişim: 5 ile çarp.", "40 ile topla."]},
+    },
+    "u1t5": {
+        "Selin'in yemek kartında": {"adimlar": [
+            "Başlangıç: 600 TL. Yön: yemek parası düşüyor, bakiye −30 TL'ye iniyor.",
+            "Kaç birim? 600'den 0'a ve 0'dan −30'a: iki parçayı topla.",
+            "Toplam harcamanın içinde kaç tane 90 TL var? Böl."]},
+        "Dört şehrin ocak": {"adimlar": [
+            "Ortalama 1 ve 4 şehir var: toplam = 4 · 1.",
+            "Bilinen üç sıcaklığı topla: 6 + (−3) + 5.",
+            "Bilinmeyen = toplam − bilinenlerin toplamı. 0'ın altına iniyor musun?"]},
+        "Bir ipin [[3/4]]'ü": {"adimlar": [
+            "Bütün ip 1. [[3/4]]'ü gidince kalan: 1 − [[3/4]].",
+            "Kalan parçanın yarısı da gidiyor; elde yarısı kalıyor: çarp.",
+            "0 ile 1 arası 8 parçaya bölünmüş; kaçıncı çizgi?"]},
+        "([[1/2]] − 2)": {"adimlar": [
+            "Önce parantez. 2'yi paydası 2 olan kesir yap.",
+            "Paydalar eşit: payları çıkar. İşaret ne oldu?",
+            "Şimdi [[2/3]] ile çarp: önce çapraz sadeleştir."]},
+        "−0,25 + [[3/4]] · 2": {"adimlar": [
+            "İşlem sırası: çarpma toplamadan önce.",
+            "[[3/4]] · 2: payı 2 ile çarp, sadeleştir, ondalığa çevir.",
+            "Farklı işaretli iki sayıyı topla: büyükten küçüğü çıkar, büyüğün işaretini koy."]},
     },
 }
 
