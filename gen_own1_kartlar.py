@@ -8,8 +8,10 @@ ornek / ornekTr (kitaptan birebir cümle + sayfa), svg (çizim). Zıt / benzer k
 UNITELER sözlüğünde elle verilir. Yeni ünite = UNITELER'e bir kayıt + ders.json'da ünitenin "kartlar" alanı.
 
 PDF düzeni:
-  1–2. sayfa: A4'e 10 kart (2 × 5). Kesik çizgiden kes, ortadaki çizgiden katla.
+  kart sayfaları: A4'e 10 kart (2 × 5). Kesik çizgiden kes, ortadaki çizgiden katla.
               Üst yarı: İngilizce kelime, çizim, örnek cümle. Alt yarı ters basılı: Türkçe, zıt/benzer, cümlenin Türkçesi.
+              Zıt ve benzer kelimeler ayrı karttır; ana kelimenin hemen sağında, aynı satırda durur.
+              Eşi olmayan kelimeler en sonda ikişer ikişer dizilir.
   son sayfa:  öğretmen/öğrenci için "katla ve kontrol et" listesi (Türkçe sütun arkaya katlanır).
 Gereken: playwright (chromium). Fontlar kaynaklar/fontlar/ içinde (SIL OFL), PDF'e gömülür.
 """
@@ -74,16 +76,47 @@ def vurgula(cumle, kelime):
     return e(cumle) if not m else e(cumle[:m.start()]) + "<b>" + e(m.group(0)) + "</b>" + e(cumle[m.end():])
 
 
+def rozet(en, isaret):
+    """Çizimi olmayan zıt/benzer kartı için harf rozeti (mercan zemin, baş harf, ↔ ya da = işareti)."""
+    h = html.escape(en[0].lower())
+    return (f"<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'><rect width='120' height='120' rx='22' fill='#e2553f'/>"
+            f"<text x='60' y='80' text-anchor='middle' font-family='Fredoka' font-weight='600' font-size='64' fill='#fff'>{h}</text>"
+            f"<circle cx='96' cy='24' r='15' fill='#fff'/><text x='96' y='31' text-anchor='middle' font-family='Nunito' font-weight='700' "
+            f"font-size='22' fill='#e2553f'>{isaret}</text></svg>")
+
+
+def ek_formul(es, ana):
+    """unhelpful ← un- + helpful gibi ek kuralını bul (yoksa boş)."""
+    for ek in ("un", "in", "im"):
+        if es == ek + ana:
+            return f"{ek}- + {ana}"
+    return ""
+
+
 def kartlar_oku(u):
-    out = []
+    """Satır listesi döner: [ana, eş] çiftleri önce, eşi olmayanlar ikişer ikişer sonda."""
+    ciftler, tekler, sozluk = [], [], {}
+    for kid, _ in u["konular"]:
+        for w in json.loads((KONU / f"{kid}.json").read_text(encoding="utf-8")).get("kelimeler", []):
+            sozluk[w["en"]] = w
     for kid, tur in u["konular"]:
         d = json.loads((KONU / f"{kid}.json").read_text(encoding="utf-8"))
         for k in d["kavramlar"]:
             ornek_tr, sayfa = sayfa_ayir(k.get("ornekTr"))
             svg = re.sub(r"(<rect[^>]*?)fill='#1b2340'", r"\1fill='" + SVGBG + "'", k["svg"], count=1)
-            out.append({"en": k["ad"], "tr": k["akilda"], "tur": tur, "ornek": k.get("ornek", ""), "ornekTr": ornek_tr,
-                        "sayfa": sayfa, "svg": svg, "ek": u["ek"].get(k["ad"])})
-    return out
+            ek = u["ek"].get(k["ad"])
+            ana = {"en": k["ad"], "tr": k["akilda"], "tur": tur, "ornek": k.get("ornek", ""), "ornekTr": ornek_tr,
+                   "sayfa": sayfa, "svg": svg, "ek": ek, "ana": True}
+            if not ek:
+                tekler.append(ana)
+                continue
+            w = sozluk.get(ek[1], {})
+            e_tr, e_sf = sayfa_ayir(w.get("ornekTr"))
+            es = {"en": ek[1], "tr": w.get("tr", ek[2]), "tur": "opposite" if ek[0] == "zıt" else "synonym",
+                  "ornek": w.get("ornek", ""), "ornekTr": e_tr, "sayfa": e_sf, "svg": rozet(ek[1], "↔" if ek[0] == "zıt" else "="),
+                  "ek": (ek[0], k["ad"], k["akilda"]), "formul": ek_formul(ek[1], k["ad"]), "ana": False}
+            ciftler.append([ana, es])
+    return ciftler + [tekler[i:i + 2] for i in range(0, len(tekler), 2)]
 
 
 CSS = """
@@ -110,6 +143,10 @@ body { font-family: 'Nunito', sans-serif; color: #251b3d; }
        border-radius: 1mm; padding: .3mm 1.2mm; margin-left: 1.5mm; vertical-align: 2.2mm; font-weight: 700; }
 .ornek { font-size: 7.6pt; line-height: 1.22; margin-top: 1.1mm; font-style: italic; }
 .ornek b { font-style: italic; background: #fff1a8; padding: 0 .5mm; border-radius: .6mm; }
+.iliski { font-size: 8pt; margin-top: 1.2mm; color: #645a7c; } .iliski b { font-family: 'Fredoka'; font-weight: 600; color: #3a2a6b; font-size: 9.5pt; }
+.iliski i { font-style: normal; font-weight: 700; color: #e2553f; text-transform: uppercase; font-size: 6.2pt; letter-spacing: .2mm; margin-right: 1mm; }
+.formul { display: inline-block; margin-top: 1.2mm; font-size: 7.6pt; background: #fff1a8; border-radius: .8mm; padding: .3mm 1.4mm; font-weight: 700; color: #3a2a6b; }
+.tur.es { background: #e2553f; }
 .sf { font-size: 5.8pt; color: #8a80a0; margin-top: .6mm; font-style: normal; }
 .arka { transform: rotate(180deg); flex-direction: column; align-items: flex-start; justify-content: center; gap: 1mm; background: #f7f4fb; }
 .tr { font-family: 'Fredoka'; font-weight: 600; font-size: 14pt; color: #251b3d; line-height: 1.05; }
@@ -137,57 +174,67 @@ th.t { padding-left: 3mm; }
 
 def kart_html(k):
     e = html.escape
+    if k is None:
+        return '<div class="kart" style="border-color:transparent"></div>'
     ek = k["ek"]
     ek_html = f'<div class="ekk"><i>{e(ek[0])}</i><b>{e(ek[1])}</b> · {e(ek[2])}</div>' if ek else ""
+    if k["ornek"]:
+        on_alt = f'<div class="ornek">{vurgula(k["ornek"], k["en"])}</div>' + (f'<div class="sf">{e(k["sayfa"])}</div>' if k["sayfa"] else "")
+    else:  # kitapta cümlesi olmayan zıt/benzer kelime: ilişki ve ek kuralı
+        on_alt = (f'<div class="iliski"><i>{e(ek[0])}</i><b>{e(ek[1])}</b></div>'
+                  + (f'<div class="formul">{e(k["formul"])}</div>' if k.get("formul") else ""))
     return f"""<div class="kart"><div class="on">{k['svg']}<div class="m">
-      <div class="en">{e(k['en'])}<span class="tur" lang="en">{e(k["tur"])}</span></div>
-      <div class="ornek">{vurgula(k['ornek'], k['en'])}</div>{f'<div class="sf">{e(k["sayfa"])}</div>' if k['sayfa'] else ''}</div></div>
-      <div class="arka"><div class="tr">{e(k['tr'])}</div>{ek_html}<div class="otr">{e(k['ornekTr'])}</div></div>
+      <div class="en">{e(k['en'])}<span class="tur{'' if k['ana'] else ' es'}" lang="en">{e(k["tur"])}</span></div>{on_alt}</div></div>
+      <div class="arka"><div class="tr">{e(k['tr'])}</div>{ek_html}{f'<div class="otr">{e(k["ornekTr"])}</div>' if k['ornekTr'] else ''}</div>
       <div class="kat"><span>KATLA</span></div></div>"""
 
 
-def belge(no, u, kartlar):
+def belge(no, u, satirlar):
     e = html.escape
+    yuvalar = [k for s_ in satirlar for k in (s_ + [None])[:2]]   # her satır 2 yuva; tek kalan satırın sağı boş
+    anlar = [k for k in yuvalar if k and k["ana"]]
     sayfalar = []
-    parca = [kartlar[i:i + 10] for i in range(0, len(kartlar), 10)]
+    parca = [yuvalar[i:i + 10] for i in range(0, len(yuvalar), 10)]
     toplam = len(parca) + 1
     kaynak = "Örnek cümleler: Own it! 3 Student's Book / Workbook (Cambridge University Press)"
     for s, grup in enumerate(parca, 1):
-        bos = "".join('<div class="kart" style="border-color:transparent"></div>' for _ in range(10 - len(grup)))
         sayfalar.append(f"""<section class="sayfa"><div class="ust"><span><b>Own it! 3 · {e(u['baslik'])}</b> · Vocabulary cards</span>
-          <span>✂ Kesik çizgiden kes · ortadaki mor çizgiden katla · Türkçe arkada kalsın</span></div>
-          <div class="izgara">{''.join(kart_html(k) for k in grup)}{bos}</div>
+          <span>Solda kelime, sağda zıttı / benzeri · ✂ kes · mor çizgiden katla</span></div>
+          <div class="izgara">{''.join(kart_html(k) for k in grup + [None] * (10 - len(grup)))}</div>
           <div class="alt"><span>{kaynak}</span><span>{s} / {toplam}</span></div></section>""")
     satir = "".join(f"""<tr><td class="no">{i}</td><td class="kutu">☐☐☐</td><td class="w">{e(k['en'])}</td><td class="c">{vurgula(k['ornek'], k['en'])}</td>
         <td class="fold"></td><td class="t">{e(k['tr'])}</td><td class="z">{f'{e(k["ek"][0])}: {e(k["ek"][1])}' if k['ek'] else ''}</td></tr>"""
-                    for i, k in enumerate(kartlar, 1))
+                    for i, k in enumerate(anlar, 1))
     sayfalar.append(f"""<section class="sayfa"><div class="liste"><h2>Own it! 3 · {e(u['baslik'])} — Katla ve kontrol et</h2>
       <p class="y">Kâğıdı mor kesik çizgiden arkaya katla. İngilizce kelimeye bak, Türkçesini söyle, sonra aç ve kontrol et. Her doğruda bir kutuyu işaretle (3 tur).</p>
       <table><thead><tr><th></th><th>Tur</th><th>Word</th><th>Example</th><th class="fold"></th><th class="t">Türkçe</th><th>Zıt / benzer</th></tr></thead><tbody>{satir}</tbody></table></div>
       <div class="alt"><span>{kaynak}</span><span>{toplam} / {toplam}</span></div></section>""")
-    return f"<!doctype html><html lang='tr'><head><meta charset='utf-8'><style>{font_css()}{CSS}</style></head><body>{''.join(sayfalar)}</body></html>"
+    return f"<!doctype html><html lang='tr'><head><meta charset='utf-8'><style>{font_css()}{CSS}</style></head><body>{''.join(sayfalar)}</body></html>", len(parca)
 
 
 def main():
     no = int(sys.argv[1]) if len(sys.argv) > 1 else 1
     u = UNITELER[no]
-    kartlar = kartlar_oku(u)
-    eksik = [k["en"] for k in kartlar if not k["ornek"] or not k["sayfa"]]
+    satirlar = kartlar_oku(u)
+    kartlar = [k for s_ in satirlar for k in s_]
+    eksik = [k["en"] for k in kartlar if k["ana"] and (not k["ornek"] or not k["sayfa"])]
     if eksik:
         sys.exit(f"örnek cümlesi/sayfası eksik: {eksik}")
-    vurgusuz = [k["en"] for k in kartlar if "<b>" not in vurgula(k["ornek"], k["en"])]
+    vurgusuz = [k["en"] for k in kartlar if k["ornek"] and "<b>" not in vurgula(k["ornek"], k["en"])]
     hedef = KOK / f"public/own1/kartlar/unite{no}.pdf"
     hedef.parent.mkdir(parents=True, exist_ok=True)
+    metin, kart_sayfa = belge(no, u, satirlar)
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         b = p.chromium.launch()
         pg = b.new_page()
-        pg.set_content(belge(no, u, kartlar), wait_until="load")
+        pg.set_content(metin, wait_until="load")
         pg.evaluate("document.fonts.ready")
         pg.pdf(path=str(hedef), format="A4", print_background=True, prefer_css_page_size=True)
         b.close()
-    print(f"{hedef.relative_to(KOK)}: {len(kartlar)} kart, {-(-len(kartlar) // 10)} kart sayfası + 1 liste sayfası"
-          + (f" | vurgulanamayan: {vurgusuz}" if vurgusuz else ""))
+    es = sum(1 for k in kartlar if not k["ana"])
+    print(f"{hedef.relative_to(KOK)}: {len(kartlar)} kart ({len(kartlar) - es} ana + {es} zıt/benzer), "
+          f"{kart_sayfa} kart sayfası + 1 liste sayfası" + (f" | vurgulanamayan: {vurgusuz}" if vurgusuz else ""))
 
 
 if __name__ == "__main__":
