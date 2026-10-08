@@ -351,7 +351,7 @@
         runCozum($("#cozBox", stage), d.kavramlar[st.k][st.f], qstate[pos], () => { const n = $("[data-next]", stage); if (n) n.disabled = false; }, d.kavramlar[st.k]);
       }
       if (st.t === "yaz") wireWrite(stage, d.dusunVeYaz[0]);
-      if (st.t === "duvar") renderWall($("#wallBox", stage), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}` });
+      if (st.t === "duvar") renderWall($("#wallBox", stage), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}`, kartlar: kartlarOf(S.konu) });
       $$("[data-goto]", stage).forEach(b => b.onclick = () => setTab(b.dataset.goto));
       const rs = $("[data-restart]", stage); if (rs) rs.onclick = () => { for (const k in qstate) delete qstate[k]; go(0); };
     }
@@ -389,7 +389,7 @@
       d.merakKutusu.map(m => `<details><summary>${rx(m.soru)}</summary><p>${rx(m.cevap)}</p></details>`).join("") + `</div></section>`);
     h.push(`<p class="src">Kaynak: ${esc(S.ders.kaynak || `MEB ${S.ders.ders} ${S.ders.sinif} Ders Kitabı`)}, ${esc(d.sayfalar)}.<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>`);
     root.innerHTML = h.join("");
-    if (isEn()) renderWall($("#bakWall", root), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}` });
+    if (isEn()) renderWall($("#bakWall", root), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}`, kartlar: kartlarOf(S.konu) });
     // Ara Durak'tan "Konuda bak" ile gelindiyse ilgili kavram kartını göster ve vurgula
     if (S.hedef) {
       const c = $$(".card", root).find(x => x.dataset.ad === S.hedef); S.hedef = null;
@@ -660,7 +660,7 @@
       const nB = words.filter(w => durum(w.en) === "b").length, nZ = words.filter(w => durum(w.en) === "z").length;
       box.innerHTML = `<div class="wall-bar"><span class="wall-say"><b>${words.length}</b> kelime · <b class="okc">${nB}</b> biliyorum · <b class="zc">${nZ}</b> tekrar edilecek</span>
           <div class="wall-filters">${[["hepsi", "Hepsi"], ["ogren", "Öğreneceklerim"], ["zor", "Zorlandıklarım"]].map(([k, n]) => `<button class="subtab" data-f="${k}" aria-pressed="${k === filtre}">${n}</button>`).join("")}</div>
-          <button class="btn ghost" data-print>${ICON.yazdir}Afişi yazdır</button></div>
+          <button class="btn ghost" data-print>${ICON.yazdir}Afişi yazdır</button>${opts.kartlar ? kartlarBtn(opts.kartlar) : ""}</div>
         ${list.length ? `<div class="wall">${list.map(w => `<div class="wtile ${durum(w.en)}" data-w="${esc(w.en)}">
           <button class="wface" aria-label="${esc(w.en)} kartını çevir">${wordPic(w)}<span class="wen" lang="en">${esc(w.en)}</span>${opts.konuAdi && w.konuAd ? `<span class="wkonu">${esc(w.konuAd)}</span>` : ""}</button>
           <div class="wback"><div class="wtr">${esc(w.tr)}</div>
@@ -680,6 +680,11 @@
     };
     draw();
   }
+
+  // ---------- Ünite kelime kartları (PDF) ----------
+  // ders.json'da ünitenin "kartlar" alanı (ör. "kartlar/unite1.pdf"): kesip katlanan kelime kartları, önceden üretilmiş PDF.
+  function kartlarOf(id) { const t = allTopics().find(k => k.id === id); return t ? S.ders.uniteler[t.ui].kartlar || "" : ""; }
+  const kartlarBtn = url => `<a class="btn ghost" href="${esc(url)}" target="_blank" rel="noopener">${ICON.yazdir}Kelime kartları (PDF)</a>`;
 
   // ---------- Yazdırılabilir afiş (A4; tarayıcıda "PDF olarak kaydet" ile PDF olur) ----------
   function printPoster(baslik, words) {
@@ -1263,7 +1268,8 @@
 
   function renderHatirla(root) {
     const d = S.data, kayit = durakKayit.get(S.konu), h = [];
-    h.push(`<section><p class="lead">${rx(d.giris)}</p>${kayit ? durakDurum(kayit) : ""}</section>`);
+    const kart = kartlarOf(S.konu);
+    h.push(`<section><p class="lead">${rx(d.giris)}</p>${kayit ? durakDurum(kayit) : ""}${kart ? `<div class="row dk-kart">${kartlarBtn(kart)}<span class="ek">Yazdır, kes, ortadan katla: önde İngilizce, arkada Türkçe.</span></div>` : ""}</section>`);
     if (d.buyukResim) h.push(`<section class="facts"><div class="eyebrow">Büyük resim</div><p>${rx(d.buyukResim)}</p></section>`);
     d.kapsar.forEach(id => {
       const k = S.cache[id]; if (!k) return;

@@ -470,6 +470,8 @@ a.head-btn { text-decoration: none; display: inline-flex; align-items: center; }
 .wall-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .wall-say .okc { color: var(--ok); } .wall-say .zc { color: #c2410c; }
 .wall-filters { display: flex; gap: 6px; flex-wrap: wrap; }
+.dk-kart { align-items: center; margin-top: 10px; } .dk-kart .btn { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; } .dk-kart .btn svg { width: 18px; height: 18px; }
+.wall-bar a.btn { text-decoration: none; }
 .wall-bar .btn { display: inline-flex; align-items: center; gap: 6px; } .wall-bar .btn svg { width: 18px; height: 18px; }
 .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
 .wtile { position: relative; border-radius: 16px; background: var(--surface); border: 2px solid var(--line); overflow: hidden; }

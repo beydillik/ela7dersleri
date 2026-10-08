@@ -1,0 +1,250 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "Unit 1: Be inspired",
+ "baslik": "Kelime Durağı: Unit 1 kelimeleri",
+ "sayfalar": "Konu 1, 2, 4 · SB s. 11–20, 128 · WB s. 8–13",
+ "giris": "Unit 1'in bütün kelimeleri burada: 12 sıfat ve 8 phrasal verb. Önce kartlara dokunup hatırla. Sonra kelime testini çöz. Oyunlar'da da oynayarak tekrar et.",
+ "buyukResim": "Sıfatlarla insanları anlatırız: {{She's cheerful.}} Phrasal verb'lerle insanlarla ilişkimizi anlatırız: {{I look up to her.}} İkisi bir cümlede: {{My parents are always very calm when they deal with problems.}}",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "{{calm}} sakin · {{cheerful}} neşeli · {{confident}} kendine güvenen.",
+    "{{helpful}} yardımsever · {{patient}} sabırlı · {{sociable}} arkadaş canlısı.",
+    "Zıt: {{anxious}}, {{grumpy}}, {{shy}}, {{unhelpful}}, {{impatient}}, {{unsociable}}."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "{{sensible}} = mantıklı; {{sensitive}} = duyarlı. Karıştırma!",
+    "{{ambitious}} hırslı · {{talented}} yetenekli · {{active}} hareketli · {{inspiring}} ilham veren.",
+    "Zıt: {{silly}}, {{insensitive}}, {{unambitious}}, {{untalented}}, {{lazy}}, {{uninspiring}}."
+   ]
+  },
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "{{hang out}} takılmak · {{take care of}} bakmak · {{get on with}} iyi anlaşmak · {{look up to}} örnek almak.",
+    "{{depend on}} muhtaç olmak · {{deal with}} başa çıkmak · {{give up}} pes etmek · {{cheer up}} neşelendirmek.",
+    "Çoğundan sonra bir kişi gelir: {{look up to my aunt}}, {{get on with my brother}}."
+   ]
+  }
+ ],
+ "eskiSoru": 2,
+ "oyunKavram": 12,
+ "sorular": [
+  {
+   "soru": "Boşluğa hangisi gelir? {{My parents are always very calm when they ___ problems.}}",
+   "secenekler": [
+    "deal with",
+    "give up",
+    "hang out"
+   ],
+   "dogru": 0,
+   "ipucu": "Sakin insanlar sorunlara ne yapar? Sorunu çözmeye çalışırlar.",
+   "aciklama": "{{deal with}} = başa çıkmak. Annemle babam sorunlarla uğraşırken hep sakindir. (SB s. 128)",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "deal with"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "calm"
+    }
+   ],
+   "kavram": "deal with"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{She never gives up, she's ___.}}",
+   "secenekler": [
+    "grumpy",
+    "cheerful",
+    "lazy"
+   ],
+   "dogru": 1,
+   "ipucu": "Pes etmeyen, hep mutlu olan biri. Huysuz ya da tembel değil.",
+   "aciklama": "{{cheerful}} = neşeli. {{She never gives up}}: asla pes etmez. (SB s. 17)",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "cheerful"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "give up"
+    }
+   ],
+   "kavram": "cheerful"
+  },
+  {
+   "soru": "{{patient}} kelimesinin zıttı hangisi?",
+   "secenekler": [
+    "unhelpful",
+    "insensitive",
+    "impatient"
+   ],
+   "dogru": 2,
+   "ipucu": "Zıt anlam ekleri: {{un-}}, {{in-}}, {{im-}}. Seçeneklerden hangisinin içinde {{patient}} var?",
+   "aciklama": "{{patient}} sabırlı → {{impatient}} sabırsız. {{unhelpful}} ve {{insensitive}} başka kelimelerin zıttı. (SB s. 11)",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "patient"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "sensitive"
+    }
+   ],
+   "kavram": "patient"
+  },
+  {
+   "soru": "Boşluğa {{silly}} kelimesinin zıttı gelir. {{He's silly and immature, but she's ___.}}",
+   "secenekler": [
+    "sensible",
+    "sensitive",
+    "sociable"
+   ],
+   "dogru": 0,
+   "ipucu": "İyi karar veren, mantıklı kişi. {{sensitive}} ile karıştırma!",
+   "aciklama": "{{sensible}} = mantıklı. {{silly}} saçma davranandır; zıttı {{sensible}}. (WB s. 8)",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "sensible"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "sociable"
+    }
+   ],
+   "kavram": "sensible"
+  },
+  {
+   "soru": "Hangisi cümleye uymaz? {{Can really looks up to his ___.}}",
+   "secenekler": [
+    "older brother",
+    "pencil",
+    "teacher"
+   ],
+   "dogru": 1,
+   "ipucu": "Örnek alınan, hayranlık duyulan bir kişidir.",
+   "aciklama": "{{look up to}}'dan sonra bir kişi gelir. Bir kalem örnek alınmaz. (SB s. 128)",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "look up to"
+    }
+   ],
+   "kavram": "look up to"
+  },
+  {
+   "soru": "Hangisi cümleye uymaz? {{At the weekend, I hang out with my ___.}}",
+   "secenekler": [
+    "friends",
+    "cousins",
+    "problems"
+   ],
+   "dogru": 2,
+   "ipucu": "Kimlerle takılırsın? İnsanlarla mı, sorunlarla mı?",
+   "aciklama": "İnsanlarla takılınır: {{hang out with my friends}}. Sorunlarla ise {{deal with}} yapılır, yani başa çıkılır. (SB s. 14)",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "hang out"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "deal with"
+    }
+   ],
+   "kavram": "hang out"
+  },
+  {
+   "soru": "Bu tanım hangi kelimenin? {{is relaxed and doesn't worry}}",
+   "secenekler": [
+    "cheerful",
+    "calm",
+    "sociable"
+   ],
+   "dogru": 1,
+   "ipucu": "{{relaxed}} rahat demek. {{doesn't worry}}: endişelenmez.",
+   "aciklama": "{{calm}} = sakin: rahattır ve endişelenmez. (SB s. 11)",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "calm"
+    }
+   ],
+   "kavram": "calm"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{If you have a good relationship with someone, you ___ them.}}",
+   "secenekler": [
+    "depend on",
+    "look up to",
+    "get on with"
+   ],
+   "dogru": 2,
+   "ipucu": "{{a good relationship}}: iyi bir ilişki. Biriyle iyi anlaşmak hangisiydi?",
+   "aciklama": "{{get on with}} = iyi anlaşmak. (WB s. 11)",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "get on with"
+    }
+   ],
+   "kavram": "get on with"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "dinle": "sensitive",
+   "secenekler": [
+    "sensitive",
+    "sensible",
+    "sociable"
+   ],
+   "dogru": 0,
+   "ipucu": "Kelimenin ortasında {{t}} sesi var. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{sensitive}}: duyarlı. {{sensible}} ise mantıklı demektir. (SB s. 11)",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "sensitive"
+    },
+    {
+     "konu": "u1k2",
+     "kavram": "sensible"
+    }
+   ],
+   "kavram": "sensitive"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "dinle": "talented",
+   "secenekler": [
+    "confident",
+    "talented",
+    "patient"
+   ],
+   "dogru": 1,
+   "ipucu": "Kelime {{t}} sesiyle başlıyor.",
+   "aciklama": "Duyduğun kelime {{talented}}: yetenekli. (SB s. 11)",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "talented"
+    }
+   ],
+   "kavram": "talented"
+  }
+ ]
+}
