@@ -1,0 +1,555 @@
+{
+ "id": "u1k5",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "İkilemelerin Yazımı ve Üç Nokta",
+ "sayfalar": "s. 34–35",
+ "giris": "Bu konuda iki küçük ama önemli yazım bilgisi var. Önce ikilemelerin nasıl yazıldığını, sonra üç noktanın (…) görevlerini öğreneceğiz. Yazılıda en çok “doğru mu, yanlış mı?” diye sorulur.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "İki eski bilgiyi hatırlayalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Eş ve zıt anlamlı kelimeler",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='30' width='46' height='22' rx='9' fill='#fbf6e6'/><text x='33.0' y='45' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>siyah</text><text x='60' y='46' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#ff7a6b'>↔</text><rect x='64' y='30' width='46' height='22' rx='9' fill='#fbf6e6'/><text x='87.0' y='45' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>beyaz</text><rect x='10' y='70' width='46' height='22' rx='9' fill='#fbf6e6'/><text x='33.0' y='85' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>kırmızı</text><text x='60' y='86' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#6ea8ef'>=</text><rect x='64' y='70' width='46' height='22' rx='9' fill='#fbf6e6'/><text x='87.0' y='85' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>al</text><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>zıt · eş</text></svg>",
+    "anlatim": "Eş anlamlı kelimeler aynı anlamı taşır: kırmızı, al. Zıt anlamlı kelimeler karşıt anlam taşır: siyah, beyaz.",
+    "akilda": "Eş: aynı · Zıt: karşıt",
+    "sorular": [
+     {
+      "soru": "“İyi” kelimesinin zıt anlamlısı hangisi?",
+      "secenekler": [
+       "güzel",
+       "kötü",
+       "hoş"
+      ],
+      "dogru": 1,
+      "ipucu": "Karşıt anlamı arıyorsun.",
+      "aciklama": "İyi ile kötü zıt anlamlıdır."
+     },
+     {
+      "soru": "“Doğru” kelimesinin eş anlamlısı hangisi?",
+      "secenekler": [
+       "dürüst",
+       "eğri",
+       "yanlış"
+      ],
+      "dogru": 0,
+      "ipucu": "Aynı anlamı taşıyan kelimeyi ara. “Doğru insan” ne demek?",
+      "aciklama": "Doğru insan, dürüst insandır. “Eğri” ve “yanlış” zıt anlamlıdır."
+     }
+    ]
+   },
+   {
+    "ad": "Ünlem ve soru işareti",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='36' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='54' fill='#f5c53d'>!</text><text x='84' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='54' fill='#6ea8ef'>?</text><text x='36' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>duygu</text><text x='84' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>soru</text></svg>",
+    "anlatim": "Ünlem işareti (!) sevinç, korku, şaşkınlık gibi duyguları ve seslenmeleri gösterir: “Ali!”. Soru işareti (?) soru cümlesinin sonuna konur.",
+    "akilda": "Duygu ! · Soru ?",
+    "sorular": [
+     {
+      "soru": "“Eyvah, otobüs kaçtı___” Sona hangi işaret konur?",
+      "secenekler": [
+       "?",
+       ",",
+       "!"
+      ],
+      "dogru": 2,
+      "ipucu": "Cümle bir duyguyu mu gösteriyor, soru mu soruyor?",
+      "aciklama": "“Eyvah” bir duyguyu (şaşkınlık, üzüntü) gösterir; ünlem işareti konur."
+     },
+     {
+      "soru": "Hangi cümlenin sonuna soru işareti konur?",
+      "secenekler": [
+       "Yarın okula geliyor musun",
+       "Ne güzel bir gün",
+       "Kapıyı kapattım"
+      ],
+      "dogru": 0,
+      "ipucu": "“mu, mı, mü” gibi bir soru eki var mı?",
+      "aciklama": "“Geliyor musun” soru sorar; sonuna soru işareti konur."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "İkileme",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>iki kelime</text><rect x='8' y='42' width='48' height='22' rx='9' fill='#fbf6e6'/><text x='32.0' y='57' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>yavaş</text><rect x='64' y='42' width='48' height='22' rx='9' fill='#fbf6e6'/><text x='88.0' y='57' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>yavaş</text><rect x='20' y='80' width='80' height='6' rx='3' fill='#f5c53d'/><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>güçlü anlam</text></svg>",
+   "aciklama": "İkileme, anlamı güçlendirmek için iki kelimenin yan yana kullanılmasıdır: yavaş yavaş, tekrar tekrar, iyi kötü, doğru dürüst.",
+   "ek": "Kitap dışı bilgi (önceki yıllar): İkileme aynı kelimenin tekrarıyla (tekrar tekrar), eş ya da yakın anlamlı kelimelerle (doğru dürüst) ya da zıt anlamlı kelimelerle (iyi kötü) yapılabilir. Kitaptaki etkinlikte on cümlenin hepsinde bir ikileme var (s. 34).",
+   "akilda": "İki kelime, güçlü anlam",
+   "soru": {
+    "soru": "Hangi cümlede ikileme vardır?",
+    "secenekler": [
+     "Yavaş yürüdük.",
+     "Yürüyerek gittik.",
+     "Yavaş yavaş yürüdük."
+    ],
+    "dogru": 2,
+    "ipucu": "Yan yana gelen iki kelimeyi ara.",
+    "aciklama": "“Yavaş yavaş” bir ikilemedir; aynı kelime tekrar edilerek anlam güçlenmiştir."
+   }
+  },
+  {
+   "ad": "İkilemeler Ayrı Yazılır",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>ayrı yaz</text><rect x='8' y='34' width='50' height='22' rx='9' fill='#fbf6e6'/><text x='33.0' y='49' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>günden</text><rect x='64' y='34' width='48' height='22' rx='9' fill='#fbf6e6'/><text x='88.0' y='49' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>güne</text><rect x='8' y='72' width='104' height='22' rx='9' fill='#46507a'/><text x='60' y='87' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#8a93ad'>gündengüne</text><path d='M14 83 H106' stroke='#ff7a6b' stroke-width='3'/><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>✓ üstteki doğru</text></svg>",
+   "aciklama": "İkilemeler ayrı yazılır: günden güne, çoluk çocuk, omuz omuza.",
+   "ek": "Kitaptaki etkinlikte “gündengüne, çolukçocuk, omuzomuza” biçiminde bitişik yazılan ikilemeler yanlıştır; doğrusu “günden güne, çoluk çocuk, omuz omuza”dır (s. 34). Bu kural kitapta kutu olarak verilmiyor; etkinlikten çıkarıldı (kitap dışı açıklama). Bitişik yazılan çok az istisna vardır; onları bu konuda işlemiyoruz.",
+   "akilda": "İki kelime, iki ayrı parça",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Azimle çalıştığı için gündengüne kendini geliştirdi.” (s. 34) Bu cümledeki ikilemenin yazımı doğru mu?",
+    "adimlar": [
+     {
+      "metin": "Önce ikilemeyi bul: yan yana iki kelime nerede?",
+      "islem": "gündengüne"
+     },
+     {
+      "metin": "İki kelime ayrı mı yazılmış, bitişik mi?",
+      "islem": "bitişik → yanlış"
+     },
+     {
+      "metin": "İkilemeyi ayırarak doğrusunu yaz.",
+      "islem": "günden güne"
+     }
+    ],
+    "sonuc": "İkileme bitişik yazılmıştı. Doğrusu: “Azimle çalıştığı için günden güne kendini geliştirdi.”"
+   },
+   "soru": {
+    "soru": "Hangi ikilemenin yazımı doğrudur?",
+    "secenekler": [
+     "çolukçocuk",
+     "çoluk çocuk",
+     "çoluk-çocuk"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartına bak: ikilemeler nasıl yazılır?",
+    "aciklama": "İkilemeler ayrı yazılır: çoluk çocuk."
+   }
+  },
+  {
+   "ad": "Araya İşaret Konmaz",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>araya işaret yok</text><rect x='8' y='34' width='104' height='22' rx='9' fill='#fbf6e6'/><text x='60.0' y='49' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>iyi kötü  ✓</text><rect x='8' y='66' width='104' height='22' rx='9' fill='#46507a'/><text x='60' y='81' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#ff7a6b'>iyi-kötü  ✗</text><rect x='8' y='94' width='104' height='20' rx='9' fill='#46507a'/><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#ff7a6b'>arada, sırada  ✗</text></svg>",
+   "aciklama": "İkilemelerin arasına virgül ya da kısa çizgi konmaz: iyi kötü, arada sırada.",
+   "ek": "Kitaptaki etkinlikte “iyi-kötü” ve “arada, sırada” yanlış yazılmış örneklerdir; doğrusu “iyi kötü” ve “arada sırada”dır (s. 34). İkileme tek bir anlam taşır; araya işaret koyunca iki ayrı kelime gibi okunur.",
+   "akilda": "Ne virgül ne çizgi",
+   "soru": {
+    "soru": "“Aile büyüklerimizin arada, sırada değil her gün hatırını sormalıyız.” (s. 34) Bu cümledeki ikilemenin doğru yazımı hangisi?",
+    "secenekler": [
+     "arada sırada",
+     "arada-sırada",
+     "aradasırada"
+    ],
+    "dogru": 0,
+    "ipucu": "İkilemenin arasına virgül ya da çizgi konur mu? Bitişik mi yazılır?",
+    "aciklama": "İkilemeler ayrı yazılır, araya işaret konmaz: arada sırada."
+   }
+  },
+  {
+   "ad": "Eksik Bırakılan Cevap",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>eksik cevap</text><rect x='8' y='32' width='92' height='22' rx='9' fill='#fbf6e6'/><text x='54.0' y='47' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>Ödevini yaptın mı?</text><rect x='30' y='64' width='82' height='22' rx='9' fill='#f5c53d'/><text x='71.0' y='79' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>— Şey…</text><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>cevap yarım kaldı</text></svg>",
+   "aciklama": "Üç nokta, karşılıklı konuşmalarda yeterli olmayan, eksik bırakılan cevaplarda kullanılır. (s. 35)",
+   "ek": "Konuşan kişi ne diyeceğini bilmiyor, utanıyor ya da sözünü bitiremiyor olabilir. Örnek: “— Ödevini yaptın mı? — Şey…” Kişi hiç cevap veremediyse yalnızca üç nokta yazılır: “— …”",
+   "akilda": "Yarım kalan cevap…",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“— Vazoyu kim kırdı? — Ben… yani… kedi!” Bu konuşmada üç nokta hangi görevde?",
+    "adimlar": [
+     {
+      "metin": "Üç nokta konuşmanın neresinde? Soru mu, cevap mı?",
+      "islem": "cevapta"
+     },
+     {
+      "metin": "Cevap tam ve açık mı? Kişi rahat konuşuyor mu?",
+      "islem": "cevap yarım, kekeliyor"
+     },
+     {
+      "metin": "Yeterli olmayan, eksik cevap: üç noktanın görevi bu.",
+      "islem": "eksik bırakılan cevap"
+     }
+    ],
+    "sonuc": "Konuşan kişi cevabı tamamlayamıyor. Üç nokta bu eksikliği gösteriyor."
+   },
+   "soru": {
+    "soru": "“— Sınav nasıl geçti? — Eh…” Bu konuşmada üç nokta neyi gösteriyor?",
+    "secenekler": [
+     "Cevabın eksik bırakıldığını",
+     "Bir şeyin sayıldığını",
+     "Cümlenin soru olduğunu"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartına bak: konuşmalarda yarım kalan cevap.",
+    "aciklama": "“Eh…” yeterli bir cevap değil; kişi cevabı eksik bırakıyor."
+   }
+  },
+  {
+   "ad": "Anlatımı Pekiştirme",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>seslenme · ünlem</text><text x='60' y='62' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='22' fill='#fbf6e6'>Barış…</text><text x='60' y='94' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='24' fill='#f5c53d'>Barış!..</text><text x='60' y='113' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>ses yükseliyor</text></svg>",
+   "aciklama": "Üç nokta, ünlem ve seslenmelerde anlatımı pekiştirmek için kullanılır. (s. 35)",
+   "ek": "Kitaptaki örnek: Öğretmen öğrenciyi çağırır: “Barış… Barış!..” (s. 35) Üç nokta seslenmeyi uzatır, duyguyu güçlendirir. Başka örnek: “Eyvah… Otobüsü kaçırdık!”",
+   "akilda": "Seslenme ve ünlemi güçlendirir",
+   "soru": {
+    "soru": "“Eyvah… Otobüsü kaçırdık!” cümlesinde üç nokta ne için kullanılmış?",
+    "secenekler": [
+     "Cevabı eksik bırakmak için",
+     "Ünlemi pekiştirmek için",
+     "Bir listeyi bitirmek için"
+    ],
+    "dogru": 1,
+    "ipucu": "“Eyvah” bir ünlemdir. Bilgi kartında ünlemlerle ilgili görev neydi?",
+    "aciklama": "“Eyvah” bir ünlem; üç nokta şaşkınlığı ve üzüntüyü güçlendiriyor."
+   }
+  },
+  {
+   "ad": "Sözü Okuyucuya Bırakma",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='20' width='100' height='24' rx='6' fill='#fbf6e6'/><text x='60' y='37' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>kapıyı açtı ve…</text><circle cx='36' cy='80' r='10' fill='#46507a'/><circle cx='60' cy='72' r='13' fill='#46507a'/><circle cx='86' cy='80' r='10' fill='#46507a'/><text x='60' y='78' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#f5c53d'>?</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>gerisini sen düşün</text></svg>",
+   "aciklama": "Üç nokta, sözün bir yerde kesilerek geri kalan bölümün okuyucunun hayal dünyasına bırakıldığını göstermek için kullanılır. (s. 35)",
+   "ek": "Yazar her şeyi söylemez; merak uyandırır ya da okura düşünecek yer bırakır. Örnek: “Kapıyı yavaşça açtı ve…” Okur kapının arkasında ne olduğunu hayal eder.",
+   "akilda": "Gerisini okur düşünsün…",
+   "soru": {
+    "soru": "Hangi cümlede söz okuyucunun hayal dünyasına bırakılmıştır?",
+    "secenekler": [
+     "— Kim geldi? — Ben…",
+     "Ah… Ne güzel bir sabah!",
+     "Ormanın derinliklerinden bir ses yükseldi ve…"
+    ],
+    "dogru": 2,
+    "ipucu": "Hangi cümle yarıda kesilip okura bırakılıyor? Konuşma ya da ünlem olmayan cümleye bak.",
+    "aciklama": "Son cümle yarıda kesiliyor; sesin ne olduğunu okur hayal ediyor."
+   }
+  },
+  {
+   "ad": "Ünlemden Sonra İki Nokta",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>! ve ? sonrası</text><rect x='14' y='32' width='92' height='30' rx='8' fill='#fbf6e6'/><text x='60' y='53' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='15' fill='#2b2417'>Barış!..</text><rect x='14' y='72' width='92' height='30' rx='8' fill='#fbf6e6'/><text x='60' y='93' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='15' fill='#2b2417'>Öyle mi?..</text><text x='60' y='115' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>iki nokta yeter</text></svg>",
+   "aciklama": "Ünlem ve soru işaretinden sonra üç nokta yerine iki nokta kullanılması yeterlidir. (s. 35)",
+   "ek": "Çünkü ünlem ve soru işaretinin altında zaten bir nokta vardır. Doğru: “Barış!..”, “Öyle mi?..”. Kitap bunu “Uyarı” olarak verir (s. 35).",
+   "akilda": "!.. ve ?..",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Ahmet!.. Bana bakar mısın?” (s. 35) Bu cümledeki işaretleri inceleyelim.",
+    "adimlar": [
+     {
+      "metin": "1. “Ahmet” kelimesinden sonra kaç nokta var?",
+      "soru": {
+       "soru": "Ünlemden sonra kaç nokta var?",
+       "secenekler": [
+        "Bir",
+        "İki",
+        "Üç"
+       ],
+       "dogru": 1,
+       "ipucu": "“!..” işaretindeki noktaları say; ünlemin kendi noktasını sayma.",
+       "aciklama": "Ünlemden sonra iki nokta var: “!..”"
+      },
+      "islem": "Ahmet!.."
+     },
+     {
+      "metin": "2. Neden üç değil de iki nokta?",
+      "soru": {
+       "soru": "Neden iki nokta yeterli?",
+       "secenekler": [
+        "Ünlemden sonra iki nokta yeterlidir",
+        "Cümle kısa olduğu için",
+        "Yazar unuttuğu için"
+       ],
+       "dogru": 0,
+       "ipucu": "Bilgi kartındaki uyarıyı hatırla.",
+       "aciklama": "Kitaptaki uyarı: Ünlem ve soru işaretinden sonra iki nokta yeterlidir."
+      },
+      "islem": "ünlemden sonra iki nokta"
+     },
+     {
+      "metin": "3. Bu işaret ne yapıyor? Biri Ahmet'e sesleniyor ve sesini yükseltiyor.",
+      "islem": "seslenmeyi pekiştirme"
+     }
+    ],
+    "sonuc": "Harika! Hem iki nokta kuralını hem de seslenmeyi pekiştirme görevini gördün."
+   },
+   "soru": {
+    "soru": "Hangisinin noktalaması doğrudur?",
+    "secenekler": [
+     "Gerçekten mi?...",
+     "Gerçekten mi?..",
+     "Gerçekten mi...?"
+    ],
+    "dogru": 1,
+    "ipucu": "Soru işaretinden sonra kaç nokta konur?",
+    "aciklama": "Soru işaretinden sonra iki nokta yeterlidir: “?..”"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi ikilemelerle, hangisi üç noktayla ilgili?",
+   "kutular": [
+    {
+     "etiket": "İkilemeler",
+     "uyeler": [
+      "İkileme",
+      "İkilemeler Ayrı Yazılır",
+      "Araya İşaret Konmaz"
+     ]
+    },
+    {
+     "etiket": "Üç nokta",
+     "uyeler": [
+      "Eksik Bırakılan Cevap",
+      "Anlatımı Pekiştirme",
+      "Sözü Okuyucuya Bırakma",
+      "Ünlemden Sonra İki Nokta"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki etkinlikte (s. 34) ikilemeler iki türlü yanlış yazılmış: bazıları bitişik (gündengüne), bazılarının arasına işaret konmuş (iyi-kötü, arada, sırada)."
+ ],
+ "akildaKalsin": [
+  "İkileme: iki kelime yan yana, anlam güçlenir.",
+  "İkilemeler ayrı yazılır: günden güne.",
+  "İkilemelerin arasına virgül ya da çizgi konmaz.",
+  "Üç nokta: eksik cevap, ünlemi pekiştirme, sözü okura bırakma.",
+  "! ve ? işaretinden sonra iki nokta yeter."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "İkilemeler neden kullanılır?",
+   "cevap": "Anlatımı güçlendirmek ve renklendirmek için. “Yavaş yürüdü” ile “yavaş yavaş yürüdü” arasındaki farkı düşün: ikincisi daha canlı."
+  },
+  {
+   "soru": "“Ufak tefek” ikileme mi? “Tefek” ne demek?",
+   "cevap": "Evet, ikilemedir (s. 34). Bazı ikilemelerde kelimelerden biri tek başına pek kullanılmaz; ikisi birlikte anlam kazanır. Yine ayrı yazılır."
+  },
+  {
+   "soru": "Üç noktayı istediğim kadar nokta koyarak yazabilir miyim?",
+   "cevap": "Hayır. Üç nokta tam üç noktadır (…). Ünlem ve soru işaretinden sonra ise iki nokta konur (s. 35)."
+  },
+  {
+   "soru": "Hiç konuşmayan birinin cevabı nasıl yazılır?",
+   "cevap": "Yalnızca üç nokta konur: “— Şef Serap Hanım'la mı? — …” Kitaptaki örnekte de böyle (s. 35)."
+  },
+  {
+   "soru": "Üç noktanın görevini nasıl ayırt ederim?",
+   "cevap": "Konuşmada bir cevap yarım kaldıysa eksik cevap; bir ünlem ya da seslenme varsa pekiştirme; anlatılan olay yarıda kesildiyse söz okura bırakılmıştır."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Üç noktanın üç görevinden birine örnek bir cümle yaz. Cümlende bir ikileme de kullan.",
+   "ornekCevap": "Merdivenleri yavaş yavaş çıktı, kapıyı araladı ve… (Görev: sözü okuyucuya bırakma. İkileme: yavaş yavaş)",
+   "anahtarlar": [
+    "görev",
+    "okuyucu",
+    "eksik",
+    "pekiştir",
+    "ikileme"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangi cümlede ikileme yoktur?",
+   "secenekler": [
+    "Çocuklar akıllı uslu oturdu.",
+    "Konuyu enine boyuna inceledi.",
+    "Kitabı dikkatle okudu."
+   ],
+   "dogru": 2,
+   "ipucu": "Yan yana gelip anlamı güçlendiren iki kelimeyi ara.",
+   "aciklama": "“Akıllı uslu” ve “enine boyuna” ikilemedir. “Dikkatle okudu” cümlesinde ikileme yok.",
+   "kavram": "İkileme"
+  },
+  {
+   "soru": "Hangi cümlede ikilemenin yazımı doğrudur?",
+   "secenekler": [
+    "Kitapları tekrartekrar okudu.",
+    "Kitapları tekrar tekrar okudu.",
+    "Kitapları tekrar-tekrar okudu."
+   ],
+   "dogru": 1,
+   "ipucu": "İkilemeler bitişik mi, ayrı mı yazılır? Araya çizgi konur mu?",
+   "aciklama": "İkilemeler ayrı yazılır, araya işaret konmaz: tekrar tekrar.",
+   "kavram": "İkilemeler Ayrı Yazılır"
+  },
+  {
+   "soru": "“Dostlukta iyi-kötü her anı paylaşmak vefanın göstergesidir.” (s. 34) Bu cümledeki yazım yanlışının doğrusu hangisidir?",
+   "secenekler": [
+    "iyi kötü",
+    "iyikötü",
+    "iyi, kötü"
+   ],
+   "dogru": 0,
+   "ipucu": "İkilemenin arasına çizgi ya da virgül konur mu?",
+   "aciklama": "İkilemelerin arasına işaret konmaz ve ayrı yazılırlar: iyi kötü.",
+   "kavram": "Araya İşaret Konmaz"
+  },
+  {
+   "soru": "“Sıfır atık projesine çolukçocuk hep beraber katıldık.” (s. 34) Bu cümle için hangisi doğrudur?",
+   "secenekler": [
+    "Yazım doğrudur.",
+    "“Çolukçocuk” ayrı yazılmalıdır.",
+    "“Çolukçocuk” kısa çizgiyle yazılmalıdır."
+   ],
+   "dogru": 1,
+   "ipucu": "İkilemeyi bul. Bitişik mi yazılmış?",
+   "aciklama": "İkilemeler ayrı yazılır: çoluk çocuk.",
+   "kavram": "İkilemeler Ayrı Yazılır"
+  },
+  {
+   "soru": "“— Defterini getirdin mi? — Ben…” Bu konuşmada üç nokta hangi görevde?",
+   "secenekler": [
+    "Ünlemi pekiştirme",
+    "Sözü okuyucuya bırakma",
+    "Eksik bırakılan cevap"
+   ],
+   "dogru": 2,
+   "ipucu": "Üç nokta konuşmanın neresinde: soruda mı, cevapta mı?",
+   "aciklama": "Cevap “Ben…” diye yarım kalmış. Üç nokta eksik bırakılan cevabı gösteriyor.",
+   "kavram": "Eksik Bırakılan Cevap"
+  },
+  {
+   "soru": "“Of… Yine geç kaldım!” (s. 35) Bu cümlede üç nokta hangi görevde?",
+   "secenekler": [
+    "Ünlemi pekiştirme",
+    "Eksik bırakılan cevap",
+    "Sözü okuyucuya bırakma"
+   ],
+   "dogru": 0,
+   "ipucu": "“Of” bir ünlem. Bilgi kartında ünlemlerle ilgili görev neydi?",
+   "aciklama": "“Of” bir ünlemdir; üç nokta sıkıntıyı güçlendiriyor.",
+   "kavram": "Anlatımı Pekiştirme"
+  },
+  {
+   "soru": "Hangisinin noktalaması doğrudur?",
+   "secenekler": [
+    "Deniz!...",
+    "Deniz…!",
+    "Deniz!.."
+   ],
+   "dogru": 2,
+   "ipucu": "Ünlemden sonra kaç nokta konur?",
+   "aciklama": "Ünlem işaretinden sonra iki nokta yeterlidir: “Deniz!..”",
+   "kavram": "Ünlemden Sonra İki Nokta"
+  },
+  {
+   "soru": "Paragraftaki ikilemelerden hangisinin yazımı yanlıştır?",
+   "metinBaslik": "Ay'ı Gözlemledik",
+   "metin": [
+    "Ay'ın görünüşü gün geçtikçe değişir.",
+    "Bazı geceler ince bir hilal, bazı geceler yuvarlak bir dolunay görürüz.",
+    "Bunu gözlemlemek için her akşam Ay'ın şeklini tek tek defterimize çizdik.",
+    "Dört hafta boyunca Ay'ın aydınlık görünen kısmının azar azar büyüdüğünü, sonra yavaş-yavaş küçüldüğünü gördük."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Arasına işaret konmuş ikilemeyi ara.",
+   "secenekler": [
+    "yavaş-yavaş",
+    "tek tek",
+    "azar azar"
+   ],
+   "dogru": 0,
+   "ipucu": "İkilemelerin arasına işaret konur mu?",
+   "aciklama": "Son cümledeki “yavaş-yavaş” yanlış; ikilemelerin arasına çizgi konmaz: yavaş yavaş.",
+   "kavram": "Araya İşaret Konmaz",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yazımı yanlış olan ikilemeyi.",
+     "Anahtar kelime: ikileme. Paragraftaki yan yana iki kelimeleri bul.",
+     "Kanıt: Arasına işaret konmuş ya da bitişik yazılmış ikilemenin olduğu cümleye dokun.",
+     "Şıkları ele: Ayrı yazılmış ve arasında işaret olmayan ikilemeler doğrudur."
+    ]
+   }
+  },
+  {
+   "soru": "Konuşmada üç nokta hangi görevde kullanılmıştır?",
+   "metinBaslik": "Tarih Dersinde",
+   "metin": [
+    {
+     "kim": "Öğretmen",
+     "s": "Osmanlı Devleti hangi yıl kuruldu?"
+    },
+    {
+     "kim": "Ece",
+     "s": "Bin iki yüz…"
+    },
+    {
+     "kim": "Öğretmen",
+     "s": "Devam et, yaklaştın."
+    },
+    {
+     "kim": "Ece",
+     "s": "Bin iki yüz… doksan dokuz mu?"
+    },
+    {
+     "kim": "Öğretmen",
+     "s": "Evet, 1299. Önemli tarihleri bir zaman şeridine yazarsan daha kolay hatırlarsın."
+    }
+   ],
+   "kanit": [
+    1,
+    3
+   ],
+   "kanitIpucu": "Üç noktanın geçtiği konuşma satırına dokun.",
+   "secenekler": [
+    "Sözü okuyucuya bırakma",
+    "Eksik bırakılan cevap",
+    "Ünlemi pekiştirme"
+   ],
+   "dogru": 1,
+   "ipucu": "Üç nokta kimin sözünde? O kişi soru mu soruyor, cevap mı veriyor?",
+   "aciklama": "Ece cevabı tam veremiyor, yarım bırakıyor. Üç nokta eksik bırakılan cevabı gösteriyor.",
+   "kavram": "Eksik Bırakılan Cevap",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Üç noktanın görevini.",
+     "Anahtar kelime: üç nokta (…). Konuşmada onu ara.",
+     "Kanıt: Üç noktanın geçtiği satıra dokun. Bu bir soru mu, cevap mı?",
+     "Şıkları ele: Konuşmada ünlem var mı? Anlatılan bir olay yarıda mı kesiliyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Paragraftaki üç noktalarla ilgili hangisi doğrudur?",
+   "metinBaslik": "Eski Sandık",
+   "metin": [
+    "Mert, dedesinin eski sandığını tavan arasında buldu.",
+    "Sandığın üstünde tozlu bir kilit vardı.",
+    "Anahtarı çevirdi, kapağı yavaşça kaldırdı ve…",
+    "“Vay… Bu ne güzel bir harita!” diye bağırdı."
+   ],
+   "kanit": [
+    2,
+    3
+   ],
+   "kanitIpucu": "Üç noktanın geçtiği cümlelerden birine dokun.",
+   "secenekler": [
+    "İkisi de eksik bırakılan bir cevaptır.",
+    "İkisi de sözü okuyucuya bırakıyor.",
+    "“…kaldırdı ve…” sözü okuyucuya bırakıyor; “Vay…” ünlemi pekiştiriyor."
+   ],
+   "dogru": 2,
+   "ipucu": "Paragrafta iki üç nokta var. Her birinin yanında ne var: yarım kalan bir olay mı, bir ünlem mi?",
+   "aciklama": "“Kaldırdı ve…” olayı yarıda keser, okur ne olduğunu hayal eder. “Vay” bir ünlemdir; üç nokta şaşkınlığı güçlendirir. Konuşma olmadığı için eksik cevap yok.",
+   "kavram": "Sözü Okuyucuya Bırakma",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Paragraftaki iki üç noktanın görevlerini.",
+     "Anahtar kelime: üç nokta (…). Paragrafta iki tane var.",
+     "Kanıt: Üç noktalı cümlelere dokun. Birinde olay yarıda kesiliyor, ötekinde bir ünlem var.",
+     "Şıkları ele: Paragrafta soru-cevap şeklinde bir konuşma var mı? Yoksa “eksik cevap” şıkkı olamaz."
+    ]
+   }
+  }
+ ]
+}
