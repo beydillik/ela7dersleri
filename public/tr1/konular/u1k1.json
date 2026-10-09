@@ -1,0 +1,526 @@
+{
+ "id": "u1k1",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "Kelimenin Anlamını Bulma",
+ "sayfalar": "s. 12–17, 30–32, 43",
+ "giris": "Okurken bilmediğin bir kelimeyle karşılaşınca ne yaparsın? Bu konuda kelimenin anlamını cümlenin içinden bulmayı öğreneceğiz. Bir de her soruda işine yarayacak 4 adımlı Okuma Dedektifi yöntemini tanıyacağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, önceki yıllarda öğrendiğin iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.",
+  "maddeler": [
+   {
+    "ad": "Gerçek ve mecaz anlam",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='24' width='44' height='60' rx='10' fill='#fbf6e6'/><text x='34' y='46' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>tatlı</text><path d='M24 66 h20 l-3 12 h-14z' fill='#e9573f'/><circle cx='34' cy='62' r='5' fill='#fff'/><rect x='64' y='24' width='44' height='60' rx='10' fill='#6ea8ef'/><text x='86' y='46' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>tatlı</text><path d='M76 62 q10 10 20 0' stroke='#1b2340' stroke-width='3' fill='none' stroke-linecap='round'/><text x='34' y='102' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>gerçek</text><text x='86' y='102' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>mecaz</text></svg>",
+    "anlatim": "Gerçek anlam, kelimenin akla ilk gelen anlamıdır: 'tatlı pasta' gibi. Mecaz anlam, kelimenin bu ilk anlamdan uzaklaşıp yeni bir anlam kazanmasıdır: 'tatlı dil' (güzel, yumuşak konuşma) gibi.",
+    "akilda": "Gerçek: ilk anlam · Mecaz: yeni anlam",
+    "sorular": [
+     {
+      "soru": "Annesi Jonathan'a “Artık bir kemik bir tüy kaldın.” diyor. (s. 13) Annesi ne demek istiyor?",
+      "secenekler": [
+       "Jonathan'ın kemiği kırıldı.",
+       "Jonathan çok zayıfladı.",
+       "Jonathan tüylerini döktü."
+      ],
+      "dogru": 1,
+      "ipucu": "Jonathan uçmaya çalışırken avlanmıyor, yemek yemiyor. Sonucunda nasıl görünür?",
+      "aciklama": "Jonathan avlanmadığı için çok zayıflamış. 'Bir kemik bir tüy kalmak' mecaz anlamdadır: çok zayıflamak. (s. 13)"
+     },
+     {
+      "soru": "Hangi cümlede 'tatlı' mecaz anlamda kullanılmıştır?",
+      "secenekler": [
+       "Pasta çok tatlıydı.",
+       "Tatlı yemeyi severim.",
+       "Bize tatlı bir dille konuştu."
+      ],
+      "dogru": 2,
+      "ipucu": "Hangi cümlede 'tatlı' kelimesi tadı anlatmıyor?",
+      "aciklama": "'Tatlı dil' tadı değil, yumuşak ve güzel konuşmayı anlatır. Bu mecaz anlamdır."
+     }
+    ]
+   },
+   {
+    "ad": "Sözlük kullanma",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='26' y='16' width='68' height='88' rx='8' fill='#c0392b'/><rect x='32' y='22' width='56' height='76' rx='4' fill='#fbf6e6'/><text x='40' y='38' text-anchor='start' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>kanat</text><text x='40' y='54' text-anchor='start' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>kavis</text><text x='40' y='70' text-anchor='start' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>kaygı</text><text x='46' y='86' text-anchor='start' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='9' fill='#b7791f'>1. … 2. …</text></svg>",
+    "anlatim": "Sözlükte kelimeler alfabe sırasıyla dizilir. İlk harfler aynıysa ikinci, sonra üçüncü harfe bakılır. Bir kelimenin birden çok anlamı varsa 1, 2, 3 diye numaralarla sıralanır.",
+    "akilda": "Alfabe sırası · numaralı anlamlar",
+    "sorular": [
+     {
+      "soru": "Sözlükte hangisi daha önce gelir?",
+      "secenekler": [
+       "kavis",
+       "kanat",
+       "kaygı"
+      ],
+      "dogru": 1,
+      "ipucu": "Üçü de 'ka' ile başlıyor. Üçüncü harflere bak: v, n, y. Alfabede hangisi önce?",
+      "aciklama": "Üçüncü harfler n, v, y. Alfabede önce n gelir: kanat."
+     },
+     {
+      "soru": "Sözlükte bir kelimenin altında 1, 2, 3 diye sıralananlar nedir?",
+      "secenekler": [
+       "Kelimenin farklı anlamları",
+       "Kelimenin harfleri",
+       "Sayfa numaraları"
+      ],
+      "dogru": 0,
+      "ipucu": "Bir kelimenin birden çok anlamı olabilir. Sözlük bunları nasıl gösterir?",
+      "aciklama": "Numaralar, kelimenin farklı anlamlarını sıralar."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Bağlam",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='26' width='92' height='9' rx='4.5' fill='#6ea8ef' opacity='.55'/><rect x='14' y='44' width='30' height='9' rx='4.5' fill='#6ea8ef' opacity='.55'/><rect x='46' y='40' width='30' height='17' rx='6' fill='#f5c53d'/><text x='61' y='53' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>???</text><rect x='78' y='44' width='28' height='9' rx='4.5' fill='#6ea8ef' opacity='.55'/><rect x='14' y='62' width='76' height='9' rx='4.5' fill='#6ea8ef' opacity='.55'/><path d='M30 84 q30 -22 60 0' stroke='#f5c53d' stroke-width='3' fill='none' stroke-dasharray='4 5'/><path d='M30 84 l-4 -7 M30 84 l8 -2 M90 84 l4 -7 M90 84 l-8 -2' stroke='#f5c53d' stroke-width='3' stroke-linecap='round'/><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='12' fill='#fbf6e6'>çevresine bak</text></svg>",
+   "aciklama": "Bağlam, bir kelimenin çevresindeki cümlelerdir. Bilmediğin bir kelimenin anlamını çoğu zaman bağlam söyler.",
+   "ek": "Kitaptaki örnek: “Şimdi rüzgâr hafifçe yüzünü yalıyordu.” Rüzgârın dili yok! Bağlam bize rüzgârın Jonathan'ın yüzüne hafifçe dokunduğunu anlatır. (s. 12)",
+   "akilda": "Önce çevresine bak",
+   "soru": {
+    "soru": "Bilmediğin bir kelimenin anlamını bulurken ilk nereye bakarsın?",
+    "secenekler": [
+     "Kelimenin çevresindeki cümlelere",
+     "Kelimenin kaç harfli olduğuna",
+     "Kitabın kapağına"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki 'akılda kalsın' cümlesini hatırla.",
+    "aciklama": "Kelimenin anlamını en çok çevresindeki cümleler, yani bağlam söyler."
+   }
+  },
+  {
+   "ad": "Tahmin Et, Sözlükle Kontrol Et",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='22' width='44' height='58' rx='8' fill='#fbf6e6'/><text x='34' y='46' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='22' fill='#b7791f'>?</text><text x='34' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#2b2417'>tahmin</text><path d='M60 51 h10' stroke='#f5c53d' stroke-width='4' stroke-linecap='round'/><path d='M66 45 l6 6 -6 6' stroke='#f5c53d' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='76' y='22' width='32' height='58' rx='6' fill='#c0392b'/><rect x='80' y='26' width='24' height='50' rx='3' fill='#e9573f'/><text x='92' y='56' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#fff'>SÖZ</text><text x='92' y='66' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#fff'>LÜK</text><circle cx='92' cy='96' r='10' fill='#2ecc71'/><path d='M87 96 l4 4 7 -8' stroke='#fff' stroke-width='3' fill='none' stroke-linecap='round'/><text x='40' y='102' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#fbf6e6'>önce tahmin</text></svg>",
+   "aciklama": "Bilmediğin kelimenin anlamını önce bağlamdan tahmin et. Sonra sözlükten bakıp tahminini kontrol et.",
+   "ek": "Kitap bunun için TDK Güncel Türkçe Sözlük'ü kullanmanı ister. Tahminin doğru çıkarsa harika; değilse sözlük seni düzeltir. (s. 32, 43)",
+   "akilda": "Önce tahmin, sonra sözlük",
+   "cozum": {
+    "baslik": "Birlikte tahmin edelim",
+    "problem": "“…ona acı veren bir kavisi oluşturabilmek için kanatlarını iyice geriyordu. Eğer bu kavisi oluşturabilirse daha yavaş uçabilecekti.” (s. 12) 'Kavis' ne demek?",
+    "adimlar": [
+     {
+      "metin": "Kelimenin geçtiği cümleleri oku. Jonathan kavisi oluşturmak için ne yapıyor?",
+      "islem": "kanatlarını geriyor"
+     },
+     {
+      "metin": "Kanatlarını gerince kanatlar nasıl bir şekil alır? Düz mü, bükük mü?",
+      "islem": "kanatlar bükülüyor"
+     },
+     {
+      "metin": "Tahminini yaz.",
+      "islem": "Tahmin: eğri, yay gibi bir şekil"
+     },
+     {
+      "metin": "Sözlükten kontrol et. Sözlükte de 'kavis' eğri, yay biçimi anlamına gelir.",
+      "islem": "Tahmin doğru ✓"
+     }
+    ],
+    "sonuc": "Kavis: eğri, yay gibi bir şekil. Bağlam sayesinde sözlüğe bakmadan tahmin ettik, sözlükle de kontrol ettik."
+   },
+   "soru": {
+    "soru": "Bir kelimenin anlamını tahmin ettin. Tahminini nasıl kontrol edersin?",
+    "secenekler": [
+     "Kelimeyi silerek",
+     "Sözlüğe bakarak",
+     "Hiç kontrol etmeden"
+    ],
+    "dogru": 1,
+    "ipucu": "Kitap tahmini hangi kaynakla karşılaştırmanı istiyor?",
+    "aciklama": "Tahmin sözlükle kontrol edilir. (s. 32)"
+   }
+  },
+  {
+   "ad": "Metindeki Anlam ve Sözlük Anlamı",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='20' fill='#f5c53d'>yüz</text><path d='M52 36 L30 58 M68 36 L90 58' stroke='#fbf6e6' stroke-width='2.5' stroke-linecap='round'/><circle cx='28' cy='76' r='16' fill='#ffd7b0'/><circle cx='22' cy='73' r='2' fill='#2b2417'/><circle cx='34' cy='73' r='2' fill='#2b2417'/><path d='M22 81 q6 5 12 0' stroke='#2b2417' stroke-width='2' fill='none'/><rect x='70' y='62' width='40' height='28' rx='8' fill='#6ea8ef'/><text x='90' y='82' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#1b2340'>100</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#fbf6e6'>cümle seçer</text></svg>",
+   "aciklama": "Bir kelimenin sözlükte birden çok anlamı olabilir. Metinde hangi anlamda kullanıldığını cümle söyler.",
+   "ek": "Aynı sayfada iki 'yüz' var: “Yüz fite yükseldiğinde…” (sayı) ve “rüzgâr hafifçe yüzünü yalıyordu” (surat). Kitap bu yüzden 'Metindeki Anlamı' ve 'Sözlükteki Anlamı'nı ayrı ayrı yazdırır. (s. 12, 16)",
+   "akilda": "Anlamı cümle seçer",
+   "soru": {
+    "soru": "“Yüz fite yükseldiğinde perdeli ayaklarını indiriyordu.” (s. 12) Bu cümlede 'yüz' hangi anlamdadır?",
+    "secenekler": [
+     "Surat",
+     "Suyun üstünde durmak",
+     "Bir sayı (100)"
+    ],
+    "dogru": 2,
+    "ipucu": "'Yüz fit' bir yükseklik ölçüsü. Ölçünün önünde ne olur?",
+    "aciklama": "'Yüz fit' bir yüksekliği anlatır; burada 'yüz' sayıdır (100). (s. 12)"
+   }
+  },
+  {
+   "ad": "Anahtar Kelime",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='38' cy='60' r='18' fill='none' stroke='#f5c53d' stroke-width='7'/><path d='M56 60 h46 M88 60 v14 M100 60 v10' stroke='#f5c53d' stroke-width='7' stroke-linecap='round'/><text x='38' y='65' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#fbf6e6'>Aa</text><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='12' fill='#fbf6e6'>metnin anahtarı</text><text x='60' y='28' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#6ea8ef'>özgür · tutku</text></svg>",
+   "aciklama": "Anahtar kelimeler, metnin konusunu taşıyan önemli kelimelerdir. Metnin asıl düşüncesine bağlanırlar.",
+   "ek": "Martı Jonathan metninde kitap şu kelimeleri öne çıkarır: özgür, sınırlarını zorlamak, sıra dışı, tutku. Hepsi Jonathan'ın uçmayı öğrenme isteğini anlatır. (s. 16)",
+   "akilda": "Metnin kapısını açar",
+   "soru": {
+    "soru": "Martı Jonathan metni için hangisi anahtar kelime olabilir?",
+    "secenekler": [
+     "kahvaltı",
+     "tutku",
+     "iskele"
+    ],
+    "dogru": 1,
+    "ipucu": "Hangi kelime Jonathan'ın uçmaya olan isteğini anlatıyor?",
+    "aciklama": "'Tutku' Jonathan'ın uçmayı büyük bir istekle sevmesini anlatır; metnin özüne bağlanır. (s. 13, 16)"
+   }
+  },
+  {
+   "ad": "Çağrışım",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='38' y='48' width='44' height='22' rx='11' fill='#f5c53d'/><text x='60' y='64' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>özgür</text><path d='M48 48 L30 28 M72 48 L92 28 M48 70 L28 92 M72 70 L92 92' stroke='#fbf6e6' stroke-width='2' stroke-dasharray='3 4'/><text x='26' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#6ea8ef'>kanat</text><text x='94' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#6ea8ef'>gök</text><text x='26' y='102' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#6ea8ef'>uçmak</text><text x='94' y='102' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#6ea8ef'>serbest</text></svg>",
+   "aciklama": "Bir kelime aklımıza başka kelimeler getirir. Buna çağrışım denir.",
+   "ek": "Kitap anahtar kelimelerin 'çağrıştırdığı kelimeleri' de yazdırır. Örneğin 'özgür' kelimesi bana gökyüzü, kanat, uçmak, serbest kelimelerini çağrıştırır. (s. 16)",
+   "akilda": "Kelime kelimeyi çağırır",
+   "soru": {
+    "soru": "'Tutku' kelimesi aklına hangi kelimeleri getirir?",
+    "secenekler": [
+     "Büyük sevgi, istek, vazgeçmemek",
+     "Uyku, yorgunluk, sıkılmak",
+     "Soğuk, kış, kar"
+    ],
+    "dogru": 0,
+    "ipucu": "Jonathan uçmayı tutkuyla seviyordu. O nasıl biriydi?",
+    "aciklama": "Tutku, bir şeye duyulan büyük sevgi ve istektir; vazgeçmemeyi çağrıştırır. (s. 13)"
+   }
+  },
+  {
+   "ad": "Kelime Grubu",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='40' width='44' height='26' rx='8' fill='#6ea8ef'/><text x='34' y='58' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>sınırlarını</text><rect x='62' y='40' width='46' height='26' rx='8' fill='#6ea8ef'/><text x='85' y='58' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>zorlamak</text><path d='M10 34 q50 -18 100 0 M10 72 q50 18 100 0' stroke='#f5c53d' stroke-width='3' fill='none'/><text x='60' y='100' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#fbf6e6'>birlikte oku</text><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#f5c53d'>= daha fazlasını dene</text></svg>",
+   "aciklama": "Bazen anlam tek bir kelimede değil, kelime grubundadır. Grup birlikte okunur ve birlikte anlam verir.",
+   "ek": "Jonathan “yeteneğinin sınırlarını zorlayarak” çalışıyordu. 'Sınırlarını zorlamak' burada yapabildiğinin daha fazlasını denemek demektir. (s. 14, 16)",
+   "akilda": "Grubu birlikte oku",
+   "soru": {
+    "soru": "'Sınırlarını zorlamak' ne anlama gelir?",
+    "secenekler": [
+     "Bir duvarı itmek",
+     "Kuralları bozmak",
+     "Yapabildiğinin daha fazlasını denemek"
+    ],
+    "dogru": 2,
+    "ipucu": "Jonathan hızlı uçmak için ne yapıyordu? Düşse bile tekrar tekrar deniyordu.",
+    "aciklama": "Jonathan hep daha hızlı, daha iyi uçmayı deniyordu: yapabildiğinin fazlasını. (s. 14)"
+   }
+  },
+  {
+   "ad": "Okuma Dedektifi: 4 Adım",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='50' cy='50' r='24' fill='none' stroke='#f5c53d' stroke-width='7'/><path d='M67 67 L92 92' stroke='#f5c53d' stroke-width='9' stroke-linecap='round'/><text x='50' y='46' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#fbf6e6'>1 sor</text><text x='50' y='60' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#fbf6e6'>2 bul</text><text x='96' y='30' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#6ea8ef'>3 kanıt</text><text x='30' y='102' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='11' fill='#6ea8ef'>4 ele</text></svg>",
+   "aciklama": "Bir soruyu çözerken hep aynı 4 adımı izle: 1) Soru ne istiyor? 2) Anahtar kelime ne? 3) Kanıt nerede? 4) Şıkları ele.",
+   "ek": "Soru kökünde 'değildir, çıkarılamaz, değinilmemiştir' gibi olumsuz bir kelime varsa onu işaretle: metne UYMAYAN şıkkı arıyorsun demektir. (kitap dışı strateji)",
+   "akilda": "Sor, bul, kanıtla, ele",
+   "cozum": {
+    "baslik": "Dedektif iş başında",
+    "problem": "“Arılar çiçekten çiçeğe konarken polenleri de taşır. Böylece bitkilerin meyve vermesine yardım ederler. Arılar azalırsa birçok meyve ve sebze de azalır.” Soru: Bu paragrafa göre arıların azalmasının sonucu nedir?",
+    "adimlar": [
+     {
+      "metin": "1. Soru ne istiyor? Kökü oku: bir sonucu soruyor.",
+      "islem": "Arılar azalırsa → ne olur?"
+     },
+     {
+      "metin": "2. Anahtar kelime ne? Metinde bu kelimeyi ara.",
+      "islem": "azalırsa"
+     },
+     {
+      "metin": "3. Kanıt nerede? Anahtar kelimenin geçtiği cümle.",
+      "islem": "“…birçok meyve ve sebze de azalır.”"
+     },
+     {
+      "metin": "4. Şıkları ele: 'Çiçekler daha çok açar' metinde yok. 'Polenler çoğalır' metinde yok.",
+      "islem": "Cevap: meyve ve sebzeler azalır"
+     }
+    ],
+    "sonuc": "Cevabı tahminle değil, metindeki kanıtla bulduk. Bu yöntem Fen ve Sosyal sorularında da işe yarar."
+   },
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Kütüphaneler yalnızca kitap okunan yerler değildir. Birçok kütüphanede film izlenir, atölyeler yapılır, öğrenciler birlikte ders çalışır.” Soru: Bu paragrafa göre kütüphanelerde aşağıdakilerden hangisi yapılmaz?",
+    "adimlar": [
+     {
+      "metin": "1. Soru ne istiyor? Kökte olumsuz bir kelime var mı?",
+      "soru": {
+       "soru": "Soru kökündeki olumsuz kelime hangisi?",
+       "secenekler": [
+        "yapılmaz",
+        "kütüphane",
+        "paragraf"
+       ],
+       "dogru": 0,
+       "ipucu": "Sorunun sonundaki fiile bak.",
+       "aciklama": "'Yapılmaz' olumsuzdur: metinde OLMAYANI arıyoruz."
+      },
+      "islem": "olumsuz kök: yapılmaz"
+     },
+     {
+      "metin": "2. Anahtar kelime: kütüphanede yapılanlar.",
+      "islem": "Ne yapılıyor?"
+     },
+     {
+      "metin": "3. Kanıt nerede? Metinde yapılanları bul.",
+      "soru": {
+       "soru": "Metne göre kütüphanede neler yapılır?",
+       "secenekler": [
+        "Yüzme, koşu, maç",
+        "Film, atölye, ders çalışma",
+        "Yemek, uyku, oyun"
+       ],
+       "dogru": 1,
+       "ipucu": "İkinci cümleyi oku.",
+       "aciklama": "İkinci cümle: film izlenir, atölye yapılır, ders çalışılır."
+      },
+      "islem": "film · atölye · ders çalışma"
+     },
+     {
+      "metin": "4. Şıkları ele.",
+      "soru": {
+       "soru": "Hangisi kütüphanede yapılmaz?",
+       "secenekler": [
+        "Film izlemek",
+        "Atölyeye katılmak",
+        "Yüzme yarışması"
+       ],
+       "dogru": 2,
+       "ipucu": "Metinde geçmeyen şıkkı bul.",
+       "aciklama": "Yüzme yarışması metinde yok; diğer ikisi metinde var."
+      },
+      "islem": "Cevap: yüzme yarışması"
+     }
+    ],
+    "sonuc": "Harika! Olumsuz kökü fark ettin ve metinde olmayanı buldun."
+   },
+   "soru": {
+    "soru": "Soru kökünde 'çıkarılamaz' yazıyorsa ne arıyorsun?",
+    "secenekler": [
+     "Metinde doğru olanı",
+     "Metne uymayanı",
+     "En uzun şıkkı"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki 'olumsuz kelime' uyarısını hatırla.",
+    "aciklama": "'Çıkarılamaz' olumsuz bir köktür: metne uymayan şıkkı ararız."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi tek bir kelimenin anlamıyla, hangisi metnin bütünüyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Kelimenin anlamı",
+     "uyeler": [
+      "Bağlam",
+      "Tahmin Et, Sözlükle Kontrol Et",
+      "Metindeki Anlam ve Sözlük Anlamı",
+      "Kelime Grubu"
+     ]
+    },
+    {
+     "etiket": "Metnin bütünü",
+     "uyeler": [
+      "Anahtar Kelime",
+      "Çağrışım",
+      "Okuma Dedektifi: 4 Adım"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "TDK Güncel Türkçe Sözlük internette ücretsizdir: sozluk.gov.tr adresinden bilmediğin kelimeye hemen bakabilirsin. (s. 43; adres kitap dışı)"
+ ],
+ "akildaKalsin": [
+  "Bilmediğin kelimenin anlamını önce bağlamdan, yani çevresindeki cümlelerden tahmin et.",
+  "Tahminini sözlükten kontrol et.",
+  "Bir kelimenin birden çok anlamı olabilir; metindeki anlamını cümle seçer.",
+  "Anahtar kelimeler metnin konusunu taşır.",
+  "Bazı anlamlar kelime grubundadır; grubu birlikte oku.",
+  "Her soruda 4 adım: Soru ne istiyor? Anahtar kelime? Kanıt? Şıkları ele."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Her bilmediğim kelimeye sözlükten bakmalı mıyım?",
+   "cevap": "Önce bağlamdan tahmin et. Tahminden emin değilsen ya da kelime metni anlamana engel oluyorsa sözlüğe bak. Kitap da önce tahmin, sonra kontrol ister. (s. 32)"
+  },
+  {
+   "soru": "Neden bir kelimenin birden çok anlamı var?",
+   "cevap": "Bir kelime zamanla yeni durumlar için de kullanılmaya başlar. 'Yüz' hem surat hem sayı demektir; hangisi olduğunu cümle söyler. (s. 12)"
+  },
+  {
+   "soru": "Anahtar kelime ile başlık aynı şey mi?",
+   "cevap": "Aynı değil ama yakındırlar. Başlık çoğu zaman bir anahtar kelimeyi içerir. Anahtar kelimeler ise metnin içine dağılmıştır."
+  },
+  {
+   "soru": "Martı Jonathan neden 'sıra dışı' bir kuş?",
+   "cevap": "Çoğu martı yalnızca yiyecek bulmak için uçar. Jonathan ise uçmayı öğrenmek için uçar; düşse de utanmaz, çalışmaya devam eder. (s. 12–13)"
+  },
+  {
+   "soru": "Okuma Dedektifi adımlarını başka derslerde de kullanabilir miyim?",
+   "cevap": "Evet! Fen, Sosyal, hatta Matematik problemlerinde de önce soru okunur, anahtar bilgi bulunur, kanıt aranır ve şıklar elenir."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Martı Jonathan için neden 'sıra dışı' bir kuş deniyor? Kendi cümlelerinle yaz.",
+   "ornekCevap": "Çünkü diğer martılar sadece yiyecek bulmak için uçarken Jonathan uçmayı öğrenmek için uçuyordu. Düştüğü hâlde utanmadı, vazgeçmeden çalışmaya devam etti.",
+   "anahtarlar": [
+    "uç",
+    "öğren",
+    "diğer",
+    "vazgeç"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“Jonathan, itaatkâr bir şekilde boynunu öne eğdi. Birkaç gün boyunca, diğer martılar gibi davranmaya çalıştı.” (s. 13) Bu cümlelere göre 'itaatkâr' ne demektir?",
+   "secenekler": [
+    "Söz dinleyen",
+    "Kızgın",
+    "Yorgun"
+   ],
+   "dogru": 0,
+   "ipucu": "Babası konuştuktan sonra Jonathan ne yaptı? İkinci cümleye bak.",
+   "aciklama": "Jonathan babasının dediği gibi diğer martılar gibi davranmaya çalıştı; yani söz dinledi. (s. 13)",
+   "kavram": "Bağlam"
+  },
+  {
+   "soru": "“Ali yarın sınava girecek.” ve “Kedi kapıdan içeri girdi.” cümlelerinde 'girmek' kelimesi için hangisi doğrudur?",
+   "secenekler": [
+    "İki cümlede de aynı anlamdadır.",
+    "Cümleye göre farklı anlam kazanmıştır.",
+    "İki cümlede de yanlış kullanılmıştır."
+   ],
+   "dogru": 1,
+   "ipucu": "Sınava girmek ile kapıdan girmek aynı hareket mi?",
+   "aciklama": "Sınava girmek 'sınava katılmak', kapıdan girmek 'içeri geçmek' demektir. Anlamı cümle seçer.",
+   "kavram": "Metindeki Anlam ve Sözlük Anlamı"
+  },
+  {
+   "soru": "“Düzenli uyku, büyüyen çocuklar için çok önemlidir. Uykuda beden dinlenir, beyin gün içinde öğrendiklerini düzenler. Uykusunu alamayan öğrencinin dikkati dağılır.” Bu paragrafın anahtar kelimesi hangisidir?",
+   "secenekler": [
+    "beden",
+    "öğrenci",
+    "uyku"
+   ],
+   "dogru": 2,
+   "ipucu": "Her cümle hangi kelimenin etrafında dönüyor?",
+   "aciklama": "Üç cümle de uykuyu anlatıyor: anahtar kelime 'uyku'.",
+   "kavram": "Anahtar Kelime",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metnin anahtar kelimesini, yani hep tekrar eden önemli kelimeyi.",
+     "Her cümlenin konusunu tek kelimeyle söyle.",
+     "Üç cümlede de geçen ya da üç cümlenin de anlattığı kelimeyi bul."
+    ]
+   }
+  },
+  {
+   "soru": "'Kütüphane' kelimesi hangi kelimeleri çağrıştırır?",
+   "secenekler": [
+    "Deniz, kum, güneş",
+    "Top, saha, gol",
+    "Kitap, sessizlik, okumak"
+   ],
+   "dogru": 2,
+   "ipucu": "Kütüphaneye girdiğinde neler görürsün, ne yaparsın?",
+   "aciklama": "Kütüphane; kitap, sessizlik ve okumayı çağrıştırır.",
+   "kavram": "Çağrışım"
+  },
+  {
+   "soru": "“Ödevini bitirmek için gece yarısına kadar ter döktü.” Bu cümlede 'ter dökmek' ne anlatıyor?",
+   "secenekler": [
+    "Sıcaktan terlemek",
+    "Çok çaba harcamak",
+    "Suyu yere dökmek"
+   ],
+   "dogru": 1,
+   "ipucu": "Grubu birlikte oku. Ödev için gece yarısına kadar ne yapılır?",
+   "aciklama": "'Ter dökmek' burada çok çalışmak, çaba harcamak demektir.",
+   "kavram": "Kelime Grubu"
+  },
+  {
+   "soru": "Bir kelimenin anlamını bağlamdan tahmin ettin. Sırada ne var?",
+   "secenekler": [
+    "Tahmini sözlükten kontrol etmek",
+    "Kelimeyi metinden silmek",
+    "Başka bir metne geçmek"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce tahmin, sonra …?",
+   "aciklama": "Kitap, tahminleri sözlükle kontrol etmemizi ister. (s. 32, 43)",
+   "kavram": "Tahmin Et, Sözlükle Kontrol Et"
+  },
+  {
+   "soru": "“Eskiden insanlar haberleşmek için mektup yazardı. Bir mektubun ulaşması günler, bazen haftalar sürerdi. Telefonun icadıyla insanlar uzaktaki yakınlarının sesini anında duyabildi. Bugün ise mesajlaşma uygulamalarıyla yazı, fotoğraf ve video birkaç saniyede gönderiliyor.” Bu paragraftan hangisi çıkarılamaz?",
+   "secenekler": [
+    "Haberleşme zamanla hızlanmıştır.",
+    "Mektup, telefondan daha hızlıdır.",
+    "Bugün fotoğraf da gönderilebiliyor."
+   ],
+   "dogru": 1,
+   "ipucu": "'Çıkarılamaz' olumsuz bir kök: metne uymayan şıkkı arıyorsun.",
+   "aciklama": "Metinde mektup günler sürüyor, telefonla ses anında duyuluyor. 'Mektup daha hızlıdır' metne uymaz.",
+   "kavram": "Okuma Dedektifi: 4 Adım",
+   "yardim": {
+    "adimlar": [
+     "Soru kökünü oku: 'çıkarılamaz' olumsuz bir kelime. Metne UYMAYAN şıkkı arıyorsun.",
+     "Anahtar kelime: haberleşmenin hızı. Mektup, telefon ve mesaj nasıl anlatılmış?",
+     "Kanıt: Mektup 'günler, bazen haftalar' sürüyor; telefonla ses 'anında' duyuluyor.",
+     "Şıkları tek tek metinle karşılaştır; metinle çelişeni bul."
+    ]
+   }
+  },
+  {
+   "soru": "“Bitkiler köklerinden su alır. Bu su gövdeden yapraklara taşınır. Yapraklar güneş ışığını kullanarak besin üretir. Bu yüzden ışık almayan bir bitkinin yaprakları zamanla sararır.” Bu paragrafa göre yaprakların sararmasının sebebi nedir?",
+   "secenekler": [
+    "Çok su alması",
+    "Kökünün uzaması",
+    "Işık alamaması"
+   ],
+   "dogru": 2,
+   "ipucu": "'Sararır' kelimesinin geçtiği cümleyi bul.",
+   "aciklama": "Son cümle: “ışık almayan bir bitkinin yaprakları zamanla sararır.” Sebep ışık alamamaktır.",
+   "kavram": "Okuma Dedektifi: 4 Adım",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Bir sebebi: yapraklar NEDEN sararır?",
+     "Anahtar kelime: 'sararır'.",
+     "Kanıt: 'sararır' kelimesinin geçtiği cümleyi oku.",
+     "Şıklardan hangisi o cümlede yazıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Babası Jonathan'a şöyle der: “Kış gelmek üzere. Balıkçı tekneleri giderek azalacak, balıklar da artık suyun üzerinde değil, derinlerde yüzecek.” (s. 13) Babası Jonathan'ı neye karşı uyarıyor?",
+   "secenekler": [
+    "Yiyecek bulmanın zorlaşacağına",
+    "Denizin donacağına",
+    "Teknelerin batacağına"
+   ],
+   "dogru": 0,
+   "ipucu": "Tekneler azalır, balıklar derine iner. Martılar o zaman neyi zor bulur?",
+   "aciklama": "Tekne azalınca ve balık derine inince yiyecek bulmak zorlaşır. Babası bu yüzden 'nasıl yiyecek bulacağını öğren' der. (s. 13)",
+   "kavram": "Bağlam"
+  },
+  {
+   "soru": "Bir metindeki anahtar kelimeleri bulmak neden işe yarar?",
+   "secenekler": [
+    "Metnin kaç sayfa olduğunu gösterir.",
+    "Metnin neyi anlattığını hızlıca anlamamızı sağlar.",
+    "Yazarın adını öğrenmemizi sağlar."
+   ],
+   "dogru": 1,
+   "ipucu": "Anahtar kelimeler metnin neyini taşır?",
+   "aciklama": "Anahtar kelimeler metnin konusunu taşır; metni hızlıca anlamamızı sağlar.",
+   "kavram": "Anahtar Kelime"
+  }
+ ]
+}

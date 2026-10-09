@@ -1,0 +1,387 @@
+{
+ "kod": "tr1",
+ "ders": "Türkçe",
+ "sinif": "7. Sınıf",
+ "donem": "1. Dönem",
+ "tema": {
+  "ad": "tr",
+  "desen": "harf",
+  "font": "Andika:wght@400;700"
+ },
+ "bot": {
+  "ad": "Hece",
+  "dugme": "Hece'ye sor",
+  "svg": "<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Hece'><circle cx='32' cy='32' r='32' fill='#c99a06'/><ellipse cx='20' cy='19' rx='9' ry='12' fill='#eaf6ff' opacity='.9' transform='rotate(-25 20 19)'/><ellipse cx='44' cy='19' rx='9' ry='12' fill='#eaf6ff' opacity='.9' transform='rotate(25 44 19)'/><ellipse cx='32' cy='38' rx='17' ry='15' fill='#ffd23f'/><path d='M17 34 h30 M16 41 h32 M19 48 h26' stroke='#3a2a12' stroke-width='4' stroke-linecap='round'/><circle cx='32' cy='24' r='11' fill='#ffd23f'/><path d='M27 14 q-3 -6 -7 -7 M37 14 q3 -6 7 -7' stroke='#3a2a12' stroke-width='2' fill='none' stroke-linecap='round'/><circle cx='20' cy='7' r='2.2' fill='#3a2a12'/><circle cx='44' cy='7' r='2.2' fill='#3a2a12'/><circle cx='28' cy='23' r='2.4' fill='#3a2a12'/><circle cx='36' cy='23' r='2.4' fill='#3a2a12'/><circle cx='28.7' cy='22.3' r='.8' fill='#fff'/><circle cx='36.7' cy='22.3' r='.8' fill='#fff'/><path d='M28.5 28 q3.5 2.6 7 0' stroke='#3a2a12' stroke-width='1.8' fill='none' stroke-linecap='round'/><rect x='21' y='50' width='22' height='9' rx='4.5' fill='#3a2a12'/><text x='32' y='57.4' text-anchor='middle' font-family='Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#ffd23f'>he-ce</text></svg>",
+  "karsilama": "Vız vız! Ben Hece, Türkçe robotuyum. Şu an \"{konu}\" konusundayız. Hangi kelimede ya da soruda takıldın?",
+  "oneriler": [
+   "Bu konuyu bana kısaca anlat",
+   "Bir örnekle açıklar mısın?",
+   "Bana kısa bir paragraf sorusu sor",
+   "Bu soruyu adım adım çözelim"
+  ],
+  "ekTalimat": "Bu bir Türkçe dersi; öğrenci uzun paragraflarda ve dolaylı anlatılan sorularda zorlanıyor. Kitaptaki terim ve kurallara sadık kal; açıklarken kısa, kendi yazdığın örnek cümleler kullan. Kitaptaki okuma metinlerini ve şiirleri bütün olarak yazma; gerekirse bir iki cümle alıntıla. Paragraf ve anlam sorularında cevabı hemen verme; her zaman aynı 4 adımı sırayla sor: 1) Soru ne istiyor? (soru kökünü oku, 'değildir, çıkarılamaz' gibi olumsuz kökleri fark et) 2) Anahtar kelime ne? 3) Kanıt nerede? (metinde cevabı destekleyen cümle) 4) Şıkları ele (metinde yazan / metinden çıkarılabilen / metinde olmayan). Öğrencinin cevabını bu adımlara göre yönlendir; en fazla 4 kısa, numaralı adım yaz. Kelime anlamı sorularında önce cümlenin bağlamına baktır, sonra tahmin ettir. Yanlış cevapta nedenini nazikçe, kısaca göster ve tekrar denemesini iste."
+ },
+ "uniteler": [
+  {
+   "ad": "1. Tema: Hayat Boyu Gelişim",
+   "no": 1,
+   "konular": [
+    {
+     "id": "u1k1",
+     "baslik": "Kelimenin Anlamını Bulma",
+     "sayfalar": "s. 12–17, 30–32, 43",
+     "kaynakSayfalar": [
+      [
+       12,
+       17
+      ],
+      [
+       30,
+       32
+      ],
+      [
+       43,
+       43
+      ]
+     ],
+     "hazir": true
+    },
+    {
+     "id": "u1k2",
+     "baslik": "Hikâyenin Bölümleri ve Unsurları",
+     "sayfalar": "s. 18–21, 54–57",
+     "kaynakSayfalar": [
+      [
+       18,
+       21
+      ],
+      [
+       54,
+       57
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k3",
+     "baslik": "Konu, Ana Fikir ve Özetleme",
+     "sayfalar": "s. 17, 22–23, 44–46",
+     "kaynakSayfalar": [
+      [
+       17,
+       17
+      ],
+      [
+       22,
+       23
+      ],
+      [
+       44,
+       46
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1t1",
+     "tur": "tarama",
+     "baslik": "Ara Durak 1: Anlamın İzinde",
+     "sayfalar": "Tekrar: Konu 1–3",
+     "kaynakSayfalar": [
+      [
+       12,
+       57
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k4",
+     "baslik": "Noktalı Virgül",
+     "sayfalar": "s. 25, 49",
+     "kaynakSayfalar": [
+      [
+       25,
+       25
+      ],
+      [
+       49,
+       49
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k5",
+     "baslik": "İkilemelerin Yazımı ve Üç Nokta",
+     "sayfalar": "s. 34–35",
+     "kaynakSayfalar": [
+      [
+       34,
+       35
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k6",
+     "baslik": "Düşünceyi Geliştirme Yolları",
+     "sayfalar": "s. 30–32",
+     "kaynakSayfalar": [
+      [
+       30,
+       32
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1t2",
+     "tur": "tarama",
+     "baslik": "Ara Durak 2: Yazım, Noktalama ve Anlatım",
+     "sayfalar": "Tekrar: Konu 4–6",
+     "kaynakSayfalar": [
+      [
+       25,
+       49
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k7",
+     "baslik": "Sebep-Sonuç Metin Yapısı",
+     "sayfalar": "s. 38–41",
+     "kaynakSayfalar": [
+      [
+       38,
+       41
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k8",
+     "baslik": "Söz Sanatları ve Şiirin Ahengi",
+     "sayfalar": "s. 47, 67",
+     "kaynakSayfalar": [
+      [
+       47,
+       47
+      ],
+      [
+       67,
+       67
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1k9",
+     "baslik": "İkna Eden Paragraf",
+     "sayfalar": "s. 59–64",
+     "kaynakSayfalar": [
+      [
+       59,
+       64
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u1t3",
+     "tur": "tarama",
+     "baslik": "Tema Sonu Taraması",
+     "sayfalar": "Tekrar: Konu 1–9",
+     "kaynakSayfalar": [
+      [
+       12,
+       71
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "2. Tema: Bir Hilal Uğruna",
+   "no": 2,
+   "konular": [
+    {
+     "id": "u2k1",
+     "baslik": "Kelimeler Arası Anlam İlişkileri",
+     "sayfalar": "s. 74–119 (geçici)",
+     "kaynakSayfalar": [
+      [
+       74,
+       119
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k2",
+     "baslik": "Derin Anlam ve Çıkarım",
+     "sayfalar": "s. 74–119 (geçici)",
+     "kaynakSayfalar": [
+      [
+       74,
+       119
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k3",
+     "baslik": "Metin Yapıları ve Anahtar Kelimeler",
+     "sayfalar": "s. 74–119 (geçici)",
+     "kaynakSayfalar": [
+      [
+       74,
+       119
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k4",
+     "baslik": "Görselle Anlatılan Anlam",
+     "sayfalar": "s. 74–119 (geçici)",
+     "kaynakSayfalar": [
+      [
+       74,
+       119
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k5",
+     "baslik": "İkna Etme Teknikleri",
+     "sayfalar": "s. 74–119 (geçici)",
+     "kaynakSayfalar": [
+      [
+       74,
+       119
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k6",
+     "baslik": "İsim Çekim Ekleri",
+     "sayfalar": "s. 109–111 (geçici)",
+     "kaynakSayfalar": [
+      [
+       109,
+       111
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u2k7",
+     "baslik": "Fiil Çekim Ekleri: Kip ve Kişi",
+     "sayfalar": "s. 109–111 (geçici)",
+     "kaynakSayfalar": [
+      [
+       109,
+       111
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  },
+  {
+   "ad": "3. Tema: İletişim ve Sosyal İlişkiler",
+   "no": 3,
+   "konular": [
+    {
+     "id": "u3k1",
+     "baslik": "Metnin Bölümleri",
+     "sayfalar": "s. 120–171 (geçici)",
+     "kaynakSayfalar": [
+      [
+       120,
+       171
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k2",
+     "baslik": "Düşünceyi Geliştirme Yolları (Bilgilendirici Metin)",
+     "sayfalar": "s. 120–171 (geçici)",
+     "kaynakSayfalar": [
+      [
+       120,
+       171
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k3",
+     "baslik": "Söz Sanatları",
+     "sayfalar": "s. 120–171 (geçici)",
+     "kaynakSayfalar": [
+      [
+       120,
+       171
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k4",
+     "baslik": "Şiirin Biçim Özellikleri",
+     "sayfalar": "s. 120–171 (geçici)",
+     "kaynakSayfalar": [
+      [
+       120,
+       171
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k5",
+     "baslik": "Özetleme",
+     "sayfalar": "s. 120–171 (geçici)",
+     "kaynakSayfalar": [
+      [
+       120,
+       171
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k6",
+     "baslik": "Pekiştirmeler, Ünlem, Kısa Çizgi ve Eğik Çizgi",
+     "sayfalar": "s. 120–171 (geçici)",
+     "kaynakSayfalar": [
+      [
+       120,
+       171
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k7",
+     "baslik": "Zamanı Gösteren Anlatımlar",
+     "sayfalar": "s. 120–171 (geçici)",
+     "kaynakSayfalar": [
+      [
+       120,
+       171
+      ]
+     ],
+     "hazir": false
+    }
+   ]
+  }
+ ]
+}

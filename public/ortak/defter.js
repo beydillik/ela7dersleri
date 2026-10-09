@@ -1600,6 +1600,28 @@
       for (let x = orta + adim; x < x2 - 4; x += adim) { g.beginPath(); g.moveTo(x, ly - 5); g.lineTo(x, ly + 5); g.strokeStyle = "rgba(255,180,138,.85)"; g.stroke(); }
       g.globalAlpha = 1;
     },
+    // Türkçe — "Bal kovanı defteri": süzülen harfler ve noktalama işaretleri, petek altıgenleri, kesikli arı uçuşu
+    harf(g, w, h, rnd) {
+      const ks = ["Aa", "Çç", "Ğğ", "Şş", "İi", "Öö", "Üü", ";", "…", "!", "?", "“ ”", "he-ce", "kelime", "anlam", ","];
+      const x0 = w > 700 ? w * .38 : 0, n = Math.max(5, Math.round((w - x0) / 100));
+      for (let i = 0; i < n; i++) {
+        const x = x0 + (i + .15 + rnd() * .7) * (w - x0) / n, y = h * (.2 + rnd() * .55), sz = 15 + rnd() * 17, t = ks[Math.floor(rnd() * ks.length)];
+        g.save(); g.translate(x, y); g.rotate((rnd() - .5) * .3);
+        g.globalAlpha = .13 + rnd() * .15; g.fillStyle = i % 3 === 0 ? "#f5c53d" : "#fbf6e6";
+        g.font = `700 ${sz}px 'Andika', 'Baloo 2', sans-serif`; g.textAlign = "center"; g.fillText(t, 0, 0); g.restore();
+      }
+      const hx = (cx, cy, r) => { g.beginPath(); for (let k = 0; k < 6; k++) { const a = Math.PI / 3 * k; g.lineTo(cx + r * Math.cos(a), cy + r * Math.sin(a)); } g.closePath(); g.stroke(); };
+      g.strokeStyle = "rgba(245,197,61,.28)"; g.lineWidth = 1.4;                     // petek kümesi (sağ alt)
+      const r = 11, bx = w > 700 ? w * .66 : w - 30, by = h - 14;
+      for (let c = 0; c < 4; c++) for (let rr = 0; rr < 2; rr++) hx(bx - c * r * 1.5, by - rr * r * 1.73 - (c % 2) * r * .87, r);
+      g.strokeStyle = "rgba(251,246,230,.32)"; g.lineWidth = 1.6; g.setLineDash([3, 6]); g.lineCap = "round";   // arı uçuşu
+      const y0 = h * .7, xa = w > 700 ? w * .4 : w * .05, xb = w * .82;
+      g.beginPath(); g.moveTo(xa, y0); g.bezierCurveTo(xa + (xb - xa) * .3, y0 - 40, xa + (xb - xa) * .55, y0 + 30, xb, y0 - 14); g.stroke(); g.setLineDash([]);
+      g.globalAlpha = .7; g.fillStyle = "#f5c53d"; g.beginPath(); g.ellipse(xb + 6, y0 - 16, 6, 4.5, 0, 0, 7); g.fill();
+      g.fillStyle = "#3a2a12"; g.fillRect(xb + 4, y0 - 20, 2, 8); g.fillRect(xb + 8, y0 - 20, 2, 8);
+      g.fillStyle = "rgba(234,246,255,.8)"; g.beginPath(); g.ellipse(xb + 4, y0 - 23, 3, 4.5, -.4, 0, 7); g.ellipse(xb + 9, y0 - 23, 3, 4.5, .4, 0, 7); g.fill();
+      g.globalAlpha = 1;
+    },
     harita(g, w, h, rnd) {
       const cream = "245,236,215";
       g.strokeStyle = `rgba(${cream},.07)`; g.lineWidth = 1; g.setLineDash([3, 5]);       // enlem-boylam ızgarası
