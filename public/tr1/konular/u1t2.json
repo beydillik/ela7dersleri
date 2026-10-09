@@ -1,0 +1,317 @@
+{
+ "id": "u1t2",
+ "tur": "tarama",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "Ara Durak 2: Yazım, Noktalama ve Anlatım",
+ "sayfalar": "Konu 4–6 · s. 25–49",
+ "giris": "Üç konu daha bitti! Kısa bir mola verelim. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Üç konu da düşünceyi okura doğru ulaştırmak için. Noktalı virgül grupları ve cümleleri düzenler (Konu 4). İkilemeler anlamı güçlendirir, üç nokta anlatıma duygu katar (Konu 5). Düşünceyi geliştirme yolları ise söylediğimizi tanımla, örnekle, sayıyla destekler (Konu 6). Hepsinde aynı dedektif yöntemi var: kanıtı metinde bul.",
+ "kapsar": [
+  "u1k4",
+  "u1k5",
+  "u1k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Noktalı virgül virgülden güçlü, noktadan zayıftır; cümleyi bitirmez.",
+    "Virgüllerle ayrılmış grupların ve içinde virgül olan sıralı cümlelerin arasına konur.",
+    "Özneden sonra, ardından bir sıralama geliyorsa da konabilir."
+   ]
+  },
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "İkilemeler ayrı yazılır; araya virgül ya da çizgi konmaz: yavaş yavaş.",
+    "Üç nokta: eksik cevap, ünlemi pekiştirme, sözü okura bırakma.",
+    "! ve ? işaretinden sonra iki nokta yeter: !.. ?.."
+   ]
+  },
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Tanımlama: Nedir? Örneklendirme: Örneğin, mesela.",
+    "Karşılaştırma: Benzer mi, farklı mı? Benzetme: gibi.",
+    "Tanık gösterme: ünlü birinin sözü. Sayısal veri: sayı, yüzde."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Grupları ve cümleleri ayırmak",
+     "uyeler": [
+      "Tür ve Takımları Ayırma",
+      "Sıralı Cümleleri Ayırma",
+      "Özneden Sonra"
+     ]
+    },
+    {
+     "etiket": "Kelimeyi doğru yazmak",
+     "uyeler": [
+      "İkilemeler Ayrı Yazılır",
+      "Araya İşaret Konmaz"
+     ]
+    },
+    {
+     "etiket": "Anlatıma duygu katmak",
+     "uyeler": [
+      "Eksik Bırakılan Cevap",
+      "Anlatımı Pekiştirme",
+      "Sözü Okuyucuya Bırakma"
+     ]
+    },
+    {
+     "etiket": "Düşünceyi desteklemek",
+     "uyeler": [
+      "Tanımlama",
+      "Örneklendirme",
+      "Tanık Gösterme",
+      "Sayısal Verilerden Yararlanma"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Metinde düşünceyi örneklerle destekleyen cümlede noktalı virgül hangi görevle kullanılmıştır?",
+   "metinBaslik": "Maddenin Hâlleri",
+   "metin": [
+    "Maddeler katı, sıvı ve gaz olmak üzere üç hâlde bulunur.",
+    "Örneğin taş, tahta, demir; su, süt, zeytinyağı; hava, su buharı, oksijen gündelik hayatta karşılaştığımız maddelerdir.",
+    "Maddeler ısı alıp verdikçe hâl değiştirebilir."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Önce “örneğin” kelimesinin geçtiği cümleyi bul.",
+   "secenekler": [
+    "Virgüllerle ayrılmış madde gruplarını birbirinden ayırmak",
+    "Cümleyi bitirip yeni bir cümleye geçmek",
+    "Cümlenin öznesinden sonra durak yapmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Noktalı virgülün iki yanına bak: Her iki yanında da virgüllü bir grup mu var?",
+   "aciklama": "İkinci cümle “örneğin” ile başlıyor: örneklendirme. Noktalı virgül katı, sıvı ve gaz gruplarını birbirinden ayırıyor; her grubun içinde zaten virgül var (s. 49).",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Tür ve Takımları Ayırma"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Örneklendirme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Örnek verilen cümlede noktalı virgülün görevini.",
+     "Anahtar kelime: örneğin. Bu kelime hangi cümlede?",
+     "Kanıt: “Örneğin” ile başlayan cümleye dokun. Noktalı virgüller arasında kaç grup var?",
+     "Şıkları ele: Noktalı virgülden sonra cümle bitiyor mu? Ondan önce bir özne mi var, yoksa virgüllü bir grup mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Bu metindeki yazım ve noktalama için aşağıdakilerden hangisi söylenemez?",
+   "metinBaslik": "Ödev Nerede?",
+   "metin": [
+    "Öğretmen sordu: “Ali, ödevini neden getirmedin?”",
+    "Ali başını öne eğdi: “Şey… Ben…”",
+    "Elif, Can, Zeynep merakla bekliyordu; Ali ise, yüzü kızarmış, bir türlü konuşamıyordu.",
+    "Sonunda ağır ağır başını kaldırdı ve ödevini evde unuttuğunu söyledi."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Olumsuz soru: Yanlış yargıyı çürüten cümleye dokun. İkilemenin geçtiği cümleye bak.",
+   "secenekler": [
+    "Üç nokta, eksik bırakılan bir cevapta kullanılmıştır.",
+    "Noktalı virgül, içinde virgül olan sıralı cümleleri ayırmıştır.",
+    "İkilemenin arasına virgül konmuştur."
+   ],
+   "dogru": 2,
+   "ipucu": "Metindeki ikilemeyi bul: Arasında bir işaret var mı?",
+   "aciklama": "“ağır ağır” ikilemesinin arasında virgül yok; zaten konmamalı. Ali'nin yarım kalan cevabında üç nokta var (s. 35). Noktalı virgül, içinde virgül olan iki cümleyi ayırıyor (s. 49).",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Araya İşaret Konmaz"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Sıralı Cümleleri Ayırma"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metne UYMAYAN yargıyı. Kökteki “söylenemez” kelimesine dikkat.",
+     "Anahtar kelimeler: üç nokta, noktalı virgül, ikileme.",
+     "Kanıt: İkilemenin geçtiği cümleye dokun.",
+     "Şıkları ele: Her şıkkı metinde kontrol et. Metinde gördüğün iki şık doğru; geriye kalan hangisi?"
+    ]
+   }
+  },
+  {
+   "soru": "“Yazar, evrende başka canlılar olabileceğini düşünüyor.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "metinBaslik": "Yıldızlara Bakarken",
+   "metin": [
+    "Açık bir gecede gökyüzüne baktığımızda binlerce yıldız görürüz.",
+    "Bilim insanlarına göre yalnızca Samanyolu'nda 100 milyardan fazla yıldız bulunur.",
+    "Acaba bu yıldızlardan birinin çevresinde bizim gibi meraklı gözler de gökyüzüne bakıyor mu?.."
+   ],
+   "kanit": [
+    2
+   ],
+   "ipucu": "Metinde “başka canlılar var” diye açık bir cümle var mı? Yoksa yazar soruyu sorup gerisini sana mı bırakıyor?",
+   "aciklama": "Yazar önce sayısal veri veriyor, sonra bir soru sorup sözü “?..” ile okura bırakıyor. “Başka canlılar olabilir” demiyor; bunu sorusundan anlıyoruz, yani ima ediyor (s. 35).",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Sözü Okuyucuya Bırakma"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Sayısal Verilerden Yararlanma"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+     "Anahtar kelime: başka canlılar.",
+     "Kanıt: Yazarın merak ettiği şeyi soran cümleye dokun. Sonundaki işarete bak.",
+     "Şıkları ele: Bu cümle bir bilgi mi veriyor, yoksa soru sorup düşünmeyi sana mı bırakıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde önce “komşu” kavramı tanımlanıyor, sonra komşular sıralanıyor. Sıralamanın yapıldığı cümlede noktalı virgül neden kullanılmıştır?",
+   "metinBaslik": "Komşularımız",
+   "metin": [
+    "Komşu ülke, sınırımızı paylaştığımız ülkedir.",
+    "Türkiye'nin kara komşuları; Yunanistan, Bulgaristan, Gürcistan, Ermenistan, Azerbaycan (Nahçıvan), İran, Irak ve Suriye'dir.",
+    "Bu ülkelerle ticaret, turizm ve kültür alanlarında ilişkilerimiz vardır."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Ülke adlarının sıralandığı cümleye dokun.",
+   "secenekler": [
+    "İki ayrı cümleyi birbirinden ayırmak için",
+    "Cümlenin bittiğini göstermek için",
+    "Özneden sonra, ardından virgüllü bir sıralama geldiği için"
+   ],
+   "dogru": 2,
+   "ipucu": "Noktalı virgülden önce ne var? “Türkiye'nin kara komşuları” cümlenin hangi ögesi?",
+   "aciklama": "İlk cümle tanımlama yapıyor (… ülkedir). İkinci cümlede “Türkiye'nin kara komşuları” öznedir; ardından virgüllerle sekiz ülke sıralandığı için özneden sonra noktalı virgül konmuştur (s. 49).",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Özneden Sonra"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Tanımlama"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Sıralama cümlesindeki noktalı virgülün nedenini.",
+     "Anahtar kelimeler: tanımlama, sıralama.",
+     "Kanıt: Ülkelerin sıralandığı cümleye dokun. Noktalı virgül cümlenin neresinde?",
+     "Şıkları ele: Noktalı virgülden sonra cümle bitiyor mu? Sonra yeni bir cümle mi başlıyor, yoksa bir liste mi?"
+    ]
+   }
+  },
+  {
+   "soru": "Aşağıdaki cümlelerin hangisinde yazım ve noktalama doğrudur?",
+   "secenekler": [
+    "Kütüphaneden yavaş yavaş seçerek roman, hikâye, şiir; sözlük, atlas, ansiklopedi aldık.",
+    "Çocuklar bahçede koşa-koşa oynuyordu; öğretmenler ise onları izliyordu.",
+    "Ders bitince herkes, ağır, ağır sınıftan çıktı."
+   ],
+   "dogru": 0,
+   "ipucu": "Her şıkta ikilemeyi bul ve arasına bak. Sonra noktalı virgülün iki yanını kontrol et.",
+   "aciklama": "“yavaş yavaş” ayrı ve işaretsiz yazılmış; noktalı virgül iki kitap grubunu ayırıyor. “koşa-koşa” ve “ağır, ağır” yanlış: İkilemelerin arasına çizgi ya da virgül konmaz.",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Araya İşaret Konmaz"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Tür ve Takımları Ayırma"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Hiç yanlışı olmayan cümleyi.",
+     "Anahtar kelimeler: ikileme, noktalı virgül.",
+     "Her şıktaki ikilemeye bak: Arasında çizgi ya da virgül var mı?",
+     "Şıkları ele: İkilemesi yanlış yazılan şıkları çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Öğretmen sözünü hangi yolla desteklemiştir? Kerem'in cevabındaki üç nokta neyi gösterir?",
+   "metinBaslik": "Okuma Anketi",
+   "metin": [
+    {
+     "kim": "Öğretmen",
+     "s": "Anketimize göre sınıftaki 28 öğrencinin 14'ü, yani yarısı her gün kitap okuyor."
+    },
+    {
+     "kim": "Öğretmen",
+     "s": "Kerem, sen her gün kitap okuyor musun?"
+    },
+    {
+     "kim": "Kerem",
+     "s": "Şey… Aslında… Bazen…"
+    },
+    {
+     "kim": "Öğretmen",
+     "s": "Hiç sorun değil. Bu hafta her gün on sayfa okumayı deneyebilirsin."
+    }
+   ],
+   "kanit": [
+    0,
+    2
+   ],
+   "kanitIpucu": "Öğretmenin sayı verdiği cümleye ya da Kerem'in cevabına dokun.",
+   "secenekler": [
+    "Tanık gösterme / Sözü okuyucuya bırakma",
+    "Sayısal veri / Eksik bırakılan cevap",
+    "Sayısal veri / Anlatımı pekiştirme"
+   ],
+   "dogru": 1,
+   "ipucu": "İki soru var: Önce öğretmenin sözünde sayı var mı bak. Sonra Kerem cevabını tamamlamış mı?",
+   "aciklama": "Öğretmen “28 öğrencinin 14'ü, yarısı” diyerek sayısal veri kullanıyor. Kerem sorulan soruya tam bir cevap veremiyor; üç nokta eksik bırakılan cevabı gösteriyor (s. 35).",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Sayısal Verilerden Yararlanma"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Eksik Bırakılan Cevap"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki şeyi: Öğretmenin destekleme yolunu ve Kerem'deki üç noktanın görevini.",
+     "Anahtar kelimeler: 28, 14, yarısı; Kerem'in cevabı.",
+     "Kanıt: Öğretmenin sayı verdiği cümleye dokun.",
+     "Şıkları ele: Önce ilk yarıya bak; sayı yoksa o şık gider. Sonra Kerem cevabı tamamlamış mı, düşün."
+    ]
+   }
+  }
+ ]
+}
