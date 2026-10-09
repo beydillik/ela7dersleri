@@ -1,0 +1,311 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "Ara Durak 1: Anlamın İzinde",
+ "sayfalar": "Konu 1–3 · s. 12–57",
+ "giris": "Üç konu bitti! Şimdi kısa bir mola verip neler öğrendiğine bakalım. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Üç konu da aynı işin basamakları: metni anlamak. Önce kelimelerin anlamını bağlamdan buluruz (Konu 1). Sonra hikâyenin nasıl kurulduğunu görürüz: serim, düğüm, çözüm (Konu 2). En sonda metnin özüne ulaşırız: konu, ana fikir, özet (Konu 3). Hepsinde aynı dedektif yöntemi var: kanıtı metinde bul.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Bilmediğin kelimenin anlamını önce bağlamdan tahmin et, sonra sözlükle kontrol et.",
+    "Bir kelimenin metindeki anlamını cümle seçer.",
+    "Her soruda 4 adım: Sor, bul, kanıtla, ele."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Serim: kişi, yer, zaman. Düğüm: sorun çıkar. Çözüm: sorun sonuca bağlanır.",
+    "Kişinin özelliğini sözlerinden ve davranışlarından bulursun.",
+    "Aynı olaya herkes farklı bakar: Kime göre?"
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Konu: Ne anlatılıyor? Ana fikir: Yazar ne demek istiyor?",
+    "Yardımcı fikirler ana fikri destekler; başlık metne uymalı.",
+    "Özet: kısa, sıralı, kendi cümlelerinle; önemsiz bilgiyi çıkar."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Kelimenin anlamını bulmak",
+     "uyeler": [
+      "Bağlam",
+      "Çağrışım",
+      "Kelime Grubu"
+     ]
+    },
+    {
+     "etiket": "Hikâyenin yapısını görmek",
+     "uyeler": [
+      "Serim",
+      "Düğüm",
+      "Çözüm",
+      "Bakış Açısı"
+     ]
+    },
+    {
+     "etiket": "Metnin özüne ulaşmak",
+     "uyeler": [
+      "Konu",
+      "Ana Fikir",
+      "Özetleme"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Metne göre “titiz” kelimesinin anlamı nedir?",
+   "metinBaslik": "Özenli Bir Deney",
+   "metin": [
+    "Selin, Fen dersindeki deney için çok titiz çalıştı.",
+    "Malzemeleri tek tek tarttı, her ölçümü iki kez kontrol etti ve sonuçları tabloya dikkatle yazdı.",
+    "Öğretmeni, deneyin başarılı olmasını bu dikkatli çalışmaya bağladı.",
+    "Bilimde küçük bir ölçüm hatası bile sonucu değiştirebilir."
+   ],
+   "kanit": [
+    1,
+    2
+   ],
+   "secenekler": [
+    "İşini çok hızlı bitiren",
+    "Bir işi büyük bir dikkat ve özenle yapan",
+    "Başkasından yardım isteyen"
+   ],
+   "dogru": 1,
+   "ipucu": "Bağlama bak: Selin'in yaptıkları kelimenin anlamını gösteriyor.",
+   "aciklama": "İkinci cümle 'titiz'i açıklar: her şeyi tek tek tarttı, iki kez kontrol etti, dikkatle yazdı. Titiz, işini özenle yapan demektir.",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Bağlam"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Yardımcı Fikir"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Kelimenin bu metindeki anlamını.",
+     "Anahtar kelime: titiz. Selin nasıl çalışmış?",
+     "Kanıt: Selin'in ne yaptığını tek tek anlatan cümleye dokun. Bu cümle 'titiz' kelimesini açıklıyor.",
+     "Şıkları ele: Metinde hızdan ya da yardımdan söz ediliyor mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Bu hikâyenin en uygun özeti hangisidir?",
+   "metinBaslik": "Kayıp Defter",
+   "metin": [
+    "Okulun ilk haftasında Can, her şeyini yazdığı mavi defterini kaybetti.",
+    "Bütün sınıfı aradı ama defter hiçbir yerde yoktu.",
+    "Ertesi sabah kütüphaneci kapıda onu bekliyordu; elinde mavi defter vardı.",
+    "Can o gün defterinin ilk sayfasına adını ve sınıfını büyük harflerle yazdı."
+   ],
+   "kanit": [
+    2,
+    3
+   ],
+   "secenekler": [
+    "Can kaybettiği defterini kütüphanecinin getirmesiyle buldu ve bir daha kaybolmasın diye üstüne adını yazdı.",
+    "Can'ın mavi bir defteri vardı ve okulun ilk haftasıydı.",
+    "Kütüphaneci her sabah kapıda öğrencileri bekler."
+   ],
+   "dogru": 0,
+   "ipucu": "Özet bütün hikâyeyi kısaca anlatır: başı, sorunu ve sonu.",
+   "aciklama": "İyi bir özet sorunu (defter kayboldu) ve çözümü (kütüphaneci getirdi, adını yazdı) sırayla anlatır. Diğerleri yalnızca bir ayrıntı.",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Çözüm"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Özetleme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Hikâyenin özetini: kısa ve sıralı anlatımını.",
+     "Anahtar kelimeler: defter, kaybetti, buldu.",
+     "Kanıt: Özette sorunun nasıl çözüldüğü de olmalı. Çözümü anlatan cümleye dokun.",
+     "Şıkları ele: Hangi şıkta serim, düğüm ve çözüm birlikte var? Yalnızca girişi anlatan şık özet olamaz."
+    ]
+   },
+   "kanitIpucu": "Özette sorunun nasıl çözüldüğü de olmalı. Çözümü anlatan cümleye dokun."
+  },
+  {
+   "soru": "Bu metinden hangi yargı çıkarılabilir?",
+   "metinBaslik": "Tepedeki Türbinler",
+   "metin": [
+    "Köyün tepesine üç rüzgâr türbini kuruldu.",
+    "Muhtar, köyün elektriğinin artık rüzgârdan üretileceğini söyleyerek sevindi.",
+    "Kuş gözlemcisi Ayten Hanım ise göç yolundaki kuşlar için endişelendi.",
+    "Çocuklar da dev kanatların dönüşünü saatlerce merakla izledi."
+   ],
+   "kanit": [
+    1,
+    2
+   ],
+   "secenekler": [
+    "Türbinler köye büyük bir zarar verdi.",
+    "Köydeki herkes türbinlere karşı çıktı.",
+    "Türbinlere herkes aynı gözle bakmıyor."
+   ],
+   "dogru": 2,
+   "ipucu": "Önce sor: Kime göre? Kişilerin duygularını karşılaştır.",
+   "aciklama": "Muhtar sevindi, Ayten Hanım endişelendi, çocuklar merak etti. Aynı olaya herkes farklı bakıyor.",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Bakış Açısı"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Ana Fikir"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metnin bütününden çıkan yargıyı.",
+     "Anahtar kelimeler: sevindi, endişelendi, merakla.",
+     "Kanıt: Muhtar ve Ayten Hanım türbinlere nasıl bakıyor? Birinin cümlesine dokun.",
+     "Şıkları ele: 'Herkes' diyen şıklar metne uyuyor mu? Kime göre?"
+    ]
+   }
+  },
+  {
+   "soru": "“Mert yardımsever biridir.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "metinBaslik": "Teneffüste",
+   "metin": [
+    "Teneffüste Deniz'in suyu yere döküldü.",
+    "Mert hiçbir şey demeden koşup kâğıt havlu getirdi.",
+    "Sonra Deniz'le birlikte yeri sildi ve zil çalınca sınıfa beraber döndüler."
+   ],
+   "kanit": [
+    1,
+    2
+   ],
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Karakterin Özellikleri"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Okuma Dedektifi: 4 Adım"
+    }
+   ],
+   "ipucu": "Metinde 'yardımsever' kelimesi geçiyor mu? Geçmiyorsa Mert'in davranışlarından mı anlıyorsun?",
+   "aciklama": "Metinde 'yardımsever' yazmıyor. Mert koşup havlu getiriyor ve yeri birlikte siliyor; bunu davranışından anlıyoruz.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+     "Anahtar kelime: yardımsever.",
+     "Kanıt: Mert'in ne yaptığını anlatan cümleye dokun.",
+     "Şıkları ele: Bu kelime metinde aynen geçiyor mu, yoksa davranışlardan mı çıkarıyorsun?"
+    ]
+   }
+  },
+  {
+   "soru": "Bu metne en uygun başlık hangisidir?",
+   "metinBaslik": "Her Yerde Parçalar",
+   "metin": [
+    "Kesirler hayatımızın her yerinde karşımıza çıkar.",
+    "Bir pizzayı dört eşit parçaya böldüğümüzde her parça bütünün dörtte biridir.",
+    "Yemek tariflerindeki “yarım su bardağı” gibi ölçüler de birer kesirdir.",
+    "Saatte “çeyrek geçe” dediğimizde bile bir saati dört eşit parçaya bölüp birini söyleriz."
+   ],
+   "kanit": [
+    0
+   ],
+   "secenekler": [
+    "Pizza Nasıl Yapılır?",
+    "Saat Okumayı Öğrenelim",
+    "Günlük Hayatta Kesirler"
+   ],
+   "dogru": 2,
+   "ipucu": "Başlık metnin bütününü kapsar; örneklerden birini değil.",
+   "aciklama": "İlk cümle konuyu söyler: kesirler her yerde. Pizza, tarif ve saat bunun örnekleri.",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Başlık"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Anahtar Kelime"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metnin bütününe uyan başlığı.",
+     "Anahtar kelime: Metinde hangi kelime her cümlenin arkasında var?",
+     "Kanıt: Metnin neyi anlattığını söyleyen cümleye dokun.",
+     "Şıkları ele: Pizza ve saat birer örnek mi, yoksa metnin bütünü mü?"
+    ]
+   }
+  },
+  {
+   "soru": "Bu metinden hangi cümle çıkarılırsa metnin ana fikri bozulmaz?",
+   "metinBaslik": "Sudan Elektriğe",
+   "metin": [
+    "Barajlarda tutulan su, yüksekten aşağı bırakılır.",
+    "Düşen su türbinleri döndürür ve böylece elektrik üretilir.",
+    "Türkiye'nin en büyük barajlarından biri Atatürk Barajı'dır.",
+    "Suyun bu şekilde kullanılması, enerjinin bir türden başka türe dönüşmesine güzel bir örnektir."
+   ],
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "Türkiye'nin en büyük barajlarından biri Atatürk Barajı'dır.",
+    "Düşen su türbinleri döndürür ve böylece elektrik üretilir.",
+    "Suyun bu şekilde kullanılması, enerjinin bir türden başka türe dönüşmesine güzel bir örnektir."
+   ],
+   "dogru": 0,
+   "ipucu": "Anahtar kelimeleri taşımayan cümleyi bul.",
+   "aciklama": "Metin suyun enerjiye dönüşmesini anlatıyor. Barajın adı bir ayrıntı; çıkarınca anlam bozulmaz.",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Önemli ve Önemsiz Bilgi"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Anahtar Kelime"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Çıkarınca anlamı bozmayan, yani önemsiz cümleyi.",
+     "Anahtar kelimeler: su, türbin, elektrik, enerji. Bu kelimeleri taşımayan cümle hangisi?",
+     "Kanıt: Çıkarınca anlamın bozulmadığı cümleye dokun.",
+     "Şıkları ele: Her şıkkı metinden çıkar ve kalan metni düşün: Su nasıl elektrik oluyor, hâlâ anlaşılıyor mu?"
+    ]
+   },
+   "kanitIpucu": "Bu soruda kanıt, çıkarılabilecek cümlenin kendisidir: Anlamı bozmadan çıkarabileceğin cümleye dokun."
+  }
+ ]
+}
