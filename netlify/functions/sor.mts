@@ -41,10 +41,33 @@ function sayfalariSec(metin: string, araliklar: number[][]): string {
   return secilen.join("\n\n").slice(0, 60000);
 }
 
+// Okuma Atölyesi: metin istemciden değil, sitedeki atolye.json dosyasından alınır
+async function atolyeHazirla(origin: string, ders: any, dersKod: string, konuId: string) {
+  if (!ders.atolye) throw new Error("atölye yok");
+  const r = await fetch(`${origin}/${dersKod}/atolye.json`);
+  if (!r.ok) throw new Error("atölye bulunamadı");
+  const A = await r.json(), metinId = konuId.split(":")[1] || "";
+  const cumle = (c: any) => typeof c === "string" ? c : `${c.kim ? c.kim + ": " : ""}${c.s || ""}`;
+  const duz = (m: any) => (Array.isArray(m?.[0]) ? m.flat() : m || []).map(cumle).join(" ");
+  const tablo = (t: any) => t ? `\nTablo${t.baslik ? " (" + t.baslik + ")" : ""}: ${t.basliklar.join(" | ")}\n` + t.satirlar.map((x: string[]) => x.join(" | ")).join("\n") : "";
+  let metin: any = null;
+  for (const sv of A.seviyeler || []) for (const m of sv.metinler || []) if (m.id === metinId) metin = m;
+  const ozet = [
+    "Okuma Atölyesi: ders kitabından bağımsız okuma becerisi alıştırması. Öğrenci kısa metinler okuyup paragraf soruları çözüyor.",
+    "Her soruda aynı 4 adım: 1) Soru ne istiyor? 2) Anahtar kelime ne? 3) Kanıt nerede? (önce kanıt cümlesine dokunur) 4) Şıkları ele.",
+    metin ? `Açık metin: ${metin.baslik}${metin.alan ? " (" + metin.alan + ")" : ""}\n` +
+      (metin.bolumler ? metin.bolumler.map((b: any, i: number) => `Bölüm ${i + 1}: ${duz(b.metin)}${tablo(b.tablo)}`).join("\n") : duz(metin.metin)) + tablo(metin.tablo)
+      + "\nSorular: " + [...(metin.bolumler || []).flatMap((b: any) => b.sorular || []), ...(metin.sorular || [])].map((q: any) => q.soru).join(" / ") : ""
+  ].join("\n");
+  return { ders, konuMeta: { baslik: "Okuma Atölyesi" + (metin ? ": " + metin.baslik : ""), sayfalar: "kitap dışı alıştırma metni" }, ozet,
+    kitap: "(Bu bir Okuma Atölyesi metnidir; kitap sayfası yok. Yalnızca KONU ÖZETİ'ndeki metne dayan. Sorunun cevabını söyleme; 4 adımla yönlendir.)" };
+}
+
 async function kaynakHazirla(origin: string, dersKod: string, konuId: string) {
   const dersRes = await fetch(`${origin}/${dersKod}/ders.json`);
   if (!dersRes.ok) throw new Error("ders bulunamadı");
   const ders = await dersRes.json();
+  if (konuId.startsWith("atolye")) return atolyeHazirla(origin, ders, dersKod, konuId);
   let unite = 0, konuMeta: any = null;
   for (const u of ders.uniteler) for (const k of u.konular) if (k.id === konuId) { unite = u.no; konuMeta = k; }
   if (!konuMeta) throw new Error("konu bulunamadı");
@@ -172,7 +195,7 @@ export default async (req: Request, context: Context) => {
   let govde: any;
   try { govde = await req.json(); } catch { return json({ hata: "Geçersiz istek" }, 400); }
   const dersKod = String(govde?.ders || ""), konuId = String(govde?.konu || "");
-  if (!/^[a-z]{2,8}[12]$/.test(dersKod) || !/^u\d{1,2}[kt]\d{1,2}$/.test(konuId)) return json({ hata: "Geçersiz ders veya konu" }, 400);
+  if (!/^[a-z]{2,8}[12]$/.test(dersKod) || !/^(u\d{1,2}[kt]\d{1,2}|atolye(:[a-z0-9]{1,12})?)$/.test(konuId)) return json({ hata: "Geçersiz ders veya konu" }, 400);
   const mesajlar: Mesaj[] = (Array.isArray(govde.mesajlar) ? govde.mesajlar : []).slice(-8)
     .filter((m: any) => (m?.rol === "user" || m?.rol === "bot") && typeof m.metin === "string" && m.metin.trim())
     .map((m: any) => ({ rol: m.rol, metin: m.metin.slice(0, 600) }));

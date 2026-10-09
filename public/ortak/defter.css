@@ -796,3 +796,51 @@ sup.us { font-size: .68em; font-weight: 800; vertical-align: super; line-height:
 [data-tema="tr"] .facts { background: var(--night); }
 [data-tema="tr"] svg[viewBox="0 0 120 120"] > rect:first-child { fill: var(--svgbg); }
 [data-tema="tr"] .bot-fab { box-shadow: 0 8px 24px rgba(183,121,31,.35); }
+
+/* ---------- Paragraf ve "Kanıtı bul" (Okuma Dedektifi) ---------- */
+mark.olumsuz { background: var(--bad-soft); color: var(--bad); border-radius: 6px; padding: 0 4px; font-weight: 900; text-decoration: underline; text-underline-offset: .16em; }
+.pasaj { background: var(--surface-2); border-left: 5px solid var(--gold); border-radius: 14px; padding: 12px 16px; display: grid; gap: 8px; }
+.pasaj-bas { font-family: var(--display); font-weight: 800; font-size: 1.05em; }
+.pasaj-p, .diyalog p { margin: 0; line-height: 1.75; font-size: 1.05em; }
+.diyalog { display: grid; gap: 6px; }
+.diyalog .kim { color: var(--accent); }
+.pasaj .row { margin: 0; }
+.cumle { border-radius: 6px; padding: 1px 2px; box-decoration-break: clone; -webkit-box-decoration-break: clone; transition: background-color .15s; }
+.pasaj.kanitli .cumle { cursor: pointer; background-image: linear-gradient(transparent 88%, rgba(242,193,78,.55) 88%); }
+.pasaj.kanitli .cumle:hover, .pasaj.kanitli .cumle:focus-visible { background-color: var(--gold-soft); outline: none; }
+.cumle.kanit-ok { background-color: var(--ok-soft) !important; box-shadow: inset 0 -3px 0 var(--ok); }
+.cumle.kanit-yanlis { background-color: var(--bad-soft) !important; text-decoration: line-through; text-decoration-color: var(--bad); }
+.kanit-adim { display: flex; align-items: center; gap: 10px; border: 2px dashed var(--gold); border-radius: 12px; padding: 8px 12px; font-weight: 700; }
+.kanit-adim svg { width: 22px; height: 22px; flex: 0 0 auto; color: var(--hint); }
+.kanit-adim.tamam { border-style: solid; border-color: var(--ok); background: var(--ok-soft); }
+.kanit-adim.tamam svg { color: var(--ok); }
+.tablo-wrap { overflow-x: auto; }
+.pasaj-tablo { border-collapse: collapse; width: 100%; background: var(--surface); border-radius: 10px; font-size: .95em; }
+.pasaj-tablo caption { text-align: left; font-weight: 800; padding-bottom: 6px; }
+.pasaj-tablo th, .pasaj-tablo td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; }
+.pasaj-tablo th { background: var(--gold-soft); }
+.pasaj-tablo tr.cumle { display: table-row; }
+.pasaj.kanitli tr.cumle { background-image: none; cursor: pointer; }
+.pasaj.kanitli tr.cumle td { border-bottom: 2px dashed rgba(242,193,78,.7); }
+
+/* ---------- Okuma Atölyesi ---------- */
+.head-btn svg { width: 18px; height: 18px; margin-right: 6px; flex: 0 0 auto; }
+a.head-btn[aria-pressed="true"] { background: var(--gold); color: #1b2340; border-color: var(--gold); }
+.atolye-head .pill svg { width: 14px; height: 14px; vertical-align: -2px; margin-right: 4px; }
+.atolye-adim ol { margin: 0; padding-left: 1.3em; display: grid; gap: 4px; }
+.sev-liste { display: grid; gap: 12px; }
+.sev-kart { display: flex; align-items: center; gap: 14px; background: var(--surface); border: 2px solid var(--line); border-radius: 18px; padding: 14px 16px; box-shadow: var(--shadow); flex-wrap: wrap; }
+.sev-kart.gecti { border-color: var(--ok); }
+.sev-kart.kilitli { opacity: .65; box-shadow: none; }
+.sev-no { font-family: var(--display); font-weight: 800; font-size: 26px; width: 58px; height: 58px; display: grid; place-items: center; background: var(--gold); color: #2b2417; border-radius: 16px; flex: 0 0 auto; }
+.sev-kart.kilitli .sev-no { background: var(--surface-2); color: var(--muted); }
+.sev-bilgi { flex: 1 1 220px; display: grid; gap: 4px; }
+.sev-bilgi small, .sev-not { color: var(--muted); font-size: 15px; font-weight: 700; }
+.sev-ad { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+.sev-rozet { display: inline-block; font-size: 13px; font-weight: 800; background: var(--ok-soft); color: var(--ok); border-radius: 999px; padding: 1px 10px; margin-left: 6px; }
+.sev-rozet.kilit { background: var(--surface-2); color: var(--muted); }
+.sev-bar { position: relative; height: 10px; background: var(--surface-2); border-radius: 999px; margin: 4px 0; }
+.sev-bar i { display: block; height: 100%; background: var(--teal); border-radius: 999px; max-width: 100%; }
+.sev-bar b { position: absolute; top: -4px; bottom: -4px; width: 3px; background: var(--ink); border-radius: 2px; }
+[data-tema="tr"] .pasaj { border-left-color: var(--gold); }
+@media (prefers-reduced-motion: reduce) { .cumle { transition: none; } }

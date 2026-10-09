@@ -143,13 +143,39 @@
   // Soru türleri: seçenekli (secenekler + dogru), sayı doğrusunda nokta seçme (nokta + sayiDogrusu),
   // sayı yazma (cevap; tuş takımıyla). sayiDogrusu seçenekli ve yazmalı sorularda da yalnızca gösterim olarak eklenebilir.
   const qKind = o => o.nokta !== undefined ? "nokta" : o.cevap !== undefined ? "girdi" : "secim";
+  // ---------- Paragraf ve "Kanıtı bul" (Okuma Dedektifi) ----------
+  // Soruya isteğe bağlı: "metin" (cümle dizisi; paragraflı metinde dizi dizisi; diyalogda {"kim", "s"}),
+  // "tablo" ({baslik?, basliklar, satirlar}), "metinBaslik", "kanit" (kanıt cümlelerinin sırası, 0'dan; tablo satırı "t0", "t1"…),
+  // "kanitIpucu". kanit varsa önce kanıt cümlesine dokunulur, sonra şıklar açılır (2 hak; 2. yanlışta kanıt gösterilir).
+  // "ima": true → seçenekler "açıkça yazıyor / ima ediliyor" olur (secenekler verilmezse).
+  const IMA_SEC = ["Metinde açıkça yazıyor.", "Metinde yazmıyor, ima ediliyor."];
+  const cumleMetin = c => typeof c === "string" ? c : (c && c.s) || "";
+  const paragraflar = m => !m || !m.length ? [] : Array.isArray(m[0]) ? m : [m];
+  const kanitli = o => !!(o.kanit && o.kanit.length && (o.metin || o.tablo));
+  // ders.json "olumsuzVurgu": true → soru kökündeki olumsuz ifadeler kırmızı işaretlenir
+  const OLUMSUZ_RE = /(?<!\p{L})(değildir|değinilmemiştir|değinilmez|söz edilmemiştir|bahsedilmemiştir|yer verilmemiştir|çıkarılamaz|ulaşılamaz|söylenemez|yer almaz|bulunmaz|yoktur|olamaz|yanlıştır|gösterilemez|desteklemez|yapmaz|söylenmemiştir|yer almamaktadır)(?!\p{L})/giu;
+  const soruMetni = o => { const h = rx(o.soru); return S.ders && S.ders.olumsuzVurgu ? h.replace(OLUMSUZ_RE, '<mark class="olumsuz">$1</mark>') : h; };
+  function pasajHTML(o) {
+    if (!o.metin && !o.tablo) return "";
+    const kl = kanitli(o), dk = kl ? ' role="button" tabindex="0"' : "", ps = paragraflar(o.metin);
+    let i = 0;
+    const cm = c => `<span class="cumle" data-c="${i++}"${dk}>${rx(cumleMetin(c))}</span>`;
+    const govde = ps.map(p => p.some(c => c && c.kim) ? `<div class="diyalog">${p.map(c => `<p>${c.kim ? `<b class="kim">${esc(c.kim)}:</b> ` : ""}${cm(c)}</p>`).join("")}</div>`
+      : `<p class="pasaj-p">${p.map(cm).join(" ")}</p>`).join("");
+    const t = o.tablo, tablo = t ? `<div class="tablo-wrap"><table class="pasaj-tablo">${t.baslik ? `<caption>${esc(t.baslik)}</caption>` : ""}<thead><tr>${t.basliklar.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${t.satirlar.map((r, j) => `<tr class="cumle" data-c="t${j}"${dk}>${r.map(x => `<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>` : "";
+    const oku = [o.metinBaslik, ...ps.flat().map(c => (c && c.kim ? c.kim + ": " : "") + cumleMetin(c))].filter(Boolean).join(" ");
+    return `<div class="pasaj${kl ? " kanitli" : ""}">${o.metinBaslik ? `<div class="pasaj-bas">${esc(o.metinBaslik)}</div>` : ""}${govde}${tablo}${o.metin ? `<div class="row">${listenBtn(oku)}</div>` : ""}</div>`;
+  }
   function questionHTML(o, idx) {
     const kind = qKind(o);
+    if (o.ima && !o.secenekler) o.secenekler = IMA_SEC;
+    const kl = kind === "secim" && kanitli(o);
     const body = kind === "nokta" ? `<div class="sd-wrap sd-pick">${sdHTML(o.sayiDogrusu || {}, true)}</div>`
       : kind === "girdi" ? `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}${keypadHTML(o)}`
-      : `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}<div class="opts">${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${fx(esc(String(s).replace(EN_RE, "$1")))}</button>`).join("")}</div>`;
-    return `<div class="q q-${kind}">
-      <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${rx(o.soru)}</span></p>
+      : `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}${kl ? `<div class="kanit-adim" aria-live="polite">${ICON.bak}<span><b>Kanıtı bul:</b> ${o.tablo ? "Metinde ya da tabloda cevabı gösteren yere dokun." : "Metinde cevabı gösteren cümleye dokun."}</span></div>` : ""}<div class="opts"${kl ? " hidden" : ""}>${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${fx(esc(String(s).replace(EN_RE, "$1")))}</button>`).join("")}</div>`;
+    return `<div class="q q-${kind}">${pasajHTML(o)}
+      <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${soruMetni(o)}</span></p>
       <div class="yardim-satir"><button class="yardim-btn" type="button" data-yardim hidden>${ICON.ampul}İpucu</button></div><div class="yardim" hidden></div>
       ${o.dinle ? `<div class="q-listen"><button class="say-en big" data-say-en="${esc(o.dinle)}" ${tts.en ? "" : "hidden"}>${ICON.ses}<span>Dinle</span></button><button class="say-en slow" data-say-en="${esc(o.dinle)}" data-slow ${tts.en ? "" : "hidden"}>${ICON.yavas}<span>Yavaş</span></button></div>` : ""}
       ${body}
@@ -196,7 +222,35 @@
     let tries = 0, finished = false, picked = null;
     const state = opts.state || { wrong: [], result: undefined };
     const fb = $(".fb", el), yr = wireYardim(el, o, opts, state);
+    // Kanıt adımı: önce kanıt cümlesi, sonra şıklar. state.kanit: 1 ilk denemede, 2 ikinci denemede, 0 gösterildi.
+    const kl = kanitli(o) && $(".pasaj.kanitli", el), kb = $(".kanit-adim", el);
+    if (kl) {
+      const dogruK = o.kanit.map(String);
+      state.kanitSecilen = state.kanitSecilen || [];
+      const kanitBitti = () => {
+        dogruK.forEach(c => { const x = $(`.cumle[data-c="${c}"]`, el); if (x) x.classList.add("kanit-ok"); });
+        kl.classList.remove("kanitli"); kl.classList.add("kanit-tamam");
+        kb.classList.add("tamam");
+        kb.innerHTML = `${ICON.bak}<span><b>${state.kanit === 0 ? "Kanıt cümlesi bu." : state.kanit === 1 ? "Kanıtı buldun!" : "Kanıtı buldun, pes etmedin!"}</b> Şimdi şıkları ele: metinde yazan, metinden çıkarılabilen, metinde olmayan.</span>`;
+        $(".opts", el).hidden = false; fb.hidden = true;
+      };
+      const sec = c => {
+        if (state.kanit !== undefined || finished) return;
+        const x = $(`.cumle[data-c="${c}"]`, el); if (!x || x.classList.contains("kanit-yanlis")) return;
+        if (dogruK.includes(c)) { state.kanit = state.kanitSecilen.length ? 2 : 1; return kanitBitti(); }
+        x.classList.add("kanit-yanlis"); state.kanitSecilen.push(c);
+        if (state.kanitSecilen.length >= 2) { state.kanit = 0; return kanitBitti(); }
+        const y = yr.yanlis();
+        fb.hidden = false; fb.className = "fb hint";
+        fb.innerHTML = `<div><b>Bu cümle cevabı göstermiyor.</b> ${y === "yeni" ? "İpucuna yeni bir adım ekledim. Ona bak ve tekrar dene." : rx(o.kanitIpucu || "Soru kökündeki anahtar kelimeyi metinde ara. O kelimenin geçtiği cümleyi oku.")}</div>`;
+      };
+      kl.addEventListener("click", e => { if (e.target.closest("[data-say-en], .listen")) return; const c = e.target.closest(".cumle"); if (c) sec(c.dataset.c); });
+      kl.addEventListener("keydown", e => { if (e.key !== "Enter" && e.key !== " ") return; const c = e.target.closest(".cumle"); if (c) { e.preventDefault(); sec(c.dataset.c); } });
+      state.kanitSecilen.forEach(c => { const x = $(`.cumle[data-c="${c}"]`, el); if (x) x.classList.add("kanit-yanlis"); });
+      if (state.kanit !== undefined) kanitBitti();
+    }
     const finish = (result, silent) => {
+      if (kl && state.kanit === 0 && result === 1) result = 2;   // kanıt gösterildiyse "ilk denemede" sayılmaz
       finished = true; state.result = result; yr.bitti();
       $$(".opt", el).forEach((b, j) => { b.disabled = true; if (j === o.dogru) b.classList.add("right"); });
       fb.hidden = false;
@@ -1396,6 +1450,112 @@
     upd();
   }
 
+  // ---------- Okuma Atölyesi (ders.json "atolye": true → ./atolye.json; adres #atolye) ----------
+  // Dersten bağımsız okuma becerisi: 4 uzunluk seviyesi; bir turda seviyenin "turMetin" kadar metni (en az oynananlar önce).
+  // Uzun metin "bolumler" ile parça parça okunur (her parçadan sonra durak sorusu), "sorular" bütün metin için sorulur.
+  // Seviye açma: o seviyede en az 2 tur ve son 2 turda doğru oranı (ipucuyla doğru dahil) ≥ %80. Kayıt cihazda: ela7:<kod>:atolye.
+  const ATOLYE_KV = { ad: "Okuma Dedektifi", aciklama: "1) Soru ne istiyor? 2) Anahtar kelime ne? 3) Kanıt nerede? 4) Şıkları ele.", akilda: "Sor, bul, kanıtla, ele" };
+  const ATOLYE_ESIK = .8, ATOLYE_MIN_TUR = 2;
+  const atolyeKayit = {
+    get() { const k = store.get(key("atolye"), null) || {}; return { sev: k.sev || {}, metin: k.metin || {} }; },
+    set(v) { store.set(key("atolye"), v); }
+  };
+  const sonIki = s => { const t = (s && s.turlar || []).slice(-ATOLYE_MIN_TUR), d = t.reduce((a, x) => a + x.d, 0), n = t.reduce((a, x) => a + x.n, 0); return { tur: (s && s.turlar || []).length, oran: n ? d / n : null }; };
+  const sevAcik = (A, k, i) => i === 0 || !!(k.sev[A.seviyeler[i - 1].no] || {}).gecti;
+  const yuzde = x => "%" + Math.round(x * 100);
+  const sEk = (n, ek) => "S" + n + ({ i: { 1: "'i", 2: "'yi", 3: "'ü", 4: "'ü" }, de: { 1: "'de", 2: "'de", 3: "'te", 4: "'te" } }[ek][n] || "");
+
+  async function openAtolye() {
+    tts.stop();
+    if (!S.atolye) {
+      try { const r = await fetch("atolye.json", { cache: "no-cache" }); if (!r.ok) throw 0; S.atolye = await r.json(); }
+      catch (e) { $("#content").innerHTML = `<div class="notice">Okuma Atölyesi açılamadı. İnternet bağlantını kontrol edip sayfayı yenile.</div>`; return; }
+    }
+    S.konu = "atolye"; S.data = null; S.durakAsil = null; S.botBaslik = "Okuma Atölyesi"; renderNav();
+    if (location.hash.slice(1) !== "atolye") history.replaceState(null, "", "#atolye");
+    $$(".head-actions a[href='#atolye']").forEach(a => a.setAttribute("aria-pressed", "true"));
+    $("#content").innerHTML = `<section class="konu-head atolye-head"><div class="meta"><span>${esc(S.ders.ders)}</span><span class="pill">${ICON.okuma}Her gün biraz</span></div>
+      <h2>${esc(S.atolye.baslik || "Okuma Atölyesi")}</h2></section><div class="panel" id="panel"></div>`;
+    atolyeAna($("#panel"));
+    S.onKonu && S.onKonu();
+  }
+
+  function atolyeAna(root) {
+    const A = S.atolye, k = atolyeKayit.get();
+    S.konu = "atolye"; S.botBaslik = "Okuma Atölyesi"; S.onKonu && S.onKonu();
+    const kart = (sv, i) => {
+      const acik = sevAcik(A, k, i), s = k.sev[sv.no] || {}, si = sonIki(s), n = sv.metinler.length;
+      const durum = s.gecti ? `<span class="sev-rozet">✓ Geçtin</span>` : !acik ? `<span class="sev-rozet kilit">Kilitli</span>` : "";
+      const bilgi = !acik ? `${sEk(A.seviyeler[i - 1].no, "de")} 2 tur ve ${yuzde(ATOLYE_ESIK)} doğruya ulaşınca açılır.`
+        : si.tur === 0 ? "Henüz tur yok. Hadi başlayalım!"
+        : `${si.tur} tur · son ${Math.min(si.tur, ATOLYE_MIN_TUR)} turda ${yuzde(si.oran)} doğru${s.gecti ? "" : si.tur < ATOLYE_MIN_TUR ? ` · bir tur daha` : si.oran < ATOLYE_ESIK ? ` · hedef ${yuzde(ATOLYE_ESIK)}` : ""}`;
+      return `<div class="sev-kart${acik ? "" : " kilitli"}${s.gecti ? " gecti" : ""}">
+        <div class="sev-no">S${sv.no}</div>
+        <div class="sev-bilgi"><div class="sev-ad"><b>${esc(sv.ad)}</b>${durum}</div><small>${esc(sv.uzunluk)} · ${n} metin · turda ${Math.min(sv.turMetin || 3, n)} metin</small>
+          ${acik && si.oran !== null ? `<div class="sev-bar" aria-hidden="true"><i style="width:${Math.round(si.oran * 100)}%"></i><b style="left:${ATOLYE_ESIK * 100}%"></b></div>` : ""}
+          <span class="sev-not">${bilgi}</span></div>
+        ${acik ? `<button class="btn${s.gecti ? " ghost" : " primary"}" data-sev="${i}">Tur başlat</button>` : ""}</div>`;
+    };
+    root.innerHTML = `<section><p class="lead">${rx(A.giris || "")}</p></section>
+      <section class="facts atolye-adim"><div class="eyebrow">Okuma Dedektifi · Sor, bul, kanıtla, ele</div>
+        <ol><li><b>Soru ne istiyor?</b> Soru kökünü oku. Kırmızı kelimeler olumsuz: dikkat!</li><li><b>Anahtar kelime ne?</b></li><li><b>Kanıt nerede?</b> Cevabı gösteren cümleye dokun.</li><li><b>Şıkları ele:</b> metinde yazan / metinden çıkarılabilen / metinde olmayan.</li></ol></section>
+      <div class="sev-liste">${A.seviyeler.map(kart).join("")}</div>`;
+    $$("[data-sev]", root).forEach(b => b.onclick = () => atolyeTur(root, +b.dataset.sev));
+  }
+
+  function atolyeTur(root, si) {
+    const A = S.atolye, sv = A.seviyeler[si], k = atolyeKayit.get();
+    const say = id => k.metin[id] || 0;
+    const metinler = shuffle(sv.metinler).sort((a, b) => say(a.id) - say(b.id)).slice(0, sv.turMetin || 3);
+    const liste = [];
+    metinler.forEach((m, mi) => {
+      const ust = { metin: mi, toplamMetin: metinler.length, m };
+      if (m.bolumler) {
+        m.bolumler.forEach((b, bi) => (b.sorular || []).forEach(q => liste.push({ ...ust, etiket: `Bölüm ${bi + 1} / ${m.bolumler.length} · durak sorusu`,
+          o: { ...q, metin: b.metin, tablo: b.tablo, metinBaslik: `${m.baslik} · Bölüm ${bi + 1}` } })));
+        (m.sorular || []).forEach(q => liste.push({ ...ust, etiket: "Bütün metin", o: { ...q, metin: m.bolumler.map(b => b.metin), tablo: m.tablo || (m.bolumler.find(b => b.tablo) || {}).tablo, metinBaslik: m.baslik } }));
+      } else (m.sorular || []).forEach(q => liste.push({ ...ust, etiket: "", o: { ...q, metin: m.metin, tablo: m.tablo, metinBaslik: m.baslik } }));
+    });
+    const st = { i: 0, q: [], sonuc: [] };
+    const ciz = () => {
+      const it = liste[st.i], son = st.i === liste.length - 1, m = it.m;
+      S.konu = "atolye:" + m.id; S.botBaslik = "Okuma Atölyesi: " + m.baslik; S.onKonu && S.onKonu();
+      root.innerHTML = `<div class="stage atolye-stage"><div class="progress"><span>Soru ${st.i + 1} / ${liste.length}</span><div class="bar"><i style="width:${(st.i + 1) / liste.length * 100}%"></i></div></div>
+        <div class="kicker">S${sv.no} · Metin ${it.metin + 1} / ${it.toplamMetin}${m.alan ? " · " + esc(m.alan) : ""}${it.etiket ? " · " + esc(it.etiket) : ""}</div>
+        <div id="aq">${questionHTML(it.o)}</div>
+        <div class="stage-nav"><button class="btn ghost" data-bitir>Turu bırak</button><button class="btn primary" data-sonraki disabled>${son ? "Sonucu gör" : "Sonraki soru"}</button></div></div>`;
+      st.q[st.i] = st.q[st.i] || { wrong: [], result: undefined };
+      const qs = st.q[st.i], sonraki = $("[data-sonraki]", root);
+      wireQuestion($("#aq .q", root), it.o, { state: qs, kavram: ATOLYE_KV, onDone: r => { st.sonuc[st.i] = { r, kanit: qs.kanit }; sonraki.disabled = false; } });
+      if (qs.result !== undefined) sonraki.disabled = false;
+      sonraki.onclick = () => { tts.stop(); if (!son) { st.i++; ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); } else bitir(); };
+      $("[data-bitir]", root).onclick = () => { tts.stop(); atolyeAna(root); };
+    };
+    const bitir = () => {
+      const kk = atolyeKayit.get(), s = kk.sev[sv.no] = kk.sev[sv.no] || { turlar: [], gecti: false };
+      const d = st.sonuc.filter(x => x && x.r > 0).length, n = liste.length, c = v => st.sonuc.filter(x => x && x.r === v).length;
+      const kn = st.sonuc.filter(x => x && x.kanit !== undefined), k1 = kn.filter(x => x.kanit === 1).length;
+      s.turlar = [...s.turlar, { t: Date.now(), d, n }].slice(-10);
+      metinler.forEach(m => kk.metin[m.id] = (kk.metin[m.id] || 0) + 1);
+      const si2 = sonIki(s), yeniAcildi = !s.gecti && si2.tur >= ATOLYE_MIN_TUR && si2.oran >= ATOLYE_ESIK;
+      if (yeniAcildi) s.gecti = true;
+      atolyeKayit.set(kk);
+      const sonraki = A.seviyeler[si + 1], oran = d / n;
+      const mesaj = yeniAcildi ? (sonraki ? `Harika! ${sEk(sv.no, "i")} geçtin, S${sonraki.no} açıldı. Daha uzun metinlere hazırsın.` : "Harika! En uzun metinleri de geçtin. Artık gerçek bir okuma dedektifisin.")
+        : oran >= ATOLYE_ESIK ? (si2.tur < ATOLYE_MIN_TUR ? "Çok iyi! Bir tur daha bu kadar dikkatli okursan sonraki seviye açılacak." : "Çok iyi! Dikkatlice okudun.")
+        : "İyi çalıştın. Kanıt cümlesini bulmak zaman ister. Bir tur daha yaparsan daha kolay gelecek.";
+      root.innerHTML = `<div class="stage"><div class="kicker">Okuma Atölyesi · S${sv.no} · Tur sonucu</div><h3>${yeniAcildi ? "Yeni seviye açıldı!" : oran >= ATOLYE_ESIK ? "Dikkatli okudun!" : "Tur bitti!"}</h3><p class="big">${mesaj}</p>
+        <div class="done-stats"><div class="stat"><b>${c(1)}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${c(2)}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c(0)}</b><span>birlikte öğrendik</span></div>${kn.length ? `<div class="stat"><b>${k1} / ${kn.length}</b><span>kanıtı ilk dokunuşta buldun</span></div>` : ""}</div>
+        <p class="ek">Bu seviyede ${si2.tur} tur · son ${Math.min(si2.tur, ATOLYE_MIN_TUR)} turda ${yuzde(si2.oran)} doğru${s.gecti ? "" : ` · sonraki seviye için 2 tur ve ${yuzde(ATOLYE_ESIK)}`}.</p>
+        <div class="row">${yeniAcildi && sonraki ? `<button class="btn primary" data-yeni>${sEk(sonraki.no, "i")} dene</button>` : ""}<button class="btn${yeniAcildi && sonraki ? " ghost" : " primary"}" data-tekrar>Bir tur daha</button><button class="btn ghost" data-ana>Seviyelere dön</button></div></div>`;
+      $("[data-tekrar]", root).onclick = () => atolyeTur(root, si);
+      $("[data-ana]", root).onclick = () => atolyeAna(root);
+      const yb = $("[data-yeni]", root); if (yb) yb.onclick = () => atolyeTur(root, si + 1);
+      root.scrollIntoView({ block: "start", behavior: "smooth" });
+    };
+    ciz();
+  }
+
   // ---------- Kuark / ders botu ----------
   function setupBot() {
     const b = S.ders.bot; if (!b) return;
@@ -1415,7 +1575,7 @@
     const add = (cls, text) => { const m = document.createElement("div"); m.className = "msg " + cls; m.textContent = text; msgs.appendChild(m); msgs.scrollTop = msgs.scrollHeight; return m; };
     const drawHist = () => {
       msgs.innerHTML = ""; const h = hist[S.konu] || [];
-      add("bot", b.karsilama.replace("{konu}", S.data ? S.data.baslik : ""));
+      add("bot", b.karsilama.replace("{konu}", S.data ? S.data.baslik : S.botBaslik || ""));
       h.forEach(x => add(x.rol === "user" ? "me" : "bot", x.metin));
       $("#botSugg").innerHTML = (b.oneriler || []).map(s => `<button type="button">${esc(s)}</button>`).join("");
     };
@@ -1509,7 +1669,8 @@
 
   async function openKonu(id, scroll) {
     const t = allTopics().find(k => k.id === id && k.hazir); if (!t) return;
-    S.konu = id; S.unit = t.ui; renderNav(); store.set(key("son"), id);
+    S.konu = id; S.unit = t.ui; S.botBaslik = null; renderNav(); store.set(key("son"), id);
+    $$(".head-actions a[href='#atolye']").forEach(a => a.removeAttribute("aria-pressed"));
     if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id);
     try {
       if (!S.cache[id]) { const r = await fetch("konular/" + id + ".json", { cache: "no-cache" }); if (!r.ok) throw 0; S.cache[id] = await r.json(); }
@@ -1683,21 +1844,20 @@
     const sb = $("#sinifBtn");
     const applyClass = on => { document.body.classList.toggle("sinif", on); sb.setAttribute("aria-pressed", on); };
     applyClass(store.get("ela7:sinif", false));
-    sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data) setTab(S.tab); };
+    sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data && $("#panel")) setTab(S.tab); };
     $("#units").onclick = e => { const b = e.target.closest(".unit-btn"); if (b) openUnit(+b.dataset.u); };
     $("#topics").onclick = e => { const b = e.target.closest(".topic"); if (b && !b.disabled) { S.donus = null; openKonu(b.dataset.id, true); } };
-    const yol = h => h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : openKonu(h, true);
+    const yol = h => h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : openKonu(h, true);
     addEventListener("hashchange", () => yol(location.hash.slice(1)));
-    if (isEn()) {
-      $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#gunluk">Günün Tekrarı</a><a class="head-btn" href="#defter">Kelime Defterim</a>`);
-      $$(".head-actions a").forEach(l => l.onclick = e => { const h = l.getAttribute("href").slice(1); if (location.hash.slice(1) === h) { e.preventDefault(); yol(h); } });
-    }
+    if (isEn()) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#gunluk">Günün Tekrarı</a><a class="head-btn" href="#defter">Kelime Defterim</a>`);
+    if (S.ders.atolye) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#atolye">${ICON.okuma}Okuma Atölyesi</a>`);
+    $$(".head-actions a").forEach(l => l.onclick = e => { const h = l.getAttribute("href").slice(1); if (location.hash.slice(1) === h) { e.preventDefault(); yol(h); } });
     const ready = allTopics().filter(k => k.hazir);
     const want = [location.hash.slice(1), store.get(key("son"))].find(id => ready.some(k => k.id === id));
     const first = want || (ready.length ? ready[ready.length - 1].id : null);
     renderNav(); setupBot();
     const ozel = location.hash.slice(1);
-    if (isEn() && (ozel === "gunluk" || ozel === "defter")) yol(ozel);
+    if ((isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye")) yol(ozel);
     else if (first) openKonu(first, false); else $("#content").innerHTML = `<div class="notice">Henüz eklenmiş konu yok.</div>`;
   }
   boot();

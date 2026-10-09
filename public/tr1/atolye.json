@@ -1,0 +1,1537 @@
+{
+ "baslik": "Okuma Atölyesi",
+ "giris": "Burada her gün biraz okuma çalışıyoruz. Kısa metinlerle başlıyoruz; seviye ilerledikçe metinler uzuyor. Her soruda önce cevabı gösteren cümleye dokunacaksın, sonra şıkları eleyeceksin. Not yok; acele etmeden oku.",
+ "seviyeler": [
+  {
+   "no": 1,
+   "ad": "Kısa paragraf",
+   "uzunluk": "2–3 cümle (≈30 kelime)",
+   "turMetin": 3,
+   "metinler": [
+    {
+     "id": "s1m1",
+     "baslik": "Bal Arıları",
+     "alan": "Fen",
+     "metin": [
+      "Bal arıları çiçekten çiçeğe uçarak nektar toplar.",
+      "Bu sırada çiçeklerin polenlerini de taşırlar.",
+      "Böylece bitkilerin meyve vermesine yardım ederler.",
+      "Arılar azalırsa sofralarımızdaki meyveler de azalır."
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metne göre arılar bitkilere nasıl yardım eder?",
+       "secenekler": [
+        "Bitkileri sulayarak büyütürler.",
+        "Polen taşıyarak meyve vermelerine yardım ederler.",
+        "Yaprakları zararlılardan korurlar."
+       ],
+       "dogru": 1,
+       "kanit": [
+        1,
+        2
+       ],
+       "ipucu": "'Böylece' ile başlayan cümleye bak: ondan önceki cümle ne anlatıyor?",
+       "aciklama": "Arılar polen taşır, böylece bitkilerin meyve vermesine yardım eder (2. ve 3. cümle).",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Arıların bitkilere NASIL yardım ettiğini.",
+         "Anahtar kelime: yardım.",
+         "Kanıt: 'yardım' kelimesinin geçtiği cümleyi ve ondan önceki cümleyi oku.",
+         "Şıkları ele: Metinde sulamaktan ya da yapraklardan söz ediliyor mu?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s1m2",
+     "baslik": "Kalbimiz",
+     "alan": "Fen",
+     "metin": [
+      "Kalbimiz yumruğumuz büyüklüğünde, güçlü bir kastır.",
+      "Biz uyurken bile hiç durmadan kasılıp gevşer.",
+      "Böylece kanı damarlar aracılığıyla bütün vücudumuza pompalar.",
+      "Koşarken kalbimiz daha hızlı çalışır."
+     ],
+     "sorular": [
+      {
+       "soru": "Metne göre kalbin görevi nedir?",
+       "secenekler": [
+        "Besinleri sindirmek",
+        "Havayı temizlemek",
+        "Kanı bütün vücuda pompalamak"
+       ],
+       "dogru": 2,
+       "kanit": [
+        2
+       ],
+       "ipucu": "Kanın geçtiği cümleyi oku.",
+       "aciklama": "Kalp kanı damarlarla bütün vücuda pompalar (3. cümle).",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Kalbin ne İŞ yaptığını.",
+         "Anahtar kelime: kan.",
+         "Kanıt: Kalbin kanla ne yaptığını söyleyen cümleyi bul.",
+         "Şıkları ele: Sindirim ve hava metinde geçiyor mu?"
+        ]
+       }
+      },
+      {
+       "soru": "Metindeki “pompalar” kelimesi bu cümlede hangi anlamda kullanılmıştır?",
+       "secenekler": [
+        "İter, gönderir",
+        "Durdurur",
+        "Temizler"
+       ],
+       "dogru": 0,
+       "kanit": [
+        2
+       ],
+       "ipucu": "Kelimenin yerine şıkları koyup cümleyi oku.",
+       "aciklama": "Kalp kanı vücuda iter, gönderir. 'Kanı vücuda iter' dersek anlam bozulmaz.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Kelimenin bu cümledeki anlamını.",
+         "Anahtar kelime: pompalar.",
+         "Kanıt: 'pompalar' kelimesinin geçtiği cümleyi bul. Kan, kalpten nereye gidiyor?",
+         "Şıkları ele: Cümleye her şıkkı koy; hangisi anlamı bozmuyor?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s1m3",
+     "baslik": "Yağmurlu Sabah",
+     "alan": "Genel",
+     "metin": [
+      "Deniz her sabah okuldan önce parkta koşar.",
+      "Bugün yağmur yağıyordu ama yine de spor ayakkabılarını giydi.",
+      "Annesi gülümseyip ona bir şemsiye uzattı.",
+      "“Islanıp üşüme, kendine iyi bak,” dedi."
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metne göre Deniz'le ilgili hangisi söylenemez?",
+       "secenekler": [
+        "Her sabah koşar.",
+        "Yağmurda da koşmaya hazırlanmıştır.",
+        "Koşudan sonra okula geç kalmıştır."
+       ],
+       "dogru": 2,
+       "kanit": [
+        0,
+        1
+       ],
+       "ipucu": "Olumsuz kök: metinde yazanları çıkar.",
+       "aciklama": "Metinde Deniz'in okula geç kaldığı yazmıyor. Her sabah koştuğu (1. cümle) ve yağmurda da hazırlandığı (2. cümle) yazıyor.",
+       "yardim": {
+        "adimlar": [
+         "Soru kökünü oku: 'söylenemez' olumsuz. Metinde OLMAYAN bilgiyi arıyorsun.",
+         "Anahtar kelimeler: koşu, yağmur, okul.",
+         "Kanıt: Önce metinde yazanları bul: Deniz ne zaman koşar, yağmurda ne yaptı?",
+         "Şıkları ele: Metinde yazanları çıkar; kalan şık cevaptır."
+        ]
+       },
+       "kanitIpucu": "Olumsuz soruda önce metinde YAZANLARI bul. Şıklardan birinin metinde geçtiği cümleye dokun."
+      }
+     ]
+    },
+    {
+     "id": "s1m4",
+     "baslik": "İstanbul'un Fethi",
+     "alan": "Sosyal",
+     "metin": [
+      "Fatih Sultan Mehmet, İstanbul'u 1453 yılında fethetti.",
+      "Fetih sırasında gemileri karadan yürüterek Haliç'e indirdi.",
+      "Bu fetihle Orta Çağ sona erdi, Yeni Çağ başladı.",
+      "Fetihten sonra İstanbul, Osmanlı Devleti'nin başkenti oldu."
+     ],
+     "sorular": [
+      {
+       "soru": "Metne göre gemiler Haliç'e nasıl indirildi?",
+       "secenekler": [
+        "Karadan yürütülerek",
+        "Denizden yüzdürülerek",
+        "Nehirden taşınarak"
+       ],
+       "dogru": 0,
+       "kanit": [
+        1
+       ],
+       "ipucu": "'Haliç' kelimesini metinde ara.",
+       "aciklama": "Gemiler karadan yürütülerek Haliç'e indirildi (2. cümle).",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Gemilerin Haliç'e NASIL indirildiğini.",
+         "Anahtar kelimeler: gemi, Haliç.",
+         "Kanıt: 'Haliç' kelimesinin geçtiği cümleyi bul.",
+         "Şıkları ele: O cümlede deniz ya da nehir geçiyor mu?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s1m5",
+     "baslik": "Termometre",
+     "alan": "Matematik",
+     "metin": [
+      "Sabah termometre −3 °C gösteriyordu.",
+      "Öğlen hava ısındı ve sıcaklık 5 °C oldu.",
+      "Akşam hava yeniden soğudu.",
+      "Gece ise sıcaklık −6 °C'ye kadar düştü ve yollar buz tuttu."
+     ],
+     "sorular": [
+      {
+       "soru": "Metne göre gün içinde sıcaklık en yüksek ne zaman olmuştur?",
+       "secenekler": [
+        "Sabah",
+        "Öğlen",
+        "Akşam"
+       ],
+       "dogru": 1,
+       "kanit": [
+        1
+       ],
+       "ipucu": "Isınmak sıcaklığın artması demek.",
+       "aciklama": "Öğlen hava ısındı ve 5 °C oldu; sabah −3 °C idi, akşam yeniden soğudu.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Sıcaklığın EN YÜKSEK olduğu zamanı.",
+         "Anahtar kelimeler: ısındı, soğudu.",
+         "Kanıt: Havanın ısındığını söyleyen cümleyi bul.",
+         "Şıkları ele: −3 mü büyük, 5 mi? Akşam hava ne oldu?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s1m6",
+     "baslik": "Yeni Kütüphane",
+     "alan": "Genel",
+     "metin": [
+      "Okulumuzun kütüphanesi bu yıl yenilendi.",
+      "Rafların yanına rahat minderler kondu.",
+      "Artık teneffüslerde orada kitap okuyan öğrenci sayısı arttı.",
+      "Kütüphaneci de her hafta gelen yeni kitapları kapının yanındaki panoya asıyor."
+     ],
+     "sorular": [
+      {
+       "soru": "Kütüphanede kitap okuyan öğrenci sayısı neden artmış olabilir?",
+       "secenekler": [
+        "Teneffüsler uzatıldı.",
+        "Kütüphane yenilenip rahat bir yer oldu.",
+        "Okula yeni bir öğretmen geldi."
+       ],
+       "dogru": 1,
+       "kanit": [
+        0,
+        1
+       ],
+       "ipucu": "Artıştan önceki cümleler neyi anlatıyor?",
+       "aciklama": "Kütüphane yenilendi ve minderler kondu (1. ve 2. cümle); bu yüzden orada okuyan öğrenci arttı.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Öğrenci sayısının artmasının SEBEBİNİ.",
+         "Anahtar kelime: arttı. 'Artık' kelimesi bir değişikliği gösterir.",
+         "Kanıt: Artıştan önce kütüphanede ne değişti? O cümleye dokun.",
+         "Şıkları ele: Teneffüs ya da öğretmen metinde geçiyor mu?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s1m7",
+     "baslik": "Güneş Bir Yıldızdır",
+     "alan": "Fen",
+     "metin": [
+      "Yıldızlar, büyük gaz ve toz bulutlarında doğar.",
+      "Güneş de bir yıldızdır.",
+      "Bize en yakın yıldız olduğu için gökyüzündeki diğer yıldızlardan çok daha büyük görünür.",
+      "Aslında evrende Güneş'ten çok daha büyük yıldızlar da vardır."
+     ],
+     "sorular": [
+      {
+       "soru": "Metne göre Güneş neden diğer yıldızlardan büyük görünür?",
+       "secenekler": [
+        "En büyük yıldız olduğu için",
+        "Gündüz parladığı için",
+        "Bize en yakın yıldız olduğu için"
+       ],
+       "dogru": 2,
+       "kanit": [
+        2
+       ],
+       "ipucu": "'... olduğu için' sebep bildirir.",
+       "aciklama": "3. cümle sebebi söyler: Güneş bize en yakın yıldızdır.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Güneş'in büyük görünmesinin SEBEBİNİ.",
+         "Anahtar kelimeler: büyük görünür, 'için'.",
+         "Kanıt: 'büyük görünür' sözünün geçtiği cümleyi bul.",
+         "Şıkları ele: Metinde 'en büyük yıldız' yazıyor mu, yoksa başka bir sebep mi?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s1m8",
+     "baslik": "Ahilik",
+     "alan": "Sosyal",
+     "metin": [
+      "Ahilik, esnaf ve sanatkârları bir araya getiren bir teşkilattı.",
+      "Ahiler dürüst çalışmayı ve müşteriyi aldatmamayı çok önemserdi.",
+      "Kusurlu bir malı satmak ayıp sayılırdı.",
+      "Ahiler, çırak olarak işe başlayan gençlere hem meslek hem de güzel ahlak öğretirdi."
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metinde ahilerle ilgili en çok hangisi vurgulanmıştır?",
+       "secenekler": [
+        "Ticarette dürüstlük",
+        "Uzak ülkelere yolculuk",
+        "Savaş teknikleri"
+       ],
+       "dogru": 0,
+       "kanit": [
+        1,
+        2
+       ],
+       "ipucu": "Ahiler neyi 'çok önemserdi'?",
+       "aciklama": "2. ve 3. cümle dürüstlüğü anlatır: müşteriyi aldatmamak, kusurlu mal satmamak.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Metnin en çok ÜZERİNDE DURDUĞU şeyi.",
+         "Anahtar kelimeler: dürüst, aldatmamak, ayıp.",
+         "Kanıt: Ahilerin neyi önemsediğini söyleyen cümleyi bul.",
+         "Şıkları ele: Yolculuk ya da savaş metinde geçiyor mu?"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "ad": "Paragraf",
+   "uzunluk": "4–5 cümle (≈60 kelime)",
+   "turMetin": 2,
+   "metinler": [
+    {
+     "id": "s2m1",
+     "baslik": "Uzaydaki Çöpler",
+     "alan": "Fen",
+     "metin": [
+      "Dünya'nın çevresinde, artık çalışmayan uyduların ve roket parçalarının oluşturduğu bir çöp kuşağı var.",
+      "Bilim insanları buna uzay kirliliği diyor.",
+      "Bu parçalar çok hızlı hareket ettiği için küçük bir vida bile çalışan bir uyduya çarptığında ona zarar verebilir.",
+      "Bu yüzden bazı ülkeler, eski uyduları yörüngeden çıkarmanın yollarını araştırıyor.",
+      "Her yıl yeni uydular fırlatıldıkça bu sorun daha da büyüyor."
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metnin konusu nedir?",
+       "secenekler": [
+        "Roketlerin nasıl fırlatıldığı",
+        "Uyduların ne işe yaradığı",
+        "Uzay kirliliği ve zararları"
+       ],
+       "dogru": 2,
+       "kanit": [
+        0,
+        1,
+        2
+       ],
+       "ipucu": "Metin hangi kelimeyi açıklıyor?",
+       "aciklama": "Metin baştan sona uzaydaki çöpleri, yani uzay kirliliğini ve zararını anlatıyor.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Metnin NEYİ anlattığını (konusunu).",
+         "Anahtar kelimeler: çöp, kirlilik.",
+         "Kanıt: Metnin anlattığı şeye ad veren cümleyi bul.",
+         "Şıkları ele: Fırlatma ya da uyduların işi anlatılıyor mu, yoksa sadece geçiyor mu?"
+        ]
+       }
+      },
+      {
+       "soru": "“Küçük bir vida bile çalışan bir uyduya zarar verebilir.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 0,
+       "kanit": [
+        2
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Bu yargı 3. cümlede açıkça yazıyor: küçük bir vida bile çalışan bir uyduya zarar verebilir.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: vida.",
+         "Kanıt: 'vida' kelimesinin geçtiği cümleye dokun.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s2m2",
+     "baslik": "Besinlerin Yolculuğu",
+     "alan": "Fen",
+     "metin": [
+      "Yediğimiz besinlerin yolculuğu ağızda başlar.",
+      "Dişlerimiz besinleri küçük parçalara ayırır, tükürük de onları yumuşatır.",
+      "Besinler daha sonra yemek borusundan mideye iner.",
+      "Midede bir süre karıştırılan besinler ince bağırsağa geçer.",
+      "Besinlerin kana karışması en çok burada gerçekleşir.",
+      "Sindirilemeyen artıklar ise kalın bağırsağa geçer ve sonunda vücuttan atılır."
+     ],
+     "sorular": [
+      {
+       "soru": "Metne göre besinlerin kana karışması en çok nerede olur?",
+       "secenekler": [
+        "İnce bağırsakta",
+        "Midede",
+        "Ağızda"
+       ],
+       "dogru": 0,
+       "kanit": [
+        3,
+        4
+       ],
+       "ipucu": "'Burada' önceki cümledeki yeri gösterir.",
+       "aciklama": "Son cümledeki 'burada', bir önceki cümledeki ince bağırsağı gösterir.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Kana karışmanın EN ÇOK olduğu yeri.",
+         "Anahtar kelime: kana karışması.",
+         "Kanıt: 'kana karışması' sözünü bul. 'Burada' kelimesi hangi yeri gösteriyor?",
+         "Şıkları ele: Midede ve ağızda ne olduğu yazıyor?"
+        ]
+       }
+      },
+      {
+       "soru": "Metindeki “yolculuk” kelimesi bu metinde hangi anlamda kullanılmıştır?",
+       "secenekler": [
+        "Bir şehirden başka bir şehre gitmek",
+        "Besinlerin vücudun içinde ilerlemesi",
+        "Tatile çıkmak"
+       ],
+       "dogru": 1,
+       "kanit": [
+        0
+       ],
+       "ipucu": "Bu metinde yolculuk eden kim?",
+       "aciklama": "Besinler ağızdan mideye, oradan bağırsağa ilerler. 'Yolculuk' burada mecaz anlamda kullanılmıştır.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Kelimenin bu metindeki anlamını.",
+         "Anahtar kelime: yolculuk.",
+         "Kanıt: 'yolculuk' kelimesinin geçtiği cümleye dokun. Kim yolculuk ediyor?",
+         "Şıkları ele: Besinler şehre ya da tatile gider mi?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s2m3",
+     "baslik": "İyi Bir Dinleyici",
+     "alan": "Sosyal",
+     "metin": [
+      "Arkadaşınız size bir sorununu anlatırken telefonunuza bakıyorsanız onu gerçekten dinlemiyorsunuzdur.",
+      "Etkili dinleyen kişi konuşana döner, göz teması kurar ve sözünü kesmez.",
+      "Anlamadığı bir yer olursa konuşma bitince soru sorar.",
+      "Böyle dinlenen kişi önemsendiğini hisseder ve kendini daha rahat anlatır.",
+      "Kısacası iyi bir dinleyici olmak, iyi bir arkadaş olmanın ilk adımıdır."
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metnin ana fikri nedir?",
+       "secenekler": [
+        "Telefonlar arkadaşlıkları bozar.",
+        "Dikkatle dinlemek, karşımızdakini önemsediğimizi gösterir.",
+        "Soru sormak konuşmayı uzatır."
+       ],
+       "dogru": 1,
+       "kanit": [
+        3,
+        4
+       ],
+       "ipucu": "'Böyle dinlenen kişi…' cümlesine bak.",
+       "aciklama": "Son cümle mesajı verir: iyi dinlenen kişi önemsendiğini hisseder.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Ana fikri: yazarın vermek istediği mesajı.",
+         "Anahtar kelimeler: dinlemek, önemsemek.",
+         "Kanıt: Etkili dinlemenin SONUCUNU söyleyen cümleyi bul.",
+         "Şıkları ele: Bir ayrıntı mı, yoksa bütün metnin mesajı mı?"
+        ]
+       }
+      },
+      {
+       "soru": "Metne göre etkili dinleyen kişi hangisini yapmaz?",
+       "secenekler": [
+        "Göz teması kurar.",
+        "Konuşma bitince soru sorar.",
+        "Konuşanın sözünü keser."
+       ],
+       "dogru": 2,
+       "kanit": [
+        1,
+        2
+       ],
+       "ipucu": "Olumsuz kök: yapmadığı şeyi ara.",
+       "aciklama": "2. cümle: etkili dinleyici sözü kesmez. Göz teması kurar ve sonunda soru sorar.",
+       "yardim": {
+        "adimlar": [
+         "Soru kökünü oku: 'yapmaz' olumsuz. Etkili dinleyicinin YAPMADIĞINI arıyorsun.",
+         "Anahtar kelime: etkili dinleyen kişi.",
+         "Kanıt: Etkili dinleyicinin ne yaptığını sayan cümleyi bul.",
+         "Şıkları ele: Metinde 'yapar' denenleri çıkar."
+        ]
+       },
+       "kanitIpucu": "Olumsuz soruda önce metinde YAZANLARI bul. Şıklardan birinin metinde geçtiği cümleye dokun."
+      }
+     ]
+    },
+    {
+     "id": "s2m4",
+     "baslik": "Kar Topu",
+     "alan": "Fen",
+     "metin": [
+      "Ali, tepenin en yüksek yerinde küçük bir kar topu yaptı.",
+      "Topu bıraktığında top aşağı doğru yuvarlanmaya başladı.",
+      "Yuvarlandıkça hem hızlandı hem de üzerine kar yapışarak büyüdü.",
+      "Tepenin eteğine geldiğinde koca bir kar topu olmuştu ve önündeki küçük kardan adamı devirdi.",
+      "Ali, kardan adamı yeniden yapmak için kardeşini yardıma çağırdı ve ikisi akşama kadar karda oynadı."
+     ],
+     "sorular": [
+      {
+       "soru": "Metne göre kar topu neden büyüdü?",
+       "secenekler": [
+        "Üzerine kar yapıştığı için",
+        "Ali yeniden kar eklediği için",
+        "Hava soğuduğu için"
+       ],
+       "dogru": 0,
+       "kanit": [
+        2
+       ],
+       "ipucu": "'büyüdü' kelimesinin olduğu cümleyi oku.",
+       "aciklama": "3. cümle: üzerine kar yapışarak büyüdü.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Topun büyümesinin SEBEBİNİ.",
+         "Anahtar kelime: büyüdü.",
+         "Kanıt: 'büyüdü' kelimesinin geçtiği cümleye dokun.",
+         "Şıkları ele: Ali topa sonradan dokundu mu? Havadan söz ediliyor mu?"
+        ]
+       }
+      },
+      {
+       "soru": "“Kar topu, tepenin eteğinde başta olduğundan daha fazla hareket enerjisine sahipti.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 1,
+       "kanit": [
+        2,
+        3
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Metinde 'enerji' kelimesi yok. Ama top hızlandı, büyüdü ve kardan adamı devirdi; buradan enerjisinin arttığını anlıyoruz.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: hızlandı, devirdi.",
+         "Kanıt: Topun hızlandığını ve kardan adamı devirdiğini söyleyen cümleleri bul.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s2m5",
+     "baslik": "Elif'in Kumbarası",
+     "alan": "Matematik",
+     "metin": [
+      "Elif'in kumbarasında 120 lira vardı.",
+      "Annesinin doğum günü hediyesi için paranın yarısını harcadı.",
+      "Kalan paranın 20 lirasıyla da kendine bir kitap aldı.",
+      "Elif, kumbarasında kalan parayı yeni bir okul çantası almak için biriktirmeye karar verdi.",
+      "Beğendiği çanta 100 lira olduğu için bir süre daha para biriktirmesi gerekiyor."
+     ],
+     "sorular": [
+      {
+       "soru": "Elif kitabı aldıktan sonra kumbarasında kaç lira kaldı?",
+       "secenekler": [
+        "60 lira",
+        "100 lira",
+        "40 lira"
+       ],
+       "dogru": 2,
+       "kanit": [
+        1,
+        2
+       ],
+       "ipucu": "İki harcama var: önce yarısı, sonra 20 lira.",
+       "aciklama": "120'nin yarısı 60; 60 − 20 = 40 lira kaldı.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Kitaptan SONRA kalan parayı.",
+         "Anahtar kelimeler: yarısını, kalan, 20 lira.",
+         "Kanıt: Elif'in para harcadığı cümleleri bul.",
+         "Şıkları ele: Önce 120'nin yarısını bul, sonra 20 çıkar."
+        ]
+       }
+      },
+      {
+       "soru": "“Elif, annesine değer veren biridir.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 1,
+       "kanit": [
+        1
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Metinde 'değer verir' yazmıyor. Ama parasının yarısını annesine hediyeye ayırıyor; buradan anlıyoruz.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: hediye.",
+         "Kanıt: Elif'in parasının bir kısmını ne için harcadığını söyleyen cümleyi bul.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      },
+      {
+       "soru": "“Elif, kalan parayı okul çantası almak için biriktirecek.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 0,
+       "kanit": [
+        3
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Bu yargı son cümlede açıkça yazıyor.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: okul çantası.",
+         "Kanıt: 'okul çantası' sözünün geçtiği cümleye dokun.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s2m6",
+     "baslik": "Hayır İçin Vakıflar",
+     "alan": "Sosyal",
+     "metin": [
+      "Osmanlı Devleti'nde birçok hizmet vakıflar aracılığıyla yapılırdı.",
+      "Varlıklı kişiler, mallarının gelirini çeşme, köprü, okul ve aşevi gibi yapılara bağışlardı.",
+      "Bu yapılar yüzyıllarca halka ücretsiz hizmet verdi.",
+      "Hatta bazı vakıflar göçmen kuşlara ve sokak hayvanlarına bile yiyecek sağlardı.",
+      "Vakıflar sayesinde yoksullar, öğrenciler ve yolcular yardım görürdü."
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metne en uygun başlık hangisidir?",
+       "secenekler": [
+        "Hayır İçin Kurulan Vakıflar",
+        "Osmanlı'da Savaşlar",
+        "Göçmen Kuşların Yolculuğu"
+       ],
+       "dogru": 0,
+       "kanit": [
+        0,
+        1
+       ],
+       "ipucu": "Başlık metnin bütününü kapsar.",
+       "aciklama": "Metin baştan sona vakıfları ve yaptıkları iyilikleri anlatıyor. Kuşlar yalnızca bir ayrıntı.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Metnin bütününü anlatan başlığı.",
+         "Anahtar kelime: vakıf.",
+         "Kanıt: Metnin neyi anlattığını söyleyen cümleyi bul.",
+         "Şıkları ele: Metinde yalnızca bir kez geçen ayrıntıyı başlık sanma."
+        ]
+       }
+      },
+      {
+       "soru": "Metindeki “varlıklı” kelimesinin anlamı nedir?",
+       "secenekler": [
+        "Çok çalışkan",
+        "Zengin, malı mülkü olan",
+        "Yaşlı"
+       ],
+       "dogru": 1,
+       "kanit": [
+        1
+       ],
+       "ipucu": "Cümlenin devamı ipucu veriyor: 'mallarının gelirini'.",
+       "aciklama": "Malının gelirini bağışlayabilen kişi malı mülkü olan, zengin kişidir.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Kelimenin anlamını.",
+         "Anahtar kelime: varlıklı.",
+         "Kanıt: 'varlıklı' kelimesinin geçtiği cümleye dokun. Bu kişiler neyini bağışlıyor?",
+         "Şıkları ele: Malının gelirini bağışlayan kişi nasıl biridir?"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "ad": "Parça parça metin",
+   "uzunluk": "2 bölüm (≈120 kelime)",
+   "turMetin": 1,
+   "metinler": [
+    {
+     "id": "s3m1",
+     "baslik": "Robot Yarışması",
+     "alan": "Genel",
+     "bolumler": [
+      {
+       "metin": [
+        "Ece ile Mert, okulun robot yarışması için aylardır çalışıyordu.",
+        "Robotları, yerdeki siyah çizgiyi izleyerek bir labirentten çıkacaktı.",
+        "Ancak yarışmadan bir gün önceki denemede robot ilk dönemeçte durdu ve bir daha hareket etmedi.",
+        "Mert hemen pes etmek istedi: “Artık yetişmez, bırakalım,” dedi.",
+        "Ece bir süre sessizce robota baktı ve derin bir nefes aldı."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölümde hikâyenin düğümü, yani ortaya çıkan sorun hangisidir?",
+         "secenekler": [
+          "Yarışmanın ertelenmesi",
+          "Robotun denemede durup hareket etmemesi",
+          "Ece'nin hastalanması"
+         ],
+         "dogru": 1,
+         "kanit": [
+          2
+         ],
+         "ipucu": "Düğüm, sorunun çıktığı yerdir.",
+         "aciklama": "'Ancak' ile sorun başlar: robot denemede durur.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Düğümü: işlerin ters gittiği yeri.",
+           "Anahtar kelime: 'Ancak' (bir sorunun başladığını gösterir).",
+           "Kanıt: 'Ancak' ile başlayan cümleye bak.",
+           "Şıkları ele: Erteleme ya da hastalık bu bölümde geçiyor mu?"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "metin": [
+        "Ece ise sakin kaldı ve sorunu adım adım aramaya başladı.",
+        "Sonunda bir kablonun gevşediğini fark etti.",
+        "Kabloyu taktıklarında robot labirenti hatasız tamamladı.",
+        "Yarışma günü salon çok kalabalıktı ve Mert'in elleri heyecandan titriyordu.",
+        "Robot birkaç saniye geç kaldığı için birinci olamadılar ama jüri, sorunu birlikte çözdükleri için onlara “takım ruhu” ödülü verdi.",
+        "Mert, o akşam Ece'ye “İyi ki vazgeçmemişiz,” dedi."
+       ],
+       "sorular": [
+        {
+         "soru": "Ece sorunu nasıl buldu?",
+         "secenekler": [
+          "Öğretmeninden yardım isteyerek",
+          "Robotu baştan yaparak",
+          "Sorunu adım adım arayarak"
+         ],
+         "dogru": 2,
+         "kanit": [
+          0,
+          1
+         ],
+         "ipucu": "Ece'nin adının geçtiği cümleyi oku.",
+         "aciklama": "Ece sakin kaldı, sorunu adım adım aradı ve gevşek kabloyu buldu.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Ece'nin sorunu NASIL bulduğunu.",
+           "Anahtar kelime: Ece.",
+           "Kanıt: Ece'nin ne yaptığını anlatan cümleye dokun.",
+           "Şıkları ele: Öğretmen ya da yeni robot bu bölümde geçiyor mu?"
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "sorular": [
+      {
+       "soru": "Bu hikâyeden çıkarılabilecek en uygun ders hangisidir?",
+       "secenekler": [
+        "Zorluk karşısında sabırla çalışmak sonuç verir.",
+        "Yarışmalarda her zaman birinci olunur.",
+        "Robotlar kolayca bozulur."
+       ],
+       "dogru": 0,
+       "kanit": [
+        5,
+        9,
+        10
+       ],
+       "ipucu": "Hikâyenin son cümlesini düşün.",
+       "aciklama": "Ece sabırla aradı, sorun çözüldü; Mert de 'İyi ki vazgeçmemişiz' dedi. Mesaj: sabırla çalışmak sonuç verir.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Hikâyenin bize verdiği mesajı.",
+         "Anahtar kelimeler: pes etmek, vazgeçmemek.",
+         "Kanıt: Hikâyenin sonunda Mert ne dedi? Ya da Ece sorun karşısında ne yaptı?",
+         "Şıkları ele: Birinci oldular mı? Bozulma bir ayrıntı mı, mesaj mı?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s3m2",
+     "baslik": "Kan Bağışı",
+     "alan": "Fen",
+     "bolumler": [
+      {
+       "metin": [
+        "Hastanelerde ameliyat olan ya da kaza geçiren pek çok hastanın kana ihtiyacı olur.",
+        "Kan, bugün bile bir fabrikada üretilemez.",
+        "Bu yüzden ihtiyaç duyulan kanın tek kaynağı, sağlıklı insanların bağışladığı kandır.",
+        "Kan bağışı yapabilmek için 18 yaşını doldurmuş, sağlıklı ve en az 50 kilogram olmak gerekir.",
+        "Ülkemizde bağışlanan kanın büyük bölümünü Türk Kızılay toplar ve hastanelere ulaştırır."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölüme göre kan bağışı neden önemlidir?",
+         "secenekler": [
+          "Bağış yapanlar ödül aldığı için",
+          "Hastanelerde ilaç kalmadığı için",
+          "Kan fabrikada üretilemediği için"
+         ],
+         "dogru": 2,
+         "kanit": [
+          1,
+          2
+         ],
+         "ipucu": "'Bu yüzden' kelimesinden önceki cümle sebebi söyler.",
+         "aciklama": "Kan fabrikada üretilemez; bu yüzden tek kaynak bağışlanan kandır.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Kan bağışının önemli olmasının SEBEBİNİ.",
+           "Anahtar kelimeler: 'Bu yüzden', tek kaynak.",
+           "Kanıt: 'Bu yüzden' ile başlayan cümleye ve ondan önceki cümleye bak.",
+           "Şıkları ele: Ödül ya da ilaç bu bölümde geçiyor mu?"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "metin": [
+        "Bağışlanan kan, hastaya verilmeden önce dikkatle incelenir.",
+        "Kan grubu uygun olmayan bir kan, hastaya zarar verebilir.",
+        "Örneğin A Rh+ kan grubundaki bir hastaya B grubu kan verilemez.",
+        "Bir kişinin bağışladığı kan, plazma ve alyuvar gibi parçalara ayrılarak birden fazla hastaya verilebilir.",
+        "Bu yüzden düzenli olarak kan bağışı yapan gönüllüler, sağlık sistemi için çok değerlidir."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölümde hangisine değinilmemiştir?",
+         "secenekler": [
+          "Bağıştan sonra ne yemek gerektiğine",
+          "Kanın hastaya verilmeden önce incelendiğine",
+          "Kan grubunun uygun olması gerektiğine"
+         ],
+         "dogru": 0,
+         "kanit": [
+          0,
+          1,
+          2
+         ],
+         "ipucu": "Olumsuz kök: bölümde yazmayanı ara.",
+         "aciklama": "Bölümde kanın incelendiği ve kan grubunun önemi var; bağıştan sonra yemekten hiç söz edilmiyor.",
+         "yardim": {
+          "adimlar": [
+           "Soru kökünü oku: 'değinilmemiştir' olumsuz. Bölümde OLMAYAN bilgiyi arıyorsun.",
+           "Anahtar kelimeler: incelenir, kan grubu.",
+           "Kanıt: Önce bu bölümde yazanları bul ve birine dokun.",
+           "Şıkları ele: Metinde yazanları çıkar; kalan şık cevaptır."
+          ]
+         },
+         "kanitIpucu": "Olumsuz soruda önce metinde YAZANLARI bul. Şıklardan birinin metinde geçtiği cümleye dokun."
+        }
+       ]
+      }
+     ],
+     "sorular": [
+      {
+       "soru": "“Bağışlanan kan, hastaya verilmeden önce incelenir.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 0,
+       "kanit": [
+        5
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Bu yargı ikinci bölümün ilk cümlesinde açıkça yazıyor.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: incelenir.",
+         "Kanıt: 'incelenir' kelimesinin geçtiği cümleye dokun.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      },
+      {
+       "soru": "“Bir kişinin bağışı, birden çok aileyi sevindirebilir.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 1,
+       "kanit": [
+        8
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Metinde 'aileleri sevindirir' yazmıyor. Ama bir bağışın birden fazla hastaya verilebildiğini söylüyor; buradan anlıyoruz.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: birden fazla hasta.",
+         "Kanıt: Bağışlanan kanın kaç hastaya verilebildiğini söyleyen cümleyi bul.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s3m3",
+     "baslik": "Lale Devri",
+     "alan": "Sosyal",
+     "bolumler": [
+      {
+       "metin": [
+        "Lale Devri, Osmanlı Devleti'nde 1718–1730 yılları arasındaki döneme verilen addır.",
+        "Bu dönemde devlet büyük savaşlardan uzak durdu ve barış içinde bir yaşam sürdü.",
+        "İstanbul'da bahçeler, köşkler ve çeşmeler yapıldı.",
+        "Lale çok sevildiği için dönemin adı bu çiçekten geldi.",
+        "Dönemin şairleri, bu bahçelerin ve eğlencelerin güzelliğini şiirlerinde anlattı."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölüme göre döneme neden “Lale Devri” denmiştir?",
+         "secenekler": [
+          "Lale ilk kez o dönemde yetiştirildiği için",
+          "Lale çok sevildiği için",
+          "Padişahın en sevdiği renk kırmızı olduğu için"
+         ],
+         "dogru": 1,
+         "kanit": [
+          3
+         ],
+         "ipucu": "'... için' sebep bildirir.",
+         "aciklama": "Son cümle: lale çok sevildiği için dönemin adı bu çiçekten geldi.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Dönemin adının NEREDEN geldiğini.",
+           "Anahtar kelimeler: dönemin adı, için.",
+           "Kanıt: 'dönemin adı' sözünün geçtiği cümleye dokun.",
+           "Şıkları ele: 'İlk kez yetiştirildi' metinde yazıyor mu?"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "metin": [
+        "Lale Devri'nde yenilikler de yapıldı.",
+        "İbrahim Müteferrika, ilk Türk matbaasını kurarak kitap basmaya başladı.",
+        "Bu matbaada sözlük, tarih ve coğrafya kitapları basıldı.",
+        "Avrupa'ya elçiler gönderildi ve oradaki yaşam yakından incelendi.",
+        "Ancak halkın bir kısmı yapılan eğlencelere ve harcamalara tepki gösterdi; Patrona Halil İsyanı çıktı ve dönem sona erdi."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölümde “tepki göstermek” sözü hangi anlamda kullanılmıştır?",
+         "secenekler": [
+          "Bir şeye çok sevinmek",
+          "Bir şeye karşı olduğunu belli etmek",
+          "Bir yeri ziyaret etmek"
+         ],
+         "dogru": 1,
+         "kanit": [
+          4
+         ],
+         "ipucu": "Cümlenin devamı anlamı gösteriyor: isyan.",
+         "aciklama": "Tepkinin ardından isyan çıktı; demek ki halk karşı olduğunu belli etti.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Sözün bu bölümdeki anlamını.",
+           "Anahtar kelime: tepki göstermek.",
+           "Kanıt: Bu sözün geçtiği cümleye dokun. Sonra ne oldu?",
+           "Şıkları ele: Ardından isyan çıktıysa halk sevinmiş olabilir mi?"
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metnin konusu nedir?",
+       "secenekler": [
+        "Matbaanın nasıl çalıştığı",
+        "İstanbul'daki çeşmeler",
+        "Lale Devri'nin özellikleri ve sona ermesi"
+       ],
+       "dogru": 2,
+       "kanit": [
+        0,
+        5
+       ],
+       "ipucu": "Konu, metnin bütününü kapsar.",
+       "aciklama": "İki bölüm de Lale Devri'ni anlatıyor: önce dönemin özellikleri, sonra yenilikleri ve sonu.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Metnin bütününün NEYİ anlattığını.",
+         "Anahtar kelime: Lale Devri (iki bölümde de geçiyor).",
+         "Kanıt: Bölümlerin ilk cümlelerine bak; neyi tanıtıyorlar?",
+         "Şıkları ele: Matbaa ve çeşme metnin bütünü mü, yoksa birer ayrıntı mı?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s3m4",
+     "baslik": "Börek Paylaşımı",
+     "alan": "Matematik",
+     "bolumler": [
+      {
+       "metin": [
+        "Zeynep ve üç arkadaşı, sınıf pikniğine bir tepsi börek götürdü.",
+        "Börek 8 eşit dilime bölünmüştü.",
+        "Zeynep, dilimlerin yarısını ilk teneffüste arkadaşlarıyla paylaştı.",
+        "Dört kişiden her biri birer dilim aldı.",
+        "Böreğin kokusu bütün sınıfı sarmıştı ve herkes öğle arasını sabırsızlıkla bekledi.",
+        "Zeynep, kalan dört dilimi tepsinin bir köşesine dikkatlice ayırdı."
+       ],
+       "sorular": [
+        {
+         "soru": "İlk teneffüste kaç dilim yenmiştir?",
+         "secenekler": [
+          "4",
+          "2",
+          "6"
+         ],
+         "dogru": 0,
+         "kanit": [
+          2,
+          3
+         ],
+         "ipucu": "8'in yarısını düşün.",
+         "aciklama": "8 dilimin yarısı 4'tür; dört kişi birer dilim aldı.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? İlk teneffüste yenen dilim SAYISINI.",
+           "Anahtar kelimeler: yarısı, ilk teneffüs.",
+           "Kanıt: 'ilk teneffüs' sözünün geçtiği cümleye dokun.",
+           "Şıkları ele: 8 dilimin yarısı kaç eder?"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "metin": [
+        "Öğle arasında kalan dilimlere öğretmenleri de katıldı.",
+        "Ancak beş kişi için yalnızca dört dilim vardı.",
+        "Zeynep biraz düşündü, sonra her dilimi ikiye bölmeyi önerdi.",
+        "Böylece sekiz küçük parça oldu; herkes birer parça aldı ve kalan üç parça sınıftaki diğer arkadaşlara götürüldü.",
+        "Öğretmenleri, kesirleri gerçek hayatta kullandığı için Zeynep'e teşekkür etti."
+       ],
+       "sorular": [
+        {
+         "soru": "Zeynep neden dilimleri ikiye bölmeyi önerdi?",
+         "secenekler": [
+          "Dilimler çok büyük olduğu için",
+          "Öğretmen böyle istediği için",
+          "Dört dilim beş kişiye yetmediği için"
+         ],
+         "dogru": 2,
+         "kanit": [
+          1
+         ],
+         "ipucu": "Sorun, 'Ancak' ile başlayan cümlede.",
+         "aciklama": "Beş kişi için dört dilim vardı; herkese yetsin diye Zeynep dilimleri böldü.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Zeynep'in önerisinin SEBEBİNİ.",
+           "Anahtar kelime: 'Ancak' (bir sorunu gösterir).",
+           "Kanıt: Önerinin hemen öncesindeki sorunu anlatan cümleye dokun.",
+           "Şıkları ele: Dilimlerin büyüklüğünden ya da öğretmenin isteğinden söz ediliyor mu?"
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "sorular": [
+      {
+       "soru": "“Zeynep paylaşmayı seven ve sorunlara çözüm bulan biridir.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 1,
+       "kanit": [
+        2,
+        8
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Metinde 'paylaşmayı sever' diye yazmıyor. Ama böreğini paylaşıyor ve herkese yetecek bir çözüm buluyor; bunu davranışlarından anlıyoruz.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: paylaştı, önerdi.",
+         "Kanıt: Zeynep'in ne yaptığını anlatan cümleleri bul.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "ad": "Uzun metin ve yeni nesil",
+   "uzunluk": "200+ kelime, diyalog ve tablo",
+   "turMetin": 1,
+   "metinler": [
+    {
+     "id": "s4m1",
+     "baslik": "Bahçenin Boş Köşesi",
+     "alan": "Diyalog",
+     "bolumler": [
+      {
+       "metin": [
+        {
+         "kim": "Öğretmen",
+         "s": "Okul bahçesinin boş köşesi için iki öneri var: sebze bahçesi ya da ikinci bir basketbol potası. Bugün sınıf olarak karar vereceğiz."
+        },
+        {
+         "kim": "Kaan",
+         "s": "Bence pota yapılmalı. Teneffüslerde tek potanın önünde uzun sıralar oluşuyor ve çoğumuz oynayamadan zil çalıyor."
+        },
+        {
+         "kim": "Selin",
+         "s": "Sıralar gerçekten uzun ama sebze bahçesi bütün sınıfların işine yarar. Fen dersinde bitkilerin nasıl büyüdüğünü kendi gözümüzle izleriz."
+        },
+        {
+         "kim": "Ayşe",
+         "s": "Ben de sebze bahçesinden yanayım. Kendi yetiştirdiğimiz domatesleri ve marulları okulun kantinine verebiliriz. Hem de hiç ilaç kullanmadan."
+        },
+        {
+         "kim": "Kaan",
+         "s": "Peki bahçeyi yaz tatilinde kim sulayacak? Kimse ilgilenmezse yaz boyunca otlar her yeri kaplar."
+        }
+       ],
+       "sorular": [
+        {
+         "soru": "Kaan, pota yapılmasını hangi gerekçeyle istiyor?",
+         "secenekler": [
+          "Tek potanın önünde uzun sıralar oluştuğu için",
+          "Basketbolu en sevdiği spor olduğu için",
+          "Sebzeleri sevmediği için"
+         ],
+         "dogru": 0,
+         "kanit": [
+          1
+         ],
+         "ipucu": "Kaan'ın ilk konuşmasını oku.",
+         "aciklama": "Kaan, tek potanın önünde uzun sıralar oluştuğunu ve oynayamadıklarını söylüyor.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Kaan'ın GEREKÇESİNİ, yani sebebini.",
+           "Anahtar kelimeler: Kaan, pota.",
+           "Kanıt: Kaan'ın pota istediği konuşmaya dokun.",
+           "Şıkları ele: Kaan sevdiği spordan ya da sebzelerden söz ediyor mu?"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "metin": [
+        {
+         "kim": "Selin",
+         "s": "Haklısın, bunu düşünmemiştim. Ama okulun yanındaki huzurevinde yaşayan bir dede, yazın bahçeyi sulamaya gönüllü olduğunu söyledi."
+        },
+        {
+         "kim": "Öğretmen",
+         "s": "Güzel bir çözüm. Böylece hem bahçemiz kurumaz hem de dedeyle yeni bir arkadaşlık kurmuş oluruz. Peki pota için ne yapabiliriz?"
+        },
+        {
+         "kim": "Kaan",
+         "s": "Belki potayı spor salonunun önüne koyabiliriz. Orası zaten beton ve kimse kullanmıyor."
+        },
+        {
+         "kim": "Ayşe",
+         "s": "Salonun önü öğleden sonra gölgede kalıyor. Yazın orada oynamak daha rahat olur."
+        },
+        {
+         "kim": "Öğretmen",
+         "s": "O hâlde iki öneriyi de yapabiliriz: Köşe sebze bahçesi olsun, pota da salonun önüne konsun. Oylayalım mı?"
+        },
+        {
+         "kim": "Selin",
+         "s": "Bence herkes kabul eder!"
+        },
+        {
+         "kim": "Kaan",
+         "s": "Ben de fide dikmeye gelirim. Belki domates yetiştirmek de basketbol kadar eğlencelidir!"
+        },
+        {
+         "kim": "Öğretmen",
+         "s": "Harika. O zaman oylamadan sonra bir plan yapalım: Ayşe ve Selin tohumları alacak, Kaan da okul müdürümüzle pota için görüşecek. Gelecek hafta ilk fideleri birlikte dikeriz."
+        }
+       ],
+       "sorular": [
+        {
+         "soru": "Selin, Kaan'ın sulama itirazına nasıl bir çözüm buldu?",
+         "secenekler": [
+          "Otomatik sulama sistemi kurulması",
+          "Gönüllü bir dedenin yaz boyunca sulaması",
+          "Bahçenin yazın kapatılması"
+         ],
+         "dogru": 1,
+         "kanit": [
+          0
+         ],
+         "ipucu": "Selin'in bu bölümdeki ilk konuşması.",
+         "aciklama": "Selin, huzurevindeki bir dedenin yazın bahçeyi sulamaya gönüllü olduğunu söylüyor.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Sulama sorununun ÇÖZÜMÜNÜ.",
+           "Anahtar kelime: sulamak.",
+           "Kanıt: 'sulamak' kelimesinin geçtiği konuşmaya dokun.",
+           "Şıkları ele: Otomatik sistem ya da bahçeyi kapatmak konuşmada geçiyor mu?"
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "sorular": [
+      {
+       "soru": "Bu konuşmayla ilgili hangisi söylenemez?",
+       "secenekler": [
+        "İki öğrenci farklı öneriler savunmuştur.",
+        "Kaan, Selin'in önerisine hiç itiraz etmemiştir.",
+        "Sonunda iki öneriyi birleştiren bir yol bulunmuştur."
+       ],
+       "dogru": 1,
+       "kanit": [
+        4
+       ],
+       "ipucu": "Olumsuz kök: konuşmayla çelişen şıkkı bul.",
+       "aciklama": "Kaan, 'Bahçeyi yazın kim sulayacak?' diyerek itiraz etmiştir. Bu yüzden 'hiç itiraz etmemiştir' denemez.",
+       "yardim": {
+        "adimlar": [
+         "Soru kökünü oku: 'söylenemez' olumsuz. Konuşmaya UYMAYAN yargıyı arıyorsun.",
+         "Anahtar kelime: itiraz (karşı çıkmak).",
+         "Kanıt: Kaan'ın Selin'e karşı çıktığı bir konuşma var mı? Ona dokun.",
+         "Şıkları ele: Doğru olan iki yargıyı çıkar."
+        ]
+       },
+       "kanitIpucu": "Bu soruda kanıt, yanlış yargıyı çürüten konuşmadır: Kaan'ın Selin'e karşı çıktığı yeri bul."
+      },
+      {
+       "soru": "“Selin, karşısındakinin itirazını dinleyip dikkate almıştır.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+       "ima": true,
+       "dogru": 1,
+       "kanit": [
+        5
+       ],
+       "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+       "aciklama": "Metinde 'dikkate aldı' yazmıyor. Ama Selin 'Haklısın, bunu düşünmemiştim' deyip bir çözüm getiriyor; buradan anlıyoruz.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+         "Anahtar kelime: Haklısın.",
+         "Kanıt: Selin'in Kaan'ın itirazına verdiği cevabı bul.",
+         "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "id": "s4m2",
+     "baslik": "Ekran Süresi Anketi",
+     "alan": "Tablo",
+     "bolumler": [
+      {
+       "metin": [
+        "7/B sınıfının öğrencileri, Fen dersindeki sağlıklı yaşam konusu için küçük bir anket yaptı.",
+        "Ankete sınıftaki 25 öğrencinin hepsi katıldı.",
+        "Soruları hazırlarken kısa ve herkesin anlayacağı cümleler kurmaya dikkat ettiler.",
+        "Her öğrenci, ders dışında bir günde telefon, tablet, televizyon ve bilgisayar ekranına ne kadar baktığını yazdı.",
+        "Sonuçlar aşağıdaki tabloda gösterildi.",
+        "Tabloyu ilk gören öğrenciler, ekran süresinin bu kadar farklı olmasına çok şaşırdı."
+       ],
+       "sorular": [
+        {
+         "soru": "Tabloya göre en çok öğrenci günde ne kadar ekrana bakıyor?",
+         "secenekler": [
+          "2–3 saat",
+          "3 saatten fazla",
+          "1–2 saat"
+         ],
+         "dogru": 2,
+         "kanit": [
+          "t1"
+         ],
+         "ipucu": "Tablodaki sayıları karşılaştır.",
+         "aciklama": "En büyük sayı 9; o satır '1–2 saat'.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? EN ÇOK öğrencinin olduğu satırı.",
+           "Anahtar kelime: öğrenci sayısı.",
+           "Kanıt: Tabloda en büyük sayının olduğu satıra dokun.",
+           "Şıkları ele: 9, 7 ve 5'i karşılaştır."
+          ]
+         },
+         "kanitIpucu": "Bu soruda kanıt tabloda: en büyük sayının olduğu satıra dokun."
+        }
+       ],
+       "tablo": {
+        "baslik": "7/B sınıfı: günlük ekran süresi (25 öğrenci)",
+        "basliklar": [
+         "Günlük ekran süresi",
+         "Öğrenci sayısı"
+        ],
+        "satirlar": [
+         [
+          "1 saatten az",
+          "4"
+         ],
+         [
+          "1–2 saat",
+          "9"
+         ],
+         [
+          "2–3 saat",
+          "7"
+         ],
+         [
+          "3 saatten fazla",
+          "5"
+         ]
+        ]
+       }
+      },
+      {
+       "metin": [
+        "Sınıfın rehber öğretmeni, sonuçları birlikte yorumlarken önemli bir noktaya dikkat çekti.",
+        "Pek çok uzman, bu yaştaki çocukların ders dışındaki ekran süresinin günde iki saati geçmemesini öneriyor.",
+        "Çok uzun süre ekrana bakmak gözleri yorabilir, uykuyu bozabilir ve hareketsiz kalmamıza yol açabilir.",
+        "Öğrenciler, akşam yemeğinden sonra telefonları bir saat boyunca bir kutuya koyma fikrini oyladı ve fikir kabul edildi.",
+        "Rehber öğretmen, ekran yerine yapılabilecek etkinlikleri de tahtaya yazdı: kitap okumak, yürüyüş yapmak, bir müzik aleti çalmak ve ailece oyun oynamak.",
+        "Bazı öğrenciler, ekranı en çok ödev yaparken ya da arkadaşlarıyla konuşurken kullandıklarını söyledi.",
+        "Kaan ise ekranı en çok oyun oynarken kullandığını gülerek itiraf etti ve bu ay oyun süresini yarıya indirmeye söz verdi.",
+        "Sınıf, bir ay sonra anketi yeniden yapıp iki sonucu karşılaştırmaya karar verdi."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölüme göre uzun süre ekrana bakmanın zararlarından hangisine değinilmemiştir?",
+         "secenekler": [
+          "Kulakları yorması",
+          "Uykuyu bozması",
+          "Hareketsiz bırakması"
+         ],
+         "dogru": 0,
+         "kanit": [
+          2
+         ],
+         "ipucu": "Olumsuz kök: sayılmayan zararı ara.",
+         "aciklama": "Bölümde gözlerin yorulması, uykunun bozulması ve hareketsizlik sayılıyor; kulaklardan söz edilmiyor.",
+         "yardim": {
+          "adimlar": [
+           "Soru kökünü oku: 'değinilmemiştir' olumsuz. Bölümde OLMAYAN zararı arıyorsun.",
+           "Anahtar kelime: zarar (yorabilir, bozabilir).",
+           "Kanıt: Zararları sayan cümleye dokun.",
+           "Şıkları ele: O cümlede sayılanları çıkar."
+          ]
+         },
+         "kanitIpucu": "Zararları sayan cümleyi bul."
+        }
+       ]
+      }
+     ],
+     "sorular": [
+      {
+       "soru": "Metne ve tabloya göre, önerilen süreden daha uzun süre ekrana bakan kaç öğrenci vardır?",
+       "secenekler": [
+        "5",
+        "16",
+        "12"
+       ],
+       "dogru": 2,
+       "kanit": [
+        "t2",
+        "t3",
+        7
+       ],
+       "ipucu": "Metin ile tabloyu birlikte kullan: iki saatten fazla olan satırları topla.",
+       "aciklama": "Önerilen süre 2 saat. Bunu aşanlar: 2–3 saat (7) ve 3 saatten fazla (5); 7 + 5 = 12.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Önerilen süreyi AŞAN öğrenci sayısını.",
+         "Anahtar kelimeler: önerilen süre (metinde), öğrenci sayısı (tabloda).",
+         "Kanıt: Önce metinde önerilen süreyi bul; sonra tabloda bu süreyi aşan satırlara bak.",
+         "Şıkları ele: İki saati aşan satırların sayılarını topla."
+        ]
+       },
+       "kanitIpucu": "İki yerde kanıt var: önerilen süreyi söyleyen cümle ve tablodaki satırlar. Birine dokun."
+      }
+     ]
+    },
+    {
+     "id": "s4m3",
+     "baslik": "Uzaya Uzanan Gözler",
+     "alan": "Fen",
+     "bolumler": [
+      {
+       "metin": [
+        "İnsanlar binlerce yıl gökyüzünü merak etti.",
+        "Önce çıplak gözle, sonra teleskoplarla yıldızları ve gezegenleri inceledi.",
+        "Teleskoplar, uzaktaki gök cisimlerini daha büyük ve net görmemizi sağladı.",
+        "Gözlemevleri de şehir ışıklarından uzak, yüksek yerlere kuruldu.",
+        "Ancak yeryüzündeki teleskopların bir sorunu vardı: Dünya'yı saran hava tabakası ışığı dalgalandırarak görüntüyü bulanıklaştırıyordu.",
+        "Bulutlu gecelerde ise hiçbir gözlem yapılamıyordu.",
+        "Bilim insanları bu sorunları çözmek için yıllarca yeni yollar aradı; bazıları teleskopları daha yükseğe, dağların zirvesine taşıdı."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölüme göre yeryüzündeki teleskopların sorunu nedir?",
+         "secenekler": [
+          "Hava tabakasının görüntüyü bulanıklaştırması",
+          "Çok pahalı olmaları",
+          "Gündüz kullanılamamaları"
+         ],
+         "dogru": 0,
+         "kanit": [
+          4
+         ],
+         "ipucu": "'Ancak' ile başlayan cümleye bak.",
+         "aciklama": "Son cümle: hava tabakası ışığı dalgalandırıp görüntüyü bulanıklaştırıyordu.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Teleskopların SORUNUNU.",
+           "Anahtar kelime: sorun.",
+           "Kanıt: 'sorun' kelimesinin geçtiği cümleye dokun.",
+           "Şıkları ele: Fiyattan ya da gündüzden söz ediliyor mu?"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "metin": [
+        "Bilim insanları bu soruna parlak bir çözüm buldu: teleskobu uzaya göndermek.",
+        "Uzay teleskopları hava tabakasının üstünde çalıştığı için çok daha net görüntüler çekebilir.",
+        "Bulutlar ve şehir ışıkları da onları etkilemez.",
+        "Bu teleskoplar sayesinde çok uzak galaksilerin fotoğrafları çekildi ve evrenin ne kadar büyük olduğu daha iyi anlaşıldı.",
+        "Bu fotoğraflar, yıldızların gaz ve toz bulutlarında nasıl doğduğunu anlamamıza da yardım etti.",
+        "Ancak uzay teleskoplarını onarmak zordur; bir parça bozulduğunda bazen astronotların uzaya çıkıp tamir yapması gerekir."
+       ],
+       "sorular": [
+        {
+         "soru": "Bu bölümdeki “parlak bir çözüm” sözüyle anlatılmak istenen nedir?",
+         "secenekler": [
+          "Işık saçan bir alet",
+          "Çok akıllıca bir çözüm",
+          "Güneşte yapılan bir deney"
+         ],
+         "dogru": 1,
+         "kanit": [
+          0
+         ],
+         "ipucu": "Bir fikir 'parlak' olunca ne demek istenir?",
+         "aciklama": "'Parlak' burada mecaz: çok akıllıca, başarılı demek.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Sözün bu bölümdeki anlamını (gerçek mi, mecaz mı?).",
+           "Anahtar kelime: parlak.",
+           "Kanıt: Bu sözün geçtiği cümleye dokun. Çözüm neymiş?",
+           "Şıkları ele: Teleskobu uzaya göndermek ışık mı saçar, yoksa akıllıca bir fikir mi?"
+          ]
+         }
+        }
+       ]
+      },
+      {
+       "metin": [
+        "Türkiye de uzay çalışmalarına katılıyor ve bu alanda her yıl yeni adımlar atıyor.",
+        "Haberleşme uyduları sayesinde televizyon izleyebiliyor, uzak yerlerle kolayca iletişim kurabiliyoruz.",
+        "Ülkemizde yapılan uydular uzaya gönderiliyor ve 2024 yılında ilk Türk astronot Alper Gezeravcı, Uluslararası Uzay İstasyonu'nda bilimsel deneyler yaptı.",
+        "Kim bilir, belki bir gün bu yazıyı okuyan biri de uzaydan Dünya'ya bakacak."
+       ],
+       "sorular": [
+        {
+         "soru": "“Yazar, okuyucuların uzaya ilgi duymasını istiyor.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+         "ima": true,
+         "dogru": 1,
+         "kanit": [
+          3
+         ],
+         "ipucu": "Bu sözler metinde aynen geçiyor mu? Geçmiyorsa metindeki ipuçlarından mı anlıyorsun?",
+         "aciklama": "Yazar bunu açıkça söylemiyor. Ama 'belki bir gün bu yazıyı okuyan biri de…' diyerek okuyucuyu hayal kurmaya çağırıyor.",
+         "yardim": {
+          "adimlar": [
+           "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+           "Anahtar kelime: belki bir gün.",
+           "Kanıt: Yazarın okuyucuya seslendiği son cümleyi bul.",
+           "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+          ]
+         }
+        }
+       ]
+      }
+     ],
+     "sorular": [
+      {
+       "soru": "Bu metnin ana fikri hangisidir?",
+       "secenekler": [
+        "Uzay teleskopları çok pahalıdır.",
+        "İnsanın gökyüzünü merak etmesi, gözlem araçlarını sürekli geliştirmesini sağlamıştır.",
+        "Türkiye'nin ilk astronotu 2024'te uzaya gitmiştir."
+       ],
+       "dogru": 1,
+       "kanit": [
+        0,
+        7
+       ],
+       "ipucu": "Doğru bir ayrıntı ile metnin bütününün mesajını ayırt et.",
+       "aciklama": "Metin, merakla başlayan gözlemin teleskoplara, sonra uzay teleskoplarına ve uzay çalışmalarına uzandığını anlatıyor. Astronot bilgisi doğru ama bir ayrıntı.",
+       "yardim": {
+        "adimlar": [
+         "Soru ne istiyor? Ana fikri: metnin bütününün mesajını.",
+         "Anahtar kelimeler: merak, teleskop, çözüm.",
+         "Kanıt: Metnin ilk cümlesine ve ikinci bölümün ilk cümlesine bak.",
+         "Şıkları ele: Doğru ama yalnızca bir ayrıntı olan şıkkı ana fikir sanma."
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
