@@ -1,0 +1,484 @@
+{
+ "id": "u1k2",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "Hikâyenin Bölümleri ve Unsurları",
+ "sayfalar": "s. 12–14, 18–21, 51–57",
+ "giris": "Her hikâyenin bir başı, ortası ve sonu vardır. Bu konuda hikâyeyi üç bölüme ayırmayı öğreneceğiz. Kişilerin özelliklerini davranışlarından bulacağız. Bir olaya herkesin farklı baktığını da göreceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, önceki yıllarda öğrendiğin iki bilgiye dayanıyor. Not yok; sadece nereden başlayacağımızı bulacağız.",
+  "maddeler": [
+   {
+    "ad": "Hikâyenin unsurları",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='14' width='48' height='34' rx='8' fill='#f5c53d'/><text x='34' y='36' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>ne?</text><rect x='62' y='14' width='48' height='34' rx='8' fill='#9cc7ff'/><text x='86' y='36' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>kim?</text><rect x='10' y='54' width='48' height='34' rx='8' fill='#9cc7ff'/><text x='34' y='76' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>nerede?</text><rect x='62' y='54' width='48' height='34' rx='8' fill='#f5c53d'/><text x='86' y='76' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#2b2417'>ne zaman?</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='9.5' fill='#fbf6e6'>olay · kişi · yer · zaman</text></svg>",
+    "anlatim": "Her hikâyede dört unsur vardır: olay (ne oldu?), kişi (kim?), yer (nerede?) ve zaman (ne zaman?). Kitap da kişi, zaman ve mekân bilgilerinin hikâye boyunca tutarlı olmasını ister. (s. 56)",
+    "akilda": "Ne? Kim? Nerede? Ne zaman?",
+    "sorular": [
+     {
+      "soru": "“Güneşin altın gibi ışıldadığı pırıl pırıl bir sabahtı.” (s. 12) Bu cümle hikâyenin hangi unsurunu verir?",
+      "secenekler": [
+       "Kişi",
+       "Olay",
+       "Zaman"
+      ],
+      "dogru": 2,
+      "ipucu": "Cümlede 'ne zaman?' sorusunun cevabı var mı?",
+      "aciklama": "'Sabah' bir zaman bildirir. Bu cümle hikâyenin zamanını verir. (s. 12)"
+     },
+     {
+      "soru": "Hikâyede 'Nerede?' sorusunun cevabı hangi unsurdur?",
+      "secenekler": [
+       "Yer",
+       "Kişi",
+       "Olay"
+      ],
+      "dogru": 0,
+      "ipucu": "Nerede sorusu bir mekânı sorar.",
+      "aciklama": "'Nerede?' sorusunun cevabı yerdir: sahil, okul, köy gibi."
+     }
+    ]
+   },
+   {
+    "ad": "Çünkü ve bu yüzden",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='30' width='42' height='32' rx='8' fill='#9cc7ff'/><text x='29' y='50' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>yağmur</text><rect x='70' y='30' width='42' height='32' rx='8' fill='#f5c53d'/><text x='91' y='50' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9.5' fill='#2b2417'>erteleme</text><path d='M52 46 H66' stroke='#fbf6e6' stroke-width='3' stroke-linecap='round'/><path d='M62 41 l5 5 -5 5' stroke='#fbf6e6' stroke-width='3' fill='none' stroke-linecap='round'/><text x='29' y='80' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#9cc7ff'>sebep</text><text x='91' y='80' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#f5c53d'>sonuç</text><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>bu yüzden →</text></svg>",
+    "anlatim": "Hikâyede olaylar birbirine bağlıdır. 'Çünkü' bir olayın sebebini, 'bu yüzden' sonucunu söyler. Örnek: Yağmur yağdı, bu yüzden maç ertelendi.",
+    "akilda": "Çünkü: sebep · Bu yüzden: sonuç",
+    "sorular": [
+     {
+      "soru": "“Jonathan avlanmıyordu, ____ çok zayıfladı.” Boşluğa hangisi gelir?",
+      "secenekler": [
+       "çünkü",
+       "bu yüzden",
+       "ama"
+      ],
+      "dogru": 1,
+      "ipucu": "Zayıflamak, avlanmamanın sebebi mi sonucu mu?",
+      "aciklama": "Avlanmamak sebeptir, zayıflamak sonuçtur. Sonucu 'bu yüzden' bağlar. (s. 13)"
+     },
+     {
+      "soru": "“Maç ertelendi çünkü yağmur yağdı.” Bu cümlede sebep hangisi?",
+      "secenekler": [
+       "Yağmurun yağması",
+       "Maçın ertelenmesi",
+       "Maçın oynanması"
+      ],
+      "dogru": 0,
+      "ipucu": "'Çünkü' kelimesinden sonra ne geliyor?",
+      "aciklama": "'Çünkü'den sonra sebep gelir: yağmurun yağması."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Serim",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='26' r='10' fill='#ffd23f'/><path d='M52 30 q6 -7 12 0 q6 -7 12 0' stroke='#fbf6e6' stroke-width='3' fill='none' stroke-linecap='round'/><text x='96' y='32' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#9cc7ff'>kim?</text><path d='M22 64 H98' stroke='#46507a' stroke-width='5' stroke-linecap='round'/><circle cx='22' cy='64' r='12' fill='#f5c53d'/><text x='22' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>1</text><text x='22' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>serim</text><circle cx='60' cy='64' r='8' fill='#9cc7ff'/><text x='60' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#2b2417'>2</text><text x='60' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>düğüm</text><circle cx='98' cy='64' r='8' fill='#9cc7ff'/><text x='98' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#2b2417'>3</text><text x='98' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>çözüm</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>giriş: tanıtım</text></svg>",
+   "aciklama": "Serim, hikâyenin giriş bölümüdür. Kişiler, yer ve zaman tanıtılır.",
+   "ek": "Jonathan'ın hikâyesinde serim: pırıl pırıl bir sabah, sahilde yiyecek için mücadele eden martılar ve onlardan uzakta tek başına uçmaya çalışan Jonathan. (s. 12) Tanım kitap dışı: kitap serim, düğüm ve çözümü önceki yıllardan bildiğini söyler. (s. 56)",
+   "akilda": "Giriş: kim, nerede, ne zaman",
+   "soru": {
+    "soru": "Hikâyenin hangi bölümünde kişiler, yer ve zaman tanıtılır?",
+    "secenekler": [
+     "Serim",
+     "Düğüm",
+     "Çözüm"
+    ],
+    "dogru": 0,
+    "ipucu": "Giriş bölümünün adını bilgi kartında bul.",
+    "aciklama": "Kişiler, yer ve zaman serimde, yani giriş bölümünde tanıtılır."
+   }
+  },
+  {
+   "ad": "Düğüm",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M42 30 q10 -18 18 -2 q8 16 18 -2 q-8 -12 -18 4 q-10 14 -18 0' stroke='#e9573f' stroke-width='4' fill='none' stroke-linecap='round'/><text x='94' y='34' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='20' fill='#e9573f'>!</text><path d='M22 64 H98' stroke='#46507a' stroke-width='5' stroke-linecap='round'/><circle cx='22' cy='64' r='8' fill='#9cc7ff'/><text x='22' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#2b2417'>1</text><text x='22' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>serim</text><circle cx='60' cy='64' r='12' fill='#f5c53d'/><text x='60' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>2</text><text x='60' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>düğüm</text><circle cx='98' cy='64' r='8' fill='#9cc7ff'/><text x='98' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#2b2417'>3</text><text x='98' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>çözüm</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>sorun çıkar</text></svg>",
+   "aciklama": "Düğüm, hikâyenin gelişme bölümüdür. Bir sorun ortaya çıkar, olaylar karışır, merak artar.",
+   "ek": "Jonathan'ın sorunu: Uçmaya çalışırken düşüyor, avlanmadığı için zayıflıyor, ailesi kaygılanıyor. Hızlı uçmaya başlayınca da kontrolünü kaybedip suya çakılıyor. (s. 13–14)",
+   "akilda": "Sorun çıkar, merak artar",
+   "soru": {
+    "soru": "Jonathan'ın hikâyesinde düğüm bölümünde ne olur?",
+    "secenekler": [
+     "Sabah olur, martılar tekneye uçar.",
+     "Jonathan hızlı uçarken kontrolünü kaybeder.",
+     "Jonathan kısa kanatlarla hızlanmayı başarır."
+    ],
+    "dogru": 1,
+    "ipucu": "Düğümde bir sorun vardır. Hangi şıkta sorun var?",
+    "aciklama": "Kontrolü kaybedip suya çakılmak bir sorundur; bu düğümdür. (s. 14)"
+   }
+  },
+  {
+   "ad": "Çözüm",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='28' r='15' fill='#2ecc71'/><path d='M52 28 l6 6 11 -12' stroke='#fff' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M22 64 H98' stroke='#46507a' stroke-width='5' stroke-linecap='round'/><circle cx='22' cy='64' r='8' fill='#9cc7ff'/><text x='22' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#2b2417'>1</text><text x='22' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>serim</text><circle cx='60' cy='64' r='8' fill='#9cc7ff'/><text x='60' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#2b2417'>2</text><text x='60' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>düğüm</text><circle cx='98' cy='64' r='12' fill='#f5c53d'/><text x='98' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>3</text><text x='98' y='90' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>çözüm</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#fbf6e6'>sorun sonuçlanır</text></svg>",
+   "aciklama": "Çözüm, hikâyenin sonuç bölümüdür. Sorun çözülür ya da bir sonuca bağlanır.",
+   "ek": "Jonathan bir gece şahinin kısa kanatlarını düşünür. Kanatlarını gövdesine yapıştırıp yalnızca kanat uçlarıyla uçar ve çok hızlanır. (s. 14)",
+   "akilda": "Sorun sonuca bağlanır",
+   "cozum": {
+    "baslik": "Birlikte bölümlere ayıralım",
+    "problem": "Kitaptaki “Adını Göklere Yazdıran Çocuk” hikâyesini (s. 51–53) üç bölüme ayıralım. Her bölüm için bir soru soracağız.",
+    "adimlar": [
+     {
+      "metin": "Serim: Kim? Nerede? Kaoru küçük bir çocuk; babası balıkçı. Aile Japonya'da bir kasabaya taşınıyor, Kaoru günlerini evin damında yıldızlara bakarak geçiriyor. (s. 51)",
+      "islem": "Kaoru, dam, yıldızlar"
+     },
+     {
+      "metin": "Düğüm: Sorun ne? Ailesi gök merakını pek istemez. Gözlem için teleskop gerekir ama parası azdır. (s. 51–52)",
+      "islem": "Sorun: teleskop yok"
+     },
+     {
+      "metin": "Kaoru sorunla nasıl uğraşıyor? Okul kitaplığında okuyor, eski parçalardan kendi teleskopunu yapıyor, geceler boyu gökyüzünü tarıyor. (s. 51–52)",
+      "islem": "Okur, yapar, tarar"
+     },
+     {
+      "metin": "Çözüm: Sonunda ne oluyor? 1963'te kimsenin bilmediği bir kuyruklu yıldız buluyor; yıldıza onun adı veriliyor. (s. 53)",
+      "islem": "Kuyruklu yıldızı bulur"
+     }
+    ],
+    "sonuc": "Serim tanıttı, düğüm sorunu verdi, çözüm sonucu anlattı. Bölümler birbirine bağlı: Kaoru'nun çabası onu sonuca götürdü."
+   },
+   "soru": {
+    "soru": "“Kaoru 1963'te yeni bir kuyruklu yıldız buldu ve yıldıza onun adı verildi.” Bu cümle hikâyenin hangi bölümüne aittir?",
+    "secenekler": [
+     "Serim",
+     "Düğüm",
+     "Çözüm"
+    ],
+    "dogru": 2,
+    "ipucu": "Bu cümlede sorun mu var, sonuç mu?",
+    "aciklama": "Kaoru'nun çabası sonuca ulaşıyor: bu çözüm bölümüdür. (s. 53)"
+   }
+  },
+  {
+   "ad": "Bölümler Arası Bağlantı",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='22' width='30' height='30' rx='7' fill='#9cc7ff'/><text x='23' y='42' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>1</text><rect x='45' y='22' width='30' height='30' rx='7' fill='#f5c53d'/><text x='60' y='42' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>2</text><rect x='82' y='22' width='30' height='30' rx='7' fill='#9cc7ff'/><text x='97' y='42' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>3</text><path d='M38 37 h7 M75 37 h7' stroke='#fbf6e6' stroke-width='4' stroke-linecap='round'/><ellipse cx='42' cy='37' rx='6' ry='4' fill='none' stroke='#f5c53d' stroke-width='2.5'/><ellipse cx='79' cy='37' rx='6' ry='4' fill='none' stroke='#f5c53d' stroke-width='2.5'/><text x='60' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#9cc7ff'>çünkü · bu yüzden</text><text x='60' y='100' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#fbf6e6'>kopukluk yok</text></svg>",
+   "aciklama": "İyi bir hikâyede bölümler birbirine bağlıdır. Her olay, bir öncekinin sonucu gibi akar.",
+   "ek": "Kitaptaki ölçütler: Olaylar arasında kopukluk olmamalı. Kişi, zaman ve mekân bilgileri tutarlı olmalı; okuyan “Bu nereden çıktı?” dememeli. Bölümlerde dil aynı kalmalı. (s. 56) Kitap bölümler arasındaki geçişi sebep-sonuç ilişkisiyle anlattırır. (s. 18)",
+   "akilda": "“Bu nereden çıktı?” dedirtme",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Ece okul koşusuna hazırlanıyordu. Yarıştan bir hafta önce ayağı burkuldu ve koşamaz oldu. Doktorun dediği gibi dinlendi, sonra yavaş yavaş çalıştı. Yarış günü koşuyu bitirdi.” Bu hikâyenin bölümlerini ve bağlantısını bul.",
+    "adimlar": [
+     {
+      "metin": "Serimi bul: Kim, neye hazırlanıyor?",
+      "soru": {
+       "soru": "Serimde ne tanıtılıyor?",
+       "secenekler": [
+        "Ece ve koşu hazırlığı",
+        "Ayağının burkulması",
+        "Yarışı bitirmesi"
+       ],
+       "dogru": 0,
+       "ipucu": "İlk cümleyi oku.",
+       "aciklama": "İlk cümle Ece'yi ve hazırlığını tanıtır: bu serimdir."
+      },
+      "islem": "Serim: Ece hazırlanıyor"
+     },
+     {
+      "metin": "Düğümü bul: Sorun ne?",
+      "soru": {
+       "soru": "Hikâyedeki sorun hangisi?",
+       "secenekler": [
+        "Doktora gitmesi",
+        "Ayağının burkulması",
+        "Koşuyu bitirmesi"
+       ],
+       "dogru": 1,
+       "ipucu": "Ece'yi zor durumda bırakan olay hangisi?",
+       "aciklama": "Ayağın burkulması bir sorundur: düğüm."
+      },
+      "islem": "Düğüm: ayak burkuldu"
+     },
+     {
+      "metin": "Bağlantıyı bul: Ece neden dinlendi?",
+      "soru": {
+       "soru": "Ece neden dinlendi?",
+       "secenekler": [
+        "Yarışı kazandığı için",
+        "Okul tatil olduğu için",
+        "Ayağı burkulduğu için"
+       ],
+       "dogru": 2,
+       "ipucu": "Dinlenmek hangi olayın sonucu?",
+       "aciklama": "Ayağı burkuldu, bu yüzden dinlendi. Bölümler sebep-sonuçla bağlı."
+      },
+      "islem": "burkuldu → dinlendi"
+     },
+     {
+      "metin": "Çözüm: Sorun nasıl sonuçlandı? Ece dinlenip çalıştı ve koşuyu bitirdi.",
+      "islem": "Çözüm: koşuyu bitirdi"
+     }
+    ],
+    "sonuc": "Harika! Üç bölümü buldun ve aralarındaki sebep-sonuç bağını gösterdin."
+   },
+   "soru": {
+    "soru": "Bir hikâyede kahraman serimde İstanbul'da yaşıyor. Düğümde, hiç taşınmadan Ankara'daki evinde oturuyor. Hangi ölçüt bozulmuş?",
+    "secenekler": [
+     "Yer bilgisi tutarlı değil",
+     "Dil aynı kalmış",
+     "Olaylar sıralı"
+    ],
+    "dogru": 0,
+    "ipucu": "Okuyan burada “Bu nereden çıktı?” der mi?",
+    "aciklama": "Kişi taşınmadan şehir değişmiş: mekân bilgisi tutarsız. Kitap bunu istemez. (s. 56)"
+   }
+  },
+  {
+   "ad": "Karakterin Özellikleri",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='34' r='14' fill='#ffd7b0'/><circle cx='29' cy='32' r='2' fill='#2b2417'/><circle cx='39' cy='32' r='2' fill='#2b2417'/><path d='M29 40 q5 4 10 0' stroke='#2b2417' stroke-width='2' fill='none'/><rect x='22' y='50' width='24' height='26' rx='8' fill='#6ea8ef'/><ellipse cx='64' cy='76' rx='5' ry='7' fill='#46507a'/><ellipse cx='76' cy='64' rx='5' ry='7' fill='#46507a'/><ellipse cx='90' cy='74' rx='5' ry='7' fill='#46507a'/><circle cx='86' cy='34' r='14' fill='none' stroke='#f5c53d' stroke-width='5'/><path d='M96 44 L106 54' stroke='#f5c53d' stroke-width='6' stroke-linecap='round'/><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>davranış = kanıt</text></svg>",
+   "aciklama": "Yazar kişinin özelliğini çoğu zaman açıkça söylemez. Kişinin sözlerinden ve davranışlarından biz çıkarırız.",
+   "ek": "Kaoru fabrikada çalışırken boş vakitlerini damda gökyüzünü izleyerek geçirir; teleskopunu kendisi yapar. Bu davranışlar onun azimli ve sabırlı olduğunu gösterir. Kitap da kişilik özelliklerini söz ve davranışlardan bulmanı ister. (s. 51–52, 54)",
+   "akilda": "Davranış kanıttır",
+   "soru": {
+    "soru": "Jonathan defalarca düştüğü hâlde çalışmaya devam ediyor. Bu davranış onun hangi özelliğini gösterir?",
+    "secenekler": [
+     "Tembellik",
+     "Kararlılık",
+     "Korkaklık"
+    ],
+    "dogru": 1,
+    "ipucu": "Düşünce vazgeçmeyen biri nasıl biridir?",
+    "aciklama": "Düşmesine rağmen devam etmek kararlılık gösterir. Davranış, özelliğin kanıtıdır. (s. 12, 14)"
+   }
+  },
+  {
+   "ad": "Bakış Açısı",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='46' r='13' fill='#f5c53d'/><ellipse cx='18' cy='46' rx='11' ry='7' fill='#fbf6e6'/><circle cx='20' cy='46' r='4' fill='#2f6db5'/><ellipse cx='102' cy='46' rx='11' ry='7' fill='#fbf6e6'/><circle cx='100' cy='46' r='4' fill='#e9573f'/><path d='M30 40 L46 42 M30 52 L46 50' stroke='#6ea8ef' stroke-width='2.5' stroke-dasharray='3 3'/><path d='M90 40 L74 42 M90 52 L74 50' stroke='#e9573f' stroke-width='2.5' stroke-dasharray='3 3'/><text x='18' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#9cc7ff'>anne</text><text x='102' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='700' font-size='10' fill='#ff9a85'>Jon</text><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#fbf6e6'>kime göre?</text></svg>",
+   "aciklama": "Aynı olaya herkes farklı bakar. Hikâyedeki her kişi olayı kendi istek ve kaygısına göre değerlendirir.",
+   "ek": "Jonathan'ın annesi ve babası için önemli olan yiyecek bulmak ve sağlıklı kalmaktır; Jonathan için ise uçmayı öğrenmek. (s. 13) Kitap, anne-babanın bakış açısından şu sonucu çıkarır: Sorumluluklarımıza odaklanmalı, bizi sevenleri endişelendirmemeliyiz. (s. 19)",
+   "akilda": "Önce sor: Kime göre?",
+   "soru": {
+    "soru": "Jonathan'ın babasına göre uçmanın amacı nedir?",
+    "secenekler": [
+     "Rekor kırmak",
+     "Gökyüzünü izlemek",
+     "Yiyecek bulmak"
+    ],
+    "dogru": 2,
+    "ipucu": "Babasının sözlerini hatırla: “Senin uçma nedenin…”",
+    "aciklama": "Babası “senin uçma nedenin yiyecek bulabilmek” der. Onun bakış açısı budur. (s. 13)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi hikâyenin bir bölümü, hangisi hikâyeyi incelerken baktığımız bir şey?",
+   "kutular": [
+    {
+     "etiket": "Hikâyenin bölümleri",
+     "uyeler": [
+      "Serim",
+      "Düğüm",
+      "Çözüm"
+     ]
+    },
+    {
+     "etiket": "Hikâyeyi incelerken",
+     "uyeler": [
+      "Bölümler Arası Bağlantı",
+      "Karakterin Özellikleri",
+      "Bakış Açısı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kaoru ilk kuyruklu yıldızı bulduğunda on dokuz yaşındaydı. Üçüncüsünü başka bir amatör gök bilimciyle birlikte buldu; o yıldıza ikisinin adı verildi: Ikeya-Seki. (s. 53)"
+ ],
+ "akildaKalsin": [
+  "Serim girişidir: kişi, yer ve zaman tanıtılır.",
+  "Düğümde bir sorun çıkar, merak artar.",
+  "Çözümde sorun bir sonuca bağlanır.",
+  "Bölümler sebep-sonuçla bağlanır; kopukluk olmaz.",
+  "Kişinin özelliğini sözlerinden ve davranışlarından bulursun.",
+  "Aynı olaya herkes farklı bakar: Kime göre?"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Her hikâyede serim, düğüm, çözüm hep bu sırayla mı gelir?",
+   "cevap": "Çoğu hikâyede bu sırayla gelir. Bazı yazarlar hikâyeye ortadan ya da sondan başlar; yine de üç bölümü bulabilirsin. (kitap dışı)"
+  },
+  {
+   "soru": "Bir hikâyeden nasıl ders çıkarırım?",
+   "cevap": "Kendine sor: Kahraman ne yaptı, sonunda ne oldu? Kitap Kaoru'nun hikâyesi için de bunu sorar. Örneğin: Hayallerimize inanıp çalışırsak başarabiliriz. (s. 54) Bir sonraki konuda buna 'ana fikir' diyeceğiz."
+  },
+  {
+   "soru": "Yazar söylemiyorsa kişinin özelliğini yanlış bulmaz mıyım?",
+   "cevap": "Kanıtla bulursan yanılmazsın. Tek bir davranışa değil, birkaçına bak. Kaoru hem teleskopunu kendisi yapıyor hem de geceler boyu gökyüzünü tarıyor: iki kanıt, azim. (s. 51–53)"
+  },
+  {
+   "soru": "İki karakteri nasıl karşılaştırırım?",
+   "cevap": "Aynı sorularla: Ne zorluk yaşadı? Zorluğa nasıl davrandı? Başardı mı? Hangi özelliği işe yaradı? Kitap Kaoru ile sporcu Yiğit Caner Aydın'ı bu sorularla karşılaştırır. (s. 55)"
+  },
+  {
+   "soru": "Bakış açısı yanlış olabilir mi?",
+   "cevap": "Bakış açısı doğru ya da yanlış değil, farklıdır. Jonathan'ın ailesi onu sevdiği için kaygılanır; Jonathan ise öğrenmek ister. İkisinin de haklı olduğu bir yan vardır. (s. 13, 19)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Sen Jonathan'ın yerinde olsaydın ailesini mi dinlerdin, uçmaya devam mı ederdin? Kendi bakış açınla 2–3 cümle yaz.",
+   "ornekCevap": "Uçmaya devam ederdim çünkü öğrenmek beni mutlu ederdi. Ama ailemi de üzmemek için avlanmayı ihmal etmezdim. Böylece hem sağlıklı kalır hem hayalimin peşinden giderdim.",
+   "anahtarlar": [
+    "uç",
+    "aile",
+    "çünkü",
+    "öğren"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“Küçük bir köyde, kış sabahlarından birinde Ali okula gitmek için evden çıktı.” Bu cümle hikâyenin hangi bölümüne en uygundur?",
+   "secenekler": [
+    "Düğüm",
+    "Serim",
+    "Çözüm"
+   ],
+   "dogru": 1,
+   "ipucu": "Cümlede kim, nerede, ne zaman var mı?",
+   "aciklama": "Cümle kişiyi (Ali), yeri (köy) ve zamanı (kış sabahı) tanıtıyor: serim.",
+   "kavram": "Serim"
+  },
+  {
+   "soru": "Hikâyede merakın en çok arttığı bölüm hangisidir?",
+   "secenekler": [
+    "Çözüm",
+    "Serim",
+    "Düğüm"
+   ],
+   "dogru": 2,
+   "ipucu": "Sorunun ortaya çıktığı bölümü hatırla.",
+   "aciklama": "Sorun düğümde çıkar; okuyan “Ne olacak?” diye merak eder.",
+   "kavram": "Düğüm"
+  },
+  {
+   "soru": "Kaoru'nun hikâyesinin çözüm bölümünde ne olur?",
+   "secenekler": [
+    "Babası balıkçıdır.",
+    "Kuyruklu yıldız bulur ve adı yıldıza verilir.",
+    "Teleskop parçası arar."
+   ],
+   "dogru": 1,
+   "ipucu": "Çözüm hikâyenin sonudur. Sonunda ne oldu?",
+   "aciklama": "Kaoru 1963'te kuyruklu yıldızı bulur, yıldıza onun adı verilir. (s. 53)",
+   "kavram": "Çözüm"
+  },
+  {
+   "soru": "Kaoru neden kendi teleskopunu yaptı?",
+   "secenekler": [
+    "Gökleri iyi gözlemek için teleskop gerekiyordu.",
+    "Babası balıkçı olmasını istiyordu.",
+    "Fabrikada piyano yapıyordu."
+   ],
+   "dogru": 0,
+   "ipucu": "“Gökleri durmadan gözlemekle fazla bir sonuç alınamazdı.” cümlesinin devamını düşün.",
+   "aciklama": "Kitap: “Küçük de olsa bir teleskop gerekliydi.” Teleskop yapması bu ihtiyacın sonucudur. (s. 51)",
+   "kavram": "Bölümler Arası Bağlantı"
+  },
+  {
+   "soru": "Fabrikadaki dosyada Kaoru için “Kimse ile konuşmaz. Herkesle iyi geçinir. İşlerini çok iyi yapar.” yazıyordu. (s. 53) Buna göre Kaoru için hangisi söylenebilir?",
+   "secenekler": [
+    "Kavgacıdır.",
+    "İşini aksatır.",
+    "Çalışkan ve uyumludur."
+   ],
+   "dogru": 2,
+   "ipucu": "Dosyadaki her cümle bir davranış. Bu davranışlar ne anlatıyor?",
+   "aciklama": "“Herkesle iyi geçinir” uyumu, “İşlerini çok iyi yapar” çalışkanlığı gösterir. (s. 53)",
+   "kavram": "Karakterin Özellikleri"
+  },
+  {
+   "soru": "Kitap martıların davranışlarını iki gruba ayırır: “yiyecek bulmak için mücadele etmek” ve “yükseklerde uçarken kavis oluşturmak”. (s. 21) İkinci davranış hangi gruptadır?",
+   "secenekler": [
+    "Herkesin yaptığı davranış",
+    "Tehlikeli bir davranış",
+    "Sıra dışı davranış"
+   ],
+   "dogru": 2,
+   "ipucu": "Diğer martılar yükseklerde kavis yapmaya çalışıyor mu?",
+   "aciklama": "Kavis oluşturmaya yalnızca Jonathan çalışıyor; bu sıra dışı bir davranıştır. (s. 21)",
+   "kavram": "Karakterin Özellikleri"
+  },
+  {
+   "soru": "Kaoru'nun annesi, oğlu gece dama her çıktığında uyanıyordu. (s. 52) Annenin bakış açısıyla en önemli şey nedir?",
+   "secenekler": [
+    "Oğlunun sağlığı",
+    "Kuyruklu yıldız bulmak",
+    "Para kazanmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Anne neden uyanıyor? Neyi merak ediyor?",
+   "aciklama": "Kitap annenin oğlunun sağlığıyla çok ilgili olduğunu söyler. Onun bakış açısında sağlık öndedir. (s. 52)",
+   "kavram": "Bakış Açısı"
+  },
+  {
+   "soru": "“Elif fen dersi için saksıya fasulye ekti ve saksıyı dolabın içine koydu. Bir hafta sonra fidenin yaprakları sararmıştı. Öğretmeni, bitkilerin besin üretmek için ışığa ihtiyaç duyduğunu hatırlattı. Elif saksıyı pencerenin önüne taşıdı; birkaç gün sonra yapraklar yeşerdi.” Bu hikâyenin düğüm bölümündeki sorun nedir?",
+   "secenekler": [
+    "Elif'in fasulye ekmesi",
+    "Yaprakların sararması",
+    "Saksının pencereye taşınması"
+   ],
+   "dogru": 1,
+   "ipucu": "Düğüm, sorunun çıktığı yerdir. Hangi olay Elif'i üzer?",
+   "aciklama": "Yaprakların sararması bir sorundur: düğüm. Saksıyı ışığa taşımak ise çözümdür.",
+   "kavram": "Düğüm",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Düğümdeki sorunu. Düğüm: sorun çıkan bölüm.",
+     "Anahtar kelime: sorun. Hikâyede kötü giden bir şey ara.",
+     "Kanıt: “Bir hafta sonra…” diye başlayan cümleyi oku.",
+     "Şıkları ele: Hangisi başlangıç, hangisi sonuç, hangisi sorun?"
+    ]
+   }
+  },
+  {
+   "soru": "“Sınıf, gezi için bir müzeye gitmişti. Zeynep eski bir taş tabletin önünde öyle dalmıştı ki arkadaşlarının uzaklaştığını fark etmedi. Paniğe kapılmadan girişteki görevliye gitti, öğretmeninin adını ve sınıfını söyledi. Birkaç dakika sonra öğretmeni gelip onu aldı.” Zeynep'in davranışları onun hangi özelliğini gösterir?",
+   "secenekler": [
+    "Zor durumda sakin ve akıllıca davrandığını",
+    "Çok telaşlı olduğunu",
+    "Kuralları umursamadığını"
+   ],
+   "dogru": 0,
+   "ipucu": "Zeynep kaybolunca ne yaptı? O davranışa bak.",
+   "aciklama": "“Paniğe kapılmadan görevliye gitti” cümlesi kanıttır: sakin ve akıllıca davranmış.",
+   "kavram": "Karakterin Özellikleri",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Zeynep'in bir özelliğini, yani nasıl biri olduğunu.",
+     "Anahtar kelime: davranış. Zeynep kaybolduktan sonra ne yaptı?",
+     "Kanıt: “Paniğe kapılmadan…” diye başlayan cümleyi oku.",
+     "Şıkları ele: Hangi şık bu davranışla uyuşuyor, hangisi ters düşüyor?"
+    ]
+   }
+  },
+  {
+   "soru": "“Can, okul takımına seçilmek için her akşam parkta şut çalıştı. Seçmelerde çok heyecanlandı ve ilk atışlarını kaçırdı. Antrenör ona bir şans daha verdi. Can derin bir nefes aldı, son atışlarının hepsini soktu ve takıma seçildi.” Bu hikâyeyle ilgili hangisi söylenemez?",
+   "secenekler": [
+    "Seriminde Can'ın hedefi verilir.",
+    "Düğümde Can heyecandan atışları kaçırır.",
+    "Çözümde Can takıma seçilemez."
+   ],
+   "dogru": 2,
+   "ipucu": "'Söylenemez' olumsuz bir kök: hikâyeye UYMAYAN şıkkı arıyorsun.",
+   "aciklama": "Hikâyenin sonunda Can takıma seçilir. “Seçilemez” demek hikâyeye uymaz.",
+   "kavram": "Çözüm",
+   "yardim": {
+    "adimlar": [
+     "Soru kökünü oku: 'söylenemez' olumsuz. Hikâyeye UYMAYAN şıkkı arıyorsun.",
+     "Anahtar kelimeler: serim, düğüm, çözüm. Her şık bir bölümden söz ediyor.",
+     "Kanıt: Her şıkkı hikâyedeki cümleyle karşılaştır; özellikle son cümleyi oku.",
+     "Şıkları ele: Hikâyede yazanları çıkar; geriye kalan, hikâyeyle çelişen şıktır."
+    ]
+   }
+  }
+ ]
+}
