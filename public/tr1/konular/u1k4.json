@@ -1,0 +1,498 @@
+{
+ "id": "u1k4",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "Noktalı Virgül",
+ "sayfalar": "s. 25, 49",
+ "giris": "Noktalı virgül (;) bir noktalama işaretidir. Cümleyi bitirmez ama cümlenin büyük parçalarını birbirinden ayırır. Kitap onun üç görevini veriyor (s. 49). Her görevi tek tek öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Noktalı virgülü anlamak için iki eski bilgiye ihtiyacın var. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Virgül",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>sıralama</text><text x='60' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#fbf6e6'>elma, armut, muz</text><rect x='14' y='82' width='92' height='6' rx='3' fill='#f5c53d'/><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>aynı türden kelimeler</text></svg>",
+    "anlatim": "Virgül, aynı türden sıralanan kelimeleri birbirinden ayırır: “elma, armut ve muz”. Son iki kelimenin arasında “ve” varsa virgül konmaz.",
+    "akilda": "Sıralanan kelimeler arasına virgül",
+    "sorular": [
+     {
+      "soru": "“Çantama kalem, silgi ve defter koydum.” Bu cümlede virgül neyi ayırıyor?",
+      "secenekler": [
+       "Sıralanan aynı türden kelimeleri",
+       "İki ayrı cümleyi",
+       "Soruyu cevaptan"
+      ],
+      "dogru": 0,
+      "ipucu": "Virgülün iki yanındaki kelimelere bak: kalem, silgi…",
+      "aciklama": "Kalem, silgi ve defter aynı türden, sıralanan kelimelerdir; virgül onları ayırır."
+     },
+     {
+      "soru": "Hangi cümlede virgül doğru yerde?",
+      "secenekler": [
+       "Bahçede, gül lale ve papatya var.",
+       "Bahçede gül, lale ve papatya var.",
+       "Bahçede gül lale, ve papatya var."
+      ],
+      "dogru": 1,
+      "ipucu": "Sıralanan çiçekler hangileri? Virgül onların arasına gelir; “ve”den önce gelmez.",
+      "aciklama": "Gül, lale ve papatya sıralanıyor: “gül, lale ve papatya”."
+     }
+    ]
+   },
+   {
+    "ad": "Özne",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='44' r='14' fill='#6ea8ef'/><rect x='40' y='60' width='40' height='30' rx='12' fill='#6ea8ef'/><text x='94' y='34' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#f5c53d'>Kim?</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#fbf6e6'>işi yapan</text></svg>",
+    "anlatim": "Özne, cümlede işi yapandır. Yükleme “kim?” ya da “ne?” diye sorarak bulunur: “Elif kitabı okudu.” → Kim okudu? Elif.",
+    "akilda": "İşi yapan: Kim?",
+    "sorular": [
+     {
+      "soru": "“Elif kitabı okudu.” Bu cümlede işi yapan kim?",
+      "secenekler": [
+       "Elif",
+       "kitabı",
+       "okudu"
+      ],
+      "dogru": 0,
+      "ipucu": "“Kim okudu?” diye sor.",
+      "aciklama": "Kim okudu? Elif. Özne Elif'tir."
+     },
+     {
+      "soru": "“Dedem bahçeye fidan dikti.” Bu cümlenin öznesi hangisi?",
+      "secenekler": [
+       "fidan",
+       "Dedem",
+       "bahçeye"
+      ],
+      "dogru": 1,
+      "ipucu": "“Kim dikti?” diye sor.",
+      "aciklama": "Kim dikti? Dedem. Özne dedemdir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Noktalı Virgül Nedir?",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#6ea8ef'>ne kadar durak?</text><text x='24' y='70' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='40' fill='#fbf6e6'>,</text><text x='60' y='70' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='40' fill='#f5c53d'>;</text><text x='96' y='70' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='40' fill='#fbf6e6'>.</text><text x='24' y='98' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#8a93ad'>kısa</text><text x='60' y='98' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>orta</text><text x='96' y='98' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#8a93ad'>tam</text></svg>",
+   "aciklama": "Noktalı virgül (;), bir noktanın altına virgül konarak yazılır. Cümle içinde virgülden daha uzun bir durak yapar.",
+   "ek": "Kitap dışı benzetme: Virgül kısa bir nefes, nokta tam duruştur. Noktalı virgül ikisinin arasıdır: cümle bitmez ama büyük bir parça ayrılır. Bu yüzden noktalı virgülden sonra küçük harfle devam edilir (özel isim değilse).",
+   "akilda": "Virgülden güçlü, noktadan zayıf",
+   "soru": {
+    "soru": "Noktalı virgül hangisidir?",
+    "secenekler": [
+     ":",
+     "…",
+     ";"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartına bak: üstte nokta, altta virgül.",
+    "aciklama": "Noktalı virgül “;” işaretidir: üstte nokta, altta virgül. “:” iki nokta, “…” üç noktadır."
+   }
+  },
+  {
+   "ad": "Tür ve Takımları Ayırma",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>grup ; grup</text><rect x='8' y='34' width='46' height='50' rx='8' fill='#fbf6e6'/><text x='31' y='54' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>elma,</text><text x='31' y='72' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>armut</text><text x='61' y='68' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='30' fill='#f5c53d'>;</text><rect x='68' y='34' width='46' height='50' rx='8' fill='#fbf6e6'/><text x='91' y='54' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>kıyma,</text><text x='91' y='72' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>tavuk</text><text x='31' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#6ea8ef'>manav</text><text x='91' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#6ea8ef'>kasap</text></svg>",
+   "aciklama": "Cümle içinde virgüllerle ayrılmış tür veya takımları birbirinden ayırmak için noktalı virgül konur. (s. 49)",
+   "ek": "Yani virgülle sıralanmış iki grup varsa, grupların arasına noktalı virgül gelir: “Manavdan elma, armut; kasaptan kıyma, tavuk aldık.” Grubun içinde virgül, gruplar arasında noktalı virgül var. Kitaptaki örnek: “Seçil doğa, tarih; Berke su altı, uzay konulu belgeselleri izledi.” (s. 49)",
+   "akilda": "Grupların arasına ;",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Çantaya kalem, silgi, cetvel ___ beslenme kutusuna elma, peynir koydum.” Boşluğa hangi işaret gelir?",
+    "adimlar": [
+     {
+      "metin": "Virgülle sıralanmış ilk grubu bul.",
+      "islem": "kalem, silgi, cetvel"
+     },
+     {
+      "metin": "İkinci grubu bul.",
+      "islem": "elma, peynir"
+     },
+     {
+      "metin": "Bu cümlenin kaç yüklemi var? Tek: “koydum”. Yani iki cümle değil, tek cümlede iki grup var.",
+      "islem": "1 yüklem, 2 grup"
+     },
+     {
+      "metin": "İki grubun arasına noktalı virgül koy.",
+      "islem": "cetvel; beslenme"
+     }
+    ],
+    "sonuc": "Grupların içinde virgül, gruplar arasında noktalı virgül kullandık."
+   },
+   "soru": {
+    "soru": "“Bahçede gül, lale, papatya ___ serada domates, biber var.” Boşluğa hangi işaret gelmeli?",
+    "secenekler": [
+     "virgül (,)",
+     "noktalı virgül (;)",
+     "nokta (.)"
+    ],
+    "dogru": 1,
+    "ipucu": "İki grup var mı? Bilgi kartına göre gruplar arasına hangi işaret konur?",
+    "aciklama": "Çiçekler bir grup, sebzeler başka bir grup. Gruplar arasına noktalı virgül konur."
+   }
+  },
+  {
+   "ad": "Sıralı Cümleleri Ayırma",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='20' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>iki cümle</text><rect x='10' y='28' width='100' height='24' rx='6' fill='#fbf6e6'/><text x='42' y='45' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>…, … aldı</text><rect x='80' y='31' width='27' height='18' rx='5' fill='#f5c53d'/><text x='60' y='76' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='28' fill='#f5c53d'>;</text><rect x='10' y='84' width='100' height='24' rx='6' fill='#fbf6e6'/><text x='42' y='101' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>… yaptı</text><rect x='80' y='87' width='27' height='18' rx='5' fill='#f5c53d'/><text x='94' y='45' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>1</text><text x='94' y='101' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>2</text></svg>",
+   "aciklama": "Ögeleri arasında virgül bulunan sıralı cümleleri birbirinden ayırmak için noktalı virgül konur. (s. 49)",
+   "ek": "Sıralı cümle: Her biri kendi yüklemiyle biten, yan yana dizilmiş cümleler. Örnek: “Annem pazardan domates, biber aldı; babam akşam yemeğine salata yaptı.” İki yüklem var: aldı, yaptı. İlk cümlenin içinde virgül olduğu için aralarına noktalı virgül geldi.",
+   "akilda": "Virgüllü cümleler arasına ;",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Ali kitaplarını, defterlerini dolaba koydu; Ayşe masayı sildi.” Bu noktalı virgül hangi görevde?",
+    "adimlar": [
+     {
+      "metin": "Yüklemleri bul. Kaç tane var?",
+      "islem": "koydu · sildi"
+     },
+     {
+      "metin": "İki yüklem varsa iki cümle var. İlk cümlenin içinde virgül var mı?",
+      "islem": "kitaplarını, defterlerini"
+     },
+     {
+      "metin": "İçinde virgül olan iki cümle yan yana: noktalı virgül onları ayırıyor.",
+      "islem": "sıralı cümleleri ayırma"
+     }
+    ],
+    "sonuc": "Önce yüklemleri saydık. İki yüklem iki cümle demektir."
+   },
+   "soru": {
+    "soru": "“Kardeşim odasını topladı, yatağını düzeltti; ben de bulaşıkları yıkadım.” Noktalı virgül neyi ayırıyor?",
+    "secenekler": [
+     "Bir özneyi",
+     "İki ayrı cümleyi",
+     "Sıralanan meyveleri"
+    ],
+    "dogru": 1,
+    "ipucu": "Yüklemleri bul: kaç tane var?",
+    "aciklama": "“Kardeşim … düzeltti” bir cümle, “ben de bulaşıkları yıkadım” ikinci cümle. Noktalı virgül sıralı cümleleri ayırıyor."
+   }
+  },
+  {
+   "ad": "Özneden Sonra",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>özne ; liste</text><rect x='6' y='48' width='48' height='26' rx='8' fill='#6ea8ef'/><text x='30' y='65' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#fbf6e6'>Öğretmen</text><text x='60' y='70' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='28' fill='#f5c53d'>;</text><circle cx='76' cy='61' r='7' fill='#fbf6e6'/><circle cx='93' cy='61' r='7' fill='#fbf6e6'/><circle cx='110' cy='61' r='7' fill='#fbf6e6'/><text x='88' y='92' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#fbf6e6'>Ece, Can, Su</text><text x='30' y='92' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>işi yapan</text></svg>",
+   "aciklama": "İkiden fazla eş değer ögeler arasında virgül bulunan cümlelerde özneden sonra noktalı virgül konabilir. (s. 49)",
+   "ek": "Böylece özne, sıralanan kelimelerle karışmaz. Örnek: “Öğretmenimiz; Ece, Can ve Mert'i tebrik etti.” Noktalı virgül olmasa “Öğretmenimiz, Ece, Can ve Mert” hep birlikte birini tebrik etmiş gibi okunabilirdi. Kitap “konabilir” diyor: zorunlu değil, anlamı netleştirir.",
+   "akilda": "Özne ; sonra sıralama",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Kaptan; Deniz, Arda, Zeynep ve Efe'yi takıma seçti.” Bu noktalı virgülün görevini bulalım.",
+    "adimlar": [
+     {
+      "metin": "1. İşi yapan kim? Özneyi bul.",
+      "soru": {
+       "soru": "Takıma seçen kim?",
+       "secenekler": [
+        "Deniz",
+        "Kaptan",
+        "takıma"
+       ],
+       "dogru": 1,
+       "ipucu": "“Kim seçti?” diye sor.",
+       "aciklama": "Kim seçti? Kaptan. Özne Kaptan'dır."
+      },
+      "islem": "Özne: Kaptan"
+     },
+     {
+      "metin": "2. Özneden sonra ne geliyor?",
+      "islem": "Deniz, Arda, Zeynep, Efe"
+     },
+     {
+      "metin": "3. Noktalı virgül neden konmuş?",
+      "soru": {
+       "soru": "Noktalı virgül neden konmuş?",
+       "secenekler": [
+        "Cümleyi bitirmek için",
+        "Soru sormak için",
+        "Özneyi sıralanan adlardan ayırmak için"
+       ],
+       "dogru": 2,
+       "ipucu": "Noktalı virgül nerede duruyor? Özneden hemen sonra.",
+       "aciklama": "Kaptan da bir ad; noktalı virgül onu seçilen arkadaşlardan ayırıyor."
+      },
+      "islem": "Özneden sonra ;"
+     }
+    ],
+    "sonuc": "Harika! Özneyi buldun ve noktalı virgülün onu listeden ayırdığını gördün."
+   },
+   "soru": {
+    "soru": "“Dedem; elma, armut ve ayva fidanı dikti.” Noktalı virgül hangi ögeden sonra konmuş?",
+    "secenekler": [
+     "Yüklemden (dikti)",
+     "Son kelimeden (ayva)",
+     "Özneden (Dedem)"
+    ],
+    "dogru": 2,
+    "ipucu": "“Kim dikti?” diye sor. Noktalı virgül o kelimenin hemen arkasında mı?",
+    "aciklama": "Kim dikti? Dedem. Noktalı virgül özneden sonra konmuş."
+   }
+  },
+  {
+   "ad": "Virgül mü, Noktalı Virgül mü?",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>kaç grup var?</text><rect x='10' y='34' width='100' height='30' rx='8' fill='#fbf6e6'/><text x='46' y='54' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>1 grup</text><text x='92' y='56' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='22' fill='#2f6db5'>,</text><rect x='10' y='74' width='100' height='30' rx='8' fill='#fbf6e6'/><text x='46' y='94' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>2 grup</text><text x='92' y='97' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='22' fill='#b7791f'>;</text></svg>",
+   "aciklama": "Basit bir sıralamada virgül yeter. Sıralanmış gruplar ya da içinde virgül olan cümleler birbirinden ayrılacaksa noktalı virgül gerekir.",
+   "ek": "Kitap dışı strateji: Kendine sor, bir grup mu var, iki grup mu? Tek grup → virgül: “Elma, armut, ayva aldım.” İki grup → noktalı virgül: “Manavdan elma, armut; fırından ekmek, poğaça aldım.”",
+   "akilda": "Tek grup virgül, iki grup ;",
+   "soru": {
+    "soru": "Hangi cümlede yalnızca virgül yeterlidir?",
+    "secenekler": [
+     "Sınıfta Ali, Ece; bahçede Can, Su var.",
+     "Ben ödevimi, temizliğimi bitirdim; kardeşim yeni başladı.",
+     "Sınıfta Ali, Ece ve Can var."
+    ],
+    "dogru": 2,
+    "ipucu": "Hangi cümlede tek bir sıralama var?",
+    "aciklama": "“Ali, Ece ve Can” tek bir grup; virgül yeter. Diğer ikisinde iki grup ya da iki cümle var."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi noktalı virgülün bir görevi, hangisi genel bilgi?",
+   "kutular": [
+    {
+     "etiket": "Noktalı virgülün görevleri",
+     "uyeler": [
+      "Tür ve Takımları Ayırma",
+      "Sıralı Cümleleri Ayırma",
+      "Özneden Sonra"
+     ]
+    },
+    {
+     "etiket": "Genel bilgi",
+     "uyeler": [
+      "Noktalı Virgül Nedir?",
+      "Virgül mü, Noktalı Virgül mü?"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitap s. 25'te dokuz cümle verir ve bunları noktalı virgülün görevine göre üç gruba ayırmanı ister. Her görevden üçer cümle vardır. (s. 25)"
+ ],
+ "akildaKalsin": [
+  "Noktalı virgül cümleyi bitirmez; ondan sonra küçük harfle devam edilir.",
+  "Görev 1: Virgüllerle ayrılmış grupları ayırır.",
+  "Görev 2: İçinde virgül olan sıralı cümleleri ayırır.",
+  "Görev 3: Özneden sonra konabilir.",
+  "Tek grup varsa virgül yeter."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Noktalı virgülden sonra büyük harf mi gelir?",
+   "cevap": "Hayır. Noktalı virgül cümleyi bitirmez; ondan sonra küçük harfle devam edilir (özel isim değilse). Kitaptaki örneğe bak: “…başladı; dayım, teyzem…” (s. 49)"
+  },
+  {
+   "soru": "Özneden sonra noktalı virgül koymak zorunlu mu?",
+   "cevap": "Kitap “konabilir” diyor (s. 49). Zorunlu değil; ama özne, sıralanan kelimelerle karışabilecekse koymak anlamı netleştirir."
+  },
+  {
+   "soru": "Noktalı virgül yerine nokta koysam ne olur?",
+   "cevap": "Cümle orada biterdi. Noktalı virgül iki parçayı aynı cümlede tutar, çünkü parçalar birbiriyle ilgilidir."
+  },
+  {
+   "soru": "Kitaptaki örneklerde noktalı virgülden sonra neden sık sık “ise” geliyor?",
+   "cevap": "“İse” iki grubu karşılaştırır: “Zihinsel gelişimi okuma, düşünme…; bedensel gelişimi ise düzenli spor… destekler.” (s. 25) Noktalı virgül grupları ayırır, “ise” farkı vurgular."
+  },
+  {
+   "soru": "Noktalı virgülü nasıl hızlı tanırım?",
+   "cevap": "Noktalı virgülü gördüğünde iki şeye bak: Önünde özne mi var? Yüklem kaç tane? Tek yüklem ve iki grup varsa görev 1, iki yüklem varsa görev 2, özneden hemen sonraysa görev 3."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Noktalı virgülün üç görevinden birine örnek bir cümle yaz. Hangi görev olduğunu da söyle.",
+   "ornekCevap": "Kütüphaneden roman, hikâye; kırtasiyeden kalem, defter aldım. Görev: Virgüllerle ayrılmış grupları ayırma.",
+   "anahtarlar": [
+    "grup",
+    "ayır",
+    "cümle",
+    "özne"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Noktalı virgül cümlede nasıl bir durak yapar?",
+   "secenekler": [
+    "Noktadan da uzun",
+    "Virgülden uzun, noktadan kısa",
+    "Hiç durak yapmaz"
+   ],
+   "dogru": 1,
+   "ipucu": "Kavram kartındaki “akılda kalsın”ı hatırla.",
+   "aciklama": "Noktalı virgül virgülden güçlü, noktadan zayıftır: cümle bitmez.",
+   "kavram": "Noktalı Virgül Nedir?"
+  },
+  {
+   "soru": "Hangi cümlede noktalı virgül tür ve takımları ayırmak için kullanılmıştır?",
+   "secenekler": [
+    "Kütüphaneden roman, şiir; müzeden kartpostal, defter aldık.",
+    "Hava karardı, rüzgâr çıktı; biz eve döndük.",
+    "Ablam; Eda, Sena ve Ece'yi aradı."
+   ],
+   "dogru": 0,
+   "ipucu": "Tek yüklemli ve iki grubu olan cümleyi ara.",
+   "aciklama": "İlk cümlede tek yüklem (aldık) ve iki grup var: “roman, şiir” ile “kartpostal, defter”.",
+   "kavram": "Tür ve Takımları Ayırma"
+  },
+  {
+   "soru": "Hangi cümlede noktalı virgül sıralı cümleleri ayırıyor?",
+   "secenekler": [
+    "Teyzem; çay, kahve ve kurabiye getirdi.",
+    "Rafta masallar, romanlar; dolapta oyuncaklar var.",
+    "Kar yağdı, yollar kapandı; okullar bir gün tatil edildi."
+   ],
+   "dogru": 2,
+   "ipucu": "Yüklemleri say. İki ayrı cümle hangisinde var?",
+   "aciklama": "Son cümlede “kar yağdı, yollar kapandı” ve “okullar tatil edildi” iki ayrı cümledir.",
+   "kavram": "Sıralı Cümleleri Ayırma"
+  },
+  {
+   "soru": "“Ayşe Hanım ___ Melis, Ozan ve Taha'ya hediye aldı.” Boşluğa hangi işaret konabilir?",
+   "secenekler": [
+    "soru işareti (?)",
+    "noktalı virgül (;)",
+    "üç nokta (…)"
+   ],
+   "dogru": 1,
+   "ipucu": "Ayşe Hanım cümlenin öznesi. Özneden sonra hangi işaret konabilir?",
+   "aciklama": "Özneden sonra noktalı virgül konabilir; böylece Ayşe Hanım, hediye alınan kişilerle karışmaz.",
+   "kavram": "Özneden Sonra"
+  },
+  {
+   "soru": "Hangi cümlede noktalı virgülün kullanımı yanlıştır?",
+   "secenekler": [
+    "Bahçede gül; lale var.",
+    "Bahçede gül, lale; serada domates, biber var.",
+    "Annem çorba, pilav yaptı; babam salata hazırladı."
+   ],
+   "dogru": 0,
+   "ipucu": "Hangi cümlede ayrılacak iki grup ya da iki cümle yok?",
+   "aciklama": "“Gül, lale” tek bir sıralama; virgül yeterdi: “Bahçede gül, lale var.”",
+   "kavram": "Virgül mü, Noktalı Virgül mü?"
+  },
+  {
+   "soru": "“Başarı için çalışkanlık, sabır, disiplin; huzur için ise dürüstlük, doğruluk ve merhamet gereklidir.” (s. 25) Bu cümlede noktalı virgül hangi görevde?",
+   "secenekler": [
+    "Özneden sonra",
+    "Sıralı cümleleri ayırma",
+    "Tür ve takımları ayırma"
+   ],
+   "dogru": 2,
+   "ipucu": "Yüklem kaç tane? Virgülle sıralanmış kaç grup var?",
+   "aciklama": "Tek yüklem var (gereklidir). Noktalı virgül iki grubu ayırıyor: başarı için olanlar ve huzur için olanlar.",
+   "kavram": "Tür ve Takımları Ayırma"
+  },
+  {
+   "soru": "Noktalı virgülden sonra gelen kelime (özel isim değilse) nasıl yazılır?",
+   "secenekler": [
+    "Büyük harfle başlar",
+    "Küçük harfle başlar",
+    "Tırnak içinde yazılır"
+   ],
+   "dogru": 1,
+   "ipucu": "Noktalı virgül cümleyi bitirir mi?",
+   "aciklama": "Noktalı virgül cümleyi bitirmez; ondan sonra küçük harfle devam edilir.",
+   "kavram": "Noktalı Virgül Nedir?"
+  },
+  {
+   "soru": "Paragraftaki noktalı virgül hangi görevde kullanılmıştır?",
+   "metinBaslik": "Gezegenler",
+   "metin": [
+    "Güneş, Güneş sisteminin merkezindedir.",
+    "Güneş'in çevresinde sekiz gezegen dolanır.",
+    "Bu gezegenler Güneş'e yakınlığına göre iki gruba ayrılır.",
+    "Güneş sisteminde Merkür, Venüs, Dünya, Mars gibi iç gezegenler; Jüpiter, Satürn, Uranüs, Neptün gibi dış gezegenler bulunur."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Noktalı virgülün (;) bulunduğu cümleye dokun.",
+   "secenekler": [
+    "Tür ve takımları ayırma",
+    "Sıralı cümleleri ayırma",
+    "Özneden sonra"
+   ],
+   "dogru": 0,
+   "ipucu": "Noktalı virgüllü cümlede kaç yüklem var? Kaç grup var?",
+   "aciklama": "Son cümlenin tek yüklemi var (bulunur). Noktalı virgül iç gezegenler grubunu dış gezegenler grubundan ayırıyor.",
+   "kavram": "Tür ve Takımları Ayırma",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Noktalı virgülün görevini.",
+     "Anahtar kelime: noktalı virgül (;). Paragrafta onu ara.",
+     "Kanıt: Noktalı virgüllü cümleye dokun. Kaç yüklemi var? Virgülle sıralanmış kaç grup var?",
+     "Şıkları ele: Tek yüklem varsa sıralı cümle olamaz. Noktalı virgülden önce özne mi var, bir grup mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Paragraftaki noktalı virgül hangi görevde kullanılmıştır?",
+   "metinBaslik": "Müze Gezisi",
+   "metin": [
+    "Sınıfımız geçen hafta Ankara'daki Anadolu Medeniyetleri Müzesi'ni gezdi.",
+    "Biz Hititlere ait mühürleri, kapları, heykelleri inceledik; rehberimiz de bunların nasıl yapıldığını anlattı.",
+    "Gezinin sonunda herkes en beğendiği eseri defterine çizdi."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Noktalı virgülün (;) bulunduğu cümleye dokun.",
+   "secenekler": [
+    "Özneden sonra",
+    "Sıralı cümleleri ayırma",
+    "Tür ve takımları ayırma"
+   ],
+   "dogru": 1,
+   "ipucu": "Noktalı virgüllü cümlede yüklemleri bul: kaç tane?",
+   "aciklama": "“Biz … inceledik” ve “rehberimiz de … anlattı” iki ayrı cümle. İlk cümlede virgül olduğu için aralarına noktalı virgül konmuş.",
+   "kavram": "Sıralı Cümleleri Ayırma",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Noktalı virgülün görevini.",
+     "Anahtar kelime: noktalı virgül (;). Paragrafta onu ara.",
+     "Kanıt: Noktalı virgüllü cümleye dokun. Yüklemleri say: inceledik… anlattı…",
+     "Şıkları ele: İki yüklem iki cümle demektir. Özneden hemen sonra mı duruyor, iki cümlenin arasında mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Noktalı virgülün özneden sonra kullanıldığı cümleyi bul. Bu cümlenin öznesi hangisidir?",
+   "metinBaslik": "Tekrar Testi",
+   "metin": [
+    "Matematik sınavı yaklaşıyordu.",
+    "Öğretmenimiz; kesirler, ondalık gösterimler ve oranlar konularından bir tekrar testi hazırladı.",
+    "Testi çözen öğrenciler zorlandıkları soruları işaretledi; öğretmen de bu soruları tahtada tek tek çözdü."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "İki cümlede noktalı virgül var. Hangisinde noktalı virgül işi yapan kişinin hemen arkasında?",
+   "secenekler": [
+    "Öğretmenimiz",
+    "kesirler",
+    "tekrar testi"
+   ],
+   "dogru": 0,
+   "ipucu": "“Kim hazırladı?” diye sor.",
+   "aciklama": "Kim hazırladı? Öğretmenimiz. Noktalı virgül özneden sonra konarak öğretmeni sıralanan konulardan ayırıyor. Son cümledeki noktalı virgül ise iki cümleyi ayırıyor.",
+   "kavram": "Özneden Sonra",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Özneden sonra noktalı virgül olan cümleyi ve o cümlenin öznesini.",
+     "Anahtar kelime: özne, yani işi yapan.",
+     "Kanıt: İki noktalı virgül var. Hangisi işi yapanın hemen arkasında? O cümleye dokun.",
+     "Şıkları ele: Yükleme “kim?” diye sor. Sıralanan konular işi yapmaz."
+    ]
+   }
+  }
+ ]
+}
