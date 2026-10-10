@@ -1,0 +1,428 @@
+{
+ "id": "u1t3",
+ "tur": "tarama",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "Tema Sonu Taraması",
+ "sayfalar": "Konu 1–9 · s. 12–67",
+ "giris": "Birinci temanın sonuna geldin, tebrikler! Bu durakta dokuz konunun hepsine kısaca bakacağız. Önce özetleri oku, kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bu temada bir metni iki yönden tanıdın. Okurken: kelimenin anlamını bağlamdan bulursun, hikâyenin bölümlerini ve ana fikri görürsün (Konu 1–3). Yazarken: noktalama ve yazım kurallarına uyarsın, düşünceyi örnekle ve sayıyla desteklersin (Konu 4–6). Sonra metnin planını öğrendin: sebep-sonuç yapısı, şiirin ahengi ve ikna paragrafı (Konu 7–9). Hepsinde aynı dedektif yöntemi var: kanıtı metinde bul.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3",
+  "u1k4",
+  "u1k5",
+  "u1k6",
+  "u1k7",
+  "u1k8",
+  "u1k9"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Bilmediğin kelimenin anlamını önce bağlamdan tahmin et, sonra sözlükten kontrol et.",
+    "Bir kelimenin birden çok anlamı olabilir; metindeki anlamını cümle seçer.",
+    "Okuma Dedektifi: Sor, bul, kanıtla, ele."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Serim: kişi, yer, zaman tanıtılır.",
+    "Düğüm: sorun çıkar, merak artar. Çözüm: sorun bir sonuca bağlanır.",
+    "Bölümler sebep-sonuçla birbirine bağlanır."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Konu: Metin neyi anlatıyor? Ana fikir: Yazar ne demek istiyor?",
+    "Yardımcı fikirler ana fikri destekler.",
+    "Özet: önemli bilgiler, kısa ve kendi cümlelerinle."
+   ]
+  },
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Noktalı virgül cümleyi bitirmez; virgülden güçlü, noktadan zayıftır.",
+    "Virgüllü grupları ve içinde virgül olan sıralı cümleleri ayırır.",
+    "Özneden sonra da konabilir."
+   ]
+  },
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "İkilemeler ayrı yazılır; araya işaret konmaz: ağır ağır.",
+    "Üç nokta: eksik cevap, pekiştirme, sözü okura bırakma.",
+    "! ve ? işaretinden sonra iki nokta yeter: !.. ?.."
+   ]
+  },
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Tanımlama: Nedir? Örneklendirme: Örneğin, mesela.",
+    "Benzetme: gibi. Karşılaştırma: benzer mi, farklı mı?",
+    "Tanık gösterme: ünlü birinin sözü. Sayısal veri: sayı, yüzde."
+   ]
+  },
+  {
+   "konu": "u1k7",
+   "maddeler": [
+    "Neden? → sebep. Ne oldu? → sonuç.",
+    "Sebep ipuçları: çünkü, -dığı için. Sonuç ipuçları: bu yüzden, böylece.",
+    "Çok sebep bir sonuç, bir sebep çok sonuç, sebep-sonuç zinciri."
+   ]
+  },
+  {
+   "konu": "u1k8",
+   "maddeler": [
+    "Kişileştirme: varlık insan gibi davranır. Konuşturma: varlık konuşur.",
+    "Abartma: gerçekte olamayacak kadar büyük ya da küçük.",
+    "Ahenk: eşit hece, uyak ve redif."
+   ]
+  },
+  {
+   "konu": "u1k9",
+   "maddeler": [
+    "İkna paragrafı: önce isteğini açıkça söyle.",
+    "Sonra gerekçelerini ver, itiraza cevap hazırla.",
+    "Faydayı ve önemi göster; önce plan yap."
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Metni anlamak",
+     "uyeler": [
+      "Bağlam",
+      "Ana Fikir",
+      "Özetleme"
+     ]
+    },
+    {
+     "etiket": "Doğru yazmak ve noktalamak",
+     "uyeler": [
+      "Tür ve Takımları Ayırma",
+      "İkilemeler Ayrı Yazılır",
+      "Eksik Bırakılan Cevap"
+     ]
+    },
+    {
+     "etiket": "Metnin planını kurmak",
+     "uyeler": [
+      "Serim",
+      "Düğüm",
+      "Sebep-Sonuç Zinciri",
+      "İstek ya da Öneri"
+     ]
+    },
+    {
+     "etiket": "Sözü güçlendirmek",
+     "uyeler": [
+      "Kişileştirme",
+      "Örneklendirme",
+      "Sayısal Verilerden Yararlanma"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bu ikna paragrafında yazar isteğinin gerekçesini hangi ipucu ifadesiyle vermiştir?",
+   "metinBaslik": "Bahçeye Ağaç Dikelim",
+   "metin": [
+    "Okul bahçemize bu bahar on fidan dikmek istiyoruz.",
+    "Çünkü yaz aylarında bahçede hiç gölge yok ve teneffüste güneşin altında kalıyoruz.",
+    "Fidanları sulama işini sınıflar sırayla üstlenebilir.",
+    "Böylece hem serin bir bahçemiz olur hem de doğayı korumayı öğreniriz."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "İsteğin nedenini anlatan cümleye dokun.",
+   "secenekler": [
+    "çünkü",
+    "böylece",
+    "sırayla"
+   ],
+   "dogru": 0,
+   "ipucu": "Gerekçe isteğin sebebidir. Sebebi gösteren ipucu kelimelerini hatırla.",
+   "aciklama": "Gerekçe, isteğin sebebidir; “çünkü” sebebi gösteren ipucudur (s. 38, 60). “Böylece” ise sonucu, yani isteğin faydasını gösterir.",
+   "kaynak": [
+    {
+     "konu": "u1k9",
+     "kavram": "Gerekçeler"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "İpucu İfadeleri"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Gerekçeyi başlatan ipucu kelimeyi.",
+     "Anahtar kelime: gerekçe. Gerekçe, isteğin sebebidir.",
+     "Kanıt: İsteğin nedenini anlatan cümleye dokun. Cümle hangi kelimeyle başlıyor?",
+     "Şıkları ele: Hangisi sebep, hangisi sonuç gösterir? Hangisi ipucu ifadesi bile değildir?"
+    ]
+   }
+  },
+  {
+   "soru": "Metindeki “el salladı” sözünün anlamı ve yapılan söz sanatı hangi seçenekte doğru verilmiştir?",
+   "metinBaslik": "Fırtınalı Gece",
+   "metin": [
+    "Gece boyunca rüzgâr sert esti.",
+    "Bahçedeki ağaçlar dallarıyla pencereme el salladı.",
+    "Sabah olunca her şey sakinleşti."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "“el salladı” sözünün geçtiği cümleye dokun.",
+   "secenekler": [
+    "Birini selamladı — konuşturma",
+    "Dalları rüzgârla sallandı — kişileştirme",
+    "Pencereyi kırdı — abartma"
+   ],
+   "dogru": 1,
+   "ipucu": "Ağaçların eli yok! Bağlama bak: Rüzgâr esince dallar ne yapar? Bir de ağaç konuşuyor mu, yoksa insan gibi mi davranıyor?",
+   "aciklama": "Bağlam, rüzgârda dalların sallandığını anlatır. El sallamak insana ait bir davranıştır; ağaçlara verilmiş: kişileştirme (s. 12, 47). Ağaç konuşmadığı için konuşturma değildir.",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Bağlam"
+    },
+    {
+     "konu": "u1k8",
+     "kavram": "Kişileştirme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Hem anlamı hem söz sanatını. İkisi de doğru olmalı.",
+     "Anahtar kelime: el salladı. Kim el sallıyor?",
+     "Kanıt: Bu sözün geçtiği cümleye dokun. Önceki cümlede hava nasıl?",
+     "Şıkları ele: Önce anlamı yanlış olanları at. Sonra kalan şıkta ağaç konuşuyor mu, insan gibi mi davranıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Hikâyenin düğüm bölümündeki sorunun sebebi nedir?",
+   "metinBaslik": "Deniz'in Fasulyesi",
+   "metin": [
+    "Deniz, fen dersi için bir saksıya fasulye ekti.",
+    "Saksıyı odasının karanlık bir köşesine koydu.",
+    "Bir hafta sonra fidan sarardı ve ince, uzun bir hâl aldı.",
+    "Öğretmeni, bitkinin ışık alamadığı için sarardığını söyledi.",
+    "Deniz saksıyı pencerenin önüne taşıdı; birkaç gün sonra yapraklar yeşerdi."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Sebebi gösteren “-dığı için” ifadesinin geçtiği cümleye dokun.",
+   "secenekler": [
+    "Fasulyenin fen dersi için ekilmesi",
+    "Saksının pencerenin önüne taşınması",
+    "Bitkinin ışık alamaması"
+   ],
+   "dogru": 2,
+   "ipucu": "Önce düğümü bul: Hangi cümlede bir sorun çıkıyor? Sonra “Neden?” diye sor.",
+   "aciklama": "Düğümde sorun çıkar: fidan sarardı. “Neden?” sorusunun cevabı sebeptir: ışık alamadığı için. Saksının taşınması ise çözümdür.",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Düğüm"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Sebep ve Sonuç"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Düğümdeki sorunun SEBEBİNİ.",
+     "Anahtar kelimeler: düğüm, sebep. Önce sorunu bul: fidana ne oldu?",
+     "Kanıt: Sorunun nedenini anlatan cümleye dokun. İçinde “-dığı için” var.",
+     "Şıkları ele: Hangisi serimde, hangisi çözümde kalıyor? Sorunun nedeni hangisi?"
+    ]
+   }
+  },
+  {
+   "soru": "Yazar gerekçelerinden birini hangi düşünceyi geliştirme yoluyla desteklemiştir?",
+   "metinBaslik": "Kütüphane Akşam da Açık Olsun",
+   "metin": [
+    "Okul kütüphanemizin hafta içi saat 18.00'e kadar açık olmasını öneriyoruz.",
+    "Şu an kütüphane derslerden hemen sonra kapanıyor ve ödev için kaynak bulamıyoruz.",
+    "Sınıfımızda yaptığımız ankete göre öğrencilerin yüzde 60'ı ders sonrası kütüphaneye gelmek istiyor.",
+    "Nöbeti gönüllü veliler ve öğretmenler sırayla tutabilir."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "İçinde sayı geçen cümleye dokun.",
+   "secenekler": [
+    "Sayısal verilerden yararlanma",
+    "Tanık gösterme",
+    "Benzetme"
+   ],
+   "dogru": 0,
+   "ipucu": "Gerekçeyi destekleyen cümlede bir yüzde var mı? Ünlü birinin sözü ya da “gibi” var mı?",
+   "aciklama": "“Yüzde 60” bir sayısal veridir; gerekçeyi ölçülebilir ve inandırıcı yapar. Metinde ünlü birinin sözü (tanık gösterme) ya da “gibi” ile yapılan benzetme yok. Gerekçeler isteği haklı çıkarır (s. 60).",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Sayısal Verilerden Yararlanma"
+    },
+    {
+     "konu": "u1k9",
+     "kavram": "Gerekçeler"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Gerekçeyi destekleyen YOLU.",
+     "Anahtar kelime: gerekçe. Yazar isteğinin neden haklı olduğunu nasıl gösteriyor?",
+     "Kanıt: İçinde sayı geçen cümleye dokun.",
+     "Şıkları ele: Metinde ünlü birinin sözü var mı? “gibi” kelimesi var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Bu metnin ana fikri aşağıdakilerden hangisidir?",
+   "metinBaslik": "Toprak Neden Kayıp Gidiyor?",
+   "metin": [
+    "Erozyon, toprağın üst katmanının su ve rüzgârla taşınmasıdır.",
+    "Ormanların kesilmesi toprağı çıplak bırakır.",
+    "Meralarda hayvanların aşırı otlatılması bitki örtüsünü yok eder.",
+    "Yamaçta yanlış sürülen tarlalarda da yağmur suyu toprağı kolayca sürükler.",
+    "Bütün bu sebepler bir araya gelince verimli toprak kaybolur; bu yüzden bitki örtüsünü korumalıyız."
+   ],
+   "kanit": [
+    4
+   ],
+   "kanitIpucu": "Sebepleri bir araya getiren son cümleye dokun.",
+   "secenekler": [
+    "Erozyon yalnızca rüzgâr yüzünden olur.",
+    "Verimli toprağı korumak için bitki örtüsünü korumalıyız.",
+    "Hayvanlar meralarda otlatılmamalıdır."
+   ],
+   "dogru": 1,
+   "ipucu": "Metinde birkaç sebep var ama bir sonuç var. Yazar bu sonuçtan bize ne öğüt veriyor?",
+   "aciklama": "Çok sebep bir sonuç yapısı: orman kesimi, aşırı otlatma ve yanlış sürme toprağı kaybettirir (s. 38). Yazarın mesajı son cümlede: bitki örtüsünü korumalıyız. Otlatma ise yardımcı fikir, yani sebeplerden yalnızca biri.",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Ana Fikir"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Çok Sebep Bir Sonuç"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yazarın asıl mesajını, yani ana fikri.",
+     "Anahtar kelimeler: erozyon, sebep, korumalıyız.",
+     "Kanıt: Sebepleri bir araya getiren cümleye dokun. Yazar orada ne öneriyor?",
+     "Şıkları ele: Hangisi metinde yazmıyor? Hangisi sebeplerden yalnızca biri? Hangisi bütün metni kapsıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Bu dörtlükle ilgili aşağıdakilerden hangisi söylenemez?",
+   "metinBaslik": "Sabah (dörtlük)",
+   "metin": [
+    [
+     "Gün doğar ağır ağır,"
+    ],
+    [
+     "Uyanır bütün dağlar."
+    ],
+    [
+     "Kuşlar türkü söyler de"
+    ],
+    [
+     "Neşeyle güler bağlar."
+    ]
+   ],
+   "kanit": [
+    0
+   ],
+   "kanitIpucu": "Olumsuz soru: Yanlış yargıyı çürüten dizeye dokun. İkilemenin geçtiği dizeye bak.",
+   "secenekler": [
+    "Varlıklara insan özellikleri verilmiştir.",
+    "Her dize yedi heceden oluşur.",
+    "İkileme bitişik yazılmıştır."
+   ],
+   "dogru": 2,
+   "ipucu": "Her şıkkı dörtlükte kontrol et. İkilemeyi bul: İki kelime ayrı mı, bitişik mi?",
+   "aciklama": "“ağır ağır” ayrı yazılmış; ikilemeler ayrı yazılır (s. 34). Dağlar uyanıyor, kuşlar türkü söylüyor, bağlar gülüyor: kişileştirme (s. 47). Her dize yedi hecedir: Gün-do-ğar-a-ğır-a-ğır.",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "İkilemeler Ayrı Yazılır"
+    },
+    {
+     "konu": "u1k8",
+     "kavram": "Hece Ölçüsü"
+    },
+    {
+     "konu": "u1k8",
+     "kavram": "Kişileştirme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Dörtlüğe UYMAYAN yargıyı. Kökteki “söylenemez” kelimesine dikkat.",
+     "Anahtar kelimeler: kişileştirme, hece, ikileme.",
+     "Kanıt: İkilemenin geçtiği dizeye dokun. Kelimeler ayrı mı yazılmış?",
+     "Şıkları ele: Heceleri parmağınla say; dağlar, kuşlar, bağlar ne yapıyor? Dörtlükte doğru olan iki şıktan sonra geriye hangisi kalıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "“Yazar, top sahasının teneffüslerde açılmasını istiyor.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "metinBaslik": "Teneffüs",
+   "metin": [
+    "Teneffüslerde okul bahçesi çok kalabalık oluyor.",
+    "Top sahası kilitli olduğu için herkes aynı küçük alanda koşuyor.",
+    "Geçen hafta iki arkadaşımız çarpışıp düştü.",
+    "Sahanın anahtarı ise müdür odasında, dolabın içinde duruyor."
+   ],
+   "kanit": [
+    1,
+    3
+   ],
+   "kanitIpucu": "Top sahasından söz eden bir cümleye dokun.",
+   "ipucu": "Metinde “açılsın”, “istiyoruz”, “öneriyoruz” gibi bir söz var mı? Yazar sorunu ve anahtarın yerini anlatıyor; gerisini sana bırakıyor.",
+   "aciklama": "Metinde istek hiçbir cümlede açıkça yazmıyor; yazar sorunu (kalabalık, kaza) ve sebebini (saha kilitli) anlatarak isteğini ima ediyor. Bir ikna paragrafında ise istek giriş cümlelerinde açıkça söylenmelidir (s. 60).",
+   "kaynak": [
+    {
+     "konu": "u1k9",
+     "kavram": "İstek ya da Öneri"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Sebep ve Sonuç"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargı metinde kelimesi kelimesine var mı, yoksa çıkarım mı?",
+     "Anahtar kelimeler: top sahası, açılması, istiyor.",
+     "Kanıt: Top sahasından söz eden cümleye dokun. “Açılsın” ya da “istiyoruz” yazıyor mu?",
+     "Karar ver: Kelime metinde yoksa ama anlam çıkıyorsa, bu nedir?"
+    ]
+   }
+  }
+ ]
+}
