@@ -1,0 +1,554 @@
+{
+ "id": "u1k8",
+ "unite": "1. Tema: Hayat Boyu Gelişim",
+ "baslik": "Söz Sanatları ve Şiirin Ahengi",
+ "sayfalar": "s. 47, 67",
+ "giris": "Şairler duygularını daha etkili anlatmak için sözü süsler ve şiire bir müzik katar. Bu konuda üç söz sanatını ve şiirin ahengini (dize, hece, uyak) öğreneceğiz. Kitap s. 47'de iki şiirde bunları bulmanı ister; s. 67'de de “Ağaç ve Sen” şiiri var. Örnek dizeleri kendimiz yazdık.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, Konu 6'da ve önceki yıllarda öğrendiklerine dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Benzetme",
+    "sinif": "Konu 6",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='30' y='62' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#fbf6e6'>kardeş</text><text x='60' y='62' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='18' fill='#f5c53d'>≈</text><text x='90' y='62' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#fbf6e6'>kedi</text><text x='60' y='26' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#f5c53d'>gibi</text><text x='60' y='100' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>Konu 6</text></svg>",
+    "anlatim": "Benzetme, ortak bir özellik yüzünden bir şeyi başka bir şeye benzetmektir. İpucu: “gibi”. Benzetme de bir söz sanatıdır.",
+    "akilda": "Ortak özellik + gibi",
+    "sorular": [
+     {
+      "soru": "“Kardeşim kedi gibi sessiz yürüdü.” cümlesinde ne neye benzetilmiş?",
+      "secenekler": [
+       "Kedi kardeşe",
+       "Kardeş kediye",
+       "Sessizlik yürüyüşe"
+      ],
+      "dogru": 1,
+      "ipucu": "“Gibi”den önce gelen, sonra gelene benzetilir.",
+      "aciklama": "Kardeş, sessiz yürüdüğü için kediye benzetilmiş."
+     },
+     {
+      "soru": "Hangisinde benzetme vardır?",
+      "secenekler": [
+       "Bulutlar yağmur getirdi.",
+       "Bulutlar pamuk gibi beyazdı.",
+       "Bulutlar gökyüzünde."
+      ],
+      "dogru": 1,
+      "ipucu": "“Gibi” kelimesini ara.",
+      "aciklama": "Bulutlar, beyazlığı yüzünden pamuğa benzetilmiş."
+     }
+    ]
+   },
+   {
+    "ad": "Heceleme",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='34' width='30' height='28' rx='6' fill='#fbf6e6'/><rect x='45' y='34' width='30' height='28' rx='6' fill='#fbf6e6'/><rect x='80' y='34' width='30' height='28' rx='6' fill='#fbf6e6'/><text x='25' y='54' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>ke</text><text x='60' y='54' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>le</text><text x='95' y='54' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>bek</text><text x='60' y='88' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#f5c53d'>e · e · e</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#6ea8ef'>3 ünlü = 3 hece</text></svg>",
+    "anlatim": "Her hecede bir ünlü harf vardır: a, e, ı, i, o, ö, u, ü. Bir kelimede kaç ünlü varsa o kadar hece vardır.",
+    "akilda": "Ünlü say = hece say",
+    "sorular": [
+     {
+      "soru": "“Kelebek” kelimesi kaç hecedir?",
+      "secenekler": [
+       "2",
+       "3",
+       "4"
+      ],
+      "dogru": 1,
+      "ipucu": "Ünlüleri say: k-E-l-E-b-E-k.",
+      "aciklama": "Ke-le-bek: 3 ünlü, 3 hece."
+     },
+     {
+      "soru": "“Okul” kelimesi nasıl hecelenir?",
+      "secenekler": [
+       "Ok-ul",
+       "O-kul",
+       "Oku-l"
+      ],
+      "dogru": 1,
+      "ipucu": "Her hecede bir ünlü olmalı. “l” tek başına hece olabilir mi?",
+      "aciklama": "O-kul: her hecede bir ünlü var."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Söz Sanatı",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='40' width='92' height='34' rx='8' fill='#fbf6e6'/><text x='60' y='62' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='15' fill='#2b2417'>söz</text><path d='M24 36 l6 -10 l6 10 M54 30 l6 -12 l6 12 M84 36 l6 -10 l6 10' stroke='#f5c53d' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='30' cy='24' r='3' fill='#f5c53d'/><circle cx='60' cy='16' r='3' fill='#f5c53d'/><circle cx='90' cy='24' r='3' fill='#f5c53d'/><text x='60' y='96' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#c39bf0'>süslenince</text><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>daha etkili</text></svg>",
+   "aciklama": "Söz sanatı, anlatımı güzelleştirmek ve daha etkili kılmak için sözü süslemektir. Şiirde duyguyu güçlendirir.",
+   "ek": "Kitap s. 47'de “Zafer” ve “Uçun Kuşlar” şiirlerindeki söz sanatlarını bulmanı ve bunların şiirin anlamına katkısını açıklamanı ister. Kitap dışı bilgi: Bu konudaki kişileştirme, konuşturma ve abartma eski programda 7. sınıfta işleniyordu (kazanım T.7.3.8). Benzetme de bir söz sanatıdır (Konu 6).",
+   "akilda": "Sözü süsler, duyguyu güçlendirir",
+   "soru": {
+    "soru": "Söz sanatları şiirde ne işe yarar?",
+    "secenekler": [
+     "Anlatımı güzelleştirir, duyguyu güçlendirir.",
+     "Şiiri kısaltır.",
+     "Şiirdeki kelimeleri azaltır."
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki “akılda kalsın” ifadesini hatırla.",
+    "aciklama": "Söz sanatları anlatımı güzelleştirir ve etkili kılar."
+   }
+  },
+  {
+   "ad": "Kişileştirme",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='44' r='20' fill='#f5c53d'/><path d='M44 66 l-8 10 M76 66 l8 10 M38 34 l-10 -6 M82 34 l10 -6' stroke='#f5c53d' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='53' cy='40' r='3' fill='#2b2417'/><circle cx='67' cy='40' r='3' fill='#2b2417'/><path d='M51 50 q9 8 18 0' stroke='#2b2417' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='60' y='96' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>Güneş gülümsedi</text><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#c39bf0'>insan gibi</text></svg>",
+   "aciklama": "Kişileştirme, insana ait bir özelliği insan dışındaki varlıklara vermektir.",
+   "ek": "Örnek: “Rüzgâr pencereme vurup ağladı.” Ağlamak insana ait bir davranıştır; burada rüzgâra verilmiş. Kitaptaki “Zafer” şiirinde (s. 47) güneş ve ağaçlar da insan gibi davranır; kitap bunu bulmanı ister. Kitap dışı bilgi.",
+   "akilda": "İnsan gibi davranır",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Yaşlı çınar, yorgun kollarını yola uzatmış.” Bu dizede hangi söz sanatı var?",
+    "adimlar": [
+     {
+      "metin": "Dizede ne anlatılıyor?",
+      "islem": "çınar (bir ağaç)"
+     },
+     {
+      "metin": "Ona hangi özellikler verilmiş?",
+      "islem": "yorgun, kollarını uzatmış"
+     },
+     {
+      "metin": "Bu özellikler kime ait?",
+      "islem": "insana ait"
+     }
+    ],
+    "sonuc": "İnsana ait özellikler ağaca verilmiş: kişileştirme."
+   },
+   "soru": {
+    "soru": "Hangi cümlede kişileştirme vardır?",
+    "secenekler": [
+     "Kuşlar ağaçta öttü.",
+     "Güneş bize gülümsedi.",
+     "Ağaçlar sonbaharda yaprak döker."
+    ],
+    "dogru": 1,
+    "ipucu": "Hangi cümlede bir varlık insan gibi davranıyor?",
+    "aciklama": "Gülümsemek insana ait bir davranıştır; güneşe verilmiş."
+   }
+  },
+  {
+   "ad": "Konuşturma",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='16' width='76' height='34' rx='12' fill='#fbf6e6'/><path d='M30 50 l-6 12 l16 -12' stroke='#fbf6e6' stroke-width='1' fill='#fbf6e6' stroke-linecap='round' stroke-linejoin='round'/><text x='48' y='37' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>Merhaba!</text><circle cx='30' cy='82' r='14' fill='#7fd48a'/><circle cx='25' cy='79' r='2.5' fill='#2b2417'/><circle cx='35' cy='79' r='2.5' fill='#2b2417'/><path d='M24 88 q6 4 12 0' stroke='#2b2417' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='84' y='86' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#7fd48a'>kurbağa</text><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#c39bf0'>konuşan varlık</text></svg>",
+   "aciklama": "Konuşturma, insan dışındaki varlıkları insan gibi konuşturmaktır.",
+   "ek": "İpucu: tırnak içinde bir söz ve “dedi, söyledi, sordu” gibi kelimeler. Örnek: Karınca, “Kış gelmeden yiyecek toplamalıyım.” dedi. Konuşturmanın olduğu yerde kişileştirme de vardır ama her kişileştirmede konuşturma yoktur. Kitap dışı bilgi.",
+   "akilda": "Konuşuyorsa konuşturma",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Kalem defterine fısıldadı: ‘Bugün güzel bir şiir yazacağız.’” Hangi söz sanatı var?",
+    "adimlar": [
+     {
+      "metin": "1. İnsan dışında bir varlık var mı?",
+      "soru": {
+       "soru": "İnsan dışındaki varlık hangisi?",
+       "secenekler": [
+        "şiir",
+        "kalem",
+        "bugün"
+       ],
+       "dogru": 1,
+       "ipucu": "Kim fısıldıyor?",
+       "aciklama": "Fısıldayan kalemdir."
+      },
+      "islem": "kalem"
+     },
+     {
+      "metin": "2. Bu varlık ne yapıyor?",
+      "soru": {
+       "soru": "Kalem ne yapıyor?",
+       "secenekler": [
+        "Yazı yazıyor",
+        "Deftere bir söz söylüyor",
+        "Kırılıyor"
+       ],
+       "dogru": 1,
+       "ipucu": "Tırnak içindeki sözü kim söylüyor?",
+       "aciklama": "Kalem deftere fısıldayarak konuşuyor."
+      },
+      "islem": "fısıldadı: “…”"
+     },
+     {
+      "metin": "3. Konuşan bir eşya var.",
+      "islem": "konuşturma"
+     }
+    ],
+    "sonuc": "Harika! Konuşan varlığı ve tırnak içindeki sözü buldun."
+   },
+   "soru": {
+    "soru": "“Çiçek, arıya ‘Balımı al ama beni incitme.’ dedi.” Bu cümlede hangi söz sanatı vardır?",
+    "secenekler": [
+     "Abartma",
+     "Konuşturma",
+     "Benzetme"
+    ],
+    "dogru": 1,
+    "ipucu": "Tırnak içinde bir söz ve “dedi” var mı?",
+    "aciklama": "Çiçek konuşuyor: konuşturma."
+   }
+  },
+  {
+   "ad": "Abartma",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='54' r='32' fill='#ef7b6c'/><circle cx='60' cy='54' r='20' fill='#f5c53d'/><circle cx='60' cy='54' r='8' fill='#fbf6e6'/><path d='M14 54 h10 M96 54 h10 M60 10 v10 M60 88 v10' stroke='#fbf6e6' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>olduğundan çok büyük</text></svg>",
+   "aciklama": "Abartma, bir durumu olduğundan çok daha büyük ya da çok daha küçük göstermektir.",
+   "ek": "Örnek: “Öyle acıktım ki bir fili yiyebilirim.” Kimse bir fili yiyemez; açlığın çok büyük olduğunu anlatmak için abartılmış. Abartmada gerçekte olamayacak bir durum anlatılır. Kitap dışı bilgi.",
+   "akilda": "Gerçekte olamaz, çok büyük",
+   "soru": {
+    "soru": "Hangi cümlede abartma vardır?",
+    "secenekler": [
+     "Bu sabah çok erken kalktım.",
+     "Ödevimi iki saatte bitirdim.",
+     "Ödevim o kadar uzundu ki yazarken saçlarım ağardı."
+    ],
+    "dogru": 2,
+    "ipucu": "Hangisi gerçekte olamaz?",
+    "aciklama": "Bir ödev yazarken saçlar ağarmaz; ödevin uzunluğu abartılmış."
+   }
+  },
+  {
+   "ad": "Dize ve Dörtlük",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='14' rx='4' fill='#fbf6e6'/><rect x='14' y='36' width='86' height='14' rx='4' fill='#fbf6e6'/><rect x='14' y='56' width='92' height='14' rx='4' fill='#fbf6e6'/><rect x='14' y='76' width='80' height='14' rx='4' fill='#fbf6e6'/><path d='M108 18 q8 30 0 70' stroke='#f5c53d' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>4 dize = dörtlük</text></svg>",
+   "aciklama": "Şiirin her bir satırına dize (mısra) denir. Dört dizeden oluşan bölüme dörtlük denir.",
+   "ek": "Kitap s. 47'de “Uçun Kuşlar” şiirinin kaç dizeden oluştuğunu ve dizelerin nasıl gruplandığını bulmanı ister. Dize ve dörtlük tanımı kitap dışı bilgidir.",
+   "akilda": "Satır = dize, 4 dize = dörtlük",
+   "soru": {
+    "soru": "Dört dizeden oluşan şiir bölümüne ne denir?",
+    "secenekler": [
+     "Dörtlük",
+     "Paragraf",
+     "Hece"
+    ],
+    "dogru": 0,
+    "ipucu": "Adında “dört” geçiyor.",
+    "aciklama": "Dört dizelik bölüm dörtlüktür."
+   }
+  },
+  {
+   "ad": "Hece Ölçüsü",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='28' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>Bah·çem·de aç·tı gül·ler</text><circle cx='18' cy='50' r='5' fill='#f5c53d'/><circle cx='32' cy='50' r='5' fill='#f5c53d'/><circle cx='46' cy='50' r='5' fill='#f5c53d'/><circle cx='60' cy='50' r='5' fill='#f5c53d'/><circle cx='74' cy='50' r='5' fill='#f5c53d'/><circle cx='88' cy='50' r='5' fill='#f5c53d'/><circle cx='102' cy='50' r='5' fill='#f5c53d'/><text x='60' y='72' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#f5c53d'>7 hece</text><text x='60' y='92' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>Dal·da ö·ter bül·bül·ler</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>7 hece</text></svg>",
+   "aciklama": "Dizelerdeki hece sayısının eşit olmasına hece ölçüsü denir. Eşit heceler şiire düzenli bir ritim verir.",
+   "ek": "Kitap s. 47'de her dizenin kaç heceden oluştuğunu bulmanı ister. Kitap dışı bilgi: Türk şiirinde en çok 7, 8 ve 11 heceli dizeler kullanılır.",
+   "akilda": "Heceleri say: eşit mi?",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Bahçemde açtı güller / Dalda öter bülbüller” Bu iki dize hece ölçüsüyle mi yazılmış?",
+    "adimlar": [
+     {
+      "metin": "1. dizeyi hecele ve say.",
+      "islem": "Bah-çem-de aç-tı gül-ler = 7"
+     },
+     {
+      "metin": "2. dizeyi hecele ve say.",
+      "islem": "Dal-da ö-ter bül-bül-ler = 7"
+     },
+     {
+      "metin": "Sayılar eşit mi?",
+      "islem": "7 = 7"
+     }
+    ],
+    "sonuc": "İki dize de 7 heceli: hece ölçüsü (7'li) kullanılmış."
+   },
+   "soru": {
+    "soru": "“Sabah oldu, kalk” dizesi kaç hecedir?",
+    "secenekler": [
+     "4",
+     "5",
+     "6"
+    ],
+    "dogru": 1,
+    "ipucu": "Ünlüleri say: a, a, o, u, a.",
+    "aciklama": "Sa-bah ol-du kalk: 5 hece."
+   }
+  },
+  {
+   "ad": "Uyak ve Redif",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='46' y='44' text-anchor='end' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#fbf6e6'>g</text><rect x='48' y='28' width='26' height='22' rx='5' fill='#c39bf0'/><text x='61' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>ül</text><text x='76' y='44' text-anchor='start' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#f5c53d'>ler</text><text x='46' y='78' text-anchor='end' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#fbf6e6'>bülb</text><rect x='48' y='62' width='26' height='22' rx='5' fill='#c39bf0'/><text x='61' y='78' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>ül</text><text x='76' y='78' text-anchor='start' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#f5c53d'>ler</text><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>ül: uyak · ler: redif</text></svg>",
+   "aciklama": "Dize sonlarındaki ses benzerliğine uyak (kafiye) denir. Dize sonlarında tekrar eden aynı ek ya da kelimeye redif denir.",
+   "ek": "Örnek: “güller / bülbüller” — sondaki “-ler” aynı ektir: redif. Ondan önceki “ül” sesleri benzer: uyak. Uyak, redif ve eşit hece şiire ahenk (kulağa hoş gelen ses uyumu) katar. Kitap s. 47'de dize sonlarındaki ortak sesleri bulmanı ister. Tanımlar kitap dışı bilgidir.",
+   "akilda": "Benzer ses uyak, aynı ek redif",
+   "soru": {
+    "soru": "“yollar / kollar” kelimelerinin sonunda tekrar eden “-lar” ekine ne denir?",
+    "secenekler": [
+     "Uyak",
+     "Redif",
+     "Hece"
+    ],
+    "dogru": 1,
+    "ipucu": "Tekrar eden aynı ek… Kartta hangisiydi?",
+    "aciklama": "Aynı ekin tekrarı rediftir; önündeki “ol” sesleri ise uyaktır."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram bir söz sanatı mı, yoksa şiirin biçimi ve ahengiyle mi ilgili?",
+   "kutular": [
+    {
+     "etiket": "Söz sanatı",
+     "uyeler": [
+      "Kişileştirme",
+      "Konuşturma",
+      "Abartma"
+     ]
+    },
+    {
+     "etiket": "Biçim ve ahenk",
+     "uyeler": [
+      "Dize ve Dörtlük",
+      "Hece Ölçüsü",
+      "Uyak ve Redif"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki “Uçun Kuşlar” şiiri Rıza Tevfik Bölükbaşı'nın, “Zafer” şiiri Oktay Rifat'ındır; ikisi de kısaltılarak verilmiştir (s. 47).",
+  "“Ağaç ve Sen” Hasan Âli Yücel'in bir şiiridir; kitapta tema sonunda serbest okuma metni olarak yer alır (s. 67)."
+ ],
+ "akildaKalsin": [
+  "Söz sanatı sözü süsler, duyguyu güçlendirir.",
+  "Kişileştirme: Varlık insan gibi davranır.",
+  "Konuşturma: Varlık konuşur.",
+  "Abartma: Gerçekte olamayacak kadar büyük ya da küçük.",
+  "Dize = satır, dörtlük = 4 dize.",
+  "Hece ölçüsü: Dizelerin hece sayısı eşit.",
+  "Uyak benzer ses, redif aynı ek ya da kelime."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Kişileştirme ile konuşturma nasıl ayrılır?",
+   "cevap": "Varlık yalnızca insan gibi davranıyorsa (gülüyor, yürüyor, ağlıyor) kişileştirmedir. Konuşuyorsa konuşturmadır. Konuşan bir varlık insan gibi davrandığı için konuşturmada kişileştirme de vardır."
+  },
+  {
+   "soru": "Abartma yalan söylemek midir?",
+   "cevap": "Hayır. Okur, sözün abartıldığını bilir. Amaç kandırmak değil, duyguyu daha güçlü anlatmaktır: “Bin kere söyledim!”"
+  },
+  {
+   "soru": "Her şiirde uyak ve hece ölçüsü olmak zorunda mı?",
+   "cevap": "Hayır. Kitap dışı bilgi: Serbest şiirlerde dizelerin hece sayısı eşit olmayabilir, uyak da bulunmayabilir. Şair ahengi tekrarlarla da sağlayabilir."
+  },
+  {
+   "soru": "Heceleri hızlı nasıl sayarım?",
+   "cevap": "Her hecede bir ünlü vardır. Dizedeki ünlüleri (a, e, ı, i, o, ö, u, ü) sayarsan hece sayısını bulursun."
+  },
+  {
+   "soru": "Ahenk ne demek?",
+   "cevap": "Şiirin kulağa hoş gelen ses uyumudur. Kitap, hece sayılarının ve dize sonlarındaki ses benzerliklerinin şiirin ahengine katkısını düşünmeni ister (s. 47)."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okul çantanı kişileştirerek iki dizelik kısa bir şiir yaz. Dize sonlarında bir uyak ya da redif olsun.",
+   "ornekCevap": "Çantam sırtımda yorgun, iç çeker her sabah, / Kitapları taşırken bir kez demez “Ah!”",
+   "anahtarlar": [
+    "çanta",
+    "yorgun",
+    "iç çek",
+    "ağla",
+    "gül",
+    "konuş",
+    "uyu",
+    "söyle"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“Dağlar karlı başını göğe kaldırdı.” Bu dizede hangi söz sanatı vardır?",
+   "secenekler": [
+    "Abartma",
+    "Konuşturma",
+    "Kişileştirme"
+   ],
+   "dogru": 2,
+   "ipucu": "Baş kaldırmak kime ait bir davranış?",
+   "aciklama": "Başını kaldırmak insana ait bir davranıştır; dağlara verilmiş: kişileştirme.",
+   "kavram": "Kişileştirme"
+  },
+  {
+   "soru": "“Gözlerimden seller aktı.” dizesinde hangi söz sanatı vardır?",
+   "secenekler": [
+    "Konuşturma",
+    "Abartma",
+    "Kişileştirme"
+   ],
+   "dogru": 1,
+   "ipucu": "Gözlerden gerçekten sel akabilir mi?",
+   "aciklama": "Gözyaşı sel kadar çok olamaz; ağlama abartılmış.",
+   "kavram": "Abartma"
+  },
+  {
+   "soru": "Hangisinde konuşturma yoktur?",
+   "secenekler": [
+    "Ay, yıldızlara “Uyuyun artık.” dedi.",
+    "Kedi, “Bugün balık istiyorum.” diye miyavladı.",
+    "Bulutlar gökyüzünde ağır ağır yürüdü."
+   ],
+   "dogru": 2,
+   "ipucu": "Olumsuz soru! Tırnak içinde söz olmayan cümleyi ara.",
+   "aciklama": "Bulutlar yürüyor ama konuşmuyor: kişileştirme var, konuşturma yok.",
+   "kavram": "Konuşturma"
+  },
+  {
+   "soru": "Altı dörtlükten oluşan bir şiir kaç dizedir?",
+   "secenekler": [
+    "10",
+    "24",
+    "6"
+   ],
+   "dogru": 1,
+   "ipucu": "Her dörtlükte kaç dize var? 6 tane dörtlük…",
+   "aciklama": "6 dörtlük × 4 dize = 24 dize.",
+   "kavram": "Dize ve Dörtlük",
+   "yardim": {
+    "adimlar": [
+     "Bir dörtlükte kaç dize var? Kartı hatırla.",
+     "6 dörtlüğün her birinde aynı sayıda dize var.",
+     "Bir dörtlükteki dize sayısını 6 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Hangi dize 7 hecelidir?",
+   "secenekler": [
+    "Gel gör beni",
+    "Kuşlar uçtu göğe doğru",
+    "Sabah güneşi doğdu"
+   ],
+   "dogru": 2,
+   "ipucu": "Her seçeneğin ünlülerini say.",
+   "aciklama": "Sa-bah gü-ne-şi doğ-du: 7 hece. Diğerleri 4 ve 8 hecedir.",
+   "kavram": "Hece Ölçüsü"
+  },
+  {
+   "soru": "Uyak ile redif arasındaki fark hangisidir?",
+   "secenekler": [
+    "Uyak ses benzerliğidir; redif aynı ek ya da kelimenin tekrarıdır.",
+    "Uyak dize başında, redif dize sonunda olur.",
+    "İkisi de hece sayısını gösterir."
+   ],
+   "dogru": 0,
+   "ipucu": "Kartta “güller / bülbüller” örneğini hatırla: “ül” neydi, “-ler” neydi?",
+   "aciklama": "Uyak benzer seslerdir; redif aynı ekin ya da kelimenin tekrarıdır. İkisi de dize sonundadır.",
+   "kavram": "Uyak ve Redif"
+  },
+  {
+   "soru": "Şair “Ağaç, güneşe kollarını açtı.” demiş. Bu söz sanatının şiire katkısı nedir?",
+   "secenekler": [
+    "Şiirin hece sayısını artırır.",
+    "Ağacı canlı ve sevinçli gösterir, anlatımı etkileyici yapar.",
+    "Ağacın türünü açıklar."
+   ],
+   "dogru": 1,
+   "ipucu": "Söz sanatlarının işi neydi? Kartı hatırla.",
+   "aciklama": "Ağaca insan gibi kollarını açtırmak onu canlı gösterir; anlatım daha etkileyici olur.",
+   "kavram": "Söz Sanatı"
+  },
+  {
+   "soru": "Bu dörtlükte hangi söz sanatı kullanılmamıştır?",
+   "metinBaslik": "Sonbahar",
+   "metin": [
+    "Rüzgâr kapımı çaldı sabah,",
+    "Yapraklar dedi: “Gidiyoruz, ah!”",
+    "Bir damla yaş döktü bulutlar,",
+    "Bütün sokaklar oldu deryalar."
+   ],
+   "kanit": [
+    1,
+    3
+   ],
+   "kanitIpucu": "Olumsuz soru! Önce dörtlükte olan bir söz sanatını gösteren dizeye dokun.",
+   "secenekler": [
+    "Konuşturma",
+    "Abartma",
+    "Benzetme"
+   ],
+   "dogru": 2,
+   "ipucu": "Konuşan bir varlık var mı? Gerçekte olamayacak bir durum var mı? “Gibi” var mı?",
+   "aciklama": "Yapraklar konuşuyor (konuşturma), bir damla yaşla sokaklar deniz oluyor (abartma). “Gibi” ile yapılan bir benzetme yok.",
+   "kavram": "Konuşturma",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Dörtlükte olmayan söz sanatını. Kökte “kullanılmamıştır” var.",
+     "Anahtar kelime: konuşan varlık, gerçekte olamaz, gibi.",
+     "Kanıt: Yaprakların konuştuğu ya da sokakların derya olduğu dizeye dokun.",
+     "Şıkları ele: Dörtlükte bulduğun sanatları ele; kalan şık cevaptır."
+    ]
+   }
+  },
+  {
+   "soru": "Bu paragraftaki söz sanatının anlatıma katkısı nedir?",
+   "metinBaslik": "Gökyüzünün Gece Lambası",
+   "metin": [
+    "Ay, Dünya'nın çevresinde yaklaşık bir ayda bir tur atar.",
+    "Kendi ışığı yoktur; Güneş'ten aldığı ışığı yansıtır.",
+    "Bazı geceler utangaç bir çocuk gibi yüzünün yalnızca bir kısmını gösterir.",
+    "Dolunay gecelerinde ise bütün yüzüyle gülümser."
+   ],
+   "kanit": [
+    2,
+    3
+   ],
+   "kanitIpucu": "Ay'ın insan gibi davrandığı bir cümleye dokun.",
+   "secenekler": [
+    "Ay'ın Dünya'nın çevresinde döndüğünü kanıtlar.",
+    "Ay'ın ışığının nereden geldiğini açıklar.",
+    "Ay'ı canlı bir varlık gibi göstererek anlatımı ilgi çekici yapar."
+   ],
+   "dogru": 2,
+   "ipucu": "Önce söz sanatının olduğu cümleyi bul. Sonra o cümle okura ne hissettiriyor, düşün.",
+   "aciklama": "Ay'ın utanması ve gülümsemesi onu canlı bir varlık gibi gösterir; bilgiler daha ilgi çekici hâle gelir. Diğer iki şık bilgi veren cümlelerin işidir.",
+   "kavram": "Kişileştirme",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Söz sanatının anlatıma ne kattığını.",
+     "Anahtar kelime: Ay'ın yaptığı insan davranışları: utanmak, gülümsemek.",
+     "Kanıt: Ay'ın insan gibi davrandığı cümleye dokun.",
+     "Şıkları ele: Hangi şıklar söz sanatı değil, bilgi veren cümlelerden söz ediyor? Onları ele."
+    ]
+   }
+  },
+  {
+   "soru": "Bu dörtlük için hangisi söylenebilir?",
+   "metinBaslik": "Pazar",
+   "metin": [
+    "Pazar günü çarşıda",
+    "Elma, armut sepette",
+    "Satıcılar bağırır",
+    "Herkes koşar telaşta"
+   ],
+   "kanit": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "kanitIpucu": "Herhangi bir dizeye dokun ve hecelerini parmağınla say.",
+   "secenekler": [
+    "Bütün dizeler 7 hecelidir.",
+    "Dize sonlarında hiç ortak ek yoktur.",
+    "Dörtlükte konuşturma vardır."
+   ],
+   "dogru": 0,
+   "ipucu": "Her dizenin hecelerini say. Sonra 1, 2 ve 4. dizelerin sonundaki eklere bak.",
+   "aciklama": "Her dize 7 hecedir. 1, 2 ve 4. dizelerin sonunda aynı görevdeki “-da, -te, -ta” ekleri var (redif). Konuşan bir varlık yok.",
+   "kavram": "Hece Ölçüsü",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Dörtlük için doğru olan yargıyı.",
+     "Anahtar kelime: hece, ek, konuşan varlık.",
+     "Kanıt: Bir dizeye dokun ve hecelerini say: Pa-zar gü-nü…",
+     "Şıkları ele: Dize sonlarında “-da, -te, -ta” var mı? Konuşan biri var mı? Yanlış olanları ele."
+    ]
+   }
+  }
+ ]
+}
