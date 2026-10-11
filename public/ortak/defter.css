@@ -906,3 +906,34 @@ a.head-btn[aria-pressed="true"] { background: var(--gold); color: #1b2340; borde
 .rp-sw small { display: block; color: var(--muted); font-size: 14px; }
 .rp-dosya { cursor: pointer; }
 @media (max-width: 640px) { .rp-olay li { grid-template-columns: 42px 1fr; } .rp-olay .rp-d { display: none; } }
+
+/* ---------- Veli Paneli (/veli/) ---------- */
+.rp-nokta { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+.rp-kutular { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+.rp-kutu { background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); padding: 10px 14px; display: grid; gap: 2px; }
+.rp-kutu b { font-family: var(--display); font-size: 26px; line-height: 1.1; }
+.rp-kutu span { color: var(--muted); font-size: 14px; font-weight: 700; }
+.rp-kutu.uyari b { color: var(--bad); }
+.rp-kart { background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); padding: 12px 14px; }
+.rp-grafik { width: 100%; height: auto; display: block; }
+.rp-grafik .rp-izgara { stroke: var(--line); stroke-width: 1; }
+.rp-grafik .rp-eks { fill: var(--muted); font-size: 12px; font-family: var(--body); }
+.rp-grafik .rp-deger { fill: var(--ink); font-size: 12px; font-weight: 800; font-family: var(--body); }
+.rp-lejant { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); margin-top: 6px; }
+.rp-lejant i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: middle; }
+.rp-lejant .rp-not { flex-basis: 100%; }
+.rp-ilerleme { height: 10px; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin-bottom: 10px; }
+.rp-ilerleme i { display: block; height: 100%; border-radius: 999px; }
+.rp-unite { margin: 14px 0 6px; font-family: var(--display); font-size: 17px; }
+.rp-konu td { white-space: normal; vertical-align: top; }
+.rp-konu td:first-child { min-width: 180px; font-weight: 700; }
+.rp-konu small { color: var(--muted); }
+.rp-durak td { background: var(--gold-soft); }
+.rp-ok { color: var(--ok); font-weight: 800; }
+.rp-etiket { display: inline-block; background: var(--bad-soft); color: var(--bad); border-radius: 999px; padding: 1px 8px; font-size: 13px; font-weight: 700; margin: 1px 0; }
+.rp-indir { display: grid; gap: 10px; }
+.rp-secim { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.rp-secim label { display: inline-flex; gap: 6px; align-items: center; font-weight: 700; cursor: pointer; }
+.rp-secim input { width: 18px; height: 18px; accent-color: var(--accent); }
+.rp-indir select, section select#rpDonem { font: inherit; font-weight: 700; padding: 8px 10px; border-radius: 12px; border: 2px solid var(--line); background: var(--surface); color: var(--ink); }
+.rp-olay.tek li { grid-template-columns: 46px 1fr; }
