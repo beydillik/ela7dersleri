@@ -611,7 +611,8 @@
         html = `<div class="stage"><div class="kicker">Konu tamam</div><h3>Konuyu bitirdin!</h3><p class="big">${msg}</p>
           <div class="done-stats"><div class="stat"><b>${c1}</b><span>ilk denemede doğru</span></div>
           <div class="stat"><b>${c2}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c0}</b><span>birlikte öğrendik</span></div></div>
-          <div class="row"><button class="btn primary" data-goto="tekrar">Tekrar'a geç</button><button class="btn" data-goto="test">Test'e geç</button>
+          <div class="siradaki"><span>Sıradaki</span><button class="btn primary" data-goto="bak">Konuya Bak →</button></div>
+          <div class="row"><button class="btn ghost" data-goto="tekrar">Tekrar</button><button class="btn ghost" data-goto="test">Test</button>
           <button class="btn ghost" data-restart>Baştan başla</button></div></div>`;
       }
       stage.innerHTML = html;
@@ -636,7 +637,7 @@
       }
       if (st.t === "yaz") wireWrite(stage, d.dusunVeYaz[0]);
       if (st.t === "duvar") renderWall($("#wallBox", stage), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}`, kartlar: kartlarOf(S.konu) });
-      $$("[data-goto]", stage).forEach(b => b.onclick = () => setTab(b.dataset.goto));
+      $$("[data-goto]", stage).forEach(b => b.onclick = () => gitSekme(b.dataset.goto));
       const rs = $("[data-restart]", stage); if (rs) rs.onclick = () => { for (const k in qstate) delete qstate[k]; go(0); };
     }
     draw();
@@ -674,6 +675,7 @@
     h.push(`<p class="src">Kaynak: ${esc(S.ders.kaynak || `MEB ${S.ders.ders} ${S.ders.sinif} Ders Kitabı`)}, ${esc(d.sayfalar)}.<br>Hazırlayan: Kemal BEYDİLLİ - Eylül 2026</p>`);
     root.innerHTML = h.join("");
     if (isEn()) renderWall($("#bakWall", root), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}`, kartlar: kartlarOf(S.konu) });
+    siradaki(root, "Tekrar", () => gitSekme("tekrar"));
     // Ara Durak'tan "Konuda bak" ile gelindiyse ilgili kavram kartını göster ve vurgula
     if (S.hedef) {
       const c = $$(".card", root).find(x => x.dataset.ad === S.hedef); S.hedef = null;
@@ -692,6 +694,7 @@
     if (d.hatalar && d.hatalar.length) games.push(["hata", "Hatayı Bul"]);
     let g = store.get(key("oyun"), "kart"); if (!games.some(x => x[0] === g)) g = "kart";
     root.innerHTML = `<div class="subtabs">${games.map(([k, n]) => `<button class="subtab" data-g="${k}" aria-pressed="${k === g}">${n}</button>`).join("")}</div><div id="game"></div>`;
+    if (S.durakAsil) siradaki(root, "Tarama testi", () => gitSekme("tarama")); else siradaki(root, "Test", () => gitSekme("test"));
     $$(".subtab", root).forEach(b => b.onclick = () => { g = b.dataset.g; store.set(key("oyun"), g); $$(".subtab", root).forEach(x => x.setAttribute("aria-pressed", x === b)); run(); });
     const run = () => { const box = $("#game", root); KAYIT.olay("oyun-ac", { oyun: g }); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup, dinle: gameListen, kur: gameSpell, cumle: gameSentence, resim: gamePicture, hata: gameErrors })[g](box); };
     run();
@@ -1625,7 +1628,9 @@
         <div class="hz-rapor">${satirlar}</div>
         ${zayif.length ? `<div><div class="kicker">Tekrar bakman gereken kavramlar</div><div class="dk-liste">${zayif.map(z => `<button data-git="${esc(z.konu)}" data-kv="${esc(z.kavram)}">${konuNoOf(z.konu)}. konu · ${esc(z.kavram)}</button>`).join("")}</div></div>` : ""}
         <p class="dk-sonraki">${ICON.tekrar}<span>Bu durağı <b>${tarihYaz(kayit.n)}</b> tekrar tara. Zamanı gelince konu listesinde haber vereceğim.</span></p>
-        <div class="row"><button class="btn primary" data-yeniden>Testi yeniden yap</button><button class="btn ghost" data-goto="hatirla">Hatırla'ya dön</button></div></div>`;
+        <div class="siradaki">${siradakiKonuBtn()}</div>
+        <div class="row"><button class="btn ghost" data-yeniden>Testi yeniden yap</button><button class="btn ghost" data-goto="hatirla">Hatırla'ya dön</button></div></div>`;
+      siradakiKonuBagla(root);
       $$("[data-git]", root).forEach(b => b.onclick = () => gitKonu(b.dataset.git, b.dataset.kv));
       $("[data-yeniden]", root).onclick = basla;
       $("[data-goto]", root).onclick = () => setTab("hatirla");
@@ -1752,8 +1757,9 @@
         root.innerHTML = `<div class="stage"><div class="kicker">Konu testi · Sonuç</div><h3>${oz.toplam} sorunun hepsini tamamladın!</h3><p class="big">${msg}</p>
           <div class="done-stats"><div class="stat"><b>${oz.ilk1}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${oz.ilk2}</b><span>ipucuyla / ikinci denemede</span></div><div class="stat"><b>${oz.ilk0}</b><span>tekrar gelince çalıştın</span></div></div>
           ${gec.length > 1 ? `<p class="ek">İlk çözüşünde ${gec[0].ilk1} / ${gec[0].toplam} soruyu ilk denemede bulmuştun.</p>` : ""}
-          <div class="row"><button class="btn primary" data-goto="tekrar">Tekrar'a geç</button><button class="btn ghost" data-yeniden>Testi yeniden çöz</button></div></div>`;
-        $("[data-goto]", root).onclick = () => setTab("tekrar");
+          <div class="siradaki">${siradakiKonuBtn()}</div>
+          <div class="row"><button class="btn ghost" data-goto="tekrar">Tekrar'a dön</button><button class="btn ghost" data-yeniden>Testi yeniden çöz</button></div></div>`;
+        $("[data-goto]", root).onclick = () => gitSekme("tekrar"); siradakiKonuBagla(root);
         $("[data-yeniden]", root).onclick = basla;
       }
     });
@@ -1798,6 +1804,7 @@
     $("#content").innerHTML = `<section class="konu-head atolye-head"><div class="meta"><span>${esc(S.ders.ders)}</span><span class="pill">${ICON.okuma}Her gün biraz</span></div>
       <h2>${esc(S.atolye.baslik || "Okuma Atölyesi")}</h2></section><div class="panel" id="panel"></div>`;
     atolyeAna($("#panel"));
+    S.seritGuncelle && S.seritGuncelle();
     S.onKonu && S.onKonu();
   }
 
@@ -2224,15 +2231,67 @@
   // ---------- Sayfa iskeleti ----------
   function allTopics() { return S.ders.uniteler.flatMap((u, ui) => u.konular.map((k, ki) => ({ ...k, ui, ki }))); }
 
+  // ---------- "Sıradaki" düğmesi: Öğren → Konuya Bak → Tekrar → Test → sıradaki konu ----------
+  const sonrakiKonu = () => { const a = allTopics().filter(k => k.hazir), i = a.findIndex(k => k.id === S.konu); return i >= 0 ? a[i + 1] || null : null; };
+  const konuyaKaydir = () => { const c = $("#content"); if (c) c.scrollIntoView({ block: "start", behavior: "smooth" }); };
+  const gitSekme = t => { setTab(t); konuyaKaydir(); };
+  function siradaki(root, etiket, fn) {
+    const d = document.createElement("div"); d.className = "siradaki";
+    d.innerHTML = `<span>Sıradaki</span><button class="btn primary">${esc(etiket)} →</button>`;
+    $("button", d).onclick = fn; root.appendChild(d);
+  }
+  const siradakiKonuBtn = () => { const n = sonrakiKonu(); return n ? `<button class="btn primary" data-sonraki-konu="${esc(n.id)}">Sıradaki: ${esc(n.baslik)} →</button>` : `<span class="ek">Bu dersin hazır konularının sonuna geldin!</span>`; };
+  const siradakiKonuBagla = root => $$("[data-sonraki-konu]", root).forEach(b => b.onclick = () => { S.donus = null; openKonu(b.dataset.sonrakiKonu, true); });
+
+  // ---------- Kompakt şerit ----------
+  // Sayfa en üstteyken konu listesi tam açık. Konu başlığı ve sekmeler ekrandan çıkınca üstte ince bir şerit belirir:
+  // "☰ Konular" (dokununca liste şeridin altında açılır) · konu adı · sekmeler. Fareyle üstüne gelince açılmaz (bilerek).
+  function navHTML(ui) {
+    const u = S.ders.uniteler[ui]; let no = 0;
+    return {
+      units: S.ders.uniteler.map((x, i) => `<button class="unit-btn" data-u="${i}" aria-pressed="${i === ui}">${esc(x.ad)}</button>`).join(""),
+      topics: u.konular.length ? u.konular.map(k => { const dk = isDurak(k); if (!dk) no++;
+        const ek = !k.hazir ? '<span class="soon">yakında</span>' : dk && durakKayit.zaman(k.id) ? '<span class="due">tekrar zamanı</span>' : "";
+        return `<button class="topic${dk ? " durak" : ""}" data-id="${esc(k.id)}" ${k.hazir ? "" : "disabled"} aria-current="${S.konu === k.id}">
+        <span class="num">${dk ? ICON.durak : no}</span><span>${esc(k.baslik)}</span>${ek}</button>`; }).join("")
+        : `<div class="empty-unit">Bu ünitenin konuları sırası gelince eklenecek.</div>`
+    };
+  }
+  function setupSerit() {
+    const el = document.createElement("div"); el.className = "serit"; el.setAttribute("aria-hidden", "true");
+    el.innerHTML = `<div class="wrap serit-ic"><button class="serit-konular" aria-expanded="false">☰ Konular</button><span class="serit-ad"></span><div class="serit-tabs" role="tablist"></div></div>
+      <div class="serit-liste" hidden><div class="wrap"><div class="unit-row"></div><div class="topics"></div></div></div>`;
+    document.body.appendChild(el); S.serit = el;
+    const liste = $(".serit-liste", el), kb = $(".serit-konular", el);
+    const listeCiz = () => { const h = navHTML(S.serUnit ?? S.unit); $(".unit-row", liste).innerHTML = h.units; $(".topics", liste).innerHTML = h.topics; };
+    const listeKapat = () => { liste.hidden = true; kb.setAttribute("aria-expanded", "false"); };
+    S.seritListe = () => { if (!liste.hidden) listeCiz(); };
+    kb.onclick = () => { const ac = liste.hidden; if (ac) { S.serUnit = S.unit; listeCiz(); } liste.hidden = !ac; kb.setAttribute("aria-expanded", ac); };
+    liste.onclick = e => {
+      const u = e.target.closest(".unit-btn"); if (u) { S.serUnit = +u.dataset.u; listeCiz(); return; }
+      const t = e.target.closest(".topic"); if (t && !t.disabled) { listeKapat(); S.donus = null; openKonu(t.dataset.id, true); }
+    };
+    document.addEventListener("click", e => { if (!liste.hidden && !el.contains(e.target)) listeKapat(); });
+    $(".serit-tabs", el).onclick = e => { const b = e.target.closest("[data-st]"); if (b) gitSekme(b.dataset.st); };
+    let bekle = false;
+    const kontrol = () => {
+      bekle = false;
+      const h = $("#content .konu-head"), t = h && ($(".tabs", h) || h), goster = !!t && t.getBoundingClientRect().bottom < 0;
+      el.classList.toggle("acik", goster); el.setAttribute("aria-hidden", String(!goster)); if (!goster) listeKapat();
+    };
+    addEventListener("scroll", () => { if (!bekle) { bekle = true; requestAnimationFrame(kontrol); } }, { passive: true });
+    S.seritGuncelle = () => {
+      const h = $("#content .konu-head"), no = h && $$(".meta .pill", h).map(x => x.textContent).find(x => /^Konu \d/.test(x));
+      $(".serit-ad", el).textContent = h && $("h2", h) ? `${no ? no.replace("Konu ", "") + ". " : ""}${$("h2", h).textContent}` : "";
+      $(".serit-tabs", el).innerHTML = h ? $$(".tabs .tab", h).map(b => `<button class="serit-tab" role="tab" data-st="${esc(b.dataset.tab)}" aria-selected="${b.getAttribute("aria-selected") === "true"}">${b.innerHTML}</button>`).join("") : "";
+      kontrol();
+    };
+  }
+
   function renderNav() {
-    $("#units").innerHTML = S.ders.uniteler.map((u, i) => `<button class="unit-btn" data-u="${i}" aria-pressed="${i === S.unit}">${esc(u.ad)}</button>`).join("");
-    const u = S.ders.uniteler[S.unit];
-    let no = 0;
-    $("#topics").innerHTML = u.konular.length ? u.konular.map(k => { const dk = isDurak(k); if (!dk) no++;
-      const ek = !k.hazir ? '<span class="soon">yakında</span>' : dk && durakKayit.zaman(k.id) ? '<span class="due">tekrar zamanı</span>' : "";
-      return `<button class="topic${dk ? " durak" : ""}" data-id="${esc(k.id)}" ${k.hazir ? "" : "disabled"} aria-current="${S.konu === k.id}">
-      <span class="num">${dk ? ICON.durak : no}</span><span>${esc(k.baslik)}</span>${ek}</button>`; }).join("")
-      : `<div class="empty-unit">Bu ünitenin konuları sırası gelince eklenecek.</div>`;
+    const h = navHTML(S.unit);
+    $("#units").innerHTML = h.units; $("#topics").innerHTML = h.topics;
+    S.seritListe && S.seritListe();
     const cur = $(".topic[aria-current='true']"); if (cur) cur.scrollIntoView({ block: "nearest", inline: "nearest" });
   }
 
@@ -2250,6 +2309,7 @@
     $$(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === t));
     const p = $("#panel");
     ({ ogren: renderOgren, bak: renderBak, tekrar: renderTekrar, test: renderTest, okuma: renderOkuma, hatirla: renderHatirla, tarama: renderTarama, oyunlar: renderTekrar })[t](p);
+    S.seritGuncelle && S.seritGuncelle();
   }
 
   function renderKonu(no) {
@@ -2304,6 +2364,7 @@
       <h2>Bu ünite yakında geliyor</h2></section>
       <div class="notice"><p>Bu ünitenin konuları hazırlanıyor. Hazır olan konular, konu listesinden açılabilir hâle gelecek.</p>
       ${liste ? `<p>Bu ünitede öğreneceklerimiz:</p>${liste}` : ""}</div>`;
+    S.seritGuncelle && S.seritGuncelle();
   }
 
   // Başlık bandı deseni: varsayılan yıldızlar; ders.json "tema.desen" ile değişir (ör. "harita").
@@ -2462,7 +2523,7 @@
     const ready = allTopics().filter(k => k.hazir);
     const want = [location.hash.slice(1), store.get(key("son"))].find(id => ready.some(k => k.id === id));
     const first = want || (ready.length ? ready[ready.length - 1].id : null);
-    renderNav(); setupBot();
+    renderNav(); setupBot(); setupSerit();
     const ozel = location.hash.slice(1);
     KDB.temizle();
     if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye")) yol(ozel);

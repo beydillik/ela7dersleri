@@ -63,7 +63,7 @@ a { color: inherit; }
 .head-btn[aria-pressed="true"] { background: var(--gold); color: #1b2340; border-color: var(--gold); }
 
 /* Konu menüsü */
-.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+.nav { position: relative; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }   /* sabit değil: kaydırınca yerini kompakt şerit alır */
 .nav .wrap { padding-block: 10px; display: grid; gap: 8px; }
 .unit-row { display: flex; gap: 8px; flex-wrap: wrap; }
 .unit-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 18px; font-size: 16px; font-weight: 800; color: var(--muted); }
@@ -937,3 +937,38 @@ a.head-btn[aria-pressed="true"] { background: var(--gold); color: #1b2340; borde
 .rp-secim input { width: 18px; height: 18px; accent-color: var(--accent); }
 .rp-indir select, section select#rpDonem { font: inherit; font-weight: 700; padding: 8px 10px; border-radius: 12px; border: 2px solid var(--line); background: var(--surface); color: var(--ink); }
 .rp-olay.tek li { grid-template-columns: 46px 1fr; }
+
+/* ---------- Kompakt şerit (kaydırınca üstte: ☰ Konular · konu adı · sekmeler) ---------- */
+html { scroll-padding-top: 72px; }
+.serit { position: fixed; top: 0; left: 0; right: 0; z-index: 35; background: var(--surface); border-bottom: 2px solid var(--line);
+  box-shadow: 0 4px 16px rgba(0,0,0,.12); padding-top: env(safe-area-inset-top, 0px); transform: translateY(-110%); transition: transform .2s ease; }
+.serit.acik { transform: none; }
+.serit-ic { display: flex; align-items: center; gap: 10px; padding-block: 6px; min-height: 54px; }
+.serit-konular { flex: none; border: 2px solid var(--line); background: var(--surface-2); color: var(--ink); border-radius: 12px; padding: 6px 12px; font-weight: 800; font-size: 15px; cursor: pointer; }
+.serit-konular[aria-expanded="true"] { border-color: var(--accent); }
+.serit-ad { flex: 1 1 auto; min-width: 0; font-family: var(--display); font-weight: 800; font-size: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.serit-tabs { flex: none; display: flex; gap: 2px; }
+.serit-tab { border: 0; background: none; padding: 6px 10px 7px; font-weight: 800; font-size: 15px; color: var(--muted); border-bottom: 3px solid transparent; display: flex; gap: 6px; align-items: center; cursor: pointer; white-space: nowrap; }
+.serit-tab svg { width: 18px; height: 18px; }
+.serit-tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.serit-liste { border-top: 1px solid var(--line); background: var(--bg); max-height: calc(100vh - 80px); overflow-y: auto; }
+.serit-liste .wrap { padding-block: 10px 14px; display: grid; gap: 8px; }
+@media (max-width: 820px) {
+  html { scroll-padding-top: 104px; }
+  .serit-ic { flex-wrap: wrap; row-gap: 2px; }
+  .serit-ad { flex: 1 1 0; font-size: 16px; }
+  .serit-liste .topics { flex-wrap: wrap; overflow: visible; }   /* açılır listede konular alt alta, yana kaydırma yok */
+  .serit-liste .topic { flex: 1 1 100%; }
+  .serit-tabs { flex-basis: 100%; overflow-x: auto; }
+  .serit-tab svg { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .serit { transition: none; } }
+
+/* Ders sayfalarında başlık bandı biraz daha ince */
+body:not([data-sayfa]) .masthead .wrap { padding-block: 14px 12px; }
+body:not([data-sayfa]) .masthead h1 { font-size: clamp(26px, 3.8vw, 36px); }
+
+/* "Sıradaki" düğmesi */
+.siradaki { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; justify-content: flex-end; border-top: 2px dashed var(--line); padding-top: 14px; margin-top: 4px; }
+.siradaki > span { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; font-weight: 800; color: var(--muted); }
+.siradaki .btn { font-size: 18px; padding: 10px 20px; }
