@@ -138,6 +138,208 @@
     isWeak(ad) { const r = results.all(); return ad in r && r[ad] !== 1; }
   };
 
+  // =================================================================
+  // ---------- Etkinlik kaydı (v1) ----------
+  // Her olay bir satır olarak tarayıcının IndexedDB'sine ("ela7kayit" → "olaylar") yazılır; son 90 gün tutulur.
+  // Bütün dersler aynı kaydı paylaşır (aynı site). Alanların anlamı KAYIT_SOZLUK'te; yedek dosyasına da yazılır.
+  // Oturum: 30 dakikadan uzun ara verilince yeni oturum başlar. Aktif süre olaylar arası boşluklardan (en çok 3 dk) hesaplanır.
+  // =================================================================
+  const KAYIT_V = 1, OTURUM_ARA = 30 * 60e3, KAYIT_GUN = 90, BOSLUK_TAVAN = 3 * 60e3;
+  const simdi = () => Date.now();
+  const p2 = n => String(n).padStart(2, "0");
+  const yerelZaman = ts => { const d = new Date(ts); return `${d.getFullYear()}-${p2(d.getMonth() + 1)}-${p2(d.getDate())}T${p2(d.getHours())}:${p2(d.getMinutes())}:${p2(d.getSeconds())}`; };
+  const kisa = (s, n = 60) => { const t = plain(String(s ?? "")).replace(/\s+/g, " ").trim(); return t.length > n ? t.slice(0, n - 1) + "…" : t; };
+  const kelimeSay = x => typeof x === "string" ? (plain(x).match(/[\p{L}\p{N}]+/gu) || []).length
+    : Array.isArray(x) ? x.reduce((a, y) => a + kelimeSay(y), 0) : x && typeof x === "object" ? kelimeSay(Object.values(x)) : 0;
+  const soruKelime = o => kelimeSay([o.soru, o.secenekler || [], o.metin || [], o.tablo ? [o.tablo.basliklar, o.tablo.satirlar] : []]);
+  // Hızlı cevap eşiği: saniyede 4,5 kelimeden hızlı okunamaz (7. sınıf için cömert bir sınır), en az 2 sn.
+  const okumaEsik = kelime => Math.max(2, kelime / 4.5);
+  const cihazId = (() => { let c = store.get("ela7:cihaz"); if (!c) { c = Math.random().toString(36).slice(2, 10); store.set("ela7:cihaz", c); } return c; })();
+
+  const KAYIT_SOZLUK = {
+    _aciklama: "Ela'nın Defteri etkinlik kaydı. Her satır bir olay. Zamanlar cihazın yerel saatiyle (Türkiye).",
+    alanlar: {
+      v: "Kayıt biçimi sürümü (1)", k: "Olayın benzersiz kimliği", ts: "Zaman damgası (ms)", t: "Yerel tarih-saat (YYYY-AA-GGTss:dd:ss)",
+      cihaz: "Cihaz kimliği (tarayıcıya özgü rastgele)", oturum: "Oturum kimliği (30 dk ara → yeni oturum)",
+      ders: "Ders kodu (tr1 Türkçe, mat1 Matematik, fen1 Fen, ing1 İngilizce MEB, own1 İngilizce Own It, sos1 Sosyal)",
+      konu: "Konu kimliği (u1k2 = 1. ünite 2. konu; u1t1 = 1. ünite Ara Durak 1; atolye:<metin> = Okuma Atölyesi)", konuBaslik: "Konunun adı",
+      bolum: "Ekran: ogren (Öğren), bak (Konuya Bak), tekrar (Tekrar oyunları), test (Test), okuma (Oku ve Dinle), hatirla / tarama / oyunlar (Ara Durak), atolye, rapor",
+      olay: "Olay türü (aşağıdaki 'olaylar' listesi)",
+      soru: "Soru metninin başı (en çok 60 harf)", tur: "Soru türü: secim (şıklı), nokta (sayı doğrusunda seçme), girdi (sayı yazma); test olaylarında test / tarama",
+      sonuc: "1 = ilk denemede doğru, 2 = ipucuyla ya da ikinci denemede doğru, 0 = iki yanlıştan sonra cevap gösterildi",
+      sureSn: "Soruda ya da adımda geçen toplam süre (sn)", ilkSn: "Soru açıldıktan sonra ilk cevaba kadar geçen süre (sn)",
+      esikSn: "Bu sorunun okunması için gereken en kısa süre tahmini (kelime / 4,5, en az 2 sn). ilkSn bundan küçükse 'hizli' bayrağı",
+      ipucu: "Açılan ipucu adımı sayısı", yanlis: "Seçilen yanlış şıklar (sırayla)", kanit: "Kanıtı bul: 1 ilk dokunuşta, 2 ikinci dokunuşta, 0 gösterildi",
+      tekrar: "true: yanlıştan sonra testin sonuna doğru yeniden gelen soru", kavram: "Sorunun bağlı olduğu kavram",
+      bayrak: "Uyarı işaretleri: hizli (okumadan cevap), hizli-gecis (Öğren kartını okumadan geçti)",
+      adim: "Öğren adım no", toplam: "Toplam adım / soru sayısı", adimTur: "Öğren adımının türü: giris, hazir, bilgi, cozum, soru, hatirla, ozet, yaz, bitis",
+      oyun: "Oyun adı (kart, eslestir, grupla, dinle, kur, cumle, resim, hata, gunluk)", oge: "Oyundaki öğe sayısı",
+      mesaj: "Robotun gösterdiği mesajın türü", metin: "Mesaj ya da robota sorulan sorunun başı", secim: "Robot mesajında Ela'nın dokunduğu düğme",
+      ilk1: "Testte ilk denemede doğru sayısı", ilk2: "Testte ipucuyla/ikinci denemede doğru sayısı", ilk0: "Testte cevabı gösterilen (sonra tekrar gelen) soru sayısı",
+      tekrarSoru: "Testte yeniden gelen soru sayısı", sureDk: "Test süresi (dk)", seviye: "Okuma Atölyesi seviyesi", dogru: "Doğru sayısı"
+    },
+    olaylar: {
+      "konu-ac": "Konu ya da Ara Durak açıldı", sekme: "Ekran (sekme) değişti", adim: "Öğren'de bir adımdan çıkıldı (sureSn o adımda geçen süre)",
+      "ogren-bitti": "Öğren'in son adımına gelindi", atlama: "Öğren bitmeden Test'e geçildi", soru: "Bir soru cevaplandı (her soru türü, her ekran)",
+      "test-basla": "Test ya da Ara Durak taraması başladı", "test-bitti": "Test ya da tarama bitti (ilk1/ilk2/ilk0 ilk deneme sonuçları)",
+      "oyun-ac": "Tekrar oyunu açıldı", oyun: "Oyun turu bitti (yanlis = yanlış dokunuş sayısı)", "oyun-rastgele": "Oyunda 1,5 sn'den kısa arayla art arda yanlış dokunuş",
+      robot: "Robot (Hece, Kuark…) bir uyarı ya da yönlendirme gösterdi", "robot-cevap": "Ela robot mesajındaki bir düğmeye dokundu",
+      "robot-soru": "Ela robota (yapay zekâ) bir soru yazdı", "atolye-tur": "Okuma Atölyesi turu bitti", "rapor-ac": "Veli raporu açıldı"
+    }
+  };
+
+  // IndexedDB sarmalayıcı (açılamazsa kayıt sessizce atlanır; site çalışmaya devam eder)
+  const KDB = {
+    hazir: null,
+    ac() {
+      if (this.hazir) return this.hazir;
+      this.hazir = new Promise(res => {
+        try {
+          const r = indexedDB.open("ela7kayit", 1);
+          r.onupgradeneeded = () => { const db = r.result; if (!db.objectStoreNames.contains("olaylar")) db.createObjectStore("olaylar", { keyPath: "k" }).createIndex("ts", "ts"); };
+          r.onsuccess = () => res(r.result);
+          r.onerror = r.onblocked = () => res(null);
+        } catch (e) { res(null); }
+      });
+      return this.hazir;
+    },
+    async yaz(liste) {
+      const db = await this.ac(); if (!db || !liste.length) return;
+      try { const tx = db.transaction("olaylar", "readwrite"), os = tx.objectStore("olaylar"); liste.forEach(o => os.put(o)); } catch (e) {}
+    },
+    async hepsi() {
+      const db = await this.ac(); if (!db) return [];
+      return new Promise(res => { try { const q = db.transaction("olaylar").objectStore("olaylar").getAll(); q.onsuccess = () => res((q.result || []).sort((a, b) => a.ts - b.ts)); q.onerror = () => res([]); } catch (e) { res([]); } });
+    },
+    async temizle() {     // 90 günden eski olayları sil (günde bir kez)
+      if (store.get("ela7:temizlik") === gun()) return; store.set("ela7:temizlik", gun());
+      const db = await this.ac(); if (!db) return;
+      try { const tx = db.transaction("olaylar", "readwrite"); tx.objectStore("olaylar").index("ts").openCursor(IDBKeyRange.upperBound(simdi() - KAYIT_GUN * 864e5)).onsuccess = e => { const c = e.target.result; if (c) { c.delete(); c.continue(); } }; } catch (e) {}
+    }
+  };
+
+  // Oturum bilgisi ve sayaçlar localStorage'da ("ela7:oturum"): sayfalar (dersler) arasında aynı oturum sürer.
+  const OT = { kuyruk: [], zam: null, seq: 0 };
+  const KAYIT = {
+    oturum(ts) {
+      const o = store.get("ela7:oturum", null);
+      const yeni = !o || ts - o.son >= OTURUM_ARA;
+      const v = yeni ? { id: `${yerelZaman(ts).replace(/[-:]/g, "").replace("T", "-").slice(0, 13)}-${cihazId.slice(0, 4)}`, bas: ts, son: ts, sayac: { soru: 0, ilk: 0, ipucu: 0 }, plan: [] } : { ...o, son: ts };
+      store.set("ela7:oturum", v); return v;
+    },
+    olay(olay, ek = {}) {
+      const ts = simdi(), o = this.oturum(ts);
+      const ev = { v: KAYIT_V, k: `${cihazId}-${ts}-${++OT.seq}`, ts, t: yerelZaman(ts), cihaz: cihazId, oturum: o.id,
+        ders: S.ders ? S.ders.kod : "", konu: S.konu || "", konuBaslik: S.data ? S.data.baslik || "" : S.botBaslik || "",
+        bolum: S.konu && String(S.konu).startsWith("atolye") ? "atolye" : S.tab || "", olay, ...ek };
+      OT.kuyruk.push(ev); clearTimeout(OT.zam); OT.zam = setTimeout(() => this.bosalt(), 700);
+      return ev;
+    },
+    sayac(f) { const o = store.get("ela7:oturum", null); if (!o) return {}; f(o.sayac = o.sayac || {}); store.set("ela7:oturum", o); return o.sayac; },
+    bosalt() { const q = OT.kuyruk.splice(0); if (q.length) KDB.yaz(q); }
+  };
+  addEventListener("pagehide", () => KAYIT.bosalt());
+  document.addEventListener("visibilitychange", () => { if (document.hidden) KAYIT.bosalt(); });
+
+  // Veli ayarları (PIN'li rapor ekranından değiştirilir). Varsayılan: robot uyarıları açık, kilitler kapalı.
+  const AYAR_VARSAYILAN = { robotUyari: true, sikBekle: false, oyunKilit: false, ogrenKilit: false };
+  const ayar = () => ({ ...AYAR_VARSAYILAN, ...(store.get("ela7:ayar", {}) || {}) });
+
+  // =================================================================
+  // ---------- Robot koç: dersin robotu (Hece, Kuark, Pisi…) kısa uyarı ve yönlendirme baloncukları gösterir ----------
+  // Mesajlar hazır cümlelerdir (yapay zekâ kullanılmaz, kota harcamaz). Aynı tür mesaj 3 dakikada bir kereden fazla çıkmaz.
+  // =================================================================
+  const KOC_ARA = 3 * 60e3;
+  const KOC = {
+    son: {}, hizliDogru: 0,
+    goster(tur, metin, dugmeler = [], sure = 10000) {
+      if (!ayar().robotUyari) return null;
+      const t = simdi(); if (this.son[tur] && t - this.son[tur] < KOC_ARA) return null; this.son[tur] = t;
+      this.kapat();
+      const b = (S.ders && S.ders.bot) || {}, el = document.createElement("div");
+      el.className = "koc"; el.setAttribute("role", "status"); el.setAttribute("aria-live", "polite");
+      el.innerHTML = `<div class="koc-mask">${b.svg || ""}</div><div class="koc-ic"><b>${esc(b.ad || "Robot")}</b><p>${metin}</p>
+        ${dugmeler.length ? `<div class="koc-dug">${dugmeler.map((d, i) => `<button class="btn${d.birincil ? " primary" : " ghost"}" data-kd="${i}">${esc(d.etiket)}</button>`).join("")}</div>` : ""}</div>
+        <button class="koc-x" aria-label="Kapat">×</button>`;
+      document.body.appendChild(el);
+      requestAnimationFrame(() => el.classList.add("acik"));
+      $(".koc-x", el).onclick = () => this.kapat();
+      $$("[data-kd]", el).forEach(x => x.onclick = () => { const d = dugmeler[+x.dataset.kd]; KAYIT.olay("robot-cevap", { mesaj: tur, secim: d.etiket }); this.kapat(); d.fn && d.fn(); });
+      if (!dugmeler.length) this.zam = setTimeout(() => this.kapat(), sure);
+      KAYIT.olay("robot", { mesaj: tur, metin: kisa(metin.replace(/<[^>]+>/g, ""), 80) });
+      return el;
+    },
+    kapat() { clearTimeout(this.zam); $$(".koc").forEach(x => x.remove()); },
+    // Her soru bittiğinde çağrılır (izle → onDone)
+    soruSonrasi(o, r, bayrak, opts) {
+      if (bayrak.includes("hizli") && r !== 1) return this.goster("hizli", "Biraz hızlı gittin. Bir sonraki soruda önce soruyu sonuna kadar oku, sonra şıklara bak. Acele yok!");
+      if (r === 0 && opts.davet) return this.goster("davet", "Bu soru zor geldi. İstersen birlikte bakalım; neden bu cevap olduğunu adım adım anlatırım.",
+        [{ etiket: "Birlikte bakalım", birincil: true, fn: () => S.botSor && S.botSor(davetMetni(o)) }, { etiket: "Şimdilik geç" }]);
+      if (r === 1 && bayrak.includes("hizli") && ++this.hizliDogru % 3 === 0) return this.goster("nasil", "Çok çabuk buldun! Bu cevabı nasıl buldun?", [
+        { etiket: "Kartta / metinde gördüm" }, { etiket: "Hatırladım" },
+        { etiket: "Tahmin ettim", fn: () => setTimeout(() => this.goster("tahmin", "Dürüst cevabın için teşekkürler! Açıklamayı bir kez oku; bir dahakine bilerek bulursun."), 300) }]);
+    },
+    // Oturumdaki çalışmanın kısa özeti (çabaya övgü)
+    ozet() {
+      const s = (store.get("ela7:oturum", null) || {}).sayac || {};
+      if (!s.soru) return;
+      const ip = s.ipucu ? `, ${s.ipucu} kez ipucunu iyi kullandın` : "";
+      setTimeout(() => this.goster("ozet", `Bugün ${s.soru} soru çözdün: ${s.ilk} tanesini ilk denemede buldun${ip}. Emeğine sağlık!`), 600);
+    },
+    // Oturum başı planı: bu derste ilk açılışta, tekrar zamanı gelen durak ya da son konuda zorlanılan kavramlar
+    plan() {
+      const o = store.get("ela7:oturum", null); if (!o || (o.plan || []).includes(S.ders.kod)) return;
+      o.plan = [...(o.plan || []), S.ders.kod]; store.set("ela7:oturum", o);
+      const vade = allTopics().filter(k => isDurak(k) && k.hazir && durakKayit.zaman(k.id));
+      const son = store.get(key("son")), r = son ? sonucOf(son) : {}, zor = Object.keys(r).filter(a => r[a] !== 1).slice(0, 2);
+      setTimeout(() => {
+        if (vade.length) this.goster("plan", `Hoş geldin! Bugün için önerim: <b>${esc(vade[0].baslik)}</b> için tekrar zamanı geldi. Kısa bir tarama yapalım mı?`,
+          [{ etiket: "Açalım", birincil: true, fn: () => openKonu(vade[0].id, true) }, { etiket: "Sonra" }]);
+        else if (zor.length && son && son !== S.konu) this.goster("plan", `Hoş geldin! Geçen sefer <b>${zor.map(esc).join("</b> ve <b>")}</b> kavramında zorlanmıştın. Önce bir göz atalım mı?`,
+          [{ etiket: "Bakalım", birincil: true, fn: () => { store.set(key("sekme:" + son), "bak"); openKonu(son, true); } }, { etiket: "Sonra" }]);
+        else if (zor.length) this.goster("plan", `Hoş geldin! Geçen sefer <b>${zor.map(esc).join("</b> ve <b>")}</b> kavramında zorlanmıştın. Konuya Bak'ta bir göz atabilirsin.`,
+          [{ etiket: "Bakalım", birincil: true, fn: () => setTab("bak") }, { etiket: "Sonra" }]);
+      }, 1200);
+    }
+  };
+  const davetMetni = o => {
+    const dogru = qKind(o) === "secim" ? (o.secenekler || [])[o.dogru] : qKind(o) === "nokta" ? o.nokta : o.cevap;
+    return `Bu soruyu anlamadım: "${kisa(o.soru, 200)}" Doğru cevap: "${kisa(dogru, 120)}". Bu cevap neden doğru, kısaca ve adım adım açıklar mısın?`;
+  };
+
+  // Her soruyu izler: süre, ilk cevap, ipucu, yanlış şıklar; sonucu kaydeder ve robot koça haber verir.
+  function izle(el, o, opts) {
+    const st = opts.state = opts.state || { wrong: [], result: undefined };
+    if (opts.izlendi || st.result !== undefined) return;          // geri yüklenen (zaten kaydedilmiş) soru
+    opts.izlendi = true;
+    const t0 = simdi(); let ilk = null;
+    el.addEventListener("click", e => {
+      if (ilk === null && e.target.closest(".opt, .cumle, .kp-k, .kp-ok, .sd-hit")) ilk = simdi();
+    }, true);
+    const asil = opts.onDone;
+    opts.onDone = r => {
+      const sn = (simdi() - t0) / 1000, ilkSn = ilk ? (ilk - t0) / 1000 : sn, esik = okumaEsik(soruKelime(o));
+      const bayrak = ilkSn < esik ? ["hizli"] : [];
+      KAYIT.olay("soru", { soru: kisa(o.soru), tur: qKind(o), sonuc: r, sureSn: +sn.toFixed(1), ilkSn: +ilkSn.toFixed(1), esikSn: +esik.toFixed(1),
+        ipucu: st.yardim || 0, yanlis: (st.wrong || []).map(j => kisa((o.secenekler || [])[j], 40)), kanit: st.kanit,
+        tekrar: !!opts.tekrar, kavram: (opts.kavram && opts.kavram.ad) || o.kavram || "", bayrak });
+      KAYIT.sayac(s => { s.soru = (s.soru || 0) + 1; if (r === 1) s.ilk = (s.ilk || 0) + 1; if (r === 2 && st.yardim) s.ipucu = (s.ipucu || 0) + 1; });
+      asil && asil(r);
+      KOC.soruSonrasi(o, r, bayrak, opts);
+    };
+  }
+
+  // Oyunlarda art arda hızlı yanlış dokunuş → "Dur, düşün" (+ veli ayarıyla 3 sn düşünme molası)
+  const OYUN = { son: 0, art: 0 };
+  function oyunHata(box, oyun) {
+    const t = simdi(), hizli = t - OYUN.son < 1500; OYUN.son = t;
+    OYUN.art = hizli ? OYUN.art + 1 : 0;
+    if (OYUN.art < 1) return;
+    OYUN.art = 0; KAYIT.olay("oyun-rastgele", { oyun });
+    KOC.goster("rastgele", "Dur, önce düşün. Kartı oku, eşini zihninde bul, sonra dokun. Rastgele dokunmak yıldız kazandırmaz.");
+    if (ayar().oyunKilit && box) { box.classList.add("dusun-mola"); setTimeout(() => box.classList.remove("dusun-mola"), 3000); }
+  }
+
   // ---------- Çoklu deneme soru bileşeni ----------
   // o: {soru, secenekler, dogru, ipucu, aciklama}; opts: {onDone(result), backToInfo, classMode}
   // Soru türleri: seçenekli (secenekler + dogru), sayı doğrusunda nokta seçme (nokta + sayiDogrusu),
@@ -218,9 +420,16 @@
 
   function wireQuestion(el, o, opts = {}) {
     const kind = qKind(o);
+    izle(el, o, opts);
     if (kind !== "secim") return wireMathQuestion(el, o, opts, kind);
     let tries = 0, finished = false, picked = null;
     const state = opts.state || { wrong: [], result: undefined };
+    // Veli ayarı "sikBekle": şıklar, soru okunacak kadar (en çok 5 sn) bekledikten sonra açılır (Kanıtı bul sorularında gerekmez).
+    if (ayar().sikBekle && !kanitli(o) && state.result === undefined && !state.wrong.length && !opts.classMode) {
+      const ob = $(".opts", el), ms = Math.min(5000, Math.max(1200, okumaEsik(kelimeSay(o.soru)) * 1000));
+      ob.classList.add("bekle"); $$(".opt", ob).forEach(b => b.disabled = true);
+      setTimeout(() => { ob.classList.remove("bekle"); $$(".opt", ob).forEach(b => { if (!b.classList.contains("wrong") && !finished) b.disabled = false; }); }, ms);
+    }
     const fb = $(".fb", el), yr = wireYardim(el, o, opts, state);
     // Kanıt adımı: önce kanıt cümlesi, sonra şıklar. state.kanit: 1 ilk denemede, 2 ikinci denemede, 0 gösterildi.
     const kl = kanitli(o) && $(".pasaj.kanitli", el), kb = $(".kanit-adim", el);
@@ -317,9 +526,20 @@
     const posKey = key("adim:" + S.konu);
     let pos = Math.min(store.get(posKey, 0), steps.length - 1);
     const qstate = {};
+    let adimT0 = simdi(), hizliGecis = 0;
+    // Adımdan çıkarken süreyi kaydet; bilgi kartı okunacak kadar açık kalmadan geçildiyse "hizli-gecis" bayrağı.
+    const adimBirak = yeni => {
+      const st = steps[pos], sn = (simdi() - adimT0) / 1000; adimT0 = simdi();
+      if (yeni === pos || !st) return;
+      const k = st.k !== undefined ? d.kavramlar[st.k] : null, bayrak = [];
+      if (st.t === "bilgi" && yeni > pos && sn < Math.max(3, okumaEsik(kelimeSay([k.aciklama, k.ek || "", k.akilda])))) bayrak.push("hizli-gecis");
+      KAYIT.olay("adim", { adim: pos + 1, toplam: steps.length, adimTur: st.t, kavram: k ? k.ad : "", sureSn: +sn.toFixed(1), bayrak });
+      if (bayrak.length) { if (++hizliGecis >= 2) { hizliGecis = 0; KOC.goster("hizli-gecis", "Kartları çok hızlı geçiyorsun. Her kartta önce açıklamayı oku, sonra “Akılda kalsın” kısmını kendine sesli söyle."); } }
+      else if (st.t === "bilgi") hizliGecis = 0;
+    };
 
     root.innerHTML = `<div class="stepper"><div class="progress"><span id="pgTxt"></span><div class="bar"><i id="pgBar"></i></div></div><div id="stage"></div></div>`;
-    const go = p => { tts.stop(); pos = Math.max(0, Math.min(steps.length - 1, p)); store.set(posKey, pos); draw(); $("#stage").scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+    const go = p => { tts.stop(); p = Math.max(0, Math.min(steps.length - 1, p)); adimBirak(p); pos = p; store.set(posKey, pos); draw(); $("#stage").scrollIntoView({ block: "nearest", behavior: "smooth" }); };
 
     function nav(nextLabel, nextEnabled = true, extra = "") {
       return `<div class="stage-nav"><button class="btn ghost" data-prev ${pos === 0 ? "disabled" : ""}>Geri</button>${extra}
@@ -378,6 +598,7 @@
           <div class="row"><button class="btn" id="yazCheck">Örnek cevabı göster</button></div>
           <div id="yazOut" hidden></div>${nav("Devam", true)}</div>`;
       } else if (st.t === "bitis") {
+        if (!store.get(key("ogren-bitti:" + S.konu), false)) { store.set(key("ogren-bitti:" + S.konu), true); KAYIT.olay("ogren-bitti", { toplam: steps.length }); KOC.ozet(); }
         const r = results.all(), vals = d.kavramlar.filter(k => k.soru).map(k => r[k.ad]);
         const c1 = vals.filter(v => v === 1).length, c2 = vals.filter(v => v === 2).length, c0 = vals.filter(v => v === 0).length;
         const msg = c0 === 0 && c2 === 0 ? "Harika bir dikkatle çalıştın!" : c0 === 0 ? "İpuçlarını kullanarak hepsini buldun. Bu, iyi çalışmanın işareti." : "Her yanlış, yeni bir şey öğrenmek demek. Tekrar bölümünde bunlar öne çıkacak.";
@@ -466,7 +687,7 @@
     let g = store.get(key("oyun"), "kart"); if (!games.some(x => x[0] === g)) g = "kart";
     root.innerHTML = `<div class="subtabs">${games.map(([k, n]) => `<button class="subtab" data-g="${k}" aria-pressed="${k === g}">${n}</button>`).join("")}</div><div id="game"></div>`;
     $$(".subtab", root).forEach(b => b.onclick = () => { g = b.dataset.g; store.set(key("oyun"), g); $$(".subtab", root).forEach(x => x.setAttribute("aria-pressed", x === b)); run(); });
-    const run = () => { const box = $("#game", root); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup, dinle: gameListen, kur: gameSpell, cumle: gameSentence, resim: gamePicture, hata: gameErrors })[g](box); };
+    const run = () => { const box = $("#game", root); KAYIT.olay("oyun-ac", { oyun: g }); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup, dinle: gameListen, kur: gameSpell, cumle: gameSentence, resim: gamePicture, hata: gameErrors })[g](box); };
     run();
   }
 
@@ -493,7 +714,7 @@
   function gameMatch(box) {
     const d = S.data, ks = d.kavramlar;
     const left = shuffle(ks.map((k, i) => i)), right = shuffle(ks.map((k, i) => i));
-    let sel = null, done = 0;
+    let sel = null, done = 0, yanlis = 0; const t0 = simdi();
     box.innerHTML = `<p class="ek" style="margin:0 0 10px">Soldan bir kavram seç, sonra sağdan ona uyan "akılda kalsın" ifadesine dokun.</p>
       <div class="match"><div class="col">${left.map(i => `<button class="mitem" data-l="${i}">${ks[i].svg}${esc(ks[i].ad)}</button>`).join("")}</div>
       <div class="col">${right.map(i => `<button class="mitem" data-r="${i}">${esc(plain(ks[i].akilda))}</button>`).join("")}</div></div>
@@ -506,8 +727,8 @@
         if (+r.dataset.r === sel) {
           r.classList.add("done"); const lb = $(`[data-l="${sel}"]`, box); lb.classList.remove("sel"); lb.classList.add("done"); sel = null; done++;
           $("#mmsg", box).textContent = done === ks.length ? "Hepsini eşleştirdin! Harika dikkat." : "Doğru eşleşme!";
-          if (done === ks.length) { const b = document.createElement("button"); b.className = "btn"; b.textContent = "Yeniden oyna"; b.onclick = () => gameMatch(box); box.appendChild(b); }
-        } else { r.classList.add("shake"); setTimeout(() => r.classList.remove("shake"), 400); $("#mmsg", box).textContent = "Bu ikisi eşleşmiyor. Bilgiyi hatırla ve tekrar dene."; }
+          if (done === ks.length) { KAYIT.olay("oyun", { oyun: "eslestir", oge: ks.length, yanlis, sureSn: Math.round((simdi() - t0) / 1000) }); const b = document.createElement("button"); b.className = "btn"; b.textContent = "Yeniden oyna"; b.onclick = () => gameMatch(box); box.appendChild(b); }
+        } else { yanlis++; oyunHata(box, "eslestir"); r.classList.add("shake"); setTimeout(() => r.classList.remove("shake"), 400); $("#mmsg", box).textContent = "Bu ikisi eşleşmiyor. Bilgiyi hatırla ve tekrar dene."; }
       }
     };
   }
@@ -517,7 +738,7 @@
     let gi = 0;
     const play = () => {
       const g = d.gruplar[gi], items = shuffle(g.kutular.flatMap((b, bi) => b.uyeler.map(m => ({ m, bi }))));
-      let sel = null, placed = 0;
+      let sel = null, placed = 0, yanlis = 0; const t0 = simdi();
       box.innerHTML = `<p class="ek" style="margin:0 0 10px">Soru ${gi + 1} / ${d.gruplar.length}. Bir karta dokun, sonra doğru kutuya dokun.</p>
         <div class="group"><h4>${esc(g.soru)}</h4><div class="pool chips" id="pool">${items.map((it, i) => `<span class="chip pick" role="button" tabindex="0" data-i="${i}">${icon[it.m] || ""}${esc(it.m)}</span>`).join("")}</div>
         <div class="boxes" style="margin-top:12px">${g.kutular.map((b, bi) => `<div class="box" data-b="${bi}" role="button" tabindex="0"><div class="lbl">${esc(b.etiket)}</div><div class="chips"></div></div>`).join("")}</div></div>
@@ -532,10 +753,11 @@
             chip.classList.remove("sel", "pick"); chip.classList.add("okc"); $(".chips", b).appendChild(chip); placed++;
             $("#gmsg", box).textContent = placed === items.length ? "Hepsi doğru kutuda!" : "Doğru!";
             if (placed === items.length) {
+              KAYIT.olay("oyun", { oyun: "grupla", oge: items.length, yanlis, sureSn: Math.round((simdi() - t0) / 1000) });
               $("#gnext", box).innerHTML = gi < d.gruplar.length - 1 ? `<button class="btn primary">Sonraki gruplama</button>` : `<button class="btn">Baştan oyna</button>`;
               $("#gnext button", box).onclick = () => { gi = gi < d.gruplar.length - 1 ? gi + 1 : 0; play(); };
             }
-          } else { chip.classList.add("shake"); setTimeout(() => chip.classList.remove("shake"), 400); $("#gmsg", box).textContent = "Bu kutu değil. Kavramın özelliğini hatırla."; }
+          } else { yanlis++; oyunHata(box, "grupla"); chip.classList.add("shake"); setTimeout(() => chip.classList.remove("shake"), 400); $("#gmsg", box).textContent = "Bu kutu değil. Kavramın özelliğini hatırla."; }
           sel = null; selChip(null); $$(".box", box).forEach(x => x.classList.remove("target"));
         }
       };
@@ -552,7 +774,7 @@
     const draw = () => {
       if (i >= tur.length) {
         box.innerHTML = `<div class="game-end"><div class="stars">${"★".repeat(ilk)}${"☆".repeat(tur.length - ilk)}</div>
-          <p class="game-msg">${tur.length} kelimenin ${ilk} tanesini ilk dinleyişte buldun. Kulağın alışıyor!</p>
+          <p class="game-msg">${KAYIT.olay("oyun", { oyun: "dinle", oge: tur.length, dogru: ilk }) && ""}${tur.length} kelimenin ${ilk} tanesini ilk dinleyişte buldun. Kulağın alışıyor!</p>
           <button class="btn primary" id="lagain">Yeni tur</button></div>`;
         $("#lagain", box).onclick = () => gameListen(box); return;
       }
@@ -570,7 +792,7 @@
           $("#lmsg", box).innerHTML = `${tries === 0 ? "Doğru! Dikkatle dinledin." : "Doğru! Tekrar dinlemen işe yaradı."} <b lang="en">${esc(k.ad)}</b> = ${esc(plain(k.akilda))}`;
           $$(".lopt", box).forEach(x => x.disabled = true); setTimeout(() => { i++; draw(); }, 1400);
         } else {
-          tries++; b.classList.add("shake"); b.disabled = true; setTimeout(() => b.classList.remove("shake"), 400);
+          tries++; oyunHata(box, "dinle"); b.classList.add("shake"); b.disabled = true; setTimeout(() => b.classList.remove("shake"), 400);
           $("#lmsg", box).textContent = tries >= 2 ? "Doğru kelime yeşil oldu. Bir kez daha dinle." : "Bu değil. Bir kez daha dinle, istersen yavaş dinle.";
           if (tries >= 2) { const r = $(`.lopt[data-a="${CSS.escape(k.ad)}"]`, box); r.classList.add("done"); tts.sayEn(k.ad, true); $$(".lopt", box).forEach(x => x.disabled = true); setTimeout(() => { i++; draw(); }, 2200); }
           else tts.sayEn(k.ad);
@@ -814,7 +1036,7 @@
           $("#gmsg", c).innerHTML = `${deneme === 0 ? "Doğru! İyi hatırladın." : "Doğru! İkinci denemede buldun."} <b lang="en">${esc(w.en)}</b> = ${esc(w.tr)}`;
           tts.sayEn(w.en); setTimeout(() => { i++; draw(); }, 1500);
         } else {
-          deneme++; b.disabled = true; b.classList.add("shake"); setTimeout(() => b.classList.remove("shake"), 400);
+          deneme++; oyunHata(c, "gunluk"); b.disabled = true; b.classList.add("shake"); setTimeout(() => b.classList.remove("shake"), 400);
           if (deneme >= 2) {
             srs.grade(w.en, false); $$(".gopt", c).forEach(x => { x.disabled = true; if (x.dataset.a === w.en) x.classList.add("done"); });
             $("#gmsg", c).innerHTML = `Doğrusu: <b lang="en">${esc(w.en)}</b> = ${esc(w.tr)}. Bu kelime yarın yine gelecek.`;
@@ -908,7 +1130,7 @@
           if (!yanlis.has(sel)) ilk++; tts.sayEn(ks[sel].ad); sel = null; done++;
           $("#pmsg", box).textContent = done === ks.length ? `Hepsini eşleştirdin! ${ilk} tanesini ilk denemede buldun.` : "Doğru!";
           if (done === ks.length) { const b = document.createElement("button"); b.className = "btn"; b.textContent = "Yeniden oyna"; b.onclick = () => gamePicture(box); box.appendChild(b); }
-        } else { yanlis.add(sel); r.classList.add("shake"); setTimeout(() => r.classList.remove("shake"), 400); $("#pmsg", box).textContent = "Bu resim o kelime değil. Tekrar dene."; }
+        } else { yanlis.add(sel); oyunHata(box, "resim"); r.classList.add("shake"); setTimeout(() => r.classList.remove("shake"), 400); $("#pmsg", box).textContent = "Bu resim o kelime değil. Tekrar dene."; }
       }
     };
   }
@@ -1231,7 +1453,7 @@
         const t = e.target.closest(".htok"); if (!t || t.disabled || $("#hsec .opts", box)) return;
         const p = parca[+t.dataset.n];
         if (!p.hedef) {
-          bulDeneme++; t.classList.add("shake"); setTimeout(() => t.classList.remove("shake"), 400);
+          bulDeneme++; oyunHata(box, "hata"); t.classList.add("shake"); setTimeout(() => t.classList.remove("shake"), 400);
           if (bulDeneme >= 2) { const tr = $(".hata-tr", box); if (tr) tr.hidden = false; $(`.htok[data-n="${once.length}"]`, box).classList.add("ipucu"); msg("İpucu: Türkçesini oku. Hatalı kelime parlayan kutuda."); }
           else msg("Bu kelime doğru. Cümleyi bir daha oku, hangi kelime yanlış duruyor?");
           return;
@@ -1362,22 +1584,11 @@
   }
 
   function renderTarama(root) {
-    const d = S.data; S.durakOyun = S.durakOyun || {};
-    let st = S.durakOyun[S.konu];
+    const d = S.data;
     const toplam = (d.sorular || []).length + (d.eskiSoru ?? 4);
-    const basla = () => { st = S.durakOyun[S.konu] = { liste: durakSorulari(d), i: 0, sonuc: [], q: {} }; ciz(); };
-    const giris = () => {
-      const kayit = durakKayit.get(S.konu);
-      root.innerHTML = `<div class="stage"><div class="kicker">Tarama testi</div><h3>${kayit ? "Tekrar tarayalım" : "Neler aklında kalmış?"}</h3>
-        <p class="big">${toplam} soru var. Bazıları konulardaki sorulardan, bazıları konuları birleştiren yeni sorular. Her soruda 2 hakkın var. Not yok; sonunda hangi konuya tekrar bakman gerektiğini göstereceğim.</p>
-        ${kayit ? durakDurum(kayit) : ""}
-        <div class="row"><button class="btn primary" data-basla>Başla</button>${kayit ? `<button class="btn ghost" data-rapor>Son sonucu gör</button>` : ""}</div></div>`;
-      $("[data-basla]", root).onclick = basla;
-      const rb = $("[data-rapor]", root); if (rb) rb.onclick = () => rapor(kayit);
-    };
     // Yanlış ya da ipucuyla bulunan soruda: ilgili kavramın kısa hatırlatması ve konuya dönüş düğmesi
     const hatirlat = (box, it) => {
-      const parca = it.kaynak.slice(0, 2).map(x => {
+      const parca = (it.kaynak || []).slice(0, 2).map(x => {
         const k = S.cache[x.konu]; if (!k) return "";
         const kv = x.kavram && k.kavramlar.find(y => y.ad === x.kavram);
         return kv ? `<div class="dk-hat-ic">${kv.svg}<div><b>${esc(kv.ad)}</b> <small>· ${konuNoOf(x.konu)}. konu</small><p>${rx(kv.aciklama)}</p>
@@ -1385,30 +1596,10 @@
           : `<div class="dk-hat-ic"><div><b>${esc(k.baslik)}</b> <small>· ${konuNoOf(x.konu)}. konu</small><ul class="remember">${k.akildaKalsin.slice(0, 2).map(a => `<li>${rx(a)}</li>`).join("")}</ul>
             <div class="row"><button class="btn ghost" data-git="${esc(x.konu)}">Konuya bak</button></div></div></div>`;
       }).join("");
-      box.innerHTML = parca ? `<div class="dk-hat"><div class="kicker">Hatırlatma</div>${parca}</div>` : "";
+      if (parca) box.insertAdjacentHTML("beforeend", `<div class="dk-hat"><div class="kicker">Hatırlatma</div>${parca}</div>`);
       $$("[data-git]", box).forEach(b => b.onclick = () => gitKonu(b.dataset.git, b.dataset.kv));
     };
-    const ciz = () => {
-      const it = st.liste[st.i], son = st.i === st.liste.length - 1;
-      const konular = [...new Set(it.kaynak.map(x => x.konu))].map(id => `${konuNoOf(id)}. konu`).join(" + ");
-      root.innerHTML = `<div class="stage"><div class="progress"><span>Soru ${st.i + 1} / ${st.liste.length}</span><div class="bar"><i style="width:${(st.i + 1) / st.liste.length * 100}%"></i></div></div>
-        <div class="kicker">${it.kaynak.length > 1 ? "Konuları birleştir" : "Hatırla"}${konular ? " · " + esc(konular) : ""}</div>
-        <div id="dq">${questionHTML(it.q)}</div><div id="dkHat"></div>
-        <div class="stage-nav"><button class="btn ghost" data-bitir>Testi bırak</button><button class="btn primary" data-sonraki disabled>${son ? "Sonucu gör" : "Sonraki soru"}</button></div></div>`;
-      st.q[st.i] = st.q[st.i] || { wrong: [], result: undefined };
-      const qs = st.q[st.i], sonraki = $("[data-sonraki]", root);
-      const k0 = it.kaynak.find(x => x.kavram) || {}, kv0 = k0.konu && S.cache[k0.konu] ? S.cache[k0.konu].kavramlar.find(y => y.ad === k0.kavram) : (it.q.kavram && S.cache[(it.kaynak[0] || {}).konu] ? S.cache[it.kaynak[0].konu].kavramlar.find(y => y.ad === it.q.kavram) : null);
-      wireQuestion($("#dq .q", root), it.q, { state: qs, kavram: kv0, onDone: r => { st.sonuc[st.i] = { r, kaynak: it.kaynak }; sonraki.disabled = false; if (r !== 1) hatirlat($("#dkHat", root), it); } });
-      if (qs.result !== undefined) { sonraki.disabled = false; if (qs.result !== 1) hatirlat($("#dkHat", root), it); }
-      sonraki.onclick = () => {
-        tts.stop();
-        if (!son) { st.i++; ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); return; }
-        const kayit = durakKayit.kaydet(S.konu, st.sonuc.map(x => ({ r: x.r, kaynak: x.kaynak })));
-        delete S.durakOyun[S.konu]; renderNav(); rapor(kayit);
-      };
-      $("[data-bitir]", root).onclick = () => { delete S.durakOyun[S.konu]; giris(); };
-    };
-    const rapor = kayit => {
+    const rapor = (kayit, basla) => {
       const sonuc = kayit.sonuc, c = v => sonuc.filter(x => x.r === v).length;
       const satirlar = d.kapsar.map(id => {
         const k = S.cache[id], ilgili = sonuc.filter(x => x.kaynak.some(y => y.konu === id));
@@ -1421,10 +1612,10 @@
       const zayif = []; sonuc.filter(x => x.r !== 1).forEach(x => x.kaynak.forEach(y => { if (y.kavram && !zayif.some(z => z.konu === y.konu && z.kavram === y.kavram)) zayif.push(y); }));
       const eksikVar = sonuc.some(x => x.r === 0), iyi = kayit.dogru / kayit.toplam >= .8;
       const mesaj = iyi ? "Harika! Bu konuları iyi hatırlıyorsun. Öğrendiklerin yerine oturmuş."
-        : eksikVar ? "Çok iyi çalıştın. Aşağıda ! olan konulara kısa bir tekrar yapalım. Sonra testi yeniden dene; ikinci seferde çok daha kolay gelecek."
+        : eksikVar ? "Çok iyi çalıştın; yanlış yaptığın soruları tekrar geldiğinde düzelttin. Aşağıda ! olan konulara kısa bir tekrar yapalım."
         : "İpuçlarını kullanarak hepsini buldun. Bu, iyi çalışmanın işareti. Turuncu kavramlara bir göz atman yeter.";
       root.innerHTML = `<div class="stage"><div class="kicker">Ara Durak · Sonuç</div><h3>${iyi ? "Aklında kalmış!" : "Neredeyse tamam!"}</h3><p class="big">${mesaj}</p>
-        <div class="done-stats"><div class="stat"><b>${c(1)}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${c(2)}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c(0)}</b><span>birlikte öğrendik</span></div></div>
+        <div class="done-stats"><div class="stat"><b>${c(1)}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${c(2)}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c(0)}</b><span>tekrar gelince çalıştın</span></div></div>
         <div class="hz-rapor">${satirlar}</div>
         ${zayif.length ? `<div><div class="kicker">Tekrar bakman gereken kavramlar</div><div class="dk-liste">${zayif.map(z => `<button data-git="${esc(z.konu)}" data-kv="${esc(z.kavram)}">${konuNoOf(z.konu)}. konu · ${esc(z.kavram)}</button>`).join("")}</div></div>` : ""}
         <p class="dk-sonraki">${ICON.tekrar}<span>Bu durağı <b>${tarihYaz(kayit.n)}</b> tekrar tara. Zamanı gelince konu listesinde haber vereceğim.</span></p>
@@ -1433,20 +1624,144 @@
       $("[data-yeniden]", root).onclick = basla;
       $("[data-goto]", root).onclick = () => setTab("hatirla");
     };
-    if (st) ciz(); else giris();
+    soruAkisi(root, {
+      anahtar: "akis:" + S.konu, tur: "tarama", birak: "Sonra devam et",
+      hazirla: () => durakSorulari(d).map((it, n) => ({ q: it.q, n, kaynak: it.kaynak })),
+      kicker: it => { const konular = [...new Set(it.kaynak.map(x => x.konu))].map(id => `${konuNoOf(id)}. konu`).join(" + "); return `${it.kaynak.length > 1 ? "Konuları birleştir" : "Hatırla"}${konular ? " · " + esc(konular) : ""}`; },
+      kavram: it => { const k0 = it.kaynak.find(x => x.kavram) || {}; if (k0.konu && S.cache[k0.konu]) return S.cache[k0.konu].kavramlar.find(y => y.ad === k0.kavram) || null;
+        const k1 = (it.kaynak[0] || {}).konu; return it.q.kavram && S.cache[k1] ? S.cache[k1].kavramlar.find(y => y.ad === it.q.kavram) || null : null; },
+      sonuc: (box, it, r) => { if (r !== 1) hatirlat(box, it); },
+      giris: (basla, devam) => {
+        const kayit = durakKayit.get(S.konu);
+        root.innerHTML = `<div class="stage"><div class="kicker">Tarama testi</div><h3>${devam ? "Yarım kalan tarama" : kayit ? "Tekrar tarayalım" : "Neler aklında kalmış?"}</h3>
+          <p class="big">${devam ? "Taramayı yarıda bırakmıştın. Kaldığın yerden devam edelim." : `${toplam} soru var. Bazıları konulardaki sorulardan, bazıları konuları birleştiren yeni sorular. Her soruda 2 hakkın var. Yanlış yaptığın soru birkaç soru sonra yeniden gelir. Not yok; sonunda hangi konuya tekrar bakman gerektiğini göstereceğim.`}</p>
+          ${kayit && !devam ? durakDurum(kayit) : ""}
+          <div class="row">${devam ? `<button class="btn primary" data-devam>Kaldığın yerden devam et</button>` : `<button class="btn primary" data-basla>Başla</button>`}${kayit && !devam ? `<button class="btn ghost" data-rapor>Son sonucu gör</button>` : ""}</div></div>`;
+        const bb = $("[data-basla]", root); if (bb) bb.onclick = basla;
+        const dv = $("[data-devam]", root); if (dv) dv.onclick = devam;
+        const rb = $("[data-rapor]", root); if (rb) rb.onclick = () => rapor(kayit, basla);
+      },
+      bitis: (st, oz, basla) => {
+        const asil = st.liste.filter(x => !x.tekrar).sort((a, b) => a.n - b.n);
+        const kayit = durakKayit.kaydet(S.konu, asil.map(x => ({ r: st.ilk[x.n] ?? 0, kaynak: x.kaynak })));
+        renderNav(); rapor(kayit, basla);
+      }
+    });
+  }
+
+  // ---------- Soru akışı (Test ve Ara Durak taraması) ----------
+  // Sorular tek tek gelir; soru ve şık sırası her başlangıçta karışır. İki yanlıştan sonra cevap açıklamasıyla gösterilir ve
+  // soru 3 soru sonra şıkları yeniden karışmış olarak tekrar gelir (en çok 2 kez). "Baştan başla" yalnızca bitişte.
+  // Durum cihazda tutulur: sayfa yenilense ya da sekme değişse de kaldığı yerden devam eder (baştan başlatarak "hepsi doğru" yapılamaz).
+  // İlk deneme sonucu (st.ilk[n]) kalıcıdır; tekrar gelen sorunun sonucu yalnızca st.son'a yazılır.
+  const karistir = q => {
+    if (qKind(q) !== "secim" || q.ima || !Array.isArray(q.secenekler) || q.secenekler.length < 2) return { ...q };
+    const p = shuffle(q.secenekler.map((x, j) => j));
+    return { ...q, secenekler: p.map(j => q.secenekler[j]), dogru: p.indexOf(q.dogru) };
+  };
+  function soruAkisi(root, c) {
+    const k = key(c.anahtar);
+    let st = store.get(k, null);
+    const kaydet = () => store.set(k, st);
+    const basla = () => {
+      st = { v: 1, bas: simdi(), liste: shuffle(c.hazirla()).map(it => ({ ...it, q: karistir(it.q), tekrar: 0 })), i: 0, ilk: {}, son: {}, q: {} };
+      kaydet(); KAYIT.olay("test-basla", { tur: c.tur, toplam: st.liste.length }); ciz();
+    };
+    const ciz = () => {
+      const it = st.liste[st.i];
+      root.innerHTML = `<div class="stage akis"><div class="progress"><span>Soru ${st.i + 1} / ${st.liste.length}</span><div class="bar"><i style="width:${(st.i + 1) / st.liste.length * 100}%"></i></div></div>
+        <div class="kicker">${it.tekrar ? `<span class="tekrar-etiket">${ICON.tekrar}Tekrar geldi · şıklar yer değiştirdi</span>` : c.kicker ? c.kicker(it) : "Soru"}</div>
+        <div id="sq">${questionHTML(it.q)}</div><div id="sqEk"></div>
+        <div class="stage-nav">${c.birak ? `<button class="btn ghost" data-birak>${esc(c.birak)}</button>` : "<span></span>"}<button class="btn primary" data-sonraki disabled>${st.i === st.liste.length - 1 ? "Sonucu gör" : "Sonraki soru"}</button></div></div>`;
+      const qs = st.q[st.i] = st.q[st.i] || { wrong: [], result: undefined }, sonraki = $("[data-sonraki]", root), ek = $("#sqEk", root);
+      const bitti = (r, yeni) => {
+        sonraki.disabled = false;
+        if (yeni) {
+          if (!(it.n in st.ilk)) st.ilk[it.n] = r;
+          st.son[it.n] = r;
+          if (r === 0 && it.tekrar < 2) st.liste.splice(Math.min(st.i + 3, st.liste.length), 0, { ...it, q: karistir(it.q), tekrar: it.tekrar + 1 });
+          kaydet();
+          sonraki.textContent = st.i === st.liste.length - 1 ? "Sonucu gör" : "Sonraki soru";
+        }
+        if (r === 0 && it.tekrar < 2) ek.insertAdjacentHTML("afterbegin", `<p class="tekrar-not">${ICON.tekrar}<span>Bu soru birkaç soru sonra yeniden gelecek. Açıklamayı dikkatle oku.</span></p>`);
+        c.sonuc && c.sonuc(ek, it, r);
+      };
+      wireQuestion($("#sq .q", root), it.q, { state: qs, kavram: c.kavram ? c.kavram(it) : null, tekrar: !!it.tekrar, davet: true, onDone: r => bitti(r, true) });
+      $("#sq", root).addEventListener("click", () => setTimeout(kaydet, 0));   // yanlış şık / kanıt / ipucu durumu da saklansın
+      if (qs.result !== undefined) bitti(qs.result, false);
+      sonraki.onclick = () => {
+        tts.stop();
+        if (st.i < st.liste.length - 1) { st.i++; kaydet(); ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); return; }
+        bitir();
+      };
+      const bk = $("[data-birak]", root); if (bk) bk.onclick = () => { kaydet(); tts.stop(); S.akisBirak = c.anahtar; c.giris(basla, devam); };
+    };
+    const devam = () => { S.akisBirak = null; ciz(); };
+    const bitir = () => {
+      const v = Object.values(st.ilk), say = x => v.filter(y => y === x).length;
+      const oz = { toplam: v.length, ilk1: say(1), ilk2: say(2), ilk0: say(0), tekrarSoru: st.liste.filter(x => x.tekrar).length, sureDk: +((simdi() - st.bas) / 60000).toFixed(1) };
+      const son = st; st = null; try { localStorage.removeItem(k); } catch (e) {}
+      KAYIT.olay("test-bitti", { tur: c.tur, ...oz });
+      c.bitis(son, oz, basla);
+      KOC.ozet();
+      root.scrollIntoView({ block: "start", behavior: "smooth" });
+    };
+    if (st && st.liste && st.i < st.liste.length) {
+      if (S.akisBirak === c.anahtar) return c.giris(basla, devam);
+      ciz();
+      if (st.i > 0 || st.q[0] && st.q[0].wrong && st.q[0].wrong.length) KOC.goster("devam", "Kaldığın yerden devam ediyoruz. Baştan başlamana gerek yok; yanlış yaptığın soru birazdan yine gelecek.");
+    } else c.giris(basla, null);
   }
 
   // ---------- Test ----------
+  // Öğrenci modu: sorular tek tek (soruAkisi). Sınıf modu: bütün sorular tek sayfada, "Cevabı göster" ile (öğretmen tahtada kullanır).
+  const ogrenBitti = id => { if (store.get(key("ogren-bitti:" + id), false)) return true; const d = S.cache[id]; return !!d && store.get(key("adim:" + id), 0) >= buildSteps(d).length - 1; };
   function renderTest(root) {
-    const d = S.data, cls = document.body.classList.contains("sinif");
+    const d = S.data;
+    if (document.body.classList.contains("sinif")) return renderTestListe(root);
+    if (!d.sorular || !d.sorular.length) { root.innerHTML = `<div class="notice">Bu konunun testi yok.</div>`; return; }
+    if (ayar().ogrenKilit && !ogrenBitti(S.konu)) {
+      root.innerHTML = `<div class="stage"><div class="kicker">Test</div><h3>Önce Öğren'i bitirelim</h3><p class="big">Test, Öğren bölümünü bitirince açılır. Kaldığın adımdan devam edebilirsin.</p><div class="row"><button class="btn primary" data-goto="ogren">Öğren'e git</button></div></div>`;
+      $("[data-goto]", root).onclick = () => setTab("ogren"); return;
+    }
+    soruAkisi(root, {
+      anahtar: "akis:test:" + S.konu, tur: "test",
+      hazirla: () => d.sorular.map((q, n) => ({ q, n })),
+      kicker: () => "Konu testi",
+      kavram: it => it.q.kavram ? d.kavramlar.find(x => x.ad === it.q.kavram) || null : null,
+      giris: (basla, devam) => {
+        const gec = store.get(key("testler:" + S.konu), []), ilk = gec[0], son = gec[gec.length - 1];
+        root.innerHTML = `<div class="stage"><div class="kicker">Konu testi</div><h3>${d.sorular.length} soru</h3>
+          <p class="big">Sorular tek tek gelecek. Her soruda 2 hakkın var; ilk yanlışta ipucu gelir. Yanlış yaptığın soru birkaç soru sonra, şıkları yer değiştirmiş olarak yeniden gelir. Test, hepsini doğru yapınca biter.</p>
+          ${son ? `<div class="dk-durum"><b>İlk çözüşün:</b> ${tarihYaz(ilk.t)} · ${ilk.ilk1} / ${ilk.toplam} ilk denemede doğru${gec.length > 1 ? `<br><b>Son çözüşün:</b> ${tarihYaz(son.t)} · ${son.ilk1} / ${son.toplam} ilk denemede doğru` : ""}</div>` : ""}
+          <div class="row">${devam ? `<button class="btn primary" data-devam>Kaldığın yerden devam et</button>` : `<button class="btn primary" data-basla>${son ? "Testi yeniden çöz" : "Başla"}</button>`}</div></div>`;
+        const bb = $("[data-basla]", root); if (bb) bb.onclick = basla;
+        const dv = $("[data-devam]", root); if (dv) dv.onclick = devam;
+      },
+      bitis: (st, oz, basla) => {
+        const gec = store.get(key("testler:" + S.konu), []); gec.push({ t: gun(), ...oz }); store.set(key("testler:" + S.konu), gec.slice(-20));
+        const msg = !oz.ilk0 && !oz.ilk2 ? "Hepsini ilk denemede buldun. Çok dikkatli çalıştın!"
+          : !oz.ilk0 ? "Hepsini buldun! Bazılarında ipucunu ya da ikinci hakkını iyi kullandın."
+          : "Hepsini tamamladın! Yanlış yaptığın sorular tekrar geldiğinde üzerinde çalıştın. Düzeltmek de öğrenmek.";
+        root.innerHTML = `<div class="stage"><div class="kicker">Konu testi · Sonuç</div><h3>${oz.toplam} sorunun hepsini tamamladın!</h3><p class="big">${msg}</p>
+          <div class="done-stats"><div class="stat"><b>${oz.ilk1}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${oz.ilk2}</b><span>ipucuyla / ikinci denemede</span></div><div class="stat"><b>${oz.ilk0}</b><span>tekrar gelince çalıştın</span></div></div>
+          ${gec.length > 1 ? `<p class="ek">İlk çözüşünde ${gec[0].ilk1} / ${gec[0].toplam} soruyu ilk denemede bulmuştun.</p>` : ""}
+          <div class="row"><button class="btn primary" data-goto="tekrar">Tekrar'a geç</button><button class="btn ghost" data-yeniden>Testi yeniden çöz</button></div></div>`;
+        $("[data-goto]", root).onclick = () => setTab("tekrar");
+        $("[data-yeniden]", root).onclick = basla;
+      }
+    });
+  }
+  function renderTestListe(root) {
+    const d = S.data;
     root.innerHTML = `<div class="scorebar"><span id="score"></span><div class="meter"><i id="meter"></i></div><button class="btn" id="qreset">Baştan başla</button></div>
-      ${cls ? '<p class="ek" style="margin:0">Sınıf modu: seçenek seçilince cevap gizli kalır, "Cevabı göster" ile açılır.</p>' : '<p class="ek" style="margin:0">Her soruda 2 hakkın var. İlk yanlışta ipucu gelir.</p>'}
+      <p class="ek" style="margin:0">Sınıf modu: seçenek seçilince cevap gizli kalır, "Cevabı göster" ile açılır.</p>
       <div class="tests">${d.sorular.map((q, i) => `<div class="card-q" data-q="${i}">${questionHTML(q, i + 1)}</div>`).join("")}</div>`;
     let first = 0, answered = 0;
     const upd = () => { $("#score", root).textContent = `${first} / ${d.sorular.length} ilk denemede doğru · ${answered} cevaplandı`; $("#meter", root).style.width = (first / d.sorular.length * 100) + "%"; };
     const kvBul = q => q.kavram ? d.kavramlar.find(k => k.ad === q.kavram) : null;
-    $$(".card-q", root).forEach(el => wireQuestion($(".q", el), d.sorular[+el.dataset.q], { kavram: kvBul(d.sorular[+el.dataset.q]), classMode: cls && qKind(d.sorular[+el.dataset.q]) === "secim", onDone: r => { answered++; if (r === 1) first++; upd(); } }));
-    $("#qreset", root).onclick = () => renderTest(root);
+    $$(".card-q", root).forEach(el => wireQuestion($(".q", el), d.sorular[+el.dataset.q], { kavram: kvBul(d.sorular[+el.dataset.q]), classMode: qKind(d.sorular[+el.dataset.q]) === "secim", onDone: r => { answered++; if (r === 1) first++; upd(); } }));
+    $("#qreset", root).onclick = () => renderTestListe(root);
     upd();
   }
 
@@ -1539,7 +1854,7 @@
       metinler.forEach(m => kk.metin[m.id] = (kk.metin[m.id] || 0) + 1);
       const si2 = sonIki(s), yeniAcildi = !s.gecti && si2.tur >= ATOLYE_MIN_TUR && si2.oran >= ATOLYE_ESIK;
       if (yeniAcildi) s.gecti = true;
-      atolyeKayit.set(kk);
+      atolyeKayit.set(kk); KAYIT.olay("atolye-tur", { seviye: sv.no, dogru: d, toplam: n });
       const sonraki = A.seviyeler[si + 1], oran = d / n;
       const mesaj = yeniAcildi ? (sonraki ? `Harika! ${sEk(sv.no, "i")} geçtin, S${sonraki.no} açıldı. Daha uzun metinlere hazırsın.` : "Harika! En uzun metinleri de geçtin. Artık gerçek bir okuma dedektifisin.")
         : oran >= ATOLYE_ESIK ? (si2.tur < ATOLYE_MIN_TUR ? "Çok iyi! Bir tur daha bu kadar dikkatli okursan sonraki seviye açılacak." : "Çok iyi! Dikkatlice okudun.")
@@ -1588,12 +1903,14 @@
     $("#botSugg").onclick = e => { const s = e.target.closest("button"); if (s) send(s.textContent); };
     $("#botForm").onsubmit = e => { e.preventDefault(); const t = input.value.trim(); if (t) send(t); };
     S.onKonu = () => { if (!panel.hidden) drawHist(); };
+    // Robot koçun "Birlikte bakalım" düğmesi: paneli açar ve soruyu bağlamıyla gönderir
+    S.botSor = text => { const go = () => { KOC.kapat(); panel.hidden = false; fab.hidden = true; drawHist(); send(text); }; if (!store.get("ela7:bot-onay", false)) return consent(go); go(); };
 
     let busy = false;
     async function send(text) {
       if (busy) return; busy = true; input.value = "";
       const h = hist[S.konu] = hist[S.konu] || [];
-      h.push({ rol: "user", metin: text }); add("me", text);
+      h.push({ rol: "user", metin: text }); add("me", text); KAYIT.olay("robot-soru", { metin: kisa(text, 80) });
       const w = add("bot wait", `${b.ad} düşünüyor…`);
       try {
         const r = await fetch("/api/sor", { method: "POST", headers: { "Content-Type": "application/json" },
@@ -1623,6 +1940,141 @@
     }
   }
 
+  // =================================================================
+  // ---------- Veli raporu (#rapor, PIN'li) — geçici rapor; ileride Veli Paneli'ne taşınacak ----------
+  // Son 7 günün oturumları, gün özeti, zorlanılan sorular, ayarlar ve yedek (indir / geri yükle / CSV).
+  // =================================================================
+  const sha = async t => { try { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("ela7:" + t)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join(""); } catch (e) { return "x" + t; } };
+  const DERS_AD = { tr1: "Türkçe", mat1: "Matematik", fen1: "Fen Bilimleri", ing1: "İngilizce (MEB)", own1: "İngilizce (Own It)", sos1: "Sosyal Bilgiler" };
+  const dersAd = k => DERS_AD[k] || k || "—";
+  const saat = ts => { const d = new Date(ts); return `${p2(d.getHours())}:${p2(d.getMinutes())}`; };
+  const GUNLER = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+  const gunAdi = ts => { const d = new Date(ts); return `${d.getDate()} ${AYLAR[d.getMonth()]} ${GUNLER[d.getDay()]}`; };
+  const dk = ms => Math.round(ms / 60000);
+
+  // Olaylardan oturum özetleri (yedek dosyasına da yazılır)
+  function ozetle(olaylar) {
+    const m = new Map();
+    olaylar.forEach(o => {
+      let z = m.get(o.oturum);
+      if (!z) m.set(o.oturum, z = { oturum: o.oturum, cihaz: o.cihaz, bas: o.ts, bit: o.ts, aktifMs: 0, dersler: {}, soru: 0, ilk1: 0, ilk2: 0, ilk0: 0, ipucu: 0, hizli: 0, hizliYanlis: 0, rastgele: 0, hizliGecis: 0, atlama: 0, robot: 0, robotSoru: 0, nasil: {}, testler: [], _son: o.ts });
+      const ara = o.ts - z._son; if (ara > 0) z.aktifMs += Math.min(ara, BOSLUK_TAVAN); z._son = o.ts; z.bit = o.ts;
+      if (o.ders && o.olay !== "rapor-ac") { const dd = z.dersler[o.ders] = z.dersler[o.ders] || {}; if (o.konuBaslik) dd[o.konuBaslik] = (dd[o.konuBaslik] || 0) + 1; }
+      if (o.olay === "soru") { z.soru++; z["ilk" + o.sonuc]++; if (o.ipucu) z.ipucu++; if ((o.bayrak || []).includes("hizli")) { z.hizli++; if (o.sonuc !== 1) z.hizliYanlis++; } }
+      if (o.olay === "oyun-rastgele") z.rastgele++;
+      if (o.olay === "adim" && (o.bayrak || []).includes("hizli-gecis")) z.hizliGecis++;
+      if (o.olay === "atlama") z.atlama++;
+      if (o.olay === "robot") z.robot++;
+      if (o.olay === "robot-soru") z.robotSoru++;
+      if (o.olay === "robot-cevap" && o.mesaj === "nasil") z.nasil[o.secim] = (z.nasil[o.secim] || 0) + 1;
+      if (o.olay === "test-bitti") z.testler.push({ ders: o.ders, konu: o.konuBaslik, tur: o.tur, ilk1: o.ilk1, toplam: o.toplam, sureDk: o.sureDk });
+    });
+    return [...m.values()].map(z => { const { _son, ...r } = z; return { ...r, basT: yerelZaman(z.bas), aktifDk: dk(z.aktifMs) }; });
+  }
+
+  const indir = (ad, icerik, tip) => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([icerik], { type: tip })); a.download = ad; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); };
+  const CSV_ALAN = ["t", "ders", "konu", "konuBaslik", "bolum", "olay", "soru", "tur", "sonuc", "sureSn", "ilkSn", "esikSn", "ipucu", "yanlis", "kanit", "tekrar", "bayrak", "kavram", "adim", "adimTur", "oyun", "yanlis", "mesaj", "secim", "metin", "ilk1", "ilk2", "ilk0", "toplam", "oturum", "cihaz"];
+  async function yedekIndir() {
+    KAYIT.bosalt(); await new Promise(r => setTimeout(r, 300));
+    const olaylar = await KDB.hepsi(), ilerleme = {};
+    try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("ela7:") && k !== "ela7:pin") ilerleme[k] = localStorage.getItem(k); } } catch (e) {}
+    const veri = { tur: "ela7dersleri-yedek", v: KAYIT_V, olusturma: yerelZaman(simdi()), kaynak: location.origin, cihaz: cihazId,
+      okuma: "Claude için: önce 'sozluk'u oku. 'oturumlar' her çalışma oturumunun özeti, 'olaylar' ayrıntılı kayıt, 'ilerleme' sitenin cihazda tuttuğu durum (geri yükleme için).",
+      sozluk: KAYIT_SOZLUK, oturumlar: ozetle(olaylar), olaylar, ilerleme };
+    indir(`ela7-yedek-${gun()}.json`, JSON.stringify(veri, null, 1), "application/json");
+  }
+  async function csvIndir() {
+    KAYIT.bosalt(); await new Promise(r => setTimeout(r, 300));
+    const alan = [...new Set(CSV_ALAN)], h = v => { const t = Array.isArray(v) ? v.join(" | ") : v ?? ""; return /[;"\n]/.test(String(t)) ? `"${String(t).replace(/"/g, '""')}"` : String(t); };
+    const satir = (await KDB.hepsi()).map(o => alan.map(a => h(o[a])).join(";"));
+    indir(`ela7-kayit-${gun()}.csv`, "﻿" + [alan.join(";"), ...satir].join("\r\n"), "text/csv");
+  }
+  async function yedekYukle(dosya, durum) {
+    try {
+      const v = JSON.parse(await dosya.text());
+      if (v.tur !== "ela7dersleri-yedek") throw new Error("Bu dosya bir Ela'nın Defteri yedeği değil.");
+      if (!confirm(`${v.olusturma} tarihli yedek yüklenecek. Bu cihazdaki ilerleme yedektekiyle değiştirilecek, kayıtlar birleştirilecek. Devam edilsin mi?`)) return;
+      Object.entries(v.ilerleme || {}).forEach(([k, x]) => { try { localStorage.setItem(k, x); } catch (e) {} });
+      const var_ = new Set((await KDB.hepsi()).map(o => o.k));
+      await KDB.yaz((v.olaylar || []).filter(o => o && o.k && !var_.has(o.k)));
+      durum.textContent = "Yedek yüklendi. Sayfa yenileniyor…"; setTimeout(() => location.reload(), 900);
+    } catch (e) { durum.textContent = "Yüklenemedi: " + (e.message || "dosya okunamadı"); }
+  }
+
+  async function openRapor() {
+    tts.stop(); KOC.kapat(); S.konu = "rapor"; S.data = null; S.durakAsil = null; S.tab = "rapor"; renderNav();
+    const c = $("#content");
+    const pin = store.get("ela7:pin", null);
+    const acik = (() => { try { return sessionStorage.getItem("ela7:pin-ok") === pin && !!pin; } catch (e) { return false; } })();
+    if (!acik) {
+      c.innerHTML = `<section class="konu-head"><div class="meta"><span>Veli</span></div><h2>Veli raporu</h2></section>
+        <div class="stage rp-pin"><p class="big">${pin ? "Veli PIN'ini yaz." : "Bu cihaz için bir veli PIN'i belirle (4–8 rakam). Ela bu ekranı ve ayarları PIN olmadan açamaz."}</p>
+        <form id="pinF" class="row"><input id="pin1" type="password" inputmode="numeric" pattern="[0-9]{4,8}" maxlength="8" placeholder="PIN" autocomplete="off" required>
+        ${pin ? "" : `<input id="pin2" type="password" inputmode="numeric" pattern="[0-9]{4,8}" maxlength="8" placeholder="PIN tekrar" autocomplete="off" required>`}
+        <button class="btn primary">${pin ? "Aç" : "Belirle ve aç"}</button></form><p class="ek" id="pinMsg"></p></div>`;
+      $("#pinF").onsubmit = async e => {
+        e.preventDefault(); const a = $("#pin1").value, b = $("#pin2") ? $("#pin2").value : a;
+        if (!/^\d{4,8}$/.test(a)) return $("#pinMsg").textContent = "PIN 4–8 rakam olmalı.";
+        if (a !== b) return $("#pinMsg").textContent = "İki PIN aynı değil.";
+        const hs = await sha(a);
+        if (pin && hs !== pin) return $("#pinMsg").textContent = "PIN yanlış.";
+        if (!pin) store.set("ela7:pin", hs);
+        try { sessionStorage.setItem("ela7:pin-ok", hs); } catch (e) {}
+        openRapor();
+      };
+      $("#pin1").focus(); return;
+    }
+    KAYIT.olay("rapor-ac"); KAYIT.bosalt(); await new Promise(r => setTimeout(r, 250));
+    const olaylar = (await KDB.hepsi()).filter(o => o.olay !== "rapor-ac"), sinir = simdi() - 7 * 864e5;
+    const son7 = olaylar.filter(o => o.ts >= sinir), otur = ozetle(son7).sort((a, b) => b.bas - a.bas);
+    const gunler = new Map(); otur.forEach(z => { const g = yerelZaman(z.bas).slice(0, 10); const x = gunler.get(g) || { ts: z.bas, aktifDk: 0, soru: 0, ilk1: 0, hizli: 0, rastgele: 0, hizliGecis: 0, atlama: 0, dersler: new Set() }; x.aktifDk += z.aktifDk; ["soru", "ilk1", "hizli", "rastgele", "hizliGecis", "atlama"].forEach(f => x[f] += z[f]); Object.keys(z.dersler).forEach(d_ => x.dersler.add(dersAd(d_))); gunler.set(g, x); });
+    const yuz = (a, b) => b ? `%${Math.round(a / b * 100)}` : "—";
+    const bay = (n, t) => n ? `<span class="rp-bay" title="${esc(t)}">${n}</span>` : `<span class="rp-sifir">0</span>`;
+    const zor = son7.filter(o => o.olay === "soru" && o.sonuc === 0).slice(-15).reverse();
+    const ay = ayar();
+    const olaySatir = o => {
+      const ne = o.olay === "soru" ? `Soru ${o.sonuc === 1 ? "✓" : o.sonuc === 2 ? "~" : "✗"} ${esc(o.soru || "")} <small>${o.ilkSn ?? ""} sn${o.ipucu ? ` · ipucu ${o.ipucu}` : ""}${(o.bayrak || []).length ? ` · <b class="rp-k">${o.bayrak.join(", ")}</b>` : ""}${o.tekrar ? " · tekrar" : ""}</small>`
+        : o.olay === "adim" ? `Öğren adım ${o.adim}/${o.toplam} (${esc(o.adimTur)}${o.kavram ? ": " + esc(o.kavram) : ""}) <small>${o.sureSn} sn${(o.bayrak || []).length ? ` · <b class="rp-k">hızlı geçiş</b>` : ""}</small>`
+        : o.olay === "sekme" ? `Sekme: ${esc(o.bolum)}` : o.olay === "konu-ac" ? `<b>Konu açıldı: ${esc(o.konuBaslik)}</b>`
+        : o.olay === "robot" ? `🤖 Robot: ${esc(o.metin || o.mesaj)}` : o.olay === "robot-cevap" ? `🤖 Ela'nın seçimi: “${esc(o.secim)}”` : o.olay === "robot-soru" ? `💬 Robota sordu: ${esc(o.metin)}`
+        : o.olay === "test-bitti" ? `<b>${o.tur === "tarama" ? "Tarama" : "Test"} bitti: ${o.ilk1}/${o.toplam} ilk denemede, ${o.sureDk} dk</b>` : o.olay === "test-basla" ? `${o.tur === "tarama" ? "Tarama" : "Test"} başladı (${o.toplam} soru)`
+        : o.olay === "oyun" ? `Oyun bitti: ${esc(o.oyun)}${o.yanlis !== undefined ? ` · ${o.yanlis} yanlış dokunuş` : ""}${o.sureSn ? ` · ${o.sureSn} sn` : ""}` : o.olay === "oyun-ac" ? `Oyun: ${esc(o.oyun)}`
+        : o.olay === "oyun-rastgele" ? `<b class="rp-k">Rastgele dokunuş (${esc(o.oyun)})</b>` : o.olay === "atlama" ? `<b class="rp-k">Öğren bitmeden Test'e geçti</b>`
+        : o.olay === "ogren-bitti" ? `<b>Öğren bitti</b>` : o.olay === "atolye-tur" ? `Okuma Atölyesi S${o.seviye}: ${o.dogru}/${o.toplam}` : esc(o.olay);
+      return `<li><time>${saat(o.ts)}</time><span class="rp-d">${esc(dersAd(o.ders))}</span><span>${ne}</span></li>`;
+    };
+    c.innerHTML = `<section class="konu-head"><div class="meta"><span>Veli</span><span class="pill">Son 7 gün · bu cihaz</span></div><h2>Veli raporu</h2></section>
+      <section><div class="sec-title"><h3>Günler</h3><span>Aktif süre: olaylar arası boşluklar (en çok 3 dk) toplanır</span></div>
+      ${gunler.size ? `<div class="rp-tablo-wrap"><table class="rp-tablo"><thead><tr><th>Gün</th><th>Aktif</th><th>Dersler</th><th>Soru</th><th>İlk denemede</th><th>Hızlı cevap</th><th>Rastgele dokunuş</th><th>Hızlı kart geçişi</th><th>Öğren'i atladı</th></tr></thead><tbody>
+        ${[...gunler.values()].map(x => `<tr><td>${gunAdi(x.ts)}</td><td>${x.aktifDk} dk</td><td>${[...x.dersler].map(esc).join(", ")}</td><td>${x.soru}</td><td>${yuz(x.ilk1, x.soru)}</td><td>${bay(x.hizli, "Okuma süresinden kısa cevap")}</td><td>${bay(x.rastgele, "Oyunda art arda hızlı yanlış")}</td><td>${bay(x.hizliGecis, "Öğren kartını okumadan geçti")}</td><td>${bay(x.atlama, "Öğren bitmeden Test")}</td></tr>`).join("")}
+      </tbody></table></div>` : `<div class="notice">Son 7 günde bu cihazda kayıt yok. Kayıt bu güncellemeyle başladı.</div>`}</section>
+      ${otur.length ? `<section><div class="sec-title"><h3>Oturumlar</h3><span>Ayrıntı için oturuma dokun</span></div><div class="rp-otur">
+        ${otur.map(z => { const ev = son7.filter(o => o.oturum === z.oturum); const nas = Object.entries(z.nasil).map(([k, v]) => `${esc(k)}: ${v}`).join(", ");
+          return `<details><summary><b>${gunAdi(z.bas)} · ${saat(z.bas)}–${saat(z.bit)}</b> <span>${z.aktifDk} dk aktif · ${Object.keys(z.dersler).map(dersAd).map(esc).join(", ")} · ${z.soru} soru, ${yuz(z.ilk1, z.soru)} ilk denemede${z.hizli ? ` · <b class="rp-k">${z.hizli} hızlı cevap</b>` : ""}${z.rastgele ? ` · <b class="rp-k">${z.rastgele} rastgele</b>` : ""}</span></summary>
+            <div class="rp-ic">${Object.entries(z.dersler).map(([d_, ks]) => `<p><b>${esc(dersAd(d_))}:</b> ${Object.keys(ks).map(esc).join(" · ")}</p>`).join("")}
+            ${z.testler.length ? `<p><b>Testler:</b> ${z.testler.map(t => `${esc(t.konu)} ${t.ilk1}/${t.toplam}`).join(" · ")}</p>` : ""}
+            ${nas ? `<p><b>“Nasıl buldun?” cevapları:</b> ${nas}</p>` : ""}${z.robotSoru ? `<p><b>Robota ${z.robotSoru} soru sordu.</b></p>` : ""}
+            <ol class="rp-olay">${ev.filter(o => o.olay !== "sekme" || ev.length < 150).map(olaySatir).join("")}</ol></div></details>`; }).join("")}</div></section>` : ""}
+      ${zor.length ? `<section><div class="sec-title"><h3>Cevabı gösterilen sorular</h3><span>Son 7 gün · iki yanlıştan sonra</span></div><ul class="rp-zor">${zor.map(o => `<li><span class="rp-d">${esc(dersAd(o.ders))} · ${esc(o.konuBaslik)}</span>${esc(o.soru)}${o.yanlis && o.yanlis.length ? `<small>Seçtiği: ${o.yanlis.map(esc).join(" → ")}</small>` : ""}</li>`).join("")}</ul></section>` : ""}
+      <section><div class="sec-title"><h3>Ayarlar</h3><span>Bu cihaz için</span></div><div class="rp-ayar">
+        ${[["robotUyari", "Robot uyarıları ve yönlendirmeleri", "Hız uyarısı, “Dur, düşün”, Öğren'i atlama yönlendirmesi, “Nasıl buldun?”, oturum başı planı ve özet."],
+           ["sikBekle", "Şıklar biraz beklesin", "Seçmeli sorularda şıklar, soru okunacak kadar (en çok 5 sn) sonra açılır."],
+           ["oyunKilit", "Oyunda düşünme molası", "Art arda hızlı yanlış dokunuşta oyun 3 saniye durur."],
+           ["ogrenKilit", "Öğren bitmeden Test kilitli", "Test sekmesi, Öğren'in son adımına gelinince açılır."]].map(([k, a, t]) => `<label class="rp-sw"><input type="checkbox" data-ayar="${k}" ${ay[k] ? "checked" : ""}><span><b>${a}</b><small>${t}</small></span></label>`).join("")}
+      </div></section>
+      <section><div class="sec-title"><h3>Yedek</h3><span>Taslak siteden canlı siteye ya da başka cihaza geçerken</span></div>
+        <p class="ek">Taslak ve canlı site tarayıcı için ayrı sitelerdir; ilerleme kendiliğinden taşınmaz. Burada yedeği indir, diğer sitede bu ekrandan geri yükle. Yedek dosyası Claude'a da verilebilir (alan sözlüğü içinde).</p>
+        <div class="row"><button class="btn primary" id="rpYedek">Yedeği indir (JSON)</button><button class="btn" id="rpCsv">Kayıtları indir (Excel / CSV)</button>
+        <label class="btn ghost rp-dosya">Yedekten geri yükle<input type="file" id="rpYukle" accept=".json,application/json" hidden></label></div><p class="ek" id="rpDurum"></p></section>
+      <section><div class="row"><button class="btn ghost" id="rpPin">PIN'i değiştir</button><button class="btn ghost" id="rpKilit">Raporu kilitle</button></div>
+        <p class="src">Toplam kayıt: ${olaylar.length} olay · cihaz ${esc(cihazId)} · kayıtlar bu tarayıcıda ${KAYIT_GUN} gün tutulur.</p></section>`;
+    $$("[data-ayar]", c).forEach(x => x.onchange = () => { const a = store.get("ela7:ayar", {}) || {}; a[x.dataset.ayar] = x.checked; store.set("ela7:ayar", a); });
+    $("#rpYedek").onclick = yedekIndir; $("#rpCsv").onclick = csvIndir;
+    $("#rpYukle").onchange = e => { const f = e.target.files[0]; if (f) yedekYukle(f, $("#rpDurum")); };
+    $("#rpPin").onclick = () => { store.set("ela7:pin", null); try { sessionStorage.removeItem("ela7:pin-ok"); } catch (e) {} openRapor(); };
+    $("#rpKilit").onclick = () => { try { sessionStorage.removeItem("ela7:pin-ok"); } catch (e) {} openRapor(); };
+  }
+
   // ---------- Sayfa iskeleti ----------
   function allTopics() { return S.ders.uniteler.flatMap((u, ui) => u.konular.map((k, ki) => ({ ...k, ui, ki }))); }
 
@@ -1639,7 +2091,15 @@
   }
 
   function setTab(t) {
+    const once = S.tab;
     tts.stop(); S.tab = t; store.set(key("sekme:" + S.konu), t); // sekme her konu için ayrı hatırlanır
+    if (once !== t || !S.sekmeKayit) KAYIT.olay("sekme"); S.sekmeKayit = true;
+    // Öğren bitmeden Test'e geçildiyse robot kibarca yönlendirir (veli ayarı "ogrenKilit" açıksa Test zaten kilitli)
+    if (t === "test" && S.data && !isDurak(S.data) && !ogrenBitti(S.konu) && !document.body.classList.contains("sinif")) {
+      KAYIT.olay("atlama");
+      if (!ayar().ogrenKilit) KOC.goster("atlama", "Öğren bölümünde henüz görmediğin kartlar var. Önce onlara bakalım mı? Kartları gördükten sonra test çok daha kolay gelir.",
+        [{ etiket: "Öğren'e dön", birincil: true, fn: () => setTab("ogren") }, { etiket: "Teste devam" }]);
+    }
     if (S.durakAsil) S.data = t === "oyunlar" ? durakOyunVerisi(S.durakAsil) : S.durakAsil;   // Ara Durak oyunları birleşik veriyle çalışır
     $$(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === t));
     const p = $("#panel");
@@ -1675,6 +2135,7 @@
     try {
       if (!S.cache[id]) { const r = await fetch("konular/" + id + ".json", { cache: "no-cache" }); if (!r.ok) throw 0; S.cache[id] = await r.json(); }
       S.data = S.cache[id];
+      KAYIT.olay("konu-ac"); S.sekmeKayit = false;
       if (isDurak(S.data)) { S.donus = null; await yukleKonular(S.data.kapsar || []); if (S.konu !== id) return; renderDurak(); }
       else renderKonu(konuNoOf(id));
       if (isEn() && !isDurak(S.data)) { store.set(key("acildi:" + id), true); srs.add(wordsOf(S.data)); }
@@ -1847,7 +2308,7 @@
     sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data && $("#panel")) setTab(S.tab); };
     $("#units").onclick = e => { const b = e.target.closest(".unit-btn"); if (b) openUnit(+b.dataset.u); };
     $("#topics").onclick = e => { const b = e.target.closest(".topic"); if (b && !b.disabled) { S.donus = null; openKonu(b.dataset.id, true); } };
-    const yol = h => h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : openKonu(h, true);
+    const yol = h => h === "rapor" ? openRapor() : h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : openKonu(h, true);
     addEventListener("hashchange", () => yol(location.hash.slice(1)));
     if (isEn()) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#gunluk">Günün Tekrarı</a><a class="head-btn" href="#defter">Kelime Defterim</a>`);
     if (S.ders.atolye) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#atolye">${ICON.okuma}Okuma Atölyesi</a>`);
@@ -1857,8 +2318,10 @@
     const first = want || (ready.length ? ready[ready.length - 1].id : null);
     renderNav(); setupBot();
     const ozel = location.hash.slice(1);
-    if ((isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye")) yol(ozel);
+    KDB.temizle();
+    if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye")) yol(ozel);
     else if (first) openKonu(first, false); else $("#content").innerHTML = `<div class="notice">Henüz eklenmiş konu yok.</div>`;
+    if (ozel !== "rapor") KOC.plan();
   }
   boot();
 })();
