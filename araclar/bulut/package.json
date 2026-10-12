@@ -1,0 +1,8 @@
+{
+  "name": "ela7-bulut",
+  "private": true,
+  "type": "module",
+  "description": "Firebase (Auth + Firestore Lite) paketini public/ortak/bulut.js olarak derler. Çalıştır: npm install && npm run derle",
+  "scripts": { "derle": "esbuild bulut.mjs --bundle --format=esm --minify --target=es2020 --outfile=../../public/ortak/bulut.js --legal-comments=none" },
+  "devDependencies": { "firebase": "12.19.0", "esbuild": "0.28.2" }
+}

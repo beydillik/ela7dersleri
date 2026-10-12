@@ -38,3 +38,12 @@ Bu dosya, skill'e henüz eklenmemiş motor kurallarını toplar. Faz 2 bitince s
 - Olaylar: `sinav-basla`, `sinav-soru`, `sinav-bitti`. Kayıt: `ela7:<kod>:sinav:<durak>` (yarım), `sinavlar:<durak>` (geçmiş), `sinav-gor` (soru görülme sayısı; az görülen önce).
 - Havuz yazarken: biçimler okul testlerinden (Banko, Arı) örnek alınır, sorular kitaba dayanarak yazılır; kopyalanmaz. Konu başına 4–7 soru, türler karışık, doğru şık dağılsın. Doğrulama: `gen_fen_sinav.py` benzeri betikle kavram adı, şık sayısı, `___` sayısı.
 - Fen Ünite 1: 40 soru (secim 15 — 6'sı öncüllü —, dy 7, kisa 7, bosluk 4, eslestir 4, dytablo 3).
+
+## Bulut (Faz 3, Firebase)
+- Firebase projesi `ela7dersleri` (Spark, Firestore europe-west3). Giriş: veli e-posta/şifre, öğrenci cihazı anonim.
+- Kaynak `araclar/bulut/bulut.mjs` → derlenmiş `public/ortak/bulut.js` (`cd araclar/bulut && npm install && npm run derle`). İki ayrı Firebase oturumu: "ogrenci" ve "veli"; veli Ela'nın bilgisayarında girip çıksa da cihaz bağlantısı kopmaz.
+- Kurallar `araclar/bulut/firestore.rules` (konsolda Firestore → Rules'a yapıştırılıp Publish). Kurallar değişirse yeniden yayımlanmalı.
+- Veri: `ogrenciler/{ogr}` {veli, takmaAd, cihazlar[], ayar}; `oturumlar/{oturum~parça}` {bit, olaylar[]}; `ilerleme/durum` {veri{anahtar:{v,t}}}; `eslestirme/{kod}` (24 saat).
+- Motor (`BULUT` defter.js): yalnızca `ela7:bulut` kaydı olan (bağlanmış) cihazda bulut.js yüklenir. Bağlı olmayan cihaz (öğretmenler) hiçbir şey göndermez.
+- Eşitleme: ders sayfası açılınca (3 sn sonra), test/sınav/Öğren/Atölye bitince, 2 dk'da bir (yeni olay varsa), sayfa gizlenince. Olaylar `son` zamanından sonrakiler; ilerleme: son eşitlemeden beri bu cihazda değişen anahtar gider, değişmeyen anahtar buluttakiyle güncellenir (silinen anahtar v:null). Hariç: `BULUT_HARIC` (cihaz, oturum, pin, sekme, oyun, ayar…). Ayar buluttan gelir (bağlı cihazda yerel ayar kutuları kilitli).
+- Veli Paneli: giriş ekranı (Veli girişi / Öğrenci cihazı kodla bağlama / "Bu cihazın kaydını aç (PIN'le, bulutsuz)"). Veli hesabında: öğrenci ekle (takma ad), öğrenci seçimi, buluttaki son 90 gün, Cihazlar (bu cihazı bağla, kod üret, bağlantıları kaldır). Görünüm yerel modla aynı (`VELI.olaylar`, `VELI.oku`, `VELI.ayar/ayarYaz`).

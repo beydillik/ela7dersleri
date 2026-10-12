@@ -1,0 +1,45 @@
+rules_version = '2';
+// Ela'nın Defteri — Firestore güvenlik kuralları.
+// Firebase konsolu → Databases & Storage → Firestore → Rules sekmesine bu dosyanın tamamı yapıştırılıp Publish edilir.
+// - Her veli yalnızca kendi açtığı öğrencileri görür ve yönetir.
+// - Öğrenci cihazı (anonim kullanıcı) yalnızca bağlandığı öğrencinin kayıt ve ilerlemesini okur/yazar.
+// - Cihaz, öğrenciye ancak geçerli (24 saatlik) bir eşleştirme koduyla kendini ekleyebilir.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function giris() { return request.auth != null; }
+    function ogrenci(ogr) { return get(/databases/$(database)/documents/ogrenciler/$(ogr)).data; }
+    function veliMi(ogr) { return giris() && ogrenci(ogr).veli == request.auth.uid; }
+    function cihazMi(ogr) { return giris() && request.auth.uid in ogrenci(ogr).cihazlar; }
+    function kod(k) { return get(/databases/$(database)/documents/eslestirme/$(k)).data; }
+
+    match /ogrenciler/{ogr} {
+      allow create: if giris() && request.resource.data.veli == request.auth.uid
+                    && request.resource.data.cihazlar.size() == 0;
+      allow list: if giris() && resource.data.veli == request.auth.uid;
+      allow get: if giris() && (resource.data.veli == request.auth.uid || request.auth.uid in resource.data.cihazlar);
+      allow delete: if giris() && resource.data.veli == request.auth.uid;
+      allow update: if giris() && (
+        // veli: kendi öğrencisini değiştirebilir (sahiplik değişmez)
+        (resource.data.veli == request.auth.uid && request.resource.data.veli == resource.data.veli)
+        // cihaz: yalnızca kendini cihaz listesine ekler, geçerli bir kodla
+        || (request.resource.data.diff(resource.data).affectedKeys().hasOnly(['cihazlar', 'sonKod'])
+            && request.resource.data.cihazlar.hasAll(resource.data.cihazlar)
+            && request.resource.data.cihazlar.toSet().difference(resource.data.cihazlar.toSet()) == [request.auth.uid].toSet()
+            && kod(request.resource.data.sonKod).ogr == ogr
+            && kod(request.resource.data.sonKod).son > request.time)
+      );
+
+      // oturumlar ve ilerleme
+      match /{alt=**} {
+        allow read, write: if veliMi(ogr) || cihazMi(ogr);
+      }
+    }
+
+    match /eslestirme/{k} {
+      allow create: if giris() && request.resource.data.veli == request.auth.uid
+                    && ogrenci(request.resource.data.ogr).veli == request.auth.uid;
+      allow get, delete: if giris();
+      allow list, update: if false;
+    }
+  }
+}

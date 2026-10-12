@@ -239,6 +239,7 @@
         ders: S.ders ? S.ders.kod : "", konu: S.konu || "", konuBaslik: S.data ? S.data.baslik || "" : S.botBaslik || "",
         bolum: S.konu && String(S.konu).startsWith("atolye") ? "atolye" : S.tab || "", olay, ...ek };
       OT.kuyruk.push(ev); this.bosalt();
+      BULUT.kirli = true; if (BULUT_TETIK.includes(olay)) BULUT.planla(1500);
       return ev;
     },
     sayac(f) { const o = store.get("ela7:oturum", null); if (!o) return {}; f(o.sayac = o.sayac || {}); store.set("ela7:oturum", o); return o.sayac; },
@@ -247,6 +248,87 @@
   KDB.ac();   // sayfa açılır açılmaz veritabanını hazırla
   addEventListener("pagehide", () => KAYIT.bosalt());
   document.addEventListener("visibilitychange", () => { if (document.hidden) KAYIT.bosalt(); });
+
+  // =================================================================
+  // ---------- Bulut eşitleme (Firebase) ----------
+  // Yalnızca veli panelinden bağlanmış öğrenci cihazında çalışır ("ela7:bulut" kaydı varsa). Bağlı olmayan cihaz
+  // (ör. öğretmenler) buluta hiçbir şey göndermez, bulut.js'i yüklemez.
+  // Gönderilen: yeni olaylar (oturum belgelerine) ve ilerleme anahtarları. Alınan: veli ayarları ve başka cihazdaki ilerleme.
+  // İlerleme birleştirme: son eşitlemeden beri bu cihazda değişen anahtar buluta yazılır; değişmeyen anahtar buluttakiyle güncellenir.
+  // =================================================================
+  const MOTOR_URL = (document.currentScript && document.currentScript.src) || location.href;
+  const BULUT_HARIC = /^ela7:(cihaz|oturum|pin|bulut|bulut-anlik|bulut-say|temizlik|sinif|ayar|veli-sekme|bot-onay)$|:sekme:|:oyun$/;
+  const BULUT_TETIK = ["test-bitti", "sinav-bitti", "ogren-bitti", "atolye-tur"];
+  const BULUT_PARCA = 800;   // oturum belgesi başına en çok olay
+  const BULUT = {
+    m: null, zam: null, is: null, kirli: false,
+    bilgi() { return store.get("ela7:bulut", null); },
+    yukle() {
+      if (!this.m) this.m = import(new URL("bulut.js", MOTOR_URL).href).then(async m => { await m.hazir; return m; }).catch(e => { this.m = null; throw e; });
+      return this.m;
+    },
+    planla(ms = 5000) { if (!this.bilgi()) return; clearTimeout(this.zam); this.zam = setTimeout(() => this.esitle().catch(() => {}), ms); },
+    esitle() {
+      const b = this.bilgi(); if (!b || !b.ogr) return Promise.resolve(null);
+      if (this.is) return this.is;
+      this.kirli = false;
+      this.is = this._esitle(b).then(sonuc => { store.set("ela7:bulut", { ...this.bilgi(), ...sonuc, t: simdi(), hata: null }); return sonuc; },
+        e => { const x = this.bilgi(); if (x) store.set("ela7:bulut", { ...x, hata: String(e && e.message || e).slice(0, 160), ht: simdi() }); this.kirli = true; throw e; })
+        .finally(() => { this.is = null; });
+      return this.is;
+    },
+    async _esitle(b) {
+      KAYIT.bosalt();
+      const m = await this.yukle(), u = m.cihaz();
+      if (!u || u.uid !== b.uid) throw new Error("Cihaz oturumu bulunamadı. Veli Paneli'nden yeniden bağla.");
+      // 1) Veli ayarları
+      const o = await m.ogrenciOku(b.ogr);
+      if (!o) throw new Error("Öğrenci kaydı okunamadı.");
+      if (o.ayar) store.set("ela7:ayar", o.ayar);
+      // 2) İlerleme
+      const anlik = store.get("ela7:bulut-anlik", {}) || {}, uzak = await m.ilerlemeOku(b.ogr), yerel = {}, gonder = {}, yeni = {}, t = simdi();
+      let cekilen = 0;
+      try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith("ela7:") && !BULUT_HARIC.test(k)) yerel[k] = localStorage.getItem(k); } } catch (e) {}
+      new Set([...Object.keys(yerel), ...Object.keys(uzak)]).forEach(k => {
+        if (BULUT_HARIC.test(k)) return;
+        const L = yerel[k] ?? null, A = anlik[k] ?? null, R = uzak[k] ? uzak[k].v ?? null : null;
+        let son = L;
+        if (L !== A) { if (L !== R) gonder[k] = { v: L, t }; }                       // bu cihazda değişti → buluta
+        else if (uzak[k] && R !== L) {                                                // başka cihazda değişti → buraya
+          try { R === null ? localStorage.removeItem(k) : localStorage.setItem(k, R); } catch (e) {}
+          son = R; cekilen++;
+        }
+        if (son !== null) yeni[k] = son;
+      });
+      if (Object.keys(gonder).length) await m.ilerlemeYaz(b.ogr, gonder);
+      store.set("ela7:bulut-anlik", yeni);
+      // 3) Yeni olaylar
+      const say = store.get("ela7:bulut-say", {}) || {}, ev = (await KDB.hepsi()).filter(x => x.ts > (b.son || 0));
+      let son = b.son || 0;
+      if (ev.length) {
+        const g = new Map();
+        ev.forEach(x => {
+          const n = say[x.oturum] || 0; say[x.oturum] = n + 1;
+          const id = `${x.oturum}~${Math.floor(n / BULUT_PARCA)}`;
+          let p = g.get(id); if (!p) g.set(id, p = { id, oturum: x.oturum, cihaz: x.cihaz, bit: 0, olaylar: [] });
+          p.olaylar.push(JSON.parse(JSON.stringify(x))); p.bit = Math.max(p.bit, x.ts); son = Math.max(son, x.ts);
+        });
+        await m.oturumYaz(b.ogr, [...g.values()]);
+        if (Object.keys(say).length > 300) { const ot = new Set(ev.map(x => x.oturum)); Object.keys(say).forEach(k => { if (!ot.has(k)) delete say[k]; }); }   // sayaç tablosu büyümesin
+        store.set("ela7:bulut-say", say);
+      }
+      return { son, gonderilen: ev.length, ilerlemeGiden: Object.keys(gonder).length, cekilen, takmaAd: o.takmaAd || b.takmaAd };
+    },
+    // Bu cihazı koda göre öğrenciye bağla ve ilk eşitlemeyi yap
+    async bagla(kod) {
+      const m = await this.yukle(), r = await m.cihazBagla(kod);
+      store.set("ela7:bulut", { ogr: r.ogr, takmaAd: r.takmaAd, uid: r.uid, son: 0, bag: simdi() });
+      store.set("ela7:bulut-anlik", {}); store.set("ela7:bulut-say", {});
+      await this.esitle();
+      return r;
+    },
+    birak() { try { ["ela7:bulut", "ela7:bulut-anlik", "ela7:bulut-say"].forEach(k => localStorage.removeItem(k)); } catch (e) {} }
+  };
 
   // Veli ayarları (PIN'li rapor ekranından değiştirilir). Varsayılan: robot uyarıları açık, kilitler kapalı.
   const AYAR_VARSAYILAN = { robotUyari: true, sikBekle: false, oyunKilit: false, ogrenKilit: false };
@@ -2292,7 +2374,7 @@
 
   // Bir dersin konu konu durumu (panelde tablo, raporda "konuDurumu")
   function konuDurumu(kod, ders, olaylar) {
-    const g = k => store.get(`ela7:${kod}:${k}`, null), satir = [];
+    const g = k => VELI.oku(`ela7:${kod}:${k}`), satir = [];
     (ders.uniteler || []).forEach(u => u.konular.filter(k => k.hazir).forEach(k => {
       const sonIs = olaylar.filter(o => o.ders === kod && o.konu === k.id).reduce((a, o) => Math.max(a, o.ts), 0) || null;
       if (k.tur === "tarama") {
@@ -2317,7 +2399,7 @@
   // Seçilen dersler ve dönem için rapor dosyası
   async function raporIndir(dersler, gunSay, bicim) {
     KAYIT.bosalt(); await new Promise(r => setTimeout(r, 300));
-    const sinir = gunSay ? simdi() - gunSay * 864e5 : 0, hepsi = await KDB.hepsi();
+    const sinir = gunSay ? simdi() - gunSay * 864e5 : 0, hepsi = VELI.bulut ? VELI.olaylar : (await KDB.hepsi()).filter(o => o.olay !== "rapor-ac");
     const ev = hepsi.filter(o => o.ts >= sinir && (dersler.includes(o.ders)));
     const ad = dersler.length === DERS_LISTE.length ? "tum" : dersler.join("-"), tarih = gun();
     if (bicim === "csv") {
@@ -2326,7 +2408,7 @@
     }
     const konular = {};
     for (const kod of dersler) { const d = VELI.dersler[kod]; if (d) konular[kod] = { ders: d.ders, konular: konuDurumu(kod, d, hepsi) }; }
-    const veri = { tur: "ela7dersleri-rapor", v: KAYIT_V, olusturma: yerelZaman(simdi()), kaynak: location.origin, cihaz: cihazId,
+    const veri = { tur: "ela7dersleri-rapor", v: KAYIT_V, olusturma: yerelZaman(simdi()), kaynak: VELI.bulut ? `bulut (öğrenci: ${VELI.bulut.ogr.takmaAd}, bütün bağlı cihazlar)` : location.origin, cihaz: VELI.bulut ? "hepsi" : cihazId,
       kapsam: { dersler: dersler.map(k => `${k} (${dersAd(k)})`), donem: gunSay ? `son ${gunSay} gün` : "bütün kayıt" },
       okuma: "Claude için: önce 'sozluk'u oku. 'konuDurumu' her dersin konu konu durumu (Öğren, test ilk/son çözüş, zorlandığı kavramlar, Ara Durak sonucu), 'oturumlar' her çalışma oturumunun özeti, 'olaylar' ayrıntılı kayıt.",
       sozluk: KAYIT_SOZLUK, konuDurumu: konular, oturumlar: ozetle(ev), olaylar: ev };
@@ -2371,23 +2453,110 @@
     return s + `</svg><div class="rp-lejant">${dersler.map(k => `<span><i style="background:${dersRenk(k)}"></i>${esc(dersAd(k))}</span>`).join("")}<span class="rp-not">dakika · olaylar arası boşluklar (en çok 3 dk) toplanır</span></div>`;
   }
 
-  const VELI = { dersler: {}, sekme: "genel" };
+  // Veri kaynağı: VELI.bulut boşsa bu cihazın kaydı (PIN'li), doluysa veli hesabındaki öğrencinin bulut kaydı (bütün bağlı cihazlar).
+  const VELI = { dersler: {}, sekme: "genel", bulut: null, olaylar: [], oku: k => store.get(k, null), ayar: () => ayar(), ayarYaz: a => store.set("ela7:ayar", a) };
+  const yerelKaynak = () => Object.assign(VELI, { bulut: null, oku: k => store.get(k, null), ayar: () => ayar(), ayarYaz: a => store.set("ela7:ayar", a) });
+  const HATA_TR = { "auth/invalid-credential": "E-posta ya da şifre yanlış.", "auth/wrong-password": "E-posta ya da şifre yanlış.", "auth/user-not-found": "Bu e-postayla kayıtlı hesap yok.",
+    "auth/invalid-email": "E-posta adresi geçerli değil.", "auth/missing-password": "Şifreyi yaz.", "auth/weak-password": "Şifre en az 6 karakter olmalı.", "auth/email-already-in-use": "Bu e-postayla zaten hesap var. Giriş yap.",
+    "auth/too-many-requests": "Çok fazla deneme yapıldı. Biraz bekleyip yeniden dene.", "auth/network-request-failed": "İnternet bağlantısı yok gibi görünüyor.",
+    "auth/operation-not-allowed": "Bu giriş yöntemi Firebase'de açık değil (Authentication → Sign-in method).", "auth/admin-restricted-operation": "Anonim giriş Firebase'de açık değil (Authentication → Sign-in method → Anonymous).",
+    "permission-denied": "İzin yok: Firestore kuralları yayımlanmamış ya da bu kayıt sana ait değil.", "unavailable": "Sunucuya ulaşılamadı. İnternet bağlantısını kontrol et." };
+  const hataYaz = e => HATA_TR[e && e.code] || HATA_TR[String(e && e.code).replace("firestore/", "")] || (e && e.message) || "Bilinmeyen hata";
+  const zamanOnce = ts => { if (!ts) return "henüz yok"; const d = Math.round((simdi() - ts) / 60000); return d < 1 ? "az önce" : d < 60 ? `${d} dk önce` : d < 1440 ? `${Math.round(d / 60)} saat önce` : tarihYaz(gunKey(ts)); };
+
   async function bootVeli() {
-    drawStars(); addEventListener("resize", drawStars);
+    if (!VELI.ilk) { VELI.ilk = 1; drawStars(); addEventListener("resize", drawStars); }
     const c = $("#content");
-    pinKapi(c, () => veliCiz(c));
+    c.innerHTML = `<div class="notice">Panel açılıyor…</div>`;
+    let m = null;
+    try { m = await BULUT.yukle(); } catch (e) { VELI.bulutHata = hataYaz(e); }
+    if (m && m.veli()) return veliBulut(c, m);
+    veliKapi(c, m);
   }
+
+  // Giriş ekranı: veli hesabı + bu cihazın öğrenci bağlantısı + bulutsuz (bu cihaz, PIN'li) görünüm
+  function veliKapi(c, m) {
+    const b = BULUT.bilgi();
+    c.innerHTML = `<div class="vk">
+      <section class="vk-kart"><h3>Veli girişi</h3>
+        ${m ? `<p class="ek">Hesabınla girince bütün bağlı cihazlardaki çalışmayı görürsün.</p>
+        <form id="vkF" class="vk-form"><label>E-posta<input id="vkE" type="email" autocomplete="username" required></label>
+          <label>Şifre<input id="vkS" type="password" autocomplete="current-password" minlength="6" required></label>
+          <div class="row"><button class="btn primary" id="vkGir">Giriş yap</button><button class="btn" type="button" id="vkKayit">Yeni hesap aç</button><button class="btn ghost" type="button" id="vkUnut">Şifremi unuttum</button></div></form>
+        <p class="ek vk-msg" id="vkMsg" role="status"></p>` : `<div class="notice">Bulut bağlantısı kurulamadı${VELI.bulutHata ? `: ${esc(VELI.bulutHata)}` : ""}. Aşağıdan bu cihazın kaydını açabilirsin.</div>`}
+      </section>
+      <section class="vk-kart"><h3>Öğrenci cihazı</h3>${cihazKartHTML(b, !!m)}</section>
+      <p class="vk-yerel"><button class="btn ghost" id="vkYerel">Bu cihazın kaydını aç (PIN'le, bulutsuz)</button></p></div>`;
+    $("#vkYerel").onclick = () => { yerelKaynak(); pinKapi(c, () => veliCiz(c)); };
+    cihazKartBagla(c, () => veliKapi(c, m));
+    if (!m) return;
+    const msg = t => $("#vkMsg").textContent = t, deg = () => [$("#vkE").value.trim(), $("#vkS").value];
+    const yap = async f => { msg("Bekle…"); try { await f(); bootVeli(); } catch (e) { msg(hataYaz(e)); } };
+    $("#vkF").onsubmit = e => { e.preventDefault(); const [a, p] = deg(); yap(() => m.veliGiris(a, p)); };
+    $("#vkKayit").onclick = () => { const [a, p] = deg(); if (!a || p.length < 6) return msg("E-posta yaz ve en az 6 karakterli bir şifre belirle."); yap(() => m.veliKayit(a, p)); };
+    $("#vkUnut").onclick = async () => { const [a] = deg(); if (!a) return msg("Önce e-posta adresini yaz."); try { await m.sifreSifirla(a); msg("Şifre yenileme bağlantısı e-postana gönderildi (gereksiz/spam klasörüne de bak)."); } catch (e) { msg(hataYaz(e)); } };
+  }
+
+  // Bu cihazın öğrenci bağlantısı (giriş ekranında ve veli hesabının Cihazlar bölümünde)
+  function cihazKartHTML(b, bulutVar, formYok) {
+    if (b) return `<p>Bu cihaz <b>${esc(b.takmaAd || "öğrenci")}</b> için bağlı. Çalışmalar buluta gönderiliyor.</p>
+      <p class="ek">Son eşitleme: <b id="ckSon">${zamanOnce(b.t)}</b>${b.hata ? ` · <span class="rp-k">son deneme başarısız: ${esc(b.hata)}</span>` : ""}</p>
+      <div class="row"><button class="btn" id="ckEsitle" ${bulutVar ? "" : "disabled"}>Şimdi eşitle</button><button class="btn ghost" id="ckBirak">Bu cihazın bağlantısını kaldır</button></div><p class="ek" id="ckMsg" role="status"></p>`;
+    return `<p class="ek">Bu cihaz bir öğrenciye bağlı değil; çalışmalar yalnızca bu cihazda kalır. Ela'nın cihazıysa veli panelinde üretilen 6 haneli kodu yaz.</p>
+      ${bulutVar && !formYok ? `<form id="ckF" class="row"><input id="ckKod" maxlength="7" placeholder="KOD" autocomplete="off" autocapitalize="characters" spellcheck="false" required><button class="btn primary">Bağla</button></form>` : ""}<p class="ek" id="ckMsg" role="status"></p>`;
+  }
+  function cihazKartBagla(c, yenile) {
+    const msg = t => { const x = $("#ckMsg"); if (x) x.textContent = t; };
+    if ($("#ckEsitle")) $("#ckEsitle").onclick = async () => { msg("Eşitleniyor…"); try { const r = await BULUT.esitle(); msg(`Tamam: ${r.gonderilen} yeni kayıt ve ${r.ilerlemeGiden} ilerleme bilgisi gönderildi, ${r.cekilen} bilgi alındı.`); $("#ckSon").textContent = "az önce"; } catch (e) { msg("Eşitlenemedi: " + hataYaz(e)); } };
+    if ($("#ckBirak")) $("#ckBirak").onclick = () => { if (!confirm("Bu cihazın bağlantısı kaldırılsın mı? Bu cihazdaki kayıtlar silinmez, yalnızca buluta gönderilmez. Yeniden bağlamak için yeni kod gerekir.")) return; BULUT.birak(); yenile(); };
+    if ($("#ckF")) $("#ckF").onsubmit = async e => { e.preventDefault(); msg("Bağlanıyor ve eşitleniyor… (eski kayıtlar da gönderildiği için biraz sürebilir)"); try { const r = await BULUT.bagla($("#ckKod").value); msg(`Bağlandı: ${r.takmaAd}.`); setTimeout(yenile, 900); } catch (e) { msg(hataYaz(e)); } };
+  }
+
+  // Veli hesabıyla: öğrenci seçimi, buluttaki kayıt
+  async function veliBulut(c, m) {
+    let liste;
+    try { liste = await m.ogrenciler(); } catch (e) { c.innerHTML = `<div class="notice">Öğrenci listesi okunamadı: ${esc(hataYaz(e))}</div><p class="vk-yerel"><button class="btn ghost" id="vbCik">Çıkış yap</button></p>`; $("#vbCik").onclick = async () => { await m.cikis(); bootVeli(); }; return; }
+    if (!liste.length) {
+      c.innerHTML = `<div class="vk"><section class="vk-kart"><h3>Öğrencini ekle</h3><p class="ek">Gerçek ad yerine bir takma ad yeterli (ör. "Ela" ya da "E."). Panelde ve raporlarda bu ad görünür.</p>
+        <form id="vbF" class="row"><input id="vbAd" maxlength="24" placeholder="Takma ad" required><button class="btn primary">Ekle</button></form><p class="ek" id="vbMsg"></p></section>
+        <p class="vk-yerel">${esc(m.veli().email)} · <button class="btn ghost" id="vbCik">Çıkış yap</button></p></div>`;
+      $("#vbCik").onclick = async () => { await m.cikis(); bootVeli(); };
+      $("#vbF").onsubmit = async e => { e.preventDefault(); try { await m.ogrenciEkle($("#vbAd").value.trim()); veliBulut(c, m); } catch (x) { $("#vbMsg").textContent = hataYaz(x); } };
+      return;
+    }
+    let sec; try { sec = sessionStorage.getItem("ela7:veli-ogr"); } catch (e) {}
+    const ogr = liste.find(o => o.id === sec) || liste[0], bu = BULUT.bilgi(), buCihaz = bu && bu.ogr === ogr.id;
+    c.innerHTML = `<div class="notice">${esc(ogr.takmaAd)} için kayıtlar buluttan alınıyor…</div>`;
+    if (buCihaz) { try { await BULUT.esitle(); } catch (e) {} }
+    try {
+      const [ev, il] = await Promise.all([m.oturumlarOku(ogr.id, simdi() - KAYIT_GUN * 864e5), m.ilerlemeOku(ogr.id, "veli")]);
+      const gor = new Set(); VELI.olaylar = ev.filter(o => o && o.k && o.olay !== "rapor-ac" && !gor.has(o.k) && gor.add(o.k)).sort((a, b) => a.ts - b.ts);
+      VELI.oku = k => { const x = il[k]; if (!x || x.v == null) return null; try { return JSON.parse(x.v); } catch (e) { return null; } };
+    } catch (e) { c.innerHTML = `<div class="notice">Kayıtlar okunamadı: ${esc(hataYaz(e))}</div>`; return; }
+    VELI.bulut = { m, ogr, liste, buCihaz };
+    VELI.ayar = () => ({ ...AYAR_VARSAYILAN, ...(ogr.ayar || {}) });
+    VELI.ayarYaz = async a => { ogr.ayar = a; if (buCihaz) store.set("ela7:ayar", a); try { await m.ayarYaz(ogr.id, a); } catch (e) { alert("Ayar kaydedilemedi: " + hataYaz(e)); } };
+    veliCiz(c);
+  }
+
   async function veliCiz(c) {
     c.innerHTML = `<div class="notice">Kayıtlar yükleniyor…</div>`;
-    KAYIT.olay("rapor-ac"); KAYIT.bosalt(); await new Promise(r => setTimeout(r, 250));
+    if (!VELI.bulut) { KAYIT.olay("rapor-ac"); KAYIT.bosalt(); await new Promise(r => setTimeout(r, 250)); VELI.olaylar = (await KDB.hepsi()).filter(o => o.olay !== "rapor-ac"); }
     await Promise.all(DERS_LISTE.map(async ([kod]) => { if (VELI.dersler[kod]) return; try { const r = await fetch(`../${kod}/ders.json`, { cache: "no-cache" }); if (r.ok) VELI.dersler[kod] = await r.json(); } catch (e) {} }));
-    const olaylar = (await KDB.hepsi()).filter(o => o.olay !== "rapor-ac");
+    const olaylar = VELI.olaylar, vb = VELI.bulut;
     const kodlar = DERS_LISTE.map(x => x[0]).filter(k => VELI.dersler[k]);
     try { VELI.sekme = sessionStorage.getItem("ela7:veli-sekme") || "genel"; } catch (e) {}
     if (VELI.sekme !== "genel" && !kodlar.includes(VELI.sekme)) VELI.sekme = "genel";
-    c.innerHTML = `<section class="konu-head"><div class="meta"><span>Bu cihaz</span><span class="pill">Kayıt ${KAYIT_GUN} gün tutulur</span></div>
+    const ust = vb ? `${vb.liste.length > 1 ? `<select id="vbOgr" aria-label="Öğrenci">${vb.liste.map(o => `<option value="${esc(o.id)}" ${o.id === vb.ogr.id ? "selected" : ""}>${esc(o.takmaAd)}</option>`).join("")}</select>` : `<span><b>${esc(vb.ogr.takmaAd)}</b></span>`}
+        <span>Bulut · ${(vb.ogr.cihazlar || []).length} bağlı cihaz</span><span class="pill">${esc(vb.m.veli().email)}</span><button class="btn ghost vb-cik" id="vbCik">Çıkış</button>`
+      : `<span>Bu cihaz</span><span class="pill">Kayıt ${KAYIT_GUN} gün tutulur</span><button class="btn ghost vb-cik" id="vbGiris">Veli girişi</button>`;
+    c.innerHTML = `<section class="konu-head"><div class="meta">${ust}</div>
       <div class="tabs" role="tablist"><button class="tab" role="tab" data-vs="genel">Genel</button>${kodlar.map(k => `<button class="tab" role="tab" data-vs="${k}"><i class="rp-nokta" style="background:${dersRenk(k)}"></i>${esc(dersAd(k))}</button>`).join("")}</div></section>
       <div class="panel" id="panel"></div>`;
+    if (vb) {
+      $("#vbCik").onclick = async () => { await vb.m.cikis(); yerelKaynak(); bootVeli(); };
+      if ($("#vbOgr")) $("#vbOgr").onchange = e => { try { sessionStorage.setItem("ela7:veli-ogr", e.target.value); } catch (x) {} veliBulut(c, vb.m); };
+    } else $("#vbGiris").onclick = () => { try { sessionStorage.removeItem("ela7:pin-ok"); } catch (e) {} bootVeli(); };
     const sec = s => { VELI.sekme = s; try { sessionStorage.setItem("ela7:veli-sekme", s); } catch (e) {} $$("[data-vs]").forEach(b => b.setAttribute("aria-selected", b.dataset.vs === s)); (s === "genel" ? veliGenel : veliDers)($("#panel"), olaylar, kodlar, s); };
     $$("[data-vs]").forEach(b => b.onclick = () => sec(b.dataset.vs));
     sec(VELI.sekme);
@@ -2431,7 +2600,8 @@
     return z.length ? `<ul class="rp-zor">${z.map(o => `<li><span class="rp-d">${esc(dersAd(o.ders))} · ${esc(o.konuBaslik)} · ${gunAdi(o.ts)}${o.olay === "sinav-soru" ? " · Sınav Provası" : ""}</span>${esc(o.soru)}${o.yanlis && o.yanlis.length ? `<small>Seçtiği: ${o.yanlis.map(esc).join(" → ")}</small>` : o.cevap ? `<small>Cevabı: ${esc(o.cevap)}</small>` : ""}</li>`).join("")}</ul>` : `<p class="ek">Bu dönemde yanlış yapılan soru yok.</p>`; };
 
   function veliGenel(p, olaylar, kodlar) {
-    const s7 = olaylar.filter(o => o.ts >= simdi() - 7 * 864e5), dag = aktifDagit(olaylar), ay = ayar();
+    const s7 = olaylar.filter(o => o.ts >= simdi() - 7 * 864e5), dag = aktifDagit(olaylar), ay = VELI.ayar(), vb = VELI.bulut, bagli = BULUT.bilgi();
+    const ayarKilit = !vb && bagli;   // bağlı cihazda ayarlar veli hesabından gelir
     const gunler = new Map(); ozetle(s7).forEach(z => { const g = gunKey(z.bas); const x = gunler.get(g) || { ts: z.bas, soru: 0, ilkSoru: 0, ilk1: 0, hizli: 0, rastgele: 0, hizliGecis: 0, atlama: 0, dersler: new Set() }; ["soru", "ilkSoru", "ilk1", "hizli", "rastgele", "hizliGecis", "atlama"].forEach(f => x[f] += z[f]); Object.keys(z.dersler).forEach(d_ => x.dersler.add(dersAd(d_))); gunler.set(g, x); });
     const bay = (n, t) => n ? `<span class="rp-bay" title="${esc(t)}">${n}</span>` : `<span class="rp-sifir">0</span>`;
     p.innerHTML = `<section><div class="sec-title"><h3>Son 7 gün</h3><span>Bütün dersler</span></div>${ozetKutular(s7)}</section>
@@ -2445,25 +2615,37 @@
         <div class="rp-indir"><div class="rp-secim">${kodlar.map(k => `<label><input type="checkbox" data-rd="${k}" checked> ${esc(dersAd(k))}</label>`).join("")}</div>
         <div class="row"><select id="rpDonem"><option value="7">Son 7 gün</option><option value="30" selected>Son 30 gün</option><option value="90">Son 90 gün</option><option value="0">Bütün kayıt</option></select>
         <button class="btn primary" id="rpJson">Rapor (JSON, Claude için)</button><button class="btn" id="rpCsv">Kayıtlar (CSV, Excel)</button></div><p class="ek" id="rpMsg"></p></div></section>
-      <section><div class="sec-title"><h3>Ayarlar</h3><span>Bu cihaz için</span></div><div class="rp-ayar">
+      <section><div class="sec-title"><h3>Ayarlar</h3><span>${vb ? `${esc(vb.ogr.takmaAd)} · bağlı bütün cihazlar` : "Bu cihaz için"}</span></div>${ayarKilit ? `<p class="ek">Bu cihaz bağlı: ayarlar veli hesabından gelir. Değiştirmek için veli girişi yap.</p>` : vb ? `<p class="ek">Değişiklik, Ela'nın cihazında bir sonraki açılışta (ya da en geç birkaç dakika içinde) geçerli olur.</p>` : ""}<div class="rp-ayar">
         ${[["robotUyari", "Robot uyarıları ve yönlendirmeleri", "Hız uyarısı, “Dur, düşün”, Öğren'i atlama yönlendirmesi, “Nasıl buldun?”, oturum başı planı ve özet."],
            ["sikBekle", "Şıklar biraz beklesin", "Seçmeli sorularda şıklar, soru okunacak kadar (en çok 5 sn) sonra açılır."],
            ["oyunKilit", "Oyunda düşünme molası", "Art arda hızlı yanlış dokunuşta oyun 3 saniye durur."],
-           ["ogrenKilit", "Öğren bitmeden Test kilitli", "Test sekmesi, Öğren'in son adımına gelinince açılır."]].map(([k, a, t]) => `<label class="rp-sw"><input type="checkbox" data-ayar="${k}" ${ay[k] ? "checked" : ""}><span><b>${a}</b><small>${t}</small></span></label>`).join("")}
+           ["ogrenKilit", "Öğren bitmeden Test kilitli", "Test sekmesi, Öğren'in son adımına gelinince açılır."]].map(([k, a, t]) => `<label class="rp-sw"><input type="checkbox" data-ayar="${k}" ${ay[k] ? "checked" : ""} ${ayarKilit ? "disabled" : ""}><span><b>${a}</b><small>${t}</small></span></label>`).join("")}
       </div></section>
-      <section><div class="sec-title"><h3>Tam yedek</h3><span>Taslak siteden canlı siteye ya da başka cihaza geçerken</span></div>
+      ${vb ? `<section><div class="sec-title"><h3>Cihazlar</h3><span>${esc(vb.ogr.takmaAd)} için ${(vb.ogr.cihazlar || []).length} bağlı cihaz</span></div>
+        <div class="vk-kart"><p class="ek">Ela'nın çalıştığı her cihazı (taslak ve canlı site ayrı sayılır) bir kez bağla. Bağlı olmayan cihazlar (ör. öğretmenler) buluta bir şey göndermez.</p>
+          <div class="row">${vb.buCihaz ? "" : `<button class="btn primary" id="vbBagla">Bu cihazı ${esc(vb.ogr.takmaAd)} için bağla</button>`}<button class="btn" id="vbKod">Başka cihaz için kod üret</button>${(vb.ogr.cihazlar || []).length ? `<button class="btn ghost" id="vbSifirla">Bütün cihaz bağlantılarını kaldır</button>` : ""}</div>
+          <div id="vbKodK"></div><p class="ek" id="vbMsg" role="status"></p>
+          <h4 class="rp-unite">Bu cihaz</h4>${bagli ? cihazKartHTML(bagli, true) : `<p class="ek">Bu cihaz bağlı değil.</p>`}</div></section>` : `<section><div class="sec-title"><h3>Tam yedek</h3><span>Taslak siteden canlı siteye ya da başka cihaza geçerken</span></div>
         <p class="ek">Taslak ve canlı site tarayıcı için ayrı sitelerdir; ilerleme kendiliğinden taşınmaz. Tam yedeği indir, diğer sitede bu panelden geri yükle.</p>
         <div class="row"><button class="btn" id="rpYedek">Tam yedeği indir</button><label class="btn ghost rp-dosya">Yedekten geri yükle<input type="file" id="rpYukle" accept=".json,application/json" hidden></label></div><p class="ek" id="rpDurum"></p></section>
-      <section><div class="row"><button class="btn ghost" id="rpPin">PIN'i değiştir</button><button class="btn ghost" id="rpKilit">Paneli kilitle</button></div>
-        <p class="src">Toplam kayıt: ${olaylar.length} olay · cihaz ${esc(cihazId)}.</p></section>`;
+      <section><div class="row"><button class="btn ghost" id="rpPin">PIN'i değiştir</button><button class="btn ghost" id="rpKilit">Paneli kilitle</button></div></section>`}
+      <p class="src">Toplam kayıt: ${olaylar.length} olay${vb ? ` · son ${KAYIT_GUN} gün, bulut` : ` · cihaz ${esc(cihazId)}`}.</p>`;
     const secili = () => $$("[data-rd]", p).filter(x => x.checked).map(x => x.dataset.rd);
     const indirBtn = bicim => () => { const d = secili(); if (!d.length) return $("#rpMsg").textContent = "En az bir ders seç."; $("#rpMsg").textContent = ""; raporIndir(d, +$("#rpDonem").value, bicim); };
     $("#rpJson").onclick = indirBtn("json"); $("#rpCsv").onclick = indirBtn("csv");
-    $$("[data-ayar]", p).forEach(x => x.onchange = () => { const a = store.get("ela7:ayar", {}) || {}; a[x.dataset.ayar] = x.checked; store.set("ela7:ayar", a); });
-    $("#rpYedek").onclick = yedekIndir;
-    $("#rpYukle").onchange = e => { const f = e.target.files[0]; if (f) yedekYukle(f, $("#rpDurum")); };
-    $("#rpPin").onclick = () => { store.set("ela7:pin", null); try { sessionStorage.removeItem("ela7:pin-ok"); } catch (e) {} bootVeli(); };
-    $("#rpKilit").onclick = () => { try { sessionStorage.removeItem("ela7:pin-ok"); } catch (e) {} bootVeli(); };
+    $$("[data-ayar]", p).forEach(x => x.onchange = () => { const a = { ...VELI.ayar() }; a[x.dataset.ayar] = x.checked; VELI.ayarYaz(a); });
+    if (vb) {
+      const msg = t => $("#vbMsg").textContent = t, c = $("#content");
+      if ($("#vbBagla")) $("#vbBagla").onclick = async () => { msg("Bağlanıyor ve eşitleniyor… (bu cihazdaki eski kayıtlar da gönderiliyor)"); try { const k = await vb.m.kodUret(vb.ogr.id); await BULUT.bagla(k); msg("Bağlandı."); setTimeout(() => veliBulut(c, vb.m), 700); } catch (e) { msg(hataYaz(e)); } };
+      $("#vbKod").onclick = async () => { msg(""); try { const k = await vb.m.kodUret(vb.ogr.id); $("#vbKodK").innerHTML = `<p class="vb-kod">${k.slice(0, 3)} ${k.slice(3)}</p><p class="ek">Ela'nın cihazında siteyi aç → ana sayfanın en altındaki <b>Veli</b> → <b>Öğrenci cihazı</b> bölümüne bu kodu yaz → <b>Bağla</b>. Kod 24 saat geçerli ve bir kez kullanılır.</p>`; } catch (e) { msg(hataYaz(e)); } };
+      if ($("#vbSifirla")) $("#vbSifirla").onclick = async () => { if (!confirm("Bütün cihazların bağlantısı kaldırılsın mı? Buluttaki kayıtlar silinmez; cihazlar yeniden kodla bağlanana kadar veri gönderemez.")) return; try { await vb.m.cihazlariSifirla(vb.ogr.id); BULUT.birak(); veliBulut(c, vb.m); } catch (e) { msg(hataYaz(e)); } };
+      cihazKartBagla(c, () => veliBulut(c, vb.m));
+    } else {
+      $("#rpYedek").onclick = yedekIndir;
+      $("#rpYukle").onchange = e => { const f = e.target.files[0]; if (f) yedekYukle(f, $("#rpDurum")); };
+      $("#rpPin").onclick = () => { store.set("ela7:pin", null); try { sessionStorage.removeItem("ela7:pin-ok"); } catch (e) {} yerelKaynak(); pinKapi($("#content"), () => veliCiz($("#content"))); };
+      $("#rpKilit").onclick = () => { try { sessionStorage.removeItem("ela7:pin-ok"); } catch (e) {} bootVeli(); };
+    }
   }
 
   function veliDers(p, olaylar, kodlar, kod) {
@@ -2477,7 +2659,7 @@
       : `<tr><td>${esc(x.baslik)}</td><td>${x.ogren === "bitti" ? `<span class="rp-ok">✓ bitti</span>` : esc(x.ogren)}</td>
         <td>${x.testIlk ? `<b>${x.testIlk.ilk1}/${x.testIlk.toplam}</b> <small>${tarihK(x.testIlk.tarih)}</small>${x.testSon ? ` → <b>${x.testSon.ilk1}/${x.testSon.toplam}</b> <small>${x.testSon.kez}. kez</small>` : ""}` : x.testYarim ? "yarım" : "—"}</td>
         <td>${x.zorlandigi.length ? x.zorlandigi.map(z => `<span class="rp-etiket">${esc(z)}</span>`).join(" ") : "—"}</td><td>${x.sonIs ? gunAdi(x.sonIs) : "—"}</td></tr>`;
-    const at = kod === "tr1" || d.atolye ? store.get(`ela7:${kod}:atolye`, null) : null;
+    const at = kod === "tr1" || d.atolye ? VELI.oku(`ela7:${kod}:atolye`) : null;
     p.innerHTML = `<section><div class="sec-title"><h3>${esc(dersAd(kod))} · son 7 gün</h3></div>${ozetKutular(s7)}</section>
       <section><div class="sec-title"><h3>Konular</h3><span>${tamam} / ${toplamK} konuda Öğren ve Test yapıldı</span></div>
         <div class="rp-ilerleme" aria-hidden="true"><i style="width:${toplamK ? tamam / toplamK * 100 : 0}%;background:${dersRenk(kod)}"></i></div>
@@ -2794,6 +2976,11 @@
     if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye")) yol(ozel);
     else if (first) openKonu(first, false); else $("#content").innerHTML = `<div class="notice">Henüz eklenmiş konu yok.</div>`;
     if (ozel !== "rapor") KOC.plan();
+    if (BULUT.bilgi()) {
+      BULUT.planla(3000);
+      setInterval(() => { if (BULUT.kirli && !document.hidden) BULUT.esitle().catch(() => {}); }, 120000);
+      document.addEventListener("visibilitychange", () => { if (document.hidden && BULUT.kirli) BULUT.esitle().catch(() => {}); });
+    }
   }
   if (document.body.dataset.sayfa === "veli") bootVeli(); else boot();
 })();

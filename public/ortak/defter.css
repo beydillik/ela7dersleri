@@ -1057,3 +1057,17 @@ body:not([data-sayfa]) .masthead h1 { font-size: clamp(26px, 3.8vw, 36px); }
 
 /* İngilizce derslerde etiketler büyük harfe çevrilmez: Türkçe büyük harf kuralı İngilizce "i"yi "İ" yapıyordu */
 html[data-dil="en"] .stage .kicker, html[data-dil="en"] .isinma-etiket, html[data-dil="en"] .eski-etiket { text-transform: none; letter-spacing: .02em; font-size: 14px; }
+
+/* ---------- Veli Paneli: hesap ve cihaz bağlama (Faz 3) ---------- */
+.vk { display: grid; gap: 16px; max-width: 640px; margin: 0 auto; }
+.vk-kart { background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); padding: 16px 18px; }
+.vk-kart h3 { margin: 0 0 6px; }
+.vk-form { display: grid; gap: 10px; }
+.vk-form label { display: grid; gap: 4px; font-weight: 600; }
+.vk-form input, #ckKod, #vbAd, #vbOgr { font: inherit; font-size: 18px; padding: 9px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); min-width: 0; }
+#ckKod { width: 8em; letter-spacing: .2em; text-transform: uppercase; }
+.vk-msg:empty, #ckMsg:empty, #vbMsg:empty { display: none; }
+.vk-yerel { text-align: center; }
+.vb-kod { font-size: 40px; font-weight: 800; letter-spacing: .18em; margin: 12px 0 4px; color: var(--accent); font-family: ui-monospace, monospace; }
+.konu-head .meta .vb-cik { padding: 4px 12px; min-height: 0; font-size: 14px; margin-left: auto; }
+.vk-kart .row, .rp-ayar + .row { flex-wrap: wrap; gap: 8px; }
