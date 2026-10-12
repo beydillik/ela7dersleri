@@ -1045,3 +1045,15 @@ body:not([data-sayfa]) .masthead h1 { font-size: clamp(26px, 3.8vw, 36px); }
 .robot-der.kucuk .rd-balon::before { top: 12px; } .robot-der.kucuk .rd-balon::after { top: 14px; }
 .robot-der.kucuk .rd-metin { font-size: 16px; }
 @media (max-width: 640px) { .robot-der { grid-template-columns: 48px 1fr; } .robot-der .rd-mask svg { width: 48px; height: 48px; } .rd-metin, .robot-der.buyuk .rd-metin { font-size: 17px; } }
+
+/* Robot balonunda 🔊 (robot okusun) */
+.rd-balon { padding-right: 52px; }
+.rd-ses { position: absolute; top: 8px; right: 8px; width: 38px; height: 38px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+.rd-ses svg { width: 20px; height: 20px; }
+.rd-ses:hover { border-color: var(--accent); color: var(--accent); }
+.robot-der.kucuk .rd-balon { padding-right: 44px; }
+.robot-der.kucuk .rd-ses { top: 5px; right: 6px; width: 32px; height: 32px; }
+.robot-der.kucuk .rd-ses svg { width: 17px; height: 17px; }
+
+/* İngilizce derslerde etiketler büyük harfe çevrilmez: Türkçe büyük harf kuralı İngilizce "i"yi "İ" yapıyordu */
+html[data-dil="en"] .stage .kicker, html[data-dil="en"] .isinma-etiket, html[data-dil="en"] .eski-etiket { text-transform: none; letter-spacing: .02em; font-size: 14px; }

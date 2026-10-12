@@ -69,7 +69,7 @@
         tts.en = best(us.length ? us : all.filter(x => /^en/i.test(L(x))), VOICE_PREF.en);
         document.body.classList.toggle("no-tts", !tts.voice);
         document.body.classList.toggle("no-tts-en", !tts.en);
-        $$(".listen").forEach(b => b.hidden = !tts.voice);
+        $$(".listen, .rd-ses").forEach(b => b.hidden = !tts.voice);
         $$(".say-en").forEach(b => b.hidden = !tts.en);
       };
       pickVoice();
@@ -311,8 +311,11 @@
   };
   // Dersin robotu anlatıcı: giriş ve yönerge metinleri robotun konuşma balonunda görünür (Hece, Kuark, Pisi…).
   // cls: "buyuk" (konu girişi), "kucuk" (oyun ve kısa yönergeler).
+  // 🔊 düğmesi metni robotun sesiyle okur: HTML'den düz metne çevrilir, {{İngilizce}} parçalar korunur (İngilizce sesle okunur).
+  const balonOku = h => String(h).replace(/<span class="en"[^>]*>(.*?)<\/span>/g, "{{$1}}").replace(/<(button|svg)[\s\S]*?<\/\1>/g, " ").replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, " ").trim();
   const robotDer = (metin, cls = "") => { const b = (S.ders && S.ders.bot) || {};
-    return `<div class="robot-der ${cls}"><div class="rd-mask" aria-hidden="true">${b.svg || ""}</div><div class="rd-balon">${b.ad ? `<b class="rd-ad">${esc(b.ad)}</b>` : ""}<div class="rd-metin">${metin}</div></div></div>`; };
+    return `<div class="robot-der ${cls}"><div class="rd-mask" aria-hidden="true">${b.svg || ""}</div><div class="rd-balon">${b.ad ? `<b class="rd-ad">${esc(b.ad)}</b>` : ""}<button class="rd-ses" type="button" data-say="${esc(balonOku(metin))}" aria-label="${esc(b.ad || "Robot")} okusun" ${tts.voice ? "" : "hidden"}>${ICON.ses}</button><div class="rd-metin">${metin}</div></div></div>`; };
   const davetMetni = o => {
     const dogru = qKind(o) === "secim" ? (o.secenekler || [])[o.dogru] : qKind(o) === "nokta" ? o.nokta : o.cevap;
     return `Bu soruyu anlamadım: "${kisa(o.soru, 200)}" Doğru cevap: "${kisa(dogru, 120)}". Bu cevap neden doğru, kısaca ve adım adım açıklar mısın?`;
@@ -2767,6 +2770,7 @@
       S.ders = await r.json();
     } catch (e) { drawStars(); $("#content").innerHTML = `<div class="notice">Ders bilgisi açılamadı. Sayfayı yenile.</div>`; return; }
     applyTema(S.ders.tema); drawStars();
+    document.documentElement.dataset.dil = S.ders.dil || "tr";   // İngilizce derslerde büyük harf dönüşümü kapatılır (i → İ hatası)
     document.title = `${S.ders.ders} · ${S.ders.donem} — Ela'nın Defteri`;
     $("#dersBaslik").textContent = S.ders.ders;
     $("#dersEtiket").textContent = `${S.ders.sinif} · ${S.ders.donem}`;
