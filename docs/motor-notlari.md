@@ -10,7 +10,8 @@ Bu dosya, skill'e henüz eklenmemiş motor kurallarını toplar. Faz 2 bitince s
 
 ## Tasarım
 - `.nav` sabit değil. Kaydırınca `.serit` (☰ Konular açılır listesi + konu adı + sekmeler) üstte belirir (`setupSerit`). Fareyle üzerine gelince açılmaz (bilerek).
-- Her sekmenin sonunda "Sıradaki" düğmesi: Öğren → Konuya Bak → Tekrar → Test → sıradaki konu. Ara Durak: Tarama → Sınav Provası (varsa) → sıradaki konu.
+- Her sekmenin sonunda "Sıradaki" düğmesi: Öğren → Konuya Bak → Tekrar → Test → sıradaki konu. Ara Durak sekme sırası: Hatırla → Tarama Testi → Oyunlar → Sınav Provası (en sonda: bütün çalışmalardan sonra prova) → sıradaki konu.
+- Dersin robotu anlatıcı (`robotDer(metin, "buyuk"|"kucuk")`): bütün giriş ve yönerge metinleri (konu girişi, Isınma, Hatırlayalım, Düşün ve Yaz, Konuya Bak girişi, oyun yönergeleri, test/tarama/sınav girişi ve sonuç mesajları, Hazır mısın?, Atölye) dersin maskotunun konuşma balonunda. Yeni ekranda yönerge yazarken `<p class="big">` yerine `robotDer` kullan.
 
 ## Serpiştirilmiş tekrar (`TEKRAR`)
 - Ayrı "Günün Tekrarı" yok (İngilizce derslerindeki eski Günün Tekrarı kalıyor).

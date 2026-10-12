@@ -309,6 +309,10 @@
       }, 1200);
     }
   };
+  // Dersin robotu anlatıcı: giriş ve yönerge metinleri robotun konuşma balonunda görünür (Hece, Kuark, Pisi…).
+  // cls: "buyuk" (konu girişi), "kucuk" (oyun ve kısa yönergeler).
+  const robotDer = (metin, cls = "") => { const b = (S.ders && S.ders.bot) || {};
+    return `<div class="robot-der ${cls}"><div class="rd-mask" aria-hidden="true">${b.svg || ""}</div><div class="rd-balon">${b.ad ? `<b class="rd-ad">${esc(b.ad)}</b>` : ""}<div class="rd-metin">${metin}</div></div></div>`; };
   const davetMetni = o => {
     const dogru = qKind(o) === "secim" ? (o.secenekler || [])[o.dogru] : qKind(o) === "nokta" ? o.nokta : o.cevap;
     return `Bu soruyu anlamadım: "${kisa(o.soru, 200)}" Doğru cevap: "${kisa(dogru, 120)}". Bu cevap neden doğru, kısaca ve adım adım açıklar mısın?`;
@@ -566,7 +570,7 @@
       if (st.t === "isinma") {
         const sec = S.isinma[S.konu], bitti = sec.every((x, j) => qstate["is" + j] && qstate["is" + j].result !== undefined);
         html = `<div class="stage"><div class="kicker">Isınma · önceki konulardan</div><h3>Aklında kalmış mı?</h3>
-          <p class="big">Yeni konuya geçmeden önce önceki konulardan ${sec.length} kısa soru. Hatırlamazsan sorun değil; ipucu ve açıklama yardım eder.</p>
+          ${robotDer(`Yeni konuya geçmeden önce önceki konulardan ${sec.length} kısa soru. Hatırlamazsan sorun değil; ipucu ve açıklama yardım eder.`)}
           ${sec.map((x, j) => `<div class="isinma-q" data-iq="${j}"><div class="isinma-etiket">${konuNoOf(x.konu)}. konu · ${esc((S.cache[x.konu] || {}).baslik || "")}</div>${questionHTML(x.q)}</div>`).join("")}
           ${nav("Konuya geçelim", bitti)}</div>`;
       } else if (st.t === "hazir") {
@@ -576,11 +580,11 @@
         const doldu = qstate[pos] && qstate[pos].bitti;
         html = `<div class="stage"><div class="kicker">${sende ? "Sıra sende" : "Birlikte çözelim"} · ${esc(k.ad)}</div>
           <h3>${rx(c.baslik || (sende ? "Şimdi sen dene" : "Adım adım bakalım"))}</h3>
-          ${sende ? `<p class="ek">Boş adımları sen dolduracaksın. Takılırsan bir önceki örneğe bakabilirsin.</p>` : ""}
+          ${sende ? `${robotDer(`Boş adımları sen dolduracaksın. Takılırsan bir önceki örneğe bakabilirsin.`, "kucuk")}` : ""}
           <div id="cozBox"></div>${nav("Devam", !!doldu)}</div>`;
       } else if (st.t === "giris") {
         html = `<div class="stage"><div class="kicker">Bu konuda neler var?</div><h3>${esc(d.baslik)}</h3>
-          <p class="big">${rx(d.giris)}</p>
+          ${robotDer(`${rx(d.giris)}`)}
           <div class="chips">${d.kavramlar.map(k => `<span class="chip"${isEn() ? ` lang="en" role="button" tabindex="0" data-say-en="${esc(k.ad)}"` : ""}>${k.svg}${esc(k.ad)}</span>`).join("")}</div>
           <div class="row">${listenBtn(d.baslik + ". " + d.giris)}</div>
           ${nav("Başlayalım")}</div>`;
@@ -598,7 +602,7 @@
       } else if (st.t === "hatirla") {
         const ks = d.kavramlar.slice(st.from, st.to + 1);
         html = `<div class="stage"><div class="kicker">Hatırlayalım</div><h3>Aklında kaldı mı?</h3>
-          <p class="big">Her karta dokun. Önce kendin hatırlamaya çalış, sonra cevabı gör.</p>
+          ${robotDer(`Her karta dokun. Önce kendin hatırlamaya çalış, sonra cevabı gör.`)}
           <div class="recall">${ks.map(k => `<button data-reveal>${k.svg}<span>${esc(k.ad)} → <span class="ans" hidden>${esc(plain(k.akilda))}</span><span class="q-mark">?</span></span></button>`).join("")}</div>
           ${nav("Devam")}</div>`;
       } else if (st.t === "ozet") {
@@ -607,12 +611,12 @@
           <div class="row">${listenBtn(d.akildaKalsin.join(". "))}</div>${nav("Devam")}</div>`;
       } else if (st.t === "duvar") {
         html = `<div class="stage"><div class="kicker">Kelime Duvarı</div><h3>Bu konunun kelimeleri</h3>
-          <p class="big">Her kutuya dokun: kart döner, kelimeyi duyarsın. Biliyorsan ✓, zorlanıyorsan ↻ işaretle. 🎤 ile kendi sesini kaydedip karşılaştırabilirsin.</p>
+          ${robotDer(`Her kutuya dokun: kart döner, kelimeyi duyarsın. Biliyorsan ✓, zorlanıyorsan ↻ işaretle. 🎤 ile kendi sesini kaydedip karşılaştırabilirsin.`)}
           <div id="wallBox"></div>${nav("Devam")}</div>`;
       } else if (st.t === "yaz") {
         const y = d.dusunVeYaz[0];
         html = `<div class="stage"><div class="kicker">Düşün ve Yaz · isteğe bağlı</div><h3>${rx(y.soru)}</h3>
-          <p class="ek">Not verilmez. Kendi cümlelerinle yaz, sonra örnek cevapla karşılaştır.</p>
+          ${robotDer(`Not verilmez. Kendi cümlelerinle yaz, sonra örnek cevapla karşılaştır.`, "kucuk")}
           <textarea id="yazText" placeholder="Cevabını buraya yaz…"></textarea>
           <div class="row"><button class="btn" id="yazCheck">Örnek cevabı göster</button></div>
           <div id="yazOut" hidden></div>${nav("Devam", true)}</div>`;
@@ -621,7 +625,7 @@
         const r = results.all(), vals = d.kavramlar.filter(k => k.soru).map(k => r[k.ad]);
         const c1 = vals.filter(v => v === 1).length, c2 = vals.filter(v => v === 2).length, c0 = vals.filter(v => v === 0).length;
         const msg = c0 === 0 && c2 === 0 ? "Harika bir dikkatle çalıştın!" : c0 === 0 ? "İpuçlarını kullanarak hepsini buldun. Bu, iyi çalışmanın işareti." : "Her yanlış, yeni bir şey öğrenmek demek. Tekrar bölümünde bunlar öne çıkacak.";
-        html = `<div class="stage"><div class="kicker">Konu tamam</div><h3>Konuyu bitirdin!</h3><p class="big">${msg}</p>
+        html = `<div class="stage"><div class="kicker">Konu tamam</div><h3>Konuyu bitirdin!</h3>${robotDer(`${msg}`)}
           <div class="done-stats"><div class="stat"><b>${c1}</b><span>ilk denemede doğru</span></div>
           <div class="stat"><b>${c2}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c0}</b><span>birlikte öğrendik</span></div></div>
           <div class="siradaki"><span>Sıradaki</span><button class="btn primary" data-goto="bak">Konuya Bak →</button></div>
@@ -677,7 +681,7 @@
   function renderBak(root) {
     const d = S.data, icon = {}; d.kavramlar.forEach(k => icon[k.ad] = k.svg);
     const h = [];
-    h.push(`<section><p class="lead">${rx(d.giris)}</p></section>`);
+    h.push(`<section>${robotDer(`${rx(d.giris)}`, "buyuk")}</section>`);
     if (d.hazirlik && d.hazirlik.maddeler) h.push(`<section><div class="sec-title"><h3>Önce Hatırla</h3><span>Bu konu için gereken eski bilgiler</span></div><div class="merak hz-bak">` +
       d.hazirlik.maddeler.map(m => `<details><summary>${esc(m.ad)}${m.sinif ? ` <small>· ${esc(m.sinif)}</small>` : ""}</summary><p>${rx(m.anlatim)}</p>${m.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(m.sayiDogrusu)}</div>` : ""}${m.ornek ? cozumStatik(m.ornek) : ""}</details>`).join("") + `</div></section>`);
     h.push(`<section><div class="sec-title"><h3>Kavramlar</h3><span>${d.kavramlar.length} kavram</span></div><div class="cards${d.kavramlar.some(k => k.sayiDogrusu || k.cozum) ? " genis" : ""}">` +
@@ -714,7 +718,8 @@
     if (d.hatalar && d.hatalar.length) games.push(["hata", "Hatayı Bul"]);
     let g = store.get(key("oyun"), "kart"); if (!games.some(x => x[0] === g)) g = "kart";
     root.innerHTML = `<div class="subtabs">${games.map(([k, n]) => `<button class="subtab" data-g="${k}" aria-pressed="${k === g}">${n}</button>`).join("")}</div><div id="game"></div>`;
-    if (S.durakAsil) siradaki(root, "Tarama testi", () => gitSekme("tarama")); else siradaki(root, "Test", () => gitSekme("test"));
+    if (S.durakAsil) { if (sinavVar(S.durakAsil)) siradaki(root, "Sınav Provası", () => gitSekme("sinav")); else { const n = sonrakiKonu(); if (n) siradaki(root, n.baslik, () => { S.donus = null; openKonu(n.id, true); }); } }
+    else siradaki(root, "Test", () => gitSekme("test"));
     $$(".subtab", root).forEach(b => b.onclick = () => { g = b.dataset.g; store.set(key("oyun"), g); $$(".subtab", root).forEach(x => x.setAttribute("aria-pressed", x === b)); run(); });
     const run = () => { const box = $("#game", root); KAYIT.olay("oyun-ac", { oyun: g }); ({ kart: gameCards, eslestir: gameMatch, grupla: gameGroup, dinle: gameListen, kur: gameSpell, cumle: gameSentence, resim: gamePicture, hata: gameErrors })[g](box); };
     run();
@@ -722,7 +727,7 @@
 
   function gameCards(box) {
     const d = S.data; let order = results.weakFirst(d.kavramlar), pos = 0;
-    box.innerHTML = `<div class="flash"><p class="ek" style="margin:0">Zorlandığın kavramlar önce gelir.</p>
+    box.innerHTML = `<div class="flash">${robotDer(`Zorlandığın kavramlar önce gelir.`, "kucuk")}
       <button class="fcard" id="fcard" aria-label="Kartı çevir"><div class="inner"><div class="face front" id="ffront"></div><div class="face back" id="fback"></div></div></button>
       <div class="row" style="justify-content:center">${isEn() ? `<button class="btn" id="fsay" ${tts.en ? "" : "hidden"}>${ICON.ses}Dinle</button>` : ""}<button class="btn" id="fprev">Önceki</button><span class="count" id="fcount"></span><button class="btn" id="fnext">Sonraki</button><button class="btn ghost" id="fmix">Karıştır</button></div></div>`;
     const card = $("#fcard", box);
@@ -744,7 +749,7 @@
     const d = S.data, ks = d.kavramlar;
     const left = shuffle(ks.map((k, i) => i)), right = shuffle(ks.map((k, i) => i));
     let sel = null, done = 0, yanlis = 0; const t0 = simdi();
-    box.innerHTML = `<p class="ek" style="margin:0 0 10px">Soldan bir kavram seç, sonra sağdan ona uyan "akılda kalsın" ifadesine dokun.</p>
+    box.innerHTML = `${robotDer(`Soldan bir kavram seç, sonra sağdan ona uyan "akılda kalsın" ifadesine dokun.`, "kucuk")}
       <div class="match"><div class="col">${left.map(i => `<button class="mitem" data-l="${i}">${ks[i].svg}${esc(ks[i].ad)}</button>`).join("")}</div>
       <div class="col">${right.map(i => `<button class="mitem" data-r="${i}">${esc(plain(ks[i].akilda))}</button>`).join("")}</div></div>
       <p class="game-msg" id="mmsg"></p>`;
@@ -768,7 +773,7 @@
     const play = () => {
       const g = d.gruplar[gi], items = shuffle(g.kutular.flatMap((b, bi) => b.uyeler.map(m => ({ m, bi }))));
       let sel = null, placed = 0, yanlis = 0; const t0 = simdi();
-      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Soru ${gi + 1} / ${d.gruplar.length}. Bir karta dokun, sonra doğru kutuya dokun.</p>
+      box.innerHTML = `${robotDer(`Soru ${gi + 1} / ${d.gruplar.length}. Bir karta dokun, sonra doğru kutuya dokun.`, "kucuk")}
         <div class="group"><h4>${esc(g.soru)}</h4><div class="pool chips" id="pool">${items.map((it, i) => `<span class="chip pick" role="button" tabindex="0" data-i="${i}">${icon[it.m] || ""}${esc(it.m)}</span>`).join("")}</div>
         <div class="boxes" style="margin-top:12px">${g.kutular.map((b, bi) => `<div class="box" data-b="${bi}" role="button" tabindex="0"><div class="lbl">${esc(b.etiket)}</div><div class="chips"></div></div>`).join("")}</div></div>
         <p class="game-msg" id="gmsg"></p><div class="row" id="gnext"></div>`;
@@ -808,7 +813,7 @@
         $("#lagain", box).onclick = () => gameListen(box); return;
       }
       const k = tur[i], opts = shuffle([k, ...shuffle(ks.filter(x => x !== k)).slice(0, 2)]); tries = 0;
-      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Kelime ${i + 1} / ${tur.length}. Dinle, sonra duyduğun kelimeye dokun.</p>
+      box.innerHTML = `${robotDer(`Kelime ${i + 1} / ${tur.length}. Dinle, sonra duyduğun kelimeye dokun.`, "kucuk")}
         <div class="listen-play"><button class="say-en big" data-say-en="${esc(k.ad)}">${ICON.ses}<span>Dinle</span></button>
         <button class="say-en slow" data-say-en="${esc(k.ad)}" data-slow>${ICON.yavas}<span>Yavaş</span></button></div>
         <div class="listen-opts">${opts.map(o => `<button class="mitem lopt" data-a="${esc(o.ad)}">${o.svg}<span lang="en">${esc(o.ad)}</span></button>`).join("")}</div>
@@ -845,7 +850,7 @@
       const k = tur[i], harf = [...k.ad], hedef = harf.filter(c => /\S/.test(c));
       let pos = 0, hata = 0, tiles = shuffle(hedef.map((c, j) => ({ c, j })));
       if (tiles.every((t, j) => t.j === j) && tiles.length > 1) tiles.reverse();
-      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Kelime ${i + 1} / ${tur.length}. Harflere sırayla dokun.</p>
+      box.innerHTML = `${robotDer(`Kelime ${i + 1} / ${tur.length}. Harflere sırayla dokun.`, "kucuk")}
         <div class="spell-q">${k.svg}<div><div class="bigk">${esc(plain(k.akilda))}</div>${enBtns(k.ad)}</div></div>
         <div class="slots" lang="en">${harf.map(c => /\S/.test(c) ? `<span class="slot"></span>` : `<span class="gap"></span>`).join("")}</div>
         <div class="tiles" lang="en">${tiles.map((t, n) => `<button class="tile" data-n="${n}">${esc(t.c)}</button>`).join("")}</div>
@@ -1029,7 +1034,7 @@
     if (!list.length) {
       const hepsi = Object.keys(srs.all()).length;
       c.innerHTML = head + `<div class="stage"><h3>${hepsi ? "Bugünlük tekrar yok!" : "Henüz kelimen yok"}</h3>
-        <p class="big">${hepsi ? "Bugün sırası gelen kelime kalmadı. Kelimeler 1, 3, 7 ve 14 gün arayla geri gelir; böyle tekrar etmek akılda kalmasını sağlar." : "Bir konu açıp öğrendiğinde kelimeleri ertesi gün burada tekrar edeceksin."}</p>
+        ${robotDer(`${hepsi ? "Bugün sırası gelen kelime kalmadı. Kelimeler 1, 3, 7 ve 14 gün arayla geri gelir; böyle tekrar etmek akılda kalmasını sağlar." : "Bir konu açıp öğrendiğinde kelimeleri ertesi gün burada tekrar edeceksin."}`)}
         ${hepsi ? `<div class="row"><button class="btn primary" id="gEkstra">Yine de 5 kelime çalış</button></div>` : ""}</div>`;
       const b = $("#gEkstra"); if (b) b.onclick = () => openGunluk(true);
       return;
@@ -1040,7 +1045,7 @@
       if (i >= list.length) {
         const yarin = Object.values(srs.all()).filter(e => e.n <= gun(1)).length, kalan = srs.due().filter(en => map.has(en)).length;
         c.innerHTML = head + `<div class="stage game-end"><div class="stars">${"★".repeat(ilk)}${"☆".repeat(list.length - ilk)}</div>
-          <h3>Bugünkü tekrar bitti!</h3><p class="big">${list.length} kelimenin ${ilk} tanesini ilk denemede bildin. Her gün biraz tekrar, kelimeleri kalıcı yapar.</p>
+          <h3>Bugünkü tekrar bitti!</h3>${robotDer(`${list.length} kelimenin ${ilk} tanesini ilk denemede bildin. Her gün biraz tekrar, kelimeleri kalıcı yapar.`)}
           <p class="ek">${kalan ? `Bugün ${kalan} kelime daha var. İstersen mola verip sonra devam et.` : `Yarın ${yarin} kelime seni bekliyor.`}</p>
           <div class="row" style="justify-content:center">${kalan ? `<button class="btn primary" data-tur>Bir tur daha</button>` : ""}<a class="btn" href="defter" data-defter>Kelime Defterim</a></div></div>`;
         const tb = $("[data-tur]", c); if (tb) tb.onclick = () => openGunluk();
@@ -1091,7 +1096,7 @@
       let pool = shuffle(hedef.map((t, j) => ({ t, j })));
       if (pool.length > 1 && pool.every((p, j) => p.t === hedef[j])) pool.reverse();
       const placed = [], kilit = []; let hata = 0;
-      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Cümle ${i + 1} / ${tur.length}. Kelimelere sırayla dokun ya da sürükle. Yanlış yere koyduğuna dokunursan geri gelir.</p>
+      box.innerHTML = `${robotDer(`Cümle ${i + 1} / ${tur.length}. Kelimelere sırayla dokun ya da sürükle. Yanlış yere koyduğuna dokunursan geri gelir.`, "kucuk")}
         <div class="cumle-tr">${rx(c.tr)}</div>
         <div class="cumle-hat" id="hat" lang="en"></div>
         <div class="cumle-havuz" id="havuz" lang="en"></div>
@@ -1146,7 +1151,7 @@
   function gamePicture(box) {
     const ks = shuffle(S.data.kavramlar).slice(0, 6), left = shuffle(ks.map((k, i) => i)), right = shuffle(ks.map((k, i) => i));
     let sel = null, done = 0, ilk = 0, yanlis = new Set();
-    box.innerHTML = `<p class="ek" style="margin:0 0 10px">Bir resme dokun, sonra ona uyan İngilizce kelimeye dokun.</p>
+    box.innerHTML = `${robotDer(`Bir resme dokun, sonra ona uyan İngilizce kelimeye dokun.`, "kucuk")}
       <div class="pmatch"><div class="pics">${left.map(i => `<button class="pic" data-l="${i}" aria-label="Resim ${i + 1}">${ks[i].svg}</button>`).join("")}</div>
       <div class="col">${right.map(i => `<button class="mitem" data-r="${i}" lang="en">${esc(ks[i].ad)}</button>`).join("")}</div></div><p class="game-msg" id="pmsg"></p>`;
     box.onclick = e => {
@@ -1183,7 +1188,7 @@
       const bl = bolumler[bi], cs = bl.cumleler, qs = bl.sorular || [];
       root.innerHTML = `<div class="stage"><div class="kicker">Oku ve Dinle · ${esc(o.sayfa || "")}</div><h3 lang="en">${esc(o.baslik || "Reading")}</h3>
         ${bolumler.length > 1 ? `<div class="subtabs okuma-bol">${bolumler.map((x, n) => `<button class="subtab" data-b="${n}" aria-pressed="${n === bi}">Bölüm ${n + 1}${x.baslik ? ` · ${esc(x.baslik)}` : ""}</button>`).join("")}</div>` : ""}
-        <p class="ek">Bir cümleye dokun, o cümle okunur. "Baştan oku" bu bölümü okur ve okunan cümle renklenir.${o.sozluk ? " Altı noktalı kelimeye dokunursan Türkçesi çıkar." : ""} Önce Türkçesine bakmadan anlamaya çalış.</p>
+        ${robotDer(`Bir cümleye dokun, o cümle okunur. "Baştan oku" bu bölümü okur ve okunan cümle renklenir.${o.sozluk ? " Altı noktalı kelimeye dokunursan Türkçesi çıkar." : ""} Önce Türkçesine bakmadan anlamaya çalış.`, "kucuk")}
         <div class="row okuma-ctl"><button class="btn primary" id="oPlay">${ICON.ses}Baştan oku</button><button class="btn" id="oStop">Durdur</button>
           <button class="btn ghost" id="oSlow" aria-pressed="${yavas}">${ICON.yavas}Yavaş</button><button class="btn ghost" id="oTr" aria-pressed="${tr}">Türkçesini göster</button></div>
         <div class="okuma${tr ? " show-tr" : ""}" lang="en">${cs.map((c, n) => `<p class="oc" data-i="${n}"><span class="oen">${glossify(c.en, o.sozluk)}</span><span class="otr" lang="tr">${rx(c.tr)}</span></p>`).join("")}</div>
@@ -1410,7 +1415,7 @@
     const durum = i => kayit.t[i] ? "tamam" : kayit.r[i] === 1 ? "tamam" : kayit.r[i] === 2 ? "orta" : "eksik";
     const giris = () => {
       box.innerHTML = `<div class="kicker">Başlamadan önce</div><h3>${esc(h.baslik || "Hazır mısın?")}</h3>
-        <p class="big">${rx(h.giris || "Bu konu, daha önce öğrendiğin bazı bilgilerin üzerine kuruluyor. Önce onları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.")}</p>
+        ${robotDer(`${rx(h.giris || "Bu konu, daha önce öğrendiğin bazı bilgilerin üzerine kuruluyor. Önce onları hatırlıyor musun bakalım. Not yok; sadece nereden başlayacağımızı bulacağız.")}`)}
         <div class="hz-liste">${ms.map((m, i) => `<span class="hz-chip">${m.svg || ""}<span><b>${esc(m.ad)}</b>${m.sinif ? `<small>${esc(m.sinif)}</small>` : ""}</span></span>`).join("")}</div>
         <div class="row"><button class="btn primary" data-hz-basla>Kontrol edelim (${ms.length} soru)</button><button class="btn ghost" data-hz-atla>Bu bölümü geç</button></div>`;
       $("[data-hz-basla]", box).onclick = () => { kayit = { r: [], t: [] }; soru(0); };
@@ -1431,7 +1436,7 @@
         : orta.length ? `Hazırsın! Yalnızca <b>${esc(adlar(orta))}</b> konusuna bir göz atmak iyi olur. İstersen hemen başlayabilirsin.`
         : "Hazırsın! Gereken bilgileri hatırlıyorsun. Bu yılki konuya başlayabilirsin.";
       box.innerHTML = `<div class="kicker">Hazır mısın? · Sonuç</div><h3>${eksik.length ? "Biraz hatırlayalım" : "Harika, hazırsın!"}</h3>
-        <p class="big">${mesaj}</p>
+        ${robotDer(`${mesaj}`)}
         <div class="hz-rapor">${ms.map((m, i) => { const d_ = durum(i);
           return `<div class="hz-satir ${d_}"><span class="hz-ik" aria-hidden="true">${d_ === "tamam" ? "✓" : d_ === "orta" ? "~" : "!"}</span>
           <span class="hz-ad"><b>${esc(m.ad)}</b><small>${kayit.t[i] ? "Tekrar ettin, şimdi biliyorsun" : d_ === "tamam" ? "Biliyorsun" : d_ === "orta" ? "İpucuyla buldun" : "Tekrar etmek iyi olur"}${m.sinif ? ` · ${esc(m.sinif)}` : ""}</small></span>
@@ -1473,7 +1478,7 @@
       const once = h.cumle.slice(0, k).split(/\s+/).filter(Boolean), sonra = h.cumle.slice(k + h.yanlis.length).split(/\s+/).filter(Boolean);
       const parca = [...once.map(t => ({ t })), { t: h.yanlis, hedef: true }, ...sonra.map(t => ({ t }))];
       let bulDeneme = 0, secDeneme = 0;
-      box.innerHTML = `<p class="ek" style="margin:0 0 10px">Cümle ${i + 1} / ${tur.length}. Bu cümlede bir hata var. Yanlış olan kelimeye dokun.</p>
+      box.innerHTML = `${robotDer(`Cümle ${i + 1} / ${tur.length}. Bu cümlede bir hata var. Yanlış olan kelimeye dokun.`, "kucuk")}
         <div class="hata-cumle" lang="en">${parca.map((p, n) => !p.hedef && /^[^\p{L}\p{N}]+$/u.test(p.t) ? `<span class="hpunc">${esc(p.t)}</span>` : `<button class="tok htok" data-n="${n}">${esc(p.t)}</button>`).join("")}</div>
         ${h.tr ? `<p class="ek hata-tr" hidden>${rx(h.tr)}</p>` : ""}
         <div id="hsec"></div><p class="game-msg" id="hmsg"></p>`;
@@ -1588,7 +1593,7 @@
       <h2>${esc(d.baslik)}</h2>
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="hatirla">${ICON.bak}Hatırla</button>
-        <button class="tab" role="tab" data-tab="tarama">${ICON.test}Tarama Testi</button>${sinavVar(d) ? `<button class="tab" role="tab" data-tab="sinav">${ICON.durak}Sınav Provası</button>` : ""}${d.oyunlar === false ? "" : `<button class="tab" role="tab" data-tab="oyunlar">${ICON.tekrar}Oyunlar</button>`}</div></section>
+        <button class="tab" role="tab" data-tab="tarama">${ICON.test}Tarama Testi</button>${d.oyunlar === false ? "" : `<button class="tab" role="tab" data-tab="oyunlar">${ICON.tekrar}Oyunlar</button>`}${sinavVar(d) ? `<button class="tab" role="tab" data-tab="sinav">${ICON.durak}Sınav Provası</button>` : ""}</div></section>
       <div class="panel" id="panel"></div>`;
     $$(".tab").forEach(b => b.onclick = () => setTab(b.dataset.tab));
     S.durakAsil = d;
@@ -1612,7 +1617,7 @@
   function renderHatirla(root) {
     const d = S.data, kayit = durakKayit.get(S.konu), h = [];
     const kart = kartlarOf(S.konu);
-    h.push(`<section><p class="lead">${rx(d.giris)}</p>${kayit ? durakDurum(kayit) : ""}${kart ? `<div class="row dk-kart">${kartlarBtn(kart)}<span class="ek">Yazdır, kes, ortadan katla: önde İngilizce, arkada Türkçe.</span></div>` : ""}</section>`);
+    h.push(`<section>${robotDer(`${rx(d.giris)}`, "buyuk")}${kayit ? durakDurum(kayit) : ""}${kart ? `<div class="row dk-kart">${kartlarBtn(kart)}<span class="ek">Yazdır, kes, ortadan katla: önde İngilizce, arkada Türkçe.</span></div>` : ""}</section>`);
     if (d.buyukResim) h.push(`<section class="facts"><div class="eyebrow">Büyük resim</div><p>${rx(d.buyukResim)}</p></section>`);
     d.kapsar.forEach(id => {
       const k = S.cache[id]; if (!k) return;
@@ -1620,7 +1625,7 @@
       // Önce hatırla, sonra bak: kartlar kapalı; açınca "Hatırladım / Hatırlamadım". Özet en sonda, katlanmış.
       h.push(`<section class="durak-konu"><div class="sec-title"><h3><span class="dk-no">${konuNoOf(id)}</span>${esc(k.baslik)}</h3>
         <button class="btn ghost" data-git="${esc(id)}">Konuya git</button></div>
-        <p class="ek dk-ipucu">Önce kendin hatırlamaya çalış, sonra karta dokun ve cevabı gör. Dürüst ol: hatırlamadıkların sonraki derslerde karşına yine çıkacak.</p>
+        ${robotDer(`Önce kendin hatırlamaya çalış, sonra karta dokun ve cevabı gör. Dürüst ol: hatırlamadıkların sonraki derslerde karşına yine çıkacak.`, "kucuk")}
         <div class="recall hk-liste">${k.kavramlar.map(kv => `<div class="hk" data-konu="${esc(id)}" data-kv="${esc(kv.ad)}"><button data-reveal>${kv.svg}<span>${esc(kv.ad)}${kv.ad in r && r[kv.ad] !== 1 ? ' <small class="dk-zor">zorlanmıştın</small>' : ""} → <span class="ans" hidden>${rx(kv.akilda)}</span><span class="q-mark">?</span></span></button>
           <div class="hk-oy" hidden><button data-hk="1">✓ Hatırladım</button><button data-hk="0">✗ Hatırlamadım</button></div></div>`).join("")}</div>
         <details class="dk-ozet"><summary>Konunun özetini göster</summary><ul class="remember">${maddeler.map(a => `<li>${rx(a)}</li>`).join("")}</ul></details></section>`);
@@ -1686,14 +1691,14 @@
       const mesaj = iyi ? "Harika! Bu konuları iyi hatırlıyorsun. Öğrendiklerin yerine oturmuş."
         : eksikVar ? "Çok iyi çalıştın; yanlış yaptığın soruları tekrar geldiğinde düzelttin. Aşağıda ! olan konulara kısa bir tekrar yapalım."
         : "İpuçlarını kullanarak hepsini buldun. Bu, iyi çalışmanın işareti. Turuncu kavramlara bir göz atman yeter.";
-      root.innerHTML = `<div class="stage"><div class="kicker">Ara Durak · Sonuç</div><h3>${iyi ? "Aklında kalmış!" : "Neredeyse tamam!"}</h3><p class="big">${mesaj}</p>
+      root.innerHTML = `<div class="stage"><div class="kicker">Ara Durak · Sonuç</div><h3>${iyi ? "Aklında kalmış!" : "Neredeyse tamam!"}</h3>${robotDer(`${mesaj}`)}
         <div class="done-stats"><div class="stat"><b>${c(1)}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${c(2)}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c(0)}</b><span>tekrar gelince çalıştın</span></div></div>
         <div class="hz-rapor">${satirlar}</div>
         ${zayif.length ? `<div><div class="kicker">Tekrar bakman gereken kavramlar</div><div class="dk-liste">${zayif.map(z => `<button data-git="${esc(z.konu)}" data-kv="${esc(z.kavram)}">${konuNoOf(z.konu)}. konu · ${esc(z.kavram)}</button>`).join("")}</div></div>` : ""}
         <p class="dk-sonraki">${ICON.tekrar}<span>Bu durağı <b>${tarihYaz(kayit.n)}</b> tekrar tara. Zamanı gelince konu listesinde haber vereceğim.</span></p>
-        <div class="siradaki">${sinavVar(d) ? `<span>Sıradaki</span><button class="btn primary" data-goto-s="sinav">Sınav Provası →</button>` : siradakiKonuBtn()}</div>
+        <div class="siradaki">${d.oyunlar !== false ? `<span>Sıradaki</span><button class="btn primary" data-goto-s="oyunlar">Oyunlar →</button>` : sinavVar(d) ? `<span>Sıradaki</span><button class="btn primary" data-goto-s="sinav">Sınav Provası →</button>` : siradakiKonuBtn()}</div>
         <div class="row"><button class="btn ghost" data-yeniden>Testi yeniden yap</button><button class="btn ghost" data-goto="hatirla">Hatırla'ya dön</button></div></div>`;
-      siradakiKonuBagla(root); const gs = $("[data-goto-s]", root); if (gs) gs.onclick = () => gitSekme("sinav");
+      siradakiKonuBagla(root); const gs = $("[data-goto-s]", root); if (gs) gs.onclick = () => gitSekme(gs.dataset.gotoS);
       $$("[data-git]", root).forEach(b => b.onclick = () => gitKonu(b.dataset.git, b.dataset.kv));
       $("[data-yeniden]", root).onclick = basla;
       $("[data-goto]", root).onclick = () => setTab("hatirla");
@@ -1708,7 +1713,7 @@
       giris: (basla, devam) => {
         const kayit = durakKayit.get(S.konu);
         root.innerHTML = `<div class="stage"><div class="kicker">Tarama testi</div><h3>${devam ? "Yarım kalan tarama" : kayit ? "Tekrar tarayalım" : "Neler aklında kalmış?"}</h3>
-          <p class="big">${devam ? "Taramayı yarıda bırakmıştın. Kaldığın yerden devam edelim." : `${toplam} soru var. Bazıları konulardaki sorulardan, bazıları konuları birleştiren yeni sorular. Her soruda 2 hakkın var. Yanlış yaptığın soru birkaç soru sonra yeniden gelir. Not yok; sonunda hangi konuya tekrar bakman gerektiğini göstereceğim.`}</p>
+          ${robotDer(`${devam ? "Taramayı yarıda bırakmıştın. Kaldığın yerden devam edelim." : `${toplam} soru var. Bazıları konulardaki sorulardan, bazıları konuları birleştiren yeni sorular. Her soruda 2 hakkın var. Yanlış yaptığın soru birkaç soru sonra yeniden gelir. Not yok; sonunda hangi konuya tekrar bakman gerektiğini göstereceğim.`}`)}
           ${kayit && !devam ? durakDurum(kayit) : ""}
           <div class="row">${devam ? `<button class="btn primary" data-devam>Kaldığın yerden devam et</button>` : `<button class="btn primary" data-basla>Başla</button>`}${kayit && !devam ? `<button class="btn ghost" data-rapor>Son sonucu gör</button>` : ""}</div></div>`;
         const bb = $("[data-basla]", root); if (bb) bb.onclick = basla;
@@ -1887,7 +1892,7 @@
     const giris = () => {
       const gec = store.get(key("sinavlar:" + S.konu), []), son = gec[gec.length - 1];
       root.innerHTML = `<div class="stage"><div class="kicker">Sınav Provası</div><h3>Okuldaki gibi bir deneme</h3>
-        <p class="big">${n} soru. Okuldaki sınavlar gibi: ipucu yok, her soruda tek cevap, doğru mu yanlış mı sonunda görürsün. Sorular arasında gidip gelebilir, cevabını değiştirebilirsin. Acele yok; her soruyu sonuna kadar oku.</p>
+        ${robotDer(`${n} soru. Okuldaki sınavlar gibi: ipucu yok, her soruda tek cevap, doğru mu yanlış mı sonunda görürsün. Sorular arasında gidip gelebilir, cevabını değiştirebilirsin. Acele yok; her soruyu sonuna kadar oku.`)}
         <ul class="sinav-turler">${[...new Set(havuz.map(q => q.tur))].map(t => `<li>${esc(SINAV_TUR[t] || t)}</li>`).join("")}</ul>
         ${son ? `<div class="dk-durum"><b>Son provan:</b> ${tarihYaz(son.t)} · ${son.dogru} / ${son.toplam} doğru${gec.length > 1 ? ` · ${gec.length}. prova` : ""}</div>` : ""}
         <div class="row"><button class="btn primary" data-basla>${son ? "Yeni prova başlat" : "Başla"}</button></div><p class="ek">Her provada sorular değişir; daha önce görmediğin sorular önce gelir.</p></div>`;
@@ -1952,7 +1957,7 @@
       }).join("");
       const oran = oz.dogru / oz.toplam;
       const mesaj = oran >= .85 ? "Harika! Okul sınavına hazırsın gibi görünüyor." : oran >= .6 ? "İyi gidiyorsun. Aşağıda yanlış yaptığın soruların açıklamalarını oku; ! olan konulara kısa bir tekrar yap." : "Emek verdin, bu önemli. Okul soruları zor olabilir. Yanlışlarının açıklamalarını oku, ! olan konuları tekrar et ve birkaç gün sonra yeni bir prova yap.";
-      root.innerHTML = `<div class="stage"><div class="kicker">Sınav Provası · Sonuç</div><h3>${oz.toplam} sorudan ${oz.dogru} doğru</h3><p class="big">${mesaj}</p>
+      root.innerHTML = `<div class="stage"><div class="kicker">Sınav Provası · Sonuç</div><h3>${oz.toplam} sorudan ${oz.dogru} doğru</h3>${robotDer(`${mesaj}`)}
         <div class="done-stats"><div class="stat"><b>${oz.dogru}</b><span>doğru</span></div>${kism ? `<div class="stat"><b>${kism}</b><span>kısmen doğru</span></div>` : ""}<div class="stat"><b>${yan}</b><span>yanlış</span></div>${oz.bos ? `<div class="stat"><b>${oz.bos}</b><span>boş</span></div>` : ""}</div>
         <div class="hz-rapor">${satir}</div>
         <div class="kicker">Soru soru</div>
@@ -1977,7 +1982,7 @@
     if (document.body.classList.contains("sinif")) return renderTestListe(root);
     if (!d.sorular || !d.sorular.length) { root.innerHTML = `<div class="notice">Bu konunun testi yok.</div>`; return; }
     if (ayar().ogrenKilit && !ogrenBitti(S.konu)) {
-      root.innerHTML = `<div class="stage"><div class="kicker">Test</div><h3>Önce Öğren'i bitirelim</h3><p class="big">Test, Öğren bölümünü bitirince açılır. Kaldığın adımdan devam edebilirsin.</p><div class="row"><button class="btn primary" data-goto="ogren">Öğren'e git</button></div></div>`;
+      root.innerHTML = `<div class="stage"><div class="kicker">Test</div><h3>Önce Öğren'i bitirelim</h3>${robotDer(`Test, Öğren bölümünü bitirince açılır. Kaldığın adımdan devam edebilirsin.`)}<div class="row"><button class="btn primary" data-goto="ogren">Öğren'e git</button></div></div>`;
       $("[data-goto]", root).onclick = () => setTab("ogren"); return;
     }
     soruAkisi(root, {
@@ -1990,7 +1995,7 @@
       giris: (basla, devam) => {
         const gec = store.get(key("testler:" + S.konu), []), ilk = gec[0], son = gec[gec.length - 1];
         root.innerHTML = `<div class="stage"><div class="kicker">Konu testi</div><h3>${d.sorular.length} soru</h3>
-          <p class="big">Sorular tek tek gelecek. Her soruda 2 hakkın var; ilk yanlışta ipucu gelir. Yanlış yaptığın soru birkaç soru sonra, şıkları yer değiştirmiş olarak yeniden gelir.${TEKRAR.oncekiler().length ? " Araya önceki konulardan 2 soru da karışacak." : ""} Test, hepsini doğru yapınca biter.</p>
+          ${robotDer(`Sorular tek tek gelecek. Her soruda 2 hakkın var; ilk yanlışta ipucu gelir. Yanlış yaptığın soru birkaç soru sonra, şıkları yer değiştirmiş olarak yeniden gelir.${TEKRAR.oncekiler().length ? " Araya önceki konulardan 2 soru da karışacak." : ""} Test, hepsini doğru yapınca biter.`)}
           ${son ? `<div class="dk-durum"><b>İlk çözüşün:</b> ${tarihYaz(ilk.t)} · ${ilk.ilk1} / ${ilk.toplam} ilk denemede doğru${gec.length > 1 ? `<br><b>Son çözüşün:</b> ${tarihYaz(son.t)} · ${son.ilk1} / ${son.toplam} ilk denemede doğru` : ""}</div>` : ""}
           <div class="row">${devam ? `<button class="btn primary" data-devam>Kaldığın yerden devam et</button>` : `<button class="btn primary" data-basla>${son ? "Testi yeniden çöz" : "Başla"}</button>`}</div></div>`;
         const bb = $("[data-basla]", root); if (bb) bb.onclick = basla;
@@ -2001,7 +2006,7 @@
         const msg = !oz.ilk0 && !oz.ilk2 ? "Hepsini ilk denemede buldun. Çok dikkatli çalıştın!"
           : !oz.ilk0 ? "Hepsini buldun! Bazılarında ipucunu ya da ikinci hakkını iyi kullandın."
           : "Hepsini tamamladın! Yanlış yaptığın sorular tekrar geldiğinde üzerinde çalıştın. Düzeltmek de öğrenmek.";
-        root.innerHTML = `<div class="stage"><div class="kicker">Konu testi · Sonuç</div><h3>${oz.toplam} sorunun hepsini tamamladın!</h3><p class="big">${msg}</p>
+        root.innerHTML = `<div class="stage"><div class="kicker">Konu testi · Sonuç</div><h3>${oz.toplam} sorunun hepsini tamamladın!</h3>${robotDer(`${msg}`)}
           <div class="done-stats"><div class="stat"><b>${oz.ilk1}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${oz.ilk2}</b><span>ipucuyla / ikinci denemede</span></div><div class="stat"><b>${oz.ilk0}</b><span>tekrar gelince çalıştın</span></div></div>
           ${gec.length > 1 ? `<p class="ek">İlk çözüşünde ${gec[0].ilk1} / ${gec[0].toplam} soruyu ilk denemede bulmuştun.</p>` : ""}
           <div class="siradaki">${siradakiKonuBtn()}</div>
@@ -2071,7 +2076,7 @@
           <span class="sev-not">${bilgi}</span></div>
         ${acik ? `<button class="btn${s.gecti ? " ghost" : " primary"}" data-sev="${i}">Tur başlat</button>` : ""}</div>`;
     };
-    root.innerHTML = `<section><p class="lead">${rx(A.giris || "")}</p></section>
+    root.innerHTML = `<section>${robotDer(`${rx(A.giris || "")}`, "buyuk")}</section>
       <section class="facts atolye-adim"><div class="eyebrow">Okuma Dedektifi · Sor, bul, kanıtla, ele</div>
         <ol><li><b>Soru ne istiyor?</b> Soru kökünü oku. Kırmızı kelimeler olumsuz: dikkat!</li><li><b>Anahtar kelime ne?</b></li><li><b>Kanıt nerede?</b> Cevabı gösteren cümleye dokun.</li><li><b>Şıkları ele:</b> metinde yazan / metinden çıkarılabilen / metinde olmayan.</li></ol></section>
       <div class="sev-liste">${A.seviyeler.map(kart).join("")}</div>`;
@@ -2119,7 +2124,7 @@
       const mesaj = yeniAcildi ? (sonraki ? `Harika! ${sEk(sv.no, "i")} geçtin, S${sonraki.no} açıldı. Daha uzun metinlere hazırsın.` : "Harika! En uzun metinleri de geçtin. Artık gerçek bir okuma dedektifisin.")
         : oran >= ATOLYE_ESIK ? (si2.tur < ATOLYE_MIN_TUR ? "Çok iyi! Bir tur daha bu kadar dikkatli okursan sonraki seviye açılacak." : "Çok iyi! Dikkatlice okudun.")
         : "İyi çalıştın. Kanıt cümlesini bulmak zaman ister. Bir tur daha yaparsan daha kolay gelecek.";
-      root.innerHTML = `<div class="stage"><div class="kicker">Okuma Atölyesi · S${sv.no} · Tur sonucu</div><h3>${yeniAcildi ? "Yeni seviye açıldı!" : oran >= ATOLYE_ESIK ? "Dikkatli okudun!" : "Tur bitti!"}</h3><p class="big">${mesaj}</p>
+      root.innerHTML = `<div class="stage"><div class="kicker">Okuma Atölyesi · S${sv.no} · Tur sonucu</div><h3>${yeniAcildi ? "Yeni seviye açıldı!" : oran >= ATOLYE_ESIK ? "Dikkatli okudun!" : "Tur bitti!"}</h3>${robotDer(`${mesaj}`)}
         <div class="done-stats"><div class="stat"><b>${c(1)}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${c(2)}</b><span>ipucuyla doğru</span></div><div class="stat"><b>${c(0)}</b><span>birlikte öğrendik</span></div>${kn.length ? `<div class="stat"><b>${k1} / ${kn.length}</b><span>kanıtı ilk dokunuşta buldun</span></div>` : ""}</div>
         <p class="ek">Bu seviyede ${si2.tur} tur · son ${Math.min(si2.tur, ATOLYE_MIN_TUR)} turda ${yuzde(si2.oran)} doğru${s.gecti ? "" : ` · sonraki seviye için 2 tur ve ${yuzde(ATOLYE_ESIK)}`}.</p>
         <div class="row">${yeniAcildi && sonraki ? `<button class="btn primary" data-yeni>${sEk(sonraki.no, "i")} dene</button>` : ""}<button class="btn${yeniAcildi && sonraki ? " ghost" : " primary"}" data-tekrar>Bir tur daha</button><button class="btn ghost" data-ana>Seviyelere dön</button></div></div>`;
