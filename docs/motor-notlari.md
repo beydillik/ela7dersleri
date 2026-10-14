@@ -34,8 +34,10 @@ Bu dosya, skill'e henüz eklenmemiş motor kurallarını toplar. Faz 2 bitince s
   - `bosluk`: `cumleler` [{`c` (tek `___`), `cevap`}], `havuz` (yalnız çeldiriciler; cevaplar motorca eklenir).
   - `kisa`: `soru`, `yanit`, `kabul` []. Ek almış hâl (≤4 harf) ve 5+ harfli cevapta tek harf yazım hatası kabul.
   - `eslestir`: `soru`, `ciftler` [{`sol`, `sag`}] (3–5).
-- Okul koşulları: ipucu yok, tek cevap, sorular arasında gezinme, sonuç sonda (konu tablosu + soru soru çözüm + "Konuda bak").
-- Olaylar: `sinav-basla`, `sinav-soru`, `sinav-bitti`. Kayıt: `ela7:<kod>:sinav:<durak>` (yarım), `sinavlar:<durak>` (geçmiş), `sinav-gor` (soru görülme sayısı; az görülen önce).
+- İki biçim (veli ayarı `sinavAnlik`, varsayılan açık): **hemen göster** — tek tek, ipucu yok, tek hak; "Cevabı kontrol et" ya da "Bilmiyorum, geç" → renkli çözüm (`sinavKontrolHTML`), "Senin cevabın / Doğru cevap" ve robot balonunda "Neden?" (`sinavGeriHTML`), geri dönülmez. **sonda göster** — okuldaki gibi sorular arasında gezinme, sonuç sonda.
+- Sonuç sayfası: puan + çaba övgüsü, "Yanlışların" kartı, konulara göre tablo, kapalı "Doğru yaptıkların". Sonda biçiminde önce "Yanlışlarını incele" (her ekranda bir yanlış), sonra "Yanlışlarını yeniden çöz" (şıklar karışık, tek hak; yine yanlışsa kavram zayıf listesine bir daha işlenir). Bekleyen yeniden çözme varken Sıradaki gizli. Son prova `ela7:<kod>:sinav-son:<durak>` (giriş ekranından dönülür).
+- Açıklama (`aciklama`): Ela'nın anlayacağı 1–2 kısa cümle (en çok ~15 kelime) + sayfa. Çok parçalı türlerde doğrular zaten yeşil göründüğü için açıklama kısa bir ipucu olur.
+- Olaylar: `sinav-basla`, `sinav-soru` (yeniden çözmede `yeniden: true`), `sinav-bitti` (`mod`), `sinav-inceleme`, `sinav-yeniden`. Kayıt: `ela7:<kod>:sinav:<durak>` (yarım), `sinavlar:<durak>` (geçmiş), `sinav-gor` (soru görülme sayısı; az görülen önce).
 - Havuz yazarken: biçimler okul testlerinden (Banko, Arı) örnek alınır, sorular kitaba dayanarak yazılır; kopyalanmaz. Konu başına 4–7 soru, türler karışık, doğru şık dağılsın. Doğrulama: `gen_fen_sinav.py` benzeri betikle kavram adı, şık sayısı, `___` sayısı.
 - Fen Ünite 1: 40 soru (secim 15 — 6'sı öncüllü —, dy 7, kisa 7, bosluk 4, eslestir 4, dytablo 3).
 
@@ -47,3 +49,8 @@ Bu dosya, skill'e henüz eklenmemiş motor kurallarını toplar. Faz 2 bitince s
 - Motor (`BULUT` defter.js): yalnızca `ela7:bulut` kaydı olan (bağlanmış) cihazda bulut.js yüklenir. Bağlı olmayan cihaz (öğretmenler) hiçbir şey göndermez.
 - Eşitleme: ders sayfası açılınca (3 sn sonra), test/sınav/Öğren/Atölye bitince, 2 dk'da bir (yeni olay varsa), sayfa gizlenince. Olaylar `son` zamanından sonrakiler; ilerleme: son eşitlemeden beri bu cihazda değişen anahtar gider, değişmeyen anahtar buluttakiyle güncellenir (silinen anahtar v:null). Hariç: `BULUT_HARIC` (cihaz, oturum, pin, sekme, oyun, ayar…). Ayar buluttan gelir (bağlı cihazda yerel ayar kutuları kilitli).
 - Veli Paneli: giriş ekranı (Veli girişi / Öğrenci cihazı kodla bağlama / "Bu cihazın kaydını aç (PIN'le, bulutsuz)"). Veli hesabında: öğrenci ekle (takma ad), öğrenci seçimi, buluttaki son 90 gün, Cihazlar (bu cihazı bağla, kod üret, bağlantıları kaldır). Görünüm yerel modla aynı (`VELI.olaylar`, `VELI.oku`, `VELI.ayar/ayarYaz`).
+
+## Yanlıştan sonra okuma beklemesi (`hataDurak`, veli ayarı `hataDur`, varsayılan açık)
+- Cevabı gösterilen yanlışta (Test ve Tarama'da iki yanlıştan sonra, Sınav Provası'nda her yanlışta ve incelemede) ilerleme düğmeleri açıklamanın uzunluğuna göre 5–12 sn kilitli (sayı yok, dolan çubuk).
+- Sonra "Neden yanlış yaptın?": Bilmiyordum / Soruyu yanlış okudum / İki şeyi karıştırdım / Acele ettim. Seçmeden geçilmez; robot seçime göre kısa yanıt verir. Erken dokunuşta robot uyarır (3 dk'da bir) ve kutu sallanır.
+- Olaylar: `hata-neden` (neden, sureSn), `hata-acele`. Veli Paneli'nde "Yanlışların nedeni" dağılımı (Genel ve her ders, son 30 gün).

@@ -48,7 +48,7 @@
     "I, II ve III"
    ],
    "dogru": 0,
-   "aciklama": "Sondalarda insan yoktur. Roketler önceden tek kullanımlıktı, artık yeniden kullanılabiliyor. Uzay istasyonu yeniden kullanılamaz; bakım ve onarımla ömrü uzatılır (s. 15–19)."
+   "aciklama": "Yalnız I doğru. Roketler artık yeniden kullanılabiliyor. Uzay istasyonu ise yeniden kullanılamaz (s. 15–19)."
   },
   {
    "id": "f1-03",
@@ -58,7 +58,7 @@
    "ifade": "Uzay mekiğini, Dünya'dan kontrol edilen bir robot yönetir.",
    "dogru": false,
    "duzeltme": "Uzay mekiğini içindeki astronotlar kontrol eder.",
-   "aciklama": "Uzay sondası ve uydu Dünya'dan kontrol edilir; uzay mekiğini ise içindeki astronotlar kontrol eder (s. 15–19)."
+   "aciklama": "Sonda ve uydu Dünya'dan yönetilir. Mekiği ise içindeki astronotlar yönetir (s. 15–19)."
   },
   {
    "id": "f1-04",
@@ -113,7 +113,7 @@
      "cevap": "uzay istasyonu"
     }
    ],
-   "aciklama": "Roket taşır, uydu iletişim ve gözlem yapar, enerji güneş panellerinden gelir, istasyon uzaydaki ev ve laboratuvardır (s. 15–19)."
+   "aciklama": "Roket taşır, uydu yayın yapar. Uydunun enerjisi güneş panellerinden gelir (s. 15–19)."
   },
   {
    "id": "f1-07",
@@ -134,7 +134,7 @@
     "I, II ve III"
    ],
    "dogru": 3,
-   "aciklama": "Atmosfer, hava kirliliği ve uyduların ışık izleri yeryüzünden gözlemi zorlaştırır; uzay teleskobu bu sorunlarla karşılaşmaz, daha net görüntü alır (s. 19, 22–23)."
+   "aciklama": "Uzay teleskobu atmosferin üstündedir. Bu yüzden daha net görür (s. 19, 22–23)."
   },
   {
    "id": "f1-08",
@@ -189,7 +189,7 @@
     "N"
    ],
    "dogru": 3,
-   "aciklama": "Gözlemevi yüksek, yerleşim yerlerinden uzak, deprem kuşağında olmayan ve havası gözleme uygun (açık gün sayısı çok) yerlere kurulur. Hepsini sağlayan N'dir (s. 19, 22–23)."
+   "aciklama": "Gözlemevi yüksek, şehirden uzak ve depremsiz bir yere kurulur. Açık gün de çok olmalı (s. 19, 22–23)."
   },
   {
    "id": "f1-09",
@@ -198,7 +198,7 @@
    "tur": "dy",
    "ifade": "James Webb Uzay Teleskobu, Hubble Uzay Teleskobu'ndan yaklaşık 100 kat daha güçlüdür.",
    "dogru": true,
-   "aciklama": "James Webb tenis kortu büyüklüğündedir ve Hubble'dan 100 kat daha güçlüdür (s. 19, 22–23)."
+   "aciklama": "James Webb, Hubble'dan 100 kat güçlüdür (s. 19, 22–23)."
   },
   {
    "id": "f1-10",
@@ -248,7 +248,7 @@
     "Su kirliliği"
    ],
    "dogru": 0,
-   "aciklama": "Yanlış ve fazla kullanılan ışık gökyüzü gözlemini olumsuz etkiler; bu yüzden yaylalarda ve yüksek yerlerde daha net gözlem yapılır (s. 19, 22–23)."
+   "aciklama": "Şehir ışıkları gökyüzünü aydınlatır. Buna ışık kirliliği denir (s. 19, 22–23)."
   },
   {
    "id": "f1-13",
@@ -289,7 +289,7 @@
      "sag": "Yerli ve millî uydular geliştiren araştırma kuruluşudur."
     }
    ],
-   "aciklama": "Türksat 1B ilk, Türksat 6A ilk yerli ve millî haberleşme uydumuzdur; İMECE gözlem uydusudur (s. 20–21)."
+   "aciklama": "Türksat 1B ilk, Türksat 6A ilk yerli haberleşme uydumuz. İMECE gözlem uydusu (s. 20–21)."
   },
   {
    "id": "f1-15",
@@ -298,7 +298,7 @@
    "tur": "dy",
    "ifade": "Bilsat ve Rasat, görev süresini doldurup ömrünü tamamlamış gözlem uydularımızdır.",
    "dogru": true,
-   "aciklama": "Kitap, Bilsat ve Rasat'ı ömrünü tamamlamış gözlem uyduları olarak verir (s. 21)."
+   "aciklama": "Bilsat ve Rasat görevini bitirmiş gözlem uydularımızdır (s. 21)."
   },
   {
    "id": "f1-16",
@@ -331,7 +331,7 @@
     "I, II ve III"
    ],
    "dogru": 1,
-   "aciklama": "Turkuaz renkli harita, Dünya üzerinde Türkiye'yi gösterir; deneyleri simgelemez (s. 27)."
+   "aciklama": "Turkuaz harita Türkiye'yi gösterir, deneyleri değil. Bu yüzden III yanlış (s. 27)."
   },
   {
    "id": "f1-18",
@@ -356,7 +356,7 @@
      "cevap": "Türkiye Uzay Ajansı"
     }
    ],
-   "aciklama": "14 gün kalması planlanıyordu ama hava koşulları yüzünden 18 gün kaldı; 13 deney yaptı. TUA, Türkiye Uzay Ajansı'dır (s. 26–28)."
+   "aciklama": "Gezeravcı 14 değil 18 gün kaldı ve 13 deney yaptı. TUA, Türkiye Uzay Ajansı'dır (s. 26–28)."
   },
   {
    "id": "f1-19",
@@ -423,7 +423,7 @@
      "sag": "Termal battaniye ve ısıya dayanıklı kıyafet"
     }
    ],
-   "aciklama": "Uzay araştırmaları için geliştirilen teknolojiler sağlık, gıda, ulaşım ve endüstride kullanılıyor (s. 24–25, 30–32)."
+   "aciklama": "Uzay için geliştirilen teknolojiler sağlıkta, gıdada ve ulaşımda da kullanılır (s. 24–25, 30–32)."
   },
   {
    "id": "f1-22",
@@ -444,7 +444,7 @@
     "I, II ve III"
    ],
    "dogru": 2,
-   "aciklama": "Uzay çöpleri yalnızca uydular değildir; roket parçaları ve yakıt tankları da uzay çöpüdür (s. 24–25, 30–32)."
+   "aciklama": "Uzay çöpü yalnız uydu değildir. Roket parçaları da uzay çöpüdür (s. 24–25, 30–32)."
   },
   {
    "id": "f1-23",
@@ -496,7 +496,7 @@
     "Bulutsu → yıldız → ön yıldız → süpernova → beyaz cüce"
    ],
    "dogru": 0,
-   "aciklama": "Küçük kütleli yıldız kırmızı dev, sonra gezegenimsi bulutsu olur; geriye beyaz cüce kalır (s. 34–42)."
+   "aciklama": "Küçük yıldız önce kırmızı dev olur. Sonunda geriye beyaz cüce kalır (s. 34–42)."
   },
   {
    "id": "f1-27",
@@ -525,7 +525,7 @@
      "cevap": "bulutsu"
     }
    ],
-   "aciklama": "Işık yılı uzaklık ölçer. Küçük kütleli yıldız beyaz cüce olur; büyük kütleli yıldız kırmızı süperdev olup patlar. Yıldızlar bulutsuda doğar (s. 34–42)."
+   "aciklama": "Işık yılı bir uzunluktur. Yıldızlar bulutsuda doğar (s. 34–42)."
   },
   {
    "id": "f1-28",
@@ -535,7 +535,7 @@
    "ifade": "Bir yıldızın kütlesi ne kadar büyükse yaşamı o kadar uzun olur.",
    "dogru": false,
    "duzeltme": "Kütle ne kadar büyükse yaşam o kadar kısa olur.",
-   "aciklama": "Yıldızların yaşam sürecini kütleleri belirler: büyük kütle, kısa yaşam (s. 34–42)."
+   "aciklama": "Yıldızın ömrünü kütlesi belirler. Büyük kütle, kısa ömür (s. 34–42)."
   },
   {
    "id": "f1-29",
@@ -568,7 +568,7 @@
     "I, II ve III"
    ],
    "dogru": 1,
-   "aciklama": "Güneş küçük kütleli bir yıldızdır; kırmızı dev olur ve sonunda beyaz cüceye dönüşür, süpernova olmaz (s. 34–42)."
+   "aciklama": "Güneş küçük bir yıldızdır, süpernova olmaz. Bu yüzden III yanlış (s. 34–42)."
   },
   {
    "id": "f1-31",
@@ -609,7 +609,7 @@
     "Gökyüzünde güney yönüne bakılır."
    ],
    "dogru": 0,
-   "aciklama": "Cezvenin uç kısmındaki iki yıldız arasındaki mesafenin 5 katı uzakta Kutup Yıldızı bulunur (s. 43–45)."
+   "aciklama": "Cezvenin ucundaki iki yıldızın arasını 5 kez ileri git: Kutup Yıldızı (s. 43–45)."
   },
   {
    "id": "f1-33",
@@ -619,7 +619,7 @@
    "ifade": "Takımyıldız ile yıldız kümesi aynı anlama gelir.",
    "dogru": false,
    "duzeltme": "Yıldız kümesi, birbirine kütle çekimiyle bağlı yıldız grubudur; takımyıldız ise gökyüzünde yakın görünüp şekil oluşturan yıldızlardır.",
-   "aciklama": "Kitap, yıldız kümesi ile takımyıldızın farklı anlamlara geldiğini vurgular (s. 43–45)."
+   "aciklama": "Takımyıldız gökte şekil gibi görünür. Yıldız kümesi ise kütle çekimiyle bağlıdır (s. 43–45)."
   },
   {
    "id": "f1-34",
@@ -658,7 +658,7 @@
      "sag": "Birbirine kütle çekimiyle bağlı yıldız grubudur."
     }
    ],
-   "aciklama": "Büyükayı cezve, Kraliçe W biçimindedir; Kutup Yıldızı kuzeyi gösterir; yıldız kümesi kütle çekimiyle bağlıdır (s. 43–45)."
+   "aciklama": "Büyükayı cezveye, Kraliçe W harfine benzer (s. 43–45)."
   },
   {
    "id": "f1-36",
@@ -673,7 +673,7 @@
     "Güneş sistemi → Dünya → evren → Samanyolu"
    ],
    "dogru": 0,
-   "aciklama": "Dünya Güneş sistemindedir, Güneş sistemi Samanyolu'nda, Samanyolu da evrendedir (s. 46–50)."
+   "aciklama": "Dünya → Güneş sistemi → Samanyolu → evren: küçükten büyüğe (s. 46–50)."
   },
   {
    "id": "f1-37",
@@ -711,7 +711,7 @@
      "cevap": "Avcı"
     }
    ],
-   "aciklama": "Evren her şeyi içine alır. Galaksileri Edwin Hubble keşfetti. Güneş sistemi Samanyolu'nun Avcı kolundadır (s. 46–50)."
+   "aciklama": "Galaksileri Edwin Hubble keşfetti. Güneş sistemi Samanyolu'ndadır (s. 46–50)."
   },
   {
    "id": "f1-39",
@@ -721,7 +721,7 @@
    "ifade": "Bütün galaksilerin büyüklükleri ve şekilleri aynıdır.",
    "dogru": false,
    "duzeltme": "Galaksilerin büyüklükleri, şekilleri ve içlerindeki gök cismi sayıları farklıdır.",
-   "aciklama": "Galaksiler birbirinin aynısı değildir (s. 46–50)."
+   "aciklama": "Galaksilerin büyüklüğü ve şekli farklıdır (s. 46–50)."
   },
   {
    "id": "f1-40",
