@@ -1,0 +1,500 @@
+{
+ "id": "u3k6",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Pekiştirmeler ve Ünlem",
+ "sayfalar": "s. 131, 154, 168",
+ "giris": "Bazen bir kelimenin anlamını güçlendirmek isteriz: “temiz” yerine “tertemiz” deriz. Bazen de bir sözü alay ederek söyleriz. Bu konuda pekiştirmeli kelimelerin nasıl yapıldığını ve yazıldığını, ünlemin parantez içinde ne anlattığını öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "İkilemelerin Yazımı",
+    "sinif": "1. Tema, Konu 5",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>ayrı yaz</text><rect x='10' y='36' width='100' height='22' rx='9' fill='#fbf6e6'/><text x='60.0' y='51.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>omuz omuza</text><rect x='10' y='68' width='100' height='22' rx='9' fill='#46507a'/><text x='60.0' y='83.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#8a93ad'>omuzomuza</text><path d='M16 79.0 H104' stroke='#ff7a6b' stroke-width='3'/><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>✓ üstteki doğru</text></svg>",
+    "akilda": "İki kelime, iki ayrı parça",
+    "anlatim": "İkilemeler ayrı yazılır ve araya işaret konmaz: günden güne, çoluk çocuk, omuz omuza.",
+    "sorular": [
+     {
+      "soru": "Hangi ikilemenin yazımı doğrudur?",
+      "secenekler": [
+       "omuzomuza",
+       "omuz omuza",
+       "omuz-omuza"
+      ],
+      "dogru": 1,
+      "ipucu": "İkilemeler nasıl yazılır: bitişik mi, ayrı mı?",
+      "aciklama": "İkilemeler ayrı yazılır: omuz omuza."
+     },
+     {
+      "soru": "“yavaş yavaş” ikilemesi nasıl yazılır?",
+      "secenekler": [
+       "yavaş yavaş",
+       "yavaşyavaş",
+       "yavaş, yavaş"
+      ],
+      "dogru": 0,
+      "ipucu": "Ayrı yazılır, araya işaret konmaz.",
+      "aciklama": "İkilemeler ayrı yazılır, araya virgül konmaz."
+     }
+    ]
+   },
+   {
+    "ad": "Ünlem İşareti",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='44' r='26' fill='#f5c53d'/><text x='60' y='58' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='38' fill='#2b2417'>!</text><rect x='8' y='80' width='50' height='20' rx='9' fill='#fbf6e6'/><text x='33.0' y='93.6' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>Eyvah!</text><rect x='62' y='80' width='50' height='20' rx='9' fill='#fbf6e6'/><text x='87.0' y='93.6' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>Dikkat!</text><text x='60' y='113' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#6ea8ef'>duygu · seslenme</text></svg>",
+    "akilda": "Duygu ve seslenme: !",
+    "anlatim": "Ünlem işareti (!) sevinç, korku, şaşkınlık gibi duyguları anlatan cümlelerin ve seslenme, uyarı sözlerinin sonuna konur: Ne güzel bir gün! Dikkat et!",
+    "sorular": [
+     {
+      "soru": "Hangi cümlenin sonuna ünlem gelir?",
+      "secenekler": [
+       "Eyvah, otobüsü kaçırdık",
+       "Okul saat dokuzda başlar",
+       "Kitabı masaya koydum"
+      ],
+      "dogru": 0,
+      "ipucu": "Korku ya da şaşkınlık anlatan cümleyi bul.",
+      "aciklama": "“Eyvah” korku ve şaşkınlık bildirir; sonuna ünlem gelir."
+     },
+     {
+      "soru": "“Ah, ne güzel bir manzara ...” Boşluğa hangi işaret gelir?",
+      "secenekler": [
+       "?",
+       "!",
+       "."
+      ],
+      "dogru": 1,
+      "ipucu": "Cümle bir duygu, hayranlık anlatıyor.",
+      "aciklama": "Hayranlık bildiren cümlenin sonuna ünlem gelir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Pekiştirme Nedir?",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>anlam güçlenir</text><rect x='30' y='32' width='60' height='20' rx='9' fill='#fbf6e6'/><text x='60.0' y='46.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>temiz</text><path d='M60 56 V66 M54 61 L60 67 L66 61' stroke='#fbf6e6' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='16' y='70' width='88' height='24' rx='9' fill='#f5c53d'/><text x='60.0' y='86.7' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>tertemiz</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>çok temiz</text></svg>",
+   "aciklama": "Pekiştirme, bir kelimenin anlamını güçlendirir: temiz → tertemiz (çok temiz), sıcak → sımsıcak (çok sıcak).",
+   "ek": "Kitap, anlamı kuvvetlendirmek için kelimenin ilk hecesine eklemeler yaparak pekiştirilmiş kelimeler ürettiğimizi söyler. Kitaptaki kısa metinde beş örnek var: tertemiz, dosdoğru, apaçık, sımsıcak, sapasağlam (s. 131).",
+   "akilda": "Çok … = pekiştirme",
+   "soru": {
+    "soru": "“Sımsıcak kelimeler” (s. 131) ne demektir?",
+    "secenekler": [
+     "Biraz sıcak kelimeler",
+     "Çok sıcak kelimeler",
+     "Soğuk kelimeler"
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: Çok … = pekiştirme.",
+    "aciklama": "“Sımsıcak” çok sıcak demektir; burada sevgi dolu, içten kelimeler anlatılıyor (s. 131)."
+   }
+  },
+  {
+   "ad": "Pekiştirme Nasıl Yapılır?",
+   "renk": "#b5562f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>nasıl yapılır?</text><rect x='6' y='32' width='26' height='22' rx='9' fill='#fbf6e6'/><text x='19.0' y='47.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>ka</text><text x='38' y='47' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#fbf6e6'>+</text><rect x='44' y='32' width='20' height='22' rx='9' fill='#f5c53d'/><text x='54.0' y='47.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>p</text><text x='70' y='47' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#fbf6e6'>+</text><rect x='76' y='32' width='38' height='22' rx='9' fill='#fbf6e6'/><text x='95.0' y='47.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>kara</text><path d='M60 60 V68 M54 63 L60 69 L66 63' stroke='#fbf6e6' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='18' y='72' width='84' height='24' rx='9' fill='#f5c53d'/><text x='60.0' y='88.7' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>kapkara</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>m · p · r · s</text></svg>",
+   "aciklama": "Kelimenin baş kısmı alınır, sonuna m, p, r ya da s sesi eklenir, sonra kelimenin kendisi gelir: ka-p-kara → kapkara, ma-s-mavi → masmavi.",
+   "ek": "Kitaptaki örnekler: ter-temiz, dos-doğru, ap-açık, sım-sıcak (s. 131). Bazen araya “a” ya da “e” girer: sapasağlam, düpedüz. Bu yapılış kuralı kitapta yazmıyor; kitap dışı açıklamadır.",
+   "akilda": "Baş + m/p/r/s + kelime",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Kara” kelimesini pekiştirelim.",
+    "adimlar": [
+     {
+      "metin": "Kelimenin baş kısmını al.",
+      "islem": "kara → ka"
+     },
+     {
+      "metin": "Sonuna bir ses ekle: m, p, r ya da s. Kulağa doğru geleni seç.",
+      "islem": "ka + p = kap"
+     },
+     {
+      "metin": "Kelimenin kendisini bitişik ekle.",
+      "islem": "kap + kara = kapkara"
+     }
+    ],
+    "sonuc": "Kara → kapkara. Anlamı: çok kara, simsiyah."
+   },
+   "soru": {
+    "soru": "“Yeşil” kelimesinin pekiştirilmiş hâli hangisidir?",
+    "secenekler": [
+     "yemyeşil",
+     "yeşil yeşil",
+     "yeşilce"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Baş + m/p/r/s + kelime.",
+    "aciklama": "ye-m-yeşil → yemyeşil. “Yeşil yeşil” ise bir ikilemedir."
+   }
+  },
+  {
+   "ad": "Pekiştirmeler Bitişik Yazılır",
+   "renk": "#2f8f5b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>bitişik yaz</text><rect x='10' y='36' width='100' height='22' rx='9' fill='#fbf6e6'/><text x='60.0' y='51.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>sapasağlam</text><rect x='10' y='68' width='100' height='22' rx='9' fill='#46507a'/><text x='60.0' y='83.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#8a93ad'>sapa sağlam</text><path d='M16 79.0 H104' stroke='#ff7a6b' stroke-width='3'/><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>✓ üstteki doğru</text></svg>",
+   "aciklama": "Pekiştirmeli kelime tek kelimedir; bitişik yazılır: tertemiz, apaçık, sapasağlam.",
+   "ek": "Kitap bu kuralı öğrenciye buldurur (s. 131); kural TDK Yazım Kılavuzu'ndan alındı (kitap dışı). İkilemelerle karıştırma: İkilemeler ayrı yazılır (1. Tema, Konu 5): yavaş yavaş; pekiştirme ise bitişik: upuzun.",
+   "akilda": "Pekiştirme tek parça",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Böyle bir dille sapa sağlam dostluklar kurulur.” (s. 131'den uyarlandı) Bu cümlede bir yazım yanlışı var.",
+    "adimlar": [
+     {
+      "metin": "1. Pekiştirmeli kelimeyi bul.",
+      "soru": {
+       "soru": "Hangisi pekiştirmeli kelimedir?",
+       "secenekler": [
+        "sapa sağlam",
+        "böyle bir",
+        "dostluklar"
+       ],
+       "dogru": 0,
+       "ipucu": "Anlamı güçlendirilmiş kelimeyi ara: çok sağlam.",
+       "aciklama": "“sapa sağlam” çok sağlam demektir; pekiştirmedir."
+      },
+      "islem": "sapa sağlam"
+     },
+     {
+      "metin": "2. Pekiştirmeler nasıl yazılır?",
+      "soru": {
+       "soru": "Pekiştirmeli kelimeler nasıl yazılır?",
+       "secenekler": [
+        "Ayrı",
+        "Bitişik",
+        "Kısa çizgiyle"
+       ],
+       "dogru": 1,
+       "ipucu": "Akılda kalsın: Pekiştirme tek parça.",
+       "aciklama": "Pekiştirmeli kelimeler bitişik yazılır."
+      },
+      "islem": "bitişik yazılır"
+     },
+     {
+      "metin": "3. Doğrusunu yaz.",
+      "islem": "sapasağlam"
+     }
+    ],
+    "sonuc": "Doğrusu: “Böyle bir dille sapasağlam dostluklar kurulur.”"
+   },
+   "soru": {
+    "soru": "Hangisinin yazımı doğrudur?",
+    "secenekler": [
+     "sapa sağlam",
+     "sapa-sağlam",
+     "sapasağlam"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Pekiştirme tek parça.",
+    "aciklama": "Pekiştirmeli kelimeler bitişik yazılır: sapasağlam (s. 131)."
+   }
+  },
+  {
+   "ad": "Ünlemin Parantez İçinde Kullanımı",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>(!) = alay</text><rect x='8' y='36' width='70' height='24' rx='9' fill='#fbf6e6'/><text x='43.0' y='52.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>dinleyici</text><rect x='82' y='36' width='30' height='24' rx='9' fill='#f5c53d'/><text x='97.0' y='52.3' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>(!)</text><rect x='44' y='68' width='32' height='30' rx='6' fill='#46507a'/><rect x='48' y='72' width='24' height='18' rx='3' fill='#9cc7ff'/><circle cx='60' cy='94' r='2' fill='#fbf6e6'/><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#6ea8ef'>tersini söylüyor</text></svg>",
+   "aciklama": "Bir sözü alay ederek ya da küçümseyerek söylüyorsak o sözden hemen sonra parantez içinde ünlem koyarız: (!). Söz, tersini anlatır.",
+   "ek": "Kitaptaki örnek: Karşımdaki kişi o kadar etkili bir dinleyici (!) ki ben konuşurken gözünü telefon ekranından bir saniye bile ayırmadı (s. 154). Kişi aslında iyi bir dinleyici değildir. TDK Yazım Kılavuzu da alay ve küçümsemede ayraç içinde ünlem kullanır (kitap dışı).",
+   "akilda": "(!) = tersini kastediyorum",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Kendisi o kadar anlayışlı ....... biridir ki yanında çalışanlarla sürekli emir vererek konuşur.” (s. 154) Boşluğa ne gelir?",
+    "adimlar": [
+     {
+      "metin": "Cümlenin sonunu oku: Kişi nasıl konuşuyor?",
+      "islem": "emir vererek konuşur"
+     },
+     {
+      "metin": "Bu davranış “anlayışlı” sözüyle uyuşuyor mu?",
+      "islem": "uyuşmuyor → alay"
+     },
+     {
+      "metin": "Alay edilen sözden hemen sonra işaret koy.",
+      "islem": "anlayışlı (!)"
+     }
+    ],
+    "sonuc": "Kişi aslında anlayışlı değil; söz alaylı. Boşluğa (!) gelir: “o kadar anlayışlı (!) biridir ki…”"
+   },
+   "soru": {
+    "soru": "“Çok çalışkan (!) arkadaşım bugün de ödevini yapmamış.” Bu cümlede (!) ne anlatır?",
+    "secenekler": [
+     "Arkadaşının çalışkan olmadığını, sözün alaylı olduğunu",
+     "Arkadaşına sevindiğini",
+     "Arkadaşına seslendiğini"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: (!) = tersini kastediyorum. Ödevini yapmayan biri çalışkan mıdır?",
+    "aciklama": "Ödevini yapmayan biri çalışkan değildir; “çalışkan” sözü alaylıdır."
+   }
+  },
+  {
+   "ad": "Ünlemin Bildiğin Görevleri",
+   "renk": "#b58a2f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>ünlem !</text><rect x='10' y='32' width='100' height='18' rx='9' fill='#fbf6e6'/><text x='60.0' y='45.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>Yaşasın!</text><rect x='10' y='54' width='100' height='18' rx='9' fill='#f5c53d'/><text x='60.0' y='67.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>İnanmıyorum!</text><rect x='10' y='76' width='100' height='18' rx='9' fill='#7ad19a'/><text x='60.0' y='89.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>Dikkat et!</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#6ea8ef'>duygu · seslenme</text></svg>",
+   "aciklama": "Ünlem işareti sevinç, şaşkınlık, korku gibi duyguları anlatan cümlelerin ve seslenme, uyarı sözlerinin sonuna konur: Yaşasın! İnanmıyorum! Dikkat et!",
+   "ek": "Kitap s. 154'te yeni görevle birlikte bu görevleri de sorar: “İnanmıyorum .......” boşluğuna şaşkınlık bildiren ünlem gelir. Bu görevleri önceki yıllarda öğrendin.",
+   "akilda": "Duygu, seslenme: !",
+   "soru": {
+    "soru": "“İnanmıyorum ....... Nasıl bu kadar rahatsız edebiliyor?” (s. 154) Boşluğa ünlem neden gelir?",
+    "secenekler": [
+     "Alay ettiği için",
+     "Şaşkınlık bildirdiği için",
+     "Soru sorduğu için"
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: Duygu, seslenme: !. “İnanmıyorum” hangi duyguyu anlatır?",
+    "aciklama": "“İnanmıyorum” şaşkınlık bildirir; sonuna ünlem gelir (s. 154)."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bilgi pekiştirmeyle mi, ünlemle mi ilgili?",
+   "kutular": [
+    {
+     "etiket": "Pekiştirme",
+     "uyeler": [
+      "Pekiştirme Nedir?",
+      "Pekiştirme Nasıl Yapılır?",
+      "Pekiştirmeler Bitişik Yazılır"
+     ]
+    },
+    {
+     "etiket": "Ünlem",
+     "uyeler": [
+      "Ünlemin Parantez İçinde Kullanımı",
+      "Ünlemin Bildiğin Görevleri"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki kısa metinde beş pekiştirmeli kelime renkli gösterilmiştir: tertemiz, dosdoğru, apaçık, sımsıcak, sapasağlam (s. 131).",
+  "Kitabın tema sonundaki noktalama etkinliğinde ünlem, kısa çizgi ve eğik çizgi bir arada sorulur (s. 168)."
+ ],
+ "akildaKalsin": [
+  "Pekiştirme anlamı güçlendirir: temiz → tertemiz.",
+  "Yapılışı: baş + m/p/r/s + kelime: kapkara, masmavi.",
+  "Pekiştirmeli kelime bitişik yazılır: sapasağlam.",
+  "İkileme ayrı, pekiştirme bitişik: yavaş yavaş · upuzun.",
+  "Alaylı sözden hemen sonra (!) gelir: söz tersini anlatır.",
+  "Ünlem duygu ve seslenme bildiren cümlenin sonuna konur."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "“Bembeyaz” mı, “bem beyaz” mı?",
+   "cevap": "Bitişik: bembeyaz. Pekiştirmeli kelimeler tek kelimedir (TDK, kitap dışı)."
+  },
+  {
+   "soru": "Her kelime pekiştirilebilir mi?",
+   "cevap": "Hayır. Çoğunlukla renk ya da durum bildiren kelimeler pekiştirilir: kapkara, yemyeşil, dümdüz. “Masa”, “kitap” gibi kelimeler pekiştirilmez (kitap dışı)."
+  },
+  {
+   "soru": "Pekiştirme ile ikileme arasındaki fark ne?",
+   "cevap": "İkileme iki ayrı kelimedir, ayrı yazılır: güzel güzel. Pekiştirme tek kelimedir, bitişik yazılır: güpgüzel (kitap dışı; 1. Tema, Konu 5)."
+  },
+  {
+   "soru": "(!) yazmasaydım ne olurdu?",
+   "cevap": "Okur sözü gerçek anlamıyla anlardı; “etkili bir dinleyici” sözünü övgü sanardı. (!), okura “tersini kastediyorum” der (s. 154)."
+  },
+  {
+   "soru": "Konuşurken alay nasıl anlaşılır?",
+   "cevap": "Ses tonundan ve yüz ifadesinden. Yazıda ses tonu olmadığı için bu işareti kullanırız (kitap dışı)."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "İki cümle yaz: birinde pekiştirmeli bir kelime, ötekinde alay anlatan (!) olsun.",
+   "ornekCevap": "Bahçemiz baharda yemyeşil oldu. Çok düzenli (!) kardeşim çoraplarını yine kanepede bırakmış.",
+   "anahtarlar": [
+    "yemyeşil",
+    "masmavi",
+    "tertemiz",
+    "kapkara",
+    "sapasağlam",
+    "(!)"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangi cümlede pekiştirmeli bir kelime vardır?",
+   "secenekler": [
+    "Odası tertemiz olmuştu.",
+    "Odası temiz temiz kokuyordu.",
+    "Odası çok güzeldi."
+   ],
+   "dogru": 0,
+   "ipucu": "Tek kelimede anlamı güçlendirilmiş kelimeyi ara.",
+   "aciklama": "“tertemiz” pekiştirmedir. “temiz temiz” ise ikilemedir.",
+   "kavram": "Pekiştirme Nedir?"
+  },
+  {
+   "soru": "“Mavi” kelimesinin pekiştirilmiş hâli hangisidir?",
+   "secenekler": [
+    "mavi mavi",
+    "masmavi",
+    "mavimsi"
+   ],
+   "dogru": 1,
+   "ipucu": "Baş + m/p/r/s + kelime.",
+   "aciklama": "ma-s-mavi → masmavi.",
+   "kavram": "Pekiştirme Nasıl Yapılır?"
+  },
+  {
+   "soru": "Hangi cümlede yazım yanlışı vardır?",
+   "secenekler": [
+    "Düşüncelerini dos doğru anlattı.",
+    "Gökyüzü masmavi görünüyordu.",
+    "Sınıf tertemiz olmuştu."
+   ],
+   "dogru": 0,
+   "ipucu": "Pekiştirmeli kelimeler bitişik mi yazılmış?",
+   "aciklama": "Doğrusu “dosdoğru”dur; pekiştirmeler bitişik yazılır (s. 131).",
+   "kavram": "Pekiştirmeler Bitişik Yazılır"
+  },
+  {
+   "soru": "Hangisinde iki kelime de doğru yazılmıştır?",
+   "secenekler": [
+    "sıra sıra / apaçık",
+    "sırasıra / apaçık",
+    "sıra sıra / ap açık"
+   ],
+   "dogru": 0,
+   "ipucu": "İkileme ayrı, pekiştirme bitişik.",
+   "aciklama": "“sıra sıra” ikilemedir, ayrı; “apaçık” pekiştirmedir, bitişik yazılır.",
+   "kavram": "Pekiştirmeler Bitişik Yazılır"
+  },
+  {
+   "soru": "“Sergimiz hakkında yazdığı o kırıcı yorumlardan onun ne kadar nazik ....... bir insan olduğunu anlayabilirsiniz.” (s. 154) Boşluğa ne gelir?",
+   "secenekler": [
+    "…",
+    "(?)",
+    "(!)"
+   ],
+   "dogru": 2,
+   "ipucu": "Kırıcı yorum yazan biri nazik midir?",
+   "aciklama": "Kırıcı yorum yazan biri nazik değildir; söz alaylıdır: nazik (!) (s. 154).",
+   "kavram": "Ünlemin Parantez İçinde Kullanımı"
+  },
+  {
+   "soru": "Hangi cümlenin sonuna ünlem konmalıdır?",
+   "secenekler": [
+    "Hafta sonu kitap okudum",
+    "Kaç yaşındasın",
+    "Eyvah, yağmur başladı"
+   ],
+   "dogru": 2,
+   "ipucu": "Bir duyguyu, şaşkınlığı anlatan cümleyi bul.",
+   "aciklama": "“Eyvah” şaşkınlık ve korku bildirir; sonuna ünlem konur.",
+   "kavram": "Ünlemin Bildiğin Görevleri"
+  },
+  {
+   "soru": "Hangi cümlede (!) doğru kullanılmıştır?",
+   "secenekler": [
+    "Ne güzel bir gün (!)",
+    "Haydi (!) okula gidelim.",
+    "Pek akıllı (!) arkadaşım anahtarı yine evde unutmuş."
+   ],
+   "dogru": 2,
+   "ipucu": "(!) alaylı sözden hemen sonra gelir. Hangi söz tersini anlatıyor?",
+   "aciklama": "Anahtarı unutan arkadaş için “akıllı” sözü alaylıdır.",
+   "kavram": "Ünlemin Parantez İçinde Kullanımı"
+  },
+  {
+   "soru": "Son cümlede “çalışkan” sözü neden (!) ile yazılmıştır?",
+   "secenekler": [
+    "Kaan aslında çalışmadığı için söz alaylıdır.",
+    "Kaan en çok çalışan kişi olduğu için",
+    "Yazar Kaan'a seslendiği için"
+   ],
+   "dogru": 0,
+   "ipucu": "Kaan ödevde ne yaptı? Metinde bunu söyleyen cümleyi bul.",
+   "aciklama": "Kaan hiçbir iş yapmadı; “çalışkan” sözü alaylıdır, tersini anlatır.",
+   "kavram": "Ünlemin Parantez İçinde Kullanımı",
+   "metinBaslik": "Grup Ödevi",
+   "metin": [
+    "Grup ödevimizi hazırlamak için toplandık.",
+    "Herkes bir iş üstlendi, yalnızca Kaan hiçbir şey yapmadı.",
+    "Ödev bitince Kaan, en çok onun çalıştığını söyledi.",
+    "Ne çalışkan (!) bir arkadaşımız var."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Kaan'ın ödevde ne yaptığını söyleyen cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? (!) işaretinin sebebini.",
+     "Anahtar kelime: “çalışkan (!)”. Söz gerçek mi, alaylı mı?",
+     "Kanıt: Kaan'ın ödevde ne yaptığını söyleyen cümleyi bul.",
+     "Şıkları ele: Kanıt cümlesi “çalışkan” sözüyle uyuşuyor mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde toprağın çok ıslak olduğunu anlatan pekiştirmeli kelime hangisidir?",
+   "secenekler": [
+    "masmavi",
+    "sırılsıklam",
+    "buharlaşır"
+   ],
+   "dogru": 1,
+   "ipucu": "Toprağın anlatıldığı cümleyi bul.",
+   "aciklama": "“sırılsıklam” çok ıslak demektir; pekiştirmedir ve bitişik yazılır.",
+   "kavram": "Pekiştirme Nedir?",
+   "metinBaslik": "Yağmurdan Sonra",
+   "metin": [
+    "Yağmurdan sonra toprak sırılsıklam olur.",
+    "Güneş çıkınca suyun bir kısmı buharlaşır.",
+    "Su buharı yükseldikçe soğur ve bulutları oluşturur.",
+    "Birkaç gün sonra gökyüzü yine masmavi görünür."
+   ],
+   "kanit": [
+    0
+   ],
+   "kanitIpucu": "Toprağın anlatıldığı cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Toprağın çok ıslak olduğunu anlatan kelimeyi.",
+     "Anahtar kelime: toprak.",
+     "Kanıt: “toprak” kelimesinin geçtiği cümleyi bul.",
+     "Şıkları ele: Hangi kelime toprağı değil, başka bir şeyi anlatıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metne göre aşağıdakilerden hangisi söylenemez?",
+   "secenekler": [
+    "Köprü çok eskidir.",
+    "Köprü depremlerde yıkılmıştır.",
+    "Dere yazın kurur."
+   ],
+   "dogru": 1,
+   "ipucu": "Köprü şimdi ne durumda? “sapasağlam” kelimesine bak.",
+   "aciklama": "Köprü sel ve depremlere rağmen sapasağlam ayakta; yıkılmamıştır.",
+   "kavram": "Pekiştirme Nedir?",
+   "metinBaslik": "Eski Taş Köprü",
+   "metin": [
+    "Bu taş köprü yüzlerce yıl önce yapılmış.",
+    "Seller, depremler görmüş ama hâlâ sapasağlam ayakta.",
+    "Köprünün altından akan dere yazın kupkuru olur.",
+    "Köprü bugün koruma altındadır."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Söylenemez soruyor: Yanlış yargıyı çürüten cümleye dokun. Köprü şimdi nasıl?",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Söylenemez: metne uymayan yargıyı.",
+     "Anahtar kelimeler: köprü, deprem.",
+     "Kanıt: Köprünün depremlerden sonra ne durumda olduğunu söyleyen cümleyi bul.",
+     "Şıkları ele: “sapasağlam” ne demek? Hangi şık buna uymuyor?"
+    ]
+   }
+  }
+ ]
+}

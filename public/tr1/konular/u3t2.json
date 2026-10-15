@@ -1,0 +1,326 @@
+{
+ "id": "u3t2",
+ "tur": "tarama",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Ara Durak 2: Zaman, Yazım ve Noktalama",
+ "sayfalar": "Konu 5–7 · s. 131–168",
+ "giris": "Üç konu daha bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce kartlara dokun, hatırlayıp hatırlamadığını söyle. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bu üç konu cümleye küçük ama önemli işaretler koymayı öğretti. Fiilin eki işin ne zaman olduğunu söyler (Konu 5). Pekiştirme anlamı güçlendirir, (!) ise sözün alaylı olduğunu gösterir (Konu 6). Kısa çizgi ve eğik çizgi iki şeyin ilişkisini, adresi ve tarihi gösterir (Konu 7). Hepsinde aynı soru var: Bu küçük parça cümleye ne anlam katıyor?",
+ "kapsar": [
+  "u3k5",
+  "u3k6",
+  "u3k7"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Öncesi -di, -miş, -iyordu; anı -iyor, -mekte.",
+    "Sonrası -ecek; süreklilik -r, -mez.",
+    "Zaman kelimesi ile ek uyuşmalı: “yarın gittim” olmaz."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Pekiştirme anlamı güçlendirir ve bitişik yazılır: sapasağlam.",
+    "İkileme ayrı, pekiştirme bitişik: yavaş yavaş · upuzun.",
+    "Alaylı sözden hemen sonra (!) gelir: söz tersini anlatır."
+   ]
+  },
+  {
+   "konu": "u3k7",
+   "maddeler": [
+    "Kısa çizgi: ile, arasında, -den -e (Ankara-Bakü, 14.00-16.00).",
+    "Eğik çizgi: adres, tarih, ekin biçimleri (14/5, 12/04/2025, -lık/-lik).",
+    "İle mi? Kısa. Adres, tarih, ek mi? Eğik."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kavram neyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Yargının zamanı",
+     "uyeler": [
+      "Gerçekleşme Anından Öncesi",
+      "Gerçekleşme Anı",
+      "Gerçekleşme Anından Sonrası",
+      "Yargının Sürekliliği"
+     ]
+    },
+    {
+     "etiket": "Pekiştirme ve ünlem",
+     "uyeler": [
+      "Pekiştirme Nasıl Yapılır?",
+      "Pekiştirmeler Bitişik Yazılır",
+      "Ünlemin Parantez İçinde Kullanımı"
+     ]
+    },
+    {
+     "etiket": "Kısa çizgi ve eğik çizgi",
+     "uyeler": [
+      "Kısa Çizgi: Arasında, Ve, İle",
+      "Eğik Çizgi: Adres",
+      "Eğik Çizgi: Tarih"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Metne göre söyleşiyle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Söyleşi yapıldı ve bitti.",
+    "Söyleşi kasım ayında yapılacak ve bir saat sürecek.",
+    "Söyleşi her yıl kasım ayında yapılır."
+   ],
+   "dogru": 1,
+   "ipucu": "Fiillerin eklerine ve tarihle saatteki çizgilere bak.",
+   "aciklama": "“yapılacak” ve “sürecek” sonrasını gösterir. 20/11 kasım ayıdır; 10.00-11.00 bir saattir.",
+   "metinBaslik": "Okulda Söyleşi",
+   "metin": [
+    "Okulumuzda 20/11/2026 tarihinde bir söyleşi yapılacak.",
+    "Söyleşi saat 10.00-11.00 arasında sürecek.",
+    "Konuşmacı geçen yıl da okulumuza geldi.",
+    "Bu yıl iletişim üzerine konuşacak."
+   ],
+   "kanit": [
+    0,
+    1
+   ],
+   "kanitIpucu": "Söyleşinin tarihini ya da saatini veren cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Gerçekleşme Anından Sonrası"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Eğik Çizgi: Tarih"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Söyleşiyle ilgili doğru bilgiyi.",
+     "Anahtar kelimeler: tarih, saat ve fiillerin ekleri.",
+     "Kanıt: Tarihi ve saati veren cümleleri bul; “-acak” eki neyi gösterir?",
+     "Şıkları ele: Olmuş bir işten ya da her yıl olan bir işten söz eden şıklar metne uyuyor mu?"
+    ]
+   }
+  },
+  {
+   "soru": "İlk cümle ile son cümle birlikte düşünülünce hangisi söylenebilir?",
+   "secenekler": [
+    "Kardeş toplama alışkanlığına bugün uymamış; yazar onunla alay ediyor.",
+    "Kardeş odasını her gün toplar; yazar onu övüyor.",
+    "Kardeş odasını hiç toplamaz; yazar ona sesleniyor."
+   ],
+   "dogru": 0,
+   "ipucu": "Oda şimdi nasıl? “darmadağın” kelimesine bak.",
+   "aciklama": "“toplar” bir alışkanlığı anlatır ama oda darmadağın; (!) “düzenli” sözünün alaylı olduğunu gösterir.",
+   "metinBaslik": "Kardeşimin Odası",
+   "metin": [
+    "Kardeşim odasını her hafta toplar.",
+    "Bugün de topladığını söyledi.",
+    "Odaya girdim: her yer darmadağın!",
+    "Ne kadar düzenli (!) bir kardeşim var."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Odanın şimdi nasıl olduğunu söyleyen cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Ünlemin Parantez İçinde Kullanımı"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Yargının Sürekliliği"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İlk ve son cümleden çıkan anlamı.",
+     "Anahtar kelimeler: “toplar” (her hafta) ve “düzenli (!)”.",
+     "Kanıt: Odanın şimdiki hâlini anlatan cümleyi bul.",
+     "Şıkları ele: Oda darmadağınsa “düzenli” sözü övgü mü, alay mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Hangi cümlede hem pekiştirmeli kelime hem de çizgi doğru yazılmıştır?",
+   "secenekler": [
+    "İstanbul/Ankara yolu düm düz uzanıyordu.",
+    "İstanbul-Ankara yolu düm düz uzanıyordu.",
+    "İstanbul-Ankara yolu dümdüz uzanıyordu."
+   ],
+   "dogru": 2,
+   "ipucu": "Pekiştirme bitişik mi? İki şehir arasındaki yolda hangi çizgi var?",
+   "aciklama": "Pekiştirme bitişik yazılır: dümdüz. İki şehir arasındaki yol kısa çizgiyle yazılır: İstanbul-Ankara.",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Pekiştirmeler Bitişik Yazılır"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Kısa Çizgi: Arasında, Ve, İle"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Önce pekiştirmeli kelimeye bak: bitişik mi, ayrı mı?",
+     "Sonra iki şehrin arasındaki çizgiye bak: “ile” anlamı mı, adres mi?",
+     "İki kuralı da sağlayan şıkkı seç."
+    ]
+   }
+  },
+  {
+   "soru": "Tabloya göre aşağıdakilerden hangisi söylenemez?",
+   "secenekler": [
+    "Resim kulübü iki saat çalışacak.",
+    "Kitap kulübü kasım ayında toplanacak.",
+    "Satranç kulübü ekim ayında toplandı."
+   ],
+   "dogru": 2,
+   "ipucu": "Satranç satırındaki tarihte ay hangisi? Tablo olmuş işleri mi, olacak işleri mi gösteriyor?",
+   "aciklama": "Satranç kulübü 04/11'de, yani kasımda toplanacak. Hem ay hem zaman yanlış.",
+   "metin": [
+    "Tablo, okulumuzdaki kulüplerin önümüzdeki çalışmalarını gösteriyor."
+   ],
+   "tablo": {
+    "baslik": "Kulüp çalışmaları",
+    "basliklar": [
+     "Kulüp",
+     "Tarih",
+     "Saat"
+    ],
+    "satirlar": [
+     [
+      "Satranç",
+      "04/11/2026",
+      "14.00-15.00"
+     ],
+     [
+      "Resim",
+      "11/11/2026",
+      "13.00-15.00"
+     ],
+     [
+      "Kitap",
+      "18/11/2026",
+      "15.00-16.00"
+     ]
+    ]
+   },
+   "kanit": [
+    "t0"
+   ],
+   "kanitIpucu": "Söylenemez soruyor: Yanlış yargıyı çürüten satıra dokun. Satranç satırına bak.",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Eğik Çizgi: Tarih"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Gerçekleşme Anından Öncesi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Söylenemez: tabloya uymayan yargıyı.",
+     "Anahtar kelimeler: önümüzdeki, tarih, saat.",
+     "Kanıt: Şıktaki kulübün satırını bul; tarihteki ayı ve saatteki süreyi oku.",
+     "Şıkları ele: “toplandı” olmuş bir işi anlatır. Tablo olmuş işleri mi gösteriyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Konuşmaya göre hangisi doğrudur?",
+   "secenekler": [
+    "Elif, Can'ı iyi bir dinleyici olduğu için övüyor.",
+    "Can dün Elif'i dinlemedi; bundan sonra dinleyecek.",
+    "Can şu an telefonla oynuyor."
+   ],
+   "dogru": 1,
+   "ipucu": "Elif'in (!) işareti övgü mü, alay mı? Can'ın fiillerindeki eklere bak.",
+   "aciklama": "Elif alay ediyor; Can'ın oyunu geçmişteydi (-iyordu). Can bundan sonra dinleyecek (-ecek).",
+   "metinBaslik": "Elif ile Can",
+   "metin": [
+    {
+     "kim": "Elif",
+     "s": "Dün seninle konuşmaya çalıştım ama beni hiç dinlemedin."
+    },
+    {
+     "kim": "Can",
+     "s": "Haklısın, o sırada telefonla oynuyordum."
+    },
+    {
+     "kim": "Elif",
+     "s": "Ne kadar iyi bir dinleyici (!) olduğunu şimdi anladın mı?"
+    },
+    {
+     "kim": "Can",
+     "s": "Anladım. Bundan sonra seni dikkatle dinleyeceğim."
+    }
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Can'ın bundan sonra ne yapacağını söylediği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Ünlemin Parantez İçinde Kullanımı"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Gerçekleşme Anından Öncesi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Konuşmaya uyan bilgiyi.",
+     "Anahtar kelimeler: “dinleyici (!)”, “oynuyordum”, “dinleyeceğim”.",
+     "Kanıt: Can'ın bundan sonrası için söylediği cümleyi bul.",
+     "Şıkları ele: (!) övgü mü? “-iyordu” şimdiyi mi, geçmişi mi gösterir?"
+    ]
+   }
+  },
+  {
+   "soru": "“-sız/-siz” ve “sımsıkı” yazılışlarıyla ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Eğik çizgi ekin biçimlerini ayırır; pekiştirme bitişik yazılır.",
+    "Eğik çizgi tarih gösterir; pekiştirme ayrı yazılır.",
+    "Kısa çizgi ekin biçimlerini ayırır; pekiştirme ayrı yazılır."
+   ],
+   "dogru": 0,
+   "ipucu": "“-sız/-siz” bir ekin iki biçimi. “sımsıkı” tek kelime mi?",
+   "aciklama": "“-sız/-siz” aynı ekin iki biçimidir, eğik çizgiyle ayrılır. “sımsıkı” pekiştirmedir, bitişik yazılır.",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Eğik Çizgi: Ekin Biçimleri"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Pekiştirmeler Bitişik Yazılır"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "İlk yazılışa bak: “-sız” ile “-siz” arasındaki çizgi ne gösteriyor?",
+     "İkinci yazılışa bak: “sımsıkı” pekiştirme mi, ikileme mi?",
+     "İki bilgiyi birlikte doğru veren şıkkı seç."
+    ]
+   }
+  }
+ ]
+}

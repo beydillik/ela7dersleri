@@ -507,6 +507,336 @@
     "arama"
    ],
    "aciklama": "Dikey eksende arama sayısı, yatay eksende yıllar vardır (s. 151)."
+  },
+  {
+   "id": "t3-25",
+   "konu": "u3k5",
+   "kavram": "Yargı ve Gerçekleşme Zamanı",
+   "tur": "eslestir",
+   "soru": "Fiili, gösterdiği zamanla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "selamlaştık",
+     "sag": "Gerçekleşme anından öncesi"
+    },
+    {
+     "sol": "hazırlıyorum",
+     "sag": "Gerçekleşme anı"
+    },
+    {
+     "sol": "gelecek",
+     "sag": "Gerçekleşme anından sonrası"
+    },
+    {
+     "sol": "geçinir",
+     "sag": "Yargının sürekliliği"
+    }
+   ],
+   "aciklama": "Fiile gelen ek, yargının ne zaman gerçekleştiğini gösterir (s. 141)."
+  },
+  {
+   "id": "t3-26",
+   "konu": "u3k5",
+   "kavram": "Gerçekleşme Anı",
+   "tur": "dy",
+   "ifade": "“Buyurun, sizi dinlemekteyim.” cümlesinde yargı gerçekleşme anından sonrasını gösterir.",
+   "dogru": false,
+   "duzeltme": "“-mekte” eki gerçekleşme anını gösterir.",
+   "aciklama": "“-mekte” ile “-iyor” aynı zamanı anlatır: tam şimdi (s. 141)."
+  },
+  {
+   "id": "t3-27",
+   "konu": "u3k5",
+   "kavram": "Gerçekleşme Anından Öncesi",
+   "tur": "secim",
+   "soru": "Aşağıdaki cümleler verilmiştir.",
+   "onculler": [
+    "Babam eve her zaman güler yüzle gelir.",
+    "Etkili iletişim konferansına katılmış.",
+    "Bu sabah komşumla selamlaştık."
+   ],
+   "kok": "Bu cümlelerin hangilerinde yargı gerçekleşme anından öncesini gösterir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "“-miş” ve “-di” öncesini gösterir; “-r” ise süreklilik bildirir (s. 141)."
+  },
+  {
+   "id": "t3-28",
+   "konu": "u3k5",
+   "kavram": "Yargının Sürekliliği",
+   "tur": "bosluk",
+   "havuz": [
+    "dinledi",
+    "dinlemiş"
+   ],
+   "cumleler": [
+    {
+     "c": "Öğretmenim sorularımızı her zaman sabırla ___.",
+     "cevap": "dinler"
+    },
+    {
+     "c": "Şu an öğretmenim Ayşe'nin sorusunu ___.",
+     "cevap": "dinliyor"
+    },
+    {
+     "c": "Yarın müdürümüz de konuşmamızı ___.",
+     "cevap": "dinleyecek"
+    }
+   ],
+   "aciklama": "Zaman kelimesi ekle uyuşmalı: her zaman → -r, şu an → -iyor, yarın → -ecek."
+  },
+  {
+   "id": "t3-29",
+   "konu": "u3k5",
+   "kavram": "Zamanı Gösteren Kelimeler",
+   "tur": "secim",
+   "soru": "Hangi cümlede zaman bildiren söz ile fiilin eki arasında uyumsuzluk vardır?",
+   "secenekler": [
+    "Şu an ödevimi yaptım.",
+    "Haftaya kasabamıza misafirler gelecek.",
+    "Geçen yıl bu okula başladım.",
+    "Her sabah kahvaltı ederim."
+   ],
+   "dogru": 0,
+   "aciklama": "“Şu an” gerçekleşme anını ister: “yapıyorum” olmalı."
+  },
+  {
+   "id": "t3-30",
+   "konu": "u3k5",
+   "kavram": "Gerçekleşme Anından Sonrası",
+   "tur": "kisa",
+   "soru": "“İnsanları dinlerseniz onları daha iyi anlayacaksınız.” cümlesinde gerçekleşme anından sonrasını gösteren ek hangisidir?",
+   "yanit": "-acak",
+   "kabul": [
+    "acak",
+    "-ecek",
+    "ecek"
+   ],
+   "aciklama": "“-acak / -ecek” eki işin sonra olacağını gösterir (s. 141)."
+  },
+  {
+   "id": "t3-31",
+   "konu": "u3k6",
+   "kavram": "Pekiştirme Nasıl Yapılır?",
+   "tur": "eslestir",
+   "soru": "Kelimeyi pekiştirilmiş hâliyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "temiz",
+     "sag": "tertemiz"
+    },
+    {
+     "sol": "doğru",
+     "sag": "dosdoğru"
+    },
+    {
+     "sol": "açık",
+     "sag": "apaçık"
+    },
+    {
+     "sol": "sıcak",
+     "sag": "sımsıcak"
+    }
+   ],
+   "aciklama": "Kitaptaki pekiştirmeli kelimeler anlamı güçlendirir (s. 131)."
+  },
+  {
+   "id": "t3-32",
+   "konu": "u3k6",
+   "kavram": "Pekiştirmeler Bitişik Yazılır",
+   "tur": "dytablo",
+   "soru": "Yazım doğruysa D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "Gökyüzü masmavi görünüyordu.",
+     "d": true
+    },
+    {
+     "s": "Ayakkabılarım sırıl sıklam oldu.",
+     "d": false
+    },
+    {
+     "s": "Lafı dolandırmadan apaçık konuştu.",
+     "d": true
+    },
+    {
+     "s": "Düşüncesini dos doğru anlattı.",
+     "d": false
+    }
+   ],
+   "aciklama": "Pekiştirmeli kelimeler bitişik yazılır: sırılsıklam, dosdoğru."
+  },
+  {
+   "id": "t3-33",
+   "konu": "u3k6",
+   "kavram": "Pekiştirme Nedir?",
+   "tur": "secim",
+   "soru": "“Sapasağlam dostluklar böyle kurulur.” cümlesindeki “sapasağlam” kelimesinin anlamı nedir?",
+   "secenekler": [
+    "Biraz sağlam",
+    "Sağlam olmayan",
+    "Yeni kurulmuş",
+    "Çok sağlam"
+   ],
+   "dogru": 3,
+   "aciklama": "Pekiştirme anlamı güçlendirir: sapasağlam, çok sağlam demektir (s. 131)."
+  },
+  {
+   "id": "t3-34",
+   "konu": "u3k6",
+   "kavram": "Ünlemin Parantez İçinde Kullanımı",
+   "tur": "secim",
+   "soru": "Hangi cümlede ayraç içindeki ünlem alay anlamı katmaktadır?",
+   "secenekler": [
+    "Eyvah, otobüsü kaçırdık!",
+    "Çok erkenci (!) arkadaşım toplantıya bir saat geç kaldı.",
+    "Ne güzel bir bahar sabahı!",
+    "Dikkat et, yer kaygan!"
+   ],
+   "dogru": 1,
+   "aciklama": "Geç kalan biri erkenci değildir; “erkenci” sözü alaylıdır."
+  },
+  {
+   "id": "t3-35",
+   "konu": "u3k6",
+   "kavram": "Ünlemin Bildiğin Görevleri",
+   "tur": "dy",
+   "ifade": "“İnanmıyorum!” cümlesindeki ünlem şaşkınlık bildirir.",
+   "dogru": true,
+   "aciklama": "Ünlem şaşkınlık, sevinç, korku gibi duyguları bildirir (s. 154)."
+  },
+  {
+   "id": "t3-36",
+   "konu": "u3k6",
+   "kavram": "Ünlemin Parantez İçinde Kullanımı",
+   "tur": "kisa",
+   "soru": "Alay ya da küçümseme bildiren sözden sonra parantez içinde hangi noktalama işareti kullanılır?",
+   "yanit": "ünlem",
+   "kabul": [
+    "ünlem işareti",
+    "!",
+    "(!)"
+   ],
+   "aciklama": "Alaylı sözden hemen sonra (!) yazılır (s. 154)."
+  },
+  {
+   "id": "t3-37",
+   "konu": "u3k7",
+   "kavram": "Kısa Çizgi mi, Eğik Çizgi mi?",
+   "tur": "eslestir",
+   "soru": "Yazılışı, işaretin göreviyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Ankara-Bakü",
+     "sag": "arasında, ile"
+    },
+    {
+     "sol": "14.00-16.00",
+     "sag": "-den -e kadar"
+    },
+    {
+     "sol": "Kızılay/Ankara",
+     "sag": "adres"
+    },
+    {
+     "sol": "12/04/2025",
+     "sag": "tarih"
+    },
+    {
+     "sol": "-lık/-lik",
+     "sag": "ekin biçimleri"
+    }
+   ],
+   "aciklama": "Kısa çizgi ilişki ve aralık; eğik çizgi adres, tarih ve ekin biçimlerini gösterir."
+  },
+  {
+   "id": "t3-38",
+   "konu": "u3k7",
+   "kavram": "Kısa Çizgi: Arasında, Ve, İle",
+   "tur": "secim",
+   "soru": "Kısa çizgiyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "“Türkçe-İngilizce sözlük” yazılışında “ile” anlamı verir.",
+    "“14.00-16.00” yazılışında “-den -e kadar” anlamı verir.",
+    "“Kurtuluş-Ankara” adres yazılışında doğru kullanılmıştır."
+   ],
+   "kok": "Yukarıdakilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Adreste semt ile şehir arasına eğik çizgi konur: Kurtuluş/Ankara."
+  },
+  {
+   "id": "t3-39",
+   "konu": "u3k7",
+   "kavram": "Eğik Çizgi: Adres",
+   "tur": "dy",
+   "ifade": "“Gül Sokak No.: 14/5” adresinde 14 binanın, 5 dairenin numarasıdır.",
+   "dogru": true,
+   "aciklama": "Bina ile daire numarası arasına eğik çizgi konur (s. 163)."
+  },
+  {
+   "id": "t3-40",
+   "konu": "u3k7",
+   "kavram": "Eğik Çizgi: Tarih",
+   "tur": "kisa",
+   "soru": "“12/04/2025” tarihinde ay kaçıncı aydır? Rakamla yaz.",
+   "yanit": "4",
+   "kabul": [
+    "04",
+    "nisan",
+    "dört"
+   ],
+   "aciklama": "Gün/ay/yıl: 12 gün, 04 ay (nisan), 2025 yıl (s. 163)."
+  },
+  {
+   "id": "t3-41",
+   "konu": "u3k7",
+   "kavram": "Kısa Çizgi: -den -e",
+   "tur": "bosluk",
+   "havuz": [
+    "şehir",
+    "yıl"
+   ],
+   "cumleler": [
+    {
+     "c": "“1940-1960” yazılışı “1940'tan 1960'a ___” diye okunur.",
+     "cevap": "kadar"
+    },
+    {
+     "c": "“Ankara-Bakü” yazılışı “Ankara ___ Bakü” diye okunur.",
+     "cevap": "ile"
+    },
+    {
+     "c": "“Kızılay/Ankara” yazılışında Kızılay bir ___ adıdır.",
+     "cevap": "semt"
+    }
+   ],
+   "aciklama": "Kısa çizgiyi anlamıyla okuruz; adreste önce semt, sonra şehir gelir."
+  },
+  {
+   "id": "t3-42",
+   "konu": "u3k7",
+   "kavram": "Eğik Çizgi: Ekin Biçimleri",
+   "tur": "secim",
+   "soru": "Hangisinde eğik çizgi bir ekin farklı biçimlerini göstermek için kullanılmıştır?",
+   "secenekler": [
+    "Adresi Kızılay/Ankara diye yazdı.",
+    "Söyleşi 12/04/2025 tarihinde yapılacak.",
+    "Bu konuda “-den/-dan” ekinin biçimlerini öğrendik.",
+    "Daire numarası 14/5'tir."
+   ],
+   "dogru": 2,
+   "aciklama": "“-den” ile “-dan” aynı ekin iki biçimidir (s. 168)."
   }
  ]
 }

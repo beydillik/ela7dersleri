@@ -1,0 +1,531 @@
+{
+ "id": "u3k7",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Kısa Çizgi ve Eğik Çizgi",
+ "sayfalar": "s. 142, 163, 168",
+ "giris": "Yazıda iki küçük çizgi çok iş görür. Kısa çizgi (-) “ile, arasında, -den -e” anlamı verir: Ankara-Bakü. Eğik çizgi (/) adreste, tarihte ve bir ekin farklı biçimlerini gösterirken kullanılır. Bu konuda iki çizgiyi birbirinden ayırmayı öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Hecelemede Kısa Çizgi",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>heceler</text><rect x='8' y='40' width='104' height='28' rx='9' fill='#fbf6e6'/><text x='60.0' y='59.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>i-le-ti-şim</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>heceleri ayırır</text></svg>",
+    "akilda": "Satır sonu: heceyi böl",
+    "anlatim": "Kısa çizgi (-) satır sonuna sığmayan kelimeyi hecesinden böler. Bir kelimeyi hecelerine ayırırken de kullanılır: i-le-ti-şim.",
+    "sorular": [
+     {
+      "soru": "“i-le-ti-şim” yazılışında kısa çizgi ne iş görür?",
+      "secenekler": [
+       "Heceleri ayırır",
+       "İki şehri bağlar",
+       "Tarihi ayırır"
+      ],
+      "dogru": 0,
+      "ipucu": "Çizgiler kelimenin parçalarını ayırıyor. Bu parçaların adı ne?",
+      "aciklama": "Kısa çizgi burada kelimenin hecelerini ayırır."
+     },
+     {
+      "soru": "Hangisi doğru hecelenmiştir?",
+      "secenekler": [
+       "kit-ap-lık",
+       "ki-tap-lık",
+       "kita-plık"
+      ],
+      "dogru": 1,
+      "ipucu": "Kelimeyi yavaşça, ağzını açıp kapatarak söyle.",
+      "aciklama": "Doğru heceleme: ki-tap-lık."
+     }
+    ]
+   },
+   {
+    "ad": "Kök ve Ek",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>kök + ek</text><rect x='8' y='36' width='50' height='22' rx='9' fill='#fbf6e6'/><text x='33.0' y='51.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>kibar</text><text x='64' y='52' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#fbf6e6'>+</text><rect x='70' y='36' width='42' height='22' rx='9' fill='#f5c53d'/><text x='91.0' y='51.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>-lık</text><path d='M60 62 V70 M54 65 L60 71 L66 65' stroke='#fbf6e6' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='18' y='74' width='84' height='22' rx='9' fill='#7ad19a'/><text x='60.0' y='89.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>kibarlık</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>yeni kelime</text></svg>",
+    "akilda": "Kök + ek = yeni kelime",
+    "anlatim": "Kelimenin anlamlı en küçük parçası köktür; köke eklenen parçaya ek denir: kibar-lık, göz-lük. Bir ek, kelimeye göre farklı biçimlerde görünür: -lık, -lik, -luk, -lük.",
+    "sorular": [
+     {
+      "soru": "“kibarlık” kelimesindeki ek hangisidir?",
+      "secenekler": [
+       "kibar",
+       "-lık",
+       "-ar"
+      ],
+      "dogru": 1,
+      "ipucu": "Kökü ayır, geriye kalan parçaya bak.",
+      "aciklama": "“kibar” köktür, “-lık” ektir."
+     },
+     {
+      "soru": "“-den” ekinin öteki biçimi hangisidir?",
+      "secenekler": [
+       "-dan",
+       "-de",
+       "-e"
+      ],
+      "dogru": 0,
+      "ipucu": "Aynı ek, kalın ünlülü kelimede nasıl olur? ev-den, okul-…",
+      "aciklama": "ev-den, okul-dan: “-den” ile “-dan” aynı ekin iki biçimidir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Kısa Çizgi: Arasında, Ve, İle",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>ile, arasında</text><rect x='6' y='32' width='50' height='22' rx='9' fill='#fbf6e6'/><text x='31.0' y='46.6' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>Ankara</text><text x='60' y='48' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='18' fill='#f5c53d'>-</text><rect x='64' y='32' width='50' height='22' rx='9' fill='#fbf6e6'/><text x='89.0' y='46.6' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>Bakü</text><rect x='6' y='64' width='50' height='22' rx='9' fill='#fbf6e6'/><text x='31.0' y='78.6' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>Türkçe</text><text x='60' y='80' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='18' fill='#f5c53d'>-</text><rect x='64' y='64' width='50' height='22' rx='9' fill='#fbf6e6'/><text x='89.0' y='78.6' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>İngilizce</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#6ea8ef'>iki şey arasında</text></svg>",
+   "aciklama": "İki yer, iki ülke ya da iki dil arasındaki ilişkiyi göstermek için aralarına kısa çizgi konur: Ankara-Bakü, Türkçe-İngilizce sözlük.",
+   "ek": "Kitaptaki örnekler: “Ankara-Bakü arasındaki iletişim”, “Türkçe-İngilizce çeviri sözlüğü”, “Aydın-İzmir güzergâhı” (s. 142). Kitap kuralı öğrenciye buldurur; kural TDK Yazım Kılavuzu'ndan: kısa çizgi “ara, arasında, ve, ile, ila” anlamı verir (kitap dışı).",
+   "akilda": "Ankara-Bakü: ile, arası",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "Hangi cümlede kısa çizgi “ile, arasında” anlamında? 1) “İletişim” kelimesini i-le-ti-şim şeklinde heceledi. 2) Türkçe-İngilizce çeviri sözlüğünden yararlandım. (s. 142)",
+    "adimlar": [
+     {
+      "metin": "1. cümlede çizgiler neyin arasında?",
+      "islem": "heceler → heceleme"
+     },
+     {
+      "metin": "2. cümlede çizgi neyin arasında?",
+      "islem": "iki dil → ile"
+     },
+     {
+      "metin": "Çizginin yerine “ile” koyup dene.",
+      "islem": "Türkçe ile İngilizce ✓"
+     }
+    ],
+    "sonuc": "2. cümlede kısa çizgi “ile” anlamındadır. 1. cümlede ise heceleri ayırır; bu, önceki yıllarda öğrendiğin başka bir görevdir."
+   },
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Erzurum ( ) Bingöl kara yolu kısa süreliğine ulaşıma kapanmıştı.” (s. 168) Parantezin yerine hangi işaret gelir?",
+    "adimlar": [
+     {
+      "metin": "1. Parantezin iki yanında ne var?",
+      "soru": {
+       "soru": "Parantezin iki yanında ne var?",
+       "secenekler": [
+        "İki şehir",
+        "Bir tarih",
+        "Bir ek"
+       ],
+       "dogru": 0,
+       "ipucu": "Erzurum ve Bingöl nedir?",
+       "aciklama": "Erzurum ve Bingöl iki şehirdir."
+      },
+      "islem": "Erzurum … Bingöl"
+     },
+     {
+      "metin": "2. İşaret hangi anlamı verecek?",
+      "soru": {
+       "soru": "“Erzurum ( ) Bingöl kara yolu” ne demek?",
+       "secenekler": [
+        "Erzurum ile Bingöl arasındaki yol",
+        "Erzurum'un içindeki yol",
+        "Bingöl'den önceki yol"
+       ],
+       "dogru": 0,
+       "ipucu": "Yol iki şehri birbirine bağlar.",
+       "aciklama": "Yol, Erzurum ile Bingöl arasındadır."
+      },
+      "islem": "ile, arası"
+     },
+     {
+      "metin": "3. İşareti yerine koy.",
+      "islem": "Erzurum-Bingöl"
+     }
+    ],
+    "sonuc": "Doğrusu: “Erzurum-Bingöl kara yolu…” Kısa çizgi “ile, arası” anlamı verir."
+   },
+   "soru": {
+    "soru": "“Aydın-İzmir güzergâhı” (s. 142) sözünde kısa çizgi ne anlama gelir?",
+    "secenekler": [
+     "Aydın ile İzmir arası",
+     "Aydın'ın bir ilçesi olan İzmir",
+     "Hecelerin ayrılması"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Ankara-Bakü: ile, arası.",
+    "aciklama": "Güzergâh Aydın ile İzmir arasındaki yoldur (s. 142)."
+   }
+  },
+  {
+   "ad": "Kısa Çizgi: -den -e",
+   "renk": "#b5562f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>-den -e kadar</text><circle cx='60' cy='52' r='20' fill='#fbf6e6'/><path d='M60 52 V38 M60 52 L70 58' stroke='#2b2417' stroke-width='3' stroke-linecap='round'/><rect x='10' y='78' width='100' height='22' rx='9' fill='#f5c53d'/><text x='60.0' y='93.3' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>14.00-16.00</text><text x='60' y='113' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>1940-1960</text></svg>",
+   "aciklama": "Saat, yıl ya da sayı aralığında “-den -e kadar” anlamı için kısa çizgi konur: 14.00-16.00, 1940-1960.",
+   "ek": "Kitaptaki örnek: Seminer “saat 14.00-16.00 arasında” yapılacak (s. 142). Kitabın tema sonu etkinliğindeki “1940 ( ) 1960 yıllarında” boşluğuna da kısa çizgi gelir (s. 168). Okurken: “on dörtten on altıya kadar”.",
+   "akilda": "14.00-16.00: -den -e",
+   "soru": {
+    "soru": "“1940-1960 yılları” nasıl okunur?",
+    "secenekler": [
+     "Yalnızca 1940 ve 1960 yılları",
+     "1940'tan 1960'a kadar olan yıllar",
+     "1940 bölü 1960"
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: 14.00-16.00: -den -e.",
+    "aciklama": "Kısa çizgi “-den -e kadar” anlamı verir: 1940'tan 1960'a kadar."
+   }
+  },
+  {
+   "ad": "Eğik Çizgi: Adres",
+   "renk": "#2f8f5b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='26' width='104' height='70' rx='8' fill='#fbf6e6'/><path d='M8 30 L60 64 L112 30' stroke='#c9b98a' stroke-width='2.5' fill='none' stroke-linejoin='round'/><text x='60' y='78' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>No.: 14/5</text><text x='60' y='91' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>Kızılay/Ankara</text><text x='60' y='113' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#6ea8ef'>daire · semt/şehir</text></svg>",
+   "aciklama": "Adreste bina numarası ile daire numarası, semt ile şehir arasına eğik çizgi konur: No.: 14/5, Kızılay/Ankara.",
+   "ek": "Kitaptaki örnek: Gül Sokak No.: 14/5 Kızılay/Ankara (s. 163). “14/5”, 14 numaralı binanın 5 numaralı dairesi demektir. TDK Yazım Kılavuzu'nda da aynı kural vardır (kitap dışı).",
+   "akilda": "14/5 · Kızılay/Ankara",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Gül Sokak No.: 14/5 Kızılay/Ankara” (s. 163) adresindeki iki eğik çizgi neyi ayırıyor?",
+    "adimlar": [
+     {
+      "metin": "İlk eğik çizginin iki yanındaki sayılara bak.",
+      "islem": "14 bina / 5 daire"
+     },
+     {
+      "metin": "İkinci eğik çizginin iki yanındaki adlara bak.",
+      "islem": "Kızılay semt / Ankara şehir"
+     }
+    ],
+    "sonuc": "Birinci çizgi bina ile daire numarasını, ikinci çizgi semt ile şehri ayırıyor."
+   },
+   "soru": {
+    "soru": "“No.: 21/6” adresinde 6 neyi gösterir?",
+    "secenekler": [
+     "Daire numarasını",
+     "Sokağın adını",
+     "Şehrin plakasını"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: 14/5 · Kızılay/Ankara. 14 bina, 5 ne?",
+    "aciklama": "İlk sayı binanın, eğik çizgiden sonraki sayı dairenin numarasıdır."
+   }
+  },
+  {
+   "ad": "Eğik Çizgi: Tarih",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='26' width='80' height='66' rx='8' fill='#fbf6e6'/><rect x='20' y='26' width='80' height='18' rx='8' fill='#f5c53d'/><rect x='20' y='36' width='80' height='8' rx='0' fill='#f5c53d'/><circle cx='38' cy='26' r='3' fill='#2b2417'/><circle cx='82' cy='26' r='3' fill='#2b2417'/><text x='60' y='72' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>12/04/2025</text><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>gün / ay / yıl</text></svg>",
+   "aciklama": "Tarih yazarken gün, ay ve yıl arasına eğik çizgi konabilir: 12/04/2025.",
+   "ek": "Kitaptaki örnek: Söyleşi “12/04/2025 tarihinde” yapılacak (s. 163). Bu, 12 Nisan 2025 demektir. Tarih noktayla da yazılabilir: 12.04.2025 (kitap dışı).",
+   "akilda": "Gün/ay/yıl",
+   "soru": {
+    "soru": "“12/04/2025” tarihinde ay hangisidir?",
+    "secenekler": [
+     "Aralık",
+     "Ocak",
+     "Nisan"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Gün/ay/yıl. Ortadaki sayı ayı gösterir.",
+    "aciklama": "Ortadaki 04, dördüncü ay olan nisandır (s. 163)."
+   }
+  },
+  {
+   "ad": "Eğik Çizgi: Ekin Biçimleri",
+   "renk": "#b58a2f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>ekin biçimleri</text><rect x='10' y='32' width='100' height='18' rx='9' fill='#fbf6e6'/><text x='60.0' y='45.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>-lık/-lik</text><rect x='10' y='54' width='100' height='18' rx='9' fill='#f5c53d'/><text x='60.0' y='67.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>-den/-dan</text><rect x='10' y='76' width='100' height='18' rx='9' fill='#7ad19a'/><text x='60.0' y='89.0' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>-a/-e</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#6ea8ef'>aynı ek</text></svg>",
+   "aciklama": "Bir ekin farklı biçimleri arasına eğik çizgi konur: -lık/-lik, -den/-dan, -a/-e.",
+   "ek": "Kitaptaki örnek: “-lık/-lik” eki ile kibar-lık, şeker-lik gibi yeni kelimeler türetilir (s. 163). Tema sonu etkinliğindeki “-den ( )-dan” boşluğuna da eğik çizgi gelir (s. 168).",
+   "akilda": "-lık/-lik: ekin biçimleri",
+   "soru": {
+    "soru": "“-a/-e” yazılışında eğik çizgi ne gösterir?",
+    "secenekler": [
+     "İki şehrin arasını",
+     "Aynı ekin iki biçimini",
+     "Bir tarihi"
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: -lık/-lik: ekin biçimleri.",
+    "aciklama": "“-a” ve “-e” aynı ekin iki biçimidir: okul-a, ev-e."
+   }
+  },
+  {
+   "ad": "Kısa Çizgi mi, Eğik Çizgi mi?",
+   "renk": "#2f8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='14' width='48' height='30' rx='9' fill='#f5c53d'/><text x='32.0' y='36.9' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='22' fill='#2b2417'>-</text><rect x='64' y='14' width='48' height='30' rx='9' fill='#9cc7ff'/><text x='88.0' y='36.2' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='20' fill='#2b2417'>/</text><text x='32' y='60' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>ile</text><text x='32' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>arası</text><text x='32' y='88' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>-den -e</text><text x='88' y='60' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>adres</text><text x='88' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>tarih</text><text x='88' y='88' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>ek</text><path d='M60 52 V94' stroke='#46507a' stroke-width='2'/><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>hangisi?</text></svg>",
+   "aciklama": "Anlam “ile, arasında, -den -e” ise kısa çizgi (-); adres, tarih ya da ekin biçimleri ise eğik çizgi (/) kullanılır.",
+   "ek": "Kitabın tema sonu etkinliğinde iki işaret karışık sorulur: Erzurum-Bingöl, Kurtuluş/Ankara, 1940-1960, -den/-dan, Beşiktaş-Fenerbahçe (s. 168). “Kısa çizgi mi, eğik çizgi mi?” sorusunu sorarak karar ver (kitap dışı strateji).",
+   "akilda": "İle mi? Kısa. Adres mi? Eğik.",
+   "soru": {
+    "soru": "“Beşiktaş ( ) Fenerbahçe karşılaşması dün akşam yapıldı.” (s. 168) Boşluğa hangisi gelir?",
+    "secenekler": [
+     "Eğik çizgi (/)",
+     "Kısa çizgi (-)",
+     "Ünlem (!)"
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: İle mi? Kısa. Adres mi? Eğik. Karşılaşma kim ile kim arasında?",
+    "aciklama": "Karşılaşma Beşiktaş ile Fenerbahçe arasındadır: Beşiktaş-Fenerbahçe (s. 168)."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangi çizgi kullanılır?",
+   "kutular": [
+    {
+     "etiket": "Kısa çizgi (-)",
+     "uyeler": [
+      "Kısa Çizgi: Arasında, Ve, İle",
+      "Kısa Çizgi: -den -e"
+     ]
+    },
+    {
+     "etiket": "Eğik çizgi (/)",
+     "uyeler": [
+      "Eğik Çizgi: Adres",
+      "Eğik Çizgi: Tarih",
+      "Eğik Çizgi: Ekin Biçimleri"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitabın tema sonundaki noktalama etkinliğinde kısa çizgi, eğik çizgi ve ünlem aynı soruda karışık sorulur (s. 168).",
+  "Sayılar yan yana tekrarlandığında araya kısa çizgi konmaz: “üç beş kişi”, “on on beş yıl” (TDK Yazım Kılavuzu, kitap dışı)."
+ ],
+ "akildaKalsin": [
+  "Kısa çizgi “ile, arasında” anlamı verir: Ankara-Bakü.",
+  "Kısa çizgi “-den -e kadar” anlamı verir: 14.00-16.00.",
+  "Adreste eğik çizgi: No.: 14/5, Kızılay/Ankara.",
+  "Tarihte eğik çizgi: gün/ay/yıl, 12/04/2025.",
+  "Ekin biçimleri eğik çizgiyle: -lık/-lik.",
+  "İle mi? Kısa çizgi. Adres, tarih, ek mi? Eğik çizgi."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Tarih yazarken nokta mı, eğik çizgi mi?",
+   "cevap": "İkisi de olur: 12.04.2025 ya da 12/04/2025. Bir yazıda hep aynısını kullan (kitap dışı)."
+  },
+  {
+   "soru": "“Üç-beş kişi” diye yazılır mı?",
+   "cevap": "Hayır. Sayılar yan yana tekrarlandığında araya çizgi konmaz: üç beş kişi (TDK, kitap dışı)."
+  },
+  {
+   "soru": "Maç adlarında neden kısa çizgi var?",
+   "cevap": "İki takım arasındaki karşılaşmayı gösterir: Beşiktaş-Fenerbahçe, yani Beşiktaş ile Fenerbahçe (s. 168)."
+  },
+  {
+   "soru": "Kısa çizgiyi okurken ne derim?",
+   "cevap": "Çizginin adını okumayız, anlamını söyleriz: Ankara-Bakü → “Ankara ile Bakü”, 14.00-16.00 → “on dörtten on altıya” (kitap dışı)."
+  },
+  {
+   "soru": "Adreste neden eğik çizgi kullanılır?",
+   "cevap": "Adresi kısa ve düzenli yazmak için. “14/5”, 14 numaralı binanın 5 numaralı dairesi demektir (s. 163)."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir davetiye cümlesi yaz: İçinde kısa çizgiyle bir saat aralığı, eğik çizgiyle bir tarih olsun.",
+   "ornekCevap": "Sınıf kermesimiz 15/11/2026 tarihinde saat 13.00-16.00 arasında yapılacak.",
+   "anahtarlar": [
+    "/",
+    "-",
+    "saat",
+    "tarih",
+    "arasında"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangi cümlede kısa çizgi “ile” anlamında kullanılmıştır?",
+   "secenekler": [
+    "Türk-Japon dostluğu çok eskidir.",
+    "Öğretmen kelimeyi a-ğaç diye heceledi.",
+    "Adresi Kızılay/Ankara diye yazdı."
+   ],
+   "dogru": 0,
+   "ipucu": "Çizginin yerine “ile” koyup dene.",
+   "aciklama": "“Türk ile Japon dostluğu”: kısa çizgi “ile” anlamı verir.",
+   "kavram": "Kısa Çizgi: Arasında, Ve, İle"
+  },
+  {
+   "soru": "“Seminer saat 14.00-16.00 arasında yapılacak.” (s. 142) Seminer ne kadar sürer?",
+   "secenekler": [
+    "On dört saat",
+    "İki saat",
+    "Altı saat"
+   ],
+   "dogru": 1,
+   "ipucu": "Kısa çizgiyi “-den -e kadar” diye oku: 14'ten 16'ya kaç saat?",
+   "aciklama": "14.00'ten 16.00'ya kadar: iki saat (s. 142).",
+   "kavram": "Kısa Çizgi: -den -e"
+  },
+  {
+   "soru": "Hangisi adresin doğru yazılışıdır?",
+   "secenekler": [
+    "No.: 14/5 Kızılay/Ankara",
+    "No.: 14-5 Kızılay-Ankara",
+    "No.: 14.5 Kızılay.Ankara"
+   ],
+   "dogru": 0,
+   "ipucu": "Adreste hangi çizgi kullanılır?",
+   "aciklama": "Adreste daire numarası ile semt/şehir eğik çizgiyle ayrılır (s. 163).",
+   "kavram": "Eğik Çizgi: Adres"
+  },
+  {
+   "soru": "Hangisi tarihin eğik çizgiyle doğru yazılışıdır?",
+   "secenekler": [
+    "29-10-1923",
+    "29(10)1923",
+    "29/10/1923"
+   ],
+   "dogru": 2,
+   "ipucu": "Gün/ay/yıl arasına hangi işaret gelir?",
+   "aciklama": "Tarihte gün, ay ve yıl eğik çizgiyle ayrılır: 29/10/1923.",
+   "kavram": "Eğik Çizgi: Tarih"
+  },
+  {
+   "soru": "Hangisinde eğik çizgi bir ekin farklı biçimlerini göstermektedir?",
+   "secenekler": [
+    "-madan/-meden",
+    "Kurtuluş/Ankara",
+    "12/04/2025"
+   ],
+   "dogru": 0,
+   "ipucu": "Hangisi bir kelime değil, bir ek?",
+   "aciklama": "“-madan” ve “-meden” aynı ekin iki biçimidir. Ötekiler adres ve tarihtir.",
+   "kavram": "Eğik Çizgi: Ekin Biçimleri"
+  },
+  {
+   "soru": "Hangi cümlede işaret yanlış kullanılmıştır?",
+   "secenekler": [
+    "İstanbul-İzmir otobüsü kalktı.",
+    "Mektubu 05/09/2026 tarihinde yazdım.",
+    "Toplantı 10.00/12.00 arasında yapılacak."
+   ],
+   "dogru": 2,
+   "ipucu": "Saat aralığında “-den -e” anlamı hangi çizgiyle verilir?",
+   "aciklama": "Saat aralığı kısa çizgiyle yazılır: 10.00-12.00.",
+   "kavram": "Kısa Çizgi mi, Eğik Çizgi mi?"
+  },
+  {
+   "soru": "“Dergimizde Türk edebiyatının 1940 ( ) 1960 yıllarındaki gelişmelerine yer verildi.” (s. 168) Boşluğa hangisi gelir?",
+   "secenekler": [
+    "Kısa çizgi (-)",
+    "Eğik çizgi (/)",
+    "Ünlem (!)"
+   ],
+   "dogru": 0,
+   "ipucu": "“1940'tan 1960'a kadar” anlamı var mı?",
+   "aciklama": "Yıl aralığı kısa çizgiyle yazılır: 1940-1960 (s. 168).",
+   "kavram": "Kısa Çizgi: -den -e"
+  },
+  {
+   "soru": "Tabloya göre kütüphane en uzun süre hangi gün açıktır?",
+   "secenekler": [
+    "Pazartesi",
+    "Çarşamba",
+    "Cuma"
+   ],
+   "dogru": 1,
+   "ipucu": "Her satırdaki saatleri “-den -e” diye oku ve süreleri hesapla.",
+   "aciklama": "Pazartesi 3 saat, çarşamba 4 saat, cuma 2 saat açık: en uzun çarşamba.",
+   "kavram": "Kısa Çizgi: -den -e",
+   "metin": [
+    "Tablo, okul kütüphanesinin açık olduğu saatleri gösteriyor."
+   ],
+   "tablo": {
+    "baslik": "Okul kütüphanesi",
+    "basliklar": [
+     "Gün",
+     "Açık olduğu saatler"
+    ],
+    "satirlar": [
+     [
+      "Pazartesi",
+      "09.00-12.00"
+     ],
+     [
+      "Çarşamba",
+      "13.00-17.00"
+     ],
+     [
+      "Cuma",
+      "10.00-12.00"
+     ]
+    ]
+   },
+   "kanit": [
+    "t1"
+   ],
+   "kanitIpucu": "En uzun süreyi gösteren satıra dokun. Her satırı “-den -e kadar” diye oku.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? En uzun açık kalınan günü.",
+     "Anahtar kelimeler: saatler, kısa çizgi = -den -e kadar.",
+     "Kanıt: Her satırın süresini hesapla, en uzununu bul.",
+     "Şıkları ele: Hangi günün süresi daha kısa?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde kısa çizgi hangi anlamda kullanılmıştır?",
+   "secenekler": [
+    "Hecelerin ayrılması",
+    "Çin ile Avrupa arası",
+    "Çin'in bir şehri"
+   ],
+   "dogru": 1,
+   "ipucu": "Kısa çizginin geçtiği cümleyi bul, yerine “ile” koyup dene.",
+   "aciklama": "“Çin-Avrupa arasındaki yol”: Çin ile Avrupa arasında uzanan yol.",
+   "kavram": "Kısa Çizgi: Arasında, Ve, İle",
+   "metinBaslik": "İpek Yolu",
+   "metin": [
+    "Eskiden tüccarlar kervanlarla uzun yollar giderdi.",
+    "Çin-Avrupa arasındaki İpek Yolu bunların en ünlüsüdür.",
+    "Bu yolda mallarla birlikte bilgiler ve kültürler de taşındı.",
+    "Anadolu'daki kervansaraylar yolcuların dinlenme yerleriydi."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Kısa çizginin geçtiği cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Kısa çizginin anlamını.",
+     "Anahtar kelime: kısa çizgi (-).",
+     "Kanıt: Çizginin geçtiği cümleyi bul; iki yanında ne var?",
+     "Şıkları ele: Çizginin yerine “ile” koyunca anlam bozuluyor mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Davetiyeye göre aşağıdakilerden hangisi söylenemez?",
+   "secenekler": [
+    "Şenlik mayıs ayında yapılacaktır.",
+    "Şenlik beş saat sürecektir.",
+    "Şenlik, Merkez adlı şehirde yapılacaktır."
+   ],
+   "dogru": 2,
+   "ipucu": "Adreste eğik çizginin iki yanında ne var? Hangisi şehir?",
+   "aciklama": "Adreste eğik çizgiden önce semt (Merkez), sonra şehir (Bursa) gelir.",
+   "kavram": "Eğik Çizgi: Adres",
+   "metinBaslik": "Davetiye",
+   "metin": [
+    "Okulumuzun bilim şenliği 20/05/2026 tarihinde yapılacak.",
+    "Şenlik saat 10.00-15.00 arasında açık kalacak.",
+    "Adres: Çınar Ortaokulu, Lale Sokak No.: 8, Merkez/Bursa",
+    "Bütün velilerimizi bekliyoruz."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Söylenemez soruyor: Yanlış yargıyı çürüten cümleye dokun. Adreste şehir hangisi?",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Söylenemez: davetiyeye uymayan yargıyı.",
+     "Anahtar kelimeler: tarih, saat, adres.",
+     "Kanıt: Şıktaki bilginin geçtiği satırı bul; çizgileri doğru oku.",
+     "Şıkları ele: 20/05 hangi ay? 10.00-15.00 kaç saat? Merkez/Bursa'da şehir hangisi?"
+    ]
+   }
+  }
+ ]
+}
