@@ -1,0 +1,230 @@
+{
+ "unite": 2,
+ "ders": "tr1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "t2-01",
+   "konu": "u2k1",
+   "kavram": "Eş Anlamlı Kelimeler",
+   "tur": "eslestir",
+   "soru": "Kelimeleri eş anlamlılarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "muhacir",
+     "sag": "göçmen"
+    },
+    {
+     "sol": "ziyan",
+     "sag": "zarar"
+    },
+    {
+     "sol": "zafer",
+     "sag": "galibiyet"
+    },
+    {
+     "sol": "huzur",
+     "sag": "gönül rahatlığı"
+    }
+   ],
+   "aciklama": "Eş anlamlı kelimeler farklı yazılır, aynı anlamı verir (s. 77, 90, 92, 95)."
+  },
+  {
+   "id": "t2-02",
+   "konu": "u2k1",
+   "kavram": "Zıt Anlamlı Kelimeler",
+   "tur": "secim",
+   "soru": "Hangi kelime çifti zıt anlamlı değildir?",
+   "secenekler": [
+    "esaret – özgürlük",
+    "karanlık – aydınlık",
+    "gelmek – gelmemek",
+    "zafer – yenilgi"
+   ],
+   "dogru": 2,
+   "aciklama": "“-me” eki olumsuzluk yapar, zıt anlam yapmaz. “Gelmek”in zıttı “gitmek”tir (s. 77, 90, 92, 95)."
+  },
+  {
+   "id": "t2-03",
+   "konu": "u2k1",
+   "kavram": "Somut ve Soyut Kelimeler",
+   "tur": "dytablo",
+   "soru": "Kelime somutsa D, soyutsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "siper",
+     "d": true
+    },
+    {
+     "s": "istiklal",
+     "d": false
+    },
+    {
+     "s": "toprak",
+     "d": true
+    },
+    {
+     "s": "cesaret",
+     "d": false
+    }
+   ],
+   "aciklama": "Siper ve toprak duyularla algılanır; istiklal ve cesaret algılanmaz (s. 77, 90, 92, 95)."
+  },
+  {
+   "id": "t2-04",
+   "konu": "u2k1",
+   "kavram": "Ölçüte Göre Sınıflandırma",
+   "tur": "secim",
+   "soru": "Sınıflandırma ile ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Sınıflandırmaya başlamadan önce bir ölçüt seçilir.",
+    "Ölçüt değişirse gruplar da değişebilir.",
+    "Her grup için ayrı bir ölçüt kullanılır."
+   ],
+   "kok": "Sınıflandırma ile ilgili yukarıdakilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Önce ölçüt seçilir ve bütün kelimelerde aynı ölçüt kullanılır (s. 77, 90, 92, 95)."
+  },
+  {
+   "id": "t2-05",
+   "konu": "u2k1",
+   "kavram": "Anlamca Çelişen Kelimeler",
+   "tur": "secim",
+   "soru": "Hangi cümlede anlamca çelişen kelimeler birlikte kullanılmıştır?",
+   "secenekler": [
+    "Tören yaklaşık bir saat sürdü.",
+    "Mutlaka erken gelmelisin.",
+    "Belki yarın yağmur yağar.",
+    "Hiç şüphesiz bu roman en güzeli olabilir."
+   ],
+   "dogru": 3,
+   "aciklama": "“Hiç şüphesiz” kesinlik, “olabilir” ihtimal bildirir; birlikte olmaz (s. 77, 90, 92, 95)."
+  },
+  {
+   "id": "t2-06",
+   "konu": "u2k1",
+   "kavram": "Duyguyu Yansıtan Kelime Seçimi",
+   "tur": "dy",
+   "ifade": "Şair, “Kahroldu Elifçik” yerine “Üzüldü Elifçik” deseydi Elif'in acısı daha güçlü anlatılırdı.",
+   "dogru": false,
+   "duzeltme": "“Kahrolmak” daha güçlü bir kelimedir; acıyı daha iyi anlatır.",
+   "aciklama": "“Kahrolmak” çok büyük üzüntüdür. Kelime seçimi duygunun gücünü belirler (s. 102)."
+  },
+  {
+   "id": "t2-07",
+   "konu": "u2k2",
+   "kavram": "Yazılan ve Sezdirilen Anlam",
+   "tur": "secim",
+   "metin": [
+    "Selin sınav kâğıdını alınca yüzü kıpkırmızı oldu.",
+    "Kâğıdı hemen çantasına sakladı.",
+    "Teneffüste kimseyle konuşmadı."
+   ],
+   "soru": "Bu metinde sezdirilen (açıkça yazılmayan) bilgi hangisidir?",
+   "secenekler": [
+    "Selin sınavından düşük not almış olabilir.",
+    "Selin sınav kâğıdını aldı.",
+    "Selin kâğıdı çantasına koydu.",
+    "Selin teneffüste kimseyle konuşmadı."
+   ],
+   "dogru": 0,
+   "aciklama": "Öbür şıklar metinde yazıyor. Kâğıdı saklaması düşük notu sezdiriyor."
+  },
+  {
+   "id": "t2-08",
+   "konu": "u2k2",
+   "kavram": "Çıkarım: İpucu + Bildiğin",
+   "tur": "bosluk",
+   "havuz": [
+    "başlık",
+    "yazar"
+   ],
+   "cumleler": [
+    {
+     "c": "Çıkarım yaparken metindeki ___ kullanırız.",
+     "cevap": "ipuçlarını"
+    },
+    {
+     "c": "İpuçlarına kendi ___ ekleriz.",
+     "cevap": "bildiklerimizi"
+    },
+    {
+     "c": "Çıkarımı metinden bir ___ ile destekleriz.",
+     "cevap": "kanıt"
+    }
+   ],
+   "aciklama": "Çıkarım = ipucu + bildiğin; sonra kanıt cümlesi gösterilir."
+  },
+  {
+   "id": "t2-09",
+   "konu": "u2k2",
+   "kavram": "Kanıtını Göster",
+   "tur": "secim",
+   "soru": "“Hatice Nine için bayrak, evinden bile değerlidir.” çıkarımının kanıtı hangisi olabilir?",
+   "secenekler": [
+    "Ortalık ağarıyor, kadınlar gelip gidiyordu.",
+    "Salihli'de birkaç ev yanmadan kalmıştı.",
+    "Evi yansa da tek isteği, toprağının bayrağının altında olmasıydı.",
+    "Oğlu onu bir eşekle getirdi."
+   ],
+   "dogru": 2,
+   "aciklama": "Evi yanan Nine'nin tek isteği bayrağının altında olmak; çıkarımı bu destekler (s. 75–78, 101–104)."
+  },
+  {
+   "id": "t2-10",
+   "konu": "u2k2",
+   "kavram": "Sözün Asıl Anlamı",
+   "tur": "secim",
+   "soru": "Hatice Nine'nin “Ben elli senedir onu kovalıyorum.” sözüyle anlatmak istediği nedir?",
+   "secenekler": [
+    "Elli yıldır koşu yaptığını",
+    "Yıllardır bayrağının altında yaşamayı özlediğini",
+    "Bayrağı kaybettiğini",
+    "Elli yaşında olduğunu"
+   ],
+   "dogru": 1,
+   "aciklama": "Nine yıllardır özgür bir yurtta, bayrağının altında yaşamayı özlemektedir (s. 75–78, 101–104)."
+  },
+  {
+   "id": "t2-11",
+   "konu": "u2k2",
+   "kavram": "Karakterin Duygusunu Çıkarma",
+   "tur": "eslestir",
+   "soru": "Davranışları gösterdiği duyguyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Koşarak gelip annesine sarıldı.",
+     "sag": "sevinç"
+    },
+    {
+     "sol": "Ellerini ovuşturup ikide bir yutkundu.",
+     "sag": "heyecan"
+    },
+    {
+     "sol": "Kapıyı çarpıp odasına kapandı.",
+     "sag": "öfke"
+    }
+   ],
+   "aciklama": "Yazar duyguyu her zaman söylemez; davranışlardan çıkarırız."
+  },
+  {
+   "id": "t2-12",
+   "konu": "u2k2",
+   "kavram": "Metnin Mesajı",
+   "tur": "kisa",
+   "soru": "Yazarın metinle okura vermek istediği düşünceye ne ad verilir? (Bu konudaki adıyla yaz.)",
+   "yanit": "mesaj",
+   "kabul": [
+    "ana fikir",
+    "anafikir"
+   ],
+   "aciklama": "Mesaj, yazarın vermek istediği düşüncedir; ana fikre çok benzer."
+  }
+ ]
+}

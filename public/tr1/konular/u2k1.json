@@ -1,0 +1,551 @@
+{
+ "id": "u2k1",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Kelimeler Arası Anlam İlişkileri",
+ "sayfalar": "s. 75–78, 90, 92, 95, 101–103",
+ "giris": "Kelimeler tek başına durmaz; birbirleriyle anlam bağları kurar. Bu konuda eş ve zıt anlamlı kelimeleri, somut ve soyut kelimeleri, kelimeleri bir ölçüte göre gruplamayı, birbiriyle çelişen kelimeleri ve yazarın duygu için kelime seçmesini öğreneceğiz. Örnekler “Bayrağımızın Altında” (s. 75–76) ve “Mustafa Kemal’in Kağnısı” (s. 101–102) metinlerinden.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu iki eski bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Bağlam",
+    "sinif": "1. Tema, Konu 1",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='30' width='100' height='40' rx='8' fill='#fbf6e6'/><text x='60' y='47' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>Gemi kıyıya</text><text x='60' y='62' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>oturdu.</text><path d='M70 66 H96' stroke='#f5c53d' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><text x='60' y='96' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>cümle anlamı seçer</text></svg>",
+    "anlatim": "Bir kelimenin o cümledeki anlamını, çevresindeki kelimeler ve cümleler yani bağlam belirler. “Oturmak” sandalyede de olur, gemide de: Gemi kıyıya oturur, yani karaya takılır.",
+    "akilda": "Anlamı cümle seçer",
+    "sorular": [
+     {
+      "soru": "“Gece boyunca hiç gözünü kırpmadı.” cümlesinde “göz kırpmamak” ne anlama gelir?",
+      "secenekler": [
+       "Hiç uyumamak",
+       "Göz kırpmayı unutmak",
+       "Gözü ağrımak"
+      ],
+      "dogru": 0,
+      "ipucu": "Cümledeki “gece boyunca” sözü sana ne söylüyor?",
+      "aciklama": "Gece boyunca göz kırpmamak, hiç uyumamak demektir. Anlamı bağlam verdi."
+     },
+     {
+      "soru": "Bir kelimenin cümledeki anlamını en çok ne belirler?",
+      "secenekler": [
+       "Kelimenin harf sayısı",
+       "Çevresindeki kelimeler ve cümleler",
+       "Kelimenin ilk harfi"
+      ],
+      "dogru": 1,
+      "ipucu": "“Akılda kalsın”: anlamı ne seçer?",
+      "aciklama": "Kelimenin anlamını bağlam, yani çevresindeki kelimeler ve cümleler belirler."
+     }
+    ]
+   },
+   {
+    "ad": "İsim (ad)",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 40 H82 L102 60 L82 80 H18 Z' fill='#f5c53d'/><circle cx='86' cy='60' r='5' fill='#1b2340'/><text x='50' y='66' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='18' fill='#2b2417'>ad</text><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>varlıkların adı</text></svg>",
+    "anlatim": "Varlıkları, kavramları karşılayan kelimelere isim (ad) denir: bayrak, vatan, Elif, sevgi. “Ne?” ya da “Kim?” sorusuna cevap verirler.",
+    "akilda": "Varlıkların adı",
+    "sorular": [
+     {
+      "soru": "Hangisi bir isimdir?",
+      "secenekler": [
+       "koşmak",
+       "bayrak",
+       "hızlıca"
+      ],
+      "dogru": 1,
+      "ipucu": "“Ne?” sorusuna cevap veren kelimeyi bul.",
+      "aciklama": "“Bayrak” bir varlığın adıdır; isimdir."
+     },
+     {
+      "soru": "İsimler hangi soruya cevap verir?",
+      "secenekler": [
+       "Nasıl?",
+       "Ne? / Kim?",
+       "Ne zaman?"
+      ],
+      "dogru": 1,
+      "ipucu": "“Bayrak” kelimesi için hangi soruyu sorarsın?",
+      "aciklama": "İsimler “Ne?” ya da “Kim?” sorusuna cevap verir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Eş Anlamlı Kelimeler",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='16' width='84' height='28' rx='6' fill='#fbf6e6'/><text x='60' y='35' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>muhacir</text><path d='M44 58 H76' stroke='#f5c53d' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M44 70 H76' stroke='#f5c53d' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/><rect x='18' y='82' width='84' height='28' rx='6' fill='#fbf6e6'/><text x='60' y='101' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>göçmen</text></svg>",
+   "aciklama": "Yazılışları farklı ama anlamları aynı olan kelimelere eş anlamlı kelimeler denir.",
+   "ek": "“Bayrağımızın Altında” metninin kelimelerinde iki örnek var: muhacir = göçmen, ziyan = zarar (s. 77). Eş anlamlı kelime cümlede birinin yerine konunca anlam bozulmaz.",
+   "akilda": "Farklı yazılır, aynı anlam",
+   "cozum": {
+    "baslik": "Birlikte deneyelim",
+    "problem": "“Ordumuz büyük bir zafer kazandı.” cümlesindeki “zafer” kelimesinin eş anlamlısı hangisi olabilir?",
+    "adimlar": [
+     {
+      "metin": "Aynı anlamı veren bir kelime düşün.",
+      "islem": "zafer → galibiyet"
+     },
+     {
+      "metin": "Yeni kelimeyi cümlede onun yerine koy.",
+      "islem": "büyük bir galibiyet kazandı"
+     },
+     {
+      "metin": "Anlam bozuldu mu? Hayır, aynı kaldı.",
+      "islem": "eş anlamlı ✓"
+     }
+    ],
+    "sonuc": "Yerine koyma deneyi, eş anlamlıyı kontrol etmenin en kolay yoludur."
+   },
+   "soru": {
+    "soru": "“Muhacir” kelimesinin eş anlamlısı hangisidir?",
+    "secenekler": [
+     "göçmen",
+     "asker",
+     "komşu"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki ilk örneğe bak.",
+    "aciklama": "Muhacir, kendi ülkesinden ayrılıp başka ülkeye yerleşen kişidir; yani göçmen (s. 77)."
+   }
+  },
+  {
+   "ad": "Zıt Anlamlı Kelimeler",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='18' width='58' height='26' rx='6' fill='#7ad19a'/><text x='39' y='36' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>zafer</text><rect x='52' y='76' width='58' height='26' rx='6' fill='#ff8a7a'/><text x='81' y='94' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>yenilgi</text><path d='M40 52 V68 M33 61 L40 68 L47 61' stroke='#f5c53d' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M82 68 V52 M75 59 L82 52 L89 59' stroke='#f5c53d' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>",
+   "aciklama": "Anlamca birbirinin tam karşıtı olan kelimelere zıt anlamlı kelimeler denir.",
+   "ek": "Kitap, kelimelerin varsa eş ve zıt anlamlılarını bulmanı ister (s. 95). Örnekler: zafer ↔ yenilgi, esaret ↔ özgürlük, karanlık ↔ aydınlık. Dikkat: “gelmek – gelmemek” zıt anlamlı değildir; “-me” eki yalnızca olumsuz yapar. Zıttı “gitmek”tir.",
+   "akilda": "Tam karşıtı",
+   "soru": {
+    "soru": "“Zafer” kelimesinin zıt anlamlısı hangisidir?",
+    "secenekler": [
+     "başarı",
+     "yenilgi",
+     "savaş"
+    ],
+    "dogru": 1,
+    "ipucu": "Zaferin tam tersi: savaşta kazanmak değil de…",
+    "aciklama": "Zafer kazanmaktır; tam karşıtı yenilgidir."
+   }
+  },
+  {
+   "ad": "Somut ve Soyut Kelimeler",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 18 V92' stroke='#8a93ad' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><rect x='24' y='20' width='34' height='22' rx='2' fill='#e5484d'/><circle cx='37' cy='31' r='5' fill='#fbf6e6'/><text x='36' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#7ad19a'>somut</text><path d='M86 44 C86 34 100 32 100 44 C100 34 114 34 114 44 C114 58 100 66 100 72 C100 66 86 58 86 44 Z' fill='none' stroke='#9cc7ff' stroke-width='4' stroke-dasharray='5 4' transform='translate(-12 4)'/><text x='88' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#9cc7ff'>soyut</text><path d='M60 14 V100' stroke='#46507a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>",
+   "aciklama": "Beş duyumuzdan en az biriyle algılayabildiğimiz varlıkların adları somut; duyularla algılanamayıp zihnimizde var olanlar soyuttur.",
+   "ek": "Kitap, Çanakkale ile ilgili kelimeleri duyu organlarıyla algılanabilmeye göre iki listeye ayırmanı ister: “toprak” bir listede, “istiklal” öbüründe (s. 90). Toprağı görür, dokunuruz: somut. İstiklali göremeyiz ama hissederiz: soyut. “Somut” ve “soyut” adlarını önceki yıllardan biliyorsun.",
+   "akilda": "Duyuyla algılanır mı?",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Siper” ve “sevgi” kelimelerini somut ve soyut diye ayıralım.",
+    "adimlar": [
+     {
+      "metin": "1. Siperi görebilir, ona dokunabilir miyiz?",
+      "soru": {
+       "soru": "“Siper” hangi gruptadır?",
+       "secenekler": [
+        "Somut",
+        "Soyut",
+        "İkisine de girmez"
+       ],
+       "dogru": 0,
+       "ipucu": "Askerlerin içinde korunduğu çukuru gözünle görebilir misin?",
+       "aciklama": "Siper görülür ve dokunulur: somuttur."
+      },
+      "islem": "siper: somut"
+     },
+     {
+      "metin": "2. Sevgiyi görebilir ya da tutabilir miyiz?",
+      "soru": {
+       "soru": "“Sevgi” hangi gruptadır?",
+       "secenekler": [
+        "Somut",
+        "Soyut",
+        "İkisine de girmez"
+       ],
+       "dogru": 1,
+       "ipucu": "Sevgiyi elinde tutabilir misin, yoksa içinde mi hissedersin?",
+       "aciklama": "Sevgi duyularla algılanmaz, hissedilir: soyuttur."
+      },
+      "islem": "sevgi: soyut"
+     },
+     {
+      "metin": "3. Ölçütümüz duyulardı.",
+      "islem": "ölçüt: duyular"
+     }
+    ],
+    "sonuc": "Harika! Her kelimeye aynı soruyu sordun: Duyularımla algılayabilir miyim?"
+   },
+   "soru": {
+    "soru": "Hangisi soyut bir kelimedir?",
+    "secenekler": [
+     "bayrak",
+     "özgürlük",
+     "top"
+    ],
+    "dogru": 1,
+    "ipucu": "Hangisini gözünle göremez, elinle tutamazsın?",
+    "aciklama": "Özgürlük duyularla algılanmaz; soyuttur. Bayrak ve top somuttur."
+   }
+  },
+  {
+   "ad": "Ölçüte Göre Sınıflandırma",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='30' y='12' width='60' height='24' rx='6' fill='#f5c53d'/><text x='60' y='29' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>ölçüt</text><path d='M48 38 L32 62 M72 38 L88 62' stroke='#fbf6e6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><rect x='8' y='64' width='50' height='44' rx='8' fill='#2e3a63'/><rect x='62' y='64' width='50' height='44' rx='8' fill='#2e3a63'/><circle cx='22' cy='78' r='6' fill='#7ad19a'/><circle cx='40' cy='92' r='6' fill='#7ad19a'/><circle cx='24' cy='98' r='5' fill='#7ad19a'/><circle cx='78' cy='80' r='6' fill='#9cc7ff'/><circle cx='96' cy='92' r='6' fill='#9cc7ff'/><circle cx='80' cy='98' r='5' fill='#9cc7ff'/></svg>",
+   "aciklama": "Sınıflandırma, kelimeleri ya da varlıkları seçilen bir ölçüte göre gruplara ayırmaktır.",
+   "ek": "Önce ölçütü seç, sonra her kelimeyi bu ölçüte göre yerleştir, en sonda grupları adlandır. Kitap, Çanakkale kelimelerini duyularla algılanmaya göre gruplayıp listelere ad vermeni ister (s. 90). Ölçüt değişirse gruplar da değişir.",
+   "akilda": "Önce ölçüt, sonra grup",
+   "cozum": {
+    "baslik": "Birlikte gruplayalım",
+    "problem": "Kelimeler: bayrak, istiklal, siper, cesaret. Ölçüt: Duyularla algılanır mı?",
+    "adimlar": [
+     {
+      "metin": "Ölçütü yaz.",
+      "islem": "ölçüt: duyular"
+     },
+     {
+      "metin": "Görülen, dokunulan kelimeleri ayır.",
+      "islem": "bayrak, siper"
+     },
+     {
+      "metin": "Kalan kelimeleri öbür gruba koy.",
+      "islem": "istiklal, cesaret"
+     },
+     {
+      "metin": "Grupları adlandır.",
+      "islem": "somut / soyut"
+     }
+    ],
+    "sonuc": "Dört kelime iki gruba ayrıldı. Her kelimede aynı ölçütü kullandık."
+   },
+   "soru": {
+    "soru": "“elma, armut, ıspanak, havuç” kelimeleri “meyve” ve “sebze” diye ayrıldı. Burada ölçüt nedir?",
+    "secenekler": [
+     "Kelimelerin uzunluğu",
+     "Kelimelerin ilk harfi",
+     "Yiyeceğin türü"
+    ],
+    "dogru": 2,
+    "ipucu": "Grupların adlarına bak: meyve ve sebze neyi anlatıyor?",
+    "aciklama": "Gruplara “meyve” ve “sebze” adı verilmiş; ölçüt yiyeceğin türüdür."
+   }
+  },
+  {
+   "ad": "Anlamca Çelişen Kelimeler",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='22' width='40' height='26' rx='6' fill='#7ad19a'/><text x='30' y='40' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='13' fill='#2b2417'>tam</text><rect x='56' y='22' width='56' height='26' rx='6' fill='#9cc7ff'/><text x='84' y='40' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>yaklaşık</text><path d='M44 58 L76 86 M76 58 L44 86' stroke='#ff8a7a' stroke-width='7' stroke-linecap='round' stroke-linejoin='round' fill='none'/><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>ikisi birden olmaz</text></svg>",
+   "aciklama": "Birbirinin anlamını bozan kelimeler aynı cümlede kullanılırsa anlam çelişir; bunlardan biri atılmalıdır.",
+   "ek": "Kitaptaki örnek: “Millî Mücadele Dönemi tam olarak yaklaşık üç yıl sürdü.” “Tam olarak” kesinlik, “yaklaşık” tahmin bildirir; ikisi bir arada olmaz. Doğrusu: “yaklaşık üç yıl sürdü” (s. 92). Sık karışan çiftler: tam – aşağı yukarı, mutlaka – belki, hiç şüphesiz – olabilir.",
+   "akilda": "İkisi birden olmaz",
+   "cozum": {
+    "baslik": "Birlikte düzeltelim",
+    "problem": "“Bu taburda aşağı yukarı tam iki yıl çalıştı.” (s. 92)",
+    "adimlar": [
+     {
+      "metin": "Süre bildiren kelimeleri bul.",
+      "islem": "aşağı yukarı / tam"
+     },
+     {
+      "metin": "Biri tahmin, biri kesinlik bildiriyor.",
+      "islem": "tahmin ≠ kesinlik"
+     },
+     {
+      "metin": "Birini at, cümleyi yeniden yaz.",
+      "islem": "tam iki yıl çalıştı"
+     }
+    ],
+    "sonuc": "“Aşağı yukarı iki yıl çalıştı.” de doğrudur. Önemli olan ikisini bir arada kullanmamak."
+   },
+   "soru": {
+    "soru": "Hangi cümlede anlamca çelişen kelimeler vardır?",
+    "secenekler": [
+     "Kitabı belki yarın bitiririm.",
+     "Toplantıya kesinlikle belki gelirim.",
+     "Ders tam saat üçte başladı."
+    ],
+    "dogru": 1,
+    "ipucu": "Kesinlik bildiren ile tahmin bildiren kelimeyi aynı cümlede ara.",
+    "aciklama": "“Kesinlikle” emin olmayı, “belki” emin olmamayı bildirir; ikisi çelişir."
+   }
+  },
+  {
+   "ad": "Duyguyu Yansıtan Kelime Seçimi",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='32' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#8a93ad'>üzüldü</text><path d='M36 28 H84' stroke='#ff8a7a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><rect x='18' y='46' width='84' height='30' rx='6' fill='#f5c53d'/><text x='60' y='67' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#2b2417'>kahroldu</text><path d='M60 84 C54 94 52 98 52 102 A8 8 0 0 0 68 102 C68 98 66 94 60 84 Z' fill='#9cc7ff'/></svg>",
+   "aciklama": "Şair ya da yazar, kahramanın duygusunu göstermek için kelimelerini özenle seçer; bir kelime değişirse duygu da değişir.",
+   "ek": "“Mustafa Kemal’in Kağnısı”nda Kocabaş yolda durunca şair “Kahroldu Elifçik” der (s. 102). “Üzüldü” deseydi duygu bu kadar güçlü olmazdı. Kitap da şiirde tutacağın ve değiştireceğin kelimeleri seçmeni ister (s. 103).",
+   "akilda": "Kelime duyguyu taşır",
+   "soru": {
+    "soru": "“Kahroldu Elifçik” sözü Elif'in nasıl bir duygu içinde olduğunu gösterir?",
+    "secenekler": [
+     "Çok büyük bir üzüntü",
+     "Hafif bir merak",
+     "Sevinç"
+    ],
+    "dogru": 0,
+    "ipucu": "“Kahrolmak”, “üzülmek”ten daha mı güçlü, daha mı zayıf?",
+    "aciklama": "“Kahrolmak” çok büyük üzüntü duymaktır; şair Elif'in acısının büyüklüğünü bu kelimeyle gösteriyor (s. 102)."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram kelimelerle hangi işi yapar?",
+   "kutular": [
+    {
+     "etiket": "İki kelimenin anlamını karşılaştırır",
+     "uyeler": [
+      "Eş Anlamlı Kelimeler",
+      "Zıt Anlamlı Kelimeler",
+      "Anlamca Çelişen Kelimeler"
+     ]
+    },
+    {
+     "etiket": "Kelimeleri gruplar ya da seçer",
+     "uyeler": [
+      "Somut ve Soyut Kelimeler",
+      "Ölçüte Göre Sınıflandırma",
+      "Duyguyu Yansıtan Kelime Seçimi"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "“Bayrağımızın Altında”, Halide Edip Adıvar'ın yazısıdır. Hatice Nine beş kez göç ettiğini, beş kez evinin yandığını anlatır (s. 75). Metindeki “bandıra” kelimesi yabancı devlet bayrağı demektir (s. 77).",
+  "“Mustafa Kemal’in Kağnısı” Fazıl Hüsnü Dağlarca'nın şiiridir. Elif'in öküzlerinin adları Kocabaş ve Sarıkız'dır (s. 101)."
+ ],
+ "akildaKalsin": [
+  "Eş anlamlı: farklı yazılır, aynı anlamı verir (muhacir = göçmen).",
+  "Zıt anlamlı: tam karşıtı (zafer ↔ yenilgi). “-me” eki zıt anlam yapmaz.",
+  "Somut: duyularla algılanır. Soyut: duyularla algılanmaz.",
+  "Sınıflandırma: önce ölçüt, sonra gruplar.",
+  "Kesinlik ile tahmin aynı cümlede olmaz.",
+  "Seçilen kelime duygunun gücünü belirler."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Eş anlamlı kelimeler her yerde birbirinin yerine kullanılabilir mi?",
+   "cevap": "Çoğu zaman evet, ama bazen biri daha eski ya da daha resmîdir. “Muhacir” eski, “göçmen” bugünkü kullanımdır (s. 77). Günlük konuşmada “göçmen” daha doğal durur."
+  },
+  {
+   "soru": "Bir kelime hem somut hem soyut olabilir mi?",
+   "cevap": "Evet, cümleye göre değişir. “Kalbim hızlı atıyor.” cümlesinde kalp bir organdır: somut. “Kalbi çok temiz.” cümlesinde iyilik anlamındadır: soyut. Karar vermeden önce bağlama bak."
+  },
+  {
+   "soru": "“Gelmek” ile “gelmemek” neden zıt anlamlı değil?",
+   "cevap": "“Gelmemek”, “gelmek”e “-me” eki getirilerek yapılır; bu yalnızca olumsuzluktur. Zıt anlamlılar ayrı kelimelerdir: gelmek ↔ gitmek."
+  },
+  {
+   "soru": "Şiirde neden “öküz” yerine “Kocabaş” deniyor?",
+   "cevap": "Elif öküzlerine ad vermiştir; şiirde onlarla “kardeş gibiydi” denir (s. 101). Ad kullanmak, Elif'in onlara olan sevgisini gösterir. Bu da bir kelime seçimidir."
+  },
+  {
+   "soru": "Sınıflandırmanın tek bir doğru cevabı var mı?",
+   "cevap": "Hayır. Ölçüt değişirse gruplar da değişir. Aynı filmleri yapıldıkları yıla göre de konularına göre de ayırabilirsin. Önemli olan, seçtiğin ölçüte her kelimede sadık kalmaktır."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "“Bayrak” ve “özgürlük” kelimelerini birer cümlede kullan. Hangisinin somut, hangisinin soyut olduğunu nedeniyle yaz.",
+   "ornekCevap": "Okulun bahçesinde bayrak dalgalanıyor. Özgürlük bütün insanların hakkıdır. Bayrağı görebildiğim için somut, özgürlüğü göremediğim için soyuttur.",
+   "anahtarlar": [
+    "somut",
+    "soyut",
+    "gör",
+    "duy",
+    "dokun",
+    "hisset"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“Fırtına tarlalara büyük ziyan verdi.” cümlesinde “ziyan” kelimesinin yerine hangisi konabilir?",
+   "secenekler": [
+    "zarar",
+    "sevinç",
+    "huzur"
+   ],
+   "dogru": 0,
+   "ipucu": "Kelimeyi yerine koy, anlam bozulmasın.",
+   "aciklama": "Ziyan ile zarar eş anlamlıdır (s. 77). “Büyük zarar verdi” cümlesinde anlam aynı kalır.",
+   "kavram": "Eş Anlamlı Kelimeler"
+  },
+  {
+   "soru": "Hangi kelime çifti zıt anlamlıdır?",
+   "secenekler": [
+    "huzur – rahatlık",
+    "muhacir – göçmen",
+    "esaret – özgürlük"
+   ],
+   "dogru": 2,
+   "ipucu": "Anlamca tam karşıt olan çifti ara.",
+   "aciklama": "Esaret tutsaklık, özgürlük ise bağımsız olmaktır; tam karşıttırlar. Öbür iki çift eş anlamlıdır.",
+   "kavram": "Zıt Anlamlı Kelimeler"
+  },
+  {
+   "soru": "Hangi kelime çifti zıt anlamlı değildir?",
+   "secenekler": [
+    "uzun – kısa",
+    "yazmak – yazmamak",
+    "erken – geç"
+   ],
+   "dogru": 1,
+   "ipucu": "Bir çiftte ikinci kelime, birincisine yalnızca “-me” eki getirilerek yapılmış.",
+   "aciklama": "“Yazmamak”, “yazmak”ın olumsuzudur; zıt anlamlısı değildir.",
+   "kavram": "Zıt Anlamlı Kelimeler",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Zıt anlamlı OLMAYAN çifti. Kökte “değildir” var.",
+     "Her çiftte iki kelime ayrı mı, yoksa biri öbürüne ek getirilerek mi yapılmış?",
+     "“-me” eki olumsuzluk ekidir, zıt anlam yapmaz."
+    ]
+   }
+  },
+  {
+   "soru": "Hangi grupta yalnızca soyut kelimeler vardır?",
+   "secenekler": [
+    "top, siper, cesaret",
+    "cesaret, sevgi, umut",
+    "bayrak, toprak, kağnı"
+   ],
+   "dogru": 1,
+   "ipucu": "Her kelimeye sor: Gözümle görebilir, elimle tutabilir miyim?",
+   "aciklama": "Cesaret, sevgi ve umut duyularla algılanmaz; üçü de soyuttur.",
+   "kavram": "Somut ve Soyut Kelimeler"
+  },
+  {
+   "soru": "Ayşe kelimeleri iki gruba ayırdı. 1. grup: kağnı, tren. 2. grup: vapur, sandal. Ayşe hangi ölçütü kullanmıştır?",
+   "secenekler": [
+    "Taşıtın rengi",
+    "Kelimedeki harf sayısı",
+    "Taşıtın gittiği yer: kara ya da su"
+   ],
+   "dogru": 2,
+   "ipucu": "Kağnı ve tren nerede gider? Vapur ve sandal nerede?",
+   "aciklama": "Kağnı ve tren karada, vapur ve sandal suda gider. Ölçüt taşıtın gittiği yerdir.",
+   "kavram": "Ölçüte Göre Sınıflandırma"
+  },
+  {
+   "soru": "“Donanma gemileri tamı tamına üç beş saatte Çanakkale'ye ulaştı.” (s. 92) Bu cümleyi düzeltmek için ne yapılmalıdır?",
+   "secenekler": [
+    "“Gemileri” kelimesi atılmalı.",
+    "“Tamı tamına” ya da “üç beş” sözlerinden biri atılmalı.",
+    "Cümleye “belki” eklenmeli."
+   ],
+   "dogru": 1,
+   "ipucu": "Hangi söz kesin bir süre, hangisi tahmini bir süre bildiriyor?",
+   "aciklama": "“Tamı tamına” kesinlik, “üç beş” tahmin bildirir. Biri atılınca çelişki kalkar (s. 92).",
+   "kavram": "Anlamca Çelişen Kelimeler"
+  },
+  {
+   "soru": "“Nasıl durur Mustafa Kemal'in kağnısı” (s. 102) dizesinde şair, Elif'in hangi duygusunu yansıtıyor?",
+   "secenekler": [
+    "Kağnının durmasını kabul edemeyişini",
+    "Yolculuktan sıkıldığını",
+    "Öküzüne kızdığını"
+   ],
+   "dogru": 0,
+   "ipucu": "Elif, kağnısının adını neden söylüyor? Bu ad ona ne hatırlatıyor?",
+   "aciklama": "Elif kağnısına “Mustafa Kemal'in kağnısı” der; cepheye mermi götüren bu kağnının durmasını kabul edemez (s. 101–102).",
+   "kavram": "Duyguyu Yansıtan Kelime Seçimi"
+  },
+  {
+   "soru": "Metinde zıt anlamlı olarak kullanılan kelimeler hangileridir?",
+   "metinBaslik": "Cepheye Giden Yollar",
+   "metin": [
+    "Millî Mücadele yıllarında cepheye giden yollar dar ve çamurluydu.",
+    "Kağnılar bu yollarda yavaş ama durmadan ilerledi.",
+    "Hızlı giden kamyonlar ise yok denecek kadar azdı.",
+    "Yine de cephane askerlere zamanında ulaştı."
+   ],
+   "kanit": [
+    1,
+    2
+   ],
+   "kanitIpucu": "Kağnıların ya da kamyonların NASIL gittiğini anlatan cümlelerden birine dokun.",
+   "secenekler": [
+    "dar – çamurlu",
+    "yavaş – hızlı",
+    "yol – cephane"
+   ],
+   "dogru": 1,
+   "ipucu": "Birbirinin tam karşıtı olan iki kelimeyi ara.",
+   "aciklama": "Kağnılar “yavaş”, kamyonlar “hızlı” gider; bu iki kelime tam karşıttır. “Dar” ve “çamurlu” ise yolu anlatan iki ayrı özelliktir.",
+   "kavram": "Zıt Anlamlı Kelimeler",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metinde birbirinin karşıtı olan iki kelimeyi.",
+     "Anahtar kelime: zıt, karşıt. Gidişi anlatan kelimelere dikkat et.",
+     "Kanıt: Kağnıların ve kamyonların nasıl gittiğini anlatan cümleleri bul.",
+     "Şıkları ele: Her şıkta sor: Bu iki kelime birbirinin tam tersi mi? “Dar” ile “çamurlu” aynı yolu anlatıyor; ters değil."
+    ]
+   }
+  },
+  {
+   "soru": "Bu paragrafa göre hangi kelime soyut bir kavramdır?",
+   "metinBaslik": "Ses ve Merak",
+   "metin": [
+    "Ses, titreşen cisimlerden çıkar.",
+    "Kulağımız bu titreşimleri algılar.",
+    "Davulun sesini de zilin sesini de duyarız.",
+    "Merak ise duyularla algılanmaz; içimizde hissettiğimiz bir duygudur."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Duyularla algılanMAYAN bir şeyden söz eden cümleye dokun.",
+   "secenekler": [
+    "ses",
+    "davul",
+    "merak"
+   ],
+   "dogru": 2,
+   "ipucu": "Paragrafta hangi şeyin duyularla algılanmadığı söyleniyor?",
+   "aciklama": "Son cümle, merakın duyularla algılanmadığını açıkça söylüyor: soyuttur. Ses kulakla duyulur, davul görülür; ikisi de somuttur.",
+   "kavram": "Somut ve Soyut Kelimeler",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Soyut olan kelimeyi.",
+     "Anahtar kelime: soyut = duyularla algılanmaz.",
+     "Kanıt: “Duyularla algılanmaz” diyen cümleyi bul.",
+     "Şıkları ele: Ses duyulur, davul görülür ve tutulur. Duyularla algılanabilenleri ele."
+    ]
+   }
+  },
+  {
+   "soru": "Paragrafta anlamca çelişen kelimelerin bulunduğu cümle nasıl düzeltilmelidir?",
+   "metinBaslik": "Sınıf Gezisi",
+   "metin": [
+    "Sınıf gezisi için sabah okulun önünde toplandık.",
+    "Otobüse tam olarak yaklaşık yirmi öğrenci bindi.",
+    "Öğretmenimiz yoklama aldı ve herkesin geldiğini söyledi.",
+    "Otobüs saat dokuzda yola çıktı."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Öğrenci sayısını veren cümleye dokun.",
+   "secenekler": [
+    "Otobüse belki tam yirmi öğrenci bindi.",
+    "Otobüse tam olarak yaklaşık yirmi kişi bindi.",
+    "Otobüse yaklaşık yirmi öğrenci bindi."
+   ],
+   "dogru": 2,
+   "ipucu": "Düzeltilmiş cümlede kesinlik ve tahmin bir arada kalmamalı.",
+   "aciklama": "“Tam olarak” ile “yaklaşık” çelişir; biri atılmalı. Öbür iki şıkta çelişki sürüyor: “belki tam” ve “tam olarak yaklaşık”.",
+   "kavram": "Anlamca Çelişen Kelimeler",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Çelişkili cümlenin doğru hâlini.",
+     "Anahtar kelime: tam olarak (kesin), yaklaşık (tahmin).",
+     "Kanıt: Kesinlik ve tahminin bir arada geçtiği cümleyi bul.",
+     "Şıkları ele: Her şıkta kesin bir kelime ile tahmin bildiren bir kelime yan yana mı? Yan yana olanları ele."
+    ]
+   }
+  }
+ ]
+}

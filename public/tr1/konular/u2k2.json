@@ -1,0 +1,536 @@
+{
+ "id": "u2k2",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Çıkarım Yapma ve Metnin Mesajı",
+ "sayfalar": "s. 75–78, 101–104",
+ "giris": "Yazarlar her şeyi açıkça yazmaz; bazı şeyleri ipuçlarıyla sezdirir. Bu konuda ipuçlarını birleştirip çıkarım yapmayı, çıkarımı bir cümleyle kanıtlamayı, kahramanın sözünden ve davranışından anlam çıkarmayı, en sonda da metnin mesajını bulmayı öğreneceğiz. Örnekler “Bayrağımızın Altında” (s. 75–76) ve “Mustafa Kemal’in Kağnısı” (s. 101–102) metinlerinden.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, 1. temada öğrendiğin iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Anahtar kelime",
+    "sinif": "1. Tema, Konu 1",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='40' cy='50' r='18' fill='none' stroke='#f5c53d' stroke-width='8'/><path d='M57 50 H104 M92 50 v12 M102 50 v9' stroke='#f5c53d' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/><text x='60' y='100' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#fbf6e6'>metnin kapısı</text></svg>",
+    "anlatim": "Anahtar kelimeler metinde sık geçen, metnin konusunu taşıyan önemli kelimelerdir. Bir soruyu cevaplarken önce anahtar kelimeyi bulur, sonra metinde onu ararız.",
+    "akilda": "Sık geçen, önemli kelime",
+    "sorular": [
+     {
+      "soru": "“Kağnılar cepheye mermi taşıdı. Kağnıları çoğu zaman kadınlar sürdü. Kağnılar dağ taş aştı.” Bu metnin anahtar kelimesi hangisidir?",
+      "secenekler": [
+       "dağ",
+       "kağnı",
+       "mermi"
+      ],
+      "dogru": 1,
+      "ipucu": "Her cümlede geçen kelime hangisi?",
+      "aciklama": "“Kağnı” her cümlede geçiyor; metnin anahtar kelimesidir."
+     },
+     {
+      "soru": "Bir soruyu cevaplarken anahtar kelimeyi bulmak neden işe yarar?",
+      "secenekler": [
+       "Metinde nereye bakacağımızı gösterir.",
+       "Soruyu daha uzun yapar.",
+       "Yazarın adını söyler."
+      ],
+      "dogru": 0,
+      "ipucu": "Anahtar kelime “metnin kapısı”dır. Kapı nereye açılır?",
+      "aciklama": "Anahtar kelime, cevabı metinde nerede arayacağımızı gösterir."
+     }
+    ]
+   },
+   {
+    "ad": "Ana fikir",
+    "sinif": "1. Tema, Konu 3",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='62' rx='8' fill='#fbf6e6'/><rect x='24' y='30' width='66' height='5' rx='2.5' fill='#8a93ad'/><rect x='24' y='40' width='52' height='5' rx='2.5' fill='#8a93ad'/><rect x='24' y='50' width='66' height='5' rx='2.5' fill='#8a93ad'/><rect x='24' y='60' width='52' height='5' rx='2.5' fill='#8a93ad'/><circle cx='86' cy='74' r='16' fill='#f5c53d'/><text x='86' y='79' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#2b2417'>!</text><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>verilmek istenen</text></svg>",
+    "anlatim": "Ana fikir, yazarın metinle okura vermek istediği temel düşüncedir. “Yazar bize ne söylemek istiyor?” sorusunun cevabıdır.",
+    "akilda": "Yazar ne demek istiyor?",
+    "sorular": [
+     {
+      "soru": "“Deniz bisiklet sürmeyi öğrenirken çok düştü ama vazgeçmedi. Sonunda parkta rahatça sürmeye başladı.” Bu metnin ana fikri hangisidir?",
+      "secenekler": [
+       "Bisiklet pahalıdır.",
+       "Düşmek tehlikelidir.",
+       "Vazgeçmeyen başarır."
+      ],
+      "dogru": 2,
+      "ipucu": "Yazar bu olayla bize ne öğretmek istiyor?",
+      "aciklama": "Deniz düşse de vazgeçmedi ve başardı: Vazgeçmeyen başarır."
+     },
+     {
+      "soru": "Ana fikir hangi sorunun cevabıdır?",
+      "secenekler": [
+       "Metin kaç sayfa?",
+       "Yazar bize ne söylemek istiyor?",
+       "Olay nerede geçiyor?"
+      ],
+      "dogru": 1,
+      "ipucu": "“Akılda kalsın” cümlesine bak.",
+      "aciklama": "Ana fikir, yazarın okura vermek istediği düşüncedir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Yazılan ve Sezdirilen Anlam",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='16' width='58' height='76' rx='6' fill='#fbf6e6'/><rect x='18' y='26' width='42' height='5' rx='2.5' fill='#8a93ad'/><rect x='18' y='36' width='28' height='5' rx='2.5' fill='#8a93ad'/><rect x='18' y='46' width='42' height='5' rx='2.5' fill='#8a93ad'/><rect x='18' y='56' width='28' height='5' rx='2.5' fill='#8a93ad'/><rect x='18' y='66' width='42' height='5' rx='2.5' fill='#8a93ad'/><rect x='18' y='76' width='28' height='5' rx='2.5' fill='#8a93ad'/><rect x='18' y='46' width='42' height='6' rx='3' fill='#f5c53d'/><path d='M78 34 C78 22 108 22 108 34 C108 44 98 44 94 52' fill='none' stroke='#9cc7ff' stroke-width='4' stroke-dasharray='4 4'/><circle cx='93' cy='62' r='4' fill='#9cc7ff'/><text x='36' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>yazıyor</text><text x='88' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9.5' fill='#9cc7ff'>sezdiriyor</text></svg>",
+   "aciklama": "Metinde bazı bilgiler açıkça yazılır; bazılarını ise yazar söylemez, ipuçlarıyla sezdirir (ima eder).",
+   "ek": "“Halk bir türlü kâbusun geçtiğine inanamıyor, bir türlü uyuyamıyordu.” (s. 75) Yazar “Savaş bitti, halk hâlâ korkuyor.” diye yazmıyor; biz bunu cümleden anlıyoruz. Kitap da bu cümlenin neyi gösterdiğini sorar (s. 78). Sezdirilen anlama “derin anlam” da denir; bu adı sonraki temalarda daha çok göreceksin.",
+   "akilda": "Yazıyor mu, sezdiriyor mu?",
+   "soru": {
+    "soru": "“Ali içeri girince ıslak şemsiyesini silkeledi.” cümlesinde dışarıda yağmur yağdığı nasıl anlatılmıştır?",
+    "secenekler": [
+     "Açıkça yazılmıştır.",
+     "Yazılmamış, sezdirilmiştir.",
+     "Hiç anlatılmamıştır."
+    ],
+    "dogru": 1,
+    "ipucu": "Cümlede “yağmur” kelimesi geçiyor mu? Hangi ipucu var?",
+    "aciklama": "“Yağmur” kelimesi yok ama ıslak şemsiye yağmuru sezdiriyor."
+   }
+  },
+  {
+   "ad": "Çıkarım: İpucu + Bildiğin",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='6' y='22' width='40' height='26' rx='6' fill='#f5c53d'/><text x='26' y='39' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>ipucu</text><rect x='58' y='22' width='56' height='26' rx='6' fill='#9cc7ff'/><text x='86' y='39' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>bildiğin</text><text x='52' y='41' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='16' fill='#fbf6e6'>+</text><path d='M60 56 V70 M53 64 L60 71 L67 64' stroke='#fbf6e6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><rect x='22' y='78' width='76' height='28' rx='8' fill='#7ad19a'/><text x='60' y='97' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>çıkarım</text></svg>",
+   "aciklama": "Çıkarım, metindeki ipuçlarını kendi bildiklerinle birleştirip metinde yazmayan bir sonuca ulaşmaktır.",
+   "ek": "Kitap, Hatice Nine'nin öbür kadınlardan neden daha huzurlu olduğunu yaşadıklarına bakarak bulmanı ister (s. 78). İpucu: Beş kez göç etmiş, sonunda bayrağının altına kavuşmuş (s. 75). Bildiğin: İnsan en çok istediğine kavuşunca rahatlar. Çıkarım: Huzuru, bayrağına kavuşmasından gelir.",
+   "akilda": "İpucu + bildiğin = çıkarım",
+   "cozum": {
+    "baslik": "Birlikte çıkarım yapalım",
+    "problem": "“Elif'in yanakları kıpkırmızıydı, ağzından buhar çıkıyordu. Eldivenlerini giyip ellerini ovuşturdu.” Hava nasıldı?",
+    "adimlar": [
+     {
+      "metin": "Metindeki ipuçlarını bul.",
+      "islem": "kırmızı yanak, buhar, eldiven"
+     },
+     {
+      "metin": "Bildiğini ekle: Soğukta nefesimiz buhar gibi görünür.",
+      "islem": "soğukta nefes buharlaşır"
+     },
+     {
+      "metin": "İkisini birleştir, sonuca ulaş.",
+      "islem": "Hava çok soğuktu."
+     }
+    ],
+    "sonuc": "Metin “soğuk” kelimesini hiç kullanmadı; biz ipuçlarından çıkardık."
+   },
+   "soru": {
+    "soru": "Çıkarım yaparken neleri birleştiririz?",
+    "secenekler": [
+     "Yalnızca metnin başlığını",
+     "Metindeki ipuçlarını ve kendi bildiklerimizi",
+     "Yazarın adını ve yaşını"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki “akılda kalsın” formülüne bak.",
+    "aciklama": "Çıkarım = metindeki ipucu + kendi bildiğimiz."
+   }
+  },
+  {
+   "ad": "Kanıtını Göster",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='14' width='96' height='22' rx='6' fill='#9cc7ff'/><text x='60' y='29' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>çıkarım</text><path d='M60 38 V50' stroke='#fbf6e6' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><rect x='12' y='52' width='96' height='44' rx='6' fill='#fbf6e6'/><rect x='20' y='60' width='70' height='5' rx='2.5' fill='#8a93ad'/><rect x='20' y='69' width='56' height='5' rx='2.5' fill='#8a93ad'/><rect x='20' y='78' width='70' height='5' rx='2.5' fill='#8a93ad'/><rect x='20' y='87' width='56' height='5' rx='2.5' fill='#8a93ad'/><rect x='20' y='69' width='66' height='6' rx='3' fill='#f5c53d'/><path d='M88 72 L100 84' stroke='#f5c53d' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='82' cy='66' r='9' fill='none' stroke='#f5c53d' stroke-width='4'/><text x='60' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>kanıt cümlesi</text></svg>",
+   "aciklama": "Yaptığın çıkarımı metinden bir cümleyle desteklemelisin; bu cümleye kanıt denir.",
+   "ek": "Kitap, hür bir vatanda yaşamanın önemini gösteren kanıtları Hatice Nine'nin söz ve davranışlarından bulmanı ister (s. 78). Onun “toprağım bizim bayrağın altında olacak” sözü (s. 76) güçlü bir kanıttır. Kanıtı olmayan çıkarım, bir tahminden öteye geçmez.",
+   "akilda": "Çıkarım + cümle",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "Çıkarım: “Hatice Nine bayrağına çok bağlıdır.” Bu çıkarımın kanıtını bulalım.",
+    "adimlar": [
+     {
+      "metin": "1. Önce çıkarımın anahtar kelimesini bul.",
+      "soru": {
+       "soru": "Bu çıkarımın anahtar kelimesi hangisidir?",
+       "secenekler": [
+        "bayrak",
+        "ev",
+        "yangın"
+       ],
+       "dogru": 0,
+       "ipucu": "Çıkarım neye bağlılıktan söz ediyor?",
+       "aciklama": "Çıkarım bayrağa bağlılığı anlatıyor; anahtar kelime “bayrak”."
+      },
+      "islem": "bayrak"
+     },
+     {
+      "metin": "2. Bayrakla ilgili ve bağlılığı gösteren sözü seç.",
+      "soru": {
+       "soru": "Hangisi bu çıkarımın kanıtıdır?",
+       "secenekler": [
+        "“Nine senin evin yandı mı?”",
+        "“Sevmek ne demek oğul? Ben elli senedir onu kovalıyorum.”",
+        "“Ortalık ağarıyor, hâlâ kadınlar gelip gidiyor.”"
+       ],
+       "dogru": 1,
+       "ipucu": "Hangi söz bayrak hakkında ve sevgiden de büyük bir bağı anlatıyor?",
+       "aciklama": "Nine, bayrağı sevmekten de öte, elli yıldır onun peşinde olduğunu söylüyor (s. 75)."
+      },
+      "islem": "“elli senedir onu kovalıyorum”"
+     },
+     {
+      "metin": "3. Çıkarım artık kanıtlı.",
+      "islem": "çıkarım + kanıt ✓"
+     }
+    ],
+    "sonuc": "Harika! Önce anahtar kelimeyi buldun, sonra onu destekleyen cümleyi seçtin."
+   },
+   "soru": {
+    "soru": "Bir çıkarımın kanıtı nedir?",
+    "secenekler": [
+     "Kendi hayalimiz",
+     "Kitabın sayfa numarası",
+     "Metinde onu destekleyen cümle"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartında kanıtın ne olduğu yazıyor.",
+    "aciklama": "Kanıt, çıkarımı destekleyen metindeki cümledir."
+   }
+  },
+  {
+   "ad": "Sözün Asıl Anlamı",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 18 H96 Q104 18 104 26 V58 Q104 66 96 66 H44 L30 80 V66 H22 Q14 66 14 58 V26 Q14 18 22 18 Z' fill='#fbf6e6'/><text x='59' y='39' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>Burası savaş</text><text x='59' y='54' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>alanı!</text><path d='M60 76 V90' stroke='#f5c53d' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>= çok dağınık</text></svg>",
+   "aciklama": "Kahramanlar bazen düşüncelerini doğrudan söylemez; sözlerinin arkasında daha derin bir anlam vardır.",
+   "ek": "Hatice Nine “Ben elli senedir onu kovalıyorum.” der (s. 75). Bununla yıllardır bayrağının altında, özgür bir yurtta yaşamayı özlediğini anlatır. Kitap bu sözle ne anlatılmak istendiğini sorar (s. 78). Sözün asıl anlamını bulmak için “Bunu neden böyle söyledi?” diye sor.",
+   "akilda": "Söz ne demek istiyor?",
+   "soru": {
+    "soru": "Annem odama bakıp “Burası tam bir savaş alanı!” dedi. Annem ne demek istiyor?",
+    "secenekler": [
+     "Odada savaş oyunu oynanıyor.",
+     "Oda çok dağınık.",
+     "Oda çok büyük."
+    ],
+    "dogru": 1,
+    "ipucu": "Savaş alanı nasıl görünür? Annem odanın neyini anlatıyor?",
+    "aciklama": "Annem odayı savaş alanına benzeterek ne kadar dağınık olduğunu söylüyor."
+   }
+  },
+  {
+   "ad": "Karakterin Duygusunu Çıkarma",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='46' cy='50' r='26' fill='#f5c53d'/><circle cx='37' cy='44' r='3.5' fill='#2b2417'/><circle cx='55' cy='44' r='3.5' fill='#2b2417'/><path d='M36 62 Q46 56 56 62' stroke='#2b2417' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M78 22 C74 30 73 33 73 36 A5 5 0 0 0 83 36 C83 33 82 30 78 22 Z' fill='#9cc7ff'/><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>davranış → duygu</text></svg>",
+   "aciklama": "Yazar duyguyu her zaman adıyla söylemez; kahramanın davranışlarından, sözlerinden ve yüz ifadesinden duygusunu çıkarırız.",
+   "ek": "Kitap, Kocabaş öldükten sonra Elif'in neler hissettiğine dair kanıt bulmanı ister (s. 104). Elif'in Kocabaş'ın yerine kendini koşup yürümesi (s. 102) hem acısını hem de kararlılığını gösterir. “Bayrağımızın Altında”da Hatice Nine'nin avuçlarını öpmesi de bayrak sevgisini gösterir (s. 75).",
+   "akilda": "Davranış duyguyu anlatır",
+   "cozum": {
+    "baslik": "Birlikte duyguyu bulalım",
+    "problem": "“Zeynep sahneye çıkmadan önce ellerini ovuşturuyor, ikide bir yutkunuyordu.” Zeynep ne hissediyor?",
+    "adimlar": [
+     {
+      "metin": "Zeynep'in davranışlarını bul.",
+      "islem": "el ovuşturma, yutkunma"
+     },
+     {
+      "metin": "Bu davranışları insanlar ne zaman yapar? Bildiğini ekle.",
+      "islem": "heyecanlanınca, kaygılanınca"
+     },
+     {
+      "metin": "Duygunun adını koy.",
+      "islem": "Zeynep heyecanlı"
+     }
+    ],
+    "sonuc": "Metinde “heyecan” kelimesi yoktu; duyguyu davranışlardan çıkardık."
+   },
+   "soru": {
+    "soru": "“Can, karnesini alınca koşarak eve gitti, kapıdan girer girmez annesine sarıldı.” Can'ın duygusu nedir?",
+    "secenekler": [
+     "Korku",
+     "Öfke",
+     "Sevinç"
+    ],
+    "dogru": 2,
+    "ipucu": "Koşmak ve sarılmak hangi duyguyu gösterir?",
+    "aciklama": "Koşarak eve gitmesi ve annesine sarılması sevincini gösterir."
+   }
+  },
+  {
+   "ad": "Metnin Mesajı",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='16' width='28' height='18' rx='5' fill='#9cc7ff'/><rect x='46' y='16' width='28' height='18' rx='5' fill='#9cc7ff'/><rect x='82' y='16' width='28' height='18' rx='5' fill='#9cc7ff'/><text x='24' y='29' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>K1</text><text x='60' y='29' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>K2</text><text x='96' y='29' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>K3</text><path d='M24 38 L54 60 M60 38 V60 M96 38 L66 60' stroke='#fbf6e6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M28 64 H92 L86 98 H34 Z' fill='#f5c53d'/><text x='60' y='86' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>mesaj</text><text x='60' y='114' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>kanıtlar → mesaj</text></svg>",
+   "aciklama": "Mesaj, yazarın metinle okura vermek istediği düşüncedir; bulduğumuz kanıtları birleştirerek ona ulaşırız.",
+   "ek": "Kitap, bulduğun kanıtlardan hareketle metnin mesajını gerekçesiyle yazmanı ister (s. 78). “Bayrağımızın Altında”nın mesajı: Hür bir vatanda yaşamak, insan için her şeyden değerlidir. Mesaj, 1. temada öğrendiğin ana fikre çok benzer.",
+   "akilda": "Kanıtlar → mesaj",
+   "soru": {
+    "soru": "“Bayrağımızın Altında” metninin mesajı hangisidir?",
+    "secenekler": [
+     "Hür bir vatanda yaşamak her şeyden değerlidir.",
+     "Yangınlar çok tehlikelidir.",
+     "Yaşlı insanlar çabuk yorulur."
+    ],
+    "dogru": 0,
+    "ipucu": "Hatice Nine için hayatta tek önemli şey neydi?",
+    "aciklama": "Nine evinin yanmasını bile önemsemez; tek isteği toprağının bayrağının altında olmasıdır (s. 76). Mesaj: Hür vatan her şeyden değerlidir."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram ne işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Metinde yazmayanı bulmak",
+     "uyeler": [
+      "Yazılan ve Sezdirilen Anlam",
+      "Çıkarım: İpucu + Bildiğin",
+      "Sözün Asıl Anlamı",
+      "Karakterin Duygusunu Çıkarma"
+     ]
+    },
+    {
+     "etiket": "Bulduğunu desteklemek ve toparlamak",
+     "uyeler": [
+      "Kanıtını Göster",
+      "Metnin Mesajı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "“Bayrağımızın Altında” metninin sonunda “Bursa, 11 Ekim” yazar (s. 76). Halide Edip Adıvar bu yazıyı Kurtuluş Savaşı'nın son günlerinde, zaferin sevinci içinde yazmıştır.",
+  "“Mustafa Kemal’in Kağnısı” şiirinde Elif'in kağnısı askerler arasında hızıyla “nam salmıştı”, yani ünlenmişti (s. 101)."
+ ],
+ "akildaKalsin": [
+  "Metin bazı şeyleri yazar, bazılarını sezdirir.",
+  "Çıkarım = ipucu + bildiğin.",
+  "Her çıkarımın bir kanıt cümlesi olmalı.",
+  "Sözün asıl anlamı için sor: Bunu neden böyle söyledi?",
+  "Duygu, davranışlardan çıkarılır.",
+  "Kanıtları birleştir, mesaja ulaş."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Tahmin ile çıkarım aynı şey mi?",
+   "cevap": "Hayır. Tahmin, ipucu olmadan da yapılabilir. Çıkarım ise metindeki ipuçlarına dayanır ve bir kanıt cümlesiyle gösterilebilir."
+  },
+  {
+   "soru": "Bir metinden herkes aynı çıkarımı mı yapar?",
+   "cevap": "Çoğu zaman benzer çıkarımlar yapılır, çünkü ipuçları aynıdır. Ama her biri metindeki bir kanıta dayanmalıdır. Kanıtı olmayan çıkarım yanlış olabilir."
+  },
+  {
+   "soru": "Hatice Nine evi yandığı hâlde neden üzülmüyor?",
+   "cevap": "Çünkü onun için tek önemli şey, öldüğünde toprağının düşman bayrağı altında kalmamasıdır (s. 76). Bayrağına kavuşunca evinin yanması bile önemsiz görünür."
+  },
+  {
+   "soru": "Mesaj ile konu arasındaki fark ne?",
+   "cevap": "Konu, metnin neyi anlattığıdır: “Hatice Nine'nin bayrak sevgisi”. Mesaj ise yazarın bize ne söylemek istediğidir: “Hür bir vatanda yaşamak her şeyden değerlidir.”"
+  },
+  {
+   "soru": "Elif neden Kocabaş'ın yerine kendini koşuyor?",
+   "cevap": "Şiirde “Kalır mı Mustafa Kemal'in kağnısı” diye sorulur (s. 102). Elif, cepheye mermi götüren kağnının yolda kalmasına razı olmaz. Bu davranış, onun kararlılığını ve fedakârlığını gösterir; kitap da bu azmi sorar (s. 104)."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "“Mustafa Kemal’in Kağnısı” şiirinde Elif'in nasıl biri olduğuna dair bir çıkarım yaz. Çıkarımını şiirden bir kanıtla destekle.",
+   "ornekCevap": "Elif çok kararlı ve fedakâr biridir. Kanıtım: Kocabaş ölünce yolda kalmadı, Kocabaş'ın yerine kendini koşup kağnıyı yürüttü.",
+   "anahtarlar": [
+    "kararlı",
+    "fedakâr",
+    "azim",
+    "kanıt",
+    "Kocabaş",
+    "kendini koş"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“Bora'nın annesi çok yorgundu.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "metinBaslik": "Akşam",
+   "metin": [
+    "Bora'nın annesi akşam işten eve döndü.",
+    "Çantasını kapının önüne bıraktı, ayakkabılarını bile çıkarmadan koltuğa çöktü.",
+    "Gözleri kapanıyordu.",
+    "Bora hemen ona bir bardak su getirdi."
+   ],
+   "kanit": [
+    1,
+    2
+   ],
+   "kanitIpucu": "Annenin nasıl davrandığını anlatan cümlelerden birine dokun.",
+   "ipucu": "Metinde “yorgun” kelimesi geçiyor mu? Geçmiyorsa hangi ipuçları yorgunluğu gösteriyor?",
+   "aciklama": "Metinde “yorgun” kelimesi yok. Koltuğa çökmesi ve gözlerinin kapanması yorgunluğu ima ediyor.",
+   "kavram": "Yazılan ve Sezdirilen Anlam",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+     "Anahtar kelime: yorgun.",
+     "Kanıt: Annenin davranışlarını anlatan cümleyi bul.",
+     "Şıkları ele: “Yorgun” kelimesini metinde arıyorsun. Bulamıyorsan ipuçlarından mı anlıyorsun?"
+    ]
+   }
+  },
+  {
+   "soru": "“Bitkiler besinlerini güneş ışığını kullanarak üretir.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 0,
+   "metinBaslik": "Yeşil Fabrikalar",
+   "metin": [
+    "Bitkiler yaprakları sayesinde güneş ışığını yakalar.",
+    "Bitkiler besinlerini güneş ışığını kullanarak üretir.",
+    "Bu olaya fotosentez denir.",
+    "Fotosentez sırasında havaya oksijen verilir."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Yargıdaki sözlerin geçtiği cümleye dokun.",
+   "ipucu": "Yargıyı metindeki cümlelerle tek tek karşılaştır.",
+   "aciklama": "Yargı 2. cümlede kelimesi kelimesine yazıyor; açıkça söylenmiş.",
+   "kavram": "Yazılan ve Sezdirilen Anlam",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+     "Anahtar kelime: besin, güneş ışığı.",
+     "Kanıt: “Besin” kelimesinin geçtiği cümleye dokun.",
+     "Şıkları ele: Bu sözleri metinde aynen bulabiliyor musun, yoksa ipuçlarını birleştirerek mi çıkarıyorsun?"
+    ]
+   }
+  },
+  {
+   "soru": "“Sokaktaki herkes şemsiye açmış, çocuklar su birikintilerinden atlıyordu.” Bu cümleden hangisi çıkarılabilir?",
+   "secenekler": [
+    "Hava güneşli ve sıcaktı.",
+    "Yağmur yağıyordu ya da yeni yağmıştı.",
+    "Okullar tatile girmişti."
+   ],
+   "dogru": 1,
+   "ipucu": "Şemsiye ve su birikintisi neyin ipucu?",
+   "aciklama": "Şemsiyeler ve su birikintileri yağmurun ipuçlarıdır. Okulların tatil olduğuna dair ipucu yok.",
+   "kavram": "Çıkarım: İpucu + Bildiğin"
+  },
+  {
+   "soru": "Çıkarım: “Kahraman çok yorgundu.” Hangisi bu çıkarımın en güçlü kanıtıdır?",
+   "secenekler": [
+    "Sabah kahvaltıda peynir yedi.",
+    "Ayakları onu taşımıyordu; merdivenin başında oturup soluklandı.",
+    "Gökyüzü masmaviydi."
+   ],
+   "dogru": 1,
+   "ipucu": "Hangi cümle kahramanın bedeninin durumunu anlatıyor?",
+   "aciklama": "Ayaklarının onu taşımaması ve oturup soluklanması yorgunluğu gösterir. Öbür cümlelerin yorgunlukla ilgisi yok.",
+   "kavram": "Kanıtını Göster"
+  },
+  {
+   "soru": "Hatice Nine “Dünyada oğlumdan başka dikili ağacım kalmadı.” der (s. 75). Bu sözle ne anlatmak istiyor?",
+   "secenekler": [
+    "Oğlundan başka hiçbir şeyi ve kimsesi kalmadığını",
+    "Bahçesinde ağaç yetiştirdiğini",
+    "Ağaç dikmeyi çok sevdiğini"
+   ],
+   "dogru": 0,
+   "ipucu": "Beş kez evi yanan, göç eden birinin elinde ne kalmış olabilir?",
+   "aciklama": "“Dikili ağacı kalmamak” her şeyini kaybetmek demektir. Nine'nin oğlundan başka hiçbir şeyi kalmamıştır.",
+   "kavram": "Sözün Asıl Anlamı"
+  },
+  {
+   "soru": "Dede torununa “Bu evin direği sensin.” dedi. Dede ne demek istiyor?",
+   "secenekler": [
+    "Evin tahta direğini sen taşıyorsun.",
+    "Evin tamiri sana kaldı.",
+    "Bu evin en güvendiği, dayanağı sensin."
+   ],
+   "dogru": 2,
+   "ipucu": "Direk bir evde ne işe yarar? Dede torununu buna neden benzetiyor?",
+   "aciklama": "Direk evi ayakta tutar. Dede, torununun ailenin dayanağı olduğunu söylüyor.",
+   "kavram": "Sözün Asıl Anlamı"
+  },
+  {
+   "soru": "“Aman Kocabaş, ayağını öpeyim Kocabaş” (s. 102) diye yalvaran Elif'in duygusu hangisidir?",
+   "secenekler": [
+    "Neşe",
+    "Çaresizlik ve telaş",
+    "Can sıkıntısı"
+   ],
+   "dogru": 1,
+   "ipucu": "Kocabaş yolda durmuş, öbür kağnılar geçip gidiyor. Elif neden yalvarıyor?",
+   "aciklama": "Kocabaş durunca Elif cepheye yetişemeyecek diye telaşlanır; yalvarması çaresizliğini gösterir (s. 102).",
+   "kavram": "Karakterin Duygusunu Çıkarma"
+  },
+  {
+   "soru": "“Mustafa Kemal’in Kağnısı” şiirinden hangi mesaj çıkarılabilir?",
+   "secenekler": [
+    "Kağnı yolculuğu çok uzun sürer.",
+    "Öküzlere iyi bakılmazsa yorulur.",
+    "Türk kadını bağımsızlık için her zorluğa göğüs germiştir."
+   ],
+   "dogru": 2,
+   "ipucu": "Elif'in son davranışı neyi gösteriyor? Kitabın sorusunu hatırla (s. 104).",
+   "aciklama": "Elif, öküzü ölünce kendini kağnıya koşup cepheye yürür. Şiir, Türk kadınının bağımsızlık mücadelesindeki azmini anlatır (s. 104).",
+   "kavram": "Metnin Mesajı"
+  },
+  {
+   "soru": "Bu metnin mesajı hangisidir?",
+   "metinBaslik": "Bir Avuç Buğday",
+   "metin": [
+    "Kurtuluş Savaşı yıllarında Anadolu'nun köyleri çok yoksuldu.",
+    "Yine de köylüler ellerindeki son buğdayı, son çorabı cepheye gönderdi.",
+    "Kimi yorgan dikti, kimi kağnısıyla mermi taşıdı.",
+    "Cephedeki askerler, arkalarında bütün bir milletin olduğunu biliyordu."
+   ],
+   "kanit": [
+    1,
+    2,
+    3
+   ],
+   "kanitIpucu": "Halkın cepheye nasıl yardım ettiğini anlatan bir cümleye dokun.",
+   "secenekler": [
+    "Köyler yoksul olduğu için savaş uzun sürdü.",
+    "Zor günlerde birlik olan millet büyük işler başarır.",
+    "Askerler cephede yorgan dikmeyi öğrendi."
+   ],
+   "dogru": 1,
+   "ipucu": "Kanıtları birleştir: Herkes ne yapıyor, askerler neyi biliyor?",
+   "aciklama": "Yoksul köylüler ellerindekini paylaşıyor, herkes bir iş yapıyor ve askerler milletin arkalarında olduğunu biliyor. Mesaj: Birlik olan millet büyük işler başarır.",
+   "kavram": "Metnin Mesajı",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yazarın okura vermek istediği düşünceyi.",
+     "Anahtar kelime: köylüler, cephe, millet.",
+     "Kanıt: Halkın cepheye yardımını anlatan cümleleri bul.",
+     "Şıkları ele: Yazarın söylemediği bir sonucu (savaş uzun sürdü) ve metinde olmayan bilgiyi (askerler yorgan dikti) ele."
+    ]
+   }
+  },
+  {
+   "soru": "Bu metinden hangisi çıkarılabilir?",
+   "metinBaslik": "Pazar Alışverişi",
+   "metin": [
+    "Defne pazardan 2 kilogram elma aldı.",
+    "Elmanın kilogramı 40 liraydı.",
+    "Defne satıcıya 100 lira verdi.",
+    "Satıcı ona para üstü verdi."
+   ],
+   "kanit": [
+    0,
+    1,
+    2
+   ],
+   "kanitIpucu": "Bir sayının geçtiği cümlelerden birine dokun.",
+   "secenekler": [
+    "Defne'ye 20 lira para üstü verildi.",
+    "Defne'ye 60 lira para üstü verildi.",
+    "Defne'nin parası yetmedi."
+   ],
+   "dogru": 0,
+   "ipucu": "Para üstünün kaç lira olduğu yazmıyor. Sayıları birleştirip sen bul.",
+   "aciklama": "2 kilogram × 40 lira = 80 lira. 100 − 80 = 20 lira para üstü. Metin bunu yazmıyor; sayılardan çıkardık.",
+   "kavram": "Çıkarım: İpucu + Bildiğin",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metinde yazmayan ama sayılardan çıkan sonucu.",
+     "Anahtar kelime: kilogram, lira, para üstü.",
+     "Kanıt: Kaç kilogram, kaç lira ve ne kadar para verildiğini yazan cümleleri bul.",
+     "Şıkları ele: Önce elmaların tutarını, sonra para üstünü hesapla. Hesabına uymayan şıkları ele."
+    ]
+   }
+  }
+ ]
+}
