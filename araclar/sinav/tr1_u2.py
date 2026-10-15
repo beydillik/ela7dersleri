@@ -24,7 +24,7 @@ a("u2k1", "Anlamca Çelişen Kelimeler", "secim", soru="Hangi cümlede anlamca �
   secenekler=["Tören yaklaşık bir saat sürdü.", "Mutlaka erken gelmelisin.", "Belki yarın yağmur yağar.", "Hiç şüphesiz bu roman en güzeli olabilir."], dogru=3,
   aciklama=f"“Hiç şüphesiz” kesinlik, “olabilir” ihtimal bildirir; birlikte olmaz {K1}.")
 a("u2k1", "Duyguyu Yansıtan Kelime Seçimi", "dy",
-  ifade="Şair, “Kahroldu Elifçik” yerine “Üzüldü Elifçik” deseydi Elif'in acısı daha güçlü anlatılırdı.", dogru=False,
+  ifade="Şair, Elif'in acısını anlatırken “kahrolmak” yerine “üzülmek” kelimesini seçseydi acı daha güçlü anlatılırdı.", dogru=False,
   duzeltme="“Kahrolmak” daha güçlü bir kelimedir; acıyı daha iyi anlatır.",
   aciklama="“Kahrolmak” çok büyük üzüntüdür. Kelime seçimi duygunun gücünü belirler (s. 102).")
 
