@@ -1,0 +1,318 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Ara Durak 1: Kelimeden Metne",
+ "sayfalar": "Konu 1–3 · s. 75–106",
+ "giris": "Bu temada üç konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce kartlara dokun, hatırlayıp hatırlamadığını söyle. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Üç konu küçükten büyüğe gidiyor. Önce kelimeler arasındaki ilişkileri gördük: eş, zıt, somut, soyut (Konu 1). Sonra metinde yazmayanı ipuçlarından çıkardık (Konu 2). En sonda metnin düzenini tanıdık: olaylar zaman sırasıyla dizilir, önemli bilgi seçilir (Konu 3). Hepsinde aynı yöntem: kanıtı metinde bul.",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Eş anlamlı: farklı yazılır, aynı anlamı verir. Zıt anlamlı: tam karşıtı.",
+    "Somut duyularla algılanır; soyut algılanmaz.",
+    "Kesinlik ile tahmin aynı cümlede olmaz."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Metin bazı şeyleri yazar, bazılarını sezdirir.",
+    "Çıkarım = ipucu + bildiğin; her çıkarımın bir kanıt cümlesi olmalı.",
+    "Kanıtları birleştir, mesaja ulaş."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Kronolojik yapıda ilk olan önce gelir; tarihler ve “önce, sonra, ardından” sırayı gösterir.",
+    "Anahtar kelime konuyu taşır; önemli bilgi: ne oldu, ne zaman oldu?",
+    "Zaman çizelgesi: giriş → tarihler → sonuç."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Kelimeler arası ilişkiyi görmek",
+     "uyeler": [
+      "Eş Anlamlı Kelimeler",
+      "Zıt Anlamlı Kelimeler",
+      "Anlamca Çelişen Kelimeler"
+     ]
+    },
+    {
+     "etiket": "Metinde yazmayanı bulmak",
+     "uyeler": [
+      "Yazılan ve Sezdirilen Anlam",
+      "Çıkarım: İpucu + Bildiğin",
+      "Metnin Mesajı"
+     ]
+    },
+    {
+     "etiket": "Metnin düzenini görmek",
+     "uyeler": [
+      "Sıralı Kronolojik Metin Yapısı",
+      "Zaman İpuçları",
+      "Zaman Çizelgesi"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Metinde “ardından” kelimesi yerine hangisi kullanılabilir?",
+   "metinBaslik": "Bilim Şenliği",
+   "metin": [
+    "Bilim şenliği sabah dokuzda açılış konuşmasıyla başladı.",
+    "Ardından öğrenciler deneylerini ziyaretçilere gösterdi.",
+    "Öğle arasında herkes bahçede piknik yaptı.",
+    "En sonunda en ilginç deneyi seçmek için oylama yapıldı."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "“Ardından” kelimesinin geçtiği cümleye dokun.",
+   "secenekler": [
+    "önce",
+    "sonra",
+    "çünkü"
+   ],
+   "dogru": 1,
+   "ipucu": "“Ardından”, bir olaydan sonra geleni gösteren bir zaman ipucudur. Aynı anlamı veren kelimeyi ara.",
+   "aciklama": "“Ardından” ile “sonra” eş anlamlıdır; ikisi de bir olaydan sonra geleni gösterir. “Önce” zıt anlamlıdır, “çünkü” sebep bildirir.",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Eş Anlamlı Kelimeler"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Zaman İpuçları"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? “Ardından” ile aynı anlamı veren kelimeyi.",
+     "Anahtar kelime: ardından. Bu bir zaman ipucu.",
+     "Kanıt: “Ardından” kelimesinin geçtiği cümleyi bul; açılıştan önce mi sonra mı olmuş?",
+     "Şıkları ele: Zıt anlamlı olanı ve sebep bildireni çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Bu metinden hangisi çıkarılabilir?",
+   "metinBaslik": "Kütüphane Kitabı",
+   "metin": [
+    "Defne pazartesi günü okul kütüphanesinden bir roman aldı.",
+    "Salı ve çarşamba akşamları romanı okudu.",
+    "Perşembe günü son sayfayı bitirdi.",
+    "Cuma günü kitabı kütüphaneye geri verdi."
+   ],
+   "kanit": [
+    0,
+    2,
+    3
+   ],
+   "kanitIpucu": "Bir gün adının geçtiği cümlelerden birine dokun.",
+   "secenekler": [
+    "Defne romanı bir haftadan kısa sürede bitirdi.",
+    "Defne romanı hiç bitiremedi.",
+    "Defne kitabı aldığı gün geri verdi."
+   ],
+   "dogru": 0,
+   "ipucu": "Günleri sırayla bir çizgiye diz: Pazartesi aldı, perşembe bitirdi. Kaç gün geçmiş?",
+   "aciklama": "Pazartesiden perşembeye üç gün geçer; bu bir haftadan kısadır. Metin bunu yazmıyor, günlerden çıkarıyoruz.",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Çıkarım: İpucu + Bildiğin"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Zaman Çizelgesi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metinde yazmayan ama günlerden çıkan sonucu.",
+     "Anahtar kelimeler: aldı, bitirdi, geri verdi ve gün adları.",
+     "Kanıt: Kitabı aldığı ve bitirdiği günleri yazan cümleleri bul.",
+     "Şıkları ele: Metinde yazanla çelişen şıkları çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "“Fatih Sultan Mehmet kuşatmaya çok iyi hazırlanmıştı.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "metinBaslik": "Fethe Doğru",
+   "metin": [
+    "Fatih Sultan Mehmet, kuşatmadan bir yıl önce Boğaz'a Rumeli Hisarı'nı yaptırdı.",
+    "Kuşatma için o güne kadar görülmemiş büyüklükte toplar döktürdü.",
+    "Haliç zincirle kapatılınca gemileri karadan yürütmeyi planladı.",
+    "29 Mayıs 1453'te İstanbul alındı."
+   ],
+   "kanit": [
+    0,
+    1,
+    2
+   ],
+   "kanitIpucu": "Kuşatmadan önce yapılan bir işi anlatan cümleye dokun.",
+   "ipucu": "Metinde “hazırlanmıştı” sözü geçiyor mu? Geçmiyorsa hangi bilgiler hazırlığı gösteriyor?",
+   "aciklama": "Metinde “iyi hazırlanmıştı” yazmıyor. Hisar, toplar ve gemi planı bu hazırlığı ima ediyor.",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Yazılan ve Sezdirilen Anlam"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Sıralı Kronolojik Metin Yapısı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+     "Anahtar kelime: hazırlanmıştı.",
+     "Kanıt: Kuşatmadan önce yapılan işleri anlatan cümleleri bul.",
+     "Şıkları ele: “Hazırlanmıştı” sözünü metinde bulabiliyor musun, yoksa yapılanlardan mı anlıyorsun?"
+    ]
+   }
+  },
+  {
+   "soru": "Metnin anahtar kelimesi hangisidir ve bu kelime nasıl bir kelimedir?",
+   "metinBaslik": "Gökyüzüne Bakan Göz",
+   "metin": [
+    "Teleskop, uzaktaki gökcisimlerini daha yakın ve daha büyük gösteren bir araçtır.",
+    "Galileo, 1609'da teleskobunu gökyüzüne çevirdi.",
+    "Böylece Ay'daki kraterleri ve Jüpiter'in uydularını gördü.",
+    "Bugün dev teleskoplar, gözlemevlerinde evreni incelemek için kullanılıyor."
+   ],
+   "kanit": [
+    0,
+    3
+   ],
+   "kanitIpucu": "Anahtar kelimenin geçtiği cümlelerden birine dokun.",
+   "secenekler": [
+    "teleskop – somut",
+    "merak – soyut",
+    "teleskop – soyut"
+   ],
+   "dogru": 0,
+   "ipucu": "Metinde en sık geçen kelime hangisi? Onu görebilir, dokunabilir misin?",
+   "aciklama": "“Teleskop” metinde sık geçer ve konuyu taşır. Gözle görülüp elle tutulduğu için somuttur.",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Somut ve Soyut Kelimeler"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Anahtar Kelime"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki şey: anahtar kelime ve onun somut mu soyut mu olduğu.",
+     "Anahtar kelime için sor: Metin ne hakkında?",
+     "Kanıt: Bu kelimenin geçtiği cümleleri bul. Onu duyularınla algılayabilir misin?",
+     "Şıkları ele: Önce yanlış anahtar kelimeli şıkkı, sonra yanlış türü çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Bu metnin mesajı hangisidir?",
+   "metinBaslik": "Yüzme Kursu",
+   "metin": [
+    "Kerem, haziranda yüzme kursuna başladığında suya girmekten korkuyordu.",
+    "İlk hafta yalnızca havuzun kenarında ayaklarını salladı.",
+    "İkinci hafta öğretmeninin elini tutarak suya girdi.",
+    "Her gün biraz daha cesaret topladı.",
+    "Ağustosun sonunda havuzu baştan sona tek başına yüzdü."
+   ],
+   "kanit": [
+    3,
+    4
+   ],
+   "kanitIpucu": "Kerem'in nasıl değiştiğini gösteren cümlelerden birine dokun.",
+   "secenekler": [
+    "Yüzme yalnızca yazın öğrenilir.",
+    "Korkular bir günde yok olur.",
+    "Adım adım çalışan, korkularını yenebilir."
+   ],
+   "dogru": 2,
+   "ipucu": "Olayları zaman sırasıyla izle: Kerem başta nasıldı, sonda nasıl oldu?",
+   "aciklama": "Metin, Kerem'in haftalar içinde adım adım ilerleyip korkusunu yendiğini anlatıyor. Mesaj: Adım adım çalışan başarır.",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Metnin Mesajı"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Sıralı Kronolojik Metin Yapısı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yazarın vermek istediği düşünceyi, yani mesajı.",
+     "Anahtar kelimeler: korkuyordu, cesaret, tek başına.",
+     "Kanıt: Başlangıçtaki Kerem ile sondaki Kerem'i karşılaştıran cümleleri bul.",
+     "Şıkları ele: “Bir günde” sözü metindeki haftalarla uyuşuyor mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Paragrafta hangi cümlede zaman bildiren kelimeler anlamca çelişmektedir?",
+   "metinBaslik": "Köy Gezisi",
+   "metin": [
+    "Geçen yaz dedemin köyüne gittik.",
+    "Sabah erkenden yola çıktık, öğleye doğru köye vardık.",
+    "Dün akşam yarın dönmek için eşyalarımızı topladık.",
+    "Ertesi gün köyden ayrıldık."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Geçmiş ile geleceği birlikte söyleyen cümleye dokun.",
+   "secenekler": [
+    "Sabah erkenden yola çıktık.",
+    "Dün akşam yarın dönmek için eşyalarımızı topladık.",
+    "Ertesi gün köyden ayrıldık."
+   ],
+   "dogru": 1,
+   "ipucu": "Hikâye geçen yaz olmuş. Hangi cümlede hem “dün” hem de “yarın” var?",
+   "aciklama": "Olay geçen yaz yaşandı; “dün” ile “yarın” aynı cümlede bu zamanla çelişir. “O akşam, ertesi gün dönmek için…” denmeliydi.",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Anlamca Çelişen Kelimeler"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Zaman İpuçları"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Zaman kelimelerinin birbiriyle çeliştiği cümleyi.",
+     "Anahtar kelimeler: dün, yarın, ertesi gün, geçen yaz.",
+     "Kanıt: İki zaman kelimesini birlikte kullanan cümleyi bul.",
+     "Şıkları ele: Zaman kelimeleri metnin akışına uyan şıkları çıkar."
+    ]
+   }
+  }
+ ]
+}

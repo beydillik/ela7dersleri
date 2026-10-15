@@ -1,0 +1,525 @@
+{
+ "id": "u2k3",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Sıralı Kronolojik Metin Yapısı ve Önemli Bilgiler",
+ "sayfalar": "s. 80–81, 84–88, 105–106",
+ "giris": "Bazı metinler olayları gün gün, yıl yıl anlatır. Bu konuda bu metinleri tanımayı, zaman ipuçlarını bulmayı, anahtar kelimeyi ve önemli bilgiyi seçmeyi, en sonda da bilgileri bir zaman çizelgesine dizmeyi öğreneceğiz. Örnekler “Mustafa 1881-1920 Tarihe Atılan İmza” (s. 85–87) metninden ve Mehmet Âkif Ersoy infografiğinden (s. 106).",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, 1. temada öğrendiğin iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Önemli ve önemsiz bilgi",
+    "sinif": "1. Tema, Konu 3",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='20' width='92' height='30' rx='8' fill='#f5c53d'/><text x='60' y='40' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>ÖNEMLİ</text><rect x='14' y='60' width='42' height='22' rx='6' fill='#55607e'/><rect x='64' y='60' width='42' height='22' rx='6' fill='#55607e'/><text x='35' y='75' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>detay</text><text x='85' y='75' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>detay</text><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>çıkarınca eksik mi?</text></svg>",
+    "akilda": "Çıkarınca eksik kalır mı?",
+    "anlatim": "Önemli bilgi, metinden çıkarınca metnin eksik kalacağı bilgidir. Önemsiz bilgi ise süs gibidir; çıkarınca metin yine anlaşılır.",
+    "sorular": [
+     {
+      "soru": "“Ali sabah 7'de kalktı. Mavi çoraplarını giydi. Okula koşarak gitti.” Hangi bilgi önemsizdir?",
+      "secenekler": [
+       "Ali sabah 7'de kalktı.",
+       "Çoraplarının mavi olması",
+       "Okula gitmesi"
+      ],
+      "dogru": 1,
+      "ipucu": "Hangisini çıkarırsan olay yine anlaşılır?",
+      "aciklama": "Çorapların rengi çıkarılsa da olay anlaşılır; bu bir ayrıntıdır."
+     },
+     {
+      "soru": "Önemli bilgiyi nasıl buluruz?",
+      "secenekler": [
+       "Metindeki en uzun cümleyi seçeriz.",
+       "Çıkarınca metin eksik kalıyor mu diye bakarız.",
+       "İlk kelimeye bakarız."
+      ],
+      "dogru": 1,
+      "ipucu": "“Akılda kalsın” sorusunu hatırla.",
+      "aciklama": "Önemli bilgi çıkarılınca metin eksik kalır."
+     }
+    ]
+   },
+   {
+    "ad": "Metin yapısı ve ipucu kelimeler",
+    "sinif": "1. Tema, Konu 7",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='40' height='26' rx='6' fill='#9cc7ff'/><rect x='64' y='18' width='40' height='26' rx='6' fill='#f5c53d'/><rect x='16' y='54' width='40' height='26' rx='6' fill='#7ad19a'/><rect x='64' y='54' width='40' height='26' rx='6' fill='#f29e7a'/><path d='M56 31 H64 M36 44 V54 M84 44 V54 M56 67 H64' stroke='#fbf6e6' stroke-width='3'/><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>bilgiler nasıl dizilmiş?</text></svg>",
+    "akilda": "İpucu kelime yapıyı gösterir",
+    "anlatim": "Sebep-sonuç metin yapısını öğrenmiştin. “Çünkü, bu yüzden, sonuç olarak” gibi ipucu kelimeler bu yapıyı tanımamızı sağlıyordu. Her metin yapısının kendi ipucu kelimeleri vardır.",
+    "sorular": [
+     {
+      "soru": "Hangisi sebep bildiren bir ipucu ifadesidir?",
+      "secenekler": [
+       "çünkü",
+       "ertesi gün",
+       "ilk olarak"
+      ],
+      "dogru": 0,
+      "ipucu": "Sebep, “neden?” sorusunun cevabıdır.",
+      "aciklama": "“Çünkü” bir olayın sebebini verir."
+     },
+     {
+      "soru": "“Yağmur yağdı. Bu yüzden maç ertelendi.” Burada “bu yüzden” neyi gösterir?",
+      "secenekler": [
+       "Sonucu",
+       "Sebebi",
+       "Bir tarihi"
+      ],
+      "dogru": 0,
+      "ipucu": "Maçın ertelenmesi, yağmurdan sonra gelen bir durum mu?",
+      "aciklama": "“Bu yüzden” sonucu gösterir: maç ertelendi."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Metin Yapısı",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='40' height='26' rx='6' fill='#9cc7ff'/><rect x='64' y='18' width='40' height='26' rx='6' fill='#f5c53d'/><rect x='16' y='54' width='40' height='26' rx='6' fill='#7ad19a'/><rect x='64' y='54' width='40' height='26' rx='6' fill='#f29e7a'/><path d='M56 31 H64 M36 44 V54 M84 44 V54 M56 67 H64' stroke='#fbf6e6' stroke-width='3'/><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>bilgiler nasıl dizilmiş?</text></svg>",
+   "aciklama": "Metin yapısı, bir metindeki bilgilerin nasıl sıralandığını ve düzenlendiğini gösterir.",
+   "ek": "Kitap, önceki yıllarda dört yapı öğrendiğini hatırlatır: öyküleyici, sıralı kronolojik, açıklayıcı ve karşılaştırma/zıtlık. Bu yıl buna sebep-sonuç eklendi (1. Tema, kitabın 38. sayfası). Yapıyı tanırsan önemli bilgiyi daha kolay bulursun.",
+   "akilda": "Bilgiler nasıl dizilmiş?",
+   "soru": {
+    "soru": "Metin yapısını bilmek bize ne kazandırır?",
+    "secenekler": [
+     "Metni daha hızlı ezberlememizi",
+     "Önemli bilgileri daha kolay bulmamızı",
+     "Yazarın yaşını bulmamızı"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartının son cümlesine bak.",
+    "aciklama": "Metin yapısını tanıyınca önemli bilgileri kolayca buluruz."
+   }
+  },
+  {
+   "ad": "Sıralı Kronolojik Metin Yapısı",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 92 H104' stroke='#fbf6e6' stroke-width='3'/><rect x='14' y='80' width='22' height='12' rx='4' fill='#9cc7ff'/><text x='25' y='76' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#f5c53d'>1</text><rect x='38' y='64' width='22' height='28' rx='4' fill='#7ad19a'/><text x='49' y='60' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#f5c53d'>2</text><rect x='62' y='48' width='22' height='44' rx='4' fill='#f5c53d'/><text x='73' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#f5c53d'>3</text><rect x='86' y='32' width='22' height='60' rx='4' fill='#f29e7a'/><text x='97' y='28' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#f5c53d'>4</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>ilk olan önce</text></svg>",
+   "aciklama": "Bu yapıda olaylar ve bilgiler, oluş zamanına göre ilkten sona doğru sıralanır.",
+   "ek": "Kitap bu yapıyı tanımlamaz, “hatırlayınız” der; tanım önceki yıllardan (kitap dışı). Örnek: Mustafa Kemal'in Samsun yolculuğu gün gün anlatılır: 16 Mayıs'ta vapura binilir, 17'sinde İnebolu, 18'inde Sinop, 19 Mayıs'ta Samsun (s. 85–86).",
+   "akilda": "İlk olan önce gelir",
+   "cozum": {
+    "baslik": "Birlikte sıralayalım",
+    "problem": "Karışık verilen olayları zaman sırasına koyalım: Samsun'a çıktı. · Vapura bindi. · Sinop'a uğradı. · İnebolu'ya vardı.",
+    "adimlar": [
+     {
+      "metin": "Önce en başta olanı bul: Yolculuk neyle başlar?",
+      "islem": "1. Vapura bindi"
+     },
+     {
+      "metin": "Sonra yoldaki duraklar gelir. Kitapta önce İnebolu, sonra Sinop var (s. 86).",
+      "islem": "2. İnebolu → 3. Sinop"
+     },
+     {
+      "metin": "En sona yolculuğun bittiği yer kalır.",
+      "islem": "4. Samsun'a çıktı"
+     }
+    ],
+    "sonuc": "Olayları oluş sırasına koyduk. Sıralı kronolojik yapı tam olarak budur."
+   },
+   "soru": {
+    "soru": "Sıralı kronolojik metinde olaylar nasıl sıralanır?",
+    "secenekler": [
+     "Oluş zamanına göre, ilkten sona",
+     "En önemliden en önemsize",
+     "Rastgele"
+    ],
+    "dogru": 0,
+    "ipucu": "“Kronolojik” zamanla ilgilidir. Akılda kalsın cümlesine bak.",
+    "aciklama": "Olaylar oluş sırasına göre, ilkten sona anlatılır."
+   }
+  },
+  {
+   "ad": "Zaman İpuçları",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='44' r='26' fill='none' stroke='#f5c53d' stroke-width='6'/><path d='M60 44 V28 M60 44 L72 50' stroke='#fbf6e6' stroke-width='5' stroke-linecap='round'/><text x='30' y='92' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#9cc7ff'>önce</text><text x='88' y='92' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#7ad19a'>sonra</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f29e7a'>ardından</text></svg>",
+   "aciklama": "Tarihler ve “önce, sonra, ardından, ertesi gün, nihayet” gibi kelimeler bize olayların sırasını gösterir.",
+   "ek": "Bu liste kitap dışıdır; sebep-sonuç yapısındaki ipucu ifadeleri gibi düşün (1. Tema). Kitaptaki metinde de var: “üç günlük bir yolculuğun ardından”, “Nihayet 19 Mayıs” (s. 86).",
+   "akilda": "Tarih + sıra kelimesi",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Ece önce ödevini bitirdi. Ardından parka gitti. Akşam ise kitap okudu.” Bu metindeki zaman ipuçlarını bulalım.",
+    "adimlar": [
+     {
+      "metin": "1. İlk cümlede sırayı gösteren kelimeyi bul.",
+      "soru": {
+       "soru": "İlk cümledeki zaman ipucu hangisidir?",
+       "secenekler": [
+        "ödev",
+        "önce",
+        "bitirdi"
+       ],
+       "dogru": 1,
+       "ipucu": "Hangi kelime olayın sırasını söylüyor?",
+       "aciklama": "“Önce” ilk olayı gösterir."
+      },
+      "islem": "önce"
+     },
+     {
+      "metin": "2. İkinci cümledeki ipucunu bul.",
+      "soru": {
+       "soru": "İkinci cümledeki zaman ipucu hangisidir?",
+       "secenekler": [
+        "parka",
+        "gitti",
+        "ardından"
+       ],
+       "dogru": 2,
+       "ipucu": "Bir olaydan sonra geleni gösteren kelimeyi ara.",
+       "aciklama": "“Ardından” bir önceki olaydan sonra demektir."
+      },
+      "islem": "ardından"
+     },
+     {
+      "metin": "3. Son cümlede de bir ipucu var: akşam.",
+      "islem": "önce → ardından → akşam"
+     }
+    ],
+    "sonuc": "Çok iyi! İpuçlarını sırayla bulunca olayların düzenini gördün."
+   },
+   "soru": {
+    "soru": "Hangisi bir zaman ipucudur?",
+    "secenekler": [
+     "çünkü",
+     "ertesi gün",
+     "ama"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki kelimeler listesine bak.",
+    "aciklama": "“Ertesi gün” olayların sırasını gösterir. “Çünkü” sebep, “ama” karşıtlık bildirir."
+   }
+  },
+  {
+   "ad": "Anahtar Kelime",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='38' cy='48' r='18' fill='none' stroke='#f5c53d' stroke-width='8'/><path d='M55 48 H104 M92 48 v12 M102 48 v9' stroke='#f5c53d' stroke-width='8' stroke-linecap='round' fill='none'/><text x='60' y='98' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#fbf6e6'>konuyu taşır</text></svg>",
+   "aciklama": "Anahtar kelimeler, metnin konusunu taşıyan, metinde sık geçen önemli kelimelerdir.",
+   "ek": "Kitap, Mustafa Kemal metninin anahtar kelimelerini bulup konu ve ana fikirle ilişkisini açıklamanı ister (s. 88). Bu metinde Samsun, Millî Mücadele, bağımsızlık ve miting gibi kelimeler öne çıkar.",
+   "akilda": "Konuyu taşıyan kelime",
+   "soru": {
+    "soru": "Bir metnin anahtar kelimesi genellikle nasıldır?",
+    "secenekler": [
+     "Metinde bir kez geçer, konuyla ilgisi yoktur.",
+     "Her zaman metnin ilk kelimesidir.",
+     "Metinde sık geçer ve konuyu taşır."
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Konuyu taşıyan kelime.",
+    "aciklama": "Anahtar kelime sık geçer ve metnin konusunu taşır."
+   }
+  },
+  {
+   "ad": "Önemli Bilgi ve Detay",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='20' width='92' height='30' rx='8' fill='#f5c53d'/><text x='60' y='40' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>ÖNEMLİ</text><rect x='14' y='60' width='42' height='22' rx='6' fill='#55607e'/><rect x='64' y='60' width='42' height='22' rx='6' fill='#55607e'/><text x='35' y='75' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>detay</text><text x='85' y='75' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>detay</text><text x='60' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>çıkarınca eksik mi?</text></svg>",
+   "aciklama": "Kronolojik metinde önemli bilgi çoğu zaman “ne oldu, ne zaman oldu”dur; detay bilgi ise olayı süsleyen ayrıntıdır.",
+   "ek": "Kitap, önemli bilgilerle detay bilgileri ayırıp önemli olanları metnin akışına göre özetlemeni ister (s. 80). Örnek: “19 Mayıs 1919'da Samsun'a çıktı.” önemlidir. “Vapur ortalama 11 kilometrelik hızla gitti.” detaydır (s. 86).",
+   "akilda": "Ne oldu, ne zaman?",
+   "cozum": {
+    "baslik": "Birlikte ayıralım",
+    "problem": "“Mustafa Kemal 19 Mayıs'ta Samsun'a çıktı. Karaya saat 07.00'de bir sandalla ayak bastı. Heyet Mıntıka Palas Oteli'ne yerleşti.” (s. 86) Hangisi önemli?",
+    "adimlar": [
+     {
+      "metin": "Her cümleyi tek tek çıkar ve sor: Metin eksik kalıyor mu?",
+      "islem": "çıkar → eksik mi?"
+     },
+     {
+      "metin": "Samsun'a çıkışı çıkarırsak olayın kendisi kaybolur.",
+      "islem": "Samsun'a çıkış: önemli"
+     },
+     {
+      "metin": "Saat ve sandal, otelin adı çıkarılınca olay yine anlaşılır.",
+      "islem": "saat, sandal, otel: detay"
+     }
+    ],
+    "sonuc": "Özette yalnızca önemli bilgiyi tutarız: ne oldu, ne zaman oldu."
+   },
+   "soru": {
+    "soru": "Hangisi bir detay bilgidir?",
+    "secenekler": [
+     "Mustafa Kemal 19 Mayıs 1919'da Samsun'a çıktı.",
+     "Karşılayanlar arasında bir hemşire de vardı.",
+     "Millî Mücadele Samsun'da başladı."
+    ],
+    "dogru": 1,
+    "ipucu": "Hangisini çıkarırsan olayın ana çizgisi bozulmaz?",
+    "aciklama": "Karşılayanların kim olduğu ayrıntıdır; ana olay Samsun'a çıkıştır (s. 86)."
+   }
+  },
+  {
+   "ad": "Zaman Çizelgesi",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 60 H111' stroke='#fbf6e6' stroke-width='4'/><path d='M104 52 L112 60 L104 68' stroke='#fbf6e6' stroke-width='4' fill='none'/><circle cx='20' cy='60' r='7' fill='#9cc7ff'/><text x='20' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#9cc7ff'>16</text><circle cx='42' cy='60' r='7' fill='#7ad19a'/><text x='42' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#7ad19a'>17</text><circle cx='64' cy='60' r='7' fill='#f5c53d'/><text x='64' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>18</text><circle cx='86' cy='60' r='7' fill='#f29e7a'/><text x='86' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f29e7a'>19</text><text x='60' y='86' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#fbf6e6'>Mayıs 1919</text><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#fbf6e6'>giriş → tarihler → sonuç</text></svg>",
+   "aciklama": "Kronolojik metindeki önemli bilgileri tarih sırasıyla bir çizgiye dizersek metni anlamak ve özetlemek kolaylaşır.",
+   "ek": "Kitap bunu iki kez yaptırır: Sakarya Zaferi içeriğindeki bilgileri “Giriş – tarihli kutular – Sonuç” düzenine yazdırır (s. 81). Mehmet Âkif Ersoy infografiği de bilgileri 1873'ten 1936'ya yıllarla sıralar (s. 106).",
+   "akilda": "Giriş → tarihler → sonuç",
+   "soru": {
+    "soru": "Zaman çizelgesinde bilgiler nasıl yerleştirilir?",
+    "secenekler": [
+     "Tarih sırasıyla, eskiden yeniye",
+     "Alfabe sırasıyla",
+     "Uzundan kısaya"
+    ],
+    "dogru": 0,
+    "ipucu": "Çizelgenin üstündeki sayılara bak: 16, 17, 18, 19.",
+    "aciklama": "Bilgiler tarih sırasıyla, eskiden yeniye dizilir."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram ne işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Metnin düzenini görmek",
+     "uyeler": [
+      "Metin Yapısı",
+      "Sıralı Kronolojik Metin Yapısı",
+      "Zaman İpuçları"
+     ]
+    },
+    {
+     "etiket": "Önemli bilgiyi bulup düzenlemek",
+     "uyeler": [
+      "Anahtar Kelime",
+      "Önemli Bilgi ve Detay",
+      "Zaman Çizelgesi"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Bandırma vapuru fırtınalı bir denizde üç gün yol aldı ve 19 Mayıs 1919 sabahı şafak vaktinde Samsun'a ulaştı (s. 86).",
+  "Mehmet Âkif Ersoy, İstiklâl Marşı için verilen 500 lira ödülü almadı; parayı bir vakfa bağışladı (s. 106)."
+ ],
+ "akildaKalsin": [
+  "Metin yapısı, bilgilerin nasıl dizildiğini gösterir.",
+  "Kronolojik yapıda ilk olan önce gelir.",
+  "Tarihler ve “önce, sonra, ardından” sırayı gösterir.",
+  "Anahtar kelime konuyu taşır.",
+  "Önemli bilgi: ne oldu, ne zaman oldu?",
+  "Zaman çizelgesi: giriş → tarihler → sonuç."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Tarih yazmayan bir metin de kronolojik olabilir mi?",
+   "cevap": "Evet. “Önce, sonra, ertesi sabah, en sonunda” gibi kelimeler de sırayı gösterir. Bir yemek tarifi ya da bir günün anlatımı tarih olmadan da sıralıdır."
+  },
+  {
+   "soru": "Bir metin hem kronolojik hem sebep-sonuç olabilir mi?",
+   "cevap": "Olabilir. Mustafa Kemal metni olayları gün gün anlatır; aynı metinde İzmir'in işgalinin halkı uyandırdığını, yani bir sonucu da anlatır (s. 86)."
+  },
+  {
+   "soru": "İnfografikte yıllar neden büyük yazılır?",
+   "cevap": "Göz önce büyük yazıyı görür. Yılları büyük yazınca sırayı bir bakışta anlarsın (s. 106)."
+  },
+  {
+   "soru": "Nutuk hangi cümleyle başlar?",
+   "cevap": "Kitaba göre Mustafa Kemal Nutuk'a Samsun'a çıktığı tarihi söyleyerek başlar: 19 Mayıs 1919 (s. 86). Yani Nutuk da kronolojik bir başlangıç yapar."
+  },
+  {
+   "soru": "Zaman çizelgesini başka derslerde de kullanabilir miyim?",
+   "cevap": "Evet. Sosyal Bilgiler'de padişahların dönemlerini, Fen'de bir yıldızın doğumdan ölümüne evrelerini çizelgeye dizebilirsin. Sırayı görmek ezberi kolaylaştırır."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Dün okuldan çıkışından yatana kadar yaptıklarını sıralı kronolojik yapıyla 4 cümlede anlat. En az üç zaman ipucu kullan.",
+   "ornekCevap": "Önce okuldan çıkıp servise bindim. Eve gelince ilk olarak yemek yedim. Ardından ödevlerimi yaptım. En sonunda kitap okuyup uyudum.",
+   "anahtarlar": [
+    "önce",
+    "sonra",
+    "ardından",
+    "ilk",
+    "en sonunda",
+    "akşam"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir metinde bilgilerin nasıl sıralanıp düzenlendiğini gösteren şey hangisidir?",
+   "secenekler": [
+    "Metin yapısı",
+    "Metnin başlığı",
+    "Anahtar kelime"
+   ],
+   "dogru": 0,
+   "ipucu": "İlk bilgi kartının tanımını hatırla.",
+   "aciklama": "Bilgilerin nasıl düzenlendiğini metin yapısı gösterir.",
+   "kavram": "Metin Yapısı"
+  },
+  {
+   "soru": "Hangisi sıralı kronolojik yapıyla yazılmış bir metne en uygun konudur?",
+   "secenekler": [
+    "Kedi ile köpeğin benzer ve farklı yönleri",
+    "Fırtınanın sebepleri",
+    "Bir bilim insanının doğumundan ölümüne hayatı"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisi zaman sırasıyla anlatılır?",
+   "aciklama": "Bir hayat, doğumdan ölüme yıl yıl anlatılır. Bu kronolojik yapıdır. Öbürleri karşılaştırma ve sebep-sonuç yapısıdır.",
+   "kavram": "Sıralı Kronolojik Metin Yapısı"
+  },
+  {
+   "soru": "Mehmet Âkif Ersoy infografiğinde (s. 106) olaylar hangi sırayla verilir?",
+   "secenekler": [
+    "Doğdu → Safahat şiirlerini yayımlamaya başladı → Meclise seçildi → İstiklâl Marşı'nı yazdı",
+    "Meclise seçildi → Doğdu → İstiklâl Marşı'nı yazdı → Safahat şiirlerini yayımlamaya başladı",
+    "İstiklâl Marşı'nı yazdı → Meclise seçildi → Doğdu → Safahat şiirlerini yayımlamaya başladı"
+   ],
+   "dogru": 0,
+   "ipucu": "Kronolojik yapıda her zaman en eski olay başta olur. Önce doğum gelir.",
+   "aciklama": "Yıllar: 1873 doğum, 1911 Safahat şiirleri, 1920 Meclis, 1921 İstiklâl Marşı (s. 106).",
+   "kavram": "Sıralı Kronolojik Metin Yapısı"
+  },
+  {
+   "soru": "Hangi kelime bir zaman ipucu değildir?",
+   "secenekler": [
+    "ardından",
+    "nihayet",
+    "çünkü"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisi sırayı değil, sebebi gösterir?",
+   "aciklama": "“Çünkü” sebep bildirir; sebep-sonuç yapısının ipucudur. Öbür ikisi sırayı gösterir.",
+   "kavram": "Zaman İpuçları"
+  },
+  {
+   "soru": "“Mitingler İstanbul'da yapıldı. Mitinglere herkes katıldı. Mitingde siyah bayraklar dalgalandı.” Bu metnin anahtar kelimesi hangisidir?",
+   "secenekler": [
+    "İstanbul",
+    "bayrak",
+    "miting"
+   ],
+   "dogru": 2,
+   "ipucu": "Her cümlede geçen kelime hangisi?",
+   "aciklama": "“Miting” her cümlede geçiyor ve konuyu taşıyor.",
+   "kavram": "Anahtar Kelime"
+  },
+  {
+   "soru": "Samsun yolculuğunu özetlerken hangi bilgiyi çıkarabiliriz?",
+   "secenekler": [
+    "Yolculuğun 16 Mayıs 1919'da başladığını",
+    "Mustafa Kemal'in 19 Mayıs'ta Samsun'a çıktığını",
+    "Heyetin kaldığı otelin yataklarının komşulardan getirildiğini"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisini çıkarırsan olayın ne olduğu ve ne zaman olduğu yine anlaşılır?",
+   "aciklama": "Yatakların nereden geldiği bir ayrıntıdır. Başlangıç ve varış tarihleri önemlidir (s. 85–86).",
+   "kavram": "Önemli Bilgi ve Detay"
+  },
+  {
+   "soru": "Zaman çizelgesi: 16 Mayıs vapura biniş → 17 Mayıs İnebolu → ? → 19 Mayıs Samsun. Boşluğa ne gelir?",
+   "secenekler": [
+    "18 Mayıs Sinop",
+    "15 Mayıs İstanbul",
+    "20 Mayıs Ankara"
+   ],
+   "dogru": 0,
+   "ipucu": "Boşluk 17 ile 19 arasında. Hangi gün?",
+   "aciklama": "17'den sonra, 19'dan önce 18 Mayıs gelir: Sinop (s. 86).",
+   "kavram": "Zaman Çizelgesi"
+  },
+  {
+   "soru": "Metne göre olaylar hangi sırayla gerçekleşmiştir?",
+   "secenekler": [
+    "Gemiler Haliç'e indirildi → Rumeli Hisarı yapıldı → Kuşatma başladı",
+    "Rumeli Hisarı yapıldı → Kuşatma başladı → Gemiler Haliç'e indirildi",
+    "Kuşatma başladı → Rumeli Hisarı yapıldı → Şehir alındı"
+   ],
+   "dogru": 1,
+   "ipucu": "Tarihlere bak: Hangi yıl ve hangi gün önce geliyor?",
+   "aciklama": "1452 (hisar) 1453'ten önce gelir. 6 Nisan kuşatma, 22 Nisan gemiler, 29 Mayıs fetih.",
+   "kavram": "Sıralı Kronolojik Metin Yapısı",
+   "metinBaslik": "İstanbul'un Fethi",
+   "metin": [
+    "Fatih Sultan Mehmet, İstanbul'u almaya karar verince 1452'de Boğaz'ın kıyısına Rumeli Hisarı'nı yaptırdı.",
+    "Ertesi yıl, 6 Nisan 1453'te kuşatma başladı.",
+    "Haliç'in girişi zincirle kapalı olduğu için 22 Nisan'da gemiler karadan yürütülerek Haliç'e indirildi.",
+    "Kuşatma yaklaşık iki ay sürdü.",
+    "Nihayet 29 Mayıs 1453'te şehir alındı."
+   ],
+   "kanit": [
+    0,
+    1,
+    2
+   ],
+   "kanitIpucu": "Tarih geçen cümlelerden birine dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Olayların oluş sırasını.",
+     "Anahtar kelimeler: hisar, kuşatma, gemiler. Her birinin tarihini bul.",
+     "Kanıt: Tarih yazan cümleleri bul; yılı ve günü karşılaştır.",
+     "Şıkları ele: Sırası tarihlere uymayan şıkları çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Metne göre besin, mideden çıktıktan sonra nereye gider?",
+   "secenekler": [
+    "Yemek borusuna",
+    "İnce bağırsağa",
+    "Kalın bağırsağa"
+   ],
+   "dogru": 1,
+   "ipucu": "Mideden söz eden cümleden sonraki zaman ipucunu bul.",
+   "aciklama": "“Ardından ince bağırsağa geçer.” cümlesi mideden sonraki durağı söylüyor.",
+   "kavram": "Zaman İpuçları",
+   "metinBaslik": "Bir Lokmanın Yolculuğu",
+   "metin": [
+    "Sindirim, ağızda başlar; lokma önce dişlerle parçalanır.",
+    "Sonra yutulan lokma yemek borusundan mideye iner.",
+    "Midede bir süre kalan besin, ardından ince bağırsağa geçer.",
+    "Besinlerin çoğu ince bağırsakta kana geçer.",
+    "En son, sindirilemeyen artıklar kalın bağırsağa ulaşır."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "“Mide” ve bir zaman ipucunun birlikte geçtiği cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Mideden HEMEN sonraki durağı.",
+     "Anahtar kelime: mide. Bir de “sonra, ardından” gibi ipuçlarına bak.",
+     "Kanıt: Midede kalan besinin nereye geçtiğini söyleyen cümleyi bul.",
+     "Şıkları ele: Mideden önce gelen yeri ve en sondaki yeri çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Bu metin özetlenirken hangi bilgi çıkarılabilir?",
+   "secenekler": [
+    "Fidan dikiminin kasımda yapıldığı",
+    "Fidanların kırmızı kovalarla sulandığı",
+    "Öğrencilerin baharda fidanların filizlendiğini gördüğü"
+   ],
+   "dogru": 1,
+   "ipucu": "Hangi bilgi çıkarılınca olayın ne olduğu ve ne zaman olduğu yine anlaşılır?",
+   "aciklama": "Kovaların rengi süs gibi bir ayrıntıdır. Ne zaman dikildiği ve sonunda ne olduğu önemlidir.",
+   "kavram": "Önemli Bilgi ve Detay",
+   "metinBaslik": "Okulumuzun Fidanları",
+   "metin": [
+    "Kasım ayında okulumuzda fidan dikme etkinliği yapıldı.",
+    "Önce bahçe görevlisi çukurları açtı.",
+    "Ardından her sınıf kendi fidanını dikti.",
+    "Fidanları kırmızı kovalarla suladık.",
+    "Baharda fidanların filizlendiğini görünce çok sevindik."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Çıkarınca hiçbir şeyin eksik kalmayacağı cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Özetten ÇIKARILABİLECEK bilgiyi, yani detayı.",
+     "Anahtar kelime: özet. Özette “ne oldu, ne zaman oldu” kalır.",
+     "Kanıt: Her cümleyi çıkarıp dene: Hangisi çıkınca olay yine anlaşılıyor?",
+     "Şıkları ele: Tarih ve sonuç bildiren şıklar önemlidir."
+    ]
+   }
+  }
+ ]
+}

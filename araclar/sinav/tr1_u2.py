@@ -53,4 +53,37 @@ a("u2k2", "Karakterin Duygusunu Çıkarma", "eslestir", soru="Davranışları g�
 a("u2k2", "Metnin Mesajı", "kisa", soru="Yazarın metinle okura vermek istediği düşünceye ne ad verilir? (Bu konudaki adıyla yaz.)",
   yanit="mesaj", kabul=["ana fikir", "anafikir"],
   aciklama="Mesaj, yazarın vermek istediği düşüncedir; ana fikre çok benzer.")
+
+# --- Konu 3: Sıralı kronolojik metin yapısı ve önemli bilgiler
+K3 = "(s. 80–81, 85–88, 106)"
+a("u2k3", "Metin Yapısı", "secim", soru="Metin yapısıyla ilgili aşağıdaki ifadeler verilmiştir.",
+  onculler=["Metin yapısı, bilgilerin metinde nasıl düzenlendiğini gösterir.", "Kronolojik yapıda tarihler ve sıra bildiren kelimeler ipucudur.", "Metin yapısını bilmek önemli bilgiyi bulmayı kolaylaştırır."],
+  kok="Yukarıdakilerden hangileri doğrudur?", secenekler=ONC, dogru=3,
+  aciklama="Üçü de doğru: Yapıyı tanıyan, önemli bilgiyi kolay bulur.")
+a("u2k3", "Sıralı Kronolojik Metin Yapısı", "dy",
+  ifade="Sıralı kronolojik metinlerde olaylar en sondan başa doğru anlatılır.", dogru=False,
+  duzeltme="Olaylar oluş sırasına göre, ilkten sona doğru anlatılır.",
+  aciklama=f"Kronolojik yapıda ilk olan önce gelir {K3}.")
+a("u2k3", "Zaman İpuçları", "bosluk", havuz=["çünkü", "bu yüzden"], cumleler=[
+  {"c": "Lokma ___ ağızda parçalanır.", "cevap": "önce"},
+  {"c": "Mideden geçen besin ___ ince bağırsağa ulaşır.", "cevap": "ardından"},
+  {"c": "Uzun bir yolculuktan sonra ___ Samsun'a varıldı.", "cevap": "nihayet"}],
+  aciklama="Önce, ardından, nihayet olayların sırasını gösterir.")
+a("u2k3", "Zaman Çizelgesi", "eslestir", soru="Samsun yolculuğunda tarihleri olaylarla eşleştir.", ciftler=[
+  {"sol": "16 Mayıs 1919", "sag": "Bandırma vapuruna binildi."},
+  {"sol": "17 Mayıs 1919", "sag": "İnebolu'ya gelindi."},
+  {"sol": "18 Mayıs 1919", "sag": "Sinop'a gelindi."},
+  {"sol": "19 Mayıs 1919", "sag": "Samsun'a çıkıldı."}],
+  aciklama="Yolculuk gün gün anlatılır: vapur, İnebolu, Sinop, Samsun (s. 85–86).")
+a("u2k3", "Önemli Bilgi ve Detay", "dytablo", soru="Samsun yolculuğunu özetleyeceksin. Bilgi özette kalmalıysa D, detaysa Y seç.", ifadeler=[
+  {"s": "Mustafa Kemal 19 Mayıs 1919'da Samsun'a çıktı.", "d": True},
+  {"s": "Karaya saat 07.00'de bir sandalla ayak bastı.", "d": False},
+  {"s": "Bu gün, Millî Mücadele'nin ilk günü sayılır.", "d": True},
+  {"s": "Otelin yatakları komşu evlerden getirildi.", "d": False}],
+  aciklama="Özette “ne oldu, ne zaman oldu” kalır; saat ve yatak gibi ayrıntılar çıkar (s. 86).")
+a("u2k3", "Anahtar Kelime", "secim",
+  metin=["Mehmet Âkif Ersoy, Millî Mücadele yıllarında şiirleriyle milletine güç verdi.", "İstiklâl Marşı'nı yazdı ve Türk milletine armağan etti.", "Şiirleri Safahat adlı eserde toplandı."],
+  soru="Bu metnin konusunu en iyi taşıyan anahtar kelime grubu hangisidir?",
+  secenekler=["yıl – güç – eser", "Mehmet Âkif – İstiklâl Marşı – şiir", "millet – armağan – ad", "Safahat – yedi – kitap"], dogru=1,
+  aciklama="Metin, Mehmet Âkif'i ve şiirlerini, özellikle İstiklâl Marşı'nı anlatır (s. 106).")
 H.yaz()
