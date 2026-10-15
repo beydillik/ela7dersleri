@@ -1,0 +1,406 @@
+{
+ "id": "u3t3",
+ "tur": "tarama",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Tema Sonu Taraması",
+ "sayfalar": "Konu 1–8 · s. 122–168",
+ "giris": "İletişim ve Sosyal İlişkiler temasını bitirdin! Bu taramada sekiz konunun hepsine kısaca bakacağız. Önce kartlara dokun, hatırlayıp hatırlamadığını söyle. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bu temanın konusu iletişimdi. Önce metni anlamayı çalıştın: hikâyede duygular ve bölümler, kelime ve ifadeler, bilgilendirici metnin bölümleri, iki metni ve bir grafiği karşılaştırmak (Konu 1–4). Sonra yazının küçük ama önemli parçalarını öğrendin: fiilin zamanı, pekiştirme, ünlem, kısa çizgi ve eğik çizgi (Konu 5–7). En sonda şiiri biçimi, ahengi ve söz sanatlarıyla okudun (Konu 8). Hepsinde aynı soru var: Yazar bunu nasıl söylemiş ve ne demek istemiş?",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3",
+  "u3k4",
+  "u3k5",
+  "u3k6",
+  "u3k7",
+  "u3k8"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Duygunun bir sebebi vardır: Neden böyle hissetti?",
+    "Karakterin gözünden bak: Onun yerinde olsaydım?",
+    "Yeni bölüm, olayların yönü değişince başlar."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Eş sesli kelimenin anlamı cümleden anlaşılır.",
+    "Deyim kalıplaşmıştır; kalıp ifade bir durumun hazır sözüdür.",
+    "Nesnel ifade kanıtlanır; öznel ifade kişisel görüştür."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Giriş tanıtır, gelişme açıklar, sonuç toparlar.",
+    "Çünkü, oysa, bu yüzden bölümleri bağlar.",
+    "Yolu bulmak için ipucu kelimeyi ara: gibi, daha, örneğin."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Önce ölçütü seç: Neye göre bakıyorum?",
+    "Ortak yön benzerlik, ayrı yön farklılıktır.",
+    "Grafikte bir öncekine bak; yargıyı sayıyla kanıtla."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Öncesi -di, -miş, -iyordu; anı -iyor, -mekte.",
+    "Sonrası -ecek; süreklilik -r, -mez.",
+    "Zaman kelimesi ile ek uyuşmalı."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Pekiştirme anlamı güçlendirir ve bitişik yazılır: sapasağlam.",
+    "İkileme ayrı, pekiştirme bitişik.",
+    "Alaylı sözden hemen sonra (!) gelir."
+   ]
+  },
+  {
+   "konu": "u3k7",
+   "maddeler": [
+    "Kısa çizgi: ile, arasında, -den -e (Ankara-Bakü).",
+    "Eğik çizgi: adres, tarih, ekin biçimleri (14/5, 12/04/2025).",
+    "İle mi? Kısa. Adres, tarih, ek mi? Eğik."
+   ]
+  },
+  {
+   "konu": "u3k8",
+   "maddeler": [
+    "Dört mısralık bölüm dörtlüktür; mısra sonundaki ses benzerliği kafiyedir.",
+    "“Gibi” benzetme, insan gibi davranma kişileştirme, olamayacak kadar büyük abartmadır.",
+    "Şiirin öğüdünden değeri bul."
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Metni anlamak",
+     "uyeler": [
+      "Duygunun Sebebi",
+      "Karakterin Gözünden Bakmak",
+      "Giriş",
+      "Yolu Metinde Bulma"
+     ]
+    },
+    {
+     "etiket": "Kelime ve karşılaştırma",
+     "uyeler": [
+      "Deyim",
+      "Öznel ve Nesnel İfade",
+      "Benzerlik ve Farklılık",
+      "Grafik Okuma"
+     ]
+    },
+    {
+     "etiket": "Zaman, yazım ve noktalama",
+     "uyeler": [
+      "Gerçekleşme Anından Sonrası",
+      "Pekiştirmeler Bitişik Yazılır",
+      "Kısa Çizgi: Arasında, Ve, İle"
+     ]
+    },
+    {
+     "etiket": "Şiir",
+     "uyeler": [
+      "Kafiye ve Ahenk",
+      "Dizede Abartma",
+      "Şiirin Öğüdü ve Değerler"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Zeynep'in sabahki üzüntüsünün sebebi hangi zamanda gerçekleşmiştir?",
+   "secenekler": [
+    "Gerçekleşme anından öncesinde: dün akşam",
+    "Gerçekleşme anında: öğle arasında",
+    "Gerçekleşme anından sonrasında: yarın"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce üzüntünün sebebini bul, sonra o cümlenin zaman kelimesine ve fiilin ekine bak.",
+   "aciklama": "Sebep, kedinin kaybolmasıdır. “Dün akşam” ve “kaybolmuş” (-miş) gerçekleşme anından öncesini gösterir.",
+   "metinBaslik": "Kayıp Kedi",
+   "metin": [
+    "Zeynep sabah okula üzgün geldi.",
+    "Dün akşam kedisi kaybolmuş.",
+    "Öğle arasında annesi aradı ve kedinin bulunduğunu söyledi.",
+    "Zeynep o andan sonra bütün gün güldü."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Zeynep'in neden üzgün olduğunu söyleyen cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Duygunun Sebebi"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Gerçekleşme Anından Öncesi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Üzüntünün sebebi ne zaman olmuş?",
+     "Anahtar kelimeler: üzgün, sebep, zaman.",
+     "Kanıt: Üzüntünün sebebini söyleyen cümleyi bul; zaman kelimesine ve ekine bak.",
+     "Şıkları ele: Öğle arası sevinçli haber zamanıdır; “yarın” metinde var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "“Öyle sevindi ki ayakları yere değmedi.” cümlesiyle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Kişileştirme vardır; ayaklar insan gibi davranır.",
+    "Bir deyimle çok sevinmek anlatılmıştır.",
+    "Kişi gerçek anlamda havada uçmaktadır."
+   ],
+   "dogru": 1,
+   "ipucu": "“Ayakları yere değmemek” kalıplaşmış bir sözdür. Gerçek anlamıyla mı kullanılmış?",
+   "aciklama": "“Ayakları yere değmemek” çok sevinmek anlamında bir deyimdir; ayaklar insan dışı bir varlık değildir.",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Deyim"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Dizede Kişileştirme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Cümledeki kalıplaşmış sözü bul.",
+     "Bu söz gerçek anlamda mı, mecaz anlamda mı?",
+     "Kişileştirme için insan dışı bir varlık insan gibi davranmalı. Burada öyle bir varlık var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Tabloya göre aşağıdakilerden hangisi söylenemez?",
+   "secenekler": [
+    "Eylül-Kasım arasında kitap sayısı her ay artmıştır.",
+    "Kasım'dan Aralık'a kitap sayısı azalmıştır.",
+    "Kitap sayısı dört ay boyunca hep artmıştır."
+   ],
+   "dogru": 2,
+   "ipucu": "Kısa çizgiyi “-den -e” diye oku. Aralık satırını bir öncekiyle karşılaştır.",
+   "aciklama": "Kasım'da 25, Aralık'ta 20 kitap var: azalma olmuş. Sayı hep artmamıştır.",
+   "metin": [
+    "Tablo, sınıfımızın kütüphaneden ödünç aldığı kitapları gösteriyor."
+   ],
+   "tablo": {
+    "baslik": "Ödünç alınan kitaplar",
+    "basliklar": [
+     "Ay",
+     "Kitap sayısı"
+    ],
+    "satirlar": [
+     [
+      "Eylül",
+      "12"
+     ],
+     [
+      "Ekim",
+      "18"
+     ],
+     [
+      "Kasım",
+      "25"
+     ],
+     [
+      "Aralık",
+      "20"
+     ]
+    ]
+   },
+   "kanit": [
+    "t3",
+    "t2"
+   ],
+   "kanitIpucu": "Söylenemez soruyor: Yanlış yargıyı çürüten satıra dokun. Aralık satırına bak.",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Artış ve Azalma"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Kısa Çizgi: -den -e"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Söylenemez: tabloya uymayan yargıyı.",
+     "Anahtar kelimeler: arttı, azaldı; “Eylül-Kasım” = Eylül'den Kasım'a.",
+     "Kanıt: Her ayı bir öncekiyle karşılaştır.",
+     "Şıkları ele: Hangi şık bir azalmayı görmezden geliyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Bu dörtlükle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "İkinci ve dördüncü mısralar arasında kafiye vardır; pekiştirmeli kelimeler bitişik yazılmıştır.",
+    "Dörtlükte hiç kafiye yoktur.",
+    "Pekiştirmeli kelimeler yanlış, ayrı yazılmıştır."
+   ],
+   "dogru": 0,
+   "ipucu": "İkinci ve dördüncü mısranın son kelimelerine bak. “yemyeşil, masmavi, tertemiz” nasıl yazılmış?",
+   "aciklama": "“yok” ile “çok” arasında ses benzerliği var: kafiye. Pekiştirmeler bitişik yazılmış: yemyeşil, masmavi, tertemiz.",
+   "metinBaslik": "Bahar",
+   "metin": [
+    "Bahar geldi, dağlar yemyeşil,",
+    "Gökyüzü masmavi, bulut yok,",
+    "Derenin suyu tertemiz akar,",
+    "Kuşların sesi şen ve çok."
+   ],
+   "kanit": [
+    1,
+    3
+   ],
+   "kanitIpucu": "Kafiyeli mısralardan birine dokun: Son kelimelere bak.",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Kafiye ve Ahenk"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Pekiştirmeler Bitişik Yazılır"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Dörtlüğe uyan doğru yargıyı.",
+     "Anahtar kelimeler: kafiye, pekiştirme.",
+     "Kanıt: Son kelimeleri benzer sesle biten mısraları bul.",
+     "Şıkları ele: Pekiştirmeli kelimeler bitişik mi, ayrı mı yazılmış?"
+    ]
+   }
+  },
+  {
+   "soru": "Metne göre hangisi doğrudur?",
+   "secenekler": [
+    "Elif pencereleri yalnızca bir kez açmıştır.",
+    "Elif'in her sabah yaptığı işler bir alışkanlıktır; teşekkür onu sevindirmiştir.",
+    "Öğretmen Elif'e her gün teşekkür eder."
+   ],
+   "dogru": 1,
+   "ipucu": "“açar, sular” fiillerindeki -r eki neyi gösterir? Elif teşekkürden sonra nasıl girdi?",
+   "aciklama": "“açar, sular” süreklilik bildirir: alışkanlık. Elif'in gülümsemesinin sebebi teşekkürdür.",
+   "metinBaslik": "Sınıfın Bahçıvanı",
+   "metin": [
+    "Elif her sabah sınıfa ilk gelen öğrencidir.",
+    "Pencereleri açar, çiçekleri sular.",
+    "Öğretmeni bir gün ona teşekkür etti.",
+    "Elif ertesi sabah sınıfa gülümseyerek girdi."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Elif'in her sabah yaptığı işleri anlatan cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Yargının Sürekliliği"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Duygunun Sebebi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metne uyan doğru bilgiyi.",
+     "Anahtar kelimeler: her sabah, açar, sular, teşekkür.",
+     "Kanıt: Elif'in her gün yaptığı işleri anlatan cümleyi bul; ekine bak.",
+     "Şıkları ele: “bir kez” ve “her gün teşekkür” metinde var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "“Şair, okurun az konuşup çok dinlemesini istiyor.” Bu yargı dörtlükte açıkça mı yazıyor, ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "ipucu": "“az konuş, çok dinle” sözleri dörtlükte birebir geçiyor mu? Hangi mısra bunu sezdiriyor?",
+   "aciklama": "Dörtlükte “az konuş” sözü yok; “El iki söylerse sen birin söyle” mısrası bunu sezdiriyor.",
+   "metinBaslik": "Öğüt (2. dörtlük) — Karacaoğlan",
+   "metin": [
+    "Mecliste ârif ol, kelâmı dinle",
+    "El iki söylerse sen birin söyle",
+    "Elinden geldikçe iyiliğ eyle",
+    "Hatıra dokunup yıkıcı olma."
+   ],
+   "kanit": [
+    1,
+    0
+   ],
+   "kanitIpucu": "Başkası konuşunca senin ne kadar konuşacağını söyleyen mısraya dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "Şiirin Öğüdü ve Değerler"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Metindeki Anlam ve Sözlük Anlamı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargı açıkça mı yazıyor, sezdiriliyor mu?",
+     "Anahtar kelimeler: az konuşmak, dinlemek.",
+     "Kanıt: “iki söylerse … birin söyle” mısrasını bul.",
+     "Şıkları ele: Bu sözler mısrada aynen geçiyor mu, yoksa anlamdan mı çıkıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "“Kitap, insanın en sadık dostu gibidir; ona ne zaman dönsen seni bekler.” cümlesiyle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Tanık gösterme yolu kullanılmış; abartma da var.",
+    "Sayısal veri kullanılmış; söz sanatı yok.",
+    "Benzetme yolu kullanılmış; “bekler” sözüyle kişileştirme de yapılmış."
+   ],
+   "dogru": 2,
+   "ipucu": "“gibi” kelimesine ve “bekler” fiiline bak. Beklemek kime ait bir davranıştır?",
+   "aciklama": "Kitap dosta benzetilmiş (“gibi”); beklemek insana ait bir davranış olduğu için kişileştirme de var.",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Yolu Metinde Bulma"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Dizede Kişileştirme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Düşünceyi geliştirme yolunun ipucu kelimesini ara: gibi, örneğin, daha, sayı.",
+     "Sonra insan dışındaki bir varlığın insan gibi davranıp davranmadığına bak.",
+     "İki bilgiyi birlikte doğru veren şıkkı seç."
+    ]
+   }
+  }
+ ]
+}

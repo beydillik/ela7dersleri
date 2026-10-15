@@ -837,6 +837,120 @@
    ],
    "dogru": 2,
    "aciklama": "“-den” ile “-dan” aynı ekin iki biçimidir (s. 168)."
+  },
+  {
+   "id": "t3-43",
+   "konu": "u3k8",
+   "kavram": "Şiirin Bölümleri ve Mısra Sayısı",
+   "tur": "bosluk",
+   "havuz": [
+    "paragraf",
+    "üç"
+   ],
+   "cumleler": [
+    {
+     "c": "“Öğüt” şiiri beş ___ oluşur.",
+     "cevap": "dörtlükten"
+    },
+    {
+     "c": "Bir dörtlükte ___ mısra bulunur.",
+     "cevap": "dört"
+    },
+    {
+     "c": "Şiirin her satırına ___ denir.",
+     "cevap": "mısra"
+    }
+   ],
+   "aciklama": "“Öğüt” 5 dörtlüktür; her dörtlükte 4 mısra vardır (s. 156)."
+  },
+  {
+   "id": "t3-44",
+   "konu": "u3k8",
+   "kavram": "Kafiye ve Ahenk",
+   "tur": "secim",
+   "soru": "“El âriftir yoklar senin bendini / Dağıtırlar tuzağını fendini / Alçaklarda otur, gözet kendini” (Karacaoğlan) Bu mısraların sonundaki ses benzerliğine ne denir?",
+   "secenekler": [
+    "Kişileştirme",
+    "Benzetme",
+    "Kafiye",
+    "Abartma"
+   ],
+   "dogru": 2,
+   "aciklama": "bendini, fendini, kendini: Mısra sonlarındaki ses benzerliği kafiyedir (s. 156)."
+  },
+  {
+   "id": "t3-45",
+   "konu": "u3k8",
+   "kavram": "İki Şiiri Biçimce Karşılaştırma",
+   "tur": "dytablo",
+   "soru": "“Öğüt” ve “Söz Söyle” şiirleri için doğruysa D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "İki şiir de dörtlüklerden oluşur.",
+     "d": true
+    },
+    {
+     "s": "İki şiirin mısraları aynı hece sayısındadır.",
+     "d": false
+    },
+    {
+     "s": "İki şiirde de mısra sonlarında ses benzerliği vardır.",
+     "d": true
+    }
+   ],
+   "aciklama": "İkisi de dörtlüklü ve kafiyeli; “Öğüt” 11, “Söz Söyle” 8 hecelidir (s. 156, 159)."
+  },
+  {
+   "id": "t3-46",
+   "konu": "u3k8",
+   "kavram": "Dizede Abartma",
+   "tur": "dy",
+   "ifade": "“Şüheda fışkıracak toprağı sıksan, şüheda!” (Mehmet Âkif Ersoy) dizesinde abartma vardır.",
+   "dogru": true,
+   "aciklama": "Toprak sıkılınca şehit çıkmaz; şehitlerin çokluğu büyütülerek anlatılmış (s. 160)."
+  },
+  {
+   "id": "t3-47",
+   "konu": "u3k8",
+   "kavram": "Dizede Benzetme",
+   "tur": "eslestir",
+   "soru": "Cümleyi içindeki söz sanatıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Bulutlar pamuk gibi yumuşacıktı.",
+     "sag": "Benzetme"
+    },
+    {
+     "sol": "Kapı gıcırdayarak sızlandı.",
+     "sag": "Kişileştirme"
+    },
+    {
+     "sol": "Öyle güldük ki kahkahamız Ay'dan duyuldu.",
+     "sag": "Abartma"
+    }
+   ],
+   "aciklama": "“Gibi” benzetme, insan gibi davranma kişileştirme, olamayacak kadar büyük abartmadır."
+  },
+  {
+   "id": "t3-48",
+   "konu": "u3k8",
+   "kavram": "Şiirin Öğüdü ve Değerler",
+   "tur": "secim",
+   "soru": "“Öğüt” şiiriyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Şair iyilik yapmayı öğütler.",
+    "Şair alçak gönüllü olmayı öğütler.",
+    "Şair her zaman çok konuşmayı öğütler."
+   ],
+   "kok": "Yukarıdakilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Şair çok konuşmayı değil, az konuşup dinlemeyi öğütler (s. 156, 158)."
   }
  ]
 }

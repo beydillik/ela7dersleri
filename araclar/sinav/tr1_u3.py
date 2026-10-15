@@ -195,4 +195,31 @@ a("u3k7", "Eğik Çizgi: Ekin Biçimleri", "secim", soru="Hangisinde eğik çizg
   secenekler=["Adresi Kızılay/Ankara diye yazdı.", "Söyleşi 12/04/2025 tarihinde yapılacak.", "Bu konuda “-den/-dan” ekinin biçimlerini öğrendik.", "Daire numarası 14/5'tir."], dogru=2,
   aciklama="“-den” ile “-dan” aynı ekin iki biçimidir (s. 168).")
 
+# --- Konu 8: Şiir — biçim, ahenk ve söz sanatları (Karacaoğlan ve Âkif dizeleri: Kemal'in izniyle)
+a("u3k8", "Şiirin Bölümleri ve Mısra Sayısı", "bosluk", havuz=["paragraf", "üç"], cumleler=[
+  {"c": "“Öğüt” şiiri beş ___ oluşur.", "cevap": "dörtlükten"},
+  {"c": "Bir dörtlükte ___ mısra bulunur.", "cevap": "dört"},
+  {"c": "Şiirin her satırına ___ denir.", "cevap": "mısra"}],
+  aciklama="“Öğüt” 5 dörtlüktür; her dörtlükte 4 mısra vardır (s. 156).")
+a("u3k8", "Kafiye ve Ahenk", "secim", soru="“El âriftir yoklar senin bendini / Dağıtırlar tuzağını fendini / Alçaklarda otur, gözet kendini” (Karacaoğlan) Bu mısraların sonundaki ses benzerliğine ne denir?",
+  secenekler=["Kişileştirme", "Benzetme", "Kafiye", "Abartma"], dogru=2,
+  aciklama="bendini, fendini, kendini: Mısra sonlarındaki ses benzerliği kafiyedir (s. 156).")
+a("u3k8", "İki Şiiri Biçimce Karşılaştırma", "dytablo", soru="“Öğüt” ve “Söz Söyle” şiirleri için doğruysa D, yanlışsa Y seç.", ifadeler=[
+  {"s": "İki şiir de dörtlüklerden oluşur.", "d": True},
+  {"s": "İki şiirin mısraları aynı hece sayısındadır.", "d": False},
+  {"s": "İki şiirde de mısra sonlarında ses benzerliği vardır.", "d": True}],
+  aciklama="İkisi de dörtlüklü ve kafiyeli; “Öğüt” 11, “Söz Söyle” 8 hecelidir (s. 156, 159).")
+a("u3k8", "Dizede Abartma", "dy",
+  ifade="“Şüheda fışkıracak toprağı sıksan, şüheda!” (Mehmet Âkif Ersoy) dizesinde abartma vardır.", dogru=True,
+  aciklama="Toprak sıkılınca şehit çıkmaz; şehitlerin çokluğu büyütülerek anlatılmış (s. 160).")
+a("u3k8", "Dizede Benzetme", "eslestir", soru="Cümleyi içindeki söz sanatıyla eşleştir.", ciftler=[
+  {"sol": "Bulutlar pamuk gibi yumuşacıktı.", "sag": "Benzetme"},
+  {"sol": "Kapı gıcırdayarak sızlandı.", "sag": "Kişileştirme"},
+  {"sol": "Öyle güldük ki kahkahamız Ay'dan duyuldu.", "sag": "Abartma"}],
+  aciklama="“Gibi” benzetme, insan gibi davranma kişileştirme, olamayacak kadar büyük abartmadır.")
+a("u3k8", "Şiirin Öğüdü ve Değerler", "secim", soru="“Öğüt” şiiriyle ilgili aşağıdaki ifadeler verilmiştir.",
+  onculler=["Şair iyilik yapmayı öğütler.", "Şair alçak gönüllü olmayı öğütler.", "Şair her zaman çok konuşmayı öğütler."],
+  kok="Yukarıdakilerden hangileri doğrudur?", secenekler=ONC, dogru=1,
+  aciklama="Şair çok konuşmayı değil, az konuşup dinlemeyi öğütler (s. 156, 158).")
+
 H.yaz()
