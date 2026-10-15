@@ -1,0 +1,392 @@
+{
+ "id": "u2t4",
+ "tur": "tarama",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Tema Sonu Taraması",
+ "sayfalar": "Konu 1–9 · s. 75–110",
+ "giris": "Bir Hilal Uğruna temasını bitirdin! Bu taramada dokuz konunun hepsine kısaca bakacağız. Önce kartlara dokun, hatırlayıp hatırlamadığını söyle. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bu temada üç beceri öğrendin. Önce anlamı bulmayı: kelimeler arası ilişkiler, çıkarım ve olayların sırası (Konu 1–3). Sonra bizi etkileyen yolları: görsel, müzik ve ikna teknikleri (Konu 4–6). En sonda kelimeyi cümleye bağlayan çekim eklerini (Konu 7–9). Bir metni okurken üçü birlikte çalışır: Ne anlatıyor, nasıl etkiliyor, kelimeler nasıl kurulmuş?",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3",
+  "u2k4",
+  "u2k5",
+  "u2k6",
+  "u2k7",
+  "u2k8",
+  "u2k9"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Eş anlamlı: farklı yazılır, aynı anlam (muhacir = göçmen).",
+    "Zıt anlamlı: tam karşıtı; “-me” eki zıt anlam yapmaz.",
+    "Somut duyuyla algılanır, soyut algılanmaz."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Metin bazı şeyleri yazar, bazılarını sezdirir.",
+    "Çıkarım = ipucu + bildiğin.",
+    "Her çıkarımın bir kanıt cümlesi olmalı."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Kronolojik yapıda ilk olan önce gelir.",
+    "Tarihler ve “önce, sonra, ardından” sırayı gösterir.",
+    "Önemli bilgi konuyu taşır; detay süsler."
+   ]
+  },
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "Görseli okurken sor: Kim, nerede, ne yapıyor?",
+    "Yazı ve ses aynı şeyi söylüyorsa eş anlam oluşturur.",
+    "Müzik ve görüntü sözü güçlendiriyorsa anlamı destekler."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "İkna etmek: birini bir düşünceye razı etmek.",
+    "Karşılıkta bulunma, sevgi, tutarlılık.",
+    "Otorite: uzmanın sözüne inanılır."
+   ]
+  },
+  {
+   "konu": "u2k6",
+   "maddeler": [
+    "Toplumsal kanıt: herkes yapıyor.",
+    "Kıtlık: az kaldı. Karşıtlık: zıddıyla değer kazanır.",
+    "Uzlaşma: ortak çözüm."
+   ]
+  },
+  {
+   "konu": "u2k7",
+   "maddeler": [
+    "Çoğul -ler; hâl ekleri -i, -e, -de, -den.",
+    "İlgi eki -in: kimin, neyin?",
+    "İyelik eki: kime ait? (kalemim)"
+   ]
+  },
+  {
+   "konu": "u2k8",
+   "maddeler": [
+    "Fiil = kök + kip eki + kişi eki (dön-dü-ler).",
+    "-di gördüm, -miş duydum; -iyor, -ecek, -r.",
+    "Kişi eki işi kimin yaptığını söyler."
+   ]
+  },
+  {
+   "konu": "u2k9",
+   "maddeler": [
+    "İstek -e, gereklilik -meli, şart -se, emir: Gel!",
+    "Soru eki “mi” ayrı yazılır.",
+    "-ler isimde çoğul, fiilde kişi eki."
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Anlamı bulmak",
+     "uyeler": [
+      "Eş Anlamlı Kelimeler",
+      "Çıkarım: İpucu + Bildiğin",
+      "Metnin Mesajı"
+     ]
+    },
+    {
+     "etiket": "Bilgiyi sıraya koymak",
+     "uyeler": [
+      "Sıralı Kronolojik Metin Yapısı",
+      "Zaman İpuçları",
+      "Zaman Çizelgesi"
+     ]
+    },
+    {
+     "etiket": "Görüntü ve iknayla etkilemek",
+     "uyeler": [
+      "Anlamı Destekleme",
+      "Otorite",
+      "Kıtlık"
+     ]
+    },
+    {
+     "etiket": "Kelimeyi cümleye bağlamak",
+     "uyeler": [
+      "Çoğul Eki",
+      "Yönelme Hâli",
+      "Geçmiş Zaman",
+      "Emir Kipi"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Metindeki olayların sırasını gösteren ipucu hangisidir ve olaylar hangi zamanla anlatılmıştır?",
+   "secenekler": [
+    "“Bugün” — gelecek zaman (-ecek)",
+    "“Ardından” — geçmiş zaman (-di)",
+    "“Ankara'da” — geniş zaman (-r)"
+   ],
+   "dogru": 1,
+   "ipucu": "Sırayı gösteren kelimeyi ve fiillerin sonundaki eki bul.",
+   "aciklama": "“Ardından” sıra bildiren zaman ipucudur. Fiiller (çıktı, toplandı, açıldı) “-di” ile geçmiş zamandadır.",
+   "metinBaslik": "Millî Mücadele'nin İlk Adımları",
+   "metin": [
+    "1919'da Mustafa Kemal Samsun'a çıktı.",
+    "Ardından Erzurum ve Sivas'ta kongreler toplandı.",
+    "1920'de Ankara'da Büyük Millet Meclisi açıldı.",
+    "Bugün bu olayları tarih derslerinde öğreniyoruz."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Olayların sırasını gösteren bir kelimenin geçtiği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Zaman İpuçları"
+    },
+    {
+     "konu": "u2k8",
+     "kavram": "Geçmiş Zaman"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Sıra ipucunu ve fiillerin zamanını.",
+     "Anahtar kelimeler: önce, sonra, ardından; -di, -ecek, -r.",
+     "Kanıt: Bir olayın ötekinden sonra geldiğini söyleyen cümleyi bul.",
+     "Şıkları ele: “Ankara'da” bir yer mi, sıra mı? Fiiller ileride mi olacak, olmuş mu?"
+    ]
+   }
+  },
+  {
+   "soru": "“Son üç gün!” sözünde hangi ikna tekniği kullanılmıştır ve son cümledeki “getir” fiili hangi kiptedir?",
+   "secenekler": [
+    "Otorite — istek kipi",
+    "Uzlaşma — şart kipi",
+    "Kıtlık — emir kipi"
+   ],
+   "dogru": 2,
+   "ipucu": "Zamanın azlığı hangi teknik? “Getir!” bir buyruk mu?",
+   "aciklama": "Zamanın az kaldığını söylemek kıtlıktır. “Getir” bir buyruk bildirir; emir kipidir.",
+   "metinBaslik": "Kütüphane Afişi",
+   "metin": [
+    "Okul kütüphanesi kitap kampanyası başlattı.",
+    "Sınıfların çoğu şimdiden kitap getirdi.",
+    "Kampanya cuma günü bitiyor; son üç gün!",
+    "Sen de bir kitap getir, bir arkadaşını sevindir!"
+   ],
+   "kanit": [
+    2,
+    3
+   ],
+   "kanitIpucu": "“Son üç gün!” sözünün ya da “getir” fiilinin geçtiği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "Kıtlık"
+    },
+    {
+     "konu": "u2k9",
+     "kavram": "Emir Kipi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Bir ikna tekniğini ve bir fiilin kipini.",
+     "Anahtar kelimeler: son üç gün, getir.",
+     "Kanıt: Zamanın azlığını ya da buyruğu söyleyen cümleyi bul.",
+     "Şıkları ele: Afişte bir uzman ya da ortak çözüm var mı? “-e, -se” ekleri “getir”de var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "“Muhacirler köye döndü.” cümlesinde “muhacir” kelimesinin eş anlamlısı ve “-ler” ekinin görevi hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "göçmen — çoğul eki",
+    "göçmen — kişi eki",
+    "yerli — çoğul eki"
+   ],
+   "dogru": 0,
+   "ipucu": "Muhacir ne demek? “-ler” isme mi geldi, fiile mi?",
+   "aciklama": "Muhacir = göçmen (s. 77). “Muhacir” isimdir; isme gelen “-ler” çoğul ekidir.",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Eş Anlamlı Kelimeler"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "Çoğul Eki"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Önce kelimenin anlamını düşün: muhacir kimdir?",
+     "“Yerli” muhacirin eşi mi, zıttı mı?",
+     "“-ler” isme gelirse ne anlam katar?"
+    ]
+   }
+  },
+  {
+   "soru": "“Ayşe Teyze komşularının yardımına çok duygulandı.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "metinBaslik": "Fırtınadan Sonra",
+   "metin": [
+    "Ayşe Teyze'nin bahçesindeki ağaçlar fırtınada devrilmişti.",
+    "Komşular sabah erkenden ellerinde fidanlarla kapısına geldi.",
+    "Ayşe Teyze'nin gözleri doldu, hiçbir şey söyleyemedi."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Ayşe Teyze'nin duygusunu gösteren davranışın geçtiği cümleye dokun.",
+   "ipucu": "Metinde “duygulandı” kelimesi geçiyor mu? Geçmiyorsa hangi davranış bunu gösteriyor?",
+   "aciklama": "“Duygulandı” yazmıyor. Gözlerinin dolması ve bir şey söyleyememesi duygusunu sezdiriyor.",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Karakterin Duygusunu Çıkarma"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Duyguyu Yansıtan Kelime Seçimi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+     "Anahtar kelime: duygulandı.",
+     "Kanıt: Ayşe Teyze'nin ne yaptığını anlatan cümleyi bul.",
+     "Şıkları ele: “Duygulandı” kelimesini metinde bulabiliyor musun, yoksa davranıştan mı anlıyorsun?"
+    ]
+   }
+  },
+  {
+   "soru": "Belgeselde hangi ikna tekniği kullanılmıştır ve görüntü ile müzik sözle nasıl bir ilişki kurar?",
+   "secenekler": [
+    "Karşılıkta bulunma — tek başına anlam oluşturur",
+    "Otorite — anlamı destekler",
+    "Sevgi — sözle ilgisi yoktur"
+   ],
+   "dogru": 1,
+   "ipucu": "Konuşan kim? Görüntü ve müzik ne söylüyor?",
+   "aciklama": "Konuşan, otuz yıllık uzmanlığını öne sürüyor: otorite. Kaplumbağa görüntüsü ve hüzünlü müzik sözü güçlendiriyor.",
+   "metinBaslik": "Bir Belgeselden",
+   "metin": [
+    "Bir belgeselde deniz bilimci bir kadın konuşuyor.",
+    "“Otuz yıldır denizleri inceliyorum; plastik atıklar deniz canlılarına zarar veriyor.” diyor.",
+    "Bu sırada ekranda plastiğe takılmış bir kaplumbağa gösteriliyor.",
+    "Arkada hüzünlü bir müzik çalıyor."
+   ],
+   "kanit": [
+    1,
+    2,
+    3
+   ],
+   "kanitIpucu": "Konuşanın uzmanlığını ya da görüntü ve müziği anlatan cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Otorite"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Anlamı Destekleme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Bir ikna tekniğini ve görüntü-müzik ilişkisini.",
+     "Anahtar kelimeler: otuz yıldır, kaplumbağa, hüzünlü müzik.",
+     "Kanıt: Konuşanın kendisi hakkında ne söylediğini bulan cümleyi bul.",
+     "Şıkları ele: Görüntü ve müzik sözle aynı yönde mi, ondan bağımsız mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde önemsiz bir detay veren cümleyle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Gereklilik kipi vardır; en önemli kuraldır.",
+    "Emir kipi vardır; deneyin sırasını verir.",
+    "Gereklilik kipi yoktur; gözlüğün rengi güvenlik için önemsizdir."
+   ],
+   "dogru": 2,
+   "ipucu": "Hangi cümle çıkarılsa güvenlik kuralları eksik kalmaz?",
+   "aciklama": "Gözlüğün rengi bir detaydır. Öteki cümleler “-meli” ile güvenlik kuralı verir.",
+   "metinBaslik": "Laboratuvar Kuralları",
+   "metin": [
+    "Deney yapmadan önce koruyucu gözlüğümüzü takmalıyız.",
+    "Gözlüğün rengi mavi ya da yeşil olabilir.",
+    "Kimyasal maddelere çıplak elle dokunmamalıyız.",
+    "Deney bitince masayı temizlemeliyiz."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Çıkarılsa kurallar eksik kalmayacak cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Önemli Bilgi ve Detay"
+    },
+    {
+     "konu": "u2k9",
+     "kavram": "Gereklilik Kipi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Önemsiz detay veren cümlenin özelliğini.",
+     "Anahtar kelimeler: önemsiz detay, -meli.",
+     "Kanıt: Güvenlikle ilgisi olmayan bilgiyi veren cümleyi bul.",
+     "Şıkları ele: O cümlede “-meli” eki var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "“Esaretin karanlığından bağımsızlığın aydınlığına çıktık.” cümlesinde hangi ikna tekniği vardır ve “esaretin” kelimesi hangi eki almıştır?",
+   "secenekler": [
+    "Karşıtlık — ilgi eki",
+    "Kıtlık — iyelik eki",
+    "Uzlaşma — yönelme hâl eki"
+   ],
+   "dogru": 0,
+   "ipucu": "Esaret ile bağımsızlık, karanlık ile aydınlık nasıl kelimeler? “Neyin karanlığı?” diye sor.",
+   "aciklama": "Zıt kavramlar yan yana kullanılmış: karşıtlık. “Neyin karanlığı? Esaretin”: “-in” ilgi ekidir.",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "Karşıtlık"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "İlgi Eki"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Cümlede birbirinin zıttı olan kelimeleri bul.",
+     "Zıt kavramları yan yana koymak hangi teknik?",
+     "“Esaretin karanlığı” sözünde “Neyin?” diye sor."
+    ]
+   }
+  }
+ ]
+}
