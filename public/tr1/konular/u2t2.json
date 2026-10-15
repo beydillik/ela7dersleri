@@ -1,0 +1,325 @@
+{
+ "id": "u2t2",
+ "tur": "tarama",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Ara Durak 2: Görmek ve İkna Etmek",
+ "sayfalar": "Konu 4–6 · s. 85–100",
+ "giris": "Üç konu daha bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce kartlara dokun, hatırlayıp hatırlamadığını söyle. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Üç konunun ortak sorusu şu: Bir içerik bizi nasıl etkiler? Görseller, müzik ve yazılar anlamı taşır ya da güçlendirir (Konu 4). İkna teknikleri ise bizi bir düşünceye yöneltir (Konu 5 ve 6). Afişlerde ve videolarda ikisi bir aradadır; görsel çoğu zaman tekniği destekler.",
+ "kapsar": [
+  "u2k4",
+  "u2k5",
+  "u2k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "Görseli okurken sor: Kim, nerede, ne yapıyor?",
+    "Yazı ve ses aynı şeyi söylüyorsa eş anlam; sözü güçlendiriyorsa anlamı destekleme.",
+    "Bir öge yalnız başına da anlam oluşturabilir."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "Karşılıkta bulunma: iyiliğe iyilikle karşılık.",
+    "Sevgi: sevdiğinin ricası kırılmaz. Tutarlılık: söz ve davranış aynı.",
+    "Otorite: uzmanın sözüne inanılır."
+   ]
+  },
+  {
+   "konu": "u2k6",
+   "maddeler": [
+    "Toplumsal kanıt: herkes yapıyor. Kıtlık: az kaldı.",
+    "Karşıtlık: zıddıyla değer kazanır. Uzlaşma: ortak çözüm.",
+    "Tekniği bulmak için sor: Konuşan neye dayanıyor?"
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kavram neyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Yazı, ses ve görüntünün işi",
+     "uyeler": [
+      "Eş Anlam Oluşturma",
+      "Anlamı Destekleme",
+      "Tek Başına Anlam Oluşturma"
+     ]
+    },
+    {
+     "etiket": "İnsanlar arası bağa dayanan ikna",
+     "uyeler": [
+      "Karşılıkta Bulunma",
+      "Sevgi (Hoşlanma)"
+     ]
+    },
+    {
+     "etiket": "Güvene dayanan ikna",
+     "uyeler": [
+      "Tutarlılık",
+      "Otorite",
+      "Uzlaşma"
+     ]
+    },
+    {
+     "etiket": "Çokluğa, azlığa ya da zıtlığa dayanan ikna",
+     "uyeler": [
+      "Toplumsal Kanıt",
+      "Kıtlık",
+      "Karşıtlık"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Afişteki görseller hangi ikna tekniğini destekliyor?",
+   "secenekler": [
+    "Karşıtlık",
+    "Otorite",
+    "Uzlaşma"
+   ],
+   "dogru": 0,
+   "ipucu": "Afişin iki yarısında ne var? Birbirine benziyor mu, zıt mı?",
+   "aciklama": "Gri ve dumanlı şehir ile yeşil ve temiz şehir yan yana konmuş; görseller karşıtlık tekniğini destekliyor.",
+   "metinBaslik": "Çevre Afişi",
+   "metin": [
+    "Afiş ikiye bölünmüş.",
+    "Sol yarıda dumanlı bacaları ve gri gökyüzüyle bir şehir çizilmiş.",
+    "Sağ yarıda ise ağaçlarla dolu, mavi gökyüzü altında yeşil bir şehir var.",
+    "Altta büyük harflerle “Hangisinde yaşamak istersin?” yazıyor."
+   ],
+   "kanit": [
+    1,
+    2,
+    3
+   ],
+   "kanitIpucu": "İki şehirden birini anlatan cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Anlamı Destekleme"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Karşıtlık"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Görsellerin desteklediği ikna tekniğini.",
+     "Anahtar kelimeler: sol yarı, sağ yarı, hangisinde.",
+     "Kanıt: Afişin iki yarısında neyin çizildiğini anlatan cümleleri bul.",
+     "Şıkları ele: Afişte bir uzman ya da ortak çözüm var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Videoyu hazırlayanlar çocukları ikna etmek için en çok hangi tekniğe güvenmiştir?",
+   "secenekler": [
+    "Kıtlık",
+    "Sevgi (hoşlanma)",
+    "Tutarlılık"
+   ],
+   "dogru": 1,
+   "ipucu": "Videoda konuşan kim? Çocuklar onu seviyor mu?",
+   "aciklama": "Çocukların çok sevdiği masalcı rica ediyor; çocuklar sevdikleri kişinin isteğini kolay kabul eder.",
+   "metinBaslik": "Diş Fırçalama Videosu",
+   "metin": [
+    "Videoda çocukların en sevdiği masalcı Nine görünüyor.",
+    "Nine gülümseyerek “Canım torunlarım, benim için dişlerinizi her akşam fırçalar mısınız?” diyor.",
+    "Arkada neşeli bir şarkı çalıyor.",
+    "Ekranın altında dişini fırçalayan çocuk çizimleri beliriyor."
+   ],
+   "kanit": [
+    0,
+    1
+   ],
+   "kanitIpucu": "Videoda konuşan kişiyi ve onun ricasını anlatan cümlelerden birine dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Sevgi (Hoşlanma)"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Anlamı Destekleme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? En çok güvenilen tekniği.",
+     "Anahtar kelimeler: en sevdiği, canım torunlarım.",
+     "Kanıt: Kimin, nasıl rica ettiğini anlatan cümleyi bul.",
+     "Şıkları ele: Videoda “az kaldı” ya da söz-davranış uyumu var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Konuşmacı hangi iki tekniği birlikte kullanmıştır?",
+   "secenekler": [
+    "Kıtlık ve karşıtlık",
+    "Sevgi ve uzlaşma",
+    "Otorite ve toplumsal kanıt"
+   ],
+   "dogru": 2,
+   "ipucu": "Konuşmacı kendisi hakkında ne söylüyor? Başkaları hakkında ne söylüyor?",
+   "aciklama": "“30 yıldır orman mühendisiyim” otorite, “binlerce gönüllü fidan dikti” toplumsal kanıttır.",
+   "metinBaslik": "Fidan Günü Konuşması",
+   "metin": [
+    "Ben otuz yıldır orman mühendisi olarak çalışıyorum.",
+    "Ağaçlar havayı temizler ve toprağın kaymasını önler.",
+    "Geçen yıl ülkemizin dört bir yanında binlerce gönüllü fidan dikti.",
+    "Bu yıl siz de bize katılın!"
+   ],
+   "kanit": [
+    0,
+    2
+   ],
+   "kanitIpucu": "Konuşmacının kendini tanıttığı ya da başkalarının ne yaptığını söylediği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Otorite"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Toplumsal Kanıt"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Birlikte kullanılan İKİ tekniği.",
+     "Anahtar kelimeler: otuz yıldır, binlerce gönüllü.",
+     "Kanıt: Konuşmacının uzmanlığını ve başkalarının yaptığını anlatan cümleleri bul.",
+     "Şıkları ele: İkisi de metinde olan şıkkı bul."
+    ]
+   }
+  },
+  {
+   "soru": "Afişin başlığına ve görseline bakınca hangi ikna tekniğinin kullanıldığı tahmin edilebilir?",
+   "secenekler": [
+    "Kıtlık",
+    "Uzlaşma",
+    "Karşılıkta bulunma"
+   ],
+   "dogru": 0,
+   "ipucu": "Başlık ve kum saati neyin az olduğunu gösteriyor?",
+   "aciklama": "“Son Fırsat!” başlığı ve kumu bitmek üzere olan saat, zamanın az kaldığını gösteriyor; bu kıtlıktır.",
+   "metinBaslik": "Kitap Fuarı Afişi",
+   "metin": [
+    "Afişin en üstünde kırmızı harflerle “Son Fırsat!” yazıyor.",
+    "Ortada kumunun çoğu aşağı akmış büyük bir kum saati çizilmiş.",
+    "Kum saatinin yanında renkli kitap yığınları görülüyor.",
+    "En altta fuarın yeri ve adresi yazıyor."
+   ],
+   "kanit": [
+    0,
+    1
+   ],
+   "kanitIpucu": "Başlığı ya da kum saatini anlatan cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Başlık ve Görselden Tahmin"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Kıtlık"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Başlık ve görselden tahmin edilen tekniği.",
+     "Anahtar kelimeler: son fırsat, kum saati.",
+     "Kanıt: Afişin başlığını ve ortadaki çizimi anlatan cümleleri bul.",
+     "Şıkları ele: Afişte bir iyiliğin karşılığı ya da ortak çözüm var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "“Selin'in sözleri ile davranışları tutarlıdır.” Bu yargı metinde açıkça yazıyor mu, yoksa ima mı ediliyor?",
+   "ima": true,
+   "dogru": 1,
+   "metinBaslik": "Çevre Kulübü Albümü",
+   "metin": [
+    "Çevre kulübü başkanı Selin, her toplantıda “Doğayı korumalıyız.” der.",
+    "Kulübün albümünde her yıl çekilmiş fotoğrafları var.",
+    "Fotoğrafların hepsinde Selin ya fidan dikiyor ya da sahilde çöp topluyor.",
+    "Kulübe her yıl daha çok öğrenci katılıyor."
+   ],
+   "kanit": [
+    0,
+    2
+   ],
+   "kanitIpucu": "Selin'in ne söylediğini ya da fotoğraflarda ne yaptığını anlatan cümleye dokun.",
+   "ipucu": "Metinde “tutarlı” kelimesi geçiyor mu? Geçmiyorsa söz ve fotoğraflar birbirini tutuyor mu?",
+   "aciklama": "“Tutarlı” kelimesi yazmıyor. Selin'in sözü ile fotoğraflardaki davranışı birbirini tuttuğu için bu ima ediliyor.",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Tutarlılık"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Görseldeki İpuçları"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yargının metinde aynen yazıp yazmadığını.",
+     "Anahtar kelime: tutarlı.",
+     "Kanıt: Selin'in sözünü ve fotoğraflardaki davranışını anlatan cümleleri bul.",
+     "Şıkları ele: “Tutarlı” kelimesini metinde bulabiliyor musun, yoksa söz ile fotoğrafları karşılaştırarak mı anlıyorsun?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde hangi ikna tekniği kullanılmamıştır?",
+   "secenekler": [
+    "Uzlaşma",
+    "Karşılıkta bulunma",
+    "Kıtlık"
+   ],
+   "dogru": 2,
+   "ipucu": "Önce metinde kullanılan iki tekniği bul. Kalan şık cevaptır.",
+   "aciklama": "Ahmet ortak çözüm önerdi (uzlaşma); komşu sınıf geçmişteki yardıma karşılık verdi (karşılıkta bulunma). Azlıktan söz edilmiyor.",
+   "metinBaslik": "Tiyatro Salonu",
+   "metin": [
+    "Geçen yıl Ahmet, komşu sınıfa tiyatro dekorunda yardım etmişti.",
+    "Bu yıl iki sınıf da aynı gün salonu kullanmak istedi.",
+    "Ahmet “Salonu sabah siz, öğleden sonra biz kullanalım.” dedi.",
+    "Komşu sınıf “Geçen yıl bize yardım etmiştin, tabii ki!” diye cevap verdi."
+   ],
+   "kanit": [
+    2,
+    3
+   ],
+   "kanitIpucu": "Olumsuz soru: Metinde KULLANILAN tekniklerden birini gösteren cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "Uzlaşma"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Karşılıkta Bulunma"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Kullanılmayan tekniği. Kökteki olumsuz ifadeyi işaretle.",
+     "Anahtar kelimeler: sabah siz öğleden sonra biz, geçen yıl yardım.",
+     "Kanıt: Ahmet'in önerisini ve komşu sınıfın cevabını anlatan cümleleri bul.",
+     "Şıkları ele: Metinde kullanılan iki tekniği çıkar."
+    ]
+   }
+  }
+ ]
+}

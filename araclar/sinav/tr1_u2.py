@@ -86,4 +86,88 @@ a("u2k3", "Anahtar Kelime", "secim",
   soru="Bu metnin konusunu en iyi taşıyan anahtar kelime grubu hangisidir?",
   secenekler=["yıl – güç – eser", "Mehmet Âkif – İstiklâl Marşı – şiir", "millet – armağan – ad", "Safahat – yedi – kitap"], dogru=1,
   aciklama="Metin, Mehmet Âkif'i ve şiirlerini, özellikle İstiklâl Marşı'nı anlatır (s. 106).")
+
+# --- Konu 4: Görselle ve çoklu ortamla anlatılan anlam
+K4 = "(s. 88, 95–97, 100)"
+a("u2k4", "Görseldeki İpuçları", "secim", soru="Bir resimde sahilde kova ve kürekle kumdan kale yapan çocuklar, yanlarında bir şemsiye var. Bu görselden hangisi çıkarılamaz?",
+  secenekler=["Çocuklar deniz kenarındadır.", "Hava güneşli olabilir.", "Çocuklar oyun oynamaktadır.", "Çocuklar kardeştir."], dogru=3,
+  aciklama="Kardeş oldukları görselde hiçbir ipucuyla gösterilmiyor.")
+a("u2k4", "Başlık ve Görselden Tahmin", "dy",
+  ifade="Başlık ve görselden yaptığımız tahmini, içeriği izledikten sonra kontrol ederiz.", dogru=True,
+  aciklama="Önce tahmin ve gerekçe, sonra kontrol (s. 95–96).")
+a("u2k4", "Eş Anlam Oluşturma", "eslestir", soru="Durumları ögenin işleviyle eşleştir.", ciftler=[
+  {"sol": "Ekranda “1915” yazıyor, anlatıcı da “1915'te” diyor.", "sag": "Eş anlam oluşturma"},
+  {"sol": "Sözlerin arkasında hüzünlü bir müzik çalıyor.", "sag": "Anlamı destekleme"},
+  {"sol": "Yazısız bir karikatür bir düşünceyi anlatıyor.", "sag": "Tek başına anlam oluşturma"}],
+  aciklama=f"Aynı bilgi eş anlam, güçlendirme destek, yalnız anlatım tek başına {K4}.")
+a("u2k4", "Anlamı Destekleme", "secim", soru="Bir belgeselde anlatıcı “Kağnılar zorlu yollarda ilerledi.” derken ekranda çamurlu yolda ağır ağır ilerleyen kağnılar görünüyor. Görüntünün işlevi nedir?",
+  secenekler=["Anlatılanla çelişmek", "Anlatılanı canlandırıp güçlendirmek", "Yeni ve ilgisiz bir bilgi vermek", "Sözün yerine tamamen geçmek"], dogru=1,
+  aciklama="Görüntü sözü gözümüzün önüne getirip güçlendiriyor; anlamı destekliyor.")
+a("u2k4", "Tek Başına Anlam Oluşturma", "dy",
+  ifade="Bir görsel, yazı ya da ses olmadan hiçbir şey anlatamaz.", dogru=False,
+  duzeltme="Yazısız bir fotoğraf ya da karikatür de tek başına anlam oluşturabilir.",
+  aciklama=f"Görsel tek başına da anlam oluşturabilir {K4}.")
+a("u2k4", "Medya Metninde İçerik ve Tasarım", "dytablo", soru="Ölçüt görsel tasarımla ilgiliyse D, içerikle ilgiliyse Y seç.", ifadeler=[
+  {"s": "Yazılar büyük ve okunaklı olmalı.", "d": True},
+  {"s": "Bilgiler doğru olmalı.", "d": False},
+  {"s": "Renkler birbirine uymalı.", "d": True},
+  {"s": "Tarihî yerin önemi anlatılmalı.", "d": False}],
+  aciklama="Yazı boyu ve renk tasarımdır; doğru bilgi ve anlatım içeriktir (s. 100).")
+
+# --- Konu 5: İkna teknikleri 1
+K5 = "(s. 89–90, 99)"
+a("u2k5", "Karşılıkta Bulunma", "eslestir", soru="Cümleleri ikna tekniğiyle eşleştir.", ciftler=[
+  {"sol": "Geçen hafta sana yardım ettim, şimdi sen bana yardım et.", "sag": "Karşılıkta bulunma"},
+  {"sol": "Canım torunum, ricamı kırma.", "sag": "Sevgi (hoşlanma)"},
+  {"sol": "Yıllardır söylediğimi yaptım, yine yapacağım.", "sag": "Tutarlılık"},
+  {"sol": "Ben yirmi yıldır bu konuyu araştırıyorum.", "sag": "Otorite"}],
+  aciklama=f"Her teknik başka bir şeye dayanır: iyilik, sevgi, değişmezlik, uzmanlık {K5}.")
+a("u2k5", "Sevgi (Hoşlanma)", "dy",
+  ifade="İnsanlar sevdikleri kişilerden gelen istekleri daha çabuk kabul eder.", dogru=True,
+  aciklama="Bu, sevgi (hoşlanma) tekniğinin tanımıdır (s. 99).")
+a("u2k5", "Tutarlılık", "secim", soru="Karikatürde bir liderin “Milletin bağımsızlığı her şeyin üstündedir.” sözünün yanında cephede en önde yer alması gösteriliyor. Bu karikatür hangi tekniği anlatır?",
+  secenekler=["Kıtlık", "Tutarlılık", "Karşılıkta bulunma", "Toplumsal kanıt"], dogru=1,
+  aciklama="Söz ile davranış birbirini tutuyor; bu tutarlılıktır (s. 89).")
+a("u2k5", "Otorite", "secim", soru="Otorite tekniğiyle ilgili aşağıdaki ifadeler verilmiştir.",
+  onculler=["Konuşan kişi dinleyenlere geçmişte yaptığı iyiliği hatırlatır.", "Konuşan kişi bilgisini ve uzmanlığını gösterir.", "İnsanlar uzman ve güvenilir kişilere daha kolay inanır."],
+  kok="Yukarıdakilerden hangileri doğrudur?", secenekler=ONC, dogru=2,
+  aciklama="Geçmişteki iyiliği hatırlatmak karşılıkta bulunmadır (s. 99).")
+a("u2k5", "İkna Etmek", "bosluk", havuz=["kanıt", "başlık"], cumleler=[
+  {"c": "Birini bir düşünceye razı etmeye ___ etmek denir.", "cevap": "ikna"},
+  {"c": "Uzmanlığını göstermek ___ tekniğidir.", "cevap": "otorite"},
+  {"c": "Söz ile davranışın aynı olması ___ tekniğidir.", "cevap": "tutarlılık"}],
+  aciklama="İkna; otorite uzmanlık, tutarlılık söz-davranış uyumudur.")
+a("u2k5", "Karşılıkta Bulunma", "kisa", soru="İnsanın kendisine iyilik yapan birinin sözüne ikna olmasına ne ad verilir?",
+  yanit="karşılıkta bulunma", kabul=["karsilikta bulunma", "karşılık"],
+  aciklama="Bu teknik karşılıkta bulunmadır (s. 99).")
+
+# --- Konu 6: İkna teknikleri 2
+K6 = "(s. 98–99)"
+a("u2k6", "Toplumsal Kanıt", "eslestir", soru="Cümleleri ikna tekniğiyle eşleştir.", ciftler=[
+  {"sol": "Okulun yarısı kulübe katıldı, sen de katıl!", "sag": "Toplumsal kanıt"},
+  {"sol": "Kayıt için son iki gün!", "sag": "Kıtlık"},
+  {"sol": "Kirli bir şehir mi, temiz bir şehir mi?", "sag": "Karşıtlık"},
+  {"sol": "Önce sizin oyununuzu, sonra bizimkini oynayalım.", "sag": "Uzlaşma"}],
+  aciklama=f"Çoğunluk, azlık, zıtlık ve ortak çözüm dört ayrı tekniktir {K6}.")
+a("u2k6", "Kıtlık", "dy",
+  ifade="Kıtlık tekniğinde bir şeyin çok bol olduğu vurgulanır.", dogru=False,
+  duzeltme="Kıtlık tekniğinde bir şeyin az ya da sınırlı olduğu vurgulanır.",
+  aciklama="Azlık vurgulanınca ilgi artar (s. 99).")
+a("u2k6", "Karşıtlık", "secim",
+  metin=["Esaretin utancı ile bağımsızlığın onuru arasındaki savaşta tarafımız bellidir.", "Karşımızda karanlık bir düşman, önümüzde aydınlık bir gelecek var."],
+  soru="Bu cümlelerde hangi ikna tekniği kullanılmıştır?",
+  secenekler=["Uzlaşma", "Karşılıkta bulunma", "Karşıtlık", "Sevgi (hoşlanma)"], dogru=2,
+  aciklama="Esaret – bağımsızlık, karanlık – aydınlık zıtlıkları kullanılmış (s. 98).")
+a("u2k6", "Uzlaşma", "secim", soru="Uzlaşma tekniğiyle ilgili aşağıdaki ifadeler verilmiştir.",
+  onculler=["Kişi uyumlu ve çözüm odaklı olduğunu gösterir.", "İnsanlar sorun çıkarmayan kişilere güvenir.", "Kişi zamanın çok az kaldığını vurgular."],
+  kok="Yukarıdakilerden hangileri uzlaşma tekniğini anlatır?", secenekler=ONC, dogru=1,
+  aciklama="Zamanın azlığını vurgulamak kıtlıktır (s. 99).")
+a("u2k6", "İkna Metnini Çözümleme", "dytablo", soru="Konuşma metnindeki (s. 98) bölüm ile tekniğin eşleşmesi doğruysa D, yanlışsa Y seç.", ifadeler=[
+  {"s": "2. bölüm: Bütün millet omuz omuza → toplumsal kanıt", "d": True},
+  {"s": "4. bölüm: Zamanımız dardır → kıtlık", "d": True},
+  {"s": "3. bölüm: Ömrümü cephelerde geçirdim → uzlaşma", "d": False}],
+  aciklama="Cephe deneyimini öne sürmek otoritedir; öbür ikisi doğru (s. 98).")
+a("u2k6", "Toplumsal Kanıt", "kisa", soru="Başkalarının yaygın davranışlarını öne sürerek ikna etmeye ne ad verilir?",
+  yanit="toplumsal kanıt", kabul=["toplumsal kanit"],
+  aciklama="Bu teknik toplumsal kanıttır (s. 99).")
 H.yaz()

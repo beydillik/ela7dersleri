@@ -353,6 +353,322 @@
    ],
    "dogru": 1,
    "aciklama": "Metin, Mehmet Âkif'i ve şiirlerini, özellikle İstiklâl Marşı'nı anlatır (s. 106)."
+  },
+  {
+   "id": "t2-19",
+   "konu": "u2k4",
+   "kavram": "Görseldeki İpuçları",
+   "tur": "secim",
+   "soru": "Bir resimde sahilde kova ve kürekle kumdan kale yapan çocuklar, yanlarında bir şemsiye var. Bu görselden hangisi çıkarılamaz?",
+   "secenekler": [
+    "Çocuklar deniz kenarındadır.",
+    "Hava güneşli olabilir.",
+    "Çocuklar oyun oynamaktadır.",
+    "Çocuklar kardeştir."
+   ],
+   "dogru": 3,
+   "aciklama": "Kardeş oldukları görselde hiçbir ipucuyla gösterilmiyor."
+  },
+  {
+   "id": "t2-20",
+   "konu": "u2k4",
+   "kavram": "Başlık ve Görselden Tahmin",
+   "tur": "dy",
+   "ifade": "Başlık ve görselden yaptığımız tahmini, içeriği izledikten sonra kontrol ederiz.",
+   "dogru": true,
+   "aciklama": "Önce tahmin ve gerekçe, sonra kontrol (s. 95–96)."
+  },
+  {
+   "id": "t2-21",
+   "konu": "u2k4",
+   "kavram": "Eş Anlam Oluşturma",
+   "tur": "eslestir",
+   "soru": "Durumları ögenin işleviyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Ekranda “1915” yazıyor, anlatıcı da “1915'te” diyor.",
+     "sag": "Eş anlam oluşturma"
+    },
+    {
+     "sol": "Sözlerin arkasında hüzünlü bir müzik çalıyor.",
+     "sag": "Anlamı destekleme"
+    },
+    {
+     "sol": "Yazısız bir karikatür bir düşünceyi anlatıyor.",
+     "sag": "Tek başına anlam oluşturma"
+    }
+   ],
+   "aciklama": "Aynı bilgi eş anlam, güçlendirme destek, yalnız anlatım tek başına (s. 88, 95–97, 100)."
+  },
+  {
+   "id": "t2-22",
+   "konu": "u2k4",
+   "kavram": "Anlamı Destekleme",
+   "tur": "secim",
+   "soru": "Bir belgeselde anlatıcı “Kağnılar zorlu yollarda ilerledi.” derken ekranda çamurlu yolda ağır ağır ilerleyen kağnılar görünüyor. Görüntünün işlevi nedir?",
+   "secenekler": [
+    "Anlatılanla çelişmek",
+    "Anlatılanı canlandırıp güçlendirmek",
+    "Yeni ve ilgisiz bir bilgi vermek",
+    "Sözün yerine tamamen geçmek"
+   ],
+   "dogru": 1,
+   "aciklama": "Görüntü sözü gözümüzün önüne getirip güçlendiriyor; anlamı destekliyor."
+  },
+  {
+   "id": "t2-23",
+   "konu": "u2k4",
+   "kavram": "Tek Başına Anlam Oluşturma",
+   "tur": "dy",
+   "ifade": "Bir görsel, yazı ya da ses olmadan hiçbir şey anlatamaz.",
+   "dogru": false,
+   "duzeltme": "Yazısız bir fotoğraf ya da karikatür de tek başına anlam oluşturabilir.",
+   "aciklama": "Görsel tek başına da anlam oluşturabilir (s. 88, 95–97, 100)."
+  },
+  {
+   "id": "t2-24",
+   "konu": "u2k4",
+   "kavram": "Medya Metninde İçerik ve Tasarım",
+   "tur": "dytablo",
+   "soru": "Ölçüt görsel tasarımla ilgiliyse D, içerikle ilgiliyse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Yazılar büyük ve okunaklı olmalı.",
+     "d": true
+    },
+    {
+     "s": "Bilgiler doğru olmalı.",
+     "d": false
+    },
+    {
+     "s": "Renkler birbirine uymalı.",
+     "d": true
+    },
+    {
+     "s": "Tarihî yerin önemi anlatılmalı.",
+     "d": false
+    }
+   ],
+   "aciklama": "Yazı boyu ve renk tasarımdır; doğru bilgi ve anlatım içeriktir (s. 100)."
+  },
+  {
+   "id": "t2-25",
+   "konu": "u2k5",
+   "kavram": "Karşılıkta Bulunma",
+   "tur": "eslestir",
+   "soru": "Cümleleri ikna tekniğiyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Geçen hafta sana yardım ettim, şimdi sen bana yardım et.",
+     "sag": "Karşılıkta bulunma"
+    },
+    {
+     "sol": "Canım torunum, ricamı kırma.",
+     "sag": "Sevgi (hoşlanma)"
+    },
+    {
+     "sol": "Yıllardır söylediğimi yaptım, yine yapacağım.",
+     "sag": "Tutarlılık"
+    },
+    {
+     "sol": "Ben yirmi yıldır bu konuyu araştırıyorum.",
+     "sag": "Otorite"
+    }
+   ],
+   "aciklama": "Her teknik başka bir şeye dayanır: iyilik, sevgi, değişmezlik, uzmanlık (s. 89–90, 99)."
+  },
+  {
+   "id": "t2-26",
+   "konu": "u2k5",
+   "kavram": "Sevgi (Hoşlanma)",
+   "tur": "dy",
+   "ifade": "İnsanlar sevdikleri kişilerden gelen istekleri daha çabuk kabul eder.",
+   "dogru": true,
+   "aciklama": "Bu, sevgi (hoşlanma) tekniğinin tanımıdır (s. 99)."
+  },
+  {
+   "id": "t2-27",
+   "konu": "u2k5",
+   "kavram": "Tutarlılık",
+   "tur": "secim",
+   "soru": "Karikatürde bir liderin “Milletin bağımsızlığı her şeyin üstündedir.” sözünün yanında cephede en önde yer alması gösteriliyor. Bu karikatür hangi tekniği anlatır?",
+   "secenekler": [
+    "Kıtlık",
+    "Tutarlılık",
+    "Karşılıkta bulunma",
+    "Toplumsal kanıt"
+   ],
+   "dogru": 1,
+   "aciklama": "Söz ile davranış birbirini tutuyor; bu tutarlılıktır (s. 89)."
+  },
+  {
+   "id": "t2-28",
+   "konu": "u2k5",
+   "kavram": "Otorite",
+   "tur": "secim",
+   "soru": "Otorite tekniğiyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Konuşan kişi dinleyenlere geçmişte yaptığı iyiliği hatırlatır.",
+    "Konuşan kişi bilgisini ve uzmanlığını gösterir.",
+    "İnsanlar uzman ve güvenilir kişilere daha kolay inanır."
+   ],
+   "kok": "Yukarıdakilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Geçmişteki iyiliği hatırlatmak karşılıkta bulunmadır (s. 99)."
+  },
+  {
+   "id": "t2-29",
+   "konu": "u2k5",
+   "kavram": "İkna Etmek",
+   "tur": "bosluk",
+   "havuz": [
+    "kanıt",
+    "başlık"
+   ],
+   "cumleler": [
+    {
+     "c": "Birini bir düşünceye razı etmeye ___ etmek denir.",
+     "cevap": "ikna"
+    },
+    {
+     "c": "Uzmanlığını göstermek ___ tekniğidir.",
+     "cevap": "otorite"
+    },
+    {
+     "c": "Söz ile davranışın aynı olması ___ tekniğidir.",
+     "cevap": "tutarlılık"
+    }
+   ],
+   "aciklama": "İkna; otorite uzmanlık, tutarlılık söz-davranış uyumudur."
+  },
+  {
+   "id": "t2-30",
+   "konu": "u2k5",
+   "kavram": "Karşılıkta Bulunma",
+   "tur": "kisa",
+   "soru": "İnsanın kendisine iyilik yapan birinin sözüne ikna olmasına ne ad verilir?",
+   "yanit": "karşılıkta bulunma",
+   "kabul": [
+    "karsilikta bulunma",
+    "karşılık"
+   ],
+   "aciklama": "Bu teknik karşılıkta bulunmadır (s. 99)."
+  },
+  {
+   "id": "t2-31",
+   "konu": "u2k6",
+   "kavram": "Toplumsal Kanıt",
+   "tur": "eslestir",
+   "soru": "Cümleleri ikna tekniğiyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Okulun yarısı kulübe katıldı, sen de katıl!",
+     "sag": "Toplumsal kanıt"
+    },
+    {
+     "sol": "Kayıt için son iki gün!",
+     "sag": "Kıtlık"
+    },
+    {
+     "sol": "Kirli bir şehir mi, temiz bir şehir mi?",
+     "sag": "Karşıtlık"
+    },
+    {
+     "sol": "Önce sizin oyununuzu, sonra bizimkini oynayalım.",
+     "sag": "Uzlaşma"
+    }
+   ],
+   "aciklama": "Çoğunluk, azlık, zıtlık ve ortak çözüm dört ayrı tekniktir (s. 98–99)."
+  },
+  {
+   "id": "t2-32",
+   "konu": "u2k6",
+   "kavram": "Kıtlık",
+   "tur": "dy",
+   "ifade": "Kıtlık tekniğinde bir şeyin çok bol olduğu vurgulanır.",
+   "dogru": false,
+   "duzeltme": "Kıtlık tekniğinde bir şeyin az ya da sınırlı olduğu vurgulanır.",
+   "aciklama": "Azlık vurgulanınca ilgi artar (s. 99)."
+  },
+  {
+   "id": "t2-33",
+   "konu": "u2k6",
+   "kavram": "Karşıtlık",
+   "tur": "secim",
+   "metin": [
+    "Esaretin utancı ile bağımsızlığın onuru arasındaki savaşta tarafımız bellidir.",
+    "Karşımızda karanlık bir düşman, önümüzde aydınlık bir gelecek var."
+   ],
+   "soru": "Bu cümlelerde hangi ikna tekniği kullanılmıştır?",
+   "secenekler": [
+    "Uzlaşma",
+    "Karşılıkta bulunma",
+    "Karşıtlık",
+    "Sevgi (hoşlanma)"
+   ],
+   "dogru": 2,
+   "aciklama": "Esaret – bağımsızlık, karanlık – aydınlık zıtlıkları kullanılmış (s. 98)."
+  },
+  {
+   "id": "t2-34",
+   "konu": "u2k6",
+   "kavram": "Uzlaşma",
+   "tur": "secim",
+   "soru": "Uzlaşma tekniğiyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Kişi uyumlu ve çözüm odaklı olduğunu gösterir.",
+    "İnsanlar sorun çıkarmayan kişilere güvenir.",
+    "Kişi zamanın çok az kaldığını vurgular."
+   ],
+   "kok": "Yukarıdakilerden hangileri uzlaşma tekniğini anlatır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Zamanın azlığını vurgulamak kıtlıktır (s. 99)."
+  },
+  {
+   "id": "t2-35",
+   "konu": "u2k6",
+   "kavram": "İkna Metnini Çözümleme",
+   "tur": "dytablo",
+   "soru": "Konuşma metnindeki (s. 98) bölüm ile tekniğin eşleşmesi doğruysa D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "2. bölüm: Bütün millet omuz omuza → toplumsal kanıt",
+     "d": true
+    },
+    {
+     "s": "4. bölüm: Zamanımız dardır → kıtlık",
+     "d": true
+    },
+    {
+     "s": "3. bölüm: Ömrümü cephelerde geçirdim → uzlaşma",
+     "d": false
+    }
+   ],
+   "aciklama": "Cephe deneyimini öne sürmek otoritedir; öbür ikisi doğru (s. 98)."
+  },
+  {
+   "id": "t2-36",
+   "konu": "u2k6",
+   "kavram": "Toplumsal Kanıt",
+   "tur": "kisa",
+   "soru": "Başkalarının yaygın davranışlarını öne sürerek ikna etmeye ne ad verilir?",
+   "yanit": "toplumsal kanıt",
+   "kabul": [
+    "toplumsal kanit"
+   ],
+   "aciklama": "Bu teknik toplumsal kanıttır (s. 99)."
   }
  ]
 }
