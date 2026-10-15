@@ -1,0 +1,563 @@
+{
+ "id": "u3k4",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Karşılaştırma: İki Metin ve Bir Grafik",
+ "sayfalar": "s. 145, 149–152, 155",
+ "giris": "Karşılaştırma, iki şeyin benzer ve farklı yönlerini bulmaktır. Bu konuda önce iki metni aynı ölçütle karşılaştıracağız. Sonra kitaptaki bir grafiği okuyup artışları ve azalmaları bulacağız. En sonda bir yargının doğru olup olmadığını grafiğe bakarak kontrol edeceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, 1. Temada öğrendiğin iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Karşılaştırma Yolu",
+    "sinif": "1. Tema, Konu 6",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>karşılaştırma</text><rect x='8' y='36' width='46' height='24' rx='8' fill='#fbf6e6'/><text x='31' y='52' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>daha</text><rect x='66' y='36' width='46' height='24' rx='8' fill='#f5c53d'/><text x='89' y='52' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>oysa</text><rect x='30' y='66' width='60' height='24' rx='8' fill='#7ad19a'/><text x='60' y='82' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>-e göre</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#f5c53d'>benzer mi, farklı mı?</text></svg>",
+    "akilda": "Benzer mi, farklı mı?",
+    "anlatim": "Karşılaştırma, iki şeyin benzer ve farklı yönlerini göstererek düşünceyi açıklar. İpucu kelimeler: daha, en, oysa, -e göre.",
+    "sorular": [
+     {
+      "soru": "“Kediler, köpeklerden daha bağımsızdır.” cümlesinde hangi yol var?",
+      "secenekler": [
+       "Karşılaştırma",
+       "Tanık gösterme",
+       "Tanımlama"
+      ],
+      "dogru": 0,
+      "ipucu": "“daha” kelimesine bak.",
+      "aciklama": "“daha” iki hayvanı karşılaştırıyor."
+     },
+     {
+      "soru": "Hangi kelime karşılaştırmanın ipucusudur?",
+      "secenekler": [
+       "örneğin",
+       "daha",
+       "gibi"
+      ],
+      "dogru": 1,
+      "ipucu": "İki şeyden birini öne çıkaran kelimeyi seç.",
+      "aciklama": "“daha” karşılaştırmanın ipucusudur."
+     }
+    ]
+   },
+   {
+    "ad": "Ana Fikir",
+    "sinif": "1. Tema, Konu 3",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='48' r='28' fill='#f5c53d'/><text x='60' y='46' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>asıl</text><text x='60' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>mesaj</text><rect x='10' y='86' width='30' height='16' rx='6' fill='#fbf6e6'/><rect x='45' y='86' width='30' height='16' rx='6' fill='#fbf6e6'/><rect x='80' y='86' width='30' height='16' rx='6' fill='#fbf6e6'/><path d='M25 86 L48 72 M60 86 V76 M95 86 L72 72' stroke='#9cc7ff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+    "akilda": "Asıl mesaj",
+    "anlatim": "Ana fikir, yazarın metinle okura vermek istediği asıl mesajdır. Metnin konusu “ne anlatılıyor?”, ana fikri “ne öğütleniyor?” sorusunun cevabıdır.",
+    "sorular": [
+     {
+      "soru": "Ana fikir nedir?",
+      "secenekler": [
+       "Metnin başlığı",
+       "Yazarın vermek istediği asıl mesaj",
+       "Metindeki ilk kelime"
+      ],
+      "dogru": 1,
+      "ipucu": "Akılda kalsın: Asıl mesaj.",
+      "aciklama": "Ana fikir, yazarın asıl mesajıdır."
+     },
+     {
+      "soru": "“Su israf edilmemeli; çünkü temiz su kaynakları azalıyor.” Bu cümlenin ana fikri hangisidir?",
+      "secenekler": [
+       "Su israf edilmemelidir.",
+       "Su bir sıvıdır.",
+       "Kaynaklar dağlardadır."
+      ],
+      "dogru": 0,
+      "ipucu": "Yazar okura ne öğütlüyor?",
+      "aciklama": "Yazar suyu israf etmememizi öğütlüyor."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Karşılaştırma Ölçütü",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='20' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>neye göre?</text><rect x='8' y='32' width='40' height='52' rx='8' fill='#fbf6e6'/><text x='28' y='52' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>metin</text><text x='28' y='66' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>A</text><rect x='72' y='32' width='40' height='52' rx='8' fill='#fbf6e6'/><text x='92' y='52' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>metin</text><text x='92' y='66' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>B</text><path d='M48 58 H72' stroke='#f5c53d' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='34' y='92' width='52' height='20' rx='8' fill='#f5c53d'/><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>ölçüt</text></svg>",
+   "aciklama": "Ölçüt, iki şeye neye göre baktığımızdır. Karşılaştırmaya başlamadan önce ölçüt seçilir.",
+   "ek": "Kitap, “Sağlıklı Aile” metnini bir izleme içeriğiyle dört ölçüte göre karşılaştırtır: saygı, zorbalık, empati ve sevgi odaklı iletişim (s. 150). “Ölçüt” kelimesinin bu tanımı kitap dışıdır.",
+   "akilda": "Neye göre bakıyorum?",
+   "soru": {
+    "soru": "İki metni “saygı” açısından karşılaştırıyoruz. Burada “saygı” nedir?",
+    "secenekler": [
+     "Karşılaştırma ölçütü",
+     "Metnin başlığı",
+     "Metnin yazarı"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Neye göre bakıyorum?",
+    "aciklama": "Neye göre baktığımız ölçüttür; burada ölçüt saygıdır (s. 150)."
+   }
+  },
+  {
+   "ad": "Benzerlik ve Farklılık",
+   "renk": "#c98a00",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='44' cy='60' r='30' fill='#9cc7ff' fill-opacity='0.55'/><circle cx='76' cy='60' r='30' fill='#f5c53d' fill-opacity='0.55'/><text x='30' y='64' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>ayrı</text><text x='60' y='64' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>ortak</text><text x='90' y='64' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#fbf6e6'>ayrı</text><text x='60' y='108' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>benzer · farklı</text></svg>",
+   "aciklama": "İki şeyin ortak yönleri benzerlik, ayrı yönleri farklılıktır.",
+   "ek": "Benzerliği “ikisi de, benzer şekilde” ile; farklılığı “oysa, ise, -den farklı olarak” ile anlatabilirsin (kitap dışı strateji). Kitap da benzerlik ve farklılıklardan hareketle karşılaştırma ister (s. 150).",
+   "akilda": "Ortak mı, ayrı mı?",
+   "soru": {
+    "soru": "“-den farklı olarak” ifadesi neyi anlatmak için kullanılır?",
+    "secenekler": [
+     "Benzerliği",
+     "Farklılığı",
+     "Bir tanımı"
+    ],
+    "dogru": 1,
+    "ipucu": "Kelimenin içine bak: farklı …",
+    "aciklama": "“-den farklı olarak” ayrı yönü, yani farklılığı gösterir."
+   }
+  },
+  {
+   "ad": "Metinleri Karşılaştırma",
+   "renk": "#2e8b57",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='6' y='18' width='48' height='66' rx='8' fill='#fbf6e6'/><text x='30' y='34' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>aile</text><path d='M14 44 H46 M14 52 H46 M14 60 H40' stroke='#8a7f6a' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='66' y='18' width='48' height='66' rx='8' fill='#fbf6e6'/><text x='90' y='34' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>ekran</text><path d='M74 44 H106 M74 52 H106 M74 60 H100' stroke='#8a7f6a' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='22' y='92' width='76' height='20' rx='8' fill='#f5c53d'/><text x='60' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>ölçüt: saygı</text></svg>",
+   "aciklama": "İki metni karşılaştırırken ikisine de aynı ölçütle bakarız ve her metinden bir kanıt buluruz.",
+   "ek": "Aşağıdaki çözümde kitaptaki “Sağlıklı Aile” metnini (s. 149) kitap dışı kısa bir metinle karşılaştıracağız. Kitaptaki ikinci metin bir izleme içeriği olduğu için burada kullanılmadı.",
+   "akilda": "Aynı ölçüt, iki kanıt",
+   "soru": {
+    "soru": "İki metni karşılaştırmanın doğru yolu hangisidir?",
+    "secenekler": [
+     "Yalnızca başlıklarına bakmak",
+     "Birini okuyup ötekini tahmin etmek",
+     "İkisine de aynı ölçütle bakmak"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Aynı ölçüt, iki kanıt.",
+    "aciklama": "İki metne de aynı ölçütle bakılır, her metinden kanıt bulunur."
+   },
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Sağlıklı Aile” (s. 149) ile kitap dışı metin “Ekranın Öbür Ucu”nu “saygı” ölçütüyle karşılaştıralım. Ekranın Öbür Ucu: Sanal ortamda yazdığımız her sözü gerçek bir insan okur. Birinin fotoğrafıyla alay etmek şaka gibi görünse de onun canını sıkabilir; buna sanal zorbalık denir. Yazmadan önce “Bu söz bana söylense ne hissederdim?” diye düşünmek empatidir. Farklı düşünen birine de kırıcı olmadan cevap verebiliriz.",
+    "adimlar": [
+     {
+      "metin": "Önce ölçütü seç.",
+      "islem": "Ölçüt: saygı"
+     },
+     {
+      "metin": "1. metinde saygıyı bul: “Kuşaklar arasındaki düşünce farklılıklarına saygı duyulur.” (s. 149)",
+      "islem": "Aile: farklı düşünceye saygı"
+     },
+     {
+      "metin": "2. metinde saygıyı bul: “Farklı düşünen birine de kırıcı olmadan cevap verebiliriz.”",
+      "islem": "Ekran: kırıcı olmamak"
+     },
+     {
+      "metin": "Ortak yönü ve ayrı yönü yaz.",
+      "islem": "Ortak: saygı · Ayrı: ortam"
+     }
+    ],
+    "sonuc": "İki metin de farklı düşünceye saygıyı önemsiyor. Farklılık şu: Biri aileyi, öteki ise sanal ortamı anlatıyor."
+   }
+  },
+  {
+   "ad": "Grafik Okuma",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 22 V98 H112' stroke='#fbf6e6' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='22' y='26.0' width='10' height='70.0' rx='2' fill='#9cc7ff'/><rect x='36' y='69.6' width='10' height='26.4' rx='2' fill='#9cc7ff'/><rect x='50' y='84.8' width='10' height='11.2' rx='2' fill='#9cc7ff'/><rect x='64' y='88.5' width='10' height='7.5' rx='2' fill='#9cc7ff'/><rect x='78' y='82.5' width='10' height='13.5' rx='2' fill='#9cc7ff'/><rect x='92' y='91.4' width='10' height='4.6' rx='2' fill='#9cc7ff'/><rect x='106' y='92.6' width='10' height='3.4' rx='2' fill='#9cc7ff'/><text x='64' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#6ea8ef'>yıllar →</text><text x='26' y='18' text-anchor='start' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#6ea8ef'>↑ sayı</text></svg>",
+   "aciklama": "Grafik, sayıları resimle gösterir. Önce başlığa, sonra yatay ve dikey eksene bakarız.",
+   "ek": "Kitaptaki grafik 2010–2016 yılları arasında Türkiye'de genel ağ üzerinden yapılan telefon aramalarını gösterir: Yatay eksende yıllar, dikey eksende arama sayısı vardır (s. 151). “Eksen” terimi kitap dışıdır.",
+   "akilda": "Önce eksenleri oku",
+   "soru": {
+    "soru": "Kitaptaki grafikte yatay eksende ne yazar?",
+    "secenekler": [
+     "Yıllar",
+     "Arama sayısı",
+     "Şehirler"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Önce eksenleri oku. Yatay eksen alttadır.",
+    "aciklama": "Yatay eksende yıllar, dikey eksende arama sayısı vardır (s. 151)."
+   }
+  },
+  {
+   "ad": "Artış ve Azalma",
+   "renk": "#c98a00",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='60' width='26' height='40' rx='3' fill='#9cc7ff'/><text x='31' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#fbf6e6'>2013</text><rect x='76' y='30' width='26' height='70' rx='3' fill='#f5c53d'/><text x='89' y='112' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='9' fill='#fbf6e6'>2014</text><path d='M50 70 L68 46 M60 46 H68 V54' stroke='#7ad19a' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='60' y='22' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#7ad19a'>artış ↑</text></svg>",
+   "aciklama": "Bir yılın sayısı bir öncekinden büyükse artış, küçükse azalma vardır.",
+   "ek": "Grafikte arama sayısı 2010'dan 2013'e her yıl azalır; 2014'te artar (4.840 → 8.716), sonra yine azalır (s. 151). Yani bu yıllardan yalnızca birinde artış olmuştur.",
+   "akilda": "Bir öncekine bak",
+   "soru": {
+    "soru": "2013'te 4.840, 2014'te 8.716 arama yapılmış. 2014 için ne söylenir?",
+    "secenekler": [
+     "Azalma olmuştur.",
+     "Artış olmuştur.",
+     "Değişmemiştir."
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: Bir öncekine bak. 8.716 mı büyük, 4.840 mı?",
+    "aciklama": "8.716, 4.840'tan büyüktür; 2014'te artış olmuştur (s. 151)."
+   },
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "2012'den 2013'e arama sayısı arttı mı, azaldı mı?",
+    "adimlar": [
+     {
+      "metin": "Önce 2012'nin sayısını bul.",
+      "islem": "2012: 7.236"
+     },
+     {
+      "metin": "Sonra 2013'ün sayısını bul.",
+      "islem": "2013: 4.840"
+     },
+     {
+      "metin": "Hangisi büyük? 2013, 2012'den küçük.",
+      "islem": "4.840 < 7.236"
+     }
+    ],
+    "sonuc": "2013'ün sayısı bir öncekinden küçük: azalma olmuştur."
+   }
+  },
+  {
+   "ad": "Grafikten Yargı Doğrulama",
+   "renk": "#2e8b57",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='18' width='100' height='34' rx='8' fill='#fbf6e6'/><text x='60' y='32' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>2015'te 5 binin</text><text x='60' y='45' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>altına düştü.</text><circle cx='38' cy='78' r='15' fill='#7ad19a'/><circle cx='82' cy='78' r='15' fill='#ff8a7a' fill-opacity='0.5'/><text x='38' y='83' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>D</text><text x='82' y='83' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='14' fill='#2b2417'>Y</text><text x='60' y='110' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>sayıyla kanıtla</text></svg>",
+   "aciklama": "Bir yargının doğru mu yanlış mı olduğunu grafikteki sayılarla kontrol ederiz.",
+   "ek": "Kitap, grafikle ilgili cümlelere D ya da Y yazdırır ve boşlukları grafiğe göre tamamlatır (s. 151–152). Dikkat: Grafik sayıları gösterir, sebepleri söylemez.",
+   "akilda": "Sayıyla kanıtla",
+   "soru": {
+    "soru": "Grafikle ilgili bir yargıyı nasıl doğrularız?",
+    "secenekler": [
+     "Kendi tahminimizle",
+     "Başlığın uzunluğuyla",
+     "Grafikteki sayılarla"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Sayıyla kanıtla.",
+    "aciklama": "Yargı, grafikteki sayılarla kontrol edilir."
+   },
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“2015'te arama sayısı 5 binin altına düşmüştür.” Bu yargı doğru mu?",
+    "adimlar": [
+     {
+      "metin": "1. Yargıdaki yılı bul.",
+      "soru": {
+       "soru": "Bu yargı hangi yılla ilgili?",
+       "secenekler": [
+        "2014",
+        "2015",
+        "2016"
+       ],
+       "dogru": 1,
+       "ipucu": "Yargının ilk kelimesine bak.",
+       "aciklama": "Yargı 2015 yılıyla ilgili."
+      },
+      "islem": "Yıl: 2015"
+     },
+     {
+      "metin": "2. Grafikte o yılın sayısına bak.",
+      "islem": "2015: 2.957"
+     },
+     {
+      "metin": "3. Sayıyı 5 binle karşılaştır.",
+      "soru": {
+       "soru": "2.957, 5 binden az mı?",
+       "secenekler": [
+        "Evet, az.",
+        "Hayır, fazla.",
+        "Tam 5 bin."
+       ],
+       "dogru": 0,
+       "ipucu": "Dört basamaklı sayıların ilk rakamına bak: 2 mi büyük, 5 mi?",
+       "aciklama": "2.957, 5.000'den azdır."
+      },
+      "islem": "2.957 < 5.000 → D"
+     }
+    ],
+    "sonuc": "Yargı doğru: 2015'te arama sayısı 2.957, yani 5 binin altında (s. 151)."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram metin karşılaştırmayla mı, grafik okumayla mı ilgili?",
+   "kutular": [
+    {
+     "etiket": "Karşılaştırmanın temeli",
+     "uyeler": [
+      "Karşılaştırma Ölçütü",
+      "Benzerlik ve Farklılık",
+      "Metinleri Karşılaştırma"
+     ]
+    },
+    {
+     "etiket": "Grafik okuma",
+     "uyeler": [
+      "Grafik Okuma",
+      "Artış ve Azalma",
+      "Grafikten Yargı Doğrulama"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki grafiğe göre 2010'da 45.172 olan arama sayısı 2016'da 2.223'e inmiştir (s. 151)."
+ ],
+ "akildaKalsin": [
+  "Karşılaştırmadan önce ölçütü seç: Neye göre bakıyorum?",
+  "Ortak yön benzerlik, ayrı yön farklılıktır.",
+  "Benzerlik: ikisi de, benzer şekilde. Farklılık: oysa, ise, -den farklı olarak.",
+  "Grafikte önce başlığı ve eksenleri oku.",
+  "Artış mı, azalma mı? Bir önceki yıla bak.",
+  "Yargıyı grafikteki sayıyla kanıtla; grafik sebebi söylemez."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Çubuk grafik ile çizgi grafik arasında ne fark var?",
+   "cevap": "Çubuk grafikte her değer bir çubuktur. Çizgi grafikte noktalar bir çizgiyle birleşir; artış ve azalma çizginin yönünden okunur (kitap dışı)."
+  },
+  {
+   "soru": "“Sağlıklı Aile” metni neden çocukların karşılaştırılmamasını söylüyor?",
+   "cevap": "Metne göre her çocuğun kendine özgü bir kişiliği vardır ve çocuklar başkalarıyla karşılaştırılmaz (s. 149). Karşılaştırma bilgileri ve metinleri anlamak için iyi bir yoldur; insanları birbirine göre ölçmek için değil."
+  },
+  {
+   "soru": "Koşulsuz sevgi her şeye “evet” demek mi?",
+   "cevap": "Hayır. Metne göre koşulsuz seven kişi kızgınlığını da belli eder, ama sevgisini hiç esirgemez (s. 149)."
+  },
+  {
+   "soru": "Grafikteki aramalar neden azalmış olabilir?",
+   "cevap": "Grafik bunun sebebini söylemez; yalnızca sayıları gösterir. Sebebi öğrenmek için başka bir kaynağa bakmak gerekir. Sayıyı ve sebebi karıştırma!"
+  },
+  {
+   "soru": "Bir akranıma ve bir yaşlıya telefon kullanmayı öğretmek aynı mı?",
+   "cevap": "Kitap bunu karşılaştırmanı ister (s. 155). Önce ölçütünü seç: hız, sabır, kullanılan kelimeler. Sonra her ölçütte benzer ve farklı yönleri yaz."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "“Sağlıklı Aile” ve “Ekranın Öbür Ucu” metinlerini “empati” ölçütüyle karşılaştır: bir benzerlik, bir farklılık yaz.",
+   "ornekCevap": "Benzerlik: İki metin de karşımızdakini anlamaya çalışmayı önemser. Farklılık: “Sağlıklı Aile” bunu aile içinde anlatır; “Ekranın Öbür Ucu” ise sanal ortamda anlatır.",
+   "anahtarlar": [
+    "empati",
+    "benzer",
+    "ikisi de",
+    "farklı",
+    "ise",
+    "oysa"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kitap, “Sağlıklı Aile” metnini hangi ölçütlere göre karşılaştırtır?",
+   "secenekler": [
+    "Saygı, zorbalık, empati, sevgi odaklı iletişim",
+    "Uzunluk, başlık ve yazarın adı",
+    "Yazım, noktalama ve paragraf sayısı"
+   ],
+   "dogru": 0,
+   "ipucu": "Akılda kalsın: Neye göre bakıyorum? Kitaptaki kutuları hatırla.",
+   "aciklama": "Kitaptaki dört ölçüt saygı, zorbalık, empati ve sevgi odaklı iletişimdir (s. 150).",
+   "kavram": "Karşılaştırma Ölçütü"
+  },
+  {
+   "soru": "Hangisi bir farklılık cümlesidir?",
+   "secenekler": [
+    "İki metin de saygıyı önemser.",
+    "Birinci metin aileyi anlatır; ikincisi ise sanal ortamı.",
+    "Her iki metin de iletişimden söz eder."
+   ],
+   "dogru": 1,
+   "ipucu": "Farklılık ipuçlarını ara: oysa, ise …",
+   "aciklama": "“ise” ile iki metnin ayrı yönü anlatılmış; bu bir farklılıktır.",
+   "kavram": "Benzerlik ve Farklılık"
+  },
+  {
+   "soru": "Metne göre mektup ile e-posta hangi yönden benzerdir?",
+   "secenekler": [
+    "Ulaşma hızı",
+    "Kullanılan araç",
+    "Amacı"
+   ],
+   "dogru": 2,
+   "ipucu": "Benzerlik ipucunu ara: “aynıdır”.",
+   "aciklama": "Son cümlede iki yolun amacının aynı olduğu söyleniyor: sevdiklerimize haber vermek.",
+   "kavram": "Benzerlik ve Farklılık",
+   "metinBaslik": "Mektuptan E-postaya",
+   "metin": [
+    "Eskiden insanlar uzaktaki yakınlarına mektup yazardı.",
+    "Bir mektubun ulaşması günler sürerdi.",
+    "Bugün e-postayla yazdığımız ileti birkaç saniyede ulaşır.",
+    "Yine de iki yolun amacı aynıdır: Sevdiklerimize haber vermek."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "“aynıdır” kelimesinin geçtiği cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Mektup ile e-postanın benzer yönünü.",
+     "Anahtar kelime: benzer. Benzerlik ortak yöndür.",
+     "Kanıt: İkisinin ortak yönünü söyleyen cümleyi bul.",
+     "Şıkları ele: Hız ve araç ortak mı, yoksa metinde farklı mı anlatılıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "“Sağlıklı Aile”de koşulsuz seven kişi sevdiğini dinler, anlamaya çalışır (s. 149). “Ekranın Öbür Ucu”nda yazmadan önce “Bu söz bana söylense ne hissederdim?” diye düşünmek öneriliyor. İki metin hangi ölçütte benzeşiyor?",
+   "secenekler": [
+    "Empati",
+    "Zorbalık",
+    "Sayısal veri"
+   ],
+   "dogru": 0,
+   "ipucu": "Karşındakinin yerine kendini koymaya ne ad verilir?",
+   "aciklama": "İki metin de karşımızdakini anlamayı önerir; ortak ölçüt empatidir (s. 149–150).",
+   "kavram": "Metinleri Karşılaştırma"
+  },
+  {
+   "soru": "İki metin hangi ölçüte göre karşılaştırılabilir?",
+   "secenekler": [
+    "Uydularının adı",
+    "Güneş'e uzaklık",
+    "Keşfedildikleri yıl"
+   ],
+   "dogru": 1,
+   "ipucu": "Aynı ölçüt iki metinde de geçmeli.",
+   "aciklama": "İki metin de gezegenin Güneş'e göre sırasını söylüyor; ortak ölçüt Güneş'e uzaklıktır.",
+   "kavram": "Metinleri Karşılaştırma",
+   "metin": [
+    [
+     "Merkür, Güneş'e en yakın gezegendir.",
+     "Atmosferi yok denecek kadar azdır.",
+     "Gündüzleri çok sıcak, geceleri çok soğuktur."
+    ],
+    [
+     "Mars, Güneş'e uzaklık bakımından dördüncü gezegendir.",
+     "İnce bir atmosferi vardır.",
+     "Yüzeyindeki demirli toz ona kızıl rengini verir."
+    ]
+   ],
+   "kanit": [
+    0,
+    3
+   ],
+   "kanitIpucu": "İki metinde de geçen bilgiyi taşıyan cümlelerden birine dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki metnin ortak ölçütünü.",
+     "Anahtar kelime: ölçüt. Neye göre bakıyorum?",
+     "Kanıt: İki metinde de geçen bilgiyi taşıyan cümleyi bul.",
+     "Şıkları ele: Uydu adı ve keşif yılı metinlerde geçiyor mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir çubuk grafikte çubuğun boyu neyi gösterir?",
+   "secenekler": [
+    "Yılın adını",
+    "Miktarın büyüklüğünü",
+    "Grafiğin başlığını"
+   ],
+   "dogru": 1,
+   "ipucu": "Akılda kalsın: Önce eksenleri oku. Çubuk hangi eksene doğru uzanıyor?",
+   "aciklama": "Çubuk ne kadar uzunsa miktar o kadar büyüktür.",
+   "kavram": "Grafik Okuma"
+  },
+  {
+   "soru": "Kitaptaki grafiğe göre arama sayısının en yüksek olduğu yıl hangisidir?",
+   "secenekler": [
+    "2016",
+    "2014",
+    "2010"
+   ],
+   "dogru": 2,
+   "ipucu": "En uzun çubuğu ara.",
+   "aciklama": "En yüksek değer 2010'daki 45.172'dir (s. 151).",
+   "kavram": "Grafik Okuma"
+  },
+  {
+   "soru": "Kitaptaki grafikte arama sayısının bir önceki yıla göre arttığı tek yıl hangisidir?",
+   "secenekler": [
+    "2014",
+    "2012",
+    "2016"
+   ],
+   "dogru": 0,
+   "ipucu": "Akılda kalsın: Bir öncekine bak. Hangi yıl sayı büyümüş?",
+   "aciklama": "2013'te 4.840 olan sayı 2014'te 8.716'ya çıkmıştır (s. 151).",
+   "kavram": "Artış ve Azalma"
+  },
+  {
+   "soru": "Tabloya göre aşağıdakilerden hangisi söylenemez?",
+   "secenekler": [
+    "2014'te arama sayısı bir önceki yıla göre artmıştır.",
+    "2015'te arama sayısı 5 binin altındadır.",
+    "2016'daki arama sayısı 2010'dakinden fazladır."
+   ],
+   "dogru": 2,
+   "ipucu": "Her şıkkı tablodaki sayıyla karşılaştır.",
+   "aciklama": "2016'da 2.223, 2010'da 45.172 arama var; 2016 daha azdır (s. 151).",
+   "kavram": "Grafikten Yargı Doğrulama",
+   "metin": [
+    "Tablo, kitaptaki grafiğin sayılarını gösteriyor."
+   ],
+   "tablo": {
+    "baslik": "Genel ağ üzerinden yapılan telefon aramaları (s. 151)",
+    "basliklar": [
+     "Yıl",
+     "Arama sayısı"
+    ],
+    "satirlar": [
+     [
+      "2010",
+      "45.172"
+     ],
+     [
+      "2011",
+      "17.017"
+     ],
+     [
+      "2012",
+      "7.236"
+     ],
+     [
+      "2013",
+      "4.840"
+     ],
+     [
+      "2014",
+      "8.716"
+     ],
+     [
+      "2015",
+      "2.957"
+     ],
+     [
+      "2016",
+      "2.223"
+     ]
+    ]
+   },
+   "kanit": [
+    "t0",
+    "t6"
+   ],
+   "kanitIpucu": "Söylenemez soruyor: Yanlış yargıyı çürüten satıra dokun. 2010 ya da 2016 satırına bak.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Söylenemez: yanlış olan yargıyı.",
+     "Anahtar kelimeler: yıllar ve sayılar.",
+     "Kanıt: Şıktaki yılların satırlarını bul, sayıları yan yana koy.",
+     "Şıkları ele: Hangi yargı sayılarla uyuşmuyor?"
+    ]
+   }
+  },
+  {
+   "soru": "“İnsanlar 2016'da telefonla daha az konuşmuştur.” yargısı için hangisi doğrudur?",
+   "secenekler": [
+    "Grafik yalnızca genel ağ üzerinden yapılan aramaları gösterir; bu yargıyı kanıtlamaz.",
+    "Grafik bu yargıyı kesin olarak kanıtlar.",
+    "Grafikte 2016 yılı yoktur."
+   ],
+   "dogru": 0,
+   "ipucu": "Grafiğin başlığı neyi sayıyor? Bütün telefon konuşmalarını mı?",
+   "aciklama": "Grafik yalnızca genel ağ üzerinden yapılan aramaları sayar; bütün konuşmaları göstermez (s. 151).",
+   "kavram": "Grafikten Yargı Doğrulama"
+  }
+ ]
+}

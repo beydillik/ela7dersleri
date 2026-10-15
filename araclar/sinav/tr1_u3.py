@@ -85,4 +85,33 @@ a("u3k3", "Anlatıma Katkısı", "secim", soru="Düşünceyi geliştirme yollar�
 a("u3k3", "Gelişme", "kisa", soru="Bilgilendirici metinde konunun açıklandığı ve örneklerle desteklendiği, en uzun bölüme ne ad verilir?",
   yanit="gelişme", kabul=["gelişme bölümü"],
   aciklama=f"Konu gelişmede açıklanır ve desteklenir {K3}.")
+# --- Konu 4: Karşılaştırma: iki metin ve bir grafik ("Sağlıklı Aile", s. 151 grafiği)
+TAB4 = {"baslik": "Genel ağ üzerinden yapılan telefon aramaları (s. 151)", "basliklar": ["Yıl", "Arama sayısı"],
+        "satirlar": [["2010", "45.172"], ["2011", "17.017"], ["2012", "7.236"], ["2013", "4.840"], ["2014", "8.716"], ["2015", "2.957"], ["2016", "2.223"]]}
+a("u3k4", "Grafikten Yargı Doğrulama", "dytablo", soru="Tabloya göre her ifade için Doğru ya da Yanlış seç.", tablo=TAB4, ifadeler=[
+  {"s": "Arama sayısı 2010'dan 2013'e kadar her yıl azalmıştır.", "d": True},
+  {"s": "2015'te arama sayısı bir önceki yıla göre artmıştır.", "d": False},
+  {"s": "Arama sayısı en düşük değerine 2016'da inmiştir.", "d": True},
+  {"s": "2012'deki arama sayısı 10 binden fazladır.", "d": False}],
+  aciklama="Her yargıyı tablodaki sayıyla kontrol et; bir önceki yıla bak (s. 151).")
+a("u3k4", "Artış ve Azalma", "bosluk", havuz=["eşitlik", "dikey"], cumleler=[
+  {"c": "Bir yılın sayısı bir öncekinden büyükse ___ vardır.", "cevap": "artış"},
+  {"c": "Bir yılın sayısı bir öncekinden küçükse ___ vardır.", "cevap": "azalma"},
+  {"c": "Artış ya da azalmayı bulmak için bir ___ yıla bakılır.", "cevap": "önceki"}],
+  aciklama="Bir öncekine bak: büyükse artış, küçükse azalma (s. 151).")
+a("u3k4", "Karşılaştırma Ölçütü", "secim", soru="İki metni karşılaştırmaya başlamadan önce ilk olarak ne yapılmalıdır?",
+  secenekler=["Metinlerin uzunluğu ölçülmelidir.", "Karşılaştırma ölçütü seçilmelidir.", "Yazarların hayatı araştırılmalıdır.", "Daha kısa olan metin seçilmelidir."], dogru=1,
+  aciklama="Önce ölçüt seçilir: Neye göre bakıyorum? Kitapta ölçütler saygı, empati gibi kavramlardır (s. 150).")
+a("u3k4", "Benzerlik ve Farklılık", "eslestir", soru="İfadeyi anlattığı şeyle eşleştir.", ciftler=[
+  {"sol": "İkisi de saygıyı önemser.", "sag": "Benzerlik"},
+  {"sol": "Biri aileyi anlatır, öteki ise sanal ortamı.", "sag": "Farklılık"},
+  {"sol": "Saygı, empati, zorbalık", "sag": "Karşılaştırma ölçütü"}],
+  aciklama="Ortak yön benzerlik, ayrı yön farklılıktır; neye göre baktığımız ölçüttür (s. 150).")
+a("u3k4", "Metinleri Karşılaştırma", "secim", soru="“Sağlıklı Aile” metniyle ilgili aşağıdaki ifadeler verilmiştir.",
+  onculler=["Kuşaklar arasındaki düşünce farklılıklarına saygı duyulduğunu söyler.", "Çocukların başkalarıyla karşılaştırılmasını önerir.", "Koşulsuz seven kişinin sevdiğini dinlediğini anlatır."],
+  kok="Yukarıdakilerden hangileri metinde vardır?", secenekler=["Yalnız I", "I ve III", "II ve III", "I, II ve III"], dogru=1,
+  aciklama="Metne göre çocuklar başkalarıyla karşılaştırılmaz; II yanlıştır (s. 149).")
+a("u3k4", "Grafik Okuma", "kisa", soru="Kitaptaki grafikte yatay eksende yıllar vardır. Dikey eksende ne gösterilir?",
+  yanit="arama sayısı", kabul=["arama sayısı", "aramaların sayısı", "telefon arama sayısı", "arama"],
+  aciklama="Dikey eksende arama sayısı, yatay eksende yıllar vardır (s. 151).")
 H.yaz()

@@ -346,6 +346,167 @@
     "gelişme bölümü"
    ],
    "aciklama": "Konu gelişmede açıklanır ve desteklenir (s. 167)."
+  },
+  {
+   "id": "t3-19",
+   "konu": "u3k4",
+   "kavram": "Grafikten Yargı Doğrulama",
+   "tur": "dytablo",
+   "soru": "Tabloya göre her ifade için Doğru ya da Yanlış seç.",
+   "tablo": {
+    "baslik": "Genel ağ üzerinden yapılan telefon aramaları (s. 151)",
+    "basliklar": [
+     "Yıl",
+     "Arama sayısı"
+    ],
+    "satirlar": [
+     [
+      "2010",
+      "45.172"
+     ],
+     [
+      "2011",
+      "17.017"
+     ],
+     [
+      "2012",
+      "7.236"
+     ],
+     [
+      "2013",
+      "4.840"
+     ],
+     [
+      "2014",
+      "8.716"
+     ],
+     [
+      "2015",
+      "2.957"
+     ],
+     [
+      "2016",
+      "2.223"
+     ]
+    ]
+   },
+   "ifadeler": [
+    {
+     "s": "Arama sayısı 2010'dan 2013'e kadar her yıl azalmıştır.",
+     "d": true
+    },
+    {
+     "s": "2015'te arama sayısı bir önceki yıla göre artmıştır.",
+     "d": false
+    },
+    {
+     "s": "Arama sayısı en düşük değerine 2016'da inmiştir.",
+     "d": true
+    },
+    {
+     "s": "2012'deki arama sayısı 10 binden fazladır.",
+     "d": false
+    }
+   ],
+   "aciklama": "Her yargıyı tablodaki sayıyla kontrol et; bir önceki yıla bak (s. 151)."
+  },
+  {
+   "id": "t3-20",
+   "konu": "u3k4",
+   "kavram": "Artış ve Azalma",
+   "tur": "bosluk",
+   "havuz": [
+    "eşitlik",
+    "dikey"
+   ],
+   "cumleler": [
+    {
+     "c": "Bir yılın sayısı bir öncekinden büyükse ___ vardır.",
+     "cevap": "artış"
+    },
+    {
+     "c": "Bir yılın sayısı bir öncekinden küçükse ___ vardır.",
+     "cevap": "azalma"
+    },
+    {
+     "c": "Artış ya da azalmayı bulmak için bir ___ yıla bakılır.",
+     "cevap": "önceki"
+    }
+   ],
+   "aciklama": "Bir öncekine bak: büyükse artış, küçükse azalma (s. 151)."
+  },
+  {
+   "id": "t3-21",
+   "konu": "u3k4",
+   "kavram": "Karşılaştırma Ölçütü",
+   "tur": "secim",
+   "soru": "İki metni karşılaştırmaya başlamadan önce ilk olarak ne yapılmalıdır?",
+   "secenekler": [
+    "Metinlerin uzunluğu ölçülmelidir.",
+    "Karşılaştırma ölçütü seçilmelidir.",
+    "Yazarların hayatı araştırılmalıdır.",
+    "Daha kısa olan metin seçilmelidir."
+   ],
+   "dogru": 1,
+   "aciklama": "Önce ölçüt seçilir: Neye göre bakıyorum? Kitapta ölçütler saygı, empati gibi kavramlardır (s. 150)."
+  },
+  {
+   "id": "t3-22",
+   "konu": "u3k4",
+   "kavram": "Benzerlik ve Farklılık",
+   "tur": "eslestir",
+   "soru": "İfadeyi anlattığı şeyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "İkisi de saygıyı önemser.",
+     "sag": "Benzerlik"
+    },
+    {
+     "sol": "Biri aileyi anlatır, öteki ise sanal ortamı.",
+     "sag": "Farklılık"
+    },
+    {
+     "sol": "Saygı, empati, zorbalık",
+     "sag": "Karşılaştırma ölçütü"
+    }
+   ],
+   "aciklama": "Ortak yön benzerlik, ayrı yön farklılıktır; neye göre baktığımız ölçüttür (s. 150)."
+  },
+  {
+   "id": "t3-23",
+   "konu": "u3k4",
+   "kavram": "Metinleri Karşılaştırma",
+   "tur": "secim",
+   "soru": "“Sağlıklı Aile” metniyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Kuşaklar arasındaki düşünce farklılıklarına saygı duyulduğunu söyler.",
+    "Çocukların başkalarıyla karşılaştırılmasını önerir.",
+    "Koşulsuz seven kişinin sevdiğini dinlediğini anlatır."
+   ],
+   "kok": "Yukarıdakilerden hangileri metinde vardır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Metne göre çocuklar başkalarıyla karşılaştırılmaz; II yanlıştır (s. 149)."
+  },
+  {
+   "id": "t3-24",
+   "konu": "u3k4",
+   "kavram": "Grafik Okuma",
+   "tur": "kisa",
+   "soru": "Kitaptaki grafikte yatay eksende yıllar vardır. Dikey eksende ne gösterilir?",
+   "yanit": "arama sayısı",
+   "kabul": [
+    "arama sayısı",
+    "aramaların sayısı",
+    "telefon arama sayısı",
+    "arama"
+   ],
+   "aciklama": "Dikey eksende arama sayısı, yatay eksende yıllar vardır (s. 151)."
   }
  ]
 }

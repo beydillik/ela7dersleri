@@ -1,0 +1,348 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Ara Durak 1: Metni Okumak ve Karşılaştırmak",
+ "sayfalar": "Konu 1–4 · s. 122–155",
+ "giris": "Bu temada dört konu bitti! Kısa bir mola verip neler öğrendiğine bakalım. Önce kartlara dokun, hatırlayıp hatırlamadığını söyle. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Dört konunun ortak işi metni dikkatle okumaktır. Hikâyede duyguları ve bölümleri (Konu 1), cümlede kelimeleri ve ifadeleri (Konu 2), bilgilendirici metinde giriş, gelişme ve sonucu (Konu 3) bulduk. En sonda iki metni ve bir grafiği aynı ölçütle karşılaştırdık (Konu 4). Hepsinde aynı kural var: Cevabını metindeki ya da grafikteki kanıtla göster.",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3",
+  "u3k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Duygunun bir sebebi vardır: Neden böyle hissetti?",
+    "Karakterin gözünden bak: Onun yerinde olsaydım?",
+    "Yeni bölüm, olayların yönü değişince başlar; fakat, bir gün, nihayet bölümleri bağlar."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Anahtar kelimeler metnin konusunu taşır.",
+    "Deyim kalıplaşmıştır, çoğunlukla mecazdır; kalıp ifade bir durumun hazır sözüdür.",
+    "Nesnel ifade kanıtlanır; öznel ifade kişisel görüştür."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Giriş tanıtır, gelişme açıklar, sonuç toparlar.",
+    "Çünkü, oysa, bu yüzden bölümleri bağlar.",
+    "Yolu bulmak için ipucu kelimeyi ara: gibi, daha, örneğin."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Önce ölçütü seç: Neye göre bakıyorum?",
+    "Ortak yön benzerlik, ayrı yön farklılıktır.",
+    "Grafikte bir öncekine bak; yargıyı sayıyla kanıtla."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Hikâyeyi anlamak",
+     "uyeler": [
+      "Duygunun Sebebi",
+      "Karakterin Gözünden Bakmak",
+      "Bölümler Arası Geçiş"
+     ]
+    },
+    {
+     "etiket": "Kelime ve ifade",
+     "uyeler": [
+      "Eş Sesli Kelimeler",
+      "Deyim",
+      "Öznel ve Nesnel İfade"
+     ]
+    },
+    {
+     "etiket": "Bilgilendirici metin",
+     "uyeler": [
+      "Giriş",
+      "Gelişme",
+      "Yolu Metinde Bulma"
+     ]
+    },
+    {
+     "etiket": "Karşılaştırma ve grafik",
+     "uyeler": [
+      "Benzerlik ve Farklılık",
+      "Grafik Okuma",
+      "Artış ve Azalma"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Elif'in “ayakları yere değmedi” sözüyle anlatılan duygusunun sebebi nedir?",
+   "secenekler": [
+    "Pencereden yolu izlemesi",
+    "Bayram hazırlığının bitmesi",
+    "Dedesinin gelmesi"
+   ],
+   "dogru": 2,
+   "ipucu": "Deyim çok sevinmeyi anlatır. Neye sevindi?",
+   "aciklama": "“Ayakları yere değmemek” çok sevinmek demektir; Elif dedesini görünce sevindi.",
+   "metinBaslik": "Bayram Sabahı",
+   "metin": [
+    "Elif sabahtan beri pencereden yolu gözlüyordu.",
+    "Dedesi bayram için köyden gelecekti.",
+    "Kapı çalınınca yerinden fırladı.",
+    "Kapıda dedesini görünce sevinçten ayakları yere değmedi."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Deyimin geçtiği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Duygunun Sebebi"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Deyim"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Duygunun sebebini.",
+     "Anahtar kelime: “ayakları yere değmedi”. Bu deyim hangi duyguyu anlatır?",
+     "Kanıt: Deyimin geçtiği cümlede Elif ne görüyor?",
+     "Şıkları ele: Hangisi o cümlede sevincin sebebi olarak geçiyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Tabloya göre hangisi nesnel ve doğru bir yargıdır?",
+   "secenekler": [
+    "Ekim'de ödünç alınan kitap sayısı Eylül'e göre artmıştır.",
+    "Kasım'da alınan kitaplar en güzel kitaplardı.",
+    "Kasım'da kitap sayısı Ekim'e göre artmıştır."
+   ],
+   "dogru": 0,
+   "ipucu": "Nesnel yargı sayıyla kanıtlanır. Bir önceki aya bak.",
+   "aciklama": "Eylül'de 120, Ekim'de 180 kitap var: artış. “En güzel” öznel; Kasım'da ise azalma var.",
+   "metin": [
+    "Tablo, okul kütüphanesinden üç ayda ödünç alınan kitapları gösteriyor."
+   ],
+   "tablo": {
+    "baslik": "Ödünç alınan kitaplar",
+    "basliklar": [
+     "Ay",
+     "Kitap sayısı"
+    ],
+    "satirlar": [
+     [
+      "Eylül",
+      "120"
+     ],
+     [
+      "Ekim",
+      "180"
+     ],
+     [
+      "Kasım",
+      "150"
+     ]
+    ]
+   },
+   "kanit": [
+    "t0",
+    "t1"
+   ],
+   "kanitIpucu": "Doğru yargıyı gösteren satırlardan birine dokun: Eylül ya da Ekim.",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Öznel ve Nesnel İfade"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Grafikten Yargı Doğrulama"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Hem nesnel hem doğru olan yargıyı.",
+     "Anahtar kelimeler: nesnel, artmıştır.",
+     "Kanıt: Şıktaki ayların satırlarını bul, sayıları karşılaştır.",
+     "Şıkları ele: Kişisel görüş olan ve sayılarla uyuşmayan şıkkı çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Köy ile şehir hayatı arasındaki farklılık metnin hangi bölümünde anlatılmıştır?",
+   "secenekler": [
+    "Giriş",
+    "Gelişme",
+    "Sonuç"
+   ],
+   "dogru": 1,
+   "ipucu": "Farklılık ipucusu “ise” hangi cümlede? O cümle metnin neresinde?",
+   "aciklama": "“Şehirde ise” cümlesi farkı anlatır; açıklamalar gelişme bölümündedir.",
+   "metinBaslik": "Köy ve Şehir",
+   "metin": [
+    "Köy ve şehir hayatının kendine özgü güzellikleri vardır.",
+    "Köyde insanlar genellikle tarım ve hayvancılıkla geçinir.",
+    "Şehirde ise fabrikalarda, ofislerde ve dükkânlarda çalışırlar.",
+    "İki yerde de insanlar komşuluk ilişkileriyle birbirine bağlanır.",
+    "Kısacası köy de şehir de emekle ve dayanışmayla yaşanan yerlerdir."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Farklılık ipucusu “ise” olan cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Gelişme"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Benzerlik ve Farklılık"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Farklılığın anlatıldığı bölümü.",
+     "Anahtar kelime: farklılık. İpucu: oysa, ise.",
+     "Kanıt: “ise” geçen cümleyi bul; metnin başında mı, ortasında mı, sonunda mı?",
+     "Şıkları ele: Giriş tanıtır, sonuç toparlar. Açıklama nerede?"
+    ]
+   }
+  },
+  {
+   "soru": "Deniz, Zeynep'in gözünden bakarak ne yapmıştır?",
+   "secenekler": [
+    "Konuyu hemen değiştirmiştir.",
+    "Zeynep'e geç kaldığı için kızmıştır.",
+    "Kalıp bir ifadeyle iyi dileğini söyleyip yardım teklif etmiştir."
+   ],
+   "dogru": 2,
+   "ipucu": "Deniz'in sözünde hem “geçmiş olsun” hem bir teklif var.",
+   "aciklama": "Deniz “Geçmiş olsun!” der ve Zeynep'in zorlandığını düşünüp çantasını taşımayı önerir.",
+   "metinBaslik": "Okul Yolunda",
+   "metin": [
+    {
+     "kim": "Zeynep",
+     "s": "Dün dizimi incittim, yürürken zorlanıyorum."
+    },
+    {
+     "kim": "Deniz",
+     "s": "Geçmiş olsun! Çantanı ben taşıyayım mı?"
+    },
+    {
+     "kim": "Zeynep",
+     "s": "Çok sevinirim, teşekkür ederim."
+    }
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Deniz'in konuştuğu satıra dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Karakterin Gözünden Bakmak"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Kalıp İfade"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Deniz'in ne yaptığını.",
+     "Anahtar kelimeler: Zeynep'in gözünden bakmak, yani onun yerine kendini koymak.",
+     "Kanıt: Deniz'in sözünü bul.",
+     "Şıkları ele: Deniz kızıyor mu, konuyu mu değiştiriyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde hangi düşünceyi geliştirme yolu kullanılmıştır ve ikinci hafta ne olmuştur?",
+   "secenekler": [
+    "Sayısal verilerden yararlanma; artış olmuştur.",
+    "Tanık gösterme; azalma olmuştur.",
+    "Benzetme; değişmemiştir."
+   ],
+   "dogru": 0,
+   "ipucu": "Metinde sayılar mı var, “gibi” mi? 40 ile 55'i karşılaştır.",
+   "aciklama": "Litre değerleri sayısal veridir; 40'tan 55 litreye çıkmak artıştır.",
+   "metinBaslik": "Sınıfımızın Suyu",
+   "metin": [
+    "Sınıfımızda bir ay boyunca içilen su miktarını ölçtük.",
+    "İlk hafta 40 litre su içtik.",
+    "Hava ısınınca ikinci hafta bu miktar 55 litreye çıktı.",
+    "Üçüncü hafta ise 50 litreye indi."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "İkinci haftanın sayısını veren cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Yolu Metinde Bulma"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Artış ve Azalma"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki şeyi: yolu ve ikinci haftadaki değişimi.",
+     "Anahtar kelimeler: ikinci hafta, litre.",
+     "Kanıt: İkinci haftanın sayısını bul, bir önceki haftayla karşılaştır.",
+     "Şıkları ele: Metinde alıntı ya da “gibi” var mı? Sayı büyüdü mü küçüldü mü?"
+    ]
+   }
+  },
+  {
+   "soru": "“Eskici” hikâyesini olay akışına göre özetlerken hangi kelime mutlaka yer almalıdır?",
+   "secenekler": [
+    "vinç",
+    "eskici",
+    "sandal"
+   ],
+   "dogru": 1,
+   "ipucu": "Anahtar kelime metnin konusunu taşır. Hikâyenin adına bak.",
+   "aciklama": "Eskici hikâyenin anahtar kelimesidir; özette olmazsa olaylar anlatılamaz (s. 129).",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Olay Akışına Göre Özet"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Anahtar Söz Varlığı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Özette olmazsa olmaz kelimeyi.",
+     "Anahtar kelime: özet. Özette önemli olan kalır.",
+     "Hikâyenin adını ve olayların kimin etrafında döndüğünü hatırla.",
+     "Şıkları ele: Hangileri yalnızca bir sahnenin ayrıntısı?"
+    ]
+   }
+  }
+ ]
+}
