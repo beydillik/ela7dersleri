@@ -1,6 +1,6 @@
-# Motor notları (Faz 1 eki ve Faz 2) — ela-ders-defteri skill'inin 9. bölümüne ek
+# Motor notları (Faz 1 eki, Faz 2–3)
 
-Bu dosya, skill'e henüz eklenmemiş motor kurallarını toplar. Faz 2 bitince skill'e taşınacak.
+Bu notlar 15 Ekim 2026'da ela-ders-defteri skill'inin 10. bölümüne taşındı (skill güncellemesi Kemal'in onayına sunuldu). Burada çalışma kopyası olarak duruyor.
 
 ## Veli Paneli (`public/veli/`)
 - Ana sayfanın alt bilgisinde küçük "Veli" bağlantısı. Ders sayfalarındaki `#rapor` buraya yönlenir.
