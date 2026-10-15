@@ -1,0 +1,511 @@
+{
+ "id": "u2k7",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "İsim Çekim Ekleri",
+ "sayfalar": "s. 109–110",
+ "giris": "Bu konuda isimlere gelen çekim eklerini tanıyacağız: çoğul eki, hâl ekleri, ilgi eki ve iyelik ekleri. Bu ekler yeni bir kelime yapmaz; kelimeyi cümleye bağlar. Kitaptaki Millî Mücadele cümlelerinden (s. 109) örneklerle çalışacağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, önceki yıllardan bildiğin iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "İsim ve Fiil",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>ad mı, iş mi?</text><rect x='33.1' y='36' width='53.8' height='22' rx='8' fill='#fbf6e6'/><text x='60.0' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>bayrak</text><rect x='27.1' y='62' width='31.9' height='22' rx='8' fill='#fbf6e6'/><text x='43.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>koş</text><rect x='61.0' y='62' width='31.9' height='22' rx='8' fill='#f5c53d'/><text x='77.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>mak</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>isim / fiil</text></svg>",
+    "akilda": "Ad mı, iş mi?",
+    "anlatim": "İsimler varlıkların ve kavramların adıdır: kitap, Ankara, özgürlük. Fiiller iş, oluş ya da hareket bildirir: koşmak, gelmek.",
+    "sorular": [
+     {
+      "soru": "Hangisi bir fiildir?",
+      "secenekler": [
+       "bayrak",
+       "yürümek",
+       "cesaret"
+      ],
+      "dogru": 1,
+      "ipucu": "Hangisi bir iş ya da hareket bildiriyor?",
+      "aciklama": "“Yürümek” bir hareket bildirir; fiildir."
+     },
+     {
+      "soru": "Hangisi bir isimdir?",
+      "secenekler": [
+       "zafer",
+       "koşmak",
+       "gelmek"
+      ],
+      "dogru": 0,
+      "ipucu": "Hangisi bir şeyin adı?",
+      "aciklama": "“Zafer” bir kavramın adıdır; isimdir."
+     }
+    ]
+   },
+   {
+    "ad": "Kök ve Ek",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>kök + ek</text><rect x='13.8' y='44' width='24.6' height='22' rx='8' fill='#fbf6e6'/><text x='26.1' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ev</text><rect x='40.4' y='44' width='31.9' height='22' rx='8' fill='#f5c53d'/><text x='56.3' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ler</text><rect x='74.3' y='44' width='31.9' height='22' rx='8' fill='#f5c53d'/><text x='90.2' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>den</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>evlerden</text></svg>",
+    "akilda": "Kök + ek",
+    "anlatim": "Kök, kelimenin anlamlı en küçük parçasıdır: “evlerden” kelimesinin kökü “ev”dir. Ek tek başına anlam taşımaz; köke eklenir.",
+    "sorular": [
+     {
+      "soru": "“evlerden” kelimesinin kökü hangisidir?",
+      "secenekler": [
+       "evler",
+       "ev",
+       "evlerden"
+      ],
+      "dogru": 1,
+      "ipucu": "Ekleri tek tek at; anlamlı en küçük parça kalsın.",
+      "aciklama": "Kök “ev”dir; “-ler” ve “-den” ektir."
+     },
+     {
+      "soru": "“okulda” kelimesindeki ek hangisidir?",
+      "secenekler": [
+       "oku",
+       "-da",
+       "okul"
+      ],
+      "dogru": 1,
+      "ipucu": "Kök “okul”. Geriye ne kaldı?",
+      "aciklama": "Kök “okul”, ek “-da”dır."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Çoğul Eki",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>çoğul</text><rect x='19.8' y='44' width='46.5' height='22' rx='8' fill='#fbf6e6'/><text x='43.0' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>asker</text><rect x='68.3' y='44' width='31.9' height='22' rx='8' fill='#f5c53d'/><text x='84.2' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ler</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>birden çok</text></svg>",
+   "aciklama": "“-ler, -lar” eki isme “birden çok” anlamı katar: kitap → kitaplar, ev → evler.",
+   "ek": "Kitap bu eki “isme çoğul anlamı katan ek” diye tanıtır (s. 110). Kalın ünlülü kelimeye “-lar”, ince ünlülü kelimeye “-ler” gelir: bayraklar, askerler.",
+   "akilda": "Birden çok: -ler, -lar",
+   "soru": {
+    "soru": "“kahramanlar” kelimesindeki “-lar” eki isme hangi anlamı katar?",
+    "secenekler": [
+     "Sahiplik",
+     "Birden çok",
+     "Yer"
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: Birden …",
+    "aciklama": "“-lar” çoğul ekidir; “birden çok kahraman” anlamı katar (s. 110)."
+   }
+  },
+  {
+   "ad": "Belirtme Hâli",
+   "renk": "#b5562f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>Neyi? Kimi?</text><rect x='23.5' y='44' width='53.8' height='22' rx='8' fill='#fbf6e6'/><text x='50.4' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>bayrağ</text><rect x='79.2' y='44' width='17.3' height='22' rx='8' fill='#f5c53d'/><text x='87.9' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ı</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>belirtme hâli</text></svg>",
+   "aciklama": "“-ı, -i, -u, -ü” eki ismi belirli yapar ve “Neyi? Kimi?” sorusunun cevabı olur: Kitabı okudum.",
+   "ek": "“Kitap okudum.” denince hangi kitap olduğu belli değildir. “Kitabı okudum.” denince belli bir kitap anlatılır. Kitap hâl eklerini “isme belirtme, yönelme, bulunma ve ayrılma anlamı katan ek” diye anlatır (s. 110).",
+   "akilda": "Neyi? Kimi?",
+   "soru": {
+    "soru": "“Mektubu postaya verdi.” cümlesinde hangi kelime belirtme hâl eki almıştır?",
+    "secenekler": [
+     "postaya",
+     "verdi",
+     "Mektubu"
+    ],
+    "dogru": 2,
+    "ipucu": "“Neyi verdi?” diye sor.",
+    "aciklama": "Neyi verdi? Mektubu. “-u” belirtme hâl ekidir (s. 110)."
+   }
+  },
+  {
+   "ad": "Yönelme Hâli",
+   "renk": "#2f8f5b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>Nereye?</text><rect x='16.1' y='44' width='61.1' height='22' rx='8' fill='#fbf6e6'/><text x='46.7' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>Ankara'</text><rect x='79.2' y='44' width='24.6' height='22' rx='8' fill='#f5c53d'/><text x='91.5' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ya</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>yönelme hâli</text></svg>",
+   "aciklama": "“-a, -e” eki “Nereye? Kime? Neye?” yönelindiğini gösterir: Eskişehir'e döndüler (s. 109).",
+   "ek": "Yönelme eki hareketin gittiği yeri gösterir. Ünlüyle biten kelimede araya “y” girer: Ankara-y-a, kapı-y-a.",
+   "akilda": "Nereye? Kime?",
+   "soru": {
+    "soru": "“Okula erken gitti.” cümlesinde “-a” eki hangi soruya cevap verir?",
+    "secenekler": [
+     "Nereye?",
+     "Nerede?",
+     "Nereden?"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Nere… Kime?",
+    "aciklama": "Nereye gitti? Okula. “-a” yönelme hâl ekidir (s. 110)."
+   }
+  },
+  {
+   "ad": "Bulunma ve Ayrılma Hâli",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>Nerede?</text><rect x='27.1' y='36' width='39.2' height='22' rx='8' fill='#fbf6e6'/><text x='46.7' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>okul</text><rect x='68.3' y='36' width='24.6' height='22' rx='8' fill='#f5c53d'/><text x='80.6' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>da</text><rect x='23.5' y='62' width='39.2' height='22' rx='8' fill='#fbf6e6'/><text x='43.1' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>okul</text><rect x='64.7' y='62' width='31.9' height='22' rx='8' fill='#f5c53d'/><text x='80.6' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>dan</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>Nereden?</text></svg>",
+   "aciklama": "“-de, -da” eki bir yerde bulunmayı (Nerede?), “-den, -dan” eki bir yerden ayrılmayı (Nereden?) gösterir: okulda, okuldan.",
+   "ek": "Sert ünsüzle (ç, f, h, k, p, s, ş, t) biten kelimede “d” sesi “t” olur: Bilecik'ten, sokakta (s. 109). Özel isimlere gelen ekler kesme işaretiyle ayrılır.",
+   "akilda": "Nerede? Nereden?",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Bilecik'ten Eskişehir'e döndüler.” (s. 109) Bu cümledeki isim çekim eklerini bulalım.",
+    "adimlar": [
+     {
+      "metin": "1. “Bilecik'ten” kelimesindeki ek hangi soruya cevap veriyor?",
+      "soru": {
+       "soru": "“Bilecik'ten” hangi sorunun cevabı?",
+       "secenekler": [
+        "Nereden?",
+        "Nereye?",
+        "Nerede?"
+       ],
+       "dogru": 0,
+       "ipucu": "Döndüler: bir yerden mi geldiler, bir yerde mi kaldılar?",
+       "aciklama": "Bilecik'ten: nereden? Ayrılma hâli."
+      },
+      "islem": "-ten → ayrılma hâli"
+     },
+     {
+      "metin": "2. “Eskişehir'e” kelimesindeki ek hangi soruya cevap veriyor?",
+      "soru": {
+       "soru": "“Eskişehir'e” hangi sorunun cevabı?",
+       "secenekler": [
+        "Nerede?",
+        "Nereye?",
+        "Nereden?"
+       ],
+       "dogru": 1,
+       "ipucu": "Döndüler: nereye gittiler?",
+       "aciklama": "Eskişehir'e: nereye? Yönelme hâli."
+      },
+      "islem": "-e → yönelme hâli"
+     },
+     {
+      "metin": "3. “-den” neden “-ten” olmuş? “Bilecik” sert “k” sesiyle bitiyor.",
+      "islem": "k + d → t"
+     }
+    ],
+    "sonuc": "Cümlede iki hâl eki var: ayrılma (-ten) ve yönelme (-e). Kitap da bu cümlede “-ten, -e” eklerini isim çekim eki olarak gösterir (s. 109)."
+   },
+   "soru": {
+    "soru": "“Ankara'dan Kütahya'ya gitti.” cümlesinde “-dan” eki hangi anlamı katar?",
+    "secenekler": [
+     "Bulunma",
+     "Yönelme",
+     "Ayrılma"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Nerede? Nere…?",
+    "aciklama": "Nereden gitti? Ankara'dan. “-dan” ayrılma hâl ekidir (s. 109)."
+   }
+  },
+  {
+   "ad": "İlgi Eki",
+   "renk": "#b58a2f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>Kimin? Neyin?</text><rect x='27.1' y='36' width='39.2' height='22' rx='8' fill='#fbf6e6'/><text x='46.7' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>okul</text><rect x='68.3' y='36' width='24.6' height='22' rx='8' fill='#f5c53d'/><text x='80.6' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>un</text><rect x='23.5' y='62' width='46.5' height='22' rx='8' fill='#fbf6e6'/><text x='46.7' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>bahçe</text><rect x='72.0' y='62' width='24.6' height='22' rx='8' fill='#7ad19a'/><text x='84.2' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>si</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>okulun bahçesi</text></svg>",
+   "aciklama": "“-ın, -in, -un, -ün” eki iki ismi birbirine bağlar ve “Kimin? Neyin?” sorusuna cevap verir: milletin azmi.",
+   "ek": "İlgi eki, isim tamlamasında ilk kelimeye gelir: okulun bahçesi, Atatürk'ün sözü. Ünlüyle biten kelimede “-nın, -nin” olur: Ayşe'nin kalemi. Kitap “isme ilgi anlamı katan ek” der (s. 110).",
+   "akilda": "Kimin? Neyin?",
+   "soru": {
+    "soru": "“Köyün meydanı kalabalıktı.” cümlesinde hangi kelime ilgi eki almıştır?",
+    "secenekler": [
+     "meydanı",
+     "Köyün",
+     "kalabalıktı"
+    ],
+    "dogru": 1,
+    "ipucu": "“Kimin, neyin meydanı?” diye sor.",
+    "aciklama": "Neyin meydanı? Köyün. “-ün” ilgi ekidir (s. 110)."
+   }
+  },
+  {
+   "ad": "İyelik Ekleri",
+   "renk": "#2f8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>benim</text><rect x='23.5' y='44' width='46.5' height='22' rx='8' fill='#fbf6e6'/><text x='46.7' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>kalem</text><rect x='72.0' y='44' width='24.6' height='22' rx='8' fill='#7ad19a'/><text x='84.2' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>im</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>kime ait?</text></svg>",
+   "aciklama": "İyelik eki bir şeyin kime ait olduğunu gösterir: kalemim (benim), kalemin (senin), kalemi (onun), kalemimiz, kaleminiz, kalemleri.",
+   "ek": "Dikkat: “kalemi” iki ayrı ek olabilir. “Ali'nin kalemi” → iyelik; “Kalemi aldım.” → belirtme hâli. Hangisi olduğunu cümle söyler. Kitap “isme iyelik anlamı katan ek” der (s. 110).",
+   "akilda": "Kime ait?",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "Kitaptaki tamamlama cümlesinde (s. 110) “Atatürk'ün önderliğinde” sözü kurulabilir. Bu sözdeki ekleri bulalım.",
+    "adimlar": [
+     {
+      "metin": "“Atatürk” kelimesine gelen ek “Kimin?” sorusuna cevap veriyor.",
+      "islem": "Atatürk'-ün → ilgi eki"
+     },
+     {
+      "metin": "“önderlik” kime ait? Atatürk'e. Önce iyelik eki gelmiş (“k” sesi “ğ” olur).",
+      "islem": "önderliğ-i → iyelik eki"
+     },
+     {
+      "metin": "En sonda “Nerede?” sorusunun cevabı var. Aradaki “n” yalnızca kolay söylemek için gelir.",
+      "islem": "-n-de → bulunma hâli"
+     }
+    ],
+    "sonuc": "Atatürk'ün (ilgi) önderliğinde (iyelik + bulunma). Bir kelimeye birden çok çekim eki gelebilir."
+   },
+   "soru": {
+    "soru": "“Defterim çantada.” cümlesinde “defterim” kelimesindeki “-im” eki neyi gösterir?",
+    "secenekler": [
+     "Defterin bana ait olduğunu",
+     "Birden çok defter olduğunu",
+     "Defterin nerede olduğunu"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Kime …?",
+    "aciklama": "“-im” iyelik ekidir; defterin “benim” olduğunu gösterir (s. 110)."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi hâl eki, hangisi başka bir isim çekim eki?",
+   "kutular": [
+    {
+     "etiket": "Hâl ekleri",
+     "uyeler": [
+      "Belirtme Hâli",
+      "Yönelme Hâli",
+      "Bulunma ve Ayrılma Hâli"
+     ]
+    },
+    {
+     "etiket": "Diğer isim çekim ekleri",
+     "uyeler": [
+      "Çoğul Eki",
+      "İlgi Eki",
+      "İyelik Ekleri"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki ilk örnek cümlede, “Bilecik'ten Eskişehir'e döndüler.” cümlesinde, tek cümlede iki ayrı hâl eki birlikte kullanılmıştır (s. 109)."
+ ],
+ "akildaKalsin": [
+  "Çekim ekleri yeni kelime yapmaz; kelimeyi cümleye bağlar.",
+  "Çoğul eki -ler, -lar: birden çok.",
+  "Hâl ekleri: -i (neyi?), -e (nereye?), -de (nerede?), -den (nereden?).",
+  "İlgi eki -in: kimin, neyin? (okulun bahçesi)",
+  "İyelik eki: kime ait? (kalemim, kalemin, kalemi)"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden bazen “-de”, bazen “-te” yazıyoruz?",
+   "cevap": "Kelime sert bir ünsüzle (ç, f, h, k, p, s, ş, t) bitince ekin “d” sesi “t” olur: sokakta, Bilecik'ten (s. 109). Buna ünsüz benzeşmesi denir."
+  },
+  {
+   "soru": "Özel isimlere gelen ekleri neden kesme işaretiyle ayırıyoruz?",
+   "cevap": "Özel ismin nerede bittiğini göstermek için: Ankara'dan, Atatürk'ün. Kitaptaki cümlelerde de böyle yazılmıştır (s. 109)."
+  },
+  {
+   "soru": "Bir kelimeye kaç çekim eki gelebilir?",
+   "cevap": "Birden çok gelebilir ve sırası bellidir: kitap-lar-ım-da (çoğul + iyelik + bulunma). Sıra değişirse kelime bozulur."
+  },
+  {
+   "soru": "“Kitap okudum.” ile “Kitabı okudum.” arasında ne fark var?",
+   "cevap": "İlkinde hangi kitap olduğu belli değil. İkincisinde belirtme eki belli bir kitabı gösterir. (kitap → kitabı: “p” sesi “b” olur.)"
+  },
+  {
+   "soru": "“de” bağlacı ile “-de” eki nasıl ayrılır?",
+   "cevap": "Ek kelimeye bitişik yazılır ve “Nerede?” sorusuna cevap verir: evde. Bağlaç “de” ayrı yazılır: Ben de geldim. Çıkarınca cümle bozulmaz."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okulda geçen bir gününü anlatan iki cümle yaz. Cümlelerinde en az iki farklı hâl eki kullan ve hangileri olduğunu yaz.",
+   "ornekCevap": "Sabah okula gittim. Kantinden simit aldım. (okul-a: yönelme hâli, kantin-den: ayrılma hâli)",
+   "anahtarlar": [
+    "yönelme",
+    "ayrılma",
+    "bulunma",
+    "belirtme"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangi kelimede çoğul eki vardır?",
+   "secenekler": [
+    "dağda",
+    "dağlar",
+    "dağın"
+   ],
+   "dogru": 1,
+   "ipucu": "“Birden çok” anlamı veren eki ara.",
+   "aciklama": "“Dağlar” birden çok dağ anlatır; “-lar” çoğul ekidir (s. 110).",
+   "kavram": "Çoğul Eki"
+  },
+  {
+   "soru": "“Çocuklar bahçede top oynuyor.” cümlesinde bulunma hâl eki almış kelime hangisidir?",
+   "secenekler": [
+    "bahçede",
+    "Çocuklar",
+    "top"
+   ],
+   "dogru": 0,
+   "ipucu": "“Nerede oynuyor?” diye sor.",
+   "aciklama": "Nerede oynuyor? Bahçede. “-de” bulunma hâl ekidir (s. 110).",
+   "kavram": "Bulunma ve Ayrılma Hâli"
+  },
+  {
+   "soru": "“Kapıyı yavaşça kapattı.” cümlesindeki “-yı” eki hangi soruya cevap verir?",
+   "secenekler": [
+    "Neyi?",
+    "Nereye?",
+    "Kimin?"
+   ],
+   "dogru": 0,
+   "ipucu": "Kapattığı şeyi sor.",
+   "aciklama": "Neyi kapattı? Kapıyı. “-yı” belirtme hâl ekidir (s. 110).",
+   "kavram": "Belirtme Hâli"
+  },
+  {
+   "soru": "Hangi cümlede yönelme hâl eki kullanılmıştır?",
+   "secenekler": [
+    "Yarın İzmir'e gideceğiz.",
+    "Kitaplar masada duruyor.",
+    "Annemin sesi geldi."
+   ],
+   "dogru": 0,
+   "ipucu": "“Nereye?” sorusuna cevap veren kelimeyi ara.",
+   "aciklama": "Nereye gideceğiz? İzmir'e. “-e” yönelme hâl ekidir (s. 110).",
+   "kavram": "Yönelme Hâli"
+  },
+  {
+   "soru": "“Kuşun kanadı kırılmış.” cümlesinde ilgi eki hangi kelimededir?",
+   "secenekler": [
+    "kanadı",
+    "kırılmış",
+    "Kuşun"
+   ],
+   "dogru": 2,
+   "ipucu": "“Kimin, neyin kanadı?” diye sor.",
+   "aciklama": "Neyin kanadı? Kuşun. “-un” ilgi ekidir (s. 110).",
+   "kavram": "İlgi Eki"
+  },
+  {
+   "soru": "“Siz” için “kalem” kelimesine hangi iyelik eki gelir?",
+   "secenekler": [
+    "kalemimiz",
+    "kaleminiz",
+    "kalemleri"
+   ],
+   "dogru": 1,
+   "ipucu": "Siz → sizin kaleminiz.",
+   "aciklama": "Sizin kaleminiz: “-iniz” 2. çoğul kişi iyelik ekidir.",
+   "kavram": "İyelik Ekleri",
+   "yardim": {
+    "adimlar": [
+     "Kalem kime ait? “Siz”e.",
+     "“Sizin …” diye başlayıp söyle.",
+     "Hangi şık “sizin” ile birlikte söylenebiliyor?"
+    ]
+   }
+  },
+  {
+   "soru": "“Topu aldım.” ve “Ali'nin topu kayboldu.” cümlelerindeki “topu” kelimelerinde bulunan “-u” ekleri için ne söylenebilir?",
+   "secenekler": [
+    "İkisi de belirtme hâl ekidir.",
+    "İkisi de iyelik ekidir.",
+    "İlki belirtme hâl eki, ikincisi iyelik ekidir."
+   ],
+   "dogru": 2,
+   "ipucu": "İlk cümlede “Neyi aldım?”, ikincide “Kimin topu?” diye sor.",
+   "aciklama": "Neyi aldım? Topu: belirtme. Ali'nin topu: top Ali'ye ait, iyelik.",
+   "kavram": "İyelik Ekleri",
+   "yardim": {
+    "adimlar": [
+     "İlk cümlede sor: Neyi aldım?",
+     "İkinci cümlede sor: Top kime ait?",
+     "“Neyi?” sorusu belirtme hâlini, “Kime ait?” sorusu iyelik ekini gösterir."
+    ]
+   }
+  },
+  {
+   "soru": "Metinde ayrılma hâl eki almış kelime hangisidir? Önce kelimenin geçtiği cümleye dokun.",
+   "secenekler": [
+    "Samsun'a",
+    "milletin",
+    "Havza'dan"
+   ],
+   "dogru": 2,
+   "ipucu": "“Nereden?” sorusuna cevap veren kelimeyi ara.",
+   "aciklama": "Nereden gönderdi? Havza'dan. “-dan” ayrılma hâl ekidir. “Samsun'a” yönelme, “milletin” ilgi ekidir.",
+   "kavram": "Bulunma ve Ayrılma Hâli",
+   "metinBaslik": "Millî Mücadele Başlıyor",
+   "metin": [
+    "Mustafa Kemal 19 Mayıs 1919'da Samsun'a çıktı.",
+    "Burada halkla görüştü ve durumu yakından inceledi.",
+    "Birkaç gün sonra Havza'dan bütün yurda genelgeler gönderdi.",
+    "Bu genelgeler milletin direnme gücünü artırdı."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "“Nereden?” sorusuna cevap veren kelimenin geçtiği cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Ayrılma hâl eki almış kelimeyi.",
+     "Anahtar kelime: ayrılma. Ayrılma hâli “Nereden?” sorusuna cevap verir.",
+     "Kanıt: “-den, -dan” ekli kelimenin geçtiği cümleyi bul.",
+     "Şıkları ele: Hangisi “nereye?”, hangisi “kimin?” sorusuna cevap veriyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde hem çoğul eki hem yönelme hâl eki almış kelime hangisidir?",
+   "secenekler": [
+    "yapraklara",
+    "Bitkiler",
+    "topraktan"
+   ],
+   "dogru": 0,
+   "ipucu": "Hem “-ler, -lar” hem “-a, -e” taşıyan kelimeyi ara.",
+   "aciklama": "Yapraklara: yaprak-lar-a. “-lar” çoğul, “-a” yönelme ekidir.",
+   "kavram": "Yönelme Hâli",
+   "metinBaslik": "Bitkilerin Besini",
+   "metin": [
+    "Bitkiler besinlerini kendileri üretir.",
+    "Yapraklar güneş ışığını kullanır.",
+    "Kökler topraktan suyu alır.",
+    "Su, gövdedeki borularla yapraklara taşınır."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Suyun nereye taşındığını anlatan cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki eki birlikte alan kelimeyi.",
+     "Anahtar kelimeler: çoğul ve yönelme. “-ler/-lar” + “-a/-e”.",
+     "Kanıt: “Nereye?” sorusuna cevap veren kelimenin geçtiği cümleyi bul.",
+     "Şıkları ele: Hangisinde yalnız çoğul eki var, hangisinde ayrılma eki var?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde ilgi eki almış kelime hangisidir?",
+   "secenekler": [
+    "Babası",
+    "Ayşe'nin",
+    "zinciri"
+   ],
+   "dogru": 1,
+   "ipucu": "“Kimin bisikleti?” diye sor.",
+   "aciklama": "Kimin bisikleti? Ayşe'nin. “-nin” ilgi ekidir. “Babası” ve “zinciri” iyelik ekidir.",
+   "kavram": "İlgi Eki",
+   "metinBaslik": "Bozulan Bisiklet",
+   "metin": [
+    "Ayşe'nin bisikleti yolda bozuldu.",
+    "Babası bisikleti tamirciye götürdü.",
+    "Tamirci zinciri değiştirdi.",
+    "Ayşe ertesi gün bisikletine yeniden bindi."
+   ],
+   "kanit": [
+    0
+   ],
+   "kanitIpucu": "Bisikletin kime ait olduğunu söyleyen cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İlgi eki almış kelimeyi.",
+     "Anahtar kelime: ilgi. İlgi eki “Kimin? Neyin?” sorusuna cevap verir.",
+     "Kanıt: “Kimin bisikleti?” sorusunun cevabının geçtiği cümleyi bul.",
+     "Şıkları ele: “Babası” ve “zinciri” bir şeyin kime ait olduğunu mu gösteriyor, kimin olduğunu soran bir ek mi?"
+    ]
+   }
+  }
+ ]
+}

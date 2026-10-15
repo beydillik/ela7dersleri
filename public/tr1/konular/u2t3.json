@@ -1,0 +1,308 @@
+{
+ "id": "u2t3",
+ "tur": "tarama",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Ara Durak 3: Çekim Ekleri",
+ "sayfalar": "Konu 7–9 · s. 109–110",
+ "giris": "Çekim eklerini bitirdin! Kısa bir mola verip neler öğrendiğine bakalım. Önce kartlara dokun, hatırlayıp hatırlamadığını söyle. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Üç konunun ortak fikri şu: Çekim ekleri yeni kelime yapmaz, kelimeyi cümleye bağlar. İsimlere çoğul, hâl, ilgi ve iyelik ekleri gelir (Konu 7). Fiillere kip ve kişi ekleri gelir: kip işin zamanını ya da dileğini, kişi eki yapanı söyler (Konu 8 ve 9). Aynı görünen ek (-ler, -im) isimde başka, fiilde başka iş yapar.",
+ "kapsar": [
+  "u2k7",
+  "u2k8",
+  "u2k9"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k7",
+   "maddeler": [
+    "Çoğul -ler; hâl ekleri -i, -e, -de, -den (neyi, nereye, nerede, nereden?).",
+    "İlgi eki -in: kimin, neyin? (okulun bahçesi)",
+    "İyelik eki: kime ait? (kalemim, kalemin, kalemi)"
+   ]
+  },
+  {
+   "konu": "u2k8",
+   "maddeler": [
+    "Fiil = kök + kip eki + kişi eki (dön-dü-ler).",
+    "-di gördüm, -miş duydum; -iyor şimdi; -ecek ileride; -r her zaman.",
+    "Kişi eki: ben geldim, biz geldik, onlar geldiler."
+   ]
+  },
+  {
+   "konu": "u2k9",
+   "maddeler": [
+    "İstek -e (gidelim), gereklilik -meli (gitmeliyiz).",
+    "Şart -se (gitsek), emir: Git! Gitsin! Gidin!",
+    "Soru eki “mi” ayrı yazılır; -ler isimde çoğul, fiilde kişi eki."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu ek nereye gelir, ne iş yapar?",
+   "kutular": [
+    {
+     "etiket": "İsme gelir",
+     "uyeler": [
+      "Çoğul Eki",
+      "Belirtme Hâli",
+      "Yönelme Hâli",
+      "İlgi Eki"
+     ]
+    },
+    {
+     "etiket": "Fiile gelir: işin zamanı",
+     "uyeler": [
+      "Geçmiş Zaman",
+      "Şimdiki Zaman",
+      "Gelecek Zaman"
+     ]
+    },
+    {
+     "etiket": "Fiile gelir: dilek",
+     "uyeler": [
+      "İstek Kipi",
+      "Gereklilik Kipi",
+      "Şart Kipi"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“Ankara'ya geldi” sözündeki ekler için hangisi doğrudur?",
+   "secenekler": [
+    "“-ya” ilgi eki, “-di” şimdiki zaman ekidir.",
+    "“-ya” yönelme hâl eki, “-di” geçmiş zaman ekidir.",
+    "“-ya” bulunma hâl eki, “-di” kişi ekidir."
+   ],
+   "dogru": 1,
+   "ipucu": "“Nereye?” ve “Ne zaman?” diye sor.",
+   "aciklama": "Nereye geldi? Ankara'ya: yönelme. “-di” işin geçmişte olduğunu gösterir.",
+   "metinBaslik": "Ankara'da Bir Meclis",
+   "metin": [
+    "Mustafa Kemal 1919'un sonunda Ankara'ya geldi.",
+    "Burada halkla ve askerlerle görüştü.",
+    "23 Nisan 1920'de Büyük Millet Meclisi açıldı.",
+    "Bugün o ilk binayı müze olarak geziyoruz."
+   ],
+   "kanit": [
+    0
+   ],
+   "kanitIpucu": "“Ankara'ya geldi” sözünün geçtiği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k7",
+     "kavram": "Yönelme Hâli"
+    },
+    {
+     "konu": "u2k8",
+     "kavram": "Geçmiş Zaman"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki ekin doğru adını.",
+     "Anahtar kelimeler: -ya ve -di.",
+     "Kanıt: “Ankara'ya geldi” sözünün geçtiği cümleyi bul.",
+     "Şıkları ele: “-ya” hangi soruya cevap veriyor? “-di” zamanı mı, kişiyi mi gösteriyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metindeki fiillerle ilgili hangi eşleştirme doğrudur?",
+   "secenekler": [
+    "yaklaşacak → şimdiki zaman",
+    "uzaklaşın → istek kipi",
+    "keşfetmiş → duyulan geçmiş zaman"
+   ],
+   "dogru": 2,
+   "ipucu": "Her fiilin kökünden sonraki eke bak.",
+   "aciklama": "“keşfet-miş” duyulan geçmiştir. “yaklaş-acak” gelecek zaman, “uzaklaşın” emir kipidir.",
+   "metinBaslik": "Kuyruklu Yıldız Haberi",
+   "metin": [
+    "Gökbilimciler yeni bir kuyruklu yıldız keşfetmiş.",
+    "Bu kuyruklu yıldız gelecek ay Dünya'ya yaklaşacak.",
+    "Onu görmek için gökyüzü açık olmalı.",
+    "Gözlem için şehir ışıklarından uzaklaşın."
+   ],
+   "kanit": [
+    0,
+    1,
+    3
+   ],
+   "kanitIpucu": "Şıklardaki fiillerden birinin geçtiği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k8",
+     "kavram": "Geçmiş Zaman"
+    },
+    {
+     "konu": "u2k9",
+     "kavram": "Emir Kipi"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Doğru eşleştirmeyi.",
+     "Anahtar kelimeler: -miş, -acak, -ın.",
+     "Kanıt: Her fiilin geçtiği cümleyi bul, ekine bak.",
+     "Şıkları ele: “-acak” hangi zamanın eki? Buyuran fiil hangi kipte?"
+    ]
+   }
+  },
+  {
+   "soru": "“Askerlerimiz geldiler mi?” cümlesindeki eklerle ilgili hangi bilgi yanlıştır?",
+   "secenekler": [
+    "“mi” kelimeye bitişik yazılmalıdır.",
+    "“askerler” kelimesindeki “-ler” çoğul ekidir.",
+    "“-imiz” iyelik ekidir."
+   ],
+   "dogru": 0,
+   "ipucu": "Soru eki nasıl yazılır?",
+   "aciklama": "Soru eki ayrı yazılır. Öteki bilgiler doğrudur.",
+   "kaynak": [
+    {
+     "konu": "u2k7",
+     "kavram": "İyelik Ekleri"
+    },
+    {
+     "konu": "u2k9",
+     "kavram": "Soru Eki"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Yanlış olan bilgiyi.",
+     "“askerler” isim: “-ler” ne anlam katıyor?",
+     "“-imiz”: askerler kime ait?",
+     "Soru eki “mi” ayrı mı, bitişik mi yazılır?"
+    ]
+   }
+  },
+  {
+   "soru": "Hangi cümlede “-ler, -lar” eki hem çoğul eki hem de kişi eki olarak kullanılmıştır?",
+   "secenekler": [
+    "Çocuk bahçede koştu.",
+    "Çocuklar bahçede koştular.",
+    "Çocuklar bahçede."
+   ],
+   "dogru": 1,
+   "ipucu": "Hem isimde hem fiilde “-ler, -lar” olan cümleyi ara.",
+   "aciklama": "“Çocuklar”da çoğul eki, “koştular”da onlar kişi eki var.",
+   "kaynak": [
+    {
+     "konu": "u2k7",
+     "kavram": "Çoğul Eki"
+    },
+    {
+     "konu": "u2k9",
+     "kavram": "İsim Eki mi Fiil Eki mi?"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki görevin birlikte olduğu cümleyi.",
+     "İsme gelen “-ler” çoğul ekidir.",
+     "Fiile gelen “-ler” kişi ekidir.",
+     "Her iki kelimede de “-ler, -lar” olan şıkkı bul."
+    ]
+   }
+  },
+  {
+   "soru": "Diyalogdaki fiillerle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "“kalkmalıyız” gereklilik kipindedir; işi “biz” yapacaktır.",
+    "“olsa” geniş zamandadır.",
+    "“yatalım” emir kipindedir."
+   ],
+   "dogru": 0,
+   "ipucu": "“-meli” ve “-yız” eklerine bak.",
+   "aciklama": "“kalk-malı-yız”: gereklilik kipi + biz kişi eki. “olsa” şart, “yatalım” istek kipidir.",
+   "metinBaslik": "Piknik Hazırlığı",
+   "metin": [
+    {
+     "kim": "Ela",
+     "s": "Yarın piknik var, değil mi?"
+    },
+    {
+     "kim": "Annem",
+     "s": "Evet ama sabah erken kalkmalıyız."
+    },
+    {
+     "kim": "Ela",
+     "s": "Hava güzel olsa gölde kayık bile kiralarız."
+    },
+    {
+     "kim": "Annem",
+     "s": "O zaman şimdi yatalım."
+    }
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "“kalkmalıyız” fiilinin geçtiği konuşmaya dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k9",
+     "kavram": "Gereklilik Kipi"
+    },
+    {
+     "konu": "u2k8",
+     "kavram": "Kişi Ekleri"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Doğru bilgiyi.",
+     "Anahtar kelimeler: kalkmalıyız, olsa, yatalım.",
+     "Kanıt: “kalkmalıyız” fiilinin geçtiği konuşmayı bul.",
+     "Şıkları ele: “-se, -sa” hangi kipin eki? “-e, -a” hangi kipin eki?"
+    ]
+   }
+  },
+  {
+   "soru": "Metindeki fiillerin zamanı ve “burada” kelimesinin eki için hangisi doğrudur?",
+   "secenekler": [
+    "Şimdiki zaman — yönelme hâli",
+    "Geçmiş zaman — ayrılma hâli",
+    "Geniş zaman — bulunma hâli"
+   ],
+   "dogru": 2,
+   "ipucu": "Fiiller “-r” ile mi bitiyor? “burada”: nerede?",
+   "aciklama": "ayrıl-ır, geç-er, karış-ır: geniş zaman. “bura-da”: nerede? Bulunma hâli.",
+   "metinBaslik": "Besinlerin Yolculuğu",
+   "metin": [
+    "Midemizdeki besinler küçük parçalara ayrılır.",
+    "Sonra bu parçalar ince bağırsağa geçer.",
+    "Besinler burada kana karışır.",
+    "Kan, besinleri bütün vücuda taşır."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "“burada” kelimesinin geçtiği cümleye dokun.",
+   "kaynak": [
+    {
+     "konu": "u2k8",
+     "kavram": "Geniş Zaman"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "Bulunma ve Ayrılma Hâli"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Fiillerin zamanını ve bir hâl ekini.",
+     "Anahtar kelimeler: zaman, burada.",
+     "Kanıt: “burada” kelimesinin geçtiği cümleyi bul.",
+     "Şıkları ele: “-r” ile biten fiiller hangi zamanda? “-da” hangi soruya cevap verir?"
+    ]
+   }
+  }
+ ]
+}

@@ -669,6 +669,348 @@
     "toplumsal kanit"
    ],
    "aciklama": "Bu teknik toplumsal kanıttır (s. 99)."
+  },
+  {
+   "id": "t2-37",
+   "konu": "u2k7",
+   "kavram": "Çoğul Eki",
+   "tur": "eslestir",
+   "soru": "Cümledeki “ev” kelimesine gelen eki görevle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Evler yan yanaydı.",
+     "sag": "Çoğul eki"
+    },
+    {
+     "sol": "Evi boyadık.",
+     "sag": "Belirtme hâl eki"
+    },
+    {
+     "sol": "Eve döndük.",
+     "sag": "Yönelme hâl eki"
+    },
+    {
+     "sol": "Evin kapısı açık.",
+     "sag": "İlgi eki"
+    }
+   ],
+   "aciklama": "Her ek isme ayrı bir anlam katar (s. 110)."
+  },
+  {
+   "id": "t2-38",
+   "konu": "u2k7",
+   "kavram": "Bulunma ve Ayrılma Hâli",
+   "tur": "secim",
+   "soru": "“Ankara'dan” kelimesindeki ek isme hangi anlamı katar?",
+   "secenekler": [
+    "Yönelme",
+    "Bulunma",
+    "Ayrılma",
+    "İlgi"
+   ],
+   "dogru": 2,
+   "aciklama": "“-dan” “nereden?” sorusunun cevabıdır; ayrılma hâlidir (s. 109)."
+  },
+  {
+   "id": "t2-39",
+   "konu": "u2k7",
+   "kavram": "Belirtme Hâli",
+   "tur": "dy",
+   "ifade": "“Kapıyı aç.” cümlesinde “-yı” eki yönelme hâl ekidir.",
+   "dogru": false,
+   "duzeltme": "“-yı” belirtme hâl ekidir; “neyi?” sorusuna cevap verir.",
+   "aciklama": "Neyi aç? Kapıyı: belirtme hâli (s. 110)."
+  },
+  {
+   "id": "t2-40",
+   "konu": "u2k7",
+   "kavram": "İlgi Eki",
+   "tur": "bosluk",
+   "havuz": [
+    "çoğul",
+    "ayrılma"
+   ],
+   "cumleler": [
+    {
+     "c": "“Okulun bahçesi” sözünde “-un” ___ ekidir.",
+     "cevap": "ilgi"
+    },
+    {
+     "c": "“Defterim” kelimesinde “-im” ___ ekidir.",
+     "cevap": "iyelik"
+    },
+    {
+     "c": "“Eve” kelimesinde “-e” ___ hâl ekidir.",
+     "cevap": "yönelme"
+    }
+   ],
+   "aciklama": "Kimin? ilgi; kime ait? iyelik; nereye? yönelme (s. 110)."
+  },
+  {
+   "id": "t2-41",
+   "konu": "u2k7",
+   "kavram": "Bulunma ve Ayrılma Hâli",
+   "tur": "secim",
+   "soru": "Aşağıdaki kelimeler verilmiştir.",
+   "onculler": [
+    "kitaplarımız",
+    "sokakta",
+    "yolun"
+   ],
+   "kok": "Bu kelimelerden hangilerinde hâl eki vardır?",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "“Sokakta” bulunma hâlidir. “-ımız” iyelik, “-un” ilgi ekidir (s. 110)."
+  },
+  {
+   "id": "t2-42",
+   "konu": "u2k7",
+   "kavram": "İyelik Ekleri",
+   "tur": "kisa",
+   "soru": "“Kalemim” kelimesindeki “-im” eki kalemin kime ait olduğunu gösterir. Bu eke ne ad verilir?",
+   "yanit": "iyelik eki",
+   "kabul": [
+    "iyelik"
+   ],
+   "aciklama": "Kime ait olduğunu gösteren ek iyelik ekidir (s. 110)."
+  },
+  {
+   "id": "t2-43",
+   "konu": "u2k8",
+   "kavram": "Kip ve Kişi Ekleri",
+   "tur": "eslestir",
+   "soru": "Fiilleri zamanlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "okudu",
+     "sag": "Görülen geçmiş zaman"
+    },
+    {
+     "sol": "okumuş",
+     "sag": "Duyulan geçmiş zaman"
+    },
+    {
+     "sol": "okuyor",
+     "sag": "Şimdiki zaman"
+    },
+    {
+     "sol": "okuyacak",
+     "sag": "Gelecek zaman"
+    },
+    {
+     "sol": "okur",
+     "sag": "Geniş zaman"
+    }
+   ],
+   "aciklama": "Kökten sonraki kip eki işin zamanını gösterir (s. 110)."
+  },
+  {
+   "id": "t2-44",
+   "konu": "u2k8",
+   "kavram": "Geçmiş Zaman",
+   "tur": "secim",
+   "soru": "“Ali'nin kardeşi dün bisikletten düşmüş.” cümlesinden hangisi anlaşılır?",
+   "secenekler": [
+    "Konuşan olayı sonradan duymuştur.",
+    "Konuşan olayı kendi gözüyle görmüştür.",
+    "Olay şu anda oluyor.",
+    "Olay ileride olacak."
+   ],
+   "dogru": 0,
+   "aciklama": "“-miş” duyulan geçmiştir; konuşan olayı başkasından öğrenmiştir."
+  },
+  {
+   "id": "t2-45",
+   "konu": "u2k8",
+   "kavram": "Geniş Zaman",
+   "tur": "dytablo",
+   "soru": "Fiilin zamanı doğru verilmişse D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "geliyor → şimdiki zaman",
+     "d": true
+    },
+    {
+     "s": "yazar → gelecek zaman",
+     "d": false
+    },
+    {
+     "s": "koşacak → gelecek zaman",
+     "d": true
+    },
+    {
+     "s": "uyudu → geniş zaman",
+     "d": false
+    }
+   ],
+   "aciklama": "“Yazar” geniş zaman, “uyudu” geçmiş zamandır."
+  },
+  {
+   "id": "t2-46",
+   "konu": "u2k8",
+   "kavram": "Kişi Ekleri",
+   "tur": "secim",
+   "soru": "“Siz” için “bakmak” fiilinin şimdiki zaman çekimi hangisidir?",
+   "secenekler": [
+    "bakıyorsun",
+    "bakıyoruz",
+    "bakıyorlar",
+    "bakıyorsunuz"
+   ],
+   "dogru": 3,
+   "aciklama": "Siz → “-sunuz”: bakıyorsunuz (s. 110)."
+  },
+  {
+   "id": "t2-47",
+   "konu": "u2k8",
+   "kavram": "Şimdiki Zaman",
+   "tur": "kisa",
+   "soru": "Fiile “-iyor” eki gelince fiil hangi zamanı gösterir?",
+   "yanit": "şimdiki zaman",
+   "kabul": [
+    "şimdiki"
+   ],
+   "aciklama": "“-iyor” şimdiki zaman ekidir; iş şu anda yapılıyor."
+  },
+  {
+   "id": "t2-48",
+   "konu": "u2k8",
+   "kavram": "Gelecek Zaman",
+   "tur": "bosluk",
+   "havuz": [
+    "şimdiki",
+    "dilek"
+   ],
+   "cumleler": [
+    {
+     "c": "“Su 100 derecede kaynar.” cümlesi ___ zamandadır.",
+     "cevap": "geniş"
+    },
+    {
+     "c": "“Yarın yağmur yağacak.” cümlesi ___ zamandadır.",
+     "cevap": "gelecek"
+    },
+    {
+     "c": "“Dün kar yağdı.” cümlesi ___ zamandadır.",
+     "cevap": "geçmiş"
+    }
+   ],
+   "aciklama": "“-r” her zaman, “-ecek” ileride, “-di” geçmişte olan işi gösterir."
+  },
+  {
+   "id": "t2-49",
+   "konu": "u2k9",
+   "kavram": "İstek Kipi",
+   "tur": "eslestir",
+   "soru": "Cümleleri kipleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Haydi, oyun oynayalım.",
+     "sag": "İstek kipi"
+    },
+    {
+     "sol": "Ödevini bitirmelisin.",
+     "sag": "Gereklilik kipi"
+    },
+    {
+     "sol": "Erken kalksam yetişirim.",
+     "sag": "Şart kipi"
+    },
+    {
+     "sol": "Kapıyı kapat!",
+     "sag": "Emir kipi"
+    }
+   ],
+   "aciklama": "Dilek kipleri istek, gereklilik, şart ve emir bildirir (s. 110)."
+  },
+  {
+   "id": "t2-50",
+   "konu": "u2k9",
+   "kavram": "Emir Kipi",
+   "tur": "dy",
+   "ifade": "Emir kipinin her kişi için aynı eki vardır.",
+   "dogru": false,
+   "duzeltme": "Emir kipinin ayrı eki yoktur; kişiye göre biçim alır: gel, gelsin, gelin.",
+   "aciklama": "Emir kipi kişiye göre biçim alır: gel, gelsin, gelin, gelsinler."
+  },
+  {
+   "id": "t2-51",
+   "konu": "u2k9",
+   "kavram": "Soru Eki",
+   "tur": "secim",
+   "soru": "Hangi cümlede soru eki doğru yazılmıştır?",
+   "secenekler": [
+    "Bu kitap seninmi?",
+    "Okula geliyormusun?",
+    "Ödevini yaptınmı?",
+    "Bu kitap senin mi?"
+   ],
+   "dogru": 3,
+   "aciklama": "Soru eki ayrı yazılır; sonraki ekler ona bitişir: geliyor musun (s. 110)."
+  },
+  {
+   "id": "t2-52",
+   "konu": "u2k9",
+   "kavram": "Gereklilik Kipi",
+   "tur": "secim",
+   "soru": "Aşağıdaki cümleler verilmiştir.",
+   "onculler": [
+    "Derslerimize düzenli çalışmalıyız.",
+    "Hava güzel olsa pikniğe gideriz.",
+    "Dün sinemaya gittik."
+   ],
+   "kok": "Hangilerinde dilek kipi kullanılmıştır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "I gereklilik, II şart kipidir; III geçmiş zamandır."
+  },
+  {
+   "id": "t2-53",
+   "konu": "u2k9",
+   "kavram": "İsim Eki mi Fiil Eki mi?",
+   "tur": "dytablo",
+   "soru": "Kelimedeki “-ler, -lar” kişi ekiyse D, çoğul ekiyse Y seç.",
+   "ifadeler": [
+    {
+     "s": "geldiler",
+     "d": true
+    },
+    {
+     "s": "kitaplar",
+     "d": false
+    },
+    {
+     "s": "okudular",
+     "d": true
+    },
+    {
+     "s": "askerler",
+     "d": false
+    }
+   ],
+   "aciklama": "Fiile gelen “-ler” kişi eki, isme gelen “-ler” çoğul ekidir (s. 109)."
+  },
+  {
+   "id": "t2-54",
+   "konu": "u2k9",
+   "kavram": "Emir Kipi",
+   "tur": "kisa",
+   "soru": "“Gel, gelsin, gelin, gelsinler” biçimleri hangi kiptedir?",
+   "yanit": "emir kipi",
+   "kabul": [
+    "emir"
+   ],
+   "aciklama": "Buyruk bildiren bu biçimler emir kipidir."
   }
  ]
 }

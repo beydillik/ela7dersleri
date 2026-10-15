@@ -1,5 +1,5 @@
 import sys, os; sys.path.insert(0, os.path.dirname(__file__))
-from ortak import Havuz, ONC
+from ortak import Havuz, ONC, ONC2
 H = Havuz("tr1", 2, "t2"); a = H.add
 K1, K2 = "(s. 77, 90, 92, 95)", "(s. 75–78, 101–104)"
 
@@ -170,4 +170,88 @@ a("u2k6", "İkna Metnini Çözümleme", "dytablo", soru="Konuşma metnindeki (s.
 a("u2k6", "Toplumsal Kanıt", "kisa", soru="Başkalarının yaygın davranışlarını öne sürerek ikna etmeye ne ad verilir?",
   yanit="toplumsal kanıt", kabul=["toplumsal kanit"],
   aciklama="Bu teknik toplumsal kanıttır (s. 99).")
+# --- Konu 7: İsim çekim ekleri
+K7 = "(s. 110)"
+a("u2k7", "Çoğul Eki", "eslestir", soru="Cümledeki “ev” kelimesine gelen eki görevle eşleştir.", ciftler=[
+  {"sol": "Evler yan yanaydı.", "sag": "Çoğul eki"},
+  {"sol": "Evi boyadık.", "sag": "Belirtme hâl eki"},
+  {"sol": "Eve döndük.", "sag": "Yönelme hâl eki"},
+  {"sol": "Evin kapısı açık.", "sag": "İlgi eki"}],
+  aciklama=f"Her ek isme ayrı bir anlam katar {K7}.")
+a("u2k7", "Bulunma ve Ayrılma Hâli", "secim", soru="“Ankara'dan” kelimesindeki ek isme hangi anlamı katar?",
+  secenekler=["Yönelme", "Bulunma", "Ayrılma", "İlgi"], dogru=2,
+  aciklama="“-dan” “nereden?” sorusunun cevabıdır; ayrılma hâlidir (s. 109).")
+a("u2k7", "Belirtme Hâli", "dy",
+  ifade="“Kapıyı aç.” cümlesinde “-yı” eki yönelme hâl ekidir.", dogru=False,
+  duzeltme="“-yı” belirtme hâl ekidir; “neyi?” sorusuna cevap verir.",
+  aciklama=f"Neyi aç? Kapıyı: belirtme hâli {K7}.")
+a("u2k7", "İlgi Eki", "bosluk", havuz=["çoğul", "ayrılma"], cumleler=[
+  {"c": "“Okulun bahçesi” sözünde “-un” ___ ekidir.", "cevap": "ilgi"},
+  {"c": "“Defterim” kelimesinde “-im” ___ ekidir.", "cevap": "iyelik"},
+  {"c": "“Eve” kelimesinde “-e” ___ hâl ekidir.", "cevap": "yönelme"}],
+  aciklama=f"Kimin? ilgi; kime ait? iyelik; nereye? yönelme {K7}.")
+a("u2k7", "Bulunma ve Ayrılma Hâli", "secim", soru="Aşağıdaki kelimeler verilmiştir.",
+  onculler=["kitaplarımız", "sokakta", "yolun"],
+  kok="Bu kelimelerden hangilerinde hâl eki vardır?", secenekler=ONC2, dogru=1,
+  aciklama=f"“Sokakta” bulunma hâlidir. “-ımız” iyelik, “-un” ilgi ekidir {K7}.")
+a("u2k7", "İyelik Ekleri", "kisa", soru="“Kalemim” kelimesindeki “-im” eki kalemin kime ait olduğunu gösterir. Bu eke ne ad verilir?",
+  yanit="iyelik eki", kabul=["iyelik"],
+  aciklama=f"Kime ait olduğunu gösteren ek iyelik ekidir {K7}.")
+
+# --- Konu 8: Fiil çekim ekleri 1 (zaman ve kişi)
+a("u2k8", "Kip ve Kişi Ekleri", "eslestir", soru="Fiilleri zamanlarıyla eşleştir.", ciftler=[
+  {"sol": "okudu", "sag": "Görülen geçmiş zaman"},
+  {"sol": "okumuş", "sag": "Duyulan geçmiş zaman"},
+  {"sol": "okuyor", "sag": "Şimdiki zaman"},
+  {"sol": "okuyacak", "sag": "Gelecek zaman"},
+  {"sol": "okur", "sag": "Geniş zaman"}],
+  aciklama="Kökten sonraki kip eki işin zamanını gösterir (s. 110).")
+a("u2k8", "Geçmiş Zaman", "secim", soru="“Ali'nin kardeşi dün bisikletten düşmüş.” cümlesinden hangisi anlaşılır?",
+  secenekler=["Konuşan olayı sonradan duymuştur.", "Konuşan olayı kendi gözüyle görmüştür.", "Olay şu anda oluyor.", "Olay ileride olacak."], dogru=0,
+  aciklama="“-miş” duyulan geçmiştir; konuşan olayı başkasından öğrenmiştir.")
+a("u2k8", "Geniş Zaman", "dytablo", soru="Fiilin zamanı doğru verilmişse D, yanlışsa Y seç.", ifadeler=[
+  {"s": "geliyor → şimdiki zaman", "d": True},
+  {"s": "yazar → gelecek zaman", "d": False},
+  {"s": "koşacak → gelecek zaman", "d": True},
+  {"s": "uyudu → geniş zaman", "d": False}],
+  aciklama="“Yazar” geniş zaman, “uyudu” geçmiş zamandır.")
+a("u2k8", "Kişi Ekleri", "secim", soru="“Siz” için “bakmak” fiilinin şimdiki zaman çekimi hangisidir?",
+  secenekler=["bakıyorsun", "bakıyoruz", "bakıyorlar", "bakıyorsunuz"], dogru=3,
+  aciklama="Siz → “-sunuz”: bakıyorsunuz (s. 110).")
+a("u2k8", "Şimdiki Zaman", "kisa", soru="Fiile “-iyor” eki gelince fiil hangi zamanı gösterir?",
+  yanit="şimdiki zaman", kabul=["şimdiki"],
+  aciklama="“-iyor” şimdiki zaman ekidir; iş şu anda yapılıyor.")
+a("u2k8", "Gelecek Zaman", "bosluk", havuz=["şimdiki", "dilek"], cumleler=[
+  {"c": "“Su 100 derecede kaynar.” cümlesi ___ zamandadır.", "cevap": "geniş"},
+  {"c": "“Yarın yağmur yağacak.” cümlesi ___ zamandadır.", "cevap": "gelecek"},
+  {"c": "“Dün kar yağdı.” cümlesi ___ zamandadır.", "cevap": "geçmiş"}],
+  aciklama="“-r” her zaman, “-ecek” ileride, “-di” geçmişte olan işi gösterir.")
+
+# --- Konu 9: Fiil çekim ekleri 2 (dilek kipleri ve soru eki)
+a("u2k9", "İstek Kipi", "eslestir", soru="Cümleleri kipleriyle eşleştir.", ciftler=[
+  {"sol": "Haydi, oyun oynayalım.", "sag": "İstek kipi"},
+  {"sol": "Ödevini bitirmelisin.", "sag": "Gereklilik kipi"},
+  {"sol": "Erken kalksam yetişirim.", "sag": "Şart kipi"},
+  {"sol": "Kapıyı kapat!", "sag": "Emir kipi"}],
+  aciklama="Dilek kipleri istek, gereklilik, şart ve emir bildirir (s. 110).")
+a("u2k9", "Emir Kipi", "dy",
+  ifade="Emir kipinin her kişi için aynı eki vardır.", dogru=False,
+  duzeltme="Emir kipinin ayrı eki yoktur; kişiye göre biçim alır: gel, gelsin, gelin.",
+  aciklama="Emir kipi kişiye göre biçim alır: gel, gelsin, gelin, gelsinler.")
+a("u2k9", "Soru Eki", "secim", soru="Hangi cümlede soru eki doğru yazılmıştır?",
+  secenekler=["Bu kitap seninmi?", "Okula geliyormusun?", "Ödevini yaptınmı?", "Bu kitap senin mi?"], dogru=3,
+  aciklama="Soru eki ayrı yazılır; sonraki ekler ona bitişir: geliyor musun (s. 110).")
+a("u2k9", "Gereklilik Kipi", "secim", soru="Aşağıdaki cümleler verilmiştir.",
+  onculler=["Derslerimize düzenli çalışmalıyız.", "Hava güzel olsa pikniğe gideriz.", "Dün sinemaya gittik."],
+  kok="Hangilerinde dilek kipi kullanılmıştır?", secenekler=ONC, dogru=1,
+  aciklama="I gereklilik, II şart kipidir; III geçmiş zamandır.")
+a("u2k9", "İsim Eki mi Fiil Eki mi?", "dytablo", soru="Kelimedeki “-ler, -lar” kişi ekiyse D, çoğul ekiyse Y seç.", ifadeler=[
+  {"s": "geldiler", "d": True},
+  {"s": "kitaplar", "d": False},
+  {"s": "okudular", "d": True},
+  {"s": "askerler", "d": False}],
+  aciklama="Fiile gelen “-ler” kişi eki, isme gelen “-ler” çoğul ekidir (s. 109).")
+a("u2k9", "Emir Kipi", "kisa", soru="“Gel, gelsin, gelin, gelsinler” biçimleri hangi kiptedir?",
+  yanit="emir kipi", kabul=["emir"],
+  aciklama="Buyruk bildiren bu biçimler emir kipidir.")
 H.yaz()

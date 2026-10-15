@@ -1,0 +1,505 @@
+{
+ "id": "u2k9",
+ "unite": "2. Tema: Bir Hilal Uğruna",
+ "baslik": "Fiil Çekim Ekleri 2: Dilek Kipleri ve Soru Eki",
+ "sayfalar": "s. 109–110",
+ "giris": "Fiiller yalnızca zaman bildirmez; bir isteği, bir zorunluluğu, bir şartı ya da bir emri de anlatabilir. Bunlara dilek kipleri denir. Sonra soru eki “mi”yi ve “-ler” gibi iki görevli ekleri ayırmayı öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, bir önceki konuda öğrendiklerine dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Zaman Ekleri",
+    "sinif": "2. Tema, Konu 8",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>ne zaman?</text><rect x='23.5' y='44' width='31.9' height='22' rx='8' fill='#fbf6e6'/><text x='39.4' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>gel</text><rect x='57.4' y='44' width='39.2' height='22' rx='8' fill='#f5c53d'/><text x='77.0' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>iyor</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>şimdiki zaman</text></svg>",
+    "akilda": "Ne zaman oldu?",
+    "anlatim": "“-di, -miş” geçmiş, “-iyor” şimdiki, “-ecek” gelecek, “-r” geniş zamandır.",
+    "sorular": [
+     {
+      "soru": "“gidiyor” kelimesi hangi zamandadır?",
+      "secenekler": [
+       "Geçmiş",
+       "Şimdiki",
+       "Gelecek"
+      ],
+      "dogru": 1,
+      "ipucu": "“-iyor” ekine bak.",
+      "aciklama": "“-iyor” şimdiki zaman ekidir."
+     },
+     {
+      "soru": "“okur” kelimesi hangi zamandadır?",
+      "secenekler": [
+       "Geniş",
+       "Geçmiş",
+       "Gelecek"
+      ],
+      "dogru": 0,
+      "ipucu": "Her zaman olan işi anlatan ek “-r”.",
+      "aciklama": "“oku-r” geniş zamandır."
+     }
+    ]
+   },
+   {
+    "ad": "Kişi Ekleri",
+    "sinif": "2. Tema, Konu 8",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>kim yaptı?</text><rect x='21.1' y='44' width='31.9' height='22' rx='8' fill='#fbf6e6'/><text x='37.0' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>gel</text><rect x='55.0' y='44' width='24.6' height='22' rx='8' fill='#f5c53d'/><text x='67.3' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>di</text><rect x='81.6' y='44' width='17.3' height='22' rx='8' fill='#7ad19a'/><text x='90.2' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>k</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>biz geldik</text></svg>",
+    "akilda": "Kim yaptı?",
+    "anlatim": "Kişi eki işi kimin yaptığını gösterir: geldim (ben), geldin (sen), geldik (biz), geldiler (onlar).",
+    "sorular": [
+     {
+      "soru": "“Gördünüz” kelimesinde işi kim yapmış?",
+      "secenekler": [
+       "Siz",
+       "Biz",
+       "Onlar"
+      ],
+      "dogru": 0,
+      "ipucu": "Son eke bak: -nüz.",
+      "aciklama": "“-nüz” siz anlamı verir."
+     },
+     {
+      "soru": "“Koştuk” kelimesinde işi kim yapmış?",
+      "secenekler": [
+       "Ben",
+       "Biz",
+       "Siz"
+      ],
+      "dogru": 1,
+      "ipucu": "Son eke bak: -k.",
+      "aciklama": "“-k” biz anlamı verir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "İstek Kipi",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>istek</text><rect x='17.5' y='44' width='31.9' height='22' rx='8' fill='#fbf6e6'/><text x='33.4' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>gid</text><rect x='51.4' y='44' width='17.3' height='22' rx='8' fill='#f5c53d'/><text x='60.0' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>e</text><rect x='70.7' y='44' width='31.9' height='22' rx='8' fill='#7ad19a'/><text x='86.6' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>lim</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>haydi gidelim</text></svg>",
+   "aciklama": "“-e, -a” eki bir isteği, dileği bildirir: Biraz dinleneyim. Haydi, parka gidelim.",
+   "ek": "Çoğunlukla “ben” ve “biz” ile kullanılır: okuyayım, okuyalım. Kitap kip eklerini “fiile zaman veya dilek anlamı katan ekler” diye birlikte anlatır (s. 110). “İstek kipi” adı kitapta geçmez; programda vardır (kitap dışı).",
+   "akilda": "İstek: -e, -a",
+   "soru": {
+    "soru": "“Bu akşam erken yatalım.” cümlesindeki fiil ne bildirir?",
+    "secenekler": [
+     "Geçmişte olan bir işi",
+     "Bir isteği",
+     "Bir zorunluluğu"
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: İstek: -e, -a.",
+    "aciklama": "“yat-a-lım” istek kipidir; bir isteği bildirir."
+   }
+  },
+  {
+   "ad": "Gereklilik Kipi",
+   "renk": "#b5562f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>gerekli</text><rect x='6.5' y='44' width='31.9' height='22' rx='8' fill='#fbf6e6'/><text x='22.4' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>oku</text><rect x='40.4' y='44' width='39.2' height='22' rx='8' fill='#f5c53d'/><text x='60.0' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>malı</text><rect x='81.6' y='44' width='31.9' height='22' rx='8' fill='#7ad19a'/><text x='97.5' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>yım</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>-meli, -malı</text></svg>",
+   "aciklama": "“-meli, -malı” eki bir işin yapılması gerektiğini bildirir: Her gün kitap okumalıyım.",
+   "ek": "“Gerek, lazım, zorunlu” anlamı taşır. Kişi ekiyle: okumalısın, okumalıyız.",
+   "akilda": "Gerekli: -meli",
+   "soru": {
+    "soru": "Hangi cümlede bir işin yapılması gerektiği anlatılıyor?",
+    "secenekler": [
+     "Dişlerimizi her gün fırçalamalıyız.",
+     "Dişlerimizi fırçaladık.",
+     "Dişlerimizi fırçalayalım."
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Gerekli: -…",
+    "aciklama": "“fırçala-malı-yız” gereklilik kipidir."
+   }
+  },
+  {
+   "ad": "Şart Kipi",
+   "renk": "#2f8f5b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>şart</text><rect x='13.8' y='44' width='46.5' height='22' rx='8' fill='#fbf6e6'/><text x='37.0' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>çalış</text><rect x='62.3' y='44' width='24.6' height='22' rx='8' fill='#f5c53d'/><text x='74.6' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>sa</text><rect x='88.9' y='44' width='17.3' height='22' rx='8' fill='#7ad19a'/><text x='97.6' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>n</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>...başarırsın</text></svg>",
+   "aciklama": "“-se, -sa” eki bir işin başka bir işe bağlı olduğunu, yani şartı bildirir: Erken kalksam otobüse yetişirim.",
+   "ek": "Şart kipi çoğu zaman tek başına bitmez; ardından “o zaman ne olur?” sorusunun cevabı gelir: Çalışsan başarırsın.",
+   "akilda": "Şart: -se, -sa",
+   "soru": {
+    "soru": "“Yağmur dursa dışarı çıkarız.” cümlesinde “dursa” ne bildirir?",
+    "secenekler": [
+     "Bir emri",
+     "Geçmişte olan bir işi",
+     "Bir şartı"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Şart: -se, -sa.",
+    "aciklama": "“dur-sa”: dışarı çıkmak yağmurun durmasına bağlı; bu bir şarttır."
+   }
+  },
+  {
+   "ad": "Emir Kipi",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>emir</text><rect x='23.5' y='44' width='31.9' height='22' rx='8' fill='#fbf6e6'/><text x='39.4' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>yaz</text><rect x='57.4' y='44' width='39.2' height='22' rx='8' fill='#7ad19a'/><text x='77.0' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ınız</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>yazınız!</text></svg>",
+   "aciklama": "Emir kipi bir işin yapılmasını buyurur: Gel! Kapıyı kapat. Otursun. Dikkat edin!",
+   "ek": "Emir kipinin ayrı bir eki yoktur; kişiye göre biçim alır: sen → gel, o → gelsin, siz → gelin / geliniz, onlar → gelsinler. Kitaptaki yönergeler de emir kipindedir: “Metninizi defterinize yazınız.” (s. 110)",
+   "akilda": "Buyruk: Gel! Gelsin!",
+   "soru": {
+    "soru": "Hangi cümlede emir kipi kullanılmıştır?",
+    "secenekler": [
+     "Pencereyi açtık.",
+     "Pencereyi açın!",
+     "Pencereyi açmalıyız."
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: Buyruk …",
+    "aciklama": "“Açın!” bir buyruk bildirir; emir kipidir."
+   }
+  },
+  {
+   "ad": "Soru Eki",
+   "renk": "#b58a2f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>soru eki</text><rect x='14.2' y='44' width='53.8' height='22' rx='8' fill='#fbf6e6'/><text x='41.1' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>Geldin</text><rect x='74.0' y='44' width='31.9' height='22' rx='8' fill='#9cc7ff'/><text x='89.9' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>mi?</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>ayrı yazılır</text></svg>",
+   "aciklama": "“mı, mi, mu, mü” cümleye soru anlamı katar ve kelimeden ayrı yazılır: Geldin mi? Bu kitap mı?",
+   "ek": "Kitap onu “fiile soru anlamı katan ek” diye gösterir (s. 110); programda isim çekim ekleriyle birlikte sayılır. Yani hem fiille hem isimle kullanılır. Ondan sonra gelen ekler soru ekine bitişik yazılır: Geliyor musun?",
+   "akilda": "mi ayrı yazılır",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“O zaman bir şey yazmadınız mı?” (s. 109) Bu cümledeki fiil çekim eklerini inceleyelim.",
+    "adimlar": [
+     {
+      "metin": "1. Cümleye soru anlamı katan ek hangisi?",
+      "soru": {
+       "soru": "Soru anlamı katan ek hangisi?",
+       "secenekler": [
+        "mı",
+        "-dı",
+        "-nız"
+       ],
+       "dogru": 0,
+       "ipucu": "Ayrı yazılan eki ara.",
+       "aciklama": "“mı” soru ekidir; ayrı yazılır."
+      },
+      "islem": "mı → soru eki"
+     },
+     {
+      "metin": "2. “yazmadınız” kelimesinde işin geçmişte olduğunu gösteren ek hangisi?",
+      "soru": {
+       "soru": "Geçmiş zaman eki hangisi?",
+       "secenekler": [
+        "-ma",
+        "-dı",
+        "-nız"
+       ],
+       "dogru": 1,
+       "ipucu": "-di gördüm, -miş duydum.",
+       "aciklama": "“-dı” geçmiş zaman ekidir."
+      },
+      "islem": "-dı → geçmiş zaman"
+     },
+     {
+      "metin": "3. İşi kim yapmış? En sondaki eke bak.",
+      "islem": "-nız → siz (kişi eki)"
+     }
+    ],
+    "sonuc": "Kitap bu cümlede “-dı” (zaman), “-nız” (kişi) ve “mı” (soru) eklerini fiil çekim eki olarak inceletir. “-ma” ise fiili olumsuz yapar."
+   },
+   "soru": {
+    "soru": "Hangi cümlede soru eki doğru yazılmıştır?",
+    "secenekler": [
+     "Ödevini yaptınmı?",
+     "Ödevini yaptın-mı?",
+     "Ödevini yaptın mı?"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: mi … yazılır.",
+    "aciklama": "Soru eki ayrı yazılır: yaptın mı?"
+   }
+  },
+  {
+   "ad": "İsim Eki mi Fiil Eki mi?",
+   "renk": "#2f8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>isim / fiil</text><rect x='19.8' y='36' width='46.5' height='22' rx='8' fill='#fbf6e6'/><text x='43.0' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>asker</text><rect x='68.3' y='36' width='31.9' height='22' rx='8' fill='#f5c53d'/><text x='84.2' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ler</text><rect x='13.8' y='62' width='31.9' height='22' rx='8' fill='#fbf6e6'/><text x='29.7' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>dön</text><rect x='47.7' y='62' width='24.6' height='22' rx='8' fill='#f5c53d'/><text x='60.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>dü</text><rect x='74.3' y='62' width='31.9' height='22' rx='8' fill='#7ad19a'/><text x='90.2' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ler</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>-ler iki görevli</text></svg>",
+   "aciklama": "Bazı ekler hem isme hem fiile gelir. Eki ayırmak için önce kelimeye bak: isim mi, fiil mi?",
+   "ek": "“-ler”: isme gelince çoğul eki (askerler), fiile gelince “onlar” kişi eki (döndüler, s. 109). “-im”: isme gelince iyelik eki (kalemim), fiile gelince kişi eki (geldim).",
+   "akilda": "Önce kelimeye bak",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Askerler sabah erkenden yola çıktılar.” cümlesindeki iki “-ler” ekini ayıralım.",
+    "adimlar": [
+     {
+      "metin": "“askerler” kelimesinin kökü isim mi, fiil mi?",
+      "islem": "asker → isim"
+     },
+     {
+      "metin": "İsme gelen “-ler” birden çok anlamı verir.",
+      "islem": "-ler → çoğul eki"
+     },
+     {
+      "metin": "“çıktılar” kelimesinin kökü “çık-mak”: fiil.",
+      "islem": "çık → fiil"
+     },
+     {
+      "metin": "Fiile gelen “-lar” işi kimin yaptığını söyler.",
+      "islem": "-lar → onlar (kişi eki)"
+     }
+    ],
+    "sonuc": "Aynı görünen ek, geldiği kelimeye göre farklı görev yapar: isimde çoğul eki, fiilde kişi eki."
+   },
+   "soru": {
+    "soru": "“Arkadaşlarım geldiler.” cümlesinde “geldiler” kelimesindeki “-ler” hangi ektir?",
+    "secenekler": [
+     "Kişi eki",
+     "Çoğul eki",
+     "İlgi eki"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Önce kelimeye bak. “gel-” isim mi, fiil mi?",
+    "aciklama": "“gel-” fiildir; fiile gelen “-ler” onlar kişi ekidir."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram bir dilek kipi mi, yoksa soru ve ekleri ayırmayla mı ilgili?",
+   "kutular": [
+    {
+     "etiket": "Dilek kipleri",
+     "uyeler": [
+      "İstek Kipi",
+      "Gereklilik Kipi",
+      "Şart Kipi",
+      "Emir Kipi"
+     ]
+    },
+    {
+     "etiket": "Soru ve ekleri ayırma",
+     "uyeler": [
+      "Soru Eki",
+      "İsim Eki mi Fiil Eki mi?"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Dilek kipleri: istek (-e), gereklilik (-meli), şart (-se), emir (Gel!).",
+  "Emir kipinin ayrı eki yoktur: gel, gelsin, gelin, gelsinler.",
+  "Soru eki “mi” ayrı yazılır; sonraki ekler ona bitişir: musun.",
+  "Aynı ek isimde ve fiilde farklı görev yapar: askerler / döndüler."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden “geliyormusun” değil de “geliyor musun” yazıyoruz?",
+   "cevap": "Soru eki her zaman ayrı yazılır. Ondan sonra gelen kişi eki ise soru ekine bitişir: mu-sun."
+  },
+  {
+   "soru": "Haber kipi ile dilek kipi arasındaki fark ne?",
+   "cevap": "Haber kipleri (geçmiş, şimdiki, gelecek, geniş zaman) işin zamanını haber verir. Dilek kipleri istek, gereklilik, şart ya da emir bildirir. Bu adlar kitapta geçmez, programda vardır."
+  },
+  {
+   "soru": "Ders kitabındaki yönergeler neden “inceleyiniz, yazınız” diye bitiyor?",
+   "cevap": "Çünkü yönergeler emir kipindedir ve “siz”e kibarca seslenir: yaz-ınız. Kitaptaki etkinlikler böyle verilir (s. 109–110)."
+  },
+  {
+   "soru": "“mi” bazen “mı, mu, mü” oluyor, neden?",
+   "cevap": "Soru eki önündeki kelimenin son ünlüsüne uyar: geldin mi, aldın mı, oldun mu, gördün mü."
+  },
+  {
+   "soru": "Şart kipini neden cümlenin ortasında görürüz?",
+   "cevap": "Çünkü şart bir sonucu bekler: “Erken gelsen birlikte çalışırız.” Şarttan sonra ne olacağı söylenir."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Sınıf kurallarını anlatan üç kısa cümle yaz: birinde gereklilik, birinde emir, birinde istek kipi kullan.",
+   "ornekCevap": "Derse zamanında gelmeliyiz (gereklilik). Sıranı temiz tut (emir). Haydi, birbirimize yardım edelim (istek).",
+   "anahtarlar": [
+    "gereklilik",
+    "emir",
+    "istek",
+    "meli",
+    "malı"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“oku-” fiilinin istek kipiyle “biz” için çekimi hangisidir?",
+   "secenekler": [
+    "okuyalım",
+    "okumalıyız",
+    "okusak"
+   ],
+   "dogru": 0,
+   "ipucu": "İstek eki -e, -a. “Haydi, …” diye başla.",
+   "aciklama": "oku-y-a-lım: istek kipi, biz.",
+   "kavram": "İstek Kipi"
+  },
+  {
+   "soru": "“Sokağa çıkmadan önce montunu giymelisin.” cümlesindeki fiil hangi kiptedir?",
+   "secenekler": [
+    "Gereklilik",
+    "İstek",
+    "Şart"
+   ],
+   "dogru": 0,
+   "ipucu": "“-meli, -malı” ekini ara.",
+   "aciklama": "“giy-meli-sin” gereklilik kipidir.",
+   "kavram": "Gereklilik Kipi"
+  },
+  {
+   "soru": "Hangi cümlede şart kipi kullanılmıştır?",
+   "secenekler": [
+    "Biraz dinlenelim.",
+    "Kitabı bitirmeli.",
+    "Kitabı bitirse bana verecek."
+   ],
+   "dogru": 2,
+   "ipucu": "“-se, -sa” ekini ara.",
+   "aciklama": "“bitir-se”: vermesi bitirmesine bağlı; şart kipidir.",
+   "kavram": "Şart Kipi"
+  },
+  {
+   "soru": "“gel-” fiilinin emir kipinde “o” için çekimi hangisidir?",
+   "secenekler": [
+    "gelse",
+    "gelsin",
+    "gele"
+   ],
+   "dogru": 1,
+   "ipucu": "“O … gelsin.” diye söyle.",
+   "aciklama": "Emir kipinde “o” için “-sın, -sin” gelir: gelsin.",
+   "kavram": "Emir Kipi"
+  },
+  {
+   "soru": "Hangi cümlede soru eki yanlış yazılmıştır?",
+   "secenekler": [
+    "Yarın gelecek misin?",
+    "Bu çanta senin mi?",
+    "Sinemaya gittinmi?"
+   ],
+   "dogru": 2,
+   "ipucu": "Soru eki ayrı mı yazılmış?",
+   "aciklama": "Doğrusu: Sinemaya gittin mi? Soru eki ayrı yazılır.",
+   "kavram": "Soru Eki"
+  },
+  {
+   "soru": "“Kalemim kayboldu.” ve “Okula geldim.” cümlelerindeki “-m” ekleri için hangisi doğrudur?",
+   "secenekler": [
+    "İkisi de kişi ekidir.",
+    "İlki iyelik eki, ikincisi kişi ekidir.",
+    "İkisi de iyelik ekidir."
+   ],
+   "dogru": 1,
+   "ipucu": "“kalem” isim mi fiil mi? “gel-” isim mi fiil mi?",
+   "aciklama": "İsme gelen “-m” iyelik (benim kalemim), fiile gelen “-m” kişi ekidir (ben geldim).",
+   "kavram": "İsim Eki mi Fiil Eki mi?",
+   "yardim": {
+    "adimlar": [
+     "Önce kelimelere bak: “kalem” bir isim, “gel-” bir fiil.",
+     "İsme gelen “-m” kime ait olduğunu söyler.",
+     "Fiile gelen “-m” işi kimin yaptığını söyler."
+    ]
+   }
+  },
+  {
+   "soru": "Hangi kelimedeki “-ler, -lar” eki kişi ekidir?",
+   "secenekler": [
+    "kitaplar",
+    "bayraklar",
+    "koştular"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangi kelimenin kökü bir fiil?",
+   "aciklama": "“koş-” fiildir; “-lar” onlar kişi ekidir. Ötekiler isimdir, ekleri çoğul ekidir.",
+   "kavram": "İsim Eki mi Fiil Eki mi?"
+  },
+  {
+   "soru": "Metinde şart kipiyle kurulmuş fiil hangisidir?",
+   "secenekler": [
+    "beslenmeliyiz",
+    "yiyelim",
+    "uyusak"
+   ],
+   "dogru": 2,
+   "ipucu": "“-se, -sa” ekini ara.",
+   "aciklama": "“uyu-sa-k”: dinç kalkmak erken uyumaya bağlı; şart kipidir. Ötekiler gereklilik ve istektir.",
+   "kavram": "Şart Kipi",
+   "metinBaslik": "Sağlıklı Yaşam",
+   "metin": [
+    "Sağlıklı büyümek için dengeli beslenmeliyiz.",
+    "Her gün sebze ve meyve yiyelim.",
+    "Erken uyusak sabahları dinç kalkarız.",
+    "Gün boyunca bol su içiniz."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Bir işin başka bir işe bağlandığı cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Şart kipindeki fiili.",
+     "Anahtar kelime: şart. Ek “-se, -sa”.",
+     "Kanıt: Bir işin başka bir işe bağlı olduğunu söyleyen cümleyi bul.",
+     "Şıkları ele: “-meli” ve “-e, -a” hangi kiplerin ekleri?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde emir kipiyle kurulmuş yönerge hangisidir?",
+   "secenekler": [
+    "okuyalım",
+    "inceleyiniz",
+    "başlıyor"
+   ],
+   "dogru": 1,
+   "ipucu": "Buyruk bildiren fiili ara.",
+   "aciklama": "“incele-yiniz” emir kipidir; “okuyalım” istek, “başlıyor” şimdiki zamandır.",
+   "kavram": "Emir Kipi",
+   "metinBaslik": "Türkçe Dersinde",
+   "metin": [
+    "Ders kitabımızdaki etkinlik şöyle başlıyor:",
+    "“Cümlelerdeki çekim eklerini inceleyiniz.”",
+    "Öğretmenimiz de bize bir öneride bulundu.",
+    "“Her gün bir sayfa okuyalım.” dedi."
+   ],
+   "kanit": [
+    1
+   ],
+   "kanitIpucu": "Bir işin yapılmasını buyuran cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Emir kipindeki yönergeyi.",
+     "Anahtar kelime: emir. Emir bir buyruk bildirir.",
+     "Kanıt: Okura “yap” diyen cümleyi bul.",
+     "Şıkları ele: “-e, -a” ile kurulan fiil emir mi, istek mi?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde gereklilik kipiyle kurulmuş fiil hangisidir?",
+   "secenekler": [
+    "okumalısın",
+    "yaz",
+    "kontrol et"
+   ],
+   "dogru": 0,
+   "ipucu": "“-meli, -malı” ekini ara.",
+   "aciklama": "“oku-malı-sın” gereklilik kipidir. “yaz” ve “kontrol et” emir kipindedir.",
+   "kavram": "Gereklilik Kipi",
+   "metinBaslik": "Problem Çözme",
+   "metin": [
+    "Problemi çözmeden önce soruyu iki kez okumalısın.",
+    "Sonra verilenleri bir kenara yaz.",
+    "Kendine şunu sor: Soru eksi sayılarla mı ilgili?",
+    "Cevabı bulunca işlemini kontrol et."
+   ],
+   "kanit": [
+    0
+   ],
+   "kanitIpucu": "Bir işin yapılması gerektiğini söyleyen cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Gereklilik kipindeki fiili.",
+     "Anahtar kelime: gereklilik. Ek “-meli, -malı”.",
+     "Kanıt: “yapman gerek” anlamı veren cümleyi bul.",
+     "Şıkları ele: Ek almadan buyuran fiiller hangi kipte?"
+    ]
+   }
+  }
+ ]
+}
