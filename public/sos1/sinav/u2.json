@@ -1,0 +1,375 @@
+{
+ "unite": 2,
+ "ders": "sos1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "s2-01",
+   "konu": "u2k1",
+   "kavram": "Küreselleşme",
+   "tur": "kisa",
+   "soru": "Dünyanın ekonomik, kültürel ve siyasi olarak birbirine daha bağlı hâle gelmesi sürecine ne denir?",
+   "yanit": "küreselleşme",
+   "aciklama": "Dünya birbirine bağlanıyor: küreselleşme (s. 58–62)."
+  },
+  {
+   "id": "s2-02",
+   "konu": "u2k1",
+   "kavram": "Uluslararası Şirketler ve Yerel İşletmeler",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi küreselleşmenin ekonomide getirdiği sorunlardan biridir?",
+   "secenekler": [
+    "Küçük yerel işletmelerin zor durumda kalması",
+    "Ürünlere ulaşmanın kolaylaşması",
+    "Ticaretin dünya çapında yapılması",
+    "Ulaşımın hızlanması"
+   ],
+   "dogru": 0,
+   "aciklama": "Büyük şirketler büyüdü, küçük yerel işletmeler zorlandı (s. 58–62)."
+  },
+  {
+   "id": "s2-03",
+   "konu": "u2k1",
+   "kavram": "Orta Koridor",
+   "tur": "secim",
+   "soru": "Çin'den başlayıp Kazakistan, Hazar Denizi, Azerbaycan ve Gürcistan üzerinden Türkiye'ye ve Avrupa'ya uzanan yol hangisidir?",
+   "secenekler": [
+    "İpek Yolu",
+    "Orta Koridor",
+    "Kral Yolu",
+    "Baharat Yolu"
+   ],
+   "dogru": 1,
+   "aciklama": "Bu ulaşım yolu Orta Koridor'dur (s. 58–62)."
+  },
+  {
+   "id": "s2-04",
+   "konu": "u2k1",
+   "kavram": "E-Ticaret",
+   "tur": "dy",
+   "ifade": "E-ticaret sayesinde evden çıkmadan başka ülkelerle alışveriş yapılabilir.",
+   "dogru": true,
+   "aciklama": "E-ticaretle evden dünyaya alışveriş yapılır (s. 58–62)."
+  },
+  {
+   "id": "s2-05",
+   "konu": "u2k1",
+   "kavram": "Hızlı Ulaşım",
+   "tur": "secim",
+   "soru": "Sanayi İnkılabı'ndan sonra ulaşımın hızlanması hangisine yol açmıştır?",
+   "secenekler": [
+    "Turizm seyahatlerinin azalmasına",
+    "İş ve turizm amaçlı seyahatlerin artmasına",
+    "Toplumların birbirinden uzaklaşmasına",
+    "Ticaretin ülke içinde kalmasına"
+   ],
+   "dogru": 1,
+   "aciklama": "Kolay ve hızlı yolculuk iş ve turizm seyahatlerini artırdı (s. 58–62)."
+  },
+  {
+   "id": "s2-06",
+   "konu": "u2k2",
+   "kavram": "Sağlıkta Küreselleşme",
+   "tur": "secim",
+   "soru": "Küreselleşmenin sağlık üzerindeki etkileriyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Teşhis ve tedavi kolaylaştı.",
+    "Hastalıkların yayılması hızlandı.",
+    "Sağlık sorunları yalnızca tek bir ülkeyi etkiler oldu."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Sağlık sorunları artık tüm dünyayı etkiliyor. Örnek: COVID-19 (s. 62–67)."
+  },
+  {
+   "id": "s2-07",
+   "konu": "u2k2",
+   "kavram": "Dilde Bozulma",
+   "tur": "dy",
+   "ifade": "Ana dile başka dillerden çok fazla sözcük girmesi dilin bozulmasına yol açabilir.",
+   "dogru": true,
+   "aciklama": "Dilimize sahip çıkmalıyız (s. 62–67)."
+  },
+  {
+   "id": "s2-08",
+   "konu": "u2k2",
+   "kavram": "Yerelden Evrensele",
+   "tur": "secim",
+   "soru": "Küresel çevre sorunlarını azaltmak için bireyin yapabileceği en temel şey hangisidir?",
+   "secenekler": [
+    "İhtiyacından fazla alışveriş yapmak",
+    "Bilinçli tüketmek ve israfı önlemek",
+    "Sorunu yalnızca devlete bırakmak",
+    "Daha çok araba kullanmak"
+   ],
+   "dogru": 1,
+   "aciklama": "Değişim önce bireyden başlar: bilinçli tüketim, israfı önlemek (s. 62–67)."
+  },
+  {
+   "id": "s2-09",
+   "konu": "u2k2",
+   "kavram": "Küresel Çevre Sorunları",
+   "tur": "dytablo",
+   "soru": "Küresel çevre sorunu olanlara D, olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "İklim krizi",
+     "d": true
+    },
+    {
+     "s": "Ormansızlaşma",
+     "d": true
+    },
+    {
+     "s": "E-ticaret",
+     "d": false
+    },
+    {
+     "s": "Su kirliliği",
+     "d": true
+    }
+   ],
+   "aciklama": "Çevre sorunları yerelden küresele dönüştü. E-ticaret bir alışveriş biçimidir (s. 62–67)."
+  },
+  {
+   "id": "s2-10",
+   "konu": "u2k2",
+   "kavram": "Kültür Yolu Festivalleri",
+   "tur": "secim",
+   "soru": "Geleneksel el sanatlarımızın ve millî musikimizin dijital sergi ve konserlerle tanıtıldığı etkinlik hangisidir?",
+   "secenekler": [
+    "Kültür Yolu Festivalleri",
+    "Orta Koridor",
+    "İyilik Gemileri",
+    "Yeşil Dönüşüm"
+   ],
+   "dogru": 0,
+   "aciklama": "Kültür Yolu Festivalleri değerlerimizi modern yollarla yaşatır (s. 62–67)."
+  },
+  {
+   "id": "s2-11",
+   "konu": "u2k3",
+   "kavram": "Kara Sınırı Komşularımız",
+   "tur": "kisa",
+   "soru": "Türkiye'nin karadan kaç komşusu vardır?",
+   "yanit": "8",
+   "kabul": [
+    "sekiz"
+   ],
+   "sayi": true,
+   "aciklama": "Bulgaristan, Yunanistan, Gürcistan, Ermenistan, Azerbaycan, İran, Irak, Suriye: 8 (s. 68–71)."
+  },
+  {
+   "id": "s2-12",
+   "konu": "u2k3",
+   "kavram": "Kara Sınırı Komşularımız",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi Türkiye'nin kara sınırı komşularından biri değildir?",
+   "secenekler": [
+    "Gürcistan",
+    "İran",
+    "Mısır",
+    "Bulgaristan"
+   ],
+   "dogru": 2,
+   "aciklama": "Mısır'la kara sınırımız yoktur (s. 68–71)."
+  },
+  {
+   "id": "s2-13",
+   "konu": "u2k3",
+   "kavram": "Türk Dünyasıyla İş Birliği",
+   "tur": "secim",
+   "soru": "Türk Devletleri Teşkilatı toplantılarında kabul edilen Ortak Türk Alfabesi kaç harften oluşur?",
+   "secenekler": [
+    "29",
+    "34",
+    "28",
+    "40"
+   ],
+   "dogru": 1,
+   "aciklama": "Ortak Türk Alfabesi 34 harftir (s. 68–71)."
+  },
+  {
+   "id": "s2-14",
+   "konu": "u2k3",
+   "kavram": "Yurtta Sulh, Cihanda Sulh",
+   "tur": "dy",
+   "ifade": "“Yurtta sulh, cihanda sulh.” sözündeki “sulh” kelimesi “savaş” demektir.",
+   "dogru": false,
+   "duzeltme": "“Sulh” barış demektir: yurtta barış, dünyada barış.",
+   "aciklama": "Sulh barıştır (s. 68–71)."
+  },
+  {
+   "id": "s2-15",
+   "konu": "u2k3",
+   "kavram": "Yurt Dışı Yardımlar",
+   "tur": "eslestir",
+   "soru": "Türkiye'nin yardımlarını yapıldığı yerlerle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Kuzey Makedonya",
+     "sag": "Maarif okulu"
+    },
+    {
+     "sol": "Kolombiya",
+     "sag": "Mobil kütüphane"
+    },
+    {
+     "sol": "Somali",
+     "sag": "Eğitim ve araştırma hastanesi"
+    }
+   ],
+   "aciklama": "Türkiye eğitim, kültür ve sağlıkta yardım yapar (s. 68–71)."
+  },
+  {
+   "id": "s2-16",
+   "konu": "u2k4",
+   "kavram": "Ara Buluculuk",
+   "tur": "secim",
+   "soru": "Anlaşmazlık yaşayan taraflar arasında sorunun çözümüne yardımcı olmaya ne denir?",
+   "secenekler": [
+    "Göç",
+    "Ara buluculuk",
+    "Küreselleşme",
+    "E-ticaret"
+   ],
+   "dogru": 1,
+   "aciklama": "Ara bulucu, iki tarafı buluşturan köprüdür (s. 72–74)."
+  },
+  {
+   "id": "s2-17",
+   "konu": "u2k4",
+   "kavram": "Mülteciler",
+   "tur": "secim",
+   "soru": "Savaş, çatışma veya baskı nedeniyle ülkesini terk etmek zorunda kalan insanlara ne denir?",
+   "secenekler": [
+    "Turist",
+    "Mülteci",
+    "Komşu",
+    "Yerli"
+   ],
+   "dogru": 1,
+   "aciklama": "Ülkesini zorunlu olarak terk eden insanlar mültecidir (s. 72–74)."
+  },
+  {
+   "id": "s2-18",
+   "konu": "u2k4",
+   "kavram": "Göç",
+   "tur": "dy",
+   "ifade": "Göçün nedenleri yalnızca ekonomik sorunlardır.",
+   "dogru": false,
+   "duzeltme": "Göçün nedenleri güvenlik ya da ekonomik sorunlar olabilir.",
+   "aciklama": "İnsanlar güvenlik için de daha iyi yaşam için de göç eder (s. 72–74)."
+  },
+  {
+   "id": "s2-19",
+   "konu": "u2k4",
+   "kavram": "Barış",
+   "tur": "bosluk",
+   "havuz": [
+    "göç",
+    "e-ticaret"
+   ],
+   "cumleler": [
+    {
+     "c": "Saygı, güven ve anlayış içinde çatışmadan yaşamaya ___ denir.",
+     "cevap": "barış"
+    },
+    {
+     "c": "Can ve mal güvenliğini tehdit eden, yıkıma yol açan olaylara ___ denir.",
+     "cevap": "savaş"
+    },
+    {
+     "c": "Krizlerde sığınanlara kucak açan Türkiye, güvenli bir ___ olarak görülür.",
+     "cevap": "liman"
+    }
+   ],
+   "aciklama": "Savaş yıkar, barış korur. Türkiye güvenli bir limandır (s. 72–74)."
+  },
+  {
+   "id": "s2-20",
+   "konu": "u2k4",
+   "kavram": "Göçmenlerin Uyumu",
+   "tur": "secim",
+   "soru": "Göç eden insanların yeni yerlerine uyumu için hangisi önemlidir?",
+   "secenekler": [
+    "Toplumun onları anlayışla karşılaması",
+    "Onlarla hiç konuşmamak",
+    "Eğitimden uzak tutulmaları",
+    "Yalnız yaşamaları"
+   ],
+   "dogru": 0,
+   "aciklama": "Göçmen uyum sağlamalı, toplum da anlayışla karşılamalıdır (s. 72–74)."
+  },
+  {
+   "id": "s2-21",
+   "konu": "u2k5",
+   "kavram": "İklim Krizi",
+   "tur": "secim",
+   "soru": "Küresel iklim krizinin temel nedeni hangisidir?",
+   "secenekler": [
+    "Atmosfere fazla sera gazı salınması",
+    "Ağaç dikilmesi",
+    "Bisiklet kullanımının artması",
+    "Geri dönüşüm"
+   ],
+   "dogru": 0,
+   "aciklama": "Fosil yakıt, orman kesimi ve sanayi fazla sera gazı salınımına yol açar (s. 74–79)."
+  },
+  {
+   "id": "s2-22",
+   "konu": "u2k5",
+   "kavram": "Ortak Sorumluluk",
+   "tur": "kisa",
+   "soru": "Türkiye'nin Sıfır Emisyon Hedefi hangi yıl içindir?",
+   "yanit": "2053",
+   "sayi": true,
+   "aciklama": "Hedef: 2053 Sıfır Emisyon (s. 74–79)."
+  },
+  {
+   "id": "s2-23",
+   "konu": "u2k5",
+   "kavram": "Yardım Kurumları",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi Türkiye'nin yardımlarını ulaştıran kurumlardan biri değildir?",
+   "secenekler": [
+    "AFAD",
+    "TİKA",
+    "Türk Kızılay",
+    "Orta Koridor"
+   ],
+   "dogru": 3,
+   "aciklama": "Yardımlar TİKA, AFAD ve Türk Kızılay ile ulaştırılır. Orta Koridor bir ulaşım yoludur (s. 74–79)."
+  },
+  {
+   "id": "s2-24",
+   "konu": "u2k5",
+   "kavram": "İyilik Gemileri",
+   "tur": "dy",
+   "ifade": "Türk Kızılay, İyilik Gemileri ile Gazze'ye insani yardım ulaştırmaktadır.",
+   "dogru": true,
+   "aciklama": "İyilik Gemileri Gazze'ye gıda, su ve barınma malzemesi taşır (s. 74–79)."
+  },
+  {
+   "id": "s2-25",
+   "konu": "u2k5",
+   "kavram": "Empati",
+   "tur": "secim",
+   "soru": "Yardım etme isteğini güçlendiren en temel duygu hangisidir?",
+   "secenekler": [
+    "Kıskançlık",
+    "Empati",
+    "Öfke",
+    "Korku"
+   ],
+   "dogru": 1,
+   "aciklama": "Karşındakinin hissettiğini anlamak, yani empati, bizi yardıma yöneltir (s. 74–79)."
+  }
+ ]
+}

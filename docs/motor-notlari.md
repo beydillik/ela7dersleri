@@ -38,8 +38,11 @@ Bu dosya, skill'e henüz eklenmemiş motor kurallarını toplar. Faz 2 bitince s
 - Sonuç sayfası: puan + çaba övgüsü, "Yanlışların" kartı, konulara göre tablo, kapalı "Doğru yaptıkların". Sonda biçiminde önce "Yanlışlarını incele" (her ekranda bir yanlış), sonra "Yanlışlarını yeniden çöz" (şıklar karışık, tek hak; yine yanlışsa kavram zayıf listesine bir daha işlenir). Bekleyen yeniden çözme varken Sıradaki gizli. Son prova `ela7:<kod>:sinav-son:<durak>` (giriş ekranından dönülür).
 - Açıklama (`aciklama`): Ela'nın anlayacağı 1–2 kısa cümle (en çok ~15 kelime) + sayfa. Çok parçalı türlerde doğrular zaten yeşil göründüğü için açıklama kısa bir ipucu olur.
 - Olaylar: `sinav-basla`, `sinav-soru` (yeniden çözmede `yeniden: true`), `sinav-bitti` (`mod`), `sinav-inceleme`, `sinav-yeniden`. Kayıt: `ela7:<kod>:sinav:<durak>` (yarım), `sinavlar:<durak>` (geçmiş), `sinav-gor` (soru görülme sayısı; az görülen önce).
-- Havuz yazarken: biçimler okul testlerinden (Banko, Arı) örnek alınır, sorular kitaba dayanarak yazılır; kopyalanmaz. Konu başına 4–7 soru, türler karışık, doğru şık dağılsın. Doğrulama: `gen_fen_sinav.py` benzeri betikle kavram adı, şık sayısı, `___` sayısı.
-- Fen Ünite 1: 40 soru (secim 15 — 6'sı öncüllü —, dy 7, kisa 7, bosluk 4, eslestir 4, dytablo 3).
+- Havuz yazarken: biçimler okul testlerinden (Banko, Arı) örnek alınır, sorular kitaba ve sitedeki konu anlatımına dayanarak yazılır; kopyalanmaz. Konu başına 5–7 soru, türler karışık, öncüllü sorularda doğru şık değişsin (çoktan seçmelide şıklar zaten karışır).
+- Üretici: `araclar/sinav/<kod>_u<no>.py` (ortak modül `araclar/sinav/ortak.py`: `H = Havuz(kod, ünite, önek)`, `H.add(...)`, `H.yaz()`; yazmadan önce doğrular: kavram adı, şık sayısı, öncül/kök, `___` sayısı, havuzda cevap olmaması, açıklama ≤ 20 kelime). Konu içeriğini okumak için `python3 araclar/sinav/dok.py <kod> <ünite>`. JSON elle düzenlenmez; betik düzenlenip yeniden çalıştırılır.
+- `kisa` + `sayi: true`: sayısal cevap; yalnız değeri aynı olan kabul (12 ≠ 125; 3/4 = 0,75; −8 = -8). Sözel kısa cevapta Türkçe harfsiz yazım (caldiran) yazım uyarısıyla kabul. İngilizce derslerde küçük harfe İngilizce kuralıyla çevrilir.
+- Metinli soru: `metin` cümle listesi (dizi); çoktan seçmeli şıklarda `{{…}}` kullanma (şıklar düz yazılır), kesir `[[3/4]]` ve üs `[[u:2]]` şıklarda da çalışır. Boşluk doldurma kelime havuzunda biçimlendirme yok (düz kelime/sayı).
+- Havuzlar (15 Ekim 2026): fen1 u1 40, u2 28, u3 50; tr1 u1 45; mat1 u1 60; sos1 u1 30, u2 25, u3 60; ing1 u1 18; own1 u1 18 (yalnız durağın kapsadığı u1k1, u1k2, u1k4). Toplam 374.
 
 ## Bulut (Faz 3, Firebase)
 - Firebase projesi `ela7dersleri` (Spark, Firestore europe-west3). Giriş: veli e-posta/şifre, öğrenci cihazı anonim.

@@ -1,0 +1,466 @@
+{
+ "unite": 2,
+ "ders": "fen1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "f2-01",
+   "konu": "u2k1",
+   "kavram": "Kuvvet Var, Hareket Yok",
+   "tur": "secim",
+   "soru": "Aşağıdakilerin hangisinde fiziksel anlamda iş yapılmaz?",
+   "secenekler": [
+    "Yerdeki kutuyu masanın üstüne kaldırmak",
+    "Alışveriş arabasını ileri itmek",
+    "Okulun duvarını var gücüyle itmek",
+    "Kovayı kuyudan yukarı çekmek"
+   ],
+   "dogru": 2,
+   "aciklama": "Duvar yerinden oynamaz. Kuvvet var ama hareket yoksa iş yapılmaz (s. 59–63)."
+  },
+  {
+   "id": "f2-02",
+   "konu": "u2k1",
+   "kavram": "Fiziksel Anlamda İş",
+   "tur": "secim",
+   "soru": "Fiziksel anlamda iş yapılmasıyla ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Cisme kuvvet uygulanmalıdır.",
+    "Cisim, kuvvetin doğrultusunda yer değiştirmelidir.",
+    "Bilgisayar başında ödev yapmak fiziksel anlamda iştir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "İş için kuvvet ve kuvvet yönünde hareket gerekir. Ödev yapmak günlük dildeki iştir (s. 59–63)."
+  },
+  {
+   "id": "f2-03",
+   "konu": "u2k1",
+   "kavram": "Kuvvet ile Hareket Farklı Doğrultuda",
+   "tur": "dy",
+   "ifade": "Çantasını sırtında taşıyarak düz yolda yürüyen öğrenci, çantaya fiziksel anlamda iş yapar.",
+   "dogru": false,
+   "duzeltme": "Kuvvet yukarı, hareket ileri doğrudur. Doğrultular aynı olmadığı için iş yapılmaz.",
+   "aciklama": "Çantaya uygulanan kuvvet yukarı, hareket ileri. Doğrultular farklıysa iş yok (s. 59–63)."
+  },
+  {
+   "id": "f2-04",
+   "konu": "u2k1",
+   "kavram": "Joule",
+   "tur": "kisa",
+   "soru": "Kuvvet newton, yol metre alınırsa işin birimi nedir?",
+   "yanit": "joule",
+   "kabul": [
+    "jul",
+    "J"
+   ],
+   "aciklama": "İşin birimi joule'dür, J ile gösterilir (s. 59–63)."
+  },
+  {
+   "id": "f2-05",
+   "konu": "u2k1",
+   "kavram": "Kuvvet Uygulamak",
+   "tur": "kisa",
+   "soru": "Kuvvetin birimi nedir?",
+   "yanit": "newton",
+   "kabul": [
+    "N",
+    "nivtın"
+   ],
+   "aciklama": "Kuvvetin birimi newtondur, N ile gösterilir (s. 59–63)."
+  },
+  {
+   "id": "f2-06",
+   "konu": "u2k1",
+   "kavram": "İşin Büyüklüğü",
+   "tur": "secim",
+   "soru": "Ali aynı kutuyu düz zeminde önce 2 m, sonra 6 m itiyor. Kuvvet ikisinde de aynıdır. Buna göre hangisi doğrudur?",
+   "secenekler": [
+    "İki durumda da iş eşittir.",
+    "İkinci durumda daha çok iş yapılır.",
+    "Birinci durumda daha çok iş yapılır.",
+    "İki durumda da iş yapılmaz."
+   ],
+   "dogru": 1,
+   "aciklama": "Kuvvet aynıysa daha uzun yol, daha çok iş demektir (s. 59–63)."
+  },
+  {
+   "id": "f2-07",
+   "konu": "u2k1",
+   "kavram": "Fiziksel Anlamda İş",
+   "tur": "dytablo",
+   "soru": "Her durum için fiziksel anlamda iş yapılıyorsa D, yapılmıyorsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "Halteri başının üstünde hareketsiz tutan sporcu",
+     "d": false
+    },
+    {
+     "s": "Kitap kolisini merdivenden yukarı çıkaran Ahmet",
+     "d": true
+    },
+    {
+     "s": "Masayı ittiği yönde kaydıran öğrenci",
+     "d": true
+    },
+    {
+     "s": "Yerinden oynamayan dolabı iten çocuk",
+     "d": false
+    }
+   ],
+   "aciklama": "Hareket yoksa iş de yoktur. Kuvvet yönünde hareket varsa iş yapılır (s. 59–63)."
+  },
+  {
+   "id": "f2-08",
+   "konu": "u2k2",
+   "kavram": "Enerji",
+   "tur": "kisa",
+   "soru": "İş yapabilme yeteneğine ne denir?",
+   "yanit": "enerji",
+   "aciklama": "İş yapabilme yeteneğine enerji denir (s. 64–67)."
+  },
+  {
+   "id": "f2-09",
+   "konu": "u2k2",
+   "kavram": "Kinetik Enerji",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi kinetik enerjiye sahip değildir?",
+   "secenekler": [
+    "Parkta bisiklet süren çocuk",
+    "Denizde ilerleyen tekne",
+    "Rafta duran kitap",
+    "Yuvarlanan top"
+   ],
+   "dogru": 2,
+   "aciklama": "Kinetik enerji hareketten gelir. Rafta duran kitap hareket etmiyor (s. 64–67)."
+  },
+  {
+   "id": "f2-10",
+   "konu": "u2k2",
+   "kavram": "Kütle ve Kinetik Enerji",
+   "tur": "secim",
+   "soru": "Aynı hızla giden bir kamyon ile bir otomobil için hangisi doğrudur?",
+   "secenekler": [
+    "Otomobilin kinetik enerjisi daha fazladır.",
+    "İkisinin kinetik enerjisi eşittir.",
+    "İkisinin de kinetik enerjisi yoktur.",
+    "Kamyonun kinetik enerjisi daha fazladır."
+   ],
+   "dogru": 3,
+   "aciklama": "Hızlar aynıysa kütlesi büyük olanın kinetik enerjisi fazladır (s. 64–67)."
+  },
+  {
+   "id": "f2-11",
+   "konu": "u2k2",
+   "kavram": "Hız ve Kinetik Enerji",
+   "tur": "dy",
+   "ifade": "Kütleleri aynı iki koşucudan daha hızlı koşanın kinetik enerjisi daha fazladır.",
+   "dogru": true,
+   "aciklama": "Kütle aynıysa hızı fazla olanın kinetik enerjisi fazladır (s. 64–67)."
+  },
+  {
+   "id": "f2-12",
+   "konu": "u2k2",
+   "kavram": "Doğru Orantı",
+   "tur": "secim",
+   "soru": "Kinetik enerjiyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Kinetik enerji yalnızca hıza bağlıdır.",
+    "Kütlesi ve hızı artan cismin kinetik enerjisi artar.",
+    "Yavaşlayan bisikletin kinetik enerjisi azalır."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Kinetik enerji yalnız hıza değil, kütleye de bağlıdır (s. 64–67)."
+  },
+  {
+   "id": "f2-13",
+   "konu": "u2k2",
+   "kavram": "Enerjinin Farklı Şekilleri",
+   "tur": "bosluk",
+   "havuz": [
+    "newton",
+    "kuvvet"
+   ],
+   "cumleler": [
+    {
+     "c": "Hareket eden cismin enerjisine ___ enerji denir.",
+     "cevap": "kinetik"
+    },
+    {
+     "c": "Enerjinin birimi ___ olarak alınır.",
+     "cevap": "joule"
+    },
+    {
+     "c": "Lambanın etrafı aydınlatması ___ enerjisine örnektir.",
+     "cevap": "ışık"
+    }
+   ],
+   "aciklama": "Hareket enerjisi kinetiktir. Enerji, iş gibi joule ile ölçülür (s. 64–67)."
+  },
+  {
+   "id": "f2-14",
+   "konu": "u2k2",
+   "kavram": "Hız ve Kinetik Enerji",
+   "tur": "secim",
+   "soru": "Kütleleri aynı iki özdeş araba aynı yolda fren yapıyor. Hangisi daha uzun mesafede durur?",
+   "secenekler": [
+    "Daha hızlı giden araba",
+    "Daha yavaş giden araba",
+    "İkisi aynı mesafede durur",
+    "Duran araba"
+   ],
+   "dogru": 0,
+   "aciklama": "Hızlı gidenin kinetik enerjisi fazladır. Bu yüzden daha geç durur (s. 64–67)."
+  },
+  {
+   "id": "f2-15",
+   "konu": "u2k3",
+   "kavram": "Çekim Potansiyel Enerjisi",
+   "tur": "secim",
+   "soru": "Aynı ağırlıktaki iki kitaptan biri alt rafta, diğeri üst rafta duruyor. Hangisi doğrudur?",
+   "secenekler": [
+    "Alt raftakinin çekim potansiyel enerjisi daha fazladır.",
+    "Üst raftakinin çekim potansiyel enerjisi daha fazladır.",
+    "İkisinin çekim potansiyel enerjisi eşittir.",
+    "İkisinin de enerjisi yoktur."
+   ],
+   "dogru": 1,
+   "aciklama": "Ağırlıklar aynıysa daha yüksekteki cismin enerjisi fazladır (s. 68–70)."
+  },
+  {
+   "id": "f2-16",
+   "konu": "u2k3",
+   "kavram": "Esnek Cisim",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi esnek bir cisim değildir?",
+   "secenekler": [
+    "Paket lastiği",
+    "Sünger",
+    "Sarmal yay",
+    "Cam bardak"
+   ],
+   "dogru": 3,
+   "aciklama": "Esnek cisim, kuvvet kalkınca eski hâline döner. Cam bardak dönmez, kırılır (s. 68–70)."
+  },
+  {
+   "id": "f2-17",
+   "konu": "u2k3",
+   "kavram": "Esneklik Potansiyel Enerjisi",
+   "tur": "dy",
+   "ifade": "Sıkıştırılan sarmal yay esneklik potansiyel enerjisi depolar.",
+   "dogru": true,
+   "aciklama": "Yay gerilince ya da sıkışınca enerji depolar (s. 68–70)."
+  },
+  {
+   "id": "f2-18",
+   "konu": "u2k3",
+   "kavram": "Potansiyel Enerji",
+   "tur": "bosluk",
+   "havuz": [
+    "kinetik",
+    "ışık"
+   ],
+   "cumleler": [
+    {
+     "c": "Ağaç dalında duran elma ___ potansiyel enerjisine sahiptir.",
+     "cevap": "çekim"
+    },
+    {
+     "c": "Gerilmiş paket lastiği ___ potansiyel enerjisine sahiptir.",
+     "cevap": "esneklik"
+    },
+    {
+     "c": "Çekim potansiyel enerjisi ağırlığa ve ___ bağlıdır.",
+     "cevap": "yüksekliğe"
+    }
+   ],
+   "aciklama": "Potansiyel enerjinin iki çeşidi var: çekim ve esneklik (s. 68–70)."
+  },
+  {
+   "id": "f2-19",
+   "konu": "u2k3",
+   "kavram": "Ağırlık ve Çekim Potansiyel Enerjisi",
+   "tur": "secim",
+   "soru": "Aynı yükseklikten havuza önce hafif, sonra ağır bir çocuk atlıyor. Hangisi daha çok su sıçratır?",
+   "secenekler": [
+    "Hafif çocuk",
+    "Ağır çocuk",
+    "İkisi aynı",
+    "Hiçbiri su sıçratmaz"
+   ],
+   "dogru": 1,
+   "aciklama": "Aynı yükseklikte ağır olanın çekim potansiyel enerjisi fazladır (s. 68–70)."
+  },
+  {
+   "id": "f2-20",
+   "konu": "u2k3",
+   "kavram": "Kinetik ve Potansiyel Enerji",
+   "tur": "eslestir",
+   "soru": "Durumları sahip oldukları enerjiyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Yuvarlanan top",
+     "sag": "Kinetik enerji"
+    },
+    {
+     "sol": "Dalda duran elma",
+     "sag": "Çekim potansiyel enerjisi"
+    },
+    {
+     "sol": "Gerilmiş paket lastiği",
+     "sag": "Esneklik potansiyel enerjisi"
+    }
+   ],
+   "aciklama": "Hareket kinetik, yükseklik çekim, esneme esneklik enerjisidir (s. 68–70)."
+  },
+  {
+   "id": "f2-21",
+   "konu": "u2k3",
+   "kavram": "Esneklik Potansiyel Enerjisi",
+   "tur": "secim",
+   "soru": "Bir paket lastiğinin depoladığı enerjiyi artırmak için ne yapılmalıdır?",
+   "secenekler": [
+    "Lastik daha çok gerilmeli",
+    "Lastik yere bırakılmalı",
+    "Lastik suya batırılmalı",
+    "Lastik hiç gerilmemeli"
+   ],
+   "dogru": 0,
+   "aciklama": "Esnek cisim ne kadar çok gerilirse o kadar çok enerji depolar (s. 68–70)."
+  },
+  {
+   "id": "f2-22",
+   "konu": "u2k4",
+   "kavram": "Düşen Top",
+   "tur": "secim",
+   "soru": "Yukarıdan serbest bırakılan top düşerken enerjisi nasıl değişir?",
+   "secenekler": [
+    "Potansiyel enerji artar, kinetik enerji azalır.",
+    "İkisi de artar.",
+    "Potansiyel enerji azalır, kinetik enerji artar.",
+    "İkisi de değişmez."
+   ],
+   "dogru": 2,
+   "aciklama": "Top düşerken yükseklik azalır, hız artar. PE kinetiğe dönüşür (s. 71–80)."
+  },
+  {
+   "id": "f2-23",
+   "konu": "u2k4",
+   "kavram": "Sarkaç ve Salıncak",
+   "tur": "dytablo",
+   "soru": "Salıncakla ilgili ifadeler için D ya da Y seç.",
+   "ifadeler": [
+    {
+     "s": "En yüksek noktada potansiyel enerji en fazladır.",
+     "d": true
+    },
+    {
+     "s": "En alt noktada kinetik enerji en fazladır.",
+     "d": true
+    },
+    {
+     "s": "Yukarı çıkarken salıncak hızlanır.",
+     "d": false
+    },
+    {
+     "s": "Aşağı inerken potansiyel enerji kinetik enerjiye dönüşür.",
+     "d": true
+    }
+   ],
+   "aciklama": "Tepede PE, dipte KE en fazladır. Yukarı çıkarken salıncak yavaşlar (s. 71–80)."
+  },
+  {
+   "id": "f2-24",
+   "konu": "u2k4",
+   "kavram": "Enerjinin Korunumu",
+   "tur": "secim",
+   "soru": "Enerjinin korunumu kanunu aşağıdakilerden hangisini anlatır?",
+   "secenekler": [
+    "Enerji kullanıldıkça yok olur.",
+    "Enerji yoktan var olabilir.",
+    "Enerji yalnızca kinetik olabilir.",
+    "Enerji yok olmaz, başka bir türe dönüşür."
+   ],
+   "dogru": 3,
+   "aciklama": "Enerji yoktan var olmaz, yok da olmaz. Yalnızca tür değiştirir (s. 71–80)."
+  },
+  {
+   "id": "f2-25",
+   "konu": "u2k4",
+   "kavram": "Sürtünme ve Enerji",
+   "tur": "secim",
+   "soru": "Düz yolda itilen kutu bir süre sonra duruyor. Kutunun kinetik enerjisine ne olmuştur?",
+   "secenekler": [
+    "Yok olmuştur.",
+    "Sürtünmeyle ısı ve ses enerjisine dönüşmüştür.",
+    "Esneklik enerjisine dönüşmüştür.",
+    "Artmıştır."
+   ],
+   "dogru": 1,
+   "aciklama": "Sürtünme kinetik enerjiyi ısı ve sese dönüştürür. Enerji kaybolmaz (s. 71–80)."
+  },
+  {
+   "id": "f2-26",
+   "konu": "u2k4",
+   "kavram": "Sıkışan Yay",
+   "tur": "bosluk",
+   "havuz": [
+    "ışık",
+    "çekim"
+   ],
+   "cumleler": [
+    {
+     "c": "Sıkıştırılan yay ___ potansiyel enerjisi depolar.",
+     "cevap": "esneklik"
+    },
+    {
+     "c": "Yay serbest kalınca bu enerji arabanın ___ enerjisine dönüşür.",
+     "cevap": "kinetik"
+    },
+    {
+     "c": "Yay ne kadar çok sıkışırsa o kadar ___ enerji depolar.",
+     "cevap": "çok"
+    }
+   ],
+   "aciklama": "Sıkışan yayın enerjisi, bırakılınca hareket enerjisine dönüşür (s. 71–80)."
+  },
+  {
+   "id": "f2-27",
+   "konu": "u2k4",
+   "kavram": "Enerji Dönüşümü",
+   "tur": "dy",
+   "ifade": "Pistte yukarı çıkan topun kinetik enerjisi artar.",
+   "dogru": false,
+   "duzeltme": "Yukarı çıkan topun kinetik enerjisi azalır, potansiyel enerjisi artar.",
+   "aciklama": "Yukarı çıkarken top yavaşlar. KE azalır, PE artar (s. 71–80)."
+  },
+  {
+   "id": "f2-28",
+   "konu": "u2k4",
+   "kavram": "Eğik Düzlem",
+   "tur": "secim",
+   "soru": "Eğik düzlemin tepesinden bırakılan oyuncak arabanın kinetik enerjisi nerede en fazladır?",
+   "secenekler": [
+    "En üst noktada",
+    "Orta noktada",
+    "En alt noktada",
+    "Her yerde eşittir"
+   ],
+   "dogru": 2,
+   "aciklama": "Araba indikçe hızlanır. En altta kinetik enerjisi en fazladır (s. 71–80)."
+  }
+ ]
+}

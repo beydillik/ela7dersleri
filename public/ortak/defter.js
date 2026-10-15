@@ -1938,14 +1938,19 @@
   // =================================================================
   const ROMA = ["I", "II", "III", "IV", "V"], HARF = "ABCDE";
   const SINAV_TUR = { secim: "Çoktan seçmeli", dy: "Doğru mu, yanlış mı?", dytablo: "Doğru / Yanlış", bosluk: "Boşluk doldurma", kisa: "Kısa cevap", eslestir: "Eşleştirme" };
-  const normYazi = s => lower(String(s ?? "")).replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
+  const normYazi = s => (S.ders && S.ders.dil === "en" ? String(s ?? "").toLowerCase() : lower(String(s ?? ""))).replace(/[’']/g, "").replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
   const lev = (a, b) => { const d = [...Array(b.length + 1).keys()]; for (let i = 1; i <= a.length; i++) { let p = d[0]; d[0] = i; for (let j = 1; j <= b.length; j++) { const t = d[j]; d[j] = Math.min(d[j] + 1, d[j - 1] + 1, p + (a[i - 1] === b[j - 1] ? 0 : 1)); p = t; } } return d[b.length]; };
   // Kısa cevap: birebir, Türkçe ek almış hâli (en çok 4 harf fazla: "bulutsudur") ya da tek harf yazım hatası (5+ harfli cevapta) kabul.
+  // sayi: true → sayısal cevap: yalnızca değeri aynı olan yazım kabul (12 ≠ 125; 0,5 = 1/2)
+  const harfSade = s => s.replace(/[çğıöşüâîû]/g, c => ({ ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u", â: "a", î: "i", û: "u" }[c]));
   const kisaKontrol = (q, v) => {
+    if (q.sayi) { const t = normSayi(v); if (!t) return { ok: false }; return { ok: [q.yanit, ...(q.kabul || [])].some(h => normSayi(h) === t || ayniSayi(h, t)) }; }
     const t = normYazi(v); if (!t) return { ok: false };
     for (const h of [q.yanit, ...(q.kabul || [])].map(normYazi)) {
       if (t === h || (t.startsWith(h) && t.length - h.length <= 4)) return { ok: true };
       if (h.length >= 5 && lev(t, h) <= 1) return { ok: true, yazim: true };
+      const ft = harfSade(t), fh = harfSade(h);   // Türkçe harfsiz yazım (caldiran = çaldıran): kabul, yazım uyarısıyla
+      if (ft === fh || (ft.startsWith(fh) && ft.length - fh.length <= 4)) return { ok: true, yazim: true };
     }
     return { ok: false };
   };
@@ -1976,7 +1981,7 @@
       <div class="kelime-havuz"><b>Kelime havuzu:</b> ${it.havuz.map(w => `<span class="chip">${esc(w)}</span>`).join("")}</div>
       <ol class="bosluk-liste">${q.cumleler.map((x, i) => `<li>${x.c.split("___").map(esc).join(`<select data-b="${i}" aria-label="Boşluk ${i + 1}"><option value="">……</option>${it.havuz.map(w => `<option ${(c || {})[i] === w ? "selected" : ""}>${esc(w)}</option>`).join("")}</select>`)}</li>`).join("")}</ol></div>`;
     if (q.tur === "kisa") return `<div class="q sinav-q">${metinHTML(q)}<p class="q-text">${rx(q.soru)}</p>
-      <input class="kisa-in" data-k type="text" autocomplete="off" spellcheck="false" maxlength="60" placeholder="Cevabını yaz" value="${esc(c || "")}"><p class="ek">Bir ya da birkaç kelime yeterli.</p></div>`;
+      <input class="kisa-in" data-k type="text" ${q.sayi ? `inputmode="decimal"` : ""} autocomplete="off" spellcheck="false" maxlength="60" placeholder="${q.sayi ? "Sayıyı yaz" : "Cevabını yaz"}" value="${esc(c || "")}"><p class="ek">${q.sayi ? "Yalnızca sayıyı yaz (kesir için 3/4, ondalık için 0,5)." : "Bir ya da birkaç kelime yeterli."}</p></div>`;
     if (q.tur === "eslestir") return `<div class="q sinav-q"><p class="q-text">${rx(q.soru || "Kavramları açıklamalarıyla eşleştir.")}</p>
       <ol class="eslestir-sag" type="a">${it.perm.map(j => `<li>${rx(q.ciftler[j].sag)}</li>`).join("")}</ol>
       <div class="eslestir-liste">${q.ciftler.map((x, i) => `<label><span>${rx(x.sol)}</span><select data-e="${i}"><option value="">Seç…</option>${it.perm.map((j, n) => `<option value="${j}" ${(c || {})[i] !== undefined && +(c || {})[i] === j ? "selected" : ""}>${"abcdef"[n]})</option>`).join("")}</select></label>`).join("")}</div></div>`;

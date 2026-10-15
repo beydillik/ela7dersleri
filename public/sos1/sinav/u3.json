@@ -1,0 +1,895 @@
+{
+ "unite": 3,
+ "ders": "sos1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "s3-01",
+   "konu": "u3k1",
+   "kavram": "Orhan Bey ve I. Murad Dönemleri",
+   "tur": "secim",
+   "soru": "Osmanlı başkentleri hangi sırayla değişmiştir?",
+   "secenekler": [
+    "İstanbul → Bursa → Edirne",
+    "Bursa → Edirne → İstanbul",
+    "Edirne → Bursa → İstanbul",
+    "Bursa → İstanbul → Edirne"
+   ],
+   "dogru": 1,
+   "aciklama": "Önce Bursa (Orhan Bey), sonra Edirne (I. Murad), sonra İstanbul (Fatih) (s. 86–93)."
+  },
+  {
+   "id": "s3-02",
+   "konu": "u3k1",
+   "kavram": "Osmanlı Beyliği'nin Kuruluşu",
+   "tur": "secim",
+   "soru": "Osmanlı Beyliği nerede kurulmuştur?",
+   "secenekler": [
+    "Söğüt ve çevresinde",
+    "Konya'da",
+    "Edirne'de",
+    "Kahire'de"
+   ],
+   "dogru": 0,
+   "aciklama": "Osman Bey Dönemi'nde Söğüt ve çevresinde kuruldu (s. 86–93)."
+  },
+  {
+   "id": "s3-03",
+   "konu": "u3k1",
+   "kavram": "Malazgirt ve Türk Beylikleri",
+   "tur": "kisa",
+   "soru": "Anadolu'da Türk beyliklerinin kurulmasının yolunu açan Malazgirt Savaşı hangi yıl yapıldı?",
+   "yanit": "1071",
+   "sayi": true,
+   "aciklama": "26 Ağustos 1071 Malazgirt Savaşı bir dönüm noktasıdır (s. 86–93)."
+  },
+  {
+   "id": "s3-04",
+   "konu": "u3k1",
+   "kavram": "Cihan Devleti",
+   "tur": "dy",
+   "ifade": "Cihan devleti, dünya çapında büyük bir güce ve etkiye sahip olan devlet demektir.",
+   "dogru": true,
+   "aciklama": "Cihan devleti dünyaya adalet ve düzen getirmeyi amaçlar (s. 86–93)."
+  },
+  {
+   "id": "s3-05",
+   "konu": "u3k1",
+   "kavram": "Fatih, Yavuz ve Kanuni Dönemleri",
+   "tur": "eslestir",
+   "soru": "Padişahları dönemlerindeki olaylarla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Orhan Bey",
+     "sag": "Bursa fethedildi."
+    },
+    {
+     "sol": "Fatih Sultan Mehmed",
+     "sag": "İstanbul fethedildi."
+    },
+    {
+     "sol": "Yavuz Sultan Selim",
+     "sag": "Mısır fethedildi."
+    },
+    {
+     "sol": "Kanuni Sultan Süleyman",
+     "sag": "Devlet üç kıtaya yayıldı."
+    }
+   ],
+   "aciklama": "Bursa Orhan, İstanbul Fatih, Mısır Yavuz; Kanuni'de üç kıta (s. 86–93)."
+  },
+  {
+   "id": "s3-06",
+   "konu": "u3k2",
+   "kavram": "İskân Politikası",
+   "tur": "secim",
+   "soru": "Fethedilen yerlere Anadolu'dan Türk-Müslüman toplulukların yerleştirilmesine ne denir?",
+   "secenekler": [
+    "İstimalet",
+    "İskân",
+    "Fetih",
+    "Lonca"
+   ],
+   "dogru": 1,
+   "aciklama": "Halkı yeni yerlere yerleştirmek iskândır (s. 93–95)."
+  },
+  {
+   "id": "s3-07",
+   "konu": "u3k2",
+   "kavram": "İstimalet Politikası",
+   "tur": "secim",
+   "soru": "Fethedilen yerlerde halka adaletli ve hoşgörülü davranarak gönlünü kazanmayı amaçlayan politika hangisidir?",
+   "secenekler": [
+    "İskân",
+    "İstimalet",
+    "Sömürgecilik",
+    "Reform"
+   ],
+   "dogru": 1,
+   "aciklama": "İstimalet: gönlü kazan, düzeni kur (s. 93–95)."
+  },
+  {
+   "id": "s3-08",
+   "konu": "u3k2",
+   "kavram": "Türkmen ve Ahi Desteği",
+   "tur": "dy",
+   "ifade": "Ahiler, Osmanlı'ya destek veren bir esnaf teşkilatıdır.",
+   "dogru": true,
+   "aciklama": "Türkmenler ve esnaf teşkilatı Ahiler Osmanlı'ya destek verdi (s. 93–95)."
+  },
+  {
+   "id": "s3-09",
+   "konu": "u3k2",
+   "kavram": "İmar ve Yeni Şehirler",
+   "tur": "secim",
+   "soru": "İskân politikasının amaçlarıyla ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Fethedilen yerlerde kalıcı hâkimiyet kurmak",
+    "Konargöçerleri yerleşik hayata geçirmek",
+    "Fethedilen yerleri boş bırakmak"
+   ],
+   "kok": "Bunlardan hangileri iskânın amaçları arasındadır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "İskânla yerleşim yerleri kuruldu; cami, köprü, han yapıldı (s. 93–95)."
+  },
+  {
+   "id": "s3-10",
+   "konu": "u3k2",
+   "kavram": "Derviş ve Abdallar",
+   "tur": "secim",
+   "soru": "İstimalet politikasında halkın güvenini kazanan ve Türk kültürünü tanıtan kişiler kimlerdir?",
+   "secenekler": [
+    "Yeniçeriler",
+    "Derviş ve abdallar",
+    "Kadılar",
+    "Kaptanıderyalar"
+   ],
+   "dogru": 1,
+   "aciklama": "Derviş ve abdallar gönül elçileri gibi çalıştı (s. 93–95)."
+  },
+  {
+   "id": "s3-11",
+   "konu": "u3k3",
+   "kavram": "Gemilerin Karadan Yürütülmesi",
+   "tur": "secim",
+   "soru": "İstanbul kuşatmasında gemilerin karadan Haliç'e indirilmesinin nedeni nedir?",
+   "secenekler": [
+    "Haliç girişine çekilen zincirin aşılamaması",
+    "Denizin donması",
+    "Gemilerin eskimesi",
+    "Askerlerin yorulması"
+   ],
+   "dogru": 0,
+   "aciklama": "Zincir aşılamayınca gemiler karadan yürütüldü (s. 96–102)."
+  },
+  {
+   "id": "s3-12",
+   "konu": "u3k3",
+   "kavram": "Rumeli Hisarı",
+   "tur": "dy",
+   "ifade": "Rumeli Hisarı, Doğu Roma'ya denizden yardım gelmesini engellemek için yaptırıldı.",
+   "dogru": true,
+   "aciklama": "Anadolu Hisarı'nın karşısına yapılan Rumeli Hisarı Boğaz'ı kapattı (s. 96–102)."
+  },
+  {
+   "id": "s3-13",
+   "konu": "u3k3",
+   "kavram": "Fethin Sonuçları",
+   "tur": "bosluk",
+   "havuz": [
+    "40",
+    "Yavuz"
+   ],
+   "cumleler": [
+    {
+     "c": "İstanbul ___ gün süren kuşatmanın ardından fethedildi.",
+     "cevap": "53"
+    },
+    {
+     "c": "II. Mehmed fetihten sonra ___ unvanını aldı.",
+     "cevap": "Fatih"
+    },
+    {
+     "c": "Fetihle yaklaşık 1000 yıllık ___ İmparatorluğu yıkıldı.",
+     "cevap": "Doğu Roma"
+    }
+   ],
+   "aciklama": "53 gün, Fatih unvanı, Doğu Roma'nın sonu (s. 96–102)."
+  },
+  {
+   "id": "s3-14",
+   "konu": "u3k3",
+   "kavram": "Şahi Topları",
+   "tur": "secim",
+   "soru": "İstanbul kuşatması için Macar usta Urban'a döktürülen büyük toplara ne ad verilir?",
+   "secenekler": [
+    "Şahi",
+    "Grejuva",
+    "Mancınık",
+    "Kadırga"
+   ],
+   "dogru": 0,
+   "aciklama": "Şahi dev bir toptur. Grejuva ise Doğu Roma'nın Rum ateşidir (s. 96–102)."
+  },
+  {
+   "id": "s3-15",
+   "konu": "u3k3",
+   "kavram": "Fethin Nedenleri",
+   "tur": "secim",
+   "soru": "İstanbul'un fethinin nedenleriyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "İstanbul, Osmanlı'nın toprak bütünlüğüne engel oluyordu.",
+    "Şehir önemli ticaret yolları üzerindeydi.",
+    "Hz. Muhammed'in (sav) fethi müjdeleyen hadisi vardı."
+   ],
+   "kok": "Bu ifadelerden hangileri fethin nedenleri arasındadır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Toprak bütünlüğü, ticaret yolları ve hadisteki müjde: üçü de neden (s. 96–102)."
+  },
+  {
+   "id": "s3-16",
+   "konu": "u3k4",
+   "kavram": "Mercidabık ve Ridaniye",
+   "tur": "secim",
+   "soru": "Memlük Devleti'ne son veren savaşlar hangileridir?",
+   "secenekler": [
+    "Çaldıran ve Malazgirt",
+    "Mercidabık ve Ridaniye",
+    "Preveze ve Turnadağ",
+    "Kosova ve Niğbolu"
+   ],
+   "dogru": 1,
+   "aciklama": "1516 Mercidabık ve 1517 Ridaniye ile Memlük Devleti yıkıldı (s. 103–109)."
+  },
+  {
+   "id": "s3-17",
+   "konu": "u3k4",
+   "kavram": "Halifelik ve Kutsal Emanetler",
+   "tur": "dy",
+   "ifade": "Mısır Seferi'nden sonra Osmanlı padişahları halife unvanını taşımaya başladı.",
+   "dogru": true,
+   "aciklama": "Kutsal emanetler de İstanbul'a getirildi, Topkapı'da korunuyor (s. 103–109)."
+  },
+  {
+   "id": "s3-18",
+   "konu": "u3k4",
+   "kavram": "Preveze Deniz Zaferi",
+   "tur": "secim",
+   "soru": "1538'de Preveze'de Haçlı donanmasını yenen Osmanlı denizcisi kimdir?",
+   "secenekler": [
+    "Piri Reis",
+    "Barbaros Hayreddin Paşa",
+    "Andrea Doria",
+    "Seydi Ali Reis"
+   ],
+   "dogru": 1,
+   "aciklama": "Barbaros donanmayı hilal düzeninde dizerek kazandı. Andrea Doria Haçlı komutanıdır (s. 103–109)."
+  },
+  {
+   "id": "s3-19",
+   "konu": "u3k4",
+   "kavram": "Mısır Seferi'nin Sonuçları",
+   "tur": "secim",
+   "soru": "Mısır Seferi'nin ekonomik sonucu hangisidir?",
+   "secenekler": [
+    "Baharat Yolu Osmanlı denetimine geçti.",
+    "Bursa başkent oldu.",
+    "Matbaa açıldı.",
+    "Yeniçeri Ocağı kaldırıldı."
+   ],
+   "dogru": 0,
+   "aciklama": "Baharat Yolu Osmanlı'ya geçti, Mısır vergileri ekonomiyi güçlendirdi (s. 103–109)."
+  },
+  {
+   "id": "s3-20",
+   "konu": "u3k4",
+   "kavram": "Yavuz Sultan Selim",
+   "tur": "kisa",
+   "soru": "Yavuz Sultan Selim'in Safevileri yendiği savaş hangisidir?",
+   "yanit": "Çaldıran",
+   "kabul": [
+    "Çaldıran Savaşı"
+   ],
+   "aciklama": "1514 Çaldıran Savaşı doğu sınırını güçlendirdi (s. 103–109)."
+  },
+  {
+   "id": "s3-21",
+   "konu": "u3k5",
+   "kavram": "Deniz Seyahatlerinin Nedenleri",
+   "tur": "secim",
+   "soru": "Avrupalıların yeni ticaret yolları aramasının temel nedeni nedir?",
+   "secenekler": [
+    "Osmanlı'nın İpek ve Baharat Yollarını kontrol etmesi",
+    "Avrupa'da nüfusun azalması",
+    "Matbaanın bulunmaması",
+    "Haçlı Seferlerinin kazanılması"
+   ],
+   "dogru": 0,
+   "aciklama": "Yollar Osmanlı'daydı; Avrupalılar Doğu'ya yeni yol aradı (s. 110–116)."
+  },
+  {
+   "id": "s3-22",
+   "konu": "u3k5",
+   "kavram": "Amerika ve Dünya Turu",
+   "tur": "eslestir",
+   "soru": "Denizcileri başarılarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Bartolomeu Dias",
+     "sag": "Ümit Burnu'na ulaştı (1487)."
+    },
+    {
+     "sol": "Kristof Kolomb",
+     "sag": "Amerika'ya ulaştı (1492)."
+    },
+    {
+     "sol": "Vasco da Gama",
+     "sag": "Deniz yoluyla Hindistan'a vardı (1497)."
+    },
+    {
+     "sol": "Macellan ve Del Cano",
+     "sag": "Dünya'nın yuvarlak olduğunu kanıtladı."
+    }
+   ],
+   "aciklama": "Dias 1487, Kolomb 1492, Gama 1497; Macellan-Del Cano dünya turu (s. 110–116)."
+  },
+  {
+   "id": "s3-23",
+   "konu": "u3k5",
+   "kavram": "Sömürgecilik",
+   "tur": "kisa",
+   "soru": "Bir devletin başka toprakları ele geçirip oradaki kaynakları kendi çıkarı için kullanmasına ne denir?",
+   "yanit": "sömürgecilik",
+   "aciklama": "Başkasının kaynağını almak sömürgeciliktir (s. 110–116)."
+  },
+  {
+   "id": "s3-24",
+   "konu": "u3k5",
+   "kavram": "Osmanlı İçin Sonuçlar",
+   "tur": "dy",
+   "ifade": "Coğrafi keşifler Osmanlı'nın ticaret gelirlerini artırmıştır.",
+   "dogru": false,
+   "duzeltme": "İpek ve Baharat Yolları önemini yitirdi; Osmanlı'nın gelirleri azaldı.",
+   "aciklama": "Yeni yollar bulununca Osmanlı'nın yolları önemini kaybetti (s. 110–116)."
+  },
+  {
+   "id": "s3-25",
+   "konu": "u3k5",
+   "kavram": "Yerli Halklar İçin Sonuçlar",
+   "tur": "secim",
+   "soru": "Coğrafi keşiflerin yerli halklara etkisi hangisidir?",
+   "secenekler": [
+    "Zenginleştiler.",
+    "Kültürleri zarar gördü, nüfusları azaldı.",
+    "Avrupa'ya göç ettiler.",
+    "Hiç etkilenmediler."
+   ],
+   "dogru": 1,
+   "aciklama": "Salgınlar ve baskı yüzünden yerli kültürler büyük zarar gördü (s. 110–116)."
+  },
+  {
+   "id": "s3-26",
+   "konu": "u3k6",
+   "kavram": "Rönesans",
+   "tur": "secim",
+   "soru": "Rönesans hangi ülkede başlamıştır?",
+   "secenekler": [
+    "İngiltere",
+    "Almanya",
+    "İtalya",
+    "İspanya"
+   ],
+   "dogru": 2,
+   "aciklama": "Rönesans İtalya'da başladı, sonra Avrupa'ya yayıldı (s. 116–121)."
+  },
+  {
+   "id": "s3-27",
+   "konu": "u3k6",
+   "kavram": "Martin Luther",
+   "tur": "secim",
+   "soru": "Reform hareketini Almanya'da başlatan din adamı kimdir?",
+   "secenekler": [
+    "Galileo",
+    "Martin Luther",
+    "Kopernik",
+    "Newton"
+   ],
+   "dogru": 1,
+   "aciklama": "Luther 1517'de bildirisini Wittenberg Kilisesi'nin kapısına astı (s. 116–121)."
+  },
+  {
+   "id": "s3-28",
+   "konu": "u3k6",
+   "kavram": "Reform",
+   "tur": "eslestir",
+   "soru": "Kilisenin uygulamalarını anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Aforoz",
+     "sag": "Dinden çıkarma"
+    },
+    {
+     "sol": "Endüljans",
+     "sag": "Para karşılığı günah bağışlama belgesi"
+    },
+    {
+     "sol": "Enterdi",
+     "sag": "Bir bölge halkını dinî haklardan mahrum bırakma"
+    }
+   ],
+   "aciklama": "Bu yanlış uygulamalar Reform'a yol açtı (s. 116–121)."
+  },
+  {
+   "id": "s3-29",
+   "konu": "u3k6",
+   "kavram": "Aydınlanma Çağı",
+   "tur": "dy",
+   "ifade": "Aydınlanma Çağı'nda doğru bilgiye akıl, gözlem ve deney yoluyla ulaşılabileceği savunuldu.",
+   "dogru": true,
+   "aciklama": "Aydınlanma: akıl, gözlem, deney (s. 116–121)."
+  },
+  {
+   "id": "s3-30",
+   "konu": "u3k6",
+   "kavram": "Rönesans'ın Nedenleri",
+   "tur": "secim",
+   "soru": "Hangisi Rönesans'ın nedenlerinden biri değildir?",
+   "secenekler": [
+    "Matbaayla kitapların çoğalması",
+    "Eski eserlerin yeniden incelenmesi",
+    "Burjuvanın sanata destek vermesi",
+    "Fransız İhtilali"
+   ],
+   "dogru": 3,
+   "aciklama": "Fransız İhtilali (1789) Rönesans'tan çok sonradır (s. 116–121)."
+  },
+  {
+   "id": "s3-31",
+   "konu": "u3k7",
+   "kavram": "Sanayi İnkılabı",
+   "tur": "secim",
+   "soru": "Sanayi İnkılabı hangi ülkede başlamıştır?",
+   "secenekler": [
+    "Fransa",
+    "İngiltere",
+    "İtalya",
+    "Osmanlı Devleti"
+   ],
+   "dogru": 1,
+   "aciklama": "XVIII. yüzyılın ikinci yarısında İngiltere'de, buhar makinesiyle başladı (s. 121–124)."
+  },
+  {
+   "id": "s3-32",
+   "konu": "u3k7",
+   "kavram": "Fransız İhtilali",
+   "tur": "kisa",
+   "soru": "Fransız İhtilali hangi yıl başlamıştır?",
+   "yanit": "1789",
+   "sayi": true,
+   "aciklama": "14 Temmuz 1789'da Bastille Hapishanesi ele geçirildi (s. 121–124)."
+  },
+  {
+   "id": "s3-33",
+   "konu": "u3k7",
+   "kavram": "Ham Madde ve Pazar",
+   "tur": "secim",
+   "soru": "Sanayi İnkılabı sömürgeciliği neden hızlandırdı?",
+   "secenekler": [
+    "Fabrikaların ham madde ve pazar ihtiyacı arttı.",
+    "Avrupa'da nüfus azaldı.",
+    "Gemiler yasaklandı.",
+    "Ticaret durdu."
+   ],
+   "dogru": 0,
+   "aciklama": "Kömür, pamuk, kauçuk gibi ham madde ihtiyacı sömürgeciliği hızlandırdı (s. 121–124)."
+  },
+  {
+   "id": "s3-34",
+   "konu": "u3k7",
+   "kavram": "Fransız İhtilali ve Osmanlı",
+   "tur": "secim",
+   "soru": "Fransız İhtilali'nin yaydığı hangi akım çok milletli Osmanlı Devleti'nde isyanlara yol açtı?",
+   "secenekler": [
+    "Hümanizm",
+    "Milliyetçilik",
+    "Sömürgecilik",
+    "Rönesans"
+   ],
+   "dogru": 1,
+   "aciklama": "“Her millete bir devlet” anlayışı Balkanlarda isyanlar çıkardı (s. 121–124)."
+  },
+  {
+   "id": "s3-35",
+   "konu": "u3k7",
+   "kavram": "Sanayi İnkılabı ve Osmanlı",
+   "tur": "dy",
+   "ifade": "Avrupa'nın ucuz fabrika malları Osmanlı'daki el tezgâhlarını zor duruma düşürdü.",
+   "dogru": true,
+   "aciklama": "Ucuz mallar yüzünden yerli üretim azaldı, atölyeler kapandı (s. 121–124)."
+  },
+  {
+   "id": "s3-36",
+   "konu": "u3k8",
+   "kavram": "İlk Türk Matbaası",
+   "tur": "secim",
+   "soru": "İlk Türk matbaasını 1727'de kim açmıştır?",
+   "secenekler": [
+    "Yirmisekiz Mehmed Çelebi",
+    "İbrahim Müteferrika",
+    "Damat İbrahim Paşa",
+    "Patrona Halil"
+   ],
+   "dogru": 1,
+   "aciklama": "İbrahim Müteferrika 1727'de ilk Türk matbaasını açtı (s. 125–127)."
+  },
+  {
+   "id": "s3-37",
+   "konu": "u3k8",
+   "kavram": "Tulumbacılar Ocağı",
+   "tur": "secim",
+   "soru": "1720'de kurulan, Osmanlı'nın ilk itfaiye teşkilatı hangisidir?",
+   "secenekler": [
+    "Tulumbacılar Ocağı",
+    "Yeniçeri Ocağı",
+    "Divan-ı Hümayun",
+    "Enderun"
+   ],
+   "dogru": 0,
+   "aciklama": "Tulumbacılar Ocağı ilk itfaiye teşkilatıdır (s. 125–127)."
+  },
+  {
+   "id": "s3-38",
+   "konu": "u3k8",
+   "kavram": "Lale Devri",
+   "tur": "bosluk",
+   "havuz": [
+    "1789",
+    "1826"
+   ],
+   "cumleler": [
+    {
+     "c": "Lale Devri ___ yılında Pasarofça Antlaşması ile başladı.",
+     "cevap": "1718"
+    },
+    {
+     "c": "Lale Devri ___ yılında Patrona Halil İsyanı ile sona erdi.",
+     "cevap": "1730"
+    },
+    {
+     "c": "İlk Türk matbaası ___ yılında açıldı.",
+     "cevap": "1727"
+    }
+   ],
+   "aciklama": "Lale Devri 1718–1730; matbaa 1727 (s. 125–127)."
+  },
+  {
+   "id": "s3-39",
+   "konu": "u3k8",
+   "kavram": "Nizâm-ı Cedîd",
+   "tur": "dy",
+   "ifade": "Nizâm-ı Cedîd, “Yeni Düzen” anlamına gelir ve III. Selim'in yeniliklerinin adıdır.",
+   "dogru": true,
+   "aciklama": "Nizâm-ı Cedîd = Yeni Düzen (III. Selim) (s. 125–127)."
+  },
+  {
+   "id": "s3-40",
+   "konu": "u3k8",
+   "kavram": "III. Selim'in Diğer Yenilikleri",
+   "tur": "secim",
+   "soru": "Hangisi III. Selim Dönemi'nin yeniliklerinden biri değildir?",
+   "secenekler": [
+    "İrâd-ı Cedîd Hazinesi",
+    "Avrupa'da daimî elçilikler",
+    "Kara Mühendishanesi",
+    "Tanzimat Fermanı"
+   ],
+   "dogru": 3,
+   "aciklama": "Tanzimat Fermanı 1839'da Abdülmecid zamanında ilan edildi (s. 125–127)."
+  },
+  {
+   "id": "s3-41",
+   "konu": "u3k9",
+   "kavram": "Vaka-i Hayriye",
+   "tur": "secim",
+   "soru": "1826'da Yeniçeri Ocağı'nın kaldırılmasına ne ad verilir?",
+   "secenekler": [
+    "Vaka-i Hayriye",
+    "Tanzimat",
+    "Islahat",
+    "Lale Devri"
+   ],
+   "dogru": 0,
+   "aciklama": "Vaka-i Hayriye “Hayırlı Olay” demektir (s. 128–135)."
+  },
+  {
+   "id": "s3-42",
+   "konu": "u3k9",
+   "kavram": "Takvim-i Vekayi",
+   "tur": "secim",
+   "soru": "1831'de çıkarılan ilk resmî Osmanlı gazetesi hangisidir?",
+   "secenekler": [
+    "Tercümân-ı Ahvâl",
+    "Takvim-i Vekayi",
+    "Tasvîr-i Efkâr",
+    "Mecelle"
+   ],
+   "dogru": 1,
+   "aciklama": "Takvim-i Vekayi ilk resmî gazetedir; diğerleri özel gazetelerdir (s. 128–135)."
+  },
+  {
+   "id": "s3-43",
+   "konu": "u3k9",
+   "kavram": "Tanzimat Fermanı",
+   "tur": "dy",
+   "ifade": "Tanzimat Fermanı ile padişah ilk kez kendi yetkilerini sınırladı.",
+   "dogru": true,
+   "aciklama": "3 Kasım 1839 Tanzimat Fermanı padişahın yetkisini sınırladı (s. 128–135)."
+  },
+  {
+   "id": "s3-44",
+   "konu": "u3k9",
+   "kavram": "Nazırlıklar",
+   "tur": "secim",
+   "soru": "II. Mahmud Divan teşkilatını kaldırıp yerine ne kurdu?",
+   "secenekler": [
+    "Nazırlıklar (bakanlıklar)",
+    "Loncalar",
+    "Vakıflar",
+    "Medreseler"
+   ],
+   "dogru": 0,
+   "aciklama": "Divan yerine nazırlıklar kuruldu (s. 128–135)."
+  },
+  {
+   "id": "s3-45",
+   "konu": "u3k9",
+   "kavram": "Türk Modası",
+   "tur": "secim",
+   "soru": "XVIII. yüzyılda Avrupa'da Osmanlı kültürüne duyulan ilgiyle ortaya çıkan akım hangisidir?",
+   "secenekler": [
+    "Türk Modası",
+    "Rönesans",
+    "Reform",
+    "Hümanizm"
+   ],
+   "dogru": 0,
+   "aciklama": "Türk Modası: Osmanlı kültürü Avrupa'yı etkiledi (s. 128–135)."
+  },
+  {
+   "id": "s3-46",
+   "konu": "u3k10",
+   "kavram": "Külliye",
+   "tur": "secim",
+   "soru": "Cami, medrese, darüşşifa ve imaret gibi yapıların bir arada bulunduğu yapı topluluğuna ne denir?",
+   "secenekler": [
+    "Külliye",
+    "Bedesten",
+    "Lonca",
+    "Divan"
+   ],
+   "dogru": 0,
+   "aciklama": "Külliyede ibadet, eğitim ve sağlık bir aradadır (s. 136–141)."
+  },
+  {
+   "id": "s3-47",
+   "konu": "u3k10",
+   "kavram": "Veziriazam",
+   "tur": "secim",
+   "soru": "Osmanlı'da padişahtan sonra en yetkili devlet adamı kimdir?",
+   "secenekler": [
+    "Kazasker",
+    "Defterdar",
+    "Veziriazam",
+    "Nişancı"
+   ],
+   "dogru": 2,
+   "aciklama": "Veziriazam padişahın vekiliydi ve mührünü taşırdı (s. 136–141)."
+  },
+  {
+   "id": "s3-48",
+   "konu": "u3k10",
+   "kavram": "Divan Üyeleri",
+   "tur": "eslestir",
+   "soru": "Divan üyelerini görevleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Defterdar",
+     "sag": "Gelir ve giderleri denetler."
+    },
+    {
+     "sol": "Nişancı",
+     "sag": "Belgelere padişahın tuğrasını çeker."
+    },
+    {
+     "sol": "Kaptanıderya",
+     "sag": "Donanmadan sorumludur."
+    },
+    {
+     "sol": "Kazasker",
+     "sag": "Büyük davalara bakar, kadı atar."
+    }
+   ],
+   "aciklama": "Divan'da her işe bir sorumlu vardı (s. 136–141)."
+  },
+  {
+   "id": "s3-49",
+   "konu": "u3k10",
+   "kavram": "Merkez ve Taşra Yönetimi",
+   "tur": "dy",
+   "ifade": "Osmanlı'da taşra yönetimi, başkentteki saray ve Divan'ın yönetimidir.",
+   "dogru": false,
+   "duzeltme": "Başkent merkez yönetimidir; taşra, merkezden uzak eyalet ve sancakların yönetimidir.",
+   "aciklama": "Merkez = başkent, taşra = uzak eyalet ve sancaklar (s. 136–141)."
+  },
+  {
+   "id": "s3-50",
+   "konu": "u3k10",
+   "kavram": "Divan-ı Hümayun",
+   "tur": "secim",
+   "soru": "Divan-ı Hümayun hangi padişah döneminde kaldırılmıştır?",
+   "secenekler": [
+    "Fatih",
+    "Kanuni",
+    "II. Mahmud",
+    "III. Ahmed"
+   ],
+   "dogru": 2,
+   "aciklama": "II. Mahmud Divan'ı kaldırıp nazırlıkları kurdu (s. 136–141)."
+  },
+  {
+   "id": "s3-51",
+   "konu": "u3k11",
+   "kavram": "Enderun Mektebi",
+   "tur": "secim",
+   "soru": "Saray içinde kurulan ve devletin üst düzey yöneticilerini yetiştiren okul hangisidir?",
+   "secenekler": [
+    "Sıbyan mektebi",
+    "Enderun Mektebi",
+    "Rüştiye",
+    "İdadî"
+   ],
+   "dogru": 1,
+   "aciklama": "Enderun saray içindeki yönetici okuluydu (s. 142–145)."
+  },
+  {
+   "id": "s3-52",
+   "konu": "u3k11",
+   "kavram": "Şer'i ve Örfi Hukuk",
+   "tur": "secim",
+   "soru": "Osmanlı hukuku ile ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Şer'i Hukuk İslam dininin kurallarına dayanır.",
+    "Örfi Hukuk padişahların koyduğu kurallar ve geleneklerden oluşur.",
+    "Adalet işlerini kaptanıderyalar yürütürdü."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Osmanlı'da adalet işlerini kadılar yürütürdü (s. 142–145)."
+  },
+  {
+   "id": "s3-53",
+   "konu": "u3k11",
+   "kavram": "Mecelle ve Kanun-ı Esasi",
+   "tur": "eslestir",
+   "soru": "Belgeleri açıklamalarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Mecelle",
+     "sag": "İlk medeni kanun niteliğindeki hukuk metni"
+    },
+    {
+     "sol": "Kanun-ı Esasi",
+     "sag": "İlk anayasa"
+    },
+    {
+     "sol": "Kanunname",
+     "sag": "Padişahların çıkardığı kuralların toplandığı metin"
+    }
+   ],
+   "aciklama": "Mecelle medeni kanun, Kanun-ı Esasi anayasadır (s. 142–145)."
+  },
+  {
+   "id": "s3-54",
+   "konu": "u3k11",
+   "kavram": "Sıbyan Mektebi",
+   "tur": "dy",
+   "ifade": "Sıbyan mekteplerinde yalnızca erkek çocuklar eğitim görürdü.",
+   "dogru": false,
+   "duzeltme": "Erkeklerin yanında 8-9 yaşına kadar kızlar da eğitim görürdü.",
+   "aciklama": "Sıbyan mekteplerinde kızlar da okurdu (s. 142–145)."
+  },
+  {
+   "id": "s3-55",
+   "konu": "u3k11",
+   "kavram": "Batı Tarzı Okullar",
+   "tur": "kisa",
+   "soru": "İlk üniversite sayılan Osmanlı okulunun adı nedir?",
+   "yanit": "Darülfünun",
+   "aciklama": "Darülfünun bugünkü İstanbul Üniversitesi'nin temelidir (s. 142–145)."
+  },
+  {
+   "id": "s3-56",
+   "konu": "u3k12",
+   "kavram": "Vakıf",
+   "tur": "secim",
+   "soru": "Kişilerin mal veya mülklerini toplum yararına süresiz bağışlamasına ne denir?",
+   "secenekler": [
+    "Lonca",
+    "Vakıf",
+    "Ahilik",
+    "Külliye"
+   ],
+   "dogru": 1,
+   "aciklama": "Vakfedilen mal satılamaz, devredilemez (s. 145–152)."
+  },
+  {
+   "id": "s3-57",
+   "konu": "u3k12",
+   "kavram": "Ahilik",
+   "tur": "secim",
+   "soru": "Anadolu'da halkı meslek alanında yetiştiren ve ahlaki yönden eğiten Ahilik teşkilatının kurucusu kimdir?",
+   "secenekler": [
+    "Ahi Evran",
+    "Mimar Sinan",
+    "Ahmet Cevdet Paşa",
+    "Akşemsettin"
+   ],
+   "dogru": 0,
+   "aciklama": "Ahiliğin kurucusu Ahi Evran'dır (s. 145–152)."
+  },
+  {
+   "id": "s3-58",
+   "konu": "u3k12",
+   "kavram": "Süsleme Sanatları",
+   "tur": "kisa",
+   "soru": "Güzel yazı yazma sanatına ne ad verilir?",
+   "yanit": "hat",
+   "kabul": [
+    "hat sanatı"
+   ],
+   "aciklama": "Hat güzel yazı sanatıdır (s. 145–152)."
+  },
+  {
+   "id": "s3-59",
+   "konu": "u3k12",
+   "kavram": "Mehter Takımı",
+   "tur": "dy",
+   "ifade": "Mehter Takımı, Osmanlı ordusunun resmî müzik topluluğudur.",
+   "dogru": true,
+   "aciklama": "Mehter ordunun resmî müziğidir; Mozart bile etkilendi (s. 145–152)."
+  },
+  {
+   "id": "s3-60",
+   "konu": "u3k12",
+   "kavram": "Lonca",
+   "tur": "secim",
+   "soru": "Ahilikten sonra aynı meslekten esnafın oluşturduğu, devlet denetimindeki meslek örgütü hangisidir?",
+   "secenekler": [
+    "Lonca",
+    "Divan",
+    "Vakıf",
+    "Enderun"
+   ],
+   "dogru": 0,
+   "aciklama": "Ahiliğin yerini loncalar aldı (s. 145–152)."
+  }
+ ]
+}

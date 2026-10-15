@@ -1,0 +1,809 @@
+{
+ "unite": 1,
+ "ders": "mat1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "m1-01",
+   "konu": "u1k1",
+   "kavram": "Negatif Tam Sayılar",
+   "tur": "kisa",
+   "soru": "Bir denizaltı deniz seviyesinin 35 metre altında. Konumunu tam sayıyla yaz.",
+   "yanit": "-35",
+   "sayi": true,
+   "aciklama": "Deniz seviyesi 0'dır. Altı eksidir: −35 (s. 15–24)."
+  },
+  {
+   "id": "m1-02",
+   "konu": "u1k1",
+   "kavram": "Kelimeden Sayıya",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi negatif bir tam sayıyla anlatılır?",
+   "secenekler": [
+    "50 TL kâr",
+    "Deniz seviyesinin 20 m üstü",
+    "200 TL borç",
+    "Binanın 3. katı"
+   ],
+   "dogru": 2,
+   "aciklama": "Borç, gider, zarar, altı → eksi (s. 15–24)."
+  },
+  {
+   "id": "m1-03",
+   "konu": "u1k1",
+   "kavram": "Tam Sayılar Ailesi",
+   "tur": "secim",
+   "soru": "Sıfır ile ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Sıfır pozitif bir tam sayıdır.",
+    "Sıfır negatif bir tam sayıdır.",
+    "Sıfırın işareti yoktur."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "Yalnız III",
+    "I ve II"
+   ],
+   "dogru": 2,
+   "aciklama": "Sıfır ne pozitif ne negatiftir; işareti yoktur (s. 15–24)."
+  },
+  {
+   "id": "m1-04",
+   "konu": "u1k1",
+   "kavram": "İki Sayı Arasındaki Uzaklık",
+   "tur": "kisa",
+   "soru": "Bir binada otopark −2. katta, Elif +5. katta oturuyor. Otoparktan Elif'in katına kaç kat çıkılır?",
+   "yanit": "7",
+   "sayi": true,
+   "aciklama": "−2'den 0'a 2 kat, 0'dan 5'e 5 kat: 2 + 5 = 7 (s. 15–24)."
+  },
+  {
+   "id": "m1-05",
+   "konu": "u1k1",
+   "kavram": "Sayı Doğrusu",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "Negatif sayılar sayı doğrusunda 0'ın solundadır.",
+     "d": true
+    },
+    {
+     "s": "+4 ile 4 aynı sayıdır.",
+     "d": true
+    },
+    {
+     "s": "Sayı doğrusunda sola gittikçe sayılar büyür.",
+     "d": false
+    }
+   ],
+   "aciklama": "Sol eksi, sağ artı. Sağa gittikçe sayılar büyür (s. 15–24)."
+  },
+  {
+   "id": "m1-06",
+   "konu": "u1k2",
+   "kavram": "Payda Sıfır Olamaz",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi tanımsızdır?",
+   "secenekler": [
+    "[[0/8]]",
+    "[[8/0]]",
+    "[[8/1]]",
+    "[[-8/2]]"
+   ],
+   "dogru": 1,
+   "aciklama": "Paydası 0 olan kesir tanımsızdır. 0 ile çarpılınca 8 eden sayı yok (s. 25–34)."
+  },
+  {
+   "id": "m1-07",
+   "konu": "u1k2",
+   "kavram": "Aradaki Sayılar",
+   "tur": "kisa",
+   "soru": "Sayı doğrusunda 0 ile 1 arasında kaç tam sayı vardır?",
+   "yanit": "0",
+   "sayi": true,
+   "aciklama": "0 ile 1 arasında tam sayı yoktur ama rasyonel sayılar vardır (s. 25–34)."
+  },
+  {
+   "id": "m1-08",
+   "konu": "u1k2",
+   "kavram": "Eksi Bütüne Aittir",
+   "tur": "secim",
+   "soru": "[[-1 2/3]] sayısının bileşik kesir hâli hangisidir?",
+   "secenekler": [
+    "[[-5/3]]",
+    "[[-1/3]]",
+    "[[5/3]]",
+    "[[-2/3]]"
+   ],
+   "dogru": 0,
+   "aciklama": "Eksiyi kenara koy: 1 tam 2/3 = 5/3. Eksiyi geri ekle: −5/3 (s. 25–34)."
+  },
+  {
+   "id": "m1-09",
+   "konu": "u1k2",
+   "kavram": "Sayı Aileleri",
+   "tur": "dy",
+   "ifade": "Her tam sayı bir rasyonel sayıdır.",
+   "dogru": true,
+   "aciklama": "Her tam sayı paydası 1 olan kesir gibi yazılır: 5 = 5/1 (s. 25–34)."
+  },
+  {
+   "id": "m1-10",
+   "konu": "u1k2",
+   "kavram": "Eksinin Yeri",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi diğerlerinden farklı bir sayıdır?",
+   "secenekler": [
+    "[[-9/3]]",
+    "[[9/-3]]",
+    "−3",
+    "[[9/3]]"
+   ],
+   "dogru": 3,
+   "aciklama": "Eksi payda, paydada ya da önde olabilir; değer −3'tür. 9/3 ise +3 (s. 25–34)."
+  },
+  {
+   "id": "m1-11",
+   "konu": "u1k3",
+   "kavram": "Mutlak Değer",
+   "tur": "kisa",
+   "soru": "|−8| kaçtır?",
+   "yanit": "8",
+   "sayi": true,
+   "aciklama": "Mutlak değer 0'a uzaklıktır. İşareti sil, sayı kalır: 8 (s. 35–40)."
+  },
+  {
+   "id": "m1-12",
+   "konu": "u1k3",
+   "kavram": "Mutlak Değeri Verilen Sayı",
+   "tur": "secim",
+   "soru": "Mutlak değeri 5 olan sayılar hangileridir?",
+   "secenekler": [
+    "Yalnız 5",
+    "Yalnız −5",
+    "5 ve −5",
+    "0 ve 5"
+   ],
+   "dogru": 2,
+   "aciklama": "0'a 5 birim uzakta iki sayı var: sağda 5, solda −5 (s. 35–40)."
+  },
+  {
+   "id": "m1-13",
+   "konu": "u1k3",
+   "kavram": "Mutlak Değer Eksi Olmaz",
+   "tur": "dy",
+   "ifade": "Bir sayının mutlak değeri negatif olabilir.",
+   "dogru": false,
+   "duzeltme": "Uzaklık eksi olmaz. Mutlak değer ya 0 ya da pozitiftir.",
+   "aciklama": "Mutlak değer uzaklıktır, hiç eksi olmaz (s. 35–40)."
+  },
+  {
+   "id": "m1-14",
+   "konu": "u1k3",
+   "kavram": "Eksik ya da Fazla",
+   "tur": "kisa",
+   "soru": "Bir çay fabrikasında hedef 500 gram. Bir paket 496 gram geldi. Hata miktarı kaç gramdır?",
+   "yanit": "4",
+   "sayi": true,
+   "aciklama": "500'e uzaklık: 500 − 496 = 4 gram (s. 35–40)."
+  },
+  {
+   "id": "m1-15",
+   "konu": "u1k3",
+   "kavram": "Eksi de Artı da Aynı",
+   "tur": "secim",
+   "soru": "Mutlak değeri 3'ten küçük olan tam sayılar hangileridir?",
+   "secenekler": [
+    "1, 2",
+    "−2, −1, 0, 1, 2",
+    "−3, 3",
+    "0, 1, 2, 3"
+   ],
+   "dogru": 1,
+   "aciklama": "0'a uzaklığı 3'ten az olanlar: −2, −1, 0, 1, 2 (s. 35–40)."
+  },
+  {
+   "id": "m1-16",
+   "konu": "u1k4",
+   "kavram": "Paydayı 10, 100, 1000 Yap",
+   "tur": "kisa",
+   "soru": "[[9/25]] kesrinin ondalık gösterimini yaz.",
+   "yanit": "0,36",
+   "sayi": true,
+   "aciklama": "9/25 = 36/100 = 0,36 (s. 41–49)."
+  },
+  {
+   "id": "m1-17",
+   "konu": "u1k4",
+   "kavram": "Sonlu mu, Devirli mi?",
+   "tur": "secim",
+   "soru": "Hangisinin ondalık gösterimi devirlidir?",
+   "secenekler": [
+    "[[1/4]]",
+    "[[3/5]]",
+    "[[2/3]]",
+    "[[7/10]]"
+   ],
+   "dogru": 2,
+   "aciklama": "Paydada 2 ve 5'ten başka asal çarpan varsa devirli olur. 3 var (s. 41–49)."
+  },
+  {
+   "id": "m1-18",
+   "konu": "u1k4",
+   "kavram": "Ondalıktan Kesre",
+   "tur": "secim",
+   "soru": "0,7 sayısının kesir hâli hangisidir?",
+   "secenekler": [
+    "[[7/100]]",
+    "[[7/10]]",
+    "[[1/7]]",
+    "[[70/10]]"
+   ],
+   "dogru": 1,
+   "aciklama": "Virgülden sonra 1 basamak var: paydaya 10 yazılır (s. 41–49)."
+  },
+  {
+   "id": "m1-19",
+   "konu": "u1k4",
+   "kavram": "Devirliden Kesre",
+   "tur": "secim",
+   "soru": "0,[[d:3]] hangi kesre eşittir?",
+   "secenekler": [
+    "[[3/10]]",
+    "[[3/100]]",
+    "[[3/9]]",
+    "[[1/30]]"
+   ],
+   "dogru": 2,
+   "aciklama": "Devreden 1 basamak için paydaya bir 9 yazılır: 3/9 (s. 41–49)."
+  },
+  {
+   "id": "m1-20",
+   "konu": "u1k4",
+   "kavram": "Kesir Çizgisi Bölmedir",
+   "tur": "dy",
+   "ifade": "[[1/5]] kesri 1 ÷ 5 demektir ve 0,2'ye eşittir.",
+   "dogru": true,
+   "aciklama": "Kesir çizgisi bölmedir: 1 ÷ 5 = 0,2 (s. 41–49)."
+  },
+  {
+   "id": "m1-21",
+   "konu": "u1k5",
+   "kavram": "Negatiflerde Uzak Olan Küçük",
+   "tur": "secim",
+   "soru": "Hangisi en küçüktür?",
+   "secenekler": [
+    "−2",
+    "−9",
+    "0",
+    "−5"
+   ],
+   "dogru": 1,
+   "aciklama": "Negatiflerde 0'a en uzak olan en küçüktür: −9 (s. 50–61)."
+  },
+  {
+   "id": "m1-22",
+   "konu": "u1k5",
+   "kavram": "Sağdaki Büyüktür",
+   "tur": "secim",
+   "soru": "Mars'ın sıcaklığı −65 °C, Neptün'ün −200 °C. Hangisi doğrudur?",
+   "secenekler": [
+    "Neptün daha sıcaktır.",
+    "Mars daha sıcaktır.",
+    "İkisi eşittir.",
+    "Karşılaştırılamaz."
+   ],
+   "dogru": 1,
+   "aciklama": "−65, −200'ün sağındadır, yani daha büyüktür (s. 50–61)."
+  },
+  {
+   "id": "m1-23",
+   "konu": "u1k5",
+   "kavram": "Paydaları ya da Payları Eşitle",
+   "tur": "secim",
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "[[2/3]] < [[2/5]]",
+    "[[3/7]] > [[5/7]]",
+    "[[2/3]] > [[2/5]]",
+    "[[1/5]] > [[1/2]]"
+   ],
+   "dogru": 2,
+   "aciklama": "Paylar eşitse paydası küçük olan büyüktür (s. 50–61)."
+  },
+  {
+   "id": "m1-24",
+   "konu": "u1k5",
+   "kavram": "Negatif, Sıfır, Pozitif",
+   "tur": "dy",
+   "ifade": "Her pozitif sayı, her negatif sayıdan büyüktür.",
+   "dogru": true,
+   "aciklama": "Negatif < 0 < pozitif (s. 50–61)."
+  },
+  {
+   "id": "m1-25",
+   "konu": "u1k5",
+   "kavram": "Arada Hep Bir Sayı Var",
+   "tur": "kisa",
+   "soru": "[[-7/3]] sayısından küçük olan en büyük tam sayı kaçtır?",
+   "yanit": "-3",
+   "sayi": true,
+   "aciklama": "−7/3 = −2 tam 1/3. Ondan küçük ilk tam sayı −3'tür (s. 50–61)."
+  },
+  {
+   "id": "m1-26",
+   "konu": "u1k6",
+   "kavram": "Aynı İşaret: Topla, İşareti Koru",
+   "tur": "kisa",
+   "soru": "(−6) + (−5) + (−12) kaçtır?",
+   "yanit": "-23",
+   "sayi": true,
+   "aciklama": "Aynı işaret: 6 + 5 + 12 = 23, eksi kalır (s. 62–72)."
+  },
+  {
+   "id": "m1-27",
+   "konu": "u1k6",
+   "kavram": "Farklı İşaret: Çıkar, Büyüğün İşareti",
+   "tur": "secim",
+   "soru": "Esma Hanım'ın hesabında −100 TL var. Hesabına 75 TL yatırdı. Yeni bakiyesi kaç TL'dir?",
+   "secenekler": [
+    "−175",
+    "−25",
+    "25",
+    "175"
+   ],
+   "dogru": 1,
+   "aciklama": "(−100) + 75: 100 − 75 = 25, büyük olan eksi: −25 (s. 62–72)."
+  },
+  {
+   "id": "m1-28",
+   "konu": "u1k6",
+   "kavram": "Çıkarma = Tersiyle Toplama",
+   "tur": "kisa",
+   "soru": "(+10) − (−8) kaçtır?",
+   "yanit": "18",
+   "sayi": true,
+   "aciklama": "Çıkarmayı çevir, topla: 10 + 8 = 18 (s. 62–72)."
+  },
+  {
+   "id": "m1-29",
+   "konu": "u1k6",
+   "kavram": "Aradaki Eksi Çıkarmadır",
+   "tur": "secim",
+   "soru": "−3 − 4 − 5 kaçtır?",
+   "secenekler": [
+    "−12",
+    "−4",
+    "4",
+    "12"
+   ],
+   "dogru": 0,
+   "aciklama": "(−3) + (−4) + (−5) = −12 (s. 62–72)."
+  },
+  {
+   "id": "m1-30",
+   "konu": "u1k6",
+   "kavram": "Ters İşaretliler Toplanınca 0",
+   "tur": "secim",
+   "soru": "Hangisinin sonucu 0'dır?",
+   "secenekler": [
+    "(+10) + (+10)",
+    "(−10) − (+10)",
+    "(+10) + (−10)",
+    "(−10) + (−10)"
+   ],
+   "dogru": 2,
+   "aciklama": "Bir sayı ile ters işaretlisinin toplamı 0'dır (s. 62–72)."
+  },
+  {
+   "id": "m1-31",
+   "konu": "u1k7",
+   "kavram": "Aynı İşaret: Çarpım Artı",
+   "tur": "kisa",
+   "soru": "(−10) · (−10) kaçtır?",
+   "yanit": "100",
+   "sayi": true,
+   "aciklama": "Aynı işaret → artı: 100 (s. 73–81)."
+  },
+  {
+   "id": "m1-32",
+   "konu": "u1k7",
+   "kavram": "Çok Çarpanda Eksileri Say",
+   "tur": "secim",
+   "soru": "(−3) · (−5) · (−6) çarpımının sonucu hangisidir?",
+   "secenekler": [
+    "90",
+    "−90",
+    "−14",
+    "14"
+   ],
+   "dogru": 1,
+   "aciklama": "Üç eksi var, tek: sonuç eksi. 3 · 5 · 6 = 90 → −90 (s. 73–81)."
+  },
+  {
+   "id": "m1-33",
+   "konu": "u1k7",
+   "kavram": "Bölmede Aynı Kural",
+   "tur": "kisa",
+   "soru": "(−144) ÷ (−12) kaçtır?",
+   "yanit": "12",
+   "sayi": true,
+   "aciklama": "Aynı işaret → artı: 144 ÷ 12 = 12 (s. 73–81)."
+  },
+  {
+   "id": "m1-34",
+   "konu": "u1k7",
+   "kavram": "Çarpma = Tekrarlı Toplama",
+   "tur": "secim",
+   "soru": "Klimanın mavi tuşuna her basışta sıcaklık 2 °C azalıyor. Tuşa 3 kez basılırsa sıcaklık nasıl değişir?",
+   "secenekler": [
+    "+6 °C",
+    "−5 °C",
+    "−6 °C",
+    "+5 °C"
+   ],
+   "dogru": 2,
+   "aciklama": "3 · (−2) = −6. Sıcaklık 6 derece düşer (s. 73–81)."
+  },
+  {
+   "id": "m1-35",
+   "konu": "u1k7",
+   "kavram": "Bölmenin Farklı Yazılışları",
+   "tur": "secim",
+   "soru": "Hangisi −4'e eşit değildir?",
+   "secenekler": [
+    "(−12) ÷ 3",
+    "[[-12/3]]",
+    "12 : (−3)",
+    "(−12) : (−3)"
+   ],
+   "dogru": 3,
+   "aciklama": "(−12) : (−3) aynı işaret, sonuç +4 (s. 73–81)."
+  },
+  {
+   "id": "m1-36",
+   "konu": "u1k8",
+   "kavram": "Payda Aynıysa Payları Topla",
+   "tur": "secim",
+   "soru": "[[3/7]] + ([[-5/7]]) kaçtır?",
+   "secenekler": [
+    "[[8/7]]",
+    "[[-2/7]]",
+    "[[2/7]]",
+    "[[-8/14]]"
+   ],
+   "dogru": 1,
+   "aciklama": "Payda aynı: 3 + (−5) = −2. Sonuç −2/7 (s. 82–87)."
+  },
+  {
+   "id": "m1-37",
+   "konu": "u1k8",
+   "kavram": "Önce Paydaları Eşitle",
+   "tur": "secim",
+   "soru": "([[-1/6]]) + ([[-1/3]]) kaçtır?",
+   "secenekler": [
+    "[[-2/9]]",
+    "[[-1/2]]",
+    "[[1/2]]",
+    "[[-1/9]]"
+   ],
+   "dogru": 1,
+   "aciklama": "−1/3 = −2/6. −1/6 + (−2/6) = −3/6 = −1/2 (s. 82–87)."
+  },
+  {
+   "id": "m1-38",
+   "konu": "u1k8",
+   "kavram": "Çıkarma = Tersini Ekle",
+   "tur": "kisa",
+   "soru": "([[-5/6]]) − ([[-1/6]]) kaçtır? En sade hâliyle yaz.",
+   "yanit": "-2/3",
+   "kabul": [
+    "-4/6"
+   ],
+   "sayi": true,
+   "aciklama": "Çevir, topla: −5/6 + 1/6 = −4/6 = −2/3 (s. 82–87)."
+  },
+  {
+   "id": "m1-39",
+   "konu": "u1k8",
+   "kavram": "Toplamanın Özellikleri",
+   "tur": "dy",
+   "ifade": "([[-2/9]]) + [[2/9]] = 0 işleminde toplamanın ters eleman özelliği kullanılmıştır.",
+   "dogru": true,
+   "aciklama": "Toplamları 0 olan iki sayı birbirinin tersidir (s. 82–87)."
+  },
+  {
+   "id": "m1-40",
+   "konu": "u1k8",
+   "kavram": "Problemde Toplama ve Çıkarma",
+   "tur": "secim",
+   "soru": "Termometre [[1/2]] °C gösteriyor. Sıcaklık [[3/2]] °C düştü. Yeni sıcaklık kaç °C'tur?",
+   "secenekler": [
+    "2",
+    "1",
+    "−1",
+    "−2"
+   ],
+   "dogru": 2,
+   "aciklama": "1/2 − 3/2 = −2/2 = −1 (s. 82–87)."
+  },
+  {
+   "id": "m1-41",
+   "konu": "u1k9",
+   "kavram": "Pay Paya, Payda Paydaya",
+   "tur": "secim",
+   "soru": "[[3/5]] · [[2/7]] kaçtır?",
+   "secenekler": [
+    "[[5/12]]",
+    "[[6/35]]",
+    "[[6/12]]",
+    "[[21/10]]"
+   ],
+   "dogru": 1,
+   "aciklama": "Pay paya: 3 · 2 = 6, payda paydaya: 5 · 7 = 35 (s. 88–95)."
+  },
+  {
+   "id": "m1-42",
+   "konu": "u1k9",
+   "kavram": "İşaret Tam Sayılardaki Gibi",
+   "tur": "kisa",
+   "soru": "([[-2/3]]) · ([[-3/4]]) kaçtır? En sade hâliyle yaz.",
+   "yanit": "1/2",
+   "kabul": [
+    "6/12",
+    "0,5"
+   ],
+   "sayi": true,
+   "aciklama": "Aynı işaret → artı. 2 · 3 / 3 · 4 = 6/12 = 1/2 (s. 88–95)."
+  },
+  {
+   "id": "m1-43",
+   "konu": "u1k9",
+   "kavram": "Bir Sayının Kesrini Bulma",
+   "tur": "kisa",
+   "soru": "Yiğit 600 TL harçlığının [[1/4]]'ünü harcadı. Parası kaç TL azaldı?",
+   "yanit": "150",
+   "sayi": true,
+   "aciklama": "600 · 1/4 = 150 TL (s. 88–95)."
+  },
+  {
+   "id": "m1-44",
+   "konu": "u1k9",
+   "kavram": "Çarpmanın Özellikleri",
+   "tur": "secim",
+   "soru": "Hangisinde çarpmanın yutan eleman özelliği vardır?",
+   "secenekler": [
+    "[[2/7]] · [[7/2]] = 1",
+    "[[3/5]] · 1 = [[3/5]]",
+    "([[-4/9]]) · 0 = 0",
+    "[[1/2]] · [[1/3]] = [[1/3]] · [[1/2]]"
+   ],
+   "dogru": 2,
+   "aciklama": "0 ile çarpınca sonuç 0 olur: 0 yutar (s. 88–95)."
+  },
+  {
+   "id": "m1-45",
+   "konu": "u1k9",
+   "kavram": "Tam Sayılı Kesri Önce Çevir",
+   "tur": "secim",
+   "soru": "([[-1 1/3]]) · [[3/8]] kaçtır?",
+   "secenekler": [
+    "[[-1/2]]",
+    "[[1/2]]",
+    "[[-3/8]]",
+    "[[-1 1/8]]"
+   ],
+   "dogru": 0,
+   "aciklama": "−1 tam 1/3 = −4/3. −4/3 · 3/8 = −12/24 = −1/2 (s. 88–95)."
+  },
+  {
+   "id": "m1-46",
+   "konu": "u1k10",
+   "kavram": "Tekrarlı Çarpımı Kısalt",
+   "tur": "secim",
+   "soru": "7 · 7 · 7 · 7 · 7 çarpımının üslü gösterimi hangisidir?",
+   "secenekler": [
+    "5[[u:7]]",
+    "7 · 5",
+    "7[[u:5]]",
+    "35"
+   ],
+   "dogru": 2,
+   "aciklama": "7 beş kez çarpılmış: taban 7, üs 5 (s. 96–101)."
+  },
+  {
+   "id": "m1-47",
+   "konu": "u1k10",
+   "kavram": "Taban, Üs ve Değer",
+   "tur": "kisa",
+   "soru": "4[[u:3]] kaçtır?",
+   "yanit": "64",
+   "sayi": true,
+   "aciklama": "4 · 4 · 4 = 64. 4 · 3 değil! (s. 96–101)."
+  },
+  {
+   "id": "m1-48",
+   "konu": "u1k10",
+   "kavram": "Parantez Fark Yaratır",
+   "tur": "secim",
+   "soru": "−2[[u:4]] kaçtır?",
+   "secenekler": [
+    "16",
+    "−16",
+    "−8",
+    "8"
+   ],
+   "dogru": 1,
+   "aciklama": "Parantez yok: önce 2[[u:4]] = 16, sonra eksi: −16 (s. 96–101)."
+  },
+  {
+   "id": "m1-49",
+   "konu": "u1k10",
+   "kavram": "Eksi Taban: Çift Artı, Tek Eksi",
+   "tur": "dytablo",
+   "soru": "Her eşitlik için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "(−2)[[u:3]] = −8",
+     "d": true
+    },
+    {
+     "s": "(−2)[[u:4]] = −16",
+     "d": false
+    },
+    {
+     "s": "(−1)[[u:5]] = −1",
+     "d": true
+    },
+    {
+     "s": "1[[u:2025]] = 2025",
+     "d": false
+    }
+   ],
+   "aciklama": "Eksi tabanda çift üs artı, tek üs eksi. 1'in her kuvveti 1'dir (s. 96–101)."
+  },
+  {
+   "id": "m1-50",
+   "konu": "u1k10",
+   "kavram": "Kesrin Kuvveti",
+   "tur": "secim",
+   "soru": "([[2/3]])[[u:2]] kaçtır?",
+   "secenekler": [
+    "[[4/6]]",
+    "[[4/9]]",
+    "[[2/9]]",
+    "[[4/3]]"
+   ],
+   "dogru": 1,
+   "aciklama": "Pay da payda da kuvvetlenir: 2 · 2 / 3 · 3 = 4/9 (s. 96–101)."
+  },
+  {
+   "id": "m1-51",
+   "konu": "u1k11",
+   "kavram": "Böl = Tersiyle Çarp",
+   "tur": "secim",
+   "soru": "[[2/3]] ÷ [[3/4]] kaçtır?",
+   "secenekler": [
+    "[[1/2]]",
+    "[[8/9]]",
+    "[[6/12]]",
+    "[[9/8]]"
+   ],
+   "dogru": 1,
+   "aciklama": "Koru, çevir, ters çevir: 2/3 · 4/3 = 8/9 (s. 102–107)."
+  },
+  {
+   "id": "m1-52",
+   "konu": "u1k11",
+   "kavram": "Kaç Tane Sığar?",
+   "tur": "kisa",
+   "soru": "[[3/4]] m kablo [[1/8]] m'lik parçalara ayrılıyor. Kaç parça olur?",
+   "yanit": "6",
+   "sayi": true,
+   "aciklama": "3/4 ÷ 1/8 = 3/4 · 8 = 6 (s. 102–107)."
+  },
+  {
+   "id": "m1-53",
+   "konu": "u1k11",
+   "kavram": "Ters Çevir",
+   "tur": "secim",
+   "soru": "Hangi sayının çarpma işlemine göre tersi yoktur?",
+   "secenekler": [
+    "1",
+    "−1",
+    "0",
+    "[[1/2]]"
+   ],
+   "dogru": 2,
+   "aciklama": "0'ın tersi yoktur; 0 ile çarpınca 1 elde edilmez (s. 102–107)."
+  },
+  {
+   "id": "m1-54",
+   "konu": "u1k11",
+   "kavram": "Tam Sayılı Kesir ve İşaret",
+   "tur": "kisa",
+   "soru": "(−8) ÷ ([[-4/3]]) kaçtır?",
+   "yanit": "6",
+   "sayi": true,
+   "aciklama": "Aynı işaret → artı. 8 · 3/4 = 6 (s. 102–107)."
+  },
+  {
+   "id": "m1-55",
+   "konu": "u1k11",
+   "kavram": "Kesir Çizgisi de Bölmedir",
+   "tur": "dy",
+   "ifade": "Bölmede sayıların yeri değişirse sonuç değişmez.",
+   "dogru": false,
+   "duzeltme": "Bölmenin değişme özelliği yoktur; yer değişirse sonuç değişir.",
+   "aciklama": "6 ÷ 2 = 3 ama 2 ÷ 6 = 1/3. Bölmede yer önemlidir (s. 102–107)."
+  },
+  {
+   "id": "m1-56",
+   "konu": "u1k12",
+   "kavram": "İşlem Sırası",
+   "tur": "kisa",
+   "soru": "2 + 3 · 4 kaçtır?",
+   "yanit": "14",
+   "sayi": true,
+   "aciklama": "Önce çarpma: 3 · 4 = 12, sonra 2 + 12 = 14 (s. 108–116)."
+  },
+  {
+   "id": "m1-57",
+   "konu": "u1k12",
+   "kavram": "Aynı Öncelikte Soldan Sağa",
+   "tur": "secim",
+   "soru": "20 ÷ 4 · 5 kaçtır?",
+   "secenekler": [
+    "1",
+    "25",
+    "4",
+    "100"
+   ],
+   "dogru": 1,
+   "aciklama": "Kardeş işlemler soldan sağa: 20 ÷ 4 = 5, 5 · 5 = 25 (s. 108–116)."
+  },
+  {
+   "id": "m1-58",
+   "konu": "u1k12",
+   "kavram": "Önce Parantez",
+   "tur": "secim",
+   "soru": "(2 + 1)[[u:2]] kaçtır?",
+   "secenekler": [
+    "3",
+    "5",
+    "9",
+    "6"
+   ],
+   "dogru": 2,
+   "aciklama": "Önce parantezin içi: 3, sonra kuvvet: 3[[u:2]] = 9 (s. 108–116)."
+  },
+  {
+   "id": "m1-59",
+   "konu": "u1k12",
+   "kavram": "Kesir Çizgisi Ayırır",
+   "tur": "kisa",
+   "soru": "Kesir çizgisinin üstünde 3 · 8, altında 10 − 4 yazıyor. Sonuç kaçtır?",
+   "yanit": "4",
+   "sayi": true,
+   "aciklama": "Üst 24, alt 6. En son 24 ÷ 6 = 4 (s. 108–116)."
+  },
+  {
+   "id": "m1-60",
+   "konu": "u1k12",
+   "kavram": "Problemi İşleme Çevir",
+   "tur": "secim",
+   "soru": "Valiz boşken 5 kg. İçine her biri 2 kg olan 4 eşya konuyor. Valizin kütlesi hangi işlemle bulunur?",
+   "secenekler": [
+    "(5 + 2) · 4",
+    "5 + 2 · 4",
+    "5 · 2 + 4",
+    "5 + 2 + 4"
+   ],
+   "dogru": 1,
+   "aciklama": "Eşyalar 2 · 4 = 8 kg. Valizle 5 + 8 = 13 kg (s. 108–116)."
+  }
+ ]
+}

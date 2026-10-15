@@ -1,0 +1,298 @@
+{
+ "unite": 1,
+ "ders": "own1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "o1-01",
+   "konu": "u1k1",
+   "kavram": "cheerful",
+   "tur": "secim",
+   "soru": "{{is happy}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "calm",
+    "cheerful",
+    "patient",
+    "shy"
+   ],
+   "dogru": 1,
+   "aciklama": "Mutlu, neşeli kişi {{cheerful}} (SB s. 11, 17)."
+  },
+  {
+   "id": "o1-02",
+   "konu": "u1k1",
+   "kavram": "confident",
+   "tur": "secim",
+   "soru": "{{shy}} kelimesinin zıt anlamlısı hangisidir?",
+   "secenekler": [
+    "confident",
+    "grumpy",
+    "anxious",
+    "helpful"
+   ],
+   "dogru": 0,
+   "aciklama": "Utangaç {{shy}}, kendine güvenen {{confident}} (SB s. 11, 17)."
+  },
+  {
+   "id": "o1-03",
+   "konu": "u1k1",
+   "kavram": "patient",
+   "tur": "eslestir",
+   "soru": "Kelimeleri zıt anlamlılarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "calm",
+     "sag": "anxious"
+    },
+    {
+     "sol": "cheerful",
+     "sag": "grumpy"
+    },
+    {
+     "sol": "patient",
+     "sag": "impatient"
+    },
+    {
+     "sol": "helpful",
+     "sag": "unhelpful"
+    }
+   ],
+   "aciklama": "Bazı zıtlar ayrı kelime, bazıları {{im-}} ya da {{un-}} ile yapılır (SB s. 11, 17)."
+  },
+  {
+   "id": "o1-04",
+   "konu": "u1k1",
+   "kavram": "sociable",
+   "tur": "bosluk",
+   "havuz": [
+    "but",
+    "so"
+   ],
+   "cumleler": [
+    {
+     "c": "I'm sociable ___ I love making friends.",
+     "cevap": "because"
+    },
+    {
+     "c": "She is never angry. She is very ___.",
+     "cevap": "calm"
+    },
+    {
+     "c": "He always helps other people. He is ___.",
+     "cevap": "helpful"
+    }
+   ],
+   "aciklama": "Nedeni {{because}} ile söyleriz (SB s. 11, 17)."
+  },
+  {
+   "id": "o1-05",
+   "konu": "u1k1",
+   "kavram": "helpful",
+   "tur": "kisa",
+   "soru": "{{helps other people}} tanımı hangi kelimenindir? İngilizce yaz.",
+   "yanit": "helpful",
+   "aciklama": "Başkalarına yardım eden kişi {{helpful}} (SB s. 11, 17)."
+  },
+  {
+   "id": "o1-06",
+   "konu": "u1k1",
+   "kavram": "calm",
+   "tur": "dy",
+   "ifade": "{{calm}} kelimesi “endişeli, kaygılı” demektir.",
+   "dogru": false,
+   "duzeltme": "calm sakin demektir; endişeli anxious'tır.",
+   "aciklama": "{{calm}} sakin, {{anxious}} endişeli (SB s. 11, 17)."
+  },
+  {
+   "id": "o1-07",
+   "konu": "u1k2",
+   "kavram": "sensible",
+   "tur": "secim",
+   "soru": "{{makes good decisions}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "sensitive",
+    "sensible",
+    "silly",
+    "lazy"
+   ],
+   "dogru": 1,
+   "aciklama": "İyi karar veren kişi {{sensible}}. {{sensitive}} ile karıştırma (SB s. 11–12, 17)."
+  },
+  {
+   "id": "o1-08",
+   "konu": "u1k2",
+   "kavram": "sensitive",
+   "tur": "secim",
+   "soru": "Hangi kelimenin zıttı {{in-}} ile yapılır?",
+   "secenekler": [
+    "talented",
+    "ambitious",
+    "sensitive",
+    "inspiring"
+   ],
+   "dogru": 2,
+   "aciklama": "{{sensitive}} → {{insensitive}}. Diğerleri {{un-}} alır (SB s. 11–12, 17)."
+  },
+  {
+   "id": "o1-09",
+   "konu": "u1k2",
+   "kavram": "talented",
+   "tur": "eslestir",
+   "soru": "Kelimeleri anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "talented",
+     "sag": "yetenekli"
+    },
+    {
+     "sol": "ambitious",
+     "sag": "hırslı"
+    },
+    {
+     "sol": "inspiring",
+     "sag": "ilham veren"
+    },
+    {
+     "sol": "sensitive",
+     "sag": "duyarlı"
+    }
+   ],
+   "aciklama": "Kişiliği anlatan kelimeler (SB s. 11–12, 17)."
+  },
+  {
+   "id": "o1-10",
+   "konu": "u1k2",
+   "kavram": "active",
+   "tur": "kisa",
+   "soru": "{{active}} kelimesinin zıt anlamlısını İngilizce yaz.",
+   "yanit": "lazy",
+   "aciklama": "{{active}} hareketli, {{lazy}} tembel (SB s. 11–12, 17)."
+  },
+  {
+   "id": "o1-11",
+   "konu": "u1k2",
+   "kavram": "inspiring",
+   "tur": "secim",
+   "soru": "{{In my ___, Anoka should win.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "opinion",
+    "because",
+    "talented",
+    "look"
+   ],
+   "dogru": 0,
+   "aciklama": "Fikir bildirmek için {{In my opinion}} ya da {{In my view}} (SB s. 11–12, 17)."
+  },
+  {
+   "id": "o1-12",
+   "konu": "u1k2",
+   "kavram": "sensible",
+   "tur": "dy",
+   "ifade": "{{silly}} kelimesi {{sensible}} kelimesinin zıt anlamlısıdır.",
+   "dogru": true,
+   "aciklama": "{{sensible}} mantıklı, {{silly}} saçma davranan (SB s. 11–12, 17)."
+  },
+  {
+   "id": "o1-13",
+   "konu": "u1k4",
+   "kavram": "give up",
+   "tur": "secim",
+   "soru": "{{This is so difficult!}} diyen arkadaşına ne dersin? {{Don't ___!}}",
+   "secenekler": [
+    "give up",
+    "hang out",
+    "cheer up",
+    "take care of"
+   ],
+   "dogru": 0,
+   "aciklama": "{{give up}} pes etmek demektir. {{Don't give up!}} Pes etme! (WB s. 11)."
+  },
+  {
+   "id": "o1-14",
+   "konu": "u1k4",
+   "kavram": "look up to",
+   "tur": "eslestir",
+   "soru": "Phrasal verb'leri anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "look up to",
+     "sag": "örnek almak"
+    },
+    {
+     "sol": "get on with",
+     "sag": "iyi anlaşmak"
+    },
+    {
+     "sol": "take care of",
+     "sag": "bakmak, ilgilenmek"
+    },
+    {
+     "sol": "deal with",
+     "sag": "başa çıkmak"
+    }
+   ],
+   "aciklama": "Fiil + küçük kelime = yeni anlam (WB s. 11)."
+  },
+  {
+   "id": "o1-15",
+   "konu": "u1k4",
+   "kavram": "depend on",
+   "tur": "secim",
+   "soru": "{{Babies ___ adults for everything.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "give up",
+    "depend on",
+    "cheer up",
+    "hang out"
+   ],
+   "dogru": 1,
+   "aciklama": "Bebekler her şey için yetişkinlere muhtaçtır: {{depend on}} (WB s. 11)."
+  },
+  {
+   "id": "o1-16",
+   "konu": "u1k4",
+   "kavram": "hang out",
+   "tur": "bosluk",
+   "havuz": [
+    "give up",
+    "look"
+   ],
+   "cumleler": [
+    {
+     "c": "Do you want to ___ after school?",
+     "cevap": "hang out"
+    },
+    {
+     "c": "My grandfather is sad, so I'm trying to ___ him up.",
+     "cevap": "cheer"
+    },
+    {
+     "c": "How do you ___ so much homework?",
+     "cevap": "deal with"
+    }
+   ],
+   "aciklama": "Takılmak {{hang out}}, neşelendirmek {{cheer up}}, başa çıkmak {{deal with}} (WB s. 11)."
+  },
+  {
+   "id": "o1-17",
+   "konu": "u1k4",
+   "kavram": "cheer up",
+   "tur": "dy",
+   "ifade": "{{She cheers me up.}} cümlesinde kişi {{cheer}} ile {{up}} arasına girmiştir.",
+   "dogru": true,
+   "aciklama": "{{cheer up}}'ta kişi ortaya girer: {{cheer me up}} (WB s. 11)."
+  },
+  {
+   "id": "o1-18",
+   "konu": "u1k4",
+   "kavram": "get on with",
+   "tur": "kisa",
+   "soru": "“İyi anlaşmak” anlamına gelen phrasal verb nedir? İngilizce yaz.",
+   "yanit": "get on with",
+   "kabul": [
+    "get on"
+   ],
+   "aciklama": "Biriyle iyi anlaşmak: {{get on with}} (WB s. 11)."
+  }
+ ]
+}

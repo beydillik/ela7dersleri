@@ -1,0 +1,800 @@
+{
+ "unite": 3,
+ "ders": "fen1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "f3-01",
+   "konu": "u3k1",
+   "kavram": "Sindirim",
+   "tur": "secim",
+   "soru": "Besinlerin sindirim sisteminde izlediği yol hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "Ağız → yemek borusu → yutak → mide → ince bağırsak",
+    "Ağız → yutak → yemek borusu → mide → ince bağırsak → kalın bağırsak",
+    "Ağız → mide → yutak → kalın bağırsak → ince bağırsak",
+    "Ağız → yutak → mide → yemek borusu → kalın bağırsak"
+   ],
+   "dogru": 1,
+   "aciklama": "Sıra: ağız, yutak, yemek borusu, mide, ince bağırsak, kalın bağırsak (s. 89–95)."
+  },
+  {
+   "id": "f3-02",
+   "konu": "u3k1",
+   "kavram": "Yutak ve Yemek Borusu",
+   "tur": "dy",
+   "ifade": "Yemek borusunda besinlerin kimyasal sindirimi yapılır.",
+   "dogru": false,
+   "duzeltme": "Yutak ve yemek borusu besini yalnızca taşır; burada sindirim olmaz.",
+   "aciklama": "Yemek borusu besini mideye taşır ama sindirmez (s. 89–95)."
+  },
+  {
+   "id": "f3-03",
+   "konu": "u3k1",
+   "kavram": "İnce Bağırsak",
+   "tur": "kisa",
+   "soru": "Besinlerin sindirimi hangi organda tamamlanır?",
+   "yanit": "ince bağırsak",
+   "kabul": [
+    "incebağırsak"
+   ],
+   "aciklama": "Sindirim ince bağırsakta biter. Villuslar besini kana geçirir (s. 89–95)."
+  },
+  {
+   "id": "f3-04",
+   "konu": "u3k1",
+   "kavram": "Karaciğer ve Pankreas",
+   "tur": "secim",
+   "soru": "Sindirim sistemiyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Karaciğer ve pankreas sindirime yardımcı organlardır.",
+    "Safra sıvısı yağların fiziksel sindirimine yardım eder.",
+    "Proteinlerin kimyasal sindirimi ağızda başlar."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Protein sindirimi ağızda değil midede başlar (s. 89–95)."
+  },
+  {
+   "id": "f3-05",
+   "konu": "u3k1",
+   "kavram": "Sindirim",
+   "tur": "eslestir",
+   "soru": "Organları görevleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Ağız",
+     "sag": "Karbohidratların kimyasal sindirimi başlar."
+    },
+    {
+     "sol": "Mide",
+     "sag": "Proteinlerin kimyasal sindirimi başlar."
+    },
+    {
+     "sol": "Kalın bağırsak",
+     "sag": "Su, bazı mineral ve vitaminler emilir."
+    },
+    {
+     "sol": "Anüs",
+     "sag": "Sindirilmeyen besinler vücuttan atılır."
+    }
+   ],
+   "aciklama": "Her organın bir işi var. Sindirim ağızda başlar, atık anüsten çıkar (s. 89–95)."
+  },
+  {
+   "id": "f3-06",
+   "konu": "u3k2",
+   "kavram": "Su ve Düzenli Öğünler",
+   "tur": "secim",
+   "soru": "Ruhi kahvaltı yapmıyor, öğle yemeğini cips ile geçiştiriyor. Ruhi'nin hangi alışkanlığı sindirim sistemi için hatalıdır?",
+   "secenekler": [
+    "Öğün atlaması",
+    "Su içmesi",
+    "Sebze yemesi",
+    "Spor yapması"
+   ],
+   "dogru": 0,
+   "aciklama": "Öğün atlamak ve öğünü atıştırmalıkla geçiştirmek doğru değildir (s. 96–100)."
+  },
+  {
+   "id": "f3-07",
+   "konu": "u3k2",
+   "kavram": "Düzenli Egzersiz",
+   "tur": "dy",
+   "ifade": "Düzenli egzersiz bağırsakların hareketini artırır.",
+   "dogru": true,
+   "aciklama": "Spor bağırsakları uyarır, besinler daha kolay sindirilir (s. 96–100)."
+  },
+  {
+   "id": "f3-08",
+   "konu": "u3k2",
+   "kavram": "Ekran Başında Hareketsizlik",
+   "tur": "secim",
+   "soru": "Uzun süre ekran başında oturmak sindirimi nasıl etkiler?",
+   "secenekler": [
+    "Bağırsak hareketlerini hızlandırır.",
+    "Bağırsak hareketlerini yavaşlatır.",
+    "Sindirimi hiç etkilemez.",
+    "Mideyi güçlendirir."
+   ],
+   "dogru": 1,
+   "aciklama": "Hareketsizlik bağırsakları yavaşlatır. Ekran başında fazla da yenebilir (s. 96–100)."
+  },
+  {
+   "id": "f3-09",
+   "konu": "u3k2",
+   "kavram": "Hazır ve Paketli Gıdalar",
+   "tur": "dytablo",
+   "soru": "Sindirim sistemi sağlığı için doğru olanlara D, yanlış olanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Paketli ve çok baharatlı yiyecekleri sık yemek",
+     "d": false
+    },
+    {
+     "s": "Gün içinde yeterli su içmek",
+     "d": true
+    },
+    {
+     "s": "Öğünleri düzenli ve dengeli yapmak",
+     "d": true
+    },
+    {
+     "s": "Stresle başa çıkmak için spor yapmak",
+     "d": true
+    }
+   ],
+   "aciklama": "Paketli ve çok baharatlı gıdalar mideye zarar verebilir (s. 96–100)."
+  },
+  {
+   "id": "f3-10",
+   "konu": "u3k2",
+   "kavram": "Dengeli Beslenme",
+   "tur": "secim",
+   "soru": "Sindirim sistemi rahatsızlıkları genellikle neden kaynaklanır?",
+   "secenekler": [
+    "Uzun boylu olmaktan",
+    "Yaşam tarzından",
+    "Kitap okumaktan",
+    "Mevsimden"
+   ],
+   "dogru": 1,
+   "aciklama": "Beslenme, hareket ve stres gibi yaşam tarzı sindirimi etkiler (s. 96–100)."
+  },
+  {
+   "id": "f3-11",
+   "konu": "u3k3",
+   "kavram": "Dolaşım Sistemi",
+   "tur": "kisa",
+   "soru": "Dolaşım sistemi kan, kalp ve hangi yapılardan oluşur?",
+   "yanit": "damarlar",
+   "kabul": [
+    "damar"
+   ],
+   "aciklama": "Dolaşım sistemi: kan, kalp ve damarlar (s. 101–106)."
+  },
+  {
+   "id": "f3-12",
+   "konu": "u3k3",
+   "kavram": "Atardamar",
+   "tur": "eslestir",
+   "soru": "Damarları görevleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Atardamar",
+     "sag": "Kanı kalpten vücuda taşır."
+    },
+    {
+     "sol": "Toplardamar",
+     "sag": "Kanı vücuttan kalbe getirir."
+    },
+    {
+     "sol": "Kılcal damar",
+     "sag": "Kan ile hücreler arasında madde alışverişi sağlar."
+    }
+   ],
+   "aciklama": "Atardamar götürür, toplardamar getirir, kılcal damar alışveriş yapar (s. 101–106)."
+  },
+  {
+   "id": "f3-13",
+   "konu": "u3k3",
+   "kavram": "Küçük Kan Dolaşımı",
+   "tur": "secim",
+   "soru": "“Kalp → akciğer → kalp” yolu hangi dolaşımdır?",
+   "secenekler": [
+    "Büyük kan dolaşımı",
+    "Sindirim",
+    "Küçük kan dolaşımı",
+    "Boşaltım"
+   ],
+   "dogru": 2,
+   "aciklama": "Küçük dolaşımda kan akciğere gider, oksijen alıp kalbe döner (s. 101–106)."
+  },
+  {
+   "id": "f3-14",
+   "konu": "u3k3",
+   "kavram": "Büyük Kan Dolaşımı",
+   "tur": "bosluk",
+   "havuz": [
+    "akciğer",
+    "mide"
+   ],
+   "cumleler": [
+    {
+     "c": "Büyük dolaşımda oksijence zengin kan kalbin ___ tarafından çıkar.",
+     "cevap": "sol"
+    },
+    {
+     "c": "Vücuttan dönen kan kalbin ___ tarafına gelir.",
+     "cevap": "sağ"
+    },
+    {
+     "c": "Kanın atardamar duvarına yaptığı basınca ___ denir.",
+     "cevap": "nabız"
+    }
+   ],
+   "aciklama": "Temiz kan soldan çıkar, kirli kan sağa döner. Nabzı bilekte hissederiz (s. 101–106)."
+  },
+  {
+   "id": "f3-15",
+   "konu": "u3k3",
+   "kavram": "Kalp",
+   "tur": "dy",
+   "ifade": "Kalp, özel kas dokusundan oluşan bir organdır.",
+   "dogru": true,
+   "aciklama": "Kalp kasılıp gevşeyerek kanı pompalar (s. 101–106)."
+  },
+  {
+   "id": "f3-16",
+   "konu": "u3k4",
+   "kavram": "Alyuvar",
+   "tur": "secim",
+   "soru": "Oksijen ve karbon dioksidi taşıyan kan hücresi hangisidir?",
+   "secenekler": [
+    "Akyuvar",
+    "Kan pulcuğu",
+    "Plazma",
+    "Alyuvar"
+   ],
+   "dogru": 3,
+   "aciklama": "Alyuvar kana kırmızı rengi verir ve gazları taşır (s. 107)."
+  },
+  {
+   "id": "f3-17",
+   "konu": "u3k4",
+   "kavram": "Akyuvar",
+   "tur": "dy",
+   "ifade": "Kanda en çok sayıda bulunan hücreler akyuvarlardır.",
+   "dogru": false,
+   "duzeltme": "En çok alyuvar, en az akyuvar bulunur.",
+   "aciklama": "Alyuvar en çok, akyuvar en az bulunan kan hücresidir (s. 107)."
+  },
+  {
+   "id": "f3-18",
+   "konu": "u3k4",
+   "kavram": "Kan Pulcukları",
+   "tur": "eslestir",
+   "soru": "Kanın bölümlerini görevleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Plazma",
+     "sag": "Kanın sıvı kısmıdır, çoğu sudur."
+    },
+    {
+     "sol": "Alyuvar",
+     "sag": "Oksijen ve karbon dioksit taşır."
+    },
+    {
+     "sol": "Akyuvar",
+     "sag": "Vücudu mikroplara karşı savunur."
+    },
+    {
+     "sol": "Kan pulcuğu",
+     "sag": "Pıhtılaşarak kanamayı durdurur."
+    }
+   ],
+   "aciklama": "Plazma sıvı kısım; alyuvar taşır, akyuvar korur, pulcuk pıhtı yapar (s. 107)."
+  },
+  {
+   "id": "f3-19",
+   "konu": "u3k4",
+   "kavram": "Kanın Görevleri",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi kanın görevlerinden biri değildir?",
+   "secenekler": [
+    "Hücrelere oksijen taşımak",
+    "Besinleri sindirmek",
+    "Vücut sıcaklığını düzenlemek",
+    "Mikroplara karşı korumak"
+   ],
+   "dogru": 1,
+   "aciklama": "Kan taşır, korur ve ısıtır. Sindirim, sindirim sisteminin işidir (s. 107)."
+  },
+  {
+   "id": "f3-20",
+   "konu": "u3k4",
+   "kavram": "Plazma",
+   "tur": "kisa",
+   "soru": "Kanın sıvı kısmına ne ad verilir?",
+   "yanit": "plazma",
+   "aciklama": "Plazma kanın sıvı kısmıdır; büyük kısmı sudur (s. 107)."
+  },
+  {
+   "id": "f3-21",
+   "konu": "u3k5",
+   "kavram": "Kimler Kan Verebilir?",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi kan bağışçısı olabilir?",
+   "secenekler": [
+    "15 yaşında, 55 kg, sağlıklı bir öğrenci",
+    "30 yaşında, 70 kg, sağlıklı bir yetişkin",
+    "40 yaşında, 45 kg bir yetişkin",
+    "70 yaşında, 80 kg bir yetişkin"
+   ],
+   "dogru": 1,
+   "aciklama": "Kan vermek için 18–65 yaş, 50 kg üstü ve sağlıklı olmak gerekir (s. 109–112)."
+  },
+  {
+   "id": "f3-22",
+   "konu": "u3k5",
+   "kavram": "Kan Bağışında 4 Adım",
+   "tur": "bosluk",
+   "havuz": [
+    "ameliyat",
+    "nakil"
+   ],
+   "cumleler": [
+    {
+     "c": "Kan bağışında ilk adım ___ işlemidir.",
+     "cevap": "kayıt"
+    },
+    {
+     "c": "Kayıttan sonra doktor ___ yapılır.",
+     "cevap": "muayenesi"
+    },
+    {
+     "c": "Kan verdikten sonra ikram ve ___ adımı gelir.",
+     "cevap": "dinlenme"
+    }
+   ],
+   "aciklama": "Sıra: kayıt, muayene, kan alma, ikram ve dinlenme (s. 109–112)."
+  },
+  {
+   "id": "f3-23",
+   "konu": "u3k5",
+   "kavram": "Organ Nakli",
+   "tur": "dy",
+   "ifade": "Organ nakli için organ yalnızca yaşayan bir kişiden alınabilir.",
+   "dogru": false,
+   "duzeltme": "Organ canlı bir kişiden ya da yaşamını yitirmiş birinden alınabilir.",
+   "aciklama": "Organ, canlı kişiden ya da yaşamını yitirmiş birinden alınabilir (s. 109–112)."
+  },
+  {
+   "id": "f3-24",
+   "konu": "u3k5",
+   "kavram": "Organ Bağışının Kuralları",
+   "tur": "secim",
+   "soru": "Bağışlanan organlar ihtiyaç sahiplerine verilirken önce neye bakılır?",
+   "secenekler": [
+    "Hastanın maddi durumuna",
+    "Kan ve doku uyumuna",
+    "Hastanın cinsiyetine",
+    "Hastanın yaşadığı şehre"
+   ],
+   "dogru": 1,
+   "aciklama": "Önce kan ve doku uyumuna, sonra aciliyete bakılır (s. 109–112)."
+  },
+  {
+   "id": "f3-25",
+   "konu": "u3k5",
+   "kavram": "Toplumsal Dayanışma",
+   "tur": "secim",
+   "soru": "Kan ve organ bağışıyla ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "18 yaşından küçükler kan bağışı yapabilir.",
+    "Organ bağışı gönüllülük esasına dayanır.",
+    "Bağış, toplumsal dayanışmanın güzel bir örneğidir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "18 yaşından küçükler kan veremez. Bağış gönüllüdür ve yardımlaşmadır (s. 109–112)."
+  },
+  {
+   "id": "f3-26",
+   "konu": "u3k6",
+   "kavram": "Düzenli Uyku",
+   "tur": "secim",
+   "soru": "Çocukların dolaşım sistemi sağlığı için günde kaç saat uyuması gerekir?",
+   "secenekler": [
+    "4–5 saat",
+    "5–6 saat",
+    "8–10 saat",
+    "12–14 saat"
+   ],
+   "dogru": 2,
+   "aciklama": "Çocuklar 8–10, yetişkinler 7–9 saat uyumalıdır (s. 113–116)."
+  },
+  {
+   "id": "f3-27",
+   "konu": "u3k6",
+   "kavram": "Dengeli Beslenme",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi sağlıklı bir yağdır?",
+   "secenekler": [
+    "Zeytinyağı",
+    "Kızartma yağı",
+    "Margarin",
+    "Hazır gıda yağı"
+   ],
+   "dogru": 0,
+   "aciklama": "Zeytinyağı, ceviz yağı ve fındık yağı sağlıklı yağlardır (s. 113–116)."
+  },
+  {
+   "id": "f3-28",
+   "konu": "u3k6",
+   "kavram": "Spor ve Sosyal Faaliyetler",
+   "tur": "dy",
+   "ifade": "Düzenli egzersiz kan dolaşımını yavaşlatır.",
+   "dogru": false,
+   "duzeltme": "Spor kanın vücutta hızlı dolaşmasını sağlar.",
+   "aciklama": "Spor yapınca kan hızlı dolaşır, organlara daha çok oksijen gider (s. 113–116)."
+  },
+  {
+   "id": "f3-29",
+   "konu": "u3k6",
+   "kavram": "Yağlı, Tuzlu ve Hazır Gıdalar",
+   "tur": "secim",
+   "soru": "Mehmet çok yağlı, tuzlu yiyor ve az hareket ediyor. Doktor ona hangisini önermez?",
+   "secenekler": [
+    "Bol su içmesini",
+    "Az tuzlu yemesini",
+    "Spor yapmasını",
+    "Hazır gıdaları artırmasını"
+   ],
+   "dogru": 3,
+   "aciklama": "Doktor su, az yağ, az tuz ve spor önerdi. Hazır gıda zararlıdır (s. 113–116)."
+  },
+  {
+   "id": "f3-30",
+   "konu": "u3k6",
+   "kavram": "Uzun Ekran Süresi",
+   "tur": "kisa",
+   "soru": "Uzun süre ekran başında kalmak hangi durumu doğurarak kalbe zarar verir?",
+   "yanit": "hareketsizlik",
+   "kabul": [
+    "hareketsiz kalmak",
+    "hareketsiz"
+   ],
+   "aciklama": "Ekran hareketsizliğe yol açar. Ara ara kısa yürüyüşler yapmalıyız (s. 113–116)."
+  },
+  {
+   "id": "f3-31",
+   "konu": "u3k7",
+   "kavram": "Solunum Sistemi",
+   "tur": "secim",
+   "soru": "Havanın solunum sisteminde izlediği yol hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "Burun → gırtlak → yutak → bronş → soluk borusu",
+    "Burun → yutak → gırtlak → soluk borusu → bronş → alveol",
+    "Ağız → yemek borusu → bronş → alveol",
+    "Burun → soluk borusu → yutak → alveol → bronş"
+   ],
+   "dogru": 1,
+   "aciklama": "Hava burun, yutak, gırtlak, soluk borusu, bronş ve alveol yolunu izler (s. 117–122)."
+  },
+  {
+   "id": "f3-32",
+   "konu": "u3k7",
+   "kavram": "Burun",
+   "tur": "dytablo",
+   "soru": "Burunla ilgili ifadeler için D ya da Y seç.",
+   "ifadeler": [
+    {
+     "s": "Mukus sıvısı kuru havayı nemlendirir.",
+     "d": true
+    },
+    {
+     "s": "Burundaki kıllar toz ve mikropları tutar.",
+     "d": true
+    },
+    {
+     "s": "Ses telleri burnun içindedir.",
+     "d": false
+    }
+   ],
+   "aciklama": "Burun havayı nemlendirir, ısıtır, temizler. Ses telleri gırtlaktadır (s. 117–122)."
+  },
+  {
+   "id": "f3-33",
+   "konu": "u3k7",
+   "kavram": "Akciğerler ve Alveoller",
+   "tur": "kisa",
+   "soru": "Akciğerde oksijenin kana geçtiği hava keselerine ne ad verilir?",
+   "yanit": "alveol",
+   "kabul": [
+    "alveoller"
+   ],
+   "aciklama": "Gaz değişimi alveollerde olur (s. 117–122)."
+  },
+  {
+   "id": "f3-34",
+   "konu": "u3k7",
+   "kavram": "Soluk Alma ve Verme",
+   "tur": "secim",
+   "soru": "Soluk alırken aşağıdakilerden hangisi olur?",
+   "secenekler": [
+    "Diyafram kasılıp düzleşir.",
+    "Göğüs boşluğu daralır.",
+    "Diyafram gevşeyip kubbeleşir.",
+    "Akciğerlerdeki hava dışarı atılır."
+   ],
+   "dogru": 0,
+   "aciklama": "Diyafram kasılınca soluk alırız, gevşeyince veririz (s. 117–122)."
+  },
+  {
+   "id": "f3-35",
+   "konu": "u3k7",
+   "kavram": "Soluk Borusu ve Bronşlar",
+   "tur": "bosluk",
+   "havuz": [
+    "kalp",
+    "mide"
+   ],
+   "cumleler": [
+    {
+     "c": "Ağaç benzetmesinde ağacın gövdesi ___ borusuna benzer.",
+     "cevap": "soluk"
+    },
+    {
+     "c": "Dallar ___ benzer.",
+     "cevap": "bronşlara"
+    },
+    {
+     "c": "Yapraklar ___ benzer.",
+     "cevap": "alveollere"
+    }
+   ],
+   "aciklama": "Gövde soluk borusu, dallar bronşlar, yapraklar alveollerdir (s. 117–122)."
+  },
+  {
+   "id": "f3-36",
+   "konu": "u3k8",
+   "kavram": "Yeşilay",
+   "tur": "secim",
+   "soru": "Yeşilay ile ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "İlk adı Hilâl-i Ahdar'dır.",
+    "Her yıl 1–7 Mart Yeşilay Haftası'dır.",
+    "Teknoloji bağımlılığı alanında da çalışır."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Üçü de doğru. Yeşilay tütün, teknoloji ve kumar bağımlılığıyla çalışır (s. 123–128)."
+  },
+  {
+   "id": "f3-37",
+   "konu": "u3k8",
+   "kavram": "Destek Hatları",
+   "tur": "kisa",
+   "soru": "Sigarayı bırakmak isteyenlerin arayabileceği danışma hattının numarası kaçtır?",
+   "yanit": "171",
+   "sayi": true,
+   "aciklama": "ALO 171 Sigara Bırakma Danışma Hattı'dır (s. 123–128)."
+  },
+  {
+   "id": "f3-38",
+   "konu": "u3k8",
+   "kavram": "Havalandırma ve Maske",
+   "tur": "secim",
+   "soru": "Hangisi solunum sistemi sağlığı için doğru bir davranış değildir?",
+   "secenekler": [
+    "Kapalı odayı havalandırmak",
+    "Tozlu ortamda maske takmak",
+    "Temiz havada yürümek",
+    "Kapalı ve dumanlı ortamda uzun süre kalmak"
+   ],
+   "dogru": 3,
+   "aciklama": "Kirli ve dumanlı ortamlardan uzak durmalıyız (s. 123–128)."
+  },
+  {
+   "id": "f3-39",
+   "konu": "u3k8",
+   "kavram": "Bağımlılık",
+   "tur": "dy",
+   "ifade": "Tütün ürünleri yalnızca solunum sistemine zarar verir.",
+   "dogru": false,
+   "duzeltme": "Bağımlılık yapıcı maddeler solunum ve dolaşım sistemine, ilişkilere de zarar verir.",
+   "aciklama": "Bağımlılık hem solunuma hem dolaşıma hem de ilişkilere zarar verir (s. 123–128)."
+  },
+  {
+   "id": "f3-40",
+   "konu": "u3k8",
+   "kavram": "Spor ve Temiz Hava",
+   "tur": "secim",
+   "soru": "Spor yapmak solunum sistemi için neden faydalıdır?",
+   "secenekler": [
+    "Akciğerleri ve solunum kaslarını güçlendirir.",
+    "Nefes almayı durdurur.",
+    "Akciğerleri küçültür.",
+    "Diyaframı ortadan kaldırır."
+   ],
+   "dogru": 0,
+   "aciklama": "Spor nefes ihtiyacını artırır, bu da akciğerleri güçlendirir (s. 123–128)."
+  },
+  {
+   "id": "f3-41",
+   "konu": "u3k9",
+   "kavram": "Boşaltım Sistemi",
+   "tur": "secim",
+   "soru": "İdrarın vücuttaki yolu hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "Böbrek → mesane → üreter → üretra",
+    "Mesane → böbrek → üretra → üreter",
+    "Böbrek → üreter → mesane → üretra",
+    "Üreter → böbrek → mesane → üretra"
+   ],
+   "dogru": 2,
+   "aciklama": "Böbrek idrarı yapar, üreter taşır, mesane biriktirir, üretra dışarı atar (s. 129–134)."
+  },
+  {
+   "id": "f3-42",
+   "konu": "u3k9",
+   "kavram": "Böbrekler",
+   "tur": "kisa",
+   "soru": "Kanı süzen (filtreleyen) organ hangisidir?",
+   "yanit": "böbrek",
+   "kabul": [
+    "böbrekler"
+   ],
+   "aciklama": "Böbrekler kanı süzer, atıklardan idrar oluşur (s. 129–134)."
+  },
+  {
+   "id": "f3-43",
+   "konu": "u3k9",
+   "kavram": "Mesane (İdrar Kesesi)",
+   "tur": "eslestir",
+   "soru": "Boşaltım organlarını görevleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Böbrek",
+     "sag": "Kanı süzer, idrarı oluşturur."
+    },
+    {
+     "sol": "Üreter",
+     "sag": "İdrarı böbrekten mesaneye taşır."
+    },
+    {
+     "sol": "Mesane",
+     "sag": "İdrarı biriktirir."
+    },
+    {
+     "sol": "Üretra",
+     "sag": "İdrarı vücut dışına atar."
+    }
+   ],
+   "aciklama": "Süz, taşı, biriktir, at: böbrek, üreter, mesane, üretra (s. 129–134)."
+  },
+  {
+   "id": "f3-44",
+   "konu": "u3k9",
+   "kavram": "Deri",
+   "tur": "dy",
+   "ifade": "Terleme, vücut sıcaklığını dengelemeye de yardım eder.",
+   "dogru": true,
+   "aciklama": "Ter su ve tuzu atar, vücut sıcaklığını dengeler (s. 129–134)."
+  },
+  {
+   "id": "f3-45",
+   "konu": "u3k9",
+   "kavram": "Diğer Yardımcı Organlar",
+   "tur": "secim",
+   "soru": "Sindirim sonucu oluşan zararlı maddeleri daha az zararlı hâle getiren organ hangisidir?",
+   "secenekler": [
+    "Deri",
+    "Karaciğer",
+    "Akciğer",
+    "Mesane"
+   ],
+   "dogru": 1,
+   "aciklama": "Karaciğer zararlı maddeleri daha az zararlı hâle getirir (s. 129–134)."
+  },
+  {
+   "id": "f3-46",
+   "konu": "u3k10",
+   "kavram": "Yeterli Su İçmek",
+   "tur": "secim",
+   "soru": "Hangisi yeterli su içmenin faydalarından biridir?",
+   "secenekler": [
+    "Böbrek taşı oluşumunu azaltır.",
+    "Böbrekleri tembelleştirir.",
+    "Vücut sıcaklığını bozar.",
+    "Ödem oluşturur."
+   ],
+   "dogru": 0,
+   "aciklama": "Yeterli su böbrek taşı ve idrar yolu enfeksiyonu riskini azaltır (s. 135–139)."
+  },
+  {
+   "id": "f3-47",
+   "konu": "u3k10",
+   "kavram": "Dengeli Beslenme",
+   "tur": "dy",
+   "ifade": "Tuz ve protein ağırlıklı beslenmek böbreklerin daha çok çalışmasına neden olur.",
+   "dogru": true,
+   "aciklama": "Çok tuz ve protein böbrekleri yorar. Ölçülü beslenmeliyiz (s. 135–139)."
+  },
+  {
+   "id": "f3-48",
+   "konu": "u3k10",
+   "kavram": "Teknoloji Bağımlılığı",
+   "tur": "secim",
+   "soru": "Ekran başında uzun süre hareketsiz kalmak böbrekleri nasıl etkiler?",
+   "secenekler": [
+    "Kan akış hızını yavaşlatarak",
+    "Böbrekleri büyüterek",
+    "Su ihtiyacını sıfırlayarak",
+    "Hiç etkilemez"
+   ],
+   "dogru": 0,
+   "aciklama": "Hareketsizlik kan akışını yavaşlatır, bu da boşaltımı olumsuz etkiler (s. 135–139)."
+  },
+  {
+   "id": "f3-49",
+   "konu": "u3k10",
+   "kavram": "Yeterli Su İçmek",
+   "tur": "dytablo",
+   "soru": "Boşaltım sistemi sağlığı için doğru olanlara D, yanlış olanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Susamadıkça su içmemek",
+     "d": false
+    },
+    {
+     "s": "Kişisel hijyene özen göstermek",
+     "d": true
+    },
+    {
+     "s": "Gereğinden çok fazla su içmek",
+     "d": false
+    },
+    {
+     "s": "Düzenli spor yapmak",
+     "d": true
+    }
+   ],
+   "aciklama": "Su ne az ne çok olmalı. Hijyen ve spor böbreği korur (s. 135–139)."
+  },
+  {
+   "id": "f3-50",
+   "konu": "u3k10",
+   "kavram": "Sosyal Faaliyetler",
+   "tur": "secim",
+   "soru": "Sosyal faaliyetler boşaltım sisteminin sağlığına nasıl katkı sağlar?",
+   "secenekler": [
+    "Stresten uzak tutar.",
+    "Su ihtiyacını azaltır.",
+    "Tuz ihtiyacını artırır.",
+    "Uyku süresini kısaltır."
+   ],
+   "dogru": 0,
+   "aciklama": "Sosyal faaliyetler stresi azaltır; stres vücuda zarar verir (s. 135–139)."
+  }
+ ]
+}

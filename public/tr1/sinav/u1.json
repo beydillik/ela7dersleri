@@ -1,0 +1,716 @@
+{
+ "unite": 1,
+ "ders": "tr1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "t1-01",
+   "konu": "u1k1",
+   "kavram": "Bağlam",
+   "tur": "secim",
+   "metin": [
+    "Deniz'in sınavdan önce eli ayağı titriyordu.",
+    "Öğretmeni gülümseyerek omzuna dokundu.",
+    "Deniz derin bir nefes aldı ve yüreği ferahladı."
+   ],
+   "soru": "Metindeki “yüreği ferahladı” sözü hangi anlamda kullanılmıştır?",
+   "secenekler": [
+    "Korkusu arttı.",
+    "İçi rahatladı.",
+    "Hastalandı.",
+    "Uykusu geldi."
+   ],
+   "dogru": 1,
+   "aciklama": "Öğretmenin dokunuşundan sonra derin nefes aldı. Bağlam, içinin rahatladığını söyler (s. 12–17)."
+  },
+  {
+   "id": "t1-02",
+   "konu": "u1k1",
+   "kavram": "Metindeki Anlam ve Sözlük Anlamı",
+   "tur": "secim",
+   "soru": "“Yüz” kelimesi hangi cümlede sayı anlamında kullanılmıştır?",
+   "secenekler": [
+    "Yüzünü soğuk suyla yıkadı.",
+    "Denizde yüz metre yüzdü.",
+    "Yüzü güneşten kızarmıştı.",
+    "Bize güler yüzle baktı."
+   ],
+   "dogru": 1,
+   "aciklama": "“Yüz metre” bir sayıdır. Kelimenin anlamını cümle seçer (s. 12–17)."
+  },
+  {
+   "id": "t1-03",
+   "konu": "u1k1",
+   "kavram": "Tahmin Et, Sözlükle Kontrol Et",
+   "tur": "dy",
+   "ifade": "Bilmediğimiz bir kelimenin anlamını önce bağlamdan tahmin edip sonra sözlükten kontrol etmeliyiz.",
+   "dogru": true,
+   "aciklama": "Önce tahmin, sonra sözlük (s. 12–17)."
+  },
+  {
+   "id": "t1-04",
+   "konu": "u1k1",
+   "kavram": "Kelime Grubu",
+   "tur": "secim",
+   "soru": "“Sınavı kazanmak için ter döktü.” cümlesinde “ter dökmek” ne anlama gelir?",
+   "secenekler": [
+    "Çok sıcaklamak",
+    "Çok emek vermek",
+    "Koşmak",
+    "Hastalanmak"
+   ],
+   "dogru": 1,
+   "aciklama": "Kelime grubu birlikte anlam verir: ter dökmek, çok çalışmaktır (s. 12–17)."
+  },
+  {
+   "id": "t1-05",
+   "konu": "u1k1",
+   "kavram": "Anahtar Kelime",
+   "tur": "secim",
+   "metin": [
+    "Arılar çiçekten çiçeğe konarak polen taşır.",
+    "Bu sayede bitkiler tohum ve meyve verir.",
+    "Arılar azalırsa sofralarımızdaki meyve de azalır."
+   ],
+   "soru": "Bu metnin anahtar kelimeleri hangileridir?",
+   "secenekler": [
+    "sofra, tohum",
+    "arı, polen, meyve",
+    "çiçek, renk",
+    "bitki, su"
+   ],
+   "dogru": 1,
+   "aciklama": "Metin arıların polen taşımasını ve meyveyi anlatıyor. Anahtar kelimeler bunlar (s. 12–17)."
+  },
+  {
+   "id": "t1-06",
+   "konu": "u1k2",
+   "kavram": "Serim",
+   "tur": "secim",
+   "soru": "Hikâyede kişilerin, yerin ve zamanın tanıtıldığı bölüm hangisidir?",
+   "secenekler": [
+    "Düğüm",
+    "Çözüm",
+    "Serim",
+    "Ana fikir"
+   ],
+   "dogru": 2,
+   "aciklama": "Serim giriştir: kim, nerede, ne zaman (s. 12–14, 51–57)."
+  },
+  {
+   "id": "t1-07",
+   "konu": "u1k2",
+   "kavram": "Düğüm",
+   "tur": "eslestir",
+   "soru": "Hikâyenin bölümlerini açıklamalarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Serim",
+     "sag": "Kişiler, yer ve zaman tanıtılır."
+    },
+    {
+     "sol": "Düğüm",
+     "sag": "Bir sorun çıkar, merak artar."
+    },
+    {
+     "sol": "Çözüm",
+     "sag": "Sorun bir sonuca bağlanır."
+    }
+   ],
+   "aciklama": "Giriş serim, gelişme düğüm, sonuç çözümdür (s. 12–14, 51–57)."
+  },
+  {
+   "id": "t1-08",
+   "konu": "u1k2",
+   "kavram": "Karakterin Özellikleri",
+   "tur": "secim",
+   "metin": [
+    "Efe takımdaki herkesin topa dokunmasını istiyordu.",
+    "Gol atabilecekken topu arkadaşına pas verdi.",
+    "Maçtan sonra da malzemeleri toplamaya ilk o koştu."
+   ],
+   "soru": "Metne göre Efe'nin hangi özelliği vardır?",
+   "secenekler": [
+    "Bencil",
+    "Paylaşımcı ve yardımsever",
+    "Tembel",
+    "Korkak"
+   ],
+   "dogru": 1,
+   "aciklama": "Pas vermesi ve malzeme toplaması onun paylaşımcı olduğunu gösterir (s. 12–14, 51–57)."
+  },
+  {
+   "id": "t1-09",
+   "konu": "u1k2",
+   "kavram": "Bakış Açısı",
+   "tur": "dy",
+   "ifade": "Jonathan'ın anne ve babası için önemli olan uçmayı öğrenmekti.",
+   "dogru": false,
+   "duzeltme": "Anne ve babası için önemli olan yiyecek bulmak ve sağlıklı kalmaktı.",
+   "aciklama": "Aynı olaya herkes farklı bakar. Uçmak Jonathan için önemliydi (s. 12–14, 51–57)."
+  },
+  {
+   "id": "t1-10",
+   "konu": "u1k2",
+   "kavram": "Bölümler Arası Bağlantı",
+   "tur": "secim",
+   "soru": "İyi bir hikâyede bölümler arasındaki bağ için hangisi doğrudur?",
+   "secenekler": [
+    "Olaylar arasında kopukluk olmalıdır.",
+    "Kişiler bölümden bölüme değişmelidir.",
+    "Olaylar sebep-sonuçla birbirine bağlanmalıdır.",
+    "Her bölüm farklı bir dille yazılmalıdır."
+   ],
+   "dogru": 2,
+   "aciklama": "Her olay bir öncekinin sonucu gibi akmalı. Okur “Bu nereden çıktı?” dememeli (s. 12–14, 51–57)."
+  },
+  {
+   "id": "t1-11",
+   "konu": "u1k3",
+   "kavram": "Konu",
+   "tur": "secim",
+   "metin": [
+    "Deprem anında masanın altına girmeliyiz.",
+    "Evde bir deprem çantası hazır bulunmalıdır.",
+    "Ailece toplanma alanını önceden öğrenmeliyiz."
+   ],
+   "soru": "Bu metnin konusu hangisidir?",
+   "secenekler": [
+    "Depreme hazırlık",
+    "Okul gezisi",
+    "Spor yapmak",
+    "Kitap okumak"
+   ],
+   "dogru": 0,
+   "aciklama": "Konu “Ne anlatılıyor?” sorusunun cevabıdır ve kısadır (s. 22–23, 44–46)."
+  },
+  {
+   "id": "t1-12",
+   "konu": "u1k3",
+   "kavram": "Ana Fikir",
+   "tur": "secim",
+   "metin": [
+    "Deniz bisiklet sürmeyi öğrenmek istiyordu.",
+    "İlk günlerde sık sık düştü, dizleri yaralandı.",
+    "Vazgeçmedi, her gün biraz daha denedi.",
+    "Bir ay sonra parkta rahatça bisiklet sürüyordu."
+   ],
+   "soru": "Bu metnin ana fikri hangisidir?",
+   "secenekler": [
+    "Bisiklet pahalı bir taşıttır.",
+    "Vazgeçmeden çalışan, sonunda başarır.",
+    "Parklar oyun alanıdır.",
+    "Düşmek tehlikelidir."
+   ],
+   "dogru": 1,
+   "aciklama": "Ana fikir yazarın vermek istediği mesajdır: vazgeçme (s. 22–23, 44–46)."
+  },
+  {
+   "id": "t1-13",
+   "konu": "u1k3",
+   "kavram": "Yardımcı Fikir",
+   "tur": "secim",
+   "soru": "Ana fikri “Spor yapmak sağlığımızı korur.” olan bir metinde hangisi yardımcı fikir olabilir?",
+   "secenekler": [
+    "Düzenli spor kalbi güçlendirir.",
+    "Bilgisayar oyunları eğlencelidir.",
+    "Kışın kar yağar.",
+    "Kitaplar bilgi verir."
+   ],
+   "dogru": 0,
+   "aciklama": "Yardımcı fikir ana fikri destekler. Kalbi güçlendirmek sağlığı korumaktır (s. 22–23, 44–46)."
+  },
+  {
+   "id": "t1-14",
+   "konu": "u1k3",
+   "kavram": "Önemli ve Önemsiz Bilgi",
+   "tur": "dy",
+   "ifade": "Özet yazarken metindeki küçük ayrıntıları ve kendi yorumumuzu da eklemeliyiz.",
+   "dogru": false,
+   "duzeltme": "Özet; önemli bilgilerle, olay sırasını bozmadan ve kendi cümlelerimizle yazılır. Yorum katılmaz.",
+   "aciklama": "Özet kısa, sıralı ve yorumsuz olmalıdır (s. 22–23, 44–46)."
+  },
+  {
+   "id": "t1-15",
+   "konu": "u1k3",
+   "kavram": "Başlık",
+   "tur": "secim",
+   "metin": [
+    "Ormanda kaybolan köpek Pamuk'u bütün mahalle aradı.",
+    "Çocuklar afiş astı, büyükler sokakları dolaştı.",
+    "Akşam Pamuk bulununca herkes sevindi."
+   ],
+   "soru": "Bu metne en uygun başlık hangisidir?",
+   "secenekler": [
+    "Ormandaki Ağaçlar",
+    "Mahallece Pamuk'u Aradık",
+    "Kış Geldi",
+    "Afiş Nasıl Yapılır?"
+   ],
+   "dogru": 1,
+   "aciklama": "Başlık metnin konusunu haber vermeli. Metin Pamuk'u aramayı anlatıyor (s. 22–23, 44–46)."
+  },
+  {
+   "id": "t1-16",
+   "konu": "u1k4",
+   "kavram": "Tür ve Takımları Ayırma",
+   "tur": "secim",
+   "soru": "Hangi cümlede noktalı virgül tür ve takımları ayırmak için kullanılmıştır?",
+   "secenekler": [
+    "Annem; Ali, Can ve Ece'yi çağırdı.",
+    "Manavdan elma, armut; kasaptan kıyma, tavuk aldık.",
+    "Çok yorulmuştu; erkenden uyudu.",
+    "Sabah oldu; güneş doğdu."
+   ],
+   "dogru": 1,
+   "aciklama": "Virgülle sıralanmış iki grup var. Grupların arasına noktalı virgül gelir (s. 49)."
+  },
+  {
+   "id": "t1-17",
+   "konu": "u1k4",
+   "kavram": "Özneden Sonra",
+   "tur": "secim",
+   "soru": "“Öğretmenimiz ___ Ece, Can ve Mert'i tebrik etti.” Boşluğa hangi işaret gelmelidir?",
+   "secenekler": [
+    "Nokta (.)",
+    "Soru işareti (?)",
+    "Noktalı virgül (;)",
+    "Üç nokta (…)"
+   ],
+   "dogru": 2,
+   "aciklama": "Sıralanan kelimeler özneyle karışmasın diye özneden sonra noktalı virgül konabilir (s. 49)."
+  },
+  {
+   "id": "t1-18",
+   "konu": "u1k4",
+   "kavram": "Noktalı Virgül Nedir?",
+   "tur": "dy",
+   "ifade": "Noktalı virgülden sonra gelen kelime (özel isim değilse) büyük harfle başlar.",
+   "dogru": false,
+   "duzeltme": "Noktalı virgül cümleyi bitirmez; ondan sonra küçük harfle devam edilir.",
+   "aciklama": "Noktalı virgül noktadan zayıftır, cümle bitmez. Küçük harfle devam edilir (s. 49)."
+  },
+  {
+   "id": "t1-19",
+   "konu": "u1k4",
+   "kavram": "Virgül mü, Noktalı Virgül mü?",
+   "tur": "dytablo",
+   "soru": "Noktalama doğruysa D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "Elma, armut, ayva aldım.",
+     "d": true
+    },
+    {
+     "s": "Elma; armut; ayva aldım.",
+     "d": false
+    },
+    {
+     "s": "Seçil doğa, tarih; Berke su altı, uzay belgeseli izledi.",
+     "d": true
+    }
+   ],
+   "aciklama": "Tek grup varsa virgül yeter. İki grup varsa aralarına noktalı virgül gelir (s. 49)."
+  },
+  {
+   "id": "t1-20",
+   "konu": "u1k4",
+   "kavram": "Sıralı Cümleleri Ayırma",
+   "tur": "secim",
+   "soru": "Hangi cümlede noktalı virgül, ögeleri arasında virgül olan sıralı cümleleri ayırmıştır?",
+   "secenekler": [
+    "Annem pazardan domates, biber aldı; babam salata yaptı.",
+    "Sınıf başkanı; Ayşe, Zeynep ve Mert'i seçti.",
+    "Kitap, defter; kalem, silgi.",
+    "Bugün hava güzel."
+   ],
+   "dogru": 0,
+   "aciklama": "İki yüklem var: aldı, yaptı. İlk cümlede virgül olduğu için arada noktalı virgül var (s. 49)."
+  },
+  {
+   "id": "t1-21",
+   "konu": "u1k5",
+   "kavram": "İkilemeler Ayrı Yazılır",
+   "tur": "secim",
+   "soru": "Hangi cümlede ikilemenin yazımı doğrudur?",
+   "secenekler": [
+    "Çolukçocuk parka gittik.",
+    "Kar gündengüne eriyor.",
+    "Omuz omuza yürüdük.",
+    "Yavaş-yavaş yürüdü."
+   ],
+   "dogru": 2,
+   "aciklama": "İkilemeler ayrı yazılır; araya çizgi konmaz: omuz omuza (s. 34–35)."
+  },
+  {
+   "id": "t1-22",
+   "konu": "u1k5",
+   "kavram": "Araya İşaret Konmaz",
+   "tur": "dy",
+   "ifade": "“Dostlukta iyi-kötü her anı paylaşmalıyız.” cümlesinde ikilemenin yazımı doğrudur.",
+   "dogru": false,
+   "duzeltme": "İkilemenin arasına kısa çizgi konmaz: iyi kötü.",
+   "aciklama": "İkilemenin arasına virgül ya da çizgi konmaz (s. 34–35)."
+  },
+  {
+   "id": "t1-23",
+   "konu": "u1k5",
+   "kavram": "Eksik Bırakılan Cevap",
+   "tur": "eslestir",
+   "soru": "Üç noktanın kullanıldığı cümleleri görevleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "— Ödevini yaptın mı? — Şey…",
+     "sag": "Eksik bırakılan cevap"
+    },
+    {
+     "sol": "Barış… Barış!..",
+     "sag": "Seslenmeyi pekiştirme"
+    },
+    {
+     "sol": "Kapıyı yavaşça açtı ve…",
+     "sag": "Sözü okuyucuya bırakma"
+    }
+   ],
+   "aciklama": "Üç noktanın üç görevi: eksik cevap, pekiştirme, sözü okura bırakma (s. 34–35)."
+  },
+  {
+   "id": "t1-24",
+   "konu": "u1k5",
+   "kavram": "Ünlemden Sonra İki Nokta",
+   "tur": "secim",
+   "soru": "Hangisinin noktalaması doğrudur?",
+   "secenekler": [
+    "Eyvah!...",
+    "Gerçekten mi?...",
+    "Barış!..",
+    "Of!...."
+   ],
+   "dogru": 2,
+   "aciklama": "Ünlem ve soru işaretinden sonra iki nokta yeter: !.. ve ?.. (s. 34–35)."
+  },
+  {
+   "id": "t1-25",
+   "konu": "u1k5",
+   "kavram": "İkileme",
+   "tur": "kisa",
+   "soru": "“Yavaş yavaş, tekrar tekrar, iyi kötü” gibi anlamı güçlendirmek için yan yana kullanılan kelimelere ne denir?",
+   "yanit": "ikileme",
+   "kabul": [
+    "ikilemeler"
+   ],
+   "aciklama": "İki kelime yan yana, anlam güçlenir: ikileme (s. 34–35)."
+  },
+  {
+   "id": "t1-26",
+   "konu": "u1k6",
+   "kavram": "Tanımlama",
+   "tur": "secim",
+   "soru": "“Kesir, bir bütünün eş parçalarını gösteren sayıdır.” cümlesinde hangi düşünceyi geliştirme yolu kullanılmıştır?",
+   "secenekler": [
+    "Tanımlama",
+    "Benzetme",
+    "Tanık gösterme",
+    "Sayısal veri"
+   ],
+   "dogru": 0,
+   "aciklama": "“Nedir?” sorusuna cevap veren, “-dir” ile biten cümle tanımdır (s. 30–32)."
+  },
+  {
+   "id": "t1-27",
+   "konu": "u1k6",
+   "kavram": "Benzetme",
+   "tur": "secim",
+   "soru": "“Hayat, tıpkı bir nehrin suyu gibi akıp gider.” cümlesinde hangi yol kullanılmıştır?",
+   "secenekler": [
+    "Örneklendirme",
+    "Karşılaştırma",
+    "Benzetme",
+    "Tanımlama"
+   ],
+   "dogru": 2,
+   "aciklama": "Ortak özellik ve “gibi” varsa benzetmedir (s. 30–32)."
+  },
+  {
+   "id": "t1-28",
+   "konu": "u1k6",
+   "kavram": "Sayısal Verilerden Yararlanma",
+   "tur": "secim",
+   "soru": "Hangi cümlede sayısal verilerden yararlanılmıştır?",
+   "secenekler": [
+    "Kitap okumak hayal gücünü geliştirir.",
+    "Okulumuzdaki öğrencilerin yüzde 70'i her gün kitap okuyor.",
+    "Kitap, insanın en iyi dostudur.",
+    "Atatürk “Okumak çok önemlidir.” der."
+   ],
+   "dogru": 1,
+   "aciklama": "Sayı ve yüzde varsa sayısal verilerden yararlanılmıştır (s. 30–32)."
+  },
+  {
+   "id": "t1-29",
+   "konu": "u1k6",
+   "kavram": "Tanık Gösterme",
+   "tur": "eslestir",
+   "soru": "Cümleleri düşünceyi geliştirme yollarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Heraklit, bir nehirde iki kez yıkanılamayacağını söyler.",
+     "sag": "Tanık gösterme"
+    },
+    {
+     "sol": "Meyveler, örneğin elma ve portakal, vitamin bakımından zengindir.",
+     "sag": "Örneklendirme"
+    },
+    {
+     "sol": "Kedi, köpeğe göre daha bağımsız bir hayvandır.",
+     "sag": "Karşılaştırma"
+    }
+   ],
+   "aciklama": "Ünlü sözü tanık, “örneğin” örneklendirme, “göre” karşılaştırmadır (s. 30–32)."
+  },
+  {
+   "id": "t1-30",
+   "konu": "u1k6",
+   "kavram": "Karşılaştırma",
+   "tur": "dy",
+   "ifade": "“Gençlikte çok görünen vakit, yaş ilerledikçe azalır.” cümlesinde karşılaştırma yapılmıştır.",
+   "dogru": true,
+   "aciklama": "Gençlik ile ileri yaş karşılaştırılıyor (s. 30–32)."
+  },
+  {
+   "id": "t1-31",
+   "konu": "u1k7",
+   "kavram": "Sebep ve Sonuç",
+   "tur": "secim",
+   "soru": "“Yağmur yağdığı için maç ertelendi.” cümlesinde sebep hangisidir?",
+   "secenekler": [
+    "Maçın ertelenmesi",
+    "Yağmurun yağması",
+    "Maçın oynanması",
+    "Seyircilerin gelmesi"
+   ],
+   "dogru": 1,
+   "aciklama": "“Neden?” diye sor: yağmur yağdığı için. Cevap sebeptir (s. 38–41)."
+  },
+  {
+   "id": "t1-32",
+   "konu": "u1k7",
+   "kavram": "İpucu İfadeleri",
+   "tur": "secim",
+   "soru": "“Servis geç geldi, ___ derse geç kaldık.” Boşluğa hangisi gelmelidir?",
+   "secenekler": [
+    "çünkü",
+    "bu yüzden",
+    "örneğin",
+    "gibi"
+   ],
+   "dogru": 1,
+   "aciklama": "Boşluktan sonra sonuç geliyor. Sonucu “bu yüzden” bağlar (s. 38–41)."
+  },
+  {
+   "id": "t1-33",
+   "konu": "u1k7",
+   "kavram": "Sebep-Sonuç Zinciri",
+   "tur": "secim",
+   "soru": "Hangisi bir sebep-sonuç zinciridir?",
+   "secenekler": [
+    "Elma, armut ve kiraz meyvedir.",
+    "Uyuyamadı, yorgun kalktı, derste dikkati dağıldı.",
+    "Kedi miyavlar, köpek havlar.",
+    "Bugün pazartesi."
+   ],
+   "dogru": 1,
+   "aciklama": "Her sonuç yeni bir sebep olmuş: uykusuzluk, yorgunluk, dikkatsizlik (s. 38–41)."
+  },
+  {
+   "id": "t1-34",
+   "konu": "u1k7",
+   "kavram": "İpucu İfadeleri",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "“çünkü” sebebi gösterir.",
+     "d": true
+    },
+    {
+     "s": "“bu yüzden” sebebi gösterir.",
+     "d": false
+    },
+    {
+     "s": "“-den dolayı” sebebi gösterir.",
+     "d": true
+    },
+    {
+     "s": "“sonuç olarak” sonucu gösterir.",
+     "d": true
+    }
+   ],
+   "aciklama": "Sebep: çünkü, -den dolayı. Sonuç: bu yüzden, sonuç olarak (s. 38–41)."
+  },
+  {
+   "id": "t1-35",
+   "konu": "u1k7",
+   "kavram": "Çok Sebep Bir Sonuç",
+   "tur": "secim",
+   "metin": [
+    "Selin her gün düzenli çalıştı.",
+    "Bilmediği konuları öğretmenine sordu.",
+    "Sınavdan önceki gece de erken uyudu.",
+    "Bu yüzden sınavdan yüksek not aldı."
+   ],
+   "soru": "Bu metin hangi sebep-sonuç şemasına uygundur?",
+   "secenekler": [
+    "Bir sebep, çok sonuç",
+    "Çok sebep, bir sonuç",
+    "Sebep-sonuç zinciri",
+    "Sebep-sonuç yok"
+   ],
+   "dogru": 1,
+   "aciklama": "Üç sebep tek bir sonuca götürüyor: yüksek not (s. 38–41)."
+  },
+  {
+   "id": "t1-36",
+   "konu": "u1k8",
+   "kavram": "Kişileştirme",
+   "tur": "secim",
+   "soru": "“Dağlar karlı başını göğe kaldırdı.” dizesinde hangi söz sanatı vardır?",
+   "secenekler": [
+    "Abartma",
+    "Kişileştirme",
+    "Konuşturma",
+    "Benzetme"
+   ],
+   "dogru": 1,
+   "aciklama": "Başını kaldırmak insana ait bir davranış. Dağlara verilmiş: kişileştirme (s. 47)."
+  },
+  {
+   "id": "t1-37",
+   "konu": "u1k8",
+   "kavram": "Abartma",
+   "tur": "secim",
+   "soru": "“Gözlerimden seller aktı.” dizesinde hangi söz sanatı vardır?",
+   "secenekler": [
+    "Abartma",
+    "Konuşturma",
+    "Kişileştirme",
+    "Tanık gösterme"
+   ],
+   "dogru": 0,
+   "aciklama": "Gözden sel akmaz. Gerçekte olamayacak kadar büyütülmüş: abartma (s. 47)."
+  },
+  {
+   "id": "t1-38",
+   "konu": "u1k8",
+   "kavram": "Konuşturma",
+   "tur": "dy",
+   "ifade": "Karınca, “Kış gelmeden yiyecek toplamalıyım.” dedi. Bu cümlede konuşturma vardır.",
+   "dogru": true,
+   "aciklama": "İnsan dışı bir varlık konuşuyorsa konuşturmadır (s. 47)."
+  },
+  {
+   "id": "t1-39",
+   "konu": "u1k8",
+   "kavram": "Dize ve Dörtlük",
+   "tur": "kisa",
+   "soru": "Altı dörtlükten oluşan bir şiir kaç dizedir?",
+   "yanit": "24",
+   "sayi": true,
+   "aciklama": "Bir dörtlük 4 dizedir. 6 × 4 = 24 (s. 47)."
+  },
+  {
+   "id": "t1-40",
+   "konu": "u1k8",
+   "kavram": "Uyak ve Redif",
+   "tur": "secim",
+   "soru": "“güller / bülbüller” sözcüklerinin sonundaki “-ler” eki için hangisi doğrudur?",
+   "secenekler": [
+    "Uyaktır.",
+    "Rediftir.",
+    "Hece ölçüsüdür.",
+    "Dörtlüktür."
+   ],
+   "dogru": 1,
+   "aciklama": "Dize sonunda tekrar eden aynı ek rediftir. Benzer ses uyaktır (s. 47)."
+  },
+  {
+   "id": "t1-41",
+   "konu": "u1k9",
+   "kavram": "İkna Paragrafı",
+   "tur": "secim",
+   "soru": "Hangisi bir ikna paragrafının konusu olabilir?",
+   "secenekler": [
+    "Ankara'nın nüfusu",
+    "Kedimin rengi",
+    "Annemi kampa gitmeme izin vermesi için ikna etmek",
+    "Suyun kaynama sıcaklığı"
+   ],
+   "dogru": 2,
+   "aciklama": "İkna paragrafı bir isteği ya da öneriyi kabul ettirmek için yazılır (s. 59–64)."
+  },
+  {
+   "id": "t1-42",
+   "konu": "u1k9",
+   "kavram": "Gerekçeler",
+   "tur": "secim",
+   "soru": "İkna paragrafında gerekçe vermenin amacı nedir?",
+   "secenekler": [
+    "İsteğin neden haklı olduğunu göstermek",
+    "Konuyu değiştirmek",
+    "Okuru güldürmek",
+    "Paragrafı uzatmak"
+   ],
+   "dogru": 0,
+   "aciklama": "Gerekçeler isteğin neden haklı olduğunu gösterir (s. 59–64)."
+  },
+  {
+   "id": "t1-43",
+   "konu": "u1k9",
+   "kavram": "Reddedilmeye Karşı Cevap",
+   "tur": "secim",
+   "soru": "“Derslerim aksar diye düşünebilirsin ama kurs haftada yalnızca üç saat.” cümlesi ikna paragrafının hangi bölümüdür?",
+   "secenekler": [
+    "İstek",
+    "Faydalar",
+    "Reddedilmeye karşı cevap",
+    "Başlık"
+   ],
+   "dogru": 2,
+   "aciklama": "Karşıdakinin endişesini tahmin edip cevap veriyor (s. 59–64)."
+  },
+  {
+   "id": "t1-44",
+   "konu": "u1k9",
+   "kavram": "Faydalar ve Önemi",
+   "tur": "bosluk",
+   "havuz": [
+    "başlık",
+    "özet"
+   ],
+   "cumleler": [
+    {
+     "c": "İkna paragrafının girişinde ___ açıkça söylenir.",
+     "cevap": "istek"
+    },
+    {
+     "c": "Ardından isteğin neden haklı olduğunu gösteren ___ verilir.",
+     "cevap": "gerekçeler"
+    },
+    {
+     "c": "Sonunda isteğin ___ anlatılır.",
+     "cevap": "faydaları"
+    }
+   ],
+   "aciklama": "Sıra: istek, gerekçeler, itiraza cevap, faydalar (s. 59–64)."
+  },
+  {
+   "id": "t1-45",
+   "konu": "u1k9",
+   "kavram": "Plan ve Taslak",
+   "tur": "dy",
+   "ifade": "İkna paragrafı planlama, taslak yazma, gözden geçirme ve paylaşma sırasıyla yazılır.",
+   "dogru": true,
+   "aciklama": "Planla, yaz, düzelt, paylaş (s. 59–64)."
+  }
+ ]
+}

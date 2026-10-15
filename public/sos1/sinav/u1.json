@@ -1,0 +1,469 @@
+{
+ "unite": 1,
+ "ders": "sos1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "s1-01",
+   "konu": "u1k1",
+   "kavram": "İletişim",
+   "tur": "secim",
+   "soru": "Duygu, düşünce, bilgi ve deneyimlerin karşılıklı olarak paylaşılmasına ne denir?",
+   "secenekler": [
+    "Kültür",
+    "İletişim",
+    "Empati",
+    "Dayanışma"
+   ],
+   "dogru": 1,
+   "aciklama": "Karşılıklı paylaşmak iletişimdir (s. 12–17)."
+  },
+  {
+   "id": "s1-02",
+   "konu": "u1k1",
+   "kavram": "Sözsüz İletişim",
+   "tur": "eslestir",
+   "soru": "Örnekleri iletişim türleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Arkadaşına telefonda “Günaydın!” demek",
+     "sag": "Sözlü iletişim"
+    },
+    {
+     "sol": "Öğretmenine e-posta göndermek",
+     "sag": "Yazılı iletişim"
+    },
+    {
+     "sol": "Özür dilerken göz teması kurmak",
+     "sag": "Sözsüz iletişim"
+    }
+   ],
+   "aciklama": "Konuşma sözlü, yazı yazılı, beden hareketi sözsüz iletişimdir (s. 12–17)."
+  },
+  {
+   "id": "s1-03",
+   "konu": "u1k1",
+   "kavram": "İleti",
+   "tur": "kisa",
+   "soru": "İletişimde karşı tarafa aktarılmak istenen duygu, düşünce veya bilgiye ne denir?",
+   "yanit": "ileti",
+   "kabul": [
+    "mesaj"
+   ],
+   "aciklama": "Aktarılan mesaja ileti denir (s. 12–17)."
+  },
+  {
+   "id": "s1-04",
+   "konu": "u1k1",
+   "kavram": "Kitle İletişim Araçları",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi bir kitle iletişim aracı değildir?",
+   "secenekler": [
+    "Televizyon",
+    "Gazete",
+    "Radyo",
+    "Okul defteri"
+   ],
+   "dogru": 3,
+   "aciklama": "Kitle iletişim araçları geniş kitlelere hızla ulaşır. Defter öyle değildir (s. 12–17)."
+  },
+  {
+   "id": "s1-05",
+   "konu": "u1k1",
+   "kavram": "Birlikte Yaşama",
+   "tur": "dy",
+   "ifade": "Kitap, toplumda birlikte yaşamayı yapboz parçalarının bir bütün oluşturmasına benzetir.",
+   "dogru": true,
+   "aciklama": "Toplum, yapboz parçaları gibi bir bütündür (s. 12–17)."
+  },
+  {
+   "id": "s1-06",
+   "konu": "u1k2",
+   "kavram": "Ben Dili",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi ben dili ile kurulmuş bir cümledir?",
+   "secenekler": [
+    "Sen hep dağınıksın!",
+    "Odanın dağınık olmasından rahatsız oluyorum.",
+    "Beni hiç dinlemiyorsun!",
+    "Sen tembelin tekisin."
+   ],
+   "dogru": 1,
+   "aciklama": "Ben dili suçlamaz; davranışı ve kendi duygunu anlatır (s. 18–21)."
+  },
+  {
+   "id": "s1-07",
+   "konu": "u1k2",
+   "kavram": "Empati",
+   "tur": "kisa",
+   "soru": "Kendini karşındaki kişinin yerine koyup olaylara onun gözünden bakmaya ne denir?",
+   "yanit": "empati",
+   "aciklama": "Onun gözünden bakmak empatidir (s. 18–21)."
+  },
+  {
+   "id": "s1-08",
+   "konu": "u1k2",
+   "kavram": "Etkin Dinleme",
+   "tur": "dytablo",
+   "soru": "Etkin dinlemenin göstergesi olanlara D, olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Konuşan kişiyle göz teması kurmak",
+     "d": true
+    },
+    {
+     "s": "Arkadaşının sözünü kesmek",
+     "d": false
+    },
+    {
+     "s": "Gerektiğinde “Seni anlıyorum.” demek",
+     "d": true
+    },
+    {
+     "s": "Dinlerken telefona bakmak",
+     "d": false
+    }
+   ],
+   "aciklama": "Etkin dinlemede göz teması kurulur, söz kesilmez (s. 18–21)."
+  },
+  {
+   "id": "s1-09",
+   "konu": "u1k2",
+   "kavram": "Beden Dili",
+   "tur": "secim",
+   "soru": "Beden diliyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Yüzdeki ifadelere mimik denir.",
+    "El, kol ve baş hareketlerine jest denir.",
+    "Gülümsemek olumsuz beden dilidir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Gülümsemek, göz teması ve baş sallamak olumlu beden dilidir (s. 18–21)."
+  },
+  {
+   "id": "s1-10",
+   "konu": "u1k2",
+   "kavram": "Farklılıklara Saygı",
+   "tur": "secim",
+   "soru": "Sınıfa İspanya'dan gelen Maria'ya arkadaşları Türkçe öğretti, Maria da kendi kültürünü anlattı. Bu durum en çok hangisine örnektir?",
+   "secenekler": [
+    "Farklılıklara saygı",
+    "Sen dili",
+    "İletişim engeli",
+    "Kitle iletişimi"
+   ],
+   "dogru": 0,
+   "aciklama": "Farklılığı zenginlik olarak görmek farklılıklara saygıdır (s. 18–21)."
+  },
+  {
+   "id": "s1-11",
+   "konu": "u1k3",
+   "kavram": "Sen Dili",
+   "tur": "secim",
+   "soru": "“Beni hiç dinlemiyorsun!” cümlesi hangisine örnektir?",
+   "secenekler": [
+    "Ben dili",
+    "Sen dili",
+    "Empati",
+    "Etkin dinleme"
+   ],
+   "dogru": 1,
+   "aciklama": "Sen dili karşıdakini suçlar ve kişiye odaklanır (s. 22–29)."
+  },
+  {
+   "id": "s1-12",
+   "konu": "u1k3",
+   "kavram": "Günlük Hayatta Engeller",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi etkili iletişimi bozan bir davranış değildir?",
+   "secenekler": [
+    "Sürekli telefonu kontrol etmek",
+    "Sözü kesmek",
+    "Alaycı konuşmak",
+    "Göz teması kurmak"
+   ],
+   "dogru": 3,
+   "aciklama": "Göz teması iletişimi güçlendirir. Telefon, söz kesmek, alay bozar (s. 22–29)."
+  },
+  {
+   "id": "s1-13",
+   "konu": "u1k3",
+   "kavram": "Dijital Ortamda Engeller",
+   "tur": "dy",
+   "ifade": "Dijital ortamda net olmayan mesajlar iletişimi engelleyebilir.",
+   "dogru": true,
+   "aciklama": "Dijitalde mesajın net olmalı; bağlantı kopması da engeldir (s. 22–29)."
+  },
+  {
+   "id": "s1-14",
+   "konu": "u1k3",
+   "kavram": "Barışçıl İletişim",
+   "tur": "secim",
+   "soru": "Kardeşi Ali'nin defterini yanlışlıkla yırttı. Barışçıl iletişime uygun söz hangisidir?",
+   "secenekler": [
+    "Sen hiçbir şeye dikkat etmiyorsun!",
+    "Bir dahaki sefere daha dikkatli ol, olur mu?",
+    "Bir daha odama girme!",
+    "Hep böylesin zaten."
+   ],
+   "dogru": 1,
+   "aciklama": "Barışçıl iletişimde kızmak yerine sevgi ve saygıyla konuşulur (s. 22–29)."
+  },
+  {
+   "id": "s1-15",
+   "konu": "u1k3",
+   "kavram": "İletişim Engeli",
+   "tur": "bosluk",
+   "havuz": [
+    "empati",
+    "ileti"
+   ],
+   "cumleler": [
+    {
+     "c": "Mesajın doğru aktarılmasını zorlaştıran her şeye iletişim ___ denir.",
+     "cevap": "engeli"
+    },
+    {
+     "c": "Karşıdakini suçlayan konuşma biçimine ___ dili denir.",
+     "cevap": "sen"
+    },
+    {
+     "c": "Sabırsızlık ve dikkatsizlik iletişim ___ yol açabilir.",
+     "cevap": "çatışmalarına"
+    }
+   ],
+   "aciklama": "Engeller ve sen dili iletişimi bozar, çatışma doğurur (s. 22–29)."
+  },
+  {
+   "id": "s1-16",
+   "konu": "u1k4",
+   "kavram": "Temel İnsan Hakları",
+   "tur": "secim",
+   "soru": "Temel insan haklarıyla ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "İnsan bu haklara doğduğu andan itibaren sahiptir.",
+    "Bu haklar devredilemez.",
+    "Bu haklardan istenirse vazgeçilebilir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Temel haklar doğuştan gelir; devredilemez ve vazgeçilemez (s. 30–39)."
+  },
+  {
+   "id": "s1-17",
+   "konu": "u1k4",
+   "kavram": "Kanun Önünde Eşitlik",
+   "tur": "kisa",
+   "soru": "Herkesin kanun önünde eşit olduğunu söyleyen madde Anayasa'nın kaçıncı maddesidir?",
+   "yanit": "10",
+   "sayi": true,
+   "aciklama": "Anayasa'nın 10. maddesi kanun önünde eşitliği düzenler (s. 30–39)."
+  },
+  {
+   "id": "s1-18",
+   "konu": "u1k4",
+   "kavram": "Erişilebilirlik Düzenlemeleri",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi bir erişilebilirlik düzenlemesi değildir?",
+   "secenekler": [
+    "Rampa",
+    "Asansör",
+    "Kaldırımdaki takip şeridi",
+    "Basamaklı giriş kapısı"
+   ],
+   "dogru": 3,
+   "aciklama": "Rampa, asansör ve takip şeridi hareketi kolaylaştırır. Basamak zorlaştırır (s. 30–39)."
+  },
+  {
+   "id": "s1-19",
+   "konu": "u1k4",
+   "kavram": "Fırsat Eşitliği",
+   "tur": "dy",
+   "ifade": "Kız ve erkek öğrencilerin aynı şartlarda eğitim görmesi fırsat eşitliğine örnektir.",
+   "dogru": true,
+   "aciklama": "Kim olursa olsun herkese aynı fırsat: fırsat eşitliği (s. 30–39)."
+  },
+  {
+   "id": "s1-20",
+   "konu": "u1k4",
+   "kavram": "Sevgi, Şefkat, Merhamet",
+   "tur": "eslestir",
+   "soru": "Değerleri açıklamalarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Sevgi",
+     "sag": "İnsanları olduğu gibi kabul etmek"
+    },
+    {
+     "sol": "Şefkat",
+     "sag": "İhtiyaç duyulan anda destek olmak"
+    },
+    {
+     "sol": "Merhamet",
+     "sag": "Başkalarının zorluklarını anlayıp duyarlı davranmak"
+    }
+   ],
+   "aciklama": "Kabul et, destek ol, anla (s. 30–39)."
+  },
+  {
+   "id": "s1-21",
+   "konu": "u1k5",
+   "kavram": "Millî Mücadele",
+   "tur": "secim",
+   "soru": "Mustafa Kemal Millî Mücadele'yi başlatmak için hangi tarihte Samsun'a çıktı?",
+   "secenekler": [
+    "23 Nisan 1920",
+    "19 Mayıs 1919",
+    "29 Ekim 1923",
+    "30 Ağustos 1922"
+   ],
+   "dogru": 1,
+   "aciklama": "19 Mayıs 1919'da Samsun'a çıkıldı (s. 40–45)."
+  },
+  {
+   "id": "s1-22",
+   "konu": "u1k5",
+   "kavram": "Tekâlif-i Millîye Emirleri",
+   "tur": "secim",
+   "soru": "Millî Mücadele'de halkın yiyecek, giyecek ve araçlarını orduyla paylaşmasını sağlayan düzenleme hangisidir?",
+   "secenekler": [
+    "Tekâlif-i Millîye Emirleri",
+    "Orhun Yazıtları",
+    "Anayasa'nın 10. maddesi",
+    "Mavi Vatan"
+   ],
+   "dogru": 0,
+   "aciklama": "Tekâlif-i Millîye ile halk elindekini orduyla paylaştı (s. 40–45)."
+  },
+  {
+   "id": "s1-23",
+   "konu": "u1k5",
+   "kavram": "Millî Mesele",
+   "tur": "dy",
+   "ifade": "Millî meseleler yalnızca devlet yöneticilerini ilgilendirir.",
+   "dogru": false,
+   "duzeltme": "Millî meseleler toplumun tüm bireylerini ilgilendirir.",
+   "aciklama": "Millî mesele hepimizi ilgilendirir (s. 40–45)."
+  },
+  {
+   "id": "s1-24",
+   "konu": "u1k5",
+   "kavram": "Darbe Girişimine Karşı Birlik",
+   "tur": "secim",
+   "soru": "Her yıl 15 Temmuz hangi adla anılır?",
+   "secenekler": [
+    "Demokrasi ve Millî Birlik Günü",
+    "Cumhuriyet Bayramı",
+    "Zafer Bayramı",
+    "Gençlik ve Spor Bayramı"
+   ],
+   "dogru": 0,
+   "aciklama": "15 Temmuz, Demokrasi ve Millî Birlik Günü olarak anılır (s. 40–45)."
+  },
+  {
+   "id": "s1-25",
+   "konu": "u1k5",
+   "kavram": "Afetlerde Dayanışma",
+   "tur": "secim",
+   "soru": "6 Şubat 2023 depremlerinden sonra yaşananlar en çok hangisine örnektir?",
+   "secenekler": [
+    "İletişim engeli",
+    "Birlik ve dayanışma",
+    "Sen dili",
+    "Erişilebilirlik"
+   ],
+   "dogru": 1,
+   "aciklama": "Devlet, kurumlar ve vatandaşlar birlikte çalıştı: tüm Türkiye tek yürek oldu (s. 40–45)."
+  },
+  {
+   "id": "s1-26",
+   "konu": "u1k6",
+   "kavram": "Bilim ve Teknolojide Millî Başarılar",
+   "tur": "secim",
+   "soru": "DNA onarımı çalışmalarıyla Nobel Kimya Ödülü kazanan Türk bilim insanı kimdir?",
+   "secenekler": [
+    "Alper Gezeravcı",
+    "Aziz Sancar",
+    "Mete Gazoz",
+    "Derya Türkan"
+   ],
+   "dogru": 1,
+   "aciklama": "Aziz Sancar Nobel Kimya Ödülü kazandı (s. 46–50)."
+  },
+  {
+   "id": "s1-27",
+   "konu": "u1k6",
+   "kavram": "Mavi, Yeşil ve Gök Vatan",
+   "tur": "eslestir",
+   "soru": "Kavramları anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Mavi Vatan",
+     "sag": "Denizlerimiz"
+    },
+    {
+     "sol": "Yeşil Vatan",
+     "sag": "Ormanlarımız"
+    },
+    {
+     "sol": "Gök Vatan",
+     "sag": "Hava sahamız"
+    }
+   ],
+   "aciklama": "Mavi deniz, yeşil orman, gök hava sahasıdır (s. 46–50)."
+  },
+  {
+   "id": "s1-28",
+   "konu": "u1k6",
+   "kavram": "Millî Kimlik",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi millî kimliği oluşturan unsurlardan biri değildir?",
+   "secenekler": [
+    "Dil",
+    "Tarih",
+    "Kültür",
+    "Ayakkabı numarası"
+   ],
+   "dogru": 3,
+   "aciklama": "Millî kimlik soy, dil, din, tarih, vatan ve kültürden oluşur (s. 46–50)."
+  },
+  {
+   "id": "s1-29",
+   "konu": "u1k6",
+   "kavram": "Vatanseverlik",
+   "tur": "dy",
+   "ifade": "Vatanseverlik yalnızca savaş zamanında gösterilir.",
+   "dogru": false,
+   "duzeltme": "Vatanseverlik barış zamanında da vatandaşlık sorumluluklarını yerine getirmektir.",
+   "aciklama": "Barışta da vatan sevgisi gösterilir: spor, sanat, bilimde (s. 46–50)."
+  },
+  {
+   "id": "s1-30",
+   "konu": "u1k6",
+   "kavram": "Orhun Yazıtları",
+   "tur": "secim",
+   "soru": "Türk milletinin birliğini, yöneticilerin sorumluluklarını ve vatan sevgisini anlatan yazıtlar hangileridir?",
+   "secenekler": [
+    "Orhun Yazıtları",
+    "Tekâlif-i Millîye",
+    "Braille alfabesi",
+    "Anayasa"
+   ],
+   "dogru": 0,
+   "aciklama": "Orhun Yazıtları millî kimlik bilincinin güzel bir örneğidir (s. 46–50)."
+  }
+ ]
+}

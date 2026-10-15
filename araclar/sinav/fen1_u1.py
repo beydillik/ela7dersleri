@@ -166,7 +166,7 @@ add("u1k7", "Samanyolu Galaksisi", "secim", soru="Galaksilerle ilgili aşağıda
   aciklama=f"Galaksileri ilk keşfeden Edwin Hubble'dır; Gagarin uzaya çıkan ilk insandır {P7}.")
 
 # ---------- Doğrulama
-kok = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public/fen1")
+kok = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "public/fen1")
 ad = {k: {x["ad"] for x in json.load(open(f"{kok}/konular/{k}.json", encoding="utf-8"))["kavramlar"]} for k in {q["konu"] for q in Q}}
 h, tur, dag = [], {}, [0, 0, 0, 0]
 for q in Q:

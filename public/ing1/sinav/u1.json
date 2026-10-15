@@ -1,0 +1,303 @@
+{
+ "unite": 1,
+ "ders": "ing1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "e1-01",
+   "konu": "u1k1",
+   "kavram": "tall",
+   "tur": "secim",
+   "soru": "{{What does she look like?}} sorusuna uygun cevap hangisidir?",
+   "secenekler": [
+    "She is tall and slim.",
+    "She is honest.",
+    "She is ten years old.",
+    "She likes music."
+   ],
+   "dogru": 0,
+   "aciklama": "{{look like}} görünüşü sorar: boy, beden, saç (s. 10–20)."
+  },
+  {
+   "id": "e1-02",
+   "konu": "u1k1",
+   "kavram": "curly",
+   "tur": "secim",
+   "soru": "Hangisi saçı anlatan bir kelimedir?",
+   "secenekler": [
+    "generous",
+    "curly",
+    "punctual",
+    "honest"
+   ],
+   "dogru": 1,
+   "aciklama": "{{curly}} kıvırcık demektir; saç için kullanılır (s. 10–20)."
+  },
+  {
+   "id": "e1-03",
+   "konu": "u1k1",
+   "kavram": "blonde",
+   "tur": "bosluk",
+   "havuz": [
+    "is",
+    "eyes"
+   ],
+   "cumleler": [
+    {
+     "c": "She ___ long blonde hair.",
+     "cevap": "has"
+    },
+    {
+     "c": "He is old. He has ___ hair.",
+     "cevap": "gray"
+    },
+    {
+     "c": "My brother is ___. He is not short.",
+     "cevap": "tall"
+    }
+   ],
+   "aciklama": "Saç ve göz için {{has}}. Yaşlı biri gri saçlıdır (s. 10–20)."
+  },
+  {
+   "id": "e1-04",
+   "konu": "u1k1",
+   "kavram": "beautiful",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçe anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "slim",
+     "sag": "ince, zayıf"
+    },
+    {
+     "sol": "handsome",
+     "sag": "yakışıklı"
+    },
+    {
+     "sol": "cute",
+     "sag": "sevimli"
+    },
+    {
+     "sol": "young",
+     "sag": "genç"
+    }
+   ],
+   "aciklama": "{{slim}} ince, {{handsome}} yakışıklı, {{cute}} sevimli, {{young}} genç (s. 10–20)."
+  },
+  {
+   "id": "e1-05",
+   "konu": "u1k1",
+   "kavram": "young",
+   "tur": "kisa",
+   "soru": "{{young}} kelimesinin zıt anlamlısını İngilizce yaz.",
+   "yanit": "old",
+   "aciklama": "{{young}} genç, {{old}} yaşlı (s. 10–20)."
+  },
+  {
+   "id": "e1-06",
+   "konu": "u1k1",
+   "kavram": "slim",
+   "tur": "dy",
+   "ifade": "{{She has blue eyes.}} cümlesinde göz için {{has}} kullanılmıştır.",
+   "dogru": true,
+   "aciklama": "Özellik için {{is}}, saç ve göz için {{has}} (s. 10–20)."
+  },
+  {
+   "id": "e1-07",
+   "konu": "u1k2",
+   "kavram": "honest",
+   "tur": "secim",
+   "soru": "{{What is he like?}} sorusuna uygun cevap hangisidir?",
+   "secenekler": [
+    "He is tall.",
+    "He has curly hair.",
+    "He is honest and generous.",
+    "He is twelve."
+   ],
+   "dogru": 2,
+   "aciklama": "{{What is he like?}} kişiliği sorar (s. 10–26)."
+  },
+  {
+   "id": "e1-08",
+   "konu": "u1k2",
+   "kavram": "selfish",
+   "tur": "secim",
+   "soru": "{{Caring only about yourself, not others.}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "generous",
+    "selfish",
+    "punctual",
+    "outgoing"
+   ],
+   "dogru": 1,
+   "aciklama": "Yalnız kendini düşünen kişi {{selfish}}, yani bencildir (s. 10–26)."
+  },
+  {
+   "id": "e1-09",
+   "konu": "u1k2",
+   "kavram": "punctual",
+   "tur": "eslestir",
+   "soru": "Kelimeleri anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "punctual",
+     "sag": "dakik"
+    },
+    {
+     "sol": "stubborn",
+     "sag": "inatçı"
+    },
+    {
+     "sol": "outgoing",
+     "sag": "dışa dönük"
+    },
+    {
+     "sol": "easy-going",
+     "sag": "uysal, rahat"
+    }
+   ],
+   "aciklama": "Kişilik kelimeleri: dakik, inatçı, dışa dönük, uysal (s. 10–26)."
+  },
+  {
+   "id": "e1-10",
+   "konu": "u1k2",
+   "kavram": "stubborn",
+   "tur": "dytablo",
+   "soru": "Olumsuz bir özellikse D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "stubborn",
+     "d": true
+    },
+    {
+     "s": "honest",
+     "d": false
+    },
+    {
+     "s": "selfish",
+     "d": true
+    },
+    {
+     "s": "generous",
+     "d": false
+    }
+   ],
+   "aciklama": "{{stubborn}} ve {{selfish}} olumsuz özelliklerdir (s. 10–26)."
+  },
+  {
+   "id": "e1-11",
+   "konu": "u1k2",
+   "kavram": "generous",
+   "tur": "kisa",
+   "soru": "{{Willing to give and share.}} tanımı hangi kelimenindir? İngilizce yaz.",
+   "yanit": "generous",
+   "aciklama": "Vermeye ve paylaşmaya istekli kişi {{generous}}, yani cömerttir (s. 10–26)."
+  },
+  {
+   "id": "e1-12",
+   "konu": "u1k2",
+   "kavram": "honest",
+   "tur": "dy",
+   "ifade": "{{She never tells lies.}} cümlesi dürüst bir kişiyi anlatır.",
+   "dogru": true,
+   "aciklama": "Hiç yalan söylemeyen kişi {{honest}}tır (s. 10–26)."
+  },
+  {
+   "id": "e1-13",
+   "konu": "u1k3",
+   "kavram": "taller than",
+   "tur": "secim",
+   "soru": "Dave 182 cm, Nina 162 cm. Hangi cümle doğrudur?",
+   "secenekler": [
+    "Nina is taller than Dave.",
+    "Dave is taller than Nina.",
+    "Dave is shorter than Nina.",
+    "Nina is older than Dave."
+   ],
+   "dogru": 1,
+   "aciklama": "182 cm daha uzundur: {{Dave is taller than Nina.}} (s. 11–26)."
+  },
+  {
+   "id": "e1-14",
+   "konu": "u1k3",
+   "kavram": "better than",
+   "tur": "secim",
+   "soru": "{{good}} kelimesinin karşılaştırma hâli hangisidir?",
+   "secenekler": [
+    "gooder",
+    "more good",
+    "better",
+    "best"
+   ],
+   "dogru": 2,
+   "aciklama": "{{good}} düzensizdir: {{better}} (s. 11–26)."
+  },
+  {
+   "id": "e1-15",
+   "konu": "u1k3",
+   "kavram": "more outgoing than",
+   "tur": "secim",
+   "soru": "{{Anne is ___ punctual than Jane.}} Boşluğa ne gelir?",
+   "secenekler": [
+    "more",
+    "-er",
+    "most",
+    "than"
+   ],
+   "dogru": 0,
+   "aciklama": "Uzun sıfatlarda {{more}} kullanılır (s. 11–26)."
+  },
+  {
+   "id": "e1-16",
+   "konu": "u1k3",
+   "kavram": "heavier than",
+   "tur": "eslestir",
+   "soru": "Sıfatları karşılaştırma hâlleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "heavy",
+     "sag": "heavier"
+    },
+    {
+     "sol": "slim",
+     "sag": "slimmer"
+    },
+    {
+     "sol": "bad",
+     "sag": "worse"
+    },
+    {
+     "sol": "young",
+     "sag": "younger"
+    }
+   ],
+   "aciklama": "{{y}} → {{i}}, son harf ikilenir, {{bad}} düzensizdir (s. 11–26)."
+  },
+  {
+   "id": "e1-17",
+   "konu": "u1k3",
+   "kavram": "younger than",
+   "tur": "kisa",
+   "soru": "{{than}} kelimesinin Türkçe anlamı nedir?",
+   "yanit": "-den",
+   "kabul": [
+    "den",
+    "dan",
+    "-dan",
+    "den daha",
+    "dan daha"
+   ],
+   "aciklama": "{{than}} = -den, -dan (daha) (s. 11–26)."
+  },
+  {
+   "id": "e1-18",
+   "konu": "u1k3",
+   "kavram": "slimmer than",
+   "tur": "dy",
+   "ifade": "{{slim}} kelimesinin karşılaştırma hâli {{slimer}} olarak yazılır.",
+   "dogru": false,
+   "duzeltme": "Son harf ikilenir: slimmer.",
+   "aciklama": "Kısa kelime ünlü + ünsüzle bitince son harf ikilenir: {{slimmer}} (s. 11–26)."
+  }
+ ]
+}
