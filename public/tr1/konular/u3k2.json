@@ -1,0 +1,506 @@
+{
+ "id": "u3k2",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Kelimeden İfadeye: Eş Sesli, Deyim, Öznel ve Nesnel",
+ "sayfalar": "s. 134–138",
+ "giris": "Bu konuda Nezihe Araz'ın “Ya Hayır Söyle...” metnini (s. 134–135) inceleyeceğiz. Yazar “hayır” kelimesini savunur. Metnin anahtar kelimelerini bulacağız, eş sesli kelimeleri tanıyacağız. Deyimi kalıp ifadeden, öznel ifadeyi nesnel ifadeden ayırmayı öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, daha önce öğrendiğin iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Eş ve Zıt Anlamlı Kelimeler",
+    "sinif": "2. Tema, Konu 1",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>eş / zıt</text><rect x='10.5' y='36' width='46.5' height='22' rx='8' fill='#fbf6e6'/><text x='33.8' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ziyan</text><rect x='63.0' y='36' width='46.5' height='22' rx='8' fill='#7ad19a'/><text x='86.2' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>zarar</text><rect x='0.2' y='62' width='56.8' height='22' rx='8' fill='#fbf6e6'/><text x='28.6' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>aydınlık</text><rect x='63.0' y='62' width='56.8' height='22' rx='8' fill='#9cc7ff'/><text x='91.4' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>karanlık</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>aynı / karşıt</text></svg>",
+    "akilda": "Aynı anlam, karşıt anlam",
+    "anlatim": "Eş anlamlı kelimeler farklı yazılır ama aynı anlamı verir (muhacir = göçmen). Zıt anlamlı kelimeler birbirinin tam karşıtıdır (zafer ↔ yenilgi).",
+    "sorular": [
+     {
+      "soru": "“ziyan” kelimesinin eş anlamlısı hangisidir?",
+      "secenekler": [
+       "zarar",
+       "kazanç",
+       "istek"
+      ],
+      "dogru": 0,
+      "ipucu": "Aynı anlamı veren kelimeyi bul.",
+      "aciklama": "Ziyan = zarar."
+     },
+     {
+      "soru": "“aydınlık” kelimesinin zıt anlamlısı hangisidir?",
+      "secenekler": [
+       "parlak",
+       "karanlık",
+       "ışık"
+      ],
+      "dogru": 1,
+      "ipucu": "Tam karşıtını bul.",
+      "aciklama": "Aydınlık ↔ karanlık."
+     }
+    ]
+   },
+   {
+    "ad": "Gerçek ve Mecaz Anlam",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>tatlı</text><rect x='14.9' y='36' width='90.3' height='22' rx='8' fill='#fbf6e6'/><text x='60.0' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>tatlı pasta</text><rect x='22.1' y='62' width='75.7' height='22' rx='8' fill='#9cc7ff'/><text x='60.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>tatlı dil</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#f5c53d'>gerçek / mecaz</text></svg>",
+    "akilda": "İlk anlam, uzak anlam",
+    "anlatim": "Gerçek anlam, kelimenin ilk ve temel anlamıdır: soğuk su. Mecaz anlam, kelimenin gerçek anlamından uzaklaşarak kazandığı anlamdır: soğuk bakış.",
+    "sorular": [
+     {
+      "soru": "Hangi cümlede “tatlı” mecaz anlamdadır?",
+      "secenekler": [
+       "Pasta çok tatlıydı.",
+       "Tatlıya şeker koydu.",
+       "Bize tatlı bir dille konuştu."
+      ],
+      "dogru": 2,
+      "ipucu": "Dilin tadı olur mu?",
+      "aciklama": "“Tatlı dil” güzel ve yumuşak konuşma demektir; mecazdır."
+     },
+     {
+      "soru": "“Kalbi taş gibi” sözünde “taş” hangi anlamdadır?",
+      "secenekler": [
+       "Mecaz anlam",
+       "Gerçek anlam",
+       "Eş sesli"
+      ],
+      "dogru": 0,
+      "ipucu": "Kalp gerçekten taştan mı?",
+      "aciklama": "Kalp taştan değildir; “taş” burada katı ve duygusuz demektir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Anahtar Söz Varlığı",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>anahtar</text><rect x='36.8' y='36' width='46.5' height='22' rx='8' fill='#f5c53d'/><text x='60.0' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>hayır</text><rect x='12.4' y='62' width='50.7' height='22' rx='8' fill='#fbf6e6'/><text x='37.8' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>hayırlı</text><rect x='69.1' y='62' width='38.5' height='22' rx='8' fill='#fbf6e6'/><text x='88.3' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>hayra</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>konuyu taşır</text></svg>",
+   "aciklama": "Anahtar söz varlığı, metnin konusunu taşıyan ve metinde sık geçen kelime ve kelime gruplarıdır.",
+   "ek": "Kitap, “hayır, hayrını görmek, ağzını hayra açmak” gibi kelimelerden hangilerinin metnin anahtar söz varlığı olabileceğini sorar (s. 136). “Hayır” kelimesi metnin her yerinde geçer (s. 134–135); bu, konunun ipucudur.",
+   "akilda": "Konuyu taşıyan kelimeler",
+   "soru": {
+    "soru": "“Ya Hayır Söyle...” metninin anahtar kelimesi hangisidir?",
+    "secenekler": [
+     "vapur",
+     "hayır",
+     "ayakkabı"
+    ],
+    "dogru": 1,
+    "ipucu": "Metinde en sık geçen ve konuyu taşıyan kelime hangisi?",
+    "aciklama": "Metin “hayır” kelimesini savunur; anahtar kelime “hayır”dır (s. 134–135)."
+   }
+  },
+  {
+   "ad": "Metindeki Anlam ve Sözlük Anlamı",
+   "renk": "#b5562f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='21' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>anlam</text><rect x='14' y='30' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>cümle</text><path d='M60 51 V59 M55 55 L60 59 L65 55' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='60' width='92' height='20' rx='8' fill='#f5c53d'/><text x='60.0' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>tahmin</text><path d='M60 81 V89 M55 85 L60 89 L65 85' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='90' width='92' height='20' rx='8' fill='#7ad19a'/><text x='60.0' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>sözlük</text></svg>",
+   "aciklama": "Bir kelimenin metindeki anlamını önce cümleden tahmin ederiz, sonra sözlükten kontrol ederiz.",
+   "ek": "Kitap kelimelerin önce metindeki anlamını belirletir, sonra sözlük anlamını buldurur (s. 136). Örnek: “başkalarının selamını kelamını yeğliyoruz” (s. 135) cümlesinde “yeğlemek”, tercih etmek demektir.",
+   "akilda": "Önce tahmin, sonra sözlük",
+   "soru": {
+    "soru": "“Niyet hayır, akıbet hayır” (s. 135) sözünde “akıbet” ne demektir?",
+    "secenekler": [
+     "Başlangıç",
+     "Dilek",
+     "Son, sonuç"
+    ],
+    "dogru": 2,
+    "ipucu": "“Niyet” işin başıdır. “Akıbet” işin neresi olabilir?",
+    "aciklama": "Akıbet, bir işin sonu, sonucu demektir."
+   }
+  },
+  {
+   "ad": "Eş Sesli Kelimeler",
+   "renk": "#2f8f5b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>hayır</text><rect x='33.1' y='36' width='53.8' height='22' rx='8' fill='#fbf6e6'/><text x='60.0' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>iyilik</text><rect x='7.6' y='62' width='104.9' height='22' rx='8' fill='#9cc7ff'/><text x='60.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>olumsuz cevap</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>aynı yazılış</text></svg>",
+   "aciklama": "Yazılışları ve okunuşları aynı, anlamları farklı kelimelere eş sesli kelimeler denir.",
+   "ek": "Metinde “hayır” iyilik demektir: “«hayır»ın anlamı iyiliktir” (s. 135). Günlük konuşmada ise “hayır” olumsuz cevaptır: “Hayır, gelmiyorum.” Kitap eş seslisi olan kelimeleri buldurur (s. 136). Terim önceki yıllardan bilinir; programın bu tema sayfasında geçmez, kitap etkinliğinde vardır.",
+   "akilda": "Aynı yazılış, farklı anlam",
+   "soru": {
+    "soru": "Hangi cümlede “hayır” iyilik anlamında kullanılmıştır?",
+    "secenekler": [
+     "Bu çeşmeyi hayır için yaptırmış.",
+     "Hayır, bugün parka gidemem.",
+     "Hayır, o kalem benim değil."
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: aynı yazılış, farklı anlam. Hangisinde “olumsuz cevap” yok?",
+    "aciklama": "Çeşmeyi iyilik için yaptırmış; burada “hayır” iyilik demektir (s. 135)."
+   }
+  },
+  {
+   "ad": "Deyim",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>deyim</text><rect x='6.3' y='44' width='44.6' height='22' rx='8' fill='#fbf6e6'/><text x='28.6' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>ağzını</text><rect x='56.9' y='44' width='56.8' height='22' rx='8' fill='#f5c53d'/><text x='85.3' y='59' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>hayra aç</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>kalıplaşmış</text></svg>",
+   "aciklama": "Deyim, genellikle gerçek anlamından ayrı, kendine özgü bir anlam taşıyan kalıplaşmış söz grubudur.",
+   "ek": "Metinde “ağzını hayra aç” deyimi geçer; yazar anlamını da verir: kötü şeyler konuşma (s. 135). Deyimin kelimeleri değiştirilemez: “Ağzını iyiye aç.” denmez. Tanım kitap dışıdır (TDK sözlük tanımı); kitap ifadeleri “deyim-kalıp ifade olma” ölçütüyle sınıflandırır (s. 138).",
+   "akilda": "Kalıplaşmış, mecaz anlamlı",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "“Ağzını hayra aç.” (s. 135) sözü bir deyim mi?",
+    "adimlar": [
+     {
+      "metin": "Kelimelerin gerçek anlamına bak: ağzını açmak, konuşmaya başlamaktır.",
+      "islem": "gerçek: ağzını açmak"
+     },
+     {
+      "metin": "Sözün metindeki anlamına bak: Yazar “kötü şeyler konuşma” der (s. 135).",
+      "islem": "asıl anlam: iyi konuş"
+     },
+     {
+      "metin": "Kelimeleri değiştirip dene: “Ağzını iyiye aç.” denebilir mi? Denmez; söz kalıplaşmıştır.",
+      "islem": "değişmez → deyim"
+     }
+    ],
+    "sonuc": "Söz, gerçek anlamından ayrı bir anlam taşıyor ve kalıplaşmış. Bu yüzden bir deyimdir."
+   },
+   "soru": {
+    "soru": "Deyimin kelimeleri değiştirilebilir mi?",
+    "secenekler": [
+     "Evet, istediğimiz gibi.",
+     "Hayır, deyim kalıplaşmıştır.",
+     "Yalnızca son kelimesi değişir."
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: Kalıp…",
+    "aciklama": "Deyim kalıplaşmıştır; kelimeleri değiştirilemez."
+   }
+  },
+  {
+   "ad": "Kalıp İfade",
+   "renk": "#b58a2f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>hazır söz</text><rect x='25.8' y='36' width='68.4' height='22' rx='8' fill='#7ad19a'/><text x='60.0' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>günaydın</text><rect x='11.2' y='62' width='97.6' height='22' rx='8' fill='#7ad19a'/><text x='60.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>geçmiş olsun</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>belli durumda</text></svg>",
+   "aciklama": "Kalıp ifadeler; selamlaşma, dilek ve teşekkür gibi belli durumlarda hep aynı biçimde söylenen hazır sözlerdir: günaydın, hayırlı olsun, geçmiş olsun.",
+   "ek": "Yazar selamlaşma ve dilek sözlerini sıralar: «hayırlı geceler», «hayırlı işler», «günaydın» (s. 134–135). Kalıp ifade bir durumu karşılar; deyim ise cümleye mecaz bir anlam katar. Tanım kitap dışıdır (TDK yayınındaki “toplumsal ilişkiler sırasında kullanılması âdet olan” sözler tanımından sadeleştirildi).",
+   "akilda": "Belli durumun hazır sözü",
+   "soru": {
+    "soru": "Hasta bir arkadaşımıza hangi kalıp ifadeyi söyleriz?",
+    "secenekler": [
+     "Afiyet olsun",
+     "İyi yolculuklar",
+     "Geçmiş olsun"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: belli durumun hazır sözü. Durum: hastalık.",
+    "aciklama": "Hasta birine “Geçmiş olsun.” denir."
+   }
+  },
+  {
+   "ad": "Öznel ve Nesnel İfade",
+   "renk": "#2f8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#6ea8ef'>kanıtlanır mı?</text><rect x='7.6' y='36' width='104.9' height='22' rx='8' fill='#7ad19a'/><text x='60.0' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>nesnel: bilgi</text><rect x='11.2' y='62' width='97.6' height='22' rx='8' fill='#9cc7ff'/><text x='60.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>öznel: görüş</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>bence → öznel</text></svg>",
+   "aciklama": "Nesnel ifade, doğruluğu herkesçe kontrol edilebilen bilgidir. Öznel ifade, kişinin kendi duygu ve görüşüdür; kanıtlanamaz.",
+   "ek": "Kitap metindeki ifadeleri “öznellik-nesnellik” ölçütüyle sınıflandırtır (s. 138). Öznel: “Her kelime, hazinemin bir altınıdır sanki” (s. 134). Nesnel: “«Hayır işlemek», iyi bir iş yapmak demektir.” (s. 135). “Güzel, bence, en iyi” gibi kelimeler çoğu zaman öznelliğin ipucudur. Terimler önceki yıllardan; programın bu tema sayfasında geçmez.",
+   "akilda": "Kanıtlanır mı, görüş mü?",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "İki cümleyi ayıralım: “Günaydın güzel bir kelimedir.” ve “Sabah selamlaşırken «günaydın» deriz.”",
+    "adimlar": [
+     {
+      "metin": "1. İlk cümleyi oku: “Günaydın güzel bir kelimedir.”",
+      "soru": {
+       "soru": "Bu cümle nasıl bir ifadedir?",
+       "secenekler": [
+        "Öznel",
+        "Nesnel",
+        "Deyim"
+       ],
+       "dogru": 0,
+       "ipucu": "“Güzel” herkes için aynı mı?",
+       "aciklama": "“Güzel” kişisel bir değerlendirmedir; cümle özneldir."
+      },
+      "islem": "güzel → kişisel görüş"
+     },
+     {
+      "metin": "2. İkinci cümleyi oku: “Sabah selamlaşırken «günaydın» deriz.”",
+      "soru": {
+       "soru": "Bu cümle nasıl bir ifadedir?",
+       "secenekler": [
+        "Öznel",
+        "Nesnel",
+        "Benzetme"
+       ],
+       "dogru": 1,
+       "ipucu": "Bunu herkes gözleyip kontrol edebilir mi?",
+       "aciklama": "Herkes kontrol edebilir; cümle nesneldir."
+      },
+      "islem": "herkes kontrol edebilir"
+     },
+     {
+      "metin": "3. Öznel cümledeki ipucunu hatırla.",
+      "islem": "ipucu: güzel, bence"
+     }
+    ],
+    "sonuc": "İlk cümle öznel, ikinci cümle nesneldir."
+   },
+   "soru": {
+    "soru": "Hangisi nesnel bir ifadedir?",
+    "secenekler": [
+     "En güzel selam “günaydın”dır.",
+     "Bu kitap çok sıkıcı.",
+     "Türkiye'nin başkenti Ankara'dır."
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Kanıtlanır mı?",
+    "aciklama": "Başkentin Ankara olduğu herkesçe kontrol edilebilir; bu nesneldir."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram tek kelimeyle mi, söz ve cümleyle mi ilgili?",
+   "kutular": [
+    {
+     "etiket": "Tek kelime",
+     "uyeler": [
+      "Anahtar Söz Varlığı",
+      "Metindeki Anlam ve Sözlük Anlamı",
+      "Eş Sesli Kelimeler"
+     ]
+    },
+    {
+     "etiket": "Söz ve cümle",
+     "uyeler": [
+      "Deyim",
+      "Kalıp İfade",
+      "Öznel ve Nesnel İfade"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Yazar kelimeleri bir hazineye benzetir: Sevdiği yeni kelimeler, hazinesine giren taze paralar gibi onu sevindirir (s. 134)."
+ ],
+ "akildaKalsin": [
+  "Anahtar kelimeler metnin konusunu taşır.",
+  "Kelimenin anlamını önce cümleden tahmin et, sonra sözlükten kontrol et.",
+  "Eş sesli: aynı yazılış, farklı anlam (hayır: iyilik / olumsuz cevap).",
+  "Deyim kalıplaşmıştır, çoğunlukla mecaz anlam taşır.",
+  "Kalıp ifade belli bir durumun hazır sözüdür: geçmiş olsun.",
+  "Nesnel ifade kanıtlanır; öznel ifade kişisel görüştür."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "“Hayır söyleyin ki hayır bulasınız.” ne demek?",
+   "cevap": "Yazar bu sözü Mevlana'dan aktarır (s. 134). İyi şeyler söyleyen, iyilikle karşılaşır demektir."
+  },
+  {
+   "soru": "Eskiler koşan çocuğa neden “düşeceksin” demezdi?",
+   "cevap": "Olumsuz sözün olumsuzluğu çağıracağına inanırlardı. Bu yüzden “aman oğlum düşmeyesin” derlerdi (s. 134)."
+  },
+  {
+   "soru": "“Hayra alamet” ne demek?",
+   "cevap": "Metne göre iyiye işaret demektir (s. 135)."
+  },
+  {
+   "soru": "Yazar “by by” ve “çav” sözlerini neden eleştirir?",
+   "cevap": "Ona göre bu dil karmaşası, kültür karmaşasından doğar: Kendi selamlarımızı beğenmeyip başkalarınınkini yeğliyoruz (s. 135)."
+  },
+  {
+   "soru": "Deyimle atasözü aynı şey mi?",
+   "cevap": "Hayır. Atasözü öğüt veren bir yargıdır: “Tatlı dil yılanı deliğinden çıkarır.” Deyim çoğunlukla bir yargı bildirmez, bir durumu anlatır: “ağzını hayra açmak”. Bu ayrım kitap dışıdır."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Ailende ya da çevrende sık söylenen bir kalıp ifade ve bir deyim yaz. Her birinin hangi durumda söylendiğini açıkla.",
+   "ornekCevap": "Kalıp ifade: “Kolay gelsin.” Çalışan birine söylenir. Deyim: “Göz kulak olmak.” Birini korumak, kollamak anlamında kullanılır.",
+   "anahtarlar": [
+    "kalıp",
+    "deyim",
+    "durum",
+    "anlam"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir metnin anahtar kelimeleri nasıl bulunur?",
+   "secenekler": [
+    "Metnin konusunu taşıyan, sık geçen kelimelere bakılır.",
+    "En uzun kelimeler seçilir.",
+    "İlk cümledeki her kelime alınır."
+   ],
+   "dogru": 0,
+   "ipucu": "Akılda kalsın: konuyu taşıyan kelimeler.",
+   "aciklama": "Anahtar kelimeler konuyu taşır ve metinde sık geçer (s. 136).",
+   "kavram": "Anahtar Söz Varlığı"
+  },
+  {
+   "soru": "“Bu konuda bilgisi olan birini yeğlerim.” cümlesinde “yeğlemek” ne demektir?",
+   "secenekler": [
+    "Üzmek",
+    "Tercih etmek",
+    "Unutmak"
+   ],
+   "dogru": 1,
+   "ipucu": "Cümleden tahmin et: Bilgisi olan biriyle ilgili ne yapılır?",
+   "aciklama": "Yeğlemek, tercih etmek demektir (s. 135).",
+   "kavram": "Metindeki Anlam ve Sözlük Anlamı"
+  },
+  {
+   "soru": "Hangi cümlede “yüz” kelimesi sayı anlamında kullanılmıştır?",
+   "secenekler": [
+    "Yüzünü soğuk suyla yıkadı.",
+    "Yüzüne gülümseme yayıldı.",
+    "Yüz sayfalık kitabı bitirdi."
+   ],
+   "dogru": 2,
+   "ipucu": "“Kaç?” sorusuna cevap veren cümleyi ara.",
+   "aciklama": "“Yüz sayfalık” sayıdır; öbürlerinde “yüz” surat demektir.",
+   "kavram": "Eş Sesli Kelimeler"
+  },
+  {
+   "soru": "Hangisi bir deyimdir?",
+   "secenekler": [
+    "göz kulak olmak",
+    "kitap okumak",
+    "su içmek"
+   ],
+   "dogru": 0,
+   "ipucu": "Gerçek anlamından ayrı bir anlam taşıyan sözü ara.",
+   "aciklama": "“Göz kulak olmak” korumak, kollamak demektir; kalıplaşmış bir deyimdir.",
+   "kavram": "Deyim"
+  },
+  {
+   "soru": "Yemek yiyen birine söylenen kalıp ifade hangisidir?",
+   "secenekler": [
+    "Geçmiş olsun",
+    "Afiyet olsun",
+    "Gözün aydın"
+   ],
+   "dogru": 1,
+   "ipucu": "Durum: yemek.",
+   "aciklama": "Yemek yiyen birine “Afiyet olsun.” denir.",
+   "kavram": "Kalıp İfade"
+  },
+  {
+   "soru": "Hangisi öznel bir ifadedir?",
+   "secenekler": [
+    "Şiir dört dörtlükten oluşuyor.",
+    "Şiirde on altı dize var.",
+    "Bu şiir okuduğum en etkileyici şiir."
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisi kişisel bir görüş?",
+   "aciklama": "“En etkileyici” kişisel bir değerlendirmedir; cümle özneldir.",
+   "kavram": "Öznel ve Nesnel İfade"
+  },
+  {
+   "soru": "“Ağzını hayra aç.” ve “Hayırlı olsun.” sözleri için hangisi doğrudur?",
+   "secenekler": [
+    "İlki deyim, ikincisi kalıp ifadedir.",
+    "İkisi de deyimdir.",
+    "İkisi de nesnel ifadedir."
+   ],
+   "dogru": 0,
+   "ipucu": "Hangisi mecaz anlam taşıyor, hangisi bir durumda söylenen hazır söz?",
+   "aciklama": "“Ağzını hayra aç” mecaz anlamlı bir deyimdir; “Hayırlı olsun” hazır bir dilek sözüdür (s. 134–135).",
+   "kavram": "Kalıp İfade",
+   "yardim": {
+    "adimlar": [
+     "İlk sözün gerçek anlamını düşün: Ağız hayra açılır mı?",
+     "İkinci söz hangi durumda söylenir?",
+     "Mecaz anlam deyimi, belli durumun hazır sözü kalıp ifadeyi gösterir."
+    ]
+   }
+  },
+  {
+   "soru": "Metindeki öznel cümle hangi kelimeden anlaşılır?",
+   "secenekler": [
+    "ışık",
+    "Bence",
+    "yansıttığı"
+   ],
+   "dogru": 1,
+   "ipucu": "Kişisel görüş bildiren bir kelime ara.",
+   "aciklama": "“Bence” kişisel görüş bildirir; o cümle özneldir. Öteki cümleler kontrol edilebilir bilgilerdir.",
+   "kavram": "Öznel ve Nesnel İfade",
+   "metinBaslik": "Ay",
+   "metin": [
+    "Ay, kendi ışığı olmayan bir gök cismidir.",
+    "Güneş'ten aldığı ışığı yansıttığı için parlak görünür.",
+    "Bence dolunay, gökyüzünün en güzel görüntüsüdür.",
+    "Ay'ın Dünya'dan farklı görünen şekillerine Ay'ın evreleri denir."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Kişisel bir görüş bildiren cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Öznel cümleyi gösteren kelimeyi.",
+     "Anahtar kelime: öznel, yani kişisel görüş.",
+     "Kanıt: Herkesin kontrol edemeyeceği bir görüş bildiren cümleyi bul.",
+     "Şıkları ele: Hangi kelimeler bir bilgiyi anlatıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde iki farklı anlamda kullanılan eş sesli kelime hangisidir?",
+   "secenekler": [
+    "defter",
+    "tatil",
+    "yaz"
+   ],
+   "dogru": 2,
+   "ipucu": "Aynı yazılan ama farklı anlam taşıyan kelimeyi ara.",
+   "aciklama": "İlk cümlede “yaz” mevsimdir; üçüncü cümlede yazı yazmaktır.",
+   "kavram": "Eş Sesli Kelimeler",
+   "metinBaslik": "Tatil Defteri",
+   "metin": [
+    "Yaz tatilinde dedemin köyüne gittim.",
+    "Dedem bana bir defter verdi.",
+    "“Gördüklerini bu deftere yaz.” dedi.",
+    "Tatil bitince defterim doldu."
+   ],
+   "kanit": [
+    0,
+    2
+   ],
+   "kanitIpucu": "Eş sesli kelimenin geçtiği cümlelerden birine dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? İki ayrı anlamda kullanılan kelimeyi.",
+     "Anahtar kelime: eş sesli, yani aynı yazılış, farklı anlam.",
+     "Kanıt: Aynı kelimenin geçtiği iki cümleyi bul.",
+     "Şıkları ele: “defter” ve “tatil” metinde farklı anlamlarda mı geçiyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde kullanılan deyim hangisidir?",
+   "secenekler": [
+    "omuz omuza vermek",
+    "cephane taşımak",
+    "yardım etmek"
+   ],
+   "dogru": 0,
+   "ipucu": "Akılda kalsın: kalıplaşmış, mecaz anlamlı.",
+   "aciklama": "“Omuz omuza vermek” birlikte çalışmak, dayanışmak demektir; bir deyimdir.",
+   "kavram": "Deyim",
+   "metinBaslik": "Millî Mücadelede Halk",
+   "metin": [
+    "Kurtuluş Savaşı yıllarında halk orduya yardım etti.",
+    "Kadınlar kağnılarla cepheye cephane taşıdı.",
+    "Köylüler ellerindeki erzakı askerlerle paylaştı.",
+    "Bütün millet bu zor günlerde omuz omuza verdi."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Gerçek anlamından başka bir anlam taşıyan sözün geçtiği cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Metindeki deyimi.",
+     "Anahtar kelime: deyim, yani kalıplaşmış ve mecaz anlamlı söz.",
+     "Kanıt: İnsanlar gerçekten omuzlarını birbirine mi dayadı? O cümleyi bul.",
+     "Şıkları ele: Hangileri gerçek anlamda bir işi anlatıyor?"
+    ]
+   }
+  }
+ ]
+}

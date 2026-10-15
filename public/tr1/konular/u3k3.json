@@ -1,0 +1,499 @@
+{
+ "id": "u3k3",
+ "unite": "3. Tema: İletişim ve Sosyal İlişkiler",
+ "baslik": "Bilgilendirici Metin: Giriş, Gelişme, Sonuç ve Düşünceyi Geliştirme",
+ "sayfalar": "s. 132, 134–139, 167–168",
+ "giris": "Hikâyenin bölümleri serim, düğüm ve çözümdü. Bilgilendirici metinlerin bölümleri ise giriş, gelişme ve sonuçtur. Bu konuda kitaptaki “Sözün Değeri” metniyle (s. 167) bu bölümleri ayıracağız. Sonra “Ya Hayır Söyle...” metninde düşünceyi geliştirme yollarını bulup anlatıma ne kattıklarını konuşacağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu, 1. Temada öğrendiğin iki bilgiye dayanıyor. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Düşünceyi Geliştirme Yolları",
+    "sinif": "1. Tema, Konu 6",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>yollar</text><rect x='-2.8' y='36' width='62.9' height='22' rx='8' fill='#fbf6e6'/><text x='28.6' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>tanımlama</text><rect x='66.1' y='36' width='56.8' height='22' rx='8' fill='#f5c53d'/><text x='94.5' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>benzetme</text><rect x='-5.9' y='62' width='38.5' height='22' rx='8' fill='#7ad19a'/><text x='13.3' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>örnek</text><rect x='38.6' y='62' width='87.3' height='22' rx='8' fill='#9cc7ff'/><text x='82.2' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#2b2417'>karşılaştırma</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='10' fill='#f5c53d'>düşünceyi destekler</text></svg>",
+    "akilda": "Açıkla ve destekle",
+    "anlatim": "Tanımlama, tanık gösterme, benzetme, örneklendirme, karşılaştırma ve sayısal verilerden yararlanma düşünceyi açıklamanın ve desteklemenin yollarıdır.",
+    "sorular": [
+     {
+      "soru": "“gibi” kelimesi hangi yolun ipucusudur?",
+      "secenekler": [
+       "Benzetme",
+       "Tanımlama",
+       "Sayısal veri"
+      ],
+      "dogru": 0,
+      "ipucu": "“Kar gibi beyaz” sözünü düşün.",
+      "aciklama": "“Gibi” benzetmenin ipucusudur."
+     },
+     {
+      "soru": "“Örneğin” ile başlayan cümle hangi yolu kullanır?",
+      "secenekler": [
+       "Karşılaştırma",
+       "Örneklendirme",
+       "Tanık gösterme"
+      ],
+      "dogru": 1,
+      "ipucu": "Kelimenin kendisine bak.",
+      "aciklama": "“Örneğin” örneklendirmenin ipucusudur."
+     }
+    ]
+   },
+   {
+    "ad": "Ana Fikir ve Yardımcı Fikir",
+    "sinif": "1. Tema, Konu 3",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='21' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>fikirler</text><rect x='14' y='30' width='92' height='20' rx='8' fill='#f5c53d'/><text x='60.0' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>ana fikir</text><path d='M60 51 V59 M55 55 L60 59 L65 55' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='60' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>yardımcı</text><path d='M60 81 V89 M55 85 L60 89 L65 85' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='90' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>yardımcı</text></svg>",
+    "akilda": "Asıl mesaj ve destekleri",
+    "anlatim": "Ana fikir, yazarın metinle vermek istediği asıl mesajdır. Yardımcı fikirler ana fikri destekler ve açıklar.",
+    "sorular": [
+     {
+      "soru": "Yazarın metinle vermek istediği asıl mesaja ne denir?",
+      "secenekler": [
+       "Konu",
+       "Başlık",
+       "Ana fikir"
+      ],
+      "dogru": 2,
+      "ipucu": "Yazar bize ne söylemek istiyor?",
+      "aciklama": "Asıl mesaj ana fikirdir."
+     },
+     {
+      "soru": "Ana fikri destekleyen küçük düşüncelere ne denir?",
+      "secenekler": [
+       "Yardımcı fikir",
+       "Serim",
+       "Anahtar kelime"
+      ],
+      "dogru": 0,
+      "ipucu": "Ana fikre yardım eden fikirler…",
+      "aciklama": "Bunlara yardımcı fikir denir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Giriş",
+   "renk": "#2f6db5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='21' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>metin</text><rect x='14' y='30' width='92' height='20' rx='8' fill='#f5c53d'/><text x='60.0' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>GİRİŞ</text><path d='M60 51 V59 M55 55 L60 59 L65 55' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='60' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>gelişme</text><path d='M60 81 V89 M55 85 L60 89 L65 85' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='90' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>sonuç</text></svg>",
+   "aciklama": "Giriş, metnin ilk bölümüdür. Konuyu tanıtır ve okurun ilgisini çeker.",
+   "ek": "Kitaptaki “Sözün Değeri” metni şöyle başlar: “Bir söz; yalnızca söylendiği anda değil, bıraktığı iz kadar değerlidir.” (s. 167). İlk paragraf konuyu, yani iletişimi tanıtır. Giriş, gelişme ve sonuç terimleri kitapta geçer (s. 167); tanımlar kitap dışıdır.",
+   "akilda": "Konuyu tanıtır",
+   "soru": {
+    "soru": "Bilgilendirici bir metnin girişinde ne yapılır?",
+    "secenekler": [
+     "Metin bitirilir.",
+     "Konu tanıtılır.",
+     "Kaynakça yazılır."
+    ],
+    "dogru": 1,
+    "ipucu": "Akılda kalsın: Konuyu …",
+    "aciklama": "Giriş konuyu tanıtır ve ilgi çeker."
+   }
+  },
+  {
+   "ad": "Gelişme",
+   "renk": "#b5562f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='21' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>metin</text><rect x='14' y='30' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>giriş</text><path d='M60 51 V59 M55 55 L60 59 L65 55' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='60' width='92' height='20' rx='8' fill='#f5c53d'/><text x='60.0' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>GELİŞME</text><path d='M60 81 V89 M55 85 L60 89 L65 85' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='90' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>sonuç</text></svg>",
+   "aciklama": "Gelişme, metnin en uzun bölümüdür. Konu açıklanır; örnekler, karşılaştırmalar ve benzetmelerle desteklenir.",
+   "ek": "“Sözün Değeri”nin 2. ve 3. paragrafları gelişmedir: İletişimin gücünün seçilen sözcüklerde olduğu ve dinlemenin de iletişimin bir parçası olduğu anlatılır (s. 167).",
+   "akilda": "Açıklar, destekler",
+   "soru": {
+    "soru": "Düşünceyi geliştirme yolları en çok hangi bölümde kullanılır?",
+    "secenekler": [
+     "Başlık",
+     "İmza",
+     "Gelişme"
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Açıklar, destekler.",
+    "aciklama": "Konu gelişmede açıklanır ve desteklenir."
+   }
+  },
+  {
+   "ad": "Sonuç",
+   "renk": "#2f8f5b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='21' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>metin</text><rect x='14' y='30' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>giriş</text><path d='M60 51 V59 M55 55 L60 59 L65 55' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='60' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>gelişme</text><path d='M60 81 V89 M55 85 L60 89 L65 85' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='90' width='92' height='20' rx='8' fill='#f5c53d'/><text x='60.0' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>SONUÇ</text></svg>",
+   "aciklama": "Sonuç, metnin son bölümüdür. Anlatılanları toparlar ve ana fikri bir kez daha vurgular.",
+   "ek": "“Sözün Değeri”nin son paragrafı “Sonuç olarak” diye başlar ve ana fikri söyler: “İletişimin değeri, söylenen sözden çok kurulan bağda saklıdır.” (s. 167). “Sonuç olarak, kısacası, özetle” sonucu haber veren ifadelerdir.",
+   "akilda": "Toparlar, vurgular",
+   "cozum": {
+    "baslik": "Birlikte çözelim",
+    "problem": "Bölümleri ayıralım: “Su hayattır. Vücudumuzun büyük kısmı sudur; bitkiler de susuz büyüyemez. Kısacası su olmadan yaşam olmaz.”",
+    "adimlar": [
+     {
+      "metin": "İlk cümle konuyu tanıtıyor mu?",
+      "islem": "Su hayattır → giriş"
+     },
+     {
+      "metin": "Ortadaki cümle konuyu örneklerle açıklıyor.",
+      "islem": "vücut, bitkiler → gelişme"
+     },
+     {
+      "metin": "“Kısacası” ile başlayan cümle toparlıyor.",
+      "islem": "kısacası → sonuç"
+     }
+    ],
+    "sonuc": "Giriş konuyu tanıttı, gelişme açıkladı, sonuç toparladı."
+   },
+   "soru": {
+    "soru": "Hangisi sonuç bölümünü haber veren bir ifadedir?",
+    "secenekler": [
+     "Sonuç olarak",
+     "Örneğin",
+     "Birincisi"
+    ],
+    "dogru": 0,
+    "ipucu": "Akılda kalsın: Toparlar, vurgular.",
+    "aciklama": "“Sonuç olarak” sonucun geldiğini haber verir (s. 167)."
+   }
+  },
+  {
+   "ad": "Bölümler Arası Akış",
+   "renk": "#8a4fb5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>bağlar</text><rect x='14.1' y='36' width='46.5' height='22' rx='8' fill='#f5c53d'/><text x='37.4' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>çünkü</text><rect x='66.7' y='36' width='39.2' height='22' rx='8' fill='#f5c53d'/><text x='86.2' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>oysa</text><rect x='22.1' y='62' width='75.7' height='22' rx='8' fill='#f5c53d'/><text x='60.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>bu yüzden</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>akış</text></svg>",
+   "aciklama": "İyi bir metinde bölümler birbirine bağlanır. “Çünkü, oysa, bu yüzden, sonuç olarak” gibi ifadeler düşünceleri birbirine bağlar.",
+   "ek": "“Sözün Değeri”nde “Çünkü iletişim yalnızca kelimelerin yan yana gelmesi değil...” cümlesi bir sebep ekler; “Oysa doğru bir iletişim...” cümlesi karşıt bir düşünceye geçirir (s. 167).",
+   "akilda": "Çünkü, oysa, bu yüzden",
+   "soru": {
+    "soru": "“Oysa” kelimesi metinde ne işe yarar?",
+    "secenekler": [
+     "Bir örnek verir.",
+     "Karşıt bir düşünceye geçirir.",
+     "Metni bitirir."
+    ],
+    "dogru": 1,
+    "ipucu": "“Oysa”dan önceki ve sonraki düşünce aynı yönde mi?",
+    "aciklama": "“Oysa” karşıt bir düşünceye geçirir (s. 167)."
+   }
+  },
+  {
+   "ad": "Yolu Metinde Bulma",
+   "renk": "#b58a2f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='24' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>ipucu</text><rect x='17.8' y='36' width='39.2' height='22' rx='8' fill='#f5c53d'/><text x='37.4' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>gibi</text><rect x='63.0' y='36' width='39.2' height='22' rx='8' fill='#f5c53d'/><text x='82.6' y='51' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>daha</text><rect x='29.4' y='62' width='61.1' height='22' rx='8' fill='#f5c53d'/><text x='60.0' y='77' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>örneğin</text><text x='60.0' y='106' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#f5c53d'>yolu gösterir</text></svg>",
+   "aciklama": "Bir cümlede hangi düşünceyi geliştirme yolunun kullanıldığını ipucu kelimelerle buluruz: “gibi” benzetme, “daha” karşılaştırma, “-dir, denir” tanımlama.",
+   "ek": "“Ya Hayır Söyle...” metninde Mevlana'nın sözü tanık göstermedir (s. 134). “«hayır»ın anlamı iyiliktir” tanımlamadır; selamlaşma sözlerinin sıralanması örneklendirmedir (s. 135). “Sözün Değeri”nde “Açık ve ölçülü bir ifade, belirsiz ve aceleci bir ifadeden daha etkilidir.” karşılaştırmadır (s. 167). Kitap bu yolları metinde buldurur (s. 137, 168); eşleştirmeler metinden çıkarıldı.",
+   "akilda": "İpucu kelimeyi ara",
+   "sende": {
+    "baslik": "Şimdi sen çöz",
+    "problem": "“Nezaket ve ölçülülük, iletişimin sağlam zemini gibidir.” (s. 167) Bu cümlede hangi yol var?",
+    "adimlar": [
+     {
+      "metin": "1. Cümlede bir ipucu kelime ara.",
+      "soru": {
+       "soru": "Hangi ipucu kelime var?",
+       "secenekler": [
+        "daha",
+        "örneğin",
+        "gibi"
+       ],
+       "dogru": 2,
+       "ipucu": "Cümlenin sonuna bak.",
+       "aciklama": "Cümlede “gibi” var."
+      },
+      "islem": "ipucu: gibi"
+     },
+     {
+      "metin": "2. Bu ipucu hangi yolu gösteriyor?",
+      "soru": {
+       "soru": "“gibi” hangi yolun ipucusudur?",
+       "secenekler": [
+        "Benzetme",
+        "Tanımlama",
+        "Tanık gösterme"
+       ],
+       "dogru": 0,
+       "ipucu": "“Kar gibi beyaz” sözünü düşün.",
+       "aciklama": "“Gibi” benzetmenin ipucusudur."
+      },
+      "islem": "gibi → benzetme"
+     },
+     {
+      "metin": "3. Neye benzetilmiş? Nezaket ve ölçülülük, sağlam bir zemine.",
+      "islem": "ortak özellik: sağlamlık"
+     }
+    ],
+    "sonuc": "Cümlede benzetme kullanılmış: Nezaket, iletişimi sağlam bir zemin gibi taşır."
+   },
+   "soru": {
+    "soru": "“Mevlana, insanları «Hayır söyleyin ki hayır bulasınız.» diye uyarır.” (s. 134) cümlesinde hangi yol kullanılmıştır?",
+    "secenekler": [
+     "Sayısal verilerden yararlanma",
+     "Tanık gösterme",
+     "Karşılaştırma"
+    ],
+    "dogru": 1,
+    "ipucu": "Ünlü birinin sözü aktarılmış mı?",
+    "aciklama": "Ünlü birinin sözü aktarıldığı için tanık göstermedir (s. 134)."
+   }
+  },
+  {
+   "ad": "Anlatıma Katkısı",
+   "renk": "#2f8fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60.0' y='21' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#6ea8ef'>katkısı</text><rect x='14' y='30' width='92' height='20' rx='8' fill='#fbf6e6'/><text x='60.0' y='44' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>inandırır</text><path d='M60 51 V59 M55 55 L60 59 L65 55' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='60' width='92' height='20' rx='8' fill='#f5c53d'/><text x='60.0' y='74' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='11' fill='#2b2417'>somutlaştırır</text><path d='M60 81 V89 M55 85 L60 89 L65 85' stroke='#9cc7ff' stroke-width='2.5' fill='none' stroke-linecap='round'/><rect x='14' y='90' width='92' height='20' rx='8' fill='#7ad19a'/><text x='60.0' y='104' text-anchor='middle' font-family='Andika, Nunito, sans-serif' font-weight='800' font-size='12' fill='#2b2417'>canlandırır</text></svg>",
+   "aciklama": "Her yolun metne bir katkısı vardır: Tanık gösterme inandırır, örnek somutlaştırır, benzetme akılda canlandırır, sayılar kanıtlar.",
+   "ek": "Kitap, bu yollar kullanılmasaydı anlatımın nasıl değişeceğini sorar (s. 138) ve her yolun anlatıma katkısını yazdırır (s. 168).",
+   "akilda": "Neden kullanılmış?",
+   "soru": {
+    "soru": "Bir metinde ünlü birinin sözünü aktarmak anlatıma ne katar?",
+    "secenekler": [
+     "Metni kısaltır.",
+     "Konuyu değiştirir.",
+     "Düşünceyi daha inandırıcı yapar."
+    ],
+    "dogru": 2,
+    "ipucu": "Akılda kalsın: Tanık gösterme …",
+    "aciklama": "Ünlü birinin sözü düşünceyi daha inandırıcı yapar."
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kavram metnin bölümleriyle mi, düşünceyi geliştirmeyle mi ilgili?",
+   "kutular": [
+    {
+     "etiket": "Metnin bölümleri",
+     "uyeler": [
+      "Giriş",
+      "Gelişme",
+      "Sonuç",
+      "Bölümler Arası Akış"
+     ]
+    },
+    {
+     "etiket": "Düşünceyi geliştirme",
+     "uyeler": [
+      "Yolu Metinde Bulma",
+      "Anlatıma Katkısı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Yazar, kelimelerini kaybeden bir dili erozyona uğrayan topraklara benzetir: İkisi de yavaş yavaş eriyip gider (s. 134)."
+ ],
+ "akildaKalsin": [
+  "Giriş konuyu tanıtır.",
+  "Gelişme açıklar ve destekler; en uzun bölümdür.",
+  "Sonuç toparlar, ana fikri vurgular: “Sonuç olarak...”",
+  "Çünkü, oysa, bu yüzden bölümleri bağlar.",
+  "Yolu bulmak için ipucu kelimeyi ara: gibi, daha, örneğin.",
+  "Her yol anlatıma bir şey katar: inandırır, somutlaştırır, canlandırır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Her metinde giriş, gelişme ve sonuç var mı?",
+   "cevap": "Bilgilendirici metinlerin ve denemelerin çoğunda vardır. Hikâyede bu bölümlere serim, düğüm ve çözüm denir."
+  },
+  {
+   "soru": "Gelişme neden en uzun bölüm?",
+   "cevap": "Çünkü konu orada açıklanır; örnekler, karşılaştırmalar ve kanıtlar orada verilir."
+  },
+  {
+   "soru": "Bir cümlede iki yol birden olabilir mi?",
+   "cevap": "Evet. “Kitap bir arkadaş gibidir; örneğin yalnız kaldığımızda bize eşlik eder.” cümlesinde hem benzetme hem örneklendirme vardır."
+  },
+  {
+   "soru": "Sonucu haber veren başka hangi ifadeler var?",
+   "cevap": "Kısacası, özetle, sonuç olarak, bu nedenle gibi ifadeler sonucun geldiğini gösterir."
+  },
+  {
+   "soru": "“Sözün Değeri” metninin ana fikri ne?",
+   "cevap": "Son cümlede söylenir: İletişimin değeri, söylenen sözden çok kurulan bağda saklıdır (s. 167)."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "“Kitap okumanın faydaları” konusunda üç cümlelik bir metin yaz: bir giriş, bir gelişme, bir sonuç cümlesi. Gelişmede bir düşünceyi geliştirme yolu kullan.",
+   "ornekCevap": "Kitap okumak zihnimizi besler. Örneğin her gün yarım saat okuyan biri yeni kelimeler öğrenir ve kendini daha iyi anlatır. Kısacası kitap, en iyi öğretmenlerimizden biridir.",
+   "anahtarlar": [
+    "giriş",
+    "örneğin",
+    "kısacası",
+    "sonuç"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir metnin giriş bölümüyle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Konuyu tanıtır, ilgi çeker.",
+    "Ana fikri toparlayarak bitirir.",
+    "Her zaman sayılarla başlar."
+   ],
+   "dogru": 0,
+   "ipucu": "Akılda kalsın: Konuyu …",
+   "aciklama": "Giriş konuyu tanıtır ve okurun ilgisini çeker.",
+   "kavram": "Giriş"
+  },
+  {
+   "soru": "Gelişme bölümü için hangisi söylenebilir?",
+   "secenekler": [
+    "Metnin en kısa bölümüdür.",
+    "Konunun açıklandığı, örneklerle desteklendiği bölümdür.",
+    "Yalnızca başlıktan oluşur."
+   ],
+   "dogru": 1,
+   "ipucu": "Akılda kalsın: Açıklar, destekler.",
+   "aciklama": "Gelişmede konu açıklanır ve desteklenir.",
+   "kavram": "Gelişme"
+  },
+  {
+   "soru": "“Kısacası, düzenli uyku sağlığımızın temelidir.” cümlesi metnin hangi bölümünde yer alır?",
+   "secenekler": [
+    "Giriş",
+    "Gelişme",
+    "Sonuç"
+   ],
+   "dogru": 2,
+   "ipucu": "“Kısacası” ne haber verir?",
+   "aciklama": "“Kısacası” toparlama ifadesidir; cümle sonuç bölümündedir.",
+   "kavram": "Sonuç"
+  },
+  {
+   "soru": "“Kış geldi. ___ sokaklar karla kaplandı.” Boşluğa hangisi gelirse akış bozulmaz?",
+   "secenekler": [
+    "Bu yüzden",
+    "Oysa",
+    "Örneğin"
+   ],
+   "dogru": 0,
+   "ipucu": "Kışın gelmesi ile karın yağması arasında nasıl bir bağ var?",
+   "aciklama": "Kar yağması kışın sonucudur; “bu yüzden” sonucu bağlar.",
+   "kavram": "Bölümler Arası Akış"
+  },
+  {
+   "soru": "“Yazın günler, kışa göre daha uzundur.” cümlesinde hangi yol kullanılmıştır?",
+   "secenekler": [
+    "Benzetme",
+    "Karşılaştırma",
+    "Tanık gösterme"
+   ],
+   "dogru": 1,
+   "ipucu": "İpucu kelimeyi ara: “göre, daha”.",
+   "aciklama": "Yaz ve kış günleri karşılaştırılmış; ipucu “göre, daha”dır.",
+   "kavram": "Yolu Metinde Bulma"
+  },
+  {
+   "soru": "“Okulumuzdaki 600 öğrenciden 450'si her gün kitap okuyor.” cümlesi anlatıma ne katar?",
+   "secenekler": [
+    "Metni eğlenceli yapar.",
+    "Konuyu değiştirir.",
+    "Düşünceyi sayılarla kanıtlar."
+   ],
+   "dogru": 2,
+   "ipucu": "Akılda kalsın: Neden kullanılmış? Sayılar ne yapar?",
+   "aciklama": "Sayısal veriler düşünceyi kanıtlayarak güçlendirir.",
+   "kavram": "Anlatıma Katkısı"
+  },
+  {
+   "soru": "“«Hayır sahibi», iyilik sever kişidir.” (s. 135) cümlesinde hangi yol kullanılmıştır?",
+   "secenekler": [
+    "Tanımlama",
+    "Karşılaştırma",
+    "Sayısal verilerden yararlanma"
+   ],
+   "dogru": 0,
+   "ipucu": "“… kişidir” kalıbı neyi gösterir?",
+   "aciklama": "Bir kavramın ne olduğu açıklanmış; bu tanımlamadır (s. 135).",
+   "kavram": "Yolu Metinde Bulma"
+  },
+  {
+   "soru": "Metnin sonuç bölümü hangi ifadeyle başlar?",
+   "secenekler": [
+    "Örneğin",
+    "Sonuç olarak",
+    "Geri dönüşüm"
+   ],
+   "dogru": 1,
+   "ipucu": "Akılda kalsın: Toparlar, vurgular.",
+   "aciklama": "“Sonuç olarak” ile başlayan son cümle metni toparlar.",
+   "kavram": "Sonuç",
+   "metinBaslik": "Geri Dönüşüm",
+   "metin": [
+    "Geri dönüşüm, kullanılmış malzemelerin yeniden işlenerek kullanılmasıdır.",
+    "Örneğin cam şişeler eritilip yeni şişelere dönüştürülür.",
+    "Kâğıt geri dönüştürülünce daha az ağaç kesilir.",
+    "Sonuç olarak geri dönüşüm, doğayı korumanın en kolay yollarından biridir."
+   ],
+   "kanit": [
+    3
+   ],
+   "kanitIpucu": "Metni toparlayan cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Sonuç bölümünün ilk ifadesini.",
+     "Anahtar kelime: sonuç. Sonuç toparlar.",
+     "Kanıt: Anlatılanları toparlayan cümleyi bul.",
+     "Şıkları ele: “Örneğin” bir örnek mi veriyor, toparlıyor mu?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde kervansaraylar neye benzetilmiştir?",
+   "secenekler": [
+    "Ticaret yollarına",
+    "Selçuklulara",
+    "Dinlenme tesislerine"
+   ],
+   "dogru": 2,
+   "ipucu": "Akılda kalsın: “gibi” kelimesini ara.",
+   "aciklama": "“bugünkü dinlenme tesisleri gibidir” cümlesinde benzetme vardır.",
+   "kavram": "Yolu Metinde Bulma",
+   "metinBaslik": "Kervansaraylar",
+   "metin": [
+    "Kervansaraylar, ticaret yolları üzerinde yolcuların konakladığı yapılardır.",
+    "Selçuklular döneminde Anadolu'da pek çok kervansaray yapılmıştır.",
+    "Bu yapılar, yolcular için bugünkü dinlenme tesisleri gibidir.",
+    "Yolcular ve hayvanları burada güvenle dinlenirdi."
+   ],
+   "kanit": [
+    2
+   ],
+   "kanitIpucu": "Benzetme ipucunun geçtiği cümleye dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Kervansarayların neye benzetildiğini.",
+     "Anahtar kelime: benzetme. İpucu: gibi.",
+     "Kanıt: “gibi” kelimesinin geçtiği cümleyi bul.",
+     "Şıkları ele: Ticaret yolları ve Selçuklular neye benzetilmeden anlatılıyor?"
+    ]
+   }
+  },
+  {
+   "soru": "Metinde sayısal verilerin anlatıma katkısı nedir?",
+   "secenekler": [
+    "Kitaplığın büyüdüğünü kanıtlar.",
+    "Kitapları sevimli gösterir.",
+    "Konuyu değiştirir."
+   ],
+   "dogru": 0,
+   "ipucu": "Sayılar neyin değiştiğini gösteriyor?",
+   "aciklama": "30'dan 75'e çıkan kitap sayısı kitaplığın büyüdüğünü kanıtlar.",
+   "kavram": "Anlatıma Katkısı",
+   "metinBaslik": "Sınıf Kitaplığı",
+   "metin": [
+    "Sınıfımızda bir kitaplık kurduk.",
+    "İlk ay 30 kitabımız vardı.",
+    "Velilerin bağışıyla bu sayı iki ayda 75'e çıktı.",
+    "Bu yüzden artık herkes her hafta yeni bir kitap okuyabiliyor."
+   ],
+   "kanit": [
+    1,
+    2
+   ],
+   "kanitIpucu": "Sayı geçen cümlelerden birine dokun.",
+   "yardim": {
+    "adimlar": [
+     "Soru ne istiyor? Sayıların anlatıma katkısını.",
+     "Anahtar kelimeler: 30, 75.",
+     "Kanıt: Sayıların geçtiği cümleleri bul. Sayı arttı mı, azaldı mı?",
+     "Şıkları ele: Sayılar bir duygu mu anlatıyor, bir değişimi mi kanıtlıyor?"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,351 @@
+{
+ "unite": 3,
+ "ders": "tr1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "t3-01",
+   "konu": "u3k1",
+   "kavram": "Duygunun Sebebi",
+   "tur": "eslestir",
+   "soru": "Hasan'ın duygularını sebepleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Vapurda çok eğlendi.",
+     "sag": "Vinçleri, sandalları seyretti."
+    },
+    {
+     "sol": "Durgunlaştı.",
+     "sag": "Yolcular bilmediği bir dilde konuşmaya başladı."
+    },
+    {
+     "sol": "Durmadan konuştu.",
+     "sag": "Eskici Türkçe biliyordu."
+    },
+    {
+     "sol": "Hıçkıra hıçkıra ağladı.",
+     "sag": "Eskici gidiyordu."
+    }
+   ],
+   "aciklama": "Her duygunun bir sebebi vardır: Neden böyle hissetti? (s. 122–125)"
+  },
+  {
+   "id": "t3-02",
+   "konu": "u3k1",
+   "kavram": "Duygunun İletişime Etkisi",
+   "tur": "dy",
+   "ifade": "Hasan halasının evinde anladığı Arapçayı hemen konuşmaya başladı.",
+   "dogru": false,
+   "duzeltme": "Hasan anladığı Arapçayı bile konuşmadı, aylarca sustu.",
+   "aciklama": "Yalnız ve kırgın olan Hasan susmayı seçti (s. 124)."
+  },
+  {
+   "id": "t3-03",
+   "konu": "u3k1",
+   "kavram": "Bölümün Başladığı Cümle",
+   "tur": "secim",
+   "soru": "“Eskici” hikâyesiyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Serimde Hasan vapurla yola çıkar.",
+    "Düğümde Hasan kimseyle anlaşamaz ve susar.",
+    "Çözümde Hasan İstanbul'a geri döner."
+   ],
+   "kok": "Yukarıdakilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Hasan İstanbul'a dönmez; çözümde eskici gider, ikisi de ağlar (s. 125)."
+  },
+  {
+   "id": "t3-04",
+   "konu": "u3k1",
+   "kavram": "Hikâye Unsurları",
+   "tur": "bosluk",
+   "havuz": [
+    "başlık",
+    "yazar"
+   ],
+   "cumleler": [
+    {
+     "c": "Olayın geçtiği yere ___ denir.",
+     "cevap": "mekân"
+    },
+    {
+     "c": "Olayın ne zaman geçtiğini ___ unsuru gösterir.",
+     "cevap": "zaman"
+    },
+    {
+     "c": "Hikâyede yaşanan, anlatılan şeye ___ denir.",
+     "cevap": "olay"
+    }
+   ],
+   "aciklama": "Hikâye unsurları: olay, kişiler, mekân, zaman (s. 130)."
+  },
+  {
+   "id": "t3-05",
+   "konu": "u3k1",
+   "kavram": "Olay Akışına Göre Özet",
+   "tur": "secim",
+   "soru": "Hangisi “Eskici”nin olay akışına uygun özetidir?",
+   "secenekler": [
+    "Eskici ağlar, sonra Hasan vapura biner, en sonda halasının evine gider.",
+    "Hasan halasının yanına gönderilir, aylarca susar, eskiciyle konuşur, eskici gidince ağlar.",
+    "Hasan trende deve görür; hikâye burada biter.",
+    "Hasan eskiciye ayakkabı yapmayı öğrenir ve İzmit'e gider."
+   ],
+   "dogru": 1,
+   "aciklama": "Özette olaylar olduğu sırayla, kısaca anlatılır (s. 129)."
+  },
+  {
+   "id": "t3-06",
+   "konu": "u3k1",
+   "kavram": "Bölümler Arası Geçiş",
+   "tur": "kisa",
+   "soru": "“Fakat, bir gün, nihayet” gibi bölümleri birbirine bağlayan ifadelere ne ad verilir?",
+   "yanit": "geçiş ifadesi",
+   "kabul": [
+    "geçiş",
+    "geçiş ifadeleri",
+    "bağlantı ifadesi"
+   ],
+   "aciklama": "Bu ifadeler okuru yeni bölüme geçirir (s. 129)."
+  },
+  {
+   "id": "t3-07",
+   "konu": "u3k2",
+   "kavram": "Kalıp İfade",
+   "tur": "eslestir",
+   "soru": "Durumu söylenen kalıp ifadeyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Hasta bir arkadaşa",
+     "sag": "Geçmiş olsun."
+    },
+    {
+     "sol": "Yemek yiyen birine",
+     "sag": "Afiyet olsun."
+    },
+    {
+     "sol": "Sabah karşılaşınca",
+     "sag": "Günaydın."
+    },
+    {
+     "sol": "Çalışan birine",
+     "sag": "Kolay gelsin."
+    }
+   ],
+   "aciklama": "Kalıp ifadeler belli durumlarda hep aynı biçimde söylenir (s. 134–135)."
+  },
+  {
+   "id": "t3-08",
+   "konu": "u3k2",
+   "kavram": "Öznel ve Nesnel İfade",
+   "tur": "dytablo",
+   "soru": "İfade nesnelse D, öznelse Y seç.",
+   "ifadeler": [
+    {
+     "s": "“Hayır işlemek”, iyi bir iş yapmak demektir.",
+     "d": true
+    },
+    {
+     "s": "Günaydın, en güzel selamdır.",
+     "d": false
+    },
+    {
+     "s": "Türkiye'nin başkenti Ankara'dır.",
+     "d": true
+    },
+    {
+     "s": "Bu metin çok sıkıcı.",
+     "d": false
+    }
+   ],
+   "aciklama": "Nesnel ifade kontrol edilebilir; öznel ifade kişisel görüştür (s. 138)."
+  },
+  {
+   "id": "t3-09",
+   "konu": "u3k2",
+   "kavram": "Eş Sesli Kelimeler",
+   "tur": "secim",
+   "soru": "Hangi cümlede “hayır” kelimesi öteki cümlelerden farklı bir anlamda kullanılmıştır?",
+   "secenekler": [
+    "Hayır, bu akşam gelemem.",
+    "Hayır, o çanta benim değil.",
+    "Hayır, bunu ben söylemedim.",
+    "Bu çeşmeyi hayır için yaptırdı."
+   ],
+   "dogru": 3,
+   "aciklama": "Son cümlede “hayır” iyilik demektir; ötekilerde olumsuz cevaptır (s. 135)."
+  },
+  {
+   "id": "t3-10",
+   "konu": "u3k2",
+   "kavram": "Deyim",
+   "tur": "secim",
+   "soru": "Deyimlerle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Kalıplaşmıştır, kelimeleri değiştirilemez.",
+    "Her zaman öğüt veren bir yargı bildirir.",
+    "Çoğunlukla gerçek anlamından ayrı bir anlam taşır."
+   ],
+   "kok": "Yukarıdakilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Öğüt veren yargı atasözüdür; deyim çoğunlukla bir durumu anlatır."
+  },
+  {
+   "id": "t3-11",
+   "konu": "u3k2",
+   "kavram": "Metindeki Anlam ve Sözlük Anlamı",
+   "tur": "bosluk",
+   "havuz": [
+    "başlangıç",
+    "kazanç"
+   ],
+   "cumleler": [
+    {
+     "c": "“Yeğlemek” ___ etmek demektir.",
+     "cevap": "tercih"
+    },
+    {
+     "c": "“Akıbet” bir işin ___ demektir.",
+     "cevap": "sonu"
+    },
+    {
+     "c": "Kelimenin anlamını önce cümleden ___ ederiz.",
+     "cevap": "tahmin"
+    }
+   ],
+   "aciklama": "Önce cümleden tahmin, sonra sözlükten kontrol (s. 136)."
+  },
+  {
+   "id": "t3-12",
+   "konu": "u3k2",
+   "kavram": "Anahtar Söz Varlığı",
+   "tur": "kisa",
+   "soru": "Bir metnin konusunu taşıyan ve metinde sık geçen kelimelere ne ad verilir?",
+   "yanit": "anahtar kelime",
+   "kabul": [
+    "anahtar kelimeler",
+    "anahtar söz varlığı",
+    "anahtar sözcük"
+   ],
+   "aciklama": "Bunlar metnin anahtar söz varlığıdır (s. 136)."
+  },
+  {
+   "id": "t3-13",
+   "konu": "u3k3",
+   "kavram": "Giriş",
+   "tur": "eslestir",
+   "soru": "Bölümü görevle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Giriş",
+     "sag": "Konuyu tanıtır, ilgi çeker."
+    },
+    {
+     "sol": "Gelişme",
+     "sag": "Konuyu açıklar ve destekler."
+    },
+    {
+     "sol": "Sonuç",
+     "sag": "Toparlar, ana fikri vurgular."
+    }
+   ],
+   "aciklama": "Bilgilendirici metnin bölümleri: giriş, gelişme, sonuç (s. 167)."
+  },
+  {
+   "id": "t3-14",
+   "konu": "u3k3",
+   "kavram": "Sonuç",
+   "tur": "secim",
+   "metin": [
+    "İletişim, insanlar arasında köprü kurar.",
+    "Dinlemek de konuşmak kadar önemlidir.",
+    "Kısacası iyi iletişim, iyi dinlemekle başlar."
+   ],
+   "soru": "Bu metinde sonuç bölümünü gösteren ifade hangisidir?",
+   "secenekler": [
+    "İletişim",
+    "Dinlemek",
+    "Kısacası",
+    "köprü"
+   ],
+   "dogru": 2,
+   "aciklama": "“Kısacası” metni toparlar; sonucun ipucudur."
+  },
+  {
+   "id": "t3-15",
+   "konu": "u3k3",
+   "kavram": "Yolu Metinde Bulma",
+   "tur": "dytablo",
+   "soru": "Cümle ile düşünceyi geliştirme yolu doğru eşleşmişse D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "“Nezaket, iletişimin sağlam zemini gibidir.” → benzetme",
+     "d": true
+    },
+    {
+     "s": "“Mevlana «Hayır söyleyin ki hayır bulasınız.» der.” → tanık gösterme",
+     "d": true
+    },
+    {
+     "s": "“Açık bir ifade, belirsiz bir ifadeden daha etkilidir.” → tanımlama",
+     "d": false
+    }
+   ],
+   "aciklama": "Üçüncü cümlede “daha” var; bu karşılaştırmadır (s. 134, 167)."
+  },
+  {
+   "id": "t3-16",
+   "konu": "u3k3",
+   "kavram": "Bölümler Arası Akış",
+   "tur": "secim",
+   "soru": "“Dinlemeden kurulan iletişim eksik kalır. ___ iletişim bir üstünlük kurma çabası değildir.” Boşluğa hangisi gelmelidir?",
+   "secenekler": [
+    "Örneğin",
+    "Çünkü",
+    "Kısacası",
+    "Oysa"
+   ],
+   "dogru": 1,
+   "aciklama": "İkinci cümle ilkinin sebebini veriyor; “çünkü” gelir (s. 167)."
+  },
+  {
+   "id": "t3-17",
+   "konu": "u3k3",
+   "kavram": "Anlatıma Katkısı",
+   "tur": "secim",
+   "soru": "Düşünceyi geliştirme yollarının anlatıma katkısıyla ilgili hangisi yanlıştır?",
+   "secenekler": [
+    "Tanık gösterme düşünceyi inandırıcı yapar.",
+    "Örneklendirme düşünceyi somutlaştırır.",
+    "Sayısal veriler düşünceyi kanıtlar.",
+    "Benzetme metni her zaman kısaltır."
+   ],
+   "dogru": 3,
+   "aciklama": "Benzetme anlatımı canlandırır; metni kısaltmak görevi değildir (s. 168)."
+  },
+  {
+   "id": "t3-18",
+   "konu": "u3k3",
+   "kavram": "Gelişme",
+   "tur": "kisa",
+   "soru": "Bilgilendirici metinde konunun açıklandığı ve örneklerle desteklendiği, en uzun bölüme ne ad verilir?",
+   "yanit": "gelişme",
+   "kabul": [
+    "gelişme bölümü"
+   ],
+   "aciklama": "Konu gelişmede açıklanır ve desteklenir (s. 167)."
+  }
+ ]
+}
