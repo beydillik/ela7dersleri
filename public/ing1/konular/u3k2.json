@@ -1,0 +1,725 @@
+{
+ "id": "u3k2",
+ "unite": "Unit 3: Biographies",
+ "baslik": "Aile ve Kariyer (get married, career, award)",
+ "sayfalar": "s. 45–62",
+ "giris": "Bu konuda yetişkinlik yıllarını anlatan kelimeleri öğreneceğiz: nişanlanmak, evlenmek, çocuk yetiştirmek, kariyer, ödül ve ölmek. Hepsi bir biyografinin ikinci yarısında geçer: {{They got married and had a son.}}",
+ "kavramlar": [
+  {
+   "ad": "get engaged",
+   "renk": "#9fe7ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='74' r='24' fill='none' stroke='#f2c14e' stroke-width='8'/><path d='M60 26l14 14-14 12-14-12z' fill='#9fe7ff' stroke='#e9ecf5' stroke-width='2'/><path d='M24 30l6 4M96 30l-6 4M60 12v8' stroke='#9fe7ff' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Nişanlanmak demektir: evlenmeden önce evlenme sözü vermek.",
+   "ek": "Önce {{get engaged}}, sonra {{get married}}.",
+   "akilda": "nişanlanmak",
+   "soru": {
+    "soru": "Evlenmeden önce yüzük takılarak verilen söze ne denir?",
+    "secenekler": [
+     "get engaged",
+     "get married",
+     "raise"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta taşlı bir yüzük vardı.",
+    "aciklama": "Nişanlanmak {{get engaged}}dir. Kitabın kelime listesinde var. (s. 46)"
+   }
+  },
+  {
+   "ad": "get married",
+   "renk": "#ff5c8a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='26' y='76' width='68' height='20' rx='4' fill='#e9ecf5'/><rect x='36' y='58' width='48' height='18' rx='4' fill='#ffd1df'/><rect x='46' y='42' width='28' height='16' rx='4' fill='#e9ecf5'/><path d='M26 86h68M36 67h48' stroke='#ff5c8a' stroke-width='3'/><path d='M60 38c-6-6-14-1-10 5l10 9 10-9c4-6-4-11-10-5z' fill='#ff5c8a'/><rect x='18' y='96' width='84' height='5' rx='2' fill='#2b3556'/></svg>",
+   "aciklama": "Evlenmek demektir. Geçmiş hâli {{got married}}.",
+   "ek": "Soru: {{When did you get married?}} (s. 52)",
+   "akilda": "evlenmek",
+   "ornek": "She got married in 2016, and she's happy now.",
+   "ornekTr": "2016'da evlendi ve şimdi mutlu. (s. 57)",
+   "soru": {
+    "soru": "{{She got married in 2016, and she's happy now.}} Emma 2016'da ne yaptı?",
+    "secenekler": [
+     "Mezun oldu",
+     "Evlendi",
+     "Taşındı"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta düğün pastası vardı.",
+    "aciklama": "{{got married}} evlendi demektir. (s. 57)"
+   },
+   "formul": [
+    [
+     {
+      "t": "get married",
+      "r": "kelime"
+     },
+     {
+      "t": "geçmiş",
+      "r": "ek"
+     },
+     {
+      "t": "got married",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "She",
+      "r": "ozne"
+     },
+     {
+      "t": "got married",
+      "r": "fiil"
+     },
+     {
+      "t": "in 2016",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "raise",
+   "renk": "#3cc4c4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='40' cy='34' r='10' fill='#ffd6b0'/><rect x='30' y='46' width='20' height='50' rx='6.0' fill='#3cc4c4'/><circle cx='80' cy='62' r='7' fill='#ffd6b0'/><rect x='73' y='71' width='14' height='25' rx='4.2' fill='#ffb44f'/><path d='M50 64q12 8 23 4' stroke='#ffd6b0' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M96 26c-3-4-9-1-7 3l7 6 7-6c2-4-4-7-7-3z' fill='#ff5c8a'/></svg>",
+   "aciklama": "Çocuk yetiştirmek, büyütmek demektir.",
+   "ek": "Kitaptaki tanım: {{To bring up children.}} (s. 55)",
+   "akilda": "yetiştirmek",
+   "ornek": "Jack raised three children alone.",
+   "ornekTr": "Jack üç çocuğu tek başına yetiştirdi. (s. 46)",
+   "soru": {
+    "soru": "{{To bring up children}} tanımı hangi kelimenin?",
+    "secenekler": [
+     "die",
+     "career",
+     "raise"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta çocuğunun elini tutan bir büyük vardı.",
+    "aciklama": "Çocuk yetiştirmek {{raise}}dir. (s. 55)"
+   },
+   "formul": [
+    [
+     {
+      "t": "raise",
+      "r": "kelime"
+     },
+     {
+      "t": "-d",
+      "r": "ek",
+      "alt": "geçmiş eki"
+     },
+     {
+      "t": "raised",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "Jack",
+      "r": "ozne"
+     },
+     {
+      "t": "raised",
+      "r": "fiil"
+     },
+     {
+      "t": "three children",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "career",
+   "renk": "#4fb3ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 100h24V82h24V64h24V46h20v54z' fill='#2b3556'/><path d='M14 100h24V82h24V64h24V46h20' stroke='#4fb3ff' stroke-width='3' fill='none'/><rect x='88' y='24' width='22' height='16' rx='3' fill='#c98a5a'/><path d='M94 24v-4h10v4' stroke='#c98a5a' stroke-width='3' fill='none'/><path d='M22 70l22-22' stroke='#3cc47c' stroke-width='4' stroke-linecap='round'/><path d='M34 46h11v11' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Kariyer, meslek hayatı demektir: bir işte yıllar içinde ilerlemek.",
+   "ek": "Kitapta: {{an excellent career in photography}} fotoğrafçılıkta mükemmel bir kariyer. (s. 46)",
+   "akilda": "kariyer",
+   "ornek": "My friend James has an excellent career in photography.",
+   "ornekTr": "Arkadaşım James'in fotoğrafçılıkta mükemmel bir kariyeri var. (s. 46)",
+   "soru": {
+    "soru": "{{James has an excellent career in photography.}} {{career}} ne demek?",
+    "secenekler": [
+     "kariyer, meslek hayatı",
+     "ödül",
+     "nişan"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta yukarı çıkan basamaklar ve çanta vardı.",
+    "aciklama": "{{career}} kariyer, meslek hayatıdır. (s. 46)"
+   }
+  },
+  {
+   "ad": "award",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M38 22h44v18c0 16-10 26-22 26S38 56 38 40z' fill='#f2c14e'/><path d='M38 30H26c0 14 6 18 14 18M82 30h12c0 14-6 18-14 18' stroke='#f2c14e' stroke-width='5' fill='none'/><rect x='54' y='64' width='12' height='14' fill='#f2c14e'/><rect x='40' y='78' width='40' height='10' rx='3' fill='#c98a5a'/><rect x='34' y='88' width='52' height='10' rx='3' fill='#8a5a34'/><path d='M60 32l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z' fill='#fff7d6'/></svg>",
+   "aciklama": "Ödül demektir: bir yarışma ya da başarı için verilen şey.",
+   "ek": "Kitaptaki tanım: {{A reward for winning a contest or competition.}} (s. 55) Ödül kazanmak: {{win an award}}.",
+   "akilda": "ödül",
+   "ornek": "He gave concerts in many countries and won several music awards.",
+   "ornekTr": "Birçok ülkede konser verdi ve birkaç müzik ödülü kazandı. (s. 59)",
+   "soru": {
+    "soru": "{{He won several music awards.}} Oliver ne kazandı?",
+    "secenekler": [
+     "Bir gitar",
+     "Birkaç müzik ödülü",
+     "Bir film"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta bir kupa vardı.",
+    "aciklama": "{{awards}} ödüller demektir. (s. 59)"
+   },
+   "formul": [
+    [
+     {
+      "t": "He",
+      "r": "ozne"
+     },
+     {
+      "t": "won",
+      "r": "fiil",
+      "alt": "kazandı"
+     },
+     {
+      "t": "several music awards",
+      "r": "kelime"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "die",
+   "renk": "#9aa7c7",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='52' y='50' width='16' height='44' rx='3' fill='#e9ecf5'/><path d='M60 24c6 8 7 14 0 20-7-6-6-12 0-20z' fill='#f2c14e'/><ellipse cx='60' cy='96' rx='26' ry='6' fill='#9aa7c7'/><path d='M26 96V78' stroke='#3cc47c' stroke-width='3'/><circle cx='26' cy='74' r='6' fill='#c7b8ff'/><circle cx='26' cy='74' r='2.5' fill='#f2c14e'/><path d='M94 96V82' stroke='#3cc47c' stroke-width='3'/><circle cx='94' cy='78' r='5' fill='#ffd1df'/><circle cx='94' cy='78' r='2' fill='#f2c14e'/></svg>",
+   "aciklama": "Ölmek demektir. Geçmiş hâli {{died}}.",
+   "ek": "Kitaptaki tanım: {{To stop living, to pass away.}} (s. 55) Biyografiler genelde bununla biter.",
+   "akilda": "ölmek",
+   "ornek": "L. Braille died in 1852.",
+   "ornekTr": "L. Braille 1852'de öldü. (s. 49)",
+   "soru": {
+    "soru": "{{L. Braille died in 1852.}} 1852'de ne oldu?",
+    "secenekler": [
+     "Braille doğdu",
+     "Braille okula başladı",
+     "Braille öldü"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta yanan bir mum ve çiçekler vardı.",
+    "aciklama": "{{died}} öldü demektir. (s. 49)"
+   },
+   "formul": [
+    [
+     {
+      "t": "die",
+      "r": "kelime"
+     },
+     {
+      "t": "-d",
+      "r": "ek",
+      "alt": "geçmiş eki"
+     },
+     {
+      "t": "died",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "He",
+      "r": "ozne"
+     },
+     {
+      "t": "died",
+      "r": "fiil"
+     },
+     {
+      "t": "in 1938",
+      "r": "diger"
+     }
+    ]
+   ]
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kelime aileyle mi, iş ve başarıyla mı ilgili?",
+   "kutular": [
+    {
+     "etiket": "Aile",
+     "uyeler": [
+      "get engaged",
+      "get married",
+      "raise"
+     ]
+    },
+    {
+     "etiket": "İş ve başarı",
+     "uyeler": [
+      "career",
+      "award"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Marie Curie iki yeni element keşfetti ve 1911'de Kimya dalında Nobel Ödülü'nü kazandı. (s. 58)",
+  "Remziye Hisar ilk Türk kimya profesörüydü ve Marie Curie'nin tek Türk öğrencisiydi. (s. 52)"
+ ],
+ "akildaKalsin": [
+  "Önce {{get engaged}} nişanlanmak, sonra {{get married}} evlenmek.",
+  "{{get married}} → {{got married}} evlendi.",
+  "{{raise}} children: çocuk yetiştirmek → {{raised}}.",
+  "{{career}} meslek hayatı; {{award}} ödül: {{won an award}}.",
+  "{{die}} → {{died}}: {{He died in 1938.}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{get engaged}} ile {{get married}} farkı ne?",
+   "cevap": "{{get engaged}} nişanlanmak, {{get married}} evlenmek. Önce nişan, sonra evlilik gelir. (s. 46)"
+  },
+  {
+   "soru": "{{award}} ile {{prize}} aynı mı?",
+   "cevap": "İkisi de ödül demek. Kitapta {{music awards}} (s. 59) ve {{Nobel Prize}} (s. 58) geçiyor."
+  },
+  {
+   "soru": "{{died}} ile {{dead}} aynı mı?",
+   "cevap": "Hayır. {{died}} öldü (fiil): {{He died in 1938.}} (s. 54) {{dead}} ise ölü demek, fiil değil."
+  },
+  {
+   "soru": "{{alone}} ne demek?",
+   "cevap": "Yalnız, kimse olmadan. Kitaptaki tanım: {{Being without anyone else.}} (s. 55)"
+  },
+  {
+   "soru": "Oliver Bennett eşiyle nerede tanıştı?",
+   "cevap": "Londra'daki bir müzik festivalinde. Sonra evlendiler ve bir oğulları oldu. (s. 59)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Ailenden birinin hayatını İngilizce iki cümleyle anlat: ne zaman evlendi, kaç çocuk yetiştirdi ya da nasıl bir kariyeri var?",
+   "ornekCevap": "My grandmother got married in 1975. She raised four children.",
+   "anahtarlar": [
+    "married",
+    "raised",
+    "career"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "They got married and had a son.",
+    "They got engaged and had a son.",
+    "They got married and had a daughter."
+   ],
+   "dogru": 0,
+   "ipucu": "Evlendiler mi, nişanlandılar mı? Oğul mu, kız mı? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{They got married and had a son.}} (s. 59)",
+   "dinle": "They got married and had a son.",
+   "kavram": "get married"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "He won a music award.",
+    "He won several music awards.",
+    "He gave several music concerts."
+   ],
+   "dogru": 1,
+   "ipucu": "Bir ödül mü, birkaç ödül mü? Kazandı mı, konser mi verdi?",
+   "aciklama": "Duyduğun cümle {{He won several music awards.}} (s. 59)",
+   "dinle": "He won several music awards.",
+   "kavram": "award"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "He was born in 2010.",
+    "He died in 2010 at the age of 65.",
+    "He died in 2010 at the age of 72."
+   ],
+   "dogru": 2,
+   "ipucu": "Doğdu mu, öldü mü? Kaç yaşında?",
+   "aciklama": "Duyduğun cümle {{He died in 2010 at the age of 72.}} (s. 59)",
+   "dinle": "He died in 2010 at the age of 72.",
+   "kavram": "die"
+  },
+  {
+   "soru": "{{Marcy and Robert ___ in a beautiful ceremony in Los Angeles last week.}}",
+   "secenekler": [
+    "got married",
+    "raised two kids",
+    "received an award"
+   ],
+   "dogru": 0,
+   "ipucu": "Güzel bir törenle ne yapılır? Kartta düğün pastası vardı.",
+   "aciklama": "Törenle evlendiler: {{got married}}. (s. 61)",
+   "kavram": "get married"
+  },
+  {
+   "soru": "{{Jack ___ three children alone. It was very difficult.}} Hangisi uygun?",
+   "secenekler": [
+    "died",
+    "raised",
+    "got engaged"
+   ],
+   "dogru": 1,
+   "ipucu": "Üç çocukla tek başına ne yaptı?",
+   "aciklama": "Üç çocuğu tek başına yetiştirdi: {{raised}}. (s. 46)",
+   "kavram": "raise"
+  },
+  {
+   "soru": "{{A reward for winning a contest or competition}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "career",
+    "alone",
+    "award"
+   ],
+   "dogru": 2,
+   "ipucu": "Yarışmayı kazanana verilen şey. Kartta kupa vardı.",
+   "aciklama": "Yarışma için verilen ödül {{award}}dır. (s. 55)",
+   "kavram": "award"
+  },
+  {
+   "soru": "Bir çift için hangisi önce olur?",
+   "secenekler": [
+    "get engaged",
+    "get married",
+    "raise children"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartta: önce yüzük ve söz, sonra düğün.",
+   "aciklama": "Önce nişanlanılır ({{get engaged}}), sonra evlenilir ({{get married}}).",
+   "kavram": "get engaged"
+  },
+  {
+   "soru": "{{My friend James has an excellent ___ in photography.}}",
+   "secenekler": [
+    "award",
+    "career",
+    "biography"
+   ],
+   "dogru": 1,
+   "ipucu": "Fotoğrafçılıkta yıllar süren meslek hayatı: hangi kelimeydi?",
+   "aciklama": "Meslek hayatı {{career}}: {{an excellent career in photography}}. (s. 46)",
+   "kavram": "career"
+  },
+  {
+   "soru": "{{die}} kelimesinin geçmiş hâli hangisi?",
+   "secenekler": [
+    "dead",
+    "dies",
+    "died"
+   ],
+   "dogru": 2,
+   "ipucu": "Sonuna yalnızca {{-d}} eklenir.",
+   "aciklama": "{{die}} → {{died}}: {{L. Braille died in 1852.}} (s. 49)",
+   "kavram": "die",
+   "yardim": {
+    "adimlar": [
+     "Geçmiş hâlini soruyor.",
+     "{{die}} sonuna {{-d}} alır.",
+     "{{dead}} fiil değil, ölü demek."
+    ]
+   }
+  },
+  {
+   "soru": "{{Jessica Milton is a brilliant musician. She's got five music ___ so far.}}",
+   "secenekler": [
+    "awards",
+    "alone",
+    "careers"
+   ],
+   "dogru": 0,
+   "ipucu": "Başarılı bir müzisyen ne kazanır?",
+   "aciklama": "Beş müzik ödülü: {{awards}}. (s. 62)",
+   "kavram": "award"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "biography",
+   "tr": "biyografi, hayat hikâyesi"
+  },
+  {
+   "en": "alone",
+   "tr": "yalnız, tek başına",
+   "ornek": "Jack raised three children alone.",
+   "ornekTr": "Jack üç çocuğu tek başına yetiştirdi. (s. 46)"
+  },
+  {
+   "en": "genius",
+   "tr": "dahi"
+  },
+  {
+   "en": "brilliant",
+   "tr": "parlak, çok başarılı",
+   "ornek": "Jessica Milton is a brilliant musician.",
+   "ornekTr": "Jessica Milton çok başarılı bir müzisyendir. (s. 62)"
+  },
+  {
+   "en": "prize",
+   "tr": "ödül",
+   "ornek": "In 1911, she won the Nobel Prize in Chemistry for discovering these elements.",
+   "ornekTr": "1911'de bu elementleri keşfettiği için Kimya dalında Nobel Ödülü'nü kazandı. (s. 58)"
+  },
+  {
+   "en": "get retired",
+   "tr": "emekli olmak"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "She got married in 2016.",
+   "tr": "2016'da evlendi. (s. 57)"
+  },
+  {
+   "en": "They got married and had a son.",
+   "tr": "Evlendiler ve bir oğulları oldu. (s. 59)"
+  },
+  {
+   "en": "Jack raised three children alone.",
+   "tr": "Jack üç çocuğu tek başına yetiştirdi. (s. 46)"
+  },
+  {
+   "en": "James has an excellent career in photography.",
+   "tr": "James'in fotoğrafçılıkta mükemmel bir kariyeri var. (s. 46)"
+  },
+  {
+   "en": "He won several music awards.",
+   "tr": "Birkaç müzik ödülü kazandı. (s. 59)"
+  },
+  {
+   "en": "He died in 1938.",
+   "tr": "1938'de öldü. (s. 54)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "She get married in 2016, and she's happy now.",
+   "yanlis": "get",
+   "secenekler": [
+    "got",
+    "gets",
+    "getting"
+   ],
+   "dogru": 0,
+   "tr": "2016'da evlendi ve şimdi mutlu.",
+   "aciklama": "2016 geçmiş: {{got married}}. (s. 57)"
+  },
+  {
+   "cumle": "Jack raise three children alone.",
+   "yanlis": "raise",
+   "secenekler": [
+    "raising",
+    "raised",
+    "rises"
+   ],
+   "dogru": 1,
+   "tr": "Jack üç çocuğu tek başına yetiştirdi.",
+   "aciklama": "Geçmişte yetiştirdi: {{raised}}. (s. 46)"
+  },
+  {
+   "cumle": "L. Braille dead in 1852.",
+   "yanlis": "dead",
+   "secenekler": [
+    "dies",
+    "die",
+    "died"
+   ],
+   "dogru": 2,
+   "tr": "L. Braille 1852'de öldü.",
+   "aciklama": "{{dead}} fiil değil; öldü {{died}}. (s. 49)"
+  },
+  {
+   "cumle": "He gave concerts in many countries and won several music careers.",
+   "yanlis": "careers",
+   "secenekler": [
+    "awards",
+    "families",
+    "biographies"
+   ],
+   "dogru": 0,
+   "tr": "Birçok ülkede konser verdi ve birkaç müzik ödülü kazandı.",
+   "aciklama": "Kazanılan şey ödüldür: {{awards}}. (s. 59)"
+  },
+  {
+   "cumle": "My friend James has an excellent award in photography.",
+   "yanlis": "award",
+   "secenekler": [
+    "genius",
+    "career",
+    "alone"
+   ],
+   "dogru": 1,
+   "tr": "Arkadaşım James'in fotoğrafçılıkta mükemmel bir kariyeri var.",
+   "aciklama": "Meslek hayatı {{career}}. (s. 46)"
+  },
+  {
+   "cumle": "Jessica Milton is a alone musician.",
+   "yanlis": "alone",
+   "secenekler": [
+    "career",
+    "award",
+    "brilliant"
+   ],
+   "dogru": 2,
+   "tr": "Jessica Milton çok başarılı bir müzisyendir.",
+   "aciklama": "Başarılı müzisyen: {{a brilliant musician}}. (s. 62)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Oliver Bennett",
+  "sayfa": "s. 59",
+  "sozluk": {
+   "talented": "yetenekli",
+   "bookshop": "kitapçı",
+   "record company": "plak şirketi",
+   "realised": "fark etti",
+   "manager": "menajer",
+   "pop star": "pop yıldızı",
+   "released": "çıkardı",
+   "first record": "ilk plak",
+   "appeared": "rol aldı, göründü",
+   "music festival": "müzik festivali",
+   "got married": "evlendi",
+   "supported": "destekledi",
+   "charities": "hayır kurumları",
+   "stopped performing": "sahneye çıkmayı bıraktı",
+   "at the age of": "… yaşında"
+  },
+  "bolumler": [
+   {
+    "baslik": "Gençlik yılları",
+    "cumleler": [
+     {
+      "en": "Oliver Bennett was born in Manchester on 12th March in 1938.",
+      "tr": "Oliver Bennett 12 Mart 1938'de Manchester'da doğdu."
+     },
+     {
+      "en": "His family did not have much money, so he started working when he was young.",
+      "tr": "Ailesinin çok parası yoktu, bu yüzden küçükken çalışmaya başladı."
+     },
+     {
+      "en": "He worked in a small bookshop and helped his family.",
+      "tr": "Küçük bir kitapçıda çalıştı ve ailesine yardım etti."
+     },
+     {
+      "en": "Oliver was very talented in music, so his father bought him a guitar.",
+      "tr": "Oliver müzikte çok yetenekliydi, bu yüzden babası ona bir gitar aldı."
+     },
+     {
+      "en": "He learned to play it very well.",
+      "tr": "Onu çok iyi çalmayı öğrendi."
+     },
+     {
+      "en": "When his family moved to London, he met Robert Green there.",
+      "tr": "Ailesi Londra'ya taşınınca orada Robert Green ile tanıştı."
+     },
+     {
+      "en": "He worked for a record company and realised that Oliver was a talented singer.",
+      "tr": "O bir plak şirketinde çalışıyordu ve Oliver'ın yetenekli bir şarkıcı olduğunu fark etti."
+     },
+     {
+      "en": "Some time later, Oliver met David Brown.",
+      "tr": "Bir süre sonra Oliver, David Brown ile tanıştı."
+     },
+     {
+      "en": "He became his manager and helped him become a famous pop star.",
+      "tr": "O, Oliver'ın menajeri oldu ve ünlü bir pop yıldızı olmasına yardım etti."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Oliver ilk olarak nerede çalıştı?",
+      "secenekler": [
+       "Bir plak şirketinde",
+       "Küçük bir kitapçıda",
+       "Bir müzik festivalinde"
+      ],
+      "dogru": 1,
+      "ipucu": "{{He worked in …}} cümlesini bul.",
+      "aciklama": "{{He worked in a small bookshop and helped his family.}}"
+     },
+     {
+      "soru": "David Brown, Oliver için ne oldu?",
+      "secenekler": [
+       "Menajeri",
+       "Babası",
+       "Oğlu"
+      ],
+      "dogru": 0,
+      "ipucu": "{{He became his …}} cümlesini bul.",
+      "aciklama": "{{He became his manager.}} David Brown onun menajeri oldu."
+     }
+    ]
+   },
+   {
+    "baslik": "Ünlü bir şarkıcı",
+    "cumleler": [
+     {
+      "en": "In 1960, Oliver released his first record.",
+      "tr": "1960'ta Oliver ilk plağını çıkardı."
+     },
+     {
+      "en": "It became very popular.",
+      "tr": "Plak çok popüler oldu."
+     },
+     {
+      "en": "It was also the year he appeared in his first film.",
+      "tr": "Aynı yıl ilk filminde de rol aldı."
+     },
+     {
+      "en": "Oliver met his wife, Helen, at a music festival in London.",
+      "tr": "Oliver eşi Helen ile Londra'da bir müzik festivalinde tanıştı."
+     },
+     {
+      "en": "They got married and had a son.",
+      "tr": "Evlendiler ve bir oğulları oldu."
+     },
+     {
+      "en": "Although Oliver was a famous singer, he always supported young musicians and helped many charities.",
+      "tr": "Oliver ünlü bir şarkıcı olmasına rağmen her zaman genç müzisyenleri destekledi ve birçok hayır kurumuna yardım etti."
+     },
+     {
+      "en": "He gave concerts in many countries and won several music awards.",
+      "tr": "Birçok ülkede konser verdi ve birkaç müzik ödülü kazandı."
+     },
+     {
+      "en": "He stopped performing when he was 65 and spent more time with his family.",
+      "tr": "65 yaşında sahneye çıkmayı bıraktı ve ailesiyle daha çok vakit geçirdi."
+     },
+     {
+      "en": "He died in 2010 at the age of 72.",
+      "tr": "2010'da 72 yaşında öldü."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Oliver ile Helen evlendikten sonra ne oldu?",
+      "secenekler": [
+       "Bir oğulları oldu",
+       "Paris'e taşındılar",
+       "Bir kitapçı açtılar"
+      ],
+      "dogru": 0,
+      "ipucu": "{{They got married and …}} cümlesini bul.",
+      "aciklama": "{{They got married and had a son.}} Bir oğulları oldu."
+     },
+     {
+      "soru": "Oliver kaç yaşında öldü?",
+      "secenekler": [
+       "65 yaşında",
+       "72 yaşında",
+       "38 yaşında"
+      ],
+      "dogru": 1,
+      "ipucu": "{{at the age of}} kalıbını bul. 65 sahneyi bıraktığı yaş.",
+      "aciklama": "{{He died in 2010 at the age of 72.}}"
+     }
+    ]
+   }
+  ]
+ }
+}

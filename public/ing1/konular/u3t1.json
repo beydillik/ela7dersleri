@@ -1,0 +1,223 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "Unit 3: Biographies",
+ "baslik": "Ara Durak 1: Hayat Olayları",
+ "sayfalar": "Konu 1–2 · s. 45–62",
+ "giris": "İki konu bitti! Kısa bir mola verelim. Önce özetleri oku ve kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "İlk konuda hayatın ilk yıllarını, ikinci konuda yetişkinlik yıllarını öğrendik. Bir biyografi bu olayları sırayla anlatır: doğdu, büyüdü, mezun oldu, evlendi, öldü. Bu durağın sırrı: olayları doğru sıraya koymak ve geçmiş hâlleriyle söylemek.",
+ "kapsar": [
+  "u3k1",
+  "u3k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Doğmak {{was born}}; büyümek {{grew up}}.",
+    "Taşınmak {{moved}}; kalmak {{stayed}}.",
+    "Okumak {{studied}}; mezun olmak {{graduated from}}."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Nişanlanmak {{get engaged}}; evlenmek {{got married}}.",
+    "Çocuk yetiştirmek {{raised}}; meslek hayatı {{career}}.",
+    "Ödül {{award}}; ölmek {{died}}."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu olay hayatın ilk yıllarında mı, yetişkinlikte mi olur?",
+   "kutular": [
+    {
+     "etiket": "İlk yıllar",
+     "uyeler": [
+      "be born",
+      "grow up",
+      "study",
+      "graduate"
+     ]
+    },
+    {
+     "etiket": "Yetişkinlik",
+     "uyeler": [
+      "get married",
+      "raise",
+      "career",
+      "award"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "She got married in 2016, and she's happy now.",
+    "She graduated in 2016, and she's happy now.",
+    "She got married in 2006, and she's happy now."
+   ],
+   "dogru": 0,
+   "ipucu": "Evlendi mi, mezun mu oldu? Hangi yıl? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{She got married in 2016, and she's happy now.}} (s. 57)",
+   "dinle": "She got married in 2016, and she's happy now.",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "get married"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "graduate"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Emma grew up in Italy in 1989.",
+    "Emma was born in Italy in 1989.",
+    "Emma was born in England in 1989."
+   ],
+   "dogru": 1,
+   "ipucu": "Doğdu mu, büyüdü mü? Hangi ülke?",
+   "aciklama": "Duyduğun cümle {{Emma was born in Italy in 1989.}} (s. 57)",
+   "dinle": "Emma was born in Italy in 1989.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "be born"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "grow up"
+    }
+   ]
+  },
+  {
+   "soru": "Bill 2008'de mezun oldu, 2012'de evlendi. Hangisi doğru?",
+   "secenekler": [
+    "Bill got married in 2008.",
+    "Bill graduated before he got married.",
+    "Bill got married before he graduated."
+   ],
+   "dogru": 1,
+   "ipucu": "Hangi yıl önce geliyor: 2008 mi, 2012 mi?",
+   "aciklama": "2008, 2012'den önce: önce mezun oldu, sonra evlendi. (s. 56)",
+   "yardim": {
+    "adimlar": [
+     "{{graduated}} hangi yıl? 2008.",
+     "{{got married}} hangi yıl? 2012.",
+     "Küçük yıl önce olur. {{before}} önce demek."
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "graduate"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "get married"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru yazılmış?",
+   "secenekler": [
+    "He grow up in Manchester and got married in London.",
+    "He grew up in Manchester and get married in London.",
+    "He grew up in Manchester and got married in London."
+   ],
+   "dogru": 2,
+   "ipucu": "İki fiil de geçmiş hâlde olmalı.",
+   "aciklama": "Geçmiş hâller: {{grew up}} ve {{got married}}. (s. 57, s. 59)",
+   "yardim": {
+    "adimlar": [
+     "Cümlede iki fiil var: büyümek ve evlenmek.",
+     "Biyografi geçmişi anlatır; ikisi de geçmiş hâlde olmalı.",
+     "{{grow up}} ve {{get married}}'in geçmiş hâllerini hatırla."
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "grow up"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "get married"
+    }
+   ]
+  },
+  {
+   "soru": "{{I was born in Birmingham. Then, we ___ to Manchester in 1954.}}",
+   "secenekler": [
+    "moved",
+    "died",
+    "raised"
+   ],
+   "dogru": 0,
+   "ipucu": "Birmingham'dan Manchester'a gittiler. Başka şehre gitmek?",
+   "aciklama": "Başka şehre gittiler: {{moved}}. (s. 52)",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "move"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "be born"
+    }
+   ]
+  },
+  {
+   "soru": "Oliver Bennett'in biyografisine göre hangisi doğru?",
+   "secenekler": [
+    "Oliver won several music awards.",
+    "Oliver was born in London.",
+    "Oliver never got married."
+   ],
+   "dogru": 0,
+   "ipucu": "Oliver Manchester'da doğdu ve Helen ile evlendi. Kalan şık?",
+   "aciklama": "{{He won several music awards.}} Manchester'da doğdu, Helen ile evlendi. (s. 59)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "award"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "be born"
+    }
+   ]
+  },
+  {
+   "soru": "{{Louis Braille ___ in 1809 and ___ in 1852.}}",
+   "secenekler": [
+    "died / was born",
+    "graduated / was born",
+    "was born / died"
+   ],
+   "dogru": 2,
+   "ipucu": "Hayat doğumla başlar, ölümle biter. Hangi yıl önce?",
+   "aciklama": "1809'da doğdu, 1852'de öldü: {{was born}} / {{died}}. (s. 49)",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "be born"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "die"
+    }
+   ]
+  }
+ ]
+}

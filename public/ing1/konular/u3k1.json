@@ -1,0 +1,804 @@
+{
+ "id": "u3k1",
+ "unite": "Unit 3: Biographies",
+ "baslik": "Doğumdan Okula (born, grow up, graduate)",
+ "sayfalar": "s. 45–62",
+ "giris": "Bu ünitede ünlü insanların hayat hikâyelerini, yani biyografilerini okuyacağız. Bu konuda hayatın ilk yıllarını anlatan kelimeler var: doğmak, büyümek, taşınmak, kalmak, okumak, mezun olmak. Biyografi geçmişi anlatır: {{Emma was born in Italy in 1989.}}",
+ "kavramlar": [
+  {
+   "ad": "be born",
+   "renk": "#ff8fb1",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M92 18l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z' fill='#f2c14e'/><circle cx='44' cy='60' r='11' fill='#ffd6b0'/><circle cx='40' cy='59' r='1.6' fill='#1b2340'/><circle cx='48' cy='59' r='1.6' fill='#1b2340'/><path d='M41 64q3 3 6 0' stroke='#1b2340' stroke-width='1.6' fill='none' stroke-linecap='round'/><rect x='52' y='54' width='42' height='16' rx='7' fill='#ff8fb1'/><rect x='20' y='44' width='80' height='6' rx='3' fill='#c98a5a'/><rect x='20' y='70' width='80' height='8' rx='3' fill='#c98a5a'/><rect x='30' y='48' width='3' height='24' fill='#c98a5a'/><rect x='66' y='48' width='3' height='24' fill='#c98a5a'/><rect x='78' y='48' width='3' height='24' fill='#c98a5a'/><rect x='90' y='48' width='3' height='24' fill='#c98a5a'/><rect x='22' y='78' width='6' height='18' rx='2' fill='#c98a5a'/><rect x='92' y='78' width='6' height='18' rx='2' fill='#c98a5a'/></svg>",
+   "aciklama": "Doğmak demektir. Geçmişte olduğu için hep {{was born}} ya da {{were born}} deriz.",
+   "ek": "Soru: {{When were you born?}} Cevap: {{I was born in 1987.}}",
+   "akilda": "doğmak",
+   "ornek": "Louis Braille was born in 1809 in France.",
+   "ornekTr": "Louis Braille 1809'da Fransa'da doğdu. (s. 49)",
+   "soru": {
+    "soru": "{{Louis Braille was born in 1809 in France.}} Bu cümle ne anlatıyor?",
+    "secenekler": [
+     "Braille'in doğduğu yıl ve yer",
+     "Braille'in öldüğü yıl",
+     "Braille'in okula başladığı yıl"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta {{born}} kelimesinin anlamı vardı.",
+    "aciklama": "{{was born}} doğdu demektir: 1809'da Fransa'da doğdu. (s. 49)"
+   },
+   "formul": [
+    [
+     {
+      "t": "I / He / She",
+      "r": "ozne"
+     },
+     {
+      "t": "was",
+      "r": "yard"
+     },
+     {
+      "t": "born",
+      "r": "fiil"
+     },
+     {
+      "t": "in 1809",
+      "r": "diger",
+      "alt": "yıl ya da yer"
+     }
+    ],
+    [
+     {
+      "t": "We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "were",
+      "r": "yard"
+     },
+     {
+      "t": "born",
+      "r": "fiil"
+     },
+     {
+      "t": "in Italy",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "grow up",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='74' r='6' fill='#ffd6b0'/><rect x='20' y='82' width='12' height='16' rx='3.6' fill='#3cc47c'/><circle cx='58' cy='56' r='8' fill='#ffd6b0'/><rect x='50' y='66' width='16' height='32' rx='4.8' fill='#3cc47c'/><circle cx='92' cy='32' r='9' fill='#ffd6b0'/><rect x='83' y='43' width='18' height='55' rx='5.4' fill='#3cc47c'/><path d='M16 106h82' stroke='#e9ecf5' stroke-width='3' stroke-linecap='round'/><path d='M94 101l7 5-7 5' stroke='#e9ecf5' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Büyümek, çocukluğunu bir yerde geçirmek demektir. Geçmiş hâli {{grew up}}.",
+   "ek": "Kitapta: {{I grew up in Venice.}} Venedik'te büyüdüm. (s. 62)",
+   "akilda": "büyümek",
+   "ornek": "She grew up there till she was twelve.",
+   "ornekTr": "On iki yaşına kadar orada büyüdü. (s. 57)",
+   "soru": {
+    "soru": "{{I grew up in Venice.}} {{grew up}} ne demek?",
+    "secenekler": [
+     "doğdum",
+     "büyüdüm",
+     "taşındım"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta küçükten büyüğe sıralanmış üç kişi vardı.",
+    "aciklama": "{{grew up}} büyüdüm demektir. (s. 62)"
+   },
+   "formul": [
+    [
+     {
+      "t": "grow up",
+      "r": "kelime"
+     },
+     {
+      "t": "geçmiş",
+      "r": "ek"
+     },
+     {
+      "t": "grew up",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "She",
+      "r": "ozne"
+     },
+     {
+      "t": "grew up",
+      "r": "fiil",
+      "alt": "büyüdü"
+     },
+     {
+      "t": "in Italy",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "move",
+   "renk": "#4fb3ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 62l18-16 18 16z' fill='#ff7a33'/><rect x='14' y='62' width='28' height='26' fill='#e9ecf5'/><rect x='24' y='72' width='8' height='16' fill='#2b3556'/><path d='M74 62l18-16 18 16z' fill='#4fb3ff'/><rect x='78' y='62' width='28' height='26' fill='#e9ecf5'/><rect x='88' y='72' width='8' height='16' fill='#2b3556'/><path d='M48 78h20' stroke='#4fb3ff' stroke-width='4' stroke-linecap='round' stroke-dasharray='5 4'/><path d='M64 72l7 6-7 6' stroke='#4fb3ff' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='48' y='34' width='22' height='18' rx='3' fill='#c98a5a'/><path d='M48 42h22' stroke='#8a5a34' stroke-width='2'/><rect x='10' y='88' width='100' height='4' rx='2' fill='#2b3556'/></svg>",
+   "aciklama": "Taşınmak demektir: bir evden ya da şehirden başka bir yere gitmek.",
+   "ek": "Kitaptaki tanım: {{To go from one residence or location to another.}} (s. 55)",
+   "akilda": "taşınmak",
+   "ornek": "Then, we moved to Manchester in 1954.",
+   "ornekTr": "Sonra 1954'te Manchester'a taşındık. (s. 52)",
+   "soru": {
+    "soru": "{{We moved to Manchester in 1954.}} 1954'te ne oldu?",
+    "secenekler": [
+     "Manchester'da doğdular",
+     "Manchester'dan hiç ayrılmadılar",
+     "Manchester'a taşındılar"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta bir evden ötekine giden ok vardı.",
+    "aciklama": "{{moved}} taşındı demektir. (s. 52)"
+   },
+   "formul": [
+    [
+     {
+      "t": "move",
+      "r": "kelime"
+     },
+     {
+      "t": "-d",
+      "r": "ek",
+      "alt": "geçmiş eki"
+     },
+     {
+      "t": "moved",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "We",
+      "r": "ozne"
+     },
+     {
+      "t": "moved",
+      "r": "fiil"
+     },
+     {
+      "t": "to Manchester",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "stay",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 56l38-32 38 32z' fill='#f2c14e'/><rect x='30' y='56' width='60' height='42' fill='#e9ecf5'/><rect x='44' y='64' width='32' height='22' rx='3' fill='#ffe9a8'/><circle cx='60' cy='72' r='5' fill='#ffd6b0'/><rect x='54' y='78' width='12' height='8' rx='3' fill='#4fb3ff'/><circle cx='98' cy='26' r='12' fill='#2b3556' stroke='#e9ecf5' stroke-width='2'/><path d='M98 19v7l5 3' stroke='#e9ecf5' stroke-width='2.4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Kalmak demektir: bir yerden ayrılmamak, orada durmak. {{move}}'un tersi gibi.",
+   "ek": "Geçmiş hâli {{stayed}}: kaldı.",
+   "akilda": "kalmak",
+   "ornek": "His teachers said he had difficulties in learning, so he left school and stayed at home most of the time.",
+   "ornekTr": "Öğretmenleri onun öğrenmekte zorlandığını söyledi, bu yüzden okulu bıraktı ve çoğu zaman evde kaldı. (s. 51)",
+   "soru": {
+    "soru": "{{He stayed at home most of the time.}} Ne yaptı?",
+    "secenekler": [
+     "Çoğu zaman evde kaldı",
+     "Evden taşındı",
+     "Okuldan mezun oldu"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta pencereden bakan, evden çıkmayan biri vardı.",
+    "aciklama": "{{stayed}} kaldı demektir: çoğu zaman evde kaldı. (s. 51)"
+   },
+   "formul": [
+    [
+     {
+      "t": "stay",
+      "r": "kelime"
+     },
+     {
+      "t": "-ed",
+      "r": "ek",
+      "alt": "geçmiş eki"
+     },
+     {
+      "t": "stayed",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "He",
+      "r": "ozne"
+     },
+     {
+      "t": "stayed",
+      "r": "fiil"
+     },
+     {
+      "t": "at home",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "study",
+   "renk": "#b48cff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 38L18 30v56l42 8z' fill='#e9ecf5'/><path d='M60 38l42-8v56l-42 8z' fill='#d6dbea'/><path d='M60 38v56' stroke='#b48cff' stroke-width='3'/><path d='M26 44l26 4' stroke='#9aa7c7' stroke-width='2'/><path d='M68 48l26 -4' stroke='#9aa7c7' stroke-width='2'/><path d='M26 54l26 4' stroke='#9aa7c7' stroke-width='2'/><path d='M68 58l26 -4' stroke='#9aa7c7' stroke-width='2'/><path d='M26 64l26 4' stroke='#9aa7c7' stroke-width='2'/><path d='M68 68l26 -4' stroke='#9aa7c7' stroke-width='2'/><path d='M26 74l26 4' stroke='#9aa7c7' stroke-width='2'/><path d='M68 78l26 -4' stroke='#9aa7c7' stroke-width='2'/><rect x='78' y='14' width='8' height='34' rx='2' fill='#b48cff' transform='rotate(35 82 31)'/></svg>",
+   "aciklama": "Okumak, ders çalışmak, bir bölümde eğitim almak demektir.",
+   "ek": "Geçmiş hâli {{studied}}: y harfi i olur, sonra {{-ed}} gelir.",
+   "akilda": "okumak, ders çalışmak",
+   "ornek": "Yes, I always studied hard at school.",
+   "ornekTr": "Evet, okulda her zaman çok çalışırdım. (s. 57)",
+   "soru": {
+    "soru": "{{Yes, I always studied hard at school.}} Tom okulda nasıl bir öğrenciydi?",
+    "secenekler": [
+     "Hiç ders çalışmazdı",
+     "Her zaman çok çalışırdı",
+     "Okula gitmezdi"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta açık bir kitap vardı.",
+    "aciklama": "{{studied hard}} çok çalıştı demektir. (s. 57)"
+   },
+   "formul": [
+    [
+     {
+      "t": "study",
+      "r": "kelime"
+     },
+     {
+      "t": "y → i + -ed",
+      "r": "ek",
+      "alt": "geçmiş eki"
+     },
+     {
+      "t": "studied",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "studied",
+      "r": "fiil"
+     },
+     {
+      "t": "hard at school",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "graduate",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 22l44 16-44 16-44-16z' fill='#2b3556' stroke='#e9ecf5' stroke-width='2'/><path d='M38 46v12q22 10 44 0V46l-22 8z' fill='#2b3556' stroke='#e9ecf5' stroke-width='2'/><path d='M96 41v18' stroke='#f2c14e' stroke-width='3'/><circle cx='96' cy='61' r='4' fill='#f2c14e'/><rect x='26' y='78' width='68' height='18' rx='9' fill='#e9ecf5'/><rect x='54' y='76' width='10' height='22' fill='#ff7a33'/></svg>",
+   "aciklama": "Mezun olmak demektir: okulu bitirip diploma almak.",
+   "ek": "Kitaptaki tanım: {{To receive a diploma.}} (s. 55) Okulun adından önce {{from}} gelir.",
+   "akilda": "mezun olmak",
+   "ornek": "She graduated from university four years ago.",
+   "ornekTr": "Dört yıl önce üniversiteden mezun oldu. (s. 57)",
+   "soru": {
+    "soru": "{{She graduated from university four years ago.}} Emma ne yaptı?",
+    "secenekler": [
+     "Üniversiteye başladı",
+     "Üniversiteden ayrıldı",
+     "Üniversiteden mezun oldu"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta kep ve diploma vardı.",
+    "aciklama": "{{graduated}} mezun oldu demektir. (s. 57)"
+   },
+   "formul": [
+    [
+     {
+      "t": "graduate",
+      "r": "kelime"
+     },
+     {
+      "t": "-d",
+      "r": "ek",
+      "alt": "geçmiş eki"
+     },
+     {
+      "t": "graduated",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "She",
+      "r": "ozne"
+     },
+     {
+      "t": "graduated from",
+      "r": "fiil"
+     },
+     {
+      "t": "university",
+      "r": "diger"
+     }
+    ]
+   ]
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kelime doğum ve büyümeyle mi, yerle mi, okulla mı ilgili?",
+   "kutular": [
+    {
+     "etiket": "Doğum ve büyüme",
+     "uyeler": [
+      "be born",
+      "grow up"
+     ]
+    },
+    {
+     "etiket": "Yer",
+     "uyeler": [
+      "move",
+      "stay"
+     ]
+    },
+    {
+     "etiket": "Okul",
+     "uyeler": [
+      "study",
+      "graduate"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Louis Braille 3 yaşında bir kaza yüzünden görme yetisini kaybetti. 1821'de okumak için noktalardan ve çizgilerden bir sistem geliştirdi; bugün birçok kişi bu sistemi kullanıyor. (s. 49)",
+  "Thomas Edison okula çok az gitti; onu annesi eğitti. 1879'da ilk elektrik ampulünü yaptı. (s. 51)"
+ ],
+ "akildaKalsin": [
+  "Biyografi geçmişi anlatır, fiiller geçmiş hâlde olur.",
+  "Doğmak: {{I was born in 1987.}} Hep {{was born}}.",
+  "{{grow up}} → {{grew up}} büyüdü; {{move}} → {{moved}} taşındı; {{stay}} → {{stayed}} kaldı.",
+  "{{study}} → {{studied}} okudu; {{graduate}} → {{graduated}} mezun oldu.",
+  "Mezun olunan yer {{from}} ile: {{graduated from university}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{born}} derken neden {{was}} kullanıyoruz?",
+   "cevap": "Doğum geçmişte olmuş bir olaydır. Kitapta: {{I was born in Birmingham.}} (s. 52) Soruda: {{When were you born?}} (s. 52)"
+  },
+  {
+   "soru": "{{grew up}} neden {{growed up}} değil?",
+   "cevap": "Bazı fiiller geçmişte kendine özgü değişir: {{grow}} → {{grew}}. Kitapta: {{She grew up there till she was twelve.}} (s. 57)"
+  },
+  {
+   "soru": "{{move}} ile {{stay}} farkı ne?",
+   "cevap": "{{move}} başka yere taşınmak, {{stay}} olduğun yerde kalmak. {{Helen stayed in New York till 2015. She lives in Miami now.}} (s. 46)"
+  },
+  {
+   "soru": "Mezun olduğum okulu nasıl söylerim?",
+   "cevap": "{{graduate from}} + okul: {{He graduated from the military academy in İstanbul.}} (s. 54)"
+  },
+  {
+   "soru": "Louis Braille neden okulunu bıraktı?",
+   "cevap": "Görme yetisini kaybettiği için öğretmenlerini dinleyerek öğrenmek zordu. Görme engelliler için bir kuruma gitti. (s. 49)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendi hayatını İngilizce iki cümleyle anlat: nerede doğdun, nerede büyüdün?",
+   "ornekCevap": "I was born in Ankara. I grew up in İzmir.",
+   "anahtarlar": [
+    "born",
+    "grew"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Louis Braille was born in 1852 in France.",
+    "Louis Braille was born in 1809 in France.",
+    "Louis Braille died in 1809 in France."
+   ],
+   "dogru": 1,
+   "ipucu": "İki şeye dikkat et: doğdu mu, öldü mü? Hangi yıl? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{Louis Braille was born in 1809 in France.}} (s. 49)",
+   "dinle": "Louis Braille was born in 1809 in France.",
+   "kavram": "be born"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Then, we stayed in Manchester in 1954.",
+    "Then, we moved to Birmingham in 1954.",
+    "Then, we moved to Manchester in 1954."
+   ],
+   "dogru": 2,
+   "ipucu": "Taşındılar mı, kaldılar mı? Hangi şehir?",
+   "aciklama": "Duyduğun cümle {{Then, we moved to Manchester in 1954.}} (s. 52)",
+   "dinle": "Then, we moved to Manchester in 1954.",
+   "kavram": "move"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "She graduated from university four years ago.",
+    "She studied at university four years ago.",
+    "She graduated from school four years ago."
+   ],
+   "dogru": 0,
+   "ipucu": "Mezun mu oldu, okudu mu? Okul mu, üniversite mi?",
+   "aciklama": "Duyduğun cümle {{She graduated from university four years ago.}} (s. 57)",
+   "dinle": "She graduated from university four years ago.",
+   "kavram": "graduate"
+  },
+  {
+   "soru": "{{Amanda Key was ___ in Madrid.}} Boşluğa ne gelir?",
+   "secenekler": [
+    "born",
+    "moved",
+    "graduated"
+   ],
+   "dogru": 0,
+   "ipucu": "{{was}} ile birlikte kullanılan kelimeyi hatırla.",
+   "aciklama": "{{was born}} doğdu: {{Amanda Key was born in Madrid.}} (s. 61)",
+   "kavram": "be born"
+  },
+  {
+   "soru": "{{She grew up there till she was twelve. Then, she ___ to England to attend a university.}}",
+   "secenekler": [
+    "stayed",
+    "moved",
+    "was born"
+   ],
+   "dogru": 1,
+   "ipucu": "İtalya'dan İngiltere'ye gitti. Başka şehre gitmeye ne deniyordu?",
+   "aciklama": "Başka ülkeye gitti: {{moved}} taşındı. (s. 57)",
+   "kavram": "move"
+  },
+  {
+   "soru": "{{grow up}} kelimesinin geçmiş hâli hangisi?",
+   "secenekler": [
+    "growed up",
+    "grows up",
+    "grew up"
+   ],
+   "dogru": 2,
+   "ipucu": "Bu fiil {{-ed}} almıyor, kendine özgü değişiyor.",
+   "aciklama": "{{grow up}} → {{grew up}}: {{I grew up in Venice.}} (s. 62)",
+   "kavram": "grow up",
+   "yardim": {
+    "adimlar": [
+     "Geçmiş hâlini soruyor.",
+     "{{grow}} kurala uymaz, {{-ed}} almaz.",
+     "Kartta {{I grew up in Venice.}} cümlesi vardı."
+    ]
+   }
+  },
+  {
+   "soru": "{{Helen ___ in New York till 2015. She lives in Miami now.}} Hangisi uygun?",
+   "secenekler": [
+    "graduated",
+    "stayed",
+    "was born"
+   ],
+   "dogru": 1,
+   "ipucu": "2015'e kadar New York'ta ne yaptı? Orada durdu.",
+   "aciklama": "2015'e kadar New York'ta kaldı: {{stayed}}. (s. 46)",
+   "kavram": "stay"
+  },
+  {
+   "soru": "Bill'in hayatı sırayla: {{born in 1986}} → {{grew up in Liverpool}} → {{studied chemistry}} → ? Sırada hangisi var?",
+   "secenekler": [
+    "graduated in 2008",
+    "was born in 1986",
+    "grew up in Liverpool"
+   ],
+   "dogru": 0,
+   "ipucu": "Okudu, sonra okulu bitirdi. Okulu bitirmeye ne deniyordu?",
+   "aciklama": "Okuduktan sonra mezun olur: {{He graduated in 2008.}} (s. 56)",
+   "kavram": "graduate",
+   "yardim": {
+    "adimlar": [
+     "Son olay: kimya okudu.",
+     "Okuyan biri sonra okulu bitirir.",
+     "Şıklardan hangisi daha önce olmadı?"
+    ]
+   }
+  },
+  {
+   "soru": "{{Bill ___ chemistry at university.}} Boşluğa ne gelir?",
+   "secenekler": [
+    "graduated",
+    "grew up",
+    "studied"
+   ],
+   "dogru": 2,
+   "ipucu": "Üniversitede bir bölümde eğitim almak: hangi kelimeydi?",
+   "aciklama": "Kimya okudu: {{Bill studied chemistry at university.}} (s. 56)",
+   "kavram": "study"
+  },
+  {
+   "soru": "{{To go from one residence or location to another}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "stay",
+    "move",
+    "grow up"
+   ],
+   "dogru": 1,
+   "ipucu": "Bir yerden başka bir yere gitmek. Kartta bir evden ötekine ok vardı.",
+   "aciklama": "Bir yerden başka yere gitmek {{move}}dur. (s. 55)",
+   "kavram": "move"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "university",
+   "tr": "üniversite",
+   "ornek": "She graduated from university four years ago.",
+   "ornekTr": "Dört yıl önce üniversiteden mezun oldu. (s. 57)"
+  },
+  {
+   "en": "leave school",
+   "tr": "okuldan ayrılmak",
+   "ornek": "When he was twelve years old, he left school permanently and began to work at a newsagent's.",
+   "ornekTr": "On iki yaşındayken okulu tamamen bıraktı ve bir gazete bayisinde çalışmaya başladı. (s. 51)"
+  },
+  {
+   "en": "attend",
+   "tr": "(okula) devam etmek",
+   "ornek": "Then, she moved to England to attend a university.",
+   "ornekTr": "Sonra bir üniversiteye devam etmek için İngiltere'ye taşındı. (s. 57)"
+  },
+  {
+   "en": "hometown",
+   "tr": "memleket, doğduğu şehir"
+  },
+  {
+   "en": "chemistry",
+   "tr": "kimya"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Louis Braille was born in 1809.",
+   "tr": "Louis Braille 1809'da doğdu. (s. 49)"
+  },
+  {
+   "en": "She grew up there till she was twelve.",
+   "tr": "On iki yaşına kadar orada büyüdü. (s. 57)"
+  },
+  {
+   "en": "We moved to Manchester in 1954.",
+   "tr": "1954'te Manchester'a taşındık. (s. 52)"
+  },
+  {
+   "en": "He left school and stayed at home.",
+   "tr": "Okulu bıraktı ve evde kaldı. (s. 51)"
+  },
+  {
+   "en": "I always studied hard at school.",
+   "tr": "Okulda her zaman çok çalışırdım. (s. 57)"
+  },
+  {
+   "en": "She graduated from university four years ago.",
+   "tr": "Dört yıl önce üniversiteden mezun oldu. (s. 57)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Louis Braille is born in 1809 in France.",
+   "yanlis": "is",
+   "secenekler": [
+    "was",
+    "were",
+    "be"
+   ],
+   "dogru": 0,
+   "tr": "Louis Braille 1809'da Fransa'da doğdu.",
+   "aciklama": "Doğum geçmişte oldu: {{was born}}. (s. 49)"
+  },
+  {
+   "cumle": "She grow up there till she was twelve.",
+   "yanlis": "grow",
+   "secenekler": [
+    "grows",
+    "grew",
+    "growing"
+   ],
+   "dogru": 1,
+   "tr": "On iki yaşına kadar orada büyüdü.",
+   "aciklama": "Geçmişte büyüdü: {{grew up}}. (s. 57)"
+  },
+  {
+   "cumle": "Then, we move to Manchester in 1954.",
+   "yanlis": "move",
+   "secenekler": [
+    "moving",
+    "moves",
+    "moved"
+   ],
+   "dogru": 2,
+   "tr": "Sonra 1954'te Manchester'a taşındık.",
+   "aciklama": "1954 geçmiş: {{moved}}. (s. 52)"
+  },
+  {
+   "cumle": "She graduated in university four years ago.",
+   "yanlis": "in",
+   "secenekler": [
+    "from",
+    "to",
+    "at"
+   ],
+   "dogru": 0,
+   "tr": "Dört yıl önce üniversiteden mezun oldu.",
+   "aciklama": "Mezun olunan yer {{from}} ile: {{graduated from university}}. (s. 57)"
+  },
+  {
+   "cumle": "He left school and stay at home most of the time.",
+   "yanlis": "stay",
+   "secenekler": [
+    "stays",
+    "stayed",
+    "staying"
+   ],
+   "dogru": 1,
+   "tr": "Okulu bıraktı ve çoğu zaman evde kaldı.",
+   "aciklama": "{{left}} geçmiş; {{stay}} de geçmiş olur: {{stayed}}. (s. 51)"
+  },
+  {
+   "cumle": "Amanda Key were born in Madrid.",
+   "yanlis": "were",
+   "secenekler": [
+    "is",
+    "are",
+    "was"
+   ],
+   "dogru": 2,
+   "tr": "Amanda Key Madrid'de doğdu.",
+   "aciklama": "Tek kişi için {{was born}}. (s. 61)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Louis Braille and Alexander Graham Bell",
+  "sayfa": "s. 49",
+  "sozluk": {
+   "was born": "doğdu",
+   "became blind": "görme yetisini kaybetti",
+   "accident": "kaza",
+   "attended": "devam etti, gitti",
+   "institution": "kurum",
+   "blind people": "görme engelliler",
+   "developed": "geliştirdi",
+   "dots and dashes": "noktalar ve çizgiler",
+   "pattern": "desen, örüntü",
+   "nowadays": "günümüzde",
+   "carry on": "sürdürmek",
+   "family business": "aile işi",
+   "inventing": "icat etmek",
+   "went on working": "çalışmaya devam etti",
+   "best known for": "en çok … ile bilinir"
+  },
+  "bolumler": [
+   {
+    "baslik": "Louis Braille",
+    "cumleler": [
+     {
+      "en": "Louis Braille was born in 1809 in France.",
+      "tr": "Louis Braille 1809'da Fransa'da doğdu."
+     },
+     {
+      "en": "He became blind because of an accident when he was 3 years old.",
+      "tr": "3 yaşındayken bir kaza yüzünden görme yetisini kaybetti."
+     },
+     {
+      "en": "It was difficult to learn by listening to his teachers, so he left his school and attended an institution for blind people.",
+      "tr": "Öğretmenlerini dinleyerek öğrenmek zordu, bu yüzden okulundan ayrıldı ve görme engelliler için bir kuruma gitti."
+     },
+     {
+      "en": "In 1821, with the help of Charles Barbier, an old soldier, Louis developed a system of dots and dashes to read.",
+      "tr": "1821'de yaşlı bir asker olan Charles Barbier'nin yardımıyla Louis, okumak için noktalardan ve çizgilerden oluşan bir sistem geliştirdi."
+     },
+     {
+      "en": "He used his fingers to slide over a pattern.",
+      "tr": "Parmaklarını bir desenin üzerinde kaydırdı."
+     },
+     {
+      "en": "That pattern had letters.",
+      "tr": "O desende harfler vardı."
+     },
+     {
+      "en": "A lot of people use this system nowadays.",
+      "tr": "Günümüzde birçok kişi bu sistemi kullanıyor."
+     },
+     {
+      "en": "L. Braille died in 1852.",
+      "tr": "L. Braille 1852'de öldü."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Louis Braille kaç yaşında görme yetisini kaybetti?",
+      "secenekler": [
+       "3 yaşında",
+       "8 yaşında",
+       "21 yaşında"
+      ],
+      "dogru": 0,
+      "ipucu": "{{when he was 3 years old}} kalıbını bul.",
+      "aciklama": "{{He became blind … when he was 3 years old.}}"
+     },
+     {
+      "soru": "Braille ne geliştirdi?",
+      "secenekler": [
+       "Bir telefon",
+       "Noktalı ve çizgili bir okuma sistemi",
+       "Bir müzik aleti"
+      ],
+      "dogru": 1,
+      "ipucu": "{{developed}} kelimesinin geçtiği cümleyi bul.",
+      "aciklama": "{{Louis developed a system of dots and dashes to read.}}"
+     }
+    ]
+   },
+   {
+    "baslik": "Alexander Graham Bell",
+    "cumleler": [
+     {
+      "en": "Alexander Graham Bell was born on March 1847 in Scotland.",
+      "tr": "Alexander Graham Bell Mart 1847'de İskoçya'da doğdu."
+     },
+     {
+      "en": "His father always wanted him to carry on the family business, but Alexander was interested in inventing new things.",
+      "tr": "Babası her zaman onun aile işini sürdürmesini istedi ama Alexander yeni şeyler icat etmekle ilgileniyordu."
+     },
+     {
+      "en": "When he was 16, he began to work with his father.",
+      "tr": "16 yaşındayken babasıyla çalışmaya başladı."
+     },
+     {
+      "en": "In 1870, his father decided to move to Canada.",
+      "tr": "1870'te babası Kanada'ya taşınmaya karar verdi."
+     },
+     {
+      "en": "Some time later, Alexander moved to Boston and went on working on his new inventions there.",
+      "tr": "Bir süre sonra Alexander Boston'a taşındı ve orada yeni icatları üzerinde çalışmaya devam etti."
+     },
+     {
+      "en": "He is best known for his invention of the telephone.",
+      "tr": "En çok telefonu icat etmesiyle bilinir."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Bell'in babası ondan ne istiyordu?",
+      "secenekler": [
+       "Boston'a taşınmasını",
+       "Telefonu icat etmesini",
+       "Aile işini sürdürmesini"
+      ],
+      "dogru": 2,
+      "ipucu": "{{His father always wanted him to …}} cümlesini bul.",
+      "aciklama": "{{His father always wanted him to carry on the family business.}}"
+     },
+     {
+      "soru": "Alexander Graham Bell en çok neyle bilinir?",
+      "secenekler": [
+       "Telefonu icat etmesiyle",
+       "Kanada'ya taşınmasıyla",
+       "Bir okuma sistemiyle"
+      ],
+      "dogru": 0,
+      "ipucu": "{{best known for}} kalıbını bul.",
+      "aciklama": "{{He is best known for his invention of the telephone.}}"
+     }
+    ]
+   }
+  ]
+ }
+}
