@@ -397,7 +397,7 @@
    "konular": [
     {
      "id": "u3k1",
-     "baslik": "Kategorik ve Nicel Veri",
+     "baslik": "Veri Türleri",
      "sayfalar": "s. 159–164",
      "kaynakSayfalar": [
       [
@@ -409,19 +409,52 @@
     },
     {
      "id": "u3k2",
-     "baslik": "Araştırma Sorusu ve Veri Toplama",
-     "sayfalar": "s. 165–170",
+     "baslik": "Araştırma Sorusu, Evren ve Örneklem",
+     "sayfalar": "s. 165–168",
      "kaynakSayfalar": [
       [
        165,
-       170
+       168
       ]
      ],
      "hazir": false
     },
     {
      "id": "u3k3",
-     "baslik": "Veriyi Görselleştirme ve Özetleme",
+     "baslik": "Veri Toplama ve Kişisel Veriler",
+     "sayfalar": "s. 169–170, 192–193",
+     "kaynakSayfalar": [
+      [
+       169,
+       170
+      ],
+      [
+       192,
+       193
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3t1",
+     "tur": "tarama",
+     "baslik": "Ara Durak 1: Araştırmaya Hazırlık",
+     "sayfalar": "Tekrar: Konu 1–3",
+     "kaynakSayfalar": [
+      [
+       159,
+       170
+      ],
+      [
+       192,
+       193
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k4",
+     "baslik": "Nokta ve Çizgi Grafiği",
      "sayfalar": "s. 171–172",
      "kaynakSayfalar": [
       [
@@ -432,24 +465,91 @@
      "hazir": false
     },
     {
-     "id": "u3k4",
-     "baslik": "Veriyi Yorumlama ve Karar Verme",
-     "sayfalar": "s. 173–189",
+     "id": "u3k5",
+     "baslik": "Temsil Değeri ve Tahmin",
+     "sayfalar": "s. 173–179",
      "kaynakSayfalar": [
       [
        173,
+       179
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3t2",
+     "tur": "tarama",
+     "baslik": "Ara Durak 2: Grafik ve Temsil Değeri",
+     "sayfalar": "Tekrar: Konu 4–5",
+     "kaynakSayfalar": [
+      [
+       171,
+       179
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k6",
+     "baslik": "Açıklık ve Ortalama Mutlak Sapma",
+     "sayfalar": "s. 180–183",
+     "kaynakSayfalar": [
+      [
+       180,
+       183
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k7",
+     "baslik": "Dağılımı Yorumlama",
+     "sayfalar": "s. 184–189",
+     "kaynakSayfalar": [
+      [
+       184,
        189
       ]
      ],
      "hazir": false
     },
     {
-     "id": "u3k5",
+     "id": "u3t3",
+     "tur": "tarama",
+     "baslik": "Ara Durak 3: Yayılım ve Yorum",
+     "sayfalar": "Tekrar: Konu 6–7",
+     "kaynakSayfalar": [
+      [
+       180,
+       189
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k8",
      "baslik": "Araştırma Süreçlerini İnceleme",
-     "sayfalar": "s. 190–200",
+     "sayfalar": "s. 190–191, 194–196",
      "kaynakSayfalar": [
       [
        190,
+       191
+      ],
+      [
+       194,
+       196
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3t4",
+     "tur": "tarama",
+     "baslik": "Tema Sonu Taraması",
+     "sayfalar": "Tekrar: Konu 1–8",
+     "kaynakSayfalar": [
+      [
+       159,
        200
       ]
      ],
