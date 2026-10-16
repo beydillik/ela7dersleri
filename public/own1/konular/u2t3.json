@@ -1,0 +1,270 @@
+{
+ "id": "u2t3",
+ "tur": "tarama",
+ "unite": "Unit 2: What is art?",
+ "baslik": "Ünite Sonu Taraması: Unit 2",
+ "sayfalar": "Konu 1–6 · SB s. 23–29, 129 · WB s. 16–20, 22, 90–91",
+ "giris": "Unit 2 bitti! Şimdi bütün üniteyi kısa bir taramayla gözden geçireceğiz. Önce kartlara bakmadan hatırla, sonra karışık soruları çöz. Not yok; nerede zorlandığını görmek için.",
+ "buyukResim": "Sanat dallarını, sanatçıları, sahne ve müzik kelimelerini öğrendin. Present perfect ve {{just}}, {{already}}, {{still}}, {{yet}} ile hepsini anlatabiliyorsun: {{Have you ever been to an exhibition?}} {{The orchestra has just finished.}}",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3",
+  "u2k4",
+  "u2k5",
+  "u2k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "{{architecture}} mimarlık · {{sculpture}} heykel · {{photography}} fotoğrafçılık.",
+    "{{illustration}} kitap resmi · {{street art}} sokak sanatı · {{fashion design}} moda tasarımı."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "{{gallery}} bir yer; {{exhibition}} bir etkinlik (sergi).",
+    "Kişi ekleri: {{artist}}, {{photographer}}, {{sculptor}}."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "{{have / has + V3}}: {{She has seen}}. Soru: {{Have you ever ...?}}",
+    "{{been}} gidip döndü, {{gone}} hâlâ orada."
+   ]
+  },
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "{{part}} rol · {{scene}} sahne · {{lines}} replikler.",
+    "{{audition}} seçme · {{rehearsal}} prova."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "{{audience}} seyirci · {{orchestra}} orkestra · {{studio}} stüdyo.",
+    "{{lyrics}} şarkıda, {{lines}} oyunda."
+   ]
+  },
+  {
+   "konu": "u2k6",
+   "maddeler": [
+    "{{just}} ve {{already}}: {{have/has}} ile V3 arasına; {{still}} öznenin arkasına.",
+    "{{yet}} cümlenin sonuna; kısa cevap {{Not yet.}}"
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bir yer mi, bir insan grubu mu, bir etkinlik mi?",
+   "kutular": [
+    {
+     "etiket": "Bir yer",
+     "uyeler": [
+      "gallery",
+      "studio"
+     ]
+    },
+    {
+     "etiket": "Bir insan grubu",
+     "uyeler": [
+      "audience",
+      "orchestra"
+     ]
+    },
+    {
+     "etiket": "Bir etkinlik ya da gösteri",
+     "uyeler": [
+      "exhibition",
+      "performance",
+      "audition",
+      "rehearsal"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Have you ever been to an exhibition?",
+    "Have you already been to an exhibition?",
+    "Has he ever been to a gallery?"
+   ],
+   "dogru": 0,
+   "ipucu": "Üç şeye dikkat: {{you}} mu {{he}} mi, {{ever}} mi {{already}} mi, {{exhibition}} mı {{gallery}} mi?",
+   "aciklama": "Duyduğun cümle {{Have you ever been to an exhibition?}} Hiç sergiye gittin mi? (WB s. 90)",
+   "dinle": "Have you ever been to an exhibition?",
+   "kavram": "ever / never",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "ever / never"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "exhibition"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "The photographer has already arrived at the studio.",
+    "The photographer has just arrived at the studio.",
+    "The sculptor has just arrived at the studio."
+   ],
+   "dogru": 1,
+   "ipucu": "{{photographer}} mı {{sculptor}} mı? {{just}} mi {{already}} mi?",
+   "aciklama": "Duyduğun cümle {{The photographer has just arrived at the studio.}} Fotoğrafçı stüdyoya az önce geldi. (WB s. 90)",
+   "dinle": "The photographer has just arrived at the studio.",
+   "kavram": "just",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "just"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "studio"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "-ist / -er / -or"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I haven't seen the new musical theatre show ___.}}",
+   "secenekler": [
+    "ever",
+    "yet",
+    "already"
+   ],
+   "dogru": 1,
+   "ipucu": "Olumsuz cümlenin sonuna gelen 'henüz' hangisiydi?",
+   "aciklama": "Olumsuzda sonda 'henüz': {{yet}}. (WB s. 90)",
+   "kavram": "haven't + V3 + yet",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "haven't + V3 + yet"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "musical theatre"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Tom isn't here. He has ___ to the gallery.}}",
+   "secenekler": [
+    "gone",
+    "been",
+    "went"
+   ],
+   "dogru": 0,
+   "ipucu": "Tom burada değil, hâlâ galeride. Hangisi 'hâlâ orada'?",
+   "aciklama": "Hâlâ orada ise {{gone}}: {{He has gone to the gallery.}} (WB s. 90)",
+   "kavram": "been / gone",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "been / gone"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "gallery"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{My sister is a sculptor. She has ___ made three sculptures this year!}} (Çoktan üç tane yaptı.)",
+   "secenekler": [
+    "still",
+    "yet",
+    "already"
+   ],
+   "dogru": 2,
+   "ipucu": "'Çoktan' anlamındaki kelime hangisi?",
+   "aciklama": "Çoktan: {{She has already made three sculptures.}} (WB s. 90)",
+   "kavram": "already",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "already"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "sculpture"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "-ist / -er / -or"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{The actors still haven't ___ their lines.}}",
+   "secenekler": [
+    "learn",
+    "learned",
+    "learning"
+   ],
+   "dogru": 1,
+   "ipucu": "{{haven't}}'tan sonra V3 gelir. {{learn}} düzenli bir fiil.",
+   "aciklama": "{{haven't}} + V3: {{learned}}. Oyuncular repliklerini hâlâ ezberlemedi. (WB s. 90)",
+   "kavram": "düzenli fiil: -ed",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "düzenli fiil: -ed"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "lines"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "still + haven't / hasn't"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Cümlede {{haven't}} var: present perfect.",
+     "{{have / haven't}}'tan sonra fiilin V3 hâli gelir.",
+     "Düzenli fiilin V3'ü {{-ed}} ile biter; o şıkkı bul."
+    ]
+   }
+  },
+  {
+   "soru": "Okuma metinlerine göre hangisi doğru?",
+   "secenekler": [
+    "STOMP'ta çok şarkı var.",
+    "Kristian Mensa sanat okuluna gitti.",
+    "Bordalo II çöp ve sprey boya kullandı."
+   ],
+   "dogru": 2,
+   "ipucu": "Bordalo II'nin {{He's used}} cümlesini hatırla.",
+   "aciklama": "{{He's used rubbish and spray paint}}. STOMP'ta şarkı yok; Kristian sanat okuluna gitmedi. (SB s. 24, 29)",
+   "kavram": "street art",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "street art"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "have / has + V3"
+    }
+   ]
+  }
+ ]
+}
