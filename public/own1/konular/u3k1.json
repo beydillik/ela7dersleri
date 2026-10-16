@@ -1,0 +1,396 @@
+{
+ "id": "u3k1",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "Communicating 1 (gesture, greet, smile…)",
+ "sayfalar": "SB s. 35, 44, 120, 130 · WB s. 24, 29–30",
+ "giris": "Unit 3'ün adı {{Spread the word!}}: haberi yay! Bu ünite iletişim üzerine. Bu konuda yüzümüzle ve ellerimizle iletişim kurmanın 5 kelimesini öğreneceğiz. Her kelimeden sonra kısa bir soru var.",
+ "kavramlar": [
+  {
+   "ad": "greet",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='44' r='11' fill='#8ecae6'/><rect x='23' y='58' width='22' height='34' rx='9' fill='#8ecae6'/><circle cx='86' cy='44' r='11' fill='#f4a261'/><rect x='75' y='58' width='22' height='34' rx='9' fill='#f4a261'/><rect x='38' y='12' width='44' height='20' rx='8' fill='#ffd166'/><polygon points='52,32 58,32 50,40' fill='#ffd166'/><text x='60' y='27' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Hello!</text></svg>",
+   "aciklama": "Biriyle karşılaşınca onu selamlamak, karşılamak demektir.",
+   "ek": "Biri gelince {{Hello!}} ya da {{Welcome!}} demek de selamlamaktır. Geçmiş hâli: {{greeted}}.",
+   "akilda": "selamlamak, karşılamak",
+   "ornek": "I greeted her at the airport when she arrived.",
+   "ornekTr": "O geldiğinde onu havalimanında karşıladım. (WB s. 24)",
+   "soru": {
+    "soru": "Bir arkadaşın kapıdan girdi, sen de {{Hello!}} dedin. Ne yaptın?",
+    "secenekler": [
+     "greet",
+     "shout",
+     "translate"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki {{Hello!}} balonunu hatırla.",
+    "aciklama": "Gelen birine {{Hello!}} demek {{greet}}: selamlamak. (WB s. 24)"
+   }
+  },
+  {
+   "ad": "gesture",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='40' y='54' width='40' height='40' rx='10' fill='#f4a261'/><rect x='48' y='22' width='14' height='40' rx='7' fill='#f4a261'/><rect x='38' y='62' width='10' height='26' rx='5' fill='#e9c46a'/><path d='M80 30 l8 -8 M86 40 h10 M80 20 l2 -10' stroke='#ffd166' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "El ya da bedenle yapılan, bir anlamı olan hareket: jest, işaret.",
+   "ek": "Başparmak yukarı ({{thumbs up}}) bir {{gesture}}'dır; 'güzel, tamam' demektir. Fiil olarak 'el kol hareketi yapmak' anlamına da gelir.",
+   "akilda": "jest, el işareti",
+   "ornek": "A thumbs up sign is a gesture that means 'good'.",
+   "ornekTr": "Başparmak yukarı işareti 'güzel' anlamına gelen bir jesttir. (WB s. 24)",
+   "soru": {
+    "soru": "Başparmağını yukarı kaldırdın. Bu bir ...",
+    "secenekler": [
+     "wave",
+     "gesture",
+     "post"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki başparmak çizimini hatırla: anlamı olan el hareketi.",
+    "aciklama": "Anlamı olan el hareketi {{gesture}}: jest. (WB s. 24)"
+   }
+  },
+  {
+   "ad": "shake hands",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='52' width='38' height='18' rx='6' fill='#8ecae6'/><rect x='74' y='52' width='38' height='18' rx='6' fill='#f4a261'/><ellipse cx='60' cy='61' rx='20' ry='13' fill='#e9c46a'/><path d='M48 56 h24 M48 62 h24 M48 68 h22' stroke='#c58b2a' stroke-width='2.5' stroke-linecap='round'/><path d='M46 34 l6 8 M60 28 v10 M74 34 l-6 8' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "İki kişinin elini tutup sallaması: el sıkışmak.",
+   "ek": "Genelde {{shake hands with someone}} denir. Geçmiş hâli: {{shook hands}}.",
+   "akilda": "el sıkışmak",
+   "ornek": "I wanted to shake hands with them.",
+   "ornekTr": "Onlarla el sıkışmak istedim. (WB s. 24)",
+   "soru": {
+    "soru": "İki kişi tanışırken ellerini tutup sallıyor. Ne yapıyorlar?",
+    "secenekler": [
+     "They whisper.",
+     "They wave.",
+     "They shake hands."
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki iki elin birleştiği çizimi düşün.",
+    "aciklama": "Elleri tutup sallamak {{shake hands}}: el sıkışmak. (WB s. 24)"
+   }
+  },
+  {
+   "ad": "smile",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='38' fill='#ffd166'/><circle cx='46' cy='50' r='5' fill='#1b2340'/><circle cx='74' cy='50' r='5' fill='#1b2340'/><path d='M40 68 Q60 90 80 68' stroke='#1b2340' stroke-width='6' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Mutlu olduğunu yüzünle, dudaklarınla göstermek: gülümsemek.",
+   "ek": "{{smile at someone}}: birine gülümsemek. Kitap: herkes gülümsemeyi anlar.",
+   "akilda": "gülümsemek",
+   "ornek": "Everyone understands when you smile at them.",
+   "ornekTr": "Birine gülümsediğinde herkes anlar. (WB s. 24)",
+   "soru": {
+    "soru": "Yüzünle 'mutluyum' demek için ne yaparsın?",
+    "secenekler": [
+     "smile",
+     "shout",
+     "describe"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki gülen yüzü hatırla.",
+    "aciklama": "Mutlu olduğunu yüzünle göstermek {{smile}}: gülümsemek. (WB s. 24)"
+   }
+  },
+  {
+   "ad": "wave",
+   "renk": "#8ecae6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='44' y='40' width='32' height='40' rx='12' fill='#f4a261'/><rect x='46' y='20' width='7' height='26' rx='3.5' fill='#f4a261'/><rect x='55' y='16' width='7' height='28' rx='3.5' fill='#f4a261'/><rect x='64' y='18' width='7' height='26' rx='3.5' fill='#f4a261'/><rect x='34' y='48' width='14' height='7' rx='3.5' fill='#f4a261'/><rect x='52' y='78' width='16' height='24' rx='5' fill='#f4a261'/><path d='M26 30 Q20 44 26 58 M94 30 Q100 44 94 58' stroke='#8ecae6' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Elini sağa sola sallamak: el sallamak. Biriyle selamlaşırken ya da vedalaşırken yapılır.",
+   "ek": "{{wave goodbye}}: el sallayarak vedalaşmak. {{wave at someone}}: birine el sallamak.",
+   "akilda": "el sallamak",
+   "ornek": "When their guests left, they came outside to wave goodbye.",
+   "ornekTr": "Misafirleri gidince, el sallayıp vedalaşmak için dışarı çıktılar. (SB s. 130)",
+   "soru": {
+    "soru": "Arkadaşın yolun karşısında. Seni görsün diye elini sallıyorsun. Hangisi?",
+    "secenekler": [
+     "shake hands",
+     "wave",
+     "greet"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki sallanan eli hatırla.",
+    "aciklama": "Elini sağa sola sallamak {{wave}}. (WB s. 24)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "thumbs up",
+   "tr": "başparmak yukarı (tamam işareti)"
+  },
+  {
+   "en": "goodbye",
+   "tr": "hoşça kal"
+  },
+  {
+   "en": "welcome",
+   "tr": "hoş geldin"
+  },
+  {
+   "en": "bow",
+   "tr": "eğilerek selam vermek",
+   "ornek": "In other places, like Japan, people bow.",
+   "ornekTr": "Japonya gibi başka yerlerde insanlar eğilerek selam verir. (WB s. 30)"
+  },
+  {
+   "en": "eye contact",
+   "tr": "göz teması",
+   "ornek": "Use your hands and gesture to make a point, and always make eye contact.",
+   "ornekTr": "Ne demek istediğini anlatmak için ellerini kullan, el kol hareketi yap ve her zaman göz teması kur. (WB s. 29)"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu iletişim nasıl yapılır?",
+   "kutular": [
+    {
+     "etiket": "Ellerle",
+     "uyeler": [
+      "gesture",
+      "shake hands",
+      "wave"
+     ]
+    },
+    {
+     "etiket": "Yüzle ya da sözle karşılama",
+     "uyeler": [
+      "greet",
+      "smile"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Sofia greeted us at the door.",
+   "tr": "Sofia bizi kapıda karşıladı. (SB s. 130)"
+  },
+  {
+   "en": "I greeted her at the airport.",
+   "tr": "Onu havalimanında karşıladım. (WB s. 24)"
+  },
+  {
+   "en": "A thumbs up sign is a gesture.",
+   "tr": "Başparmak yukarı işareti bir jesttir. (WB s. 24)"
+  },
+  {
+   "en": "I wanted to shake hands with them.",
+   "tr": "Onlarla el sıkışmak istedim. (WB s. 24)"
+  },
+  {
+   "en": "Everyone understands when you smile.",
+   "tr": "Gülümsediğinde herkes anlar. (WB s. 24)"
+  },
+  {
+   "en": "Let's wave at her.",
+   "tr": "Ona el sallayalım. (WB s. 24)"
+  },
+  {
+   "en": "They came outside to wave goodbye.",
+   "tr": "El sallayıp vedalaşmak için dışarı çıktılar. (SB s. 130)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Sofia shook hands us at the door.",
+   "yanlis": "shook hands",
+   "secenekler": [
+    "waved",
+    "greeted",
+    "smiled"
+   ],
+   "dogru": 1,
+   "tr": "Sofia bizi kapıda karşıladı.",
+   "aciklama": "Birini kapıda karşılamak {{greet}}: {{Sofia greeted us at the door.}} (SB s. 130)"
+  },
+  {
+   "cumle": "They came outside to shake goodbye.",
+   "yanlis": "shake",
+   "secenekler": [
+    "wave",
+    "greet",
+    "smile"
+   ],
+   "dogru": 0,
+   "tr": "El sallayıp vedalaşmak için dışarı çıktılar.",
+   "aciklama": "Vedalaşırken el sallanır: {{wave goodbye}}. (SB s. 130)"
+  },
+  {
+   "cumle": "A thumbs up sign is a smile that means 'good'.",
+   "yanlis": "smile",
+   "secenekler": [
+    "wave",
+    "greet",
+    "gesture"
+   ],
+   "dogru": 2,
+   "tr": "Başparmak yukarı işareti 'güzel' anlamına gelen bir jesttir.",
+   "aciklama": "El ile yapılan, anlamı olan hareket {{gesture}}. (WB s. 24)"
+  },
+  {
+   "cumle": "I wanted to wave hands with them.",
+   "yanlis": "wave",
+   "secenekler": [
+    "greet",
+    "shake",
+    "smile"
+   ],
+   "dogru": 1,
+   "tr": "Onlarla el sıkışmak istedim.",
+   "aciklama": "Elle tutup sallamak {{shake hands}}. (WB s. 24)"
+  },
+  {
+   "cumle": "Everyone understands when you shout at them. It means you're happy.",
+   "yanlis": "shout",
+   "secenekler": [
+    "smile",
+    "wave",
+    "greet"
+   ],
+   "dogru": 0,
+   "tr": "Birine gülümsediğinde herkes anlar. Mutlu olduğun anlamına gelir.",
+   "aciklama": "Mutlu olduğunu gösteren {{smile}}; {{shout}} bağırmak demek. (WB s. 24)"
+  }
+ ],
+ "resimEslestir": true,
+ "biliyorMusun": [
+  "Japonya gibi yerlerde insanlar selamlaşırken eğilir ({{bow}}): başlarını ve bedenlerini öne doğru eğerler. (WB s. 30)",
+  "Filipinler'de bazı insanlar {{mano}} denen bir jest yapar: karşısındakinin elini kendi başına koyar. {{mano}} İspanyolcada 'el' demek. (WB s. 30)",
+  "Kosta Rika'da insanlar karşılaşınca çok yüksek sesle {{Oooooooopppe!}} diye bağırıyor. (WB s. 30)"
+ ],
+ "akildaKalsin": [
+  "{{greet}} selamlamak · {{smile}} gülümsemek.",
+  "{{gesture}} jest · {{wave}} el sallamak · {{shake hands}} el sıkışmak.",
+  "{{wave goodbye}}: el sallayıp vedalaşmak.",
+  "Geçmiş: {{greeted}}, {{smiled}}, {{waved}}, {{shook hands}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Herkes gülümsemeyi anlar mı?",
+   "cevap": "Kitaba göre evet: {{Everyone understands when you smile at them. It means you're happy.}} Gülümsemek mutlu olduğunu gösterir. (WB s. 24)"
+  },
+  {
+   "soru": "Her ülkede tanışınca el sıkışılır mı?",
+   "cevap": "Hayır. Kitaptaki hikâyede Kazue, Japonların tanışırken genelde el sıkışmadığını söylüyor. Avrupa ve Kuzey Amerika'da ise en yaygın selam el sıkışmak. (WB s. 24, 30)"
+  },
+  {
+   "soru": "{{greet}} sadece {{Hello}} demek mi?",
+   "cevap": "Hayır, karşılamak da demek. Mr Hicks herkesi {{Welcome to the school.}} diyerek karşıladı: {{Mr Hicks greeted everyone.}} (SB s. 44)"
+  },
+  {
+   "soru": "Uzaktaki birinin dikkatini nasıl çekeriz?",
+   "cevap": "Kitaba göre dünyanın her yerinde birinin dikkatini çekmek için el sallanır ({{wave}}), sonra da mutlu olduğunu göstermek için gülümsenir ({{smile}}). (WB s. 30)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Arkadaşlarınla karşılaşınca ne yaparsın? İngilizce 1–2 cümle yaz. {{When I meet my friends, I ...}}",
+   "ornekCevap": "When I meet my friends, I smile and wave at them. I don't shake hands.",
+   "anahtarlar": [
+    "smile",
+    "wave",
+    "greet",
+    "shake"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "wave",
+    "whisper",
+    "greet"
+   ],
+   "dogru": 0,
+   "ipucu": "El sallamakla ilgili kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{wave}}: el sallamak. (SB s. 35)",
+   "dinle": "wave",
+   "kavram": "wave"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "smile",
+    "shake hands",
+    "gesture"
+   ],
+   "dogru": 2,
+   "ipucu": "Jest, el işareti anlamına gelen kelime.",
+   "aciklama": "Duyduğun kelime {{gesture}}: jest. (SB s. 35)",
+   "dinle": "gesture",
+   "kavram": "gesture"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Mr Hicks ___ everyone: 'Welcome to the school.'}}",
+   "secenekler": [
+    "greeted",
+    "waved",
+    "shook"
+   ],
+   "dogru": 0,
+   "ipucu": "{{Welcome}} demek: gelenleri karşılamak.",
+   "aciklama": "Gelenlere {{Welcome!}} demek {{greet}}: {{Mr Hicks greeted everyone.}} (SB s. 44)",
+   "kavram": "greet"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{In my country, we ___ hands when we meet someone new.}}",
+   "secenekler": [
+    "wave",
+    "smile",
+    "shake"
+   ],
+   "dogru": 2,
+   "ipucu": "{{hands}} kelimesiyle birlikte kullanılan fiil hangisi?",
+   "aciklama": "Tanışırken el sıkışılır: {{shake hands}}. (SB s. 44)",
+   "kavram": "shake hands"
+  },
+  {
+   "soru": "{{Everyone understands when you smile at them.}} Bu cümle ne anlatıyor?",
+   "secenekler": [
+    "Bağırdığında herkes duyar.",
+    "Gülümsediğinde herkes anlar.",
+    "El salladığında herkes görür."
+   ],
+   "dogru": 1,
+   "ipucu": "{{smile}} kelimesinin Türkçesini hatırla.",
+   "aciklama": "{{smile}} gülümsemek: Gülümsediğinde herkes anlar. (WB s. 24)",
+   "kavram": "smile"
+  },
+  {
+   "soru": "Kazue'nin ailesi Japonya'dan geldi. Kazue, Japonların tanışırken genelde ne yapmadığını söyledi?",
+   "secenekler": [
+    "el sıkışmak",
+    "gülümsemek",
+    "selamlamak"
+   ],
+   "dogru": 0,
+   "ipucu": "Hikâyede yazar onlarla {{shake hands}} yapmak istedi ama Kazue kulağına bir şey fısıldadı.",
+   "aciklama": "Kazue: Japonlar tanışınca genelde el sıkışmaz ({{shake hands}}). (WB s. 24)",
+   "kavram": "shake hands"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Use your hands and ___ to make a point.}}",
+   "secenekler": [
+    "greet",
+    "gesture",
+    "wave goodbye"
+   ],
+   "dogru": 1,
+   "ipucu": "Elleri kullanarak anlam vermek: el kol hareketi.",
+   "aciklama": "Ellerini kullan ve el kol hareketi yap: {{gesture}}. (WB s. 29)",
+   "kavram": "gesture"
+  },
+  {
+   "soru": "Hangisi vedalaşırken yapılır?",
+   "secenekler": [
+    "greet",
+    "wave goodbye",
+    "shake goodbye"
+   ],
+   "dogru": 1,
+   "ipucu": "{{goodbye}} kelimesiyle hangi fiil kullanılıyordu?",
+   "aciklama": "Vedalaşırken el sallanır: {{wave goodbye}}. (SB s. 130)",
+   "kavram": "wave"
+  }
+ ]
+}

@@ -537,12 +537,20 @@
    "konular": [
     {
      "id": "u3k1",
-     "baslik": "Communicating",
-     "sayfalar": "SB s. 35",
+     "baslik": "Communicating 1 (gesture, greet, smile…)",
+     "sayfalar": "SB s. 35, 44, 120, 130 · WB s. 24, 29–30",
      "kaynakSayfalar": [
       [
        35,
        35
+      ],
+      [
+       44,
+       44
+      ],
+      [
+       120,
+       120
       ],
       [
        130,
@@ -551,38 +559,147 @@
       [
        1024,
        1024
+      ],
+      [
+       1029,
+       1030
+      ],
+      [
+       1107,
+       1107
       ]
      ],
-     "hazir": false
+     "hazir": true
     },
     {
      "id": "u3k2",
+     "baslik": "Communicating 2 (describe, translate, whisper…)",
+     "sayfalar": "SB s. 35–36, 44, 120, 130 · WB s. 24, 30",
+     "kaynakSayfalar": [
+      [
+       35,
+       36
+      ],
+      [
+       44,
+       44
+      ],
+      [
+       120,
+       120
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       1024,
+       1024
+      ],
+      [
+       1030,
+       1030
+      ],
+      [
+       1107,
+       1107
+      ]
+     ],
+     "hazir": true
+    },
+    {
+     "id": "u3k3",
      "baslik": "can, could, will be able to",
-     "sayfalar": "SB s. 36–37",
+     "sayfalar": "SB s. 36–37, 40, 120 · WB s. 26, 30, 92–93",
      "kaynakSayfalar": [
       [
        36,
        37
       ],
       [
-       1025,
+       40,
+       40
+      ],
+      [
+       120,
+       120
+      ],
+      [
+       1026,
        1026
+      ],
+      [
+       1030,
+       1030
       ],
       [
        1092,
        1093
+      ],
+      [
+       1107,
+       1107
       ]
      ],
      "hazir": false
     },
     {
-     "id": "u3k3",
+     "id": "u3t1",
+     "tur": "tarama",
+     "baslik": "Ara Durak 1: İletişim ve yetenek",
+     "sayfalar": "Tekrar: Konu 1–3",
+     "kaynakSayfalar": [
+      [
+       35,
+       37
+      ],
+      [
+       40,
+       40
+      ],
+      [
+       120,
+       120
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       1024,
+       1024
+      ],
+      [
+       1026,
+       1026
+      ],
+      [
+       1030,
+       1030
+      ],
+      [
+       1092,
+       1093
+      ],
+      [
+       1107,
+       1107
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3k4",
      "baslik": "say ve tell kalıpları",
-     "sayfalar": "SB s. 38",
+     "sayfalar": "SB s. 38, 120, 130 · WB s. 27, 30",
      "kaynakSayfalar": [
       [
        38,
        38
+      ],
+      [
+       120,
+       120
       ],
       [
        130,
@@ -591,22 +708,38 @@
       [
        1027,
        1027
+      ],
+      [
+       1030,
+       1030
+      ],
+      [
+       1107,
+       1107
       ]
      ],
      "hazir": false
     },
     {
-     "id": "u3k4",
+     "id": "u3k5",
      "baslik": "for / since, How long…?",
-     "sayfalar": "SB s. 39",
+     "sayfalar": "SB s. 39 · WB s. 25, 28, 31, 92–93",
      "kaynakSayfalar": [
       [
        39,
        39
       ],
       [
+       1025,
+       1025
+      ],
+      [
        1028,
        1028
+      ],
+      [
+       1031,
+       1031
       ],
       [
        1092,
@@ -616,9 +749,9 @@
      "hazir": false
     },
     {
-     "id": "u3k5",
+     "id": "u3k6",
      "baslik": "Present perfect mi, past simple mı?",
-     "sayfalar": "SB s. 39–40",
+     "sayfalar": "SB s. 39–43, 120 · WB s. 28–31, 92–93, 107",
      "kaynakSayfalar": [
       [
        39,
@@ -635,6 +768,80 @@
       [
        1092,
        1093
+      ],
+      [
+       1107,
+       1107
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3t2",
+     "tur": "tarama",
+     "baslik": "Ara Durak 2: say/tell ve zamanlar",
+     "sayfalar": "Tekrar: Konu 4–6",
+     "kaynakSayfalar": [
+      [
+       38,
+       45
+      ],
+      [
+       120,
+       120
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       1025,
+       1025
+      ],
+      [
+       1027,
+       1031
+      ],
+      [
+       1092,
+       1093
+      ],
+      [
+       1107,
+       1107
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u3t3",
+     "tur": "tarama",
+     "baslik": "Ünite Sonu Taraması: Unit 3",
+     "sayfalar": "Tekrar: Konu 1–6",
+     "kaynakSayfalar": [
+      [
+       34,
+       45
+      ],
+      [
+       120,
+       120
+      ],
+      [
+       130,
+       130
+      ],
+      [
+       1024,
+       1031
+      ],
+      [
+       1092,
+       1093
+      ],
+      [
+       1107,
+       1107
       ]
      ],
      "hazir": false
