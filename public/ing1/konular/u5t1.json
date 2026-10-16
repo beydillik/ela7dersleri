@@ -1,0 +1,222 @@
+{
+ "id": "u5t1",
+ "tur": "tarama",
+ "unite": "Unit 5: Television",
+ "baslik": "Ünite 5 Sonu Taraması",
+ "sayfalar": "Konu 1–2 · s. 81–98",
+ "giris": "Ünite 5 bitti! Bütün ünitenin kısa bir taramasını yapalım. Önce özetleri oku ve kartlara dokun, sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce TV programı türlerini öğrendik: haberler, belgesel, komedi dizisi ve diğerleri. Sonra hangisini daha çok sevdiğimizi ve neden sevdiğimizi söylemeyi. İkisi bir arada şöyle söylenir: {{I prefer documentaries to soap operas. They are educational.}}",
+ "kapsar": [
+  "u5k1",
+  "u5k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u5k1",
+   "maddeler": [
+    "{{news}} haberler; {{documentary}} belgesel; {{quiz show}} bilgi yarışması.",
+    "{{sitcom}} komedi dizisi; {{soap opera}} pembe dizi.",
+    "{{reality show}} gerçek insanlar; {{commercial}} reklam."
+   ]
+  },
+  {
+   "konu": "u5k2",
+   "maddeler": [
+    "{{prefer watching}}; {{He prefers}}.",
+    "{{prefer X to Y}}: {{than}} değil {{to}}.",
+    "{{boring}} sıkıcı, {{amusing}} eğlenceli, {{educational}} eğitici."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kelime bir TV programı mı, programı anlatan bir sıfat mı?",
+   "kutular": [
+    {
+     "etiket": "TV programı",
+     "uyeler": [
+      "news",
+      "sitcom",
+      "documentary",
+      "quiz show"
+     ]
+    },
+    {
+     "etiket": "Programı anlatan sıfat",
+     "uyeler": [
+      "boring",
+      "amusing",
+      "educational"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I prefer watching the news and quiz shows.",
+    "I prefer watching the news and soap operas.",
+    "I never watch the news and quiz shows."
+   ],
+   "dogru": 0,
+   "ipucu": "{{prefer}} mi, {{never}} mı? Hangi iki program? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{I prefer watching the news and quiz shows.}} (s. 90)",
+   "dinle": "I prefer watching the news and quiz shows.",
+   "kaynak": [
+    {
+     "konu": "u5k2",
+     "kavram": "prefer"
+    },
+    {
+     "konu": "u5k1",
+     "kavram": "quiz show"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Konuşan kişi hangi programı daha çok seviyor?",
+   "secenekler": [
+    "Gerçeklik şovlarını",
+    "Komedi dizilerini",
+    "İkisini de aynı"
+   ],
+   "dogru": 1,
+   "ipucu": "{{prefer}}'dan hemen sonra gelen program daha çok sevilendir.",
+   "aciklama": "{{I prefer sitcoms to reality shows.}} Komedi dizilerini daha çok seviyor. (s. 84)",
+   "dinle": "I prefer sitcoms to reality shows because they are funny.",
+   "kaynak": [
+    {
+     "konu": "u5k2",
+     "kavram": "prefer … to …"
+    },
+    {
+     "konu": "u5k1",
+     "kavram": "sitcom"
+    }
+   ]
+  },
+  {
+   "soru": "Yeni şeyler öğrenmek isteyen biri hangisini söyler?",
+   "secenekler": [
+    "I prefer soap operas. They are boring.",
+    "I prefer commercials. They are silly.",
+    "I prefer documentaries. They are educational."
+   ],
+   "dogru": 2,
+   "ipucu": "Hangi program öğretir? Hangi sıfat öğretici demek?",
+   "aciklama": "Belgesel öğreticidir: {{They are educational.}} (s. 85, s. 87)",
+   "kaynak": [
+    {
+     "konu": "u5k1",
+     "kavram": "documentary"
+    },
+    {
+     "konu": "u5k2",
+     "kavram": "educational"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru yazılmış?",
+   "secenekler": [
+    "She prefer quiz shows to soap operas.",
+    "She prefers quiz shows than soap operas.",
+    "She prefers quiz shows to soap operas."
+   ],
+   "dogru": 2,
+   "ipucu": "İki kuralı hatırla: {{She}} ile {{-s}}, iki program arasında {{to}}.",
+   "aciklama": "{{She prefers quiz shows to soap operas.}} (s. 84, s. 94)",
+   "yardim": {
+    "adimlar": [
+     "{{She}} ile {{prefer}} kelimesine {{-s}} eklenir.",
+     "İki programın arasına {{than}} değil, başka bir kelime gelir.",
+     "İki kuralı birden uygulayan şıkkı seç."
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u5k2",
+     "kavram": "prefer … to …"
+    },
+    {
+     "konu": "u5k1",
+     "kavram": "quiz show"
+    }
+   ]
+  },
+  {
+   "soru": "{{Maria: I never watch soap operas.}} Maria pembe diziler için ne der?",
+   "secenekler": [
+    "They are boring.",
+    "They are educational.",
+    "They are my favourite."
+   ],
+   "dogru": 0,
+   "ipucu": "Hiç izlemediği program için olumsuz bir sıfat kullanır.",
+   "aciklama": "{{I never watch soap operas. They are boring.}} (s. 84)",
+   "kaynak": [
+    {
+     "konu": "u5k1",
+     "kavram": "soap opera"
+    },
+    {
+     "konu": "u5k2",
+     "kavram": "boring"
+    }
+   ]
+  },
+  {
+   "soru": "{{My favourite programme is the news.}} Bu kişi için hangisi doğrudur?",
+   "secenekler": [
+    "Haberleri hiç izlemez.",
+    "En sevdiği program haberlerdir.",
+    "Reklamları tercih eder."
+   ],
+   "dogru": 1,
+   "ipucu": "{{favourite}} en sevdiğim; {{news}} haberler.",
+   "aciklama": "{{favourite}} + {{news}}: en sevdiği program haberler. (s. 84)",
+   "kaynak": [
+    {
+     "konu": "u5k2",
+     "kavram": "favourite"
+    },
+    {
+     "konu": "u5k1",
+     "kavram": "news"
+    }
+   ]
+  },
+  {
+   "soru": "{{A group of people usually appear in funny situations in every episode.}} Bu program için hangi sıfat uygundur?",
+   "secenekler": [
+    "educational",
+    "amusing",
+    "boring"
+   ],
+   "dogru": 1,
+   "ipucu": "Önce programı bul: komik durumlar. Sonra ona uyan sıfatı seç.",
+   "aciklama": "Bu bir {{sitcom}}; komik olduğu için {{amusing}}. (s. 87, s. 93)",
+   "yardim": {
+    "adimlar": [
+     "{{funny situations}}: komik durumlar.",
+     "Komik durumları anlatan program hangisiydi?",
+     "Komik bir program için hangi sıfat söylenir?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u5k1",
+     "kavram": "sitcom"
+    },
+    {
+     "konu": "u5k2",
+     "kavram": "amusing"
+    }
+   ]
+  }
+ ]
+}

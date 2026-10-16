@@ -1,0 +1,728 @@
+{
+ "id": "u5k2",
+ "unite": "Unit 5: Television",
+ "baslik": "Tercih Belirtme",
+ "sayfalar": "s. 81–98",
+ "giris": "Şimdi hangi programı daha çok sevdiğimizi söylemeyi öğreneceğiz. {{prefer}} tercih etmek demek. Programlar hakkında görüşümüzü de söyleyeceğiz: sıkıcı, eğlenceli, eğitici. {{Which programmes do you prefer watching?}}",
+ "kavramlar": [
+  {
+   "ad": "prefer",
+   "renk": "#5cbf6b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='34' width='40' height='50' rx='8' fill='#3a4566'/><rect x='66' y='26' width='42' height='60' rx='8' fill='#5cbf6b'/><path d='M76 56l8 8 16-18' stroke='#1b2340' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='34' cy='59' r='9' fill='none' stroke='#9aa7b8' stroke-width='3'/><path d='M40 98h40' stroke='#5cbf6b' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Tercih etmek demektir: iki şeyden birini daha çok istemek. Arkasından fiil gelirse {{-ing}} alır: {{prefer watching}}.",
+   "ek": "{{He}} / {{She}} ile {{prefers}} olur: {{Tom prefers watching talk shows to reality shows.}} (s. 94)",
+   "akilda": "tercih etmek",
+   "ornek": "I prefer sports programmes.",
+   "ornekTr": "Spor programlarını tercih ederim. (s. 84)",
+   "formul": [
+    [
+     {
+      "t": "I / You / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "prefer",
+      "r": "fiil",
+      "alt": "tercih etmek"
+     },
+     {
+      "t": "watching",
+      "r": "ek",
+      "alt": "fiil + -ing"
+     },
+     {
+      "t": "quiz shows",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "He / She",
+      "r": "ozne"
+     },
+     {
+      "t": "prefers",
+      "r": "fiil",
+      "alt": "-s alır"
+     },
+     {
+      "t": "watching",
+      "r": "ek",
+      "alt": "fiil + -ing"
+     },
+     {
+      "t": "the news",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru yazılmış?",
+    "secenekler": [
+     "I prefer watch sitcoms.",
+     "I prefer watching sitcoms.",
+     "I prefers watching sitcoms."
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta yazıyordu: {{prefer}}'dan sonra fiil {{-ing}} alır. {{I}} ile {{-s}} yok.",
+    "aciklama": "{{I prefer watching sitcoms.}} (s. 83)"
+   }
+  },
+  {
+   "ad": "prefer … to …",
+   "renk": "#3fae55",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='30' width='40' height='34' rx='6' fill='#f2c14e'/><rect x='18' y='36' width='28' height='22' rx='3' fill='#0e1530'/><circle cx='32' cy='47' r='6' fill='#f2c14e'/><rect x='68' y='30' width='40' height='34' rx='6' fill='#3a4566'/><rect x='74' y='36' width='28' height='22' rx='3' fill='#0e1530'/><circle cx='88' cy='47' r='6' fill='#3a4566'/><path d='M32 72v14' stroke='#3fae55' stroke-width='5' stroke-linecap='round'/><path d='M22 82l10 12 10-12' fill='#3fae55'/><text x='60' y='52' font-size='15' font-family='sans-serif' font-weight='700' fill='#f5f0e6' text-anchor='middle'>&gt;</text><path d='M78 76l20 16M98 76l-20 16' stroke='#d94848' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Bir şeyi başka bir şeye tercih etmek demektir. Sevdiğimiz önce gelir, {{to}}'dan sonra daha az sevdiğimiz gelir.",
+   "ek": "{{than}} kullanılmaz: {{prefer sitcoms to reality shows}} doğru. {{I prefer watching the news to the discussion programmes.}} (s. 93)",
+   "akilda": "X'i Y'ye tercih etmek",
+   "ornek": "I prefer sitcoms to reality shows because they are funny.",
+   "ornekTr": "Komedi dizilerini gerçeklik şovlarına tercih ederim, çünkü komikler. (s. 84)",
+   "formul": [
+    [
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "prefer",
+      "r": "fiil"
+     },
+     {
+      "t": "sitcoms",
+      "r": "kelime",
+      "alt": "daha çok sevdiğim"
+     },
+     {
+      "t": "to",
+      "r": "yard",
+      "alt": "-e / -a"
+     },
+     {
+      "t": "reality shows",
+      "r": "diger",
+      "alt": "daha az sevdiğim"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I prefer sitcoms to reality shows.}} Hangisini daha çok seviyor?",
+    "secenekler": [
+     "Komedi dizilerini",
+     "Gerçeklik şovlarını",
+     "İkisini de aynı"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta yazıyordu: sevdiğimiz önce gelir, {{to}}'dan sonra daha az sevdiğimiz.",
+    "aciklama": "{{prefer sitcoms to reality shows}}: komedi dizilerini daha çok seviyor. (s. 84)"
+   }
+  },
+  {
+   "ad": "favourite",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 18l11 23 25 3-18 17 5 25-23-12-23 12 5-25-18-17 25-3z' fill='#f2c14e'/><path d='M60 64q-11-7-11-14 0-5 5-5 4 0 6 4 2-4 6-4 5 0 5 5 0 7-11 14z' fill='#d94848'/><rect x='30' y='96' width='60' height='8' rx='4' fill='#c98a5a'/></svg>",
+   "aciklama": "En sevilen, en sevdiğim demektir. {{My favourite …}} kalıbıyla en sevdiğimiz şeyi söyleriz.",
+   "ek": "Soru: {{What's your favourite TV show?}} (s. 96) Amerikan yazımı {{favorite}}.",
+   "akilda": "en sevdiğim",
+   "ornek": "My favourite talk show's on.",
+   "ornekTr": "En sevdiğim sohbet programı başladı. (s. 85)",
+   "soru": {
+    "soru": "{{My favourite programme is Ninety Minutes.}} Bu cümle ne anlatıyor?",
+    "secenekler": [
+     "En sevdiği programı",
+     "En sıkıcı programı",
+     "İlk izlediği programı"
+    ],
+    "dogru": 0,
+    "ipucu": "{{favourite}} kartındaki Türkçe karşılığı hatırla.",
+    "aciklama": "{{favourite}} en sevdiğim demek. (s. 84)"
+   }
+  },
+  {
+   "ad": "Which programmes do you prefer watching?",
+   "renk": "#5aa9e6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 22h70a8 8 0 018 8v34a8 8 0 01-8 8H40l-16 14v-14h-10a8 8 0 01-8-8V30a8 8 0 018-8z' fill='#5aa9e6'/><path d='M42 38q0-8 7-8t7 7q0 5-7 7v5' stroke='#1b2340' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='49' cy='58' r='3' fill='#1b2340'/><rect x='70' y='70' width='38' height='28' rx='5' fill='#f2c14e'/><rect x='75' y='75' width='28' height='18' rx='3' fill='#0e1530'/><circle cx='89' cy='84' r='4' fill='#f2c14e'/></svg>",
+   "aciklama": "\"Hangi programları izlemeyi tercih edersin?\" demektir. Birinin tercihini sormak için kullanırız.",
+   "ek": "Cevap: {{I prefer sports programmes.}} ya da {{I like documentaries and quiz shows.}} (s. 84, s. 85)",
+   "akilda": "Hangisini tercih edersin?",
+   "ornek": "Really? Which programmes do you prefer watching?",
+   "ornekTr": "Gerçekten mi? Hangi programları izlemeyi tercih edersin? (s. 85)",
+   "soru": {
+    "soru": "{{Which programmes do you prefer watching?}} sorusuna hangisi cevap olur?",
+    "secenekler": [
+     "I watched it last year.",
+     "I prefer quiz shows.",
+     "It's next to the TV set."
+    ],
+    "dogru": 1,
+    "ipucu": "Soru tercih soruyor. Cevapta da {{prefer}} olmalı.",
+    "aciklama": "Tercih sorusuna tercihle cevap verilir: {{I prefer quiz shows.}} (s. 84)"
+   }
+  },
+  {
+   "ad": "boring",
+   "renk": "#9aa7b8",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='54' cy='66' r='30' fill='#9aa7b8'/><path d='M38 58h10M60 58h10' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><ellipse cx='54' cy='78' rx='7' ry='9' fill='#1b2340'/><text x='86' y='38' font-size='14' font-family='sans-serif' font-weight='700' fill='#f5f0e6'>z</text><text x='96' y='28' font-size='11' font-family='sans-serif' font-weight='700' fill='#f5f0e6' opacity='.8'>z</text><text x='104' y='20' font-size='8' font-family='sans-serif' font-weight='700' fill='#f5f0e6' opacity='.6'>z</text></svg>",
+   "aciklama": "Sıkıcı demektir. Bir programı sevmediğimizi söylerken kullanırız.",
+   "ek": "Benzeri {{dull}} (s. 94). Zıtları {{interesting}}, {{amusing}}.",
+   "akilda": "sıkıcı",
+   "ornek": "I don't like talk shows. I think they are boring.",
+   "ornekTr": "Sohbet programlarını sevmem. Bence sıkıcılar. (s. 85)",
+   "soru": {
+    "soru": "Maria pembe dizileri izlemiyor. Onlar için ne diyor?",
+    "secenekler": [
+     "They are educational.",
+     "They are amusing.",
+     "They are boring."
+    ],
+    "dogru": 2,
+    "ipucu": "Sevmediği program için hangi sıfatı kullanır? {{boring}} kartını hatırla.",
+    "aciklama": "{{I never watch soap operas. They are boring.}} (s. 84)"
+   }
+  },
+  {
+   "ad": "amusing",
+   "renk": "#ffa26b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='32' fill='#ffa26b'/><path d='M42 52q5-6 10 0M68 52q5-6 10 0' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M40 66q20 26 40 0z' fill='#1b2340'/><path d='M48 70q12 8 24 0' stroke='#d94848' stroke-width='4' fill='none'/><path d='M20 30l6 6M100 30l-6 6M24 92l6-4M96 92l-6-4' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Eğlenceli, güldüren demektir. Hoşumuza giden programlar için kullanırız.",
+   "ek": "Benzerleri {{funny}} komik, {{fantastic}} harika. Zıttı {{boring}}.",
+   "akilda": "eğlenceli",
+   "ornek": "I prefer amusing programmes.",
+   "ornekTr": "Eğlenceli programları tercih ederim. (s. 85)",
+   "soru": {
+    "soru": "{{amusing}} hangisinin zıttıdır?",
+    "secenekler": [
+     "funny",
+     "fantastic",
+     "boring"
+    ],
+    "dogru": 2,
+    "ipucu": "{{amusing}} eğlenceli demek. Zıttı sevmediğimiz programlar için söylenir.",
+    "aciklama": "Eğlencelinin zıttı sıkıcı: {{boring}}. (s. 84, s. 85)"
+   }
+  },
+  {
+   "ad": "educational",
+   "renk": "#b48cf2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 26l40 16-40 16-40-16z' fill='#b48cf2'/><path d='M36 50v18q24 14 48 0V50' fill='#8a6ad0'/><path d='M96 44v20' stroke='#f2c14e' stroke-width='3'/><circle cx='96' cy='66' r='4' fill='#f2c14e'/><path d='M28 86h28v16H28zM64 86h28v16H64z' fill='#f5f0e6'/><path d='M60 86v16' stroke='#1b2340' stroke-width='2'/></svg>",
+   "aciklama": "Eğitici, öğretici demektir. İzlerken yeni şeyler öğrendiğimiz programlar için kullanırız.",
+   "ek": "Benzerleri {{educative}} (s. 87) ve {{informative}} (s. 98).",
+   "akilda": "eğitici",
+   "ornek": "I like documentaries and quiz shows. They are educational.",
+   "ornekTr": "Belgeselleri ve bilgi yarışmalarını severim. Eğiticiler. (s. 85)",
+   "soru": {
+    "soru": "Jane belgeselleri ve bilgi yarışmalarını neden seviyor?",
+    "secenekler": [
+     "Eğitici oldukları için",
+     "Kısa oldukları için",
+     "Sıkıcı oldukları için"
+    ],
+    "dogru": 0,
+    "ipucu": "{{educational}} kartının Türkçesini hatırla.",
+    "aciklama": "{{They are educational.}} Eğiticiler. (s. 85)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bir tercih kalıbı mı, programı anlatan bir sıfat mı?",
+   "kutular": [
+    {
+     "etiket": "Tercih kalıbı",
+     "uyeler": [
+      "prefer",
+      "prefer … to …",
+      "favourite",
+      "Which programmes do you prefer watching?"
+     ]
+    },
+    {
+     "etiket": "Programı anlatan sıfat",
+     "uyeler": [
+      "boring",
+      "amusing",
+      "educational"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki Sevgi hafta içi dizi, hafta sonu sohbet programı ve film izliyor. İzlediği bir filmden dostlukta güvenin önemini öğrenmiş. (s. 90)",
+  "Fatih bir adamla köpeğin dostluğunu anlatan bir film izlemiş: köpek, adam öldükten sonra da onu tren istasyonunda beklemeye devam etmiş. (s. 86)"
+ ],
+ "akildaKalsin": [
+  "{{prefer}} tercih etmek: {{I prefer quiz shows.}}",
+  "Fiil gelirse {{-ing}}: {{prefer watching}}.",
+  "{{He / She}} ile {{prefers}}: {{Tom prefers watching talk shows.}}",
+  "{{prefer X to Y}}: X'i Y'ye tercih etmek ({{than}} değil!).",
+  "{{My favourite …}}: en sevdiğim.",
+  "Sıfatlar: {{boring}} sıkıcı, {{amusing}} eğlenceli, {{educational}} eğitici."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{prefer}}'dan sonra {{than}} gelir mi?",
+   "cevap": "Hayır, {{to}} gelir: {{I prefer sitcoms to reality shows.}} (s. 84)"
+  },
+  {
+   "soru": "{{prefer watch}} mi, {{prefer watching}} mi?",
+   "cevap": "{{prefer watching}}: {{I prefer watching sitcoms to laugh.}} (s. 83)"
+  },
+  {
+   "soru": "{{He}} ile kullanınca ne değişir?",
+   "cevap": "{{prefer}} kelimesine {{-s}} eklenir: {{Tom prefers watching talk shows to reality shows.}} (s. 94)"
+  },
+  {
+   "soru": "{{I can't wait for it.}} ne demek?",
+   "cevap": "\"Sabırsızlıkla bekliyorum\" demek. Nora en sevdiği program için böyle diyor. (s. 85)"
+  },
+  {
+   "soru": "Nora belgeseller için ne düşünüyor?",
+   "cevap": "Sıkıcı buluyor: {{I find them boring. I prefer amusing programmes.}} (s. 85)"
+  },
+  {
+   "soru": "Rob pembe diziler için hangi kelimeleri kullanıyor?",
+   "cevap": "{{silly}} saçma ve {{dull}} sıkıcı: {{I think they're silly and dull.}} (s. 94)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Hangi programları neden tercih ettiğini İngilizce iki cümleyle yaz. {{prefer}} ve bir sıfat kullan.",
+   "ornekCevap": "I prefer documentaries to soap operas. I think documentaries are educational.",
+   "anahtarlar": [
+    "prefer",
+    "think"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I prefer reality shows to sitcoms because they are funny.",
+    "I prefer sitcoms to reality shows because they are funny.",
+    "I prefer sitcoms to reality shows because they are boring."
+   ],
+   "dogru": 1,
+   "ipucu": "Önce hangi program geliyor? Sonda {{funny}} mi, {{boring}} mi? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{I prefer sitcoms to reality shows because they are funny.}} (s. 84)",
+   "dinle": "I prefer sitcoms to reality shows because they are funny.",
+   "kavram": "prefer … to …"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Which programmes did you watch?",
+    "Which channel do you prefer watching?",
+    "Which programmes do you prefer watching?"
+   ],
+   "dogru": 2,
+   "ipucu": "{{programmes}} mı, {{channel}} mı? {{prefer}} var mı?",
+   "aciklama": "Duyduğun soru {{Which programmes do you prefer watching?}} (s. 84)",
+   "dinle": "Which programmes do you prefer watching?",
+   "kavram": "Which programmes do you prefer watching?"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I like talk shows. I think they are amusing.",
+    "I don't like quiz shows. I think they are boring.",
+    "I don't like talk shows. I think they are boring."
+   ],
+   "dogru": 2,
+   "ipucu": "Hangi program? Sıfat ne?",
+   "aciklama": "Duyduğun cümle {{I don't like talk shows. I think they are boring.}} (s. 85)",
+   "dinle": "I don't like talk shows. I think they are boring.",
+   "kavram": "boring"
+  },
+  {
+   "soru": "Hangisi doğru yazılmış?",
+   "secenekler": [
+    "Tom prefer watching talk shows.",
+    "Tom prefers watching talk shows.",
+    "Tom prefers watch talk shows."
+   ],
+   "dogru": 1,
+   "ipucu": "{{Tom}} = {{He}}. {{prefer}}'a ne eklenir? Fiil nasıl olur?",
+   "aciklama": "{{He}} ile {{prefers}}, fiil {{-ing}}: {{Tom prefers watching talk shows.}} (s. 94)",
+   "kavram": "prefer",
+   "yardim": {
+    "adimlar": [
+     "{{Tom}} tek kişi: {{He}} gibi.",
+     "{{He}} ile {{prefer}} kelimesine {{-s}} eklenir.",
+     "{{prefer}}'dan sonra gelen fiil {{-ing}} alır."
+    ]
+   }
+  },
+  {
+   "soru": "{{I prefer sitcoms ___ reality shows.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "than",
+    "from",
+    "to"
+   ],
+   "dogru": 2,
+   "ipucu": "Formül şeridine bak: iki program arasında hangi kelime var?",
+   "aciklama": "{{prefer X to Y}}: {{I prefer sitcoms to reality shows.}} (s. 84)",
+   "kavram": "prefer … to …"
+  },
+  {
+   "soru": "{{Lisa: I prefer soap operas. They have more drama and emotional depth.}} Hangisi doğrudur?",
+   "secenekler": [
+    "Lisa pembe dizileri sevmiyor.",
+    "Lisa pembe dizileri tercih ediyor.",
+    "Lisa yalnızca haber izliyor."
+   ],
+   "dogru": 1,
+   "ipucu": "{{prefer}}'dan sonra hangi program var?",
+   "aciklama": "{{Lisa: I prefer soap operas.}} Lisa pembe dizileri tercih ediyor. (s. 97)",
+   "kavram": "prefer"
+  },
+  {
+   "soru": "{{What's your favourite TV show?}} Bu soru ne soruyor?",
+   "secenekler": [
+    "En sevdiğin TV programını",
+    "Dün ne izlediğini",
+    "Kaç saat TV izlediğini"
+   ],
+   "dogru": 0,
+   "ipucu": "{{favourite}} en sevdiğim demek.",
+   "aciklama": "{{favourite}}: en sevilen. Soru en sevdiğin programı soruyor. (s. 96)",
+   "kavram": "favourite"
+  },
+  {
+   "soru": "{{I prefer watching the news and quiz shows. I think they are ___, and I learn a lot of things.}}",
+   "secenekler": [
+    "educational",
+    "boring",
+    "silly"
+   ],
+   "dogru": 0,
+   "ipucu": "{{I learn a lot of things}}: çok şey öğreniyorum. Öğreten program nasıldır?",
+   "aciklama": "Öğreten program eğiticidir: {{educational}}. (s. 90)",
+   "kavram": "educational"
+  },
+  {
+   "soru": "{{My favourite TV programmes are sitcoms. They're ___.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "boring",
+    "amusing",
+    "dull"
+   ],
+   "dogru": 1,
+   "ipucu": "En sevdiği program için olumlu bir sıfat gerekir.",
+   "aciklama": "Sevdiği program eğlenceli: {{They're amusing.}} (s. 93)",
+   "kavram": "amusing"
+  },
+  {
+   "soru": "{{Nora: I find them boring. I prefer amusing programmes.}} Nora nasıl programları sever?",
+   "secenekler": [
+    "Eğitici programları",
+    "Sıkıcı programları",
+    "Eğlenceli programları"
+   ],
+   "dogru": 2,
+   "ipucu": "{{prefer}}'dan sonra gelen sıfata bak: {{amusing}}.",
+   "aciklama": "{{amusing}} eğlenceli: Nora eğlenceli programları tercih ediyor. (s. 85)",
+   "kavram": "amusing"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "funny",
+   "tr": "komik",
+   "ornek": "It's very funny.",
+   "ornekTr": "Çok komik. (s. 85)"
+  },
+  {
+   "en": "interesting",
+   "tr": "ilginç",
+   "ornek": "I watched an interesting documentary about space.",
+   "ornekTr": "Uzay hakkında ilginç bir belgesel izledim. (s. 89)"
+  },
+  {
+   "en": "fantastic",
+   "tr": "harika",
+   "ornek": "It was a fantastic film.",
+   "ornekTr": "Harika bir filmdi. (s. 86)"
+  },
+  {
+   "en": "exciting",
+   "tr": "heyecanlı",
+   "ornek": "It was really exciting and fantastic.",
+   "ornekTr": "Gerçekten heyecanlı ve harikaydı. (s. 89)"
+  },
+  {
+   "en": "dull",
+   "tr": "sıkıcı, tatsız",
+   "ornek": "I think they're silly and dull.",
+   "ornekTr": "Bence saçma ve sıkıcılar. (s. 94)"
+  },
+  {
+   "en": "silly",
+   "tr": "saçma"
+  },
+  {
+   "en": "recommend",
+   "tr": "önermek, tavsiye etmek"
+  },
+  {
+   "en": "I can't wait for it.",
+   "tr": "Sabırsızlıkla bekliyorum.",
+   "ornek": "My favourite talk show's on. I can't wait for it.",
+   "ornekTr": "En sevdiğim sohbet programı başladı. Sabırsızlıkla bekliyorum. (s. 85)"
+  },
+  {
+   "en": "never miss",
+   "tr": "hiç kaçırmamak",
+   "ornek": "To be honest, I never miss it.",
+   "ornekTr": "Doğrusu, onu hiç kaçırmam. (s. 84)"
+  },
+  {
+   "en": "come over",
+   "tr": "(bize) gelmek, uğramak",
+   "ornek": "Why don't you come over?",
+   "ornekTr": "Neden bize gelmiyorsun? (s. 85)"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "I prefer sitcoms to reality shows.",
+   "tr": "Komedi dizilerini gerçeklik şovlarına tercih ederim. (s. 84)"
+  },
+  {
+   "en": "Which programmes do you prefer watching?",
+   "tr": "Hangi programları izlemeyi tercih edersin? (s. 84)"
+  },
+  {
+   "en": "I prefer amusing programmes.",
+   "tr": "Eğlenceli programları tercih ederim. (s. 85)"
+  },
+  {
+   "en": "I think they are boring.",
+   "tr": "Bence onlar sıkıcı. (s. 85)"
+  },
+  {
+   "en": "My favourite talk show's on.",
+   "tr": "En sevdiğim sohbet programı başladı. (s. 85)"
+  },
+  {
+   "en": "I can't wait for it.",
+   "tr": "Sabırsızlıkla bekliyorum. (s. 85)"
+  },
+  {
+   "en": "They are educational.",
+   "tr": "Onlar eğitici. (s. 85)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "I prefer watch the news.",
+   "yanlis": "watch",
+   "secenekler": [
+    "watches",
+    "watching",
+    "watched"
+   ],
+   "dogru": 1,
+   "tr": "Haberleri izlemeyi tercih ederim.",
+   "aciklama": "{{prefer}}'dan sonra fiil {{-ing}} alır: {{watching}}. (s. 83)"
+  },
+  {
+   "cumle": "Tom prefer watching talk shows to reality shows.",
+   "yanlis": "prefer",
+   "secenekler": [
+    "prefers",
+    "preferring",
+    "to prefer"
+   ],
+   "dogru": 0,
+   "tr": "Tom sohbet programlarını gerçeklik şovlarına tercih eder.",
+   "aciklama": "{{Tom}} = {{He}}: {{prefers}}. (s. 94)"
+  },
+  {
+   "cumle": "I prefer sitcoms than reality shows.",
+   "yanlis": "than",
+   "secenekler": [
+    "from",
+    "to",
+    "with"
+   ],
+   "dogru": 1,
+   "tr": "Komedi dizilerini gerçeklik şovlarına tercih ederim.",
+   "aciklama": "{{prefer X to Y}}: {{than}} değil {{to}}. (s. 84)"
+  },
+  {
+   "cumle": "Soap operas are amusing. I never watch them.",
+   "yanlis": "amusing",
+   "secenekler": [
+    "funny",
+    "boring",
+    "educational"
+   ],
+   "dogru": 1,
+   "tr": "Pembe diziler sıkıcı. Onları hiç izlemem.",
+   "aciklama": "Hiç izlemediği program için {{boring}} der. (s. 84)"
+  },
+  {
+   "cumle": "I like documentaries. They are boring.",
+   "yanlis": "boring",
+   "secenekler": [
+    "silly",
+    "dull",
+    "educational"
+   ],
+   "dogru": 2,
+   "tr": "Belgeselleri severim. Eğiticiler.",
+   "aciklama": "Sevdiği belgesel için {{educational}} der. (s. 85)"
+  },
+  {
+   "cumle": "My favourite talk show's on. I can wait for it.",
+   "yanlis": "can",
+   "secenekler": [
+    "can't",
+    "don't",
+    "must"
+   ],
+   "dogru": 0,
+   "tr": "En sevdiğim sohbet programı başladı. Sabırsızlıkla bekliyorum.",
+   "aciklama": "Sabırsızlıkla beklemek: {{I can't wait for it.}} (s. 85)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Jane and Nora",
+  "sayfa": "s. 85",
+  "sozluk": {
+   "this evening": "bu akşam",
+   "can't wait": "sabırsızlıkla beklemek",
+   "come over": "bize gelmek",
+   "together": "birlikte",
+   "boring": "sıkıcı",
+   "prefer watching": "izlemeyi tercih etmek",
+   "educational": "eğitici",
+   "I find them": "bence onlar, onları … buluyorum",
+   "amusing": "eğlenceli",
+   "comedy film": "komedi filmi",
+   "half past eight": "sekiz buçuk",
+   "at the cinema": "sinemada",
+   "last year": "geçen yıl",
+   "funny": "komik",
+   "take care": "kendine iyi bak"
+  },
+  "bolumler": [
+   {
+    "baslik": "An invitation",
+    "cumleler": [
+     {
+      "en": "Jane: Hello, Nora. How are you?",
+      "tr": "Jane: Merhaba Nora. Nasılsın?"
+     },
+     {
+      "en": "Nora: Great, thanks. And you?",
+      "tr": "Nora: Harika, teşekkürler. Ya sen?"
+     },
+     {
+      "en": "Jane: I'm fine. What are you doing this evening?",
+      "tr": "Jane: İyiyim. Bu akşam ne yapıyorsun?"
+     },
+     {
+      "en": "Nora: My favourite talk show's on. I can't wait for it.",
+      "tr": "Nora: En sevdiğim sohbet programı var. Sabırsızlıkla bekliyorum."
+     },
+     {
+      "en": "Nora: Why don't you come over? We can watch it together.",
+      "tr": "Nora: Neden bize gelmiyorsun? Birlikte izleyebiliriz."
+     },
+     {
+      "en": "Jane: Well... I don't like talk shows. I think they are boring.",
+      "tr": "Jane: Şey... Sohbet programlarını sevmem. Bence sıkıcılar."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Nora bu akşam ne izleyecek?",
+      "secenekler": [
+       "Bir sohbet programı",
+       "Bir bilgi yarışması",
+       "Haberleri"
+      ],
+      "dogru": 0,
+      "ipucu": "{{My favourite talk show's on.}} cümlesini bul.",
+      "aciklama": "Nora'nın en sevdiği sohbet programı var: {{talk show}}. (s. 85)"
+     },
+     {
+      "soru": "Jane sohbet programları için ne düşünüyor?",
+      "secenekler": [
+       "Eğlenceli",
+       "Sıkıcı",
+       "Eğitici"
+      ],
+      "dogru": 1,
+      "ipucu": "Jane'in son cümlesindeki sıfatı bul.",
+      "aciklama": "{{I think they are boring.}} Sıkıcı buluyor. (s. 85)"
+     }
+    ]
+   },
+   {
+    "baslik": "Different tastes",
+    "cumleler": [
+     {
+      "en": "Nora: Really? Which programmes do you prefer watching?",
+      "tr": "Nora: Gerçekten mi? Hangi programları izlemeyi tercih edersin?"
+     },
+     {
+      "en": "Jane: I like documentaries and quiz shows. They are educational.",
+      "tr": "Jane: Belgeselleri ve bilgi yarışmalarını severim. Eğiticiler."
+     },
+     {
+      "en": "Nora: I find them boring. I prefer amusing programmes.",
+      "tr": "Nora: Ben onları sıkıcı buluyorum. Eğlenceli programları tercih ederim."
+     },
+     {
+      "en": "Jane: I see. There is a comedy film on Channel 5 at half past eight.",
+      "tr": "Jane: Anlıyorum. Saat sekiz buçukta 5. kanalda bir komedi filmi var."
+     },
+     {
+      "en": "Jane: I watched it at the cinema last year. You should watch it, too. It's very funny.",
+      "tr": "Jane: Geçen yıl sinemada izledim. Sen de izlemelisin. Çok komik."
+     },
+     {
+      "en": "Nora: Oh, it is after the talk show. Okay, I'll watch it. Thank you, Jane.",
+      "tr": "Nora: Ah, sohbet programından sonra. Tamam, izleyeceğim. Teşekkürler Jane."
+     },
+     {
+      "en": "Jane: You're welcome. See you later, then. Bye.",
+      "tr": "Jane: Rica ederim. Görüşürüz o zaman. Hoşça kal."
+     },
+     {
+      "en": "Nora: Take care.",
+      "tr": "Nora: Kendine iyi bak."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Jane hangi programları sever?",
+      "secenekler": [
+       "Belgeselleri ve bilgi yarışmalarını",
+       "Sohbet programlarını",
+       "Pembe dizileri"
+      ],
+      "dogru": 0,
+      "ipucu": "{{I like documentaries and quiz shows.}} cümlesini bul.",
+      "aciklama": "Jane belgeselleri ve bilgi yarışmalarını sever. (s. 85)"
+     },
+     {
+      "soru": "Komedi filmi saat kaçta?",
+      "secenekler": [
+       "Sekizde",
+       "Sekiz buçukta",
+       "Dokuzda"
+      ],
+      "dogru": 1,
+      "ipucu": "{{half past eight}} kalıbını bul ve sözlüğe bak.",
+      "aciklama": "{{at half past eight}}: sekiz buçukta. (s. 85)"
+     }
+    ]
+   }
+  ]
+ }
+}

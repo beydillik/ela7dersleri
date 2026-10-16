@@ -1,0 +1,623 @@
+{
+ "id": "u5k1",
+ "unite": "Unit 5: Television",
+ "baslik": "TV Programı Türleri",
+ "sayfalar": "s. 81–98",
+ "giris": "Bu ünitede televizyonu konuşacağız. Önce program türlerini öğreneceğiz: haberler, komedi dizisi, belgesel, bilgi yarışması, gerçeklik şovu, pembe dizi ve reklam. {{How often do you watch TV?}}",
+ "kavramlar": [
+  {
+   "ad": "news",
+   "renk": "#5aa9e6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M46 14l14 10 14-10' stroke='#5aa9e6' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='14' y='24' width='92' height='66' rx='10' fill='#5aa9e6'/><rect x='22' y='31' width='76' height='52' rx='6' fill='#0e1530'/><circle cx='46' cy='54' r='15' fill='#2f7fc0'/><path d='M34 50q8 4 12-2t12 2M33 60q7-4 13 1t12-1' stroke='#7fd18a' stroke-width='4' fill='none'/><rect x='66' y='44' width='26' height='5' rx='2' fill='#f5f0e6'/><rect x='66' y='53' width='20' height='5' rx='2' fill='#f5f0e6' opacity='.7'/><rect x='22' y='72' width='76' height='11' fill='#d94848'/><rect x='28' y='76' width='40' height='3' rx='1.5' fill='#f5f0e6'/><rect x='40' y='92' width='40' height='6' rx='3' fill='#5aa9e6'/><rect x='30' y='98' width='60' height='5' rx='2.5' fill='#5aa9e6' opacity='.7'/></svg>",
+   "aciklama": "Haberler demektir. Dünyada olan en yeni olayları anlatır. {{It informs people about the latest events happening all over the world.}}",
+   "ek": "Maria haberleri hiç kaçırmaz: {{It is good to know what is going on in the world.}} (s. 84)",
+   "akilda": "haberler",
+   "ornek": "My favourite TV programme is the news.",
+   "ornekTr": "En sevdiğim TV programı haberlerdir. (s. 84)",
+   "soru": {
+    "soru": "{{news}} bize ne anlatır?",
+    "secenekler": [
+     "Dünyadaki en yeni olayları",
+     "Komik olayları",
+     "Ürünleri"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta {{the latest events}} vardı: en yeni olaylar.",
+    "aciklama": "{{news}} dünyadaki en yeni olayları anlatır. (s. 87)"
+   }
+  },
+  {
+   "ad": "sitcom",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M46 14l14 10 14-10' stroke='#f2c14e' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='14' y='24' width='92' height='66' rx='10' fill='#f2c14e'/><rect x='22' y='31' width='76' height='52' rx='6' fill='#0e1530'/><circle cx='46' cy='57' r='13' fill='#f2c14e'/><circle cx='74' cy='57' r='13' fill='#ffa26b'/><circle cx='42' cy='53' r='2' fill='#1b2340'/><circle cx='50' cy='53' r='2' fill='#1b2340'/><circle cx='70' cy='53' r='2' fill='#1b2340'/><circle cx='78' cy='53' r='2' fill='#1b2340'/><path d='M40 60q6 7 12 0z' fill='#1b2340'/><path d='M68 60q6 7 12 0z' fill='#1b2340'/><path d='M30 38l4 4M90 38l-4 4M60 34v5' stroke='#f5f0e6' stroke-width='2.5' stroke-linecap='round'/><rect x='40' y='92' width='40' height='6' rx='3' fill='#f2c14e'/><rect x='30' y='98' width='60' height='5' rx='2.5' fill='#f2c14e' opacity='.7'/></svg>",
+   "aciklama": "Komedi dizisi demektir. Her bölümde aynı kişiler komik durumlara düşer. {{A sitcom is short for situational comedy.}}",
+   "ek": "{{A group of people usually appear in funny situations in every episode.}} (s. 87) Çoğulu {{sitcoms}}.",
+   "akilda": "komedi dizisi",
+   "ornek": "My favourite sitcom was on.",
+   "ornekTr": "En sevdiğim komedi dizisi vardı. (s. 89)",
+   "soru": {
+    "soru": "{{sitcom}} nasıl bir programdır?",
+    "secenekler": [
+     "Ürün tanıtan kısa film",
+     "Komik durumları anlatan dizi",
+     "Bilgi yarışması"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta {{funny situations}} vardı: komik durumlar.",
+    "aciklama": "{{sitcom}}, kişilerin komik durumlara düştüğü bir dizidir. (s. 87, s. 97)"
+   }
+  },
+  {
+   "ad": "documentary",
+   "renk": "#7fd18a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M46 14l14 10 14-10' stroke='#7fd18a' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='14' y='24' width='92' height='66' rx='10' fill='#7fd18a'/><rect x='22' y='31' width='76' height='52' rx='6' fill='#0e1530'/><path d='M22 83l20-26 12 14 16-22 28 34z' fill='#3f8f4a'/><path d='M62 49l8-10 8 10z' fill='#f5f0e6' opacity='.8'/><circle cx='84' cy='42' r='6' fill='#f2c14e'/><ellipse cx='38' cy='44' rx='9' ry='4' fill='none' stroke='#9aa7b8' stroke-width='2'/><circle cx='38' cy='44' r='4' fill='#c98a5a'/><rect x='40' y='92' width='40' height='6' rx='3' fill='#7fd18a'/><rect x='30' y='98' width='60' height='5' rx='2.5' fill='#7fd18a' opacity='.7'/></svg>",
+   "aciklama": "Belgesel demektir. Gerçek konuları anlatır; doğa, uzay, tarih gibi. İzleyen yeni şeyler öğrenir.",
+   "ek": "{{Watch them and learn the secrets of the past, present and future.}} (s. 87) Çoğulu {{documentaries}}.",
+   "akilda": "belgesel",
+   "ornek": "I watched an interesting documentary about space.",
+   "ornekTr": "Uzay hakkında ilginç bir belgesel izledim. (s. 89)",
+   "soru": {
+    "soru": "Uzay hakkında bilgi veren program hangisidir?",
+    "secenekler": [
+     "sitcom",
+     "commercial",
+     "documentary"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta belgeselin doğa, uzay ve tarih anlattığı yazıyordu.",
+    "aciklama": "Kate uzay hakkında bir belgesel izledi: {{documentary about space}}. (s. 89)"
+   }
+  },
+  {
+   "ad": "quiz show",
+   "renk": "#b48cf2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M46 14l14 10 14-10' stroke='#b48cf2' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='14' y='24' width='92' height='66' rx='10' fill='#b48cf2'/><rect x='22' y='31' width='76' height='52' rx='6' fill='#0e1530'/><circle cx='60' cy='52' r='16' fill='#b48cf2'/><path d='M54 47q0-7 6-7t6 6q0 4-6 6v4' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><circle cx='60' cy='62' r='2.5' fill='#1b2340'/><rect x='28' y='72' width='18' height='8' rx='3' fill='#5cbf6b'/><rect x='51' y='72' width='18' height='8' rx='3' fill='#d94848'/><rect x='74' y='72' width='18' height='8' rx='3' fill='#5aa9e6'/><rect x='40' y='92' width='40' height='6' rx='3' fill='#b48cf2'/><rect x='30' y='98' width='60' height='5' rx='2.5' fill='#b48cf2' opacity='.7'/></svg>",
+   "aciklama": "Bilgi yarışması demektir. Yarışmacılar soruları cevaplar. İzlerken kendini de deneyebilirsin.",
+   "ek": "{{Quiz shows? I watch them because I can test myself.}} (s. 83) Çoğulu {{quiz shows}}.",
+   "akilda": "bilgi yarışması",
+   "ornek": "I also like quiz shows.",
+   "ornekTr": "Bilgi yarışmalarını da severim. (s. 94)",
+   "soru": {
+    "soru": "Soruları cevaplayarak kendini denediğin program hangisidir?",
+    "secenekler": [
+     "quiz show",
+     "soap opera",
+     "news"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta {{I can test myself}} vardı: kendimi deneyebilirim.",
+    "aciklama": "Bilgi yarışmasında kendini denersin: {{quiz show}}. (s. 83)"
+   }
+  },
+  {
+   "ad": "reality show",
+   "renk": "#ff8a65",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M46 14l14 10 14-10' stroke='#ff8a65' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='14' y='24' width='92' height='66' rx='10' fill='#ff8a65'/><rect x='22' y='31' width='76' height='52' rx='6' fill='#0e1530'/><path d='M36 58l14-12 14 12v20H36z' fill='#c98a5a'/><rect x='46' y='66' width='8' height='12' fill='#0e1530'/><circle cx='74' cy='58' r='6' fill='#f5f0e6'/><path d='M66 78q8-14 16 0z' fill='#f5f0e6'/><circle cx='88' cy='40' r='4' fill='#d94848'/><path d='M66 37h12v7H66z' fill='none' stroke='#f5f0e6' stroke-width='1.5'/><rect x='40' y='92' width='40' height='6' rx='3' fill='#ff8a65'/><rect x='30' y='98' width='60' height='5' rx='2.5' fill='#ff8a65' opacity='.7'/></svg>",
+   "aciklama": "Gerçeklik şovu demektir. Gerçek insanların hayatını izleriz. {{In this programme, you can follow the lives of real people.}}",
+   "ek": "{{real}} gerçek demek: oyuncular değil, gerçek insanlar. Çoğulu {{reality shows}}.",
+   "akilda": "gerçeklik şovu",
+   "ornek": "I prefer sitcoms to reality shows because they are funny.",
+   "ornekTr": "Komedi dizilerini gerçeklik şovlarına tercih ederim, çünkü komikler. (s. 84)",
+   "soru": {
+    "soru": "{{reality show}}'da kimlerin hayatını izleriz?",
+    "secenekler": [
+     "Çizgi film karakterlerinin",
+     "Gerçek insanların",
+     "Hayvanların"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta {{real people}} vardı.",
+    "aciklama": "{{you can follow the lives of real people}}: gerçek insanlar. (s. 87)"
+   }
+  },
+  {
+   "ad": "soap opera",
+   "renk": "#f27aa8",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M46 14l14 10 14-10' stroke='#f27aa8' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='14' y='24' width='92' height='66' rx='10' fill='#f27aa8'/><rect x='22' y='31' width='76' height='52' rx='6' fill='#0e1530'/><path d='M60 76q-24-14-24-28 0-10 10-10 8 0 14 9 6-9 14-9 10 0 10 10 0 14-24 28z' fill='#f27aa8'/><path d='M84 44q4 6 0 10-4-4 0-10z' fill='#5aa9e6'/><path d='M30 40q3-4 6 0' stroke='#f5f0e6' stroke-width='2' fill='none'/><rect x='40' y='92' width='40' height='6' rx='3' fill='#f27aa8'/><rect x='30' y='98' width='60' height='5' rx='2.5' fill='#f27aa8' opacity='.7'/></svg>",
+   "aciklama": "Pembe dizi demektir. Gündüz yayınlanır, çok duygusal olaylar anlatır. {{It is usually melodramatic.}}",
+   "ek": "Maria pembe dizileri sevmez: {{They are boring.}} (s. 84) Çoğulu {{soap operas}}.",
+   "akilda": "pembe dizi",
+   "ornek": "I never watch soap operas.",
+   "ornekTr": "Pembe dizileri hiç izlemem. (s. 84)",
+   "soru": {
+    "soru": "Gündüz yayınlanan, çok duygusal dizi hangisidir?",
+    "secenekler": [
+     "quiz show",
+     "news",
+     "soap opera"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta {{daytime}} ve {{melodramatic}} vardı.",
+    "aciklama": "{{soap opera}} gündüz yayınlanır ve duygusaldır. (s. 87)"
+   }
+  },
+  {
+   "ad": "commercial",
+   "renk": "#e0b45c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M46 14l14 10 14-10' stroke='#e0b45c' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='14' y='24' width='92' height='66' rx='10' fill='#e0b45c'/><rect x='22' y='31' width='76' height='52' rx='6' fill='#0e1530'/><path d='M44 48h32l-4 30H48z' fill='#e0b45c'/><path d='M52 48q0-10 8-10t8 10' stroke='#e0b45c' stroke-width='3' fill='none'/><circle cx='82' cy='42' r='8' fill='#d94848'/><path d='M79 42h6M82 39v6' stroke='#f5f0e6' stroke-width='2'/><rect x='30' y='66' width='10' height='10' rx='2' fill='#5cbf6b'/><rect x='40' y='92' width='40' height='6' rx='3' fill='#e0b45c'/><rect x='30' y='98' width='60' height='5' rx='2.5' fill='#e0b45c' opacity='.7'/></svg>",
+   "aciklama": "Reklam demektir. Şirketler ürünlerini çok kısa filmlerle tanıtıp satmaya çalışır.",
+   "ek": "{{Companies try to sell their products by introducing them in very short films.}} (s. 87) Çoğulu {{commercials}}.",
+   "akilda": "reklam",
+   "ornek": "A lot of people change the channel when the commercials appear on the screen.",
+   "ornekTr": "Reklamlar ekrana gelince birçok kişi kanalı değiştirir. (s. 93)",
+   "soru": {
+    "soru": "{{commercial}} ne yapar?",
+    "secenekler": [
+     "Bir ürünü kısa filmle tanıtır",
+     "Dünyadaki olayları anlatır",
+     "Gerçek insanları gösterir"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta {{sell their products}} vardı: ürünlerini satmak.",
+    "aciklama": "Reklam ürünü kısa bir filmle tanıtır. (s. 87)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Kitaba göre bu program eğitici mi, yoksa bir hikâye mi anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Eğitici (bilgi verir)",
+     "uyeler": [
+      "news",
+      "documentary",
+      "quiz show"
+     ]
+    },
+    {
+     "etiket": "Hikâye anlatan dizi",
+     "uyeler": [
+      "sitcom",
+      "soap opera"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "{{sitcom}} kelimesi {{situational comedy}} ifadesinin kısaltmasıdır: durum komedisi. (s. 97)",
+  "Kitapta bir TV bağımlılığı testi var: günde üç saatten fazla TV izlemek ilk soru. (s. 88)"
+ ],
+ "akildaKalsin": [
+  "{{news}} haberler: en yeni olaylar.",
+  "{{sitcom}} komedi dizisi; {{soap opera}} pembe dizi.",
+  "{{documentary}} belgesel: gerçek konular, öğretir.",
+  "{{quiz show}} bilgi yarışması: kendini dene.",
+  "{{reality show}}: gerçek insanların hayatı.",
+  "{{commercial}} reklam: ürünü kısa filmle tanıtır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{sitcom}} neden böyle bir ad almış?",
+   "cevap": "{{situational comedy}} sözünün kısasıdır: komik durumların komedisi. (s. 97)"
+  },
+  {
+   "soru": "Reklam başlayınca insanlar ne yapar?",
+   "cevap": "Kitaba göre birçok kişi kanalı değiştirir: {{change the channel}}. (s. 93)"
+  },
+  {
+   "soru": "Pembe diziler ne zaman yayınlanır?",
+   "cevap": "Gündüz: {{You can watch it daytime.}} (s. 87)"
+  },
+  {
+   "soru": "Belgesel izlemek neden iyi?",
+   "cevap": "Çünkü öğreticidir: {{It's really good to watch a documentary because they are educative.}} (s. 87)"
+  },
+  {
+   "soru": "Maria haberleri neden hiç kaçırmaz?",
+   "cevap": "Dünyada neler olduğunu bilmek iyi olduğu için. (s. 84)"
+  },
+  {
+   "soru": "Gerçeklik şovunda oyuncu var mı?",
+   "cevap": "Kitaba göre gerçek insanların hayatını izleriz: {{real people}}. (s. 87)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "En sevdiğin TV programı türünü İngilizce iki cümleyle yaz: ne izliyorsun, neden?",
+   "ornekCevap": "My favourite TV programme is a quiz show. I watch it because I can test myself.",
+   "anahtarlar": [
+    "favourite",
+    "watch"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "It informs people about the latest events happening all over the world.",
+    "It informs people about the funny events in every episode.",
+    "It sells the latest products all over the world."
+   ],
+   "dogru": 0,
+   "ipucu": "En yeni olaylar mı, komik olaylar mı? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{It informs people about the latest events happening all over the world.}} Bu {{news}}. (s. 87)",
+   "dinle": "It informs people about the latest events happening all over the world.",
+   "kavram": "news"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I watched an interesting sitcom about space.",
+    "I watched a boring documentary about animals.",
+    "I watched an interesting documentary about space."
+   ],
+   "dogru": 2,
+   "ipucu": "Hangi program? Konu ne: uzay mı, hayvanlar mı?",
+   "aciklama": "Duyduğun cümle {{I watched an interesting documentary about space.}} (s. 89)",
+   "dinle": "I watched an interesting documentary about space.",
+   "kavram": "documentary"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I never watch soap operas.",
+    "I always watch soap operas.",
+    "I never watch quiz shows."
+   ],
+   "dogru": 0,
+   "ipucu": "{{never}} mı, {{always}} mı? Hangi program?",
+   "aciklama": "Duyduğun cümle {{I never watch soap operas.}} (s. 84)",
+   "dinle": "I never watch soap operas.",
+   "kavram": "soap opera"
+  },
+  {
+   "soru": "{{I could answer only five questions out of ten. It was a difficult ___.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "commercial",
+    "quiz show",
+    "soap opera"
+   ],
+   "dogru": 1,
+   "ipucu": "Soruları cevaplayan biri konuşuyor. Hangi programda soru vardır?",
+   "aciklama": "Soru cevaplanan program bilgi yarışmasıdır: {{quiz show}}. (s. 87)",
+   "kavram": "quiz show"
+  },
+  {
+   "soru": "{{A group of people usually appear in funny situations in every episode.}} Bu hangi program?",
+   "secenekler": [
+    "sitcom",
+    "news",
+    "documentary"
+   ],
+   "dogru": 0,
+   "ipucu": "{{funny situations}}: komik durumlar.",
+   "aciklama": "Komik durumlar anlatan dizi {{sitcom}}. (s. 87)",
+   "kavram": "sitcom"
+  },
+  {
+   "soru": "{{In this programme, you can follow the lives of real people.}} Bu hangi program?",
+   "secenekler": [
+    "commercial",
+    "soap opera",
+    "reality show"
+   ],
+   "dogru": 2,
+   "ipucu": "{{real people}}: gerçek insanlar.",
+   "aciklama": "Gerçek insanların hayatını izlediğimiz program {{reality show}}. (s. 87)",
+   "kavram": "reality show"
+  },
+  {
+   "soru": "{{Companies try to sell their products by introducing them in very short films.}} Bu hangi program?",
+   "secenekler": [
+    "quiz show",
+    "commercial",
+    "news"
+   ],
+   "dogru": 1,
+   "ipucu": "{{sell their products}}: ürünlerini satmak.",
+   "aciklama": "Ürün tanıtan kısa film reklamdır: {{commercial}}. (s. 87)",
+   "kavram": "commercial"
+  },
+  {
+   "soru": "{{It's really good to watch a ___ because they are educative.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "commercial",
+    "soap opera",
+    "documentary"
+   ],
+   "dogru": 2,
+   "ipucu": "{{educative}} öğretici demek. Hangi program öğretir?",
+   "aciklama": "Öğretici program belgeseldir: {{documentary}}. (s. 87)",
+   "kavram": "documentary"
+  },
+  {
+   "soru": "Maria'nın en sevdiği program hangisidir? {{My favourite TV programme is the news.}}",
+   "secenekler": [
+    "Haberler",
+    "Pembe diziler",
+    "Gerçeklik şovları"
+   ],
+   "dogru": 0,
+   "ipucu": "{{news}} kartını hatırla.",
+   "aciklama": "{{the news}} haberler demek. (s. 84)",
+   "kavram": "news"
+  },
+  {
+   "soru": "{{It is a kind of TV show. You can watch it daytime. It is usually melodramatic.}} Bu hangi program?",
+   "secenekler": [
+    "sitcom",
+    "soap opera",
+    "quiz show"
+   ],
+   "dogru": 1,
+   "ipucu": "{{daytime}} gündüz, {{melodramatic}} çok duygusal.",
+   "aciklama": "Gündüz yayınlanan duygusal dizi {{soap opera}}. (s. 87)",
+   "kavram": "soap opera"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "talk show",
+   "tr": "sohbet programı",
+   "ornek": "My favourite talk show's on.",
+   "ornekTr": "En sevdiğim sohbet programı başladı. (s. 85)"
+  },
+  {
+   "en": "series",
+   "tr": "dizi",
+   "ornek": "I usually watch TV series on weekdays, but I never watch soap operas.",
+   "ornekTr": "Hafta içi genelde dizi izlerim, ama pembe dizi hiç izlemem. (s. 90)"
+  },
+  {
+   "en": "drama",
+   "tr": "dram"
+  },
+  {
+   "en": "cartoon",
+   "tr": "çizgi film",
+   "ornek": "It is a funny cartoon about a family.",
+   "ornekTr": "Bir aile hakkında komik bir çizgi film. (s. 98)"
+  },
+  {
+   "en": "sports programme",
+   "tr": "spor programı",
+   "ornek": "I prefer sports programmes.",
+   "ornekTr": "Spor programlarını tercih ederim. (s. 84)"
+  },
+  {
+   "en": "channel",
+   "tr": "kanal",
+   "ornek": "There is a comedy film on Channel 5 at half past eight.",
+   "ornekTr": "Saat sekiz buçukta 5. kanalda bir komedi filmi var. (s. 85)"
+  },
+  {
+   "en": "remote control",
+   "tr": "kumanda",
+   "ornek": "Where's the remote control, mum?",
+   "ornekTr": "Kumanda nerede, anne? (s. 93)"
+  },
+  {
+   "en": "director",
+   "tr": "yönetmen",
+   "ornek": "My father is a film director.",
+   "ornekTr": "Babam bir film yönetmenidir. (s. 93)"
+  },
+  {
+   "en": "episode",
+   "tr": "bölüm"
+  },
+  {
+   "en": "screen",
+   "tr": "ekran"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "I never watch soap operas.",
+   "tr": "Pembe dizileri hiç izlemem. (s. 84)"
+  },
+  {
+   "en": "My favourite TV programme is the news.",
+   "tr": "En sevdiğim TV programı haberlerdir. (s. 84)"
+  },
+  {
+   "en": "I watched an interesting documentary about space.",
+   "tr": "Uzay hakkında ilginç bir belgesel izledim. (s. 89)"
+  },
+  {
+   "en": "My favourite sitcom was on.",
+   "tr": "En sevdiğim komedi dizisi vardı. (s. 89)"
+  },
+  {
+   "en": "I also like quiz shows.",
+   "tr": "Bilgi yarışmalarını da severim. (s. 94)"
+  },
+  {
+   "en": "Where's the remote control, mum?",
+   "tr": "Kumanda nerede, anne? (s. 93)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "A documentary is a very short film to sell products.",
+   "yanlis": "documentary",
+   "secenekler": [
+    "quiz show",
+    "news",
+    "commercial"
+   ],
+   "dogru": 2,
+   "tr": "Reklam, ürün satmak için çok kısa bir filmdir.",
+   "aciklama": "Ürün satan kısa film reklamdır: {{commercial}}. (s. 87)"
+  },
+  {
+   "cumle": "I could answer only five questions. It was a difficult soap opera.",
+   "yanlis": "soap opera",
+   "secenekler": [
+    "documentary",
+    "quiz show",
+    "commercial"
+   ],
+   "dogru": 1,
+   "tr": "Yalnızca beş soruyu cevaplayabildim. Zor bir bilgi yarışmasıydı.",
+   "aciklama": "Soru cevaplanan program: {{quiz show}}. (s. 87)"
+  },
+  {
+   "cumle": "The news informs people about the old events.",
+   "yanlis": "old",
+   "secenekler": [
+    "latest",
+    "funny",
+    "short"
+   ],
+   "dogru": 0,
+   "tr": "Haberler insanlara en yeni olayları anlatır.",
+   "aciklama": "Haberler en yeni olayları anlatır: {{latest}}. (s. 87)"
+  },
+  {
+   "cumle": "In a sitcom, people appear in sad situations.",
+   "yanlis": "sad",
+   "secenekler": [
+    "real",
+    "funny",
+    "short"
+   ],
+   "dogru": 1,
+   "tr": "Komedi dizisinde insanlar komik durumlara düşer.",
+   "aciklama": "{{sitcom}} komiktir: {{funny situations}}. (s. 87)"
+  },
+  {
+   "cumle": "In a reality show, you can follow the lives of cartoons.",
+   "yanlis": "cartoons",
+   "secenekler": [
+    "animals",
+    "products",
+    "real people"
+   ],
+   "dogru": 2,
+   "tr": "Gerçeklik şovunda gerçek insanların hayatını izleyebilirsin.",
+   "aciklama": "Gerçeklik şovunda gerçek insanlar vardır: {{real people}}. (s. 87)"
+  },
+  {
+   "cumle": "Companies try to sell their products in very long films.",
+   "yanlis": "long",
+   "secenekler": [
+    "short",
+    "funny",
+    "sad"
+   ],
+   "dogru": 0,
+   "tr": "Şirketler ürünlerini çok kısa filmlerle satmaya çalışır.",
+   "aciklama": "Reklamlar çok kısa filmlerdir: {{very short films}}. (s. 87)"
+  }
+ ],
+ "resimEslestir": true,
+ "okuma": {
+  "baslik": "Which TV Show Is It?",
+  "sayfa": "s. 87",
+  "sozluk": {
+   "companies": "şirketler",
+   "sell": "satmak",
+   "products": "ürünler",
+   "introducing": "tanıtarak",
+   "short films": "kısa filmler",
+   "secrets": "sırlar",
+   "the past, present and future": "geçmiş, şimdi ve gelecek",
+   "follow the lives": "hayatlarını izlemek",
+   "real people": "gerçek insanlar",
+   "a kind of": "bir çeşit",
+   "daytime": "gündüz",
+   "melodramatic": "çok duygusal, abartılı",
+   "funny situations": "komik durumlar",
+   "episode": "bölüm",
+   "informs": "bilgi verir",
+   "the latest events": "en yeni olaylar",
+   "all over the world": "dünyanın her yerinde"
+  },
+  "bolumler": [
+   {
+    "baslik": "Three TV shows",
+    "cumleler": [
+     {
+      "en": "Companies try to sell their products by introducing them in very short films.",
+      "tr": "Şirketler ürünlerini çok kısa filmlerle tanıtarak satmaya çalışır."
+     },
+     {
+      "en": "Watch them and learn the secrets of the past, present and future.",
+      "tr": "Onları izle ve geçmişin, şimdinin ve geleceğin sırlarını öğren."
+     },
+     {
+      "en": "In this programme, you can follow the lives of real people.",
+      "tr": "Bu programda gerçek insanların hayatlarını izleyebilirsin."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Birinci parça hangi programı anlatıyor?",
+      "secenekler": [
+       "commercial",
+       "documentary",
+       "news"
+      ],
+      "dogru": 0,
+      "ipucu": "{{sell their products}} kalıbını bul.",
+      "aciklama": "Ürün satan kısa film: {{commercial}}. (s. 87)"
+     },
+     {
+      "soru": "Gerçek insanların hayatını hangi programda izleriz?",
+      "secenekler": [
+       "documentary",
+       "reality show",
+       "commercial"
+      ],
+      "dogru": 1,
+      "ipucu": "{{real people}} kalıbını bul.",
+      "aciklama": "Üçüncü parça: {{reality show}}. (s. 87)"
+     }
+    ]
+   },
+   {
+    "baslik": "Three more TV shows",
+    "cumleler": [
+     {
+      "en": "It is a kind of TV show.",
+      "tr": "Bu bir çeşit TV programıdır."
+     },
+     {
+      "en": "You can watch it daytime.",
+      "tr": "Onu gündüz izleyebilirsin."
+     },
+     {
+      "en": "It is usually melodramatic.",
+      "tr": "Genellikle çok duygusaldır."
+     },
+     {
+      "en": "A group of people usually appear in funny situations in every episode.",
+      "tr": "Her bölümde bir grup insan genellikle komik durumlara düşer."
+     },
+     {
+      "en": "It informs people about the latest events happening all over the world.",
+      "tr": "İnsanlara dünyanın her yerinde olan en yeni olaylar hakkında bilgi verir."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Gündüz izlenen, duygusal program hangisi?",
+      "secenekler": [
+       "sitcom",
+       "news",
+       "soap opera"
+      ],
+      "dogru": 2,
+      "ipucu": "{{daytime}} ve {{melodramatic}} kelimelerini bul.",
+      "aciklama": "İlk üç cümle {{soap opera}}'yı anlatıyor. (s. 87)"
+     },
+     {
+      "soru": "Son cümle hangi programı anlatıyor?",
+      "secenekler": [
+       "news",
+       "sitcom",
+       "quiz show"
+      ],
+      "dogru": 0,
+      "ipucu": "{{the latest events}}: en yeni olaylar.",
+      "aciklama": "En yeni olayları haberler anlatır: {{news}}. (s. 87)"
+     }
+    ]
+   }
+  ]
+ }
+}
