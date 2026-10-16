@@ -1,0 +1,254 @@
+{
+ "unite": 4,
+ "ders": "ing1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "e4-01",
+   "konu": "u4k1",
+   "kavram": "mammal",
+   "tur": "secim",
+   "soru": "{{Whales are ___ mammals.}} Boşluğa hangisi GELMEZ?",
+   "secenekler": [
+    "big",
+    "enormous",
+    "huge",
+    "poisonous"
+   ],
+   "dogru": 3,
+   "aciklama": "{{poisonous}} zehirli demek; diğerleri büyük anlamında (s. 79)."
+  },
+  {
+   "id": "e4-02",
+   "konu": "u4k1",
+   "kavram": "reptile",
+   "tur": "secim",
+   "soru": "{{There are four animal species. These are ___, birds, ___ and insects.}}",
+   "secenekler": [
+    "deserts / cages",
+    "habitats / jungles",
+    "mammals / reptiles",
+    "crocodiles / lizards"
+   ],
+   "dogru": 2,
+   "aciklama": "Dört grup: memeliler, kuşlar, sürüngenler ve böcekler (s. 79)."
+  },
+  {
+   "id": "e4-03",
+   "konu": "u4k1",
+   "kavram": "bird",
+   "tur": "dytablo",
+   "soru": "Okuma metnine göre D ya da Y seç.",
+   "ifadeler": [
+    {
+     "s": "Birds can fly because they have wings.",
+     "d": true
+    },
+    {
+     "s": "Ostriches can fly very well.",
+     "d": false
+    },
+    {
+     "s": "Reptiles have scales on their bodies.",
+     "d": true
+    }
+   ],
+   "aciklama": "Devekuşları uçamaz; kuşların kanadı, sürüngenlerin pulu var (s. 67)."
+  },
+  {
+   "id": "e4-04",
+   "konu": "u4k1",
+   "kavram": "habitat",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçe anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "mammal",
+     "sag": "memeli"
+    },
+    {
+     "sol": "reptile",
+     "sag": "sürüngen"
+    },
+    {
+     "sol": "habitat",
+     "sag": "yaşam alanı"
+    },
+    {
+     "sol": "desert",
+     "sag": "çöl"
+    }
+   ],
+   "aciklama": "{{mammal}} memeli, {{reptile}} sürüngen, {{habitat}} yaşam alanı, {{desert}} çöl (s. 64, s. 74)."
+  },
+  {
+   "id": "e4-05",
+   "konu": "u4k1",
+   "kavram": "desert",
+   "tur": "bosluk",
+   "havuz": [
+    "cages",
+    "milk"
+   ],
+   "cumleler": [
+    {
+     "c": "Forests are the ___ of the animals.",
+     "cevap": "habitat"
+    },
+    {
+     "c": "Camels can survive in the ___ for a long time.",
+     "cevap": "deserts"
+    },
+    {
+     "c": "Wild animals live in the ___.",
+     "cevap": "jungle"
+    }
+   ],
+   "aciklama": "Yaşam alanı {{habitat}}, çöl {{deserts}}, orman {{jungle}} (s. 74)."
+  },
+  {
+   "id": "e4-06",
+   "konu": "u4k1",
+   "kavram": "reptile",
+   "tur": "dy",
+   "ifade": "{{Reptiles are cold-blooded animals because they don't have a constant body temperature.}} cümlesine göre sürüngenlerin vücut sıcaklığı hep aynıdır.",
+   "dogru": false,
+   "duzeltme": "Sürüngenlerin vücut sıcaklığı sabit değildir, değişir.",
+   "aciklama": "{{constant}} sabit demek; sürüngenlerde sıcaklık sabit değil (s. 67)."
+  },
+  {
+   "id": "e4-07",
+   "konu": "u4k1",
+   "kavram": "wildlife",
+   "tur": "kisa",
+   "soru": "Yaban hayatı kelimesinin İngilizcesini yaz.",
+   "yanit": "wildlife",
+   "aciklama": "Yaban hayatı {{wildlife}}: evcil olmayan hayvanlar (s. 72)."
+  },
+  {
+   "id": "e4-08",
+   "konu": "u4k2",
+   "kavram": "extinct",
+   "tur": "secim",
+   "soru": "{{Katie: Do you know any extinct animals? Ronald: Umm... ___! There aren't any of them in the world.}}",
+   "secenekler": [
+    "Tigers",
+    "Elephants",
+    "Dodo birds",
+    "Eagles"
+   ],
+   "dogru": 2,
+   "aciklama": "Dünyada hiç Dodo kuşu kalmadı; nesli tükendi (s. 79)."
+  },
+  {
+   "id": "e4-09",
+   "konu": "u4k2",
+   "kavram": "hunt",
+   "tur": "secim",
+   "soru": "Hangisi hayvanların neslinin tükenme sebeplerinden biri DEĞİLDİR?",
+   "secenekler": [
+    "Global warming",
+    "Climate change",
+    "Human activities",
+    "Space travels"
+   ],
+   "dogru": 3,
+   "aciklama": "Uzay yolculukları bir sebep değil; diğer üçü sebep (s. 80)."
+  },
+  {
+   "id": "e4-10",
+   "konu": "u4k2",
+   "kavram": "endangered",
+   "tur": "dytablo",
+   "soru": "Kaplan metnine göre D ya da Y seç.",
+   "ifadeler": [
+    {
+     "s": "Tigers belong to the cat family.",
+     "d": true
+    },
+    {
+     "s": "Tigers are extinct.",
+     "d": false
+    },
+    {
+     "s": "People hunt tigers for their fur.",
+     "d": true
+    }
+   ],
+   "aciklama": "Kaplanlar kedigildir, nesli tehlikededir; kürkleri için avlanır (s. 70)."
+  },
+  {
+   "id": "e4-11",
+   "konu": "u4k2",
+   "kavram": "tusk",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçe anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "extinct",
+     "sag": "nesli tükenmiş"
+    },
+    {
+     "sol": "endangered",
+     "sag": "nesli tehlikede"
+    },
+    {
+     "sol": "fur",
+     "sag": "kürk"
+    },
+    {
+     "sol": "tusk",
+     "sag": "fildişi"
+    },
+    {
+     "sol": "pollute",
+     "sag": "kirletmek"
+    }
+   ],
+   "aciklama": "Kelimeler kitabın 68–79. sayfalarında geçiyor (s. 68, s. 70, s. 79)."
+  },
+  {
+   "id": "e4-12",
+   "konu": "u4k2",
+   "kavram": "destroy",
+   "tur": "bosluk",
+   "havuz": [
+    "protected",
+    "fed"
+   ],
+   "cumleler": [
+    {
+     "c": "Men ___ wild animals for their skins, fur or teeth.",
+     "cevap": "hunted"
+    },
+    {
+     "c": "They ___ their habitats to make fields.",
+     "cevap": "destroyed"
+    },
+    {
+     "c": "They also ___ the environment.",
+     "cevap": "polluted"
+    }
+   ],
+   "aciklama": "Avladılar {{hunted}}, yok ettiler {{destroyed}}, kirlettiler {{polluted}} (s. 68)."
+  },
+  {
+   "id": "e4-13",
+   "konu": "u4k2",
+   "kavram": "endangered",
+   "tur": "dy",
+   "ifade": "{{Tigers are endangered.}} cümlesi dünyada çok az kaplan kaldığını anlatır.",
+   "dogru": true,
+   "aciklama": "{{This means there aren't many tigers in the world.}} (s. 70)."
+  },
+  {
+   "id": "e4-14",
+   "konu": "u4k2",
+   "kavram": "fur",
+   "tur": "kisa",
+   "soru": "Boşluğa gelen kelimeyi yaz: {{People hunt tigers because they want to take their beautiful ___.}}",
+   "yanit": "fur",
+   "aciklama": "Kaplanlar güzel kürkleri ({{fur}}) için avlanıyor (s. 70)."
+  }
+ ]
+}

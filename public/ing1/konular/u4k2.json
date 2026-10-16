@@ -1,0 +1,643 @@
+{
+ "id": "u4k2",
+ "unite": "Unit 4: Wild Animals",
+ "baslik": "Nesli Tükenen Hayvanlar",
+ "sayfalar": "s. 63–80",
+ "giris": "Bazı hayvanlar dünyadan tamamen yok oldu, bazıları da yok olma tehlikesinde. Bu konuda nedenlerini anlatan kelimeleri öğreneceğiz: avlamak, yok etmek, kirletmek. {{In fact, tigers are endangered.}}",
+ "kavramlar": [
+  {
+   "ad": "extinct",
+   "renk": "#9aa7b8",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='58' cy='70' rx='26' ry='22' fill='none' stroke='#9aa7b8' stroke-width='3' stroke-dasharray='5 4'/><circle cx='80' cy='44' r='12' fill='none' stroke='#9aa7b8' stroke-width='3' stroke-dasharray='5 4'/><path d='M90 44q12 2 12 10l-10-2' fill='none' stroke='#9aa7b8' stroke-width='3'/><path d='M50 92v12M64 92v12' stroke='#9aa7b8' stroke-width='3' stroke-dasharray='4 3'/><path d='M22 22l76 76M98 22l-76 76' stroke='#ff6b6b' stroke-width='6' stroke-linecap='round' opacity='.85'/></svg>",
+   "aciklama": "Nesli tükenmiş demektir: o hayvandan dünyada hiç kalmamış. Dodo kuşu böyledir.",
+   "ek": "{{become extinct}}: nesli tükenmek. {{They became extinct because people killed and hunted them.}} (s. 71)",
+   "akilda": "nesli tükenmiş",
+   "ornek": "There aren't any Dodo birds in the world.",
+   "ornekTr": "Dünyada hiç Dodo kuşu yok. (s. 79)",
+   "soru": {
+    "soru": "{{extinct}} bir hayvan için ne söyleriz?",
+    "secenekler": [
+     "Dünyada hiç kalmamış",
+     "Çok hızlı koşuyor",
+     "Kafeste yaşıyor"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta Dodo kuşu vardı: {{There aren't any Dodo birds in the world.}}",
+    "aciklama": "{{extinct}}: o hayvandan dünyada hiç kalmadı. (s. 79)"
+   }
+  },
+  {
+   "ad": "endangered",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 14l48 84H12z' fill='#f2c14e'/><path d='M60 26l38 66H22z' fill='#1b2340'/><ellipse cx='60' cy='76' rx='9' ry='8' fill='#ffa26b'/><circle cx='49' cy='64' r='4' fill='#ffa26b'/><circle cx='57' cy='58' r='4' fill='#ffa26b'/><circle cx='65' cy='58' r='4' fill='#ffa26b'/><circle cx='72' cy='64' r='4' fill='#ffa26b'/></svg>",
+   "aciklama": "Nesli tehlikede demektir: o hayvandan dünyada çok az kalmış. Henüz yok olmadı ama olabilir.",
+   "ek": "{{This means there aren't many tigers in the world.}} (s. 70)",
+   "akilda": "nesli tehlikede",
+   "ornek": "In fact, tigers are endangered.",
+   "ornekTr": "Aslında kaplanların nesli tehlikede. (s. 70)",
+   "soru": {
+    "soru": "{{Tigers are endangered.}} Bu ne demek?",
+    "secenekler": [
+     "Dünyada hiç kaplan kalmadı",
+     "Dünyada çok az kaplan kaldı",
+     "Kaplanlar çok tehlikelidir"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta {{there aren't many tigers}} vardı: çok değil, az.",
+    "aciklama": "{{endangered}}: çok az kaldı. {{This means there aren't many tigers in the world.}} (s. 70)"
+   }
+  },
+  {
+   "ad": "hunt",
+   "renk": "#ff6b6b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 84q8-18 26-18h22q16 0 22 14l6 2-8 4q-4 8-14 8H40' fill='#c98a5a'/><circle cx='92' cy='70' r='2' fill='#1b2340'/><path d='M38 92v12M50 92v12M70 92v12M82 92v12' stroke='#c98a5a' stroke-width='5' stroke-linecap='round'/><circle cx='60' cy='40' r='20' fill='none' stroke='#ff6b6b' stroke-width='4'/><circle cx='60' cy='40' r='4' fill='#ff6b6b'/><path d='M60 14v12M60 54v12M34 40h12M74 40h12' stroke='#ff6b6b' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Avlamak demektir: bir hayvanı yakalamak ya da öldürmek. İnsanlar da hayvanlar da avlanır.",
+   "ek": "Geçmiş hâli {{hunted}}. Kaplanlar da avlanır: {{They attack and hunt at night.}} (s. 70)",
+   "akilda": "avlamak",
+   "ornek": "Men hunted wild animals for their skins, fur or teeth for years.",
+   "ornekTr": "İnsanlar yıllarca vahşi hayvanları derileri, kürkleri ya da dişleri için avladı. (s. 68)",
+   "soru": {
+    "soru": "{{Men hunted wild animals.}} {{hunted}} ne demek?",
+    "secenekler": [
+     "besledi",
+     "avladı",
+     "korudu"
+    ],
+    "dogru": 1,
+    "ipucu": "{{hunt}} kartının anlamına bak; {{-ed}} geçmiş demek.",
+    "aciklama": "{{hunt}} avlamak, {{hunted}} avladı. (s. 68)"
+   }
+  },
+  {
+   "ad": "fur",
+   "renk": "#f2913d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='22' width='84' height='76' rx='18' fill='#f2913d'/><path d='M30 22q8 18-2 36M52 22q10 22 0 44M74 22q8 16 0 30M96 30q-10 18 0 40M36 98q8-16 0-28M64 98q10-14 2-26M88 98q-8-12 2-22' stroke='#1b2340' stroke-width='6' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Kürk demektir: bazı hayvanların vücudunu kaplayan kalın, yumuşak tüy. İnsanlar bazı hayvanları kürkleri için avlar.",
+   "ek": "Benzer: {{skin}} deri. {{Stop hunting the animals for their skin, fur or teeth.}} (s. 69)",
+   "akilda": "kürk",
+   "ornek": "Tigers have beautiful black and orange striped fur.",
+   "ornekTr": "Kaplanların güzel, siyah ve turuncu çizgili kürkleri vardır. (s. 70)",
+   "soru": {
+    "soru": "İnsanlar kaplanları neden avlıyor?",
+    "secenekler": [
+     "Güzel kürkleri için",
+     "Fildişleri için",
+     "Sütleri için"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta kaplanın çizgili {{fur}}'ü vardı.",
+    "aciklama": "{{because they want to take their beautiful fur}}: güzel kürkleri için. (s. 70)"
+   }
+  },
+  {
+   "ad": "tusk",
+   "renk": "#f5f0e6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='50' r='26' fill='#9aa7b8'/><ellipse cx='28' cy='50' rx='14' ry='20' fill='#7f8ca0'/><ellipse cx='92' cy='50' rx='14' ry='20' fill='#7f8ca0'/><path d='M60 60q-4 24 6 40' stroke='#9aa7b8' stroke-width='11' fill='none' stroke-linecap='round'/><path d='M46 64q-6 22 12 34' stroke='#f5f0e6' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M74 64q6 22-12 34' stroke='#f5f0e6' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='50' cy='44' r='3' fill='#1b2340'/><circle cx='70' cy='44' r='3' fill='#1b2340'/></svg>",
+   "aciklama": "Fildişi demektir: filin ağzının iki yanından çıkan uzun, beyaz diş. İnsanlar filleri fildişi için avladı.",
+   "ek": "Çoğulu {{tusks}}. Filin hortumu: {{trunk}}.",
+   "akilda": "fildişi",
+   "ornek": "It has tusks and a trunk.",
+   "ornekTr": "Fildişleri ve hortumu vardır. (s. 68)",
+   "soru": {
+    "soru": "Hangi hayvanın {{tusks}}'ı vardır?",
+    "secenekler": [
+     "Kartal",
+     "Fil",
+     "Yılan"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta {{It has tusks and a trunk.}} vardı. Hortumu olan hayvan?",
+    "aciklama": "Filin fildişleri ve hortumu vardır. (s. 68)"
+   }
+  },
+  {
+   "ad": "destroy",
+   "renk": "#c98a5a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><defs><clipPath id='k-u4-destroy'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#k-u4-destroy)'><rect x='0' y='96' width='120' height='24' fill='#8a6a3a'/><rect x='24' y='78' width='18' height='20' fill='#8a5a3a'/><ellipse cx='33' cy='78' rx='9' ry='4' fill='#e0b45c'/><path d='M52 94l52-26' stroke='#8a5a3a' stroke-width='10' stroke-linecap='round'/><circle cx='104' cy='60' r='12' fill='#7a9a5a'/><rect x='70' y='20' width='6' height='38' rx='2' fill='#c98a5a' transform='rotate(30 73 39)'/><path d='M80 18l14 6-6 12z' fill='#9aa7b8'/></g></svg>",
+   "aciklama": "Yok etmek, tahrip etmek demektir. İnsanlar tarla açmak için hayvanların yaşam alanlarını yok etti.",
+   "ek": "Geçmiş hâli {{destroyed}}. Benzer: {{damage}} zarar vermek.",
+   "akilda": "yok etmek",
+   "ornek": "They destroyed their habitats to make fields.",
+   "ornekTr": "Tarla yapmak için onların yaşam alanlarını yok ettiler. (s. 68)",
+   "soru": {
+    "soru": "{{They destroyed their habitats to make fields.}} İnsanlar ne yaptı?",
+    "secenekler": [
+     "Yaşam alanlarını yok etti",
+     "Yeni ormanlar dikti",
+     "Hayvanları besledi"
+    ],
+    "dogru": 0,
+    "ipucu": "{{destroy}} kartının anlamını hatırla.",
+    "aciklama": "{{destroyed}} yok etti: tarla için yaşam alanlarını yok ettiler. (s. 68)"
+   }
+  },
+  {
+   "ad": "pollute",
+   "renk": "#6b7a3a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><defs><clipPath id='k-u4-pollute'><rect width='120' height='120' rx='22'/></clipPath></defs><g clip-path='url(#k-u4-pollute)'><rect x='18' y='56' width='52' height='40' fill='#7f8ca0'/><rect x='54' y='30' width='12' height='28' fill='#7f8ca0'/><circle cx='66' cy='22' r='9' fill='#4b5466'/><circle cx='80' cy='16' r='11' fill='#4b5466'/><circle cx='96' cy='20' r='9' fill='#4b5466'/><rect x='26' y='66' width='10' height='10' fill='#f2c14e'/><rect x='44' y='66' width='10' height='10' fill='#f2c14e'/><path d='M70 90q10 0 12 8t20 4q10 0 18-6v24H70z' fill='#6b7a3a'/><path d='M84 106l6-4 4 6' stroke='#1b2340' stroke-width='2' fill='none'/><rect x='0' y='96' width='70' height='24' fill='#3a3f52'/></g></svg>",
+   "aciklama": "Kirletmek demektir: havayı, suyu ya da toprağı kirli hâle getirmek. Kirlilik de hayvanlara zarar verir.",
+   "ek": "Geçmiş hâli {{polluted}}. Çevre: {{environment}}.",
+   "akilda": "kirletmek",
+   "ornek": "They also polluted the environment.",
+   "ornekTr": "Çevreyi de kirlettiler. (s. 68)",
+   "soru": {
+    "soru": "{{They also polluted the environment.}} {{polluted}} ne demek?",
+    "secenekler": [
+     "temizledi",
+     "kirletti",
+     "korudu"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki fabrika dumanını düşün.",
+    "aciklama": "{{pollute}} kirletmek, {{polluted}} kirletti. (s. 68)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kelime insanların yaptığı bir şey mi, hayvanın durumu mu, avlanan bir şey mi?",
+   "kutular": [
+    {
+     "etiket": "İnsanların yaptığı",
+     "uyeler": [
+      "hunt",
+      "destroy",
+      "pollute"
+     ]
+    },
+    {
+     "etiket": "Hayvanın durumu",
+     "uyeler": [
+      "extinct",
+      "endangered"
+     ]
+    },
+    {
+     "etiket": "Avlanan şey",
+     "uyeler": [
+      "fur",
+      "tusk"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kaplanların gözleri karanlıkta parlar. Karanlıkta çok iyi gördükleri için geceleri avlanırlar. (s. 70)",
+  "Kitaba göre hayvanların neslinin tükenmesinin sebepleri arasında küresel ısınma, iklim değişikliği ve insan faaliyetleri var. (s. 80)"
+ ],
+ "akildaKalsin": [
+  "{{extinct}}: hiç kalmadı (Dodo kuşu).",
+  "{{endangered}}: çok az kaldı (kaplan).",
+  "{{hunt}} → {{hunted}} avladı; {{destroy}} → {{destroyed}} yok etti; {{pollute}} → {{polluted}} kirletti.",
+  "Hayvanlar kürkleri ({{fur}}), derileri ({{skin}}) ve fildişleri ({{tusks}}) için avlandı.",
+  "Neslin tükenmesinin çoğundan insanlar sorumlu."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{extinct}} ile {{endangered}} arasındaki fark ne?",
+   "cevap": "{{extinct}}: dünyada hiç kalmadı (Dodo kuşu, s. 79). {{endangered}}: çok az kaldı (kaplan, s. 70)."
+  },
+  {
+   "soru": "Hayvanların neslinin tükenmesinden kim sorumlu?",
+   "cevap": "Zoolog Frank Hardy'ye göre çoğundan insanlar: {{Human beings are responsible for most of the extinctions.}} (s. 68)"
+  },
+  {
+   "soru": "İnsanlar hayvanları neden avladı?",
+   "cevap": "Derileri, kürkleri, dişleri ve fildişleri için. (s. 68, s. 71)"
+  },
+  {
+   "soru": "Kaplanlar neden geceleri avlanır?",
+   "cevap": "Karanlıkta çok iyi görürler. {{They can see very well in the dark.}} (s. 70)"
+  },
+  {
+   "soru": "Kaplan her avını yakalar mı?",
+   "cevap": "Hayır. Çok hızlı koşar ama avını her zaman yakalayamaz. (s. 70)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bazı hayvanların nesli neden tükendi? İngilizce iki sebep yaz.",
+   "ornekCevap": "People hunted animals for their fur. They destroyed their habitats.",
+   "anahtarlar": [
+    "hunt",
+    "destroy",
+    "pollut"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "In fact, tigers are extinct.",
+    "In fact, tigers are endangered.",
+    "In fact, eagles are endangered."
+   ],
+   "dogru": 1,
+   "ipucu": "Hangi hayvan? Hiç kalmadı mı, az mı kaldı? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{In fact, tigers are endangered.}} (s. 70)",
+   "dinle": "In fact, tigers are endangered.",
+   "kavram": "endangered"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "They destroyed their habitats to make fields.",
+    "They polluted their habitats to make fields.",
+    "They destroyed the forests to make houses."
+   ],
+   "dogru": 0,
+   "ipucu": "Yok ettiler mi, kirlettiler mi? Ne yapmak için?",
+   "aciklama": "Duyduğun cümle {{They destroyed their habitats to make fields.}} (s. 68)",
+   "dinle": "They destroyed their habitats to make fields.",
+   "kavram": "destroy"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "They also protected the environment.",
+    "They also destroyed the forests.",
+    "They also polluted the environment."
+   ],
+   "dogru": 2,
+   "ipucu": "Kirlettiler mi, korudular mı?",
+   "aciklama": "Duyduğun cümle {{They also polluted the environment.}} (s. 68)",
+   "dinle": "They also polluted the environment.",
+   "kavram": "pollute"
+  },
+  {
+   "soru": "{{There aren't any Dodo birds in the world.}} Dodo kuşu için hangisi doğru?",
+   "secenekler": [
+    "It is endangered.",
+    "It is poisonous.",
+    "It is extinct."
+   ],
+   "dogru": 2,
+   "ipucu": "Hiç kalmamışsa hangi kelime?",
+   "aciklama": "Dünyada hiç kalmadıysa nesli tükenmiştir: {{extinct}}. (s. 79)",
+   "kavram": "extinct"
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "Bir hayvan önce nesli tehlikede olur, sonra nesli tükenebilir.",
+    "Nesli tükenen hayvandan çok sayıda kalmıştır.",
+    "Nesli tehlikedeki hayvandan hiç kalmamıştır."
+   ],
+   "dogru": 0,
+   "ipucu": "{{endangered}} az kaldı, {{extinct}} hiç kalmadı demek.",
+   "aciklama": "Az kalan hayvan ({{endangered}}) korunmazsa hiç kalmayabilir ({{extinct}}). (s. 70, s. 79)",
+   "kavram": "endangered",
+   "yardim": {
+    "adimlar": [
+     "{{endangered}}: çok az kaldı.",
+     "{{extinct}}: hiç kalmadı.",
+     "Hangisi önce gelir: az kalmak mı, hiç kalmamak mı?"
+    ]
+   }
+  },
+  {
+   "soru": "{{Men hunted wild animals for their skins, fur or teeth.}} İnsanlar hayvanları ne için avladı?",
+   "secenekler": [
+    "Onları korumak için",
+    "Derileri, kürkleri ve dişleri için",
+    "Yaşam alanı yapmak için"
+   ],
+   "dogru": 1,
+   "ipucu": "{{for their}} kelimelerinden sonrasına bak.",
+   "aciklama": "{{for their skins, fur or teeth}}: derileri, kürkleri ya da dişleri için. (s. 68)",
+   "kavram": "hunt"
+  },
+  {
+   "soru": "{{Don't kill the elephants for their ___.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "tusks",
+    "wings",
+    "milk"
+   ],
+   "dogru": 0,
+   "ipucu": "Filin ağzının iki yanındaki beyaz dişler?",
+   "aciklama": "Filler fildişi için öldürülür: {{tusks}}. (s. 75)",
+   "kavram": "tusk"
+  },
+  {
+   "soru": "Kaplanların kürkü nasıldır?",
+   "secenekler": [
+    "Beyaz ve gri",
+    "Siyah ve turuncu çizgili",
+    "Yeşil ve pullu"
+   ],
+   "dogru": 1,
+   "ipucu": "{{fur}} kartındaki örnek cümleyi hatırla.",
+   "aciklama": "{{beautiful black and orange striped fur}}: siyah-turuncu çizgili kürk. (s. 70)",
+   "kavram": "fur"
+  },
+  {
+   "soru": "Ormanları kesip tarla yapmak hangi kelimeyle anlatılır?",
+   "secenekler": [
+    "pollute",
+    "hunt",
+    "destroy"
+   ],
+   "dogru": 2,
+   "ipucu": "Yaşam alanını ortadan kaldırmak: kirletmek mi, avlamak mı, yok etmek mi?",
+   "aciklama": "Yaşam alanını yok etmek {{destroy}}: {{They destroyed their habitats to make fields.}} (s. 68)",
+   "kavram": "destroy"
+  },
+  {
+   "soru": "Kitaba göre hangisi hayvanların neslinin tükenme sebeplerinden biri DEĞİLDİR?",
+   "secenekler": [
+    "Climate change",
+    "Human activities",
+    "Space travels"
+   ],
+   "dogru": 2,
+   "ipucu": "Kitapta küresel ısınma, iklim değişikliği ve insan faaliyetleri sayılıyor.",
+   "aciklama": "Uzay yolculukları ({{space travels}}) bir sebep değildir. (s. 80)",
+   "kavram": "extinct"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "poisonous",
+   "tr": "zehirli",
+   "ornek": "A lot of snakes are poisonous.",
+   "ornekTr": "Birçok yılan zehirlidir. (s. 74)"
+  },
+  {
+   "en": "attack",
+   "tr": "saldırmak",
+   "ornek": "They attack and hunt at night.",
+   "ornekTr": "Geceleri saldırır ve avlanırlar. (s. 70)"
+  },
+  {
+   "en": "enormous",
+   "tr": "kocaman, çok iri",
+   "ornek": "The whales are the most enormous mammals.",
+   "ornekTr": "Balinalar en iri memelilerdir. (s. 74)"
+  },
+  {
+   "en": "prey",
+   "tr": "av (avlanan hayvan)",
+   "ornek": "They can run very fast, but they don't always catch their prey.",
+   "ornekTr": "Çok hızlı koşabilirler ama avlarını her zaman yakalayamazlar. (s. 70)"
+  },
+  {
+   "en": "skin",
+   "tr": "deri"
+  },
+  {
+   "en": "zoologist",
+   "tr": "zoolog, hayvan bilimci",
+   "ornek": "I'm Frank Hardy, a zoologist.",
+   "ornekTr": "Ben Frank Hardy, bir zoologum. (s. 68)"
+  },
+  {
+   "en": "environment",
+   "tr": "çevre"
+  },
+  {
+   "en": "protect",
+   "tr": "korumak",
+   "ornek": "Protect wild animals.",
+   "ornekTr": "Vahşi hayvanları koruyun. (s. 75)"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "In fact, tigers are endangered.",
+   "tr": "Aslında kaplanların nesli tehlikede. (s. 70)"
+  },
+  {
+   "en": "There aren't any Dodo birds in the world.",
+   "tr": "Dünyada hiç Dodo kuşu yok. (s. 79)"
+  },
+  {
+   "en": "They destroyed their habitats to make fields.",
+   "tr": "Tarla yapmak için yaşam alanlarını yok ettiler. (s. 68)"
+  },
+  {
+   "en": "They also polluted the environment.",
+   "tr": "Çevreyi de kirlettiler. (s. 68)"
+  },
+  {
+   "en": "People hunt them and kill them.",
+   "tr": "İnsanlar onları avlıyor ve öldürüyor. (s. 70)"
+  },
+  {
+   "en": "It has tusks and a trunk.",
+   "tr": "Fildişleri ve hortumu var. (s. 68)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "In fact, tigers are extinct.",
+   "yanlis": "extinct",
+   "secenekler": [
+    "endangered",
+    "poisonous",
+    "enormous"
+   ],
+   "dogru": 0,
+   "tr": "Aslında kaplanların nesli tehlikede.",
+   "aciklama": "Kaplanlar az kaldı, ama var: {{endangered}}. (s. 70)"
+  },
+  {
+   "cumle": "Years ago, they destroy their habitats to make fields.",
+   "yanlis": "destroy",
+   "secenekler": [
+    "destroying",
+    "destroyed",
+    "destroys"
+   ],
+   "dogru": 1,
+   "tr": "Yıllar önce tarla yapmak için yaşam alanlarını yok ettiler.",
+   "aciklama": "{{years ago}} geçmiş: {{destroyed}}. (s. 68)"
+  },
+  {
+   "cumle": "People hunt tigers for their beautiful tusks.",
+   "yanlis": "tusks",
+   "secenekler": [
+    "eyes",
+    "milk",
+    "fur"
+   ],
+   "dogru": 2,
+   "tr": "İnsanlar kaplanları güzel kürkleri için avlıyor.",
+   "aciklama": "Kaplanın fildişi yok; avlanan şey kürkü: {{fur}}. (s. 70)"
+  },
+  {
+   "cumle": "There are any Dodo birds in the world.",
+   "yanlis": "are",
+   "secenekler": [
+    "is",
+    "aren't",
+    "was"
+   ],
+   "dogru": 1,
+   "tr": "Dünyada hiç Dodo kuşu yok.",
+   "aciklama": "Hiç yok demek için {{aren't any}}. (s. 79)"
+  },
+  {
+   "cumle": "It has tusks and a wing.",
+   "yanlis": "wing",
+   "secenekler": [
+    "trunk",
+    "scales",
+    "fur"
+   ],
+   "dogru": 0,
+   "tr": "Fildişleri ve hortumu var.",
+   "aciklama": "Filin hortumu var: {{trunk}}. (s. 68)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Frank Hardy and the Tigers",
+  "sayfa": "s. 68, s. 70",
+  "sozluk": {
+   "zoologist": "zoolog",
+   "spot the reasons": "sebepleri bulmak",
+   "extinctions": "nesil tükenmeleri",
+   "human beings": "insanlar",
+   "responsible for": "…den sorumlu",
+   "find a way": "bir yol bulmak",
+   "fields": "tarlalar",
+   "environment": "çevre",
+   "cat family": "kedigiller",
+   "striped": "çizgili",
+   "pointed ears": "sivri kulaklar",
+   "hide from danger": "tehlikeden saklanmak",
+   "sadly": "ne yazık ki",
+   "prey": "av"
+  },
+  "bolumler": [
+   {
+    "baslik": "Frank Hardy, a zoologist",
+    "cumleler": [
+     {
+      "en": "Hello. I'm Frank Hardy, a zoologist.",
+      "tr": "Merhaba. Ben Frank Hardy, bir zoologum."
+     },
+     {
+      "en": "I'm studying on endangered and extinct animals.",
+      "tr": "Nesli tehlikedeki ve tükenmiş hayvanlar üzerine çalışıyorum."
+     },
+     {
+      "en": "I believe we can spot the reasons of these extinctions, and we can protect the endangered ones.",
+      "tr": "Bu tükenmelerin sebeplerini bulabileceğimize ve nesli tehlikede olanları koruyabileceğimize inanıyorum."
+     },
+     {
+      "en": "Human beings are responsible for most of the extinctions.",
+      "tr": "Tükenmelerin çoğundan insanlar sorumludur."
+     },
+     {
+      "en": "They should now find a way to help the animals in wildlife.",
+      "tr": "Artık yaban hayatındaki hayvanlara yardım etmenin bir yolunu bulmalılar."
+     },
+     {
+      "en": "Men hunted wild animals for their skins, fur or teeth for years.",
+      "tr": "İnsanlar yıllarca vahşi hayvanları derileri, kürkleri ya da dişleri için avladı."
+     },
+     {
+      "en": "They destroyed their habitats to make fields.",
+      "tr": "Tarla yapmak için yaşam alanlarını yok ettiler."
+     },
+     {
+      "en": "They also polluted the environment.",
+      "tr": "Çevreyi de kirlettiler."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Frank Hardy'ye göre tükenmelerin çoğundan kim sorumlu?",
+      "secenekler": [
+       "Hayvanlar",
+       "İnsanlar",
+       "Zoologlar"
+      ],
+      "dogru": 1,
+      "ipucu": "{{responsible for}} geçen cümleyi bul.",
+      "aciklama": "{{Human beings are responsible for most of the extinctions.}}"
+     },
+     {
+      "soru": "İnsanlar yaşam alanlarını neden yok etti?",
+      "secenekler": [
+       "Tarla yapmak için",
+       "Hayvanları korumak için",
+       "Kürk almak için"
+      ],
+      "dogru": 0,
+      "ipucu": "{{destroyed}} geçen cümlede {{to}}'dan sonrasına bak.",
+      "aciklama": "{{They destroyed their habitats to make fields.}}"
+     }
+    ]
+   },
+   {
+    "baslik": "Tigers",
+    "cumleler": [
+     {
+      "en": "Tigers are the largest members of the cat family.",
+      "tr": "Kaplanlar kedigillerin en büyük üyeleridir."
+     },
+     {
+      "en": "Tigers have beautiful black and orange striped fur, pointed ears and yellow eyes.",
+      "tr": "Kaplanların güzel, siyah ve turuncu çizgili kürkleri, sivri kulakları ve sarı gözleri vardır."
+     },
+     {
+      "en": "Tigers live in Asia, in countries like India and Nepal.",
+      "tr": "Kaplanlar Asya'da, Hindistan ve Nepal gibi ülkelerde yaşar."
+     },
+     {
+      "en": "They usually live near trees, so they can hide from danger.",
+      "tr": "Genellikle ağaçların yakınında yaşarlar, böylece tehlikeden saklanabilirler."
+     },
+     {
+      "en": "In fact, tigers are endangered.",
+      "tr": "Aslında kaplanların nesli tehlikededir."
+     },
+     {
+      "en": "This means there aren't many tigers in the world.",
+      "tr": "Bu, dünyada çok fazla kaplan olmadığı anlamına gelir."
+     },
+     {
+      "en": "Sadly, people hunt them and kill them, because they want to take their beautiful fur.",
+      "tr": "Ne yazık ki insanlar güzel kürklerini almak istedikleri için onları avlayıp öldürüyor."
+     },
+     {
+      "en": "They attack and hunt at night, because they can see very well in the dark.",
+      "tr": "Karanlıkta çok iyi görebildikleri için geceleri saldırır ve avlanırlar."
+     },
+     {
+      "en": "They can run very fast, but they don't always catch their prey.",
+      "tr": "Çok hızlı koşabilirler ama avlarını her zaman yakalayamazlar."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Kaplanlar nerede yaşar?",
+      "secenekler": [
+       "Afrika'da",
+       "Asya'da",
+       "Avrupa'da"
+      ],
+      "dogru": 1,
+      "ipucu": "{{live in}} geçen cümlede kıta adını bul.",
+      "aciklama": "{{Tigers live in Asia, in countries like India and Nepal.}}"
+     },
+     {
+      "soru": "İnsanlar kaplanları neden avlıyor?",
+      "secenekler": [
+       "Etleri için",
+       "Fildişleri için",
+       "Güzel kürkleri için"
+      ],
+      "dogru": 2,
+      "ipucu": "{{Sadly}} ile başlayan cümlede {{because}}'dan sonrasını oku.",
+      "aciklama": "{{because they want to take their beautiful fur}}"
+     }
+    ]
+   }
+  ]
+ }
+}

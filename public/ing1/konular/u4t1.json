@@ -1,0 +1,222 @@
+{
+ "id": "u4t1",
+ "tur": "tarama",
+ "unite": "Unit 4: Wild Animals",
+ "baslik": "Ara Durak 1: Hayvanlar ve Tehlike",
+ "sayfalar": "Konu 1–2 · s. 63–80",
+ "giris": "İki konu bitti! Kısa bir mola verelim. Önce özetleri oku ve kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "İlk konuda hayvan gruplarını ve yaşadıkları yerleri öğrendik. İkinci konuda bu hayvanların neden yok olduğunu: insanlar onları avladı, yaşam alanlarını yok etti, çevreyi kirletti. Bu durağın sırrı: hayvanı, yerini ve tehlikesini birlikte söyleyebilmek. {{Tigers live in Asia. Tigers are endangered.}}",
+ "kapsar": [
+  "u4k1",
+  "u4k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u4k1",
+   "maddeler": [
+    "Hayvan grupları: {{mammal}} memeli, {{bird}} kuş, {{reptile}} sürüngen.",
+    "Memeli sütle beslenir; kuşun kanadı var; sürüngen pullu ve soğukkanlı.",
+    "Yaşam alanı {{habitat}}; orman {{jungle}}; çöl {{desert}}."
+   ]
+  },
+  {
+   "konu": "u4k2",
+   "maddeler": [
+    "{{extinct}} hiç kalmadı; {{endangered}} çok az kaldı.",
+    "{{hunted}} avladı; {{destroyed}} yok etti; {{polluted}} kirletti.",
+    "Hayvanlar kürk ({{fur}}) ve fildişi ({{tusks}}) için avlandı."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kelime bir hayvan grubu mu, bir yer mi, bir tehlike mi?",
+   "kutular": [
+    {
+     "etiket": "Hayvan grubu",
+     "uyeler": [
+      "mammal",
+      "bird",
+      "reptile"
+     ]
+    },
+    {
+     "etiket": "Yer",
+     "uyeler": [
+      "habitat",
+      "jungle",
+      "desert"
+     ]
+    },
+    {
+     "etiket": "Tehlike",
+     "uyeler": [
+      "hunt",
+      "destroy",
+      "pollute"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Men hunted wild animals for their milk.",
+    "Men hunted wild animals for their skins, fur or teeth.",
+    "Men protected wild animals for their fur."
+   ],
+   "dogru": 1,
+   "ipucu": "Avladılar mı, korudular mı? Ne için? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{Men hunted wild animals for their skins, fur or teeth.}} (s. 68)",
+   "dinle": "Men hunted wild animals for their skins, fur or teeth.",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "hunt"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "fur"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "They destroyed their habitats to make fields.",
+    "They destroyed the deserts to make fields.",
+    "They polluted the jungle to make fields."
+   ],
+   "dogru": 0,
+   "ipucu": "Yok ettiler mi, kirlettiler mi? Neyi?",
+   "aciklama": "Duyduğun cümle {{They destroyed their habitats to make fields.}} (s. 68)",
+   "dinle": "They destroyed their habitats to make fields.",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "destroy"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "habitat"
+    }
+   ]
+  },
+  {
+   "soru": "Kaplan hakkında hangisi doğrudur?",
+   "secenekler": [
+    "It is a reptile and it is extinct.",
+    "It is a bird and it lives in the desert.",
+    "It is a mammal and it is endangered."
+   ],
+   "dogru": 2,
+   "ipucu": "Kaplanın tüyü var ve sütle büyür. Dünyada hiç kalmadı mı, az mı kaldı?",
+   "aciklama": "Kaplan bir memelidir ve nesli tehlikededir. (s. 67, s. 70)",
+   "yardim": {
+    "adimlar": [
+     "Kaplan hangi grupta? Tüyleri var, yavrusu sütle beslenir.",
+     "Dünyada kaplan var mı? Az mı, hiç mi?",
+     "İki bilgiyi birlikte doğru veren şıkkı seç."
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "mammal"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "endangered"
+    }
+   ]
+  },
+  {
+   "soru": "Ormanlar yok edilirse ({{destroy the forests}}) ne olur?",
+   "secenekler": [
+    "Hayvanlar yaşam alanlarını kaybeder.",
+    "Çöller yağmurlu olur.",
+    "Kuşlar sürüngene dönüşür."
+   ],
+   "dogru": 0,
+   "ipucu": "Ormanlar hayvanların neyidir? {{habitat}} kartını hatırla.",
+   "aciklama": "{{Forests are the habitat of the animals.}} Orman giderse yaşam alanı da gider. (s. 74, s. 75)",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "destroy"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "habitat"
+    }
+   ]
+  },
+  {
+   "soru": "{{It is one of the biggest mammals. It has tusks and a trunk.}} Hangi hayvan?",
+   "secenekler": [
+    "whale",
+    "elephant",
+    "crocodile"
+   ],
+   "dogru": 1,
+   "ipucu": "Hortumu ({{trunk}}) olan memeli?",
+   "aciklama": "Fil büyük bir memelidir; fildişleri ve hortumu vardır. (s. 68)",
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "mammal"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "tusk"
+    }
+   ]
+  },
+  {
+   "soru": "{{There aren't any Dodo birds in the world.}} Bu cümleye göre hangisi doğru?",
+   "secenekler": [
+    "The Dodo is an endangered reptile.",
+    "The Dodo is a mammal and it lives in the jungle.",
+    "The Dodo was a bird and it is extinct."
+   ],
+   "dogru": 2,
+   "ipucu": "Adında {{bird}} var. Hiç kalmadıysa hangi kelime?",
+   "aciklama": "Dodo bir kuştu ve dünyada hiç kalmadı: {{extinct}}. (s. 79)",
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "bird"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "extinct"
+    }
+   ]
+  },
+  {
+   "soru": "{{They also ___ the environment.}} Hayvanlara zarar veren hangisi?",
+   "secenekler": [
+    "polluted",
+    "fed",
+    "loved"
+   ],
+   "dogru": 0,
+   "ipucu": "Çevreye ne yapılınca hayvanlar zarar görür?",
+   "aciklama": "Çevreyi kirletmek ({{polluted}}) yaban hayatına zarar verir. (s. 68)",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "pollute"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "wildlife"
+    }
+   ]
+  }
+ ]
+}
