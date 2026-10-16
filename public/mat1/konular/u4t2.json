@@ -1,0 +1,235 @@
+{
+ "id": "u4t2",
+ "tur": "tarama",
+ "unite": "4. Tema: Dönüşüm",
+ "baslik": "Tema Sonu Taraması",
+ "sayfalar": "Konu 1–4 · s. 201–217",
+ "giris": "Dördüncü temanın sonuna geldin, tebrikler! Şimdi 4 konuyu birlikte gözden geçireceğiz. Önce kısa özetleri oku ve kartları çevir. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+ "buyukResim": "Bu temanın yıldızı simetri doğrusuydu. Önce bir şeklin simetri doğrusuna göre görüntüsünü çizdik. Sonra şekillerin simetri doğrularını bulduk. En sonunda simetri doğrusunu pergel ve ölçüsüz cetvelle inşa ettik: doğru parçası için orta dikme, açı için açıortay.",
+ "kapsar": [
+  "u4k1",
+  "u4k2",
+  "u4k3",
+  "u4k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u4k1",
+   "maddeler": [
+    "Nokta ile görüntüsü simetri doğrusuna eşit uzaktır.",
+    "Simetri doğrusu aradaki parçayı dik ortalar.",
+    "Şekil ile görüntüsü eştir; yönü ters."
+   ]
+  },
+  {
+   "konu": "u4k2",
+   "maddeler": [
+    "Kare 4, dikdörtgen 2, eşkenar üçgen 3, düzgün beşgen 5.",
+    "Çeşitkenar üçgen ve paralelkenar simetrik değil.",
+    "Gizli simetri: paralel parçalar, ortalar tek doğruda."
+   ]
+  },
+  {
+   "konu": "u4k3",
+   "maddeler": [
+    "Orta dikme parçayı dik keser, iki eş parçaya ayırır.",
+    "Yaylar eş ve yarıdan uzun açıklıkla çizilir.",
+    "Yay, yay, kesişim, birleştir."
+   ]
+  },
+  {
+   "konu": "u4k4",
+   "maddeler": [
+    "Açıortay açıyı iki eş açıya ayırır.",
+    "Köşe yayı → K, L; eş yaylar → E; köşeyle birleştir.",
+    "Parça → orta dikme, açı → açıortay."
+   ]
+  }
+ ],
+ "eskiSoru": 6,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Hangi konudan?",
+   "kutular": [
+    {
+     "etiket": "Görüntü çizmek",
+     "uyeler": [
+      "Eşit Uzaklık",
+      "Köşe Köşe Yansıt"
+     ]
+    },
+    {
+     "etiket": "Simetri doğrusu bulmak",
+     "uyeler": [
+      "Birden Çok Simetri Doğrusu",
+      "Gizli Simetri Doğrusu"
+     ]
+    },
+    {
+     "etiket": "İnşa etmek",
+     "uyeler": [
+      "Orta Dikme İnşası",
+      "Açıortay İnşası"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "A ile görüntüsü A′ arası 10 kare. Simetri doğrusu A'dan kaç kare uzaktadır?",
+   "cevap": "5",
+   "ipucu": "Simetri doğrusu AA′ parçasının orta dikmesidir.",
+   "aciklama": "Simetri doğrusu AA′'yü tam ortadan böler: 10 ÷ 2 = 5 kare.",
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "Eşit Uzaklık"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "Simetri Doğrusu = Orta Dikme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Simetri doğrusu AA′ parçasını nasıl böler?",
+     "10'u 2'ye böl."
+    ]
+   }
+  },
+  {
+   "soru": "Bir ikizkenar üçgenin tepe açısı 70°. Simetri doğrusu bu açıyı iki eş açıya ayırır. Bu açılardan biri kaç derecedir?",
+   "cevap": "35",
+   "ipucu": "Simetri doğrusu tepe açısının açıortayıdır.",
+   "aciklama": "70 ÷ 2 = 35°. (s. 205, 214)",
+   "birim": "°",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "Simetrik Şekil"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "İki Eş Açı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Simetri doğrusu tepe köşesinden geçer ve açıyı iki eş parçaya böler.",
+     "70'i 2'ye böl."
+    ]
+   }
+  },
+  {
+   "soru": "Ali CD'nin orta dikmesini inşa ederken görseldeki yayları çizdi. Hatası nedir?",
+   "secenekler": [
+    "D merkezli yayları farklı açıklıkla çizdi.",
+    "C ile D'yi birleştirdi.",
+    "Pergelin sivri ucunu C'ye koydu."
+   ],
+   "dogru": 0,
+   "ipucu": "Yaylar eş mi?",
+   "aciklama": "C ve D merkezli yaylar eş olmalıydı; D merkezli yaylar daha küçük. (s. 216)",
+   "svg": "<svg viewBox='0 0 300 180' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M156.2 46.0 A88.0 88.0 0 0 0 118.6 10.9' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M118.6 169.1 A88.0 88.0 0 0 0 156.2 134.0' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M207.1 29.4 A62.0 62.0 0 0 0 172.5 50.1' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M172.5 129.9 A62.0 62.0 0 0 0 207.1 150.6' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><line x1='80.0' y1='90.0' x2='220.0' y2='90.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='80.0' cy='90.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='80.0' y='110.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>C</text><circle cx='220.0' cy='90.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='220.0' y='110.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>D</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "Eş Çemberler"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "Orta Dikme İnşası"
+    }
+   ]
+  },
+  {
+   "soru": "Bir daire diliminin simetri doğrusunu inşa etmek istiyoruz. Ne yaparız?",
+   "secenekler": [
+    "Dilimi bir yarıçapına göre yansıtırız.",
+    "Dilimin iki yarıçapının oluşturduğu açının açıortayını inşa ederiz.",
+    "Dilimin bir yarıçapının üzerine çizgi çizeriz."
+   ],
+   "dogru": 1,
+   "ipucu": "Dilimin iki yarıçapı bir açı oluşturur.",
+   "aciklama": "Bu açının açıortayı dilimi iki eş parçaya ayırır; simetri doğrusudur. (s. 217)",
+   "kaynak": [
+    {
+     "konu": "u4k4",
+     "kavram": "Açının Simetri Doğrusu"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "Simetrik Şekil"
+    }
+   ]
+  },
+  {
+   "soru": "Görseldeki iki eş üçgen bir doğruya göre simetrik midir?",
+   "secenekler": [
+    "Evet; parçalar birbirine paralel.",
+    "Evet; üçgenler eş.",
+    "Hayır; parçaların orta noktaları aynı doğru üzerinde değil."
+   ],
+   "dogru": 2,
+   "ipucu": "Altın noktalar tek bir doğru üzerinde mi?",
+   "aciklama": "Üçgen yalnızca kaydırılmış; yönü ters dönmemiş, orta noktalar tek doğruda değil. (s. 206)",
+   "svg": "<svg viewBox='0 0 244 134' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><polygon points='34.0,34.0 78.0,56.0 34.0,100.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='166.0,34.0 210.0,56.0 166.0,100.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='34.0' y1='34.0' x2='166.0' y2='34.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='100.0' cy='34.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><line x1='78.0' y1='56.0' x2='210.0' y2='56.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='144.0' cy='56.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><line x1='34.0' y1='100.0' x2='166.0' y2='100.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='100.0' cy='100.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='34.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='166.0' cy='34.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='166.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>A′</text><circle cx='78.0' cy='56.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='78.0' y='48.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>B</text><circle cx='210.0' cy='56.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='210.0' y='48.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>B′</text><circle cx='34.0' cy='100.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='92.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>C</text><circle cx='166.0' cy='100.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='166.0' y='92.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>C′</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "Gizli Simetri Doğrusu"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "Şekil ve Görüntü Eştir"
+    }
+   ]
+  },
+  {
+   "soru": "Karenin köşegeni bir simetri doğrusudur ve köşedeki 90°'lik açıyı iki eş açıya ayırır. Bu açılardan biri kaç derecedir?",
+   "cevap": "45",
+   "ipucu": "Köşegen köşe açısının açıortayıdır.",
+   "aciklama": "90 ÷ 2 = 45°.",
+   "birim": "°",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "Birden Çok Simetri Doğrusu"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "İki Eş Açı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Köşegen köşe açısını nasıl böler?",
+     "90'ı 2'ye böl."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi orta dikme ile açıortayın ortak özelliğidir?",
+   "secenekler": [
+    "İkisi de bir simetri doğrusudur.",
+    "İkisi de bir açının kollarını keser.",
+    "İkisi de bir doğru parçasını tam ortadan böler."
+   ],
+   "dogru": 0,
+   "ipucu": "Orta dikme parçanın, açıortay açının …",
+   "aciklama": "Orta dikme doğru parçasının, açıortay açının simetri doğrusudur. (s. 213, 214)",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "Simetri Doğrusu = Orta Dikme"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "Açının Simetri Doğrusu"
+    }
+   ]
+  }
+ ]
+}

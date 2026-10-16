@@ -8095,9 +8095,1315 @@ def u3t4():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4, u3t1, u3t2, u3t3, u3t4]
+# =================================================================
+# 4. Tema: Dönüşüm (17 Ekim 2026, Kemal onayıyla: 4 konu + Ara Durak 1 + Tema Sonu Taraması; mevcut motorla)
+# Kitap dışı kararlar (Kemal'e bildirildi): renk kodu (şekil yeşil, görüntü turuncu, simetri doğrusu altın kesikli, pergel yayları mavi,
+# orta dikme/açıortay pembe); kareli zeminde "kaç kare gittiysen o kadar git" stratejisi (kitap gönye ve cetvel kullanır);
+# şekillerin simetri doğrusu sayıları ve kenara göre yansıtınca oluşan şekiller (kitap s. 205, 208'de öğrenciye bırakmış; s. 205 Bilgi Kutusundan türetildi);
+# pergel açıklığının "yarıdan uzun" olması (s. 212'deki sorulardan türetildi); açıortayla yarım açı hesabı (s. 214 Bilgi Kutusundan türetildi).
+# Kitabın görselleri metinde olmadığı için bütün örnekler ve çizimler yeniden yazıldı.
+from t4_cizim import (Kare, yans_d, yans_y, yay, cizgi as c4, nokta as n4, dik_isareti, esit_isareti, orta_dikme_cizim, aciortay_cizim,
+                      SEK, GOR, ALT, PER, SON, IZ)
+from t2_cizim import _poly as t2poly
+
+T4 = "4. Tema: Dönüşüm"
+
+
+def sik_dagit(d):
+    """Tema 4: sorular doğru şık hep başta olacak biçimde yazıldı; şıkları döndürüp doğru şıkkı sırayla 0, 1, 2'ye dağıtır.
+    Yalnız sayı ya da numara şıklı sorular (ör. 1, 2, 3 numaralı görsel adaylar) olduğu gibi kalır."""
+    import re as _re
+    n = [0]
+
+    def gez(x):
+        if isinstance(x, dict):
+            if "secenekler" in x and "dogru" in x and not all(_re.fullmatch(r"[\d,]+", o) for o in x["secenekler"]):
+                s_, h = x["secenekler"], n[0] % 3
+                k = (x["dogru"] - h) % len(s_)
+                x["secenekler"], x["dogru"] = s_[k:] + s_[:k], h
+                n[0] += 1
+            for v in x.values():
+                gez(v)
+        elif isinstance(x, list):
+            for v in x:
+                gez(v)
+    gez(d)
+    return d
+
+
+def pg(pts, renk=SEK, op=0.55, sw=2.2):
+    p = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    return f"<polygon points='{p}' fill='{renk}' fill-opacity='{op}' stroke='{renk}' stroke-width='{sw}' stroke-linejoin='round'/>"
+
+
+def kesik(x1, y1, x2, y2, renk=ALT, sw=2.5):
+    return f"<line x1='{x1:.1f}' y1='{y1:.1f}' x2='{x2:.1f}' y2='{y2:.1f}' stroke='{renk}' stroke-width='{sw}' stroke-dasharray='6 4'/>"
+
+
+def carpi(x, y, renk="#ff6b6b", k=7):
+    return f"<path d='M{x - k} {y - k} L{x + k} {y + k} M{x + k} {y - k} L{x - k} {y + k}' stroke='{renk}' stroke-width='3' stroke-linecap='round'/>"
+
+
+def tik(x, y, renk="#5fd08f"):
+    return f"<path d='M{x - 7} {y} l5 5 l9 -11' stroke='{renk}' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/>"
+
+
+def k4(C, R, s, ic, pad=12, ek_h=0):
+    """Kareli zeminli soru görseli: ic(k) → içerik."""
+    k = Kare(pad, pad, s, C, R)
+    return gsvg(C * s + 2 * pad, R * s + 2 * pad + ek_h, k.zemin() + ic(k))
+
+
+def yans_cizim(k, sek, eksen, c, gor=True, etiket="ABCD", gor_etiket=True, dy_alt=()):
+    """sek: köşeler; eksen 'd' (dikey, x=c) ya da 'y' (yatay, y=c)."""
+    g = (k.dikey(c) if eksen == "d" else k.yatay(c)) + k.cokgen(sek, SEK)
+    im = yans_d(sek, c) if eksen == "d" else yans_y(sek, c)
+    if gor:
+        g += k.cokgen(im, GOR)
+    for i, (p, q) in enumerate(zip(sek, im)):
+        dy = 17 if i in dy_alt else -8
+        if etiket:
+            g += k.nokta(*p, SEK, etiket[i], 0, dy)
+            if gor and gor_etiket:
+                g += k.nokta(*q, GOR, etiket[i] + "′", 0, (17 if eksen == "d" and i in dy_alt else (-dy if eksen == "y" else dy)))
+    return g
+
+
+# ---------- Kavram ve hazırlık çizimleri (120 × 120) ----------
+def svg4_simetri():
+    k = Kare(12, 12, 12, 8, 8)
+    sol = [(4, 1), (1, 3), (2, 7), (4, 6)]
+    return bg(k.zemin() + k.cokgen(sol, SEK) + k.cokgen(yans_d(sol, 4), GOR) + k.dikey(4, uzat=4))
+
+
+def svg4_ayna():
+    g = "<rect x='56' y='14' width='8' height='82' rx='3' fill='#9fd8ff' opacity='0.85'/>"
+    g += pg([(22, 80), (42, 80), (32, 52)], SEK) + pg([(98, 80), (78, 80), (88, 52)], GOR)
+    g += "<path d='M32 92 h22 M66 92 h22' stroke='#f2c14e' stroke-width='2.5' stroke-linecap='round'/>"
+    g += txt(43, 108, "eşit", "#f2c14e", 10) + txt(77, 108, "eşit", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg4_esit():
+    k = Kare(12, 30, 12, 8, 4)
+    g = k.zemin() + k.dikey(4, uzat=4) + k.nokta(1, 2, SEK, "A", 0, -8, 11) + k.nokta(7, 2, GOR, "A′", 0, -8, 11)
+    g += "<path d='M30 66 h22 M68 66 h22' stroke='#f2c14e' stroke-width='2.5'/>" + txt(41, 92, "3", "#f2c14e", 13) + txt(79, 92, "3", "#f2c14e", 13)
+    return bg(g)
+
+
+def svg4_dik():
+    g = kesik(60, 14, 60, 106) + c4(24, 60, 96, 60, ACIK, 2.5) + dik_isareti(60, 60, 1, 0, 9)
+    g += esit_isareti(24, 60, 60, 60, 1) + esit_isareti(60, 60, 96, 60, 1)
+    g += n4(24, 60, SEK, "A", 0, -10, 12) + n4(96, 60, GOR, "A′", 0, -10, 12)
+    return bg(g)
+
+
+def svg4_kose():
+    k = Kare(12, 12, 12, 8, 8)
+    sek = [(1, 2), (3, 2), (1, 6)]
+    g = k.zemin() + k.dikey(4, uzat=4) + k.cokgen(sek, SEK) + k.cokgen(yans_d(sek, 4), GOR)
+    for (c, r) in sek:
+        g += k.parca((c, r), (8 - c, r), ALT, 1.5, True)
+    return bg(g)
+
+
+def svg4_es():
+    g = kesik(60, 12, 60, 92) + pg([(16, 80), (48, 80), (16, 30)], SEK) + pg([(104, 80), (72, 80), (104, 30)], GOR)
+    g += txt(60, 110, "eş · yön ters", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg4_arac():
+    g = "<rect x='16' y='18' width='50' height='70' rx='4' fill='#9fd8ff' opacity='0.28' stroke='#9fd8ff' stroke-width='2'/>"
+    g += pg([(26, 70), (50, 70), (26, 40)], SEK)
+    g += "<path d='M70 50 q14 -24 30 0' stroke='#f2c14e' stroke-width='2.5' fill='none'/><path d='M100 50 l-8 -2 l5 -6z' fill='#f2c14e'/>"
+    g += kesik(66, 14, 66, 96, ALT, 2)
+    g += txt(60, 110, "çiz, kontrol et", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg4_h_dik():
+    g = "<path d='M28 92 H96 M28 92 V24' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/>" + dik_isareti(28, 92, 1, 0, 14, "#f2c14e")
+    g += dik_isareti(28, 92, 0, -1, 14, "#f2c14e") + txt(70, 64, "90°", "#f2c14e", 18)
+    return bg(g)
+
+
+def svg4_h_kare():
+    k = Kare(12, 30, 12, 8, 4)
+    g = k.zemin() + k.dikey(6, uzat=4) + k.nokta(2, 2, SEK, "A", 0, -8, 11)
+    for i in range(4):
+        g += txt(42 + i * 12, 92, str(i + 1), "#f2c14e", 11)
+    g += "<path d='M36 66 h46' stroke='#f2c14e' stroke-width='2'/><path d='M84 66 l-7 -4 v8z' fill='#f2c14e'/>"
+    return bg(g)
+
+
+def svg4_ikizkenar():
+    g = pg([(20, 96), (100, 96), (60, 22)], SEK) + kesik(60, 14, 60, 106)
+    g += esit_isareti(20, 96, 60, 22, 1) + esit_isareti(100, 96, 60, 22, 1) + dik_isareti(60, 96, -1, 0, 8)
+    return bg(g)
+
+
+def svg4_kare4():
+    g = pg([(28, 28), (92, 28), (92, 92), (28, 92)], SEK, 0.35)
+    g += kesik(60, 18, 60, 102) + kesik(18, 60, 102, 60) + kesik(22, 22, 98, 98) + kesik(98, 22, 22, 98)
+    return bg(g + txt(60, 116, "4 simetri doğrusu", "#f2c14e", 10))
+
+
+def svg4_yok():
+    g = pg([(18, 88), (76, 88), (102, 36), (44, 36)], SEK, 0.45) + kesik(60, 22, 60, 102, "#9aa3bf")
+    return bg(g + carpi(96, 98))
+
+
+def gizli_ciz(k, sek, c, adim=4, etiket="ABC"):
+    im = yans_d(sek, c)
+    g = k.cokgen(sek, SEK) + k.cokgen(im, GOR)
+    if adim >= 1:
+        for p, q in zip(sek, im):
+            g += k.parca(p, q, ACIK, 1.6, True)
+    if adim >= 3:
+        for (x, y) in sek:
+            g += k.nokta(c, y, ALT, None, rr=4)
+    if adim >= 4:
+        g += k.dikey(c, SON, 3)
+    for i, (p, q) in enumerate(zip(sek, im)):
+        e = etiket[i] if etiket else None
+        g += k.nokta(*p, SEK, e, 0, -8, 11) + k.nokta(*q, GOR, e and e + "′", 0, -8, 11)
+    return g
+
+
+def svg4_gizli():
+    k = Kare(12, 18, 12, 8, 7)
+    sek = [(0, 1), (2, 3), (1, 6)]
+    return bg(k.zemin() + gizli_ciz(k, sek, 4, 3, etiket=""))
+
+
+def svg4_kenar():
+    g = pg([(60, 18), (60, 96), (22, 96)], SEK) + pg([(60, 18), (60, 96), (98, 96)], GOR)
+    g += kesik(60, 10, 60, 106) + dik_isareti(60, 96, -1, 0, 8)
+    return bg(g)
+
+
+def svg4_kelebek():
+    g = "<ellipse cx='40' cy='44' rx='24' ry='20' fill='#4fc3a1' opacity='0.8'/><ellipse cx='80' cy='44' rx='24' ry='20' fill='#ffa26b' opacity='0.8'/>"
+    g += "<ellipse cx='44' cy='78' rx='16' ry='14' fill='#4fc3a1' opacity='0.8'/><ellipse cx='76' cy='78' rx='16' ry='14' fill='#ffa26b' opacity='0.8'/>"
+    g += "<circle cx='38' cy='42' r='5' fill='#1b2340'/><circle cx='82' cy='42' r='5' fill='#1b2340'/>"
+    g += "<rect x='56' y='28' width='8' height='66' rx='4' fill='#f5f6fa'/>" + kesik(60, 12, 60, 108)
+    return bg(g)
+
+
+def svg4_h_ucgen():
+    g = pg([(8, 70), (38, 70), (23, 44)], SEK) + pg([(44, 70), (72, 70), (58, 26)], GOR) + pg([(78, 70), (112, 70), (86, 40)], "#b197fc")
+    g += txt(23, 88, "eş-", ACIK, 10) + txt(23, 100, "kenar", ACIK, 10) + txt(58, 88, "ikiz-", ACIK, 10) + txt(58, 100, "kenar", ACIK, 10)
+    g += txt(95, 88, "çeşit-", ACIK, 10) + txt(95, 100, "kenar", ACIK, 10)
+    return bg(g)
+
+
+def svg4_h_dortgen():
+    g = pg([(10, 30), (42, 30), (42, 62), (10, 62)], SEK) + pg([(52, 34), (110, 34), (110, 62), (52, 62)], GOR)
+    g += pg([(14, 104), (64, 104), (80, 78), (30, 78)], "#b197fc") + pg([(96, 74), (110, 92), (96, 110), (82, 92)], "#f783ac")
+    return bg(g)
+
+
+def svg4_orta_dikme():
+    return bg(orta_dikme_cizim(4, 22, 64, 98, 64, r=45, boy=11))
+
+
+def svg4_parca_simetri():
+    g = c4(20, 90, 50, 40, SEK, 3) + c4(100, 90, 70, 40, GOR, 3) + kesik(60, 14, 60, 106)
+    g += n4(20, 90, SEK, "A", -6, 14, 11) + n4(50, 40, SEK, "B", -8, -6, 11) + n4(100, 90, GOR, "A′", 8, 14, 11) + n4(70, 40, GOR, "B′", 10, -6, 11)
+    return bg(g)
+
+
+def svg4_pergel():
+    g = "<path d='M60 18 L36 92 M60 18 L82 90' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/><circle cx='60' cy='18' r='6' fill='#f2c14e'/>"
+    g += yay(36, 92, 46, 5, 60) + "<path d='M82 90 l-3 10 l6 0z' fill='#6fb3ff'/>" + c4(14, 108, 106, 108, ALT, 3)
+    return bg(g)
+
+
+def svg4_es_cember():
+    g = "<circle cx='44' cy='60' r='30' fill='none' stroke='#6fb3ff' stroke-width='2.2'/><circle cx='76' cy='60' r='30' fill='none' stroke='#6fb3ff' stroke-width='2.2'/>"
+    g += c4(44, 60, 76, 60, ACIK, 2.5) + n4(44, 60, ACIK, "A", -8, 4, 11) + n4(76, 60, ACIK, "B", 8, 4, 11)
+    g += n4(60, 33.5, PER, None) + n4(60, 86.5, PER, None)
+    return bg(g)
+
+
+def svg4_insa():
+    return bg(orta_dikme_cizim(3, 22, 64, 98, 64, r=45, boy=11))
+
+
+def svg4_esit_uzak():
+    A, B, K, L = (24, 64), (96, 64), (60, 28), (60, 100)
+    g = pg([A, K, B, L], "#b197fc", 0.3) + c4(*A, *B, ACIK, 2) + c4(60, 16, 60, 108, SON, 2.5)
+    g += c4(*A, *K, PER, 2.5) + c4(*B, *K, PER, 2.5) + esit_isareti(*A, *K, 1, PER) + esit_isareti(*B, *K, 1, PER)
+    g += n4(*A, ACIK, "A", -8, 4, 11) + n4(*B, ACIK, "B", 9, 4, 11) + n4(*K, PER, "K", 10, -2, 11)
+    return bg(g)
+
+
+def svg4_h_orta():
+    g = c4(16, 60, 104, 60, ACIK, 3) + n4(16, 60, ACIK, "A", 0, -10, 12) + n4(104, 60, ACIK, "B", 0, -10, 12) + n4(60, 60, ALT, "O", 0, -10, 12)
+    g += esit_isareti(16, 60, 60, 60, 1, ALT) + esit_isareti(60, 60, 104, 60, 1, ALT)
+    return bg(g + txt(60, 92, "iki eş parça", "#f2c14e", 11))
+
+
+def svg4_h_cember():
+    g = "<circle cx='60' cy='60' r='38' fill='none' stroke='#6fb3ff' stroke-width='2.5'/>" + c4(60, 60, 98, 60, ALT, 2.5)
+    g += n4(60, 60, ACIK, "M", 0, -8, 12) + txt(80, 54, "r", "#f2c14e", 13)
+    return bg(g)
+
+
+def svg4_aciortay():
+    return bg(aciortay_cizim(4, 20, 98, 0, 70, kol=96, boy=11))
+
+
+def svg4_aci_simetri():
+    g = c4(20, 98, 112, 98, ACIK, 3) + c4(20, 98, 51.5, 11.5, ACIK, 3) + kesik(20, 98, 106, 40)
+    return bg(g + n4(20, 98, ACIK, "A", -8, 4, 11))
+
+
+def svg4_es_aci():
+    return bg(aciortay_cizim(4, 20, 100, 0, 80, kol=92, olcu=("80°", "40°"), boy=11))
+
+
+def svg4_kl():
+    return bg(aciortay_cizim(2, 20, 98, 0, 70, kol=96, boy=11))
+
+
+def svg4_aciortay_insa():
+    return bg(aciortay_cizim(3, 20, 98, 0, 70, kol=96, boy=11))
+
+
+def svg4_hangisi():
+    g = c4(10, 40, 50, 40, ACIK, 2.5) + c4(30, 18, 30, 62, SON, 2.5) + dik_isareti(30, 40, 1, 0, 6)
+    g += c4(70, 66, 112, 66, ACIK, 2.5) + c4(70, 66, 92, 26, ACIK, 2.5) + c4(70, 66, 108, 44, SON, 2.5)
+    g += txt(30, 84, "parça", ACIK, 10) + txt(30, 98, "orta dikme", SON, 10) + txt(92, 84, "açı", ACIK, 10) + txt(92, 98, "açıortay", SON, 10)
+    return bg(g)
+
+
+def svg4_h_aci():
+    g = c4(26, 92, 104, 92, ACIK, 3) + c4(26, 92, 74, 24, ACIK, 3) + yay(26, 92, 20, 0, 55, ALT, 2)
+    g += n4(26, 92, ACIK, "A", -8, 4, 12) + txt(92, 108, "kol", "#f2c14e", 11) + txt(76, 46, "kol", "#f2c14e", 11) + txt(30, 112, "köşe", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg4_h_yarim():
+    return bg(txt(60, 52, "80 ÷ 2", ACIK, 20) + txt(60, 86, "= 40", "#f2c14e", 22))
+
+
+# ---------- Soru ve adım görselleri ----------
+def gs_nokta_aday(eksen="d"):
+    """A noktası ve doğrunun öbür yanında 1, 2, 3 numaralı aday noktalar (1 doğru: eşit uzak ve aynı hizada)."""
+    if eksen == "d":
+        def ic(k):
+            return (k.dikey(5) + k.nokta(2, 3, SEK, "A", 0, -10) + k.rozet(8, 3, "1") + k.rozet(8, 5, "2") + k.rozet(9, 3, "3"))
+        return k4(11, 7, 22, ic)
+
+    def ic(k):
+        return (k.yatay(3) + k.nokta(4, 1, SEK, "B", 0, -10) + k.rozet(4, 5, "1") + k.rozet(4, 6, "2") + k.rozet(6, 5, "3"))
+    return k4(9, 7, 22, ic)
+
+
+def p_ikiz(cx, alt):
+    return pg([(cx - 32, alt - 6), (cx + 32, alt - 6), (cx, alt - 86)], SEK) + kesik(cx, alt - 96, cx, alt + 2)
+
+
+def p_dik_kos(cx, alt):
+    # belirgin uzun dikdörtgen (84 × 44); köşegen tam köşeden köşeye (kare olsaydı köşegen simetri doğrusu olurdu)
+    return pg([(cx - 42, alt - 60), (cx + 42, alt - 60), (cx + 42, alt - 16), (cx - 42, alt - 16)], SEK) + kesik(cx - 52, alt - 65.2, cx + 52, alt - 10.8)
+
+
+def p_cesit(cx, alt):
+    return pg([(cx - 34, alt - 8), (cx + 38, alt - 8), (cx - 26, alt - 74)], SEK) + kesik(cx, alt - 92, cx, alt + 2)
+
+
+def p_paralel(cx, alt):
+    return pg([(cx - 40, alt - 10), (cx + 14, alt - 10), (cx + 40, alt - 76), (cx - 14, alt - 76)], SEK) + kesik(cx, alt - 86, cx, alt)
+
+
+def gs_hangi_dogru(sira):
+    f = {"ikiz": p_ikiz, "kos": p_dik_kos, "cesit": p_cesit, "paralel": p_paralel}
+    return sec_svg([f[a] for a in sira], 330, 140)
+
+
+def gs_ucgen_yans(adim):
+    """Köşe köşe yansıtma çözümü: 0 yalnız şekil · 1 A′ · 2 B′ · 3 C′ · 4 birleştir."""
+    sek = [(1, 1), (4, 1), (1, 5)]
+
+    def ic(k):
+        g = k.dikey(5) + k.cokgen(sek, SEK)
+        im = yans_d(sek, 5)
+        if adim >= 4:
+            g += k.cokgen(im, GOR)
+        for i, n in enumerate("ABC"):
+            dy = 17 if i == 2 else -8
+            g += k.nokta(*sek[i], SEK, n, 0, dy)
+            if adim >= i + 1:
+                g += k.parca(sek[i], im[i], ALT, 1.6, True) + k.nokta(*im[i], GOR, n + "′", 0, dy)
+        return g
+    return k4(10, 6, 22, ic)
+
+
+def gs_tek_nokta(uz, yon="sol", goster=False, ad="A", eksen_c=5, C=10, R=4):
+    c = eksen_c - uz if yon == "sol" else eksen_c + uz
+    ci = 2 * eksen_c - c
+
+    def ic(k):
+        g = k.dikey(eksen_c) + k.nokta(c, 2, SEK, ad, 0, -10)
+        if goster:
+            g += k.parca((c, 2), (ci, 2), ALT, 1.6, True) + k.nokta(ci, 2, GOR, ad + "′", 0, -10)
+        return g
+    return k4(C, R, 22, ic)
+
+
+def gs_cift_kontrol():
+    """A–K görüntü; B–L uzaklık farklı; C–M hizası kaymış."""
+    def ic(k):
+        g = k.dikey(5)
+        for (p, q, n1, n2) in (((3, 1), (7, 1), "A", "K"), ((2, 3), (7, 3), "B", "L"), ((4, 5), (6, 6), "C", "M")):
+            g += k.nokta(*p, SEK, n1, 0, -9) + k.nokta(*q, GOR, n2, 0, -9)
+        return g
+    return k4(10, 7, 22, ic)
+
+
+def gs_kare_yans(adim):
+    """Yatay doğruya göre dikdörtgen: 0 şekil · 1 D′ · 2 tamamı."""
+    sek = [(1, 1), (4, 1), (4, 3), (1, 3)]
+
+    def ic(k):
+        g = k.yatay(4) + k.cokgen(sek, SEK)
+        im = yans_y(sek, 4)
+        if adim >= 2:
+            g += k.cokgen(im, GOR)
+        for i, n in enumerate("ABCD"):
+            g += k.nokta(*sek[i], SEK, n, 0, -8 if i < 2 else 17)
+            if adim >= 2 or (adim == 1 and n == "D"):
+                g += k.nokta(*im[i], GOR, n + "′", 0, 17 if i < 2 else -8)
+        return g
+    return k4(6, 8, 20, ic)
+
+
+def gs_gizli(adim, sek=((1, 1), (3, 3), (2, 5)), c=5, C=10, R=6):
+    return k4(C, R, 22, lambda k: gizli_ciz(k, list(sek), c, adim))
+
+
+def gs_kaymis():
+    """Eş iki üçgen yalnızca kaydırılmış (yansıma değil)."""
+    sek = [(1, 1), (3, 2), (1, 4)]
+    kay = [(x + 6, y) for x, y in sek]           # orta noktalar (4, 1), (6, 2), (4, 4): tek doğruda değil
+
+    def ic(k):
+        g = k.cokgen(sek, SEK) + k.cokgen(kay, GOR)
+        for p, q in zip(sek, kay):
+            g += k.parca(p, q, ACIK, 1.6, True) + k.nokta((p[0] + q[0]) / 2, p[1], ALT, None, rr=4)
+        for i, n in enumerate("ABC"):
+            g += k.nokta(*sek[i], SEK, n, 0, -8) + k.nokta(*kay[i], GOR, n + "′", 0, -8)
+        return g
+    return k4(10, 5, 22, ic)
+
+
+def gs_paralel_degil():
+    A, B, C = (40, 120), (90, 120), (40, 40)
+    D, E, F = (205, 95), (243.3, 127.1), (256.4, 33.7)  # ABC'nin 40° döndürülmüş eşi (AB = 50, AC = 80)
+    g = pg([A, B, C], SEK) + pg([D, E, F], GOR)
+    for p, q in ((A, D), (B, E), (C, F)):
+        g += c4(*p, *q, ACIK, 1.6, True)
+    for p, n in ((A, "A"), (B, "B"), (C, "C")):
+        g += n4(*p, SEK, n, 0, -9, 12)
+    for p, n in ((D, "A′"), (E, "B′"), (F, "C′")):
+        g += n4(*p, GOR, n, 0, -9, 12)
+    return gsvg(330, 150, g)
+
+
+def gs_gizli_aday():
+    sek = [(1, 1), (3, 2), (1, 4)]
+
+    def ic(k):
+        g = k.cokgen(sek, SEK) + k.cokgen(yans_d(sek, 5), GOR)
+        for c, n in ((4, "1"), (5, "2"), (6, "3")):
+            g += k.dikey(c, "#9aa3bf", 2) + k.rozet(c, -0.1, n, ALT, 9, 11)
+        return g
+    return k4(10, 5, 22, ic, pad=22)
+
+
+def gs_kenar_yans(adim):
+    """Dik üçgeni dik kenarına (x = 4) göre yansıtma."""
+    sek = [(4, 1), (4, 5), (1, 5)]
+
+    def ic(k):
+        g = k.dikey(4) + k.cokgen(sek, SEK)
+        if adim >= 2:
+            g += k.cokgen(yans_d(sek, 4), GOR) + k.nokta(7, 5, GOR, "C′", 0, 17)
+        g += k.nokta(4, 1, SEK, "A", 12, -4) + k.nokta(4, 5, SEK, "B", 0, 17) + k.nokta(1, 5, SEK, "C", 0, 17)
+        return g
+    return k4(8, 6, 22, ic)
+
+
+def gs_ikiz_simetri(adim):
+    A, B, T = (60, 130), (200, 130), (130, 20)
+    g = pg([A, B, T], SEK) + esit_isareti(*A, *T, 1) + esit_isareti(*B, *T, 1)
+    if adim >= 1:
+        g += n4(*T, ALT, None)
+    if adim >= 2:
+        g += n4(130, 130, ALT, None) + esit_isareti(60, 130, 130, 130, 2, ALT) + esit_isareti(130, 130, 200, 130, 2, ALT)
+    if adim >= 3:
+        g += kesik(130, 10, 130, 146) + dik_isareti(130, 130, -1, 0, 8)
+    return gsvg(260, 150, g)
+
+
+def gs_kare_simetri(adim):
+    g = pg([(70, 20), (190, 20), (190, 140), (70, 140)], SEK, 0.35)
+    if adim >= 1:
+        g += kesik(130, 10, 130, 150) + kesik(60, 80, 200, 80)
+    if adim >= 2:
+        g += kesik(62, 12, 198, 148) + kesik(198, 12, 62, 148)
+    return gsvg(260, 160, g)
+
+
+def gs_dikdortgen_kosegen():
+    g = pg([(40, 30), (220, 30), (220, 120), (40, 120)], SEK, 0.35) + kesik(30, 25, 230, 125, ALT)
+    return gsvg(260, 150, g)
+
+
+def gs_orta_dikme(adim, w=300, h=170):
+    return gsvg(w, h, orta_dikme_cizim(adim, 70, h / 2, w - 70, h / 2))
+
+
+def gs_aciortay(adim, olcu=None):
+    return gsvg(300, 180, aciortay_cizim(adim, 50, 160, 0, 70, kol=150, olcu=olcu))
+
+
+def gs_od_aday():
+    A, B = (40, 90), (260, 90)
+    g = c4(*A, *B, ACIK, 3) + n4(*A, ACIK, "A", 0, 20, 12) + n4(*B, ACIK, "B", 0, 20, 12)
+    g += kesik(150, 20, 150, 160, "#9aa3bf") + kesik(205, 20, 205, 160, "#9aa3bf") + kesik(115, 20, 185, 160, "#9aa3bf")
+    for x, y, n in ((150, 14, "1"), (205, 14, "2"), (115, 14, "3")):
+        g += f"<circle cx='{x}' cy='{y}' r='10' fill='{ALT}' stroke='#1b2340' stroke-width='1.5'/>" + txt(x, y + 4.5, n, "#1b2340", 12)
+    return gsvg(300, 170, g)
+
+
+def gs_ao_aday():
+    import math as _m
+    vx, vy, kol = 40, 160, 220
+    g = c4(vx, vy, vx + kol, vy, ACIK, 3)
+    a = _m.radians(70); g += c4(vx, vy, vx + kol * 0.6 * _m.cos(a), vy - kol * 0.6 * _m.sin(a), ACIK, 3)
+    g += yay(vx, vy, 26, 0, 70, ALT, 2) + txt(vx + 46, vy - 22, "70°", ALT, 12)
+    for der, n in ((35, "1"), (12, "2"), (55, "3")):
+        r = _m.radians(der); x, y = vx + 165 * _m.cos(r), vy - 165 * _m.sin(r)
+        g += kesik(vx, vy, x, y, "#9aa3bf", 2) + f"<circle cx='{x:.1f}' cy='{y:.1f}' r='10' fill='{ALT}' stroke='#1b2340' stroke-width='1.5'/>" + txt(x, y + 4.5, n, "#1b2340", 12)
+    return gsvg(300, 180, g + n4(vx, vy, ACIK, "A", -10, 5, 12))
+
+
+def gs_hatali_od():
+    """B merkezli yaylar farklı açıklıkla çizilmiş (s. 216'daki hatalı adım sorusundan esinlenildi)."""
+    ax, bx, y = 80, 220, 90
+    g = yay(ax, y, 88, 30, 64) + yay(ax, y, 88, -64, -30) + yay(bx, y, 62, 102, 140) + yay(bx, y, 62, -140, -102)
+    g += c4(ax, y, bx, y, ACIK, 3) + n4(ax, y, ACIK, "C", 0, 20, 12) + n4(bx, y, ACIK, "D", 0, 20, 12)
+    return gsvg(300, 180, g)
+
+
+def u4k1():
+    return sik_dagit({
+        "id": "u4k1", "unite": T4, "baslik": "Yansıma Dönüşümü", "sayfalar": "s. 202–205, 210",
+        "giris": "Aynaya baktığında görüntün tam karşında durur. Matematikte de bir şeklin, bir doğrunun öbür yanındaki aynadaki gibi görüntüsünü çizeriz. Bu konuda simetri doğrusunu ve yansıma dönüşümünü öğreneceğiz. Görüntüyü kareli kâğıtta kareleri sayarak çizeceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda simetri, dik açı ve kareli kâğıtta kare saymak işimize yarayacak. Hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Doğruya göre simetri", "sinif": "Önceki yıllar", "svg": svg2_h_simetri(),
+                 "anlatim": "Bir şekli bir doğru boyunca katladığımızda iki yarısı tam üst üste geliyorsa şekil o doğruya göre simetriktir.",
+                 "akilda": "Katla, üst üste gelsin",
+                 "ornek": {"problem": "Kâğıttan bir kelebeği gövdesinden katlıyoruz. Sol kanat sağ kanadın tam üstüne geliyor. Kelebek simetrik mi?", "adimlar": [
+                     {"metin": "Katlama çizgisini bul.", "islem": "gövde"},
+                     {"metin": "İki yarı tam üst üste geldi mi?", "islem": "Evet → simetrik"}]},
+                 "sorular": [
+                     S("Hangi harf dikey bir doğruya göre simetriktir?", ["A", "F", "G"], 0,
+                       "Harfi ortasından dikey katladığını düşün.", "A harfini ortasından dikey katlarsan iki yarısı üst üste gelir. F ve G'de gelmez."),
+                     S("Bir kâğıdı bir çizgiden katladın, iki yarısı üst üste gelmedi. Hangisi doğrudur?",
+                       ["Bu çizgi şeklin simetri doğrusu değildir.", "Şekil kesinlikle bir karedir.", "İki yarı tam olarak aynıdır."], 0,
+                       "Simetri için iki yarı ne yapmalı?", "İki yarı üst üste gelmiyorsa katlama çizgisi simetri doğrusu değildir.")]},
+                {"ad": "Dik açı", "sinif": "Önceki yıllar", "svg": svg4_h_dik(),
+                 "anlatim": "Karenin köşesindeki gibi 90 derecelik açıya dik açı denir. Birbirini dik açıyla kesen doğrulara dik doğrular denir.",
+                 "akilda": "Karenin köşesi: 90°",
+                 "ornek": {"problem": "Kareli kâğıttaki bir yatay ve bir dikey çizgi birbirini nasıl keser?", "adimlar": [
+                     {"metin": "Bir yatay ve bir dikey çizgi seç.", "islem": "kesişiyorlar"},
+                     {"metin": "Köşedeki açı bir karenin köşesi gibi.", "islem": "90° → dik keserler"}]},
+                 "sorular": [
+                     G("Dik açı kaç derecedir?", "90", "Karenin köşesini düşün.", "Dik açı 90 derecedir.", birim="°",
+                       yardim={"adimlar": ["Karenin bir köşesine bak.", "Bu açının ölçüsünü hatırla."]}),
+                     S("Hangisinde iki çizgi birbirine diktir?",
+                       ["Kareli kâğıttaki bir yatay ve bir dikey çizgi", "Kareli kâğıttaki iki yatay çizgi", "Eşkenar üçgenin iki kenarı"], 0,
+                       "Hangisi karenin köşesi gibi kesişir?", "Yatay ve dikey çizgiler 90°'lik açıyla kesişir.")]},
+                {"ad": "Kareli kâğıtta kare sayma", "sinif": "Önceki yıllar", "svg": svg4_h_kare(),
+                 "anlatim": "Kareli kâğıtta bir noktanın dikey bir çizgiye uzaklığını bulmak için noktadan çizgiye kadar yatay gider, kare kenarlarını sayarız.",
+                 "akilda": "Çizgiye kadar kareleri say",
+                 "ornek": {"problem": "A noktası dikey çizgiye kaç kare uzakta?", "svg": gs_tek_nokta(3),
+                           "adimlar": [
+                               {"metin": "A'dan başla, çizgiye doğru yatay git.", "islem": "1, 2, 3"},
+                               {"metin": "Çizgiye vardın.", "islem": "3 kare"}]},
+                 "sorular": [
+                     G("A noktası dikey çizgiden kaç kare uzaktadır?", "4", "A'dan çizgiye kadar yatay say.", "A ile çizgi arasında 4 kare var.", svg=gs_tek_nokta(4),
+                       yardim={"adimlar": ["Parmağını A'ya koy.", "Çizgiye doğru yatay git, her kareyi say."]}),
+                     G("A noktası dikey çizgiden kaç kare uzaktadır?", "2", "A'dan çizgiye kadar yatay say.", "A ile çizgi arasında 2 kare var.", svg=gs_tek_nokta(2, "sag"),
+                       yardim={"adimlar": ["Parmağını A'ya koy.", "Çizgiye doğru yatay git, her kareyi say."]})]}
+            ]},
+        "kavramlar": [
+            {"ad": "Simetri Doğrusu", "renk": "#b7791f", "svg": svg4_simetri(),
+             "aciklama": "Bir şekli iki parçaya ayıran ve katlayınca iki parçayı tam üst üste getiren doğruya simetri doğrusu denir. (s. 203)",
+             "ek": "Harflerde, sayılarda, logolarda ve doğadaki birçok canlıda simetri doğrusu görebiliriz. (s. 203)",
+             "akilda": "Katla, üst üste gelsin",
+             "soru": S("Bir şekli simetri doğrusundan katlarsak ne olur?", ["İki parça tam üst üste gelir.", "İki parça farklı boyda kalır.", "Şekil iki kat büyür."], 0,
+                       "Bilgi kartı: katlayınca parçalar ne yapar?", "Simetri doğrusundan katlanan şeklin iki parçası tam üst üste gelir. (s. 203)")},
+            {"ad": "Yansıma Dönüşümü", "renk": "#2364c7", "svg": svg4_ayna(),
+             "aciklama": "Bir noktanın ya da şeklin bir doğruya göre simetrisine, o nokta ya da şeklin yansıma dönüşümü altındaki görüntüsü denir. (s. 204)",
+             "ek": "Aynayı düşün: Nesne aynanın bir yanında, görüntüsü öbür yanında durur. İkisi de aynaya eşit uzaklıktadır. Biz de görüntüyü simetri doğrusunun öbür yanına çizeriz. (s. 203)",
+             "akilda": "Doğrunun öbür yanındaki ikiz",
+             "soru": S("A noktasının bir doğruya göre simetriğine ne denir?", ["A'nın yansıma dönüşümü altındaki görüntüsü", "A'nın köşesi", "A'nın simetri doğrusu"], 0,
+                       "Bilgi kartındaki tanımı oku.", "Bir noktanın doğruya göre simetriği, yansıma dönüşümü altındaki görüntüsüdür. (s. 204)")},
+            {"ad": "Eşit Uzaklık", "renk": "#1f9e8f", "svg": svg4_esit(),
+             "aciklama": "Bir nokta ile görüntüsü simetri doğrusuna eşit uzaklıktadır. Nokta doğrunun 3 kare solundaysa görüntüsü 3 kare sağındadır. (s. 205)",
+             "ek": "Görüntüyü adlandırırken harfin yanına küçük bir çizgi koyarız: A'nın görüntüsü A′ olur, “A üssü” diye okunur.",
+             "akilda": "Kaç kare gittiysen o kadar git",
+             "cozum": {"baslik": "A noktasının görüntüsünü bulalım",
+                       "problem": "A noktası simetri doğrusunun solunda. Görüntüsü A′ noktasını bulalım.",
+                       "svg": gs_tek_nokta(3),
+                       "adimlar": [
+                           {"metin": "A'dan simetri doğrusuna kadar yatay git, kareleri say.", "islem": "3 kare"},
+                           {"metin": "Doğrunun öbür yanına geç, aynı yöne 3 kare daha say.", "islem": "3 kare sağa"},
+                           {"metin": "Oraya A′ noktasını koy.", "islem": "A′", "svg": gs_tek_nokta(3, goster=True)}],
+                       "sonuc": "A ile A′ simetri doğrusuna eşit uzaklıkta: ikisi de 3 kare. (s. 205)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "B noktası simetri doğrusunun sağında. B′ noktasını bulalım.",
+                       "svg": gs_tek_nokta(2, "sag", ad="B"),
+                       "adimlar": [
+                           {"metin": "B'den doğruya kadar kareleri say.",
+                            "soru": G("B simetri doğrusundan kaç kare uzakta?", "2", "B'den çizgiye kadar yatay say.", "B ile doğru arasında 2 kare var.",
+                                      yardim={"adimlar": ["Parmağını B'ye koy.", "Doğruya doğru yatay git, kareleri say."]}),
+                            "islem": "2 kare"},
+                           {"metin": "Doğrunun öbür yanına geç.",
+                            "soru": S("B′ nerede olur?", ["Doğrunun 2 kare solunda", "Doğrunun 2 kare sağında", "Doğrunun 4 kare solunda"], 0,
+                                      "Görüntü doğrunun öbür yanında, aynı uzaklıkta.", "B sağda 2 kare uzakta; B′ solda 2 kare uzakta olur."),
+                            "islem": "B′: 2 kare solda", "svg": gs_tek_nokta(2, "sag", True, "B")}],
+                       "sonuc": "Harika! B ile B′ doğruya eşit uzaklıkta."},
+             "soru": G("C noktası simetri doğrusunun 5 kare solunda. C′ doğrunun kaç kare sağında olur?", "5", "Bilgi kartı: kaç kare gittiysen o kadar git.",
+                       "Nokta ile görüntüsü doğruya eşit uzaklıkta: 5 kare. (s. 205)",
+                       yardim={"adimlar": ["C doğruya kaç kare uzakta? Soruda yazıyor.", "Görüntü öbür yanda aynı uzaklıkta olur."]})},
+            {"ad": "Dik Ortalar", "renk": "#7b4fc9", "svg": svg4_dik(),
+             "aciklama": "Simetri doğrusu, bir nokta ile görüntüsünü birleştiren doğru parçasını dik ortalar: Parçayı dik keser ve iki eş parçaya ayırır. (s. 205)",
+             "ek": "Bu yüzden simetri doğrusu dikeyse nokta ile görüntüsü aynı yatay hizada durur; yukarı ya da aşağı kaymaz. (s. 205)",
+             "akilda": "Dik keser, tam ortadan",
+             "cozum": {"baslik": "Hangi noktalar birbirinin görüntüsü?",
+                       "problem": "Yeşil noktalar doğrunun solunda, turuncu noktalar sağında. Hangi çift birbirinin görüntüsüdür?",
+                       "svg": gs_cift_kontrol(),
+                       "adimlar": [
+                           {"metin": "A ile K: uzaklıklar 2 ve 2, ikisi aynı hizada.", "islem": "K, A'nın görüntüsü ✓"},
+                           {"metin": "B ile L: uzaklıklar 3 ve 2.", "islem": "eşit değil ✗"},
+                           {"metin": "C ile M: uzaklıklar 1 ve 1 ama M bir kare aşağıda.", "islem": "aynı hizada değil ✗"}],
+                       "sonuc": "Bir nokta ile görüntüsü hem doğruya eşit uzaklıkta hem de aynı hizada olmalı. Kitaptaki örnekte de bazı çiftler bu yüzden görüntü değildir. (s. 205)"},
+             "soru": S("Görselde A noktasının görüntüsü hangi numaralı noktadır?", ["1", "2", "3"], 0,
+                       "Eşit uzak mı? Aynı hizada mı? İkisine de bak.", "1: doğruya 3 kare uzakta ve A ile aynı hizada. 2 aşağı kaymış, 3 bir kare fazla uzakta.", svg=gs_nokta_aday("d"))},
+            {"ad": "Köşe Köşe Yansıt", "renk": "#2f8f73", "svg": svg4_kose(),
+             "aciklama": "Bir çokgenin görüntüsünü çizmek için her köşenin görüntüsünü buluruz, sonra bu noktaları sırayla birleştiririz. (s. 204)",
+             "ek": "Köşeler yerine kenarların üzerindeki başka noktaları da kullanabiliriz; yeter ki her noktanın görüntüsünü doğru bulalım. (s. 210)",
+             "akilda": "Önce köşeler, sonra birleştir",
+             "cozum": {"baslik": "ABC üçgeninin görüntüsü",
+                       "problem": "ABC üçgeninin dikey simetri doğrusuna göre görüntüsünü çizelim.",
+                       "svg": gs_ucgen_yans(0),
+                       "adimlar": [
+                           {"metin": "A doğruya 4 kare uzakta. Öbür yana 4 kare say.", "islem": "A′", "svg": gs_ucgen_yans(1)},
+                           {"metin": "B doğruya 1 kare uzakta. Öbür yana 1 kare say.", "islem": "B′", "svg": gs_ucgen_yans(2)},
+                           {"metin": "C doğruya 4 kare uzakta. Öbür yana 4 kare say.", "islem": "C′", "svg": gs_ucgen_yans(3)},
+                           {"metin": "A′, B′ ve C′ noktalarını sırayla birleştir.", "islem": "A′B′C′ üçgeni", "svg": gs_ucgen_yans(4)}],
+                       "sonuc": "ABC üçgeninin görüntüsü A′B′C′ üçgeni oldu. (s. 204)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "ABCD dikdörtgeninin yatay simetri doğrusuna göre görüntüsünü çizelim.",
+                       "svg": gs_kare_yans(0),
+                       "adimlar": [
+                           {"metin": "D köşesinden aşağı, doğruya kadar kareleri say.",
+                            "soru": G("D köşesi simetri doğrusunun kaç kare üstünde?", "1", "D'den doğruya kadar dikey say.", "D ile doğru arasında 1 kare var.",
+                                      yardim={"adimlar": ["Parmağını D'ye koy.", "Doğruya doğru aşağı in, kareleri say."]}),
+                            "islem": "D′: doğrunun 1 kare altında", "svg": gs_kare_yans(1)},
+                           {"metin": "Öbür köşeleri de aynı yolla yansıt.",
+                            "soru": S("Bütün köşeleri bulunca ne yaparsın?", ["Bulduğum noktaları sırayla birleştiririm.", "Noktaları rastgele birleştiririm.", "Şekli aynı yere tekrar çizerim."], 0,
+                                      "Bilgi kartı: önce köşeler, sonra …", "Köşelerin görüntüleri sırayla birleştirilir."),
+                            "islem": "A′B′C′D′ dikdörtgeni", "svg": gs_kare_yans(2)}],
+                       "sonuc": "Harika! Görüntü de bir dikdörtgen ve doğrunun altında."},
+             "soru": S("Bir üçgenin görüntüsünü çizerken en az kaç noktanın görüntüsünü bulmalıyız?", ["1", "3", "6"], 1,
+                       "Üçgenin kaç köşesi var?", "Üçgenin 3 köşesi var; 3 köşenin görüntüsünü bulup birleştiririz. (s. 204)")},
+            {"ad": "Şekil ve Görüntü Eştir", "renk": "#c2255c", "svg": svg4_es(),
+             "aciklama": "Bir şekil ile yansıma dönüşümü altındaki görüntüsü eştir: Kenar uzunlukları ve açıları aynıdır. (s. 205)",
+             "ek": "Yalnızca yönü ters döner: Şeklin sağında olan parça görüntüde solda görünür. Aynadaki yazının ters görünmesi de bu yüzdendir. (s. 203)",
+             "akilda": "Aynı boy, ters yön",
+             "soru": G("Bir kenarı 4 cm olan karenin görüntüsünde bu kenar kaç cm olur?", "4", "Bilgi kartı: şekil ile görüntüsü eştir.",
+                       "Görüntü şekle eştir; kenar yine 4 cm. (s. 205)", birim="cm",
+                       yardim={"adimlar": ["Yansıma şeklin boyunu değiştirir mi?", "Eş şekillerde kenarlar aynı uzunluktadır."]})},
+            {"ad": "Simetri Aynası ve Asetat", "renk": "#d9480f", "svg": svg4_arac(),
+             "aciklama": "Çizdiğimiz görüntünün doğru olup olmadığını simetri aynası ya da asetat kâğıdıyla kontrol ederiz. (s. 204)",
+             "ek": "Simetri aynası simetri doğrusunun üzerine konur; aynada görünen şekil çizdiğimiz görüntüyle çakışmalı. Asetat kâğıdına şekil çizilir, kâğıt doğrunun öbür yanına çevrilir. (s. 204)",
+             "akilda": "Çiz, sonra kontrol et",
+             "soru": S("Asetat kâğıdıyla kontrol yaparken kâğıdı nereye çeviririz?", ["Simetri doğrusunun öbür yanına", "Şeklin tam üstüne", "Kâğıdı hiç çevirmeyiz"], 0,
+                       "Bilgi kartında asetatın nasıl kullanıldığını oku.", "Asetat kâğıdı simetri doğrusunun öbür yanına çevrilir. (s. 204)")}
+        ],
+        "gruplar": [{"soru": "Ne işe yarar?", "kutular": [
+            {"etiket": "Temel fikir", "uyeler": ["Simetri Doğrusu", "Yansıma Dönüşümü"]},
+            {"etiket": "Görüntüyü bulma kuralı", "uyeler": ["Eşit Uzaklık", "Dik Ortalar", "Köşe Köşe Yansıt"]},
+            {"etiket": "Sonuç ve kontrol", "uyeler": ["Şekil ve Görüntü Eştir", "Simetri Aynası ve Asetat"]}]}],
+        "akildaKalsin": [
+            "Simetri doğrusundan katlanan şeklin iki parçası tam üst üste gelir.",
+            "Bir noktanın doğruya göre simetriği, yansıma dönüşümü altındaki görüntüsüdür.",
+            "Nokta ile görüntüsü simetri doğrusuna eşit uzaklıktadır.",
+            "Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı dik ortalar.",
+            "Çokgenin görüntüsü için önce köşeleri yansıt, sonra birleştir.",
+            "Şekil ile görüntüsü eştir; yalnızca yönü ters döner."],
+        "merakKutusu": [
+            {"soru": "Aynadaki yazı neden ters görünür?", "cevap": "Ayna bir yansıma gibi çalışır: Görüntü nesneye eştir ama yönü ters döner. Sağdaki harf solda görünür. (s. 203)"},
+            {"soru": "Nokta simetri doğrusunun tam üstündeyse görüntüsü nerede olur?", "cevap": "Doğruya uzaklığı 0 kare. Görüntüsü de 0 kare uzakta olur, yani kendisiyle aynı yerdedir."},
+            {"soru": "Simetri aynası nasıl bir şeydir?", "cevap": "Simetri doğrusunun üzerine dik olarak konan küçük bir aynadır. Aynaya bakınca şeklin görüntüsünü doğrunun öbür yanında görürsün. (s. 204)"},
+            {"soru": "Köşe yerine başka noktalar kullanabilir miyim?", "cevap": "Evet. Kenarların üzerinde istediğin noktaları seçip yansıtabilirsin. Her noktanın görüntüsünü doğru bulursan görüntü yine doğru çıkar. (s. 210)"},
+            {"soru": "Görüntü neden şekle eştir?", "cevap": "Çünkü her nokta doğrunun öbür yanına aynı uzaklıkta taşınır. Hiçbir kenar uzamaz ya da kısalmaz. (s. 205)"}],
+        "dusunVeYaz": [{"soru": "Arkadaşın bir üçgenin görüntüsünü çizdi ama bir köşenin görüntüsü simetri doğrusuna daha yakın çıktı. Hatayı nasıl bulur ve düzeltirsin?",
+                        "ornekCevap": "Her köşenin simetri doğrusuna uzaklığını kareleri sayarak kontrol ederim. Görüntüsü daha yakın çıkan köşe yanlış yerde. Doğrunun öbür yanında aynı sayıda kare sayıp köşeyi doğru yere taşırım. Sonra simetri aynasıyla kontrol ederim.",
+                        "anahtarlar": ["uzaklı", "kare", "say", "eşit", "ayna"]}],
+        "sorular": [
+            S("Görseldeki hangi şekilde kesikli çizgi bir simetri doğrusudur?", ["1", "2", "3"], 2,
+              "Her şekli kesikli çizgiden katladığını düşün.", "Yalnız ikizkenar üçgen (3) kesikli çizgiden katlanınca iki yarısı üst üste gelir. (s. 203)",
+              svg=gs_hangi_dogru(("kos", "cesit", "ikiz")), kavram="Simetri Doğrusu"),
+            G("A′ noktası simetri doğrusunun kaç kare sağında olur?", "4", "Önce A'nın doğruya uzaklığını say.",
+              "A doğrunun 4 kare solunda; A′ 4 kare sağında olur. (s. 205)", svg=gs_tek_nokta(4), kavram="Eşit Uzaklık",
+              yardim={"adimlar": ["A'dan doğruya kadar kareleri say.", "Görüntü öbür yanda aynı uzaklıkta olur."]}),
+            S("Görselde B noktasının yatay doğruya göre görüntüsü hangi numaralı noktadır?", ["1", "2", "3"], 0,
+              "Eşit uzak mı? Aynı dikey hizada mı?", "B doğrunun 2 kare üstünde; 1 numara 2 kare altında ve aynı hizada. (s. 205)",
+              svg=gs_nokta_aday("y"), kavram="Dik Ortalar"),
+            S("Simetri doğrusu, bir nokta ile görüntüsünü birleştiren doğru parçasını nasıl keser?",
+              ["Dik keser ve tam ortadan böler.", "Eğik keser ve tam ortadan böler.", "Dik keser ama ortadan bölmez."], 0,
+              "Dik ortalar ne demek?", "Simetri doğrusu bu parçayı dik ortalar. (s. 205)", kavram="Dik Ortalar"),
+            G("Bir üçgenin kenarları 3 cm, 4 cm ve 5 cm. Görüntüsünün en uzun kenarı kaç cm olur?", "5", "Şekil ile görüntüsü eştir.",
+              "Görüntü üçgene eştir; en uzun kenarı yine 5 cm. (s. 205)", birim="cm", kavram="Şekil ve Görüntü Eştir",
+              yardim={"adimlar": ["Yansıma kenarların uzunluğunu değiştirir mi?", "Üçgenin en uzun kenarını bul."]}),
+            S("Bir dörtgenin görüntüsünü çizmek için önce ne yaparız?", ["Her köşenin görüntüsünü buluruz.", "Dörtgeni boyarız.", "Simetri doğrusunu sileriz."], 0,
+              "Önce köşeler, sonra …", "Önce köşelerin görüntüsünü bulur, sonra birleştiririz. (s. 204)", kavram="Köşe Köşe Yansıt"),
+            S("C noktası simetri doğrusunun tam üzerinde. C′ nerededir?", ["C ile aynı yerde", "Doğrunun 1 kare sağında", "Doğrunun 1 kare solunda"], 0,
+              "C'nin doğruya uzaklığı kaç kare?", "C doğruya 0 kare uzakta; görüntüsü de 0 kare uzakta, yani C ile aynı yerde. (s. 205)", kavram="Eşit Uzaklık"),
+            S("Çizimini kontrol etmek için simetri aynasını nereye koyarız?", ["Simetri doğrusunun üzerine", "Şeklin en uzak köşesine", "Kâğıdın arkasına"], 0,
+              "Ayna şekille görüntünün arasında durmalı.", "Simetri aynası simetri doğrusunun üzerine konur. (s. 204)", kavram="Simetri Aynası ve Asetat"),
+            G("Ayna önündeki bir oyuncak aynaya 20 cm uzakta. Görüntüsü aynaya kaç cm uzakta görünür?", "20", "Nesne ve görüntüsü aynaya eşit uzaklıkta.",
+              "Görüntü de aynaya 20 cm uzakta görünür. (s. 203)", birim="cm", kavram="Yansıma Dönüşümü",
+              yardim={"adimlar": ["Ayna simetri doğrusu gibidir.", "Görüntü aynanın öbür yanında, aynı uzaklıktadır."]}),
+            S("Yeşil bayrağın görüntüsünde bayrak hangi yönü gösterir?", ["Ters yönü", "Aynı yönü", "Yukarıyı"], 0,
+              "Şekil ile görüntüsü eştir ama yönü …", "Yansımada şekil eş kalır, yönü ters döner. (s. 203, 205)", kavram="Şekil ve Görüntü Eştir",
+              svg=k4(10, 5, 22, lambda k: k.dikey(5) + k.parca((2, 1), (2, 4), SEK, 3) + k.cokgen([(2, 1), (4, 1.6), (2, 2.2)], SEK)))]
+    })
+
+
+def u4k2():
+    return sik_dagit({
+        "id": "u4k2", "unite": T4, "baslik": "Simetri Doğrularını Bulma", "sayfalar": "s. 205–209",
+        "giris": "Bazı şekillerin bir simetri doğrusu vardır, bazılarının birden çok, bazılarının hiç yoktur. Bu konuda şekillerin simetri doğrularını bulacağız. İki eş şeklin arasında gizli bir simetri doğrusu olup olmadığını da araştıracağız.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda üçgen ve dörtgen çeşitleri ile bir önceki konudaki yansıma kuralı işimize yarayacak. Hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Üçgen çeşitleri", "sinif": "Önceki yıllar", "svg": svg4_h_ucgen(),
+                 "anlatim": "Kenarlarına göre üçgenler üçe ayrılır: Üç kenarı eş olan eşkenar, iki kenarı eş olan ikizkenar, hiçbir kenarı eş olmayan çeşitkenar üçgendir.",
+                 "akilda": "3 eş, 2 eş, hiç eş yok",
+                 "ornek": {"problem": "Kenarları 5 cm, 5 cm ve 3 cm olan üçgen hangisidir?", "adimlar": [
+                     {"metin": "Eş kenarları say.", "islem": "5 = 5 → 2 eş kenar"},
+                     {"metin": "İki kenarı eş olan üçgen hangisiydi?", "islem": "ikizkenar üçgen"}]},
+                 "sorular": [
+                     S("Kenarları 4 cm, 6 cm ve 7 cm olan üçgen hangisidir?", ["Eşkenar", "İkizkenar", "Çeşitkenar"], 2,
+                       "Eş kenar var mı?", "Hiçbir kenar eş değil: çeşitkenar üçgen."),
+                     S("Üç kenarı da 6 cm olan üçgen hangisidir?", ["Eşkenar", "İkizkenar", "Çeşitkenar"], 0,
+                       "Kaç kenar eş?", "Üç kenarı eş: eşkenar üçgen.")]},
+                {"ad": "Dörtgenler", "sinif": "Önceki yıllar", "svg": svg4_h_dortgen(),
+                 "anlatim": "Karenin dört kenarı eş, dört açısı dik. Dikdörtgenin karşılıklı kenarları eş, dört açısı dik. Eşkenar dörtgenin dört kenarı eş. Paralelkenarın karşılıklı kenarları paralel ve eştir.",
+                 "akilda": "Kare: hepsi eş, hepsi dik",
+                 "ornek": {"problem": "Dört kenarı eş ama açıları dik olmayan dörtgen hangisidir?", "adimlar": [
+                     {"metin": "Dört kenarı eş olanlar: kare ve eşkenar dörtgen.", "islem": "kare · eşkenar dörtgen"},
+                     {"metin": "Karenin açıları dik; bu yüzden kare olamaz.", "islem": "eşkenar dörtgen"}]},
+                 "sorular": [
+                     S("Dört açısı dik, yalnız karşılıklı kenarları eş olan dörtgen hangisidir?", ["Kare", "Dikdörtgen", "Eşkenar dörtgen"], 1,
+                       "Açıları dik olan iki dörtgen var. Hangisinde yalnız karşılıklı kenarlar eş?", "Dikdörtgenin dört açısı dik, karşılıklı kenarları eştir."),
+                     S("Dört kenarı da eş ve dört açısı da dik olan dörtgen hangisidir?", ["Kare", "Paralelkenar", "Dikdörtgen"], 0,
+                       "Hem kenarlar hem açılar …", "Kare: dört kenarı eş, dört açısı dik.")]},
+                {"ad": "Yansıma kuralı", "sinif": "Konu 1", "svg": svg4_esit(),
+                 "anlatim": "Bir nokta ile görüntüsü simetri doğrusuna eşit uzaklıktadır. Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı dik ortalar. (s. 205)",
+                 "akilda": "Eşit uzak, dik ortalar",
+                 "ornek": {"problem": "A noktası simetri doğrusunun 3 kare solunda. A′ nerede?", "svg": gs_tek_nokta(3, goster=True),
+                           "adimlar": [
+                               {"metin": "A doğruya 3 kare uzakta.", "islem": "3 kare"},
+                               {"metin": "Öbür yanda aynı uzaklığa git.", "islem": "A′: 3 kare sağda"}]},
+                 "sorular": [
+                     G("A noktası simetri doğrusunun 3 kare solunda. A′ doğrunun kaç kare sağındadır?", "3", "Kaç kare gittiysen o kadar git.",
+                       "Nokta ile görüntüsü doğruya eşit uzaklıkta: 3 kare. (s. 205)",
+                       yardim={"adimlar": ["A doğruya kaç kare uzakta? Soruda yazıyor.", "Görüntü öbür yanda aynı uzaklıkta olur."]}),
+                     S("Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı nasıl keser?", ["Dik keser, tam ortadan böler.", "Eğik keser.", "Hiç kesmez."], 0,
+                       "Dik ortalar ne demekti?", "Simetri doğrusu bu parçayı dik ortalar. (s. 205)")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Simetrik Şekil", "renk": "#1f9e8f", "svg": svg4_ikizkenar(),
+             "aciklama": "Bir şekil bir doğruyla ikiye ayrıldığında iki parça birbirinin görüntüsüyse şekil simetriktir. O doğru şeklin simetri doğrusudur. (s. 205)",
+             "ek": "İkizkenar üçgen, düzgün beşgen ve yarım daire simetrik şekillerdir. İkizkenar üçgenin simetri doğrusu tepe köşesinden geçer ve tabanı dik ortalar. (s. 205)",
+             "akilda": "İki yarı birbirinin görüntüsü",
+             "cozum": {"baslik": "İkizkenar üçgenin simetri doğrusu",
+                       "problem": "İkizkenar üçgenin simetri doğrusunu bulalım.", "svg": gs_ikiz_simetri(0),
+                       "adimlar": [
+                           {"metin": "Eş kenarların birleştiği tepe köşesini bul.", "islem": "tepe köşesi", "svg": gs_ikiz_simetri(1)},
+                           {"metin": "Tabanın orta noktasını bul.", "islem": "taban ikiye bölündü", "svg": gs_ikiz_simetri(2)},
+                           {"metin": "Tepe köşesini tabanın orta noktasıyla birleştir.", "islem": "simetri doğrusu", "svg": gs_ikiz_simetri(3)}],
+                       "sonuc": "Bu doğrudan katlayınca iki yarı tam üst üste gelir. Doğru tabanı dik ortalar. (s. 205)"},
+             "soru": S("Hangisi simetrik bir şekildir?", ["Yarım daire", "Çeşitkenar üçgen", "Paralelkenar"], 0,
+                       "Bilgi kartındaki simetrik şekillere bak.", "Yarım daire ortasından katlanınca iki yarısı üst üste gelir. (s. 205)")},
+            {"ad": "Birden Çok Simetri Doğrusu", "renk": "#2364c7", "svg": svg4_kare4(),
+             "aciklama": "Bazı şekillerin birden fazla simetri doğrusu vardır. Karenin 4, dikdörtgenin 2, eşkenar üçgenin 3, düzgün beşgenin 5 simetri doğrusu vardır. (s. 205)",
+             "ek": "Düzgün çokgenlerde simetri doğrusu sayısı kenar sayısına eşittir: düzgün beşgenin 5 kenarı, 5 simetri doğrusu var.",
+             "akilda": "Düzgün çokgen: kenar sayısı kadar",
+             "cozum": {"baslik": "Karenin simetri doğruları",
+                       "problem": "Karenin kaç simetri doğrusu var?", "svg": gs_kare_simetri(0),
+                       "adimlar": [
+                           {"metin": "Karşılıklı kenarların orta noktalarını birleştir.", "islem": "2 doğru", "svg": gs_kare_simetri(1)},
+                           {"metin": "Karşılıklı köşeleri birleştir (köşegenler).", "islem": "2 doğru daha", "svg": gs_kare_simetri(2)},
+                           {"metin": "Hepsini topla.", "islem": "2 + 2 = 4"}],
+                       "sonuc": "Karenin 4 simetri doğrusu var. Her birinden katlayınca iki yarı üst üste gelir."},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Uzun kenarı kısa kenarından büyük bir dikdörtgenin kaç simetri doğrusu var?",
+                       "svg": gs_dikdortgen_kosegen(),
+                       "adimlar": [
+                           {"metin": "Karşılıklı kenarların ortalarını birleştir.",
+                            "soru": S("Bu yolla kaç simetri doğrusu çizilir?", ["2", "1", "4"], 0,
+                                      "Bir dikey, bir yatay …", "Biri dikey, biri yatay: 2 simetri doğrusu."),
+                            "islem": "2 doğru"},
+                           {"metin": "Görseldeki köşegene bak.",
+                            "soru": S("Bu dikdörtgenin köşegeni simetri doğrusu mudur?", ["Hayır, katlayınca köşeler üst üste gelmez.", "Evet, her köşegen simetri doğrusudur.", "Evet, çünkü iki parça eştir."], 0,
+                                      "Köşegenden katladığını düşün.", "İki parça eş ama katlayınca üst üste gelmez; köşegen simetri doğrusu değildir."),
+                            "islem": "köşegen değil → toplam 2"}],
+                       "sonuc": "Harika! Dikdörtgenin 2 simetri doğrusu var."},
+             "soru": G("Eşkenar üçgenin kaç simetri doğrusu vardır?", "3", "Bilgi kartındaki sayıları oku.",
+                       "Eşkenar üçgenin her köşesinden bir simetri doğrusu geçer: 3. (s. 205)",
+                       yardim={"adimlar": ["Eşkenar üçgen düzgün bir çokgendir.", "Düzgün çokgende simetri doğrusu sayısı kenar sayısı kadardır."]})},
+            {"ad": "Simetri Doğrusu Olmayan Şekiller", "renk": "#c2255c", "svg": svg4_yok(),
+             "aciklama": "Bazı şekillerin hiç simetri doğrusu yoktur. Çeşitkenar üçgen ve paralelkenar simetrik değildir. (s. 205)",
+             "ek": "Paralelkenarı köşegeninden kesersen iki parça eş olur ama katlayınca üst üste gelmez. Simetri için eş olmak yetmez; parçalar katlayınca çakışmalı.",
+             "akilda": "Eş parça yetmez, çakışmalı",
+             "soru": S("Hangisinin simetri doğrusu yoktur?", ["Kare", "Çeşitkenar üçgen", "İkizkenar üçgen"], 1,
+                       "Bilgi kartındaki iki şekli hatırla.", "Çeşitkenar üçgenin hiçbir kenarı eş değil; simetri doğrusu yoktur. (s. 205)")},
+            {"ad": "Gizli Simetri Doğrusu", "renk": "#7b4fc9", "svg": svg4_gizli(),
+             "aciklama": "İki eş şekil bir doğruya göre simetrik olabilir. Anlamak için karşılıklı noktaları birleştiririz: Parçalar birbirine paralel olmalı ve hepsinin orta noktası aynı doğru üzerinde olmalı. (s. 206)",
+             "ek": "Orta noktalardan geçen doğru gizli simetri doğrusudur. Parçalar paralel değilse eş şekiller simetrik değildir; şekil kaydırılmış ya da döndürülmüş olabilir. (s. 205, 206)",
+             "akilda": "Paralel parçalar, ortalar tek doğruda",
+             "cozum": {"baslik": "Gizli simetri doğrusunu bulalım",
+                       "problem": "Yeşil ve turuncu üçgenler eş. Aralarında bir simetri doğrusu var mı?", "svg": gs_gizli(0),
+                       "adimlar": [
+                           {"metin": "Karşılıklı köşeleri birleştir: A–A′, B–B′, C–C′.", "islem": "3 parça", "svg": gs_gizli(1)},
+                           {"metin": "Parçalar birbirine paralel mi?", "islem": "hepsi yatay → paralel ✓"},
+                           {"metin": "Her parçanın orta noktasını işaretle.", "islem": "orta noktalar aynı dikey doğruda ✓", "svg": gs_gizli(3)},
+                           {"metin": "Orta noktalardan geçen doğruyu çiz.", "islem": "gizli simetri doğrusu", "svg": gs_gizli(4)}],
+                       "sonuc": "Simetri doğrusu her parçayı dik ortalıyor. İki üçgen bu doğruya göre simetrik. (s. 205, 206)"},
+             "soru": S("İki eş üçgenin karşılıklı köşelerini birleştiren parçalar birbirine paralel değil. Hangisi doğrudur?",
+                       ["Üçgenler bir doğruya göre simetrik değildir.", "Üçgenler kesinlikle simetriktir.", "Üçgenler eş değildir."], 0,
+                       "Bilgi kartı: parçalar nasıl olmalıydı?", "Simetrik olsalardı parçalar paralel olurdu. (s. 206)")},
+            {"ad": "Kenara Göre Yansıtma", "renk": "#2f8f73", "svg": svg4_kenar(),
+             "aciklama": "Bir üçgeni bir kenarına göre yansıtırsak üçgen ile görüntüsü birleşir ve yeni bir çokgen oluşur. (s. 208)",
+             "ek": "Dik üçgeni dik kenarına göre yansıtınca ikizkenar üçgen, ikizkenar dik üçgeni uzun kenarına göre yansıtınca kare, eşkenar üçgeni bir kenarına göre yansıtınca eşkenar dörtgen oluşur. (s. 208)",
+             "akilda": "Üçgen + görüntüsü = yeni şekil",
+             "cozum": {"baslik": "Dik üçgeni dik kenarına göre yansıtalım",
+                       "problem": "ABC dik üçgenini AB kenarına göre yansıtalım. Hangi şekil oluşur?", "svg": gs_kenar_yans(0),
+                       "adimlar": [
+                           {"metin": "Yansıtacağın kenar simetri doğrusu olur.", "islem": "AB kenarı"},
+                           {"metin": "A ve B doğrunun üzerinde; görüntüleri kendileri. Yalnız C'yi yansıt.", "islem": "C → C′", "svg": gs_kenar_yans(2)},
+                           {"metin": "Yeni şekle bak: Kaç kenarı var, hangi kenarlar eş?", "islem": "3 kenar, AC = AC′ → ikizkenar üçgen"}],
+                       "sonuc": "Dik üçgen ile görüntüsü birlikte ikizkenar bir üçgen oluşturdu. (s. 208)"},
+             "soru": S("Eşkenar üçgen bir kenarına göre yansıtılırsa nasıl bir dörtgen oluşur?", ["Eşkenar dörtgen", "Dikdörtgen", "Kare"], 0,
+                       "Bütün kenarlar eşit kalır ama açılar dik değil.", "Dört kenarı eş, açıları dik olmayan dörtgen: eşkenar dörtgen. (s. 208)")},
+            {"ad": "Hayatta Simetri", "renk": "#d9480f", "svg": svg4_kelebek(),
+             "aciklama": "Simetri gerçek hayatta denge ve güzellik sağlar: kilim ve halı desenlerinde, cami ve köprülerde, kelebek kanatlarında, kar tanelerinde, uçak kanatlarında. (s. 207)",
+             "ek": "Hayat ağacı motifi uzun ömürlülüğü, dayanıklılığı, iyiliği ve güzelliği temsil eder. Birçok ülkenin bayrağında da simetrik şekiller vardır. (s. 207, 209)",
+             "akilda": "Kilimde, kelebekte, bayrakta",
+             "soru": S("Uçak kanatlarının simetrik yapılması neden önemlidir?", ["Denge ve güvenlik için", "Daha çok renk kullanmak için", "Uçağı ağırlaştırmak için"], 0,
+                       "Bilgi kartı: simetri ne sağlar?", "Simetri denge, verimlilik ve güvenlik sağlar. (s. 207)")}
+        ],
+        "gruplar": [{"soru": "Ne inceliyor?", "kutular": [
+            {"etiket": "Tek şeklin simetrisi", "uyeler": ["Simetrik Şekil", "Birden Çok Simetri Doğrusu", "Simetri Doğrusu Olmayan Şekiller"]},
+            {"etiket": "İki şekil birlikte", "uyeler": ["Gizli Simetri Doğrusu", "Kenara Göre Yansıtma"]},
+            {"etiket": "Günlük hayat", "uyeler": ["Hayatta Simetri"]}]}],
+        "akildaKalsin": [
+            "Simetrik şeklin iki parçası birbirinin görüntüsüdür.",
+            "Karenin 4, dikdörtgenin 2, eşkenar üçgenin 3, düzgün beşgenin 5 simetri doğrusu vardır.",
+            "Çeşitkenar üçgenin ve paralelkenarın simetri doğrusu yoktur.",
+            "Gizli simetri doğrusu için karşılıklı noktaları birleştir: parçalar paralel, ortalar tek doğruda olmalı.",
+            "Üçgeni bir kenarına göre yansıtınca yeni bir çokgen oluşur.",
+            "Simetri kilimlerde, yapılarda, doğada ve bayraklarda denge sağlar."],
+        "merakKutusu": [
+            {"soru": "Dairenin kaç simetri doğrusu var?", "cevap": "Sayısız! Merkezden geçen her doğru daireyi iki eş yarıya ayırır ve katlayınca yarılar üst üste gelir. Yarım dairenin ise yalnız 1 simetri doğrusu vardır. (s. 205)"},
+            {"soru": "Kilim desenleri neden yöreden yöreye değişir?", "cevap": "İnsanlar motiflerle inançlarını, duygularını ve hayatlarını anlatmışlar. Her yörenin kendine özgü motifleri ve anlamları vardır. (s. 207)"},
+            {"soru": "Bayraklarda da simetri var mı?", "cevap": "Evet. Kitaptaki performans görevinde farklı ülkelerin bayraklarındaki simetrik şekilleri bulup simetri doğrularını çizmen isteniyor. (s. 209)"},
+            {"soru": "Eş şekiller her zaman simetrik midir?", "cevap": "Hayır. Eş bir şekil yalnızca kaydırılmış ya da döndürülmüş olabilir. Simetrik olması için karşılıklı noktaları birleştiren parçalar paralel olmalı ve tek bir doğru hepsini dik ortalamalı. (s. 206)"},
+            {"soru": "Doğada başka nerelerde simetri var?", "cevap": "Kelebek kanatlarında, kar tanelerinin düzeninde ve çiçeklerin taç yapraklarında simetrik örüntüler vardır. (s. 207)"}],
+        "dusunVeYaz": [{"soru": "Okulunun bahçesine simetrik bir çiçek tarhı tasarlıyorsun. Hangi şekli seçerdin, kaç simetri doğrusu olurdu? Nedenini yaz.",
+                        "ornekCevap": "Kare bir tarh seçerdim. Karenin 4 simetri doğrusu var: iki köşegen ve kenarların ortalarını birleştiren iki doğru. Böylece çiçekleri her yönden dengeli dizebilirim.",
+                        "anahtarlar": ["simetri", "doğru", "kare", "deng", "eş"]}],
+        "sorular": [
+            G("Karenin kaç simetri doğrusu vardır?", "4", "Kenar ortalarını ve köşeleri birleştiren doğruları say.",
+              "2 kenar ortası doğrusu + 2 köşegen = 4. (s. 205)", kavram="Birden Çok Simetri Doğrusu",
+              yardim={"adimlar": ["Karşılıklı kenarların ortalarını birleştiren doğruları say.", "Köşegenleri de say.", "İkisini topla."]}),
+            S("Görseldeki hangi şekilde kesikli çizgi bir simetri doğrusudur?", ["1", "2", "3"], 1,
+              "Her şekli kesikli çizgiden katladığını düşün.", "Yalnız ikizkenar üçgen (2) katlanınca iki yarısı üst üste gelir. (s. 205)",
+              svg=gs_hangi_dogru(("paralel", "ikiz", "kos")), kavram="Simetrik Şekil"),
+            S("Hangisinin simetri doğrusu yoktur?", ["Paralelkenar", "Dikdörtgen", "Düzgün beşgen"], 0,
+              "Bilgi kartındaki simetrik olmayan iki şekli hatırla.", "Paralelkenar hiçbir doğrudan katlanınca üst üste gelmez. (s. 205)", kavram="Simetri Doğrusu Olmayan Şekiller"),
+            G("Düzgün beşgenin kaç simetri doğrusu vardır?", "5", "Düzgün çokgende simetri doğrusu sayısı kenar sayısı kadar.",
+              "Düzgün beşgenin 5 kenarı, 5 simetri doğrusu var. (s. 205)", kavram="Birden Çok Simetri Doğrusu",
+              yardim={"adimlar": ["Beşgenin kaç kenarı var?", "Düzgün çokgende simetri doğrusu sayısı kenar sayısına eşittir."]}),
+            S("Görseldeki eş üçgenler bir doğruya göre simetrik midir?",
+              ["Hayır; karşılıklı köşeleri birleştiren parçalar paralel değil.", "Evet; üçgenler eş.", "Evet; aralarında boşluk var."], 0,
+              "Kesikli parçalar birbirine paralel mi?", "Parçalar paralel değil; üçgen döndürülmüş, simetrik değil. (s. 206)",
+              svg=gs_paralel_degil(), kavram="Gizli Simetri Doğrusu"),
+            S("Görseldeki eş şekiller arasındaki gizli simetri doğrusu hangi numaralı çizgidir?", ["1", "2", "3"], 1,
+              "Karşılıklı köşelerin tam ortası hangi çizgide?", "Her köşe 2 numaralı çizgiye eşit uzaklıkta; simetri doğrusu 2. (s. 206)",
+              svg=gs_gizli_aday(), kavram="Gizli Simetri Doğrusu"),
+            S("İkizkenar dik üçgeni uzun kenarına göre yansıtırsak hangi şekil oluşur?", ["Kare", "Eşkenar üçgen", "Çeşitkenar üçgen"], 0,
+              "Dört kenar eş, köşeler dik olur.", "Dört kenarın hepsi dik kenarlara eş olur ve dört açı da dik olur: kare. (s. 208)",
+              kavram="Kenara Göre Yansıtma"),
+            G("Uzun kenarı kısa kenarından büyük bir dikdörtgenin kaç simetri doğrusu vardır?", "2", "Köşegenler simetri doğrusu değil.",
+              "Yalnız kenar ortalarını birleştiren 2 doğru. (s. 205)", kavram="Birden Çok Simetri Doğrusu",
+              yardim={"adimlar": ["Karşılıklı kenarların ortalarını birleştiren doğruları say.", "Köşegenden katlayınca köşeler üst üste gelir mi? Düşün."]}),
+            S("Kilim ve halı desenlerinde simetri neden kullanılır?", ["Görsel bütünlük ve denge için", "Kilimi daha kısa yapmak için", "Renkleri azaltmak için"], 0,
+              "Simetri ne sağlar?", "Sanatçılar görsel bütünlük oluşturmak için simetriyi kullanır. (s. 207)", kavram="Hayatta Simetri"),
+            S("İkizkenar üçgenin simetri doğrusu hangisidir?",
+              ["Tepe köşesinden geçip tabanı dik ortalayan doğru", "Tabanın üzerindeki doğru", "Eş kenarlardan birinin üzerindeki doğru"], 0,
+              "Katlayınca iki eş kenar üst üste gelmeli.", "Simetri doğrusu tepe köşesinden geçer ve tabanı dik ortalar. (s. 205)", kavram="Simetrik Şekil")]
+    })
+
+
+def u4k3():
+    return sik_dagit({
+        "id": "u4k3", "unite": T4, "baslik": "Orta Dikme", "sayfalar": "s. 211–213",
+        "giris": "Bir doğru parçasının simetri doğrusunu ölçü almadan, yalnızca pergel ve ölçüsüz cetvelle çizebilir miyiz? Evet! Bu konuda bu doğrunun adını, yani orta dikmeyi öğreneceğiz. Onu adım adım nasıl inşa edeceğimizi de göreceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda orta nokta, çember ile yarıçap ve simetri doğrusunun dik ortalaması işimize yarayacak. Hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Doğru parçası ve orta nokta", "sinif": "Önceki yıllar", "svg": svg4_h_orta(),
+                 "anlatim": "İki nokta arasında kalan düz çizgiye doğru parçası denir; AB diye yazılır. Doğru parçasını iki eş parçaya ayıran noktaya orta nokta denir.",
+                 "akilda": "Orta nokta: iki eş parça",
+                 "ornek": {"problem": "AB doğru parçası 10 cm. Orta noktası A'dan kaç cm uzakta?", "adimlar": [
+                     {"metin": "Orta nokta parçayı iki eş parçaya ayırır.", "islem": "10 ÷ 2"},
+                     {"metin": "Böl.", "islem": "5 cm"}]},
+                 "sorular": [
+                     G("AB doğru parçası 12 cm. Orta noktası A'dan kaç cm uzaktadır?", "6", "Orta nokta parçayı ikiye böler.", "12 ÷ 2 = 6 cm.", birim="cm",
+                       yardim={"adimlar": ["Orta nokta iki eş parça oluşturur.", "12'yi 2'ye böl."]}),
+                     G("8 cm'lik bir doğru parçasının orta noktası iki uca kaçar cm uzaktadır?", "4", "8'i ikiye böl.", "8 ÷ 2 = 4 cm.", birim="cm",
+                       yardim={"adimlar": ["Orta nokta iki eş parça oluşturur.", "8'i 2'ye böl."]})]},
+                {"ad": "Çember ve yarıçap", "sinif": "Önceki yıllar", "svg": svg4_h_cember(),
+                 "anlatim": "Pergelin sivri ucu çemberin merkezine konur. Pergelin iki ucu arasındaki açıklık yarıçaptır. Çemberin her noktası merkeze yarıçap kadar uzaktadır.",
+                 "akilda": "Pergel açıklığı = yarıçap",
+                 "ornek": {"problem": "Pergel 4 cm açıldı. Çizilen çemberin üzerindeki bir nokta merkeze kaç cm uzakta?", "adimlar": [
+                     {"metin": "Pergel açıklığı yarıçaptır.", "islem": "yarıçap 4 cm"},
+                     {"metin": "Çemberin her noktası merkeze yarıçap kadar uzaktır.", "islem": "4 cm"}]},
+                 "sorular": [
+                     G("Pergel 5 cm açılarak bir çember çizildi. Çemberin üzerindeki her nokta merkeze kaç cm uzaktadır?", "5", "Pergel açıklığı = yarıçap.",
+                       "Her nokta merkeze yarıçap kadar, 5 cm uzaktadır.", birim="cm",
+                       yardim={"adimlar": ["Pergelin açıklığı neyi verir?", "Çemberin her noktası merkeze bu kadar uzaktır."]}),
+                     S("Pergelin sivri ucu nereye konur?", ["Çemberin merkezine", "Çemberin üzerine", "Kâğıdın kenarına"], 0,
+                       "Pergel merkezin çevresinde döner.", "Sivri uç merkeze konur, kalemli uç çemberi çizer.")]},
+                {"ad": "Simetri doğrusu dik ortalar", "sinif": "Konu 1", "svg": svg4_dik(),
+                 "anlatim": "Simetri doğrusu, bir nokta ile görüntüsünü birleştiren doğru parçasını dik keser ve iki eş parçaya ayırır.",
+                 "akilda": "Dik keser, tam ortadan",
+                 "ornek": {"problem": "A ile A′ arası 6 kare. Simetri doğrusu A'dan kaç kare uzakta?", "adimlar": [
+                     {"metin": "Simetri doğrusu parçayı tam ortadan böler.", "islem": "6 ÷ 2"},
+                     {"metin": "Böl.", "islem": "3 kare"}]},
+                 "sorular": [
+                     G("A ile görüntüsü A′ arası 8 kare. Simetri doğrusu A'dan kaç kare uzaktadır?", "4", "Simetri doğrusu parçayı tam ortadan böler.",
+                       "8 ÷ 2 = 4 kare.",
+                       yardim={"adimlar": ["Simetri doğrusu AA′ parçasını iki eş parçaya ayırır.", "8'i 2'ye böl."]}),
+                     S("Simetri doğrusu, A ile A′'yü birleştiren parçayı kaç derecelik açıyla keser?", ["90°", "45°", "180°"], 0,
+                       "Dik keser.", "Simetri doğrusu bu parçayı dik, yani 90°'lik açıyla keser.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Orta Dikme", "renk": "#c2255c", "svg": svg4_orta_dikme(),
+             "aciklama": "Bir doğru parçasını dik kesen ve iki eş parçaya ayıran doğruya orta dikme denir. (s. 213)",
+             "ek": "Orta dikme bir doğru, ışın ya da doğru parçası olabilir. Doğru parçasını tam ortasından, 90°'lik açıyla keser. (s. 213)",
+             "akilda": "Dik + tam ortadan",
+             "soru": S("Orta dikme, doğru parçasını nasıl keser?", ["Dik keser ve iki eş parçaya ayırır.", "Eğik keser ve iki eş parçaya ayırır.", "Dik keser ama parçalar farklı uzunluktadır."], 0,
+                       "Adındaki iki kelimeye bak: orta ve dikme.", "Orta dikme parçayı dik keser ve iki eş parçaya ayırır. (s. 213)")},
+            {"ad": "Simetri Doğrusu = Orta Dikme", "renk": "#b7791f", "svg": svg4_parca_simetri(),
+             "aciklama": "Bir doğru parçasının simetri doğrusu aynı zamanda o doğru parçasının orta dikmesidir. (s. 213)",
+             "ek": "AB ile A′B′ bir doğruya göre simetrikse aradaki simetri doğrusu, A ile A′'yü birleştiren parçanın orta dikmesidir. (s. 211, 213)",
+             "akilda": "Parçanın simetri doğrusu = orta dikmesi",
+             "soru": S("AB doğru parçasının simetri doğrusunun başka adı nedir?", ["AB'nin orta dikmesi", "AB'nin açıortayı", "AB'nin uzantısı"], 0,
+                       "Bilgi kartındaki eşitliğe bak.", "Doğru parçasının simetri doğrusu, orta dikmesidir. (s. 213)")},
+            {"ad": "Pergel ve Ölçüsüz Cetvel", "renk": "#2364c7", "svg": svg4_pergel(),
+             "aciklama": "İnşa, yalnızca pergel ve ölçüsüz cetvel kullanarak çizim yapmaktır. Cetvelle ölçü almayız, yalnızca düz çizgi çizeriz. Pergelle yay çizeriz. (s. 211)",
+             "ek": "Daha önceki yıllarda ikizkenar üçgen ve eşkenar dörtgeni de pergel ve ölçüsüz cetvelle inşa etmiştik. (s. 211)",
+             "akilda": "Ölçme yok: pergel + düz çizgi",
+             "soru": S("İnşa yaparken ölçüsüz cetveli ne için kullanırız?", ["Düz çizgi çizmek için", "Uzunluk ölçmek için", "Yay çizmek için"], 0,
+                       "Cetvelin üzerinde sayı yok.", "Ölçüsüz cetvel yalnızca düz çizgi çizmeye yarar; yayı pergel çizer. (s. 211)")},
+            {"ad": "Eş Çemberler", "renk": "#1f9e8f", "svg": svg4_es_cember(),
+             "aciklama": "Orta dikme inşasında A ve B merkezli, yarıçapları eşit iki çember ya da yay çizeriz. Bunlar birbirini iki noktada kesmelidir. (s. 212–213)",
+             "ek": "Bunun için pergel açıklığı AB'nin yarısından uzun olmalı. Kısa olursa yaylar birbirine değmez. Açıklık AB'den uzun ya da kısa olabilir; yeter ki yarısından uzun olsun. (s. 212)",
+             "akilda": "Aynı açıklık, yarıdan uzun",
+             "cozum": {"baslik": "Pergeli ne kadar açmalı?",
+                       "problem": "AB 8 cm. Pergel 3 cm açılırsa yaylar kesişir mi?",
+                       "adimlar": [
+                           {"metin": "AB'nin yarısını bul.", "islem": "8 ÷ 2 = 4 cm"},
+                           {"metin": "Pergel açıklığını yarıyla karşılaştır.", "islem": "3 cm < 4 cm"},
+                           {"metin": "Açıklık yarıdan kısa: yaylar ortaya kadar uzanamaz.", "islem": "kesişmez ✗"},
+                           {"metin": "Pergeli yarıdan uzun aç, ör. 5 cm.", "islem": "5 cm > 4 cm → kesişir ✓"}],
+                       "sonuc": "Yayların iki noktada kesişmesi için pergel açıklığı AB'nin yarısından uzun olmalı. (s. 212)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "AB 10 cm. Pergel 6 cm açılırsa yaylar kesişir mi?",
+                       "adimlar": [
+                           {"metin": "AB'nin yarısını bul.",
+                            "soru": G("AB'nin yarısı kaç cm?", "5", "10'u ikiye böl.", "10 ÷ 2 = 5 cm.", birim="cm",
+                                      yardim={"adimlar": ["Yarısı için 2'ye böleriz.", "10'u 2'ye böl."]}),
+                            "islem": "10 ÷ 2 = 5 cm"},
+                           {"metin": "Açıklığı yarıyla karşılaştır.",
+                            "soru": S("6 cm açıklıkla yaylar kesişir mi?", ["Evet, 6 cm yarıdan uzun.", "Hayır, 6 cm yarıdan kısa.", "Hayır, 6 cm AB'den kısa."], 0,
+                                      "6 ile 5'i karşılaştır.", "6 cm > 5 cm; açıklık yarıdan uzun, yaylar kesişir."),
+                            "islem": "6 > 5 → kesişir ✓"}],
+                       "sonuc": "Harika! 6 cm açıklıkla orta dikme inşa edilebilir."},
+             "soru": S("AB 6 cm. Pergel hangi açıklıkta açılırsa yaylar kesişmez?", ["2 cm", "4 cm", "5 cm"], 0,
+                       "AB'nin yarısı kaç cm?", "Yarısı 3 cm. 2 cm yarıdan kısa; yaylar kesişmez. (s. 212)")},
+            {"ad": "Orta Dikme İnşası", "renk": "#7b4fc9", "svg": svg4_insa(),
+             "aciklama": "Orta dikme 4 adımda inşa edilir: A merkezli yay çiz; aynı açıklıkla B merkezli yay çiz; yayların kesiştiği iki noktayı bul; bu noktaları ölçüsüz cetvelle birleştir. (s. 212–213)",
+             "ek": "Yayları farklı yöntemlerle çizebiliriz: bütün çember, yarım çember ya da yalnız küçük yaylar. Önemli olan yayların eş olması ve iki noktada kesişmesi. (s. 213)",
+             "akilda": "Yay, yay, kesişim, birleştir",
+             "cozum": {"baslik": "AB'nin orta dikmesini inşa edelim",
+                       "problem": "Yalnızca pergel ve ölçüsüz cetvelle AB'nin orta dikmesini çizelim.", "svg": gs_orta_dikme(1),
+                       "adimlar": [
+                           {"metin": "Pergeli AB'nin yarısından uzun aç. Sivri ucu A'ya koy, AB'nin üstüne ve altına yay çiz.", "islem": "A merkezli yaylar", "svg": gs_orta_dikme(2)},
+                           {"metin": "Açıklığı bozmadan sivri ucu B'ye koy, aynı yayları çiz. Yaylar K ve L'de kesişir.", "islem": "K ve L", "svg": gs_orta_dikme(3)},
+                           {"metin": "K ile L'yi ölçüsüz cetvelle birleştir.", "islem": "KL = orta dikme", "svg": gs_orta_dikme(4)}],
+                       "sonuc": "KL doğrusu AB'yi dik kesiyor ve iki eş parçaya ayırıyor: AB'nin orta dikmesi. (s. 212–213)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "CD'nin orta dikmesini inşa ediyorsun. C merkezli yayları çizdin.",
+                       "adimlar": [
+                           {"metin": "Sıradaki adımı seç.",
+                            "soru": S("Şimdi ne yaparsın?", ["Açıklığı bozmadan D merkezli yaylar çizerim.", "Pergeli küçültüp D merkezli yay çizerim.", "C ile D'yi birleştiririm."], 0,
+                                      "İki yay eş olmalıydı.", "Pergel açıklığını bozmadan D merkezli yayları çizeriz."),
+                            "islem": "D merkezli eş yaylar → K ve L"},
+                           {"metin": "Yaylar K ve L'de kesişti.",
+                            "soru": S("Orta dikmeyi çizmek için hangi iki noktayı birleştirirsin?", ["K ve L", "C ve K", "C ve D"], 0,
+                                      "Kesişim noktaları hangileriydi?", "K ile L birleştirilir; KL orta dikmedir."),
+                            "islem": "KL = orta dikme"}],
+                       "sonuc": "Harika! CD'nin orta dikmesini inşa ettin."},
+             "soru": S("Orta dikme inşasında yaylar çizildikten sonra son adım hangisidir?", ["Kesişim noktalarını birleştirmek", "Pergeli kapatmak", "A ile B'yi silmek"], 0,
+                       "Yay, yay, kesişim, …", "Son adımda kesişim noktaları ölçüsüz cetvelle birleştirilir. (s. 212)")},
+            {"ad": "İki Uca Eşit Uzak", "renk": "#2f8f73", "svg": svg4_esit_uzak(),
+             "aciklama": "Yayların kesiştiği K noktası A'ya da B'ye de pergel açıklığı kadar uzaktır: KA = KB. Orta dikmenin üzerindeki her nokta doğru parçasının iki ucuna eşit uzaklıktadır. (s. 212)",
+             "ek": "Bu yüzden AKB bir ikizkenar üçgen, AKBL bir eşkenar dörtgendir. Kerim'in hatırladığı inşalar bunlardı! (s. 211)",
+             "akilda": "Orta dikmede: iki uca eşit uzak",
+             "soru": G("Orta dikme inşasında pergel 5 cm açıldı. K noktası B'ye kaç cm uzaktadır?", "5", "Bilgi kartı: KA = KB = pergel açıklığı.",
+                       "K, B merkezli yayın üzerinde; B'ye pergel açıklığı kadar, 5 cm uzakta. (s. 212)", birim="cm",
+                       yardim={"adimlar": ["K noktası hangi yayların üzerinde?", "Bir yayın her noktası merkeze pergel açıklığı kadar uzaktır."]})}
+        ],
+        "gruplar": [{"soru": "Hangisiyle ilgili?", "kutular": [
+            {"etiket": "Tanım", "uyeler": ["Orta Dikme", "Simetri Doğrusu = Orta Dikme"]},
+            {"etiket": "İnşa", "uyeler": ["Pergel ve Ölçüsüz Cetvel", "Eş Çemberler", "Orta Dikme İnşası"]},
+            {"etiket": "Özellik", "uyeler": ["İki Uca Eşit Uzak"]}]}],
+        "akildaKalsin": [
+            "Orta dikme doğru parçasını dik keser ve iki eş parçaya ayırır.",
+            "Bir doğru parçasının simetri doğrusu, orta dikmesidir.",
+            "İnşada yalnızca pergel ve ölçüsüz cetvel kullanılır.",
+            "A ve B merkezli yaylar aynı açıklıkta ve AB'nin yarısından uzun çizilir.",
+            "Yay, yay, kesişim, birleştir: orta dikme hazır.",
+            "Orta dikmenin üzerindeki her nokta iki uca eşit uzaklıktadır."],
+        "merakKutusu": [
+            {"soru": "Neden cetvelle ölçüp ortayı bulmuyoruz?", "cevap": "Ölçmek de bir yöntem ama inşada amaç ölçüsüz çizmektir. Pergel ve ölçüsüz cetvelle bulunan orta dikme her zaman tam doğrudur; cetvelde okuma hatası olmaz. (s. 211)"},
+            {"soru": "Pergel açıklığı AB'den uzun olabilir mi?", "cevap": "Evet. Açıklık AB'nin yarısından uzun olduğu sürece yaylar kesişir. Sınıftaki herkes farklı açıklık kullansa da hepsi aynı orta dikmeyi bulur. (s. 212)"},
+            {"soru": "Yayları bütün çember olarak çizebilir miyim?", "cevap": "Evet. Kitapta bütün çember, yarım çember ya da küçük yaylarla inşa yöntemleri gösteriliyor. Önemli olan eş olmaları. (s. 213)"},
+            {"soru": "Orta dikme nerede işe yarar?", "cevap": "İki noktaya eşit uzaklıktaki yerleri bulmak için. Örneğin iki köye eşit uzaklıkta bir kuyu açılacaksa kuyu, köyleri birleştiren parçanın orta dikmesi üzerinde olmalı."}],
+        "dusunVeYaz": [{"soru": "Arkadaşın orta dikme inşa ederken B merkezli yayı daha küçük açıklıkla çizdi. Ne olur, nasıl düzeltirsin?",
+                        "ornekCevap": "Yaylar eş olmadığı için kesişim noktaları A ve B'ye eşit uzak olmaz; çizdiği çizgi AB'yi tam ortadan bölmez. Pergeli A merkezli yaydaki açıklığa geri açıp B merkezli yayı yeniden çizmeli.",
+                        "anahtarlar": ["eş", "açıklı", "yay", "orta", "eşit"]}],
+        "sorular": [
+            S("Hangisi orta dikmenin özelliğidir?", ["Doğru parçasını dik keser ve tam ortadan böler.", "Doğru parçasına paraleldir.", "Doğru parçasının bir ucundan geçer."], 0,
+              "Orta + dikme", "Orta dikme parçayı dik keser ve iki eş parçaya ayırır. (s. 213)", kavram="Orta Dikme"),
+            G("AB 14 cm. Orta dikme AB'yi iki parçaya ayırıyor. Parçalardan biri kaç cm?", "7", "Orta dikme iki eş parça oluşturur.",
+              "14 ÷ 2 = 7 cm. (s. 213)", birim="cm", kavram="Orta Dikme",
+              yardim={"adimlar": ["Orta dikme parçayı eş iki parçaya ayırır.", "14'ü 2'ye böl."]}),
+            G("Orta dikme doğru parçasını kaç derecelik açıyla keser?", "90", "Dik keser.", "Orta dikme parçayı dik, yani 90°'lik açıyla keser. (s. 213)", birim="°", kavram="Orta Dikme",
+              yardim={"adimlar": ["Dik açı kaç derecedir? Hatırla."]}),
+            S("Görseldeki inşada sıradaki adım hangisidir?", ["K ile L'yi birleştirmek", "A merkezli yeni bir çember çizmek", "Pergeli kapatmak"], 0,
+              "Yay, yay, kesişim, …", "Kesişim noktaları bulundu; şimdi K ile L birleştirilir. (s. 212)", svg=gs_orta_dikme(3), kavram="Orta Dikme İnşası"),
+            S("AB 10 cm. Hangi pergel açıklığıyla orta dikme inşa edilebilir?", ["6 cm", "4 cm", "3 cm"], 0,
+              "Açıklık AB'nin yarısından uzun olmalı.", "Yarısı 5 cm; yalnız 6 cm yarıdan uzun. (s. 212)", kavram="Eş Çemberler"),
+            S("A ve B merkezli yaylar neden aynı açıklıkla çizilir?", ["Kesişim noktaları A ve B'ye eşit uzak olsun diye", "Yaylar daha güzel görünsün diye", "İnşa daha kısa sürsün diye"], 0,
+              "Kesişim noktası iki uca nasıl uzak olmalı?", "Eş yaylar kesişim noktalarını A ve B'ye eşit uzak yapar. (s. 212)", kavram="Eş Çemberler"),
+            G("Orta dikme inşasında pergel 6 cm açıldı. AKBL dörtgeninin çevresi kaç cm?", "24", "Dört kenarın hepsi pergel açıklığı kadar.",
+              "AK = KB = BL = LA = 6 cm; 4 · 6 = 24 cm. (s. 211)", birim="cm", kavram="İki Uca Eşit Uzak",
+              yardim={"adimlar": ["K ve L, A'ya ve B'ye pergel açıklığı kadar uzak.", "Dörtgenin dört kenarı da 6 cm.", "Dört kenarı topla."]}),
+            S("AB ile A′B′ bir doğruya göre simetrik. Aradaki simetri doğrusunu bulmak için hangi parçanın orta dikmesini inşa ederiz?", ["AA′", "AB", "A′B′"], 0,
+              "Simetri doğrusu nokta ile görüntüsü arasındadır.", "Simetri doğrusu AA′ parçasını dik ortalar; AA′'nün orta dikmesidir. (s. 211)", kavram="Simetri Doğrusu = Orta Dikme"),
+            S("İnşada hangisi yapılmaz?", ["Cetvelle uzunluk ölçmek", "Pergelle yay çizmek", "Ölçüsüz cetvelle düz çizgi çizmek"], 0,
+              "Cetvel ölçüsüz.", "İnşada ölçü alınmaz; yalnız pergel ve ölçüsüz cetvel kullanılır. (s. 211)", kavram="Pergel ve Ölçüsüz Cetvel"),
+            S("Görseldeki hangi numaralı çizgi AB'nin orta dikmesidir?", ["1", "2", "3"], 0,
+              "Hem dik olmalı hem tam ortadan geçmeli.", "1 dik ve tam ortadan geçiyor. 2 dik ama ortada değil, 3 ortadan geçiyor ama dik değil. (s. 213)",
+              svg=gs_od_aday(), kavram="Orta Dikme")]
+    })
+
+
+def u4k4():
+    return sik_dagit({
+        "id": "u4k4", "unite": T4, "baslik": "Açıortay", "sayfalar": "s. 213–215",
+        "giris": "Bir açının da simetri doğrusu vardır! Bu konuda açıyı iki eş açıya ayıran açıortayı öğreneceğiz. Onu da yalnızca pergel ve ölçüsüz cetvelle inşa edeceğiz; orta dikme inşası burada çok işimize yarayacak.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda açının köşesi ve kolları, bir sayının yarısı ve orta dikme inşası işimize yarayacak. Hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Açı: köşe ve kollar", "sinif": "Önceki yıllar", "svg": svg4_h_aci(),
+                 "anlatim": "Başlangıç noktaları aynı olan iki ışının oluşturduğu şekle açı denir. Ortak noktaya köşe, ışınlara kol denir. Köşesi A olan açıya kısaca A açısı denir.",
+                 "akilda": "Bir köşe, iki kol",
+                 "ornek": {"problem": "A açısının köşesi ve kolları hangileri?", "svg": gs_aciortay(1), "adimlar": [
+                     {"metin": "İki ışının başladığı ortak noktayı bul.", "islem": "köşe: A"},
+                     {"metin": "A'dan çıkan iki ışına bak.", "islem": "2 kol"}]},
+                 "sorular": [
+                     S("Bir açının kollarının birleştiği noktaya ne denir?", ["Köşe", "Kenar", "Merkez"], 0,
+                       "İki ışının başladığı nokta …", "Kolların birleştiği ortak noktaya köşe denir."),
+                     S("Bir açının kaç kolu vardır?", ["2", "1", "3"], 0,
+                       "Açı kaç ışından oluşur?", "Açı iki ışından oluşur; 2 kolu vardır.")]},
+                {"ad": "Bir sayının yarısı", "sinif": "Önceki yıllar", "svg": svg4_h_yarim(),
+                 "anlatim": "Bir sayının yarısını bulmak için sayıyı 2'ye böleriz. 60'ın yarısı 60 ÷ 2 = 30.",
+                 "akilda": "Yarısı = ÷ 2",
+                 "ornek": {"problem": "90'ın yarısı kaçtır?", "adimlar": [
+                     {"metin": "2'ye böl.", "islem": "90 ÷ 2 = 45"}]},
+                 "sorular": [
+                     G("70'in yarısı kaçtır?", "35", "2'ye böl.", "70 ÷ 2 = 35.", yardim={"adimlar": ["Yarısı için 2'ye böleriz.", "70'i 2'ye böl."]}),
+                     G("120'nin yarısı kaçtır?", "60", "2'ye böl.", "120 ÷ 2 = 60.", yardim={"adimlar": ["Yarısı için 2'ye böleriz.", "120'yi 2'ye böl."]})]},
+                {"ad": "Orta dikme inşası", "sinif": "Konu 3", "svg": svg4_insa(),
+                 "anlatim": "İki uç merkezli, aynı açıklıkta yaylar çiz; yayların kesiştiği noktaları ölçüsüz cetvelle birleştir. (s. 213)",
+                 "akilda": "Yay, yay, kesişim, birleştir",
+                 "ornek": {"problem": "AB'nin orta dikmesi nasıl inşa edilir?", "svg": gs_orta_dikme(4), "adimlar": [
+                     {"metin": "A ve B merkezli, aynı açıklıkta yaylar çiz.", "islem": "kesişim: K ve L"},
+                     {"metin": "K ile L'yi birleştir.", "islem": "KL = orta dikme"}]},
+                 "sorular": [
+                     S("Orta dikme inşasında A ve B merkezli yaylar nasıl çizilir?", ["Aynı pergel açıklığıyla", "Farklı açıklıklarla", "Pergel kapalıyken"], 0,
+                       "Yaylar eş olmalı.", "Yaylar aynı pergel açıklığıyla çizilir. (s. 213)"),
+                     S("Yaylar kesiştikten sonra ne yapılır?", ["Kesişim noktaları birleştirilir.", "Yaylar silinir ve iş biter.", "A noktası silinir."], 0,
+                       "Yay, yay, kesişim, …", "Kesişim noktaları ölçüsüz cetvelle birleştirilir. (s. 213)")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Açıortay", "renk": "#c2255c", "svg": svg4_aciortay(),
+             "aciklama": "Bir açıyı iki eş açıya ayıran doğru, ışın ya da doğru parçasına açıortay denir. (s. 214)",
+             "ek": "Açıortay açının köşesinden çıkar ve iki kolun tam ortasından geçer.",
+             "akilda": "Açıyı iki eş parçaya böler",
+             "soru": S("Açıortay için hangisi doğrudur?", ["Açıyı iki eş açıya ayırır.", "Açının kollarından birinin üzerindedir.", "Açıyı her zaman 90°'ye çevirir."], 0,
+                       "Bilgi kartındaki tanımı oku.", "Açıortay açıyı iki eş açıya ayırır. (s. 214)")},
+            {"ad": "Açının Simetri Doğrusu", "renk": "#b7791f", "svg": svg4_aci_simetri(),
+             "aciklama": "Bir açıya ait simetri doğrusu aynı zamanda o açının açıortayıdır. (s. 214)",
+             "ek": "Açıyı açıortayından katlarsan iki kol tam üst üste gelir.",
+             "akilda": "Açının simetri doğrusu = açıortay",
+             "soru": S("Bir açının simetri doğrusunun başka adı nedir?", ["Açıortay", "Orta dikme", "Kol"], 0,
+                       "Bilgi kartındaki eşitliğe bak.", "Açının simetri doğrusu açıortaydır. (s. 214)")},
+            {"ad": "İki Eş Açı", "renk": "#2364c7", "svg": svg4_es_aci(),
+             "aciklama": "Açıortay açıyı iki eş açıya ayırır. Bu yüzden oluşan her yeni açı, bütün açının yarısıdır. (s. 214)",
+             "ek": "80°'lik bir açının açıortayı onu 40° ve 40°'lik iki açıya ayırır.",
+             "akilda": "Her parça = açının yarısı",
+             "cozum": {"baslik": "100°'lik açının açıortayı",
+                       "problem": "100°'lik bir açının açıortayı çiziliyor. Oluşan açılar kaçar derecedir?",
+                       "adimlar": [
+                           {"metin": "Açıortay iki eş açı oluşturur.", "islem": "? + ? = 100°"},
+                           {"metin": "Eş iki parça için 2'ye böl.", "islem": "100 ÷ 2 = 50"},
+                           {"metin": "Kontrol et.", "islem": "50° + 50° = 100° ✓"}],
+                       "sonuc": "Oluşan iki açının her biri 50°. (s. 214)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Açıortayın oluşturduğu açılardan biri 35°. Bütün açı kaç derecedir?",
+                       "adimlar": [
+                           {"metin": "Açıortay iki eş açı oluşturur.",
+                            "soru": G("Diğer açı kaç derecedir?", "35", "İki açı eş.", "Açılar eş: diğeri de 35°.", birim="°",
+                                      yardim={"adimlar": ["Açıortay açıyı nasıl ayırır?", "Eş açıların ölçüleri aynıdır."]}),
+                            "islem": "35° ve 35°"},
+                           {"metin": "İki açıyı topla.",
+                            "soru": G("Bütün açı kaç derecedir?", "70", "35 + 35", "35 + 35 = 70°.", birim="°",
+                                      yardim={"adimlar": ["İki eş açıyı topla."]}),
+                            "islem": "35 + 35 = 70°"}],
+                       "sonuc": "Harika! Bütün açı 70°."},
+             "soru": G("60°'lik bir açının açıortayı oluşturduğu açılardan biri kaç derecedir?", "30", "Açının yarısı.", "60 ÷ 2 = 30°. (s. 214)", birim="°",
+                       yardim={"adimlar": ["Açıortay iki eş açı oluşturur.", "60'ı 2'ye böl."]})},
+            {"ad": "Köşeden Eşit Uzak İki Nokta", "renk": "#1f9e8f", "svg": svg4_kl(),
+             "aciklama": "Açıortay inşasının ilk adımında pergelin sivri ucunu açının köşesine koyar, iki kolu kesen bir yay çizeriz. Kesişim noktaları K ve L köşeye eşit uzaklıktadır. (s. 213)",
+             "ek": "AK = AL olur, çünkü ikisi de pergel açıklığı kadardır. (s. 213)",
+             "akilda": "Köşe merkezli yay → K ve L",
+             "soru": G("Köşe merkezli yayı çizerken pergel 4 cm açıldı. AL kaç cm'dir?", "4", "K ve L köşeye pergel açıklığı kadar uzak.",
+                       "AL = pergel açıklığı = 4 cm. (s. 213)", birim="cm",
+                       yardim={"adimlar": ["L hangi yayın üzerinde?", "O yayın her noktası köşeye pergel açıklığı kadar uzaktır."]})},
+            {"ad": "Açıortay İnşası", "renk": "#7b4fc9", "svg": svg4_aciortay_insa(),
+             "aciklama": "K ve L merkezli, aynı açıklıkta iki yay çizeriz. Yayların kesiştiği E noktasını köşeyle birleştiririz. AE ışını açıortaydır. (s. 213–214)",
+             "ek": "Aslında KL doğru parçasının orta dikmesini çiziyoruz! Bu orta dikme, aynı zamanda A açısının açıortayıdır. (s. 214)",
+             "akilda": "Köşe yayı, iki eş yay, köşeyle birleştir",
+             "cozum": {"baslik": "A açısının açıortayını inşa edelim",
+                       "problem": "Yalnızca pergel ve ölçüsüz cetvelle A açısının açıortayını çizelim.", "svg": gs_aciortay(1),
+                       "adimlar": [
+                           {"metin": "Sivri ucu A'ya koy, iki kolu kesen bir yay çiz. Kesişim noktaları K ve L.", "islem": "AK = AL", "svg": gs_aciortay(2)},
+                           {"metin": "K ve L merkezli, aynı açıklıkta iki yay çiz. Yaylar E'de kesişir.", "islem": "E noktası", "svg": gs_aciortay(3)},
+                           {"metin": "A ile E'yi ölçüsüz cetvelle birleştir.", "islem": "AE = açıortay", "svg": gs_aciortay(4)}],
+                       "sonuc": "AE ışını A açısını iki eş açıya ayırıyor: A açısının açıortayı. (s. 213–214)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "B açısının açıortayını inşa ediyorsun. Köşe merkezli yayı çizdin, K ve L'yi buldun.",
+                       "adimlar": [
+                           {"metin": "Sıradaki adımı seç.",
+                            "soru": S("Şimdi ne yaparsın?", ["K ve L merkezli, aynı açıklıkta yaylar çizerim.", "K ile L'yi birleştirip bitiririm.", "Köşeyi silerim."], 0,
+                                      "Orta dikme inşasındaki gibi eş yaylar …", "K ve L merkezli eş yaylar çizilir."),
+                            "islem": "eş yaylar → E"},
+                           {"metin": "Yaylar E'de kesişti.",
+                            "soru": S("Açıortayı çizmek için hangi iki noktayı birleştirirsin?", ["B ve E", "K ve L", "K ve E"], 0,
+                                      "Açıortay köşeden çıkar.", "Köşe B ile E birleştirilir; BE açıortaydır."),
+                            "islem": "BE = açıortay"}],
+                       "sonuc": "Harika! B açısının açıortayını inşa ettin."},
+             "soru": S("Açıortay inşasında son adım hangisidir?", ["Kesişim noktasını köşeyle birleştirmek", "K ile L'yi birleştirmek", "Köşe merkezli yeni bir yay çizmek"], 0,
+                       "Açıortay köşeden çıkar.", "Son adımda yayların kesiştiği nokta köşeyle birleştirilir. (s. 214)")},
+            {"ad": "Orta Dikme mi, Açıortay mı?", "renk": "#2f8f73", "svg": svg4_hangisi(),
+             "aciklama": "Bir doğru parçasının simetri doğrusu orta dikmedir; bir açının simetri doğrusu açıortaydır. İkisinde de pergelle eş yaylar çizeriz. (s. 215)",
+             "ek": "Önce şekle bak: Bir doğru parçası mı, bir açı mı?",
+             "akilda": "Parça → orta dikme, açı → açıortay",
+             "soru": S("Bir açının simetri doğrusunu çizmek istiyoruz. Ne inşa ederiz?", ["Açıortay", "Orta dikme", "Paralel doğru"], 0,
+                       "Şekil bir açı.", "Açının simetri doğrusu açıortaydır. (s. 215)")}
+        ],
+        "gruplar": [{"soru": "Hangisiyle ilgili?", "kutular": [
+            {"etiket": "Tanım", "uyeler": ["Açıortay", "Açının Simetri Doğrusu"]},
+            {"etiket": "Hesap ve ayırt etme", "uyeler": ["İki Eş Açı", "Orta Dikme mi, Açıortay mı?"]},
+            {"etiket": "İnşa", "uyeler": ["Köşeden Eşit Uzak İki Nokta", "Açıortay İnşası"]}]}],
+        "akildaKalsin": [
+            "Açıortay açıyı iki eş açıya ayırır.",
+            "Bir açının simetri doğrusu açıortaydır.",
+            "Açıortayın oluşturduğu her açı, bütün açının yarısıdır.",
+            "İlk adım: köşe merkezli yay → K ve L (AK = AL).",
+            "K ve L merkezli eş yaylar E'de kesişir; AE açıortaydır.",
+            "Parçanın simetri doğrusu orta dikme, açınınki açıortaydır."],
+        "merakKutusu": [
+            {"soru": "Açıortay inşası neden orta dikmeye benziyor?", "cevap": "Çünkü K ve L köşeye eşit uzak. KL parçasının orta dikmesi köşeden geçer ve açıyı iki eş parçaya ayırır. Yani açıortay, KL'nin orta dikmesidir. (s. 214)"},
+            {"soru": "Yayların yarıçapı KL'den farklı olabilir mi?", "cevap": "Evet. K ve L merkezli yaylar eş olduğu ve kesiştiği sürece açıklık farklı olabilir; herkes aynı açıortayı bulur. (s. 214)"},
+            {"soru": "Açıortayı açıölçerle de bulabilir miyim?", "cevap": "Evet: açıyı ölçer, yarısını hesaplar, o dereceden bir ışın çizersin. Ama inşada ölçü kullanmadan, pergel ve ölçüsüz cetvelle çizeriz."},
+            {"soru": "Daire diliminin simetri doğrusu nasıl bulunur?", "cevap": "Daire diliminin iki yarıçapı bir açı oluşturur. Bu açının açıortayı dilimin simetri doğrusudur."}],
+        "dusunVeYaz": [{"soru": "Orta dikme inşası ile açıortay inşası arasında hangi benzerlik ve fark var? Kendi cümlelerinle yaz.",
+                        "ornekCevap": "İkisinde de pergelle eş yaylar çizip kesişim noktasını buluruz ve ölçüsüz cetvelle birleştiririz. Fark: Orta dikme bir doğru parçasının, açıortay bir açının simetri doğrusudur. Açıortayda önce köşe merkezli bir yayla K ve L noktalarını buluruz.",
+                        "anahtarlar": ["yay", "eş", "simetri", "köşe", "parça"]}],
+        "sorular": [
+            G("90°'lik bir açının açıortayı oluşturduğu açılardan biri kaç derecedir?", "45", "Açının yarısı.", "90 ÷ 2 = 45°. (s. 214)", birim="°", kavram="İki Eş Açı",
+              yardim={"adimlar": ["Açıortay iki eş açı oluşturur.", "90'ı 2'ye böl."]}),
+            G("Açıortay bir açıyı 25° ve 25°'lik iki açıya ayırdı. Bütün açı kaç derecedir?", "50", "İki eş açıyı topla.", "25 + 25 = 50°. (s. 214)", birim="°", kavram="İki Eş Açı",
+              yardim={"adimlar": ["Bütün açı, iki parçanın toplamıdır.", "25 ile 25'i topla."]}),
+            S("Görseldeki inşada sıradaki adım hangisidir?", ["K ve L merkezli, aynı açıklıkta yaylar çizmek", "K ile köşeyi birleştirmek", "Pergeli kapatmak"], 0,
+              "K ve L bulundu. Sonra …", "K ve L merkezli eş yaylar çizilir. (s. 213)", svg=gs_aciortay(2), kavram="Açıortay İnşası"),
+            S("Açıortay için hangisi doğrudur?", ["Açıyı iki eş açıya ayırır.", "Açıyı iki farklı açıya ayırır.", "Açının köşesinden geçmez."], 0,
+              "Tanımı hatırla.", "Açıortay köşeden geçer ve açıyı iki eş açıya ayırır. (s. 214)", kavram="Açıortay"),
+            S("Hangisi yanlıştır?", ["Bir açının simetri doğrusu, orta dikmesidir.", "Bir doğru parçasının simetri doğrusu, orta dikmesidir.", "Bir açının simetri doğrusu, açıortayıdır."], 0,
+              "Parça → orta dikme, açı → açıortay", "Açının simetri doğrusu açıortaydır, orta dikme değildir. (s. 215)", kavram="Orta Dikme mi, Açıortay mı?"),
+            S("Görseldeki hangi numaralı ışın A açısının açıortayıdır?", ["1", "2", "3"], 0,
+              "Açıortay 70°'yi iki eş parçaya böler.", "1 numaralı ışın açıyı 35° ve 35°'ye ayırıyor. (s. 214)", svg=gs_ao_aday(), kavram="Açıortay"),
+            G("Köşe merkezli yay çizildi ve AK = 5 cm bulundu. AL kaç cm'dir?", "5", "K ve L köşeye eşit uzak.", "AK = AL = 5 cm. (s. 213)", birim="cm",
+              kavram="Köşeden Eşit Uzak İki Nokta",
+              yardim={"adimlar": ["K ve L aynı yayın üzerinde.", "Bu yayın her noktası köşeye aynı uzaklıktadır."]}),
+            S("Açıortay inşasında aslında hangi doğru parçasının orta dikmesini çizeriz?", ["KL", "AK", "AL"], 0,
+              "K ve L merkezli eş yaylar …", "K ve L merkezli eş yaylar KL'nin orta dikmesini verir; bu da açıortaydır. (s. 214)", kavram="Açıortay İnşası"),
+            S("Bir doğru parçasının simetri doğrusunu inşa edeceğiz. Ne çizeriz?", ["Orta dikme", "Açıortay", "Köşegen"], 0,
+              "Şekil bir doğru parçası.", "Doğru parçasının simetri doğrusu orta dikmedir. (s. 215)", kavram="Orta Dikme mi, Açıortay mı?"),
+            S("Bir açıyı açıortayından katlarsak iki kol üst üste gelir. Bu yüzden açıortay açının neyidir?", ["Simetri doğrusu", "Köşesi", "Kolu"], 0,
+              "Katlayınca iki yarı üst üste geliyorsa …", "Açıortay açının simetri doğrusudur. (s. 214)", kavram="Açının Simetri Doğrusu")]
+    })
+
+
+def u4t1():
+    return sik_dagit({
+        "id": "u4t1", "tur": "tarama", "unite": T4,
+        "baslik": "Ara Durak 1: Yansıma ve Simetri", "sayfalar": "Konu 1–2 · s. 202–210",
+        "giris": "Yansıma dönüşümünü ve simetri doğrularını bitirdin, tebrikler! Kısa bir mola verip ikisini birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+        "buyukResim": "Önce bir şeklin simetri doğrusuna göre görüntüsünü çizdik: her nokta öbür yana aynı uzaklıkta gider, simetri doğrusu aradaki parçayı dik ortalar. Sonra bu kuralı tersinden kullandık: şekillerin kendi simetri doğrularını ve iki eş şekil arasındaki gizli simetri doğrusunu bulduk.",
+        "kapsar": ["u4k1", "u4k2"],
+        "hatirla": [
+            {"konu": "u4k1", "maddeler": [
+                "Nokta ile görüntüsü simetri doğrusuna eşit uzaklıktadır.",
+                "Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı dik ortalar.",
+                "Şekil ile görüntüsü eştir; yönü ters döner."]},
+            {"konu": "u4k2", "maddeler": [
+                "Kare 4, dikdörtgen 2, eşkenar üçgen 3 simetri doğrusu; paralelkenar 0.",
+                "Gizli simetri: karşılıklı parçalar paralel, ortalar tek doğruda.",
+                "Üçgeni kenarına göre yansıtınca yeni bir çokgen oluşur."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Hangisiyle ilgili?", "kutular": [
+            {"etiket": "Görüntüyü çizmek", "uyeler": ["Eşit Uzaklık", "Dik Ortalar", "Köşe Köşe Yansıt"]},
+            {"etiket": "Simetri doğrusunu bulmak", "uyeler": ["Simetrik Şekil", "Birden Çok Simetri Doğrusu", "Gizli Simetri Doğrusu"]}]}],
+        "sorular": [
+            G("Kenarı 3 kare olan bir kare, simetri doğrusuna göre yansıtılıyor. Görüntüsünün kaç simetri doğrusu vardır?", "4", "Görüntü de bir karedir.",
+              "Görüntü kareye eştir, o da bir kare: 4 simetri doğrusu.",
+              kaynak=[K("u4k1", "Şekil ve Görüntü Eştir"), K("u4k2", "Birden Çok Simetri Doğrusu")],
+              yardim={"adimlar": ["Kare yansıtılınca görüntüsü hangi şekil olur?", "Karenin kaç simetri doğrusu vardı?"]}),
+            G("Görselde B noktası ile görüntüsü B′ arasındaki uzaklık kaç karedir?", "4", "Önce B'nin doğruya uzaklığını say.",
+              "B doğruya 2 kare uzakta; B′ de öbür yanda 2 kare: 2 + 2 = 4 kare.", svg=gs_tek_nokta(2, ad="B"),
+              kaynak=[K("u4k1", "Eşit Uzaklık"), K("u4k2", "Gizli Simetri Doğrusu")],
+              yardim={"adimlar": ["B'den doğruya kadar kareleri say.", "B′ de öbür yanda aynı uzaklıktadır.", "İki uzaklığı topla."]}),
+            S("ABC dik üçgeni AB dik kenarına göre yansıtıldı. Üçgen ile görüntüsü birlikte hangi şekli oluşturur?", ["İkizkenar üçgen", "Kare", "Paralelkenar"], 0,
+              "Köşe köşe yansıt; yeni şeklin kaç kenarı var, hangileri eş?", "C′ bulunur; AC = AC′ olan bir üçgen oluşur: ikizkenar üçgen. (s. 208)", svg=gs_kenar_yans(2),
+              kaynak=[K("u4k2", "Kenara Göre Yansıtma"), K("u4k1", "Köşe Köşe Yansıt")]),
+            S("Ece bir paralelkenarın yansıma dönüşümü altındaki görüntüsünü çizdi. Görüntünün simetri doğrusu var mıdır?",
+              ["Yok; görüntü de bir paralelkenardır.", "Var; görüntü kare olur.", "Var; görüntüler her zaman simetriktir."], 0,
+              "Şekil ile görüntüsü eştir.", "Görüntü paralelkenara eştir; paralelkenarın simetri doğrusu yoktur.",
+              kaynak=[K("u4k1", "Şekil ve Görüntü Eştir"), K("u4k2", "Simetri Doğrusu Olmayan Şekiller")]),
+            S("Görseldeki iki eş üçgen arasında gizli bir simetri doğrusu var mıdır?",
+              ["Var; parçalar paralel ve ortaları aynı doğruda.", "Yok; üçgenler farklı renkte.", "Yok; aralarında boşluk var."], 0,
+              "Parçalar paralel mi? Orta noktalar tek doğruda mı?", "İki koşul da sağlanıyor; altın noktalardan geçen doğru simetri doğrusudur. (s. 206)", svg=gs_gizli(3),
+              kaynak=[K("u4k2", "Gizli Simetri Doğrusu"), K("u4k1", "Dik Ortalar")]),
+            G("İkizkenar bir üçgenin tabanı 8 cm. Simetri doğrusu tabanı iki parçaya ayırıyor. Parçalardan biri kaç cm?", "4", "Simetri doğrusu tabanı dik ortalar.",
+              "Taban iki eş parçaya ayrılır: 8 ÷ 2 = 4 cm. (s. 205)", birim="cm",
+              kaynak=[K("u4k2", "Simetrik Şekil"), K("u4k1", "Dik Ortalar")],
+              yardim={"adimlar": ["Simetri doğrusu tabanı nasıl keser?", "Tabanı 2 eş parçaya böl."]}),
+            S("Bir kelebeğin sol kanadındaki bir benek gövdeye 3 cm uzakta. Sağ kanattaki eşi gövdeye kaç cm uzaktadır?", ["3 cm", "6 cm", "1,5 cm"], 0,
+              "Gövde simetri doğrusu gibi.", "Nokta ile görüntüsü simetri doğrusuna eşit uzaklıktadır: 3 cm. (s. 205, 207)",
+              kaynak=[K("u4k2", "Hayatta Simetri"), K("u4k1", "Eşit Uzaklık")])]
+    })
+
+
+def u4t2():
+    return sik_dagit({
+        "id": "u4t2", "tur": "tarama", "unite": T4,
+        "baslik": "Tema Sonu Taraması", "sayfalar": "Konu 1–4 · s. 201–217",
+        "giris": "Dördüncü temanın sonuna geldin, tebrikler! Şimdi 4 konuyu birlikte gözden geçireceğiz. Önce kısa özetleri oku ve kartları çevir. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": "Bu temanın yıldızı simetri doğrusuydu. Önce bir şeklin simetri doğrusuna göre görüntüsünü çizdik. Sonra şekillerin simetri doğrularını bulduk. En sonunda simetri doğrusunu pergel ve ölçüsüz cetvelle inşa ettik: doğru parçası için orta dikme, açı için açıortay.",
+        "kapsar": ["u4k1", "u4k2", "u4k3", "u4k4"],
+        "hatirla": [
+            {"konu": "u4k1", "maddeler": ["Nokta ile görüntüsü simetri doğrusuna eşit uzaktır.", "Simetri doğrusu aradaki parçayı dik ortalar.", "Şekil ile görüntüsü eştir; yönü ters."]},
+            {"konu": "u4k2", "maddeler": ["Kare 4, dikdörtgen 2, eşkenar üçgen 3, düzgün beşgen 5.", "Çeşitkenar üçgen ve paralelkenar simetrik değil.", "Gizli simetri: paralel parçalar, ortalar tek doğruda."]},
+            {"konu": "u4k3", "maddeler": ["Orta dikme parçayı dik keser, iki eş parçaya ayırır.", "Yaylar eş ve yarıdan uzun açıklıkla çizilir.", "Yay, yay, kesişim, birleştir."]},
+            {"konu": "u4k4", "maddeler": ["Açıortay açıyı iki eş açıya ayırır.", "Köşe yayı → K, L; eş yaylar → E; köşeyle birleştir.", "Parça → orta dikme, açı → açıortay."]}],
+        "eskiSoru": 6,
+        "oyunKavram": 10,
+        "gruplar": [{"soru": "Hangi konudan?", "kutular": [
+            {"etiket": "Görüntü çizmek", "uyeler": ["Eşit Uzaklık", "Köşe Köşe Yansıt"]},
+            {"etiket": "Simetri doğrusu bulmak", "uyeler": ["Birden Çok Simetri Doğrusu", "Gizli Simetri Doğrusu"]},
+            {"etiket": "İnşa etmek", "uyeler": ["Orta Dikme İnşası", "Açıortay İnşası"]}]}],
+        "sorular": [
+            G("A ile görüntüsü A′ arası 10 kare. Simetri doğrusu A'dan kaç kare uzaktadır?", "5", "Simetri doğrusu AA′ parçasının orta dikmesidir.",
+              "Simetri doğrusu AA′'yü tam ortadan böler: 10 ÷ 2 = 5 kare.",
+              kaynak=[K("u4k1", "Eşit Uzaklık"), K("u4k3", "Simetri Doğrusu = Orta Dikme")],
+              yardim={"adimlar": ["Simetri doğrusu AA′ parçasını nasıl böler?", "10'u 2'ye böl."]}),
+            G("Bir ikizkenar üçgenin tepe açısı 70°. Simetri doğrusu bu açıyı iki eş açıya ayırır. Bu açılardan biri kaç derecedir?", "35", "Simetri doğrusu tepe açısının açıortayıdır.",
+              "70 ÷ 2 = 35°. (s. 205, 214)", birim="°",
+              kaynak=[K("u4k2", "Simetrik Şekil"), K("u4k4", "İki Eş Açı")],
+              yardim={"adimlar": ["Simetri doğrusu tepe köşesinden geçer ve açıyı iki eş parçaya böler.", "70'i 2'ye böl."]}),
+            S("Ali CD'nin orta dikmesini inşa ederken görseldeki yayları çizdi. Hatası nedir?",
+              ["D merkezli yayları farklı açıklıkla çizdi.", "C ile D'yi birleştirdi.", "Pergelin sivri ucunu C'ye koydu."], 0,
+              "Yaylar eş mi?", "C ve D merkezli yaylar eş olmalıydı; D merkezli yaylar daha küçük. (s. 216)", svg=gs_hatali_od(),
+              kaynak=[K("u4k3", "Eş Çemberler"), K("u4k3", "Orta Dikme İnşası")]),
+            S("Bir daire diliminin simetri doğrusunu inşa etmek istiyoruz. Ne yaparız?",
+              ["Dilimin iki yarıçapının oluşturduğu açının açıortayını inşa ederiz.", "Dilimin bir yarıçapının üzerine çizgi çizeriz.", "Dilimi bir yarıçapına göre yansıtırız."], 0,
+              "Dilimin iki yarıçapı bir açı oluşturur.", "Bu açının açıortayı dilimi iki eş parçaya ayırır; simetri doğrusudur. (s. 217)",
+              kaynak=[K("u4k4", "Açının Simetri Doğrusu"), K("u4k2", "Simetrik Şekil")]),
+            S("Görseldeki iki eş üçgen bir doğruya göre simetrik midir?",
+              ["Hayır; parçaların orta noktaları aynı doğru üzerinde değil.", "Evet; parçalar birbirine paralel.", "Evet; üçgenler eş."], 0,
+              "Altın noktalar tek bir doğru üzerinde mi?", "Üçgen yalnızca kaydırılmış; yönü ters dönmemiş, orta noktalar tek doğruda değil. (s. 206)", svg=gs_kaymis(),
+              kaynak=[K("u4k2", "Gizli Simetri Doğrusu"), K("u4k1", "Şekil ve Görüntü Eştir")]),
+            G("Karenin köşegeni bir simetri doğrusudur ve köşedeki 90°'lik açıyı iki eş açıya ayırır. Bu açılardan biri kaç derecedir?", "45", "Köşegen köşe açısının açıortayıdır.",
+              "90 ÷ 2 = 45°.", birim="°",
+              kaynak=[K("u4k2", "Birden Çok Simetri Doğrusu"), K("u4k4", "İki Eş Açı")],
+              yardim={"adimlar": ["Köşegen köşe açısını nasıl böler?", "90'ı 2'ye böl."]}),
+            S("Hangisi orta dikme ile açıortayın ortak özelliğidir?",
+              ["İkisi de bir simetri doğrusudur.", "İkisi de bir açının kollarını keser.", "İkisi de bir doğru parçasını tam ortadan böler."], 0,
+              "Orta dikme parçanın, açıortay açının …", "Orta dikme doğru parçasının, açıortay açının simetri doğrusudur. (s. 213, 214)",
+              kaynak=[K("u4k3", "Simetri Doğrusu = Orta Dikme"), K("u4k4", "Açının Simetri Doğrusu")])]
+    })
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4, u3t1, u3t2, u3t3, u3t4, u4t1, u4t2]
 KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5, u2k6, u2k7, u2k8,
-           u3k1, u3k2, u3k3, u3k4, u3k5, u3k6, u3k7, u3k8] + TARAMALAR
+           u3k1, u3k2, u3k3, u3k4, u3k5, u3k6, u3k7, u3k8, u4k1, u4k2, u4k3, u4k4] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,

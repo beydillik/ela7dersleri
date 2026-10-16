@@ -1,0 +1,595 @@
+{
+ "id": "u4k2",
+ "unite": "4. Tema: Dönüşüm",
+ "baslik": "Simetri Doğrularını Bulma",
+ "sayfalar": "s. 205–209",
+ "giris": "Bazı şekillerin bir simetri doğrusu vardır, bazılarının birden çok, bazılarının hiç yoktur. Bu konuda şekillerin simetri doğrularını bulacağız. İki eş şeklin arasında gizli bir simetri doğrusu olup olmadığını da araştıracağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda üçgen ve dörtgen çeşitleri ile bir önceki konudaki yansıma kuralı işimize yarayacak. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Üçgen çeşitleri",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='8.0,70.0 38.0,70.0 23.0,44.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='44.0,70.0 72.0,70.0 58.0,26.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><polygon points='78.0,70.0 112.0,70.0 86.0,40.0' fill='#b197fc' fill-opacity='0.55' stroke='#b197fc' stroke-width='2.2' stroke-linejoin='round'/><text x='23' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f5f6fa'>eş-</text><text x='23' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f5f6fa'>kenar</text><text x='58' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f5f6fa'>ikiz-</text><text x='58' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f5f6fa'>kenar</text><text x='95' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f5f6fa'>çeşit-</text><text x='95' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f5f6fa'>kenar</text></svg>",
+    "anlatim": "Kenarlarına göre üçgenler üçe ayrılır: Üç kenarı eş olan eşkenar, iki kenarı eş olan ikizkenar, hiçbir kenarı eş olmayan çeşitkenar üçgendir.",
+    "akilda": "3 eş, 2 eş, hiç eş yok",
+    "ornek": {
+     "problem": "Kenarları 5 cm, 5 cm ve 3 cm olan üçgen hangisidir?",
+     "adimlar": [
+      {
+       "metin": "Eş kenarları say.",
+       "islem": "5 = 5 → 2 eş kenar"
+      },
+      {
+       "metin": "İki kenarı eş olan üçgen hangisiydi?",
+       "islem": "ikizkenar üçgen"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Kenarları 4 cm, 6 cm ve 7 cm olan üçgen hangisidir?",
+      "secenekler": [
+       "Çeşitkenar",
+       "Eşkenar",
+       "İkizkenar"
+      ],
+      "dogru": 0,
+      "ipucu": "Eş kenar var mı?",
+      "aciklama": "Hiçbir kenar eş değil: çeşitkenar üçgen."
+     },
+     {
+      "soru": "Üç kenarı da 6 cm olan üçgen hangisidir?",
+      "secenekler": [
+       "Çeşitkenar",
+       "Eşkenar",
+       "İkizkenar"
+      ],
+      "dogru": 1,
+      "ipucu": "Kaç kenar eş?",
+      "aciklama": "Üç kenarı eş: eşkenar üçgen."
+     }
+    ]
+   },
+   {
+    "ad": "Dörtgenler",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='10.0,30.0 42.0,30.0 42.0,62.0 10.0,62.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='52.0,34.0 110.0,34.0 110.0,62.0 52.0,62.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><polygon points='14.0,104.0 64.0,104.0 80.0,78.0 30.0,78.0' fill='#b197fc' fill-opacity='0.55' stroke='#b197fc' stroke-width='2.2' stroke-linejoin='round'/><polygon points='96.0,74.0 110.0,92.0 96.0,110.0 82.0,92.0' fill='#f783ac' fill-opacity='0.55' stroke='#f783ac' stroke-width='2.2' stroke-linejoin='round'/></svg>",
+    "anlatim": "Karenin dört kenarı eş, dört açısı dik. Dikdörtgenin karşılıklı kenarları eş, dört açısı dik. Eşkenar dörtgenin dört kenarı eş. Paralelkenarın karşılıklı kenarları paralel ve eştir.",
+    "akilda": "Kare: hepsi eş, hepsi dik",
+    "ornek": {
+     "problem": "Dört kenarı eş ama açıları dik olmayan dörtgen hangisidir?",
+     "adimlar": [
+      {
+       "metin": "Dört kenarı eş olanlar: kare ve eşkenar dörtgen.",
+       "islem": "kare · eşkenar dörtgen"
+      },
+      {
+       "metin": "Karenin açıları dik; bu yüzden kare olamaz.",
+       "islem": "eşkenar dörtgen"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Dört açısı dik, yalnız karşılıklı kenarları eş olan dörtgen hangisidir?",
+      "secenekler": [
+       "Eşkenar dörtgen",
+       "Kare",
+       "Dikdörtgen"
+      ],
+      "dogru": 2,
+      "ipucu": "Açıları dik olan iki dörtgen var. Hangisinde yalnız karşılıklı kenarlar eş?",
+      "aciklama": "Dikdörtgenin dört açısı dik, karşılıklı kenarları eştir."
+     },
+     {
+      "soru": "Dört kenarı da eş ve dört açısı da dik olan dörtgen hangisidir?",
+      "secenekler": [
+       "Kare",
+       "Paralelkenar",
+       "Dikdörtgen"
+      ],
+      "dogru": 0,
+      "ipucu": "Hem kenarlar hem açılar …",
+      "aciklama": "Kare: dört kenarı eş, dört açısı dik."
+     }
+    ]
+   },
+   {
+    "ad": "Yansıma kuralı",
+    "sinif": "Konu 1",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12.0' y1='30.0' x2='12.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='24.0' y1='30.0' x2='24.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='36.0' y1='30.0' x2='36.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='48.0' y1='30.0' x2='48.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='60.0' y1='30.0' x2='60.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='72.0' y1='30.0' x2='72.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='84.0' y1='30.0' x2='84.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='96.0' y1='30.0' x2='96.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='108.0' y1='30.0' x2='108.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='30.0' x2='108.0' y2='30.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='42.0' x2='108.0' y2='42.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='54.0' x2='108.0' y2='54.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='66.0' x2='108.0' y2='66.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='108.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='60.0' y1='26.0' x2='60.0' y2='82.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='24.0' cy='54.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='24.0' y='46.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>A</text><circle cx='96.0' cy='54.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='96.0' y='46.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>A′</text><path d='M30 66 h22 M68 66 h22' stroke='#f2c14e' stroke-width='2.5'/><text x='41' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>3</text><text x='79' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>3</text></svg>",
+    "anlatim": "Bir nokta ile görüntüsü simetri doğrusuna eşit uzaklıktadır. Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı dik ortalar. (s. 205)",
+    "akilda": "Eşit uzak, dik ortalar",
+    "ornek": {
+     "problem": "A noktası simetri doğrusunun 3 kare solunda. A′ nerede?",
+     "svg": "<svg viewBox='0 0 244 112' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='6.0' x2='122.0' y2='106.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='56.0' cy='56.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='56.0' y='46.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><line x1='56.0' y1='56.0' x2='188.0' y2='56.0' stroke='#f2c14e' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='188.0' cy='56.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='46.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>A′</text></svg>",
+     "adimlar": [
+      {
+       "metin": "A doğruya 3 kare uzakta.",
+       "islem": "3 kare"
+      },
+      {
+       "metin": "Öbür yanda aynı uzaklığa git.",
+       "islem": "A′: 3 kare sağda"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "A noktası simetri doğrusunun 3 kare solunda. A′ doğrunun kaç kare sağındadır?",
+      "cevap": "3",
+      "ipucu": "Kaç kare gittiysen o kadar git.",
+      "aciklama": "Nokta ile görüntüsü doğruya eşit uzaklıkta: 3 kare. (s. 205)",
+      "yardim": {
+       "adimlar": [
+        "A doğruya kaç kare uzakta? Soruda yazıyor.",
+        "Görüntü öbür yanda aynı uzaklıkta olur."
+       ]
+      }
+     },
+     {
+      "soru": "Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı nasıl keser?",
+      "secenekler": [
+       "Hiç kesmez.",
+       "Dik keser, tam ortadan böler.",
+       "Eğik keser."
+      ],
+      "dogru": 1,
+      "ipucu": "Dik ortalar ne demekti?",
+      "aciklama": "Simetri doğrusu bu parçayı dik ortalar. (s. 205)"
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Simetrik Şekil",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='20.0,96.0 100.0,96.0 60.0,22.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='60.0' y1='14.0' x2='60.0' y2='106.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='35.6' y1='56.6' x2='44.4' y2='61.4' stroke='#f5f6fa' stroke-width='2'/><line x1='75.6' y1='61.4' x2='84.4' y2='56.6' stroke='#f5f6fa' stroke-width='2'/><path d='M52.0 96.0 L52.0 88.0 L60.0 88.0' stroke='#f5f6fa' stroke-width='1.6' fill='none'/></svg>",
+   "aciklama": "Bir şekil bir doğruyla ikiye ayrıldığında iki parça birbirinin görüntüsüyse şekil simetriktir. O doğru şeklin simetri doğrusudur. (s. 205)",
+   "ek": "İkizkenar üçgen, düzgün beşgen ve yarım daire simetrik şekillerdir. İkizkenar üçgenin simetri doğrusu tepe köşesinden geçer ve tabanı dik ortalar. (s. 205)",
+   "akilda": "İki yarı birbirinin görüntüsü",
+   "cozum": {
+    "baslik": "İkizkenar üçgenin simetri doğrusu",
+    "problem": "İkizkenar üçgenin simetri doğrusunu bulalım.",
+    "svg": "<svg viewBox='0 0 260 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='60.0,130.0 200.0,130.0 130.0,20.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='90.8' y1='72.3' x2='99.2' y2='77.7' stroke='#f5f6fa' stroke-width='2'/><line x1='160.8' y1='77.7' x2='169.2' y2='72.3' stroke='#f5f6fa' stroke-width='2'/></svg>",
+    "adimlar": [
+     {
+      "metin": "Eş kenarların birleştiği tepe köşesini bul.",
+      "islem": "tepe köşesi",
+      "svg": "<svg viewBox='0 0 260 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='60.0,130.0 200.0,130.0 130.0,20.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='90.8' y1='72.3' x2='99.2' y2='77.7' stroke='#f5f6fa' stroke-width='2'/><line x1='160.8' y1='77.7' x2='169.2' y2='72.3' stroke='#f5f6fa' stroke-width='2'/><circle cx='130.0' cy='20.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/></svg>"
+     },
+     {
+      "metin": "Tabanın orta noktasını bul.",
+      "islem": "taban ikiye bölündü",
+      "svg": "<svg viewBox='0 0 260 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='60.0,130.0 200.0,130.0 130.0,20.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='90.8' y1='72.3' x2='99.2' y2='77.7' stroke='#f5f6fa' stroke-width='2'/><line x1='160.8' y1='77.7' x2='169.2' y2='72.3' stroke='#f5f6fa' stroke-width='2'/><circle cx='130.0' cy='20.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='130.0' cy='130.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><line x1='93.0' y1='125.0' x2='93.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/><line x1='97.0' y1='125.0' x2='97.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/><line x1='163.0' y1='125.0' x2='163.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/><line x1='167.0' y1='125.0' x2='167.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/></svg>"
+     },
+     {
+      "metin": "Tepe köşesini tabanın orta noktasıyla birleştir.",
+      "islem": "simetri doğrusu",
+      "svg": "<svg viewBox='0 0 260 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='60.0,130.0 200.0,130.0 130.0,20.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='90.8' y1='72.3' x2='99.2' y2='77.7' stroke='#f5f6fa' stroke-width='2'/><line x1='160.8' y1='77.7' x2='169.2' y2='72.3' stroke='#f5f6fa' stroke-width='2'/><circle cx='130.0' cy='20.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='130.0' cy='130.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><line x1='93.0' y1='125.0' x2='93.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/><line x1='97.0' y1='125.0' x2='97.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/><line x1='163.0' y1='125.0' x2='163.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/><line x1='167.0' y1='125.0' x2='167.0' y2='135.0' stroke='#f2c14e' stroke-width='2'/><line x1='130.0' y1='10.0' x2='130.0' y2='146.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><path d='M122.0 130.0 L122.0 122.0 L130.0 122.0' stroke='#f5f6fa' stroke-width='1.6' fill='none'/></svg>"
+     }
+    ],
+    "sonuc": "Bu doğrudan katlayınca iki yarı tam üst üste gelir. Doğru tabanı dik ortalar. (s. 205)"
+   },
+   "soru": {
+    "soru": "Hangisi simetrik bir şekildir?",
+    "secenekler": [
+     "Çeşitkenar üçgen",
+     "Paralelkenar",
+     "Yarım daire"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartındaki simetrik şekillere bak.",
+    "aciklama": "Yarım daire ortasından katlanınca iki yarısı üst üste gelir. (s. 205)"
+   }
+  },
+  {
+   "ad": "Birden Çok Simetri Doğrusu",
+   "renk": "#2364c7",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='28.0,28.0 92.0,28.0 92.0,92.0 28.0,92.0' fill='#4fc3a1' fill-opacity='0.35' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='60.0' y1='18.0' x2='60.0' y2='102.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='18.0' y1='60.0' x2='102.0' y2='60.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='22.0' y1='22.0' x2='98.0' y2='98.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='98.0' y1='22.0' x2='22.0' y2='98.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><text x='60' y='116' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>4 simetri doğrusu</text></svg>",
+   "aciklama": "Bazı şekillerin birden fazla simetri doğrusu vardır. Karenin 4, dikdörtgenin 2, eşkenar üçgenin 3, düzgün beşgenin 5 simetri doğrusu vardır. (s. 205)",
+   "ek": "Düzgün çokgenlerde simetri doğrusu sayısı kenar sayısına eşittir: düzgün beşgenin 5 kenarı, 5 simetri doğrusu var.",
+   "akilda": "Düzgün çokgen: kenar sayısı kadar",
+   "cozum": {
+    "baslik": "Karenin simetri doğruları",
+    "problem": "Karenin kaç simetri doğrusu var?",
+    "svg": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='70.0,20.0 190.0,20.0 190.0,140.0 70.0,140.0' fill='#4fc3a1' fill-opacity='0.35' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/></svg>",
+    "adimlar": [
+     {
+      "metin": "Karşılıklı kenarların orta noktalarını birleştir.",
+      "islem": "2 doğru",
+      "svg": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='70.0,20.0 190.0,20.0 190.0,140.0 70.0,140.0' fill='#4fc3a1' fill-opacity='0.35' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='130.0' y1='10.0' x2='130.0' y2='150.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='60.0' y1='80.0' x2='200.0' y2='80.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/></svg>"
+     },
+     {
+      "metin": "Karşılıklı köşeleri birleştir (köşegenler).",
+      "islem": "2 doğru daha",
+      "svg": "<svg viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='70.0,20.0 190.0,20.0 190.0,140.0 70.0,140.0' fill='#4fc3a1' fill-opacity='0.35' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='130.0' y1='10.0' x2='130.0' y2='150.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='60.0' y1='80.0' x2='200.0' y2='80.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='62.0' y1='12.0' x2='198.0' y2='148.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='198.0' y1='12.0' x2='62.0' y2='148.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/></svg>"
+     },
+     {
+      "metin": "Hepsini topla.",
+      "islem": "2 + 2 = 4"
+     }
+    ],
+    "sonuc": "Karenin 4 simetri doğrusu var. Her birinden katlayınca iki yarı üst üste gelir."
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Uzun kenarı kısa kenarından büyük bir dikdörtgenin kaç simetri doğrusu var?",
+    "svg": "<svg viewBox='0 0 260 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='40.0,30.0 220.0,30.0 220.0,120.0 40.0,120.0' fill='#4fc3a1' fill-opacity='0.35' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='30.0' y1='25.0' x2='230.0' y2='125.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/></svg>",
+    "adimlar": [
+     {
+      "metin": "Karşılıklı kenarların ortalarını birleştir.",
+      "soru": {
+       "soru": "Bu yolla kaç simetri doğrusu çizilir?",
+       "secenekler": [
+        "2",
+        "1",
+        "4"
+       ],
+       "dogru": 0,
+       "ipucu": "Bir dikey, bir yatay …",
+       "aciklama": "Biri dikey, biri yatay: 2 simetri doğrusu."
+      },
+      "islem": "2 doğru"
+     },
+     {
+      "metin": "Görseldeki köşegene bak.",
+      "soru": {
+       "soru": "Bu dikdörtgenin köşegeni simetri doğrusu mudur?",
+       "secenekler": [
+        "Hayır, katlayınca köşeler üst üste gelmez.",
+        "Evet, her köşegen simetri doğrusudur.",
+        "Evet, çünkü iki parça eştir."
+       ],
+       "dogru": 0,
+       "ipucu": "Köşegenden katladığını düşün.",
+       "aciklama": "İki parça eş ama katlayınca üst üste gelmez; köşegen simetri doğrusu değildir."
+      },
+      "islem": "köşegen değil → toplam 2"
+     }
+    ],
+    "sonuc": "Harika! Dikdörtgenin 2 simetri doğrusu var."
+   },
+   "soru": {
+    "soru": "Eşkenar üçgenin kaç simetri doğrusu vardır?",
+    "cevap": "3",
+    "ipucu": "Bilgi kartındaki sayıları oku.",
+    "aciklama": "Eşkenar üçgenin her köşesinden bir simetri doğrusu geçer: 3. (s. 205)",
+    "yardim": {
+     "adimlar": [
+      "Eşkenar üçgen düzgün bir çokgendir.",
+      "Düzgün çokgende simetri doğrusu sayısı kenar sayısı kadardır."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Simetri Doğrusu Olmayan Şekiller",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='18.0,88.0 76.0,88.0 102.0,36.0 44.0,36.0' fill='#4fc3a1' fill-opacity='0.45' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='60.0' y1='22.0' x2='60.0' y2='102.0' stroke='#9aa3bf' stroke-width='2.5' stroke-dasharray='6 4'/><path d='M89 91 L103 105 M103 91 L89 105' stroke='#ff6b6b' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Bazı şekillerin hiç simetri doğrusu yoktur. Çeşitkenar üçgen ve paralelkenar simetrik değildir. (s. 205)",
+   "ek": "Paralelkenarı köşegeninden kesersen iki parça eş olur ama katlayınca üst üste gelmez. Simetri için eş olmak yetmez; parçalar katlayınca çakışmalı.",
+   "akilda": "Eş parça yetmez, çakışmalı",
+   "soru": {
+    "soru": "Hangisinin simetri doğrusu yoktur?",
+    "secenekler": [
+     "Kare",
+     "Çeşitkenar üçgen",
+     "İkizkenar üçgen"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki iki şekli hatırla.",
+    "aciklama": "Çeşitkenar üçgenin hiçbir kenarı eş değil; simetri doğrusu yoktur. (s. 205)"
+   }
+  },
+  {
+   "ad": "Gizli Simetri Doğrusu",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12.0' y1='18.0' x2='12.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='24.0' y1='18.0' x2='24.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='36.0' y1='18.0' x2='36.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='48.0' y1='18.0' x2='48.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='60.0' y1='18.0' x2='60.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='72.0' y1='18.0' x2='72.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='84.0' y1='18.0' x2='84.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='96.0' y1='18.0' x2='96.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='108.0' y1='18.0' x2='108.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='18.0' x2='108.0' y2='18.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='30.0' x2='108.0' y2='30.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='42.0' x2='108.0' y2='42.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='54.0' x2='108.0' y2='54.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='66.0' x2='108.0' y2='66.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='108.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='90.0' x2='108.0' y2='90.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='102.0' x2='108.0' y2='102.0' stroke='#2f3a63' stroke-width='1'/><polygon points='12.0,30.0 36.0,54.0 24.0,90.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='108.0,30.0 84.0,54.0 96.0,90.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='12.0' y1='30.0' x2='108.0' y2='30.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='36.0' y1='54.0' x2='84.0' y2='54.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='24.0' y1='90.0' x2='96.0' y2='90.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='60.0' cy='30.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='60.0' cy='54.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='60.0' cy='90.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='12.0' cy='30.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><circle cx='108.0' cy='30.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='36.0' cy='54.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><circle cx='84.0' cy='54.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='24.0' cy='90.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><circle cx='96.0' cy='90.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/></svg>",
+   "aciklama": "İki eş şekil bir doğruya göre simetrik olabilir. Anlamak için karşılıklı noktaları birleştiririz: Parçalar birbirine paralel olmalı ve hepsinin orta noktası aynı doğru üzerinde olmalı. (s. 206)",
+   "ek": "Orta noktalardan geçen doğru gizli simetri doğrusudur. Parçalar paralel değilse eş şekiller simetrik değildir; şekil kaydırılmış ya da döndürülmüş olabilir. (s. 205, 206)",
+   "akilda": "Paralel parçalar, ortalar tek doğruda",
+   "cozum": {
+    "baslik": "Gizli simetri doğrusunu bulalım",
+    "problem": "Yeşil ve turuncu üçgenler eş. Aralarında bir simetri doğrusu var mı?",
+    "svg": "<svg viewBox='0 0 244 156' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><polygon points='34.0,34.0 78.0,78.0 56.0,122.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='210.0,34.0 166.0,78.0 188.0,122.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><circle cx='34.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>A</text><circle cx='210.0' cy='34.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='210.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>A′</text><circle cx='78.0' cy='78.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='78.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>B</text><circle cx='166.0' cy='78.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='166.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>B′</text><circle cx='56.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='56.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>C</text><circle cx='188.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>C′</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Karşılıklı köşeleri birleştir: A–A′, B–B′, C–C′.",
+      "islem": "3 parça",
+      "svg": "<svg viewBox='0 0 244 156' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><polygon points='34.0,34.0 78.0,78.0 56.0,122.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='210.0,34.0 166.0,78.0 188.0,122.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='34.0' y1='34.0' x2='210.0' y2='34.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='78.0' y1='78.0' x2='166.0' y2='78.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='56.0' y1='122.0' x2='188.0' y2='122.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='34.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>A</text><circle cx='210.0' cy='34.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='210.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>A′</text><circle cx='78.0' cy='78.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='78.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>B</text><circle cx='166.0' cy='78.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='166.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>B′</text><circle cx='56.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='56.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>C</text><circle cx='188.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>C′</text></svg>"
+     },
+     {
+      "metin": "Parçalar birbirine paralel mi?",
+      "islem": "hepsi yatay → paralel ✓"
+     },
+     {
+      "metin": "Her parçanın orta noktasını işaretle.",
+      "islem": "orta noktalar aynı dikey doğruda ✓",
+      "svg": "<svg viewBox='0 0 244 156' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><polygon points='34.0,34.0 78.0,78.0 56.0,122.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='210.0,34.0 166.0,78.0 188.0,122.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='34.0' y1='34.0' x2='210.0' y2='34.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='78.0' y1='78.0' x2='166.0' y2='78.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='56.0' y1='122.0' x2='188.0' y2='122.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='122.0' cy='34.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='122.0' cy='78.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='122.0' cy='122.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='34.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>A</text><circle cx='210.0' cy='34.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='210.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>A′</text><circle cx='78.0' cy='78.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='78.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>B</text><circle cx='166.0' cy='78.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='166.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>B′</text><circle cx='56.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='56.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>C</text><circle cx='188.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>C′</text></svg>"
+     },
+     {
+      "metin": "Orta noktalardan geçen doğruyu çiz.",
+      "islem": "gizli simetri doğrusu",
+      "svg": "<svg viewBox='0 0 244 156' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='232.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><polygon points='34.0,34.0 78.0,78.0 56.0,122.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='210.0,34.0 166.0,78.0 188.0,122.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='34.0' y1='34.0' x2='210.0' y2='34.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='78.0' y1='78.0' x2='166.0' y2='78.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><line x1='56.0' y1='122.0' x2='188.0' y2='122.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='4 3'/><circle cx='122.0' cy='34.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='122.0' cy='78.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><circle cx='122.0' cy='122.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><line x1='122.0' y1='6.0' x2='122.0' y2='150.0' stroke='#f783ac' stroke-width='3' stroke-dasharray='6 4'/><circle cx='34.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>A</text><circle cx='210.0' cy='34.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='210.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>A′</text><circle cx='78.0' cy='78.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='78.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>B</text><circle cx='166.0' cy='78.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='166.0' y='70.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>B′</text><circle cx='56.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='56.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>C</text><circle cx='188.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='114.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>C′</text></svg>"
+     }
+    ],
+    "sonuc": "Simetri doğrusu her parçayı dik ortalıyor. İki üçgen bu doğruya göre simetrik. (s. 205, 206)"
+   },
+   "soru": {
+    "soru": "İki eş üçgenin karşılıklı köşelerini birleştiren parçalar birbirine paralel değil. Hangisi doğrudur?",
+    "secenekler": [
+     "Üçgenler kesinlikle simetriktir.",
+     "Üçgenler eş değildir.",
+     "Üçgenler bir doğruya göre simetrik değildir."
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartı: parçalar nasıl olmalıydı?",
+    "aciklama": "Simetrik olsalardı parçalar paralel olurdu. (s. 206)"
+   }
+  },
+  {
+   "ad": "Kenara Göre Yansıtma",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='60.0,18.0 60.0,96.0 22.0,96.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='60.0,18.0 60.0,96.0 98.0,96.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='60.0' y1='10.0' x2='60.0' y2='106.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><path d='M52.0 96.0 L52.0 88.0 L60.0 88.0' stroke='#f5f6fa' stroke-width='1.6' fill='none'/></svg>",
+   "aciklama": "Bir üçgeni bir kenarına göre yansıtırsak üçgen ile görüntüsü birleşir ve yeni bir çokgen oluşur. (s. 208)",
+   "ek": "Dik üçgeni dik kenarına göre yansıtınca ikizkenar üçgen, ikizkenar dik üçgeni uzun kenarına göre yansıtınca kare, eşkenar üçgeni bir kenarına göre yansıtınca eşkenar dörtgen oluşur. (s. 208)",
+   "akilda": "Üçgen + görüntüsü = yeni şekil",
+   "cozum": {
+    "baslik": "Dik üçgeni dik kenarına göre yansıtalım",
+    "problem": "ABC dik üçgenini AB kenarına göre yansıtalım. Hangi şekil oluşur?",
+    "svg": "<svg viewBox='0 0 200 156' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='188.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='188.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='188.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='188.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='188.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='188.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='6.0' x2='100.0' y2='150.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><polygon points='100.0,34.0 100.0,122.0 34.0,122.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><circle cx='100.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='112.0' y='30.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='100.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='100.0' y='139.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>B</text><circle cx='34.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='139.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>C</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Yansıtacağın kenar simetri doğrusu olur.",
+      "islem": "AB kenarı"
+     },
+     {
+      "metin": "A ve B doğrunun üzerinde; görüntüleri kendileri. Yalnız C'yi yansıt.",
+      "islem": "C → C′",
+      "svg": "<svg viewBox='0 0 200 156' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='188.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='188.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='188.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='188.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='188.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='188.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='188.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='6.0' x2='100.0' y2='150.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><polygon points='100.0,34.0 100.0,122.0 34.0,122.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='100.0,34.0 100.0,122.0 166.0,122.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><circle cx='166.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='166.0' y='139.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>C′</text><circle cx='100.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='112.0' y='30.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='100.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='100.0' y='139.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>B</text><circle cx='34.0' cy='122.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='34.0' y='139.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>C</text></svg>"
+     },
+     {
+      "metin": "Yeni şekle bak: Kaç kenarı var, hangi kenarlar eş?",
+      "islem": "3 kenar, AC = AC′ → ikizkenar üçgen"
+     }
+    ],
+    "sonuc": "Dik üçgen ile görüntüsü birlikte ikizkenar bir üçgen oluşturdu. (s. 208)"
+   },
+   "soru": {
+    "soru": "Eşkenar üçgen bir kenarına göre yansıtılırsa nasıl bir dörtgen oluşur?",
+    "secenekler": [
+     "Eşkenar dörtgen",
+     "Dikdörtgen",
+     "Kare"
+    ],
+    "dogru": 0,
+    "ipucu": "Bütün kenarlar eşit kalır ama açılar dik değil.",
+    "aciklama": "Dört kenarı eş, açıları dik olmayan dörtgen: eşkenar dörtgen. (s. 208)"
+   }
+  },
+  {
+   "ad": "Hayatta Simetri",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='40' cy='44' rx='24' ry='20' fill='#4fc3a1' opacity='0.8'/><ellipse cx='80' cy='44' rx='24' ry='20' fill='#ffa26b' opacity='0.8'/><ellipse cx='44' cy='78' rx='16' ry='14' fill='#4fc3a1' opacity='0.8'/><ellipse cx='76' cy='78' rx='16' ry='14' fill='#ffa26b' opacity='0.8'/><circle cx='38' cy='42' r='5' fill='#1b2340'/><circle cx='82' cy='42' r='5' fill='#1b2340'/><rect x='56' y='28' width='8' height='66' rx='4' fill='#f5f6fa'/><line x1='60.0' y1='12.0' x2='60.0' y2='108.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/></svg>",
+   "aciklama": "Simetri gerçek hayatta denge ve güzellik sağlar: kilim ve halı desenlerinde, cami ve köprülerde, kelebek kanatlarında, kar tanelerinde, uçak kanatlarında. (s. 207)",
+   "ek": "Hayat ağacı motifi uzun ömürlülüğü, dayanıklılığı, iyiliği ve güzelliği temsil eder. Birçok ülkenin bayrağında da simetrik şekiller vardır. (s. 207, 209)",
+   "akilda": "Kilimde, kelebekte, bayrakta",
+   "soru": {
+    "soru": "Uçak kanatlarının simetrik yapılması neden önemlidir?",
+    "secenekler": [
+     "Uçağı ağırlaştırmak için",
+     "Denge ve güvenlik için",
+     "Daha çok renk kullanmak için"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartı: simetri ne sağlar?",
+    "aciklama": "Simetri denge, verimlilik ve güvenlik sağlar. (s. 207)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Ne inceliyor?",
+   "kutular": [
+    {
+     "etiket": "Tek şeklin simetrisi",
+     "uyeler": [
+      "Simetrik Şekil",
+      "Birden Çok Simetri Doğrusu",
+      "Simetri Doğrusu Olmayan Şekiller"
+     ]
+    },
+    {
+     "etiket": "İki şekil birlikte",
+     "uyeler": [
+      "Gizli Simetri Doğrusu",
+      "Kenara Göre Yansıtma"
+     ]
+    },
+    {
+     "etiket": "Günlük hayat",
+     "uyeler": [
+      "Hayatta Simetri"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Simetrik şeklin iki parçası birbirinin görüntüsüdür.",
+  "Karenin 4, dikdörtgenin 2, eşkenar üçgenin 3, düzgün beşgenin 5 simetri doğrusu vardır.",
+  "Çeşitkenar üçgenin ve paralelkenarın simetri doğrusu yoktur.",
+  "Gizli simetri doğrusu için karşılıklı noktaları birleştir: parçalar paralel, ortalar tek doğruda olmalı.",
+  "Üçgeni bir kenarına göre yansıtınca yeni bir çokgen oluşur.",
+  "Simetri kilimlerde, yapılarda, doğada ve bayraklarda denge sağlar."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Dairenin kaç simetri doğrusu var?",
+   "cevap": "Sayısız! Merkezden geçen her doğru daireyi iki eş yarıya ayırır ve katlayınca yarılar üst üste gelir. Yarım dairenin ise yalnız 1 simetri doğrusu vardır. (s. 205)"
+  },
+  {
+   "soru": "Kilim desenleri neden yöreden yöreye değişir?",
+   "cevap": "İnsanlar motiflerle inançlarını, duygularını ve hayatlarını anlatmışlar. Her yörenin kendine özgü motifleri ve anlamları vardır. (s. 207)"
+  },
+  {
+   "soru": "Bayraklarda da simetri var mı?",
+   "cevap": "Evet. Kitaptaki performans görevinde farklı ülkelerin bayraklarındaki simetrik şekilleri bulup simetri doğrularını çizmen isteniyor. (s. 209)"
+  },
+  {
+   "soru": "Eş şekiller her zaman simetrik midir?",
+   "cevap": "Hayır. Eş bir şekil yalnızca kaydırılmış ya da döndürülmüş olabilir. Simetrik olması için karşılıklı noktaları birleştiren parçalar paralel olmalı ve tek bir doğru hepsini dik ortalamalı. (s. 206)"
+  },
+  {
+   "soru": "Doğada başka nerelerde simetri var?",
+   "cevap": "Kelebek kanatlarında, kar tanelerinin düzeninde ve çiçeklerin taç yapraklarında simetrik örüntüler vardır. (s. 207)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okulunun bahçesine simetrik bir çiçek tarhı tasarlıyorsun. Hangi şekli seçerdin, kaç simetri doğrusu olurdu? Nedenini yaz.",
+   "ornekCevap": "Kare bir tarh seçerdim. Karenin 4 simetri doğrusu var: iki köşegen ve kenarların ortalarını birleştiren iki doğru. Böylece çiçekleri her yönden dengeli dizebilirim.",
+   "anahtarlar": [
+    "simetri",
+    "doğru",
+    "kare",
+    "deng",
+    "eş"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Karenin kaç simetri doğrusu vardır?",
+   "cevap": "4",
+   "ipucu": "Kenar ortalarını ve köşeleri birleştiren doğruları say.",
+   "aciklama": "2 kenar ortası doğrusu + 2 köşegen = 4. (s. 205)",
+   "kavram": "Birden Çok Simetri Doğrusu",
+   "yardim": {
+    "adimlar": [
+     "Karşılıklı kenarların ortalarını birleştiren doğruları say.",
+     "Köşegenleri de say.",
+     "İkisini topla."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki hangi şekilde kesikli çizgi bir simetri doğrusudur?",
+   "secenekler": [
+    "1",
+    "2",
+    "3"
+   ],
+   "dogru": 1,
+   "ipucu": "Her şekli kesikli çizgiden katladığını düşün.",
+   "aciklama": "Yalnız ikizkenar üçgen (2) katlanınca iki yarısı üst üste gelir. (s. 205)",
+   "svg": "<svg viewBox='0 0 330 140' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='15.0,100.0 69.0,100.0 95.0,34.0 41.0,34.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='55.0' y1='24.0' x2='55.0' y2='110.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='55.0' cy='128' r='10' fill='#f2c14e'/><text x='55.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><polygon points='133.0,104.0 197.0,104.0 165.0,24.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='165.0' y1='14.0' x2='165.0' y2='112.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='165.0' cy='128' r='10' fill='#f2c14e'/><text x='165.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='112' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><polygon points='233.0,50.0 317.0,50.0 317.0,94.0 233.0,94.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='223.0' y1='44.8' x2='327.0' y2='99.2' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='275.0' cy='128' r='10' fill='#f2c14e'/><text x='275.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='112' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></svg>",
+   "kavram": "Simetrik Şekil"
+  },
+  {
+   "soru": "Hangisinin simetri doğrusu yoktur?",
+   "secenekler": [
+    "Dikdörtgen",
+    "Düzgün beşgen",
+    "Paralelkenar"
+   ],
+   "dogru": 2,
+   "ipucu": "Bilgi kartındaki simetrik olmayan iki şekli hatırla.",
+   "aciklama": "Paralelkenar hiçbir doğrudan katlanınca üst üste gelmez. (s. 205)",
+   "kavram": "Simetri Doğrusu Olmayan Şekiller"
+  },
+  {
+   "soru": "Düzgün beşgenin kaç simetri doğrusu vardır?",
+   "cevap": "5",
+   "ipucu": "Düzgün çokgende simetri doğrusu sayısı kenar sayısı kadar.",
+   "aciklama": "Düzgün beşgenin 5 kenarı, 5 simetri doğrusu var. (s. 205)",
+   "kavram": "Birden Çok Simetri Doğrusu",
+   "yardim": {
+    "adimlar": [
+     "Beşgenin kaç kenarı var?",
+     "Düzgün çokgende simetri doğrusu sayısı kenar sayısına eşittir."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki eş üçgenler bir doğruya göre simetrik midir?",
+   "secenekler": [
+    "Hayır; karşılıklı köşeleri birleştiren parçalar paralel değil.",
+    "Evet; üçgenler eş.",
+    "Evet; aralarında boşluk var."
+   ],
+   "dogru": 0,
+   "ipucu": "Kesikli parçalar birbirine paralel mi?",
+   "aciklama": "Parçalar paralel değil; üçgen döndürülmüş, simetrik değil. (s. 206)",
+   "svg": "<svg viewBox='0 0 330 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='40.0,120.0 90.0,120.0 40.0,40.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='205.0,95.0 243.3,127.1 256.4,33.7' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='40.0' y1='120.0' x2='205.0' y2='95.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='6 4'/><line x1='90.0' y1='120.0' x2='243.3' y2='127.1' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='6 4'/><line x1='40.0' y1='40.0' x2='256.4' y2='33.7' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='6 4'/><circle cx='40.0' cy='120.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='40.0' y='111.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='90.0' cy='120.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='90.0' y='111.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>B</text><circle cx='40.0' cy='40.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='40.0' y='31.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>C</text><circle cx='205.0' cy='95.0' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='205.0' y='86.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>A′</text><circle cx='243.3' cy='127.1' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='243.3' y='118.1' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>B′</text><circle cx='256.4' cy='33.7' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='256.4' y='24.7' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>C′</text></svg>",
+   "kavram": "Gizli Simetri Doğrusu"
+  },
+  {
+   "soru": "Görseldeki eş şekiller arasındaki gizli simetri doğrusu hangi numaralı çizgidir?",
+   "secenekler": [
+    "1",
+    "2",
+    "3"
+   ],
+   "dogru": 1,
+   "ipucu": "Karşılıklı köşelerin tam ortası hangi çizgide?",
+   "aciklama": "Her köşe 2 numaralı çizgiye eşit uzaklıkta; simetri doğrusu 2. (s. 206)",
+   "svg": "<svg viewBox='0 0 264 154' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='22.0' y1='22.0' x2='22.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='44.0' y1='22.0' x2='44.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='66.0' y1='22.0' x2='66.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='88.0' y1='22.0' x2='88.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='110.0' y1='22.0' x2='110.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='132.0' y1='22.0' x2='132.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='154.0' y1='22.0' x2='154.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='176.0' y1='22.0' x2='176.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='198.0' y1='22.0' x2='198.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='220.0' y1='22.0' x2='220.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='242.0' y1='22.0' x2='242.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='22.0' x2='242.0' y2='22.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='44.0' x2='242.0' y2='44.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='66.0' x2='242.0' y2='66.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='88.0' x2='242.0' y2='88.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='110.0' x2='242.0' y2='110.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='132.0' x2='242.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><polygon points='44.0,44.0 88.0,66.0 44.0,110.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='220.0,44.0 176.0,66.0 220.0,110.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='110.0' y1='16.0' x2='110.0' y2='138.0' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='6 4'/><circle cx='110.0' cy='19.8' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='110.0' y='23.8' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>1</text><line x1='132.0' y1='16.0' x2='132.0' y2='138.0' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='6 4'/><circle cx='132.0' cy='19.8' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='132.0' y='23.8' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>2</text><line x1='154.0' y1='16.0' x2='154.0' y2='138.0' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='6 4'/><circle cx='154.0' cy='19.8' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='154.0' y='23.8' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>3</text></svg>",
+   "kavram": "Gizli Simetri Doğrusu"
+  },
+  {
+   "soru": "İkizkenar dik üçgeni uzun kenarına göre yansıtırsak hangi şekil oluşur?",
+   "secenekler": [
+    "Çeşitkenar üçgen",
+    "Kare",
+    "Eşkenar üçgen"
+   ],
+   "dogru": 1,
+   "ipucu": "Dört kenar eş, köşeler dik olur.",
+   "aciklama": "Dört kenarın hepsi dik kenarlara eş olur ve dört açı da dik olur: kare. (s. 208)",
+   "kavram": "Kenara Göre Yansıtma"
+  },
+  {
+   "soru": "Uzun kenarı kısa kenarından büyük bir dikdörtgenin kaç simetri doğrusu vardır?",
+   "cevap": "2",
+   "ipucu": "Köşegenler simetri doğrusu değil.",
+   "aciklama": "Yalnız kenar ortalarını birleştiren 2 doğru. (s. 205)",
+   "kavram": "Birden Çok Simetri Doğrusu",
+   "yardim": {
+    "adimlar": [
+     "Karşılıklı kenarların ortalarını birleştiren doğruları say.",
+     "Köşegenden katlayınca köşeler üst üste gelir mi? Düşün."
+    ]
+   }
+  },
+  {
+   "soru": "Kilim ve halı desenlerinde simetri neden kullanılır?",
+   "secenekler": [
+    "Kilimi daha kısa yapmak için",
+    "Renkleri azaltmak için",
+    "Görsel bütünlük ve denge için"
+   ],
+   "dogru": 2,
+   "ipucu": "Simetri ne sağlar?",
+   "aciklama": "Sanatçılar görsel bütünlük oluşturmak için simetriyi kullanır. (s. 207)",
+   "kavram": "Hayatta Simetri"
+  },
+  {
+   "soru": "İkizkenar üçgenin simetri doğrusu hangisidir?",
+   "secenekler": [
+    "Tepe köşesinden geçip tabanı dik ortalayan doğru",
+    "Tabanın üzerindeki doğru",
+    "Eş kenarlardan birinin üzerindeki doğru"
+   ],
+   "dogru": 0,
+   "ipucu": "Katlayınca iki eş kenar üst üste gelmeli.",
+   "aciklama": "Simetri doğrusu tepe köşesinden geçer ve tabanı dik ortalar. (s. 205)",
+   "kavram": "Simetrik Şekil"
+  }
+ ]
+}

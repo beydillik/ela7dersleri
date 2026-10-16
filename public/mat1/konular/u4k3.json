@@ -1,0 +1,589 @@
+{
+ "id": "u4k3",
+ "unite": "4. Tema: Dönüşüm",
+ "baslik": "Orta Dikme",
+ "sayfalar": "s. 211–213",
+ "giris": "Bir doğru parçasının simetri doğrusunu ölçü almadan, yalnızca pergel ve ölçüsüz cetvelle çizebilir miyiz? Evet! Bu konuda bu doğrunun adını, yani orta dikmeyi öğreneceğiz. Onu adım adım nasıl inşa edeceğimizi de göreceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda orta nokta, çember ile yarıçap ve simetri doğrusunun dik ortalaması işimize yarayacak. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Doğru parçası ve orta nokta",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='16.0' y1='60.0' x2='104.0' y2='60.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='16.0' cy='60.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='16.0' y='50.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>A</text><circle cx='104.0' cy='60.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='104.0' y='50.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>B</text><circle cx='60.0' cy='60.0' r='4' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='60.0' y='50.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>O</text><line x1='38.0' y1='55.0' x2='38.0' y2='65.0' stroke='#f2c14e' stroke-width='2'/><line x1='82.0' y1='55.0' x2='82.0' y2='65.0' stroke='#f2c14e' stroke-width='2'/><text x='60' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>iki eş parça</text></svg>",
+    "anlatim": "İki nokta arasında kalan düz çizgiye doğru parçası denir; AB diye yazılır. Doğru parçasını iki eş parçaya ayıran noktaya orta nokta denir.",
+    "akilda": "Orta nokta: iki eş parça",
+    "ornek": {
+     "problem": "AB doğru parçası 10 cm. Orta noktası A'dan kaç cm uzakta?",
+     "adimlar": [
+      {
+       "metin": "Orta nokta parçayı iki eş parçaya ayırır.",
+       "islem": "10 ÷ 2"
+      },
+      {
+       "metin": "Böl.",
+       "islem": "5 cm"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "AB doğru parçası 12 cm. Orta noktası A'dan kaç cm uzaktadır?",
+      "cevap": "6",
+      "ipucu": "Orta nokta parçayı ikiye böler.",
+      "aciklama": "12 ÷ 2 = 6 cm.",
+      "birim": "cm",
+      "yardim": {
+       "adimlar": [
+        "Orta nokta iki eş parça oluşturur.",
+        "12'yi 2'ye böl."
+       ]
+      }
+     },
+     {
+      "soru": "8 cm'lik bir doğru parçasının orta noktası iki uca kaçar cm uzaktadır?",
+      "cevap": "4",
+      "ipucu": "8'i ikiye böl.",
+      "aciklama": "8 ÷ 2 = 4 cm.",
+      "birim": "cm",
+      "yardim": {
+       "adimlar": [
+        "Orta nokta iki eş parça oluşturur.",
+        "8'i 2'ye böl."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Çember ve yarıçap",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='38' fill='none' stroke='#6fb3ff' stroke-width='2.5'/><line x1='60.0' y1='60.0' x2='98.0' y2='60.0' stroke='#f2c14e' stroke-width='2.5' stroke-linecap='round'/><circle cx='60.0' cy='60.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='60.0' y='52.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>M</text><text x='80' y='54' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>r</text></svg>",
+    "anlatim": "Pergelin sivri ucu çemberin merkezine konur. Pergelin iki ucu arasındaki açıklık yarıçaptır. Çemberin her noktası merkeze yarıçap kadar uzaktadır.",
+    "akilda": "Pergel açıklığı = yarıçap",
+    "ornek": {
+     "problem": "Pergel 4 cm açıldı. Çizilen çemberin üzerindeki bir nokta merkeze kaç cm uzakta?",
+     "adimlar": [
+      {
+       "metin": "Pergel açıklığı yarıçaptır.",
+       "islem": "yarıçap 4 cm"
+      },
+      {
+       "metin": "Çemberin her noktası merkeze yarıçap kadar uzaktır.",
+       "islem": "4 cm"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Pergel 5 cm açılarak bir çember çizildi. Çemberin üzerindeki her nokta merkeze kaç cm uzaktadır?",
+      "cevap": "5",
+      "ipucu": "Pergel açıklığı = yarıçap.",
+      "aciklama": "Her nokta merkeze yarıçap kadar, 5 cm uzaktadır.",
+      "birim": "cm",
+      "yardim": {
+       "adimlar": [
+        "Pergelin açıklığı neyi verir?",
+        "Çemberin her noktası merkeze bu kadar uzaktır."
+       ]
+      }
+     },
+     {
+      "soru": "Pergelin sivri ucu nereye konur?",
+      "secenekler": [
+       "Çemberin merkezine",
+       "Çemberin üzerine",
+       "Kâğıdın kenarına"
+      ],
+      "dogru": 0,
+      "ipucu": "Pergel merkezin çevresinde döner.",
+      "aciklama": "Sivri uç merkeze konur, kalemli uç çemberi çizer."
+     }
+    ]
+   },
+   {
+    "ad": "Simetri doğrusu dik ortalar",
+    "sinif": "Konu 1",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='60.0' y1='14.0' x2='60.0' y2='106.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='24.0' y1='60.0' x2='96.0' y2='60.0' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><path d='M69.0 60.0 L69.0 69.0 L60.0 69.0' stroke='#f5f6fa' stroke-width='1.6' fill='none'/><line x1='42.0' y1='55.0' x2='42.0' y2='65.0' stroke='#f5f6fa' stroke-width='2'/><line x1='78.0' y1='55.0' x2='78.0' y2='65.0' stroke='#f5f6fa' stroke-width='2'/><circle cx='24.0' cy='60.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='24.0' y='50.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='96.0' cy='60.0' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='96.0' y='50.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>A′</text></svg>",
+    "anlatim": "Simetri doğrusu, bir nokta ile görüntüsünü birleştiren doğru parçasını dik keser ve iki eş parçaya ayırır.",
+    "akilda": "Dik keser, tam ortadan",
+    "ornek": {
+     "problem": "A ile A′ arası 6 kare. Simetri doğrusu A'dan kaç kare uzakta?",
+     "adimlar": [
+      {
+       "metin": "Simetri doğrusu parçayı tam ortadan böler.",
+       "islem": "6 ÷ 2"
+      },
+      {
+       "metin": "Böl.",
+       "islem": "3 kare"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "A ile görüntüsü A′ arası 8 kare. Simetri doğrusu A'dan kaç kare uzaktadır?",
+      "cevap": "4",
+      "ipucu": "Simetri doğrusu parçayı tam ortadan böler.",
+      "aciklama": "8 ÷ 2 = 4 kare.",
+      "yardim": {
+       "adimlar": [
+        "Simetri doğrusu AA′ parçasını iki eş parçaya ayırır.",
+        "8'i 2'ye böl."
+       ]
+      }
+     },
+     {
+      "soru": "Simetri doğrusu, A ile A′'yü birleştiren parçayı kaç derecelik açıyla keser?",
+      "secenekler": [
+       "180°",
+       "90°",
+       "45°"
+      ],
+      "dogru": 1,
+      "ipucu": "Dik keser.",
+      "aciklama": "Simetri doğrusu bu parçayı dik, yani 90°'lik açıyla keser."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Orta Dikme",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M65.2 51.3 A45.0 45.0 0 0 0 51.9 30.4' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M51.9 97.6 A45.0 45.0 0 0 0 65.2 76.7' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M68.1 30.4 A45.0 45.0 0 0 0 54.8 51.3' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M54.8 76.7 A45.0 45.0 0 0 0 68.1 97.6' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><line x1='60.0' y1='33.9' x2='60.0' y2='94.1' stroke='#f783ac' stroke-width='3' stroke-linecap='round'/><path d='M68.0 64.0 L68.0 72.0 L60.0 72.0' stroke='#f5f6fa' stroke-width='1.6' fill='none'/><line x1='41.0' y1='59.0' x2='41.0' y2='69.0' stroke='#f5f6fa' stroke-width='2'/><line x1='79.0' y1='59.0' x2='79.0' y2='69.0' stroke='#f5f6fa' stroke-width='2'/><line x1='22.0' y1='64.0' x2='98.0' y2='64.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='22.0' cy='64.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='12.0' y='82.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>A</text><circle cx='98.0' cy='64.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='108.0' y='82.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>B</text><circle cx='60.0' cy='39.9' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='70.0' y='35.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>K</text><circle cx='60.0' cy='88.1' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='70.0' y='100.1' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>L</text></svg>",
+   "aciklama": "Bir doğru parçasını dik kesen ve iki eş parçaya ayıran doğruya orta dikme denir. (s. 213)",
+   "ek": "Orta dikme bir doğru, ışın ya da doğru parçası olabilir. Doğru parçasını tam ortasından, 90°'lik açıyla keser. (s. 213)",
+   "akilda": "Dik + tam ortadan",
+   "soru": {
+    "soru": "Orta dikme, doğru parçasını nasıl keser?",
+    "secenekler": [
+     "Eğik keser ve iki eş parçaya ayırır.",
+     "Dik keser ama parçalar farklı uzunluktadır.",
+     "Dik keser ve iki eş parçaya ayırır."
+    ],
+    "dogru": 2,
+    "ipucu": "Adındaki iki kelimeye bak: orta ve dikme.",
+    "aciklama": "Orta dikme parçayı dik keser ve iki eş parçaya ayırır. (s. 213)"
+   }
+  },
+  {
+   "ad": "Simetri Doğrusu = Orta Dikme",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='20.0' y1='90.0' x2='50.0' y2='40.0' stroke='#4fc3a1' stroke-width='3' stroke-linecap='round'/><line x1='100.0' y1='90.0' x2='70.0' y2='40.0' stroke='#ffa26b' stroke-width='3' stroke-linecap='round'/><line x1='60.0' y1='14.0' x2='60.0' y2='106.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='20.0' cy='90.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='14.0' y='104.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>A</text><circle cx='50.0' cy='40.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='42.0' y='34.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>B</text><circle cx='100.0' cy='90.0' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='108.0' y='104.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>A′</text><circle cx='70.0' cy='40.0' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='80.0' y='34.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>B′</text></svg>",
+   "aciklama": "Bir doğru parçasının simetri doğrusu aynı zamanda o doğru parçasının orta dikmesidir. (s. 213)",
+   "ek": "AB ile A′B′ bir doğruya göre simetrikse aradaki simetri doğrusu, A ile A′'yü birleştiren parçanın orta dikmesidir. (s. 211, 213)",
+   "akilda": "Parçanın simetri doğrusu = orta dikmesi",
+   "soru": {
+    "soru": "AB doğru parçasının simetri doğrusunun başka adı nedir?",
+    "secenekler": [
+     "AB'nin orta dikmesi",
+     "AB'nin açıortayı",
+     "AB'nin uzantısı"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki eşitliğe bak.",
+    "aciklama": "Doğru parçasının simetri doğrusu, orta dikmesidir. (s. 213)"
+   }
+  },
+  {
+   "ad": "Pergel ve Ölçüsüz Cetvel",
+   "renk": "#2364c7",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 18 L36 92 M60 18 L82 90' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/><circle cx='60' cy='18' r='6' fill='#f2c14e'/><path d='M81.8 88.0 A46.0 46.0 0 0 0 59.0 52.2' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M82 90 l-3 10 l6 0z' fill='#6fb3ff'/><line x1='14.0' y1='108.0' x2='106.0' y2='108.0' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "İnşa, yalnızca pergel ve ölçüsüz cetvel kullanarak çizim yapmaktır. Cetvelle ölçü almayız, yalnızca düz çizgi çizeriz. Pergelle yay çizeriz. (s. 211)",
+   "ek": "Daha önceki yıllarda ikizkenar üçgen ve eşkenar dörtgeni de pergel ve ölçüsüz cetvelle inşa etmiştik. (s. 211)",
+   "akilda": "Ölçme yok: pergel + düz çizgi",
+   "soru": {
+    "soru": "İnşa yaparken ölçüsüz cetveli ne için kullanırız?",
+    "secenekler": [
+     "Yay çizmek için",
+     "Düz çizgi çizmek için",
+     "Uzunluk ölçmek için"
+    ],
+    "dogru": 1,
+    "ipucu": "Cetvelin üzerinde sayı yok.",
+    "aciklama": "Ölçüsüz cetvel yalnızca düz çizgi çizmeye yarar; yayı pergel çizer. (s. 211)"
+   }
+  },
+  {
+   "ad": "Eş Çemberler",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='44' cy='60' r='30' fill='none' stroke='#6fb3ff' stroke-width='2.2'/><circle cx='76' cy='60' r='30' fill='none' stroke='#6fb3ff' stroke-width='2.2'/><line x1='44.0' y1='60.0' x2='76.0' y2='60.0' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><circle cx='44.0' cy='60.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='36.0' y='64.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>A</text><circle cx='76.0' cy='60.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='84.0' y='64.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>B</text><circle cx='60.0' cy='33.5' r='4' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='60.0' cy='86.5' r='4' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/></svg>",
+   "aciklama": "Orta dikme inşasında A ve B merkezli, yarıçapları eşit iki çember ya da yay çizeriz. Bunlar birbirini iki noktada kesmelidir. (s. 212–213)",
+   "ek": "Bunun için pergel açıklığı AB'nin yarısından uzun olmalı. Kısa olursa yaylar birbirine değmez. Açıklık AB'den uzun ya da kısa olabilir; yeter ki yarısından uzun olsun. (s. 212)",
+   "akilda": "Aynı açıklık, yarıdan uzun",
+   "cozum": {
+    "baslik": "Pergeli ne kadar açmalı?",
+    "problem": "AB 8 cm. Pergel 3 cm açılırsa yaylar kesişir mi?",
+    "adimlar": [
+     {
+      "metin": "AB'nin yarısını bul.",
+      "islem": "8 ÷ 2 = 4 cm"
+     },
+     {
+      "metin": "Pergel açıklığını yarıyla karşılaştır.",
+      "islem": "3 cm < 4 cm"
+     },
+     {
+      "metin": "Açıklık yarıdan kısa: yaylar ortaya kadar uzanamaz.",
+      "islem": "kesişmez ✗"
+     },
+     {
+      "metin": "Pergeli yarıdan uzun aç, ör. 5 cm.",
+      "islem": "5 cm > 4 cm → kesişir ✓"
+     }
+    ],
+    "sonuc": "Yayların iki noktada kesişmesi için pergel açıklığı AB'nin yarısından uzun olmalı. (s. 212)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "AB 10 cm. Pergel 6 cm açılırsa yaylar kesişir mi?",
+    "adimlar": [
+     {
+      "metin": "AB'nin yarısını bul.",
+      "soru": {
+       "soru": "AB'nin yarısı kaç cm?",
+       "cevap": "5",
+       "ipucu": "10'u ikiye böl.",
+       "aciklama": "10 ÷ 2 = 5 cm.",
+       "birim": "cm",
+       "yardim": {
+        "adimlar": [
+         "Yarısı için 2'ye böleriz.",
+         "10'u 2'ye böl."
+        ]
+       }
+      },
+      "islem": "10 ÷ 2 = 5 cm"
+     },
+     {
+      "metin": "Açıklığı yarıyla karşılaştır.",
+      "soru": {
+       "soru": "6 cm açıklıkla yaylar kesişir mi?",
+       "secenekler": [
+        "Hayır, 6 cm yarıdan kısa.",
+        "Hayır, 6 cm AB'den kısa.",
+        "Evet, 6 cm yarıdan uzun."
+       ],
+       "dogru": 2,
+       "ipucu": "6 ile 5'i karşılaştır.",
+       "aciklama": "6 cm > 5 cm; açıklık yarıdan uzun, yaylar kesişir."
+      },
+      "islem": "6 > 5 → kesişir ✓"
+     }
+    ],
+    "sonuc": "Harika! 6 cm açıklıkla orta dikme inşa edilebilir."
+   },
+   "soru": {
+    "soru": "AB 6 cm. Pergel hangi açıklıkta açılırsa yaylar kesişmez?",
+    "secenekler": [
+     "2 cm",
+     "4 cm",
+     "5 cm"
+    ],
+    "dogru": 0,
+    "ipucu": "AB'nin yarısı kaç cm?",
+    "aciklama": "Yarısı 3 cm. 2 cm yarıdan kısa; yaylar kesişmez. (s. 212)"
+   }
+  },
+  {
+   "ad": "Orta Dikme İnşası",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M65.2 51.3 A45.0 45.0 0 0 0 51.9 30.4' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M51.9 97.6 A45.0 45.0 0 0 0 65.2 76.7' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M68.1 30.4 A45.0 45.0 0 0 0 54.8 51.3' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M54.8 76.7 A45.0 45.0 0 0 0 68.1 97.6' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><line x1='22.0' y1='64.0' x2='98.0' y2='64.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='22.0' cy='64.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='12.0' y='82.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>A</text><circle cx='98.0' cy='64.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='108.0' y='82.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>B</text><circle cx='60.0' cy='39.9' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='70.0' y='35.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>K</text><circle cx='60.0' cy='88.1' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='70.0' y='100.1' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>L</text></svg>",
+   "aciklama": "Orta dikme 4 adımda inşa edilir: A merkezli yay çiz; aynı açıklıkla B merkezli yay çiz; yayların kesiştiği iki noktayı bul; bu noktaları ölçüsüz cetvelle birleştir. (s. 212–213)",
+   "ek": "Yayları farklı yöntemlerle çizebiliriz: bütün çember, yarım çember ya da yalnız küçük yaylar. Önemli olan yayların eş olması ve iki noktada kesişmesi. (s. 213)",
+   "akilda": "Yay, yay, kesişim, birleştir",
+   "cozum": {
+    "baslik": "AB'nin orta dikmesini inşa edelim",
+    "problem": "Yalnızca pergel ve ölçüsüz cetvelle AB'nin orta dikmesini çizelim.",
+    "svg": "<svg viewBox='0 0 300 170' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='70.0' y1='85.0' x2='230.0' y2='85.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='70.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='60.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>A</text><circle cx='230.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='240.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>B</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Pergeli AB'nin yarısından uzun aç. Sivri ucu A'ya koy, AB'nin üstüne ve altına yay çiz.",
+      "islem": "A merkezli yaylar",
+      "svg": "<svg viewBox='0 0 300 170' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M163.1 50.7 A99.2 99.2 0 0 0 130.7 6.6' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M130.7 163.4 A99.2 99.2 0 0 0 163.1 119.3' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><line x1='70.0' y1='85.0' x2='230.0' y2='85.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='70.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='60.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>A</text><circle cx='230.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='240.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>B</text></svg>"
+     },
+     {
+      "metin": "Açıklığı bozmadan sivri ucu B'ye koy, aynı yayları çiz. Yaylar K ve L'de kesişir.",
+      "islem": "K ve L",
+      "svg": "<svg viewBox='0 0 300 170' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M163.1 50.7 A99.2 99.2 0 0 0 130.7 6.6' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M130.7 163.4 A99.2 99.2 0 0 0 163.1 119.3' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M169.3 6.6 A99.2 99.2 0 0 0 136.9 50.7' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M136.9 119.3 A99.2 99.2 0 0 0 169.3 163.4' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><line x1='70.0' y1='85.0' x2='230.0' y2='85.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='70.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='60.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>A</text><circle cx='230.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='240.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>B</text><circle cx='150.0' cy='26.3' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.0' y='22.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>K</text><circle cx='150.0' cy='143.7' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.0' y='155.7' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>L</text></svg>"
+     },
+     {
+      "metin": "K ile L'yi ölçüsüz cetvelle birleştir.",
+      "islem": "KL = orta dikme",
+      "svg": "<svg viewBox='0 0 300 170' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M163.1 50.7 A99.2 99.2 0 0 0 130.7 6.6' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M130.7 163.4 A99.2 99.2 0 0 0 163.1 119.3' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M169.3 6.6 A99.2 99.2 0 0 0 136.9 50.7' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M136.9 119.3 A99.2 99.2 0 0 0 169.3 163.4' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><line x1='150.0' y1='11.7' x2='150.0' y2='158.3' stroke='#f783ac' stroke-width='3' stroke-linecap='round'/><path d='M158.0 85.0 L158.0 93.0 L150.0 93.0' stroke='#f5f6fa' stroke-width='1.6' fill='none'/><line x1='110.0' y1='80.0' x2='110.0' y2='90.0' stroke='#f5f6fa' stroke-width='2'/><line x1='190.0' y1='80.0' x2='190.0' y2='90.0' stroke='#f5f6fa' stroke-width='2'/><line x1='70.0' y1='85.0' x2='230.0' y2='85.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='70.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='60.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>A</text><circle cx='230.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='240.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>B</text><circle cx='150.0' cy='26.3' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.0' y='22.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>K</text><circle cx='150.0' cy='143.7' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.0' y='155.7' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>L</text></svg>"
+     }
+    ],
+    "sonuc": "KL doğrusu AB'yi dik kesiyor ve iki eş parçaya ayırıyor: AB'nin orta dikmesi. (s. 212–213)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "CD'nin orta dikmesini inşa ediyorsun. C merkezli yayları çizdin.",
+    "adimlar": [
+     {
+      "metin": "Sıradaki adımı seç.",
+      "soru": {
+       "soru": "Şimdi ne yaparsın?",
+       "secenekler": [
+        "C ile D'yi birleştiririm.",
+        "Açıklığı bozmadan D merkezli yaylar çizerim.",
+        "Pergeli küçültüp D merkezli yay çizerim."
+       ],
+       "dogru": 1,
+       "ipucu": "İki yay eş olmalıydı.",
+       "aciklama": "Pergel açıklığını bozmadan D merkezli yayları çizeriz."
+      },
+      "islem": "D merkezli eş yaylar → K ve L"
+     },
+     {
+      "metin": "Yaylar K ve L'de kesişti.",
+      "soru": {
+       "soru": "Orta dikmeyi çizmek için hangi iki noktayı birleştirirsin?",
+       "secenekler": [
+        "C ve K",
+        "C ve D",
+        "K ve L"
+       ],
+       "dogru": 2,
+       "ipucu": "Kesişim noktaları hangileriydi?",
+       "aciklama": "K ile L birleştirilir; KL orta dikmedir."
+      },
+      "islem": "KL = orta dikme"
+     }
+    ],
+    "sonuc": "Harika! CD'nin orta dikmesini inşa ettin."
+   },
+   "soru": {
+    "soru": "Orta dikme inşasında yaylar çizildikten sonra son adım hangisidir?",
+    "secenekler": [
+     "Kesişim noktalarını birleştirmek",
+     "Pergeli kapatmak",
+     "A ile B'yi silmek"
+    ],
+    "dogru": 0,
+    "ipucu": "Yay, yay, kesişim, …",
+    "aciklama": "Son adımda kesişim noktaları ölçüsüz cetvelle birleştirilir. (s. 212)"
+   }
+  },
+  {
+   "ad": "İki Uca Eşit Uzak",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='24.0,64.0 60.0,28.0 96.0,64.0 60.0,100.0' fill='#b197fc' fill-opacity='0.3' stroke='#b197fc' stroke-width='2.2' stroke-linejoin='round'/><line x1='24.0' y1='64.0' x2='96.0' y2='64.0' stroke='#f5f6fa' stroke-width='2' stroke-linecap='round'/><line x1='60.0' y1='16.0' x2='60.0' y2='108.0' stroke='#f783ac' stroke-width='2.5' stroke-linecap='round'/><line x1='24.0' y1='64.0' x2='60.0' y2='28.0' stroke='#6fb3ff' stroke-width='2.5' stroke-linecap='round'/><line x1='96.0' y1='64.0' x2='60.0' y2='28.0' stroke='#6fb3ff' stroke-width='2.5' stroke-linecap='round'/><line x1='38.5' y1='42.5' x2='45.5' y2='49.5' stroke='#6fb3ff' stroke-width='2'/><line x1='74.5' y1='49.5' x2='81.5' y2='42.5' stroke='#6fb3ff' stroke-width='2'/><circle cx='24.0' cy='64.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='16.0' y='68.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>A</text><circle cx='96.0' cy='64.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='105.0' y='68.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>B</text><circle cx='60.0' cy='28.0' r='4' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='70.0' y='26.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>K</text></svg>",
+   "aciklama": "Yayların kesiştiği K noktası A'ya da B'ye de pergel açıklığı kadar uzaktır: KA = KB. Orta dikmenin üzerindeki her nokta doğru parçasının iki ucuna eşit uzaklıktadır. (s. 212)",
+   "ek": "Bu yüzden AKB bir ikizkenar üçgen, AKBL bir eşkenar dörtgendir. Kerim'in hatırladığı inşalar bunlardı! (s. 211)",
+   "akilda": "Orta dikmede: iki uca eşit uzak",
+   "soru": {
+    "soru": "Orta dikme inşasında pergel 5 cm açıldı. K noktası B'ye kaç cm uzaktadır?",
+    "cevap": "5",
+    "ipucu": "Bilgi kartı: KA = KB = pergel açıklığı.",
+    "aciklama": "K, B merkezli yayın üzerinde; B'ye pergel açıklığı kadar, 5 cm uzakta. (s. 212)",
+    "birim": "cm",
+    "yardim": {
+     "adimlar": [
+      "K noktası hangi yayların üzerinde?",
+      "Bir yayın her noktası merkeze pergel açıklığı kadar uzaktır."
+     ]
+    }
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisiyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Tanım",
+     "uyeler": [
+      "Orta Dikme",
+      "Simetri Doğrusu = Orta Dikme"
+     ]
+    },
+    {
+     "etiket": "İnşa",
+     "uyeler": [
+      "Pergel ve Ölçüsüz Cetvel",
+      "Eş Çemberler",
+      "Orta Dikme İnşası"
+     ]
+    },
+    {
+     "etiket": "Özellik",
+     "uyeler": [
+      "İki Uca Eşit Uzak"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Orta dikme doğru parçasını dik keser ve iki eş parçaya ayırır.",
+  "Bir doğru parçasının simetri doğrusu, orta dikmesidir.",
+  "İnşada yalnızca pergel ve ölçüsüz cetvel kullanılır.",
+  "A ve B merkezli yaylar aynı açıklıkta ve AB'nin yarısından uzun çizilir.",
+  "Yay, yay, kesişim, birleştir: orta dikme hazır.",
+  "Orta dikmenin üzerindeki her nokta iki uca eşit uzaklıktadır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden cetvelle ölçüp ortayı bulmuyoruz?",
+   "cevap": "Ölçmek de bir yöntem ama inşada amaç ölçüsüz çizmektir. Pergel ve ölçüsüz cetvelle bulunan orta dikme her zaman tam doğrudur; cetvelde okuma hatası olmaz. (s. 211)"
+  },
+  {
+   "soru": "Pergel açıklığı AB'den uzun olabilir mi?",
+   "cevap": "Evet. Açıklık AB'nin yarısından uzun olduğu sürece yaylar kesişir. Sınıftaki herkes farklı açıklık kullansa da hepsi aynı orta dikmeyi bulur. (s. 212)"
+  },
+  {
+   "soru": "Yayları bütün çember olarak çizebilir miyim?",
+   "cevap": "Evet. Kitapta bütün çember, yarım çember ya da küçük yaylarla inşa yöntemleri gösteriliyor. Önemli olan eş olmaları. (s. 213)"
+  },
+  {
+   "soru": "Orta dikme nerede işe yarar?",
+   "cevap": "İki noktaya eşit uzaklıktaki yerleri bulmak için. Örneğin iki köye eşit uzaklıkta bir kuyu açılacaksa kuyu, köyleri birleştiren parçanın orta dikmesi üzerinde olmalı."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Arkadaşın orta dikme inşa ederken B merkezli yayı daha küçük açıklıkla çizdi. Ne olur, nasıl düzeltirsin?",
+   "ornekCevap": "Yaylar eş olmadığı için kesişim noktaları A ve B'ye eşit uzak olmaz; çizdiği çizgi AB'yi tam ortadan bölmez. Pergeli A merkezli yaydaki açıklığa geri açıp B merkezli yayı yeniden çizmeli.",
+   "anahtarlar": [
+    "eş",
+    "açıklı",
+    "yay",
+    "orta",
+    "eşit"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi orta dikmenin özelliğidir?",
+   "secenekler": [
+    "Doğru parçasının bir ucundan geçer.",
+    "Doğru parçasını dik keser ve tam ortadan böler.",
+    "Doğru parçasına paraleldir."
+   ],
+   "dogru": 1,
+   "ipucu": "Orta + dikme",
+   "aciklama": "Orta dikme parçayı dik keser ve iki eş parçaya ayırır. (s. 213)",
+   "kavram": "Orta Dikme"
+  },
+  {
+   "soru": "AB 14 cm. Orta dikme AB'yi iki parçaya ayırıyor. Parçalardan biri kaç cm?",
+   "cevap": "7",
+   "ipucu": "Orta dikme iki eş parça oluşturur.",
+   "aciklama": "14 ÷ 2 = 7 cm. (s. 213)",
+   "birim": "cm",
+   "kavram": "Orta Dikme",
+   "yardim": {
+    "adimlar": [
+     "Orta dikme parçayı eş iki parçaya ayırır.",
+     "14'ü 2'ye böl."
+    ]
+   }
+  },
+  {
+   "soru": "Orta dikme doğru parçasını kaç derecelik açıyla keser?",
+   "cevap": "90",
+   "ipucu": "Dik keser.",
+   "aciklama": "Orta dikme parçayı dik, yani 90°'lik açıyla keser. (s. 213)",
+   "birim": "°",
+   "kavram": "Orta Dikme",
+   "yardim": {
+    "adimlar": [
+     "Dik açı kaç derecedir? Hatırla."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki inşada sıradaki adım hangisidir?",
+   "secenekler": [
+    "A merkezli yeni bir çember çizmek",
+    "Pergeli kapatmak",
+    "K ile L'yi birleştirmek"
+   ],
+   "dogru": 2,
+   "ipucu": "Yay, yay, kesişim, …",
+   "aciklama": "Kesişim noktaları bulundu; şimdi K ile L birleştirilir. (s. 212)",
+   "svg": "<svg viewBox='0 0 300 170' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M163.1 50.7 A99.2 99.2 0 0 0 130.7 6.6' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M130.7 163.4 A99.2 99.2 0 0 0 163.1 119.3' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M169.3 6.6 A99.2 99.2 0 0 0 136.9 50.7' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><path d='M136.9 119.3 A99.2 99.2 0 0 0 169.3 163.4' stroke='#6fb3ff' stroke-width='2.2' fill='none' stroke-linecap='round'/><line x1='70.0' y1='85.0' x2='230.0' y2='85.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='70.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='60.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>A</text><circle cx='230.0' cy='85.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='240.0' y='103.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>B</text><circle cx='150.0' cy='26.3' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.0' y='22.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>K</text><circle cx='150.0' cy='143.7' r='3.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.0' y='155.7' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>L</text></svg>",
+   "kavram": "Orta Dikme İnşası"
+  },
+  {
+   "soru": "AB 10 cm. Hangi pergel açıklığıyla orta dikme inşa edilebilir?",
+   "secenekler": [
+    "6 cm",
+    "4 cm",
+    "3 cm"
+   ],
+   "dogru": 0,
+   "ipucu": "Açıklık AB'nin yarısından uzun olmalı.",
+   "aciklama": "Yarısı 5 cm; yalnız 6 cm yarıdan uzun. (s. 212)",
+   "kavram": "Eş Çemberler"
+  },
+  {
+   "soru": "A ve B merkezli yaylar neden aynı açıklıkla çizilir?",
+   "secenekler": [
+    "İnşa daha kısa sürsün diye",
+    "Kesişim noktaları A ve B'ye eşit uzak olsun diye",
+    "Yaylar daha güzel görünsün diye"
+   ],
+   "dogru": 1,
+   "ipucu": "Kesişim noktası iki uca nasıl uzak olmalı?",
+   "aciklama": "Eş yaylar kesişim noktalarını A ve B'ye eşit uzak yapar. (s. 212)",
+   "kavram": "Eş Çemberler"
+  },
+  {
+   "soru": "Orta dikme inşasında pergel 6 cm açıldı. AKBL dörtgeninin çevresi kaç cm?",
+   "cevap": "24",
+   "ipucu": "Dört kenarın hepsi pergel açıklığı kadar.",
+   "aciklama": "AK = KB = BL = LA = 6 cm; 4 · 6 = 24 cm. (s. 211)",
+   "birim": "cm",
+   "kavram": "İki Uca Eşit Uzak",
+   "yardim": {
+    "adimlar": [
+     "K ve L, A'ya ve B'ye pergel açıklığı kadar uzak.",
+     "Dörtgenin dört kenarı da 6 cm.",
+     "Dört kenarı topla."
+    ]
+   }
+  },
+  {
+   "soru": "AB ile A′B′ bir doğruya göre simetrik. Aradaki simetri doğrusunu bulmak için hangi parçanın orta dikmesini inşa ederiz?",
+   "secenekler": [
+    "AB",
+    "A′B′",
+    "AA′"
+   ],
+   "dogru": 2,
+   "ipucu": "Simetri doğrusu nokta ile görüntüsü arasındadır.",
+   "aciklama": "Simetri doğrusu AA′ parçasını dik ortalar; AA′'nün orta dikmesidir. (s. 211)",
+   "kavram": "Simetri Doğrusu = Orta Dikme"
+  },
+  {
+   "soru": "İnşada hangisi yapılmaz?",
+   "secenekler": [
+    "Cetvelle uzunluk ölçmek",
+    "Pergelle yay çizmek",
+    "Ölçüsüz cetvelle düz çizgi çizmek"
+   ],
+   "dogru": 0,
+   "ipucu": "Cetvel ölçüsüz.",
+   "aciklama": "İnşada ölçü alınmaz; yalnız pergel ve ölçüsüz cetvel kullanılır. (s. 211)",
+   "kavram": "Pergel ve Ölçüsüz Cetvel"
+  },
+  {
+   "soru": "Görseldeki hangi numaralı çizgi AB'nin orta dikmesidir?",
+   "secenekler": [
+    "1",
+    "2",
+    "3"
+   ],
+   "dogru": 0,
+   "ipucu": "Hem dik olmalı hem tam ortadan geçmeli.",
+   "aciklama": "1 dik ve tam ortadan geçiyor. 2 dik ama ortada değil, 3 ortadan geçiyor ama dik değil. (s. 213)",
+   "svg": "<svg viewBox='0 0 300 170' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40.0' y1='90.0' x2='260.0' y2='90.0' stroke='#f5f6fa' stroke-width='3' stroke-linecap='round'/><circle cx='40.0' cy='90.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='40.0' y='110.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>A</text><circle cx='260.0' cy='90.0' r='4' fill='#f5f6fa' stroke='#1b2340' stroke-width='1.5'/><text x='260.0' y='110.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>B</text><line x1='150.0' y1='20.0' x2='150.0' y2='160.0' stroke='#9aa3bf' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='205.0' y1='20.0' x2='205.0' y2='160.0' stroke='#9aa3bf' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='115.0' y1='20.0' x2='185.0' y2='160.0' stroke='#9aa3bf' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='150' cy='14' r='10' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='150' y='18.5' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>1</text><circle cx='205' cy='14' r='10' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='205' y='18.5' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>2</text><circle cx='115' cy='14' r='10' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='115' y='18.5' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>3</text></svg>",
+   "kavram": "Orta Dikme"
+  }
+ ]
+}
