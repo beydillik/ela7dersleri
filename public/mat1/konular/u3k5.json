@@ -1,0 +1,634 @@
+{
+ "id": "u3k5",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Temsil Değeri ve Tahmin",
+ "sayfalar": "s. 173–179",
+ "giris": "Grafiği çizdik. Şimdi yorumlama zamanı! Bu konuda grafiğin genel yönünü (eğilimi) okuyacağız, gelecek için tahmin yapacağız. Sonra bir veri setini tek bir sayıyla özetlemeyi ve bir iddiayı verilerle sınamayı öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda aritmetik ortalama, ortanca ve tepe değeri kullanacağız. Önceki yıllardan hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Aritmetik ortalama",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='58' width='14' height='32' rx='2' fill='#4fc3a1'/><rect x='38' y='42' width='14' height='48' rx='2' fill='#4fc3a1'/><rect x='58' y='26' width='14' height='64' rx='2' fill='#4fc3a1'/><text x='42' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>4 + 6 + 8</text><text x='92' y='60' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>=</text><rect x='80' y='42' width='7' height='48' rx='2' fill='#f2c14e'/><rect x='89' y='42' width='7' height='48' rx='2' fill='#f2c14e'/><rect x='98' y='42' width='7' height='48' rx='2' fill='#f2c14e'/><text x='94' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>6 6 6</text></svg>",
+    "anlatim": "Bütün verileri topla, toplamı veri sayısına böl. Sonuç, verileri eşit paylaştırsaydık her birine düşen değerdir.",
+    "akilda": "Topla, kaç tane varsa ona böl",
+    "ornek": {
+     "problem": "4, 6, 8 sayılarının aritmetik ortalaması kaçtır?",
+     "adimlar": [
+      {
+       "metin": "Bütün sayıları topla.",
+       "islem": "4 + 6 + 8 = 18"
+      },
+      {
+       "metin": "Kaç sayı var? 3. Toplamı 3'e böl.",
+       "islem": "18 ÷ 3 = 6"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "2, 5, 8 sayılarının aritmetik ortalaması kaçtır?",
+      "cevap": "5",
+      "ipucu": "Topla, sonra 3'e böl.",
+      "aciklama": "2 + 5 + 8 = 15; 15 ÷ 3 = 5.",
+      "yardim": {
+       "adimlar": [
+        "Üç sayıyı topla.",
+        "Toplamı 3'e böl."
+       ]
+      }
+     },
+     {
+      "soru": "10, 20, 30, 40 sayılarının aritmetik ortalaması kaçtır?",
+      "cevap": "25",
+      "ipucu": "Topla, sonra 4'e böl.",
+      "aciklama": "10 + 20 + 30 + 40 = 100; 100 ÷ 4 = 25.",
+      "yardim": {
+       "adimlar": [
+        "Dört sayıyı topla.",
+        "Toplamı 4'e böl."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Ortanca",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='8' y='42' width='19' height='28' rx='5' fill='#5a6280'/><text x='17.5' y='61' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>1</text><rect x='29' y='42' width='19' height='28' rx='5' fill='#5a6280'/><text x='38.5' y='61' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>3</text><rect x='50' y='42' width='19' height='28' rx='5' fill='#f2c14e'/><text x='59.5' y='61' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>5</text><rect x='71' y='42' width='19' height='28' rx='5' fill='#5a6280'/><text x='80.5' y='61' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>7</text><rect x='92' y='42' width='19' height='28' rx='5' fill='#5a6280'/><text x='101.5' y='61' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>9</text><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>sırala</text><text x='60' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>ortadaki</text></svg>",
+    "anlatim": "Verileri küçükten büyüğe sırala. Tam ortadaki değer ortancadır. Veri sayısı çiftse ortadaki iki değerin ortalaması alınır.",
+    "akilda": "Sırala, ortadakini al",
+    "ornek": {
+     "problem": "7, 1, 9, 3, 5 verilerinin ortancası kaçtır?",
+     "adimlar": [
+      {
+       "metin": "Küçükten büyüğe sırala.",
+       "islem": "1, 3, 5, 7, 9"
+      },
+      {
+       "metin": "5 veri var; ortadaki 3. sıradaki.",
+       "islem": "Ortanca = 5"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "8, 2, 6 verilerinin ortancası kaçtır?",
+      "cevap": "6",
+      "ipucu": "Önce sırala: 2, 6, 8.",
+      "aciklama": "Sıralı: 2, 6, 8. Ortadaki 6.",
+      "yardim": {
+       "adimlar": [
+        "Sayıları küçükten büyüğe sırala.",
+        "Ortadaki sayıyı bul."
+       ]
+      }
+     },
+     {
+      "soru": "4, 9, 1, 7, 3 verilerinin ortancası kaçtır?",
+      "cevap": "4",
+      "ipucu": "Önce sırala.",
+      "aciklama": "Sıralı: 1, 3, 4, 7, 9. Ortadaki 4.",
+      "yardim": {
+       "adimlar": [
+        "Sayıları küçükten büyüğe sırala.",
+        "5 sayı var; 3. sıradakini bul."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Tepe değer",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='86' x2='106' y2='86' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='32' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>2</text><circle cx='32' cy='76' r='6' fill='#4fc3a1'/><circle cx='32' cy='61' r='6' fill='#4fc3a1'/><text x='60' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>3</text><circle cx='60' cy='76' r='6' fill='#f2c14e'/><circle cx='60' cy='61' r='6' fill='#f2c14e'/><circle cx='60' cy='46' r='6' fill='#f2c14e'/><text x='88' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>4</text><circle cx='88' cy='76' r='6' fill='#4fc3a1'/><text x='60' y='20' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>en çok tekrar</text></svg>",
+    "anlatim": "Veri setinde en çok tekrar eden değere tepe değer denir. Nokta grafiğinde en yüksek yığındır.",
+    "akilda": "En çok tekrar eden",
+    "sorular": [
+     {
+      "soru": "2, 3, 3, 5, 3, 2 verilerinin tepe değeri kaçtır?",
+      "cevap": "3",
+      "ipucu": "Hangi sayı en çok yazılmış?",
+      "aciklama": "3 üç kez tekrar ediyor: tepe değer 3.",
+      "yardim": {
+       "adimlar": [
+        "Her sayının kaç kez yazıldığını say.",
+        "En çok yazılan sayıyı seç."
+       ]
+      }
+     },
+     {
+      "soru": "10,5 · 12,5 · 10,5 · 9,0 verilerinin tepe değeri kaçtır?",
+      "cevap": "10,5",
+      "ipucu": "Hangi sayı iki kez yazılmış?",
+      "aciklama": "10,5 iki kez tekrar ediyor.",
+      "denk": true,
+      "yardim": {
+       "adimlar": [
+        "Her sayının kaç kez yazıldığını say.",
+        "En çok yazılan sayıyı seç."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Eğilim",
+   "renk": "#2364c7",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='96' x2='108' y2='96' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><polyline points='20,30 36,38 52,32 68,54 84,50 100,76' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round'/><line x1='18' y1='24' x2='100' y2='86' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='5 4'/><path d='M104 90 l-10 -1 5 -7z' fill='#f2c14e'/><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>genel yön</text></svg>",
+   "aciklama": "Eğilim, çizginin genel yönüdür. Arada küçük inişler çıkışlar olsa da çizgi genel olarak artıyor mu, azalıyor mu ona bakarız.",
+   "ek": "Türkiye'de ortalama kar örtülü gün sayısı 1970–1980'de 30,0 iken 2014–2024'te 22,4 olmuş. Arada küçük bir artış olsa da genel eğilim azalıştır. (s. 175)",
+   "akilda": "Genel yön: eğilim",
+   "cozum": {
+    "baslik": "Eğilimi bul",
+    "problem": "Kar örtülü gün sayısının 1970–2024 arasındaki eğilimi nasıldır?",
+    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>20,0</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>22,0</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>24,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>26,0</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>28,0</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>30,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1970–80</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1981–91</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1992–02</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2003–13</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2014–24</text><polyline points='68.0,50.0 129.5,54.0 191.0,50.0 252.5,79.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='129.5' cy='54.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='44.999999999999986' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>29,6</text><circle cx='191.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='252.5' cy='79.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='69.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>27,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='117.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>22,4</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Ortalama kar örtülü gün sayısı</text></svg>",
+    "adimlar": [
+     {
+      "metin": "İlk ve son değere bak.",
+      "islem": "30,0 → 22,4"
+     },
+     {
+      "metin": "Aradaki küçük değişimlere takılma: 29,6'dan 30,0'a küçük bir çıkış var.",
+      "islem": "küçük iniş çıkış"
+     },
+     {
+      "metin": "Çizgi genel olarak nereye gidiyor? Aşağı.",
+      "islem": "Eğilim: azalış"
+     }
+    ],
+    "sonuc": "Kar örtülü gün sayısı azalma eğilimindedir; özellikle son iki dönemde hızla azalmış. (s. 175)"
+   },
+   "soru": {
+    "soru": "Bir çizgi grafiği arada bir kez inip genel olarak yukarı çıkıyor. Eğilimi nedir?",
+    "secenekler": [
+     "Artış",
+     "Azalış",
+     "Sabit"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartı: küçük inişlere değil, genel yöne bak.",
+    "aciklama": "Genel yön yukarı: eğilim artıştır."
+   }
+  },
+  {
+   "ad": "Veri Ötesi: Tahmin",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='96' x2='108' y2='96' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='76' y1='18' x2='76' y2='96' stroke='#5a6280' stroke-width='1.5' stroke-dasharray='3 3'/><polyline points='18,80 36,70 54,60 72,48' fill='none' stroke='#4fc3a1' stroke-width='3'/><line x1='72' y1='48' x2='100' y2='32' stroke='#f2c14e' stroke-width='3' stroke-dasharray='5 4'/><text x='102' y='26' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f2c14e'>?</text><text x='40' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>veri</text><text x='94' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>ötesi</text></svg>",
+   "aciklama": "Eğilime bakarak gelecekte ne olabileceğini tahmin edebiliriz. Buna veri ötesini yorumlamak denir. (s. 174)",
+   "ek": "Tahmin kesin değildir; “… olabilir” deriz. Kitaptaki örnek: Bir çiftçi son 10 yılda yağışın azaldığını görür ve kuraklığa dayanıklı ürün ekmeye ya da damla sulama yaptırmaya karar verir. (s. 174)",
+   "akilda": "Eğilim devam ederse…",
+   "soru": {
+    "soru": "Kar örtülü gün sayısı azalma eğiliminde. 2025–2035 için en uygun tahmin hangisi?",
+    "secenekler": [
+     "Kesinlikle 40 güne çıkacak.",
+     "Bir daha hiç kar yağmayacak.",
+     "Kar örtülü gün sayısı azalmaya devam edebilir."
+    ],
+    "dogru": 2,
+    "ipucu": "Tahmin eğilime uymalı ama kesin konuşmamalı.",
+    "aciklama": "Eğilim azalış; tahmin “azalmaya devam edebilir” olur. Tahmin kesin değildir. (s. 174–175)"
+   }
+  },
+  {
+   "ad": "Referans Değeri",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='34' width='92' height='34' fill='#8ce99a' opacity='0.25'/><line x1='14' y1='34' x2='106' y2='34' stroke='#8ce99a' stroke-width='2' stroke-dasharray='5 4'/><line x1='14' y1='68' x2='106' y2='68' stroke='#8ce99a' stroke-width='2' stroke-dasharray='5 4'/><circle cx='66' cy='46' r='7' fill='#f2c14e'/><text x='60' y='26' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#8ce99a'>referans aralığı</text><text x='60' y='94' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>karşılaştır</text></svg>",
+   "aciklama": "Referans değeri, bir ölçümü karşılaştırmak için önceden belirlenmiş değerdir. (s. 177)",
+   "ek": "Doktorlar bebeğin baş çevresini persentil eğrileriyle karşılaştırır. P50 (50. persentil) değerindeki bebek normal aralıktadır; P75'teki bebek yaşıtlarının %75'inden büyüktür. (s. 177)",
+   "akilda": "Karşılaştırma için hazır değer",
+   "cozum": {
+    "baslik": "Kerem'in baş çevresi",
+    "problem": "9 aylık Kerem'in baş çevresi 46 cm. Grafikteki referans değerlerine göre nasıl yorumlarsın?",
+    "svg": "<svg viewBox='0 0 330 200' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='174.0' x2='322' y2='174.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='178.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32</text><line x1='50' y1='157.8' x2='322' y2='157.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='161.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>34</text><line x1='50' y1='141.5' x2='322' y2='141.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='145.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>36</text><line x1='50' y1='125.2' x2='322' y2='125.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='129.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38</text><line x1='50' y1='109.0' x2='322' y2='109.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='113.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>40</text><line x1='50' y1='92.8' x2='322' y2='92.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='96.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>42</text><line x1='50' y1='76.5' x2='322' y2='76.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='80.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>44</text><line x1='50' y1='60.2' x2='322' y2='60.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>46</text><line x1='50' y1='44.0' x2='322' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>48</text><line x1='50' y1='174' x2='322' y2='174' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='174' x2='50' y2='40' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>Doğum</text><text x='109.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1 ay</text><text x='150.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2 ay</text><text x='191.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>3 ay</text><text x='232.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>6 ay</text><text x='273.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>9 ay</text><text x='314.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>12 ay</text><polyline points='68.0,157.8 109.0,133.4 150.0,119.6 191.0,107.4 232.0,87.1 273.0,69.2 314.0,59.4' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='157.8' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='133.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='119.6' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='107.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='87.1' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='69.2' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='59.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,150.4 109.0,126.9 150.0,113.1 191.0,100.1 232.0,79.7 273.0,61.9 314.0,52.1' fill='none' stroke='#8ce99a' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='150.4' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='126.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='113.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='100.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='79.7' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='61.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='52.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,142.3 109.0,119.6 150.0,104.1 191.0,92.8 232.0,72.4 273.0,55.4 314.0,44.8' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='142.3' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='119.6' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='104.1' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='92.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='72.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='55.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='44.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Erkek bebeklerin baş çevresi (cm)</text><rect x='60' y='23' width='14' height='5' rx='2' fill='#6fb3ff'/><text x='78' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>P25</text><rect x='101.2' y='23' width='14' height='5' rx='2' fill='#8ce99a'/><text x='119.2' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>P50</text><rect x='142.4' y='23' width='14' height='5' rx='2' fill='#ffa26b'/><text x='160.4' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>P75</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Grafikte 9 ay sütununu bul ve değerleri oku.",
+      "islem": "P50 = 45,8 · P75 = 46,6"
+     },
+     {
+      "metin": "46 hangi iki değerin arasında?",
+      "islem": "45,8 < 46 < 46,6"
+     },
+     {
+      "metin": "Yorumla: P50'nin biraz üstünde, P75'in altında.",
+      "islem": "normal aralıkta"
+     }
+    ],
+    "sonuc": "Kerem'in baş çevresi referans değerlerine göre normal aralıkta, ortanın biraz üstünde. (s. 177–178)"
+   },
+   "soru": {
+    "soru": "Referans değeri ne için kullanılır?",
+    "secenekler": [
+     "Grafiğe renk vermek için",
+     "Araştırma sorusu yazmak için",
+     "Bir ölçümü karşılaştırmak için"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartındaki tanıma bak.",
+    "aciklama": "Referans değeri, ölçümü karşılaştırmak için önceden belirlenmiş değerdir. (s. 177)"
+   }
+  },
+  {
+   "ad": "Temsil Değeri",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='92' x2='106' y2='92' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><rect x='20' y='32' width='11' height='60' rx='2' fill='#4fc3a1'/><rect x='37' y='34' width='11' height='58' rx='2' fill='#4fc3a1'/><rect x='54' y='32' width='11' height='60' rx='2' fill='#4fc3a1'/><rect x='71' y='40' width='11' height='52' rx='2' fill='#4fc3a1'/><rect x='88' y='50' width='11' height='42' rx='2' fill='#4fc3a1'/><line x1='14' y1='38' x2='106' y2='38' stroke='#f2c14e' stroke-width='3'/><text x='60' y='26' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>27,8</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>tek sayıyla özet</text></svg>",
+   "aciklama": "Bir veri setini tek bir sayıyla özetleyen değere temsil değeri denir. Genelde aritmetik ortalama, ortanca ya da tepe değerden biri seçilir.",
+   "ek": "Hangisini seçtiğimizi gerekçesiyle söyleriz. Kitapta kar örtülü gün sayıları için bir temsil değeri seçilip gerekçesi yazılıyor. (s. 175)",
+   "akilda": "Bütün veriyi tek sayıyla söyle",
+   "cozum": {
+    "baslik": "Kar verisinin ortalaması",
+    "problem": "Kar örtülü gün sayıları: 30,0 · 29,6 · 30,0 · 27,1 · 22,4. Aritmetik ortalamayı temsil değeri olarak seçelim.",
+    "adimlar": [
+     {
+      "metin": "Bütün değerleri topla.",
+      "islem": "30,0 + 29,6 + 30,0 + 27,1 + 22,4 = 139,1"
+     },
+     {
+      "metin": "5 değer var: toplamı 5'e böl.",
+      "islem": "139,1 ÷ 5 = 27,82"
+     },
+     {
+      "metin": "Yuvarla.",
+      "islem": "≈ 27,8 gün"
+     }
+    ],
+    "sonuc": "Temsil değeri yaklaşık 27,8 gün. Gerekçe: Bütün dönemleri hesaba katan ortalamayı seçtik. (s. 175)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Aynı veri setinde (30,0 · 29,6 · 30,0 · 27,1 · 22,4) tepe değeri ve ortancayı bul.",
+    "adimlar": [
+     {
+      "metin": "En çok tekrar eden değer hangisi?",
+      "soru": {
+       "soru": "Tepe değer kaçtır?",
+       "cevap": "30",
+       "ipucu": "Hangi sayı iki kez yazılmış?",
+       "aciklama": "30,0 iki kez var.",
+       "denk": true,
+       "yardim": {
+        "adimlar": [
+         "Her sayının kaç kez yazıldığını say.",
+         "En çok yazılanı seç."
+        ]
+       }
+      },
+      "islem": "Tepe değer = 30,0"
+     },
+     {
+      "metin": "Sırala: 22,4 · 27,1 · 29,6 · 30,0 · 30,0. Ortadaki hangisi?",
+      "soru": {
+       "soru": "Ortanca kaçtır?",
+       "cevap": "29,6",
+       "ipucu": "5 değer var; 3. sıradakine bak.",
+       "aciklama": "Sıralı listede 3. değer 29,6.",
+       "denk": true,
+       "yardim": {
+        "adimlar": [
+         "Sıralı listeye bak.",
+         "5 değer var; 3. sıradakini bul."
+        ]
+       }
+      },
+      "islem": "Ortanca = 29,6"
+     }
+    ],
+    "sonuc": "Harika! Üç ölçü de farklı: 27,8 · 29,6 · 30,0. Hangisini seçeceğimizi gerekçesiyle söyleriz."
+   },
+   "soru": {
+    "soru": "Temsil değeri için hangisi doğrudur?",
+    "secenekler": [
+     "Veri setini tek bir sayıyla özetler.",
+     "Her zaman en büyük veridir.",
+     "Grafiğin başlığıdır."
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki ilk cümleye bak.",
+    "aciklama": "Temsil değeri, veri setini tek sayıyla özetler."
+   }
+  },
+  {
+   "ad": "Temsil Değeri Listede Olmayabilir",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='14' width='60' height='76' rx='8' fill='#f5f6fa'/><text x='42' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>30,0</text><text x='42' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>29,6</text><text x='42' y='58' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>30,0</text><text x='42' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>27,1</text><text x='42' y='86' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>22,4</text><text x='94' y='54' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>27,8</text><text x='94' y='74' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>yok ama</text><text x='94' y='86' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>temsil eder</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>listede olmayabilir</text></svg>",
+   "aciklama": "Temsil değeri veri setindeki sayılardan biri olmayabilir. Örneğin 27,8 kar verisi listesinde yoktur ama veriyi temsil eder. (s. 176)",
+   "ek": "Kesikli bir veri seti sürekli bir sayıyla temsil edilebilir: gün sayısı kesiklidir, 27,8 ise ondalıktır. Temsil değeri, gerekçesi söylenerek ortalamaya yakın bir sayı da olabilir: “yaklaşık 28 gün” gibi. (s. 176)",
+   "akilda": "Listede yoksa da olur",
+   "soru": {
+    "soru": "Kar verisinin ortalaması 27,8 tabloda yok. Bu bir sorun mu?",
+    "secenekler": [
+     "Evet, temsil değeri tabloda olmalı.",
+     "Hayır, temsil değeri veri setinde olmayabilir.",
+     "Evet, ortalama yanlış hesaplanmış."
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki ilk cümleye bak.",
+    "aciklama": "Temsil değeri veri setinde yer almayabilir. (s. 176)"
+   }
+  },
+  {
+   "ad": "Veriyle İddiayı Sınama",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>“En az 13 km”</text><line x1='14' y1='70' x2='106' y2='70' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><circle cx='20' cy='62' r='4' fill='#4fc3a1'/><circle cx='38' cy='62' r='4' fill='#4fc3a1'/><circle cx='50' cy='62' r='4' fill='#4fc3a1'/><circle cx='58' cy='62' r='4' fill='#4fc3a1'/><circle cx='72' cy='62' r='4' fill='#4fc3a1'/><line x1='86' y1='48' x2='86' y2='78' stroke='#ff8fb1' stroke-width='3'/><text x='86' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ff8fb1'>13</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>veriyle sına</text></svg>",
+   "aciklama": "Biri bir iddiada bulunursa verileri toplar, ortalama, ortanca ve tepe değeri hesaplar ve iddiayla karşılaştırırız. (s. 176)",
+   "ek": "Mühendis, motorla arabanın 1 litre benzinle en az 13 km gideceğini iddia ediyor. 10 deneme sürüşü: 11,7 · 10,0 · 13,0 · 10,5 · 12,5 · 10,5 · 9,0 · 13,5 · 14,0 · 15,0 km. (s. 176)",
+   "akilda": "İddia + veri = karar",
+   "cozum": {
+    "baslik": "Mühendisin iddiası",
+    "problem": "İddia: “1 litre benzinle en az 13 km.” Verilere göre doğrulanıyor mu?",
+    "adimlar": [
+     {
+      "metin": "Ortalama: 10 değeri topla, 10'a böl.",
+      "islem": "119,7 ÷ 10 = 11,97 km"
+     },
+     {
+      "metin": "Ortanca: sırala (9,0 · 10,0 · 10,5 · 10,5 · 11,7 · 12,5 · 13,0 · 13,5 · 14,0 · 15,0). Ortadaki iki değerin ortalaması.",
+      "islem": "(11,7 + 12,5) ÷ 2 = 12,1 km"
+     },
+     {
+      "metin": "Tepe değer: 10,5 iki kez tekrar ediyor.",
+      "islem": "10,5 km"
+     },
+     {
+      "metin": "Üçünü de 13 ile karşılaştır.",
+      "islem": "11,97 · 12,1 · 10,5 < 13"
+     }
+    ],
+    "sonuc": "Üç ölçü de 13 km'den az: iddia bu verilerle doğrulanmıyor. (s. 176)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Bir başka araba 5 deneme yaptı: 12, 14, 13, 15, 16 km. İddia yine “en az 13 km”.",
+    "adimlar": [
+     {
+      "metin": "Ortalamayı bul.",
+      "soru": {
+       "soru": "5 denemenin aritmetik ortalaması kaç km?",
+       "cevap": "14",
+       "ipucu": "Topla, 5'e böl.",
+       "aciklama": "12 + 14 + 13 + 15 + 16 = 70; 70 ÷ 5 = 14 km.",
+       "birim": "km",
+       "yardim": {
+        "adimlar": [
+         "Beş değeri topla.",
+         "Toplamı 5'e böl."
+        ]
+       }
+      },
+      "islem": "Ortalama = 14 km"
+     },
+     {
+      "metin": "13 ile karşılaştır.",
+      "soru": {
+       "soru": "Ortalamaya göre iddia için ne söylenebilir?",
+       "secenekler": [
+        "İddiayı destekliyor.",
+        "İddiayı çürütüyor.",
+        "Karşılaştırılamaz."
+       ],
+       "dogru": 0,
+       "ipucu": "14 mü büyük, 13 mü?",
+       "aciklama": "14 > 13: ortalama iddiayı destekliyor."
+      },
+      "islem": "14 > 13 ✓"
+     }
+    ],
+    "sonuc": "Harika! Bu araç için veriler iddiayı destekliyor."
+   },
+   "soru": {
+    "soru": "Mühendisin verilerinde ortalama 11,97, ortanca 12,1 km. İddia “en az 13 km”. Hangisi doğrudur?",
+    "secenekler": [
+     "İddia doğrulanmıştır.",
+     "İddia bu verilerle doğrulanmaz.",
+     "Veriler iddiayla ilgili değildir."
+    ],
+    "dogru": 1,
+    "ipucu": "İki ölçüyü 13 ile karşılaştır.",
+    "aciklama": "11,97 ve 12,1, 13'ten küçük: iddia doğrulanmaz. (s. 176)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Ne işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Grafiği yorumlamak",
+     "uyeler": [
+      "Eğilim",
+      "Veri Ötesi: Tahmin"
+     ]
+    },
+    {
+     "etiket": "Tek sayıyla özetlemek",
+     "uyeler": [
+      "Temsil Değeri",
+      "Temsil Değeri Listede Olmayabilir"
+     ]
+    },
+    {
+     "etiket": "Karşılaştırıp karar vermek",
+     "uyeler": [
+      "Referans Değeri",
+      "Veriyle İddiayı Sınama"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Eğilim çizginin genel yönüdür; küçük iniş çıkışlara takılma.",
+  "Eğilim devam ederse gelecekte ne olabileceğini tahmin ederiz; tahmin kesin değildir.",
+  "Referans değeri, bir ölçümü karşılaştırmak için önceden belirlenmiş değerdir.",
+  "Temsil değeri veri setini tek sayıyla özetler; veri setinde olmayabilir.",
+  "Bir iddiayı sınamak için ortalama, ortanca ve tepe değeri iddiayla karşılaştır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Persentil ne demek?",
+   "cevap": "Bir bebeğin ölçüsünün yaşıtlarına göre yerini gösterir. P75'teki bebek, yaşıtlarının %75'inden daha uzun ya da kilolu demektir. (s. 177)"
+  },
+  {
+   "soru": "Kar örtülü gün sayısı neden önemli?",
+   "cevap": "İklim verileri, tarım planlaması, su kaynaklarının yönetimi ve kış turizmi bu sayıya bakılarak planlanır. (s. 175)"
+  },
+  {
+   "soru": "Ortalama ile ortanca neden farklı çıkar?",
+   "cevap": "Ortalama bütün sayıları hesaba katar; çok küçük ya da çok büyük bir değer onu çeker. Ortanca sadece sıralamadaki ortaya bakar."
+  },
+  {
+   "soru": "Gün sayısı kesikliyse 27,8 gün nasıl olur?",
+   "cevap": "Gerçekte 27,8 gün yaşanmaz ama veriyi özetleyen sayı olarak kullanılabilir. Kesikli bir veri seti sürekli bir sayıyla temsil edilebilir. (s. 176)"
+  },
+  {
+   "soru": "Esra Bayrak kimdir?",
+   "cevap": "Uzun atlamada ülkemizi temsil eden millî paralimpik sporcumuzdur. Atlayış mesafeleri 2017'de 5,17 m, 2019'da 5,38 m. (s. 179)"
+  },
+  {
+   "soru": "Bir tahmin yanlış çıkarsa?",
+   "cevap": "Olabilir! Tahmin eğilime dayanır ama kesin değildir. Yeni veriler gelince tahmini güncelleriz."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir kayak merkezinde kayak okulu açacağını düşün. Kar örtülü gün sayısının azalma eğilimi sana ne söyler? Kararını nasıl etkiler?",
+   "ornekCevap": "Kar örtülü gün sayısı azalıyor; bu devam ederse kayak yapılabilecek gün sayısı azalabilir. Okulu açmadan önce o merkezin kendi verilerine bakardım ya da yapay kar gibi önlemleri düşünürdüm.",
+   "anahtarlar": [
+    "azal",
+    "eğilim",
+    "devam",
+    "tahmin",
+    "karar"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kar grafiğine göre ortalama kar örtülü gün sayısının genel eğilimi nedir?",
+   "secenekler": [
+    "Artış",
+    "Azalış",
+    "Hiç değişmemiş"
+   ],
+   "dogru": 1,
+   "ipucu": "İlk ve son değere bak: 30,0 ve 22,4.",
+   "aciklama": "Arada küçük bir çıkış olsa da genel yön aşağı: azalış. (s. 175)",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>20,0</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>22,0</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>24,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>26,0</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>28,0</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>30,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1970–80</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1981–91</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1992–02</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2003–13</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2014–24</text><polyline points='68.0,50.0 129.5,54.0 191.0,50.0 252.5,79.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='129.5' cy='54.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='44.999999999999986' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>29,6</text><circle cx='191.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='252.5' cy='79.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='69.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>27,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='117.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>22,4</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Ortalama kar örtülü gün sayısı</text></svg>",
+   "kavram": "Eğilim"
+  },
+  {
+   "soru": "Kar grafiğine göre 2003–2013 ile 2014–2024 dönemleri arasında kar örtülü gün sayısı kaç gün azalmış?",
+   "cevap": "4,7",
+   "ipucu": "Büyükten küçüğü çıkar: 27,1 − 22,4.",
+   "aciklama": "27,1 − 22,4 = 4,7 gün.",
+   "denk": true,
+   "birim": "gün",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>20,0</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>22,0</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>24,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>26,0</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>28,0</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>30,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1970–80</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1981–91</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1992–02</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2003–13</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2014–24</text><polyline points='68.0,50.0 129.5,54.0 191.0,50.0 252.5,79.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='129.5' cy='54.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='44.999999999999986' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>29,6</text><circle cx='191.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='252.5' cy='79.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='69.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>27,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='117.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>22,4</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Ortalama kar örtülü gün sayısı</text></svg>",
+   "kavram": "Eğilim",
+   "yardim": {
+    "adimlar": [
+     "İki dönemin değerlerini oku: 27,1 ve 22,4.",
+     "Büyükten küçüğü çıkar; virgülleri alt alta yaz."
+    ]
+   }
+  },
+  {
+   "soru": "Bir çiftçi son 10 yılda yağışın azaldığını gördü. Veri ötesini yorumlayarak hangi kararı verebilir?",
+   "secenekler": [
+    "Çok su isteyen ürün ekmek",
+    "Kuraklığa dayanıklı ürün ekmek ya da damla sulama yaptırmak",
+    "Verilere hiç bakmamak"
+   ],
+   "dogru": 1,
+   "ipucu": "Yağış azalmaya devam ederse ne olur?",
+   "aciklama": "Yağış azalırsa az su isteyen ürün ve damla sulama verimi artırır. (s. 174)",
+   "kavram": "Veri Ötesi: Tahmin"
+  },
+  {
+   "soru": "9 aylık bir bebeğin baş çevresi 44,9 cm. Referans değerlerine göre (P25 = 44,9 · P50 = 45,8 · P75 = 46,6) hangisi doğrudur?",
+   "secenekler": [
+    "P25 değerinde",
+    "P50 değerinde",
+    "P75'in üstünde"
+   ],
+   "dogru": 0,
+   "ipucu": "44,9 hangi değere eşit?",
+   "aciklama": "44,9 cm, 9 ayda P25 değerine eşit. (s. 177)",
+   "svg": "<svg viewBox='0 0 330 200' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='174.0' x2='322' y2='174.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='178.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32</text><line x1='50' y1='157.8' x2='322' y2='157.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='161.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>34</text><line x1='50' y1='141.5' x2='322' y2='141.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='145.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>36</text><line x1='50' y1='125.2' x2='322' y2='125.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='129.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38</text><line x1='50' y1='109.0' x2='322' y2='109.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='113.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>40</text><line x1='50' y1='92.8' x2='322' y2='92.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='96.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>42</text><line x1='50' y1='76.5' x2='322' y2='76.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='80.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>44</text><line x1='50' y1='60.2' x2='322' y2='60.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>46</text><line x1='50' y1='44.0' x2='322' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>48</text><line x1='50' y1='174' x2='322' y2='174' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='174' x2='50' y2='40' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>Doğum</text><text x='109.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1 ay</text><text x='150.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2 ay</text><text x='191.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>3 ay</text><text x='232.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>6 ay</text><text x='273.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>9 ay</text><text x='314.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>12 ay</text><polyline points='68.0,157.8 109.0,133.4 150.0,119.6 191.0,107.4 232.0,87.1 273.0,69.2 314.0,59.4' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='157.8' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='133.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='119.6' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='107.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='87.1' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='69.2' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='59.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,150.4 109.0,126.9 150.0,113.1 191.0,100.1 232.0,79.7 273.0,61.9 314.0,52.1' fill='none' stroke='#8ce99a' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='150.4' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='126.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='113.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='100.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='79.7' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='61.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='52.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,142.3 109.0,119.6 150.0,104.1 191.0,92.8 232.0,72.4 273.0,55.4 314.0,44.8' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='142.3' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='119.6' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='104.1' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='92.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='72.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='55.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='44.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Erkek bebeklerin baş çevresi (cm)</text><rect x='60' y='23' width='14' height='5' rx='2' fill='#6fb3ff'/><text x='78' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>P25</text><rect x='101.2' y='23' width='14' height='5' rx='2' fill='#8ce99a'/><text x='119.2' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>P50</text><rect x='142.4' y='23' width='14' height='5' rx='2' fill='#ffa26b'/><text x='160.4' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>P75</text></svg>",
+   "kavram": "Referans Değeri"
+  },
+  {
+   "soru": "Esra Bayrak'ın 5 atlayışı (5,17 · 5,27 · 5,38 · 5,37 · 5,36) için ortanca kaç metredir?",
+   "cevap": "5,36",
+   "ipucu": "Önce küçükten büyüğe sırala.",
+   "aciklama": "Sıralı: 5,17 · 5,27 · 5,36 · 5,37 · 5,38. Ortadaki 5,36. (s. 179)",
+   "denk": true,
+   "birim": "m",
+   "kavram": "Temsil Değeri",
+   "yardim": {
+    "adimlar": [
+     "Sayıları küçükten büyüğe sırala.",
+     "5 sayı var: 3. sıradakini bul."
+    ]
+   }
+  },
+  {
+   "soru": "Bir sınıftaki öğrencilerin evcil hayvan sayıları: 0, 2, 1, 1, 3, 1, 0. Tepe değere sayı doğrusunda dokun.",
+   "nokta": 1,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 3
+   },
+   "ipucu": "Hangi sayı en çok yazılmış?",
+   "aciklama": "1 üç kez yazılmış: tepe değer 1.",
+   "kavram": "Temsil Değeri",
+   "yardim": {
+    "adimlar": [
+     "Her sayının kaç kez yazıldığını say.",
+     "En çok yazılan sayıyı seç."
+    ]
+   }
+  },
+  {
+   "soru": "Veriler: 4, 1, 3, 2, 0. Ortancaya sayı doğrusunda dokun.",
+   "nokta": 2,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 4
+   },
+   "ipucu": "Önce sırala: 0, 1, 2, 3, 4.",
+   "aciklama": "Sıralı: 0, 1, 2, 3, 4. Ortadaki 2.",
+   "kavram": "Temsil Değeri",
+   "yardim": {
+    "adimlar": [
+     "Sayıları küçükten büyüğe sırala.",
+     "Ortadaki sayıyı bul."
+    ]
+   }
+  },
+  {
+   "soru": "3, 4, 6, 7 verilerinin ortalaması 5'tir. Hangisi doğrudur?",
+   "secenekler": [
+    "5 veri setinde olmadığı için temsil değeri olamaz.",
+    "Ortalama yanlış hesaplanmıştır.",
+    "5 veri setinde olmasa da temsil değeri olabilir."
+   ],
+   "dogru": 2,
+   "ipucu": "Temsil değeri veri setinde olmak zorunda mı?",
+   "aciklama": "Temsil değeri veri setinde yer almayabilir: 5 bu veriyi temsil eder. (s. 176)",
+   "kavram": "Temsil Değeri Listede Olmayabilir"
+  },
+  {
+   "soru": "Bir pil üreticisi “Pillerimiz en az 10 saat dayanır.” diyor. 5 pilin süreleri: 11, 12, 10, 13, 9 saat. Ortalama 11 saat. Hangisi doğrudur?",
+   "secenekler": [
+    "İddia kesinlikle yanlıştır.",
+    "Veriler iddiayla ilgili değildir.",
+    "Ortalama iddiayı destekliyor ama 9 saatlik bir pil var; daha çok veri gerekebilir."
+   ],
+   "dogru": 2,
+   "ipucu": "Ortalamayı 10 ile karşılaştır. Bütün piller 10 saat dayanmış mı?",
+   "aciklama": "11 > 10: ortalama destekliyor. Ama 9 saatlik pil “en az 10” iddiasına uymuyor. (s. 176)",
+   "kavram": "Veriyle İddiayı Sınama"
+  },
+  {
+   "soru": "Mühendisin 10 deneme sürüşünden kaç tanesinde araba 13 km ya da daha fazla gitmiş? (11,7 · 10,0 · 13,0 · 10,5 · 12,5 · 10,5 · 9,0 · 13,5 · 14,0 · 15,0)",
+   "cevap": "4",
+   "ipucu": "13'e eşit ya da 13'ten büyük olanları say.",
+   "aciklama": "13,0 · 13,5 · 14,0 · 15,0: 4 deneme. 10 denemenin 6'sı 13 km'nin altında. (s. 176)",
+   "kavram": "Veriyle İddiayı Sınama",
+   "yardim": {
+    "adimlar": [
+     "Her değeri 13 ile karşılaştır.",
+     "13'e eşit ya da büyük olanları işaretle.",
+     "İşaretlediklerini say."
+    ]
+   }
+  }
+ ]
+}

@@ -6603,9 +6603,651 @@ def u3t1():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4, u3t1]
+# =================================================================
+# Tema 3 · Konu 4–5: grafik çizimleri (şeffaf zemin, soru/adım görseli) ve kavram çizimleri
+def sayi_yaz(v, ond=None):
+    """Grafik etiketleri: 5,38 · 27,8 · 5 422 (binlik boşluk, ondalık virgül)."""
+    if ond is None:
+        ond = 0 if float(v).is_integer() else len(str(v).split(".")[1])
+    s = f"{v:,.{ond}f}".replace(",", " ").replace(".", ",")
+    return s
+
+
+def cizgi_svg(etiketler, seriler, ymin, ymax, adim, w=330, h=176, baslik=None, deger_yaz=True, ond=None, efont=10, lejant=None):
+    """Çizgi grafiği. seriler: [(değerler, renk)]. deger_yaz: noktaların üstüne değer yazılır."""
+    ust = 30 if (baslik or lejant) else 14
+    if baslik and lejant:
+        ust = 44
+    x0, y0 = 50, h - 26
+    yuk = y0 - ust
+    sx = lambda i: x0 + 18 + (w - x0 - 34) * (i / (len(etiketler) - 1))
+    sy = lambda v: y0 - yuk * (v - ymin) / (ymax - ymin)
+    g = ""
+    v = ymin
+    while v <= ymax + 1e-9:
+        y = sy(v)
+        g += f"<line x1='{x0}' y1='{y:.1f}' x2='{w - 8}' y2='{y:.1f}' stroke='#3a4570' stroke-width='1'/>" + txt(x0 - 6, y + 4, sayi_yaz(round(v, 3), ond), "#f5f6fa", 10, 600, "end")
+        v += adim
+    g += _ok(x0, y0, w - 8, y0) + _ok(x0, y0, x0, ust - 4)
+    for i, e in enumerate(etiketler):
+        g += txt(sx(i), y0 + 16, e, "#f5f6fa", efont, 600)
+    for degerler, renk in seriler:
+        pts = " ".join(f"{sx(i):.1f},{sy(d):.1f}" for i, d in enumerate(degerler))
+        g += f"<polyline points='{pts}' fill='none' stroke='{renk}' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/>"
+        for i, d in enumerate(degerler):
+            g += f"<circle cx='{sx(i):.1f}' cy='{sy(d):.1f}' r='4.5' fill='{renk}' stroke='#1b2340' stroke-width='1.5'/>"
+            if deger_yaz:
+                g += txt(sx(i), sy(d) - 9, sayi_yaz(d, ond), renk, 10, 700)
+    if baslik:
+        g += txt(w / 2, 15, baslik, "#f2c14e", 12)
+    if lejant:
+        ly = 31 if baslik else 15
+        lx = 60
+        for ad, renk in lejant:
+            g += f"<rect x='{lx}' y='{ly - 8}' width='14' height='5' rx='2' fill='{renk}'/>" + txt(lx + 18, ly - 2, ad, renk, 10, 700, "start")
+            lx += 22 + len(ad) * 6.4
+    return gsvg(w, h, g)
+
+
+def nokta_grafik_svg(sayilar, mn, mx, w=300, h=150, baslik=None, eksen=None, renk=NIC):
+    """Nokta grafiği: sayilar = {değer: kaç tane}; aynı değerdeki noktalar üst üste yığılır."""
+    x0, x1, y0 = 30, w - 20, h - (40 if eksen else 26)
+    sx = lambda v: x0 + (x1 - x0) * (v - mn) / (mx - mn)
+    g = _ok(x0 - 10, y0, x1 + 10, y0)
+    for v in range(mn, mx + 1):
+        g += f"<line x1='{sx(v):.1f}' y1='{y0 - 5}' x2='{sx(v):.1f}' y2='{y0 + 5}' stroke='#f5f6fa' stroke-width='2'/>" + txt(sx(v), y0 + 19, str(v), "#f5f6fa", 12)
+    for v, n in sayilar.items():
+        for k in range(n):
+            g += f"<circle cx='{sx(v):.1f}' cy='{y0 - 13 - k * 15}' r='6' fill='{renk}'/>"
+    if eksen:
+        g += txt((x0 + x1) / 2, h - 6, eksen, "#f5f6fa", 11, 600)
+    if baslik:
+        g += txt(w / 2, 15, baslik, "#f2c14e", 12)
+    return gsvg(w, h, g)
+
+
+def svg3_nokta_g():
+    g = _ok(12, 88, 108, 88)
+    for i, n in enumerate([2, 4, 3, 1]):
+        x = 24 + i * 24
+        g += f"<line x1='{x}' y1='84' x2='{x}' y2='92' stroke='#f5f6fa' stroke-width='2'/>" + txt(x, 104, str(i), "#f5f6fa", 11)
+        for k in range(n):
+            g += f"<circle cx='{x}' cy='{76 - k * 15}' r='6' fill='{NIC}'/>"
+    return bg(g + txt(60, 20, "üst üste", "#f2c14e", 11))
+
+
+def svg3_yigilmaz():
+    g = _ok(10, 84, 110, 84)
+    for i, x in enumerate([18, 31, 47, 58, 74, 90, 103]):
+        g += f"<circle cx='{x}' cy='72' r='5' fill='{SUR}'/>"
+    g += txt(30, 100, "5257", "#f5f6fa", 9, 600) + txt(88, 100, "5624", "#f5f6fa", 9, 600)
+    g += txt(60, 40, "hep tek nokta", "#f2c14e", 11)
+    return bg(g + txt(60, 114, "yığılma yok", SUR, 11))
+
+
+def svg3_cizgi():
+    g = _ok(16, 96, 108, 96) + _ok(16, 96, 16, 16)
+    pts = [(26, 70), (46, 82), (66, 56), (86, 60), (102, 30)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='#f2c14e' stroke-width='3' stroke-linejoin='round'/>"
+    for x, y in pts:
+        g += f"<circle cx='{x}' cy='{y}' r='4' fill='#f2c14e'/>"
+    return bg(g + txt(64, 112, "zaman →", "#f5f6fa", 10, 600))
+
+
+def svg3_yon():
+    g = (_ok(14, 40, 40, 18) + "<path d='M40 18 l-9 1 6 7z' fill='#8ce99a'/>" + txt(27, 54, "artış", "#8ce99a", 11))
+    g += (_ok(46, 18, 72, 40) + "<path d='M72 40 l-2 -9 -6 6z' fill='#6fb3ff'/>" + txt(60, 54, "azalış", "#6fb3ff", 10))
+    g += (_ok(80, 30, 108, 30) + txt(94, 54, "sabit", "#f2c14e", 11))
+    g += _ok(14, 96, 106, 96)
+    pts = [(18, 86), (38, 70), (58, 72), (78, 72), (102, 88)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='#f5f6fa' stroke-width='2.5'/>"
+    return bg(g + txt(60, 113, "çizginin yönü", "#f2c14e", 10))
+
+
+def svg3_hangi():
+    g = _ok(10, 56, 54, 56) + _ok(66, 56, 110, 56)
+    for i, hh in enumerate([20, 34, 26]):
+        g += f"<rect x='{15 + i * 13}' y='{56 - hh}' width='9' height='{hh}' fill='{TEAL}'/>"
+    pts = [(70, 44), (82, 36), (94, 40), (106, 20)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='#f2c14e' stroke-width='3'/>"
+    g += txt(32, 74, "say", TEAL, 11) + txt(88, 74, "zaman", "#f2c14e", 11)
+    g += txt(32, 92, "karşılaştır", "#f5f6fa", 9, 600) + txt(88, 92, "değişim", "#f5f6fa", 9, 600)
+    return bg(g)
+
+
+def svg3_egilim():
+    g = _ok(14, 96, 108, 96)
+    pts = [(20, 30), (36, 38), (52, 32), (68, 54), (84, 50), (100, 76)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round'/>"
+    g += "<line x1='18' y1='24' x2='100' y2='86' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='5 4'/><path d='M104 90 l-10 -1 5 -7z' fill='#f2c14e'/>"
+    return bg(g + txt(60, 113, "genel yön", "#f2c14e", 11))
+
+
+def svg3_tahmin():
+    g = _ok(14, 96, 108, 96) + "<line x1='76' y1='18' x2='76' y2='96' stroke='#5a6280' stroke-width='1.5' stroke-dasharray='3 3'/>"
+    pts = [(18, 80), (36, 70), (54, 60), (72, 48)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='{NIC}' stroke-width='3'/>"
+    g += "<line x1='72' y1='48' x2='100' y2='32' stroke='#f2c14e' stroke-width='3' stroke-dasharray='5 4'/>" + txt(102, 26, "?", "#f2c14e", 18)
+    return bg(g + txt(40, 113, "veri", NIC, 11) + txt(94, 113, "ötesi", "#f2c14e", 11))
+
+
+def svg3_referans():
+    g = "<rect x='14' y='34' width='92' height='34' fill='#8ce99a' opacity='0.25'/>"
+    g += "<line x1='14' y1='34' x2='106' y2='34' stroke='#8ce99a' stroke-width='2' stroke-dasharray='5 4'/><line x1='14' y1='68' x2='106' y2='68' stroke='#8ce99a' stroke-width='2' stroke-dasharray='5 4'/>"
+    g += "<circle cx='66' cy='46' r='7' fill='#f2c14e'/>" + txt(60, 26, "referans aralığı", "#8ce99a", 10)
+    return bg(g + txt(60, 94, "karşılaştır", "#f2c14e", 12))
+
+
+def svg3_temsil_deger():
+    g = _ok(14, 92, 106, 92)
+    for i, hh in enumerate([60, 58, 60, 52, 42]):
+        g += f"<rect x='{20 + i * 17}' y='{92 - hh}' width='11' height='{hh}' rx='2' fill='{TEAL}'/>"
+    g += "<line x1='14' y1='38' x2='106' y2='38' stroke='#f2c14e' stroke-width='3'/>" + txt(60, 26, "27,8", "#f2c14e", 15)
+    return bg(g + txt(60, 112, "tek sayıyla özet", "#f2c14e", 10))
+
+
+def svg3_yok():
+    g = "<rect x='12' y='14' width='60' height='76' rx='8' fill='#f5f6fa'/>"
+    for i, s in enumerate(["30,0", "29,6", "30,0", "27,1", "22,4"]):
+        g += txt(42, 30 + i * 14, s, "#1b2340", 11)
+    g += txt(94, 54, "27,8", "#f2c14e", 15) + txt(94, 74, "yok ama", "#f5f6fa", 9, 600) + txt(94, 86, "temsil eder", "#f5f6fa", 9, 600)
+    return bg(g + txt(60, 112, "listede olmayabilir", "#f2c14e", 10))
+
+
+def svg3_iddia():
+    g = txt(60, 30, "“En az 13 km”", "#f2c14e", 12)
+    g += _ok(14, 70, 106, 70)
+    for x in (20, 38, 50, 58, 72):
+        g += f"<circle cx='{x}' cy='62' r='4' fill='{NIC}'/>"
+    g += "<line x1='86' y1='48' x2='86' y2='78' stroke='#ff8fb1' stroke-width='3'/>" + txt(86, 92, "13", "#ff8fb1", 12)
+    return bg(g + txt(60, 112, "veriyle sına", "#f2c14e", 11))
+
+
+def svg3_ortalama():
+    g = ""
+    for i, hh in enumerate([4, 6, 8]):
+        g += f"<rect x='{18 + i * 20}' y='{90 - hh * 8}' width='14' height='{hh * 8}' rx='2' fill='{NIC}'/>"
+    g += txt(42, 104, "4 + 6 + 8", "#f5f6fa", 10, 600) + txt(92, 60, "=", "#f2c14e", 16)
+    for i in range(3):
+        g += f"<rect x='{80 + i * 9}' y='{90 - 48}' width='7' height='48' rx='2' fill='#f2c14e'/>"
+    return bg(g + txt(94, 104, "6 6 6", "#f2c14e", 10))
+
+
+def svg3_ortanca():
+    g = ""
+    for i, s in enumerate(["1", "3", "5", "7", "9"]):
+        r = "#f2c14e" if i == 2 else "#5a6280"
+        g += f"<rect x='{8 + i * 21}' y='42' width='19' height='28' rx='5' fill='{r}'/>" + txt(17.5 + i * 21, 61, s, "#1b2340" if i == 2 else "#f5f6fa", 14)
+    return bg(g + txt(60, 30, "sırala", "#f5f6fa", 11, 600) + txt(60, 96, "ortadaki", "#f2c14e", 12))
+
+
+def svg3_tepe():
+    g = _ok(14, 86, 106, 86)
+    for i, n in enumerate([2, 3, 1]):
+        x = 32 + i * 28
+        g += txt(x, 102, str(i + 2), "#f5f6fa", 12)
+        for k in range(n):
+            g += f"<circle cx='{x}' cy='{76 - k * 15}' r='6' fill='{'#f2c14e' if n == 3 else NIC}'/>"
+    return bg(g + txt(60, 20, "en çok tekrar", "#f2c14e", 11))
+
+
+# Veri setleri (kitaptan; altın fiyatları en yakın TL'ye yuvarlandı)
+ALTIN_G = ["27.10", "28.10", "31.10", "05.11", "10.11", "11.11"]
+ALTIN_D = [5422, 5258, 5448, 5370, 5524, 5624]
+KAR_G = ["1970–80", "1981–91", "1992–02", "2003–13", "2014–24"]
+KAR_D = [30.0, 29.6, 30.0, 27.1, 22.4]
+ATLAMA_G = ["2017", "2018", "2019", "2020", "2021"]
+ATLAMA_D = [5.17, 5.27, 5.38, 5.37, 5.36]
+FIDAN_G = ["1. hf", "2. hf", "3. hf", "4. hf", "5. hf", "6. hf"]
+FIDAN_D = [10, 12, 17, 18, 21, 23]                    # kitap dışı örnek
+KARDES = {0: 2, 1: 5, 2: 3, 3: 1, 4: 1}                # 12 öğrencinin kardeş sayısı (kitap dışı örnek)
+PERS_G = ["Doğum", "1 ay", "2 ay", "3 ay", "6 ay", "9 ay", "12 ay"]
+P25 = [34.0, 37.0, 38.7, 40.2, 42.7, 44.9, 46.1]
+P50 = [34.9, 37.8, 39.5, 41.1, 43.6, 45.8, 47.0]
+P75 = [35.9, 38.7, 40.6, 42.0, 44.5, 46.6, 47.9]
+P25R, P50R, P75R = "#6fb3ff", "#8ce99a", "#ffa26b"
+
+
+def altin_svg(deger=True):
+    return cizgi_svg(ALTIN_G, [(ALTIN_D, "#f2c14e")], 5200, 5700, 100, baslik="Gram altın alış fiyatı (TL, yaklaşık)", deger_yaz=deger)
+
+
+def kar_svg(deger=True):
+    return cizgi_svg(KAR_G, [(KAR_D, "#6fb3ff")], 20, 32, 2, baslik="Ortalama kar örtülü gün sayısı", deger_yaz=deger, ond=1 if deger else 0, efont=9)
+
+
+def atlama_svg(deger=True):
+    return cizgi_svg(ATLAMA_G, [(ATLAMA_D, OB)], 5.1, 5.4, 0.05, baslik="Esra Bayrak'ın atlayışları (m)", deger_yaz=deger, ond=2)
+
+
+def fidan_svg(deger=True):
+    return cizgi_svg(FIDAN_G, [(FIDAN_D, "#8ce99a")], 8, 26, 2, baslik="Fidanın boyu (cm)", deger_yaz=deger)
+
+
+def kardes_svg():
+    return nokta_grafik_svg(KARDES, 0, 4, baslik="7/B'de 12 öğrencinin kardeş sayısı", eksen="Kardeş sayısı")
+
+
+def persentil_svg():
+    return cizgi_svg(PERS_G, [(P25, P25R), (P50, P50R), (P75, P75R)], 32, 48, 2, h=200, baslik="Erkek bebeklerin baş çevresi (cm)",
+                     deger_yaz=False, efont=9, lejant=[("P25", P25R), ("P50", P50R), ("P75", P75R)])
+
+
+# =================================================================
+def u3k4():
+    return {
+        "id": "u3k4", "unite": T3, "baslik": "Nokta ve Çizgi Grafiği", "sayfalar": "s. 171–172",
+        "giris": "Verileri topladık. Şimdi onları bir resme çevireceğiz. Bu resme grafik diyoruz. Bu konuda nokta grafiğini hatırlayacağız ve çizgi grafiğini tanıyacağız. Çizgi grafiği, bir şeyin zamanla nasıl değiştiğini en iyi gösteren grafiktir.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda grafik okuyacağız ve ondalık sayıları karşılaştıracağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Sütun grafiği okuma", "sinif": "Önceki yıllar", "svg": svg3_h_sutun(),
+                 "anlatim": "Sütun grafiğinde her sütunun boyu bir sayıyı gösterir. Sütunun tepesinden sola, sayıların yazdığı eksene bakarak değeri okuruz.",
+                 "akilda": "Sütunun tepesi = değer",
+                 "ornek": {"problem": "Grafikte Salı günü kaç kitap okunmuş?", "adimlar": [
+                     {"metin": "Salı sütununu bul.", "islem": "Sa"},
+                     {"metin": "Sütunun tepesinden sola bak.", "islem": "5 kitap"}]},
+                 "sorular": [
+                     G("Grafiğe göre Çarşamba günü kaç kitap okunmuş?", "2", "Çarşamba sütununun tepesinden sola bak.", "Çarşamba sütunu 2'ye kadar uzanıyor.",
+                       svg=sutun_svg(["Pzt", "Salı", "Çrş"], [3, 5, 2], 5, baslik="Okunan kitap sayısı"),
+                       yardim={"adimlar": ["Çarşamba sütununu bul.", "Tepesinden sola, sayı eksenine bak."]}),
+                     S("Grafiğe göre en az kitap hangi gün okunmuş?", ["Pazartesi", "Salı", "Çarşamba"], 2,
+                       "En kısa sütunu bul.", "En kısa sütun Çarşamba'ya ait: 2 kitap.",
+                       svg=sutun_svg(["Pzt", "Salı", "Çrş"], [3, 5, 2], 5, baslik="Okunan kitap sayısı"))]},
+                {"ad": "Sürekli veri", "sinif": "3. tema, 1. konu", "svg": svg3_surekli(),
+                 "anlatim": "Ölçerek bulduğumuz, iki değer arasında başka değer olabilen veri süreklidir: boy, sıcaklık, fiyat.",
+                 "akilda": "Ölçerek bulunur: sürekli",
+                 "sorular": [
+                     S("Bir ürünün her gün değişen fiyatı hangi veri türüdür?", ["Kategorik veri", "Kesikli veri", "Sürekli veri"], 2,
+                       "Fiyatlar arasında başka fiyat olabilir mi?", "24,75 TL ile 24,80 TL arasında başka fiyat olabilir: sürekli veri. (s. 163)"),
+                     S("Hangisi sürekli veridir?", ["Bir fidanın boyu", "Sınıftaki öğrenci sayısı", "En sevilen meyve"], 0,
+                       "Hangisini cetvelle ölçeriz?", "Fidanın boyu ölçülür: sürekli veri.")]},
+                {"ad": "Ondalık sayıları karşılaştırma", "sinif": "1. tema, 5. konu", "svg": svg3_h_arada(),
+                 "anlatim": "Önce virgülden önceki kısma bakarız. Aynıysa virgülden sonraki basamakları soldan sağa karşılaştırırız: 5,38 > 5,27 çünkü 3 > 2.",
+                 "akilda": "Soldan sağa, basamak basamak",
+                 "ornek": {"problem": "5,38 mi büyük, 5,36 mı?", "adimlar": [
+                     {"metin": "Virgülden önceki kısımlar aynı: 5.", "islem": "5 = 5"},
+                     {"metin": "Onda birler aynı: 3. Yüzde birlere bak: 8 > 6.", "islem": "5,38 > 5,36"}]},
+                 "sorular": [
+                     S("Hangisi en büyüktür?", ["5,27", "5,38", "5,36"], 1,
+                       "Virgülden sonraki ilk basamaklar: 2, 3, 3. Eşit olanlarda ikinci basamağa bak.", "5,38 > 5,36 > 5,27."),
+                     S("Hangisi en küçüktür?", ["22,4", "27,1", "29,6"], 0,
+                       "Virgülden önceki kısma bak.", "22 < 27 < 29: en küçük 22,4.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Nokta Grafiği", "renk": "#1f9e8f", "svg": svg3_nokta_g(),
+             "aciklama": "Nokta grafiğinde her veri bir noktadır. Aynı değerdeki veriler sayı doğrusunun üstünde üst üste yığılır.",
+             "ek": "Yığın ne kadar yüksekse o değer o kadar çok tekrar etmiştir. Kardeş sayısı gibi sayarak bulunan verilerde iyi çalışır. (s. 172)",
+             "akilda": "Aynı değer: üst üste",
+             "cozum": {"baslik": "Nokta grafiğini oku",
+                       "problem": "7/B'deki 12 öğrencinin kardeş sayıları nokta grafiğinde. Kaç öğrencinin 1 kardeşi var?",
+                       "svg": kardes_svg(),
+                       "adimlar": [
+                           {"metin": "Alttaki sayı doğrusunda 1'i bul.", "islem": "1 kardeş"},
+                           {"metin": "1'in üstündeki noktaları say. Her nokta bir öğrenci.", "islem": "5 nokta"}],
+                       "sonuc": "5 öğrencinin 1 kardeşi var. En yüksek yığın da bu: en çok tekrar eden değer 1."},
+             "soru": G("Grafikte kaç öğrencinin 2 kardeşi var?", "3", "2'nin üstündeki noktaları say.", "2'nin üstünde 3 nokta var: 3 öğrenci.",
+                       svg=kardes_svg(), birim="öğrenci", yardim={"adimlar": ["Sayı doğrusunda 2'yi bul.", "Üstündeki noktaları tek tek say."]})},
+            {"ad": "Nokta Grafiği Ne Zaman Uymaz?", "renk": "#7b4fc9", "svg": svg3_yigilmaz(),
+             "aciklama": "Altın fiyatı gibi sürekli verilerde neredeyse her değer farklıdır. Noktalar yığılmaz; her değerde tek nokta kalır.",
+             "ek": "Nokta grafiği verileri yığarak gösterir. Sürekli verilerin yığılmalı gösterilmesi gerekmez. Ayrıca nokta grafiğinde günlerin sırası görünmez, değişim izlenemez. (s. 172)",
+             "akilda": "Hep farklı değer: yığın olmaz",
+             "soru": S("Gram altının 11 günlük fiyatları (5 421,88 · 5 257,73 · 5 390,82 …) nokta grafiğine uygun mu?",
+                       ["Uygun; noktalar üst üste yığılır.", "Uygun değil; değerler hep farklı, değişim görünmez.", "Uygun; çünkü veri kategoriktir."], 1,
+                       "Bilgi kartına bak: değerler birbirini tekrar ediyor mu?", "Fiyatlar hep farklıdır ve sürekli veridir; yığılma olmaz, değişim de görünmez. (s. 172)")},
+            {"ad": "Çizgi Grafiği", "renk": "#b7791f", "svg": svg3_cizgi(),
+             "aciklama": "Çizgi grafiğinde noktalar bir çizgiyle birleştirilir. Yatay eksende zaman, dikey eksende ölçülen değer vardır. (s. 172)",
+             "ek": "Bir değişkenin zamana bağlı değişimini göstermek için en etkili grafiktir. Bir noktanın değerini okumak için noktadan sola, dikey eksene bakarız. (s. 172)",
+             "akilda": "Noktaları birleştir: zamanla değişim",
+             "cozum": {"baslik": "Çizgi grafiğini oku",
+                       "problem": "Grafikte gram altının bazı günlerdeki alış fiyatları var. 31 Ekim'de 1 gram altın kaç TL?",
+                       "svg": altin_svg(),
+                       "adimlar": [
+                           {"metin": "Yatay eksende (zaman) 31.10'u bul.", "islem": "31.10"},
+                           {"metin": "Yukarı çık, çizginin üstündeki noktayı bul.", "islem": "nokta"},
+                           {"metin": "Noktanın yanındaki değeri oku. Emin olmak için sola, dikey eksene bak: 5 400 ile 5 500 arasında.", "islem": "5 448 TL"}],
+                       "sonuc": "31 Ekim'de 1 gram altın yaklaşık 5 448 TL. (s. 171–172)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Aynı grafikte 11 Kasım'daki fiyatı bul.",
+                       "svg": altin_svg(),
+                       "adimlar": [
+                           {"metin": "Yatay eksende 11.11'i bul.", "islem": "11.11 (en sağdaki)"},
+                           {"metin": "Noktanın değerini oku.",
+                            "soru": G("11 Kasım'da 1 gram altın kaç TL?", "5624", "En sağdaki noktanın üstüne bak.", "En sağdaki nokta 5 624 TL.", birim="TL",
+                                      svg=altin_svg(), yardim={"adimlar": ["Yatay eksende en sağdaki tarihi bul.", "Noktanın üstündeki sayıyı oku."]}),
+                            "islem": "5 624 TL"}],
+                       "sonuc": "Harika! Grafikteki en yüksek fiyat da bu."},
+             "soru": S("Çizgi grafiğinde yatay eksende genellikle ne olur?", ["Zaman (gün, hafta, yıl)", "Kategoriler (renkler)", "Hiçbir şey"], 0,
+                       "Çizgi grafiği neyin değişimini gösteriyordu?", "Çizgi grafiği zamana bağlı değişimi gösterir; yatay eksende zaman olur. (s. 172)")},
+            {"ad": "Artış, Azalış, Sabit", "renk": "#2f8f73", "svg": svg3_yon(),
+             "aciklama": "Çizgi yukarı çıkıyorsa artış, aşağı iniyorsa azalış, düz gidiyorsa değişim yok (sabit) demektir. (s. 172)",
+             "ek": "Çizgi ne kadar dikse değişim o kadar büyüktür. En büyük değişimi bulmak için iki nokta arasındaki farkı hesaplarız: büyükten küçüğü çıkar.",
+             "akilda": "Yukarı artış, aşağı azalış",
+             "cozum": {"baslik": "En büyük artış",
+                       "problem": "Ela fidanının boyunu 6 hafta ölçtü (kitap dışı örnek). Hangi iki hafta arasında en çok uzadı?",
+                       "svg": fidan_svg(),
+                       "adimlar": [
+                           {"metin": "Çizgi hep yukarı gidiyor: fidan her hafta uzamış.", "islem": "artış"},
+                           {"metin": "En dik çıkan parçayı bul: 2. hafta ile 3. hafta arası.", "islem": "12 → 17"},
+                           {"metin": "Farkı hesapla: büyükten küçüğü çıkar.", "islem": "17 − 12 = 5 cm"}],
+                       "sonuc": "En çok artış 2. ve 3. hafta arasında: 5 cm."},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Altın grafiğinde 27 Ekim'den 28 Ekim'e fiyat ne oldu?",
+                       "svg": altin_svg(),
+                       "adimlar": [
+                           {"metin": "Çizginin yönüne bak.",
+                            "soru": S("27.10'dan 28.10'a çizgi nereye gidiyor?", ["Yukarı", "Aşağı", "Düz"], 1,
+                                      "İlk iki noktayı karşılaştır.", "5 422'den 5 258'e iniyor: aşağı."),
+                            "islem": "Aşağı → azalış"},
+                           {"metin": "Ne kadar azaldı?",
+                            "soru": G("Fiyat kaç TL azaldı?", "164", "Büyükten küçüğü çıkar: 5 422 − 5 258.", "5 422 − 5 258 = 164 TL.", birim="TL",
+                                      yardim={"adimlar": ["İki fiyatı oku: 5 422 ve 5 258.", "Büyükten küçüğü çıkar."]}),
+                            "islem": "164 TL azaldı"}],
+                       "sonuc": "Harika! Çizgi aşağı inince azalış olur."},
+             "soru": S("Bir çizgi grafiğinde çizgi iki nokta arasında düz gidiyorsa ne anlarız?", ["Değer arttı.", "Değer azaldı.", "Değer değişmedi."], 2,
+                       "Bilgi kartında “düz” kelimesine bak.", "Düz çizgi: iki zaman arasında değer aynı kalmış.")},
+            {"ad": "Hangi Grafik?", "renk": "#5f3dc4", "svg": svg3_hangi(),
+             "aciklama": "Sayıp karşılaştırmak için sütun ya da nokta grafiği; bir değerin zamanla nasıl değiştiğini görmek için çizgi grafiği kullanırız.",
+             "ek": "Altın fiyatları sütun grafiğiyle de çizilebilir; günler karşılaştırılır ama değerleri okumak ve değişimi izlemek zordur. Bu yüzden çizgi grafiği daha uygundur. (s. 171)",
+             "akilda": "Zamanla değişim: çizgi",
+             "soru": S("Bir şehrin 1 hafta boyunca her gün öğlen ölçülen sıcaklığı hangi grafikle en iyi gösterilir?", ["Nokta grafiği", "Çizgi grafiği", "Hiçbiri"], 1,
+                       "Zamanla değişen sürekli bir veri mi?", "Sıcaklık zamanla değişen sürekli veridir: çizgi grafiği. (s. 172)")}
+        ],
+        "gruplar": [{"soru": "Hangi grafikle ilgili?", "kutular": [
+            {"etiket": "Noktalar üst üste", "uyeler": ["Nokta Grafiği", "Nokta Grafiği Ne Zaman Uymaz?"]},
+            {"etiket": "Noktalar çizgiyle birleşir", "uyeler": ["Çizgi Grafiği", "Artış, Azalış, Sabit"]},
+            {"etiket": "Grafik seçme", "uyeler": ["Hangi Grafik?"]}]}],
+        "akildaKalsin": [
+            "Nokta grafiğinde aynı değerler üst üste yığılır.",
+            "Sürekli verilerde değerler hep farklıdır; nokta grafiği uygun olmaz.",
+            "Çizgi grafiği zamanla değişimi gösterir: yatayda zaman, dikeyde değer.",
+            "Çizgi yukarı: artış. Aşağı: azalış. Düz: sabit.",
+            "En büyük değişim için iki değerin farkını bul: büyükten küçüğü çıkar."],
+        "merakKutusu": [
+            {"soru": "Altın fiyatlarını kim yayımlıyor?", "cevap": "Türkiye Cumhuriyet Merkez Bankası her gün altın ve döviz verilerini paylaşır. Kitaptaki fiyatlar saat 15.00'te geçerli olan alış fiyatlarıdır. (s. 171)"},
+            {"soru": "Çizgi grafiğinde noktaların arasındaki çizgi ne anlatır?", "cevap": "İki ölçüm arasındaki değişimi gösterir. Çizgi sayesinde artış ve azalış bir bakışta görülür. (s. 172)"},
+            {"soru": "Dikey eksen neden 0'dan başlamıyor?", "cevap": "Altın fiyatları hep 5 200 ile 5 700 arasında. Ekseni 0'dan başlatsaydık çizgi neredeyse düz görünürdü ve değişim fark edilmezdi. (s. 172)"},
+            {"soru": "Sütun grafiği hiç mi işe yaramaz?", "cevap": "Yarar! Günleri karşılaştırmak için kullanılabilir. Ama değerleri okumak ve değişimi izlemek çizgi grafiğinde daha kolaydır. (s. 171)"},
+            {"soru": "Günlük hayatta hangi veriler çizgi grafiğine uygun?", "cevap": "Zamanla değişen sürekli veriler: bir fidanın boyu, günlük sıcaklık, bir ürünün fiyatı, bir bebeğin kilosu. (s. 172)"}],
+        "dusunVeYaz": [{"soru": "Bir sınıftaki öğrencilerin kardeş sayıları için nokta grafiği, bir haftalık hava sıcaklığı için çizgi grafiği seçiliyor. Neden?",
+                        "ornekCevap": "Kardeş sayıları tekrar eder, aynı değerler üst üste yığılır; nokta grafiği uygun. Sıcaklık zamanla değişen sürekli veri; değişimi çizgi grafiği gösterir.",
+                        "anahtarlar": ["yığıl", "tekrar", "zaman", "değiş", "sürekli"]}],
+        "sorular": [
+            N("Nokta grafiğine göre en çok tekrar eden kardeş sayısı hangisi? Sayı doğrusunda dokun.", 1, {"min": 0, "max": 4},
+              "En yüksek yığını bul.", "1'in üstünde 5 nokta var: en yüksek yığın.", svg=kardes_svg(), kavram="Nokta Grafiği",
+              yardim={"adimlar": ["Her sayının üstündeki noktaları say.", "En çok nokta hangi sayının üstünde?"]}),
+            G("Nokta grafiğine göre kaç öğrencinin 3 ya da daha fazla kardeşi var?", "2", "3'ün ve 4'ün üstündeki noktaları topla.", "3'te 1, 4'te 1 nokta: 2 öğrenci.",
+              svg=kardes_svg(), birim="öğrenci", kavram="Nokta Grafiği",
+              yardim={"adimlar": ["“3 ya da daha fazla” hangi sayılar? 3 ve 4.", "3'ün üstündeki noktaları say.", "4'ün üstündekileri de say ve topla."]}),
+            G("Altın grafiğine göre 5 Kasım'da 1 gram altın kaç TL?", "5370", "05.11'in üstündeki noktaya bak.", "05.11 noktasında 5 370 TL yazıyor.",
+              svg=altin_svg(), birim="TL", kavram="Çizgi Grafiği",
+              yardim={"adimlar": ["Yatay eksende 05.11'i bul.", "Yukarı çık, noktayı bul ve değerini oku."]}),
+            S("Altın grafiğine göre en düşük fiyat hangi gün?", ["27 Ekim", "28 Ekim", "5 Kasım"], 1,
+              "En alttaki noktayı bul.", "En alttaki nokta 28.10: 5 258 TL. (s. 172)", svg=altin_svg(), kavram="Çizgi Grafiği"),
+            S("Altın grafiğinde 5 Kasım'dan 11 Kasım'a fiyat nasıl değişmiş?", ["Sürekli azalmış.", "Hiç değişmemiş.", "Sürekli artmış."], 2,
+              "Son üç noktada çizgi nereye gidiyor?", "5 370 → 5 524 → 5 624: çizgi hep yukarı, fiyat artmış.", svg=altin_svg(), kavram="Artış, Azalış, Sabit"),
+            G("Fidan grafiğine göre fidan 1. haftadan 6. haftaya kadar toplam kaç cm uzamış?", "13", "Son boydan ilk boyu çıkar.", "23 − 10 = 13 cm.",
+              svg=fidan_svg(), birim="cm", kavram="Artış, Azalış, Sabit",
+              yardim={"adimlar": ["1. haftadaki boyu oku.", "6. haftadaki boyu oku.", "Büyükten küçüğü çıkar."]}),
+            S("Fidan grafiğinde en az uzama hangi iki hafta arasında?", ["3. ve 4. hafta", "1. ve 2. hafta", "5. ve 6. hafta"], 0,
+              "En yatık (en az eğimli) parçayı bul ya da farkları hesapla.", "17 → 18: sadece 1 cm. En yatık parça burası.", svg=fidan_svg(), kavram="Artış, Azalış, Sabit"),
+            S("Hangi veri seti için çizgi grafiği en uygundur?", ["Sınıftaki öğrencilerin göz renkleri", "Bir sınıfta en sevilen dersler", "Bir bebeğin 12 ay boyunca her ay ölçülen boyu"], 2,
+              "Hangisi zamanla değişen sürekli bir veri?", "Bebeğin boyu zamanla değişen sürekli veridir: çizgi grafiği. (s. 172)", kavram="Hangi Grafik?"),
+            S("Melis günlük altın fiyatlarını nokta grafiğiyle göstermek istiyor. Hangisi doğrudur?",
+              ["Fiyatlar hep farklı olduğu için noktalar yığılmaz; çizgi grafiği daha uygun olur.", "Nokta grafiği en uygun grafiktir.", "Altın fiyatı kategorik veridir."], 0,
+              "Fiyatlar tekrar ediyor mu?", "Sürekli verilerde değerler hep farklıdır; değişimi çizgi grafiği gösterir. (s. 172)", kavram="Nokta Grafiği Ne Zaman Uymaz?"),
+            N("Nokta grafiğinde en az öğrencinin olduğu kardeş sayılarından küçük olanına dokun.", 3, {"min": 0, "max": 4},
+              "En alçak yığınlar hangileri? Onlardan küçüğünü seç.", "3 ve 4'te birer nokta var; küçük olan 3.", svg=kardes_svg(), kavram="Nokta Grafiği",
+              yardim={"adimlar": ["Her sayının üstündeki noktaları say.", "En az nokta olan sayıları bul.", "Bu sayılardan küçük olanı seç."]})]
+    }
+
+
+def u3k5():
+    return {
+        "id": "u3k5", "unite": T3, "baslik": "Temsil Değeri ve Tahmin", "sayfalar": "s. 173–179",
+        "giris": "Grafiği çizdik. Şimdi yorumlama zamanı! Bu konuda grafiğin genel yönünü (eğilimi) okuyacağız, gelecek için tahmin yapacağız. Sonra bir veri setini tek bir sayıyla özetlemeyi ve bir iddiayı verilerle sınamayı öğreneceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda aritmetik ortalama, ortanca ve tepe değeri kullanacağız. Önceki yıllardan hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Aritmetik ortalama", "sinif": "Önceki yıllar", "svg": svg3_ortalama(),
+                 "anlatim": "Bütün verileri topla, toplamı veri sayısına böl. Sonuç, verileri eşit paylaştırsaydık her birine düşen değerdir.",
+                 "akilda": "Topla, kaç tane varsa ona böl",
+                 "ornek": {"problem": "4, 6, 8 sayılarının aritmetik ortalaması kaçtır?", "adimlar": [
+                     {"metin": "Bütün sayıları topla.", "islem": "4 + 6 + 8 = 18"},
+                     {"metin": "Kaç sayı var? 3. Toplamı 3'e böl.", "islem": "18 ÷ 3 = 6"}]},
+                 "sorular": [
+                     G("2, 5, 8 sayılarının aritmetik ortalaması kaçtır?", "5", "Topla, sonra 3'e böl.", "2 + 5 + 8 = 15; 15 ÷ 3 = 5.",
+                       yardim={"adimlar": ["Üç sayıyı topla.", "Toplamı 3'e böl."]}),
+                     G("10, 20, 30, 40 sayılarının aritmetik ortalaması kaçtır?", "25", "Topla, sonra 4'e böl.", "10 + 20 + 30 + 40 = 100; 100 ÷ 4 = 25.",
+                       yardim={"adimlar": ["Dört sayıyı topla.", "Toplamı 4'e böl."]})]},
+                {"ad": "Ortanca", "sinif": "Önceki yıllar", "svg": svg3_ortanca(),
+                 "anlatim": "Verileri küçükten büyüğe sırala. Tam ortadaki değer ortancadır. Veri sayısı çiftse ortadaki iki değerin ortalaması alınır.",
+                 "akilda": "Sırala, ortadakini al",
+                 "ornek": {"problem": "7, 1, 9, 3, 5 verilerinin ortancası kaçtır?", "adimlar": [
+                     {"metin": "Küçükten büyüğe sırala.", "islem": "1, 3, 5, 7, 9"},
+                     {"metin": "5 veri var; ortadaki 3. sıradaki.", "islem": "Ortanca = 5"}]},
+                 "sorular": [
+                     G("8, 2, 6 verilerinin ortancası kaçtır?", "6", "Önce sırala: 2, 6, 8.", "Sıralı: 2, 6, 8. Ortadaki 6.",
+                       yardim={"adimlar": ["Sayıları küçükten büyüğe sırala.", "Ortadaki sayıyı bul."]}),
+                     G("4, 9, 1, 7, 3 verilerinin ortancası kaçtır?", "4", "Önce sırala.", "Sıralı: 1, 3, 4, 7, 9. Ortadaki 4.",
+                       yardim={"adimlar": ["Sayıları küçükten büyüğe sırala.", "5 sayı var; 3. sıradakini bul."]})]},
+                {"ad": "Tepe değer", "sinif": "Önceki yıllar", "svg": svg3_tepe(),
+                 "anlatim": "Veri setinde en çok tekrar eden değere tepe değer denir. Nokta grafiğinde en yüksek yığındır.",
+                 "akilda": "En çok tekrar eden",
+                 "sorular": [
+                     G("2, 3, 3, 5, 3, 2 verilerinin tepe değeri kaçtır?", "3", "Hangi sayı en çok yazılmış?", "3 üç kez tekrar ediyor: tepe değer 3.",
+                       yardim={"adimlar": ["Her sayının kaç kez yazıldığını say.", "En çok yazılan sayıyı seç."]}),
+                     G("10,5 · 12,5 · 10,5 · 9,0 verilerinin tepe değeri kaçtır?", "10,5", "Hangi sayı iki kez yazılmış?", "10,5 iki kez tekrar ediyor.", denk=True,
+                       yardim={"adimlar": ["Her sayının kaç kez yazıldığını say.", "En çok yazılan sayıyı seç."]})]}
+            ]},
+        "kavramlar": [
+            {"ad": "Eğilim", "renk": "#2364c7", "svg": svg3_egilim(),
+             "aciklama": "Eğilim, çizginin genel yönüdür. Arada küçük inişler çıkışlar olsa da çizgi genel olarak artıyor mu, azalıyor mu ona bakarız.",
+             "ek": "Türkiye'de ortalama kar örtülü gün sayısı 1970–1980'de 30,0 iken 2014–2024'te 22,4 olmuş. Arada küçük bir artış olsa da genel eğilim azalıştır. (s. 175)",
+             "akilda": "Genel yön: eğilim",
+             "cozum": {"baslik": "Eğilimi bul",
+                       "problem": "Kar örtülü gün sayısının 1970–2024 arasındaki eğilimi nasıldır?",
+                       "svg": kar_svg(),
+                       "adimlar": [
+                           {"metin": "İlk ve son değere bak.", "islem": "30,0 → 22,4"},
+                           {"metin": "Aradaki küçük değişimlere takılma: 29,6'dan 30,0'a küçük bir çıkış var.", "islem": "küçük iniş çıkış"},
+                           {"metin": "Çizgi genel olarak nereye gidiyor? Aşağı.", "islem": "Eğilim: azalış"}],
+                       "sonuc": "Kar örtülü gün sayısı azalma eğilimindedir; özellikle son iki dönemde hızla azalmış. (s. 175)"},
+             "soru": S("Bir çizgi grafiği arada bir kez inip genel olarak yukarı çıkıyor. Eğilimi nedir?", ["Artış", "Azalış", "Sabit"], 0,
+                       "Bilgi kartı: küçük inişlere değil, genel yöne bak.", "Genel yön yukarı: eğilim artıştır.")},
+            {"ad": "Veri Ötesi: Tahmin", "renk": "#1f9e8f", "svg": svg3_tahmin(),
+             "aciklama": "Eğilime bakarak gelecekte ne olabileceğini tahmin edebiliriz. Buna veri ötesini yorumlamak denir. (s. 174)",
+             "ek": "Tahmin kesin değildir; “… olabilir” deriz. Kitaptaki örnek: Bir çiftçi son 10 yılda yağışın azaldığını görür ve kuraklığa dayanıklı ürün ekmeye ya da damla sulama yaptırmaya karar verir. (s. 174)",
+             "akilda": "Eğilim devam ederse…",
+             "soru": S("Kar örtülü gün sayısı azalma eğiliminde. 2025–2035 için en uygun tahmin hangisi?",
+                       ["Kesinlikle 40 güne çıkacak.", "Bir daha hiç kar yağmayacak.", "Kar örtülü gün sayısı azalmaya devam edebilir."], 2,
+                       "Tahmin eğilime uymalı ama kesin konuşmamalı.", "Eğilim azalış; tahmin “azalmaya devam edebilir” olur. Tahmin kesin değildir. (s. 174–175)")},
+            {"ad": "Referans Değeri", "renk": "#2f8f73", "svg": svg3_referans(),
+             "aciklama": "Referans değeri, bir ölçümü karşılaştırmak için önceden belirlenmiş değerdir. (s. 177)",
+             "ek": "Doktorlar bebeğin baş çevresini persentil eğrileriyle karşılaştırır. P50 (50. persentil) değerindeki bebek normal aralıktadır; P75'teki bebek yaşıtlarının %75'inden büyüktür. (s. 177)",
+             "akilda": "Karşılaştırma için hazır değer",
+             "cozum": {"baslik": "Kerem'in baş çevresi",
+                       "problem": "9 aylık Kerem'in baş çevresi 46 cm. Grafikteki referans değerlerine göre nasıl yorumlarsın?",
+                       "svg": persentil_svg(),
+                       "adimlar": [
+                           {"metin": "Grafikte 9 ay sütununu bul ve değerleri oku.", "islem": "P50 = 45,8 · P75 = 46,6"},
+                           {"metin": "46 hangi iki değerin arasında?", "islem": "45,8 < 46 < 46,6"},
+                           {"metin": "Yorumla: P50'nin biraz üstünde, P75'in altında.", "islem": "normal aralıkta"}],
+                       "sonuc": "Kerem'in baş çevresi referans değerlerine göre normal aralıkta, ortanın biraz üstünde. (s. 177–178)"},
+             "soru": S("Referans değeri ne için kullanılır?", ["Grafiğe renk vermek için", "Araştırma sorusu yazmak için", "Bir ölçümü karşılaştırmak için"], 2,
+                       "Bilgi kartındaki tanıma bak.", "Referans değeri, ölçümü karşılaştırmak için önceden belirlenmiş değerdir. (s. 177)")},
+            {"ad": "Temsil Değeri", "renk": "#b7791f", "svg": svg3_temsil_deger(),
+             "aciklama": "Bir veri setini tek bir sayıyla özetleyen değere temsil değeri denir. Genelde aritmetik ortalama, ortanca ya da tepe değerden biri seçilir.",
+             "ek": "Hangisini seçtiğimizi gerekçesiyle söyleriz. Kitapta kar örtülü gün sayıları için bir temsil değeri seçilip gerekçesi yazılıyor. (s. 175)",
+             "akilda": "Bütün veriyi tek sayıyla söyle",
+             "cozum": {"baslik": "Kar verisinin ortalaması",
+                       "problem": "Kar örtülü gün sayıları: 30,0 · 29,6 · 30,0 · 27,1 · 22,4. Aritmetik ortalamayı temsil değeri olarak seçelim.",
+                       "adimlar": [
+                           {"metin": "Bütün değerleri topla.", "islem": "30,0 + 29,6 + 30,0 + 27,1 + 22,4 = 139,1"},
+                           {"metin": "5 değer var: toplamı 5'e böl.", "islem": "139,1 ÷ 5 = 27,82"},
+                           {"metin": "Yuvarla.", "islem": "≈ 27,8 gün"}],
+                       "sonuc": "Temsil değeri yaklaşık 27,8 gün. Gerekçe: Bütün dönemleri hesaba katan ortalamayı seçtik. (s. 175)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Aynı veri setinde (30,0 · 29,6 · 30,0 · 27,1 · 22,4) tepe değeri ve ortancayı bul.",
+                       "adimlar": [
+                           {"metin": "En çok tekrar eden değer hangisi?",
+                            "soru": G("Tepe değer kaçtır?", "30", "Hangi sayı iki kez yazılmış?", "30,0 iki kez var.", denk=True,
+                                      yardim={"adimlar": ["Her sayının kaç kez yazıldığını say.", "En çok yazılanı seç."]}),
+                            "islem": "Tepe değer = 30,0"},
+                           {"metin": "Sırala: 22,4 · 27,1 · 29,6 · 30,0 · 30,0. Ortadaki hangisi?",
+                            "soru": G("Ortanca kaçtır?", "29,6", "5 değer var; 3. sıradakine bak.", "Sıralı listede 3. değer 29,6.", denk=True,
+                                      yardim={"adimlar": ["Sıralı listeye bak.", "5 değer var; 3. sıradakini bul."]}),
+                            "islem": "Ortanca = 29,6"}],
+                       "sonuc": "Harika! Üç ölçü de farklı: 27,8 · 29,6 · 30,0. Hangisini seçeceğimizi gerekçesiyle söyleriz."},
+             "soru": S("Temsil değeri için hangisi doğrudur?", ["Veri setini tek bir sayıyla özetler.", "Her zaman en büyük veridir.", "Grafiğin başlığıdır."], 0,
+                       "Bilgi kartındaki ilk cümleye bak.", "Temsil değeri, veri setini tek sayıyla özetler.")},
+            {"ad": "Temsil Değeri Listede Olmayabilir", "renk": "#7b4fc9", "svg": svg3_yok(),
+             "aciklama": "Temsil değeri veri setindeki sayılardan biri olmayabilir. Örneğin 27,8 kar verisi listesinde yoktur ama veriyi temsil eder. (s. 176)",
+             "ek": "Kesikli bir veri seti sürekli bir sayıyla temsil edilebilir: gün sayısı kesiklidir, 27,8 ise ondalıktır. Temsil değeri, gerekçesi söylenerek ortalamaya yakın bir sayı da olabilir: “yaklaşık 28 gün” gibi. (s. 176)",
+             "akilda": "Listede yoksa da olur",
+             "soru": S("Kar verisinin ortalaması 27,8 tabloda yok. Bu bir sorun mu?", ["Evet, temsil değeri tabloda olmalı.", "Hayır, temsil değeri veri setinde olmayabilir.", "Evet, ortalama yanlış hesaplanmış."], 1,
+                       "Bilgi kartındaki ilk cümleye bak.", "Temsil değeri veri setinde yer almayabilir. (s. 176)")},
+            {"ad": "Veriyle İddiayı Sınama", "renk": "#c2255c", "svg": svg3_iddia(),
+             "aciklama": "Biri bir iddiada bulunursa verileri toplar, ortalama, ortanca ve tepe değeri hesaplar ve iddiayla karşılaştırırız. (s. 176)",
+             "ek": "Mühendis, motorla arabanın 1 litre benzinle en az 13 km gideceğini iddia ediyor. 10 deneme sürüşü: 11,7 · 10,0 · 13,0 · 10,5 · 12,5 · 10,5 · 9,0 · 13,5 · 14,0 · 15,0 km. (s. 176)",
+             "akilda": "İddia + veri = karar",
+             "cozum": {"baslik": "Mühendisin iddiası",
+                       "problem": "İddia: “1 litre benzinle en az 13 km.” Verilere göre doğrulanıyor mu?",
+                       "adimlar": [
+                           {"metin": "Ortalama: 10 değeri topla, 10'a böl.", "islem": "119,7 ÷ 10 = 11,97 km"},
+                           {"metin": "Ortanca: sırala (9,0 · 10,0 · 10,5 · 10,5 · 11,7 · 12,5 · 13,0 · 13,5 · 14,0 · 15,0). Ortadaki iki değerin ortalaması.", "islem": "(11,7 + 12,5) ÷ 2 = 12,1 km"},
+                           {"metin": "Tepe değer: 10,5 iki kez tekrar ediyor.", "islem": "10,5 km"},
+                           {"metin": "Üçünü de 13 ile karşılaştır.", "islem": "11,97 · 12,1 · 10,5 < 13"}],
+                       "sonuc": "Üç ölçü de 13 km'den az: iddia bu verilerle doğrulanmıyor. (s. 176)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Bir başka araba 5 deneme yaptı: 12, 14, 13, 15, 16 km. İddia yine “en az 13 km”.",
+                       "adimlar": [
+                           {"metin": "Ortalamayı bul.",
+                            "soru": G("5 denemenin aritmetik ortalaması kaç km?", "14", "Topla, 5'e böl.", "12 + 14 + 13 + 15 + 16 = 70; 70 ÷ 5 = 14 km.", birim="km",
+                                      yardim={"adimlar": ["Beş değeri topla.", "Toplamı 5'e böl."]}),
+                            "islem": "Ortalama = 14 km"},
+                           {"metin": "13 ile karşılaştır.",
+                            "soru": S("Ortalamaya göre iddia için ne söylenebilir?", ["İddiayı destekliyor.", "İddiayı çürütüyor.", "Karşılaştırılamaz."], 0,
+                                      "14 mü büyük, 13 mü?", "14 > 13: ortalama iddiayı destekliyor."),
+                            "islem": "14 > 13 ✓"}],
+                       "sonuc": "Harika! Bu araç için veriler iddiayı destekliyor."},
+             "soru": S("Mühendisin verilerinde ortalama 11,97, ortanca 12,1 km. İddia “en az 13 km”. Hangisi doğrudur?",
+                       ["İddia doğrulanmıştır.", "İddia bu verilerle doğrulanmaz.", "Veriler iddiayla ilgili değildir."], 1,
+                       "İki ölçüyü 13 ile karşılaştır.", "11,97 ve 12,1, 13'ten küçük: iddia doğrulanmaz. (s. 176)")}
+        ],
+        "gruplar": [{"soru": "Ne işe yarar?", "kutular": [
+            {"etiket": "Grafiği yorumlamak", "uyeler": ["Eğilim", "Veri Ötesi: Tahmin"]},
+            {"etiket": "Tek sayıyla özetlemek", "uyeler": ["Temsil Değeri", "Temsil Değeri Listede Olmayabilir"]},
+            {"etiket": "Karşılaştırıp karar vermek", "uyeler": ["Referans Değeri", "Veriyle İddiayı Sınama"]}]}],
+        "akildaKalsin": [
+            "Eğilim çizginin genel yönüdür; küçük iniş çıkışlara takılma.",
+            "Eğilim devam ederse gelecekte ne olabileceğini tahmin ederiz; tahmin kesin değildir.",
+            "Referans değeri, bir ölçümü karşılaştırmak için önceden belirlenmiş değerdir.",
+            "Temsil değeri veri setini tek sayıyla özetler; veri setinde olmayabilir.",
+            "Bir iddiayı sınamak için ortalama, ortanca ve tepe değeri iddiayla karşılaştır."],
+        "merakKutusu": [
+            {"soru": "Persentil ne demek?", "cevap": "Bir bebeğin ölçüsünün yaşıtlarına göre yerini gösterir. P75'teki bebek, yaşıtlarının %75'inden daha uzun ya da kilolu demektir. (s. 177)"},
+            {"soru": "Kar örtülü gün sayısı neden önemli?", "cevap": "İklim verileri, tarım planlaması, su kaynaklarının yönetimi ve kış turizmi bu sayıya bakılarak planlanır. (s. 175)"},
+            {"soru": "Ortalama ile ortanca neden farklı çıkar?", "cevap": "Ortalama bütün sayıları hesaba katar; çok küçük ya da çok büyük bir değer onu çeker. Ortanca sadece sıralamadaki ortaya bakar."},
+            {"soru": "Gün sayısı kesikliyse 27,8 gün nasıl olur?", "cevap": "Gerçekte 27,8 gün yaşanmaz ama veriyi özetleyen sayı olarak kullanılabilir. Kesikli bir veri seti sürekli bir sayıyla temsil edilebilir. (s. 176)"},
+            {"soru": "Esra Bayrak kimdir?", "cevap": "Uzun atlamada ülkemizi temsil eden millî paralimpik sporcumuzdur. Atlayış mesafeleri 2017'de 5,17 m, 2019'da 5,38 m. (s. 179)"},
+            {"soru": "Bir tahmin yanlış çıkarsa?", "cevap": "Olabilir! Tahmin eğilime dayanır ama kesin değildir. Yeni veriler gelince tahmini güncelleriz."}],
+        "dusunVeYaz": [{"soru": "Bir kayak merkezinde kayak okulu açacağını düşün. Kar örtülü gün sayısının azalma eğilimi sana ne söyler? Kararını nasıl etkiler?",
+                        "ornekCevap": "Kar örtülü gün sayısı azalıyor; bu devam ederse kayak yapılabilecek gün sayısı azalabilir. Okulu açmadan önce o merkezin kendi verilerine bakardım ya da yapay kar gibi önlemleri düşünürdüm.",
+                        "anahtarlar": ["azal", "eğilim", "devam", "tahmin", "karar"]}],
+        "sorular": [
+            S("Kar grafiğine göre ortalama kar örtülü gün sayısının genel eğilimi nedir?", ["Artış", "Azalış", "Hiç değişmemiş"], 1,
+              "İlk ve son değere bak: 30,0 ve 22,4.", "Arada küçük bir çıkış olsa da genel yön aşağı: azalış. (s. 175)", svg=kar_svg(), kavram="Eğilim"),
+            G("Kar grafiğine göre 2003–2013 ile 2014–2024 dönemleri arasında kar örtülü gün sayısı kaç gün azalmış?", "4,7", "Büyükten küçüğü çıkar: 27,1 − 22,4.",
+              "27,1 − 22,4 = 4,7 gün.", denk=True, birim="gün", svg=kar_svg(), kavram="Eğilim",
+              yardim={"adimlar": ["İki dönemin değerlerini oku: 27,1 ve 22,4.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]}),
+            S("Bir çiftçi son 10 yılda yağışın azaldığını gördü. Veri ötesini yorumlayarak hangi kararı verebilir?",
+              ["Çok su isteyen ürün ekmek", "Kuraklığa dayanıklı ürün ekmek ya da damla sulama yaptırmak", "Verilere hiç bakmamak"], 1,
+              "Yağış azalmaya devam ederse ne olur?", "Yağış azalırsa az su isteyen ürün ve damla sulama verimi artırır. (s. 174)", kavram="Veri Ötesi: Tahmin"),
+            S("9 aylık bir bebeğin baş çevresi 44,9 cm. Referans değerlerine göre (P25 = 44,9 · P50 = 45,8 · P75 = 46,6) hangisi doğrudur?",
+              ["P25 değerinde", "P50 değerinde", "P75'in üstünde"], 0,
+              "44,9 hangi değere eşit?", "44,9 cm, 9 ayda P25 değerine eşit. (s. 177)", svg=persentil_svg(), kavram="Referans Değeri"),
+            G("Esra Bayrak'ın 5 atlayışı (5,17 · 5,27 · 5,38 · 5,37 · 5,36) için ortanca kaç metredir?", "5,36", "Önce küçükten büyüğe sırala.",
+              "Sıralı: 5,17 · 5,27 · 5,36 · 5,37 · 5,38. Ortadaki 5,36. (s. 179)", denk=True, birim="m", kavram="Temsil Değeri",
+              yardim={"adimlar": ["Sayıları küçükten büyüğe sırala.", "5 sayı var: 3. sıradakini bul."]}),
+            N("Bir sınıftaki öğrencilerin evcil hayvan sayıları: 0, 2, 1, 1, 3, 1, 0. Tepe değere sayı doğrusunda dokun.", 1, {"min": 0, "max": 3},
+              "Hangi sayı en çok yazılmış?", "1 üç kez yazılmış: tepe değer 1.", kavram="Temsil Değeri",
+              yardim={"adimlar": ["Her sayının kaç kez yazıldığını say.", "En çok yazılan sayıyı seç."]}),
+            N("Veriler: 4, 1, 3, 2, 0. Ortancaya sayı doğrusunda dokun.", 2, {"min": 0, "max": 4},
+              "Önce sırala: 0, 1, 2, 3, 4.", "Sıralı: 0, 1, 2, 3, 4. Ortadaki 2.", kavram="Temsil Değeri",
+              yardim={"adimlar": ["Sayıları küçükten büyüğe sırala.", "Ortadaki sayıyı bul."]}),
+            S("3, 4, 6, 7 verilerinin ortalaması 5'tir. Hangisi doğrudur?", ["5 veri setinde olmadığı için temsil değeri olamaz.", "Ortalama yanlış hesaplanmıştır.", "5 veri setinde olmasa da temsil değeri olabilir."], 2,
+              "Temsil değeri veri setinde olmak zorunda mı?", "Temsil değeri veri setinde yer almayabilir: 5 bu veriyi temsil eder. (s. 176)", kavram="Temsil Değeri Listede Olmayabilir"),
+            S("Bir pil üreticisi “Pillerimiz en az 10 saat dayanır.” diyor. 5 pilin süreleri: 11, 12, 10, 13, 9 saat. Ortalama 11 saat. Hangisi doğrudur?",
+              ["İddia kesinlikle yanlıştır.", "Veriler iddiayla ilgili değildir.", "Ortalama iddiayı destekliyor ama 9 saatlik bir pil var; daha çok veri gerekebilir."], 2,
+              "Ortalamayı 10 ile karşılaştır. Bütün piller 10 saat dayanmış mı?", "11 > 10: ortalama destekliyor. Ama 9 saatlik pil “en az 10” iddiasına uymuyor. (s. 176)", kavram="Veriyle İddiayı Sınama"),
+            G("Mühendisin 10 deneme sürüşünden kaç tanesinde araba 13 km ya da daha fazla gitmiş? (11,7 · 10,0 · 13,0 · 10,5 · 12,5 · 10,5 · 9,0 · 13,5 · 14,0 · 15,0)", "4",
+              "13'e eşit ya da 13'ten büyük olanları say.", "13,0 · 13,5 · 14,0 · 15,0: 4 deneme. 10 denemenin 6'sı 13 km'nin altında. (s. 176)", kavram="Veriyle İddiayı Sınama",
+              yardim={"adimlar": ["Her değeri 13 ile karşılaştır.", "13'e eşit ya da büyük olanları işaretle.", "İşaretlediklerini say."]})]
+    }
+
+
+def u3t2():
+    return {
+        "id": "u3t2", "tur": "tarama", "unite": T3,
+        "baslik": "Ara Durak 2: Grafik ve Temsil Değeri", "sayfalar": "Konu 4–5 · s. 171–179",
+        "giris": "Grafik çizip yorumlamayı bitirdin, tebrikler! Kısa bir mola verip nokta ve çizgi grafiğini, eğilimi ve temsil değerini birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+        "buyukResim": "Önce verileri resme çevirdik: tekrar eden veriler için nokta grafiği, zamanla değişen veriler için çizgi grafiği. Sonra grafiği yorumladık: eğilim, tahmin, referans değeri. En son veriyi tek bir sayıyla özetledik ve bir iddiayı verilerle sınadık.",
+        "kapsar": ["u3k4", "u3k5"],
+        "hatirla": [
+            {"konu": "u3k4", "maddeler": [
+                "Nokta grafiği: aynı değerler üst üste yığılır.",
+                "Çizgi grafiği: zamanla değişim; yatayda zaman, dikeyde değer.",
+                "Çizgi yukarı artış, aşağı azalış, düz sabit."]},
+            {"konu": "u3k5", "maddeler": [
+                "Eğilim genel yöndür; tahmin “… olabilir” diye yapılır.",
+                "Temsil değeri: ortalama, ortanca ya da tepe değer; veri setinde olmayabilir.",
+                "İddia, ölçülerle karşılaştırılarak sınanır."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Hangisiyle ilgili?", "kutular": [
+            {"etiket": "Grafik çizmek", "uyeler": ["Nokta Grafiği", "Çizgi Grafiği", "Hangi Grafik?"]},
+            {"etiket": "Grafiği yorumlamak", "uyeler": ["Artış, Azalış, Sabit", "Eğilim", "Veri Ötesi: Tahmin"]},
+            {"etiket": "Tek sayıyla özetlemek", "uyeler": ["Temsil Değeri", "Temsil Değeri Listede Olmayabilir"]}]}],
+        "sorular": [
+            S("Esra Bayrak'ın 2017–2021 atlayışlarını göstermek için hangi grafik uygundur ve eğilim nedir?",
+              ["Nokta grafiği; azalış", "Çizgi grafiği; önce artış, sonra neredeyse sabit", "Çizgi grafiği; sürekli azalış"], 1,
+              "Yıllara göre değişim mi gösteriliyor? Çizgi önce nereye, sonra nasıl gidiyor?",
+              "Zamanla değişim çizgi grafiğiyle gösterilir. 5,17 → 5,38'e çıkıyor, sonra 5,37 ve 5,36: neredeyse sabit. (s. 179)",
+              svg=atlama_svg(), kaynak=[K("u3k4", "Hangi Grafik?"), K("u3k5", "Eğilim")]),
+            G("Grafiğe göre Esra Bayrak'ın atlayışı 2017'den 2019'a kaç metre artmış?", "0,21",
+              "2019 değerinden 2017 değerini çıkar.", "5,38 − 5,17 = 0,21 m. (s. 179)", denk=True, birim="m", svg=atlama_svg(),
+              kaynak=[K("u3k4", "Çizgi Grafiği"), K("u3k4", "Artış, Azalış, Sabit")],
+              yardim={"adimlar": ["Başlangıç: 2017'deki değeri oku.", "Bitiş: 2019'daki değeri oku.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]}),
+            N("Nokta grafiğindeki kardeş sayılarının tepe değerine sayı doğrusunda dokun.", 1, {"min": 0, "max": 4},
+              "Tepe değer en yüksek yığındır.", "1'in üstünde 5 nokta: tepe değer 1.", svg=kardes_svg(),
+              kaynak=[K("u3k4", "Nokta Grafiği"), K("u3k5", "Temsil Değeri")],
+              yardim={"adimlar": ["Tepe değer en çok tekrar eden değerdir.", "Nokta grafiğinde en yüksek yığını bul."]}),
+            G("Bir fidanın 4 haftalık boyları çizgi grafiğinde: 6, 8, 11, 15 cm. Bu boyların aritmetik ortalaması kaç cm?", "10",
+              "Dört değeri topla, 4'e böl.", "6 + 8 + 11 + 15 = 40; 40 ÷ 4 = 10 cm. 10 listede yok ama veriyi temsil eder.", birim="cm",
+              svg=cizgi_svg(["1. hf", "2. hf", "3. hf", "4. hf"], [([6, 8, 11, 15], "#8ce99a")], 4, 16, 2, baslik="Fidanın boyu (cm)"),
+              kaynak=[K("u3k4", "Çizgi Grafiği"), K("u3k5", "Temsil Değeri Listede Olmayabilir")],
+              yardim={"adimlar": ["Grafikten dört değeri oku.", "Hepsini topla.", "Toplamı veri sayısına böl."]}),
+            S("Kar örtülü gün sayısı azalma eğiliminde. Kayak okulu açmak isteyen Furkan için en uygun düşünce hangisi?",
+              ["Grafik her yıl artacağını gösteriyor.", "Grafiklerin karar vermeye bir faydası yoktur.", "Azalma devam edebilir; karar vermeden önce başka araştırma soruları da sormalıyım."], 2,
+              "Eğilim nereye gidiyor? Tahmin kesin mi?", "Eğilim azalış; devam edebilir. Karar için başka sorular da gerekir. (s. 175)",
+              svg=kar_svg(), kaynak=[K("u3k4", "Artış, Azalış, Sabit"), K("u3k5", "Veri Ötesi: Tahmin")]),
+            S("3 aylık bir bebeğin baş çevresi 40,5 cm. Grafikte 3. ayda P25 = 40,2 ve P50 = 41,1. Hangisi doğrudur?",
+              ["P25 ile P50 arasında, normal aralıkta", "P25'in altında", "P75'in üstünde"], 0,
+              "40,5'i 40,2 ve 41,1 ile karşılaştır.", "40,2 < 40,5 < 41,1: P25 ile P50 arasında. (s. 177)", svg=persentil_svg(),
+              kaynak=[K("u3k4", "Çizgi Grafiği"), K("u3k5", "Referans Değeri")]),
+            S("Atlayışların ortalaması 5,31 m. Bu sayı tabloda yok. Hangisi doğrudur?",
+              ["Ortalama tabloda olmadığı için temsil değeri olamaz.", "Ortalama en büyük değere eşit olmalıdır.", "Temsil değeri veri setinde olmayabilir; 5,31 veriyi temsil eder."], 2,
+              "Temsil değeri veri setinde olmak zorunda mı?", "Temsil değeri veri setinde yer almayabilir. (s. 176)", svg=atlama_svg(),
+              kaynak=[K("u3k5", "Temsil Değeri Listede Olmayabilir"), K("u3k4", "Çizgi Grafiği")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4, u3t1, u3t2]
 KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5, u2k6, u2k7, u2k8,
-           u3k1, u3k2, u3k3] + TARAMALAR
+           u3k1, u3k2, u3k3, u3k4, u3k5] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,

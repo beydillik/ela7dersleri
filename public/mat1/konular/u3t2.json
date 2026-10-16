@@ -1,0 +1,231 @@
+{
+ "id": "u3t2",
+ "tur": "tarama",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Ara Durak 2: Grafik ve Temsil Değeri",
+ "sayfalar": "Konu 4–5 · s. 171–179",
+ "giris": "Grafik çizip yorumlamayı bitirdin, tebrikler! Kısa bir mola verip nokta ve çizgi grafiğini, eğilimi ve temsil değerini birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Önce verileri resme çevirdik: tekrar eden veriler için nokta grafiği, zamanla değişen veriler için çizgi grafiği. Sonra grafiği yorumladık: eğilim, tahmin, referans değeri. En son veriyi tek bir sayıyla özetledik ve bir iddiayı verilerle sınadık.",
+ "kapsar": [
+  "u3k4",
+  "u3k5"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Nokta grafiği: aynı değerler üst üste yığılır.",
+    "Çizgi grafiği: zamanla değişim; yatayda zaman, dikeyde değer.",
+    "Çizgi yukarı artış, aşağı azalış, düz sabit."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Eğilim genel yöndür; tahmin “… olabilir” diye yapılır.",
+    "Temsil değeri: ortalama, ortanca ya da tepe değer; veri setinde olmayabilir.",
+    "İddia, ölçülerle karşılaştırılarak sınanır."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Hangisiyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Grafik çizmek",
+     "uyeler": [
+      "Nokta Grafiği",
+      "Çizgi Grafiği",
+      "Hangi Grafik?"
+     ]
+    },
+    {
+     "etiket": "Grafiği yorumlamak",
+     "uyeler": [
+      "Artış, Azalış, Sabit",
+      "Eğilim",
+      "Veri Ötesi: Tahmin"
+     ]
+    },
+    {
+     "etiket": "Tek sayıyla özetlemek",
+     "uyeler": [
+      "Temsil Değeri",
+      "Temsil Değeri Listede Olmayabilir"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Esra Bayrak'ın 2017–2021 atlayışlarını göstermek için hangi grafik uygundur ve eğilim nedir?",
+   "secenekler": [
+    "Nokta grafiği; azalış",
+    "Çizgi grafiği; önce artış, sonra neredeyse sabit",
+    "Çizgi grafiği; sürekli azalış"
+   ],
+   "dogru": 1,
+   "ipucu": "Yıllara göre değişim mi gösteriliyor? Çizgi önce nereye, sonra nasıl gidiyor?",
+   "aciklama": "Zamanla değişim çizgi grafiğiyle gösterilir. 5,17 → 5,38'e çıkıyor, sonra 5,37 ve 5,36: neredeyse sabit. (s. 179)",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,10</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0000000000001' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,15</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.00000000000023' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,20</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.00000000000036' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,25</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.00000000000047' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,30</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0000000000006' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,35</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.00000000000071' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,40</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2018</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2019</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2020</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2021</text><polyline points='68.0,122.0 129.5,82.0 191.0,38.0 252.5,42.0 314.0,46.0' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='112.99999999999996' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,17</text><circle cx='129.5' cy='82.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='73.00000000000018' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,27</text><circle cx='191.0' cy='38.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='29.00000000000017' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,38</text><circle cx='252.5' cy='42.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='33.00000000000007' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,37</text><circle cx='314.0' cy='46.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='36.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,36</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Esra Bayrak'ın atlayışları (m)</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Hangi Grafik?"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Eğilim"
+    }
+   ]
+  },
+  {
+   "soru": "Grafiğe göre Esra Bayrak'ın atlayışı 2017'den 2019'a kaç metre artmış?",
+   "cevap": "0,21",
+   "ipucu": "2019 değerinden 2017 değerini çıkar.",
+   "aciklama": "5,38 − 5,17 = 0,21 m. (s. 179)",
+   "denk": true,
+   "birim": "m",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,10</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0000000000001' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,15</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.00000000000023' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,20</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.00000000000036' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,25</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.00000000000047' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,30</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0000000000006' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,35</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.00000000000071' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,40</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2018</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2019</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2020</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2021</text><polyline points='68.0,122.0 129.5,82.0 191.0,38.0 252.5,42.0 314.0,46.0' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='112.99999999999996' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,17</text><circle cx='129.5' cy='82.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='73.00000000000018' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,27</text><circle cx='191.0' cy='38.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='29.00000000000017' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,38</text><circle cx='252.5' cy='42.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='33.00000000000007' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,37</text><circle cx='314.0' cy='46.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='36.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,36</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Esra Bayrak'ın atlayışları (m)</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Çizgi Grafiği"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Artış, Azalış, Sabit"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Başlangıç: 2017'deki değeri oku.",
+     "Bitiş: 2019'daki değeri oku.",
+     "Büyükten küçüğü çıkar; virgülleri alt alta yaz."
+    ]
+   }
+  },
+  {
+   "soru": "Nokta grafiğindeki kardeş sayılarının tepe değerine sayı doğrusunda dokun.",
+   "nokta": 1,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 4
+   },
+   "ipucu": "Tepe değer en yüksek yığındır.",
+   "aciklama": "1'in üstünde 5 nokta: tepe değer 1.",
+   "svg": "<svg viewBox='0 0 300 150' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='20' y1='110' x2='290' y2='110' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='30.0' y1='105' x2='30.0' y2='115' stroke='#f5f6fa' stroke-width='2'/><text x='30.0' y='129' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>0</text><line x1='92.5' y1='105' x2='92.5' y2='115' stroke='#f5f6fa' stroke-width='2'/><text x='92.5' y='129' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>1</text><line x1='155.0' y1='105' x2='155.0' y2='115' stroke='#f5f6fa' stroke-width='2'/><text x='155.0' y='129' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>2</text><line x1='217.5' y1='105' x2='217.5' y2='115' stroke='#f5f6fa' stroke-width='2'/><text x='217.5' y='129' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>3</text><line x1='280.0' y1='105' x2='280.0' y2='115' stroke='#f5f6fa' stroke-width='2'/><text x='280.0' y='129' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>4</text><circle cx='30.0' cy='97' r='6' fill='#4fc3a1'/><circle cx='30.0' cy='82' r='6' fill='#4fc3a1'/><circle cx='92.5' cy='97' r='6' fill='#4fc3a1'/><circle cx='92.5' cy='82' r='6' fill='#4fc3a1'/><circle cx='92.5' cy='67' r='6' fill='#4fc3a1'/><circle cx='92.5' cy='52' r='6' fill='#4fc3a1'/><circle cx='92.5' cy='37' r='6' fill='#4fc3a1'/><circle cx='155.0' cy='97' r='6' fill='#4fc3a1'/><circle cx='155.0' cy='82' r='6' fill='#4fc3a1'/><circle cx='155.0' cy='67' r='6' fill='#4fc3a1'/><circle cx='217.5' cy='97' r='6' fill='#4fc3a1'/><circle cx='280.0' cy='97' r='6' fill='#4fc3a1'/><text x='155.0' y='144' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Kardeş sayısı</text><text x='150.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/B'de 12 öğrencinin kardeş sayısı</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Nokta Grafiği"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Temsil Değeri"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Tepe değer en çok tekrar eden değerdir.",
+     "Nokta grafiğinde en yüksek yığını bul."
+    ]
+   }
+  },
+  {
+   "soru": "Bir fidanın 4 haftalık boyları çizgi grafiğinde: 6, 8, 11, 15 cm. Bu boyların aritmetik ortalaması kaç cm?",
+   "cevap": "10",
+   "ipucu": "Dört değeri topla, 4'e böl.",
+   "aciklama": "6 + 8 + 11 + 15 = 40; 40 ÷ 4 = 10 cm. 10 listede yok ama veriyi temsil eder.",
+   "birim": "cm",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>4</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>6</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>8</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>14</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>16</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>1. hf</text><text x='150.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2. hf</text><text x='232.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>3. hf</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>4. hf</text><polyline points='68.0,130.0 150.0,110.0 232.0,80.0 314.0,40.0' fill='none' stroke='#8ce99a' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='130.0' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='121.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>6</text><circle cx='150.0' cy='110.0' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='150.0' y='101.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>8</text><circle cx='232.0' cy='80.0' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='232.0' y='71.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>11</text><circle cx='314.0' cy='40.0' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='31.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>15</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Fidanın boyu (cm)</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Çizgi Grafiği"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Temsil Değeri Listede Olmayabilir"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Grafikten dört değeri oku.",
+     "Hepsini topla.",
+     "Toplamı veri sayısına böl."
+    ]
+   }
+  },
+  {
+   "soru": "Kar örtülü gün sayısı azalma eğiliminde. Kayak okulu açmak isteyen Furkan için en uygun düşünce hangisi?",
+   "secenekler": [
+    "Grafik her yıl artacağını gösteriyor.",
+    "Grafiklerin karar vermeye bir faydası yoktur.",
+    "Azalma devam edebilir; karar vermeden önce başka araştırma soruları da sormalıyım."
+   ],
+   "dogru": 2,
+   "ipucu": "Eğilim nereye gidiyor? Tahmin kesin mi?",
+   "aciklama": "Eğilim azalış; devam edebilir. Karar için başka sorular da gerekir. (s. 175)",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>20,0</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>22,0</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>24,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>26,0</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>28,0</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>30,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1970–80</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1981–91</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1992–02</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2003–13</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2014–24</text><polyline points='68.0,50.0 129.5,54.0 191.0,50.0 252.5,79.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='129.5' cy='54.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='44.999999999999986' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>29,6</text><circle cx='191.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='252.5' cy='79.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='69.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>27,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='117.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>22,4</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Ortalama kar örtülü gün sayısı</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Artış, Azalış, Sabit"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Veri Ötesi: Tahmin"
+    }
+   ]
+  },
+  {
+   "soru": "3 aylık bir bebeğin baş çevresi 40,5 cm. Grafikte 3. ayda P25 = 40,2 ve P50 = 41,1. Hangisi doğrudur?",
+   "secenekler": [
+    "P25 ile P50 arasında, normal aralıkta",
+    "P25'in altında",
+    "P75'in üstünde"
+   ],
+   "dogru": 0,
+   "ipucu": "40,5'i 40,2 ve 41,1 ile karşılaştır.",
+   "aciklama": "40,2 < 40,5 < 41,1: P25 ile P50 arasında. (s. 177)",
+   "svg": "<svg viewBox='0 0 330 200' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='174.0' x2='322' y2='174.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='178.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32</text><line x1='50' y1='157.8' x2='322' y2='157.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='161.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>34</text><line x1='50' y1='141.5' x2='322' y2='141.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='145.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>36</text><line x1='50' y1='125.2' x2='322' y2='125.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='129.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38</text><line x1='50' y1='109.0' x2='322' y2='109.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='113.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>40</text><line x1='50' y1='92.8' x2='322' y2='92.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='96.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>42</text><line x1='50' y1='76.5' x2='322' y2='76.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='80.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>44</text><line x1='50' y1='60.2' x2='322' y2='60.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>46</text><line x1='50' y1='44.0' x2='322' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>48</text><line x1='50' y1='174' x2='322' y2='174' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='174' x2='50' y2='40' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>Doğum</text><text x='109.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1 ay</text><text x='150.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2 ay</text><text x='191.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>3 ay</text><text x='232.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>6 ay</text><text x='273.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>9 ay</text><text x='314.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>12 ay</text><polyline points='68.0,157.8 109.0,133.4 150.0,119.6 191.0,107.4 232.0,87.1 273.0,69.2 314.0,59.4' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='157.8' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='133.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='119.6' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='107.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='87.1' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='69.2' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='59.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,150.4 109.0,126.9 150.0,113.1 191.0,100.1 232.0,79.7 273.0,61.9 314.0,52.1' fill='none' stroke='#8ce99a' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='150.4' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='126.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='113.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='100.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='79.7' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='61.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='52.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,142.3 109.0,119.6 150.0,104.1 191.0,92.8 232.0,72.4 273.0,55.4 314.0,44.8' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='142.3' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='119.6' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='104.1' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='92.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='72.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='55.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='44.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Erkek bebeklerin baş çevresi (cm)</text><rect x='60' y='23' width='14' height='5' rx='2' fill='#6fb3ff'/><text x='78' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>P25</text><rect x='101.2' y='23' width='14' height='5' rx='2' fill='#8ce99a'/><text x='119.2' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>P50</text><rect x='142.4' y='23' width='14' height='5' rx='2' fill='#ffa26b'/><text x='160.4' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>P75</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Çizgi Grafiği"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Referans Değeri"
+    }
+   ]
+  },
+  {
+   "soru": "Atlayışların ortalaması 5,31 m. Bu sayı tabloda yok. Hangisi doğrudur?",
+   "secenekler": [
+    "Ortalama tabloda olmadığı için temsil değeri olamaz.",
+    "Ortalama en büyük değere eşit olmalıdır.",
+    "Temsil değeri veri setinde olmayabilir; 5,31 veriyi temsil eder."
+   ],
+   "dogru": 2,
+   "ipucu": "Temsil değeri veri setinde olmak zorunda mı?",
+   "aciklama": "Temsil değeri veri setinde yer almayabilir. (s. 176)",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,10</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0000000000001' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,15</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.00000000000023' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,20</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.00000000000036' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,25</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.00000000000047' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,30</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0000000000006' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,35</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.00000000000071' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5,40</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2018</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2019</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2020</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2021</text><polyline points='68.0,122.0 129.5,82.0 191.0,38.0 252.5,42.0 314.0,46.0' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='122.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='112.99999999999996' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,17</text><circle cx='129.5' cy='82.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='73.00000000000018' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,27</text><circle cx='191.0' cy='38.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='29.00000000000017' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,38</text><circle cx='252.5' cy='42.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='33.00000000000007' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,37</text><circle cx='314.0' cy='46.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='36.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>5,36</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Esra Bayrak'ın atlayışları (m)</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Temsil Değeri Listede Olmayabilir"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Çizgi Grafiği"
+    }
+   ]
+  }
+ ]
+}
