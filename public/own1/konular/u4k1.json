@@ -1,0 +1,428 @@
+{
+ "id": "u4k1",
+ "unite": "Unit 4: Healthy body, healthy mind",
+ "baslik": "Health and fitness 1: hastalık (cough, get ill…)",
+ "sayfalar": "SB s. 47–48, 56, 131 · WB s. 32, 38",
+ "giris": "Unit 4'ün adı {{Healthy body, healthy mind}}: sağlıklı beden, sağlıklı zihin. Bu konuda hasta olmak ve iyileşmekle ilgili 6 kelime öğreneceğiz. Kitap bu kelimeleri defterde {{health}} (sağlık) sayfasına yazmanı öneriyor. Her kelimeden sonra kısa bir soru var.",
+ "kavramlar": [
+  {
+   "ad": "get ill",
+   "renk": "#7bc47f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='54' cy='60' r='32' fill='#a8d5a2'/><circle cx='42.8' cy='53.6' r='3.52' fill='#1b2340'/><circle cx='65.2' cy='53.6' r='3.52' fill='#1b2340'/><path d='M42.8 76.16 Q54 64.16 65.2 76.16' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M30 34 q-6 -10 2 -16' stroke='#8ecae6' stroke-width='3' fill='none'/><rect x='82' y='70' width='26' height='16' rx='4' fill='#ffffff'/><rect x='92' y='64' width='6' height='28' rx='2' fill='#e63946'/><rect x='81' y='75' width='28' height='6' rx='2' fill='#e63946'/></svg>",
+   "aciklama": "Hasta olmak. Kitabın tanımı: {{to become sick}}.",
+   "ek": "Geçmiş hâli {{got ill}}. Zıddı {{get better}}: iyileşmek.",
+   "akilda": "hasta olmak",
+   "ornek": "When was the last time you got ill?",
+   "ornekTr": "En son ne zaman hasta oldun? (SB s. 47)",
+   "soru": {
+    "soru": "{{to become sick}}: hasta olmak. Hangisi?",
+    "secenekler": [
+     "get better",
+     "get ill",
+     "relax"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki kitap tanımını hatırla: {{to become sick}}.",
+    "aciklama": "{{to become sick}} = {{get ill}}: hasta olmak. (SB s. 47)"
+   }
+  },
+  {
+   "ad": "have a fever",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='48' cy='60' r='32' fill='#f4a3a3'/><circle cx='36.8' cy='53.6' r='3.52' fill='#1b2340'/><circle cx='59.2' cy='53.6' r='3.52' fill='#1b2340'/><path d='M36.8 76.16 Q48 64.16 59.2 76.16' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><rect x='88' y='30' width='12' height='56' rx='6' fill='#ffffff'/><rect x='91' y='46' width='6' height='38' rx='3' fill='#e63946'/><circle cx='94' cy='90' r='10' fill='#e63946'/><text x='94' y='22' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ffd166'>39°</text><path d='M22 26 q4 -8 8 0 M66 22 q4 -8 8 0' stroke='#ffd166' stroke-width='3' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Ateşi olmak, ateşlenmek: vücut çok ısınır.",
+   "ek": "Geçmiş hâli {{had a fever}}. Kitaptaki hasta: {{I'm really hot and I feel terrible.}}",
+   "akilda": "ateşi olmak",
+   "ornek": "He's very hot. I'm sure he has a fever.",
+   "ornekTr": "Çok sıcak. Eminim ateşi var. (SB s. 131)",
+   "soru": {
+    "soru": "Vücudun çok sıcak, termometre 39 derece gösteriyor. Ne oldu?",
+    "secenekler": [
+     "I sneeze.",
+     "I get better.",
+     "I have a fever."
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki termometreyi hatırla.",
+    "aciklama": "Vücut çok sıcaksa ateşin vardır: {{I have a fever.}} (SB s. 56)"
+   }
+  },
+  {
+   "ad": "cough",
+   "renk": "#8ecae6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='50' cy='58' r='32' fill='#f6d6ad'/><circle cx='38.8' cy='51.6' r='3.52' fill='#1b2340'/><circle cx='61.2' cy='51.6' r='3.52' fill='#1b2340'/><ellipse cx='50' cy='70.16' rx='5.76' ry='4.8' fill='#1b2340'/><circle cx='90' cy='70' r='7' fill='#c9cfe0'/><circle cx='102' cy='62' r='5' fill='#c9cfe0'/><circle cx='100' cy='78' r='4' fill='#c9cfe0'/><path d='M44 96 h12' stroke='#8ecae6' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Öksürmek. Boğazdan sesle hava çıkarmak.",
+   "ek": "İsim olarak da kullanılır: {{a cough}}, öksürük. Doktor sorar: {{Does your chest hurt?}} (Göğsün ağrıyor mu?)",
+   "akilda": "öksürmek",
+   "ornek": "Does your chest hurt? You're coughing a lot.",
+   "ornekTr": "Göğsün ağrıyor mu? Çok öksürüyorsun. (SB s. 56)",
+   "soru": {
+    "soru": "Hangi kelime 'öksürmek' demek?",
+    "secenekler": [
+     "cough",
+     "sneeze",
+     "sweat"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki ağızdan çıkan küçük bulutları hatırla.",
+    "aciklama": "Öksürmek: {{cough}}. (SB s. 47)"
+   }
+  },
+  {
+   "ad": "sneeze",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='46' cy='62' r='30' fill='#f6d6ad'/><path d='M30.5 56.0 q5 4 10 0 M51.5 56.0 q5 4 10 0' stroke='#1b2340' stroke-width='3' fill='none' stroke-linecap='round'/><ellipse cx='46' cy='73.4' rx='5.3999999999999995' ry='4.5' fill='#1b2340'/><path d='M80 56 l18 -10 M82 64 h22 M80 72 l18 10' stroke='#ffd166' stroke-width='4' stroke-linecap='round'/><text x='60' y='22' font-size='15' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ffd166'>ACHOO!</text></svg>",
+   "aciklama": "Hapşırmak.",
+   "ek": "Geçmiş hâli {{sneezed}}. Kitap: {{imagine sneezing in space!}} (Uzayda hapşırmayı düşün!)",
+   "akilda": "hapşırmak",
+   "ornek": "Is it true that you can't sneeze with your eyes open?",
+   "ornekTr": "Gözlerin açıkken hapşıramayacağın doğru mu? (WB s. 32)",
+   "soru": {
+    "soru": "'Hapşırmak' İngilizce hangisi?",
+    "secenekler": [
+     "cough",
+     "sneeze",
+     "fever"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki {{ACHOO!}} yazısını hatırla.",
+    "aciklama": "Hapşırmak: {{sneeze}}. (SB s. 47)"
+   }
+  },
+  {
+   "ad": "get better",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='30' cy='74' r='18' fill='#a8d5a2'/><circle cx='23.7' cy='70.4' r='1.98' fill='#1b2340'/><circle cx='36.3' cy='70.4' r='1.98' fill='#1b2340'/><path d='M23.7 84.84 Q30 76.34 36.3 84.84' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><circle cx='88' cy='50' r='22' fill='#ffd166'/><circle cx='80.3' cy='45.6' r='2.42' fill='#1b2340'/><circle cx='95.7' cy='45.6' r='2.42' fill='#1b2340'/><path d='M79.2 54.36 Q88 64.96 96.8 54.36' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M48 70 L64 58' stroke='#3cc47c' stroke-width='5' stroke-linecap='round'/><polygon points='68,52 58,56 66,64' fill='#3cc47c'/></svg>",
+   "aciklama": "İyileşmek. Kitabın tanımı: {{to stop feeling ill}}.",
+   "ek": "Hasta birine {{I hope you get better soon.}} deriz: Geçmiş olsun, umarım yakında iyileşirsin.",
+   "akilda": "iyileşmek",
+   "ornek": "I'm sorry you're ill. I hope you get better soon.",
+   "ornekTr": "Hasta olduğuna üzüldüm. Umarım yakında iyileşirsin. (SB s. 131)",
+   "soru": {
+    "soru": "Hasta arkadaşına 'Umarım yakında iyileşirsin' diyeceksin: {{I hope you ___ soon.}}",
+    "secenekler": [
+     "get ill",
+     "get stressed",
+     "get better"
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki üzgün yüzden mutlu yüze giden oku hatırla.",
+    "aciklama": "İyileşmek {{get better}}: {{I hope you get better soon.}} (SB s. 131)"
+   }
+  },
+  {
+   "ad": "get stressed",
+   "renk": "#b388eb",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='66' r='30' fill='#f6d6ad'/><circle cx='49.5' cy='60.0' r='3.3' fill='#1b2340'/><circle cx='70.5' cy='60.0' r='3.3' fill='#1b2340'/><line x1='51.0' y1='77.4' x2='69.0' y2='77.4' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><path d='M36 30 l6 -8 l6 8 l6 -8 l6 8 l6 -8 l6 8 l6 -8 l6 8' stroke='#b388eb' stroke-width='4' fill='none' stroke-linejoin='round'/><path d='M94 50 q6 10 0 14 q-6 -4 0 -14' fill='#8ecae6'/></svg>",
+   "aciklama": "Stres olmak, gerilmek, endişelenmek.",
+   "ek": "Zıddı {{relax}}: rahatlamak. Geçmiş hâli {{got stressed}}.",
+   "akilda": "stres olmak",
+   "ornek": "Don't get stressed about your exams – relax, you'll be OK!",
+   "ornekTr": "Sınavların için stres yapma, rahatla, iyi olacaksın! (WB s. 32)",
+   "soru": {
+    "soru": "Yarın üç sınavın var ve çok gerginsin. Hangisi?",
+    "secenekler": [
+     "I get stressed.",
+     "I get better.",
+     "I have a fever."
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki başın üstündeki zikzak çizgiyi hatırla.",
+    "aciklama": "Gerilmek, stres olmak: {{get stressed}}. (WB s. 32)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "ill",
+   "tr": "hasta",
+   "ornek": "I'm sorry you're ill.",
+   "ornekTr": "Hasta olduğuna üzüldüm. (SB s. 131)"
+  },
+  {
+   "en": "temperature",
+   "tr": "vücut ısısı, ateş",
+   "ornek": "Well, let's take your temperature.",
+   "ornekTr": "Peki, ateşini ölçelim. (SB s. 56)"
+  },
+  {
+   "en": "medicine",
+   "tr": "ilaç",
+   "ornek": "Here's some medicine.",
+   "ornekTr": "İşte biraz ilaç. (SB s. 56)"
+  },
+  {
+   "en": "chest",
+   "tr": "göğüs",
+   "ornek": "Does your chest hurt?",
+   "ornekTr": "Göğsün ağrıyor mu? (SB s. 56)"
+  },
+  {
+   "en": "feel terrible",
+   "tr": "çok kötü hissetmek",
+   "ornek": "I'm really hot and I feel terrible.",
+   "ornekTr": "Çok sıcağım ve kendimi berbat hissediyorum. (WB s. 32)"
+  },
+  {
+   "en": "health",
+   "tr": "sağlık"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Vücudun yaptığı bir şey mi, yoksa {{get}} ile durum değişikliği mi?",
+   "kutular": [
+    {
+     "etiket": "Hastalık belirtisi",
+     "uyeler": [
+      "cough",
+      "sneeze",
+      "have a fever"
+     ]
+    },
+    {
+     "etiket": "get ile durum değişikliği",
+     "uyeler": [
+      "get ill",
+      "get better",
+      "get stressed"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "When was the last time you got ill?",
+   "tr": "En son ne zaman hasta oldun? (SB s. 47)"
+  },
+  {
+   "en": "I hope you get better soon.",
+   "tr": "Umarım yakında iyileşirsin. (SB s. 131)"
+  },
+  {
+   "en": "I'm sure he has a fever.",
+   "tr": "Eminim ateşi var. (SB s. 131)"
+  },
+  {
+   "en": "You're coughing a lot.",
+   "tr": "Çok öksürüyorsun. (SB s. 56)"
+  },
+  {
+   "en": "I'm sneezing all the time.",
+   "tr": "Sürekli hapşırıyorum. (SB s. 56)"
+  },
+  {
+   "en": "Don't get stressed about your exams.",
+   "tr": "Sınavların için stres yapma. (WB s. 32)"
+  },
+  {
+   "en": "Have you ever had a fever?",
+   "tr": "Hiç ateşin oldu mu? (SB s. 47)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "I hope you get ill soon.",
+   "yanlis": "get ill",
+   "secenekler": [
+    "get stressed",
+    "get better",
+    "have a fever"
+   ],
+   "dogru": 1,
+   "tr": "Umarım yakında iyileşirsin.",
+   "aciklama": "Hasta birine iyileşmesini dileriz: {{I hope you get better soon.}} (SB s. 131)"
+  },
+  {
+   "cumle": "When was the last time you get ill?",
+   "yanlis": "get",
+   "secenekler": [
+    "got",
+    "gets",
+    "getting"
+   ],
+   "dogru": 0,
+   "tr": "En son ne zaman hasta oldun?",
+   "aciklama": "{{the last time}} geçmişi sorar: {{got ill}}. (SB s. 47)"
+  },
+  {
+   "cumle": "He's very hot. I'm sure he has a cough.",
+   "yanlis": "a cough",
+   "secenekler": [
+    "a fever",
+    "a sneeze",
+    "better"
+   ],
+   "dogru": 0,
+   "tr": "Çok sıcak. Eminim ateşi var.",
+   "aciklama": "Vücut çok sıcaksa ateş vardır: {{has a fever}}. (SB s. 131)"
+  },
+  {
+   "cumle": "Does your chest hurt? You're sneezing a lot.",
+   "yanlis": "sneezing",
+   "secenekler": [
+    "sweating",
+    "relaxing",
+    "coughing"
+   ],
+   "dogru": 2,
+   "tr": "Göğsün ağrıyor mu? Çok öksürüyorsun.",
+   "aciklama": "Göğüs ağrısı öksürükle gelir: {{coughing}}. (SB s. 56)"
+  },
+  {
+   "cumle": "Don't get better about your exams – relax!",
+   "yanlis": "get better",
+   "secenekler": [
+    "get ill",
+    "get stressed",
+    "sneeze"
+   ],
+   "dogru": 1,
+   "tr": "Sınavların için stres yapma, rahatla!",
+   "aciklama": "{{relax}} ile zıt olan {{get stressed}}. (WB s. 32)"
+  }
+ ],
+ "biliyorMusun": [
+  "Uzayda yerçekimi çok zayıf, her şey havada süzülüyor. Kitap şöyle diyor: uzayda hapşırmayı bir düşün! (SB s. 48)",
+  "Kitap hapşırığın çok hızlı gittiğini söylüyor ve hızını tahmin etmeni istiyor: saatte 50, 100 ya da 160 kilometre mi? (SB s. 47)",
+  "Kitaptaki doktor ateşi 39 derece olan Tom'a bir hafta yatakta dinlenmesini söylüyor: sağlığı basketbol maçından daha önemli. (SB s. 56)"
+ ],
+ "akildaKalsin": [
+  "{{get ill}} hasta olmak ↔ {{get better}} iyileşmek.",
+  "{{cough}} öksürmek · {{sneeze}} hapşırmak · {{have a fever}} ateşi olmak.",
+  "{{get stressed}} stres olmak; zıddı {{relax}}.",
+  "Geçmiş: {{got ill}}, {{had a fever}}, {{got better}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Hasta birine İngilizce 'Geçmiş olsun' nasıl denir?",
+   "cevap": "{{I hope you get better soon.}}: Umarım yakında iyileşirsin. (SB s. 131)"
+  },
+  {
+   "soru": "Gözlerin açıkken hapşırabilir misin?",
+   "cevap": "Kitap bunu ilginç bir soru olarak soruyor: {{Is it true that you can't sneeze with your eyes open?}} Cevabı kitapta yok. Sen de bir sağlık sorusu bulup arkadaşına sorabilirsin. (WB s. 32)"
+  },
+  {
+   "soru": "Ateşi olan biri ne yapmalı?",
+   "cevap": "Kitaptaki doktor ilaç veriyor ve bir hafta yatakta dinlenmesini, iyi beslenmesini söylüyor. (SB s. 56)"
+  },
+  {
+   "soru": "{{get}} neden bu kadar çok kelimede var?",
+   "cevap": "Burada {{get}} 'olmak, hâline gelmek' demek: {{get ill}} hasta olmak, {{get better}} daha iyi olmak, {{get stressed}} stresli olmak. (SB s. 47)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "En son ne zaman hasta oldun? Ne oldu? İngilizce 1–2 cümle yaz. {{The last time I got ill was ...}}",
+   "ornekCevap": "The last time I got ill was in March. I had a fever and I coughed a lot.",
+   "anahtarlar": [
+    "ill",
+    "fever",
+    "cough",
+    "sneez",
+    "better"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "cough",
+    "sneeze",
+    "sweat"
+   ],
+   "dogru": 1,
+   "ipucu": "Hapşırmakla ilgili kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{sneeze}}: hapşırmak. (SB s. 47)",
+   "dinle": "sneeze",
+   "kavram": "sneeze"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "get stressed",
+    "get ill",
+    "get better"
+   ],
+   "dogru": 2,
+   "ipucu": "İyileşmekle ilgili kelime.",
+   "aciklama": "Duyduğun kelime {{get better}}: iyileşmek. (SB s. 47)",
+   "dinle": "get better",
+   "kavram": "get better"
+  },
+  {
+   "soru": "{{to stop feeling ill}} tanımı hangisinin?",
+   "secenekler": [
+    "get better",
+    "get ill",
+    "cough"
+   ],
+   "dogru": 0,
+   "ipucu": "Hasta hissetmeyi bırakmak: iyileşmek.",
+   "aciklama": "{{to stop feeling ill}} = {{get better}}. (SB s. 47)",
+   "kavram": "get better"
+  },
+  {
+   "soru": "{{He's very hot. I'm sure he ___.}} Boşluğa hangisi?",
+   "secenekler": [
+    "has a fever",
+    "coughs",
+    "gets stressed"
+   ],
+   "dogru": 0,
+   "ipucu": "Vücut çok sıcaksa ne olur?",
+   "aciklama": "Çok sıcak: {{he has a fever}}. (SB s. 131)",
+   "kavram": "have a fever"
+  },
+  {
+   "soru": "Doktor: {{Does your chest hurt? You're ___ a lot.}} Boşluğa hangisi?",
+   "secenekler": [
+    "relaxing",
+    "coughing",
+    "training"
+   ],
+   "dogru": 1,
+   "ipucu": "Göğüs ağrısıyla hangi belirti birlikte olur?",
+   "aciklama": "Göğüs ağrısı ve öksürük: {{You're coughing a lot.}} (SB s. 56)",
+   "kavram": "cough"
+  },
+  {
+   "soru": "{{Don't ___ about your exams – relax, you'll be OK!}}",
+   "secenekler": [
+    "get stressed",
+    "get better",
+    "have a fever"
+   ],
+   "dogru": 0,
+   "ipucu": "{{relax}} kelimesinin zıddını düşün.",
+   "aciklama": "{{Don't get stressed about your exams.}} (WB s. 32)",
+   "kavram": "get stressed"
+  },
+  {
+   "soru": "{{get ill}} kelimesinin zıt anlamlısı hangisi?",
+   "secenekler": [
+    "get stressed",
+    "sneeze",
+    "get better"
+   ],
+   "dogru": 2,
+   "ipucu": "Hasta olmanın tersi: iyileşmek.",
+   "aciklama": "{{get ill}} ↔ {{get better}}. (SB s. 47)",
+   "kavram": "get ill"
+  },
+  {
+   "soru": "Tom: {{I think I'm getting ill. Look at my red nose! I'm ___ all the time.}}",
+   "secenekler": [
+    "sneezing",
+    "relaxing",
+    "getting better"
+   ],
+   "dogru": 0,
+   "ipucu": "Kırmızı burun hangi belirtiyle olur?",
+   "aciklama": "Burnu kızaran Tom sürekli hapşırıyor: {{sneezing}}. (SB s. 56)",
+   "kavram": "sneeze"
+  }
+ ]
+}

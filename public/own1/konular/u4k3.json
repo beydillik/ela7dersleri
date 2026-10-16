@@ -1,0 +1,868 @@
+{
+ "id": "u4k3",
+ "unite": "Unit 4: Healthy body, healthy mind",
+ "baslik": "Quantifiers (too, enough, a few, a little)",
+ "sayfalar": "SB s. 48–49, 57, 121 · WB s. 33–34, 38, 94–95",
+ "giris": "{{Quantifiers}} miktar bildiren kelimeler: ne kadar, kaç tane? Önce bir şeyi bil: isimler ikiye ayrılır. Sayılabilenler ({{chairs, exams}}) ve sayılamayanlar ({{time, work, fun}}). Bu konuda 7 kalıp öğreneceğiz. Her kalıptan sonra kısa bir soru var.",
+ "kavramlar": [
+  {
+   "ad": "too + adjective",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='30' y='10' width='60' height='100' rx='6' fill='#ffffff'/><line x1='40' y1='22' x2='80' y2='22' stroke='#c9cfe0' stroke-width='3'/><line x1='40' y1='33' x2='80' y2='33' stroke='#c9cfe0' stroke-width='3'/><line x1='40' y1='44' x2='80' y2='44' stroke='#c9cfe0' stroke-width='3'/><line x1='40' y1='55' x2='80' y2='55' stroke='#c9cfe0' stroke-width='3'/><line x1='40' y1='66' x2='80' y2='66' stroke='#c9cfe0' stroke-width='3'/><line x1='40' y1='77' x2='80' y2='77' stroke='#c9cfe0' stroke-width='3'/><line x1='40' y1='88' x2='80' y2='88' stroke='#c9cfe0' stroke-width='3'/><line x1='40' y1='99' x2='80' y2='99' stroke='#c9cfe0' stroke-width='3'/><path d='M30 98 q30 14 60 0' fill='#ffffff'/><circle cx='92' cy='92' r='16' fill='#e63946'/><text x='92' y='97' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ffffff'>too</text></svg>",
+   "aciklama": "{{too}} + sıfat: gereğinden fazla, o kadar çok ki bir şey olmuyor.",
+   "ek": "Kitap: {{The list is too long.}} Liste o kadar uzun ki hepsini cevaplayamıyorlar. Dikkat: {{too}} ile {{very}} aynı değil! {{very}} sadece güçlendirir: {{I'm very happy.}} ({{I'm too happy}} değil.)",
+   "akilda": "fazla …, olmuyor",
+   "ornek": "The list is too long to answer all of them.",
+   "ornekTr": "Liste hepsini cevaplamak için fazla uzun. (SB s. 48)",
+   "formul": [
+    [
+     {
+      "t": "The list",
+      "r": "ozne"
+     },
+     {
+      "t": "is",
+      "r": "yard"
+     },
+     {
+      "t": "too",
+      "r": "kelime",
+      "alt": "fazla"
+     },
+     {
+      "t": "long",
+      "r": "kelime",
+      "alt": "sıfat"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Jake is 16. He wants a car but he can't drive until he's 18.}} Hangisi doğru?",
+    "secenekler": [
+     "He's too young to drive.",
+     "He's young enough to drive.",
+     "He's very young drive."
+    ],
+    "dogru": 0,
+    "ipucu": "Formül: {{too}} + sıfat = fazla …, bu yüzden olmuyor.",
+    "aciklama": "Araba sürmek için fazla genç: {{too young to drive}}. (SB s. 49)"
+   }
+  },
+  {
+   "ad": "adjective + enough",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='70' y='18' width='14' height='88' rx='3' fill='#ffd166'/><line x1='70' y1='26' x2='78' y2='26' stroke='#1b2340' stroke-width='2'/><line x1='70' y1='38' x2='78' y2='38' stroke='#1b2340' stroke-width='2'/><line x1='70' y1='50' x2='78' y2='50' stroke='#1b2340' stroke-width='2'/><line x1='70' y1='62' x2='78' y2='62' stroke='#1b2340' stroke-width='2'/><line x1='70' y1='74' x2='78' y2='74' stroke='#1b2340' stroke-width='2'/><line x1='70' y1='86' x2='78' y2='86' stroke='#1b2340' stroke-width='2'/><line x1='70' y1='98' x2='78' y2='98' stroke='#1b2340' stroke-width='2'/><line x1='20' y1='34' x2='100' y2='34' stroke='#3cc47c' stroke-width='3' stroke-dasharray='5 4'/><circle cx='42' cy='42' r='9' fill='#8ecae6'/><rect x='34' y='52' width='16' height='54' rx='6' fill='#8ecae6'/><path d='M88 50 l6 6 l12 -14' stroke='#3cc47c' stroke-width='5' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Sıfat + {{enough}}: yeterince …. Sıfatla kullanınca {{enough}} sıfattan SONRA gelir.",
+   "ek": "Olumsuzu: {{not}} + sıfat + {{enough}}. Astronotlar bazen Dünya'ya dönünce {{not strong enough to walk}}: yürüyecek kadar güçlü değil.",
+   "akilda": "yeterince … (sonra gelir)",
+   "ornek": "Are you old enough to be an astronaut?",
+   "ornekTr": "Astronot olacak kadar büyük müsün? (SB s. 49)",
+   "formul": [
+    [
+     {
+      "t": "You",
+      "r": "ozne"
+     },
+     {
+      "t": "are",
+      "r": "yard"
+     },
+     {
+      "t": "old",
+      "r": "kelime",
+      "alt": "sıfat"
+     },
+     {
+      "t": "enough",
+      "r": "kelime",
+      "alt": "sıfattan sonra"
+     }
+    ],
+    [
+     {
+      "t": "They",
+      "r": "ozne"
+     },
+     {
+      "t": "are",
+      "r": "yard"
+     },
+     {
+      "t": "not",
+      "r": "olumsuz"
+     },
+     {
+      "t": "strong",
+      "r": "kelime",
+      "alt": "sıfat"
+     },
+     {
+      "t": "enough",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Are you ___ to be an astronaut?}} Hangisi doğru?",
+    "secenekler": [
+     "enough old",
+     "old enough",
+     "too enough"
+    ],
+    "dogru": 1,
+    "ipucu": "Formül: sıfat önce, {{enough}} sonra.",
+    "aciklama": "Sıfat + {{enough}}: {{old enough}}. (SB s. 49)"
+   }
+  },
+  {
+   "ad": "too many",
+   "renk": "#ff8c42",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='62' width='92' height='44' rx='6' fill='none' stroke='#ffffff' stroke-width='4'/><circle cx='26' cy='76' r='8' fill='#ff8c42'/><circle cx='43' cy='76' r='8' fill='#ff8c42'/><circle cx='60' cy='76' r='8' fill='#ff8c42'/><circle cx='77' cy='76' r='8' fill='#ff8c42'/><circle cx='94' cy='76' r='8' fill='#ff8c42'/><circle cx='26' cy='93' r='8' fill='#ff8c42'/><circle cx='43' cy='93' r='8' fill='#ff8c42'/><circle cx='60' cy='93' r='8' fill='#ff8c42'/><circle cx='77' cy='93' r='8' fill='#ff8c42'/><circle cx='94' cy='93' r='8' fill='#ff8c42'/><circle cx='30' cy='46' r='8' fill='#ff8c42'/><circle cx='45' cy='46' r='8' fill='#ff8c42'/><circle cx='60' cy='46' r='8' fill='#ff8c42'/><circle cx='75' cy='46' r='8' fill='#ff8c42'/><circle cx='90' cy='46' r='8' fill='#ff8c42'/><circle cx='44' cy='22' r='8' fill='#ff8c42'/><circle cx='59' cy='22' r='8' fill='#ff8c42'/><circle cx='74' cy='22' r='8' fill='#ff8c42'/></svg>",
+   "aciklama": "Sayılabilen çoğul isimlerle: gereğinden fazla, çok fazla.",
+   "ek": "Sayılabilen isimler: {{changes, exams, games, options}}. Kitap: {{Too many changes from day to night make it difficult to know when to sleep.}}",
+   "akilda": "fazla (sayılabilen)",
+   "ornek": "There were too many options. I didn't know what to choose!",
+   "ornekTr": "Çok fazla seçenek vardı. Ne seçeceğimi bilemedim! (WB s. 94)",
+   "formul": [
+    [
+     {
+      "t": "too many",
+      "r": "kelime",
+      "alt": "fazla"
+     },
+     {
+      "t": "exams",
+      "r": "kelime",
+      "alt": "sayılabilen, çoğul"
+     },
+     {
+      "t": "too many exams",
+      "r": "sonuc"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I have ___ exams this week!}} ({{exams}} sayılabilir.)",
+    "secenekler": [
+     "too much",
+     "a little",
+     "too many"
+    ],
+    "dogru": 2,
+    "ipucu": "Sayılabilen çoğul isim: karttaki taşan topları hatırla.",
+    "aciklama": "Sayılabilen çoğul isimle {{too many}}: {{too many exams}}. (WB s. 94)"
+   }
+  },
+  {
+   "ad": "too much",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M34 24 L42 100 H78 L86 24' stroke='#ffffff' stroke-width='4' fill='none' stroke-linejoin='round'/><path d='M38 40 L42 100 H78 L82 40 Z' fill='#4cc9f0'/><path d='M34 24 q-8 20 -4 40 M86 24 q8 20 4 40' stroke='#4cc9f0' stroke-width='5' fill='none' stroke-linecap='round'/><ellipse cx='60' cy='20' rx='30' ry='6' fill='#4cc9f0'/></svg>",
+   "aciklama": "Sayılamayan isimlerle: gereğinden fazla, çok fazla.",
+   "ek": "Sayılamayan isimler: {{work, time, noise, chocolate}}. Kitap: {{Too much work isn't good for anyone.}}",
+   "akilda": "fazla (sayılamayan)",
+   "ornek": "There was too much noise and I couldn't sleep.",
+   "ornekTr": "Çok fazla gürültü vardı ve uyuyamadım. (WB s. 94)",
+   "formul": [
+    [
+     {
+      "t": "too much",
+      "r": "kelime",
+      "alt": "fazla"
+     },
+     {
+      "t": "noise",
+      "r": "kelime",
+      "alt": "sayılamayan"
+     },
+     {
+      "t": "too much noise",
+      "r": "sonuc"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{___ work isn't good for anyone.}} ({{work}} sayılamaz.)",
+    "secenekler": [
+     "Too much",
+     "Too many",
+     "A few"
+    ],
+    "dogru": 0,
+    "ipucu": "Sayılamayan isim: karttaki taşan suyu hatırla.",
+    "aciklama": "Sayılamayan: {{Too much work}}. (SB s. 48)"
+   }
+  },
+  {
+   "ad": "enough + noun",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='24' cy='34' r='9' fill='#8ecae6'/><circle cx='48' cy='34' r='9' fill='#8ecae6'/><circle cx='72' cy='34' r='9' fill='#8ecae6'/><circle cx='96' cy='34' r='9' fill='#8ecae6'/><rect x='14' y='62' width='20' height='8' rx='2' fill='#ffd166'/><rect x='14' y='46' width='5' height='20' fill='#ffd166'/><line x1='17' y1='70' x2='17' y2='84' stroke='#ffd166' stroke-width='4'/><line x1='31' y1='70' x2='31' y2='84' stroke='#ffd166' stroke-width='4'/><rect x='38' y='62' width='20' height='8' rx='2' fill='#ffd166'/><rect x='38' y='46' width='5' height='20' fill='#ffd166'/><line x1='41' y1='70' x2='41' y2='84' stroke='#ffd166' stroke-width='4'/><line x1='55' y1='70' x2='55' y2='84' stroke='#ffd166' stroke-width='4'/><rect x='62' y='62' width='20' height='8' rx='2' fill='#ffd166'/><rect x='62' y='46' width='5' height='20' fill='#ffd166'/><line x1='65' y1='70' x2='65' y2='84' stroke='#ffd166' stroke-width='4'/><line x1='79' y1='70' x2='79' y2='84' stroke='#ffd166' stroke-width='4'/><rect x='86' y='62' width='20' height='8' rx='2' fill='#ffd166'/><rect x='86' y='46' width='5' height='20' fill='#ffd166'/><line x1='89' y1='70' x2='89' y2='84' stroke='#ffd166' stroke-width='4'/><line x1='103' y1='70' x2='103' y2='84' stroke='#ffd166' stroke-width='4'/><path d='M46 100 l8 8 l18 -18' stroke='#3cc47c' stroke-width='6' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "{{enough}} + isim: yeterli, yetecek kadar. İsimle kullanınca {{enough}} isimden ÖNCE gelir.",
+   "ek": "Sayılabilen ve sayılamayan isimlerle kullanılır: {{enough chairs}}, {{enough sleep}}. Olumsuzu {{not enough}}: {{There aren't enough chairs.}}",
+   "akilda": "yeterli … (önce gelir)",
+   "ornek": "We've got enough players to make two teams.",
+   "ornekTr": "İki takım kuracak kadar oyuncumuz var. (WB s. 94)",
+   "formul": [
+    [
+     {
+      "t": "We have",
+      "r": "ozne"
+     },
+     {
+      "t": "enough",
+      "r": "kelime",
+      "alt": "isimden önce"
+     },
+     {
+      "t": "chairs",
+      "r": "kelime",
+      "alt": "isim"
+     }
+    ],
+    [
+     {
+      "t": "There",
+      "r": "ozne"
+     },
+     {
+      "t": "aren't",
+      "r": "olumsuz"
+     },
+     {
+      "t": "enough",
+      "r": "kelime"
+     },
+     {
+      "t": "chairs",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "12 öğrenci, 12 sandalye var: {{We have ___.}}",
+    "secenekler": [
+     "chairs enough",
+     "enough chairs",
+     "too chairs"
+    ],
+    "dogru": 1,
+    "ipucu": "Formül: isimle kullanınca {{enough}} önce gelir.",
+    "aciklama": "{{enough}} + isim: {{enough chairs}}. (SB s. 49)"
+   }
+  },
+  {
+   "ad": "a few",
+   "renk": "#b388eb",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='64' r='16' fill='#e63946'/><circle cx='62' cy='64' r='16' fill='#e63946'/><circle cx='90' cy='64' r='16' fill='#e63946'/><path d='M34 48 v-8 M62 48 v-8 M90 48 v-8' stroke='#3cc47c' stroke-width='4' stroke-linecap='round'/><text x='60' y='106' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#b388eb'>a few</text></svg>",
+   "aciklama": "Sayılabilen çoğul isimlerle: birkaç, az sayıda (ama var).",
+   "ek": "Kitap: {{This can happen in just a few weeks!}} {{weeks}} sayılabilir.",
+   "akilda": "birkaç (sayılabilen)",
+   "ornek": "I've got a few messages that I need to reply to.",
+   "ornekTr": "Cevaplamam gereken birkaç mesajım var. (WB s. 94)",
+   "formul": [
+    [
+     {
+      "t": "a few",
+      "r": "kelime",
+      "alt": "birkaç"
+     },
+     {
+      "t": "messages",
+      "r": "kelime",
+      "alt": "sayılabilen, çoğul"
+     },
+     {
+      "t": "a few messages",
+      "r": "sonuc"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{This can happen in just ___ weeks.}} ({{weeks}} sayılabilir.)",
+    "secenekler": [
+     "a little",
+     "too much",
+     "a few"
+    ],
+    "dogru": 2,
+    "ipucu": "Sayılabilen isim: karttaki üç elmayı hatırla.",
+    "aciklama": "Sayılabilen: {{a few weeks}}. (SB s. 48)"
+   }
+  },
+  {
+   "ad": "a little",
+   "renk": "#8ecae6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M34 24 L42 100 H78 L86 24' stroke='#ffffff' stroke-width='4' fill='none' stroke-linejoin='round'/><path d='M41 88 L42 100 H78 L79 88 Z' fill='#8ecae6'/><text x='60' y='66' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#8ecae6'>a little</text></svg>",
+   "aciklama": "Sayılamayan isimlerle: biraz, az miktarda (ama var).",
+   "ek": "Kitap: {{We all need a little fun!}} {{fun}} sayılamaz.",
+   "akilda": "biraz (sayılamayan)",
+   "ornek": "I have a little time to watch TV, but not much.",
+   "ornekTr": "Televizyon izlemek için biraz vaktim var ama çok değil. (WB s. 94)",
+   "formul": [
+    [
+     {
+      "t": "a little",
+      "r": "kelime",
+      "alt": "biraz"
+     },
+     {
+      "t": "time",
+      "r": "kelime",
+      "alt": "sayılamayan"
+     },
+     {
+      "t": "a little time",
+      "r": "sonuc"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{We all need ___ fun!}} ({{fun}} sayılamaz.)",
+    "secenekler": [
+     "a little",
+     "a few",
+     "many"
+    ],
+    "dogru": 0,
+    "ipucu": "Sayılamayan isim: karttaki bardağın dibindeki az suyu hatırla.",
+    "aciklama": "Sayılamayan: {{a little fun}}. (SB s. 48)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "countable",
+   "tr": "sayılabilen"
+  },
+  {
+   "en": "uncountable",
+   "tr": "sayılamayan"
+  },
+  {
+   "en": "very",
+   "tr": "çok (sadece güçlendirir)",
+   "ornek": "I'm very happy. Let's celebrate.",
+   "ornekTr": "Çok mutluyum. Hadi kutlayalım. (SB s. 49)"
+  },
+  {
+   "en": "not enough",
+   "tr": "yeterli değil",
+   "ornek": "There aren't enough chairs.",
+   "ornekTr": "Yeterince sandalye yok. (SB s. 49)"
+  },
+  {
+   "en": "noise",
+   "tr": "gürültü"
+  },
+  {
+   "en": "options",
+   "tr": "seçenekler"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kalıp hangi kelimeyle kullanılır?",
+   "kutular": [
+    {
+     "etiket": "Sayılabilen isim",
+     "uyeler": [
+      "too many",
+      "a few"
+     ]
+    },
+    {
+     "etiket": "Sayılamayan isim",
+     "uyeler": [
+      "too much",
+      "a little"
+     ]
+    },
+    {
+     "etiket": "İkisiyle de",
+     "uyeler": [
+      "enough + noun"
+     ]
+    },
+    {
+     "etiket": "Sıfatla",
+     "uyeler": [
+      "too + adjective",
+      "adjective + enough"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "The list is too long.",
+   "tr": "Liste fazla uzun. (SB s. 49)"
+  },
+  {
+   "en": "We have enough chairs.",
+   "tr": "Yeterince sandalyemiz var. (SB s. 49)"
+  },
+  {
+   "en": "We all need a little fun.",
+   "tr": "Hepimizin biraz eğlenceye ihtiyacı var. (SB s. 49)"
+  },
+  {
+   "en": "There aren't enough chairs.",
+   "tr": "Yeterince sandalye yok. (SB s. 49)"
+  },
+  {
+   "en": "Normal school days aren't long enough.",
+   "tr": "Normal okul günleri yeterince uzun değil. (WB s. 34)"
+  },
+  {
+   "en": "Are you old enough to be an astronaut?",
+   "tr": "Astronot olacak kadar büyük müsün? (SB s. 49)"
+  },
+  {
+   "en": "Too much work isn't good for anyone.",
+   "tr": "Çok fazla iş kimseye iyi gelmez. (SB s. 48)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "I'm too happy. Let's celebrate.",
+   "yanlis": "too",
+   "secenekler": [
+    "very",
+    "enough",
+    "a little"
+   ],
+   "dogru": 0,
+   "tr": "Çok mutluyum. Hadi kutlayalım.",
+   "aciklama": "{{too}} 'fazla, olmuyor' demek. Güçlendirmek için {{very}}: {{I'm very happy.}} (SB s. 49)"
+  },
+  {
+   "cumle": "There is too many noise in here.",
+   "yanlis": "too many",
+   "secenekler": [
+    "a few",
+    "too much",
+    "many"
+   ],
+   "dogru": 1,
+   "tr": "Burada çok fazla gürültü var.",
+   "aciklama": "{{noise}} sayılamaz: {{too much noise}}. (WB s. 94)"
+  },
+  {
+   "cumle": "My baby sister isn't enough old to make her own breakfast.",
+   "yanlis": "enough old",
+   "secenekler": [
+    "too old",
+    "very old",
+    "old enough"
+   ],
+   "dogru": 2,
+   "tr": "Küçük kız kardeşim kendi kahvaltısını hazırlayacak kadar büyük değil.",
+   "aciklama": "Sıfat önce, {{enough}} sonra: {{old enough}}. (WB s. 38)"
+  },
+  {
+   "cumle": "Owen's just gone out to buy a little eggs.",
+   "yanlis": "a little",
+   "secenekler": [
+    "a few",
+    "too much",
+    "much"
+   ],
+   "dogru": 0,
+   "tr": "Owen birkaç yumurta almak için çıktı.",
+   "aciklama": "{{eggs}} sayılabilir: {{a few eggs}}. (WB s. 38)"
+  },
+  {
+   "cumle": "I've got time enough to help you.",
+   "yanlis": "time enough",
+   "secenekler": [
+    "too time",
+    "enough time",
+    "time too"
+   ],
+   "dogru": 1,
+   "tr": "Sana yardım edecek kadar vaktim var.",
+   "aciklama": "İsimle {{enough}} önce gelir: {{enough time}}. (WB s. 95)"
+  },
+  {
+   "cumle": "You probably don't have many time for other things.",
+   "yanlis": "many time",
+   "secenekler": [
+    "much time",
+    "a few time",
+    "enough of time"
+   ],
+   "dogru": 0,
+   "tr": "Muhtemelen başka şeylere çok vaktin yok.",
+   "aciklama": "{{time}} sayılamaz: {{much time}}. Kitapta Beatriz'in hata listesinde var. (SB s. 57)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Staying healthy in space (Online FAQs)",
+  "sayfa": "SB s. 48",
+  "sozluk": {
+   "International Space Station": "Uluslararası Uzay İstasyonu",
+   "space walks": "uzay yürüyüşleri",
+   "repair": "tamir etmek",
+   "experiments": "deneyler",
+   "incredible views": "muhteşem manzaralar",
+   "gravity": "yerçekimi",
+   "floats": "süzülür, havada durur",
+   "lift": "kaldırmak",
+   "muscles": "kaslar",
+   "strength": "güç",
+   "bones": "kemikler",
+   "at least": "en az",
+   "sunrises": "gün doğumları",
+   "strict routines": "sıkı günlük düzen",
+   "blindfolds": "göz bantları"
+  },
+  "bolumler": [
+   {
+    "baslik": "Astronotlar ne yapıyor? Beden değişiyor mu?",
+    "cumleler": [
+     {
+      "en": "Send us your questions about staying healthy in space.",
+      "tr": "Uzayda sağlıklı kalmakla ilgili sorularınızı bize gönderin."
+     },
+     {
+      "en": "How many movies have you seen about life in space?",
+      "tr": "Uzaydaki yaşamla ilgili kaç film izledin?"
+     },
+     {
+      "en": "It looks fun, right?",
+      "tr": "Eğlenceli görünüyor, değil mi?"
+     },
+     {
+      "en": "But is it?",
+      "tr": "Ama öyle mi?"
+     },
+     {
+      "en": "Our readers have asked us lots of questions about life on the International Space Station (ISS).",
+      "tr": "Okuyucularımız bize Uluslararası Uzay İstasyonu'ndaki (ISS) yaşamla ilgili pek çok soru sordu."
+     },
+     {
+      "en": "The list is too long to answer all of them, but we've answered four of the best ones.",
+      "tr": "Liste hepsini cevaplamak için fazla uzun ama en iyi dördünü cevapladık."
+     },
+     {
+      "en": "They do a lot!",
+      "tr": "Çok şey yapıyorlar!"
+     },
+     {
+      "en": "They go on space walks, repair things, do experiments and communicate with Earth.",
+      "tr": "Uzay yürüyüşüne çıkıyor, bir şeyleri tamir ediyor, deney yapıyor ve Dünya ile iletişim kuruyorlar."
+     },
+     {
+      "en": "But too much work isn't good for anyone and we all need a little fun!",
+      "tr": "Ama çok fazla iş kimseye iyi gelmez ve hepimizin biraz eğlenceye ihtiyacı var!"
+     },
+     {
+      "en": "Astronauts play games, watch movies and listen to music.",
+      "tr": "Astronotlar oyun oynuyor, film izliyor ve müzik dinliyor."
+     },
+     {
+      "en": "If they get stressed, they relax by enjoying the incredible views of our beautiful planet from space.",
+      "tr": "Stres olunca uzaydan güzel gezegenimizin muhteşem manzarasının tadını çıkararak rahatlıyorlar."
+     },
+     {
+      "en": "Yes, it does.",
+      "tr": "Evet, değişiyor."
+     },
+     {
+      "en": "Gravity is very weak so everything floats – imagine sneezing in space!",
+      "tr": "Yerçekimi çok zayıf, bu yüzden her şey süzülüyor: uzayda hapşırmayı düşün!"
+     },
+     {
+      "en": "This means it's easy to lift things.",
+      "tr": "Bu, bir şeyleri kaldırmanın kolay olduğu anlamına geliyor."
+     },
+     {
+      "en": "Astronauts train a lot on Earth, but if they don't do enough exercise in space, their muscles and hearts lose strength and their bones get weaker, and this can happen in just a few weeks!",
+      "tr": "Astronotlar Dünya'da çok antrenman yapar ama uzayda yeterince egzersiz yapmazlarsa kasları ve kalpleri güç kaybeder, kemikleri zayıflar; bu sadece birkaç haftada olabilir!"
+     },
+     {
+      "en": "These are only a few examples of the problems astronauts can have.",
+      "tr": "Bunlar astronotların yaşayabileceği sorunlardan sadece birkaç örnek."
+     },
+     {
+      "en": "Sometimes, when they get back to Earth, they're not strong enough to walk!",
+      "tr": "Bazen Dünya'ya döndüklerinde yürüyecek kadar güçlü olmuyorlar!"
+     },
+     {
+      "en": "The answer is exercise and not just a little exercise – a lot!",
+      "tr": "Cevap egzersiz; biraz değil, çok egzersiz!"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Astronotlar stres olunca ne yapıyor?",
+      "secenekler": [
+       "Hemen uyuyorlar.",
+       "Dünya manzarasını izleyip rahatlıyorlar.",
+       "Daha çok çalışıyorlar."
+      ],
+      "dogru": 1,
+      "ipucu": "{{get stressed}} geçen cümleyi bul.",
+      "aciklama": "Gezegenimizin manzarasının tadını çıkarıp rahatlıyorlar. (SB s. 48)"
+     },
+     {
+      "soru": "Uzayda yeterince egzersiz yapmazlarsa ne olur?",
+      "secenekler": [
+       "Kasları ve kemikleri zayıflar.",
+       "Daha uzun boylu olurlar.",
+       "Hiçbir şey olmaz."
+      ],
+      "dogru": 0,
+      "ipucu": "{{don't do enough exercise}} geçen cümleye bak.",
+      "aciklama": "Kaslar ve kalp güç kaybeder, kemikler zayıflar. (SB s. 48)"
+     }
+    ]
+   },
+   {
+    "baslik": "Ne kadar spor? Nasıl uyuyorlar?",
+    "cumleler": [
+     {
+      "en": "Well, quite a lot.",
+      "tr": "Şey, epey çok."
+     },
+     {
+      "en": "Take Japanese astronaut Koichi Wakata, for example.",
+      "tr": "Örneğin Japon astronot Koichi Wakata'yı ele alalım."
+     },
+     {
+      "en": "He lived on the ISS for 188 days and worked out for at least two hours every day.",
+      "tr": "ISS'de 188 gün yaşadı ve her gün en az iki saat egzersiz yaptı."
+     },
+     {
+      "en": "Some astronauts go jogging!",
+      "tr": "Bazı astronotlar koşuya çıkıyor!"
+     },
+     {
+      "en": "One astronaut, Chris Hadfield, even ran a marathon in space!",
+      "tr": "Bir astronot, Chris Hadfield, uzayda maraton bile koştu!"
+     },
+     {
+      "en": "Good question.",
+      "tr": "Güzel soru."
+     },
+     {
+      "en": "We all need to get enough sleep, but in space, with 16 sunrises and 16 sunsets every 24 hours, that's not easy.",
+      "tr": "Hepimizin yeterince uyuması gerekir ama uzayda, her 24 saatte 16 gün doğumu ve 16 gün batımıyla bu kolay değil."
+     },
+     {
+      "en": "Too many changes from day to night make it difficult to know when to sleep, so astronauts have very strict routines and wear special blindfolds to block out the sunlight.",
+      "tr": "Gündüzden geceye çok fazla değişim ne zaman uyuyacağını bilmeyi zorlaştırıyor; bu yüzden astronotların çok sıkı bir düzeni var ve güneş ışığını engellemek için özel göz bantları takıyorlar."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Koichi Wakata uzayda her gün ne kadar egzersiz yaptı?",
+      "secenekler": [
+       "Yarım saat",
+       "Hiç yapmadı",
+       "En az iki saat"
+      ],
+      "dogru": 2,
+      "ipucu": "{{at least}} geçen cümleye bak.",
+      "aciklama": "{{at least two hours every day}}: her gün en az iki saat. (SB s. 48)"
+     },
+     {
+      "soru": "Astronotlar neden özel göz bandı takıyor?",
+      "secenekler": [
+       "Güneş ışığını engelleyip uyuyabilmek için",
+       "Uzay yürüyüşü için",
+       "Film izlemek için"
+      ],
+      "dogru": 0,
+      "ipucu": "{{blindfolds}} geçen cümlenin sonunu oku.",
+      "aciklama": "{{to block out the sunlight}}: güneş ışığını engellemek için. (SB s. 48)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Okuyucular astronotlar hakkında o kadar çok soru sormuş ki liste hepsini cevaplamak için fazla uzunmuş: {{The list is too long.}} (SB s. 48)",
+  "Astronotlar bazen Dünya'ya dönünce yürüyecek kadar güçlü olmuyor: {{they're not strong enough to walk!}} (SB s. 48)",
+  "Kitap {{too}} ile {{very}}'yi karıştırmamamızı özellikle uyarıyor. (SB s. 49)"
+ ],
+ "akildaKalsin": [
+  "Sayılabilen: {{a few}} · {{too many}} · {{enough}}.",
+  "Sayılamayan: {{a little}} · {{too much}} · {{enough}}.",
+  "{{too}} + sıfat: {{too long}} · sıfat + {{enough}}: {{old enough}}.",
+  "{{enough}} + isim: {{enough chairs}}.",
+  "{{too}} ≠ {{very}}: {{I'm very happy.}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{too}} ile {{very}} aynı mı?",
+   "cevap": "Hayır. {{too}} 'gerekenden fazla' demek, genelde bir sorun var. {{very}} sadece sıfatı güçlendirir: {{I'm very happy. Let's celebrate.}} (SB s. 49)"
+  },
+  {
+   "soru": "{{enough}} cümlede nereye gelir?",
+   "cevap": "Sıfattan sonra: {{old enough}}. İsimden önce: {{enough chairs}}. (SB s. 49)"
+  },
+  {
+   "soru": "Bir isim sayılabilir mi, nasıl anlarım?",
+   "cevap": "Kitaptaki örneklere bak: {{chairs, weeks, messages, options}} sayılabilir, çoğul olur. {{fun, time, work, noise}} sayılamaz. Önüne 'üç' koyabiliyorsan genelde sayılabilir: {{three chairs}}. (WB s. 94)"
+  },
+  {
+   "soru": "{{not enough}} ne demek?",
+   "cevap": "Yeterli değil. Sınıfta 12 öğrenci var ama 11 sandalye: {{There aren't enough chairs.}} (SB s. 49)"
+  },
+  {
+   "soru": "{{a little}} ile {{a few}} az mı demek, çok mu?",
+   "cevap": "İkisi de küçük miktar: 'biraz, birkaç'. {{I have a little time to watch TV, but not much.}} Biraz var ama çok değil. (WB s. 94)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Dün neyi çok fazla yaptın ya da yedin? Geçen hafta neyi yeterince yapamadın? {{Yesterday, I ate too many ...}} {{Last week, I didn't get enough ...}}",
+   "ornekCevap": "Yesterday, I ate too many sweets. Last week, I didn't get enough sleep.",
+   "anahtarlar": [
+    "too",
+    "enough",
+    "few",
+    "little",
+    "much",
+    "many"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "We need a little luck!",
+    "We need a few luck!",
+    "We need too much luck!"
+   ],
+   "dogru": 0,
+   "ipucu": "Kaç kelime var ve ortadaki {{a ...}} hangisi? Yavaş dinle.",
+   "aciklama": "Duyduğun cümle {{We need a little luck!}} {{luck}} sayılamaz. (SB s. 49)",
+   "dinle": "We need a little luck!",
+   "kavram": "a little"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "There are enough chairs.",
+    "There aren't enough chairs.",
+    "There are too many chairs."
+   ],
+   "dogru": 1,
+   "ipucu": "Olumsuz mu olumlu mu? {{aren't}} sesine dikkat et.",
+   "aciklama": "Duyduğun cümle {{There aren't enough chairs.}} (SB s. 49)",
+   "dinle": "There aren't enough chairs.",
+   "kavram": "enough + noun"
+  },
+  {
+   "soru": "{{I have some time to do my homework but not much.}} Altı çizili {{some time}} yerine hangisi?",
+   "secenekler": [
+    "a little time",
+    "a few time",
+    "too many time"
+   ],
+   "dogru": 0,
+   "ipucu": "{{time}} sayılabilir mi?",
+   "aciklama": "Sayılamayan isim: {{a little time}}. (SB s. 49)",
+   "kavram": "a little"
+  },
+  {
+   "soru": "{{The team has three or four good players.}} {{three or four}} yerine hangisi?",
+   "secenekler": [
+    "a little good players",
+    "a few good players",
+    "too much good players"
+   ],
+   "dogru": 1,
+   "ipucu": "{{players}} sayılabilir.",
+   "aciklama": "Sayılabilen, az sayıda: {{a few good players}}. (SB s. 49)",
+   "kavram": "a few"
+  },
+  {
+   "soru": "{{Jo was wearing shorts and a T-shirt in the cold weather. Now she's sick.}} Hangisi doğru?",
+   "secenekler": [
+    "She wore too many clothes.",
+    "She wore clothes enough.",
+    "She didn't wear enough clothes."
+   ],
+   "dogru": 2,
+   "ipucu": "Soğukta şort ve tişört: kıyafet yeterli miydi?",
+   "aciklama": "Yeterince kıyafet giymedi: {{She didn't wear enough clothes.}} (SB s. 49)",
+   "kavram": "enough + noun"
+  },
+  {
+   "soru": "{{I want to go out, but I'm coughing and have a fever.}} Hangisi doğru?",
+   "secenekler": [
+    "I'm sick enough to go out.",
+    "I'm too sick to go out.",
+    "I'm very sick go out."
+   ],
+   "dogru": 1,
+   "ipucu": "{{too}} + sıfat: o kadar … ki olmuyor.",
+   "aciklama": "Dışarı çıkmak için fazla hasta: {{too sick to go out}}. (SB s. 49)",
+   "kavram": "too + adjective"
+  },
+  {
+   "soru": "{{We weren't even good ___ to score one goal!}}",
+   "secenekler": [
+    "too",
+    "enough",
+    "very"
+   ],
+   "dogru": 1,
+   "ipucu": "Sıfattan SONRA hangi kelime gelir?",
+   "aciklama": "Sıfat + {{enough}}: {{good enough to score}}. (SB s. 49)",
+   "kavram": "adjective + enough"
+  },
+  {
+   "soru": "{{We spent too ___ time defending.}}",
+   "secenekler": [
+    "many",
+    "few",
+    "much"
+   ],
+   "dogru": 2,
+   "ipucu": "{{time}} sayılamaz.",
+   "aciklama": "Sayılamayan: {{too much time}}. (SB s. 49)",
+   "kavram": "too much"
+  },
+  {
+   "soru": "{{If you lose too ___ games, you'll be out of the competition.}}",
+   "secenekler": [
+    "much",
+    "little",
+    "many"
+   ],
+   "dogru": 2,
+   "ipucu": "{{games}} sayılabilir, çoğul.",
+   "aciklama": "Sayılabilen: {{too many games}}. (SB s. 49)",
+   "kavram": "too many"
+  },
+  {
+   "soru": "Bugün doğum günün, çok mutlusun. Hangisi doğru?",
+   "secenekler": [
+    "I'm too happy. Let's celebrate.",
+    "I'm very happy. Let's celebrate.",
+    "I'm happy very. Let's celebrate."
+   ],
+   "dogru": 1,
+   "ipucu": "{{too}} bir sorun anlatır; mutluluk sorun değil.",
+   "aciklama": "Güçlendirmek için {{very}}: {{I'm very happy.}} (SB s. 49)",
+   "kavram": "too + adjective"
+  },
+  {
+   "soru": "{{Sometimes, when they get back to Earth, they're not strong enough to walk!}} Ne demek?",
+   "secenekler": [
+    "Yürüyecek kadar güçlü değiller.",
+    "Yürümek için çok güçlüler.",
+    "Biraz yürüyorlar."
+   ],
+   "dogru": 0,
+   "ipucu": "{{not}} + sıfat + {{enough}}: yeterince … değil.",
+   "aciklama": "{{not strong enough to walk}}: yürüyecek kadar güçlü değil. (SB s. 48)",
+   "kavram": "adjective + enough"
+  }
+ ]
+}

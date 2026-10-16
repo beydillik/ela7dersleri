@@ -1,0 +1,243 @@
+{
+ "id": "u4t1",
+ "tur": "tarama",
+ "unite": "Unit 4: Healthy body, healthy mind",
+ "baslik": "Ara Durak 1: Sağlık, spor ve miktar",
+ "sayfalar": "Konu 1–3 · SB s. 47–49, 56–57, 121, 131 · WB s. 32–34, 38, 94–95",
+ "giris": "Üç konu bitti; kısa bir tekrar molası. Önce kartlara bakmadan hatırlamaya çalış. Sonra karışık soruları çöz. Not yok, sadece tekrar.",
+ "buyukResim": "Hastalık kelimelerini ({{cough, get ill}}) ve spor kelimelerini ({{warm up, work out}}) öğrendin. Miktar kalıplarıyla bunları birleştirebilirsin: {{We all need to get enough sleep.}} {{Too much work isn't good for anyone.}}",
+ "kapsar": [
+  "u4k1",
+  "u4k2",
+  "u4k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u4k1",
+   "maddeler": [
+    "{{get ill}} hasta olmak ↔ {{get better}} iyileşmek.",
+    "{{cough}} öksürmek · {{sneeze}} hapşırmak · {{have a fever}} ateşi olmak.",
+    "{{get stressed}} stres olmak."
+   ]
+  },
+  {
+   "konu": "u4k2",
+   "maddeler": [
+    "Spordan önce {{warm up}}: ısın.",
+    "{{train}} antrenman · {{work out}} egzersiz · {{go jogging}} koşuya çıkmak · {{sweat}} terlemek.",
+    "{{relax}} rahatla · {{get enough sleep}} yeterince uyu."
+   ]
+  },
+  {
+   "konu": "u4k3",
+   "maddeler": [
+    "Sayılabilen: {{a few}}, {{too many}} · Sayılamayan: {{a little}}, {{too much}}.",
+    "{{too}} + sıfat: {{too long}} · sıfat + {{enough}}: {{old enough}} · {{enough}} + isim: {{enough chairs}}.",
+    "{{too}} ≠ {{very}}: {{I'm very happy.}}"
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Hastalık mı, spor mu, miktar mı?",
+   "kutular": [
+    {
+     "etiket": "Hastalık (Konu 1)",
+     "uyeler": [
+      "cough",
+      "sneeze",
+      "have a fever",
+      "get ill"
+     ]
+    },
+    {
+     "etiket": "Spor ve dinlenme (Konu 2)",
+     "uyeler": [
+      "warm up",
+      "work out",
+      "go jogging",
+      "relax"
+     ]
+    },
+    {
+     "etiket": "Miktar (Konu 3)",
+     "uyeler": [
+      "too many",
+      "too much",
+      "a few",
+      "a little"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I didn't get enough sleep.",
+    "I didn't get a little sleep.",
+    "I got too much sleep."
+   ],
+   "dogru": 0,
+   "ipucu": "{{didn't}} ve {{enough}} sözcüklerine dikkat et.",
+   "aciklama": "Duyduğun cümle {{I didn't get enough sleep.}}: yeterince uyumadım. (SB s. 131)",
+   "dinle": "I didn't get enough sleep.",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "get enough sleep"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "enough + noun"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Too many work isn't good for anyone.",
+    "Too much work isn't good for anyone.",
+    "A little work isn't good for anyone."
+   ],
+   "dogru": 1,
+   "ipucu": "Başta {{too much}} mı {{too many}} mi?",
+   "aciklama": "Duyduğun cümle {{Too much work isn't good for anyone.}} {{work}} sayılamaz. (SB s. 48)",
+   "dinle": "Too much work isn't good for anyone.",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "too much"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "relax"
+    }
+   ]
+  },
+  {
+   "soru": "{{Astronauts train a lot, but if they don't do ___ exercise in space, their muscles lose strength.}}",
+   "secenekler": [
+    "a few",
+    "enough",
+    "too many"
+   ],
+   "dogru": 1,
+   "ipucu": "Kasların güç kaybetmemesi için egzersiz yeterli olmalı.",
+   "aciklama": "{{enough exercise}}: yeterli egzersiz. (SB s. 48)",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "train"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "enough + noun"
+    }
+   ]
+  },
+  {
+   "soru": "{{I'm ___ ill to go to school today. I have a fever.}}",
+   "secenekler": [
+    "enough",
+    "very",
+    "too"
+   ],
+   "dogru": 2,
+   "ipucu": "Okula gidemiyor: o kadar hasta ki olmuyor.",
+   "aciklama": "{{too ill to go to school}}: okula gidemeyecek kadar hasta. (SB s. 49)",
+   "yardim": {
+    "adimlar": [
+     "Okula gidebiliyor mu, gidemiyor mu?",
+     "'O kadar … ki olmuyor' hangi kelimeyle anlatılır?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "have a fever"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "too + adjective"
+    }
+   ]
+  },
+  {
+   "soru": "{{Don't get stressed! Do ___ yoga exercises and relax.}}",
+   "secenekler": [
+    "a few",
+    "a little",
+    "too much"
+   ],
+   "dogru": 0,
+   "ipucu": "{{exercises}} sayılabilir, çoğul.",
+   "aciklama": "Sayılabilen: {{a few yoga exercises}}. (WB s. 95)",
+   "yardim": {
+    "adimlar": [
+     "Boşluktan sonraki isim hangisi?",
+     "{{exercises}} sayılabilir mi, sayılamaz mı?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "get stressed"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "relax"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "a few"
+    }
+   ]
+  },
+  {
+   "soru": "Koşudan önce birkaç dakika ısınmak istiyorsun. Hangisi doğru?",
+   "secenekler": [
+    "Warm up for a little minutes.",
+    "Work out for too much minutes.",
+    "Warm up for a few minutes."
+   ],
+   "dogru": 2,
+   "ipucu": "Spordan önce ne yapılır? {{minutes}} sayılabilir mi?",
+   "aciklama": "{{warm up}} spordan önce; {{minutes}} sayılabilir: {{a few minutes}}. (WB s. 34)",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "warm up"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "a few"
+    }
+   ]
+  },
+  {
+   "soru": "Okuma: Uzay istasyonunda her 24 saatte 16 gün doğumu var. Astronotlar için hangisi doğru?",
+   "secenekler": [
+    "They can't get enough sleep easily.",
+    "They sleep too much every day.",
+    "They get ill because of the sun."
+   ],
+   "dogru": 0,
+   "ipucu": "{{that's not easy}} geçen cümleyi düşün.",
+   "aciklama": "{{We all need to get enough sleep, but in space ... that's not easy.}} (SB s. 48)",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "get enough sleep"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "too many"
+    }
+   ]
+  }
+ ]
+}

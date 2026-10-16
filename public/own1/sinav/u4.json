@@ -1,0 +1,340 @@
+{
+ "unite": 4,
+ "ders": "own1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "o4-01",
+   "konu": "u4k1",
+   "kavram": "get ill",
+   "tur": "secim",
+   "soru": "{{to become sick}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "get better",
+    "get ill",
+    "get stressed",
+    "relax"
+   ],
+   "dogru": 1,
+   "aciklama": "Hasta olmak: {{get ill}} (SB s. 47)."
+  },
+  {
+   "id": "o4-02",
+   "konu": "u4k1",
+   "kavram": "get better",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçeleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "cough",
+     "sag": "öksürmek"
+    },
+    {
+     "sol": "sneeze",
+     "sag": "hapşırmak"
+    },
+    {
+     "sol": "get better",
+     "sag": "iyileşmek"
+    },
+    {
+     "sol": "have a fever",
+     "sag": "ateşi olmak"
+    }
+   ],
+   "aciklama": "Sağlık kelimeleri (SB s. 47)."
+  },
+  {
+   "id": "o4-03",
+   "konu": "u4k1",
+   "kavram": "have a fever",
+   "tur": "bosluk",
+   "havuz": [
+    "relax",
+    "train"
+   ],
+   "cumleler": [
+    {
+     "c": "He's very hot. I'm sure he has a ___.",
+     "cevap": "fever"
+    },
+    {
+     "c": "I'm sorry you're ill. I hope you get ___ soon.",
+     "cevap": "better"
+    },
+    {
+     "c": "Does your chest hurt? You're ___ a lot.",
+     "cevap": "coughing"
+    }
+   ],
+   "aciklama": "Sıcaklık, iyileşme ve göğüs ağrısı ipuçlarına bak (SB s. 131)."
+  },
+  {
+   "id": "o4-04",
+   "konu": "u4k1",
+   "kavram": "get stressed",
+   "tur": "dy",
+   "ifade": "{{get stressed}} ile {{relax}} aynı anlama gelir.",
+   "dogru": false,
+   "duzeltme": "Zıt anlamlıdır: stres olmak ↔ rahatlamak.",
+   "aciklama": "{{Don't get stressed – relax!}} (WB s. 32)."
+  },
+  {
+   "id": "o4-05",
+   "konu": "u4k1",
+   "kavram": "sneeze",
+   "tur": "kisa",
+   "soru": "Hapşırmak. İngilizce yaz.",
+   "yanit": "sneeze",
+   "aciklama": "Hapşırmak: {{sneeze}} (SB s. 47)."
+  },
+  {
+   "id": "o4-06",
+   "konu": "u4k1",
+   "kavram": "cough",
+   "tur": "secim",
+   "soru": "Sağlık kelimeleri ve anlamları:",
+   "onculler": [
+    "{{cough}}: öksürmek",
+    "{{get better}}: hasta olmak",
+    "{{sneeze}}: hapşırmak"
+   ],
+   "kok": "Hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "{{get better}} iyileşmek; hasta olmak {{get ill}} (SB s. 47)."
+  },
+  {
+   "id": "o4-07",
+   "konu": "u4k2",
+   "kavram": "warm up",
+   "tur": "secim",
+   "soru": "{{to exercise gently before doing sport}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "work out",
+    "sweat",
+    "go jogging",
+    "warm up"
+   ],
+   "dogru": 3,
+   "aciklama": "Spordan önce hafif egzersiz: {{warm up}} (SB s. 47)."
+  },
+  {
+   "id": "o4-08",
+   "konu": "u4k2",
+   "kavram": "work out",
+   "tur": "bosluk",
+   "havuz": [
+    "sneezes",
+    "coughs"
+   ],
+   "cumleler": [
+    {
+     "c": "Lucia is very fit because she ___ at the gym every day.",
+     "cevap": "works out"
+    },
+    {
+     "c": "He ___ a lot when he exercises. His clothes get very wet!",
+     "cevap": "sweats"
+    },
+    {
+     "c": "Sam is ___ for a half marathon at the moment.",
+     "cevap": "training"
+    }
+   ],
+   "aciklama": "Spor salonu, ıslak kıyafet ve yarış ipuçlarına bak (WB s. 32)."
+  },
+  {
+   "id": "o4-09",
+   "konu": "u4k2",
+   "kavram": "get enough sleep",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "Koichi Wakata uzayda her gün en az iki saat egzersiz yaptı.",
+     "d": true
+    },
+    {
+     "s": "Uzayda yeterince uyumak çok kolaydır.",
+     "d": false
+    },
+    {
+     "s": "Astronotlar stres olunca Dünya manzarasını izleyip rahatlıyor.",
+     "d": true
+    },
+    {
+     "s": "Chris Hadfield uzayda maraton koştu.",
+     "d": true
+    }
+   ],
+   "aciklama": "Uzayda 16 gün doğumu var; uyumak kolay değil (SB s. 48)."
+  },
+  {
+   "id": "o4-10",
+   "konu": "u4k2",
+   "kavram": "relax",
+   "tur": "kisa",
+   "soru": "Rahatlamak, dinlenmek. İngilizce yaz.",
+   "yanit": "relax",
+   "aciklama": "Rahatlamak: {{relax}}; zıddı {{get stressed}} (SB s. 47)."
+  },
+  {
+   "id": "o4-11",
+   "konu": "u4k2",
+   "kavram": "go jogging",
+   "tur": "secim",
+   "soru": "{{Some astronauts go ___! One astronaut even ran a marathon in space.}}",
+   "secenekler": [
+    "jogging",
+    "training",
+    "relaxing",
+    "sweating"
+   ],
+   "dogru": 0,
+   "aciklama": "Koşuya çıkmak: {{go jogging}} (SB s. 48)."
+  },
+  {
+   "id": "o4-12",
+   "konu": "u4k2",
+   "kavram": "train",
+   "tur": "dy",
+   "ifade": "Astronotlar uzaya gitmeden önce Dünya'da çok antrenman yapar.",
+   "dogru": true,
+   "aciklama": "{{Astronauts train a lot on Earth.}} (SB s. 48)"
+  },
+  {
+   "id": "o4-13",
+   "konu": "u4k3",
+   "kavram": "too much",
+   "tur": "secim",
+   "soru": "{{There was ___ noise and I couldn't sleep.}}",
+   "secenekler": [
+    "too many",
+    "a few",
+    "too much",
+    "enough of"
+   ],
+   "dogru": 2,
+   "aciklama": "{{noise}} sayılamaz: {{too much noise}} (WB s. 94)."
+  },
+  {
+   "id": "o4-14",
+   "konu": "u4k3",
+   "kavram": "a few",
+   "tur": "bosluk",
+   "havuz": [
+    "too",
+    "very"
+   ],
+   "cumleler": [
+    {
+     "c": "This can happen in just a ___ weeks.",
+     "cevap": "few"
+    },
+    {
+     "c": "We all need a ___ fun!",
+     "cevap": "little"
+    },
+    {
+     "c": "There aren't ___ chairs for everyone.",
+     "cevap": "enough"
+    }
+   ],
+   "aciklama": "{{weeks}} sayılabilir, {{fun}} sayılamaz (SB s. 49)."
+  },
+  {
+   "id": "o4-15",
+   "konu": "u4k3",
+   "kavram": "too many",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "{{too many}} sayılabilen isimlerle kullanılır.",
+     "d": true
+    },
+    {
+     "s": "{{a little}} sayılabilen isimlerle kullanılır.",
+     "d": false
+    },
+    {
+     "s": "{{enough}} sıfattan sonra gelir: {{old enough}}.",
+     "d": true
+    },
+    {
+     "s": "{{too}} ile {{very}} aynı anlamdadır.",
+     "d": false
+    }
+   ],
+   "aciklama": "{{a little}} sayılamayanla; {{too}} 'fazla' demek (WB s. 94)."
+  },
+  {
+   "id": "o4-16",
+   "konu": "u4k3",
+   "kavram": "adjective + enough",
+   "tur": "secim",
+   "soru": "{{Are you ___ to be an astronaut?}}",
+   "secenekler": [
+    "enough old",
+    "old enough",
+    "too enough",
+    "very enough"
+   ],
+   "dogru": 1,
+   "aciklama": "Sıfat önce, {{enough}} sonra (SB s. 49)."
+  },
+  {
+   "id": "o4-17",
+   "konu": "u4k3",
+   "kavram": "too + adjective",
+   "tur": "secim",
+   "soru": "Miktar cümleleri:",
+   "onculler": [
+    "{{I'm very happy. Let's celebrate.}}",
+    "{{We need a few luck.}}",
+    "{{The list is too long.}}"
+   ],
+   "kok": "Hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "{{luck}} sayılamaz: {{a little luck}} (SB s. 49)."
+  },
+  {
+   "id": "o4-18",
+   "konu": "u4k3",
+   "kavram": "enough + noun",
+   "tur": "eslestir",
+   "soru": "Cümleleri anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "There aren't enough chairs.",
+     "sag": "Yeterince sandalye yok."
+    },
+    {
+     "sol": "There were too many options.",
+     "sag": "Çok fazla seçenek vardı."
+    },
+    {
+     "sol": "I have a little time.",
+     "sag": "Biraz vaktim var."
+    },
+    {
+     "sol": "I've got a few messages.",
+     "sag": "Birkaç mesajım var."
+    }
+   ],
+   "aciklama": "Miktar kalıpları (WB s. 94)."
+  }
+ ]
+}
