@@ -335,6 +335,328 @@
     }
    ],
    "aciklama": "Miktar kalıpları (WB s. 94)."
+  },
+  {
+   "id": "o4-19",
+   "konu": "u4k4",
+   "kavram": "carbohydrates",
+   "tur": "secim",
+   "soru": "{{We get most of our energy from these. You find them in bread and pasta.}} Hangisi?",
+   "secenekler": [
+    "vitamins",
+    "fibre",
+    "carbohydrates",
+    "dairy products"
+   ],
+   "dogru": 2,
+   "aciklama": "Ekmek ve makarna, enerji: {{carbohydrates}} (WB s. 35)."
+  },
+  {
+   "id": "o4-20",
+   "konu": "u4k4",
+   "kavram": "dairy products",
+   "tur": "eslestir",
+   "soru": "Kelimeleri tanımlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "dairy products",
+     "sag": "sütten yapılan yiyecekler"
+    },
+    {
+     "sol": "fibre",
+     "sag": "yiyeceklerin vücuttan geçmesine yardım eder"
+    },
+    {
+     "sol": "protein",
+     "sag": "büyümeye ve güçlü olmaya yardım eder"
+    },
+    {
+     "sol": "calories",
+     "sag": "besindeki enerjiyi sayarız"
+    }
+   ],
+   "aciklama": "Kitaptaki bulmaca ipuçları (WB s. 35)."
+  },
+  {
+   "id": "o4-21",
+   "konu": "u4k4",
+   "kavram": "vitamins",
+   "tur": "bosluk",
+   "havuz": [
+    "fat",
+    "fibre"
+   ],
+   "cumleler": [
+    {
+     "c": "Ben often seems to get ill. I think he needs more ___.",
+     "cevap": "vitamins"
+    },
+    {
+     "c": "You need to eat more ___ if you train a lot.",
+     "cevap": "calories"
+    },
+    {
+     "c": "Good ___ is important if you are training for a marathon.",
+     "cevap": "nutrition"
+    }
+   ],
+   "aciklama": "Hastalık, antrenman ve maraton ipuçlarına bak (SB s. 131)."
+  },
+  {
+   "id": "o4-22",
+   "konu": "u4k4",
+   "kavram": "fat",
+   "tur": "dy",
+   "ifade": "Peynir ve çikolatada çok lif ({{fibre}}) vardır.",
+   "dogru": false,
+   "duzeltme": "Peynir ve çikolatada çok yağ ({{fat}}) vardır.",
+   "aciklama": "{{There is a lot of this in cheese and chocolate.}}: {{fat}} (WB s. 35)."
+  },
+  {
+   "id": "o4-23",
+   "konu": "u4k4",
+   "kavram": "protein",
+   "tur": "kisa",
+   "soru": "Vücudun büyümesine ve güçlü olmasına yardım eden besin. Türkçesiyle aynı yazılan İngilizce kelimeyi yaz.",
+   "yanit": "protein",
+   "aciklama": "{{Protein helps our bodies to grow and be strong.}} (WB s. 38)"
+  },
+  {
+   "id": "o4-24",
+   "konu": "u4k4",
+   "kavram": "a balanced diet",
+   "tur": "secim",
+   "soru": "Beslenme kelimeleri:",
+   "onculler": [
+    "{{a balanced diet}}: birçok farklı yiyeceğin iyi bir karışımı",
+    "{{nutrition}}: yediğimiz yiyecekler ve vücudun onları kullanması",
+    "{{calories}}: yiyecekteki yağ"
+   ],
+   "kok": "Hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "{{calories}} besindeki enerji; yağ {{fat}} (WB s. 38)."
+  },
+  {
+   "id": "o4-25",
+   "konu": "u4k5",
+   "kavram": "should",
+   "tur": "secim",
+   "soru": "{{I have a fever.}} Hangisi doğru tavsiye?",
+   "secenekler": [
+    "You should go to school.",
+    "You should to stay in bed.",
+    "You should stay in bed.",
+    "You shoulds stay in bed."
+   ],
+   "dogru": 2,
+   "aciklama": "{{should}} + V1, {{to}} yok: {{You should stay in bed.}} (SB s. 51)"
+  },
+  {
+   "id": "o4-26",
+   "konu": "u4k5",
+   "kavram": "ought to",
+   "tur": "secim",
+   "soru": "Cümleler:",
+   "onculler": [
+    "{{He oughts to eat more protein.}}",
+    "{{We ought to eat lots of fruit.}}",
+    "{{You should worry so much.}}"
+   ],
+   "kok": "Hangileri doğru yazılmıştır?",
+   "secenekler": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "{{ought}} değişmez; endişe için {{shouldn't worry}} (WB s. 36)."
+  },
+  {
+   "id": "o4-27",
+   "konu": "u4k5",
+   "kavram": "shouldn't",
+   "tur": "bosluk",
+   "havuz": [
+    "oughts"
+   ],
+   "cumleler": [
+    {
+     "c": "You ___ worry about the test – it'll be easy!",
+     "cevap": "shouldn't"
+    },
+    {
+     "c": "If you're always late for class, you ___ get up earlier.",
+     "cevap": "should"
+    },
+    {
+     "c": "A balanced diet ___ to include some fat.",
+     "cevap": "ought"
+    }
+   ],
+   "aciklama": "Kolay sınav, geç kalmak ve {{to}} ipuçlarına bak (WB s. 95)."
+  },
+  {
+   "id": "o4-28",
+   "konu": "u4k5",
+   "kavram": "Should I …?",
+   "tur": "dy",
+   "ifade": "{{Should I stay at home?}} sorusuna olumlu kısa cevap {{Yes, you should.}} olur.",
+   "dogru": true,
+   "aciklama": "Kısa cevap: {{Yes, you should.}} / {{No, you shouldn't.}} (WB s. 94)"
+  },
+  {
+   "id": "o4-29",
+   "konu": "u4k5",
+   "kavram": "What should …?",
+   "tur": "kisa",
+   "soru": "Boşluğa tek kelime yaz: {{What ___ I do to improve my English?}}",
+   "yanit": "should",
+   "aciklama": "Tavsiye istemek: {{What should I do?}} (SB s. 51)"
+  },
+  {
+   "id": "o4-30",
+   "konu": "u4k5",
+   "kavram": "should",
+   "tur": "dytablo",
+   "soru": "Rapordaki öneriler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "Her dersin ortasında kısa bir ara olmalı.",
+     "d": true
+    },
+    {
+     "s": "Kantin daha çok fast food satmalı.",
+     "d": false
+    },
+    {
+     "s": "Spor salonu bütün gün açık olmalı.",
+     "d": true
+    },
+    {
+     "s": "Bütün sınavlar aynı haftada olmalı.",
+     "d": false
+    }
+   ],
+   "aciklama": "Fiona ve Sanjay'in önerileri (SB s. 54)."
+  },
+  {
+   "id": "o4-31",
+   "konu": "u4k6",
+   "kavram": "How about + -ing?",
+   "tur": "secim",
+   "soru": "{{How about ___ jogging? Exercise always works for me!}}",
+   "secenekler": [
+    "go",
+    "going",
+    "to go",
+    "goes"
+   ],
+   "dogru": 1,
+   "aciklama": "{{How about}} + {{-ing}}: {{going}} (SB s. 52)."
+  },
+  {
+   "id": "o4-32",
+   "konu": "u4k6",
+   "kavram": "Why don't you …?",
+   "tur": "secim",
+   "soru": "Hangisi doğru bir öneridir?",
+   "secenekler": [
+    "Why not you look online?",
+    "Why you don't look online?",
+    "Why doesn't you look online?",
+    "Why don't you look online?"
+   ],
+   "dogru": 3,
+   "aciklama": "Kalıp: {{Why don't you}} + V1 (SB s. 53)."
+  },
+  {
+   "id": "o4-33",
+   "konu": "u4k6",
+   "kavram": "I recommend + -ing",
+   "tur": "bosluk",
+   "havuz": [
+    "try",
+    "sit"
+   ],
+   "cumleler": [
+    {
+     "c": "I can recommend ___ a therapy dog.",
+     "cevap": "trying"
+    },
+    {
+     "c": "Have you ever tried ___ with a cat?",
+     "cevap": "sitting"
+    },
+    {
+     "c": "Have you tried ___ healthy snacks at home?",
+     "cevap": "making"
+    }
+   ],
+   "aciklama": "{{recommend}} ve {{tried}} + {{-ing}} (WB s. 37)."
+  },
+  {
+   "id": "o4-34",
+   "konu": "u4k6",
+   "kavram": "Make sure you …",
+   "tur": "dy",
+   "ifade": "{{Do sure you listen to something gentle.}} doğru bir cümledir.",
+   "dogru": false,
+   "duzeltme": "{{Make sure you listen to something gentle.}}",
+   "aciklama": "{{do sure}} değil, {{make sure}} (SB s. 57)."
+  },
+  {
+   "id": "o4-35",
+   "konu": "u4k6",
+   "kavram": "Have you tried + -ing?",
+   "tur": "eslestir",
+   "soru": "Günlük ifadeleri anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Seriously?",
+     "sag": "Are you joking?"
+    },
+    {
+     "sol": "Tell me about it!",
+     "sag": "I know exactly what you mean."
+    },
+    {
+     "sol": "I'll give it a shot.",
+     "sag": "I'm going to try it."
+    },
+    {
+     "sol": "... isn't really my thing.",
+     "sag": "I don't really like ..."
+    }
+   ],
+   "aciklama": "Everyday English kutusu (SB s. 52)."
+  },
+  {
+   "id": "o4-36",
+   "konu": "u4k6",
+   "kavram": "You could always/just …",
+   "tur": "secim",
+   "soru": "Öneri kalıpları:",
+   "onculler": [
+    "{{You could always ask your mum.}}",
+    "{{How about going for a walk?}}",
+    "{{Why don't you look online?}}"
+   ],
+   "kok": "Hangileri doğru yazılmıştır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Üçü de doğru öneri kalıbı (SB s. 53)."
   }
  ]
 }

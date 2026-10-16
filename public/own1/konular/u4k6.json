@@ -1,0 +1,773 @@
+{
+ "id": "u4k6",
+ "unite": "Unit 4: Healthy body, healthy mind",
+ "baslik": "Giving advice (How about…?, Why don't you…?)",
+ "sayfalar": "SB s. 52–53, 57 · WB s. 37, 108",
+ "giris": "Bir arkadaşın sorununu anlattı; ona nasıl öneri verirsin? Bu konuda 6 tavsiye kalıbı öğreneceğiz. Bir sırrı var: bazı kalıplardan sonra fiil {{-ing}} alır, bazılarından sonra yalın gelir. Her kalıptan sonra kısa bir soru var.",
+ "kavramlar": [
+  {
+   "ad": "How about + -ing?",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='96' height='58' rx='16' fill='#3cc47c'/><polygon points='30,78 48,78 26,96' fill='#3cc47c'/><text x='60' y='55' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>How about…?</text><text x='84' y='108' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#3cc47c'>+ -ing</text></svg>",
+   "aciklama": "Öneri: '… yapmaya ne dersin?' {{How about}}'dan sonra fiilin {{-ing}} hâli gelir.",
+   "ek": "Robby, stresli Nicole'e koşuyu öneriyor. {{How about go}} denmez; {{How about going}}.",
+   "akilda": "… yapmaya ne dersin?",
+   "ornek": "How about going jogging?",
+   "ornekTr": "Koşuya çıkmaya ne dersin? (SB s. 52)",
+   "formul": [
+    [
+     {
+      "t": "How about",
+      "r": "diger",
+      "alt": "ne dersin"
+     },
+     {
+      "t": "going",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     },
+     {
+      "t": "jogging?",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{How about ___ jogging?}}",
+    "secenekler": [
+     "go",
+     "going",
+     "to go"
+    ],
+    "dogru": 1,
+    "ipucu": "Formül: {{How about}} + fiil{{-ing}}.",
+    "aciklama": "{{How about going jogging?}} (SB s. 52)"
+   }
+  },
+  {
+   "ad": "Have you tried + -ing?",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='96' height='58' rx='16' fill='#4cc9f0'/><polygon points='30,78 48,78 26,96' fill='#4cc9f0'/><text x='60' y='55' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Have you tried…?</text><text x='84' y='108' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4cc9f0'>+ -ing</text></svg>",
+   "aciklama": "'… yapmayı denedin mi?' Bir çözüm önerir. Sonra fiilin {{-ing}} hâli gelir.",
+   "ek": "Workbook'taki Tom da soruyor: {{Have you ever tried sitting with a cat or walking a dog when you're stressed?}}",
+   "akilda": "denedin mi?",
+   "ornek": "Have you tried making healthy snacks at home?",
+   "ornekTr": "Evde sağlıklı atıştırmalıklar yapmayı denedin mi? (SB s. 53)",
+   "formul": [
+    [
+     {
+      "t": "Have you tried",
+      "r": "diger",
+      "alt": "denedin mi"
+     },
+     {
+      "t": "making",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     },
+     {
+      "t": "healthy snacks?",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Have you tried ___ healthy snacks at home?}}",
+    "secenekler": [
+     "making",
+     "make",
+     "to make"
+    ],
+    "dogru": 0,
+    "ipucu": "Formül: {{Have you tried}} + fiil{{-ing}}.",
+    "aciklama": "{{Have you tried making healthy snacks?}} (SB s. 53)"
+   }
+  },
+  {
+   "ad": "Why don't you …?",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='96' height='58' rx='16' fill='#ffd166'/><polygon points='30,78 48,78 26,96' fill='#ffd166'/><text x='60' y='55' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Why don't you…?</text><text x='84' y='108' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ffd166'>+ V1</text></svg>",
+   "aciklama": "'Neden … yapmıyorsun?' Kibar bir öneri. Sonra fiil yalın (V1) gelir.",
+   "ek": "{{Why not you}} denmez; {{Why don't you}}. Workbook: {{Why don't you look online for a therapy pet centre near you?}}",
+   "akilda": "neden … yapmıyorsun?",
+   "ornek": "Why don't you look online for some ideas?",
+   "ornekTr": "Neden internette fikir aramıyorsun? (SB s. 53)",
+   "formul": [
+    [
+     {
+      "t": "Why don't you",
+      "r": "diger",
+      "alt": "neden … yapmıyorsun"
+     },
+     {
+      "t": "look",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     },
+     {
+      "t": "online?",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru?",
+    "secenekler": [
+     "Why not you look online?",
+     "Why you don't look online?",
+     "Why don't you look online?"
+    ],
+    "dogru": 2,
+    "ipucu": "Formül: {{Why}} + {{don't}} + {{you}} + V1.",
+    "aciklama": "{{Why don't you look online?}} (SB s. 53)"
+   }
+  },
+  {
+   "ad": "You could always/just …",
+   "renk": "#b388eb",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='96' height='58' rx='16' fill='#b388eb'/><polygon points='30,78 48,78 26,96' fill='#b388eb'/><text x='60' y='55' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>You could…</text><text x='84' y='108' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#b388eb'>+ V1</text></svg>",
+   "aciklama": "{{You could}} + fiil (V1): '… yapabilirsin.' {{always}} ya da {{just}} öneriyi yumuşatır.",
+   "ek": "Robby: {{You could just go for a walk.}} Brightongirl: {{You could always ask your mum or dad.}} {{would}} değil, {{could}}!",
+   "akilda": "… yapabilirsin",
+   "ornek": "You could always ask your mum or dad to help you.",
+   "ornekTr": "Her zaman annenden ya da babandan yardım isteyebilirsin. (SB s. 53)",
+   "formul": [
+    [
+     {
+      "t": "You",
+      "r": "ozne"
+     },
+     {
+      "t": "could",
+      "r": "yard",
+      "alt": "-ebilirsin"
+     },
+     {
+      "t": "always / just",
+      "r": "kelime",
+      "alt": "yumuşatır"
+     },
+     {
+      "t": "ask",
+      "r": "fiil",
+      "alt": "V1"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{You ___ always ask your mum or dad to help you.}}",
+    "secenekler": [
+     "would",
+     "could",
+     "are"
+    ],
+    "dogru": 1,
+    "ipucu": "Formül: {{You could always}} + V1.",
+    "aciklama": "{{You could always ask ...}} (SB s. 53)"
+   }
+  },
+  {
+   "ad": "Make sure you …",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='96' height='58' rx='16' fill='#e63946'/><polygon points='30,78 48,78 26,96' fill='#e63946'/><text x='60' y='55' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Make sure!</text><text x='84' y='108' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#e63946'>+ V1</text></svg>",
+   "aciklama": "'Mutlaka … yap, … yaptığından emin ol.' Önemli bir uyarı. Sonra {{you}} + fiil (V1).",
+   "ek": "{{do sure}} değil, {{make sure}}! Kitaptaki Beatriz bu hatayı yapıyor.",
+   "akilda": "mutlaka … yap",
+   "ornek": "But make sure you listen to something gentle.",
+   "ornekTr": "Ama mutlaka sakin bir şey dinle. (SB s. 52)",
+   "formul": [
+    [
+     {
+      "t": "Make sure",
+      "r": "diger",
+      "alt": "mutlaka"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "listen",
+      "r": "fiil",
+      "alt": "V1"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Önemli bir uyarı: {{___ sure you listen to something gentle.}}",
+    "secenekler": [
+     "Make",
+     "Do",
+     "Have"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki {{Make sure!}} balonunu hatırla.",
+    "aciklama": "{{Make sure you ...}} (SB s. 52)"
+   }
+  },
+  {
+   "ad": "I recommend + -ing",
+   "renk": "#ff8c42",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='96' height='58' rx='16' fill='#ff8c42'/><polygon points='30,78 48,78 26,96' fill='#ff8c42'/><text x='60' y='55' font-size='11' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>I recommend…</text><text x='84' y='108' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ff8c42'>+ -ing</text></svg>",
+   "aciklama": "'… yapmanı tavsiye ederim.' {{I recommend}}'dan sonra fiilin {{-ing}} hâli gelir.",
+   "ek": "Workbook: {{I can recommend trying a therapy dog.}} ({{to try}} değil, {{trying}}.)",
+   "akilda": "tavsiye ederim",
+   "ornek": "Also, I recommend always having enough fruit in the house.",
+   "ornekTr": "Ayrıca evde her zaman yeterince meyve bulundurmanı tavsiye ederim. (SB s. 53)",
+   "formul": [
+    [
+     {
+      "t": "I recommend",
+      "r": "diger",
+      "alt": "tavsiye ederim"
+     },
+     {
+      "t": "having",
+      "r": "fiil",
+      "alt": "fiil + -ing"
+     },
+     {
+      "t": "enough fruit",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I recommend always ___ enough fruit in the house.}}",
+    "secenekler": [
+     "have",
+     "to have",
+     "having"
+    ],
+    "dogru": 2,
+    "ipucu": "Formül: {{I recommend}} + fiil{{-ing}}.",
+    "aciklama": "{{I recommend having ...}} (SB s. 53)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "Seriously?",
+   "tr": "Ciddi misin? Şaka mı yapıyorsun?",
+   "ornek": "Seriously? I didn't know that.",
+   "ornekTr": "Ciddi misin? Bunu bilmiyordum. (SB s. 52)"
+  },
+  {
+   "en": "Tell me about it!",
+   "tr": "Kime diyorsun! (Ne demek istediğini çok iyi biliyorum.)",
+   "ornek": "Tell me about it! I always get stressed before exams.",
+   "ornekTr": "Kime diyorsun! Sınavlardan önce hep stres olurum. (SB s. 52)"
+  },
+  {
+   "en": "I'll give it a shot.",
+   "tr": "Bir deneyeceğim.",
+   "ornek": "OK, thanks. I'll give it a shot.",
+   "ornekTr": "Tamam, teşekkürler. Bir deneyeceğim. (SB s. 52)"
+  },
+  {
+   "en": "... isn't really my thing",
+   "tr": "… pek bana göre değil",
+   "ornek": "Jogging isn't really my thing.",
+   "ornekTr": "Koşu pek bana göre değil. (SB s. 52)"
+  },
+  {
+   "en": "... works for me",
+   "tr": "… bana iyi geliyor, işe yarıyor",
+   "ornek": "Exercise always works for me!",
+   "ornekTr": "Egzersiz bana hep iyi geliyor! (SB s. 52)"
+  },
+  {
+   "en": "That way, you can ...",
+   "tr": "Böylece … yapabilirsin",
+   "ornek": "That way, you can just take some as you leave the house.",
+   "ornekTr": "Böylece evden çıkarken biraz alabilirsin. (SB s. 53)"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Kalıptan sonra fiil nasıl gelir?",
+   "kutular": [
+    {
+     "etiket": "fiil + -ing",
+     "uyeler": [
+      "How about + -ing?",
+      "Have you tried + -ing?",
+      "I recommend + -ing"
+     ]
+    },
+    {
+     "etiket": "fiil yalın (V1)",
+     "uyeler": [
+      "Why don't you …?",
+      "You could always/just …",
+      "Make sure you …"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "How about going jogging?",
+   "tr": "Koşuya çıkmaya ne dersin? (SB s. 52)"
+  },
+  {
+   "en": "Have you tried making healthy snacks?",
+   "tr": "Sağlıklı atıştırmalıklar yapmayı denedin mi? (SB s. 53)"
+  },
+  {
+   "en": "Why don't you look online for ideas?",
+   "tr": "Neden internette fikir aramıyorsun? (SB s. 53)"
+  },
+  {
+   "en": "You could always ask your mum.",
+   "tr": "Her zaman annenden yardım isteyebilirsin. (SB s. 53)"
+  },
+  {
+   "en": "Make sure you listen to something gentle.",
+   "tr": "Mutlaka sakin bir şey dinle. (SB s. 52)"
+  },
+  {
+   "en": "Exercise always works for me!",
+   "tr": "Egzersiz bana hep iyi geliyor! (SB s. 52)"
+  },
+  {
+   "en": "OK, thanks. I'll give it a shot.",
+   "tr": "Tamam, teşekkürler. Bir deneyeceğim. (SB s. 52)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "How about go jogging?",
+   "yanlis": "go",
+   "secenekler": [
+    "going",
+    "to go",
+    "goes"
+   ],
+   "dogru": 0,
+   "tr": "Koşuya çıkmaya ne dersin?",
+   "aciklama": "{{How about}} + {{-ing}}: {{How about going jogging?}} (SB s. 52)"
+  },
+  {
+   "cumle": "Why not you look online for a therapy pet centre?",
+   "yanlis": "Why not you",
+   "secenekler": [
+    "Why you don't",
+    "Why don't you",
+    "Why doesn't you"
+   ],
+   "dogru": 1,
+   "tr": "Neden internette bir terapi hayvanı merkezi aramıyorsun?",
+   "aciklama": "Kalıp {{Why don't you ...?}} (WB s. 37)"
+  },
+  {
+   "cumle": "I can recommend to try a therapy dog.",
+   "yanlis": "to try",
+   "secenekler": [
+    "try",
+    "tried",
+    "trying"
+   ],
+   "dogru": 2,
+   "tr": "Bir terapi köpeği denemeni tavsiye edebilirim.",
+   "aciklama": "{{recommend}} + {{-ing}}: {{recommend trying}}. (WB s. 37)"
+  },
+  {
+   "cumle": "Have you tried sit with a cat?",
+   "yanlis": "sit",
+   "secenekler": [
+    "sitting",
+    "to sit",
+    "sat"
+   ],
+   "dogru": 0,
+   "tr": "Bir kediyle oturmayı denedin mi?",
+   "aciklama": "{{Have you tried}} + {{-ing}}: {{tried sitting}}. (WB s. 37)"
+  },
+  {
+   "cumle": "Tomorrow, do sure you don't post more than 200 photos.",
+   "yanlis": "do sure",
+   "secenekler": [
+    "do surely",
+    "make sure",
+    "sure do"
+   ],
+   "dogru": 1,
+   "tr": "Yarın 200'den fazla fotoğraf paylaşmadığından emin ol.",
+   "aciklama": "{{do sure}} değil, {{make sure}}. Beatriz'in hatası. (SB s. 57)"
+  },
+  {
+   "cumle": "You would always ask at your local vets.",
+   "yanlis": "would",
+   "secenekler": [
+    "could",
+    "should to",
+    "can to"
+   ],
+   "dogru": 0,
+   "tr": "Her zaman yakınındaki veterinere sorabilirsin.",
+   "aciklama": "Öneri kalıbı {{You could always ...}} (WB s. 37)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Giving advice",
+  "sayfa": "SB s. 52–53",
+  "sozluk": {
+   "exhausted": "bitkin, çok yorgun",
+   "Tell me about it": "Kime diyorsun! (Aynen öyle.)",
+   "advice": "tavsiye",
+   "isn't really my thing": "pek bana göre değil",
+   "definitely": "kesinlikle",
+   "improves your memory": "hafızanı güçlendirir",
+   "Seriously": "Ciddi misin?",
+   "gentle": "yumuşak, sakin",
+   "give it a shot": "bir denemek",
+   "snacks": "atıştırmalıklar",
+   "you're not alone": "yalnız değilsin",
+   "full of fat and sugar": "yağ ve şeker dolu",
+   "crisps": "cips",
+   "influence": "etkilemek",
+   "Hope it all goes well": "Umarım her şey yolunda gider"
+  },
+  "bolumler": [
+   {
+    "baslik": "Robby ve Nicole konuşuyor",
+    "cumleler": [
+     {
+      "en": "Robby: Hey, Nicole, are you feeling OK? You look exhausted!",
+      "tr": "Robby: Hey Nicole, iyi misin? Çok yorgun görünüyorsun!"
+     },
+     {
+      "en": "Nicole: I'm really stressed. I have too many exams this week and not enough time to study.",
+      "tr": "Nicole: Çok stresliyim. Bu hafta çok fazla sınavım var ve çalışmaya yeterince vaktim yok."
+     },
+     {
+      "en": "Robby: You really ought to get more sleep. You can't do anything well without enough sleep.",
+      "tr": "Robby: Gerçekten daha çok uyumalısın. Yeterince uyumadan hiçbir şeyi iyi yapamazsın."
+     },
+     {
+      "en": "Nicole: Tell me about it! I always get stressed before exams. Do you have any advice?",
+      "tr": "Nicole: Kime diyorsun! Sınavlardan önce hep stres oluyorum. Bir tavsiyen var mı?"
+     },
+     {
+      "en": "Robby: How about going jogging? Exercise always works for me!",
+      "tr": "Robby: Koşuya çıkmaya ne dersin? Egzersiz bana hep iyi geliyor!"
+     },
+     {
+      "en": "Nicole: Jogging isn't really my thing.",
+      "tr": "Nicole: Koşu pek bana göre değil."
+     },
+     {
+      "en": "Robby: You could just go for a walk. You definitely shouldn't study all night.",
+      "tr": "Robby: Sadece yürüyüşe çıkabilirsin. Kesinlikle bütün gece ders çalışmamalısın."
+     },
+     {
+      "en": "Nicole: Hmm, I guess I could try.",
+      "tr": "Nicole: Hmm, sanırım deneyebilirim."
+     },
+     {
+      "en": "Robby: And drink lots of water. It improves your memory.",
+      "tr": "Robby: Bir de bol su iç. Hafızanı güçlendirir."
+     },
+     {
+      "en": "Nicole: Seriously? I didn't know that.",
+      "tr": "Nicole: Ciddi misin? Bunu bilmiyordum."
+     },
+     {
+      "en": "Robby: Something else I find useful is to listen to music with my eyes closed. It helps me relax. But make sure you listen to something gentle.",
+      "tr": "Robby: Faydalı bulduğum başka bir şey de gözlerim kapalı müzik dinlemek. Rahatlamama yardım ediyor. Ama mutlaka sakin bir şey dinle."
+     },
+     {
+      "en": "Nicole: OK, thanks. I'll give it a shot.",
+      "tr": "Nicole: Tamam, teşekkürler. Bir deneyeceğim."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Nicole neden stresli?",
+      "secenekler": [
+       "Çok fazla sınavı var ve yeterince vakti yok.",
+       "Koşuya çıkmayı sevmiyor.",
+       "Hasta."
+      ],
+      "dogru": 0,
+      "ipucu": "{{I'm really stressed}} cümlesinden sonrasını oku.",
+      "aciklama": "{{too many exams ... not enough time to study}} (SB s. 52)"
+     },
+     {
+      "soru": "Robby su içmek hakkında ne diyor?",
+      "secenekler": [
+       "Uykuyu kaçırır.",
+       "Hafızayı güçlendirir.",
+       "Çok tehlikelidir."
+      ],
+      "dogru": 1,
+      "ipucu": "{{drink lots of water}} geçen cümleye bak.",
+      "aciklama": "{{It improves your memory.}} (SB s. 52)"
+     }
+    ]
+   },
+   {
+    "baslik": "Forum: What should I do?",
+    "cumleler": [
+     {
+      "en": "Chad: I eat lots of unhealthy snacks between lessons but what can I do? I get so hungry!",
+      "tr": "Chad: Dersler arasında çok sağlıksız atıştırmalık yiyorum ama ne yapabilirim? Çok acıkıyorum!"
+     },
+     {
+      "en": "Brightongirl: Hi! Thanks for telling us about your problem.",
+      "tr": "Brightongirl: Merhaba! Bize sorununu anlattığın için teşekkürler."
+     },
+     {
+      "en": "A lot of us eat too many snacks, so you're not alone.",
+      "tr": "Çoğumuz çok fazla atıştırmalık yiyoruz, yani yalnız değilsin."
+     },
+     {
+      "en": "We all know what the problem is – many snacks are full of fat and sugar and aren't good for us, and that's why we shouldn't eat too many.",
+      "tr": "Sorunun ne olduğunu hepimiz biliyoruz: birçok atıştırmalık yağ ve şeker dolu, bize iyi gelmiyor; bu yüzden çok fazla yememeliyiz."
+     },
+     {
+      "en": "Have you tried making healthy snacks at home?",
+      "tr": "Evde sağlıklı atıştırmalıklar yapmayı denedin mi?"
+     },
+     {
+      "en": "That's what I do.",
+      "tr": "Ben öyle yapıyorum."
+     },
+     {
+      "en": "I used to buy lots of crisps and sweets, but now I make healthy sandwiches and take them to school.",
+      "tr": "Eskiden çok cips ve şeker alırdım ama şimdi sağlıklı sandviçler yapıp okula götürüyorum."
+     },
+     {
+      "en": "Why don't you look online for some ideas?",
+      "tr": "Neden internette fikir aramıyorsun?"
+     },
+     {
+      "en": "You could always ask your mum or dad to help you.",
+      "tr": "Her zaman annenden ya da babandan yardım isteyebilirsin."
+     },
+     {
+      "en": "Also, I recommend always having enough fruit in the house.",
+      "tr": "Ayrıca evde her zaman yeterince meyve bulundurmanı tavsiye ederim."
+     },
+     {
+      "en": "That way, you can just take some as you leave the house.",
+      "tr": "Böylece evden çıkarken biraz alabilirsin."
+     },
+     {
+      "en": "Finally, you shouldn't let your friends influence you.",
+      "tr": "Son olarak, arkadaşlarının seni etkilemesine izin vermemelisin."
+     },
+     {
+      "en": "If they offer you an unhealthy snack, offer them a piece of your orange!",
+      "tr": "Sana sağlıksız bir atıştırmalık verirlerse, sen de onlara portakalından bir dilim ver!"
+     },
+     {
+      "en": "Hope it all goes well!",
+      "tr": "Umarım her şey yolunda gider!"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Chad'in sorunu ne?",
+      "secenekler": [
+       "Çok fazla oyun oynuyor.",
+       "Günde 250 fotoğraf paylaşıyor.",
+       "Dersler arasında çok sağlıksız atıştırmalık yiyor."
+      ],
+      "dogru": 2,
+      "ipucu": "{{Chad}} ile başlayan ilk cümleyi oku.",
+      "aciklama": "{{I eat lots of unhealthy snacks between lessons}} (SB s. 53)"
+     },
+     {
+      "soru": "Brightongirl evde ne bulundurmayı öneriyor?",
+      "secenekler": [
+       "Yeterince meyve",
+       "Bol cips",
+       "Çok fazla tatlı"
+      ],
+      "dogru": 0,
+      "ipucu": "{{I recommend}} geçen cümleyi bul.",
+      "aciklama": "{{I recommend always having enough fruit in the house.}} (SB s. 53)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Robby'ye göre bol su içmek hafızayı güçlendiriyor. Nicole bunu bilmiyordu: {{Seriously?}} (SB s. 52)",
+  "Workbook'taki Tom'a göre bir hayvanın yanında olmak stresin yükselttiği kan basıncını düşürmeye yardım edebilir. Yaşlıları ziyaret eden özel eğitimli terapi köpekleri bile var. (WB s. 37)",
+  "Kitap yaptığın hataların bir listesini tutmanı öneriyor: hatalarından öğrenirsin ve İngilizcen gelişir! (SB s. 57)"
+ ],
+ "akildaKalsin": [
+  "{{-ing}} alanlar: {{How about going ...?}} · {{Have you tried making ...?}} · {{I recommend having ...}}",
+  "Yalın fiil alanlar: {{Why don't you look ...?}} · {{You could always ask ...}} · {{Make sure you listen ...}}",
+  "{{do sure}} değil, {{make sure}}.",
+  "Cevaplar: {{Seriously?}} · {{Tell me about it!}} · {{I'll give it a shot.}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{Tell me about it!}} 'Bana anlat' mı demek?",
+   "cevap": "Hayır! 'Kime diyorsun, ne demek istediğini çok iyi biliyorum' demek. Nicole de sınav stresini çok iyi biliyor. (SB s. 52)"
+  },
+  {
+   "soru": "Forumda tavsiye yazarken neler olmalı?",
+   "cevap": "Kitaptaki kontrol listesi: bir selamlama, nedenleriyle birlikte tavsiye ve samimi (resmî olmayan) bir dil. (SB s. 53)"
+  },
+  {
+   "soru": "{{How about}}'dan sonra neden {{-ing}} geliyor?",
+   "cevap": "Kalıp böyle: kitaptaki kutuda {{How about ... (+ -ing)?}} yazıyor. {{How about going jogging?}} (SB s. 52)"
+  },
+  {
+   "soru": "Kitaptaki Beatriz hangi hataları yapıyor?",
+   "cevap": "Örneğin {{many time}} ({{much time}} olmalı), {{tryed}} ({{tried}}), {{do sure}} ({{make sure}}), {{much photos}} ({{many photos}}). (SB s. 57)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Arkadaşın diyor ki: {{I want to make new friends, but I'm too shy.}} Ona İngilizce 1–2 tavsiye yaz.",
+   "ornekCevap": "Why don't you join a sports club? You could always talk to one new person every day.",
+   "anahtarlar": [
+    "about",
+    "why",
+    "could",
+    "tried",
+    "recommend",
+    "sure",
+    "should"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Why don't you look online?",
+    "Why do you look online?",
+    "Why don't you go online?"
+   ],
+   "dogru": 0,
+   "ipucu": "{{don't}} var mı? Fiil {{look}} mu {{go}} mu?",
+   "aciklama": "Duyduğun cümle {{Why don't you look online?}} (SB s. 53)",
+   "dinle": "Why don't you look online?",
+   "kavram": "Why don't you …?"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Make sure you listen to something loud.",
+    "Make sure you listen to something gentle.",
+    "Be sure you listen to something gentle."
+   ],
+   "dogru": 1,
+   "ipucu": "Başta {{Make}} mi {{Be}} mi? Sonda {{gentle}} mı {{loud}} mı?",
+   "aciklama": "Duyduğun cümle {{Make sure you listen to something gentle.}} (SB s. 52)",
+   "dinle": "Make sure you listen to something gentle.",
+   "kavram": "Make sure you …"
+  },
+  {
+   "soru": "Robby: {{Jogging isn't your thing? You could just ___ for a walk.}}",
+   "secenekler": [
+    "going",
+    "go",
+    "to go"
+   ],
+   "dogru": 1,
+   "ipucu": "{{You could}}'dan sonra fiil yalın.",
+   "aciklama": "{{You could just go for a walk.}} (SB s. 52)",
+   "kavram": "You could always/just …"
+  },
+  {
+   "soru": "Arkadaşın {{I'm going to try it.}} demek istiyor. Hangisini söyler?",
+   "secenekler": [
+    "Seriously?",
+    "Tell me about it!",
+    "I'll give it a shot."
+   ],
+   "dogru": 2,
+   "ipucu": "'Deneyeceğim' anlamına gelen kalıp.",
+   "aciklama": "{{I'll give it a shot.}}: Bir deneyeceğim. (SB s. 52)",
+   "kavram": "Have you tried + -ing?",
+   "yardim": {
+    "hatirla": "Günlük dil: {{Seriously?}} ciddi misin · {{Tell me about it!}} kime diyorsun · {{I'll give it a shot.}} bir deneyeceğim · {{… isn't really my thing}} pek bana göre değil.",
+    "adimlar": [
+     "'Deneyeceğim' hangi kalıp?",
+     "İçinde {{give}} geçen kalıbı düşün."
+    ]
+   }
+  },
+  {
+   "soru": "{{I can recommend ___ a therapy dog.}}",
+   "secenekler": [
+    "to try",
+    "try",
+    "trying"
+   ],
+   "dogru": 2,
+   "ipucu": "{{recommend}}'dan sonra fiil {{-ing}} alır.",
+   "aciklama": "{{I can recommend trying a therapy dog.}} (WB s. 37)",
+   "kavram": "I recommend + -ing"
+  },
+  {
+   "soru": "{{Have you ever tried ___ with a cat when you're stressed?}}",
+   "secenekler": [
+    "sitting",
+    "sit",
+    "sat"
+   ],
+   "dogru": 0,
+   "ipucu": "{{Have you tried}} + fiil{{-ing}}.",
+   "aciklama": "{{Have you ever tried sitting with a cat?}} (WB s. 37)",
+   "kavram": "Have you tried + -ing?"
+  },
+  {
+   "soru": "Hangi kalıptan sonra fiil {{-ing}} alır?",
+   "secenekler": [
+    "Why don't you …?",
+    "How about …?",
+    "Make sure you …"
+   ],
+   "dogru": 1,
+   "ipucu": "Robby'nin koşu önerisini hatırla: {{How about going jogging?}}",
+   "aciklama": "{{How about}} + {{-ing}}. (SB s. 52)",
+   "kavram": "How about + -ing?"
+  },
+  {
+   "soru": "Forum: {{___ you look online for a therapy pet centre near you?}}",
+   "secenekler": [
+    "Why don't",
+    "Why not",
+    "How about"
+   ],
+   "dogru": 0,
+   "ipucu": "Boşluktan sonra {{you look}} geliyor: kibar öneri.",
+   "aciklama": "{{Why don't you look online ...?}} (WB s. 37)",
+   "kavram": "Why don't you …?"
+  },
+  {
+   "soru": "Brightongirl: {{You could always ask your mum or dad to help you.}} Ne demek?",
+   "secenekler": [
+    "Annene ya da babana hep yardım etmelisin.",
+    "Annenden ya da babandan yardım isteyebilirsin.",
+    "Annen ya da baban hep yardım ister."
+   ],
+   "dogru": 1,
+   "ipucu": "{{You could}}: … yapabilirsin. {{ask ... to help you}}: sana yardım etmelerini istemek.",
+   "aciklama": "Annenden ya da babandan yardım isteyebilirsin. (SB s. 53)",
+   "kavram": "You could always/just …"
+  },
+  {
+   "soru": "{{Tomorrow, ___ sure you don't post more than 200 photos.}}",
+   "secenekler": [
+    "make",
+    "do",
+    "be"
+   ],
+   "dogru": 0,
+   "ipucu": "Beatriz'in hatasını hatırla: {{do sure}} değil.",
+   "aciklama": "{{make sure}}. (SB s. 57)",
+   "kavram": "Make sure you …"
+  }
+ ]
+}

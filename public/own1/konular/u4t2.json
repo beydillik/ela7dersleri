@@ -1,0 +1,235 @@
+{
+ "id": "u4t2",
+ "tur": "tarama",
+ "unite": "Unit 4: Healthy body, healthy mind",
+ "baslik": "Ara Durak 2: Beslenme ve tavsiye",
+ "sayfalar": "Konu 4–6 · SB s. 50–57, 121, 131 · WB s. 35–39, 94–95, 108",
+ "giris": "Üç konu daha bitti; kısa bir tekrar molası. Önce kartlara bakmadan hatırlamaya çalış. Sonra karışık soruları çöz. Not yok, sadece tekrar.",
+ "buyukResim": "Sağlıklı beslenmenin kelimelerini öğrendin. {{should}}, {{shouldn't}} ve tavsiye kalıplarıyla bunları birine önerebilirsin: {{You should eat a balanced diet.}} {{Why don't you eat more fruit?}}",
+ "kapsar": [
+  "u4k4",
+  "u4k5",
+  "u4k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u4k4",
+   "maddeler": [
+    "{{carbohydrates}} enerji · {{protein}} büyüme ve güç · {{fat}} yağ.",
+    "{{fibre}} lif · {{vitamins}} vitaminler · {{dairy products}} süt ürünleri.",
+    "{{calories}} besindeki enerji · {{nutrition}} beslenme · {{a balanced diet}} dengeli beslenme."
+   ]
+  },
+  {
+   "konu": "u4k5",
+   "maddeler": [
+    "{{should}} + V1: -meli · {{shouldn't}} + V1: -memeli.",
+    "{{should}}'dan sonra {{to}} yok · {{ought to}}'da {{to}} hiç düşmez.",
+    "Soru: {{Should I ...?}} · {{What should I do?}}"
+   ]
+  },
+  {
+   "konu": "u4k6",
+   "maddeler": [
+    "{{-ing}} alanlar: {{How about ...?}} · {{Have you tried ...?}} · {{I recommend ...}}",
+    "Yalın fiil alanlar: {{Why don't you ...?}} · {{You could always ...}} · {{Make sure you ...}}",
+    "Cevaplar: {{Seriously?}} · {{Tell me about it!}} · {{I'll give it a shot.}}"
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Besin mi, should kalıbı mı, öneri kalıbı mı?",
+   "kutular": [
+    {
+     "etiket": "Besin (Konu 4)",
+     "uyeler": [
+      "carbohydrates",
+      "protein",
+      "vitamins",
+      "fibre"
+     ]
+    },
+    {
+     "etiket": "should kalıbı (Konu 5)",
+     "uyeler": [
+      "should",
+      "shouldn't",
+      "ought to"
+     ]
+    },
+    {
+     "etiket": "Öneri kalıbı (Konu 6)",
+     "uyeler": [
+      "How about + -ing?",
+      "Why don't you …?",
+      "I recommend + -ing"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "You should eat a balanced diet.",
+    "You shouldn't eat a balanced diet.",
+    "You should eat a dairy product."
+   ],
+   "dogru": 0,
+   "ipucu": "{{should}} mı {{shouldn't}} mı? Sondaki iki kelimeye dikkat et.",
+   "aciklama": "Duyduğun cümle {{You should eat a balanced diet.}}: dengeli beslenmelisin.",
+   "dinle": "You should eat a balanced diet.",
+   "kaynak": [
+    {
+     "konu": "u4k5",
+     "kavram": "should"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "a balanced diet"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Why do you eat more fruit?",
+    "Why don't you eat more fruit?",
+    "Why don't you eat more fat?"
+   ],
+   "dogru": 1,
+   "ipucu": "{{don't}} var mı? Son kelime {{fruit}} mü {{fat}} mı?",
+   "aciklama": "Duyduğun cümle {{Why don't you eat more fruit?}}: neden daha çok meyve yemiyorsun?",
+   "dinle": "Why don't you eat more fruit?",
+   "kaynak": [
+    {
+     "konu": "u4k6",
+     "kavram": "Why don't you …?"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "vitamins"
+    }
+   ]
+  },
+  {
+   "soru": "{{A balanced diet ___ to include some fat.}}",
+   "secenekler": [
+    "should",
+    "ought",
+    "shouldn't"
+   ],
+   "dogru": 1,
+   "ipucu": "Boşluktan sonra {{to}} var.",
+   "aciklama": "{{A balanced diet ought to include some fat.}} (SB s. 51)",
+   "kaynak": [
+    {
+     "konu": "u4k5",
+     "kavram": "ought to"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "fat"
+    }
+   ]
+  },
+  {
+   "soru": "Arkadaşın sık sık hasta oluyor. Hangisi iyi bir tavsiye?",
+   "secenekler": [
+    "You shouldn't eat any fruit.",
+    "You should eat lots of crisps.",
+    "You should get more vitamins."
+   ],
+   "dogru": 2,
+   "ipucu": "Kitapta sık hasta olan Ben'e neyin gerektiği söyleniyordu?",
+   "aciklama": "{{Ben often seems to get ill. I think he needs more vitamins.}} (SB s. 131)",
+   "kaynak": [
+    {
+     "konu": "u4k5",
+     "kavram": "should"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "vitamins"
+    }
+   ]
+  },
+  {
+   "soru": "{{You shouldn't eat too much fat. How about ___ salads?}}",
+   "secenekler": [
+    "eat",
+    "eating",
+    "to eat"
+   ],
+   "dogru": 1,
+   "ipucu": "{{How about}}'dan sonra fiil nasıl gelir?",
+   "aciklama": "{{How about}} + {{-ing}}: {{How about eating salads?}} (SB s. 52)",
+   "yardim": {
+    "adimlar": [
+     "Boşluk hangi kalıptan sonra geliyor?",
+     "{{How about}}'dan sonra fiil {{-ing}} mi alır, yalın mı kalır?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k5",
+     "kavram": "shouldn't"
+    },
+    {
+     "konu": "u4k6",
+     "kavram": "How about + -ing?"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "fat"
+    }
+   ]
+  },
+  {
+   "soru": "Maratona hazırlanan bir koşucuya hangisi doğru tavsiye?",
+   "secenekler": [
+    "You ought eat more calories.",
+    "You oughts to eat more calories.",
+    "You ought to eat more calories."
+   ],
+   "dogru": 2,
+   "ipucu": "{{ought}}'tan sonra {{to}} düşmez; {{ought}} değişmez.",
+   "aciklama": "{{You ought to eat more calories.}} Çok antrenman daha çok kalori ister. (SB s. 131)",
+   "kaynak": [
+    {
+     "konu": "u4k5",
+     "kavram": "ought to"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "calories"
+    }
+   ]
+  },
+  {
+   "soru": "Okuma: {{There is too much fast food in the canteen.}} Rapordaki öneri hangisi?",
+   "secenekler": [
+    "The canteen should offer healthy food, like salads.",
+    "The canteen should sell more fast food.",
+    "The canteen shouldn't sell salads."
+   ],
+   "dogru": 0,
+   "ipucu": "Raporun {{Our suggestions}} bölümünü hatırla.",
+   "aciklama": "{{It should offer healthy food, like salads.}} (SB s. 54)",
+   "kaynak": [
+    {
+     "konu": "u4k5",
+     "kavram": "should"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "a balanced diet"
+    }
+   ]
+  }
+ ]
+}

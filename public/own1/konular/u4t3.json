@@ -1,0 +1,281 @@
+{
+ "id": "u4t3",
+ "tur": "tarama",
+ "unite": "Unit 4: Healthy body, healthy mind",
+ "baslik": "Ünite Sonu Taraması: Unit 4",
+ "sayfalar": "Konu 1–6 · SB s. 46–57, 121, 131 · WB s. 32–39, 94–95, 108",
+ "giris": "Unit 4 bitti, tebrikler! Bu son taramada altı konunun hepsi var. Önce hatırla, sonra karışık soruları çöz. Not yok; neyi tekrar etmen gerektiğini birlikte görelim.",
+ "buyukResim": "Sağlıklı beden: hastalık, spor ve beslenme kelimeleri. Sağlıklı zihin: stres ve rahatlama. Miktar kalıplarıyla ne kadar olduğunu, {{should}} ve öneri kalıplarıyla ne yapılması gerektiğini söylüyorsun: {{You shouldn't eat too many snacks. Why don't you go jogging?}}",
+ "kapsar": [
+  "u4k1",
+  "u4k2",
+  "u4k3",
+  "u4k4",
+  "u4k5",
+  "u4k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u4k1",
+   "maddeler": [
+    "{{get ill}} hasta olmak ↔ {{get better}} iyileşmek.",
+    "{{cough}} öksürmek · {{sneeze}} hapşırmak · {{have a fever}} ateşi olmak.",
+    "{{get stressed}} stres olmak."
+   ]
+  },
+  {
+   "konu": "u4k2",
+   "maddeler": [
+    "Spordan önce {{warm up}}: ısın.",
+    "{{train}} antrenman · {{work out}} egzersiz · {{go jogging}} koşuya çıkmak · {{sweat}} terlemek.",
+    "{{relax}} rahatla · {{get enough sleep}} yeterince uyu."
+   ]
+  },
+  {
+   "konu": "u4k3",
+   "maddeler": [
+    "Sayılabilen: {{a few}}, {{too many}} · Sayılamayan: {{a little}}, {{too much}}.",
+    "{{too}} + sıfat: {{too long}} · sıfat + {{enough}}: {{old enough}} · {{enough}} + isim: {{enough chairs}}.",
+    "{{too}} ≠ {{very}}: {{I'm very happy.}}"
+   ]
+  },
+  {
+   "konu": "u4k4",
+   "maddeler": [
+    "{{carbohydrates}} enerji · {{protein}} büyüme ve güç · {{fat}} yağ.",
+    "{{fibre}} lif · {{vitamins}} vitaminler · {{dairy products}} süt ürünleri.",
+    "{{calories}} besindeki enerji · {{nutrition}} beslenme · {{a balanced diet}} dengeli beslenme."
+   ]
+  },
+  {
+   "konu": "u4k5",
+   "maddeler": [
+    "{{should}} + V1: -meli · {{shouldn't}} + V1: -memeli.",
+    "{{should}}'dan sonra {{to}} yok · {{ought to}}'da {{to}} hiç düşmez.",
+    "Soru: {{Should I ...?}} · {{What should I do?}}"
+   ]
+  },
+  {
+   "konu": "u4k6",
+   "maddeler": [
+    "{{-ing}} alanlar: {{How about ...?}} · {{Have you tried ...?}} · {{I recommend ...}}",
+    "Yalın fiil alanlar: {{Why don't you ...?}} · {{You could always ...}} · {{Make sure you ...}}",
+    "Cevaplar: {{Seriously?}} · {{Tell me about it!}} · {{I'll give it a shot.}}"
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Hangi konudan?",
+   "kutular": [
+    {
+     "etiket": "Hastalık",
+     "uyeler": [
+      "cough",
+      "sneeze",
+      "have a fever"
+     ]
+    },
+    {
+     "etiket": "Spor",
+     "uyeler": [
+      "warm up",
+      "work out",
+      "go jogging"
+     ]
+    },
+    {
+     "etiket": "Beslenme",
+     "uyeler": [
+      "protein",
+      "vitamins",
+      "fibre"
+     ]
+    },
+    {
+     "etiket": "Tavsiye",
+     "uyeler": [
+      "should",
+      "shouldn't",
+      "How about + -ing?"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "You should warm up before you go jogging.",
+    "You should work out before you go jogging.",
+    "You shouldn't warm up before you go jogging."
+   ],
+   "dogru": 0,
+   "ipucu": "{{warm up}} mı {{work out}} mı? {{should}} mı {{shouldn't}} mı?",
+   "aciklama": "Duyduğun cümle {{You should warm up before you go jogging.}} Spordan önce ısınmalısın.",
+   "dinle": "You should warm up before you go jogging.",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "warm up"
+    },
+    {
+     "konu": "u4k5",
+     "kavram": "should"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "We shouldn't eat too much bad carbohydrates.",
+    "We shouldn't eat too many bad carbohydrates.",
+    "We should eat too many bad carbohydrates."
+   ],
+   "dogru": 1,
+   "ipucu": "{{too many}} mi {{too much}} mı? {{shouldn't}} var mı?",
+   "aciklama": "Duyduğun cümle {{We shouldn't eat too many bad carbohydrates.}} (SB s. 51)",
+   "dinle": "We shouldn't eat too many bad carbohydrates.",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "too many"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "carbohydrates"
+    },
+    {
+     "konu": "u4k5",
+     "kavram": "shouldn't"
+    }
+   ]
+  },
+  {
+   "soru": "{{I have a fever.}} — {{You ___ stay in bed.}}",
+   "secenekler": [
+    "shouldn't",
+    "ought",
+    "should"
+   ],
+   "dogru": 2,
+   "ipucu": "Ateşin varsa yatakta kalmak iyi bir fikir mi?",
+   "aciklama": "{{You should stay in bed.}} (SB s. 51)",
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "have a fever"
+    },
+    {
+     "konu": "u4k5",
+     "kavram": "should"
+    }
+   ]
+  },
+  {
+   "soru": "Nicole: {{I'm really stressed. I have too ___ exams and not ___ time to study.}}",
+   "secenekler": [
+    "many / enough",
+    "much / enough",
+    "many / a few"
+   ],
+   "dogru": 0,
+   "ipucu": "{{exams}} sayılabilir. 'Yeterince vakit yok' nasıl denir?",
+   "aciklama": "{{too many exams and not enough time}} (SB s. 52)",
+   "yardim": {
+    "adimlar": [
+     "İlk boşluk: {{exams}} sayılabilir mi?",
+     "İkinci boşluk: 'yeterli değil' hangi kelimeyle?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "get stressed"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "too many"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "enough + noun"
+    }
+   ]
+  },
+  {
+   "soru": "Arkadaşın çok stresli. Hangisi doğru bir öneri?",
+   "secenekler": [
+    "How about go jogging?",
+    "How about going jogging?",
+    "How about to go jogging?"
+   ],
+   "dogru": 1,
+   "ipucu": "{{How about}} + fiil{{-ing}}.",
+   "aciklama": "{{How about going jogging?}} (SB s. 52)",
+   "kaynak": [
+    {
+     "konu": "u4k6",
+     "kavram": "How about + -ing?"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "go jogging"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "get stressed"
+    }
+   ]
+  },
+  {
+   "soru": "{{You need to eat more ___ if you train a lot.}}",
+   "secenekler": [
+    "fibre",
+    "sleep",
+    "calories"
+   ],
+   "dogru": 2,
+   "ipucu": "Antrenman enerji ister; enerjiyi neyle sayarız?",
+   "aciklama": "{{You need to eat more calories if you train a lot.}} (SB s. 131)",
+   "kaynak": [
+    {
+     "konu": "u4k4",
+     "kavram": "calories"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "train"
+    }
+   ]
+  },
+  {
+   "soru": "{{Have you tried ___ a little yoga? It helps you relax.}}",
+   "secenekler": [
+    "do",
+    "doing",
+    "to do"
+   ],
+   "dogru": 1,
+   "ipucu": "{{Have you tried}}'dan sonra fiil nasıl gelir?",
+   "aciklama": "{{Have you tried}} + {{-ing}}: {{tried doing}}. {{yoga}} sayılamaz: {{a little yoga}}. (WB s. 37)",
+   "kaynak": [
+    {
+     "konu": "u4k6",
+     "kavram": "Have you tried + -ing?"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "a little"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "relax"
+    }
+   ]
+  }
+ ]
+}

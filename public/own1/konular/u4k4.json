@@ -1,0 +1,561 @@
+{
+ "id": "u4k4",
+ "unite": "Unit 4: Healthy body, healthy mind",
+ "baslik": "Healthy eating (protein, vitamins, a balanced diet…)",
+ "sayfalar": "SB s. 50, 121, 131 · WB s. 35, 38",
+ "giris": "Bu konuda sağlıklı beslenmenin 9 kelimesini öğreneceğiz. İyi haber: bilimsel kelimelerin çoğu Türkçeye benzer! {{protein}} protein, {{vitamins}} vitamin. Kelimeler çok olduğu için yavaş git. Her kelimeden sonra kısa bir soru var.",
+ "kavramlar": [
+  {
+   "ad": "carbohydrates",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 76 q0 -40 38 -40 q38 0 38 40 v20 h-76 z' fill='#e0a458'/><path d='M30 70 q0 -26 30 -26 q30 0 30 26' fill='#f4c27a'/><path d='M44 52 l8 10 M60 48 l0 12 M76 52 l-8 10' stroke='#c58b2a' stroke-width='3' stroke-linecap='round'/><text x='60' y='112' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ffd166'>energy</text></svg>",
+   "aciklama": "Karbonhidratlar: vücudumuza enerjinin çoğunu veren besinler. Ekmek ve makarnada bol bulunur.",
+   "ek": "Kitap: {{We get most of our energy from these. You find them in bread and pasta.}}",
+   "akilda": "karbonhidratlar (enerji)",
+   "ornek": "Carbohydrates give us the energy we need to move.",
+   "ornekTr": "Karbonhidratlar bize hareket etmek için gereken enerjiyi verir. (WB s. 38)",
+   "soru": {
+    "soru": "Ekmek ve makarnada bol olan, bize enerjinin çoğunu veren hangisi?",
+    "secenekler": [
+     "carbohydrates",
+     "vitamins",
+     "fibre"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki ekmeği ve {{energy}} yazısını hatırla.",
+    "aciklama": "Enerjinin çoğu: {{carbohydrates}}. (WB s. 35)"
+   }
+  },
+  {
+   "ad": "protein",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='42' cy='66' rx='22' ry='28' fill='#ffffff'/><circle cx='42' cy='70' r='11' fill='#ffd166'/><path d='M70 66 q16 -18 34 0 q-18 18 -34 0 z' fill='#8ecae6'/><polygon points='70,66 62,56 62,76' fill='#8ecae6'/><circle cx='96' cy='63' r='2.5' fill='#1b2340'/><text x='60' y='112' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#e76f51'>strong</text></svg>",
+   "aciklama": "Protein: vücudun büyümesine, sağlıklı ve güçlü olmasına yardım eden besin.",
+   "ek": "Kelime Türkçede de aynı: protein. Böyle benzeyen kelimelere {{cognate}} denir.",
+   "akilda": "protein (büyüme, güç)",
+   "ornek": "Protein helps our bodies to grow and be healthy and strong.",
+   "ornekTr": "Protein vücudumuzun büyümesine, sağlıklı ve güçlü olmasına yardım eder. (WB s. 38)",
+   "soru": {
+    "soru": "Vücudun büyümesine ve güçlü olmasına yardım eden hangisi?",
+    "secenekler": [
+     "fat",
+     "protein",
+     "calories"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki {{strong}} yazısını hatırla.",
+    "aciklama": "Büyümek ve güç: {{protein}}. (WB s. 38)"
+   }
+  },
+  {
+   "ad": "fat",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='18,84 96,84 96,48' fill='#ffd166'/><circle cx='62' cy='74' r='5' fill='#e0b440'/><circle cx='82' cy='64' r='4' fill='#e0b440'/><circle cx='84' cy='78' r='3' fill='#e0b440'/><rect x='22' y='30' width='34' height='16' rx='3' fill='#7a4a2a'/><line x1='33' y1='30' x2='33' y2='46' stroke='#5a341c' stroke-width='2'/><line x1='45' y1='30' x2='45' y2='46' stroke='#5a341c' stroke-width='2'/></svg>",
+   "aciklama": "Yağ. Peynir, tereyağı ve çikolatada çok bulunur.",
+   "ek": "Kitap: dengeli bir beslenmede biraz yağ da olmalı: {{A balanced diet ought to include some fat.}}",
+   "akilda": "yağ",
+   "ornek": "Hamburgers, ice cream and chocolate have a lot of fat in them.",
+   "ornekTr": "Hamburger, dondurma ve çikolatada çok yağ vardır. (WB s. 38)",
+   "soru": {
+    "soru": "Peynir, tereyağı ve çikolatada bol olan hangisi?",
+    "secenekler": [
+     "fibre",
+     "nutrition",
+     "fat"
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki peynir ve çikolatayı hatırla.",
+    "aciklama": "{{There is a lot of this in cheese and chocolate.}}: {{fat}}. (WB s. 35)"
+   }
+  },
+  {
+   "ad": "fibre",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='60' y1='104' x2='60' y2='30' stroke='#c9a227' stroke-width='4'/><ellipse cx='68' cy='36' rx='8' ry='4' fill='#e9c46a' transform='rotate(30 68 36)'/><ellipse cx='52' cy='46' rx='8' ry='4' fill='#e9c46a' transform='rotate(-30 52 46)'/><ellipse cx='68' cy='56' rx='8' ry='4' fill='#e9c46a' transform='rotate(30 68 56)'/><ellipse cx='52' cy='66' rx='8' ry='4' fill='#e9c46a' transform='rotate(-30 52 66)'/><ellipse cx='68' cy='76' rx='8' ry='4' fill='#e9c46a' transform='rotate(30 68 76)'/><ellipse cx='52' cy='86' rx='8' ry='4' fill='#e9c46a' transform='rotate(-30 52 86)'/><path d='M90 50 q10 10 0 20 q10 10 0 20' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round'/><polygon points='84,92 96,92 90,100' fill='#3cc47c'/></svg>",
+   "aciklama": "Lif: yiyeceklerin vücudumuzdan geçmesine yardım eden besin. Midemiz için iyidir.",
+   "ek": "Kitap: {{Lots of fibre is good for the stomach and travels through the body quickly.}}",
+   "akilda": "lif (sindirim)",
+   "ornek": "I try to eat a balanced diet with plenty of protein and fibre.",
+   "ornekTr": "Bol protein ve lif içeren dengeli bir beslenmeye çalışırım. (SB s. 131)",
+   "soru": {
+    "soru": "Yiyeceklerin vücudumuzdan geçmesine yardım eden hangisi?",
+    "secenekler": [
+     "fibre",
+     "protein",
+     "vitamins"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki aşağı inen yeşil oku hatırla.",
+    "aciklama": "{{This helps food pass through the body.}}: {{fibre}}. (WB s. 35)"
+   }
+  },
+  {
+   "ad": "vitamins",
+   "renk": "#ff8c42",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='44' cy='70' r='26' fill='#ff8c42'/><circle cx='44' cy='70' r='20' fill='#ffb070'/><line x1='44' y1='70' x2='64.0' y2='70.0' stroke='#ff8c42' stroke-width='2'/><line x1='44' y1='70' x2='54.0' y2='87.3' stroke='#ff8c42' stroke-width='2'/><line x1='44' y1='70' x2='34.0' y2='87.3' stroke='#ff8c42' stroke-width='2'/><line x1='44' y1='70' x2='24.0' y2='70.0' stroke='#ff8c42' stroke-width='2'/><line x1='44' y1='70' x2='34.0' y2='52.7' stroke='#ff8c42' stroke-width='2'/><line x1='44' y1='70' x2='54.0' y2='52.7' stroke='#ff8c42' stroke-width='2'/><text x='44' y='38' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ff8c42'>C</text><circle cx='92' cy='44' r='13' fill='#ffd166'/><line x1='109.0' y1='44.0' x2='115.0' y2='44.0' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><line x1='104.0' y1='56.0' x2='108.3' y2='60.3' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><line x1='92.0' y1='61.0' x2='92.0' y2='67.0' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><line x1='80.0' y1='56.0' x2='75.8' y2='60.3' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><line x1='75.0' y1='44.0' x2='69.0' y2='44.0' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><line x1='80.0' y1='32.0' x2='75.7' y2='27.8' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><line x1='92.0' y1='27.0' x2='91.9' y2='21.0' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><line x1='104.0' y1='31.9' x2='108.2' y2='27.7' stroke='#ffd166' stroke-width='3' stroke-linecap='round'/><text x='92' y='49' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>D</text></svg>",
+   "aciklama": "Vitaminler: meyveden (C vitamini) ya da güneş ışığından (D vitamini) aldığımız doğal maddeler.",
+   "ek": "Kitap: {{Fruit and vegetables contain a lot of vitamins A and C.}} {{Bananas have got a lot of vitamins.}}",
+   "akilda": "vitaminler",
+   "ornek": "Ben often seems to get ill. I think he needs more vitamins.",
+   "ornekTr": "Ben sık sık hasta oluyor gibi. Bence daha çok vitamine ihtiyacı var. (SB s. 131)",
+   "soru": {
+    "soru": "Meyveden (C) ve güneş ışığından (D) aldığımız doğal maddeler hangisi?",
+    "secenekler": [
+     "calories",
+     "vitamins",
+     "fat"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki portakal ve güneşi hatırla.",
+    "aciklama": "{{We get these natural substances from fruit (C) or sunlight (D).}}: {{vitamins}}. (WB s. 35)"
+   }
+  },
+  {
+   "ad": "dairy products",
+   "renk": "#8ecae6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='40' width='32' height='60' rx='6' fill='#ffffff'/><rect x='28' y='22' width='20' height='20' rx='3' fill='#ffffff'/><rect x='26' y='18' width='24' height='8' rx='2' fill='#8ecae6'/><text x='38' y='76' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>MILK</text><polygon points='64,96 108,96 108,66' fill='#ffd166'/><circle cx='96' cy='86' r='4' fill='#e0b440'/></svg>",
+   "aciklama": "Süt ürünleri: genelde sütten yapılan yiyecekler. Süt, peynir, yoğurt, tereyağı gibi.",
+   "ek": "Kitap: {{These foods usually come from milk.}}",
+   "akilda": "süt ürünleri",
+   "ornek": "Her doctor told her not to eat dairy products such as milk or cheese.",
+   "ornekTr": "Doktoru ona süt ya da peynir gibi süt ürünleri yememesini söyledi. (SB s. 131)",
+   "soru": {
+    "soru": "Süt ve peynir gibi sütten yapılan yiyecekler hangisi?",
+    "secenekler": [
+     "carbohydrates",
+     "fibre",
+     "dairy products"
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki süt şişesini ve peyniri hatırla.",
+    "aciklama": "{{These foods usually come from milk.}}: {{dairy products}}. (WB s. 35)"
+   }
+  },
+  {
+   "ad": "calories",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 18 q26 30 18 56 q-4 18 -18 26 q-14 -8 -18 -26 q-8 -26 18 -56 z' fill='#e63946'/><path d='M60 52 q12 16 6 32 q-2 8 -6 10 q-4 -2 -6 -10 q-6 -16 6 -32 z' fill='#ffd166'/><text x='60' y='114' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ffffff'>kcal</text></svg>",
+   "aciklama": "Kaloriler: bir yiyecekte ne kadar enerji olduğunu gösteren sayı.",
+   "ek": "Kitap: {{We count these to find out how much energy there is in our food.}} Çok antrenman yapan daha çok kaloriye ihtiyaç duyar.",
+   "akilda": "kalori (besindeki enerji)",
+   "ornek": "You need to eat more calories if you train a lot.",
+   "ornekTr": "Çok antrenman yapıyorsan daha çok kalori yemen gerekir. (SB s. 131)",
+   "soru": {
+    "soru": "Besinde ne kadar enerji olduğunu bulmak için saydığımız şey hangisi?",
+    "secenekler": [
+     "calories",
+     "vitamins",
+     "protein"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki alevi ve {{kcal}} yazısını hatırla.",
+    "aciklama": "{{We count these}}: {{calories}}. (WB s. 35)"
+   }
+  },
+  {
+   "ad": "nutrition",
+   "renk": "#b388eb",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='50' cy='60' r='24' fill='#e63946'/><path d='M50 36 q4 -10 12 -12' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round'/><circle cx='70' cy='66' r='22' fill='none' stroke='#ffffff' stroke-width='6'/><line x1='86' y1='82' x2='104' y2='100' stroke='#ffffff' stroke-width='8' stroke-linecap='round'/></svg>",
+   "aciklama": "Beslenme: yediğimiz yiyecekler ve vücudumuzun onları nasıl kullandığı. Bilim olarak da çalışılır.",
+   "ek": "Kitap: {{Nutrition is the food we eat and how our body uses it.}}",
+   "akilda": "beslenme",
+   "ornek": "Good nutrition is important if you are training for a marathon.",
+   "ornekTr": "Bir maratona hazırlanıyorsan iyi beslenme önemlidir. (SB s. 131)",
+   "soru": {
+    "soru": "Yediğimiz yiyecekler ve vücudumuzun onları nasıl kullandığı:",
+    "secenekler": [
+     "fat",
+     "nutrition",
+     "a balanced diet"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki büyüteçle incelenen elmayı hatırla.",
+    "aciklama": "{{Nutrition is the food we eat and how our body uses it.}} (WB s. 38)"
+   }
+  },
+  {
+   "ad": "a balanced diet",
+   "renk": "#4cc9f0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='62' r='42' fill='#ffffff'/><path d='M60 62 L60 24 A38 38 0 0 1 96 50 Z' fill='#3cc47c'/><path d='M60 62 L96 50 A38 38 0 0 1 80 94 Z' fill='#f4a261'/><path d='M60 62 L80 94 A38 38 0 0 1 28 86 Z' fill='#e76f51'/><path d='M60 62 L28 86 A38 38 0 0 1 24 50 Z' fill='#8ecae6'/><path d='M60 62 L24 50 A38 38 0 0 1 60 24 Z' fill='#ffd166'/></svg>",
+   "aciklama": "Dengeli beslenme: birçok farklı yiyecek türünün iyi bir karışımı.",
+   "ek": "Kitap: {{A balanced diet is eating a good variety of healthy food.}} Karttaki tabak gibi: her gruptan biraz.",
+   "akilda": "dengeli beslenme",
+   "ornek": "I try to eat a balanced diet with plenty of protein and fibre.",
+   "ornekTr": "Bol protein ve lif içeren dengeli bir beslenmeye çalışırım. (SB s. 131)",
+   "soru": {
+    "soru": "Birçok farklı yiyecek türünün iyi bir karışımı:",
+    "secenekler": [
+     "nutrition",
+     "fibre",
+     "a balanced diet"
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki renkli tabağı hatırla.",
+    "aciklama": "{{A good mixture of many food types}}: {{a balanced diet}}. (WB s. 35)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "cognate",
+   "tr": "başka dildeki kelimeye benzeyen kelime"
+  },
+  {
+   "en": "energy",
+   "tr": "enerji"
+  },
+  {
+   "en": "calcium",
+   "tr": "kalsiyum",
+   "ornek": "We know that calcium is good for our bones.",
+   "ornekTr": "Kalsiyumun kemiklerimize iyi geldiğini biliyoruz. (WB s. 35)"
+  },
+  {
+   "en": "cereals",
+   "tr": "tahıllar, tahıl gevreği",
+   "ornek": "Do you know why cereals are good for you?",
+   "ornekTr": "Tahılların sana neden iyi geldiğini biliyor musun? (WB s. 35)"
+  },
+  {
+   "en": "healthy",
+   "tr": "sağlıklı"
+  },
+  {
+   "en": "stomach",
+   "tr": "mide"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Besin öğesi mi, yiyecek grubu mu, beslenme kavramı mı?",
+   "kutular": [
+    {
+     "etiket": "Besin öğesi",
+     "uyeler": [
+      "carbohydrates",
+      "protein",
+      "fat",
+      "fibre",
+      "vitamins"
+     ]
+    },
+    {
+     "etiket": "Yiyecek grubu",
+     "uyeler": [
+      "dairy products"
+     ]
+    },
+    {
+     "etiket": "Beslenme kavramı",
+     "uyeler": [
+      "calories",
+      "nutrition",
+      "a balanced diet"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Türkçeye benziyor mu? (cognate)",
+   "kutular": [
+    {
+     "etiket": "Türkçeye benziyor",
+     "uyeler": [
+      "protein",
+      "vitamins",
+      "calories",
+      "carbohydrates"
+     ]
+    },
+    {
+     "etiket": "Benzemiyor",
+     "uyeler": [
+      "fat",
+      "fibre",
+      "dairy products",
+      "nutrition",
+      "a balanced diet"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Bananas have got a lot of vitamins.",
+   "tr": "Muzda çok vitamin vardır. (SB s. 50)"
+  },
+  {
+   "en": "Carbohydrates give us the energy we need.",
+   "tr": "Karbonhidratlar bize gereken enerjiyi verir. (WB s. 38)"
+  },
+  {
+   "en": "Protein helps our bodies to grow.",
+   "tr": "Protein vücudumuzun büyümesine yardım eder. (WB s. 38)"
+  },
+  {
+   "en": "You need to eat more calories.",
+   "tr": "Daha çok kalori yemen gerekir. (SB s. 131)"
+  },
+  {
+   "en": "I think he needs more vitamins.",
+   "tr": "Bence daha çok vitamine ihtiyacı var. (SB s. 131)"
+  },
+  {
+   "en": "Good nutrition is important.",
+   "tr": "İyi beslenme önemlidir. (SB s. 131)"
+  },
+  {
+   "en": "Lots of fibre is good for the stomach.",
+   "tr": "Bol lif mide için iyidir. (WB s. 38)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Her doctor told her not to eat fibre such as milk or cheese.",
+   "yanlis": "fibre",
+   "secenekler": [
+    "dairy products",
+    "carbohydrates",
+    "vitamins"
+   ],
+   "dogru": 0,
+   "tr": "Doktoru ona süt ya da peynir gibi süt ürünleri yememesini söyledi.",
+   "aciklama": "Süt ve peynir: {{dairy products}}. (SB s. 131)"
+  },
+  {
+   "cumle": "We count vitamins to find out how much energy there is in our food.",
+   "yanlis": "vitamins",
+   "secenekler": [
+    "fibre",
+    "calories",
+    "protein"
+   ],
+   "dogru": 1,
+   "tr": "Besinimizde ne kadar enerji olduğunu bulmak için kalori sayarız.",
+   "aciklama": "Enerji sayısı: {{calories}}. (WB s. 35)"
+  },
+  {
+   "cumle": "Ben often gets ill. I think he needs more calories.",
+   "yanlis": "calories",
+   "secenekler": [
+    "fat",
+    "fibre",
+    "vitamins"
+   ],
+   "dogru": 2,
+   "tr": "Ben sık hasta oluyor. Bence daha çok vitamine ihtiyacı var.",
+   "aciklama": "Hastalığa karşı: {{vitamins}}. (SB s. 131)"
+  },
+  {
+   "cumle": "Protein helps our bodies to grow and be weak.",
+   "yanlis": "weak",
+   "secenekler": [
+    "strong",
+    "stressed",
+    "ill"
+   ],
+   "dogru": 0,
+   "tr": "Protein vücudumuzun büyümesine ve güçlü olmasına yardım eder.",
+   "aciklama": "Protein güç verir: {{strong}}. (WB s. 38)"
+  },
+  {
+   "cumle": "A balanced diet is eating only one type of healthy food.",
+   "yanlis": "only one type",
+   "secenekler": [
+    "too much",
+    "a good variety",
+    "a little"
+   ],
+   "dogru": 1,
+   "tr": "Dengeli beslenme, birçok farklı sağlıklı yiyecek yemektir.",
+   "aciklama": "Dengeli: {{a good variety of healthy food}}. (WB s. 38)"
+  },
+  {
+   "cumle": "Hamburgers, ice cream and chocolate have a lot of fibre in them.",
+   "yanlis": "fibre",
+   "secenekler": [
+    "fat",
+    "nutrition",
+    "vitamins"
+   ],
+   "dogru": 0,
+   "tr": "Hamburger, dondurma ve çikolatada çok yağ vardır.",
+   "aciklama": "Bunlarda çok {{fat}} var. (WB s. 38)"
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki {{Eatwell Plate}} (Sağlıklı Tabak) farklı yiyecek gruplarını tek bir tabakta gösteriyor. (SB s. 50)",
+  "Bilimsel kelimeler farklı dillerde çoğu zaman birbirine benzer. Bunlara {{cognates}} denir. Ama yazılışları ve okunuşları biraz farklı olabilir, dikkat! (SB s. 131)",
+  "C vitamini meyveden, D vitamini güneş ışığından gelir. (WB s. 35)"
+ ],
+ "akildaKalsin": [
+  "{{carbohydrates}} enerji · {{protein}} büyüme ve güç.",
+  "{{fat}} yağ (peynir, çikolata) · {{fibre}} lif (sindirim).",
+  "{{vitamins}} meyve ve sebzede · {{dairy products}} sütten yapılanlar.",
+  "{{calories}} besindeki enerji · {{nutrition}} beslenme.",
+  "{{a balanced diet}}: her gruptan dengeli."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Enerjimizin çoğunu nereden alırız?",
+   "cevap": "Karbonhidratlardan. Ekmek ve makarnada bol bulunur. (WB s. 35)"
+  },
+  {
+   "soru": "Kalori saymak iyi bir fikir mi?",
+   "cevap": "Kitaptaki profesörün tablosunda kalori saymak kötü fikirler arasında. Bol meyve ve sebze yemek ise iyi fikirler arasında. (SB s. 50)"
+  },
+  {
+   "soru": "Hangi kelimeler Türkçeye benziyor?",
+   "cevap": "{{protein}} protein, {{vitamins}} vitamin, {{calories}} kalori, {{carbohydrates}} karbonhidrat. Kitap bunlara {{cognates}} diyor. Ama yazılışları biraz farklı! (SB s. 50)"
+  },
+  {
+   "soru": "Çok spor yapan biri ne yemeli?",
+   "cevap": "Kitap: çok antrenman yapıyorsan daha çok kaloriye ihtiyacın var. Maratona hazırlanırken iyi beslenme de önemli. (SB s. 131)"
+  },
+  {
+   "soru": "{{dairy products}} hangileri?",
+   "cevap": "Sütten yapılan yiyecekler: süt, peynir gibi. {{such as milk or cheese}} (SB s. 131)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Dün ne yedin? Hangi yiyecekte ne var? İngilizce 1–2 cümle yaz. {{Yesterday I ate ... It has got a lot of ...}}",
+   "ornekCevap": "Yesterday I ate bread and cheese. Bread has got a lot of carbohydrates and cheese has got a lot of fat.",
+   "anahtarlar": [
+    "carbohydrate",
+    "protein",
+    "fat",
+    "fibre",
+    "vitamin",
+    "dairy",
+    "calorie",
+    "balanced"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "protein",
+    "fibre",
+    "fat"
+   ],
+   "dogru": 0,
+   "ipucu": "Türkçeye çok benzeyen bir kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{protein}}. (SB s. 50)",
+   "dinle": "protein",
+   "kavram": "protein"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "calories",
+    "carbohydrates",
+    "dairy products"
+   ],
+   "dogru": 2,
+   "ipucu": "İki kelimeli; sütle ilgili.",
+   "aciklama": "Duyduğun kelime {{dairy products}}: süt ürünleri. (SB s. 50)",
+   "dinle": "dairy products",
+   "kavram": "dairy products"
+  },
+  {
+   "soru": "{{We get most of our energy from these. You find them in bread and pasta.}}",
+   "secenekler": [
+    "vitamins",
+    "carbohydrates",
+    "fat"
+   ],
+   "dogru": 1,
+   "ipucu": "Ekmek ve makarna: enerji.",
+   "aciklama": "Enerjinin çoğu {{carbohydrates}}'tan. (WB s. 35)",
+   "kavram": "carbohydrates"
+  },
+  {
+   "soru": "{{There is a lot of this in cheese and chocolate.}}",
+   "secenekler": [
+    "fat",
+    "fibre",
+    "protein"
+   ],
+   "dogru": 0,
+   "ipucu": "Peynir ve çikolatada bol olan şey.",
+   "aciklama": "Peynir ve çikolata: {{fat}}. (WB s. 35)",
+   "kavram": "fat"
+  },
+  {
+   "soru": "{{This helps food pass through the body.}}",
+   "secenekler": [
+    "calories",
+    "protein",
+    "fibre"
+   ],
+   "dogru": 2,
+   "ipucu": "Sindirime yardım eden.",
+   "aciklama": "Yiyeceğin vücuttan geçmesine yardım eder: {{fibre}}. (WB s. 35)",
+   "kavram": "fibre"
+  },
+  {
+   "soru": "{{Fruit and vegetables contain a lot of ___ A and C.}}",
+   "secenekler": [
+    "vitamins",
+    "calories",
+    "dairy products"
+   ],
+   "dogru": 0,
+   "ipucu": "A ve C harfleriyle anılan şey.",
+   "aciklama": "{{vitamins A and C}}. (WB s. 38)",
+   "kavram": "vitamins"
+  },
+  {
+   "soru": "{{You need to eat more ___ if you train a lot.}}",
+   "secenekler": [
+    "fibre",
+    "calories",
+    "nutrition"
+   ],
+   "dogru": 1,
+   "ipucu": "Antrenman çok enerji ister. Enerjiyi hangisiyle sayarız?",
+   "aciklama": "Daha çok enerji: {{more calories}}. (SB s. 131)",
+   "kavram": "calories"
+  },
+  {
+   "soru": "{{Good ___ is important if you are training for a marathon.}}",
+   "secenekler": [
+    "fat",
+    "dairy products",
+    "nutrition"
+   ],
+   "dogru": 2,
+   "ipucu": "'İyi beslenme' önemli.",
+   "aciklama": "{{Good nutrition is important.}} (SB s. 131)",
+   "kavram": "nutrition"
+  },
+  {
+   "soru": "{{I try to eat ___ with plenty of protein and fibre.}}",
+   "secenekler": [
+    "a balanced diet",
+    "a dairy product",
+    "a calorie"
+   ],
+   "dogru": 0,
+   "ipucu": "Her gruptan biraz yemek.",
+   "aciklama": "{{a balanced diet with plenty of protein and fibre}}. (SB s. 131)",
+   "kavram": "a balanced diet"
+  },
+  {
+   "soru": "{{Protein helps our bodies to grow and be healthy and ___.}}",
+   "secenekler": [
+    "weak",
+    "strong",
+    "tired"
+   ],
+   "dogru": 1,
+   "ipucu": "Karttaki {{strong}} yazısını hatırla.",
+   "aciklama": "Protein güç verir: {{strong}}. (WB s. 38)",
+   "kavram": "protein"
+  }
+ ]
+}
