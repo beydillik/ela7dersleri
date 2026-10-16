@@ -564,10 +564,14 @@
     {
      "id": "u4k1",
      "baslik": "Yansıma Dönüşümü",
-     "sayfalar": "s. 201–210",
+     "sayfalar": "s. 202–205, 210",
      "kaynakSayfalar": [
       [
-       201,
+       202,
+       205
+      ],
+      [
+       210,
        210
       ]
      ],
@@ -575,11 +579,61 @@
     },
     {
      "id": "u4k2",
-     "baslik": "Orta Dikme ve Açıortay",
-     "sayfalar": "s. 211–217",
+     "baslik": "Simetri Doğrularını Bulma",
+     "sayfalar": "s. 205–209",
+     "kaynakSayfalar": [
+      [
+       205,
+       209
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4t1",
+     "tur": "tarama",
+     "baslik": "Ara Durak 1: Yansıma ve Simetri",
+     "sayfalar": "Tekrar: Konu 1–2",
+     "kaynakSayfalar": [
+      [
+       202,
+       210
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4k3",
+     "baslik": "Orta Dikme",
+     "sayfalar": "s. 211–213",
      "kaynakSayfalar": [
       [
        211,
+       213
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4k4",
+     "baslik": "Açıortay",
+     "sayfalar": "s. 213–215",
+     "kaynakSayfalar": [
+      [
+       213,
+       215
+      ]
+     ],
+     "hazir": false
+    },
+    {
+     "id": "u4t2",
+     "tur": "tarama",
+     "baslik": "Tema Sonu Taraması",
+     "sayfalar": "Tekrar: Konu 1–4",
+     "kaynakSayfalar": [
+      [
+       201,
        217
       ]
      ],
