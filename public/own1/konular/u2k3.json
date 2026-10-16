@@ -1,0 +1,865 @@
+{
+ "id": "u2k3",
+ "unite": "Unit 2: What is art?",
+ "baslik": "Present perfect (have/has + V3, ever, been/gone)",
+ "sayfalar": "SB s. 24–25, 119 · WB s. 17–18, 22, 90–91",
+ "giris": "Bu konuda yeni bir zaman öğreneceğiz: {{present perfect}}. Hayatımızda yaptığımız ya da hiç yapmadığımız şeyleri anlatır: {{I have seen}}, {{I haven't seen}}, {{Have you ever ...?}} Sonunda iki genç sanatçıyı anlatan bir dergi yazısı okuyacaksın.",
+ "kavramlar": [
+  {
+   "ad": "have / has + V3",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#f4f1e8'/><rect x='32' y='28' width='14' height='14' rx='3' fill='#3cc47c'/><path d='M35 35 l3 4 6 -8' stroke='#ffffff' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='52' y='32' width='36' height='6' rx='3' fill='#a3abc4'/><rect x='32' y='52' width='14' height='14' rx='3' fill='#3cc47c'/><path d='M35 59 l3 4 6 -8' stroke='#ffffff' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='52' y='56' width='36' height='6' rx='3' fill='#a3abc4'/><rect x='32' y='76' width='14' height='14' rx='3' fill='#3cc47c'/><path d='M35 83 l3 4 6 -8' stroke='#ffffff' stroke-width='3' fill='none' stroke-linecap='round'/><rect x='52' y='80' width='36' height='6' rx='3' fill='#a3abc4'/></svg>",
+   "aciklama": "Present perfect: geçmişte olan ama ne zaman olduğu söylenmeyen ya da önemli olmayan işleri anlatır.",
+   "ek": "{{I / You / We / They}} → {{have}} ({{'ve}}); {{He / She / It}} → {{has}} ({{'s}}). Örnek: {{He has visited the art exhibition.}} (WB s. 90)",
+   "akilda": "have/has + V3",
+   "ornek": "Fans have seen his creations at exhibitions.",
+   "ornekTr": "Hayranları onun eserlerini sergilerde gördüler. (SB s. 25)",
+   "formul": [
+    [
+     {
+      "t": "I / You / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "have",
+      "r": "yard",
+      "alt": "'ve"
+     },
+     {
+      "t": "seen",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     }
+    ],
+    [
+     {
+      "t": "He / She / It",
+      "r": "ozne"
+     },
+     {
+      "t": "has",
+      "r": "yard",
+      "alt": "'s"
+     },
+     {
+      "t": "seen",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{She ___ visited the gallery.}} Boşluğa hangisi gelir?",
+    "secenekler": [
+     "have",
+     "has",
+     "is"
+    ],
+    "dogru": 1,
+    "ipucu": "Formüle bak: {{She}} ile {{have}} mı, {{has}} mı?",
+    "aciklama": "{{He / She / It}} ile {{has}}: {{She has visited the gallery.}} (WB s. 90)"
+   }
+  },
+  {
+   "ad": "haven't / hasn't + V3",
+   "renk": "#e74c3c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#f4f1e8'/><rect x='32' y='28' width='14' height='14' rx='3' fill='#e74c3c'/><path d='M35 31 l8 8 M43 31 l-8 8' stroke='#ffffff' stroke-width='3' stroke-linecap='round'/><rect x='52' y='32' width='36' height='6' rx='3' fill='#a3abc4'/><rect x='32' y='52' width='14' height='14' rx='3' fill='#e74c3c'/><path d='M35 55 l8 8 M43 55 l-8 8' stroke='#ffffff' stroke-width='3' stroke-linecap='round'/><rect x='52' y='56' width='36' height='6' rx='3' fill='#a3abc4'/><rect x='32' y='76' width='14' height='14' rx='3' fill='#e74c3c'/><path d='M35 79 l8 8 M43 79 l-8 8' stroke='#ffffff' stroke-width='3' stroke-linecap='round'/><rect x='52' y='80' width='36' height='6' rx='3' fill='#a3abc4'/></svg>",
+   "aciklama": "Olumsuz cümle: bir işin yapılmadığını söyler. {{have}} yerine {{haven't}}, {{has}} yerine {{hasn't}} gelir.",
+   "akilda": "haven't/hasn't + V3",
+   "ornek": "He hasn't been to art school.",
+   "ornekTr": "O sanat okuluna gitmedi. (SB s. 24)",
+   "formul": [
+    [
+     {
+      "t": "I / You / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "haven't",
+      "r": "olumsuz",
+      "alt": "have not"
+     },
+     {
+      "t": "seen",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     }
+    ],
+    [
+     {
+      "t": "He / She / It",
+      "r": "ozne"
+     },
+     {
+      "t": "hasn't",
+      "r": "olumsuz",
+      "alt": "has not"
+     },
+     {
+      "t": "seen",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{We ___ seen the exhibition.}} Boşluğa hangisi gelir?",
+    "secenekler": [
+     "haven't",
+     "hasn't",
+     "didn't"
+    ],
+    "dogru": 0,
+    "ipucu": "{{We}} ile hangisi? Formüldeki ilk satıra bak.",
+    "aciklama": "{{We}} ile {{haven't}}: {{We haven't seen the exhibition.}} (SB s. 25)"
+   }
+  },
+  {
+   "ad": "Have / Has … V3?",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M42 42 q0 -22 20 -22 q20 0 20 18 q0 12 -14 18 q-6 3 -6 12 v6' stroke='#ffd166' stroke-width='12' fill='none' stroke-linecap='round'/><circle cx='62' cy='96' r='7' fill='#ffd166'/></svg>",
+   "aciklama": "Soru cümlesi: {{Have}} ya da {{Has}} başa gelir, sonra özne ve V3.",
+   "ek": "Kısa cevap: {{Yes, I have.}} / {{No, I haven't.}} · {{Yes, he has.}} / {{No, he hasn't.}} (WB s. 90)",
+   "akilda": "soru: Have/Has + özne + V3",
+   "ornek": "Have you ever looked at a normal, everyday object and seen something else?",
+   "ornekTr": "Hiç sıradan, her gün gördüğün bir nesneye bakıp başka bir şey gördün mü? (SB s. 24)",
+   "formul": [
+    [
+     {
+      "t": "Have",
+      "r": "yard"
+     },
+     {
+      "t": "I / you / we / they",
+      "r": "ozne"
+     },
+     {
+      "t": "seen",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "Has",
+      "r": "yard"
+     },
+     {
+      "t": "he / she / it",
+      "r": "ozne"
+     },
+     {
+      "t": "seen",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{___ he been to art school?}} Boşluğa hangisi gelir?",
+    "secenekler": [
+     "Have",
+     "Did",
+     "Has"
+    ],
+    "dogru": 2,
+    "ipucu": "{{he}} ile {{have}} mı, {{has}} mı?",
+    "aciklama": "{{he}} ile {{Has}}: {{Has he been to art school?}} (SB s. 25)"
+   }
+  },
+  {
+   "ad": "düzenli fiil: -ed",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='40' width='52' height='40' rx='8' fill='#4ea8de'/><text x='38' y='66' font-family='Fredoka, Arial, sans-serif' font-size='16' font-weight='700' fill='#ffffff' text-anchor='middle'>visit</text><text x='72' y='67' font-family='Fredoka, Arial, sans-serif' font-size='22' font-weight='700' fill='#ffd166' text-anchor='middle'>+</text><rect x='82' y='40' width='28' height='40' rx='8' fill='#ff7a33'/><text x='96' y='66' font-family='Fredoka, Arial, sans-serif' font-size='16' font-weight='700' fill='#ffffff' text-anchor='middle'>ed</text></svg>",
+   "aciklama": "Düzenli fiillerin V3'ü {{-ed}}, {{-d}} ya da {{-ied}} ile biter.",
+   "ek": "{{want → wanted}}, {{believe → believed}}, {{worry → worried}} (WB s. 90)",
+   "akilda": "V3 = fiil + -ed",
+   "ornek": "He has used bronze to make the sculpture.",
+   "ornekTr": "Heykeli yapmak için bronz kullandı. (WB s. 18)",
+   "formul": [
+    [
+     {
+      "t": "want",
+      "r": "kelime"
+     },
+     {
+      "t": "-ed",
+      "r": "ek"
+     },
+     {
+      "t": "wanted",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "believe",
+      "r": "kelime"
+     },
+     {
+      "t": "-d",
+      "r": "ek"
+     },
+     {
+      "t": "believed",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "worry",
+      "r": "kelime"
+     },
+     {
+      "t": "-ied",
+      "r": "ek",
+      "alt": "y düşer"
+     },
+     {
+      "t": "worried",
+      "r": "sonuc"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{visit}} fiilinin V3'ü hangisi?",
+    "secenekler": [
+     "visited",
+     "visiting",
+     "visit"
+    ],
+    "dogru": 0,
+    "ipucu": "Düzenli fiil: sonuna {{-ed}} gelir.",
+    "aciklama": "{{visit}} → {{visited}}: {{He has visited the art exhibition.}} (WB s. 90)"
+   }
+  },
+  {
+   "ad": "düzensiz fiil: V3",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='22' width='38' height='30' rx='8' fill='#9b7bff'/><text x='33' y='43' font-family='Fredoka, Arial, sans-serif' font-size='16' font-weight='700' fill='#ffffff' text-anchor='middle'>see</text><rect x='68' y='22' width='40' height='30' rx='8' fill='#ff7a33'/><text x='88' y='43' font-family='Fredoka, Arial, sans-serif' font-size='16' font-weight='700' fill='#ffffff' text-anchor='middle'>seen</text><rect x='14' y='70' width='38' height='30' rx='8' fill='#9b7bff'/><text x='33' y='91' font-family='Fredoka, Arial, sans-serif' font-size='16' font-weight='700' fill='#ffffff' text-anchor='middle'>go</text><rect x='68' y='70' width='40' height='30' rx='8' fill='#ff7a33'/><text x='88' y='91' font-family='Fredoka, Arial, sans-serif' font-size='16' font-weight='700' fill='#ffffff' text-anchor='middle'>gone</text><path d='M54 37 h10 M54 85 h10' stroke='#ffd166' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Bazı fiillerin V3'ü kurala uymaz; bunları ezberleriz.",
+   "ek": "{{go → gone}}, {{be → been}}, {{make → made}}, {{see → seen}}, {{hear → heard}}, {{put → put}} (WB s. 90)",
+   "akilda": "V3'ü ezberle",
+   "ornek": "His animals are beautiful, but he has made them from ugly things.",
+   "ornekTr": "Hayvanları çok güzel ama onları çirkin şeylerden yaptı. (SB s. 24)",
+   "formul": [
+    [
+     {
+      "t": "see",
+      "r": "kelime"
+     },
+     {
+      "t": "seen",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "make",
+      "r": "kelime"
+     },
+     {
+      "t": "made",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "be",
+      "r": "kelime"
+     },
+     {
+      "t": "been",
+      "r": "sonuc"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{see}} fiilinin V3'ü hangisi?",
+    "secenekler": [
+     "saw",
+     "seen",
+     "seed"
+    ],
+    "dogru": 1,
+    "ipucu": "Çizimdeki ilk satırı hatırla: {{see}} → ?",
+    "aciklama": "{{see}} → {{seen}}: {{We haven't seen the exhibition.}} (WB s. 90)"
+   }
+  },
+  {
+   "ad": "ever / never",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 60 h86' stroke='#c9cfe0' stroke-width='5' stroke-linecap='round'/><path d='M96 52 l10 8 -10 8' fill='#c9cfe0'/><circle cx='24' cy='60' r='6' fill='#ffd166'/><circle cx='44' cy='60' r='6' fill='#ffd166'/><circle cx='64' cy='60' r='6' fill='#ffd166'/><circle cx='84' cy='60' r='6' fill='#ffd166'/><path d='M20 40 q42 -30 84 0' stroke='#ff7a33' stroke-width='3' fill='none' stroke-dasharray='5 5'/><circle cx='22' cy='86' r='8' fill='#3cc47c'/><path d='M14 100 q8 -12 16 0z' fill='#3cc47c'/></svg>",
+   "aciklama": "{{ever}} soruda 'hiç' demektir; bütün hayatını sorar. {{never}} 'hiçbir zaman, hiç' demektir.",
+   "ek": "Cevapta {{never}}: {{A: Has he ever met a famous person? B: No, never.}} (WB s. 90)",
+   "akilda": "ever: hiç (soru) · never: hiç (değil)",
+   "ornek": "Have you ever been to the theatre?",
+   "ornekTr": "Hiç tiyatroya gittin mi? (WB s. 90)",
+   "formul": [
+    [
+     {
+      "t": "Have",
+      "r": "yard"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "ever",
+      "r": "diger",
+      "alt": "hiç"
+     },
+     {
+      "t": "been",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "have",
+      "r": "yard"
+     },
+     {
+      "t": "never",
+      "r": "olumsuz",
+      "alt": "hiç"
+     },
+     {
+      "t": "met",
+      "r": "fiil",
+      "alt": "V3 (past participle)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Have you ___ been to a concert?}} (Hiç konsere gittin mi?)",
+    "secenekler": [
+     "never",
+     "ever",
+     "did"
+    ],
+    "dogru": 1,
+    "ipucu": "Soru cümlesindeki 'hiç' hangisi?",
+    "aciklama": "Soruda 'hiç': {{ever}}. {{Have you ever been to a concert?}} (WB s. 90)"
+   }
+  },
+  {
+   "ad": "been / gone",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 50 l18 -16 18 16z' fill='#ffd166'/><rect x='18' y='50' width='28' height='24' fill='#ffd166'/><rect x='28' y='60' width='8' height='14' fill='#1b2340'/><path d='M70 50 l16 -14 16 14z' fill='#4ea8de'/><rect x='74' y='50' width='24' height='22' fill='#4ea8de'/><path d='M48 82 q22 14 44 0' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M50 78 l-4 6 7 1' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M90 78 l4 6 -7 1' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M48 24 q22 -12 40 4' stroke='#ff7a33' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M84 22 l5 7 -8 1' stroke='#ff7a33' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "{{go}} fiilinin iki V3'ü var. {{been}}: gidip geri döndü. {{gone}}: gitti, hâlâ orada.",
+   "ek": "{{She has been to school.}} (Okuldan döndü.) · {{She has gone to school.}} (Şu an okulda.) (SB s. 25)",
+   "akilda": "been: döndü · gone: hâlâ orada",
+   "ornek": "I've been to the art shop. Look what I bought.",
+   "ornekTr": "Sanat malzemeleri dükkânına gidip geldim. Bak ne aldım. (WB s. 18)",
+   "formul": [
+    [
+     {
+      "t": "She",
+      "r": "ozne"
+     },
+     {
+      "t": "has",
+      "r": "yard"
+     },
+     {
+      "t": "been",
+      "r": "fiil",
+      "alt": "gidip döndü"
+     },
+     {
+      "t": "to school",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "She",
+      "r": "ozne"
+     },
+     {
+      "t": "has",
+      "r": "yard"
+     },
+     {
+      "t": "gone",
+      "r": "fiil",
+      "alt": "hâlâ orada"
+     },
+     {
+      "t": "to school",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Tom isn't here. He has ___ to Rome.}}",
+    "secenekler": [
+     "been",
+     "go",
+     "gone"
+    ],
+    "dogru": 2,
+    "ipucu": "Tom burada değil, hâlâ orada. Hangisi 'hâlâ orada'?",
+    "aciklama": "Hâlâ orada ise {{gone}}: {{He has gone to Rome.}} (WB s. 90)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kart ne anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Cümle kalıbı",
+     "uyeler": [
+      "have / has + V3",
+      "haven't / hasn't + V3",
+      "Have / Has … V3?"
+     ]
+    },
+    {
+     "etiket": "Fiilin V3 hâli",
+     "uyeler": [
+      "düzenli fiil: -ed",
+      "düzensiz fiil: V3"
+     ]
+    },
+    {
+     "etiket": "Anlamı değiştiren kelime",
+     "uyeler": [
+      "ever / never",
+      "been / gone"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Fans have seen his creations at exhibitions.",
+   "tr": "Hayranları onun eserlerini sergilerde gördüler. (SB s. 25)"
+  },
+  {
+   "en": "He hasn't been to art school.",
+   "tr": "O sanat okuluna gitmedi. (SB s. 24)"
+  },
+  {
+   "en": "Have you ever been to the theatre?",
+   "tr": "Hiç tiyatroya gittin mi? (SB s. 25)"
+  },
+  {
+   "en": "He has made them from ugly things.",
+   "tr": "Onları çirkin şeylerden yaptı. (SB s. 24)"
+  },
+  {
+   "en": "We haven't seen the exhibition.",
+   "tr": "Sergiyi görmedik. (SB s. 25)"
+  },
+  {
+   "en": "I have never met a street artist.",
+   "tr": "Hiç bir sokak sanatçısıyla tanışmadım. (WB s. 18)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Fans has seen his creations at exhibitions.",
+   "yanlis": "has",
+   "secenekler": [
+    "have",
+    "had",
+    "is"
+   ],
+   "dogru": 0,
+   "tr": "Hayranları onun eserlerini sergilerde gördüler.",
+   "aciklama": "{{Fans}} çoğul ({{they}}): {{have}} gelir. (SB s. 25)"
+  },
+  {
+   "cumle": "He hasn't go to art school.",
+   "yanlis": "go",
+   "secenekler": [
+    "went",
+    "been",
+    "going"
+   ],
+   "dogru": 1,
+   "tr": "O sanat okuluna gitmedi.",
+   "aciklama": "{{hasn't}}'tan sonra V3 gelir: {{been}}. (SB s. 25)"
+  },
+  {
+   "cumle": "Bordalo II has use rubbish and spray paint.",
+   "yanlis": "use",
+   "secenekler": [
+    "using",
+    "uses",
+    "used"
+   ],
+   "dogru": 2,
+   "tr": "Bordalo II çöp ve sprey boya kullandı.",
+   "aciklama": "{{has}}'ten sonra V3: {{used}}. (SB s. 24)"
+  },
+  {
+   "cumle": "Have you ever saw a street artist?",
+   "yanlis": "saw",
+   "secenekler": [
+    "see",
+    "seen",
+    "seeing"
+   ],
+   "dogru": 1,
+   "tr": "Hiç bir sokak sanatçısı gördün mü?",
+   "aciklama": "{{see}} fiilinin V3'ü {{seen}}; {{saw}} past simple. (WB s. 90)"
+  },
+  {
+   "cumle": "I have never meet a street artist.",
+   "yanlis": "meet",
+   "secenekler": [
+    "met",
+    "meeting",
+    "meets"
+   ],
+   "dogru": 0,
+   "tr": "Hiç bir sokak sanatçısıyla tanışmadım.",
+   "aciklama": "{{meet}} fiilinin V3'ü {{met}}. (WB s. 18)"
+  },
+  {
+   "cumle": "She has gone to school. She's back from school now.",
+   "yanlis": "gone",
+   "secenekler": [
+    "go",
+    "went",
+    "been"
+   ],
+   "dogru": 2,
+   "tr": "Okula gidip geldi. Şimdi okuldan döndü.",
+   "aciklama": "Geri döndüyse {{been}}: {{She has been to school.}} (SB s. 25)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Check out these young artists!",
+  "sayfa": "SB s. 24",
+  "sozluk": {
+   "creator": "yaratıcı, yapan kişi",
+   "has transformed": "dönüştürdü",
+   "enormous": "kocaman",
+   "giant": "dev",
+   "car wheel": "araba tekerleği",
+   "with a message": "mesajı olan",
+   "rubbish": "çöp",
+   "spray paint": "sprey boya",
+   "throw away": "çöpe atmak",
+   "creations": "eserler",
+   "everyday object": "her gün gördüğümüz nesne",
+   "ordinary objects": "sıradan nesneler",
+   "imagination": "hayal gücü",
+   "guitar strings": "gitar telleri",
+   "followers": "takipçiler",
+   "would love to go": "gitmeyi çok isterdi"
+  },
+  "bolumler": [
+   {
+    "baslik": "Bordalo II: çöpten hayvanlar",
+    "cumleler": [
+     {
+      "en": "Check out this talented street artist from Lisbon, Portugal!",
+      "tr": "Portekiz'in Lizbon şehrinden bu yetenekli sokak sanatçısına bir bak!"
+     },
+     {
+      "en": "Bordalo II, creator of 'Big Trash Animals', has transformed the streets of Lisbon into an art gallery.",
+      "tr": "'Büyük Çöp Hayvanlar'ın yaratıcısı Bordalo II, Lizbon sokaklarını bir sanat galerisine dönüştürdü."
+     },
+     {
+      "en": "When you first look, you see an enormous bear or a giant duck, but look again and you'll see a car wheel or an old toilet.",
+      "tr": "İlk baktığında kocaman bir ayı ya da dev bir ördek görürsün; ama tekrar bak, bir araba tekerleği ya da eski bir klozet göreceksin."
+     },
+     {
+      "en": "This is street art with a message.",
+      "tr": "Bu, mesajı olan bir sokak sanatı."
+     },
+     {
+      "en": "Bordalo II hasn't used normal paints, brushes or rollers for a reason.",
+      "tr": "Bordalo II'nin normal boya, fırça ya da rulo kullanmamasının bir nedeni var."
+     },
+     {
+      "en": "He's used rubbish and spray paint because he wants us to think about all the things we throw away.",
+      "tr": "Çöp ve sprey boya kullandı, çünkü attığımız her şeyi düşünmemizi istiyor."
+     },
+     {
+      "en": "His animals are beautiful, but he has made them from ugly things.",
+      "tr": "Hayvanları çok güzel ama onları çirkin şeylerden yaptı."
+     },
+     {
+      "en": "Fans have seen his creations at exhibitions and festivals in the USA, Italy and Sweden, but Lisbon is his favourite city.",
+      "tr": "Hayranları eserlerini ABD, İtalya ve İsveç'teki sergi ve festivallerde gördü ama onun en sevdiği şehir Lizbon."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Bordalo II hayvanlarını neyle yapıyor?",
+      "secenekler": [
+       "Normal boya ve fırçayla",
+       "Çöp ve sprey boyayla",
+       "Kâğıt ve kalemle"
+      ],
+      "dogru": 1,
+      "ipucu": "{{He's used}} ile başlayan cümleyi bul.",
+      "aciklama": "{{He's used rubbish and spray paint}}: çöp ve sprey boya kullandı. (SB s. 24)"
+     },
+     {
+      "soru": "Bordalo II'nin en sevdiği şehir hangisi?",
+      "secenekler": [
+       "Lizbon",
+       "Prag",
+       "Roma"
+      ],
+      "dogru": 0,
+      "ipucu": "Son cümlede {{favourite city}} kalıbını bul.",
+      "aciklama": "{{Lisbon is his favourite city}}: en sevdiği şehir Lizbon. (SB s. 24)"
+     }
+    ]
+   },
+   {
+    "baslik": "Kristian Mensa: sıradan nesnelerden sanat",
+    "cumleler": [
+     {
+      "en": "Have you ever looked at a normal, everyday object and seen something else?",
+      "tr": "Hiç sıradan, her gün gördüğün bir nesneye bakıp başka bir şey gördün mü?"
+     },
+     {
+      "en": "Inspiring young illustrator Kristian Mensa, from Prague in the Czech Republic, takes ordinary objects and uses his imagination to change them into exciting visual art.",
+      "tr": "Çek Cumhuriyeti'nin Prag şehrinden ilham veren genç illüstratör Kristian Mensa, sıradan nesneleri alıp hayal gücüyle onları heyecan verici görsel sanata dönüştürüyor."
+     },
+     {
+      "en": "For Kristian, an orange isn't just a fruit, it's a turtle's body, and spaghetti becomes guitar strings.",
+      "tr": "Kristian için portakal sadece bir meyve değil, bir kaplumbağanın gövdesi; spagetti de gitar teline dönüşüyor."
+     },
+     {
+      "en": "His biggest gallery is social media and followers have shared photos of his artwork thousands of times, but fans have also been to exhibitions of his illustrations in his home country and the USA.",
+      "tr": "En büyük galerisi sosyal medya; takipçileri eserlerinin fotoğraflarını binlerce kez paylaştı. Ama hayranları kendi ülkesinde ve ABD'de çizimlerinin sergilerine de gitti."
+     },
+     {
+      "en": "Kristian loves dance, theatre and music.",
+      "tr": "Kristian dansı, tiyatroyu ve müziği çok sever."
+     },
+     {
+      "en": "He hasn't been to art school but would love to go.",
+      "tr": "Sanat okuluna gitmedi ama gitmeyi çok isterdi."
+     },
+     {
+      "en": "So, next time you look at some pasta, imagine what else it could be!",
+      "tr": "Yani bir dahaki sefere makarnaya baktığında, başka ne olabileceğini hayal et!"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Kristian için portakal neye dönüşüyor?",
+      "secenekler": [
+       "Gitar teline",
+       "Bir kaplumbağanın gövdesine",
+       "Bir ördeğe"
+      ],
+      "dogru": 1,
+      "ipucu": "{{an orange}} geçen cümleyi bul.",
+      "aciklama": "{{an orange isn't just a fruit, it's a turtle's body}}. (SB s. 24)"
+     },
+     {
+      "soru": "Kristian sanat okuluna gitti mi?",
+      "secenekler": [
+       "Evet, gitti.",
+       "Hayır, gitmek de istemiyor.",
+       "Hayır, ama gitmeyi çok isterdi."
+      ],
+      "dogru": 2,
+      "ipucu": "{{art school}} geçen cümleyi bul.",
+      "aciklama": "{{He hasn't been to art school but would love to go.}} (SB s. 24)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Heykeltıraş Lorenzo Quinn hep heykeltıraş değildi: {{He has also been a singer and he has acted in films}}. Bir filmde ressam Salvador Dalí'yi bile oynadı. (WB s. 17)",
+  "Shania McDonagh fotoğraf gibi görünen resimleri yalnızca bir kurşun kalemle çiziyor. (SB s. 25)"
+ ],
+ "akildaKalsin": [
+  "{{have / has + V3}}: {{I have seen}}, {{he has seen}}.",
+  "Olumsuz: {{haven't / hasn't + V3}}. Soru: {{Have / Has}} + özne + V3?",
+  "Kısa cevap: {{Yes, I have.}} / {{No, she hasn't.}}",
+  "Düzenli fiil: {{-ed}} ({{visited}}). Düzensiz fiil: ezberle ({{seen}}, {{been}}, {{made}}).",
+  "{{ever}} soruda 'hiç'; {{never}} 'hiçbir zaman'.",
+  "{{been}} = gidip döndü; {{gone}} = gitti, hâlâ orada."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Present perfect ne zaman kullanılır?",
+   "cevap": "Kitaba göre geçmişteki iş, deneyim ve bilgileri anlatırken; ama işin tam ne zaman olduğu söylenmiyorsa ya da önemli değilse. Örnek: {{He has visited the art exhibition.}} (WB s. 90)"
+  },
+  {
+   "soru": "{{He's used}}'daki {{'s}} neyin kısası?",
+   "cevap": "Burada {{has}}'in kısası: {{He's used rubbish}} = {{He has used rubbish}}. Arkasından V3 ({{used}}) geldiği için {{has}} olduğunu anlıyoruz. (SB s. 25)"
+  },
+  {
+   "soru": "V3 ne demek?",
+   "cevap": "Fiilin üçüncü hâli; İngilizcesi {{past participle}}. Düzenli fiillerde {{-ed}} ile biter ({{wanted}}); düzensizleri ezberleriz ({{seen}}, {{made}}). (WB s. 90)"
+  },
+  {
+   "soru": "{{been}} ile {{gone}}'u nasıl ayırırım?",
+   "cevap": "Kişi geri döndüyse {{been}}, hâlâ oradaysa {{gone}}. {{She has been to school}}: okuldan döndü. {{She has gone to school}}: şu an okulda. (SB s. 25)"
+  },
+  {
+   "soru": "Soruda neden {{ever}} kullanılıyor?",
+   "cevap": "{{ever}} bütün hayatını sorar: 'hayatında hiç?'. Örnek: {{Has she ever had drum lessons?}} Cevapta {{never}} 'hiçbir zaman' demektir. (WB s. 90)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendin hakkında iki cümle yaz: biri {{I have ...}}, biri {{I have never ...}}",
+   "ornekCevap": "I have been to an exhibition. I have never made a film.",
+   "anahtarlar": [
+    "have",
+    "never"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "He has made a sculpture.",
+    "He made a sculpture.",
+    "He makes a sculpture."
+   ],
+   "dogru": 0,
+   "ipucu": "{{has}} kelimesini duydun mu? Yavaş dinle.",
+   "aciklama": "Duyduğun cümle {{He has made a sculpture.}} (WB s. 90)",
+   "dinle": "He has made a sculpture.",
+   "kavram": "have / has + V3"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Did you go to the theatre?",
+    "Have you ever been to the theatre?",
+    "Are you going to the theatre?"
+   ],
+   "dogru": 1,
+   "ipucu": "{{ever}} kelimesini duydun mu?",
+   "aciklama": "Duyduğun cümle {{Have you ever been to the theatre?}} (SB s. 25)",
+   "dinle": "Have you ever been to the theatre?",
+   "kavram": "ever / never"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{They ___ finished the painting.}} (Bitirmediler.)",
+   "secenekler": [
+    "hasn't",
+    "isn't",
+    "haven't"
+   ],
+   "dogru": 2,
+   "ipucu": "{{They}} ile hangisi? Olumsuz olmalı.",
+   "aciklama": "{{They}} ile {{haven't}}: {{They haven't finished the painting.}} (WB s. 90)",
+   "kavram": "haven't / hasn't + V3"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{___ she won a prize?}}",
+   "secenekler": [
+    "Has",
+    "Have",
+    "Is"
+   ],
+   "dogru": 0,
+   "ipucu": "{{she}} ile soru: {{Have}} mı, {{Has}} mı?",
+   "aciklama": "{{she}} ile {{Has}}: {{Has she won a prize?}} (WB s. 90)",
+   "kavram": "Have / Has … V3?"
+  },
+  {
+   "soru": "{{Has Kristian been to art school?}} Okuma metnine göre doğru kısa cevap hangisi?",
+   "secenekler": [
+    "Yes, he has.",
+    "No, he hasn't.",
+    "No, he didn't."
+   ],
+   "dogru": 1,
+   "ipucu": "Metinde {{He hasn't been to art school}} yazıyor.",
+   "aciklama": "Gitmedi: {{No, he hasn't.}} (SB s. 24)",
+   "kavram": "Have / Has … V3?"
+  },
+  {
+   "soru": "{{worry}} fiilinin V3'ü hangisi?",
+   "secenekler": [
+    "worryed",
+    "worring",
+    "worried"
+   ],
+   "dogru": 2,
+   "ipucu": "Formüldeki {{-ied}} satırına bak.",
+   "aciklama": "{{worry}} → {{worried}}: {{y}} düşer, {{-ied}} gelir. (WB s. 90)",
+   "kavram": "düzenli fiil: -ed"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Bordalo II has ___ rubbish and spray paint.}}",
+   "secenekler": [
+    "used",
+    "use",
+    "using"
+   ],
+   "dogru": 0,
+   "ipucu": "{{has}}'ten sonra V3 gelir.",
+   "aciklama": "{{has used}}: {{use}} → {{used}}. (SB s. 24)",
+   "kavram": "düzenli fiil: -ed"
+  },
+  {
+   "soru": "{{make}} fiilinin V3'ü hangisi?",
+   "secenekler": [
+    "maked",
+    "made",
+    "making"
+   ],
+   "dogru": 1,
+   "ipucu": "Düzensiz fiil; {{-ed}} almaz.",
+   "aciklama": "{{make}} → {{made}}: {{he has made them from ugly things}}. (SB s. 24)",
+   "kavram": "düzensiz fiil: V3"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I have ___ met a street artist.}} (Hiç tanışmadım.)",
+   "secenekler": [
+    "ever",
+    "been",
+    "never"
+   ],
+   "dogru": 2,
+   "ipucu": "Olumlu cümlede 'hiçbir zaman' hangisi?",
+   "aciklama": "'Hiçbir zaman' {{never}}: {{I have never met a street artist.}} (WB s. 18)",
+   "kavram": "ever / never"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Mum isn't here. She has ___ to the shops.}}",
+   "secenekler": [
+    "gone",
+    "been",
+    "go"
+   ],
+   "dogru": 0,
+   "ipucu": "Annen evde değil, hâlâ dükkânlarda.",
+   "aciklama": "Hâlâ orada: {{gone}}. Geri dönseydi {{been}} olurdu. (SB s. 25)",
+   "kavram": "been / gone"
+  }
+ ]
+}

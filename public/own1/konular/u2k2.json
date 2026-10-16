@@ -1,0 +1,526 @@
+{
+ "id": "u2k2",
+ "unite": "Unit 2: What is art?",
+ "baslik": "Performing arts ve sanatçılar (-ist, -er, -or)",
+ "sayfalar": "SB s. 23–24, 129 · WB s. 16, 22",
+ "giris": "Bu konuda sahne sanatlarını ({{performing arts}}), sanatın görüldüğü yerleri ve sanatçıları öğreneceğiz. Bir sanatı yapan kişiye nasıl ad verildiğini de göreceğiz: {{-ist}}, {{-er}}, {{-or}}.",
+ "kavramlar": [
+  {
+   "ad": "contemporary dance",
+   "renk": "#ff7ab6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='62' cy='26' r='9' fill='#ffd166'/><path d='M62 36 l-4 28 M58 64 l-16 26 M58 64 l20 22 M60 44 l-24 -10 M60 44 l26 -2' stroke='#ffd166' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M86 42 q16 10 4 26 q-12 16 4 32' stroke='#ff7ab6' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M22 98 h76' stroke='#9b7bff' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Modern tarzda yapılan danstır: çağdaş dans. Kitaptaki tanım: {{moving to music in a modern style}}.",
+   "akilda": "çağdaş dans",
+   "ornek": "I love contemporary dance, but you need a lot of energy and rhythm to move your body to the music.",
+   "ornekTr": "Çağdaş dansı çok seviyorum ama vücudunu müziğe göre hareket ettirmek için çok enerji ve ritim gerekiyor. (WB s. 22)",
+   "soru": {
+    "soru": "Müziğe modern bir şekilde hareket etmek hangisidir?",
+    "secenekler": [
+     "contemporary dance",
+     "filmmaking",
+     "gallery"
+    ],
+    "dogru": 0,
+    "ipucu": "Kurdeleyle dans eden kişi çizimini hatırla: {{moving to music}}.",
+    "aciklama": "{{contemporary dance}}: {{moving to music in a modern style}}. (WB s. 16)"
+   }
+  },
+  {
+   "ad": "musical theatre",
+   "renk": "#e74c3c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='16' width='96' height='10' rx='3' fill='#c0392b'/><path d='M12 26 q12 40 0 80 h22 q-6 -40 4 -80z' fill='#e74c3c'/><path d='M108 26 q-12 40 0 80 h-22 q6 -40 -4 -80z' fill='#e74c3c'/><rect x='12' y='98' width='96' height='8' fill='#c58b5a'/><path d='M52 76 v-30 l20 -6 v28' stroke='#ffd166' stroke-width='4' fill='none'/><ellipse cx='48' cy='78' rx='6' ry='5' fill='#ffd166'/><ellipse cx='68' cy='70' rx='6' ry='5' fill='#ffd166'/></svg>",
+   "aciklama": "Oyuncuların hem rol yaptığı hem şarkı söyleyip dans ettiği tiyatrodur: müzikal tiyatro.",
+   "akilda": "müzikal",
+   "soru": {
+    "soru": "Şarkılı, danslı tiyatro gösterisine ne denir?",
+    "secenekler": [
+     "exhibition",
+     "gallery",
+     "musical theatre"
+    ],
+    "dogru": 2,
+    "ipucu": "Perdeli sahne ve müzik notası çizimini hatırla.",
+    "aciklama": "Şarkılı danslı tiyatro {{musical theatre}}: müzikal. (SB s. 23)"
+   }
+  },
+  {
+   "ad": "performance",
+   "renk": "#ffd166",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M44 14 h32 l26 86 h-84z' fill='#ffd166' opacity='0.35'/><rect x='46' y='10' width='28' height='10' rx='3' fill='#c9cfe0'/><rect x='53' y='46' width='14' height='22' rx='7' fill='#c9cfe0'/><path d='M47 60 q13 16 26 0 M60 72 v22 M48 96 h24' stroke='#c9cfe0' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Bir gösteri, performanstır. Kitaptaki tanım: {{acting, singing, dancing or playing music}} (oyunculuk, şarkı, dans ya da müzik çalma).",
+   "akilda": "gösteri, performans",
+   "ornek": "We went to the theatre to see his performance in the play.",
+   "ornekTr": "Oyundaki performansını görmek için tiyatroya gittik. (SB s. 129)",
+   "soru": {
+    "soru": "{{acting, singing, dancing or playing music}} hangisinin tanımı?",
+    "secenekler": [
+     "gallery",
+     "performance",
+     "sculpture"
+    ],
+    "dogru": 1,
+    "ipucu": "Spot ışığı altındaki mikrofon çizimini hatırla.",
+    "aciklama": "Oyunculuk, şarkı, dans ya da müzik: {{performance}}. (SB s. 23)"
+   }
+  },
+  {
+   "ad": "filmmaking",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='48' width='84' height='52' rx='6' fill='#c9cfe0'/><g transform='rotate(-14 18 44)'><rect x='18' y='32' width='84' height='14' rx='3' fill='#ffffff'/><path d='M24 32 l10 14 h9 l-10 -14z' fill='#1b2340'/><path d='M44 32 l10 14 h9 l-10 -14z' fill='#1b2340'/><path d='M64 32 l10 14 h9 l-10 -14z' fill='#1b2340'/><path d='M84 32 l10 14 h9 l-10 -14z' fill='#1b2340'/></g><rect x='18' y='48' width='84' height='12' fill='#ffffff'/><path d='M22 48 l10 12 h9 l-10 -12z' fill='#1b2340'/><path d='M42 48 l10 12 h9 l-10 -12z' fill='#1b2340'/><path d='M62 48 l10 12 h9 l-10 -12z' fill='#1b2340'/><path d='M82 48 l10 12 h9 l-10 -12z' fill='#1b2340'/><path d='M30 74 h44 M30 86 h30' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Film yapma işidir: film yapımcılığı.",
+   "akilda": "film yapımı",
+   "ornek": "Eduardo goes to the cinema a lot because he's interested in filmmaking.",
+   "ornekTr": "Eduardo sinemaya çok gider, çünkü film yapımıyla ilgileniyor. (WB s. 22)",
+   "soru": {
+    "soru": "Film yapma işi hangisidir?",
+    "secenekler": [
+     "filmmaking",
+     "fashion design",
+     "exhibition"
+    ],
+    "dogru": 0,
+    "ipucu": "Film klaketi çizimini hatırla.",
+    "aciklama": "Film yapmak {{filmmaking}}. (SB s. 23)"
+   }
+  },
+  {
+   "ad": "exhibition",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='22' width='40' height='32' rx='3' fill='#ffd166'/><rect x='17' y='27' width='30' height='22' fill='#4ea8de'/><circle cx='26' cy='34' r='4' fill='#ffd166'/><rect x='66' y='22' width='42' height='32' rx='3' fill='#ffd166'/><rect x='71' y='27' width='32' height='22' fill='#3cc47c'/><path d='M71 49 l12 -12 8 8 6 -6 6 10z' fill='#1b5e3a'/><circle cx='30' cy='82' r='8' fill='#c9cfe0'/><path d='M18 104 q12 -22 24 0z' fill='#c9cfe0'/><circle cx='60' cy='82' r='8' fill='#c9cfe0'/><path d='M48 104 q12 -22 24 0z' fill='#c9cfe0'/><circle cx='90' cy='82' r='8' fill='#c9cfe0'/><path d='M78 104 q12 -22 24 0z' fill='#c9cfe0'/></svg>",
+   "aciklama": "Resimlerin ve sanat eserlerinin gösterildiği etkinliktir: sergi. Kitaptaki tanım: {{an event where you can see paintings and other art forms}}.",
+   "ek": "{{gallery}} bir yer, {{exhibition}} bir etkinlik. Bir galeride sergi açılır.",
+   "akilda": "sergi",
+   "ornek": "They saw a wonderful exhibition of paintings and sculptures by a local artist.",
+   "ornekTr": "Yerel bir sanatçının resim ve heykellerinden oluşan harika bir sergi gördüler. (WB s. 22)",
+   "soru": {
+    "soru": "{{an event where you can see paintings}} hangisidir?",
+    "secenekler": [
+     "performance",
+     "gallery",
+     "exhibition"
+    ],
+    "dogru": 2,
+    "ipucu": "Tanımdaki {{event}} kelimesine bak: bir etkinlik.",
+    "aciklama": "Resim görebildiğin etkinlik {{exhibition}}: sergi. (SB s. 23)"
+   }
+  },
+  {
+   "ad": "gallery",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='34' width='88' height='68' rx='4' fill='#9b7bff'/><path d='M10 36 l50 -22 50 22z' fill='#c9cfe0'/><rect x='30' y='48' width='60' height='38' rx='3' fill='#1b2340'/><rect x='38' y='54' width='44' height='26' fill='#ffd166'/><path d='M38 80 l14 -14 10 8 8 -6 12 12z' fill='#ff7a33'/><rect x='16' y='94' width='88' height='8' fill='#c9cfe0'/></svg>",
+   "aciklama": "Sanat eserlerinin durduğu yerdir: galeri. Kitaptaki tanım: {{a room or building where you can see art}}.",
+   "akilda": "galeri",
+   "ornek": "The Louvre in Paris is the most famous art gallery in the world – the Mona Lisa is there.",
+   "ornekTr": "Paris'teki Louvre dünyanın en ünlü sanat galerisidir; Mona Lisa oradadır. (WB s. 22)",
+   "soru": {
+    "soru": "{{a room or building where you can see art}} hangisidir?",
+    "secenekler": [
+     "exhibition",
+     "gallery",
+     "filmmaking"
+    ],
+    "dogru": 1,
+    "ipucu": "Tanımdaki {{room or building}} kelimesine bak: bir yer.",
+    "aciklama": "Sanat görülen oda ya da bina {{gallery}}: galeri. (SB s. 23)"
+   }
+  },
+  {
+   "ad": "-ist / -er / -or",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='30' r='12' fill='#ffd166'/><path d='M38 66 q0 -22 22 -22 q22 0 22 22z' fill='#ffd166'/><rect x='8' y='74' width='32' height='24' rx='8' fill='#ff7a33'/><text x='24' y='91' font-family='Fredoka, Arial, sans-serif' font-size='15' font-weight='700' fill='#ffffff' text-anchor='middle'>-ist</text><rect x='44' y='74' width='32' height='24' rx='8' fill='#4ea8de'/><text x='60' y='91' font-family='Fredoka, Arial, sans-serif' font-size='15' font-weight='700' fill='#ffffff' text-anchor='middle'>-er</text><rect x='80' y='74' width='32' height='24' rx='8' fill='#3cc47c'/><text x='96' y='91' font-family='Fredoka, Arial, sans-serif' font-size='15' font-weight='700' fill='#ffffff' text-anchor='middle'>-or</text></svg>",
+   "aciklama": "Bir sanatı yapan kişiyi anlatmak için kelimenin sonuna {{-ist}}, {{-er}} ya da {{-or}} ekleriz.",
+   "ek": "Hangi ekin geleceğinin kuralı yok; kelimeyle birlikte öğren: {{artist}}, {{photographer}}, {{sculptor}}.",
+   "akilda": "kişi ekleri",
+   "formul": [
+    [
+     {
+      "t": "street art",
+      "r": "kelime"
+     },
+     {
+      "t": "-ist",
+      "r": "ek",
+      "alt": "kişi"
+     },
+     {
+      "t": "street artist",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "photograph",
+      "r": "kelime",
+      "alt": "photography"
+     },
+     {
+      "t": "-er",
+      "r": "ek",
+      "alt": "kişi"
+     },
+     {
+      "t": "photographer",
+      "r": "sonuc"
+     }
+    ],
+    [
+     {
+      "t": "sculpt",
+      "r": "kelime",
+      "alt": "sculpture"
+     },
+     {
+      "t": "-or",
+      "r": "ek",
+      "alt": "kişi"
+     },
+     {
+      "t": "sculptor",
+      "r": "sonuc"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{sculpture}} yapan kişiye ne denir?",
+    "secenekler": [
+     "sculptor",
+     "sculptist",
+     "sculpturer"
+    ],
+    "dogru": 0,
+    "ipucu": "Formül şeridine bak: {{sculpt}} hangi eki alıyordu?",
+    "aciklama": "Heykel yapan kişi {{sculptor}}: heykeltıraş. (WB s. 16)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "fashion designer",
+   "tr": "moda tasarımcısı"
+  },
+  {
+   "en": "filmmaker",
+   "tr": "film yapımcısı"
+  },
+  {
+   "en": "illustrator",
+   "tr": "illüstratör (kitap resimleri çizen kişi)",
+   "ornek": "Inspiring young illustrator Kristian Mensa, from Prague in the Czech Republic, takes ordinary objects.",
+   "ornekTr": "Çek Cumhuriyeti'nin Prag şehrinden ilham veren genç illüstratör Kristian Mensa sıradan nesneleri alır. (SB s. 24)"
+  },
+  {
+   "en": "performer",
+   "tr": "sanatçı, sahnede gösteri yapan kişi"
+  },
+  {
+   "en": "photographer",
+   "tr": "fotoğrafçı"
+  },
+  {
+   "en": "sculptor",
+   "tr": "heykeltıraş"
+  },
+  {
+   "en": "street artist",
+   "tr": "sokak sanatçısı",
+   "ornek": "Check out this talented street artist from Lisbon, Portugal!",
+   "ornekTr": "Portekiz'in Lizbon şehrinden bu yetenekli sokak sanatçısına bir bak! (SB s. 24)"
+  },
+  {
+   "en": "dancer",
+   "tr": "dansçı"
+  },
+  {
+   "en": "artist",
+   "tr": "sanatçı"
+  },
+  {
+   "en": "creator",
+   "tr": "yaratıcı, yapan kişi"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kelime ne anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Sahne sanatı (dans, şarkı, oyunculuk)",
+     "uyeler": [
+      "contemporary dance",
+      "musical theatre",
+      "performance"
+     ]
+    },
+    {
+     "etiket": "Sanatın görüldüğü yer ya da etkinlik",
+     "uyeler": [
+      "gallery",
+      "exhibition"
+     ]
+    },
+    {
+     "etiket": "Kamerayla yapılan sanat",
+     "uyeler": [
+      "filmmaking"
+     ]
+    },
+    {
+     "etiket": "Sanatçıyı anlatan ek",
+     "uyeler": [
+      "-ist / -er / -or"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Check out this talented street artist!",
+   "tr": "Bu yetenekli sokak sanatçısına bir bak! (SB s. 24)"
+  },
+  {
+   "en": "Kristian loves dance, theatre and music.",
+   "tr": "Kristian dansı, tiyatroyu ve müziği çok sever. (SB s. 24)"
+  },
+  {
+   "en": "We went to see his performance.",
+   "tr": "Onun gösterisini izlemeye gittik. (SB s. 129)"
+  },
+  {
+   "en": "They saw a wonderful exhibition of paintings.",
+   "tr": "Harika bir resim sergisi gördüler. (WB s. 22)"
+  },
+  {
+   "en": "The Louvre is a famous art gallery.",
+   "tr": "Louvre ünlü bir sanat galerisidir. (WB s. 22)"
+  },
+  {
+   "en": "He's interested in filmmaking.",
+   "tr": "Film yapımıyla ilgileniyor. (WB s. 22)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Kristian Mensa is a young illustration from Prague.",
+   "yanlis": "illustration",
+   "secenekler": [
+    "illustrator",
+    "illustrationist",
+    "illustrater"
+   ],
+   "dogru": 0,
+   "tr": "Kristian Mensa Praglı genç bir illüstratördür.",
+   "aciklama": "Kişi {{illustrator}}: {{-or}} eki alır. (SB s. 24)"
+  },
+  {
+   "cumle": "Bordalo II is a talented street art from Lisbon.",
+   "yanlis": "street art",
+   "secenekler": [
+    "street artor",
+    "street artist",
+    "street arter"
+   ],
+   "dogru": 1,
+   "tr": "Bordalo II Lizbonlu yetenekli bir sokak sanatçısıdır.",
+   "aciklama": "Kişi {{street artist}}: {{-ist}} eki alır. (SB s. 24)"
+  },
+  {
+   "cumle": "A gallery is an event where you can see paintings.",
+   "yanlis": "gallery",
+   "secenekler": [
+    "performance",
+    "filmmaking",
+    "exhibition"
+   ],
+   "dogru": 2,
+   "tr": "Sergi, resimleri görebildiğin bir etkinliktir.",
+   "aciklama": "Etkinlik ({{event}}) olan {{exhibition}}; {{gallery}} bir yerdir. (SB s. 23)"
+  },
+  {
+   "cumle": "An exhibition is acting, singing, dancing or playing music.",
+   "yanlis": "exhibition",
+   "secenekler": [
+    "performance",
+    "gallery",
+    "sculpture"
+   ],
+   "dogru": 0,
+   "tr": "Performans; oyunculuk, şarkı, dans ya da müzik çalmaktır.",
+   "aciklama": "Bu tanım {{performance}} kelimesinin. (SB s. 23)"
+  },
+  {
+   "cumle": "A performance is a room or building where you can see art.",
+   "yanlis": "performance",
+   "secenekler": [
+    "filmmaking",
+    "gallery",
+    "contemporary dance"
+   ],
+   "dogru": 1,
+   "tr": "Galeri, sanat görebildiğin bir oda ya da binadır.",
+   "aciklama": "Oda ya da bina: {{gallery}}. (SB s. 23)"
+  },
+  {
+   "cumle": "My sister takes photos for a magazine. She's a photographist.",
+   "yanlis": "photographist",
+   "secenekler": [
+    "photographor",
+    "photograph",
+    "photographer"
+   ],
+   "dogru": 2,
+   "tr": "Kız kardeşim bir dergi için fotoğraf çekiyor. O bir fotoğrafçı.",
+   "aciklama": "Fotoğrafçı {{photographer}}: {{-er}} eki alır. (SB s. 23)"
+  }
+ ],
+ "biliyorMusun": [
+  "Paris'teki Louvre dünyanın en ünlü sanat galerisi; Mona Lisa orada. (WB s. 22)",
+  "Kitap, bir sanatı yapan kişiler için üç ek veriyor: {{-ist}}, {{-er}} ve {{-or}}. (SB s. 23)"
+ ],
+ "akildaKalsin": [
+  "{{contemporary dance}} çağdaş dans · {{musical theatre}} müzikal · {{performance}} gösteri.",
+  "{{filmmaking}} film yapımı · {{exhibition}} sergi · {{gallery}} galeri.",
+  "{{gallery}} bir yer; {{exhibition}} bir etkinlik.",
+  "Kişi ekleri: {{-ist}} ({{artist}}), {{-er}} ({{photographer}}), {{-or}} ({{sculptor}})."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{gallery}} ile {{exhibition}} farkı ne?",
+   "cevap": "{{gallery}} bir yer: {{a room or building where you can see art}}. {{exhibition}} bir etkinlik: {{an event where you can see paintings and other art forms}}. Galeride sergi açılır. (SB s. 23)"
+  },
+  {
+   "soru": "{{performance}} ne demek?",
+   "cevap": "Sahnede yapılan gösteri. Kitaptaki tanım: {{acting, singing, dancing or playing music}}. (SB s. 23)"
+  },
+  {
+   "soru": "Neden {{dancer}} ama {{sculptor}}?",
+   "cevap": "Kitap bir kural vermiyor; eki kelimeyle birlikte öğrenmek gerekiyor. Workbook'taki eşleştirmede {{danc}} ve {{filmmak}} {{-er}}, {{illustrat}} ve {{sculpt}} {{-or}}, {{art}} {{-ist}} alıyor. (WB s. 16)"
+  },
+  {
+   "soru": "{{contemporary dance}} nasıl bir dans?",
+   "cevap": "Kitaptaki tanım: {{moving to music in a modern style}}. Yani müziğe modern bir şekilde hareket etmek. (WB s. 16)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Hangi sanatçı olmak isterdin? {{I want to be a ... because ...}}",
+   "ornekCevap": "I want to be a photographer because I love taking photos.",
+   "anahtarlar": [
+    "want",
+    "because"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "exhibition",
+    "performance",
+    "illustration"
+   ],
+   "dogru": 0,
+   "ipucu": "Sergiyle ilgili kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{exhibition}}: sergi. (SB s. 23)",
+   "dinle": "exhibition",
+   "kavram": "exhibition"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "musical theatre",
+    "contemporary dance",
+    "street art"
+   ],
+   "dogru": 1,
+   "ipucu": "Dansla ilgili iki kelime.",
+   "aciklama": "Duyduğun kelime {{contemporary dance}}: çağdaş dans. (WB s. 16)",
+   "dinle": "contemporary dance",
+   "kavram": "contemporary dance"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Eduardo goes to the cinema a lot because he's interested in ___.}}",
+   "secenekler": [
+    "sculpture",
+    "gallery",
+    "filmmaking"
+   ],
+   "dogru": 2,
+   "ipucu": "{{cinema}}: sinema. Sinemada ne izlenir?",
+   "aciklama": "Sinemayı seven biri {{filmmaking}} ile ilgilenir. (WB s. 22)",
+   "kavram": "filmmaking"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{The Louvre in Paris is the most famous art ___ in the world.}}",
+   "secenekler": [
+    "gallery",
+    "performance",
+    "dance"
+   ],
+   "dogru": 0,
+   "ipucu": "Louvre bir bina: sanat görülen yer.",
+   "aciklama": "Louvre bir sanat galerisi: {{art gallery}}. (WB s. 22)",
+   "kavram": "gallery"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{We went to the theatre to see his ___ in the play.}}",
+   "secenekler": [
+    "exhibition",
+    "performance",
+    "gallery"
+   ],
+   "dogru": 1,
+   "ipucu": "Tiyatroda oyuncu ne yapar?",
+   "aciklama": "Oyuncunun gösterisi {{performance}}. (SB s. 129)",
+   "kavram": "performance"
+  },
+  {
+   "soru": "Fotoğraf çeken kişiye ne denir?",
+   "secenekler": [
+    "photographist",
+    "photographor",
+    "photographer"
+   ],
+   "dogru": 2,
+   "ipucu": "Formül şeridindeki ikinci satıra bak.",
+   "aciklama": "{{photography}} → {{photographer}}: {{-er}} eki. (SB s. 23)",
+   "kavram": "-ist / -er / -or"
+  },
+  {
+   "soru": "Sanat ({{art}}) yapan kişiye ne denir?",
+   "secenekler": [
+    "artist",
+    "arter",
+    "artor"
+   ],
+   "dogru": 0,
+   "ipucu": "Bu ek {{street artist}} kelimesinde de var.",
+   "aciklama": "{{art}} → {{artist}}: {{-ist}} eki. (WB s. 16)",
+   "kavram": "-ist / -er / -or"
+  },
+  {
+   "soru": "Oyuncuların şarkı söyleyip dans ettiği tiyatro gösterisi hangisi?",
+   "secenekler": [
+    "filmmaking",
+    "musical theatre",
+    "exhibition"
+   ],
+   "dogru": 1,
+   "ipucu": "Perdeli sahne ve müzik notası.",
+   "aciklama": "Şarkılı danslı tiyatro {{musical theatre}}. (SB s. 23)",
+   "kavram": "musical theatre"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{They saw a wonderful ___ of paintings and sculptures by a local artist.}}",
+   "secenekler": [
+    "performance",
+    "filmmaking",
+    "exhibition"
+   ],
+   "dogru": 2,
+   "ipucu": "Resim ve heykellerin gösterildiği etkinlik.",
+   "aciklama": "Resim ve heykel sergisi: {{exhibition}}. (WB s. 22)",
+   "kavram": "exhibition"
+  }
+ ]
+}

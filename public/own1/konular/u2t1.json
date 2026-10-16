@@ -1,0 +1,228 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "Unit 2: What is art?",
+ "baslik": "Ara Durak 1: Sanat ve present perfect",
+ "sayfalar": "Konu 1–3 · SB s. 23–25, 119, 129 · WB s. 16–18, 22, 90–91",
+ "giris": "Üç konu bitti; şimdi kısa bir tekrar molası. Önce kartlara bakmadan hatırlamaya çalış. Sonra karışık soruları çöz. Not yok, sadece tekrar.",
+ "buyukResim": "Sanat dallarını ve sanatçıları öğrendin. Present perfect ile de onların ne yaptığını anlatabiliyorsun: {{Kristian Mensa is an illustrator.}} {{Fans have been to exhibitions of his illustrations.}}",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "{{architecture}} mimarlık · {{sculpture}} heykel · {{photography}} fotoğrafçılık.",
+    "{{illustration}} kitap resmi · {{street art}} sokak sanatı · {{fashion design}} moda tasarımı.",
+    "Bunlar gözle bakılan sanatlar: {{visual arts}}."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "{{contemporary dance}} çağdaş dans · {{musical theatre}} müzikal · {{performance}} gösteri · {{filmmaking}} film yapımı.",
+    "{{gallery}} bir yer; {{exhibition}} bir etkinlik (sergi).",
+    "Kişi ekleri: {{artist}}, {{photographer}}, {{sculptor}}."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "{{have / has + V3}}: {{She has seen}}. Olumsuz {{hasn't seen}}, soru {{Has she seen?}}",
+    "V3: {{visited}} (düzenli), {{seen}}, {{made}}, {{been}} (düzensiz).",
+    "{{ever}} soruda 'hiç'; {{never}} 'hiçbir zaman'. {{been}} döndü, {{gone}} hâlâ orada."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Görsel sanat mı, sahne sanatı mı?",
+   "kutular": [
+    {
+     "etiket": "Görsel sanatlar (visual arts)",
+     "uyeler": [
+      "architecture",
+      "illustration",
+      "photography",
+      "sculpture",
+      "street art"
+     ]
+    },
+    {
+     "etiket": "Sahne sanatları (performing arts)",
+     "uyeler": [
+      "contemporary dance",
+      "musical theatre",
+      "performance"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "She has been to an exhibition.",
+    "She has gone to an exhibition.",
+    "She has made an exhibition."
+   ],
+   "dogru": 0,
+   "ipucu": "Ortadaki kelimeye dikkat et: {{been}} mi, {{gone}} mı?",
+   "aciklama": "Duyduğun cümle {{She has been to an exhibition.}} Sergiye gidip döndü. (SB s. 25)",
+   "dinle": "She has been to an exhibition.",
+   "kavram": "been / gone",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "been / gone"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "exhibition"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Have you ever made a sculpture?",
+    "Have you ever seen a sculpture?",
+    "Has he ever seen a sculpture?"
+   ],
+   "dogru": 1,
+   "ipucu": "İki şeye dikkat: {{you}} mu, {{he}} mi? {{made}} mi, {{seen}} mi?",
+   "aciklama": "Duyduğun cümle {{Have you ever seen a sculpture?}} (WB s. 90)",
+   "dinle": "Have you ever seen a sculpture?",
+   "kavram": "ever / never",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "ever / never"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "sculpture"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{My aunt is a photographer. She ___ a lot of photos for magazines.}}",
+   "secenekler": [
+    "have taken",
+    "taked",
+    "has taken"
+   ],
+   "dogru": 2,
+   "ipucu": "{{She}} ile {{has}}; {{take}} düzensiz bir fiil.",
+   "aciklama": "{{She has taken}}: {{take}} → {{taken}}. (SB s. 119)",
+   "kavram": "düzensiz fiil: V3",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "düzensiz fiil: V3"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "-ist / -er / -or"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Özne {{She}}: {{have}} mı, {{has}} mı?",
+     "{{take}} düzensiz fiil; {{-ed}} almaz.",
+     "{{has}} ile başlayan şıkka bak."
+    ]
+   }
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Kristian Mensa ___ to art school, but he would love to go.}}",
+   "secenekler": [
+    "hasn't been",
+    "haven't been",
+    "has gone"
+   ],
+   "dogru": 0,
+   "ipucu": "Okuma metnini hatırla: sanat okuluna gitti mi?",
+   "aciklama": "{{He hasn't been to art school but would love to go.}} (SB s. 24)",
+   "kavram": "haven't / hasn't + V3",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "haven't / hasn't + V3"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Bordalo II is a street artist. He ___ animals from rubbish.}}",
+   "secenekler": [
+    "have made",
+    "has made",
+    "has make"
+   ],
+   "dogru": 1,
+   "ipucu": "{{He}} ile {{has}}, sonra V3.",
+   "aciklama": "{{He has made}}: {{make}} → {{made}}. (SB s. 24)",
+   "kavram": "have / has + V3",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "have / has + V3"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "street art"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I have never ___ a contemporary dance performance.}}",
+   "secenekler": [
+    "see",
+    "saw",
+    "seen"
+   ],
+   "dogru": 2,
+   "ipucu": "{{have never}}'dan sonra V3 gelir.",
+   "aciklama": "{{see}} → {{seen}}: {{I have never seen ...}} (WB s. 90)",
+   "kavram": "ever / never",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "ever / never"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "contemporary dance"
+    }
+   ]
+  },
+  {
+   "soru": "Okuma metnine göre hangisi doğru?",
+   "secenekler": [
+    "Kristian'ın en büyük galerisi sosyal medya.",
+    "Bordalo II normal fırçalar kullandı.",
+    "Kristian'ın çizimleri hiç sergilenmedi."
+   ],
+   "dogru": 0,
+   "ipucu": "{{His biggest gallery}} cümlesini hatırla.",
+   "aciklama": "{{His biggest gallery is social media}}. Fırça kullanmadı, çizimleri de sergilendi. (SB s. 24)",
+   "kavram": "gallery",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "gallery"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "have / has + V3"
+    }
+   ]
+  }
+ ]
+}

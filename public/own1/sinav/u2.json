@@ -1,0 +1,331 @@
+{
+ "unite": 2,
+ "ders": "own1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "o2-01",
+   "konu": "u2k1",
+   "kavram": "architecture",
+   "tur": "secim",
+   "soru": "{{to design, plan and make buildings}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "sculpture",
+    "architecture",
+    "photography",
+    "illustration"
+   ],
+   "dogru": 1,
+   "aciklama": "Binaları tasarlamak {{architecture}}: mimarlık (WB s. 16, 22)."
+  },
+  {
+   "id": "o2-02",
+   "konu": "u2k1",
+   "kavram": "illustration",
+   "tur": "secim",
+   "soru": "{{The ___ in this book are in black and white, not colour.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "sculptures",
+    "buildings",
+    "illustrations",
+    "clothes"
+   ],
+   "dogru": 2,
+   "aciklama": "Kitaptaki çizimler {{illustrations}} (WB s. 16, 22)."
+  },
+  {
+   "id": "o2-03",
+   "konu": "u2k1",
+   "kavram": "sculpture",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçeleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "architecture",
+     "sag": "mimarlık"
+    },
+    {
+     "sol": "sculpture",
+     "sag": "heykel"
+    },
+    {
+     "sol": "photography",
+     "sag": "fotoğrafçılık"
+    },
+    {
+     "sol": "fashion design",
+     "sag": "moda tasarımı"
+    }
+   ],
+   "aciklama": "Görsel sanatların adları (WB s. 16, 22)."
+  },
+  {
+   "id": "o2-04",
+   "konu": "u2k1",
+   "kavram": "photography",
+   "tur": "bosluk",
+   "havuz": [
+    "architecture",
+    "sculpture"
+   ],
+   "cumleler": [
+    {
+     "c": "I bought a new camera for my ___ class.",
+     "cevap": "photography"
+    },
+    {
+     "c": "Some ___ is OK, but I really don't like graffiti.",
+     "cevap": "street art"
+    },
+    {
+     "c": "He loved making clothes and wanted to study ___.",
+     "cevap": "fashion design"
+    }
+   ],
+   "aciklama": "Kamera, grafiti ve giysi ipuçlarına bak (WB s. 16, 22)."
+  },
+  {
+   "id": "o2-05",
+   "konu": "u2k1",
+   "kavram": "street art",
+   "tur": "dy",
+   "ifade": "{{street art}} şehirlerde dışarıda yapılan resim ve grafitilerdir.",
+   "dogru": true,
+   "aciklama": "Tanım: {{outside in urban areas}} (WB s. 16, 22)."
+  },
+  {
+   "id": "o2-06",
+   "konu": "u2k1",
+   "kavram": "sculpture",
+   "tur": "kisa",
+   "soru": "İnsanları ya da nesneleri anlatan cisimler yapma sanatı hangisidir? İngilizce yaz.",
+   "yanit": "sculpture",
+   "aciklama": "Heykel: {{sculpture}} (WB s. 16, 22)."
+  },
+  {
+   "id": "o2-07",
+   "konu": "u2k2",
+   "kavram": "gallery",
+   "tur": "secim",
+   "soru": "{{a room or building where you can see art}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "exhibition",
+    "performance",
+    "gallery",
+    "filmmaking"
+   ],
+   "dogru": 2,
+   "aciklama": "Sanat görülen oda ya da bina {{gallery}} (SB s. 23)."
+  },
+  {
+   "id": "o2-08",
+   "konu": "u2k2",
+   "kavram": "exhibition",
+   "tur": "dy",
+   "ifade": "{{gallery}} bir etkinlik, {{exhibition}} bir yerdir.",
+   "dogru": false,
+   "duzeltme": "gallery bir yer, exhibition bir etkinliktir (sergi).",
+   "aciklama": "{{gallery}} oda ya da bina; {{exhibition}} etkinlik (SB s. 23)."
+  },
+  {
+   "id": "o2-09",
+   "konu": "u2k2",
+   "kavram": "-ist / -er / -or",
+   "tur": "eslestir",
+   "soru": "Sanat dalını onu yapan kişiyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "photography",
+     "sag": "photographer"
+    },
+    {
+     "sol": "sculpture",
+     "sag": "sculptor"
+    },
+    {
+     "sol": "street art",
+     "sag": "street artist"
+    },
+    {
+     "sol": "filmmaking",
+     "sag": "filmmaker"
+    }
+   ],
+   "aciklama": "Kişi ekleri: {{-ist}}, {{-er}}, {{-or}} (SB s. 23)."
+  },
+  {
+   "id": "o2-10",
+   "konu": "u2k2",
+   "kavram": "-ist / -er / -or",
+   "tur": "secim",
+   "soru": "Sanatı yapan kişilerin adları:",
+   "onculler": [
+    "photographer",
+    "sculptor",
+    "illustrationist"
+   ],
+   "kok": "Yukarıdaki kişi adlarından hangileri doğru yazılmıştır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Doğrusu {{illustrator}}; {{-ist}} değil {{-or}} alır (SB s. 23)."
+  },
+  {
+   "id": "o2-11",
+   "konu": "u2k2",
+   "kavram": "performance",
+   "tur": "bosluk",
+   "havuz": [
+    "sculpture",
+    "architecture"
+   ],
+   "cumleler": [
+    {
+     "c": "We went to the theatre to see his ___ in the play.",
+     "cevap": "performance"
+    },
+    {
+     "c": "Eduardo goes to the cinema a lot. He's interested in ___.",
+     "cevap": "filmmaking"
+    },
+    {
+     "c": "They saw a wonderful ___ of paintings by a local artist.",
+     "cevap": "exhibition"
+    }
+   ],
+   "aciklama": "Tiyatro, sinema ve resim ipuçlarına bak (SB s. 129, WB s. 22)."
+  },
+  {
+   "id": "o2-12",
+   "konu": "u2k2",
+   "kavram": "contemporary dance",
+   "tur": "kisa",
+   "soru": "{{moving to music in a modern style}} tanımı hangi dansın? İngilizce yaz.",
+   "yanit": "contemporary dance",
+   "aciklama": "Modern tarzda dans: {{contemporary dance}} (WB s. 16)."
+  },
+  {
+   "id": "o2-13",
+   "konu": "u2k3",
+   "kavram": "have / has + V3",
+   "tur": "secim",
+   "soru": "{{Fans ___ seen his creations at exhibitions.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "has",
+    "have",
+    "is",
+    "did"
+   ],
+   "dogru": 1,
+   "aciklama": "{{Fans}} çoğul: {{have seen}} (SB s. 25)."
+  },
+  {
+   "id": "o2-14",
+   "konu": "u2k3",
+   "kavram": "düzensiz fiil: V3",
+   "tur": "eslestir",
+   "soru": "Fiilleri V3 hâlleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "see",
+     "sag": "seen"
+    },
+    {
+     "sol": "make",
+     "sag": "made"
+    },
+    {
+     "sol": "go",
+     "sag": "gone"
+    },
+    {
+     "sol": "hear",
+     "sag": "heard"
+    }
+   ],
+   "aciklama": "Düzensiz fiillerin V3'ü ezberlenir (WB s. 90)."
+  },
+  {
+   "id": "o2-15",
+   "konu": "u2k3",
+   "kavram": "been / gone",
+   "tur": "secim",
+   "soru": "{{She is at school now.}} Bu durumu anlatan cümle hangisi?",
+   "secenekler": [
+    "She has been to school.",
+    "She has gone to school.",
+    "She have gone to school.",
+    "She has go to school."
+   ],
+   "dogru": 1,
+   "aciklama": "Hâlâ okulda: {{has gone}}. Dönseydi {{has been}} (SB s. 25)."
+  },
+  {
+   "id": "o2-16",
+   "konu": "u2k3",
+   "kavram": "Have / Has … V3?",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "{{Has he been to art school?}}",
+     "d": true
+    },
+    {
+     "s": "{{Have she won a prize?}}",
+     "d": false
+    },
+    {
+     "s": "{{Have you ever been to the theatre?}}",
+     "d": true
+    },
+    {
+     "s": "{{Yes, I has.}}",
+     "d": false
+    }
+   ],
+   "aciklama": "{{he / she}} ile {{Has}}; {{I}} ile {{have}} (WB s. 90)."
+  },
+  {
+   "id": "o2-17",
+   "konu": "u2k3",
+   "kavram": "haven't / hasn't + V3",
+   "tur": "kisa",
+   "soru": "{{Kristian Mensa ___ been to art school.}} (Gitmedi.) Boşluğa ne gelir? İngilizce yaz.",
+   "yanit": "hasn't",
+   "kabul": [
+    "has not"
+   ],
+   "aciklama": "{{He}} ile olumsuz: {{hasn't been}} (SB s. 24)."
+  },
+  {
+   "id": "o2-18",
+   "konu": "u2k3",
+   "kavram": "ever / never",
+   "tur": "bosluk",
+   "havuz": [
+    "been",
+    "has"
+   ],
+   "cumleler": [
+    {
+     "c": "Have you ___ been to the theatre?",
+     "cevap": "ever"
+    },
+    {
+     "c": "I have ___ met a street artist.",
+     "cevap": "never"
+    },
+    {
+     "c": "Bordalo II has ___ rubbish and spray paint.",
+     "cevap": "used"
+    }
+   ],
+   "aciklama": "Soruda {{ever}}, olumluda 'hiçbir zaman' {{never}}; {{has}} + V3 (WB s. 18, 90)."
+  }
+ ]
+}

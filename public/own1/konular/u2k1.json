@@ -1,0 +1,423 @@
+{
+ "id": "u2k1",
+ "unite": "Unit 2: What is art?",
+ "baslik": "Visual arts (architecture, sculpture…)",
+ "sayfalar": "SB s. 23, 129 · WB s. 16, 22",
+ "giris": "Bu konuda gözle bakılan sanatların ({{visual arts}}) 6 kelimesini öğreneceğiz: binalardan heykellere, fotoğraftan sokak sanatına. Her kelimeden sonra kısa bir soru var.",
+ "kavramlar": [
+  {
+   "ad": "architecture",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='18,46 60,18 102,46' fill='#ffd166'/><rect x='22' y='46' width='76' height='8' fill='#c9cfe0'/><rect x='28' y='56' width='9' height='34' rx='2' fill='#c9cfe0'/><rect x='45' y='56' width='9' height='34' rx='2' fill='#c9cfe0'/><rect x='66' y='56' width='9' height='34' rx='2' fill='#c9cfe0'/><rect x='83' y='56' width='9' height='34' rx='2' fill='#c9cfe0'/><rect x='16' y='90' width='88' height='9' rx='2' fill='#ffd166'/><circle cx='60' cy='36' r='5' fill='#1b2340'/></svg>",
+   "aciklama": "Binaları tasarlama ve yapma sanatıdır: mimarlık. Kitaptaki tanım: {{to design, plan and make buildings}}.",
+   "akilda": "mimarlık",
+   "ornek": "Architecture is to design, plan and make buildings.",
+   "ornekTr": "Mimarlık, binaları tasarlamak, planlamak ve yapmaktır. (WB s. 22)",
+   "soru": {
+    "soru": "Binaları tasarlama ve yapma sanatı hangisidir?",
+    "secenekler": [
+     "architecture",
+     "sculpture",
+     "photography"
+    ],
+    "dogru": 0,
+    "ipucu": "Sütunlu bina çizimini hatırla: {{to design, plan and make buildings}}.",
+    "aciklama": "Binaları tasarlayıp yapmak {{architecture}}: mimarlık. (WB s. 22)"
+   }
+  },
+  {
+   "ad": "fashion design",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M54 24 a6 6 0 1 1 6 6 v5' stroke='#c9cfe0' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M60 35 l34 18 h-68z' stroke='#c9cfe0' stroke-width='4' fill='none' stroke-linejoin='round'/><path d='M48 53 h24 l5 14 l13 37 h-60 l13 -37z' fill='#ff7ab6'/><path d='M43 67 h34' stroke='#ffd166' stroke-width='4'/><circle cx='60' cy='82' r='3' fill='#ffd166'/><circle cx='52' cy='92' r='3' fill='#ffd166'/><circle cx='68' cy='92' r='3' fill='#ffd166'/></svg>",
+   "aciklama": "Giysi tasarlama işidir: moda tasarımı. Kitaptaki tanım: {{working with clothes, shoes and sometimes hairstyles}}.",
+   "akilda": "moda tasarımı",
+   "ornek": "He loved making clothes and always wanted to study fashion design.",
+   "ornekTr": "Giysi yapmayı çok severdi ve hep moda tasarımı okumak istedi. (SB s. 129)",
+   "soru": {
+    "soru": "Giysiler ve ayakkabılarla çalışan sanat dalı hangisi?",
+    "secenekler": [
+     "street art",
+     "architecture",
+     "fashion design"
+    ],
+    "dogru": 2,
+    "ipucu": "Askıdaki elbise çizimini hatırla: {{clothes, shoes}}.",
+    "aciklama": "Giysi ve ayakkabı tasarlamak {{fashion design}}: moda tasarımı. (WB s. 16)"
+   }
+  },
+  {
+   "ad": "illustration",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 34 q23 -8 46 4 v56 q-23 -10 -46 -4z' fill='#f4f1e8'/><path d='M106 34 q-23 -8 -46 4 v56 q23 -10 46 -4z' fill='#e7e2d3'/><circle cx='34' cy='54' r='8' fill='#ffb03a'/><path d='M22 80 l10 -12 8 8 10 -14 6 20' stroke='#3cc47c' stroke-width='4' fill='none' stroke-linejoin='round'/><path d='M70 78 l26 -40 7 5 -26 40 -9 4z' fill='#9b7bff'/><path d='M77 87 l-9 4 2 -9z' fill='#ffd166'/></svg>",
+   "aciklama": "Bir kitap ya da dergi için çizilen resimdir: illüstrasyon. Bu resimleri çizen kişi için kitap şunu söylüyor: {{someone who draws pictures for books}}.",
+   "akilda": "kitap resmi, illüstrasyon",
+   "ornek": "The illustrations in this book are in black and white, not colour.",
+   "ornekTr": "Bu kitaptaki çizimler renkli değil, siyah beyaz. (WB s. 22)",
+   "soru": {
+    "soru": "Bir hikâye kitabındaki çizimlere ne denir?",
+    "secenekler": [
+     "sculpture",
+     "illustration",
+     "fashion design"
+    ],
+    "dogru": 1,
+    "ipucu": "Açık kitap ve kalem çizimini hatırla: {{pictures for books}}.",
+    "aciklama": "Kitaplar için çizilen resimler {{illustration}}: illüstrasyon. (WB s. 16)"
+   }
+  },
+  {
+   "ad": "photography",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='38' width='84' height='56' rx='10' fill='#4ea8de'/><rect x='44' y='28' width='30' height='14' rx='4' fill='#4ea8de'/><circle cx='60' cy='66' r='20' fill='#1b2340'/><circle cx='60' cy='66' r='13' fill='#c9cfe0'/><circle cx='55' cy='61' r='4' fill='#ffffff'/><rect x='84' y='46' width='10' height='7' rx='2' fill='#ffd166'/></svg>",
+   "aciklama": "Fotoğraf çekme sanatıdır: fotoğrafçılık.",
+   "ek": "Dikkat: {{photo}} tek bir fotoğraf; {{photography}} bu sanatın adı.",
+   "akilda": "fotoğrafçılık",
+   "ornek": "I decided to use a picture of my grandmother to enter the photography competition.",
+   "ornekTr": "Fotoğraf yarışmasına katılmak için büyükannemin bir resmini kullanmaya karar verdim. (SB s. 129)",
+   "soru": {
+    "soru": "Fotoğraf makinesiyle yapılan sanat hangisi?",
+    "secenekler": [
+     "photography",
+     "architecture",
+     "illustration"
+    ],
+    "dogru": 0,
+    "ipucu": "Fotoğraf makinesi çizimini hatırla.",
+    "aciklama": "Fotoğraf çekme sanatı {{photography}}: fotoğrafçılık. (SB s. 23)"
+   }
+  },
+  {
+   "ad": "sculpture",
+   "renk": "#c58b5a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='34' r='15' fill='#c9cfe0'/><path d='M36 76 q0 -24 24 -24 q24 0 24 24z' fill='#c9cfe0'/><rect x='40' y='76' width='40' height='8' fill='#a3abc4'/><rect x='34' y='84' width='52' height='20' rx='3' fill='#c58b5a'/><path d='M54 32 h3 M63 32 h3' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Heykel ya da heykel yapma sanatıdır. Kitaptaki tanım: {{making objects that represent things, people or ideas}} (nesneleri, insanları ya da fikirleri anlatan cisimler yapmak).",
+   "akilda": "heykel",
+   "ornek": "Lorenzo Quinn makes sculptures of people and things from different metals.",
+   "ornekTr": "Lorenzo Quinn farklı metallerden insan ve nesne heykelleri yapar. (WB s. 22)",
+   "soru": {
+    "soru": "Metalden yapılmış bir insan figürü hangisidir?",
+    "secenekler": [
+     "photography",
+     "street art",
+     "sculpture"
+    ],
+    "dogru": 2,
+    "ipucu": "Kaide üstündeki büst çizimini hatırla: {{making objects}}.",
+    "aciklama": "İnsanları ya da nesneleri anlatan cisimler {{sculpture}}: heykel. (WB s. 16)"
+   }
+  },
+  {
+   "ad": "street art",
+   "renk": "#ff7ab6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='38' y='20' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='64' y='20' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='90' y='20' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='12' y='46' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='38' y='46' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='64' y='46' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='90' y='46' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='12' y='72' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='38' y='72' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='64' y='72' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='90' y='72' width='24' height='12' rx='1' fill='#8a4b3c'/><rect x='25' y='33' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='51' y='33' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='77' y='33' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='25' y='59' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='51' y='59' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='77' y='59' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='25' y='85' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='51' y='85' width='24' height='12' rx='1' fill='#a65d4a'/><rect x='77' y='85' width='24' height='12' rx='1' fill='#a65d4a'/><path d='M18 70 q20 -40 44 -10 t40 -20' stroke='#3cc47c' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M22 92 q24 -14 48 0' stroke='#ffd166' stroke-width='6' fill='none' stroke-linecap='round'/><rect x='86' y='76' width='14' height='26' rx='4' fill='#ff7ab6'/><rect x='89' y='70' width='8' height='7' fill='#c9cfe0'/></svg>",
+   "aciklama": "Şehirde, dışarıda yapılan resimlerdir: sokak sanatı. Kitaptaki tanım: {{paintings, graffiti, etc. outside in urban areas}}.",
+   "ek": "{{graffiti}} (duvar yazısı ya da resmi) sokak sanatının bir türüdür.",
+   "akilda": "sokak sanatı",
+   "ornek": "Some street art is OK, but I really don't like graffiti. It looks messy.",
+   "ornekTr": "Bazı sokak sanatları güzel ama grafitiyi hiç sevmiyorum. Dağınık görünüyor. (WB s. 22)",
+   "soru": {
+    "soru": "Bir okul duvarına yapılmış büyük, renkli resim hangi sanat dalıdır?",
+    "secenekler": [
+     "fashion design",
+     "street art",
+     "illustration"
+    ],
+    "dogru": 1,
+    "ipucu": "Tuğla duvar ve sprey boya çizimini hatırla: {{outside in urban areas}}.",
+    "aciklama": "Şehirde dışarıda yapılan resimler {{street art}}: sokak sanatı. (WB s. 16)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "visual arts",
+   "tr": "görsel sanatlar"
+  },
+  {
+   "en": "art form",
+   "tr": "sanat dalı",
+   "ornek": "My favourite art form is street art because it looks really cool.",
+   "ornekTr": "En sevdiğim sanat dalı sokak sanatı, çünkü çok havalı görünüyor. (SB s. 23)"
+  },
+  {
+   "en": "graffiti",
+   "tr": "duvar yazısı / resmi"
+  },
+  {
+   "en": "photo",
+   "tr": "fotoğraf"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu sanatta ne kullanılır?",
+   "kutular": [
+    {
+     "etiket": "Binalar ve cisimler (3 boyutlu)",
+     "uyeler": [
+      "architecture",
+      "sculpture"
+     ]
+    },
+    {
+     "etiket": "Kalem, boya, sprey",
+     "uyeler": [
+      "illustration",
+      "street art"
+     ]
+    },
+    {
+     "etiket": "Kamera",
+     "uyeler": [
+      "photography"
+     ]
+    },
+    {
+     "etiket": "Kumaş ve giysi",
+     "uyeler": [
+      "fashion design"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "My favourite art form is street art.",
+   "tr": "En sevdiğim sanat dalı sokak sanatı. (SB s. 23)"
+  },
+  {
+   "en": "The illustrations are in black and white.",
+   "tr": "Çizimler siyah beyaz. (WB s. 22)"
+  },
+  {
+   "en": "Architecture is to design and make buildings.",
+   "tr": "Mimarlık binaları tasarlamak ve yapmaktır. (WB s. 22)"
+  },
+  {
+   "en": "He wanted to study fashion design.",
+   "tr": "Moda tasarımı okumak istedi. (SB s. 129)"
+  },
+  {
+   "en": "Some street art is OK.",
+   "tr": "Bazı sokak sanatları güzel. (WB s. 22)"
+  },
+  {
+   "en": "Lorenzo Quinn makes sculptures from metals.",
+   "tr": "Lorenzo Quinn metallerden heykel yapar. (WB s. 22)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Architecture is to design, plan and make paintings.",
+   "yanlis": "paintings",
+   "secenekler": [
+    "buildings",
+    "clothes",
+    "photos"
+   ],
+   "dogru": 0,
+   "tr": "Mimarlık binaları tasarlamak, planlamak ve yapmaktır.",
+   "aciklama": "Mimarlık binalarla ilgilidir: {{buildings}}. (WB s. 22)"
+  },
+  {
+   "cumle": "Fashion design is working with cameras and photos.",
+   "yanlis": "cameras and photos",
+   "secenekler": [
+    "buildings and bridges",
+    "clothes and shoes",
+    "books and pencils"
+   ],
+   "dogru": 1,
+   "tr": "Moda tasarımı giysiler ve ayakkabılarla çalışmaktır.",
+   "aciklama": "{{fashion design}}: {{working with clothes, shoes and sometimes hairstyles}}. (WB s. 16)"
+  },
+  {
+   "cumle": "I bought a new camera for my sculpture class.",
+   "yanlis": "sculpture",
+   "secenekler": [
+    "photography",
+    "illustration",
+    "architecture"
+   ],
+   "dogru": 0,
+   "tr": "Fotoğrafçılık dersim için yeni bir fotoğraf makinesi aldım.",
+   "aciklama": "Kamera fotoğrafçılık içindir: {{photography}}. (WB s. 22)"
+  },
+  {
+   "cumle": "The sculptures in this book are in black and white, not colour.",
+   "yanlis": "sculptures",
+   "secenekler": [
+    "buildings",
+    "photographs",
+    "illustrations"
+   ],
+   "dogru": 2,
+   "tr": "Bu kitaptaki çizimler renkli değil, siyah beyaz.",
+   "aciklama": "Kitaptaki çizimler {{illustrations}}. (WB s. 22)"
+  },
+  {
+   "cumle": "Lorenzo Quinn makes illustrations of people and things from different metals.",
+   "yanlis": "illustrations",
+   "secenekler": [
+    "clothes",
+    "sculptures",
+    "photos"
+   ],
+   "dogru": 1,
+   "tr": "Lorenzo Quinn farklı metallerden insan ve nesne heykelleri yapar.",
+   "aciklama": "Metalden yapılan cisimler heykeldir: {{sculptures}}. (WB s. 22)"
+  },
+  {
+   "cumle": "Some fashion design is OK, but I really don't like graffiti.",
+   "yanlis": "fashion design",
+   "secenekler": [
+    "architecture",
+    "photography",
+    "street art"
+   ],
+   "dogru": 2,
+   "tr": "Bazı sokak sanatları güzel ama grafitiyi hiç sevmiyorum.",
+   "aciklama": "Grafiti sokak sanatının bir türüdür: {{street art}}. (WB s. 16, 22)"
+  }
+ ],
+ "resimEslestir": true,
+ "biliyorMusun": [
+  "Kitap sanatları ikiye ayırıyor: gözle bakılan görsel sanatlar ({{visual arts}}) ve sahnede yapılan sahne sanatları ({{performing arts}}). (SB s. 23)",
+  "1912–1948 arasındaki Olimpiyat Oyunları'nda mimarlık, resim ve heykelin yanında müzik dalında da madalya verildi. Kitaptaki {{Explore it!}} sorusunun cevabı bu: {{music}}. (SB s. 23)"
+ ],
+ "akildaKalsin": [
+  "{{architecture}} mimarlık · {{sculpture}} heykel · {{photography}} fotoğrafçılık.",
+  "{{illustration}} kitap resmi · {{street art}} sokak sanatı · {{fashion design}} moda tasarımı.",
+  "Bunların hepsi {{visual arts}}: gözle bakılan sanatlar.",
+  "{{photo}} tek bir fotoğraf; {{photography}} sanatın adı."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{street art}} ile {{graffiti}} aynı şey mi?",
+   "cevap": "Tam değil. Kitaba göre {{street art}} şehirlerde dışarıda yapılan resimler ve grafitilerdir; yani {{graffiti}} sokak sanatının bir türü. Kitaptaki bir öğrenci {{Some street art is OK, but I really don't like graffiti.}} diyor. (WB s. 16, 22)"
+  },
+  {
+   "soru": "{{illustration}} ile normal resim aynı mı?",
+   "cevap": "İllüstrasyon genelde bir kitap ya da dergi için çizilen resimdir. Kitap bu resimleri çizen kişiyi {{someone who draws pictures for books}} diye anlatıyor. (WB s. 16)"
+  },
+  {
+   "soru": "{{sculpture}} neyden yapılır?",
+   "cevap": "Kitaptaki tanım: {{making objects that represent things, people or ideas}}. Lorenzo Quinn heykellerini farklı metallerden yapıyor. (WB s. 16, 22)"
+  },
+  {
+   "soru": "Binalar neden sanat sayılıyor?",
+   "cevap": "Çünkü binalar da tasarlanır: biçimi ve görünüşü düşünülür. Kitabın tanımı: {{to design, plan and make buildings}}. Eski Olimpiyatlarda mimarlık için madalya bile verilmiş! (WB s. 22, SB s. 23)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "En sevdiğin sanat dalını ve nedenini yaz: {{My favourite art form is ... because ...}}",
+   "ornekCevap": "My favourite art form is street art because it looks really cool.",
+   "anahtarlar": [
+    "favourite",
+    "because"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "sculpture",
+    "illustration",
+    "architecture"
+   ],
+   "dogru": 0,
+   "ipucu": "Heykelle ilgili kelime. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{sculpture}}: heykel. (SB s. 23)",
+   "dinle": "sculpture",
+   "kavram": "sculpture"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "illustration",
+    "photography",
+    "fashion design"
+   ],
+   "dogru": 1,
+   "ipucu": "Kamerayla ilgili kelime.",
+   "aciklama": "Duyduğun kelime {{photography}}: fotoğrafçılık. (SB s. 23)",
+   "dinle": "photography",
+   "kavram": "photography"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{He loved making clothes and always wanted to study ___.}}",
+   "secenekler": [
+    "fashion design",
+    "sculpture",
+    "street art"
+   ],
+   "dogru": 0,
+   "ipucu": "{{making clothes}}: giysi yapmak.",
+   "aciklama": "Giysi yapmayı seven biri {{fashion design}} okumak ister. (SB s. 129)",
+   "kavram": "fashion design"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{___ is to design, plan and make buildings.}}",
+   "secenekler": [
+    "Photography",
+    "Architecture",
+    "Illustration"
+   ],
+   "dogru": 1,
+   "ipucu": "{{buildings}} kelimesine dikkat: binalar.",
+   "aciklama": "Binaları tasarlamak {{architecture}}: mimarlık. (WB s. 22)",
+   "kavram": "architecture"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{The ___ in this book are in black and white, not colour.}}",
+   "secenekler": [
+    "sculptures",
+    "buildings",
+    "illustrations"
+   ],
+   "dogru": 2,
+   "ipucu": "Kitabın içinde olan resimler.",
+   "aciklama": "Kitaptaki çizimler {{illustrations}}. (WB s. 22)",
+   "kavram": "illustration"
+  },
+  {
+   "soru": "Şehirde bir duvara yapılmış büyük, renkli resim hangi sanat dalıdır?",
+   "secenekler": [
+    "street art",
+    "fashion design",
+    "photography"
+   ],
+   "dogru": 0,
+   "ipucu": "Tanımı hatırla: {{outside in urban areas}}.",
+   "aciklama": "Şehirde dışarıda yapılan resimler {{street art}}. (WB s. 16)",
+   "kavram": "street art"
+  },
+  {
+   "soru": "{{sculpture}} kelimesinin Türkçesi nedir?",
+   "secenekler": [
+    "mimarlık",
+    "heykel",
+    "fotoğrafçılık"
+   ],
+   "dogru": 1,
+   "ipucu": "Kaide üstündeki büst çizimini hatırla.",
+   "aciklama": "{{sculpture}} = heykel. (WB s. 16)",
+   "kavram": "sculpture"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Lorenzo Quinn makes ___ of people and things from different metals.}}",
+   "secenekler": [
+    "photos",
+    "clothes",
+    "sculptures"
+   ],
+   "dogru": 2,
+   "ipucu": "Metalden yapılan insan figürleri.",
+   "aciklama": "Metalden insan figürleri {{sculptures}}: heykeller. (WB s. 22)",
+   "kavram": "sculpture"
+  }
+ ]
+}
