@@ -1,0 +1,776 @@
+{
+ "id": "u3k3",
+ "unite": "Unit 3: Biographies",
+ "baslik": "Geçmişi Sorma ve Tarihler (When were you born?)",
+ "sayfalar": "s. 45–62",
+ "giris": "Bu konuda birinin hayatını soru sorarak öğreneceğiz: ne zaman, nerede, neden? Sonra cevaptaki tarihleri doğru söylemeyi çalışacağız. Kitaptaki ilk soru: {{When and where were you born?}} Yani: Ne zaman ve nerede doğdun?",
+ "kavramlar": [
+  {
+   "ad": "When / Where were you born?",
+   "renk": "#ff8fb1",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='64' height='50' rx='14' fill='#ff8fb1'/><path d='M30 64l-6 14 18-12z' fill='#ff8fb1'/><path d='M39 34q0-9 7-9t7 9q0 5-7 8v5' stroke='#1b2340' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='46' cy='55' r='3' fill='#1b2340'/><rect x='62' y='78' width='46' height='6' rx='3' fill='#c98a5a'/><rect x='62' y='96' width='46' height='6' rx='3' fill='#c98a5a'/><circle cx='76' cy='90' r='7' fill='#ffd6b0'/><rect x='84' y='86' width='20' height='9' rx='4' fill='#ff8fb1'/><rect x='64' y='82' width='3' height='16' fill='#c98a5a'/><rect x='103' y='82' width='3' height='16' fill='#c98a5a'/></svg>",
+   "aciklama": "Ne zaman ya da nerede doğduğunu sorar. Doğum sorusunda {{did}} değil, {{were}} ya da {{was}} kullanılır.",
+   "ek": "Biri için: {{When was Samuel Morse born?}} (s. 48) Cevap: {{He was born in 1791.}}",
+   "akilda": "ne zaman / nerede doğdun?",
+   "ornek": "When and where were you born?",
+   "ornekTr": "Ne zaman ve nerede doğdun? (s. 57)",
+   "soru": {
+    "soru": "{{When was Samuel Morse born?}} Hangisi cevap?",
+    "secenekler": [
+     "He was born in 1791.",
+     "He died in 1872.",
+     "He was born in Massachusetts."
+    ],
+    "dogru": 0,
+    "ipucu": "{{When}} zamanı sorar; doğum yılını bul.",
+    "aciklama": "{{When}} zaman sorar: {{He was born in 1791.}} (s. 48)"
+   },
+   "formul": [
+    [
+     {
+      "t": "When / Where",
+      "r": "diger",
+      "alt": "ne zaman / nerede"
+     },
+     {
+      "t": "were",
+      "r": "yard"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "born?",
+      "r": "fiil"
+     }
+    ],
+    [
+     {
+      "t": "When",
+      "r": "diger"
+     },
+     {
+      "t": "was",
+      "r": "yard"
+     },
+     {
+      "t": "he / she",
+      "r": "ozne"
+     },
+     {
+      "t": "born?",
+      "r": "fiil"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "When did you …?",
+   "renk": "#4fb3ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='64' height='50' rx='14' fill='#4fb3ff'/><path d='M30 64l-6 14 18-12z' fill='#4fb3ff'/><path d='M39 34q0-9 7-9t7 9q0 5-7 8v5' stroke='#1b2340' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='46' cy='55' r='3' fill='#1b2340'/><circle cx='86' cy='86' r='20' fill='#e9ecf5'/><circle cx='86' cy='86' r='20' fill='none' stroke='#4fb3ff' stroke-width='4'/><path d='M86 74v12l8 5' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Geçmişteki bir olayın ne zaman olduğunu sorar. {{did}}'den sonra fiil yalın kalır.",
+   "ek": "Cevap bir zaman söyler: {{In 1976.}} ya da {{Two years later.}} (s. 52)",
+   "akilda": "ne zaman …-dın?",
+   "ornek": "When did you get married?",
+   "ornekTr": "Ne zaman evlendin? (s. 52)",
+   "soru": {
+    "soru": "{{When did you get married?}} Bu soru neyi soruyor?",
+    "secenekler": [
+     "Nerede evlendiğini",
+     "Ne zaman evlendiğini",
+     "Neden evlendiğini"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta saat vardı. {{When}} ne demekti?",
+    "aciklama": "{{When}} ne zaman demektir: ne zaman evlendin? (s. 52)"
+   },
+   "formul": [
+    [
+     {
+      "t": "When",
+      "r": "diger",
+      "alt": "ne zaman"
+     },
+     {
+      "t": "did",
+      "r": "yard",
+      "alt": "geçmiş"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "get married?",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "Why did you …?",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='14' width='52' height='42' rx='14' fill='#f2c14e'/><path d='M28 54l-6 14 18-12z' fill='#f2c14e'/><path d='M32.4 27.2q0-9 5.6000000000000005-9t5.6000000000000005 9q0 5-5.6000000000000005 8v5' stroke='#1b2340' stroke-width='4.0' fill='none' stroke-linecap='round'/><circle cx='38' cy='44.0' r='2.4000000000000004' fill='#1b2340'/><rect x='58' y='60' width='50' height='42' rx='14' fill='#e9ecf5'/><path d='M96 100l6 12-18-10z' fill='#e9ecf5'/><circle cx='83' cy='76' r='9' fill='#f2c14e'/><rect x='79' y='85' width='8' height='7' rx='2' fill='#9aa7c7'/><path d='M83 62v-4M95 70l3-2M71 70l-3-2' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Geçmişte bir şeyi neden yaptığını sorar. Cevap çoğu zaman {{Because}} ile başlar.",
+   "ek": "Kitapta bir cevap da {{To}} ile: {{To find a better job in here.}} (s. 61)",
+   "akilda": "neden …-dın?",
+   "ornek": "Why did you move to New York?",
+   "ornekTr": "Neden New York'a taşındın? (s. 57)",
+   "soru": {
+    "soru": "{{Why did you move to New York?}} Cevap hangi kelimeyle başlar?",
+    "secenekler": [
+     "In",
+     "Yes",
+     "Because"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta soru balonunun karşısında bir ampul, yani bir sebep vardı.",
+    "aciklama": "{{Why}} sebep sorar; cevap {{Because}} ile başlar. (s. 57)"
+   },
+   "formul": [
+    [
+     {
+      "t": "Why",
+      "r": "diger",
+      "alt": "neden"
+     },
+     {
+      "t": "did",
+      "r": "yard",
+      "alt": "geçmiş"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "move to New York?",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     }
+    ],
+    [
+     {
+      "t": "Because",
+      "r": "diger",
+      "alt": "çünkü"
+     },
+     {
+      "t": "I wanted to make music",
+      "r": "kelime"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "Did you …?",
+   "renk": "#b48cff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='14' width='64' height='46' rx='14' fill='#b48cff'/><path d='M30 58l-6 14 18-12z' fill='#b48cff'/><path d='M39 30q0-9 7-9t7 9q0 5-7 8v5' stroke='#1b2340' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='46' cy='51' r='3' fill='#1b2340'/><circle cx='40' cy='92' r='15' fill='#3cc47c'/><path d='M33 92l5 5 9-10' stroke='#e9ecf5' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='84' cy='92' r='15' fill='#ff5c5c'/><path d='M78 86l12 12M90 86l-12 12' stroke='#e9ecf5' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Geçmişte bir şeyi yapıp yapmadığını sorar. Cevap evet ya da hayırdır.",
+   "ek": "Kitapta: {{Did you always live in Manchester?}} — {{No. I was born in Birmingham.}} (s. 52)",
+   "akilda": "…-dın mı?",
+   "ornek": "Did you always live in Manchester?",
+   "ornekTr": "Hep Manchester'da mı yaşadın? (s. 52)",
+   "soru": {
+    "soru": "{{Did you always live in Manchester?}} Bu soruya nasıl cevap verilir?",
+    "secenekler": [
+     "Evet ya da hayır ile",
+     "Bir yıl söyleyerek",
+     "Bir sebep söyleyerek"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta bir tik ve bir çarpı vardı.",
+    "aciklama": "{{Did you …?}} evet/hayır sorusudur: {{No.}} (s. 52)"
+   },
+   "formul": [
+    [
+     {
+      "t": "Did",
+      "r": "yard",
+      "alt": "geçmiş"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "always live",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     },
+     {
+      "t": "in Manchester?",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "in / on + tarih",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='24' width='76' height='76' rx='10' fill='#e9ecf5'/><rect x='22' y='24' width='76' height='20' rx='10' fill='#ff7a33'/><rect x='22' y='36' width='76' height='8' fill='#ff7a33'/><path d='M40 18v12M80 18v12' stroke='#e9ecf5' stroke-width='5' stroke-linecap='round'/><text x='60' y='84' text-anchor='middle' font-family='sans-serif' font-size='34' font-weight='700' fill='#1b2340'>30</text></svg>",
+   "aciklama": "Yalnız yıl varsa {{in}}, gün ve ay da varsa {{on}} kullanılır.",
+   "ek": "{{Louis Braille was born in 1809.}} — {{Mehmed II was born on 30th March 1432.}} (s. 49)",
+   "akilda": "yıl in, gün on",
+   "ornek": "He died on 3rd May, 1481.",
+   "ornekTr": "3 Mayıs 1481'de öldü. (s. 49)",
+   "soru": {
+    "soru": "{{Mehmed II was born on 30th March 1432.}} Burada neden {{on}} var?",
+    "secenekler": [
+     "Yalnız yıl var",
+     "Gün ve ay da var",
+     "Şehir adı var"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta takvimde bir gün yazıyordu.",
+    "aciklama": "Gün ve ay varsa {{on}}: {{on 30th March 1432}}. (s. 49)"
+   },
+   "formul": [
+    [
+     {
+      "t": "in",
+      "r": "kelime",
+      "alt": "yalnız yıl"
+     },
+     {
+      "t": "1809",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "on",
+      "r": "kelime",
+      "alt": "gün + ay"
+     },
+     {
+      "t": "3rd May, 1481",
+      "r": "diger"
+     }
+    ]
+   ]
+  },
+  {
+   "ad": "at the age of",
+   "renk": "#3cc4c4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='66' width='72' height='30' rx='6' fill='#ffd1df'/><path d='M24 76q9 6 18 0t18 0 18 0 18 0' stroke='#ff5c8a' stroke-width='4' fill='none'/><rect x='16' y='96' width='88' height='6' rx='3' fill='#c98a5a'/><rect x='37' y='44' width='6' height='22' rx='2' fill='#e9ecf5'/><path d='M40 32c4 5 4 8 0 10-4-2-4-5 0-10z' fill='#f2c14e'/><rect x='57' y='44' width='6' height='22' rx='2' fill='#e9ecf5'/><path d='M60 32c4 5 4 8 0 10-4-2-4-5 0-10z' fill='#f2c14e'/><rect x='77' y='44' width='6' height='22' rx='2' fill='#e9ecf5'/><path d='M80 32c4 5 4 8 0 10-4-2-4-5 0-10z' fill='#f2c14e'/></svg>",
+   "aciklama": "… yaşında demektir. Bir olayın kaç yaşındayken olduğunu söyler.",
+   "ek": "Kitapta: {{graduate from the Paris Conservatory at the age of 15}} (s. 53)",
+   "akilda": "… yaşında",
+   "ornek": "He died in 2010 at the age of 72.",
+   "ornekTr": "2010'da 72 yaşında öldü. (s. 59)",
+   "soru": {
+    "soru": "{{He died in 2010 at the age of 72.}} Ne anlatıyor?",
+    "secenekler": [
+     "72 yıl önce öldü",
+     "1972'de öldü",
+     "72 yaşındayken öldü"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta mumlu bir doğum günü pastası vardı.",
+    "aciklama": "{{at the age of 72}} 72 yaşında demektir. (s. 59)"
+   },
+   "formul": [
+    [
+     {
+      "t": "at the age of",
+      "r": "kelime",
+      "alt": "… yaşında"
+     },
+     {
+      "t": "72",
+      "r": "diger"
+     }
+    ]
+   ]
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bir soru kalıbı mı, yoksa tarih ve yaş kalıbı mı?",
+   "kutular": [
+    {
+     "etiket": "Soru kalıbı",
+     "uyeler": [
+      "When / Where were you born?",
+      "When did you …?",
+      "Why did you …?",
+      "Did you …?"
+     ]
+    },
+    {
+     "etiket": "Tarih ve yaş",
+     "uyeler": [
+      "in / on + tarih",
+      "at the age of"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki bilgi yarışmasında Rick beş sorudan dördünü bildi. Marie Curie radyumdan önce polonyumu keşfetmişti. (s. 50)",
+  "Mehmed II iki kez sultan oldu: önce 12, sonra 19 yaşındayken. (s. 49)"
+ ],
+ "akildaKalsin": [
+  "Doğum: {{When were you born?}} — {{I was born in 1987.}}",
+  "Diğer olaylar: {{When did you …?}} — {{did}}'den sonra fiil yalın.",
+  "Sebep: {{Why did you …?}} — {{Because …}}",
+  "Evet/hayır: {{Did you …?}} — {{Yes.}} ya da {{No.}}",
+  "Yıl {{in 1809}}; gün ve ay {{on 3rd May}}; yaş {{at the age of 72}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden {{When did you born?}} demiyoruz?",
+   "cevap": "Kitapta doğum hep {{were/was}} ile soruluyor: {{When were you born?}} (s. 52) Diğer olaylar {{did}} ile: {{When did you get married?}} (s. 52)"
+  },
+  {
+   "soru": "{{did}}'den sonra fiil neden yalın?",
+   "cevap": "Geçmişi {{did}} zaten gösteriyor, fiil değişmez: {{Why did you move to New York?}} (s. 57) {{moved}} demeyiz."
+  },
+  {
+   "soru": "{{in}} mi, {{on}} mu?",
+   "cevap": "Yalnız yıl varsa {{in}}: {{in 1809}}. Gün ve ay varsa {{on}}: {{on 3rd May, 1481}}. (s. 49)"
+  },
+  {
+   "soru": "Kitapta tarihler nasıl yazılmış?",
+   "cevap": "Çoğunlukla önce gün, sonra ay, sonra yıl: {{30th March 1432}} (s. 49). Bir testte ay önce yazılmış: {{November 10th, 1959}} (s. 62)."
+  },
+  {
+   "soru": "{{Why}} sorusuna başka nasıl cevap verilir?",
+   "cevap": "{{Because}} ile: {{Because I wanted to make music in New York.}} (s. 57) Ya da {{To}} ile: {{To find a better job in here.}} (s. 61)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Büyüklerinden birine soracağın iki İngilizce soru yaz: biri doğumunu, biri başka bir olayı sorsun.",
+   "ornekCevap": "When were you born? When did you get married?",
+   "anahtarlar": [
+    "were",
+    "born",
+    "did"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi soruyu duydun?",
+   "secenekler": [
+    "When was Newton born?",
+    "When did Newton die?",
+    "Where was Newton born?"
+   ],
+   "dogru": 0,
+   "ipucu": "Soru kelimesine ve olaya dikkat et: ne zaman mı, nerede mi? Doğdu mu, öldü mü?",
+   "aciklama": "Duyduğun soru {{When was Newton born?}} (s. 50)",
+   "dinle": "When was Newton born?",
+   "kavram": "When / Where were you born?"
+  },
+  {
+   "soru": "Dinle. Hangi soruyu duydun?",
+   "secenekler": [
+    "When did you move to New York?",
+    "Why did you move to New York?",
+    "Why did you go to New York?"
+   ],
+   "dogru": 1,
+   "ipucu": "İlk kelimeyi dikkatle dinle: zaman mı, sebep mi soruyor?",
+   "aciklama": "Duyduğun soru {{Why did you move to New York?}} (s. 57)",
+   "dinle": "Why did you move to New York?",
+   "kavram": "Why did you …?"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Mehmed II was born on 13th March 1432 in Edirne.",
+    "Mehmed II was born on 30th March 1453 in Edirne.",
+    "Mehmed II was born on 30th March 1432 in Edirne."
+   ],
+   "dogru": 2,
+   "ipucu": "Günü ve yılı ayrı ayrı dinle. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{Mehmed II was born on 30th March 1432 in Edirne.}} (s. 49)",
+   "dinle": "Mehmed II was born on 30th March 1432 in Edirne.",
+   "kavram": "in / on + tarih"
+  },
+  {
+   "soru": "{{___ did you get married?}} — {{In 2014.}} Boşluğa ne gelir?",
+   "secenekler": [
+    "Why",
+    "When",
+    "Where"
+   ],
+   "dogru": 1,
+   "ipucu": "Cevap bir yıl. Hangi soru kelimesi zamanı sorar?",
+   "aciklama": "Cevap bir yıl olduğu için soru {{When}}: {{When did you get married?}} (s. 52, s. 57)",
+   "kavram": "When did you …?"
+  },
+  {
+   "soru": "{{Why did you move to New York?}} Hangisi uygun cevap?",
+   "secenekler": [
+    "Because I wanted to make music in New York.",
+    "In 1987.",
+    "In London."
+   ],
+   "dogru": 0,
+   "ipucu": "{{Why}} sebep sorar. Sebep hangi kelimeyle başlıyordu?",
+   "aciklama": "Sebep {{Because}} ile: {{Because I wanted to make music in New York.}} (s. 57)",
+   "kavram": "Why did you …?"
+  },
+  {
+   "soru": "Hangi soru doğru yazılmış?",
+   "secenekler": [
+    "Did you always lived in Manchester?",
+    "Do you always lived in Manchester?",
+    "Did you always live in Manchester?"
+   ],
+   "dogru": 2,
+   "ipucu": "{{Did}}'den sonra fiil nasıl kalıyordu?",
+   "aciklama": "{{Did}}'den sonra fiil yalın: {{Did you always live in Manchester?}} (s. 52)",
+   "kavram": "Did you …?",
+   "yardim": {
+    "adimlar": [
+     "Geçmiş zaman sorusu {{Did}} ile başlar.",
+     "{{Did}} geçmişi gösterir; fiile {{-ed}} eklenmez.",
+     "Hangi şıkta hem {{Did}} hem yalın {{live}} var?"
+    ]
+   }
+  },
+  {
+   "soru": "{{Mehmed II died ___ 3rd May, 1481.}}",
+   "secenekler": [
+    "in",
+    "at",
+    "on"
+   ],
+   "dogru": 2,
+   "ipucu": "Tarihte gün ve ay da var mı?",
+   "aciklama": "Gün ve ay varsa {{on}}: {{He died on 3rd May, 1481.}} (s. 49)",
+   "kavram": "in / on + tarih"
+  },
+  {
+   "soru": "{{Louis Braille was born ___ 1809.}}",
+   "secenekler": [
+    "in",
+    "on",
+    "at"
+   ],
+   "dogru": 0,
+   "ipucu": "Burada yalnız yıl var.",
+   "aciklama": "Yalnız yıl varsa {{in}}: {{in 1809}}. (s. 49)",
+   "kavram": "in / on + tarih"
+  },
+  {
+   "soru": "{{He died in 2010 at the age of 72.}} Oliver öldüğünde kaç yaşındaydı?",
+   "secenekler": [
+    "2010",
+    "65",
+    "72"
+   ],
+   "dogru": 2,
+   "ipucu": "{{at the age of}}'tan sonraki sayıya bak.",
+   "aciklama": "{{at the age of 72}}: 72 yaşında. 2010 ise yıl. (s. 59)",
+   "kavram": "at the age of"
+  },
+  {
+   "soru": "{{When were you born?}} Hangisi uygun cevap?",
+   "secenekler": [
+    "In Phoenix, Arizona.",
+    "Well... A long time ago, in 1944.",
+    "To find a better job."
+   ],
+   "dogru": 1,
+   "ipucu": "{{When}} zaman sorar. Hangi şıkta yıl var?",
+   "aciklama": "Zaman soruluyor: {{in 1944}}. {{Phoenix}} bir yer, öteki bir sebep. (s. 61)",
+   "kavram": "When / Where were you born?"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "ago",
+   "tr": "önce (… yıl önce)",
+   "ornek": "She graduated from university four years ago.",
+   "ornekTr": "Dört yıl önce üniversiteden mezun oldu. (s. 57)"
+  },
+  {
+   "en": "later",
+   "tr": "sonra",
+   "ornek": "Two years later after I got married.",
+   "ornekTr": "Evlendikten iki yıl sonra. (s. 52)"
+  },
+  {
+   "en": "because",
+   "tr": "çünkü",
+   "ornek": "Because I wanted to make music in New York.",
+   "ornekTr": "Çünkü New York'ta müzik yapmak istedim. (s. 57)"
+  },
+  {
+   "en": "grandad",
+   "tr": "dede"
+  },
+  {
+   "en": "timeline",
+   "tr": "zaman çizelgesi",
+   "ornek": "Timeline of my teacher, Mr John.",
+   "ornekTr": "Öğretmenim Mr John'un zaman çizelgesi. (s. 60)"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "When were you born?",
+   "tr": "Ne zaman doğdun? (s. 52)"
+  },
+  {
+   "en": "I was born in London in 1987.",
+   "tr": "1987'de Londra'da doğdum. (s. 57)"
+  },
+  {
+   "en": "When did you get married?",
+   "tr": "Ne zaman evlendin? (s. 52)"
+  },
+  {
+   "en": "Why did you move to New York?",
+   "tr": "Neden New York'a taşındın? (s. 57)"
+  },
+  {
+   "en": "Did you always live in Manchester?",
+   "tr": "Hep Manchester'da mı yaşadın? (s. 52)"
+  },
+  {
+   "en": "He died at the age of 72.",
+   "tr": "72 yaşında öldü. (s. 59)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "When did you got married?",
+   "yanlis": "got",
+   "secenekler": [
+    "get",
+    "gets",
+    "getting"
+   ],
+   "dogru": 0,
+   "tr": "Ne zaman evlendin?",
+   "aciklama": "{{did}}'den sonra fiil yalın: {{get married}}. (s. 52)"
+  },
+  {
+   "cumle": "Why did you moved to New York?",
+   "yanlis": "moved",
+   "secenekler": [
+    "moving",
+    "move",
+    "moves"
+   ],
+   "dogru": 1,
+   "tr": "Neden New York'a taşındın?",
+   "aciklama": "{{did}}'den sonra fiil yalın: {{move}}. (s. 57)"
+  },
+  {
+   "cumle": "When did you born?",
+   "yanlis": "did",
+   "secenekler": [
+    "are",
+    "was",
+    "were"
+   ],
+   "dogru": 2,
+   "tr": "Ne zaman doğdun?",
+   "aciklama": "Doğum {{were}} ile sorulur: {{When were you born?}} (s. 52)"
+  },
+  {
+   "cumle": "Mehmed II was born in 30th March 1432.",
+   "yanlis": "in",
+   "secenekler": [
+    "on",
+    "at",
+    "to"
+   ],
+   "dogru": 0,
+   "tr": "Mehmed II 30 Mart 1432'de doğdu.",
+   "aciklama": "Gün ve ay varsa {{on}}. (s. 49)"
+  },
+  {
+   "cumle": "Louis Braille was born on 1809.",
+   "yanlis": "on",
+   "secenekler": [
+    "at",
+    "in",
+    "by"
+   ],
+   "dogru": 1,
+   "tr": "Louis Braille 1809'da doğdu.",
+   "aciklama": "Yalnız yıl varsa {{in}}. (s. 49)"
+  },
+  {
+   "cumle": "He died in 2010 at the age 72.",
+   "yanlis": "age",
+   "secenekler": [
+    "ages",
+    "age to",
+    "age of"
+   ],
+   "dogru": 2,
+   "tr": "2010'da 72 yaşında öldü.",
+   "aciklama": "Kalıp tam olarak {{at the age of}}. (s. 59)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Mehmed II and Time to Quiz",
+  "sayfa": "s. 49–50",
+  "sozluk": {
+   "Sultan": "sultan",
+   "twice": "iki kez",
+   "capture": "ele geçirmek",
+   "impossible": "imkânsız",
+   "conquered": "fethetti",
+   "ruled": "yönetti",
+   "Ottoman Empire": "Osmanlı İmparatorluğu",
+   "brave": "cesur",
+   "statesman": "devlet adamı",
+   "inventors": "mucitler",
+   "discoverers": "kâşifler",
+   "gravity": "yer çekimi",
+   "printing machine": "matbaa makinesi",
+   "element": "element",
+   "Congratulations": "Tebrikler"
+  },
+  "bolumler": [
+   {
+    "baslik": "Mehmed II",
+    "cumleler": [
+     {
+      "en": "Mehmed II was born on 30th March 1432 in Edirne.",
+      "tr": "Mehmed II 30 Mart 1432'de Edirne'de doğdu."
+     },
+     {
+      "en": "His father was Sultan Murad II.",
+      "tr": "Babası Sultan II. Murad'dı."
+     },
+     {
+      "en": "Mehmed II became Sultan twice, first when he was 12 and again when he was 19.",
+      "tr": "Mehmed II iki kez sultan oldu: önce 12 yaşındayken, sonra 19 yaşındayken."
+     },
+     {
+      "en": "He really wanted to capture Constantinople.",
+      "tr": "Konstantinopolis'i ele geçirmeyi çok istiyordu."
+     },
+     {
+      "en": "Although everybody thought it was impossible, Mehmed conquered the city in 1453.",
+      "tr": "Herkes bunun imkânsız olduğunu düşünse de Mehmed şehri 1453'te fethetti."
+     },
+     {
+      "en": "He ruled the Ottoman Empire for 30 years.",
+      "tr": "Osmanlı İmparatorluğu'nu 30 yıl yönetti."
+     },
+     {
+      "en": "He was a brave soldier and an excellent statesman.",
+      "tr": "Cesur bir asker ve mükemmel bir devlet adamıydı."
+     },
+     {
+      "en": "He died on 3rd May, 1481.",
+      "tr": "3 Mayıs 1481'de öldü."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Mehmed II ne zaman doğdu?",
+      "secenekler": [
+       "30 Mart 1432",
+       "3 Mayıs 1481",
+       "1453"
+      ],
+      "dogru": 0,
+      "ipucu": "{{was born on}} kalıbını bul.",
+      "aciklama": "{{Mehmed II was born on 30th March 1432 in Edirne.}}"
+     },
+     {
+      "soru": "Mehmed II şehri hangi yıl fethetti?",
+      "secenekler": [
+       "1432",
+       "1481",
+       "1453"
+      ],
+      "dogru": 2,
+      "ipucu": "{{conquered the city}} kalıbını bul.",
+      "aciklama": "{{Mehmed conquered the city in 1453.}}"
+     }
+    ]
+   },
+   {
+    "baslik": "Time to Quiz",
+    "cumleler": [
+     {
+      "en": "Carl Reno: Today, our topic is inventors and discoverers.",
+      "tr": "Carl Reno: Bugünkü konumuz mucitler ve kâşifler."
+     },
+     {
+      "en": "Carl Reno: When was Newton born? What did he discover?",
+      "tr": "Carl Reno: Newton ne zaman doğdu? Ne keşfetti?"
+     },
+     {
+      "en": "Rick: In 1642, the gravity.",
+      "tr": "Rick: 1642'de; yer çekimini."
+     },
+     {
+      "en": "Carl Reno: Correct. What did Johannes Gutenberg invent and when?",
+      "tr": "Carl Reno: Doğru. Johannes Gutenberg ne icat etti ve ne zaman?"
+     },
+     {
+      "en": "Rick: Printing machine. In 1447.",
+      "tr": "Rick: Matbaa makinesi. 1447'de."
+     },
+     {
+      "en": "Carl Reno: Correct. What was the first element Marie Curie discovered?",
+      "tr": "Carl Reno: Doğru. Marie Curie'nin keşfettiği ilk element neydi?"
+     },
+     {
+      "en": "Rick: Radium.",
+      "tr": "Rick: Radyum."
+     },
+     {
+      "en": "Carl Reno: The answer is... WRONG! She discovered an element called Polonium before Radium.",
+      "tr": "Carl Reno: Cevap… YANLIŞ! Radyumdan önce polonyum adlı bir element keşfetti."
+     },
+     {
+      "en": "When did Wilhelm Conrad Röntgen win the Nobel Prize?",
+      "tr": "Wilhelm Conrad Röntgen Nobel Ödülü'nü ne zaman kazandı?"
+     },
+     {
+      "en": "Rick: In 1901.",
+      "tr": "Rick: 1901'de."
+     },
+     {
+      "en": "Carl Reno: Correct. Congratulations, Rick.",
+      "tr": "Carl Reno: Doğru. Tebrikler, Rick."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Rick hangi soruyu yanlış cevapladı?",
+      "secenekler": [
+       "Marie Curie'nin ilk elementi",
+       "Newton'ın doğum yılı",
+       "Röntgen'in ödül yılı"
+      ],
+      "dogru": 0,
+      "ipucu": "{{WRONG}} kelimesini bul.",
+      "aciklama": "{{She discovered an element called Polonium before Radium.}} Rick radyum demişti."
+     },
+     {
+      "soru": "Röntgen Nobel Ödülü'nü hangi yıl kazandı?",
+      "secenekler": [
+       "1447",
+       "1901",
+       "1642"
+      ],
+      "dogru": 1,
+      "ipucu": "{{When did Wilhelm Conrad Röntgen win}} sorusunun cevabını bul.",
+      "aciklama": "{{In 1901.}}"
+     }
+    ]
+   }
+  ]
+ }
+}

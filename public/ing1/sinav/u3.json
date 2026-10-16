@@ -249,6 +249,128 @@
     }
    ],
    "aciklama": "Manchester'da doğdu, eşiyle festivalde tanıştı ve birkaç müzik ödülü kazandı (s. 59)."
+  },
+  {
+   "id": "e3-15",
+   "konu": "u3k3",
+   "kavram": "When did you …?",
+   "tur": "secim",
+   "soru": "{{Kevin: ___ did you get married? Tom: I met my wife in 2014, and we got married in the same year.}}",
+   "secenekler": [
+    "Why",
+    "Where",
+    "When",
+    "Who"
+   ],
+   "dogru": 2,
+   "aciklama": "Cevap bir yıl: zaman soran {{When}} gelir (s. 57)."
+  },
+  {
+   "id": "e3-16",
+   "konu": "u3k3",
+   "kavram": "Why did you …?",
+   "tur": "secim",
+   "soru": "{{David: ___? Mr Williams: To find a better job in here.}} David hangi soruyu sordu?",
+   "secenekler": [
+    "When were you born",
+    "Why did you move to New York",
+    "Where were you born",
+    "Did you get married"
+   ],
+   "dogru": 1,
+   "aciklama": "Cevap bir sebep söylüyor; sebebi {{Why}} sorar (s. 61)."
+  },
+  {
+   "id": "e3-17",
+   "konu": "u3k3",
+   "kavram": "in / on + tarih",
+   "tur": "bosluk",
+   "havuz": [
+    "by",
+    "to"
+   ],
+   "cumleler": [
+    {
+     "c": "Louis Braille was born ___ 1809.",
+     "cevap": "in"
+    },
+    {
+     "c": "Mehmed II died ___ 3rd May, 1481.",
+     "cevap": "on"
+    },
+    {
+     "c": "He died in 2010 ___ the age of 72.",
+     "cevap": "at"
+    }
+   ],
+   "aciklama": "Yıl {{in}}, gün ve ay {{on}}, yaş {{at the age of}} (s. 49, s. 59)."
+  },
+  {
+   "id": "e3-18",
+   "konu": "u3k3",
+   "kavram": "When / Where were you born?",
+   "tur": "eslestir",
+   "soru": "Soruları cevaplarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "When were you born?",
+     "sag": "In 1946."
+    },
+    {
+     "sol": "Where were you born?",
+     "sag": "In Phoenix, Arizona."
+    },
+    {
+     "sol": "Why did you move to New York?",
+     "sag": "Because I wanted to make music."
+    },
+    {
+     "sol": "Did you always live in Manchester?",
+     "sag": "No. I was born in Birmingham."
+    }
+   ],
+   "aciklama": "{{When}} zaman, {{Where}} yer, {{Why}} sebep, {{Did}} evet/hayır sorar (s. 52, s. 57, s. 61)."
+  },
+  {
+   "id": "e3-19",
+   "konu": "u3k3",
+   "kavram": "When / Where were you born?",
+   "tur": "dy",
+   "ifade": "{{When did you born?}} doğru yazılmış bir sorudur.",
+   "dogru": false,
+   "duzeltme": "Doğru soru: {{When were you born?}}",
+   "aciklama": "Doğum {{were}} ile sorulur: {{When were you born?}} (s. 52)."
+  },
+  {
+   "id": "e3-20",
+   "konu": "u3k3",
+   "kavram": "at the age of",
+   "tur": "kisa",
+   "soru": "Boşluğa gelen kelimeyi yaz: {{He died at the ___ of 72.}}",
+   "yanit": "age",
+   "aciklama": "Kalıp {{at the age of}}: … yaşında (s. 59)."
+  },
+  {
+   "id": "e3-21",
+   "konu": "u3k3",
+   "kavram": "When did you …?",
+   "tur": "dytablo",
+   "soru": "Time to Quiz yarışmasına göre D ya da Y seç.",
+   "ifadeler": [
+    {
+     "s": "Newton was born in 1642.",
+     "d": true
+    },
+    {
+     "s": "Gutenberg invented the printing machine in 1447.",
+     "d": true
+    },
+    {
+     "s": "Marie Curie discovered Radium first.",
+     "d": false
+    }
+   ],
+   "aciklama": "Marie Curie önce polonyumu keşfetti; diğer iki cevap doğru sayıldı (s. 50)."
   }
  ]
 }

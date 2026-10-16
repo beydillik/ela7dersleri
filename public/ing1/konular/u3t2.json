@@ -1,0 +1,238 @@
+{
+ "id": "u3t2",
+ "tur": "tarama",
+ "unite": "Unit 3: Biographies",
+ "baslik": "Ünite 3 Sonu Taraması",
+ "sayfalar": "Konu 1–3 · s. 45–62",
+ "giris": "Ünite 3 bitti! Bütün ünitenin kısa bir taramasını yapalım. Önce özetleri oku ve kartlara dokun, sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce hayat olaylarını öğrendik: doğdu, büyüdü, mezun oldu, evlendi. Sonra bu olayları soru sorarak öğrenmeyi ve tarihlerini söylemeyi. Bir biyografi röportajında üçü birlikte kullanılır: {{When did you graduate?}} — {{In 2008.}}",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Doğmak {{was born}}; büyümek {{grew up}}.",
+    "Taşınmak {{moved}}; kalmak {{stayed}}.",
+    "Okumak {{studied}}; mezun olmak {{graduated from}}."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Nişanlanmak {{get engaged}}; evlenmek {{got married}}.",
+    "Çocuk yetiştirmek {{raised}}; meslek hayatı {{career}}.",
+    "Ödül {{award}}; ölmek {{died}}."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Doğum: {{When were you born?}}",
+    "Diğer olaylar: {{When did you get married?}} — fiil yalın.",
+    "Yıl {{in 1809}}, gün {{on 3rd May}}, yaş {{at the age of 72}}."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu bir hayat olayı mı, soru kalıbı mı, tarih ve yaş kalıbı mı?",
+   "kutular": [
+    {
+     "etiket": "Hayat olayı",
+     "uyeler": [
+      "be born",
+      "graduate",
+      "get married",
+      "die"
+     ]
+    },
+    {
+     "etiket": "Soru kalıbı",
+     "uyeler": [
+      "When did you …?",
+      "Why did you …?",
+      "Did you …?"
+     ]
+    },
+    {
+     "etiket": "Tarih ve yaş",
+     "uyeler": [
+      "in / on + tarih",
+      "at the age of"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi soruyu duydun?",
+   "secenekler": [
+    "When did you graduate from primary school?",
+    "When did you graduate from university?",
+    "Where did you grow up?"
+   ],
+   "dogru": 0,
+   "ipucu": "Hangi okuldan mezun olmayı soruyor? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun soru {{When did you graduate from primary school?}} (s. 60)",
+   "dinle": "When did you graduate from primary school?",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "When did you …?"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "graduate"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi soruyu duydun?",
+   "secenekler": [
+    "When did you grow up?",
+    "Where did you grow up?",
+    "Where were you born?"
+   ],
+   "dogru": 1,
+   "ipucu": "Soru kelimesi ve fiil: nerede mi, ne zaman mı? Büyümek mi, doğmak mı?",
+   "aciklama": "Duyduğun soru {{Where did you grow up?}} (s. 60)",
+   "dinle": "Where did you grow up?",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "grow up"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "When / Where were you born?"
+    }
+   ]
+  },
+  {
+   "soru": "{{When did Bill graduate?}} — {{___ 2008.}}",
+   "secenekler": [
+    "On",
+    "At",
+    "In"
+   ],
+   "dogru": 2,
+   "ipucu": "Cevapta yalnız yıl var.",
+   "aciklama": "Yalnız yıl varsa {{In}}: {{In 2008.}} (s. 56)",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "graduate"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "in / on + tarih"
+    }
+   ]
+  },
+  {
+   "soru": "Hangi soru doğru yazılmış?",
+   "secenekler": [
+    "When did you get married?",
+    "When did you got married?",
+    "When were you get married?"
+   ],
+   "dogru": 0,
+   "ipucu": "Evlilik doğum değil; hangi yardımcı kelime? Sonra fiil nasıl kalır?",
+   "aciklama": "{{did}} + yalın fiil: {{When did you get married?}} (s. 52)",
+   "yardim": {
+    "adimlar": [
+     "Doğum {{were}} ile sorulur; evlilik {{did}} ile.",
+     "{{did}}'den sonra fiil yalın kalır.",
+     "{{get}} mi, {{got}} mu?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "get married"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "When did you …?"
+    }
+   ]
+  },
+  {
+   "soru": "Oliver 1938'de doğdu ve 65 yaşında sahneyi bıraktı. Hangi yıl bıraktı?",
+   "secenekler": [
+    "2003",
+    "1965",
+    "2010"
+   ],
+   "dogru": 0,
+   "ipucu": "Doğum yılına yaşını ekle.",
+   "aciklama": "1938 + 65 = 2003. {{He stopped performing when he was 65.}} (s. 59)",
+   "yardim": {
+    "adimlar": [
+     "Doğum yılı: 1938.",
+     "{{when he was 65}}: 65 yaşında.",
+     "1938'e 65 ekle."
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "at the age of"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "be born"
+    }
+   ]
+  },
+  {
+   "soru": "{{Did Oliver get married?}} Biyografiye göre cevap hangisi?",
+   "secenekler": [
+    "No. He was always alone.",
+    "Yes. He got married to Helen.",
+    "Yes. He got married in 2010."
+   ],
+   "dogru": 1,
+   "ipucu": "Oliver müzik festivalinde kiminle tanıştı? 2010'da ne oldu?",
+   "aciklama": "{{Oliver met his wife, Helen.}} 2010'da öldü. (s. 59)",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Did you …?"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "get married"
+    }
+   ]
+  },
+  {
+   "soru": "{{When did Atatürk die?}} Hangisi uygun cevap?",
+   "secenekler": [
+    "In Salonica.",
+    "At the age of 12.",
+    "On 10th November, 1938."
+   ],
+   "dogru": 2,
+   "ipucu": "{{When}} zaman sorar; gün ve ay olan şıkkı bul.",
+   "aciklama": "Ölüm tarihi: {{On 10th November, 1938.}} {{Salonica}} doğduğu yer. (s. 46, s. 54)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "die"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "in / on + tarih"
+    }
+   ]
+  }
+ ]
+}

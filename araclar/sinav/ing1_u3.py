@@ -60,4 +60,34 @@ a("u3k2", "award", "dytablo", soru="Oliver Bennett'in biyografisine göre D ya d
   {"s": "Oliver never won an award.", "d": False}],
   aciklama="Manchester'da doğdu, eşiyle festivalde tanıştı ve birkaç müzik ödülü kazandı (s. 59).")
 
+# --- Konu 3: Geçmişi Sorma ve Tarihler
+B, W, Y, D, O, A = ("When / Where were you born?", "When did you …?", "Why did you …?", "Did you …?", "in / on + tarih", "at the age of")
+a("u3k3", W, "secim", soru="{{Kevin: ___ did you get married? Tom: I met my wife in 2014, and we got married in the same year.}}",
+  secenekler=["Why", "Where", "When", "Who"], dogru=2,
+  aciklama="Cevap bir yıl: zaman soran {{When}} gelir (s. 57).")
+a("u3k3", Y, "secim", soru="{{David: ___? Mr Williams: To find a better job in here.}} David hangi soruyu sordu?",
+  secenekler=["When were you born", "Why did you move to New York", "Where were you born", "Did you get married"], dogru=1,
+  aciklama="Cevap bir sebep söylüyor; sebebi {{Why}} sorar (s. 61).")
+a("u3k3", O, "bosluk", havuz=["by", "to"], cumleler=[
+  {"c": "Louis Braille was born ___ 1809.", "cevap": "in"},
+  {"c": "Mehmed II died ___ 3rd May, 1481.", "cevap": "on"},
+  {"c": "He died in 2010 ___ the age of 72.", "cevap": "at"}],
+  aciklama="Yıl {{in}}, gün ve ay {{on}}, yaş {{at the age of}} (s. 49, s. 59).")
+a("u3k3", B, "eslestir", soru="Soruları cevaplarıyla eşleştir.", ciftler=[
+  {"sol": "When were you born?", "sag": "In 1946."},
+  {"sol": "Where were you born?", "sag": "In Phoenix, Arizona."},
+  {"sol": "Why did you move to New York?", "sag": "Because I wanted to make music."},
+  {"sol": "Did you always live in Manchester?", "sag": "No. I was born in Birmingham."}],
+  aciklama="{{When}} zaman, {{Where}} yer, {{Why}} sebep, {{Did}} evet/hayır sorar (s. 52, s. 57, s. 61).")
+a("u3k3", B, "dy", ifade="{{When did you born?}} doğru yazılmış bir sorudur.", dogru=False,
+  duzeltme="Doğru soru: {{When were you born?}}",
+  aciklama="Doğum {{were}} ile sorulur: {{When were you born?}} (s. 52).")
+a("u3k3", A, "kisa", soru="Boşluğa gelen kelimeyi yaz: {{He died at the ___ of 72.}}", yanit="age",
+  aciklama="Kalıp {{at the age of}}: … yaşında (s. 59).")
+a("u3k3", W, "dytablo", soru="Time to Quiz yarışmasına göre D ya da Y seç.", ifadeler=[
+  {"s": "Newton was born in 1642.", "d": True},
+  {"s": "Gutenberg invented the printing machine in 1447.", "d": True},
+  {"s": "Marie Curie discovered Radium first.", "d": False}],
+  aciklama="Marie Curie önce polonyumu keşfetti; diğer iki cevap doğru sayıldı (s. 50).")
+
 H.yaz()
