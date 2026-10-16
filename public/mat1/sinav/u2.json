@@ -277,6 +277,192 @@
    ],
    "dogru": 0,
    "aciklama": "Yüzey alanı bir alandır; cm² ile yazılır. I ve III doğru (s. 129–133)."
+  },
+  {
+   "id": "m2-19",
+   "konu": "u2k4",
+   "kavram": "Hacim",
+   "tur": "secim",
+   "soru": "Bir cismin uzayda kapladığı yere ne denir?",
+   "secenekler": [
+    "Yüzey alanı",
+    "Hacim",
+    "Açınım",
+    "Ayrıt"
+   ],
+   "dogru": 1,
+   "aciklama": "Cismin kapladığı yer hacimdir; yüzey alanı yüzlerin alanları toplamıdır (s. 134–138)."
+  },
+  {
+   "id": "m2-20",
+   "konu": "u2k4",
+   "kavram": "Eş Nesnelerle Ölçme",
+   "tur": "dy",
+   "ifade": "İki kutunun hacmini karşılaştırmak için birini bilyeyle, diğerini küple doldurup sayıları karşılaştırabiliriz.",
+   "dogru": false,
+   "duzeltme": "İki kutu da aynı eş nesnelerle doldurulmalıdır.",
+   "aciklama": "Farklı nesnelerle sayılan sonuçlar karşılaştırılamaz (s. 134–138)."
+  },
+  {
+   "id": "m2-21",
+   "konu": "u2k4",
+   "kavram": "Birim Küp Cinsinden Hacim",
+   "tur": "kisa",
+   "soru": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+   "yanit": "12",
+   "sayi": true,
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='114.0,121.0 148.0,121.0 148.0,87.0 114.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,87.0 148.0,87.0 165.0,70.0 131.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,121.0 165.0,104.0 165.0,70.0 148.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,121.0 182.0,121.0 182.0,87.0 148.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 182.0,87.0 199.0,70.0 165.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,121.0 199.0,104.0 199.0,70.0 182.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,121.0 216.0,121.0 216.0,87.0 182.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 216.0,87.0 233.0,70.0 199.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,121.0 233.0,104.0 233.0,70.0 216.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,87.0 148.0,87.0 148.0,53.0 114.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,53.0 148.0,53.0 165.0,36.0 131.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 165.0,70.0 165.0,36.0 148.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 182.0,87.0 182.0,53.0 148.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,53.0 182.0,53.0 199.0,36.0 165.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 199.0,70.0 199.0,36.0 182.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 216.0,87.0 216.0,53.0 182.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,53.0 216.0,53.0 233.0,36.0 199.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,87.0 233.0,70.0 233.0,36.0 216.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,138.0 131.0,138.0 131.0,104.0 97.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,104.0 131.0,104.0 148.0,87.0 114.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,138.0 148.0,121.0 148.0,87.0 131.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,138.0 165.0,138.0 165.0,104.0 131.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 165.0,104.0 182.0,87.0 148.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 182.0,121.0 182.0,87.0 165.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 199.0,138.0 199.0,104.0 165.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 199.0,104.0 216.0,87.0 182.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,138.0 216.0,121.0 216.0,87.0 199.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,104.0 131.0,104.0 131.0,70.0 97.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,70.0 131.0,70.0 148.0,53.0 114.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 148.0,87.0 148.0,53.0 131.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 165.0,104.0 165.0,70.0 131.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,70.0 165.0,70.0 182.0,53.0 148.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 182.0,87.0 182.0,53.0 165.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 199.0,104.0 199.0,70.0 165.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,70.0 199.0,70.0 216.0,53.0 182.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,104.0 216.0,87.0 216.0,53.0 199.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+   "aciklama": "Alt katta 3 + 3 = 6 küp, iki kat: 12 br³ (s. 134–138)."
+  },
+  {
+   "id": "m2-22",
+   "konu": "u2k4",
+   "kavram": "Kaplamak mı, Doldurmak mı?",
+   "tur": "eslestir",
+   "soru": "Her durumu, bulunması gereken ölçüyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Kutuyu paket kâğıdıyla kaplamak",
+     "sag": "Yüzey alanı"
+    },
+    {
+     "sol": "Kutuya kaç küp sığacağını bulmak",
+     "sag": "Hacim"
+    },
+    {
+     "sol": "Kutunun bir kenarını ölçmek",
+     "sag": "Uzunluk"
+    }
+   ],
+   "aciklama": "Kaplamak yüzey alanı, doldurmak hacimdir."
+  },
+  {
+   "id": "m2-23",
+   "konu": "u2k4",
+   "kavram": "Birim Küp",
+   "tur": "bosluk",
+   "cumleler": [
+    {
+     "c": "Ayrıtlarının her biri 1 birim olan küpe ___ denir.",
+     "cevap": "birim küp"
+    },
+    {
+     "c": "Bir cismin uzayda kapladığı yere ___ denir.",
+     "cevap": "hacim"
+    },
+    {
+     "c": "Bir kutuyu kâğıtla kaplamak için ___ buluruz.",
+     "cevap": "yüzey alanı"
+    }
+   ],
+   "havuz": [
+    "ayrıt",
+    "açınım"
+   ],
+   "aciklama": "Birim küp, hacim ve yüzey alanı tanımları (s. 134–138)."
+  },
+  {
+   "id": "m2-24",
+   "konu": "u2k4",
+   "kavram": "Daha Uygun Birim",
+   "tur": "secim",
+   "soru": "Kutuların hacmini ölçmekle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Pinpon toplarıyla doldurunca aralarında boşluk kalır.",
+    "Hacmi ölçmek için en uygun birim eş küplerdir.",
+    "Farklı nesnelerle ölçülen sonuçlar her zaman aynıdır."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Farklı nesneler farklı sonuç verir; küpler boşluksuz doldurur (s. 134–138)."
+  },
+  {
+   "id": "m2-25",
+   "konu": "u2k5",
+   "kavram": "Hacim Formülü",
+   "tur": "kisa",
+   "soru": "Ayrıtları 4 br, 3 br ve 5 br olan dikdörtgenler prizmasının hacmi kaç br³?",
+   "yanit": "60",
+   "sayi": true,
+   "aciklama": "Taban alanı 4 · 3 = 12, 12 · 5 = 60 br³ (s. 138–143)."
+  },
+  {
+   "id": "m2-26",
+   "konu": "u2k5",
+   "kavram": "Kare Prizma ve Küp",
+   "tur": "secim",
+   "soru": "Bir ayrıtı 3 br olan küpün hacmi kaç br³'tür?",
+   "secenekler": [
+    "9",
+    "18",
+    "27",
+    "12"
+   ],
+   "dogru": 2,
+   "aciklama": "3 · 3 · 3 = 3[[u:3]] = 27 br³ (s. 138–143)."
+  },
+  {
+   "id": "m2-27",
+   "konu": "u2k5",
+   "kavram": "Ayrıt Değişince Hacim",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "Bir prizmanın yüksekliği 2 katına çıkarsa hacmi de 2 katına çıkar.",
+     "d": true
+    },
+    {
+     "s": "Bir küpün her ayrıtı 3 katına çıkarsa hacmi de 3 katına çıkar.",
+     "d": false
+    },
+    {
+     "s": "Bir prizmanın bütün ayrıtları 2 katına çıkarsa hacmi 8 katına çıkar.",
+     "d": true
+    }
+   ],
+   "aciklama": "Küpün ayrıtı 3 katı olursa hacmi 3 · 3 · 3 = 27 katı olur (s. 138–143)."
+  },
+  {
+   "id": "m2-28",
+   "konu": "u2k5",
+   "kavram": "Aynı Hacim, Farklı Prizma",
+   "tur": "secim",
+   "soru": "Hangisi 18 eş birim küpten yapılmış bir dikdörtgenler prizmasının ayrıtları olamaz?",
+   "secenekler": [
+    "1 br, 2 br, 9 br",
+    "1 br, 3 br, 6 br",
+    "2 br, 3 br, 3 br",
+    "2 br, 2 br, 5 br"
+   ],
+   "dogru": 3,
+   "aciklama": "2 · 2 · 5 = 20; öbürlerinin çarpımı 18 (s. 138–143)."
+  },
+  {
+   "id": "m2-29",
+   "konu": "u2k5",
+   "kavram": "Katman",
+   "tur": "kisa",
+   "soru": "Bir prizmanın taban katmanında 6 birim küp var ve prizma 5 katmandan oluşuyor. Hacmi kaç br³?",
+   "yanit": "30",
+   "sayi": true,
+   "aciklama": "Bir katman × katman sayısı: 6 · 5 = 30 br³ (s. 138–143)."
+  },
+  {
+   "id": "m2-30",
+   "konu": "u2k5",
+   "kavram": "Hacim Birimi br³",
+   "tur": "dy",
+   "ifade": "Hacim br² birimiyle yazılır.",
+   "dogru": false,
+   "duzeltme": "Hacim br³ ile yazılır; br² alan birimidir.",
+   "aciklama": "Üç ayrıt çarpılır: br · br · br = br³ (s. 138–143)."
   }
  ]
 }

@@ -4456,8 +4456,565 @@ def u2t1():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3] + TARAMALAR
+# =================================================================
+# Tema 2 · Hacim (u2k4, u2k5, u2t2) — 16 Ekim 2026
+# Kitap dışı: "Kaplamak mı, doldurmak mı?" ayrı kavram kartı (Kemal onayı), birim küp = hacmin "cetveli" benzetmesi,
+# 18 küplü prizmaların ve ayrıt-kat ilişkisinin sonuçları kitabın etkinliklerinden (s. 141, 143) formülle türetildi.
+from t2_cizim import _poly as t2poly
+
+SOLUK_KUP = ("#5a6280", "#3a4570", "#2b355c")
+ALTIN_KUP = ("#ffe8a3", "#f2c14e", "#b8902a")
+
+
+def kutu(I, J, K_):
+    return [(i, j, k) for i in range(I) for j in range(J) for k in range(K_)]
+
+
+def kupler_r(kup, x0, y0, s, renk_f, d=None, cizgi="#1b2340"):
+    """kupler() gibi; her küpün rengi renk_f(i, j, k) ile seçilir (tek sıralama, üst üste binme doğru)."""
+    d = s * 0.5 if d is None else d
+    out = ""
+    for i, j, k in sorted(set(kup), key=lambda c: (-c[1], c[2], c[0])):
+        r = renk_f(i, j, k)
+        x, y = x0 + i * s + j * d, y0 - k * s - j * d
+        out += t2poly([(x, y), (x + s, y), (x + s, y - s), (x, y - s)], r[1], cizgi)
+        out += t2poly([(x, y - s), (x + s, y - s), (x + s + d, y - s - d), (x + d, y - s - d)], r[0], cizgi)
+        out += t2poly([(x + s, y), (x + s + d, y - d), (x + s + d, y - s - d), (x + s, y - s)], r[2], cizgi)
+    return out
+
+
+def katman_svg(I, J, K_, s=24, w=330, h=170, kat_yazi=True):
+    """Prizma birim küplerle dolu; alt katman altın renkli."""
+    yw, yh = yapi_boyut(kutu(I, J, K_), s)
+    x0, alt = (w - yw) / 2, h - 22
+    g = kupler_r(kutu(I, J, K_), x0, alt, s, lambda i, j, k: ALTIN_KUP if k == 0 else KUP)
+    if kat_yazi:
+        g += t2t(x0 + yw + 8, alt - s / 2 + 4, "1. katman", "#f2c14e", 12, 800, "start")
+    return gsvg(w, h, g)
+
+
+def svg_dolu(kup, s=30, w=330, h=160):
+    """Birim küplerle dolu prizma; yön etiketi yok."""
+    return svg_yapi(kup, s=s, w=w, h=h, yonler=False)
+
+
+# ---------- Kavram ve hazırlık çizimleri (120 × 120) ----------
+def svg2_hacim():
+    return bg(kupler(kutu(3, 2, 2), 24, 90, 18) + txt(60, 112, "kapladığı yer", "#f2c14e", 11))
+
+
+def svg2_kapla_doldur():
+    g = prizma(8, 84, 36, 24, 34, vurgu="yuz")
+    g += kupler(kutu(2, 2, 2), 66, 84, 16)
+    g += txt(32, 28, "kapla", "#ffd166", 12) + txt(90, 28, "doldur", "#4fc3a1", 12)
+    g += txt(32, 104, "alan br²", "#ffd166", 10) + txt(90, 104, "hacim br³", "#4fc3a1", 10)
+    return bg(g)
+
+
+def svg2_es_nesne():
+    g = "<path d='M12 30 V84 H56 V30' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><path d='M64 30 V84 H108 V30' fill='none' stroke='#f5f6fa' stroke-width='2.5'/>"
+    for n in range(8):
+        g += f"<circle cx='{21 + (n % 3) * 13}' cy='{75 - (n // 3) * 13}' r='6' fill='#ffd166'/>"
+    for n in range(6):
+        g += f"<circle cx='{73 + (n % 3) * 13}' cy='{75 - (n // 3) * 13}' r='6' fill='#ffd166'/>"
+    g += txt(34, 100, "8", "#f5f6fa", 13) + txt(86, 100, "6", "#f5f6fa", 13)
+    g += txt(60, 116, "aynı bilyeyle say", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_birim_kup():
+    g = kupler([(0, 0, 0)], 34, 88, 40)
+    g += txt(54, 102, "1", EN, 13) + txt(28, 72, "1", YUK, 13) + txt(102, 84, "1", BOY, 13)
+    g += txt(60, 116, "her ayrıtı 1 birim", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_say():
+    return bg(kupler(kutu(3, 2, 2), 24, 90, 18) + txt(60, 112, "12 küp = 12 br³", "#f2c14e", 11))
+
+
+def svg2_uygun_birim():
+    g = "<rect x='10' y='34' width='46' height='46' fill='none' stroke='#f5f6fa' stroke-width='2.5'/>"
+    g += "<rect x='12' y='58' width='42' height='20' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><rect x='12' y='38' width='42' height='18' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/>"
+    g += "<rect x='64' y='34' width='46' height='46' fill='none' stroke='#f5f6fa' stroke-width='2.5'/>"
+    g += "".join(f"<rect x='{65 + c * 14.7:.1f}' y='{35 + r * 14.7:.1f}' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/>" for c in range(3) for r in range(3))
+    g += txt(33, 96, "boşluk", "#ff8fab", 11) + txt(87, 96, "tam dolar", "#4fc3a1", 11)
+    g += txt(60, 114, "küp daha uygun", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_h_carpim():
+    g = "".join(f"<circle cx='{30 + i * 20}' cy='{30 + j * 20}' r='7' fill='#4fc3a1'/>" for i in range(4) for j in range(3))
+    g += txt(60, 104, "4 · 3 = 12", "#f2c14e", 15)
+    return bg(g)
+
+
+def svg2_h_uc_carp():
+    return bg(txt(60, 46, "2 · 3 · 4", "#f5f6fa", 18) + txt(60, 72, "= 6 · 4", "#9aa3bf", 15) + txt(60, 98, "= 24", "#f2c14e", 18))
+
+
+def svg2_h_ondalik():
+    return bg(txt(60, 50, "2,5 · 4", "#f5f6fa", 18) + txt(60, 78, "= 10", "#f2c14e", 20) + txt(60, 104, "virgülü yerleştir", "#9aa3bf", 10))
+
+
+def svg2_h_us():
+    return bg(txt(60, 46, "3³", "#f2c14e", 26) + txt(60, 74, "3 · 3 · 3", "#f5f6fa", 15) + txt(60, 100, "= 27", "#f2c14e", 17))
+
+
+def svg2_katman():
+    g = kupler_r(kutu(5, 2, 3), 24, 86, 12, lambda i, j, k: ALTIN_KUP if k == 0 else SOLUK_KUP)
+    g += txt(60, 108, "1 kat: 10 küp · 3 kat", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_formul_hacim():
+    return bg(prizma(22, 84, 48, 36, 40, ("a", "b", "c")) + txt(60, 114, "a · b · c", "#f2c14e", 13))
+
+
+def svg2_kup_hacim():
+    return bg(prizma(32, 86, 40, 40, 40, ("a", "a", "a")) + txt(60, 116, "a · a · a = a³", "#f2c14e", 12))
+
+
+def svg2_br3():
+    g = txt(60, 40, "br · br · br", "#f5f6fa", 15) + txt(60, 68, "= br³", "#f2c14e", 22)
+    g += txt(60, 98, "alan br², hacim br³", "#9aa3bf", 10)
+    return bg(g)
+
+
+def svg2_ayni_hacim():
+    g = kupler(kutu(3, 3, 2), 6, 88, 10) + kupler(kutu(6, 1, 3), 60, 88, 8)
+    g += txt(60, 110, "ikisi de 18 küp", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg2_iki_kat():
+    g = prizma(8, 86, 30, 20, 24) + prizma(66, 86, 30, 20, 48)
+    g += "<path d='M50 60 h8' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M61 60l-6-4v8z' fill='#f2c14e'/>"
+    g += txt(60, 108, "yükseklik 2 kat", "#f783ac", 10) + txt(60, 118, "hacim 2 kat", "#f2c14e", 10)
+    return bg(g)
+
+
+# =================================================================
+def u2k4():
+    return {
+        "id": "u2k4", "unite": T2, "baslik": "Hacim ve Birim Küp", "sayfalar": "s. 134–138",
+        "giris": "Bir kutunun içine kaç şeker sığar? Bu konuda bir cismin kapladığı yeri, yani hacmini öğreneceğiz. Kutuları eş küplerle doldurup küpleri sayarak hacmi bulacağız.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda küpleri sayacağız ve çarpma yapacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Çarparak sayma", "sinif": "Önceki yıllar", "svg": svg2_h_carpim(),
+                 "anlatim": "Sıra sıra dizilmiş şeyleri tek tek saymak yerine çarparız: 3 sırada 4'er tane varsa 3 · 4 = 12 tane vardır.",
+                 "akilda": "Sıra sayısı × bir sıradaki",
+                 "ornek": {"problem": "Bir kolide 5 sıra, her sırada 4 şişe var. Kaç şişe var?", "adimlar": [
+                     {"metin": "Bir sırada kaç şişe var?", "islem": "4"},
+                     {"metin": "Kaç sıra var?", "islem": "5"},
+                     {"metin": "Çarp.", "islem": "5 · 4 = 20"}]},
+                 "sorular": [
+                     G("3 sırada 6'şar elma var. Kaç elma var?", "18", "Sıra sayısını bir sıradakiyle çarp.", "3 · 6 = 18 elma.",
+                       yardim={"adimlar": ["Kaç sıra var? Bir sırada kaç elma var?", "3 ile 6'yı çarp."]}),
+                     G("Her katında 8 daire olan 4 katlı bir apartmanda kaç daire var?", "32", "Kat sayısını bir kattaki daire sayısıyla çarp.", "4 · 8 = 32 daire.",
+                       yardim={"adimlar": ["Kaç kat var? Bir katta kaç daire var?", "4 ile 8'i çarp."]})]},
+                {"ad": "Kaplamak: yüzey alanı", "sinif": "2. tema, 3. konu", "svg": svg2_hediye(),
+                 "anlatim": "Bir kutunun bütün yüzlerini kâğıtla kaplamak için yüzey alanını buluruz. Yüzey alanı cm², br² gibi kare birimlerle yazılır.",
+                 "akilda": "Kaplamak = yüzey alanı",
+                 "sorular": [
+                     S("Bir kutuyu paket kâğıdıyla kaplamak için neyi bulmalıyız?", ["Ağırlığını", "Yüzey alanını", "Rengini"], 1,
+                       "Kaplamak, bütün yüzlerin üstünü örtmek demek.", "Bütün yüzlerin alanları toplamı yüzey alanıdır."),
+                     S("Yüzey alanı hangi birimle yazılır?", ["cm²", "cm", "kg"], 0, "Alan kare birimle yazılır.", "Yüzey alanı bir alandır: cm².")]},
+                {"ad": "Saklı küpleri saymak", "sinif": "2. tema, 1. konu", "svg": svg2_sakli(),
+                 "anlatim": "Eş küplerden yapılmış bir yapıda öndeki küpler arkadakileri saklar. Küpleri sayarken görünmeyenleri de düşünürüz.",
+                 "akilda": "Arkadakileri de say",
+                 "sorular": [
+                     G("Görseldeki kutu biçimindeki yapı kaç küpten oluşur?", "4", "Öndeki 2 küpün arkasında da küpler var.",
+                       "Önde 2, arkada 2 küp: 2 + 2 = 4.", svg=svg_dolu(kutu(2, 2, 1), s=40),
+                       yardim={"adimlar": ["Önden kaç küp görünüyor?", "Arkada da aynı sayıda küp var. İkisini topla."]}),
+                     G("Görseldeki kutu biçimindeki yapı kaç küpten oluşur?", "6", "Öndeki sıranın arkasında bir sıra daha var.",
+                       "Önde 3, arkada 3 küp: 3 + 3 = 6.", svg=svg_dolu(kutu(3, 2, 1), s=36),
+                       yardim={"adimlar": ["Önden kaç küp görünüyor?", "Arkada da aynı sayıda küp var. İkisini topla."]})]}
+            ]},
+        "kavramlar": [
+            {"ad": "Hacim", "renk": "#1f9e8f", "svg": svg2_hacim(),
+             "aciklama": "Bir cismin uzayda kapladığı yere o cismin hacmi denir. (s. 136)",
+             "ek": "Bir kutunun hacmi, içine ne kadar şey sığacağını (kapasitesini) anlatır. Hacmi büyük olan kutuya daha çok şey sığar. (s. 136)",
+             "akilda": "Kapladığı yer",
+             "soru": S("Bir cismin uzayda kapladığı yere ne denir?", ["Yüzey alanı", "Hacim", "Ayrıt"], 1,
+                       "Bilgi kartındaki ilk cümleye bak.", "Bir cismin uzayda kapladığı yere hacim denir. (s. 136)")},
+            {"ad": "Kaplamak mı, Doldurmak mı?", "renk": "#b7791f", "svg": svg2_kapla_doldur(),
+             "aciklama": "Bir kutunun dışını kaplamak için yüzey alanını, içini doldurmak için hacmini buluruz.",
+             "ek": "Yüzey alanı kare birimle (br²), hacim küp birimle (br³) yazılır. Bir problemde ilk sorumuz hep aynı: Kaplamak mı, doldurmak mı?",
+             "akilda": "Kapla = alan, doldur = hacim",
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Görseldeki kutu, ayrıtı 1 br olan birim küplerle dolu. İçini kaç küp doldurur? Dışını kaplamak için kaç kare gerekir?",
+                       "svg": svg_dolu(kutu(2, 2, 1), s=40),
+                       "adimlar": [
+                           {"metin": "Doldurmak: içindeki küpleri say. Önde 2, arkada 2 küp var.",
+                            "soru": G("Kutunun içinde kaç birim küp var?", "4", "Öndeki ve arkadaki küpleri topla.", "2 + 2 = 4 birim küp.",
+                                      yardim={"adimlar": ["Önde kaç küp var?", "Arkada da 2 küp var. İkisini topla."]}),
+                            "islem": "2 + 2 = 4 → hacim 4 br³"},
+                           {"metin": "Kaplamak: dıştaki kareleri say. Üstte 4, altta 4 kare.", "islem": "4 + 4 = 8"},
+                           {"metin": "Ön, arka, sağ ve sol yüzlerin her birinde 2 kare var.",
+                            "soru": G("4 · 2 kaçtır?", "8", "Dört tane 2'yi topla.", "4 · 2 = 8.",
+                                      yardim={"adimlar": ["4 · 2, dört tane 2 demek.", "2 + 2 + 2 + 2"]}),
+                            "islem": "4 · 2 = 8"},
+                           {"metin": "Bütün kareleri topla.", "islem": "8 + 8 = 16 → yüzey alanı 16 br²"}],
+                       "sonuc": "Harika! İçini 4 küp doldurur, dışını 16 kare kaplar. Hacim ile yüzey alanı farklı şeylerdir."},
+             "soru": S("Bir akvaryuma kaç kova su sığacağını bulmak istiyoruz. Neyi bulmalıyız?", ["Yüzey alanını", "Çevresini", "Hacmini"], 2,
+                       "Su akvaryumun dışını mı kaplar, içini mi doldurur?", "Su akvaryumun içini doldurur. Doldurmak = hacim.")},
+            {"ad": "Eş Nesnelerle Ölçme", "renk": "#1d6fa3", "svg": svg2_es_nesne(),
+             "aciklama": "Bir kutunun hacmini, içini aralarında boşluk kalmayacak biçimde dolduran eş nesneleri sayarak ölçeriz. (s. 136)",
+             "ek": "Dikkat: İki kutuyu karşılaştırırken ikisini de aynı nesnelerle doldurmalıyız. Alper bir kutuda 594 çubuk makarna, ötekinde 495 fiyonk makarna saydı; makarnalar farklı olduğu için bu sayılar karşılaştırılamaz. (s. 135)",
+             "akilda": "Aynı nesneyle doldur, say",
+             "cozum": {"baslik": "Denge oyunu kutuları",
+                       "problem": "Ali ve Filiz'in denge oyunlarındaki tahta parçaların hepsi aynı. Ali her katta 4 parça olacak biçimde 10 kat, Filiz her katta 3 parça olacak biçimde 13 kat yaptı ve yapılarını kutularına yerleştirdi. Hangi kutunun hacmi daha büyük?",
+                       "adimlar": [
+                           {"metin": "Parçalar eş mi? Evet, hepsi aynı. Öyleyse sayıları karşılaştırabiliriz."},
+                           {"metin": "Ali: her katta 4 parça, 10 kat.", "islem": "4 · 10 = 40 parça"},
+                           {"metin": "Filiz: her katta 3 parça, 13 kat.", "islem": "3 · 13 = 39 parça"},
+                           {"metin": "Karşılaştır.", "islem": "40 > 39"}],
+                       "sonuc": "Ali'nin kutusuna daha çok parça sığdı: Ali'nin kutusunun hacmi daha büyük. (s. 136)"},
+             "soru": S("Ayşe bir kutuyu bilyelerle, Can başka bir kutuyu pinpon toplarıyla doldurdu. Sayılara bakarak hangi kutunun hacminin büyük olduğunu bulabilir miyiz?",
+                       ["Evet, sayısı çok olan büyüktür.", "Evet, sayısı az olan büyüktür.", "Hayır, ikisi de aynı nesneyle doldurulmalı."], 2,
+                       "Dikkat kutusunu hatırla: nesneler aynı mı?", "Bilye ve pinpon topu farklı büyüklükte. Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. (s. 135)")},
+            {"ad": "Birim Küp", "renk": "#7b4fc9", "svg": svg2_birim_kup(),
+             "aciklama": "Ayrıt uzunluklarının her biri 1 birim olan küplere birim küp denir. (s. 138)",
+             "ek": "Birim küp, hacim ölçmenin cetveli gibidir: herkes aynı küpü kullanınca sonuçlar karşılaştırılabilir.",
+             "akilda": "Her ayrıtı 1 birim",
+             "soru": S("Birim küpün her bir ayrıtı kaç birimdir?", ["1", "2", "6"], 0, "Adında “birim” var.", "Birim küpün her ayrıtı 1 birimdir. (s. 138)")},
+            {"ad": "Birim Küp Cinsinden Hacim", "renk": "#2f8f73", "svg": svg2_say(),
+             "aciklama": "Bir prizmanın içini boşluk kalmayacak şekilde dolduran birim küplerin sayısı, prizmanın birim küp cinsinden hacmidir. (s. 138)",
+             "ek": "12 birim küp sığan bir prizmanın hacmi 12 br³ diye yazılır (12 birimküp). Saklı küpleri unutmamak için sıra sıra, kat kat say. (s. 137–138)",
+             "akilda": "Kaç birim küp sığıyor?",
+             "cozum": {"baslik": "Küpleri sayalım",
+                       "problem": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+                       "svg": svg_dolu(kutu(3, 2, 2), s=34),
+                       "adimlar": [
+                           {"metin": "Alt katta önden bir sıra görünüyor.", "islem": "3 küp"},
+                           {"metin": "Arkasında saklı bir sıra daha var.", "islem": "3 + 3 = 6 (alt kat)"},
+                           {"metin": "Üstte aynı bir kat daha var.", "islem": "6 + 6 = 12"}],
+                       "sonuc": "Prizmanın hacmi 12 br³. (s. 137)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+                       "svg": svg_dolu(kutu(3, 2, 3), s=30, h=180),
+                       "adimlar": [
+                           {"metin": "Alt kat: önde 3, arkada 3 küp.",
+                            "soru": G("Alt katta kaç küp var?", "6", "Öndeki ve arkadaki sırayı topla.", "3 + 3 = 6.",
+                                      yardim={"adimlar": ["Önden bir sırada kaç küp var?", "Arkada da aynı sıra var. İkisini topla."]}),
+                            "islem": "3 + 3 = 6"},
+                           {"metin": "Kaç kat var? Görselde 3 kat.", "islem": "3 kat"},
+                           {"metin": "Her katta 6 küp, 3 kat.",
+                            "soru": G("6 + 6 + 6 kaçtır?", "18", "Üç tane 6'yı topla.", "6 + 6 + 6 = 18.",
+                                      yardim={"adimlar": ["Önce 6 + 6.", "Sonuca bir 6 daha ekle."]}),
+                            "islem": "6 + 6 + 6 = 18 br³"}],
+                       "sonuc": "Harika! Prizmanın hacmi 18 br³."},
+             "soru": G("Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?", "8", "Alt kattaki küpleri say, sonra üst katı ekle.",
+                       "Alt katta 2 + 2 = 4, üst katta 4 küp: 4 + 4 = 8 br³. (s. 137)", birim="br³", svg=svg_dolu(kutu(2, 2, 2), s=40),
+                       yardim={"adimlar": ["Alt katta önde kaç küp var? Arkada da aynısı var.", "Üst katta da alt kat kadar küp var. İki katı topla."]})},
+            {"ad": "Daha Uygun Birim", "renk": "#5f3dc4", "svg": svg2_uygun_birim(),
+             "aciklama": "Hacmi ölçerken arada boşluk bırakmayan nesne daha uygun birimdir. Eş küpler kutuyu boşluksuz doldurur. (s. 138)",
+             "ek": "Kitaptaki cam kap kutularla doldurulunca arada boşluk kaldı; küplerle doldurulunca hiç boşluk kalmadı. Farklı nesneler farklı sonuç verdi; küp daha uygun birimdir. (s. 138)",
+             "akilda": "Boşluk kalmasın: küp kullan",
+             "soru": S("Bir kutunun hacmini ölçmek için hangisi en uygun birimdir?", ["Pinpon topu", "Eş küpler", "Farklı boyda taşlar"], 1,
+                       "Hangisi arada boşluk bırakmaz ve hepsi aynı mı?", "Toplar arasında boşluk kalır, farklı taşlar eş değil. Eş küpler boşluksuz doldurur. (s. 138)")}
+        ],
+        "biliyorMusun": ["Japonya'da bazı çiftçiler karpuzları küçükken cam kutulara koyarak kare prizma biçiminde büyütür. Böylece karpuzlar yuvarlanıp düşmez, kamyonda aralarında boşluk kalmaz. (s. 136)"],
+        "akildaKalsin": [
+            "Hacim, bir cismin uzayda kapladığı yerdir.",
+            "Kaplamak = yüzey alanı (br²); doldurmak = hacim (br³).",
+            "Hacmi, kutuyu boşluksuz dolduran eş nesneleri sayarak ölçeriz.",
+            "Karşılaştırmak için iki kutuyu da aynı nesneyle doldur.",
+            "Birim küp: her ayrıtı 1 birim olan küp.",
+            "Sığan birim küp sayısı = hacim (br³). Saklı küpleri de say."],
+        "merakKutusu": [
+            {"soru": "Makarnaları saymak neden işe yaramadı?", "cevap": "Çubuk makarna ile fiyonk makarna farklı büyüklükte. Farklı nesnelerle sayınca hangi kutunun büyük olduğu kesin bilinemez; ikisi de aynı nesneyle doldurulmalı. (s. 135)"},
+            {"soru": "Pinpon topu neden iyi bir birim değil?", "cevap": "Topların arasında boşluk kalır. Hacmi doğru ölçmek için boşluk bırakmayan eş küpler kullanılır. (s. 138)"},
+            {"soru": "Bir kutuya 10 büyük küp sığıyorsa hacmi 10 br³ mü?", "cevap": "Yalnızca küplerin ayrıtı 1 birimse. Kitapta ayrıtı 2 birim olan 10 küp bir prizmayı dolduruyor. Böyle bir küpün içine 2 · 2 · 2 = 8 birim küp sığar; prizmanın hacmi 10 · 8 = 80 br³ olur. (s. 137)"},
+            {"soru": "br³ nasıl okunur?", "cevap": "“Birimküp” diye okunur. Hacim, kaç birim küp sığdığını söyler. (s. 137–138)"}],
+        "dusunVeYaz": [{"soru": "Deniz bir kutuya 20 bilye, Ece başka bir kutuya 15 küp yerleştirdi. Deniz “Benim kutumun hacmi daha büyük.” dedi. Haklı mı? Neden?",
+                        "ornekCevap": "Bilemeyiz. Kutular farklı nesnelerle doldurulmuş. Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. Ayrıca bilyelerin arasında boşluk kalır.",
+                        "anahtarlar": ["aynı", "eş", "bilemeyiz", "farklı", "boşluk"]}],
+        "sorular": [
+            G("Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?", "6",
+              "Önden görünen sıranın arkasında bir sıra daha var.", "Önde 3, arkada 3 küp: 3 + 3 = 6 br³. (s. 137)",
+              birim="br³", svg=svg_dolu(kutu(3, 2, 1), s=40), kavram="Birim Küp Cinsinden Hacim",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? İçini dolduran küpleri sayıyoruz.", "Önden bir sırada kaç küp var?", "Arkada saklı bir sıra daha var.", "İki sırayı topla."]}),
+            S("Hacim neyi anlatır?", ["Bir cismin yüzlerinin alanını", "Bir cismin ayrıtlarının sayısını", "Bir cismin kapladığı yeri"], 2,
+              "Hacim kutunun içiyle mi ilgili, dışıyla mı?", "Hacim, bir cismin uzayda kapladığı yerdir. (s. 136)", kavram="Hacim"),
+            S("Hangisinde hacmi bulmamız gerekir?", ["Kutuyu paket kâğıdıyla kaplamak", "Kutuya kaç oyuncak sığacağını bulmak", "Kutunun bir kenarını ölçmek"], 1,
+              "Kaplamak mı, doldurmak mı?", "Oyuncaklar kutunun içini doldurur. Doldurmak = hacim.", kavram="Kaplamak mı, Doldurmak mı?"),
+            G("Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?", "12",
+              "Alt katı say, sonra kaç kat olduğuna bak.", "Alt katta 2 + 2 = 4 küp. 3 kat var: 4 + 4 + 4 = 12 br³. (s. 137)",
+              birim="br³", svg=svg_dolu(kutu(2, 2, 3), s=34, h=180), kavram="Birim Küp Cinsinden Hacim",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? İçindeki küpleri sayıyoruz.", "Alt katta önde kaç küp var? Arkada da aynısı var.", "Kaç kat var?", "Her katta aynı sayıda küp var: katları topla."]}),
+            S("Ece iki kutunun hacmini karşılaştırmak istiyor. Ne yapmalı?",
+              ["İkisini de aynı eş küplerle doldurup küpleri saymalı.", "Birini bilyeyle, diğerini küple doldurmalı.", "Yalnızca kutuların rengine bakmalı."], 0,
+              "Dikkat kutusu: nesneler aynı olmalı.", "Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. (s. 135)", kavram="Eş Nesnelerle Ölçme"),
+            S("Mert kutusuna her katta 6 tahta olacak biçimde 5 kat, Elif aynı tahtalardan her katta 4 tane olacak biçimde 8 kat yerleştirdi. Kutular tam doldu. Hangi kutunun hacmi daha büyük?",
+              ["Mert'in", "Elif'in", "İkisi eşit"], 1,
+              "Tahtalar aynı. Her kutuya kaç tahta sığdığını bul.", "Mert 6 · 5 = 30, Elif 4 · 8 = 32 tahta. 32 > 30: Elif'in kutusu daha büyük. (s. 136)",
+              kavram="Eş Nesnelerle Ölçme",
+              yardim={"adimlar": ["Tahtalar eş mi? Evet: sayıları karşılaştırabiliriz.", "Mert: 6 · 5.", "Elif: 4 · 8.", "İki sayıyı karşılaştır."]}),
+            S("Birim küp hangisidir?", ["Her ayrıtı 2 birim olan küp", "Bir yüzü 1 birim olan dikdörtgen", "Her ayrıtı 1 birim olan küp"], 2,
+              "Adında “birim” var.", "Ayrıtlarının her biri 1 birim olan küpe birim küp denir. (s. 138)", kavram="Birim Küp"),
+            G("Bir kutuya her sırada 5 birim küp olacak şekilde 3 sıra dizildi ve kutu tek katla tamamen doldu. Kutunun hacmi kaç br³?", "15",
+              "Sıra sayısını bir sıradaki küp sayısıyla çarp.", "3 · 5 = 15 birim küp: hacim 15 br³. (s. 138)", birim="br³", kavram="Birim Küp Cinsinden Hacim",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Kutuyu dolduran küpleri sayıyoruz.", "Bir sırada kaç küp, kaç sıra var?", "Sıra sayısını bir sıradaki küp sayısıyla çarp."]}),
+            S("Cam bir kap bir kez kibrit kutularıyla, bir kez eş küplerle dolduruldu. Kutularla doldurunca arada boşluk kaldı. Hacmi ölçmek için hangisi daha uygun?",
+              ["Eş küpler", "Kibrit kutuları", "İkisi de aynı sonucu verir"], 0,
+              "Hangisi boşluk bırakmadı?", "Küpler boşluksuz doldurur; boşluk kalırsa hacim yanlış ölçülür. (s. 138)", kavram="Daha Uygun Birim"),
+            S("Görseldeki kutu birim küplerle dolu. Hangisi doğrudur?",
+              ["Hacmi 4 br³, yüzey alanı 16 br²", "Hacmi 16 br³, yüzey alanı 4 br²", "Hacmi ile yüzey alanı aynı sayıdır"], 0,
+              "İçindeki küpleri say (hacim), dıştaki kareleri say (yüzey alanı).",
+              "İçinde 4 küp: 4 br³. Dışta üst 4, alt 4, dört yan yüzde 2'şer kare: 16 br².",
+              svg=svg_dolu(kutu(2, 2, 1), s=40), kavram="Kaplamak mı, Doldurmak mı?",
+              yardim={"adimlar": ["Doldurmak = hacim: içindeki küpleri say.", "Kaplamak = yüzey alanı: üstteki ve alttaki kareleri say.", "Dört yan yüzdeki kareleri ekle."]})]
+    }
+
+
+# =================================================================
+def u2k5():
+    return {
+        "id": "u2k5", "unite": T2, "baslik": "Dikdörtgenler Prizmasının Hacmi", "sayfalar": "s. 138–143",
+        "giris": "Büyük bir kutudaki birim küpleri tek tek saymak çok uzun sürer. Bu konuda küpleri saymadan, ayrıtları çarparak hacmi bulmayı öğreneceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda üç sayıyı çarpacağız. Önce çarpmayı ve üssü hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Üç sayıyı çarpma", "sinif": "Önceki yıllar", "svg": svg2_h_uc_carp(),
+                 "anlatim": "Üç sayıyı çarparken önce ikisini çarparız, çıkan sonucu üçüncüyle çarparız. Hangi ikisiyle başladığımız sonucu değiştirmez.",
+                 "akilda": "İkisini çarp, sonra üçüncüyle",
+                 "ornek": {"problem": "2 · 3 · 4 kaçtır?", "adimlar": [
+                     {"metin": "Önce ilk iki sayıyı çarp.", "islem": "2 · 3 = 6"},
+                     {"metin": "Sonucu üçüncü sayıyla çarp.", "islem": "6 · 4 = 24"}]},
+                 "sorular": [
+                     G("3 · 2 · 5 kaçtır?", "30", "Önce 3 · 2, sonra 5 ile çarp.", "3 · 2 = 6, 6 · 5 = 30.",
+                       yardim={"adimlar": ["Önce 3 · 2.", "Sonucu 5 ile çarp."]}),
+                     G("4 · 5 · 2 kaçtır?", "40", "Önce 4 · 5, sonra 2 ile çarp.", "4 · 5 = 20, 20 · 2 = 40.",
+                       yardim={"adimlar": ["Önce 4 · 5.", "Sonucu 2 ile çarp."]})]},
+                {"ad": "Ondalık sayıyla çarpma", "sinif": "1. tema, 9. konu", "svg": svg2_h_ondalik(),
+                 "anlatim": "2,5 · 4 işleminde 2,5'i 4 kere toplarız: 2,5 + 2,5 + 2,5 + 2,5 = 10. Ya da virgül yokmuş gibi çarparız (25 · 4 = 100), sonra virgülden sonra 1 basamak ayırırız: 10,0 = 10.",
+                 "akilda": "Çarp, sonra virgülü yerleştir",
+                 "sorular": [
+                     G("1,5 · 4 kaçtır?", "6", "1,5'i 4 kere topla.", "1,5 + 1,5 + 1,5 + 1,5 = 6.", denk=True,
+                       yardim={"adimlar": ["1,5 · 4, dört tane 1,5 demek.", "İki tane 1,5 = 3. Dört tanesi kaç?"]}),
+                     S("0,5 · 6 kaçtır?", ["3", "30", "0,3"], 0, "0,5 yarım demek. 6'nın yarısı kaç?", "0,5 · 6 = 3.")]},
+                {"ad": "Üslü ifade", "sinif": "1. tema, 10. konu", "svg": svg2_h_us(),
+                 "anlatim": "3[[u:3]], 3'ün 3 kere kendisiyle çarpılması demektir: 3 · 3 · 3 = 27.",
+                 "akilda": "a³ = a · a · a",
+                 "sorular": [
+                     G("2[[u:3]] kaçtır?", "8", "2'yi 3 kere çarp.", "2 · 2 · 2 = 8.",
+                       yardim={"adimlar": ["2[[u:3]] = 2 · 2 · 2.", "Önce 2 · 2, sonra sonucu 2 ile çarp."]}),
+                     S("4[[u:3]] hangisine eşittir?", ["4 · 3", "4 · 4 · 4", "4 + 4 + 4"], 1, "Üs, tabanın kaç kere çarpıldığını söyler.", "4[[u:3]] = 4 · 4 · 4 = 64.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Katman", "renk": "#1f9e8f", "svg": svg2_katman(),
+             "aciklama": "Prizmanın tabanına dizilen birim küpler bir katman oluşturur. Bir katmandaki küp sayısı ile katman sayısını çarparak bütün küpleri buluruz. (s. 139)",
+             "ek": "Ahmet tabana 10 birim küp dizdi; prizma 3 katmanla doldu: 10 · 3 = 30. Ceren ve Mehmet küpleri başka yüzlere dizdi ama sonuç yine 30 çıktı. (s. 139)",
+             "akilda": "Bir kat × kat sayısı",
+             "cozum": {"baslik": "Ahmet'in prizması",
+                       "problem": "Prizmanın tabanında 5 sütun ve 2 sıra birim küp var; prizma 3 katmanla doluyor. Kaç birim küp sığar?",
+                       "svg": katman_svg(5, 2, 3, s=24),
+                       "adimlar": [
+                           {"metin": "Taban katmanı: 5 sütun, 2 sıra.", "islem": "5 · 2 = 10 küp"},
+                           {"metin": "Kaç katman var?", "islem": "3 katman"},
+                           {"metin": "Bir katmanı katman sayısıyla çarp.", "islem": "10 · 3 = 30"}],
+                       "sonuc": "Prizmaya 30 birim küp sığar: hacmi 30 br³. (s. 139)"},
+             "soru": G("Bir prizmanın taban katmanında 8 birim küp var ve prizma 4 katmanla doluyor. Hacmi kaç br³?", "32",
+                       "Bir katmandaki küp sayısını katman sayısıyla çarp.", "8 · 4 = 32 br³. (s. 139)", birim="br³",
+                       yardim={"adimlar": ["Bir katmanda kaç küp var? Kaç katman var?", "İkisini çarp."]})},
+            {"ad": "Hacim Formülü", "renk": "#7b4fc9", "svg": svg2_formul_hacim(),
+             "aciklama": "Dikdörtgenler prizmasının hacmi = taban alanı × yükseklik = a · b · c. Önce tabanın iki dik ayrıtı çarpılır (taban alanı), sonra yükseklikle çarpılır. (s. 140)",
+             "ek": "Hangi yüzü taban seçersek seçelim sonuç değişmez: (a · b) · c = (b · c) · a = (a · c) · b. (s. 140)",
+             "akilda": "En × boy × yükseklik",
+             "cozum": {"baslik": "Formülle hacim",
+                       "problem": "Ayrıtları 6 br, 4 br ve 5 br olan dikdörtgenler prizmasının hacmini bulalım.",
+                       "svg": svg_prizma_et("6 br", "4 br", "5 br", A=120, B=80, C=100, h=170),
+                       "adimlar": [
+                           {"metin": "Kaplamak mı, doldurmak mı? Doldurmak: hacim."},
+                           {"metin": "Taban alanı: tabanın iki dik ayrıtını çarp.", "islem": "6 · 4 = 24 br²"},
+                           {"metin": "Taban alanını yükseklikle çarp.", "islem": "24 · 5 = 120"}],
+                       "sonuc": "Prizmanın hacmi 120 br³. (s. 140)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Ayrıtları 10 br, 4 br ve 2 br olan dikdörtgenler prizmasının hacmini bul.",
+                       "svg": svg_prizma_et("10 br", "4 br", "2 br", A=150, B=70, C=50, h=130),
+                       "adimlar": [
+                           {"metin": "Taban alanı: 10 · 4.",
+                            "soru": G("10 · 4 kaçtır?", "40", "10 ile çarpınca sonuna 0 eklenir.", "10 · 4 = 40.",
+                                      yardim={"adimlar": ["4'ü 10 ile çarp.", "10 ile çarpınca sayının sonuna bir 0 eklenir."]}),
+                            "islem": "10 · 4 = 40 br²"},
+                           {"metin": "Taban alanını yükseklikle çarp.",
+                            "soru": G("40 · 2 kaçtır?", "80", "40'ı iki kere topla.", "40 + 40 = 80.",
+                                      yardim={"adimlar": ["40 · 2, iki tane 40 demek.", "40 ile 40'ı topla."]}),
+                            "islem": "40 · 2 = 80 br³"}],
+                       "sonuc": "Harika! Prizmanın hacmi 80 br³."},
+             "soru": S("Ayrıtları a, b ve c olan dikdörtgenler prizmasının hacmi hangisidir?", ["a + b + c", "2 · (a · b + a · c + b · c)", "a · b · c"], 2,
+                       "Taban alanını (a · b) yükseklikle çarp.", "Hacim = (a · b) · c = a · b · c. Öbür ifade yüzey alanıdır. (s. 140)")},
+            {"ad": "Kare Prizma ve Küp", "renk": "#e8590c", "svg": svg2_kup_hacim(),
+             "aciklama": "Kare prizma ve küp, dikdörtgenler prizmasının özel hâlleridir; hacimleri aynı bağıntıyla bulunur. Küpün bir ayrıtı a ise hacmi a · a · a = a[[u:3]]. (s. 142)",
+             "ek": "Kare prizma: taban 2 br × 2 br, yükseklik 4 br → 4 · 4 = 16 br³. Küp: taban 3 br × 3 br, yükseklik 3 br → 9 · 3 = 27 br³. (s. 142)",
+             "akilda": "Küp: a · a · a = a³",
+             "cozum": {"baslik": "Küpün hacmi",
+                       "problem": "Bir ayrıtı 3 br olan küpün hacmini bulalım.",
+                       "svg": svg_prizma_et("3 br", "3 br", "3 br", A=80, B=80, C=80, h=160),
+                       "adimlar": [
+                           {"metin": "Taban bir kare: 3 · 3.", "islem": "3 · 3 = 9 br²"},
+                           {"metin": "Yükseklik de 3 br.", "islem": "9 · 3 = 27"},
+                           {"metin": "Üsle kısaca yazarız.", "islem": "3[[u:3]] = 27"}],
+                       "sonuc": "Küpün hacmi 27 br³. (s. 142)"},
+             "soru": G("Bir ayrıtı 4 br olan küpün hacmi kaç br³?", "64", "Küpün üç ayrıtı da 4 br: 4 · 4 · 4.",
+                       "4 · 4 = 16, 16 · 4 = 64 br³. (s. 142)", birim="br³",
+                       yardim={"adimlar": ["Küpün üç ayrıtı eşit: 4 · 4 · 4.", "Önce 4 · 4, sonra sonucu 4 ile çarp."]})},
+            {"ad": "Hacim Birimi br³", "renk": "#b7791f", "svg": svg2_br3(),
+             "aciklama": "Hacimde üç ayrıt çarpıldığı için birim de üç kez çarpılır: br · br · br = br³. (s. 142)",
+             "ek": "Uzunluk br, alan br², hacim br³ ile yazılır. br³ “birimküp” diye okunur. (s. 138, 142)",
+             "akilda": "Uzunluk br, alan br², hacim br³",
+             "soru": S("Bir prizmanın hacmi hangisi gibi yazılır?", ["24 br", "24 br³", "24 br²"], 1,
+                       "Hacimde kaç ayrıt çarpılır?", "Üç ayrıt çarpıldığı için hacim br³ ile yazılır. (s. 142)")},
+            {"ad": "Aynı Hacim, Farklı Prizma", "renk": "#2f8f73", "svg": svg2_ayni_hacim(),
+             "aciklama": "18 eş küple birbirinden farklı prizmalar yapılabilir. Şekilleri farklı olsa da hepsinin hacmi 18 küptür. (s. 141)",
+             "ek": "18 küple yapılan prizmaların ayrıtları: 1, 1, 18 · 1, 2, 9 · 1, 3, 6 · 2, 3, 3. Üç sayının çarpımı hep 18. (s. 141)",
+             "akilda": "Şekil değişir, küp sayısı aynı",
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Hacmi 24 br³ olan bir prizmanın tabanı 4 br ve 3 br. Yüksekliği kaç br?",
+                       "adimlar": [
+                           {"metin": "Taban alanı: 4 · 3.",
+                            "soru": G("4 · 3 kaçtır?", "12", "4'ü 3 kere topla.", "4 · 3 = 12.",
+                                      yardim={"adimlar": ["4 · 3, üç tane 4 demek.", "4 + 4 + 4"]}),
+                            "islem": "4 · 3 = 12 br²"},
+                           {"metin": "Taban alanı × yükseklik = 24. 12'yi hangi sayıyla çarpınca 24 olur?",
+                            "soru": G("12 · ? = 24. Soru işaretinin yerine hangi sayı gelir?", "2", "12'yi kaç kere toplayınca 24 olur?", "12 · 2 = 24.",
+                                      yardim={"adimlar": ["12 + 12 kaç eder?", "Kaç tane 12 topladın?"]}),
+                            "islem": "12 · 2 = 24"}],
+                       "sonuc": "Harika! Prizmanın yüksekliği 2 br."},
+             "soru": S("Hangisi 18 eş birim küpten yapılmış bir prizmanın ayrıtları olabilir?", ["2 br, 3 br, 3 br", "2 br, 2 br, 3 br", "3 br, 3 br, 3 br"], 0,
+                       "Üç sayıyı çarp: hangisi 18 ediyor?", "2 · 3 · 3 = 18. Öbürleri 12 ve 27. (s. 141)")},
+            {"ad": "Ayrıt Değişince Hacim", "renk": "#c92a2a", "svg": svg2_iki_kat(),
+             "aciklama": "Bir ayrıt 2 katına çıkarsa hacim de 2 katına çıkar. Üç ayrıtın hepsi 2 katına çıkarsa hacim 2 · 2 · 2 = 8 katına çıkar. (s. 143)",
+             "ek": "Örnek: 2 · 3 · 4 = 24 br³. Yükseklik 8 br olursa 2 · 3 · 8 = 48 br³, yani 2 katı. Bir ayrıtı 2 katına çıkarıp başka bir ayrıtı yarıya indirirsek hacim değişmez. (s. 143)",
+             "akilda": "Bir ayrıt 2 kat → hacim 2 kat",
+             "cozum": {"baslik": "Bütün ayrıtlar 2 katı",
+                       "problem": "Ayrıtları 1 br, 2 br ve 3 br olan prizmanın bütün ayrıtları 2 katına çıkarıldı. Hacmi kaç katına çıktı?",
+                       "adimlar": [
+                           {"metin": "İlk hacim.", "islem": "1 · 2 · 3 = 6"},
+                           {"metin": "Yeni ayrıtlar 2 br, 4 br ve 6 br.", "islem": "2 · 4 · 6 = 48"},
+                           {"metin": "Kaç katı? Büyüğü küçüğe böl.", "islem": "48 ÷ 6 = 8"}],
+                       "sonuc": "Bütün ayrıtlar 2 katı olunca hacim 8 katı oldu: 2 · 2 · 2 = 8. (s. 143)"},
+             "soru": S("Bir prizmanın yalnızca yüksekliği 2 katına çıkarılırsa hacmi ne olur?", ["Değişmez", "2 katına çıkar", "8 katına çıkar"], 1,
+                       "Hacim = taban alanı × yükseklik. Taban aynı kaldı.", "Taban alanı aynı, yükseklik 2 katı: hacim de 2 katı. (s. 143)")}
+        ],
+        "akildaKalsin": [
+            "Bir katmandaki küp sayısı × katman sayısı = birim küp sayısı.",
+            "Hacim = taban alanı × yükseklik = a · b · c.",
+            "Hangi yüz taban olursa olsun hacim aynı çıkar.",
+            "Küpün hacmi a · a · a = a³.",
+            "Hacim br³ ile yazılır: br · br · br.",
+            "Bir ayrıt 2 katı → hacim 2 katı; üç ayrıt 2 katı → hacim 8 katı."],
+        "merakKutusu": [
+            {"soru": "Neden önce tabanı çarpıyoruz?", "cevap": "Taban alanı, bir katmandaki birim küp sayısını verir. Yükseklik ise kaç katman olduğunu söyler. İkisini çarpınca bütün küpler çıkar. (s. 140)"},
+            {"soru": "Birim küpler uzunluk ölçer mi?", "cevap": "Hayır, birim küp hacim ölçer. Ama bir ayrıt boyunca dizilen küpler ayrıtın uzunluğu hakkında, tabandaki küpler de taban alanı hakkında fikir verir. (s. 140)"},
+            {"soru": "Farklı görünen yapıların hacmi eşit olabilir mi?", "cevap": "Evet. Aynı sayıda eş küpten yapılan yapıların biçimi farklı olsa da hacimleri eşittir. (s. 141)"},
+            {"soru": "Küpün ayrıtı 3 katına çıkarsa hacmi de 3 katına mı çıkar?", "cevap": "Hayır. Üç ayrıt da 3 katına çıkar: hacim 3 · 3 · 3 = 27 katına çıkar. (s. 143)"}],
+        "dusunVeYaz": [{"soru": "Ece, ayrıtları 2 br, 3 br ve 5 br olan prizmanın hacmini 2 + 3 + 5 = 10 br³ buldu. Hatası ne? Doğru sonucu bul.",
+                        "ornekCevap": "Ece ayrıtları topladı. Hacim için ayrıtlar çarpılır: 2 · 3 · 5 = 30 br³.",
+                        "anahtarlar": ["çarp", "topla", "30"]}],
+        "sorular": [
+            G("Ayrıtları 5 br, 3 br ve 4 br olan dikdörtgenler prizmasının hacmi kaç br³?", "60",
+              "Taban alanını bul, yükseklikle çarp.", "Taban alanı 5 · 3 = 15 br². 15 · 4 = 60 br³. (s. 140)",
+              birim="br³", svg=svg_prizma_et("5 br", "3 br", "4 br", A=120, B=70, C=90, h=160), kavram="Hacim Formülü",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Ölçüler: 5 br, 3 br, 4 br. Birimler aynı.", "Formül: taban alanı × yükseklik. Önce 5 · 3.", "Taban alanını 4 ile çarp."]}),
+            G("Görseldeki prizma birim küplerle dolu. Alt katman altın renkli. Prizmanın hacmi kaç br³?", "24",
+              "Alt katmandaki küpleri say, katman sayısıyla çarp.", "Alt katman 4 · 3 = 12 küp. 2 katman: 12 · 2 = 24 br³. (s. 139)",
+              birim="br³", svg=katman_svg(4, 3, 2, s=26), kavram="Katman",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Hacim: içindeki küpler.", "Alt katman: önde kaç sütun, kaç sıra var?", "Kaç katman var?", "Bir katmanı katman sayısıyla çarp."]}),
+            S("Bir ayrıtı 5 br olan küpün hacmi kaç br³'tür?", ["15", "125", "25"], 1,
+              "Küpün üç ayrıtı eşit: 5 · 5 · 5.", "5 · 5 = 25, 25 · 5 = 125 br³. (s. 142)", kavram="Kare Prizma ve Küp"),
+            S("Taban alanı 12 br², yüksekliği 5 br olan prizmanın hacmi hangisidir?", ["60 br³", "60 br²", "17 br³"], 0,
+              "Hacim = taban alanı × yükseklik; birimi br³.", "12 · 5 = 60. Hacim br³ ile yazılır: 60 br³. (s. 142)", kavram="Hacim Birimi br³"),
+            G("Hacmi 40 br³ olan bir prizmanın taban alanı 8 br²'dir. Yüksekliği kaç br?", "5",
+              "Taban alanı × yükseklik = hacim. 8 ile hangi sayıyı çarpınca 40 olur?", "8 · 5 = 40: yükseklik 5 br. (s. 140)",
+              birim="br", kavram="Hacim Formülü",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Hacim verilmiş.", "Formül: taban alanı × yükseklik = hacim.", "8 · ? = 40. 8'i kaç kere toplayınca 40 olur?"]}),
+            S("Hangisi 18 eş birim küpten yapılmış bir prizmanın ayrıtları olamaz?", ["1 br, 2 br, 9 br", "2 br, 3 br, 3 br", "2 br, 2 br, 4 br"], 2,
+              "Her birinde üç sayıyı çarp.", "1 · 2 · 9 = 18, 2 · 3 · 3 = 18, ama 2 · 2 · 4 = 16. (s. 141)", kavram="Aynı Hacim, Farklı Prizma"),
+            S("Ayrıtları 3 br, 4 br ve 5 br olan bir prizmanın yalnızca yüksekliği 2 katına çıkarıldı. Yeni hacim kaç br³?", ["120", "60", "480"], 0,
+              "Önce eski hacmi bul. Yükseklik 2 katı olunca hacim ne olur?", "Eski hacim 3 · 4 · 5 = 60 br³. Yükseklik 2 katı: 60 · 2 = 120 br³. (s. 143)",
+              kavram="Ayrıt Değişince Hacim",
+              yardim={"adimlar": ["Eski hacim: 3 · 4 · 5.", "Yalnızca bir ayrıt 2 katı oldu: hacim de 2 katı olur.", "Eski hacmi 2 ile çarp."]}),
+            G("Bir kutunun tabanı 2,5 br ve 4 br, yüksekliği 3 br'dir. Hacmi kaç br³?", "30",
+              "Taban alanı 2,5 · 4. Sonra 3 ile çarp.", "2,5 · 4 = 10 br². 10 · 3 = 30 br³. (s. 140)", birim="br³", denk=True, kavram="Hacim Formülü",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Taban alanı: 2,5 · 4. Dört tane 2,5'i topla.", "Taban alanını yükseklikle (3) çarp."]}),
+            S("Bir küpün bütün ayrıtları 2 katına çıkarılırsa hacmi kaç katına çıkar?", ["2", "4", "8"], 2,
+              "Üç ayrıt da 2 katı oluyor.", "Üç ayrıt 2 katı: 2 · 2 · 2 = 8 katı. (s. 143)", kavram="Ayrıt Değişince Hacim"),
+            G("Ayrıtı 1 br olan birim küplerle bir ayrıtı 3 br olan küp yapılacak. Kaç birim küp gerekir?", "27",
+              "Küpün hacmini bul: 3 · 3 · 3.", "Bir katmanda 3 · 3 = 9 küp, 3 katman: 27 birim küp. (s. 142)", kavram="Kare Prizma ve Küp",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Bir katmanda 3 · 3 küp var.", "Kaç katman var? Bir katmanı katman sayısıyla çarp."]})]
+    }
+
+
+# =================================================================
+def u2t2():
+    return {
+        "id": "u2t2", "tur": "tarama", "unite": T2,
+        "baslik": "Ara Durak 2: Hacim", "sayfalar": "Konu 4–5 · s. 134–143",
+        "giris": "Hacim konularını bitirdin, tebrikler! Kısa bir mola verip birim küpleri ve hacim formülünü birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+        "buyukResim": "Önce bir kutunun hacmini, içini dolduran birim küpleri sayarak bulduk. Sonra saymayı kısalttık: bir katmandaki küp sayısını katman sayısıyla çarptık. Bu da hacim formülünü verdi: a · b · c. Unutma: yüzey alanı kaplar, hacim doldurur!",
+        "kapsar": ["u2k4", "u2k5"],
+        "hatirla": [
+            {"konu": "u2k4", "maddeler": [
+                "Hacim, cismin kapladığı yerdir; kutuyu boşluksuz dolduran eş nesneleri sayarak ölçülür.",
+                "Karşılaştırmak için aynı nesneyle doldur; en uygun birim birim küptür.",
+                "Kaplamak = yüzey alanı (br²), doldurmak = hacim (br³)."]},
+            {"konu": "u2k5", "maddeler": [
+                "Bir katmandaki küp × katman sayısı = hacim.",
+                "Hacim = taban alanı × yükseklik = a · b · c; küpte a³.",
+                "Bir ayrıt 2 katı → hacim 2 katı; üçü 2 katı → 8 katı."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Bu bilgi hangi konudan?", "kutular": [
+            {"etiket": "Birim küple ölçme", "uyeler": ["Hacim", "Birim Küp", "Eş Nesnelerle Ölçme"]},
+            {"etiket": "Hacim formülü", "uyeler": ["Hacim Formülü", "Katman", "Kare Prizma ve Küp"]}]}],
+        "sorular": [
+            G("Görseldeki prizma birim küplerle dolu. Alt katmanı say, sonra katman sayısıyla çarp. Hacmi kaç br³?", "12",
+              "Alt katmanda önde 3, arkada 3 küp var.", "Alt katman 3 · 2 = 6 küp. 2 katman: 6 · 2 = 12 br³.",
+              birim="br³", svg=katman_svg(3, 2, 2, s=34),
+              kaynak=[K("u2k4", "Birim Küp Cinsinden Hacim"), K("u2k5", "Katman")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Alt katman: önde kaç küp, arkada kaç küp?", "Kaç katman var?", "Bir katmanı katman sayısıyla çarp."]}),
+            S("Ayrıtları 3 br, 2 br ve 2 br olan bir kutu için hangisi doğrudur?",
+              ["Kutunun içini 12 birim küp doldurur.", "Kutunun içini 32 birim küp doldurur.", "Kutuyu kaplamak için 12 kare yeter."], 0,
+              "Doldurmak = hacim (3 · 2 · 2). Kaplamak = yüzey alanı.",
+              "Hacim 3 · 2 · 2 = 12 br³: içini 12 küp doldurur. Yüzey alanı 2 · (6 + 6 + 4) = 32 br²: kaplamak için 32 kare gerekir.",
+              kaynak=[K("u2k4", "Kaplamak mı, Doldurmak mı?"), K("u2k5", "Hacim Formülü")],
+              yardim={"adimlar": ["Doldurmak = hacim: 3 · 2 · 2.", "Kaplamak = yüzey alanı: bütün yüzlerin alanı.", "Her şıkta “doldurmak” mı, “kaplamak” mı yazıyor, kontrol et."]}),
+            G("Bir eczacı eş ilaç kutularını rafa yerleştirdi: tabanda 4 sıra, her sırada 6 kutu var ve 2 kat dizdi. Raf boşluk kalmadan doldu. Raf kaç ilaç kutusu alıyor?", "48",
+              "Bir katmandaki kutu sayısını bul, kat sayısıyla çarp.", "Bir katman 4 · 6 = 24 kutu. 2 kat: 24 · 2 = 48 kutu. Rafın kapasitesi 48 ilaç kutusu. (s. 137)",
+              kaynak=[K("u2k4", "Eş Nesnelerle Ölçme"), K("u2k5", "Katman")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Raf kutularla doluyor: hacim.", "Bir katta kaç kutu? 4 sıra, her sırada 6 kutu.", "Kaç kat var?", "Bir katı kat sayısıyla çarp."]}),
+            S("Görseldeki üç yapı birim küplerle dolu prizmalardır. Hangi ikisinin hacmi eşittir?",
+              ["1. ve 2. yapı", "1. ve 3. yapı", "2. ve 3. yapı"], 1,
+              "Her yapıda bir katmanı say, katman sayısıyla çarp.",
+              "1. yapı 3 · 2 · 2 = 12, 2. yapı 2 · 2 · 2 = 8, 3. yapı 6 · 1 · 2 = 12 br³. Biçimleri farklı ama 1. ve 3. yapının hacmi eşit.",
+              svg=sec_svg([yapi_cizimi(kutu(3, 2, 2), 14), yapi_cizimi(kutu(2, 2, 2), 14), yapi_cizimi(kutu(6, 1, 2), 14)], h=160),
+              kaynak=[K("u2k4", "Birim Küp Cinsinden Hacim"), K("u2k5", "Aynı Hacim, Farklı Prizma")],
+              yardim={"adimlar": ["1. yapı: bir katmanda kaç küp, kaç katman?", "2. ve 3. yapı için de aynısını yap.", "Hangi iki sayı eşit?"]}),
+            G("Ela'nın kutusunun tabanı 6 br ve 5 br, yüksekliği 2 br. Kutuyu ayrıtı 1 br olan küp şekerlerle boşluk kalmadan dolduracak. Kaç şeker gerekir?", "60",
+              "Her küp şeker bir birim küp. Kutunun hacmini bul.", "Taban alanı 6 · 5 = 30. 30 · 2 = 60 br³: 60 şeker gerekir.",
+              kaynak=[K("u2k4", "Birim Küp"), K("u2k5", "Hacim Formülü")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Küp şekerin ayrıtı 1 br: her şeker bir birim küp.", "Taban alanı: 6 · 5.", "Taban alanını yükseklikle çarp."]}),
+            S("Mert iki kutuyu aynı eş küplerle doldurdu. Birinci kutunun ayrıtları 4 br, 3 br, 2 br; ikinci kutununki 2 br, 2 br, 5 br. Hangisinin hacmi daha büyük?",
+              ["İkisi eşit", "Birinci kutunun", "İkinci kutunun"], 1,
+              "İki kutunun hacmini ayrı ayrı bul.", "Birinci 4 · 3 · 2 = 24 br³, ikinci 2 · 2 · 5 = 20 br³. 24 > 20.",
+              kaynak=[K("u2k4", "Eş Nesnelerle Ölçme"), K("u2k5", "Hacim Formülü")],
+              yardim={"adimlar": ["Küpler aynı: hacimleri karşılaştırabiliriz.", "Birinci kutu: 4 · 3 · 2.", "İkinci kutu: 2 · 2 · 5. İki sonucu karşılaştır."]}),
+            S("Küp şeklindeki küçük bir kutunun ayrıtı 2 br, büyük bir kutunun ayrıtı 4 br. Büyük kutuya küçük kutulardan kaç tane sığar?", ["2", "4", "8"], 2,
+              "İki kutunun hacmini bul; büyüğü küçüğe böl.",
+              "Küçük kutu 2 · 2 · 2 = 8 br³, büyük kutu 4 · 4 · 4 = 64 br³. 64 ÷ 8 = 8 tane. Ayrıtlar 2 katı olunca hacim 8 katı olur.",
+              kaynak=[K("u2k5", "Ayrıt Değişince Hacim"), K("u2k4", "Eş Nesnelerle Ölçme")],
+              yardim={"adimlar": ["Küçük kutunun hacmi: 2 · 2 · 2.", "Büyük kutunun hacmi: 4 · 4 · 4.", "Büyük hacmi küçük hacme böl."]})]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2]
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,

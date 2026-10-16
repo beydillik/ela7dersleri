@@ -1,0 +1,245 @@
+{
+ "id": "u2t2",
+ "tur": "tarama",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Ara Durak 2: Hacim",
+ "sayfalar": "Konu 4–5 · s. 134–143",
+ "giris": "Hacim konularını bitirdin, tebrikler! Kısa bir mola verip birim küpleri ve hacim formülünü birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Önce bir kutunun hacmini, içini dolduran birim küpleri sayarak bulduk. Sonra saymayı kısalttık: bir katmandaki küp sayısını katman sayısıyla çarptık. Bu da hacim formülünü verdi: a · b · c. Unutma: yüzey alanı kaplar, hacim doldurur!",
+ "kapsar": [
+  "u2k4",
+  "u2k5"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "Hacim, cismin kapladığı yerdir; kutuyu boşluksuz dolduran eş nesneleri sayarak ölçülür.",
+    "Karşılaştırmak için aynı nesneyle doldur; en uygun birim birim küptür.",
+    "Kaplamak = yüzey alanı (br²), doldurmak = hacim (br³)."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "Bir katmandaki küp × katman sayısı = hacim.",
+    "Hacim = taban alanı × yükseklik = a · b · c; küpte a³.",
+    "Bir ayrıt 2 katı → hacim 2 katı; üçü 2 katı → 8 katı."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu bilgi hangi konudan?",
+   "kutular": [
+    {
+     "etiket": "Birim küple ölçme",
+     "uyeler": [
+      "Hacim",
+      "Birim Küp",
+      "Eş Nesnelerle Ölçme"
+     ]
+    },
+    {
+     "etiket": "Hacim formülü",
+     "uyeler": [
+      "Hacim Formülü",
+      "Katman",
+      "Kare Prizma ve Küp"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Görseldeki prizma birim küplerle dolu. Alt katmanı say, sonra katman sayısıyla çarp. Hacmi kaç br³?",
+   "cevap": "12",
+   "ipucu": "Alt katmanda önde 3, arkada 3 küp var.",
+   "aciklama": "Alt katman 3 · 2 = 6 küp. 2 katman: 6 · 2 = 12 br³.",
+   "birim": "br³",
+   "svg": "<svg viewBox='0 0 330 170' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='114.0,131.0 148.0,131.0 148.0,97.0 114.0,97.0' fill='#f2c14e' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,97.0 148.0,97.0 165.0,80.0 131.0,80.0' fill='#ffe8a3' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,131.0 165.0,114.0 165.0,80.0 148.0,97.0' fill='#b8902a' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,131.0 182.0,131.0 182.0,97.0 148.0,97.0' fill='#f2c14e' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,97.0 182.0,97.0 199.0,80.0 165.0,80.0' fill='#ffe8a3' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,131.0 199.0,114.0 199.0,80.0 182.0,97.0' fill='#b8902a' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,131.0 216.0,131.0 216.0,97.0 182.0,97.0' fill='#f2c14e' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,97.0 216.0,97.0 233.0,80.0 199.0,80.0' fill='#ffe8a3' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,131.0 233.0,114.0 233.0,80.0 216.0,97.0' fill='#b8902a' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,97.0 148.0,97.0 148.0,63.0 114.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,63.0 148.0,63.0 165.0,46.0 131.0,46.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,97.0 165.0,80.0 165.0,46.0 148.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,97.0 182.0,97.0 182.0,63.0 148.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,63.0 182.0,63.0 199.0,46.0 165.0,46.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,97.0 199.0,80.0 199.0,46.0 182.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,97.0 216.0,97.0 216.0,63.0 182.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,63.0 216.0,63.0 233.0,46.0 199.0,46.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,97.0 233.0,80.0 233.0,46.0 216.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,148.0 131.0,148.0 131.0,114.0 97.0,114.0' fill='#f2c14e' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,114.0 131.0,114.0 148.0,97.0 114.0,97.0' fill='#ffe8a3' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,148.0 148.0,131.0 148.0,97.0 131.0,114.0' fill='#b8902a' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,148.0 165.0,148.0 165.0,114.0 131.0,114.0' fill='#f2c14e' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,114.0 165.0,114.0 182.0,97.0 148.0,97.0' fill='#ffe8a3' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,148.0 182.0,131.0 182.0,97.0 165.0,114.0' fill='#b8902a' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,148.0 199.0,148.0 199.0,114.0 165.0,114.0' fill='#f2c14e' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,114.0 199.0,114.0 216.0,97.0 182.0,97.0' fill='#ffe8a3' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,148.0 216.0,131.0 216.0,97.0 199.0,114.0' fill='#b8902a' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,114.0 131.0,114.0 131.0,80.0 97.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,80.0 131.0,80.0 148.0,63.0 114.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,114.0 148.0,97.0 148.0,63.0 131.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,114.0 165.0,114.0 165.0,80.0 131.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,80.0 165.0,80.0 182.0,63.0 148.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,114.0 182.0,97.0 182.0,63.0 165.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,114.0 199.0,114.0 199.0,80.0 165.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,80.0 199.0,80.0 216.0,63.0 182.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,114.0 216.0,97.0 216.0,63.0 199.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='241.0' y='135.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>1. katman</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Birim Küp Cinsinden Hacim"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Katman"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Doldurmak: hacim.",
+     "Alt katman: önde kaç küp, arkada kaç küp?",
+     "Kaç katman var?",
+     "Bir katmanı katman sayısıyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Ayrıtları 3 br, 2 br ve 2 br olan bir kutu için hangisi doğrudur?",
+   "secenekler": [
+    "Kutunun içini 12 birim küp doldurur.",
+    "Kutunun içini 32 birim küp doldurur.",
+    "Kutuyu kaplamak için 12 kare yeter."
+   ],
+   "dogru": 0,
+   "ipucu": "Doldurmak = hacim (3 · 2 · 2). Kaplamak = yüzey alanı.",
+   "aciklama": "Hacim 3 · 2 · 2 = 12 br³: içini 12 küp doldurur. Yüzey alanı 2 · (6 + 6 + 4) = 32 br²: kaplamak için 32 kare gerekir.",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Kaplamak mı, Doldurmak mı?"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Hacim Formülü"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Doldurmak = hacim: 3 · 2 · 2.",
+     "Kaplamak = yüzey alanı: bütün yüzlerin alanı.",
+     "Her şıkta “doldurmak” mı, “kaplamak” mı yazıyor, kontrol et."
+    ]
+   }
+  },
+  {
+   "soru": "Bir eczacı eş ilaç kutularını rafa yerleştirdi: tabanda 4 sıra, her sırada 6 kutu var ve 2 kat dizdi. Raf boşluk kalmadan doldu. Raf kaç ilaç kutusu alıyor?",
+   "cevap": "48",
+   "ipucu": "Bir katmandaki kutu sayısını bul, kat sayısıyla çarp.",
+   "aciklama": "Bir katman 4 · 6 = 24 kutu. 2 kat: 24 · 2 = 48 kutu. Rafın kapasitesi 48 ilaç kutusu. (s. 137)",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Eş Nesnelerle Ölçme"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Katman"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Raf kutularla doluyor: hacim.",
+     "Bir katta kaç kutu? 4 sıra, her sırada 6 kutu.",
+     "Kaç kat var?",
+     "Bir katı kat sayısıyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki üç yapı birim küplerle dolu prizmalardır. Hangi ikisinin hacmi eşittir?",
+   "secenekler": [
+    "1. ve 2. yapı",
+    "1. ve 3. yapı",
+    "2. ve 3. yapı"
+   ],
+   "dogru": 1,
+   "ipucu": "Her yapıda bir katmanı say, katman sayısıyla çarp.",
+   "aciklama": "1. yapı 3 · 2 · 2 = 12, 2. yapı 2 · 2 · 2 = 8, 3. yapı 6 · 1 · 2 = 12 br³. Biçimleri farklı ama 1. ve 3. yapının hacmi eşit.",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='34.0,123.0 48.0,123.0 48.0,109.0 34.0,109.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='34.0,109.0 48.0,109.0 55.0,102.0 41.0,102.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='48.0,123.0 55.0,116.0 55.0,102.0 48.0,109.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='48.0,123.0 62.0,123.0 62.0,109.0 48.0,109.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='48.0,109.0 62.0,109.0 69.0,102.0 55.0,102.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='62.0,123.0 69.0,116.0 69.0,102.0 62.0,109.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='62.0,123.0 76.0,123.0 76.0,109.0 62.0,109.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='62.0,109.0 76.0,109.0 83.0,102.0 69.0,102.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='76.0,123.0 83.0,116.0 83.0,102.0 76.0,109.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='34.0,109.0 48.0,109.0 48.0,95.0 34.0,95.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='34.0,95.0 48.0,95.0 55.0,88.0 41.0,88.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='48.0,109.0 55.0,102.0 55.0,88.0 48.0,95.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='48.0,109.0 62.0,109.0 62.0,95.0 48.0,95.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='48.0,95.0 62.0,95.0 69.0,88.0 55.0,88.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='62.0,109.0 69.0,102.0 69.0,88.0 62.0,95.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='62.0,109.0 76.0,109.0 76.0,95.0 62.0,95.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='62.0,95.0 76.0,95.0 83.0,88.0 69.0,88.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='76.0,109.0 83.0,102.0 83.0,88.0 76.0,95.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='27.0,130.0 41.0,130.0 41.0,116.0 27.0,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='27.0,116.0 41.0,116.0 48.0,109.0 34.0,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='41.0,130.0 48.0,123.0 48.0,109.0 41.0,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='41.0,130.0 55.0,130.0 55.0,116.0 41.0,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='41.0,116.0 55.0,116.0 62.0,109.0 48.0,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='55.0,130.0 62.0,123.0 62.0,109.0 55.0,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='55.0,130.0 69.0,130.0 69.0,116.0 55.0,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='55.0,116.0 69.0,116.0 76.0,109.0 62.0,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,130.0 76.0,123.0 76.0,109.0 69.0,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='27.0,116.0 41.0,116.0 41.0,102.0 27.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='27.0,102.0 41.0,102.0 48.0,95.0 34.0,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='41.0,116.0 48.0,109.0 48.0,95.0 41.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='41.0,116.0 55.0,116.0 55.0,102.0 41.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='41.0,102.0 55.0,102.0 62.0,95.0 48.0,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='55.0,116.0 62.0,109.0 62.0,95.0 55.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='55.0,116.0 69.0,116.0 69.0,102.0 55.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='55.0,102.0 69.0,102.0 76.0,95.0 62.0,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,116.0 76.0,109.0 76.0,95.0 69.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><circle cx='55.0' cy='148' r='10' fill='#f2c14e'/><text x='55.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><polygon points='151.0,123.0 165.0,123.0 165.0,109.0 151.0,109.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='151.0,109.0 165.0,109.0 172.0,102.0 158.0,102.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,123.0 172.0,116.0 172.0,102.0 165.0,109.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,123.0 179.0,123.0 179.0,109.0 165.0,109.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,109.0 179.0,109.0 186.0,102.0 172.0,102.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='179.0,123.0 186.0,116.0 186.0,102.0 179.0,109.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='151.0,109.0 165.0,109.0 165.0,95.0 151.0,95.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='151.0,95.0 165.0,95.0 172.0,88.0 158.0,88.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,109.0 172.0,102.0 172.0,88.0 165.0,95.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,109.0 179.0,109.0 179.0,95.0 165.0,95.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,95.0 179.0,95.0 186.0,88.0 172.0,88.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='179.0,109.0 186.0,102.0 186.0,88.0 179.0,95.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,130.0 158.0,130.0 158.0,116.0 144.0,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,116.0 158.0,116.0 165.0,109.0 151.0,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,130.0 165.0,123.0 165.0,109.0 158.0,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,130.0 172.0,130.0 172.0,116.0 158.0,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,116.0 172.0,116.0 179.0,109.0 165.0,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.0,130.0 179.0,123.0 179.0,109.0 172.0,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,116.0 158.0,116.0 158.0,102.0 144.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,102.0 158.0,102.0 165.0,95.0 151.0,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,116.0 165.0,109.0 165.0,95.0 158.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,116.0 172.0,116.0 172.0,102.0 158.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,102.0 172.0,102.0 179.0,95.0 165.0,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.0,116.0 179.0,109.0 179.0,95.0 172.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><circle cx='165.0' cy='148' r='10' fill='#f2c14e'/><text x='165.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='132' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><polygon points='229.5,130.0 243.5,130.0 243.5,116.0 229.5,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='229.5,116.0 243.5,116.0 250.5,109.0 236.5,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='243.5,130.0 250.5,123.0 250.5,109.0 243.5,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='243.5,130.0 257.5,130.0 257.5,116.0 243.5,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='243.5,116.0 257.5,116.0 264.5,109.0 250.5,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='257.5,130.0 264.5,123.0 264.5,109.0 257.5,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='257.5,130.0 271.5,130.0 271.5,116.0 257.5,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='257.5,116.0 271.5,116.0 278.5,109.0 264.5,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='271.5,130.0 278.5,123.0 278.5,109.0 271.5,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='271.5,130.0 285.5,130.0 285.5,116.0 271.5,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='271.5,116.0 285.5,116.0 292.5,109.0 278.5,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='285.5,130.0 292.5,123.0 292.5,109.0 285.5,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='285.5,130.0 299.5,130.0 299.5,116.0 285.5,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='285.5,116.0 299.5,116.0 306.5,109.0 292.5,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='299.5,130.0 306.5,123.0 306.5,109.0 299.5,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='299.5,130.0 313.5,130.0 313.5,116.0 299.5,116.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='299.5,116.0 313.5,116.0 320.5,109.0 306.5,109.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='313.5,130.0 320.5,123.0 320.5,109.0 313.5,116.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='229.5,116.0 243.5,116.0 243.5,102.0 229.5,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='229.5,102.0 243.5,102.0 250.5,95.0 236.5,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='243.5,116.0 250.5,109.0 250.5,95.0 243.5,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='243.5,116.0 257.5,116.0 257.5,102.0 243.5,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='243.5,102.0 257.5,102.0 264.5,95.0 250.5,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='257.5,116.0 264.5,109.0 264.5,95.0 257.5,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='257.5,116.0 271.5,116.0 271.5,102.0 257.5,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='257.5,102.0 271.5,102.0 278.5,95.0 264.5,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='271.5,116.0 278.5,109.0 278.5,95.0 271.5,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='271.5,116.0 285.5,116.0 285.5,102.0 271.5,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='271.5,102.0 285.5,102.0 292.5,95.0 278.5,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='285.5,116.0 292.5,109.0 292.5,95.0 285.5,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='285.5,116.0 299.5,116.0 299.5,102.0 285.5,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='285.5,102.0 299.5,102.0 306.5,95.0 292.5,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='299.5,116.0 306.5,109.0 306.5,95.0 299.5,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='299.5,116.0 313.5,116.0 313.5,102.0 299.5,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='299.5,102.0 313.5,102.0 320.5,95.0 306.5,95.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='313.5,116.0 320.5,109.0 320.5,95.0 313.5,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><circle cx='275.0' cy='148' r='10' fill='#f2c14e'/><text x='275.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='132' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Birim Küp Cinsinden Hacim"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Aynı Hacim, Farklı Prizma"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "1. yapı: bir katmanda kaç küp, kaç katman?",
+     "2. ve 3. yapı için de aynısını yap.",
+     "Hangi iki sayı eşit?"
+    ]
+   }
+  },
+  {
+   "soru": "Ela'nın kutusunun tabanı 6 br ve 5 br, yüksekliği 2 br. Kutuyu ayrıtı 1 br olan küp şekerlerle boşluk kalmadan dolduracak. Kaç şeker gerekir?",
+   "cevap": "60",
+   "ipucu": "Her küp şeker bir birim küp. Kutunun hacmini bul.",
+   "aciklama": "Taban alanı 6 · 5 = 30. 30 · 2 = 60 br³: 60 şeker gerekir.",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Birim Küp"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Hacim Formülü"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Doldurmak: hacim.",
+     "Küp şekerin ayrıtı 1 br: her şeker bir birim küp.",
+     "Taban alanı: 6 · 5.",
+     "Taban alanını yükseklikle çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Mert iki kutuyu aynı eş küplerle doldurdu. Birinci kutunun ayrıtları 4 br, 3 br, 2 br; ikinci kutununki 2 br, 2 br, 5 br. Hangisinin hacmi daha büyük?",
+   "secenekler": [
+    "İkisi eşit",
+    "Birinci kutunun",
+    "İkinci kutunun"
+   ],
+   "dogru": 1,
+   "ipucu": "İki kutunun hacmini ayrı ayrı bul.",
+   "aciklama": "Birinci 4 · 3 · 2 = 24 br³, ikinci 2 · 2 · 5 = 20 br³. 24 > 20.",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Eş Nesnelerle Ölçme"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Hacim Formülü"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Küpler aynı: hacimleri karşılaştırabiliriz.",
+     "Birinci kutu: 4 · 3 · 2.",
+     "İkinci kutu: 2 · 2 · 5. İki sonucu karşılaştır."
+    ]
+   }
+  },
+  {
+   "soru": "Küp şeklindeki küçük bir kutunun ayrıtı 2 br, büyük bir kutunun ayrıtı 4 br. Büyük kutuya küçük kutulardan kaç tane sığar?",
+   "secenekler": [
+    "2",
+    "4",
+    "8"
+   ],
+   "dogru": 2,
+   "ipucu": "İki kutunun hacmini bul; büyüğü küçüğe böl.",
+   "aciklama": "Küçük kutu 2 · 2 · 2 = 8 br³, büyük kutu 4 · 4 · 4 = 64 br³. 64 ÷ 8 = 8 tane. Ayrıtlar 2 katı olunca hacim 8 katı olur.",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Ayrıt Değişince Hacim"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Eş Nesnelerle Ölçme"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Küçük kutunun hacmi: 2 · 2 · 2.",
+     "Büyük kutunun hacmi: 4 · 4 · 4.",
+     "Büyük hacmi küçük hacme böl."
+    ]
+   }
+  }
+ ]
+}

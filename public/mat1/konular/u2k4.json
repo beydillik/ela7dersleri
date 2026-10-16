@@ -1,0 +1,575 @@
+{
+ "id": "u2k4",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Hacim ve Birim Küp",
+ "sayfalar": "s. 134–138",
+ "giris": "Bir kutunun içine kaç şeker sığar? Bu konuda bir cismin kapladığı yeri, yani hacmini öğreneceğiz. Kutuları eş küplerle doldurup küpleri sayarak hacmi bulacağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda küpleri sayacağız ve çarpma yapacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Çarparak sayma",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='30' cy='30' r='7' fill='#4fc3a1'/><circle cx='30' cy='50' r='7' fill='#4fc3a1'/><circle cx='30' cy='70' r='7' fill='#4fc3a1'/><circle cx='50' cy='30' r='7' fill='#4fc3a1'/><circle cx='50' cy='50' r='7' fill='#4fc3a1'/><circle cx='50' cy='70' r='7' fill='#4fc3a1'/><circle cx='70' cy='30' r='7' fill='#4fc3a1'/><circle cx='70' cy='50' r='7' fill='#4fc3a1'/><circle cx='70' cy='70' r='7' fill='#4fc3a1'/><circle cx='90' cy='30' r='7' fill='#4fc3a1'/><circle cx='90' cy='50' r='7' fill='#4fc3a1'/><circle cx='90' cy='70' r='7' fill='#4fc3a1'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>4 · 3 = 12</text></svg>",
+    "anlatim": "Sıra sıra dizilmiş şeyleri tek tek saymak yerine çarparız: 3 sırada 4'er tane varsa 3 · 4 = 12 tane vardır.",
+    "akilda": "Sıra sayısı × bir sıradaki",
+    "ornek": {
+     "problem": "Bir kolide 5 sıra, her sırada 4 şişe var. Kaç şişe var?",
+     "adimlar": [
+      {
+       "metin": "Bir sırada kaç şişe var?",
+       "islem": "4"
+      },
+      {
+       "metin": "Kaç sıra var?",
+       "islem": "5"
+      },
+      {
+       "metin": "Çarp.",
+       "islem": "5 · 4 = 20"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "3 sırada 6'şar elma var. Kaç elma var?",
+      "cevap": "18",
+      "ipucu": "Sıra sayısını bir sıradakiyle çarp.",
+      "aciklama": "3 · 6 = 18 elma.",
+      "yardim": {
+       "adimlar": [
+        "Kaç sıra var? Bir sırada kaç elma var?",
+        "3 ile 6'yı çarp."
+       ]
+      }
+     },
+     {
+      "soru": "Her katında 8 daire olan 4 katlı bir apartmanda kaç daire var?",
+      "cevap": "32",
+      "ipucu": "Kat sayısını bir kattaki daire sayısıyla çarp.",
+      "aciklama": "4 · 8 = 32 daire.",
+      "yardim": {
+       "adimlar": [
+        "Kaç kat var? Bir katta kaç daire var?",
+        "4 ile 8'i çarp."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Kaplamak: yüzey alanı",
+    "sinif": "2. tema, 3. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='18.0,96.0 74.0,96.0 74.0,50.0 18.0,50.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='18.0,50.0 74.0,50.0 94.0,30.0 38.0,30.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='74.0,96.0 94.0,76.0 94.0,30.0 74.0,50.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M38.0 76.0 H94.0 M38.0 76.0 V30.0 M38.0 76.0 L18.0 96.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M18.0 96.0 H74.0 V50.0 H18.0 Z M18.0 50.0 L38.0 30.0 H94.0 L74.0 50.0 M94.0 30.0 V76.0 L74.0 96.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><path d='M46 50 V96 M18 73 H74' stroke='#ff8fab' stroke-width='5'/><path d='M46 50 l-10 -10 M46 50 l10 -10' stroke='#ff8fab' stroke-width='4' stroke-linecap='round'/><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>bütün yüzleri kapla</text></svg>",
+    "anlatim": "Bir kutunun bütün yüzlerini kâğıtla kaplamak için yüzey alanını buluruz. Yüzey alanı cm², br² gibi kare birimlerle yazılır.",
+    "akilda": "Kaplamak = yüzey alanı",
+    "sorular": [
+     {
+      "soru": "Bir kutuyu paket kâğıdıyla kaplamak için neyi bulmalıyız?",
+      "secenekler": [
+       "Ağırlığını",
+       "Yüzey alanını",
+       "Rengini"
+      ],
+      "dogru": 1,
+      "ipucu": "Kaplamak, bütün yüzlerin üstünü örtmek demek.",
+      "aciklama": "Bütün yüzlerin alanları toplamı yüzey alanıdır."
+     },
+     {
+      "soru": "Yüzey alanı hangi birimle yazılır?",
+      "secenekler": [
+       "cm²",
+       "cm",
+       "kg"
+      ],
+      "dogru": 0,
+      "ipucu": "Alan kare birimle yazılır.",
+      "aciklama": "Yüzey alanı bir alandır: cm²."
+     }
+    ]
+   },
+   {
+    "ad": "Saklı küpleri saymak",
+    "sinif": "2. tema, 1. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='45.0,69.0 75.0,69.0 75.0,39.0 45.0,39.0' fill='#3a4570' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='45.0,39.0 75.0,39.0 90.0,24.0 60.0,24.0' fill='#5a6280' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='75.0,69.0 90.0,54.0 90.0,24.0 75.0,39.0' fill='#2b355c' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='30.0,84.0 60.0,84.0 60.0,54.0 30.0,54.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='30.0,54.0 60.0,54.0 75.0,39.0 45.0,39.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,84.0 75.0,69.0 75.0,39.0 60.0,54.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><path d='M74 44 l14 -14' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='4 3'/><text x='98' y='26' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='20' fill='#f2c14e'>?</text><text x='60' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>arkada saklı küp</text></svg>",
+    "anlatim": "Eş küplerden yapılmış bir yapıda öndeki küpler arkadakileri saklar. Küpleri sayarken görünmeyenleri de düşünürüz.",
+    "akilda": "Arkadakileri de say",
+    "sorular": [
+     {
+      "soru": "Görseldeki kutu biçimindeki yapı kaç küpten oluşur?",
+      "cevap": "4",
+      "ipucu": "Öndeki 2 küpün arkasında da küpler var.",
+      "aciklama": "Önde 2, arkada 2 küp: 2 + 2 = 4.",
+      "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='125.0,118.0 165.0,118.0 165.0,78.0 125.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,78.0 165.0,78.0 185.0,58.0 145.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 185.0,98.0 185.0,58.0 165.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 205.0,118.0 205.0,78.0 165.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,78.0 205.0,78.0 225.0,58.0 185.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='205.0,118.0 225.0,98.0 225.0,58.0 205.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,138.0 145.0,138.0 145.0,98.0 105.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,98.0 145.0,98.0 165.0,78.0 125.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 165.0,118.0 165.0,78.0 145.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 185.0,138.0 185.0,98.0 145.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,98.0 185.0,98.0 205.0,78.0 165.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,138.0 205.0,118.0 205.0,78.0 185.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+      "yardim": {
+       "adimlar": [
+        "Önden kaç küp görünüyor?",
+        "Arkada da aynı sayıda küp var. İkisini topla."
+       ]
+      }
+     },
+     {
+      "soru": "Görseldeki kutu biçimindeki yapı kaç küpten oluşur?",
+      "cevap": "6",
+      "ipucu": "Öndeki sıranın arkasında bir sıra daha var.",
+      "aciklama": "Önde 3, arkada 3 küp: 3 + 3 = 6.",
+      "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='111.0,120.0 147.0,120.0 147.0,84.0 111.0,84.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='111.0,84.0 147.0,84.0 165.0,66.0 129.0,66.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='147.0,120.0 165.0,102.0 165.0,66.0 147.0,84.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='147.0,120.0 183.0,120.0 183.0,84.0 147.0,84.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='147.0,84.0 183.0,84.0 201.0,66.0 165.0,66.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='183.0,120.0 201.0,102.0 201.0,66.0 183.0,84.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='183.0,120.0 219.0,120.0 219.0,84.0 183.0,84.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='183.0,84.0 219.0,84.0 237.0,66.0 201.0,66.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='219.0,120.0 237.0,102.0 237.0,66.0 219.0,84.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='93.0,138.0 129.0,138.0 129.0,102.0 93.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='93.0,102.0 129.0,102.0 147.0,84.0 111.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='129.0,138.0 147.0,120.0 147.0,84.0 129.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='129.0,138.0 165.0,138.0 165.0,102.0 129.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='129.0,102.0 165.0,102.0 183.0,84.0 147.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 183.0,120.0 183.0,84.0 165.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 201.0,138.0 201.0,102.0 165.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,102.0 201.0,102.0 219.0,84.0 183.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='201.0,138.0 219.0,120.0 219.0,84.0 201.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+      "yardim": {
+       "adimlar": [
+        "Önden kaç küp görünüyor?",
+        "Arkada da aynı sayıda küp var. İkisini topla."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Hacim",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='33.0,81.0 51.0,81.0 51.0,63.0 33.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='33.0,63.0 51.0,63.0 60.0,54.0 42.0,54.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,81.0 60.0,72.0 60.0,54.0 51.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,81.0 69.0,81.0 69.0,63.0 51.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,63.0 69.0,63.0 78.0,54.0 60.0,54.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,81.0 78.0,72.0 78.0,54.0 69.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,81.0 87.0,81.0 87.0,63.0 69.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,63.0 87.0,63.0 96.0,54.0 78.0,54.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='87.0,81.0 96.0,72.0 96.0,54.0 87.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='33.0,63.0 51.0,63.0 51.0,45.0 33.0,45.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='33.0,45.0 51.0,45.0 60.0,36.0 42.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,63.0 60.0,54.0 60.0,36.0 51.0,45.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,63.0 69.0,63.0 69.0,45.0 51.0,45.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,45.0 69.0,45.0 78.0,36.0 60.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,63.0 78.0,54.0 78.0,36.0 69.0,45.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,63.0 87.0,63.0 87.0,45.0 69.0,45.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,45.0 87.0,45.0 96.0,36.0 78.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='87.0,63.0 96.0,54.0 96.0,36.0 87.0,45.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,90.0 42.0,90.0 42.0,72.0 24.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,72.0 42.0,72.0 51.0,63.0 33.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,90.0 51.0,81.0 51.0,63.0 42.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,90.0 60.0,90.0 60.0,72.0 42.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,72.0 60.0,72.0 69.0,63.0 51.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,90.0 69.0,81.0 69.0,63.0 60.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,90.0 78.0,90.0 78.0,72.0 60.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,72.0 78.0,72.0 87.0,63.0 69.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='78.0,90.0 87.0,81.0 87.0,63.0 78.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,72.0 42.0,72.0 42.0,54.0 24.0,54.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,54.0 42.0,54.0 51.0,45.0 33.0,45.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,72.0 51.0,63.0 51.0,45.0 42.0,54.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,72.0 60.0,72.0 60.0,54.0 42.0,54.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,54.0 60.0,54.0 69.0,45.0 51.0,45.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,72.0 69.0,63.0 69.0,45.0 60.0,54.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,72.0 78.0,72.0 78.0,54.0 60.0,54.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,54.0 78.0,54.0 87.0,45.0 69.0,45.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='78.0,72.0 87.0,63.0 87.0,45.0 78.0,54.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>kapladığı yer</text></svg>",
+   "aciklama": "Bir cismin uzayda kapladığı yere o cismin hacmi denir. (s. 136)",
+   "ek": "Bir kutunun hacmi, içine ne kadar şey sığacağını (kapasitesini) anlatır. Hacmi büyük olan kutuya daha çok şey sığar. (s. 136)",
+   "akilda": "Kapladığı yer",
+   "soru": {
+    "soru": "Bir cismin uzayda kapladığı yere ne denir?",
+    "secenekler": [
+     "Yüzey alanı",
+     "Hacim",
+     "Ayrıt"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki ilk cümleye bak.",
+    "aciklama": "Bir cismin uzayda kapladığı yere hacim denir. (s. 136)"
+   }
+  },
+  {
+   "ad": "Kaplamak mı, Doldurmak mı?",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='8.0,84.0 44.0,84.0 44.0,50.0 8.0,50.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='8.0,50.0 44.0,50.0 56.0,38.0 20.0,38.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='44.0,84.0 56.0,72.0 56.0,38.0 44.0,50.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='8.0,84.0 44.0,84.0 44.0,50.0 8.0,50.0' fill='#f2c14e' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.55'/><path d='M20.0 72.0 H56.0 M20.0 72.0 V38.0 M20.0 72.0 L8.0 84.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M8.0 84.0 H44.0 V50.0 H8.0 Z M8.0 50.0 L20.0 38.0 H56.0 L44.0 50.0 M56.0 38.0 V72.0 L44.0 84.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><polygon points='74.0,76.0 90.0,76.0 90.0,60.0 74.0,60.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='74.0,60.0 90.0,60.0 98.0,52.0 82.0,52.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='90.0,76.0 98.0,68.0 98.0,52.0 90.0,60.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='90.0,76.0 106.0,76.0 106.0,60.0 90.0,60.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='90.0,60.0 106.0,60.0 114.0,52.0 98.0,52.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='106.0,76.0 114.0,68.0 114.0,52.0 106.0,60.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='74.0,60.0 90.0,60.0 90.0,44.0 74.0,44.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='74.0,44.0 90.0,44.0 98.0,36.0 82.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='90.0,60.0 98.0,52.0 98.0,36.0 90.0,44.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='90.0,60.0 106.0,60.0 106.0,44.0 90.0,44.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='90.0,44.0 106.0,44.0 114.0,36.0 98.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='106.0,60.0 114.0,52.0 114.0,36.0 106.0,44.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='66.0,84.0 82.0,84.0 82.0,68.0 66.0,68.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='66.0,68.0 82.0,68.0 90.0,60.0 74.0,60.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='82.0,84.0 90.0,76.0 90.0,60.0 82.0,68.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='82.0,84.0 98.0,84.0 98.0,68.0 82.0,68.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='82.0,68.0 98.0,68.0 106.0,60.0 90.0,60.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='98.0,84.0 106.0,76.0 106.0,60.0 98.0,68.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='66.0,68.0 82.0,68.0 82.0,52.0 66.0,52.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='66.0,52.0 82.0,52.0 90.0,44.0 74.0,44.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='82.0,68.0 90.0,60.0 90.0,44.0 82.0,52.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='82.0,68.0 98.0,68.0 98.0,52.0 82.0,52.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='82.0,52.0 98.0,52.0 106.0,44.0 90.0,44.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='98.0,68.0 106.0,60.0 106.0,44.0 98.0,52.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='32' y='28' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffd166'>kapla</text><text x='90' y='28' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>doldur</text><text x='32' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#ffd166'>alan br²</text><text x='90' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#4fc3a1'>hacim br³</text></svg>",
+   "aciklama": "Bir kutunun dışını kaplamak için yüzey alanını, içini doldurmak için hacmini buluruz.",
+   "ek": "Yüzey alanı kare birimle (br²), hacim küp birimle (br³) yazılır. Bir problemde ilk sorumuz hep aynı: Kaplamak mı, doldurmak mı?",
+   "akilda": "Kapla = alan, doldur = hacim",
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Görseldeki kutu, ayrıtı 1 br olan birim küplerle dolu. İçini kaç küp doldurur? Dışını kaplamak için kaç kare gerekir?",
+    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='125.0,118.0 165.0,118.0 165.0,78.0 125.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,78.0 165.0,78.0 185.0,58.0 145.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 185.0,98.0 185.0,58.0 165.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 205.0,118.0 205.0,78.0 165.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,78.0 205.0,78.0 225.0,58.0 185.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='205.0,118.0 225.0,98.0 225.0,58.0 205.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,138.0 145.0,138.0 145.0,98.0 105.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,98.0 145.0,98.0 165.0,78.0 125.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 165.0,118.0 165.0,78.0 145.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 185.0,138.0 185.0,98.0 145.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,98.0 185.0,98.0 205.0,78.0 165.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,138.0 205.0,118.0 205.0,78.0 185.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+    "adimlar": [
+     {
+      "metin": "Doldurmak: içindeki küpleri say. Önde 2, arkada 2 küp var.",
+      "soru": {
+       "soru": "Kutunun içinde kaç birim küp var?",
+       "cevap": "4",
+       "ipucu": "Öndeki ve arkadaki küpleri topla.",
+       "aciklama": "2 + 2 = 4 birim küp.",
+       "yardim": {
+        "adimlar": [
+         "Önde kaç küp var?",
+         "Arkada da 2 küp var. İkisini topla."
+        ]
+       }
+      },
+      "islem": "2 + 2 = 4 → hacim 4 br³"
+     },
+     {
+      "metin": "Kaplamak: dıştaki kareleri say. Üstte 4, altta 4 kare.",
+      "islem": "4 + 4 = 8"
+     },
+     {
+      "metin": "Ön, arka, sağ ve sol yüzlerin her birinde 2 kare var.",
+      "soru": {
+       "soru": "4 · 2 kaçtır?",
+       "cevap": "8",
+       "ipucu": "Dört tane 2'yi topla.",
+       "aciklama": "4 · 2 = 8.",
+       "yardim": {
+        "adimlar": [
+         "4 · 2, dört tane 2 demek.",
+         "2 + 2 + 2 + 2"
+        ]
+       }
+      },
+      "islem": "4 · 2 = 8"
+     },
+     {
+      "metin": "Bütün kareleri topla.",
+      "islem": "8 + 8 = 16 → yüzey alanı 16 br²"
+     }
+    ],
+    "sonuc": "Harika! İçini 4 küp doldurur, dışını 16 kare kaplar. Hacim ile yüzey alanı farklı şeylerdir."
+   },
+   "soru": {
+    "soru": "Bir akvaryuma kaç kova su sığacağını bulmak istiyoruz. Neyi bulmalıyız?",
+    "secenekler": [
+     "Yüzey alanını",
+     "Çevresini",
+     "Hacmini"
+    ],
+    "dogru": 2,
+    "ipucu": "Su akvaryumun dışını mı kaplar, içini mi doldurur?",
+    "aciklama": "Su akvaryumun içini doldurur. Doldurmak = hacim."
+   }
+  },
+  {
+   "ad": "Eş Nesnelerle Ölçme",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 30 V84 H56 V30' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><path d='M64 30 V84 H108 V30' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><circle cx='21' cy='75' r='6' fill='#ffd166'/><circle cx='34' cy='75' r='6' fill='#ffd166'/><circle cx='47' cy='75' r='6' fill='#ffd166'/><circle cx='21' cy='62' r='6' fill='#ffd166'/><circle cx='34' cy='62' r='6' fill='#ffd166'/><circle cx='47' cy='62' r='6' fill='#ffd166'/><circle cx='21' cy='49' r='6' fill='#ffd166'/><circle cx='34' cy='49' r='6' fill='#ffd166'/><circle cx='73' cy='75' r='6' fill='#ffd166'/><circle cx='86' cy='75' r='6' fill='#ffd166'/><circle cx='99' cy='75' r='6' fill='#ffd166'/><circle cx='73' cy='62' r='6' fill='#ffd166'/><circle cx='86' cy='62' r='6' fill='#ffd166'/><circle cx='99' cy='62' r='6' fill='#ffd166'/><text x='34' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>8</text><text x='86' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f5f6fa'>6</text><text x='60' y='116' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>aynı bilyeyle say</text></svg>",
+   "aciklama": "Bir kutunun hacmini, içini aralarında boşluk kalmayacak biçimde dolduran eş nesneleri sayarak ölçeriz. (s. 136)",
+   "ek": "Dikkat: İki kutuyu karşılaştırırken ikisini de aynı nesnelerle doldurmalıyız. Alper bir kutuda 594 çubuk makarna, ötekinde 495 fiyonk makarna saydı; makarnalar farklı olduğu için bu sayılar karşılaştırılamaz. (s. 135)",
+   "akilda": "Aynı nesneyle doldur, say",
+   "cozum": {
+    "baslik": "Denge oyunu kutuları",
+    "problem": "Ali ve Filiz'in denge oyunlarındaki tahta parçaların hepsi aynı. Ali her katta 4 parça olacak biçimde 10 kat, Filiz her katta 3 parça olacak biçimde 13 kat yaptı ve yapılarını kutularına yerleştirdi. Hangi kutunun hacmi daha büyük?",
+    "adimlar": [
+     {
+      "metin": "Parçalar eş mi? Evet, hepsi aynı. Öyleyse sayıları karşılaştırabiliriz."
+     },
+     {
+      "metin": "Ali: her katta 4 parça, 10 kat.",
+      "islem": "4 · 10 = 40 parça"
+     },
+     {
+      "metin": "Filiz: her katta 3 parça, 13 kat.",
+      "islem": "3 · 13 = 39 parça"
+     },
+     {
+      "metin": "Karşılaştır.",
+      "islem": "40 > 39"
+     }
+    ],
+    "sonuc": "Ali'nin kutusuna daha çok parça sığdı: Ali'nin kutusunun hacmi daha büyük. (s. 136)"
+   },
+   "soru": {
+    "soru": "Ayşe bir kutuyu bilyelerle, Can başka bir kutuyu pinpon toplarıyla doldurdu. Sayılara bakarak hangi kutunun hacminin büyük olduğunu bulabilir miyiz?",
+    "secenekler": [
+     "Evet, sayısı çok olan büyüktür.",
+     "Evet, sayısı az olan büyüktür.",
+     "Hayır, ikisi de aynı nesneyle doldurulmalı."
+    ],
+    "dogru": 2,
+    "ipucu": "Dikkat kutusunu hatırla: nesneler aynı mı?",
+    "aciklama": "Bilye ve pinpon topu farklı büyüklükte. Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. (s. 135)"
+   }
+  },
+  {
+   "ad": "Birim Küp",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='34.0,88.0 74.0,88.0 74.0,48.0 34.0,48.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='34.0,48.0 74.0,48.0 94.0,28.0 54.0,28.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='74.0,88.0 94.0,68.0 94.0,28.0 74.0,48.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='54' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>1</text><text x='28' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>1</text><text x='102' y='84' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>1</text><text x='60' y='116' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>her ayrıtı 1 birim</text></svg>",
+   "aciklama": "Ayrıt uzunluklarının her biri 1 birim olan küplere birim küp denir. (s. 138)",
+   "ek": "Birim küp, hacim ölçmenin cetveli gibidir: herkes aynı küpü kullanınca sonuçlar karşılaştırılabilir.",
+   "akilda": "Her ayrıtı 1 birim",
+   "soru": {
+    "soru": "Birim küpün her bir ayrıtı kaç birimdir?",
+    "secenekler": [
+     "1",
+     "2",
+     "6"
+    ],
+    "dogru": 0,
+    "ipucu": "Adında “birim” var.",
+    "aciklama": "Birim küpün her ayrıtı 1 birimdir. (s. 138)"
+   }
+  },
+  {
+   "ad": "Birim Küp Cinsinden Hacim",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='33.0,81.0 51.0,81.0 51.0,63.0 33.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='33.0,63.0 51.0,63.0 60.0,54.0 42.0,54.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,81.0 60.0,72.0 60.0,54.0 51.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,81.0 69.0,81.0 69.0,63.0 51.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,63.0 69.0,63.0 78.0,54.0 60.0,54.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,81.0 78.0,72.0 78.0,54.0 69.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,81.0 87.0,81.0 87.0,63.0 69.0,63.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,63.0 87.0,63.0 96.0,54.0 78.0,54.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='87.0,81.0 96.0,72.0 96.0,54.0 87.0,63.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='33.0,63.0 51.0,63.0 51.0,45.0 33.0,45.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='33.0,45.0 51.0,45.0 60.0,36.0 42.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,63.0 60.0,54.0 60.0,36.0 51.0,45.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,63.0 69.0,63.0 69.0,45.0 51.0,45.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='51.0,45.0 69.0,45.0 78.0,36.0 60.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,63.0 78.0,54.0 78.0,36.0 69.0,45.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,63.0 87.0,63.0 87.0,45.0 69.0,45.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='69.0,45.0 87.0,45.0 96.0,36.0 78.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='87.0,63.0 96.0,54.0 96.0,36.0 87.0,45.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,90.0 42.0,90.0 42.0,72.0 24.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,72.0 42.0,72.0 51.0,63.0 33.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,90.0 51.0,81.0 51.0,63.0 42.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,90.0 60.0,90.0 60.0,72.0 42.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,72.0 60.0,72.0 69.0,63.0 51.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,90.0 69.0,81.0 69.0,63.0 60.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,90.0 78.0,90.0 78.0,72.0 60.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,72.0 78.0,72.0 87.0,63.0 69.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='78.0,90.0 87.0,81.0 87.0,63.0 78.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,72.0 42.0,72.0 42.0,54.0 24.0,54.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='24.0,54.0 42.0,54.0 51.0,45.0 33.0,45.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,72.0 51.0,63.0 51.0,45.0 42.0,54.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,72.0 60.0,72.0 60.0,54.0 42.0,54.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='42.0,54.0 60.0,54.0 69.0,45.0 51.0,45.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,72.0 69.0,63.0 69.0,45.0 60.0,54.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,72.0 78.0,72.0 78.0,54.0 60.0,54.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='60.0,54.0 78.0,54.0 87.0,45.0 69.0,45.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='78.0,72.0 87.0,63.0 87.0,45.0 78.0,54.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>12 küp = 12 br³</text></svg>",
+   "aciklama": "Bir prizmanın içini boşluk kalmayacak şekilde dolduran birim küplerin sayısı, prizmanın birim küp cinsinden hacmidir. (s. 138)",
+   "ek": "12 birim küp sığan bir prizmanın hacmi 12 br³ diye yazılır (12 birimküp). Saklı küpleri unutmamak için sıra sıra, kat kat say. (s. 137–138)",
+   "akilda": "Kaç birim küp sığıyor?",
+   "cozum": {
+    "baslik": "Küpleri sayalım",
+    "problem": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='114.0,121.0 148.0,121.0 148.0,87.0 114.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,87.0 148.0,87.0 165.0,70.0 131.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,121.0 165.0,104.0 165.0,70.0 148.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,121.0 182.0,121.0 182.0,87.0 148.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 182.0,87.0 199.0,70.0 165.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,121.0 199.0,104.0 199.0,70.0 182.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,121.0 216.0,121.0 216.0,87.0 182.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 216.0,87.0 233.0,70.0 199.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,121.0 233.0,104.0 233.0,70.0 216.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,87.0 148.0,87.0 148.0,53.0 114.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,53.0 148.0,53.0 165.0,36.0 131.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 165.0,70.0 165.0,36.0 148.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 182.0,87.0 182.0,53.0 148.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,53.0 182.0,53.0 199.0,36.0 165.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 199.0,70.0 199.0,36.0 182.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 216.0,87.0 216.0,53.0 182.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,53.0 216.0,53.0 233.0,36.0 199.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,87.0 233.0,70.0 233.0,36.0 216.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,138.0 131.0,138.0 131.0,104.0 97.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,104.0 131.0,104.0 148.0,87.0 114.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,138.0 148.0,121.0 148.0,87.0 131.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,138.0 165.0,138.0 165.0,104.0 131.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 165.0,104.0 182.0,87.0 148.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 182.0,121.0 182.0,87.0 165.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 199.0,138.0 199.0,104.0 165.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 199.0,104.0 216.0,87.0 182.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,138.0 216.0,121.0 216.0,87.0 199.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,104.0 131.0,104.0 131.0,70.0 97.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,70.0 131.0,70.0 148.0,53.0 114.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 148.0,87.0 148.0,53.0 131.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 165.0,104.0 165.0,70.0 131.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,70.0 165.0,70.0 182.0,53.0 148.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 182.0,87.0 182.0,53.0 165.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 199.0,104.0 199.0,70.0 165.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,70.0 199.0,70.0 216.0,53.0 182.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,104.0 216.0,87.0 216.0,53.0 199.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+    "adimlar": [
+     {
+      "metin": "Alt katta önden bir sıra görünüyor.",
+      "islem": "3 küp"
+     },
+     {
+      "metin": "Arkasında saklı bir sıra daha var.",
+      "islem": "3 + 3 = 6 (alt kat)"
+     },
+     {
+      "metin": "Üstte aynı bir kat daha var.",
+      "islem": "6 + 6 = 12"
+     }
+    ],
+    "sonuc": "Prizmanın hacmi 12 br³. (s. 137)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+    "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='120.0,143.0 150.0,143.0 150.0,113.0 120.0,113.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='120.0,113.0 150.0,113.0 165.0,98.0 135.0,98.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,143.0 165.0,128.0 165.0,98.0 150.0,113.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,143.0 180.0,143.0 180.0,113.0 150.0,113.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,113.0 180.0,113.0 195.0,98.0 165.0,98.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,143.0 195.0,128.0 195.0,98.0 180.0,113.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,143.0 210.0,143.0 210.0,113.0 180.0,113.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,113.0 210.0,113.0 225.0,98.0 195.0,98.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='210.0,143.0 225.0,128.0 225.0,98.0 210.0,113.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='120.0,113.0 150.0,113.0 150.0,83.0 120.0,83.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='120.0,83.0 150.0,83.0 165.0,68.0 135.0,68.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,113.0 165.0,98.0 165.0,68.0 150.0,83.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,113.0 180.0,113.0 180.0,83.0 150.0,83.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,83.0 180.0,83.0 195.0,68.0 165.0,68.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,113.0 195.0,98.0 195.0,68.0 180.0,83.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,113.0 210.0,113.0 210.0,83.0 180.0,83.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,83.0 210.0,83.0 225.0,68.0 195.0,68.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='210.0,113.0 225.0,98.0 225.0,68.0 210.0,83.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='120.0,83.0 150.0,83.0 150.0,53.0 120.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='120.0,53.0 150.0,53.0 165.0,38.0 135.0,38.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,83.0 165.0,68.0 165.0,38.0 150.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,83.0 180.0,83.0 180.0,53.0 150.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='150.0,53.0 180.0,53.0 195.0,38.0 165.0,38.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,83.0 195.0,68.0 195.0,38.0 180.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,83.0 210.0,83.0 210.0,53.0 180.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,53.0 210.0,53.0 225.0,38.0 195.0,38.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='210.0,83.0 225.0,68.0 225.0,38.0 210.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,158.0 135.0,158.0 135.0,128.0 105.0,128.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,128.0 135.0,128.0 150.0,113.0 120.0,113.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,158.0 150.0,143.0 150.0,113.0 135.0,128.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,158.0 165.0,158.0 165.0,128.0 135.0,128.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,128.0 165.0,128.0 180.0,113.0 150.0,113.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,158.0 180.0,143.0 180.0,113.0 165.0,128.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,158.0 195.0,158.0 195.0,128.0 165.0,128.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,128.0 195.0,128.0 210.0,113.0 180.0,113.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='195.0,158.0 210.0,143.0 210.0,113.0 195.0,128.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,128.0 135.0,128.0 135.0,98.0 105.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,98.0 135.0,98.0 150.0,83.0 120.0,83.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,128.0 150.0,113.0 150.0,83.0 135.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,128.0 165.0,128.0 165.0,98.0 135.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,98.0 165.0,98.0 180.0,83.0 150.0,83.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,128.0 180.0,113.0 180.0,83.0 165.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,128.0 195.0,128.0 195.0,98.0 165.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,98.0 195.0,98.0 210.0,83.0 180.0,83.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='195.0,128.0 210.0,113.0 210.0,83.0 195.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,98.0 135.0,98.0 135.0,68.0 105.0,68.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,68.0 135.0,68.0 150.0,53.0 120.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,98.0 150.0,83.0 150.0,53.0 135.0,68.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,98.0 165.0,98.0 165.0,68.0 135.0,68.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='135.0,68.0 165.0,68.0 180.0,53.0 150.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,98.0 180.0,83.0 180.0,53.0 165.0,68.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,98.0 195.0,98.0 195.0,68.0 165.0,68.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,68.0 195.0,68.0 210.0,53.0 180.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='195.0,98.0 210.0,83.0 210.0,53.0 195.0,68.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+    "adimlar": [
+     {
+      "metin": "Alt kat: önde 3, arkada 3 küp.",
+      "soru": {
+       "soru": "Alt katta kaç küp var?",
+       "cevap": "6",
+       "ipucu": "Öndeki ve arkadaki sırayı topla.",
+       "aciklama": "3 + 3 = 6.",
+       "yardim": {
+        "adimlar": [
+         "Önden bir sırada kaç küp var?",
+         "Arkada da aynı sıra var. İkisini topla."
+        ]
+       }
+      },
+      "islem": "3 + 3 = 6"
+     },
+     {
+      "metin": "Kaç kat var? Görselde 3 kat.",
+      "islem": "3 kat"
+     },
+     {
+      "metin": "Her katta 6 küp, 3 kat.",
+      "soru": {
+       "soru": "6 + 6 + 6 kaçtır?",
+       "cevap": "18",
+       "ipucu": "Üç tane 6'yı topla.",
+       "aciklama": "6 + 6 + 6 = 18.",
+       "yardim": {
+        "adimlar": [
+         "Önce 6 + 6.",
+         "Sonuca bir 6 daha ekle."
+        ]
+       }
+      },
+      "islem": "6 + 6 + 6 = 18 br³"
+     }
+    ],
+    "sonuc": "Harika! Prizmanın hacmi 18 br³."
+   },
+   "soru": {
+    "soru": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+    "cevap": "8",
+    "ipucu": "Alt kattaki küpleri say, sonra üst katı ekle.",
+    "aciklama": "Alt katta 2 + 2 = 4, üst katta 4 küp: 4 + 4 = 8 br³. (s. 137)",
+    "birim": "br³",
+    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='125.0,118.0 165.0,118.0 165.0,78.0 125.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,78.0 165.0,78.0 185.0,58.0 145.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 185.0,98.0 185.0,58.0 165.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 205.0,118.0 205.0,78.0 165.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,78.0 205.0,78.0 225.0,58.0 185.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='205.0,118.0 225.0,98.0 225.0,58.0 205.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,78.0 165.0,78.0 165.0,38.0 125.0,38.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,38.0 165.0,38.0 185.0,18.0 145.0,18.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,78.0 185.0,58.0 185.0,18.0 165.0,38.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,78.0 205.0,78.0 205.0,38.0 165.0,38.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,38.0 205.0,38.0 225.0,18.0 185.0,18.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='205.0,78.0 225.0,58.0 225.0,18.0 205.0,38.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,138.0 145.0,138.0 145.0,98.0 105.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,98.0 145.0,98.0 165.0,78.0 125.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 165.0,118.0 165.0,78.0 145.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 185.0,138.0 185.0,98.0 145.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,98.0 185.0,98.0 205.0,78.0 165.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,138.0 205.0,118.0 205.0,78.0 185.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,98.0 145.0,98.0 145.0,58.0 105.0,58.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,58.0 145.0,58.0 165.0,38.0 125.0,38.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,98.0 165.0,78.0 165.0,38.0 145.0,58.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,98.0 185.0,98.0 185.0,58.0 145.0,58.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,58.0 185.0,58.0 205.0,38.0 165.0,38.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,98.0 205.0,78.0 205.0,38.0 185.0,58.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+    "yardim": {
+     "adimlar": [
+      "Alt katta önde kaç küp var? Arkada da aynısı var.",
+      "Üst katta da alt kat kadar küp var. İki katı topla."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Daha Uygun Birim",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='34' width='46' height='46' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><rect x='12' y='58' width='42' height='20' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><rect x='12' y='38' width='42' height='18' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><rect x='64' y='34' width='46' height='46' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><rect x='65.0' y='35.0' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='65.0' y='49.7' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='65.0' y='64.4' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='79.7' y='35.0' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='79.7' y='49.7' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='79.7' y='64.4' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='94.4' y='35.0' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='94.4' y='49.7' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><rect x='94.4' y='64.4' width='14.7' height='14.7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='33' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ff8fab'>boşluk</text><text x='87' y='96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>tam dolar</text><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>küp daha uygun</text></svg>",
+   "aciklama": "Hacmi ölçerken arada boşluk bırakmayan nesne daha uygun birimdir. Eş küpler kutuyu boşluksuz doldurur. (s. 138)",
+   "ek": "Kitaptaki cam kap kutularla doldurulunca arada boşluk kaldı; küplerle doldurulunca hiç boşluk kalmadı. Farklı nesneler farklı sonuç verdi; küp daha uygun birimdir. (s. 138)",
+   "akilda": "Boşluk kalmasın: küp kullan",
+   "soru": {
+    "soru": "Bir kutunun hacmini ölçmek için hangisi en uygun birimdir?",
+    "secenekler": [
+     "Pinpon topu",
+     "Eş küpler",
+     "Farklı boyda taşlar"
+    ],
+    "dogru": 1,
+    "ipucu": "Hangisi arada boşluk bırakmaz ve hepsi aynı mı?",
+    "aciklama": "Toplar arasında boşluk kalır, farklı taşlar eş değil. Eş küpler boşluksuz doldurur. (s. 138)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Japonya'da bazı çiftçiler karpuzları küçükken cam kutulara koyarak kare prizma biçiminde büyütür. Böylece karpuzlar yuvarlanıp düşmez, kamyonda aralarında boşluk kalmaz. (s. 136)"
+ ],
+ "akildaKalsin": [
+  "Hacim, bir cismin uzayda kapladığı yerdir.",
+  "Kaplamak = yüzey alanı (br²); doldurmak = hacim (br³).",
+  "Hacmi, kutuyu boşluksuz dolduran eş nesneleri sayarak ölçeriz.",
+  "Karşılaştırmak için iki kutuyu da aynı nesneyle doldur.",
+  "Birim küp: her ayrıtı 1 birim olan küp.",
+  "Sığan birim küp sayısı = hacim (br³). Saklı küpleri de say."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Makarnaları saymak neden işe yaramadı?",
+   "cevap": "Çubuk makarna ile fiyonk makarna farklı büyüklükte. Farklı nesnelerle sayınca hangi kutunun büyük olduğu kesin bilinemez; ikisi de aynı nesneyle doldurulmalı. (s. 135)"
+  },
+  {
+   "soru": "Pinpon topu neden iyi bir birim değil?",
+   "cevap": "Topların arasında boşluk kalır. Hacmi doğru ölçmek için boşluk bırakmayan eş küpler kullanılır. (s. 138)"
+  },
+  {
+   "soru": "Bir kutuya 10 büyük küp sığıyorsa hacmi 10 br³ mü?",
+   "cevap": "Yalnızca küplerin ayrıtı 1 birimse. Kitapta ayrıtı 2 birim olan 10 küp bir prizmayı dolduruyor. Böyle bir küpün içine 2 · 2 · 2 = 8 birim küp sığar; prizmanın hacmi 10 · 8 = 80 br³ olur. (s. 137)"
+  },
+  {
+   "soru": "br³ nasıl okunur?",
+   "cevap": "“Birimküp” diye okunur. Hacim, kaç birim küp sığdığını söyler. (s. 137–138)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Deniz bir kutuya 20 bilye, Ece başka bir kutuya 15 küp yerleştirdi. Deniz “Benim kutumun hacmi daha büyük.” dedi. Haklı mı? Neden?",
+   "ornekCevap": "Bilemeyiz. Kutular farklı nesnelerle doldurulmuş. Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. Ayrıca bilyelerin arasında boşluk kalır.",
+   "anahtarlar": [
+    "aynı",
+    "eş",
+    "bilemeyiz",
+    "farklı",
+    "boşluk"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+   "cevap": "6",
+   "ipucu": "Önden görünen sıranın arkasında bir sıra daha var.",
+   "aciklama": "Önde 3, arkada 3 küp: 3 + 3 = 6 br³. (s. 137)",
+   "birim": "br³",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='105.0,118.0 145.0,118.0 145.0,78.0 105.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,78.0 145.0,78.0 165.0,58.0 125.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,118.0 165.0,98.0 165.0,58.0 145.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,118.0 185.0,118.0 185.0,78.0 145.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,78.0 185.0,78.0 205.0,58.0 165.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,118.0 205.0,98.0 205.0,58.0 185.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,118.0 225.0,118.0 225.0,78.0 185.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,78.0 225.0,78.0 245.0,58.0 205.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='225.0,118.0 245.0,98.0 245.0,58.0 225.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='85.0,138.0 125.0,138.0 125.0,98.0 85.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='85.0,98.0 125.0,98.0 145.0,78.0 105.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,138.0 145.0,118.0 145.0,78.0 125.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,138.0 165.0,138.0 165.0,98.0 125.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,98.0 165.0,98.0 185.0,78.0 145.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 185.0,118.0 185.0,78.0 165.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 205.0,138.0 205.0,98.0 165.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,98.0 205.0,98.0 225.0,78.0 185.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='205.0,138.0 225.0,118.0 225.0,78.0 205.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+   "kavram": "Birim Küp Cinsinden Hacim",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? İçini dolduran küpleri sayıyoruz.",
+     "Önden bir sırada kaç küp var?",
+     "Arkada saklı bir sıra daha var.",
+     "İki sırayı topla."
+    ]
+   }
+  },
+  {
+   "soru": "Hacim neyi anlatır?",
+   "secenekler": [
+    "Bir cismin yüzlerinin alanını",
+    "Bir cismin ayrıtlarının sayısını",
+    "Bir cismin kapladığı yeri"
+   ],
+   "dogru": 2,
+   "ipucu": "Hacim kutunun içiyle mi ilgili, dışıyla mı?",
+   "aciklama": "Hacim, bir cismin uzayda kapladığı yerdir. (s. 136)",
+   "kavram": "Hacim"
+  },
+  {
+   "soru": "Hangisinde hacmi bulmamız gerekir?",
+   "secenekler": [
+    "Kutuyu paket kâğıdıyla kaplamak",
+    "Kutuya kaç oyuncak sığacağını bulmak",
+    "Kutunun bir kenarını ölçmek"
+   ],
+   "dogru": 1,
+   "ipucu": "Kaplamak mı, doldurmak mı?",
+   "aciklama": "Oyuncaklar kutunun içini doldurur. Doldurmak = hacim.",
+   "kavram": "Kaplamak mı, Doldurmak mı?"
+  },
+  {
+   "soru": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
+   "cevap": "12",
+   "ipucu": "Alt katı say, sonra kaç kat olduğuna bak.",
+   "aciklama": "Alt katta 2 + 2 = 4 küp. 3 kat var: 4 + 4 + 4 = 12 br³. (s. 137)",
+   "birim": "br³",
+   "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='131.0,141.0 165.0,141.0 165.0,107.0 131.0,107.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,107.0 165.0,107.0 182.0,90.0 148.0,90.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,141.0 182.0,124.0 182.0,90.0 165.0,107.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,141.0 199.0,141.0 199.0,107.0 165.0,107.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,107.0 199.0,107.0 216.0,90.0 182.0,90.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,141.0 216.0,124.0 216.0,90.0 199.0,107.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,107.0 165.0,107.0 165.0,73.0 131.0,73.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,73.0 165.0,73.0 182.0,56.0 148.0,56.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,107.0 182.0,90.0 182.0,56.0 165.0,73.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,107.0 199.0,107.0 199.0,73.0 165.0,73.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,73.0 199.0,73.0 216.0,56.0 182.0,56.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,107.0 216.0,90.0 216.0,56.0 199.0,73.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,73.0 165.0,73.0 165.0,39.0 131.0,39.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,39.0 165.0,39.0 182.0,22.0 148.0,22.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,73.0 182.0,56.0 182.0,22.0 165.0,39.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,73.0 199.0,73.0 199.0,39.0 165.0,39.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,39.0 199.0,39.0 216.0,22.0 182.0,22.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,73.0 216.0,56.0 216.0,22.0 199.0,39.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,158.0 148.0,158.0 148.0,124.0 114.0,124.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,124.0 148.0,124.0 165.0,107.0 131.0,107.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,158.0 165.0,141.0 165.0,107.0 148.0,124.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,158.0 182.0,158.0 182.0,124.0 148.0,124.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,124.0 182.0,124.0 199.0,107.0 165.0,107.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,158.0 199.0,141.0 199.0,107.0 182.0,124.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,124.0 148.0,124.0 148.0,90.0 114.0,90.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,90.0 148.0,90.0 165.0,73.0 131.0,73.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,124.0 165.0,107.0 165.0,73.0 148.0,90.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,124.0 182.0,124.0 182.0,90.0 148.0,90.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,90.0 182.0,90.0 199.0,73.0 165.0,73.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,124.0 199.0,107.0 199.0,73.0 182.0,90.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,90.0 148.0,90.0 148.0,56.0 114.0,56.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,56.0 148.0,56.0 165.0,39.0 131.0,39.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,90.0 165.0,73.0 165.0,39.0 148.0,56.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,90.0 182.0,90.0 182.0,56.0 148.0,56.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,56.0 182.0,56.0 199.0,39.0 165.0,39.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,90.0 199.0,73.0 199.0,39.0 182.0,56.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+   "kavram": "Birim Küp Cinsinden Hacim",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? İçindeki küpleri sayıyoruz.",
+     "Alt katta önde kaç küp var? Arkada da aynısı var.",
+     "Kaç kat var?",
+     "Her katta aynı sayıda küp var: katları topla."
+    ]
+   }
+  },
+  {
+   "soru": "Ece iki kutunun hacmini karşılaştırmak istiyor. Ne yapmalı?",
+   "secenekler": [
+    "İkisini de aynı eş küplerle doldurup küpleri saymalı.",
+    "Birini bilyeyle, diğerini küple doldurmalı.",
+    "Yalnızca kutuların rengine bakmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "Dikkat kutusu: nesneler aynı olmalı.",
+   "aciklama": "Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. (s. 135)",
+   "kavram": "Eş Nesnelerle Ölçme"
+  },
+  {
+   "soru": "Mert kutusuna her katta 6 tahta olacak biçimde 5 kat, Elif aynı tahtalardan her katta 4 tane olacak biçimde 8 kat yerleştirdi. Kutular tam doldu. Hangi kutunun hacmi daha büyük?",
+   "secenekler": [
+    "Mert'in",
+    "Elif'in",
+    "İkisi eşit"
+   ],
+   "dogru": 1,
+   "ipucu": "Tahtalar aynı. Her kutuya kaç tahta sığdığını bul.",
+   "aciklama": "Mert 6 · 5 = 30, Elif 4 · 8 = 32 tahta. 32 > 30: Elif'in kutusu daha büyük. (s. 136)",
+   "kavram": "Eş Nesnelerle Ölçme",
+   "yardim": {
+    "adimlar": [
+     "Tahtalar eş mi? Evet: sayıları karşılaştırabiliriz.",
+     "Mert: 6 · 5.",
+     "Elif: 4 · 8.",
+     "İki sayıyı karşılaştır."
+    ]
+   }
+  },
+  {
+   "soru": "Birim küp hangisidir?",
+   "secenekler": [
+    "Her ayrıtı 2 birim olan küp",
+    "Bir yüzü 1 birim olan dikdörtgen",
+    "Her ayrıtı 1 birim olan küp"
+   ],
+   "dogru": 2,
+   "ipucu": "Adında “birim” var.",
+   "aciklama": "Ayrıtlarının her biri 1 birim olan küpe birim küp denir. (s. 138)",
+   "kavram": "Birim Küp"
+  },
+  {
+   "soru": "Bir kutuya her sırada 5 birim küp olacak şekilde 3 sıra dizildi ve kutu tek katla tamamen doldu. Kutunun hacmi kaç br³?",
+   "cevap": "15",
+   "ipucu": "Sıra sayısını bir sıradaki küp sayısıyla çarp.",
+   "aciklama": "3 · 5 = 15 birim küp: hacim 15 br³. (s. 138)",
+   "birim": "br³",
+   "kavram": "Birim Küp Cinsinden Hacim",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Kutuyu dolduran küpleri sayıyoruz.",
+     "Bir sırada kaç küp, kaç sıra var?",
+     "Sıra sayısını bir sıradaki küp sayısıyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Cam bir kap bir kez kibrit kutularıyla, bir kez eş küplerle dolduruldu. Kutularla doldurunca arada boşluk kaldı. Hacmi ölçmek için hangisi daha uygun?",
+   "secenekler": [
+    "Eş küpler",
+    "Kibrit kutuları",
+    "İkisi de aynı sonucu verir"
+   ],
+   "dogru": 0,
+   "ipucu": "Hangisi boşluk bırakmadı?",
+   "aciklama": "Küpler boşluksuz doldurur; boşluk kalırsa hacim yanlış ölçülür. (s. 138)",
+   "kavram": "Daha Uygun Birim"
+  },
+  {
+   "soru": "Görseldeki kutu birim küplerle dolu. Hangisi doğrudur?",
+   "secenekler": [
+    "Hacmi 4 br³, yüzey alanı 16 br²",
+    "Hacmi 16 br³, yüzey alanı 4 br²",
+    "Hacmi ile yüzey alanı aynı sayıdır"
+   ],
+   "dogru": 0,
+   "ipucu": "İçindeki küpleri say (hacim), dıştaki kareleri say (yüzey alanı).",
+   "aciklama": "İçinde 4 küp: 4 br³. Dışta üst 4, alt 4, dört yan yüzde 2'şer kare: 16 br².",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='125.0,118.0 165.0,118.0 165.0,78.0 125.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='125.0,78.0 165.0,78.0 185.0,58.0 145.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 185.0,98.0 185.0,58.0 165.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,118.0 205.0,118.0 205.0,78.0 165.0,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,78.0 205.0,78.0 225.0,58.0 185.0,58.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='205.0,118.0 225.0,98.0 225.0,58.0 205.0,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,138.0 145.0,138.0 145.0,98.0 105.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='105.0,98.0 145.0,98.0 165.0,78.0 125.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 165.0,118.0 165.0,78.0 145.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,138.0 185.0,138.0 185.0,98.0 145.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='145.0,98.0 185.0,98.0 205.0,78.0 165.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='185.0,138.0 205.0,118.0 205.0,78.0 185.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+   "kavram": "Kaplamak mı, Doldurmak mı?",
+   "yardim": {
+    "adimlar": [
+     "Doldurmak = hacim: içindeki küpleri say.",
+     "Kaplamak = yüzey alanı: üstteki ve alttaki kareleri say.",
+     "Dört yan yüzdeki kareleri ekle."
+    ]
+   }
+  }
+ ]
+}
