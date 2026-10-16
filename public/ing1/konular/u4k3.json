@@ -1,0 +1,719 @@
+{
+ "id": "u4k3",
+ "unite": "Unit 4: Wild Animals",
+ "baslik": "Öneriler (should / shouldn't)",
+ "sayfalar": "s. 63–80",
+ "giris": "Hayvanları korumak için ne yapmalıyız? Bu konuda öneri vermeyi öğreneceğiz. Yapılması iyi olan şey için {{should}}, yapılmaması gereken şey için {{shouldn't}} kullanırız. {{We shouldn't hunt animals.}}",
+ "kavramlar": [
+  {
+   "ad": "should",
+   "renk": "#3fae55",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='38' fill='#3fae55'/><path d='M40 61l14 14 27-30' stroke='#f5f0e6' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "\"-meli, -malı\" demektir. Yapılması iyi olan bir şeyi önerirken kullanırız. Arkasından fiil yalın hâliyle gelir.",
+   "ek": "{{should protect}} doğru; {{should to protect}} ya da {{should protects}} yanlış.",
+   "akilda": "-meli, -malı",
+   "ornek": "We should show respect to animals because we are sharing the same world.",
+   "ornekTr": "Hayvanlara saygı göstermeliyiz, çünkü aynı dünyayı paylaşıyoruz. (s. 68)",
+   "formul": [
+    [
+     {
+      "t": "We / You / They",
+      "r": "ozne"
+     },
+     {
+      "t": "should",
+      "r": "yard",
+      "alt": "öneri"
+     },
+     {
+      "t": "protect",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     },
+     {
+      "t": "wild animals",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru yazılmış?",
+    "secenekler": [
+     "We should to protect wild animals.",
+     "We should protect wild animals.",
+     "We should protects wild animals."
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta yazıyordu: {{should}}'dan sonra fiil yalın hâliyle gelir.",
+    "aciklama": "{{should}} + yalın fiil: {{We should protect wild animals.}} (s. 75)"
+   }
+  },
+  {
+   "ad": "shouldn't",
+   "renk": "#ff6b6b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='38' fill='none' stroke='#ff6b6b' stroke-width='10'/><path d='M34 34l52 52' stroke='#ff6b6b' stroke-width='10' stroke-linecap='round'/><ellipse cx='60' cy='66' rx='9' ry='8' fill='#c98a5a'/><circle cx='50' cy='54' r='4' fill='#c98a5a'/><circle cx='70' cy='54' r='4' fill='#c98a5a'/></svg>",
+   "aciklama": "\"-memeli, -mamalı\" demektir. Yapılmaması gereken bir şeyi söylerken kullanırız. {{shouldn't}} = {{should not}}.",
+   "ek": "Kitapta emir cümleleri öneriye çevriliyor: {{Don't destroy the animal habitats.}} → {{We shouldn't destroy the animal habitats.}} (s. 70)",
+   "akilda": "-memeli, -mamalı",
+   "ornek": "We shouldn't hunt animals.",
+   "ornekTr": "Hayvanları avlamamalıyız. (s. 71)",
+   "formul": [
+    [
+     {
+      "t": "We / You / They",
+      "r": "ozne"
+     },
+     {
+      "t": "shouldn't",
+      "r": "olumsuz",
+      "alt": "should not"
+     },
+     {
+      "t": "hunt",
+      "r": "fiil",
+      "alt": "yalın fiil"
+     },
+     {
+      "t": "animals",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{We shouldn't hunt animals.}} Bu cümle ne diyor?",
+    "secenekler": [
+     "Hayvanları avlamalıyız.",
+     "Hayvanları avladık.",
+     "Hayvanları avlamamalıyız."
+    ],
+    "dogru": 2,
+    "ipucu": "{{shouldn't}} olumsuz öneridir: -memeli, -mamalı.",
+    "aciklama": "{{shouldn't hunt}} avlamamalıyız. (s. 71)"
+   }
+  },
+  {
+   "ad": "What should we do?",
+   "renk": "#6fb3ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 26h76a8 8 0 0 1 8 8v40a8 8 0 0 1-8 8H50l-18 16v-16H22a8 8 0 0 1-8-8V34a8 8 0 0 1 8-8z' fill='#6fb3ff'/><path d='M50 44q0-10 10-10t10 10q0 7-10 10v6' stroke='#1b2340' stroke-width='7' fill='none' stroke-linecap='round'/><circle cx='60' cy='70' r='4' fill='#1b2340'/></svg>",
+   "aciklama": "\"Ne yapmalıyız?\" demektir. Öneri istemek için sorarız. Cevap {{should}} ya da {{shouldn't}} ile verilir.",
+   "ek": "Soru: {{What should we do?}} Cevap: {{Governments should educate people.}} (s. 79)",
+   "akilda": "Ne yapmalıyız?",
+   "ornek": "What should we do to protect wildlife?",
+   "ornekTr": "Yaban hayatını korumak için ne yapmalıyız? (s. 69)",
+   "formul": [
+    [
+     {
+      "t": "What",
+      "r": "diger",
+      "alt": "ne"
+     },
+     {
+      "t": "should",
+      "r": "yard"
+     },
+     {
+      "t": "we",
+      "r": "ozne"
+     },
+     {
+      "t": "do",
+      "r": "fiil",
+      "alt": "yapmak"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{What should we do to protect wildlife?}} sorusuna hangisi uygun cevaptır?",
+    "secenekler": [
+     "We shouldn't hunt animals.",
+     "Because people killed them.",
+     "In 1980."
+    ],
+    "dogru": 0,
+    "ipucu": "Soru öneri istiyor. Cevapta {{should}} ya da {{shouldn't}} olmalı.",
+    "aciklama": "Öneri isteyen soruya öneriyle cevap verilir: {{We shouldn't hunt animals.}} (s. 71)"
+   }
+  },
+  {
+   "ad": "protect",
+   "renk": "#3274d6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 14l38 14v30q0 30-38 48Q22 88 22 58V28z' fill='#3274d6'/><path d='M60 24l28 10v24q0 22-28 36Q32 80 32 58V34z' fill='#6fb3ff'/><ellipse cx='60' cy='66' rx='10' ry='9' fill='#f5f0e6'/><circle cx='48' cy='52' r='5' fill='#f5f0e6'/><circle cx='57' cy='46' r='5' fill='#f5f0e6'/><circle cx='67' cy='46' r='5' fill='#f5f0e6'/><circle cx='75' cy='53' r='5' fill='#f5f0e6'/></svg>",
+   "aciklama": "Korumak demektir: birini ya da bir şeyi zarardan uzak tutmak. Bir kalkan gibi düşün.",
+   "ek": "Karşıtı: {{destroy}} (yok etmek), {{damage}} (zarar vermek).",
+   "akilda": "korumak",
+   "ornek": "Protect animal habitats or they will all die.",
+   "ornekTr": "Hayvanların yaşam alanlarını koruyun, yoksa hepsi ölecek. (s. 69)",
+   "soru": {
+    "soru": "{{protect}} hangi kelimenin karşıtıdır?",
+    "secenekler": [
+     "educate",
+     "feed",
+     "destroy"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta karşıtı yazıyordu: yok etmek.",
+    "aciklama": "{{protect}} korumak, {{destroy}} yok etmek: zıt anlamlı. (s. 69, s. 75)"
+   }
+  },
+  {
+   "ad": "stop hunting",
+   "renk": "#e5484d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M44 16h32l22 22v32L76 92H44L22 70V38z' fill='#e5484d'/><path d='M44 22h32l18 18v28L76 86H44L28 68V40z' fill='none' stroke='#f5f0e6' stroke-width='3'/><circle cx='60' cy='54' r='14' fill='none' stroke='#f5f0e6' stroke-width='4'/><path d='M60 34v10M60 64v10M40 54h10M70 54h10' stroke='#f5f0e6' stroke-width='4' stroke-linecap='round'/><path d='M42 72l36-36' stroke='#1b2340' stroke-width='6' stroke-linecap='round'/><rect x='56' y='92' width='8' height='18' fill='#9aa7b8'/></svg>",
+   "aciklama": "Avlamayı bırakmak demektir. {{stop}}'tan sonra fiil {{-ing}} alır: {{stop hunting}}.",
+   "ek": "{{We should stop hunting.}} (s. 75) · {{I guess we should stop harming wildlife as soon as possible.}} (s. 71)",
+   "akilda": "avlamayı bırakmak",
+   "ornek": "Stop hunting the animals for their skin, fur or teeth.",
+   "ornekTr": "Hayvanları derileri, kürkleri ya da dişleri için avlamayı bırakın. (s. 69)",
+   "formul": [
+    [
+     {
+      "t": "We",
+      "r": "ozne"
+     },
+     {
+      "t": "should",
+      "r": "yard"
+     },
+     {
+      "t": "stop",
+      "r": "fiil",
+      "alt": "bırakmak"
+     },
+     {
+      "t": "hunting",
+      "r": "ek",
+      "alt": "fiil + -ing"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru yazılmış?",
+    "secenekler": [
+     "We should stop hunt.",
+     "We should stop hunting.",
+     "We should stops hunting."
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta yazıyordu: {{stop}}'tan sonra fiil {{-ing}} alır.",
+    "aciklama": "{{stop}} + {{-ing}}: {{We should stop hunting.}} (s. 75)"
+   }
+  },
+  {
+   "ad": "educate",
+   "renk": "#2f7d3c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='22' width='88' height='58' rx='6' fill='#2f7d3c'/><rect x='16' y='22' width='88' height='58' rx='6' fill='none' stroke='#c98a5a' stroke-width='5'/><path d='M30 42h30M30 54h22M30 66h28' stroke='#f5f0e6' stroke-width='4' stroke-linecap='round'/><ellipse cx='82' cy='58' rx='8' ry='7' fill='#f5f0e6'/><circle cx='73' cy='48' r='4' fill='#f5f0e6'/><circle cx='81' cy='44' r='4' fill='#f5f0e6'/><circle cx='90' cy='48' r='4' fill='#f5f0e6'/><path d='M44 80l-8 22M76 80l8 22' stroke='#c98a5a' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Eğitmek demektir: birine bir şeyi öğretmek. İnsanlar yaban hayatını öğrenirse onu nasıl koruyacaklarını da öğrenir.",
+   "ek": "{{Governments should educate people.}} (s. 79)",
+   "akilda": "eğitmek",
+   "ornek": "Educate people about wildlife, so they can learn how to protect it.",
+   "ornekTr": "İnsanları yaban hayatı hakkında eğitin, böylece onu nasıl koruyacaklarını öğrenebilirler. (s. 69)",
+   "soru": {
+    "soru": "{{Governments should educate people.}} Hükümetler ne yapmalı?",
+    "secenekler": [
+     "Hayvanları avlamalı",
+     "Ormanları yok etmeli",
+     "İnsanları eğitmeli"
+    ],
+    "dogru": 2,
+    "ipucu": "{{educate}} kartının anlamını hatırla.",
+    "aciklama": "{{educate}} eğitmek: hükümetler insanları eğitmeli. (s. 79)"
+   }
+  },
+  {
+   "ad": "feed",
+   "renk": "#ffa26b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M20 70h80q-4 28-40 28T20 70z' fill='#ffa26b'/><ellipse cx='60' cy='70' rx='40' ry='8' fill='#d9480f'/><circle cx='46' cy='66' r='5' fill='#c98a5a'/><circle cx='58' cy='63' r='5' fill='#c98a5a'/><circle cx='70' cy='66' r='5' fill='#c98a5a'/><circle cx='64' cy='70' r='4' fill='#c98a5a'/><path d='M50 40q10-14 20 0' stroke='#f2c14e' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M60 30v-10' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/><path d='M38 46l-6-6M82 46l6-6' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Beslemek, yiyecek vermek demektir. Kitap sokak hayvanlarını beslemeyi öneriyor.",
+   "ek": "{{stray animals}}: sokak hayvanları. {{We should feed the stray animals.}}",
+   "akilda": "beslemek",
+   "ornek": "Feed the stray animals.",
+   "ornekTr": "Sokak hayvanlarını besleyin. (s. 70)",
+   "soru": {
+    "soru": "{{Feed the stray animals.}} Bu cümle ne öneriyor?",
+    "secenekler": [
+     "Sokak hayvanlarını avlayın.",
+     "Sokak hayvanlarını kafese koyun.",
+     "Sokak hayvanlarını besleyin."
+    ],
+    "dogru": 2,
+    "ipucu": "{{feed}} kartındaki kaseyi hatırla.",
+    "aciklama": "{{feed}} beslemek: sokak hayvanlarını besleyin. (s. 70)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bir öneri kalıbı mı, hayvanlar için yapılacak bir iş mi?",
+   "kutular": [
+    {
+     "etiket": "Öneri kalıbı",
+     "uyeler": [
+      "should",
+      "shouldn't",
+      "What should we do?"
+     ]
+    },
+    {
+     "etiket": "Yapılacak iş",
+     "uyeler": [
+      "protect",
+      "stop hunting",
+      "educate",
+      "feed"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Roger'ın posterinde yaban hayatını korumak için hastalıklara karşı aşı yapmak da öneriliyor: {{Vaccinate them against diseases.}} (s. 69)",
+  "Kitaptaki konuşmaya göre adalet yalnızca insanlar için değil, hayvanlar için de olmalı. (s. 71)"
+ ],
+ "akildaKalsin": [
+  "{{should}} + yalın fiil: yapılması iyi olan. {{We should protect wild animals.}}",
+  "{{shouldn't}} + yalın fiil: yapılmaması gereken. {{We shouldn't hunt animals.}}",
+  "Öneri istemek: {{What should we do?}}",
+  "{{should to}} ve {{should protects}} yanlış!",
+  "{{stop}} + {{-ing}}: {{stop hunting}}.",
+  "Emirden öneriye: {{Don't destroy …}} → {{We shouldn't destroy …}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{should}}'dan sonra {{to}} gelir mi?",
+   "cevap": "Hayır. Fiil hemen ve yalın gelir: {{We should protect wild animals.}} (s. 75)"
+  },
+  {
+   "soru": "{{He}} ile kullanınca {{shoulds}} mi olur?",
+   "cevap": "Hayır, {{should}} hiç değişmez; fiile de {{-s}} eklenmez. {{Governments should educate people.}} (s. 79)"
+  },
+  {
+   "soru": "{{shouldn't}} neyin kısası?",
+   "cevap": "{{should not}}. Kitapta hep kısa hâli kullanılıyor: {{We shouldn't hunt animals.}} (s. 71)"
+  },
+  {
+   "soru": "{{Don't}} ile {{shouldn't}} arasında fark var mı?",
+   "cevap": "{{Don't}} emir verir, {{shouldn't}} öneri verir, daha kibardır. Kitap emirleri öneriye çevirtiyor. (s. 70, s. 75)"
+  },
+  {
+   "soru": "Hayvanları korumak için kitap neler öneriyor?",
+   "cevap": "Avlamayı bırakmak, yaşam alanlarını korumak, aşı yapmak, yaşam alanlarına zarar vermemek ve insanları eğitmek. (s. 69)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Yaban hayatını korumak için iki öneri yaz: biri {{should}}, biri {{shouldn't}} ile.",
+   "ornekCevap": "We should protect the forests. We shouldn't hunt animals.",
+   "anahtarlar": [
+    "should",
+    "shouldn"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "We should hunt animals.",
+    "We shouldn't hunt animals.",
+    "We shouldn't feed animals."
+   ],
+   "dogru": 1,
+   "ipucu": "{{should}} mu, {{shouldn't}} mı? Hangi fiil? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{We shouldn't hunt animals.}} (s. 71)",
+   "dinle": "We shouldn't hunt animals.",
+   "kavram": "shouldn't"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Governments should educate people.",
+    "Governments shouldn't educate people.",
+    "Teachers should educate people."
+   ],
+   "dogru": 0,
+   "ipucu": "Kim? {{should}} mu, {{shouldn't}} mı?",
+   "aciklama": "Duyduğun cümle {{Governments should educate people.}} (s. 79)",
+   "dinle": "Governments should educate people.",
+   "kavram": "educate"
+  },
+  {
+   "soru": "Dinle. Hangi soruyu duydun?",
+   "secenekler": [
+    "Why should we protect wildlife?",
+    "What did we do to protect wildlife?",
+    "What should we do to protect wildlife?"
+   ],
+   "dogru": 2,
+   "ipucu": "Soru kelimesi {{What}} mi, {{Why}} mı? {{should}} var mı?",
+   "aciklama": "Duyduğun soru {{What should we do to protect wildlife?}} (s. 69)",
+   "dinle": "What should we do to protect wildlife?",
+   "kavram": "What should we do?"
+  },
+  {
+   "soru": "{{Destroy the forests.}} Bu kötü bir davranış. Hangi öneri doğru?",
+   "secenekler": [
+    "We should destroy the forests.",
+    "We shouldn't destroy the forests.",
+    "We shouldn't to destroy the forests."
+   ],
+   "dogru": 1,
+   "ipucu": "Kötü davranış yapılmamalı. Bir de yazımına dikkat et.",
+   "aciklama": "Yapılmaması gereken: {{We shouldn't destroy the forests.}} (s. 75)",
+   "kavram": "shouldn't",
+   "yardim": {
+    "adimlar": [
+     "Ormanları yok etmek iyi mi, kötü mü?",
+     "Kötüyse {{shouldn't}} kullanılır.",
+     "{{shouldn't}}'dan sonra {{to}} gelmez."
+    ]
+   }
+  },
+  {
+   "soru": "{{Protect wild animals.}} Hangisi bu cümlenin öneri hâlidir?",
+   "secenekler": [
+    "We should protect wild animals.",
+    "We should protects wild animals.",
+    "We shouldn't protect wild animals."
+   ],
+   "dogru": 0,
+   "ipucu": "Korumak iyi bir şey. Fiil yalın kalmalı.",
+   "aciklama": "İyi davranış: {{We should protect wild animals.}} (s. 75)",
+   "kavram": "should"
+  },
+  {
+   "soru": "{{should}}'dan sonra fiil nasıl gelir?",
+   "secenekler": [
+    "to ile: should to protect",
+    "Yalın hâliyle: should protect",
+    "-s ile: should protects"
+   ],
+   "dogru": 1,
+   "ipucu": "{{should}} kartındaki formül şeridine bak.",
+   "aciklama": "{{should}} + yalın fiil: {{should protect}}. (s. 75)",
+   "kavram": "should"
+  },
+  {
+   "soru": "{{Don't buy pets from the pet shops.}} Hangisi aynı anlamdadır?",
+   "secenekler": [
+    "We should buy pets from the pet shops.",
+    "We buy pets from the pet shops.",
+    "We shouldn't buy pets from the pet shops."
+   ],
+   "dogru": 2,
+   "ipucu": "{{Don't}} olumsuz emir. Olumsuz öneri hangisi?",
+   "aciklama": "{{Don't buy}} → {{We shouldn't buy}}. (s. 70)",
+   "kavram": "shouldn't"
+  },
+  {
+   "soru": "Sokak hayvanları ({{stray animals}}) için hangisi iyi bir öneridir?",
+   "secenekler": [
+    "We should feed the stray animals.",
+    "We should hunt the stray animals.",
+    "We shouldn't feed the stray animals."
+   ],
+   "dogru": 0,
+   "ipucu": "Hayvanlara yardım eden öneri hangisi?",
+   "aciklama": "{{Feed the stray animals.}} → {{We should feed the stray animals.}} (s. 70)",
+   "kavram": "feed"
+  },
+  {
+   "soru": "\"Avlamayı bırakmalıyız.\" cümlesinin İngilizcesi hangisi?",
+   "secenekler": [
+    "We should stop hunt.",
+    "We should stop hunting.",
+    "We stop should hunting."
+   ],
+   "dogru": 1,
+   "ipucu": "{{stop}}'tan sonra fiil {{-ing}} alır; {{should}} öznenin hemen arkasında.",
+   "aciklama": "{{We should stop hunting.}} (s. 75)",
+   "kavram": "stop hunting"
+  },
+  {
+   "soru": "{{Educate people about wildlife, so they can learn how to protect it.}} İnsanları neden eğitmeliyiz?",
+   "secenekler": [
+    "Hayvanları avlamayı öğrensinler diye",
+    "Yaban hayatını korumayı öğrensinler diye",
+    "Tarla yapmayı öğrensinler diye"
+   ],
+   "dogru": 1,
+   "ipucu": "{{so}}'dan sonrasını oku: {{learn how to protect it}}.",
+   "aciklama": "{{so they can learn how to protect it}}: korumayı öğrensinler diye. (s. 69)",
+   "kavram": "protect"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "vaccinate",
+   "tr": "aşılamak",
+   "ornek": "Vaccinate them against diseases.",
+   "ornekTr": "Onları hastalıklara karşı aşılayın. (s. 69)"
+  },
+  {
+   "en": "damage",
+   "tr": "zarar vermek",
+   "ornek": "Don't damage their habitats.",
+   "ornekTr": "Yaşam alanlarına zarar vermeyin. (s. 69)"
+  },
+  {
+   "en": "stray animals",
+   "tr": "sokak hayvanları",
+   "ornek": "Feed the stray animals.",
+   "ornekTr": "Sokak hayvanlarını besleyin. (s. 70)"
+  },
+  {
+   "en": "pet shop",
+   "tr": "evcil hayvan dükkânı",
+   "ornek": "Don't buy pets from the pet shops.",
+   "ornekTr": "Evcil hayvan dükkânlarından hayvan almayın. (s. 70)"
+  },
+  {
+   "en": "rainforest",
+   "tr": "yağmur ormanı"
+  },
+  {
+   "en": "government",
+   "tr": "hükümet",
+   "ornek": "Governments should educate people.",
+   "ornekTr": "Hükümetler insanları eğitmeli. (s. 79)"
+  },
+  {
+   "en": "harm",
+   "tr": "zarar vermek",
+   "ornek": "I guess we should stop harming wildlife as soon as possible.",
+   "ornekTr": "Bence yaban hayatına zarar vermeyi bir an önce bırakmalıyız. (s. 71)"
+  },
+  {
+   "en": "justice",
+   "tr": "adalet"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "We should protect wild animals.",
+   "tr": "Vahşi hayvanları korumalıyız. (s. 75)"
+  },
+  {
+   "en": "We shouldn't hunt animals.",
+   "tr": "Hayvanları avlamamalıyız. (s. 71)"
+  },
+  {
+   "en": "Governments should educate people.",
+   "tr": "Hükümetler insanları eğitmeli. (s. 79)"
+  },
+  {
+   "en": "We should stop hunting.",
+   "tr": "Avlamayı bırakmalıyız. (s. 75)"
+  },
+  {
+   "en": "Don't damage their habitats.",
+   "tr": "Yaşam alanlarına zarar vermeyin. (s. 69)"
+  },
+  {
+   "en": "Feed the stray animals.",
+   "tr": "Sokak hayvanlarını besleyin. (s. 70)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "We should protecting wild animals.",
+   "yanlis": "protecting",
+   "secenekler": [
+    "protects",
+    "protect",
+    "protected"
+   ],
+   "dogru": 1,
+   "tr": "Vahşi hayvanları korumalıyız.",
+   "aciklama": "{{should}} + yalın fiil: {{protect}}. (s. 75)"
+  },
+  {
+   "cumle": "We should hunt the animals for their fur.",
+   "yanlis": "should",
+   "secenekler": [
+    "shouldn't",
+    "will",
+    "can"
+   ],
+   "dogru": 0,
+   "tr": "Hayvanları kürkleri için avlamamalıyız.",
+   "aciklama": "Avlamak kötü bir davranış: {{shouldn't}}. (s. 69, s. 75)"
+  },
+  {
+   "cumle": "We shouldn't protect animal habitats.",
+   "yanlis": "shouldn't",
+   "secenekler": [
+    "don't",
+    "should",
+    "can't"
+   ],
+   "dogru": 1,
+   "tr": "Hayvanların yaşam alanlarını korumalıyız.",
+   "aciklama": "Korumak iyi bir davranış: {{should}}. (s. 69)"
+  },
+  {
+   "cumle": "What should we doing to protect wildlife?",
+   "yanlis": "doing",
+   "secenekler": [
+    "does",
+    "did",
+    "do"
+   ],
+   "dogru": 2,
+   "tr": "Yaban hayatını korumak için ne yapmalıyız?",
+   "aciklama": "{{should}} + yalın fiil: {{do}}. (s. 69)"
+  },
+  {
+   "cumle": "Governments should educates people.",
+   "yanlis": "educates",
+   "secenekler": [
+    "educate",
+    "educating",
+    "educated"
+   ],
+   "dogru": 0,
+   "tr": "Hükümetler insanları eğitmeli.",
+   "aciklama": "{{should}}'dan sonra fiile {{-s}} eklenmez: {{educate}}. (s. 79)"
+  },
+  {
+   "cumle": "We should stop hunt the animals.",
+   "yanlis": "hunt",
+   "secenekler": [
+    "hunted",
+    "hunting",
+    "hunts"
+   ],
+   "dogru": 1,
+   "tr": "Hayvanları avlamayı bırakmalıyız.",
+   "aciklama": "{{stop}} + {{-ing}}: {{stop hunting}}. (s. 69)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Roger's Poster and a Speech",
+  "sayfa": "s. 69, s. 71",
+  "sozluk": {
+   "wildlife": "yaban hayatı",
+   "skin": "deri",
+   "habitats": "yaşam alanları",
+   "or they will all die": "yoksa hepsi ölecek",
+   "vaccinate": "aşılayın",
+   "against diseases": "hastalıklara karşı",
+   "damage": "zarar vermek",
+   "educate": "eğitin",
+   "learn how to": "nasıl yapılacağını öğrenmek",
+   "extinction": "neslin tükenmesi",
+   "tusks": "fildişleri",
+   "I guess": "bence, sanırım",
+   "harming": "zarar vermek",
+   "as soon as possible": "bir an önce",
+   "justice": "adalet"
+  },
+  "bolumler": [
+   {
+    "baslik": "Roger's poster",
+    "cumleler": [
+     {
+      "en": "What should we do to protect wildlife?",
+      "tr": "Yaban hayatını korumak için ne yapmalıyız?"
+     },
+     {
+      "en": "Stop hunting the animals for their skin, fur or teeth.",
+      "tr": "Hayvanları derileri, kürkleri ya da dişleri için avlamayı bırakın."
+     },
+     {
+      "en": "Protect animal habitats or they will all die.",
+      "tr": "Hayvanların yaşam alanlarını koruyun, yoksa hepsi ölecek."
+     },
+     {
+      "en": "Vaccinate them against diseases.",
+      "tr": "Onları hastalıklara karşı aşılayın."
+     },
+     {
+      "en": "Don't damage their habitats.",
+      "tr": "Yaşam alanlarına zarar vermeyin."
+     },
+     {
+      "en": "Educate people about wildlife, so they can learn how to protect it.",
+      "tr": "İnsanları yaban hayatı hakkında eğitin, böylece onu nasıl koruyacaklarını öğrenebilirler."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Posterde yaşam alanları korunmazsa ne olacağı yazıyor?",
+      "secenekler": [
+       "Hayvanlar göç edecek",
+       "Hayvanların hepsi ölecek",
+       "Hayvanlar çoğalacak"
+      ],
+      "dogru": 1,
+      "ipucu": "{{or they will all die}} kalıbını bul.",
+      "aciklama": "{{Protect animal habitats or they will all die.}}"
+     },
+     {
+      "soru": "Posterde hayvanları neye karşı aşılamak öneriliyor?",
+      "secenekler": [
+       "Hastalıklara karşı",
+       "Soğuğa karşı",
+       "Avcılara karşı"
+      ],
+      "dogru": 0,
+      "ipucu": "{{Vaccinate}} ile başlayan cümleyi oku.",
+      "aciklama": "{{Vaccinate them against diseases.}} {{diseases}} hastalıklar demek."
+     }
+    ]
+   },
+   {
+    "baslik": "A speech about extinction",
+    "cumleler": [
+     {
+      "en": "Today, I'd like to talk about the extinction of animals.",
+      "tr": "Bugün hayvanların neslinin tükenmesi hakkında konuşmak istiyorum."
+     },
+     {
+      "en": "They became extinct because people killed and hunted them for their furs, teeth or tusks.",
+      "tr": "İnsanlar onları kürkleri, dişleri ya da fildişleri için öldürüp avladığı için nesilleri tükendi."
+     },
+     {
+      "en": "Humans destroyed their habitats and damaged the forests.",
+      "tr": "İnsanlar yaşam alanlarını yok etti ve ormanlara zarar verdi."
+     },
+     {
+      "en": "I guess we should stop harming wildlife as soon as possible.",
+      "tr": "Bence yaban hayatına zarar vermeyi bir an önce bırakmalıyız."
+     },
+     {
+      "en": "There should be justice not only for people but also for the animals.",
+      "tr": "Adalet yalnızca insanlar için değil, hayvanlar için de olmalı."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Konuşmacı ne öneriyor?",
+      "secenekler": [
+       "Yaban hayatına zarar vermeyi bırakmayı",
+       "Daha çok orman kesmeyi",
+       "Hayvanları kafese koymayı"
+      ],
+      "dogru": 0,
+      "ipucu": "{{should}} geçen cümleyi bul.",
+      "aciklama": "{{I guess we should stop harming wildlife as soon as possible.}}"
+     },
+     {
+      "soru": "Konuşmaya göre adalet kimler için olmalı?",
+      "secenekler": [
+       "Yalnızca insanlar için",
+       "Yalnızca hayvanlar için",
+       "İnsanlar ve hayvanlar için"
+      ],
+      "dogru": 2,
+      "ipucu": "{{not only … but also}} kalıbına bak: hem … hem de.",
+      "aciklama": "{{not only for people but also for the animals}}: hem insanlar hem hayvanlar."
+     }
+    ]
+   }
+  ]
+ }
+}

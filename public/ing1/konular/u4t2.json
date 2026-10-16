@@ -1,0 +1,231 @@
+{
+ "id": "u4t2",
+ "tur": "tarama",
+ "unite": "Unit 4: Wild Animals",
+ "baslik": "Ünite 4 Sonu Taraması",
+ "sayfalar": "Konu 1–3 · s. 63–80",
+ "giris": "Ünite 4 bitti! Bütün ünitenin kısa bir taramasını yapalım. Önce özetleri oku ve kartlara dokun, sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce hayvanları ve yaşadıkları yerleri öğrendik. Sonra neden yok olduklarını: avlandılar, yaşam alanları yok edildi, çevre kirletildi. En sonda ne yapmamız gerektiğini: {{should}} ve {{shouldn't}} ile öneriler. Bu üçü bir arada şöyle söylenir: {{Tigers are endangered. We shouldn't hunt them.}}",
+ "kapsar": [
+  "u4k1",
+  "u4k2",
+  "u4k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u4k1",
+   "maddeler": [
+    "{{mammal}} memeli, {{bird}} kuş, {{reptile}} sürüngen.",
+    "Yaşam alanı {{habitat}}; orman {{jungle}}; çöl {{desert}}.",
+    "{{wildlife}}: evcil olmayan hayvanlar."
+   ]
+  },
+  {
+   "konu": "u4k2",
+   "maddeler": [
+    "{{extinct}} hiç kalmadı; {{endangered}} çok az kaldı.",
+    "{{hunted}} avladı; {{destroyed}} yok etti; {{polluted}} kirletti.",
+    "Kürk {{fur}}, fildişi {{tusks}}."
+   ]
+  },
+  {
+   "konu": "u4k3",
+   "maddeler": [
+    "{{should}} + yalın fiil: {{We should protect wild animals.}}",
+    "{{shouldn't}} + yalın fiil: {{We shouldn't hunt animals.}}",
+    "{{stop hunting}}: {{stop}} + {{-ing}}."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kelime bir hayvan grubu mu, bir tehlike mi, bir çözüm mü?",
+   "kutular": [
+    {
+     "etiket": "Hayvan grubu",
+     "uyeler": [
+      "mammal",
+      "bird",
+      "reptile"
+     ]
+    },
+    {
+     "etiket": "Tehlike",
+     "uyeler": [
+      "hunt",
+      "destroy",
+      "pollute"
+     ]
+    },
+    {
+     "etiket": "Çözüm",
+     "uyeler": [
+      "protect",
+      "educate",
+      "feed"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Stop hunting the animals for their skin, fur or teeth.",
+    "Stop feeding the animals for their skin, fur or teeth.",
+    "Start hunting the animals for their fur."
+   ],
+   "dogru": 0,
+   "ipucu": "Bırakın mı, başlayın mı? Hangi fiil? Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{Stop hunting the animals for their skin, fur or teeth.}} (s. 69)",
+   "dinle": "Stop hunting the animals for their skin, fur or teeth.",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "stop hunting"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "fur"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Duyduğun cümle hangi öneriyle aynı anlamdadır?",
+   "secenekler": [
+    "We should destroy the animal habitats.",
+    "We shouldn't destroy the animal habitats.",
+    "We shouldn't protect the animal habitats."
+   ],
+   "dogru": 1,
+   "ipucu": "{{Don't}} duydun mu? Olumsuz emir, olumsuz öneri olur.",
+   "aciklama": "{{Don't destroy the animal habitats.}} → {{We shouldn't destroy the animal habitats.}} (s. 70)",
+   "dinle": "Don't destroy the animal habitats.",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "shouldn't"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "habitat"
+    }
+   ]
+  },
+  {
+   "soru": "{{Tigers are endangered. People hunt them for their fur.}} Hangisi en iyi öneridir?",
+   "secenekler": [
+    "We should hunt tigers for their fur.",
+    "We should keep tigers in cages.",
+    "We shouldn't hunt tigers for their fur."
+   ],
+   "dogru": 2,
+   "ipucu": "Sorun ne? Avlanmaları. Avlamak iyi mi, kötü mü?",
+   "aciklama": "Nesli tehlikede, sebebi avlanmak: {{We shouldn't hunt tigers for their fur.}} (s. 70, s. 71)",
+   "yardim": {
+    "adimlar": [
+     "{{endangered}}: çok az kaldı.",
+     "Sebep: kürkleri için avlanıyorlar.",
+     "Sebebi durduran öneri hangisi? {{should}} mi, {{shouldn't}} mı?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "endangered"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "shouldn't"
+    }
+   ]
+  },
+  {
+   "soru": "{{Forests are the habitat of the animals.}} Ormanlar yok edilirse ne yapmalıyız?",
+   "secenekler": [
+    "We should protect the forests.",
+    "We should destroy the forests.",
+    "We shouldn't protect the forests."
+   ],
+   "dogru": 0,
+   "ipucu": "Hayvanların evi ormansa, ormana ne yapmalıyız?",
+   "aciklama": "Ormanlar yaşam alanıdır; onları korumalıyız: {{We should protect the forests.}} (s. 74, s. 75)",
+   "kaynak": [
+    {
+     "konu": "u4k1",
+     "kavram": "habitat"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "protect"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru yazılmış?",
+   "secenekler": [
+    "We should protects reptiles like snakes.",
+    "We should protect reptiles like snakes.",
+    "We should to protect reptiles like snakes."
+   ],
+   "dogru": 1,
+   "ipucu": "{{should}}'dan sonra fiil yalın gelir.",
+   "aciklama": "{{should}} + yalın fiil: {{We should protect reptiles like snakes.}} (s. 68, s. 75)",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "should"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "reptile"
+    }
+   ]
+  },
+  {
+   "soru": "{{People killed elephants for their tusks.}} Boşluğu doldur: {{___ kill elephants for their tusks.}}",
+   "secenekler": [
+    "We should",
+    "We shouldn't",
+    "Governments should"
+   ],
+   "dogru": 1,
+   "ipucu": "Fildişi için fil öldürmek iyi mi, kötü mü?",
+   "aciklama": "Kötü bir davranış: {{We shouldn't kill elephants for their tusks.}} (s. 75)",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "tusk"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "shouldn't"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi kirliliğin hayvanlara zarar vermesini önler?",
+   "secenekler": [
+    "We should pollute the rivers.",
+    "We shouldn't protect wildlife.",
+    "We shouldn't pollute the environment."
+   ],
+   "dogru": 2,
+   "ipucu": "{{pollute}} kirletmek demek. Kirletmeyi durduran öneri?",
+   "aciklama": "{{Pollute the environment.}} → {{We shouldn't pollute the environment.}} (s. 75)",
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "pollute"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "should"
+    }
+   ]
+  }
+ ]
+}
