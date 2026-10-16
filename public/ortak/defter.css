@@ -597,6 +597,9 @@ sup.us { font-size: .68em; font-weight: 800; vertical-align: super; line-height:
 .devir { text-decoration: overline; text-decoration-thickness: 2px; text-underline-offset: 0; text-decoration-skip-ink: none; }  /* devirli ondalık: [[d:6]] */
 /* Sayı doğrusu */
 .sd-wrap { overflow-x: auto; padding: 4px 0; }
+/* Soru/adım görseli (o.svg): koyu zemin kavram çizimleriyle aynı; çizim şeffaf zeminli ve açık renkli */
+.q-gorsel { display: flex; justify-content: center; background: var(--svgbg, #1b2340); border-radius: 16px; padding: 8px; margin: 4px 0; }
+.q-gorsel svg { width: 100%; height: auto; max-width: 440px; max-height: 300px; display: block; }
 .sd { width: 100%; height: auto; display: block; margin: 0 auto; font-family: var(--display); }
 .sd-dikey { width: auto; max-height: 460px; }
 .sd-line { stroke: var(--ink); stroke-width: 2.5; }

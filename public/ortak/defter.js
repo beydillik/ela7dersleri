@@ -471,6 +471,8 @@
     const oku = [o.metinBaslik, ...ps.flat().map(c => (c && c.kim ? c.kim + ": " : "") + cumleMetin(c))].filter(Boolean).join(" ");
     return `<div class="pasaj${kl ? " kanitli" : ""}">${o.metinBaslik ? `<div class="pasaj-bas">${esc(o.metinBaslik)}</div>` : ""}${govde}${tablo}${o.metin ? `<div class="row">${listenBtn(oku)}</div>` : ""}</div>`;
   }
+  // Soru/adım görseli (isteğe bağlı o.svg; Matematik Tema 2 ile eklendi): kavram çizimlerinden farklı viewBox, şeffaf zemin
+  function gorselHTML(o) { return o && o.svg ? `<div class="q-gorsel">${o.svg}</div>` : ""; }
   function questionHTML(o, idx) {
     const kind = qKind(o);
     if (o.ima && !o.secenekler) o.secenekler = IMA_SEC;
@@ -479,7 +481,7 @@
       : kind === "girdi" ? `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}${keypadHTML(o)}`
       : `${o.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(o.sayiDogrusu)}</div>` : ""}${kl ? `<div class="kanit-adim" aria-live="polite">${ICON.bak}<span><b>Kanıtı bul:</b> ${o.tablo ? "Metinde ya da tabloda cevabı gösteren yere dokun." : "Metinde cevabı gösteren cümleye dokun."}</span></div>` : ""}<div class="opts"${kl ? " hidden" : ""}>${o.secenekler.map((s, j) => `<button class="opt" data-o="${j}">${"abcd"[j]}) ${fx(esc(String(s).replace(EN_RE, "$1")))}</button>`).join("")}</div>`;
     return `<div class="q q-${kind}">${pasajHTML(o)}
-      <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${soruMetni(o)}</span></p>
+      <p class="q-text">${idx ? `<span class="qn">${idx}.</span>` : ""}<span>${soruMetni(o)}</span></p>${gorselHTML(o)}
       <div class="yardim-satir"><button class="yardim-btn" type="button" data-yardim hidden>${ICON.ampul}İpucu</button></div><div class="yardim" hidden></div>
       ${o.dinle ? `<div class="q-listen"><button class="say-en big" data-say-en="${esc(o.dinle)}" ${tts.en ? "" : "hidden"}>${ICON.ses}<span>Dinle</span></button><button class="say-en slow" data-say-en="${esc(o.dinle)}" data-slow ${tts.en ? "" : "hidden"}>${ICON.yavas}<span>Yavaş</span></button></div>` : ""}
       ${body}
@@ -1459,18 +1461,18 @@
   // Adımda "soru" varsa (Sıra sende) adım boş gelir; öğrenci cevaplayınca işlem satırı açılır ve sonraki adıma geçilir.
   function adimHTML(a, n, acik) {
     return `<li class="adim${a.soru ? " bos" : ""}" data-n="${n}"><div class="adim-no">${n + 1}</div><div class="adim-ic">
-      <p>${rx(a.metin || "")}</p>${a.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(a.sayiDogrusu)}</div>` : ""}
+      <p>${rx(a.metin || "")}</p>${gorselHTML(a)}${a.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(a.sayiDogrusu)}</div>` : ""}
       ${a.soru ? `<div class="adim-soru">${questionHTML(a.soru)}</div>` : ""}
       ${a.islem ? `<div class="islem"${a.soru && !acik ? " hidden" : ""}>${rx(a.islem)}</div>` : ""}</div></li>`;
   }
   function cozumStatik(c) {
-    return `<div class="cozum statik">${c.problem ? `<div class="problem">${rx(c.problem)}</div>` : ""}${c.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(c.sayiDogrusu)}</div>` : ""}
+    return `<div class="cozum statik">${c.problem ? `<div class="problem">${rx(c.problem)}</div>` : ""}${gorselHTML(c)}${c.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(c.sayiDogrusu)}</div>` : ""}
       <ol class="adimlar">${c.adimlar.map((a, n) => adimHTML({ ...a, soru: null }, n, true)).join("")}</ol>${c.sonuc ? `<div class="sonuc">${rx(c.sonuc)}</div>` : ""}</div>`;
   }
   // st: {acik: kaç adım açıldı, q: {adım: soru durumu}}; bitti(): bütün adımlar açılınca bir kez çağrılır
   function runCozum(box, c, st, bitti, kavram) {
     const yan = c.sayiDogrusu && c.sayiDogrusu.dikey;   // dikey sayı doğrusu adımların yanında durur (geniş ekranda)
-    box.innerHTML = `<div class="cozum${yan ? " yan" : ""}">${c.problem ? `<div class="problem">${rx(c.problem)}</div>` : ""}
+    box.innerHTML = `<div class="cozum${yan ? " yan" : ""}">${c.problem ? `<div class="problem">${rx(c.problem)}</div>` : ""}${gorselHTML(c)}
       <div class="coz-govde">${c.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(c.sayiDogrusu)}</div>` : ""}<div class="coz-adim">
       <ol class="adimlar"></ol><div class="row"><button class="btn primary" data-adim>Sonraki adım</button>${listenBtn([c.problem, ...c.adimlar.map(a => `${a.metin || ""} ${a.islem || ""}`)].join(". "))}</div>
       <div class="sonuc" hidden>${rx(c.sonuc || "")}</div></div></div></div>`;
@@ -1968,11 +1970,11 @@
     return { r: c === q.dogru ? 1 : 0 };
   }
   const tabloHTML = t => t ? `<div class="tablo-wrap"><table class="pasaj-tablo">${t.baslik ? `<caption>${esc(t.baslik)}</caption>` : ""}<thead><tr>${t.basliklar.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${t.satirlar.map(r => `<tr>${r.map(x => `<td>${rx(String(x))}</td>`).join("")}</tr>`).join("")}</tbody></table></div>` : "";
-  const metinHTML = q => q.metin || q.tablo ? `<div class="pasaj">${q.metinBaslik ? `<div class="pasaj-bas">${esc(q.metinBaslik)}</div>` : ""}${q.metin ? paragraflar(q.metin).map(p => `<p class="pasaj-p">${p.map(c => rx(cumleMetin(c))).join(" ")}</p>`).join("") : ""}${tabloHTML(q.tablo)}</div>` : "";
+  const metinHTML = q => gorselHTML(q) + (q.metin || q.tablo ? `<div class="pasaj">${q.metinBaslik ? `<div class="pasaj-bas">${esc(q.metinBaslik)}</div>` : ""}${q.metin ? paragraflar(q.metin).map(p => `<p class="pasaj-p">${p.map(c => rx(cumleMetin(c))).join(" ")}</p>`).join("") : ""}${tabloHTML(q.tablo)}</div>` : "");
 
   function sinavSoruHTML(it, c) {
     const q = it.q;
-    if (q.tur === "dy") return `<div class="q sinav-q"><p class="q-text">Aşağıdaki ifade doğru mu, yanlış mı?</p><div class="dy-ifade">${rx(q.ifade)}</div>
+    if (q.tur === "dy") return `<div class="q sinav-q"><p class="q-text">Aşağıdaki ifade doğru mu, yanlış mı?</p>${gorselHTML(q)}<div class="dy-ifade">${rx(q.ifade)}</div>
       <div class="opts dy-opts"><button class="opt" data-v="1" aria-pressed="${c === true}">Doğru</button><button class="opt" data-v="0" aria-pressed="${c === false}">Yanlış</button></div></div>`;
     if (q.tur === "dytablo") return `<div class="q sinav-q">${metinHTML(q)}<p class="q-text">${rx(q.soru || "Her ifade için Doğru ya da Yanlış seç.")}</p>
       <div class="tablo-wrap"><table class="dy-tablo"><thead><tr><th>İfade</th><th>D</th><th>Y</th></tr></thead><tbody>${q.ifadeler.map((x, i) => `<tr><td>${rx(x.s)}</td>
@@ -1996,7 +1998,7 @@
   function sinavKontrolHTML(it, c, p) {
     const q = it.q, o = c || {}, isr = ok => ok ? `<b class="ok-i" aria-label="doğru">✓</b>` : `<b class="no-i" aria-label="yanlış">✗</b>`;
     const bosMu = v => v === undefined || v === null || v === "";
-    if (q.tur === "dy") return `<div class="q sinav-q kontrol"><p class="q-text">Aşağıdaki ifade doğru mu, yanlış mı?</p><div class="dy-ifade">${rx(q.ifade)}</div>
+    if (q.tur === "dy") return `<div class="q sinav-q kontrol"><p class="q-text">Aşağıdaki ifade doğru mu, yanlış mı?</p>${gorselHTML(q)}<div class="dy-ifade">${rx(q.ifade)}</div>
       <div class="opts dy-opts">${[true, false].map(v => `<div class="opt${v === q.dogru ? " right" : c === v ? " wrong" : " soluk"}">${v ? "Doğru" : "Yanlış"}</div>`).join("")}</div>
       ${!p.r && q.duzeltme ? `<p class="kd-duz"><b>Doğrusu:</b> ${rx(q.duzeltme)}</p>` : ""}</div>`;
     if (q.tur === "dytablo") return `<div class="q sinav-q kontrol">${metinHTML(q)}<p class="q-text">${rx(q.soru || "Her ifade için Doğru ya da Yanlış seç.")}</p>
