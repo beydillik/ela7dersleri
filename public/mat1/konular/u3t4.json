@@ -1,0 +1,300 @@
+{
+ "id": "u3t4",
+ "tur": "tarama",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Tema Sonu Taraması",
+ "sayfalar": "Konu 1–8 · s. 159–200",
+ "giris": "Üçüncü temanın sonuna geldin, tebrikler! Şimdi 8 konuyu birlikte gözden geçireceğiz. Önce kısa özetleri oku ve kartları çevir. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+ "buyukResim": "Bu temada bir istatistik araştırmasının bütün yolunu yürüdük. Önce soru sorduk, evren ve örneklem seçtik, verileri güvenilir yollarla ve kişisel verileri koruyarak topladık. Sonra verileri grafiğe çevirdik ve tek bir sayıyla özetledik. Verilerin ne kadar dağıldığını ölçtük, yorum yaptık. En sonunda başkalarının araştırmalarındaki hataları bulduk.",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3",
+  "u3k4",
+  "u3k5",
+  "u3k6",
+  "u3k7",
+  "u3k8"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Sözcük: kategorik; sayarak: kesikli; ölçerek: sürekli veri.",
+    "Araştırma: sor, topla, analiz et, yorumla.",
+    "Nicel veri sayıyla ifade edilir."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Araştırma sorusu net ve veriyle cevaplanabilir olmalı.",
+    "Evren bütün grup, örneklem seçilen parça.",
+    "Örneklem evreni temsil etmeli."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Anket sorusu açık ve tarafsız olmalı.",
+    "Hazır veriyi güvenilir kaynaktan al.",
+    "Kişisel veriler izinsiz paylaşılmaz (KVKK)."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Nokta grafiği: aynı değerler üst üste yığılır.",
+    "Çizgi grafiği: zamana göre değişim.",
+    "Çizgi yukarı artış, aşağı azalış, düz sabit."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Eğilim genel yöndür; tahmin “… olabilir” diye yapılır.",
+    "Temsil değeri veri setini tek sayıyla özetler.",
+    "İddia, ölçülerle karşılaştırılarak sınanır."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Açıklık = en büyük − en küçük.",
+    "Ortalama mutlak sapma = uzaklıkların ortalaması.",
+    "Yayılım küçükse istikrarlı, büyükse dalgalı."
+   ]
+  },
+  {
+   "konu": "u3k7",
+   "maddeler": [
+    "Merkez ve yayılım ölçüleri birlikte kullanılır.",
+    "Tabloda olmayan bilgiyle yorum yapılmaz.",
+    "Araştırmanın sonunda adımlar değerlendirilir."
+   ]
+  },
+  {
+   "konu": "u3k8",
+   "maddeler": [
+    "Örneklem evreni temsil etmiyorsa genelleme yapılmaz.",
+    "Arada çıkış varsa “sürekli” denmez, “eğilim” denir.",
+    "Bir yerin verisi başka yer için kanıt değildir."
+   ]
+  }
+ ],
+ "eskiSoru": 6,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Araştırmanın hangi adımı?",
+   "kutular": [
+    {
+     "etiket": "Soru ve plan",
+     "uyeler": [
+      "Araştırma Sorusu",
+      "Evren",
+      "Örneklem",
+      "Anket Sorusu"
+     ]
+    },
+    {
+     "etiket": "Göster ve özetle",
+     "uyeler": [
+      "Çizgi Grafiği",
+      "Nokta Grafiği",
+      "Temsil Değeri",
+      "Açıklık"
+     ]
+    },
+    {
+     "etiket": "Yorumla ve değerlendir",
+     "uyeler": [
+      "Eğilim",
+      "Veriye Dayalı Yorum",
+      "Örneklemden Genellemek"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Sekiz öğrencinin netleri: 6, 9, 9, 11, 15, 18, 18, 18. Aşağıdaki değerlerden hangisi yanlış hesaplanmıştır?",
+   "secenekler": [
+    "Tepe değer = 18",
+    "Açıklık = 12",
+    "Aritmetik ortalama = 14"
+   ],
+   "dogru": 2,
+   "ipucu": "Her birini kontrol et: en çok tekrar eden, en büyük − en küçük, toplam ÷ 8.",
+   "aciklama": "Tepe değer 18 ✓, açıklık 18 − 6 = 12 ✓. Toplam 104; 104 ÷ 8 = 13. Ortalama 14 değil, 13'tür.",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Temsil Değeri"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Açıklık"
+    }
+   ]
+  },
+  {
+   "soru": "Aynı netlerin (6, 9, 9, 11, 15, 18, 18, 18) ortancası kaçtır?",
+   "cevap": "13",
+   "ipucu": "8 veri var: ortadaki iki sayının ortalaması.",
+   "aciklama": "4. ve 5. veriler 11 ve 15: (11 + 15) ÷ 2 = 13.",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Temsil Değeri"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Nicel Veri"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Veriler sıralı mı? Kontrol et.",
+     "8 veri var: 4. ve 5. sıradakileri bul.",
+     "İkisini topla ve 2'ye böl."
+    ]
+   }
+  },
+  {
+   "soru": "Ali, Türkiye'deki tünellerin uzunluklarını araştırıyor ama yalnızca Karadeniz Bölgesi'ndeki tünelleri inceliyor. Hangisi doğrudur?",
+   "secenekler": [
+    "Evren Karadeniz'deki tüneller, örneklem Türkiye'deki tünellerdir.",
+    "Evren Türkiye'deki tüneller, örneklem Karadeniz'deki tünellerdir; sonuç bütün Türkiye'ye dikkatle genellenmelidir.",
+    "Tünel uzunluğu kategorik veridir."
+   ],
+   "dogru": 1,
+   "ipucu": "Bütün grup hangisi, seçilen parça hangisi?",
+   "aciklama": "Evren Türkiye'deki bütün tüneller, örneklem Karadeniz'dekiler. Tek bölge bütün ülkeyi temsil etmeyebilir. (s. 197)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Örneklem"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Örneklemden Genellemek"
+    }
+   ]
+  },
+  {
+   "soru": "Bir parkuru Alp 1,20 ile 2,56 saat arasında, Esin 1,33 ile 1,42 saat arasında tamamlamış. Hangisi doğrudur?",
+   "secenekler": [
+    "Alp'in süreleri daha istikrarlıdır.",
+    "İkisinin açıklığı eşittir.",
+    "Esin'in süreleri daha istikrarlıdır."
+   ],
+   "dogru": 2,
+   "ipucu": "Kimin süreleri daha dar bir aralıkta?",
+   "aciklama": "Esin'in açıklığı çok küçük: süreleri birbirine yakın, istikrarlı. (s. 198)",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "İstikrarlı ve Dalgalı"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Değişkenliği Karşılaştırma"
+    }
+   ]
+  },
+  {
+   "soru": "Esin'in en kısa süresi 1,33, en uzun süresi 1,42 saat. Açıklık kaç saattir?",
+   "cevap": "0,09",
+   "ipucu": "En büyükten en küçüğü çıkar.",
+   "aciklama": "1,42 − 1,33 = 0,09 saat. (s. 198)",
+   "denk": true,
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Açıklık"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Sürekli Veri"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "En büyük ve en küçük süreyi yaz.",
+     "Büyükten küçüğü çıkar; virgülleri alt alta yaz."
+    ]
+   }
+  },
+  {
+   "soru": "Doktor günde en az 2 L su içilmesini öneriyor. Emre'nin 5 günde içtiği su: 2, 3, 2, 1, 2 L. Referans değerinin altında kaldığı gün sayısına sayı doğrusunda dokun.",
+   "nokta": 1,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 5
+   },
+   "ipucu": "2'den az olan değerleri say.",
+   "aciklama": "Yalnızca 1 L içtiği gün 2'nin altında: 1 gün.",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Referans Değeri"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Veriye Dayalı Yorum"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Her değeri 2 ile karşılaştır.",
+     "2'den küçük olanları say.",
+     "O sayıya dokun."
+    ]
+   }
+  },
+  {
+   "soru": "Bade odasının sıcaklığını bir hafta boyunca her gün aynı saatte ölçtü. Hangisi doğrudur?",
+   "secenekler": [
+    "Sıcaklık kategorik veridir.",
+    "Günlere göre değişimi göstermek için çizgi grafiği uygundur.",
+    "Daire grafiği en uygun grafiktir."
+   ],
+   "dogru": 1,
+   "ipucu": "Sıcaklık ölçülür mü, sayılır mı? Zamanla değişim hangi grafikte?",
+   "aciklama": "Sıcaklık sürekli veridir; günlere göre değişim çizgi grafiğiyle gösterilir. (s. 199)",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Hangi Grafik?"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Sürekli Veri"
+    }
+   ]
+  },
+  {
+   "soru": "Sınıfın mesajlaşma grubunda bir öğrenci, arkadaşının sınav notunu izinsiz paylaştı. Hangisi doğrudur?",
+   "secenekler": [
+    "Not bir kişisel veridir; izinsiz paylaşmak mahremiyeti ihlal eder.",
+    "Not herkesi ilgilendirir, paylaşılabilir.",
+    "Mahremiyet yalnızca sosyal medyada vardır."
+   ],
+   "dogru": 0,
+   "ipucu": "Sınav notu kime aittir?",
+   "aciklama": "Sınav notu kişisel veridir; izinsiz paylaşılmaz. Mahremiyet günlük hayatta da vardır. (s. 199)",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Kişisel Veri"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Gönüllülük ve Mahremiyet"
+    }
+   ]
+  }
+ ]
+}

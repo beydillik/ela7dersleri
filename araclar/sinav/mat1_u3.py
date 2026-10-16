@@ -3,11 +3,12 @@
 import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 from ortak import Havuz, ONC
 KOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")); sys.path.insert(0, KOK)
-from gen_mat1 import altin_svg, kar_svg, atlama_svg, fidan_svg, kardes_svg, persentil_svg, cizgi_svg
+from gen_mat1 import altin_svg, kar_svg, atlama_svg, fidan_svg, kardes_svg, persentil_svg, cizgi_svg, ates_svg, fulya_svg, gol_svg
 H = Havuz("mat1", 3, "m3")
 a = H.add
 S1, S2, S3 = "(s. 159–164)", "(s. 165–168)", "(s. 169–170, 192–193)"
 S4, S5 = "(s. 171–172)", "(s. 173–179)"
+S6, S7, S8 = "(s. 180–183)", "(s. 184–189)", "(s. 190–191, 194–196)"
 
 # --- Konu 1: Veri türleri
 a("u3k1", "Kesikli Veri", "dytablo", soru="Her ifade için Doğru ya da Yanlış seç.", ifadeler=[
@@ -139,5 +140,70 @@ a("u3k5", "Veri Ötesi: Tahmin", "eslestir", soru="Her kavramı anlamıyla eşle
   aciklama=f"Eğilim genel yön, tahmin veri ötesi yorum {S5}.")
 a("u3k5", "Temsil Değeri", "kisa", soru="Kar örtülü gün sayıları: 30,0 · 29,6 · 30,0 · 27,1 · 22,4. Bu verilerin ortancası kaçtır?",
   yanit="29,6", sayi=True, aciklama=f"Sıralı: 22,4 · 27,1 · 29,6 · 30,0 · 30,0. Ortadaki 29,6 {S5}.")
+
+# --- Konu 6: Açıklık ve ortalama mutlak sapma
+a("u3k6", "Açıklık", "kisa", soru="Bir öğrencinin 5 sınav notu: 65, 80, 72, 90, 58. Notların açıklığı kaçtır?",
+  yanit="32", sayi=True, aciklama=f"En büyük 90, en küçük 58: 90 − 58 = 32 {S6}.")
+a("u3k6", "Ortalama Mutlak Sapma", "kisa", soru="Veriler: 2, 4, 6, 8. Ortalama 5. Ortalama mutlak sapma kaçtır?",
+  yanit="2", sayi=True, aciklama=f"Uzaklıklar 3, 1, 1, 3; toplam 8; 8 ÷ 4 = 2 {S6}.")
+a("u3k6", "Yayılım Ölçüsü", "dytablo", soru="Her ifade için Doğru ya da Yanlış seç.", ifadeler=[
+  {"s": "Açıklık bir yayılım ölçüsüdür.", "d": True},
+  {"s": "Ortanca bir yayılım ölçüsüdür.", "d": False},
+  {"s": "Ortalamadan uzaklık eksi olabilir.", "d": False},
+  {"s": "Ortalama mutlak sapma küçükse veriler birbirine yakındır.", "d": True}],
+  aciklama=f"Ortanca merkez ölçüsüdür. Uzaklık hiç eksi olmaz {S6}.")
+a("u3k6", "Ortalama Mutlak Sapma", "bosluk", cumleler=[
+  {"c": "Ortalama mutlak sapmada önce ___ bulunur.", "cevap": "ortalama"},
+  {"c": "Sonra her verinin ortalamadan ___ hesaplanır.", "cevap": "uzaklığı"},
+  {"c": "Uzaklıklar toplanır ve veri ___ bölünür.", "cevap": "sayısına"}],
+  havuz=["açıklığı", "ortancası"], aciklama=f"Ortalama → uzaklıklar → topla ve veri sayısına böl {S6}.")
+a("u3k6", "İstikrarlı ve Dalgalı", "secim", soru="Selma ve Yasemin'in maçlarda aldığı sayıların ortalaması 17'dir. Ortalama mutlak sapmalar: Selma 6,4 · Yasemin 1,2.",
+  onculler=["İki oyuncunun merkez değeri aynıdır.", "Selma'nın performansı daha dalgalıdır.", "Yasemin'in sayıları daha geniş bir aralıkta değişmiştir."],
+  kok="Bu ifadelerden hangileri doğrudur?", secenekler=ONC, dogru=1, aciklama=f"Yasemin'in sayıları 15–19 arasında, dar bir aralıkta {S6}.")
+a("u3k6", "Merkez ve Yayılım Birlikte", "secim", soru="İki öğrencinin not ortalaması 75. Ece'nin notlarının açıklığı 35, Can'ınki 5. Hangisi doğrudur?",
+  secenekler=["İkisinin notları aynı biçimde dağılmıştır.", "Can'ın notları daha istikrarlıdır.", "Ece'nin notları daha istikrarlıdır.", "Ortalama aynı olduğu için yorum yapılamaz."], dogru=1,
+  aciklama=f"Ortalama aynı ama açıklığı küçük olan Can daha istikrarlıdır {S6}.")
+
+# --- Konu 7: Dağılımı yorumlama
+a("u3k7", "Veriye Dayalı Yorum", "secim", soru="Mehtap'ın saat başı vücut sıcaklığı tabloda verilmiştir.", svg=ates_svg(),
+  onculler=["12.00'den 15.00'e ateş düşmüştür.", "Mehtap 15.00'te ilaç içmiştir.", "En yüksek ölçüm 39,4 °C'dir."],
+  kok="Bu ifadelerden hangileri yalnızca verilere dayanarak söylenebilir?", secenekler=["Yalnız I", "I ve II", "I ve III", "I, II ve III"], dogru=2,
+  aciklama=f"İlaç bilgisi tabloda yok; II verilere dayanmaz {S7}.")
+a("u3k7", "Değişkenliği Karşılaştırma", "kisa", soru="A şehrinin 5 günlük en yüksek sıcaklıkları 20, 22, 21, 23, 19 °C. Açıklık kaç °C?",
+  yanit="4", sayi=True, aciklama=f"23 − 19 = 4 °C. Açıklık küçük: sıcaklık az değişmiş.")
+a("u3k7", "Değişkenliği Karşılaştırma", "dy", ifade="Açıklığı büyük olan veri seti daha az değişkenlik gösterir.", dogru=False,
+  duzeltme="Açıklığı büyük olan veri seti daha çok değişkenlik gösterir.", aciklama=f"Yayılımı büyük olan daha çok değişir {S7}.")
+a("u3k7", "Ölçüleri Amacına Göre Kullan", "kisa", soru="Enes'in koştuğu mesafeler: 2,5 · 2,8 · 3,5 · 3,2 · 2,6 · 3,2 · 2,9 km. Ortanca kaç km?",
+  yanit="2,9", sayi=True, aciklama=f"Sıralı: 2,5 · 2,6 · 2,8 · 2,9 · 3,2 · 3,2 · 3,5. Ortadaki 2,9 {S7}.")
+a("u3k7", "Tahminin Sınırı", "secim", soru="Mehtap'ın ateşi 12.00'den 15.00'e her saat düşmüş; 15.00'te 37,5 °C. Aynı gün 16.00 için en uygun yorum hangisidir?", svg=ates_svg(),
+  secenekler=["Kesinlikle 37,5 °C olacaktır.", "37,5 °C civarında ya da biraz altında olabilir.", "Kesinlikle 40 °C olacaktır.", "Hiç tahmin yapılamaz, grafik işe yaramaz."], dogru=1,
+  aciklama=f"Tahmin eğilime dayanır ama kesin değildir {S7}.")
+a("u3k7", "Araştırma Döngüsü", "eslestir", soru="Oyun süresi araştırmasının adımlarını eşleştir.", ciftler=[
+  {"sol": "Araştırma sorusu", "sag": "Öğrencilerin haftalık oyun süreleri nasıl dağılıyor?"},
+  {"sol": "Veri türü", "sag": "Süre ölçülür: sürekli veri"},
+  {"sol": "Özetleme", "sag": "Ortalama, ortanca, açıklık"},
+  {"sol": "Değerlendirme", "sag": "Uygun olmayan adım varsa yeniden planla"}],
+  aciklama=f"Sor, topla, göster ve özetle, değerlendir {S7}.")
+
+# --- Konu 8: Araştırma süreçlerini inceleme
+a("u3k8", "Örneklemden Genellemek", "secim", soru="Fulya okuldaki öğrencilerin en sevdiği dersi araştırırken yalnızca 7/A sınıfına sordu.", svg=fulya_svg(),
+  onculler=["Evren okuldaki tüm öğrencilerdir.", "“Okulda en çok sevilen ders fen bilimleridir.” yorumu doğrudur.", "Sonuç yalnızca 7/A için söylenebilir."],
+  kok="Bu ifadelerden hangileri doğrudur?", secenekler=["Yalnız I", "I ve III", "II ve III", "I, II ve III"], dogru=1,
+  aciklama=f"Tek sınıf okulu temsil etmez; II hatalıdır {S8}.")
+a("u3k8", "Yorum Veriyle Uyuşmalı", "kisa", soru="Fulya'nın grafiğinde Türkçeyi seven kaç öğrenci, sosyal bilgileri sevenlerden fazladır?", svg=fulya_svg(),
+  yanit="2", sayi=True, aciklama=f"Türkçe 8, sosyal bilgiler 6: 8 − 6 = 2. “Sosyal bilgiler daha çok sevilir.” yorumu hatalı {S8}.")
+a("u3k8", "Eğilimi Doğru Söylemek", "secim", soru="Göl grafiğine göre su seviyesi için en doğru yorum hangisidir?", svg=gol_svg(),
+  secenekler=["Her yıl azalmıştır.", "Azalma eğilimindedir; bazı yıllar küçük artışlar olmuştur.", "Sürekli artmıştır.", "Hiç değişmemiştir."], dogru=1,
+  aciklama="2018 ve 2021'de küçük artış var: “sürekli” denmez, “azalma eğiliminde” denir.")
+a("u3k8", "Başka Yere Genelleme", "dy", ifade="Burdur Gölü'nün su seviyesi verileri, aynı bölgedeki Eğirdir Gölü için de geçerlidir.", dogru=False,
+  duzeltme="Eğirdir Gölü için ayrıca veri toplanmalıdır.", aciklama=f"Bir yerin verisi başka yer için kanıt değildir {S8}.")
+a("u3k8", "Gönüllülük ve Mahremiyet", "secim", soru="Kişisel verilerin korunmaması aşağıdakilerden hangisine yol açabilir?",
+  secenekler=["Özel hayata daha çok saygı duyulmasına", "Araştırma sonuçlarının daha güvenilir olmasına", "Toplumda güven duygusunun zedelenmesine", "Verilerin daha güvenli saklanmasına"], dogru=2,
+  aciklama=f"Kişisel veriler korunmazsa insanlar birbirine güvenmez {S8}.")
+a("u3k8", "Kısa Aralıkla Genelleme", "dytablo", soru="Her ifade için Doğru ya da Yanlış seç.", ifadeler=[
+  {"s": "Grafiğin yalnızca iki yılına bakarak bütün yıllar hakkında genel yorum yapılabilir.", "d": False},
+  {"s": "Tahmin, bütün grafiğin eğilimine dayanmalıdır.", "d": True},
+  {"s": "Kaynağı belirtilmemiş bir haber güvenilir veri kaynağıdır.", "d": False}],
+  aciklama=f"Bütün grafiğe bakılır; kaynaksız habere güvenilmez {S8}.")
 
 H.yaz()

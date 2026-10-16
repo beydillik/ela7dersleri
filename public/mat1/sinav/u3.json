@@ -587,6 +587,303 @@
    "yanit": "29,6",
    "sayi": true,
    "aciklama": "Sıralı: 22,4 · 27,1 · 29,6 · 30,0 · 30,0. Ortadaki 29,6 (s. 173–179)."
+  },
+  {
+   "id": "m3-34",
+   "konu": "u3k6",
+   "kavram": "Açıklık",
+   "tur": "kisa",
+   "soru": "Bir öğrencinin 5 sınav notu: 65, 80, 72, 90, 58. Notların açıklığı kaçtır?",
+   "yanit": "32",
+   "sayi": true,
+   "aciklama": "En büyük 90, en küçük 58: 90 − 58 = 32 (s. 180–183)."
+  },
+  {
+   "id": "m3-35",
+   "konu": "u3k6",
+   "kavram": "Ortalama Mutlak Sapma",
+   "tur": "kisa",
+   "soru": "Veriler: 2, 4, 6, 8. Ortalama 5. Ortalama mutlak sapma kaçtır?",
+   "yanit": "2",
+   "sayi": true,
+   "aciklama": "Uzaklıklar 3, 1, 1, 3; toplam 8; 8 ÷ 4 = 2 (s. 180–183)."
+  },
+  {
+   "id": "m3-36",
+   "konu": "u3k6",
+   "kavram": "Yayılım Ölçüsü",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "Açıklık bir yayılım ölçüsüdür.",
+     "d": true
+    },
+    {
+     "s": "Ortanca bir yayılım ölçüsüdür.",
+     "d": false
+    },
+    {
+     "s": "Ortalamadan uzaklık eksi olabilir.",
+     "d": false
+    },
+    {
+     "s": "Ortalama mutlak sapma küçükse veriler birbirine yakındır.",
+     "d": true
+    }
+   ],
+   "aciklama": "Ortanca merkez ölçüsüdür. Uzaklık hiç eksi olmaz (s. 180–183)."
+  },
+  {
+   "id": "m3-37",
+   "konu": "u3k6",
+   "kavram": "Ortalama Mutlak Sapma",
+   "tur": "bosluk",
+   "cumleler": [
+    {
+     "c": "Ortalama mutlak sapmada önce ___ bulunur.",
+     "cevap": "ortalama"
+    },
+    {
+     "c": "Sonra her verinin ortalamadan ___ hesaplanır.",
+     "cevap": "uzaklığı"
+    },
+    {
+     "c": "Uzaklıklar toplanır ve veri ___ bölünür.",
+     "cevap": "sayısına"
+    }
+   ],
+   "havuz": [
+    "açıklığı",
+    "ortancası"
+   ],
+   "aciklama": "Ortalama → uzaklıklar → topla ve veri sayısına böl (s. 180–183)."
+  },
+  {
+   "id": "m3-38",
+   "konu": "u3k6",
+   "kavram": "İstikrarlı ve Dalgalı",
+   "tur": "secim",
+   "soru": "Selma ve Yasemin'in maçlarda aldığı sayıların ortalaması 17'dir. Ortalama mutlak sapmalar: Selma 6,4 · Yasemin 1,2.",
+   "onculler": [
+    "İki oyuncunun merkez değeri aynıdır.",
+    "Selma'nın performansı daha dalgalıdır.",
+    "Yasemin'in sayıları daha geniş bir aralıkta değişmiştir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Yasemin'in sayıları 15–19 arasında, dar bir aralıkta (s. 180–183)."
+  },
+  {
+   "id": "m3-39",
+   "konu": "u3k6",
+   "kavram": "Merkez ve Yayılım Birlikte",
+   "tur": "secim",
+   "soru": "İki öğrencinin not ortalaması 75. Ece'nin notlarının açıklığı 35, Can'ınki 5. Hangisi doğrudur?",
+   "secenekler": [
+    "İkisinin notları aynı biçimde dağılmıştır.",
+    "Can'ın notları daha istikrarlıdır.",
+    "Ece'nin notları daha istikrarlıdır.",
+    "Ortalama aynı olduğu için yorum yapılamaz."
+   ],
+   "dogru": 1,
+   "aciklama": "Ortalama aynı ama açıklığı küçük olan Can daha istikrarlıdır (s. 180–183)."
+  },
+  {
+   "id": "m3-40",
+   "konu": "u3k7",
+   "kavram": "Veriye Dayalı Yorum",
+   "tur": "secim",
+   "soru": "Mehtap'ın saat başı vücut sıcaklığı tabloda verilmiştir.",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>37,0</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>37,5</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38,5</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>39,0</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>39,5</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>40,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11.00</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12.00</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13.00</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>14.00</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>15.00</text><polyline points='68.0,62.0 129.5,54.0 191.0,82.0 252.5,106.0 314.0,130.0' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='62.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='52.999999999999886' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>39,2</text><circle cx='129.5' cy='54.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='45.00000000000006' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>39,4</text><circle cx='191.0' cy='82.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='72.99999999999989' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>38,7</text><circle cx='252.5' cy='106.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='96.99999999999994' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>38,1</text><circle cx='314.0' cy='130.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='121.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>37,5</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Mehtap'ın vücut sıcaklığı (°C)</text></svg>",
+   "onculler": [
+    "12.00'den 15.00'e ateş düşmüştür.",
+    "Mehtap 15.00'te ilaç içmiştir.",
+    "En yüksek ölçüm 39,4 °C'dir."
+   ],
+   "kok": "Bu ifadelerden hangileri yalnızca verilere dayanarak söylenebilir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "İlaç bilgisi tabloda yok; II verilere dayanmaz (s. 184–189)."
+  },
+  {
+   "id": "m3-41",
+   "konu": "u3k7",
+   "kavram": "Değişkenliği Karşılaştırma",
+   "tur": "kisa",
+   "soru": "A şehrinin 5 günlük en yüksek sıcaklıkları 20, 22, 21, 23, 19 °C. Açıklık kaç °C?",
+   "yanit": "4",
+   "sayi": true,
+   "aciklama": "23 − 19 = 4 °C. Açıklık küçük: sıcaklık az değişmiş."
+  },
+  {
+   "id": "m3-42",
+   "konu": "u3k7",
+   "kavram": "Değişkenliği Karşılaştırma",
+   "tur": "dy",
+   "ifade": "Açıklığı büyük olan veri seti daha az değişkenlik gösterir.",
+   "dogru": false,
+   "duzeltme": "Açıklığı büyük olan veri seti daha çok değişkenlik gösterir.",
+   "aciklama": "Yayılımı büyük olan daha çok değişir (s. 184–189)."
+  },
+  {
+   "id": "m3-43",
+   "konu": "u3k7",
+   "kavram": "Ölçüleri Amacına Göre Kullan",
+   "tur": "kisa",
+   "soru": "Enes'in koştuğu mesafeler: 2,5 · 2,8 · 3,5 · 3,2 · 2,6 · 3,2 · 2,9 km. Ortanca kaç km?",
+   "yanit": "2,9",
+   "sayi": true,
+   "aciklama": "Sıralı: 2,5 · 2,6 · 2,8 · 2,9 · 3,2 · 3,2 · 3,5. Ortadaki 2,9 (s. 184–189)."
+  },
+  {
+   "id": "m3-44",
+   "konu": "u3k7",
+   "kavram": "Tahminin Sınırı",
+   "tur": "secim",
+   "soru": "Mehtap'ın ateşi 12.00'den 15.00'e her saat düşmüş; 15.00'te 37,5 °C. Aynı gün 16.00 için en uygun yorum hangisidir?",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>37,0</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>37,5</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38,5</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>39,0</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>39,5</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>40,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11.00</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12.00</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13.00</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>14.00</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>15.00</text><polyline points='68.0,62.0 129.5,54.0 191.0,82.0 252.5,106.0 314.0,130.0' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='62.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='52.999999999999886' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>39,2</text><circle cx='129.5' cy='54.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='45.00000000000006' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>39,4</text><circle cx='191.0' cy='82.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='72.99999999999989' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>38,7</text><circle cx='252.5' cy='106.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='96.99999999999994' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>38,1</text><circle cx='314.0' cy='130.0' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='121.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>37,5</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Mehtap'ın vücut sıcaklığı (°C)</text></svg>",
+   "secenekler": [
+    "Kesinlikle 37,5 °C olacaktır.",
+    "37,5 °C civarında ya da biraz altında olabilir.",
+    "Kesinlikle 40 °C olacaktır.",
+    "Hiç tahmin yapılamaz, grafik işe yaramaz."
+   ],
+   "dogru": 1,
+   "aciklama": "Tahmin eğilime dayanır ama kesin değildir (s. 184–189)."
+  },
+  {
+   "id": "m3-45",
+   "konu": "u3k7",
+   "kavram": "Araştırma Döngüsü",
+   "tur": "eslestir",
+   "soru": "Oyun süresi araştırmasının adımlarını eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Araştırma sorusu",
+     "sag": "Öğrencilerin haftalık oyun süreleri nasıl dağılıyor?"
+    },
+    {
+     "sol": "Veri türü",
+     "sag": "Süre ölçülür: sürekli veri"
+    },
+    {
+     "sol": "Özetleme",
+     "sag": "Ortalama, ortanca, açıklık"
+    },
+    {
+     "sol": "Değerlendirme",
+     "sag": "Uygun olmayan adım varsa yeniden planla"
+    }
+   ],
+   "aciklama": "Sor, topla, göster ve özetle, değerlendir (s. 184–189)."
+  },
+  {
+   "id": "m3-46",
+   "konu": "u3k8",
+   "kavram": "Örneklemden Genellemek",
+   "tur": "secim",
+   "soru": "Fulya okuldaki öğrencilerin en sevdiği dersi araştırırken yalnızca 7/A sınıfına sordu.",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='116.0' x2='320' y2='116.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='120.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='98.0' x2='320' y2='98.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='102.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='80.0' x2='320' y2='80.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>6</text><line x1='40' y1='62.0' x2='320' y2='62.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='66.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>8</text><line x1='40' y1='44.0' x2='320' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>10</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>12</text><rect x='52.3' y='26.0' width='31.4' height='108.0' rx='3' fill='#4fc3a1'/><text x='68.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Fen</text><rect x='108.3' y='98.0' width='31.4' height='36.0' rx='3' fill='#4fc3a1'/><text x='124.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>İng</text><rect x='164.3' y='44.0' width='31.4' height='90.0' rx='3' fill='#4fc3a1'/><text x='180.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Mat</text><rect x='220.3' y='80.0' width='31.4' height='54.0' rx='3' fill='#4fc3a1'/><text x='236.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Sos</text><rect x='276.3' y='62.0' width='31.4' height='72.0' rx='3' fill='#4fc3a1'/><text x='292.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Tür</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/A: En sevdiğin ders hangisi?</text></svg>",
+   "onculler": [
+    "Evren okuldaki tüm öğrencilerdir.",
+    "“Okulda en çok sevilen ders fen bilimleridir.” yorumu doğrudur.",
+    "Sonuç yalnızca 7/A için söylenebilir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Tek sınıf okulu temsil etmez; II hatalıdır (s. 190–191, 194–196)."
+  },
+  {
+   "id": "m3-47",
+   "konu": "u3k8",
+   "kavram": "Yorum Veriyle Uyuşmalı",
+   "tur": "kisa",
+   "soru": "Fulya'nın grafiğinde Türkçeyi seven kaç öğrenci, sosyal bilgileri sevenlerden fazladır?",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='116.0' x2='320' y2='116.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='120.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='98.0' x2='320' y2='98.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='102.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='80.0' x2='320' y2='80.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>6</text><line x1='40' y1='62.0' x2='320' y2='62.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='66.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>8</text><line x1='40' y1='44.0' x2='320' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>10</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>12</text><rect x='52.3' y='26.0' width='31.4' height='108.0' rx='3' fill='#4fc3a1'/><text x='68.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Fen</text><rect x='108.3' y='98.0' width='31.4' height='36.0' rx='3' fill='#4fc3a1'/><text x='124.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>İng</text><rect x='164.3' y='44.0' width='31.4' height='90.0' rx='3' fill='#4fc3a1'/><text x='180.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Mat</text><rect x='220.3' y='80.0' width='31.4' height='54.0' rx='3' fill='#4fc3a1'/><text x='236.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Sos</text><rect x='276.3' y='62.0' width='31.4' height='72.0' rx='3' fill='#4fc3a1'/><text x='292.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Tür</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/A: En sevdiğin ders hangisi?</text></svg>",
+   "yanit": "2",
+   "sayi": true,
+   "aciklama": "Türkçe 8, sosyal bilgiler 6: 8 − 6 = 2. “Sosyal bilgiler daha çok sevilir.” yorumu hatalı (s. 190–191, 194–196)."
+  },
+  {
+   "id": "m3-48",
+   "konu": "u3k8",
+   "kavram": "Eğilimi Doğru Söylemek",
+   "tur": "secim",
+   "soru": "Göl grafiğine göre su seviyesi için en doğru yorum hangisidir?",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>9,0</text><line x1='50' y1='120.0' x2='322' y2='120.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='124.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11,0</text><line x1='50' y1='60.0' x2='322' y2='60.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2016</text><text x='98.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2018</text><text x='160.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2019</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2020</text><text x='221.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2021</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2022</text><text x='283.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2023</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2024</text><polyline points='68.0,60.0 98.8,72.0 129.5,66.0 160.2,87.0 191.0,93.0 221.8,84.0 252.5,108.0 283.2,117.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='60.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='51.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>12,0</text><circle cx='98.8' cy='72.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='98.75' y='63.000000000000014' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,6</text><circle cx='129.5' cy='66.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='56.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,8</text><circle cx='160.2' cy='87.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.25' y='78.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,1</text><circle cx='191.0' cy='93.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='83.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,9</text><circle cx='221.8' cy='84.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='221.75' y='75.00000000000003' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,2</text><circle cx='252.5' cy='108.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='98.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,4</text><circle cx='283.2' cy='117.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='283.25' y='108.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='116.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>9,8</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Bir gölün su seviyesi (m) · örnek</text></svg>",
+   "secenekler": [
+    "Her yıl azalmıştır.",
+    "Azalma eğilimindedir; bazı yıllar küçük artışlar olmuştur.",
+    "Sürekli artmıştır.",
+    "Hiç değişmemiştir."
+   ],
+   "dogru": 1,
+   "aciklama": "2018 ve 2021'de küçük artış var: “sürekli” denmez, “azalma eğiliminde” denir."
+  },
+  {
+   "id": "m3-49",
+   "konu": "u3k8",
+   "kavram": "Başka Yere Genelleme",
+   "tur": "dy",
+   "ifade": "Burdur Gölü'nün su seviyesi verileri, aynı bölgedeki Eğirdir Gölü için de geçerlidir.",
+   "dogru": false,
+   "duzeltme": "Eğirdir Gölü için ayrıca veri toplanmalıdır.",
+   "aciklama": "Bir yerin verisi başka yer için kanıt değildir (s. 190–191, 194–196)."
+  },
+  {
+   "id": "m3-50",
+   "konu": "u3k8",
+   "kavram": "Gönüllülük ve Mahremiyet",
+   "tur": "secim",
+   "soru": "Kişisel verilerin korunmaması aşağıdakilerden hangisine yol açabilir?",
+   "secenekler": [
+    "Özel hayata daha çok saygı duyulmasına",
+    "Araştırma sonuçlarının daha güvenilir olmasına",
+    "Toplumda güven duygusunun zedelenmesine",
+    "Verilerin daha güvenli saklanmasına"
+   ],
+   "dogru": 2,
+   "aciklama": "Kişisel veriler korunmazsa insanlar birbirine güvenmez (s. 190–191, 194–196)."
+  },
+  {
+   "id": "m3-51",
+   "konu": "u3k8",
+   "kavram": "Kısa Aralıkla Genelleme",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "Grafiğin yalnızca iki yılına bakarak bütün yıllar hakkında genel yorum yapılabilir.",
+     "d": false
+    },
+    {
+     "s": "Tahmin, bütün grafiğin eğilimine dayanmalıdır.",
+     "d": true
+    },
+    {
+     "s": "Kaynağı belirtilmemiş bir haber güvenilir veri kaynağıdır.",
+     "d": false
+    }
+   ],
+   "aciklama": "Bütün grafiğe bakılır; kaynaksız habere güvenilmez (s. 190–191, 194–196)."
   }
  ]
 }

@@ -1,0 +1,521 @@
+{
+ "id": "u3k8",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Araştırma Süreçlerini İnceleme",
+ "sayfalar": "s. 190–191, 194–196",
+ "giris": "Araştırma yapmak kadar başkasının araştırmasını değerlendirmek de önemli. Bu konuda dedektif gibi çalışacağız: Örneklem doğru mu seçilmiş? Yorumlar verilerle uyuşuyor mu? Hataları bulup düzelteceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda evren-örneklem, araştırmanın adımları ve güvenilir kaynak bilgisini kullanacağız. Hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Evren ve örneklem",
+    "sinif": "Konu 2",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='54' r='42' fill='none' stroke='#f2c14e' stroke-width='3'/><circle cx='64.0' cy='54.0' r='3.2' fill='#5a6280'/><circle cx='54.9' cy='58.7' r='3.2' fill='#5a6280'/><circle cx='60.8' cy='45.0' r='3.2' fill='#5a6280'/><circle cx='66.5' cy='62.5' r='3.2' fill='#5a6280'/><circle cx='48.1' cy='51.9' r='3.2' fill='#5a6280'/><circle cx='71.3' cy='46.8' r='3.2' fill='#5a6280'/><circle cx='56.2' cy='68.0' r='3.2' fill='#5a6280'/><circle cx='52.8' cy='40.2' r='3.2' fill='#5a6280'/><circle cx='75.6' cy='59.7' r='3.2' fill='#5a6280'/><circle cx='43.8' cy='60.7' r='3.2' fill='#5a6280'/><circle cx='67.8' cy='37.3' r='3.2' fill='#5a6280'/><circle cx='65.8' cy='72.4' r='3.2' fill='#5a6280'/><circle cx='42.6' cy='43.9' r='3.2' fill='#5a6280'/><circle cx='80.4' cy='49.5' r='3.2' fill='#5a6280'/><circle cx='47.5' cy='71.7' r='3.2' fill='#5a6280'/><circle cx='57.1' cy='31.8' r='3.2' fill='#5a6280'/><circle cx='77.7' cy='68.9' r='3.2' fill='#5a6280'/><circle cx='36.2' cy='55.0' r='3.2' fill='#5a6280'/><circle cx='77.4' cy='36.7' r='3.2' fill='#5a6280'/><circle cx='58.8' cy='79.1' r='3.2' fill='#5a6280'/><circle cx='43.5' cy='34.2' r='3.2' fill='#5a6280'/><circle cx='86.2' cy='57.5' r='3.2' fill='#5a6280'/><circle cx='37.8' cy='69.4' r='3.2' fill='#5a6280'/><circle cx='66.1' cy='27.1' r='3.2' fill='#5a6280'/><circle cx='74.0' cy='78.5' r='3.2' fill='#5a6280'/><circle cx='32.6' cy='45.2' r='3.2' fill='#5a6280'/><circle cx='86.6' cy='41.7' r='3.2' fill='#5a6280'/><circle cx='48.4' cy='81.5' r='3.2' fill='#5a6280'/><circle cx='49.7' cy='25.4' r='3.2' fill='#5a6280'/><circle cx='87.4' cy='68.4' r='3.2' fill='#5a6280'/><circle cx='29.6' cy='62.0' r='3.2' fill='#5a6280'/><circle cx='77.3' cy='27.1' r='3.2' fill='#5a6280'/><circle cx='65.5' cy='86.0' r='3.2' fill='#5a6280'/><circle cx='34.0' cy='33.8' r='3.2' fill='#5a6280'/><circle cx='93.3' cy='51.3' r='3.2' fill='#5a6280'/><circle cx='36.9' cy='78.9' r='3.2' fill='#5a6280'/><circle cx='60.2' cy='19.6' r='3.2' fill='#5a6280'/><circle cx='83.4' cy='79.8' r='3.2' fill='#5a6280'/><circle cx='24.8' cy='50.7' r='3.2' fill='#5a6280'/><circle cx='88.5' cy='32.4' r='3.2' fill='#5a6280'/><circle cx='74' cy='64' r='18' fill='none' stroke='#4fc3a1' stroke-width='3'/><circle cx='77.5' cy='64.0' r='3.2' fill='#4fc3a1'/><circle cx='69.6' cy='68.1' r='3.2' fill='#4fc3a1'/><circle cx='74.7' cy='56.3' r='3.2' fill='#4fc3a1'/><circle cx='79.6' cy='71.3' r='3.2' fill='#4fc3a1'/><circle cx='63.7' cy='62.2' r='3.2' fill='#4fc3a1'/><circle cx='83.7' cy='57.8' r='3.2' fill='#4fc3a1'/><circle cx='70.7' cy='76.1' r='3.2' fill='#4fc3a1'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>küçük grup</text></svg>",
+    "anlatim": "Evren, araştırmanın ilgilendiği bütün gruptur. Örneklem, evrenden seçilen ve verisi toplanan küçük gruptur. Örneklem evreni temsil etmelidir.",
+    "akilda": "Evren bütün, örneklem parça",
+    "sorular": [
+     {
+      "soru": "“Okuldaki öğrencilerin uyku süreleri” araştırmasında 7/B sınıfı neyi oluşturur?",
+      "secenekler": [
+       "Evreni",
+       "Örneklemi",
+       "Araştırma sorusunu"
+      ],
+      "dogru": 1,
+      "ipucu": "Bütün okul mu, bir parçası mı?",
+      "aciklama": "7/B okulun bir parçasıdır: örneklem."
+     },
+     {
+      "soru": "“Türkiye'deki göllerin su seviyesi” araştırmasında evren hangisidir?",
+      "secenekler": [
+       "Türkiye'deki bütün göller",
+       "Yalnızca Burdur Gölü",
+       "Göl kıyısındaki evler"
+      ],
+      "dogru": 0,
+      "ipucu": "Araştırma hangi bütün grupla ilgileniyor?",
+      "aciklama": "Evren, Türkiye'deki bütün göllerdir."
+     }
+    ]
+   },
+   {
+    "ad": "Araştırmanın adımları",
+    "sinif": "Konu 1",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='20' r='11' fill='#f2c14e'/><text x='26' y='25' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><text x='44' y='25' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Sor</text><circle cx='26' cy='46' r='11' fill='#4fc3a1'/><text x='26' y='51' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><text x='44' y='51' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Topla</text><circle cx='26' cy='72' r='11' fill='#c3a6ff'/><text x='26' y='77' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><text x='44' y='77' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Analiz et</text><circle cx='26' cy='98' r='11' fill='#ff8fb1'/><text x='26' y='103' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>4</text><text x='44' y='103' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Yorumla</text></svg>",
+    "anlatim": "İstatistiksel araştırma 4 adımda ilerler: araştırma sorusu belirleme, verileri toplama, verileri görselleştirme ve özetleme, verileri yorumlama.",
+    "akilda": "Sor, topla, analiz et, yorumla",
+    "sorular": [
+     {
+      "soru": "Araştırmanın ilk adımı hangisidir?",
+      "secenekler": [
+       "Verileri yorumlama",
+       "Grafik çizme",
+       "Araştırma sorusu belirleme"
+      ],
+      "dogru": 2,
+      "ipucu": "Ne araştıracağını bilmeden veri toplanır mı?",
+      "aciklama": "İlk adım araştırma sorusunu belirlemektir."
+     },
+     {
+      "soru": "Grafik çizmek hangi adımın içindedir?",
+      "secenekler": [
+       "Verileri görselleştirme ve özetleme",
+       "Araştırma sorusu belirleme",
+       "Verileri toplama"
+      ],
+      "dogru": 0,
+      "ipucu": "Grafik veriyi neye çevirir?",
+      "aciklama": "Grafik, verileri görselleştirme ve özetleme adımındadır."
+     }
+    ]
+   },
+   {
+    "ad": "Güvenilir kaynak",
+    "sinif": "Konu 3",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 12 l38 14 v26 c0 26 -18 42 -38 50 c-20 -8 -38 -24 -38 -50 v-26 z' fill='#4fc3a1'/><text x='60' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>gov.tr</text><text x='60' y='74' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>edu.tr</text></svg>",
+    "anlatim": "Hazır verileri güvenilir kaynaklardan alırız: resmî kurumların siteleri, edu.tr, gov.tr, org.tr uzantılı adresler, ansiklopedi ve bilimsel kitaplar.",
+    "akilda": "Kaynağı belli olsun",
+    "sorular": [
+     {
+      "soru": "Hangisi daha güvenilir bir kaynaktır?",
+      "secenekler": [
+       "Kaynağı yazmayan bir sosyal medya paylaşımı",
+       "gov.tr uzantılı resmî bir site",
+       "Bir arkadaşın duyduğu haber"
+      ],
+      "dogru": 1,
+      "ipucu": "Resmî kurum siteleri nasıl biter?",
+      "aciklama": "gov.tr uzantılı resmî siteler güvenilir kaynaklardandır. (s. 191)"
+     },
+     {
+      "soru": "“Su İçmek Zararlı!” başlıklı, kaynağı yazmayan bir haber için ne yapmalı?",
+      "secenekler": [
+       "Hemen paylaşmalı",
+       "Güvenilir bir kaynaktan doğruluğunu kontrol etmeli",
+       "Su içmeyi bırakmalı"
+      ],
+      "dogru": 1,
+      "ipucu": "Kaynağı belli değilse ne yaparız?",
+      "aciklama": "Kaynaksız habere güvenmeyiz; güvenilir kaynaktan kontrol ederiz."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Örneklemden Genellemek",
+   "renk": "#2364c7",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='42' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>okul</text><circle cx='60' cy='66' r='14' fill='#f2c14e'/><text x='60' y='70' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>7/A</text><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>tek sınıf ≠ okul</text></svg>",
+   "aciklama": "Örneklemden elde edilen sonuç, ancak örneklem evreni temsil ediyorsa bütün evrene genellenebilir. Tek bir sınıfa sorup “okulda en çok sevilen ders” denemez. (s. 190)",
+   "ek": "Fulya okulundaki öğrencilerin en sevdiği dersi merak ediyor, ama yalnızca 7/A'ya soruyor. Evren bütün okul, örneklem tek sınıf: okulu temsil etmiyor. (s. 190)",
+   "akilda": "Tek sınıf ≠ bütün okul",
+   "cozum": {
+    "baslik": "Fulya'nın araştırması",
+    "problem": "Fulya, 7/A'daki 40 öğrenciye “En sevdiğiniz ders nedir?” diye soruyor ve “Okulda en çok sevilen ders fen bilimleridir.” diyor.",
+    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='116.0' x2='320' y2='116.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='120.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='98.0' x2='320' y2='98.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='102.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='80.0' x2='320' y2='80.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>6</text><line x1='40' y1='62.0' x2='320' y2='62.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='66.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>8</text><line x1='40' y1='44.0' x2='320' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>10</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>12</text><rect x='52.3' y='26.0' width='31.4' height='108.0' rx='3' fill='#4fc3a1'/><text x='68.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Fen</text><rect x='108.3' y='98.0' width='31.4' height='36.0' rx='3' fill='#4fc3a1'/><text x='124.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>İng</text><rect x='164.3' y='44.0' width='31.4' height='90.0' rx='3' fill='#4fc3a1'/><text x='180.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Mat</text><rect x='220.3' y='80.0' width='31.4' height='54.0' rx='3' fill='#4fc3a1'/><text x='236.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Sos</text><rect x='276.3' y='62.0' width='31.4' height='72.0' rx='3' fill='#4fc3a1'/><text x='292.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Tür</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/A: En sevdiğin ders hangisi?</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Evren ne?",
+      "islem": "Gazi Ortaokulundaki tüm öğrenciler"
+     },
+     {
+      "metin": "Örneklem ne?",
+      "islem": "yalnızca 7/A"
+     },
+     {
+      "metin": "Örneklem bütün sınıfları temsil ediyor mu?",
+      "islem": "Hayır"
+     },
+     {
+      "metin": "Yorumu düzelt.",
+      "islem": "“7/A'da en çok sevilen ders fen bilimleri.”"
+     }
+    ],
+    "sonuc": "Sonuç ancak 7/A için söylenebilir. Okul için söylemek isteseydi bütün sınıflardan öğrencilere sormalıydı. (s. 190)"
+   },
+   "soru": {
+    "soru": "Mert, okuldaki öğrencilerin en sevdiği sporu bulmak için yalnızca basketbol takımına soruyor. Hangisi doğrudur?",
+    "secenekler": [
+     "Sonuç bütün okul için kesindir.",
+     "Basketbol takımı evrendir.",
+     "Örneklem okulu temsil etmez; sonuç bütün okula genellenemez."
+    ],
+    "dogru": 2,
+    "ipucu": "Basketbol takımındakiler en çok hangi sporu sever?",
+    "aciklama": "Basketbolcular basketbolu seçer; örneklem okulu temsil etmez. (s. 190)"
+   }
+  },
+  {
+   "ad": "Yorum Veriyle Uyuşmalı",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='86' x2='106' y2='86' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><rect x='28' y='50' width='22' height='36' rx='3' fill='#6fb3ff'/><rect x='70' y='38' width='22' height='48' rx='3' fill='#4fc3a1'/><text x='39' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#6fb3ff'>6</text><text x='81' y='32' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#4fc3a1'>8</text><text x='39' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>Sos</text><text x='81' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>Tür</text><text x='60' y='18' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#ff6b6b'>6 > 8 ?</text></svg>",
+   "aciklama": "Bir yorumu söylemeden önce verilere tekrar bakarız. Sayılarla çelişen yorum hatalıdır. (s. 190)",
+   "ek": "Fulya “7/A'da sosyal bilgileri sevenler Türkçeyi sevenlerden fazla.” diyor. Ama notlarında sosyal bilgiler 6, Türkçe 8. Yorum verilerle çelişiyor. (s. 190)",
+   "akilda": "Önce sayıya bak",
+   "sende": {
+    "baslik": "Sıra sende: Fulya'nın yorumlarını sına",
+    "problem": "Fulya'nın notları: Fen 12 · İngilizce 4 · Matematik 10 · Sosyal 6 · Türkçe 8. (s. 190)",
+    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='116.0' x2='320' y2='116.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='120.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='98.0' x2='320' y2='98.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='102.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='80.0' x2='320' y2='80.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>6</text><line x1='40' y1='62.0' x2='320' y2='62.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='66.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>8</text><line x1='40' y1='44.0' x2='320' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>10</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>12</text><rect x='52.3' y='26.0' width='31.4' height='108.0' rx='3' fill='#4fc3a1'/><text x='68.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Fen</text><rect x='108.3' y='98.0' width='31.4' height='36.0' rx='3' fill='#4fc3a1'/><text x='124.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>İng</text><rect x='164.3' y='44.0' width='31.4' height='90.0' rx='3' fill='#4fc3a1'/><text x='180.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Mat</text><rect x='220.3' y='80.0' width='31.4' height='54.0' rx='3' fill='#4fc3a1'/><text x='236.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Sos</text><rect x='276.3' y='62.0' width='31.4' height='72.0' rx='3' fill='#4fc3a1'/><text x='292.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Tür</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/A: En sevdiğin ders hangisi?</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Yorum 1: “Okulda en çok sevilen ders fen bilimleri.”",
+      "soru": {
+       "soru": "Bu yorum için hangisi doğrudur?",
+       "secenekler": [
+        "Doğru, çünkü 7/A'da en çok fen sevilmiş.",
+        "Hatalı, çünkü yalnızca 7/A'ya soruldu.",
+        "Hatalı, çünkü feni 4 kişi seviyor."
+       ],
+       "dogru": 1,
+       "ipucu": "Kime soruldu? Okulun hepsine mi?",
+       "aciklama": "Yalnızca 7/A'ya soruldu; okul için genellenemez."
+      },
+      "islem": "7/A ≠ okul"
+     },
+     {
+      "metin": "Yorum 2: “Sosyal bilgileri sevenler Türkçeyi sevenlerden fazla.”",
+      "soru": {
+       "soru": "Sosyal bilgileri seven kaç kişi?",
+       "cevap": "6",
+       "ipucu": "Grafikte Sos sütununa bak.",
+       "aciklama": "Sosyal bilgiler 6 kişi; Türkçe 8 kişi.",
+       "yardim": {
+        "adimlar": [
+         "Grafikte “Sos” sütununu bul.",
+         "Sütunun ucundaki sayıyı oku."
+        ]
+       }
+      },
+      "islem": "6 < 8 → yorum hatalı"
+     }
+    ],
+    "sonuc": "Harika! İki yorum da hatalı: biri örneklem yüzünden, öteki sayılarla çeliştiği için."
+   },
+   "soru": {
+    "soru": "Fulya'nın notlarına göre hangi yorum verilerle uyuşur?",
+    "secenekler": [
+     "İngilizceyi sevenler en azdır.",
+     "Matematiği sevenler en çoktur.",
+     "Türkçeyi 4 kişi sever."
+    ],
+    "dogru": 0,
+    "ipucu": "Sayılara tek tek bak: en küçüğü hangisi?",
+    "aciklama": "İngilizce 4 kişiyle en az sevilen derstir. (s. 190)"
+   }
+  },
+  {
+   "ad": "Eğilimi Doğru Söylemek",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='96' x2='108' y2='96' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><polyline points='16,28 30,38 44,34 58,52 72,58 86,50 102,76' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round'/><circle cx='44' cy='34' r='6' fill='none' stroke='#f2c14e' stroke-width='2'/><circle cx='86' cy='50' r='6' fill='none' stroke='#f2c14e' stroke-width='2'/><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>çıkış var: eğilim</text></svg>",
+   "aciklama": "Çizgide arada çıkışlar varsa “sürekli azalıyor” demek doğru olmaz; “azalma eğiliminde” deriz. “Sürekli” her adımda azalma demektir. (s. 191, 195)",
+   "ek": "Kitapta Eren buz tabakaları grafiği için “sürekli azalıyor”, Sevgi de Burdur Gölü için “1973'ten itibaren sürekli azalıyor” diyor. Kitap bu yorumları grafiğe bakarak değerlendirmeni istiyor. (s. 191, 195)",
+   "akilda": "Sürekli mi, eğilim mi?",
+   "cozum": {
+    "baslik": "“Sürekli azalıyor” denebilir mi?",
+    "problem": "Bir gölün su seviyesi (örnek): 12,0 · 11,6 · 11,8 · 11,1 · 10,9 · 11,2 · 10,4 · 10,1 · 9,8 m.",
+    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>9,0</text><line x1='50' y1='120.0' x2='322' y2='120.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='124.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11,0</text><line x1='50' y1='60.0' x2='322' y2='60.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2016</text><text x='98.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2018</text><text x='160.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2019</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2020</text><text x='221.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2021</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2022</text><text x='283.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2023</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2024</text><polyline points='68.0,60.0 98.8,72.0 129.5,66.0 160.2,87.0 191.0,93.0 221.8,84.0 252.5,108.0 283.2,117.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='60.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='51.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>12,0</text><circle cx='98.8' cy='72.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='98.75' y='63.000000000000014' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,6</text><circle cx='129.5' cy='66.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='56.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,8</text><circle cx='160.2' cy='87.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.25' y='78.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,1</text><circle cx='191.0' cy='93.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='83.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,9</text><circle cx='221.8' cy='84.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='221.75' y='75.00000000000003' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,2</text><circle cx='252.5' cy='108.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='98.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,4</text><circle cx='283.2' cy='117.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='283.25' y='108.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='116.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>9,8</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Bir gölün su seviyesi (m) · örnek</text></svg>",
+    "adimlar": [
+     {
+      "metin": "İlk ve son değere bak.",
+      "islem": "12,0 → 9,8: genel yön aşağı"
+     },
+     {
+      "metin": "Her adıma bak: arada çıkış var mı?",
+      "islem": "11,6 → 11,8 ↑ · 10,9 → 11,2 ↑"
+     },
+     {
+      "metin": "Çıkış varsa “sürekli” denmez.",
+      "islem": "azalma eğiliminde"
+     }
+    ],
+    "sonuc": "Doğru yorum: “Su seviyesi azalma eğiliminde.” Arada iki yıl artış olduğu için “sürekli azalıyor” denmez."
+   },
+   "soru": {
+    "soru": "Bir grafikte su tüketimi 5 gün art arda artıp 6. gün biraz düşüyor. “Su tüketimi sürekli artıyor.” yorumu için hangisi doğrudur?",
+    "secenekler": [
+     "Doğrudur.",
+     "Hatalıdır; “artma eğiliminde” denmelidir.",
+     "Grafikle ilgisi yoktur."
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartı: Arada düşüş varsa “sürekli” denir mi?",
+    "aciklama": "6. gün düşüş var: “sürekli” denmez, “artma eğiliminde” denir."
+   }
+  },
+  {
+   "ad": "Kısa Aralıkla Genelleme",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='96' x2='108' y2='96' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><polyline points='16,30 30,40 44,36 58,52 72,46 86,62 102,74' fill='none' stroke='#6fb3ff' stroke-width='3'/><rect x='54' y='38' width='22' height='20' fill='none' stroke='#f2c14e' stroke-width='2' stroke-dasharray='3 2'/><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>bütün grafiğe bak</text></svg>",
+   "aciklama": "Bir grafiğin yalnızca küçük bir parçasına bakarak bütün yıllar hakkında genel yorum yapılmaz. Bütün grafiğe bakılır. (s. 191)",
+   "ek": "Kitapta buz tabakaları 1980–2020 arasında gösteriliyor ve soruluyor: Yalnızca 2000–2010'a bakarak genel bir yorum yapılabilir mi? Ece'nin 2040 tahmini de bütün grafiğin eğilimine dayanmalıdır. (s. 191)",
+   "akilda": "Bütün grafiğe bak",
+   "soru": {
+    "soru": "Göl grafiğinde yalnızca 2020–2021'e bakan Can “Su seviyesi artıyor.” diyor. Hangisi doğrudur?",
+    "secenekler": [
+     "Can haklıdır; su seviyesi hep artıyor.",
+     "Grafikte hiç artış yoktur.",
+     "Bütün grafikte su seviyesi azalma eğiliminde; tek aralıktan genelleme yapılmaz."
+    ],
+    "dogru": 2,
+    "ipucu": "Bütün grafiğe bak: ilk ve son değer?",
+    "aciklama": "2020–2021 arasında küçük bir artış var ama 2016–2024 boyunca eğilim azalıştır. (s. 191)"
+   }
+  },
+  {
+   "ad": "Başka Yere Genelleme",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='32' cy='54' rx='24' ry='16' fill='#6fb3ff'/><ellipse cx='88' cy='54' rx='24' ry='16' fill='#5a6280'/><text x='32' y='86' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#6fb3ff'>veri var</text><text x='88' y='86' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#9aa3bf'>veri yok</text><text x='60' y='58' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>→</text><text x='60' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>orada ayrıca ölç</text></svg>",
+   "aciklama": "Bir yer için toplanan veriler başka bir yer için geçerli sayılmaz. O yer hakkında yorum yapmak için oradan da veri toplanmalıdır. (s. 195)",
+   "ek": "Sevgi, Burdur Gölü'nün verilerine bakıp “Bu sonuçlar aynı bölgedeki Eğirdir Gölü için de geçerli.” diyor. Ama Eğirdir Gölü'nün verisi toplanmadı! (s. 195)",
+   "akilda": "Her yerin kendi verisi",
+   "soru": {
+    "soru": "Ankara'nın 10 yıllık yağış verisi azalıyor. “İzmir'de de yağış azalıyor.” yorumu için hangisi doğrudur?",
+    "secenekler": [
+     "İzmir için ayrıca veri toplanmalıdır.",
+     "Kesinlikle doğrudur.",
+     "Ankara'nın verisi yanlıştır."
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartı: Bir yerin verisi başka yer için geçerli mi?",
+    "aciklama": "Ankara'nın verisi İzmir için kanıt değildir; İzmir'in verisine bakılmalıdır. (s. 195)"
+   }
+  },
+  {
+   "ad": "Gönüllülük ve Mahremiyet",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='18' width='76' height='64' rx='8' fill='#f5f6fa'/><rect x='32' y='30' width='14' height='14' rx='3' fill='none' stroke='#1b2340' stroke-width='2.5'/><path d='M34 37 l4 4 7 -9' stroke='#2f8f73' stroke-width='3' fill='none'/><text x='72' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>gönüllü</text><text x='60' y='70' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#5a6280'>Ad: ———</text><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>isimsiz anket</text></svg>",
+   "aciklama": "Anket yaparken katılım gönüllü olmalı, kişilerin mahremiyetine saygı gösterilmelidir. Yalnızca araştırma için gereken bilgi istenir; cevap vermek istemeyen zorlanmaz. (s. 196)",
+   "ek": "Oğuz sosyal medya kullanımını araştırırken bazı öğrenciler hangi hesapları takip ettiklerini söylemek istemedi. Bu onların hakkı. Kişisel veriler korunmazsa toplumda güven duygusu zedelenir. (s. 196)",
+   "akilda": "Gönüllü, isimsiz, gerekeni sor",
+   "soru": {
+    "soru": "Hangisi kişisel verilerin gizliliğini korumak için doğru bir davranıştır?",
+    "secenekler": [
+     "Sosyal medya şifreni arkadaşına söylemek",
+     "Güçlü ve tahmin edilmesi zor şifre kullanmak",
+     "Güvenilmeyen sitelere adresini yazmak"
+    ],
+    "dogru": 1,
+    "ipucu": "Hangisi bilgilerini başkalarından korur?",
+    "aciklama": "Güçlü şifre, hesabını ve kişisel verilerini korur. (s. 196)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangi hata?",
+   "kutular": [
+    {
+     "etiket": "Kime soruldu? Nerede ölçüldü?",
+     "uyeler": [
+      "Örneklemden Genellemek",
+      "Başka Yere Genelleme"
+     ]
+    },
+    {
+     "etiket": "Grafik ve sayılar",
+     "uyeler": [
+      "Yorum Veriyle Uyuşmalı",
+      "Eğilimi Doğru Söylemek",
+      "Kısa Aralıkla Genelleme"
+     ]
+    },
+    {
+     "etiket": "Etik",
+     "uyeler": [
+      "Gönüllülük ve Mahremiyet"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Örneklem evreni temsil etmiyorsa sonuç evrene genellenmez.",
+  "Yorum söylemeden önce sayılara tekrar bak.",
+  "Arada çıkış varsa “sürekli azalıyor” denmez; “azalma eğiliminde” denir.",
+  "Grafiğin küçük bir parçasından genel yorum yapılmaz.",
+  "Bir yerin verisi başka bir yer için kanıt değildir.",
+  "Anket gönüllü olmalı; kişisel bilgiler korunmalı."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Burdur Gölü küçülüyor mu?",
+   "cevap": "Sevgi'nin okuduğu habere göre gölün yüzey alanı son 50 yılda yaklaşık %44 azalmış ve su seviyesindeki azalma sürüyor. (s. 195)"
+  },
+  {
+   "soru": "NSIDC ne demek?",
+   "cevap": "Ulusal Kar ve Buz Verileri Merkezi. Ece buz tabakalarıyla ilgili güvenilir veriye bu merkezin sitesinden ulaştı. (s. 191)"
+  },
+  {
+   "soru": "Anketi isimsiz yapmak neden iyi?",
+   "cevap": "İsim yazılmazsa kimin ne cevap verdiği bilinmez. İnsanlar daha rahat ve dürüst cevap verir, mahremiyetleri korunur."
+  },
+  {
+   "soru": "Bazıları cevap vermezse araştırma bozulur mu?",
+   "cevap": "Sonuçlar etkilenebilir: Cevap vermeyenlerin bilgisi eksik kalır. Bunu araştırmanın sonunda not ederiz. Yine de kimse zorlanmaz. (s. 196)"
+  },
+  {
+   "soru": "Dedektif gibi hangi soruları sorarım?",
+   "cevap": "Kime soruldu? Örneklem uygun mu? Kaynak güvenilir mi? Yorum sayılarla uyuşuyor mu? Bütün grafiğe bakıldı mı?"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Fulya araştırmasını yeniden yapsa, okulda en çok sevilen dersi bulmak için ne değiştirmeli?",
+   "ornekCevap": "Yalnızca 7/A'ya değil, okulun bütün sınıflarından öğrencilere sormalı. Böylece örneklem okulu temsil eder. Yorumlarını da sayılara bakarak yazmalı.",
+   "anahtarlar": [
+    "örneklem",
+    "sınıf",
+    "temsil",
+    "okul",
+    "sayı"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir araştırmacı Türkiye'deki öğrencilerin kitap okuma süresini araştırıyor ama yalnızca bir şehirdeki bir okula soruyor. Hangisi doğrudur?",
+   "secenekler": [
+    "Örneklem Türkiye'yi temsil etmeyebilir; sonuç dikkatle genellenmelidir.",
+    "Bu okul evrendir.",
+    "Sonuç bütün Türkiye için kesindir."
+   ],
+   "dogru": 0,
+   "ipucu": "Bir okul bütün Türkiye'yi temsil eder mi?",
+   "aciklama": "Tek okul Türkiye'deki bütün öğrencileri temsil etmeyebilir. (s. 190)",
+   "kavram": "Örneklemden Genellemek"
+  },
+  {
+   "soru": "Fulya'nın grafiğine göre fen bilimlerini seven kaç kişi, matematiği sevenlerden fazladır?",
+   "cevap": "2",
+   "ipucu": "Fen ve Mat sütunlarını oku.",
+   "aciklama": "12 − 10 = 2 kişi. (s. 190)",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='116.0' x2='320' y2='116.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='120.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='98.0' x2='320' y2='98.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='102.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='80.0' x2='320' y2='80.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>6</text><line x1='40' y1='62.0' x2='320' y2='62.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='66.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>8</text><line x1='40' y1='44.0' x2='320' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>10</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>12</text><rect x='52.3' y='26.0' width='31.4' height='108.0' rx='3' fill='#4fc3a1'/><text x='68.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Fen</text><rect x='108.3' y='98.0' width='31.4' height='36.0' rx='3' fill='#4fc3a1'/><text x='124.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>İng</text><rect x='164.3' y='44.0' width='31.4' height='90.0' rx='3' fill='#4fc3a1'/><text x='180.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Mat</text><rect x='220.3' y='80.0' width='31.4' height='54.0' rx='3' fill='#4fc3a1'/><text x='236.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Sos</text><rect x='276.3' y='62.0' width='31.4' height='72.0' rx='3' fill='#4fc3a1'/><text x='292.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Tür</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/A: En sevdiğin ders hangisi?</text></svg>",
+   "kavram": "Yorum Veriyle Uyuşmalı",
+   "yardim": {
+    "adimlar": [
+     "Fen sütununu oku.",
+     "Mat sütununu oku.",
+     "Büyükten küçüğü çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Fulya'nın grafiğinde en az sevilen dersi seçen öğrenci sayısına sayı doğrusunda dokun.",
+   "nokta": 4,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 12
+   },
+   "ipucu": "En kısa sütun hangisi?",
+   "aciklama": "En kısa sütun İngilizce: 4 kişi. (s. 190)",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='116.0' x2='320' y2='116.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='120.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='98.0' x2='320' y2='98.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='102.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='80.0' x2='320' y2='80.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>6</text><line x1='40' y1='62.0' x2='320' y2='62.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='66.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>8</text><line x1='40' y1='44.0' x2='320' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>10</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>12</text><rect x='52.3' y='26.0' width='31.4' height='108.0' rx='3' fill='#4fc3a1'/><text x='68.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Fen</text><rect x='108.3' y='98.0' width='31.4' height='36.0' rx='3' fill='#4fc3a1'/><text x='124.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>İng</text><rect x='164.3' y='44.0' width='31.4' height='90.0' rx='3' fill='#4fc3a1'/><text x='180.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Mat</text><rect x='220.3' y='80.0' width='31.4' height='54.0' rx='3' fill='#4fc3a1'/><text x='236.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Sos</text><rect x='276.3' y='62.0' width='31.4' height='72.0' rx='3' fill='#4fc3a1'/><text x='292.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Tür</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/A: En sevdiğin ders hangisi?</text></svg>",
+   "kavram": "Yorum Veriyle Uyuşmalı",
+   "yardim": {
+    "adimlar": [
+     "En kısa sütunu bul.",
+     "Ucundaki sayıyı oku.",
+     "O sayıya dokun."
+    ]
+   }
+  },
+  {
+   "soru": "Fulya “Sosyal bilgileri sevenler Türkçeyi sevenlerden fazla.” dedi. Türkçeyi seven öğrenci sayısına sayı doğrusunda dokun.",
+   "nokta": 8,
+   "sayiDogrusu": {
+    "min": 0,
+    "max": 12
+   },
+   "ipucu": "Tür sütununa bak.",
+   "aciklama": "Türkçeyi 8 kişi seviyor; sosyal bilgileri 6. Yorum hatalı. (s. 190)",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='116.0' x2='320' y2='116.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='120.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='98.0' x2='320' y2='98.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='102.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='80.0' x2='320' y2='80.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>6</text><line x1='40' y1='62.0' x2='320' y2='62.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='66.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>8</text><line x1='40' y1='44.0' x2='320' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>10</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>12</text><rect x='52.3' y='26.0' width='31.4' height='108.0' rx='3' fill='#4fc3a1'/><text x='68.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Fen</text><rect x='108.3' y='98.0' width='31.4' height='36.0' rx='3' fill='#4fc3a1'/><text x='124.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>İng</text><rect x='164.3' y='44.0' width='31.4' height='90.0' rx='3' fill='#4fc3a1'/><text x='180.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Mat</text><rect x='220.3' y='80.0' width='31.4' height='54.0' rx='3' fill='#4fc3a1'/><text x='236.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Sos</text><rect x='276.3' y='62.0' width='31.4' height='72.0' rx='3' fill='#4fc3a1'/><text x='292.0' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Tür</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>7/A: En sevdiğin ders hangisi?</text></svg>",
+   "kavram": "Yorum Veriyle Uyuşmalı",
+   "yardim": {
+    "adimlar": [
+     "“Tür” sütununu bul.",
+     "Ucundaki sayıyı oku.",
+     "O sayıya dokun."
+    ]
+   }
+  },
+  {
+   "soru": "Ali'nin günlük adım sayısı 6 gün art arda artıp 7. gün biraz düşmüş. Hangisi en doğru yorumdur?",
+   "secenekler": [
+    "Adım sayısı sürekli artmıştır.",
+    "Adım sayısı artma eğilimindedir.",
+    "Adım sayısı hiç değişmemiştir."
+   ],
+   "dogru": 1,
+   "ipucu": "Arada düşüş varsa “sürekli” denir mi?",
+   "aciklama": "7. gün düşüş var; doğru yorum “artma eğiliminde”.",
+   "kavram": "Eğilimi Doğru Söylemek"
+  },
+  {
+   "soru": "Göl grafiğine göre hangisi doğrudur?",
+   "secenekler": [
+    "Su seviyesi her yıl azalmıştır.",
+    "Su seviyesi hiç değişmemiştir.",
+    "Su seviyesi azalma eğilimindedir ama bazı yıllar artmıştır."
+   ],
+   "dogru": 2,
+   "ipucu": "Her yıla tek tek bak: hiç artış var mı?",
+   "aciklama": "2018 ve 2021'de küçük artışlar var; genel eğilim azalış.",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>9,0</text><line x1='50' y1='120.0' x2='322' y2='120.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='124.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11,0</text><line x1='50' y1='60.0' x2='322' y2='60.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2016</text><text x='98.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2018</text><text x='160.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2019</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2020</text><text x='221.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2021</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2022</text><text x='283.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2023</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2024</text><polyline points='68.0,60.0 98.8,72.0 129.5,66.0 160.2,87.0 191.0,93.0 221.8,84.0 252.5,108.0 283.2,117.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='60.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='51.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>12,0</text><circle cx='98.8' cy='72.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='98.75' y='63.000000000000014' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,6</text><circle cx='129.5' cy='66.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='56.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,8</text><circle cx='160.2' cy='87.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.25' y='78.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,1</text><circle cx='191.0' cy='93.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='83.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,9</text><circle cx='221.8' cy='84.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='221.75' y='75.00000000000003' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,2</text><circle cx='252.5' cy='108.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='98.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,4</text><circle cx='283.2' cy='117.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='283.25' y='108.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='116.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>9,8</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Bir gölün su seviyesi (m) · örnek</text></svg>",
+   "kavram": "Eğilimi Doğru Söylemek"
+  },
+  {
+   "soru": "Göl grafiğine göre 2016'dan 2024'e su seviyesi kaç metre azalmıştır?",
+   "cevap": "2,2",
+   "ipucu": "İlk ve son değeri oku.",
+   "aciklama": "12,0 − 9,8 = 2,2 m.",
+   "denk": true,
+   "birim": "m",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>9,0</text><line x1='50' y1='120.0' x2='322' y2='120.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='124.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11,0</text><line x1='50' y1='60.0' x2='322' y2='60.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2016</text><text x='98.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2018</text><text x='160.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2019</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2020</text><text x='221.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2021</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2022</text><text x='283.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2023</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2024</text><polyline points='68.0,60.0 98.8,72.0 129.5,66.0 160.2,87.0 191.0,93.0 221.8,84.0 252.5,108.0 283.2,117.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='60.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='51.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>12,0</text><circle cx='98.8' cy='72.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='98.75' y='63.000000000000014' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,6</text><circle cx='129.5' cy='66.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='56.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,8</text><circle cx='160.2' cy='87.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.25' y='78.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,1</text><circle cx='191.0' cy='93.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='83.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,9</text><circle cx='221.8' cy='84.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='221.75' y='75.00000000000003' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,2</text><circle cx='252.5' cy='108.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='98.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,4</text><circle cx='283.2' cy='117.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='283.25' y='108.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='116.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>9,8</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Bir gölün su seviyesi (m) · örnek</text></svg>",
+   "kavram": "Kısa Aralıkla Genelleme",
+   "yardim": {
+    "adimlar": [
+     "2016'daki değeri oku.",
+     "2024'teki değeri oku.",
+     "Büyükten küçüğü çıkar; virgülleri alt alta yaz."
+    ]
+   }
+  },
+  {
+   "soru": "Bir sporcunun 10 yıllık sonuçları genel olarak iyileşiyor; yalnızca bir yıl kötüleşmiş. O tek yıla bakıp “Sporcu kötüleşiyor.” demek için hangisi doğrudur?",
+   "secenekler": [
+    "Doğrudur, bir yıl yeterlidir.",
+    "Hatalıdır; bütün yıllara bakılmalıdır.",
+    "Sporcu hiç değişmemiştir."
+   ],
+   "dogru": 1,
+   "ipucu": "Bütün grafiğe mi, bir parçasına mı bakılmalı?",
+   "aciklama": "Tek yıldan genel yorum yapılmaz; 10 yılın eğilimi iyileşme. (s. 191)",
+   "kavram": "Kısa Aralıkla Genelleme"
+  },
+  {
+   "soru": "Burdur Gölü'nün verilerine bakan Sevgi “Eğirdir Gölü'nde de aynısı oluyor.” diyor. Hangisi doğrudur?",
+   "secenekler": [
+    "Sevgi haklıdır, iki göl aynı bölgededir.",
+    "Burdur Gölü'nün verisi yanlıştır.",
+    "Eğirdir Gölü için ayrıca veri toplanmalıdır."
+   ],
+   "dogru": 2,
+   "ipucu": "Eğirdir Gölü'nün verisi toplandı mı?",
+   "aciklama": "Bir gölün verisi başka göl için kanıt değildir. (s. 195)",
+   "kavram": "Başka Yere Genelleme"
+  },
+  {
+   "soru": "Oğuz'un anketinde bazı öğrenciler hangi uygulamaları kullandığını söylemek istemedi. Oğuz ne yapmalı?",
+   "secenekler": [
+    "Katılımın gönüllü olduğunu söyleyip anketi isimsiz yapmalı",
+    "Cevap vermeye zorlamalı",
+    "Adlarını listeye yazıp herkesle paylaşmalı"
+   ],
+   "dogru": 0,
+   "ipucu": "Katılım zorunlu mu, gönüllü mü?",
+   "aciklama": "Katılım gönüllüdür; isimsiz anket mahremiyeti korur. (s. 196)",
+   "kavram": "Gönüllülük ve Mahremiyet"
+  }
+ ]
+}

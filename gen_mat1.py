@@ -7245,9 +7245,859 @@ def u3t2():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4, u3t1, u3t2]
+# =================================================================
+# Tema 3 · Konu 6–8: yayılım, dağılımı yorumlama, araştırma süreçlerini inceleme
+# Kitap dışı kararlar (Kemal'e bildirildi): ortalama mutlak sapma kitapta yazılımla bulunuyor; Bilgi Kutusu'ndaki 3 adım
+# küçük tam sayılı verilerle elle anlatıldı. İki şehrin sıcaklıkları, kitap okuma, göl su seviyesi, pastane ve kantin
+# örnekleri kitap dışıdır. Kitabın öğrenciye bıraktığı sonuçlar (Mehtap'ın 16.00 ateşi, Fulya ve Sevgi'nin yorumları,
+# "sürekli azalıyor" yorumu, aykırı değerde ortanca) Bilgi Kutusu / DİKKAT kutusu ve önceki konuların kurallarından türetildi.
+P36, P37, P38 = "(s. 180–183)", "(s. 184–189)", "(s. 190–191, 194–196)"
+SELMA = [18, 5, 32, 17, 13]
+YASEMIN = [15, 16, 17, 18, 19]
+MAC = ["1.", "2.", "3.", "4.", "5."]
+ENES_G = ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"]
+ENES_D = [2.5, 2.8, 3.5, 3.2, 2.6, 3.2, 2.9]
+ATES_G = ["11.00", "12.00", "13.00", "14.00", "15.00"]
+ATES_D = [39.2, 39.4, 38.7, 38.1, 37.5]
+GOL_G = ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"]
+GOL_D = [12.0, 11.6, 11.8, 11.1, 10.9, 11.2, 10.4, 10.1, 9.8]       # kitap dışı örnek
+FULYA_G = ["Fen", "İng", "Mat", "Sos", "Tür"]
+FULYA_D = [12, 4, 10, 6, 8]
+BANT = "#6fb3ff"
+
+
+def sapma_svg(degerler, ort, oms=None, etiketler=MAC, ust=35, adim=5, w=330, h=176, renk=NIC, baslik=None):
+    """Her veri için bir sütun, ortalama çizgisi ve (varsa) ortalama ± ortalama mutlak sapma bandı (kitaptaki yazılım grafiği gibi)."""
+    x0, y0 = 40, h - 26
+    top = 44 if baslik else 28
+    yuk = y0 - top
+    sy = lambda v: y0 - yuk * v / ust
+    g = ""
+    for i in range(0, ust + 1, adim):
+        g += f"<line x1='{x0}' y1='{sy(i):.1f}' x2='{w - 10}' y2='{sy(i):.1f}' stroke='#3a4570' stroke-width='1'/>" + txt(x0 - 8, sy(i) + 4, str(i), "#f5f6fa", 11, 600, "end")
+    if oms:
+        g += f"<rect x='{x0}' y='{sy(ort + oms):.1f}' width='{w - 10 - x0}' height='{sy(ort - oms) - sy(ort + oms):.1f}' fill='{BANT}' opacity='0.28'/>"
+    g += _ok(x0, y0, w - 10, y0) + _ok(x0, y0, x0, top - 4)
+    a = (w - 10 - x0) / len(degerler)
+    for i, (e, d) in enumerate(zip(etiketler, degerler)):
+        bx = x0 + a * i + a * 0.25
+        g += f"<rect x='{bx:.1f}' y='{sy(d):.1f}' width='{a * 0.5:.1f}' height='{y0 - sy(d):.1f}' rx='3' fill='{renk}'/>"
+        g += txt(bx + a * 0.25, sy(d) - 5, sayi_yaz(d), renk, 11, 700) + txt(bx + a * 0.25, y0 + 16, e, "#f5f6fa", 11, 600)
+    g += f"<line x1='{x0}' y1='{sy(ort):.1f}' x2='{w - 10}' y2='{sy(ort):.1f}' stroke='#f2c14e' stroke-width='2.5'/>"
+    ly = 31 if baslik else 15
+    g += f"<line x1='{w - 120}' y1='{ly - 4}' x2='{w - 104}' y2='{ly - 4}' stroke='#f2c14e' stroke-width='2.5'/>" + txt(w - 100, ly, "ortalama " + sayi_yaz(ort), "#f2c14e", 10, 700, "start")
+    if oms:
+        g += f"<rect x='{x0 + 6}' y='{ly - 9}' width='16' height='10' fill='{BANT}' opacity='0.5'/>" + txt(x0 + 26, ly, "± ortalama mutlak sapma", BANT, 10, 700, "start")
+    if baslik:
+        g += txt(w / 2, 15, baslik, "#f2c14e", 12)
+    return gsvg(w, h, g)
+
+
+def selma_svg(bant=True):
+    return sapma_svg(SELMA, 17, 6.4 if bant else None, renk=KAT, baslik="Selma'nın maçlarda aldığı sayılar")
+
+
+def yasemin_svg(bant=True):
+    return sapma_svg(YASEMIN, 17, 1.2 if bant else None, renk=NIC, baslik="Yasemin'in maçlarda aldığı sayılar")
+
+
+def ates_svg(deger=True):
+    return cizgi_svg(ATES_G, [(ATES_D, "#ffa26b")], 37, 40, 0.5, baslik="Mehtap'ın vücut sıcaklığı (°C)", deger_yaz=deger, ond=1)
+
+
+def enes_svg(deger=True):
+    return cizgi_svg(ENES_G, [(ENES_D, "#8ce99a")], 2, 4, 0.5, baslik="Enes'in 10 dakikada koştuğu mesafe (km)", deger_yaz=deger, ond=1)
+
+
+def sehir_svg():
+    return cizgi_svg(["Pzt", "Sal", "Çar", "Per", "Cum"], [([20, 22, 21, 23, 19], NIC), ([12, 25, 18, 30, 15], KAT)], 10, 32, 4,
+                     h=200, deger_yaz=False, baslik="En yüksek sıcaklık (°C)", lejant=[("A şehri", NIC), ("B şehri", KAT)])
+
+
+def gol_svg(deger=True):
+    return cizgi_svg(GOL_G, [(GOL_D, BANT)], 9, 13, 1, baslik="Bir gölün su seviyesi (m) · örnek", deger_yaz=deger, ond=1, efont=9)
+
+
+def fulya_svg():
+    return sutun_svg(FULYA_G, FULYA_D, ust=12, baslik="7/A: En sevdiğin ders hangisi?")
+
+
+# --- küçük kavram çizimleri (120 × 120)
+def svg3_yayilim():
+    g = "<line x1='60' y1='14' x2='60' y2='92' stroke='#f2c14e' stroke-width='2' stroke-dasharray='4 3'/>"
+    for x in (14, 36, 58, 62, 106):
+        g += f"<circle cx='{x}' cy='38' r='6' fill='{KAT}'/>"
+    for x in (46, 53, 60, 67, 74):
+        g += f"<circle cx='{x}' cy='72' r='6' fill='{NIC}'/>"
+    return bg(g + txt(60, 110, "merkez aynı", "#f2c14e", 11))
+
+
+def svg3_aciklik():
+    g = _ok(10, 74, 110, 74)
+    for x in (44, 56, 62):
+        g += f"<circle cx='{x}' cy='74' r='5' fill='{NIC}'/>"
+    g += "<circle cx='18' cy='74' r='6' fill='#f2c14e'/><circle cx='102' cy='74' r='6' fill='#f2c14e'/>"
+    g += "<line x1='18' y1='52' x2='102' y2='52' stroke='#f2c14e' stroke-width='2.5'/><path d='M18 52 l8 -5 0 10z M102 52 l-8 -5 0 10z' fill='#f2c14e'/>"
+    g += txt(18, 96, "5", "#f5f6fa", 12) + txt(102, 96, "32", "#f5f6fa", 12)
+    return bg(g + txt(60, 36, "32 − 5 = 27", "#f2c14e", 15))
+
+
+def svg3_uzaklik():
+    g = _ok(10, 74, 110, 74)
+    for i, v in enumerate(range(15, 20)):
+        x = 20 + i * 20
+        g += f"<line x1='{x}' y1='69' x2='{x}' y2='79' stroke='#f5f6fa' stroke-width='2'/>" + txt(x, 96, str(v), "#f5f6fa" if v != 17 else "#f2c14e", 12)
+    g += "<path d='M60 64 Q40 40 20 64' stroke='#f2c14e' stroke-width='2.5' fill='none'/><path d='M60 64 Q80 40 100 64' stroke='#f2c14e' stroke-width='2.5' fill='none'/>"
+    g += txt(40, 42, "2", "#f2c14e", 13) + txt(80, 42, "2", "#f2c14e", 13)
+    return bg(g + txt(60, 20, "ortalama 17", "#f2c14e", 11) + txt(60, 113, "uzaklık eksi olmaz", "#f5f6fa", 9, 600))
+
+
+def svg3_oms():
+    g = _kutu(12, 12, 96, 26, "1 ortalama", "#f2c14e", 11) + _kutu(12, 47, 96, 26, "2 uzaklıklar", NIC, 11)
+    g += _kutu(12, 82, 96, 26, "3 topla ÷ sayı", "#ffa26b", 11)
+    return bg(g)
+
+
+def svg3_istikrar():
+    g = "<rect x='8' y='40' width='48' height='14' fill='#6fb3ff' opacity='0.3'/><rect x='64' y='22' width='48' height='50' fill='#6fb3ff' opacity='0.3'/>"
+    for i, hh in enumerate([44, 46, 48, 46, 50]):
+        g += f"<rect x='{11 + i * 9}' y='{96 - hh}' width='6' height='{hh}' rx='1' fill='{NIC}'/>"
+    for i, hh in enumerate([30, 74, 20, 58, 44]):
+        g += f"<rect x='{67 + i * 9}' y='{96 - hh}' width='6' height='{hh}' rx='1' fill='{KAT}'/>"
+    return bg(g + txt(32, 112, "istikrarlı", NIC, 10) + txt(88, 112, "dalgalı", KAT, 10))
+
+
+def svg3_iki_olcu():
+    g = _kutu(8, 20, 48, 30, "merkez", "#f2c14e", 11) + txt(60, 42, "+", "#f5f6fa", 18) + _kutu(64, 20, 50, 30, "yayılım", BANT, 11)
+    g += _ok(60, 58, 60, 74) + "<path d='M60 80 l-6 -8 12 0z' fill='#f5f6fa'/>"
+    return bg(g + _kutu(26, 84, 68, 26, "iyi yorum", "#8ce99a", 11))
+
+
+def svg3_uclar():
+    g = ""
+    for i, s in enumerate(["5", "13", "17", "18", "32"]):
+        r = "#f2c14e" if i in (0, 4) else "#5a6280"
+        g += f"<rect x='{6 + i * 22}' y='42' width='20' height='28' rx='5' fill='{r}'/>" + txt(16 + i * 22, 61, s, "#1b2340" if i in (0, 4) else "#f5f6fa", 12)
+    return bg(g + txt(60, 30, "sırala", "#f5f6fa", 11, 600) + txt(16, 88, "küçük", "#f2c14e", 10) + txt(104, 88, "büyük", "#f2c14e", 10))
+
+
+def svg3_degisken():
+    g = txt(22, 38, "A", NIC, 14) + "<line x1='46' y1='34' x2='70' y2='34' stroke='#4fc3a1' stroke-width='6' stroke-linecap='round'/>"
+    g += txt(22, 72, "B", KAT, 14) + "<line x1='34' y1='68' x2='108' y2='68' stroke='#ff8fb1' stroke-width='6' stroke-linecap='round'/>"
+    return bg(g + txt(60, 102, "uzun çizgi:", "#f5f6fa", 10, 600) + txt(60, 114, "çok değişken", "#f2c14e", 10))
+
+
+def svg3_olculer():
+    g = _kutu(8, 14, 104, 22, "ortalama · ortanca", "#f2c14e", 10) + _kutu(8, 42, 104, 22, "tepe değer", "#f2c14e", 10)
+    g += _kutu(8, 70, 104, 22, "açıklık · sapma", BANT, 10)
+    return bg(g + txt(60, 110, "her biri bir şey söyler", "#f5f6fa", 9, 600))
+
+
+def svg3_dayali():
+    g = "<rect x='10' y='16' width='62' height='70' rx='6' fill='#f5f6fa'/>"
+    for i in range(4):
+        g += f"<line x1='16' y1='{32 + i * 14}' x2='66' y2='{32 + i * 14}' stroke='#5a6280' stroke-width='3'/>"
+    g += "<rect x='78' y='34' width='34' height='16' rx='8' fill='#ffa26b'/>" + txt(95, 70, "ilaç?", "#ffa26b", 11)
+    g += "<line x1='76' y1='28' x2='114' y2='58' stroke='#ff6b6b' stroke-width='3'/><line x1='114' y1='28' x2='76' y2='58' stroke='#ff6b6b' stroke-width='3'/>"
+    return bg(g + txt(60, 108, "tabloda yok", "#f2c14e", 11))
+
+
+def svg3_tahmin_sinir():
+    g = _ok(12, 96, 108, 96)
+    pts = [(18, 34), (34, 30), (50, 44), (66, 56), (80, 64)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='#ffa26b' stroke-width='3'/>"
+    g += "<path d='M80 64 L106 58 L106 86 Z' fill='#f2c14e' opacity='0.3'/>" + txt(98, 76, "?", "#f2c14e", 14)
+    return bg(g + txt(60, 114, "olabilir, kesin değil", "#f5f6fa", 9, 600))
+
+
+def svg3_dongu():
+    g = "<circle cx='60' cy='60' r='38' fill='none' stroke='#5a6280' stroke-width='3' stroke-dasharray='6 5'/>"
+    for (x, y, s, r) in [(60, 22, "soru", "#f2c14e"), (98, 60, "veri", NIC), (60, 98, "özet", BANT), (22, 60, "sonuç", "#ffa26b")]:
+        g += f"<circle cx='{x}' cy='{y}' r='16' fill='{r}'/>" + txt(x, y + 4, s, "#1b2340", 10)
+    return bg(g + txt(60, 64, "↻", "#f5f6fa", 18))
+
+
+def svg3_genelleme():
+    g = "<circle cx='60' cy='56' r='42' fill='none' stroke='#f5f6fa' stroke-width='2.5'/>" + txt(60, 30, "okul", "#f5f6fa", 11)
+    g += "<circle cx='60' cy='66' r='14' fill='#f2c14e'/>" + txt(60, 70, "7/A", "#1b2340", 10)
+    return bg(g + txt(60, 114, "tek sınıf ≠ okul", "#f2c14e", 10))
+
+
+def svg3_uyusma():
+    g = _ok(14, 86, 106, 86)
+    g += "<rect x='28' y='50' width='22' height='36' rx='3' fill='#6fb3ff'/><rect x='70' y='38' width='22' height='48' rx='3' fill='#4fc3a1'/>"
+    g += txt(39, 44, "6", "#6fb3ff", 13) + txt(81, 32, "8", "#4fc3a1", 13) + txt(39, 100, "Sos", "#f5f6fa", 10, 600) + txt(81, 100, "Tür", "#f5f6fa", 10, 600)
+    return bg(g + txt(60, 18, "6 > 8 ?", "#ff6b6b", 13))
+
+
+def svg3_surekli_mi():
+    g = _ok(12, 96, 108, 96)
+    pts = [(16, 28), (30, 38), (44, 34), (58, 52), (72, 58), (86, 50), (102, 76)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round'/>"
+    g += "<circle cx='44' cy='34' r='6' fill='none' stroke='#f2c14e' stroke-width='2'/><circle cx='86' cy='50' r='6' fill='none' stroke='#f2c14e' stroke-width='2'/>"
+    return bg(g + txt(60, 113, "çıkış var: eğilim", "#f2c14e", 10))
+
+
+def svg3_kisa():
+    g = _ok(12, 96, 108, 96)
+    pts = [(16, 30), (30, 40), (44, 36), (58, 52), (72, 46), (86, 62), (102, 74)]
+    g += f"<polyline points='{' '.join(f'{x},{y}' for x, y in pts)}' fill='none' stroke='#6fb3ff' stroke-width='3'/>"
+    g += "<rect x='54' y='38' width='22' height='20' fill='none' stroke='#f2c14e' stroke-width='2' stroke-dasharray='3 2'/>"
+    return bg(g + txt(60, 113, "bütün grafiğe bak", "#f2c14e", 10))
+
+
+def svg3_baska_yer():
+    g = "<ellipse cx='32' cy='54' rx='24' ry='16' fill='#6fb3ff'/><ellipse cx='88' cy='54' rx='24' ry='16' fill='#5a6280'/>"
+    g += txt(32, 86, "veri var", "#6fb3ff", 10) + txt(88, 86, "veri yok", "#9aa3bf", 10) + txt(60, 58, "→", "#f5f6fa", 16)
+    return bg(g + txt(60, 110, "orada ayrıca ölç", "#f2c14e", 10))
+
+
+def svg3_gonullu():
+    g = "<rect x='22' y='18' width='76' height='64' rx='8' fill='#f5f6fa'/>"
+    g += "<rect x='32' y='30' width='14' height='14' rx='3' fill='none' stroke='#1b2340' stroke-width='2.5'/><path d='M34 37 l4 4 7 -9' stroke='#2f8f73' stroke-width='3' fill='none'/>"
+    g += txt(72, 42, "gönüllü", "#1b2340", 10) + txt(60, 70, "Ad: ———", "#5a6280", 11)
+    return bg(g + txt(60, 104, "isimsiz anket", "#f2c14e", 11))
+
+
+# =================================================================
+def u3k6():
+    return {
+        "id": "u3k6", "unite": T3, "baslik": "Açıklık ve Ortalama Mutlak Sapma", "sayfalar": "s. 180–183",
+        "giris": "Ortalama, bir veri setinin merkezini söyler. Ama veriler bu merkezin çevresinde ne kadar dağınık? Bu konuda açıklığı ve ortalama mutlak sapmayı öğreneceğiz. Sonra bir oyuncunun istikrarlı mı, dalgalı mı oynadığını verilere bakarak söyleyeceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda aritmetik ortalama, iki sayı arasındaki uzaklık ve en büyük/en küçük veri işimize yarayacak. Hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Aritmetik ortalama", "sinif": "Konu 5", "svg": svg3_ortalama(),
+                 "anlatim": "Bütün verileri topla, toplamı veri sayısına böl.",
+                 "akilda": "Topla, kaç tane varsa ona böl",
+                 "ornek": {"problem": "15, 16, 17, 18, 19 sayılarının aritmetik ortalaması kaçtır?", "adimlar": [
+                     {"metin": "Bütün sayıları topla.", "islem": "15 + 16 + 17 + 18 + 19 = 85"},
+                     {"metin": "5 sayı var. Toplamı 5'e böl.", "islem": "85 ÷ 5 = 17"}]},
+                 "sorular": [
+                     G("3, 5, 10 sayılarının aritmetik ortalaması kaçtır?", "6", "Topla, sonra 3'e böl.", "3 + 5 + 10 = 18; 18 ÷ 3 = 6.",
+                       yardim={"adimlar": ["Üç sayıyı topla.", "Toplamı 3'e böl."]}),
+                     G("12, 14, 16, 18 sayılarının aritmetik ortalaması kaçtır?", "15", "Topla, sonra 4'e böl.", "12 + 14 + 16 + 18 = 60; 60 ÷ 4 = 15.",
+                       yardim={"adimlar": ["Dört sayıyı topla.", "Toplamı 4'e böl."]})]},
+                {"ad": "İki sayı arasındaki uzaklık", "sinif": "1. Tema, Konu 3", "svg": svg_mutlak(),
+                 "anlatim": "İki sayı arasındaki uzaklığı bulmak için büyükten küçüğü çıkarırız. Uzaklık hiç eksi olmaz: 13 ile 17 arasındaki uzaklık 4'tür, 17 ile 13 arasındaki de 4.",
+                 "akilda": "Büyükten küçüğü çıkar",
+                 "ornek": {"problem": "19 ile 17 arasındaki uzaklık kaçtır?", "adimlar": [
+                     {"metin": "Hangisi büyük? 19.", "islem": "19 > 17"},
+                     {"metin": "Büyükten küçüğü çıkar.", "islem": "19 − 17 = 2"}]},
+                 "sorular": [
+                     G("12 ile 17 arasındaki uzaklık kaçtır?", "5", "Büyükten küçüğü çıkar.", "17 − 12 = 5.",
+                       yardim={"adimlar": ["Hangisi büyük? Bul.", "Büyükten küçüğü çıkar."]}),
+                     G("20 ile 14 arasındaki uzaklık kaçtır?", "6", "Büyükten küçüğü çıkar.", "20 − 14 = 6.",
+                       yardim={"adimlar": ["Hangisi büyük? Bul.", "Büyükten küçüğü çıkar."]})]},
+                {"ad": "En büyük ve en küçük veri", "sinif": "Önceki yıllar", "svg": svg3_uclar(),
+                 "anlatim": "Verileri küçükten büyüğe sırala. En baştaki en küçük veri, en sondaki en büyük veridir.",
+                 "akilda": "Sırala, uçlara bak",
+                 "ornek": {"problem": "18, 5, 32, 17, 13 verilerinin en küçüğü ve en büyüğü hangisidir?", "adimlar": [
+                     {"metin": "Küçükten büyüğe sırala.", "islem": "5, 13, 17, 18, 32"},
+                     {"metin": "Uçlara bak.", "islem": "en küçük 5 · en büyük 32"}]},
+                 "sorular": [
+                     G("12, 30, 7, 25, 19 verilerinin en büyüğü kaçtır?", "30", "Hepsini karşılaştır ya da sırala.", "Sıralı: 7, 12, 19, 25, 30. En büyük 30.",
+                       yardim={"adimlar": ["Sayıları küçükten büyüğe sırala.", "En sondaki sayıya bak."]}),
+                     S("4, 11, 2, 9 verilerinin en küçüğü ve en büyüğü hangisidir?", ["4 ve 9", "2 ve 11", "2 ve 9"], 1,
+                       "Önce sırala: 2, 4, 9, 11.", "Sıralı: 2, 4, 9, 11. En küçük 2, en büyük 11.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Yayılım Ölçüsü", "renk": "#2364c7", "svg": svg3_yayilim(),
+             "aciklama": "Yayılım ölçüsü, verilerin merkezden ne kadar uzaklaştığını gösterir. Açıklık ve ortalama mutlak sapma birer yayılım ölçüsüdür. (s. 181)",
+             "ek": "Selma'nın da Yasemin'in de 5 maçta aldığı sayıların ortalaması ve ortancası 17. Ama Selma'nın sayıları 5 ile 32 arasında, Yasemin'inki 15 ile 19 arasında. Merkez aynı, yayılım farklı! (s. 180, 182)",
+             "akilda": "Merkezden ne kadar dağınık?",
+             "soru": S("Selma ile Yasemin'in sayılarının ortalaması aynı (17). Aralarındaki farkı hangisi gösterir?", ["Tepe değer", "Yayılım ölçüsü", "Araştırma sorusu"], 1,
+                       "Bilgi kartı: Verilerin merkezden ne kadar uzaklaştığını ne gösterir?", "Yayılım ölçüsü, verilerin ne kadar dağınık olduğunu gösterir. (s. 181)")},
+            {"ad": "Açıklık", "renk": "#1f9e8f", "svg": svg3_aciklik(),
+             "aciklama": "Açıklık, veri setindeki en büyük veri ile en küçük verinin farkıdır. (s. 181)",
+             "ek": "Açıklık büyükse veriler geniş bir aralığa dağılmıştır. Açıklık küçükse veriler birbirine yakındır.",
+             "akilda": "En büyük − en küçük",
+             "cozum": {"baslik": "İki oyuncunun açıklığı",
+                       "problem": "Selma: 18, 5, 32, 17, 13 · Yasemin: 15, 16, 17, 18, 19. İki oyuncunun aldığı sayıların açıklığını bul.",
+                       "svg": selma_svg(False),
+                       "adimlar": [
+                           {"metin": "Selma'nın en büyük ve en küçük verisini bul.", "islem": "en büyük 32 · en küçük 5"},
+                           {"metin": "Farkını al.", "islem": "32 − 5 = 27"},
+                           {"metin": "Yasemin için aynısını yap.", "islem": "19 − 15 = 4"}],
+                       "sonuc": "Selma'nın açıklığı 27, Yasemin'inki 4. Selma'nın sayıları çok daha geniş bir aralığa yayılmış. (s. 180, 182)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Deniz'in bir haftada okula yürüme süreleri (dakika): 12, 15, 10, 18, 14. Açıklığı bul.",
+                       "adimlar": [
+                           {"metin": "En büyük veriyi bul.",
+                            "soru": G("En büyük veri kaçtır?", "18", "Hangi süre en uzun?", "En büyük veri 18.",
+                                      yardim={"adimlar": ["Sayıları küçükten büyüğe sırala.", "En sondakine bak."]}),
+                            "islem": "en büyük 18 · en küçük 10"},
+                           {"metin": "Farkını al.",
+                            "soru": G("Açıklık kaç dakikadır?", "8", "En büyükten en küçüğü çıkar.", "18 − 10 = 8 dakika.", birim="dakika",
+                                      yardim={"adimlar": ["En büyük 18, en küçük 10.", "Büyükten küçüğü çıkar."]}),
+                            "islem": "18 − 10 = 8 dakika"}],
+                       "sonuc": "Harika! Açıklık 8 dakika."},
+             "soru": S("7, 3, 12, 9 verilerinin açıklığı kaçtır?", ["12", "9", "5"], 1,
+                       "Bilgi kartı: en büyük − en küçük.", "En büyük 12, en küçük 3: 12 − 3 = 9.")},
+            {"ad": "Ortalamadan Uzaklık", "renk": "#2f8f73", "svg": svg3_uzaklik(),
+             "aciklama": "Her verinin ortalamadan ne kadar uzakta olduğunu bulmak için büyükten küçüğü çıkarırız. Uzaklık hiç eksi olmaz; tıpkı mutlak değer gibi. (s. 181)",
+             "ek": "Yasemin'in ortalaması 17. 15 verisi ortalamadan 2, 19 verisi de 2 birim uzakta. 17 verisinin uzaklığı 0.",
+             "akilda": "Uzaklık eksi olmaz",
+             "cozum": {"baslik": "Yasemin'in sayıları ortalamadan ne kadar uzak?",
+                       "problem": "Yasemin: 15, 16, 17, 18, 19. Ortalama 17. Her verinin ortalamadan uzaklığını bul.",
+                       "sayiDogrusu": {"min": 14, "max": 20, "isaretler": [{"x": 17, "etiket": "ort.", "renk": "#b7791f"}],
+                                       "oklar": [{"bas": 17, "son": 15, "etiket": "2", "renk": "#b7791f"}, {"bas": 17, "son": 19, "etiket": "2", "renk": "#b7791f"}]},
+                       "adimlar": [
+                           {"metin": "15 ve 16 ortalamanın altında: 17'den çıkar.", "islem": "17 − 15 = 2 · 17 − 16 = 1"},
+                           {"metin": "17 tam ortalamada.", "islem": "17 − 17 = 0"},
+                           {"metin": "18 ve 19 ortalamanın üstünde: 17'yi çıkar.", "islem": "18 − 17 = 1 · 19 − 17 = 2"}],
+                       "sonuc": "Uzaklıklar: 2, 1, 0, 1, 2. Hiçbiri eksi değil."},
+             "soru": G("Ortalama 10 ise 7 verisinin ortalamadan uzaklığı kaçtır?", "3", "Büyükten küçüğü çıkar.", "10 − 7 = 3.",
+                       yardim={"adimlar": ["Hangisi büyük: 10 mu, 7 mi?", "Büyükten küçüğü çıkar."]})},
+            {"ad": "Ortalama Mutlak Sapma", "renk": "#b7791f", "svg": svg3_oms(),
+             "aciklama": "Ortalama mutlak sapma, verilerin ortalamadan ortalama ne kadar uzakta olduğunu gösterir. Önce ortalama bulunur, sonra her verinin uzaklığı; uzaklıklar toplanıp veri sayısına bölünür. (s. 181)",
+             "ek": "Kitapta bu değer bir istatistik yazılımıyla bulunuyor: Selma 6,4 · Yasemin 1,2. Biz aynı sonucu elle bulacağız. (s. 181–182)",
+             "akilda": "Uzaklıkların ortalaması",
+             "cozum": {"baslik": "Yasemin'in ortalama mutlak sapması",
+                       "problem": "Yasemin: 15, 16, 17, 18, 19. Ortalama mutlak sapmayı bul.",
+                       "svg": yasemin_svg(),
+                       "adimlar": [
+                           {"metin": "Ortalamayı bul.", "islem": "85 ÷ 5 = 17"},
+                           {"metin": "Her verinin ortalamadan uzaklığını bul.", "islem": "2, 1, 0, 1, 2"},
+                           {"metin": "Uzaklıkları topla.", "islem": "2 + 1 + 0 + 1 + 2 = 6"},
+                           {"metin": "Veri sayısına (5) böl.", "islem": "6 ÷ 5 = 1,2"}],
+                       "sonuc": "Yasemin'in ortalama mutlak sapması 1,2. Grafikteki mavi bant ortalamanın 1,2 altından 1,2 üstüne kadar uzanıyor. (s. 182)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Selma: 18, 5, 32, 17, 13. Ortalama 17. Uzaklıklar: 1, 12, 15, 0, 4. Ortalama mutlak sapmayı bul.",
+                       "adimlar": [
+                           {"metin": "Uzaklıkları topla.",
+                            "soru": G("1 + 12 + 15 + 0 + 4 kaçtır?", "32", "Sırayla topla.", "1 + 12 = 13; 13 + 15 = 28; 28 + 0 + 4 = 32.",
+                                      yardim={"adimlar": ["Önce 1 ile 12'yi topla.", "Çıkan sayıya 15'i, sonra 4'ü ekle."]}),
+                            "islem": "toplam 32"},
+                           {"metin": "Veri sayısına böl.",
+                            "soru": G("32 ÷ 5 kaçtır?", "6,4", "5 veri var.", "32 ÷ 5 = 6,4.", denk=True,
+                                      yardim={"adimlar": ["30 ÷ 5 = 6. Geriye 2 kaldı.", "2 ÷ 5 kaç? Ondalık olarak yaz ve 6'ya ekle."]}),
+                            "islem": "6,4"}],
+                       "sonuc": "Harika! Selma'nın ortalama mutlak sapması 6,4; Yasemin'inkinin 5 katından fazla. (s. 182)"},
+             "soru": S("Ortalama mutlak sapmayı bulurken en son ne yapılır?", ["Uzaklıkların toplamı veri sayısına bölünür.", "En büyük veriden en küçük çıkarılır.", "Veriler sıralanır."], 0,
+                       "Bilgi kartındaki 3 adımın sonuncusuna bak.", "Son adım: uzaklıkların toplamı veri sayısına bölünür. (s. 181)")},
+            {"ad": "İstikrarlı ve Dalgalı", "renk": "#7b4fc9", "svg": svg3_istikrar(),
+             "aciklama": "Yayılım ölçüsü küçükse veriler birbirine yakındır: performans istikrarlıdır. Yayılım ölçüsü büyükse veriler çok değişir: performans dalgalıdır. (s. 182)",
+             "ek": "Grafikte ortalamanın çevresindeki mavi bant dar ise istikrarlı, geniş ise dalgalı deriz. Yasemin istikrarlı, Selma dalgalı oynamış. (s. 182)",
+             "akilda": "Dar: istikrarlı, geniş: dalgalı",
+             "soru": S("Ali'nin puanlarının ortalama mutlak sapması 1, Can'ınki 8. Hangisi doğrudur?", ["Can daha istikrarlıdır.", "İkisi de aynı istikrardadır.", "Ali daha istikrarlıdır."], 2,
+                       "Küçük sapma ne demek?", "Sapması küçük olan Ali'nin puanları birbirine yakın: Ali daha istikrarlı. (s. 182)")},
+            {"ad": "Merkez ve Yayılım Birlikte", "renk": "#c2255c", "svg": svg3_iki_olcu(),
+             "aciklama": "Bir veriyi yorumlarken yalnızca ortalamaya bakmak yetmez. Merkezî eğilim ölçüleri (ortalama, ortanca, tepe değer) yayılım ölçüleriyle desteklenmelidir. (s. 181)",
+             "ek": "Zeynep Hanım'ın buzdolabındaki meyve ve sebzelerin 100 gramındaki C vitamini ortalaması 77,5 mg, ortalama mutlak sapması 31,2 mg. Sapma büyük: bazı ürünlerde çok, bazılarında az C vitamini var. (s. 183)",
+             "akilda": "Merkez + yayılım = iyi yorum",
+             "cozum": {"baslik": "Antrenör nasıl yorumlar?",
+                       "problem": "Selma ve Yasemin'in sayılarını merkez ve yayılım ölçüleriyle birlikte yorumlayalım.",
+                       "svg": selma_svg(),
+                       "adimlar": [
+                           {"metin": "Merkeze bak: ortalamalar.", "islem": "17 = 17"},
+                           {"metin": "Açıklıklara bak.", "islem": "27 > 4"},
+                           {"metin": "Ortalama mutlak sapmalara bak.", "islem": "6,4 > 1,2"},
+                           {"metin": "Birlikte yorumla.", "islem": "Selma dalgalı · Yasemin istikrarlı"}],
+                       "sonuc": "Ortalamalar aynı ama yayılım çok farklı. Yalnızca ortalamaya baksaydık bu farkı göremezdik. (s. 182)"},
+             "soru": S("Ece'nin ve Mert'in not ortalaması 70. Ece'nin notlarının açıklığı 40, Mert'inki 10. Hangisi doğrudur?",
+                       ["İkisinin notları tamamen aynıdır.", "Ece'nin notları daha dalgalıdır.", "Mert'in notları daha dalgalıdır."], 1,
+                       "Ortalama aynı. Açıklığı büyük olan kim?", "Açıklığı 40 olan Ece'nin notları daha çok değişiyor: daha dalgalı.")}
+        ],
+        "gruplar": [{"soru": "Ne işe yarar?", "kutular": [
+            {"etiket": "Yayılımı ölçer", "uyeler": ["Açıklık", "Ortalama Mutlak Sapma"]},
+            {"etiket": "Temel fikir", "uyeler": ["Yayılım Ölçüsü", "Ortalamadan Uzaklık"]},
+            {"etiket": "Yorum yapar", "uyeler": ["İstikrarlı ve Dalgalı", "Merkez ve Yayılım Birlikte"]}]}],
+        "akildaKalsin": [
+            "Yayılım ölçüsü, verilerin merkezden ne kadar uzaklaştığını gösterir.",
+            "Açıklık = en büyük veri − en küçük veri.",
+            "Ortalamadan uzaklık hiç eksi olmaz.",
+            "Ortalama mutlak sapma: ortalamayı bul, uzaklıkları bul, topla ve veri sayısına böl.",
+            "Yayılım küçükse istikrarlı, büyükse dalgalı.",
+            "Ortalama aynı olsa da yayılım farklı olabilir; ikisine birlikte bak."],
+        "merakKutusu": [
+            {"soru": "Neden “mutlak” sapma deniyor?", "cevap": "Çünkü uzaklıkları eksi işareti olmadan, mutlak değer gibi alıyoruz. Ortalamanın altındaki veri de üstündeki veri de pozitif bir uzaklık verir."},
+            {"soru": "Açıklık neden tek başına yetmeyebilir?", "cevap": "Açıklık yalnızca en uçtaki iki veriye bakar. Tek bir çok büyük ya da çok küçük veri açıklığı büyütür. Ortalama mutlak sapma ise bütün verilere bakar."},
+            {"soru": "Antrenör hangi oyuncuyu seçmeli?", "cevap": "Amaca bağlı! Her maç güvenilir bir performans isteniyorsa istikrarlı oyuncu Yasemin seçilebilir. Bazı maçlarda çok sayı alan Selma da işe yarayabilir. Önemli olan seçimi verilere dayandırmak. (s. 180, 182)"},
+            {"soru": "Bir yetişkin günde ne kadar C vitamini almalı?", "cevap": "Kitaptaki doktora göre yetişkinler günde yaklaşık 75–90 mg C vitamini almalıdır. (s. 183)"},
+            {"soru": "Bu hesapları bilgisayar yapabilir mi?", "cevap": "Evet. Kitapta dinamik bir istatistik yazılımı, ortalamayı ve ortalama mutlak sapmayı hesaplayıp grafikte gösteriyor. (s. 181)"}],
+        "dusunVeYaz": [{"soru": "Takıma bir oyuncu seçeceksin: Selma mı, Yasemin mi? Ortalama, açıklık ve ortalama mutlak sapmaya bakarak kararını gerekçesiyle yaz.",
+                        "ornekCevap": "İkisinin ortalaması 17. Ama Selma'nın açıklığı 27, ortalama mutlak sapması 6,4; Yasemin'in açıklığı 4, sapması 1,2. Yasemin istikrarlı oynuyor, her maç ne yapacağı belli. Bu yüzden Yasemin'i seçerdim.",
+                        "anahtarlar": ["ortalama", "açıklı", "sapma", "istikrar", "dalgalı"]}],
+        "sorular": [
+            S("Hangisi bir yayılım ölçüsüdür?", ["Ortanca", "Tepe değer", "Açıklık"], 2,
+              "Merkez ölçüleri: ortalama, ortanca, tepe değer.", "Açıklık ve ortalama mutlak sapma yayılım ölçüsüdür. (s. 181)", kavram="Yayılım Ölçüsü"),
+            G("Bir haftanın en yüksek sıcaklıkları: 21, 25, 19, 28, 24 °C. Açıklık kaç °C?", "9", "En büyükten en küçüğü çıkar.",
+              "En büyük 28, en küçük 19: 28 − 19 = 9 °C.", birim="°C", kavram="Açıklık",
+              yardim={"adimlar": ["En büyük sıcaklığı bul.", "En küçük sıcaklığı bul.", "Büyükten küçüğü çıkar."]}),
+            N("Veriler: 6, 2, 9, 4. Açıklığa sayı doğrusunda dokun.", 7, {"min": 0, "max": 10},
+              "En büyük − en küçük.", "En büyük 9, en küçük 2: 9 − 2 = 7.", kavram="Açıklık",
+              yardim={"adimlar": ["En büyük ve en küçük veriyi bul.", "Büyükten küçüğü çıkar.", "Bulduğun sayıya dokun."]}),
+            G("Bir veri setinin ortalaması 20. 26 verisinin ortalamadan uzaklığı kaçtır?", "6", "Büyükten küçüğü çıkar.",
+              "26 − 20 = 6.", kavram="Ortalamadan Uzaklık",
+              yardim={"adimlar": ["Hangisi büyük: 26 mı, 20 mi?", "Büyükten küçüğü çıkar."]}),
+            N("Bir veri setinin ortalaması 8. 5 verisinin ortalamadan uzaklığına sayı doğrusunda dokun.", 3, {"min": 0, "max": 6},
+              "8 ile 5 arasında kaç birim var?", "8 − 5 = 3.", kavram="Ortalamadan Uzaklık",
+              yardim={"adimlar": ["Hangisi büyük: 8 mi, 5 mi?", "Büyükten küçüğü çıkar.", "Bulduğun sayıya dokun."]}),
+            G("Veriler: 4, 6, 8, 10, 12. Ortalama 8. Ortalama mutlak sapma kaçtır?", "2,4", "Uzaklıkları bul, topla, 5'e böl.",
+              "Uzaklıklar 4, 2, 0, 2, 4; toplam 12; 12 ÷ 5 = 2,4.", denk=True, kavram="Ortalama Mutlak Sapma",
+              yardim={"adimlar": ["Her verinin 8'den uzaklığını bul.", "Uzaklıkları topla.", "Toplamı veri sayısına böl."]}),
+            S("Veriler: 3, 5, 7, 9. Ortalama 6. Uzaklıklar: 3, 1, 1, 3. Ortalama mutlak sapma kaçtır?", ["8", "2", "6"], 1,
+              "Uzaklıkları topla, sonra veri sayısına böl.", "3 + 1 + 1 + 3 = 8; 8 ÷ 4 = 2. (8 yalnızca toplamdır.)", kavram="Ortalama Mutlak Sapma"),
+            S("Bir koşucunun süreleri her gün birbirine çok yakın. Ortalama mutlak sapması için hangisi beklenir?", ["Çok büyük olur.", "Küçük olur.", "Ortalamaya eşit olur."], 1,
+              "Veriler birbirine yakınsa ortalamadan uzaklıklar nasıl olur?", "Uzaklıklar küçük olur; sapma küçüktür. Koşucu istikrarlıdır. (s. 182)", kavram="İstikrarlı ve Dalgalı"),
+            S("İki pastanenin günlük kek satışlarının ortalaması 50. A'nın ortalama mutlak sapması 2, B'ninki 15. Ertesi gün kaç kek satılacağını hangisi için tahmin etmek daha kolaydır?",
+              ["B pastanesi", "İkisi için de aynı", "A pastanesi"], 2,
+              "Hangisinin satışları birbirine daha yakın?", "A'nın sapması küçük: satışları her gün 50'ye yakın. Tahmin etmek daha kolay.", kavram="Merkez ve Yayılım Birlikte"),
+            S("Selma'nın açıklığı 27, Yasemin'inki 4. Hangisi doğrudur?",
+              ["Selma'nın sayıları daha geniş bir aralığa yayılmıştır.", "Yasemin daha çok sayı almıştır.", "İkisinin ortalaması farklıdır."], 0,
+              "Açıklık büyükse veriler nasıl dağılmıştır?", "Açıklık 27, Selma'nın sayılarının 5 ile 32 arasında geniş bir aralıkta değiştiğini gösterir. (s. 182)", kavram="Açıklık")]
+    }
+
+
+def u3k7():
+    return {
+        "id": "u3k7", "unite": T3, "baslik": "Dağılımı Yorumlama", "sayfalar": "s. 184–189",
+        "giris": "Artık bir veri setinin merkezini de yayılımını da bulabiliyorsun. Bu konuda ikisini birlikte kullanıp veriyi yorumlayacağız. Yorumun yalnızca verilere dayanması gerektiğini ve tahminin sınırını göreceğiz. En son bir araştırmayı baştan sona planlayacağız.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda açıklık, eğilim ve temsil değerini birlikte kullanacağız. Hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Açıklık", "sinif": "Konu 6", "svg": svg3_aciklik(),
+                 "anlatim": "Açıklık, en büyük veri ile en küçük verinin farkıdır.",
+                 "akilda": "En büyük − en küçük",
+                 "ornek": {"problem": "21, 25, 19, 28 verilerinin açıklığı kaçtır?", "adimlar": [
+                     {"metin": "En büyük ve en küçük veriyi bul.", "islem": "28 ve 19"},
+                     {"metin": "Farkını al.", "islem": "28 − 19 = 9"}]},
+                 "sorular": [
+                     G("8, 15, 11, 20 verilerinin açıklığı kaçtır?", "12", "En büyükten en küçüğü çıkar.", "20 − 8 = 12.",
+                       yardim={"adimlar": ["En büyük ve en küçük veriyi bul.", "Büyükten küçüğü çıkar."]}),
+                     G("2,5 · 3,1 · 2,8 verilerinin açıklığı kaçtır?", "0,6", "En büyükten en küçüğü çıkar.", "3,1 − 2,5 = 0,6.", denk=True,
+                       yardim={"adimlar": ["En büyük ve en küçük veriyi bul.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]})]},
+                {"ad": "Eğilim", "sinif": "Konu 5", "svg": svg3_egilim(),
+                 "anlatim": "Eğilim, çizginin genel yönüdür. Küçük iniş çıkışlara değil, çizginin genel olarak nereye gittiğine bakarız.",
+                 "akilda": "Genel yön: eğilim",
+                 "sorular": [
+                     S("Bir çizgi 10'dan başlayıp arada bir kez çıkarak 4'e iniyor. Eğilim nedir?", ["Artış", "Azalış", "Sabit"], 1,
+                       "İlk ve son değere bak.", "10'dan 4'e iniyor: eğilim azalış."),
+                     S("Bir fidanın boyu her hafta biraz uzuyor. Eğilim nedir?", ["Sabit", "Azalış", "Artış"], 2,
+                       "Boy her hafta ne oluyor?", "Boy uzuyor: eğilim artış.")]},
+                {"ad": "Temsil değeri", "sinif": "Konu 5", "svg": svg3_temsil_deger(),
+                 "anlatim": "Temsil değeri, bir veri setini tek bir sayıyla özetler. Genelde ortalama, ortanca ya da tepe değerden biri seçilir ve gerekçesi söylenir.",
+                 "akilda": "Bütün veriyi tek sayıyla söyle",
+                 "ornek": {"problem": "2, 4, 4, 6 verilerinin ortancası kaçtır?", "adimlar": [
+                     {"metin": "Sıralı mı? Evet. 4 veri var: ortada iki sayı var.", "islem": "4 ve 4"},
+                     {"metin": "İkisinin ortalamasını al.", "islem": "(4 + 4) ÷ 2 = 4"}]},
+                 "sorular": [
+                     G("1, 3, 5, 7, 9 verilerinin ortancası kaçtır?", "5", "Sıralı. Ortadaki sayı?", "Ortadaki sayı 5.",
+                       yardim={"adimlar": ["Sayılar sıralı mı? Kontrol et.", "5 sayı var: 3. sıradakini bul."]}),
+                     G("2, 6, 6, 8 verilerinin tepe değeri kaçtır?", "6", "Hangi sayı iki kez yazılmış?", "6 iki kez tekrar ediyor.",
+                       yardim={"adimlar": ["Her sayının kaç kez yazıldığını say.", "En çok yazılanı seç."]})]}
+            ]},
+        "kavramlar": [
+            {"ad": "Değişkenliği Karşılaştırma", "renk": "#2364c7", "svg": svg3_degisken(),
+             "aciklama": "Hangi veri setinin daha çok değiştiğini bulmak için yayılım ölçülerine (açıklık, ortalama mutlak sapma) bakarız. Yayılımı büyük olan daha çok değişkenlik gösterir. (s. 184)",
+             "ek": "Kitapta Ada, üç yenilenebilir enerji kaynağının yıllara göre elektrik üretimini çizgi grafiğinde karşılaştırıyor ve hangisinde daha çok değişkenlik olduğunu soruyor. (s. 184)",
+             "akilda": "Çok değişen: yayılımı büyük",
+             "cozum": {"baslik": "Hangi şehirde sıcaklık daha çok değişmiş?",
+                       "problem": "İki şehrin 5 günlük en yüksek sıcaklıkları (°C). A: 20, 22, 21, 23, 19 · B: 12, 25, 18, 30, 15.",
+                       "svg": sehir_svg(),
+                       "adimlar": [
+                           {"metin": "A şehrinin açıklığı.", "islem": "23 − 19 = 4"},
+                           {"metin": "B şehrinin açıklığı.", "islem": "30 − 12 = 18"},
+                           {"metin": "Karşılaştır.", "islem": "18 > 4"}],
+                       "sonuc": "B şehrinde sıcaklık çok daha fazla değişmiş. Grafikte de B'nin çizgisi inip çıkıyor, A'nınki neredeyse düz."},
+             "soru": S("X'in açıklığı 3, Y'nin açıklığı 15. Hangi veri seti daha çok değişkenlik gösterir?", ["X", "Y", "İkisi aynı"], 1,
+                       "Bilgi kartı: yayılımı büyük olan daha çok değişir.", "Y'nin açıklığı daha büyük: Y daha çok değişkenlik gösterir. (s. 184)")},
+            {"ad": "Ölçüleri Amacına Göre Kullan", "renk": "#1f9e8f", "svg": svg3_olculer(),
+             "aciklama": "Verinin dağılımı yorumlanırken merkezî eğilim ve yayılım ölçülerinin değerleri ile ne için kullanıldıkları dikkate alınmalıdır. (s. 185)",
+             "ek": "Ortalama, ortanca ve tepe değer merkezi söyler; açıklık ve ortalama mutlak sapma yayılımı söyler. Temsil değeri seçerken hepsine birlikte bakarız. (s. 185, 188)",
+             "akilda": "Her ölçü bir şey söyler",
+             "cozum": {"baslik": "Enes için temsil değeri",
+                       "problem": "Enes'in 7 günde 10 dakikada koştuğu mesafeler (km): 2,5 · 2,8 · 3,5 · 3,2 · 2,6 · 3,2 · 2,9. Bir temsil değeri seçelim.",
+                       "svg": enes_svg(),
+                       "adimlar": [
+                           {"metin": "Sırala. 7 veri var: ortanca 4. sıradaki.", "islem": "2,5 · 2,6 · 2,8 · 2,9 · 3,2 · 3,2 · 3,5 → ortanca 2,9"},
+                           {"metin": "Tepe değer: iki kez tekrar eden.", "islem": "3,2"},
+                           {"metin": "Ortalama: toplam 20,7; 7'ye böl.", "islem": "20,7 ÷ 7 ≈ 2,96"},
+                           {"metin": "Açıklık: en büyük − en küçük.", "islem": "3,5 − 2,5 = 1,0"}],
+                       "sonuc": "Ortalama ve ortanca birbirine çok yakın, açıklık küçük. Temsil değeri olarak yaklaşık 2,9–3,0 km seçilebilir. Tepe değer 3,2 ise yalnızca iki günü yansıtır. (s. 188)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Enes'in ilk iki günü 3,4 km olsaydı: 3,4 · 3,4 · 3,5 · 3,2 · 2,6 · 3,2 · 2,9. Ne değişir? (s. 188)",
+                       "adimlar": [
+                           {"metin": "Yeni açıklığı bul.",
+                            "soru": G("Yeni açıklık kaç km?", "0,9", "En büyük 3,5. En küçük hangisi?", "3,5 − 2,6 = 0,9 km.", denk=True, birim="km",
+                                      yardim={"adimlar": ["En büyük ve en küçük veriyi bul.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]}),
+                            "islem": "3,5 − 2,6 = 0,9 km"},
+                           {"metin": "Tepe değere bak: hangi sayılar ikişer kez var?",
+                            "soru": S("Yeni veri setinde tepe değer için hangisi doğrudur?", ["Tepe değer yalnız 3,5'tir.", "Tepe değer yoktur.", "İki tepe değer vardır: 3,4 ve 3,2."], 2,
+                                      "3,4 kaç kez, 3,2 kaç kez yazılmış?", "3,4 de 3,2 de ikişer kez var: iki tepe değer olur."),
+                            "islem": "3,4 ve 3,2"}],
+                       "sonuc": "Harika! İki veri değişince açıklık ve tepe değer de değişti."},
+             "soru": S("Bir veri setinde ortalama ve ortanca birbirine çok yakın, açıklık küçük. Hangisi doğrudur?",
+                       ["Veriler birbirine yakındır; ortalama iyi bir temsil değeridir.", "Veriler çok dağınıktır.", "Temsil değeri seçilemez."], 0,
+                       "Açıklık küçükse veriler nasıldır?", "Açıklık küçük: veriler birbirine yakın. Ortalama veriyi iyi temsil eder. (s. 185)")},
+            {"ad": "Veriye Dayalı Yorum", "renk": "#2f8f73", "svg": svg3_dayali(),
+             "aciklama": "Grafikte veya tabloda yer almayan bilgilerle yorum yapmak yanıltıcı olabilir. Yorumlar yalnızca verilere dayandırılmalıdır. (s. 185)",
+             "ek": "Mehtap'ın ateşi 12.00'de 39,4 °C iken 15.00'te 37,5 °C'ye düşmüş. Kıvanç “İlaç içtiği için düştü.” diyor. Ama tabloda ilaçla ilgili bir bilgi yok! (s. 185)",
+             "akilda": "Tabloda yoksa söyleme",
+             "cozum": {"baslik": "Kıvanç'ın yorumu",
+                       "problem": "Mehtap'ın saat başı vücut sıcaklığı (°C): 39,2 · 39,4 · 38,7 · 38,1 · 37,5. Kıvanç: “15.00'te ilaç kullanıldığı için ateş düştü.” Bu yorum yapılabilir mi?",
+                       "svg": ates_svg(),
+                       "adimlar": [
+                           {"metin": "Tabloda ne var?", "islem": "saat ve sıcaklık"},
+                           {"metin": "Tabloda ne yok?", "islem": "ilaç bilgisi yok"},
+                           {"metin": "Verilere göre ne söyleyebiliriz?", "islem": "12.00'den 15.00'e ateş düşmüş"}],
+                       "sonuc": "Kıvanç'ın yorumu bu veri setine göre yapılamaz; ilaç bilgisi tabloda yok. Ancak “ateş düşmüş” diyebiliriz. (s. 185)"},
+             "soru": S("Bir tabloda bir mağazanın 5 günlük satışları var; cumartesi satış çok artmış. “Kampanya yapıldığı için arttı.” yorumu için hangisi doğrudur?",
+                       ["Her zaman doğrudur.", "Satışlar hiç artmamıştır.", "Tabloda kampanya bilgisi yoksa bu yorum yapılamaz."], 2,
+                       "Bilgi kartı: Tabloda olmayan bilgiyle yorum yapılır mı?", "Kampanya bilgisi tabloda yoksa bu yorum verilere dayanmaz. (s. 185)")},
+            {"ad": "Tahminin Sınırı", "renk": "#b7791f", "svg": svg3_tahmin_sinir(),
+             "aciklama": "Eğilime bakarak tahmin yapabiliriz ama tahmin kesin bir sayı değildir; “… olabilir” deriz. Eğilimin hep aynı biçimde süreceğini bilemeyiz. (s. 185)",
+             "ek": "Mehtap'ın ateşi 12.00'den beri her saat düşüyor. 16.00'da 37,5 °C'ye yakın ya da biraz altında olabilir. Ama ateş yeniden de çıkabilir; kesin söyleyemeyiz.",
+             "akilda": "Tahmin: olabilir, kesin değil",
+             "soru": S("15.00'te Mehtap'ın ateşi 37,5 °C ve düşme eğiliminde. 16.00 için en uygun tahmin hangisi?",
+                       ["Kesinlikle 35 °C olacak.", "37,5 °C civarında ya da biraz altında olabilir.", "Kesinlikle 40 °C olacak."], 1,
+                       "Tahmin eğilime uymalı ama kesin konuşmamalı.", "Eğilim azalış; “biraz altında olabilir” uygun bir tahmindir. Kesin değildir.")},
+            {"ad": "Araştırma Döngüsü", "renk": "#7b4fc9", "svg": svg3_dongu(),
+             "aciklama": "Bir araştırma sırayla ilerler: araştırma sorusu → evren ve örneklem → veri toplama → uygun grafik ve özet → sonuç. En sonda her adımı eleştirel gözle değerlendiririz; uygun olmayan adım varsa yeniden planlarız. (s. 186–187)",
+             "ek": "Kitaptaki örnek: Bir sınıftaki öğrencilerin bilgisayarda haftalık oyun oynama süreleri (dakika) araştırılıyor. (s. 186)",
+             "akilda": "Sor, topla, göster, özetle, değerlendir",
+             "cozum": {"baslik": "Oyun süresi araştırması",
+                       "problem": "Öğrencilerin bilgisayarda haftalık oyun oynama sürelerini araştıralım. (s. 186)",
+                       "adimlar": [
+                           {"metin": "Araştırma sorusu yaz.", "islem": "7/A öğrencilerinin haftalık oyun süreleri nasıl dağılıyor?"},
+                           {"metin": "Evren ve örneklemi seç.", "islem": "evren: okulun 7. sınıfları · örneklem: 7/A"},
+                           {"metin": "Veri türünü belirle.", "islem": "süre ölçülür: nicel, sürekli veri"},
+                           {"metin": "Özetle ve değerlendir.", "islem": "ortalama, ortanca, açıklık → temsil değeri → sonuç"}],
+                       "sonuc": "Sonunda sorarız: Sonuç araştırma sorusunu cevaplıyor mu? Örneklem uygun muydu? Gerekirse yeniden planlarız. (s. 187)"},
+             "soru": S("Araştırma bittikten sonra son olarak ne yapılır?", ["Adımlar eleştirel gözle değerlendirilir.", "Veriler silinir.", "Araştırma sorusu gizlenir."], 0,
+                       "Bilgi kartındaki son cümleye bak.", "Her adım değerlendirilir; uygun olmayan adım varsa yeniden planlanır. (s. 187)")}
+        ],
+        "gruplar": [{"soru": "Ne yapıyoruz?", "kutular": [
+            {"etiket": "Ölçülerle yorum", "uyeler": ["Değişkenliği Karşılaştırma", "Ölçüleri Amacına Göre Kullan"]},
+            {"etiket": "Dikkatli yorum", "uyeler": ["Veriye Dayalı Yorum", "Tahminin Sınırı"]},
+            {"etiket": "Bütün süreç", "uyeler": ["Araştırma Döngüsü"]}]}],
+        "akildaKalsin": [
+            "Hangi veri daha çok değişiyor? Yayılım ölçüsü büyük olana bak.",
+            "Merkez ölçüleri ve yayılım ölçüleri birlikte kullanılır.",
+            "Tabloda ya da grafikte olmayan bilgiyle yorum yapılmaz.",
+            "Tahmin eğilime dayanır ama kesin değildir.",
+            "Araştırmanın sonunda her adım eleştirel gözle değerlendirilir."],
+        "merakKutusu": [
+            {"soru": "Vücut sıcaklığı normalde kaç derece olur?", "cevap": "Kitaba göre genellikle 36,5 °C ile 37,5 °C arasında olmalıdır. Ateşin çıkması vücudun hastalıklarla baş etme tepkisidir. (s. 185)"},
+            {"soru": "Yenilenebilir enerji ne demek?", "cevap": "Doğada kendiliğinden yenilenen, tükenmeyen, çevreye zarar vermeyen temiz enerji kaynaklarıdır: güneş, rüzgâr, su, jeotermal gibi. (s. 184)"},
+            {"soru": "Bir veri değişince her şey değişir mi?", "cevap": "Çoğu zaman evet. Enes'in iki günü değişince açıklık ve tepe değer değişti, ortalama da yükseldi. Ama bazen ortanca aynı kalabilir. (s. 188)"},
+            {"soru": "Çok farklı bir veri olursa hangi ölçü seçilir?", "cevap": "Bir veri ötekilerden çok büyük ya da çok küçükse ortalamayı kendine çeker. O zaman ortanca veriyi daha iyi temsil edebilir."},
+            {"soru": "Araştırma yanlış çıkarsa ne olur?", "cevap": "Sorun değil! Adımları gözden geçiririz, uygun olmayanı düzeltip araştırmayı yeniden planlarız. (s. 187)"}],
+        "dusunVeYaz": [{"soru": "Bir arkadaşın “Mehtap'ın ateşi ilaç sayesinde düştü.” diyor. Ona tabloya bakarak nasıl cevap verirsin?",
+                        "ornekCevap": "Tabloda sadece saatler ve sıcaklıklar var, ilaç bilgisi yok. Tabloya göre ateşin 12.00'den sonra düştüğünü söyleyebiliriz ama nedenini söyleyemeyiz. Yorumu verilere dayandırmalıyız.",
+                        "anahtarlar": ["tablo", "ilaç", "veri", "düş", "yorum"]}],
+        "sorular": [
+            S("Ayşe'nin 5 sınav notunun açıklığı 30, Burak'ın 5 sınav notunun açıklığı 6. Hangisi doğrudur?",
+              ["Burak'ın notları daha çok değişmiştir.", "Ayşe'nin notları daha çok değişmiştir.", "İkisinin notları aynı değişmiştir."], 1,
+              "Açıklığı büyük olan hangisi?", "Açıklığı 30 olan Ayşe'nin notları daha çok değişmiştir. (s. 184)", kavram="Değişkenliği Karşılaştırma"),
+            G("Ezgi'nin 5 günlük kitap okuma süreleri: 20, 35, 15, 40, 30 dakika. Açıklık kaç dakikadır?", "25", "En büyükten en küçüğü çıkar.",
+              "40 − 15 = 25 dakika.", birim="dakika", kavram="Değişkenliği Karşılaştırma",
+              yardim={"adimlar": ["En büyük süreyi bul.", "En küçük süreyi bul.", "Büyükten küçüğü çıkar."]}),
+            N("Veriler: 1, 3, 4, 6, 6. Ortancaya sayı doğrusunda dokun.", 4, {"min": 0, "max": 7},
+              "Sıralı. 5 veri var: 3. sıradaki?", "Ortadaki veri 4.", kavram="Ölçüleri Amacına Göre Kullan",
+              yardim={"adimlar": ["Veriler sıralı mı? Kontrol et.", "5 veri var: 3. sıradakini bul."]}),
+            G("Kaan'ın 5 günde okuduğu sayfa sayıları: 10, 12, 11, 30, 12. Ortanca kaç sayfadır?", "12", "Önce sırala.",
+              "Sıralı: 10, 11, 12, 12, 30. Ortadaki 12.", kavram="Ölçüleri Amacına Göre Kullan",
+              yardim={"adimlar": ["Sayıları küçükten büyüğe sırala.", "5 sayı var: 3. sıradakini bul."]}),
+            S("Kaan'ın sayfa sayıları: 10, 12, 11, 30, 12. Ortalama 15, ortanca 12. Hangisi bu veriyi daha iyi temsil eder?",
+              ["En büyük veri (30)", "Ortanca (12), çünkü çoğu gün 10–12 sayfa okunmuş.", "En küçük veri (10)"], 1,
+              "Kaan çoğu gün kaç sayfa okumuş? 30 diğerlerine benziyor mu?", "30 sayfa ötekilerden çok farklı ve ortalamayı yukarı çekiyor. Ortanca 12 çoğu günü daha iyi anlatır.", kavram="Ölçüleri Amacına Göre Kullan"),
+            S("Mehtap'ın sıcaklık tablosuna göre hangisi söylenebilir?",
+              ["Mehtap ilaç içmiştir.", "12.00'den 15.00'e ateşi düşmüştür.", "Mehtap'ın ateşi yarın çıkacaktır."], 1,
+              "Tabloda yalnızca ne var?", "Tabloda saat ve sıcaklık var: ateşin düştüğünü söyleyebiliriz, nedenini söyleyemeyiz. (s. 185)", svg=ates_svg(), kavram="Veriye Dayalı Yorum"),
+            G("Tabloya göre Mehtap'ın ateşi 11.00'den 15.00'e kaç °C düşmüştür?", "1,7", "11.00 ve 15.00 değerlerini oku.",
+              "39,2 − 37,5 = 1,7 °C. (s. 185)", denk=True, birim="°C", svg=ates_svg(), kavram="Veriye Dayalı Yorum",
+              yardim={"adimlar": ["Başlangıç: 11.00'deki sıcaklığı oku.", "Bitiş: 15.00'teki sıcaklığı oku.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]}),
+            N("Bir fidanın boyu her hafta 2 cm uzuyor: 4, 6, 8, 10 cm. Bu eğilim sürerse 5. hafta boyu kaç cm olabilir? Sayı doğrusunda dokun.", 12, {"min": 4, "max": 14},
+              "Her hafta kaç cm ekleniyor?", "10 + 2 = 12 cm olabilir. Tahmindir, kesin değildir.", kavram="Tahminin Sınırı",
+              yardim={"adimlar": ["Her hafta boy kaç cm artıyor?", "Son boya bu artışı ekle.", "Bulduğun sayıya dokun."]}),
+            S("Bir dükkânın satışları 4 gün art arda artmış. Hangisi en uygun yorumdur?",
+              ["Satışlar artmaya devam edebilir; kesin değildir.", "Satışlar kesinlikle hep artacak.", "Satışlar yarın kesinlikle sıfır olacak."], 0,
+              "Tahmin kesin mi?", "Eğilim artış; “devam edebilir” deriz. Tahmin kesin değildir.", kavram="Tahminin Sınırı"),
+            S("Bir araştırmanın adımları hangi sırayla ilerler?",
+              ["Sonuç → soru → veri → grafik", "Veri → sonuç → soru → grafik", "Soru → veri toplama → grafik ve özet → sonuç ve değerlendirme"], 2,
+              "İlk iş ne? Son iş ne?", "Önce soru, sonra veri, sonra grafik ve özet, en sonda sonuç ve değerlendirme. (s. 186–187)", kavram="Araştırma Döngüsü")]
+    }
+
+
+def u3k8():
+    return {
+        "id": "u3k8", "unite": T3, "baslik": "Araştırma Süreçlerini İnceleme", "sayfalar": "s. 190–191, 194–196",
+        "giris": "Araştırma yapmak kadar başkasının araştırmasını değerlendirmek de önemli. Bu konuda dedektif gibi çalışacağız: Örneklem doğru mu seçilmiş? Yorumlar verilerle uyuşuyor mu? Hataları bulup düzelteceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda evren-örneklem, araştırmanın adımları ve güvenilir kaynak bilgisini kullanacağız. Hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Evren ve örneklem", "sinif": "Konu 2", "svg": svg3_orneklem(),
+                 "anlatim": "Evren, araştırmanın ilgilendiği bütün gruptur. Örneklem, evrenden seçilen ve verisi toplanan küçük gruptur. Örneklem evreni temsil etmelidir.",
+                 "akilda": "Evren bütün, örneklem parça",
+                 "sorular": [
+                     S("“Okuldaki öğrencilerin uyku süreleri” araştırmasında 7/B sınıfı neyi oluşturur?", ["Evreni", "Örneklemi", "Araştırma sorusunu"], 1,
+                       "Bütün okul mu, bir parçası mı?", "7/B okulun bir parçasıdır: örneklem."),
+                     S("“Türkiye'deki göllerin su seviyesi” araştırmasında evren hangisidir?", ["Türkiye'deki bütün göller", "Yalnızca Burdur Gölü", "Göl kıyısındaki evler"], 0,
+                       "Araştırma hangi bütün grupla ilgileniyor?", "Evren, Türkiye'deki bütün göllerdir.")]},
+                {"ad": "Araştırmanın adımları", "sinif": "Konu 1", "svg": svg3_adimlar(),
+                 "anlatim": "İstatistiksel araştırma 4 adımda ilerler: araştırma sorusu belirleme, verileri toplama, verileri görselleştirme ve özetleme, verileri yorumlama.",
+                 "akilda": "Sor, topla, analiz et, yorumla",
+                 "sorular": [
+                     S("Araştırmanın ilk adımı hangisidir?", ["Verileri yorumlama", "Grafik çizme", "Araştırma sorusu belirleme"], 2,
+                       "Ne araştıracağını bilmeden veri toplanır mı?", "İlk adım araştırma sorusunu belirlemektir."),
+                     S("Grafik çizmek hangi adımın içindedir?", ["Verileri görselleştirme ve özetleme", "Araştırma sorusu belirleme", "Verileri toplama"], 0,
+                       "Grafik veriyi neye çevirir?", "Grafik, verileri görselleştirme ve özetleme adımındadır.")]},
+                {"ad": "Güvenilir kaynak", "sinif": "Konu 3", "svg": svg3_kaynak(),
+                 "anlatim": "Hazır verileri güvenilir kaynaklardan alırız: resmî kurumların siteleri, edu.tr, gov.tr, org.tr uzantılı adresler, ansiklopedi ve bilimsel kitaplar.",
+                 "akilda": "Kaynağı belli olsun",
+                 "sorular": [
+                     S("Hangisi daha güvenilir bir kaynaktır?", ["Kaynağı yazmayan bir sosyal medya paylaşımı", "gov.tr uzantılı resmî bir site", "Bir arkadaşın duyduğu haber"], 1,
+                       "Resmî kurum siteleri nasıl biter?", "gov.tr uzantılı resmî siteler güvenilir kaynaklardandır. (s. 191)"),
+                     S("“Su İçmek Zararlı!” başlıklı, kaynağı yazmayan bir haber için ne yapmalı?", ["Hemen paylaşmalı", "Güvenilir bir kaynaktan doğruluğunu kontrol etmeli", "Su içmeyi bırakmalı"], 1,
+                       "Kaynağı belli değilse ne yaparız?", "Kaynaksız habere güvenmeyiz; güvenilir kaynaktan kontrol ederiz.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Örneklemden Genellemek", "renk": "#2364c7", "svg": svg3_genelleme(),
+             "aciklama": "Örneklemden elde edilen sonuç, ancak örneklem evreni temsil ediyorsa bütün evrene genellenebilir. Tek bir sınıfa sorup “okulda en çok sevilen ders” denemez. (s. 190)",
+             "ek": "Fulya okulundaki öğrencilerin en sevdiği dersi merak ediyor, ama yalnızca 7/A'ya soruyor. Evren bütün okul, örneklem tek sınıf: okulu temsil etmiyor. (s. 190)",
+             "akilda": "Tek sınıf ≠ bütün okul",
+             "cozum": {"baslik": "Fulya'nın araştırması",
+                       "problem": "Fulya, 7/A'daki 40 öğrenciye “En sevdiğiniz ders nedir?” diye soruyor ve “Okulda en çok sevilen ders fen bilimleridir.” diyor.",
+                       "svg": fulya_svg(),
+                       "adimlar": [
+                           {"metin": "Evren ne?", "islem": "Gazi Ortaokulundaki tüm öğrenciler"},
+                           {"metin": "Örneklem ne?", "islem": "yalnızca 7/A"},
+                           {"metin": "Örneklem bütün sınıfları temsil ediyor mu?", "islem": "Hayır"},
+                           {"metin": "Yorumu düzelt.", "islem": "“7/A'da en çok sevilen ders fen bilimleri.”"}],
+                       "sonuc": "Sonuç ancak 7/A için söylenebilir. Okul için söylemek isteseydi bütün sınıflardan öğrencilere sormalıydı. (s. 190)"},
+             "soru": S("Mert, okuldaki öğrencilerin en sevdiği sporu bulmak için yalnızca basketbol takımına soruyor. Hangisi doğrudur?",
+                       ["Sonuç bütün okul için kesindir.", "Basketbol takımı evrendir.", "Örneklem okulu temsil etmez; sonuç bütün okula genellenemez."], 2,
+                       "Basketbol takımındakiler en çok hangi sporu sever?", "Basketbolcular basketbolu seçer; örneklem okulu temsil etmez. (s. 190)")},
+            {"ad": "Yorum Veriyle Uyuşmalı", "renk": "#1f9e8f", "svg": svg3_uyusma(),
+             "aciklama": "Bir yorumu söylemeden önce verilere tekrar bakarız. Sayılarla çelişen yorum hatalıdır. (s. 190)",
+             "ek": "Fulya “7/A'da sosyal bilgileri sevenler Türkçeyi sevenlerden fazla.” diyor. Ama notlarında sosyal bilgiler 6, Türkçe 8. Yorum verilerle çelişiyor. (s. 190)",
+             "akilda": "Önce sayıya bak",
+             "sende": {"baslik": "Sıra sende: Fulya'nın yorumlarını sına",
+                       "problem": "Fulya'nın notları: Fen 12 · İngilizce 4 · Matematik 10 · Sosyal 6 · Türkçe 8. (s. 190)",
+                       "svg": fulya_svg(),
+                       "adimlar": [
+                           {"metin": "Yorum 1: “Okulda en çok sevilen ders fen bilimleri.”",
+                            "soru": S("Bu yorum için hangisi doğrudur?", ["Doğru, çünkü 7/A'da en çok fen sevilmiş.", "Hatalı, çünkü yalnızca 7/A'ya soruldu.", "Hatalı, çünkü feni 4 kişi seviyor."], 1,
+                                      "Kime soruldu? Okulun hepsine mi?", "Yalnızca 7/A'ya soruldu; okul için genellenemez."),
+                            "islem": "7/A ≠ okul"},
+                           {"metin": "Yorum 2: “Sosyal bilgileri sevenler Türkçeyi sevenlerden fazla.”",
+                            "soru": G("Sosyal bilgileri seven kaç kişi?", "6", "Grafikte Sos sütununa bak.", "Sosyal bilgiler 6 kişi; Türkçe 8 kişi.",
+                                      yardim={"adimlar": ["Grafikte “Sos” sütununu bul.", "Sütunun ucundaki sayıyı oku."]}),
+                            "islem": "6 < 8 → yorum hatalı"}],
+                       "sonuc": "Harika! İki yorum da hatalı: biri örneklem yüzünden, öteki sayılarla çeliştiği için."},
+             "soru": S("Fulya'nın notlarına göre hangi yorum verilerle uyuşur?", ["İngilizceyi sevenler en azdır.", "Matematiği sevenler en çoktur.", "Türkçeyi 4 kişi sever."], 0,
+                       "Sayılara tek tek bak: en küçüğü hangisi?", "İngilizce 4 kişiyle en az sevilen derstir. (s. 190)")},
+            {"ad": "Eğilimi Doğru Söylemek", "renk": "#2f8f73", "svg": svg3_surekli_mi(),
+             "aciklama": "Çizgide arada çıkışlar varsa “sürekli azalıyor” demek doğru olmaz; “azalma eğiliminde” deriz. “Sürekli” her adımda azalma demektir. (s. 191, 195)",
+             "ek": "Kitapta Eren buz tabakaları grafiği için “sürekli azalıyor”, Sevgi de Burdur Gölü için “1973'ten itibaren sürekli azalıyor” diyor. Kitap bu yorumları grafiğe bakarak değerlendirmeni istiyor. (s. 191, 195)",
+             "akilda": "Sürekli mi, eğilim mi?",
+             "cozum": {"baslik": "“Sürekli azalıyor” denebilir mi?",
+                       "problem": "Bir gölün su seviyesi (örnek): 12,0 · 11,6 · 11,8 · 11,1 · 10,9 · 11,2 · 10,4 · 10,1 · 9,8 m.",
+                       "svg": gol_svg(),
+                       "adimlar": [
+                           {"metin": "İlk ve son değere bak.", "islem": "12,0 → 9,8: genel yön aşağı"},
+                           {"metin": "Her adıma bak: arada çıkış var mı?", "islem": "11,6 → 11,8 ↑ · 10,9 → 11,2 ↑"},
+                           {"metin": "Çıkış varsa “sürekli” denmez.", "islem": "azalma eğiliminde"}],
+                       "sonuc": "Doğru yorum: “Su seviyesi azalma eğiliminde.” Arada iki yıl artış olduğu için “sürekli azalıyor” denmez."},
+             "soru": S("Bir grafikte su tüketimi 5 gün art arda artıp 6. gün biraz düşüyor. “Su tüketimi sürekli artıyor.” yorumu için hangisi doğrudur?",
+                       ["Doğrudur.", "Hatalıdır; “artma eğiliminde” denmelidir.", "Grafikle ilgisi yoktur."], 1,
+                       "Bilgi kartı: Arada düşüş varsa “sürekli” denir mi?", "6. gün düşüş var: “sürekli” denmez, “artma eğiliminde” denir.")},
+            {"ad": "Kısa Aralıkla Genelleme", "renk": "#b7791f", "svg": svg3_kisa(),
+             "aciklama": "Bir grafiğin yalnızca küçük bir parçasına bakarak bütün yıllar hakkında genel yorum yapılmaz. Bütün grafiğe bakılır. (s. 191)",
+             "ek": "Kitapta buz tabakaları 1980–2020 arasında gösteriliyor ve soruluyor: Yalnızca 2000–2010'a bakarak genel bir yorum yapılabilir mi? Ece'nin 2040 tahmini de bütün grafiğin eğilimine dayanmalıdır. (s. 191)",
+             "akilda": "Bütün grafiğe bak",
+             "soru": S("Göl grafiğinde yalnızca 2020–2021'e bakan Can “Su seviyesi artıyor.” diyor. Hangisi doğrudur?",
+                       ["Can haklıdır; su seviyesi hep artıyor.", "Grafikte hiç artış yoktur.", "Bütün grafikte su seviyesi azalma eğiliminde; tek aralıktan genelleme yapılmaz."], 2,
+                       "Bütün grafiğe bak: ilk ve son değer?", "2020–2021 arasında küçük bir artış var ama 2016–2024 boyunca eğilim azalıştır. (s. 191)")},
+            {"ad": "Başka Yere Genelleme", "renk": "#7b4fc9", "svg": svg3_baska_yer(),
+             "aciklama": "Bir yer için toplanan veriler başka bir yer için geçerli sayılmaz. O yer hakkında yorum yapmak için oradan da veri toplanmalıdır. (s. 195)",
+             "ek": "Sevgi, Burdur Gölü'nün verilerine bakıp “Bu sonuçlar aynı bölgedeki Eğirdir Gölü için de geçerli.” diyor. Ama Eğirdir Gölü'nün verisi toplanmadı! (s. 195)",
+             "akilda": "Her yerin kendi verisi",
+             "soru": S("Ankara'nın 10 yıllık yağış verisi azalıyor. “İzmir'de de yağış azalıyor.” yorumu için hangisi doğrudur?",
+                       ["İzmir için ayrıca veri toplanmalıdır.", "Kesinlikle doğrudur.", "Ankara'nın verisi yanlıştır."], 0,
+                       "Bilgi kartı: Bir yerin verisi başka yer için geçerli mi?", "Ankara'nın verisi İzmir için kanıt değildir; İzmir'in verisine bakılmalıdır. (s. 195)")},
+            {"ad": "Gönüllülük ve Mahremiyet", "renk": "#c2255c", "svg": svg3_gonullu(),
+             "aciklama": "Anket yaparken katılım gönüllü olmalı, kişilerin mahremiyetine saygı gösterilmelidir. Yalnızca araştırma için gereken bilgi istenir; cevap vermek istemeyen zorlanmaz. (s. 196)",
+             "ek": "Oğuz sosyal medya kullanımını araştırırken bazı öğrenciler hangi hesapları takip ettiklerini söylemek istemedi. Bu onların hakkı. Kişisel veriler korunmazsa toplumda güven duygusu zedelenir. (s. 196)",
+             "akilda": "Gönüllü, isimsiz, gerekeni sor",
+             "soru": S("Hangisi kişisel verilerin gizliliğini korumak için doğru bir davranıştır?",
+                       ["Sosyal medya şifreni arkadaşına söylemek", "Güçlü ve tahmin edilmesi zor şifre kullanmak", "Güvenilmeyen sitelere adresini yazmak"], 1,
+                       "Hangisi bilgilerini başkalarından korur?", "Güçlü şifre, hesabını ve kişisel verilerini korur. (s. 196)")}
+        ],
+        "gruplar": [{"soru": "Hangi hata?", "kutular": [
+            {"etiket": "Kime soruldu? Nerede ölçüldü?", "uyeler": ["Örneklemden Genellemek", "Başka Yere Genelleme"]},
+            {"etiket": "Grafik ve sayılar", "uyeler": ["Yorum Veriyle Uyuşmalı", "Eğilimi Doğru Söylemek", "Kısa Aralıkla Genelleme"]},
+            {"etiket": "Etik", "uyeler": ["Gönüllülük ve Mahremiyet"]}]}],
+        "akildaKalsin": [
+            "Örneklem evreni temsil etmiyorsa sonuç evrene genellenmez.",
+            "Yorum söylemeden önce sayılara tekrar bak.",
+            "Arada çıkış varsa “sürekli azalıyor” denmez; “azalma eğiliminde” denir.",
+            "Grafiğin küçük bir parçasından genel yorum yapılmaz.",
+            "Bir yerin verisi başka bir yer için kanıt değildir.",
+            "Anket gönüllü olmalı; kişisel bilgiler korunmalı."],
+        "merakKutusu": [
+            {"soru": "Burdur Gölü küçülüyor mu?", "cevap": "Sevgi'nin okuduğu habere göre gölün yüzey alanı son 50 yılda yaklaşık %44 azalmış ve su seviyesindeki azalma sürüyor. (s. 195)"},
+            {"soru": "NSIDC ne demek?", "cevap": "Ulusal Kar ve Buz Verileri Merkezi. Ece buz tabakalarıyla ilgili güvenilir veriye bu merkezin sitesinden ulaştı. (s. 191)"},
+            {"soru": "Anketi isimsiz yapmak neden iyi?", "cevap": "İsim yazılmazsa kimin ne cevap verdiği bilinmez. İnsanlar daha rahat ve dürüst cevap verir, mahremiyetleri korunur."},
+            {"soru": "Bazıları cevap vermezse araştırma bozulur mu?", "cevap": "Sonuçlar etkilenebilir: Cevap vermeyenlerin bilgisi eksik kalır. Bunu araştırmanın sonunda not ederiz. Yine de kimse zorlanmaz. (s. 196)"},
+            {"soru": "Dedektif gibi hangi soruları sorarım?", "cevap": "Kime soruldu? Örneklem uygun mu? Kaynak güvenilir mi? Yorum sayılarla uyuşuyor mu? Bütün grafiğe bakıldı mı?"}],
+        "dusunVeYaz": [{"soru": "Fulya araştırmasını yeniden yapsa, okulda en çok sevilen dersi bulmak için ne değiştirmeli?",
+                        "ornekCevap": "Yalnızca 7/A'ya değil, okulun bütün sınıflarından öğrencilere sormalı. Böylece örneklem okulu temsil eder. Yorumlarını da sayılara bakarak yazmalı.",
+                        "anahtarlar": ["örneklem", "sınıf", "temsil", "okul", "sayı"]}],
+        "sorular": [
+            S("Bir araştırmacı Türkiye'deki öğrencilerin kitap okuma süresini araştırıyor ama yalnızca bir şehirdeki bir okula soruyor. Hangisi doğrudur?",
+              ["Örneklem Türkiye'yi temsil etmeyebilir; sonuç dikkatle genellenmelidir.", "Bu okul evrendir.", "Sonuç bütün Türkiye için kesindir."], 0,
+              "Bir okul bütün Türkiye'yi temsil eder mi?", "Tek okul Türkiye'deki bütün öğrencileri temsil etmeyebilir. (s. 190)", kavram="Örneklemden Genellemek"),
+            G("Fulya'nın grafiğine göre fen bilimlerini seven kaç kişi, matematiği sevenlerden fazladır?", "2", "Fen ve Mat sütunlarını oku.",
+              "12 − 10 = 2 kişi. (s. 190)", svg=fulya_svg(), kavram="Yorum Veriyle Uyuşmalı",
+              yardim={"adimlar": ["Fen sütununu oku.", "Mat sütununu oku.", "Büyükten küçüğü çıkar."]}),
+            N("Fulya'nın grafiğinde en az sevilen dersi seçen öğrenci sayısına sayı doğrusunda dokun.", 4, {"min": 0, "max": 12},
+              "En kısa sütun hangisi?", "En kısa sütun İngilizce: 4 kişi. (s. 190)", svg=fulya_svg(), kavram="Yorum Veriyle Uyuşmalı",
+              yardim={"adimlar": ["En kısa sütunu bul.", "Ucundaki sayıyı oku.", "O sayıya dokun."]}),
+            N("Fulya “Sosyal bilgileri sevenler Türkçeyi sevenlerden fazla.” dedi. Türkçeyi seven öğrenci sayısına sayı doğrusunda dokun.", 8, {"min": 0, "max": 12},
+              "Tür sütununa bak.", "Türkçeyi 8 kişi seviyor; sosyal bilgileri 6. Yorum hatalı. (s. 190)", svg=fulya_svg(), kavram="Yorum Veriyle Uyuşmalı",
+              yardim={"adimlar": ["“Tür” sütununu bul.", "Ucundaki sayıyı oku.", "O sayıya dokun."]}),
+            S("Ali'nin günlük adım sayısı 6 gün art arda artıp 7. gün biraz düşmüş. Hangisi en doğru yorumdur?",
+              ["Adım sayısı sürekli artmıştır.", "Adım sayısı artma eğilimindedir.", "Adım sayısı hiç değişmemiştir."], 1,
+              "Arada düşüş varsa “sürekli” denir mi?", "7. gün düşüş var; doğru yorum “artma eğiliminde”.", kavram="Eğilimi Doğru Söylemek"),
+            S("Göl grafiğine göre hangisi doğrudur?",
+              ["Su seviyesi her yıl azalmıştır.", "Su seviyesi hiç değişmemiştir.", "Su seviyesi azalma eğilimindedir ama bazı yıllar artmıştır."], 2,
+              "Her yıla tek tek bak: hiç artış var mı?", "2018 ve 2021'de küçük artışlar var; genel eğilim azalış.", svg=gol_svg(), kavram="Eğilimi Doğru Söylemek"),
+            G("Göl grafiğine göre 2016'dan 2024'e su seviyesi kaç metre azalmıştır?", "2,2", "İlk ve son değeri oku.",
+              "12,0 − 9,8 = 2,2 m.", denk=True, birim="m", svg=gol_svg(), kavram="Kısa Aralıkla Genelleme",
+              yardim={"adimlar": ["2016'daki değeri oku.", "2024'teki değeri oku.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]}),
+            S("Bir sporcunun 10 yıllık sonuçları genel olarak iyileşiyor; yalnızca bir yıl kötüleşmiş. O tek yıla bakıp “Sporcu kötüleşiyor.” demek için hangisi doğrudur?",
+              ["Doğrudur, bir yıl yeterlidir.", "Hatalıdır; bütün yıllara bakılmalıdır.", "Sporcu hiç değişmemiştir."], 1,
+              "Bütün grafiğe mi, bir parçasına mı bakılmalı?", "Tek yıldan genel yorum yapılmaz; 10 yılın eğilimi iyileşme. (s. 191)", kavram="Kısa Aralıkla Genelleme"),
+            S("Burdur Gölü'nün verilerine bakan Sevgi “Eğirdir Gölü'nde de aynısı oluyor.” diyor. Hangisi doğrudur?",
+              ["Sevgi haklıdır, iki göl aynı bölgededir.", "Burdur Gölü'nün verisi yanlıştır.", "Eğirdir Gölü için ayrıca veri toplanmalıdır."], 2,
+              "Eğirdir Gölü'nün verisi toplandı mı?", "Bir gölün verisi başka göl için kanıt değildir. (s. 195)", kavram="Başka Yere Genelleme"),
+            S("Oğuz'un anketinde bazı öğrenciler hangi uygulamaları kullandığını söylemek istemedi. Oğuz ne yapmalı?",
+              ["Katılımın gönüllü olduğunu söyleyip anketi isimsiz yapmalı", "Cevap vermeye zorlamalı", "Adlarını listeye yazıp herkesle paylaşmalı"], 0,
+              "Katılım zorunlu mu, gönüllü mü?", "Katılım gönüllüdür; isimsiz anket mahremiyeti korur. (s. 196)", kavram="Gönüllülük ve Mahremiyet")]
+    }
+
+
+def u3t3():
+    return {
+        "id": "u3t3", "tur": "tarama", "unite": T3,
+        "baslik": "Ara Durak 3: Yayılım ve Yorum", "sayfalar": "Konu 6–7 · s. 180–189",
+        "giris": "Yayılım ölçülerini ve dağılımı yorumlamayı bitirdin, tebrikler! Kısa bir mola verip ikisini birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+        "buyukResim": "Önce verilerin merkezin etrafında ne kadar dağıldığını ölçtük: açıklık ve ortalama mutlak sapma. Sonra bu ölçüleri merkez ölçüleriyle birlikte kullanıp veriyi yorumladık: Hangisi daha çok değişiyor, hangi temsil değeri uygun, yorum verilere dayanıyor mu?",
+        "kapsar": ["u3k6", "u3k7"],
+        "hatirla": [
+            {"konu": "u3k6", "maddeler": [
+                "Açıklık = en büyük − en küçük.",
+                "Ortalama mutlak sapma: ortalama → uzaklıklar → topla ÷ veri sayısı.",
+                "Yayılım küçükse istikrarlı, büyükse dalgalı."]},
+            {"konu": "u3k7", "maddeler": [
+                "Daha çok değişen veri, yayılımı büyük olandır.",
+                "Yorum yalnızca verilere dayanır; tabloda olmayan bilgiyle yorum yapılmaz.",
+                "Tahmin eğilime dayanır ama kesin değildir."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Hangisiyle ilgili?", "kutular": [
+            {"etiket": "Yayılımı ölçmek", "uyeler": ["Açıklık", "Ortalama Mutlak Sapma", "Ortalamadan Uzaklık"]},
+            {"etiket": "Dikkatli yorum", "uyeler": ["Veriye Dayalı Yorum", "Tahminin Sınırı", "İstikrarlı ve Dalgalı"]}]}],
+        "sorular": [
+            G("Mehtap'ın vücut sıcaklıkları: 39,2 · 39,4 · 38,7 · 38,1 · 37,5 °C. Açıklık kaç °C?", "1,9", "En büyükten en küçüğü çıkar.",
+              "En büyük 39,4, en küçük 37,5: 39,4 − 37,5 = 1,9 °C. (s. 185)", denk=True, birim="°C", svg=ates_svg(),
+              kaynak=[K("u3k6", "Açıklık"), K("u3k7", "Değişkenliği Karşılaştırma")],
+              yardim={"adimlar": ["En büyük sıcaklığı bul.", "En küçük sıcaklığı bul.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]}),
+            G("Bir koşucunun 4 günlük koşusu: 2, 4, 4, 6 km. Ortalama 4 km. Ortalama mutlak sapma kaçtır?", "1", "Uzaklıkları bul, topla, 4'e böl.",
+              "Uzaklıklar 2, 0, 0, 2; toplam 4; 4 ÷ 4 = 1. Sapma küçük: koşucu istikrarlı.",
+              kaynak=[K("u3k6", "Ortalama Mutlak Sapma"), K("u3k7", "Ölçüleri Amacına Göre Kullan")],
+              yardim={"adimlar": ["Her verinin 4'ten uzaklığını bul.", "Uzaklıkları topla.", "Toplamı veri sayısına böl."]}),
+            N("Veriler: 3, 5, 7, 9. Ortalama 6. Ortalamadan en uzak verinin uzaklığına sayı doğrusunda dokun.", 3, {"min": 0, "max": 6},
+              "En uçtaki veriler hangileri?", "3 ve 9, 6'dan 3'er birim uzakta.",
+              kaynak=[K("u3k6", "Ortalamadan Uzaklık"), K("u3k7", "Değişkenliği Karşılaştırma")],
+              yardim={"adimlar": ["Her verinin 6'dan uzaklığını bul.", "En büyük uzaklığı seç.", "O sayıya dokun."]}),
+            S("İki sınıfın matematik not ortalaması 70. A sınıfında ortalama mutlak sapma 3, B sınıfında 12. Hangisi doğrudur?",
+              ["A sınıfının notları birbirine daha yakındır.", "B sınıfının notları birbirine daha yakındır.", "Ortalamalar aynı olduğu için bir şey söylenemez."], 0,
+              "Sapma küçükse notlar nasıldır?", "Sapması küçük olan A sınıfında notlar birbirine yakın, istikrarlı.",
+              kaynak=[K("u3k6", "Merkez ve Yayılım Birlikte"), K("u3k7", "Değişkenliği Karşılaştırma")]),
+            S("Mehtap'ın ateşinin açıklığı 1,9 °C. Kıvanç “Ateş ilaç yüzünden düştü.” diyor. Hangisi doğrudur?",
+              ["Açıklık bunu kanıtlar.", "Tabloda ilaç bilgisi yok; bu yorum verilerle yapılamaz.", "Ateş hiç değişmemiştir."], 1,
+              "Açıklık neyi gösterir? Tabloda ilaç var mı?", "Açıklık yalnızca ne kadar değiştiğini gösterir; nedenini söylemez. (s. 185)", svg=ates_svg(),
+              kaynak=[K("u3k7", "Veriye Dayalı Yorum"), K("u3k6", "Açıklık")]),
+            S("Yasemin'in maçlarda aldığı sayıların ortalaması 17, ortalama mutlak sapması 1,2. Bir sonraki maç için en uygun tahmin hangisi?",
+              ["Kesinlikle 40 sayı alacak.", "Kesinlikle hiç sayı alamayacak.", "17 civarında sayı alabilir."], 2,
+              "Yasemin istikrarlı mı, dalgalı mı? Tahmin kesin olur mu?", "Yasemin istikrarlı: sayıları 15–19 arasında. 17 civarı bir tahmin uygundur, kesin değildir.", svg=yasemin_svg(),
+              kaynak=[K("u3k6", "İstikrarlı ve Dalgalı"), K("u3k7", "Tahminin Sınırı")]),
+            S("Okul kantini öğrencilerin günlük harcamalarını araştırıyor. Verileri özetlerken hangisi kullanılmalı?",
+              ["Ortalama gibi bir merkez ölçüsü ve açıklık gibi bir yayılım ölçüsü", "Yalnızca en büyük veri", "Yalnızca öğrencilerin adları"], 0,
+              "Merkez ve yayılım birlikte mi kullanılır?", "Merkez ölçüsü tipik harcamayı, yayılım ölçüsü ne kadar değiştiğini söyler. (s. 185)",
+              kaynak=[K("u3k7", "Araştırma Döngüsü"), K("u3k6", "Merkez ve Yayılım Birlikte")])]
+    }
+
+
+def u3t4():
+    return {
+        "id": "u3t4", "tur": "tarama", "unite": T3,
+        "baslik": "Tema Sonu Taraması", "sayfalar": "Konu 1–8 · s. 159–200",
+        "giris": "Üçüncü temanın sonuna geldin, tebrikler! Şimdi 8 konuyu birlikte gözden geçireceğiz. Önce kısa özetleri oku ve kartları çevir. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": "Bu temada bir istatistik araştırmasının bütün yolunu yürüdük. Önce soru sorduk, evren ve örneklem seçtik, verileri güvenilir yollarla ve kişisel verileri koruyarak topladık. Sonra verileri grafiğe çevirdik ve tek bir sayıyla özetledik. Verilerin ne kadar dağıldığını ölçtük, yorum yaptık. En sonunda başkalarının araştırmalarındaki hataları bulduk.",
+        "kapsar": ["u3k1", "u3k2", "u3k3", "u3k4", "u3k5", "u3k6", "u3k7", "u3k8"],
+        "hatirla": [
+            {"konu": "u3k1", "maddeler": ["Sözcük: kategorik; sayarak: kesikli; ölçerek: sürekli veri.", "Araştırma: sor, topla, analiz et, yorumla.", "Nicel veri sayıyla ifade edilir."]},
+            {"konu": "u3k2", "maddeler": ["Araştırma sorusu net ve veriyle cevaplanabilir olmalı.", "Evren bütün grup, örneklem seçilen parça.", "Örneklem evreni temsil etmeli."]},
+            {"konu": "u3k3", "maddeler": ["Anket sorusu açık ve tarafsız olmalı.", "Hazır veriyi güvenilir kaynaktan al.", "Kişisel veriler izinsiz paylaşılmaz (KVKK)."]},
+            {"konu": "u3k4", "maddeler": ["Nokta grafiği: aynı değerler üst üste yığılır.", "Çizgi grafiği: zamana göre değişim.", "Çizgi yukarı artış, aşağı azalış, düz sabit."]},
+            {"konu": "u3k5", "maddeler": ["Eğilim genel yöndür; tahmin “… olabilir” diye yapılır.", "Temsil değeri veri setini tek sayıyla özetler.", "İddia, ölçülerle karşılaştırılarak sınanır."]},
+            {"konu": "u3k6", "maddeler": ["Açıklık = en büyük − en küçük.", "Ortalama mutlak sapma = uzaklıkların ortalaması.", "Yayılım küçükse istikrarlı, büyükse dalgalı."]},
+            {"konu": "u3k7", "maddeler": ["Merkez ve yayılım ölçüleri birlikte kullanılır.", "Tabloda olmayan bilgiyle yorum yapılmaz.", "Araştırmanın sonunda adımlar değerlendirilir."]},
+            {"konu": "u3k8", "maddeler": ["Örneklem evreni temsil etmiyorsa genelleme yapılmaz.", "Arada çıkış varsa “sürekli” denmez, “eğilim” denir.", "Bir yerin verisi başka yer için kanıt değildir."]}],
+        "eskiSoru": 6,
+        "oyunKavram": 10,
+        "gruplar": [{"soru": "Araştırmanın hangi adımı?", "kutular": [
+            {"etiket": "Soru ve plan", "uyeler": ["Araştırma Sorusu", "Evren", "Örneklem", "Anket Sorusu"]},
+            {"etiket": "Göster ve özetle", "uyeler": ["Çizgi Grafiği", "Nokta Grafiği", "Temsil Değeri", "Açıklık"]},
+            {"etiket": "Yorumla ve değerlendir", "uyeler": ["Eğilim", "Veriye Dayalı Yorum", "Örneklemden Genellemek"]}]}],
+        "sorular": [
+            S("Sekiz öğrencinin netleri: 6, 9, 9, 11, 15, 18, 18, 18. Aşağıdaki değerlerden hangisi yanlış hesaplanmıştır?",
+              ["Tepe değer = 18", "Açıklık = 12", "Aritmetik ortalama = 14"], 2,
+              "Her birini kontrol et: en çok tekrar eden, en büyük − en küçük, toplam ÷ 8.",
+              "Tepe değer 18 ✓, açıklık 18 − 6 = 12 ✓. Toplam 104; 104 ÷ 8 = 13. Ortalama 14 değil, 13'tür.",
+              kaynak=[K("u3k5", "Temsil Değeri"), K("u3k6", "Açıklık")]),
+            G("Aynı netlerin (6, 9, 9, 11, 15, 18, 18, 18) ortancası kaçtır?", "13", "8 veri var: ortadaki iki sayının ortalaması.",
+              "4. ve 5. veriler 11 ve 15: (11 + 15) ÷ 2 = 13.",
+              kaynak=[K("u3k5", "Temsil Değeri"), K("u3k1", "Nicel Veri")],
+              yardim={"adimlar": ["Veriler sıralı mı? Kontrol et.", "8 veri var: 4. ve 5. sıradakileri bul.", "İkisini topla ve 2'ye böl."]}),
+            S("Ali, Türkiye'deki tünellerin uzunluklarını araştırıyor ama yalnızca Karadeniz Bölgesi'ndeki tünelleri inceliyor. Hangisi doğrudur?",
+              ["Evren Karadeniz'deki tüneller, örneklem Türkiye'deki tünellerdir.", "Evren Türkiye'deki tüneller, örneklem Karadeniz'deki tünellerdir; sonuç bütün Türkiye'ye dikkatle genellenmelidir.", "Tünel uzunluğu kategorik veridir."], 1,
+              "Bütün grup hangisi, seçilen parça hangisi?", "Evren Türkiye'deki bütün tüneller, örneklem Karadeniz'dekiler. Tek bölge bütün ülkeyi temsil etmeyebilir. (s. 197)",
+              kaynak=[K("u3k2", "Örneklem"), K("u3k8", "Örneklemden Genellemek")]),
+            S("Bir parkuru Alp 1,20 ile 2,56 saat arasında, Esin 1,33 ile 1,42 saat arasında tamamlamış. Hangisi doğrudur?",
+              ["Alp'in süreleri daha istikrarlıdır.", "İkisinin açıklığı eşittir.", "Esin'in süreleri daha istikrarlıdır."], 2,
+              "Kimin süreleri daha dar bir aralıkta?", "Esin'in açıklığı çok küçük: süreleri birbirine yakın, istikrarlı. (s. 198)",
+              kaynak=[K("u3k6", "İstikrarlı ve Dalgalı"), K("u3k7", "Değişkenliği Karşılaştırma")]),
+            G("Esin'in en kısa süresi 1,33, en uzun süresi 1,42 saat. Açıklık kaç saattir?", "0,09", "En büyükten en küçüğü çıkar.",
+              "1,42 − 1,33 = 0,09 saat. (s. 198)", denk=True,
+              kaynak=[K("u3k6", "Açıklık"), K("u3k1", "Sürekli Veri")],
+              yardim={"adimlar": ["En büyük ve en küçük süreyi yaz.", "Büyükten küçüğü çıkar; virgülleri alt alta yaz."]}),
+            N("Doktor günde en az 2 L su içilmesini öneriyor. Emre'nin 5 günde içtiği su: 2, 3, 2, 1, 2 L. Referans değerinin altında kaldığı gün sayısına sayı doğrusunda dokun.", 1, {"min": 0, "max": 5},
+              "2'den az olan değerleri say.", "Yalnızca 1 L içtiği gün 2'nin altında: 1 gün.",
+              kaynak=[K("u3k5", "Referans Değeri"), K("u3k7", "Veriye Dayalı Yorum")],
+              yardim={"adimlar": ["Her değeri 2 ile karşılaştır.", "2'den küçük olanları say.", "O sayıya dokun."]}),
+            S("Bade odasının sıcaklığını bir hafta boyunca her gün aynı saatte ölçtü. Hangisi doğrudur?",
+              ["Sıcaklık kategorik veridir.", "Günlere göre değişimi göstermek için çizgi grafiği uygundur.", "Daire grafiği en uygun grafiktir."], 1,
+              "Sıcaklık ölçülür mü, sayılır mı? Zamanla değişim hangi grafikte?", "Sıcaklık sürekli veridir; günlere göre değişim çizgi grafiğiyle gösterilir. (s. 199)",
+              kaynak=[K("u3k4", "Hangi Grafik?"), K("u3k1", "Sürekli Veri")]),
+            S("Sınıfın mesajlaşma grubunda bir öğrenci, arkadaşının sınav notunu izinsiz paylaştı. Hangisi doğrudur?",
+              ["Not bir kişisel veridir; izinsiz paylaşmak mahremiyeti ihlal eder.", "Not herkesi ilgilendirir, paylaşılabilir.", "Mahremiyet yalnızca sosyal medyada vardır."], 0,
+              "Sınav notu kime aittir?", "Sınav notu kişisel veridir; izinsiz paylaşılmaz. Mahremiyet günlük hayatta da vardır. (s. 199)",
+              kaynak=[K("u3k3", "Kişisel Veri"), K("u3k8", "Gönüllülük ve Mahremiyet")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4, u3t1, u3t2, u3t3, u3t4]
 KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5, u2k6, u2k7, u2k8,
-           u3k1, u3k2, u3k3, u3k4, u3k5] + TARAMALAR
+           u3k1, u3k2, u3k3, u3k4, u3k5, u3k6, u3k7, u3k8] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
