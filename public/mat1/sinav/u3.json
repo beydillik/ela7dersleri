@@ -1,0 +1,350 @@
+{
+ "unite": 3,
+ "ders": "mat1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "m3-01",
+   "konu": "u3k1",
+   "kavram": "Kesikli Veri",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "Kardeş sayısı kesikli veridir.",
+     "d": true
+    },
+    {
+     "s": "Boy uzunluğu kesikli veridir.",
+     "d": false
+    },
+    {
+     "s": "Vücut sıcaklığı sürekli veridir.",
+     "d": true
+    },
+    {
+     "s": "En sevilen renk nicel veridir.",
+     "d": false
+    }
+   ],
+   "aciklama": "Boy ölçülür: sürekli. Renk sözcüktür: kategorik (s. 159–164)."
+  },
+  {
+   "id": "m3-02",
+   "konu": "u3k1",
+   "kavram": "Nicel Veri",
+   "tur": "eslestir",
+   "soru": "Her veriyi türüyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Göz rengi",
+     "sag": "Kategorik veri"
+    },
+    {
+     "sol": "Okuldaki öğrenci sayısı",
+     "sag": "Kesikli veri"
+    },
+    {
+     "sol": "Aylık yağış miktarı",
+     "sag": "Sürekli veri"
+    }
+   ],
+   "aciklama": "Sözcük: kategorik. Sayarak bulunan: kesikli. Ölçerek bulunan: sürekli (s. 159–164)."
+  },
+  {
+   "id": "m3-03",
+   "konu": "u3k1",
+   "kavram": "Sürekli Veri",
+   "tur": "secim",
+   "soru": "Veri türleriyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Nicel veriler sayısal olarak ifade edilir.",
+    "Sürekli veri iki ölçüm arasında sınırsız değer alabilir.",
+    "Atılan gol sayısı sürekli veridir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Goller sayılır; 1,5 gol olmaz: gol sayısı kesiklidir (s. 159–164)."
+  },
+  {
+   "id": "m3-04",
+   "konu": "u3k1",
+   "kavram": "Kategorik Veri",
+   "tur": "bosluk",
+   "cumleler": [
+    {
+     "c": "Sözcükle ifade edilen veriye ___ veri denir.",
+     "cevap": "kategorik"
+    },
+    {
+     "c": "İki değer arasında başka değer alamayan veriye ___ veri denir.",
+     "cevap": "kesikli"
+    },
+    {
+     "c": "İki ölçüm arasında sınırsız değer alabilen veriye ___ veri denir.",
+     "cevap": "sürekli"
+    }
+   ],
+   "havuz": [
+    "nicel",
+    "örneklem"
+   ],
+   "aciklama": "Sözcük: kategorik. Arada değer yok: kesikli. Arada değer var: sürekli (s. 159–164)."
+  },
+  {
+   "id": "m3-05",
+   "konu": "u3k1",
+   "kavram": "Araştırmanın 4 Adımı",
+   "tur": "secim",
+   "soru": "İstatistiksel araştırmanın adımları sırasıyla hangisidir?",
+   "secenekler": [
+    "Soru → Toplama → Analiz → Yorum",
+    "Toplama → Soru → Yorum → Analiz",
+    "Analiz → Soru → Toplama → Yorum",
+    "Soru → Analiz → Toplama → Yorum"
+   ],
+   "dogru": 0,
+   "aciklama": "Sor, topla, analiz et, yorumla (s. 159–164)."
+  },
+  {
+   "id": "m3-06",
+   "konu": "u3k1",
+   "kavram": "Sürekli Veri",
+   "tur": "kisa",
+   "soru": "Boy uzunluğu, kardeş sayısı, vücut sıcaklığı, ürün fiyatı, okuldaki sınıf sayısı: Bunlardan kaç tanesi sürekli veridir?",
+   "yanit": "3",
+   "sayi": true,
+   "aciklama": "Boy, vücut sıcaklığı ve fiyat süreklidir; kardeş ve sınıf sayısı kesiklidir (s. 159–164)."
+  },
+  {
+   "id": "m3-07",
+   "konu": "u3k2",
+   "kavram": "Örneklem",
+   "tur": "dy",
+   "ifade": "Örneklem, evrenden daha büyük bir gruptur.",
+   "dogru": false,
+   "duzeltme": "Örneklem, evreni temsil eden daha küçük bir gruptur.",
+   "aciklama": "Evren en geniş gruptur; örneklem onun içinden seçilir (s. 165–168)."
+  },
+  {
+   "id": "m3-08",
+   "konu": "u3k2",
+   "kavram": "Örneklem Evreni Temsil Etmeli",
+   "tur": "secim",
+   "soru": "“Antalya'daki ortaokul öğrencilerinin günlük ekran süreleri nasıl bir eğilim gösterir?” sorusu için hangisi uygun bir örneklemdir?",
+   "secenekler": [
+    "Antalya'nın farklı ilçelerindeki okullardan seçilen öğrenciler",
+    "Bir okulun oyun kulübü üyeleri",
+    "İstanbul'daki bir okulun öğrencileri",
+    "Sadece öğretmenler"
+   ],
+   "dogru": 0,
+   "aciklama": "Örneklem evrenin içinde olmalı ve ona benzemeli (s. 165–168)."
+  },
+  {
+   "id": "m3-09",
+   "konu": "u3k2",
+   "kavram": "Evren",
+   "tur": "eslestir",
+   "soru": "Her kavramı anlamıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Evren",
+     "sag": "Verilerin toplanabileceği en geniş grup"
+    },
+    {
+     "sol": "Örneklem",
+     "sag": "Evreni temsil eden küçük grup"
+    },
+    {
+     "sol": "Değişebilirlik",
+     "sag": "Verilerin kişiden kişiye farklı olması"
+    },
+    {
+     "sol": "Araştırma sorusu",
+     "sag": "Grubun verileriyle cevaplanan soru"
+    }
+   ],
+   "aciklama": "Evren en geniş grup, örneklem onu temsil eden küçük grup (s. 165–168)."
+  },
+  {
+   "id": "m3-10",
+   "konu": "u3k2",
+   "kavram": "İyi Araştırma Sorusu",
+   "tur": "secim",
+   "soru": "Defne su tüketimini araştırmak için şu soruları yazdı.",
+   "onculler": [
+    "Su içmeyi sever misiniz?",
+    "7/A sınıfı öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?",
+    "7/A'daki kız ve erkek öğrencilerin günlük su tüketimlerinin eğilimi nasıl değişmektedir?"
+   ],
+   "kok": "Bunlardan hangileri araştırma sorusu olarak uygundur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "I. sorunun cevabı evet/hayır; ne ölçüleceği belli değil (s. 165–168)."
+  },
+  {
+   "id": "m3-11",
+   "konu": "u3k2",
+   "kavram": "Değişebilirlik",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "Evrenin tamamından veri toplamak her zaman kolaydır.",
+     "d": false
+    },
+    {
+     "s": "Kalp ritmi kişinin yaşına göre değişebilir.",
+     "d": true
+    },
+    {
+     "s": "TÜİK bazı araştırmalarda evrenin tamamına hazır verilerle ulaşabilir.",
+     "d": true
+    }
+   ],
+   "aciklama": "Evrene ulaşmak çoğu zaman zor ve pahalıdır; bu yüzden örneklem seçilir (s. 165–168)."
+  },
+  {
+   "id": "m3-12",
+   "konu": "u3k2",
+   "kavram": "Evren",
+   "tur": "kisa",
+   "soru": "Araştırma sorusuna yönelik verilerin toplanabileceği en geniş gruba ne denir?",
+   "yanit": "evren",
+   "aciklama": "En geniş grup evrendir (s. 165–168)."
+  },
+  {
+   "id": "m3-13",
+   "konu": "u3k3",
+   "kavram": "Kişisel Veri",
+   "tur": "secim",
+   "soru": "Hangisinin cevabı kişisel veri içermez?",
+   "secenekler": [
+    "Ev adresiniz nedir?",
+    "Banka hesabınızda ne kadar para var?",
+    "Bir haftada kaç gün vardır?",
+    "Boyunuz kaç metredir?"
+   ],
+   "dogru": 2,
+   "aciklama": "Adres, banka ve boy bilgisi kişiye aittir (s. 169–170, 192–193)."
+  },
+  {
+   "id": "m3-14",
+   "konu": "u3k3",
+   "kavram": "İzin ve Gizlilik",
+   "tur": "dy",
+   "ifade": "Anket verileri izin alınmadan başkalarıyla paylaşılabilir.",
+   "dogru": false,
+   "duzeltme": "Anket verileri izin alınmadan paylaşılmaz.",
+   "aciklama": "İzinsiz paylaşmak kişisel verilerin gizliliğini ihlal eder (s. 169–170, 192–193)."
+  },
+  {
+   "id": "m3-15",
+   "konu": "u3k3",
+   "kavram": "Anket Sorusu",
+   "tur": "bosluk",
+   "cumleler": [
+    {
+     "c": "Örneklemdeki her kişiye tek tek sorulan soruya ___ sorusu denir.",
+     "cevap": "anket"
+    },
+    {
+     "c": "Hazır verileri resmî kurumlar gibi ___ kaynaklardan alırız.",
+     "cevap": "güvenilir"
+    },
+    {
+     "c": "Kişisel verilerin korunmasıyla ilgili temel kanunun kısa adı ___ olarak yazılır.",
+     "cevap": "KVKK"
+    }
+   ],
+   "havuz": [
+    "TÜİK",
+    "rastgele"
+   ],
+   "aciklama": "Anket sorusu kişiye sorulur; KVKK kişisel verileri korur (s. 169–170, 192–193)."
+  },
+  {
+   "id": "m3-16",
+   "konu": "u3k3",
+   "kavram": "İzin ve Gizlilik",
+   "tur": "secim",
+   "soru": "Kişisel verileri korumak için aşağıdaki davranışlar verilmiştir.",
+   "onculler": [
+    "Paylaşmadan önce bilgilerin kimlere görüneceğini kontrol etmek",
+    "İzin metnini okumadan “Tüm izinleri kabul ediyorum.” demek",
+    "Sosyal medya hesabını herkese açık değil, gizli yapmak"
+   ],
+   "kok": "Bunlardan hangileri doğru davranıştır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "İzin metni okunmadan onaylanmamalıdır (s. 169–170, 192–193)."
+  },
+  {
+   "id": "m3-17",
+   "konu": "u3k3",
+   "kavram": "Veri Toplama Planı",
+   "tur": "eslestir",
+   "soru": "Veri toplama planındaki her soruyu uygun cevapla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Nerede?",
+     "sag": "Sınıfta"
+    },
+    {
+     "sol": "Ne zaman?",
+     "sag": "Salı günü ilk derste"
+    },
+    {
+     "sol": "Nasıl?",
+     "sag": "Mezurayla ölçerek"
+    },
+    {
+     "sol": "Nasıl kaydedilecek?",
+     "sag": "Tabloya yazarak"
+    }
+   ],
+   "aciklama": "Plan: nerede, ne zaman, nasıl toplanacak ve nasıl kaydedilecek (s. 169–170, 192–193)."
+  },
+  {
+   "id": "m3-18",
+   "konu": "u3k3",
+   "kavram": "Güvenilir Kaynak",
+   "tur": "secim",
+   "soru": "Mustafa Bey orman yangını verilerine güvenilir bir adresten ulaşmak istiyor. Hangisi en uygundur?",
+   "secenekler": [
+    "Uzantısı gov.tr olan resmî kurum sitesi",
+    "Kaynağı yazmayan bir paylaşım",
+    "Bir forumdaki yorum",
+    "Bir arkadaşının tahmini"
+   ],
+   "dogru": 0,
+   "aciklama": "gov.tr, edu.tr, org.tr uzantılı resmî adresler güvenilirdir (s. 169–170, 192–193)."
+  },
+  {
+   "id": "m3-19",
+   "konu": "u3k3",
+   "kavram": "KVKK",
+   "tur": "dy",
+   "ifade": "KVKK'nin amacı kişilerin özel hayatının gizliliğini korumaktır.",
+   "dogru": true,
+   "aciklama": "KVKK özel hayatın gizliliğini, temel hak ve özgürlükleri korur (s. 169–170, 192–193)."
+  }
+ ]
+}

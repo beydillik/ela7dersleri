@@ -1,0 +1,481 @@
+{
+ "id": "u3k3",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Veri Toplama ve Kişisel Veriler",
+ "sayfalar": "s. 169–170, 192–193",
+ "giris": "Araştırma sorusu ve örneklem hazır. Şimdi verileri toplama zamanı! Bu konuda anket sorusu yazmayı, plan yapmayı ve güvenilir kaynak seçmeyi öğreneceğiz. Kişisel verileri nasıl koruyacağımızı da konuşacağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu önceki konunun devamı. Araştırma sorusunu, evreni ve örneklemi hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Araştırma sorusu",
+    "sinif": "3. tema, 2. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='52' fill='#f2c14e'>?</text><circle cx='20' cy='92' r='7' fill='#4fc3a1'/><circle cx='40' cy='92' r='7' fill='#4fc3a1'/><circle cx='60' cy='92' r='7' fill='#4fc3a1'/><circle cx='80' cy='92' r='7' fill='#4fc3a1'/><circle cx='100' cy='92' r='7' fill='#4fc3a1'/><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>bütün grup</text></svg>",
+    "anlatim": "Araştırma sorusu bir grubun verileriyle cevaplanır. Çoğu zaman “… eğilimi nasıldır?” diye yazılır.",
+    "akilda": "Grubun verisiyle cevaplanır",
+    "sorular": [
+     {
+      "soru": "Hangisi bir araştırma sorusudur?",
+      "secenekler": [
+       "Kitap okumayı sever misin?",
+       "7/A öğrencilerinin haftalık kitap okuma sürelerinin eğilimi nasıldır?",
+       "Dün kitap okudun mu?"
+      ],
+      "dogru": 1,
+      "ipucu": "Grubun verisiyle cevaplanan soruyu bul.",
+      "aciklama": "Bu soru bütün sınıfın verileriyle cevaplanır."
+     },
+     {
+      "soru": "Araştırma sorusu kimin verileriyle cevaplanır?",
+      "secenekler": [
+       "Bir grubun",
+       "Sadece bir kişinin",
+       "Hiç kimsenin"
+      ],
+      "dogru": 0,
+      "ipucu": "“Eğilim” bir kişiyi mi, grubu mu anlatır?",
+      "aciklama": "Araştırma sorusu bir grubun verileriyle cevaplanır."
+     }
+    ]
+   },
+   {
+    "ad": "Evren ve örneklem",
+    "sinif": "3. tema, 2. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='54' r='42' fill='none' stroke='#f2c14e' stroke-width='3'/><circle cx='64.0' cy='54.0' r='3.2' fill='#5a6280'/><circle cx='54.9' cy='58.7' r='3.2' fill='#5a6280'/><circle cx='60.8' cy='45.0' r='3.2' fill='#5a6280'/><circle cx='66.5' cy='62.5' r='3.2' fill='#5a6280'/><circle cx='48.1' cy='51.9' r='3.2' fill='#5a6280'/><circle cx='71.3' cy='46.8' r='3.2' fill='#5a6280'/><circle cx='56.2' cy='68.0' r='3.2' fill='#5a6280'/><circle cx='52.8' cy='40.2' r='3.2' fill='#5a6280'/><circle cx='75.6' cy='59.7' r='3.2' fill='#5a6280'/><circle cx='43.8' cy='60.7' r='3.2' fill='#5a6280'/><circle cx='67.8' cy='37.3' r='3.2' fill='#5a6280'/><circle cx='65.8' cy='72.4' r='3.2' fill='#5a6280'/><circle cx='42.6' cy='43.9' r='3.2' fill='#5a6280'/><circle cx='80.4' cy='49.5' r='3.2' fill='#5a6280'/><circle cx='47.5' cy='71.7' r='3.2' fill='#5a6280'/><circle cx='57.1' cy='31.8' r='3.2' fill='#5a6280'/><circle cx='77.7' cy='68.9' r='3.2' fill='#5a6280'/><circle cx='36.2' cy='55.0' r='3.2' fill='#5a6280'/><circle cx='77.4' cy='36.7' r='3.2' fill='#5a6280'/><circle cx='58.8' cy='79.1' r='3.2' fill='#5a6280'/><circle cx='43.5' cy='34.2' r='3.2' fill='#5a6280'/><circle cx='86.2' cy='57.5' r='3.2' fill='#5a6280'/><circle cx='37.8' cy='69.4' r='3.2' fill='#5a6280'/><circle cx='66.1' cy='27.1' r='3.2' fill='#5a6280'/><circle cx='74.0' cy='78.5' r='3.2' fill='#5a6280'/><circle cx='32.6' cy='45.2' r='3.2' fill='#5a6280'/><circle cx='86.6' cy='41.7' r='3.2' fill='#5a6280'/><circle cx='48.4' cy='81.5' r='3.2' fill='#5a6280'/><circle cx='49.7' cy='25.4' r='3.2' fill='#5a6280'/><circle cx='87.4' cy='68.4' r='3.2' fill='#5a6280'/><circle cx='29.6' cy='62.0' r='3.2' fill='#5a6280'/><circle cx='77.3' cy='27.1' r='3.2' fill='#5a6280'/><circle cx='65.5' cy='86.0' r='3.2' fill='#5a6280'/><circle cx='34.0' cy='33.8' r='3.2' fill='#5a6280'/><circle cx='93.3' cy='51.3' r='3.2' fill='#5a6280'/><circle cx='36.9' cy='78.9' r='3.2' fill='#5a6280'/><circle cx='60.2' cy='19.6' r='3.2' fill='#5a6280'/><circle cx='83.4' cy='79.8' r='3.2' fill='#5a6280'/><circle cx='24.8' cy='50.7' r='3.2' fill='#5a6280'/><circle cx='88.5' cy='32.4' r='3.2' fill='#5a6280'/><circle cx='74' cy='64' r='18' fill='none' stroke='#4fc3a1' stroke-width='3'/><circle cx='77.5' cy='64.0' r='3.2' fill='#4fc3a1'/><circle cx='69.6' cy='68.1' r='3.2' fill='#4fc3a1'/><circle cx='74.7' cy='56.3' r='3.2' fill='#4fc3a1'/><circle cx='79.6' cy='71.3' r='3.2' fill='#4fc3a1'/><circle cx='63.7' cy='62.2' r='3.2' fill='#4fc3a1'/><circle cx='83.7' cy='57.8' r='3.2' fill='#4fc3a1'/><circle cx='70.7' cy='76.1' r='3.2' fill='#4fc3a1'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>küçük grup</text></svg>",
+    "anlatim": "Evren, verilerin toplanabileceği en geniş gruptur. Örneklem, evreni temsil eden daha küçük gruptur.",
+    "akilda": "Evren büyük, örneklem küçük",
+    "sorular": [
+     {
+      "soru": "Evreni temsil eden küçük gruba ne denir?",
+      "secenekler": [
+       "Veri seti",
+       "Örneklem",
+       "Anket"
+      ],
+      "dogru": 1,
+      "ipucu": "Çorbadan alınan bir kaşığı düşün.",
+      "aciklama": "Evreni temsil eden küçük gruba örneklem denir."
+     },
+     {
+      "soru": "Hangisi doğrudur?",
+      "secenekler": [
+       "Örneklem evrenden büyüktür.",
+       "Evren en geniş gruptur.",
+       "Evren ile örneklem hep aynıdır."
+      ],
+      "dogru": 1,
+      "ipucu": "En geniş grup hangisiydi?",
+      "aciklama": "Evren en geniş gruptur; örneklem onun içinden seçilir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Anket Sorusu",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='26' y='12' width='68' height='90' rx='8' fill='#f5f6fa'/><text x='60' y='36' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>1. Kaç saat</text><text x='60' y='54' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>uyuyorsun?</text><text x='60' y='72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>____</text><circle cx='42' cy='88' r='5' fill='#4fc3a1'/><circle cx='60' cy='88' r='5' fill='#4fc3a1'/><circle cx='78' cy='88' r='5' fill='#4fc3a1'/><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>her kişiye</text></svg>",
+   "aciklama": "Anket sorusu, örneklemdeki her kişiye tek tek sorulan sorudur. Cevapları birleşince araştırma sorusunun verisi olur. (s. 169)",
+   "ek": "Araştırma sorusu: “Sınıfımızdaki öğrencilerin boy uzunluklarının eğilimi nasıldır?” Anket sorusu: “Boyun kaç santimetre?” (s. 169)",
+   "akilda": "Kişiye sorulur, cevaplar birleşir",
+   "cozum": {
+    "baslik": "Araştırma sorusundan anket sorusuna",
+    "problem": "Araştırma sorusu: “Sınıfımızdaki öğrencilerin günlük uyku sürelerinin eğilimi nasıldır?” Her arkadaşına ne soracaksın?",
+    "adimlar": [
+     {
+      "metin": "Araştırma sorusunda neyi ölçüyoruz?",
+      "islem": "Ölçülecek: günlük uyku süresi"
+     },
+     {
+      "metin": "Bunu tek bir kişiye nasıl sorarsın?",
+      "islem": "Anket sorusu: Günde kaç saat uyuyorsun?"
+     },
+     {
+      "metin": "Cevaplar birleşince sınıfın veri seti olur.",
+      "islem": "8, 9, 7,5, 10 …"
+     }
+    ],
+    "sonuc": "Anket sorusu her kişiye sorulur; cevaplar birleşince araştırma sorusunu cevaplarız. (s. 169)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Araştırma sorusu: “7/A sınıfı öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?”",
+    "adimlar": [
+     {
+      "metin": "Her arkadaşına soracağın anket sorusunu seç.",
+      "soru": {
+       "soru": "Hangisi bu araştırma için uygun bir anket sorusudur?",
+       "secenekler": [
+        "Su içmeyi sever misin?",
+        "Hangi renk bardağı seversin?",
+        "Bir günde kaç litre su içersin?"
+       ],
+       "dogru": 2,
+       "ipucu": "Ölçülecek şey su miktarı.",
+       "aciklama": "Bu soru her kişinin içtiği su miktarını öğrenir."
+      },
+      "islem": "Anket sorusu: Bir günde kaç litre su içersin?"
+     }
+    ],
+    "sonuc": "Harika! Cevaplar birleşince 7/A'nın su tüketimi veri seti olur."
+   },
+   "soru": {
+    "soru": "Anket sorusu kime sorulur?",
+    "secenekler": [
+     "Örneklemdeki her kişiye",
+     "Sadece öğretmene",
+     "Hiç kimseye; tahmin edilir"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki ilk cümleye bak.",
+    "aciklama": "Anket sorusu örneklemdeki her kişiye tek tek sorulur. (s. 169)"
+   }
+  },
+  {
+   "ad": "Veri Toplama Planı",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='12' width='84' height='20' rx='7' fill='#f2c14e'/><text x='60.0' y='25.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>Nerede?</text><rect x='18' y='36' width='84' height='20' rx='7' fill='#4fc3a1'/><text x='60.0' y='49.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>Ne zaman?</text><rect x='18' y='60' width='84' height='20' rx='7' fill='#c3a6ff'/><text x='60.0' y='73.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>Nasıl?</text><rect x='18' y='84' width='84' height='20' rx='7' fill='#ff8fb1'/><text x='60.0' y='97.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>Kaydet</text><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>önce plan</text></svg>",
+   "aciklama": "Veri toplamadan önce plan yapılır: Veriler nerede, ne zaman, nasıl toplanacak ve nasıl kaydedilecek? (s. 169)",
+   "ek": "Toplanacak veriler araştırma sorusunun amacına uygun olmalıdır (s. 169). Örnek: Sıralar için öğrencilerin boyu sınıfta, salı günü, mezurayla ölçülür ve tabloya yazılır.",
+   "akilda": "Nerede? Ne zaman? Nasıl? Kaydet!",
+   "soru": {
+    "soru": "Sıralar için öğrencilerin boyu ölçülecek. Planda “Nasıl?” sorusunun cevabı hangisi olabilir?",
+    "secenekler": [
+     "Pazartesi günü",
+     "Sınıfta",
+     "Mezurayla ölçerek"
+    ],
+    "dogru": 2,
+    "ipucu": "“Nasıl” bir yöntemi sorar.",
+    "aciklama": "Mezurayla ölçmek bir yöntemdir; pazartesi “ne zaman”, sınıf “nerede” sorusunun cevabıdır. (s. 169)"
+   }
+  },
+  {
+   "ad": "Güvenilir Kaynak",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 12 l38 14 v26 c0 26 -18 42 -38 50 c-20 -8 -38 -24 -38 -50 v-26 z' fill='#4fc3a1'/><text x='60' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>gov.tr</text><text x='60' y='74' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>edu.tr</text></svg>",
+   "aciklama": "Hazır verileri güvenilir kaynaklardan alırız: edu.tr, gov.tr, org.tr gibi uzantılı resmî adreslerden. (s. 169)",
+   "ek": "Mustafa Bey orman yangını verilerini güvenilir sitelerden arar (s. 169). Sosyal medyada kaynağı yazmayan bir habere hemen inanmayız; güvenilir bir kaynaktan kontrol ederiz. (s. 192)",
+   "akilda": "Resmî site, kaynağı belli",
+   "soru": {
+    "soru": "Orman yangını verileri için hangisi daha güvenilir bir kaynaktır?",
+    "secenekler": [
+     "Kaynağı belirtilmemiş bir sosyal medya paylaşımı",
+     "Uzantısı gov.tr olan resmî bir kurum sitesi",
+     "Bir arkadaşın tahmini"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki uzantılara bak.",
+    "aciklama": "gov.tr uzantılı resmî siteler güvenilir kaynaklardır. (s. 169)"
+   }
+  },
+  {
+   "ad": "Kişisel Veri",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='26' width='88' height='56' rx='8' fill='#f5f6fa'/><circle cx='38' cy='50' r='11' fill='#ffa94d'/><rect x='56' y='40' width='38' height='6' rx='3' fill='#5a6280'/><rect x='56' y='52' width='30' height='6' rx='3' fill='#5a6280'/><rect x='26' y='66' width='68' height='6' rx='3' fill='#5a6280'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>kişiye ait</text></svg>",
+   "aciklama": "Kişilerin sağlık, kimlik, banka, adres ve günlük yaşam bilgileri kişisel veridir. (s. 170)",
+   "ek": "“Ev adresiniz nedir?”, “Boyunuz kaç metredir?”, “Günlük ekran süreniz ne kadar?” sorularının cevapları kişisel veri içerir. (s. 170)",
+   "akilda": "Kişiye ait bilgi = kişisel veri",
+   "cozum": {
+    "baslik": "Duru'nun profili",
+    "problem": "Duru sosyal medyada doğum tarihini, okulunun adını ve yaşadığı şehri herkese açık paylaştı. Bunlar kişisel veri mi?",
+    "adimlar": [
+     {
+      "metin": "Doğum tarihi kime ait? Duru'ya; kimlik bilgisidir.",
+      "islem": "Kişisel veri"
+     },
+     {
+      "metin": "Okul adı ve şehir Duru'nun nerede olduğunu gösterir: adres ve günlük yaşam bilgisi.",
+      "islem": "Kişisel veri"
+     },
+     {
+      "metin": "Hesap herkese açık: Bu bilgileri tanımadığı kişiler de görür.",
+      "islem": "Gizlilik tehlikede"
+     }
+    ],
+    "sonuc": "Üçü de kişisel veridir. Hesabı gizli yapmak ve bu bilgileri paylaşmamak daha güvenlidir. (s. 192)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Bir sınıf anketinde şu soru var: “Banka hesabında ne kadar para var?”",
+    "adimlar": [
+     {
+      "metin": "Soru hangi bilgiyi istiyor?",
+      "soru": {
+       "soru": "Bu soru hangi bilgiyi istiyor?",
+       "secenekler": [
+        "Hava durumu bilgisi",
+        "Banka bilgisi",
+        "Okulun adı"
+       ],
+       "dogru": 1,
+       "ipucu": "Soruda “banka hesabı” geçiyor.",
+       "aciklama": "Soru kişinin banka bilgisini istiyor."
+      },
+      "islem": "Banka bilgisi → kişisel veri"
+     },
+     {
+      "metin": "Bu soru ankete konmalı mı?",
+      "soru": {
+       "soru": "Bu soru sınıf anketine konmalı mı?",
+       "secenekler": [
+        "Hayır; kişisel veri istiyor ve araştırma için gerekmiyor.",
+        "Evet; her ankette olmalı.",
+        "Sadece cevabı kısaysa"
+       ],
+       "dogru": 0,
+       "ipucu": "Banka bilgisi kişisel veridir.",
+       "aciklama": "Gerekmeyen kişisel bilgiler ankette sorulmaz."
+      },
+      "islem": "Gereksiz kişisel soru sorma"
+     }
+    ],
+    "sonuc": "Harika! Kişisel veri isteyen gereksiz soruları anketten çıkardın. (s. 170)"
+   },
+   "soru": {
+    "soru": "Hangisi kişisel veridir?",
+    "secenekler": [
+     "Türkiye'nin başkenti",
+     "Bir haftada kaç gün olduğu",
+     "Bir öğrencinin ev adresi"
+    ],
+    "dogru": 2,
+    "ipucu": "Kişiye ait bilgiyi bul.",
+    "aciklama": "Ev adresi kişiye aittir: kişisel veri. (s. 170)"
+   }
+  },
+  {
+   "ad": "İzin ve Gizlilik",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='34' y='52' width='52' height='42' rx='8' fill='#f2c14e'/><path d='M44 52 v-12 a16 16 0 0 1 32 0 v12' stroke='#f2c14e' stroke-width='7' fill='none'/><circle cx='60' cy='70' r='6' fill='#1b2340'/><rect x='57' y='72' width='6' height='12' fill='#1b2340'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>izin al, gizli tut</text></svg>",
+   "aciklama": "Ankette toplanan veriler izin alınmadan başkalarıyla paylaşılmaz. Gerekmeyen kişisel sorular sorulmaz. (s. 170)",
+   "ek": "Buse anketteki arkadaşlarının kilo ve boy bilgilerini izinsiz paylaştı; bu, kişisel verilerin gizliliğini ihlal eder (s. 170). Ege bir oyunu indirmek için izin metnini okumadan onayladı; önce okumalıydı. (s. 193)",
+   "akilda": "İzin al, gizli tut",
+   "soru": {
+    "soru": "Buse anket verilerini (kilo, boy) izin almadan internette paylaştı. Bu davranış neye yol açar?",
+    "secenekler": [
+     "Kişisel verilerin gizliliğinin ihlaline",
+     "Araştırmanın daha iyi olmasına",
+     "Örneklemin büyümesine"
+    ],
+    "dogru": 0,
+    "ipucu": "İzinsiz paylaşılan bilgi kime aittir?",
+    "aciklama": "İzinsiz paylaşmak kişisel verilerin gizliliğini ihlal eder. (s. 170)"
+   }
+  },
+  {
+   "ad": "KVKK",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 12 l38 14 v26 c0 26 -18 42 -38 50 c-20 -8 -38 -24 -38 -50 v-26 z' fill='#c3a6ff'/><text x='60' y='62' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#1b2340'>KVKK</text></svg>",
+   "aciklama": "Kişisel Verilerin Korunması Kanunu (KVKK), Türkiye'de kişisel verilerin işlenmesi ve korunmasıyla ilgili temel kanundur. (s. 193)",
+   "ek": "KVKK'nin amacı kişilerin özel hayatının gizliliğini korumak, temel hak ve özgürlükleri güvence altına almaktır. (s. 193)",
+   "akilda": "Kişisel verileri koruyan kanun",
+   "soru": {
+    "soru": "KVKK'nin amacı nedir?",
+    "secenekler": [
+     "Anketleri yasaklamak",
+     "Kişilerin özel hayatının gizliliğini korumak",
+     "Herkesin bilgisini paylaşmak"
+    ],
+    "dogru": 1,
+    "ipucu": "Kanunun adında “korunması” geçiyor.",
+    "aciklama": "KVKK özel hayatın gizliliğini korur. (s. 193)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi neyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Veriyi toplamak",
+     "uyeler": [
+      "Anket Sorusu",
+      "Veri Toplama Planı",
+      "Güvenilir Kaynak"
+     ]
+    },
+    {
+     "etiket": "Veriyi korumak",
+     "uyeler": [
+      "Kişisel Veri",
+      "İzin ve Gizlilik",
+      "KVKK"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Anket sorusu örneklemdeki her kişiye sorulur; cevaplar birleşince veri seti olur.",
+  "Plan: Nerede? Ne zaman? Nasıl? Nasıl kaydedeceğim?",
+  "Hazır veriler güvenilir kaynaklardan alınır (gov.tr, edu.tr, org.tr).",
+  "Sağlık, kimlik, banka, adres ve günlük yaşam bilgileri kişisel veridir.",
+  "Toplanan veriler izinsiz paylaşılmaz; gereksiz kişisel soru sorulmaz.",
+  "KVKK kişisel verileri koruyan kanundur."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Anketlerde adımı sormak gerekli mi?",
+   "cevap": "Araştırma için gerekmiyorsa ad soyad sormamak kişisel verileri korur. Buse'nin anketinde ad soyad bile zorunluydu. (s. 170)"
+  },
+  {
+   "soru": "Boyum neden kişisel veri?",
+   "cevap": "Boy, kilo gibi bilgiler kişinin sağlığı ve günlük yaşamıyla ilgilidir; kişiye aittir. (s. 170)"
+  },
+  {
+   "soru": "“Su İçmek Zararlı!” diye bir haber gördüm. İnanmalı mıyım?",
+   "cevap": "Kaynağı yazmayan haberleri hemen paylaşmayız; doğruluğunu güvenilir bir kaynaktan kontrol ederiz. (s. 192)"
+  },
+  {
+   "soru": "Uygulamalar neden izin istiyor?",
+   "cevap": "Bilgilerimize ulaşmak için. İzin metnini okumadan “Tüm izinleri kabul ediyorum.” dememeliyiz. (s. 193)"
+  },
+  {
+   "soru": "Hazır veri ne demek?",
+   "cevap": "Başka bir kurumun önceden topladığı veridir. Mustafa Bey orman yangını verilerini kendisi toplamaz, güvenilir sitelerden alır. (s. 169)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Sınıfında bir anket yapacaksın. Arkadaşlarının kişisel verilerini korumak için nelere dikkat edersin? İki şey yaz.",
+   "ornekCevap": "Gerekmeyen kişisel bilgileri (ad soyad, adres) sormam. Toplanan cevapları izin almadan kimseyle paylaşmam.",
+   "anahtarlar": [
+    "izin",
+    "paylaş",
+    "ad",
+    "adres",
+    "gizli"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi anket sorusudur?",
+   "secenekler": [
+    "Okulumuzdaki öğrencilerin uyku sürelerinin eğilimi nasıldır?",
+    "Dün gece kaç saat uyudun?",
+    "Uyku neden önemlidir?"
+   ],
+   "dogru": 1,
+   "ipucu": "Tek bir kişiye sorulan soruyu bul.",
+   "aciklama": "“Dün gece kaç saat uyudun?” her kişiye tek tek sorulur. (s. 169)",
+   "kavram": "Anket Sorusu"
+  },
+  {
+   "soru": "Veri toplama planında “Ne zaman?” sorusunun cevabı hangisi olabilir?",
+   "secenekler": [
+    "Mezurayla",
+    "Salı günü ilk derste",
+    "Okul bahçesinde"
+   ],
+   "dogru": 1,
+   "ipucu": "Zaman bildiren cevabı bul.",
+   "aciklama": "“Salı günü ilk derste” zamanı söyler. (s. 169)",
+   "kavram": "Veri Toplama Planı"
+  },
+  {
+   "soru": "Hazır veri ararken hangisi en güvenilir kaynaktır?",
+   "secenekler": [
+    "Uzantısı edu.tr olan bir üniversite sitesi",
+    "Yazarı belli olmayan bir blog",
+    "Bir sosyal medya yorumu"
+   ],
+   "dogru": 0,
+   "ipucu": "Resmî uzantılı adresi bul.",
+   "aciklama": "edu.tr uzantılı resmî siteler güvenilir kaynaklardır. (s. 169)",
+   "kavram": "Güvenilir Kaynak"
+  },
+  {
+   "soru": "Hangisinin cevabı kişisel veri içerir?",
+   "secenekler": [
+    "Bir yılda kaç ay vardır?",
+    "Ailenizin gelir düzeyi nasıldır?",
+    "Türkiye'nin en uzun nehri hangisidir?"
+   ],
+   "dogru": 1,
+   "ipucu": "Kişiye ait bilgiyi soran soruyu bul.",
+   "aciklama": "Ailenin gelir düzeyi kişisel veridir. (s. 170)",
+   "kavram": "Kişisel Veri"
+  },
+  {
+   "soru": "Bu sorulardan kaç tanesinin cevabı kişisel veri içerir? Ev adresin ne? · Başkentimiz neresi? · Boyun kaç metre? · Banka hesabında ne kadar para var?",
+   "cevap": "3",
+   "ipucu": "Her soru için sor: Cevap kişiye mi ait?",
+   "aciklama": "Adres, boy ve banka bilgisi kişiseldir: 3 tane. (s. 170)",
+   "kavram": "Kişisel Veri",
+   "yardim": {
+    "adimlar": [
+     "Her soru için sor: Cevap bir kişiye mi ait?",
+     "Kişiye ait bilgileri işaretle.",
+     "İşaretlediklerini say."
+    ]
+   }
+  },
+  {
+   "soru": "Ege bir oyunu indirmek için izin metnini okumadan onayladı. Ne yapmalıydı?",
+   "secenekler": [
+    "Bütün izinleri hemen kabul etmeliydi.",
+    "Metni okuyup hangi bilgilerinin istendiğine bakmalıydı.",
+    "Şifresini arkadaşlarıyla paylaşmalıydı."
+   ],
+   "dogru": 1,
+   "ipucu": "İzin metni neden okunur?",
+   "aciklama": "İzin metni okunmadan onaylanmamalı; hangi bilgilerin istendiği görülmeli. (s. 193)",
+   "kavram": "İzin ve Gizlilik"
+  },
+  {
+   "soru": "Türkiye'de kişisel verilerin korunmasıyla ilgili temel kanun hangisidir?",
+   "secenekler": [
+    "KVKK",
+    "TÜİK",
+    "Anket"
+   ],
+   "dogru": 0,
+   "ipucu": "Kısaltmanın açılımını düşün: Kişisel Verilerin …",
+   "aciklama": "Kişisel Verilerin Korunması Kanunu: KVKK. (s. 193)",
+   "kavram": "KVKK"
+  },
+  {
+   "soru": "Kaynağı belirtilmemiş “Su İçmek Zararlı!” başlıklı bir haber gördün. Ne yaparsın?",
+   "secenekler": [
+    "Hemen herkesle paylaşırım.",
+    "Su içmeyi bırakırım.",
+    "Doğruluğunu güvenilir bir kaynaktan kontrol ederim."
+   ],
+   "dogru": 2,
+   "ipucu": "Kaynağı belli olmayan habere hemen inanılır mı?",
+   "aciklama": "Kaynağı belirtilmeyen haberi güvenilir bir kaynaktan kontrol ederiz. (s. 192)",
+   "kavram": "Güvenilir Kaynak"
+  },
+  {
+   "soru": "Sınıfta 28 öğrenci var. 4 öğrenci ankete katılmak istemedi. Kaç öğrencinin verisi toplanır?",
+   "cevap": "24",
+   "ipucu": "Ankete katılmayanların verisi toplanmaz.",
+   "aciklama": "28 − 4 = 24 öğrenci.",
+   "kavram": "İzin ve Gizlilik",
+   "birim": "öğrenci",
+   "yardim": {
+    "adimlar": [
+     "Sınıfta kaç öğrenci var?",
+     "Kaç kişi katılmak istemedi?",
+     "Toplamdan katılmayanları çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Araştırma sorusu: “Sınıfımızdaki öğrencilerin boy uzunluklarının eğilimi nasıldır?” Hangisi uygun bir anket sorusudur?",
+   "secenekler": [
+    "Ev adresin nedir?",
+    "En sevdiğin ders hangisi?",
+    "Boyun kaç santimetre?"
+   ],
+   "dogru": 2,
+   "ipucu": "Ölçülecek şey nedir?",
+   "aciklama": "Araştırma boyu soruyor; anket sorusu da her kişinin boyunu sormalı. (s. 169)",
+   "kavram": "Anket Sorusu"
+  }
+ ]
+}

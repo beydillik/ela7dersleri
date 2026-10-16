@@ -1,0 +1,509 @@
+{
+ "id": "u3k2",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Araştırma Sorusu, Evren ve Örneklem",
+ "sayfalar": "s. 165–168",
+ "giris": "Bir şeyi merak edince önce iyi bir soru sorarız. Bu konuda araştırma sorusu yazmayı öğreneceğiz. Sonra verileri kimden toplayacağımıza karar vereceğiz: evren ve örneklem.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konu önceki konunun devamı. Veri türlerini ve araştırmanın adımlarını hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Veri türleri",
+    "sinif": "3. tema, 1. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='86' width='24' height='18' fill='#8ce99a' opacity='0.55'/><text x='26' y='82' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>0</text><rect x='38' y='68' width='24' height='36' fill='#8ce99a' opacity='0.7000000000000001'/><text x='50' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>1</text><rect x='62' y='50' width='24' height='54' fill='#8ce99a' opacity='0.8500000000000001'/><text x='74' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>2</text><rect x='86' y='32' width='24' height='72' fill='#8ce99a' opacity='1.0'/><text x='98' y='28' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>3</text><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#8ce99a'>basamak basamak</text></svg>",
+    "anlatim": "Cevap sözcükse kategorik, sayıysa nicel veridir. Nicel veride arada başka değer olamıyorsa kesikli, olabiliyorsa süreklidir.",
+    "akilda": "Sözcük mü, sayı mı? Arada değer var mı?",
+    "ornek": {
+     "problem": "Boy uzunluğu hangi veri türüdür?",
+     "adimlar": [
+      {
+       "metin": "Cevap sayı mı? Evet: 1,52 m.",
+       "islem": "Nicel"
+      },
+      {
+       "metin": "1,52 m ile 1,53 m arasında değer olabilir mi? Evet.",
+       "islem": "Sürekli"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "“Günde kaç litre su içersin?” sorusunun cevabı hangi veri türüdür?",
+      "secenekler": [
+       "Kategorik",
+       "Kesikli",
+       "Sürekli"
+      ],
+      "dogru": 2,
+      "ipucu": "1,5 L ile 2 L arasında değer olabilir mi?",
+      "aciklama": "Su miktarı ölçülür; arada değer olabilir: sürekli."
+     },
+     {
+      "soru": "“Kaç kardeşin var?” sorusunun cevabı hangi veri türüdür?",
+      "secenekler": [
+       "Sürekli",
+       "Kesikli",
+       "Kategorik"
+      ],
+      "dogru": 1,
+      "ipucu": "Kardeşleri sayarız.",
+      "aciklama": "Kardeş sayısı sayılır; arada değer olmaz: kesikli."
+     }
+    ]
+   },
+   {
+    "ad": "Araştırmanın 4 adımı",
+    "sinif": "3. tema, 1. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='20' r='11' fill='#f2c14e'/><text x='26' y='25' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><text x='44' y='25' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Sor</text><circle cx='26' cy='46' r='11' fill='#4fc3a1'/><text x='26' y='51' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><text x='44' y='51' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Topla</text><circle cx='26' cy='72' r='11' fill='#c3a6ff'/><text x='26' y='77' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><text x='44' y='77' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Analiz et</text><circle cx='26' cy='98' r='11' fill='#ff8fb1'/><text x='26' y='103' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>4</text><text x='44' y='103' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Yorumla</text></svg>",
+    "anlatim": "Araştırma 4 adımda yapılır: 1) Soruyu belirle, 2) Verileri topla, 3) Analiz et, 4) Yorumla ve karar ver.",
+    "akilda": "Sor, topla, analiz et, yorumla",
+    "sorular": [
+     {
+      "soru": "Verileri toplamadan önce hangi adım yapılır?",
+      "secenekler": [
+       "Araştırma sorusunu belirlemek",
+       "Grafik çizmek",
+       "Yorumlamak"
+      ],
+      "dogru": 0,
+      "ipucu": "Birinci adım hangisiydi?",
+      "aciklama": "Önce araştırma sorusu belirlenir."
+     },
+     {
+      "soru": "Grafik çizmek hangi adımın içindedir?",
+      "secenekler": [
+       "Veri toplama",
+       "Veri analizi",
+       "Araştırma sorusu"
+      ],
+      "dogru": 1,
+      "ipucu": "Grafik, verileri incelemek içindir.",
+      "aciklama": "Grafik çizmek veri analizi adımındadır."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Araştırma Sorusu",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='52' fill='#f2c14e'>?</text><circle cx='20' cy='92' r='7' fill='#4fc3a1'/><circle cx='40' cy='92' r='7' fill='#4fc3a1'/><circle cx='60' cy='92' r='7' fill='#4fc3a1'/><circle cx='80' cy='92' r='7' fill='#4fc3a1'/><circle cx='100' cy='92' r='7' fill='#4fc3a1'/><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>bütün grup</text></svg>",
+   "aciklama": "Araştırma sorusu, bir grubun verileriyle cevaplanacak sorudur. Çoğu zaman “… eğilimi nasıldır?” diye yazılır. (s. 165)",
+   "ek": "Örnek: “7/A sınıfı öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?” Cevap tek kişiden değil, bütün sınıfın verilerinden çıkar. (s. 165)",
+   "akilda": "Grubun verisiyle cevaplanır",
+   "soru": {
+    "soru": "Hangisi bir araştırma sorusudur?",
+    "secenekler": [
+     "7/A sınıfı öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?",
+     "Bir günde kaç litre su içersin?",
+     "Su içmeyi sever misin?"
+    ],
+    "dogru": 0,
+    "ipucu": "Bir grubun verileriyle cevaplanan soruyu bul.",
+    "aciklama": "Bu soru bütün sınıfın verileriyle cevaplanır. (s. 165)"
+   }
+  },
+  {
+   "ad": "İyi Araştırma Sorusu",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='18' height='18' rx='4' fill='#8ce99a'/><path d='M18 27 l4 4 l7 -9' stroke='#1b2340' stroke-width='3' fill='none'/><text x='38' y='33' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#f5f6fa'>amaç net</text><rect x='14' y='46' width='18' height='18' rx='4' fill='#8ce99a'/><path d='M18 55 l4 4 l7 -9' stroke='#1b2340' stroke-width='3' fill='none'/><text x='38' y='61' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#f5f6fa'>ölçülebilir</text><rect x='14' y='74' width='18' height='18' rx='4' fill='#8ce99a'/><path d='M18 83 l4 4 l7 -9' stroke='#1b2340' stroke-width='3' fill='none'/><text x='38' y='89' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#f5f6fa'>toplanabilir</text></svg>",
+   "aciklama": "İyi bir araştırma sorusunun amacı nettir, neyi ölçeceğimiz bellidir, veri toplamaya uygundur ve cevapları kişiden kişiye değişir. (s. 165)",
+   "ek": "“Su içmeyi sever misin?” araştırma sorusu olarak uygun değildir: Cevabı evet ya da hayır, ne ölçeceğimiz belli değil.",
+   "akilda": "Net, ölçülebilir, toplanabilir",
+   "cozum": {
+    "baslik": "Soru uygun mu?",
+    "problem": "Defne su tüketimini araştırıyor. Sorusu: “Günde 2,5 litreden az mı su içersiniz?” Bu, araştırma sorusu olarak uygun mu?",
+    "adimlar": [
+     {
+      "metin": "Cevap ne olur? Sadece evet ya da hayır.",
+      "islem": "Evet / hayır"
+     },
+     {
+      "metin": "Neyi ölçüyoruz? Kaç litre içildiğini öğrenemiyoruz.",
+      "islem": "Miktar kayboluyor ✗"
+     },
+     {
+      "metin": "Grubun verisiyle cevaplanan daha iyi bir soru yaz.",
+      "islem": "7/A öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?"
+     }
+    ],
+    "sonuc": "“2,5 litreden az mı?” uygun değildir; grubun su tüketiminin eğilimini sormak daha iyidir. (s. 165)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Okulundaki öğrencilerin ekran kullanım sürelerini araştıracaksın.",
+    "adimlar": [
+     {
+      "metin": "İyi bir araştırma sorusu seç.",
+      "soru": {
+       "soru": "Hangisi daha iyi bir araştırma sorusudur?",
+       "secenekler": [
+        "Telefonu sever misin?",
+        "Okulumuzdaki öğrencilerin günlük ekran kullanım sürelerinin eğilimi nasıldır?",
+        "Dün telefona baktın mı?"
+       ],
+       "dogru": 1,
+       "ipucu": "Grubun verisiyle cevaplanan, ölçülecek şeyi belli olan soruyu bul.",
+       "aciklama": "Bu soru bütün okulun ekran sürelerini soruyor; ölçülecek şey belli."
+      },
+      "islem": "Grubun ekran süreleri soruluyor ✓"
+     },
+     {
+      "metin": "Bu soruda neyi ölçeceğiz?",
+      "soru": {
+       "soru": "Bu araştırmada neyi ölçeceğiz?",
+       "secenekler": [
+        "En sevilen oyunu",
+        "Günlük ekran süresini",
+        "Telefon markasını"
+       ],
+       "dogru": 1,
+       "ipucu": "Soruda hangi süre geçiyor?",
+       "aciklama": "Ölçeceğimiz şey günlük ekran kullanım süresidir."
+      },
+      "islem": "Ölçülecek: günlük ekran süresi"
+     }
+    ],
+    "sonuc": "Harika! Amacı net, ölçülecek şeyi belli bir soru yazdın. (s. 166)"
+   },
+   "soru": {
+    "soru": "“Su içmeyi sever misin?” neden iyi bir araştırma sorusu değildir?",
+    "secenekler": [
+     "Çok uzun olduğu için",
+     "Sayı içerdiği için",
+     "Ne ölçeceğimiz belli olmadığı için"
+    ],
+    "dogru": 2,
+    "ipucu": "İyi sorunun özelliklerine bak: ölçülecek şey belli mi?",
+    "aciklama": "Cevabı evet/hayır; neyi ölçeceğimiz belli değil. (s. 165)"
+   }
+  },
+  {
+   "ad": "Değişebilirlik",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='96' x2='106' y2='96' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><circle cx='26' cy='50' r='7' fill='#4fc3a1'/><rect x='21' y='56' width='10' height='40' rx='3' fill='#4fc3a1'/><circle cx='49' cy='28' r='7' fill='#f2c14e'/><rect x='44' y='34' width='10' height='62' rx='3' fill='#f2c14e'/><circle cx='72' cy='60' r='7' fill='#ff8fb1'/><rect x='67' y='66' width='10' height='30' rx='3' fill='#ff8fb1'/><circle cx='95' cy='38' r='7' fill='#c3a6ff'/><rect x='90' y='44' width='10' height='52' rx='3' fill='#c3a6ff'/><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>herkes farklı</text></svg>",
+   "aciklama": "Aynı soruyu farklı kişilere sorunca farklı cevaplar alırız. Araştırma sorusunun cevapları kişiden kişiye değişebilmelidir. (s. 165)",
+   "ek": "Kalp ritmi kişinin yaşına ve kütlesine göre değişir (s. 165). Hasta Alya'nın ateşi 40,1 °C, sağlıklı Elif'inki 36,3 °C. Aras'ın ateşi iki termometrede farklı çıktı: ölçüm aracı da fark yaratabilir. (s. 168)",
+   "akilda": "Cevaplar kişiden kişiye değişir",
+   "soru": {
+    "soru": "Aras'ın ateşi aynı anda A termometresinde 38,7 °C, B termometresinde 39,0 °C çıktı. Farkın sebebi nedir?",
+    "secenekler": [
+     "Aras'ın hastalanması",
+     "Ölçüm aracının farklı olması",
+     "Aras'ın yaşı"
+    ],
+    "dogru": 1,
+    "ipucu": "Değişen şey Aras mı, termometre mi?",
+    "aciklama": "Aynı anda ölçülmüş; değişen tek şey termometre. Ölçüm aracı fark yaratır. (s. 168)"
+   }
+  },
+  {
+   "ad": "Evren",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='54' r='42' fill='none' stroke='#f2c14e' stroke-width='3'/><circle cx='64.0' cy='54.0' r='3.2' fill='#f5f6fa'/><circle cx='54.9' cy='58.7' r='3.2' fill='#f5f6fa'/><circle cx='60.8' cy='45.0' r='3.2' fill='#f5f6fa'/><circle cx='66.5' cy='62.5' r='3.2' fill='#f5f6fa'/><circle cx='48.1' cy='51.9' r='3.2' fill='#f5f6fa'/><circle cx='71.3' cy='46.8' r='3.2' fill='#f5f6fa'/><circle cx='56.2' cy='68.0' r='3.2' fill='#f5f6fa'/><circle cx='52.8' cy='40.2' r='3.2' fill='#f5f6fa'/><circle cx='75.6' cy='59.7' r='3.2' fill='#f5f6fa'/><circle cx='43.8' cy='60.7' r='3.2' fill='#f5f6fa'/><circle cx='67.8' cy='37.3' r='3.2' fill='#f5f6fa'/><circle cx='65.8' cy='72.4' r='3.2' fill='#f5f6fa'/><circle cx='42.6' cy='43.9' r='3.2' fill='#f5f6fa'/><circle cx='80.4' cy='49.5' r='3.2' fill='#f5f6fa'/><circle cx='47.5' cy='71.7' r='3.2' fill='#f5f6fa'/><circle cx='57.1' cy='31.8' r='3.2' fill='#f5f6fa'/><circle cx='77.7' cy='68.9' r='3.2' fill='#f5f6fa'/><circle cx='36.2' cy='55.0' r='3.2' fill='#f5f6fa'/><circle cx='77.4' cy='36.7' r='3.2' fill='#f5f6fa'/><circle cx='58.8' cy='79.1' r='3.2' fill='#f5f6fa'/><circle cx='43.5' cy='34.2' r='3.2' fill='#f5f6fa'/><circle cx='86.2' cy='57.5' r='3.2' fill='#f5f6fa'/><circle cx='37.8' cy='69.4' r='3.2' fill='#f5f6fa'/><circle cx='66.1' cy='27.1' r='3.2' fill='#f5f6fa'/><circle cx='74.0' cy='78.5' r='3.2' fill='#f5f6fa'/><circle cx='32.6' cy='45.2' r='3.2' fill='#f5f6fa'/><circle cx='86.6' cy='41.7' r='3.2' fill='#f5f6fa'/><circle cx='48.4' cy='81.5' r='3.2' fill='#f5f6fa'/><circle cx='49.7' cy='25.4' r='3.2' fill='#f5f6fa'/><circle cx='87.4' cy='68.4' r='3.2' fill='#f5f6fa'/><circle cx='29.6' cy='62.0' r='3.2' fill='#f5f6fa'/><circle cx='77.3' cy='27.1' r='3.2' fill='#f5f6fa'/><circle cx='65.5' cy='86.0' r='3.2' fill='#f5f6fa'/><circle cx='34.0' cy='33.8' r='3.2' fill='#f5f6fa'/><circle cx='93.3' cy='51.3' r='3.2' fill='#f5f6fa'/><circle cx='36.9' cy='78.9' r='3.2' fill='#f5f6fa'/><circle cx='60.2' cy='19.6' r='3.2' fill='#f5f6fa'/><circle cx='83.4' cy='79.8' r='3.2' fill='#f5f6fa'/><circle cx='24.8' cy='50.7' r='3.2' fill='#f5f6fa'/><circle cx='88.5' cy='32.4' r='3.2' fill='#f5f6fa'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>en geniş grup</text></svg>",
+   "aciklama": "Evren, araştırma sorusuna yönelik verilerin toplanabileceği en geniş gruptur. (s. 165)",
+   "ek": "“Denizli'deki ortaokul öğrencilerinin kantin sırasında bekledikleri süre …” sorusunun evreni Denizli'de kantini olan bütün ortaokullardır. (s. 166)",
+   "akilda": "En geniş grup",
+   "soru": {
+    "soru": "“Türkiye'deki 7. sınıf öğrencilerinin uyku süreleri” araştırmasının evreni hangisidir?",
+    "secenekler": [
+     "Türkiye'deki bütün 7. sınıf öğrencileri",
+     "Ela'nın sınıfı",
+     "Ela'nın okulu"
+    ],
+    "dogru": 0,
+    "ipucu": "Soru kimleri kapsıyor? En geniş grup hangisi?",
+    "aciklama": "Soru Türkiye'deki bütün 7. sınıfları kapsıyor: evren budur. (s. 165)"
+   }
+  },
+  {
+   "ad": "Örneklem",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='54' r='42' fill='none' stroke='#f2c14e' stroke-width='3'/><circle cx='64.0' cy='54.0' r='3.2' fill='#5a6280'/><circle cx='54.9' cy='58.7' r='3.2' fill='#5a6280'/><circle cx='60.8' cy='45.0' r='3.2' fill='#5a6280'/><circle cx='66.5' cy='62.5' r='3.2' fill='#5a6280'/><circle cx='48.1' cy='51.9' r='3.2' fill='#5a6280'/><circle cx='71.3' cy='46.8' r='3.2' fill='#5a6280'/><circle cx='56.2' cy='68.0' r='3.2' fill='#5a6280'/><circle cx='52.8' cy='40.2' r='3.2' fill='#5a6280'/><circle cx='75.6' cy='59.7' r='3.2' fill='#5a6280'/><circle cx='43.8' cy='60.7' r='3.2' fill='#5a6280'/><circle cx='67.8' cy='37.3' r='3.2' fill='#5a6280'/><circle cx='65.8' cy='72.4' r='3.2' fill='#5a6280'/><circle cx='42.6' cy='43.9' r='3.2' fill='#5a6280'/><circle cx='80.4' cy='49.5' r='3.2' fill='#5a6280'/><circle cx='47.5' cy='71.7' r='3.2' fill='#5a6280'/><circle cx='57.1' cy='31.8' r='3.2' fill='#5a6280'/><circle cx='77.7' cy='68.9' r='3.2' fill='#5a6280'/><circle cx='36.2' cy='55.0' r='3.2' fill='#5a6280'/><circle cx='77.4' cy='36.7' r='3.2' fill='#5a6280'/><circle cx='58.8' cy='79.1' r='3.2' fill='#5a6280'/><circle cx='43.5' cy='34.2' r='3.2' fill='#5a6280'/><circle cx='86.2' cy='57.5' r='3.2' fill='#5a6280'/><circle cx='37.8' cy='69.4' r='3.2' fill='#5a6280'/><circle cx='66.1' cy='27.1' r='3.2' fill='#5a6280'/><circle cx='74.0' cy='78.5' r='3.2' fill='#5a6280'/><circle cx='32.6' cy='45.2' r='3.2' fill='#5a6280'/><circle cx='86.6' cy='41.7' r='3.2' fill='#5a6280'/><circle cx='48.4' cy='81.5' r='3.2' fill='#5a6280'/><circle cx='49.7' cy='25.4' r='3.2' fill='#5a6280'/><circle cx='87.4' cy='68.4' r='3.2' fill='#5a6280'/><circle cx='29.6' cy='62.0' r='3.2' fill='#5a6280'/><circle cx='77.3' cy='27.1' r='3.2' fill='#5a6280'/><circle cx='65.5' cy='86.0' r='3.2' fill='#5a6280'/><circle cx='34.0' cy='33.8' r='3.2' fill='#5a6280'/><circle cx='93.3' cy='51.3' r='3.2' fill='#5a6280'/><circle cx='36.9' cy='78.9' r='3.2' fill='#5a6280'/><circle cx='60.2' cy='19.6' r='3.2' fill='#5a6280'/><circle cx='83.4' cy='79.8' r='3.2' fill='#5a6280'/><circle cx='24.8' cy='50.7' r='3.2' fill='#5a6280'/><circle cx='88.5' cy='32.4' r='3.2' fill='#5a6280'/><circle cx='74' cy='64' r='18' fill='none' stroke='#4fc3a1' stroke-width='3'/><circle cx='77.5' cy='64.0' r='3.2' fill='#4fc3a1'/><circle cx='69.6' cy='68.1' r='3.2' fill='#4fc3a1'/><circle cx='74.7' cy='56.3' r='3.2' fill='#4fc3a1'/><circle cx='79.6' cy='71.3' r='3.2' fill='#4fc3a1'/><circle cx='63.7' cy='62.2' r='3.2' fill='#4fc3a1'/><circle cx='83.7' cy='57.8' r='3.2' fill='#4fc3a1'/><circle cx='70.7' cy='76.1' r='3.2' fill='#4fc3a1'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>küçük grup</text></svg>",
+   "aciklama": "Evrenin hepsine ulaşmak çoğu zaman zor ve pahalıdır. Evreni temsil eden daha küçük bir grup seçilir; buna örneklem denir. (s. 165)",
+   "ek": "Çorbanın tadına bakarken bütün tencereyi içmeyiz, bir kaşık yeter. Ama önce çorbayı karıştırırız ki kaşıktaki bütün tencereye benzesin.",
+   "akilda": "Evrenden seçilen küçük grup",
+   "cozum": {
+    "baslik": "Kantin sırası",
+    "problem": "İpek'in sorusu: “Denizli'deki ortaokul öğrencilerinin teneffüste kantin sırasında bekledikleri süre nasıl bir eğilim gösterir?” Evren ve örneklem ne olabilir?",
+    "adimlar": [
+     {
+      "metin": "Soru kimleri kapsıyor? Denizli'deki ortaokul öğrencilerini.",
+      "islem": "Evren: Denizli'de kantini olan bütün ortaokullar"
+     },
+     {
+      "metin": "Hepsine ulaşmak zor. Ulaşabileceğimiz, evrene benzeyen bir grup seç.",
+      "islem": "Örneklem: Cumhuriyet Ortaokulunun bütün öğrencileri"
+     },
+     {
+      "metin": "Kontrol et: Bu grup evrenin içinde mi? Evet.",
+      "islem": "Örneklem evrenin içinde ✓"
+     }
+    ],
+    "sonuc": "Evren Denizli'de kantini olan ortaokullar, örneklem Cumhuriyet Ortaokulunun bütün öğrencileri. (s. 166)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Betül, Muğla'daki marketlerde glütensiz makarnanın 100 gram fiyatını araştırıyor.",
+    "adimlar": [
+     {
+      "metin": "Önce evreni bul.",
+      "soru": {
+       "soru": "Bu araştırmanın evreni hangisidir?",
+       "secenekler": [
+        "Betül'ün evi",
+        "Muğla'daki bütün marketler",
+        "Türkiye'deki bütün fırınlar"
+       ],
+       "dogru": 1,
+       "ipucu": "Araştırma hangi şehirdeki marketleri kapsıyor?",
+       "aciklama": "Araştırma Muğla'daki marketleri kapsıyor."
+      },
+      "islem": "Evren: Muğla'daki bütün marketler"
+     },
+     {
+      "metin": "Şimdi evreni temsil edecek bir örneklem seç.",
+      "soru": {
+       "soru": "Hangisi uygun bir örneklemdir?",
+       "secenekler": [
+        "İstanbul'daki 5 market",
+        "Sadece Betül'ün evine en yakın market",
+        "Muğla'nın farklı ilçelerinden büyük ve küçük 15 market"
+       ],
+       "dogru": 2,
+       "ipucu": "Örneklem evrenin içinde olmalı ve ona benzemeli.",
+       "aciklama": "Farklı ilçelerden, büyük ve küçük marketler Muğla'yı temsil eder."
+      },
+      "islem": "Örneklem: farklı türden Muğla marketleri"
+     }
+    ],
+    "sonuc": "Harika! Marketlerin büyüklüğü ve türü farklı olunca örneklem evreni daha iyi temsil eder. (s. 168)"
+   },
+   "soru": {
+    "soru": "Evrenin hepsine ulaşmak zor olduğunda ne yapılır?",
+    "secenekler": [
+     "Araştırmadan vazgeçilir.",
+     "Veriler tahmin edilir.",
+     "Evreni temsil eden bir örneklem seçilir."
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartında küçük grubu anlatan cümleye bak.",
+    "aciklama": "Evreni temsil eden daha küçük bir grup, yani örneklem seçilir. (s. 165)"
+   }
+  },
+  {
+   "ad": "Örneklem Evreni Temsil Etmeli",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 50 h76 l-8 42 h-60 z' fill='#f2c14e'/><ellipse cx='60' cy='50' rx='38' ry='8' fill='#ffa94d'/><path d='M84 18 l-18 34' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/><ellipse cx='64' cy='54' rx='8' ry='4' fill='#f5f6fa'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>bir kaşık yeter</text></svg>",
+   "aciklama": "Örneklem evrenin özelliklerini taşımalıdır. Sadece kantine en yakın sınıftan veri toplamak sonucu yanlış yorumlatabilir. (s. 166)",
+   "ek": "Kantine en yakın sınıf sıraya erken girer; onların bekleme süresi bütün okulu göstermez. Bazen örneklem gerekmez: TÜİK bazı araştırmalarda evrenin tamamına güvenilir kaynaklardan ulaşır. (s. 167)",
+   "akilda": "Örneklem evrene benzemeli",
+   "soru": {
+    "soru": "Okuldaki öğrencilerin ekran süreleri araştırılıyor. Hangi örneklem en uygundur?",
+    "secenekler": [
+     "Sadece bilgisayar kulübü üyeleri",
+     "Her sınıftan rastgele seçilen öğrenciler",
+     "Sadece öğretmenler"
+    ],
+    "dogru": 1,
+    "ipucu": "Bütün okula benzeyen grubu bul.",
+    "aciklama": "Her sınıftan seçilen öğrenciler bütün okulu temsil eder. (s. 166)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangisi neyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Ne soruyoruz?",
+     "uyeler": [
+      "Araştırma Sorusu",
+      "İyi Araştırma Sorusu",
+      "Değişebilirlik"
+     ]
+    },
+    {
+     "etiket": "Kimden veri topluyoruz?",
+     "uyeler": [
+      "Evren",
+      "Örneklem",
+      "Örneklem Evreni Temsil Etmeli"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Araştırma sorusu bir grubun verileriyle cevaplanır: “… eğilimi nasıldır?”",
+  "İyi araştırma sorusu: amacı net, ölçülecek şey belli, veri toplamaya uygun.",
+  "Cevaplar kişiden kişiye değişir: değişebilirlik.",
+  "Evren, verilerin toplanabileceği en geniş gruptur.",
+  "Örneklem, evreni temsil eden daha küçük gruptur.",
+  "Örneklem evrene benzemeli; yoksa sonuç yanlış yorumlanır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "TÜİK nasıl oluyor da bütün Türkiye'yi biliyor?",
+   "cevap": "Bazı araştırmalarda evrenin tamamına güvenilir kurumların hazır verileriyle ulaşılır; o zaman örneklem gerekmez. (s. 167)"
+  },
+  {
+   "soru": "Kalp ritmi neden herkeste farklı?",
+   "cevap": "Yaş, kütle gibi özelliklere ve verinin toplandığı gruba göre değişir. Buna değişebilirlik denir. (s. 165)"
+  },
+  {
+   "soru": "Neden “eğilim” kelimesini kullanıyoruz?",
+   "cevap": "Tek bir kişiyi değil, grubun genel durumunu merak ediyoruz: Çoğu ne kadar su içiyor, hangi değerler sık? (s. 165)"
+  },
+  {
+   "soru": "Market örnekleminde neden büyük ve küçük marketler olmalı?",
+   "cevap": "Fiyatlar marketin büyüklüğüne ve türüne göre değişebilir. Sadece büyük marketler seçilirse sonuç Muğla'nın tamamını göstermez. (s. 168)"
+  },
+  {
+   "soru": "Kız ve erkek öğrencileri karşılaştıran soru da araştırma sorusu olur mu?",
+   "cevap": "Olur: “7/A'daki kız ve erkek öğrencilerin günlük su tüketimlerinin eğilimi nasıl değişmektedir?” iki grubu karşılaştırır. (s. 165)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okulundaki öğrencilerin kaç saat uyuduğunu araştıracaksın. Bir araştırma sorusu yaz; evreni ve örneklemi söyle.",
+   "ornekCevap": "Araştırma sorusu: Okulumuzdaki öğrencilerin günlük uyku sürelerinin eğilimi nasıldır? Evren: okuldaki bütün öğrenciler. Örneklem: her sınıftan seçilen 5 öğrenci.",
+   "anahtarlar": [
+    "eğilim",
+    "evren",
+    "örneklem",
+    "öğrenci"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi araştırma sorusu olarak uygundur?",
+   "secenekler": [
+    "Spor yapmayı sever misin?",
+    "7/B sınıfı öğrencilerinin haftalık spor sürelerinin eğilimi nasıldır?",
+    "Dün spor yaptın mı?"
+   ],
+   "dogru": 1,
+   "ipucu": "Bir grubun verileriyle cevaplanan soruyu bul.",
+   "aciklama": "Bu soru bütün sınıfın spor sürelerini soruyor. (s. 165)",
+   "kavram": "Araştırma Sorusu"
+  },
+  {
+   "soru": "“İzmir'deki ortaokulların kütüphanelerindeki kitap sayıları nasıl bir eğilim gösterir?” sorusunun evreni hangisidir?",
+   "secenekler": [
+    "Bir okulun kütüphanesi",
+    "Türkiye'deki bütün kütüphaneler",
+    "İzmir'deki bütün ortaokulların kütüphaneleri"
+   ],
+   "dogru": 2,
+   "ipucu": "Soru hangi şehri ve hangi okulları kapsıyor?",
+   "aciklama": "Soru İzmir'deki bütün ortaokul kütüphanelerini kapsıyor. (s. 165)",
+   "kavram": "Evren"
+  },
+  {
+   "soru": "Bir araştırmada evren “okuldaki bütün öğrenciler”dir. Hangisi bu evreni temsil etmez?",
+   "secenekler": [
+    "Her sınıftan seçilen 5 öğrenci",
+    "Sadece basketbol takımındaki öğrenciler",
+    "Her sınıftan rastgele seçilen öğrenciler"
+   ],
+   "dogru": 1,
+   "ipucu": "Bütün okula benzemeyen grubu bul.",
+   "aciklama": "Sadece takım üyeleri bütün okula benzemez; sonucu yanlış yorumlatır. (s. 166)",
+   "kavram": "Örneklem Evreni Temsil Etmeli"
+  },
+  {
+   "soru": "Bir okulda 15 sınıf var. Her sınıftan 4 öğrenci seçildi. Örneklemde kaç öğrenci var?",
+   "cevap": "60",
+   "ipucu": "Sınıf sayısını, her sınıftan seçilen kişi sayısıyla çarp.",
+   "aciklama": "15 · 4 = 60 öğrenci.",
+   "kavram": "Örneklem",
+   "birim": "öğrenci",
+   "yardim": {
+    "adimlar": [
+     "Kaç sınıf var?",
+     "Her sınıftan kaç kişi seçildi?",
+     "Sınıf sayısını her sınıftan seçilen kişi sayısıyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Bir sınıftaki öğrencilerin boy uzunlukları birbirinden farklıdır. Bu duruma ne denir?",
+   "secenekler": [
+    "Değişebilirlik",
+    "Örneklem",
+    "Evren"
+   ],
+   "dogru": 0,
+   "ipucu": "Cevapların kişiden kişiye değişmesi …",
+   "aciklama": "Verilerin kişiden kişiye değişmesine değişebilirlik denir. (s. 165)",
+   "kavram": "Değişebilirlik"
+  },
+  {
+   "soru": "Hangisi iyi bir araştırma sorusunun özelliği değildir?",
+   "secenekler": [
+    "Amacı nettir.",
+    "Veri toplamaya uygundur.",
+    "Cevabı herkes için aynıdır."
+   ],
+   "dogru": 2,
+   "ipucu": "İyi soruda cevaplar kişiden kişiye değişir mi?",
+   "aciklama": "İyi araştırma sorusunun cevapları kişiden kişiye değişir. (s. 165)",
+   "kavram": "İyi Araştırma Sorusu"
+  },
+  {
+   "soru": "Evren ile örneklem için hangisi doğrudur?",
+   "secenekler": [
+    "Örneklem evrenden büyüktür.",
+    "Örneklem evrenin içinden seçilen küçük gruptur.",
+    "Evren ile örneklem her zaman aynıdır."
+   ],
+   "dogru": 1,
+   "ipucu": "Çorba ve kaşığı düşün.",
+   "aciklama": "Örneklem, evreni temsil eden daha küçük bir gruptur. (s. 165)",
+   "kavram": "Örneklem"
+  },
+  {
+   "soru": "Bir araştırmanın evreni 120 öğrenci, örneklemi bunlardan 30 öğrenci. Evrende olup örneklemde olmayan kaç öğrenci var?",
+   "cevap": "90",
+   "ipucu": "Evrendeki öğrenci sayısından örneklemdekileri çıkar.",
+   "aciklama": "120 − 30 = 90 öğrenci.",
+   "kavram": "Evren",
+   "birim": "öğrenci",
+   "yardim": {
+    "adimlar": [
+     "Evrende kaç öğrenci var?",
+     "Örneklemde kaç öğrenci var?",
+     "Evrendekilerden örneklemdekileri çıkar."
+    ]
+   }
+  },
+  {
+   "soru": "Aynı anda iki farklı termometreyle ölçülen ateşin farklı çıkmasının sebebi nedir?",
+   "secenekler": [
+    "Kişinin değişmesi",
+    "Ölçüm aracının farklı olması",
+    "Evrenin büyük olması"
+   ],
+   "dogru": 1,
+   "ipucu": "Aynı anda ölçüldüyse değişen ne?",
+   "aciklama": "Kişi aynı, zaman aynı; değişen termometre. (s. 168)",
+   "kavram": "Değişebilirlik"
+  },
+  {
+   "soru": "TÜİK bazı araştırmalarda neden örneklem kullanmaz?",
+   "secenekler": [
+    "Örneklem seçmek yasak olduğu için",
+    "Araştırma sorusu olmadığı için",
+    "Evrenin tamamına güvenilir hazır verilerle ulaşabildiği için"
+   ],
+   "dogru": 2,
+   "ipucu": "Evrenin tamamına ulaşabiliyorsa örneklem gerekir mi?",
+   "aciklama": "TÜİK evrenin tamamına güvenilir kaynaklardan ulaşabilir. (s. 167)",
+   "kavram": "Örneklem Evreni Temsil Etmeli"
+  }
+ ]
+}

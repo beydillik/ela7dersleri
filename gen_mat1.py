@@ -5901,8 +5901,711 @@ def u2t4():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5, u2k6, u2k7, u2k8] + TARAMALAR
+# =================================================================
+# 3. TEMA: İSTATİSTİKSEL ARAŞTIRMA
+# Kitap dışı kararlar (Kemal'e bildirildi): "sayarak mı, ölçerek mi?" stratejisi ve karar ağacı (asıl kural: arada başka değer
+# olabilir mi?), kesikli = merdiven / sürekli = rampa benzetmesi, örneklem için çorba benzetmesi. Kitabın öğrenciye bıraktığı
+# sonuçlar (Defne'nin soruları s. 165, Aras'ın termometresi s. 168) Bilgi Kutusu/Hatırlatma metninden türetildi.
+T3 = "3. Tema: İstatistiksel Araştırma"
+P31, P32, P33 = "(s. 159–164)", "(s. 165–168)", "(s. 169–170, 192–193)"
+KAT, NIC, KES, SUR = "#ff8fb1", "#4fc3a1", "#8ce99a", "#c3a6ff"   # SVG koyu zemininde açık tonlar
+
+
+def _kutu(x, y, w, h, yazi, renk, boy=10, yazi_renk="#1b2340"):
+    return (f"<rect x='{x}' y='{y}' width='{w}' height='{h}' rx='7' fill='{renk}'/>"
+            + txt(x + w / 2, y + h / 2 + boy * 0.36, yazi, yazi_renk, boy))
+
+
+def _ok(x1, y1, x2, y2, renk="#f5f6fa"):
+    return f"<line x1='{x1}' y1='{y1}' x2='{x2}' y2='{y2}' stroke='{renk}' stroke-width='2.5' stroke-linecap='round'/>"
+
+
+def sutun_svg(etiketler, degerler, ust=None, w=330, h=160, renk=TEAL, baslik=None):
+    """Basit sütun grafiği (şeffaf zemin)."""
+    ust = ust or max(degerler)
+    x0, y0, yuk = 40, h - 26, h - 52
+    g = _ok(x0, y0, w - 10, y0) + _ok(x0, y0, x0, y0 - yuk - 6)
+    for i in range(0, ust + 1, max(1, ust // 5)):
+        y = y0 - yuk * i / ust
+        g += f"<line x1='{x0}' y1='{y}' x2='{w - 10}' y2='{y}' stroke='#3a4570' stroke-width='1'/>" + txt(x0 - 8, y + 4, str(i), "#f5f6fa", 11, 600, "end")
+    adim = (w - 10 - x0) / len(degerler)
+    for i, (e, d) in enumerate(zip(etiketler, degerler)):
+        bx = x0 + adim * i + adim * 0.22
+        bh = yuk * d / ust
+        g += f"<rect x='{bx:.1f}' y='{y0 - bh:.1f}' width='{adim * 0.56:.1f}' height='{bh:.1f}' rx='3' fill='{renk}'/>"
+        g += txt(bx + adim * 0.28, y0 + 16, e, "#f5f6fa", 11, 600)
+    if baslik:
+        g += txt(w / 2, 14, baslik, "#f2c14e", 12)
+    return gsvg(w, h, g)
+
+
+def karar_agaci_svg(w=330, h=176):
+    g = _kutu(105, 6, 120, 26, "Cevap sayı mı?", "#f2c14e", 12)
+    g += _ok(140, 32, 62, 56) + _ok(190, 32, 252, 56)
+    g += txt(70, 40, "hayır", "#f5f6fa", 10, 600) + txt(262, 40, "evet", "#f5f6fa", 10, 600)
+    g += _kutu(10, 58, 104, 26, "Kategorik", KAT, 12) + _kutu(206, 58, 96, 26, "Nicel", NIC, 12)
+    g += _ok(254, 84, 254, 96)
+    g += _kutu(170, 96, 156, 26, "Arada değer olur mu?", "#f2c14e", 11)
+    g += _ok(220, 122, 186, 140) + _ok(278, 122, 300, 140)
+    g += txt(174, 130, "hayır", "#f5f6fa", 10, 600) + txt(316, 128, "evet", "#f5f6fa", 10, 600)
+    g += _kutu(130, 142, 96, 30, "Kesikli", KES, 12) + _kutu(234, 142, 92, 30, "Sürekli", SUR, 12)
+    g += txt(56, 112, "sözcük:", "#ff8fb1", 10, 600) + txt(56, 126, "renk, ders", "#ff8fb1", 10, 600)
+    return gsvg(w, h, g)
+
+
+def svg3_veri():
+    g = "<rect x='28' y='16' width='64' height='88' rx='8' fill='#f5f6fa'/><rect x='44' y='10' width='32' height='12' rx='4' fill='#f2c14e'/>"
+    for i, s in enumerate(["88", "95", "118", "132"]):
+        g += txt(60, 42 + i * 17, s, "#1b2340", 13)
+    return bg(g + txt(60, 113, "veri seti", "#f2c14e", 11))
+
+
+def svg3_kategorik():
+    g = _kutu(12, 20, 46, 24, "mavi", "#6fb3ff", 11) + _kutu(62, 20, 46, 24, "yeşil", "#8ce99a", 11)
+    g += _kutu(12, 52, 46, 24, "Fen", KAT, 11) + _kutu(62, 52, 46, 24, "Türkçe", KAT, 10)
+    g += _kutu(22, 84, 76, 20, "otobüs", "#f2c14e", 11)
+    return bg(g + txt(60, 113, "sözcükle", KAT, 11))
+
+
+def svg3_nicel():
+    g = txt(36, 46, "3", NIC, 26) + txt(84, 46, "1,5", NIC, 22) + txt(60, 88, "24,75", NIC, 22)
+    return bg(g + txt(60, 112, "sayıyla", NIC, 11))
+
+
+def svg3_kesikli():
+    g = ""
+    for i in range(4):   # merdiven
+        g += f"<rect x='{14 + i * 24}' y='{86 - i * 18}' width='24' height='{18 + i * 18}' fill='{KES}' opacity='{0.55 + i * 0.15}'/>"
+        g += txt(26 + i * 24, 82 - i * 18, str(i), "#f5f6fa", 12)
+    return bg(g + txt(60, 113, "basamak basamak", KES, 11))
+
+
+def svg3_surekli():
+    g = f"<path d='M12 98 L108 30 L108 98 Z' fill='{SUR}' opacity='0.8'/>"
+    g += "<circle cx='60' cy='64' r='5' fill='#f2c14e'/>" + txt(44, 54, "1,505", "#f2c14e", 11)
+    return bg(g + txt(60, 113, "her noktada dur", SUR, 11))
+
+
+def svg3_adimlar():
+    g = ""
+    for i, (e, r) in enumerate([("Sor", "#f2c14e"), ("Topla", NIC), ("Analiz et", SUR), ("Yorumla", KAT)]):
+        y = 20 + i * 26
+        g += f"<circle cx='26' cy='{y}' r='11' fill='{r}'/>" + txt(26, y + 5, str(i + 1), "#1b2340", 13)
+        g += txt(44, y + 5, e, "#f5f6fa", 12, 700, "start")
+    return bg(g)
+
+
+def svg3_h_sutun():
+    g = _ok(18, 96, 108, 96) + _ok(18, 96, 18, 18)
+    for i, (d, e) in enumerate([(3, "Pt"), (5, "Sa"), (2, "Ça")]):
+        g += f"<rect x='{28 + i * 27}' y='{96 - d * 14}' width='18' height='{d * 14}' rx='2' fill='{TEAL}'/>" + txt(37 + i * 27, 110, e, "#f5f6fa", 10, 600)
+    g += "<line x1='18' y1='26' x2='64' y2='26' stroke='#f2c14e' stroke-width='1.5' stroke-dasharray='3 3'/>" + txt(12, 30, "5", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg3_h_arada():
+    g = _ok(12, 64, 108, 64)
+    g += "<line x1='20' y1='56' x2='20' y2='72' stroke='#f5f6fa' stroke-width='3'/><line x1='100' y1='56' x2='100' y2='72' stroke='#f5f6fa' stroke-width='3'/>"
+    g += txt(20, 90, "1", "#f5f6fa", 14) + txt(100, 90, "2", "#f5f6fa", 14)
+    g += "<circle cx='60' cy='64' r='6' fill='#f2c14e'/>" + txt(60, 48, "1,5", "#f2c14e", 14)
+    return bg(g + txt(60, 112, "arada hep sayı", "#f2c14e", 11))
+
+
+def svg3_soru():
+    g = txt(60, 64, "?", "#f2c14e", 52)
+    for i in range(5):
+        g += f"<circle cx='{20 + i * 20}' cy='92' r='7' fill='{NIC}'/>"
+    return bg(g + txt(60, 114, "bütün grup", NIC, 11))
+
+
+def svg3_iyi_soru():
+    g = ""
+    for i, s in enumerate(["amaç net", "ölçülebilir", "toplanabilir"]):
+        y = 30 + i * 28
+        g += f"<rect x='14' y='{y - 12}' width='18' height='18' rx='4' fill='#8ce99a'/>"
+        g += f"<path d='M18 {y - 3} l4 4 l7 -9' stroke='#1b2340' stroke-width='3' fill='none'/>" + txt(38, y + 3, s, "#f5f6fa", 11, 700, "start")
+    return bg(g)
+
+
+def svg3_degisebilir():
+    g = _ok(14, 96, 106, 96)
+    for i, (hh, r) in enumerate([(40, NIC), (62, "#f2c14e"), (30, KAT), (52, SUR)]):
+        g += f"<circle cx='{26 + i * 23}' cy='{90 - hh}' r='7' fill='{r}'/><rect x='{21 + i * 23}' y='{96 - hh}' width='10' height='{hh}' rx='3' fill='{r}'/>"
+    return bg(g + txt(60, 114, "herkes farklı", "#f2c14e", 11))
+
+
+def _noktalar(cx, cy, r, renk, n=18, rr=3.2):
+    import math
+    g = ""
+    for i in range(n):
+        a, d = i * 2.4, r * math.sqrt((i + 0.5) / n)
+        g += f"<circle cx='{cx + d * math.cos(a):.1f}' cy='{cy + d * math.sin(a):.1f}' r='{rr}' fill='{renk}'/>"
+    return g
+
+
+def svg3_evren():
+    g = f"<circle cx='60' cy='54' r='42' fill='none' stroke='#f2c14e' stroke-width='3'/>" + _noktalar(60, 54, 36, "#f5f6fa", 40)
+    return bg(g + txt(60, 112, "en geniş grup", "#f2c14e", 11))
+
+
+def svg3_orneklem():
+    g = f"<circle cx='60' cy='54' r='42' fill='none' stroke='#f2c14e' stroke-width='3'/>" + _noktalar(60, 54, 36, "#5a6280", 40)
+    g += f"<circle cx='74' cy='64' r='18' fill='none' stroke='{NIC}' stroke-width='3'/>" + _noktalar(74, 64, 13, NIC, 7)
+    return bg(g + txt(60, 112, "küçük grup", NIC, 11))
+
+
+def svg3_temsil():
+    g = "<path d='M22 50 h76 l-8 42 h-60 z' fill='#f2c14e'/><ellipse cx='60' cy='50' rx='38' ry='8' fill='#ffa94d'/>"
+    g += "<path d='M84 18 l-18 34' stroke='#f5f6fa' stroke-width='4' stroke-linecap='round'/><ellipse cx='64' cy='54' rx='8' ry='4' fill='#f5f6fa'/>"
+    return bg(g + txt(60, 112, "bir kaşık yeter", "#f2c14e", 11))
+
+
+def svg3_anket():
+    g = "<rect x='26' y='12' width='68' height='90' rx='8' fill='#f5f6fa'/>"
+    for i, s in enumerate(["1. Kaç saat", "uyuyorsun?", "____"]):
+        g += txt(60, 36 + i * 18, s, "#1b2340", 10)
+    g += f"<circle cx='42' cy='88' r='5' fill='{NIC}'/><circle cx='60' cy='88' r='5' fill='{NIC}'/><circle cx='78' cy='88' r='5' fill='{NIC}'/>"
+    return bg(g + txt(60, 113, "her kişiye", NIC, 11))
+
+
+def svg3_plan():
+    g = ""
+    for i, s in enumerate(["Nerede?", "Ne zaman?", "Nasıl?", "Kaydet"]):
+        g += _kutu(18, 12 + i * 24, 84, 20, s, ["#f2c14e", NIC, SUR, KAT][i], 11)
+    return bg(g + txt(60, 114, "önce plan", "#f2c14e", 11))
+
+
+def svg3_kaynak():
+    g = "<path d='M60 12 l38 14 v26 c0 26 -18 42 -38 50 c-20 -8 -38 -24 -38 -50 v-26 z' fill='#4fc3a1'/>"
+    g += txt(60, 56, "gov.tr", "#1b2340", 14) + txt(60, 74, "edu.tr", "#1b2340", 12)
+    return bg(g)
+
+
+def svg3_kisisel():
+    g = "<rect x='16' y='26' width='88' height='56' rx='8' fill='#f5f6fa'/><circle cx='38' cy='50' r='11' fill='#ffa94d'/>"
+    g += "<rect x='56' y='40' width='38' height='6' rx='3' fill='#5a6280'/><rect x='56' y='52' width='30' height='6' rx='3' fill='#5a6280'/><rect x='26' y='66' width='68' height='6' rx='3' fill='#5a6280'/>"
+    return bg(g + txt(60, 104, "kişiye ait", "#f2c14e", 11))
+
+
+def svg3_izin():
+    g = "<rect x='34' y='52' width='52' height='42' rx='8' fill='#f2c14e'/><path d='M44 52 v-12 a16 16 0 0 1 32 0 v12' stroke='#f2c14e' stroke-width='7' fill='none'/>"
+    g += "<circle cx='60' cy='70' r='6' fill='#1b2340'/><rect x='57' y='72' width='6' height='12' fill='#1b2340'/>"
+    return bg(g + txt(60, 112, "izin al, gizli tut", "#f2c14e", 11))
+
+
+def svg3_kvkk():
+    g = "<path d='M60 12 l38 14 v26 c0 26 -18 42 -38 50 c-20 -8 -38 -24 -38 -50 v-26 z' fill='#c3a6ff'/>"
+    g += txt(60, 62, "KVKK", "#1b2340", 18)
+    return bg(g)
+
+
+# =================================================================
+def u3k1():
+    return {
+        "id": "u3k1", "unite": T3, "baslik": "Veri Türleri", "sayfalar": "s. 159–164",
+        "giris": "Her gün bir sürü bilgi topluyoruz: kaç saat uyuduğumuz, kaç kardeşimiz olduğu, en sevdiğimiz renk. Bu bilgilere veri denir. Bu konuda verileri türlerine ayırmayı öğreneceğiz. Sonra bir araştırmanın 4 adımını tanıyacağız.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda grafik okuyacağız ve ondalık sayılarla karşılaşacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Sütun grafiği okuma", "sinif": "Önceki yıllar", "svg": svg3_h_sutun(),
+                 "anlatim": "Sütun grafiğinde her sütunun boyu bir sayıyı gösterir. Sütunun tepesinden sola, sayıların yazdığı eksene bakarak değeri okuruz.",
+                 "akilda": "Sütunun tepesi = değer",
+                 "ornek": {"problem": "Grafikte Salı günü kaç kitap okunmuş?", "adimlar": [
+                     {"metin": "Salı sütununu bul.", "islem": "Sa"},
+                     {"metin": "Sütunun tepesinden sola bak.", "islem": "5 kitap"}]},
+                 "sorular": [
+                     S("Grafiğe göre en çok kitap hangi gün okunmuş?", ["Pazartesi", "Salı", "Çarşamba"], 1,
+                       "En uzun sütunu bul.", "En uzun sütun Salı'ya ait: 5 kitap.",
+                       svg=sutun_svg(["Pzt", "Salı", "Çrş"], [3, 5, 2], 5, baslik="Okunan kitap sayısı")),
+                     G("Grafiğe göre Pazartesi günü kaç kitap okunmuş?", "3", "Pazartesi sütununun tepesinden sola bak.", "Pazartesi sütunu 3'e kadar uzanıyor.",
+                       svg=sutun_svg(["Pzt", "Salı", "Çrş"], [3, 5, 2], 5, baslik="Okunan kitap sayısı"),
+                       yardim={"adimlar": ["Pazartesi sütununu bul.", "Tepesinden sola, sayı eksenine bak."]})]},
+                {"ad": "İki sayı arasında başka sayı", "sinif": "1. tema, 5. konu", "svg": svg3_h_arada(),
+                 "anlatim": "1 ile 2 arasında 1,5 vardır. 1,5 ile 2 arasında da 1,7 vardır. İki ondalık sayı arasında her zaman başka bir sayı bulunur.",
+                 "akilda": "Arada hep bir sayı var",
+                 "sayiDogrusu": {"min": 1, "max": 2, "bolme": 10, "isaretler": [{"x": 1.5, "etiket": "1,5", "renk": "#f2c14e"}]},
+                 "sorular": [
+                     S("1,4 ile 1,5 arasında başka bir sayı var mı?", ["Yok", "Var, örneğin 1,45", "Var, örneğin 1,6"], 1,
+                       "İki ondalık sayının arasına bir basamak daha ekleyebilirsin.", "1,40 ile 1,50 arasında 1,45 vardır."),
+                     S("Hangisi 2 ile 3 arasındadır?", ["2,6", "3,2", "1,9"], 0,
+                       "2'den büyük, 3'ten küçük sayıyı ara.", "2 < 2,6 < 3.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Veri", "renk": "#b7791f", "svg": svg3_veri(),
+             "aciklama": "Bir soruya cevap bulmak için topladığımız bilgilere veri denir. Toplanan verilerin hepsine birden veri seti deriz.",
+             "ek": "Kitaptaki örnekte 26 öğrencinin bir haftada okuduğu sayfa sayıları (88, 95, 118 …) bir veri setidir. (s. 159)",
+             "akilda": "Toplanan bilgi = veri",
+             "soru": S("26 öğrencinin bir haftada okuduğu sayfa sayılarının hepsine birden ne denir?", ["Veri seti", "Grafik", "Araştırma sorusu"], 0,
+                       "Bilgi kartındaki ikinci cümleye bak.", "Toplanan verilerin hepsine birden veri seti denir. (s. 159)")},
+            {"ad": "Kategorik Veri", "renk": "#c2255c", "svg": svg3_kategorik(),
+             "aciklama": "Sayıyla değil, sözcükle (bir grup adıyla) yazılan veriye kategorik veri denir. Örneğin en sevilen ders, göz rengi, okula geliş aracı.",
+             "ek": "6. sınıftan hatırla: Cevaplar sözcüktür ama her grupta kaç kişi olduğunu sayabiliriz: “Fen: 12 kişi, İngilizce: 4 kişi” gibi.",
+             "akilda": "Cevap sözcükse: kategorik",
+             "soru": S("“En sevdiğin renk hangisi?” sorusunun cevapları hangi veri türüdür?", ["Nicel veri", "Sürekli veri", "Kategorik veri"], 2,
+                       "Cevaplar sayı mı, sözcük mü?", "Cevaplar sözcüktür (mavi, yeşil …): kategorik veri.")},
+            {"ad": "Nicel Veri", "renk": "#1f9e8f", "svg": svg3_nicel(),
+             "aciklama": "Sayısal olarak ifade edilebilen verilere nicel veri denir. (s. 163)",
+             "ek": "Kardeş sayısı, boy uzunluğu, bir ürünün fiyatı nicel veridir. Nicel veriler ikiye ayrılır: kesikli ve sürekli. (s. 163)",
+             "akilda": "Cevap sayıysa: nicel",
+             "soru": S("Hangisi nicel veridir?", ["Okuldaki öğrenci sayısı", "Tuttuğun takım", "Doğduğun şehir"], 0,
+                       "Sayıyla yazılanı bul.", "Öğrenci sayısı sayıyla yazılır: nicel veri. (s. 163)")},
+            {"ad": "Kesikli Veri", "renk": "#2f8f73", "svg": svg3_kesikli(),
+             "aciklama": "Kesikli veri, iki değer arasında başka değer alamaz. Genelde sayarak bulunur: 2 kardeş olur, 2,5 kardeş olmaz. (s. 163)",
+             "ek": "Kardeş sayısı, kitaplıktaki kitap sayısı, atılan gol sayısı, okuldaki öğrenci sayısı kesikli veridir (s. 163). Merdiven gibi düşün: basamaktan basamağa atlarsın, arada duramazsın.",
+             "akilda": "Sayarak bulunur: kesikli",
+             "cozum": {"baslik": "Hangi veri türü?",
+                       "problem": "Bir sınıftaki öğrencilerin kardeş sayıları hangi veri türüdür?",
+                       "svg": karar_agaci_svg(),
+                       "adimlar": [
+                           {"metin": "Cevap sayı mı, sözcük mü? Sayı: 0, 1, 2, 3 …", "islem": "Sayı → nicel"},
+                           {"metin": "Bu sayıyı sayarak mı, ölçerek mi buluyoruz? Kardeşlerimizi sayarız.", "islem": "Sayarak → kesikli"},
+                           {"metin": "Kontrol et: 2 kardeş ile 3 kardeş arasında başka değer var mı? 2,5 kardeş olmaz.", "islem": "Arada değer yok ✓"}],
+                       "sonuc": "Kardeş sayısı kesikli veridir. (s. 163)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Bir maçta atılan gol sayıları hangi veri türüdür?",
+                       "adimlar": [
+                           {"metin": "Cevap sayı mı, sözcük mü?",
+                            "soru": S("Gol sayısının cevabı nasıl yazılır?", ["Sayıyla: 0, 1, 2 …", "Sözcükle: takım adı", "Renkle"], 0,
+                                      "“Kaç gol?” diye soruyoruz.", "Gol sayısı 0, 1, 2 … diye sayıyla yazılır."),
+                            "islem": "Sayı → nicel"},
+                           {"metin": "Sayarak mı, ölçerek mi?",
+                            "soru": S("Golleri nasıl buluruz?", ["Cetvelle ölçerek", "Sayarak", "Tartarak"], 1,
+                                      "Bir gol, iki gol …", "Golleri tek tek sayarız; 1,5 gol olmaz."),
+                            "islem": "Sayarak → kesikli"}],
+                       "sonuc": "Harika! Gol sayısı kesikli veridir. (s. 163)"},
+             "soru": S("Hangisi kesikli veridir?", ["Boy uzunluğu", "Vücut sıcaklığı", "Kitaplıktaki kitap sayısı"], 2,
+                       "Hangisini sayarak buluruz?", "Kitapları tek tek sayarız; 3,5 kitap olmaz: kesikli veri. (s. 163)")},
+            {"ad": "Sürekli Veri", "renk": "#7b4fc9", "svg": svg3_surekli(),
+             "aciklama": "Sürekli veri, iki ölçüm arasında sınırsız değer alabilir. Genelde ölçerek bulunur: boy 1,50 m, 1,505 m … olabilir. (s. 163)",
+             "ek": "Boy uzunluğu, aylık yağış miktarı, vücut sıcaklığı, ürünlerin fiyatları sürekli veridir (s. 163). Rampa gibi düşün: her noktada durabilirsin. Emin olamazsan sor: “Arada başka değer olabilir mi?”",
+             "akilda": "Ölçerek bulunur: sürekli",
+             "cozum": {"baslik": "Bitkinin boyu",
+                       "problem": "Humuslu toprakta yetişen bir bitkinin boyu 4 haftada 2,0 cm'den 10,0 cm'ye çıkmış. Bitki boyu hangi veri türüdür?",
+                       "adimlar": [
+                           {"metin": "Cevap sayı mı? Evet: 2,0 cm, 5,5 cm, 8,7 cm …", "islem": "Sayı → nicel"},
+                           {"metin": "Boyu sayarak mı, ölçerek mi buluruz? Cetvelle ölçeriz.", "islem": "Ölçerek → sürekli"},
+                           {"metin": "Kontrol et: 5,5 cm ile 5,6 cm arasında 5,55 cm olabilir mi? Evet.", "islem": "Arada değer var ✓"}],
+                       "sonuc": "Bitki boyu sürekli veridir. (s. 163)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Bir ürünün fiyatı 24,75 TL. Fiyat hangi veri türüdür?",
+                       "adimlar": [
+                           {"metin": "Cevap sayı: 24,75.", "islem": "Sayı → nicel"},
+                           {"metin": "Arada başka değer olabilir mi?",
+                            "soru": S("24,75 TL ile 24,80 TL arasında başka fiyat olabilir mi?", ["Hayır, olamaz.", "Evet, 24,78 TL gibi.", "Sadece 25 TL olabilir."], 1,
+                                      "İki ondalık sayının arasında hep başka sayı vardır.", "24,75 < 24,78 < 24,80: arada değer var."),
+                            "islem": "Arada değer var → sürekli"}],
+                       "sonuc": "Harika! Ürünlerin fiyatları sürekli veridir. (s. 163)"},
+             "soru": S("Hangisi sürekli veridir?", ["Kardeş sayısı", "Aylık yağış miktarı", "Atılan gol sayısı"], 1,
+                       "Hangisini ölçerek buluruz?", "Yağış miktarı ölçülür; arada sınırsız değer olabilir: sürekli veri. (s. 163)")},
+            {"ad": "Araştırmanın 4 Adımı", "renk": "#5f3dc4", "svg": svg3_adimlar(),
+             "aciklama": "İstatistiksel araştırma 4 adımda yapılır: 1) Araştırma sorusunu belirle, 2) Verileri topla, 3) Verileri analiz et, 4) Yorumla ve karar ver. (s. 164)",
+             "ek": "Analiz adımında veriler grafikle gösterilir ve veri setini temsil edecek değer bulunur. Bir adım uygun gitmezse geri dönülüp yeniden planlanabilir. (s. 164)",
+             "akilda": "Sor, topla, analiz et, yorumla",
+             "soru": S("Araştırmanın ilk adımı hangisidir?", ["Araştırma sorusunu belirlemek", "Verileri toplamak", "Grafik çizmek"], 0,
+                       "Bilgi kartında 1 numaralı adıma bak.", "Önce araştırma sorusu belirlenir, sonra veriler toplanır. (s. 164)")}
+        ],
+        "gruplar": [{"soru": "Hangi grupta?", "kutular": [
+            {"etiket": "Sözcükle yazılır", "uyeler": ["Kategorik Veri"]},
+            {"etiket": "Sayıyla yazılır", "uyeler": ["Nicel Veri", "Kesikli Veri", "Sürekli Veri"]},
+            {"etiket": "Araştırmanın parçası", "uyeler": ["Veri", "Araştırmanın 4 Adımı"]}]}],
+        "akildaKalsin": [
+            "Bir soruya cevap için topladığımız bilgilere veri denir.",
+            "Cevap sözcükse kategorik, sayıysa nicel veridir.",
+            "Kesikli veri: arada değer yok, genelde sayarak bulunur (kardeş sayısı).",
+            "Sürekli veri: arada sınırsız değer var, genelde ölçerek bulunur (boy uzunluğu).",
+            "Emin değilsen sor: “Arada başka değer olabilir mi?”",
+            "Araştırmanın 4 adımı: Sor, topla, analiz et, yorumla."],
+        "merakKutusu": [
+            {"soru": "Uyku süresi hangi veri türüdür?", "cevap": "Uyku süresi ölçülür. 8 saat ile 9 saat arasında 8,5 saat de olabilir: sürekli veri. (s. 162–163)"},
+            {"soru": "Geri kazanım yüzdeleri (27,20 … 36,08) hangi veri türüdür?", "cevap": "Sayıyla yazılır ve iki değer arasında başka değer olabilir: sürekli veri. (s. 163)"},
+            {"soru": "Sürekli veriye neden “sürekli” deniyor?", "cevap": "Bir çizgi gibi kesintisizdir: iki değer arasında sınırsız değer vardır. Kesikli veri ise basamak basamak ilerler. (s. 163)"},
+            {"soru": "Kategorik verileri hiç sayamaz mıyız?", "cevap": "Cevaplar sözcüktür ama her gruba kaç kişinin düştüğünü sayabiliriz. Bu sayılarla grafik çizeriz."},
+            {"soru": "Araştırma bitince bir daha başa dönülmez mi?", "cevap": "Döner! Sonuç soruya cevap vermiyorsa adımlara geri dönüp yeniden planlama yapılabilir. (s. 164)"}],
+        "dusunVeYaz": [{"soru": "Okuldaki kitap sayısı ile bir ayda yağan yağmur miktarı aynı veri türü müdür? Neden?",
+                        "ornekCevap": "Hayır. Kitap sayısı sayarak bulunur, arada değer olmaz: kesikli. Yağmur miktarı ölçülür, arada sınırsız değer olabilir: sürekli.",
+                        "anahtarlar": ["kesikli", "sürekli", "say", "ölç", "arada"]}],
+        "sorular": [
+            S("“Okula nasıl geliyorsun?” sorusunun cevapları (otobüs, yürüyerek, araba) hangi veri türüdür?", ["Kategorik veri", "Kesikli veri", "Sürekli veri"], 0,
+              "Cevaplar sayı mı, sözcük mü?", "Cevaplar sözcüktür: kategorik veri.", kavram="Kategorik Veri"),
+            S("Bir sınıftaki öğrencilerin kardeş sayıları hangi veri türüdür?", ["Sürekli veri", "Kategorik veri", "Kesikli veri"], 2,
+              "Kardeşleri sayar mıyız, ölçer miyiz?", "Kardeşler sayılır; 2,5 kardeş olmaz: kesikli veri. (s. 163)", kavram="Kesikli Veri"),
+            S("Vücut sıcaklığı hangi veri türüdür?", ["Kesikli veri", "Sürekli veri", "Kategorik veri"], 1,
+              "36,5 °C ile 36,6 °C arasında başka değer olabilir mi?", "Vücut sıcaklığı ölçülür; arada sınırsız değer olabilir: sürekli veri. (s. 163)", kavram="Sürekli Veri"),
+            G("Şu verilerden kaç tanesi kesikli veridir? Gol sayısı · boy uzunluğu · kitap sayısı · yağış miktarı · öğrenci sayısı", "3",
+              "Her biri için sor: sayarak mı, ölçerek mi?", "Gol, kitap ve öğrenci sayısı kesiklidir: 3 tane. (s. 163)", kavram="Kesikli Veri",
+              yardim={"adimlar": ["Her veri için sor: sayarak mı buluyoruz, ölçerek mi?", "Sayarak bulunanları işaretle.", "İşaretlediklerini say."]}),
+            S("Nicel veri için hangisi doğrudur?", ["Sayısal olarak ifade edilir.", "Sözcükle ifade edilir.", "Sadece tam sayı olur."], 0,
+              "Bilgi kartındaki tanıma bak.", "Nicel veriler sayısal olarak ifade edilir; 1,5 gibi ondalık da olabilir. (s. 163)", kavram="Nicel Veri"),
+            S("Bir bitkinin boyu 5,5 cm'den 8,7 cm'ye uzadı. Bu iki ölçüm arasında kaç farklı boy olabilir?", ["Hiç yok", "Sadece 3", "Sınırsız"], 2,
+              "Boy sürekli veridir.", "Sürekli veri iki ölçüm arasında sınırsız değer alabilir. (s. 163)", kavram="Sürekli Veri"),
+            S("Melis verilerini grafikle gösterdi ve veri setini temsil edecek değeri buldu. Melis hangi adımdadır?", ["Veri toplama", "Veri analizi", "Araştırma sorusunu belirleme"], 1,
+              "Grafik ve temsil değeri hangi adımda yapılır?", "Grafik çizmek ve temsil değeri bulmak 3. adım olan veri analizidir. (s. 164)", kavram="Araştırmanın 4 Adımı"),
+            G("Araştırma sürecinde “Yorumlama ve karar verme” kaçıncı adımdır?", "4",
+              "Adımları sırayla say: Sor, topla, analiz et, …", "Sor (1), topla (2), analiz et (3), yorumla (4). (s. 164)", kavram="Araştırmanın 4 Adımı",
+              yardim={"adimlar": ["İlk adım araştırma sorusu.", "Sonra verileri toplama, sonra analiz.", "Analizden sonra gelen adımın sırasını say."]}),
+            S("Türkiye'nin 2021–2024 geri kazanım yüzdeleri (27,20 … 36,08) bir tabloya yazıldı. Bu sayıların hepsine birden ne denir?", ["Anket", "Veri seti", "Grafik"], 1,
+              "Toplanan verilerin hepsine birden ne deniyordu?", "Toplanan verilerin hepsine birden veri seti denir. (s. 163)", kavram="Veri"),
+            S("Hangisinin cevabı kategorik veri olur?", ["Kaç saat uyudun?", "Boyun kaç cm?", "Hangi sporu seversin?"], 2,
+              "Cevabı sözcük olan soruyu bul.", "Spor adı sözcüktür (futbol, voleybol): kategorik veri.", kavram="Kategorik Veri")]
+    }
+
+
+# =================================================================
+def u3k2():
+    return {
+        "id": "u3k2", "unite": T3, "baslik": "Araştırma Sorusu, Evren ve Örneklem", "sayfalar": "s. 165–168",
+        "giris": "Bir şeyi merak edince önce iyi bir soru sorarız. Bu konuda araştırma sorusu yazmayı öğreneceğiz. Sonra verileri kimden toplayacağımıza karar vereceğiz: evren ve örneklem.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu önceki konunun devamı. Veri türlerini ve araştırmanın adımlarını hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Veri türleri", "sinif": "3. tema, 1. konu", "svg": svg3_kesikli(),
+                 "anlatim": "Cevap sözcükse kategorik, sayıysa nicel veridir. Nicel veride arada başka değer olamıyorsa kesikli, olabiliyorsa süreklidir.",
+                 "akilda": "Sözcük mü, sayı mı? Arada değer var mı?",
+                 "ornek": {"problem": "Boy uzunluğu hangi veri türüdür?", "adimlar": [
+                     {"metin": "Cevap sayı mı? Evet: 1,52 m.", "islem": "Nicel"},
+                     {"metin": "1,52 m ile 1,53 m arasında değer olabilir mi? Evet.", "islem": "Sürekli"}]},
+                 "sorular": [
+                     S("“Günde kaç litre su içersin?” sorusunun cevabı hangi veri türüdür?", ["Kategorik", "Kesikli", "Sürekli"], 2,
+                       "1,5 L ile 2 L arasında değer olabilir mi?", "Su miktarı ölçülür; arada değer olabilir: sürekli."),
+                     S("“Kaç kardeşin var?” sorusunun cevabı hangi veri türüdür?", ["Sürekli", "Kesikli", "Kategorik"], 1,
+                       "Kardeşleri sayarız.", "Kardeş sayısı sayılır; arada değer olmaz: kesikli.")]},
+                {"ad": "Araştırmanın 4 adımı", "sinif": "3. tema, 1. konu", "svg": svg3_adimlar(),
+                 "anlatim": "Araştırma 4 adımda yapılır: 1) Soruyu belirle, 2) Verileri topla, 3) Analiz et, 4) Yorumla ve karar ver.",
+                 "akilda": "Sor, topla, analiz et, yorumla",
+                 "sorular": [
+                     S("Verileri toplamadan önce hangi adım yapılır?", ["Araştırma sorusunu belirlemek", "Grafik çizmek", "Yorumlamak"], 0,
+                       "Birinci adım hangisiydi?", "Önce araştırma sorusu belirlenir."),
+                     S("Grafik çizmek hangi adımın içindedir?", ["Veri toplama", "Veri analizi", "Araştırma sorusu"], 1,
+                       "Grafik, verileri incelemek içindir.", "Grafik çizmek veri analizi adımındadır.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Araştırma Sorusu", "renk": "#c2255c", "svg": svg3_soru(),
+             "aciklama": "Araştırma sorusu, bir grubun verileriyle cevaplanacak sorudur. Çoğu zaman “… eğilimi nasıldır?” diye yazılır. (s. 165)",
+             "ek": "Örnek: “7/A sınıfı öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?” Cevap tek kişiden değil, bütün sınıfın verilerinden çıkar. (s. 165)",
+             "akilda": "Grubun verisiyle cevaplanır",
+             "soru": S("Hangisi bir araştırma sorusudur?", ["7/A sınıfı öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?", "Bir günde kaç litre su içersin?", "Su içmeyi sever misin?"], 0,
+                       "Bir grubun verileriyle cevaplanan soruyu bul.", "Bu soru bütün sınıfın verileriyle cevaplanır. (s. 165)")},
+            {"ad": "İyi Araştırma Sorusu", "renk": "#e8590c", "svg": svg3_iyi_soru(),
+             "aciklama": "İyi bir araştırma sorusunun amacı nettir, neyi ölçeceğimiz bellidir, veri toplamaya uygundur ve cevapları kişiden kişiye değişir. (s. 165)",
+             "ek": "“Su içmeyi sever misin?” araştırma sorusu olarak uygun değildir: Cevabı evet ya da hayır, ne ölçeceğimiz belli değil.",
+             "akilda": "Net, ölçülebilir, toplanabilir",
+             "cozum": {"baslik": "Soru uygun mu?",
+                       "problem": "Defne su tüketimini araştırıyor. Sorusu: “Günde 2,5 litreden az mı su içersiniz?” Bu, araştırma sorusu olarak uygun mu?",
+                       "adimlar": [
+                           {"metin": "Cevap ne olur? Sadece evet ya da hayır.", "islem": "Evet / hayır"},
+                           {"metin": "Neyi ölçüyoruz? Kaç litre içildiğini öğrenemiyoruz.", "islem": "Miktar kayboluyor ✗"},
+                           {"metin": "Grubun verisiyle cevaplanan daha iyi bir soru yaz.", "islem": "7/A öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?"}],
+                       "sonuc": "“2,5 litreden az mı?” uygun değildir; grubun su tüketiminin eğilimini sormak daha iyidir. (s. 165)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Okulundaki öğrencilerin ekran kullanım sürelerini araştıracaksın.",
+                       "adimlar": [
+                           {"metin": "İyi bir araştırma sorusu seç.",
+                            "soru": S("Hangisi daha iyi bir araştırma sorusudur?", ["Telefonu sever misin?", "Okulumuzdaki öğrencilerin günlük ekran kullanım sürelerinin eğilimi nasıldır?", "Dün telefona baktın mı?"], 1,
+                                      "Grubun verisiyle cevaplanan, ölçülecek şeyi belli olan soruyu bul.", "Bu soru bütün okulun ekran sürelerini soruyor; ölçülecek şey belli."),
+                            "islem": "Grubun ekran süreleri soruluyor ✓"},
+                           {"metin": "Bu soruda neyi ölçeceğiz?",
+                            "soru": S("Bu araştırmada neyi ölçeceğiz?", ["En sevilen oyunu", "Günlük ekran süresini", "Telefon markasını"], 1,
+                                      "Soruda hangi süre geçiyor?", "Ölçeceğimiz şey günlük ekran kullanım süresidir."),
+                            "islem": "Ölçülecek: günlük ekran süresi"}],
+                       "sonuc": "Harika! Amacı net, ölçülecek şeyi belli bir soru yazdın. (s. 166)"},
+             "soru": S("“Su içmeyi sever misin?” neden iyi bir araştırma sorusu değildir?", ["Çok uzun olduğu için", "Sayı içerdiği için", "Ne ölçeceğimiz belli olmadığı için"], 2,
+                       "İyi sorunun özelliklerine bak: ölçülecek şey belli mi?", "Cevabı evet/hayır; neyi ölçeceğimiz belli değil. (s. 165)")},
+            {"ad": "Değişebilirlik", "renk": "#2f8f73", "svg": svg3_degisebilir(),
+             "aciklama": "Aynı soruyu farklı kişilere sorunca farklı cevaplar alırız. Araştırma sorusunun cevapları kişiden kişiye değişebilmelidir. (s. 165)",
+             "ek": "Kalp ritmi kişinin yaşına ve kütlesine göre değişir (s. 165). Hasta Alya'nın ateşi 40,1 °C, sağlıklı Elif'inki 36,3 °C. Aras'ın ateşi iki termometrede farklı çıktı: ölçüm aracı da fark yaratabilir. (s. 168)",
+             "akilda": "Cevaplar kişiden kişiye değişir",
+             "soru": S("Aras'ın ateşi aynı anda A termometresinde 38,7 °C, B termometresinde 39,0 °C çıktı. Farkın sebebi nedir?", ["Aras'ın hastalanması", "Ölçüm aracının farklı olması", "Aras'ın yaşı"], 1,
+                       "Değişen şey Aras mı, termometre mi?", "Aynı anda ölçülmüş; değişen tek şey termometre. Ölçüm aracı fark yaratır. (s. 168)")},
+            {"ad": "Evren", "renk": "#b7791f", "svg": svg3_evren(),
+             "aciklama": "Evren, araştırma sorusuna yönelik verilerin toplanabileceği en geniş gruptur. (s. 165)",
+             "ek": "“Denizli'deki ortaokul öğrencilerinin kantin sırasında bekledikleri süre …” sorusunun evreni Denizli'de kantini olan bütün ortaokullardır. (s. 166)",
+             "akilda": "En geniş grup",
+             "soru": S("“Türkiye'deki 7. sınıf öğrencilerinin uyku süreleri” araştırmasının evreni hangisidir?", ["Türkiye'deki bütün 7. sınıf öğrencileri", "Ela'nın sınıfı", "Ela'nın okulu"], 0,
+                       "Soru kimleri kapsıyor? En geniş grup hangisi?", "Soru Türkiye'deki bütün 7. sınıfları kapsıyor: evren budur. (s. 165)")},
+            {"ad": "Örneklem", "renk": "#1f9e8f", "svg": svg3_orneklem(),
+             "aciklama": "Evrenin hepsine ulaşmak çoğu zaman zor ve pahalıdır. Evreni temsil eden daha küçük bir grup seçilir; buna örneklem denir. (s. 165)",
+             "ek": "Çorbanın tadına bakarken bütün tencereyi içmeyiz, bir kaşık yeter. Ama önce çorbayı karıştırırız ki kaşıktaki bütün tencereye benzesin.",
+             "akilda": "Evrenden seçilen küçük grup",
+             "cozum": {"baslik": "Kantin sırası",
+                       "problem": "İpek'in sorusu: “Denizli'deki ortaokul öğrencilerinin teneffüste kantin sırasında bekledikleri süre nasıl bir eğilim gösterir?” Evren ve örneklem ne olabilir?",
+                       "adimlar": [
+                           {"metin": "Soru kimleri kapsıyor? Denizli'deki ortaokul öğrencilerini.", "islem": "Evren: Denizli'de kantini olan bütün ortaokullar"},
+                           {"metin": "Hepsine ulaşmak zor. Ulaşabileceğimiz, evrene benzeyen bir grup seç.", "islem": "Örneklem: Cumhuriyet Ortaokulunun bütün öğrencileri"},
+                           {"metin": "Kontrol et: Bu grup evrenin içinde mi? Evet.", "islem": "Örneklem evrenin içinde ✓"}],
+                       "sonuc": "Evren Denizli'de kantini olan ortaokullar, örneklem Cumhuriyet Ortaokulunun bütün öğrencileri. (s. 166)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Betül, Muğla'daki marketlerde glütensiz makarnanın 100 gram fiyatını araştırıyor.",
+                       "adimlar": [
+                           {"metin": "Önce evreni bul.",
+                            "soru": S("Bu araştırmanın evreni hangisidir?", ["Betül'ün evi", "Muğla'daki bütün marketler", "Türkiye'deki bütün fırınlar"], 1,
+                                      "Araştırma hangi şehirdeki marketleri kapsıyor?", "Araştırma Muğla'daki marketleri kapsıyor."),
+                            "islem": "Evren: Muğla'daki bütün marketler"},
+                           {"metin": "Şimdi evreni temsil edecek bir örneklem seç.",
+                            "soru": S("Hangisi uygun bir örneklemdir?", ["İstanbul'daki 5 market", "Sadece Betül'ün evine en yakın market", "Muğla'nın farklı ilçelerinden büyük ve küçük 15 market"], 2,
+                                      "Örneklem evrenin içinde olmalı ve ona benzemeli.", "Farklı ilçelerden, büyük ve küçük marketler Muğla'yı temsil eder."),
+                            "islem": "Örneklem: farklı türden Muğla marketleri"}],
+                       "sonuc": "Harika! Marketlerin büyüklüğü ve türü farklı olunca örneklem evreni daha iyi temsil eder. (s. 168)"},
+             "soru": S("Evrenin hepsine ulaşmak zor olduğunda ne yapılır?", ["Araştırmadan vazgeçilir.", "Veriler tahmin edilir.", "Evreni temsil eden bir örneklem seçilir."], 2,
+                       "Bilgi kartında küçük grubu anlatan cümleye bak.", "Evreni temsil eden daha küçük bir grup, yani örneklem seçilir. (s. 165)")},
+            {"ad": "Örneklem Evreni Temsil Etmeli", "renk": "#7b4fc9", "svg": svg3_temsil(),
+             "aciklama": "Örneklem evrenin özelliklerini taşımalıdır. Sadece kantine en yakın sınıftan veri toplamak sonucu yanlış yorumlatabilir. (s. 166)",
+             "ek": "Kantine en yakın sınıf sıraya erken girer; onların bekleme süresi bütün okulu göstermez. Bazen örneklem gerekmez: TÜİK bazı araştırmalarda evrenin tamamına güvenilir kaynaklardan ulaşır. (s. 167)",
+             "akilda": "Örneklem evrene benzemeli",
+             "soru": S("Okuldaki öğrencilerin ekran süreleri araştırılıyor. Hangi örneklem en uygundur?", ["Sadece bilgisayar kulübü üyeleri", "Her sınıftan rastgele seçilen öğrenciler", "Sadece öğretmenler"], 1,
+                       "Bütün okula benzeyen grubu bul.", "Her sınıftan seçilen öğrenciler bütün okulu temsil eder. (s. 166)")}
+        ],
+        "gruplar": [{"soru": "Hangisi neyle ilgili?", "kutular": [
+            {"etiket": "Ne soruyoruz?", "uyeler": ["Araştırma Sorusu", "İyi Araştırma Sorusu", "Değişebilirlik"]},
+            {"etiket": "Kimden veri topluyoruz?", "uyeler": ["Evren", "Örneklem", "Örneklem Evreni Temsil Etmeli"]}]}],
+        "akildaKalsin": [
+            "Araştırma sorusu bir grubun verileriyle cevaplanır: “… eğilimi nasıldır?”",
+            "İyi araştırma sorusu: amacı net, ölçülecek şey belli, veri toplamaya uygun.",
+            "Cevaplar kişiden kişiye değişir: değişebilirlik.",
+            "Evren, verilerin toplanabileceği en geniş gruptur.",
+            "Örneklem, evreni temsil eden daha küçük gruptur.",
+            "Örneklem evrene benzemeli; yoksa sonuç yanlış yorumlanır."],
+        "merakKutusu": [
+            {"soru": "TÜİK nasıl oluyor da bütün Türkiye'yi biliyor?", "cevap": "Bazı araştırmalarda evrenin tamamına güvenilir kurumların hazır verileriyle ulaşılır; o zaman örneklem gerekmez. (s. 167)"},
+            {"soru": "Kalp ritmi neden herkeste farklı?", "cevap": "Yaş, kütle gibi özelliklere ve verinin toplandığı gruba göre değişir. Buna değişebilirlik denir. (s. 165)"},
+            {"soru": "Neden “eğilim” kelimesini kullanıyoruz?", "cevap": "Tek bir kişiyi değil, grubun genel durumunu merak ediyoruz: Çoğu ne kadar su içiyor, hangi değerler sık? (s. 165)"},
+            {"soru": "Market örnekleminde neden büyük ve küçük marketler olmalı?", "cevap": "Fiyatlar marketin büyüklüğüne ve türüne göre değişebilir. Sadece büyük marketler seçilirse sonuç Muğla'nın tamamını göstermez. (s. 168)"},
+            {"soru": "Kız ve erkek öğrencileri karşılaştıran soru da araştırma sorusu olur mu?", "cevap": "Olur: “7/A'daki kız ve erkek öğrencilerin günlük su tüketimlerinin eğilimi nasıl değişmektedir?” iki grubu karşılaştırır. (s. 165)"}],
+        "dusunVeYaz": [{"soru": "Okulundaki öğrencilerin kaç saat uyuduğunu araştıracaksın. Bir araştırma sorusu yaz; evreni ve örneklemi söyle.",
+                        "ornekCevap": "Araştırma sorusu: Okulumuzdaki öğrencilerin günlük uyku sürelerinin eğilimi nasıldır? Evren: okuldaki bütün öğrenciler. Örneklem: her sınıftan seçilen 5 öğrenci.",
+                        "anahtarlar": ["eğilim", "evren", "örneklem", "öğrenci"]}],
+        "sorular": [
+            S("Hangisi araştırma sorusu olarak uygundur?", ["Spor yapmayı sever misin?", "7/B sınıfı öğrencilerinin haftalık spor sürelerinin eğilimi nasıldır?", "Dün spor yaptın mı?"], 1,
+              "Bir grubun verileriyle cevaplanan soruyu bul.", "Bu soru bütün sınıfın spor sürelerini soruyor. (s. 165)", kavram="Araştırma Sorusu"),
+            S("“İzmir'deki ortaokulların kütüphanelerindeki kitap sayıları nasıl bir eğilim gösterir?” sorusunun evreni hangisidir?",
+              ["Bir okulun kütüphanesi", "Türkiye'deki bütün kütüphaneler", "İzmir'deki bütün ortaokulların kütüphaneleri"], 2,
+              "Soru hangi şehri ve hangi okulları kapsıyor?", "Soru İzmir'deki bütün ortaokul kütüphanelerini kapsıyor. (s. 165)", kavram="Evren"),
+            S("Bir araştırmada evren “okuldaki bütün öğrenciler”dir. Hangisi bu evreni temsil etmez?", ["Her sınıftan seçilen 5 öğrenci", "Sadece basketbol takımındaki öğrenciler", "Her sınıftan rastgele seçilen öğrenciler"], 1,
+              "Bütün okula benzemeyen grubu bul.", "Sadece takım üyeleri bütün okula benzemez; sonucu yanlış yorumlatır. (s. 166)", kavram="Örneklem Evreni Temsil Etmeli"),
+            G("Bir okulda 15 sınıf var. Her sınıftan 4 öğrenci seçildi. Örneklemde kaç öğrenci var?", "60",
+              "Sınıf sayısını, her sınıftan seçilen kişi sayısıyla çarp.", "15 · 4 = 60 öğrenci.", kavram="Örneklem", birim="öğrenci",
+              yardim={"adimlar": ["Kaç sınıf var?", "Her sınıftan kaç kişi seçildi?", "Sınıf sayısını her sınıftan seçilen kişi sayısıyla çarp."]}),
+            S("Bir sınıftaki öğrencilerin boy uzunlukları birbirinden farklıdır. Bu duruma ne denir?", ["Değişebilirlik", "Örneklem", "Evren"], 0,
+              "Cevapların kişiden kişiye değişmesi …", "Verilerin kişiden kişiye değişmesine değişebilirlik denir. (s. 165)", kavram="Değişebilirlik"),
+            S("Hangisi iyi bir araştırma sorusunun özelliği değildir?", ["Amacı nettir.", "Veri toplamaya uygundur.", "Cevabı herkes için aynıdır."], 2,
+              "İyi soruda cevaplar kişiden kişiye değişir mi?", "İyi araştırma sorusunun cevapları kişiden kişiye değişir. (s. 165)", kavram="İyi Araştırma Sorusu"),
+            S("Evren ile örneklem için hangisi doğrudur?", ["Örneklem evrenden büyüktür.", "Örneklem evrenin içinden seçilen küçük gruptur.", "Evren ile örneklem her zaman aynıdır."], 1,
+              "Çorba ve kaşığı düşün.", "Örneklem, evreni temsil eden daha küçük bir gruptur. (s. 165)", kavram="Örneklem"),
+            G("Bir araştırmanın evreni 120 öğrenci, örneklemi bunlardan 30 öğrenci. Evrende olup örneklemde olmayan kaç öğrenci var?", "90",
+              "Evrendeki öğrenci sayısından örneklemdekileri çıkar.", "120 − 30 = 90 öğrenci.", kavram="Evren", birim="öğrenci",
+              yardim={"adimlar": ["Evrende kaç öğrenci var?", "Örneklemde kaç öğrenci var?", "Evrendekilerden örneklemdekileri çıkar."]}),
+            S("Aynı anda iki farklı termometreyle ölçülen ateşin farklı çıkmasının sebebi nedir?", ["Kişinin değişmesi", "Ölçüm aracının farklı olması", "Evrenin büyük olması"], 1,
+              "Aynı anda ölçüldüyse değişen ne?", "Kişi aynı, zaman aynı; değişen termometre. (s. 168)", kavram="Değişebilirlik"),
+            S("TÜİK bazı araştırmalarda neden örneklem kullanmaz?", ["Örneklem seçmek yasak olduğu için", "Araştırma sorusu olmadığı için", "Evrenin tamamına güvenilir hazır verilerle ulaşabildiği için"], 2,
+              "Evrenin tamamına ulaşabiliyorsa örneklem gerekir mi?", "TÜİK evrenin tamamına güvenilir kaynaklardan ulaşabilir. (s. 167)", kavram="Örneklem Evreni Temsil Etmeli")]
+    }
+
+
+# =================================================================
+def u3k3():
+    return {
+        "id": "u3k3", "unite": T3, "baslik": "Veri Toplama ve Kişisel Veriler", "sayfalar": "s. 169–170, 192–193",
+        "giris": "Araştırma sorusu ve örneklem hazır. Şimdi verileri toplama zamanı! Bu konuda anket sorusu yazmayı, plan yapmayı ve güvenilir kaynak seçmeyi öğreneceğiz. Kişisel verileri nasıl koruyacağımızı da konuşacağız.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konu önceki konunun devamı. Araştırma sorusunu, evreni ve örneklemi hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Araştırma sorusu", "sinif": "3. tema, 2. konu", "svg": svg3_soru(),
+                 "anlatim": "Araştırma sorusu bir grubun verileriyle cevaplanır. Çoğu zaman “… eğilimi nasıldır?” diye yazılır.",
+                 "akilda": "Grubun verisiyle cevaplanır",
+                 "sorular": [
+                     S("Hangisi bir araştırma sorusudur?", ["Kitap okumayı sever misin?", "7/A öğrencilerinin haftalık kitap okuma sürelerinin eğilimi nasıldır?", "Dün kitap okudun mu?"], 1,
+                       "Grubun verisiyle cevaplanan soruyu bul.", "Bu soru bütün sınıfın verileriyle cevaplanır."),
+                     S("Araştırma sorusu kimin verileriyle cevaplanır?", ["Bir grubun", "Sadece bir kişinin", "Hiç kimsenin"], 0,
+                       "“Eğilim” bir kişiyi mi, grubu mu anlatır?", "Araştırma sorusu bir grubun verileriyle cevaplanır.")]},
+                {"ad": "Evren ve örneklem", "sinif": "3. tema, 2. konu", "svg": svg3_orneklem(),
+                 "anlatim": "Evren, verilerin toplanabileceği en geniş gruptur. Örneklem, evreni temsil eden daha küçük gruptur.",
+                 "akilda": "Evren büyük, örneklem küçük",
+                 "sorular": [
+                     S("Evreni temsil eden küçük gruba ne denir?", ["Veri seti", "Örneklem", "Anket"], 1,
+                       "Çorbadan alınan bir kaşığı düşün.", "Evreni temsil eden küçük gruba örneklem denir."),
+                     S("Hangisi doğrudur?", ["Örneklem evrenden büyüktür.", "Evren en geniş gruptur.", "Evren ile örneklem hep aynıdır."], 1,
+                       "En geniş grup hangisiydi?", "Evren en geniş gruptur; örneklem onun içinden seçilir.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Anket Sorusu", "renk": "#1f9e8f", "svg": svg3_anket(),
+             "aciklama": "Anket sorusu, örneklemdeki her kişiye tek tek sorulan sorudur. Cevapları birleşince araştırma sorusunun verisi olur. (s. 169)",
+             "ek": "Araştırma sorusu: “Sınıfımızdaki öğrencilerin boy uzunluklarının eğilimi nasıldır?” Anket sorusu: “Boyun kaç santimetre?” (s. 169)",
+             "akilda": "Kişiye sorulur, cevaplar birleşir",
+             "cozum": {"baslik": "Araştırma sorusundan anket sorusuna",
+                       "problem": "Araştırma sorusu: “Sınıfımızdaki öğrencilerin günlük uyku sürelerinin eğilimi nasıldır?” Her arkadaşına ne soracaksın?",
+                       "adimlar": [
+                           {"metin": "Araştırma sorusunda neyi ölçüyoruz?", "islem": "Ölçülecek: günlük uyku süresi"},
+                           {"metin": "Bunu tek bir kişiye nasıl sorarsın?", "islem": "Anket sorusu: Günde kaç saat uyuyorsun?"},
+                           {"metin": "Cevaplar birleşince sınıfın veri seti olur.", "islem": "8, 9, 7,5, 10 …"}],
+                       "sonuc": "Anket sorusu her kişiye sorulur; cevaplar birleşince araştırma sorusunu cevaplarız. (s. 169)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Araştırma sorusu: “7/A sınıfı öğrencilerinin günlük su tüketimlerinin eğilimi nasıldır?”",
+                       "adimlar": [
+                           {"metin": "Her arkadaşına soracağın anket sorusunu seç.",
+                            "soru": S("Hangisi bu araştırma için uygun bir anket sorusudur?", ["Su içmeyi sever misin?", "Hangi renk bardağı seversin?", "Bir günde kaç litre su içersin?"], 2,
+                                      "Ölçülecek şey su miktarı.", "Bu soru her kişinin içtiği su miktarını öğrenir."),
+                            "islem": "Anket sorusu: Bir günde kaç litre su içersin?"}],
+                       "sonuc": "Harika! Cevaplar birleşince 7/A'nın su tüketimi veri seti olur."},
+             "soru": S("Anket sorusu kime sorulur?", ["Örneklemdeki her kişiye", "Sadece öğretmene", "Hiç kimseye; tahmin edilir"], 0,
+                       "Bilgi kartındaki ilk cümleye bak.", "Anket sorusu örneklemdeki her kişiye tek tek sorulur. (s. 169)")},
+            {"ad": "Veri Toplama Planı", "renk": "#b7791f", "svg": svg3_plan(),
+             "aciklama": "Veri toplamadan önce plan yapılır: Veriler nerede, ne zaman, nasıl toplanacak ve nasıl kaydedilecek? (s. 169)",
+             "ek": "Toplanacak veriler araştırma sorusunun amacına uygun olmalıdır (s. 169). Örnek: Sıralar için öğrencilerin boyu sınıfta, salı günü, mezurayla ölçülür ve tabloya yazılır.",
+             "akilda": "Nerede? Ne zaman? Nasıl? Kaydet!",
+             "soru": S("Sıralar için öğrencilerin boyu ölçülecek. Planda “Nasıl?” sorusunun cevabı hangisi olabilir?", ["Pazartesi günü", "Sınıfta", "Mezurayla ölçerek"], 2,
+                       "“Nasıl” bir yöntemi sorar.", "Mezurayla ölçmek bir yöntemdir; pazartesi “ne zaman”, sınıf “nerede” sorusunun cevabıdır. (s. 169)")},
+            {"ad": "Güvenilir Kaynak", "renk": "#2f8f73", "svg": svg3_kaynak(),
+             "aciklama": "Hazır verileri güvenilir kaynaklardan alırız: edu.tr, gov.tr, org.tr gibi uzantılı resmî adreslerden. (s. 169)",
+             "ek": "Mustafa Bey orman yangını verilerini güvenilir sitelerden arar (s. 169). Sosyal medyada kaynağı yazmayan bir habere hemen inanmayız; güvenilir bir kaynaktan kontrol ederiz. (s. 192)",
+             "akilda": "Resmî site, kaynağı belli",
+             "soru": S("Orman yangını verileri için hangisi daha güvenilir bir kaynaktır?", ["Kaynağı belirtilmemiş bir sosyal medya paylaşımı", "Uzantısı gov.tr olan resmî bir kurum sitesi", "Bir arkadaşın tahmini"], 1,
+                       "Bilgi kartındaki uzantılara bak.", "gov.tr uzantılı resmî siteler güvenilir kaynaklardır. (s. 169)")},
+            {"ad": "Kişisel Veri", "renk": "#c2255c", "svg": svg3_kisisel(),
+             "aciklama": "Kişilerin sağlık, kimlik, banka, adres ve günlük yaşam bilgileri kişisel veridir. (s. 170)",
+             "ek": "“Ev adresiniz nedir?”, “Boyunuz kaç metredir?”, “Günlük ekran süreniz ne kadar?” sorularının cevapları kişisel veri içerir. (s. 170)",
+             "akilda": "Kişiye ait bilgi = kişisel veri",
+             "cozum": {"baslik": "Duru'nun profili",
+                       "problem": "Duru sosyal medyada doğum tarihini, okulunun adını ve yaşadığı şehri herkese açık paylaştı. Bunlar kişisel veri mi?",
+                       "adimlar": [
+                           {"metin": "Doğum tarihi kime ait? Duru'ya; kimlik bilgisidir.", "islem": "Kişisel veri"},
+                           {"metin": "Okul adı ve şehir Duru'nun nerede olduğunu gösterir: adres ve günlük yaşam bilgisi.", "islem": "Kişisel veri"},
+                           {"metin": "Hesap herkese açık: Bu bilgileri tanımadığı kişiler de görür.", "islem": "Gizlilik tehlikede"}],
+                       "sonuc": "Üçü de kişisel veridir. Hesabı gizli yapmak ve bu bilgileri paylaşmamak daha güvenlidir. (s. 192)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Bir sınıf anketinde şu soru var: “Banka hesabında ne kadar para var?”",
+                       "adimlar": [
+                           {"metin": "Soru hangi bilgiyi istiyor?",
+                            "soru": S("Bu soru hangi bilgiyi istiyor?", ["Hava durumu bilgisi", "Banka bilgisi", "Okulun adı"], 1,
+                                      "Soruda “banka hesabı” geçiyor.", "Soru kişinin banka bilgisini istiyor."),
+                            "islem": "Banka bilgisi → kişisel veri"},
+                           {"metin": "Bu soru ankete konmalı mı?",
+                            "soru": S("Bu soru sınıf anketine konmalı mı?", ["Hayır; kişisel veri istiyor ve araştırma için gerekmiyor.", "Evet; her ankette olmalı.", "Sadece cevabı kısaysa"], 0,
+                                      "Banka bilgisi kişisel veridir.", "Gerekmeyen kişisel bilgiler ankette sorulmaz."),
+                            "islem": "Gereksiz kişisel soru sorma"}],
+                       "sonuc": "Harika! Kişisel veri isteyen gereksiz soruları anketten çıkardın. (s. 170)"},
+             "soru": S("Hangisi kişisel veridir?", ["Türkiye'nin başkenti", "Bir haftada kaç gün olduğu", "Bir öğrencinin ev adresi"], 2,
+                       "Kişiye ait bilgiyi bul.", "Ev adresi kişiye aittir: kişisel veri. (s. 170)")},
+            {"ad": "İzin ve Gizlilik", "renk": "#e8590c", "svg": svg3_izin(),
+             "aciklama": "Ankette toplanan veriler izin alınmadan başkalarıyla paylaşılmaz. Gerekmeyen kişisel sorular sorulmaz. (s. 170)",
+             "ek": "Buse anketteki arkadaşlarının kilo ve boy bilgilerini izinsiz paylaştı; bu, kişisel verilerin gizliliğini ihlal eder (s. 170). Ege bir oyunu indirmek için izin metnini okumadan onayladı; önce okumalıydı. (s. 193)",
+             "akilda": "İzin al, gizli tut",
+             "soru": S("Buse anket verilerini (kilo, boy) izin almadan internette paylaştı. Bu davranış neye yol açar?", ["Kişisel verilerin gizliliğinin ihlaline", "Araştırmanın daha iyi olmasına", "Örneklemin büyümesine"], 0,
+                       "İzinsiz paylaşılan bilgi kime aittir?", "İzinsiz paylaşmak kişisel verilerin gizliliğini ihlal eder. (s. 170)")},
+            {"ad": "KVKK", "renk": "#7b4fc9", "svg": svg3_kvkk(),
+             "aciklama": "Kişisel Verilerin Korunması Kanunu (KVKK), Türkiye'de kişisel verilerin işlenmesi ve korunmasıyla ilgili temel kanundur. (s. 193)",
+             "ek": "KVKK'nin amacı kişilerin özel hayatının gizliliğini korumak, temel hak ve özgürlükleri güvence altına almaktır. (s. 193)",
+             "akilda": "Kişisel verileri koruyan kanun",
+             "soru": S("KVKK'nin amacı nedir?", ["Anketleri yasaklamak", "Kişilerin özel hayatının gizliliğini korumak", "Herkesin bilgisini paylaşmak"], 1,
+                       "Kanunun adında “korunması” geçiyor.", "KVKK özel hayatın gizliliğini korur. (s. 193)")}
+        ],
+        "gruplar": [{"soru": "Hangisi neyle ilgili?", "kutular": [
+            {"etiket": "Veriyi toplamak", "uyeler": ["Anket Sorusu", "Veri Toplama Planı", "Güvenilir Kaynak"]},
+            {"etiket": "Veriyi korumak", "uyeler": ["Kişisel Veri", "İzin ve Gizlilik", "KVKK"]}]}],
+        "akildaKalsin": [
+            "Anket sorusu örneklemdeki her kişiye sorulur; cevaplar birleşince veri seti olur.",
+            "Plan: Nerede? Ne zaman? Nasıl? Nasıl kaydedeceğim?",
+            "Hazır veriler güvenilir kaynaklardan alınır (gov.tr, edu.tr, org.tr).",
+            "Sağlık, kimlik, banka, adres ve günlük yaşam bilgileri kişisel veridir.",
+            "Toplanan veriler izinsiz paylaşılmaz; gereksiz kişisel soru sorulmaz.",
+            "KVKK kişisel verileri koruyan kanundur."],
+        "merakKutusu": [
+            {"soru": "Anketlerde adımı sormak gerekli mi?", "cevap": "Araştırma için gerekmiyorsa ad soyad sormamak kişisel verileri korur. Buse'nin anketinde ad soyad bile zorunluydu. (s. 170)"},
+            {"soru": "Boyum neden kişisel veri?", "cevap": "Boy, kilo gibi bilgiler kişinin sağlığı ve günlük yaşamıyla ilgilidir; kişiye aittir. (s. 170)"},
+            {"soru": "“Su İçmek Zararlı!” diye bir haber gördüm. İnanmalı mıyım?", "cevap": "Kaynağı yazmayan haberleri hemen paylaşmayız; doğruluğunu güvenilir bir kaynaktan kontrol ederiz. (s. 192)"},
+            {"soru": "Uygulamalar neden izin istiyor?", "cevap": "Bilgilerimize ulaşmak için. İzin metnini okumadan “Tüm izinleri kabul ediyorum.” dememeliyiz. (s. 193)"},
+            {"soru": "Hazır veri ne demek?", "cevap": "Başka bir kurumun önceden topladığı veridir. Mustafa Bey orman yangını verilerini kendisi toplamaz, güvenilir sitelerden alır. (s. 169)"}],
+        "dusunVeYaz": [{"soru": "Sınıfında bir anket yapacaksın. Arkadaşlarının kişisel verilerini korumak için nelere dikkat edersin? İki şey yaz.",
+                        "ornekCevap": "Gerekmeyen kişisel bilgileri (ad soyad, adres) sormam. Toplanan cevapları izin almadan kimseyle paylaşmam.",
+                        "anahtarlar": ["izin", "paylaş", "ad", "adres", "gizli"]}],
+        "sorular": [
+            S("Hangisi anket sorusudur?", ["Okulumuzdaki öğrencilerin uyku sürelerinin eğilimi nasıldır?", "Dün gece kaç saat uyudun?", "Uyku neden önemlidir?"], 1,
+              "Tek bir kişiye sorulan soruyu bul.", "“Dün gece kaç saat uyudun?” her kişiye tek tek sorulur. (s. 169)", kavram="Anket Sorusu"),
+            S("Veri toplama planında “Ne zaman?” sorusunun cevabı hangisi olabilir?", ["Mezurayla", "Salı günü ilk derste", "Okul bahçesinde"], 1,
+              "Zaman bildiren cevabı bul.", "“Salı günü ilk derste” zamanı söyler. (s. 169)", kavram="Veri Toplama Planı"),
+            S("Hazır veri ararken hangisi en güvenilir kaynaktır?", ["Uzantısı edu.tr olan bir üniversite sitesi", "Yazarı belli olmayan bir blog", "Bir sosyal medya yorumu"], 0,
+              "Resmî uzantılı adresi bul.", "edu.tr uzantılı resmî siteler güvenilir kaynaklardır. (s. 169)", kavram="Güvenilir Kaynak"),
+            S("Hangisinin cevabı kişisel veri içerir?", ["Bir yılda kaç ay vardır?", "Ailenizin gelir düzeyi nasıldır?", "Türkiye'nin en uzun nehri hangisidir?"], 1,
+              "Kişiye ait bilgiyi soran soruyu bul.", "Ailenin gelir düzeyi kişisel veridir. (s. 170)", kavram="Kişisel Veri"),
+            G("Bu sorulardan kaç tanesinin cevabı kişisel veri içerir? Ev adresin ne? · Başkentimiz neresi? · Boyun kaç metre? · Banka hesabında ne kadar para var?", "3",
+              "Her soru için sor: Cevap kişiye mi ait?", "Adres, boy ve banka bilgisi kişiseldir: 3 tane. (s. 170)", kavram="Kişisel Veri",
+              yardim={"adimlar": ["Her soru için sor: Cevap bir kişiye mi ait?", "Kişiye ait bilgileri işaretle.", "İşaretlediklerini say."]}),
+            S("Ege bir oyunu indirmek için izin metnini okumadan onayladı. Ne yapmalıydı?", ["Bütün izinleri hemen kabul etmeliydi.", "Metni okuyup hangi bilgilerinin istendiğine bakmalıydı.", "Şifresini arkadaşlarıyla paylaşmalıydı."], 1,
+              "İzin metni neden okunur?", "İzin metni okunmadan onaylanmamalı; hangi bilgilerin istendiği görülmeli. (s. 193)", kavram="İzin ve Gizlilik"),
+            S("Türkiye'de kişisel verilerin korunmasıyla ilgili temel kanun hangisidir?", ["KVKK", "TÜİK", "Anket"], 0,
+              "Kısaltmanın açılımını düşün: Kişisel Verilerin …", "Kişisel Verilerin Korunması Kanunu: KVKK. (s. 193)", kavram="KVKK"),
+            S("Kaynağı belirtilmemiş “Su İçmek Zararlı!” başlıklı bir haber gördün. Ne yaparsın?", ["Hemen herkesle paylaşırım.", "Su içmeyi bırakırım.", "Doğruluğunu güvenilir bir kaynaktan kontrol ederim."], 2,
+              "Kaynağı belli olmayan habere hemen inanılır mı?", "Kaynağı belirtilmeyen haberi güvenilir bir kaynaktan kontrol ederiz. (s. 192)", kavram="Güvenilir Kaynak"),
+            G("Sınıfta 28 öğrenci var. 4 öğrenci ankete katılmak istemedi. Kaç öğrencinin verisi toplanır?", "24",
+              "Ankete katılmayanların verisi toplanmaz.", "28 − 4 = 24 öğrenci.", kavram="İzin ve Gizlilik", birim="öğrenci",
+              yardim={"adimlar": ["Sınıfta kaç öğrenci var?", "Kaç kişi katılmak istemedi?", "Toplamdan katılmayanları çıkar."]}),
+            S("Araştırma sorusu: “Sınıfımızdaki öğrencilerin boy uzunluklarının eğilimi nasıldır?” Hangisi uygun bir anket sorusudur?", ["Ev adresin nedir?", "En sevdiğin ders hangisi?", "Boyun kaç santimetre?"], 2,
+              "Ölçülecek şey nedir?", "Araştırma boyu soruyor; anket sorusu da her kişinin boyunu sormalı. (s. 169)", kavram="Anket Sorusu")]
+    }
+
+
+# =================================================================
+def u3t1():
+    return {
+        "id": "u3t1", "tur": "tarama", "unite": T3,
+        "baslik": "Ara Durak 1: Araştırmaya Hazırlık", "sayfalar": "Konu 1–3 · s. 159–170, 192–193",
+        "giris": "Araştırmaya hazırlık bitti, tebrikler! Kısa bir mola verip veri türlerini, araştırma sorusunu ve veri toplamayı birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+        "buyukResim": "Önce verileri tanıdık: kategorik, kesikli, sürekli. Sonra araştırmanın ilk adımını yaptık: iyi bir soru, evren ve örneklem. En son verileri topladık: anket, plan, güvenilir kaynak ve kişisel verilerin korunması.",
+        "kapsar": ["u3k1", "u3k2", "u3k3"],
+        "hatirla": [
+            {"konu": "u3k1", "maddeler": [
+                "Cevap sözcükse kategorik, sayıysa nicel veri.",
+                "Kesikli: arada değer yok (sayarak). Sürekli: arada sınırsız değer (ölçerek).",
+                "4 adım: Sor, topla, analiz et, yorumla."]},
+            {"konu": "u3k2", "maddeler": [
+                "Araştırma sorusu grubun verisiyle cevaplanır: “… eğilimi nasıldır?”",
+                "Evren en geniş grup; örneklem onu temsil eden küçük grup.",
+                "Örneklem evrene benzemeli."]},
+            {"konu": "u3k3", "maddeler": [
+                "Anket sorusu her kişiye tek tek sorulur.",
+                "Hazır veri güvenilir kaynaktan (gov.tr, edu.tr).",
+                "Kişisel veriler izinsiz paylaşılmaz; KVKK korur."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Araştırmanın hangi işi?", "kutular": [
+            {"etiket": "Verinin türü", "uyeler": ["Kategorik Veri", "Kesikli Veri", "Sürekli Veri"]},
+            {"etiket": "Soru ve kimden?", "uyeler": ["Araştırma Sorusu", "Evren", "Örneklem"]},
+            {"etiket": "Veriyi toplamak ve korumak", "uyeler": ["Anket Sorusu", "Güvenilir Kaynak", "Kişisel Veri"]}]}],
+        "sorular": [
+            S("Defne, 7/A'daki öğrencilerin günde kaç litre su içtiğini araştırıyor. Toplayacağı veriler hangi türdedir?", ["Kategorik veri", "Kesikli veri", "Sürekli veri"], 2,
+              "1,5 L ile 2 L arasında başka değer olabilir mi?", "Su miktarı ölçülür; arada sınırsız değer olabilir: sürekli veri.",
+              kaynak=[K("u3k2", "Araştırma Sorusu"), K("u3k1", "Sürekli Veri")],
+              yardim={"adimlar": ["Anket sorusunun cevabı sayı mı, sözcük mü?", "Litreyi sayarak mı, ölçerek mi buluruz?", "Arada başka değer olabilir mi?"]}),
+            S("“Okulumuzdaki öğrencilerin en sevdiği derslerin dağılımı nasıl bir eğilim gösterir?” araştırmasında veri türü ve evren hangisidir?",
+              ["Kategorik veri; okuldaki bütün öğrenciler", "Sürekli veri; sadece 7/A sınıfı", "Kesikli veri; Türkiye'deki bütün öğrenciler"], 0,
+              "Ders adı sayı mı, sözcük mü? Soru kimleri kapsıyor?", "Ders adları sözcüktür: kategorik. Soru okuldaki bütün öğrencileri kapsar: evren.",
+              kaynak=[K("u3k1", "Kategorik Veri"), K("u3k2", "Evren")]),
+            G("Ela'nın okulunda 8 sınıf var. Her sınıftan 5 öğrenciye anket sorusu soruldu. Ankete kaç öğrenci katıldı?", "40",
+              "Sınıf sayısını her sınıftan seçilen kişi sayısıyla çarp.", "8 · 5 = 40 öğrenci. Bu 40 öğrenci örneklemdir.", birim="öğrenci",
+              kaynak=[K("u3k2", "Örneklem"), K("u3k3", "Anket Sorusu")],
+              yardim={"adimlar": ["Kaç sınıf var?", "Her sınıftan kaç öğrenciye soruldu?", "Sınıf sayısını her sınıftaki kişi sayısıyla çarp."]}),
+            S("Hangisi “verileri toplama” adımında yapılır?", ["Anket sorusunu sorup cevapları kaydetmek", "Araştırma sorusunu yazmak", "Sonuçları yorumlamak"], 0,
+              "4 adımı sırayla düşün: Sor, topla, …", "Anket sorusunu sormak ve cevapları kaydetmek 2. adım olan veri toplamadır.",
+              kaynak=[K("u3k1", "Araştırmanın 4 Adımı"), K("u3k3", "Veri Toplama Planı")]),
+            S("Buse'nin anketinde kilo ve boy soruları vardı. Bu veriler hangi türdedir ve onlarla ne yapılmalıdır?",
+              ["Kategorik veri; herkese açık paylaşılmalı", "Sürekli veri; izinsiz paylaşılmamalı", "Kesikli veri; internette yayımlanmalı"], 1,
+              "Kilo ve boy ölçülür mü, sayılır mı? Kime ait bilgiler?", "Kilo ve boy ölçülür: sürekli veri. Kişisel veridir; izinsiz paylaşılmaz.",
+              kaynak=[K("u3k1", "Sürekli Veri"), K("u3k3", "İzin ve Gizlilik")]),
+            G("Bir araştırmanın evreni 300 öğrenci. Örneklem için her 10 öğrenciden 1'i seçiliyor. Örneklemde kaç öğrenci olur?", "30",
+              "300'ün içinde kaç tane 10 var?", "300 ÷ 10 = 30 öğrenci.", birim="öğrenci",
+              kaynak=[K("u3k2", "Evren"), K("u3k2", "Örneklem")],
+              yardim={"adimlar": ["Evrende kaç öğrenci var?", "Her 10 öğrenciden kaçı seçiliyor?", "300'ü 10'a böl."]}),
+            S("Mustafa Bey orman yangınlarında her yıl yanan alanı (hektar) inceliyor. Veriyi nereden almalı ve bu veri hangi türdedir?",
+              ["Bir arkadaşından; kategorik veri", "Sosyal medyadan; kesikli veri", "Resmî bir kurum sitesinden; sürekli veri"], 2,
+              "Güvenilir kaynak hangisi? Alan ölçülür mü, sayılır mı?", "Resmî siteler güvenilirdir. Yanan alan ölçülür: sürekli veri.",
+              kaynak=[K("u3k3", "Güvenilir Kaynak"), K("u3k1", "Sürekli Veri")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4, u3t1]
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5, u2k6, u2k7, u2k8,
+           u3k1, u3k2, u3k3] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,

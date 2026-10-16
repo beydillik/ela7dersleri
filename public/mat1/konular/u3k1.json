@@ -1,0 +1,518 @@
+{
+ "id": "u3k1",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Veri Türleri",
+ "sayfalar": "s. 159–164",
+ "giris": "Her gün bir sürü bilgi topluyoruz: kaç saat uyuduğumuz, kaç kardeşimiz olduğu, en sevdiğimiz renk. Bu bilgilere veri denir. Bu konuda verileri türlerine ayırmayı öğreneceğiz. Sonra bir araştırmanın 4 adımını tanıyacağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda grafik okuyacağız ve ondalık sayılarla karşılaşacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Sütun grafiği okuma",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='18' y1='96' x2='108' y2='96' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='18' y1='96' x2='18' y2='18' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><rect x='28' y='54' width='18' height='42' rx='2' fill='#4fc3a1'/><text x='37' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>Pt</text><rect x='55' y='26' width='18' height='70' rx='2' fill='#4fc3a1'/><text x='64' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>Sa</text><rect x='82' y='68' width='18' height='28' rx='2' fill='#4fc3a1'/><text x='91' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>Ça</text><line x1='18' y1='26' x2='64' y2='26' stroke='#f2c14e' stroke-width='1.5' stroke-dasharray='3 3'/><text x='12' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>5</text></svg>",
+    "anlatim": "Sütun grafiğinde her sütunun boyu bir sayıyı gösterir. Sütunun tepesinden sola, sayıların yazdığı eksene bakarak değeri okuruz.",
+    "akilda": "Sütunun tepesi = değer",
+    "ornek": {
+     "problem": "Grafikte Salı günü kaç kitap okunmuş?",
+     "adimlar": [
+      {
+       "metin": "Salı sütununu bul.",
+       "islem": "Sa"
+      },
+      {
+       "metin": "Sütunun tepesinden sola bak.",
+       "islem": "5 kitap"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Grafiğe göre en çok kitap hangi gün okunmuş?",
+      "secenekler": [
+       "Pazartesi",
+       "Salı",
+       "Çarşamba"
+      ],
+      "dogru": 1,
+      "ipucu": "En uzun sütunu bul.",
+      "aciklama": "En uzun sütun Salı'ya ait: 5 kitap.",
+      "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='112.4' x2='320' y2='112.4' stroke='#3a4570' stroke-width='1'/><text x='32' y='116.4' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>1</text><line x1='40' y1='90.8' x2='320' y2='90.8' stroke='#3a4570' stroke-width='1'/><text x='32' y='94.8' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='69.2' x2='320' y2='69.2' stroke='#3a4570' stroke-width='1'/><text x='32' y='73.2' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>3</text><line x1='40' y1='47.599999999999994' x2='320' y2='47.599999999999994' stroke='#3a4570' stroke-width='1'/><text x='32' y='51.599999999999994' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>5</text><rect x='60.5' y='69.2' width='52.3' height='64.8' rx='3' fill='#4fc3a1'/><text x='86.66666666666666' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Pzt</text><rect x='153.9' y='26.0' width='52.3' height='108.0' rx='3' fill='#4fc3a1'/><text x='179.99999999999997' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Salı</text><rect x='247.2' y='90.8' width='52.3' height='43.2' rx='3' fill='#4fc3a1'/><text x='273.3333333333333' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Çrş</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Okunan kitap sayısı</text></svg>"
+     },
+     {
+      "soru": "Grafiğe göre Pazartesi günü kaç kitap okunmuş?",
+      "cevap": "3",
+      "ipucu": "Pazartesi sütununun tepesinden sola bak.",
+      "aciklama": "Pazartesi sütunu 3'e kadar uzanıyor.",
+      "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='40' y1='134' x2='320' y2='134' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134' x2='40' y2='20' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='40' y1='134.0' x2='320' y2='134.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='138.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>0</text><line x1='40' y1='112.4' x2='320' y2='112.4' stroke='#3a4570' stroke-width='1'/><text x='32' y='116.4' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>1</text><line x1='40' y1='90.8' x2='320' y2='90.8' stroke='#3a4570' stroke-width='1'/><text x='32' y='94.8' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>2</text><line x1='40' y1='69.2' x2='320' y2='69.2' stroke='#3a4570' stroke-width='1'/><text x='32' y='73.2' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>3</text><line x1='40' y1='47.599999999999994' x2='320' y2='47.599999999999994' stroke='#3a4570' stroke-width='1'/><text x='32' y='51.599999999999994' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>4</text><line x1='40' y1='26.0' x2='320' y2='26.0' stroke='#3a4570' stroke-width='1'/><text x='32' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>5</text><rect x='60.5' y='69.2' width='52.3' height='64.8' rx='3' fill='#4fc3a1'/><text x='86.66666666666666' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Pzt</text><rect x='153.9' y='26.0' width='52.3' height='108.0' rx='3' fill='#4fc3a1'/><text x='179.99999999999997' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Salı</text><rect x='247.2' y='90.8' width='52.3' height='43.2' rx='3' fill='#4fc3a1'/><text x='273.3333333333333' y='150' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='11' fill='#f5f6fa'>Çrş</text><text x='165.0' y='14' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Okunan kitap sayısı</text></svg>",
+      "yardim": {
+       "adimlar": [
+        "Pazartesi sütununu bul.",
+        "Tepesinden sola, sayı eksenine bak."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "İki sayı arasında başka sayı",
+    "sinif": "1. tema, 5. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='64' x2='108' y2='64' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='20' y1='56' x2='20' y2='72' stroke='#f5f6fa' stroke-width='3'/><line x1='100' y1='56' x2='100' y2='72' stroke='#f5f6fa' stroke-width='3'/><text x='20' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>1</text><text x='100' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f5f6fa'>2</text><circle cx='60' cy='64' r='6' fill='#f2c14e'/><text x='60' y='48' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>1,5</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>arada hep sayı</text></svg>",
+    "anlatim": "1 ile 2 arasında 1,5 vardır. 1,5 ile 2 arasında da 1,7 vardır. İki ondalık sayı arasında her zaman başka bir sayı bulunur.",
+    "akilda": "Arada hep bir sayı var",
+    "sayiDogrusu": {
+     "min": 1,
+     "max": 2,
+     "bolme": 10,
+     "isaretler": [
+      {
+       "x": 1.5,
+       "etiket": "1,5",
+       "renk": "#f2c14e"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "1,4 ile 1,5 arasında başka bir sayı var mı?",
+      "secenekler": [
+       "Yok",
+       "Var, örneğin 1,45",
+       "Var, örneğin 1,6"
+      ],
+      "dogru": 1,
+      "ipucu": "İki ondalık sayının arasına bir basamak daha ekleyebilirsin.",
+      "aciklama": "1,40 ile 1,50 arasında 1,45 vardır."
+     },
+     {
+      "soru": "Hangisi 2 ile 3 arasındadır?",
+      "secenekler": [
+       "2,6",
+       "3,2",
+       "1,9"
+      ],
+      "dogru": 0,
+      "ipucu": "2'den büyük, 3'ten küçük sayıyı ara.",
+      "aciklama": "2 < 2,6 < 3."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Veri",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='28' y='16' width='64' height='88' rx='8' fill='#f5f6fa'/><rect x='44' y='10' width='32' height='12' rx='4' fill='#f2c14e'/><text x='60' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>88</text><text x='60' y='59' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>95</text><text x='60' y='76' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>118</text><text x='60' y='93' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>132</text><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>veri seti</text></svg>",
+   "aciklama": "Bir soruya cevap bulmak için topladığımız bilgilere veri denir. Toplanan verilerin hepsine birden veri seti deriz.",
+   "ek": "Kitaptaki örnekte 26 öğrencinin bir haftada okuduğu sayfa sayıları (88, 95, 118 …) bir veri setidir. (s. 159)",
+   "akilda": "Toplanan bilgi = veri",
+   "soru": {
+    "soru": "26 öğrencinin bir haftada okuduğu sayfa sayılarının hepsine birden ne denir?",
+    "secenekler": [
+     "Veri seti",
+     "Grafik",
+     "Araştırma sorusu"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki ikinci cümleye bak.",
+    "aciklama": "Toplanan verilerin hepsine birden veri seti denir. (s. 159)"
+   }
+  },
+  {
+   "ad": "Kategorik Veri",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='46' height='24' rx='7' fill='#6fb3ff'/><text x='35.0' y='35.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>mavi</text><rect x='62' y='20' width='46' height='24' rx='7' fill='#8ce99a'/><text x='85.0' y='35.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>yeşil</text><rect x='12' y='52' width='46' height='24' rx='7' fill='#ff8fb1'/><text x='35.0' y='67.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>Fen</text><rect x='62' y='52' width='46' height='24' rx='7' fill='#ff8fb1'/><text x='85.0' y='67.6' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>Türkçe</text><rect x='22' y='84' width='76' height='20' rx='7' fill='#f2c14e'/><text x='60.0' y='97.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>otobüs</text><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ff8fb1'>sözcükle</text></svg>",
+   "aciklama": "Sayıyla değil, sözcükle (bir grup adıyla) yazılan veriye kategorik veri denir. Örneğin en sevilen ders, göz rengi, okula geliş aracı.",
+   "ek": "6. sınıftan hatırla: Cevaplar sözcüktür ama her grupta kaç kişi olduğunu sayabiliriz: “Fen: 12 kişi, İngilizce: 4 kişi” gibi.",
+   "akilda": "Cevap sözcükse: kategorik",
+   "soru": {
+    "soru": "“En sevdiğin renk hangisi?” sorusunun cevapları hangi veri türüdür?",
+    "secenekler": [
+     "Nicel veri",
+     "Sürekli veri",
+     "Kategorik veri"
+    ],
+    "dogru": 2,
+    "ipucu": "Cevaplar sayı mı, sözcük mü?",
+    "aciklama": "Cevaplar sözcüktür (mavi, yeşil …): kategorik veri."
+   }
+  },
+  {
+   "ad": "Nicel Veri",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='36' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='26' fill='#4fc3a1'>3</text><text x='84' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#4fc3a1'>1,5</text><text x='60' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='22' fill='#4fc3a1'>24,75</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#4fc3a1'>sayıyla</text></svg>",
+   "aciklama": "Sayısal olarak ifade edilebilen verilere nicel veri denir. (s. 163)",
+   "ek": "Kardeş sayısı, boy uzunluğu, bir ürünün fiyatı nicel veridir. Nicel veriler ikiye ayrılır: kesikli ve sürekli. (s. 163)",
+   "akilda": "Cevap sayıysa: nicel",
+   "soru": {
+    "soru": "Hangisi nicel veridir?",
+    "secenekler": [
+     "Okuldaki öğrenci sayısı",
+     "Tuttuğun takım",
+     "Doğduğun şehir"
+    ],
+    "dogru": 0,
+    "ipucu": "Sayıyla yazılanı bul.",
+    "aciklama": "Öğrenci sayısı sayıyla yazılır: nicel veri. (s. 163)"
+   }
+  },
+  {
+   "ad": "Kesikli Veri",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='86' width='24' height='18' fill='#8ce99a' opacity='0.55'/><text x='26' y='82' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>0</text><rect x='38' y='68' width='24' height='36' fill='#8ce99a' opacity='0.7000000000000001'/><text x='50' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>1</text><rect x='62' y='50' width='24' height='54' fill='#8ce99a' opacity='0.8500000000000001'/><text x='74' y='46' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>2</text><rect x='86' y='32' width='24' height='72' fill='#8ce99a' opacity='1.0'/><text x='98' y='28' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f5f6fa'>3</text><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#8ce99a'>basamak basamak</text></svg>",
+   "aciklama": "Kesikli veri, iki değer arasında başka değer alamaz. Genelde sayarak bulunur: 2 kardeş olur, 2,5 kardeş olmaz. (s. 163)",
+   "ek": "Kardeş sayısı, kitaplıktaki kitap sayısı, atılan gol sayısı, okuldaki öğrenci sayısı kesikli veridir (s. 163). Merdiven gibi düşün: basamaktan basamağa atlarsın, arada duramazsın.",
+   "akilda": "Sayarak bulunur: kesikli",
+   "cozum": {
+    "baslik": "Hangi veri türü?",
+    "problem": "Bir sınıftaki öğrencilerin kardeş sayıları hangi veri türüdür?",
+    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='105' y='6' width='120' height='26' rx='7' fill='#f2c14e'/><text x='165.0' y='23.32' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>Cevap sayı mı?</text><line x1='140' y1='32' x2='62' y2='56' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='190' y1='32' x2='252' y2='56' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='70' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>hayır</text><text x='262' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>evet</text><rect x='10' y='58' width='104' height='26' rx='7' fill='#ff8fb1'/><text x='62.0' y='75.32' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>Kategorik</text><rect x='206' y='58' width='96' height='26' rx='7' fill='#4fc3a1'/><text x='254.0' y='75.32' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>Nicel</text><line x1='254' y1='84' x2='254' y2='96' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><rect x='170' y='96' width='156' height='26' rx='7' fill='#f2c14e'/><text x='248.0' y='112.96' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>Arada değer olur mu?</text><line x1='220' y1='122' x2='186' y2='140' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='278' y1='122' x2='300' y2='140' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='174' y='130' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>hayır</text><text x='316' y='128' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>evet</text><rect x='130' y='142' width='96' height='30' rx='7' fill='#8ce99a'/><text x='178.0' y='161.32' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>Kesikli</text><rect x='234' y='142' width='92' height='30' rx='7' fill='#c3a6ff'/><text x='280.0' y='161.32' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>Sürekli</text><text x='56' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#ff8fb1'>sözcük:</text><text x='56' y='126' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#ff8fb1'>renk, ders</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Cevap sayı mı, sözcük mü? Sayı: 0, 1, 2, 3 …",
+      "islem": "Sayı → nicel"
+     },
+     {
+      "metin": "Bu sayıyı sayarak mı, ölçerek mi buluyoruz? Kardeşlerimizi sayarız.",
+      "islem": "Sayarak → kesikli"
+     },
+     {
+      "metin": "Kontrol et: 2 kardeş ile 3 kardeş arasında başka değer var mı? 2,5 kardeş olmaz.",
+      "islem": "Arada değer yok ✓"
+     }
+    ],
+    "sonuc": "Kardeş sayısı kesikli veridir. (s. 163)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Bir maçta atılan gol sayıları hangi veri türüdür?",
+    "adimlar": [
+     {
+      "metin": "Cevap sayı mı, sözcük mü?",
+      "soru": {
+       "soru": "Gol sayısının cevabı nasıl yazılır?",
+       "secenekler": [
+        "Sayıyla: 0, 1, 2 …",
+        "Sözcükle: takım adı",
+        "Renkle"
+       ],
+       "dogru": 0,
+       "ipucu": "“Kaç gol?” diye soruyoruz.",
+       "aciklama": "Gol sayısı 0, 1, 2 … diye sayıyla yazılır."
+      },
+      "islem": "Sayı → nicel"
+     },
+     {
+      "metin": "Sayarak mı, ölçerek mi?",
+      "soru": {
+       "soru": "Golleri nasıl buluruz?",
+       "secenekler": [
+        "Cetvelle ölçerek",
+        "Sayarak",
+        "Tartarak"
+       ],
+       "dogru": 1,
+       "ipucu": "Bir gol, iki gol …",
+       "aciklama": "Golleri tek tek sayarız; 1,5 gol olmaz."
+      },
+      "islem": "Sayarak → kesikli"
+     }
+    ],
+    "sonuc": "Harika! Gol sayısı kesikli veridir. (s. 163)"
+   },
+   "soru": {
+    "soru": "Hangisi kesikli veridir?",
+    "secenekler": [
+     "Boy uzunluğu",
+     "Vücut sıcaklığı",
+     "Kitaplıktaki kitap sayısı"
+    ],
+    "dogru": 2,
+    "ipucu": "Hangisini sayarak buluruz?",
+    "aciklama": "Kitapları tek tek sayarız; 3,5 kitap olmaz: kesikli veri. (s. 163)"
+   }
+  },
+  {
+   "ad": "Sürekli Veri",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M12 98 L108 30 L108 98 Z' fill='#c3a6ff' opacity='0.8'/><circle cx='60' cy='64' r='5' fill='#f2c14e'/><text x='44' y='54' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>1,505</text><text x='60' y='113' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#c3a6ff'>her noktada dur</text></svg>",
+   "aciklama": "Sürekli veri, iki ölçüm arasında sınırsız değer alabilir. Genelde ölçerek bulunur: boy 1,50 m, 1,505 m … olabilir. (s. 163)",
+   "ek": "Boy uzunluğu, aylık yağış miktarı, vücut sıcaklığı, ürünlerin fiyatları sürekli veridir (s. 163). Rampa gibi düşün: her noktada durabilirsin. Emin olamazsan sor: “Arada başka değer olabilir mi?”",
+   "akilda": "Ölçerek bulunur: sürekli",
+   "cozum": {
+    "baslik": "Bitkinin boyu",
+    "problem": "Humuslu toprakta yetişen bir bitkinin boyu 4 haftada 2,0 cm'den 10,0 cm'ye çıkmış. Bitki boyu hangi veri türüdür?",
+    "adimlar": [
+     {
+      "metin": "Cevap sayı mı? Evet: 2,0 cm, 5,5 cm, 8,7 cm …",
+      "islem": "Sayı → nicel"
+     },
+     {
+      "metin": "Boyu sayarak mı, ölçerek mi buluruz? Cetvelle ölçeriz.",
+      "islem": "Ölçerek → sürekli"
+     },
+     {
+      "metin": "Kontrol et: 5,5 cm ile 5,6 cm arasında 5,55 cm olabilir mi? Evet.",
+      "islem": "Arada değer var ✓"
+     }
+    ],
+    "sonuc": "Bitki boyu sürekli veridir. (s. 163)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Bir ürünün fiyatı 24,75 TL. Fiyat hangi veri türüdür?",
+    "adimlar": [
+     {
+      "metin": "Cevap sayı: 24,75.",
+      "islem": "Sayı → nicel"
+     },
+     {
+      "metin": "Arada başka değer olabilir mi?",
+      "soru": {
+       "soru": "24,75 TL ile 24,80 TL arasında başka fiyat olabilir mi?",
+       "secenekler": [
+        "Hayır, olamaz.",
+        "Evet, 24,78 TL gibi.",
+        "Sadece 25 TL olabilir."
+       ],
+       "dogru": 1,
+       "ipucu": "İki ondalık sayının arasında hep başka sayı vardır.",
+       "aciklama": "24,75 < 24,78 < 24,80: arada değer var."
+      },
+      "islem": "Arada değer var → sürekli"
+     }
+    ],
+    "sonuc": "Harika! Ürünlerin fiyatları sürekli veridir. (s. 163)"
+   },
+   "soru": {
+    "soru": "Hangisi sürekli veridir?",
+    "secenekler": [
+     "Kardeş sayısı",
+     "Aylık yağış miktarı",
+     "Atılan gol sayısı"
+    ],
+    "dogru": 1,
+    "ipucu": "Hangisini ölçerek buluruz?",
+    "aciklama": "Yağış miktarı ölçülür; arada sınırsız değer olabilir: sürekli veri. (s. 163)"
+   }
+  },
+  {
+   "ad": "Araştırmanın 4 Adımı",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='20' r='11' fill='#f2c14e'/><text x='26' y='25' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><text x='44' y='25' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Sor</text><circle cx='26' cy='46' r='11' fill='#4fc3a1'/><text x='26' y='51' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><text x='44' y='51' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Topla</text><circle cx='26' cy='72' r='11' fill='#c3a6ff'/><text x='26' y='77' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><text x='44' y='77' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Analiz et</text><circle cx='26' cy='98' r='11' fill='#ff8fb1'/><text x='26' y='103' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>4</text><text x='44' y='103' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#f5f6fa'>Yorumla</text></svg>",
+   "aciklama": "İstatistiksel araştırma 4 adımda yapılır: 1) Araştırma sorusunu belirle, 2) Verileri topla, 3) Verileri analiz et, 4) Yorumla ve karar ver. (s. 164)",
+   "ek": "Analiz adımında veriler grafikle gösterilir ve veri setini temsil edecek değer bulunur. Bir adım uygun gitmezse geri dönülüp yeniden planlanabilir. (s. 164)",
+   "akilda": "Sor, topla, analiz et, yorumla",
+   "soru": {
+    "soru": "Araştırmanın ilk adımı hangisidir?",
+    "secenekler": [
+     "Araştırma sorusunu belirlemek",
+     "Verileri toplamak",
+     "Grafik çizmek"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartında 1 numaralı adıma bak.",
+    "aciklama": "Önce araştırma sorusu belirlenir, sonra veriler toplanır. (s. 164)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangi grupta?",
+   "kutular": [
+    {
+     "etiket": "Sözcükle yazılır",
+     "uyeler": [
+      "Kategorik Veri"
+     ]
+    },
+    {
+     "etiket": "Sayıyla yazılır",
+     "uyeler": [
+      "Nicel Veri",
+      "Kesikli Veri",
+      "Sürekli Veri"
+     ]
+    },
+    {
+     "etiket": "Araştırmanın parçası",
+     "uyeler": [
+      "Veri",
+      "Araştırmanın 4 Adımı"
+     ]
+    }
+   ]
+  }
+ ],
+ "akildaKalsin": [
+  "Bir soruya cevap için topladığımız bilgilere veri denir.",
+  "Cevap sözcükse kategorik, sayıysa nicel veridir.",
+  "Kesikli veri: arada değer yok, genelde sayarak bulunur (kardeş sayısı).",
+  "Sürekli veri: arada sınırsız değer var, genelde ölçerek bulunur (boy uzunluğu).",
+  "Emin değilsen sor: “Arada başka değer olabilir mi?”",
+  "Araştırmanın 4 adımı: Sor, topla, analiz et, yorumla."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Uyku süresi hangi veri türüdür?",
+   "cevap": "Uyku süresi ölçülür. 8 saat ile 9 saat arasında 8,5 saat de olabilir: sürekli veri. (s. 162–163)"
+  },
+  {
+   "soru": "Geri kazanım yüzdeleri (27,20 … 36,08) hangi veri türüdür?",
+   "cevap": "Sayıyla yazılır ve iki değer arasında başka değer olabilir: sürekli veri. (s. 163)"
+  },
+  {
+   "soru": "Sürekli veriye neden “sürekli” deniyor?",
+   "cevap": "Bir çizgi gibi kesintisizdir: iki değer arasında sınırsız değer vardır. Kesikli veri ise basamak basamak ilerler. (s. 163)"
+  },
+  {
+   "soru": "Kategorik verileri hiç sayamaz mıyız?",
+   "cevap": "Cevaplar sözcüktür ama her gruba kaç kişinin düştüğünü sayabiliriz. Bu sayılarla grafik çizeriz."
+  },
+  {
+   "soru": "Araştırma bitince bir daha başa dönülmez mi?",
+   "cevap": "Döner! Sonuç soruya cevap vermiyorsa adımlara geri dönüp yeniden planlama yapılabilir. (s. 164)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okuldaki kitap sayısı ile bir ayda yağan yağmur miktarı aynı veri türü müdür? Neden?",
+   "ornekCevap": "Hayır. Kitap sayısı sayarak bulunur, arada değer olmaz: kesikli. Yağmur miktarı ölçülür, arada sınırsız değer olabilir: sürekli.",
+   "anahtarlar": [
+    "kesikli",
+    "sürekli",
+    "say",
+    "ölç",
+    "arada"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "“Okula nasıl geliyorsun?” sorusunun cevapları (otobüs, yürüyerek, araba) hangi veri türüdür?",
+   "secenekler": [
+    "Kategorik veri",
+    "Kesikli veri",
+    "Sürekli veri"
+   ],
+   "dogru": 0,
+   "ipucu": "Cevaplar sayı mı, sözcük mü?",
+   "aciklama": "Cevaplar sözcüktür: kategorik veri.",
+   "kavram": "Kategorik Veri"
+  },
+  {
+   "soru": "Bir sınıftaki öğrencilerin kardeş sayıları hangi veri türüdür?",
+   "secenekler": [
+    "Sürekli veri",
+    "Kategorik veri",
+    "Kesikli veri"
+   ],
+   "dogru": 2,
+   "ipucu": "Kardeşleri sayar mıyız, ölçer miyiz?",
+   "aciklama": "Kardeşler sayılır; 2,5 kardeş olmaz: kesikli veri. (s. 163)",
+   "kavram": "Kesikli Veri"
+  },
+  {
+   "soru": "Vücut sıcaklığı hangi veri türüdür?",
+   "secenekler": [
+    "Kesikli veri",
+    "Sürekli veri",
+    "Kategorik veri"
+   ],
+   "dogru": 1,
+   "ipucu": "36,5 °C ile 36,6 °C arasında başka değer olabilir mi?",
+   "aciklama": "Vücut sıcaklığı ölçülür; arada sınırsız değer olabilir: sürekli veri. (s. 163)",
+   "kavram": "Sürekli Veri"
+  },
+  {
+   "soru": "Şu verilerden kaç tanesi kesikli veridir? Gol sayısı · boy uzunluğu · kitap sayısı · yağış miktarı · öğrenci sayısı",
+   "cevap": "3",
+   "ipucu": "Her biri için sor: sayarak mı, ölçerek mi?",
+   "aciklama": "Gol, kitap ve öğrenci sayısı kesiklidir: 3 tane. (s. 163)",
+   "kavram": "Kesikli Veri",
+   "yardim": {
+    "adimlar": [
+     "Her veri için sor: sayarak mı buluyoruz, ölçerek mi?",
+     "Sayarak bulunanları işaretle.",
+     "İşaretlediklerini say."
+    ]
+   }
+  },
+  {
+   "soru": "Nicel veri için hangisi doğrudur?",
+   "secenekler": [
+    "Sayısal olarak ifade edilir.",
+    "Sözcükle ifade edilir.",
+    "Sadece tam sayı olur."
+   ],
+   "dogru": 0,
+   "ipucu": "Bilgi kartındaki tanıma bak.",
+   "aciklama": "Nicel veriler sayısal olarak ifade edilir; 1,5 gibi ondalık da olabilir. (s. 163)",
+   "kavram": "Nicel Veri"
+  },
+  {
+   "soru": "Bir bitkinin boyu 5,5 cm'den 8,7 cm'ye uzadı. Bu iki ölçüm arasında kaç farklı boy olabilir?",
+   "secenekler": [
+    "Hiç yok",
+    "Sadece 3",
+    "Sınırsız"
+   ],
+   "dogru": 2,
+   "ipucu": "Boy sürekli veridir.",
+   "aciklama": "Sürekli veri iki ölçüm arasında sınırsız değer alabilir. (s. 163)",
+   "kavram": "Sürekli Veri"
+  },
+  {
+   "soru": "Melis verilerini grafikle gösterdi ve veri setini temsil edecek değeri buldu. Melis hangi adımdadır?",
+   "secenekler": [
+    "Veri toplama",
+    "Veri analizi",
+    "Araştırma sorusunu belirleme"
+   ],
+   "dogru": 1,
+   "ipucu": "Grafik ve temsil değeri hangi adımda yapılır?",
+   "aciklama": "Grafik çizmek ve temsil değeri bulmak 3. adım olan veri analizidir. (s. 164)",
+   "kavram": "Araştırmanın 4 Adımı"
+  },
+  {
+   "soru": "Araştırma sürecinde “Yorumlama ve karar verme” kaçıncı adımdır?",
+   "cevap": "4",
+   "ipucu": "Adımları sırayla say: Sor, topla, analiz et, …",
+   "aciklama": "Sor (1), topla (2), analiz et (3), yorumla (4). (s. 164)",
+   "kavram": "Araştırmanın 4 Adımı",
+   "yardim": {
+    "adimlar": [
+     "İlk adım araştırma sorusu.",
+     "Sonra verileri toplama, sonra analiz.",
+     "Analizden sonra gelen adımın sırasını say."
+    ]
+   }
+  },
+  {
+   "soru": "Türkiye'nin 2021–2024 geri kazanım yüzdeleri (27,20 … 36,08) bir tabloya yazıldı. Bu sayıların hepsine birden ne denir?",
+   "secenekler": [
+    "Anket",
+    "Veri seti",
+    "Grafik"
+   ],
+   "dogru": 1,
+   "ipucu": "Toplanan verilerin hepsine birden ne deniyordu?",
+   "aciklama": "Toplanan verilerin hepsine birden veri seti denir. (s. 163)",
+   "kavram": "Veri"
+  },
+  {
+   "soru": "Hangisinin cevabı kategorik veri olur?",
+   "secenekler": [
+    "Kaç saat uyudun?",
+    "Boyun kaç cm?",
+    "Hangi sporu seversin?"
+   ],
+   "dogru": 2,
+   "ipucu": "Cevabı sözcük olan soruyu bul.",
+   "aciklama": "Spor adı sözcüktür (futbol, voleybol): kategorik veri.",
+   "kavram": "Kategorik Veri"
+  }
+ ]
+}

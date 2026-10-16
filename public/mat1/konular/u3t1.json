@@ -1,0 +1,235 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "3. Tema: İstatistiksel Araştırma",
+ "baslik": "Ara Durak 1: Araştırmaya Hazırlık",
+ "sayfalar": "Konu 1–3 · s. 159–170, 192–193",
+ "giris": "Araştırmaya hazırlık bitti, tebrikler! Kısa bir mola verip veri türlerini, araştırma sorusunu ve veri toplamayı birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Önce verileri tanıdık: kategorik, kesikli, sürekli. Sonra araştırmanın ilk adımını yaptık: iyi bir soru, evren ve örneklem. En son verileri topladık: anket, plan, güvenilir kaynak ve kişisel verilerin korunması.",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Cevap sözcükse kategorik, sayıysa nicel veri.",
+    "Kesikli: arada değer yok (sayarak). Sürekli: arada sınırsız değer (ölçerek).",
+    "4 adım: Sor, topla, analiz et, yorumla."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Araştırma sorusu grubun verisiyle cevaplanır: “… eğilimi nasıldır?”",
+    "Evren en geniş grup; örneklem onu temsil eden küçük grup.",
+    "Örneklem evrene benzemeli."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Anket sorusu her kişiye tek tek sorulur.",
+    "Hazır veri güvenilir kaynaktan (gov.tr, edu.tr).",
+    "Kişisel veriler izinsiz paylaşılmaz; KVKK korur."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Araştırmanın hangi işi?",
+   "kutular": [
+    {
+     "etiket": "Verinin türü",
+     "uyeler": [
+      "Kategorik Veri",
+      "Kesikli Veri",
+      "Sürekli Veri"
+     ]
+    },
+    {
+     "etiket": "Soru ve kimden?",
+     "uyeler": [
+      "Araştırma Sorusu",
+      "Evren",
+      "Örneklem"
+     ]
+    },
+    {
+     "etiket": "Veriyi toplamak ve korumak",
+     "uyeler": [
+      "Anket Sorusu",
+      "Güvenilir Kaynak",
+      "Kişisel Veri"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Defne, 7/A'daki öğrencilerin günde kaç litre su içtiğini araştırıyor. Toplayacağı veriler hangi türdedir?",
+   "secenekler": [
+    "Kategorik veri",
+    "Kesikli veri",
+    "Sürekli veri"
+   ],
+   "dogru": 2,
+   "ipucu": "1,5 L ile 2 L arasında başka değer olabilir mi?",
+   "aciklama": "Su miktarı ölçülür; arada sınırsız değer olabilir: sürekli veri.",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Araştırma Sorusu"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Sürekli Veri"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Anket sorusunun cevabı sayı mı, sözcük mü?",
+     "Litreyi sayarak mı, ölçerek mi buluruz?",
+     "Arada başka değer olabilir mi?"
+    ]
+   }
+  },
+  {
+   "soru": "“Okulumuzdaki öğrencilerin en sevdiği derslerin dağılımı nasıl bir eğilim gösterir?” araştırmasında veri türü ve evren hangisidir?",
+   "secenekler": [
+    "Kategorik veri; okuldaki bütün öğrenciler",
+    "Sürekli veri; sadece 7/A sınıfı",
+    "Kesikli veri; Türkiye'deki bütün öğrenciler"
+   ],
+   "dogru": 0,
+   "ipucu": "Ders adı sayı mı, sözcük mü? Soru kimleri kapsıyor?",
+   "aciklama": "Ders adları sözcüktür: kategorik. Soru okuldaki bütün öğrencileri kapsar: evren.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Kategorik Veri"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Evren"
+    }
+   ]
+  },
+  {
+   "soru": "Ela'nın okulunda 8 sınıf var. Her sınıftan 5 öğrenciye anket sorusu soruldu. Ankete kaç öğrenci katıldı?",
+   "cevap": "40",
+   "ipucu": "Sınıf sayısını her sınıftan seçilen kişi sayısıyla çarp.",
+   "aciklama": "8 · 5 = 40 öğrenci. Bu 40 öğrenci örneklemdir.",
+   "birim": "öğrenci",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Örneklem"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Anket Sorusu"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaç sınıf var?",
+     "Her sınıftan kaç öğrenciye soruldu?",
+     "Sınıf sayısını her sınıftaki kişi sayısıyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi “verileri toplama” adımında yapılır?",
+   "secenekler": [
+    "Anket sorusunu sorup cevapları kaydetmek",
+    "Araştırma sorusunu yazmak",
+    "Sonuçları yorumlamak"
+   ],
+   "dogru": 0,
+   "ipucu": "4 adımı sırayla düşün: Sor, topla, …",
+   "aciklama": "Anket sorusunu sormak ve cevapları kaydetmek 2. adım olan veri toplamadır.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Araştırmanın 4 Adımı"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Veri Toplama Planı"
+    }
+   ]
+  },
+  {
+   "soru": "Buse'nin anketinde kilo ve boy soruları vardı. Bu veriler hangi türdedir ve onlarla ne yapılmalıdır?",
+   "secenekler": [
+    "Kategorik veri; herkese açık paylaşılmalı",
+    "Sürekli veri; izinsiz paylaşılmamalı",
+    "Kesikli veri; internette yayımlanmalı"
+   ],
+   "dogru": 1,
+   "ipucu": "Kilo ve boy ölçülür mü, sayılır mı? Kime ait bilgiler?",
+   "aciklama": "Kilo ve boy ölçülür: sürekli veri. Kişisel veridir; izinsiz paylaşılmaz.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Sürekli Veri"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "İzin ve Gizlilik"
+    }
+   ]
+  },
+  {
+   "soru": "Bir araştırmanın evreni 300 öğrenci. Örneklem için her 10 öğrenciden 1'i seçiliyor. Örneklemde kaç öğrenci olur?",
+   "cevap": "30",
+   "ipucu": "300'ün içinde kaç tane 10 var?",
+   "aciklama": "300 ÷ 10 = 30 öğrenci.",
+   "birim": "öğrenci",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Evren"
+    },
+    {
+     "konu": "u3k2",
+     "kavram": "Örneklem"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Evrende kaç öğrenci var?",
+     "Her 10 öğrenciden kaçı seçiliyor?",
+     "300'ü 10'a böl."
+    ]
+   }
+  },
+  {
+   "soru": "Mustafa Bey orman yangınlarında her yıl yanan alanı (hektar) inceliyor. Veriyi nereden almalı ve bu veri hangi türdedir?",
+   "secenekler": [
+    "Bir arkadaşından; kategorik veri",
+    "Sosyal medyadan; kesikli veri",
+    "Resmî bir kurum sitesinden; sürekli veri"
+   ],
+   "dogru": 2,
+   "ipucu": "Güvenilir kaynak hangisi? Alan ölçülür mü, sayılır mı?",
+   "aciklama": "Resmî siteler güvenilirdir. Yanan alan ölçülür: sürekli veri.",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Güvenilir Kaynak"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Sürekli Veri"
+    }
+   ]
+  }
+ ]
+}
