@@ -1,0 +1,575 @@
+{
+ "id": "u3k4",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "say ve tell kalıpları",
+ "sayfalar": "SB s. 38–39, 120, 130 · WB s. 27–28, 30",
+ "giris": "İkisi de 'söylemek' ama farklı kelimelerle kullanılıyor. {{say}} ile: {{hello}}, {{sorry}}, {{yes/no}}. {{tell}} ile: {{a joke}}, {{a lie}}, {{the truth}}. Bu kalıpları bir bütün olarak ezberleyeceğiz. Her kalıptan sonra kısa bir soru var.",
+ "kavramlar": [
+  {
+   "ad": "say hello",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='56' rx='16' fill='#4ea8de'/><polygon points='34,70 50,70 30,88' fill='#4ea8de'/><text x='60' y='56' font-size='18' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Hello!</text><text x='80' y='106' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>say</text></svg>",
+   "aciklama": "Merhaba demek, selam vermek.",
+   "ek": "Kişi söylenecekse {{to}} gelir: {{say hello to someone}}. Geçmiş hâli {{said}}.",
+   "akilda": "merhaba demek",
+   "ornek": "The last time I said hello was when I came into class this morning.",
+   "ornekTr": "En son bu sabah sınıfa girerken merhaba dedim. (SB s. 38)",
+   "formul": [
+    [
+     {
+      "t": "say",
+      "r": "fiil",
+      "alt": "said"
+     },
+     {
+      "t": "hello",
+      "r": "kelime"
+     },
+     {
+      "t": "to someone",
+      "r": "diger",
+      "alt": "birine"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Birine 'merhaba' demek İngilizcede nasıl?",
+    "secenekler": [
+     "say hello",
+     "tell hello",
+     "speak hello"
+    ],
+    "dogru": 0,
+    "ipucu": "Bu kartın fiili {{say}} ile başlıyor.",
+    "aciklama": "Merhaba demek {{say hello}}. (SB s. 38)"
+   }
+  },
+  {
+   "ad": "say sorry",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='56' rx='16' fill='#4ea8de'/><polygon points='34,70 50,70 30,88' fill='#4ea8de'/><text x='60' y='56' font-size='18' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Sorry!</text><text x='80' y='106' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>say</text></svg>",
+   "aciklama": "Özür dilemek, 'özür dilerim' demek.",
+   "ek": "{{say sorry to someone}}: birinden özür dilemek. {{say sorry for ...}}: bir şey için özür dilemek.",
+   "akilda": "özür dilemek",
+   "ornek": "I want to say sorry for shouting at you last week.",
+   "ornekTr": "Geçen hafta sana bağırdığım için özür dilemek istiyorum. (WB s. 27)",
+   "formul": [
+    [
+     {
+      "t": "say",
+      "r": "fiil",
+      "alt": "said"
+     },
+     {
+      "t": "sorry",
+      "r": "kelime"
+     },
+     {
+      "t": "to someone",
+      "r": "diger",
+      "alt": "birine"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I want to ___ sorry for shouting at you.}} Boşluğa hangisi?",
+    "secenekler": [
+     "tell",
+     "say",
+     "talk"
+    ],
+    "dogru": 1,
+    "ipucu": "{{sorry}} hangi fiille kullanılıyordu? Kartın alt yazısına bak.",
+    "aciklama": "Özür dilemek {{say sorry}}. (WB s. 27)"
+   }
+  },
+  {
+   "ad": "say yes/no",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='56' rx='16' fill='#4ea8de'/><polygon points='34,70 50,70 30,88' fill='#4ea8de'/><text x='40' y='52' font-size='17' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>YES</text><text x='82' y='52' font-size='17' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#e63946'>NO</text><line x1='61' y1='30' x2='61' y2='58' stroke='#1b2340' stroke-width='3'/><text x='80' y='106' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>say</text></svg>",
+   "aciklama": "Evet ya da hayır demek: kabul etmek ya da reddetmek.",
+   "ek": "Kitap: istemediğin bir şeye her zaman {{no}} diyebilirsin.",
+   "akilda": "evet / hayır demek",
+   "ornek": "When you don't want to do something, you can always say no.",
+   "ornekTr": "Bir şeyi yapmak istemediğinde her zaman hayır diyebilirsin. (WB s. 30)",
+   "formul": [
+    [
+     {
+      "t": "say",
+      "r": "fiil",
+      "alt": "said"
+     },
+     {
+      "t": "yes / no",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "İstemediğin bir şey için ne yaparsın?",
+    "secenekler": [
+     "I tell no.",
+     "I say a lie.",
+     "I say no."
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta: {{you can always say no}}.",
+    "aciklama": "Hayır demek {{say no}}. (WB s. 30)"
+   }
+  },
+  {
+   "ad": "say something in Italian",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='56' rx='16' fill='#4ea8de'/><polygon points='34,70 50,70 30,88' fill='#4ea8de'/><text x='60' y='56' font-size='18' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Ciao!</text><text x='80' y='106' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>say</text></svg>",
+   "aciklama": "Bir şeyi başka bir dilde söylemek: İtalyanca, Fransızca, İngilizce...",
+   "ek": "Sorusu: {{How do you say 'thank you' in English?}} İngilizcede 'teşekkürler' nasıl denir?",
+   "akilda": "... dilinde söylemek",
+   "ornek": "The man said something in French.",
+   "ornekTr": "Adam Fransızca bir şey söyledi. (SB s. 130)",
+   "formul": [
+    [
+     {
+      "t": "say",
+      "r": "fiil",
+      "alt": "said"
+     },
+     {
+      "t": "something",
+      "r": "kelime",
+      "alt": "bir şey"
+     },
+     {
+      "t": "in Italian / in French",
+      "r": "diger",
+      "alt": "...dilinde"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{How do you ___ 'merhaba' in English?}} Boşluğa hangisi?",
+    "secenekler": [
+     "say",
+     "tell",
+     "speak to"
+    ],
+    "dogru": 0,
+    "ipucu": "Bir dilde bir şey söylemek: kartın fiili.",
+    "aciklama": "{{How do you say ... in English?}} (SB s. 38)"
+   }
+  },
+  {
+   "ad": "tell a joke",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='56' rx='16' fill='#f4a261'/><polygon points='34,70 50,70 30,88' fill='#f4a261'/><circle cx='40' cy='44' r='16' fill='#ffd166'/><path d='M32 40 q3 -4 6 0 M42 40 q3 -4 6 0' stroke='#1b2340' stroke-width='3' fill='none'/><path d='M31 48 q9 10 18 0 z' fill='#1b2340'/><text x='81' y='50' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>HA HA</text><text x='80' y='106' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f4a261'>tell</text></svg>",
+   "aciklama": "Şaka yapmak, fıkra anlatmak.",
+   "ek": "Kime anlatıldığı {{to}} olmadan söylenebilir: {{tell us a joke}}. Geçmiş hâli {{told}}.",
+   "akilda": "şaka yapmak, fıkra anlatmak",
+   "ornek": "Daniel told us a really funny joke.",
+   "ornekTr": "Daniel bize çok komik bir fıkra anlattı. (SB s. 130)",
+   "formul": [
+    [
+     {
+      "t": "tell",
+      "r": "fiil",
+      "alt": "told"
+     },
+     {
+      "t": "us / me / someone",
+      "r": "diger",
+      "alt": "kişi, to yok"
+     },
+     {
+      "t": "a joke",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Daniel ___ us a really funny joke.}} Boşluğa hangisi?",
+    "secenekler": [
+     "said",
+     "told",
+     "spoke"
+    ],
+    "dogru": 1,
+    "ipucu": "{{a joke}} hangi fiille kullanılıyordu? Kartın alt yazısına bak.",
+    "aciklama": "Şaka anlatmak {{tell a joke}}: {{told}}. (SB s. 130)"
+   }
+  },
+  {
+   "ad": "tell a lie",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='56' rx='16' fill='#f4a261'/><polygon points='34,70 50,70 30,88' fill='#f4a261'/><text x='46' y='52' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>LIE</text><circle cx='86' cy='44' r='14' fill='#e63946'/><path d='M80 38 l12 12 M92 38 l-12 12' stroke='#f1f4fb' stroke-width='4' stroke-linecap='round'/><text x='80' y='106' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f4a261'>tell</text></svg>",
+   "aciklama": "Yalan söylemek.",
+   "ek": "Zıddı {{tell the truth}}: doğruyu söylemek. {{lie}} yalan demek.",
+   "akilda": "yalan söylemek",
+   "ornek": "Have you ever told a lie?",
+   "ornekTr": "Hiç yalan söyledin mi? (WB s. 28)",
+   "formul": [
+    [
+     {
+      "t": "tell",
+      "r": "fiil",
+      "alt": "told"
+     },
+     {
+      "t": "someone",
+      "r": "diger",
+      "alt": "kişi, to yok"
+     },
+     {
+      "t": "a lie",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "'Yalan söylemek' hangisi?",
+    "secenekler": [
+     "say a lie",
+     "speak a lie",
+     "tell a lie"
+    ],
+    "dogru": 2,
+    "ipucu": "{{lie}} hangi fiille kullanılıyordu? Kırmızı çarpılı kartı hatırla.",
+    "aciklama": "Yalan söylemek {{tell a lie}}. (WB s. 28)"
+   }
+  },
+  {
+   "ad": "tell the truth",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='16' width='92' height='56' rx='16' fill='#f4a261'/><polygon points='34,70 50,70 30,88' fill='#f4a261'/><circle cx='60' cy='44' r='18' fill='#3cc47c'/><path d='M51 44 l6 6 l12 -13' stroke='#1b2340' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='80' y='106' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f4a261'>tell</text></svg>",
+   "aciklama": "Doğruyu söylemek, gerçeği anlatmak.",
+   "ek": "Dikkat: {{say the truth}} değil, {{tell the truth}}.",
+   "akilda": "doğruyu söylemek",
+   "ornek": "You should always tell the truth.",
+   "ornekTr": "Her zaman doğruyu söylemelisin. (SB s. 130)",
+   "formul": [
+    [
+     {
+      "t": "tell",
+      "r": "fiil",
+      "alt": "told"
+     },
+     {
+      "t": "the truth",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Come on, ___ the truth! Where were you yesterday?}} Boşluğa hangisi?",
+    "secenekler": [
+     "tell",
+     "say",
+     "speak"
+    ],
+    "dogru": 0,
+    "ipucu": "{{the truth}} hangi fiille kullanılıyordu?",
+    "aciklama": "Doğruyu söylemek {{tell the truth}}. (SB s. 130)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "tell a story",
+   "tr": "hikâye anlatmak",
+   "ornek": "Let me tell you a story about how I met my best friend.",
+   "ornekTr": "Sana en iyi arkadaşımla nasıl tanıştığımın hikâyesini anlatayım. (WB s. 27)"
+  },
+  {
+   "en": "tell someone a secret",
+   "tr": "birine sır vermek",
+   "ornek": "Can I tell you a secret?",
+   "ornekTr": "Sana bir sır verebilir miyim? (WB s. 27)"
+  },
+  {
+   "en": "flash card",
+   "tr": "kelime kartı"
+  },
+  {
+   "en": "conlang",
+   "tr": "icat edilmiş dil (constructed language)"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "{{say}} ile mi, {{tell}} ile mi?",
+   "kutular": [
+    {
+     "etiket": "say",
+     "uyeler": [
+      "say hello",
+      "say sorry",
+      "say yes/no",
+      "say something in Italian"
+     ]
+    },
+    {
+     "etiket": "tell",
+     "uyeler": [
+      "tell a joke",
+      "tell a lie",
+      "tell the truth"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "Paula didn't say hello to me.",
+   "tr": "Paula bana merhaba demedi. (WB s. 30)"
+  },
+  {
+   "en": "I want to say sorry.",
+   "tr": "Özür dilemek istiyorum. (WB s. 27)"
+  },
+  {
+   "en": "You can always say no.",
+   "tr": "Her zaman hayır diyebilirsin. (WB s. 30)"
+  },
+  {
+   "en": "Daniel told us a funny joke.",
+   "tr": "Daniel bize komik bir fıkra anlattı. (SB s. 130)"
+  },
+  {
+   "en": "You should always tell the truth.",
+   "tr": "Her zaman doğruyu söylemelisin. (SB s. 130)"
+  },
+  {
+   "en": "Can I tell you a secret?",
+   "tr": "Sana bir sır verebilir miyim? (WB s. 27)"
+  },
+  {
+   "en": "Have you ever told a lie?",
+   "tr": "Hiç yalan söyledin mi? (WB s. 28)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "The man told something in French.",
+   "yanlis": "told",
+   "secenekler": [
+    "said",
+    "spoke",
+    "talked"
+   ],
+   "dogru": 0,
+   "tr": "Adam Fransızca bir şey söyledi.",
+   "aciklama": "Bir dilde bir şey söylemek {{say something in French}}. (SB s. 130)"
+  },
+  {
+   "cumle": "Come on, say the truth!",
+   "yanlis": "say",
+   "secenekler": [
+    "speak",
+    "tell",
+    "talk"
+   ],
+   "dogru": 1,
+   "tr": "Hadi, doğruyu söyle!",
+   "aciklama": "Doğruyu söylemek {{tell the truth}}. (SB s. 130)"
+  },
+  {
+   "cumle": "I said sorry to Luisa because I said her a lie.",
+   "yanlis": "said her",
+   "secenekler": [
+    "spoke her",
+    "said to her",
+    "told her"
+   ],
+   "dogru": 2,
+   "tr": "Luisa'ya yalan söylediğim için ondan özür diledim.",
+   "aciklama": "Yalan {{tell}} ile söylenir: {{told her a lie}}. (SB s. 130)"
+  },
+  {
+   "cumle": "Can I say you a secret?",
+   "yanlis": "say",
+   "secenekler": [
+    "tell",
+    "speak",
+    "talk"
+   ],
+   "dogru": 0,
+   "tr": "Sana bir sır verebilir miyim?",
+   "aciklama": "Sır vermek {{tell someone a secret}}. (WB s. 27)"
+  },
+  {
+   "cumle": "Paula didn't tell hello to me at the party.",
+   "yanlis": "tell",
+   "secenekler": [
+    "told",
+    "say",
+    "speak"
+   ],
+   "dogru": 1,
+   "tr": "Paula partide bana merhaba demedi.",
+   "aciklama": "Merhaba demek {{say hello}}; {{didn't}}'ten sonra fiil yalın: {{say}}. (WB s. 30)"
+  },
+  {
+   "cumle": "George said me the story of how his parents met.",
+   "yanlis": "said",
+   "secenekler": [
+    "told",
+    "spoke",
+    "talked"
+   ],
+   "dogru": 0,
+   "tr": "George bana anne babasının nasıl tanıştığının hikâyesini anlattı.",
+   "aciklama": "Hikâye anlatmak {{tell a story}}; kişi {{to}} olmadan gelir: {{told me}}. (WB s. 30)"
+  }
+ ],
+ "biliyorMusun": [
+  "İnsanlar yüzlerce yıldır dil icat ediyor. Bu dillere {{conlangs}} denir: {{People have invented conlangs for hundreds of years.}} (SB s. 39)",
+  "Kitaptaki radyo röportajında James icat edilmiş bir dil olan Elfçeyi konuşuyor. Bir konferansta biri Elfçe şaka bile yapmış: {{Someone told a joke in Elvish!}} (SB s. 38–39)",
+  "Kitap yeni kalıpları kelime kartıyla ({{flash cards}}) öğrenmeyi öneriyor: bir yüze {{say}} ya da {{tell}}, öbür yüze kalıbın geri kalanını yaz. (SB s. 38)"
+ ],
+ "akildaKalsin": [
+  "{{say}}: {{hello}}, {{sorry}}, {{yes/no}}, {{something in Italian}}.",
+  "{{tell}}: {{a joke}}, {{a lie}}, {{the truth}}, {{a story}}, {{someone a secret}}.",
+  "{{tell}}'den sonra kişi {{to}} olmadan gelir: {{tell me}}. {{say}}'de {{to}} gerekir: {{say hello to me}}.",
+  "Geçmiş: {{said}}, {{told}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{say the truth}} neden yanlış?",
+   "cevap": "Çünkü İngilizcede bu kelimeler kalıp olarak birlikte kullanılır: {{tell the truth}}. Kitabın alıştırmasında {{Come on, say the truth!}} yanlış cümle olarak düzeltiliyor. (SB s. 130)"
+  },
+  {
+   "soru": "Sır vermek nasıl söylenir?",
+   "cevap": "{{tell someone a secret}}: {{Can I tell you a secret? But promise you won't tell anyone else.}} (WB s. 27)"
+  },
+  {
+   "soru": "Kalıpları nasıl ezberleyebilirim?",
+   "cevap": "Kitabın önerisi kelime kartı: bir yüze {{say}} ya da {{tell}} yaz, diğer yüze {{the truth}}, {{hello}} gibi parçayı. Sonra kendini ya da arkadaşını test et. (SB s. 38, 130)"
+  },
+  {
+   "soru": "{{say}} ve {{tell}}'in geçmiş hâlleri ne?",
+   "cevap": "{{say}} → {{said}}, {{tell}} → {{told}}. İkisi de düzensiz fiil: {{Daniel told us a joke.}} {{I said sorry to Luisa.}} (SB s. 130)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kitaptaki gibi yaz: bu kalıplardan birini en son ne zaman yaptın? {{The last time I said hello was ...}}",
+   "ornekCevap": "The last time I said hello was when I came into class this morning. The last time I told a joke was yesterday.",
+   "anahtarlar": [
+    "last time",
+    "said",
+    "told"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kalıbı duydun?",
+   "secenekler": [
+    "tell a joke",
+    "tell the truth",
+    "say sorry"
+   ],
+   "dogru": 1,
+   "ipucu": "Doğruyu söylemekle ilgili kalıp. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kalıp {{tell the truth}}: doğruyu söylemek. (SB s. 38)",
+   "dinle": "tell the truth",
+   "kavram": "tell the truth"
+  },
+  {
+   "soru": "Dinle. Hangi kalıbı duydun?",
+   "secenekler": [
+    "say hello",
+    "say yes",
+    "say sorry"
+   ],
+   "dogru": 2,
+   "ipucu": "Özür dilemekle ilgili kalıp.",
+   "aciklama": "Duyduğun kalıp {{say sorry}}: özür dilemek. (SB s. 38)",
+   "dinle": "say sorry",
+   "kavram": "say sorry"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Paula didn't ___ hello to me at the party.}}",
+   "secenekler": [
+    "say",
+    "tell",
+    "told"
+   ],
+   "dogru": 0,
+   "ipucu": "{{hello}} hangi fiille? {{didn't}}'ten sonra fiil yalın gelir.",
+   "aciklama": "{{say hello}}: {{Paula didn't say hello to me.}} (WB s. 30)",
+   "kavram": "say hello"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I'd like to know how to ___ 'thank you' in Italian.}}",
+   "secenekler": [
+    "tell",
+    "say",
+    "speak"
+   ],
+   "dogru": 1,
+   "ipucu": "Bir dilde bir şey söylemek.",
+   "aciklama": "{{say ... in Italian}}: İtalyanca söylemek. (WB s. 30)",
+   "kavram": "say something in Italian"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{When you don't want to do something, you can always ___ no.}}",
+   "secenekler": [
+    "tell",
+    "talk",
+    "say"
+   ],
+   "dogru": 2,
+   "ipucu": "{{no}} hangi fiille kullanılıyordu?",
+   "aciklama": "{{say no}}: hayır demek. (WB s. 30)",
+   "kavram": "say yes/no"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Mike ___ a really terrible joke and no one laughed.}}",
+   "secenekler": [
+    "told",
+    "said",
+    "spoke"
+   ],
+   "dogru": 0,
+   "ipucu": "{{a joke}} hangi fiille? Geçmiş hâlini düşün.",
+   "aciklama": "{{tell a joke}} → {{told}}. Kimse gülmedi! (WB s. 30)",
+   "kavram": "tell a joke"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I'm not very good at telling ___ – my face always goes red!}}",
+   "secenekler": [
+    "the truth",
+    "lies",
+    "hello"
+   ],
+   "dogru": 1,
+   "ipucu": "Yüzü kızarıyor: yaparken utandığı şey.",
+   "aciklama": "{{telling lies}}: yalan söylemek. Yüzü kızarınca anlaşılıyor. (WB s. 30)",
+   "kavram": "tell a lie"
+  },
+  {
+   "soru": "{{say}} ile {{tell}} arasındaki en önemli fark hangisi?",
+   "secenekler": [
+    "say her a lie doğrudur.",
+    "İkisi her zaman aynı kelimelerle kullanılır.",
+    "tell'den sonra kişi to olmadan gelir: tell me."
+   ],
+   "dogru": 2,
+   "ipucu": "Formül şeritlerini karşılaştır: {{say hello to someone}} ve {{tell someone a joke}}.",
+   "aciklama": "{{tell me a joke}} ama {{say hello to me}}. (SB s. 130)",
+   "kavram": "tell a joke"
+  },
+  {
+   "soru": "{{You should always tell the truth.}} Bu cümle ne demek?",
+   "secenekler": [
+    "Her zaman doğruyu söylemelisin.",
+    "Her zaman şaka yapmalısın.",
+    "Her zaman özür dilemelisin."
+   ],
+   "dogru": 0,
+   "ipucu": "{{the truth}}: gerçek, doğru.",
+   "aciklama": "{{tell the truth}}: doğruyu söylemek. (SB s. 130)",
+   "kavram": "tell the truth"
+  }
+ ]
+}

@@ -1,0 +1,821 @@
+{
+ "id": "u3k6",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "Present perfect mi, past simple mı?",
+ "sayfalar": "SB s. 39–43 · WB s. 28–31, 92–93, 107",
+ "giris": "İki zamanı karşılaştıracağız. Bitmiş, zamanı belli işler: {{past simple}} ({{I saw}}). Hâlâ süren ya da zamanı söylenmeyen işler: {{present perfect}} ({{I've seen}}). Sonra liste yazılarında ({{listicle}}) kullanılan zaman ifadelerini öğreneceğiz. Sonunda dünyadaki dillerle ilgili bir okuma var.",
+ "kavramlar": [
+  {
+   "ad": "past simple",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='88' x2='108' y2='88' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='100' cy='88' r='6' fill='#c9cfe0'/><text x='100' y='108' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#c9cfe0'>NOW</text><rect x='22' y='82' width='34' height='12' rx='6' fill='#4ea8de'/><path d='M22 70 v-8 h34 v8' stroke='#4ea8de' stroke-width='3' fill='none'/><text x='39' y='52' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>June</text><path d='M64 88 H90' stroke='#e63946' stroke-width='3' stroke-dasharray='4 4'/><text x='60' y='26' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f1f4fb'>bitti ✓</text></svg>",
+   "aciklama": "Geçmişte başlayıp bitmiş işler için kullanılır. Ne zaman olduğu çoğu zaman bellidir: {{yesterday}}, {{in June}}, {{two minutes ago}}.",
+   "ek": "Kitap: {{I went to Liverpool in June.}} (şimdi temmuz; iş bitti). {{They began the exam two minutes ago.}} (WB s. 92)",
+   "akilda": "bitti, zamanı belli",
+   "ornek": "Someone told a joke in Elvish!",
+   "ornekTr": "Biri Elfçe bir şaka yaptı! (SB s. 39)",
+   "formul": [
+    [
+     {
+      "t": "I / He / They",
+      "r": "ozne"
+     },
+     {
+      "t": "went",
+      "r": "fiil",
+      "alt": "V2"
+     },
+     {
+      "t": "to Liverpool",
+      "r": "diger"
+     },
+     {
+      "t": "in June",
+      "r": "kelime",
+      "alt": "bitmiş zaman"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I went to Liverpool in June.}} Bu iş bitti mi?",
+    "secenekler": [
+     "Evet, geçmişte bitti.",
+     "Hayır, hâlâ sürüyor.",
+     "Henüz başlamadı."
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki {{bitti ✓}} çizimini ve {{in June}} zamanını hatırla.",
+    "aciklama": "Past simple bitmiş işi anlatır: haziranda gitti, iş bitti. (WB s. 92)"
+   }
+  },
+  {
+   "ad": "present perfect",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='88' x2='108' y2='88' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='100' cy='88' r='6' fill='#c9cfe0'/><text x='100' y='108' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#c9cfe0'>NOW</text><rect x='30' y='82' width='70' height='12' rx='6' fill='#3cc47c'/><circle cx='30' cy='88' r='8' fill='#3cc47c'/><text x='64' y='60' font-size='15' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#3cc47c'>...hâlâ</text><text x='60' y='30' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f1f4fb'>5 years</text></svg>",
+   "aciklama": "Geçmişte başlayıp hâlâ süren ya da ne zaman olduğu söylenmeyen işler için: {{have / has}} + V3.",
+   "ek": "Kitap: {{I've been to Liverpool.}} (ne zaman olduğu söylenmiyor). {{She's wanted to ask you a question for a few days.}} (hâlâ istiyor). (WB s. 92)",
+   "akilda": "hâlâ sürüyor, zaman yok",
+   "ornek": "I've studied it for about five years.",
+   "ornekTr": "Onu yaklaşık beş yıldır çalışıyorum. (SB s. 39)",
+   "formul": [
+    [
+     {
+      "t": "I / You / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "have",
+      "r": "yard",
+      "alt": "'ve · has: he/she/it"
+     },
+     {
+      "t": "studied",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "it",
+      "r": "diger"
+     },
+     {
+      "t": "for five years",
+      "r": "kelime",
+      "alt": "hâlâ sürüyor"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I've studied it for about five years.}} James hâlâ çalışıyor mu?",
+    "secenekler": [
+     "Hayır, beş yıl önce bıraktı.",
+     "Evet, beş yıldır çalışıyor ve hâlâ sürüyor.",
+     "Henüz başlamadı."
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki {{...hâlâ}} çizgisini hatırla: çizgi şimdiye kadar geliyor.",
+    "aciklama": "Present perfect + {{for}}: beş yıldır sürüyor, bitmedi. (SB s. 39)"
+   }
+  },
+  {
+   "ad": "Have you ever …? / Did you …?",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='14' width='70' height='34' rx='10' fill='#3cc47c'/><text x='45' y='36' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>Have you ever?</text><rect x='40' y='66' width='70' height='34' rx='10' fill='#4ea8de'/><text x='75' y='88' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>When did you?</text><path d='M45 50 V60 l-5 -5 M45 60 l5 -5' stroke='#ffd166' stroke-width='3' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Önce present perfect ile genel soru sorulur: {{Have you ever ...?}} (Hiç ... mı?). Sonra ayrıntı past simple ile sorulur: {{Who / When / Why did you ...?}}",
+   "ek": "{{Have you ever told a lie?}} – {{Yes, I have.}} – {{Who did you tell the lie to?}} {{Why did you tell it?}} (WB s. 28)",
+   "akilda": "önce Have you ever, sonra did",
+   "ornek": "Have you ever told a lie?",
+   "ornekTr": "Hiç yalan söyledin mi? (WB s. 28)",
+   "formul": [
+    [
+     {
+      "t": "Have",
+      "r": "yard"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "ever",
+      "r": "diger",
+      "alt": "hiç"
+     },
+     {
+      "t": "told",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "a lie",
+      "r": "diger"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ],
+    [
+     {
+      "t": "Who",
+      "r": "diger"
+     },
+     {
+      "t": "did",
+      "r": "yard"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "tell",
+      "r": "fiil",
+      "alt": "V1"
+     },
+     {
+      "t": "the lie to",
+      "r": "diger"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Arkadaşın {{Yes, I have.}} dedi. Şimdi ayrıntı soruyorsun. Hangisi doğru?",
+    "secenekler": [
+     "Why have you told it yesterday?",
+     "Why you told it?",
+     "Why did you tell it?"
+    ],
+    "dogru": 2,
+    "ipucu": "Ayrıntı soruları past simple ile: {{did}} + fiil yalın.",
+    "aciklama": "Ayrıntı past simple: {{Why did you tell it?}} (WB s. 28)"
+   }
+  },
+  {
+   "ad": "all my life",
+   "renk": "#9b5de5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='88' x2='108' y2='88' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='100' cy='88' r='6' fill='#c9cfe0'/><text x='100' y='108' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#c9cfe0'>NOW</text><rect x='14' y='82' width='86' height='12' rx='6' fill='#9b5de5'/><circle cx='20' cy='60' r='7' fill='#ffd166'/><rect x='15' y='68' width='10' height='10' rx='4' fill='#ffd166'/><circle cx='96' cy='48' r='11' fill='#ffd166'/><rect x='88' y='60' width='16' height='20' rx='6' fill='#ffd166'/><text x='56' y='36' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#9b5de5'>all my life</text></svg>",
+   "aciklama": "Bütün hayatım boyunca, doğduğumdan beri. Present perfect ile kullanılır.",
+   "ek": "Kitaptaki anlamı: {{since I was born}}. {{all his life}}: bütün hayatı boyunca. (WB s. 29)",
+   "akilda": "bütün hayatım boyunca",
+   "ornek": "All my life, I've never been very confident or sociable.",
+   "ornekTr": "Bütün hayatım boyunca hiç çok kendinden emin ya da sosyal biri olmadım. (WB s. 29)",
+   "formul": [
+    [
+     {
+      "t": "All my life",
+      "r": "kelime",
+      "alt": "doğduğumdan beri"
+     },
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "have",
+      "r": "yard",
+      "alt": "'ve"
+     },
+     {
+      "t": "loved",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "languages",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{all my life}} ne demek?",
+    "secenekler": [
+     "doğduğumdan beri",
+     "yarın",
+     "geçen hafta"
+    ],
+    "dogru": 0,
+    "ipucu": "Karttaki küçük çocuktan büyük insana uzanan çizgiyi hatırla.",
+    "aciklama": "{{all my life}} = {{since I was born}}: doğduğumdan beri. (WB s. 29)"
+   }
+  },
+  {
+   "ad": "over the last few years",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='88' x2='108' y2='88' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='100' cy='88' r='6' fill='#c9cfe0'/><text x='100' y='108' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#c9cfe0'>NOW</text><rect x='56' y='82' width='44' height='12' rx='6' fill='#3cc47c'/><path d='M56 70 v-8 h44 v8' stroke='#3cc47c' stroke-width='3' fill='none'/><text x='78' y='52' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#3cc47c'>son yıllar</text><text x='48' y='28' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f1f4fb'>recently</text></svg>",
+   "aciklama": "Son birkaç yılda, son zamanlarda. Kitaptaki anlamı: {{recently}}. Genelde present perfect ile kullanılır.",
+   "ek": "{{over the last few years}}: son birkaç yıldır. Kitaptaki listicle bu ifadeyle başlıyor. (WB s. 29)",
+   "akilda": "son birkaç yılda",
+   "ornek": "Over the last few years, I've learned a few things and now I can communicate much better than before.",
+   "ornekTr": "Son birkaç yılda birkaç şey öğrendim; şimdi eskisinden çok daha iyi iletişim kurabiliyorum. (WB s. 29)",
+   "formul": [
+    [
+     {
+      "t": "Over the last few years",
+      "r": "kelime",
+      "alt": "son birkaç yılda"
+     },
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "have",
+      "r": "yard",
+      "alt": "'ve"
+     },
+     {
+      "t": "learned",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "a few things",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{over the last few years}} hangisine en yakın?",
+    "secenekler": [
+     "tomorrow",
+     "recently",
+     "since I was born"
+    ],
+    "dogru": 1,
+    "ipucu": "Kitaptaki anlamı: son zamanlarda.",
+    "aciklama": "{{over the last few years}} = {{recently}}: son zamanlarda. (WB s. 29)"
+   }
+  },
+  {
+   "ad": "before / later on",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='88' x2='108' y2='88' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='100' cy='88' r='6' fill='#c9cfe0'/><text x='100' y='108' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#c9cfe0'>NOW</text><circle cx='26' cy='88' r='7' fill='#4ea8de'/><circle cx='78' cy='88' r='7' fill='#f4a261'/><text x='28' y='68' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>before</text><text x='80' y='52' font-size='12' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f4a261'>later on</text><path d='M40 28 H64 l-6 -6 M64 28 l-6 6' stroke='#ffd166' stroke-width='3.5' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "{{before}}: daha önce, eskiden. {{later on}}: sonra, bir süre geçince.",
+   "ek": "Kitaptaki anlamlar: {{before}} = {{earlier}}; {{later on}} = {{after some time has passed}}. Örnek: {{Before, I didn't use to think about intonation.}} (WB s. 29)",
+   "akilda": "önce / sonra",
+   "ornek": "Of course, say what you want to say, but later on, ask questions to find out what the other person is thinking.",
+   "ornekTr": "Tabii ki söylemek istediğini söyle ama sonra karşındakinin ne düşündüğünü öğrenmek için soru sor. (WB s. 29)",
+   "soru": {
+    "soru": "{{later on}} ne demek?",
+    "secenekler": [
+     "daha önce",
+     "bütün hayatım boyunca",
+     "bir süre geçince, sonra"
+    ],
+    "dogru": 2,
+    "ipucu": "Karttaki sağdaki turuncu nokta: zaman çizgisinde daha ileride.",
+    "aciklama": "{{later on}} = {{after some time has passed}}: sonra. (WB s. 29)"
+   }
+  },
+  {
+   "ad": "these days / soon",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='88' x2='108' y2='88' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='100' cy='88' r='6' fill='#c9cfe0'/><text x='100' y='108' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#c9cfe0'>NOW</text><circle cx='100' cy='88' r='9' fill='#f4a261'/><path d='M100 74 C100 58 112 58 112 70' stroke='#ffd166' stroke-width='3' fill='none'/><text x='52' y='42' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f4a261'>these days</text><text x='52' y='64' font-size='13' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#ffd166'>soon →</text></svg>",
+   "aciklama": "{{these days}}: bugünlerde, şu sıralar. {{soon}}: yakında, çok kısa süre sonra.",
+   "ek": "Kitaptaki anlamlar: {{these days}} = {{at the moment}}; {{soon}} = {{in the very near future}}. Örnek: {{you'll soon be able to see the difference}}. (WB s. 29)",
+   "akilda": "bugünlerde / yakında",
+   "ornek": "This is especially important these days, when the world can be such a serious place.",
+   "ornekTr": "Bu, dünyanın bu kadar ciddi bir yer olabildiği bugünlerde özellikle önemli. (WB s. 29)",
+   "soru": {
+    "soru": "{{soon}} ne demek?",
+    "secenekler": [
+     "yakında",
+     "eskiden",
+     "bugünlerde"
+    ],
+    "dogru": 0,
+    "ipucu": "Kitaptaki anlamı: {{in the very near future}}.",
+    "aciklama": "{{soon}} = {{in the very near future}}: yakında. (WB s. 29)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "die out",
+   "tr": "tamamen yok olmak",
+   "ornek": "Nearly half are likely to die out by the end of the century.",
+   "ornekTr": "Neredeyse yarısının yüzyılın sonuna kadar yok olması muhtemel. (SB s. 42)"
+  },
+  {
+   "en": "end up",
+   "tr": "sonunda bir duruma düşmek"
+  },
+  {
+   "en": "rely on",
+   "tr": "-e dayanmak, -e muhtaç olmak"
+  },
+  {
+   "en": "take over",
+   "tr": "yerini almak, ele geçirmek"
+  },
+  {
+   "en": "turn into",
+   "tr": "-e dönüştürmek, -e dönüşmek"
+  },
+  {
+   "en": "listicle",
+   "tr": "liste biçiminde yazı (list + article)"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangi zamanla daha çok kullanılır?",
+   "kutular": [
+    {
+     "etiket": "Bitmiş, zamanı belli (past simple)",
+     "uyeler": [
+      "past simple"
+     ]
+    },
+    {
+     "etiket": "Şimdiye kadar süren (present perfect)",
+     "uyeler": [
+      "present perfect",
+      "all my life",
+      "over the last few years"
+     ]
+    },
+    {
+     "etiket": "Soru zinciri ve zaman sözcükleri",
+     "uyeler": [
+      "Have you ever …? / Did you …?",
+      "before / later on",
+      "these days / soon"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "I've studied it for about five years.",
+   "tr": "Onu yaklaşık beş yıldır çalışıyorum. (SB s. 39)"
+  },
+  {
+   "en": "Someone told a joke in Elvish!",
+   "tr": "Biri Elfçe bir şaka yaptı! (SB s. 39)"
+  },
+  {
+   "en": "On my first day, I saw the Empire State Building.",
+   "tr": "İlk günümde Empire State Binası'nı gördüm. (SB s. 39)"
+  },
+  {
+   "en": "I haven't eaten anything since this morning.",
+   "tr": "Bu sabahtan beri hiçbir şey yemedim. (SB s. 39)"
+  },
+  {
+   "en": "They began the exam two minutes ago.",
+   "tr": "Sınava iki dakika önce başladılar. (WB s. 92)"
+  },
+  {
+   "en": "Have you ever told a lie?",
+   "tr": "Hiç yalan söyledin mi? (WB s. 28)"
+  },
+  {
+   "en": "I fell off my bike yesterday.",
+   "tr": "Dün bisikletten düştüm. (WB s. 31)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "My mother worked at this museum since 2004.",
+   "yanlis": "worked",
+   "secenekler": [
+    "has worked",
+    "works",
+    "is working"
+   ],
+   "dogru": 0,
+   "tr": "Annem 2004'ten beri bu müzede çalışıyor.",
+   "aciklama": "{{since 2004}}: hâlâ sürüyor → present perfect: {{has worked}}. (WB s. 93)"
+  },
+  {
+   "cumle": "He has told me the same joke yesterday.",
+   "yanlis": "has told",
+   "secenekler": [
+    "tells",
+    "told",
+    "have told"
+   ],
+   "dogru": 1,
+   "tr": "Dün bana aynı fıkrayı anlattı.",
+   "aciklama": "{{yesterday}} bitmiş zaman → past simple: {{told}}. (WB s. 93)"
+  },
+  {
+   "cumle": "They didn't begin the exam yet.",
+   "yanlis": "didn't begin",
+   "secenekler": [
+    "don't begin",
+    "haven't begun",
+    "didn't began"
+   ],
+   "dogru": 1,
+   "tr": "Sınava henüz başlamadılar.",
+   "aciklama": "{{yet}} present perfect ile: {{haven't begun}}. (WB s. 93)"
+  },
+  {
+   "cumle": "On my first day, I've seen the Empire State Building.",
+   "yanlis": "I've seen",
+   "secenekler": [
+    "I see",
+    "I have see",
+    "I saw"
+   ],
+   "dogru": 2,
+   "tr": "İlk günümde Empire State Binası'nı gördüm.",
+   "aciklama": "{{On my first day}} bitmiş bir zaman → {{I saw}}. (SB s. 39)"
+  },
+  {
+   "cumle": "I haven't done any exercise last week.",
+   "yanlis": "haven't done",
+   "secenekler": [
+    "didn't do",
+    "don't do",
+    "haven't did"
+   ],
+   "dogru": 0,
+   "tr": "Geçen hafta hiç egzersiz yapmadım.",
+   "aciklama": "{{last week}} bitmiş zaman → past simple: {{didn't do}}. (WB s. 31)"
+  },
+  {
+   "cumle": "I didn't hear from you for nearly a week.",
+   "yanlis": "didn't hear",
+   "secenekler": [
+    "don't hear",
+    "haven't heard",
+    "hasn't heard"
+   ],
+   "dogru": 1,
+   "tr": "Neredeyse bir haftadır senden haber almadım.",
+   "aciklama": "Bir haftadır sürüyor ({{for}}) → {{haven't heard}}. (SB s. 39)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Languages",
+  "sayfa": "SB s. 42–43",
+  "sozluk": {
+   "according to experts": "uzmanlara göre",
+   "predict": "tahmin etmek",
+   "die out": "tamamen yok olmak",
+   "elderly": "yaşlı",
+   "taken over": "yerini aldı",
+   "extraordinary efforts": "olağanüstü çabalar",
+   "tribe": "kabile",
+   "interpreted": "sözlü olarak çevirdi",
+   "turn it into": "onu ...e dönüştürmek",
+   "represent sounds": "sesleri göstermek",
+   "research": "araştırma",
+   "relies on": "-e dayanır",
+   "a waste of time": "zaman kaybı",
+   "refuse": "reddetmek",
+   "end up": "sonunda ...e düşmek"
+  },
+  "bolumler": [
+   {
+    "baslik": "Diller yok oluyor; bir uygulama yardım ediyor",
+    "cumleler": [
+     {
+      "en": "Do you know how many languages there are in the world?",
+      "tr": "Dünyada kaç dil olduğunu biliyor musun?"
+     },
+     {
+      "en": "According to experts, the answer is about 7,000, but sadly they predict that nearly half are likely to die out by the end of the century.",
+      "tr": "Uzmanlara göre cevap yaklaşık 7.000; ama ne yazık ki neredeyse yarısının yüzyılın sonuna kadar tamamen yok olacağını tahmin ediyorlar."
+     },
+     {
+      "en": "This is often because speakers are elderly or because the main language of a country has taken over.",
+      "tr": "Bunun nedeni çoğu zaman konuşanların yaşlı olması ya da ülkenin ana dilinin onların yerini almasıdır."
+     },
+     {
+      "en": "Luckily for us, some people are making extraordinary efforts to record languages for history.",
+      "tr": "Neyse ki bazı insanlar dilleri tarihe kaydetmek için olağanüstü çaba gösteriyor."
+     },
+     {
+      "en": "One of them is Steven Bird.",
+      "tr": "Onlardan biri Steven Bird."
+     },
+     {
+      "en": "He developed a phone app to translate Tembé, the language of a small tribe in Brazil's Amazon region.",
+      "tr": "Brezilya'nın Amazon bölgesindeki küçük bir kabilenin dili olan Tembé'yi çevirmek için bir telefon uygulaması geliştirdi."
+     },
+     {
+      "en": "Tembé speakers spoke into their phones and then other tribe members interpreted what they said into Portuguese.",
+      "tr": "Tembé konuşanlar telefonlarına konuştu; sonra kabilenin diğer üyeleri söylenenleri Portekizceye çevirdi."
+     },
+     {
+      "en": "As Tembé has no written language, experts can turn it into a set of symbols to represent sounds, but this takes one hour for every minute of speech!",
+      "tr": "Tembé'nin yazısı olmadığı için uzmanlar onu sesleri gösteren sembollere dönüştürebiliyor; ama bu, konuşmanın her dakikası için bir saat sürüyor!"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Uzmanlara göre dillerin yaklaşık ne kadarı yüzyılın sonuna kadar yok olabilir?",
+      "secenekler": [
+       "Hepsi",
+       "Neredeyse yarısı",
+       "Sadece birkaçı"
+      ],
+      "dogru": 1,
+      "ipucu": "{{nearly half}} geçen cümleyi bul.",
+      "aciklama": "{{nearly half are likely to die out}}: neredeyse yarısı. (SB s. 42)"
+     },
+     {
+      "soru": "Tembé dili için ne yapıldı?",
+      "secenekler": [
+       "Yeni bir okul açıldı.",
+       "Bir sözlük kitabı yazıldı.",
+       "Bir telefon uygulaması geliştirildi."
+      ],
+      "dogru": 2,
+      "ipucu": "Steven Bird ne geliştirdi? {{developed}} geçen cümleyi bul.",
+      "aciklama": "{{He developed a phone app to translate Tembé}}. Bitmiş iş: past simple {{developed}}. (SB s. 43)"
+     }
+    ]
+   },
+   {
+    "baslik": "Pirahã dili ve kaybolan kültürler",
+    "cumleler": [
+     {
+      "en": "The Pirahã tribe also lives in the Amazon region of Brazil.",
+      "tr": "Pirahã kabilesi de Brezilya'nın Amazon bölgesinde yaşıyor."
+     },
+     {
+      "en": "Daniel Everett's research into their language has shocked many people because some things about it are completely different from any other language.",
+      "tr": "Daniel Everett'in onların dili üzerine araştırması birçok insanı şaşırttı, çünkü bu dilin bazı yönleri başka hiçbir dile benzemiyor."
+     },
+     {
+      "en": "For example, Pirahã has no words for colours and no way to count.",
+      "tr": "Örneğin Pirahã dilinde renkler için kelime yok ve saymanın bir yolu yok."
+     },
+     {
+      "en": "Perhaps most interesting of all, there is no way to talk about the past.",
+      "tr": "Belki de en ilginci, geçmiş hakkında konuşmanın bir yolu yok."
+     },
+     {
+      "en": "Everett's explanation is that jungle life relies on understanding and noticing everything around you at all times, so it is a waste of time thinking about the past.",
+      "tr": "Everett'in açıklamasına göre ormandaki hayat, çevrendeki her şeyi her an anlamaya ve fark etmeye dayanıyor; bu yüzden geçmişi düşünmek zaman kaybı."
+     },
+     {
+      "en": "Globally, there are around 470 languages with fewer than 100 speakers, including one Mexican language with only two and unfortunately, they refuse to talk to one another!",
+      "tr": "Dünyada 100'den az konuşanı olan yaklaşık 470 dil var. Bunlardan biri yalnızca iki konuşanı olan bir Meksika dili ve ne yazık ki bu iki kişi birbiriyle konuşmayı reddediyor!"
+     },
+     {
+      "en": "The loss of so many languages means that we could end up with only a few languages left.",
+      "tr": "Bu kadar çok dilin kaybolması, sonunda elimizde sadece birkaç dil kalabileceği anlamına geliyor."
+     },
+     {
+      "en": "That would be sad because languages are an important part of who we are.",
+      "tr": "Bu üzücü olurdu, çünkü diller kim olduğumuzun önemli bir parçası."
+     },
+     {
+      "en": "When they disappear, so do our traditions and culture.",
+      "tr": "Diller yok olunca geleneklerimiz ve kültürümüz de yok oluyor."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Pirahã dilinde ne yok?",
+      "secenekler": [
+       "Geçmiş hakkında konuşmanın yolu",
+       "Hayvan adları",
+       "Selamlaşma kelimeleri"
+      ],
+      "dogru": 0,
+      "ipucu": "{{there is no way to talk about}} geçen cümleyi bul.",
+      "aciklama": "{{there is no way to talk about the past}}: geçmiş hakkında konuşmanın yolu yok. (SB s. 43)"
+     },
+     {
+      "soru": "Yazara göre diller yok olunca başka ne kaybolur?",
+      "secenekler": [
+       "Telefon uygulamaları",
+       "Gelenekler ve kültür",
+       "Ormanlar"
+      ],
+      "dogru": 1,
+      "ipucu": "Son cümleyi oku: {{so do our ...}}",
+      "aciklama": "{{When they disappear, so do our traditions and culture.}} (SB s. 43)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Uzmanlara göre dünyada yaklaşık 7.000 dil var ve neredeyse yarısı bu yüzyılın sonuna kadar yok olabilir. (SB s. 42)",
+  "Pirahã dilinde renkler için kelime ve saymanın bir yolu yok. Geçmiş hakkında konuşmanın da yolu yok! (SB s. 43)",
+  "Alex Rawlings 14 dil konuşabiliyor. 2012'de İngiltere'nin en çok dil bilen öğrencisi oldu. (SB s. 41)"
+ ],
+ "akildaKalsin": [
+  "Bitti, zamanı belli → {{past simple}}: {{I went to Liverpool in June.}}",
+  "Hâlâ sürüyor ya da zaman söylenmiyor → {{present perfect}}: {{I've been to Liverpool.}}",
+  "{{yesterday}}, {{ago}}, {{last week}}, {{in 2012}} → past simple. {{for}}, {{since}}, {{ever}}, {{yet}} → present perfect.",
+  "Önce {{Have you ever ...?}}, sonra ayrıntı {{When did you ...?}}",
+  "{{all my life}} doğduğumdan beri · {{over the last few years}} son yıllarda · {{these days}} bugünlerde · {{soon}} yakında."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{I've been to Liverpool}} ile {{I went to Liverpool in June}} arasındaki fark ne?",
+   "cevap": "İlkinde ne zaman gittiğin söylenmiyor; önemli olan oraya gitmiş olman. İkincisinde zaman belli (haziran) ve iş bitti. (WB s. 92)"
+  },
+  {
+   "soru": "{{yesterday}} ile present perfect kullanabilir miyim?",
+   "cevap": "Hayır. {{yesterday}} bitmiş bir zaman, past simple ister: {{He told me the same joke yesterday.}} (WB s. 93)"
+  },
+  {
+   "soru": "Listicle ne demek?",
+   "cevap": "Liste biçiminde yazılmış yazı. Kitaptaki örnekte başlık, kısa bir giriş, ilginç bilgiler listesi ve okuru düşündüren kısa bir son var. (SB s. 41)"
+  },
+  {
+   "soru": "Diller neden yok oluyor?",
+   "cevap": "Kitaba göre çoğu zaman konuşanlar yaşlı olduğu için ya da ülkenin ana dili onların yerini aldığı için ({{has taken over}}). (SB s. 42)"
+  },
+  {
+   "soru": "Tembé dilini yazıya geçirmek ne kadar sürüyor?",
+   "cevap": "Tembé'nin yazısı yok. Uzmanlar onu sembollere dönüştürüyor ama konuşmanın her dakikası için bir saat sürüyor! (SB s. 43)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendin hakkında iki cümle yaz: biri present perfect ({{I've ...}}), biri past simple ({{Last week, I ...}}).",
+   "ornekCevap": "I've studied English for five years. Last week, I watched a film in English.",
+   "anahtarlar": [
+    "'ve",
+    "have",
+    "last",
+    "yesterday",
+    "ago"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I've seen the Empire State Building.",
+    "I saw the Empire State Building.",
+    "I see the Empire State Building."
+   ],
+   "dogru": 1,
+   "ipucu": "Fiile dikkat et: {{saw}} mı, {{'ve seen}} mi?",
+   "aciklama": "Duyduğun cümle {{I saw the Empire State Building.}} İlk günde oldu, bitti: past simple. (SB s. 39)",
+   "dinle": "I saw the Empire State Building.",
+   "kavram": "past simple"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I didn't eat anything this morning.",
+    "I haven't eaten anything for hours.",
+    "I haven't eaten anything since this morning."
+   ],
+   "dogru": 2,
+   "ipucu": "Sonuna dikkat et: {{since this morning}} mi, {{for hours}} mı?",
+   "aciklama": "Duyduğun cümle {{I haven't eaten anything since this morning.}} (SB s. 39)",
+   "dinle": "I haven't eaten anything since this morning.",
+   "kavram": "present perfect"
+  },
+  {
+   "soru": "Kitaba göre hangi zaman geçmişte başlayıp bitmiş işler için kullanılır?",
+   "secenekler": [
+    "past simple",
+    "present perfect",
+    "present continuous"
+   ],
+   "dogru": 0,
+   "ipucu": "Karttaki {{bitti ✓}} çizimini hatırla.",
+   "aciklama": "Başlayıp bitmiş işler: past simple. (SB s. 39)",
+   "kavram": "past simple"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I can't play football this afternoon because I ___ off my bike yesterday.}}",
+   "secenekler": [
+    "have fallen",
+    "fell",
+    "fall"
+   ],
+   "dogru": 1,
+   "ipucu": "{{yesterday}}: bitmiş zaman.",
+   "aciklama": "{{yesterday}} → past simple: {{fell}}. (WB s. 31)",
+   "kavram": "past simple"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I ___ in London for about ten years – I love it here.}}",
+   "secenekler": [
+    "lived",
+    "live",
+    "have lived"
+   ],
+   "dogru": 2,
+   "ipucu": "{{for about ten years}} ve {{I love it here}}: hâlâ orada yaşıyor.",
+   "aciklama": "Hâlâ sürüyor → present perfect: {{have lived}}. (WB s. 31)",
+   "kavram": "present perfect"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{They ___ much Russian in Moscow – they were only there for two months.}}",
+   "secenekler": [
+    "didn't learn",
+    "haven't learned",
+    "don't learn"
+   ],
+   "dogru": 0,
+   "ipucu": "{{they were only there}}: Moskova'daki zaman bitti.",
+   "aciklama": "Bitmiş bir dönem → past simple: {{didn't learn}}. (WB s. 31)",
+   "kavram": "past simple"
+  },
+  {
+   "soru": "{{Have you ever told a lie?}} – {{Yes, I have.}} Sonraki soru hangisi olmalı?",
+   "secenekler": [
+    "Have you ever told a lie?",
+    "Who did you tell the lie to?",
+    "Who have you told the lie to yesterday?"
+   ],
+   "dogru": 1,
+   "ipucu": "Ayrıntı sorusu past simple ile: {{did}} + fiil yalın.",
+   "aciklama": "Önce {{Have you ever ...?}}, sonra ayrıntı {{Who did you ...?}} (WB s. 28)",
+   "kavram": "Have you ever …? / Did you …?"
+  },
+  {
+   "soru": "Hangisi {{these days}} ile aynı anlama gelir?",
+   "secenekler": [
+    "earlier",
+    "since I was born",
+    "at the moment"
+   ],
+   "dogru": 2,
+   "ipucu": "Kitaptaki anlam eşleştirmesini hatırla.",
+   "aciklama": "{{these days}} = {{at the moment}}: şu sıralar. (WB s. 29)",
+   "kavram": "these days / soon"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Before, I didn't use to think about intonation, but ___ I understand that how you say something is very important.}}",
+   "secenekler": [
+    "now",
+    "later on",
+    "ago"
+   ],
+   "dogru": 0,
+   "ipucu": "{{Before}} eskiden; zıddı şimdi.",
+   "aciklama": "Eskiden ({{before}}) ↔ şimdi ({{now}}). (WB s. 29)",
+   "kavram": "before / later on"
+  },
+  {
+   "soru": "Okuma metninde {{the main language of a country has taken over}} cümlesi hangi zamanda?",
+   "secenekler": [
+    "past simple",
+    "present perfect",
+    "future"
+   ],
+   "dogru": 1,
+   "ipucu": "{{has}} + V3 ({{taken}}).",
+   "aciklama": "{{has taken over}}: present perfect. Sonucu hâlâ sürüyor. (SB s. 42)",
+   "kavram": "present perfect"
+  },
+  {
+   "soru": "{{Alex has loved languages ___.}} Boşluğa en uygun ifade hangisi?",
+   "secenekler": [
+    "yesterday",
+    "last week",
+    "all his life"
+   ],
+   "dogru": 2,
+   "ipucu": "Present perfect ({{has loved}}) şimdiye kadar süren bir ifade ister.",
+   "aciklama": "{{all his life}}: bütün hayatı boyunca. {{yesterday}} ve {{last week}} past simple ister. (WB s. 107)",
+   "kavram": "all my life"
+  },
+  {
+   "soru": "{{Over the last few years, I've learned a few things.}} Bu cümle ne anlatıyor?",
+   "secenekler": [
+    "Son birkaç yılda birkaç şey öğrendim.",
+    "Birkaç yıl sonra öğreneceğim.",
+    "Hiçbir şey öğrenmedim."
+   ],
+   "dogru": 0,
+   "ipucu": "{{over the last few years}} = {{recently}}.",
+   "aciklama": "Son birkaç yılda öğrendi; present perfect {{'ve learned}}. (WB s. 29)",
+   "kavram": "over the last few years"
+  }
+ ]
+}

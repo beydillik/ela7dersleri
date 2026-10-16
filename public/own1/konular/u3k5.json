@@ -1,0 +1,762 @@
+{
+ "id": "u3k5",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "for / since, How long…?",
+ "sayfalar": "SB s. 39, 120 · WB s. 25, 28, 31, 92–93",
+ "giris": "Present perfect ile bir şeyin ne zamandır sürdüğünü anlatacağız. Süre için {{for}} (beş yıldır), başlangıç için {{since}} (2015'ten beri). Sormak için de {{How long ...?}} kullanacağız. Sonunda emojiler hakkında bir okuma var.",
+ "kavramlar": [
+  {
+   "ad": "for",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='86' x2='108' y2='86' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><text x='104' y='106' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='end' fill='#c9cfe0'>NOW</text><circle cx='104' cy='86' r='6' fill='#c9cfe0'/><rect x='22' y='78' width='82' height='16' rx='8' fill='#3cc47c' opacity='0.85'/><path d='M22 60 v-8 h82 v8' stroke='#3cc47c' stroke-width='4' fill='none'/><text x='63' y='42' font-size='15' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#3cc47c'>5 years</text></svg>",
+   "aciklama": "Ne kadar süredir? {{for}} bir süre ile kullanılır: saatlerdir, beş yıldır, uzun zamandır.",
+   "ek": "{{for hours}}, {{for ten years}}, {{for a long time}}, {{for ages}}. Kitap: {{We use for with periods of time.}} (SB s. 39)",
+   "akilda": "... -dir (süre)",
+   "ornek": "I've lived here for about six months.",
+   "ornekTr": "Yaklaşık altı aydır burada yaşıyorum. (SB s. 39)",
+   "formul": [
+    [
+     {
+      "t": "I / You / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "have",
+      "r": "yard",
+      "alt": "'ve"
+     },
+     {
+      "t": "lived",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "here",
+      "r": "diger"
+     },
+     {
+      "t": "for",
+      "r": "ek",
+      "alt": "süre"
+     },
+     {
+      "t": "six months",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I've been here ___ hours.}} {{hours}} bir süre. Boşluğa hangisi?",
+    "secenekler": [
+     "for",
+     "since",
+     "ago"
+    ],
+    "dogru": 0,
+    "ipucu": "Kart: süre ile hangi kelime kullanılıyordu?",
+    "aciklama": "Süre ({{hours}}) → {{for}}: {{I've been here for hours.}} (SB s. 39)"
+   }
+  },
+  {
+   "ad": "since",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='86' x2='108' y2='86' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><text x='104' y='106' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='end' fill='#c9cfe0'>NOW</text><circle cx='104' cy='86' r='6' fill='#c9cfe0'/><circle cx='26' cy='86' r='10' fill='#4ea8de'/><path d='M36 86 H94' stroke='#4ea8de' stroke-width='5' stroke-dasharray='8 6'/><path d='M26 72 V54' stroke='#4ea8de' stroke-width='4'/><text x='30' y='44' font-size='15' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>2015</text></svg>",
+   "aciklama": "Ne zamandan beri? {{since}} başlangıç anı ile kullanılır: bir yıl, bir saat, bir gün.",
+   "ek": "{{since 1 pm}}, {{since 2015}}, {{since June}}, {{since this morning}}. Kitap: {{since}} belirli bir zamandan söz ederken kullanılır. (SB s. 39)",
+   "akilda": "...den beri (başlangıç)",
+   "ornek": "We've been best friends since 2009.",
+   "ornekTr": "2009'dan beri en iyi arkadaşız. (WB s. 92)",
+   "formul": [
+    [
+     {
+      "t": "He / She / It",
+      "r": "ozne"
+     },
+     {
+      "t": "has",
+      "r": "yard",
+      "alt": "'s"
+     },
+     {
+      "t": "worked",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "here",
+      "r": "diger"
+     },
+     {
+      "t": "since",
+      "r": "ek",
+      "alt": "başlangıç"
+     },
+     {
+      "t": "2015",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Mr Wilson has worked here ___ 2015.}} {{2015}} başlangıç yılı. Boşluğa hangisi?",
+    "secenekler": [
+     "for",
+     "since",
+     "ago"
+    ],
+    "dogru": 1,
+    "ipucu": "Kart: başlangıç anı ile hangi kelime kullanılıyordu?",
+    "aciklama": "Başlangıç ({{2015}}) → {{since}}. (SB s. 39)"
+   }
+  },
+  {
+   "ad": "since + cümle",
+   "renk": "#9b5de5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='86' x2='108' y2='86' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><text x='104' y='106' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='end' fill='#c9cfe0'>NOW</text><circle cx='104' cy='86' r='6' fill='#c9cfe0'/><circle cx='30' cy='46' r='9' fill='#9b5de5'/><rect x='23' y='56' width='14' height='16' rx='5' fill='#9b5de5'/><circle cx='84' cy='38' r='12' fill='#9b5de5'/><rect x='74' y='52' width='20' height='22' rx='7' fill='#9b5de5'/><path d='M44 60 H68 l-6 -6 M68 60 l-6 6' stroke='#ffd166' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "{{since}}'ten sonra bütün bir cümle de gelebilir: {{since I was little}} (küçüklüğümden beri).",
+   "ek": "{{since}}'ten sonraki cümle geçmiş zamandadır: {{since I was seven}}, {{since we started school}}, {{since he woke up}}. (WB s. 28)",
+   "akilda": "...dığımdan beri",
+   "ornek": "I've loved languages since I was little.",
+   "ornekTr": "Küçüklüğümden beri dilleri seviyorum. (SB s. 39)",
+   "formul": [
+    [
+     {
+      "t": "I",
+      "r": "ozne"
+     },
+     {
+      "t": "have",
+      "r": "yard",
+      "alt": "'ve"
+     },
+     {
+      "t": "loved",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "languages",
+      "r": "diger"
+     },
+     {
+      "t": "since",
+      "r": "ek"
+     },
+     {
+      "t": "I was little",
+      "r": "kelime",
+      "alt": "geçmiş zaman cümlesi"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I've lived here since I ___ seven.}} Boşluğa hangisi?",
+    "secenekler": [
+     "am",
+     "have been",
+     "was"
+    ],
+    "dogru": 2,
+    "ipucu": "Kart: {{since}}'ten sonraki cümle geçmiş zamanda olur.",
+    "aciklama": "{{since I was seven}}: yedi yaşımdan beri. (WB s. 92)"
+   }
+  },
+  {
+   "ad": "How long have you …?",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='52' r='34' fill='#f1f4fb'/><circle cx='60' cy='52' r='28' fill='#ffd166'/><path d='M60 52 V32 M60 52 L74 60' stroke='#1b2340' stroke-width='5' stroke-linecap='round'/><text x='60' y='108' font-size='14' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f4a261'>How long?</text></svg>",
+   "aciklama": "Ne kadar zamandır? diye sormak için: {{How long}} + {{have / has}} + özne + V3?",
+   "ek": "Cevapta {{for}} ya da {{since}} kullanılır: {{How long have you known Greg?}} – {{I've known him since 2012.}} (WB s. 92)",
+   "akilda": "ne kadar zamandır?",
+   "ornek": "How long have you studied Elvish?",
+   "ornekTr": "Ne kadar zamandır Elfçe çalışıyorsun? (SB s. 39)",
+   "formul": [
+    [
+     {
+      "t": "How long",
+      "r": "diger",
+      "alt": "ne kadar zamandır"
+     },
+     {
+      "t": "have",
+      "r": "yard",
+      "alt": "has: he/she/it"
+     },
+     {
+      "t": "you",
+      "r": "ozne"
+     },
+     {
+      "t": "known",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "your best friend",
+      "r": "diger"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru bir soru?",
+    "secenekler": [
+     "How long have you known Greg?",
+     "How long do you know Greg?",
+     "How long you have known Greg?"
+    ],
+    "dogru": 0,
+    "ipucu": "Formül: {{How long}} + {{have}} + özne + V3.",
+    "aciklama": "{{How long have you known Greg?}} (WB s. 92)"
+   }
+  },
+  {
+   "ad": "haven't / hasn't … for / since",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='86' x2='108' y2='86' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><text x='104' y='106' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='end' fill='#c9cfe0'>NOW</text><circle cx='104' cy='86' r='6' fill='#c9cfe0'/><rect x='22' y='78' width='82' height='16' rx='8' fill='#e63946' opacity='0.5'/><circle cx='60' cy='44' r='22' fill='#e63946'/><path d='M50 34 l20 20 M70 34 l-20 20' stroke='#f1f4fb' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Bir şeyi ne zamandır yapmadığımızı anlatır: {{haven't / hasn't}} + V3 + {{for / since}}.",
+   "ek": "Kural aynı: süre {{for}}, başlangıç {{since}}. {{I haven't eaten anything since this morning.}} (SB s. 39)",
+   "akilda": "...dir yapmadım",
+   "ornek": "She hasn't lived in Manchester for three years.",
+   "ornekTr": "Üç yıldır Manchester'da yaşamıyor. (WB s. 92)",
+   "formul": [
+    [
+     {
+      "t": "She",
+      "r": "ozne"
+     },
+     {
+      "t": "hasn't",
+      "r": "olumsuz",
+      "alt": "has not"
+     },
+     {
+      "t": "lived",
+      "r": "fiil",
+      "alt": "V3"
+     },
+     {
+      "t": "in Manchester",
+      "r": "diger"
+     },
+     {
+      "t": "for",
+      "r": "ek"
+     },
+     {
+      "t": "three years",
+      "r": "kelime"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I haven't eaten ___ hours.}} Boşluğa hangisi?",
+    "secenekler": [
+     "since",
+     "for",
+     "ago"
+    ],
+    "dogru": 1,
+    "ipucu": "{{hours}} süre mi, başlangıç mı?",
+    "aciklama": "Süre → {{for}}: {{I haven't eaten for hours.}} (SB s. 39)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "for ages",
+   "tr": "çok uzun zamandır",
+   "ornek": "They've been best friends for ages!",
+   "ornekTr": "Çok uzun zamandır en iyi arkadaşlar! (WB s. 28)"
+  },
+  {
+   "en": "a long time",
+   "tr": "uzun bir süre"
+  },
+  {
+   "en": "a while",
+   "tr": "bir süre"
+  },
+  {
+   "en": "this morning",
+   "tr": "bu sabah"
+  },
+  {
+   "en": "emoji",
+   "tr": "emoji (resim karakter)"
+  },
+  {
+   "en": "alphabet",
+   "tr": "alfabe"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangi soruya cevap veriyor?",
+   "kutular": [
+    {
+     "etiket": "Ne kadar süredir? (süre)",
+     "uyeler": [
+      "for"
+     ]
+    },
+    {
+     "etiket": "Ne zamandan beri? (başlangıç)",
+     "uyeler": [
+      "since",
+      "since + cümle"
+     ]
+    },
+    {
+     "etiket": "Soru ve olumsuz cümle",
+     "uyeler": [
+      "How long have you …?",
+      "haven't / hasn't … for / since"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "I've lived here for about six months.",
+   "tr": "Yaklaşık altı aydır burada yaşıyorum. (SB s. 39)"
+  },
+  {
+   "en": "Mr Wilson has worked here since 2015.",
+   "tr": "Mr Wilson 2015'ten beri burada çalışıyor. (SB s. 39)"
+  },
+  {
+   "en": "I've loved languages since I was little.",
+   "tr": "Küçüklüğümden beri dilleri seviyorum. (SB s. 39)"
+  },
+  {
+   "en": "How long have you known your best friend?",
+   "tr": "En iyi arkadaşını ne kadar zamandır tanıyorsun? (SB s. 39)"
+  },
+  {
+   "en": "Elena has studied French for ten years.",
+   "tr": "Elena on yıldır Fransızca çalışıyor. (SB s. 39)"
+  },
+  {
+   "en": "We've lived in this apartment since 2010.",
+   "tr": "2010'dan beri bu dairede yaşıyoruz. (WB s. 93)"
+  },
+  {
+   "en": "The Japanese have used emoji since 1999.",
+   "tr": "Japonlar 1999'dan beri emoji kullanıyor. (WB s. 25)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "I've been here since hours.",
+   "yanlis": "since",
+   "secenekler": [
+    "ago",
+    "for",
+    "from"
+   ],
+   "dogru": 1,
+   "tr": "Saatlerdir buradayım.",
+   "aciklama": "{{hours}} bir süre: {{for hours}}. (SB s. 39)"
+  },
+  {
+   "cumle": "I've been here for 1 pm.",
+   "yanlis": "for",
+   "secenekler": [
+    "since",
+    "at",
+    "ago"
+   ],
+   "dogru": 0,
+   "tr": "Saat 13.00'ten beri buradayım.",
+   "aciklama": "{{1 pm}} başlangıç anı: {{since 1 pm}}. (SB s. 39)"
+  },
+  {
+   "cumle": "Mr Wilson has worked here for 2015.",
+   "yanlis": "for",
+   "secenekler": [
+    "in",
+    "ago",
+    "since"
+   ],
+   "dogru": 2,
+   "tr": "Mr Wilson 2015'ten beri burada çalışıyor.",
+   "aciklama": "Yıl bir başlangıç: {{since 2015}}. (SB s. 39)"
+  },
+  {
+   "cumle": "How long do you know your best friend?",
+   "yanlis": "do you know",
+   "secenekler": [
+    "have you known",
+    "did you know",
+    "are you knowing"
+   ],
+   "dogru": 0,
+   "tr": "En iyi arkadaşını ne kadar zamandır tanıyorsun?",
+   "aciklama": "{{How long}} + present perfect: {{How long have you known ...?}} (SB s. 39)"
+  },
+  {
+   "cumle": "She has lived here since six months.",
+   "yanlis": "since",
+   "secenekler": [
+    "ago",
+    "for",
+    "in"
+   ],
+   "dogru": 1,
+   "tr": "Altı aydır burada yaşıyor.",
+   "aciklama": "{{six months}} bir süre: {{for}}. (SB s. 39)"
+  },
+  {
+   "cumle": "I've known her since I am seven.",
+   "yanlis": "am",
+   "secenekler": [
+    "was",
+    "have been",
+    "will be"
+   ],
+   "dogru": 0,
+   "tr": "Onu yedi yaşımdan beri tanıyorum.",
+   "aciklama": "{{since}}'ten sonraki cümle geçmiş zamanda: {{since I was seven}}. (WB s. 92)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Emoji: the world's most popular alphabet?",
+  "sayfa": "WB s. 25",
+  "sozluk": {
+   "alphabets": "alfabeler",
+   "foreign words": "yabancı kelimeler",
+   "characters": "karakterler, harfler",
+   "symbols": "semboller",
+   "grammar words": "dilbilgisi kelimeleri",
+   "a piece of writing": "bir yazı",
+   "recognise": "tanımak",
+   "a huge range of": "çok çeşitli",
+   "feelings": "duygular",
+   "since 1999": "1999'dan beri",
+   "basic emotions": "temel duygular",
+   "greatly increased": "çok arttı",
+   "official": "resmî",
+   "tears of joy": "sevinç gözyaşları",
+   "surprisingly": "şaşırtıcı biçimde"
+  },
+  "bolumler": [
+   {
+    "baslik": "Japoncanın üç alfabesi ve emoji",
+    "cumleler": [
+     {
+      "en": "Did you know that the Japanese language has three alphabets?",
+      "tr": "Japoncanın üç alfabesi olduğunu biliyor muydun?"
+     },
+     {
+      "en": "One alphabet, katakana, is mostly for foreign words, like 'pizza'.",
+      "tr": "Alfabelerden biri olan katakana, çoğunlukla 'pizza' gibi yabancı kelimeler için kullanılır."
+     },
+     {
+      "en": "This alphabet has 48 characters, or letters and symbols.",
+      "tr": "Bu alfabede 48 karakter, yani harf ve sembol var."
+     },
+     {
+      "en": "Another alphabet, hiragana, is usually for grammar words.",
+      "tr": "Başka bir alfabe olan hiragana, genelde dilbilgisi kelimeleri içindir."
+     },
+     {
+      "en": "Hiragana has 46 characters.",
+      "tr": "Hiraganada 46 karakter var."
+     },
+     {
+      "en": "A third alphabet, kanji, has about 50,000 different symbols.",
+      "tr": "Üçüncü alfabe olan kanjide yaklaşık 50.000 farklı sembol var."
+     },
+     {
+      "en": "It is usually for verbs, adjectives and nouns.",
+      "tr": "Genelde fiiller, sıfatlar ve isimler için kullanılır."
+     },
+     {
+      "en": "Often a piece of writing contains all three alphabets at the same time!",
+      "tr": "Çoğu zaman bir yazıda üç alfabe aynı anda bulunur!"
+     },
+     {
+      "en": "Learning written Japanese well can be difficult!",
+      "tr": "Yazılı Japoncayı iyi öğrenmek zor olabilir!"
+     },
+     {
+      "en": "But there is another kind of 'alphabet' from Japan, which everyone can easily recognise.",
+      "tr": "Ama Japonya'dan gelen ve herkesin kolayca tanıyabildiği başka bir 'alfabe' daha var."
+     },
+     {
+      "en": "You probably use it a lot when you communicate with friends.",
+      "tr": "Arkadaşlarınla iletişim kurarken muhtemelen onu çok kullanıyorsun."
+     },
+     {
+      "en": "It doesn't use letters, it uses emoji, which translates as 'picture character' in English.",
+      "tr": "Harf kullanmaz; emoji kullanır. Emoji İngilizcede 'resim karakter' diye çevrilir."
+     },
+     {
+      "en": "We can all recognise emoji when we see them.",
+      "tr": "Emojileri görünce hepimiz tanıyabiliriz."
+     },
+     {
+      "en": "They show a huge range of feelings or actions, from love and sadness to dancing and waving.",
+      "tr": "Sevgiden üzüntüye, dans etmekten el sallamaya kadar çok çeşitli duyguları ya da hareketleri gösterirler."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Japoncanın kaç alfabesi var?",
+      "secenekler": [
+       "Üç",
+       "İki",
+       "Dört"
+      ],
+      "dogru": 0,
+      "ipucu": "İlk cümleyi oku: {{three alphabets}}.",
+      "aciklama": "{{the Japanese language has three alphabets}}: katakana, hiragana ve kanji. (WB s. 25)"
+     },
+     {
+      "soru": "En çok sembolü olan alfabe hangisi?",
+      "secenekler": [
+       "katakana",
+       "kanji",
+       "hiragana"
+      ],
+      "dogru": 1,
+      "ipucu": "{{about 50,000 different symbols}} geçen cümleyi bul.",
+      "aciklama": "Kanjide yaklaşık 50.000 sembol var; katakanada 48, hiraganada 46. (WB s. 25)"
+     }
+    ]
+   },
+   {
+    "baslik": "Emoji 1999'dan beri",
+    "cumleler": [
+     {
+      "en": "The Japanese have used emoji since 1999.",
+      "tr": "Japonlar 1999'dan beri emoji kullanıyor."
+     },
+     {
+      "en": "Of course, these early emoji were very simple and people could only use them to show basic emotions.",
+      "tr": "Tabii bu ilk emojiler çok basitti ve insanlar onları sadece temel duyguları göstermek için kullanabiliyordu."
+     },
+     {
+      "en": "Since then, they have become more and more popular around the world and the number of emoji symbols has greatly increased – now there are nearly 3,000 official ones.",
+      "tr": "O zamandan beri dünyada giderek daha popüler oldular ve emoji sayısı çok arttı: şimdi yaklaşık 3.000 resmî emoji var."
+     },
+     {
+      "en": "Everyone can understand emoji – it doesn't matter which country they are from.",
+      "tr": "Herkes emojiyi anlayabilir; hangi ülkeden olduğunun önemi yok."
+     },
+     {
+      "en": "And what is the most common emoji symbol that people use?",
+      "tr": "Peki insanların en çok kullandığı emoji hangisi?"
+     },
+     {
+      "en": "Surprisingly, it is not a smiling face or a heart.",
+      "tr": "Şaşırtıcı biçimde, gülen yüz ya da kalp değil."
+     },
+     {
+      "en": "It is the 'tears of joy' emoji, showing a face laughing and crying happily.",
+      "tr": "'Sevinç gözyaşları' emojisi: hem gülen hem mutlulukla ağlayan bir yüz."
+     },
+     {
+      "en": "Perhaps in the future, they will create an emoji for every possible emotion and we will be able to communicate with anyone in the world, only by using emoji symbols!",
+      "tr": "Belki gelecekte her duygu için bir emoji yapacaklar ve dünyadaki herkesle sadece emoji kullanarak iletişim kurabileceğiz!"
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Japonlar ne zamandan beri emoji kullanıyor?",
+      "secenekler": [
+       "2009'dan beri",
+       "50 yıldır",
+       "1999'dan beri"
+      ],
+      "dogru": 2,
+      "ipucu": "{{since}} geçen ilk cümleyi bul.",
+      "aciklama": "{{The Japanese have used emoji since 1999.}} (WB s. 25)"
+     },
+     {
+      "soru": "En çok kullanılan emoji hangisi?",
+      "secenekler": [
+       "Sevinç gözyaşları",
+       "Gülen yüz",
+       "Kalp"
+      ],
+      "dogru": 0,
+      "ipucu": "{{Surprisingly}} ile başlayan cümleden sonrakini oku.",
+      "aciklama": "{{the 'tears of joy' emoji}}: gülerken mutluluktan ağlayan yüz. (WB s. 25)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Japonlar 1999'dan beri emoji kullanıyor. Bugün yaklaşık 3.000 resmî emoji var. (WB s. 25)",
+  "En çok kullanılan emoji gülen yüz ya da kalp değil: 'sevinç gözyaşları' emojisi. (WB s. 25)",
+  "{{emoji}} kelimesi Japonca; İngilizcede 'resim karakter' ({{picture character}}) diye çevriliyor. (WB s. 25)"
+ ],
+ "akildaKalsin": [
+  "Süre → {{for}}: {{for hours}}, {{for ten years}}, {{for ages}}.",
+  "Başlangıç → {{since}}: {{since 1 pm}}, {{since 2015}}, {{since this morning}}.",
+  "{{since}} + geçmiş cümle: {{since I was little}}.",
+  "Soru: {{How long have you known ...?}} Cevap: {{for ...}} / {{since ...}}.",
+  "Olumsuz: {{I haven't eaten for hours.}}"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{for}} mı {{since}} mi, nasıl anlarım?",
+   "cevap": "Kendine sor: 'Ne kadar süre?' diye mi cevap veriyor (beş yıl, iki saat) → {{for}}. 'Ne zamandan beri?' (2015, pazartesi, sabah) → {{since}}. Kitap: {{I've been here for hours.}} ama {{I've been here since 1 pm.}} (SB s. 39)"
+  },
+  {
+   "soru": "Neden {{How long do you know ...?}} yanlış?",
+   "cevap": "Çünkü tanışma geçmişte başladı ve hâlâ sürüyor. Bunu present perfect anlatır: {{How long have you known Greg?}} (WB s. 92)"
+  },
+  {
+   "soru": "{{since}}'ten sonra cümle gelebilir mi?",
+   "cevap": "Evet. {{since I was little}}, {{since we started school together}}, {{since he woke up}}. Bu cümle geçmiş zamandadır. (SB s. 39, WB s. 28)"
+  },
+  {
+   "soru": "{{for ages}} ne demek?",
+   "cevap": "'Çok uzun zamandır' demek, günlük dilde çok kullanılır: {{They've been best friends for ages!}} (WB s. 28)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendin için iki cümle yaz: biri {{for}}, biri {{since}} ile. {{I've known my best friend ...}} / {{I've lived in ...}}",
+   "ornekCevap": "I've known my best friend for six years. I've lived in this city since I was a baby.",
+   "anahtarlar": [
+    "for",
+    "since",
+    "have",
+    "'ve"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I've been here since 1 pm.",
+    "I was here for hours.",
+    "I've been here for hours."
+   ],
+   "dogru": 2,
+   "ipucu": "Sondaki kelimeleri dinle: {{for hours}} mı, {{since 1 pm}} mi?",
+   "aciklama": "Duyduğun cümle {{I've been here for hours.}} (SB s. 39)",
+   "dinle": "I've been here for hours.",
+   "kavram": "for"
+  },
+  {
+   "soru": "Dinle. Hangi soruyu duydun?",
+   "secenekler": [
+    "How long have you known her?",
+    "How long have you lived here?",
+    "How long did you live here?"
+   ],
+   "dogru": 0,
+   "ipucu": "Fiile dikkat et: {{known}} mı, {{lived}} mı?",
+   "aciklama": "Duyduğun soru {{How long have you known her?}} (WB s. 28)",
+   "dinle": "How long have you known her?",
+   "kavram": "How long have you …?"
+  },
+  {
+   "soru": "Hangisi {{since}} ile kullanılır?",
+   "secenekler": [
+    "two months",
+    "my birthday",
+    "a while"
+   ],
+   "dogru": 1,
+   "ipucu": "{{since}} bir başlangıç anı ister. Hangisi süre değil, bir gün?",
+   "aciklama": "{{since my birthday}}: doğum günümden beri. {{two months}} ve {{a while}} süre: {{for}}. (SB s. 120)",
+   "kavram": "since"
+  },
+  {
+   "soru": "Hangisi {{for}} ile kullanılır?",
+   "secenekler": [
+    "last week",
+    "yesterday",
+    "three weeks"
+   ],
+   "dogru": 2,
+   "ipucu": "{{for}} bir süre ister: kaç gün, kaç hafta?",
+   "aciklama": "{{for three weeks}}: üç haftadır. (SB s. 120)",
+   "kavram": "for"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{A: How long have you known your best friend? B: ___ we were seven years old.}}",
+   "secenekler": [
+    "Since",
+    "For",
+    "Ago"
+   ],
+   "dogru": 0,
+   "ipucu": "Cevaptan sonra bir cümle geliyor: {{we were seven}}.",
+   "aciklama": "{{since}} + cümle: {{Since we were seven years old.}} (SB s. 39)",
+   "kavram": "since + cümle"
+  },
+  {
+   "soru": "{{Max has been on the computer since ...}} Doğru sonu hangisi?",
+   "secenekler": [
+    "all day.",
+    "he woke up.",
+    "three hours."
+   ],
+   "dogru": 1,
+   "ipucu": "{{since}}'ten sonra başlangıç anı ya da cümle gelir.",
+   "aciklama": "{{since he woke up}}: uyandığından beri. (WB s. 28)",
+   "kavram": "since + cümle"
+  },
+  {
+   "soru": "{{Igor / live in Moscow / five months}} Doğru soru hangisi?",
+   "secenekler": [
+    "How long does Igor live in Moscow?",
+    "How long Igor has lived in Moscow?",
+    "How long has Igor lived in Moscow?"
+   ],
+   "dogru": 2,
+   "ipucu": "{{Igor}} = {{he}}: {{has}}. Sonra özne, sonra V3.",
+   "aciklama": "{{How long has Igor lived in Moscow?}} Cevap: {{Igor has lived in Moscow for five months.}} (SB s. 39)",
+   "kavram": "How long have you …?"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{She hasn't seen her grandparents ___ a long time.}}",
+   "secenekler": [
+    "for",
+    "since",
+    "ago"
+   ],
+   "dogru": 0,
+   "ipucu": "{{a long time}} süre mi, başlangıç mı?",
+   "aciklama": "Süre → {{for}}: {{for a long time}}. (WB s. 93)",
+   "kavram": "haven't / hasn't … for / since"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{We've lived in this apartment ___ 2010.}}",
+   "secenekler": [
+    "for",
+    "since",
+    "in"
+   ],
+   "dogru": 1,
+   "ipucu": "{{2010}} başlangıç yılı.",
+   "aciklama": "Başlangıç → {{since 2010}}. (WB s. 93)",
+   "kavram": "since"
+  },
+  {
+   "soru": "{{Bill and Lucy / be married / 2010}} Doğru cevap hangisi?",
+   "secenekler": [
+    "Bill and Lucy have been married for 2010.",
+    "Bill and Lucy are married since 2010.",
+    "Bill and Lucy have been married since 2010."
+   ],
+   "dogru": 2,
+   "ipucu": "{{2010}} başlangıç; fiil present perfect: {{have been}}.",
+   "aciklama": "{{Bill and Lucy have been married since 2010.}} (SB s. 39)",
+   "kavram": "since"
+  }
+ ]
+}
