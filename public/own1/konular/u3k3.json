@@ -254,10 +254,10 @@
     "soru": "Hangisi doğru bir soru?",
     "secenekler": [
      "Will you can help me tomorrow?",
-     "Will you be able to help me tomorrow?",
-     "Can you to help me tomorrow?"
+     "Can you to help me tomorrow?",
+     "Will you be able to help me tomorrow?"
     ],
-    "dogru": 1,
+    "dogru": 2,
     "ipucu": "Formül: {{Will}} + özne + {{be able to}} + fiil.",
     "aciklama": "Doğrusu {{Will you be able to help me ...?}} {{Will you can}} yanlıştır. (SB s. 37)"
    }
@@ -514,21 +514,21 @@
       "soru": "Pilot nedir?",
       "secenekler": [
        "Bir dil kursu",
-       "Kulağa takılan akıllı bir çeviri cihazı",
-       "Bir sözlük kitabı"
+       "Bir sözlük kitabı",
+       "Kulağa takılan akıllı bir çeviri cihazı"
       ],
-      "dogru": 1,
+      "dogru": 2,
       "ipucu": "{{the world's first 'smart earpiece'}} cümlesini bul.",
       "aciklama": "Pilot dünyanın ilk akıllı kulaklığı: konuşulanı çeviriyor. (SB s. 36)"
      },
      {
       "soru": "1950'lerdeki makineler neyi yapamıyordu?",
       "secenekler": [
-       "Yazılı metinleri çevirmeyi",
        "Konuşulan dili çevirmeyi",
+       "Yazılı metinleri çevirmeyi",
        "Hiçbir şeyi"
       ],
-      "dogru": 1,
+      "dogru": 0,
       "ipucu": "{{could not}} geçen cümleye bak.",
       "aciklama": "{{they could not interpret spoken language}}: konuşulan dili çeviremiyorlardı. (SB s. 36)"
      }
@@ -646,11 +646,11 @@
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
    "secenekler": [
-    "I could stand on my head.",
     "I can stand on my head.",
+    "I could stand on my head.",
     "I can't stand on my head."
    ],
-   "dogru": 1,
+   "dogru": 0,
    "ipucu": "{{could}} mı, {{can}} mi? Sonunda {{t}} sesi var mı?",
    "aciklama": "Duyduğun cümle {{I can stand on my head.}}: Amuda kalkabiliyorum. (SB s. 37)",
    "dinle": "I can stand on my head.",
@@ -659,11 +659,11 @@
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
    "secenekler": [
-    "You won't be able to see it.",
     "You will be able to see it.",
+    "You won't be able to see it.",
     "You couldn't see it."
    ],
-   "dogru": 0,
+   "dogru": 1,
    "ipucu": "Cümlenin başındaki {{won't}} mı, {{will}} mi?",
    "aciklama": "Duyduğun cümle {{You won't be able to see it.}}: Onu göremeyeceksin. (SB s. 37)",
    "dinle": "You won't be able to see it.",
@@ -672,11 +672,11 @@
   {
    "soru": "{{Most people couldn't send each other quick messages 30 years ago.}} Bu cümle hangi zamanı anlatıyor?",
    "secenekler": [
-    "geçmiş",
     "şimdi",
-    "gelecek"
+    "gelecek",
+    "geçmiş"
    ],
-   "dogru": 0,
+   "dogru": 2,
    "ipucu": "{{30 years ago}}: 30 yıl önce.",
    "aciklama": "{{couldn't}} ve {{30 years ago}}: geçmiş. (WB s. 26)",
    "kavram": "couldn't"
@@ -684,11 +684,11 @@
   {
    "soru": "{{It's possible that we will be able to interpret any language on a smartphone app.}} Bu cümle hangi zamanı anlatıyor?",
    "secenekler": [
+    "gelecek",
     "geçmiş",
-    "şimdi",
-    "gelecek"
+    "şimdi"
    ],
-   "dogru": 2,
+   "dogru": 0,
    "ipucu": "{{will be able to}} hangi zaman için kullanılıyordu?",
    "aciklama": "{{will be able to}}: gelecek. (WB s. 26)",
    "kavram": "will be able to"
@@ -708,11 +708,11 @@
   {
    "soru": "Boşluğa hangisi gelir? {{When she was younger, she ___ speak Spanish, but she studied it at school.}}",
    "secenekler": [
-    "couldn't",
     "can",
-    "will be able to"
+    "will be able to",
+    "couldn't"
    ],
-   "dogru": 0,
+   "dogru": 2,
    "ipucu": "Küçükken konuşamıyordu, sonra okulda öğrendi.",
    "aciklama": "Geçmişte yapamamak: {{couldn't}}. (WB s. 93)",
    "kavram": "couldn't"
@@ -720,11 +720,11 @@
   {
    "soru": "Boşluğa hangisi gelir? {{As far back as the 1950s, machines ___ translate written texts.}}",
    "secenekler": [
+    "could",
     "will be able to",
-    "can",
-    "could"
+    "can"
    ],
-   "dogru": 2,
+   "dogru": 0,
    "ipucu": "{{the 1950s}} geçmiş zaman.",
    "aciklama": "Geçmişteki yetenek {{could}}. (SB s. 36)",
    "kavram": "could"
@@ -732,11 +732,11 @@
   {
    "soru": "Boşluğa hangisi gelir? {{___ visit the British Museum when you're in London next week?}}",
    "secenekler": [
-    "Will you be able to",
     "Can you able to",
+    "Will you be able to",
     "Able you to"
    ],
-   "dogru": 0,
+   "dogru": 1,
    "ipucu": "{{next week}}: gelecek. Gelecek için soru kalıbı {{Will}} ile başlar.",
    "aciklama": "{{Will you be able to visit ...?}} (WB s. 93)",
    "kavram": "Will … be able to …?"
@@ -745,10 +745,10 @@
    "soru": "Hangi cümle gelecekteki bir yeteneği anlatıyor?",
    "secenekler": [
     "The Pilot can translate five languages.",
-    "Maybe in a few more years the Pilot will be able to do these things.",
-    "Machines could translate written texts."
+    "Machines could translate written texts.",
+    "Maybe in a few more years the Pilot will be able to do these things."
    ],
-   "dogru": 1,
+   "dogru": 2,
    "ipucu": "{{in a few more years}}: birkaç yıl sonra.",
    "aciklama": "{{will be able to}} + {{in a few more years}}: gelecek. (SB s. 36)",
    "kavram": "will be able to"
@@ -756,11 +756,11 @@
   {
    "soru": "Cristina güneş kremini anlatırken ne dedi? {{It's a kind of liquid. You put it on your face at the beach.}} Satıcı ne getirdi?",
    "secenekler": [
-    "earplugs",
     "sunblock",
+    "earplugs",
     "earphones"
    ],
-   "dogru": 1,
+   "dogru": 0,
    "ipucu": "Plajda yüze sürülen sıvı.",
    "aciklama": "Satıcı {{sunblock}} getirdi. Kelimeyi bilmeyince {{It's a kind of ...}} diyerek anlatabilirsin. (SB s. 40)",
    "kavram": "can",
@@ -776,10 +776,10 @@
    "soru": "Arkadaşın {{I broke my phone!}} dedi. Hangisini söylersin?",
    "secenekler": [
     "Phew!",
-    "No worries.",
-    "Oh dear!"
+    "Oh dear!",
+    "No worries."
    ],
-   "dogru": 2,
+   "dogru": 1,
    "ipucu": "Kötü bir haber duyunca söylenen kalıp.",
    "aciklama": "Kötü haberde {{Oh dear!}}: Eyvah! (SB s. 40)",
    "kavram": "won't be able to",
