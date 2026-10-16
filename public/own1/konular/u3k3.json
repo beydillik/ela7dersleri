@@ -1,0 +1,795 @@
+{
+ "id": "u3k3",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "can, could, will be able to",
+ "sayfalar": "SB s. 36–37, 40 · WB s. 26, 30, 92–93",
+ "giris": "Bir şeyi yapabildiğimizi üç zamanda anlatacağız: bugün {{can}}, geçmişte {{could}}, gelecekte {{will be able to}}. Olumsuzlarını ve gelecek sorusunu da göreceğiz. Sonunda dilleri çeviren akıllı bir kulaklık hakkında okuma var.",
+ "kavramlar": [
+  {
+   "ad": "can",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='92' x2='106' y2='92' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='26' cy='92' r='5' fill='#c9cfe0'/><circle cx='60' cy='92' r='9' fill='#3cc47c'/><circle cx='94' cy='92' r='5' fill='#c9cfe0'/><text x='60' y='112' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#3cc47c'>NOW</text><circle cx='60' cy='42' r='26' fill='#3cc47c'/><path d='M47 43 l9 9 l17 -19' stroke='#1b2340' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Şimdiki yeteneği anlatır: -ebilmek. Kitap: {{can}} bugün bir şeyi yapabildiğimizi söyler.",
+   "ek": "Bütün öznelerle aynı kalır, fiil yalın gelir: {{She can speak}} (NOT {{she cans}}). Olumsuzu {{can't}}: {{Machines can't always understand people when they whisper.}} (SB s. 36)",
+   "akilda": "şimdi yapabilirim",
+   "ornek": "She can speak English and Polish.",
+   "ornekTr": "O İngilizce ve Lehçe konuşabiliyor. (WB s. 92)",
+   "formul": [
+    [
+     {
+      "t": "I / You / He / She / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "can",
+      "r": "yard",
+      "alt": "-ebilir"
+     },
+     {
+      "t": "speak",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     }
+    ],
+    [
+     {
+      "t": "I / You / He / She / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "can't",
+      "r": "olumsuz",
+      "alt": "-emez"
+     },
+     {
+      "t": "speak",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Carlos is bilingual. He ___ speak Spanish and English perfectly.}} Şimdiki yetenek. Boşluğa hangisi?",
+    "secenekler": [
+     "can",
+     "could",
+     "will"
+    ],
+    "dogru": 0,
+    "ipucu": "Formül: şimdiki yetenek için hangi kelime vardı?",
+    "aciklama": "Şimdiki yetenek {{can}}: {{He can speak Spanish and English perfectly.}} (SB s. 37)"
+   }
+  },
+  {
+   "ad": "could",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='92' x2='106' y2='92' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='26' cy='92' r='9' fill='#4ea8de'/><circle cx='60' cy='92' r='5' fill='#c9cfe0'/><circle cx='94' cy='92' r='5' fill='#c9cfe0'/><text x='26' y='112' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>PAST</text><circle cx='60' cy='42' r='26' fill='#4ea8de'/><path d='M47 43 l9 9 l17 -19' stroke='#1b2340' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Geçmişteki yeteneği anlatır: -ebiliyordu, -ebildi. {{can}}'in geçmiş hâlidir.",
+   "ek": "Zaman ifadeleri: {{when I was young}}, {{in the past}}, {{in the 1950s}}. Örnek: {{Many Ancient Romans could speak both Latin and Greek.}} (SB s. 37)",
+   "akilda": "geçmişte yapabiliyordum",
+   "ornek": "As far back as the 1950s, machines could translate written texts.",
+   "ornekTr": "Ta 1950'lerde makineler yazılı metinleri çevirebiliyordu. (SB s. 36)",
+   "formul": [
+    [
+     {
+      "t": "I / You / He / She / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "could",
+      "r": "yard",
+      "alt": "-ebiliyordu"
+     },
+     {
+      "t": "translate",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{Many Ancient Romans ___ speak both Latin and Greek.}} Eski Romalılar geçmişte yaşadı. Boşluğa hangisi?",
+    "secenekler": [
+     "can",
+     "could",
+     "will be able to"
+    ],
+    "dogru": 1,
+    "ipucu": "Geçmişteki yetenek: {{can}}'in geçmiş hâli.",
+    "aciklama": "Geçmişteki yetenek {{could}}: {{Many Ancient Romans could speak both Latin and Greek.}} (SB s. 37)"
+   }
+  },
+  {
+   "ad": "couldn't",
+   "renk": "#e63946",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='92' x2='106' y2='92' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='26' cy='92' r='9' fill='#4ea8de'/><circle cx='60' cy='92' r='5' fill='#c9cfe0'/><circle cx='94' cy='92' r='5' fill='#c9cfe0'/><text x='26' y='112' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#4ea8de'>PAST</text><circle cx='60' cy='42' r='26' fill='#e63946'/><path d='M49 31 l22 22 M71 31 l-22 22' stroke='#f1f4fb' stroke-width='7' stroke-linecap='round'/></svg>",
+   "aciklama": "Geçmişte bir şeyi yapamadığımızı anlatır: -emiyordu, -emedi.",
+   "ek": "Uzun hâli {{could not}}. Kitap: makineler yazıyı çevirebiliyordu ama konuşmayı çeviremiyordu: {{they could not interpret spoken language}}. (SB s. 36)",
+   "akilda": "geçmişte yapamıyordum",
+   "ornek": "I couldn't speak until I was three years old.",
+   "ornekTr": "Üç yaşına kadar konuşamıyordum. (WB s. 26)",
+   "formul": [
+    [
+     {
+      "t": "I / You / He / She / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "couldn't",
+      "r": "olumsuz",
+      "alt": "could not"
+     },
+     {
+      "t": "speak",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Misafirler Türkçe konuştu, annemle babam Türkçe bilmiyordu. {{My parents ___ understand their Turkish guests.}} Boşluğa hangisi?",
+    "secenekler": [
+     "can't",
+     "won't be able to",
+     "couldn't"
+    ],
+    "dogru": 2,
+    "ipucu": "Geçmişte yapamamak: kartın kırmızı çarpısı ve {{PAST}} noktası.",
+    "aciklama": "Geçmişte yapamamak {{couldn't}}: {{My parents couldn't understand their Turkish guests.}} (WB s. 93)"
+   }
+  },
+  {
+   "ad": "will be able to",
+   "renk": "#9b5de5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='92' x2='106' y2='92' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='26' cy='92' r='5' fill='#c9cfe0'/><circle cx='60' cy='92' r='5' fill='#c9cfe0'/><circle cx='94' cy='92' r='9' fill='#9b5de5'/><text x='94' y='112' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#9b5de5'>FUTURE</text><circle cx='60' cy='42' r='26' fill='#9b5de5'/><path d='M47 43 l9 9 l17 -19' stroke='#1b2340' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Gelecekteki yeteneği anlatır: -ebileceğim. {{can}}'in gelecek zaman hâli yoktur; onun yerine {{will be able to}} kullanılır.",
+   "ek": "Kısa hâli {{'ll be able to}}: {{you'll be able to}}. {{will can}} diye bir şey yoktur. (WB s. 92)",
+   "akilda": "gelecekte yapabileceğim",
+   "ornek": "In the future, you'll be able to chat with speakers of many more languages.",
+   "ornekTr": "Gelecekte çok daha fazla dilin konuşanlarıyla sohbet edebileceksin. (SB s. 36)",
+   "formul": [
+    [
+     {
+      "t": "I / You / He / She / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "will be able to",
+      "r": "yard",
+      "alt": "'ll be able to"
+     },
+     {
+      "t": "chat",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "{{I ___ translate this document tomorrow.}} Yarın yapacağım. Boşluğa hangisi?",
+    "secenekler": [
+     "will be able to",
+     "could",
+     "can to"
+    ],
+    "dogru": 0,
+    "ipucu": "{{tomorrow}}: gelecek. Gelecekteki yetenek kalıbını hatırla.",
+    "aciklama": "Gelecekteki yetenek {{will be able to}}: {{I will be able to translate this document tomorrow.}} (WB s. 92)"
+   }
+  },
+  {
+   "ad": "won't be able to",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='92' x2='106' y2='92' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='26' cy='92' r='5' fill='#c9cfe0'/><circle cx='60' cy='92' r='5' fill='#c9cfe0'/><circle cx='94' cy='92' r='9' fill='#9b5de5'/><text x='94' y='112' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#9b5de5'>FUTURE</text><circle cx='60' cy='42' r='26' fill='#e63946'/><path d='M49 31 l22 22 M71 31 l-22 22' stroke='#f1f4fb' stroke-width='7' stroke-linecap='round'/></svg>",
+   "aciklama": "Gelecekte bir şeyi yapamayacağımızı anlatır: -emeyeceğim.",
+   "ek": "{{won't}} = {{will not}}. Örnek: {{Don't speak too quietly during the presentation tomorrow. People won't be able to hear you.}} (SB s. 37)",
+   "akilda": "gelecekte yapamayacağım",
+   "ornek": "Some scientists say that machine translation won't be able to replace human translation completely.",
+   "ornekTr": "Bazı bilim insanları makine çevirisinin insan çevirisinin yerini tamamen alamayacağını söylüyor. (SB s. 36)",
+   "formul": [
+    [
+     {
+      "t": "I / You / He / She / We / They",
+      "r": "ozne"
+     },
+     {
+      "t": "won't be able to",
+      "r": "olumsuz",
+      "alt": "will not be able to"
+     },
+     {
+      "t": "hear",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Dağlarda telefon çekmeyecek. {{I ___ use my phone in the mountains.}} Boşluğa hangisi?",
+    "secenekler": [
+     "couldn't",
+     "won't be able to",
+     "can"
+    ],
+    "dogru": 1,
+    "ipucu": "Gelecekte yapamamak: kartın kırmızı çarpısı ve {{FUTURE}} noktası.",
+    "aciklama": "Gelecekte yapamamak {{won't be able to}}: {{I won't be able to use my phone in the mountains.}} (WB s. 26)"
+   }
+  },
+  {
+   "ad": "Will … be able to …?",
+   "renk": "#f4a261",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='14' y1='92' x2='106' y2='92' stroke='#c9cfe0' stroke-width='4' stroke-linecap='round'/><circle cx='26' cy='92' r='5' fill='#c9cfe0'/><circle cx='60' cy='92' r='5' fill='#c9cfe0'/><circle cx='94' cy='92' r='9' fill='#f4a261'/><text x='94' y='112' font-size='10' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f4a261'>FUTURE</text><circle cx='60' cy='42' r='26' fill='#f4a261'/><text x='60' y='55' font-size='38' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#1b2340'>?</text></svg>",
+   "aciklama": "Gelecekteki yeteneği sormak: -ebilecek mi? {{Will}} başa gelir, sonra özne, sonra {{be able to}} ve fiil.",
+   "ek": "Şimdi için soru {{Can you ...?}}, geçmiş için {{Could you ...?}}. Kısa cevap: {{Yes, I will.}} / {{No, I won't.}}",
+   "akilda": "gelecekte yapabilecek mi?",
+   "ornek": "Will tourists be able to travel without a dictionary or a guide?",
+   "ornekTr": "Turistler sözlük ya da rehber olmadan seyahat edebilecek mi? (SB s. 36)",
+   "formul": [
+    [
+     {
+      "t": "Will",
+      "r": "yard"
+     },
+     {
+      "t": "you / tourists / we",
+      "r": "ozne"
+     },
+     {
+      "t": "be able to",
+      "r": "yard"
+     },
+     {
+      "t": "travel",
+      "r": "fiil",
+      "alt": "fiil yalın (V1)"
+     },
+     {
+      "t": "?",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Hangisi doğru bir soru?",
+    "secenekler": [
+     "Will you can help me tomorrow?",
+     "Will you be able to help me tomorrow?",
+     "Can you to help me tomorrow?"
+    ],
+    "dogru": 1,
+    "ipucu": "Formül: {{Will}} + özne + {{be able to}} + fiil.",
+    "aciklama": "Doğrusu {{Will you be able to help me ...?}} {{Will you can}} yanlıştır. (SB s. 37)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "luckily",
+   "tr": "neyse ki, şans eseri",
+   "ornek": "Luckily, now there's a solution.",
+   "ornekTr": "Neyse ki artık bir çözüm var. (SB s. 36)"
+  },
+  {
+   "en": "completely",
+   "tr": "tamamen"
+  },
+  {
+   "en": "clearly",
+   "tr": "açıkça, net bir şekilde",
+   "ornek": "Machines can understand people when they speak clearly.",
+   "ornekTr": "Makineler insanlar net konuştuğunda onları anlayabilir. (SB s. 36)"
+  },
+  {
+   "en": "rapidly",
+   "tr": "hızla"
+  },
+  {
+   "en": "perfectly",
+   "tr": "kusursuzca, mükemmel bir şekilde"
+  },
+  {
+   "en": "No worries.",
+   "tr": "Önemli değil. / Rica ederim."
+  },
+  {
+   "en": "Oh dear!",
+   "tr": "Eyvah! / Tüh!"
+  },
+  {
+   "en": "Phew!",
+   "tr": "Oh be! (rahatlama)"
+  },
+  {
+   "en": "Yep.",
+   "tr": "Evet. (günlük dil)"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kalıp hangi zaman için?",
+   "kutular": [
+    {
+     "etiket": "Geçmiş (past)",
+     "uyeler": [
+      "could",
+      "couldn't"
+     ]
+    },
+    {
+     "etiket": "Şimdi (present)",
+     "uyeler": [
+      "can"
+     ]
+    },
+    {
+     "etiket": "Gelecek (future)",
+     "uyeler": [
+      "will be able to",
+      "won't be able to",
+      "Will … be able to …?"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "She can speak English and Polish.",
+   "tr": "O İngilizce ve Lehçe konuşabiliyor. (WB s. 92)"
+  },
+  {
+   "en": "Machines could translate written texts.",
+   "tr": "Makineler yazılı metinleri çevirebiliyordu. (SB s. 36)"
+  },
+  {
+   "en": "I couldn't speak until I was three.",
+   "tr": "Üç yaşına kadar konuşamıyordum. (WB s. 26)"
+  },
+  {
+   "en": "You'll be able to chat with them.",
+   "tr": "Onlarla sohbet edebileceksin. (SB s. 36)"
+  },
+  {
+   "en": "I won't be able to use my phone.",
+   "tr": "Telefonumu kullanamayacağım. (WB s. 26)"
+  },
+  {
+   "en": "Will we be able to understand every language?",
+   "tr": "Her dili anlayabilecek miyiz? (SB s. 36)"
+  },
+  {
+   "en": "Now I'll be able to sleep!",
+   "tr": "Artık uyuyabileceğim! (SB s. 40)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "I can swim when I was only two years old.",
+   "yanlis": "can",
+   "secenekler": [
+    "will be able to",
+    "could",
+    "can't"
+   ],
+   "dogru": 1,
+   "tr": "Sadece iki yaşındayken yüzebiliyordum.",
+   "aciklama": "{{when I was}} geçmiş: geçmişteki yetenek {{could}}. (WB s. 30)"
+  },
+  {
+   "cumle": "I can't speak English until I went to school.",
+   "yanlis": "can't",
+   "secenekler": [
+    "couldn't",
+    "won't be able to",
+    "can"
+   ],
+   "dogru": 0,
+   "tr": "Okula gidene kadar İngilizce konuşamıyordum.",
+   "aciklama": "{{went}} geçmiş zaman: {{couldn't}}. (WB s. 30)"
+  },
+  {
+   "cumle": "I think I can to be able to get a good job in the future.",
+   "yanlis": "can to be able to",
+   "secenekler": [
+    "could",
+    "can",
+    "will be able to"
+   ],
+   "dogru": 2,
+   "tr": "Gelecekte iyi bir iş bulabileceğimi düşünüyorum.",
+   "aciklama": "Gelecekteki yetenek {{will be able to}}; {{can}} ile {{be able to}} birlikte kullanılmaz. (WB s. 30)"
+  },
+  {
+   "cumle": "The school will be able let me know about my exam results next week.",
+   "yanlis": "will be able let",
+   "secenekler": [
+    "will be able to let",
+    "will can let",
+    "could let"
+   ],
+   "dogru": 0,
+   "tr": "Okul gelecek hafta sınav sonuçlarımı bana bildirebilecek.",
+   "aciklama": "{{be able}}'dan sonra {{to}} unutulmaz: {{will be able to let}}. (WB s. 30)"
+  },
+  {
+   "cumle": "Now I could speak Italian well.",
+   "yanlis": "could",
+   "secenekler": [
+    "will be able to",
+    "can",
+    "couldn't"
+   ],
+   "dogru": 1,
+   "tr": "Artık İtalyancayı iyi konuşabiliyorum.",
+   "aciklama": "{{Now}} şimdi demek: şimdiki yetenek {{can}}. (WB s. 30)"
+  },
+  {
+   "cumle": "Will you can help me translate this report tomorrow?",
+   "yanlis": "Will you can",
+   "secenekler": [
+    "Can you to",
+    "Could you will",
+    "Will you be able to"
+   ],
+   "dogru": 2,
+   "tr": "Yarın bu raporu çevirmeme yardım edebilecek misin?",
+   "aciklama": "Gelecek için soru {{Will you be able to ...?}} (SB s. 37)"
+  }
+ ],
+ "okuma": {
+  "baslik": "No more language lessons?",
+  "sayfa": "SB s. 36",
+  "sozluk": {
+   "a different country": "başka bir ülke",
+   "situation": "durum",
+   "solution": "çözüm",
+   "smart earpiece": "akıllı kulaklık",
+   "in their own language": "kendi dillerinde",
+   "written texts": "yazılı metinler",
+   "spoken language": "konuşulan dil",
+   "replace": "yerini almak",
+   "human translation": "insan çevirisi",
+   "artificial intelligence": "yapay zekâ",
+   "improving rapidly": "hızla gelişiyor",
+   "dictionary": "sözlük",
+   "a guide": "rehber",
+   "devices": "cihazlar"
+  },
+  "bolumler": [
+   {
+    "baslik": "Akıllı kulaklık nasıl çalışıyor?",
+    "cumleler": [
+     {
+      "en": "Imagine you're travelling in a different country, but you can't speak the language.",
+      "tr": "Başka bir ülkede seyahat ettiğini ama o dili konuşamadığını hayal et."
+     },
+     {
+      "en": "What can you do?",
+      "tr": "Ne yapabilirsin?"
+     },
+     {
+      "en": "Speak more slowly?",
+      "tr": "Daha yavaş mı konuşursun?"
+     },
+     {
+      "en": "Gesture with your hands?",
+      "tr": "Ellerinle işaret mi yaparsın?"
+     },
+     {
+      "en": "Well, you can try, but those things won't work for every situation.",
+      "tr": "Deneyebilirsin ama bunlar her durumda işe yaramaz."
+     },
+     {
+      "en": "Luckily, now there's a solution: the Pilot, the world's first 'smart earpiece'.",
+      "tr": "Neyse ki artık bir çözüm var: Pilot, dünyanın ilk 'akıllı kulaklığı'."
+     },
+     {
+      "en": "It's really easy to use.",
+      "tr": "Kullanması çok kolay."
+     },
+     {
+      "en": "You put the earpiece in your ear and the other person puts one in theirs.",
+      "tr": "Kulaklığı kendi kulağına takıyorsun, karşındaki kişi de birini kendi kulağına takıyor."
+     },
+     {
+      "en": "When you speak, the earpiece translates what you say, so the other person hears what you said but in their own language.",
+      "tr": "Sen konuşunca kulaklık söylediğini çeviriyor; böylece karşındaki kişi söylediğini kendi dilinde duyuyor."
+     },
+     {
+      "en": "As far back as the 1950s, machines could translate written texts, but they could not interpret spoken language.",
+      "tr": "Ta 1950'lerde makineler yazılı metinleri çevirebiliyordu ama konuşulan dili çeviremiyordu."
+     },
+     {
+      "en": "Things are very different today.",
+      "tr": "Bugün durum çok farklı."
+     },
+     {
+      "en": "The Pilot can already translate between English, French, Italian, Spanish and Portuguese, and in the future, you'll be able to chat with speakers of many more languages.",
+      "tr": "Pilot şimdiden İngilizce, Fransızca, İtalyanca, İspanyolca ve Portekizce arasında çeviri yapabiliyor; gelecekte çok daha fazla dilin konuşanlarıyla sohbet edebileceksin."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Pilot nedir?",
+      "secenekler": [
+       "Bir dil kursu",
+       "Kulağa takılan akıllı bir çeviri cihazı",
+       "Bir sözlük kitabı"
+      ],
+      "dogru": 1,
+      "ipucu": "{{the world's first 'smart earpiece'}} cümlesini bul.",
+      "aciklama": "Pilot dünyanın ilk akıllı kulaklığı: konuşulanı çeviriyor. (SB s. 36)"
+     },
+     {
+      "soru": "1950'lerdeki makineler neyi yapamıyordu?",
+      "secenekler": [
+       "Yazılı metinleri çevirmeyi",
+       "Konuşulan dili çevirmeyi",
+       "Hiçbir şeyi"
+      ],
+      "dogru": 1,
+      "ipucu": "{{could not}} geçen cümleye bak.",
+      "aciklama": "{{they could not interpret spoken language}}: konuşulan dili çeviremiyorlardı. (SB s. 36)"
+     }
+    ]
+   },
+   {
+    "baslik": "Makineler her şeyi yapabilecek mi?",
+    "cumleler": [
+     {
+      "en": "Some scientists say that machine translation won't be able to replace human translation completely.",
+      "tr": "Bazı bilim insanları makine çevirisinin insan çevirisinin yerini tamamen alamayacağını söylüyor."
+     },
+     {
+      "en": "Machines can understand people when they speak clearly, but they can't always understand people when they whisper or tell jokes.",
+      "tr": "Makineler insanlar net konuştuğunda onları anlayabiliyor ama fısıldadıklarında ya da şaka yaptıklarında her zaman anlayamıyor."
+     },
+     {
+      "en": "However, the technology uses artificial intelligence to learn and is improving rapidly, so maybe in a few more years the Pilot will be able to do these things, too.",
+      "tr": "Ancak bu teknoloji öğrenmek için yapay zekâ kullanıyor ve hızla gelişiyor; belki birkaç yıl sonra Pilot bunları da yapabilecek."
+     },
+     {
+      "en": "What does this mean for learning languages?",
+      "tr": "Bu, dil öğrenmek için ne anlama geliyor?"
+     },
+     {
+      "en": "Will tourists be able to travel without a dictionary or a guide?",
+      "tr": "Turistler sözlük ya da rehber olmadan seyahat edebilecek mi?"
+     },
+     {
+      "en": "Will students be able to forget about grammar?",
+      "tr": "Öğrenciler dilbilgisini unutabilecek mi?"
+     },
+     {
+      "en": "Will we be able to understand every language perfectly?",
+      "tr": "Her dili kusursuzca anlayabilecek miyiz?"
+     },
+     {
+      "en": "Not yet, but one thing is clear; devices like the Pilot will be able to help.",
+      "tr": "Henüz değil ama bir şey açık: Pilot gibi cihazlar yardımcı olabilecek."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Makineler insanları ne zaman her zaman anlayamıyor?",
+      "secenekler": [
+       "Net konuştuklarında",
+       "Fısıldadıklarında ya da şaka yaptıklarında",
+       "Yavaş konuştuklarında"
+      ],
+      "dogru": 1,
+      "ipucu": "{{can't always understand}} geçen cümleyi bul.",
+      "aciklama": "{{they can't always understand people when they whisper or tell jokes}}. (SB s. 36)"
+     },
+     {
+      "soru": "Yazara göre dil öğrenmeye hâlâ gerek var mı?",
+      "secenekler": [
+       "Hayır, artık hiç gerek yok.",
+       "Sadece rehberlerin öğrenmesi gerekiyor.",
+       "Evet, henüz her dili kusursuz anlayamıyoruz."
+      ],
+      "dogru": 2,
+      "ipucu": "Son cümledeki {{Not yet}} ne demek?",
+      "aciklama": "{{Not yet}}: henüz değil. Cihazlar yardım edecek ama dil öğrenmek hâlâ gerekli. (SB s. 36)"
+     }
+    ]
+   }
+  ]
+ },
+ "biliyorMusun": [
+  "Yüzyıllarca kimse Mısır hiyerogliflerini okuyamadı. 1799'da arkeologlar çölde büyük, siyah bir taş buldu: Rosetta Taşı. Üzerinde aynı metin hiyeroglifle ve iki başka dille yazılıydı; böylece uzmanlar sonunda hiyeroglifleri çevirebildi. (SB s. 37)",
+  "Çoğu insan Svahili dilini konuşamaz ama Svahilice bir kelimeyi bilir: {{safari}}. Anlamı 'yolculuk'. (SB s. 37)",
+  "Bir eşyanın adını bilmiyorsan anlatarak isteyebilirsin: {{It's a kind of ...}}, {{You use it to ...}}, {{They're similar to ...}}. Cristina {{earplugs}} kelimesini bilmiyordu ama anlattı ve aldı. (SB s. 40)"
+ ],
+ "akildaKalsin": [
+  "Şimdi {{can}} / {{can't}} · Geçmiş {{could}} / {{couldn't}} · Gelecek {{will be able to}} / {{won't be able to}}.",
+  "Hepsinden sonra fiil yalın gelir: {{can speak}}, {{could read}}, {{will be able to chat}}.",
+  "{{will can}} diye bir şey yoktur: {{will be able to}} denir.",
+  "Gelecek sorusu: {{Will you be able to help me?}}",
+  "Günlük dil: {{No worries.}} önemli değil · {{Oh dear!}} eyvah · {{Phew!}} oh be · {{Yep.}} evet."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden {{will can}} diyemiyoruz?",
+   "cevap": "Çünkü {{can}}'in gelecek hâli yok. Gelecekteki yetenek için kitap {{will be able to}} kullanıyor: {{I will be able to translate this document tomorrow.}} (WB s. 92)"
+  },
+  {
+   "soru": "{{could}} her zaman geçmiş mi demek?",
+   "cevap": "Bu ünitede {{could}}, geçmişteki yetenek için: {{We could visit the pyramids when we went to Egypt.}} (WB s. 92)"
+  },
+  {
+   "soru": "Pilot hangi dilleri çevirebiliyor?",
+   "cevap": "Kitaba göre İngilizce, Fransızca, İtalyanca, İspanyolca ve Portekizce. Gelecekte daha fazla dil gelecek. (SB s. 36)"
+  },
+  {
+   "soru": "Makineler insan çevirmenlerin yerini alacak mı?",
+   "cevap": "Bazı bilim insanlarına göre tamamen alamayacak: {{won't be able to replace human translation completely}}. Makineler fısıltıyı ve şakaları her zaman anlayamıyor. (SB s. 36)"
+  },
+  {
+   "soru": "{{Phew!}} ne zaman söylenir?",
+   "cevap": "Bir korku ya da sıkıntı geçince, rahatlayınca. Kitapta: {{Don't worry. The spider's gone.}} – {{Phew!}} (SB s. 40)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kendin için yaz: küçükken yapamadığın, şimdi yapabildiğin ve gelecekte yapabileceğin bir şey. {{could / can / will be able to}}",
+   "ornekCevap": "When I was five, I couldn't swim. Now I can swim well. In the future, I will be able to speak English perfectly.",
+   "anahtarlar": [
+    "couldn",
+    "can",
+    "will be able"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I could stand on my head.",
+    "I can stand on my head.",
+    "I can't stand on my head."
+   ],
+   "dogru": 1,
+   "ipucu": "{{could}} mı, {{can}} mi? Sonunda {{t}} sesi var mı?",
+   "aciklama": "Duyduğun cümle {{I can stand on my head.}}: Amuda kalkabiliyorum. (SB s. 37)",
+   "dinle": "I can stand on my head.",
+   "kavram": "can"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "You won't be able to see it.",
+    "You will be able to see it.",
+    "You couldn't see it."
+   ],
+   "dogru": 0,
+   "ipucu": "Cümlenin başındaki {{won't}} mı, {{will}} mi?",
+   "aciklama": "Duyduğun cümle {{You won't be able to see it.}}: Onu göremeyeceksin. (SB s. 37)",
+   "dinle": "You won't be able to see it.",
+   "kavram": "won't be able to"
+  },
+  {
+   "soru": "{{Most people couldn't send each other quick messages 30 years ago.}} Bu cümle hangi zamanı anlatıyor?",
+   "secenekler": [
+    "geçmiş",
+    "şimdi",
+    "gelecek"
+   ],
+   "dogru": 0,
+   "ipucu": "{{30 years ago}}: 30 yıl önce.",
+   "aciklama": "{{couldn't}} ve {{30 years ago}}: geçmiş. (WB s. 26)",
+   "kavram": "couldn't"
+  },
+  {
+   "soru": "{{It's possible that we will be able to interpret any language on a smartphone app.}} Bu cümle hangi zamanı anlatıyor?",
+   "secenekler": [
+    "geçmiş",
+    "şimdi",
+    "gelecek"
+   ],
+   "dogru": 2,
+   "ipucu": "{{will be able to}} hangi zaman için kullanılıyordu?",
+   "aciklama": "{{will be able to}}: gelecek. (WB s. 26)",
+   "kavram": "will be able to"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Today, you ___ see the Rosetta Stone in the British Museum.}}",
+   "secenekler": [
+    "couldn't",
+    "can",
+    "won't be able to"
+   ],
+   "dogru": 1,
+   "ipucu": "{{Today}}: bugün. Şimdiki yetenek hangisi?",
+   "aciklama": "Bugün: {{can}}. Rosetta Taşı'nı British Museum'da görebilirsin. (SB s. 37)",
+   "kavram": "can"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{When she was younger, she ___ speak Spanish, but she studied it at school.}}",
+   "secenekler": [
+    "couldn't",
+    "can",
+    "will be able to"
+   ],
+   "dogru": 0,
+   "ipucu": "Küçükken konuşamıyordu, sonra okulda öğrendi.",
+   "aciklama": "Geçmişte yapamamak: {{couldn't}}. (WB s. 93)",
+   "kavram": "couldn't"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{As far back as the 1950s, machines ___ translate written texts.}}",
+   "secenekler": [
+    "will be able to",
+    "can",
+    "could"
+   ],
+   "dogru": 2,
+   "ipucu": "{{the 1950s}} geçmiş zaman.",
+   "aciklama": "Geçmişteki yetenek {{could}}. (SB s. 36)",
+   "kavram": "could"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{___ visit the British Museum when you're in London next week?}}",
+   "secenekler": [
+    "Will you be able to",
+    "Can you able to",
+    "Able you to"
+   ],
+   "dogru": 0,
+   "ipucu": "{{next week}}: gelecek. Gelecek için soru kalıbı {{Will}} ile başlar.",
+   "aciklama": "{{Will you be able to visit ...?}} (WB s. 93)",
+   "kavram": "Will … be able to …?"
+  },
+  {
+   "soru": "Hangi cümle gelecekteki bir yeteneği anlatıyor?",
+   "secenekler": [
+    "The Pilot can translate five languages.",
+    "Maybe in a few more years the Pilot will be able to do these things.",
+    "Machines could translate written texts."
+   ],
+   "dogru": 1,
+   "ipucu": "{{in a few more years}}: birkaç yıl sonra.",
+   "aciklama": "{{will be able to}} + {{in a few more years}}: gelecek. (SB s. 36)",
+   "kavram": "will be able to"
+  },
+  {
+   "soru": "Cristina güneş kremini anlatırken ne dedi? {{It's a kind of liquid. You put it on your face at the beach.}} Satıcı ne getirdi?",
+   "secenekler": [
+    "earplugs",
+    "sunblock",
+    "earphones"
+   ],
+   "dogru": 1,
+   "ipucu": "Plajda yüze sürülen sıvı.",
+   "aciklama": "Satıcı {{sunblock}} getirdi. Kelimeyi bilmeyince {{It's a kind of ...}} diyerek anlatabilirsin. (SB s. 40)",
+   "kavram": "can",
+   "yardim": {
+    "hatirla": "Bir eşyanın adını bilmiyorsan anlatarak iste: {{It's a kind of ...}} (bir çeşit...), {{You use it to ...}} (onu ... için kullanırsın).",
+    "adimlar": [
+     "{{liquid}}: sıvı. {{on your face at the beach}}: plajda yüzüne.",
+     "Güneşten korunmak için ne sürersin?"
+    ]
+   }
+  },
+  {
+   "soru": "Arkadaşın {{I broke my phone!}} dedi. Hangisini söylersin?",
+   "secenekler": [
+    "Phew!",
+    "No worries.",
+    "Oh dear!"
+   ],
+   "dogru": 2,
+   "ipucu": "Kötü bir haber duyunca söylenen kalıp.",
+   "aciklama": "Kötü haberde {{Oh dear!}}: Eyvah! (SB s. 40)",
+   "kavram": "won't be able to",
+   "yardim": {
+    "hatirla": "Günlük dil: {{No worries.}} önemli değil · {{Oh dear!}} eyvah · {{Phew!}} oh be · {{Yep.}} evet.",
+    "adimlar": [
+     "Telefonun kırılması iyi mi kötü bir haber mi?",
+     "Kötü habere 'Eyvah!' denir."
+    ]
+   }
+  }
+ ]
+}

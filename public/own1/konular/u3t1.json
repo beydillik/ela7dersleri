@@ -1,0 +1,226 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "Ara Durak 1: İletişim ve yetenek",
+ "sayfalar": "Konu 1–3 · SB s. 35–37, 40, 44, 130 · WB s. 24, 26, 29–30, 92–93",
+ "giris": "Üç konu bitti; kısa bir tekrar molası. Önce kartlara bakmadan hatırlamaya çalış. Sonra karışık soruları çöz. Not yok, sadece tekrar.",
+ "buyukResim": "İletişim kelimelerini öğrendin: yüzle, elle ve sözle. {{can}}, {{could}} ve {{will be able to}} ile de kimin neyi yapabildiğini anlatabiliyorsun: {{Kazue can interpret Japanese.}} {{Machines couldn't interpret spoken language.}}",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "{{greet}} selamlamak · {{smile}} gülümsemek.",
+    "{{gesture}} jest · {{wave}} el sallamak · {{shake hands}} el sıkışmak.",
+    "{{wave goodbye}}: el sallayıp vedalaşmak."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "{{shout}} bağırmak ↔ {{whisper}} fısıldamak.",
+    "{{translate}} yazıyı çevirmek · {{interpret}} konuşmayı çevirmek.",
+    "{{describe}} tarif etmek · {{post}} internette paylaşmak."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Şimdi {{can}} · geçmiş {{could}} · gelecek {{will be able to}}.",
+    "Olumsuz: {{can't}}, {{couldn't}}, {{won't be able to}}.",
+    "Soru: {{Will you be able to ...?}} ({{will can}} yok)."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Kelime mi, yetenek kalıbı mı?",
+   "kutular": [
+    {
+     "etiket": "Yüz ve el (Konu 1)",
+     "uyeler": [
+      "gesture",
+      "shake hands",
+      "smile",
+      "wave"
+     ]
+    },
+    {
+     "etiket": "Sözle (Konu 2)",
+     "uyeler": [
+      "describe",
+      "shout",
+      "translate",
+      "whisper"
+     ]
+    },
+    {
+     "etiket": "Yetenek kalıbı (Konu 3)",
+     "uyeler": [
+      "can",
+      "could",
+      "will be able to"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Machines could translate written texts.",
+    "Machines could interpret written texts.",
+    "Machines can translate written texts."
+   ],
+   "dogru": 0,
+   "ipucu": "İki şeye dikkat et: {{could}} mi {{can}} mi; {{translate}} mı {{interpret}} mı?",
+   "aciklama": "Duyduğun cümle {{Machines could translate written texts.}} Yazılı metin {{translate}} edilir, geçmiş yetenek {{could}}. (SB s. 36)",
+   "dinle": "Machines could translate written texts.",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "translate"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "could"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I won't be able to wave goodbye.",
+    "We won't be able to wave goodbye.",
+    "We will be able to wave goodbye."
+   ],
+   "dogru": 1,
+   "ipucu": "Başta {{I}} mı {{We}} mi? Ortada {{won't}} mı {{will}} mi?",
+   "aciklama": "Duyduğun cümle {{We won't be able to wave goodbye when they leave.}} cümlesinin başı. (WB s. 93)",
+   "dinle": "We won't be able to wave goodbye.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "wave"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "won't be able to"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{The baby is sleeping. Please ___, or we won't be able to watch the film quietly.}}",
+   "secenekler": [
+    "shout",
+    "post",
+    "whisper"
+   ],
+   "dogru": 2,
+   "ipucu": "Bebek uyuyor: alçak sesle konuşmak gerekir.",
+   "aciklama": "Alçak sesle konuşmak {{whisper}}. Cümlenin sonu gelecekte yapamamayı anlatıyor: {{won't be able to}}. (WB s. 24)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "whisper"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "won't be able to"
+    }
+   ]
+  },
+  {
+   "soru": "Kazue'nin anne babası İngilizce bilmiyordu. Yazar onlarla nasıl konuşabildi?",
+   "secenekler": [
+    "Kazue her şeyi Japoncaya çevirdi.",
+    "Hepsi bağırarak konuştu.",
+    "Fotoğraf paylaştılar."
+   ],
+   "dogru": 0,
+   "ipucu": "Hikâyede Kazue {{everything I said into Japanese}} ne yaptı?",
+   "aciklama": "Anne babası İngilizce konuşamıyordu ({{can't}}); Kazue söylenenleri Japoncaya çevirdi ({{interpreted}}). (WB s. 24)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "interpret"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "can"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{When I was a baby, I ___ smile, but I couldn't speak.}}",
+   "secenekler": [
+    "will be able to",
+    "could",
+    "can"
+   ],
+   "dogru": 1,
+   "ipucu": "{{When I was a baby}}: geçmiş. Bebekken gülümseyebiliyordum.",
+   "aciklama": "Geçmişteki yetenek {{could}}: {{I could smile}}. Olumsuzu {{couldn't}}. (WB s. 92)",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "smile"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "could"
+    }
+   ]
+  },
+  {
+   "soru": "Pilot kulaklığı bugün neyi her zaman yapamıyor?",
+   "secenekler": [
+    "İngilizceyi Fransızcaya çevirmeyi",
+    "İnsanlar net konuşunca onları anlamayı",
+    "İnsanlar fısıldayınca onları anlamayı"
+   ],
+   "dogru": 2,
+   "ipucu": "Okuma metnindeki {{can't always understand}} cümlesini hatırla.",
+   "aciklama": "{{they can't always understand people when they whisper or tell jokes}}: fısıltıyı her zaman anlayamıyor. (SB s. 36)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "whisper"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "can"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru bir cümle?",
+   "secenekler": [
+    "Will you can describe your house to me?",
+    "Will you be able to describe your house to me?",
+    "Will you be able describe your house to me?"
+   ],
+   "dogru": 1,
+   "ipucu": "Gelecek sorusu: {{Will}} + özne + {{be able to}} + fiil.",
+   "aciklama": "{{Will you be able to describe ...?}} {{be able}}'dan sonra {{to}} gelir; {{will can}} olmaz. (SB s. 37)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "describe"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Will … be able to …?"
+    }
+   ]
+  }
+ ]
+}
