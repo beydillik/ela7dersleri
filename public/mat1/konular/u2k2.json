@@ -1,0 +1,456 @@
+{
+ "id": "u2k2",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Prizma ve Açınımı",
+ "sayfalar": "s. 125–128",
+ "giris": "Ayakkabı kutusu, çikolata kutusu, ilaç kutusu… Hepsi aynı biçimde: dikdörtgenler prizması. Bu konuda kutuların yüzlerini, ayrıtlarını ve köşelerini tanıyacağız. Sonra bir kutuyu kesip düz açacağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda dikdörtgen, kare ve küpün açınımını kullanacağız. Önce onları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Dikdörtgen ve kare",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='34' width='58' height='36' fill='none' stroke='#6fb3ff' stroke-width='3'/><rect x='82' y='40' width='26' height='26' fill='none' stroke='#ffa26b' stroke-width='3'/><text x='43' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#6fb3ff'>dikdörtgen</text><text x='95' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#ffa26b'>kare</text></svg>",
+    "anlatim": "Dikdörtgenin dört açısı da dik açıdır; karşılıklı kenarları eşittir. Karenin dört kenarı da eşittir. Kare, özel bir dikdörtgendir.",
+    "akilda": "Kare de bir dikdörtgendir",
+    "sorular": [
+     {
+      "soru": "Hangisi doğrudur?",
+      "secenekler": [
+       "Her kare bir dikdörtgendir.",
+       "Her dikdörtgen bir karedir.",
+       "Karenin kenarları farklı uzunluktadır."
+      ],
+      "dogru": 0,
+      "ipucu": "Kare özel bir dikdörtgendir. Hangi şart kareyi özel yapar?",
+      "aciklama": "Karenin dört açısı dik, karşılıklı kenarları eşit: o da bir dikdörtgendir. Ama her dikdörtgenin dört kenarı eşit değildir."
+     },
+     {
+      "soru": "Kenarları 3 cm ve 5 cm olan bir dikdörtgen için hangisi doğrudur?",
+      "secenekler": [
+       "Dört kenarı da 3 cm'dir.",
+       "İki kenarı 3 cm, iki kenarı 5 cm'dir.",
+       "Dört kenarı da 5 cm'dir."
+      ],
+      "dogru": 1,
+      "ipucu": "Dikdörtgenin karşılıklı kenarları eşittir.",
+      "aciklama": "Karşılıklı kenarlar eşittir: iki kenar 3 cm, iki kenar 5 cm."
+     }
+    ]
+   },
+   {
+    "ad": "Küpün açınımı",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='60.0' y='12.0' width='21' height='21' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='39.0' y='33.0' width='21' height='21' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='60.0' y='33.0' width='21' height='21' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='81.0' y='33.0' width='21' height='21' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='60.0' y='54.0' width='21' height='21' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='60.0' y='75.0' width='21' height='21' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='98' y='108' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f2c14e'>6</text></svg>",
+    "anlatim": "Küp şeklindeki bir kutuyu bazı ayrıtlarından kesip düz açarsak 6 kareden oluşan bir şekil elde ederiz. Buna küpün açınımı denir. (s. 125)",
+    "akilda": "Küp açınımı: 6 kare",
+    "sorular": [
+     {
+      "soru": "Küpün açınımı kaç kareden oluşur?",
+      "cevap": "6",
+      "ipucu": "Küpün kaç yüzü var? Her yüz açınımda bir kare olur.",
+      "aciklama": "Küpün 6 yüzü var; açınımı 6 kareden oluşur. (s. 125)",
+      "yardim": {
+       "adimlar": [
+        "Küpün yüzlerini say: ön, arka, sağ, sol, üst, alt.",
+        "Her yüz açınımda bir kare olur."
+       ]
+      }
+     },
+     {
+      "soru": "Görseldekilerden hangisi bir küpün açınımıdır?",
+      "secenekler": [
+       "1. çizim",
+       "2. çizim",
+       "3. çizim"
+      ],
+      "dogru": 0,
+      "ipucu": "Kare sayısını say: 6 olmalı. Sonra katlamayı hayal et: yüzler üst üste biniyor mu?",
+      "aciklama": "1. çizim haç biçiminde 6 kare: kapanınca küp olur. 2. çizimde 5 kare var. 3. çizim 2 sıra 3 kare: kapatınca yüzler üst üste biner.",
+      "svg": "<svg viewBox='0 0 330 150' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='47.0' y='56.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='31.0' y='72.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='47.0' y='72.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='63.0' y='72.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='47.0' y='88.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='47.0' y='104.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><circle cx='55.0' cy='138' r='10' fill='#f2c14e'/><text x='55.0' y='143.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='157.0' y='72.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='141.0' y='88.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='157.0' y='88.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='173.0' y='88.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='157.0' y='104.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><circle cx='165.0' cy='138' r='10' fill='#f2c14e'/><text x='165.0' y='143.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='122' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='251.0' y='88.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='267.0' y='88.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='283.0' y='88.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='251.0' y='104.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='267.0' y='104.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><rect x='283.0' y='104.0' width='16' height='16' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><circle cx='275.0' cy='138' r='10' fill='#f2c14e'/><text x='275.0' y='143.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='122' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></svg>"
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Dikdörtgenler Prizması",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='22.0,92.0 74.0,92.0 74.0,48.0 22.0,48.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='22.0,48.0 74.0,48.0 94.0,28.0 42.0,28.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='74.0,92.0 94.0,72.0 94.0,28.0 74.0,48.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M42.0 72.0 H94.0 M42.0 72.0 V28.0 M42.0 72.0 L22.0 92.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M22.0 92.0 H74.0 V48.0 H22.0 Z M22.0 48.0 L42.0 28.0 H94.0 L74.0 48.0 M94.0 28.0 V72.0 L74.0 92.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>kutu biçimi</text></svg>",
+   "aciklama": "Ayakkabı kutusu gibi 6 yüzünün hepsi dikdörtgen olan cisme dikdörtgenler prizması denir. (s. 128)",
+   "ek": "Kitapta parfüm kutusu ve çikolata kutusu dikdörtgenler prizmasına, ilaç kutusu da kare prizmaya örnek veriliyor. (s. 125–126)",
+   "akilda": "Kutu biçimi: 6 dikdörtgen yüz",
+   "soru": {
+    "soru": "Hangisi dikdörtgenler prizmasına örnektir?",
+    "secenekler": [
+     "Çikolata kutusu",
+     "Futbol topu",
+     "Dondurma külahı"
+    ],
+    "dogru": 0,
+    "ipucu": "Kutu biçiminde olanı ara: bütün yüzleri dikdörtgen.",
+    "aciklama": "Çikolata kutusunun 6 yüzü dikdörtgendir. Top ve külahın düz dikdörtgen yüzleri yoktur. (s. 126)"
+   }
+  },
+  {
+   "ad": "Yüz, Ayrıt, Köşe",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='20.0,92.0 74.0,92.0 74.0,46.0 20.0,46.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='20.0,46.0 74.0,46.0 94.0,26.0 40.0,26.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='74.0,92.0 94.0,72.0 94.0,26.0 74.0,46.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M40.0 72.0 H94.0 M40.0 72.0 V26.0 M40.0 72.0 L20.0 92.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M20.0 92.0 H74.0 V46.0 H20.0 Z M20.0 46.0 L40.0 26.0 H94.0 L74.0 46.0 M94.0 26.0 V72.0 L74.0 92.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='74.0' y1='92.0' x2='74.0' y2='46.0' stroke='#f2c14e' stroke-width='5' stroke-linecap='round'/><circle cx='74' cy='46' r='5.5' fill='#ff8fab' stroke='#1b2340' stroke-width='1.5'/><polygon points='20,92 74,92 74,46 20,46' fill='#6fb3ff' fill-opacity='0.45'/><text x='34' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#6fb3ff'>yüz</text><text x='66' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>ayrıt</text><text x='98' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#ff8fab'>köşe</text></svg>",
+   "aciklama": "Prizmanın düz yüzeylerine yüz, iki yüzün birleştiği çizgiye ayrıt, ayrıtların buluştuğu noktaya köşe denir.",
+   "ek": "Dikdörtgenler prizmasının 6 yüzü, 12 ayrıtı ve 8 köşesi vardır. Bir kutunun üzerinde sayarak kontrol edebilirsin.",
+   "akilda": "6 yüz, 12 ayrıt, 8 köşe",
+   "cozum": {
+    "baslik": "Ayrıtları sayalım",
+    "problem": "Dikdörtgenler prizmasının kaç ayrıtı vardır?",
+    "svg": "<svg viewBox='0 0 330 170' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='92.5,144.0 202.5,144.0 202.5,74.0 92.5,74.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='92.5,74.0 202.5,74.0 237.5,39.0 127.5,39.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='202.5,144.0 237.5,109.0 237.5,39.0 202.5,74.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M127.5 109.0 H237.5 M127.5 109.0 V39.0 M127.5 109.0 L92.5 144.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M92.5 144.0 H202.5 V74.0 H92.5 Z M92.5 74.0 L127.5 39.0 H237.5 L202.5 74.0 M237.5 39.0 V109.0 L202.5 144.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='92.5' y1='144.0' x2='202.5' y2='144.0' stroke='#5fd08f' stroke-width='3.5'/><text x='147.5' y='160.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'></text><line x1='92.5' y1='144.0' x2='92.5' y2='74.0' stroke='#f783ac' stroke-width='3.5'/><text x='87.5' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'></text><line x1='202.5' y1='144.0' x2='237.5' y2='109.0' stroke='#b197fc' stroke-width='3.5'/><text x='226.0' y='135.5' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'></text></svg>",
+    "adimlar": [
+     {
+      "metin": "Ön yüzün çevresindeki ayrıtları say.",
+      "islem": "4"
+     },
+     {
+      "metin": "Arka yüzün çevresinde de 4 ayrıt var. Kesikli çizgiler arkada kalanları gösterir.",
+      "islem": "4 + 4"
+     },
+     {
+      "metin": "Önü arkaya bağlayan çapraz ayrıtlar.",
+      "islem": "4 + 4 + 4 = 12"
+     }
+    ],
+    "sonuc": "Dikdörtgenler prizmasının 12 ayrıtı vardır."
+   },
+   "soru": {
+    "soru": "Dikdörtgenler prizmasının kaç köşesi vardır?",
+    "cevap": "8",
+    "ipucu": "Ön yüzün köşelerini say, sonra arka yüzün köşelerini.",
+    "aciklama": "Ön yüzde 4, arka yüzde 4 köşe: 4 + 4 = 8.",
+    "yardim": {
+     "adimlar": [
+      "Ön yüzün köşelerini say.",
+      "Arka yüzde de aynı sayıda köşe var.",
+      "İkisini topla."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Karşılıklı Yüzler Eştir",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='46.0' y='10.0' width='28.0' height='18.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='46.0' y='28.0' width='28.0' height='24.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='46.0' y='52.0' width='28.0' height='18.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='46.0' y='70.0' width='28.0' height='24.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='28.0' y='28.0' width='18.0' height='24.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='74.0' y='28.0' width='18.0' height='24.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='60' y='116' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>aynı renk = eş</text></svg>",
+   "aciklama": "Dikdörtgenler prizmasında karşılıklı duran iki yüz birbirine eştir: ön ile arka, üst ile alt, sağ ile sol. (s. 128)",
+   "ek": "Böylece 6 yüz, 3 çift eş yüz olur. Kitaptaki açınımlarda eş yüzler aynı renkle boyanır. (s. 128)",
+   "akilda": "3 çift eş yüz",
+   "soru": {
+    "soru": "Bir kutunun üst yüzüne eş olan yüz hangisidir?",
+    "secenekler": [
+     "Ön yüz",
+     "Sağ yüz",
+     "Alt yüz"
+    ],
+    "dogru": 2,
+    "ipucu": "Üst yüzün karşısında hangi yüz var?",
+    "aciklama": "Karşılıklı yüzler eştir: üst yüzün karşısı alt yüzdür. (s. 128)"
+   }
+  },
+  {
+   "ad": "Yüzey Açınımı",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='8.0,70.0 38.0,70.0 38.0,44.0 8.0,44.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='8.0,44.0 38.0,44.0 49.0,33.0 19.0,33.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='38.0,70.0 49.0,59.0 49.0,33.0 38.0,44.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M19.0 59.0 H49.0 M19.0 59.0 V33.0 M19.0 59.0 L8.0 70.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M8.0 70.0 H38.0 V44.0 H8.0 Z M8.0 44.0 L19.0 33.0 H49.0 L38.0 44.0 M49.0 33.0 V59.0 L38.0 70.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><path d='M50 52 h10' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M62 52l-6-4v8z' fill='#f2c14e'/><rect x='80.0' y='14.0' width='18.0' height='12.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='80.0' y='26.0' width='18.0' height='16.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='80.0' y='42.0' width='18.0' height='12.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='80.0' y='54.0' width='18.0' height='16.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='68.0' y='26.0' width='12.0' height='16.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='98.0' y='26.0' width='12.0' height='16.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/></svg>",
+   "aciklama": "Bir kutuyu bazı ayrıtlarından kesip düz açınca elde edilen şekle yüzey açınımı denir. Dikdörtgenler prizmasının açınımı 6 dikdörtgenden oluşur. (s. 128)",
+   "ek": "Kitapta parfüm, çikolata ve ilaç kutuları kesilip açılıyor; her biri düz bir şekle dönüşüyor. (s. 125–126)",
+   "akilda": "Kes, düz aç: 6 dikdörtgen",
+   "cozum": {
+    "baslik": "Kutuyu açalım",
+    "problem": "Bir çikolata kutusunu ayrıtlarından kesip düz açıyoruz.",
+    "svg": "<svg viewBox='0 0 330 170' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='90.0,144.0 210.0,144.0 210.0,84.0 90.0,84.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='90.0,84.0 210.0,84.0 240.0,54.0 120.0,54.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='210.0,144.0 240.0,114.0 240.0,54.0 210.0,84.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M120.0 114.0 H240.0 M120.0 114.0 V54.0 M120.0 114.0 L90.0 144.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M90.0 144.0 H210.0 V84.0 H90.0 Z M90.0 84.0 L120.0 54.0 H240.0 L210.0 84.0 M240.0 54.0 V114.0 L210.0 144.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='90.0' y1='144.0' x2='210.0' y2='144.0' stroke='#5fd08f' stroke-width='3.5'/><text x='150.0' y='160.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'></text><line x1='90.0' y1='144.0' x2='90.0' y2='84.0' stroke='#f783ac' stroke-width='3.5'/><text x='85.0' y='119.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'></text><line x1='210.0' y1='144.0' x2='240.0' y2='114.0' stroke='#b197fc' stroke-width='3.5'/><text x='231.0' y='138.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'></text></svg>",
+    "adimlar": [
+     {
+      "metin": "Ortadaki sütunda 4 yüz yer alır: üst, ön, alt ve arka. Kutunun çevresine sarılan bir şerit gibi."
+     },
+     {
+      "metin": "Ön yüzün iki yanına sol ve sağ yüzler gelir.",
+      "islem": "4 + 2 = 6 dikdörtgen"
+     },
+     {
+      "metin": "Eş yüzleri aynı renkle boya.",
+      "svg": "<svg viewBox='0 0 330 168' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='130.0' y='10.0' width='70.0' height='34.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='31.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>üst</text><rect x='130.0' y='44.0' width='70.0' height='40.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='68.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>ön</text><rect x='130.0' y='84.0' width='70.0' height='34.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='105.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>alt</text><rect x='130.0' y='118.0' width='70.0' height='40.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='142.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>arka</text><rect x='96.0' y='44.0' width='34.0' height='40.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='113.0' y='68.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>sol</text><rect x='200.0' y='44.0' width='34.0' height='40.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='217.0' y='68.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>sağ</text></svg>"
+     }
+    ],
+    "sonuc": "6 dikdörtgenden oluşan bir açınım elde ettik. Aynı renkli yüzler eş ve kapanınca karşılıklı. (s. 128)"
+   },
+   "soru": {
+    "soru": "Dikdörtgenler prizmasının açınımında kaç dikdörtgen vardır?",
+    "secenekler": [
+     "4",
+     "6",
+     "8"
+    ],
+    "dogru": 1,
+    "ipucu": "Açınımdaki her dikdörtgen kutunun bir yüzüdür.",
+    "aciklama": "Kutunun 6 yüzü var; açınımda 6 dikdörtgen olur. (s. 128)"
+   }
+  },
+  {
+   "ad": "Birden Fazla Açınım",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22.0' y='16.0' width='14' height='14' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='8.0' y='30.0' width='14' height='14' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='22.0' y='30.0' width='14' height='14' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='36.0' y='30.0' width='14' height='14' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='22.0' y='44.0' width='14' height='14' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='22.0' y='58.0' width='14' height='14' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='58.0' y='30.0' width='13' height='13' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='58.0' y='43.0' width='13' height='13' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='71.0' y='43.0' width='13' height='13' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='84.0' y='43.0' width='13' height='13' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='97.0' y='43.0' width='13' height='13' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='97.0' y='56.0' width='13' height='13' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>iki açınım, aynı kutu</text></svg>",
+   "aciklama": "Bir kutuyu farklı ayrıtlarından kesersek farklı açınımlar elde ederiz. Dikdörtgenler prizmasının birden fazla açınımı vardır. (s. 128)",
+   "ek": "Açınımın biçimi değişse de yüzler aynıdır: yine 6 dikdörtgen, yine 3 çift eş yüz. (s. 128)",
+   "akilda": "Biçim değişir, yüzler aynı",
+   "soru": {
+    "soru": "Ali ve Elif aynı kutuyu farklı ayrıtlarından kesip açtı. Hangisi doğrudur?",
+    "secenekler": [
+     "Açınımları aynı olmak zorundadır.",
+     "Elif'in açınımında daha çok yüz vardır.",
+     "Açınımları farklı olabilir ama ikisinde de 6 yüz vardır."
+    ],
+    "dogru": 2,
+    "ipucu": "Kesilen ayrıt değişince ne değişir: biçim mi, yüzlerin sayısı mı?",
+    "aciklama": "Farklı ayrıtlardan kesilince açınımın biçimi değişir ama kutunun 6 yüzü aynı kalır. (s. 128)"
+   }
+  },
+  {
+   "ad": "Açınım Kapanır mı?",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='28.0' y='18.0' width='14' height='14' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='14.0' y='32.0' width='14' height='14' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='28.0' y='32.0' width='14' height='14' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='42.0' y='32.0' width='14' height='14' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='28.0' y='46.0' width='14' height='14' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='28.0' y='60.0' width='14' height='14' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><path d='M74 54 l8 8 l16 -18' stroke='#5fd08f' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>6 yüz, eşler karşılıklı</text></svg>",
+   "aciklama": "Bir açınımın kapanıp kutu olması için 6 yüzü olmalı, eş yüzler karşılıklı gelmeli ve hiçbir yüz başka bir yüzün üstüne binmemeli. (s. 127–128)",
+   "ek": "Açınımda yan yana duran iki yüz, kutuda da komşu olur. Bir sırada aralarında tek bir yüz bulunan iki yüz ise kapanınca karşılıklı gelir. Kitaptaki oyunda da hangi yüzlerin karşılıklı geleceği tahmin ediliyor. (s. 127)",
+   "akilda": "6 yüz, eşler karşılıklı, binme yok",
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Görseldeki açınım kapatılınca hangi yüzler karşılıklı gelir?",
+    "svg": "<svg viewBox='0 0 330 136' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='150.0' y='8.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='28.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>1</text><rect x='150.0' y='38.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>2</text><rect x='150.0' y='68.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='88.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>3</text><rect x='150.0' y='98.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='118.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>4</text><rect x='120.0' y='38.0' width='30' height='30' fill='#ffa26b' stroke='#1b2340' stroke-width='1.8'/><text x='135.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>5</text><rect x='180.0' y='38.0' width='30' height='30' fill='#ffa26b' stroke='#1b2340' stroke-width='1.8'/><text x='195.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>6</text></svg>",
+    "adimlar": [
+     {
+      "metin": "2 numaralı yüzü taban yap. 1, 3, 5 ve 6 tabanın çevresinde duvar gibi kalkar.",
+      "soru": {
+       "soru": "4 numaralı yüz nereye gelir?",
+       "secenekler": [
+        "Tabanın karşısına, kapak olur",
+        "Tabanın yanına",
+        "Tabanın altına"
+       ],
+       "dogru": 0,
+       "ipucu": "4, 3'ün ucuna bağlı. 3 duvar olunca 4 nereye katlanır?",
+       "aciklama": "3 duvar olarak kalkınca 4 tepeye katlanır ve kapak olur: 2 ile 4 karşılıklı."
+      },
+      "islem": "2 ile 4 karşılıklı"
+     },
+     {
+      "metin": "Dik sırada 1 ile 3 arasında yalnızca 2 var.",
+      "soru": {
+       "soru": "1 numaralı yüzün karşısına hangisi gelir?",
+       "secenekler": [
+        "2",
+        "3",
+        "5"
+       ],
+       "dogru": 1,
+       "ipucu": "Bir sırada aralarında tek bir yüz olan iki yüz karşılıklı gelir.",
+       "aciklama": "1 ile 3 arasında yalnızca 2 var: 1 ile 3 karşılıklı."
+      },
+      "islem": "1 ile 3 karşılıklı"
+     },
+     {
+      "metin": "Kalan iki yüz: 5 ve 6. Yan sırada aralarında 2 var.",
+      "islem": "5 ile 6 karşılıklı"
+     }
+    ],
+    "sonuc": "Harika! Karşılıklı çiftler: 1–3, 2–4, 5–6."
+   },
+   "soru": {
+    "soru": "Görseldeki açınımlardan hangisi kapanınca bir dikdörtgenler prizması olur?",
+    "secenekler": [
+     "1. çizim",
+     "2. çizim",
+     "3. çizim"
+    ],
+    "dogru": 1,
+    "ipucu": "Önce yüzleri say: 6 mı? Sonra katlamayı hayal et: iki yüz aynı yere geliyor mu?",
+    "aciklama": "2. çizimde 6 yüz var, eş yüzler karşılıklı. 1. çizimde 5 yüz var. 3. çizimde iki yan yüz aynı tarafa düşüp üst üste biner. (s. 128)",
+    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='42.0' y='62.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='42.0' y='76.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='42.0' y='96.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='28.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='68.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><circle cx='55.0' cy='148' r='10' fill='#f2c14e'/><text x='55.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='152.0' y='62.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='152.0' y='76.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='152.0' y='96.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='152.0' y='110.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='138.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='178.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><circle cx='165.0' cy='148' r='10' fill='#f2c14e'/><text x='165.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='132' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='262.0' y='62.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='262.0' y='76.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='262.0' y='96.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='262.0' y='110.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='288.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='288.0' y='110.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><circle cx='275.0' cy='148' r='10' fill='#f2c14e'/><text x='275.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='132' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></svg>"
+   }
+  }
+ ],
+ "akildaKalsin": [
+  "Dikdörtgenler prizmasının 6 yüzünün hepsi dikdörtgendir.",
+  "Dikdörtgenler prizmasının 6 yüzü, 12 ayrıtı, 8 köşesi vardır.",
+  "Karşılıklı yüzler eştir: 3 çift eş yüz.",
+  "Kutuyu kesip düz açınca 6 dikdörtgenden oluşan bir açınım çıkar.",
+  "Bir kutunun birden fazla açınımı olabilir.",
+  "Açınım kapanınca eş yüzler karşılıklı gelmeli, yüzler üst üste binmemeli."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Kare prizma da bir dikdörtgenler prizması mı?",
+   "cevap": "Evet. Kare de özel bir dikdörtgendir. İki yüzü kare olan ilaç kutusu da bir dikdörtgenler prizmasıdır; ona kare prizma deriz. (s. 125–126)"
+  },
+  {
+   "soru": "Bir kutunun kaç farklı açınımı olur?",
+   "cevap": "Birden fazla. Hangi ayrıtları kestiğine göre açınımın biçimi değişir. Kitaptaki oyunda beş farklı açınım çiziliyor. (s. 127–128)"
+  },
+  {
+   "soru": "Açınımda aynı renkli iki yüz yan yana gelirse ne olur?",
+   "cevap": "Yan yana duran yüzler kutuda komşu olur, karşılıklı olamaz. Eş yüzler karşılıklı gelmesi gerektiği için böyle bir açınım doğru kapanmaz. (s. 127)"
+  },
+  {
+   "soru": "Kesikli çizgiler neden var?",
+   "cevap": "Kutunun arkasında kalan, bizim göremediğimiz ayrıtları gösterir. Böylece bütün ayrıtları sayabiliriz."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir açınımın kapanıp kutu olup olmayacağını nasıl kontrol edersin?",
+   "ornekCevap": "Önce yüzleri sayarım: 6 olmalı. Sonra eş yüzlerin karşılıklı gelip gelmediğine bakarım. Katlamayı hayal edip iki yüzün üst üste binip binmediğini kontrol ederim.",
+   "anahtarlar": [
+    "6",
+    "eş",
+    "karşılıklı",
+    "bin",
+    "say"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dikdörtgenler prizmasının kaç yüzü vardır?",
+   "secenekler": [
+    "6",
+    "4",
+    "8"
+   ],
+   "dogru": 0,
+   "ipucu": "Kutunun önü, arkası, iki yanı, üstü ve altı.",
+   "aciklama": "Ön, arka, sağ, sol, üst, alt: 6 yüz. (s. 128)",
+   "kavram": "Yüz, Ayrıt, Köşe"
+  },
+  {
+   "soru": "Dikdörtgenler prizmasının kaç ayrıtı vardır?",
+   "cevap": "12",
+   "ipucu": "Ön yüzün çevresi, arka yüzün çevresi ve önü arkaya bağlayan ayrıtlar.",
+   "aciklama": "Önde 4, arkada 4, önü arkaya bağlayan 4: 12 ayrıt.",
+   "kavram": "Yüz, Ayrıt, Köşe",
+   "yardim": {
+    "adimlar": [
+     "Ön yüzün çevresindeki ayrıtları say.",
+     "Arka yüzün çevresinde de aynı sayıda ayrıt var.",
+     "Önü arkaya bağlayan ayrıtları ekle."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki prizmada sarı ile gösterilen nedir?",
+   "secenekler": [
+    "Ayrıt",
+    "Yüz",
+    "Köşe"
+   ],
+   "dogru": 0,
+   "ipucu": "İki yüzün birleştiği çizgiye ne diyorduk?",
+   "aciklama": "Sarı çizgi ön yüz ile sağ yüzün birleştiği yerdir: ayrıt.",
+   "svg": "<svg viewBox='0 0 330 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='110.0,130.0 200.0,130.0 200.0,50.0 110.0,50.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='110.0,50.0 200.0,50.0 230.0,20.0 140.0,20.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='200.0,130.0 230.0,100.0 230.0,20.0 200.0,50.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M140.0 100.0 H230.0 M140.0 100.0 V20.0 M140.0 100.0 L110.0 130.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M110.0 130.0 H200.0 V50.0 H110.0 Z M110.0 50.0 L140.0 20.0 H230.0 L200.0 50.0 M230.0 20.0 V100.0 L200.0 130.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='200.0' y1='130.0' x2='200.0' y2='50.0' stroke='#f2c14e' stroke-width='5' stroke-linecap='round'/></svg>",
+   "kavram": "Yüz, Ayrıt, Köşe"
+  },
+  {
+   "soru": "Görseldeki açınımlardan hangisi bir dikdörtgenler prizmasının açınımıdır?",
+   "secenekler": [
+    "1. çizim",
+    "2. çizim",
+    "3. çizim"
+   ],
+   "dogru": 2,
+   "ipucu": "Yüzleri say. Sonra katlamayı hayal et.",
+   "aciklama": "3. çizimde 6 yüz var ve eş yüzler karşılıklı gelir. 1. çizimde yan yüzler üst üste biner, 2. çizimde bir yüz eksik. (s. 128)",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='42.0' y='62.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='42.0' y='76.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='42.0' y='96.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='42.0' y='110.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='68.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='68.0' y='110.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><circle cx='55.0' cy='148' r='10' fill='#f2c14e'/><text x='55.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='152.0' y='62.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='152.0' y='76.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='152.0' y='96.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='138.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='178.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><circle cx='165.0' cy='148' r='10' fill='#f2c14e'/><text x='165.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='132' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='262.0' y='62.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='262.0' y='76.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='262.0' y='96.0' width='26.0' height='14.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><rect x='262.0' y='110.0' width='26.0' height='20.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><rect x='248.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><rect x='288.0' y='76.0' width='14.0' height='20.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><circle cx='275.0' cy='148' r='10' fill='#f2c14e'/><text x='275.0' y='153.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='132' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></svg>",
+   "kavram": "Açınım Kapanır mı?"
+  },
+  {
+   "soru": "Açınımda aynı renkle boyanan iki yüz, kutu kapanınca nasıl durur?",
+   "secenekler": [
+    "Karşılıklı",
+    "Yan yana",
+    "Üst üste"
+   ],
+   "dogru": 0,
+   "ipucu": "Aynı renk = eş yüz. Eş yüzler kutunun neresinde?",
+   "aciklama": "Aynı renkli yüzler eştir ve kutu kapanınca karşılıklı durur. (s. 128)",
+   "kavram": "Karşılıklı Yüzler Eştir"
+  },
+  {
+   "soru": "Bir dikdörtgenler prizmasında kaç çift eş yüz vardır?",
+   "cevap": "3",
+   "ipucu": "6 yüzü ikişer ikişer eşleştir.",
+   "aciklama": "Ön-arka, üst-alt, sağ-sol: 3 çift. (s. 128)",
+   "kavram": "Karşılıklı Yüzler Eştir",
+   "yardim": {
+    "adimlar": [
+     "Karşılıklı yüzleri eşleştir: ön ile …",
+     "Kaç çift oldu?"
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki açınım kapatılınca 2 numaralı yüzün karşısına hangisi gelir?",
+   "secenekler": [
+    "1",
+    "5",
+    "4"
+   ],
+   "dogru": 2,
+   "ipucu": "Yatay sırada aralarında tek bir yüz olan iki yüz karşılıklı gelir.",
+   "aciklama": "Yatay sırada 2 ile 4 arasında yalnızca 3 var: 2 ile 4 karşılıklı. (s. 127)",
+   "svg": "<svg viewBox='0 0 330 106' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='105.0' y='38.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='120.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>1</text><rect x='135.0' y='38.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='150.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>2</text><rect x='165.0' y='38.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='180.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>3</text><rect x='195.0' y='38.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='210.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>4</text><rect x='105.0' y='8.0' width='30' height='30' fill='#ffa26b' stroke='#1b2340' stroke-width='1.8'/><text x='120.0' y='28.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>5</text><rect x='195.0' y='68.0' width='30' height='30' fill='#ffa26b' stroke='#1b2340' stroke-width='1.8'/><text x='210.0' y='88.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>6</text></svg>",
+   "kavram": "Açınım Kapanır mı?"
+  },
+  {
+   "soru": "Bir açınımda 5 dikdörtgen var. Kapatılınca ne olur?",
+   "secenekler": [
+    "Kapalı bir kutu olur.",
+    "Kutunun bir yüzü açık kalır.",
+    "İki kutu olur."
+   ],
+   "dogru": 1,
+   "ipucu": "Kapalı bir kutunun kaç yüzü vardır?",
+   "aciklama": "Kapalı kutu için 6 yüz gerekir. 5 yüzle bir yüz açık kalır. (s. 128)",
+   "kavram": "Yüzey Açınımı"
+  },
+  {
+   "soru": "Ela çikolata kutusunun açınımını çiziyor. Doğru bir çizimde hangisi olmalıdır?",
+   "secenekler": [
+    "6 dikdörtgen, 3 çift eş yüz",
+    "4 dikdörtgen, 2 kare",
+    "6 tane eş kare"
+   ],
+   "dogru": 0,
+   "ipucu": "Dikdörtgenler prizmasının yüzlerini hatırla.",
+   "aciklama": "Dikdörtgenler prizmasının açınımı 6 dikdörtgendir ve karşılıklı yüzler eştir. (s. 128)",
+   "kavram": "Yüzey Açınımı"
+  },
+  {
+   "soru": "Hangisi dikdörtgenler prizması biçiminde değildir?",
+   "secenekler": [
+    "Ayakkabı kutusu",
+    "Tuğla",
+    "Konserve kutusu"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisinin yuvarlak yüzü var?",
+   "aciklama": "Konserve kutusunun tabanları daire biçimindedir; yüzleri dikdörtgen değildir.",
+   "kavram": "Dikdörtgenler Prizması"
+  },
+  {
+   "soru": "Aynı kutunun iki farklı açınımında hangisi aynı kalır?",
+   "secenekler": [
+    "Açınımın biçimi",
+    "Yüzlerin sayısı ve büyüklüğü",
+    "Yüzlerin açınımdaki yeri"
+   ],
+   "dogru": 1,
+   "ipucu": "Kutu değişmedi, yalnızca kesilen ayrıtlar değişti.",
+   "aciklama": "Kesilen ayrıt değişince biçim değişir; yüzler aynı kalır: 6 yüz, aynı büyüklükte. (s. 128)",
+   "kavram": "Birden Fazla Açınım"
+  }
+ ]
+}

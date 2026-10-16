@@ -1,0 +1,579 @@
+{
+ "id": "u2k3",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Yüzey Alanı",
+ "sayfalar": "s. 129–133",
+ "giris": "Bir hediye kutusunu paket kâğıdıyla kaplamak için ne kadar kâğıt gerekir? Bu konuda kutunun bütün yüzlerinin alanını toplayarak yüzey alanını bulacağız. Kare prizma ve küp için kısa yolları da öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda dikdörtgenin ve karenin alanını çok kullanacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Dikdörtgenin alanı",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='36' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='20' y='52' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='20' y='68' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='36' y='36' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='36' y='52' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='36' y='68' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='52' y='36' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='52' y='52' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='52' y='68' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='68' y='36' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='68' y='52' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='68' y='68' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='84' y='36' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='84' y='52' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><rect x='84' y='68' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>5 · 3 = 15</text></svg>",
+    "anlatim": "Dikdörtgenin alanı, içine sığan birim karelerin sayısıdır. Kısa yoldan: bir kenarı diğer kenarla çarparız.",
+    "akilda": "Alan = kenar × kenar",
+    "ornek": {
+     "problem": "Kenarları 4 cm ve 3 cm olan dikdörtgenin alanı kaç cm²?",
+     "adimlar": [
+      {
+       "metin": "İki kenarı çarp.",
+       "islem": "4 · 3 = 12"
+      },
+      {
+       "metin": "Alan kare birimle yazılır.",
+       "islem": "12 cm²"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "Kenarları 5 cm ve 3 cm olan dikdörtgenin alanı kaç cm²?",
+      "cevap": "15",
+      "ipucu": "İki kenarı çarp.",
+      "aciklama": "5 · 3 = 15 cm².",
+      "birim": "cm²",
+      "yardim": {
+       "adimlar": [
+        "Dikdörtgenin alanı için iki kenarı çarparız.",
+        "5 ile 3'ü çarp."
+       ]
+      }
+     },
+     {
+      "soru": "Kenarları 6 cm ve 4 cm olan dikdörtgenin alanı kaç cm²?",
+      "cevap": "24",
+      "ipucu": "İki kenarı çarp.",
+      "aciklama": "6 · 4 = 24 cm².",
+      "birim": "cm²",
+      "yardim": {
+       "adimlar": [
+        "Dikdörtgenin alanı için iki kenarı çarparız.",
+        "6 ile 4'ü çarp."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Karenin alanı ve üs",
+    "sinif": "1. tema, 10. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='36' y='24' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='36' y='40' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='36' y='56' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='52' y='24' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='52' y='40' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='52' y='56' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='68' y='24' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='68' y='40' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><rect x='68' y='56' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>3 · 3 = 3²</text></svg>",
+    "anlatim": "Karenin kenarları eşit olduğu için alanı kenar · kenar olur. Bunu üsle kısaca a[[u:2]] diye yazarız: kenarı 3 cm olan karenin alanı 3[[u:2]] = 9 cm².",
+    "akilda": "Kare: a · a = a²",
+    "sorular": [
+     {
+      "soru": "Kenarı 4 cm olan karenin alanı kaç cm²?",
+      "cevap": "16",
+      "ipucu": "Kenarı kendisiyle çarp.",
+      "aciklama": "4 · 4 = 4[[u:2]] = 16 cm².",
+      "birim": "cm²",
+      "yardim": {
+       "adimlar": [
+        "Karenin dört kenarı eşit: alan = kenar · kenar.",
+        "4 ile 4'ü çarp."
+       ]
+      }
+     },
+     {
+      "soru": "5[[u:2]] kaçtır?",
+      "secenekler": [
+       "10",
+       "25",
+       "7"
+      ],
+      "dogru": 1,
+      "ipucu": "Üs, tabanın kaç kere çarpıldığını söyler.",
+      "aciklama": "5[[u:2]] = 5 · 5 = 25."
+     }
+    ]
+   },
+   {
+    "ad": "Alan birimleri",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='16' y1='40' x2='60' y2='40' stroke='#6fb3ff' stroke-width='4' stroke-linecap='round'/><text x='38' y='60' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>cm</text><rect x='72' y='26' width='30' height='30' fill='#2b355c' stroke='#ffa26b' stroke-width='3'/><text x='87' y='76' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#ffa26b'>cm²</text><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>uzunluk · alan</text></svg>",
+    "anlatim": "Uzunluk cm, m gibi birimlerle ölçülür. Alan ise kare birimlerle ölçülür: cm², m². Küçük ² işareti “kare” diye okunur.",
+    "akilda": "Uzunluk cm, alan cm²",
+    "sorular": [
+     {
+      "soru": "Bir kutunun bir yüzünün alanı hangisi gibi yazılır?",
+      "secenekler": [
+       "20 cm",
+       "20 cm²",
+       "20 kg"
+      ],
+      "dogru": 1,
+      "ipucu": "Alan kare birimle yazılır.",
+      "aciklama": "Alan cm², m² gibi kare birimlerle yazılır."
+     },
+     {
+      "soru": "Hangisi bir uzunluktur?",
+      "secenekler": [
+       "8 m",
+       "8 m²",
+       "8 kg"
+      ],
+      "dogru": 0,
+      "ipucu": "Kare işareti olmayan uzunluk birimini ara.",
+      "aciklama": "m bir uzunluk birimidir; m² alan birimidir."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Yüzey Alanı",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='18.0,96.0 74.0,96.0 74.0,50.0 18.0,50.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='18.0,50.0 74.0,50.0 94.0,30.0 38.0,30.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='74.0,96.0 94.0,76.0 94.0,30.0 74.0,50.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M38.0 76.0 H94.0 M38.0 76.0 V30.0 M38.0 76.0 L18.0 96.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M18.0 96.0 H74.0 V50.0 H18.0 Z M18.0 50.0 L38.0 30.0 H94.0 L74.0 50.0 M94.0 30.0 V76.0 L74.0 96.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><path d='M46 50 V96 M18 73 H74' stroke='#ff8fab' stroke-width='5'/><path d='M46 50 l-10 -10 M46 50 l10 -10' stroke='#ff8fab' stroke-width='4' stroke-linecap='round'/><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>bütün yüzleri kapla</text></svg>",
+   "aciklama": "Bir cismin bütün yüzlerinin alanlarının toplamına yüzey alanı denir. (s. 129)",
+   "ek": "Yusuf Öğretmen hediye kutusunu paket kâğıdıyla kaplayacak. Gereken en az kâğıt, kutunun yüzey alanı kadardır. Yüzey alanı bir alan olduğu için cm², m² gibi kare birimlerle yazılır. (s. 129)",
+   "akilda": "Bütün yüzleri kaplamak",
+   "soru": {
+    "soru": "Hediye kutusunu paket kâğıdıyla tamamen kaplamak için neyi bulmalıyız?",
+    "secenekler": [
+     "Kutunun yüzey alanını",
+     "Kutunun ağırlığını",
+     "Kutunun yüksekliğini"
+    ],
+    "dogru": 0,
+    "ipucu": "Kaplamak, bütün yüzlerin üstünü örtmek demek.",
+    "aciklama": "Bütün yüzlerin alanları toplamı yüzey alanıdır; gereken en az kâğıt bu kadardır. (s. 129)"
+   }
+  },
+  {
+   "ad": "Üç Çift Eş Yüz",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='46.0' y='8.0' width='28.0' height='16.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='60.0' y='18.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#1b2340'>a·b</text><rect x='46.0' y='24.0' width='28.0' height='22.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='60.0' y='37.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#1b2340'>a·c</text><rect x='46.0' y='46.0' width='28.0' height='16.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='60.0' y='56.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#1b2340'>a·b</text><rect x='46.0' y='62.0' width='28.0' height='22.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='60.0' y='75.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#1b2340'>a·c</text><rect x='30.0' y='24.0' width='16.0' height='22.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='38.0' y='37.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#1b2340'>b·c</text><rect x='74.0' y='24.0' width='16.0' height='22.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='82.0' y='37.9' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='8' fill='#1b2340'>b·c</text></svg>",
+   "aciklama": "Ayrıtları a, b ve c olan bir dikdörtgenler prizmasında yüzlerin alanları a · b, a · c ve b · c'dir. Her birinden ikişer tane vardır. (s. 129)",
+   "ek": "Karşılıklı yüzler eş olduğu için 6 yüzün alanını tek tek hesaplamak gerekmez: 3 farklı yüzü bulmak yeter. (s. 129)",
+   "akilda": "3 farklı yüz, ikişer tane",
+   "cozum": {
+    "baslik": "Hediye kutusu",
+    "problem": "Yusuf Öğretmen'in hediye kutusunun ayrıtları 20 cm, 25 cm ve 30 cm. Üç farklı yüzün alanını bulalım.",
+    "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='95.0,154.0 195.0,154.0 195.0,64.0 95.0,64.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='95.0,64.0 195.0,64.0 235.0,24.0 135.0,24.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='195.0,154.0 235.0,114.0 235.0,24.0 195.0,64.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M135.0 114.0 H235.0 M135.0 114.0 V24.0 M135.0 114.0 L95.0 154.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M95.0 154.0 H195.0 V64.0 H95.0 Z M95.0 64.0 L135.0 24.0 H235.0 L195.0 64.0 M235.0 24.0 V114.0 L195.0 154.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='95.0' y1='154.0' x2='195.0' y2='154.0' stroke='#5fd08f' stroke-width='3.5'/><text x='145.0' y='170.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>20 cm</text><line x1='95.0' y1='154.0' x2='95.0' y2='64.0' stroke='#f783ac' stroke-width='3.5'/><text x='90.0' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>30 cm</text><line x1='195.0' y1='154.0' x2='235.0' y2='114.0' stroke='#b197fc' stroke-width='3.5'/><text x='221.0' y='143.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>25 cm</text></svg>",
+    "adimlar": [
+     {
+      "metin": "En ile boyun yaptığı yüz (üst ve alt).",
+      "islem": "20 · 25 = 500"
+     },
+     {
+      "metin": "En ile yüksekliğin yaptığı yüz (ön ve arka).",
+      "islem": "20 · 30 = 600"
+     },
+     {
+      "metin": "Boy ile yüksekliğin yaptığı yüz (sağ ve sol).",
+      "islem": "25 · 30 = 750"
+     }
+    ],
+    "sonuc": "Kutuda 500 cm², 600 cm² ve 750 cm²'lik yüzlerden ikişer tane var. (s. 129)"
+   },
+   "soru": {
+    "soru": "Ayrıtları 2 cm, 3 cm ve 4 cm olan bir kutunun en büyük yüzünün alanı kaç cm²?",
+    "cevap": "12",
+    "ipucu": "Üç farklı yüz: 2 · 3, 2 · 4 ve 3 · 4. Hangisi en büyük?",
+    "aciklama": "Yüzler 6, 8 ve 12 cm². En büyüğü 3 · 4 = 12 cm². (s. 129)",
+    "birim": "cm²",
+    "yardim": {
+     "adimlar": [
+      "Üç farklı yüzün alanını bul: 2 · 3, 2 · 4, 3 · 4.",
+      "Üç sonucu karşılaştır."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Yüzey Alanı Formülü",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#ffd166'>2 · (a·b</text><text x='60' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#6fb3ff'>+ a·c</text><text x='60' y='86' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#ff8fab'>+ b·c)</text><text x='60' y='110' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>üçünü topla, 2 ile çarp</text></svg>",
+   "aciklama": "Ayrıtları a, b ve c olan dikdörtgenler prizmasının yüzey alanı = 2 · (a · b + a · c + b · c). (s. 129)",
+   "ek": "Üç farklı yüzün alanını topla, sonucu 2 ile çarp. Her yüzden iki tane olduğu için 2 ile çarparız. (s. 129)",
+   "akilda": "Üçünü topla, 2 ile çarp",
+   "cozum": {
+    "baslik": "Kaç cm² kâğıt?",
+    "problem": "Hediye kutusunun yüzleri 500 cm², 600 cm² ve 750 cm². Yusuf Öğretmen'e en az kaç cm² paket kâğıdı gerekir?",
+    "adimlar": [
+     {
+      "metin": "Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı."
+     },
+     {
+      "metin": "Üç farklı yüzü topla.",
+      "islem": "500 + 600 + 750 = 1850"
+     },
+     {
+      "metin": "Her yüzden iki tane var: 2 ile çarp.",
+      "islem": "2 · 1850 = 3700"
+     }
+    ],
+    "sonuc": "En az 3700 cm² paket kâğıdı gerekir. (s. 129)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Ayrıtları 2 cm, 3 cm ve 4 cm olan bir kutunun yüzey alanını bul.",
+    "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='110.0,154.0 180.0,154.0 180.0,54.0 110.0,54.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='110.0,54.0 180.0,54.0 220.0,14.0 150.0,14.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='180.0,154.0 220.0,114.0 220.0,14.0 180.0,54.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M150.0 114.0 H220.0 M150.0 114.0 V14.0 M150.0 114.0 L110.0 154.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M110.0 154.0 H180.0 V54.0 H110.0 Z M110.0 54.0 L150.0 14.0 H220.0 L180.0 54.0 M220.0 14.0 V114.0 L180.0 154.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='110.0' y1='154.0' x2='180.0' y2='154.0' stroke='#5fd08f' stroke-width='3.5'/><text x='145.0' y='170.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>2 cm</text><line x1='110.0' y1='154.0' x2='110.0' y2='54.0' stroke='#f783ac' stroke-width='3.5'/><text x='105.0' y='109.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>4 cm</text><line x1='180.0' y1='154.0' x2='220.0' y2='114.0' stroke='#b197fc' stroke-width='3.5'/><text x='206.0' y='143.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>3 cm</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Üç farklı yüzün alanı: 2 · 3, 2 · 4 ve 3 · 4.",
+      "soru": {
+       "soru": "6 + 8 + 12 kaçtır?",
+       "cevap": "26",
+       "ipucu": "Önce 6 ile 8'i topla, sonra 12 ekle.",
+       "aciklama": "6 + 8 = 14, 14 + 12 = 26.",
+       "yardim": {
+        "adimlar": [
+         "6 ile 8'i topla.",
+         "Çıkan sayıya 12 ekle."
+        ]
+       }
+      },
+      "islem": "6 + 8 + 12 = 26"
+     },
+     {
+      "metin": "Her yüzden iki tane var.",
+      "soru": {
+       "soru": "2 · 26 kaçtır?",
+       "cevap": "52",
+       "ipucu": "26'yı iki kere topla.",
+       "aciklama": "26 + 26 = 52.",
+       "yardim": {
+        "adimlar": [
+         "2 · 26, iki tane 26 demek.",
+         "26 ile 26'yı topla."
+        ]
+       }
+      },
+      "islem": "2 · 26 = 52 cm²"
+     }
+    ],
+    "sonuc": "Harika! Kutunun yüzey alanı 52 cm²."
+   },
+   "soru": {
+    "soru": "Ayrıtları a, b ve c olan dikdörtgenler prizmasının yüzey alanı hangisidir?",
+    "secenekler": [
+     "a · b · c",
+     "a + b + c",
+     "2 · (a · b + a · c + b · c)"
+    ],
+    "dogru": 2,
+    "ipucu": "Üç farklı yüzün alanını topla, 2 ile çarp.",
+    "aciklama": "Yüzler a · b, a · c, b · c; ikişer tane. 2 · (a · b + a · c + b · c). (s. 129)"
+   }
+  },
+  {
+   "ad": "Kare Prizma",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='40.0,92.0 70.0,92.0 70.0,36.0 40.0,36.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='40.0,36.0 70.0,36.0 85.0,21.0 55.0,21.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='70.0,92.0 85.0,77.0 85.0,21.0 70.0,36.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M55.0 77.0 H85.0 M55.0 77.0 V21.0 M55.0 77.0 L40.0 92.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M40.0 92.0 H70.0 V36.0 H40.0 Z M40.0 36.0 L55.0 21.0 H85.0 L70.0 36.0 M85.0 21.0 V77.0 L70.0 92.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><polygon points='40,36 70,36 85.0,21.0 55.0,21.0' fill='#ffd166' fill-opacity='0.75'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='9' fill='#f2c14e'>2 kare + 4 dikdörtgen</text></svg>",
+   "aciklama": "İki karşılıklı yüzü kare olan dikdörtgenler prizmasına kare prizma denir. Kare prizma, dikdörtgenler prizmasının özel bir durumudur. (s. 131)",
+   "ek": "Kitaptaki şurup kutusu kare prizmadır. Taban kenarı a, yüksekliği b ise: yüzey alanı = 2 · a[[u:2]] + 4 · a · b. (s. 130–131)",
+   "akilda": "2 kare + 4 eş dikdörtgen",
+   "cozum": {
+    "baslik": "Şurup kutusu",
+    "problem": "Tabanı kenarı 3 cm olan kare, yüksekliği 10 cm olan bir şurup kutusunun yüzey alanını bulalım.",
+    "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='127.5,154.0 177.5,154.0 177.5,34.0 127.5,34.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='127.5,34.0 177.5,34.0 202.5,9.0 152.5,9.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='177.5,154.0 202.5,129.0 202.5,9.0 177.5,34.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M152.5 129.0 H202.5 M152.5 129.0 V9.0 M152.5 129.0 L127.5 154.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M127.5 154.0 H177.5 V34.0 H127.5 Z M127.5 34.0 L152.5 9.0 H202.5 L177.5 34.0 M202.5 9.0 V129.0 L177.5 154.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='127.5' y1='154.0' x2='177.5' y2='154.0' stroke='#5fd08f' stroke-width='3.5'/><text x='152.5' y='170.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>3 cm</text><line x1='127.5' y1='154.0' x2='127.5' y2='34.0' stroke='#f783ac' stroke-width='3.5'/><text x='122.5' y='99.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>10 cm</text><line x1='177.5' y1='154.0' x2='202.5' y2='129.0' stroke='#b197fc' stroke-width='3.5'/><text x='196.0' y='150.5' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>3 cm</text></svg>",
+    "adimlar": [
+     {
+      "metin": "İki kare yüz: 3 · 3 = 9. İki tane.",
+      "islem": "2 · 9 = 18"
+     },
+     {
+      "metin": "Dört eş dikdörtgen yüz: 3 · 10 = 30. Dört tane.",
+      "islem": "4 · 30 = 120"
+     },
+     {
+      "metin": "Topla.",
+      "islem": "18 + 120 = 138"
+     }
+    ],
+    "sonuc": "Şurup kutusunun yüzey alanı 138 cm². (s. 131)"
+   },
+   "soru": {
+    "soru": "Tabanı kenarı 2 cm olan kare, yüksekliği 5 cm olan kare prizmanın yüzey alanı kaç cm²?",
+    "cevap": "48",
+    "ipucu": "İki kare yüz: 2 · 2. Dört eş dikdörtgen yüz: 2 · 5.",
+    "aciklama": "2 · 4 = 8 ve 4 · 10 = 40. 8 + 40 = 48 cm². (s. 131)",
+    "birim": "cm²",
+    "yardim": {
+     "adimlar": [
+      "İki kare yüz: 2 · 2, iki tane.",
+      "Dört eş dikdörtgen yüz: 2 · 5, dört tane.",
+      "İki sonucu topla."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Küp",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='26.0,92.0 76.0,92.0 76.0,42.0 26.0,42.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='26.0,42.0 76.0,42.0 101.0,17.0 51.0,17.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='76.0,92.0 101.0,67.0 101.0,17.0 76.0,42.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M51.0 67.0 H101.0 M51.0 67.0 V17.0 M51.0 67.0 L26.0 92.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M26.0 92.0 H76.0 V42.0 H26.0 Z M26.0 42.0 L51.0 17.0 H101.0 L76.0 42.0 M101.0 17.0 V67.0 L76.0 92.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f2c14e'>6 · a²</text></svg>",
+   "aciklama": "Bütün yüzleri eş kare olan prizmaya küp denir. Küpün yüzey alanı = 6 · a[[u:2]]. (s. 131)",
+   "ek": "Küp de dikdörtgenler prizmasının özel bir durumudur: üç ayrıtı da eşittir. 6 yüzün hepsi aynı karedir. (s. 131)",
+   "akilda": "6 eş kare: 6 · a²",
+   "soru": {
+    "soru": "Bir ayrıtı 2 cm olan küpün yüzey alanı kaç cm²?",
+    "cevap": "24",
+    "ipucu": "Bir yüzün alanı 2 · 2. Küpün kaç yüzü var?",
+    "aciklama": "Bir yüz 2 · 2 = 4 cm². 6 yüz: 6 · 4 = 24 cm². (s. 131)",
+    "birim": "cm²",
+    "yardim": {
+     "adimlar": [
+      "Bir yüzün alanı: 2 · 2.",
+      "Küpün 6 eş yüzü var: bir yüzün alanını 6 ile çarp."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Hangi Yüzler Kaplanacak?",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M20 50 L60 30 L100 50 L60 70 Z' fill='none' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='4 3'/><path d='M20 50 V86 L60 106 L100 86 V50 L60 70 Z' fill='#33406e' stroke='#f5f6fa' stroke-width='2'/><path d='M60 70 V106' stroke='#f5f6fa' stroke-width='2'/><text x='60' y='22' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>kapak yok</text></svg>",
+   "aciklama": "Problemde önce sor: Kaplamak mı istiyorum, doldurmak mı? Kaplamaksa yüzey alanını bulurum. Sonra kaç yüzün kaplanacağını sayarım.",
+   "ek": "Kapaksız bir kutuda üst yüz yoktur; yalnızca 5 yüz kaplanır. Kitaptaki marangoz ise blokların bütün yüzlerini koruyucu malzemeyle kaplıyor. (s. 133)",
+   "akilda": "Kaplamak = yüzey alanı; yüzleri say",
+   "sende": {
+    "baslik": "Kapaksız kutu",
+    "problem": "Tabanı 10 cm × 10 cm, yüksekliği 5 cm olan kapaksız bir kutunun dışı boyanacak. Kaç cm² boyanır?",
+    "adimlar": [
+     {
+      "metin": "Kaplamak mı, doldurmak mı? Boyamak bir kaplamadır. Kapak yok.",
+      "soru": {
+       "soru": "Kaç yüz boyanır?",
+       "cevap": "5",
+       "ipucu": "Kutunun 6 yüzü var; biri eksik.",
+       "aciklama": "Kapak yok: 6 − 1 = 5 yüz (taban ve 4 yan yüz).",
+       "yardim": {
+        "adimlar": [
+         "Kapalı bir kutunun kaç yüzü var?",
+         "Kapak yoksa bir yüz eksik."
+        ]
+       }
+      },
+      "islem": "taban + 4 yan yüz"
+     },
+     {
+      "metin": "Taban: 10 · 10.",
+      "islem": "100"
+     },
+     {
+      "metin": "Yan yüzlerin her biri 10 · 5 = 50. Dört tane.",
+      "soru": {
+       "soru": "4 · 50 kaçtır?",
+       "cevap": "200",
+       "ipucu": "4 tane 50'yi topla.",
+       "aciklama": "4 · 50 = 200.",
+       "yardim": {
+        "adimlar": [
+         "4 · 50, dört tane 50 demek.",
+         "50 + 50 + 50 + 50"
+        ]
+       }
+      },
+      "islem": "4 · 50 = 200"
+     },
+     {
+      "metin": "Topla.",
+      "islem": "100 + 200 = 300 cm²"
+     }
+    ],
+    "sonuc": "Harika! 300 cm² boyanır."
+   },
+   "soru": {
+    "soru": "Ayrıtı 10 cm olan küp şeklindeki bir kutunun bütün yüzleri boyanacak. Boyanacak alanı hangi işlem verir?",
+    "secenekler": [
+     "6 · 10 · 10",
+     "4 · 10",
+     "10 · 10 · 10"
+    ],
+    "dogru": 0,
+    "ipucu": "Boyamak = kaplamak. Küpün kaç yüzü var, bir yüzün alanı ne?",
+    "aciklama": "Bir yüz 10 · 10; 6 yüz var: 6 · 10 · 10 = 600 cm². (s. 131)"
+   }
+  }
+ ],
+ "akildaKalsin": [
+  "Yüzey alanı, bütün yüzlerin alanlarının toplamıdır.",
+  "Karşılıklı yüzler eş: 3 farklı yüzü bul, ikişer tane say.",
+  "Dikdörtgenler prizması: 2 · (a · b + a · c + b · c).",
+  "Kare prizma: 2 · a² + 4 · a · b. Küp: 6 · a².",
+  "Yüzey alanı kare birimle yazılır: cm², m².",
+  "Önce sor: Kaplamak mı, doldurmak mı? Kaç yüz kaplanacak?"
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Açınımın alanı ile yüzey alanı aynı mı?",
+   "cevap": "Evet. Açınım, kutunun bütün yüzlerinin düz yere serilmiş hâlidir. Açınımın alanı kutunun yüzey alanına eşittir. (s. 129)"
+  },
+  {
+   "soru": "Neden 2 ile çarpıyoruz?",
+   "cevap": "Karşılıklı yüzler eş olduğu için her yüzden iki tane var. Üç farklı yüzü toplayınca kutunun yarısını bulmuş oluruz; 2 ile çarpınca tamamı çıkar. (s. 129)"
+  },
+  {
+   "soru": "Küpü ortadan kesince yüzey alanı değişir mi?",
+   "cevap": "Kitaptaki marangoz uzun bir bloğu ortadan kesip iki küp yapıyor. Kesilen yerde iki yeni yüz ortaya çıkar; bu yüzden iki küpün toplam yüzey alanı, bloğunkinden büyük olur. (s. 133)"
+  },
+  {
+   "soru": "Kare prizmada 2 kare mi, 4 kare mi var?",
+   "cevap": "Kare prizmanın iki karşılıklı yüzü kare, diğer dört yüzü eş dikdörtgendir. Dört yüz de kare olsaydı küp olurdu. (s. 131)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Can, ayrıtları 2 cm, 3 cm ve 5 cm olan kutunun yüzey alanını 2 · 3 + 2 · 5 + 3 · 5 = 31 cm² buldu. Hatası ne? Doğru sonucu bul.",
+   "ornekCevap": "Can üç farklı yüzü topladı ama 2 ile çarpmayı unuttu. Her yüzden iki tane var: 2 · 31 = 62 cm².",
+   "anahtarlar": [
+    "2 ile çarp",
+    "iki",
+    "62",
+    "unut"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Ayrıtları 2 cm, 3 cm ve 5 cm olan dikdörtgenler prizmasının yüzey alanı kaç cm²?",
+   "cevap": "62",
+   "ipucu": "Üç farklı yüz: 2 · 3, 2 · 5, 3 · 5. Topla, 2 ile çarp.",
+   "aciklama": "Yüzler 6, 10, 15. 6 + 10 + 15 = 31. 2 · 31 = 62 cm². (s. 129)",
+   "birim": "cm²",
+   "kavram": "Yüzey Alanı Formülü",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Yüzey alanı soruluyor.",
+     "Üç farklı yüzün alanını bul: 2 · 3, 2 · 5, 3 · 5.",
+     "Üçünü topla.",
+     "Toplamı 2 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Bir ayrıtı 5 cm olan küpün yüzey alanı kaç cm²?",
+   "cevap": "150",
+   "ipucu": "Bir yüzün alanını bul, 6 ile çarp.",
+   "aciklama": "Bir yüz 5 · 5 = 25 cm². 6 · 25 = 150 cm². (s. 131)",
+   "birim": "cm²",
+   "kavram": "Küp",
+   "yardim": {
+    "adimlar": [
+     "Küpün bir yüzü kare: 5 · 5.",
+     "Küpün 6 eş yüzü var.",
+     "Bir yüzün alanını 6 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki açınımda yüzlerin alanları cm² olarak yazılmıştır. Kutunun yüzey alanı kaç cm²?",
+   "secenekler": [
+    "26",
+    "52",
+    "48"
+   ],
+   "dogru": 1,
+   "ipucu": "Açınımdaki altı sayıyı topla.",
+   "aciklama": "8 + 8 + 12 + 12 + 6 + 6 = 52 cm². Açınımın alanı yüzey alanına eşittir. (s. 129)",
+   "svg": "<svg viewBox='0 0 330 200' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='125.0' y='10.0' width='80.0' height='40.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='35.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>8</text><rect x='125.0' y='50.0' width='80.0' height='50.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='80.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>12</text><rect x='125.0' y='100.0' width='80.0' height='40.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='125.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>8</text><rect x='125.0' y='140.0' width='80.0' height='50.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='170.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>12</text><rect x='85.0' y='50.0' width='40.0' height='50.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='105.0' y='80.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>6</text><rect x='205.0' y='50.0' width='40.0' height='50.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='225.0' y='80.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>6</text></svg>",
+   "kavram": "Üç Çift Eş Yüz"
+  },
+  {
+   "soru": "Tabanı kenarı 4 cm olan kare, yüksekliği 5 cm olan kare prizmanın yüzey alanı kaç cm²?",
+   "cevap": "112",
+   "ipucu": "İki kare yüz: 4 · 4. Dört eş dikdörtgen yüz: 4 · 5.",
+   "aciklama": "2 · 16 = 32 ve 4 · 20 = 80. 32 + 80 = 112 cm². (s. 131)",
+   "birim": "cm²",
+   "kavram": "Kare Prizma",
+   "yardim": {
+    "adimlar": [
+     "İki kare yüzün alanı: 4 · 4, iki tane.",
+     "Dört eş dikdörtgen yüzün alanı: 4 · 5, dört tane.",
+     "İki sonucu topla."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi yüzey alanı için uygun bir birimdir?",
+   "secenekler": [
+    "cm",
+    "kg",
+    "cm²"
+   ],
+   "dogru": 2,
+   "ipucu": "Yüzey alanı bir alandır. Alan hangi birimle yazılır?",
+   "aciklama": "Alan kare birimle yazılır: cm². (s. 129)",
+   "kavram": "Yüzey Alanı"
+  },
+  {
+   "soru": "Bir dikdörtgenler prizmasının birbirinden farklı üç yüzünün alanları 20 cm², 30 cm² ve 40 cm²'dir. Yüzey alanı kaç cm²'dir?",
+   "secenekler": [
+    "90",
+    "120",
+    "180"
+   ],
+   "dogru": 2,
+   "ipucu": "Her yüzden kaç tane var?",
+   "aciklama": "Her yüzden iki tane var: 2 · (20 + 30 + 40) = 180 cm². (s. 132)",
+   "kavram": "Üç Çift Eş Yüz"
+  },
+  {
+   "soru": "Tabanı 6 cm × 4 cm, yüksekliği 3 cm olan kapaksız bir kutunun dışı kâğıtla kaplanacak. Kaç cm² kâğıt gerekir?",
+   "cevap": "84",
+   "ipucu": "Kapak yok: taban + 4 yan yüz. Ön-arka 6 · 3, sağ-sol 4 · 3.",
+   "aciklama": "Taban 6 · 4 = 24. Ön ve arka 2 · 18 = 36. Sağ ve sol 2 · 12 = 24. 24 + 36 + 24 = 84 cm².",
+   "birim": "cm²",
+   "kavram": "Hangi Yüzler Kaplanacak?",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Kaplamak. Kapak yok: kaç yüz kaplanacak?",
+     "Tabanın alanı: 6 · 4.",
+     "Ön ve arka: 6 · 3, iki tane. Sağ ve sol: 4 · 3, iki tane.",
+     "Hepsini topla."
+    ]
+   }
+  },
+  {
+   "soru": "Bir küpün bütün ayrıtlarının uzunlukları toplamı 60 cm'dir. Bu küpün yüzey alanı kaç cm²'dir?",
+   "secenekler": [
+    "150",
+    "60",
+    "360"
+   ],
+   "dogru": 0,
+   "ipucu": "Küpün 12 eş ayrıtı var. Önce bir ayrıtı bul.",
+   "aciklama": "Bir ayrıt 60 ÷ 12 = 5 cm. Yüzey alanı 6 · 5 · 5 = 150 cm². (s. 132)",
+   "kavram": "Küp",
+   "yardim": {
+    "adimlar": [
+     "Küpün 12 ayrıtı var ve hepsi eşit.",
+     "Bir ayrıt: 60 ÷ 12.",
+     "Bir yüzün alanını bul, 6 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "Küp bir dikdörtgenler prizmasıdır.",
+    "Kare prizmanın bütün yüzleri karedir.",
+    "Küpün yüzleri farklı büyüklüktedir."
+   ],
+   "dogru": 0,
+   "ipucu": "Kare özel bir dikdörtgendir. Küpün yüzleri ne şekildedir?",
+   "aciklama": "Küp ve kare prizma, dikdörtgenler prizmasının özel durumlarıdır. (s. 131)",
+   "kavram": "Kare Prizma"
+  },
+  {
+   "soru": "Ela ayrıtları 10 cm, 10 cm ve 20 cm olan bir kutuyu paket kâğıdıyla kaplayacak. En az kaç cm² kâğıt gerekir?",
+   "cevap": "1000",
+   "ipucu": "Kaplamak = yüzey alanı. Üç farklı yüz: 10 · 10, 10 · 20, 10 · 20.",
+   "aciklama": "Yüzler 100, 200, 200. Toplam 500. 2 · 500 = 1000 cm². (s. 129)",
+   "birim": "cm²",
+   "kavram": "Yüzey Alanı",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı.",
+     "Üç farklı yüzün alanı: 10 · 10, 10 · 20, 10 · 20.",
+     "Üçünü topla.",
+     "Toplamı 2 ile çarp."
+    ]
+   }
+  }
+ ]
+}

@@ -3533,8 +3533,931 @@ def u1t5():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12] + TARAMALAR
+# =================================================================
+# 2. TEMA: GEOMETRİK NİCELİKLER
+# Çizim yardımcıları t2_cizim.py'de (eş küp yapıları, görünümler, prizma, açınım).
+# Görünüm cevapları küp koordinatlarından hesaplanır (gor()); seçenekler birbirinden farklı mı diye assert edilir.
+# Kitap dışı kararlar (Kemal'e bildirildi): ayrıt renkleri (en yeşil, boy mor, yükseklik pembe), geometri problem iskeleti
+# (Kaplamak mı, doldurmak mı? / Ölçüler, birimler / Formül / Hesapla + birim), 6-12-8 sayıları (EBA 6. sınıf), açınımda karşı yüz stratejisi.
+from t2_cizim import (EN, BOY, YUK, KUP, YUZ, ACIK, SOLUK, gsvg, kupler, yapi, yapi_boyut, gor, izgara, izgara_orta,
+                      prizma, acinim, kare_ag, kare_ag_orta, _t as t2t)
+
+T2 = "2. Tema: Geometrik Nicelikler"
+TEAL = "#4fc3a1"
+
+
+def secenekler(cizimler, w=330, h=150):
+    """n seçenek paneli (1, 2, 3, 4 numaralı) yan yana; cizimler[i](cx, alt) → svg parçası."""
+    n = len(cizimler); g = ""
+    for k, f in enumerate(cizimler):
+        cx = w / (2 * n) + k * w / n
+        g += f(cx, h - 30)
+        g += f"<circle cx='{cx:.1f}' cy='{h - 12}' r='10' fill='#f2c14e'/>" + t2t(cx, h - 7, str(k + 1), "#1b2340", 13)
+        if k:
+            g += f"<line x1='{k * w / n:.1f}' y1='8' x2='{k * w / n:.1f}' y2='{h - 28}' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/>"
+    return g
+
+
+def sec_svg(cizimler, w=330, h=150):
+    return gsvg(w, h, secenekler(cizimler, w, h))
+
+
+def ust_alt_svg(ust, cizimler, w=330, h_ust=130, h_alt=130, baslik=None):
+    """Üstte bir çizim (yapı ya da görünüm), altında numaralı seçenekler."""
+    g = ust(w / 2, h_ust - 22)
+    if baslik:
+        g += t2t(w / 2, 16, baslik, SOLUK, 12, 700)
+    g += f"<line x1='10' y1='{h_ust - 2}' x2='{w - 10}' y2='{h_ust - 2}' stroke='#3a4570' stroke-width='1.5'/>"
+    g += f"<g transform='translate(0 {h_ust})'>" + secenekler(cizimler, w, h_alt) + "</g>"
+    return gsvg(w, h_ust + h_alt, g)
+
+
+def gorunum_cizimi(kareler, s=22, renk=TEAL):
+    return lambda cx, alt: izgara_orta(kareler, cx, alt, s, renk)
+
+
+def yapi_cizimi(kup, s=24, yonler=False):
+    return lambda cx, alt: yapi(kup, cx, alt, s, yonler)
+
+
+def ayrik(*kumeler):
+    assert len(set(kumeler)) == len(kumeler), "seçenekler birbirinden farklı olmalı"
+    return kumeler
+
+
+# ---------- Eş küp yapıları (i sağa, j arkaya, k yukarı) ----------
+Y_L = [(0, 0, 0), (1, 0, 0), (2, 0, 0), (0, 0, 1)]                       # 3 yan yana + solda üstte 1
+Y_KOSE = [(0, 0, 0), (1, 0, 0), (1, 1, 0), (0, 0, 1)]                    # L taban (arka sağda 1) + önde solda üstte 1
+Y_SAKLI = [(0, 0, 0), (1, 0, 0), (0, 1, 0), (1, 1, 0), (0, 1, 1)]          # 2×2 taban + arka solda üstte 1 (altındaki küp saklı)
+Y_MERDIVEN = [(0, 0, 0), (1, 0, 0), (1, 0, 1), (2, 0, 0), (2, 0, 1), (2, 0, 2)]
+Y_ARTI = [(0, 0, 0), (1, 0, 0), (2, 0, 0), (1, 1, 0), (1, 0, 1)]
+Y_IKI_KAT = [(0, 0, 0), (1, 0, 0), (0, 1, 0), (1, 1, 0), (0, 1, 1), (1, 1, 1)]
+Y_SIRA3 = [(0, 0, 0), (0, 1, 0), (0, 2, 0)]                               # arka arkaya 3 küp
+Y_IKILI = [(0, 0, 0), (1, 0, 0)]
+Y_UCLU = [(0, 0, 0), (1, 0, 0), (2, 0, 0)]
+Y_BLOK4 = [(0, 0, 0), (1, 0, 0), (0, 1, 0), (1, 1, 0)]
+
+assert len(gor(Y_L, "on")) == 4 and len(gor(Y_L, "ust")) == 3 and len(gor(Y_L, "sag")) == 2
+assert len(gor(Y_KOSE, "on")) == 3 and len(gor(Y_SAKLI, "on")) == 3
+assert len(gor(Y_ARTI, "on")) == 4 and len(gor(Y_SIRA3, "on")) == 1
+
+
+# ---------- Kavram ve hazırlık çizimleri (120 × 120) ----------
+def svg2_yonler():
+    g = kupler([(0, 0, 0)], 40, 82, 34)
+    g += txt(57, 30, "Üst", "#f2c14e", 11) + txt(57, 112, "Ön", "#f5f6fa", 11) + txt(20, 70, "Sol", "#f5f6fa", 11)
+    g += txt(102, 64, "Sağ", "#f5f6fa", 11) + txt(94, 22, "Arka", "#f2c14e", 11)
+    g += "<path d='M57 34 v8 M57 98 v-6 M28 66 h8 M92 60 h-6' stroke='#f5f6fa' stroke-width='2' stroke-linecap='round'/>"
+    return bg(g)
+
+
+def svg2_kare_goster():
+    g = kupler(Y_KOSE, 10, 92, 18)
+    g += "<path d='M67 66 h10' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M80 66l-6-4v8z' fill='#f2c14e'/>"
+    g += izgara(gor(Y_KOSE, "on"), 84, 92, 14, TEAL)
+    g += txt(60, 112, "önden 3 kare", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg2_sakli():
+    g = kupler([(0, 1, 0)], 30, 84, 30, renk=("#5a6280", "#3a4570", "#2b355c"))
+    g += kupler([(0, 0, 0)], 30, 84, 30)
+    g += "<path d='M74 44 l14 -14' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='4 3'/>" + txt(98, 26, "?", "#f2c14e", 20)
+    g += txt(60, 108, "arkada saklı küp", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg2_cizim():
+    g = "".join(f"<line x1='{14 + i * 13}' y1='16' x2='{14 + i * 13}' y2='100' stroke='#2f3a63' stroke-width='1'/>" for i in range(8))
+    g += "".join(f"<line x1='14' y1='{16 + i * 12}' x2='105' y2='{16 + i * 12}' stroke='#2f3a63' stroke-width='1'/>" for i in range(8))
+    g += izgara(gor(Y_L, "on"), 27, 88, 13, TEAL)
+    g += "<path d='M84 70 l14 -26 l4 4z' fill='#f2c14e'/><path d='M84 70 l3 -6 4 4z' fill='#f5f6fa'/>"
+    g += txt(60, 114, "kareli kâğıda çiz", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg2_simetri():
+    on = gor(Y_MERDIVEN, "on"); arka = gor(Y_MERDIVEN, "arka")
+    g = izgara(on, 10, 84, 14, TEAL) + izgara(arka, 68, 84, 14, "#ffa26b")
+    g += "<line x1='60' y1='20' x2='60' y2='92' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='5 4'/>"
+    g += txt(31, 104, "ön", TEAL, 12) + txt(89, 104, "arka", "#ffa26b", 12)
+    return bg(g)
+
+
+def svg2_gorunumden():
+    g = izgara(frozenset({(0, 0), (0, 1), (1, 0)}), 10, 60, 14, TEAL) + txt(24, 74, "ön", TEAL, 10)
+    g += izgara(frozenset({(0, 0), (1, 0)}), 10, 102, 14, "#ffa26b") + txt(24, 114, "üst", "#ffa26b", 10)
+    g += "<path d='M50 64 h14' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M66 64l-6-4v8z' fill='#f2c14e'/>"
+    g += kupler([(0, 0, 0), (1, 0, 0), (0, 0, 1)], 70, 84, 16)
+    return bg(g)
+
+
+def svg2_h_simetri():
+    sekil = frozenset({(0, 0), (0, 1), (0, 2), (1, 0)})
+    ayna = frozenset({(1, 0), (1, 1), (1, 2), (0, 0)})
+    g = izgara(sekil, 18, 88, 16, TEAL) + izgara(ayna, 70, 88, 16, "#ffa26b")
+    g += "<line x1='60' y1='24' x2='60' y2='96' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='5 4'/>"
+    return bg(g)
+
+
+def svg2_h_kup():
+    return bg(kupler([(0, 0, 0)], 32, 92, 44) + txt(60, 112, "6 kare yüz", "#f2c14e", 11))
+
+
+def svg2_prizma():
+    return bg(prizma(22, 92, 52, 40, 44, dolgu=True) + txt(60, 112, "kutu biçimi", "#f2c14e", 11))
+
+
+def svg2_yak():
+    g = prizma(20, 92, 54, 40, 46, vurgu="ayrit")
+    g += "<circle cx='74' cy='46' r='5.5' fill='#ff8fab' stroke='#1b2340' stroke-width='1.5'/>"
+    g += _poly2([(20, 92), (74, 92), (74, 46), (20, 46)], "#6fb3ff", 0.45)
+    g += txt(34, 112, "yüz", "#6fb3ff", 10) + txt(66, 112, "ayrıt", "#f2c14e", 10) + txt(98, 112, "köşe", "#ff8fab", 10)
+    return bg(g)
+
+
+def _poly2(pts, renk, op):
+    p = " ".join(f"{x},{y}" for x, y in pts)
+    return f"<polygon points='{p}' fill='{renk}' fill-opacity='{op}'/>"
+
+
+def svg2_es_yuz():
+    g = acinim(46, 10, 28, 18, 24, boy=9)
+    g += txt(60, 116, "aynı renk = eş", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_acinim():
+    g = prizma(8, 70, 30, 22, 26)
+    g += "<path d='M50 52 h10' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M62 52l-6-4v8z' fill='#f2c14e'/>"
+    g += acinim(80, 14, 18, 12, 16, boy=8)
+    return bg(g)
+
+
+def svg2_farkli():
+    a = [(1, 0, YUZ[0], ""), (0, 1, YUZ[2], ""), (1, 1, YUZ[1], ""), (2, 1, YUZ[2], ""), (1, 2, YUZ[0], ""), (1, 3, YUZ[1], "")]
+    b = [(0, 0, YUZ[0], ""), (0, 1, YUZ[1], ""), (1, 1, YUZ[2], ""), (2, 1, YUZ[1], ""), (3, 1, YUZ[2], ""), (3, 2, YUZ[0], "")]
+    return bg(kare_ag(a, 8, 16, 14) + kare_ag(b, 58, 30, 13) + txt(60, 112, "iki açınım, aynı kutu", "#f2c14e", 10))
+
+
+def svg2_kapanir():
+    a = [(1, 0, YUZ[0], ""), (0, 1, YUZ[2], ""), (1, 1, YUZ[1], ""), (2, 1, YUZ[2], ""), (1, 2, YUZ[0], ""), (1, 3, YUZ[1], "")]
+    g = kare_ag(a, 14, 18, 14)
+    g += "<path d='M74 54 l8 8 l16 -18' stroke='#5fd08f' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/>"
+    g += txt(60, 112, "6 yüz, eşler karşılıklı", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_h_dikdortgen():
+    g = "<rect x='14' y='34' width='58' height='36' fill='none' stroke='#6fb3ff' stroke-width='3'/>"
+    g += "<rect x='82' y='40' width='26' height='26' fill='none' stroke='#ffa26b' stroke-width='3'/>"
+    g += txt(43, 90, "dikdörtgen", "#6fb3ff", 10) + txt(95, 90, "kare", "#ffa26b", 10)
+    return bg(g)
+
+
+def svg2_h_kupacinim():
+    a = [(1, 0, TEAL, ""), (0, 1, TEAL, ""), (1, 1, TEAL, ""), (2, 1, TEAL, ""), (1, 2, TEAL, ""), (1, 3, TEAL, "")]
+    return bg(kare_ag(a, 39, 12, 21) + txt(98, 108, "6", "#f2c14e", 18))
+
+
+def svg2_hediye():
+    g = prizma(18, 96, 56, 40, 46)
+    g += "<path d='M46 50 V96 M18 73 H74' stroke='#ff8fab' stroke-width='5'/><path d='M46 50 l-10 -10 M46 50 l10 -10' stroke='#ff8fab' stroke-width='4' stroke-linecap='round'/>"
+    g += txt(60, 114, "bütün yüzleri kapla", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_uc_cift():
+    g = acinim(46, 8, 28, 16, 22, {"ust": "a·b", "on": "a·c", "alt": "a·b", "arka": "a·c", "sol": "b·c", "sag": "b·c"}, boy=8)
+    return bg(g)
+
+
+def svg2_formul():
+    g = txt(60, 42, "2 · (a·b", "#ffd166", 15) + txt(60, 64, "+ a·c", "#6fb3ff", 15) + txt(60, 86, "+ b·c)", "#ff8fab", 15)
+    g += txt(60, 110, "üçünü topla, 2 ile çarp", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg2_kare_prizma():
+    x, y, a, h = 40, 92, 30, 56
+    g = prizma(x, y, a, a, h)
+    g += _poly2([(x, y - h), (x + a, y - h), (x + a + a / 2, y - h - a / 2), (x + a / 2, y - h - a / 2)], "#ffd166", 0.75)
+    g += txt(60, 112, "2 kare + 4 dikdörtgen", "#f2c14e", 9)
+    return bg(g)
+
+
+def svg2_kup():
+    g = prizma(26, 92, 50, 50, 50)
+    g += txt(60, 112, "6 · a²", "#f2c14e", 15)
+    return bg(g)
+
+
+def svg2_kapla():
+    g = "<path d='M20 50 L60 30 L100 50 L60 70 Z' fill='none' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='4 3'/>"
+    g += "<path d='M20 50 V86 L60 106 L100 86 V50 L60 70 Z' fill='#33406e' stroke='#f5f6fa' stroke-width='2'/><path d='M60 70 V106' stroke='#f5f6fa' stroke-width='2'/>"
+    g += txt(60, 22, "kapak yok", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg2_h_alan():
+    g = "".join(f"<rect x='{20 + i * 16}' y='{36 + j * 16}' width='16' height='16' fill='#2b355c' stroke='#6fb3ff' stroke-width='1.5'/>" for i in range(5) for j in range(3))
+    g += txt(60, 104, "5 · 3 = 15", "#f2c14e", 14)
+    return bg(g)
+
+
+def svg2_h_kare_alan():
+    g = "".join(f"<rect x='{36 + i * 16}' y='{24 + j * 16}' width='16' height='16' fill='#2b355c' stroke='#ffa26b' stroke-width='1.5'/>" for i in range(3) for j in range(3))
+    g += txt(60, 104, "3 · 3 = 3²", "#f2c14e", 14)
+    return bg(g)
+
+
+def svg2_h_birim():
+    g = "<line x1='16' y1='40' x2='60' y2='40' stroke='#6fb3ff' stroke-width='4' stroke-linecap='round'/>" + txt(38, 60, "cm", "#6fb3ff", 15)
+    g += "<rect x='72' y='26' width='30' height='30' fill='#2b355c' stroke='#ffa26b' stroke-width='3'/>" + txt(87, 76, "cm²", "#ffa26b", 15)
+    g += txt(60, 104, "uzunluk · alan", "#f2c14e", 11)
+    return bg(g)
+
+
+# ---------- Soru görselleri ----------
+def svg_yapi(kup, s=30, w=330, h=160, yonler=True):
+    _, yy = yapi_boyut(kup, s)
+    alt = h - 22
+    return gsvg(w, h, yapi(kup, w / 2, alt, s, yonler))
+
+
+def svg_gorunum(kareler, etiket, s=26, w=330, h=130):
+    return gsvg(w, h, izgara_orta(kareler, w / 2, h - 30, s, TEAL) + t2t(w / 2, h - 8, etiket, SOLUK, 12, 700))
+
+
+def svg_iki_gorunum(a, ea, b, eb, s=24, w=330, h=130):
+    g = izgara_orta(a, w / 4, h - 30, s, TEAL) + t2t(w / 4, h - 8, ea, SOLUK, 12, 700)
+    g += izgara_orta(b, 3 * w / 4, h - 30, s, "#ffa26b") + t2t(3 * w / 4, h - 8, eb, SOLUK, 12, 700)
+    return gsvg(w, h, g)
+
+
+def svg_prizma_et(e, b, c, A=120, B=70, C=70, w=330, h=170):
+    x = (w - A - B / 2) / 2
+    return gsvg(w, h, prizma(x, h - 26, A, B, C, (e, b, c)))
+
+
+def svg_acinim(A, B, C, yazi=None, w=330, h=None, boy=12):
+    h = h or int(2 * B + 2 * C + 20)
+    return gsvg(w, h, acinim(w / 2 - A / 2, 10, A, B, C, yazi, boy=boy))
+
+
+def numarali_hac(s=30):
+    """Haç açınım: 1-2-3-4 dikey, 5 ve 6 ikinin iki yanında. Karşılıklılar: 1–3, 2–4, 5–6."""
+    return [(1, 0, TEAL, "1"), (1, 1, TEAL, "2"), (1, 2, TEAL, "3"), (1, 3, TEAL, "4"), (0, 1, "#ffa26b", "5"), (2, 1, "#ffa26b", "6")]
+
+
+def numarali_141(s=30):
+    """1-4-1 açınım: 1-2-3-4 yatay, 5 birin üstünde, 6 dördün altında. Karşılıklılar: 1–3, 2–4, 5–6."""
+    return [(0, 1, TEAL, "1"), (1, 1, TEAL, "2"), (2, 1, TEAL, "3"), (3, 1, TEAL, "4"), (0, 0, "#ffa26b", "5"), (3, 2, "#ffa26b", "6")]
+
+
+def svg_kare_ag(h_, s=30, w=330):
+    C = max(c for c, *_ in h_) + 1; R = max(r for _, r, *_ in h_) + 1
+    return gsvg(w, R * s + 16, kare_ag(h_, w / 2 - C * s / 2, 8, s, boy=15))
+
+
+# Küp açınımları (seçenekler için)
+AG_HAC = [(1, 0), (0, 1), (1, 1), (2, 1), (1, 2), (1, 3)]
+AG_141 = [(0, 1), (1, 1), (2, 1), (3, 1), (0, 0), (3, 2)]
+AG_BLOK = [(0, 0), (1, 0), (2, 0), (0, 1), (1, 1), (2, 1)]        # 2 × 3 dikdörtgen: kapanmaz
+AG_BES = [(1, 0), (0, 1), (1, 1), (2, 1), (1, 2)]                  # 5 kare: bir yüz eksik
+AG_SIRA5 = [(0, 1), (1, 1), (2, 1), (3, 1), (4, 1), (2, 0)]        # 5 yan yana: üst üste biner
+
+
+def ag_cizimi(hucre, s=16, renk=TEAL):
+    return lambda cx, alt: kare_ag_orta([(c, r, renk, "") for c, r in hucre], cx, alt, s)
+
+
+def prizma_ag(tur, s=1.0):
+    """Dikdörtgenler prizması açınım seçenekleri: 'dogru' haç; 'bes' arka yüz eksik; 'cakisan' iki yan yüz aynı tarafta (sol yok, arka'nın sağında bir yan yüz daha)."""
+    A, B, C = 26 * s, 14 * s, 20 * s
+
+    def f(cx, alt):
+        x, y = cx - A / 2, alt - (2 * B + 2 * C)
+        yuz = {"ust": (x, y, A, B, YUZ[0]), "on": (x, y + B, A, C, YUZ[1]), "alt": (x, y + B + C, A, B, YUZ[0]),
+               "arka": (x, y + 2 * B + C, A, C, YUZ[1]), "sol": (x - B, y + B, B, C, YUZ[2]), "sag": (x + A, y + B, B, C, YUZ[2])}
+        if tur == "bes":
+            del yuz["arka"]
+        if tur == "cakisan":
+            del yuz["sol"]; yuz["sag2"] = (x + A, y + 2 * B + C, B, C, YUZ[2])
+        if tur == "cakisan_sol":
+            del yuz["sag"]; yuz["sol2"] = (x - B, y + 2 * B + C, B, C, YUZ[2])
+        return "".join(f"<rect x='{a:.1f}' y='{b:.1f}' width='{w:.1f}' height='{h:.1f}' fill='{r}' stroke='#1b2340' stroke-width='1.8'/>" for a, b, w, h, r in yuz.values())
+    return f
+
+
+# =================================================================
+def u2k1():
+    on_L, ust_L, sag_L = ayrik(gor(Y_L, "on"), gor(Y_L, "ust"), gor(Y_L, "sag"))
+    on_M, arka_M = gor(Y_MERDIVEN, "on"), gor(Y_MERDIVEN, "arka")
+    ters_M = frozenset((c, max(r for _, r in on_M) - r) for c, r in on_M)        # baş aşağı (yanlış seçenek)
+    ayrik(arka_M, on_M, ters_M)
+    sag_K, sol_K = gor(Y_KOSE, "sag"), gor(Y_KOSE, "sol")
+    ters_K = frozenset((c, max(r for _, r in sag_K) - r) for c, r in sag_K)
+    ayrik(sol_K, sag_K, ters_K)
+    ust_K = gor(Y_KOSE, "ust")
+    ayrik(ust_K, frozenset({(0, 0), (1, 0), (0, 1)}), frozenset({(0, 0), (1, 0)}))
+    # "Hangi yapının önden görünümü bu?" seçenekleri
+    Y_A = [(0, 0, 0), (1, 0, 0), (1, 0, 1)]
+    Y_B = [(0, 0, 0), (1, 0, 0), (0, 0, 1)]
+    Y_C = [(0, 0, 0), (1, 0, 0), (2, 0, 0)]
+    hedef = gor(Y_A, "on")
+    assert gor(Y_B, "on") != hedef and gor(Y_C, "on") != hedef
+    # Görünümden en az küp: önden 1-2-1, üstten 3 yan yana → 4
+    on_121 = frozenset({(0, 0), (1, 0), (1, 1), (2, 0)})
+    ust_3 = frozenset({(0, 0), (1, 0), (2, 0)})
+    assert gor(Y_ARTI[:3] + [(1, 0, 1)], "on") == on_121 and gor(Y_ARTI[:3] + [(1, 0, 1)], "ust") == ust_3
+    eksik_L = [c for c in Y_L if c != (0, 0, 1)]
+    assert gor(eksik_L, "ust") == ust_L and gor(eksik_L, "on") != on_L and gor(eksik_L, "sag") != sag_L
+
+    return {
+        "id": "u2k1", "unite": T2, "baslik": "Cisimlerin Farklı Yönlerden Görünümleri", "sayfalar": "s. 118–124",
+        "giris": "Bir cisme önden, yandan ve üstten bakınca farklı şekiller görürüz. Bu konuda eş küplerden yapılmış yapılara altı yönden bakacağız. Gördüğümüz kareleri sayıp kareli kâğıda çizeceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda simetriyi ve küpü kullanacağız. Önce ikisini hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Doğruya göre simetri", "sinif": "Önceki yıllar", "svg": svg2_h_simetri(),
+                 "anlatim": "Bir şekil bir doğru boyunca katlanınca iki parça tam üst üste geliyorsa, iki parça o doğruya göre simetriktir. Simetri ayna gibidir: sağdaki sola, soldaki sağa geçer.",
+                 "akilda": "Ayna gibi ters çevir",
+                 "ornek": {"problem": "Solda uzun kenarı olan bir L şeklinin dikey doğruya göre simetriği nasıl olur?", "adimlar": [
+                     {"metin": "Dikey doğru aynadır. Soldaki kareler aynada sağa geçer.", "svg": gsvg(330, 110, izgara(frozenset({(0, 0), (0, 1), (0, 2), (1, 0)}), 110, 96, 24, TEAL)
+                                                                                                        + "<line x1='165' y1='14' x2='165' y2='100' stroke='#f2c14e' stroke-width='3' stroke-dasharray='6 4'/>"
+                                                                                                        + izgara(frozenset({(1, 0), (1, 1), (1, 2), (0, 0)}), 172, 96, 24, "#ffa26b"))},
+                     {"metin": "Uzun kenar solda idi; simetrikte uzun kenar sağda olur.", "islem": "L ters döner"}]},
+                 "sorular": [
+                     S("Görseldeki şeklin dikey doğruya göre simetriği hangisi?",
+                       ["1. çizim", "2. çizim", "3. çizim"], 1, "Aynada sağ ve sol yer değiştirir. Uzun kenar hangi tarafa geçer?",
+                       "Soldaki uzun kenar aynada sağa geçer. Alt satır da ters döner: 2. çizim.",
+                       svg=ust_alt_svg(gorunum_cizimi(frozenset({(0, 0), (0, 1), (0, 2), (1, 0)})),
+                                       [gorunum_cizimi(frozenset({(0, 0), (0, 1), (0, 2), (1, 0)})), gorunum_cizimi(frozenset({(1, 0), (1, 1), (1, 2), (0, 0)})),
+                                        gorunum_cizimi(frozenset({(0, 0), (0, 1), (0, 2), (1, 2)}))])),
+                     S("Aynanın karşısında sağ elini kaldırıyorsun. Aynadaki görüntün hangi elini kaldırmış gibi görünür?", ["Sağ elini", "Sol elini", "İki elini"], 1,
+                       "Simetride sağ ile sol yer değiştirir.", "Aynada sağ ile sol yer değiştirir; görüntü sol elini kaldırmış gibi görünür.")]},
+                {"ad": "Küpün yüzleri", "sinif": "Önceki yıllar", "svg": svg2_h_kup(),
+                 "anlatim": "Küpün 6 yüzü vardır. Yüzlerin hepsi birbirine eş karedir. Bu yüzden bir küpe hangi yönden bakarsan bak, bir kare görürsün.",
+                 "akilda": "6 eş kare yüz",
+                 "sorular": [
+                     G("Bir küpün kaç yüzü vardır?", "6", "Bir zarı düşün: üstünde kaç farklı yüz var?", "Küpün 6 yüzü vardır: ön, arka, sağ, sol, üst, alt.",
+                       yardim={"adimlar": ["Bir zarı düşün: 1'den 6'ya kadar sayılar ayrı yüzlerde.", "Ön, arka, sağ, sol, üst, alt yüzleri say."]}),
+                     S("Küpün yüzleri hangi şekildir?", ["Üçgen", "Kare", "Daire"], 1, "Küpün kenarları eşit uzunluktadır.", "Küpün bütün yüzleri eş karedir.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Altı Yön", "renk": "#1f9e8f", "svg": svg2_yonler(),
+             "aciklama": "Bir yapıya altı yönden bakabiliriz: önden, arkadan, sağdan, soldan, üstten ve alttan. (s. 121–122)",
+             "ek": "Yönler yapıya göre sabittir. Kitapta yönleri gösteren bir kâğıt kullanılır; böylece herkes “ön” deyince aynı tarafı anlar. (s. 121)",
+             "akilda": "Ön-arka, sağ-sol, üst-alt",
+             "soru": S("Bir yapıya kaç farklı yönden bakabiliriz?", ["4", "6", "8"], 1,
+                       "Bilgi kartındaki yönleri tek tek say: ön, arka…", "Ön, arka, sağ, sol, üst ve alt: 6 yön. (s. 121–122)")},
+            {"ad": "Görünüm Kare Gösterir", "renk": "#1d6fa3", "svg": svg2_kare_goster(),
+             "aciklama": "Eş küplerden yapılmış bir yapıya bir yönden bakınca her küpün yalnızca bir yüzünü görürüz. Bu yüzler kare görünür. (s. 120–121)",
+             "ek": "Görünüm, o yönden gördüğümüz karelerin çizimidir. Önden bakınca her sütunda üst üste kaç kare olduğunu sayarız.",
+             "akilda": "Her sütunda kareleri say",
+             "cozum": {"baslik": "Önden kaç kare?",
+                       "problem": "Görseldeki yapıya önden bakınca kaç kare görürüz?",
+                       "svg": svg_yapi(Y_L),
+                       "adimlar": [
+                           {"metin": "Yapının önünde dur. Soldan sağa kaç sütun var?", "islem": "3 sütun"},
+                           {"metin": "Her sütunda üst üste kaç küp var? Soldaki 2, ortadaki 1, sağdaki 1.", "islem": "2 + 1 + 1"},
+                           {"metin": "Topla. Gördüğün kareleri kareli kâğıda çiz.", "islem": "= 4 kare", "svg": svg_gorunum(on_L, "Önden görünüm")}],
+                       "sonuc": "Önden görünüm 4 kareden oluşur. (s. 120)"},
+             "soru": G("Görseldeki yapıya önden bakınca kaç kare görürsün?", str(len(gor(Y_KOSE, "on"))),
+                       "Önden bak: kaç sütun var, her sütunda üst üste kaç küp var?", "Önde 2 sütun var: soldaki sütunda 2, sağdaki sütunda 1 kare. 2 + 1 = 3. Arkadaki küp öndekinin arkasında saklı. (s. 120)",
+                       svg=svg_yapi(Y_KOSE), yardim={"adimlar": ["Yapının önünde dur. Soldan sağa kaç sütun var?", "Her sütunda üst üste kaç küp var? Arkadaki küp öndekinin arkasında.", "Sütunlardaki kareleri topla."]})},
+            {"ad": "Saklanan Küpler", "renk": "#7b4fc9", "svg": svg2_sakli(),
+             "aciklama": "Tek yönden bakmak yanıltabilir. Öndeki küp, arkasındaki küpü saklar. (s. 119)",
+             "ek": "Kitaptaki yol fotoğrafında sağdaki ağaçlar art arda dizildiği için tek ağaç gibi görünür. Gerçek küplerde üstteki bir küp havada duramaz; altında onu taşıyan bir küp vardır. (s. 119–120)",
+             "akilda": "Arkada ve altta küp olabilir",
+             "cozum": {"baslik": "En az kaç küp?",
+                       "problem": "Görseldeki yapı en az kaç küpten oluşur?",
+                       "svg": svg_yapi(Y_SAKLI),
+                       "adimlar": [
+                           {"metin": "Görünen küpleri say: önde 2, arkada sağda 1, üstte 1.", "islem": "4 görünen küp"},
+                           {"metin": "Üstteki küp havada duramaz. Altında, öndeki küpün arkasında saklı bir küp olmalı.", "islem": "+ 1 saklı küp"},
+                           {"metin": "Topla.", "islem": "4 + 1 = 5"}],
+                       "sonuc": "Yapı en az 5 küpten oluşur. “En az” diyoruz; çünkü görmediğimiz yerlerde başka küpler de olabilir. (s. 120)"},
+             "soru": S("Görseldeki gibi arka arkaya dizilmiş 3 küpe önden bakınca kaç kare görürsün?", ["1", "3", "6"], 0,
+                       "Öndeki küp, arkasındakileri saklar.", "Arka arkaya duran küpler önden bakınca tek kare gibi görünür. (s. 119)",
+                       svg=svg_yapi(Y_SIRA3, s=28))},
+            {"ad": "Görünümü Çizme", "renk": "#e8590c", "svg": svg2_cizim(),
+             "aciklama": "Görünümü kareli kâğıda çizeriz: o yönden gördüğümüz her kareyi yerine koyarız. (s. 121)",
+             "ek": "Üstten görünümde yapının ön tarafı aşağıda kalır. Sağdan bakınca yapının ön tarafı solunda kalır.",
+             "akilda": "Gördüğün kareyi yerine çiz",
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Görseldeki yapının üstten görünümünü bulalım.",
+                       "svg": svg_yapi(Y_KOSE),
+                       "adimlar": [
+                           {"metin": "Yukarıdan bak. Üst üste duran küpler tek kare görünür.",
+                            "soru": G("Üstten bakınca kaç kare görürsün?", str(len(ust_K)), "Tabanda kaç küp var? Üstteki küp, altındaki küpün tam üstünde.",
+                                      "Tabanda 3 küp var; üstteki küp öndeki soldaki küpün üstünde. Üstten 3 kare görünür.",
+                                      yardim={"adimlar": ["Tabandaki küpleri say.", "Üstteki küp yeni bir kare eklemez; altındaki küpün üstünde."]}),
+                            "islem": "3 kare"},
+                           {"metin": "Kareler nasıl dizilmiş? Ön taraf aşağıda.",
+                            "soru": S("Hangisi üstten görünüm?", ["1. çizim", "2. çizim", "3. çizim"], 0,
+                                      "Önde yan yana 2 küp var, arkada sağda 1 küp. Ön taraf çizimde aşağıda.",
+                                      "Ön sırada 2 kare, arka sırada sağda 1 kare: 1. çizim.",
+                                      svg=sec_svg([gorunum_cizimi(ust_K), gorunum_cizimi(frozenset({(0, 0), (1, 0), (0, 1)})), gorunum_cizimi(frozenset({(0, 0), (1, 0)}))])),
+                            "islem": "L biçiminde 3 kare", "svg": svg_gorunum(ust_K, "Üstten görünüm")}],
+                       "sonuc": "Harika! Üstten görünüm L biçiminde 3 kare."},
+             "soru": S("Görseldeki yapının sağdan görünümü hangisi?", ["1. çizim", "2. çizim", "3. çizim"], 2,
+                       "Sağdan bakınca derinliği görürsün. Yapı tek sıra; en yüksek yeri kaç küp?",
+                       "Yapı tek sıradır; sağdan bakınca tek sütun görünür. En yüksek yer 2 küp: üst üste 2 kare, 3. çizim. (s. 121)",
+                       svg=ust_alt_svg(yapi_cizimi(Y_L, 22, True), [gorunum_cizimi(on_L), gorunum_cizimi(ust_L), gorunum_cizimi(sag_L)]))},
+            {"ad": "Karşılıklı Görünümler Simetrik", "renk": "#c92a2a", "svg": svg2_simetri(),
+             "aciklama": "Ön ile arka, sağ ile sol görünümler dikey bir doğruya göre simetriktir. Üst ile alt görünümler yatay bir doğruya göre simetriktir. (s. 122)",
+             "ek": "Simetrik, ayna görüntüsü demek. Arkadan görünümü bulmak için önden görünümü dikey bir aynada çevir: sağdaki kareler sola geçer.",
+             "akilda": "Arka = önün aynası",
+             "cozum": {"baslik": "Arkadan görünüm",
+                       "problem": "Önden görünümü görseldeki gibi olan yapının arkadan görünümünü bulalım.",
+                       "svg": svg_gorunum(on_M, "Önden görünüm", s=22),
+                       "adimlar": [
+                           {"metin": "Önden bakınca merdiven sağa doğru yükseliyor."},
+                           {"metin": "Yapının arkasına geç. Sağ ve sol yer değiştirir: dikey doğruya göre simetriğini al.", "islem": "ayna gibi çevir"},
+                           {"metin": "Arkadan bakınca merdiven sola doğru yükselir.", "svg": svg_iki_gorunum(on_M, "Önden", arka_M, "Arkadan", s=20)}],
+                       "sonuc": "Ön ile arka görünümler dikey bir doğruya göre simetriktir. (s. 122)"},
+             "soru": S("Önden görünümü görseldeki gibi olan yapının arkadan görünümü hangisi?", ["1. çizim", "2. çizim", "3. çizim"], 0,
+                       "Ön ile arka görünüm dikey bir doğruya göre simetrik: sağ ve sol yer değiştirir.",
+                       "Arkadan bakınca sağ ve sol yer değiştirir. Merdiven sola doğru yükselir: 1. çizim. (s. 122)",
+                       svg=ust_alt_svg(gorunum_cizimi(on_M, 18), [gorunum_cizimi(arka_M, 15), gorunum_cizimi(on_M, 15), gorunum_cizimi(ters_M, 15)], baslik="Önden görünüm"))},
+            {"ad": "Görünümden Yapıya", "renk": "#b7791f", "svg": svg2_gorunumden(),
+             "aciklama": "Görünümleri verilen bir yapıyı kurabiliriz. Önden görünüm sütunların yüksekliğini, üstten görünüm küplerin yere nasıl dizildiğini söyler. (s. 122–123)",
+             "ek": "Kitapta görünümlerden yola çıkıp yapıyı en az kaç küple kurabileceğimizi buluyoruz. “En az” sorulunca yalnızca gereken küpleri sayarız. (s. 122)",
+             "akilda": "Önden: yükseklik. Üstten: yer",
+             "cozum": {"baslik": "Görünümlerden kur",
+                       "problem": "Önden görünümü ve üstten görünümü verilen yapı en az kaç küptür?",
+                       "svg": svg_iki_gorunum(frozenset({(0, 0), (0, 1), (1, 0)}), "Önden", frozenset({(0, 0), (1, 0)}), "Üstten"),
+                       "adimlar": [
+                           {"metin": "Üstten görünüm: yerde yan yana 2 kare. Küpler tek sırada."},
+                           {"metin": "Önden görünüm: soldaki sütun 2 küp yüksekliğinde, sağdaki 1.", "islem": "2 + 1"},
+                           {"metin": "Topla.", "islem": "= 3 küp", "svg": svg_yapi([(0, 0, 0), (1, 0, 0), (0, 0, 1)], s=28)}],
+                       "sonuc": "Yapı en az 3 küpten oluşur. (s. 122)"},
+             "soru": G("Önden görünümü yan yana 3 kare, üstten görünümü de yan yana 3 kare olan bir yapı en az kaç küptür?", "3",
+                       "Üstten: yerde kaç küp var? Önden: sütunlar kaç küp yüksekliğinde?",
+                       "Üstten 3 kare: yerde 3 küp. Önden her sütun 1 kare: üstte küp yok. 3 küp. (s. 122)",
+                       yardim={"adimlar": ["Üstten görünüm: yerde kaç küp var?", "Önden görünüm: üst üste duran küp var mı?", "Yerdeki ve üstteki küpleri topla."]})}
+        ],
+        "akildaKalsin": [
+            "Bir yapıya altı yönden bakılır: ön, arka, sağ, sol, üst, alt.",
+            "Her yönden gördüğümüz küp yüzleri kare görünür.",
+            "Öndeki küp arkasındakini saklar; tek yönden bakmak yanıltabilir.",
+            "Üstten görünümde ön taraf aşağıda kalır.",
+            "Ön-arka ve sağ-sol görünümler dikey, üst-alt görünümler yatay bir doğruya göre simetriktir.",
+            "Önden görünüm yüksekliği, üstten görünüm yeri söyler."],
+        "biliyorMusun": ["Sanal küplerle yapı kurulan bilgisayar programlarında yer çekimi yoktur. Bu yüzden küpler havada da durabilir; gerçek küplerde ise üstteki küp bir küpün üstünde durmalıdır. (s. 124)"],
+        "merakKutusu": [
+            {"soru": "Neden altı yön var da daha fazla yok?", "cevap": "Bir kutu gibi düşün: önü, arkası, iki yanı, üstü ve altı var. Yapının etrafında dönüp her yüze bakınca altı yön elde ederiz. (s. 121–122)"},
+            {"soru": "Önden ve arkadan bakınca aynı sayıda kare mi görürüm?", "cevap": "Evet. Arkadan görünüm önden görünümün aynadaki görüntüsüdür; kareler yer değiştirir ama sayıları aynı kalır. (s. 122)"},
+            {"soru": "Yapıdaki küp sayısını tek bir görünümden bulabilir miyim?", "cevap": "Çoğu zaman bulamazsın. Öndeki küp arkadakini saklar. Bu yüzden birkaç yönden bakar, “en az kaç küp” diye sorarız. (s. 119–120)"},
+            {"soru": "Kitapta neden yönleri gösteren bir kâğıt kullanılıyor?", "cevap": "Yapıyı döndürünce “ön” başka tarafa geçebilir. Yön kâğıdı herkesin aynı tarafa ön demesini sağlar; anlaşmazlık olmaz. (s. 121)"}],
+        "dusunVeYaz": [{"soru": "Bir yapıya yalnızca önden bakarak kaç küp olduğunu kesin söyleyebilir misin? Neden?",
+                        "ornekCevap": "Hayır. Öndeki küpler arkadakileri saklar. Arkada ya da altta göremediğim küpler olabilir. Bu yüzden başka yönlerden de bakmalıyım.",
+                        "anahtarlar": ["hayır", "sakla", "arka", "göreme", "yön"]}],
+        "sorular": [
+            G("Görseldeki yapıya önden bakınca kaç kare görürsün?", str(len(gor(Y_ARTI, "on"))),
+              "Önden bak: soldan sağa kaç sütun var? Her sütunda üst üste kaç küp var?",
+              "3 sütun var: soldaki 1, ortadaki 2, sağdaki 1 kare. 1 + 2 + 1 = 4. Arkadaki küp ortadaki küpün arkasında saklı. (s. 120)",
+              svg=svg_yapi(Y_ARTI), kavram="Görünüm Kare Gösterir",
+              yardim={"adimlar": ["Yapının önünde dur. Soldan sağa kaç sütun var?", "Her sütunda üst üste kaç küp var? Arkadaki küp öndekinin arkasında saklanıyor.", "Sütunlardaki kareleri topla."]}),
+            S("Görseldeki yapının üstten görünümü hangisi?", ["1. çizim", "2. çizim", "3. çizim"], 1,
+              "Yukarıdan bak: yerde kaç küp var? Üst üste duranlar tek kare görünür.",
+              "Yerde yan yana 3 küp var; soldaki küpün üstündeki küp yeni kare eklemez. Üstten 3 kare yan yana: 2. çizim. (s. 121)",
+              svg=ust_alt_svg(yapi_cizimi(Y_L, 22, True), [gorunum_cizimi(on_L), gorunum_cizimi(ust_L), gorunum_cizimi(sag_L)]), kavram="Görünümü Çizme"),
+            G("Görseldeki yapı en az kaç küpten oluşur?", str(len(Y_IKI_KAT)),
+              "Görünen küpleri say. Üstteki küplerin altında saklı küp olmalı mı?",
+              "Önde 2, arkada 2 küp yerde duruyor; arkadakilerin üstünde 2 küp daha var. 4 + 2 = 6. (s. 120)",
+              svg=svg_yapi(Y_IKI_KAT), kavram="Saklanan Küpler",
+              yardim={"adimlar": ["Yerdeki küpleri say: önde kaç, arkada kaç?", "Üstteki küpleri say. Her biri bir küpün üstünde duruyor.", "Yerdekileri ve üsttekileri topla."]}),
+            S("Önden görünümü görseldeki gibi olan yapının arkadan görünümü hangisi?", ["1. çizim", "2. çizim", "3. çizim"], 2,
+              "Arkadan bakınca sağ ve sol yer değiştirir. Uzun sütun hangi tarafa geçer?",
+              "Arka görünüm, önden görünümün dikey doğruya göre simetriğidir. Merdiven sola doğru yükselir: 3. çizim. (s. 122)",
+              svg=ust_alt_svg(gorunum_cizimi(on_M, 18), [gorunum_cizimi(on_M, 15), gorunum_cizimi(ters_M, 15), gorunum_cizimi(arka_M, 15)], baslik="Önden görünüm"),
+              kavram="Karşılıklı Görünümler Simetrik"),
+            S("Sağdan görünümü görseldeki gibi olan yapının soldan görünümü hangisi?", ["1. çizim", "2. çizim", "3. çizim"], 0,
+              "Sağ ile sol görünüm dikey bir doğruya göre simetriktir.",
+              "Soldan görünüm, sağdan görünümün ayna görüntüsüdür: yüksek sütun öbür tarafa geçer: 1. çizim. (s. 122)",
+              svg=ust_alt_svg(gorunum_cizimi(sag_K, 22), [gorunum_cizimi(sol_K, 18), gorunum_cizimi(sag_K, 18), gorunum_cizimi(ters_K, 18)], baslik="Sağdan görünüm"),
+              kavram="Karşılıklı Görünümler Simetrik"),
+            S("Hangisi doğrudur?",
+              ["Üstten ve alttan görünümler dikey bir doğruya göre simetriktir.", "Önden ve arkadan görünümler dikey bir doğruya göre simetriktir.", "Sağdan ve soldan görünümler her zaman tamamen aynıdır."], 1,
+              "Bilgi kartına bak: hangi çiftler dikey, hangi çift yatay doğruya göre simetrik?",
+              "Ön-arka ve sağ-sol dikey, üst-alt yatay bir doğruya göre simetriktir. Sağ ve sol görünüm ayna görüntüsüdür; her zaman aynı değildir. (s. 122)",
+              kavram="Karşılıklı Görünümler Simetrik"),
+            G("Önden ve üstten görünümleri görseldeki gibi olan bir yapı en az kaç küptür?", "4",
+              "Üstten: yerde kaç küp var? Önden: hangi sütun daha yüksek?",
+              "Üstten 3 kare: yerde 3 küp. Önden ortadaki sütun 2 kare: ortadaki küpün üstünde 1 küp daha. 3 + 1 = 4. (s. 122)",
+              svg=svg_iki_gorunum(on_121, "Önden", ust_3, "Üstten"), kavram="Görünümden Yapıya",
+              yardim={"adimlar": ["Üstten görünüm: yerde kaç küp var?", "Önden görünüm: hangi sütunda üst üste 2 kare var?", "Yerdeki küplere üstteki küpü ekle."]}),
+            S("Görseldeki yapıdan en üstteki küp çıkarılırsa hangi görünüm değişmez?", ["Önden görünüm", "Üstten görünüm", "Sağdan görünüm"], 1,
+              "Üstteki küp kalkınca yukarıdan bakan biri yeni bir boşluk görür mü? Altında küp var mı?",
+              "Üstteki küpün altında başka bir küp var. Yukarıdan yine 3 kare görünür; önden ve sağdan görünümde ise üstteki kare kaybolur. (s. 124)",
+              svg=svg_yapi(Y_L), kavram="Görünüm Kare Gösterir"),
+            S("Bir yapının ön tarafının tam karşısında hangi taraf vardır?", ["Arka", "Sağ", "Üst"], 0,
+              "Altı yönü çiftler hâlinde düşün: ön-…, sağ-…, üst-…",
+              "Yönler çiftler hâlindedir: ön-arka, sağ-sol, üst-alt. (s. 121–122)", kavram="Altı Yön"),
+            S("Görseldeki önden görünüm hangi yapıya aittir?", ["1. yapı", "2. yapı", "3. yapı"], 0,
+              "Her yapıya önden bak: hangi sütun 2 küp yüksekliğinde?",
+              "Önden görünümde sağ sütun 2 kare yüksekliğinde. 1. yapıda sağdaki küpün üstünde bir küp var. (s. 123)",
+              svg=ust_alt_svg(gorunum_cizimi(hedef, 22), [yapi_cizimi(Y_A, 20), yapi_cizimi(Y_B, 20), yapi_cizimi(Y_C, 20)], baslik="Önden görünüm"),
+              kavram="Görünümden Yapıya")]
+    }
+
+
+# =================================================================
+def u2k2():
+    return {
+        "id": "u2k2", "unite": T2, "baslik": "Prizma ve Açınımı", "sayfalar": "s. 125–128",
+        "giris": "Ayakkabı kutusu, çikolata kutusu, ilaç kutusu… Hepsi aynı biçimde: dikdörtgenler prizması. Bu konuda kutuların yüzlerini, ayrıtlarını ve köşelerini tanıyacağız. Sonra bir kutuyu kesip düz açacağız.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda dikdörtgen, kare ve küpün açınımını kullanacağız. Önce onları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Dikdörtgen ve kare", "sinif": "Önceki yıllar", "svg": svg2_h_dikdortgen(),
+                 "anlatim": "Dikdörtgenin dört açısı da dik açıdır; karşılıklı kenarları eşittir. Karenin dört kenarı da eşittir. Kare, özel bir dikdörtgendir.",
+                 "akilda": "Kare de bir dikdörtgendir",
+                 "sorular": [
+                     S("Hangisi doğrudur?", ["Her kare bir dikdörtgendir.", "Her dikdörtgen bir karedir.", "Karenin kenarları farklı uzunluktadır."], 0,
+                       "Kare özel bir dikdörtgendir. Hangi şart kareyi özel yapar?", "Karenin dört açısı dik, karşılıklı kenarları eşit: o da bir dikdörtgendir. Ama her dikdörtgenin dört kenarı eşit değildir."),
+                     S("Kenarları 3 cm ve 5 cm olan bir dikdörtgen için hangisi doğrudur?", ["Dört kenarı da 3 cm'dir.", "İki kenarı 3 cm, iki kenarı 5 cm'dir.", "Dört kenarı da 5 cm'dir."], 1,
+                       "Dikdörtgenin karşılıklı kenarları eşittir.", "Karşılıklı kenarlar eşittir: iki kenar 3 cm, iki kenar 5 cm.")]},
+                {"ad": "Küpün açınımı", "sinif": "Önceki yıllar", "svg": svg2_h_kupacinim(),
+                 "anlatim": "Küp şeklindeki bir kutuyu bazı ayrıtlarından kesip düz açarsak 6 kareden oluşan bir şekil elde ederiz. Buna küpün açınımı denir. (s. 125)",
+                 "akilda": "Küp açınımı: 6 kare",
+                 "sorular": [
+                     G("Küpün açınımı kaç kareden oluşur?", "6", "Küpün kaç yüzü var? Her yüz açınımda bir kare olur.", "Küpün 6 yüzü var; açınımı 6 kareden oluşur. (s. 125)",
+                       yardim={"adimlar": ["Küpün yüzlerini say: ön, arka, sağ, sol, üst, alt.", "Her yüz açınımda bir kare olur."]}),
+                     S("Görseldekilerden hangisi bir küpün açınımıdır?", ["1. çizim", "2. çizim", "3. çizim"], 0,
+                       "Kare sayısını say: 6 olmalı. Sonra katlamayı hayal et: yüzler üst üste biniyor mu?",
+                       "1. çizim haç biçiminde 6 kare: kapanınca küp olur. 2. çizimde 5 kare var. 3. çizim 2 sıra 3 kare: kapatınca yüzler üst üste biner.",
+                       svg=sec_svg([ag_cizimi(AG_HAC), ag_cizimi(AG_BES), ag_cizimi(AG_BLOK)]))]}
+            ]},
+        "kavramlar": [
+            {"ad": "Dikdörtgenler Prizması", "renk": "#1f9e8f", "svg": svg2_prizma(),
+             "aciklama": "Ayakkabı kutusu gibi 6 yüzünün hepsi dikdörtgen olan cisme dikdörtgenler prizması denir. (s. 128)",
+             "ek": "Kitapta parfüm kutusu ve çikolata kutusu dikdörtgenler prizmasına, ilaç kutusu da kare prizmaya örnek veriliyor. (s. 125–126)",
+             "akilda": "Kutu biçimi: 6 dikdörtgen yüz",
+             "soru": S("Hangisi dikdörtgenler prizmasına örnektir?", ["Çikolata kutusu", "Futbol topu", "Dondurma külahı"], 0,
+                       "Kutu biçiminde olanı ara: bütün yüzleri dikdörtgen.", "Çikolata kutusunun 6 yüzü dikdörtgendir. Top ve külahın düz dikdörtgen yüzleri yoktur. (s. 126)")},
+            {"ad": "Yüz, Ayrıt, Köşe", "renk": "#1d6fa3", "svg": svg2_yak(),
+             "aciklama": "Prizmanın düz yüzeylerine yüz, iki yüzün birleştiği çizgiye ayrıt, ayrıtların buluştuğu noktaya köşe denir.",
+             "ek": "Dikdörtgenler prizmasının 6 yüzü, 12 ayrıtı ve 8 köşesi vardır. Bir kutunun üzerinde sayarak kontrol edebilirsin.",
+             "akilda": "6 yüz, 12 ayrıt, 8 köşe",
+             "cozum": {"baslik": "Ayrıtları sayalım",
+                       "problem": "Dikdörtgenler prizmasının kaç ayrıtı vardır?",
+                       "svg": svg_prizma_et("", "", "", A=110, B=70, C=70),
+                       "adimlar": [
+                           {"metin": "Ön yüzün çevresindeki ayrıtları say.", "islem": "4"},
+                           {"metin": "Arka yüzün çevresinde de 4 ayrıt var. Kesikli çizgiler arkada kalanları gösterir.", "islem": "4 + 4"},
+                           {"metin": "Önü arkaya bağlayan çapraz ayrıtlar.", "islem": "4 + 4 + 4 = 12"}],
+                       "sonuc": "Dikdörtgenler prizmasının 12 ayrıtı vardır."},
+             "soru": G("Dikdörtgenler prizmasının kaç köşesi vardır?", "8",
+                       "Ön yüzün köşelerini say, sonra arka yüzün köşelerini.", "Ön yüzde 4, arka yüzde 4 köşe: 4 + 4 = 8.",
+                       yardim={"adimlar": ["Ön yüzün köşelerini say.", "Arka yüzde de aynı sayıda köşe var.", "İkisini topla."]})},
+            {"ad": "Karşılıklı Yüzler Eştir", "renk": "#7b4fc9", "svg": svg2_es_yuz(),
+             "aciklama": "Dikdörtgenler prizmasında karşılıklı duran iki yüz birbirine eştir: ön ile arka, üst ile alt, sağ ile sol. (s. 128)",
+             "ek": "Böylece 6 yüz, 3 çift eş yüz olur. Kitaptaki açınımlarda eş yüzler aynı renkle boyanır. (s. 128)",
+             "akilda": "3 çift eş yüz",
+             "soru": S("Bir kutunun üst yüzüne eş olan yüz hangisidir?", ["Ön yüz", "Sağ yüz", "Alt yüz"], 2,
+                       "Üst yüzün karşısında hangi yüz var?", "Karşılıklı yüzler eştir: üst yüzün karşısı alt yüzdür. (s. 128)")},
+            {"ad": "Yüzey Açınımı", "renk": "#e8590c", "svg": svg2_acinim(),
+             "aciklama": "Bir kutuyu bazı ayrıtlarından kesip düz açınca elde edilen şekle yüzey açınımı denir. Dikdörtgenler prizmasının açınımı 6 dikdörtgenden oluşur. (s. 128)",
+             "ek": "Kitapta parfüm, çikolata ve ilaç kutuları kesilip açılıyor; her biri düz bir şekle dönüşüyor. (s. 125–126)",
+             "akilda": "Kes, düz aç: 6 dikdörtgen",
+             "cozum": {"baslik": "Kutuyu açalım",
+                       "problem": "Bir çikolata kutusunu ayrıtlarından kesip düz açıyoruz.",
+                       "svg": svg_prizma_et("", "", "", A=120, B=60, C=60),
+                       "adimlar": [
+                           {"metin": "Ortadaki sütunda 4 yüz yer alır: üst, ön, alt ve arka. Kutunun çevresine sarılan bir şerit gibi."},
+                           {"metin": "Ön yüzün iki yanına sol ve sağ yüzler gelir.", "islem": "4 + 2 = 6 dikdörtgen"},
+                           {"metin": "Eş yüzleri aynı renkle boya.", "svg": svg_acinim(70, 34, 40, {"ust": "üst", "on": "ön", "alt": "alt", "arka": "arka", "sol": "sol", "sag": "sağ"}, boy=11)}],
+                       "sonuc": "6 dikdörtgenden oluşan bir açınım elde ettik. Aynı renkli yüzler eş ve kapanınca karşılıklı. (s. 128)"},
+             "soru": S("Dikdörtgenler prizmasının açınımında kaç dikdörtgen vardır?", ["4", "6", "8"], 1,
+                       "Açınımdaki her dikdörtgen kutunun bir yüzüdür.", "Kutunun 6 yüzü var; açınımda 6 dikdörtgen olur. (s. 128)")},
+            {"ad": "Birden Fazla Açınım", "renk": "#c92a2a", "svg": svg2_farkli(),
+             "aciklama": "Bir kutuyu farklı ayrıtlarından kesersek farklı açınımlar elde ederiz. Dikdörtgenler prizmasının birden fazla açınımı vardır. (s. 128)",
+             "ek": "Açınımın biçimi değişse de yüzler aynıdır: yine 6 dikdörtgen, yine 3 çift eş yüz. (s. 128)",
+             "akilda": "Biçim değişir, yüzler aynı",
+             "soru": S("Ali ve Elif aynı kutuyu farklı ayrıtlarından kesip açtı. Hangisi doğrudur?",
+                       ["Açınımları aynı olmak zorundadır.", "Elif'in açınımında daha çok yüz vardır.", "Açınımları farklı olabilir ama ikisinde de 6 yüz vardır."], 2,
+                       "Kesilen ayrıt değişince ne değişir: biçim mi, yüzlerin sayısı mı?", "Farklı ayrıtlardan kesilince açınımın biçimi değişir ama kutunun 6 yüzü aynı kalır. (s. 128)")},
+            {"ad": "Açınım Kapanır mı?", "renk": "#b7791f", "svg": svg2_kapanir(),
+             "aciklama": "Bir açınımın kapanıp kutu olması için 6 yüzü olmalı, eş yüzler karşılıklı gelmeli ve hiçbir yüz başka bir yüzün üstüne binmemeli. (s. 127–128)",
+             "ek": "Açınımda yan yana duran iki yüz, kutuda da komşu olur. Bir sırada aralarında tek bir yüz bulunan iki yüz ise kapanınca karşılıklı gelir. Kitaptaki oyunda da hangi yüzlerin karşılıklı geleceği tahmin ediliyor. (s. 127)",
+             "akilda": "6 yüz, eşler karşılıklı, binme yok",
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Görseldeki açınım kapatılınca hangi yüzler karşılıklı gelir?",
+                       "svg": svg_kare_ag(numarali_hac()),
+                       "adimlar": [
+                           {"metin": "2 numaralı yüzü taban yap. 1, 3, 5 ve 6 tabanın çevresinde duvar gibi kalkar.",
+                            "soru": S("4 numaralı yüz nereye gelir?", ["Tabanın karşısına, kapak olur", "Tabanın yanına", "Tabanın altına"], 0,
+                                      "4, 3'ün ucuna bağlı. 3 duvar olunca 4 nereye katlanır?", "3 duvar olarak kalkınca 4 tepeye katlanır ve kapak olur: 2 ile 4 karşılıklı."),
+                            "islem": "2 ile 4 karşılıklı"},
+                           {"metin": "Dik sırada 1 ile 3 arasında yalnızca 2 var.",
+                            "soru": S("1 numaralı yüzün karşısına hangisi gelir?", ["2", "3", "5"], 1,
+                                      "Bir sırada aralarında tek bir yüz olan iki yüz karşılıklı gelir.", "1 ile 3 arasında yalnızca 2 var: 1 ile 3 karşılıklı."),
+                            "islem": "1 ile 3 karşılıklı"},
+                           {"metin": "Kalan iki yüz: 5 ve 6. Yan sırada aralarında 2 var.", "islem": "5 ile 6 karşılıklı"}],
+                       "sonuc": "Harika! Karşılıklı çiftler: 1–3, 2–4, 5–6."},
+             "soru": S("Görseldeki açınımlardan hangisi kapanınca bir dikdörtgenler prizması olur?", ["1. çizim", "2. çizim", "3. çizim"], 1,
+                       "Önce yüzleri say: 6 mı? Sonra katlamayı hayal et: iki yüz aynı yere geliyor mu?",
+                       "2. çizimde 6 yüz var, eş yüzler karşılıklı. 1. çizimde 5 yüz var. 3. çizimde iki yan yüz aynı tarafa düşüp üst üste biner. (s. 128)",
+                       svg=sec_svg([prizma_ag("bes"), prizma_ag("dogru"), prizma_ag("cakisan")], h=160))}
+        ],
+        "akildaKalsin": [
+            "Dikdörtgenler prizmasının 6 yüzünün hepsi dikdörtgendir.",
+            "Dikdörtgenler prizmasının 6 yüzü, 12 ayrıtı, 8 köşesi vardır.",
+            "Karşılıklı yüzler eştir: 3 çift eş yüz.",
+            "Kutuyu kesip düz açınca 6 dikdörtgenden oluşan bir açınım çıkar.",
+            "Bir kutunun birden fazla açınımı olabilir.",
+            "Açınım kapanınca eş yüzler karşılıklı gelmeli, yüzler üst üste binmemeli."],
+        "merakKutusu": [
+            {"soru": "Kare prizma da bir dikdörtgenler prizması mı?", "cevap": "Evet. Kare de özel bir dikdörtgendir. İki yüzü kare olan ilaç kutusu da bir dikdörtgenler prizmasıdır; ona kare prizma deriz. (s. 125–126)"},
+            {"soru": "Bir kutunun kaç farklı açınımı olur?", "cevap": "Birden fazla. Hangi ayrıtları kestiğine göre açınımın biçimi değişir. Kitaptaki oyunda beş farklı açınım çiziliyor. (s. 127–128)"},
+            {"soru": "Açınımda aynı renkli iki yüz yan yana gelirse ne olur?", "cevap": "Yan yana duran yüzler kutuda komşu olur, karşılıklı olamaz. Eş yüzler karşılıklı gelmesi gerektiği için böyle bir açınım doğru kapanmaz. (s. 127)"},
+            {"soru": "Kesikli çizgiler neden var?", "cevap": "Kutunun arkasında kalan, bizim göremediğimiz ayrıtları gösterir. Böylece bütün ayrıtları sayabiliriz."}],
+        "dusunVeYaz": [{"soru": "Bir açınımın kapanıp kutu olup olmayacağını nasıl kontrol edersin?",
+                        "ornekCevap": "Önce yüzleri sayarım: 6 olmalı. Sonra eş yüzlerin karşılıklı gelip gelmediğine bakarım. Katlamayı hayal edip iki yüzün üst üste binip binmediğini kontrol ederim.",
+                        "anahtarlar": ["6", "eş", "karşılıklı", "bin", "say"]}],
+        "sorular": [
+            S("Dikdörtgenler prizmasının kaç yüzü vardır?", ["6", "4", "8"], 0,
+              "Kutunun önü, arkası, iki yanı, üstü ve altı.", "Ön, arka, sağ, sol, üst, alt: 6 yüz. (s. 128)", kavram="Yüz, Ayrıt, Köşe"),
+            G("Dikdörtgenler prizmasının kaç ayrıtı vardır?", "12",
+              "Ön yüzün çevresi, arka yüzün çevresi ve önü arkaya bağlayan ayrıtlar.", "Önde 4, arkada 4, önü arkaya bağlayan 4: 12 ayrıt.",
+              kavram="Yüz, Ayrıt, Köşe", yardim={"adimlar": ["Ön yüzün çevresindeki ayrıtları say.", "Arka yüzün çevresinde de aynı sayıda ayrıt var.", "Önü arkaya bağlayan ayrıtları ekle."]}),
+            S("Görseldeki prizmada sarı ile gösterilen nedir?", ["Ayrıt", "Yüz", "Köşe"], 0,
+              "İki yüzün birleştiği çizgiye ne diyorduk?", "Sarı çizgi ön yüz ile sağ yüzün birleştiği yerdir: ayrıt.",
+              svg=gsvg(330, 150, prizma(110, 130, 90, 60, 80, vurgu="ayrit")), kavram="Yüz, Ayrıt, Köşe"),
+            S("Görseldeki açınımlardan hangisi bir dikdörtgenler prizmasının açınımıdır?", ["1. çizim", "2. çizim", "3. çizim"], 2,
+              "Yüzleri say. Sonra katlamayı hayal et.", "3. çizimde 6 yüz var ve eş yüzler karşılıklı gelir. 1. çizimde yan yüzler üst üste biner, 2. çizimde bir yüz eksik. (s. 128)",
+              svg=sec_svg([prizma_ag("cakisan"), prizma_ag("bes"), prizma_ag("dogru")], h=160), kavram="Açınım Kapanır mı?"),
+            S("Açınımda aynı renkle boyanan iki yüz, kutu kapanınca nasıl durur?", ["Karşılıklı", "Yan yana", "Üst üste"], 0,
+              "Aynı renk = eş yüz. Eş yüzler kutunun neresinde?", "Aynı renkli yüzler eştir ve kutu kapanınca karşılıklı durur. (s. 128)", kavram="Karşılıklı Yüzler Eştir"),
+            G("Bir dikdörtgenler prizmasında kaç çift eş yüz vardır?", "3",
+              "6 yüzü ikişer ikişer eşleştir.", "Ön-arka, üst-alt, sağ-sol: 3 çift. (s. 128)", kavram="Karşılıklı Yüzler Eştir",
+              yardim={"adimlar": ["Karşılıklı yüzleri eşleştir: ön ile …", "Kaç çift oldu?"]}),
+            S("Görseldeki açınım kapatılınca 2 numaralı yüzün karşısına hangisi gelir?", ["1", "5", "4"], 2,
+              "Yatay sırada aralarında tek bir yüz olan iki yüz karşılıklı gelir.",
+              "Yatay sırada 2 ile 4 arasında yalnızca 3 var: 2 ile 4 karşılıklı. (s. 127)",
+              svg=svg_kare_ag(numarali_141(), s=30), kavram="Açınım Kapanır mı?"),
+            S("Bir açınımda 5 dikdörtgen var. Kapatılınca ne olur?", ["Kapalı bir kutu olur.", "Kutunun bir yüzü açık kalır.", "İki kutu olur."], 1,
+              "Kapalı bir kutunun kaç yüzü vardır?", "Kapalı kutu için 6 yüz gerekir. 5 yüzle bir yüz açık kalır. (s. 128)", kavram="Yüzey Açınımı"),
+            S("Ela çikolata kutusunun açınımını çiziyor. Doğru bir çizimde hangisi olmalıdır?",
+              ["6 dikdörtgen, 3 çift eş yüz", "4 dikdörtgen, 2 kare", "6 tane eş kare"], 0,
+              "Dikdörtgenler prizmasının yüzlerini hatırla.", "Dikdörtgenler prizmasının açınımı 6 dikdörtgendir ve karşılıklı yüzler eştir. (s. 128)", kavram="Yüzey Açınımı"),
+            S("Hangisi dikdörtgenler prizması biçiminde değildir?", ["Ayakkabı kutusu", "Tuğla", "Konserve kutusu"], 2,
+              "Hangisinin yuvarlak yüzü var?", "Konserve kutusunun tabanları daire biçimindedir; yüzleri dikdörtgen değildir.", kavram="Dikdörtgenler Prizması"),
+            S("Aynı kutunun iki farklı açınımında hangisi aynı kalır?", ["Açınımın biçimi", "Yüzlerin sayısı ve büyüklüğü", "Yüzlerin açınımdaki yeri"], 1,
+              "Kutu değişmedi, yalnızca kesilen ayrıtlar değişti.", "Kesilen ayrıt değişince biçim değişir; yüzler aynı kalır: 6 yüz, aynı büyüklükte. (s. 128)", kavram="Birden Fazla Açınım")]
+    }
+
+
+# =================================================================
+def u2k3():
+    return {
+        "id": "u2k3", "unite": T2, "baslik": "Yüzey Alanı", "sayfalar": "s. 129–133",
+        "giris": "Bir hediye kutusunu paket kâğıdıyla kaplamak için ne kadar kâğıt gerekir? Bu konuda kutunun bütün yüzlerinin alanını toplayarak yüzey alanını bulacağız. Kare prizma ve küp için kısa yolları da öğreneceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda dikdörtgenin ve karenin alanını çok kullanacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Dikdörtgenin alanı", "sinif": "Önceki yıllar", "svg": svg2_h_alan(),
+                 "anlatim": "Dikdörtgenin alanı, içine sığan birim karelerin sayısıdır. Kısa yoldan: bir kenarı diğer kenarla çarparız.",
+                 "akilda": "Alan = kenar × kenar",
+                 "ornek": {"problem": "Kenarları 4 cm ve 3 cm olan dikdörtgenin alanı kaç cm²?", "adimlar": [
+                     {"metin": "İki kenarı çarp.", "islem": "4 · 3 = 12"},
+                     {"metin": "Alan kare birimle yazılır.", "islem": "12 cm²"}]},
+                 "sorular": [
+                     G("Kenarları 5 cm ve 3 cm olan dikdörtgenin alanı kaç cm²?", "15", "İki kenarı çarp.", "5 · 3 = 15 cm².", birim="cm²",
+                       yardim={"adimlar": ["Dikdörtgenin alanı için iki kenarı çarparız.", "5 ile 3'ü çarp."]}),
+                     G("Kenarları 6 cm ve 4 cm olan dikdörtgenin alanı kaç cm²?", "24", "İki kenarı çarp.", "6 · 4 = 24 cm².", birim="cm²",
+                       yardim={"adimlar": ["Dikdörtgenin alanı için iki kenarı çarparız.", "6 ile 4'ü çarp."]})]},
+                {"ad": "Karenin alanı ve üs", "sinif": "1. tema, 10. konu", "svg": svg2_h_kare_alan(),
+                 "anlatim": "Karenin kenarları eşit olduğu için alanı kenar · kenar olur. Bunu üsle kısaca a[[u:2]] diye yazarız: kenarı 3 cm olan karenin alanı 3[[u:2]] = 9 cm².",
+                 "akilda": "Kare: a · a = a²",
+                 "sorular": [
+                     G("Kenarı 4 cm olan karenin alanı kaç cm²?", "16", "Kenarı kendisiyle çarp.", "4 · 4 = 4[[u:2]] = 16 cm².", birim="cm²",
+                       yardim={"adimlar": ["Karenin dört kenarı eşit: alan = kenar · kenar.", "4 ile 4'ü çarp."]}),
+                     S("5[[u:2]] kaçtır?", ["10", "25", "7"], 1, "Üs, tabanın kaç kere çarpıldığını söyler.", "5[[u:2]] = 5 · 5 = 25.")]},
+                {"ad": "Alan birimleri", "sinif": "Önceki yıllar", "svg": svg2_h_birim(),
+                 "anlatim": "Uzunluk cm, m gibi birimlerle ölçülür. Alan ise kare birimlerle ölçülür: cm², m². Küçük ² işareti “kare” diye okunur.",
+                 "akilda": "Uzunluk cm, alan cm²",
+                 "sorular": [
+                     S("Bir kutunun bir yüzünün alanı hangisi gibi yazılır?", ["20 cm", "20 cm²", "20 kg"], 1, "Alan kare birimle yazılır.", "Alan cm², m² gibi kare birimlerle yazılır."),
+                     S("Hangisi bir uzunluktur?", ["8 m", "8 m²", "8 kg"], 0, "Kare işareti olmayan uzunluk birimini ara.", "m bir uzunluk birimidir; m² alan birimidir.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Yüzey Alanı", "renk": "#1f9e8f", "svg": svg2_hediye(),
+             "aciklama": "Bir cismin bütün yüzlerinin alanlarının toplamına yüzey alanı denir. (s. 129)",
+             "ek": "Yusuf Öğretmen hediye kutusunu paket kâğıdıyla kaplayacak. Gereken en az kâğıt, kutunun yüzey alanı kadardır. Yüzey alanı bir alan olduğu için cm², m² gibi kare birimlerle yazılır. (s. 129)",
+             "akilda": "Bütün yüzleri kaplamak",
+             "soru": S("Hediye kutusunu paket kâğıdıyla tamamen kaplamak için neyi bulmalıyız?", ["Kutunun yüzey alanını", "Kutunun ağırlığını", "Kutunun yüksekliğini"], 0,
+                       "Kaplamak, bütün yüzlerin üstünü örtmek demek.", "Bütün yüzlerin alanları toplamı yüzey alanıdır; gereken en az kâğıt bu kadardır. (s. 129)")},
+            {"ad": "Üç Çift Eş Yüz", "renk": "#1d6fa3", "svg": svg2_uc_cift(),
+             "aciklama": "Ayrıtları a, b ve c olan bir dikdörtgenler prizmasında yüzlerin alanları a · b, a · c ve b · c'dir. Her birinden ikişer tane vardır. (s. 129)",
+             "ek": "Karşılıklı yüzler eş olduğu için 6 yüzün alanını tek tek hesaplamak gerekmez: 3 farklı yüzü bulmak yeter. (s. 129)",
+             "akilda": "3 farklı yüz, ikişer tane",
+             "cozum": {"baslik": "Hediye kutusu",
+                       "problem": "Yusuf Öğretmen'in hediye kutusunun ayrıtları 20 cm, 25 cm ve 30 cm. Üç farklı yüzün alanını bulalım.",
+                       "svg": svg_prizma_et("20 cm", "25 cm", "30 cm", A=100, B=80, C=90, h=180),
+                       "adimlar": [
+                           {"metin": "En ile boyun yaptığı yüz (üst ve alt).", "islem": "20 · 25 = 500"},
+                           {"metin": "En ile yüksekliğin yaptığı yüz (ön ve arka).", "islem": "20 · 30 = 600"},
+                           {"metin": "Boy ile yüksekliğin yaptığı yüz (sağ ve sol).", "islem": "25 · 30 = 750"}],
+                       "sonuc": "Kutuda 500 cm², 600 cm² ve 750 cm²'lik yüzlerden ikişer tane var. (s. 129)"},
+             "soru": G("Ayrıtları 2 cm, 3 cm ve 4 cm olan bir kutunun en büyük yüzünün alanı kaç cm²?", "12",
+                       "Üç farklı yüz: 2 · 3, 2 · 4 ve 3 · 4. Hangisi en büyük?", "Yüzler 6, 8 ve 12 cm². En büyüğü 3 · 4 = 12 cm². (s. 129)", birim="cm²",
+                       yardim={"adimlar": ["Üç farklı yüzün alanını bul: 2 · 3, 2 · 4, 3 · 4.", "Üç sonucu karşılaştır."]})},
+            {"ad": "Yüzey Alanı Formülü", "renk": "#7b4fc9", "svg": svg2_formul(),
+             "aciklama": "Ayrıtları a, b ve c olan dikdörtgenler prizmasının yüzey alanı = 2 · (a · b + a · c + b · c). (s. 129)",
+             "ek": "Üç farklı yüzün alanını topla, sonucu 2 ile çarp. Her yüzden iki tane olduğu için 2 ile çarparız. (s. 129)",
+             "akilda": "Üçünü topla, 2 ile çarp",
+             "cozum": {"baslik": "Kaç cm² kâğıt?",
+                       "problem": "Hediye kutusunun yüzleri 500 cm², 600 cm² ve 750 cm². Yusuf Öğretmen'e en az kaç cm² paket kâğıdı gerekir?",
+                       "adimlar": [
+                           {"metin": "Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı."},
+                           {"metin": "Üç farklı yüzü topla.", "islem": "500 + 600 + 750 = 1850"},
+                           {"metin": "Her yüzden iki tane var: 2 ile çarp.", "islem": "2 · 1850 = 3700"}],
+                       "sonuc": "En az 3700 cm² paket kâğıdı gerekir. (s. 129)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Ayrıtları 2 cm, 3 cm ve 4 cm olan bir kutunun yüzey alanını bul.",
+                       "svg": svg_prizma_et("2 cm", "3 cm", "4 cm", A=70, B=80, C=100, h=180),
+                       "adimlar": [
+                           {"metin": "Üç farklı yüzün alanı: 2 · 3, 2 · 4 ve 3 · 4.",
+                            "soru": G("6 + 8 + 12 kaçtır?", "26", "Önce 6 ile 8'i topla, sonra 12 ekle.", "6 + 8 = 14, 14 + 12 = 26.",
+                                      yardim={"adimlar": ["6 ile 8'i topla.", "Çıkan sayıya 12 ekle."]}),
+                            "islem": "6 + 8 + 12 = 26"},
+                           {"metin": "Her yüzden iki tane var.",
+                            "soru": G("2 · 26 kaçtır?", "52", "26'yı iki kere topla.", "26 + 26 = 52.",
+                                      yardim={"adimlar": ["2 · 26, iki tane 26 demek.", "26 ile 26'yı topla."]}),
+                            "islem": "2 · 26 = 52 cm²"}],
+                       "sonuc": "Harika! Kutunun yüzey alanı 52 cm²."},
+             "soru": S("Ayrıtları a, b ve c olan dikdörtgenler prizmasının yüzey alanı hangisidir?", ["a · b · c", "a + b + c", "2 · (a · b + a · c + b · c)"], 2,
+                       "Üç farklı yüzün alanını topla, 2 ile çarp.", "Yüzler a · b, a · c, b · c; ikişer tane. 2 · (a · b + a · c + b · c). (s. 129)")},
+            {"ad": "Kare Prizma", "renk": "#e8590c", "svg": svg2_kare_prizma(),
+             "aciklama": "İki karşılıklı yüzü kare olan dikdörtgenler prizmasına kare prizma denir. Kare prizma, dikdörtgenler prizmasının özel bir durumudur. (s. 131)",
+             "ek": "Kitaptaki şurup kutusu kare prizmadır. Taban kenarı a, yüksekliği b ise: yüzey alanı = 2 · a[[u:2]] + 4 · a · b. (s. 130–131)",
+             "akilda": "2 kare + 4 eş dikdörtgen",
+             "cozum": {"baslik": "Şurup kutusu",
+                       "problem": "Tabanı kenarı 3 cm olan kare, yüksekliği 10 cm olan bir şurup kutusunun yüzey alanını bulalım.",
+                       "svg": svg_prizma_et("3 cm", "3 cm", "10 cm", A=50, B=50, C=120, h=180),
+                       "adimlar": [
+                           {"metin": "İki kare yüz: 3 · 3 = 9. İki tane.", "islem": "2 · 9 = 18"},
+                           {"metin": "Dört eş dikdörtgen yüz: 3 · 10 = 30. Dört tane.", "islem": "4 · 30 = 120"},
+                           {"metin": "Topla.", "islem": "18 + 120 = 138"}],
+                       "sonuc": "Şurup kutusunun yüzey alanı 138 cm². (s. 131)"},
+             "soru": G("Tabanı kenarı 2 cm olan kare, yüksekliği 5 cm olan kare prizmanın yüzey alanı kaç cm²?", "48",
+                       "İki kare yüz: 2 · 2. Dört eş dikdörtgen yüz: 2 · 5.", "2 · 4 = 8 ve 4 · 10 = 40. 8 + 40 = 48 cm². (s. 131)", birim="cm²",
+                       yardim={"adimlar": ["İki kare yüz: 2 · 2, iki tane.", "Dört eş dikdörtgen yüz: 2 · 5, dört tane.", "İki sonucu topla."]})},
+            {"ad": "Küp", "renk": "#c92a2a", "svg": svg2_kup(),
+             "aciklama": "Bütün yüzleri eş kare olan prizmaya küp denir. Küpün yüzey alanı = 6 · a[[u:2]]. (s. 131)",
+             "ek": "Küp de dikdörtgenler prizmasının özel bir durumudur: üç ayrıtı da eşittir. 6 yüzün hepsi aynı karedir. (s. 131)",
+             "akilda": "6 eş kare: 6 · a²",
+             "soru": G("Bir ayrıtı 2 cm olan küpün yüzey alanı kaç cm²?", "24",
+                       "Bir yüzün alanı 2 · 2. Küpün kaç yüzü var?", "Bir yüz 2 · 2 = 4 cm². 6 yüz: 6 · 4 = 24 cm². (s. 131)", birim="cm²",
+                       yardim={"adimlar": ["Bir yüzün alanı: 2 · 2.", "Küpün 6 eş yüzü var: bir yüzün alanını 6 ile çarp."]})},
+            {"ad": "Hangi Yüzler Kaplanacak?", "renk": "#b7791f", "svg": svg2_kapla(),
+             "aciklama": "Problemde önce sor: Kaplamak mı istiyorum, doldurmak mı? Kaplamaksa yüzey alanını bulurum. Sonra kaç yüzün kaplanacağını sayarım.",
+             "ek": "Kapaksız bir kutuda üst yüz yoktur; yalnızca 5 yüz kaplanır. Kitaptaki marangoz ise blokların bütün yüzlerini koruyucu malzemeyle kaplıyor. (s. 133)",
+             "akilda": "Kaplamak = yüzey alanı; yüzleri say",
+             "sende": {"baslik": "Kapaksız kutu",
+                       "problem": "Tabanı 10 cm × 10 cm, yüksekliği 5 cm olan kapaksız bir kutunun dışı boyanacak. Kaç cm² boyanır?",
+                       "adimlar": [
+                           {"metin": "Kaplamak mı, doldurmak mı? Boyamak bir kaplamadır. Kapak yok.",
+                            "soru": G("Kaç yüz boyanır?", "5", "Kutunun 6 yüzü var; biri eksik.", "Kapak yok: 6 − 1 = 5 yüz (taban ve 4 yan yüz).",
+                                      yardim={"adimlar": ["Kapalı bir kutunun kaç yüzü var?", "Kapak yoksa bir yüz eksik."]}),
+                            "islem": "taban + 4 yan yüz"},
+                           {"metin": "Taban: 10 · 10.", "islem": "100"},
+                           {"metin": "Yan yüzlerin her biri 10 · 5 = 50. Dört tane.",
+                            "soru": G("4 · 50 kaçtır?", "200", "4 tane 50'yi topla.", "4 · 50 = 200.",
+                                      yardim={"adimlar": ["4 · 50, dört tane 50 demek.", "50 + 50 + 50 + 50"]}),
+                            "islem": "4 · 50 = 200"},
+                           {"metin": "Topla.", "islem": "100 + 200 = 300 cm²"}],
+                       "sonuc": "Harika! 300 cm² boyanır."},
+             "soru": S("Ayrıtı 10 cm olan küp şeklindeki bir kutunun bütün yüzleri boyanacak. Boyanacak alanı hangi işlem verir?", ["6 · 10 · 10", "4 · 10", "10 · 10 · 10"], 0,
+                       "Boyamak = kaplamak. Küpün kaç yüzü var, bir yüzün alanı ne?", "Bir yüz 10 · 10; 6 yüz var: 6 · 10 · 10 = 600 cm². (s. 131)")}
+        ],
+        "akildaKalsin": [
+            "Yüzey alanı, bütün yüzlerin alanlarının toplamıdır.",
+            "Karşılıklı yüzler eş: 3 farklı yüzü bul, ikişer tane say.",
+            "Dikdörtgenler prizması: 2 · (a · b + a · c + b · c).",
+            "Kare prizma: 2 · a² + 4 · a · b. Küp: 6 · a².",
+            "Yüzey alanı kare birimle yazılır: cm², m².",
+            "Önce sor: Kaplamak mı, doldurmak mı? Kaç yüz kaplanacak?"],
+        "merakKutusu": [
+            {"soru": "Açınımın alanı ile yüzey alanı aynı mı?", "cevap": "Evet. Açınım, kutunun bütün yüzlerinin düz yere serilmiş hâlidir. Açınımın alanı kutunun yüzey alanına eşittir. (s. 129)"},
+            {"soru": "Neden 2 ile çarpıyoruz?", "cevap": "Karşılıklı yüzler eş olduğu için her yüzden iki tane var. Üç farklı yüzü toplayınca kutunun yarısını bulmuş oluruz; 2 ile çarpınca tamamı çıkar. (s. 129)"},
+            {"soru": "Küpü ortadan kesince yüzey alanı değişir mi?", "cevap": "Kitaptaki marangoz uzun bir bloğu ortadan kesip iki küp yapıyor. Kesilen yerde iki yeni yüz ortaya çıkar; bu yüzden iki küpün toplam yüzey alanı, bloğunkinden büyük olur. (s. 133)"},
+            {"soru": "Kare prizmada 2 kare mi, 4 kare mi var?", "cevap": "Kare prizmanın iki karşılıklı yüzü kare, diğer dört yüzü eş dikdörtgendir. Dört yüz de kare olsaydı küp olurdu. (s. 131)"}],
+        "dusunVeYaz": [{"soru": "Can, ayrıtları 2 cm, 3 cm ve 5 cm olan kutunun yüzey alanını 2 · 3 + 2 · 5 + 3 · 5 = 31 cm² buldu. Hatası ne? Doğru sonucu bul.",
+                        "ornekCevap": "Can üç farklı yüzü topladı ama 2 ile çarpmayı unuttu. Her yüzden iki tane var: 2 · 31 = 62 cm².",
+                        "anahtarlar": ["2 ile çarp", "iki", "62", "unut"]}],
+        "sorular": [
+            G("Ayrıtları 2 cm, 3 cm ve 5 cm olan dikdörtgenler prizmasının yüzey alanı kaç cm²?", "62",
+              "Üç farklı yüz: 2 · 3, 2 · 5, 3 · 5. Topla, 2 ile çarp.", "Yüzler 6, 10, 15. 6 + 10 + 15 = 31. 2 · 31 = 62 cm². (s. 129)",
+              birim="cm²", kavram="Yüzey Alanı Formülü",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Yüzey alanı soruluyor.", "Üç farklı yüzün alanını bul: 2 · 3, 2 · 5, 3 · 5.", "Üçünü topla.", "Toplamı 2 ile çarp."]}),
+            G("Bir ayrıtı 5 cm olan küpün yüzey alanı kaç cm²?", "150",
+              "Bir yüzün alanını bul, 6 ile çarp.", "Bir yüz 5 · 5 = 25 cm². 6 · 25 = 150 cm². (s. 131)", birim="cm²", kavram="Küp",
+              yardim={"adimlar": ["Küpün bir yüzü kare: 5 · 5.", "Küpün 6 eş yüzü var.", "Bir yüzün alanını 6 ile çarp."]}),
+            S("Görseldeki açınımda yüzlerin alanları cm² olarak yazılmıştır. Kutunun yüzey alanı kaç cm²?", ["26", "52", "48"], 1,
+              "Açınımdaki altı sayıyı topla.", "8 + 8 + 12 + 12 + 6 + 6 = 52 cm². Açınımın alanı yüzey alanına eşittir. (s. 129)",
+              svg=svg_acinim(80, 40, 50, {"ust": "8", "on": "12", "alt": "8", "arka": "12", "sol": "6", "sag": "6"}, boy=15), kavram="Üç Çift Eş Yüz"),
+            G("Tabanı kenarı 4 cm olan kare, yüksekliği 5 cm olan kare prizmanın yüzey alanı kaç cm²?", "112",
+              "İki kare yüz: 4 · 4. Dört eş dikdörtgen yüz: 4 · 5.", "2 · 16 = 32 ve 4 · 20 = 80. 32 + 80 = 112 cm². (s. 131)", birim="cm²", kavram="Kare Prizma",
+              yardim={"adimlar": ["İki kare yüzün alanı: 4 · 4, iki tane.", "Dört eş dikdörtgen yüzün alanı: 4 · 5, dört tane.", "İki sonucu topla."]}),
+            S("Hangisi yüzey alanı için uygun bir birimdir?", ["cm", "kg", "cm²"], 2,
+              "Yüzey alanı bir alandır. Alan hangi birimle yazılır?", "Alan kare birimle yazılır: cm². (s. 129)", kavram="Yüzey Alanı"),
+            S("Bir dikdörtgenler prizmasının birbirinden farklı üç yüzünün alanları 20 cm², 30 cm² ve 40 cm²'dir. Yüzey alanı kaç cm²'dir?", ["90", "120", "180"], 2,
+              "Her yüzden kaç tane var?", "Her yüzden iki tane var: 2 · (20 + 30 + 40) = 180 cm². (s. 132)", kavram="Üç Çift Eş Yüz"),
+            G("Tabanı 6 cm × 4 cm, yüksekliği 3 cm olan kapaksız bir kutunun dışı kâğıtla kaplanacak. Kaç cm² kâğıt gerekir?", "84",
+              "Kapak yok: taban + 4 yan yüz. Ön-arka 6 · 3, sağ-sol 4 · 3.", "Taban 6 · 4 = 24. Ön ve arka 2 · 18 = 36. Sağ ve sol 2 · 12 = 24. 24 + 36 + 24 = 84 cm².",
+              birim="cm²", kavram="Hangi Yüzler Kaplanacak?",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Kaplamak. Kapak yok: kaç yüz kaplanacak?", "Tabanın alanı: 6 · 4.", "Ön ve arka: 6 · 3, iki tane. Sağ ve sol: 4 · 3, iki tane.", "Hepsini topla."]}),
+            S("Bir küpün bütün ayrıtlarının uzunlukları toplamı 60 cm'dir. Bu küpün yüzey alanı kaç cm²'dir?", ["150", "60", "360"], 0,
+              "Küpün 12 eş ayrıtı var. Önce bir ayrıtı bul.", "Bir ayrıt 60 ÷ 12 = 5 cm. Yüzey alanı 6 · 5 · 5 = 150 cm². (s. 132)", kavram="Küp",
+              yardim={"adimlar": ["Küpün 12 ayrıtı var ve hepsi eşit.", "Bir ayrıt: 60 ÷ 12.", "Bir yüzün alanını bul, 6 ile çarp."]}),
+            S("Hangisi doğrudur?", ["Küp bir dikdörtgenler prizmasıdır.", "Kare prizmanın bütün yüzleri karedir.", "Küpün yüzleri farklı büyüklüktedir."], 0,
+              "Kare özel bir dikdörtgendir. Küpün yüzleri ne şekildedir?", "Küp ve kare prizma, dikdörtgenler prizmasının özel durumlarıdır. (s. 131)", kavram="Kare Prizma"),
+            G("Ela ayrıtları 10 cm, 10 cm ve 20 cm olan bir kutuyu paket kâğıdıyla kaplayacak. En az kaç cm² kâğıt gerekir?", "1000",
+              "Kaplamak = yüzey alanı. Üç farklı yüz: 10 · 10, 10 · 20, 10 · 20.", "Yüzler 100, 200, 200. Toplam 500. 2 · 500 = 1000 cm². (s. 129)",
+              birim="cm²", kavram="Yüzey Alanı",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı.", "Üç farklı yüzün alanı: 10 · 10, 10 · 20, 10 · 20.", "Üçünü topla.", "Toplamı 2 ile çarp."]})]
+    }
+
+
+# =================================================================
+def u2t1():
+    return {
+        "id": "u2t1", "tur": "tarama", "unite": T2,
+        "baslik": "Ara Durak 1: Cisimler ve Yüzeyleri", "sayfalar": "Konu 1–3 · s. 118–133",
+        "giris": "İlk üç konuyu bitirdin, tebrikler! Şimdi kısa bir mola verip öğrendiklerimizi birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+        "buyukResim": "Önce eş küplerden yapılara altı yönden baktık ve kareleri saydık. Sonra bir kutuyu kesip açtık: 6 yüz, 3 çift eş yüz. En son bu yüzlerin alanlarını toplayıp yüzey alanını bulduk. Kutu biçimindeki bir küp yapısında altı görünümdeki karelerin toplamı da yüzey alanını verir!",
+        "kapsar": ["u2k1", "u2k2", "u2k3"],
+        "hatirla": [
+            {"konu": "u2k1", "maddeler": [
+                "Bir yapıya altı yönden bakılır; her küp yüzü kare görünür.",
+                "Öndeki küp arkasındakini saklar: “en az kaç küp” diye sorarız.",
+                "Ön-arka ve sağ-sol görünümler ayna gibidir (dikey doğruya göre simetrik)."]},
+            {"konu": "u2k2", "maddeler": [
+                "Dikdörtgenler prizması: 6 yüz, 12 ayrıt, 8 köşe.",
+                "Karşılıklı yüzler eştir: 3 çift.",
+                "Açınım 6 dikdörtgendir; eş yüzler kapanınca karşılıklı gelir."]},
+            {"konu": "u2k3", "maddeler": [
+                "Yüzey alanı = bütün yüzlerin alanları toplamı.",
+                "2 · (a · b + a · c + b · c); küpte 6 · a².",
+                "Kaplamak = yüzey alanı; birim cm²."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Bu bilgi hangi konudan?", "kutular": [
+            {"etiket": "Görünümler", "uyeler": ["Altı Yön", "Karşılıklı Görünümler Simetrik"]},
+            {"etiket": "Açınım", "uyeler": ["Yüzey Açınımı", "Açınım Kapanır mı?"]},
+            {"etiket": "Yüzey alanı", "uyeler": ["Yüzey Alanı Formülü", "Küp"]}]}],
+        "sorular": [
+            G("Görseldeki yapı, ayrıtı 1 cm olan 2 eş küpten yapıldı. Yapının yüzey alanı kaç cm²?", "10",
+              "Altı yönden bak ve kareleri say. Her kare 1 cm².",
+              "Önden 2, arkadan 2, üstten 2, alttan 2, sağdan 1, soldan 1 kare: 10 kare. Her kare 1 cm²: 10 cm².",
+              birim="cm²", svg=svg_yapi(Y_IKILI, s=40),
+              kaynak=[K("u2k1", "Görünüm Kare Gösterir"), K("u2k3", "Yüzey Alanı")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Yüzey alanı: bütün yüzleri say.", "Önden, arkadan, üstten, alttan kaç kare görünür?", "Sağdan ve soldan kaç kare görünür?", "Bütün kareleri topla; her kare 1 cm²."]}),
+            G("Ayrıtı 1 cm olan 3 eş küp yan yana dizildi; 3 cm, 1 cm ve 1 cm'lik bir prizma oluştu. Bu prizmanın yüzey alanı kaç cm²?", "14",
+              "Üç farklı yüz: 3 · 1, 3 · 1, 1 · 1. Topla, 2 ile çarp. Ya da altı yönden kareleri say.",
+              "Yüzler 3, 3 ve 1 cm². 2 · (3 + 3 + 1) = 14 cm². Kareleri sayınca da 3 + 3 + 3 + 3 + 1 + 1 = 14.",
+              birim="cm²", svg=svg_yapi(Y_UCLU, s=36),
+              kaynak=[K("u2k1", "Görünüm Kare Gösterir"), K("u2k3", "Yüzey Alanı Formülü")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Yüzey alanı.", "Ölçüler: 3 cm, 1 cm, 1 cm. Üç farklı yüz: 3 · 1, 3 · 1, 1 · 1.", "Üçünü topla.", "Toplamı 2 ile çarp."]}),
+            S("Görseldeki açınım kapatılıp küp yapıldı. Önden bakınca 2 numaralı yüz görünüyor. Arkadan bakınca hangi yüz görünür?", ["4", "3", "5"], 0,
+              "Arka, önün karşısıdır. Açınımda 2'nin karşısına hangi yüz gelir?",
+              "Dik sırada 2 ile 4 arasında yalnızca 3 var: 2 ile 4 karşılıklı. Ön yüz 2 ise arka yüz 4. (s. 127)",
+              svg=svg_kare_ag(numarali_hac()),
+              kaynak=[K("u2k2", "Açınım Kapanır mı?"), K("u2k1", "Altı Yön")]),
+            S("Ela ayrıtları 2 cm, 3 cm ve 4 cm olan bir kutunun açınımını çizdi. Açınımda 3 cm × 4 cm'lik kaç dikdörtgen olmalıdır?", ["1", "2", "3"], 1,
+              "Karşılıklı yüzler eştir. 3 cm × 4 cm'lik yüzün karşısında ne var?",
+              "Her yüzün karşısında eşi vardır: 3 cm × 4 cm'lik yüzden 2 tane olur. (s. 128–129)",
+              kaynak=[K("u2k2", "Karşılıklı Yüzler Eştir"), K("u2k3", "Üç Çift Eş Yüz")]),
+            G("Ayrıtı 2 cm olan küp şeklindeki bir zarın açınımı kartondan kesilecek. Açınım en az kaç cm² karton tutar?", "24",
+              "Açınımın alanı, küpün yüzey alanına eşittir.",
+              "Açınım 6 eş kareden oluşur. Bir kare 2 · 2 = 4 cm². 6 · 4 = 24 cm².",
+              birim="cm²", kaynak=[K("u2k2", "Yüzey Açınımı"), K("u2k3", "Küp")],
+              yardim={"adimlar": ["Küpün açınımı kaç kareden oluşur?", "Bir karenin alanı: 2 · 2.", "Bir karenin alanını kare sayısıyla çarp."]}),
+            G("Görseldeki yapı, ayrıtı 1 cm olan 4 eş küpten yapıldı. Üstten görünümü 4 kare, önden görünümü 2 karedir. Yapının yüzey alanı kaç cm²?", "16",
+              "Altı yönden kareleri say: üst ve alt, ön ve arka, sağ ve sol.",
+              "Üst 4, alt 4, ön 2, arka 2, sağ 2, sol 2: 16 kare. Her kare 1 cm²: 16 cm². Formülle: 2 · (4 + 2 + 2) = 16.",
+              birim="cm²", svg=svg_yapi(Y_BLOK4, s=36),
+              kaynak=[K("u2k1", "Görünümden Yapıya"), K("u2k3", "Yüzey Alanı")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Yüzey alanı.", "Üstten ve alttan kaç kare? Önden ve arkadan kaç kare?", "Sağdan ve soldan kaç kare?", "Hepsini topla; her kare 1 cm²."]}),
+            S("Hangisi doğrudur?",
+              ["Küpün açınımı 4 kareden oluşur.", "Önden ve arkadan görünümlerdeki kare sayıları farklıdır.", "Bir kutunun açınımının alanı, kutunun yüzey alanına eşittir."], 2,
+              "Açınım, kutunun bütün yüzlerinin düz yere serilmiş hâlidir.",
+              "Açınım bütün yüzlerden oluştuğu için alanı yüzey alanına eşittir. Küp açınımı 6 karedir; ön ve arka görünümler ayna gibidir, kare sayıları aynıdır.",
+              kaynak=[K("u2k2", "Yüzey Açınımı"), K("u2k3", "Yüzey Alanı"), K("u2k1", "Karşılıklı Görünümler Simetrik")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1]
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
@@ -3844,7 +4767,7 @@ import re
 def bosluk(x):
     """Sayı ile birimi ayrı satıra düşmesin: '−8 m' → '−8\u00a0m' (bölünmez boşluk)."""
     if isinstance(x, str):
-        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|cm|L|TL|°C|kat|birim|MB|metre|derece|g|gram|dakika)\b", "\\1\u00a0\\2", x)
+        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|cm|dm|mm|L|TL|°C|kat|birim|br|MB|metre|derece|g|gram|dakika)([²³]?)(?![\w²³])", "\\1\u00a0\\2\\3", x)
     if isinstance(x, list):
         return [bosluk(v) for v in x]
     if isinstance(x, dict):

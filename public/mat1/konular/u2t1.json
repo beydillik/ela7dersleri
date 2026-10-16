@@ -1,0 +1,242 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Ara Durak 1: Cisimler ve Yüzeyleri",
+ "sayfalar": "Konu 1–3 · s. 118–133",
+ "giris": "İlk üç konuyu bitirdin, tebrikler! Şimdi kısa bir mola verip öğrendiklerimizi birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Önce eş küplerden yapılara altı yönden baktık ve kareleri saydık. Sonra bir kutuyu kesip açtık: 6 yüz, 3 çift eş yüz. En son bu yüzlerin alanlarını toplayıp yüzey alanını bulduk. Kutu biçimindeki bir küp yapısında altı görünümdeki karelerin toplamı da yüzey alanını verir!",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Bir yapıya altı yönden bakılır; her küp yüzü kare görünür.",
+    "Öndeki küp arkasındakini saklar: “en az kaç küp” diye sorarız.",
+    "Ön-arka ve sağ-sol görünümler ayna gibidir (dikey doğruya göre simetrik)."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Dikdörtgenler prizması: 6 yüz, 12 ayrıt, 8 köşe.",
+    "Karşılıklı yüzler eştir: 3 çift.",
+    "Açınım 6 dikdörtgendir; eş yüzler kapanınca karşılıklı gelir."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Yüzey alanı = bütün yüzlerin alanları toplamı.",
+    "2 · (a · b + a · c + b · c); küpte 6 · a².",
+    "Kaplamak = yüzey alanı; birim cm²."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Bu bilgi hangi konudan?",
+   "kutular": [
+    {
+     "etiket": "Görünümler",
+     "uyeler": [
+      "Altı Yön",
+      "Karşılıklı Görünümler Simetrik"
+     ]
+    },
+    {
+     "etiket": "Açınım",
+     "uyeler": [
+      "Yüzey Açınımı",
+      "Açınım Kapanır mı?"
+     ]
+    },
+    {
+     "etiket": "Yüzey alanı",
+     "uyeler": [
+      "Yüzey Alanı Formülü",
+      "Küp"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Görseldeki yapı, ayrıtı 1 cm olan 2 eş küpten yapıldı. Yapının yüzey alanı kaç cm²?",
+   "cevap": "10",
+   "ipucu": "Altı yönden bak ve kareleri say. Her kare 1 cm².",
+   "aciklama": "Önden 2, arkadan 2, üstten 2, alttan 2, sağdan 1, soldan 1 kare: 10 kare. Her kare 1 cm²: 10 cm².",
+   "birim": "cm²",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='115.0,138.0 155.0,138.0 155.0,98.0 115.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='115.0,98.0 155.0,98.0 175.0,78.0 135.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='155.0,138.0 175.0,118.0 175.0,78.0 155.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='155.0,138.0 195.0,138.0 195.0,98.0 155.0,98.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='155.0,98.0 195.0,98.0 215.0,78.0 175.0,78.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='195.0,138.0 215.0,118.0 215.0,78.0 195.0,98.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='155.0' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='219.0' y='134.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Görünüm Kare Gösterir"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Yüzey Alanı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Yüzey alanı: bütün yüzleri say.",
+     "Önden, arkadan, üstten, alttan kaç kare görünür?",
+     "Sağdan ve soldan kaç kare görünür?",
+     "Bütün kareleri topla; her kare 1 cm²."
+    ]
+   }
+  },
+  {
+   "soru": "Ayrıtı 1 cm olan 3 eş küp yan yana dizildi; 3 cm, 1 cm ve 1 cm'lik bir prizma oluştu. Bu prizmanın yüzey alanı kaç cm²?",
+   "cevap": "14",
+   "ipucu": "Üç farklı yüz: 3 · 1, 3 · 1, 1 · 1. Topla, 2 ile çarp. Ya da altı yönden kareleri say.",
+   "aciklama": "Yüzler 3, 3 ve 1 cm². 2 · (3 + 3 + 1) = 14 cm². Kareleri sayınca da 3 + 3 + 3 + 3 + 1 + 1 = 14.",
+   "birim": "cm²",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='102.0,138.0 138.0,138.0 138.0,102.0 102.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='102.0,102.0 138.0,102.0 156.0,84.0 120.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='138.0,138.0 156.0,120.0 156.0,84.0 138.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='138.0,138.0 174.0,138.0 174.0,102.0 138.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='138.0,102.0 174.0,102.0 192.0,84.0 156.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='174.0,138.0 192.0,120.0 192.0,84.0 174.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='174.0,138.0 210.0,138.0 210.0,102.0 174.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='174.0,102.0 210.0,102.0 228.0,84.0 192.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='210.0,138.0 228.0,120.0 228.0,84.0 210.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='156.0' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='232.0' y='134.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Görünüm Kare Gösterir"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Yüzey Alanı Formülü"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Yüzey alanı.",
+     "Ölçüler: 3 cm, 1 cm, 1 cm. Üç farklı yüz: 3 · 1, 3 · 1, 1 · 1.",
+     "Üçünü topla.",
+     "Toplamı 2 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki açınım kapatılıp küp yapıldı. Önden bakınca 2 numaralı yüz görünüyor. Arkadan bakınca hangi yüz görünür?",
+   "secenekler": [
+    "4",
+    "3",
+    "5"
+   ],
+   "dogru": 0,
+   "ipucu": "Arka, önün karşısıdır. Açınımda 2'nin karşısına hangi yüz gelir?",
+   "aciklama": "Dik sırada 2 ile 4 arasında yalnızca 3 var: 2 ile 4 karşılıklı. Ön yüz 2 ise arka yüz 4. (s. 127)",
+   "svg": "<svg viewBox='0 0 330 136' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='150.0' y='8.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='28.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>1</text><rect x='150.0' y='38.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>2</text><rect x='150.0' y='68.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='88.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>3</text><rect x='150.0' y='98.0' width='30' height='30' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='118.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>4</text><rect x='120.0' y='38.0' width='30' height='30' fill='#ffa26b' stroke='#1b2340' stroke-width='1.8'/><text x='135.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>5</text><rect x='180.0' y='38.0' width='30' height='30' fill='#ffa26b' stroke='#1b2340' stroke-width='1.8'/><text x='195.0' y='58.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>6</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Açınım Kapanır mı?"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Altı Yön"
+    }
+   ]
+  },
+  {
+   "soru": "Ela ayrıtları 2 cm, 3 cm ve 4 cm olan bir kutunun açınımını çizdi. Açınımda 3 cm × 4 cm'lik kaç dikdörtgen olmalıdır?",
+   "secenekler": [
+    "1",
+    "2",
+    "3"
+   ],
+   "dogru": 1,
+   "ipucu": "Karşılıklı yüzler eştir. 3 cm × 4 cm'lik yüzün karşısında ne var?",
+   "aciklama": "Her yüzün karşısında eşi vardır: 3 cm × 4 cm'lik yüzden 2 tane olur. (s. 128–129)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Karşılıklı Yüzler Eştir"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Üç Çift Eş Yüz"
+    }
+   ]
+  },
+  {
+   "soru": "Ayrıtı 2 cm olan küp şeklindeki bir zarın açınımı kartondan kesilecek. Açınım en az kaç cm² karton tutar?",
+   "cevap": "24",
+   "ipucu": "Açınımın alanı, küpün yüzey alanına eşittir.",
+   "aciklama": "Açınım 6 eş kareden oluşur. Bir kare 2 · 2 = 4 cm². 6 · 4 = 24 cm².",
+   "birim": "cm²",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Yüzey Açınımı"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Küp"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Küpün açınımı kaç kareden oluşur?",
+     "Bir karenin alanı: 2 · 2.",
+     "Bir karenin alanını kare sayısıyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki yapı, ayrıtı 1 cm olan 4 eş küpten yapıldı. Üstten görünümü 4 kare, önden görünümü 2 karedir. Yapının yüzey alanı kaç cm²?",
+   "cevap": "16",
+   "ipucu": "Altı yönden kareleri say: üst ve alt, ön ve arka, sağ ve sol.",
+   "aciklama": "Üst 4, alt 4, ön 2, arka 2, sağ 2, sol 2: 16 kare. Her kare 1 cm²: 16 cm². Formülle: 2 · (4 + 2 + 2) = 16.",
+   "birim": "cm²",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='129.0,120.0 165.0,120.0 165.0,84.0 129.0,84.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='129.0,84.0 165.0,84.0 183.0,66.0 147.0,66.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,120.0 183.0,102.0 183.0,66.0 165.0,84.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,120.0 201.0,120.0 201.0,84.0 165.0,84.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,84.0 201.0,84.0 219.0,66.0 183.0,66.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='201.0,120.0 219.0,102.0 219.0,66.0 201.0,84.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='111.0,138.0 147.0,138.0 147.0,102.0 111.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='111.0,102.0 147.0,102.0 165.0,84.0 129.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='147.0,138.0 165.0,120.0 165.0,84.0 147.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='147.0,138.0 183.0,138.0 183.0,102.0 147.0,102.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='147.0,102.0 183.0,102.0 201.0,84.0 165.0,84.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='183.0,138.0 201.0,120.0 201.0,84.0 183.0,102.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='147.0' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='223.0' y='134.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Görünümden Yapıya"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Yüzey Alanı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Yüzey alanı.",
+     "Üstten ve alttan kaç kare? Önden ve arkadan kaç kare?",
+     "Sağdan ve soldan kaç kare?",
+     "Hepsini topla; her kare 1 cm²."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "Küpün açınımı 4 kareden oluşur.",
+    "Önden ve arkadan görünümlerdeki kare sayıları farklıdır.",
+    "Bir kutunun açınımının alanı, kutunun yüzey alanına eşittir."
+   ],
+   "dogru": 2,
+   "ipucu": "Açınım, kutunun bütün yüzlerinin düz yere serilmiş hâlidir.",
+   "aciklama": "Açınım bütün yüzlerden oluştuğu için alanı yüzey alanına eşittir. Küp açınımı 6 karedir; ön ve arka görünümler ayna gibidir, kare sayıları aynıdır.",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Yüzey Açınımı"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Yüzey Alanı"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Karşılıklı Görünümler Simetrik"
+    }
+   ]
+  }
+ ]
+}
