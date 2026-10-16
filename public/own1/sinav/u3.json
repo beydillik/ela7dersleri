@@ -1,0 +1,677 @@
+{
+ "unite": 3,
+ "ders": "own1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "o3-01",
+   "konu": "u3k1",
+   "kavram": "gesture",
+   "tur": "secim",
+   "soru": "{{A thumbs up sign is a ___ that means 'good'.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "wave",
+    "gesture",
+    "smile",
+    "greet"
+   ],
+   "dogru": 1,
+   "aciklama": "Anlamı olan el hareketi {{gesture}}: jest (WB s. 24)."
+  },
+  {
+   "id": "o3-02",
+   "konu": "u3k1",
+   "kavram": "greet",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçeleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "greet",
+     "sag": "selamlamak, karşılamak"
+    },
+    {
+     "sol": "smile",
+     "sag": "gülümsemek"
+    },
+    {
+     "sol": "wave",
+     "sag": "el sallamak"
+    },
+    {
+     "sol": "shake hands",
+     "sag": "el sıkışmak"
+    }
+   ],
+   "aciklama": "Yüz ve elle iletişim kelimeleri (SB s. 35)."
+  },
+  {
+   "id": "o3-03",
+   "konu": "u3k1",
+   "kavram": "wave",
+   "tur": "bosluk",
+   "havuz": [
+    "shout",
+    "post"
+   ],
+   "cumleler": [
+    {
+     "c": "When their guests left, they came outside to ___ goodbye.",
+     "cevap": "wave"
+    },
+    {
+     "c": "Everyone understands when you ___ at them. It means you're happy.",
+     "cevap": "smile"
+    },
+    {
+     "c": "Sofia ___ us at the door.",
+     "cevap": "greeted"
+    }
+   ],
+   "aciklama": "Vedalaşmak, mutluluk ve karşılama ipuçlarına bak (SB s. 130)."
+  },
+  {
+   "id": "o3-04",
+   "konu": "u3k1",
+   "kavram": "shake hands",
+   "tur": "dy",
+   "ifade": "Kazue'ye göre Japonlar tanışırken genelde el sıkışır.",
+   "dogru": false,
+   "duzeltme": "Japonlar tanışırken genelde el sıkışmaz.",
+   "aciklama": "Kazue: Japonlar genelde {{shake hands}} yapmaz (WB s. 24)."
+  },
+  {
+   "id": "o3-05",
+   "konu": "u3k1",
+   "kavram": "smile",
+   "tur": "kisa",
+   "soru": "Mutlu olduğunu yüzünle göstermek: gülümsemek. İngilizce yaz.",
+   "yanit": "smile",
+   "aciklama": "Gülümsemek: {{smile}} (WB s. 24)."
+  },
+  {
+   "id": "o3-06",
+   "konu": "u3k1",
+   "kavram": "greet",
+   "tur": "secim",
+   "soru": "İletişim kelimeleri ve anlamları:",
+   "onculler": [
+    "{{greet}}: selamlamak",
+    "{{wave}}: el sıkışmak",
+    "{{gesture}}: jest, el işareti"
+   ],
+   "kok": "Hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "{{wave}} el sallamak; el sıkışmak {{shake hands}} (SB s. 35)."
+  },
+  {
+   "id": "o3-07",
+   "konu": "u3k2",
+   "kavram": "whisper",
+   "tur": "secim",
+   "soru": "{{Don't speak loudly. Please ___. You'll wake up the baby.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "shout",
+    "post",
+    "describe",
+    "whisper"
+   ],
+   "dogru": 3,
+   "aciklama": "Bebek uyanmasın: alçak sesle konuş, {{whisper}} (WB s. 24)."
+  },
+  {
+   "id": "o3-08",
+   "konu": "u3k2",
+   "kavram": "interpret",
+   "tur": "secim",
+   "soru": "{{say what someone's saying in another language}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "interpret",
+    "describe",
+    "post",
+    "shout"
+   ],
+   "dogru": 0,
+   "aciklama": "Konuşulanı başka dile söylemek: {{interpret}} (SB s. 35)."
+  },
+  {
+   "id": "o3-09",
+   "konu": "u3k2",
+   "kavram": "post",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "{{post}}: bir bloga ya da siteye bir şey koymak.",
+     "d": true
+    },
+    {
+     "s": "{{shout}} ile {{whisper}} zıt anlamlıdır.",
+     "d": true
+    },
+    {
+     "s": "{{describe}}: başka bir dile çevirmek.",
+     "d": false
+    },
+    {
+     "s": "{{translate}} en çok yazılı metinler için kullanılır.",
+     "d": true
+    }
+   ],
+   "aciklama": "{{describe}} tarif etmek; çevirmek {{translate}} (SB s. 35–36)."
+  },
+  {
+   "id": "o3-10",
+   "konu": "u3k2",
+   "kavram": "describe",
+   "tur": "bosluk",
+   "havuz": [
+    "wave",
+    "smile"
+   ],
+   "cumleler": [
+    {
+     "c": "I don't know what Jackie looks like. Can you ___ her to me?",
+     "cevap": "describe"
+    },
+    {
+     "c": "These instructions are in French. I need someone to ___ them for me.",
+     "cevap": "translate"
+    },
+    {
+     "c": "I only ___ when I'm very angry.",
+     "cevap": "shout"
+    }
+   ],
+   "aciklama": "Görünüş, Fransızca talimat ve kızgınlık ipuçlarına bak (WB s. 24)."
+  },
+  {
+   "id": "o3-11",
+   "konu": "u3k2",
+   "kavram": "translate",
+   "tur": "dy",
+   "ifade": "1950'lerde makineler konuşulan dili çevirebiliyordu ({{interpret}}).",
+   "dogru": false,
+   "duzeltme": "Yazılı metinleri çevirebiliyordu ama konuşulan dili çeviremiyordu.",
+   "aciklama": "{{could translate written texts}}, {{could not interpret spoken language}} (SB s. 36)."
+  },
+  {
+   "id": "o3-12",
+   "konu": "u3k2",
+   "kavram": "shout",
+   "tur": "kisa",
+   "soru": "Çok yüksek sesle konuşmak: bağırmak. İngilizce yaz.",
+   "yanit": "shout",
+   "aciklama": "Bağırmak: {{shout}}; zıddı {{whisper}} (WB s. 24)."
+  },
+  {
+   "id": "o3-13",
+   "konu": "u3k3",
+   "kavram": "could",
+   "tur": "secim",
+   "soru": "{{Many Ancient Romans ___ speak both Latin and Greek.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "can",
+    "will be able to",
+    "could",
+    "won't be able to"
+   ],
+   "dogru": 2,
+   "aciklama": "Geçmişteki yetenek: {{could}} (SB s. 37)."
+  },
+  {
+   "id": "o3-14",
+   "konu": "u3k3",
+   "kavram": "will be able to",
+   "tur": "eslestir",
+   "soru": "Kalıbı anlattığı zamanla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "can",
+     "sag": "şimdi"
+    },
+    {
+     "sol": "could",
+     "sag": "geçmiş"
+    },
+    {
+     "sol": "will be able to",
+     "sag": "gelecek"
+    }
+   ],
+   "aciklama": "{{can}} şimdi, {{could}} geçmiş, {{will be able to}} gelecek (WB s. 92)."
+  },
+  {
+   "id": "o3-15",
+   "konu": "u3k3",
+   "kavram": "Will … be able to …?",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "{{Will you can help me tomorrow?}}",
+     "d": false
+    },
+    {
+     "s": "{{I couldn't speak until I was three years old.}}",
+     "d": true
+    },
+    {
+     "s": "{{The school will be able let me know.}}",
+     "d": false
+    },
+    {
+     "s": "{{Will you be able to phone me when you get home?}}",
+     "d": true
+    }
+   ],
+   "aciklama": "{{will can}} olmaz; {{be able}}'dan sonra {{to}} gelir (WB s. 30)."
+  },
+  {
+   "id": "o3-16",
+   "konu": "u3k3",
+   "kavram": "couldn't",
+   "tur": "bosluk",
+   "havuz": [
+    "will be able to",
+    "could"
+   ],
+   "cumleler": [
+    {
+     "c": "When she was younger, she ___ speak Spanish.",
+     "cevap": "couldn't"
+    },
+    {
+     "c": "Today, you ___ see the Rosetta Stone in the British Museum.",
+     "cevap": "can"
+    },
+    {
+     "c": "Don't speak too quietly tomorrow. People ___ hear you.",
+     "cevap": "won't be able to"
+    }
+   ],
+   "aciklama": "Geçmiş olumsuz, bugün, gelecek olumsuz: zaman ipuçlarına bak (SB s. 37, WB s. 93)."
+  },
+  {
+   "id": "o3-17",
+   "konu": "u3k3",
+   "kavram": "will be able to",
+   "tur": "secim",
+   "soru": "Yetenek kalıpları:",
+   "onculler": [
+    "{{can}}'in gelecek hâli yoktur.",
+    "{{could}} geçmişteki yeteneği anlatır.",
+    "{{will be able to}}'dan sonra fiil {{-ing}} alır."
+   ],
+   "kok": "Hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "{{will be able to}}'dan sonra fiil yalın gelir: {{will be able to chat}} (WB s. 92)."
+  },
+  {
+   "id": "o3-18",
+   "konu": "u3k3",
+   "kavram": "can",
+   "tur": "kisa",
+   "soru": "{{Carlos is bilingual. He ___ speak Spanish and English perfectly.}} Boşluğa ne gelir? İngilizce yaz.",
+   "yanit": "can",
+   "aciklama": "Şimdiki yetenek: {{can}} (SB s. 37)."
+  },
+  {
+   "id": "o3-19",
+   "konu": "u3k4",
+   "kavram": "tell the truth",
+   "tur": "secim",
+   "soru": "Hangisi doğru bir kalıptır?",
+   "secenekler": [
+    "say the truth",
+    "tell hello",
+    "tell the truth",
+    "say a joke"
+   ],
+   "dogru": 2,
+   "aciklama": "Doğruyu söylemek {{tell the truth}} (SB s. 130)."
+  },
+  {
+   "id": "o3-20",
+   "konu": "u3k4",
+   "kavram": "say hello",
+   "tur": "eslestir",
+   "soru": "Kalıbı Türkçesiyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "say sorry",
+     "sag": "özür dilemek"
+    },
+    {
+     "sol": "tell a lie",
+     "sag": "yalan söylemek"
+    },
+    {
+     "sol": "tell a joke",
+     "sag": "fıkra anlatmak"
+    },
+    {
+     "sol": "say hello",
+     "sag": "merhaba demek"
+    }
+   ],
+   "aciklama": "{{say}} ve {{tell}} kalıpları (SB s. 38)."
+  },
+  {
+   "id": "o3-21",
+   "konu": "u3k4",
+   "kavram": "tell a joke",
+   "tur": "bosluk",
+   "havuz": [
+    "spoke",
+    "talked"
+   ],
+   "cumleler": [
+    {
+     "c": "Daniel ___ us a really funny joke.",
+     "cevap": "told"
+    },
+    {
+     "c": "I ___ sorry to Luisa yesterday.",
+     "cevap": "said"
+    },
+    {
+     "c": "Paula didn't ___ hello to me at the party.",
+     "cevap": "say"
+    }
+   ],
+   "aciklama": "{{a joke}} → {{told}}; {{sorry}} → {{said}}; {{didn't}}'ten sonra {{say}} (SB s. 130, WB s. 30)."
+  },
+  {
+   "id": "o3-22",
+   "konu": "u3k4",
+   "kavram": "tell a lie",
+   "tur": "dy",
+   "ifade": "{{I said her a lie.}} cümlesi doğrudur.",
+   "dogru": false,
+   "duzeltme": "I told her a lie.",
+   "aciklama": "Yalan {{tell}} ile: {{I told her a lie.}} (SB s. 130)."
+  },
+  {
+   "id": "o3-23",
+   "konu": "u3k4",
+   "kavram": "say something in Italian",
+   "tur": "secim",
+   "soru": "{{say}} ile kullanılanlar:",
+   "onculler": [
+    "{{hello}}",
+    "{{a story}}",
+    "{{something in Italian}}"
+   ],
+   "kok": "Hangileri {{say}} ile kullanılır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "{{a story}} {{tell}} ile kullanılır: {{tell a story}} (SB s. 130)."
+  },
+  {
+   "id": "o3-24",
+   "konu": "u3k4",
+   "kavram": "say yes/no",
+   "tur": "kisa",
+   "soru": "{{When you don't want to do something, you can always ___ no.}} Boşluğa ne gelir? İngilizce yaz.",
+   "yanit": "say",
+   "aciklama": "Hayır demek: {{say no}} (WB s. 30)."
+  },
+  {
+   "id": "o3-25",
+   "konu": "u3k5",
+   "kavram": "since",
+   "tur": "secim",
+   "soru": "{{Mr Wilson has worked here ___ 2015.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "for",
+    "since",
+    "ago",
+    "in"
+   ],
+   "dogru": 1,
+   "aciklama": "Başlangıç yılı: {{since 2015}} (SB s. 39)."
+  },
+  {
+   "id": "o3-26",
+   "konu": "u3k5",
+   "kavram": "for",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "{{I've been here for hours.}}",
+     "d": true
+    },
+    {
+     "s": "{{I've been here for 1 pm.}}",
+     "d": false
+    },
+    {
+     "s": "{{We've been best friends since 2009.}}",
+     "d": true
+    },
+    {
+     "s": "{{She has lived here since six months.}}",
+     "d": false
+    }
+   ],
+   "aciklama": "Süre {{for}}, başlangıç {{since}} (SB s. 39, WB s. 92)."
+  },
+  {
+   "id": "o3-27",
+   "konu": "u3k5",
+   "kavram": "for",
+   "tur": "bosluk",
+   "havuz": [
+    "ago",
+    "yet"
+   ],
+   "cumleler": [
+    {
+     "c": "I've lived here ___ about six months.",
+     "cevap": "for"
+    },
+    {
+     "c": "I haven't eaten anything ___ this morning.",
+     "cevap": "since"
+    },
+    {
+     "c": "___ long have you known your best friend?",
+     "cevap": "How"
+    }
+   ],
+   "aciklama": "Süre {{for}}, başlangıç {{since}}, soru {{How long}} (SB s. 39)."
+  },
+  {
+   "id": "o3-28",
+   "konu": "u3k5",
+   "kavram": "How long have you …?",
+   "tur": "secim",
+   "soru": "{{Igor / live in Moscow}} Doğru soru hangisi?",
+   "secenekler": [
+    "How long does Igor live in Moscow?",
+    "How long Igor has lived in Moscow?",
+    "How long is Igor living in Moscow?",
+    "How long has Igor lived in Moscow?"
+   ],
+   "dogru": 3,
+   "aciklama": "{{How long}} + {{has}} + özne + V3 (SB s. 39)."
+  },
+  {
+   "id": "o3-29",
+   "konu": "u3k5",
+   "kavram": "since + cümle",
+   "tur": "eslestir",
+   "soru": "Cümle başlarını sonlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "I've lived here for",
+     "sag": "two years."
+    },
+    {
+     "sol": "I've had this phone since",
+     "sag": "2015."
+    },
+    {
+     "sol": "Max has been on the computer since",
+     "sag": "he woke up."
+    },
+    {
+     "sol": "I've been able to speak French since",
+     "sag": "I was a child."
+    }
+   ],
+   "aciklama": "Süre {{for}}; başlangıç ya da cümle {{since}} (WB s. 28)."
+  },
+  {
+   "id": "o3-30",
+   "konu": "u3k5",
+   "kavram": "since",
+   "tur": "kisa",
+   "soru": "{{The Japanese have used emoji ___ 1999.}} Boşluğa ne gelir? İngilizce yaz.",
+   "yanit": "since",
+   "aciklama": "Başlangıç yılı: {{since 1999}} (WB s. 25)."
+  },
+  {
+   "id": "o3-31",
+   "konu": "u3k6",
+   "kavram": "past simple",
+   "tur": "secim",
+   "soru": "{{He ___ me the same joke yesterday.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "has told",
+    "told",
+    "have told",
+    "tells"
+   ],
+   "dogru": 1,
+   "aciklama": "{{yesterday}} bitmiş zaman: {{told}} (WB s. 93)."
+  },
+  {
+   "id": "o3-32",
+   "konu": "u3k6",
+   "kavram": "present perfect",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "{{My mother has worked at this museum since 2004.}}",
+     "d": true
+    },
+    {
+     "s": "{{They didn't begin the exam yet.}}",
+     "d": false
+    },
+    {
+     "s": "{{I fell off my bike yesterday.}}",
+     "d": true
+    },
+    {
+     "s": "{{I haven't done any exercise last week.}}",
+     "d": false
+    }
+   ],
+   "aciklama": "{{since}}, {{yet}} present perfect; {{yesterday}}, {{last week}} past simple (WB s. 31, 93)."
+  },
+  {
+   "id": "o3-33",
+   "konu": "u3k6",
+   "kavram": "all my life",
+   "tur": "eslestir",
+   "soru": "Zaman ifadesini anlamıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "all my life",
+     "sag": "since I was born"
+    },
+    {
+     "sol": "over the last few years",
+     "sag": "recently"
+    },
+    {
+     "sol": "these days",
+     "sag": "at the moment"
+    },
+    {
+     "sol": "soon",
+     "sag": "in the very near future"
+    }
+   ],
+   "aciklama": "Kitaptaki anlam eşleştirmesi (WB s. 29)."
+  },
+  {
+   "id": "o3-34",
+   "konu": "u3k6",
+   "kavram": "Have you ever …? / Did you …?",
+   "tur": "secim",
+   "soru": "{{Have you ever told a lie?}} – {{Yes, I have.}} Sonraki soru hangisi?",
+   "secenekler": [
+    "Who have you told the lie to yesterday?",
+    "Who did you tell the lie to?",
+    "Who you told the lie to?",
+    "Have you ever told a lie?"
+   ],
+   "dogru": 1,
+   "aciklama": "Ayrıntı past simple ile sorulur: {{did}} + fiil yalın (WB s. 28)."
+  },
+  {
+   "id": "o3-35",
+   "konu": "u3k6",
+   "kavram": "past simple",
+   "tur": "secim",
+   "soru": "Past simple ve present perfect:",
+   "onculler": [
+    "{{yesterday}} past simple ister.",
+    "{{I've been to Liverpool.}} ne zaman gittiğini söylemez.",
+    "{{last week}} past simple ister."
+   ],
+   "kok": "Hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Üçü de doğru: bitmiş zaman past simple; zaman söylenmezse present perfect (WB s. 92–93)."
+  },
+  {
+   "id": "o3-36",
+   "konu": "u3k6",
+   "kavram": "present perfect",
+   "tur": "kisa",
+   "soru": "{{I ___ lived in London for about ten years – I love it here.}} Boşluğa ne gelir? İngilizce yaz.",
+   "yanit": "have",
+   "kabul": [
+    "'ve"
+   ],
+   "aciklama": "Hâlâ orada yaşıyor: {{have lived}} (WB s. 31)."
+  },
+  {
+   "id": "o3-37",
+   "konu": "u3k6",
+   "kavram": "past simple",
+   "tur": "dy",
+   "ifade": "Languages metnine göre Steven Bird Tembé dili için bir telefon uygulaması geliştirdi.",
+   "dogru": true,
+   "aciklama": "{{He developed a phone app to translate Tembé}} (SB s. 43)."
+  }
+ ]
+}

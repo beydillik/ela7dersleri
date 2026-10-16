@@ -1,0 +1,249 @@
+{
+ "id": "u3t3",
+ "tur": "tarama",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "Ünite Sonu Taraması: Unit 3",
+ "sayfalar": "Konu 1–6 · SB s. 34–45, 120, 130 · WB s. 24–31, 92–93, 107",
+ "giris": "Unit 3 bitti! Şimdi bütün üniteyi kısa bir taramayla gözden geçireceğiz. Önce kartlara bakmadan hatırla, sonra karışık soruları çöz. Not yok; nerede zorlandığını görmek için.",
+ "buyukResim": "İletişim kelimelerini, {{say}} / {{tell}} kalıplarını, {{can}} / {{could}} / {{will be able to}} ile yeteneği ve iki geçmiş zamanı öğrendin. Hepsi birlikte: {{Kazue has interpreted for her parents since they arrived.}} {{Machines couldn't interpret spoken language in the 1950s.}}",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3",
+  "u3k4",
+  "u3k5",
+  "u3k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "{{greet}} selamlamak · {{smile}} gülümsemek.",
+    "{{gesture}} jest · {{wave}} el sallamak · {{shake hands}} el sıkışmak."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "{{shout}} bağırmak ↔ {{whisper}} fısıldamak.",
+    "{{translate}} yazı · {{interpret}} konuşma çevirmek · {{describe}} tarif · {{post}} paylaş."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Şimdi {{can}} · geçmiş {{could}} · gelecek {{will be able to}}.",
+    "{{will can}} yok: {{Will you be able to ...?}}"
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "{{say}}: {{hello}}, {{sorry}}, {{yes/no}}, {{something in Italian}}.",
+    "{{tell}}: {{a joke}}, {{a lie}}, {{the truth}}, {{a story}}, {{someone a secret}}."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Süre → {{for}}: {{for hours}}, {{for ten years}}.",
+    "Başlangıç → {{since}}: {{since 2015}}, {{since I was little}}."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Bitti, zamanı belli → past simple: {{I saw it yesterday.}}",
+    "Hâlâ sürüyor, zaman yok → present perfect: {{I've seen it.}}"
+   ]
+  }
+ ],
+ "eskiSoru": 5,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Hangi konudan?",
+   "kutular": [
+    {
+     "etiket": "İletişim kelimesi",
+     "uyeler": [
+      "greet",
+      "wave",
+      "whisper",
+      "translate"
+     ]
+    },
+    {
+     "etiket": "Yetenek (can / could)",
+     "uyeler": [
+      "can",
+      "could",
+      "will be able to"
+     ]
+    },
+    {
+     "etiket": "say / tell",
+     "uyeler": [
+      "say hello",
+      "tell the truth"
+     ]
+    },
+    {
+     "etiket": "Zaman sözcüğü",
+     "uyeler": [
+      "for",
+      "since",
+      "all my life"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "She couldn't interpret the speech.",
+    "She can interpret the speech.",
+    "She couldn't translate the speech."
+   ],
+   "dogru": 0,
+   "ipucu": "İki şeye dikkat: {{couldn't}} mı {{can}} mi; {{interpret}} mi {{translate}} mi?",
+   "aciklama": "Duyduğun cümle {{She couldn't interpret the speech.}} (SB s. 36, 130)",
+   "dinle": "She couldn't interpret the speech.",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "interpret"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "couldn't"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "They have waved goodbye.",
+    "They waved goodbye.",
+    "They will wave goodbye."
+   ],
+   "dogru": 1,
+   "ipucu": "Fiil {{waved}} mi, {{have waved}} mı?",
+   "aciklama": "Duyduğun cümle {{They waved goodbye.}} Bitmiş iş: past simple. (SB s. 130)",
+   "dinle": "They waved goodbye.",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "wave"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "past simple"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Kazue has ___ everything into Japanese since her parents arrived.}}",
+   "secenekler": [
+    "shouted",
+    "waved",
+    "interpreted"
+   ],
+   "dogru": 2,
+   "ipucu": "Anne babası İngilizce bilmiyor; Kazue ne yapıyor?",
+   "aciklama": "{{interpret}} + {{since}}: {{has interpreted}}. (WB s. 24)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "interpret"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "since + cümle"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru?",
+   "secenekler": [
+    "When I was five, I could say hello in English.",
+    "When I was five, I can tell hello in English.",
+    "When I was five, I will be able to say hello in English."
+   ],
+   "dogru": 0,
+   "ipucu": "{{When I was five}}: geçmiş. {{hello}} hangi fiille?",
+   "aciklama": "Geçmiş yetenek {{could}} + {{say hello}}. (WB s. 92, SB s. 38)",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "could"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "say hello"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Don't ___! The baby has been asleep for an hour.}}",
+   "secenekler": [
+    "whisper",
+    "shout",
+    "smile"
+   ],
+   "dogru": 1,
+   "ipucu": "Bebek uyuyor: yapmaman gereken şey.",
+   "aciklama": "Bağırma: {{Don't shout!}} {{for an hour}}: bir saattir uyuyor. (WB s. 24)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "shout"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "for"
+    }
+   ]
+  },
+  {
+   "soru": "{{In the future, we ___ with anyone in the world by using emoji.}} Boşluğa hangisi?",
+   "secenekler": [
+    "could communicate",
+    "have communicated",
+    "will be able to communicate"
+   ],
+   "dogru": 2,
+   "ipucu": "{{In the future}}: gelecek yetenek.",
+   "aciklama": "{{we will be able to communicate with anyone in the world}}. (WB s. 25)",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "will be able to"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru bir cümle?",
+   "secenekler": [
+    "I greeted my teacher yesterday.",
+    "I've greeted my teacher yesterday.",
+    "I greet my teacher yesterday."
+   ],
+   "dogru": 0,
+   "ipucu": "{{yesterday}}: bitmiş zaman.",
+   "aciklama": "{{yesterday}} → past simple: {{I greeted my teacher yesterday.}} (WB s. 24, 92)",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "greet"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "past simple"
+    }
+   ]
+  }
+ ]
+}

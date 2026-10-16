@@ -1,0 +1,216 @@
+{
+ "id": "u3t2",
+ "tur": "tarama",
+ "unite": "Unit 3: Spread the word!",
+ "baslik": "Ara Durak 2: say/tell ve zamanlar",
+ "sayfalar": "Konu 4–6 · SB s. 38–43, 120, 130 · WB s. 25, 27–31, 92–93, 107",
+ "giris": "Üç konu daha bitti; kısa bir tekrar molası. Önce kartlara bakmadan hatırlamaya çalış. Sonra karışık soruları çöz. Not yok, sadece tekrar.",
+ "buyukResim": "{{say}} ve {{tell}} kalıplarını öğrendin. Present perfect ile ne zamandır sürdüğünü ({{for}}, {{since}}), past simple ile bitmiş işleri anlatabiliyorsun: {{I've known her since 2012.}} {{She told me a secret yesterday.}}",
+ "kapsar": [
+  "u3k4",
+  "u3k5",
+  "u3k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "{{say}}: {{hello}}, {{sorry}}, {{yes/no}}, {{something in Italian}}.",
+    "{{tell}}: {{a joke}}, {{a lie}}, {{the truth}}, {{a story}}, {{someone a secret}}.",
+    "{{tell me}} ama {{say hello to me}}. Geçmiş: {{said}}, {{told}}."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Süre → {{for}}: {{for hours}}, {{for ten years}}.",
+    "Başlangıç → {{since}}: {{since 2015}}, {{since I was little}}.",
+    "Soru: {{How long have you known ...?}}"
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Bitti, zamanı belli → past simple: {{I saw it yesterday.}}",
+    "Hâlâ sürüyor, zaman yok → present perfect: {{I've seen it.}}",
+    "{{all my life}}, {{over the last few years}}, {{these days}}, {{soon}}."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Kalıp mı, süre mi, zaman mı?",
+   "kutular": [
+    {
+     "etiket": "say / tell kalıbı",
+     "uyeler": [
+      "say hello",
+      "say sorry",
+      "tell a joke",
+      "tell the truth"
+     ]
+    },
+    {
+     "etiket": "Ne zamandır? (for / since)",
+     "uyeler": [
+      "for",
+      "since",
+      "since + cümle"
+     ]
+    },
+    {
+     "etiket": "Hangi zaman?",
+     "uyeler": [
+      "past simple",
+      "present perfect"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "He told me a joke yesterday.",
+    "He has told me a joke.",
+    "He said me a joke yesterday."
+   ],
+   "dogru": 0,
+   "ipucu": "Fiili dinle: {{told}} mu, {{has told}} mı? Sonda zaman var mı?",
+   "aciklama": "Duyduğun cümle {{He told me a joke yesterday.}} {{tell a joke}} + {{yesterday}} → past simple. (WB s. 93)",
+   "dinle": "He told me a joke yesterday.",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "tell a joke"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "past simple"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I've known my best friend for 2012.",
+    "I've known my best friend since 2012.",
+    "I knew my best friend in 2012."
+   ],
+   "dogru": 1,
+   "ipucu": "{{since}} mi {{for}} mu? Fiil {{'ve known}} mü?",
+   "aciklama": "Duyduğun cümle {{I've known my best friend since 2012.}} (WB s. 92)",
+   "dinle": "I've known my best friend since 2012.",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "since"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "present perfect"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I ___ sorry to Luisa yesterday because I told her a lie.}}",
+   "secenekler": [
+    "have said",
+    "told",
+    "said"
+   ],
+   "dogru": 2,
+   "ipucu": "{{sorry}} hangi fiille? {{yesterday}} hangi zamanı ister?",
+   "aciklama": "{{say sorry}} + {{yesterday}} → {{said}}. (SB s. 130)",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "say sorry"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "past simple"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru?",
+   "secenekler": [
+    "I've never told a lie since I was little.",
+    "I've never said a lie since I was little.",
+    "I never told a lie for I was little."
+   ],
+   "dogru": 0,
+   "ipucu": "Yalan {{tell}} ile; {{since}} + geçmiş cümle.",
+   "aciklama": "{{tell a lie}} + {{since I was little}}: {{I've never told a lie since I was little.}} (SB s. 39)",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "tell a lie"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "since + cümle"
+    }
+   ]
+  },
+  {
+   "soru": "{{A: How long have you studied English? B: ___ five years.}} Boşluğa hangisi?",
+   "secenekler": [
+    "Since",
+    "For",
+    "Ago"
+   ],
+   "dogru": 1,
+   "ipucu": "{{five years}} süre mi, başlangıç mı?",
+   "aciklama": "Süre → {{For five years.}} (SB s. 39)",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "How long have you …?"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "for"
+    }
+   ]
+  },
+  {
+   "soru": "{{Have you ever told someone a secret?}} – {{Yes, I have.}} Sonraki soru hangisi?",
+   "secenekler": [
+    "Who have you told it to last week?",
+    "Who you told it to?",
+    "Who did you tell it to?"
+   ],
+   "dogru": 2,
+   "ipucu": "Ayrıntı sorusu past simple: {{did}} + fiil yalın.",
+   "aciklama": "{{Who did you tell it to?}} (WB s. 28)",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "Have you ever …? / Did you …?"
+    }
+   ]
+  },
+  {
+   "soru": "Languages metnine göre Tembé dili için ne yapıldı?",
+   "secenekler": [
+    "Kabile üyeleri söylenenleri Portekizceye çevirdi.",
+    "Dil tamamen yok oldu.",
+    "Kabile İngilizce öğrendi."
+   ],
+   "dogru": 0,
+   "ipucu": "{{interpreted what they said into Portuguese}} cümlesini hatırla.",
+   "aciklama": "Tembé konuşanlar telefona konuştu, diğerleri Portekizceye çevirdi ({{interpreted}}): bitmiş iş, past simple. (SB s. 43)",
+   "kaynak": [
+    {
+     "konu": "u3k6",
+     "kavram": "past simple"
+    }
+   ]
+  }
+ ]
+}
