@@ -58,4 +58,33 @@ a("u2k2", "score", "secim", soru="{{He threw the ball, and the final score is 63
   secenekler=["Son skor", "Son oyuncu", "Son maç", "Son madalya"], dogru=0,
   aciklama="{{final}} son, {{score}} skor: son skor (s. 32).")
 
+# --- Konu 3: Rutinler ve Sıklık
+a("u2k3", "always", "secim", soru="Hangisi doğru yazılmıştır?",
+  secenekler=["I wake up always early.", "Always I wake up early.", "I always wake up early.", "I wake always up early."], dogru=2,
+  aciklama="Sıklık kelimesi fiilin önüne gelir: {{I always wake up early.}} (s. 31).")
+a("u2k3", "How often …?", "secim", soru="{{___ do you train? Six days a week.}} Boşluğa ne gelir?",
+  secenekler=["Where", "How often", "What", "Who"], dogru=1,
+  aciklama="Sıklığı sormak için {{How often}} (s. 31).")
+a("u2k3", "usually", "eslestir", soru="Sıklık kelimelerini yüzdeleriyle eşleştir.", ciftler=[
+  {"sol": "always", "sag": "%100"},
+  {"sol": "usually", "sag": "%80"},
+  {"sol": "sometimes", "sag": "%40"},
+  {"sol": "never", "sag": "%0"}],
+  aciklama="Kitaptaki tablo: {{always}} %100, {{usually}} %80, {{sometimes}} %40, {{never}} %0 (s. 38).")
+a("u2k3", "twice a week", "bosluk", havuz=["two", "much"], cumleler=[
+  {"c": "I work out at the gym ___ a week.", "cevap": "twice"},
+  {"c": "I swim ___ day.", "cevap": "every"},
+  {"c": "How ___ do you swim?", "cevap": "often"}],
+  aciklama="{{twice a week}} haftada iki kez, {{every day}} her gün, {{How often}} ne sıklıkla (s. 31).")
+a("u2k3", "never", "dy", ifade="{{Terry never eats junk food.}} cümlesine göre Terry bazen abur cubur yer.", dogru=False,
+  duzeltme="Terry hiç abur cubur yemez; {{never}} asla demektir.",
+  aciklama="{{never}} %0'dır: hiç yemez (s. 39).")
+a("u2k3", "sometimes", "dytablo", soru="Kitaptaki Emma röportajına göre D ya da Y seç.", ifadeler=[
+  {"s": "Emma always wakes up early.", "d": True},
+  {"s": "Emma swims every day.", "d": True},
+  {"s": "Emma sometimes eats healthy food.", "d": False}],
+  aciklama="Emma her zaman erken kalkar, her gün yüzer ve sağlıklı beslenir (s. 31).")
+a("u2k3", "often", "kisa", soru="Sık sık anlamına gelen sıklık kelimesini İngilizce yaz. ({{I ___ walk to school.}})", yanit="often",
+  aciklama="Sık sık {{often}}: {{I often walk to school.}} (s. 36).")
+
 H.yaz()

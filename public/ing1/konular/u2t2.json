@@ -1,0 +1,238 @@
+{
+ "id": "u2t2",
+ "tur": "tarama",
+ "unite": "Unit 2: Sports",
+ "baslik": "Ünite 2 Sonu Taraması",
+ "sayfalar": "Konu 1–3 · s. 27–44",
+ "giris": "Ünite 2 bitti! Şimdi bütün üniteye kısaca bakalım. Önce özetleri oku ve kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bir sporcuyu üç yönden anlatabiliyoruz: hangi sporu yapıyor, ne sıklıkla antrenman yapıyor ve maçlarda ne oluyor. Kitaptaki Emma ve Laura röportajları üçünü birlikte kullanıyor: yüzme, haftada altı gün, altın madalya.",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Sporlar: {{swimming}}, {{cycling}}, {{skiing}}, {{ice skating}}, {{doing judo}}.",
+    "{{go swimming}} ama {{doing judo}}.",
+    "{{outdoor sport}} dışarıda; {{equipment}} sporun eşyaları."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "{{spectator}} seyirci, {{medal}} madalya, {{injury}} sakatlık.",
+    "Eşit skor {{draw}}; rakibi yenmek {{beat}}.",
+    "{{score}} skor; {{achievement}} başarı."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "{{always}} > {{usually}} > {{often}} > {{sometimes}} > {{never}}.",
+    "Sıklık kelimesi fiilden önce: {{I always wake up early.}}",
+    "{{How often …?}} sorusuna cevap: {{twice a week}}, {{every day}}."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Bu kelime hangi konudan?",
+   "kutular": [
+    {
+     "etiket": "Sporun adı",
+     "uyeler": [
+      "swimming",
+      "cycling",
+      "skiing"
+     ]
+    },
+    {
+     "etiket": "Maç ve yarışma",
+     "uyeler": [
+      "medal",
+      "draw",
+      "spectator"
+     ]
+    },
+    {
+     "etiket": "Ne sıklıkla?",
+     "uyeler": [
+      "always",
+      "sometimes",
+      "never"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I swim every day.",
+    "I ski every day.",
+    "I swim every week."
+   ],
+   "dogru": 0,
+   "ipucu": "Hangi spor ve ne sıklıkla? İkisini birlikte dinle.",
+   "aciklama": "Duyduğun cümle {{I swim every day.}}: Her gün yüzerim. (s. 31)",
+   "dinle": "I swim every day.",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "swimming"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "always"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Our team never wins a medal.",
+    "Our team often wins a medal.",
+    "Our team often loses a match."
+   ],
+   "dogru": 1,
+   "ipucu": "Sıklık kelimesine ve kazanma mı kaybetme mi olduğuna dikkat et.",
+   "aciklama": "Duyduğun cümle {{Our team often wins a medal.}}: Takımımız sık sık madalya kazanır.",
+   "dinle": "Our team often wins a medal.",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "often"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "medal"
+    }
+   ]
+  },
+  {
+   "soru": "{{How often do you go cycling?}} Hangisi uygun cevap?",
+   "secenekler": [
+    "I like cycling.",
+    "I go cycling in the park.",
+    "I go cycling twice a week."
+   ],
+   "dogru": 2,
+   "ipucu": "{{How often}} sıklığı sorar. Hangi şık sıklık söylüyor?",
+   "aciklama": "Sıklık sorusuna sıklıkla cevap verilir: {{twice a week}}. (s. 31)",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "How often …?"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "cycling"
+    }
+   ]
+  },
+  {
+   "soru": "Laura: {{I train four hours in a day and six days in a week.}} Hangisi doğru?",
+   "secenekler": [
+    "Laura never trains.",
+    "Laura trains once a week.",
+    "Laura usually trains."
+   ],
+   "dogru": 2,
+   "ipucu": "Haftada altı gün çok mu, az mı? Yüzdesi {{usually}}'ye mi yakın?",
+   "aciklama": "Haftada altı gün antrenman çoğu zaman demektir: {{usually}}. (s. 41)",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "usually"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "swimming"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Bir haftada kaç gün var? Yedi.",
+     "Laura yedi günün altısında antrenman yapıyor.",
+     "Bu, çoğu zaman mı, yoksa hiç mi?"
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi doğru yazılmış?",
+   "secenekler": [
+    "Always we beat the opponent team.",
+    "We always beat the opponent team.",
+    "We beat always the opponent team."
+   ],
+   "dogru": 1,
+   "ipucu": "Sıklık kelimesi fiilin önüne gelir. Fiil {{beat}}.",
+   "aciklama": "{{always}} fiilin önüne gelir: {{We always beat the opponent team.}}",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "always"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "beat"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Cümlenin fiili hangisi? {{beat}} yenmek.",
+     "Sıklık kelimesi fiilin hemen önüne gelir.",
+     "Hangi şıkta {{always}}, {{beat}}'ten hemen önce?"
+    ]
+   }
+  },
+  {
+   "soru": "{{Burcu is a professional cyclist. That's why she trains every day.}} Burcu ne sıklıkla antrenman yapar?",
+   "secenekler": [
+    "Her gün, her zaman",
+    "Asla",
+    "Haftada bir kez"
+   ],
+   "dogru": 0,
+   "ipucu": "{{every day}} ne demekti?",
+   "aciklama": "{{every day}} her gün demektir; her gün yapılan iş {{always}} ile anlatılır. (s. 44)",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "cycling"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "always"
+    }
+   ]
+  },
+  {
+   "soru": "Emma: {{I'm planning to be the first woman swimmer with six gold medals.}} Emma'nın hedefi ne?",
+   "secenekler": [
+    "Altı Olimpiyat altın madalyası",
+    "Haftada altı gün yüzmek",
+    "Bir maçta berabere kalmak"
+   ],
+   "dogru": 0,
+   "ipucu": "{{gold medals}} kelimesinden önceki sayıya ve cümlenin konusuna bak.",
+   "aciklama": "Emma altı altın madalyalı ilk kadın yüzücü olmak istiyor. (s. 31)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "medal"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "swimming"
+    }
+   ]
+  }
+ ]
+}

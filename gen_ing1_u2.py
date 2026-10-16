@@ -1,4 +1,4 @@
-# ing1 Ünite 2: u2k1 (Sporlar ve Ekipman), u2k2 (Maç ve Yarışma), u2t1 (Ara Durak 1) konu dosyalarını üretir.
+# ing1 Ünite 2: u2k1 (Sporlar ve Ekipman), u2k2 (Maç ve Yarışma), u2t1 (Ara Durak 1), u2k3 (Rutinler ve Sıklık), u2t2 (Ünite Sonu) konu dosyalarını üretir.
 # Çalıştır: python3 gen_ing1_u2.py
 import json, os
 KOK = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public", "ing1", "konular")
@@ -259,7 +259,7 @@ u2k2 = {
   K("injury", "#e0464e", S_INJ, "Sakatlık demektir. Spor yaparken vücudun incinmesi.", "sakatlık",
     Q("{{Sportsmen may have some injuries while doing exercises.}} {{injuries}} ne demek?", ["Madalyalar", "Sakatlıklar", "Seyirciler"], 1,
       "Kartta yara bandı vardı.", "{{injuries}} sakatlıklardır. Spor yaparken sakatlanabiliriz. (s. 40)"),
-    ek="Çoğulu {{injuries}}. Doris ağır egzersiz yapmaz, bacaklarını incitmek istemez: {{not to hurt my legs}} (s. 29).",
+    ek="Çoğulu {{injuries}}. Kitapta: {{Sportsmen may have some injuries.}}",
     ornek="Sportsmen may have some injuries while doing exercises.", ornekTr="Sporcular egzersiz yaparken bazı sakatlıklar yaşayabilir. (s. 40)"),
   K("draw", "#a9b0c8", S_DRAW, "Sporda berabere demektir. İki takımın skoru eşit olunca maç berabere biter.", "berabere",
     Q("{{The score was a draw.}} Maç nasıl bitti?", ["Biz kazandık", "Biz kaybettik", "Berabere"], 2,
@@ -300,7 +300,7 @@ u2k2 = {
    {"soru": "{{beat}} ile {{win}} farkı ne?", "cevap": "{{beat}} birini yenmektir: {{beat the opponent team}}. {{win}} bir şeyi kazanmaktır: {{won five gold medals}}. (s. 40)"},
    {"soru": "{{opponent}} kim?", "cevap": "Rakip demektir; maçta karşı taraf. Tenis paragrafında top rakibin tarafına değince sayı olur. (s. 32)"},
    {"soru": "{{score}} hem isim hem fiil mi?", "cevap": "Evet. İsim: {{the final score is 63-64}} son skor. Fiil: {{score a goal}} gol atmak. (s. 32, s. 40)"},
-   {"soru": "Sporcular sakatlanmamak için ne yapar?", "cevap": "Kitapta Doris, bacaklarını incitmemek için ağır egzersiz yapmadığını söylüyor. (s. 29)"}],
+   {"soru": "{{champion}} ne demek?", "cevap": "Şampiyon demektir. Kitapta: {{Naim became a champion in many competitions.}} (s. 36)"}],
  "dusunVeYaz": [{"soru": "İzlediğin ya da oynadığın bir maçı İngilizce iki cümleyle anlat. Skor neydi? Kim kazandı ya da berabere mi bitti?",
    "ornekCevap": "The score was 2-0. Our team beat the other team.", "anahtarlar": ["score", "team", "beat"]}],
  "sorular": [
@@ -429,7 +429,247 @@ u2t1 = {
  ]
 }
 
-for d in (u2k1, u2k2, u2t1):
+
+# =================== u2k3 ===================
+def takvim(dolu, renk, ek=""):
+    """Haftanın 7 günü: dolu gün sayısı kadar tik. dolu=0 ise kırmızı çarpı."""
+    s = "<rect x='12' y='26' width='96' height='16' rx='5' fill='" + renk + "'/>"
+    s += "<path d='M30 20v10M90 20v10' stroke='#e9ecf5' stroke-width='4' stroke-linecap='round'/>"
+    gun = [1, 1, 1, 1, 1, 1, 1]
+    sira = {7: [0, 1, 2, 3, 4, 5, 6], 6: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 4, 5], 3: [1, 3, 5], 2: [1, 4], 0: []}[dolu]
+    for i in range(7):
+        x = 13 + i * 13.5
+        s += f"<rect x='{x:.1f}' y='50' width='11' height='14' rx='3' fill='#2b3556'/>"
+        if i in sira:
+            s += f"<path d='M{x+2:.1f} 57l3 3 5-6' stroke='#3cc47c' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/>"
+    return svg(s + ek)
+def olcek(oran, renk):
+    w = int(92 * oran)
+    return (f"<rect x='14' y='80' width='92' height='12' rx='6' fill='#2b3556'/>"
+            + (f"<rect x='14' y='80' width='{max(w, 12)}' height='12' rx='6' fill='{renk}'/>" if w else ""))
+S_ALW = takvim(7, "#3cc47c", olcek(1, "#3cc47c"))
+S_USU = takvim(6, "#4fb3ff", olcek(.8, "#4fb3ff"))
+S_OFT = takvim(5, "#f2c14e", olcek(.62, "#f2c14e"))
+S_SOM = takvim(3, "#ff7a33", olcek(.4, "#ff7a33"))
+S_NEV = takvim(0, "#e0464e", olcek(0, "#e0464e") + "<circle cx='60' cy='104' r='0'/>"
+               "<path d='M48 47l24 20M72 47l-24 20' stroke='#e0464e' stroke-width='5' stroke-linecap='round'/>")
+S_HOW = svg("<circle cx='48' cy='62' r='32' fill='#f4f4f8'/><circle cx='48' cy='62' r='27' fill='none' stroke='#5a6280' stroke-width='3'/>"
+  "<path d='M48 62V44M48 62l12 8' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/>"
+  "<path d='M86 38q0-12 12-12t12 12q0 8-12 12v8' stroke='#f2c14e' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='98' cy='72' r='4' fill='#f2c14e'/>"
+  "<path d='M20 104h56' stroke='#4fb3ff' stroke-width='5' stroke-linecap='round'/>")
+S_TWICE = takvim(2, "#b46be0", "<text x='60' y='100' font-size='26' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#b46be0'>2 ×</text>")
+
+def F(*b): return [{"t": t, "r": r, **({"alt": a} if a else {})} for t, r, a in b]
+u2k3 = {
+ "id": "u2k3", "unite": U, "baslik": "Rutinler ve Sıklık (always … never)", "sayfalar": "s. 27–44",
+ "giris": "Bu konuda bir işi ne sıklıkla yaptığımızı anlatacağız: her zaman, genellikle, sık sık, bazen, asla. Bu kelimeler cümlede fiilden önce gelir. Bu konunun sorusu: {{How often do you train?}} Yani: Ne sıklıkla antrenman yaparsın?",
+ "kavramlar": [
+  K("always", "#3cc47c", S_ALW, "Her zaman demektir. Kitaptaki tabloda %100: her gün, hiç atlamadan.", "her zaman",
+    Q("{{I always wake up early.}} Bu kişi ne sıklıkla erken kalkıyor?", ["Her zaman", "Bazen", "Asla"], 0,
+      "Kartta takvimin bütün günleri işaretliydi.", "{{always}} her zaman demektir (%100). (s. 31, s. 38)"),
+    ek="Kelime fiilden önce gelir: {{I always wake up early.}}",
+    ornek="I always wake up early and have a big breakfast.", ornekTr="Her zaman erken kalkar ve büyük bir kahvaltı yaparım. (s. 31)"),
+  K("usually", "#4fb3ff", S_USU, "Genellikle demektir. Kitaptaki tabloda %80: çoğu zaman.", "genellikle",
+    Q("{{I usually eat meat, fruit and vegetables.}} {{usually}} ne demek?", ["Hiçbir zaman", "Genellikle", "Bazen"], 1,
+      "Kartta takvimin neredeyse bütün günleri işaretliydi.", "{{usually}} genellikle demektir (%80). (s. 31, s. 38)"),
+    ek="{{always}} kadar değil ama çoğu zaman.",
+    ornek="I usually eat meat, fruit and vegetables.", ornekTr="Genellikle et, meyve ve sebze yerim. (s. 31)"),
+  K("often", "#f2c14e", S_OFT, "Sık sık demektir. {{usually}} kadar değil ama {{sometimes}}'dan daha sık.", "sık sık",
+    Q("{{I often walk to school.}} Bu kişi okula nasıl gidiyor?", ["Hiç yürümüyor", "Bir kez yürüdü", "Sık sık yürüyor"], 2,
+      "Kartta {{often}} kelimesinin anlamı vardı.", "{{often}} sık sık demektir: okula sık sık yürür. (s. 36)"),
+    ek="Mark'ın blogunda: {{I often ride my bike.}} Sık sık bisiklete binerim.",
+    ornek="I often walk to school.", ornekTr="Okula sık sık yürürüm. (s. 36)"),
+  K("sometimes", "#ff7a33", S_SOM, "Bazen demektir. Kitaptaki tabloda %40: arada bir.", "bazen",
+    Q("{{We sometimes run in the park.}} Ne sıklıkla koşuyorlar?", ["Bazen", "Her zaman", "Asla"], 0,
+      "Kartta takvimde yalnız birkaç gün işaretliydi.", "{{sometimes}} bazen demektir (%40). (s. 35, s. 38)"),
+    ek="Daha da seyrek: {{seldom}} (%20), nadiren.",
+    ornek="We sometimes run in the park or do exercises in the gym.", ornekTr="Bazen parkta koşarız ya da spor salonunda egzersiz yaparız. (s. 35)"),
+  K("never", "#e0464e", S_NEV, "Asla, hiçbir zaman demektir. Kitaptaki tabloda %0.", "asla, hiç",
+    Q("{{Terry never eats junk food.}} Terry abur cubur yer mi?", ["Her gün yer", "Hiç yemez", "Bazen yer"], 1,
+      "Kartta takvimin üstünde kırmızı çarpı vardı.", "{{never}} asla demektir: hiç yemez (%0). (s. 39)"),
+    ek="Cümle olumlu görünür ama anlamı olumsuzdur: {{I never go on a heavy diet.}}",
+    ornek="I never go on a heavy diet.", ornekTr="Asla ağır bir diyet yapmam. (s. 36)"),
+  K("How often …?", "#4f8ff7", S_HOW, "Ne sıklıkla? demektir. Bir işin ne kadar sık yapıldığını sorar.", "ne sıklıkla",
+    Q("{{How often do you train?}} sorusuna hangisi cevap olur?", ["At the gym.", "Six days a week.", "With my coach."], 1,
+      "Soru yeri ya da kişiyi değil, sıklığı soruyor.", "{{How often}} sıklığı sorar: {{Six days a week.}} Haftada altı gün. (s. 31)"),
+    ek="Cevap ya sıklık kelimesiyle ({{always}}, {{never}}) ya da bir süreyle verilir ({{twice a week}}).",
+    ornek="How often do you train?", ornekTr="Ne sıklıkla antrenman yaparsın? (s. 31)"),
+  K("twice a week", "#b46be0", S_TWICE, "Haftada iki kez demektir. {{twice}} iki kez, {{a week}} haftada.", "haftada iki kez",
+    Q("{{I work out at the gym twice a week.}} Haftada kaç kez spor salonuna gidiyor?", ["Bir kez", "Üç kez", "İki kez"], 2,
+      "{{twice}} kelimesinin anlamını hatırla.", "{{twice a week}} haftada iki kez demektir. (s. 31)"),
+    ek="Bir kez {{once}}, üç kez {{three times}}. Her gün {{every day}}.",
+    ornek="I work out at the gym twice a week, and I swim every day.", ornekTr="Haftada iki kez spor salonunda çalışırım ve her gün yüzerim. (s. 31)"),
+ ],
+ "gruplar": [{"soru": "Bu kelime çoğu zaman mı, yoksa ara sıra ya da hiç mi?", "kutular": [
+   {"etiket": "Çoğu zaman", "uyeler": ["always", "usually", "often"]},
+   {"etiket": "Ara sıra ya da hiç", "uyeler": ["sometimes", "never"]}]}],
+ "biliyorMusun": [
+   "Kitaptaki tabloda sıklık yüzdeyle gösteriliyor: {{always}} %100, {{usually}} %80, {{sometimes}} %40, {{seldom}} %20, {{never}} %0. (s. 38)",
+   "Yüzücü Laura günde dört saat, haftada altı gün antrenman yapıyor. (s. 41)"],
+ "akildaKalsin": [
+   "Sıralama: {{always}} > {{usually}} > {{often}} > {{sometimes}} > {{never}}.",
+   "Sıklık kelimesi fiilden önce gelir: {{I always wake up early.}}",
+   "Sıklığı sormak için: {{How often do you train?}}",
+   "Kaç kez: {{once}} bir kez, {{twice}} iki kez, {{three times}} üç kez + {{a week}} haftada.",
+   "{{every day}} her gün demektir ve cümlenin sonuna gelir: {{I swim every day.}}"],
+ "merakKutusu": [
+   {"soru": "{{always}} cümlenin neresine gelir?", "cevap": "Fiilin hemen önüne: {{I always wake up early.}} {{I usually eat meat.}} (s. 31)"},
+   {"soru": "{{every day}} neden sona geliyor?", "cevap": "Çünkü bu bir kelime değil, kelime grubu. Kitapta: {{I swim every day.}} (s. 31) Aynı şekilde {{twice a week}} de sona gelir."},
+   {"soru": "{{often}} ile {{usually}} hangisi daha sık?", "cevap": "{{usually}} daha sık. Sıralama: {{always}}, {{usually}}, {{often}}, {{sometimes}}, {{never}}."},
+   {"soru": "{{seldom}} ne demek?", "cevap": "Nadiren demektir. Kitaptaki tabloda %20; {{sometimes}} ile {{never}} arasında. (s. 38)"},
+   {"soru": "Bir kez, iki kez nasıl söylenir?", "cevap": "Bir kez {{once}}, iki kez {{twice}}, üç kez {{three times}}. Kitapta: {{Three times a week.}} (s. 30)"}],
+ "dusunVeYaz": [{"soru": "Haftalık rutinini İngilizce iki cümleyle anlat. Bir cümlede {{always}} ya da {{usually}}, diğerinde {{a week}} kullan.",
+   "ornekCevap": "I always get up early on weekdays. I play basketball twice a week.", "anahtarlar": ["always", "usually", "week"]}],
+ "sorular": [
+  Q("Dinle. Hangi kelimeyi duydun?", ["often", "never", "always"], 2, "Yüzde yüz anlamına gelen kelimeyi duydun. Yavaş dinle düğmesini dene.",
+    "Duyduğun kelime {{always}}: her zaman. (s. 38)", dinle="always", kavram="always"),
+  Q("Dinle. Hangi cümleyi duydun?", ["I never go on a heavy diet.", "I often go on a heavy diet.", "I never go on a special diet."], 0,
+    "İki şeye dikkat et: sıklık kelimesi ve diyetin türü.", "Duyduğun cümle {{I never go on a heavy diet.}}: Asla ağır bir diyet yapmam. (s. 36)",
+    dinle="I never go on a heavy diet.", kavram="never"),
+  Q("Dinle. Hangi cümleyi duydun?", ["I swim twice a week.", "I work out at the gym twice a week.", "I work out at the gym once a week."], 1,
+    "Nerede ve kaç kez? İkisini birlikte dinle.", "Duyduğun cümle {{I work out at the gym twice a week.}} (s. 31)",
+    dinle="I work out at the gym twice a week.", kavram="twice a week"),
+  Q("Hangisi doğru yazılmış?", ["I wake up always early.", "Always I wake up early.", "I always wake up early."], 2,
+    "Sıklık kelimesi fiilin neresine geliyordu?", "Sıklık kelimesi fiilden önce gelir: {{I always wake up early.}} (s. 31)", kavram="always",
+    yardim={"adimlar": ["Cümlenin fiili hangisi? {{wake up}}.", "Sıklık kelimesi fiilin önüne gelir.", "{{always}} hangi şıkta {{wake up}}'tan hemen önce?"]}),
+  Q("{{How often do you swim?}} Hangisi uygun cevap?", ["In the pool.", "Once or twice in a week.", "Because it is fun."], 1,
+    "{{How often}} neyi sorar: yeri mi, sıklığı mı, nedeni mi?", "{{How often}} sıklığı sorar: {{Once or twice in a week.}} (s. 39)", kavram="How often …?"),
+  Q("Robert her gün koşuyor. Hangisi doğru?", ["Robert always runs.", "Robert never runs.", "Robert sometimes runs."], 0,
+    "Her gün yapılan iş: yüzde kaç?", "Her gün = her zaman: {{Robert always runs.}} (s. 33)", kavram="always"),
+  Q("{{I usually have my breakfast with my parents.}} {{usually}} yerine anlamı en yakın olan hangisi?", ["never", "seldom", "always"], 2,
+    "{{usually}} %80. Hangisi ona en yakın?", "{{usually}} %80, {{always}} %100; en yakını {{always}}. {{never}} %0, {{seldom}} %20. (s. 36, s. 38)", kavram="usually",
+    yardim={"adimlar": ["{{usually}} tabloda yüzde kaç? %80.", "Şıkların yüzdelerini düşün: {{never}} %0, {{seldom}} %20.", "Kalan şık %80'e en yakın mı?"]}),
+  Q("{{I often ride my bike.}} Bu kişi bisiklete ne sıklıkla biniyor?", ["Hiç binmiyor", "Sık sık biniyor", "Yalnız bir kez bindi"], 1,
+    "{{often}} kartını hatırla.", "{{often}} sık sık demektir. (s. 36)", kavram="often"),
+  Q("{{We ___ run in the park.}} Arada bir koşuyorlar. Boşluğa ne gelir?", ["sometimes", "always", "never"], 0,
+    "Arada bir = %40. Hangi kelimeydi?", "Arada bir {{sometimes}}tır: {{We sometimes run in the park.}} (s. 35)", kavram="sometimes"),
+  Q("{{Terry never eats junk food, so ___.}} Hangisi uygun?", ["he's very unhealthy", "he's very healthy", "he eats burgers every day"], 1,
+    "Abur cubur yemeyen biri sağlıklı mı olur?", "{{Terry never eats junk food, so he's very healthy.}} Hiç abur cubur yemez, bu yüzden çok sağlıklıdır. (s. 39)", kavram="never"),
+ ],
+ "kelimeler": [
+  {"en": "seldom", "tr": "nadiren"},
+  {"en": "once a week", "tr": "haftada bir kez", "ornek": "Once or twice in a week.", "ornekTr": "Haftada bir ya da iki kez. (s. 39)"},
+  {"en": "three times a week", "tr": "haftada üç kez", "ornek": "Three times a week.", "ornekTr": "Haftada üç kez. (s. 30)"},
+  {"en": "every day", "tr": "her gün", "ornek": "I get up early every day.", "ornekTr": "Her gün erken kalkarım. (s. 41)"},
+  {"en": "get up early", "tr": "erken kalkmak"},
+  {"en": "eat healthy food", "tr": "sağlıklı yiyecekler yemek", "ornek": "I always eat healthy food, never drink energy drinks.", "ornekTr": "Her zaman sağlıklı yiyecekler yerim, asla enerji içeceği içmem. (s. 41)"},
+  {"en": "junk food", "tr": "abur cubur"},
+  {"en": "go on a diet", "tr": "diyet yapmak", "ornek": "Do you often go on a diet?", "ornekTr": "Sık sık diyet yapar mısın? (s. 39)"},
+  {"en": "keep fit", "tr": "formda kalmak", "ornek": "I always do exercises to keep fit.", "ornekTr": "Formda kalmak için her zaman egzersiz yaparım. (s. 36)"},
+  {"en": "routine", "tr": "rutin, her zamanki düzen"},
+ ],
+ "cumleler": [
+  {"en": "I always wake up early.", "tr": "Her zaman erken kalkarım. (s. 31)"},
+  {"en": "I train six days a week.", "tr": "Haftada altı gün antrenman yaparım. (s. 31)"},
+  {"en": "I swim every day.", "tr": "Her gün yüzerim. (s. 31)"},
+  {"en": "I often walk to school.", "tr": "Okula sık sık yürürüm. (s. 36)"},
+  {"en": "I never go on a heavy diet.", "tr": "Asla ağır bir diyet yapmam. (s. 36)"},
+  {"en": "How often do you train?", "tr": "Ne sıklıkla antrenman yaparsın? (s. 31)"},
+ ],
+ "hatalar": [
+  {"cumle": "Terry always eats junk food, so he's very healthy.", "yanlis": "always", "secenekler": ["never", "usually", "often"], "dogru": 0,
+   "tr": "Terry asla abur cubur yemez, bu yüzden çok sağlıklıdır.", "aciklama": "Sağlıklıysa abur cuburu hiç yemez: {{never}}. (s. 39)"},
+  {"cumle": "How many do you swim? Once or twice a week.", "yanlis": "many", "secenekler": ["much", "often", "long"], "dogru": 1,
+   "tr": "Ne sıklıkla yüzersin? Haftada bir ya da iki kez.", "aciklama": "Sıklığı sormak için {{How often}}. (s. 39)"},
+  {"cumle": "Katie always wake up early when she goes to the gym.", "yanlis": "wake", "secenekler": ["woke", "waking", "wakes"], "dogru": 2,
+   "tr": "Katie spor salonuna gittiğinde her zaman erken kalkar.", "aciklama": "{{Katie}} (o) ile fiil {{-s}} alır: {{wakes up}}. (s. 39)"},
+  {"cumle": "I work out at the gym two a week.", "yanlis": "two", "secenekler": ["twice", "second", "double"], "dogru": 0,
+   "tr": "Haftada iki kez spor salonunda çalışırım.", "aciklama": "İki kez {{twice}}: {{twice a week}}. (s. 31)"},
+  {"cumle": "I always do exercises to keep fat.", "yanlis": "fat", "secenekler": ["fast", "fit", "thin"], "dogru": 1,
+   "tr": "Formda kalmak için her zaman egzersiz yaparım.", "aciklama": "Formda kalmak {{keep fit}}. {{fat}} şişman demek. (s. 36)"},
+ ],
+ "okuma": {
+  "baslik": "An interview with Emma", "sayfa": "s. 31",
+  "sozluk": {"Olympic": "Olimpik, Olimpiyat", "World Championship": "Dünya Şampiyonası", "start the day": "güne başlamak", "wake up early": "erken uyanmak",
+             "big breakfast": "büyük kahvaltı", "spend most of the day": "günün çoğunu geçirmek", "rest": "dinlenmek", "train": "antrenman yapmak",
+             "work out": "spor yapmak", "special diet": "özel diyet", "healthy food": "sağlıklı yiyecek", "give energy": "enerji vermek",
+             "plans for the future": "gelecek planları", "gold medals": "altın madalyalar", "Good luck": "İyi şanslar"},
+  "bolumler": [
+   {"baslik": "Emma'nın günü", "cumleler": [
+     {"en": "Interviewer: Today I'm talking to Emma Robins, the Olympic and World Championship swimmer.", "tr": "Muhabir: Bugün Olimpiyat ve Dünya Şampiyonası yüzücüsü Emma Robins ile konuşuyorum."},
+     {"en": "Interviewer: How do you start the day?", "tr": "Muhabir: Güne nasıl başlıyorsun?"},
+     {"en": "Emma: I always wake up early and have a big breakfast.", "tr": "Emma: Her zaman erken uyanır ve büyük bir kahvaltı yaparım."},
+     {"en": "Then, I go to the gym and the swimming pool to train.", "tr": "Sonra antrenman yapmak için spor salonuna ve yüzme havuzuna giderim."},
+     {"en": "I spend most of the day by doing exercises.", "tr": "Günün çoğunu egzersiz yaparak geçiririm."},
+     {"en": "In the evenings, I watch TV, listen to music and rest.", "tr": "Akşamları televizyon izler, müzik dinler ve dinlenirim."}],
+    "sorular": [
+     Q("Emma her sabah ne yapar?", ["Geç kalkar", "Erken uyanır ve büyük kahvaltı yapar", "Hemen yüzmeye gider"], 1,
+       "{{I always wake up early}} cümlesini bul.", "{{I always wake up early and have a big breakfast.}} Her zaman erken uyanır, büyük kahvaltı yapar."),
+     Q("Emma akşamları ne yapar?", ["Televizyon izler, müzik dinler, dinlenir", "Spor salonuna gider", "Arkadaşlarıyla yüzer"], 0,
+       "{{In the evenings}} ile başlayan cümleye bak.", "{{In the evenings, I watch TV, listen to music and rest.}}")]},
+   {"baslik": "Antrenman ve diyet", "cumleler": [
+     {"en": "Interviewer: How often do you train?", "tr": "Muhabir: Ne sıklıkla antrenman yapıyorsun?"},
+     {"en": "Emma: I train six days a week.", "tr": "Emma: Haftada altı gün antrenman yaparım."},
+     {"en": "I work out at the gym twice a week, and I swim every day.", "tr": "Haftada iki kez spor salonunda çalışırım ve her gün yüzerim."},
+     {"en": "Interviewer: Do you go on a special diet?", "tr": "Muhabir: Özel bir diyet yapıyor musun?"},
+     {"en": "Emma: Of course, I do. I eat healthy food.", "tr": "Emma: Elbette. Sağlıklı yiyecekler yerim."},
+     {"en": "I usually eat meat, fruit and vegetables.", "tr": "Genellikle et, meyve ve sebze yerim."},
+     {"en": "They make me strong and give energy.", "tr": "Beni güçlü yapar ve enerji verirler."},
+     {"en": "Interviewer: What are your plans for the future?", "tr": "Muhabir: Gelecek planların neler?"},
+     {"en": "Emma: I'm planning to be the first woman swimmer with six gold medals by racing at six Olympics.", "tr": "Emma: Altı Olimpiyatta yarışarak altı altın madalyalı ilk kadın yüzücü olmayı planlıyorum."},
+     {"en": "Interviewer: Good luck, Emma. I'm sure you can do it.", "tr": "Muhabir: İyi şanslar Emma. Eminim yapabilirsin."}],
+    "sorular": [
+     Q("Emma ne sıklıkla spor salonuna gidiyor?", ["Her gün", "Haftada altı gün", "Haftada iki kez"], 2,
+       "{{at the gym}} kalıbının olduğu cümleye bak.", "{{I work out at the gym twice a week.}} Haftada iki kez. Yüzmeyi ise her gün yapar."),
+     Q("Emma genellikle ne yer?", ["Abur cubur", "Et, meyve ve sebze", "Yalnız meyve"], 1,
+       "{{I usually eat}} cümlesini bul.", "{{I usually eat meat, fruit and vegetables.}}")]}]}
+}
+for k in u2k3["kavramlar"]:
+    k["formul"] = {
+      "always": [F(("I", "ozne", None), ("always", "kelime", "%100"), ("wake up early", "fiil", "fiil"))],
+      "usually": [F(("I", "ozne", None), ("usually", "kelime", "%80"), ("eat meat", "fiil", "fiil"))],
+      "often": [F(("I", "ozne", None), ("often", "kelime", "sık sık"), ("walk to school", "fiil", "fiil"))],
+      "sometimes": [F(("We", "ozne", None), ("sometimes", "kelime", "%40"), ("run in the park", "fiil", "fiil"))],
+      "never": [F(("I", "ozne", None), ("never", "olumsuz", "%0"), ("go on a heavy diet", "fiil", "fiil"))],
+      "How often …?": [F(("How often", "kelime", "ne sıklıkla"), ("do", "yard", None), ("you", "ozne", None), ("train?", "fiil", "fiil")),
+                       F(("How often", "kelime", "ne sıklıkla"), ("does", "yard", "o için"), ("she", "ozne", None), ("swim?", "fiil", "fiil"))],
+      "twice a week": [F(("I", "ozne", None), ("work out", "fiil", "fiil"), ("twice a week", "kelime", "haftada iki kez"))],
+    }[k["ad"]]
+
+# =================== u2t2 ===================
+u2t2 = {
+ "id": "u2t2", "tur": "tarama", "unite": U, "baslik": "Ünite 2 Sonu Taraması", "sayfalar": "Konu 1–3 · s. 27–44",
+ "giris": "Ünite 2 bitti! Şimdi bütün üniteye kısaca bakalım. Önce özetleri oku ve kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bir sporcuyu üç yönden anlatabiliyoruz: hangi sporu yapıyor, ne sıklıkla antrenman yapıyor ve maçlarda ne oluyor. Kitaptaki Emma ve Laura röportajları üçünü birlikte kullanıyor: yüzme, haftada altı gün, altın madalya.",
+ "kapsar": ["u2k1", "u2k2", "u2k3"],
+ "hatirla": [
+  {"konu": "u2k1", "maddeler": ["Sporlar: {{swimming}}, {{cycling}}, {{skiing}}, {{ice skating}}, {{doing judo}}.", "{{go swimming}} ama {{doing judo}}.", "{{outdoor sport}} dışarıda; {{equipment}} sporun eşyaları."]},
+  {"konu": "u2k2", "maddeler": ["{{spectator}} seyirci, {{medal}} madalya, {{injury}} sakatlık.", "Eşit skor {{draw}}; rakibi yenmek {{beat}}.", "{{score}} skor; {{achievement}} başarı."]},
+  {"konu": "u2k3", "maddeler": ["{{always}} > {{usually}} > {{often}} > {{sometimes}} > {{never}}.", "Sıklık kelimesi fiilden önce: {{I always wake up early.}}", "{{How often …?}} sorusuna cevap: {{twice a week}}, {{every day}}."]}],
+ "eskiSoru": 4, "oyunKavram": 10,
+ "gruplar": [{"soru": "Bu kelime hangi konudan?", "kutular": [
+   {"etiket": "Sporun adı", "uyeler": ["swimming", "cycling", "skiing"]},
+   {"etiket": "Maç ve yarışma", "uyeler": ["medal", "draw", "spectator"]},
+   {"etiket": "Ne sıklıkla?", "uyeler": ["always", "sometimes", "never"]}]}],
+ "sorular": [
+  Q("Dinle. Hangi cümleyi duydun?", ["I swim every day.", "I ski every day.", "I swim every week."], 0,
+    "Hangi spor ve ne sıklıkla? İkisini birlikte dinle.", "Duyduğun cümle {{I swim every day.}}: Her gün yüzerim. (s. 31)",
+    dinle="I swim every day.", kaynak=[{"konu": "u2k1", "kavram": "swimming"}, {"konu": "u2k3", "kavram": "always"}]),
+  Q("Dinle. Hangi cümleyi duydun?", ["Our team never wins a medal.", "Our team often wins a medal.", "Our team often loses a match."], 1,
+    "Sıklık kelimesine ve kazanma mı kaybetme mi olduğuna dikkat et.", "Duyduğun cümle {{Our team often wins a medal.}}: Takımımız sık sık madalya kazanır.",
+    dinle="Our team often wins a medal.", kaynak=[{"konu": "u2k3", "kavram": "often"}, {"konu": "u2k2", "kavram": "medal"}]),
+  Q("{{How often do you go cycling?}} Hangisi uygun cevap?", ["I like cycling.", "I go cycling in the park.", "I go cycling twice a week."], 2,
+    "{{How often}} sıklığı sorar. Hangi şık sıklık söylüyor?", "Sıklık sorusuna sıklıkla cevap verilir: {{twice a week}}. (s. 31)",
+    kaynak=[{"konu": "u2k3", "kavram": "How often …?"}, {"konu": "u2k1", "kavram": "cycling"}]),
+  Q("Laura: {{I train four hours in a day and six days in a week.}} Hangisi doğru?",
+    ["Laura never trains.", "Laura trains once a week.", "Laura usually trains."], 2,
+    "Haftada altı gün çok mu, az mı? Yüzdesi {{usually}}'ye mi yakın?", "Haftada altı gün antrenman çoğu zaman demektir: {{usually}}. (s. 41)",
+    kaynak=[{"konu": "u2k3", "kavram": "usually"}, {"konu": "u2k1", "kavram": "swimming"}],
+    yardim={"adimlar": ["Bir haftada kaç gün var? Yedi.", "Laura yedi günün altısında antrenman yapıyor.", "Bu, çoğu zaman mı, yoksa hiç mi?"]}),
+  Q("Hangisi doğru yazılmış?", ["Always we beat the opponent team.", "We always beat the opponent team.", "We beat always the opponent team."], 1,
+    "Sıklık kelimesi fiilin önüne gelir. Fiil {{beat}}.", "{{always}} fiilin önüne gelir: {{We always beat the opponent team.}}",
+    kaynak=[{"konu": "u2k3", "kavram": "always"}, {"konu": "u2k2", "kavram": "beat"}],
+    yardim={"adimlar": ["Cümlenin fiili hangisi? {{beat}} yenmek.", "Sıklık kelimesi fiilin hemen önüne gelir.", "Hangi şıkta {{always}}, {{beat}}'ten hemen önce?"]}),
+  Q("{{Burcu is a professional cyclist. That's why she trains every day.}} Burcu ne sıklıkla antrenman yapar?", ["Her gün, her zaman", "Asla", "Haftada bir kez"], 0,
+    "{{every day}} ne demekti?", "{{every day}} her gün demektir; her gün yapılan iş {{always}} ile anlatılır. (s. 44)",
+    kaynak=[{"konu": "u2k1", "kavram": "cycling"}, {"konu": "u2k3", "kavram": "always"}]),
+  Q("Emma: {{I'm planning to be the first woman swimmer with six gold medals.}} Emma'nın hedefi ne?", ["Altı Olimpiyat altın madalyası", "Haftada altı gün yüzmek", "Bir maçta berabere kalmak"], 0,
+    "{{gold medals}} kelimesinden önceki sayıya ve cümlenin konusuna bak.", "Emma altı altın madalyalı ilk kadın yüzücü olmak istiyor. (s. 31)",
+    kaynak=[{"konu": "u2k2", "kavram": "medal"}, {"konu": "u2k1", "kavram": "swimming"}]),
+ ]
+}
+
+for d in (u2k1, u2k2, u2t1, u2k3, u2t2):
     with open(f"{KOK}/{d['id']}.json", "w", encoding="utf-8") as f:
         f.write(json.dumps(d, ensure_ascii=False, indent=1))
 print("yazıldı")

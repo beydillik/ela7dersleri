@@ -52,7 +52,7 @@
    "renk": "#e0464e",
    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M44 10v58q0 22 22 22h22' stroke='#ffd6a5' stroke-width='22' fill='none' stroke-linecap='round'/><rect x='30' y='38' width='28' height='22' rx='4' fill='#f4f4f8'/><path d='M36 44v10M42 44v10M48 44v10M54 44v10' stroke='#d8dbe6' stroke-width='2'/><path d='M88 30v20M78 40h20' stroke='#e0464e' stroke-width='7' stroke-linecap='round'/><path d='M90 98l6 6M96 98l-6 6' stroke='#e0464e' stroke-width='3' stroke-linecap='round'/></svg>",
    "aciklama": "Sakatlık demektir. Spor yaparken vücudun incinmesi.",
-   "ek": "Çoğulu {{injuries}}. Doris ağır egzersiz yapmaz, bacaklarını incitmek istemez: {{not to hurt my legs}} (s. 29).",
+   "ek": "Çoğulu {{injuries}}. Kitapta: {{Sportsmen may have some injuries.}}",
    "akilda": "sakatlık",
    "ornek": "Sportsmen may have some injuries while doing exercises.",
    "ornekTr": "Sporcular egzersiz yaparken bazı sakatlıklar yaşayabilir. (s. 40)",
@@ -211,8 +211,8 @@
    "cevap": "Evet. İsim: {{the final score is 63-64}} son skor. Fiil: {{score a goal}} gol atmak. (s. 32, s. 40)"
   },
   {
-   "soru": "Sporcular sakatlanmamak için ne yapar?",
-   "cevap": "Kitapta Doris, bacaklarını incitmemek için ağır egzersiz yapmadığını söylüyor. (s. 29)"
+   "soru": "{{champion}} ne demek?",
+   "cevap": "Şampiyon demektir. Kitapta: {{Naim became a champion in many competitions.}} (s. 36)"
   }
  ],
  "dusunVeYaz": [
