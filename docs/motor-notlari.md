@@ -57,3 +57,8 @@ Bu notlar 15 Ekim 2026'da ela-ders-defteri skill'inin 10. bölümüne taşındı
 - Cevabı gösterilen yanlışta (Test ve Tarama'da iki yanlıştan sonra, Sınav Provası'nda her yanlışta ve incelemede) ilerleme düğmeleri açıklamanın uzunluğuna göre 5–12 sn kilitli (sayı yok, dolan çubuk).
 - Sonra "Neden yanlış yaptın?": Bilmiyordum / Soruyu yanlış okudum / İki şeyi karıştırdım / Acele ettim. Seçmeden geçilmez; robot seçime göre kısa yanıt verir. Erken dokunuşta robot uyarır (3 dk'da bir) ve kutu sallanır.
 - Olaylar: `hata-neden` (neden, sureSn), `hata-acele`. Veli Paneli'nde "Yanlışların nedeni" dağılımı (Genel ve her ders, son 30 gün).
+
+## Soru ve adım görseli (16 Ekim 2026, Matematik Tema 2 için, Kemal onayıyla)
+- İsteğe bağlı `svg` alanı: soruda (`sorular`, kavram `soru`, `sende` adım sorusu), `cozum`/`sende` gövdesinde ve adımında, Sınav Provası `secim`/`kisa`/`dytablo`/`dy` sorusunda. Motor `gorselHTML()` ile `.q-gorsel` kutusunda gösterir (koyu `--svgbg` zemin, en çok 440×300 px).
+- Görsel SVG'si 120×120 kavram çizimi değildir: geniş viewBox (ör. `0 0 320 160`), zemin dikdörtgeni yok (şeffaf), açık renkli çizim, attribute'larda tek tırnak.
+- Resimli şık yok: A/B/C etiketli çizimler soru görselinde, şıklar metin "A", "B", "C" (şık karıştırma etiketleri bozmaz).
