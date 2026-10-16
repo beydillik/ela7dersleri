@@ -1,0 +1,223 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "Unit 2: Sports",
+ "baslik": "Ara Durak 1: Spor Dünyası",
+ "sayfalar": "Konu 1–2 · s. 27–44",
+ "giris": "İki konu bitti! Kısa bir mola verelim. Önce özetleri oku ve kartlara dokun. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce sporların adlarını ve eşyalarını öğrendik, sonra o sporların maçlarını. Kitaptaki basketbol paragrafı ikisini birleştiriyor: bir takım oyunu, seyirciler ve skor. Bu durağın sırrı: sporun adı ile maçın sonucunu birlikte anlatmak.",
+ "kapsar": [
+  "u2k1",
+  "u2k2"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Sporlar: {{swimming}}, {{cycling}}, {{skiing}}, {{ice skating}}, {{doing judo}}.",
+    "{{outdoor sport}} dışarıda, {{indoor sport}} kapalı alanda.",
+    "{{equipment}}: sporun eşyaları. Tenis için {{racket}}, {{ball}}, {{net}}."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "{{spectator}} seyirci, {{medal}} madalya, {{injury}} sakatlık.",
+    "Eşit skor {{draw}}; rakibi yenmek {{beat}}.",
+    "{{score}} skor; büyük başarı {{a great achievement}}."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Sporun adı mı, maç kelimesi mi?",
+   "kutular": [
+    {
+     "etiket": "Sporun adı",
+     "uyeler": [
+      "swimming",
+      "cycling",
+      "skiing",
+      "doing judo"
+     ]
+    },
+    {
+     "etiket": "Maç ve yarışma",
+     "uyeler": [
+      "spectator",
+      "medal",
+      "draw",
+      "score"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Spectators are cheering for Roger.",
+    "Spectators are cycling with Roger.",
+    "Players are cheering for Roger."
+   ],
+   "dogru": 0,
+   "ipucu": "Cümlenin başında maçı izleyenler var. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun cümle {{Spectators are cheering for Roger.}}: Seyirciler Roger'a tezahürat yapıyor. (s. 32)",
+   "dinle": "Spectators are cheering for Roger.",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "spectator"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "score"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "Sheila won the gold medal in swimming.",
+    "Sheila won the gold medal in skiing.",
+    "Sheila lost the medal in swimming."
+   ],
+   "dogru": 0,
+   "ipucu": "İki şeye dikkat et: kazandı mı, kaybetti mi? Hangi sporda?",
+   "aciklama": "Duyduğun cümle {{Sheila won the gold medal in swimming.}} Yüzmede altın madalya kazandı. (s. 42)",
+   "dinle": "Sheila won the gold medal in swimming.",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "medal"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "swimming"
+    }
+   ]
+  },
+  {
+   "soru": "{{Burcu is a professional cyclist. She won a race last year. It was a great ___.}}",
+   "secenekler": [
+    "injury",
+    "achievement",
+    "equipment"
+   ],
+   "dogru": 1,
+   "ipucu": "Yarış kazanmak iyi bir sonuç. İyi sonuca ne deniyordu?",
+   "aciklama": "Yarış kazanmak büyük bir başarıdır: {{achievement}}. (s. 40, s. 44)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "achievement"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "cycling"
+    }
+   ]
+  },
+  {
+   "soru": "{{If you want to go skiing, you need special ___.}}",
+   "secenekler": [
+    "spectators",
+    "medals",
+    "equipment"
+   ],
+   "dogru": 2,
+   "ipucu": "Kayak yapmak için kayak gibi eşyalar gerekir. Spor eşyasına ne deniyordu?",
+   "aciklama": "Bir sporu yapmak için gereken eşyalar {{equipment}}tır. (s. 43)",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "equipment"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "skiing"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi doğru?",
+   "secenekler": [
+    "Our team draw the opponent team 2-0.",
+    "Our team beat the opponent team 2-0.",
+    "Our team lose the opponent team 2-0."
+   ],
+   "dogru": 1,
+   "ipucu": "2-0 eşit bir skor mu? Takımımız ne yaptı?",
+   "aciklama": "2-0 eşit değil; takımımız kazandı. Rakibi yenmek {{beat}}: {{Our school team beat the opponent team 2-0.}} (s. 40)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "beat"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "draw"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Skor 2-0: iki taraf eşit mi?",
+     "Eşit değilse {{draw}} olmaz.",
+     "Takımımız 2 gol attı. Rakibi ne yaptı: yendi mi, kaybetti mi?"
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi doğru yazılmış?",
+   "secenekler": [
+    "I like going swimming and doing judo.",
+    "I like doing swimming and going judo.",
+    "I like playing swimming and going judo."
+   ],
+   "dogru": 0,
+   "ipucu": "Yüzme hangi fiille, judo hangi fiille kullanılıyordu?",
+   "aciklama": "Kitapta {{go swimming}} (s. 29) ve {{doing judo}} (s. 34) geçer.",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "swimming"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "doing judo"
+    }
+   ]
+  },
+  {
+   "soru": "{{It is a team game. Five players in each team play the game. The final score is 63-64.}} Bu metne göre hangisi doğru?",
+   "secenekler": [
+    "Bu bir bireysel spor.",
+    "Maç berabere.",
+    "Takımlardan biri bir sayı farkla önde."
+   ],
+   "dogru": 2,
+   "ipucu": "Skor eşit mi? 63 ile 64'ü karşılaştır.",
+   "aciklama": "63-64 eşit değil, yani berabere değil. Takım oyunu olduğu için bireysel de değil; bir takım bir sayı önde. (s. 32)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "score"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "draw"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "İlk cümle: {{team game}} takım oyunu. Bireysel mi?",
+     "Skor 63-64. İki sayı eşit mi?",
+     "Eşit değilse berabere olmaz. Kalan şıkka bak."
+    ]
+   }
+  }
+ ]
+}

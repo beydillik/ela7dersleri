@@ -1,0 +1,243 @@
+{
+ "unite": 2,
+ "ders": "ing1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "e2-01",
+   "konu": "u2k1",
+   "kavram": "swimming",
+   "tur": "secim",
+   "soru": "{{It is moving in water using your arms and legs.}} Hangi spor anlatılıyor?",
+   "secenekler": [
+    "cycling",
+    "swimming",
+    "skiing",
+    "doing judo"
+   ],
+   "dogru": 1,
+   "aciklama": "Suda kollar ve bacaklarla ilerlemek {{swimming}}dir (s. 32)."
+  },
+  {
+   "id": "e2-02",
+   "konu": "u2k1",
+   "kavram": "equipment",
+   "tur": "secim",
+   "soru": "{{If you want to play tennis, you need special ___.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "diet",
+    "injury",
+    "score",
+    "equipment"
+   ],
+   "dogru": 3,
+   "aciklama": "Tenis için raket, top gibi eşyalar gerekir: {{equipment}} (s. 43)."
+  },
+  {
+   "id": "e2-03",
+   "konu": "u2k1",
+   "kavram": "outdoor sport",
+   "tur": "dytablo",
+   "soru": "Dışarıda, açık havada yapılan bir sporsa D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Football is an outdoor sport.",
+     "d": true
+    },
+    {
+     "s": "Hiking is an outdoor sport.",
+     "d": true
+    },
+    {
+     "s": "Raymond prefers indoor sports because he likes sunny days.",
+     "d": false
+    }
+   ],
+   "aciklama": "Futbol ve doğa yürüyüşü dışarıda yapılır. Raymond kapalı alanı her hava için seçer (s. 40–44)."
+  },
+  {
+   "id": "e2-04",
+   "konu": "u2k1",
+   "kavram": "cycling",
+   "tur": "eslestir",
+   "soru": "Sporları Türkçe anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "cycling",
+     "sag": "bisiklet sporu"
+    },
+    {
+     "sol": "skiing",
+     "sag": "kayak"
+    },
+    {
+     "sol": "ice skating",
+     "sag": "buz pateni"
+    },
+    {
+     "sol": "swimming",
+     "sag": "yüzme"
+    }
+   ],
+   "aciklama": "{{cycling}} bisiklet, {{skiing}} kayak, {{ice skating}} buz pateni, {{swimming}} yüzme (s. 34)."
+  },
+  {
+   "id": "e2-05",
+   "konu": "u2k1",
+   "kavram": "doing judo",
+   "tur": "bosluk",
+   "havuz": [
+    "play",
+    "goes"
+   ],
+   "cumleler": [
+    {
+     "c": "I like ___ judo.",
+     "cevap": "doing"
+    },
+    {
+     "c": "I often go ___ in the sea.",
+     "cevap": "swimming"
+    },
+    {
+     "c": "I like ___ basketball.",
+     "cevap": "playing"
+    }
+   ],
+   "aciklama": "Judo için {{doing}}, yüzme için {{go swimming}}, basketbol için {{playing}} (s. 29–36)."
+  },
+  {
+   "id": "e2-06",
+   "konu": "u2k1",
+   "kavram": "skiing",
+   "tur": "kisa",
+   "soru": "Kayak sporunun İngilizcesini yaz.",
+   "yanit": "skiing",
+   "aciklama": "Kayak {{skiing}}tir (s. 34)."
+  },
+  {
+   "id": "e2-07",
+   "konu": "u2k1",
+   "kavram": "equipment",
+   "tur": "dy",
+   "ifade": "Kitaptaki tenis paragrafına göre topa raketle vurulur.",
+   "dogru": true,
+   "aciklama": "{{They hit a ball with a racket.}} (s. 32)"
+  },
+  {
+   "id": "e2-08",
+   "konu": "u2k2",
+   "kavram": "spectator",
+   "tur": "secim",
+   "soru": "{{There were thousands of ___ in the stadium to watch the final match.}}",
+   "secenekler": [
+    "injuries",
+    "spectators",
+    "medals",
+    "achievements"
+   ],
+   "dogru": 1,
+   "aciklama": "Maçı izleyenler seyircilerdir: {{spectators}} (s. 40)."
+  },
+  {
+   "id": "e2-09",
+   "konu": "u2k2",
+   "kavram": "draw",
+   "tur": "secim",
+   "soru": "{{The score was a draw.}} Skor hangisi olabilir?",
+   "secenekler": [
+    "2-0",
+    "3-1",
+    "1-1",
+    "0-2"
+   ],
+   "dogru": 2,
+   "aciklama": "Berabere: iki taraf eşit, örneğin 1-1 (s. 40)."
+  },
+  {
+   "id": "e2-10",
+   "konu": "u2k2",
+   "kavram": "beat",
+   "tur": "dy",
+   "ifade": "{{Our school team beat the opponent team 2-0.}} cümlesinde okul takımı kaybetmiştir.",
+   "dogru": false,
+   "duzeltme": "Okul takımı kazanmıştır; {{beat}} yenmek demektir.",
+   "aciklama": "{{beat}} yenmek demektir; okul takımı 2-0 kazandı (s. 40)."
+  },
+  {
+   "id": "e2-11",
+   "konu": "u2k2",
+   "kavram": "achievement",
+   "tur": "bosluk",
+   "havuz": [
+    "equipment",
+    "court"
+   ],
+   "cumleler": [
+    {
+     "c": "Katie won five gold medals. It was a great ___.",
+     "cevap": "achievement"
+    },
+    {
+     "c": "Sportsmen may have some ___ while doing exercises.",
+     "cevap": "injuries"
+    },
+    {
+     "c": "None of the teams could ___ a goal.",
+     "cevap": "score"
+    }
+   ],
+   "aciklama": "Başarı {{achievement}}, sakatlıklar {{injuries}}, gol atmak {{score a goal}} (s. 40)."
+  },
+  {
+   "id": "e2-12",
+   "konu": "u2k2",
+   "kavram": "medal",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçe anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "medal",
+     "sag": "madalya"
+    },
+    {
+     "sol": "injury",
+     "sag": "sakatlık"
+    },
+    {
+     "sol": "spectator",
+     "sag": "seyirci"
+    },
+    {
+     "sol": "draw",
+     "sag": "berabere"
+    }
+   ],
+   "aciklama": "{{medal}} madalya, {{injury}} sakatlık, {{spectator}} seyirci, {{draw}} berabere (s. 40–42)."
+  },
+  {
+   "id": "e2-13",
+   "konu": "u2k2",
+   "kavram": "beat",
+   "tur": "kisa",
+   "soru": "{{beat}} (yenmek) kelimesinin zıt anlamlısını İngilizce yaz: kaybetmek.",
+   "yanit": "lose",
+   "aciklama": "Yenmek {{beat}}, kaybetmek {{lose}} (s. 40)."
+  },
+  {
+   "id": "e2-14",
+   "konu": "u2k2",
+   "kavram": "score",
+   "tur": "secim",
+   "soru": "{{He threw the ball, and the final score is 63-64 now.}} {{final score}} ne demektir?",
+   "secenekler": [
+    "Son skor",
+    "Son oyuncu",
+    "Son maç",
+    "Son madalya"
+   ],
+   "dogru": 0,
+   "aciklama": "{{final}} son, {{score}} skor: son skor (s. 32)."
+  }
+ ]
+}

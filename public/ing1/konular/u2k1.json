@@ -1,0 +1,657 @@
+{
+ "id": "u2k1",
+ "unite": "Unit 2: Sports",
+ "baslik": "Sporlar ve Ekipman",
+ "sayfalar": "s. 27–44",
+ "giris": "Bu konuda sporların İngilizce adlarını öğreneceğiz: yüzme, bisiklet, kayak, buz pateni ve judo. Bir sporun dışarıda mı yapıldığını ({{outdoor}}) ve hangi eşyalarla yapıldığını ({{equipment}}) da anlatacağız. Kelimelere dokunarak dinleyebilirsin. Bu konunun sorusu: {{Which sport do you do?}} Yani: Hangi sporu yapıyorsun?",
+ "kavramlar": [
+  {
+   "ad": "swimming",
+   "renk": "#4fb3ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 70q10-8 20 0t20 0t20 0t20 0t20 0' stroke='#4fb3ff' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M10 88q10-8 20 0t20 0t20 0t20 0t20 0' stroke='#2f86d6' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M10 104q10-8 20 0t20 0t20 0t20 0t20 0' stroke='#2364c7' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='52' cy='58' r='10' fill='#ffd6a5'/><path d='M44 54h16' stroke='#ff7a33' stroke-width='5' stroke-linecap='round'/><path d='M62 60q14-30 32-14' stroke='#ffd6a5' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M38 64q-10-6-18 2' stroke='#ffd6a5' stroke-width='6' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Yüzme demektir. Kitapta: kollarını ve bacaklarını kullanarak suda ilerlemek.",
+   "ek": "Kitapta yüzmeye gitmek için {{go swimming}} denir. Havuz: {{swimming pool}}.",
+   "akilda": "yüzme",
+   "ornek": "Then, I go to the gym and the swimming pool to train.",
+   "ornekTr": "Sonra antrenman yapmak için spor salonuna ve yüzme havuzuna giderim. (s. 31)",
+   "soru": {
+    "soru": "{{It is moving in water using your arms and legs.}} Hangi sporu anlatıyor?",
+    "secenekler": [
+     "Cycling",
+     "Swimming",
+     "Skiing"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartında suda yapılan spor vardı.",
+    "aciklama": "Suda kollar ve bacaklarla ilerlemek {{swimming}}, yani yüzmedir. (s. 32)"
+   }
+  },
+  {
+   "ad": "cycling",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='34' cy='82' r='18' stroke='#f2c14e' stroke-width='5' fill='none'/><circle cx='86' cy='82' r='18' stroke='#f2c14e' stroke-width='5' fill='none'/><path d='M34 82l18-26h26l8 26M52 56l12 26h22M64 82l-4-34' stroke='#ff7a33' stroke-width='4' fill='none' stroke-linejoin='round' stroke-linecap='round'/><path d='M54 48h12' stroke='#e9ecf5' stroke-width='4' stroke-linecap='round'/><circle cx='64' cy='24' r='9' fill='#ffd6a5'/><path d='M55 21a9 9 0 0 1 18 0z' fill='#3cc47c'/><path d='M64 33l-4 15M62 38l14 12' stroke='#3cc47c' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Bisiklet sürme sporudur.",
+   "ek": "Bisiklet yapan kişi {{cyclist}}. Kitapta Mark şöyle der: {{I like riding my bike.}}",
+   "akilda": "bisiklet sporu",
+   "ornek": "She prefers outdoor sports like climbing, cycling and surfing.",
+   "ornekTr": "Tırmanma, bisiklet ve sörf gibi dış mekân sporlarını tercih eder. (s. 44)",
+   "soru": {
+    "soru": "{{Burcu is a professional cyclist.}} Burcu hangi sporu yapıyor?",
+    "secenekler": [
+     "Ice skating",
+     "Doing judo",
+     "Cycling"
+    ],
+    "dogru": 2,
+    "ipucu": "{{cyclist}} kelimesi {{cycling}} kelimesine benziyor.",
+    "aciklama": "{{cyclist}} bisikletçi demektir. Burcu {{cycling}} yapar. (s. 44)"
+   }
+  },
+  {
+   "ad": "skiing",
+   "renk": "#e9ecf5",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M0 60L120 108V98q0 22-22 22H22Q0 120 0 98z' fill='#e9ecf5'/><path d='M26 70l-2-2M96 98l2 2' stroke='#e9ecf5' stroke-width='2'/><circle cx='50' cy='30' r='9' fill='#ffd6a5'/><path d='M41 27a9 9 0 0 1 18 0z' fill='#e0464e'/><path d='M50 39l6 22-12 14M56 50l14 6M50 46l-14 4' stroke='#e0464e' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M56 61l10 18' stroke='#e0464e' stroke-width='6' stroke-linecap='round'/><path d='M30 74l50 22M46 70l44 20' stroke='#2364c7' stroke-width='4' stroke-linecap='round'/><path d='M70 56l10 28M36 50l-4 26' stroke='#a9b0c8' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Kayak demektir. Karla kaplı dağda, ayağa takılan uzun kayaklarla kayılır.",
+   "ek": "Kayak yapmak: {{go skiing}}. Kitapta kayak, resimli sporlar listesinde geçer.",
+   "akilda": "kayak",
+   "soru": {
+    "soru": "Hangi spor karda yapılır?",
+    "secenekler": [
+     "Skiing",
+     "Swimming",
+     "Cycling"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki resimde kar ve dağ vardı.",
+    "aciklama": "{{skiing}} kayaktır; karla kaplı dağda yapılır. (s. 34)"
+   }
+  },
+  {
+   "ad": "ice skating",
+   "renk": "#b46be0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='60' cy='96' rx='48' ry='12' fill='#bfe6ff'/><path d='M30 94q20 6 40 0' stroke='#ffffff' stroke-width='2' fill='none'/><circle cx='54' cy='22' r='9' fill='#ffd6a5'/><path d='M54 31v28' stroke='#b46be0' stroke-width='8' stroke-linecap='round'/><path d='M54 38l-18-8M54 38l20-10' stroke='#b46be0' stroke-width='5' stroke-linecap='round'/><path d='M54 59l-4 22M54 59l26 6' stroke='#b46be0' stroke-width='6' stroke-linecap='round'/><path d='M42 84h16M46 81v3' stroke='#e9ecf5' stroke-width='3' stroke-linecap='round'/><path d='M40 88h22' stroke='#a9b0c8' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Buz pateni demektir. {{ice}} buz, {{skating}} paten kaymak.",
+   "ek": "İki kelimeden oluşur: {{ice}} + {{skating}}.",
+   "akilda": "buz pateni",
+   "soru": {
+    "soru": "{{ice skating}} kelimesindeki {{ice}} ne demek?",
+    "secenekler": [
+     "Kar",
+     "Buz",
+     "Su"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta iki kelimenin anlamı ayrı ayrı yazıyordu.",
+    "aciklama": "{{ice}} buz demektir. {{ice skating}} buz pateni. (s. 34)"
+   }
+  },
+  {
+   "ad": "doing judo",
+   "renk": "#4f8ff7",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 104h100' stroke='#3cc47c' stroke-width='6' stroke-linecap='round'/><circle cx='38' cy='30' r='9' fill='#ffd6a5'/><path d='M30 42h16l4 34H26z' fill='#f4f4f8'/><path d='M27 62h22' stroke='#1b2340' stroke-width='4'/><path d='M32 76l-4 24M44 76l4 24' stroke='#f4f4f8' stroke-width='7' stroke-linecap='round'/><path d='M46 48l22 6' stroke='#f4f4f8' stroke-width='6' stroke-linecap='round'/><circle cx='82' cy='30' r='9' fill='#c98b5a'/><path d='M74 42h16l4 34H70z' fill='#4f8ff7'/><path d='M71 62h22' stroke='#f2c14e' stroke-width='4'/><path d='M76 76l-4 24M88 76l4 24' stroke='#4f8ff7' stroke-width='7' stroke-linecap='round'/><path d='M74 48l-14 10' stroke='#4f8ff7' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Judo yapmak demektir. Judo, iki kişinin karşılıklı yaptığı bir dövüş sporudur.",
+   "ek": "Dikkat: yüzmeye {{go swimming}} deriz ama judo için {{do}} kullanılır: {{doing judo}}.",
+   "akilda": "judo yapmak",
+   "soru": {
+    "soru": "Kitapta judo hangi fiille yazılmış?",
+    "secenekler": [
+     "going judo",
+     "doing judo",
+     "playing judo"
+    ],
+    "dogru": 1,
+    "ipucu": "Kavramın adına bak: judonun önünde hangi kelime var?",
+    "aciklama": "Kitapta {{doing judo}} yazar: judo yapmak. (s. 34)"
+   }
+  },
+  {
+   "ad": "outdoor sport",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='88' cy='30' r='14' fill='#f2c14e'/><path d='M88 8v6M88 46v6M66 30h6M104 30h6M73 15l4 4M99 41l4 4M103 15l-4 4' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><path d='M0 86q60-14 120 0V98q0 22-22 22H22Q0 120 0 98z' fill='#3cc47c'/><rect x='24' y='54' width='6' height='30' fill='#8a5a3b'/><circle cx='27' cy='46' r='16' fill='#2f9a5e'/><circle cx='70' cy='92' r='10' fill='#f4f4f8'/><path d='M62 88l8 4 8-4M70 82v20' stroke='#1b2340' stroke-width='2' fill='none'/></svg>",
+   "aciklama": "Dış mekân sporu demektir. Açık havada, dışarıda yapılan spor.",
+   "ek": "Zıttı {{indoor sport}}: kapalı alanda, salonda yapılan spor.",
+   "akilda": "dış mekân sporu",
+   "ornek": "Zeynep does outdoor sports such as hiking.",
+   "ornekTr": "Zeynep doğa yürüyüşü gibi dış mekân sporları yapar. (s. 42)",
+   "soru": {
+    "soru": "{{Zeynep does outdoor sports such as hiking.}} Zeynep sporu nerede yapıyor?",
+    "secenekler": [
+     "Dışarıda, açık havada",
+     "Evde",
+     "Spor salonunda"
+    ],
+    "dogru": 0,
+    "ipucu": "{{out}} dışarı demek. Kartı hatırla.",
+    "aciklama": "{{outdoor}} dışarıda, açık havada demektir. Doğa yürüyüşü ({{hiking}}) dışarıda yapılır. (s. 42)"
+   }
+  },
+  {
+   "ad": "equipment",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='44' cy='44' rx='22' ry='28' stroke='#ff7a33' stroke-width='5' fill='none' transform='rotate(-30 44 44)'/><path d='M34 34l20 20M28 46l20 20M44 30l18 18M30 58l20-20M40 66l20-20M24 46l18-18' stroke='#ffd0b0' stroke-width='1.5' transform='rotate(-30 44 44)' opacity='.8'/><path d='M58 66l20 24' stroke='#c45c2a' stroke-width='8' stroke-linecap='round'/><circle cx='92' cy='38' r='11' fill='#d8f04a'/><path d='M82 33q10 6 20 0M82 43q10-6 20 0' stroke='#f4f4f8' stroke-width='2' fill='none'/><path d='M14 104h92M14 94h92M24 94v10M40 94v10M56 94v10M72 94v10M88 94v10' stroke='#e9ecf5' stroke-width='2'/></svg>",
+   "aciklama": "Ekipman, spor eşyası demektir. Bir sporu yapmak için gereken eşyalar.",
+   "ek": "Kitaptaki tenis paragrafında ekipman: {{racket}} raket, {{ball}} top, {{net}} file.",
+   "akilda": "ekipman, eşya",
+   "ornek": "If you want to play tennis, you need special equipment.",
+   "ornekTr": "Tenis oynamak istiyorsan özel ekipmana ihtiyacın var. (s. 43)",
+   "soru": {
+    "soru": "{{If you want to play tennis, you need special ___.}} Boşluğa hangisi gelir?",
+    "secenekler": [
+     "diet",
+     "equipment",
+     "injury"
+    ],
+    "dogru": 1,
+    "ipucu": "Tenis için raket ve top gerekir. Bunlara ne deniyordu?",
+    "aciklama": "Tenis için raket, top gibi özel eşyalar gerekir: {{equipment}}. (s. 43)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu spor nerede yapılır?",
+   "kutular": [
+    {
+     "etiket": "Suda",
+     "uyeler": [
+      "swimming"
+     ]
+    },
+    {
+     "etiket": "Karda, buzda",
+     "uyeler": [
+      "skiing",
+      "ice skating"
+     ]
+    },
+    {
+     "etiket": "Yerde, karada",
+     "uyeler": [
+      "cycling",
+      "doing judo"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki tenis paragrafına göre bir oyuncu, rakibini yenmek için genellikle iki set kazanmalıdır: {{A player usually needs to win two sets.}} (s. 32)",
+  "Kitapta Raymond kapalı alan sporlarını seçiyor, çünkü onları her havada yapabiliyor. Ona {{squash}} öneriliyor. (s. 44)"
+ ],
+ "akildaKalsin": [
+  "Sporlar: {{swimming}} yüzme, {{cycling}} bisiklet, {{skiing}} kayak, {{ice skating}} buz pateni.",
+  "Fiillere dikkat: {{go swimming}}, {{go jogging}}, ama {{doing judo}} ve {{playing basketball}}.",
+  "{{outdoor sport}} dışarıda, {{indoor sport}} kapalı alanda yapılır.",
+  "{{equipment}}: sporun eşyaları. Tenis için {{racket}}, {{ball}}, {{net}}.",
+  "Takım oyunu {{team game}}: basketbol. Tek kişilik spor {{individual sport}}: yüzme."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{go swimming}} mi, {{do swimming}} mi?",
+   "cevap": "Kitapta {{go swimming}}, {{go running}}, {{go jogging}} geçer (s. 29–30). Judo için {{doing judo}} (s. 34), basketbol için {{playing basketball}} (s. 36) kullanılır."
+  },
+  {
+   "soru": "{{indoor}} ve {{outdoor}} nereden geliyor?",
+   "cevap": "{{door}} kapı demek. {{in}} içeri, {{out}} dışarı. {{indoor}} kapının içinde, yani kapalı alanda; {{outdoor}} dışarıda, açık havada."
+  },
+  {
+   "soru": "Kapalı alan sporunun iyi yanı ne?",
+   "cevap": "Kitapta Raymond şöyle diyor: kapalı alan sporlarını her havada yapabilirim. (s. 44)"
+  },
+  {
+   "soru": "{{team game}} ile {{individual sport}} farkı ne?",
+   "cevap": "Basketbol bir takım oyunudur; her takımda beş oyuncu vardır. Yüzme tek kişilik, bireysel bir spordur. (s. 32)"
+  },
+  {
+   "soru": "{{athlete}} ne demek?",
+   "cevap": "Sporcu demektir. Kitapta Doris kendini şöyle tanıtır: {{I'm an athlete.}} (s. 29)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "En sevdiğin sporu İngilizce iki cümleyle anlat. Birinci cümle {{My favourite sport is}} ile başlasın. İkinci cümlede dışarıda mı, kapalı alanda mı yapıldığını yaz.",
+   "ornekCevap": "My favourite sport is swimming. It is an indoor sport.",
+   "anahtarlar": [
+    "favourite",
+    "sport",
+    "door"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "skiing",
+    "cycling",
+    "swimming"
+   ],
+   "dogru": 1,
+   "ipucu": "Bisikletle ilgili kelimeyi duydun. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{cycling}}: bisiklet sporu. (s. 34)",
+   "dinle": "cycling",
+   "kavram": "cycling"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "skiing",
+    "surfing",
+    "swimming"
+   ],
+   "dogru": 0,
+   "ipucu": "Karda yapılan sporun adını duydun. Bir daha dinle.",
+   "aciklama": "Duyduğun kelime {{skiing}}: kayak. (s. 34)",
+   "dinle": "skiing",
+   "kavram": "skiing"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "You need special medals.",
+    "You need a special diet.",
+    "You need special equipment."
+   ],
+   "dogru": 2,
+   "ipucu": "Cümlenin sonundaki kelimeyi dinle: spor eşyaları.",
+   "aciklama": "Duyduğun cümle {{You need special equipment.}}: Özel ekipmana ihtiyacın var. (s. 43)",
+   "dinle": "You need special equipment.",
+   "kavram": "equipment"
+  },
+  {
+   "soru": "Tenis oynamak için hangi ekipman gerekir?",
+   "secenekler": [
+    "A medal",
+    "A swimming pool",
+    "A racket"
+   ],
+   "dogru": 2,
+   "ipucu": "Kitaptaki tenis paragrafında topa ne ile vuruluyordu?",
+   "aciklama": "{{They hit a ball with a racket.}} Topa raketle vurulur. (s. 32)",
+   "kavram": "equipment"
+  },
+  {
+   "soru": "{{It's an individual sport. You should do it in a pool or in the sea.}} Hangi spor?",
+   "secenekler": [
+    "Cycling",
+    "Swimming",
+    "Doing judo"
+   ],
+   "dogru": 1,
+   "ipucu": "Havuzda ya da denizde yapılan sporu düşün.",
+   "aciklama": "Havuzda ya da denizde yapılan bireysel spor {{swimming}}dir. (s. 32)",
+   "kavram": "swimming"
+  },
+  {
+   "soru": "Burcu bisiklet sporcusudur. Hangi cümle onu anlatır?",
+   "secenekler": [
+    "She is a professional cyclist.",
+    "She is a professional skier.",
+    "She is a swimmer."
+   ],
+   "dogru": 0,
+   "ipucu": "{{cycling}} yapan kişiye ne denir?",
+   "aciklama": "{{She is a professional cyclist.}} Profesyonel bisikletçidir. (s. 44)",
+   "kavram": "cycling",
+   "yardim": {
+    "adimlar": [
+     "Burcu hangi sporu yapıyor? Bisiklet.",
+     "Bisiklet sporu {{cycling}}.",
+     "Bu spor yapan kişinin adı {{cycl-}} ile başlar."
+    ]
+   }
+  },
+  {
+   "soru": "Buz pateni İngilizce nasıl söylenir?",
+   "secenekler": [
+    "skiing",
+    "surfing",
+    "ice skating"
+   ],
+   "dogru": 2,
+   "ipucu": "Buz {{ice}} demekti.",
+   "aciklama": "Buz pateni {{ice skating}}dir. (s. 34)",
+   "kavram": "ice skating"
+  },
+  {
+   "soru": "Hangisi doğru yazılmış?",
+   "secenekler": [
+    "I like going judo.",
+    "I like doing judo.",
+    "I like playing judo."
+   ],
+   "dogru": 1,
+   "ipucu": "Judo hangi fiille kullanılıyordu? Kavramın adına bak.",
+   "aciklama": "Judo için {{do}} kullanılır: {{doing judo}}. (s. 34)",
+   "kavram": "doing judo"
+  },
+  {
+   "soru": "{{Zeynep does outdoor sports such as hiking.}} {{outdoor}} ne demek?",
+   "secenekler": [
+    "Kapalı alanda",
+    "Suda",
+    "Dışarıda, açık havada"
+   ],
+   "dogru": 2,
+   "ipucu": "{{out}} kelimesinin anlamını hatırla.",
+   "aciklama": "{{outdoor}} dışarıda, açık havada demektir. (s. 42)",
+   "kavram": "outdoor sport"
+  },
+  {
+   "soru": "Raymond: {{I prefer indoor sports because ___.}} Hangisi uygun?",
+   "secenekler": [
+    "I like sunny and hot days",
+    "I can do it in all kinds of weather condition",
+    "I prefer exercising in open air"
+   ],
+   "dogru": 1,
+   "ipucu": "Kapalı alanda yağmur, kar sorun olur mu?",
+   "aciklama": "Kapalı alan sporu her havada yapılabilir. Açık hava ve güneş dış mekânı anlatır. (s. 44)",
+   "kavram": "outdoor sport",
+   "yardim": {
+    "adimlar": [
+     "{{indoor}} kapalı alan demek.",
+     "Şıklardan hangileri açık havayı, güneşi anlatıyor? Onları ele.",
+     "Kalan şık kapalı alanın iyi yanını söylüyor mu?"
+    ]
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "indoor sport",
+   "tr": "kapalı alan sporu",
+   "ornek": "I prefer indoor sports because I can do it in all kinds of weather condition.",
+   "ornekTr": "Kapalı alan sporlarını tercih ederim, çünkü her havada yapabilirim. (s. 44)"
+  },
+  {
+   "en": "jogging",
+   "tr": "koşu (hafif tempolu)",
+   "ornek": "I like doing jogging in the park.",
+   "ornekTr": "Parkta koşu yapmayı severim. (s. 42)"
+  },
+  {
+   "en": "surfing",
+   "tr": "sörf",
+   "ornek": "She prefers outdoor sports like climbing, cycling and surfing.",
+   "ornekTr": "Tırmanma, bisiklet ve sörf gibi dış mekân sporlarını tercih eder. (s. 44)"
+  },
+  {
+   "en": "climbing",
+   "tr": "tırmanma"
+  },
+  {
+   "en": "hiking",
+   "tr": "doğa yürüyüşü",
+   "ornek": "Zeynep does outdoor sports such as hiking.",
+   "ornekTr": "Zeynep doğa yürüyüşü gibi dış mekân sporları yapar. (s. 42)"
+  },
+  {
+   "en": "tennis",
+   "tr": "tenis",
+   "ornek": "If you want to play tennis, you need special equipment.",
+   "ornekTr": "Tenis oynamak istiyorsan özel ekipmana ihtiyacın var. (s. 43)"
+  },
+  {
+   "en": "basketball",
+   "tr": "basketbol",
+   "ornek": "I play basketball twice a week, but I often ride my bike.",
+   "ornekTr": "Haftada iki kez basketbol oynarım, ama sık sık bisiklete binerim. (s. 36)"
+  },
+  {
+   "en": "gym",
+   "tr": "spor salonu",
+   "ornek": "I'm going to the gym to work out.",
+   "ornekTr": "Spor yapmak için spor salonuna gidiyorum. (s. 43)"
+  },
+  {
+   "en": "court",
+   "tr": "kort, saha",
+   "ornek": "You can see the players playing this sport in a court.",
+   "ornekTr": "Bu sporu oynayan oyuncuları bir kortta görebilirsin. (s. 32)"
+  },
+  {
+   "en": "racket",
+   "tr": "raket",
+   "ornek": "They hit a ball with a racket to throw it over the net.",
+   "ornekTr": "Topu filenin üstünden atmak için ona raketle vururlar. (s. 32)"
+  },
+  {
+   "en": "net",
+   "tr": "file"
+  },
+  {
+   "en": "team game",
+   "tr": "takım oyunu",
+   "ornek": "It is a team game.",
+   "ornekTr": "Bu bir takım oyunudur. (s. 32)"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "I like doing jogging in the park.",
+   "tr": "Parkta koşu yapmayı severim. (s. 42)"
+  },
+  {
+   "en": "Zeynep does outdoor sports such as hiking.",
+   "tr": "Zeynep doğa yürüyüşü gibi dış mekân sporları yapar. (s. 42)"
+  },
+  {
+   "en": "It is a team game.",
+   "tr": "Bu bir takım oyunudur. (s. 32)"
+  },
+  {
+   "en": "It's an individual sport.",
+   "tr": "Bu bireysel bir spordur. (s. 32)"
+  },
+  {
+   "en": "It's an outdoor sport.",
+   "tr": "Bu bir dış mekân sporudur. (s. 44)"
+  },
+  {
+   "en": "You can play squash, then.",
+   "tr": "O zaman squash oynayabilirsin. (s. 44)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Football is an indoor sport.",
+   "yanlis": "indoor",
+   "secenekler": [
+    "outdoor",
+    "individual",
+    "special"
+   ],
+   "dogru": 0,
+   "tr": "Futbol bir dış mekân sporudur.",
+   "aciklama": "Futbol dışarıda, sahada oynanır: {{Football is an outdoor sport.}} (s. 40)"
+  },
+  {
+   "cumle": "I like do jogging in the park.",
+   "yanlis": "do",
+   "secenekler": [
+    "does",
+    "doing",
+    "did"
+   ],
+   "dogru": 1,
+   "tr": "Parkta koşu yapmayı severim.",
+   "aciklama": "{{like}} kelimesinden sonra fiil {{-ing}} alır: {{I like doing jogging.}} (s. 42)"
+  },
+  {
+   "cumle": "She prefer outdoor sports like climbing and surfing.",
+   "yanlis": "prefer",
+   "secenekler": [
+    "preferring",
+    "is prefer",
+    "prefers"
+   ],
+   "dogru": 2,
+   "tr": "Tırmanma ve sörf gibi dış mekân sporlarını tercih eder.",
+   "aciklama": "{{She}} ile fiil {{-s}} alır: {{She prefers}}. (s. 44)"
+  },
+  {
+   "cumle": "If you want to play tennis, you need special injury.",
+   "yanlis": "injury",
+   "secenekler": [
+    "equipment",
+    "spectator",
+    "medal"
+   ],
+   "dogru": 0,
+   "tr": "Tenis oynamak istiyorsan özel ekipmana ihtiyacın var.",
+   "aciklama": "Tenis için gereken eşyalar {{equipment}}tır. {{injury}} sakatlık demek. (s. 43)"
+  },
+  {
+   "cumle": "They hit a ball with a racket to throw it over the gym.",
+   "yanlis": "gym",
+   "secenekler": [
+    "court",
+    "net",
+    "pool"
+   ],
+   "dogru": 1,
+   "tr": "Topu filenin üstünden atmak için ona raketle vururlar.",
+   "aciklama": "Tenis topu filenin, yani {{net}}in üstünden atılır. (s. 32)"
+  }
+ ],
+ "resimEslestir": true,
+ "okuma": {
+  "baslik": "Which sport is it?",
+  "sayfa": "s. 32",
+  "sozluk": {
+   "court": "kort, saha",
+   "racket": "raket",
+   "net": "file",
+   "opponent": "rakip",
+   "make a point": "sayı yapmak",
+   "sets": "setler",
+   "beat": "yenmek",
+   "team game": "takım oyunu",
+   "cheering for": "-e tezahürat yapıyorlar",
+   "threw": "attı",
+   "final score": "son skor",
+   "individual sport": "bireysel spor",
+   "arms and legs": "kollar ve bacaklar",
+   "breaststroke": "kurbağalama (yüzme stili)",
+   "freestyle": "serbest stil",
+   "pool": "havuz"
+  },
+  "bolumler": [
+   {
+    "baslik": "Raket ve top",
+    "cumleler": [
+     {
+      "en": "You can see the players playing this sport in a court.",
+      "tr": "Bu sporu oynayan oyuncuları bir kortta görebilirsin."
+     },
+     {
+      "en": "They hit a ball with a racket to throw it over the net.",
+      "tr": "Topu filenin üstünden atmak için ona raketle vururlar."
+     },
+     {
+      "en": "The ball must touch the opponent's side to make a point.",
+      "tr": "Sayı yapmak için top rakibin tarafına değmelidir."
+     },
+     {
+      "en": "A player usually needs to win two sets to beat his/her opponent.",
+      "tr": "Bir oyuncu rakibini yenmek için genellikle iki set kazanmalıdır."
+     },
+     {
+      "en": "It is a team game.",
+      "tr": "Bu bir takım oyunudur."
+     },
+     {
+      "en": "The players' goal is to make as many scores as they can.",
+      "tr": "Oyuncuların amacı yapabildikleri kadar çok sayı yapmaktır."
+     },
+     {
+      "en": "Five players in each team play the game.",
+      "tr": "Oyunu her takımda beş oyuncu oynar."
+     },
+     {
+      "en": "Listen!",
+      "tr": "Dinle!"
+     },
+     {
+      "en": "Spectators are cheering for Roger.",
+      "tr": "Seyirciler Roger'a tezahürat yapıyor."
+     },
+     {
+      "en": "He threw the ball, and the final score is 63-64 now.",
+      "tr": "Topu attı ve şimdi son skor 63-64."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "İlk paragraftaki sporda top neyin üstünden atılıyor?",
+      "secenekler": [
+       "Filenin",
+       "Duvarın",
+       "Kalenin"
+      ],
+      "dogru": 0,
+      "ipucu": "{{over the net}} kalıbını bul.",
+      "aciklama": "{{They hit a ball with a racket to throw it over the net.}} Top filenin üstünden atılır; bu spor tenistir."
+     },
+     {
+      "soru": "İkinci paragraftaki oyunda her takımda kaç oyuncu var?",
+      "secenekler": [
+       "Üç",
+       "On bir",
+       "Beş"
+      ],
+      "dogru": 2,
+      "ipucu": "{{players in each team}} cümlesine bak.",
+      "aciklama": "{{Five players in each team play the game.}} Her takımda beş oyuncu var; bu oyun basketboldur."
+     }
+    ]
+   },
+   {
+    "baslik": "Suda",
+    "cumleler": [
+     {
+      "en": "It's an individual sport.",
+      "tr": "Bu bireysel bir spordur."
+     },
+     {
+      "en": "It is moving in water using your arms and legs.",
+      "tr": "Kollarını ve bacaklarını kullanarak suda ilerlemektir."
+     },
+     {
+      "en": "There are different styles in that sport like breaststroke or freestyle.",
+      "tr": "Bu sporda kurbağalama ya da serbest stil gibi farklı stiller vardır."
+     },
+     {
+      "en": "You should do it in a pool or in the sea.",
+      "tr": "Bunu havuzda ya da denizde yapmalısın."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Bu paragraf hangi sporu anlatıyor?",
+      "secenekler": [
+       "Cycling",
+       "Swimming",
+       "Skiing"
+      ],
+      "dogru": 1,
+      "ipucu": "{{moving in water}}: suda ilerlemek.",
+      "aciklama": "Suda kollar ve bacaklarla ilerlemek yüzmedir: {{swimming}}."
+     },
+     {
+      "soru": "Bu spor nerede yapılır?",
+      "secenekler": [
+       "Havuzda ya da denizde",
+       "Kortta",
+       "Karla kaplı dağda"
+      ],
+      "dogru": 0,
+      "ipucu": "Son cümleye bak: {{in a pool or in the sea}}.",
+      "aciklama": "{{You should do it in a pool or in the sea.}} Havuzda ya da denizde yapılır."
+     }
+    ]
+   }
+  ]
+ }
+}

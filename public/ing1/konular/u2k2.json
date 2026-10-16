@@ -1,0 +1,624 @@
+{
+ "id": "u2k2",
+ "unite": "Unit 2: Sports",
+ "baslik": "Maç ve Yarışma",
+ "sayfalar": "s. 27–44",
+ "giris": "Bu konuda maç ve yarışmaları anlatan İngilizce kelimeleri öğreneceğiz: seyirci, madalya, sakatlık, berabere, yenmek, skor ve başarı. Kelimelere dokunarak dinleyebilirsin. Bu konunun sorusu: {{What was the score?}} Yani: Skor neydi?",
+ "kavramlar": [
+  {
+   "ad": "spectator",
+   "renk": "#f2c14e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 98h100M10 78h100' stroke='#5a6280' stroke-width='4'/><circle cx='24' cy='68' r='8' fill='#ffd6a5'/><circle cx='46' cy='68' r='8' fill='#c98b5a'/><circle cx='68' cy='68' r='8' fill='#ffd6a5'/><circle cx='90' cy='68' r='8' fill='#e8b48a'/><circle cx='34' cy='88' r='8' fill='#e8b48a'/><circle cx='56' cy='88' r='8' fill='#ffd6a5'/><circle cx='78' cy='88' r='8' fill='#c98b5a'/><circle cx='100' cy='88' r='8' fill='#ffd6a5'/><path d='M46 60l-6-16M46 60l6-16M90 60l-6-18M90 60l6-18' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Seyirci demektir. Maçı tribünden izleyen kişi.",
+   "ek": "Çoğulu {{spectators}}. Kitapta: {{Spectators are cheering for Roger.}} Seyirciler Roger'a tezahürat yapıyor.",
+   "akilda": "seyirci",
+   "ornek": "More than fifty thousand spectators watched the final match.",
+   "ornekTr": "Elli binden fazla seyirci final maçını izledi. (s. 42)",
+   "soru": {
+    "soru": "{{More than fifty thousand spectators watched the final match.}} {{spectators}} ne yapıyor?",
+    "secenekler": [
+     "Maçı oynuyor",
+     "Maçı izliyor",
+     "Maçı yönetiyor"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta seyirci kelimesinin anlamı vardı.",
+    "aciklama": "{{spectators}} seyircilerdir; maçı izlerler: {{watched the final match}}. (s. 42)"
+   }
+  },
+  {
+   "ad": "medal",
+   "renk": "#c99a20",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M40 12l20 42 20-42' stroke='#e0464e' stroke-width='12' fill='none' stroke-linejoin='round'/><path d='M52 12l8 18 8-18' stroke='#4f8ff7' stroke-width='6' fill='none'/><circle cx='60' cy='76' r='26' fill='#f2c14e'/><circle cx='60' cy='76' r='19' fill='none' stroke='#c99a20' stroke-width='3'/><path d='M60 63l4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z' fill='#fff3c4'/></svg>",
+   "aciklama": "Madalya demektir. Yarışmada dereceye girene verilir.",
+   "ek": "Altın madalya {{gold medal}}. Madalya kazanmak: {{win a medal}}; geçmişte {{won}}.",
+   "akilda": "madalya",
+   "ornek": "Sheila won the gold medal in the National Swimming Championship.",
+   "ornekTr": "Sheila Ulusal Yüzme Şampiyonası'nda altın madalyayı kazandı. (s. 42)",
+   "soru": {
+    "soru": "{{Sheila won the gold medal.}} Sheila ne kazandı?",
+    "secenekler": [
+     "Altın madalya",
+     "Kupa",
+     "Para"
+    ],
+    "dogru": 0,
+    "ipucu": "{{gold}} altın, {{medal}} madalya.",
+    "aciklama": "{{gold medal}} altın madalyadır. (s. 42)"
+   }
+  },
+  {
+   "ad": "injury",
+   "renk": "#e0464e",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M44 10v58q0 22 22 22h22' stroke='#ffd6a5' stroke-width='22' fill='none' stroke-linecap='round'/><rect x='30' y='38' width='28' height='22' rx='4' fill='#f4f4f8'/><path d='M36 44v10M42 44v10M48 44v10M54 44v10' stroke='#d8dbe6' stroke-width='2'/><path d='M88 30v20M78 40h20' stroke='#e0464e' stroke-width='7' stroke-linecap='round'/><path d='M90 98l6 6M96 98l-6 6' stroke='#e0464e' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Sakatlık demektir. Spor yaparken vücudun incinmesi.",
+   "ek": "Çoğulu {{injuries}}. Doris ağır egzersiz yapmaz, bacaklarını incitmek istemez: {{not to hurt my legs}} (s. 29).",
+   "akilda": "sakatlık",
+   "ornek": "Sportsmen may have some injuries while doing exercises.",
+   "ornekTr": "Sporcular egzersiz yaparken bazı sakatlıklar yaşayabilir. (s. 40)",
+   "soru": {
+    "soru": "{{Sportsmen may have some injuries while doing exercises.}} {{injuries}} ne demek?",
+    "secenekler": [
+     "Madalyalar",
+     "Sakatlıklar",
+     "Seyirciler"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta yara bandı vardı.",
+    "aciklama": "{{injuries}} sakatlıklardır. Spor yaparken sakatlanabiliriz. (s. 40)"
+   }
+  },
+  {
+   "ad": "draw",
+   "renk": "#a9b0c8",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='26' width='92' height='56' rx='10' fill='#0e1428' stroke='#5a6280' stroke-width='3'/><text x='38' y='68' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f2c14e'>1</text><text x='82' y='68' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#f2c14e'>1</text><path d='M54 52h12M54 60h12' stroke='#e9ecf5' stroke-width='4' stroke-linecap='round'/><path d='M40 82v14M80 82v14' stroke='#5a6280' stroke-width='4'/><path d='M30 104h20M70 104h20' stroke='#f2c14e' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Sporda berabere demektir. İki takımın skoru eşit olunca maç berabere biter.",
+   "ek": "Dikkat: {{draw}} resim çizmek de demektir. Maçta ise berabere.",
+   "akilda": "berabere",
+   "ornek": "The score was a draw.",
+   "ornekTr": "Skor berabereydi. (s. 42)",
+   "soru": {
+    "soru": "{{The score was a draw.}} Maç nasıl bitti?",
+    "secenekler": [
+     "Biz kazandık",
+     "Biz kaybettik",
+     "Berabere"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta skor tabelasında iki sayı eşitti.",
+    "aciklama": "{{draw}} berabere demektir; skor eşittir. (s. 40)"
+   }
+  },
+  {
+   "ad": "beat",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='26' width='92' height='56' rx='10' fill='#0e1428' stroke='#5a6280' stroke-width='3'/><text x='38' y='68' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#3cc47c'>2</text><text x='82' y='68' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='#a9b0c8'>0</text><path d='M56 56h8' stroke='#e9ecf5' stroke-width='4' stroke-linecap='round'/><path d='M40 82v14M80 82v14' stroke='#5a6280' stroke-width='4'/><path d='M38 8l-6 6M38 8l6 6M38 8v12' stroke='#3cc47c' stroke-width='4' stroke-linecap='round'/><path d='M30 104h20' stroke='#3cc47c' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Yenmek demektir. Bir takımı ya da rakibi maçta yenmek.",
+   "ek": "{{beat}} + rakip: {{beat the opponent}}. Zıttı {{lose}}: kaybetmek.",
+   "akilda": "yenmek",
+   "ornek": "Our school team beat the opponent team 2-0.",
+   "ornekTr": "Okul takımımız rakip takımı 2-0 yendi. (s. 40)",
+   "soru": {
+    "soru": "{{Our school team beat the opponent team 2-0.}} Kim kazandı?",
+    "secenekler": [
+     "Okul takımımız",
+     "Rakip takım",
+     "Kimse"
+    ],
+    "dogru": 0,
+    "ipucu": "{{beat}} yenmek demekti. Kim kimi yendi?",
+    "aciklama": "Okul takımımız rakibi 2-0 yendi. (s. 40)"
+   }
+  },
+  {
+   "ad": "score",
+   "renk": "#ff7a33",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 30h48v66H60' stroke='#f4f4f8' stroke-width='5' fill='none' stroke-linejoin='round'/><path d='M68 30v66M76 30v66M84 30v66M92 30v66M100 30v66M60 46h48M60 62h48M60 78h48' stroke='#a9b0c8' stroke-width='1.5'/><circle cx='82' cy='70' r='10' fill='#f4f4f8'/><path d='M74 66l8 4 8-4M82 60v20' stroke='#1b2340' stroke-width='2' fill='none'/><path d='M14 96q20-40 52-30' stroke='#f2c14e' stroke-width='3' stroke-dasharray='4 5' fill='none'/><path d='M10 104h100' stroke='#3cc47c' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Skor demektir. Fiil olarak sayı ya da gol atmak.",
+   "ek": "Gol atmak: {{score a goal}}. Kitapta {{hit three goals}} de geçer: üç gol attı.",
+   "akilda": "skor, gol atmak",
+   "ornek": "None of the teams could score a goal.",
+   "ornekTr": "Takımların hiçbiri gol atamadı. (s. 40)",
+   "soru": {
+    "soru": "{{The final score is 63-64 now.}} {{score}} burada ne demek?",
+    "secenekler": [
+     "Seyirci",
+     "Skor",
+     "Takım"
+    ],
+    "dogru": 1,
+    "ipucu": "Cümlede sayılar var: 63-64.",
+    "aciklama": "{{final score}} son skordur: 63-64. (s. 32)"
+   }
+  },
+  {
+   "ad": "achievement",
+   "renk": "#b46be0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M38 22h44v18q0 26-22 26t-22-26z' fill='#f2c14e'/><path d='M38 28H24q0 20 18 22M82 28h14q0 20-18 22' stroke='#f2c14e' stroke-width='5' fill='none'/><rect x='54' y='66' width='12' height='16' fill='#c99a20'/><rect x='40' y='82' width='40' height='12' rx='3' fill='#c99a20'/><path d='M60 30l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z' fill='#fff3c4'/><path d='M16 14l3 6 6 3-6 3-3 6-3-6-6-3 6-3zM102 72l2 4 4 2-4 2-2 4-2-4-4-2 4-2z' fill='#e9ecf5'/></svg>",
+   "aciklama": "Başarı demektir. Çok emek verip elde edilen güzel sonuç.",
+   "ek": "Büyük başarı: {{a great achievement}}.",
+   "akilda": "başarı",
+   "ornek": "It was a great achievement.",
+   "ornekTr": "Büyük bir başarıydı. (s. 40)",
+   "soru": {
+    "soru": "{{Katie won five gold medals last year. It was a great ___.}}",
+    "secenekler": [
+     "injury",
+     "draw",
+     "achievement"
+    ],
+    "dogru": 2,
+    "ipucu": "Beş altın madalya kazanmak iyi bir şey mi, kötü mü?",
+    "aciklama": "Beş altın madalya büyük bir başarıdır: {{achievement}}. (s. 40)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kelime iyi bir şey mi, kötü bir şey mi, yoksa ikisi de değil mi?",
+   "kutular": [
+    {
+     "etiket": "İyi sonuç",
+     "uyeler": [
+      "medal",
+      "beat",
+      "achievement"
+     ]
+    },
+    {
+     "etiket": "Kötü olay",
+     "uyeler": [
+      "injury"
+     ]
+    },
+    {
+     "etiket": "Ne iyi ne kötü",
+     "uyeler": [
+      "draw",
+      "spectator",
+      "score"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki röportajda yüzücü Emma'nın hayali, altı Olimpiyatta yarışarak altı altın madalya kazanan ilk kadın yüzücü olmak. (s. 31)",
+  "Naim Süleymanoğlu kısa boylu ama çok güçlü olduğu için {{Pocket Hercules}} diye anılır. (s. 36)"
+ ],
+ "akildaKalsin": [
+  "{{spectator}} seyirci, {{medal}} madalya, {{injury}} sakatlık.",
+  "Skor eşitse {{draw}}: berabere.",
+  "Rakibi yenmek {{beat}}; madalya ya da maç kazanmak {{win}} ({{won}}).",
+  "{{score}} skor; {{score a goal}} gol atmak.",
+  "Büyük başarı: {{a great achievement}}."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{draw}} resim çizmek değil miydi?",
+   "cevap": "Evet, ama sporda berabere demektir. Kitapta: {{The score was a draw. None of the teams could score a goal.}} (s. 40)"
+  },
+  {
+   "soru": "{{beat}} ile {{win}} farkı ne?",
+   "cevap": "{{beat}} birini yenmektir: {{beat the opponent team}}. {{win}} bir şeyi kazanmaktır: {{won five gold medals}}. (s. 40)"
+  },
+  {
+   "soru": "{{opponent}} kim?",
+   "cevap": "Rakip demektir; maçta karşı taraf. Tenis paragrafında top rakibin tarafına değince sayı olur. (s. 32)"
+  },
+  {
+   "soru": "{{score}} hem isim hem fiil mi?",
+   "cevap": "Evet. İsim: {{the final score is 63-64}} son skor. Fiil: {{score a goal}} gol atmak. (s. 32, s. 40)"
+  },
+  {
+   "soru": "Sporcular sakatlanmamak için ne yapar?",
+   "cevap": "Kitapta Doris, bacaklarını incitmemek için ağır egzersiz yapmadığını söylüyor. (s. 29)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "İzlediğin ya da oynadığın bir maçı İngilizce iki cümleyle anlat. Skor neydi? Kim kazandı ya da berabere mi bitti?",
+   "ornekCevap": "The score was 2-0. Our team beat the other team.",
+   "anahtarlar": [
+    "score",
+    "team",
+    "beat"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "medal",
+    "match",
+    "racket"
+   ],
+   "dogru": 0,
+   "ipucu": "Yarışmada kazanılan bir şey. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{medal}}: madalya. (s. 42)",
+   "dinle": "medal",
+   "kavram": "medal"
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "The score was a goal.",
+    "The score was a draw.",
+    "The match was long."
+   ],
+   "dogru": 1,
+   "ipucu": "Cümlenin son kelimesine dikkat et: berabere.",
+   "aciklama": "Duyduğun cümle {{The score was a draw.}}: Skor berabereydi. (s. 42)",
+   "dinle": "The score was a draw.",
+   "kavram": "draw"
+  },
+  {
+   "soru": "{{There were thousands of ___ in the stadium to watch the final match.}}",
+   "secenekler": [
+    "spectators",
+    "injuries",
+    "medals"
+   ],
+   "dogru": 0,
+   "ipucu": "Stadyumda maçı izleyen kim?",
+   "aciklama": "Maçı izleyenler seyircilerdir: {{spectators}}. (s. 40)",
+   "kavram": "spectator"
+  },
+  {
+   "soru": "{{James trains very hard because ___.}} Hangisi uygun?",
+   "secenekler": [
+    "he made a goal",
+    "he's very healthy",
+    "he wants to get the gold medal"
+   ],
+   "dogru": 2,
+   "ipucu": "Neden çok çalışır? Bir şey kazanmak istiyor.",
+   "aciklama": "{{James trains very hard because he wants to get the gold medal.}} Altın madalyayı istediği için çok çalışır. (s. 39)",
+   "kavram": "medal"
+  },
+  {
+   "soru": "{{Sportsmen may have some ___ while doing exercises.}}",
+   "secenekler": [
+    "achievements",
+    "injuries",
+    "spectators"
+   ],
+   "dogru": 1,
+   "ipucu": "Egzersiz yaparken başımıza gelebilecek kötü bir şey.",
+   "aciklama": "Egzersiz yaparken sakatlık olabilir: {{injuries}}. (s. 40)",
+   "kavram": "injury"
+  },
+  {
+   "soru": "{{The score was a draw. None of the teams could score a goal.}} Skor ne olabilir?",
+   "secenekler": [
+    "2-0",
+    "0-0",
+    "1-0"
+   ],
+   "dogru": 1,
+   "ipucu": "Hiçbir takım gol atamadıysa iki taraf da kaç gol attı?",
+   "aciklama": "Hiçbir takım gol atamadı: 0-0, yani berabere. (s. 40)",
+   "kavram": "draw",
+   "yardim": {
+    "adimlar": [
+     "{{draw}} berabere demek: iki taraf eşit.",
+     "{{None of the teams could score a goal.}} Hiçbir takım gol atamadı.",
+     "İki taraf da eşit ve hiç gol yok. Hangi skor böyle?"
+    ]
+   }
+  },
+  {
+   "soru": "Takımımız rakibi 2-0 yendi. {{Our team ___ the opponent team 2-0.}}",
+   "secenekler": [
+    "lost",
+    "drew",
+    "beat"
+   ],
+   "dogru": 2,
+   "ipucu": "Yenmek hangi kelimeydi?",
+   "aciklama": "Yenmek {{beat}}tir: {{Our school team beat the opponent team 2-0.}} (s. 40)",
+   "kavram": "beat"
+  },
+  {
+   "soru": "{{beat}} kelimesinin zıt anlamlısı hangisi?",
+   "secenekler": [
+    "lose",
+    "win",
+    "train"
+   ],
+   "dogru": 0,
+   "ipucu": "Yenmenin tersi ne olur?",
+   "aciklama": "{{beat}} yenmek, {{lose}} kaybetmektir. (s. 40)",
+   "kavram": "beat"
+  },
+  {
+   "soru": "{{He threw the ball, and the final score is 63-64 now.}} {{final score}} ne demek?",
+   "secenekler": [
+    "Son oyuncu",
+    "Son maç",
+    "Son skor"
+   ],
+   "dogru": 2,
+   "ipucu": "{{final}} son demek. {{score}} kartta neydi?",
+   "aciklama": "{{final score}} son skor demektir. (s. 32)",
+   "kavram": "score"
+  },
+  {
+   "soru": "{{Katie won five gold medals last year.}} Bu ne anlatıyor?",
+   "secenekler": [
+    "A great achievement",
+    "A bad injury",
+    "A draw"
+   ],
+   "dogru": 0,
+   "ipucu": "Beş altın madalya iyi bir sonuç mu?",
+   "aciklama": "Beş altın madalya büyük bir başarıdır: {{It was a great achievement.}} (s. 40)",
+   "kavram": "achievement"
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "win",
+   "tr": "kazanmak (geçmiş: won)",
+   "ornek": "He won three Olympic gold medals and many other prizes.",
+   "ornekTr": "Üç Olimpiyat altın madalyası ve başka birçok ödül kazandı. (s. 36)"
+  },
+  {
+   "en": "lose",
+   "tr": "kaybetmek"
+  },
+  {
+   "en": "opponent",
+   "tr": "rakip",
+   "ornek": "The ball must touch the opponent's side to make a point.",
+   "ornekTr": "Sayı yapmak için top rakibin tarafına değmelidir. (s. 32)"
+  },
+  {
+   "en": "champion",
+   "tr": "şampiyon"
+  },
+  {
+   "en": "gold medal",
+   "tr": "altın madalya",
+   "ornek": "Sheila won the gold medal in the National Swimming Championship.",
+   "ornekTr": "Sheila Ulusal Yüzme Şampiyonası'nda altın madalyayı kazandı. (s. 42)"
+  },
+  {
+   "en": "match",
+   "tr": "maç",
+   "ornek": "More than fifty thousand spectators watched the final match.",
+   "ornekTr": "Elli binden fazla seyirci final maçını izledi. (s. 42)"
+  },
+  {
+   "en": "compete",
+   "tr": "yarışmak"
+  },
+  {
+   "en": "train",
+   "tr": "antrenman yapmak",
+   "ornek": "I train six days a week.",
+   "ornekTr": "Haftada altı gün antrenman yaparım. (s. 31)"
+  },
+  {
+   "en": "work out",
+   "tr": "spor yapmak, egzersiz yapmak",
+   "ornek": "I'm going to the gym to work out.",
+   "ornekTr": "Spor yapmak için spor salonuna gidiyorum. (s. 43)"
+  },
+  {
+   "en": "athlete",
+   "tr": "sporcu",
+   "ornek": "I'm an athlete.",
+   "ornekTr": "Ben bir sporcuyum. (s. 29)"
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "The score was a draw.",
+   "tr": "Skor berabereydi. (s. 42)"
+  },
+  {
+   "en": "Larry hit three goals in the last match.",
+   "tr": "Larry son maçta üç gol attı. (s. 42)"
+  },
+  {
+   "en": "Sheila won the gold medal.",
+   "tr": "Sheila altın madalyayı kazandı. (s. 42)"
+  },
+  {
+   "en": "It was a great achievement.",
+   "tr": "Büyük bir başarıydı. (s. 40)"
+  },
+  {
+   "en": "Spectators are cheering for Roger.",
+   "tr": "Seyirciler Roger'a tezahürat yapıyor. (s. 32)"
+  },
+  {
+   "en": "Our school team beat the opponent team.",
+   "tr": "Okul takımımız rakip takımı yendi. (s. 40)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "There were thousands of medals in the stadium to watch the match.",
+   "yanlis": "medals",
+   "secenekler": [
+    "spectators",
+    "injuries",
+    "rackets"
+   ],
+   "dogru": 0,
+   "tr": "Maçı izlemek için stadyumda binlerce seyirci vardı.",
+   "aciklama": "Maçı izleyenler seyircilerdir: {{spectators}}. (s. 40)"
+  },
+  {
+   "cumle": "The score was a beat. None of the teams could score a goal.",
+   "yanlis": "beat",
+   "secenekler": [
+    "medal",
+    "draw",
+    "win"
+   ],
+   "dogru": 1,
+   "tr": "Skor berabereydi. Takımların hiçbiri gol atamadı.",
+   "aciklama": "Kimse gol atamadıysa maç berabere biter: {{draw}}. (s. 40)"
+  },
+  {
+   "cumle": "Katie win five gold medals last year.",
+   "yanlis": "win",
+   "secenekler": [
+    "wins",
+    "winning",
+    "won"
+   ],
+   "dogru": 2,
+   "tr": "Katie geçen yıl beş altın madalya kazandı.",
+   "aciklama": "{{last year}} geçmişi anlatır; {{win}} geçmişte {{won}} olur. (s. 40)"
+  },
+  {
+   "cumle": "Sportsmen may have some achievements while doing exercises.",
+   "yanlis": "achievements",
+   "secenekler": [
+    "injuries",
+    "spectators",
+    "draws"
+   ],
+   "dogru": 0,
+   "tr": "Sporcular egzersiz yaparken bazı sakatlıklar yaşayabilir.",
+   "aciklama": "Egzersizde başa gelebilecek kötü şey sakatlıktır: {{injuries}}. (s. 40)"
+  },
+  {
+   "cumle": "Our school team lose the opponent team 2-0.",
+   "yanlis": "lose",
+   "secenekler": [
+    "draw",
+    "beat",
+    "score"
+   ],
+   "dogru": 1,
+   "tr": "Okul takımımız rakip takımı 2-0 yendi.",
+   "aciklama": "Rakibi yenmek {{beat}}tir. (s. 40)"
+  }
+ ],
+ "okuma": {
+  "baslik": "Naim Süleymanoğlu",
+  "sayfa": "s. 36",
+  "sozluk": {
+   "weightlifting": "halter",
+   "talented": "yetenekli",
+   "champion": "şampiyon",
+   "competitions": "yarışmalar",
+   "world championship": "dünya şampiyonası",
+   "represented": "temsil etti",
+   "prizes": "ödüller",
+   "Pocket Hercules": "Cep Herkülü",
+   "short but very strong": "kısa ama çok güçlü",
+   "inspired": "ilham verdi",
+   "athletes": "sporcular",
+   "worked hard": "çok çalıştı",
+   "anything is possible": "her şey mümkündür",
+   "passed away": "vefat etti"
+  },
+  "bolumler": [
+   {
+    "baslik": "Küçük yaşta şampiyon",
+    "cumleler": [
+     {
+      "en": "Naim Süleymanoğlu was born on January 23, 1967, in Bulgaria.",
+      "tr": "Naim Süleymanoğlu 23 Ocak 1967'de Bulgaristan'da doğdu."
+     },
+     {
+      "en": "He started weightlifting when he was very young.",
+      "tr": "Çok küçükken haltere başladı."
+     },
+     {
+      "en": "He was very strong and talented.",
+      "tr": "Çok güçlü ve yetenekliydi."
+     },
+     {
+      "en": "Naim became a champion in many competitions and won his first world championship at the age of 15.",
+      "tr": "Naim birçok yarışmada şampiyon oldu ve ilk dünya şampiyonluğunu 15 yaşında kazandı."
+     },
+     {
+      "en": "In 1986, he moved to Türkiye and represented the country in the Olympics.",
+      "tr": "1986'da Türkiye'ye taşındı ve Olimpiyatlarda ülkeyi temsil etti."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Naim hangi sporu yaptı?",
+      "secenekler": [
+       "Yüzme",
+       "Halter",
+       "Judo"
+      ],
+      "dogru": 1,
+      "ipucu": "{{He started weightlifting}} cümlesini bul.",
+      "aciklama": "{{weightlifting}} halterdir. Naim çok küçükken haltere başladı."
+     },
+     {
+      "soru": "Naim ilk dünya şampiyonluğunu kaç yaşında kazandı?",
+      "secenekler": [
+       "15",
+       "23",
+       "19"
+      ],
+      "dogru": 0,
+      "ipucu": "{{at the age of}} kalıbından sonraki sayıya bak.",
+      "aciklama": "{{won his first world championship at the age of 15}}: 15 yaşında."
+     }
+    ]
+   },
+   {
+    "baslik": "Cep Herkülü",
+    "cumleler": [
+     {
+      "en": "He won three Olympic gold medals and many other prizes.",
+      "tr": "Üç Olimpiyat altın madalyası ve başka birçok ödül kazandı."
+     },
+     {
+      "en": "People called him the \"Pocket Hercules\" because he was short but very strong.",
+      "tr": "İnsanlar ona \"Cep Herkülü\" dedi, çünkü kısa boyluydu ama çok güçlüydü."
+     },
+     {
+      "en": "Naim Süleymanoğlu inspired many young athletes.",
+      "tr": "Naim Süleymanoğlu birçok genç sporcuya ilham verdi."
+     },
+     {
+      "en": "He worked hard and showed that anything is possible.",
+      "tr": "Çok çalıştı ve her şeyin mümkün olduğunu gösterdi."
+     },
+     {
+      "en": "He passed away on November 18, 2017.",
+      "tr": "18 Kasım 2017'de vefat etti."
+     }
+    ],
+    "sorular": [
+     {
+      "soru": "Naim kaç Olimpiyat altın madalyası kazandı?",
+      "secenekler": [
+       "Altı",
+       "Bir",
+       "Üç"
+      ],
+      "dogru": 2,
+      "ipucu": "{{gold medals}} kelimesinden önceki sayıya bak.",
+      "aciklama": "{{He won three Olympic gold medals.}} Üç altın madalya kazandı."
+     },
+     {
+      "soru": "Ona neden \"Cep Herkülü\" dediler?",
+      "secenekler": [
+       "Kısa ama çok güçlü olduğu için",
+       "Çok uzun olduğu için",
+       "Çok hızlı koştuğu için"
+      ],
+      "dogru": 0,
+      "ipucu": "{{because}} kelimesinden sonrasını oku.",
+      "aciklama": "{{because he was short but very strong}}: kısa ama çok güçlü olduğu için."
+     }
+    ]
+   }
+  ]
+ }
+}
