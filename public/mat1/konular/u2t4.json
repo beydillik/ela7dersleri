@@ -1,0 +1,313 @@
+{
+ "id": "u2t4",
+ "tur": "tarama",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Tema Sonu Taraması",
+ "sayfalar": "Konu 1–8 · s. 118–158",
+ "giris": "İkinci temanın sonuna geldin, tebrikler! Şimdi 8 konuyu birlikte gözden geçireceğiz. Önce kısa özetleri oku ve kartları çevir. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+ "buyukResim": "Bu temada kutularla bir yolculuk yaptık. Önce küp yapılarına altı yönden baktık. Sonra kutuyu açıp yüzlerini gördük ve yüzey alanını bulduk: kaplamak. Ardından kutunun içini birim küplerle doldurup hacmi bulduk: doldurmak. Hacmi m³, dm³, cm³ ve litreyle ölçmeyi öğrendik. En sonunda hepsini gerçek hayat problemlerinde birlikte kullandık.",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3",
+  "u2k4",
+  "u2k5",
+  "u2k6",
+  "u2k7",
+  "u2k8"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Bir yapıya altı yönden bakılır; her küp yüzü kare görünür.",
+    "Öndeki küp arkasındakini saklar."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Dikdörtgenler prizması: 6 yüz, 12 ayrıt, 8 köşe; karşılıklı yüzler eş.",
+    "Açınım kapanınca eş yüzler karşılıklı gelir."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Yüzey alanı = 2 · (a · b + a · c + b · c); küpte 6 · a².",
+    "Kaplamak = yüzey alanı (cm²)."
+   ]
+  },
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "Hacim, cismin kapladığı yerdir; birim küplerle ölçülür.",
+    "Doldurmak = hacim (cm³)."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "Hacim = a · b · c; küpte a³.",
+    "Bir ayrıt 2 katı → hacim 2 katı."
+   ]
+  },
+  {
+   "konu": "u2k6",
+   "maddeler": [
+    "m³ → dm³ → cm³ → mm³: aşağı × 1000, yukarı ÷ 1000.",
+    "Ayrıtların birimi farklıysa önce eşitle."
+   ]
+  },
+  {
+   "konu": "u2k7",
+   "maddeler": [
+    "1 dm³ = 1 L, 1 cm³ = 1 mL.",
+    "L → dL → cL → mL: her basamak × 10."
+   ]
+  },
+  {
+   "konu": "u2k8",
+   "maddeler": [
+    "Ne veriliyor? Kaplamak mı, doldurmak mı? Birimler aynı mı? Hesapla.",
+    "Kaç kutu: büyük hacim ÷ küçük hacim; su yüksekliği: hacim ÷ taban alanı."
+   ]
+  }
+ ],
+ "eskiSoru": 6,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Kaplamak mı, doldurmak mı, çevirmek mi?",
+   "kutular": [
+    {
+     "etiket": "Kaplamak (yüzey alanı)",
+     "uyeler": [
+      "Yüzey Alanı Formülü",
+      "Kaplama Maliyeti"
+     ]
+    },
+    {
+     "etiket": "Doldurmak (hacim)",
+     "uyeler": [
+      "Hacim Formülü",
+      "Kaç Kutu Sığar?",
+      "Suyun Yüksekliği"
+     ]
+    },
+    {
+     "etiket": "Birim çevirmek",
+     "uyeler": [
+      "Hacim Basamakları",
+      "Sıvı Basamakları"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Ayrıtları 3 dm, 2 dm ve 2 dm olan kapaklı bir kutu için hangisi doğrudur?",
+   "secenekler": [
+    "İçine 12 L su sığar.",
+    "İçine 32 L su sığar.",
+    "Dışını kaplamak için 12 dm² kumaş yeter."
+   ],
+   "dogru": 0,
+   "ipucu": "Doldurmak = hacim (3 · 2 · 2); kaplamak = yüzey alanı.",
+   "aciklama": "Hacim 3 · 2 · 2 = 12 dm³ = 12 L. Yüzey alanı 2 · (6 + 6 + 4) = 32 dm²; kaplamak için 32 dm² gerekir.",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Yüzey Alanı Formülü"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Hacim Formülü"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "1 dm³ = 1 L"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Doldurmak = hacim: 3 · 2 · 2. dm³'ü litreye çevir.",
+     "Kaplamak = yüzey alanı: 2 · (3 · 2 + 3 · 2 + 2 · 2).",
+     "Her şıkta “sığar” mı, “kaplamak” mı yazıyor, kontrol et."
+    ]
+   }
+  },
+  {
+   "soru": "Görseldeki yapı, ayrıtı 1 cm olan eş küplerden yapılmış kutu biçiminde bir yapıdır. Hacmi kaç cm³?",
+   "cevap": "12",
+   "ipucu": "Arkadaki saklı küpleri de say: bir katman × katman sayısı.",
+   "aciklama": "Bir katman 3 · 2 = 6 küp, 2 katman: 12 küp. Her küp 1 cm³: 12 cm³.",
+   "birim": "cm³",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='114.0,121.0 148.0,121.0 148.0,87.0 114.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,87.0 148.0,87.0 165.0,70.0 131.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,121.0 165.0,104.0 165.0,70.0 148.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,121.0 182.0,121.0 182.0,87.0 148.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 182.0,87.0 199.0,70.0 165.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,121.0 199.0,104.0 199.0,70.0 182.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,121.0 216.0,121.0 216.0,87.0 182.0,87.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 216.0,87.0 233.0,70.0 199.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,121.0 233.0,104.0 233.0,70.0 216.0,87.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,87.0 148.0,87.0 148.0,53.0 114.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='114.0,53.0 148.0,53.0 165.0,36.0 131.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 165.0,70.0 165.0,36.0 148.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,87.0 182.0,87.0 182.0,53.0 148.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.0,53.0 182.0,53.0 199.0,36.0 165.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 199.0,70.0 199.0,36.0 182.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,87.0 216.0,87.0 216.0,53.0 182.0,53.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='182.0,53.0 216.0,53.0 233.0,36.0 199.0,36.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='216.0,87.0 233.0,70.0 233.0,36.0 216.0,53.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,138.0 131.0,138.0 131.0,104.0 97.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,104.0 131.0,104.0 148.0,87.0 114.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,138.0 148.0,121.0 148.0,87.0 131.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,138.0 165.0,138.0 165.0,104.0 131.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 165.0,104.0 182.0,87.0 148.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 182.0,121.0 182.0,87.0 165.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,138.0 199.0,138.0 199.0,104.0 165.0,104.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 199.0,104.0 216.0,87.0 182.0,87.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,138.0 216.0,121.0 216.0,87.0 199.0,104.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,104.0 131.0,104.0 131.0,70.0 97.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='97.0,70.0 131.0,70.0 148.0,53.0 114.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 148.0,87.0 148.0,53.0 131.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,104.0 165.0,104.0 165.0,70.0 131.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='131.0,70.0 165.0,70.0 182.0,53.0 148.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 182.0,87.0 182.0,53.0 165.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,104.0 199.0,104.0 199.0,70.0 165.0,70.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='165.0,70.0 199.0,70.0 216.0,53.0 182.0,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='199.0,104.0 216.0,87.0 216.0,53.0 199.0,70.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Saklanan Küpler"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Birim Küp Cinsinden Hacim"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Doldurmak: hacim.",
+     "Alt katman: önde 3 küp, arkasında saklı bir sıra daha.",
+     "Kaç katman var?",
+     "Bir katmanı katman sayısıyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Açınımı 6 eş kareden oluşan bir kutunun her karesinin kenarı 2 dm. Bu kutu kaç litre su alır?",
+   "cevap": "8",
+   "ipucu": "6 eş kare: kutu bir küp. Hacmini bul, litreye çevir.",
+   "aciklama": "Küpün ayrıtı 2 dm: 2 · 2 · 2 = 8 dm³ = 8 L.",
+   "birim": "L",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Yüzey Açınımı"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Kare Prizma ve Küp"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "1 dm³ = 1 L"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "6 eş kareden oluşan açınım hangi cismin açınımıdır?",
+     "Küpün hacmi: 2 · 2 · 2.",
+     "dm³'ü litreye çevir."
+    ]
+   }
+  },
+  {
+   "soru": "Tabanı 4 dm × 3 dm olan bir akvaryumda 24 L su var. Su kaç dm yüksekliktedir?",
+   "cevap": "2",
+   "ipucu": "24 L = 24 dm³. Hacmi taban alanına böl.",
+   "aciklama": "Taban alanı 4 · 3 = 12 dm². 24 ÷ 12 = 2 dm.",
+   "birim": "dm",
+   "kaynak": [
+    {
+     "konu": "u2k8",
+     "kavram": "Suyun Yüksekliği"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "1 dm³ = 1 L"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Ne isteniyor? Suyun yüksekliği.",
+     "Birimler aynı mı? 24 L = 24 dm³.",
+     "Taban alanı: 4 · 3.",
+     "Hacmi taban alanına böl."
+    ]
+   }
+  },
+  {
+   "soru": "1 m³ su kaç litredir?",
+   "secenekler": [
+    "100",
+    "1000",
+    "10 000"
+   ],
+   "dogru": 1,
+   "ipucu": "1 m³ = 1000 dm³ ve 1 dm³ = 1 L.",
+   "aciklama": "1 m³ = 1000 dm³ = 1000 L.",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "1 m³ = 1000 dm³"
+    },
+    {
+     "konu": "u2k8",
+     "kavram": "Litre mi, Metreküp mü?"
+    }
+   ]
+  },
+  {
+   "soru": "Bir kolinin ayrıtları 50 cm, 30 cm ve 80 cm. Kolinin hacmi kaç dm³?",
+   "cevap": "120",
+   "ipucu": "Önce ayrıtları dm'ye çevir.",
+   "aciklama": "5 dm, 3 dm, 8 dm. 5 · 3 · 8 = 120 dm³. (s. 156)",
+   "birim": "dm³",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "Önce Birimleri Eşitle"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Hacim Formülü"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Hacim.",
+     "Birimleri dm yap: 50 cm = 5 dm, 30 cm = 3 dm, 80 cm = 8 dm.",
+     "Önce 5 · 3.",
+     "Sonucu 8 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Ayrıtları 3 m, 4 m ve 5 m olan prizmanın hacmi 60 m³'tür. Bu prizmanın yüzey alanı kaç m²?",
+   "cevap": "94",
+   "ipucu": "Üç farklı yüzün alanını topla, 2 ile çarp.",
+   "aciklama": "Yüzler 3 · 4 = 12, 3 · 5 = 15, 4 · 5 = 20. 2 · (12 + 15 + 20) = 94 m². (s. 157)",
+   "birim": "m²",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Yüzey Alanı Formülü"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Hacim Formülü"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Yüzey alanı soruluyor.",
+     "Üç farklı yüz: 3 · 4, 3 · 5, 4 · 5.",
+     "Üçünü topla.",
+     "Toplamı 2 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisinde hacim bulunur?",
+   "secenekler": [
+    "Duvarı boyamak",
+    "Kutuyu kâğıtla kaplamak",
+    "Havuzu suyla doldurmak"
+   ],
+   "dogru": 2,
+   "ipucu": "Kaplamak mı, doldurmak mı?",
+   "aciklama": "Boyamak ve kaplamak yüzey alanıdır. Su havuzu doldurur: hacim.",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Kaplamak mı, Doldurmak mı?"
+    },
+    {
+     "konu": "u2k8",
+     "kavram": "Problem İskeleti"
+    }
+   ]
+  }
+ ]
+}

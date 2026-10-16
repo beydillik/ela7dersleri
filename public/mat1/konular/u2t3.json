@@ -1,0 +1,229 @@
+{
+ "id": "u2t3",
+ "tur": "tarama",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Ara Durak 3: Ölçme Birimleri",
+ "sayfalar": "Konu 6–7 · s. 144–151",
+ "giris": "Ölçme birimlerini bitirdin, tebrikler! Kısa bir mola verip hacim ve sıvı birimlerini birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+ "buyukResim": "Önce hacim birimlerini öğrendik: m³, dm³, cm³, mm³; basamaklar arası 1000. Sonra sıvı birimlerini öğrendik: L, dL, cL, mL; basamaklar arası 10. İki aileyi birleştiren köprü: 1 dm³ = 1 L ve 1 cm³ = 1 mL.",
+ "kapsar": [
+  "u2k6",
+  "u2k7"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k6",
+   "maddeler": [
+    "Hacmin temel birimi m³; büyük hacme büyük birim.",
+    "m³ → dm³ → cm³ → mm³: aşağı × 1000, yukarı ÷ 1000.",
+    "Ayrıtların birimi farklıysa önce eşitle, sonra çarp."
+   ]
+  },
+  {
+   "konu": "u2k7",
+   "maddeler": [
+    "1 dm³ = 1 L ve 1 cm³ = 1 mL.",
+    "L → dL → cL → mL: aşağı × 10, yukarı ÷ 10.",
+    "Cismin hacmi = su seviyesindeki fark."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 8,
+ "gruplar": [
+  {
+   "soru": "Hangi birim ailesi?",
+   "kutular": [
+    {
+     "etiket": "Hacim birimleri (× 1000)",
+     "uyeler": [
+      "Metreküp",
+      "1 m³ = 1000 dm³",
+      "Hacim Basamakları"
+     ]
+    },
+    {
+     "etiket": "Sıvı birimleri (× 10)",
+     "uyeler": [
+      "Litre",
+      "Sıvı Basamakları"
+     ]
+    },
+    {
+     "etiket": "İki aileyi bağlar",
+     "uyeler": [
+      "1 dm³ = 1 L",
+      "1 mL = 1 cm³"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir depoda 2 m³ su var. Bu su kaç litredir?",
+   "cevap": "2000",
+   "ipucu": "Önce m³'ü dm³'e çevir, sonra 1 dm³ = 1 L.",
+   "aciklama": "2 m³ = 2000 dm³ = 2000 L.",
+   "birim": "L",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "1 m³ = 1000 dm³"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "1 dm³ = 1 L"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "m³'ten dm³'e: 1000 ile çarp.",
+     "dm³ ile litre arasındaki ilişki ne?"
+    ]
+   }
+  },
+  {
+   "soru": "Ayrıtları 2 dm, 10 cm ve 5 cm olan kutu biçimindeki bir kap kaç mL su alır?",
+   "cevap": "1000",
+   "ipucu": "Birimleri cm'ye çevir; 1 cm³ = 1 mL.",
+   "aciklama": "2 dm = 20 cm. 20 · 10 · 5 = 1000 cm³ = 1000 mL.",
+   "birim": "mL",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "Önce Birimleri Eşitle"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "1 mL = 1 cm³"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Doldurmak: hacim.",
+     "Birimler aynı mı? 2 dm'yi cm yap: 20 cm.",
+     "Hacmi bul: 20 · 10 · 5.",
+     "cm³ ile mL arasındaki ilişki ne?"
+    ]
+   }
+  },
+  {
+   "soru": "Dereceli kapta 250 mL su vardı. Bir silgi atınca su 400 mL'ye çıktı. Silginin hacmi kaç cm³?",
+   "cevap": "150",
+   "ipucu": "Su seviyesindeki farkı bul; 1 mL = 1 cm³.",
+   "aciklama": "400 − 250 = 150 mL = 150 cm³.",
+   "birim": "cm³",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='61.1' y='78.0' width='56' height='52.0' fill='#6fb3ff' fill-opacity='0.45'/><path d='M61.1 26.0 V130.0 H117.1 V26.0' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><line x1='61.1' y1='130.0' x2='71.1' y2='130.0' stroke='#f5f6fa' stroke-width='1.5'/><line x1='61.1' y1='109.2' x2='71.1' y2='109.2' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='113.2' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>100</text><line x1='61.1' y1='88.4' x2='71.1' y2='88.4' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='92.4' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>200</text><line x1='61.1' y1='67.6' x2='71.1' y2='67.6' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='71.6' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>300</text><line x1='61.1' y1='46.8' x2='71.1' y2='46.8' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='50.8' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>400</text><line x1='61.1' y1='26.0' x2='71.1' y2='26.0' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>500</text><line x1='59.1' y1='78.0' x2='119.1' y2='78.0' stroke='#f2c14e' stroke-width='3'/><text x='123.1' y='82.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>250 mL</text><rect x='203.0' y='46.8' width='56' height='83.2' fill='#6fb3ff' fill-opacity='0.45'/><path d='M215.0 128.0 q4 -18 18 -16 q14 2 12 16 z' fill='#9aa3bf' stroke='#1b2340' stroke-width='1.5'/><path d='M203.0 26.0 V130.0 H259.0 V26.0' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><line x1='203.0' y1='130.0' x2='213.0' y2='130.0' stroke='#f5f6fa' stroke-width='1.5'/><line x1='203.0' y1='109.2' x2='213.0' y2='109.2' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='113.2' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>100</text><line x1='203.0' y1='88.4' x2='213.0' y2='88.4' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='92.4' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>200</text><line x1='203.0' y1='67.6' x2='213.0' y2='67.6' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='71.6' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>300</text><line x1='203.0' y1='46.8' x2='213.0' y2='46.8' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='50.8' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>400</text><line x1='203.0' y1='26.0' x2='213.0' y2='26.0' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>500</text><line x1='201.0' y1='46.8' x2='261.0' y2='46.8' stroke='#f2c14e' stroke-width='3'/><text x='265.0' y='50.8' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>400 mL</text><text x='89.1' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Önce</text><text x='231.0' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Cismi atınca</text></svg>",
+   "kaynak": [
+    {
+     "konu": "u2k7",
+     "kavram": "Su Seviyesi Farkı"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "1 mL = 1 cm³"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Önce kaç mL, sonra kaç mL?",
+     "Büyükten küçüğü çıkar.",
+     "mL ile cm³ arasındaki ilişki ne?"
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi 1 L'ye eşit değildir?",
+   "secenekler": [
+    "1 dm³",
+    "100 cL",
+    "100 cm³"
+   ],
+   "dogru": 2,
+   "ipucu": "1 L = 1 dm³ = 1000 cm³.",
+   "aciklama": "1 L = 1 dm³ = 100 cL = 1000 cm³. 100 cm³ ise 100 mL'dir.",
+   "kaynak": [
+    {
+     "konu": "u2k7",
+     "kavram": "Sıvı Basamakları"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Hacim Basamakları"
+    }
+   ]
+  },
+  {
+   "soru": "1,2 dm³, 1500 mL ve 130 cL'lik üç şişeden en çok su alan hangisidir?",
+   "secenekler": [
+    "1500 mL",
+    "1,2 dm³",
+    "130 cL"
+   ],
+   "dogru": 0,
+   "ipucu": "Hepsini mL'ye çevir.",
+   "aciklama": "1,2 dm³ = 1,2 L = 1200 mL, 130 cL = 1300 mL. En büyüğü 1500 mL.",
+   "kaynak": [
+    {
+     "konu": "u2k7",
+     "kavram": "Aynı Birime Çevir, Sırala"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "1 dm³ = 1 L"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "1,2 dm³ kaç litre? Kaç mL?",
+     "130 cL kaç mL? (× 10)",
+     "Üç sayıyı karşılaştır."
+    ]
+   }
+  },
+  {
+   "soru": "Hacmi 60 dm³ olan bir akvaryum 2 L'lik şişelerle doldurulacak. Kaç şişe su gerekir?",
+   "cevap": "30",
+   "ipucu": "Önce akvaryumun kaç litre aldığını bul.",
+   "aciklama": "60 dm³ = 60 L. 60 ÷ 2 = 30 şişe.",
+   "kaynak": [
+    {
+     "konu": "u2k7",
+     "kavram": "1 dm³ = 1 L"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Önce Birimleri Eşitle"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Birimler aynı mı? dm³'ü litreye çevir.",
+     "60 L'de kaç tane 2 L var?"
+    ]
+   }
+  },
+  {
+   "soru": "Elif “Hacim birimlerinde basamaklar arası 10, sıvı birimlerinde 1000 katıdır.” dedi. Elif haklı mı?",
+   "secenekler": [
+    "Evet, haklı.",
+    "Hayır; hacimde 1000, sıvıda 10 katıdır.",
+    "Hayır; ikisinde de 100 katıdır."
+   ],
+   "dogru": 1,
+   "ipucu": "1 m³ kaç dm³? 1 L kaç dL?",
+   "aciklama": "1 m³ = 1000 dm³ (× 1000), 1 L = 10 dL (× 10). Elif ikisini karıştırdı.",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "Hacim Basamakları"
+    },
+    {
+     "konu": "u2k7",
+     "kavram": "Sıvı Basamakları"
+    }
+   ]
+  }
+ ]
+}

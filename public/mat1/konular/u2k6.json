@@ -1,0 +1,630 @@
+{
+ "id": "u2k6",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Hacim Ölçme Birimleri",
+ "sayfalar": "s. 144–146",
+ "giris": "Bir kamyon kumu ile bir küp şekeri aynı birimle ölçmek zor olur. Bu konuda hacim birimlerini (m³, dm³, cm³, mm³) tanıyacağız. Bir birimi ötekine çevirmeyi adım adım öğreneceğiz.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda birimleri çevireceğiz ve 1000 ile çarpıp böleceğiz. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Uzunluk birimleri",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><line x1='12' y1='60' x2='108' y2='60' stroke='#f5f6fa' stroke-width='3'/><line x1='12.0' y1='52' x2='12.0' y2='68' stroke='#f5f6fa' stroke-width='2'/><line x1='21.6' y1='55' x2='21.6' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='31.2' y1='55' x2='31.2' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='40.8' y1='55' x2='40.8' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='50.4' y1='55' x2='50.4' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='60.0' y1='55' x2='60.0' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='69.6' y1='55' x2='69.6' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='79.2' y1='55' x2='79.2' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='88.8' y1='55' x2='88.8' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='98.4' y1='55' x2='98.4' y2='65' stroke='#f5f6fa' stroke-width='2'/><line x1='108.0' y1='52' x2='108.0' y2='68' stroke='#f5f6fa' stroke-width='2'/><text x='60' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>1 m</text><text x='60' y='90' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>= 10 dm = 100 cm</text></svg>",
+    "anlatim": "1 metre 10 desimetredir, 1 desimetre 10 santimetredir. Yani 1 m = 10 dm = 100 cm.",
+    "akilda": "1 m = 10 dm, 1 dm = 10 cm",
+    "ornek": {
+     "problem": "3 m kaç dm?",
+     "adimlar": [
+      {
+       "metin": "1 m = 10 dm.",
+       "islem": "1 m → 10 dm"
+      },
+      {
+       "metin": "3 metre, 3 tane 10 dm demek.",
+       "islem": "3 · 10 = 30 dm"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "2 m kaç dm?",
+      "cevap": "20",
+      "ipucu": "1 m = 10 dm.",
+      "aciklama": "2 · 10 = 20 dm.",
+      "birim": "dm",
+      "yardim": {
+       "adimlar": [
+        "1 m kaç dm?",
+        "2 tane 10'u topla."
+       ]
+      }
+     },
+     {
+      "soru": "50 cm kaç dm?",
+      "cevap": "5",
+      "ipucu": "1 dm = 10 cm. 50'nin içinde kaç tane 10 var?",
+      "aciklama": "50 ÷ 10 = 5 dm.",
+      "birim": "dm",
+      "yardim": {
+       "adimlar": [
+        "1 dm = 10 cm.",
+        "50'yi 10'a böl."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "1000 ile çarpma ve bölme",
+    "sinif": "Önceki yıllar",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='42' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>6 · 1000</text><text x='60' y='70' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='18' fill='#f2c14e'>= 6000</text><text x='60' y='98' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#9aa3bf'>virgül 3 basamak</text></svg>",
+    "anlatim": "1000 ile çarparken sayının sonuna üç 0 ekleriz: 6 · 1000 = 6000. Sayı ondalıksa virgülü 3 basamak sağa kaydırırız: 2,5 · 1000 = 2500. 1000'e bölerken tersini yaparız: 6000 ÷ 1000 = 6.",
+    "akilda": "× 1000: üç 0 ekle",
+    "ornek": {
+     "problem": "2,5 · 1000 kaçtır?",
+     "adimlar": [
+      {
+       "metin": "Virgülü 3 basamak sağa kaydır. 2,5'te virgülden sonra 1 basamak var.",
+       "islem": "2,5 → 25"
+      },
+      {
+       "metin": "Eksik kalan 2 basamağa 0 yaz.",
+       "islem": "2500"
+      }
+     ]
+    },
+    "sorular": [
+     {
+      "soru": "6 · 1000 kaçtır?",
+      "cevap": "6000",
+      "ipucu": "1000 ile çarparken sona üç 0 ekle.",
+      "aciklama": "6 · 1000 = 6000.",
+      "yardim": {
+       "adimlar": [
+        "1000'de kaç tane 0 var?",
+        "6'nın sonuna o kadar 0 ekle."
+       ]
+      }
+     },
+     {
+      "soru": "2,5 · 1000 kaçtır?",
+      "cevap": "2500",
+      "ipucu": "Virgülü 3 basamak sağa kaydır.",
+      "aciklama": "2,5 · 1000 = 2500.",
+      "denk": true,
+      "yardim": {
+       "adimlar": [
+        "Virgülü 1 basamak kaydırınca 25 olur.",
+        "2 basamak daha var: sona 0 ekle."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Prizmanın hacmi",
+    "sinif": "2. tema, 5. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='22.0,84.0 70.0,84.0 70.0,44.0 22.0,44.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='22.0,44.0 70.0,44.0 88.0,26.0 40.0,26.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='70.0,84.0 88.0,66.0 88.0,26.0 70.0,44.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M40.0 66.0 H88.0 M40.0 66.0 V26.0 M40.0 66.0 L22.0 84.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M22.0 84.0 H70.0 V44.0 H22.0 Z M22.0 44.0 L40.0 26.0 H88.0 L70.0 44.0 M88.0 26.0 V66.0 L70.0 84.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='22.0' y1='84.0' x2='70.0' y2='84.0' stroke='#5fd08f' stroke-width='3.5'/><text x='46.0' y='100.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>a</text><line x1='22.0' y1='84.0' x2='22.0' y2='44.0' stroke='#f783ac' stroke-width='3.5'/><text x='17.0' y='69.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>c</text><line x1='70.0' y1='84.0' x2='88.0' y2='66.0' stroke='#b197fc' stroke-width='3.5'/><text x='85.0' y='84.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>b</text><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>a · b · c</text></svg>",
+    "anlatim": "Dikdörtgenler prizmasının hacmi üç ayrıtın çarpımıdır: a · b · c. Ayrıtlar m ile verilirse hacim m³ olur.",
+    "akilda": "Hacim = a · b · c",
+    "sorular": [
+     {
+      "soru": "Ayrıtları 2 m, 3 m ve 1 m olan prizmanın hacmi kaç m³?",
+      "cevap": "6",
+      "ipucu": "Üç ayrıtı çarp.",
+      "aciklama": "2 · 3 · 1 = 6 m³.",
+      "birim": "m³",
+      "yardim": {
+       "adimlar": [
+        "Önce 2 · 3.",
+        "Sonucu 1 ile çarp."
+       ]
+      }
+     },
+     {
+      "soru": "Ayrıtları 2 m, 2 m ve 5 m olan prizmanın hacmi kaç m³?",
+      "cevap": "20",
+      "ipucu": "Üç ayrıtı çarp.",
+      "aciklama": "2 · 2 · 5 = 20 m³.",
+      "birim": "m³",
+      "yardim": {
+       "adimlar": [
+        "Önce 2 · 2.",
+        "Sonucu 5 ile çarp."
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Metreküp",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='30.0,78.0 80.0,78.0 80.0,32.0 30.0,32.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='30.0,32.0 80.0,32.0 100.0,12.0 50.0,12.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='80.0,78.0 100.0,58.0 100.0,12.0 80.0,32.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M30.0 78.0 H80.0 V32.0 H30.0 Z M30.0 32.0 L50.0 12.0 H100.0 L80.0 32.0 M100.0 12.0 V58.0 L80.0 78.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='30.0' y1='78.0' x2='80.0' y2='78.0' stroke='#5fd08f' stroke-width='3.5'/><text x='55.0' y='94.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>1 m</text><line x1='30.0' y1='78.0' x2='30.0' y2='32.0' stroke='#f783ac' stroke-width='3.5'/><text x='25.0' y='60.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>1 m</text><line x1='80.0' y1='78.0' x2='100.0' y2='58.0' stroke='#b197fc' stroke-width='3.5'/><text x='96.0' y='77.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>1 m</text><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>1 m³</text></svg>",
+   "aciklama": "Hacim ölçülerinin temel birimi metreküptür ve m³ ile gösterilir. Her ayrıtı 1 m olan küpün hacmi 1 m³'tür. (s. 146)",
+   "ek": "m³'ten küçük birimler de vardır: desimetreküp (dm³), santimetreküp (cm³), milimetreküp (mm³). (s. 146)",
+   "akilda": "Temel birim: m³",
+   "soru": {
+    "soru": "Hacim ölçülerinin temel birimi hangisidir?",
+    "secenekler": [
+     "Metre",
+     "Metreküp",
+     "Metrekare"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartındaki ilk cümleye bak.",
+    "aciklama": "Hacmin temel birimi metreküptür (m³). Metre uzunluk, metrekare alan birimidir. (s. 146)"
+   }
+  },
+  {
+   "ad": "Hangi Birim Uygun?",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='42' width='40' height='34' rx='4' fill='#9aa3bf'/><circle cx='22' cy='80' r='6' fill='#5a6280'/><circle cx='44' cy='80' r='6' fill='#5a6280'/><rect x='78' y='46' width='18' height='30' rx='3' fill='#ffa26b'/><rect x='84' y='40' width='6' height='7' fill='#f5f6fa'/><text x='32' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>m³</text><text x='87' y='102' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>küçük</text><text x='60' y='26' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>büyüğe büyük birim</text></svg>",
+   "aciklama": "Büyük hacimler (beton, kum, konteyner) büyük birimle, küçük hacimler küçük birimle ölçülür. (s. 144)",
+   "ek": "Elif'in babası bahçe için “5 m³ kum” istedi. Bir meyve suyu kutusuna “0,0002 m³” yazsak komik olurdu; küçük kutu için küçük birim kullanılır. (s. 144)",
+   "akilda": "Büyüğe büyük, küçüğe küçük birim",
+   "soru": {
+    "soru": "Bir kamyonun taşıdığı kumun hacmi için en uygun birim hangisidir?",
+    "secenekler": [
+     "mm³",
+     "cm³",
+     "m³"
+    ],
+    "dogru": 2,
+    "ipucu": "Kum çok mu, az mı?",
+    "aciklama": "Kamyondaki kum çok büyük bir hacimdir: m³ uygun. (s. 144)"
+   }
+  },
+  {
+   "ad": "1 m³ = 1000 dm³",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='24' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='31' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='38' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='45' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='52' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='59' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='66' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='73' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='80' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='30' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='37' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='44' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='51' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='58' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='65' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='72' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='79' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='86' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><rect x='87' y='93' width='7' height='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='0.6'/><text x='60' y='26' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f5f6fa'>1 m = 10 dm</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#f2c14e'>10 · 10 · 10 = 1000</text></svg>",
+   "aciklama": "Ayrıtı 1 m olan bir koliye ayrıtı 1 dm olan kutulardan 10 · 10 · 10 = 1000 tane sığar. Bu yüzden 1 m³ = 1000 dm³. (s. 145)",
+   "ek": "1 m = 10 dm. Kolinin tabanına 10 · 10 = 100 kutu dizilir; 10 kat olunca 1000 kutu olur. Hacimde üç ayrıt olduğu için 10 değil 1000 katı. (s. 145)",
+   "akilda": "1 m³ = 1000 dm³",
+   "cozum": {
+    "baslik": "Koliye kaç kutu sığar?",
+    "problem": "Ayrıtı 1 m olan bir koliyi, ayrıtı 1 dm olan küp kutularla dolduralım.",
+    "adimlar": [
+     {
+      "metin": "Kolinin her ayrıtı 1 m = 10 dm. Bir kenara 10 kutu dizilir.",
+      "islem": "1 m = 10 dm"
+     },
+     {
+      "metin": "Taban katmanı: 10 sıra, her sırada 10 kutu.",
+      "islem": "10 · 10 = 100 kutu"
+     },
+     {
+      "metin": "10 katman var.",
+      "islem": "100 · 10 = 1000 kutu"
+     }
+    ],
+    "sonuc": "Koliye 1000 kutu sığar: 1 m³ = 1000 dm³. (s. 145)"
+   },
+   "soru": {
+    "soru": "Ayrıtı 1 m olan bir koliye ayrıtı 1 dm olan küp kutulardan kaç tane sığar?",
+    "cevap": "1000",
+    "ipucu": "Bir kenara 10 kutu dizilir: 10 · 10 · 10.",
+    "aciklama": "10 · 10 · 10 = 1000 kutu. (s. 145)",
+    "yardim": {
+     "adimlar": [
+      "1 m kaç dm?",
+      "Taban katmanında 10 · 10 kutu var.",
+      "Kaç katman var? Bir katmanı katman sayısıyla çarp."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Hacim Basamakları",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='6' y='8' width='32' height='20' rx='5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.2'/><text x='22' y='22' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>m³</text><rect x='32' y='30' width='32' height='20' rx='5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.2'/><text x='48' y='44' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>dm³</text><rect x='58' y='52' width='32' height='20' rx='5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.2'/><text x='74' y='66' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>cm³</text><rect x='84' y='74' width='32' height='20' rx='5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.2'/><text x='100' y='88' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>mm³</text><text x='36' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ffa26b'>↓ × 1000</text><text x='88' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#6fb3ff'>↑ ÷ 1000</text></svg>",
+   "aciklama": "Hacim birimleri büyükten küçüğe sıralanır: m³, dm³, cm³, mm³. Aşağı inerken her basamakta 1000 ile çarparız, yukarı çıkarken 1000'e böleriz. (s. 146)",
+   "ek": "Kitaptaki Bilgi Kutusu bunu basamaklarla gösterir. Kolay hatırlamak için basamakları bir merdiven gibi düşün: aşağı in → × 1000, yukarı çık → ÷ 1000.",
+   "akilda": "Aşağı × 1000, yukarı ÷ 1000",
+   "soru": {
+    "soru": "Büyük birimden küçük birime (örneğin m³'ten dm³'e) çevirirken ne yaparız?",
+    "secenekler": [
+     "1000 ile çarparız.",
+     "1000'e böleriz.",
+     "10 ile çarparız."
+    ],
+    "dogru": 0,
+    "ipucu": "Merdivende aşağı iniyoruz.",
+    "aciklama": "Aşağı inerken her basamakta 1000 ile çarparız. (s. 146)"
+   }
+  },
+  {
+   "ad": "Büyükten Küçüğe: Çarp",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f5f6fa'>2,5 m³</text><text x='60' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>× 1000 ↓</text><text x='60' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>2500 dm³</text></svg>",
+   "aciklama": "Büyük birimi küçük birime çevirince sayı büyür: her basamak için 1000 ile çarparız. (s. 146)",
+   "ek": "Ondalık sayıda virgülü 3 basamak sağa kaydırırız: 2,5 m³ = 2500 dm³. İki basamak inersek iki kez 1000 ile çarparız: 2 m³ = 2000 dm³ = 2 000 000 cm³.",
+   "akilda": "Küçük birim → büyük sayı",
+   "cozum": {
+    "baslik": "m³'ten dm³'e",
+    "problem": "2,5 m³ kaç dm³'tür?",
+    "svg": "<svg viewBox='0 0 330 150' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='10' y='14' width='64' height='26' rx='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='42.0' y='32.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>m³</text><text x='84.0' y='24.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>× 1000</text><text x='50.0' y='66.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>÷ 1000</text><rect x='90' y='42' width='64' height='26' rx='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='122.0' y='60.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>dm³</text><text x='164.0' y='52.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>× 1000</text><text x='130.0' y='94.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>÷ 1000</text><rect x='170' y='70' width='64' height='26' rx='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='202.0' y='88.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>cm³</text><text x='244.0' y='80.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>× 1000</text><text x='210.0' y='122.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>÷ 1000</text><rect x='250' y='98' width='64' height='26' rx='7' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='282.0' y='116.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#1b2340'>mm³</text></svg>",
+    "adimlar": [
+     {
+      "metin": "m³'ten dm³'e: bir basamak aşağı iniyoruz.",
+      "islem": "× 1000"
+     },
+     {
+      "metin": "Virgülü 3 basamak sağa kaydır; eksik basamağa 0 yaz.",
+      "islem": "2,5 · 1000 = 2500"
+     }
+    ],
+    "sonuc": "2,5 m³ = 2500 dm³. (s. 146)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "0,4 dm³ kaç cm³'tür?",
+    "adimlar": [
+     {
+      "metin": "dm³'ten cm³'e: bir basamak aşağı.",
+      "islem": "× 1000"
+     },
+     {
+      "metin": "0,4'ü 1000 ile çarp.",
+      "soru": {
+       "soru": "0,4 · 1000 kaçtır?",
+       "cevap": "400",
+       "ipucu": "Virgülü 3 basamak sağa kaydır.",
+       "aciklama": "0,4 · 1000 = 400.",
+       "denk": true,
+       "yardim": {
+        "adimlar": [
+         "0,4'te virgülden sonra 1 basamak var: 4 olur.",
+         "2 basamak daha kaydır: sona iki 0 ekle."
+        ]
+       }
+      },
+      "islem": "0,4 · 1000 = 400 cm³"
+     }
+    ],
+    "sonuc": "Harika! 0,4 dm³ = 400 cm³."
+   },
+   "soru": {
+    "soru": "3 dm³ kaç cm³?",
+    "cevap": "3000",
+    "ipucu": "dm³'ten cm³'e bir basamak aşağı: 1000 ile çarp.",
+    "aciklama": "3 · 1000 = 3000 cm³. (s. 146)",
+    "birim": "cm³",
+    "yardim": {
+     "adimlar": [
+      "Merdivende aşağı mı iniyoruz, yukarı mı çıkıyoruz?",
+      "Aşağı: 1000 ile çarp."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Küçükten Büyüğe: Böl",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='40' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#f5f6fa'>6000 cm³</text><text x='60' y='64' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#6fb3ff'>÷ 1000 ↑</text><text x='60' y='92' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='17' fill='#f2c14e'>6 dm³</text></svg>",
+   "aciklama": "Küçük birimi büyük birime çevirince sayı küçülür: her basamak için 1000'e böleriz. (s. 146)",
+   "ek": "1000'e bölerken sondan üç 0 sileriz ya da virgülü 3 basamak sola kaydırırız: 3500 dm³ = 3,5 m³.",
+   "akilda": "Büyük birim → küçük sayı",
+   "cozum": {
+    "baslik": "dm³'ten m³'e",
+    "problem": "3500 dm³ kaç m³'tür?",
+    "adimlar": [
+     {
+      "metin": "dm³'ten m³'e: bir basamak yukarı çıkıyoruz.",
+      "islem": "÷ 1000"
+     },
+     {
+      "metin": "Virgülü 3 basamak sola kaydır.",
+      "islem": "3500 ÷ 1000 = 3,5"
+     }
+    ],
+    "sonuc": "3500 dm³ = 3,5 m³. (s. 146)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "8000 mm³ kaç cm³'tür?",
+    "adimlar": [
+     {
+      "metin": "mm³'ten cm³'e: bir basamak yukarı.",
+      "islem": "÷ 1000"
+     },
+     {
+      "metin": "8000'i 1000'e böl.",
+      "soru": {
+       "soru": "8000 ÷ 1000 kaçtır?",
+       "cevap": "8",
+       "ipucu": "Sondan üç 0 sil.",
+       "aciklama": "8000 ÷ 1000 = 8.",
+       "yardim": {
+        "adimlar": [
+         "1000'de kaç tane 0 var?",
+         "8000'in sonundan o kadar 0 sil."
+        ]
+       }
+      },
+      "islem": "8000 ÷ 1000 = 8 cm³"
+     }
+    ],
+    "sonuc": "Harika! 8000 mm³ = 8 cm³."
+   },
+   "soru": {
+    "soru": "6000 cm³ kaç dm³?",
+    "cevap": "6",
+    "ipucu": "cm³'ten dm³'e bir basamak yukarı: 1000'e böl.",
+    "aciklama": "6000 ÷ 1000 = 6 dm³. (s. 146)",
+    "birim": "dm³",
+    "yardim": {
+     "adimlar": [
+      "Merdivende aşağı mı iniyoruz, yukarı mı çıkıyoruz?",
+      "Yukarı: 1000'e böl. Sondan üç 0 sil."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Önce Birimleri Eşitle",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#ff8fab'>2 m · 1 m · 50 cm</text><text x='60' y='56' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>↓ hepsi dm</text><text x='60' y='82' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#4fc3a1'>20 · 10 · 5</text><text x='60' y='106' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>= 1000 dm³</text></svg>",
+   "aciklama": "Ayrıtlar farklı birimlerle verilmişse önce hepsini aynı birime çeviririz, sonra çarparız. (s. 146)",
+   "ek": "Kitaptaki sebze yatağının ölçüleri 2 m, 1,5 m ve 40 cm'dir: m ile cm karışık. Hepsini dm'ye çevirirsek hacim doğrudan dm³ çıkar. (s. 146)",
+   "akilda": "Önce aynı birim, sonra çarp",
+   "cozum": {
+    "baslik": "Sebze yatağı",
+    "problem": "Bir sebze yatağı 2 m uzunluğunda, 1 m genişliğinde ve 50 cm derinliğindedir. Her toprak paketi 50 dm³. Kaç paket toprak gerekir?",
+    "svg": "<svg viewBox='0 0 330 130' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='72.5,104.0 222.5,104.0 222.5,54.0 72.5,54.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='72.5,54.0 222.5,54.0 257.5,19.0 107.5,19.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='222.5,104.0 257.5,69.0 257.5,19.0 222.5,54.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M107.5 69.0 H257.5 M107.5 69.0 V19.0 M107.5 69.0 L72.5 104.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M72.5 104.0 H222.5 V54.0 H72.5 Z M72.5 54.0 L107.5 19.0 H257.5 L222.5 54.0 M257.5 19.0 V69.0 L222.5 104.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='72.5' y1='104.0' x2='222.5' y2='104.0' stroke='#5fd08f' stroke-width='3.5'/><text x='147.5' y='120.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>2 m</text><line x1='72.5' y1='104.0' x2='72.5' y2='54.0' stroke='#f783ac' stroke-width='3.5'/><text x='67.5' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>50 cm</text><line x1='222.5' y1='104.0' x2='257.5' y2='69.0' stroke='#b197fc' stroke-width='3.5'/><text x='246.0' y='95.5' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>1 m</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Kaplamak mı, doldurmak mı? Toprak yatağı dolduruyor: hacim."
+     },
+     {
+      "metin": "Birimler aynı mı? Hayır. Hepsini dm yap.",
+      "islem": "2 m = 20 dm, 1 m = 10 dm, 50 cm = 5 dm"
+     },
+     {
+      "metin": "Hacmi bul.",
+      "islem": "20 · 10 · 5 = 1000 dm³"
+     },
+     {
+      "metin": "Bir paket 50 dm³. Kaç paket?",
+      "islem": "1000 ÷ 50 = 20"
+     }
+    ],
+    "sonuc": "20 paket toprak gerekir. (s. 146)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Bir kutunun ayrıtları 1 m, 4 dm ve 20 cm. Hacmi kaç dm³?",
+    "adimlar": [
+     {
+      "metin": "Birimleri dm yap: 1 m = 10 dm, 4 dm aynı kalır.",
+      "islem": "10 dm, 4 dm"
+     },
+     {
+      "metin": "20 cm kaç dm?",
+      "soru": {
+       "soru": "20 cm kaç dm?",
+       "cevap": "2",
+       "ipucu": "1 dm = 10 cm.",
+       "aciklama": "20 ÷ 10 = 2 dm.",
+       "birim": "dm",
+       "yardim": {
+        "adimlar": [
+         "1 dm kaç cm?",
+         "20'yi 10'a böl."
+        ]
+       }
+      },
+      "islem": "20 cm = 2 dm"
+     },
+     {
+      "metin": "Üç ayrıtı çarp.",
+      "soru": {
+       "soru": "10 · 4 · 2 kaçtır?",
+       "cevap": "80",
+       "ipucu": "Önce 10 · 4, sonra 2 ile çarp.",
+       "aciklama": "10 · 4 = 40, 40 · 2 = 80.",
+       "yardim": {
+        "adimlar": [
+         "Önce 10 · 4.",
+         "Sonucu 2 ile çarp."
+        ]
+       }
+      },
+      "islem": "10 · 4 · 2 = 80 dm³"
+     }
+    ],
+    "sonuc": "Harika! Kutunun hacmi 80 dm³."
+   },
+   "soru": {
+    "soru": "Ayrıtları 1 m, 5 dm ve 2 dm olan bir kutunun hacmini dm³ olarak bulmak için ilk ne yapmalıyız?",
+    "secenekler": [
+     "1 · 5 · 2 işlemini yaparız.",
+     "1 m'yi 10 dm'ye çeviririz.",
+     "Sayıları toplarız."
+    ],
+    "dogru": 1,
+    "ipucu": "Birimler aynı mı?",
+    "aciklama": "Önce birimleri eşitleriz: 1 m = 10 dm. Sonra 10 · 5 · 2 = 100 dm³. (s. 146)"
+   }
+  }
+ ],
+ "akildaKalsin": [
+  "Hacmin temel birimi metreküptür (m³).",
+  "Büyük hacimler büyük birimle, küçük hacimler küçük birimle ölçülür.",
+  "1 m³ = 1000 dm³, 1 dm³ = 1000 cm³, 1 cm³ = 1000 mm³.",
+  "Basamakta aşağı inerken × 1000, yukarı çıkarken ÷ 1000.",
+  "Küçük birime çevirince sayı büyür, büyük birime çevirince küçülür.",
+  "Ayrıtların birimleri farklıysa önce eşitle, sonra çarp."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Uzunlukta 1 m = 10 dm iken hacimde neden 1000 katı?",
+   "cevap": "Hacimde üç ayrıt vardır. Her ayrıt 10 katı olunca hacim 10 · 10 · 10 = 1000 katı olur. (s. 145)"
+  },
+  {
+   "soru": "Neden her şeyi m³ ile ölçmüyoruz?",
+   "cevap": "Küçük şeyler için m³ çok büyük kalır; meyve suyu kutusu 0,0002 m³ gibi garip bir sayı olur. Küçük şeye küçük birim yakışır. (s. 144)"
+  },
+  {
+   "soru": "Sayı büyüdü mü, küçüldü mü diye nasıl kontrol ederim?",
+   "cevap": "Küçük birime çevirdiysen sayı büyümeli (3 m³ = 3000 dm³). Büyük birime çevirdiysen sayı küçülmeli (6000 cm³ = 6 dm³)."
+  },
+  {
+   "soru": "Kamyonun kasasına kaç koli sığar?",
+   "cevap": "Kitaptaki kamyonun kasası 3 m, 2 m ve 2 m. Ayrıtı 1 m olan kolilerden 3 · 2 · 2 = 12 tane sığar; kasanın hacmi 12 m³'tür. (s. 145)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Can “3 m³ = 30 dm³” dedi. Hatası ne? Doğrusunu yaz.",
+   "ornekCevap": "Can uzunluktaki gibi 10 ile çarptı. Hacimde her basamak 1000 katıdır: 3 m³ = 3000 dm³.",
+   "anahtarlar": [
+    "1000",
+    "3000",
+    "10"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir yüzme havuzundaki suyun hacmi için en uygun birim hangisidir?",
+   "secenekler": [
+    "m³",
+    "cm³",
+    "mm³"
+   ],
+   "dogru": 0,
+   "ipucu": "Havuz büyük mü, küçük mü?",
+   "aciklama": "Havuz çok büyüktür; büyük birim m³ uygundur. (s. 144)",
+   "kavram": "Hangi Birim Uygun?"
+  },
+  {
+   "soru": "3 m³ kaç dm³?",
+   "cevap": "3000",
+   "ipucu": "1 m³ = 1000 dm³.",
+   "aciklama": "3 · 1000 = 3000 dm³. (s. 146)",
+   "birim": "dm³",
+   "kavram": "1 m³ = 1000 dm³",
+   "yardim": {
+    "adimlar": [
+     "m³'ten dm³'e: aşağı mı, yukarı mı?",
+     "Aşağı: 1000 ile çarp. 3'ün sonuna üç 0 ekle."
+    ]
+   }
+  },
+  {
+   "soru": "5 dm³ kaç cm³?",
+   "cevap": "5000",
+   "ipucu": "dm³'ten cm³'e bir basamak aşağı: 1000 ile çarp.",
+   "aciklama": "5 · 1000 = 5000 cm³. (s. 146)",
+   "birim": "cm³",
+   "kavram": "Büyükten Küçüğe: Çarp",
+   "yardim": {
+    "adimlar": [
+     "dm³ büyük, cm³ küçük birim: sayı büyüyecek.",
+     "1000 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "7000 cm³ kaç dm³?",
+   "cevap": "7",
+   "ipucu": "cm³'ten dm³'e bir basamak yukarı: 1000'e böl.",
+   "aciklama": "7000 ÷ 1000 = 7 dm³. (s. 146)",
+   "birim": "dm³",
+   "kavram": "Küçükten Büyüğe: Böl",
+   "yardim": {
+    "adimlar": [
+     "cm³ küçük, dm³ büyük birim: sayı küçülecek.",
+     "1000'e böl: sondan üç 0 sil."
+    ]
+   }
+  },
+  {
+   "soru": "cm³'ü m³'e çevirirken ne yaparız?",
+   "secenekler": [
+    "Her basamakta 1000 ile çarparız.",
+    "Her basamakta 1000'e böleriz.",
+    "Her basamakta 10'a böleriz."
+   ],
+   "dogru": 1,
+   "ipucu": "cm³ küçük, m³ büyük birim. Merdivende yukarı mı çıkıyoruz?",
+   "aciklama": "Yukarı çıkıyoruz: her basamakta 1000'e böleriz. (s. 146)",
+   "kavram": "Hacim Basamakları"
+  },
+  {
+   "soru": "0,5 m³ kaç dm³?",
+   "cevap": "500",
+   "ipucu": "1000 ile çarp: virgülü 3 basamak sağa kaydır.",
+   "aciklama": "0,5 · 1000 = 500 dm³. (s. 146)",
+   "birim": "dm³",
+   "kavram": "Büyükten Küçüğe: Çarp",
+   "yardim": {
+    "adimlar": [
+     "m³'ten dm³'e: aşağı iniyoruz, 1000 ile çarp.",
+     "0,5'te virgülü 1 basamak kaydırınca 5 olur. 2 basamak daha var."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi doğrudur?",
+   "secenekler": [
+    "1 dm³ = 100 cm³",
+    "1 cm³ = 10 mm³",
+    "1 m³ = 1000 dm³"
+   ],
+   "dogru": 2,
+   "ipucu": "Hacimde basamaklar arası 10 mu, 1000 mi?",
+   "aciklama": "Hacimde her basamak 1000 katıdır: 1 m³ = 1000 dm³. (s. 146)",
+   "kavram": "1 m³ = 1000 dm³"
+  },
+  {
+   "soru": "Ayrıtları 2 m, 1 m ve 50 cm olan prizma biçimindeki bir çukurun hacmi kaç dm³?",
+   "cevap": "1000",
+   "ipucu": "Önce bütün ayrıtları dm'ye çevir.",
+   "aciklama": "2 m = 20 dm, 1 m = 10 dm, 50 cm = 5 dm. 20 · 10 · 5 = 1000 dm³. (s. 146)",
+   "birim": "dm³",
+   "kavram": "Önce Birimleri Eşitle",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Doldurmak: hacim.",
+     "Birimler aynı mı? Hepsini dm yap: 20 dm, 10 dm, 5 dm.",
+     "Önce 20 · 10.",
+     "Sonucu 5 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "4500 dm³ kaç m³?",
+   "cevap": "4,5",
+   "ipucu": "dm³'ten m³'e: 1000'e böl, virgülü 3 basamak sola kaydır.",
+   "aciklama": "4500 ÷ 1000 = 4,5 m³. (s. 146)",
+   "birim": "m³",
+   "denk": true,
+   "kavram": "Küçükten Büyüğe: Böl",
+   "yardim": {
+    "adimlar": [
+     "dm³'ten m³'e: yukarı çıkıyoruz, 1000'e böl.",
+     "4500'de virgül en sondadır. Virgülü 3 basamak sola kaydır."
+    ]
+   }
+  },
+  {
+   "soru": "Her ayrıtı 1 m olan küpün hacmi hangisidir?",
+   "secenekler": [
+    "1 m²",
+    "1 m³",
+    "3 m"
+   ],
+   "dogru": 1,
+   "ipucu": "Hacim küp birimle yazılır.",
+   "aciklama": "1 · 1 · 1 = 1 m³. (s. 146)",
+   "kavram": "Metreküp"
+  }
+ ]
+}

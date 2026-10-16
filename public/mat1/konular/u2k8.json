@@ -1,0 +1,664 @@
+{
+ "id": "u2k8",
+ "unite": "2. Tema: Geometrik Nicelikler",
+ "baslik": "Yüzey Alanı ve Hacim Problemleri",
+ "sayfalar": "s. 152–156",
+ "giris": "Bu konuda öğrendiklerimizi gerçek hayatta kullanacağız: kutuları koliye yerleştireceğiz, bir kutuyu kumaşla kaplayacağız, akvaryuma su dolduracağız. Her problemde aynı dört soruyu soracağız.",
+ "hazirlik": {
+  "baslik": "Hazır mısın?",
+  "giris": "Bu konuda yüzey alanını, hacmi ve birim çevirmeyi birlikte kullanacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+  "maddeler": [
+   {
+    "ad": "Yüzey alanı",
+    "sinif": "2. tema, 3. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='18.0,96.0 74.0,96.0 74.0,50.0 18.0,50.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='18.0,50.0 74.0,50.0 94.0,30.0 38.0,30.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='74.0,96.0 94.0,76.0 94.0,30.0 74.0,50.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M38.0 76.0 H94.0 M38.0 76.0 V30.0 M38.0 76.0 L18.0 96.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M18.0 96.0 H74.0 V50.0 H18.0 Z M18.0 50.0 L38.0 30.0 H94.0 L74.0 50.0 M94.0 30.0 V76.0 L74.0 96.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><path d='M46 50 V96 M18 73 H74' stroke='#ff8fab' stroke-width='5'/><path d='M46 50 l-10 -10 M46 50 l10 -10' stroke='#ff8fab' stroke-width='4' stroke-linecap='round'/><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>bütün yüzleri kapla</text></svg>",
+    "anlatim": "Yüzey alanı bütün yüzlerin alanlarının toplamıdır. Küpün 6 eş kare yüzü vardır: yüzey alanı 6 · a · a.",
+    "akilda": "Kaplamak = yüzey alanı",
+    "sorular": [
+     {
+      "soru": "Ayrıtı 2 cm olan küpün yüzey alanı kaç cm²?",
+      "cevap": "24",
+      "ipucu": "Bir yüz 2 · 2. Küpün 6 yüzü var.",
+      "aciklama": "2 · 2 = 4 cm². 6 · 4 = 24 cm².",
+      "birim": "cm²",
+      "yardim": {
+       "adimlar": [
+        "Bir yüzün alanı: 2 · 2.",
+        "6 yüz var: bir yüzü 6 ile çarp."
+       ]
+      }
+     },
+     {
+      "soru": "Ayrıtı 1 cm olan küpün yüzey alanı kaç cm²?",
+      "cevap": "6",
+      "ipucu": "Bir yüz 1 · 1. Küpün 6 yüzü var.",
+      "aciklama": "1 · 1 = 1 cm². 6 · 1 = 6 cm².",
+      "birim": "cm²",
+      "yardim": {
+       "adimlar": [
+        "Bir yüzün alanı: 1 · 1.",
+        "6 yüz var."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Hacim",
+    "sinif": "2. tema, 5. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='22.0,84.0 70.0,84.0 70.0,44.0 22.0,44.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='22.0,44.0 70.0,44.0 88.0,26.0 40.0,26.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='70.0,84.0 88.0,66.0 88.0,26.0 70.0,44.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M40.0 66.0 H88.0 M40.0 66.0 V26.0 M40.0 66.0 L22.0 84.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M22.0 84.0 H70.0 V44.0 H22.0 Z M22.0 44.0 L40.0 26.0 H88.0 L70.0 44.0 M88.0 26.0 V66.0 L70.0 84.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='22.0' y1='84.0' x2='70.0' y2='84.0' stroke='#5fd08f' stroke-width='3.5'/><text x='46.0' y='100.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>a</text><line x1='22.0' y1='84.0' x2='22.0' y2='44.0' stroke='#f783ac' stroke-width='3.5'/><text x='17.0' y='69.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>c</text><line x1='70.0' y1='84.0' x2='88.0' y2='66.0' stroke='#b197fc' stroke-width='3.5'/><text x='85.0' y='84.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>b</text><text x='60' y='114' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>a · b · c</text></svg>",
+    "anlatim": "Dikdörtgenler prizmasının hacmi üç ayrıtın çarpımıdır: a · b · c.",
+    "akilda": "Doldurmak = hacim",
+    "sorular": [
+     {
+      "soru": "Ayrıtları 2 cm, 3 cm ve 4 cm olan prizmanın hacmi kaç cm³?",
+      "cevap": "24",
+      "ipucu": "Üç ayrıtı çarp.",
+      "aciklama": "2 · 3 · 4 = 24 cm³.",
+      "birim": "cm³",
+      "yardim": {
+       "adimlar": [
+        "Önce 2 · 3.",
+        "Sonucu 4 ile çarp."
+       ]
+      }
+     },
+     {
+      "soru": "Ayrıtları 5 cm, 2 cm ve 1 cm olan prizmanın hacmi kaç cm³?",
+      "cevap": "10",
+      "ipucu": "Üç ayrıtı çarp.",
+      "aciklama": "5 · 2 · 1 = 10 cm³.",
+      "birim": "cm³",
+      "yardim": {
+       "adimlar": [
+        "Önce 5 · 2.",
+        "Sonucu 1 ile çarp."
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "ad": "Hacim ve sıvı birimleri",
+    "sinif": "2. tema, 6–7. konu",
+    "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='14.0,80.0 54.0,80.0 54.0,40.0 14.0,40.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='14.0,40.0 54.0,40.0 69.0,25.0 29.0,25.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='54.0,80.0 69.0,65.0 69.0,25.0 54.0,40.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M14.0 80.0 H54.0 V40.0 H14.0 Z M14.0 40.0 L29.0 25.0 H69.0 L54.0 40.0 M69.0 25.0 V65.0 L54.0 80.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='14.0' y1='80.0' x2='54.0' y2='80.0' stroke='#5fd08f' stroke-width='3.5'/><text x='34.0' y='96.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>1 dm</text><line x1='14.0' y1='80.0' x2='14.0' y2='40.0' stroke='#f783ac' stroke-width='3.5'/><text x='9.0' y='65.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'></text><line x1='54.0' y1='80.0' x2='69.0' y2='65.0' stroke='#b197fc' stroke-width='3.5'/><text x='67.5' y='81.5' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'></text><rect x='74' y='40' width='34' height='40' fill='#6fb3ff' fill-opacity='0.5' stroke='#f5f6fa' stroke-width='2'/><text x='60' y='116' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>1 dm³ = 1 L</text></svg>",
+    "anlatim": "1 m³ = 1000 dm³, 1 dm³ = 1 L, 1 L = 1000 mL, 1 cm³ = 1 mL.",
+    "akilda": "1 dm³ = 1 L",
+    "sorular": [
+     {
+      "soru": "3 dm³ kaç litredir?",
+      "cevap": "3",
+      "ipucu": "1 dm³ = 1 L.",
+      "aciklama": "3 dm³ = 3 L.",
+      "birim": "L",
+      "yardim": {
+       "adimlar": [
+        "1 dm³ kaç litre?",
+        "3 dm³ kaç litre olur?"
+       ]
+      }
+     },
+     {
+      "soru": "2000 mL kaç litredir?",
+      "secenekler": [
+       "2",
+       "20",
+       "200"
+      ],
+      "dogru": 0,
+      "ipucu": "1 L = 1000 mL.",
+      "aciklama": "2000 ÷ 1000 = 2 L."
+     }
+    ]
+   }
+  ]
+ },
+ "kavramlar": [
+  {
+   "ad": "Problem İskeleti",
+   "renk": "#1f9e8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='16' cy='24' r='8' fill='#f5f6fa'/><text x='16' y='28' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>1</text><text x='30' y='28' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#f5f6fa'>Ne veriliyor?</text><circle cx='16' cy='48' r='8' fill='#ffd166'/><text x='16' y='52' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>2</text><text x='30' y='52' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#ffd166'>Kapla mı?</text><circle cx='16' cy='72' r='8' fill='#ff8fab'/><text x='16' y='76' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>3</text><text x='30' y='76' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#ff8fab'>Birim aynı mı?</text><circle cx='16' cy='96' r='8' fill='#4fc3a1'/><text x='16' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#1b2340'>4</text><text x='30' y='100' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#4fc3a1'>Hesapla</text></svg>",
+   "aciklama": "Her problemde aynı dört soruyu sırayla sorarız: 1) Ne veriliyor, ne isteniyor? 2) Kaplamak mı, doldurmak mı? 3) Birimler aynı mı? 4) Hesapla ve birimi yaz.",
+   "ek": "Bu sıralama kitap dışı bir strateji; kitaptaki dört problem de bu adımlarla çözülebilir. Kaplamak = yüzey alanı (cm², dm²), doldurmak = hacim (cm³, dm³, L). (s. 152–155)",
+   "akilda": "Ne? Kapla mı? Birim? Hesapla",
+   "soru": {
+    "soru": "“Bir koliye kaç kutu sığar?” sorusunda neyi kullanırız?",
+    "secenekler": [
+     "Yüzey alanını",
+     "Hacmi",
+     "Çevreyi"
+    ],
+    "dogru": 1,
+    "ipucu": "Kutular koliyi kaplıyor mu, dolduruyor mu?",
+    "aciklama": "Kutular koliyi doldurur: hacim kullanırız. (s. 152)"
+   }
+  },
+  {
+   "ad": "Kaç Kutu Sığar?",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='10.0,90.0 80.0,90.0 80.0,50.0 10.0,50.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='10.0,50.0 80.0,50.0 95.0,35.0 25.0,35.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='80.0,90.0 95.0,75.0 95.0,35.0 80.0,50.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M25.0 75.0 H95.0 M25.0 75.0 V35.0 M25.0 75.0 L10.0 90.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M10.0 90.0 H80.0 V50.0 H10.0 Z M10.0 50.0 L25.0 35.0 H95.0 L80.0 50.0 M95.0 35.0 V75.0 L80.0 90.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><polygon points='14.0,90.0 32.0,90.0 32.0,72.0 14.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='14.0,72.0 32.0,72.0 41.0,63.0 23.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='32.0,90.0 41.0,81.0 41.0,63.0 32.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='32.0,90.0 50.0,90.0 50.0,72.0 32.0,72.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='32.0,72.0 50.0,72.0 59.0,63.0 41.0,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='50.0,90.0 59.0,81.0 59.0,63.0 50.0,72.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>büyük ÷ küçük</text></svg>",
+   "aciklama": "Büyük kutuya kaç küçük kutu sığdığını bulmak için büyük hacmi küçük hacme böleriz. (s. 152)",
+   "ek": "Kitapta bir konteyner 400 eş kutuyla tam doluyor. Kutular boşluksuz diziliyorsa: kutu sayısı = büyük hacim ÷ küçük hacim. (s. 152)",
+   "akilda": "Büyük hacim ÷ küçük hacim",
+   "cozum": {
+    "baslik": "Dolaba kutular",
+    "problem": "Bir dolabın içi 6 dm, 4 dm ve 2 dm. Ayrıtı 2 dm olan küp kutular dolaba boşluk kalmadan dizilecek. Kaç kutu sığar?",
+    "svg": "<svg viewBox='0 0 330 130' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='67.5,104.0 217.5,104.0 217.5,54.0 67.5,54.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='67.5,54.0 217.5,54.0 262.5,9.0 112.5,9.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='217.5,104.0 262.5,59.0 262.5,9.0 217.5,54.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M112.5 59.0 H262.5 M112.5 59.0 V9.0 M112.5 59.0 L67.5 104.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M67.5 104.0 H217.5 V54.0 H67.5 Z M67.5 54.0 L112.5 9.0 H262.5 L217.5 54.0 M262.5 9.0 V59.0 L217.5 104.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='67.5' y1='104.0' x2='217.5' y2='104.0' stroke='#5fd08f' stroke-width='3.5'/><text x='142.5' y='120.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>6 dm</text><line x1='67.5' y1='104.0' x2='67.5' y2='54.0' stroke='#f783ac' stroke-width='3.5'/><text x='62.5' y='84.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>2 dm</text><line x1='217.5' y1='104.0' x2='262.5' y2='59.0' stroke='#b197fc' stroke-width='3.5'/><text x='246.0' y='90.5' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>4 dm</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Ne veriliyor? Dolap ve kutunun ayrıtları. Ne isteniyor? Kutu sayısı."
+     },
+     {
+      "metin": "Doldurmak: hacim. Dolabın hacmi.",
+      "islem": "6 · 4 · 2 = 48 dm³"
+     },
+     {
+      "metin": "Bir kutunun hacmi.",
+      "islem": "2 · 2 · 2 = 8 dm³"
+     },
+     {
+      "metin": "Büyük hacmi küçük hacme böl.",
+      "islem": "48 ÷ 8 = 6"
+     }
+    ],
+    "sonuc": "Dolaba 6 kutu sığar. (s. 152)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Bir kolinin ayrıtları 4 dm, 3 dm ve 2 dm. Ayrıtları 2 dm, 1 dm ve 1 dm olan kutular koliye boşluk kalmadan dizilecek. Kaç kutu sığar?",
+    "adimlar": [
+     {
+      "metin": "Kolinin hacmi.",
+      "soru": {
+       "soru": "4 · 3 · 2 kaçtır?",
+       "cevap": "24",
+       "ipucu": "Önce 4 · 3, sonra 2 ile çarp.",
+       "aciklama": "4 · 3 = 12, 12 · 2 = 24.",
+       "yardim": {
+        "adimlar": [
+         "Önce 4 · 3.",
+         "Sonucu 2 ile çarp."
+        ]
+       }
+      },
+      "islem": "4 · 3 · 2 = 24 dm³"
+     },
+     {
+      "metin": "Bir kutunun hacmi.",
+      "islem": "2 · 1 · 1 = 2 dm³"
+     },
+     {
+      "metin": "Büyük hacmi küçük hacme böl.",
+      "soru": {
+       "soru": "24 ÷ 2 kaçtır?",
+       "cevap": "12",
+       "ipucu": "24'ün yarısı kaç?",
+       "aciklama": "24 ÷ 2 = 12.",
+       "yardim": {
+        "adimlar": [
+         "24'ü 2 eş parçaya ayır.",
+         "Bir parça kaç eder?"
+        ]
+       }
+      },
+      "islem": "24 ÷ 2 = 12"
+     }
+    ],
+    "sonuc": "Harika! Koliye 12 kutu sığar."
+   },
+   "soru": {
+    "soru": "Bir kolinin hacmi 24 dm³, bir kutunun hacmi 4 dm³. Kutular koliyi boşluk kalmadan dolduruyor. Koliye kaç kutu sığar?",
+    "cevap": "6",
+    "ipucu": "Büyük hacmi küçük hacme böl.",
+    "aciklama": "24 ÷ 4 = 6 kutu. (s. 152)",
+    "yardim": {
+     "adimlar": [
+      "Büyük hacim hangisi, küçük hacim hangisi?",
+      "24'ü 4'e böl."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Kaplama Maliyeti",
+   "renk": "#b7791f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><polygon points='28.0,82.0 76.0,82.0 76.0,42.0 28.0,42.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='28.0,42.0 76.0,42.0 91.0,27.0 43.0,27.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='76.0,82.0 91.0,67.0 91.0,27.0 76.0,42.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='28.0,82.0 76.0,82.0 76.0,42.0 28.0,42.0' fill='#f2c14e' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.55'/><path d='M43.0 67.0 H91.0 M43.0 67.0 V27.0 M43.0 67.0 L28.0 82.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M28.0 82.0 H76.0 V42.0 H28.0 Z M28.0 42.0 L43.0 27.0 H91.0 L76.0 42.0 M91.0 27.0 V67.0 L76.0 82.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><text x='60' y='104' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>alan × fiyat</text></svg>",
+   "aciklama": "Bir kutuyu kaplamanın maliyeti = yüzey alanı × 1 birim karenin fiyatı. (s. 153)",
+   "ek": "Kitapta Ahmet Bey takı kutularını kumaşla kaplıyor. Ölçüler dm ise fiyat da “1 dm²” için verilmeli; birimler aynı olunca doğrudan çarparız. Kapaksız ya da altı kaplanmayan kutuda o yüzü saymayız. (s. 153)",
+   "akilda": "Yüzey alanı × fiyat",
+   "cozum": {
+    "baslik": "Küp kutuyu kaplayalım",
+    "problem": "Ayrıtı 2 dm olan küp şeklindeki bir kutunun bütün yüzleri kumaşla kaplanacak. Kumaşın 1 dm²'si 3 TL. Kumaş kaç TL tutar?",
+    "svg": "<svg viewBox='0 0 330 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='105.0,124.0 185.0,124.0 185.0,44.0 105.0,44.0' fill='#33406e' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='105.0,44.0 185.0,44.0 225.0,4.0 145.0,4.0' fill='#3f4f86' stroke='none' stroke-width='0' stroke-linejoin='round'/><polygon points='185.0,124.0 225.0,84.0 225.0,4.0 185.0,44.0' fill='#283258' stroke='none' stroke-width='0' stroke-linejoin='round'/><path d='M145.0 84.0 H225.0 M145.0 84.0 V4.0 M145.0 84.0 L105.0 124.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M105.0 124.0 H185.0 V44.0 H105.0 Z M105.0 44.0 L145.0 4.0 H225.0 L185.0 44.0 M225.0 4.0 V84.0 L185.0 124.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='105.0' y1='124.0' x2='185.0' y2='124.0' stroke='#5fd08f' stroke-width='3.5'/><text x='145.0' y='140.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>2 dm</text><line x1='105.0' y1='124.0' x2='105.0' y2='44.0' stroke='#f783ac' stroke-width='3.5'/><text x='100.0' y='89.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>2 dm</text><line x1='185.0' y1='124.0' x2='225.0' y2='84.0' stroke='#b197fc' stroke-width='3.5'/><text x='211.0' y='113.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>2 dm</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı."
+     },
+     {
+      "metin": "Bir yüzün alanı.",
+      "islem": "2 · 2 = 4 dm²"
+     },
+     {
+      "metin": "Küpün 6 yüzü var.",
+      "islem": "6 · 4 = 24 dm²"
+     },
+     {
+      "metin": "Birimler aynı (dm²). Fiyatla çarp.",
+      "islem": "24 · 3 = 72 TL"
+     }
+    ],
+    "sonuc": "Kumaş 72 TL tutar. (s. 153)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Bir kare prizmanın tabanı 2 dm × 2 dm, yüksekliği 3 dm. Bütün yüzleri kaplanacak. Kumaşın 1 dm²'si 2 TL. Kaç TL tutar?",
+    "adimlar": [
+     {
+      "metin": "İki kare yüz (alt ve üst).",
+      "islem": "2 · (2 · 2) = 8 dm²"
+     },
+     {
+      "metin": "Dört yan yüz: her biri 2 · 3.",
+      "soru": {
+       "soru": "4 · (2 · 3) kaçtır?",
+       "cevap": "24",
+       "ipucu": "Önce parantez: 2 · 3. Sonra 4 ile çarp.",
+       "aciklama": "2 · 3 = 6, 4 · 6 = 24.",
+       "yardim": {
+        "adimlar": [
+         "Önce parantez: 2 · 3.",
+         "Sonucu 4 ile çarp."
+        ]
+       }
+      },
+      "islem": "4 · 6 = 24 dm²"
+     },
+     {
+      "metin": "Yüzey alanı.",
+      "islem": "8 + 24 = 32 dm²"
+     },
+     {
+      "metin": "Fiyatla çarp.",
+      "soru": {
+       "soru": "32 · 2 kaçtır?",
+       "cevap": "64",
+       "ipucu": "32'yi iki kere topla.",
+       "aciklama": "32 + 32 = 64.",
+       "yardim": {
+        "adimlar": [
+         "32 · 2, iki tane 32 demek.",
+         "32 ile 32'yi topla."
+        ]
+       }
+      },
+      "islem": "32 · 2 = 64 TL"
+     }
+    ],
+    "sonuc": "Harika! Kumaş 64 TL tutar."
+   },
+   "soru": {
+    "soru": "Bir kutunun yüzey alanı 20 dm². Kumaşın 1 dm²'si 4 TL. Kutuyu kaplamak kaç TL tutar?",
+    "cevap": "80",
+    "ipucu": "Yüzey alanını fiyatla çarp.",
+    "aciklama": "20 · 4 = 80 TL. (s. 153)",
+    "birim": "TL",
+    "yardim": {
+     "adimlar": [
+      "Birimler aynı mı? Yüzey alanı dm², fiyat 1 dm² için.",
+      "20'yi 4 ile çarp."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Suyun Yüksekliği",
+   "renk": "#7b4fc9",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M35.0 71.0 H95.0 M35.0 71.0 V15.0 M35.0 71.0 L20.0 86.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M20.0 86.0 H80.0 V30.0 H20.0 Z M20.0 30.0 L35.0 15.0 H95.0 L80.0 30.0 M95.0 15.0 V71.0 L80.0 86.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><polygon points='20.0,86.0 80.0,86.0 80.0,62.0 20.0,62.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.5'/><text x='50' y='80' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='16' fill='#f2c14e'>?</text><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>hacim ÷ taban alanı</text></svg>",
+   "aciklama": "Akvaryumdaki suyun hacmi = taban alanı × suyun yüksekliği. Yüksekliği bulmak için hacmi taban alanına böleriz. (s. 154)",
+   "ek": "Su litre verilirse önce dm³'e çeviririz (1 L = 1 dm³). Taban da dm ile verilmeli ki birimler aynı olsun. (s. 154)",
+   "akilda": "Yükseklik = hacim ÷ taban alanı",
+   "cozum": {
+    "baslik": "Akvaryumda su",
+    "problem": "Tabanı 4 dm × 2 dm olan bir akvaryuma 16 L su kondu. Su kaç dm yüksekliğe çıkar?",
+    "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M100.0 112.0 H250.0 M100.0 112.0 V12.0 M100.0 112.0 L60.0 152.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M60.0 152.0 H210.0 V52.0 H60.0 Z M60.0 52.0 L100.0 12.0 H250.0 L210.0 52.0 M250.0 12.0 V112.0 L210.0 152.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='60.0' y1='152.0' x2='210.0' y2='152.0' stroke='#5fd08f' stroke-width='3.5'/><text x='135.0' y='168.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>4 dm</text><line x1='60.0' y1='152.0' x2='60.0' y2='52.0' stroke='#f783ac' stroke-width='3.5'/><text x='55.0' y='107.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>5 dm</text><line x1='210.0' y1='152.0' x2='250.0' y2='112.0' stroke='#b197fc' stroke-width='3.5'/><text x='236.0' y='141.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>2 dm</text><polygon points='60.0,152.0 210.0,152.0 210.0,112.0 60.0,112.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.45'/><polygon points='60.0,112.0 210.0,112.0 250.0,72.0 100.0,72.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.3'/><polygon points='210.0,152.0 250.0,112.0 250.0,72.0 210.0,112.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.25'/><text x='135.0' y='137.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>? dm</text></svg>",
+    "adimlar": [
+     {
+      "metin": "Ne isteniyor? Suyun yüksekliği."
+     },
+     {
+      "metin": "Birimler aynı mı? Litreyi dm³ yap.",
+      "islem": "16 L = 16 dm³"
+     },
+     {
+      "metin": "Taban alanı.",
+      "islem": "4 · 2 = 8 dm²"
+     },
+     {
+      "metin": "Hacmi taban alanına böl.",
+      "islem": "16 ÷ 8 = 2 dm"
+     }
+    ],
+    "sonuc": "Su 2 dm yüksekliğe çıkar. (s. 154)"
+   },
+   "soru": {
+    "soru": "Taban alanı 6 dm² olan bir akvaryuma 12 L su kondu. Su kaç dm yüksekliğe çıkar?",
+    "cevap": "2",
+    "ipucu": "12 L = 12 dm³. Hacmi taban alanına böl.",
+    "aciklama": "12 ÷ 6 = 2 dm. (s. 154)",
+    "birim": "dm",
+    "yardim": {
+     "adimlar": [
+      "Litreyi dm³ yap: 12 L = 12 dm³.",
+      "Hacmi taban alanına böl: 12 ÷ 6."
+     ]
+    }
+   }
+  },
+  {
+   "ad": "Eklenen Cismin Hacmi",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M35.0 71.0 H95.0 M35.0 71.0 V15.0 M35.0 71.0 L20.0 86.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M20.0 86.0 H80.0 V30.0 H20.0 Z M20.0 30.0 L35.0 15.0 H95.0 L80.0 30.0 M95.0 15.0 V71.0 L80.0 86.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><polygon points='20.0,86.0 80.0,86.0 80.0,56.0 20.0,56.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.5'/><line x1='20' y1='64' x2='80' y2='64' stroke='#f5f6fa' stroke-width='1.5' stroke-dasharray='4 3'/><path d='M30 85 q4 -10 12 -9 q8 1 7 9z' fill='#9aa3bf'/><text x='60' y='112' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='10' fill='#f2c14e'>taban alanı × yükselme</text></svg>",
+   "aciklama": "Akvaryuma kum ya da taş eklenince su yükselir. Eklenen cismin hacmi = taban alanı × suyun yükselmesi. (s. 154)",
+   "ek": "Kitapta Samet akvaryumuna kum ekliyor; su 0,5 cm yükseliyor. Yükselen su, prizma biçiminde ince bir dilimdir; hacmini taban alanıyla buluruz. (s. 154)",
+   "akilda": "Taban alanı × yükselme",
+   "cozum": {
+    "baslik": "Samet'in akvaryum kumu",
+    "problem": "Tabanı 40 cm × 25 cm olan akvaryuma kum eklenince su 0,5 cm yükseldi. Kumun hacmi kaç cm³?",
+    "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M100.0 112.0 H250.0 M100.0 112.0 V12.0 M100.0 112.0 L60.0 152.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M60.0 152.0 H210.0 V52.0 H60.0 Z M60.0 52.0 L100.0 12.0 H250.0 L210.0 52.0 M250.0 12.0 V112.0 L210.0 152.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='60.0' y1='152.0' x2='210.0' y2='152.0' stroke='#5fd08f' stroke-width='3.5'/><text x='135.0' y='168.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>40 cm</text><line x1='60.0' y1='152.0' x2='60.0' y2='52.0' stroke='#f783ac' stroke-width='3.5'/><text x='55.0' y='107.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>30 cm</text><line x1='210.0' y1='152.0' x2='250.0' y2='112.0' stroke='#b197fc' stroke-width='3.5'/><text x='236.0' y='141.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>25 cm</text><polygon points='60.0,152.0 210.0,152.0 210.0,97.0 60.0,97.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.45'/><polygon points='60.0,97.0 210.0,97.0 250.0,57.0 100.0,57.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.3'/><polygon points='210.0,152.0 250.0,112.0 250.0,57.0 210.0,97.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.25'/></svg>",
+    "adimlar": [
+     {
+      "metin": "Ne isteniyor? Kumun hacmi."
+     },
+     {
+      "metin": "Taban alanı.",
+      "islem": "40 · 25 = 1000 cm²"
+     },
+     {
+      "metin": "Taban alanını yükselmeyle çarp.",
+      "islem": "1000 · 0,5 = 500 cm³"
+     }
+    ],
+    "sonuc": "Kumun hacmi 500 cm³. (s. 154)"
+   },
+   "sende": {
+    "baslik": "Sıra sende",
+    "problem": "Tabanı 20 cm × 10 cm olan akvaryuma taşlar konunca su 2 cm yükseldi. Taşların hacmi kaç cm³?",
+    "adimlar": [
+     {
+      "metin": "Taban alanı.",
+      "soru": {
+       "soru": "20 · 10 kaçtır?",
+       "cevap": "200",
+       "ipucu": "10 ile çarpınca sona bir 0 eklenir.",
+       "aciklama": "20 · 10 = 200.",
+       "yardim": {
+        "adimlar": [
+         "10 ile çarpıyoruz.",
+         "20'nin sonuna bir 0 ekle."
+        ]
+       }
+      },
+      "islem": "20 · 10 = 200 cm²"
+     },
+     {
+      "metin": "Yükselmeyle çarp.",
+      "soru": {
+       "soru": "200 · 2 kaçtır?",
+       "cevap": "400",
+       "ipucu": "200'ü iki kere topla.",
+       "aciklama": "200 + 200 = 400.",
+       "yardim": {
+        "adimlar": [
+         "200 · 2, iki tane 200 demek.",
+         "200 ile 200'ü topla."
+        ]
+       }
+      },
+      "islem": "200 · 2 = 400 cm³"
+     }
+    ],
+    "sonuc": "Harika! Taşların hacmi 400 cm³."
+   },
+   "soru": {
+    "soru": "Akvaryuma bir cisim eklenince su yükseldi. Cismin hacmi nasıl bulunur?",
+    "secenekler": [
+     "Taban alanı × yükselme",
+     "Taban alanı + yükselme",
+     "Yükselme × yükselme"
+    ],
+    "dogru": 0,
+    "ipucu": "Yükselen su ince bir prizma gibi.",
+    "aciklama": "Yükselen suyun hacmi = taban alanı × yükselme; bu da cismin hacmidir. (s. 154)"
+   }
+  },
+  {
+   "ad": "Litre mi, Metreküp mü?",
+   "renk": "#2f8f73",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='44' width='92' height='34' rx='4' fill='#6fb3ff' fill-opacity='0.5' stroke='#f5f6fa' stroke-width='2'/><text x='60' y='30' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='14' fill='#f2c14e'>1 m³ = 1000 L</text><text x='60' y='100' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>büyük su → m³</text></svg>",
+   "aciklama": "Çok büyük su miktarlarını (havuz, şehir) m³ ile yazarız. 1 m³ = 1000 dm³ = 1000 L. (s. 155)",
+   "ek": "Litreden m³'e: 1000'e böl. m³'ten litreye: 1000 ile çarp. Kitapta diş fırçalarken boşa akan su, olimpik havuz büyüklüğüyle karşılaştırılıyor. (s. 155)",
+   "akilda": "1 m³ = 1000 L",
+   "cozum": {
+    "baslik": "Boşa akan su",
+    "problem": "Diş fırçalarken musluk 2 dakika açık kalıyor ve dakikada 5 L su akıyor. 100 kişi birer kez diş fırçalarsa kaç m³ su boşa akar?",
+    "adimlar": [
+     {
+      "metin": "Bir kişi bir kez.",
+      "islem": "2 · 5 = 10 L"
+     },
+     {
+      "metin": "100 kişi.",
+      "islem": "100 · 10 = 1000 L"
+     },
+     {
+      "metin": "Litreyi m³ yap: 1000 L = 1 m³.",
+      "islem": "1000 ÷ 1000 = 1 m³"
+     }
+    ],
+    "sonuc": "1 m³ su boşa akar. Musluğu kapatmak çok su kazandırır! (s. 155)"
+   },
+   "soru": {
+    "soru": "Bir havuz 50 m³ su alıyor. Bu kaç litredir?",
+    "secenekler": [
+     "500",
+     "5000",
+     "50 000"
+    ],
+    "dogru": 2,
+    "ipucu": "1 m³ = 1000 L.",
+    "aciklama": "50 · 1000 = 50 000 L. (s. 155)"
+   }
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki bilgiye göre diş fırçalarken musluk açık kalınca dakikada yaklaşık 5 litre su boşa akar. Bunu yapan herkesin harcadığı su, olimpik bir yüzme havuzunu bile doldurabilir. (s. 155)",
+  "Anıtkabir'de mozolenin bulunduğu bölümde 44 sütun vardır. Kare prizma biçimindeki her sütunun tabanı 1,5 m, yüksekliği 14 m'dir. (s. 156)"
+ ],
+ "akildaKalsin": [
+  "Dört soru: Ne veriliyor? Kaplamak mı, doldurmak mı? Birimler aynı mı? Hesapla + birim.",
+  "Kaç kutu sığar? Büyük hacim ÷ küçük hacim.",
+  "Kaplama maliyeti = yüzey alanı × 1 birim karenin fiyatı.",
+  "Suyun yüksekliği = hacim ÷ taban alanı.",
+  "Eklenen cismin hacmi = taban alanı × yükselme.",
+  "Büyük su miktarlarında 1 m³ = 1000 L."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Kutular koliye tam sığmazsa ne olur?",
+   "cevap": "Hacimleri bölmek yetmez; her kenara kaç kutu dizildiğine de bakmak gerekir. Bu konudaki sorularda kutular hep boşluksuz diziliyor. (s. 152)"
+  },
+  {
+   "soru": "Neden önce birimleri eşitliyoruz?",
+   "cevap": "dm ile cm çarpılınca anlamsız bir sonuç çıkar. Hepsini aynı birime çevirince sonuç doğru birimle çıkar."
+  },
+  {
+   "soru": "Akvaryuma kum ekleyince neden daha az su sığar?",
+   "cevap": "Kum akvaryumda yer kaplar. Akvaryumun hacminden su ve kumun hacmini çıkarınca kalan boşluk kadar su eklenebilir. (s. 154)"
+  },
+  {
+   "soru": "Olimpik havuz ne kadar büyük?",
+   "cevap": "Kitaptaki ölçüler 50 m, 25 m ve 2 m: 50 · 25 · 2 = 2500 m³, yani 2 500 000 litre su alır. (s. 155)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir kutuyu kumaşla kaplamak ile içine kum doldurmak için hangi ölçüleri bulursun? Neden farklı?",
+   "ornekCevap": "Kaplamak için yüzey alanını, doldurmak için hacmi bulurum. Kumaş kutunun dışını kaplar, kum içini doldurur.",
+   "anahtarlar": [
+    "yüzey",
+    "hacim",
+    "kapla",
+    "doldur"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir problemi çözmeye başlarken ilk ne yaparız?",
+   "secenekler": [
+    "Hemen sayıları çarparız.",
+    "Ne verildiğini ve ne istendiğini buluruz.",
+    "Bütün sayıları toplarız."
+   ],
+   "dogru": 1,
+   "ipucu": "Dört sorunun ilki.",
+   "aciklama": "Önce ne verildiğini ve ne istendiğini buluruz; sonra kaplamak mı doldurmak mı diye sorarız.",
+   "kavram": "Problem İskeleti"
+  },
+  {
+   "soru": "Bir rafın içi 8 dm, 2 dm ve 2 dm. Ayrıtı 2 dm olan küp kutular rafa boşluk kalmadan dizilecek. Kaç kutu sığar?",
+   "cevap": "4",
+   "ipucu": "Rafın hacmini bir kutunun hacmine böl.",
+   "aciklama": "Raf 8 · 2 · 2 = 32 dm³, kutu 2 · 2 · 2 = 8 dm³. 32 ÷ 8 = 4. (s. 152)",
+   "kavram": "Kaç Kutu Sığar?",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Kutular rafı dolduruyor: hacim.",
+     "Rafın hacmi: 8 · 2 · 2.",
+     "Kutunun hacmi: 2 · 2 · 2.",
+     "Büyük hacmi küçük hacme böl."
+    ]
+   }
+  },
+  {
+   "soru": "Ayrıtı 3 dm olan küp şeklindeki bir kutunun bütün yüzleri kaplanacak. Kumaşın 1 dm²'si 2 TL. Kumaş kaç TL tutar?",
+   "cevap": "108",
+   "ipucu": "Önce yüzey alanını bul, sonra fiyatla çarp.",
+   "aciklama": "Bir yüz 3 · 3 = 9 dm². 6 · 9 = 54 dm². 54 · 2 = 108 TL. (s. 153)",
+   "birim": "TL",
+   "kavram": "Kaplama Maliyeti",
+   "yardim": {
+    "adimlar": [
+     "Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı.",
+     "Bir yüz: 3 · 3. Küpün 6 yüzü var.",
+     "Birimler aynı (dm²). Yüzey alanını 2 TL ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Tabanı 5 dm × 2 dm olan bir akvaryuma 30 L su kondu. Su kaç dm yüksekliğe çıkar?",
+   "cevap": "3",
+   "ipucu": "30 L = 30 dm³. Hacmi taban alanına böl.",
+   "aciklama": "Taban alanı 5 · 2 = 10 dm². 30 ÷ 10 = 3 dm. (s. 154)",
+   "birim": "dm",
+   "kavram": "Suyun Yüksekliği",
+   "svg": "<svg viewBox='0 0 330 180' xmlns='http://www.w3.org/2000/svg' role='img'><path d='M100.0 112.0 H250.0 M100.0 112.0 V12.0 M100.0 112.0 L60.0 152.0' stroke='#9aa3bf' stroke-width='1.5' stroke-dasharray='4 3' fill='none'/><path d='M60.0 152.0 H210.0 V52.0 H60.0 Z M60.0 52.0 L100.0 12.0 H250.0 L210.0 52.0 M250.0 12.0 V112.0 L210.0 152.0' stroke='#f5f6fa' stroke-width='2' fill='none' stroke-linejoin='round'/><line x1='60.0' y1='152.0' x2='210.0' y2='152.0' stroke='#5fd08f' stroke-width='3.5'/><text x='135.0' y='168.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#5fd08f'>5 dm</text><line x1='60.0' y1='152.0' x2='60.0' y2='52.0' stroke='#f783ac' stroke-width='3.5'/><text x='55.0' y='107.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f783ac'>4 dm</text><line x1='210.0' y1='152.0' x2='250.0' y2='112.0' stroke='#b197fc' stroke-width='3.5'/><text x='236.0' y='141.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#b197fc'>2 dm</text><polygon points='60.0,152.0 210.0,152.0 210.0,77.0 60.0,77.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.45'/><polygon points='60.0,77.0 210.0,77.0 250.0,37.0 100.0,37.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.3'/><polygon points='210.0,152.0 250.0,112.0 250.0,37.0 210.0,77.0' fill='#6fb3ff' stroke='none' stroke-width='0' stroke-linejoin='round' fill-opacity='0.25'/><text x='135.0' y='119.5' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#f2c14e'>? dm</text></svg>",
+   "yardim": {
+    "adimlar": [
+     "Ne isteniyor? Suyun yüksekliği.",
+     "Birimler aynı mı? 30 L = 30 dm³.",
+     "Taban alanı: 5 · 2.",
+     "Hacmi taban alanına böl."
+    ]
+   }
+  },
+  {
+   "soru": "Tabanı 20 cm × 15 cm olan bir akvaryuma taşlar konunca su 2 cm yükseldi. Taşların hacmi kaç cm³?",
+   "cevap": "600",
+   "ipucu": "Taban alanını yükselmeyle çarp.",
+   "aciklama": "20 · 15 = 300 cm². 300 · 2 = 600 cm³. (s. 154)",
+   "birim": "cm³",
+   "kavram": "Eklenen Cismin Hacmi",
+   "yardim": {
+    "adimlar": [
+     "Ne isteniyor? Taşların hacmi.",
+     "Taban alanı: 20 · 15.",
+     "Taban alanını yükselmeyle (2 cm) çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Bir su deposu 3 m³ su alıyor. Bu kaç litredir?",
+   "cevap": "3000",
+   "ipucu": "1 m³ = 1000 L.",
+   "aciklama": "3 · 1000 = 3000 L. (s. 155)",
+   "birim": "L",
+   "kavram": "Litre mi, Metreküp mü?",
+   "yardim": {
+    "adimlar": [
+     "1 m³ kaç litre?",
+     "3'ü 1000 ile çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Bir kolinin ayrıtları 4 dm, 4 dm ve 2 dm. Ayrıtları 4 dm, 2 dm ve 1 dm olan kutular koliye boşluk kalmadan dizilecek. Kaç kutu sığar?",
+   "secenekler": [
+    "4",
+    "8",
+    "16"
+   ],
+   "dogru": 0,
+   "ipucu": "İki hacmi bul, büyüğü küçüğe böl.",
+   "aciklama": "Koli 4 · 4 · 2 = 32 dm³, kutu 4 · 2 · 1 = 8 dm³. 32 ÷ 8 = 4. (s. 152)",
+   "kavram": "Kaç Kutu Sığar?",
+   "yardim": {
+    "adimlar": [
+     "Kolinin hacmi: 4 · 4 · 2.",
+     "Kutunun hacmi: 4 · 2 · 1.",
+     "Büyük hacmi küçük hacme böl."
+    ]
+   }
+  },
+  {
+   "soru": "Tabanları aynı iki akvaryumdan ikincisine birincinin 2 katı su kondu. İkinci akvaryumdaki suyun yüksekliği için ne söylenebilir?",
+   "secenekler": [
+    "Aynı kalır.",
+    "Yarısı olur.",
+    "2 katı olur."
+   ],
+   "dogru": 2,
+   "ipucu": "Yükseklik = hacim ÷ taban alanı. Taban aynı.",
+   "aciklama": "Taban alanı aynı, hacim 2 katı: yükseklik de 2 katı olur. (s. 154)",
+   "kavram": "Suyun Yüksekliği"
+  },
+  {
+   "soru": "Diş fırçalarken musluk 2 dakika açık kalıyor ve dakikada 5 L su akıyor. 4 kişilik bir aile günde 2 kez diş fırçalarsa kaç litre su boşa akar?",
+   "cevap": "80",
+   "ipucu": "Bir kişinin bir kez fırçalamasıyla başla.",
+   "aciklama": "Bir fırçalama 2 · 5 = 10 L. 4 kişi · 2 kez = 8 fırçalama. 8 · 10 = 80 L. (s. 155)",
+   "birim": "L",
+   "kavram": "Problem İskeleti",
+   "yardim": {
+    "adimlar": [
+     "Ne veriliyor? 2 dakika, dakikada 5 L, 4 kişi, günde 2 kez.",
+     "Bir fırçalamada: 2 · 5.",
+     "Toplam kaç fırçalama var? 4 · 2.",
+     "Fırçalama sayısını bir fırçalamadaki suyla çarp."
+    ]
+   }
+  },
+  {
+   "soru": "Tabanı 30 cm × 20 cm olan bir akvaryuma kum eklenince su 1 cm yükseldi. Kumun hacmi kaç cm³'tür?",
+   "secenekler": [
+    "600",
+    "60",
+    "50"
+   ],
+   "dogru": 0,
+   "ipucu": "Taban alanını yükselmeyle çarp.",
+   "aciklama": "30 · 20 = 600 cm². 600 · 1 = 600 cm³. (s. 154)",
+   "kavram": "Eklenen Cismin Hacmi"
+  }
+ ]
+}

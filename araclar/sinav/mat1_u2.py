@@ -2,9 +2,12 @@ import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 KOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")); sys.path.insert(0, KOK)
 from ortak import Havuz
 from gen_mat1 import (sec_svg, ust_alt_svg, gorunum_cizimi, yapi_cizimi, svg_yapi, svg_kare_ag, prizma_ag, numarali_hac, gor,
-                      Y_L, Y_KOSE, Y_SAKLI, svg_dolu, kutu)
-H = Havuz("mat1", 2, "m2"); a = H.add
+                      Y_L, Y_KOSE, Y_SAKLI, svg_dolu, kutu, kap_svg, bosluk)
+H = Havuz("mat1", 2, "m2")
+def a(konu, kavram, tur, **k):   # kavram adları konu dosyasındaki gibi bölünmez boşluklu ("1 m³")
+    H.add(konu, bosluk(kavram), tur, **k)
 S1, S2, S3, S4, S5 = "(s. 118–124)", "(s. 125–128)", "(s. 129–133)", "(s. 134–138)", "(s. 138–143)"
+S6, S7, S8 = "(s. 144–146)", "(s. 147–151)", "(s. 152–156)"
 C4 = ["1. çizim", "2. çizim", "3. çizim", "4. çizim"]
 
 # --- Konu 1: Cisimlerin farklı yönlerden görünümleri
@@ -113,5 +116,65 @@ a("u2k5", "Katman", "kisa", soru="Bir prizmanın taban katmanında 6 birim küp 
   aciklama=f"Bir katman × katman sayısı: 6 · 5 = 30 br³ {S5}.")
 a("u2k5", "Hacim Birimi br³", "dy", ifade="Hacim br² birimiyle yazılır.", dogru=False, duzeltme="Hacim br³ ile yazılır; br² alan birimidir.",
   aciklama=f"Üç ayrıt çarpılır: br · br · br = br³ {S5}.")
+
+# --- Konu 6: Hacim ölçme birimleri
+a("u2k6", "Metreküp", "secim", soru="Hacim ölçülerinin temel birimi hangisidir?", secenekler=["Metre", "Metrekare", "Metreküp", "Litre"], dogru=2,
+  aciklama=f"Hacmin temel birimi metreküptür (m³) {S6}.")
+a("u2k6", "1 m³ = 1000 dm³", "kisa", soru="4 m³ kaç dm³'tür?", yanit="4000", sayi=True,
+  aciklama=f"1 m³ = 1000 dm³: 4 · 1000 = 4000 dm³ {S6}.")
+a("u2k6", "Hacim Basamakları", "dy", ifade="Hacim birimlerinde ardışık basamaklar arasında 10 katlık ilişki vardır.", dogru=False,
+  duzeltme="Hacim birimlerinde ardışık basamaklar arasında 1000 katlık ilişki vardır.", aciklama=f"m³, dm³, cm³, mm³: her basamak 1000 katı {S6}.")
+a("u2k6", "Hacim Basamakları", "bosluk", soru="Cümlelerdeki boşlukları kelime havuzundan uygun olanla doldur.", cumleler=[
+  {"c": "1 m³ = 1000 ___", "cevap": "dm³"},
+  {"c": "1 dm³ = 1000 ___", "cevap": "cm³"},
+  {"c": "1 cm³ = 1000 ___", "cevap": "mm³"}],
+  havuz=["m²", "km"], aciklama=f"Her basamak aşağı inerken 1000 katı {S6}.")
+a("u2k6", "Küçükten Büyüğe: Böl", "eslestir", soru="Eşit olan hacimleri eşleştir.", ciftler=[
+  {"sol": "2 m³", "sag": "2000 dm³"},
+  {"sol": "3000 cm³", "sag": "3 dm³"},
+  {"sol": "5 cm³", "sag": "5000 mm³"}],
+  aciklama="Aşağı inerken × 1000, yukarı çıkarken ÷ 1000.")
+a("u2k6", "Önce Birimleri Eşitle", "secim", soru="Hacim birimleriyle ilgili aşağıdaki ifadeler verilmiştir.",
+  onculler=["1 m³ = 1000 dm³'tür.", "5000 cm³ = 50 dm³'tür.", "Ayrıtların birimleri farklıysa önce aynı birime çevrilir."],
+  kok="Bu ifadelerden hangileri doğrudur?", secenekler=["Yalnız I", "I ve II", "I ve III", "I, II ve III"], dogru=2,
+  aciklama=f"5000 cm³ = 5 dm³'tür; II yanlış {S6}.")
+
+# --- Konu 7: Sıvı ölçme birimleri
+a("u2k7", "Sıvı Basamakları", "kisa", soru="3 L kaç mL'dir?", yanit="3000", sayi=True,
+  aciklama=f"1 L = 1000 mL: 3 · 1000 = 3000 mL {S7}.")
+a("u2k7", "1 dm³ = 1 L", "secim", soru="Hacmi 1 dm³ olan bir kap kaç litre su alır?", secenekler=["1", "10", "100", "1000"], dogru=0,
+  aciklama=f"1 dm³ = 1 L {S7}.")
+a("u2k7", "Sıvı Basamakları", "dytablo", soru="Her ifade için Doğru ya da Yanlış seç.", ifadeler=[
+  {"s": "1 L = 10 dL", "d": True},
+  {"s": "1 L = 100 cL", "d": True},
+  {"s": "1 L = 100 mL", "d": False}],
+  aciklama=f"1 L = 1000 mL; sıvıda her basamak 10 katı {S7}.")
+a("u2k7", "1 mL = 1 cm³", "eslestir", soru="Eşit olanları eşleştir.", ciftler=[
+  {"sol": "1 dm³", "sag": "1 L"},
+  {"sol": "1 cm³", "sag": "1 mL"},
+  {"sol": "1 dL", "sag": "10 cL"}],
+  aciklama="1 dm³ = 1 L, 1 cm³ = 1 mL, 1 dL = 10 cL.")
+a("u2k7", "Su Seviyesi Farkı", "secim", soru="Dereceli kapta 300 mL su vardı. Bir bilye atınca su 380 mL'ye çıktı. Bilyenin hacmi kaç cm³'tür?",
+  secenekler=["380", "80", "300", "680"], dogru=1, svg=kap_svg(300, 380, 500),
+  aciklama=f"380 − 300 = 80 mL = 80 cm³ {S7}.")
+a("u2k7", "Aynı Birime Çevir, Sırala", "secim", soru="Hangisi en az sıvıdır?", secenekler=["2 L", "1800 mL", "190 cL", "21 dL"], dogru=1,
+  aciklama=f"Hepsi mL: 2000, 1800, 1900, 2100. En azı 1800 mL {S7}.")
+
+# --- Konu 8: Yüzey alanı ve hacim problemleri
+a("u2k8", "Kaç Kutu Sığar?", "kisa", soru="Ayrıtları 4 dm, 4 dm ve 2 dm olan koliye ayrıtı 2 dm olan küp kutular boşluksuz dizilecek. Kaç kutu sığar?", yanit="4", sayi=True,
+  aciklama=f"Koli 32 dm³, kutu 8 dm³: 32 ÷ 8 = 4 {S8}.")
+a("u2k8", "Kaplama Maliyeti", "kisa", soru="Ayrıtı 2 dm olan küp kutunun bütün yüzleri kaplanacak. Kumaşın 1 dm²'si 5 TL. Kaç TL tutar?", yanit="120", sayi=True,
+  aciklama=f"Yüzey alanı 6 · 4 = 24 dm². 24 · 5 = 120 TL {S8}.")
+a("u2k8", "Suyun Yüksekliği", "kisa", soru="Tabanı 5 dm × 4 dm olan akvaryuma 40 L su kondu. Su kaç dm yüksekliğe çıkar?", yanit="2", sayi=True,
+  aciklama=f"40 L = 40 dm³. Taban 20 dm². 40 ÷ 20 = 2 dm {S8}.")
+a("u2k8", "Eklenen Cismin Hacmi", "secim", soru="Tabanı 40 cm × 25 cm olan akvaryuma kum eklenince su 0,5 cm yükseldi. Kumun hacmi kaç cm³'tür?",
+  secenekler=["500", "1000", "50", "65,5"], dogru=0,
+  aciklama=f"Taban 1000 cm². 1000 · 0,5 = 500 cm³ {S8}.")
+a("u2k8", "Litre mi, Metreküp mü?", "dy", ifade="1 m³ su 1000 litredir.", dogru=True,
+  aciklama=f"1 m³ = 1000 dm³ = 1000 L {S8}.")
+a("u2k8", "Problem İskeleti", "secim", soru="Problem çözerken aşağıdaki ifadeler verilmiştir.",
+  onculler=["Kutuyu kaplamak için yüzey alanı bulunur.", "Kaç kutu sığar sorusunda hacimler bölünür.", "Birimler farklıysa hesaplamadan önce eşitlenir."],
+  kok="Bu ifadelerden hangileri doğrudur?", secenekler=["Yalnız I", "I ve II", "II ve III", "I, II ve III"], dogru=3,
+  aciklama="Üçü de doğru: kaplamak alan, kaç kutu hacim bölme, önce birim eşitleme.")
 
 H.yaz()

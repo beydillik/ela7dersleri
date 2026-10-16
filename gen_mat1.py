@@ -5013,8 +5013,896 @@ def u2t2():
     }
 
 
-TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2]
-KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5] + TARAMALAR
+
+# Tema 2 · Ölçme birimleri ve problemler (u2k6, u2k7, u2t3, u2k8, u2t4) — 17 Ekim 2026
+# Kitap dışı: "basamak/merdiven" görseli (kitaptaki Bilgi Kutusu basamak diyagramının sadeleştirilmiş hâli),
+# "1 mL = 1 cm³" kitapta açıkça yazmıyor; s. 147–148'deki iki Bilgi Kutusundan (1 dm³ = 1 L, 1 L = 1000 mL) ve
+# 6. konudaki 1 dm³ = 1000 cm³ kuralından türetildi. u2k8'de kaplama problemleri alan birimi çevirmesi gerektirmeyecek
+# biçimde (ölçü ve fiyat aynı birimde) yazıldı (Kemal'in kararı: temeli bilsin, ayrıntıya girme).
+SU = "#6fb3ff"
+
+
+def merdiven_svg(birimler, k, w=330, h=150):
+    """Birim basamakları: soldan sağa aşağı iner; aşağı × k (turuncu), yukarı ÷ k (mavi)."""
+    g = ""
+    for i, b in enumerate(birimler):
+        x, y = 10 + i * 80, 14 + i * 28
+        g += f"<rect x='{x}' y='{y}' width='64' height='26' rx='7' fill='{TEAL}' stroke='#1b2340' stroke-width='1.5'/>"
+        g += t2t(x + 32, y + 18, b, "#1b2340", 14)
+        if i < len(birimler) - 1:
+            g += t2t(x + 74, y + 10, f"× {k}", "#ffa26b", 12, 800, "start")
+            g += t2t(x + 40, y + 52, f"÷ {k}", SU, 12)
+    return gsvg(w, h, g)
+
+
+def kap_cizimi(once, sonra=None, maks=1000, cisim=False, H=104, W=56):
+    """Dereceli kap: su seviyesi 'once'; sonra verilirse cisimli ikinci seviye. cx, alt → svg parçası."""
+    def f(cx, alt):
+        x, ust = cx - W / 2, alt - H
+        sev = sonra if sonra is not None else once
+        yy = alt - H * sev / maks
+        g = f"<rect x='{x:.1f}' y='{yy:.1f}' width='{W}' height='{alt - yy:.1f}' fill='{SU}' fill-opacity='0.45'/>"
+        if cisim:
+            g += f"<path d='M{cx - 16:.1f} {alt - 2:.1f} q4 -18 18 -16 q14 2 12 16 z' fill='#9aa3bf' stroke='#1b2340' stroke-width='1.5'/>"
+        g += f"<path d='M{x:.1f} {ust:.1f} V{alt:.1f} H{x + W:.1f} V{ust:.1f}' fill='none' stroke='#f5f6fa' stroke-width='2.5'/>"
+        for v in range(0, maks + 1, maks // 5):
+            ty = alt - H * v / maks
+            g += f"<line x1='{x:.1f}' y1='{ty:.1f}' x2='{x + 10:.1f}' y2='{ty:.1f}' stroke='#f5f6fa' stroke-width='1.5'/>"
+            if v:
+                g += t2t(x - 4, ty + 4, str(v), SOLUK, 10, 700, "end")
+        g += f"<line x1='{x - 2:.1f}' y1='{yy:.1f}' x2='{x + W + 2:.1f}' y2='{yy:.1f}' stroke='#f2c14e' stroke-width='3'/>"
+        g += t2t(x + W + 6, yy + 4, f"{sev} mL", "#f2c14e", 12, 800, "start")
+        return g
+    return f
+
+
+def kap_svg(once, sonra, maks=1000, w=330, h=160):
+    g = kap_cizimi(once, maks=maks)(w * 0.27, h - 30) + kap_cizimi(once, sonra, maks, True)(w * 0.70, h - 30)
+    g += t2t(w * 0.27, h - 8, "Önce", SOLUK, 12, 700) + t2t(w * 0.70, h - 8, "Cismi atınca", SOLUK, 12, 700)
+    return gsvg(w, h, g)
+
+
+def akvaryum_svg(e, b, c, oran, su_yazi, A=150, B=80, C=100, w=330, h=180):
+    x, y = (w - A - B / 2) / 2 - 10, h - 28
+    D, S_ = B * 0.5, C * oran
+    g = prizma(x, y, A, B, C, (e, b, c), dolgu=False)
+    g += t2poly([(x, y), (x + A, y), (x + A, y - S_), (x, y - S_)], SU, "none", 0, " fill-opacity='0.45'")
+    g += t2poly([(x, y - S_), (x + A, y - S_), (x + A + D, y - S_ - D), (x + D, y - S_ - D)], SU, "none", 0, " fill-opacity='0.3'")
+    g += t2poly([(x + A, y), (x + A + D, y - D), (x + A + D, y - S_ - D), (x + A, y - S_)], SU, "none", 0, " fill-opacity='0.25'")
+    if su_yazi:
+        g += t2t(x + A / 2, y - S_ / 2 + 5, su_yazi, "#f2c14e", 13)
+    return gsvg(w, h, g)
+
+
+# ---------- Kavram ve hazırlık çizimleri (120 × 120) ----------
+def svg6_m3():
+    return bg(prizma(30, 78, 50, 40, 46, ("1 m", "1 m", "1 m"), gizli=False) + txt(60, 114, "1 m³", "#f2c14e", 14))
+
+
+def svg6_uygun():
+    g = "<rect x='12' y='42' width='40' height='34' rx='4' fill='#9aa3bf'/><circle cx='22' cy='80' r='6' fill='#5a6280'/><circle cx='44' cy='80' r='6' fill='#5a6280'/>"
+    g += "<rect x='78' y='46' width='18' height='30' rx='3' fill='#ffa26b'/><rect x='84' y='40' width='6' height='7' fill='#f5f6fa'/>"
+    g += txt(32, 102, "m³", "#f2c14e", 16) + txt(87, 102, "küçük", "#f2c14e", 12)
+    g += txt(60, 26, "büyüğe büyük birim", SOLUK, 10, 700)
+    return bg(g)
+
+
+def svg6_1000():
+    g = "".join(f"<rect x='{24 + i * 7}' y='{30 + j * 7}' width='7' height='7' fill='{TEAL}' stroke='#1b2340' stroke-width='0.6'/>" for i in range(10) for j in range(10))
+    g += txt(60, 26, "1 m = 10 dm", "#f5f6fa", 11)
+    g += txt(60, 112, "10 · 10 · 10 = 1000", "#f2c14e", 11)
+    return bg(g)
+
+
+def svg6_merdiven(birimler=("m³", "dm³", "cm³", "mm³"), k="1000"):
+    g = ""
+    for i, b in enumerate(birimler):
+        x, y = 6 + i * 26, 8 + i * 22
+        g += f"<rect x='{x}' y='{y}' width='32' height='20' rx='5' fill='{TEAL}' stroke='#1b2340' stroke-width='1.2'/>" + txt(x + 16, y + 14, b, "#1b2340", 10)
+    g += txt(36, 112, f"↓ × {k}", "#ffa26b", 11) + txt(88, 112, f"↑ ÷ {k}", SU, 11)
+    return bg(g)
+
+
+def svg6_carp():
+    return bg(txt(60, 40, "2,5 m³", "#f5f6fa", 16) + txt(60, 64, "× 1000 ↓", "#ffa26b", 12) + txt(60, 92, "2500 dm³", "#f2c14e", 16))
+
+
+def svg6_bol():
+    return bg(txt(60, 40, "6000 cm³", "#f5f6fa", 15) + txt(60, 64, "÷ 1000 ↑", SU, 12) + txt(60, 92, "6 dm³", "#f2c14e", 17))
+
+
+def svg6_esitle():
+    g = txt(60, 30, "2 m · 1 m · 50 cm", "#ff8fab", 11)
+    g += txt(60, 56, "↓ hepsi dm", SOLUK, 11, 700)
+    g += txt(60, 82, "20 · 10 · 5", "#4fc3a1", 15) + txt(60, 106, "= 1000 dm³", "#f2c14e", 13)
+    return bg(g)
+
+
+def svg6_h_uzunluk():
+    g = "<line x1='12' y1='60' x2='108' y2='60' stroke='#f5f6fa' stroke-width='3'/>"
+    g += "".join(f"<line x1='{12 + i * 9.6:.1f}' y1='{52 if i in (0, 10) else 55}' x2='{12 + i * 9.6:.1f}' y2='{68 if i in (0, 10) else 65}' stroke='#f5f6fa' stroke-width='2'/>" for i in range(11))
+    g += txt(60, 40, "1 m", "#f2c14e", 14) + txt(60, 90, "= 10 dm = 100 cm", "#f5f6fa", 11)
+    return bg(g)
+
+
+def svg6_h_1000():
+    return bg(txt(60, 42, "6 · 1000", "#f5f6fa", 16) + txt(60, 70, "= 6000", "#f2c14e", 18) + txt(60, 98, "virgül 3 basamak", SOLUK, 10))
+
+
+def svg7_litre():
+    g = "<path d='M44 30 h32 v10 q12 8 12 22 v40 q0 6 -6 6 h-44 q-6 0 -6 -6 v-40 q0 -14 12 -22z' fill='none' stroke='#f5f6fa' stroke-width='2.5'/>"
+    g += f"<path d='M33 66 h54 v36 q0 4 -4 4 h-46 q-4 0 -4 -4z' fill='{SU}' fill-opacity='0.5'/>"
+    g += txt(60, 92, "1 L", "#f2c14e", 16)
+    return bg(g)
+
+
+def svg7_dm3():
+    g = prizma(14, 80, 40, 30, 40, ("1 dm", "", ""), gizli=False)
+    g += f"<rect x='74' y='40' width='34' height='40' fill='{SU}' fill-opacity='0.5' stroke='#f5f6fa' stroke-width='2'/>"
+    g += txt(60, 116, "1 dm³ = 1 L", "#f2c14e", 12)
+    return bg(g)
+
+
+def svg7_ml():
+    g = kupler([(0, 0, 0)], 20, 80, 26) + txt(36, 100, "1 cm³", "#f5f6fa", 11)
+    g += f"<rect x='76' y='54' width='20' height='26' fill='{SU}' fill-opacity='0.5' stroke='#f5f6fa' stroke-width='2'/>" + txt(86, 100, "1 mL", "#f5f6fa", 11)
+    g += txt(60, 30, "aynı hacim", "#f2c14e", 12)
+    return bg(g)
+
+
+def svg7_kap():
+    g = kap_cizimi(300, 450, 500, True, H=80, W=40)(44, 98)
+    return bg(g)
+
+
+def svg7_sirala():
+    g = txt(60, 30, "2 L · 1500 mL", "#ff8fab", 11) + txt(60, 44, "180 cL", "#ff8fab", 11)
+    g += txt(60, 62, "↓ hepsi mL", SOLUK, 11, 700)
+    g += txt(60, 84, "2000 · 1500 · 1800", "#4fc3a1", 11) + txt(60, 106, "sonra sırala", "#f2c14e", 12)
+    return bg(g)
+
+
+def svg7_h_10():
+    return bg(txt(60, 42, "3,5 · 10", "#f5f6fa", 16) + txt(60, 70, "= 35", "#f2c14e", 18) + txt(60, 98, "virgül 1 basamak", SOLUK, 10))
+
+
+def svg8_iskelet():
+    g = ""
+    for i, (s, r) in enumerate([("Ne veriliyor?", "#f5f6fa"), ("Kapla mı?", "#ffd166"), ("Birim aynı mı?", "#ff8fab"), ("Hesapla", "#4fc3a1")]):
+        g += f"<circle cx='16' cy='{24 + i * 24}' r='8' fill='{r}'/>" + txt(16, 28 + i * 24, str(i + 1), "#1b2340", 10)
+        g += txt(30, 28 + i * 24, s, r, 11, 700, "start")
+    return bg(g)
+
+
+def svg8_sigar():
+    g = prizma(10, 90, 70, 30, 40) + kupler(kutu(2, 1, 1), 14, 90, 18)
+    g += txt(60, 112, "büyük ÷ küçük", "#f2c14e", 12)
+    return bg(g)
+
+
+def svg8_kapla():
+    g = prizma(28, 82, 48, 30, 40, vurgu="yuz")
+    g += txt(60, 104, "alan × fiyat", "#f2c14e", 13)
+    return bg(g)
+
+
+def svg8_su():
+    g = prizma(20, 86, 60, 30, 56, dolgu=False)
+    g += t2poly([(20, 86), (80, 86), (80, 62), (20, 62)], SU, "none", 0, " fill-opacity='0.5'")
+    g += txt(50, 80, "?", "#f2c14e", 16) + txt(60, 112, "hacim ÷ taban alanı", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg8_cisim():
+    g = prizma(20, 86, 60, 30, 56, dolgu=False)
+    g += t2poly([(20, 86), (80, 86), (80, 56), (20, 56)], SU, "none", 0, " fill-opacity='0.5'")
+    g += "<line x1='20' y1='64' x2='80' y2='64' stroke='#f5f6fa' stroke-width='1.5' stroke-dasharray='4 3'/>"
+    g += "<path d='M30 85 q4 -10 12 -9 q8 1 7 9z' fill='#9aa3bf'/>"
+    g += txt(60, 112, "taban alanı × yükselme", "#f2c14e", 10)
+    return bg(g)
+
+
+def svg8_havuz():
+    g = f"<rect x='14' y='44' width='92' height='34' rx='4' fill='{SU}' fill-opacity='0.5' stroke='#f5f6fa' stroke-width='2'/>"
+    g += txt(60, 30, "1 m³ = 1000 L", "#f2c14e", 14) + txt(60, 100, "büyük su → m³", SOLUK, 11, 700)
+    return bg(g)
+
+
+# =================================================================
+def u2k6():
+    return {
+        "id": "u2k6", "unite": T2, "baslik": "Hacim Ölçme Birimleri", "sayfalar": "s. 144–146",
+        "giris": "Bir kamyon kumu ile bir küp şekeri aynı birimle ölçmek zor olur. Bu konuda hacim birimlerini (m³, dm³, cm³, mm³) tanıyacağız. Bir birimi ötekine çevirmeyi adım adım öğreneceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda birimleri çevireceğiz ve 1000 ile çarpıp böleceğiz. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Uzunluk birimleri", "sinif": "Önceki yıllar", "svg": svg6_h_uzunluk(),
+                 "anlatim": "1 metre 10 desimetredir, 1 desimetre 10 santimetredir. Yani 1 m = 10 dm = 100 cm.",
+                 "akilda": "1 m = 10 dm, 1 dm = 10 cm",
+                 "ornek": {"problem": "3 m kaç dm?", "adimlar": [
+                     {"metin": "1 m = 10 dm.", "islem": "1 m → 10 dm"},
+                     {"metin": "3 metre, 3 tane 10 dm demek.", "islem": "3 · 10 = 30 dm"}]},
+                 "sorular": [
+                     G("2 m kaç dm?", "20", "1 m = 10 dm.", "2 · 10 = 20 dm.", birim="dm",
+                       yardim={"adimlar": ["1 m kaç dm?", "2 tane 10'u topla."]}),
+                     G("50 cm kaç dm?", "5", "1 dm = 10 cm. 50'nin içinde kaç tane 10 var?", "50 ÷ 10 = 5 dm.", birim="dm",
+                       yardim={"adimlar": ["1 dm = 10 cm.", "50'yi 10'a böl."]})]},
+                {"ad": "1000 ile çarpma ve bölme", "sinif": "Önceki yıllar", "svg": svg6_h_1000(),
+                 "anlatim": "1000 ile çarparken sayının sonuna üç 0 ekleriz: 6 · 1000 = 6000. Sayı ondalıksa virgülü 3 basamak sağa kaydırırız: 2,5 · 1000 = 2500. 1000'e bölerken tersini yaparız: 6000 ÷ 1000 = 6.",
+                 "akilda": "× 1000: üç 0 ekle",
+                 "ornek": {"problem": "2,5 · 1000 kaçtır?", "adimlar": [
+                     {"metin": "Virgülü 3 basamak sağa kaydır. 2,5'te virgülden sonra 1 basamak var.", "islem": "2,5 → 25"},
+                     {"metin": "Eksik kalan 2 basamağa 0 yaz.", "islem": "2500"}]},
+                 "sorular": [
+                     G("6 · 1000 kaçtır?", "6000", "1000 ile çarparken sona üç 0 ekle.", "6 · 1000 = 6000.",
+                       yardim={"adimlar": ["1000'de kaç tane 0 var?", "6'nın sonuna o kadar 0 ekle."]}),
+                     G("2,5 · 1000 kaçtır?", "2500", "Virgülü 3 basamak sağa kaydır.", "2,5 · 1000 = 2500.", denk=True,
+                       yardim={"adimlar": ["Virgülü 1 basamak kaydırınca 25 olur.", "2 basamak daha var: sona 0 ekle."]})]},
+                {"ad": "Prizmanın hacmi", "sinif": "2. tema, 5. konu", "svg": svg2_formul_hacim(),
+                 "anlatim": "Dikdörtgenler prizmasının hacmi üç ayrıtın çarpımıdır: a · b · c. Ayrıtlar m ile verilirse hacim m³ olur.",
+                 "akilda": "Hacim = a · b · c",
+                 "sorular": [
+                     G("Ayrıtları 2 m, 3 m ve 1 m olan prizmanın hacmi kaç m³?", "6", "Üç ayrıtı çarp.", "2 · 3 · 1 = 6 m³.", birim="m³",
+                       yardim={"adimlar": ["Önce 2 · 3.", "Sonucu 1 ile çarp."]}),
+                     G("Ayrıtları 2 m, 2 m ve 5 m olan prizmanın hacmi kaç m³?", "20", "Üç ayrıtı çarp.", "2 · 2 · 5 = 20 m³.", birim="m³",
+                       yardim={"adimlar": ["Önce 2 · 2.", "Sonucu 5 ile çarp."]})]}
+            ]},
+        "kavramlar": [
+            {"ad": "Metreküp", "renk": "#1f9e8f", "svg": svg6_m3(),
+             "aciklama": "Hacim ölçülerinin temel birimi metreküptür ve m³ ile gösterilir. Her ayrıtı 1 m olan küpün hacmi 1 m³'tür. (s. 146)",
+             "ek": "m³'ten küçük birimler de vardır: desimetreküp (dm³), santimetreküp (cm³), milimetreküp (mm³). (s. 146)",
+             "akilda": "Temel birim: m³",
+             "soru": S("Hacim ölçülerinin temel birimi hangisidir?", ["Metre", "Metreküp", "Metrekare"], 1,
+                       "Bilgi kartındaki ilk cümleye bak.", "Hacmin temel birimi metreküptür (m³). Metre uzunluk, metrekare alan birimidir. (s. 146)")},
+            {"ad": "Hangi Birim Uygun?", "renk": "#b7791f", "svg": svg6_uygun(),
+             "aciklama": "Büyük hacimler (beton, kum, konteyner) büyük birimle, küçük hacimler küçük birimle ölçülür. (s. 144)",
+             "ek": "Elif'in babası bahçe için “5 m³ kum” istedi. Bir meyve suyu kutusuna “0,0002 m³” yazsak komik olurdu; küçük kutu için küçük birim kullanılır. (s. 144)",
+             "akilda": "Büyüğe büyük, küçüğe küçük birim",
+             "soru": S("Bir kamyonun taşıdığı kumun hacmi için en uygun birim hangisidir?", ["mm³", "cm³", "m³"], 2,
+                       "Kum çok mu, az mı?", "Kamyondaki kum çok büyük bir hacimdir: m³ uygun. (s. 144)")},
+            {"ad": "1 m³ = 1000 dm³", "renk": "#1d6fa3", "svg": svg6_1000(),
+             "aciklama": "Ayrıtı 1 m olan bir koliye ayrıtı 1 dm olan kutulardan 10 · 10 · 10 = 1000 tane sığar. Bu yüzden 1 m³ = 1000 dm³. (s. 145)",
+             "ek": "1 m = 10 dm. Kolinin tabanına 10 · 10 = 100 kutu dizilir; 10 kat olunca 1000 kutu olur. Hacimde üç ayrıt olduğu için 10 değil 1000 katı. (s. 145)",
+             "akilda": "1 m³ = 1000 dm³",
+             "cozum": {"baslik": "Koliye kaç kutu sığar?",
+                       "problem": "Ayrıtı 1 m olan bir koliyi, ayrıtı 1 dm olan küp kutularla dolduralım.",
+                       "adimlar": [
+                           {"metin": "Kolinin her ayrıtı 1 m = 10 dm. Bir kenara 10 kutu dizilir.", "islem": "1 m = 10 dm"},
+                           {"metin": "Taban katmanı: 10 sıra, her sırada 10 kutu.", "islem": "10 · 10 = 100 kutu"},
+                           {"metin": "10 katman var.", "islem": "100 · 10 = 1000 kutu"}],
+                       "sonuc": "Koliye 1000 kutu sığar: 1 m³ = 1000 dm³. (s. 145)"},
+             "soru": G("Ayrıtı 1 m olan bir koliye ayrıtı 1 dm olan küp kutulardan kaç tane sığar?", "1000", "Bir kenara 10 kutu dizilir: 10 · 10 · 10.",
+                       "10 · 10 · 10 = 1000 kutu. (s. 145)",
+                       yardim={"adimlar": ["1 m kaç dm?", "Taban katmanında 10 · 10 kutu var.", "Kaç katman var? Bir katmanı katman sayısıyla çarp."]})},
+            {"ad": "Hacim Basamakları", "renk": "#7b4fc9", "svg": svg6_merdiven(),
+             "aciklama": "Hacim birimleri büyükten küçüğe sıralanır: m³, dm³, cm³, mm³. Aşağı inerken her basamakta 1000 ile çarparız, yukarı çıkarken 1000'e böleriz. (s. 146)",
+             "ek": "Kitaptaki Bilgi Kutusu bunu basamaklarla gösterir. Kolay hatırlamak için basamakları bir merdiven gibi düşün: aşağı in → × 1000, yukarı çık → ÷ 1000.",
+             "akilda": "Aşağı × 1000, yukarı ÷ 1000",
+             "soru": S("Büyük birimden küçük birime (örneğin m³'ten dm³'e) çevirirken ne yaparız?",
+                       ["1000 ile çarparız.", "1000'e böleriz.", "10 ile çarparız."], 0,
+                       "Merdivende aşağı iniyoruz.", "Aşağı inerken her basamakta 1000 ile çarparız. (s. 146)")},
+            {"ad": "Büyükten Küçüğe: Çarp", "renk": "#e8590c", "svg": svg6_carp(),
+             "aciklama": "Büyük birimi küçük birime çevirince sayı büyür: her basamak için 1000 ile çarparız. (s. 146)",
+             "ek": "Ondalık sayıda virgülü 3 basamak sağa kaydırırız: 2,5 m³ = 2500 dm³. İki basamak inersek iki kez 1000 ile çarparız: 2 m³ = 2000 dm³ = 2 000 000 cm³.",
+             "akilda": "Küçük birim → büyük sayı",
+             "cozum": {"baslik": "m³'ten dm³'e",
+                       "problem": "2,5 m³ kaç dm³'tür?",
+                       "svg": merdiven_svg(["m³", "dm³", "cm³", "mm³"], "1000"),
+                       "adimlar": [
+                           {"metin": "m³'ten dm³'e: bir basamak aşağı iniyoruz.", "islem": "× 1000"},
+                           {"metin": "Virgülü 3 basamak sağa kaydır; eksik basamağa 0 yaz.", "islem": "2,5 · 1000 = 2500"}],
+                       "sonuc": "2,5 m³ = 2500 dm³. (s. 146)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "0,4 dm³ kaç cm³'tür?",
+                       "adimlar": [
+                           {"metin": "dm³'ten cm³'e: bir basamak aşağı.", "islem": "× 1000"},
+                           {"metin": "0,4'ü 1000 ile çarp.",
+                            "soru": G("0,4 · 1000 kaçtır?", "400", "Virgülü 3 basamak sağa kaydır.", "0,4 · 1000 = 400.", denk=True,
+                                      yardim={"adimlar": ["0,4'te virgülden sonra 1 basamak var: 4 olur.", "2 basamak daha kaydır: sona iki 0 ekle."]}),
+                            "islem": "0,4 · 1000 = 400 cm³"}],
+                       "sonuc": "Harika! 0,4 dm³ = 400 cm³."},
+             "soru": G("3 dm³ kaç cm³?", "3000", "dm³'ten cm³'e bir basamak aşağı: 1000 ile çarp.", "3 · 1000 = 3000 cm³. (s. 146)", birim="cm³",
+                       yardim={"adimlar": ["Merdivende aşağı mı iniyoruz, yukarı mı çıkıyoruz?", "Aşağı: 1000 ile çarp."]})},
+            {"ad": "Küçükten Büyüğe: Böl", "renk": "#2f8f73", "svg": svg6_bol(),
+             "aciklama": "Küçük birimi büyük birime çevirince sayı küçülür: her basamak için 1000'e böleriz. (s. 146)",
+             "ek": "1000'e bölerken sondan üç 0 sileriz ya da virgülü 3 basamak sola kaydırırız: 3500 dm³ = 3,5 m³.",
+             "akilda": "Büyük birim → küçük sayı",
+             "cozum": {"baslik": "dm³'ten m³'e",
+                       "problem": "3500 dm³ kaç m³'tür?",
+                       "adimlar": [
+                           {"metin": "dm³'ten m³'e: bir basamak yukarı çıkıyoruz.", "islem": "÷ 1000"},
+                           {"metin": "Virgülü 3 basamak sola kaydır.", "islem": "3500 ÷ 1000 = 3,5"}],
+                       "sonuc": "3500 dm³ = 3,5 m³. (s. 146)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "8000 mm³ kaç cm³'tür?",
+                       "adimlar": [
+                           {"metin": "mm³'ten cm³'e: bir basamak yukarı.", "islem": "÷ 1000"},
+                           {"metin": "8000'i 1000'e böl.",
+                            "soru": G("8000 ÷ 1000 kaçtır?", "8", "Sondan üç 0 sil.", "8000 ÷ 1000 = 8.",
+                                      yardim={"adimlar": ["1000'de kaç tane 0 var?", "8000'in sonundan o kadar 0 sil."]}),
+                            "islem": "8000 ÷ 1000 = 8 cm³"}],
+                       "sonuc": "Harika! 8000 mm³ = 8 cm³."},
+             "soru": G("6000 cm³ kaç dm³?", "6", "cm³'ten dm³'e bir basamak yukarı: 1000'e böl.", "6000 ÷ 1000 = 6 dm³. (s. 146)", birim="dm³",
+                       yardim={"adimlar": ["Merdivende aşağı mı iniyoruz, yukarı mı çıkıyoruz?", "Yukarı: 1000'e böl. Sondan üç 0 sil."]})},
+            {"ad": "Önce Birimleri Eşitle", "renk": "#c92a2a", "svg": svg6_esitle(),
+             "aciklama": "Ayrıtlar farklı birimlerle verilmişse önce hepsini aynı birime çeviririz, sonra çarparız. (s. 146)",
+             "ek": "Kitaptaki sebze yatağının ölçüleri 2 m, 1,5 m ve 40 cm'dir: m ile cm karışık. Hepsini dm'ye çevirirsek hacim doğrudan dm³ çıkar. (s. 146)",
+             "akilda": "Önce aynı birim, sonra çarp",
+             "cozum": {"baslik": "Sebze yatağı",
+                       "problem": "Bir sebze yatağı 2 m uzunluğunda, 1 m genişliğinde ve 50 cm derinliğindedir. Her toprak paketi 50 dm³. Kaç paket toprak gerekir?",
+                       "svg": svg_prizma_et("2 m", "1 m", "50 cm", A=150, B=70, C=50, h=130),
+                       "adimlar": [
+                           {"metin": "Kaplamak mı, doldurmak mı? Toprak yatağı dolduruyor: hacim."},
+                           {"metin": "Birimler aynı mı? Hayır. Hepsini dm yap.", "islem": "2 m = 20 dm, 1 m = 10 dm, 50 cm = 5 dm"},
+                           {"metin": "Hacmi bul.", "islem": "20 · 10 · 5 = 1000 dm³"},
+                           {"metin": "Bir paket 50 dm³. Kaç paket?", "islem": "1000 ÷ 50 = 20"}],
+                       "sonuc": "20 paket toprak gerekir. (s. 146)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Bir kutunun ayrıtları 1 m, 4 dm ve 20 cm. Hacmi kaç dm³?",
+                       "adimlar": [
+                           {"metin": "Birimleri dm yap: 1 m = 10 dm, 4 dm aynı kalır.", "islem": "10 dm, 4 dm"},
+                           {"metin": "20 cm kaç dm?",
+                            "soru": G("20 cm kaç dm?", "2", "1 dm = 10 cm.", "20 ÷ 10 = 2 dm.", birim="dm",
+                                      yardim={"adimlar": ["1 dm kaç cm?", "20'yi 10'a böl."]}),
+                            "islem": "20 cm = 2 dm"},
+                           {"metin": "Üç ayrıtı çarp.",
+                            "soru": G("10 · 4 · 2 kaçtır?", "80", "Önce 10 · 4, sonra 2 ile çarp.", "10 · 4 = 40, 40 · 2 = 80.",
+                                      yardim={"adimlar": ["Önce 10 · 4.", "Sonucu 2 ile çarp."]}),
+                            "islem": "10 · 4 · 2 = 80 dm³"}],
+                       "sonuc": "Harika! Kutunun hacmi 80 dm³."},
+             "soru": S("Ayrıtları 1 m, 5 dm ve 2 dm olan bir kutunun hacmini dm³ olarak bulmak için ilk ne yapmalıyız?",
+                       ["1 · 5 · 2 işlemini yaparız.", "1 m'yi 10 dm'ye çeviririz.", "Sayıları toplarız."], 1,
+                       "Birimler aynı mı?", "Önce birimleri eşitleriz: 1 m = 10 dm. Sonra 10 · 5 · 2 = 100 dm³. (s. 146)")}
+        ],
+        "akildaKalsin": [
+            "Hacmin temel birimi metreküptür (m³).",
+            "Büyük hacimler büyük birimle, küçük hacimler küçük birimle ölçülür.",
+            "1 m³ = 1000 dm³, 1 dm³ = 1000 cm³, 1 cm³ = 1000 mm³.",
+            "Basamakta aşağı inerken × 1000, yukarı çıkarken ÷ 1000.",
+            "Küçük birime çevirince sayı büyür, büyük birime çevirince küçülür.",
+            "Ayrıtların birimleri farklıysa önce eşitle, sonra çarp."],
+        "merakKutusu": [
+            {"soru": "Uzunlukta 1 m = 10 dm iken hacimde neden 1000 katı?", "cevap": "Hacimde üç ayrıt vardır. Her ayrıt 10 katı olunca hacim 10 · 10 · 10 = 1000 katı olur. (s. 145)"},
+            {"soru": "Neden her şeyi m³ ile ölçmüyoruz?", "cevap": "Küçük şeyler için m³ çok büyük kalır; meyve suyu kutusu 0,0002 m³ gibi garip bir sayı olur. Küçük şeye küçük birim yakışır. (s. 144)"},
+            {"soru": "Sayı büyüdü mü, küçüldü mü diye nasıl kontrol ederim?", "cevap": "Küçük birime çevirdiysen sayı büyümeli (3 m³ = 3000 dm³). Büyük birime çevirdiysen sayı küçülmeli (6000 cm³ = 6 dm³)."},
+            {"soru": "Kamyonun kasasına kaç koli sığar?", "cevap": "Kitaptaki kamyonun kasası 3 m, 2 m ve 2 m. Ayrıtı 1 m olan kolilerden 3 · 2 · 2 = 12 tane sığar; kasanın hacmi 12 m³'tür. (s. 145)"}],
+        "dusunVeYaz": [{"soru": "Can “3 m³ = 30 dm³” dedi. Hatası ne? Doğrusunu yaz.",
+                        "ornekCevap": "Can uzunluktaki gibi 10 ile çarptı. Hacimde her basamak 1000 katıdır: 3 m³ = 3000 dm³.",
+                        "anahtarlar": ["1000", "3000", "10"]}],
+        "sorular": [
+            S("Bir yüzme havuzundaki suyun hacmi için en uygun birim hangisidir?", ["m³", "cm³", "mm³"], 0,
+              "Havuz büyük mü, küçük mü?", "Havuz çok büyüktür; büyük birim m³ uygundur. (s. 144)", kavram="Hangi Birim Uygun?"),
+            G("3 m³ kaç dm³?", "3000", "1 m³ = 1000 dm³.", "3 · 1000 = 3000 dm³. (s. 146)", birim="dm³", kavram="1 m³ = 1000 dm³",
+              yardim={"adimlar": ["m³'ten dm³'e: aşağı mı, yukarı mı?", "Aşağı: 1000 ile çarp. 3'ün sonuna üç 0 ekle."]}),
+            G("5 dm³ kaç cm³?", "5000", "dm³'ten cm³'e bir basamak aşağı: 1000 ile çarp.", "5 · 1000 = 5000 cm³. (s. 146)", birim="cm³", kavram="Büyükten Küçüğe: Çarp",
+              yardim={"adimlar": ["dm³ büyük, cm³ küçük birim: sayı büyüyecek.", "1000 ile çarp."]}),
+            G("7000 cm³ kaç dm³?", "7", "cm³'ten dm³'e bir basamak yukarı: 1000'e böl.", "7000 ÷ 1000 = 7 dm³. (s. 146)", birim="dm³", kavram="Küçükten Büyüğe: Böl",
+              yardim={"adimlar": ["cm³ küçük, dm³ büyük birim: sayı küçülecek.", "1000'e böl: sondan üç 0 sil."]}),
+            S("cm³'ü m³'e çevirirken ne yaparız?", ["Her basamakta 1000 ile çarparız.", "Her basamakta 1000'e böleriz.", "Her basamakta 10'a böleriz."], 1,
+              "cm³ küçük, m³ büyük birim. Merdivende yukarı mı çıkıyoruz?", "Yukarı çıkıyoruz: her basamakta 1000'e böleriz. (s. 146)", kavram="Hacim Basamakları"),
+            G("0,5 m³ kaç dm³?", "500", "1000 ile çarp: virgülü 3 basamak sağa kaydır.", "0,5 · 1000 = 500 dm³. (s. 146)", birim="dm³", kavram="Büyükten Küçüğe: Çarp",
+              yardim={"adimlar": ["m³'ten dm³'e: aşağı iniyoruz, 1000 ile çarp.", "0,5'te virgülü 1 basamak kaydırınca 5 olur. 2 basamak daha var."]}),
+            S("Hangisi doğrudur?", ["1 dm³ = 100 cm³", "1 cm³ = 10 mm³", "1 m³ = 1000 dm³"], 2,
+              "Hacimde basamaklar arası 10 mu, 1000 mi?", "Hacimde her basamak 1000 katıdır: 1 m³ = 1000 dm³. (s. 146)", kavram="1 m³ = 1000 dm³"),
+            G("Ayrıtları 2 m, 1 m ve 50 cm olan prizma biçimindeki bir çukurun hacmi kaç dm³?", "1000",
+              "Önce bütün ayrıtları dm'ye çevir.", "2 m = 20 dm, 1 m = 10 dm, 50 cm = 5 dm. 20 · 10 · 5 = 1000 dm³. (s. 146)", birim="dm³", kavram="Önce Birimleri Eşitle",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Birimler aynı mı? Hepsini dm yap: 20 dm, 10 dm, 5 dm.", "Önce 20 · 10.", "Sonucu 5 ile çarp."]}),
+            G("4500 dm³ kaç m³?", "4,5", "dm³'ten m³'e: 1000'e böl, virgülü 3 basamak sola kaydır.", "4500 ÷ 1000 = 4,5 m³. (s. 146)", birim="m³", denk=True, kavram="Küçükten Büyüğe: Böl",
+              yardim={"adimlar": ["dm³'ten m³'e: yukarı çıkıyoruz, 1000'e böl.", "4500'de virgül en sondadır. Virgülü 3 basamak sola kaydır."]}),
+            S("Her ayrıtı 1 m olan küpün hacmi hangisidir?", ["1 m²", "1 m³", "3 m"], 1,
+              "Hacim küp birimle yazılır.", "1 · 1 · 1 = 1 m³. (s. 146)", kavram="Metreküp")]
+    }
+
+
+# =================================================================
+def u2k7():
+    return {
+        "id": "u2k7", "unite": T2, "baslik": "Sıvı Ölçme Birimleri", "sayfalar": "s. 147–151",
+        "giris": "Su şişelerinde “1 L” ya da “500 mL” yazar. Bu konuda sıvı ölçme birimlerini öğreneceğiz. Litrenin hacim birimleriyle ilişkisini ve taş gibi düzgün olmayan cisimlerin hacmini ölçmeyi göreceğiz.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda 10 ile çarpıp böleceğiz ve hacim basamaklarını kullanacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Hacim basamakları", "sinif": "2. tema, 6. konu", "svg": svg6_merdiven(),
+                 "anlatim": "Hacimde aşağı inerken her basamakta 1000 ile çarparız, yukarı çıkarken 1000'e böleriz: 1 dm³ = 1000 cm³.",
+                 "akilda": "Aşağı × 1000, yukarı ÷ 1000",
+                 "sorular": [
+                     G("2 dm³ kaç cm³?", "2000", "Aşağı iniyoruz: 1000 ile çarp.", "2 · 1000 = 2000 cm³.", birim="cm³",
+                       yardim={"adimlar": ["dm³'ten cm³'e aşağı mı, yukarı mı?", "Aşağı: 1000 ile çarp."]}),
+                     G("3000 cm³ kaç dm³?", "3", "Yukarı çıkıyoruz: 1000'e böl.", "3000 ÷ 1000 = 3 dm³.", birim="dm³",
+                       yardim={"adimlar": ["cm³'ten dm³'e aşağı mı, yukarı mı?", "Yukarı: 1000'e böl, sondan üç 0 sil."]})]},
+                {"ad": "10 ile çarpma ve bölme", "sinif": "Önceki yıllar", "svg": svg7_h_10(),
+                 "anlatim": "10 ile çarparken sona bir 0 ekleriz ya da virgülü 1 basamak sağa kaydırırız: 3,5 · 10 = 35. 10'a bölerken tersini yaparız: 40 ÷ 10 = 4.",
+                 "akilda": "× 10: virgül 1 basamak sağa",
+                 "sorular": [
+                     G("3,5 · 10 kaçtır?", "35", "Virgülü 1 basamak sağa kaydır.", "3,5 · 10 = 35.", denk=True,
+                       yardim={"adimlar": ["3,5'te virgülden sonra kaç basamak var?", "Virgülü 1 basamak sağa kaydır."]}),
+                     G("40 ÷ 10 kaçtır?", "4", "Sondan bir 0 sil.", "40 ÷ 10 = 4.",
+                       yardim={"adimlar": ["10'da kaç tane 0 var?", "40'ın sonundan bir 0 sil."]})]},
+                {"ad": "Prizmanın hacmi", "sinif": "2. tema, 5. konu", "svg": svg2_formul_hacim(),
+                 "anlatim": "Dikdörtgenler prizmasının hacmi üç ayrıtın çarpımıdır: a · b · c. Ayrıtlar dm ile verilirse hacim dm³ olur.",
+                 "akilda": "Hacim = a · b · c",
+                 "sorular": [
+                     G("Ayrıtları 2 dm, 3 dm ve 1 dm olan kabın hacmi kaç dm³?", "6", "Üç ayrıtı çarp.", "2 · 3 · 1 = 6 dm³.", birim="dm³",
+                       yardim={"adimlar": ["Önce 2 · 3.", "Sonucu 1 ile çarp."]}),
+                     G("Ayrıtları 4 dm, 2 dm ve 1 dm olan kabın hacmi kaç dm³?", "8", "Üç ayrıtı çarp.", "4 · 2 · 1 = 8 dm³.", birim="dm³",
+                       yardim={"adimlar": ["Önce 4 · 2.", "Sonucu 1 ile çarp."]})]}
+            ]},
+        "kavramlar": [
+            {"ad": "Litre", "renk": "#1f9e8f", "svg": svg7_litre(),
+             "aciklama": "Sıvıların hacmini ölçmede temel birim litredir ve L ile gösterilir. (s. 148)",
+             "ek": "Su, süt, zeytinyağı, benzin gibi sıvıları litreyle ölçeriz. Sıvı ölçü birimleri aynı zamanda birer hacim ölçüsüdür. (s. 147–148)",
+             "akilda": "Sıvı: litre (L)",
+             "soru": S("Litre hangi sembolle gösterilir?", ["L", "m", "kg"], 0, "Litrenin baş harfi.", "Litre L ile gösterilir. (s. 148)")},
+            {"ad": "1 dm³ = 1 L", "renk": "#1d6fa3", "svg": svg7_dm3(),
+             "aciklama": "Kenar uzunlukları 1 dm olan küpün hacmi 1 dm³'tür ve 1 dm³ = 1 L'dir. (s. 147)",
+             "ek": "Bir kabın kaç litre su alacağını bulmak için ayrıtlarını dm'ye çevirip hacmini dm³ olarak buluruz. Kaç dm³ ise o kadar litredir. (s. 147)",
+             "akilda": "1 dm³ = 1 L",
+             "cozum": {"baslik": "Kap kaç litre alır?",
+                       "problem": "Ayrıtları 2 dm, 3 dm ve 1 dm olan bir kap kaç litre su alır?",
+                       "svg": svg_prizma_et("2 dm", "3 dm", "1 dm", A=100, B=90, C=40, h=120),
+                       "adimlar": [
+                           {"metin": "Kaplamak mı, doldurmak mı? Su kabı dolduruyor: hacim."},
+                           {"metin": "Birimler aynı: hepsi dm. Hacmi bul.", "islem": "2 · 3 · 1 = 6 dm³"},
+                           {"metin": "1 dm³ = 1 L.", "islem": "6 dm³ = 6 L"}],
+                       "sonuc": "Kap 6 litre su alır. (s. 147)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Ayrıtları 20 cm, 10 cm ve 10 cm olan bir kap kaç litre su alır?",
+                       "adimlar": [
+                           {"metin": "Birimleri dm yap: 10 cm = 1 dm.",
+                            "soru": G("20 cm kaç dm?", "2", "1 dm = 10 cm.", "20 ÷ 10 = 2 dm.", birim="dm",
+                                      yardim={"adimlar": ["1 dm kaç cm?", "20'yi 10'a böl."]}),
+                            "islem": "2 dm, 1 dm, 1 dm"},
+                           {"metin": "Hacmi bul.", "islem": "2 · 1 · 1 = 2 dm³"},
+                           {"metin": "dm³'ü litreye çevir.",
+                            "soru": G("2 dm³ kaç litredir?", "2", "1 dm³ = 1 L.", "2 dm³ = 2 L.", birim="L",
+                                      yardim={"adimlar": ["1 dm³ kaç litre?", "2 dm³ kaç litre olur?"]}),
+                            "islem": "2 dm³ = 2 L"}],
+                       "sonuc": "Harika! Kap 2 litre su alır."},
+             "soru": G("Hacmi 5 dm³ olan bir kap kaç litre su alır?", "5", "1 dm³ = 1 L.", "5 dm³ = 5 L. (s. 147)", birim="L",
+                       yardim={"adimlar": ["1 dm³ kaç litre?", "5 dm³ kaç litre olur?"]})},
+            {"ad": "Sıvı Basamakları", "renk": "#7b4fc9", "svg": svg6_merdiven(("L", "dL", "cL", "mL"), "10"),
+             "aciklama": "Litrenin alt birimleri desilitre (dL), santilitre (cL) ve mililitredir (mL). Her basamak arasında 10 katlık ilişki vardır: 1 L = 10 dL = 100 cL = 1000 mL. (s. 148)",
+             "ek": "Uzunluktaki gibi: aşağı inerken × 10, yukarı çıkarken ÷ 10. Hacim basamaklarında 1000, sıvıda 10 olduğuna dikkat et. (s. 148)",
+             "akilda": "Sıvıda her basamak × 10",
+             "cozum": {"baslik": "L'den cL'ye",
+                       "problem": "2 L kaç cL'dir?",
+                       "svg": merdiven_svg(["L", "dL", "cL", "mL"], "10"),
+                       "adimlar": [
+                           {"metin": "L'den dL'ye bir basamak aşağı.", "islem": "2 · 10 = 20 dL"},
+                           {"metin": "dL'den cL'ye bir basamak daha aşağı.", "islem": "20 · 10 = 200 cL"}],
+                       "sonuc": "2 L = 200 cL. (s. 148)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "450 cL kaç L'dir?",
+                       "adimlar": [
+                           {"metin": "cL'den dL'ye bir basamak yukarı: 10'a böl.",
+                            "soru": G("450 ÷ 10 kaçtır?", "45", "Sondan bir 0 sil.", "450 ÷ 10 = 45.",
+                                      yardim={"adimlar": ["10'a bölerken sondan bir 0 silinir.", "450'nin sonundaki 0'ı sil."]}),
+                            "islem": "450 ÷ 10 = 45 dL"},
+                           {"metin": "dL'den L'ye bir basamak daha yukarı: virgülü 1 basamak sola kaydır.",
+                            "soru": G("45 ÷ 10 kaçtır?", "4,5", "Virgülü 1 basamak sola kaydır.", "45 ÷ 10 = 4,5.", denk=True,
+                                      yardim={"adimlar": ["45'te virgül en sondadır: 45,0.", "Virgülü 1 basamak sola kaydır."]}),
+                            "islem": "45 ÷ 10 = 4,5 L"}],
+                       "sonuc": "Harika! 450 cL = 4,5 L."},
+             "soru": G("3 L kaç mL?", "3000", "1 L = 1000 mL.", "3 · 1000 = 3000 mL. (s. 148)", birim="mL",
+                       yardim={"adimlar": ["L'den mL'ye üç basamak aşağı: 10 · 10 · 10 = 1000.", "3'ü 1000 ile çarp."]})},
+            {"ad": "1 mL = 1 cm³", "renk": "#e8590c", "svg": svg7_ml(),
+             "aciklama": "1 L = 1000 mL ve 1 dm³ = 1000 cm³ olduğu için 1 mL = 1 cm³'tür. (s. 147–148)",
+             "ek": "Bu bilgi kitaptaki iki Bilgi Kutusundan çıkar: 1 dm³ = 1 L, 1 L = 1000 mL ve 1 dm³ = 1000 cm³. Dereceli kapta okunan mL, cismin cm³ olarak hacmidir.",
+             "akilda": "1 mL = 1 cm³",
+             "soru": S("Hacmi 250 cm³ olan bir bardak kaç mL su alır?", ["25", "250", "2500"], 1,
+                       "1 mL = 1 cm³.", "1 cm³ = 1 mL olduğu için 250 cm³ = 250 mL. (s. 147–148)")},
+            {"ad": "Su Seviyesi Farkı", "renk": "#2f8f73", "svg": svg7_kap(),
+             "aciklama": "Düzgün olmayan bir cismin (taş, silgi) hacmini dereceli kapla ölçeriz: cismi suya atarız, su seviyesindeki fark cismin hacmidir. (s. 148–149)",
+             "ek": "Cisim suyun içinde yer kaplar, su bu yüzden yükselir. Fark mL ise cismin hacmi aynı sayıda cm³'tür. (s. 149)",
+             "akilda": "Sonra − önce = cismin hacmi",
+             "cozum": {"baslik": "Taşın hacmi",
+                       "problem": "Dereceli kapta 300 mL su var. Bir taş atınca su 450 mL'ye çıktı. Taşın hacmi kaç cm³?",
+                       "svg": kap_svg(300, 450, 500),
+                       "adimlar": [
+                           {"metin": "Önce ne kadar su vardı?", "islem": "300 mL"},
+                           {"metin": "Taşı atınca kaç mL oldu?", "islem": "450 mL"},
+                           {"metin": "Farkı bul: büyükten küçüğü çıkar.", "islem": "450 − 300 = 150 mL"},
+                           {"metin": "1 mL = 1 cm³.", "islem": "150 mL = 150 cm³"}],
+                       "sonuc": "Taşın hacmi 150 cm³. (s. 149)"},
+             "soru": G("Dereceli kapta 500 mL su vardı. Bir kaşık atınca su 700 mL'ye çıktı. Kaşığın hacmi kaç cm³?", "200",
+                       "Su seviyesindeki farkı bul.", "700 − 500 = 200 mL = 200 cm³. (s. 149)", birim="cm³", svg=kap_svg(500, 700),
+                       yardim={"adimlar": ["Önce kaç mL, sonra kaç mL?", "Büyükten küçüğü çıkar."]})},
+            {"ad": "Aynı Birime Çevir, Sırala", "renk": "#c92a2a", "svg": svg7_sirala(),
+             "aciklama": "Farklı birimlerle yazılmış sıvı miktarlarını karşılaştırmak için önce hepsini aynı birime çeviririz. (s. 151)",
+             "ek": "En kolayı hepsini mL'ye çevirmektir; sayılar tam sayı olur. Kitapta otomobil depolarının kapasiteleri böyle sıralanır. (s. 151)",
+             "akilda": "Önce aynı birim, sonra sırala",
+             "cozum": {"baslik": "Şişeleri sıralayalım",
+                       "problem": "2 L, 1500 mL ve 180 cL'lik üç şişeyi küçükten büyüğe sıralayalım.",
+                       "adimlar": [
+                           {"metin": "2 L'yi mL yap: 1 L = 1000 mL.", "islem": "2 L = 2000 mL"},
+                           {"metin": "180 cL'yi mL yap: 1 cL = 10 mL.", "islem": "180 · 10 = 1800 mL"},
+                           {"metin": "Şimdi karşılaştır.", "islem": "1500 < 1800 < 2000"}],
+                       "sonuc": "1500 mL < 180 cL < 2 L. (s. 151)"},
+             "soru": S("Hangisi en çok sıvıdır?", ["900 mL", "1 L", "80 cL"], 1,
+                       "Hepsini mL'ye çevir.", "1 L = 1000 mL, 80 cL = 800 mL. En büyüğü 1000 mL: 1 L. (s. 151)")}
+        ],
+        "biliyorMusun": ["Kral Hiero (Hiyero) tacının saf altın olup olmadığını merak etti. Arşimet tacı ve aynı ağırlıktaki saf altını suya bıraktı. Taç daha çok su taşırdı; demek ki içine başka maden karışmıştı. (s. 148)"],
+        "akildaKalsin": [
+            "Sıvıların temel ölçü birimi litredir (L).",
+            "1 dm³ = 1 L.",
+            "1 L = 10 dL = 100 cL = 1000 mL; sıvıda her basamak × 10.",
+            "1 mL = 1 cm³.",
+            "Düzgün olmayan cismin hacmi = su seviyesindeki fark.",
+            "Karşılaştırmadan önce hepsini aynı birime (mL) çevir."],
+        "merakKutusu": [
+            {"soru": "Litre de bir hacim birimi mi?", "cevap": "Evet. Sıvı ölçü birimleri aynı zamanda birer hacim ölçüsüdür: 1 L, kenarı 1 dm olan küpün hacmine eşittir. (s. 147)"},
+            {"soru": "Hacimde 1000, sıvıda 10 katı; neden farklı?", "cevap": "Hacim birimleri küp birimlerdir (üç ayrıt), bu yüzden 1000 katı. Litrenin alt birimleri ise uzunluk birimleri gibi 10'ar katı ayrılır. (s. 148)"},
+            {"soru": "Taşı suya atınca su neden yükselir?", "cevap": "Taş suyun içinde yer kaplar; su ona yer açmak için yükselir. Yükselen su kadar hacim taşındır. (s. 149)"},
+            {"soru": "Büyük bir taşı küçük kapla ölçebilir miyim?", "cevap": "Taş kabın ağzından girmeli ve tamamen suyun içinde kalmalı; su da taşmamalı. Büyük cisim için büyük dereceli kap gerekir. (s. 148)"}],
+        "dusunVeYaz": [{"soru": "Ece “1 L = 100 mL” dedi. Haklı mı? Açıkla.",
+                        "ornekCevap": "Haklı değil. 1 L = 10 dL = 100 cL = 1000 mL. Ece mL ile cL'yi karıştırdı.",
+                        "anahtarlar": ["1000", "cL", "değil"]}],
+        "sorular": [
+            S("Hangisinin miktarı litreyle ölçülür?", ["Bir şişe zeytinyağı", "Bir masanın uzunluğu", "Bir çantanın ağırlığı"], 0,
+              "Litre sıvılar için kullanılır.", "Zeytinyağı bir sıvıdır; litreyle ölçülür. (s. 148)", kavram="Litre"),
+            G("Hacmi 4 dm³ olan bir kap kaç litre su alır?", "4", "1 dm³ = 1 L.", "4 dm³ = 4 L. (s. 147)", birim="L", kavram="1 dm³ = 1 L",
+              yardim={"adimlar": ["1 dm³ kaç litre?", "4 dm³ kaç litre olur?"]}),
+            G("2 L kaç mL?", "2000", "1 L = 1000 mL.", "2 · 1000 = 2000 mL. (s. 148)", birim="mL", kavram="Sıvı Basamakları",
+              yardim={"adimlar": ["1 L kaç mL?", "2'yi 1000 ile çarp."]}),
+            G("Dereceli kapta 400 mL su vardı. Bir taş atınca su 550 mL'ye çıktı. Taşın hacmi kaç cm³?", "150",
+              "Su seviyesindeki farkı bul.", "550 − 400 = 150 mL = 150 cm³. (s. 149)", birim="cm³", svg=kap_svg(400, 550), kavram="Su Seviyesi Farkı",
+              yardim={"adimlar": ["Önce kaç mL vardı? Taşı atınca kaç mL oldu?", "Büyükten küçüğü çıkar.", "1 mL = 1 cm³."]}),
+            S("1 L kaç cL'dir?", ["100", "10", "1000"], 0, "L → dL → cL: iki basamak aşağı.", "1 L = 10 dL = 100 cL. (s. 148)", kavram="Sıvı Basamakları"),
+            S("Hacmi 500 cm³ olan bir kap kaç mL su alır?", ["50", "500", "5000"], 1, "1 mL = 1 cm³.", "500 cm³ = 500 mL. (s. 147–148)", kavram="1 mL = 1 cm³"),
+            S("1,5 L, 1200 mL ve 140 cL'lik üç şişeden en az su alan hangisidir?", ["140 cL", "1,5 L", "1200 mL"], 2,
+              "Hepsini mL'ye çevir.", "1,5 L = 1500 mL, 140 cL = 1400 mL. En küçüğü 1200 mL. (s. 151)", kavram="Aynı Birime Çevir, Sırala",
+              yardim={"adimlar": ["1,5 L kaç mL? (× 1000)", "140 cL kaç mL? (× 10)", "Üç sayıyı karşılaştır."]}),
+            G("Ayrıtları 20 cm, 10 cm ve 10 cm olan kutu biçimindeki bir kap kaç litre su alır?", "2",
+              "Ayrıtları dm'ye çevir, hacmi bul.", "2 dm, 1 dm, 1 dm. 2 · 1 · 1 = 2 dm³ = 2 L. (s. 147)", birim="L", kavram="1 dm³ = 1 L",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Birimleri dm yap: 20 cm = 2 dm, 10 cm = 1 dm.", "Hacmi bul: 2 · 1 · 1.", "1 dm³ = 1 L."]}),
+            G("35 dL kaç L?", "3,5", "dL'den L'ye bir basamak yukarı: 10'a böl.", "35 ÷ 10 = 3,5 L. (s. 148)", birim="L", denk=True, kavram="Sıvı Basamakları",
+              yardim={"adimlar": ["dL'den L'ye yukarı mı, aşağı mı?", "Yukarı: 10'a böl. Virgülü 1 basamak sola kaydır."]}),
+            S("Dereceli kaba bir taş atınca su seviyesi yükseldi. Taşın hacmi neye eşittir?",
+              ["Taşın ağırlığına", "Kaptaki suyun hepsine", "Su seviyesindeki farka"], 2,
+              "Taş suyun içinde yer kaplar.", "Su, taşın hacmi kadar yükselir: hacim = seviye farkı. (s. 149)", kavram="Su Seviyesi Farkı")]
+    }
+
+
+# =================================================================
+def u2t3():
+    return {
+        "id": "u2t3", "tur": "tarama", "unite": T2,
+        "baslik": "Ara Durak 3: Ölçme Birimleri", "sayfalar": "Konu 6–7 · s. 144–151",
+        "giris": "Ölçme birimlerini bitirdin, tebrikler! Kısa bir mola verip hacim ve sıvı birimlerini birlikte gözden geçireceğiz. Önce özetleri oku ve kartları çevir, sonra tarama testini çöz. Not yok.",
+        "buyukResim": "Önce hacim birimlerini öğrendik: m³, dm³, cm³, mm³; basamaklar arası 1000. Sonra sıvı birimlerini öğrendik: L, dL, cL, mL; basamaklar arası 10. İki aileyi birleştiren köprü: 1 dm³ = 1 L ve 1 cm³ = 1 mL.",
+        "kapsar": ["u2k6", "u2k7"],
+        "hatirla": [
+            {"konu": "u2k6", "maddeler": [
+                "Hacmin temel birimi m³; büyük hacme büyük birim.",
+                "m³ → dm³ → cm³ → mm³: aşağı × 1000, yukarı ÷ 1000.",
+                "Ayrıtların birimi farklıysa önce eşitle, sonra çarp."]},
+            {"konu": "u2k7", "maddeler": [
+                "1 dm³ = 1 L ve 1 cm³ = 1 mL.",
+                "L → dL → cL → mL: aşağı × 10, yukarı ÷ 10.",
+                "Cismin hacmi = su seviyesindeki fark."]}],
+        "eskiSoru": 4,
+        "oyunKavram": 8,
+        "gruplar": [{"soru": "Hangi birim ailesi?", "kutular": [
+            {"etiket": "Hacim birimleri (× 1000)", "uyeler": ["Metreküp", "1 m³ = 1000 dm³", "Hacim Basamakları"]},
+            {"etiket": "Sıvı birimleri (× 10)", "uyeler": ["Litre", "Sıvı Basamakları"]},
+            {"etiket": "İki aileyi bağlar", "uyeler": ["1 dm³ = 1 L", "1 mL = 1 cm³"]}]}],
+        "sorular": [
+            G("Bir depoda 2 m³ su var. Bu su kaç litredir?", "2000",
+              "Önce m³'ü dm³'e çevir, sonra 1 dm³ = 1 L.", "2 m³ = 2000 dm³ = 2000 L.", birim="L",
+              kaynak=[K("u2k6", "1 m³ = 1000 dm³"), K("u2k7", "1 dm³ = 1 L")],
+              yardim={"adimlar": ["m³'ten dm³'e: 1000 ile çarp.", "dm³ ile litre arasındaki ilişki ne?"]}),
+            G("Ayrıtları 2 dm, 10 cm ve 5 cm olan kutu biçimindeki bir kap kaç mL su alır?", "1000",
+              "Birimleri cm'ye çevir; 1 cm³ = 1 mL.", "2 dm = 20 cm. 20 · 10 · 5 = 1000 cm³ = 1000 mL.", birim="mL",
+              kaynak=[K("u2k6", "Önce Birimleri Eşitle"), K("u2k7", "1 mL = 1 cm³")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Birimler aynı mı? 2 dm'yi cm yap: 20 cm.", "Hacmi bul: 20 · 10 · 5.", "cm³ ile mL arasındaki ilişki ne?"]}),
+            G("Dereceli kapta 250 mL su vardı. Bir silgi atınca su 400 mL'ye çıktı. Silginin hacmi kaç cm³?", "150",
+              "Su seviyesindeki farkı bul; 1 mL = 1 cm³.", "400 − 250 = 150 mL = 150 cm³.", birim="cm³", svg=kap_svg(250, 400, 500),
+              kaynak=[K("u2k7", "Su Seviyesi Farkı"), K("u2k7", "1 mL = 1 cm³")],
+              yardim={"adimlar": ["Önce kaç mL, sonra kaç mL?", "Büyükten küçüğü çıkar.", "mL ile cm³ arasındaki ilişki ne?"]}),
+            S("Hangisi 1 L'ye eşit değildir?", ["1 dm³", "100 cL", "100 cm³"], 2,
+              "1 L = 1 dm³ = 1000 cm³.", "1 L = 1 dm³ = 100 cL = 1000 cm³. 100 cm³ ise 100 mL'dir.",
+              kaynak=[K("u2k7", "Sıvı Basamakları"), K("u2k6", "Hacim Basamakları")]),
+            S("1,2 dm³, 1500 mL ve 130 cL'lik üç şişeden en çok su alan hangisidir?", ["1500 mL", "1,2 dm³", "130 cL"], 0,
+              "Hepsini mL'ye çevir.", "1,2 dm³ = 1,2 L = 1200 mL, 130 cL = 1300 mL. En büyüğü 1500 mL.",
+              kaynak=[K("u2k7", "Aynı Birime Çevir, Sırala"), K("u2k7", "1 dm³ = 1 L")],
+              yardim={"adimlar": ["1,2 dm³ kaç litre? Kaç mL?", "130 cL kaç mL? (× 10)", "Üç sayıyı karşılaştır."]}),
+            G("Hacmi 60 dm³ olan bir akvaryum 2 L'lik şişelerle doldurulacak. Kaç şişe su gerekir?", "30",
+              "Önce akvaryumun kaç litre aldığını bul.", "60 dm³ = 60 L. 60 ÷ 2 = 30 şişe.",
+              kaynak=[K("u2k7", "1 dm³ = 1 L"), K("u2k6", "Önce Birimleri Eşitle")],
+              yardim={"adimlar": ["Birimler aynı mı? dm³'ü litreye çevir.", "60 L'de kaç tane 2 L var?"]}),
+            S("Elif “Hacim birimlerinde basamaklar arası 10, sıvı birimlerinde 1000 katıdır.” dedi. Elif haklı mı?",
+              ["Evet, haklı.", "Hayır; hacimde 1000, sıvıda 10 katıdır.", "Hayır; ikisinde de 100 katıdır."], 1,
+              "1 m³ kaç dm³? 1 L kaç dL?", "1 m³ = 1000 dm³ (× 1000), 1 L = 10 dL (× 10). Elif ikisini karıştırdı.",
+              kaynak=[K("u2k6", "Hacim Basamakları"), K("u2k7", "Sıvı Basamakları")])]
+    }
+
+
+# =================================================================
+def u2k8():
+    return {
+        "id": "u2k8", "unite": T2, "baslik": "Yüzey Alanı ve Hacim Problemleri", "sayfalar": "s. 152–156",
+        "giris": "Bu konuda öğrendiklerimizi gerçek hayatta kullanacağız: kutuları koliye yerleştireceğiz, bir kutuyu kumaşla kaplayacağız, akvaryuma su dolduracağız. Her problemde aynı dört soruyu soracağız.",
+        "hazirlik": {
+            "baslik": "Hazır mısın?",
+            "giris": "Bu konuda yüzey alanını, hacmi ve birim çevirmeyi birlikte kullanacağız. Önce bunları hatırlıyor musun bakalım. Not yok.",
+            "maddeler": [
+                {"ad": "Yüzey alanı", "sinif": "2. tema, 3. konu", "svg": svg2_hediye(),
+                 "anlatim": "Yüzey alanı bütün yüzlerin alanlarının toplamıdır. Küpün 6 eş kare yüzü vardır: yüzey alanı 6 · a · a.",
+                 "akilda": "Kaplamak = yüzey alanı",
+                 "sorular": [
+                     G("Ayrıtı 2 cm olan küpün yüzey alanı kaç cm²?", "24", "Bir yüz 2 · 2. Küpün 6 yüzü var.", "2 · 2 = 4 cm². 6 · 4 = 24 cm².", birim="cm²",
+                       yardim={"adimlar": ["Bir yüzün alanı: 2 · 2.", "6 yüz var: bir yüzü 6 ile çarp."]}),
+                     G("Ayrıtı 1 cm olan küpün yüzey alanı kaç cm²?", "6", "Bir yüz 1 · 1. Küpün 6 yüzü var.", "1 · 1 = 1 cm². 6 · 1 = 6 cm².", birim="cm²",
+                       yardim={"adimlar": ["Bir yüzün alanı: 1 · 1.", "6 yüz var."]})]},
+                {"ad": "Hacim", "sinif": "2. tema, 5. konu", "svg": svg2_formul_hacim(),
+                 "anlatim": "Dikdörtgenler prizmasının hacmi üç ayrıtın çarpımıdır: a · b · c.",
+                 "akilda": "Doldurmak = hacim",
+                 "sorular": [
+                     G("Ayrıtları 2 cm, 3 cm ve 4 cm olan prizmanın hacmi kaç cm³?", "24", "Üç ayrıtı çarp.", "2 · 3 · 4 = 24 cm³.", birim="cm³",
+                       yardim={"adimlar": ["Önce 2 · 3.", "Sonucu 4 ile çarp."]}),
+                     G("Ayrıtları 5 cm, 2 cm ve 1 cm olan prizmanın hacmi kaç cm³?", "10", "Üç ayrıtı çarp.", "5 · 2 · 1 = 10 cm³.", birim="cm³",
+                       yardim={"adimlar": ["Önce 5 · 2.", "Sonucu 1 ile çarp."]})]},
+                {"ad": "Hacim ve sıvı birimleri", "sinif": "2. tema, 6–7. konu", "svg": svg7_dm3(),
+                 "anlatim": "1 m³ = 1000 dm³, 1 dm³ = 1 L, 1 L = 1000 mL, 1 cm³ = 1 mL.",
+                 "akilda": "1 dm³ = 1 L",
+                 "sorular": [
+                     G("3 dm³ kaç litredir?", "3", "1 dm³ = 1 L.", "3 dm³ = 3 L.", birim="L",
+                       yardim={"adimlar": ["1 dm³ kaç litre?", "3 dm³ kaç litre olur?"]}),
+                     S("2000 mL kaç litredir?", ["2", "20", "200"], 0, "1 L = 1000 mL.", "2000 ÷ 1000 = 2 L.")]}
+            ]},
+        "kavramlar": [
+            {"ad": "Problem İskeleti", "renk": "#1f9e8f", "svg": svg8_iskelet(),
+             "aciklama": "Her problemde aynı dört soruyu sırayla sorarız: 1) Ne veriliyor, ne isteniyor? 2) Kaplamak mı, doldurmak mı? 3) Birimler aynı mı? 4) Hesapla ve birimi yaz.",
+             "ek": "Bu sıralama kitap dışı bir strateji; kitaptaki dört problem de bu adımlarla çözülebilir. Kaplamak = yüzey alanı (cm², dm²), doldurmak = hacim (cm³, dm³, L). (s. 152–155)",
+             "akilda": "Ne? Kapla mı? Birim? Hesapla",
+             "soru": S("“Bir koliye kaç kutu sığar?” sorusunda neyi kullanırız?", ["Yüzey alanını", "Hacmi", "Çevreyi"], 1,
+                       "Kutular koliyi kaplıyor mu, dolduruyor mu?", "Kutular koliyi doldurur: hacim kullanırız. (s. 152)")},
+            {"ad": "Kaç Kutu Sığar?", "renk": "#1d6fa3", "svg": svg8_sigar(),
+             "aciklama": "Büyük kutuya kaç küçük kutu sığdığını bulmak için büyük hacmi küçük hacme böleriz. (s. 152)",
+             "ek": "Kitapta bir konteyner 400 eş kutuyla tam doluyor. Kutular boşluksuz diziliyorsa: kutu sayısı = büyük hacim ÷ küçük hacim. (s. 152)",
+             "akilda": "Büyük hacim ÷ küçük hacim",
+             "cozum": {"baslik": "Dolaba kutular",
+                       "problem": "Bir dolabın içi 6 dm, 4 dm ve 2 dm. Ayrıtı 2 dm olan küp kutular dolaba boşluk kalmadan dizilecek. Kaç kutu sığar?",
+                       "svg": svg_prizma_et("6 dm", "4 dm", "2 dm", A=150, B=90, C=50, h=130),
+                       "adimlar": [
+                           {"metin": "Ne veriliyor? Dolap ve kutunun ayrıtları. Ne isteniyor? Kutu sayısı."},
+                           {"metin": "Doldurmak: hacim. Dolabın hacmi.", "islem": "6 · 4 · 2 = 48 dm³"},
+                           {"metin": "Bir kutunun hacmi.", "islem": "2 · 2 · 2 = 8 dm³"},
+                           {"metin": "Büyük hacmi küçük hacme böl.", "islem": "48 ÷ 8 = 6"}],
+                       "sonuc": "Dolaba 6 kutu sığar. (s. 152)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Bir kolinin ayrıtları 4 dm, 3 dm ve 2 dm. Ayrıtları 2 dm, 1 dm ve 1 dm olan kutular koliye boşluk kalmadan dizilecek. Kaç kutu sığar?",
+                       "adimlar": [
+                           {"metin": "Kolinin hacmi.",
+                            "soru": G("4 · 3 · 2 kaçtır?", "24", "Önce 4 · 3, sonra 2 ile çarp.", "4 · 3 = 12, 12 · 2 = 24.",
+                                      yardim={"adimlar": ["Önce 4 · 3.", "Sonucu 2 ile çarp."]}),
+                            "islem": "4 · 3 · 2 = 24 dm³"},
+                           {"metin": "Bir kutunun hacmi.", "islem": "2 · 1 · 1 = 2 dm³"},
+                           {"metin": "Büyük hacmi küçük hacme böl.",
+                            "soru": G("24 ÷ 2 kaçtır?", "12", "24'ün yarısı kaç?", "24 ÷ 2 = 12.",
+                                      yardim={"adimlar": ["24'ü 2 eş parçaya ayır.", "Bir parça kaç eder?"]}),
+                            "islem": "24 ÷ 2 = 12"}],
+                       "sonuc": "Harika! Koliye 12 kutu sığar."},
+             "soru": G("Bir kolinin hacmi 24 dm³, bir kutunun hacmi 4 dm³. Kutular koliyi boşluk kalmadan dolduruyor. Koliye kaç kutu sığar?", "6",
+                       "Büyük hacmi küçük hacme böl.", "24 ÷ 4 = 6 kutu. (s. 152)",
+                       yardim={"adimlar": ["Büyük hacim hangisi, küçük hacim hangisi?", "24'ü 4'e böl."]})},
+            {"ad": "Kaplama Maliyeti", "renk": "#b7791f", "svg": svg8_kapla(),
+             "aciklama": "Bir kutuyu kaplamanın maliyeti = yüzey alanı × 1 birim karenin fiyatı. (s. 153)",
+             "ek": "Kitapta Ahmet Bey takı kutularını kumaşla kaplıyor. Ölçüler dm ise fiyat da “1 dm²” için verilmeli; birimler aynı olunca doğrudan çarparız. Kapaksız ya da altı kaplanmayan kutuda o yüzü saymayız. (s. 153)",
+             "akilda": "Yüzey alanı × fiyat",
+             "cozum": {"baslik": "Küp kutuyu kaplayalım",
+                       "problem": "Ayrıtı 2 dm olan küp şeklindeki bir kutunun bütün yüzleri kumaşla kaplanacak. Kumaşın 1 dm²'si 3 TL. Kumaş kaç TL tutar?",
+                       "svg": svg_prizma_et("2 dm", "2 dm", "2 dm", A=80, B=80, C=80, h=150),
+                       "adimlar": [
+                           {"metin": "Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı."},
+                           {"metin": "Bir yüzün alanı.", "islem": "2 · 2 = 4 dm²"},
+                           {"metin": "Küpün 6 yüzü var.", "islem": "6 · 4 = 24 dm²"},
+                           {"metin": "Birimler aynı (dm²). Fiyatla çarp.", "islem": "24 · 3 = 72 TL"}],
+                       "sonuc": "Kumaş 72 TL tutar. (s. 153)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Bir kare prizmanın tabanı 2 dm × 2 dm, yüksekliği 3 dm. Bütün yüzleri kaplanacak. Kumaşın 1 dm²'si 2 TL. Kaç TL tutar?",
+                       "adimlar": [
+                           {"metin": "İki kare yüz (alt ve üst).", "islem": "2 · (2 · 2) = 8 dm²"},
+                           {"metin": "Dört yan yüz: her biri 2 · 3.",
+                            "soru": G("4 · (2 · 3) kaçtır?", "24", "Önce parantez: 2 · 3. Sonra 4 ile çarp.", "2 · 3 = 6, 4 · 6 = 24.",
+                                      yardim={"adimlar": ["Önce parantez: 2 · 3.", "Sonucu 4 ile çarp."]}),
+                            "islem": "4 · 6 = 24 dm²"},
+                           {"metin": "Yüzey alanı.", "islem": "8 + 24 = 32 dm²"},
+                           {"metin": "Fiyatla çarp.",
+                            "soru": G("32 · 2 kaçtır?", "64", "32'yi iki kere topla.", "32 + 32 = 64.",
+                                      yardim={"adimlar": ["32 · 2, iki tane 32 demek.", "32 ile 32'yi topla."]}),
+                            "islem": "32 · 2 = 64 TL"}],
+                       "sonuc": "Harika! Kumaş 64 TL tutar."},
+             "soru": G("Bir kutunun yüzey alanı 20 dm². Kumaşın 1 dm²'si 4 TL. Kutuyu kaplamak kaç TL tutar?", "80",
+                       "Yüzey alanını fiyatla çarp.", "20 · 4 = 80 TL. (s. 153)", birim="TL",
+                       yardim={"adimlar": ["Birimler aynı mı? Yüzey alanı dm², fiyat 1 dm² için.", "20'yi 4 ile çarp."]})},
+            {"ad": "Suyun Yüksekliği", "renk": "#7b4fc9", "svg": svg8_su(),
+             "aciklama": "Akvaryumdaki suyun hacmi = taban alanı × suyun yüksekliği. Yüksekliği bulmak için hacmi taban alanına böleriz. (s. 154)",
+             "ek": "Su litre verilirse önce dm³'e çeviririz (1 L = 1 dm³). Taban da dm ile verilmeli ki birimler aynı olsun. (s. 154)",
+             "akilda": "Yükseklik = hacim ÷ taban alanı",
+             "cozum": {"baslik": "Akvaryumda su",
+                       "problem": "Tabanı 4 dm × 2 dm olan bir akvaryuma 16 L su kondu. Su kaç dm yüksekliğe çıkar?",
+                       "svg": akvaryum_svg("4 dm", "2 dm", "5 dm", 0.4, "? dm"),
+                       "adimlar": [
+                           {"metin": "Ne isteniyor? Suyun yüksekliği."},
+                           {"metin": "Birimler aynı mı? Litreyi dm³ yap.", "islem": "16 L = 16 dm³"},
+                           {"metin": "Taban alanı.", "islem": "4 · 2 = 8 dm²"},
+                           {"metin": "Hacmi taban alanına böl.", "islem": "16 ÷ 8 = 2 dm"}],
+                       "sonuc": "Su 2 dm yüksekliğe çıkar. (s. 154)"},
+             "soru": G("Taban alanı 6 dm² olan bir akvaryuma 12 L su kondu. Su kaç dm yüksekliğe çıkar?", "2",
+                       "12 L = 12 dm³. Hacmi taban alanına böl.", "12 ÷ 6 = 2 dm. (s. 154)", birim="dm",
+                       yardim={"adimlar": ["Litreyi dm³ yap: 12 L = 12 dm³.", "Hacmi taban alanına böl: 12 ÷ 6."]})},
+            {"ad": "Eklenen Cismin Hacmi", "renk": "#e8590c", "svg": svg8_cisim(),
+             "aciklama": "Akvaryuma kum ya da taş eklenince su yükselir. Eklenen cismin hacmi = taban alanı × suyun yükselmesi. (s. 154)",
+             "ek": "Kitapta Samet akvaryumuna kum ekliyor; su 0,5 cm yükseliyor. Yükselen su, prizma biçiminde ince bir dilimdir; hacmini taban alanıyla buluruz. (s. 154)",
+             "akilda": "Taban alanı × yükselme",
+             "cozum": {"baslik": "Samet'in akvaryum kumu",
+                       "problem": "Tabanı 40 cm × 25 cm olan akvaryuma kum eklenince su 0,5 cm yükseldi. Kumun hacmi kaç cm³?",
+                       "svg": akvaryum_svg("40 cm", "25 cm", "30 cm", 0.55, ""),
+                       "adimlar": [
+                           {"metin": "Ne isteniyor? Kumun hacmi."},
+                           {"metin": "Taban alanı.", "islem": "40 · 25 = 1000 cm²"},
+                           {"metin": "Taban alanını yükselmeyle çarp.", "islem": "1000 · 0,5 = 500 cm³"}],
+                       "sonuc": "Kumun hacmi 500 cm³. (s. 154)"},
+             "sende": {"baslik": "Sıra sende",
+                       "problem": "Tabanı 20 cm × 10 cm olan akvaryuma taşlar konunca su 2 cm yükseldi. Taşların hacmi kaç cm³?",
+                       "adimlar": [
+                           {"metin": "Taban alanı.",
+                            "soru": G("20 · 10 kaçtır?", "200", "10 ile çarpınca sona bir 0 eklenir.", "20 · 10 = 200.",
+                                      yardim={"adimlar": ["10 ile çarpıyoruz.", "20'nin sonuna bir 0 ekle."]}),
+                            "islem": "20 · 10 = 200 cm²"},
+                           {"metin": "Yükselmeyle çarp.",
+                            "soru": G("200 · 2 kaçtır?", "400", "200'ü iki kere topla.", "200 + 200 = 400.",
+                                      yardim={"adimlar": ["200 · 2, iki tane 200 demek.", "200 ile 200'ü topla."]}),
+                            "islem": "200 · 2 = 400 cm³"}],
+                       "sonuc": "Harika! Taşların hacmi 400 cm³."},
+             "soru": S("Akvaryuma bir cisim eklenince su yükseldi. Cismin hacmi nasıl bulunur?",
+                       ["Taban alanı × yükselme", "Taban alanı + yükselme", "Yükselme × yükselme"], 0,
+                       "Yükselen su ince bir prizma gibi.", "Yükselen suyun hacmi = taban alanı × yükselme; bu da cismin hacmidir. (s. 154)")},
+            {"ad": "Litre mi, Metreküp mü?", "renk": "#2f8f73", "svg": svg8_havuz(),
+             "aciklama": "Çok büyük su miktarlarını (havuz, şehir) m³ ile yazarız. 1 m³ = 1000 dm³ = 1000 L. (s. 155)",
+             "ek": "Litreden m³'e: 1000'e böl. m³'ten litreye: 1000 ile çarp. Kitapta diş fırçalarken boşa akan su, olimpik havuz büyüklüğüyle karşılaştırılıyor. (s. 155)",
+             "akilda": "1 m³ = 1000 L",
+             "cozum": {"baslik": "Boşa akan su",
+                       "problem": "Diş fırçalarken musluk 2 dakika açık kalıyor ve dakikada 5 L su akıyor. 100 kişi birer kez diş fırçalarsa kaç m³ su boşa akar?",
+                       "adimlar": [
+                           {"metin": "Bir kişi bir kez.", "islem": "2 · 5 = 10 L"},
+                           {"metin": "100 kişi.", "islem": "100 · 10 = 1000 L"},
+                           {"metin": "Litreyi m³ yap: 1000 L = 1 m³.", "islem": "1000 ÷ 1000 = 1 m³"}],
+                       "sonuc": "1 m³ su boşa akar. Musluğu kapatmak çok su kazandırır! (s. 155)"},
+             "soru": S("Bir havuz 50 m³ su alıyor. Bu kaç litredir?", ["500", "5000", "50 000"], 2,
+                       "1 m³ = 1000 L.", "50 · 1000 = 50 000 L. (s. 155)")}
+        ],
+        "biliyorMusun": [
+            "Kitaptaki bilgiye göre diş fırçalarken musluk açık kalınca dakikada yaklaşık 5 litre su boşa akar. Bunu yapan herkesin harcadığı su, olimpik bir yüzme havuzunu bile doldurabilir. (s. 155)",
+            "Anıtkabir'de mozolenin bulunduğu bölümde 44 sütun vardır. Kare prizma biçimindeki her sütunun tabanı 1,5 m, yüksekliği 14 m'dir. (s. 156)"],
+        "akildaKalsin": [
+            "Dört soru: Ne veriliyor? Kaplamak mı, doldurmak mı? Birimler aynı mı? Hesapla + birim.",
+            "Kaç kutu sığar? Büyük hacim ÷ küçük hacim.",
+            "Kaplama maliyeti = yüzey alanı × 1 birim karenin fiyatı.",
+            "Suyun yüksekliği = hacim ÷ taban alanı.",
+            "Eklenen cismin hacmi = taban alanı × yükselme.",
+            "Büyük su miktarlarında 1 m³ = 1000 L."],
+        "merakKutusu": [
+            {"soru": "Kutular koliye tam sığmazsa ne olur?", "cevap": "Hacimleri bölmek yetmez; her kenara kaç kutu dizildiğine de bakmak gerekir. Bu konudaki sorularda kutular hep boşluksuz diziliyor. (s. 152)"},
+            {"soru": "Neden önce birimleri eşitliyoruz?", "cevap": "dm ile cm çarpılınca anlamsız bir sonuç çıkar. Hepsini aynı birime çevirince sonuç doğru birimle çıkar."},
+            {"soru": "Akvaryuma kum ekleyince neden daha az su sığar?", "cevap": "Kum akvaryumda yer kaplar. Akvaryumun hacminden su ve kumun hacmini çıkarınca kalan boşluk kadar su eklenebilir. (s. 154)"},
+            {"soru": "Olimpik havuz ne kadar büyük?", "cevap": "Kitaptaki ölçüler 50 m, 25 m ve 2 m: 50 · 25 · 2 = 2500 m³, yani 2 500 000 litre su alır. (s. 155)"}],
+        "dusunVeYaz": [{"soru": "Bir kutuyu kumaşla kaplamak ile içine kum doldurmak için hangi ölçüleri bulursun? Neden farklı?",
+                        "ornekCevap": "Kaplamak için yüzey alanını, doldurmak için hacmi bulurum. Kumaş kutunun dışını kaplar, kum içini doldurur.",
+                        "anahtarlar": ["yüzey", "hacim", "kapla", "doldur"]}],
+        "sorular": [
+            S("Bir problemi çözmeye başlarken ilk ne yaparız?", ["Hemen sayıları çarparız.", "Ne verildiğini ve ne istendiğini buluruz.", "Bütün sayıları toplarız."], 1,
+              "Dört sorunun ilki.", "Önce ne verildiğini ve ne istendiğini buluruz; sonra kaplamak mı doldurmak mı diye sorarız.", kavram="Problem İskeleti"),
+            G("Bir rafın içi 8 dm, 2 dm ve 2 dm. Ayrıtı 2 dm olan küp kutular rafa boşluk kalmadan dizilecek. Kaç kutu sığar?", "4",
+              "Rafın hacmini bir kutunun hacmine böl.", "Raf 8 · 2 · 2 = 32 dm³, kutu 2 · 2 · 2 = 8 dm³. 32 ÷ 8 = 4. (s. 152)", kavram="Kaç Kutu Sığar?",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Kutular rafı dolduruyor: hacim.", "Rafın hacmi: 8 · 2 · 2.", "Kutunun hacmi: 2 · 2 · 2.", "Büyük hacmi küçük hacme böl."]}),
+            G("Ayrıtı 3 dm olan küp şeklindeki bir kutunun bütün yüzleri kaplanacak. Kumaşın 1 dm²'si 2 TL. Kumaş kaç TL tutar?", "108",
+              "Önce yüzey alanını bul, sonra fiyatla çarp.", "Bir yüz 3 · 3 = 9 dm². 6 · 9 = 54 dm². 54 · 2 = 108 TL. (s. 153)", birim="TL", kavram="Kaplama Maliyeti",
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Kaplamak: yüzey alanı.", "Bir yüz: 3 · 3. Küpün 6 yüzü var.", "Birimler aynı (dm²). Yüzey alanını 2 TL ile çarp."]}),
+            G("Tabanı 5 dm × 2 dm olan bir akvaryuma 30 L su kondu. Su kaç dm yüksekliğe çıkar?", "3",
+              "30 L = 30 dm³. Hacmi taban alanına böl.", "Taban alanı 5 · 2 = 10 dm². 30 ÷ 10 = 3 dm. (s. 154)", birim="dm", kavram="Suyun Yüksekliği",
+              svg=akvaryum_svg("5 dm", "2 dm", "4 dm", 0.75, "? dm"),
+              yardim={"adimlar": ["Ne isteniyor? Suyun yüksekliği.", "Birimler aynı mı? 30 L = 30 dm³.", "Taban alanı: 5 · 2.", "Hacmi taban alanına böl."]}),
+            G("Tabanı 20 cm × 15 cm olan bir akvaryuma taşlar konunca su 2 cm yükseldi. Taşların hacmi kaç cm³?", "600",
+              "Taban alanını yükselmeyle çarp.", "20 · 15 = 300 cm². 300 · 2 = 600 cm³. (s. 154)", birim="cm³", kavram="Eklenen Cismin Hacmi",
+              yardim={"adimlar": ["Ne isteniyor? Taşların hacmi.", "Taban alanı: 20 · 15.", "Taban alanını yükselmeyle (2 cm) çarp."]}),
+            G("Bir su deposu 3 m³ su alıyor. Bu kaç litredir?", "3000", "1 m³ = 1000 L.", "3 · 1000 = 3000 L. (s. 155)", birim="L", kavram="Litre mi, Metreküp mü?",
+              yardim={"adimlar": ["1 m³ kaç litre?", "3'ü 1000 ile çarp."]}),
+            S("Bir kolinin ayrıtları 4 dm, 4 dm ve 2 dm. Ayrıtları 4 dm, 2 dm ve 1 dm olan kutular koliye boşluk kalmadan dizilecek. Kaç kutu sığar?", ["4", "8", "16"], 0,
+              "İki hacmi bul, büyüğü küçüğe böl.", "Koli 4 · 4 · 2 = 32 dm³, kutu 4 · 2 · 1 = 8 dm³. 32 ÷ 8 = 4. (s. 152)", kavram="Kaç Kutu Sığar?",
+              yardim={"adimlar": ["Kolinin hacmi: 4 · 4 · 2.", "Kutunun hacmi: 4 · 2 · 1.", "Büyük hacmi küçük hacme böl."]}),
+            S("Tabanları aynı iki akvaryumdan ikincisine birincinin 2 katı su kondu. İkinci akvaryumdaki suyun yüksekliği için ne söylenebilir?",
+              ["Aynı kalır.", "Yarısı olur.", "2 katı olur."], 2,
+              "Yükseklik = hacim ÷ taban alanı. Taban aynı.", "Taban alanı aynı, hacim 2 katı: yükseklik de 2 katı olur. (s. 154)", kavram="Suyun Yüksekliği"),
+            G("Diş fırçalarken musluk 2 dakika açık kalıyor ve dakikada 5 L su akıyor. 4 kişilik bir aile günde 2 kez diş fırçalarsa kaç litre su boşa akar?", "80",
+              "Bir kişinin bir kez fırçalamasıyla başla.", "Bir fırçalama 2 · 5 = 10 L. 4 kişi · 2 kez = 8 fırçalama. 8 · 10 = 80 L. (s. 155)", birim="L", kavram="Problem İskeleti",
+              yardim={"adimlar": ["Ne veriliyor? 2 dakika, dakikada 5 L, 4 kişi, günde 2 kez.", "Bir fırçalamada: 2 · 5.", "Toplam kaç fırçalama var? 4 · 2.", "Fırçalama sayısını bir fırçalamadaki suyla çarp."]}),
+            S("Tabanı 30 cm × 20 cm olan bir akvaryuma kum eklenince su 1 cm yükseldi. Kumun hacmi kaç cm³'tür?", ["600", "60", "50"], 0,
+              "Taban alanını yükselmeyle çarp.", "30 · 20 = 600 cm². 600 · 1 = 600 cm³. (s. 154)", kavram="Eklenen Cismin Hacmi")]
+    }
+
+
+# =================================================================
+def u2t4():
+    return {
+        "id": "u2t4", "tur": "tarama", "unite": T2,
+        "baslik": "Tema Sonu Taraması", "sayfalar": "Konu 1–8 · s. 118–158",
+        "giris": "İkinci temanın sonuna geldin, tebrikler! Şimdi 8 konuyu birlikte gözden geçireceğiz. Önce kısa özetleri oku ve kartları çevir. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakman gerektiğini bulacağız.",
+        "buyukResim": "Bu temada kutularla bir yolculuk yaptık. Önce küp yapılarına altı yönden baktık. Sonra kutuyu açıp yüzlerini gördük ve yüzey alanını bulduk: kaplamak. Ardından kutunun içini birim küplerle doldurup hacmi bulduk: doldurmak. Hacmi m³, dm³, cm³ ve litreyle ölçmeyi öğrendik. En sonunda hepsini gerçek hayat problemlerinde birlikte kullandık.",
+        "kapsar": ["u2k1", "u2k2", "u2k3", "u2k4", "u2k5", "u2k6", "u2k7", "u2k8"],
+        "hatirla": [
+            {"konu": "u2k1", "maddeler": [
+                "Bir yapıya altı yönden bakılır; her küp yüzü kare görünür.",
+                "Öndeki küp arkasındakini saklar."]},
+            {"konu": "u2k2", "maddeler": [
+                "Dikdörtgenler prizması: 6 yüz, 12 ayrıt, 8 köşe; karşılıklı yüzler eş.",
+                "Açınım kapanınca eş yüzler karşılıklı gelir."]},
+            {"konu": "u2k3", "maddeler": [
+                "Yüzey alanı = 2 · (a · b + a · c + b · c); küpte 6 · a².",
+                "Kaplamak = yüzey alanı (cm²)."]},
+            {"konu": "u2k4", "maddeler": [
+                "Hacim, cismin kapladığı yerdir; birim küplerle ölçülür.",
+                "Doldurmak = hacim (cm³)."]},
+            {"konu": "u2k5", "maddeler": [
+                "Hacim = a · b · c; küpte a³.",
+                "Bir ayrıt 2 katı → hacim 2 katı."]},
+            {"konu": "u2k6", "maddeler": [
+                "m³ → dm³ → cm³ → mm³: aşağı × 1000, yukarı ÷ 1000.",
+                "Ayrıtların birimi farklıysa önce eşitle."]},
+            {"konu": "u2k7", "maddeler": [
+                "1 dm³ = 1 L, 1 cm³ = 1 mL.",
+                "L → dL → cL → mL: her basamak × 10."]},
+            {"konu": "u2k8", "maddeler": [
+                "Ne veriliyor? Kaplamak mı, doldurmak mı? Birimler aynı mı? Hesapla.",
+                "Kaç kutu: büyük hacim ÷ küçük hacim; su yüksekliği: hacim ÷ taban alanı."]}],
+        "eskiSoru": 6,
+        "oyunKavram": 10,
+        "gruplar": [{"soru": "Kaplamak mı, doldurmak mı, çevirmek mi?", "kutular": [
+            {"etiket": "Kaplamak (yüzey alanı)", "uyeler": ["Yüzey Alanı Formülü", "Kaplama Maliyeti"]},
+            {"etiket": "Doldurmak (hacim)", "uyeler": ["Hacim Formülü", "Kaç Kutu Sığar?", "Suyun Yüksekliği"]},
+            {"etiket": "Birim çevirmek", "uyeler": ["Hacim Basamakları", "Sıvı Basamakları"]}]}],
+        "sorular": [
+            S("Ayrıtları 3 dm, 2 dm ve 2 dm olan kapaklı bir kutu için hangisi doğrudur?",
+              ["İçine 12 L su sığar.", "İçine 32 L su sığar.", "Dışını kaplamak için 12 dm² kumaş yeter."], 0,
+              "Doldurmak = hacim (3 · 2 · 2); kaplamak = yüzey alanı.",
+              "Hacim 3 · 2 · 2 = 12 dm³ = 12 L. Yüzey alanı 2 · (6 + 6 + 4) = 32 dm²; kaplamak için 32 dm² gerekir.",
+              kaynak=[K("u2k3", "Yüzey Alanı Formülü"), K("u2k5", "Hacim Formülü"), K("u2k7", "1 dm³ = 1 L")],
+              yardim={"adimlar": ["Doldurmak = hacim: 3 · 2 · 2. dm³'ü litreye çevir.", "Kaplamak = yüzey alanı: 2 · (3 · 2 + 3 · 2 + 2 · 2).", "Her şıkta “sığar” mı, “kaplamak” mı yazıyor, kontrol et."]}),
+            G("Görseldeki yapı, ayrıtı 1 cm olan eş küplerden yapılmış kutu biçiminde bir yapıdır. Hacmi kaç cm³?", "12",
+              "Arkadaki saklı küpleri de say: bir katman × katman sayısı.", "Bir katman 3 · 2 = 6 küp, 2 katman: 12 küp. Her küp 1 cm³: 12 cm³.",
+              birim="cm³", svg=svg_dolu(kutu(3, 2, 2), s=34),
+              kaynak=[K("u2k1", "Saklanan Küpler"), K("u2k4", "Birim Küp Cinsinden Hacim")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Doldurmak: hacim.", "Alt katman: önde 3 küp, arkasında saklı bir sıra daha.", "Kaç katman var?", "Bir katmanı katman sayısıyla çarp."]}),
+            G("Açınımı 6 eş kareden oluşan bir kutunun her karesinin kenarı 2 dm. Bu kutu kaç litre su alır?", "8",
+              "6 eş kare: kutu bir küp. Hacmini bul, litreye çevir.", "Küpün ayrıtı 2 dm: 2 · 2 · 2 = 8 dm³ = 8 L.", birim="L",
+              kaynak=[K("u2k2", "Yüzey Açınımı"), K("u2k5", "Kare Prizma ve Küp"), K("u2k7", "1 dm³ = 1 L")],
+              yardim={"adimlar": ["6 eş kareden oluşan açınım hangi cismin açınımıdır?", "Küpün hacmi: 2 · 2 · 2.", "dm³'ü litreye çevir."]}),
+            G("Tabanı 4 dm × 3 dm olan bir akvaryumda 24 L su var. Su kaç dm yüksekliktedir?", "2",
+              "24 L = 24 dm³. Hacmi taban alanına böl.", "Taban alanı 4 · 3 = 12 dm². 24 ÷ 12 = 2 dm.", birim="dm",
+              kaynak=[K("u2k8", "Suyun Yüksekliği"), K("u2k7", "1 dm³ = 1 L")],
+              yardim={"adimlar": ["Ne isteniyor? Suyun yüksekliği.", "Birimler aynı mı? 24 L = 24 dm³.", "Taban alanı: 4 · 3.", "Hacmi taban alanına böl."]}),
+            S("1 m³ su kaç litredir?", ["100", "1000", "10 000"], 1,
+              "1 m³ = 1000 dm³ ve 1 dm³ = 1 L.", "1 m³ = 1000 dm³ = 1000 L.",
+              kaynak=[K("u2k6", "1 m³ = 1000 dm³"), K("u2k8", "Litre mi, Metreküp mü?")]),
+            G("Bir kolinin ayrıtları 50 cm, 30 cm ve 80 cm. Kolinin hacmi kaç dm³?", "120",
+              "Önce ayrıtları dm'ye çevir.", "5 dm, 3 dm, 8 dm. 5 · 3 · 8 = 120 dm³. (s. 156)", birim="dm³",
+              kaynak=[K("u2k6", "Önce Birimleri Eşitle"), K("u2k5", "Hacim Formülü")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Hacim.", "Birimleri dm yap: 50 cm = 5 dm, 30 cm = 3 dm, 80 cm = 8 dm.", "Önce 5 · 3.", "Sonucu 8 ile çarp."]}),
+            G("Ayrıtları 3 m, 4 m ve 5 m olan prizmanın hacmi 60 m³'tür. Bu prizmanın yüzey alanı kaç m²?", "94",
+              "Üç farklı yüzün alanını topla, 2 ile çarp.", "Yüzler 3 · 4 = 12, 3 · 5 = 15, 4 · 5 = 20. 2 · (12 + 15 + 20) = 94 m². (s. 157)", birim="m²",
+              kaynak=[K("u2k3", "Yüzey Alanı Formülü"), K("u2k5", "Hacim Formülü")],
+              yardim={"adimlar": ["Kaplamak mı, doldurmak mı? Yüzey alanı soruluyor.", "Üç farklı yüz: 3 · 4, 3 · 5, 4 · 5.", "Üçünü topla.", "Toplamı 2 ile çarp."]}),
+            S("Hangisinde hacim bulunur?", ["Duvarı boyamak", "Kutuyu kâğıtla kaplamak", "Havuzu suyla doldurmak"], 2,
+              "Kaplamak mı, doldurmak mı?", "Boyamak ve kaplamak yüzey alanıdır. Su havuzu doldurur: hacim.",
+              kaynak=[K("u2k4", "Kaplamak mı, Doldurmak mı?"), K("u2k8", "Problem İskeleti")])]
+    }
+
+
+TARAMALAR = [u1t1, u1t2, u1t3, u1t4, u1t5, u2t1, u2t2, u2t3, u2t4]
+KONULAR = [u1k1, u1k2, u1k3, u1k4, u1k5, u1k6, u1k7, u1k8, u1k9, u1k10, u1k11, u1k12, u2k1, u2k2, u2k3, u2k4, u2k5, u2k6, u2k7, u2k8] + TARAMALAR
 
 # =================================================================
 # İpucu verisi. Motor her soruda "İpucu" düğmesi gösterir; açılınca önce bağlı kavramı hatırlatır,
@@ -5324,7 +6212,7 @@ import re
 def bosluk(x):
     """Sayı ile birimi ayrı satıra düşmesin: '−8 m' → '−8\u00a0m' (bölünmez boşluk)."""
     if isinstance(x, str):
-        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|cm|dm|mm|L|TL|°C|kat|birim|br|MB|metre|derece|g|gram|dakika)([²³]?)(?![\w²³])", "\\1\u00a0\\2\\3", x)
+        return x if x.lstrip().startswith("<svg") else re.sub(r"(\d) (m|km|cm|dm|mm|mL|dL|cL|L|TL|°C|kat|birim|br|MB|metre|derece|g|gram|dakika)([²³]?)(?![\w²³])", "\\1\u00a0\\2\\3", x)
     if isinstance(x, list):
         return [bosluk(v) for v in x]
     if isinstance(x, dict):

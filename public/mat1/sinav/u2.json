@@ -463,6 +463,285 @@
    "dogru": false,
    "duzeltme": "Hacim br³ ile yazılır; br² alan birimidir.",
    "aciklama": "Üç ayrıt çarpılır: br · br · br = br³ (s. 138–143)."
+  },
+  {
+   "id": "m2-31",
+   "konu": "u2k6",
+   "kavram": "Metreküp",
+   "tur": "secim",
+   "soru": "Hacim ölçülerinin temel birimi hangisidir?",
+   "secenekler": [
+    "Metre",
+    "Metrekare",
+    "Metreküp",
+    "Litre"
+   ],
+   "dogru": 2,
+   "aciklama": "Hacmin temel birimi metreküptür (m³) (s. 144–146)."
+  },
+  {
+   "id": "m2-32",
+   "konu": "u2k6",
+   "kavram": "1 m³ = 1000 dm³",
+   "tur": "kisa",
+   "soru": "4 m³ kaç dm³'tür?",
+   "yanit": "4000",
+   "sayi": true,
+   "aciklama": "1 m³ = 1000 dm³: 4 · 1000 = 4000 dm³ (s. 144–146)."
+  },
+  {
+   "id": "m2-33",
+   "konu": "u2k6",
+   "kavram": "Hacim Basamakları",
+   "tur": "dy",
+   "ifade": "Hacim birimlerinde ardışık basamaklar arasında 10 katlık ilişki vardır.",
+   "dogru": false,
+   "duzeltme": "Hacim birimlerinde ardışık basamaklar arasında 1000 katlık ilişki vardır.",
+   "aciklama": "m³, dm³, cm³, mm³: her basamak 1000 katı (s. 144–146)."
+  },
+  {
+   "id": "m2-34",
+   "konu": "u2k6",
+   "kavram": "Hacim Basamakları",
+   "tur": "bosluk",
+   "soru": "Cümlelerdeki boşlukları kelime havuzundan uygun olanla doldur.",
+   "cumleler": [
+    {
+     "c": "1 m³ = 1000 ___",
+     "cevap": "dm³"
+    },
+    {
+     "c": "1 dm³ = 1000 ___",
+     "cevap": "cm³"
+    },
+    {
+     "c": "1 cm³ = 1000 ___",
+     "cevap": "mm³"
+    }
+   ],
+   "havuz": [
+    "m²",
+    "km"
+   ],
+   "aciklama": "Her basamak aşağı inerken 1000 katı (s. 144–146)."
+  },
+  {
+   "id": "m2-35",
+   "konu": "u2k6",
+   "kavram": "Küçükten Büyüğe: Böl",
+   "tur": "eslestir",
+   "soru": "Eşit olan hacimleri eşleştir.",
+   "ciftler": [
+    {
+     "sol": "2 m³",
+     "sag": "2000 dm³"
+    },
+    {
+     "sol": "3000 cm³",
+     "sag": "3 dm³"
+    },
+    {
+     "sol": "5 cm³",
+     "sag": "5000 mm³"
+    }
+   ],
+   "aciklama": "Aşağı inerken × 1000, yukarı çıkarken ÷ 1000."
+  },
+  {
+   "id": "m2-36",
+   "konu": "u2k6",
+   "kavram": "Önce Birimleri Eşitle",
+   "tur": "secim",
+   "soru": "Hacim birimleriyle ilgili aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "1 m³ = 1000 dm³'tür.",
+    "5000 cm³ = 50 dm³'tür.",
+    "Ayrıtların birimleri farklıysa önce aynı birime çevrilir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "5000 cm³ = 5 dm³'tür; II yanlış (s. 144–146)."
+  },
+  {
+   "id": "m2-37",
+   "konu": "u2k7",
+   "kavram": "Sıvı Basamakları",
+   "tur": "kisa",
+   "soru": "3 L kaç mL'dir?",
+   "yanit": "3000",
+   "sayi": true,
+   "aciklama": "1 L = 1000 mL: 3 · 1000 = 3000 mL (s. 147–151)."
+  },
+  {
+   "id": "m2-38",
+   "konu": "u2k7",
+   "kavram": "1 dm³ = 1 L",
+   "tur": "secim",
+   "soru": "Hacmi 1 dm³ olan bir kap kaç litre su alır?",
+   "secenekler": [
+    "1",
+    "10",
+    "100",
+    "1000"
+   ],
+   "dogru": 0,
+   "aciklama": "1 dm³ = 1 L (s. 147–151)."
+  },
+  {
+   "id": "m2-39",
+   "konu": "u2k7",
+   "kavram": "Sıvı Basamakları",
+   "tur": "dytablo",
+   "soru": "Her ifade için Doğru ya da Yanlış seç.",
+   "ifadeler": [
+    {
+     "s": "1 L = 10 dL",
+     "d": true
+    },
+    {
+     "s": "1 L = 100 cL",
+     "d": true
+    },
+    {
+     "s": "1 L = 100 mL",
+     "d": false
+    }
+   ],
+   "aciklama": "1 L = 1000 mL; sıvıda her basamak 10 katı (s. 147–151)."
+  },
+  {
+   "id": "m2-40",
+   "konu": "u2k7",
+   "kavram": "1 mL = 1 cm³",
+   "tur": "eslestir",
+   "soru": "Eşit olanları eşleştir.",
+   "ciftler": [
+    {
+     "sol": "1 dm³",
+     "sag": "1 L"
+    },
+    {
+     "sol": "1 cm³",
+     "sag": "1 mL"
+    },
+    {
+     "sol": "1 dL",
+     "sag": "10 cL"
+    }
+   ],
+   "aciklama": "1 dm³ = 1 L, 1 cm³ = 1 mL, 1 dL = 10 cL."
+  },
+  {
+   "id": "m2-41",
+   "konu": "u2k7",
+   "kavram": "Su Seviyesi Farkı",
+   "tur": "secim",
+   "soru": "Dereceli kapta 300 mL su vardı. Bir bilye atınca su 380 mL'ye çıktı. Bilyenin hacmi kaç cm³'tür?",
+   "secenekler": [
+    "380",
+    "80",
+    "300",
+    "680"
+   ],
+   "dogru": 1,
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='61.1' y='67.6' width='56' height='62.4' fill='#6fb3ff' fill-opacity='0.45'/><path d='M61.1 26.0 V130.0 H117.1 V26.0' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><line x1='61.1' y1='130.0' x2='71.1' y2='130.0' stroke='#f5f6fa' stroke-width='1.5'/><line x1='61.1' y1='109.2' x2='71.1' y2='109.2' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='113.2' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>100</text><line x1='61.1' y1='88.4' x2='71.1' y2='88.4' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='92.4' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>200</text><line x1='61.1' y1='67.6' x2='71.1' y2='67.6' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='71.6' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>300</text><line x1='61.1' y1='46.8' x2='71.1' y2='46.8' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='50.8' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>400</text><line x1='61.1' y1='26.0' x2='71.1' y2='26.0' stroke='#f5f6fa' stroke-width='1.5'/><text x='57.1' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>500</text><line x1='59.1' y1='67.6' x2='119.1' y2='67.6' stroke='#f2c14e' stroke-width='3'/><text x='123.1' y='71.6' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>300 mL</text><rect x='203.0' y='51.0' width='56' height='79.0' fill='#6fb3ff' fill-opacity='0.45'/><path d='M215.0 128.0 q4 -18 18 -16 q14 2 12 16 z' fill='#9aa3bf' stroke='#1b2340' stroke-width='1.5'/><path d='M203.0 26.0 V130.0 H259.0 V26.0' fill='none' stroke='#f5f6fa' stroke-width='2.5'/><line x1='203.0' y1='130.0' x2='213.0' y2='130.0' stroke='#f5f6fa' stroke-width='1.5'/><line x1='203.0' y1='109.2' x2='213.0' y2='109.2' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='113.2' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>100</text><line x1='203.0' y1='88.4' x2='213.0' y2='88.4' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='92.4' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>200</text><line x1='203.0' y1='67.6' x2='213.0' y2='67.6' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='71.6' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>300</text><line x1='203.0' y1='46.8' x2='213.0' y2='46.8' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='50.8' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>400</text><line x1='203.0' y1='26.0' x2='213.0' y2='26.0' stroke='#f5f6fa' stroke-width='1.5'/><text x='199.0' y='30.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#9aa3bf'>500</text><line x1='201.0' y1='51.0' x2='261.0' y2='51.0' stroke='#f2c14e' stroke-width='3'/><text x='265.0' y='55.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>380 mL</text><text x='89.1' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Önce</text><text x='231.0' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Cismi atınca</text></svg>",
+   "aciklama": "380 − 300 = 80 mL = 80 cm³ (s. 147–151)."
+  },
+  {
+   "id": "m2-42",
+   "konu": "u2k7",
+   "kavram": "Aynı Birime Çevir, Sırala",
+   "tur": "secim",
+   "soru": "Hangisi en az sıvıdır?",
+   "secenekler": [
+    "2 L",
+    "1800 mL",
+    "190 cL",
+    "21 dL"
+   ],
+   "dogru": 1,
+   "aciklama": "Hepsi mL: 2000, 1800, 1900, 2100. En azı 1800 mL (s. 147–151)."
+  },
+  {
+   "id": "m2-43",
+   "konu": "u2k8",
+   "kavram": "Kaç Kutu Sığar?",
+   "tur": "kisa",
+   "soru": "Ayrıtları 4 dm, 4 dm ve 2 dm olan koliye ayrıtı 2 dm olan küp kutular boşluksuz dizilecek. Kaç kutu sığar?",
+   "yanit": "4",
+   "sayi": true,
+   "aciklama": "Koli 32 dm³, kutu 8 dm³: 32 ÷ 8 = 4 (s. 152–156)."
+  },
+  {
+   "id": "m2-44",
+   "konu": "u2k8",
+   "kavram": "Kaplama Maliyeti",
+   "tur": "kisa",
+   "soru": "Ayrıtı 2 dm olan küp kutunun bütün yüzleri kaplanacak. Kumaşın 1 dm²'si 5 TL. Kaç TL tutar?",
+   "yanit": "120",
+   "sayi": true,
+   "aciklama": "Yüzey alanı 6 · 4 = 24 dm². 24 · 5 = 120 TL (s. 152–156)."
+  },
+  {
+   "id": "m2-45",
+   "konu": "u2k8",
+   "kavram": "Suyun Yüksekliği",
+   "tur": "kisa",
+   "soru": "Tabanı 5 dm × 4 dm olan akvaryuma 40 L su kondu. Su kaç dm yüksekliğe çıkar?",
+   "yanit": "2",
+   "sayi": true,
+   "aciklama": "40 L = 40 dm³. Taban 20 dm². 40 ÷ 20 = 2 dm (s. 152–156)."
+  },
+  {
+   "id": "m2-46",
+   "konu": "u2k8",
+   "kavram": "Eklenen Cismin Hacmi",
+   "tur": "secim",
+   "soru": "Tabanı 40 cm × 25 cm olan akvaryuma kum eklenince su 0,5 cm yükseldi. Kumun hacmi kaç cm³'tür?",
+   "secenekler": [
+    "500",
+    "1000",
+    "50",
+    "65,5"
+   ],
+   "dogru": 0,
+   "aciklama": "Taban 1000 cm². 1000 · 0,5 = 500 cm³ (s. 152–156)."
+  },
+  {
+   "id": "m2-47",
+   "konu": "u2k8",
+   "kavram": "Litre mi, Metreküp mü?",
+   "tur": "dy",
+   "ifade": "1 m³ su 1000 litredir.",
+   "dogru": true,
+   "aciklama": "1 m³ = 1000 dm³ = 1000 L (s. 152–156)."
+  },
+  {
+   "id": "m2-48",
+   "konu": "u2k8",
+   "kavram": "Problem İskeleti",
+   "tur": "secim",
+   "soru": "Problem çözerken aşağıdaki ifadeler verilmiştir.",
+   "onculler": [
+    "Kutuyu kaplamak için yüzey alanı bulunur.",
+    "Kaç kutu sığar sorusunda hacimler bölünür.",
+    "Birimler farklıysa hesaplamadan önce eşitlenir."
+   ],
+   "kok": "Bu ifadelerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Üçü de doğru: kaplamak alan, kaç kutu hacim bölme, önce birim eşitleme."
   }
  ]
 }
