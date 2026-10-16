@@ -77,4 +77,80 @@ a("u2k3", "ever / never", "bosluk", havuz=["been", "has"], cumleler=[
   {"c": "I have ___ met a street artist.", "cevap": "never"},
   {"c": "Bordalo II has ___ rubbish and spray paint.", "cevap": "used"}],
   aciklama="Soruda {{ever}}, olumluda 'hiçbir zaman' {{never}}; {{has}} + V3 (WB s. 18, 90).")
+
+# --- Konu 4: Music and theatre 1 (tiyatro)
+K4 = "(WB s. 22)"
+a("u2k4", "lines", "secim", soru="{{the words that an actor speaks}} tanımı hangi kelimenindir?",
+  secenekler=["lyrics", "lines", "scene", "audience"], dogru=1,
+  aciklama=f"Oyuncunun sözleri {{{{lines}}}}: replikler {K4}.")
+a("u2k4", "part", "eslestir", soru="Kelimeleri Türkçeleriyle eşleştir.", ciftler=[
+  {"sol": "part", "sag": "rol"},
+  {"sol": "scene", "sag": "sahne"},
+  {"sol": "audition", "sag": "seçme"},
+  {"sol": "rehearsal", "sag": "prova"}],
+  aciklama=f"Tiyatro kelimeleri {K4}.")
+a("u2k4", "rehearsal", "bosluk", havuz=["audience", "studio"], cumleler=[
+  {"c": "I need to learn my ___ for an audition.", "cevap": "lines"},
+  {"c": "We only had one ___ before the show.", "cevap": "rehearsal"},
+  {"c": "I'm playing the ___ of the sister.", "cevap": "part"}],
+  aciklama="Ezberlenen sözler, prova ve rol ipuçlarına bak (SB s. 26).")
+a("u2k4", "rehearsal", "dy", ifade="{{Dancers usually have rehearsals after a performance.}}", dogru=False,
+  duzeltme="Rehearsals are before a performance.",
+  aciklama=f"Prova gösteriye hazırlanmak içindir; önce yapılır {K4}.")
+a("u2k4", "audition", "kisa", soru="Bir rolü almak için yapılan kısa gösteri nedir? İngilizce yaz.", yanit="audition",
+  aciklama=f"Seçme: {{{{audition}}}} {K4}.")
+a("u2k4", "scene", "secim", soru="Kelimeler ve anlamları:", onculler=["part: rol", "scene: sahne", "lines: şarkı sözleri"],
+  kok="Yukarıdakilerden hangileri doğru eşleştirilmiştir?", secenekler=ONC, dogru=1,
+  aciklama=f"{{{{lines}}}} replikler; şarkı sözleri {{{{lyrics}}}} {K4}.")
+
+# --- Konu 5: Music and theatre 2 (müzik)
+a("u2k5", "orchestra", "secim", soru="{{a big group of musicians who play different instruments together}} tanımı hangi kelimenindir?",
+  secenekler=["audience", "studio", "orchestra", "show"], dogru=2,
+  aciklama=f"Birlikte çalan müzisyenler {{{{orchestra}}}} {K4}.")
+a("u2k5", "audience", "eslestir", soru="Kelimeleri Türkçeleriyle eşleştir.", ciftler=[
+  {"sol": "audience", "sag": "seyirci"},
+  {"sol": "orchestra", "sag": "orkestra"},
+  {"sol": "lyrics", "sag": "şarkı sözleri"},
+  {"sol": "studio", "sag": "stüdyo"}],
+  aciklama=f"Müzik kelimeleri {K4}.")
+a("u2k5", "audience", "dy", ifade="{{The audience plays music for performances.}}", dogru=False,
+  duzeltme="The orchestra plays music; the audience watches and listens.",
+  aciklama=f"{{{{orchestra}}}} çalar, {{{{audience}}}} dinler {K4}.")
+a("u2k5", "lyrics", "bosluk", havuz=["scene", "part"], cumleler=[
+  {"c": "The ___ stood up and clapped.", "cevap": "audience"},
+  {"c": "She spent three months in the ___ working on her album.", "cevap": "studio"},
+  {"c": "I'm learning the ___ to my favourite song.", "cevap": "lyrics"}],
+  aciklama="Alkış, albüm ve şarkı ipuçlarına bak (SB s. 26).")
+a("u2k5", "lyrics", "kisa", soru="Bir şarkının sözlerine ne denir? İngilizce yaz.", yanit="lyrics",
+  aciklama=f"Şarkı sözleri: {{{{lyrics}}}} {K4}.")
+a("u2k5", "show", "secim", soru="{{What's your favourite type of ___: dance, music or theatre?}} Boşluğa hangisi gelir?",
+  secenekler=["show", "studio", "lyrics", "audience"], dogru=0,
+  aciklama="Dans, müzik, tiyatro birer gösteri türü: {{show}} (WB s. 19).")
+
+# --- Konu 6: already, just, still, yet
+JUST, ALR, STILL, YETN, YETQ, NOTY = "just", "already", "still + haven't / hasn't", "haven't + V3 + yet", "Have you … yet?", "Not yet."
+a("u2k6", ALR, "secim", soru="{{She has ___ bought a ticket.}} (Çoktan aldı.) Boşluğa hangisi gelir?",
+  secenekler=["yet", "still", "already", "ever"], dogru=2,
+  aciklama=f"Çoktan: {{{{already}}}}, {{{{has}}}} ile V3 arasına {K3}.")
+a("u2k6", STILL, "dytablo", soru="Cümleler doğru mu, yanlış mı?", ifadeler=[
+  {"s": "{{I've just heard the good news.}}", "d": True},
+  {"s": "{{We haven't still chosen a film.}}", "d": False},
+  {"s": "{{Have you bought the tickets yet?}}", "d": True},
+  {"s": "{{John hasn't arrived already.}}", "d": False}],
+  aciklama=f"{{{{still}}}} öznenin arkasına; olumsuz sonda {{{{yet}}}} {K3}.")
+a("u2k6", YETN, "bosluk", havuz=["ever", "never"], cumleler=[
+  {"c": "My uncle ___ hasn't seen the new play.", "cevap": "still"},
+  {"c": "John hasn't arrived ___.", "cevap": "yet"},
+  {"c": "I've ___ heard the good news.", "cevap": "just"}],
+  aciklama=f"{{{{still}}}} öznenin arkasına, {{{{yet}}}} sona, {{{{just}}}} have ile V3 arasına {K3}.")
+a("u2k6", YETQ, "secim", soru="Kelimelerin cümledeki yeri:",
+  onculler=["{{just}} ve {{already}}, have/has ile V3 arasına gelir.", "{{still}} cümlenin sonuna gelir.", "{{yet}} soru cümlesinde sona gelir."],
+  kok="Yukarıdakilerden hangileri doğrudur?", secenekler=["Yalnız I", "I ve II", "I ve III", "I, II ve III"], dogru=2,
+  aciklama=f"{{{{still}}}} sona değil, öznenin arkasına gelir {K3}.")
+a("u2k6", NOTY, "kisa", soru="{{Have you finished your homework?}} Henüz bitirmedin. Kısa cevabı İngilizce yaz.", yanit="not yet",
+  kabul=["Not yet.", "not yet."],
+  aciklama=f"Henüz değil: {{{{Not yet.}}}} {K3}.")
+a("u2k6", JUST, "dy", ifade="{{Dylan just has left for school.}} cümlesi doğrudur.", dogru=False,
+  duzeltme="Dylan has just left for school.",
+  aciklama="{{just}}, {{has}} ile V3 arasına gelir (WB s. 20).")
 H.yaz()

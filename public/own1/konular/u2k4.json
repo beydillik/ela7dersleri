@@ -1,0 +1,484 @@
+{
+ "id": "u2k4",
+ "unite": "Unit 2: What is art?",
+ "baslik": "Music and theatre 1 (audition, rehearsal…)",
+ "sayfalar": "SB s. 26, 129 · WB s. 19, 22",
+ "giris": "Bu konuda tiyatro sahnesinin kelimelerini öğreneceğiz: rol, sahne, replik, seçme ve prova. Bir oyunda rol almak isteyen biri önce ne yapar, sonra ne yapar, onu da göreceğiz.",
+ "kavramlar": [
+  {
+   "ad": "part",
+   "renk": "#9b7bff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='48' cy='46' r='14' fill='#ffd166'/><path d='M34 32 l4 -16 l7 9 l3 -11 l3 11 l7 -9 l4 16z' fill='#ff7a33'/><path d='M24 102 q0 -40 24 -40 q24 0 24 40z' fill='#9b7bff'/><rect x='78' y='38' width='28' height='40' rx='3' fill='#c9cfe0'/><path d='M83 48 h18 M83 57 h18 M83 66 h12' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Bir filmde, oyunda ya da dansta oynanan kişidir: rol. Kitaptaki tanım: {{one of the people in a film, play or dance}}.",
+   "ek": "Kalıp: {{play the part of ...}} (... rolünü oynamak).",
+   "akilda": "rol",
+   "ornek": "I'm playing the part of the sister, but I'm only in the opening scene of the play.",
+   "ornekTr": "Kız kardeş rolünü oynuyorum ama oyunun yalnızca açılış sahnesindeyim. (SB s. 26)",
+   "formul": [
+    [
+     {
+      "t": "play",
+      "r": "fiil",
+      "alt": "oynamak"
+     },
+     {
+      "t": "the part of",
+      "r": "kelime",
+      "alt": "… rolünü"
+     },
+     {
+      "t": "the sister",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Bir filmde ya da oyunda oynanan kişi (rol) hangisi?",
+    "secenekler": [
+     "part",
+     "line",
+     "scene"
+    ],
+    "dogru": 0,
+    "ipucu": "Taç takmış oyuncu çizimini hatırla: o bir kral rolünde.",
+    "aciklama": "Rol {{part}}: {{one of the people in a film, play or dance}}. (WB s. 22)"
+   }
+  },
+  {
+   "ad": "scene",
+   "renk": "#e74c3c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='16' width='96' height='10' rx='3' fill='#c0392b'/><rect x='22' y='26' width='76' height='66' fill='#2b3a66'/><path d='M12 26 q10 34 0 72 h14 q-4 -36 4 -72z' fill='#e74c3c'/><path d='M108 26 q-10 34 0 72 h-14 q4 -36 -4 -72z' fill='#e74c3c'/><rect x='40' y='60' width='20' height='20' fill='#ffd166'/><path d='M36 62 l14 -14 l14 14z' fill='#ff7a33'/><circle cx='78' cy='58' r='10' fill='#3cc47c'/><rect x='76' y='66' width='4' height='14' fill='#c58b5a'/><rect x='12' y='92' width='96' height='10' fill='#c58b5a'/></svg>",
+   "aciklama": "Oyunun ya da filmin, olayın tek bir yerde geçtiği bölümüdür: sahne. Kitaptaki tanım: {{a part of a play or film in which the action happens in one place}}.",
+   "ek": "{{opening scene}}: açılış sahnesi · {{final scene}}: son sahne.",
+   "akilda": "sahne",
+   "ornek": "In the final scene, the friends say goodbye and the film finishes.",
+   "ornekTr": "Son sahnede arkadaşlar vedalaşır ve film biter. (WB s. 19)",
+   "formul": [
+    [
+     {
+      "t": "the opening scene",
+      "r": "kelime",
+      "alt": "açılış sahnesi"
+     },
+     {
+      "t": "of the play",
+      "r": "diger"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Oyunun tek bir yerde geçen bölümü hangisi?",
+    "secenekler": [
+     "audition",
+     "scene",
+     "part"
+    ],
+    "dogru": 1,
+    "ipucu": "Perdeli sahnede ev ve ağaç çizimini hatırla: tek bir yer.",
+    "aciklama": "Tek yerde geçen bölüm {{scene}}: sahne. (WB s. 22)"
+   }
+  },
+  {
+   "ad": "lines",
+   "renk": "#4ea8de",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 16 h84 a8 8 0 0 1 8 8 v42 a8 8 0 0 1 -8 8 h-52 l-14 14 v-14 h-18 a8 8 0 0 1 -8 -8 v-42 a8 8 0 0 1 8 -8z' fill='#c9cfe0'/><path d='M28 32 h64 M28 45 h64 M28 58 h40' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><circle cx='30' cy='96' r='8' fill='#ffd166'/><path d='M18 116 q0 -12 12 -12 q12 0 12 12z' fill='#ffd166'/></svg>",
+   "aciklama": "Oyuncunun oyunda ya da filmde söylediği sözlerdir: replikler. Kitaptaki tanım: {{the words that an actor speaks}}.",
+   "ek": "Kalıp: {{learn my lines}} (repliklerimi ezberlemek).",
+   "akilda": "replikler",
+   "ornek": "I need to learn my lines for an audition I have next week.",
+   "ornekTr": "Gelecek hafta olan bir seçme için repliklerimi ezberlemem gerekiyor. (SB s. 26)",
+   "formul": [
+    [
+     {
+      "t": "learn",
+      "r": "fiil",
+      "alt": "ezberlemek"
+     },
+     {
+      "t": "my lines",
+      "r": "kelime",
+      "alt": "repliklerim"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Oyuncunun söylediği sözler hangisi?",
+    "secenekler": [
+     "rehearsal",
+     "part",
+     "lines"
+    ],
+    "dogru": 2,
+    "ipucu": "Konuşma balonu çizimini hatırla: oyuncunun sözleri.",
+    "aciklama": "Oyuncunun sözleri {{lines}}: {{the words that an actor speaks}}. (WB s. 22)"
+   }
+  },
+  {
+   "ad": "audition",
+   "renk": "#ff7ab6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='30' cy='44' r='11' fill='#ffd166'/><path d='M14 98 q0 -38 16 -38 q16 0 16 38z' fill='#ff7ab6'/><circle cx='72' cy='62' r='8' fill='#c9cfe0'/><circle cx='98' cy='62' r='8' fill='#c9cfe0'/><rect x='58' y='74' width='54' height='10' rx='3' fill='#c58b5a'/><path d='M62 84 v16 M108 84 v16' stroke='#c58b5a' stroke-width='4'/><path d='M64 34 l8 8 l16 -18' stroke='#3cc47c' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Bir rolü alabileceğini göstermek için yapılan kısa gösteridir: seçme. Kitaptaki tanım: {{a short performance that an actor, dancer, etc. gives to show they can play a particular part}}.",
+   "ek": "{{You have an audition when you want a part or role in a play or show.}} (WB s. 19)",
+   "akilda": "seçme (sınavı)",
+   "ornek": "Rosa and Daniel have had an audition.",
+   "ornekTr": "Rosa ve Daniel bir seçmeye girdi. (SB s. 26)",
+   "formul": [
+    [
+     {
+      "t": "have",
+      "r": "fiil"
+     },
+     {
+      "t": "an audition",
+      "r": "kelime",
+      "alt": "bir seçme"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Bir rolü almak için yapılan kısa gösteri hangisi?",
+    "secenekler": [
+     "audition",
+     "rehearsal",
+     "scene"
+    ],
+    "dogru": 0,
+    "ipucu": "Masadaki iki kişi ve ✓ çizimini hatırla: rolü alabilecek mi?",
+    "aciklama": "Rol için kısa gösteri {{audition}}: seçme. (WB s. 22)"
+   }
+  },
+  {
+   "ad": "rehearsal",
+   "renk": "#3cc47c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 14 a26 26 0 1 1 -25 19' stroke='#4ea8de' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M24 30 l14 -2 l-4 13z' fill='#4ea8de'/><circle cx='40' cy='78' r='8' fill='#ffd166'/><path d='M28 98 q0 -12 12 -12 q12 0 12 12z' fill='#ffd166'/><circle cx='80' cy='78' r='8' fill='#ff7ab6'/><path d='M68 98 q0 -12 12 -12 q12 0 12 12z' fill='#ff7ab6'/></svg>",
+   "aciklama": "Gösteriden önce herkesin birlikte çalıştığı zamandır: prova. Kitaptaki tanım: {{the time when all the people in a play, dance, etc. practise to prepare for a performance}}.",
+   "ek": "{{During a rehearsal you practise a play, concert or show.}} (WB s. 19)",
+   "akilda": "prova",
+   "ornek": "We only had one rehearsal before the show.",
+   "ornekTr": "Gösteriden önce sadece bir prova yaptık. (SB s. 26)",
+   "formul": [
+    [
+     {
+      "t": "have",
+      "r": "fiil"
+     },
+     {
+      "t": "a rehearsal",
+      "r": "kelime",
+      "alt": "bir prova"
+     }
+    ]
+   ],
+   "soru": {
+    "soru": "Gösteriden önce herkesin birlikte çalıştığı zaman hangisi?",
+    "secenekler": [
+     "lines",
+     "rehearsal",
+     "audition"
+    ],
+    "dogru": 1,
+    "ipucu": "Dönen ok ve iki kişi çizimini hatırla: birlikte tekrar tekrar çalışmak.",
+    "aciklama": "Birlikte çalışma zamanı {{rehearsal}}: prova. (WB s. 22)"
+   }
+  }
+ ],
+ "kelimeler": [
+  {
+   "en": "play",
+   "tr": "tiyatro oyunu"
+  },
+  {
+   "en": "actor",
+   "tr": "oyuncu"
+  },
+  {
+   "en": "opening scene",
+   "tr": "açılış sahnesi"
+  },
+  {
+   "en": "drama teacher",
+   "tr": "drama öğretmeni"
+  },
+  {
+   "en": "practise",
+   "tr": "prova yapmak, çalışmak"
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kelime ne anlatıyor?",
+   "kutular": [
+    {
+     "etiket": "Oyundaki kişi ya da sözler",
+     "uyeler": [
+      "part",
+      "lines"
+     ]
+    },
+    {
+     "etiket": "Oyunun bir bölümü",
+     "uyeler": [
+      "scene"
+     ]
+    },
+    {
+     "etiket": "Gösteriden önceki çalışma ve seçme",
+     "uyeler": [
+      "audition",
+      "rehearsal"
+     ]
+    }
+   ]
+  }
+ ],
+ "cumleler": [
+  {
+   "en": "I need to learn my lines.",
+   "tr": "Repliklerimi ezberlemem gerekiyor. (SB s. 26)"
+  },
+  {
+   "en": "We only had one rehearsal.",
+   "tr": "Sadece bir prova yaptık. (SB s. 26)"
+  },
+  {
+   "en": "I'm playing the part of the sister.",
+   "tr": "Kız kardeş rolünü oynuyorum. (SB s. 26)"
+  },
+  {
+   "en": "Actors have to learn their lines.",
+   "tr": "Oyuncular repliklerini ezberlemek zorunda. (SB s. 129)"
+  },
+  {
+   "en": "Rosa and Daniel have had an audition.",
+   "tr": "Rosa ve Daniel bir seçmeye girdi. (SB s. 26)"
+  },
+  {
+   "en": "I really want the part of Romeo.",
+   "tr": "Romeo rolünü gerçekten istiyorum. (WB s. 19)"
+  }
+ ],
+ "hatalar": [
+  {
+   "cumle": "Actors have to learn their lyrics before a play.",
+   "yanlis": "lyrics",
+   "secenekler": [
+    "lines",
+    "scenes",
+    "parts"
+   ],
+   "dogru": 0,
+   "tr": "Oyuncular oyundan önce repliklerini ezberlemek zorundadır.",
+   "aciklama": "Oyuncunun sözleri {{lines}}; {{lyrics}} şarkı sözleridir. (SB s. 129)"
+  },
+  {
+   "cumle": "In the final part, the friends say goodbye and the film finishes.",
+   "yanlis": "part",
+   "secenekler": [
+    "line",
+    "scene",
+    "audition"
+   ],
+   "dogru": 1,
+   "tr": "Son sahnede arkadaşlar vedalaşır ve film biter.",
+   "aciklama": "Filmin bir bölümü {{scene}}; {{part}} roldür. (WB s. 19)"
+  },
+  {
+   "cumle": "I really want the scene of Romeo in the school play.",
+   "yanlis": "scene",
+   "secenekler": [
+    "lines",
+    "rehearsal",
+    "part"
+   ],
+   "dogru": 2,
+   "tr": "Okul oyununda Romeo rolünü gerçekten istiyorum.",
+   "aciklama": "Oynanan kişi, rol: {{part}}. (WB s. 19)"
+  },
+  {
+   "cumle": "We only had one audition before the show. We all practised together.",
+   "yanlis": "audition",
+   "secenekler": [
+    "rehearsal",
+    "scene",
+    "part"
+   ],
+   "dogru": 0,
+   "tr": "Gösteriden önce sadece bir prova yaptık. Hep birlikte çalıştık.",
+   "aciklama": "Birlikte çalışmak {{rehearsal}}: prova. (SB s. 26)"
+  },
+  {
+   "cumle": "Dancers usually have rehearsals after a performance.",
+   "yanlis": "after",
+   "secenekler": [
+    "during",
+    "before",
+    "without"
+   ],
+   "dogru": 1,
+   "tr": "Dansçılar genellikle gösteriden önce prova yapar.",
+   "aciklama": "Prova gösteriye hazırlanmak içindir: {{before}}. (WB s. 22)"
+  },
+  {
+   "cumle": "My rehearsal is next week. I want to get the part of the sister.",
+   "yanlis": "rehearsal",
+   "secenekler": [
+    "lines",
+    "scene",
+    "audition"
+   ],
+   "dogru": 2,
+   "tr": "Seçmem gelecek hafta. Kız kardeş rolünü almak istiyorum.",
+   "aciklama": "Rolü almak için yapılan gösteri {{audition}}. (WB s. 22)"
+  }
+ ],
+ "biliyorMusun": [
+  "Rosa ve Daniel bir seçmeye girdi. Kitap, nasıl hissettiklerini konuşma biçimlerinden tahmin etmeyi öğretiyor: buna {{inferring}} (çıkarım yapmak) deniyor. (SB s. 26)",
+  "Kitaptaki kalıp: {{learn my lines}}. Oyuncular rolü aldıktan sonra repliklerini ezberler. (SB s. 129)"
+ ],
+ "akildaKalsin": [
+  "{{part}} rol · {{scene}} sahne · {{lines}} replikler.",
+  "{{audition}} seçme · {{rehearsal}} prova.",
+  "Rolü almak için {{audition}}; gösteriye hazırlanmak için {{rehearsal}}.",
+  "{{play the part of}}: rolünü oynamak · {{learn my lines}}: repliklerimi ezberlemek."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "{{audition}} ile {{rehearsal}} farkı ne?",
+   "cevap": "{{audition}}, bir rolü alabileceğini göstermek için yapılan kısa gösteri (seçme). {{rehearsal}}, gösteriden önce herkesin birlikte çalıştığı zaman (prova). (WB s. 22)"
+  },
+  {
+   "soru": "{{part}} ile {{scene}} nasıl ayırırım?",
+   "cevap": "{{part}} bir kişi, rol: {{one of the people in a film, play or dance}}. {{scene}} oyunun bir bölümü: olay tek bir yerde geçer. (WB s. 22)"
+  },
+  {
+   "soru": "{{lines}} burada ne demek?",
+   "cevap": "Tiyatroda oyuncunun söylediği sözler: {{the words that an actor speaks}}. Kitapta: {{Actors have to learn their lines before a play.}} (WB s. 22)"
+  },
+  {
+   "soru": "Dansçılar provayı ne zaman yapar?",
+   "cevap": "Gösteriden önce. Prova, gösteriye hazırlanmak için yapılır: {{practise to prepare for a performance}}. (WB s. 22)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okul oyununda hangi rolü isterdin? {{I want the part of ... because ...}}",
+   "ornekCevap": "I want the part of the sister because she is funny.",
+   "anahtarlar": [
+    "part",
+    "because"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "audience",
+    "audition",
+    "orchestra"
+   ],
+   "dogru": 1,
+   "ipucu": "Rol almak için yapılan gösteri. Yavaş dinle düğmesini dene.",
+   "aciklama": "Duyduğun kelime {{audition}}: seçme. (SB s. 26)",
+   "dinle": "audition",
+   "kavram": "audition"
+  },
+  {
+   "soru": "Dinle. Hangi kelimeyi duydun?",
+   "secenekler": [
+    "rehearsal",
+    "lyrics",
+    "scene"
+   ],
+   "dogru": 0,
+   "ipucu": "Provayla ilgili kelime.",
+   "aciklama": "Duyduğun kelime {{rehearsal}}: prova. (SB s. 26)",
+   "dinle": "rehearsal",
+   "kavram": "rehearsal"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I need to learn my ___ for an audition.}}",
+   "secenekler": [
+    "lyrics",
+    "lines",
+    "scenes"
+   ],
+   "dogru": 1,
+   "ipucu": "Oyuncu seçmede ne söyler? Konuşma balonunu hatırla.",
+   "aciklama": "Oyuncu {{lines}} ezberler: {{learn my lines}}. (SB s. 26)",
+   "kavram": "lines"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I'm playing the ___ of the sister.}}",
+   "secenekler": [
+    "part",
+    "scene",
+    "show"
+   ],
+   "dogru": 0,
+   "ipucu": "{{play the ... of}} kalıbını hatırla.",
+   "aciklama": "{{play the part of}}: rolünü oynamak. (SB s. 26)",
+   "kavram": "part"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{In the final ___, the friends say goodbye and the film finishes.}}",
+   "secenekler": [
+    "line",
+    "part",
+    "scene"
+   ],
+   "dogru": 2,
+   "ipucu": "Filmin son bölümü. Tek bir yerde geçen bölüm hangisiydi?",
+   "aciklama": "Son bölüm {{the final scene}}: son sahne. (WB s. 19)",
+   "kavram": "scene"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{You have an ___ when you want a part in a play or show.}}",
+   "secenekler": [
+    "audition",
+    "rehearsal",
+    "audience"
+   ],
+   "dogru": 0,
+   "ipucu": "Rolü istiyorsan önce ne yaparsın?",
+   "aciklama": "Rol istediğinde {{audition}}: seçmeye girersin. (WB s. 19)",
+   "kavram": "audition"
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{During a ___ you practise a play, concert or show.}}",
+   "secenekler": [
+    "lines",
+    "part",
+    "rehearsal"
+   ],
+   "dogru": 2,
+   "ipucu": "{{practise}}: çalışmak. Birlikte çalışılan zaman hangisi?",
+   "aciklama": "Çalışılan zaman {{rehearsal}}: prova. (WB s. 19)",
+   "kavram": "rehearsal"
+  },
+  {
+   "soru": "{{Actors have to learn their lines ___ a play.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "after",
+    "before",
+    "without"
+   ],
+   "dogru": 1,
+   "ipucu": "Replikler oyundan önce mi sonra mı ezberlenir?",
+   "aciklama": "Oyundan önce: {{before a play}}. (SB s. 129)",
+   "kavram": "lines"
+  },
+  {
+   "soru": "{{scene}} ne demek?",
+   "secenekler": [
+    "rol",
+    "sahne",
+    "replik"
+   ],
+   "dogru": 1,
+   "ipucu": "Perdeli sahne çizimini hatırla.",
+   "aciklama": "{{scene}}: sahne. {{part}} rol, {{lines}} repliklerdir. (WB s. 22)",
+   "kavram": "scene"
+  }
+ ]
+}

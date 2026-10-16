@@ -326,6 +326,322 @@
     }
    ],
    "aciklama": "Soruda {{ever}}, olumluda 'hiçbir zaman' {{never}}; {{has}} + V3 (WB s. 18, 90)."
+  },
+  {
+   "id": "o2-19",
+   "konu": "u2k4",
+   "kavram": "lines",
+   "tur": "secim",
+   "soru": "{{the words that an actor speaks}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "lyrics",
+    "lines",
+    "scene",
+    "audience"
+   ],
+   "dogru": 1,
+   "aciklama": "Oyuncunun sözleri {{lines}}: replikler (WB s. 22)."
+  },
+  {
+   "id": "o2-20",
+   "konu": "u2k4",
+   "kavram": "part",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçeleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "part",
+     "sag": "rol"
+    },
+    {
+     "sol": "scene",
+     "sag": "sahne"
+    },
+    {
+     "sol": "audition",
+     "sag": "seçme"
+    },
+    {
+     "sol": "rehearsal",
+     "sag": "prova"
+    }
+   ],
+   "aciklama": "Tiyatro kelimeleri (WB s. 22)."
+  },
+  {
+   "id": "o2-21",
+   "konu": "u2k4",
+   "kavram": "rehearsal",
+   "tur": "bosluk",
+   "havuz": [
+    "audience",
+    "studio"
+   ],
+   "cumleler": [
+    {
+     "c": "I need to learn my ___ for an audition.",
+     "cevap": "lines"
+    },
+    {
+     "c": "We only had one ___ before the show.",
+     "cevap": "rehearsal"
+    },
+    {
+     "c": "I'm playing the ___ of the sister.",
+     "cevap": "part"
+    }
+   ],
+   "aciklama": "Ezberlenen sözler, prova ve rol ipuçlarına bak (SB s. 26)."
+  },
+  {
+   "id": "o2-22",
+   "konu": "u2k4",
+   "kavram": "rehearsal",
+   "tur": "dy",
+   "ifade": "{{Dancers usually have rehearsals after a performance.}}",
+   "dogru": false,
+   "duzeltme": "Rehearsals are before a performance.",
+   "aciklama": "Prova gösteriye hazırlanmak içindir; önce yapılır (WB s. 22)."
+  },
+  {
+   "id": "o2-23",
+   "konu": "u2k4",
+   "kavram": "audition",
+   "tur": "kisa",
+   "soru": "Bir rolü almak için yapılan kısa gösteri nedir? İngilizce yaz.",
+   "yanit": "audition",
+   "aciklama": "Seçme: {{audition}} (WB s. 22)."
+  },
+  {
+   "id": "o2-24",
+   "konu": "u2k4",
+   "kavram": "scene",
+   "tur": "secim",
+   "soru": "Kelimeler ve anlamları:",
+   "onculler": [
+    "part: rol",
+    "scene: sahne",
+    "lines: şarkı sözleri"
+   ],
+   "kok": "Yukarıdakilerden hangileri doğru eşleştirilmiştir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "{{lines}} replikler; şarkı sözleri {{lyrics}} (WB s. 22)."
+  },
+  {
+   "id": "o2-25",
+   "konu": "u2k5",
+   "kavram": "orchestra",
+   "tur": "secim",
+   "soru": "{{a big group of musicians who play different instruments together}} tanımı hangi kelimenindir?",
+   "secenekler": [
+    "audience",
+    "studio",
+    "orchestra",
+    "show"
+   ],
+   "dogru": 2,
+   "aciklama": "Birlikte çalan müzisyenler {{orchestra}} (WB s. 22)."
+  },
+  {
+   "id": "o2-26",
+   "konu": "u2k5",
+   "kavram": "audience",
+   "tur": "eslestir",
+   "soru": "Kelimeleri Türkçeleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "audience",
+     "sag": "seyirci"
+    },
+    {
+     "sol": "orchestra",
+     "sag": "orkestra"
+    },
+    {
+     "sol": "lyrics",
+     "sag": "şarkı sözleri"
+    },
+    {
+     "sol": "studio",
+     "sag": "stüdyo"
+    }
+   ],
+   "aciklama": "Müzik kelimeleri (WB s. 22)."
+  },
+  {
+   "id": "o2-27",
+   "konu": "u2k5",
+   "kavram": "audience",
+   "tur": "dy",
+   "ifade": "{{The audience plays music for performances.}}",
+   "dogru": false,
+   "duzeltme": "The orchestra plays music; the audience watches and listens.",
+   "aciklama": "{{orchestra}} çalar, {{audience}} dinler (WB s. 22)."
+  },
+  {
+   "id": "o2-28",
+   "konu": "u2k5",
+   "kavram": "lyrics",
+   "tur": "bosluk",
+   "havuz": [
+    "scene",
+    "part"
+   ],
+   "cumleler": [
+    {
+     "c": "The ___ stood up and clapped.",
+     "cevap": "audience"
+    },
+    {
+     "c": "She spent three months in the ___ working on her album.",
+     "cevap": "studio"
+    },
+    {
+     "c": "I'm learning the ___ to my favourite song.",
+     "cevap": "lyrics"
+    }
+   ],
+   "aciklama": "Alkış, albüm ve şarkı ipuçlarına bak (SB s. 26)."
+  },
+  {
+   "id": "o2-29",
+   "konu": "u2k5",
+   "kavram": "lyrics",
+   "tur": "kisa",
+   "soru": "Bir şarkının sözlerine ne denir? İngilizce yaz.",
+   "yanit": "lyrics",
+   "aciklama": "Şarkı sözleri: {{lyrics}} (WB s. 22)."
+  },
+  {
+   "id": "o2-30",
+   "konu": "u2k5",
+   "kavram": "show",
+   "tur": "secim",
+   "soru": "{{What's your favourite type of ___: dance, music or theatre?}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "show",
+    "studio",
+    "lyrics",
+    "audience"
+   ],
+   "dogru": 0,
+   "aciklama": "Dans, müzik, tiyatro birer gösteri türü: {{show}} (WB s. 19)."
+  },
+  {
+   "id": "o2-31",
+   "konu": "u2k6",
+   "kavram": "already",
+   "tur": "secim",
+   "soru": "{{She has ___ bought a ticket.}} (Çoktan aldı.) Boşluğa hangisi gelir?",
+   "secenekler": [
+    "yet",
+    "still",
+    "already",
+    "ever"
+   ],
+   "dogru": 2,
+   "aciklama": "Çoktan: {{already}}, {{has}} ile V3 arasına (WB s. 90)."
+  },
+  {
+   "id": "o2-32",
+   "konu": "u2k6",
+   "kavram": "still + haven't / hasn't",
+   "tur": "dytablo",
+   "soru": "Cümleler doğru mu, yanlış mı?",
+   "ifadeler": [
+    {
+     "s": "{{I've just heard the good news.}}",
+     "d": true
+    },
+    {
+     "s": "{{We haven't still chosen a film.}}",
+     "d": false
+    },
+    {
+     "s": "{{Have you bought the tickets yet?}}",
+     "d": true
+    },
+    {
+     "s": "{{John hasn't arrived already.}}",
+     "d": false
+    }
+   ],
+   "aciklama": "{{still}} öznenin arkasına; olumsuz sonda {{yet}} (WB s. 90)."
+  },
+  {
+   "id": "o2-33",
+   "konu": "u2k6",
+   "kavram": "haven't + V3 + yet",
+   "tur": "bosluk",
+   "havuz": [
+    "ever",
+    "never"
+   ],
+   "cumleler": [
+    {
+     "c": "My uncle ___ hasn't seen the new play.",
+     "cevap": "still"
+    },
+    {
+     "c": "John hasn't arrived ___.",
+     "cevap": "yet"
+    },
+    {
+     "c": "I've ___ heard the good news.",
+     "cevap": "just"
+    }
+   ],
+   "aciklama": "{{still}} öznenin arkasına, {{yet}} sona, {{just}} have ile V3 arasına (WB s. 90)."
+  },
+  {
+   "id": "o2-34",
+   "konu": "u2k6",
+   "kavram": "Have you … yet?",
+   "tur": "secim",
+   "soru": "Kelimelerin cümledeki yeri:",
+   "onculler": [
+    "{{just}} ve {{already}}, have/has ile V3 arasına gelir.",
+    "{{still}} cümlenin sonuna gelir.",
+    "{{yet}} soru cümlesinde sona gelir."
+   ],
+   "kok": "Yukarıdakilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "{{still}} sona değil, öznenin arkasına gelir (WB s. 90)."
+  },
+  {
+   "id": "o2-35",
+   "konu": "u2k6",
+   "kavram": "Not yet.",
+   "tur": "kisa",
+   "soru": "{{Have you finished your homework?}} Henüz bitirmedin. Kısa cevabı İngilizce yaz.",
+   "yanit": "not yet",
+   "kabul": [
+    "Not yet.",
+    "not yet."
+   ],
+   "aciklama": "Henüz değil: {{Not yet.}} (WB s. 90)."
+  },
+  {
+   "id": "o2-36",
+   "konu": "u2k6",
+   "kavram": "just",
+   "tur": "dy",
+   "ifade": "{{Dylan just has left for school.}} cümlesi doğrudur.",
+   "dogru": false,
+   "duzeltme": "Dylan has just left for school.",
+   "aciklama": "{{just}}, {{has}} ile V3 arasına gelir (WB s. 20)."
   }
  ]
 }

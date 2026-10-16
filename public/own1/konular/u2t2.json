@@ -1,0 +1,230 @@
+{
+ "id": "u2t2",
+ "tur": "tarama",
+ "unite": "Unit 2: What is art?",
+ "baslik": "Ara Durak 2: Sahne, müzik ve already/yet",
+ "sayfalar": "Konu 4–6 · SB s. 26–29, 129 · WB s. 19–20, 22, 90–91",
+ "giris": "Üç konu daha bitti; kısa bir tekrar molası. Önce kartlara bakmadan hatırlamaya çalış. Sonra karışık soruları çöz. Not yok, sadece tekrar.",
+ "buyukResim": "Sahnenin ve müziğin kelimelerini öğrendin. {{just}}, {{already}}, {{still}} ve {{yet}} ile de bir gösteriye hazırlığı anlatabiliyorsun: {{I've just had my audition.}} {{I haven't learned my lines yet.}}",
+ "kapsar": [
+  "u2k4",
+  "u2k5",
+  "u2k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "{{part}} rol · {{scene}} sahne · {{lines}} replikler.",
+    "{{audition}} seçme · {{rehearsal}} prova.",
+    "{{learn my lines}}: repliklerimi ezberlemek."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "{{audience}} seyirci · {{orchestra}} orkestra.",
+    "{{lyrics}} şarkı sözleri · {{studio}} stüdyo · {{show}} gösteri.",
+    "{{lyrics}} şarkıda, {{lines}} oyunda."
+   ]
+  },
+  {
+   "konu": "u2k6",
+   "maddeler": [
+    "{{just}} ve {{already}}: {{have/has}} ile V3 arasına.",
+    "{{still}}: öznenin arkasına, {{hasn't/haven't}} önüne.",
+    "{{yet}}: cümlenin sonuna; kısa cevap {{Not yet.}}"
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "gruplar": [
+  {
+   "soru": "Oyunda mı, müzikte mi?",
+   "kutular": [
+    {
+     "etiket": "Tiyatro oyununda",
+     "uyeler": [
+      "part",
+      "scene",
+      "lines"
+     ]
+    },
+    {
+     "etiket": "Müzikte",
+     "uyeler": [
+      "orchestra",
+      "lyrics",
+      "studio"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "I haven't learned my lines yet.",
+    "I've already learned my lines.",
+    "I still haven't learned the lyrics."
+   ],
+   "dogru": 0,
+   "ipucu": "İki şeye dikkat: {{lines}} mı, {{lyrics}} mi? {{yet}} mi, {{already}} mi?",
+   "aciklama": "Duyduğun cümle {{I haven't learned my lines yet.}} Replikleri henüz ezberlemedim. (WB s. 90)",
+   "dinle": "I haven't learned my lines yet.",
+   "kavram": "haven't + V3 + yet",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "haven't + V3 + yet"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "lines"
+    }
+   ]
+  },
+  {
+   "soru": "Dinle. Hangi cümleyi duydun?",
+   "secenekler": [
+    "The orchestra has already finished.",
+    "The orchestra has just finished.",
+    "The audience has just finished."
+   ],
+   "dogru": 1,
+   "ipucu": "{{orchestra}} mı, {{audience}} mı? {{just}} mi, {{already}} mi?",
+   "aciklama": "Duyduğun cümle {{The orchestra has just finished.}} Orkestra az önce bitirdi. (WB s. 90)",
+   "dinle": "The orchestra has just finished.",
+   "kavram": "just",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "just"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "orchestra"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I've had my audition, but they ___ told me about the part.}}",
+   "secenekler": [
+    "have already",
+    "still haven't",
+    "have yet"
+   ],
+   "dogru": 1,
+   "ipucu": "Seçmeye girdi ama haber yok: hâlâ söylemediler.",
+   "aciklama": "'Hâlâ söylemediler': {{they still haven't told me}}. (WB s. 90)",
+   "kavram": "still + haven't / hasn't",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "still + haven't / hasn't"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "audition"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "{{but}}: ama. Haber geldi mi, gelmedi mi?",
+     "Gelmedi: cümle olumsuz olmalı.",
+     "Olumsuz ve öznenin arkasında {{still}} olan şıkkı bul."
+    ]
+   }
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Have you learned the ___ to the song yet?}}",
+   "secenekler": [
+    "lines",
+    "scene",
+    "lyrics"
+   ],
+   "dogru": 2,
+   "ipucu": "Şarkının sözleri hangisiydi?",
+   "aciklama": "Şarkının sözleri {{lyrics}}. {{yet}} soru sonunda. (SB s. 26)",
+   "kavram": "lyrics",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "lyrics"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Have you … yet?"
+    }
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{We've ___ had our first rehearsal. It finished five minutes ago.}}",
+   "secenekler": [
+    "just",
+    "yet",
+    "still"
+   ],
+   "dogru": 0,
+   "ipucu": "Beş dakika önce bitti: az önce.",
+   "aciklama": "Az önce: {{We've just had our first rehearsal.}} (WB s. 90)",
+   "kavram": "just",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "just"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "rehearsal"
+    }
+   ]
+  },
+  {
+   "soru": "{{A: Has the orchestra recorded the album in the studio yet? B: Not yet.}} Hangisi doğru?",
+   "secenekler": [
+    "Albümü kaydettiler.",
+    "Henüz kaydetmediler.",
+    "Hiç kaydetmeyecekler."
+   ],
+   "dogru": 1,
+   "ipucu": "{{Not yet}} ne demekti?",
+   "aciklama": "{{Not yet.}}: henüz değil. Albüm henüz kaydedilmedi. (WB s. 90)",
+   "kavram": "Not yet.",
+   "kaynak": [
+    {
+     "konu": "u2k6",
+     "kavram": "Not yet."
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "studio"
+    }
+   ]
+  },
+  {
+   "soru": "STOMP incelemesine göre hangisi doğru?",
+   "secenekler": [
+    "Sanatçılar çok şarkı söylüyor.",
+    "Camila gösteriyi hiç görmedi.",
+    "Gösteride replik yok."
+   ],
+   "dogru": 2,
+   "ipucu": "{{There are no lines}} cümlesini hatırla.",
+   "aciklama": "{{There are no lines, singing or story}}. {{lines}}: replikler. (SB s. 29)",
+   "kavram": "lines",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "lines"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Have you … yet?"
+    }
+   ]
+  }
+ ]
+}
