@@ -1,0 +1,345 @@
+{
+ "unite": 3,
+ "ders": "din1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "d3-01",
+   "konu": "u3k1",
+   "kavram": "Din",
+   "tur": "dy",
+   "ifade": "Din, kişiye ve zamana göre değişir.",
+   "dogru": false,
+   "duzeltme": "Din anlayışı değişebilir; dinin temel ilkeleri değişmez.",
+   "aciklama": "Dinin temel ilkeleri değişmez; değişebilen din anlayışıdır (s. 87–93)."
+  },
+  {
+   "id": "d3-02",
+   "konu": "u3k1",
+   "kavram": "İnsanın Yapısı",
+   "tur": "dytablo",
+   "soru": "Dinî yorum farklılıklarının sebebi olanlara D, olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "İnsanların bilgi birikiminin farklı olması",
+     "d": true
+    },
+    {
+     "s": "İslam'ın farklı coğrafyalara yayılması",
+     "d": true
+    },
+    {
+     "s": "Bazı ayetlerin farklı şekillerde yorumlanması",
+     "d": true
+    },
+    {
+     "s": "Bütün insanların aynı yetenekte yaratılması",
+     "d": false
+    }
+   ],
+   "aciklama": "İnsanlar farklı özelliklerde yaratılmıştır; bu da yorum farkına yol açar (s. 87–93)."
+  },
+  {
+   "id": "d3-03",
+   "konu": "u3k1",
+   "kavram": "Din Anlayışı",
+   "tur": "secim",
+   "soru": "Din anlayışıyla ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "İnsanların ilahi mesajı anlama ve yorumlamasıdır.",
+    "Yorum içerdiği için bireyseldir.",
+    "Allah tarafından peygamberler aracılığıyla gönderilir."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Peygamberlerle gönderilen dindir; din anlayışı insanların yorumudur (s. 87–93)."
+  },
+  {
+   "id": "d3-04",
+   "konu": "u3k1",
+   "kavram": "Yorum Farklılıkları Zenginliktir",
+   "tur": "bosluk",
+   "havuz": [
+    "ayrılık",
+    "mimari"
+   ],
+   "cumleler": [
+    {
+     "c": "İslam'ın iki temel kaynağı Kur'an-ı Kerim ve ___ dir.",
+     "cevap": "sünnet"
+    },
+    {
+     "c": "Dinin temel ilkelerine bağlı yorumlar ayrılık değil ___ kabul edilir.",
+     "cevap": "zenginlik"
+    },
+    {
+     "c": "Yorum farklılıkları fıkıh, kelam ve ___ gibi ilimlerin doğmasına vesile oldu.",
+     "cevap": "tasavvuf"
+    }
+   ],
+   "aciklama": "Yorumlar zenginliktir; fıkıh, kelam, tasavvuf gibi ilimler doğdu (s. 87–93)."
+  },
+  {
+   "id": "d3-05",
+   "konu": "u3k1",
+   "kavram": "İnsanın Yapısı",
+   "tur": "secim",
+   "soru": "Tıp eğitimi almış bir kişi, insanın yaratılışını anlatan ayetleri mesleki bilgisiyle yorumlar. Bu durum hangi sebebe örnektir?",
+   "secenekler": [
+    "İnsanların farklı özelliklerde yaratılması",
+    "İslam'ın geniş coğrafyalara yayılması",
+    "Camilerin farklı mimariyle yapılması",
+    "Hz. Peygamber'e soru sorulması"
+   ],
+   "dogru": 0,
+   "aciklama": "Meslek ve bilgi birikimi insanın yapısıyla ilgilidir (s. 87–93)."
+  },
+  {
+   "id": "d3-06",
+   "konu": "u3k1",
+   "kavram": "Din Anlayışı",
+   "tur": "kisa",
+   "soru": "İnsanların ilahi mesajı anlama ve yorumlama sürecinde ortaya koydukları görüşlere ne denir?",
+   "yanit": "din anlayışı",
+   "kabul": [
+    "dinanlayışı",
+    "din anlayisi"
+   ],
+   "aciklama": "Bu görüşlere din anlayışı denir (s. 87–93)."
+  },
+  {
+   "id": "d3-07",
+   "konu": "u3k2",
+   "kavram": "Yorum Biçimleri",
+   "tur": "eslestir",
+   "soru": "Yorum biçimlerini konularıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "İtikadi yorumlar",
+     "sag": "İnanç"
+    },
+    {
+     "sol": "Fıkhi yorumlar",
+     "sag": "İbadet"
+    },
+    {
+     "sol": "Tasavvufi yorumlar",
+     "sag": "Ahlak"
+    }
+   ],
+   "aciklama": "İnanç itikadi, ibadet fıkhi, ahlak tasavvufi yorumların konusudur (s. 94–97)."
+  },
+  {
+   "id": "d3-08",
+   "konu": "u3k2",
+   "kavram": "Matüridilik",
+   "tur": "dy",
+   "ifade": "Matüridilik, inanç esaslarının anlaşılmasında aklın önemli bir yeri olduğunu savunur.",
+   "dogru": true,
+   "aciklama": "Matüridilik akli delilleri ön planda tutar (s. 94–97)."
+  },
+  {
+   "id": "d3-09",
+   "konu": "u3k2",
+   "kavram": "Eşarilik",
+   "tur": "secim",
+   "soru": "Ebülhasan Eşari ile ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Basra'da doğmuş, Bağdat'ta vefat etmiştir.",
+    "Semerkant'ın Matürit kasabasında doğmuştur.",
+    "Fıkhi bir mezhebin kurucusudur.",
+    "Medine halkının uygulamalarını esas almıştır."
+   ],
+   "dogru": 0,
+   "aciklama": "İmam Eşari Basra'da doğdu, Bağdat'ta vefat etti; Eşarilik itikadi mezheptir (s. 94–97)."
+  },
+  {
+   "id": "d3-10",
+   "konu": "u3k2",
+   "kavram": "Mezhep",
+   "tur": "kisa",
+   "soru": "Sözlükte \"gidilecek yol, takip edilen yöntem\" anlamına gelen kavram nedir?",
+   "yanit": "mezhep",
+   "aciklama": "Mezhebin sözlük anlamı \"gidilecek yol, yöntem\"dir (s. 94–97)."
+  },
+  {
+   "id": "d3-11",
+   "konu": "u3k2",
+   "kavram": "İtikat",
+   "tur": "dytablo",
+   "soru": "İtikadın konularından olanlara D, olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Meleklere inanmak",
+     "d": true
+    },
+    {
+     "s": "Kader ve kazaya inanmak",
+     "d": true
+    },
+    {
+     "s": "Abdestin nasıl alınacağı",
+     "d": false
+    },
+    {
+     "s": "Ahirete inanmak",
+     "d": true
+    }
+   ],
+   "aciklama": "Abdestin alınışı ibadetle ilgilidir; itikadın konusu değildir (s. 94–97)."
+  },
+  {
+   "id": "d3-12",
+   "konu": "u3k2",
+   "kavram": "Yaygın Oldukları Yerler",
+   "tur": "secim",
+   "soru": "Bir itikadi mezheple ilgili şu bilgiler verilmiştir:",
+   "onculler": [
+    "Ebu Mansur Matüridi'nin görüşlerine dayanır.",
+    "Akli delilleri ön planda tutar.",
+    "Orta Asya Türk Cumhuriyetleri'nde yaygındır."
+   ],
+   "kok": "Bu bilgiler hangi mezheple ilgilidir?",
+   "secenekler": [
+    "Eşarilik",
+    "Hanefilik",
+    "Şafiilik",
+    "Matüridilik"
+   ],
+   "dogru": 3,
+   "aciklama": "Üç bilgi de Matüridiliğe aittir (s. 94–97)."
+  },
+  {
+   "id": "d3-13",
+   "konu": "u3k3",
+   "kavram": "Hanefilik",
+   "tur": "eslestir",
+   "soru": "Fıkhi mezhepleri dayandıkları âlimle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Hanefilik",
+     "sag": "Ebu Hanife"
+    },
+    {
+     "sol": "Malikilik",
+     "sag": "Malik bin Enes"
+    },
+    {
+     "sol": "Şafiilik",
+     "sag": "Muhammed bin İdris Şafii"
+    },
+    {
+     "sol": "Hanbelilik",
+     "sag": "Ahmed bin Hanbel"
+    }
+   ],
+   "aciklama": "Her mezhep kurucusunun adıyla anılır (s. 98–99)."
+  },
+  {
+   "id": "d3-14",
+   "konu": "u3k3",
+   "kavram": "Fıkıh",
+   "tur": "dytablo",
+   "soru": "Fıkhi mezhep olanlara D, olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Hanbelilik",
+     "d": true
+    },
+    {
+     "s": "Matüridilik",
+     "d": false
+    },
+    {
+     "s": "Malikilik",
+     "d": true
+    },
+    {
+     "s": "Eşarilik",
+     "d": false
+    }
+   ],
+   "aciklama": "Eşarilik ve Matüridilik itikadi mezheplerdir (s. 98–99)."
+  },
+  {
+   "id": "d3-15",
+   "konu": "u3k3",
+   "kavram": "Şafiilik",
+   "tur": "secim",
+   "soru": "Mekke, Medine ve Bağdat gibi ilim merkezlerinde eğitim alması görüşlerini etkileyen mezhep imamı kimdir?",
+   "secenekler": [
+    "İmam Şafii",
+    "İmam Malik",
+    "Ebu Hanife",
+    "Ahmed bin Hanbel"
+   ],
+   "dogru": 0,
+   "aciklama": "İmam Şafii'nin fıkıh anlayışında bu ilim merkezleri etkilidir (s. 98–99)."
+  },
+  {
+   "id": "d3-16",
+   "konu": "u3k3",
+   "kavram": "Ayrıntıdaki Farklılıklar",
+   "tur": "secim",
+   "soru": "Fıkhi yorumlarla ilgili şu bilgiler verilmiştir:",
+   "onculler": [
+    "Helaller ve haramlar konusunda âlimler hemfikirdir.",
+    "Farz ibadetler konusunda âlimler farklı görüştedir.",
+    "Tahiyyatta işaret parmağının kaldırılıp indirilmesi gibi ayrıntılarda farklılık vardır."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "II ve III",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Farz ibadetlerde âlimler hemfikirdir; farklılık ayrıntılardadır (s. 98–99)."
+  },
+  {
+   "id": "d3-17",
+   "konu": "u3k3",
+   "kavram": "Hanefilik",
+   "tur": "kisa",
+   "soru": "Fıkıhtaki yetkinliği sebebiyle İmam-ı Azam diye tanınan âlim kimdir?",
+   "yanit": "Ebu Hanife",
+   "kabul": [
+    "ebuhanife",
+    "numan bin sabit"
+   ],
+   "aciklama": "İmam-ı Azam, Ebu Hanife'dir (s. 98–99)."
+  },
+  {
+   "id": "d3-18",
+   "konu": "u3k3",
+   "kavram": "Hanbelilik",
+   "tur": "bosluk",
+   "havuz": [
+    "Basra",
+    "tefsir"
+   ],
+   "cumleler": [
+    {
+     "c": "Ahmed bin Hanbel hayatının büyük bölümünde ___ ilmiyle uğraştı.",
+     "cevap": "hadis"
+    },
+    {
+     "c": "İmam Malik hayatını ___ şehrinde geçirdi.",
+     "cevap": "Medine"
+    },
+    {
+     "c": "Ebu Hanife'nin asıl adı ___ bin Sabit'tir.",
+     "cevap": "Numan"
+    }
+   ],
+   "aciklama": "Hanbel – hadis, Malik – Medine, Ebu Hanife – Numan bin Sabit (s. 98–99)."
+  }
+ ]
+}
