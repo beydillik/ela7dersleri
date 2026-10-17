@@ -2,6 +2,7 @@ import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 from ortak import Havuz, ONC
 H = Havuz("din1", 2, "d2"); a = H.add
 K1, K2, K3 = "(s. 49–52)", "(s. 53–56)", "(s. 51, 56–60)"
+K4, K5, K6 = "(s. 61–67)", "(s. 68–74)", "(s. 75–79)"
 
 # --- Konu 1: Hac İbadeti: Şartları ve Kavramları
 a("u2k1", "Tavaf", "kisa", soru="Kâbe'nin etrafında yedi kez dönmeye ne denir?", yanit="tavaf",
@@ -84,5 +85,84 @@ a("u2k3", "Birlik ve Kardeşlik", "secim",
   aciklama=f"Hac, farklı yerlerden Müslümanları kardeş gibi bir araya getirir {K3}.")
 a("u2k3", "Haccın Manevi Yönü", "dy", ifade="Hac, insanın Allah'a bağlılığını artırır ve kalbini temizler.", dogru=True,
   aciklama=f"Hac insanı manevi yönden geliştiren bir ibadettir {K3}.")
+
+# --- Konu 4: Kurban İbadeti
+a("u2k4", "Kurban", "kisa", soru="Kurban ibadetinin hükmü nedir?", yanit="vacip",
+  aciklama=f"Kurban, mal ile yapılan vacip bir ibadettir {K4}.")
+a("u2k4", "Kurbanlık Hayvanlar", "dytablo", soru="Kurban edilebilecek hayvanlara D, edilemeyenlere Y seç.", ifadeler=[
+  {"s": "Deve", "d": True}, {"s": "Manda", "d": True}, {"s": "Tavuk", "d": False}, {"s": "Keçi", "d": True}],
+  aciklama=f"Koyun, keçi, sığır, manda ve deve kurban edilebilir {K4}.")
+a("u2k4", "Kurbanlık Hayvanlar", "eslestir", soru="Hayvanı, doldurması gereken yaşla eşleştir.", ciftler=[
+  {"sol": "Koyun", "sag": "1 yaş"}, {"sol": "Sığır", "sag": "2 yaş"}, {"sol": "Deve", "sag": "5 yaş"}],
+  aciklama=f"Koyun ve keçi 1, sığır ve manda 2, deve 5 yaş {K4}.")
+a("u2k4", "Etin Paylaşımı", "dy", ifade="Kurban kesen kişi kurbanının etinden hiç yiyemez.", dogru=False,
+  duzeltme="Kendisi de yiyebilir, ailesine de yedirebilir.",
+  aciklama=f"Et üçe bölünür; bir kısmı aile içinde yenir {K4}.")
+a("u2k4", "Kurban Kesmenin Şartları", "secim", soru="Kurbanla ilgili bazı durumlar şunlardır:",
+  onculler=["Müslüman olmak", "Yolculuk hâlinde olmak", "Maddi durumu yeterli olmak"],
+  kok="Bunlardan hangileri kurban kesmekle yükümlü olmanın şartlarındandır?",
+  secenekler=["Yalnız I", "I ve III", "II ve III", "I, II ve III"], dogru=1,
+  aciklama=f"Mukim olmak, yani yolculukta olmamak şarttır {K4}.")
+a("u2k4", "Kurban", "bosluk", havuz=["Musa", "süt"], cumleler=[
+  {"c": "Kurban, Zilhicce ayının 10, 11 ve ___. günlerinde kesilir.", "cevap": "12"},
+  {"c": "Kurban ibadeti Hz. ___ ile oğlunun teslimiyetine dayanır.", "cevap": "İbrahim"},
+  {"c": "Kurban tığlamada kesimden önce hayvana tuz ve ___ verilir.", "cevap": "su"}],
+  aciklama=f"Zilhicce 10–12; Hz. İbrahim; tuz ve su {K4}.")
+
+# --- Konu 5: Hac ve Kurbanın Kültürümüze Yansımaları
+a("u2k5", "Adak Kurbanı", "eslestir", soru="Kurban çeşidini, kesiliş nedeniyle eşleştir.", ciftler=[
+  {"sol": "Akika kurbanı", "sag": "Yeni doğan çocuk için"},
+  {"sol": "Adak kurbanı", "sag": "Bir dileğin gerçekleşmesi için"},
+  {"sol": "Şükür kurbanı", "sag": "Allah'a şükretmek için"}],
+  aciklama=f"Her kurban çeşidinin kesiliş nedeni farklıdır {K5}.")
+a("u2k5", "Akika Kurbanı", "dytablo", soru="Doğru olanlara D, yanlış olanlara Y seç.", ifadeler=[
+  {"s": "Akika kurbanı sünnettir.", "d": True}, {"s": "Adak kurbanı müstehaptır.", "d": False},
+  {"s": "Şükür kurbanının etinden herkes yiyebilir.", "d": True}, {"s": "Adak sahibi kendi adak kurbanından yiyebilir.", "d": False}],
+  aciklama=f"Akika sünnet, adak vacip, şükür müstehap; adak sahibi ve ailesi yiyemez {K5}.")
+a("u2k5", "Hacı Uğurlama ve Hacı Kapısı", "kisa", soru="Hacca gidenin evinin boyanıp süslenen dış kapısına ne ad verilir?",
+  yanit="hacı kapısı", kabul=["haci kapisi", "hacı kapı"],
+  aciklama=f"Bu geleneğe hacı kapısı denir {K5}.")
+a("u2k5", "Teşrik Tekbiri", "secim", soru="Teşrik tekbiri getirmeye ne zaman başlanır?",
+  secenekler=["Arife Günü sabah namazından sonra", "Bayramın ilk günü ikindi namazından sonra",
+              "Bayramın dördüncü günü sabah namazından sonra", "Ramazan ayının son günü"], dogru=0,
+  aciklama=f"Arife Günü sabahı başlar, bayramın 4. günü ikindisinde biter {K5}.")
+a("u2k5", "Bayramlaşma", "dy", ifade="Bayram namazını yalnızca erkekler kılabilir.", dogru=False,
+  duzeltme="Erkekler için vaciptir; kadınlar ve çocuklar da kılabilir.",
+  aciklama=f"Bayram namazını kadınlar ve çocuklar da kılabilir {K5}.")
+a("u2k5", "Hacı Ziyareti", "secim",
+  metin=["– Hacdan ne getirdin?", "– Birlik ve beraberlik bilinci, sabır ve hoşgörü getirdim.", "– Bir de tadımlık zemzem ve hurma getirdim."],
+  soru="Bu konuşmaya göre hac, kişiye en çok ne kazandırmıştır?",
+  secenekler=["Yalnızca hediyeler", "Çok para", "Sabır ve hoşgörü gibi değerler", "Yeni bir meslek"], dogru=2,
+  aciklama=f"Hacı, hacdan değerler getirdiğini söyler; zemzem ve hurma tadımlıktır {K5}.")
+
+# --- Konu 6: Kâfirun Suresi
+a("u2k6", "1–3. Ayetler", "eslestir", soru="Ayetlerin okunuşunu anlamıyla eşleştir. (3. ve 5. ayet aynıdır.)", ciftler=[
+  {"sol": "Ḳul yâ eyyühel kâfirûn", "sag": "De ki: \"Ey Kâfirler!\""},
+  {"sol": "Lâ a'büdü mâ ta'büdûn", "sag": "Ben sizin kulluk ettiklerinize kulluk etmem."},
+  {"sol": "Velâ entüm âbidûne mâ a'büd", "sag": "Siz de benim kulluk ettiğime kulluk edecek değilsiniz."},
+  {"sol": "Velâ ene âbidümmâ abettüm", "sag": "Ben sizin kulluk ettiklerinize kulluk edecek değilim."},
+  {"sol": "Leküm dînüküm veliye dîn", "sag": "Sizin dininiz size, benim dinim de banadır."}],
+  aciklama=f"Kâfirun suresinin okunuşu ve anlamı ayet ayet {K6}.")
+a("u2k6", "1–3. Ayetler", "secim", soru="Kâfirun suresinin ilk üç ayeti hangi seçenekte doğru sırada verilmiştir?",
+  secenekler=["Ḳul yâ eyyühel kâfirûn → Lâ a'büdü mâ ta'büdûn → Velâ entüm âbidûne mâ a'büd",
+              "Lâ a'büdü mâ ta'büdûn → Ḳul yâ eyyühel kâfirûn → Velâ entüm âbidûne mâ a'büd",
+              "Velâ entüm âbidûne mâ a'büd → Lâ a'büdü mâ ta'büdûn → Ḳul yâ eyyühel kâfirûn",
+              "Ḳul yâ eyyühel kâfirûn → Leküm dînüküm veliye dîn → Lâ a'büdü mâ ta'büdûn"], dogru=0,
+  aciklama=f"Sure \"Ḳul\" ile başlar; \"Leküm dînüküm\" son ayettir {K6}.")
+a("u2k6", "Kâfir", "dy", ifade="Kâfir, Allah'ı tek ve eşsiz kabul eden kişi demektir.", dogru=False,
+  duzeltme="Kâfir, Allah'ı tek ve eşsiz kabul etmeyen kişi demektir.",
+  aciklama=f"Kâfir, Allah'ın varlığını ve birliğini inkâr edendir {K6}.")
+a("u2k6", "Okunduğu Zamanlar", "kisa", soru="Kâfirun suresi namazlarda hangi sureden sonra okunur?",
+  yanit="Fatiha", kabul=["fatiha suresi", "fatihadan"],
+  aciklama=f"Namazlarda Fatiha suresinden sonra okunur {K6}.")
+a("u2k6", "Surenin İnişi", "secim", soru="Kâfirun suresiyle ilgili şu bilgiler verilmiştir:",
+  onculler=["Müşriklerin teklifini reddetmek için indirilmiştir.", "Tevhitten taviz verilmeyeceğini vurgular.", "Haccın nasıl yapılacağını anlatır."],
+  kok="Bu bilgilerden hangileri doğrudur?", secenekler=ONC, dogru=1,
+  aciklama=f"Surede hac anlatılmaz; teklif reddedilir ve tevhit vurgulanır {K6}.")
+a("u2k6", "Tevhit", "bosluk", havuz=["yedi", "şavt"], cumleler=[
+  {"c": "Allah'ın birliğine inanmaya ___ denir.", "cevap": "tevhit"},
+  {"c": "Kâfirun suresi ___ ayettir.", "cevap": "altı"},
+  {"c": "Sure, Mekkeli ___ teklifini reddetmek için indi.", "cevap": "müşriklerin"}],
+  aciklama=f"Tevhit; altı ayet; müşriklerin teklifi {K6}.")
 
 H.yaz()

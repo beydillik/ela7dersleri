@@ -338,6 +338,339 @@
    "ifade": "Hac, insanın Allah'a bağlılığını artırır ve kalbini temizler.",
    "dogru": true,
    "aciklama": "Hac insanı manevi yönden geliştiren bir ibadettir (s. 51, 56–60)."
+  },
+  {
+   "id": "d2-20",
+   "konu": "u2k4",
+   "kavram": "Kurban",
+   "tur": "kisa",
+   "soru": "Kurban ibadetinin hükmü nedir?",
+   "yanit": "vacip",
+   "aciklama": "Kurban, mal ile yapılan vacip bir ibadettir (s. 61–67)."
+  },
+  {
+   "id": "d2-21",
+   "konu": "u2k4",
+   "kavram": "Kurbanlık Hayvanlar",
+   "tur": "dytablo",
+   "soru": "Kurban edilebilecek hayvanlara D, edilemeyenlere Y seç.",
+   "ifadeler": [
+    {
+     "s": "Deve",
+     "d": true
+    },
+    {
+     "s": "Manda",
+     "d": true
+    },
+    {
+     "s": "Tavuk",
+     "d": false
+    },
+    {
+     "s": "Keçi",
+     "d": true
+    }
+   ],
+   "aciklama": "Koyun, keçi, sığır, manda ve deve kurban edilebilir (s. 61–67)."
+  },
+  {
+   "id": "d2-22",
+   "konu": "u2k4",
+   "kavram": "Kurbanlık Hayvanlar",
+   "tur": "eslestir",
+   "soru": "Hayvanı, doldurması gereken yaşla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Koyun",
+     "sag": "1 yaş"
+    },
+    {
+     "sol": "Sığır",
+     "sag": "2 yaş"
+    },
+    {
+     "sol": "Deve",
+     "sag": "5 yaş"
+    }
+   ],
+   "aciklama": "Koyun ve keçi 1, sığır ve manda 2, deve 5 yaş (s. 61–67)."
+  },
+  {
+   "id": "d2-23",
+   "konu": "u2k4",
+   "kavram": "Etin Paylaşımı",
+   "tur": "dy",
+   "ifade": "Kurban kesen kişi kurbanının etinden hiç yiyemez.",
+   "dogru": false,
+   "duzeltme": "Kendisi de yiyebilir, ailesine de yedirebilir.",
+   "aciklama": "Et üçe bölünür; bir kısmı aile içinde yenir (s. 61–67)."
+  },
+  {
+   "id": "d2-24",
+   "konu": "u2k4",
+   "kavram": "Kurban Kesmenin Şartları",
+   "tur": "secim",
+   "soru": "Kurbanla ilgili bazı durumlar şunlardır:",
+   "onculler": [
+    "Müslüman olmak",
+    "Yolculuk hâlinde olmak",
+    "Maddi durumu yeterli olmak"
+   ],
+   "kok": "Bunlardan hangileri kurban kesmekle yükümlü olmanın şartlarındandır?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Mukim olmak, yani yolculukta olmamak şarttır (s. 61–67)."
+  },
+  {
+   "id": "d2-25",
+   "konu": "u2k4",
+   "kavram": "Kurban",
+   "tur": "bosluk",
+   "havuz": [
+    "Musa",
+    "süt"
+   ],
+   "cumleler": [
+    {
+     "c": "Kurban, Zilhicce ayının 10, 11 ve ___. günlerinde kesilir.",
+     "cevap": "12"
+    },
+    {
+     "c": "Kurban ibadeti Hz. ___ ile oğlunun teslimiyetine dayanır.",
+     "cevap": "İbrahim"
+    },
+    {
+     "c": "Kurban tığlamada kesimden önce hayvana tuz ve ___ verilir.",
+     "cevap": "su"
+    }
+   ],
+   "aciklama": "Zilhicce 10–12; Hz. İbrahim; tuz ve su (s. 61–67)."
+  },
+  {
+   "id": "d2-26",
+   "konu": "u2k5",
+   "kavram": "Adak Kurbanı",
+   "tur": "eslestir",
+   "soru": "Kurban çeşidini, kesiliş nedeniyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Akika kurbanı",
+     "sag": "Yeni doğan çocuk için"
+    },
+    {
+     "sol": "Adak kurbanı",
+     "sag": "Bir dileğin gerçekleşmesi için"
+    },
+    {
+     "sol": "Şükür kurbanı",
+     "sag": "Allah'a şükretmek için"
+    }
+   ],
+   "aciklama": "Her kurban çeşidinin kesiliş nedeni farklıdır (s. 68–74)."
+  },
+  {
+   "id": "d2-27",
+   "konu": "u2k5",
+   "kavram": "Akika Kurbanı",
+   "tur": "dytablo",
+   "soru": "Doğru olanlara D, yanlış olanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Akika kurbanı sünnettir.",
+     "d": true
+    },
+    {
+     "s": "Adak kurbanı müstehaptır.",
+     "d": false
+    },
+    {
+     "s": "Şükür kurbanının etinden herkes yiyebilir.",
+     "d": true
+    },
+    {
+     "s": "Adak sahibi kendi adak kurbanından yiyebilir.",
+     "d": false
+    }
+   ],
+   "aciklama": "Akika sünnet, adak vacip, şükür müstehap; adak sahibi ve ailesi yiyemez (s. 68–74)."
+  },
+  {
+   "id": "d2-28",
+   "konu": "u2k5",
+   "kavram": "Hacı Uğurlama ve Hacı Kapısı",
+   "tur": "kisa",
+   "soru": "Hacca gidenin evinin boyanıp süslenen dış kapısına ne ad verilir?",
+   "yanit": "hacı kapısı",
+   "kabul": [
+    "haci kapisi",
+    "hacı kapı"
+   ],
+   "aciklama": "Bu geleneğe hacı kapısı denir (s. 68–74)."
+  },
+  {
+   "id": "d2-29",
+   "konu": "u2k5",
+   "kavram": "Teşrik Tekbiri",
+   "tur": "secim",
+   "soru": "Teşrik tekbiri getirmeye ne zaman başlanır?",
+   "secenekler": [
+    "Arife Günü sabah namazından sonra",
+    "Bayramın ilk günü ikindi namazından sonra",
+    "Bayramın dördüncü günü sabah namazından sonra",
+    "Ramazan ayının son günü"
+   ],
+   "dogru": 0,
+   "aciklama": "Arife Günü sabahı başlar, bayramın 4. günü ikindisinde biter (s. 68–74)."
+  },
+  {
+   "id": "d2-30",
+   "konu": "u2k5",
+   "kavram": "Bayramlaşma",
+   "tur": "dy",
+   "ifade": "Bayram namazını yalnızca erkekler kılabilir.",
+   "dogru": false,
+   "duzeltme": "Erkekler için vaciptir; kadınlar ve çocuklar da kılabilir.",
+   "aciklama": "Bayram namazını kadınlar ve çocuklar da kılabilir (s. 68–74)."
+  },
+  {
+   "id": "d2-31",
+   "konu": "u2k5",
+   "kavram": "Hacı Ziyareti",
+   "tur": "secim",
+   "metin": [
+    "– Hacdan ne getirdin?",
+    "– Birlik ve beraberlik bilinci, sabır ve hoşgörü getirdim.",
+    "– Bir de tadımlık zemzem ve hurma getirdim."
+   ],
+   "soru": "Bu konuşmaya göre hac, kişiye en çok ne kazandırmıştır?",
+   "secenekler": [
+    "Yalnızca hediyeler",
+    "Çok para",
+    "Sabır ve hoşgörü gibi değerler",
+    "Yeni bir meslek"
+   ],
+   "dogru": 2,
+   "aciklama": "Hacı, hacdan değerler getirdiğini söyler; zemzem ve hurma tadımlıktır (s. 68–74)."
+  },
+  {
+   "id": "d2-32",
+   "konu": "u2k6",
+   "kavram": "1–3. Ayetler",
+   "tur": "eslestir",
+   "soru": "Ayetlerin okunuşunu anlamıyla eşleştir. (3. ve 5. ayet aynıdır.)",
+   "ciftler": [
+    {
+     "sol": "Ḳul yâ eyyühel kâfirûn",
+     "sag": "De ki: \"Ey Kâfirler!\""
+    },
+    {
+     "sol": "Lâ a'büdü mâ ta'büdûn",
+     "sag": "Ben sizin kulluk ettiklerinize kulluk etmem."
+    },
+    {
+     "sol": "Velâ entüm âbidûne mâ a'büd",
+     "sag": "Siz de benim kulluk ettiğime kulluk edecek değilsiniz."
+    },
+    {
+     "sol": "Velâ ene âbidümmâ abettüm",
+     "sag": "Ben sizin kulluk ettiklerinize kulluk edecek değilim."
+    },
+    {
+     "sol": "Leküm dînüküm veliye dîn",
+     "sag": "Sizin dininiz size, benim dinim de banadır."
+    }
+   ],
+   "aciklama": "Kâfirun suresinin okunuşu ve anlamı ayet ayet (s. 75–79)."
+  },
+  {
+   "id": "d2-33",
+   "konu": "u2k6",
+   "kavram": "1–3. Ayetler",
+   "tur": "secim",
+   "soru": "Kâfirun suresinin ilk üç ayeti hangi seçenekte doğru sırada verilmiştir?",
+   "secenekler": [
+    "Ḳul yâ eyyühel kâfirûn → Lâ a'büdü mâ ta'büdûn → Velâ entüm âbidûne mâ a'büd",
+    "Lâ a'büdü mâ ta'büdûn → Ḳul yâ eyyühel kâfirûn → Velâ entüm âbidûne mâ a'büd",
+    "Velâ entüm âbidûne mâ a'büd → Lâ a'büdü mâ ta'büdûn → Ḳul yâ eyyühel kâfirûn",
+    "Ḳul yâ eyyühel kâfirûn → Leküm dînüküm veliye dîn → Lâ a'büdü mâ ta'büdûn"
+   ],
+   "dogru": 0,
+   "aciklama": "Sure \"Ḳul\" ile başlar; \"Leküm dînüküm\" son ayettir (s. 75–79)."
+  },
+  {
+   "id": "d2-34",
+   "konu": "u2k6",
+   "kavram": "Kâfir",
+   "tur": "dy",
+   "ifade": "Kâfir, Allah'ı tek ve eşsiz kabul eden kişi demektir.",
+   "dogru": false,
+   "duzeltme": "Kâfir, Allah'ı tek ve eşsiz kabul etmeyen kişi demektir.",
+   "aciklama": "Kâfir, Allah'ın varlığını ve birliğini inkâr edendir (s. 75–79)."
+  },
+  {
+   "id": "d2-35",
+   "konu": "u2k6",
+   "kavram": "Okunduğu Zamanlar",
+   "tur": "kisa",
+   "soru": "Kâfirun suresi namazlarda hangi sureden sonra okunur?",
+   "yanit": "Fatiha",
+   "kabul": [
+    "fatiha suresi",
+    "fatihadan"
+   ],
+   "aciklama": "Namazlarda Fatiha suresinden sonra okunur (s. 75–79)."
+  },
+  {
+   "id": "d2-36",
+   "konu": "u2k6",
+   "kavram": "Surenin İnişi",
+   "tur": "secim",
+   "soru": "Kâfirun suresiyle ilgili şu bilgiler verilmiştir:",
+   "onculler": [
+    "Müşriklerin teklifini reddetmek için indirilmiştir.",
+    "Tevhitten taviz verilmeyeceğini vurgular.",
+    "Haccın nasıl yapılacağını anlatır."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Surede hac anlatılmaz; teklif reddedilir ve tevhit vurgulanır (s. 75–79)."
+  },
+  {
+   "id": "d2-37",
+   "konu": "u2k6",
+   "kavram": "Tevhit",
+   "tur": "bosluk",
+   "havuz": [
+    "yedi",
+    "şavt"
+   ],
+   "cumleler": [
+    {
+     "c": "Allah'ın birliğine inanmaya ___ denir.",
+     "cevap": "tevhit"
+    },
+    {
+     "c": "Kâfirun suresi ___ ayettir.",
+     "cevap": "altı"
+    },
+    {
+     "c": "Sure, Mekkeli ___ teklifini reddetmek için indi.",
+     "cevap": "müşriklerin"
+    }
+   ],
+   "aciklama": "Tevhit; altı ayet; müşriklerin teklifi (s. 75–79)."
   }
  ]
 }

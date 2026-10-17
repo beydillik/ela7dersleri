@@ -1,0 +1,300 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "2. Ünite: Hac, Umre ve Kurban",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–6 · s. 49–84",
+ "giris": "İkinci ünite bitti! Şimdi altı konunun hepsine kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce haccın şartlarını, kavramlarını ve yapılışını öğrendik; sonra haccın kazandırdıklarını ve umreyi gördük. Ardından kurban ibadetini ve hac ile kurbanın kültürümüzdeki güzel geleneklerini öğrendik. Son olarak Kâfirun suresiyle tevhitte kararlılığı öğrendik.",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3",
+  "u2k4",
+  "u2k5",
+  "u2k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Hac, gücü yeten Müslümana ömründe bir kez farzdır; hem mal hem bedenle yapılır.",
+    "İhram: hacca başlarken giyilen beyaz örtü; telbiye: \"Lebbeyk\" diye başlayan dua.",
+    "Tavaf Kâbe'nin etrafında 7 tur; say Safa ile Merve arasında 7 kez; vakfe Arafat'ta durmak."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Farzlar: ihram, Arafat vakfesi, tavaf.",
+    "Arafat'ta farz vakfe, Müzdelife'de vacip vakfe; Mina'da şeytan taşlanır ve kurban kesilir.",
+    "Say, tıraş, şeytan taşlama ve veda tavafı vaciptir."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Hac kalbi temizler; ihram alçak gönüllülüğü, vakfe sabrı hatırlatır.",
+    "Hac Müslümanları büyük bir aile gibi bir araya getirir.",
+    "Umre sünnettir: ihram, tavaf, say, tıraş; hac günleri dışında her zaman yapılabilir."
+   ]
+  },
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "Kurban Zilhicce 10–12'de kesilir, vaciptir; Hz. İbrahim'in teslimiyetine dayanır.",
+    "Koyun-keçi 1 kişi; sığır-manda-deve 7 kişiye kadar.",
+    "Et üçe bölünür: ihtiyaç sahipleri, akraba ve komşular, aile."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "Hacı dualarla uğurlanır; dönünce ziyaret edilir, zemzem ve hurma ikram eder.",
+    "Teşrik tekbiri Arife Günü sabahından bayramın 4. günü ikindisine kadar farz namazlardan sonra getirilir.",
+    "Akika yeni doğan için (sünnet), adak dilek için (vacip), şükür şükretmek için (müstehap)."
+   ]
+  },
+  {
+   "konu": "u2k6",
+   "maddeler": [
+    "Kâfirun suresi inkâr edenlere hitapla başlar; altı ayettir.",
+    "Müşriklerin teklifini reddetmek için indi; tevhitten taviz verilmez.",
+    "Ḳul yâ eyyühel kâfirûn · Lâ a'büdü mâ ta'büdûn · Velâ entüm âbidûne mâ a'büd · Velâ ene âbidümmâ abettüm · Velâ entüm âbidûne mâ a'büd · Leküm dînüküm veliye dîn"
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 20,
+ "gruplar": [
+  {
+   "soru": "Bu görev nerede yapılır?",
+   "kutular": [
+    {
+     "etiket": "Yalnız hacda",
+     "uyeler": [
+      "Vakfe",
+      "Arafat",
+      "Müzdelife"
+     ]
+    },
+    {
+     "etiket": "Hacda ve umrede",
+     "uyeler": [
+      "İhram",
+      "Tavaf",
+      "Say"
+     ]
+    },
+    {
+     "etiket": "Kurbanda",
+     "uyeler": [
+      "Kurbanlık Seçimi",
+      "Etin Paylaşımı",
+      "Kurban Tığlama"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Hükmü nedir?",
+   "kutular": [
+    {
+     "etiket": "Farz",
+     "uyeler": [
+      "Hac",
+      "Haccın Farzları"
+     ]
+    },
+    {
+     "etiket": "Vacip",
+     "uyeler": [
+      "Kurban",
+      "Adak Kurbanı",
+      "Haccın Vacipleri"
+     ]
+    },
+    {
+     "etiket": "Sünnet",
+     "uyeler": [
+      "Umre",
+      "Akika Kurbanı"
+     ]
+    },
+    {
+     "etiket": "Müstehap",
+     "uyeler": [
+      "Şükür Kurbanı"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kurban ibadeti hangi peygambere dayanır; say ise kimin su arayışını hatırlatır?",
+   "secenekler": [
+    "Hz. İbrahim – Hz. Hacer",
+    "Hz. Musa – Hz. Meryem",
+    "Hz. Nuh – Hz. Aişe"
+   ],
+   "dogru": 0,
+   "ipucu": "Hz. İbrahim'in ailesini hatırla: oğlu Hz. İsmail, eşi Hz. Hacer.",
+   "aciklama": "Kurban Hz. İbrahim'in teslimiyetine dayanır; say Hz. Hacer'in oğlu için su arayışını hatırlatır. (s. 57, 62)",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Hz. İbrahim'in Teslimiyeti"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Say"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisinin hükmü vaciptir?",
+   "secenekler": [
+    "Umre yapmak",
+    "Kurban Bayramı'nda kurban kesmek",
+    "Akika kurbanı kesmek"
+   ],
+   "dogru": 1,
+   "ipucu": "Umre ve akikanın hükmü aynıdır.",
+   "aciklama": "Kurban vaciptir; umre ve akika kurbanı sünnettir. (s. 58, 62, 72)",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Umre"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Kurban"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Akika Kurbanı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Üçünün hükmünü ayrı ayrı hatırla.",
+     "Umre sünnet, akika sünnet.",
+     "Geriye kalanın hükmü nedir?"
+    ]
+   }
+  },
+  {
+   "soru": "Teşrik tekbirinin başladığı gün hacı adayları nerede vakfe yapar?",
+   "secenekler": [
+    "Mina'da",
+    "Müzdelife'de",
+    "Arafat'ta"
+   ],
+   "dogru": 2,
+   "ipucu": "Teşrik tekbiri Arife Günü başlar. Arife Günü hangi vakfe yapılır?",
+   "aciklama": "Teşrik tekbiri Arife Günü başlar; Arife Günü Arafat'ta farz olan vakfe yapılır. (s. 53, 70)",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Teşrik Tekbiri"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Arafat"
+    }
+   ]
+  },
+  {
+   "soru": "Hz. İbrahim'in teslimiyeti ile Kâfirun suresindeki tevhit ortak olarak neyi anlatır?",
+   "secenekler": [
+    "Ticarette dürüst olmayı",
+    "Yalnızca Allah'a kulluk edip O'na bağlı olmayı",
+    "Yolculuğa hazırlanmayı"
+   ],
+   "dogru": 1,
+   "ipucu": "İkisi de Allah'a bağlılıkla ilgilidir.",
+   "aciklama": "Hz. İbrahim Allah'ın emrine teslim olmuştur; Kâfirun suresi de yalnız Allah'a kulluğu ve tevhitte kararlılığı anlatır. (s. 62, 75)",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Hz. İbrahim'in Teslimiyeti"
+    },
+    {
+     "konu": "u2k6",
+     "kavram": "Tevhit"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi kurban kesmenin şartıdır ama haccın şartları arasında sayılmaz?",
+   "secenekler": [
+    "Mukim olmak",
+    "Akıl sağlığı yerinde olmak",
+    "Ergenlik çağına girmiş olmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Hac bir yolculuktur. Kurban şartlarından hangisi yolculukla ilgilidir?",
+   "aciklama": "Mukim, yolculukta olmayan demektir; kurbanın şartıdır. Akıl ve ergenlik iki ibadette de şarttır. (s. 51, 62)",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Haccın Şartları"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Kurban Kesmenin Şartları"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "İki ibadette de olan şartları ele: akıllı olmak, ergenlik çağı.",
+     "Kalan şartın anlamını hatırla: yolculukta olmamak."
+    ]
+   }
+  },
+  {
+   "soru": "Kurban etinin paylaşılması ile hacdaki birlik ve kardeşlik ortak olarak neyi güçlendirir?",
+   "secenekler": [
+    "Bencilliği",
+    "Toplumda dayanışmayı",
+    "Yalnızlığı"
+   ],
+   "dogru": 1,
+   "ipucu": "İkisi de insanları birbirine yaklaştırır.",
+   "aciklama": "Kurban yardımlaşma ve dayanışmayı, hac da birlik ve kardeşliği güçlendirir. (s. 51, 64)",
+   "kaynak": [
+    {
+     "konu": "u2k4",
+     "kavram": "Etin Paylaşımı"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Birlik ve Kardeşlik"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi umrenin değil, Kurban Bayramı'nın bir parçasıdır?",
+   "secenekler": [
+    "Kâbe'yi tavaf etmek",
+    "Say yapmak",
+    "Teşrik tekbiri getirmek"
+   ],
+   "dogru": 2,
+   "ipucu": "Umrenin dört adımını say; listede olmayanı bul.",
+   "aciklama": "Umre ihram, tavaf, say ve tıraşla yapılır; teşrik tekbiri bayramda getirilir. (s. 58, 70)",
+   "kaynak": [
+    {
+     "konu": "u2k3",
+     "kavram": "Umrenin Yapılışı"
+    },
+    {
+     "konu": "u2k5",
+     "kavram": "Teşrik Tekbiri"
+    }
+   ]
+  }
+ ]
+}
