@@ -1,0 +1,296 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "3. Ünite: İslam Düşüncesinde Yorumlar",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–6 · s. 87–120",
+ "giris": "Üçüncü ünite bitti! Şimdi altı konunun hepsine kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce din ile din anlayışının farkını ve yorum farklılıklarının sebeplerini öğrendik. Sonra yorumları üç gruba ayırdık: inançla ilgili itikadi, ibadetle ilgili fıkhi, ahlakla ilgili tasavvufi yorumlar. Son olarak tasavvufi yorumların kültürümüze yansımalarını ve Alevilik Bektaşiliğin temel kavramlarını öğrendik.",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3",
+  "u3k4",
+  "u3k5",
+  "u3k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Din Allah'tan gelir, temel ilkeleri değişmez; din anlayışı insanların yorumudur, değişebilir.",
+    "Yorum farklılığının sebepleri: insanın yapısı, farklı coğrafya ve kültürler, kaynakların yorumlanması.",
+    "Dinin temel ilkelerine bağlı yorumlar ayrılık değil zenginliktir."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Yorum biçimleri: itikadi (inanç), fıkhi (ibadet), tasavvufi (ahlak).",
+    "Eşarilik: Ebülhasan Eşari; bazı konuların ancak vahiyle bilinebileceğini savunur.",
+    "Matüridilik: Ebu Mansur Matüridi; akli delilleri ön planda tutar."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Fıkıh: hak ve sorumlulukları ayrıntılı ele alan ilim; farklılık ayrıntılardadır.",
+    "Hanefilik: Ebu Hanife; Malikilik: Malik bin Enes (Medine).",
+    "Şafiilik: İmam Şafii; Hanbelilik: Ahmed bin Hanbel (hadis)."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Tasavvuf İslam'ın manevi yönünü öne çıkarır; amaç güzel ahlak ve Allah'a içtenlikle yönelmek.",
+    "Yesevilik: Ahmed Yesevi; Kadirilik: Abdülkadir Geylani; Nakşibendilik: Bahaeddin Nakşibend.",
+    "Mevlevilik: Mevlana (Konya, sema); Alevilik Bektaşilik: Hacı Bektaş Veli, Hz. Ali ve Ehlibeyt sevgisi."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Sema Mevlevilikte, semah Alevilik Bektaşilikte, zikir Kadirilik ve Nakşibendilikte.",
+    "Mesnevi – Mevlana, Divan-ı Hikmet – Ahmed Yesevi, Makalat – Hacı Bektaş Veli.",
+    "Tekke ve dergâhlarda ahlak öğretilir, ihtiyaç sahiplerine yemek verilir; Mevlana Haftası 7–17 Aralık."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Cem: bir araya gelmek; cemevinde yapılır; kurallarına erkân denir.",
+    "Görgü cemi bir yılın muhasebesi, ikrar cemi yola giriş, Abdal Musa cemi barışma içindir.",
+    "Gülbank \"Bismişah\" ile başlar; ocağın başında dede vardır; musahiplik yol kardeşliğidir."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 20,
+ "gruplar": [
+  {
+   "soru": "Bu yorum hangi gruba girer?",
+   "kutular": [
+    {
+     "etiket": "İtikadi (inanç)",
+     "uyeler": [
+      "Eşarilik",
+      "Matüridilik"
+     ]
+    },
+    {
+     "etiket": "Fıkhi (ibadet)",
+     "uyeler": [
+      "Hanefilik",
+      "Malikilik",
+      "Şafiilik",
+      "Hanbelilik"
+     ]
+    },
+    {
+     "etiket": "Tasavvufi (ahlak)",
+     "uyeler": [
+      "Yesevilik",
+      "Kadirilik",
+      "Mevlevilik",
+      "Nakşibendilik",
+      "Alevilik Bektaşilik"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Bu kavram hangi konuyla ilgili?",
+   "kutular": [
+    {
+     "etiket": "Din ve din anlayışı",
+     "uyeler": [
+      "Din",
+      "Din Anlayışı",
+      "Yorum Farklılıkları Zenginliktir"
+     ]
+    },
+    {
+     "etiket": "Tasavvuf kültürü",
+     "uyeler": [
+      "Mutasavvıf",
+      "Tasavvufi Eserler",
+      "Mevlana Haftası ve Şebiarus"
+     ]
+    },
+    {
+     "etiket": "Alevilik Bektaşilik",
+     "uyeler": [
+      "Cem ve Cemevi",
+      "Gülbank",
+      "Musahiplik"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi itikadi değil, tasavvufi bir yorumdur?",
+   "secenekler": [
+    "Matüridilik",
+    "Mevlevilik",
+    "Eşarilik"
+   ],
+   "dogru": 1,
+   "ipucu": "İtikadi yorumlar inançla, tasavvufi yorumlar ahlakla ilgilidir.",
+   "aciklama": "Eşarilik ve Matüridilik itikadi, Mevlevilik tasavvufi bir yorumdur. (s. 96, 102)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Matüridilik"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Mevlevilik"
+    }
+   ]
+  },
+  {
+   "soru": "Hanefilik ve Mevlevilik sırasıyla hangi yorum biçimlerine örnektir?",
+   "secenekler": [
+    "Fıkhi – tasavvufi",
+    "İtikadi – fıkhi",
+    "Tasavvufi – itikadi"
+   ],
+   "dogru": 0,
+   "ipucu": "Hanefilik ibadetle, Mevlevilik ahlakla ilgilidir.",
+   "aciklama": "Hanefilik fıkhi, Mevlevilik tasavvufi bir yorumdur. (s. 94, 99, 102)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Yorum Biçimleri"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Hanefilik"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Mevlevilik"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Önce Hanefiliğin konusunu hatırla: ibadet.",
+     "Sonra Mevleviliğin konusunu hatırla: ahlak.",
+     "İbadet ve ahlak hangi yorum adlarıyla anılıyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "Divan-ı Hikmet'in yazarı hangi tasavvufi yorumun kurucusudur?",
+   "secenekler": [
+    "Kadirilik",
+    "Yesevilik",
+    "Nakşibendilik"
+   ],
+   "dogru": 1,
+   "ipucu": "Hikmet şiirlerini kim yazıyordu?",
+   "aciklama": "Divan-ı Hikmet Ahmed Yesevi'nin eseridir; Yesevilik onun görüşlerine dayanır. (s. 101, 107)",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Tasavvufi Eserler"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Yesevilik"
+    }
+   ]
+  },
+  {
+   "soru": "Alevilik Bektaşilikteki semah hangi törenlerde yapılır?",
+   "secenekler": [
+    "Teravih namazında",
+    "Hac yolculuğunda",
+    "Cem törenlerinde"
+   ],
+   "dogru": 2,
+   "ipucu": "Alevilik Bektaşilikte bir araya gelinen ayinin adı neydi?",
+   "aciklama": "Semah, Alevi ve Bektaşilerin cem törenlerinde dönerek yapılan ritüeldir. (s. 111, Kitap Sözlüğü)",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Sema, Semah ve Zikir"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Cem ve Cemevi"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi yorum farklılıklarının zenginlik olduğunu gösteren bir örnektir?",
+   "secenekler": [
+    "Herkesin aynı şekilde düşünmesi",
+    "Yorumların yasaklanması",
+    "Tasavvufi yorumların edebiyat, mimari ve musikiye katkı sağlaması"
+   ],
+   "dogru": 2,
+   "ipucu": "Zenginlik, farklılıkların kültüre bir şey katmasıdır.",
+   "aciklama": "Yorumlar kültürel zenginliğe katkı sağlar; tasavvufun etkisi edebiyat, mimari ve musikide görülür. (s. 92, 106)",
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Yorum Farklılıkları Zenginliktir"
+    },
+    {
+     "konu": "u3k5",
+     "kavram": "Tasavvufi Eserler"
+    }
+   ]
+  },
+  {
+   "soru": "Ahmed Yesevi, Hacı Bektaş Veli ve Mevlana'nın ortak özelliği hangisidir?",
+   "secenekler": [
+    "Dört fıkhi mezhebin kurucularıdır.",
+    "Görüşleri Anadolu'nun İslamlaşmasında belirleyici rol oynayan mutasavvıflardır.",
+    "İtikadi mezheplerin kurucularıdır."
+   ],
+   "dogru": 1,
+   "ipucu": "Üçü de tasavvufi yorumlarla ilgili isimlerdir.",
+   "aciklama": "Üçü de görüşleri Anadolu'nun İslamlaşmasında belirleyici olan mutasavvıflardır. (s. 106)",
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Mutasavvıf"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Yesevilik"
+    },
+    {
+     "konu": "u3k4",
+     "kavram": "Alevilik Bektaşilik"
+    }
+   ]
+  },
+  {
+   "soru": "Eşarilik ve Şafiilik Türkiye'nin hangi bölgelerinde yaygındır?",
+   "secenekler": [
+    "Ege ve Marmara",
+    "Karadeniz",
+    "Doğu ve Güneydoğu Anadolu"
+   ],
+   "dogru": 2,
+   "ipucu": "İki mezhep de aynı iki bölgede yaygındır.",
+   "aciklama": "Eşarilik ve Şafiilik Türkiye'de Doğu ve Güneydoğu Anadolu'da yaygındır. (s. 97, 99)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Yaygın Oldukları Yerler"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Şafiilik"
+    }
+   ]
+  }
+ ]
+}

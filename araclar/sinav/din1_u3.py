@@ -2,6 +2,7 @@ import sys, os; sys.path.insert(0, os.path.dirname(__file__))
 from ortak import Havuz, ONC
 H = Havuz("din1", 3, "d3"); a = H.add
 K1, K2, K3 = "(s. 87–93)", "(s. 94–97)", "(s. 98–99)"
+K4, K5, K6 = "(s. 100–105)", "(s. 106–109)", "(s. 110–115)"
 
 # --- Konu 1: Din Anlayışındaki Yorum Farklılıkları
 a("u3k1", "Din", "dy", ifade="Din, kişiye ve zamana göre değişir.", dogru=False,
@@ -83,5 +84,92 @@ a("u3k3", "Hanbelilik", "bosluk", havuz=["Basra", "tefsir"], cumleler=[
   {"c": "İmam Malik hayatını ___ şehrinde geçirdi.", "cevap": "Medine"},
   {"c": "Ebu Hanife'nin asıl adı ___ bin Sabit'tir.", "cevap": "Numan"}],
   aciklama=f"Hanbel – hadis, Malik – Medine, Ebu Hanife – Numan bin Sabit {K3}.")
+
+# --- Konu 4: Tasavvufi Yorumlar
+a("u3k4", "Yesevilik", "eslestir", soru="Tasavvufi yorumları dayandıkları kişiyle eşleştir.", ciftler=[
+  {"sol": "Yesevilik", "sag": "Ahmed Yesevi"}, {"sol": "Kadirilik", "sag": "Abdülkadir Geylani"},
+  {"sol": "Mevlevilik", "sag": "Mevlana Celaleddin Rumi"}, {"sol": "Nakşibendilik", "sag": "Bahaeddin Nakşibend"},
+  {"sol": "Bektaşilik", "sag": "Hacı Bektaş Veli"}],
+  aciklama=f"Her tasavvufi yorum kurucusunun adıyla anılır {K4}.")
+a("u3k4", "Tasavvufi Yorumların Amaçları", "dytablo", soru="Tasavvufi yorumların amaçlarından olanlara D, olmayanlara Y seç.", ifadeler=[
+  {"s": "Allah'a içtenlikle yönelmek", "d": True}, {"s": "Hz. Peygamber'i örnek almak", "d": True},
+  {"s": "Zengin ve ünlü olmak", "d": False}, {"s": "İbadet bilinci kazanmak", "d": True}],
+  aciklama=f"Zengin ve ünlü olmak tasavvufun amaçlarından değildir {K4}.")
+a("u3k4", "Alevilik Bektaşilik", "dy", ifade="Alevilik ile Bektaşilik aynı şeydir.", dogru=False,
+  duzeltme="Aynı şey değildir; ama ikisinde de Hz. Ali ve Ehlibeyt sevgisi ön plandadır.",
+  aciklama=f"İkisi aynı değildir; ortak noktaları Hz. Ali ve Ehlibeyt sevgisidir {K4}.")
+a("u3k4", "Tasavvuf", "secim", soru="Hangisi başlıca tasavvufi yorumlardan biri değildir?",
+  secenekler=["Kadirilik", "Nakşibendilik", "Malikilik", "Yesevilik"], dogru=2,
+  aciklama=f"Malikilik fıkhi bir yorumdur {K4}.")
+a("u3k4", "Mevlevilik", "bosluk", havuz=["Buhara", "Yesi"], cumleler=[
+  {"c": "Mevlana bugünkü Afganistan'daki ___ şehrinde doğdu.", "cevap": "Belh"},
+  {"c": "Mevlana daha sonra ___ şehrine yerleşti.", "cevap": "Konya"},
+  {"c": "Mevlevi dervişlerinin musiki eşliğinde dönerek zikretmesine ___ denir.", "cevap": "sema"}],
+  aciklama=f"Mevlana Belh'te doğdu, Konya'ya yerleşti; Mevlevilikte sema öne çıkar {K4}.")
+a("u3k4", "Kadirilik", "secim", soru="Bir tasavvufi yorumla ilgili şu bilgiler verilmiştir:",
+  onculler=["Abdülkadir Geylani'nin görüşlerine dayanır.", "Kurucusu Bağdat'ta ilim öğrenmiştir.", "Irak başta olmak üzere hemen her yerde kabul görmüştür."],
+  kok="Bu bilgiler hangi tasavvufi yorumla ilgilidir?", secenekler=["Yesevilik", "Kadirilik", "Mevlevilik", "Nakşibendilik"], dogru=1,
+  aciklama=f"Üç bilgi de Kadiriliğe aittir {K4}.")
+a("u3k4", "Yesevilik", "kisa", soru="Ahmed Yesevi'nin tasavvufu sade bir dille anlattığı şiirlere ne ad verilir?",
+  yanit="hikmet", kabul=["hikmetler"], aciklama=f"Bu şiirlere hikmet denir {K4}.")
+
+# --- Konu 5: Kültürümüzdeki Tasavvufi Yorumlar
+a("u3k5", "Tasavvufi Eserler", "eslestir", soru="Eserleri yazarlarıyla eşleştir.", ciftler=[
+  {"sol": "Mesnevi", "sag": "Mevlana"}, {"sol": "Divan-ı Hikmet", "sag": "Ahmed Yesevi"},
+  {"sol": "Makalat", "sag": "Hacı Bektaş Veli"}, {"sol": "Fütûhu'l-Gayb", "sag": "Abdülkadir Geylani"}],
+  aciklama=f"Bu eserler tasavvufi düşünceleri aktaran en bilinen eserlerdendir {K5}.")
+a("u3k5", "Mevlana'nın Yedi Öğüdü", "eslestir", soru="Mevlana'nın öğütlerini benzetmeleriyle eşleştir.", ciftler=[
+  {"sol": "Cömertlik ve yardımda", "sag": "Akarsu gibi ol"}, {"sol": "Şefkat ve merhamette", "sag": "Güneş gibi ol"},
+  {"sol": "Kusur örtmede", "sag": "Gece gibi ol"}, {"sol": "Alçak gönüllülükte", "sag": "Toprak gibi ol"},
+  {"sol": "Hoşgörüde", "sag": "Deniz gibi ol"}],
+  aciklama=f"Mevlana güzel ahlakı doğadan benzetmelerle anlatır {K5}.")
+a("u3k5", "Sosyal Yardımlaşma", "dy", ifade="Tekke ve dergâhlarda yalnızca Müslümanlara yemek verilmiştir.", dogru=False,
+  duzeltme="Müslüman olsun ya da olmasın ihtiyaç sahibi herkes yemek ve barınma bulmuştur.",
+  aciklama=f"İhtiyaç sahibi herkes, Müslüman olsun olmasın, yardım bulmuştur {K5}.")
+a("u3k5", "Mevlana Haftası ve Şebiarus", "secim", soru="Mevlana Haftası hangi tarihler arasında düzenlenir?",
+  secenekler=["1–7 Ocak", "7–17 Aralık", "10–20 Mart", "23–30 Nisan"], dogru=1,
+  aciklama=f"Mevlana Haftası her yıl 7–17 Aralık arasındadır {K5}.")
+a("u3k5", "Sema, Semah ve Zikir", "bosluk", havuz=["telbiye", "vakfe"], cumleler=[
+  {"c": "Mevlevilikte ___ öne çıkar.", "cevap": "sema"},
+  {"c": "Alevilik Bektaşilikte ___ öne çıkar.", "cevap": "semah"},
+  {"c": "Kadirilik ve Nakşibendilikte ___ öne çıkar.", "cevap": "zikir"}],
+  aciklama=f"Sema Mevlevilikte, semah Alevilik Bektaşilikte, zikir Kadirilik ve Nakşibendilikte {K5}.")
+a("u3k5", "Mutasavvıf", "kisa", soru="İslam'ın ahlaki değerlerini öne çıkaran, ahlaklı bireyler yetiştirmeye çalışan kimseye ne denir?",
+  yanit="mutasavvıf", kabul=["mutasavvif", "mutasavvıflar"], aciklama=f"Böyle kimseye mutasavvıf denir {K5}.")
+a("u3k5", "Tekke, Zaviye ve Dergâh", "dytablo", soru="Tekke, zaviye ve dergâhla ilgili doğrulara D, yanlışlara Y seç.", ifadeler=[
+  {"s": "Ahlak ve adap kuralları öğretilir.", "d": True},
+  {"s": "Aynı tasavvufi görüşü benimseyenler bir araya gelir.", "d": True},
+  {"s": "Zaviye büyük bir saray demektir.", "d": False}],
+  aciklama=f"Zaviye \"küçük tekke\" demektir {K5}.")
+
+# --- Konu 6: Alevilik Bektaşilik
+a("u3k6", "Görgü Cemi", "eslestir", soru="Cem çeşitlerini amaçlarıyla eşleştir.", ciftler=[
+  {"sol": "Görgü cemi", "sag": "Bir yılın muhasebesi yapılır"},
+  {"sol": "İkrar cemi", "sag": "Yola girdiğini sözlü olarak ifade eder"},
+  {"sol": "Abdal Musa cemi", "sag": "Dargınlar barıştırılır"}],
+  aciklama=f"Üç cemin amacı farklıdır: muhasebe, yola giriş, barışma {K6}.")
+a("u3k6", "Cem ve Cemevi", "eslestir", soru="Kavramları tanımlarıyla eşleştir.", ciftler=[
+  {"sol": "Cemevi", "sag": "Ayinicemlerin yapıldığı yer"}, {"sol": "Erkân", "sag": "Cemin usulü ve kuralları"},
+  {"sol": "Musahiplik", "sag": "Yol kardeşliği"}, {"sol": "Gülbank", "sag": "Bismişah ile başlayan dua"},
+  {"sol": "Dede", "sag": "Erkânları yöneten önder"}],
+  aciklama=f"Bu kavramlar Alevilik Bektaşiliğin temel kavramlarıdır {K6}.")
+a("u3k6", "Abdal Musa Cemi", "dy", ifade="Abdal Musa ceminde kişiyi yola alma amacı vardır.", dogru=False,
+  duzeltme="Abdal Musa ceminde yola alınma ya da görgü amacı yoktur; amaç barıştırmaktır.",
+  aciklama=f"Abdal Musa cemi dargınları barıştırmak için yapılır {K6}.")
+a("u3k6", "Gülbank", "secim", soru="Gülbankle ilgili şu bilgiler verilmiştir:",
+  onculler=["\"Bismişah\" sözüyle başlar.", "\"Hû, Allah Allah\" ifadeleriyle biter.", "Yalnızca cenazelerde okunur."],
+  kok="Bu bilgilerden hangileri doğrudur?", secenekler=ONC, dogru=1,
+  aciklama=f"Gülbank ikrar, ad koyma, sofra gibi pek çok durumda okunur {K6}.")
+a("u3k6", "Erkân ve On İki Hizmet", "kisa", soru="Cem erkânında On iki imam'a nispetle yapılan görevlerin genel adı nedir?",
+  yanit="on iki hizmet", kabul=["oniki hizmet", "12 hizmet"], aciklama=f"Bu görevlere on iki hizmet denir {K6}.")
+a("u3k6", "Dede ve Ocak", "bosluk", havuz=["rehber", "yolculuk"], cumleler=[
+  {"c": "Ocakların başında ___ bulunur.", "cevap": "dede"},
+  {"c": "Musahiplik, Hz. Peygamber'in ensar ve ___ kardeş ilan etmesine dayanır.", "cevap": "muhaciri"},
+  {"c": "Cem sözlükte bir araya gelmek, ___ anlamına gelir.", "cevap": "toplanmak"}],
+  aciklama=f"Ocağın başında dede vardır; musahiplik ensar-muhacir kardeşliğine dayanır {K6}.")
+a("u3k6", "İkrar Cemi", "secim",
+  soru="Ali, Alevilik Bektaşilik yoluna girdiğini dede ve topluluk önünde sözlü olarak ifade edecek. Hangi cem düzenlenir?",
+  secenekler=["Görgü cemi", "Abdal Musa cemi", "İkrar cemi", "Şebiarus töreni"], dogru=2,
+  aciklama=f"Yola girdiğini sözlü olarak ifade etmek için ikrar cemi yapılır {K6}.")
 
 H.yaz()

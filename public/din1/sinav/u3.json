@@ -340,6 +340,422 @@
     }
    ],
    "aciklama": "Hanbel – hadis, Malik – Medine, Ebu Hanife – Numan bin Sabit (s. 98–99)."
+  },
+  {
+   "id": "d3-19",
+   "konu": "u3k4",
+   "kavram": "Yesevilik",
+   "tur": "eslestir",
+   "soru": "Tasavvufi yorumları dayandıkları kişiyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Yesevilik",
+     "sag": "Ahmed Yesevi"
+    },
+    {
+     "sol": "Kadirilik",
+     "sag": "Abdülkadir Geylani"
+    },
+    {
+     "sol": "Mevlevilik",
+     "sag": "Mevlana Celaleddin Rumi"
+    },
+    {
+     "sol": "Nakşibendilik",
+     "sag": "Bahaeddin Nakşibend"
+    },
+    {
+     "sol": "Bektaşilik",
+     "sag": "Hacı Bektaş Veli"
+    }
+   ],
+   "aciklama": "Her tasavvufi yorum kurucusunun adıyla anılır (s. 100–105)."
+  },
+  {
+   "id": "d3-20",
+   "konu": "u3k4",
+   "kavram": "Tasavvufi Yorumların Amaçları",
+   "tur": "dytablo",
+   "soru": "Tasavvufi yorumların amaçlarından olanlara D, olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Allah'a içtenlikle yönelmek",
+     "d": true
+    },
+    {
+     "s": "Hz. Peygamber'i örnek almak",
+     "d": true
+    },
+    {
+     "s": "Zengin ve ünlü olmak",
+     "d": false
+    },
+    {
+     "s": "İbadet bilinci kazanmak",
+     "d": true
+    }
+   ],
+   "aciklama": "Zengin ve ünlü olmak tasavvufun amaçlarından değildir (s. 100–105)."
+  },
+  {
+   "id": "d3-21",
+   "konu": "u3k4",
+   "kavram": "Alevilik Bektaşilik",
+   "tur": "dy",
+   "ifade": "Alevilik ile Bektaşilik aynı şeydir.",
+   "dogru": false,
+   "duzeltme": "Aynı şey değildir; ama ikisinde de Hz. Ali ve Ehlibeyt sevgisi ön plandadır.",
+   "aciklama": "İkisi aynı değildir; ortak noktaları Hz. Ali ve Ehlibeyt sevgisidir (s. 100–105)."
+  },
+  {
+   "id": "d3-22",
+   "konu": "u3k4",
+   "kavram": "Tasavvuf",
+   "tur": "secim",
+   "soru": "Hangisi başlıca tasavvufi yorumlardan biri değildir?",
+   "secenekler": [
+    "Kadirilik",
+    "Nakşibendilik",
+    "Malikilik",
+    "Yesevilik"
+   ],
+   "dogru": 2,
+   "aciklama": "Malikilik fıkhi bir yorumdur (s. 100–105)."
+  },
+  {
+   "id": "d3-23",
+   "konu": "u3k4",
+   "kavram": "Mevlevilik",
+   "tur": "bosluk",
+   "havuz": [
+    "Buhara",
+    "Yesi"
+   ],
+   "cumleler": [
+    {
+     "c": "Mevlana bugünkü Afganistan'daki ___ şehrinde doğdu.",
+     "cevap": "Belh"
+    },
+    {
+     "c": "Mevlana daha sonra ___ şehrine yerleşti.",
+     "cevap": "Konya"
+    },
+    {
+     "c": "Mevlevi dervişlerinin musiki eşliğinde dönerek zikretmesine ___ denir.",
+     "cevap": "sema"
+    }
+   ],
+   "aciklama": "Mevlana Belh'te doğdu, Konya'ya yerleşti; Mevlevilikte sema öne çıkar (s. 100–105)."
+  },
+  {
+   "id": "d3-24",
+   "konu": "u3k4",
+   "kavram": "Kadirilik",
+   "tur": "secim",
+   "soru": "Bir tasavvufi yorumla ilgili şu bilgiler verilmiştir:",
+   "onculler": [
+    "Abdülkadir Geylani'nin görüşlerine dayanır.",
+    "Kurucusu Bağdat'ta ilim öğrenmiştir.",
+    "Irak başta olmak üzere hemen her yerde kabul görmüştür."
+   ],
+   "kok": "Bu bilgiler hangi tasavvufi yorumla ilgilidir?",
+   "secenekler": [
+    "Yesevilik",
+    "Kadirilik",
+    "Mevlevilik",
+    "Nakşibendilik"
+   ],
+   "dogru": 1,
+   "aciklama": "Üç bilgi de Kadiriliğe aittir (s. 100–105)."
+  },
+  {
+   "id": "d3-25",
+   "konu": "u3k4",
+   "kavram": "Yesevilik",
+   "tur": "kisa",
+   "soru": "Ahmed Yesevi'nin tasavvufu sade bir dille anlattığı şiirlere ne ad verilir?",
+   "yanit": "hikmet",
+   "kabul": [
+    "hikmetler"
+   ],
+   "aciklama": "Bu şiirlere hikmet denir (s. 100–105)."
+  },
+  {
+   "id": "d3-26",
+   "konu": "u3k5",
+   "kavram": "Tasavvufi Eserler",
+   "tur": "eslestir",
+   "soru": "Eserleri yazarlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Mesnevi",
+     "sag": "Mevlana"
+    },
+    {
+     "sol": "Divan-ı Hikmet",
+     "sag": "Ahmed Yesevi"
+    },
+    {
+     "sol": "Makalat",
+     "sag": "Hacı Bektaş Veli"
+    },
+    {
+     "sol": "Fütûhu'l-Gayb",
+     "sag": "Abdülkadir Geylani"
+    }
+   ],
+   "aciklama": "Bu eserler tasavvufi düşünceleri aktaran en bilinen eserlerdendir (s. 106–109)."
+  },
+  {
+   "id": "d3-27",
+   "konu": "u3k5",
+   "kavram": "Mevlana'nın Yedi Öğüdü",
+   "tur": "eslestir",
+   "soru": "Mevlana'nın öğütlerini benzetmeleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Cömertlik ve yardımda",
+     "sag": "Akarsu gibi ol"
+    },
+    {
+     "sol": "Şefkat ve merhamette",
+     "sag": "Güneş gibi ol"
+    },
+    {
+     "sol": "Kusur örtmede",
+     "sag": "Gece gibi ol"
+    },
+    {
+     "sol": "Alçak gönüllülükte",
+     "sag": "Toprak gibi ol"
+    },
+    {
+     "sol": "Hoşgörüde",
+     "sag": "Deniz gibi ol"
+    }
+   ],
+   "aciklama": "Mevlana güzel ahlakı doğadan benzetmelerle anlatır (s. 106–109)."
+  },
+  {
+   "id": "d3-28",
+   "konu": "u3k5",
+   "kavram": "Sosyal Yardımlaşma",
+   "tur": "dy",
+   "ifade": "Tekke ve dergâhlarda yalnızca Müslümanlara yemek verilmiştir.",
+   "dogru": false,
+   "duzeltme": "Müslüman olsun ya da olmasın ihtiyaç sahibi herkes yemek ve barınma bulmuştur.",
+   "aciklama": "İhtiyaç sahibi herkes, Müslüman olsun olmasın, yardım bulmuştur (s. 106–109)."
+  },
+  {
+   "id": "d3-29",
+   "konu": "u3k5",
+   "kavram": "Mevlana Haftası ve Şebiarus",
+   "tur": "secim",
+   "soru": "Mevlana Haftası hangi tarihler arasında düzenlenir?",
+   "secenekler": [
+    "1–7 Ocak",
+    "7–17 Aralık",
+    "10–20 Mart",
+    "23–30 Nisan"
+   ],
+   "dogru": 1,
+   "aciklama": "Mevlana Haftası her yıl 7–17 Aralık arasındadır (s. 106–109)."
+  },
+  {
+   "id": "d3-30",
+   "konu": "u3k5",
+   "kavram": "Sema, Semah ve Zikir",
+   "tur": "bosluk",
+   "havuz": [
+    "telbiye",
+    "vakfe"
+   ],
+   "cumleler": [
+    {
+     "c": "Mevlevilikte ___ öne çıkar.",
+     "cevap": "sema"
+    },
+    {
+     "c": "Alevilik Bektaşilikte ___ öne çıkar.",
+     "cevap": "semah"
+    },
+    {
+     "c": "Kadirilik ve Nakşibendilikte ___ öne çıkar.",
+     "cevap": "zikir"
+    }
+   ],
+   "aciklama": "Sema Mevlevilikte, semah Alevilik Bektaşilikte, zikir Kadirilik ve Nakşibendilikte (s. 106–109)."
+  },
+  {
+   "id": "d3-31",
+   "konu": "u3k5",
+   "kavram": "Mutasavvıf",
+   "tur": "kisa",
+   "soru": "İslam'ın ahlaki değerlerini öne çıkaran, ahlaklı bireyler yetiştirmeye çalışan kimseye ne denir?",
+   "yanit": "mutasavvıf",
+   "kabul": [
+    "mutasavvif",
+    "mutasavvıflar"
+   ],
+   "aciklama": "Böyle kimseye mutasavvıf denir (s. 106–109)."
+  },
+  {
+   "id": "d3-32",
+   "konu": "u3k5",
+   "kavram": "Tekke, Zaviye ve Dergâh",
+   "tur": "dytablo",
+   "soru": "Tekke, zaviye ve dergâhla ilgili doğrulara D, yanlışlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Ahlak ve adap kuralları öğretilir.",
+     "d": true
+    },
+    {
+     "s": "Aynı tasavvufi görüşü benimseyenler bir araya gelir.",
+     "d": true
+    },
+    {
+     "s": "Zaviye büyük bir saray demektir.",
+     "d": false
+    }
+   ],
+   "aciklama": "Zaviye \"küçük tekke\" demektir (s. 106–109)."
+  },
+  {
+   "id": "d3-33",
+   "konu": "u3k6",
+   "kavram": "Görgü Cemi",
+   "tur": "eslestir",
+   "soru": "Cem çeşitlerini amaçlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Görgü cemi",
+     "sag": "Bir yılın muhasebesi yapılır"
+    },
+    {
+     "sol": "İkrar cemi",
+     "sag": "Yola girdiğini sözlü olarak ifade eder"
+    },
+    {
+     "sol": "Abdal Musa cemi",
+     "sag": "Dargınlar barıştırılır"
+    }
+   ],
+   "aciklama": "Üç cemin amacı farklıdır: muhasebe, yola giriş, barışma (s. 110–115)."
+  },
+  {
+   "id": "d3-34",
+   "konu": "u3k6",
+   "kavram": "Cem ve Cemevi",
+   "tur": "eslestir",
+   "soru": "Kavramları tanımlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Cemevi",
+     "sag": "Ayinicemlerin yapıldığı yer"
+    },
+    {
+     "sol": "Erkân",
+     "sag": "Cemin usulü ve kuralları"
+    },
+    {
+     "sol": "Musahiplik",
+     "sag": "Yol kardeşliği"
+    },
+    {
+     "sol": "Gülbank",
+     "sag": "Bismişah ile başlayan dua"
+    },
+    {
+     "sol": "Dede",
+     "sag": "Erkânları yöneten önder"
+    }
+   ],
+   "aciklama": "Bu kavramlar Alevilik Bektaşiliğin temel kavramlarıdır (s. 110–115)."
+  },
+  {
+   "id": "d3-35",
+   "konu": "u3k6",
+   "kavram": "Abdal Musa Cemi",
+   "tur": "dy",
+   "ifade": "Abdal Musa ceminde kişiyi yola alma amacı vardır.",
+   "dogru": false,
+   "duzeltme": "Abdal Musa ceminde yola alınma ya da görgü amacı yoktur; amaç barıştırmaktır.",
+   "aciklama": "Abdal Musa cemi dargınları barıştırmak için yapılır (s. 110–115)."
+  },
+  {
+   "id": "d3-36",
+   "konu": "u3k6",
+   "kavram": "Gülbank",
+   "tur": "secim",
+   "soru": "Gülbankle ilgili şu bilgiler verilmiştir:",
+   "onculler": [
+    "\"Bismişah\" sözüyle başlar.",
+    "\"Hû, Allah Allah\" ifadeleriyle biter.",
+    "Yalnızca cenazelerde okunur."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Gülbank ikrar, ad koyma, sofra gibi pek çok durumda okunur (s. 110–115)."
+  },
+  {
+   "id": "d3-37",
+   "konu": "u3k6",
+   "kavram": "Erkân ve On İki Hizmet",
+   "tur": "kisa",
+   "soru": "Cem erkânında On iki imam'a nispetle yapılan görevlerin genel adı nedir?",
+   "yanit": "on iki hizmet",
+   "kabul": [
+    "oniki hizmet",
+    "12 hizmet"
+   ],
+   "aciklama": "Bu görevlere on iki hizmet denir (s. 110–115)."
+  },
+  {
+   "id": "d3-38",
+   "konu": "u3k6",
+   "kavram": "Dede ve Ocak",
+   "tur": "bosluk",
+   "havuz": [
+    "rehber",
+    "yolculuk"
+   ],
+   "cumleler": [
+    {
+     "c": "Ocakların başında ___ bulunur.",
+     "cevap": "dede"
+    },
+    {
+     "c": "Musahiplik, Hz. Peygamber'in ensar ve ___ kardeş ilan etmesine dayanır.",
+     "cevap": "muhaciri"
+    },
+    {
+     "c": "Cem sözlükte bir araya gelmek, ___ anlamına gelir.",
+     "cevap": "toplanmak"
+    }
+   ],
+   "aciklama": "Ocağın başında dede vardır; musahiplik ensar-muhacir kardeşliğine dayanır (s. 110–115)."
+  },
+  {
+   "id": "d3-39",
+   "konu": "u3k6",
+   "kavram": "İkrar Cemi",
+   "tur": "secim",
+   "soru": "Ali, Alevilik Bektaşilik yoluna girdiğini dede ve topluluk önünde sözlü olarak ifade edecek. Hangi cem düzenlenir?",
+   "secenekler": [
+    "Görgü cemi",
+    "Abdal Musa cemi",
+    "İkrar cemi",
+    "Şebiarus töreni"
+   ],
+   "dogru": 2,
+   "aciklama": "Yola girdiğini sözlü olarak ifade etmek için ikrar cemi yapılır (s. 110–115)."
   }
  ]
 }
