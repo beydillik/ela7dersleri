@@ -3,14 +3,14 @@
 Yeni sohbet bu dosyayı okuyarak devam eder. Çalışma yöntemi `ela-ders-defteri` skill'indedir (özellikle bölüm 9–10 ve Yayın kuralı). Depo `beydillik/ela7dersleri`, çalışma dalı `taslak`.
 
 ## Durum
-- Bütün dersler (tr1, mat1, fen1, ing1, own1, sos1) `taslak` dalında. Taslakta canlıda olmayan 127 değişiklik var; canlıda olup taslakta olmayan yok → `git merge --ff-only` mümkün, yayın kayıpsız (17 Ekim kontrolü).
+- Bütün dersler (tr1, mat1, fen1, ing1, own1, sos1) `taslak` dalında. 17 Ekim'de taslak canlıya alındı (`main` = `taslak`, 1e04e85).
 - Faz 1 ✅ izleme/robot koç. Faz 2 ✅ Sınav Provası (anında sonuç, inceleme, yeniden çözme), okuma beklemesi + "Neden yanlış yaptın?", bütün derslerin soru havuzları (374 soru). Faz 3 ✅ kod (Firebase Veli Paneli + eşitleme) — **canlı Firebase denemesi yapılmadı**.
 - Ela'nın ilerlemesi tarayıcıda taslak adresine bağlı; canlıya kendiliğinden geçmez (taşıma: bulut ya da Veli Paneli → Tam yedek).
 
 ## Kararlaştırılan sıra (Kemal onayladı, 17 Ekim)
-1. Faz 3 denemesi taslakta (Kemal yapar, Claude hata çıkarsa düzeltir)
-2. Yayın: taslak → main (tek yayın, 15 kredi; önce onay sorusu)
-3. Din Kültürü + Bilişim (taslakta, ara duraksız, yalnız ünite sonu taraması + Sınav Provası havuzu) → ikinci yayın (15 kredi; kredi azsa 25 Ekim yenilemesinden sonra)
+1. ✅ Faz 3 denemesi taslakta (17 Ekim, Kemal yaptı)
+2. ✅ Yayın: taslak → main (17 Ekim 17:51, 128 değişiklik, 15 kredi; kalan ~23,6). Canlıda cihaz bağlama ve robot kontrolü Kemal'de.
+3. Din Kültürü + Bilişim (taslakta, ara duraksız, yalnız ünite sonu taraması + Sınav Provası havuzu; her ders ayrı Claude projesi) → ikinci yayın 25 Ekim kredi yenilemesinden sonra (yayın dışı tüketim nedeniyle; Kemal ile kararlaştırıldı)
 4. Faz 4: KVKK ve diğer velilere açılış
 
 ## 1. Faz 3 denemesi (Kemal için adımlar)
