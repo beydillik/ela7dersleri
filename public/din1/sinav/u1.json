@@ -1,0 +1,300 @@
+{
+ "unite": 1,
+ "ders": "din1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "d1-01",
+   "konu": "u1k1",
+   "kavram": "Âlem",
+   "tur": "kisa",
+   "soru": "Allah'ın yarattığı bütün varlıklara ne ad verilir?",
+   "yanit": "âlem",
+   "kabul": [
+    "alem"
+   ],
+   "aciklama": "Yaratılan her şeye âlem denir (s. 14–17)."
+  },
+  {
+   "id": "d1-02",
+   "konu": "u1k1",
+   "kavram": "Görülebilen Varlıklar",
+   "tur": "dytablo",
+   "soru": "Gözle ya da araçla görülebilenlere D, görülemeyenlere Y seç.",
+   "ifadeler": [
+    {
+     "s": "Dağ",
+     "d": true
+    },
+    {
+     "s": "Melek",
+     "d": false
+    },
+    {
+     "s": "Mikrop (mikroskopla)",
+     "d": true
+    },
+    {
+     "s": "Merhamet",
+     "d": false
+    }
+   ],
+   "aciklama": "Dağ ve mikrop görülebilir; melek ve merhamet görülemez (s. 14–17)."
+  },
+  {
+   "id": "d1-03",
+   "konu": "u1k1",
+   "kavram": "Gayb",
+   "tur": "dy",
+   "ifade": "Gaybı yalnızca Allah bilir.",
+   "dogru": true,
+   "aciklama": "Kur'an'a göre gaybı yalnızca Allah bilir (s. 14–17)."
+  },
+  {
+   "id": "d1-04",
+   "konu": "u1k1",
+   "kavram": "Cin",
+   "tur": "dy",
+   "ifade": "Cinlerin hiçbir sorumluluğu yoktur.",
+   "dogru": false,
+   "duzeltme": "Cinler de insanlar gibi Allah'ın emirlerinden sorumludur.",
+   "aciklama": "Cinler de kulluk için yaratılmıştır, sorumludur (s. 14–17)."
+  },
+  {
+   "id": "d1-05",
+   "konu": "u1k1",
+   "kavram": "Şeytan",
+   "tur": "secim",
+   "soru": "Şeytanla ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "Cinlerdendir.",
+    "Hz. Âdem için saygıyla eğilmedi.",
+    "Nurdan yaratılmıştır."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Şeytan cinlerdendir ve emre karşı geldi; nurdan yaratılanlar meleklerdir (s. 14–17)."
+  },
+  {
+   "id": "d1-06",
+   "konu": "u1k1",
+   "kavram": "Melek",
+   "tur": "bosluk",
+   "havuz": [
+    "topraktan",
+    "insanlar"
+   ],
+   "cumleler": [
+    {
+     "c": "Melekler ___ yaratılmıştır.",
+     "cevap": "nurdan"
+    },
+    {
+     "c": "Görülemeyen varlıklar Kur'an'da ___ kavramıyla anlatılır.",
+     "cevap": "gayb"
+    },
+    {
+     "c": "Akıl, sevgi ve ___ gözle görülmez ama vardır.",
+     "cevap": "merhamet"
+    }
+   ],
+   "aciklama": "Melek nurdandır; görülmeyenler gaybdır (s. 14–17)."
+  },
+  {
+   "id": "d1-07",
+   "konu": "u1k2",
+   "kavram": "Cebrail",
+   "tur": "eslestir",
+   "soru": "Melekleri görevleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Cebrail",
+     "sag": "Peygamberlere vahiy getirir"
+    },
+    {
+     "sol": "Azrail",
+     "sag": "Ölüm vakti gelenin canını alır"
+    },
+    {
+     "sol": "Mikâil",
+     "sag": "Yağmur ve rızıkla görevlidir"
+    },
+    {
+     "sol": "İsrafil",
+     "sag": "Sûra iki kez üfler"
+    }
+   ],
+   "aciklama": "Dört büyük meleğin her birinin ayrı görevi var (s. 18–21)."
+  },
+  {
+   "id": "d1-08",
+   "konu": "u1k2",
+   "kavram": "Meleklerin Özellikleri",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi meleklerin özelliklerinden biri değildir?",
+   "secenekler": [
+    "Nurdan yaratılmışlardır",
+    "Yeme ve uyuma ihtiyaçları vardır",
+    "Farklı şekillere girebilirler",
+    "Sayılarını yalnızca Allah bilir"
+   ],
+   "dogru": 1,
+   "aciklama": "Meleklerin yeme, içme, uyuma ihtiyaçları yoktur (s. 18–21)."
+  },
+  {
+   "id": "d1-09",
+   "konu": "u1k2",
+   "kavram": "Kiramen Kâtibin",
+   "tur": "kisa",
+   "soru": "İnsanın sevap ve günahlarını yazan \"değerli yazıcılar\" hangi meleklerdir?",
+   "yanit": "Kiramen Kâtibin",
+   "kabul": [
+    "kiramen katibin",
+    "kiramenkatibin",
+    "yazıcı melekler"
+   ],
+   "aciklama": "Sağımızda ve solumuzdaki yazıcı melekler Kiramen Kâtibin'dir (s. 18–21)."
+  },
+  {
+   "id": "d1-10",
+   "konu": "u1k2",
+   "kavram": "Münker ve Nekir",
+   "tur": "dy",
+   "ifade": "Münker ve Nekir, sorgu melekleri olarak bilinir.",
+   "dogru": true,
+   "aciklama": "Münker ve Nekir insanları sorguya çeker (s. 18–21)."
+  },
+  {
+   "id": "d1-11",
+   "konu": "u1k2",
+   "kavram": "İsrafil",
+   "tur": "dy",
+   "ifade": "Mikâil, sûra üflemekle görevli melektir.",
+   "dogru": false,
+   "duzeltme": "Sûra üflemekle görevli melek İsrafil'dir.",
+   "aciklama": "Sûra İsrafil üfler; Mikâil yağmur ve rızıkla görevlidir (s. 18–21)."
+  },
+  {
+   "id": "d1-12",
+   "konu": "u1k2",
+   "kavram": "Azrail",
+   "tur": "secim",
+   "soru": "\"Sizin için görevlendirilen ölüm meleği canınızı alacak…\" (Secde suresi 11. ayet) Ayette sözü edilen melek hangisidir?",
+   "secenekler": [
+    "Cebrail",
+    "Mikâil",
+    "İsrafil",
+    "Azrail"
+   ],
+   "dogru": 3,
+   "aciklama": "Ölüm meleği Azrail'dir; Melekülmevt diye de anılır (s. 18–21)."
+  },
+  {
+   "id": "d1-13",
+   "konu": "u1k3",
+   "kavram": "Ahiret",
+   "tur": "secim",
+   "soru": "Dünya hayatı sona erince başlayan ve sonsuza kadar süren hayata ne denir?",
+   "secenekler": [
+    "Ömür",
+    "Ecel",
+    "Ahiret",
+    "Âlem"
+   ],
+   "dogru": 2,
+   "aciklama": "Ahiret, dünya hayatından sonra başlayan sonsuz hayattır (s. 22–25)."
+  },
+  {
+   "id": "d1-14",
+   "konu": "u1k3",
+   "kavram": "Ömür",
+   "tur": "eslestir",
+   "soru": "Kavramları anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Ömür",
+     "sag": "Doğumdan ölüme kadar geçen süre"
+    },
+    {
+     "sol": "Ecel",
+     "sag": "Ölüm için belirlenen zaman"
+    },
+    {
+     "sol": "Amel defteri",
+     "sag": "Yaptıklarımızın yazıldığı defter"
+    }
+   ],
+   "aciklama": "Ömür yaşam süresi, ecel ölüm vaktidir (s. 22–25)."
+  },
+  {
+   "id": "d1-15",
+   "konu": "u1k3",
+   "kavram": "Ahirete İman",
+   "tur": "dy",
+   "ifade": "Ahirete inanmak, İslam'ın inanç esaslarındandır.",
+   "dogru": true,
+   "aciklama": "Ahirete iman inanç esaslarındandır (s. 22–25)."
+  },
+  {
+   "id": "d1-16",
+   "konu": "u1k3",
+   "kavram": "Ecel",
+   "tur": "kisa",
+   "soru": "Ölüm için belirlenen ve takdir edilen zamana ne denir?",
+   "yanit": "ecel",
+   "aciklama": "Ölüm vaktinin gelmesine ecel denir (s. 22–25)."
+  },
+  {
+   "id": "d1-17",
+   "konu": "u1k3",
+   "kavram": "Hayatın Amacı",
+   "tur": "secim",
+   "soru": "Hayat ve ölümle ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "Allah her şeyi bir amaçla yaratmıştır.",
+    "İnsan için hayat bu dünyadan ibarettir.",
+    "Allah, kimin daha güzel amel yapacağını sınar."
+   ],
+   "kok": "Kitaba göre bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Hayat dünyadan ibaret değildir; dünyadan sonra ahiret vardır (s. 22–25)."
+  },
+  {
+   "id": "d1-18",
+   "konu": "u1k3",
+   "kavram": "Amel Defteri",
+   "tur": "bosluk",
+   "havuz": [
+    "mizan",
+    "ömür"
+   ],
+   "cumleler": [
+    {
+     "c": "İnsanın dünyada yaptığı her şey ___ defterine yazılır.",
+     "cevap": "amel"
+    },
+    {
+     "c": "Ahiret sözlükte \"son, sonra olan, son ___\" demektir.",
+     "cevap": "gün"
+    },
+    {
+     "c": "Hz. Âdem'den itibaren bütün ___ ahireti haber vermiştir.",
+     "cevap": "peygamberler"
+    }
+   ],
+   "aciklama": "Yaptıklarımız amel defterine yazılır; ahireti bütün peygamberler bildirdi (s. 22–25)."
+  }
+ ]
+}

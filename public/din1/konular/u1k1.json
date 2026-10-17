@@ -1,0 +1,335 @@
+{
+ "id": "u1k1",
+ "unite": "1. Ünite: Melek ve Ahiret İnancı",
+ "baslik": "Varlıklar Âlemi",
+ "sayfalar": "s. 14–17",
+ "giris": "Etrafımızda gördüğümüz pek çok varlık var. Bir de göremediğimiz ama var olan varlıklar var. Bu konuda varlıkları iki gruba ayıracağız: görülebilenler ve görülemeyenler. Melek, cin ve şeytanı da tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Âlem",
+   "renk": "#1a7f86",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#fff' opacity='.75'><circle cx='20' cy='22' r='1.4'/><circle cx='98' cy='18' r='1.6'/><circle cx='102' cy='70' r='1.1'/><circle cx='16' cy='84' r='1.3'/><circle cx='62' cy='14' r='1'/></g><circle cx='60' cy='62' r='30' fill='#3fa9b0'/><path d='M40 52q10-8 18 0t16 4q6 6 0 14t-14 4q-8 6-16 0t-4-22z' fill='#5cbf6a'/><path d='M84 30a12 12 0 1 0 8 20a10 10 0 1 1-8-20z' fill='#ffe08a'/></svg>",
+   "aciklama": "Allah'ın yarattığı bütün varlıklara âlem denir. (s. 14)",
+   "ek": "Güneş, dağlar, denizler, hayvanlar, insanlar… Yaratılan her şey âlemin içindedir.",
+   "akilda": "Yaratılan her şey",
+   "soru": {
+    "soru": "Allah'ın yarattığı bütün varlıklara ne ad verilir?",
+    "secenekler": [
+     "Âlem",
+     "Gayb",
+     "Ahiret"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartının başlığına bak: \"Yaratılan her şey\".",
+    "aciklama": "Allah'ın yarattığı bütün varlıklara âlem denir. (s. 14)"
+   }
+  },
+  {
+   "ad": "Görülebilen Varlıklar",
+   "renk": "#c9971f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='36' cy='34' r='12' fill='#ffd166'/><path d='M14 96l26-40 18 26 12-16 30 30z' fill='#5c7cba'/><path d='M40 56l7 11-7 0-7 0z' fill='#fff'/><circle cx='82' cy='44' r='14' fill='none' stroke='#fff' stroke-width='5'/><path d='M92 54l12 12' stroke='#fff' stroke-width='6' stroke-linecap='round'/><circle cx='79' cy='42' r='2.5' fill='#7ad17a'/><circle cx='86' cy='47' r='2' fill='#7ad17a'/></svg>",
+   "aciklama": "Güneş, Ay, dağlar, denizler, bitkiler ve hayvanlar gözle görülebilen varlıklardır. (s. 14)",
+   "ek": "Bazı varlıklar o kadar küçük ya da uzaktır ki onları ancak mikroskop ya da teleskopla görebiliriz. Mikroplar ve çok uzak yıldızlar böyledir. (s. 14)",
+   "akilda": "Gözle ya da araçla görülür",
+   "soru": {
+    "soru": "Mikrop gibi çok küçük varlıkları nasıl görebiliriz?",
+    "secenekler": [
+     "Hiçbir şekilde göremeyiz",
+     "Mikroskopla",
+     "Sadece gece"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartında küçük varlıklar için hangi araç geçiyordu?",
+    "aciklama": "Mikroplar ancak mikroskopla görülebilir. (s. 14)"
+   }
+  },
+  {
+   "ad": "Soyut Kavramlar",
+   "renk": "#e0674a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 92C30 72 26 52 36 42c8-8 20-6 24 4 4-10 16-12 24-4 10 10 6 30-24 50z' fill='#e0674a'/><g fill='#ffe08a'><circle cx='26' cy='30' r='3'/><circle cx='94' cy='28' r='2.5'/><circle cx='98' cy='86' r='3'/><circle cx='22' cy='84' r='2.5'/></g></svg>",
+   "aciklama": "Akıl, sevgi ve merhamet gözle görülemez ama vardır. (s. 15)",
+   "ek": "Sevgiyi göremeyiz ama hissederiz. Bu yüzden bir şeyin var olduğunu bilmek için onu mutlaka görmemiz gerekmez. (s. 15)",
+   "akilda": "Görmeyiz ama hissederiz",
+   "soru": {
+    "soru": "Aşağıdakilerden hangisi gözle görülemeyen ama var olan bir şeydir?",
+    "secenekler": [
+     "Dağ",
+     "Kedi",
+     "Sevgi"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgi kartında \"görmeyiz ama hissederiz\" denen örnek hangisiydi?",
+    "aciklama": "Sevgiyi göremeyiz ama hissederiz. (s. 15)"
+   }
+  },
+  {
+   "ad": "Gayb",
+   "renk": "#6b4fa0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M20 30h80v8H20z' fill='#c9971f'/><path d='M24 38q8 30 0 60h34q-6-30 0-60z' fill='#6b4fa0'/><path d='M96 38q-8 30 0 60H62q6-30 0-60z' fill='#7d63b3'/><text x='60' y='78' font-size='30' font-weight='800' text-anchor='middle' fill='#ffe08a'>?</text></svg>",
+   "aciklama": "Gayb, görünmeyen ve bilinmeyen âlem demektir. (s. 16)",
+   "ek": "Melek, cin ve şeytan gayb âlemindendir. Gelecekte olacakları da gayb sayılır. Gaybı yalnızca Allah bilir. Peygamberler, Allah'ın bildirdiği kadarını bilir. (s. 16)",
+   "akilda": "Görünmeyen âlem",
+   "soru": {
+    "soru": "Gaybı tam olarak kim bilir?",
+    "secenekler": [
+     "Yalnızca Allah",
+     "Bütün insanlar",
+     "Fal bakanlar"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartında \"Gaybı yalnızca …\" diye geçiyordu.",
+    "aciklama": "Kur'an'a göre gaybı yalnızca Allah bilir. (s. 16)"
+   }
+  },
+  {
+   "ad": "Melek",
+   "renk": "#2b4a8b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g stroke='#ffe8a3' stroke-width='3' stroke-linecap='round' opacity='.85'><path d='M60 22v12M60 86v12M22 60h12M86 60h12M33 33l8 8M79 79l8 8M87 33l-8 8M41 79l-8 8'/></g><circle cx='60' cy='60' r='18' fill='#fff6d6'/><circle cx='60' cy='60' r='11' fill='#ffe08a'/></svg>",
+   "aciklama": "Melekler, nurdan yaratılmış, Allah'ın emirlerine uyan ve gözle görülemeyen varlıklardır. (s. 16)",
+   "ek": "Meleklere inanmak, İslam'ın inanç esaslarındandır. Bir ayette, müminlerin Allah'a, meleklerine, kitaplarına ve peygamberlerine iman ettikleri bildirilir. (s. 16)",
+   "akilda": "Nurdan, hep itaat eder",
+   "soru": {
+    "soru": "Melekler neden yaratılmıştır?",
+    "secenekler": [
+     "Topraktan",
+     "Nurdan",
+     "Sudan"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\" ifadesinin ilk kelimesine bak.",
+    "aciklama": "Melekler nurdan yaratılmıştır. (s. 16)"
+   }
+  },
+  {
+   "ad": "Cin",
+   "renk": "#3f8f4f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><ellipse cx='60' cy='60' rx='34' ry='20' fill='none' stroke='#9fd6a6' stroke-width='5'/><circle cx='60' cy='60' r='10' fill='#9fd6a6'/><path d='M28 90L92 30' stroke='#e0674a' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Cinler gözle görülemeyen ve insanlar gibi Allah'ın emirlerinden sorumlu varlıklardır. (s. 16)",
+   "ek": "Zariyat suresinde \"Ben cinleri ve insanları ancak bana kulluk etsinler diye yarattım.\" buyrulur. Cinlerin de inananları ve inanmayanları vardır. (s. 16)",
+   "akilda": "Görünmez ama sorumlu",
+   "soru": {
+    "soru": "Cinlerle ilgili hangisi doğrudur?",
+    "secenekler": [
+     "Gözle görülebilirler",
+     "Hiçbir sorumlulukları yoktur",
+     "İnsanlar gibi sorumludurlar"
+    ],
+    "dogru": 2,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla: görünmez ama …",
+    "aciklama": "Cinler de insanlar gibi Allah'ın emirlerinden sorumludur. (s. 16)"
+   }
+  },
+  {
+   "ad": "Şeytan",
+   "renk": "#e0674a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 26c10 16 24 22 24 44a24 24 0 0 1-48 0c0-12 8-16 10-26 6 8 10 8 14-18z' fill='#e0674a'/><path d='M60 58c6 8 12 12 12 22a12 12 0 0 1-24 0c0-6 6-10 12-22z' fill='#ffb067'/><path d='M96 92l-14 0M96 92l-6-6M96 92l-6 6' stroke='#fff' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Şeytan cinlerdendir; kibirlenip Allah'ın emrine karşı gelmiştir. (s. 16–17)",
+   "ek": "Allah meleklere Hz. Âdem için saygıyla eğilmelerini emretti. Herkes eğildi, yalnız iblis (şeytan) \"Ben ateşten yaratıldım, ondan üstünüm.\" diyerek karşı geldi. Bu yüzden cennetten kovuldu ve insana düşman oldu. (s. 17)",
+   "akilda": "Kibirlendi, karşı geldi",
+   "soru": {
+    "soru": "Şeytan, Allah'ın hangi emrine karşı geldi?",
+    "secenekler": [
+     "Hz. Âdem için saygıyla eğilme emrine",
+     "Yağmur yağdırma emrine",
+     "Sûra üfleme emrine"
+    ],
+    "dogru": 0,
+    "ipucu": "Bilgi kartındaki Hz. Âdem kıssasını hatırla.",
+    "aciklama": "Şeytan, Hz. Âdem için saygıyla eğilmedi ve emre karşı geldi. (s. 17)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Onları nasıl biliyoruz?",
+   "kutular": [
+    {
+     "etiket": "Görerek ya da hissederek",
+     "uyeler": [
+      "Görülebilen Varlıklar",
+      "Soyut Kavramlar"
+     ]
+    },
+    {
+     "etiket": "Ayet ve hadislerden öğrenerek",
+     "uyeler": [
+      "Gayb",
+      "Melek",
+      "Cin",
+      "Şeytan"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Allah'ın emrine karşı nasıl davranır?",
+   "kutular": [
+    {
+     "etiket": "Her zaman uyar",
+     "uyeler": [
+      "Melek"
+     ]
+    },
+    {
+     "etiket": "İnananı da inanmayanı da var",
+     "uyeler": [
+      "Cin"
+     ]
+    },
+    {
+     "etiket": "Karşı geldi",
+     "uyeler": [
+      "Şeytan"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Uzaydaki bazı yıldızlar o kadar uzaktır ki onları ancak teleskopla görebiliriz. (s. 14)",
+  "Hz. Âdem, ilk insan ve ilk peygamberdir; topraktan yaratılmıştır. (s. 17)",
+  "Kur'an'da \"Gaybın anahtarları yalnızca O'nun katındadır.\" buyrulur. (Enam suresi 59. ayet, s. 16)"
+ ],
+ "akildaKalsin": [
+  "Allah'ın yarattığı bütün varlıklara âlem denir.",
+  "Varlıkların bazıları görülür, bazıları görülmez.",
+  "Görülemeyen varlıklar ve bilinmeyenler gayb âlemidir; gaybı yalnızca Allah bilir.",
+  "Melekler nurdan yaratılmıştır ve hep Allah'ın emrine uyar.",
+  "Cinler de insanlar gibi sorumludur; şeytan cinlerdendir.",
+  "Şeytan kibirlenip Hz. Âdem için eğilmedi ve emre karşı geldi."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Görmediğimiz bir şeyin var olduğunu nasıl bilebiliriz?",
+   "cevap": "Sevgiyi, merhameti ve aklı göremeyiz ama varlıklarını biliriz. Bir şeyin var olması için gözle görülmesi gerekmez. (s. 15)"
+  },
+  {
+   "soru": "Melekler ve cinler hakkındaki bilgileri nereden öğreniyoruz?",
+   "cevap": "Onları duyularımızla ya da aletlerle fark edemeyiz. Onlarla ilgili bilgilerin kaynağı ayet ve hadislerdir. (s. 15–16)"
+  },
+  {
+   "soru": "\"Cinlerden gelecekle ilgili haber alıyorum\" diyen birine inanmalı mıyız?",
+   "cevap": "Hayır. Kitabımız, böyle iddia eden insanlara inanmanın doğru olmadığını söyler. Gaybı yalnızca Allah bilir. (s. 16)"
+  },
+  {
+   "soru": "Melekler Hz. Âdem'in yaratılacağını duyunca ne oldu?",
+   "cevap": "Melekler bunun sebebini tam anlayamadı ve sordu. Allah, Hz. Âdem'e varlıkların isimlerini öğretti. Hz. Âdem isimleri söyleyince melekler insanın üstün yaratıldığını anladı. (s. 17)"
+  },
+  {
+   "soru": "Şeytan neden kendini Hz. Âdem'den üstün gördü?",
+   "cevap": "Ateşten yaratıldığı için kendini, topraktan yaratılan Hz. Âdem'den üstün sandı ve kibirlendi. (s. 17)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Gözle görebildiğin bir varlığa ve göremediğin ama var olduğunu bildiğin bir şeye birer örnek yaz.",
+   "ornekCevap": "Ağaç gözle görülebilen bir varlıktır. Sevgiyi göremeyiz ama hissederiz, bu yüzden var olduğunu biliriz.",
+   "anahtarlar": [
+    "gör",
+    "hisse",
+    "sevgi",
+    "merhamet",
+    "akıl",
+    "var"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Aşağıdakilerden hangisi gözle görülebilen bir varlıktır?",
+   "secenekler": [
+    "Dağ",
+    "Melek",
+    "Merhamet"
+   ],
+   "dogru": 0,
+   "ipucu": "Güneş, Ay, dağlar… Bilgi kartındaki örnekleri hatırla.",
+   "aciklama": "Dağlar gözle görülebilen varlıklardandır. (s. 14)",
+   "kavram": "Görülebilen Varlıklar"
+  },
+  {
+   "soru": "Âlem ne demektir?",
+   "secenekler": [
+    "Yalnızca insanlar",
+    "Allah'ın yarattığı bütün varlıklar",
+    "Yalnızca gökyüzü"
+   ],
+   "dogru": 1,
+   "ipucu": "Âlemin \"akılda kalsın\" ifadesi: Yaratılan …",
+   "aciklama": "Allah'ın yarattığı bütün varlıklara âlem denir. (s. 14)",
+   "kavram": "Âlem"
+  },
+  {
+   "soru": "Hangisi gayb âlemine ait bir varlıktır?",
+   "secenekler": [
+    "Kedi",
+    "Ağaç",
+    "Cin"
+   ],
+   "dogru": 2,
+   "ipucu": "Gayb kartında gayb âlemine ait üç varlık sayılıyordu.",
+   "aciklama": "Melek, cin ve şeytan gayb âlemindendir. (s. 16)",
+   "kavram": "Gayb"
+  },
+  {
+   "soru": "Meleklerle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Allah'ın emirlerine uyarlar",
+    "Ateşten yaratılmışlardır",
+    "Gözle görülebilirler"
+   ],
+   "dogru": 0,
+   "ipucu": "Melek kartındaki \"akılda kalsın\": nurdan, hep …",
+   "aciklama": "Melekler nurdan yaratılmıştır ve Allah'ın emirlerine uyar. (s. 16)",
+   "kavram": "Melek"
+  },
+  {
+   "soru": "Sevgi ve merhamet için hangisi söylenebilir?",
+   "secenekler": [
+    "Mikroskopla görülür",
+    "Görülmez ama vardır",
+    "Hiç yoktur"
+   ],
+   "dogru": 1,
+   "ipucu": "Soyut kavramlar kartını hatırla: görmeyiz ama …",
+   "aciklama": "Sevgi ve merhamet görülmez ama vardır. (s. 15)",
+   "kavram": "Soyut Kavramlar"
+  },
+  {
+   "soru": "Şeytan neden kibirlendi?",
+   "secenekler": [
+    "Melek olduğu için",
+    "En güçlü varlık olduğu için",
+    "Ateşten yaratıldığı için kendini üstün gördüğü için"
+   ],
+   "dogru": 2,
+   "ipucu": "Şeytan Hz. Âdem'e ne demişti? \"Beni … yarattın.\"",
+   "aciklama": "Şeytan, ateşten yaratıldığını üstünlük sandı ve kibirlendi. (s. 17)",
+   "kavram": "Şeytan"
+  },
+  {
+   "soru": "Gelecekte olacakları kim tam olarak bilir?",
+   "secenekler": [
+    "Cinler",
+    "Yalnızca Allah",
+    "Yıldızlara bakanlar"
+   ],
+   "dogru": 1,
+   "ipucu": "Gelecek de gayb sayılır. Gaybı kim bilir?",
+   "aciklama": "Gelecek de gaybdır ve gaybı yalnızca Allah bilir. (s. 16)",
+   "kavram": "Gayb"
+  },
+  {
+   "soru": "\"Ben cinleri ve insanları ancak bana kulluk etsinler diye yarattım.\" ayetinden ne anlarız?",
+   "secenekler": [
+    "Cinlerin hiçbir sorumluluğu yoktur",
+    "Cinler gözle görülür",
+    "Cinler de insanlar gibi sorumludur"
+   ],
+   "dogru": 2,
+   "ipucu": "Ayette cinler ve insanlar birlikte anılıyor. Bu ne gösterir?",
+   "aciklama": "Bu ayetten cinlerin de insanlar gibi sorumlu olduğu anlaşılır. (Zariyat suresi, s. 16)",
+   "kavram": "Cin"
+  }
+ ]
+}
