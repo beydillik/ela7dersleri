@@ -712,6 +712,53 @@ sup.us { font-size: .68em; font-weight: 800; vertical-align: super; line-height:
 .coz-govde, .coz-adim { display: grid; gap: 12px; min-width: 0; }
 @media (min-width: 720px) { .cozum.yan .coz-govde { grid-template-columns: auto 1fr; align-items: start; gap: 20px; } }
 
+/* Din Kültürü — "Çini": krem zemin, lacivert bant, firuze-mercan-altın çini renkleri, kemer biçimli konu numaraları */
+:root[data-tema="din"] {
+  --bg: #f6f3ea; --surface: #fffdf7; --surface-2: #ece6d6; --ink: #1e2a33; --muted: #5a6670;
+  --line: #ddd5c1; --night: #173e5c; --night-ink: #f6f1e2; --unit: #1a7f86;
+  --accent: #c8463a; --accent-soft: #f8dcd6; --teal: #1a7f86; --gold: #d4a72c; --gold-soft: #f7ecc9;
+  --ok: #2d7a3e; --ok-soft: #e2f0dc; --bad: #b8392b; --bad-soft: #f8dfd9; --hint: #7a5200;
+  --svgbg: #173e5c; --cini: rgba(26,127,134,.07);
+  --shadow: 0 1px 2px rgba(23,62,92,.07), 0 6px 18px rgba(23,62,92,.08);
+  --display: "Nunito", "Baloo 2", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-tema="din"]:not([data-theme="light"]) {
+    --bg: #0f161c; --surface: #172029; --surface-2: #1f2a35; --ink: #eef1f3; --muted: #a6b3bd;
+    --line: #2c3a46; --night: #0e2a40; --unit: #3bb3ba; --teal: #3bb3ba; --accent: #ff8070; --accent-soft: #3d221d; --gold-soft: #352d16;
+    --ok: #74c98a; --ok-soft: #1c3322; --bad: #ff8f80; --bad-soft: #3d1f1a; --hint: #e8b64f;
+    --svgbg: #10283c; --cini: rgba(59,179,186,.06);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
+  }
+}
+:root[data-tema="din"][data-theme="dark"] {
+    --bg: #0f161c; --surface: #172029; --surface-2: #1f2a35; --ink: #eef1f3; --muted: #a6b3bd;
+    --line: #2c3a46; --night: #0e2a40; --unit: #3bb3ba; --teal: #3bb3ba; --accent: #ff8070; --accent-soft: #3d221d; --gold-soft: #352d16;
+    --ok: #74c98a; --ok-soft: #1c3322; --bad: #ff8f80; --bad-soft: #3d1f1a; --hint: #e8b64f;
+    --svgbg: #10283c; --cini: rgba(59,179,186,.06);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
+}
+/* Zemin: çok hafif çini karosu (köşegen ızgara + noktalar) */
+[data-tema="din"] body { background-color: var(--bg);
+  background-image: radial-gradient(var(--cini) 2px, transparent 2.5px), linear-gradient(45deg, var(--cini) 1px, transparent 1px), linear-gradient(-45deg, var(--cini) 1px, transparent 1px);
+  background-size: 36px 36px, 36px 36px, 36px 36px; }
+[data-tema="din"] h1, [data-tema="din"] h2, [data-tema="din"] h3, [data-tema="din"] .front .fname, [data-tema="din"] .back .bigk { font-weight: 800; letter-spacing: .005em; }
+[data-tema="din"] .masthead { border-bottom: 3px solid var(--gold); }
+/* Bant alt kenarı: tezhip şeridi gibi küçük altın-firuze baklavalar */
+[data-tema="din"] .masthead::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; opacity: .8;
+  background: linear-gradient(45deg, transparent 33%, var(--gold) 33% 67%, transparent 67%) 0 0 / 16px 8px,
+              linear-gradient(-45deg, transparent 33%, #3bb3ba 33% 67%, transparent 67%) 8px 0 / 16px 8px; }
+[data-tema="din"] .head-btn[aria-pressed="true"] { color: #1e2a33; }
+[data-tema="din"] .konu-head h2 { text-decoration: underline; text-decoration-color: rgba(212,167,44,.5); text-decoration-thickness: .12em; text-underline-offset: .18em; }
+/* Konu numaraları: kemer (pencere) biçimi */
+[data-tema="din"] .topic .num { border-radius: 50% 50% 6px 6px / 40% 40% 6px 6px; border: 2px solid var(--line); }
+[data-tema="din"] .topic[aria-current="true"] .num { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(26,127,134,.18); }
+/* Bilgi kartı: üstte altın çift çizgi */
+[data-tema="din"] .stage { border-top: 5px double var(--gold); }
+[data-tema="din"] .facts { background: var(--night); background-image: radial-gradient(circle at 92% 18%, rgba(212,167,44,.18) 0 28px, transparent 29px); }
+[data-tema="din"] svg[viewBox="0 0 120 120"] > rect:first-child { fill: var(--svgbg); }
+[data-tema="din"] .bot-fab { box-shadow: 0 8px 24px rgba(23,62,92,.4); }
+
 /* Ara Durak (konu tarama): konu listesinde bayraklı, kesik çerçeveli; tekrar zamanı rozeti */
 .topic.durak { border-style: dashed; border-color: var(--teal); }
 .topic.durak .num, [data-tema] .topic.durak .num { background: var(--teal); color: #fff; border: 0; }

@@ -1,0 +1,54 @@
+{
+ "kod": "din1",
+ "ders": "Din Kültürü ve Ahlak Bilgisi",
+ "sinif": "7. Sınıf",
+ "donem": "1. Dönem",
+ "olumsuzVurgu": true,
+ "tema": {
+  "ad": "din",
+  "desen": "cini",
+  "font": "Nunito:wght@400;600;700;800"
+ },
+ "bot": {
+  "ad": "Lekle",
+  "dugme": "Lekle'ye sor",
+  "svg": "<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Lekle'><circle cx='32' cy='32' r='32' fill='#1a7f86'/><path d='M27 47l-3 12M35 47l2 12M21 59h5M35 59h5' stroke='#f08a4b' stroke-width='2.4' stroke-linecap='round'/><ellipse cx='30' cy='40' rx='15' ry='9' fill='#fffaf0'/><path d='M15 39q8 -2 24 1q-4 8 -17 8q-6 -1 -10 -5z' fill='#1b2340'/><path d='M16 41l-9 5 10 0z' fill='#1b2340'/><path d='M39 36q5 -9 2 -17' stroke='#fffaf0' stroke-width='6' fill='none' stroke-linecap='round'/><circle cx='41' cy='17' r='6.5' fill='#fffaf0'/><path d='M46.5 15.5l14 4.5-14 1.5z' fill='#f08a4b'/><circle cx='42.5' cy='15.5' r='1.6' fill='#1b2340'/><path d='M36.5 14.5q2.5 -2 5 -1.6' stroke='#1b2340' stroke-width='1' fill='none' stroke-linecap='round'/><path d='M25 33l1.4 2.6 2.9.4-2.1 2 .5 2.9-2.7-1.4-2.6 1.4.5-2.9-2.1-2 2.9-.4z' fill='#d4a72c'/></svg>",
+  "karsilama": "Merhaba! Ben Lekle, Din Kültürü ve Ahlak Bilgisi robotuyum. Şu an \"{konu}\" konusundayız. Ne merak ediyorsun?",
+  "oneriler": [
+   "Bu konuyu bana kısaca anlat",
+   "Bir örnekle açıklar mısın?",
+   "Bana kolay bir soru sor",
+   "Hangi kavramlar önemli?"
+  ],
+  "ekTalimat": "Bu bir Din Kültürü ve Ahlak Bilgisi dersi. Kitaptaki tanım, terim ve sınıflandırmalara sadık kal; inanç konularını kitabın ifadesiyle anlat. Ayet ya da hadis yazacaksan yalnızca kitapta geçeni, kitaptaki meal ve kaynağıyla (sure adı, ayet numarası, sayfa) ver; kitapta olmayan ayet, hadis ya da kıssa ayrıntısı uydurma. Kitaptaki Arapça metinleri yazma; surelerin okunuşunu ve anlamını kitaptaki gibi verebilirsin. Mezhepler, tasavvufi yorumlar ve Alevilik Bektaşilik konularında hepsine aynı saygıyla, tarafsız ve kitabın bilgisiyle yaklaş; birini diğerinden üstün gösterme. Öğrencinin kendi ibadet ve dinî yükümlülükleriyle ilgili kişisel sorularında hüküm verme; kitaptaki genel bilgiyi söyle ve ailesine ya da öğretmenine sormasını öner. Kavramları gündelik bir örnekle kısa anlat; en fazla 4 kısa, numaralı adım yaz. Yanlış cevapta nedenini nazikçe göster ve tekrar denemesini iste."
+ },
+ "uniteler": [
+  {"ad": "1. Ünite: Melek ve Ahiret İnancı", "no": 1, "konular": [
+   {"id": "u1k1", "baslik": "Varlıklar Âlemi", "sayfalar": "s. 14–17", "kaynakSayfalar": [[14, 17]], "hazir": false},
+   {"id": "u1k2", "baslik": "Melekler: Özellikleri ve Görevleri", "sayfalar": "s. 18–21", "kaynakSayfalar": [[18, 21]], "hazir": false},
+   {"id": "u1k3", "baslik": "Dünya Hayatı ve Ahiret", "sayfalar": "s. 22–25", "kaynakSayfalar": [[22, 25]], "hazir": false},
+   {"id": "u1k4", "baslik": "Ahiret Hayatının Aşamaları", "sayfalar": "s. 26–31", "kaynakSayfalar": [[26, 31]], "hazir": false},
+   {"id": "u1k5", "baslik": "Melek ve Ahiret İnancının İnsana Kazandırdıkları", "sayfalar": "s. 32–36", "kaynakSayfalar": [[32, 36]], "hazir": false},
+   {"id": "u1k6", "baslik": "Bir Sure Öğreniyorum: Nâs Suresi", "sayfalar": "s. 37–41", "kaynakSayfalar": [[37, 41]], "hazir": false},
+   {"id": "u1t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–6", "kaynakSayfalar": [[14, 46]], "hazir": false}
+  ]},
+  {"ad": "2. Ünite: Hac, Umre ve Kurban", "no": 2, "konular": [
+   {"id": "u2k1", "baslik": "Hac İbadeti: Şartları ve Kavramları", "sayfalar": "s. 50–53", "kaynakSayfalar": [[50, 53]], "hazir": false},
+   {"id": "u2k2", "baslik": "Haccın Yapılışı: Farzları ve Vacipleri", "sayfalar": "s. 54–57", "kaynakSayfalar": [[54, 57]], "hazir": false},
+   {"id": "u2k3", "baslik": "Haccın Kazandırdıkları ve Umre", "sayfalar": "s. 58–60", "kaynakSayfalar": [[58, 60]], "hazir": false},
+   {"id": "u2k4", "baslik": "Kurban İbadeti", "sayfalar": "s. 61–67", "kaynakSayfalar": [[61, 67]], "hazir": false},
+   {"id": "u2k5", "baslik": "Hac ve Kurbanın Kültürümüze Yansımaları", "sayfalar": "s. 68–74", "kaynakSayfalar": [[68, 74]], "hazir": false},
+   {"id": "u2k6", "baslik": "Bir Sure Öğreniyorum: Kâfirun Suresi", "sayfalar": "s. 75–79", "kaynakSayfalar": [[75, 79]], "hazir": false},
+   {"id": "u2t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–6", "kaynakSayfalar": [[50, 84]], "hazir": false}
+  ]},
+  {"ad": "3. Ünite: İslam Düşüncesinde Yorumlar", "no": 3, "konular": [
+   {"id": "u3k1", "baslik": "Din Anlayışındaki Yorum Farklılıkları", "sayfalar": "s. 87–93", "kaynakSayfalar": [[87, 93]], "hazir": false},
+   {"id": "u3k2", "baslik": "İtikadi Yorumlar: Eşarilik ve Matüridilik", "sayfalar": "s. 94–97", "kaynakSayfalar": [[94, 97]], "hazir": false},
+   {"id": "u3k3", "baslik": "Fıkhi Yorumlar: Dört Mezhep", "sayfalar": "s. 98–99", "kaynakSayfalar": [[98, 99]], "hazir": false},
+   {"id": "u3k4", "baslik": "Tasavvufi Yorumlar", "sayfalar": "s. 100–105", "kaynakSayfalar": [[100, 105]], "hazir": false},
+   {"id": "u3k5", "baslik": "Kültürümüzdeki Tasavvufi Yorumlar", "sayfalar": "s. 106–109", "kaynakSayfalar": [[106, 109]], "hazir": false},
+   {"id": "u3k6", "baslik": "Alevilik Bektaşilik: Temel Kavramlar ve Cem Erkânı", "sayfalar": "s. 110–115", "kaynakSayfalar": [[110, 115]], "hazir": false},
+   {"id": "u3t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–6", "kaynakSayfalar": [[87, 120]], "hazir": false}
+  ]}
+ ]
+}
