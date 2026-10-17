@@ -1,0 +1,285 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "1. Ünite: Melek ve Ahiret İnancı",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–6 · s. 14–46",
+ "giris": "Birinci ünite bitti! Şimdi altı konunun hepsine kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce görülen ve görülmeyen varlıkları, sonra melekleri ve görevlerini öğrendik. Ardından dünya hayatının bir sonu olduğunu ve ahiret hayatının aşamalarını gördük. Bu inancın insanı iyiye, sabra ve huzura yönelttiğini öğrendik. Son olarak Nâs suresiyle kötülükten Allah'a sığınmayı öğrendik.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3",
+  "u1k4",
+  "u1k5",
+  "u1k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Allah'ın yarattığı bütün varlıklara âlem denir.",
+    "Görülemeyen varlıklar ve gelecek olaylar gaybdır; gaybı yalnızca Allah bilir.",
+    "Melek nurdan, cin ve şeytan ateşten yaratılmıştır."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Melekler yemez, içmez, uyumaz; hep Allah'ın emrine uyar.",
+    "Cebrail vahiy, Azrail ölüm, Mikâil rızık ve yağmur, İsrafil sûr.",
+    "Kiramen Kâtibin yazar, Münker ve Nekir sorgular."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Ahiret, dünya hayatından sonra başlayan sonsuz hayattır.",
+    "Ömür yaşam süresi, ecel ölüm vaktidir.",
+    "Yaptığımız her şey amel defterine yazılır."
+   ]
+  },
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Sıra: ölüm → kıyamet → baas → mahşer → mizan → cennet ve cehennem.",
+    "Kıyametin vaktini yalnızca Allah bilir.",
+    "Mizanda sevap ve günahlar tartılır."
+   ]
+  },
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "Yaptıklarının yazıldığını bilen kötülükten kaçınır.",
+    "Ahirete inanan hesap vereceğini bilir, sorumlu davranır.",
+    "Dünya imtihan yeridir; sabır ve huzur kazandırır."
+   ]
+  },
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Nâs \"insanlar\" demektir; Felak ile birlikte Muavvizeteyn denir.",
+    "Surede vesvese veren vesvesecinin kötülüğünden Allah'a sığınılır.",
+    "Ḳul eûẕü birabbinnâs · Melikinnâs · İlâhinnâs · Min şerril vesvâsil ḫannâs · Elleẕî yüvesvisü fî sudûrinnâs · Minel cinneti vennâs"
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 20,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi gruba girer?",
+   "kutular": [
+    {
+     "etiket": "Görülemeyen varlıklar",
+     "uyeler": [
+      "Melek",
+      "Cin",
+      "Şeytan"
+     ]
+    },
+    {
+     "etiket": "Dört büyük melek",
+     "uyeler": [
+      "Cebrail",
+      "Azrail",
+      "Mikâil",
+      "İsrafil"
+     ]
+    },
+    {
+     "etiket": "Ahiretin aşamaları",
+     "uyeler": [
+      "Kıyamet",
+      "Baas",
+      "Mahşer",
+      "Mizan"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Bu kavram neyle ilgili?",
+   "kutular": [
+    {
+     "etiket": "Bir zaman ya da süre",
+     "uyeler": [
+      "Ömür",
+      "Ecel",
+      "Okunduğu Zamanlar"
+     ]
+    },
+    {
+     "etiket": "Kayıt ve tartı",
+     "uyeler": [
+      "Amel Defteri",
+      "Kiramen Kâtibin",
+      "Mizan"
+     ]
+    },
+    {
+     "etiket": "İnancın kazandırdıkları",
+     "uyeler": [
+      "Sabır",
+      "Huzur",
+      "Sorumluluk Bilinci"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kıyameti koparacak ve sonra insanları diriltecek olan sûra üflemeyi hangi melek yapar?",
+   "secenekler": [
+    "İsrafil",
+    "Cebrail",
+    "Mikâil"
+   ],
+   "dogru": 0,
+   "ipucu": "Sûra iki kez üfleyen meleği hatırla. İkinci üflemede baas olur.",
+   "aciklama": "İsrafil sûra iki kez üfler: önce kıyamet kopar, sonra insanlar diriltilir (s. 19, 27).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "İsrafil"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Baas"
+    }
+   ]
+  },
+  {
+   "soru": "Kiramen Kâtibin'in yazdıkları mahşerde insana nasıl verilir?",
+   "secenekler": [
+    "Ecel olarak",
+    "Amel defteri olarak",
+    "Mizan olarak"
+   ],
+   "dogru": 1,
+   "ipucu": "Yazıcı meleklerin yazdığı deftere ne denir?",
+   "aciklama": "Yazıcı melekler sevap ve günahları amel defterine yazar; mahşerde bu defter verilir (s. 19, 27).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Kiramen Kâtibin"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Amel Defteri"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Mahşer"
+    }
+   ]
+  },
+  {
+   "soru": "Melekleri göremeyiz; kıyametin ne zaman kopacağını da bilemeyiz. İkisi de hangi kavramla ilgilidir?",
+   "secenekler": [
+    "Ömür",
+    "Mizan",
+    "Gayb"
+   ],
+   "dogru": 2,
+   "ipucu": "Görülemeyen varlıklar ve gelecekte olacak olaylar hangi kavramla anlatılır?",
+   "aciklama": "Görülemeyenler ve gelecek olaylar gaybdır; gaybı yalnızca Allah bilir (s. 16, 26).",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "Gayb"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Kıyamet"
+    }
+   ]
+  },
+  {
+   "soru": "Ölüm vakti gelenin canını alan melek ve bu vaktin adı hangi seçenekte doğru verilmiştir?",
+   "secenekler": [
+    "Azrail – ecel",
+    "Cebrail – ömür",
+    "Mikâil – ecel"
+   ],
+   "dogru": 0,
+   "ipucu": "Ölüm meleğini ve \"ölüm vakti\" kavramını ayrı ayrı hatırla.",
+   "aciklama": "Ölüm meleği Azrail'dir (s. 19); ölüm için belirlenen zamana ecel denir (s. 25).",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Azrail"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Ecel"
+    }
+   ]
+  },
+  {
+   "soru": "Ali, yolda bulduğu cüzdanı sahibine verdi. Bunda en çok hangi bilgi etkili olmuştur?",
+   "secenekler": [
+    "Cüzdanın boş olduğu",
+    "Yaptıklarının yazıldığı ve tartılacağı",
+    "Kimsenin onu görmediği"
+   ],
+   "dogru": 1,
+   "ipucu": "Yaptıklarımız melekler tarafından yazılır ve ahirette mizanda tartılır.",
+   "aciklama": "Yaptıklarının yazıldığını bilen insan haksızlıktan uzak durur (s. 34); ameller mizanda tartılır (s. 27).",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "İyiliğe Yönelmek"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Mizan"
+    }
+   ]
+  },
+  {
+   "soru": "Nâs suresinde kötülüğünden Allah'a sığınılan vesveseci, Hz. Âdem için saygıyla eğilmeyen varlıkla ilgilidir. Bu varlık hangisidir?",
+   "secenekler": [
+    "Melek",
+    "Cebrail",
+    "Şeytan"
+   ],
+   "dogru": 2,
+   "ipucu": "Allah'ın emrine karşı gelip kibirlenen varlığı hatırla.",
+   "aciklama": "Vesvese veren şeytandır (s. 37); Hz. Âdem için eğilmeyen de şeytandır (s. 17).",
+   "kaynak": [
+    {
+     "konu": "u1k6",
+     "kavram": "Vesvese"
+    },
+    {
+     "konu": "u1k1",
+     "kavram": "Şeytan"
+    }
+   ]
+  },
+  {
+   "soru": "Allah ölümü ve hayatı insanı sınamak için yaratmıştır. Bunu bilen kişi zorluklar karşısında nasıl davranır?",
+   "secenekler": [
+    "Sabırla mücadele eder",
+    "Hemen vazgeçer",
+    "Başkalarını suçlar"
+   ],
+   "dogru": 0,
+   "ipucu": "Dünya bir imtihan yeriyse zorluklara nasıl karşı konur?",
+   "aciklama": "Hayat bir sınavdır (s. 22); dünyayı imtihan yeri bilen insan sabırlı olur (s. 34).",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Hayatın Amacı"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Sabır"
+    }
+   ]
+  }
+ ]
+}
