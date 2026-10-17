@@ -1,0 +1,339 @@
+{
+ "id": "u2k2",
+ "unite": "2. Ünite: Hac, Umre ve Kurban",
+ "baslik": "Haccın Yapılışı: Farzları ve Vacipleri",
+ "sayfalar": "s. 53–56, 198",
+ "giris": "Hac belli bir sırayla yapılır ve her görevin bir yeri vardır. Bu konuda hacda gidilen beş yeri ve orada ne yapıldığını öğreneceğiz. Sonra haccın farzlarını ve vaciplerini birbirinden ayıracağız.",
+ "kavramlar": [
+  {
+   "ad": "Kâbe",
+   "renk": "#1a7f86",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M37.5 38.75l12.5 -12.5h45.0l-12.5 12.5z' fill='#3a3f55'/><path d='M82.5 38.75l12.5 -12.5v42.5l-12.5 12.5z' fill='#0b0e18'/><rect x='37.5' y='38.75' width='45.0' height='42.5' fill='#14182a' stroke='#3a3f55' stroke-width='1'/><rect x='37.5' y='48.1' width='45.0' height='6.25' fill='#c9971f'/><path d='M82.5 48.1l12.5 -12.5v6.25l-12.5 12.5z' fill='#a07a18'/><rect x='64' y='66' width='8' height='14' rx='2' fill='#c9971f'/><path d='M14 100h92' stroke='#9fb3d9' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Kâbe, Mekke'de Mescid-i Haram'ın ortasında bulunan, Müslümanların kıblesi olan mabettir. Tavaf burada yapılır. (s. 53)",
+   "ek": "Hacda Kâbe'de üç tavaf yapılır: Mekke'ye gelince kudüm tavafı, bayramda farz olan ziyaret tavafı, ayrılırken veda tavafı. (s. 54–55)",
+   "akilda": "Kıble ve tavaf yeri",
+   "soru": {
+    "soru": "Müslümanların kıblesi neresidir?",
+    "secenekler": [
+     "Arafat",
+     "Mina",
+     "Kâbe"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ilk cümlesine bak.",
+    "aciklama": "Kâbe Müslümanların kıblesidir. (s. 53)"
+   }
+  },
+  {
+   "ad": "Arafat",
+   "renk": "#3f8f4f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M4 100q56-56 112 0z' fill='#9fd6a6'/><path d='M40 100q20-26 40 0z' fill='#3f8f4f'/><circle cx='60' cy='28' r='13' fill='#ffe08a'/><g stroke='#ffe08a' stroke-width='3' stroke-linecap='round'><path d='M60 6v6M38 16l4 5M82 16l-4 5'/></g></svg>",
+   "aciklama": "Arafat, Arife Günü farz olan vakfenin yapıldığı yerdir. (s. 53)",
+   "ek": "Hacı adayları burada öğle ile ikindi namazını birleştirerek kılar. Güneş batınca Müzdelife'ye geçilir. (s. 53, 55)",
+   "akilda": "Arife'de farz vakfe",
+   "soru": {
+    "soru": "Arafat'ta hangi görev yapılır?",
+    "secenekler": [
+     "Şeytan taşlama",
+     "Vakfe",
+     "Say"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın \"akılda kalsın\" ifadesine bak.",
+    "aciklama": "Arafat'ta Arife Günü farz olan vakfe yapılır. (s. 53)"
+   }
+  },
+  {
+   "ad": "Müzdelife",
+   "renk": "#2b4a8b",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M78 22a18 18 0 1 0 14 30 14 14 0 1 1-14-30z' fill='#ffe08a'/><g fill='#fff'><circle cx='26' cy='28' r='2'/><circle cx='42' cy='18' r='2'/><circle cx='30' cy='48' r='2'/><circle cx='100' cy='70' r='2'/></g><path d='M10 100q50-20 100 0z' fill='#3a3f55'/><g fill='#b8b3a6'><circle cx='44' cy='92' r='4'/><circle cx='54' cy='88' r='3'/><circle cx='62' cy='93' r='4'/><circle cx='72' cy='89' r='3'/><circle cx='80' cy='94' r='3'/></g></svg>",
+   "aciklama": "Müzdelife, Arafat ile Mina arasındaki bölgedir. (s. 53)",
+   "ek": "Burada akşam ile yatsı birleştirilerek kılınır ve şeytan taşlamak için küçük taşlar toplanır. Bayram sabahı burada yapılan vakfe vaciptir. (s. 53, 55)",
+   "akilda": "Taş toplanan yer",
+   "soru": {
+    "soru": "Şeytan taşlamada kullanılacak taşlar nerede toplanır?",
+    "secenekler": [
+     "Müzdelife'de",
+     "Kâbe'de",
+     "Safa'da"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminde gece, yerde küçük taşlar vardı.",
+    "aciklama": "Taşlar Müzdelife'de toplanır. (s. 55)"
+   }
+  },
+  {
+   "ad": "Mina",
+   "renk": "#e0674a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 100h100' stroke='#9fb3d9' stroke-width='4' stroke-linecap='round'/><g fill='#c9c2b0'><rect x='26' y='54' width='14' height='46' rx='3'/><rect x='53' y='40' width='14' height='60' rx='3'/><rect x='80' y='54' width='14' height='46' rx='3'/></g><g fill='#ffb067'><circle cx='30' cy='30' r='3'/><circle cx='60' cy='22' r='3'/><circle cx='90' cy='30' r='3'/></g></svg>",
+   "aciklama": "Mina, Mekke ile Arafat arasında bulunan yerdir. (s. 53)",
+   "ek": "Kurban Bayramı'nın ilk günü burada şeytan taşlanır ve kurban kesilir. Bayramın diğer günlerinde de şeytan taşlamaya devam edilir. (s. 53)",
+   "akilda": "Şeytan taşlama ve kurban",
+   "soru": {
+    "soru": "Kurban Bayramı'nın ilk günü şeytan nerede taşlanır?",
+    "secenekler": [
+     "Mina'da",
+     "Arafat'ta",
+     "Merve'de"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın \"akılda kalsın\" ifadesine bak.",
+    "aciklama": "Şeytan taşlama Mina'da yapılır. (s. 53)"
+   }
+  },
+  {
+   "ad": "Safa ve Merve",
+   "renk": "#c9971f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M6 100q20-44 40 0z' fill='#9fd6a6'/><path d='M74 100q20-44 40 0z' fill='#3f8f4f'/><path d='M60 46c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z' fill='#6fb3ff'/><path d='M30 46h60' stroke='#ffe08a' stroke-width='3' stroke-dasharray='4 5' stroke-linecap='round'/></svg>",
+   "aciklama": "Safa ve Merve, Kâbe'nin yakınında say yapılan iki tepedir. (s. 53)",
+   "ek": "Hz. Hacer, oğlu Hz. İsmail için su ararken bu iki tepe arasında koşmuştur. Allah onlara zemzem suyunu vermiştir. Say yapanlar onların yaşadığı zorlukları hatırlar. (s. 53)",
+   "akilda": "Hz. Hacer'in su arayışı",
+   "soru": {
+    "soru": "Hz. Hacer, Safa ile Merve arasında neden koşmuştur?",
+    "secenekler": [
+     "Kâbe'yi tavaf etmek için",
+     "Oğlu için su aramak için",
+     "Taş toplamak için"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çiziminde bir su damlası vardı.",
+    "aciklama": "Hz. Hacer oğlu Hz. İsmail için su arıyordu; zemzem verildi. (s. 53)"
+   }
+  },
+  {
+   "ad": "Haccın Farzları",
+   "renk": "#6b4fa0",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#ffe08a'><path d='M30 44l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1z'/><path d='M60 30l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1z'/><path d='M90 44l5 11 12 1-9 8 3 12-11-6-11 6 3-12-9-8 12-1z'/></g><text x='60' y='104' font-size='18' fill='#fff6d6' text-anchor='middle' font-family='sans-serif' font-weight='bold'>3 farz</text></svg>",
+   "aciklama": "Haccın üç farzı vardır: ihrama girmek, Arafat'ta vakfe yapmak ve Kâbe'yi tavaf etmek. (s. 56)",
+   "ek": "Farz olan tavaf, bayramda yapılan ziyaret tavafıdır. (s. 55)",
+   "akilda": "İhram, Arafat, tavaf",
+   "soru": {
+    "soru": "Hangisi haccın farzlarındandır?",
+    "secenekler": [
+     "Şeytan taşlamak",
+     "Veda tavafı yapmak",
+     "Arafat'ta vakfe yapmak"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın \"akılda kalsın\" ifadesindeki üç kelimeyi hatırla.",
+    "aciklama": "Arafat'ta vakfe yapmak haccın farzlarındandır. (s. 56)"
+   }
+  },
+  {
+   "ad": "Haccın Vacipleri",
+   "renk": "#b8452f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='16' width='72' height='88' rx='10' fill='#fff6d6'/><g stroke='#3f8f4f' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'><path d='M32 30l4 4 7-8M32 46l4 4 7-8M32 62l4 4 7-8M32 78l4 4 7-8M32 94l4 4 7-8'/></g><g stroke='#6f7fa8' stroke-width='3' stroke-linecap='round'><path d='M52 30h34M52 46h34M52 62h34M52 78h34M52 94h34'/></g></svg>",
+   "aciklama": "Haccın beş vacibi vardır: Müzdelife'de vakfe, şeytan taşlamak, saçları tıraş etmek ya da kısaltmak, say yapmak ve veda tavafı. (s. 56)",
+   "ek": "Vacip, farz kadar kesin olmayan ama sünnetten daha kuvvetli olan dinî hükümdür. (s. 198)",
+   "akilda": "Beş vacip",
+   "soru": {
+    "soru": "Hangisi haccın vaciplerindendir?",
+    "secenekler": [
+     "Say yapmak",
+     "İhrama girmek",
+     "Kâbe'yi tavaf etmek"
+    ],
+    "dogru": 0,
+    "ipucu": "Farzlar üç taneydi: ihram, Arafat, tavaf. Bunların dışında kalan hangisi?",
+    "aciklama": "Say yapmak haccın vaciplerindendir. (s. 56)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu yer Kâbe'nin yanında mı, Mekke'nin dışında mı?",
+   "kutular": [
+    {
+     "etiket": "Kâbe ve yakını",
+     "uyeler": [
+      "Kâbe",
+      "Safa ve Merve"
+     ]
+    },
+    {
+     "etiket": "Mekke ile Arafat arası ve Arafat",
+     "uyeler": [
+      "Arafat",
+      "Müzdelife",
+      "Mina"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Hacdaki her görevin bir anlamı vardır. Bunları düşünmek haccı yalnızca bedensel bir ibadet olmaktan çıkarır, manevi bir yolculuğa çevirir. (s. 56)",
+  "Hacca başlarken gusül abdesti alınır; buna imkân bulamayan abdest alır. Sonra ihrama girilip iki rekât ihram namazı kılınır. (s. 54)"
+ ],
+ "akildaKalsin": [
+  "Sıra: ihram → kudüm tavafı → Arafat → Müzdelife → Mina (şeytan taşlama, kurban) → tıraş → ziyaret tavafı → say → veda tavafı.",
+  "Arafat'ta farz vakfe, Müzdelife'de vacip vakfe yapılır.",
+  "Mina'da şeytan taşlanır ve kurban kesilir.",
+  "Farzlar (3): ihram, Arafat vakfesi, tavaf.",
+  "Vacipler (5): Müzdelife vakfesi, şeytan taşlama, tıraş, say, veda tavafı."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Hacda en son ne yapılır?",
+   "cevap": "Mekke'den ayrılmadan önce veda tavafı yapılır ve tavaf namazı kılınır. (s. 54)"
+  },
+  {
+   "soru": "İhramdan nasıl çıkılır?",
+   "cevap": "Saçlar tıraş edilerek ya da kısaltılarak ihramdan çıkılır. (s. 55)"
+  },
+  {
+   "soru": "Kudüm tavafı ne zaman yapılır?",
+   "cevap": "Kâbe'ye ilk varınca yapılan tavaftır; ardından iki rekât tavaf namazı kılınır. (s. 54)"
+  },
+  {
+   "soru": "Zemzem suyu nereden geliyor?",
+   "cevap": "Hz. Hacer, oğlu için su ararken Safa ile Merve arasında koşmuş; Allah onlara zemzem suyunu vermiştir. (s. 53)"
+  },
+  {
+   "soru": "Müzdelife'de geceyi nasıl geçirirler?",
+   "cevap": "Akşam ile yatsıyı birleştirerek kılarlar, taş toplarlar; bayram sabahı vakfe yapıp Mina'ya geçerler. (s. 53, 55)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Haccın farzları ile vaciplerinden birer örnek yaz ve hangi yerde yapıldığını söyle.",
+   "ornekCevap": "Arafat'ta vakfe yapmak haccın farzlarındandır; Arafat'ta yapılır. Şeytan taşlamak haccın vaciplerindendir; Mina'da yapılır.",
+   "anahtarlar": [
+    "farz",
+    "vacip",
+    "arafat",
+    "mina",
+    "şeytan"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hacda ilk yapılan görev hangisidir?",
+   "secenekler": [
+    "Şeytan taşlama",
+    "İhrama girmek",
+    "Veda tavafı"
+   ],
+   "dogru": 1,
+   "ipucu": "Hacca başlamak için önce özel bir duruma girilir.",
+   "aciklama": "Hac ihrama girilerek başlar. (s. 54)",
+   "kavram": "Haccın Farzları"
+  },
+  {
+   "soru": "Hacdaki son görev hangisidir?",
+   "secenekler": [
+    "Arafat vakfesi",
+    "Kurban kesimi",
+    "Veda tavafı"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Veda\" ayrılırken söylenen bir kelimedir.",
+   "aciklama": "Mekke'den ayrılmadan önce veda tavafı yapılır. (s. 54)",
+   "kavram": "Kâbe"
+  },
+  {
+   "soru": "Arafat, Müzdelife ve Mina'ya hangi sırayla gidilir?",
+   "secenekler": [
+    "Mina → Arafat → Müzdelife",
+    "Müzdelife → Mina → Arafat",
+    "Arafat → Müzdelife → Mina"
+   ],
+   "dogru": 2,
+   "ipucu": "Arife Günü ilk durak Arafat'tır.",
+   "aciklama": "Arafat'tan Müzdelife'ye, oradan Mina'ya geçilir. (s. 55)",
+   "kavram": "Müzdelife",
+   "yardim": {
+    "adimlar": [
+     "Farz olan vakfe Arife Günü yapılır. Bu hangi yerdi?",
+     "Güneş batınca taş toplamaya gidilir.",
+     "Taşlar bayram günü atılır."
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi haccın farzlarından biri değildir?",
+   "secenekler": [
+    "Şeytan taşlamak",
+    "İhrama girmek",
+    "Arafat'ta vakfe yapmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Üç farzı hatırla: ihram, Arafat, tavaf.",
+   "aciklama": "Şeytan taşlamak farz değil, vaciptir. (s. 56)",
+   "kavram": "Haccın Farzları"
+  },
+  {
+   "soru": "Hacda kurban nerede kesilir?",
+   "secenekler": [
+    "Arafat'ta",
+    "Mina'da",
+    "Safa'da"
+   ],
+   "dogru": 1,
+   "ipucu": "Şeytan taşlanan yerde kurban da kesilir.",
+   "aciklama": "Kurban Bayramı'nın ilk günü Mina'da kurban kesilir. (s. 53)",
+   "kavram": "Mina"
+  },
+  {
+   "soru": "Zemzem suyu hangi olayla ilgilidir?",
+   "secenekler": [
+    "Kâbe'nin tavafı",
+    "Şeytan taşlama",
+    "Hz. Hacer'in oğlu için su araması"
+   ],
+   "dogru": 2,
+   "ipucu": "Safa ve Merve kartını hatırla.",
+   "aciklama": "Su arayan Hz. Hacer'e ve Hz. İsmail'e zemzem verildi. (s. 53)",
+   "kavram": "Safa ve Merve"
+  },
+  {
+   "soru": "Veda tavafının hükmü nedir?",
+   "secenekler": [
+    "Vacip",
+    "Farz",
+    "Sünnet"
+   ],
+   "dogru": 0,
+   "ipucu": "Vacipler kartındaki beş görevi hatırla.",
+   "aciklama": "Veda tavafı haccın vaciplerindendir. (s. 56)",
+   "kavram": "Haccın Vacipleri"
+  },
+  {
+   "soru": "Kâbe'ye ilk varınca yapılan tavafın adı nedir?",
+   "secenekler": [
+    "Veda tavafı",
+    "Kudüm tavafı",
+    "Ziyaret tavafı"
+   ],
+   "dogru": 1,
+   "ipucu": "Kâbe kartının ek bilgisinde üç tavaf sayılıyordu; ilki hangisiydi?",
+   "aciklama": "Mekke'ye gelince ilk yapılan kudüm tavafıdır. (s. 54)",
+   "kavram": "Kâbe"
+  },
+  {
+   "soru": "Saçlar tıraş edilince ya da kısaltılınca ne olur?",
+   "secenekler": [
+    "Hac yeniden başlar",
+    "İhramdan çıkılır",
+    "Arafat'a gidilir"
+   ],
+   "dogru": 1,
+   "ipucu": "Merak Kutusu'nda bu sorunun cevabı vardı.",
+   "aciklama": "Saçlar tıraş edilerek veya kısaltılarak ihramdan çıkılır. (s. 55)",
+   "kavram": "Haccın Vacipleri"
+  },
+  {
+   "soru": "Arafat'ta hangi iki namaz birleştirilerek kılınır?",
+   "secenekler": [
+    "Öğle ve ikindi",
+    "Akşam ve yatsı",
+    "Sabah ve öğle"
+   ],
+   "dogru": 0,
+   "ipucu": "Arafat kartının ek bilgisine bak.",
+   "aciklama": "Arafat'ta öğle ile ikindi birleştirilerek kılınır. (s. 53)",
+   "kavram": "Arafat"
+  }
+ ]
+}

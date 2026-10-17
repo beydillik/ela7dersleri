@@ -1,0 +1,343 @@
+{
+ "unite": 2,
+ "ders": "din1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "d2-01",
+   "konu": "u2k1",
+   "kavram": "Tavaf",
+   "tur": "kisa",
+   "soru": "Kâbe'nin etrafında yedi kez dönmeye ne denir?",
+   "yanit": "tavaf",
+   "aciklama": "Kâbe'nin etrafında yedi tur dönmek tavaftır (s. 49–52)."
+  },
+  {
+   "id": "d2-02",
+   "konu": "u2k1",
+   "kavram": "Haccın Şartları",
+   "tur": "dytablo",
+   "soru": "Haccın şartlarından olanlara D, olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "Sağlıklı olmak",
+     "d": true
+    },
+    {
+     "s": "Yol güvenliğine sahip olmak",
+     "d": true
+    },
+    {
+     "s": "Hafız olmak",
+     "d": false
+    },
+    {
+     "s": "Belirli ekonomik güce sahip olmak",
+     "d": true
+    }
+   ],
+   "aciklama": "Hac, gitmeye gücü yetene farzdır; hafız olmak şart değildir (s. 49–52)."
+  },
+  {
+   "id": "d2-03",
+   "konu": "u2k1",
+   "kavram": "Hac",
+   "tur": "dy",
+   "ifade": "Hac yalnızca bedenle yapılan bir ibadettir.",
+   "dogru": false,
+   "duzeltme": "Hac hem mal hem bedenle yapılır.",
+   "aciklama": "Hac hem mal hem bedenle yapılan bir ibadettir (s. 49–52)."
+  },
+  {
+   "id": "d2-04",
+   "konu": "u2k1",
+   "kavram": "Vakfe",
+   "tur": "eslestir",
+   "soru": "Kavramları anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Tavaf",
+     "sag": "Kâbe'nin etrafında yedi kez dönmek"
+    },
+    {
+     "sol": "Say",
+     "sag": "Safa ile Merve arasında yedi kez gidip gelmek"
+    },
+    {
+     "sol": "Vakfe",
+     "sag": "Arafat'ta bir süre durup beklemek"
+    },
+    {
+     "sol": "Telbiye",
+     "sag": "\"Lebbeyk\" diye başlayan dua"
+    }
+   ],
+   "aciklama": "Hacda her görevin kendi adı var (s. 49–52)."
+  },
+  {
+   "id": "d2-05",
+   "konu": "u2k1",
+   "kavram": "İhram",
+   "tur": "secim",
+   "soru": "İhramla ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "Erkeklerin giydiği dikişsiz, beyaz örtüye de ihram denir.",
+    "İhrama girilen sınırlara mikat denir.",
+    "İhramlıyken parfüm kullanılabilir."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "İhramlıyken parfüm, kolonya gibi ürünler kullanılmaz (s. 49–52)."
+  },
+  {
+   "id": "d2-06",
+   "konu": "u2k1",
+   "kavram": "Tavaf",
+   "tur": "bosluk",
+   "havuz": [
+    "Merve",
+    "mikat"
+   ],
+   "cumleler": [
+    {
+     "c": "Kâbe'nin etrafında bir tur dönmeye ___ denir.",
+     "cevap": "şavt"
+    },
+    {
+     "c": "Tavafa ___ selamlanarak başlanır.",
+     "cevap": "Hacerülesved"
+    },
+    {
+     "c": "Say ___ Tepesi'nde başlar.",
+     "cevap": "Safa"
+    }
+   ],
+   "aciklama": "Bir tur şavttır; tavaf Hacerülesved'de, say Safa'da başlar (s. 49–52)."
+  },
+  {
+   "id": "d2-07",
+   "konu": "u2k2",
+   "kavram": "Müzdelife",
+   "tur": "secim",
+   "soru": "Hacda aşağıdaki görevlerden hangisi doğru sırayla verilmiştir?",
+   "secenekler": [
+    "İhram – Arafat vakfesi – Müzdelife vakfesi – şeytan taşlama",
+    "Arafat vakfesi – ihram – şeytan taşlama – Müzdelife vakfesi",
+    "Şeytan taşlama – ihram – Müzdelife vakfesi – Arafat vakfesi",
+    "Müzdelife vakfesi – Arafat vakfesi – ihram – şeytan taşlama"
+   ],
+   "dogru": 0,
+   "aciklama": "İhramla başlanır; Arafat'tan Müzdelife'ye, sonra Mina'ya geçilir (s. 53–56)."
+  },
+  {
+   "id": "d2-08",
+   "konu": "u2k2",
+   "kavram": "Haccın Farzları",
+   "tur": "dytablo",
+   "soru": "Haccın farzı olanlara D, farzı olmayanlara Y seç.",
+   "ifadeler": [
+    {
+     "s": "İhrama girmek",
+     "d": true
+    },
+    {
+     "s": "Şeytan taşlamak",
+     "d": false
+    },
+    {
+     "s": "Arafat'ta vakfe yapmak",
+     "d": true
+    },
+    {
+     "s": "Veda tavafı yapmak",
+     "d": false
+    }
+   ],
+   "aciklama": "Farzlar: ihram, Arafat vakfesi, tavaf; şeytan taşlama ve veda tavafı vaciptir (s. 53–56)."
+  },
+  {
+   "id": "d2-09",
+   "konu": "u2k2",
+   "kavram": "Mina",
+   "tur": "eslestir",
+   "soru": "Yerleri, orada yapılan görevle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Arafat",
+     "sag": "Farz olan vakfe"
+    },
+    {
+     "sol": "Müzdelife",
+     "sag": "Taş toplama ve vacip vakfe"
+    },
+    {
+     "sol": "Mina",
+     "sag": "Şeytan taşlama ve kurban kesimi"
+    },
+    {
+     "sol": "Safa ve Merve",
+     "sag": "Say"
+    }
+   ],
+   "aciklama": "Her yerin kendine ait bir görevi var (s. 53–56)."
+  },
+  {
+   "id": "d2-10",
+   "konu": "u2k2",
+   "kavram": "Müzdelife",
+   "tur": "kisa",
+   "soru": "Hacı adaylarının Arafat'tan sonra geçip taş topladıkları yer neresidir?",
+   "yanit": "Müzdelife",
+   "aciklama": "Arafat'tan sonra Müzdelife'ye geçilir, taş toplanır (s. 53–56)."
+  },
+  {
+   "id": "d2-11",
+   "konu": "u2k2",
+   "kavram": "Kâbe",
+   "tur": "dy",
+   "ifade": "Veda tavafı, Mekke'den ayrılmadan önce yapılır.",
+   "dogru": true,
+   "aciklama": "Hacdaki son görev veda tavafıdır (s. 53–56)."
+  },
+  {
+   "id": "d2-12",
+   "konu": "u2k2",
+   "kavram": "Haccın Vacipleri",
+   "tur": "secim",
+   "soru": "Hacda yapılan bazı görevler şunlardır:",
+   "onculler": [
+    "Kâbe'yi tavaf etmek",
+    "Say yapmak",
+    "Saçları tıraş etmek veya kısaltmak"
+   ],
+   "kok": "Bunlardan hangileri haccın vaciplerindendir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Tavaf farzdır; say ve tıraş vaciptir (s. 53–56)."
+  },
+  {
+   "id": "d2-13",
+   "konu": "u2k3",
+   "kavram": "Hac ile Umre",
+   "tur": "secim",
+   "soru": "Aşağıdakilerden hangisi umrede yapılmaz?",
+   "secenekler": [
+    "İhrama girmek",
+    "Kâbe'yi tavaf etmek",
+    "Say yapmak",
+    "Arafat'ta vakfe yapmak"
+   ],
+   "dogru": 3,
+   "aciklama": "Arafat vakfesi yalnızca hacda vardır (s. 51, 56–60)."
+  },
+  {
+   "id": "d2-14",
+   "konu": "u2k3",
+   "kavram": "Hac ile Umre",
+   "tur": "dy",
+   "ifade": "Umre yalnızca hac günlerinde yapılabilir.",
+   "dogru": false,
+   "duzeltme": "Umre, hac günleri dışında yılın her zamanı yapılabilir.",
+   "aciklama": "Umrenin hac gibi belirli bir vakti yoktur (s. 51, 56–60)."
+  },
+  {
+   "id": "d2-15",
+   "konu": "u2k3",
+   "kavram": "Umre",
+   "tur": "kisa",
+   "soru": "İmkânı olan her Müslüman için umre yapmanın hükmü nedir?",
+   "yanit": "sünnet",
+   "aciklama": "Umre yapmak sünnettir (s. 51, 56–60)."
+  },
+  {
+   "id": "d2-16",
+   "konu": "u2k3",
+   "kavram": "Ahlaki Gelişim",
+   "tur": "eslestir",
+   "soru": "Hacdaki görevi, hatırlattığı değerle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "İhram",
+     "sag": "Kimsenin kimseden üstün olmadığı"
+    },
+    {
+     "sol": "Arafat vakfesi",
+     "sag": "Sabırlı olmak"
+    },
+    {
+     "sol": "Şeytan taşlama",
+     "sag": "Kötü huylardan uzak durmak"
+    },
+    {
+     "sol": "Say",
+     "sag": "Zorluklarla mücadele etmek"
+    }
+   ],
+   "aciklama": "Hacdaki görevler insana güzel ahlak kazandırır (s. 51, 56–60)."
+  },
+  {
+   "id": "d2-17",
+   "konu": "u2k3",
+   "kavram": "Umrenin Yapılışı",
+   "tur": "bosluk",
+   "havuz": [
+    "vakfe",
+    "kurban"
+   ],
+   "cumleler": [
+    {
+     "c": "Umre için önce ___ girilir.",
+     "cevap": "ihrama"
+    },
+    {
+     "c": "Kâbe'de umre ___ yapılır.",
+     "cevap": "tavafı"
+    },
+    {
+     "c": "Saçlar tıraş edilerek ya da kısaltılarak ___ çıkılır.",
+     "cevap": "ihramdan"
+    }
+   ],
+   "aciklama": "Umre: ihram, tavaf, say, tıraş (s. 51, 56–60)."
+  },
+  {
+   "id": "d2-18",
+   "konu": "u2k3",
+   "kavram": "Birlik ve Kardeşlik",
+   "tur": "secim",
+   "metin": [
+    "Tavafta farklı ülkelerden gelen, farklı diller konuşan binlerce Müslüman yan yana yürüyordu.",
+    "Hepsi aynı duaları ediyordu."
+   ],
+   "soru": "Bu gözleme göre hac hakkında hangisi söylenebilir?",
+   "secenekler": [
+    "Müslümanlar arasında kardeşlik bağını güçlendirir",
+    "Yalnızca bir ülkenin insanlarına aittir",
+    "İnsanları birbirinden uzaklaştırır",
+    "Sadece bedensel bir yolculuktur"
+   ],
+   "dogru": 0,
+   "aciklama": "Hac, farklı yerlerden Müslümanları kardeş gibi bir araya getirir (s. 51, 56–60)."
+  },
+  {
+   "id": "d2-19",
+   "konu": "u2k3",
+   "kavram": "Haccın Manevi Yönü",
+   "tur": "dy",
+   "ifade": "Hac, insanın Allah'a bağlılığını artırır ve kalbini temizler.",
+   "dogru": true,
+   "aciklama": "Hac insanı manevi yönden geliştiren bir ibadettir (s. 51, 56–60)."
+  }
+ ]
+}
