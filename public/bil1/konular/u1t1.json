@@ -1,0 +1,287 @@
+{
+ "id": "u1t1",
+ "tur": "tarama",
+ "unite": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–7 · s. 9–22",
+ "giris": "Birinci ünite bitti! Şimdi yedi konunun hepsine kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce buluş, icat, bilim ve teknolojinin ne olduğunu öğrendik. Sonra endüstrinin beş adımda nasıl değiştiğini ve tasarımın üç dalını gördük. Teknoloji ile tasarımın birbirini etkilediğini, fayda ve zararlarını öğrendik. Ülkelerin teknolojiye göre gruplarını ve Ar-Ge'yi tanıdık. Son olarak yapay zekâdan drone'a yeni teknolojileri keşfettik.",
+ "kapsar": [
+  "u1k1",
+  "u1k2",
+  "u1k3",
+  "u1k4",
+  "u1k5",
+  "u1k6",
+  "u1k7"
+ ],
+ "hatirla": [
+  {
+   "konu": "u1k1",
+   "maddeler": [
+    "Buluş: var olan ama bilinmeyeni öğrenmek; keşif: yeni kıta ya da gezegen bulmak.",
+    "İcat: var olanları birleştirip yeni bir şey yapmak (kibrit, araba).",
+    "Teknoloji: daha iyi, hızlı, kolay yapma bilgisi; inovasyon: yeni fikri yararlı ürüne dönüştürmek."
+   ]
+  },
+  {
+   "konu": "u1k2",
+   "maddeler": [
+    "Endüstri (sanayi): makineyle toplu üretim.",
+    "1.0 su-buhar, 2.0 elektrik, 3.0 otomasyon, 4.0 dijitalleşme.",
+    "5.0 toplum: insan, toplum ve çevre öne çıkar."
+   ]
+  },
+  {
+   "konu": "u1k3",
+   "maddeler": [
+    "Tasarımın en önemli özelliği planlamadır.",
+    "Endüstriyel tasarım: seri üretilen 3 boyutlu eşyalar.",
+    "Mimari-çevre: bina, peyzaj, iç mekân; grafik: afiş, kitap, uyarı işareti."
+   ]
+  },
+  {
+   "konu": "u1k4",
+   "maddeler": [
+    "Teknoloji ve tasarım birbirini etkiler; süreç hiç bitmez.",
+    "Faydalar: tıp, ulaşım, eğitim; zararlar: kirlilik, işsizlik, tembellik.",
+    "Ölçüt: enerji tüketimi, çevresel etki, geri dönüşüm; STEAM: bilim, teknoloji, mühendislik, sanat, matematik."
+   ]
+  },
+  {
+   "konu": "u1k5",
+   "maddeler": [
+    "Üç grup ülke: teknoloji üreten, kullanan, ikisinin dışında kalan.",
+    "Ar-Ge: araştır, bul, geliştir.",
+    "TÜBİTAK 1963'te kuruldu; araştırma alanında kamu, özel sektör, üniversite, STK var."
+   ]
+  },
+  {
+   "konu": "u1k6",
+   "maddeler": [
+    "Yapay zekâ: kendi başına düşünen ve öğrenen makine.",
+    "Büyük veri: çok veriyi anlamlı hâle getirmek; bulut: bilgine her yerden ulaşmak.",
+    "Artırılmış gerçeklik: gerçek görüntünün üstüne sanal nesne."
+   ]
+  },
+  {
+   "konu": "u1k7",
+   "maddeler": [
+    "Drone: insansız hava aracı.",
+    "Nano cihaz: çok küçük, yüksek performanslı; güneş çatısı: çatıdan elektrik.",
+    "Nesnelerin interneti: eşyalar da internete bağlanır."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 20,
+ "gruplar": [
+  {
+   "soru": "Bu kavram hangi gruba girer?",
+   "kutular": [
+    {
+     "etiket": "Sanayi devrimleri",
+     "uyeler": [
+      "Endüstri 1.0",
+      "Endüstri 2.0",
+      "Endüstri 3.0",
+      "Endüstri 4.0"
+     ]
+    },
+    {
+     "etiket": "Tasarım dalları",
+     "uyeler": [
+      "Endüstriyel Tasarım",
+      "Mimari-Çevre Tasarımı",
+      "Grafik Tasarım"
+     ]
+    },
+    {
+     "etiket": "Yeni teknolojiler",
+     "uyeler": [
+      "Yapay Zekâ",
+      "Bulut Bilişim",
+      "Drone",
+      "Güneş Çatıları"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Bulmak mı, yapmak mı, geliştirmek mi?",
+   "kutular": [
+    {
+     "etiket": "Var olanı bulmak",
+     "uyeler": [
+      "Buluş",
+      "Keşif"
+     ]
+    },
+    {
+     "etiket": "Yeni bir şey yapmak ya da geliştirmek",
+     "uyeler": [
+      "İcat",
+      "İnovasyon",
+      "Ar-Ge"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Endüstri 4.0'da üretimde kullanılan teknolojilerden biri hangisidir?",
+   "secenekler": [
+    "Buhar makinesi",
+    "Yapay zekâ",
+    "Su değirmeni"
+   ],
+   "dogru": 1,
+   "ipucu": "Endüstri 4.0 dijitalleşmeydi: akıllı cihazlar, veri analizi ve …",
+   "aciklama": "Endüstri 4.0'da akıllı cihazlar, veri analizi ve yapay zekâ kullanılır. (s. 12, 21)",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Endüstri 4.0"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Yapay Zekâ"
+    }
+   ]
+  },
+  {
+   "soru": "Seri üretilen bir su şişesinin tasarımı ve o şişenin üzerindeki etiketin tasarımı hangi dallara girer?",
+   "secenekler": [
+    "İkisi de grafik tasarım",
+    "Şişe mimari, etiket endüstriyel",
+    "Şişe endüstriyel, etiket grafik tasarım"
+   ],
+   "dogru": 2,
+   "ipucu": "Şişe 3 boyutlu bir eşya; etiket okunan bir görüntü.",
+   "aciklama": "Seri üretilen 3 boyutlu eşya endüstriyel tasarımdır; etiket ve ambalaj grafik tasarıma girer. (s. 13–14)",
+   "kaynak": [
+    {
+     "konu": "u1k3",
+     "kavram": "Endüstriyel Tasarım"
+    },
+    {
+     "konu": "u1k3",
+     "kavram": "Grafik Tasarım"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Şişe gibi elle tutulan, çok sayıda üretilen eşya hangi daldaydı?",
+     "Okunan ve görülen etiket hangi daldaydı?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir ülkenin teknoloji kullanan ülkeyken teknoloji üreten ülke olması için en çok neye önem vermesi gerekir?",
+   "secenekler": [
+    "Ar-Ge çalışmalarına",
+    "Daha çok telefon satın almaya",
+    "Fabrikaları kapatmaya"
+   ],
+   "dogru": 0,
+   "ipucu": "Güney Kore örneğini hatırla.",
+   "aciklama": "Güney Kore Ar-Ge'ye ve eğitime önem vererek teknoloji üreten ülke oldu. (s. 18)",
+   "kaynak": [
+    {
+     "konu": "u1k5",
+     "kavram": "Ar-Ge"
+    },
+    {
+     "konu": "u1k5",
+     "kavram": "Teknoloji Üreten Ülkeler"
+    }
+   ]
+  },
+  {
+   "soru": "Fabrika dumanlarının çevreyi kirletmesi ile güneş çatılarının elektrik üretmesi birlikte düşünülünce hangisi söylenebilir?",
+   "secenekler": [
+    "Teknolojinin hiç zararı yoktur",
+    "Yeni teknolojiler, teknolojinin zararlarını azaltmaya da yardım edebilir",
+    "Güneş çatıları havayı kirletir"
+   ],
+   "dogru": 1,
+   "ipucu": "Güneş çatısı elektriği güneşten üretir; duman çıkarmaz.",
+   "aciklama": "Teknolojinin zararları vardır; güneş çatıları gibi yeni teknolojiler temiz enerji üretir. (s. 15, 21)",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "Teknolojinin Zararları"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Güneş Çatıları"
+    }
+   ]
+  },
+  {
+   "soru": "Bilgisayardaki yazılımları taşıyan cep telefonları ile akıllı saatlerin ortak noktası hangisidir?",
+   "secenekler": [
+    "İkisi de keşiftir",
+    "İkisi de Endüstri 1.0 ürünüdür",
+    "İkisi de var olan ürünleri geliştiren yeniliklerdir"
+   ],
+   "dogru": 2,
+   "ipucu": "İnovasyon, var olan ürünü iyileştirmekti.",
+   "aciklama": "Var olan ürünü iyileştirmek inovasyondur; akıllı saat de yeni bir giyilebilir teknolojidir. (s. 11, 22)",
+   "kaynak": [
+    {
+     "konu": "u1k1",
+     "kavram": "İnovasyon"
+    },
+    {
+     "konu": "u1k6",
+     "kavram": "Giyilebilir Teknoloji"
+    }
+   ]
+  },
+  {
+   "soru": "Endüstri 5.0'ın insan, toplum ve çevreyi öne çıkarması, programdaki hangi değerlendirme ölçütüne en yakındır?",
+   "secenekler": [
+    "Çevresel etki",
+    "Ürünün rengi",
+    "Ürünün markası"
+   ],
+   "dogru": 0,
+   "ipucu": "Programdaki ölçütler: enerji tüketimi, çevresel etki, geri dönüşüm oranı.",
+   "aciklama": "Endüstri 5.0 çevreyi öne çıkarır; çevresel etki de programdaki ölçütlerden biridir. (s. 12, program)",
+   "kaynak": [
+    {
+     "konu": "u1k2",
+     "kavram": "Endüstri 5.0"
+    },
+    {
+     "konu": "u1k4",
+     "kavram": "Ölçütle Değerlendirme"
+    }
+   ]
+  },
+  {
+   "soru": "Bir okul projesinde öğrenciler bir drone tasarlıyor; çizim yapıyor, hesap yapıyor ve parçaları birleştiriyor. Bu çalışma en çok hangisine örnektir?",
+   "secenekler": [
+    "Keşif",
+    "STEAM",
+    "Endüstri 1.0"
+   ],
+   "dogru": 1,
+   "ipucu": "Bilim, teknoloji, mühendislik, sanat ve matematik bir arada…",
+   "aciklama": "Birçok alanı bir arada kullanan proje temelli çalışma STEAM yaklaşımıdır. (s. 21, program)",
+   "kaynak": [
+    {
+     "konu": "u1k4",
+     "kavram": "STEAM"
+    },
+    {
+     "konu": "u1k7",
+     "kavram": "Drone"
+    }
+   ]
+  }
+ ]
+}

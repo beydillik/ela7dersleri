@@ -1,0 +1,301 @@
+{
+ "id": "u1k7",
+ "unite": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum",
+ "baslik": "Yeni Teknolojiler 2: Araçlar ve Enerji",
+ "sayfalar": "s. 21–22",
+ "giris": "Gökyüzünde uçan insansız araçlar, sürücüsü olmayan arabalar, gözle göremeyeceğimiz kadar küçük cihazlar… Bu konuda yeni araçları, güneşten elektrik üreten çatıları ve yakın gelecekte bizi bekleyenleri tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Drone",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='44' y='40' width='32' height='16' rx='6' fill='#ced4da'/><path d='M44 44l-20 -12M76 44l20 -12M44 52l-20 12M76 52l20 12' stroke='#adb5bd' stroke-width='4'/><ellipse cx='24' cy='30' rx='14' ry='3' fill='#9cc3ff'/><ellipse cx='96' cy='30' rx='14' ry='3' fill='#9cc3ff'/><ellipse cx='24' cy='66' rx='14' ry='3' fill='#9cc3ff'/><ellipse cx='96' cy='66' rx='14' ry='3' fill='#9cc3ff'/><circle cx='60' cy='48' r='4' fill='#1b2340'/><path d='M54 56v14M66 56v14' stroke='#adb5bd' stroke-width='2'/><rect x='48' y='70' width='24' height='20' rx='2' fill='#e8a33d'/><path d='M60 70v20M48 80h24' stroke='#8d5524' stroke-width='2'/></svg>",
+   "aciklama": "İnsansız hava aracıdır. Kelime İngilizcede \"erkek arı\" demektir.",
+   "ek": "Taşımacılık, tarım, medya, eğlence, sigorta ve telekomünikasyon gibi birçok alanda kullanılır.",
+   "akilda": "Pilotsuz uçan araç",
+   "soru": {
+    "soru": "Drone kelimesi günümüzde ne anlamda kullanılır?",
+    "secenekler": [
+     "Sürücüsüz otomobil",
+     "İnsansız hava aracı",
+     "Akıllı saat"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta pervaneli, uçan bir araç vardı.",
+    "aciklama": "Drone günümüzde insansız hava araçları anlamında kullanılır. (s. 21)"
+   }
+  },
+  {
+   "ad": "Sürücüsüz Araç",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 72l10 -20h52l14 20h10v18h-92v-18z' fill='#e76f51'/><path d='M34 54l-6 16h22v-16zM56 54v16h28l-10 -16z' fill='#9cc3ff'/><circle cx='36' cy='92' r='10' fill='#495057'/><circle cx='88' cy='92' r='10' fill='#495057'/><circle cx='36' cy='92' r='4' fill='#adb5bd'/><circle cx='88' cy='92' r='4' fill='#adb5bd'/><path d='M104 66q8 6 0 14M108 60q14 12 0 26' stroke='#f2c14e' stroke-width='2.5' fill='none'/><rect x='54' y='40' width='12' height='8' rx='2' fill='#f2c14e'/><path d='M60 40v-8' stroke='#f2c14e' stroke-width='2'/></svg>",
+   "aciklama": "Sürücü olmadan, kendi kendine yol alabilen araçlardır.",
+   "ek": "Kitaptaki proje 2008'de başladı ve büyük şehirlerde denendi. Kitaba göre büyük ihtimalle birkaç on yıl içinde internet kadar normal görülecekler.",
+   "akilda": "Direksiyonda kimse yok",
+   "soru": {
+    "soru": "Sürücüsüz araç için hangisi doğrudur?",
+    "secenekler": [
+     "Kendi kendine yol alabilir",
+     "Sadece suda gider",
+     "Uçmak için tasarlanmıştır"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta direksiyonda kimse yoktu ama araç algılayıcılarla çevreyi görüyordu.",
+    "aciklama": "Sürücüsüz araçlar sürücü olmadan yol alır; denemeleri 2008'de başladı. (s. 22)"
+   }
+  },
+  {
+   "ad": "Nano Cihazlar",
+   "renk": "#7b61ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='50' cy='50' r='30' fill='none' stroke='#ced4da' stroke-width='6'/><path d='M72 72l26 26' stroke='#ced4da' stroke-width='9' stroke-linecap='round'/><g fill='none' stroke='#7b61ff' stroke-width='2.5'><path d='M38 40l6 -4 6 4v7l-6 4-6 -4z'/><path d='M50 47l6 -4 6 4v7l-6 4-6 -4z'/><path d='M38 54l6 -4 6 4v7l-6 4-6 -4z'/></g><circle cx='30' cy='62' r='2' fill='#f2c14e'/><circle cx='64' cy='34' r='2' fill='#f2c14e'/><circle cx='66' cy='64' r='1.5' fill='#f2c14e'/></svg>",
+   "aciklama": "Çok küçük ölçekte üretilen, yüksek performanslı aletlerdir. Bu tekniklere nanoteknoloji denir.",
+   "ek": "Tıp, havacılık, elektronik ve taşımacılıkta kullanılır. Kanser tedavisini hedefleyen nanoparçacıklar da bir örnektir.",
+   "akilda": "Çok küçük, çok güçlü",
+   "soru": {
+    "soru": "Hangisi nano cihazlara örnektir?",
+    "secenekler": [
+     "Drone",
+     "Karbon nanotüp",
+     "Akıllı saat"
+    ],
+    "dogru": 1,
+    "ipucu": "Adında \"nano\" geçen şıkka bak.",
+    "aciklama": "Sensörler, karbon nanotüpler, nano yapılı güneş pilleri nano cihaz örnekleridir. (s. 21)"
+   }
+  },
+  {
+   "ad": "Güneş Çatıları",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='96' cy='20' r='10' fill='#f2c14e'/><path d='M96 4v4M112 20h-4M84 8l3 3M108 32l-3 -3' stroke='#f2c14e' stroke-width='2.5'/><path d='M10 60l42 -30 42 30z' fill='#2d6cdf'/><path d='M24 50l12 -8M36 58l26 -18M52 30v28M66 40l-10 18M80 50l-8 8' stroke='#9cc3ff' stroke-width='1.5'/><rect x='18' y='60' width='68' height='40' fill='#f4d6a0'/><rect x='44' y='76' width='14' height='24' fill='#8d5524'/><rect x='26' y='68' width='10' height='10' fill='#9cc3ff'/><rect x='66' y='68' width='10' height='10' fill='#9cc3ff'/><path d='M100 70l-8 14h7l-4 12 10 -16h-7l4 -10z' fill='#f2c14e'/></svg>",
+   "aciklama": "Normal bir çatı gibi görünen ama güneş enerjisiyle elektrik üreten çatılardır.",
+   "akilda": "Çatıdan elektrik",
+   "soru": {
+    "soru": "Güneş çatıları ne yapar?",
+    "secenekler": [
+     "Yağmur suyunu ısıtır",
+     "Evi rüzgârdan saklar",
+     "Güneş enerjisiyle elektrik üretir"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta güneş, çatı ve şimşek vardı.",
+    "aciklama": "Güneş çatıları güneş enerjisini kullanarak elektrik üretir. (s. 21)"
+   }
+  },
+  {
+   "ad": "Nesnelerin İnterneti",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 40l14 -12h10q6 8 12 0h10l14 12-10 12-6 -4v46h-38v-46l-6 4z' fill='#52b788'/><g fill='none' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'><path d='M48 62q12 -10 24 0'/><path d='M52 68q8 -6 16 0'/></g><circle cx='60' cy='74' r='3' fill='#f2c14e'/><rect x='92' y='60' width='18' height='34' rx='3' fill='#e9ecef'/><path d='M92 72h18M96 64v4M96 76v6' stroke='#adb5bd' stroke-width='2'/><path d='M98 52q4 -4 8 0M96 48q6 -6 12 0' stroke='#f2c14e' stroke-width='2' fill='none'/></svg>",
+   "aciklama": "Eşyaların internete bağlanıp kendi başlarına veri alışverişi yapmasıdır. Kitapta \"İnterneti nesneler kullanacak\" diye geçer.",
+   "ek": "Kitap yakın gelecek örnekleri arasında sayar: internet donanımlı giysiler gibi.",
+   "akilda": "Eşyalar da internette",
+   "soru": {
+    "soru": "İnternete bağlı bir tişört hangisine örnektir?",
+    "secenekler": [
+     "Nesnelerin interneti",
+     "Endüstri 1.0",
+     "Grafik tasarım"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta internet simgeli tişört vardı.",
+    "aciklama": "Kitap \"İnterneti nesneler kullanacak, giysinizin internet donanımlı olduğunu düşünün\" der. (s. 22)"
+   }
+  },
+  {
+   "ad": "Yakın Gelecek Teknolojileri",
+   "renk": "#d63384",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 64h72q8 0 8 8v6h-88v-6q0 -8 8 -14z' fill='#d63384'/><path d='M40 64l8 -14h24l10 14z' fill='#9cc3ff'/><path d='M14 50h30M76 50h30' stroke='#ced4da' stroke-width='4' stroke-linecap='round'/><path d='M29 50v8M91 50v8' stroke='#ced4da' stroke-width='3'/><circle cx='36' cy='80' r='5' fill='#495057'/><circle cx='84' cy='80' r='5' fill='#495057'/><path d='M20 98q20 -6 40 0t40 0' stroke='#9cc3ff' stroke-width='2' fill='none' stroke-dasharray='4 3'/><path d='M96 20l3 -6 3 6 6 3-6 3-3 6-3 -6-6 -3z' fill='#f2c14e'/></svg>",
+   "aciklama": "Uçan taksi, ev robotu, 3B yazıcıyla yapılan evler, süper hızlı trenler gibi yakında hayatımıza girebilecek teknolojilerdir.",
+   "ek": "Kitaptaki diğer örnekler: süper drone ile kargo, beyinle çalışan protezler, topraktan elektrik, vücut biyosensörleri. Bunlar tahmindir, henüz yaygın değildir.",
+   "akilda": "Yarının teknolojisi",
+   "soru": {
+    "soru": "Hangisi kitabın yakın gelecek örneklerinden biridir?",
+    "secenekler": [
+     "Buhar makinesi",
+     "Uçan taksi",
+     "Daktilo"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta kanatlı, uçan bir araba vardı.",
+    "aciklama": "Kitabın yakın gelecek listesinde uçan taksiler de var. (s. 22)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bugün mü, yakın gelecekte mi?",
+   "kutular": [
+    {
+     "etiket": "Bugün kullanılıyor",
+     "uyeler": [
+      "Drone",
+      "Nano Cihazlar",
+      "Güneş Çatıları"
+     ]
+    },
+    {
+     "etiket": "Deneniyor ya da bekleniyor",
+     "uyeler": [
+      "Sürücüsüz Araç",
+      "Nesnelerin İnterneti",
+      "Yakın Gelecek Teknolojileri"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Ne işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Ulaşım ve taşıma",
+     "uyeler": [
+      "Drone",
+      "Sürücüsüz Araç"
+     ]
+    },
+    {
+     "etiket": "Enerji",
+     "uyeler": [
+      "Güneş Çatıları"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "\"Drone\" kelimesi İngilizcede erkek arı demektir; uçarken çıkardığı vızıltıyı düşün. (s. 21)",
+  "Kitabın yakın gelecek listesinde kurşun geçirmez tişört ve dev 3B yazıcıyla ev yapmak da var. (s. 22)"
+ ],
+ "akildaKalsin": [
+  "Drone: insansız hava aracı.",
+  "Sürücüsüz araç: kendi kendine yol alır.",
+  "Nano cihaz: çok küçük, yüksek performanslı.",
+  "Güneş çatısı: çatıdan elektrik üretir.",
+  "Nesnelerin interneti: eşyalar da internete bağlanır.",
+  "Yakın gelecek: uçan taksi, ev robotu, 3B yazıcıyla ev."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Drone'lar hangi işlerde kullanılır?",
+   "cevap": "Taşımacılık, tarım, medya, eğlence, sigorta ve telekomünikasyon gibi birçok alanda. (s. 21)"
+  },
+  {
+   "soru": "Nano cihazlar tıpta ne işe yarar?",
+   "cevap": "Kitaba göre kanser tedavisini hedefleyen nanoparçacıklar geliştiriliyor. (s. 21)"
+  },
+  {
+   "soru": "Güneş çatısı nasıl görünür?",
+   "cevap": "Normal bir çatı gibi görünür ama güneş enerjisinden elektrik üretir. (s. 21)"
+  },
+  {
+   "soru": "Kargoyu beklemek tarihe mi karışacak?",
+   "cevap": "Kitabın tahminine göre süper drone'lar sipariş verir vermez kargoyu getirebilecek. (s. 22)"
+  },
+  {
+   "soru": "Gelecekte hastalıklara çare bulunacak mı?",
+   "cevap": "Kitap, tıp cihazları geliştikçe birçok hastalığa teknolojinin çare bulacağını tahmin ediyor. (s. 22)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Yakın gelecek teknolojilerinden hangisini en çok kullanmak isterdin? Neden?",
+   "ornekCevap": "Ev robotunu isterdim; çünkü evdeki bazı işleri yapar ve bize zaman kazandırır.",
+   "anahtarlar": [
+    "çünkü",
+    "işe yar",
+    "kolay",
+    "zaman"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "İnsansız hava aracına ne denir?",
+   "secenekler": [
+    "Drone",
+    "Hyperloop",
+    "Nanotüp"
+   ],
+   "dogru": 0,
+   "ipucu": "İngilizcede erkek arı demek olan kelime…",
+   "aciklama": "Drone, insansız hava aracı anlamında kullanılır. (s. 21)",
+   "kavram": "Drone"
+  },
+  {
+   "soru": "Hangisi drone'ların kullanıldığı alanlardan biridir?",
+   "secenekler": [
+    "Diş fırçalama",
+    "Tarım",
+    "Uyku"
+   ],
+   "dogru": 1,
+   "ipucu": "Kitapta taşımacılık, medya, eğlence ve … sayılıyordu.",
+   "aciklama": "Drone taşımacılık, tarım, medya gibi birçok alanda kullanılır. (s. 21)",
+   "kavram": "Drone"
+  },
+  {
+   "soru": "Sürücüsüz araç projesi hangi yıl başladı?",
+   "secenekler": [
+    "1963",
+    "1923",
+    "2008"
+   ],
+   "dogru": 2,
+   "ipucu": "Kartın ek bilgisinde yazıyordu.",
+   "aciklama": "Kitaptaki sürücüsüz araç projesi 2008'de başladı. (s. 22)",
+   "kavram": "Sürücüsüz Araç"
+  },
+  {
+   "soru": "Çok küçük ölçekte, yüksek performanslı aletler geliştirme tekniklerine ne denir?",
+   "secenekler": [
+    "Nanoteknoloji",
+    "Bulut bilişim",
+    "Grafik tasarım"
+   ],
+   "dogru": 0,
+   "ipucu": "Çok küçük, çok güçlü…",
+   "aciklama": "Nanoteknoloji, yüksek performanslı aletler geliştirmek için kullanılan teknikleri kapsar. (s. 21)",
+   "kavram": "Nano Cihazlar"
+  },
+  {
+   "soru": "Normal çatı gibi görünüp elektrik üreten çatılar hangi enerjiyi kullanır?",
+   "secenekler": [
+    "Rüzgâr",
+    "Güneş",
+    "Su"
+   ],
+   "dogru": 1,
+   "ipucu": "Adı zaten söylüyor.",
+   "aciklama": "Güneş çatıları güneş enerjisini kullanarak elektrik üretir. (s. 21)",
+   "kavram": "Güneş Çatıları"
+  },
+  {
+   "soru": "Buzdolabının internete bağlanıp eksik yiyeceği bildirmesi hangisine örnektir?",
+   "secenekler": [
+    "Güneş çatısı",
+    "Drone",
+    "Nesnelerin interneti"
+   ],
+   "dogru": 2,
+   "ipucu": "Eşyalar da internette…",
+   "aciklama": "Eşyaların internete bağlanıp veri alışverişi yapması nesnelerin internetidir. (s. 22)",
+   "kavram": "Nesnelerin İnterneti",
+   "yardim": {
+    "adimlar": [
+     "Burada internete bağlanan şey bir insan mı, bir eşya mı?",
+     "Eşyaların internete bağlanmasına ne deniyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "\"Dev 3 boyutlu yazıcıyla ev inşa etmek\" kitapta nasıl verilmiştir?",
+   "secenekler": [
+    "Yakın gelecekte olabilecek bir teknoloji",
+    "Endüstri 1.0 örneği",
+    "Bir grafik tasarım ürünü"
+   ],
+   "dogru": 0,
+   "ipucu": "Kitap \"yakın gelecekte neler olabilir?\" diye sorup örnekler sıralıyordu.",
+   "aciklama": "3B yazıcıyla ev yapmak, kitabın yakın gelecek örneklerindendir. (s. 22)",
+   "kavram": "Yakın Gelecek Teknolojileri"
+  }
+ ]
+}

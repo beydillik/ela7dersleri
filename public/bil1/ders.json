@@ -25,14 +25,14 @@
  },
  "uniteler": [
   {"ad": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum", "no": 1, "konular": [
-   {"id": "u1k1", "baslik": "Buluş, İcat ve Teknoloji", "sayfalar": "s. 11", "kaynakSayfalar": [[10, 11]], "hazir": false},
-   {"id": "u1k2", "baslik": "Endüstri Devrimleri", "sayfalar": "s. 12", "kaynakSayfalar": [[12, 12]], "hazir": false},
-   {"id": "u1k3", "baslik": "Tasarım ve Tasarım Dalları", "sayfalar": "s. 13–14", "kaynakSayfalar": [[13, 14]], "hazir": false},
-   {"id": "u1k4", "baslik": "Teknoloji-Tasarım İlişkisi ve STEAM", "sayfalar": "s. 15–17 · program", "kaynakSayfalar": [[15, 17]], "hazir": false},
-   {"id": "u1k5", "baslik": "Ülkemizde ve Dünyada Teknoloji", "sayfalar": "s. 18–19", "kaynakSayfalar": [[18, 19]], "hazir": false},
-   {"id": "u1k6", "baslik": "Yeni Teknolojiler 1: Yapay Zekâ ve Veri", "sayfalar": "s. 21–22", "kaynakSayfalar": [[21, 22]], "hazir": false},
-   {"id": "u1k7", "baslik": "Yeni Teknolojiler 2: Araçlar ve Enerji", "sayfalar": "s. 21–22", "kaynakSayfalar": [[21, 22]], "hazir": false},
-   {"id": "u1t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–7", "kaynakSayfalar": [[9, 22]], "hazir": false}
+   {"id": "u1k1", "baslik": "Buluş, İcat ve Teknoloji", "sayfalar": "s. 11", "kaynakSayfalar": [[10, 11]], "hazir": true},
+   {"id": "u1k2", "baslik": "Endüstri Devrimleri", "sayfalar": "s. 11–12", "kaynakSayfalar": [[11, 12]], "hazir": true},
+   {"id": "u1k3", "baslik": "Tasarım ve Tasarım Dalları", "sayfalar": "s. 13–14", "kaynakSayfalar": [[13, 14]], "hazir": true},
+   {"id": "u1k4", "baslik": "Teknoloji-Tasarım İlişkisi ve STEAM", "sayfalar": "s. 15–17 · program", "kaynakSayfalar": [[15, 17]], "hazir": true},
+   {"id": "u1k5", "baslik": "Ülkemizde ve Dünyada Teknoloji", "sayfalar": "s. 18–19", "kaynakSayfalar": [[18, 19]], "hazir": true},
+   {"id": "u1k6", "baslik": "Yeni Teknolojiler 1: Yapay Zekâ ve Veri", "sayfalar": "s. 21–22", "kaynakSayfalar": [[21, 22]], "hazir": true},
+   {"id": "u1k7", "baslik": "Yeni Teknolojiler 2: Araçlar ve Enerji", "sayfalar": "s. 21–22", "kaynakSayfalar": [[21, 22]], "hazir": true},
+   {"id": "u1t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–7", "kaynakSayfalar": [[9, 22]], "hazir": true}
   ]},
   {"ad": "2. Ünite: Temel Tasarım", "no": 2, "konular": [
    {"id": "u2k1", "baslik": "Tasarım Elemanları 1: Nokta, Çizgi, Şekil ve Biçim", "sayfalar": "s. 23–24 · program", "kaynakSayfalar": [[23, 24]], "hazir": false},

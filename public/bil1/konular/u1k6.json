@@ -1,0 +1,264 @@
+{
+ "id": "u1k6",
+ "unite": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum",
+ "baslik": "Yeni Teknolojiler 1: Yapay Zekâ ve Veri",
+ "sayfalar": "s. 21–22",
+ "giris": "Son yıllarda hayatımıza yepyeni teknolojiler girdi. Bu konuda düşünebilen makineleri, büyük veriyi, bulutu, artırılmış gerçekliği ve giyilebilir teknolojiyi tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Yapay Zekâ",
+   "renk": "#7b61ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='30' y='30' width='60' height='50' rx='12' fill='#ced4da'/><path d='M60 30v-12' stroke='#ced4da' stroke-width='4'/><circle cx='60' cy='14' r='5' fill='#f2c14e'/><circle cx='46' cy='52' r='8' fill='#1b2340'/><circle cx='74' cy='52' r='8' fill='#1b2340'/><circle cx='48' cy='50' r='3' fill='#9cc3ff'/><circle cx='76' cy='50' r='3' fill='#9cc3ff'/><rect x='46' y='66' width='28' height='6' rx='3' fill='#7b61ff'/><rect x='22' y='46' width='8' height='16' rx='3' fill='#adb5bd'/><rect x='90' y='46' width='8' height='16' rx='3' fill='#adb5bd'/><rect x='38' y='84' width='44' height='22' rx='6' fill='#adb5bd'/><path d='M48 92h8l4 6h12' stroke='#7b61ff' stroke-width='2.5' fill='none'/></svg>",
+   "aciklama": "Bir makinenin ya da bilgisayar programının kendi başına düşünme ve öğrenme yetisidir.",
+   "ek": "Temelinde insanlar gibi düşünebilen, kendi başına hareket edebilen ve öğrenebilen makineler yapma fikri vardır. Programda da anahtar kavramdır.",
+   "akilda": "Düşünen, öğrenen makine",
+   "soru": {
+    "soru": "Yapay zekâ nedir?",
+    "secenekler": [
+     "Bir makinenin kendi başına düşünme ve öğrenme yetisi",
+     "Bir bilgisayarın ekranı",
+     "Güneş enerjili bir çatı"
+    ],
+    "dogru": 0,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla.",
+    "aciklama": "Yapay zekâ, makinenin kendi başına düşünme ve öğrenme yetisidir. (s. 21)"
+   }
+  },
+  {
+   "ad": "Büyük Veri",
+   "renk": "#e8a33d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='14' width='18' height='14' rx='2' fill='#9cc3ff'/><circle cx='18' cy='20' r='2' fill='#f2c14e'/><path d='M42 14h20v12h-14l-6 4z' fill='#e9ecef'/><rect x='74' y='12' width='14' height='18' rx='2' fill='#f4d6a0'/><path d='M77 18h8M77 22h8' stroke='#8d5524' stroke-width='1.5'/><rect x='98' y='16' width='14' height='12' rx='2' fill='#d63384'/><path d='M14 40h92l-30 30v20h-32v-20z' fill='#e8a33d'/><rect x='40' y='96' width='8' height='12' fill='#52b788'/><rect x='52' y='92' width='8' height='16' fill='#52b788'/><rect x='64' y='86' width='8' height='22' fill='#52b788'/><rect x='76' y='80' width='8' height='28' fill='#52b788'/></svg>",
+   "aciklama": "Sosyal medya, fotoğraflar ve kayıt dosyaları gibi farklı kaynaklardan gelen verilerin anlamlı ve işlenebilir hâle getirilmiş biçimidir.",
+   "ek": "Adı \"çok yer kaplayan veri\" gibi düşündürür ama tam olarak öyle değildir. İngilizcesi Big Data.",
+   "akilda": "Çok veri, anlamlı bilgi",
+   "soru": {
+    "soru": "Büyük veri için hangisi doğrudur?",
+    "secenekler": [
+     "Sadece diskte çok yer kaplayan bir dosyadır",
+     "Farklı kaynaklardan gelen verilerin anlamlı hâle getirilmesidir",
+     "Bir tür robottur"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta huniye giren veriler çıkınca grafik oluyordu.",
+    "aciklama": "Büyük veri, farklı kaynaklardan gelen verilerin anlamlı ve işlenebilir hâlidir. (s. 21)"
+   }
+  },
+  {
+   "ad": "Bulut Bilişim",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 56a16 16 0 0 1 22 -20a20 20 0 0 1 36 6a14 14 0 0 1 4 28h-58a14 14 0 0 1 -4 -14z' fill='#e9ecef'/><rect x='12' y='88' width='24' height='16' rx='2' fill='#9cc3ff'/><rect x='54' y='86' width='12' height='20' rx='2' fill='#9cc3ff'/><rect x='84' y='88' width='24' height='16' rx='2' fill='#9cc3ff'/><path d='M24 88l12 -18M60 86v-16M96 88l-10 -18' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='3 3'/></svg>",
+   "aciklama": "İnternet üzerinden, istediğimiz yerde ve zamanda bilgimize ulaşmamızı sağlayan teknolojidir.",
+   "ek": "Kitap bunu elektrik dağıtım ağına benzetir: elektrik nasıl her prize geliyorsa, bilgi de internetle her cihaza gelir.",
+   "akilda": "Bilgin her yerde seninle",
+   "soru": {
+    "soru": "Bulut bilişim ne sağlar?",
+    "secenekler": [
+     "İnternet olmadan çalışmayı",
+     "Bilgiye istenen yerde ve zamanda ulaşmayı",
+     "Yağmuru durdurmayı"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta buluta bağlı farklı cihazlar vardı.",
+    "aciklama": "Bulut bilişim, internet üzerinden istenen yerde ve zamanda bilgiye ulaşmayı sağlar. (s. 22)"
+   }
+  },
+  {
+   "ad": "Artırılmış Gerçeklik",
+   "renk": "#d63384",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='76' width='100' height='30' fill='#495057'/><rect x='72' y='26' width='38' height='50' fill='#868e96'/><rect x='30' y='20' width='44' height='80' rx='7' fill='#ced4da'/><rect x='34' y='28' width='36' height='62' fill='#2d6cdf'/><rect x='38' y='62' width='28' height='12' rx='3' fill='#d63384'/><rect x='38' y='54' width='8' height='12' rx='3' fill='#d63384'/><rect x='58' y='54' width='8' height='12' rx='3' fill='#d63384'/><path d='M38 58l-8 -6M66 58l8 -6' stroke='#f2c14e' stroke-width='2' stroke-dasharray='2 2'/></svg>",
+   "aciklama": "Sanal nesnelerin, cihazın ekranında gerçek görüntünün üzerine bindirilmesidir.",
+   "ek": "Cihazlar cisim tanıma özelliğini kullanır. Kitapta \"Arttırılmış Gerçeklik\" yazımıyla geçer.",
+   "akilda": "Gerçeğin üstüne sanal",
+   "soru": {
+    "soru": "Bir mobilya uygulamasıyla odanda koltuğun nasıl duracağını telefonda görmek hangisine örnektir?",
+    "secenekler": [
+     "Bulut bilişim",
+     "Büyük veri",
+     "Artırılmış gerçeklik"
+    ],
+    "dogru": 2,
+    "ipucu": "Sanal koltuk gerçek odanın üstüne bindiriliyor.",
+    "aciklama": "Sanal nesnenin gerçek görüntü üzerine bindirilmesi artırılmış gerçekliktir. (s. 21)"
+   }
+  },
+  {
+   "ad": "Giyilebilir Teknoloji",
+   "renk": "#52b788",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='46' y='10' width='28' height='26' rx='4' fill='#495057'/><rect x='46' y='84' width='28' height='26' rx='4' fill='#495057'/><rect x='34' y='32' width='52' height='56' rx='12' fill='#ced4da'/><rect x='40' y='38' width='40' height='44' rx='8' fill='#1b2340'/><path d='M60 72c-9 -7 -13 -10 -13 -15a6 6 0 0 1 13 -2a6 6 0 0 1 13 2c0 5 -4 8 -13 15z' fill='#e63946'/><path d='M44 52h6l3 -5 4 10 3 -5h6' stroke='#52b788' stroke-width='2' fill='none'/><rect x='86' y='50' width='5' height='12' rx='2' fill='#adb5bd'/></svg>",
+   "aciklama": "Üzerimizde taşıdığımız; sensörlerle veri toplayıp paylaşan cihazlardır.",
+   "ek": "Kitaptaki örnekler: akıllı telefonla uyumlu spor ürünleri, akıllı saatler, sanal gerçeklik gözlükleri.",
+   "akilda": "Tak, giy, ölç",
+   "soru": {
+    "soru": "Hangisi giyilebilir teknolojiye örnektir?",
+    "secenekler": [
+     "Akıllı saat",
+     "Buzdolabı",
+     "Masa lambası"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta bilekte duran bir şey çizilmişti.",
+    "aciklama": "Akıllı saatler ve sanal gerçeklik gözlükleri giyilebilir teknoloji örnekleridir. (s. 22)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Nerede çalışır?",
+   "kutular": [
+    {
+     "etiket": "İnternet ve bilgisayarlarda",
+     "uyeler": [
+      "Yapay Zekâ",
+      "Büyük Veri",
+      "Bulut Bilişim"
+     ]
+    },
+    {
+     "etiket": "Gözümüzün önünde ya da üstümüzde",
+     "uyeler": [
+      "Artırılmış Gerçeklik",
+      "Giyilebilir Teknoloji"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitabın yakın gelecek listesinde tarih dersinde sanal gerçeklik gözlüğüyle geçmişe yolculuk da var. (s. 22)",
+  "Kitaba göre gelecekte konuşan, analiz yapabilen yapay zekâlar her yerde olacak. (s. 22)"
+ ],
+ "akildaKalsin": [
+  "Yapay zekâ: kendi başına düşünen ve öğrenen makine.",
+  "Büyük veri: çok veriyi anlamlı hâle getirmek.",
+  "Bulut bilişim: bilgine internetle her yerden ulaşmak.",
+  "Artırılmış gerçeklik: gerçek görüntünün üstüne sanal nesne.",
+  "Giyilebilir teknoloji: akıllı saat, sanal gerçeklik gözlüğü."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Büyük veri neden sadece \"büyük dosya\" değil?",
+   "cevap": "Çünkü asıl önemli olan, farklı kaynaklardan gelen verilerin anlamlı ve işlenebilir hâle getirilmesidir. (s. 21)"
+  },
+  {
+   "soru": "Bulut bilişimde bilgilerim gerçekten bulutta mı?",
+   "cevap": "Hayır, gökyüzünde değil. Bilgiler internet ağı üzerinden saklanır ve her yerden ulaşılır. (s. 22)"
+  },
+  {
+   "soru": "Artırılmış gerçeklik nasıl çalışır?",
+   "cevap": "Cihaz cisim tanıma özelliğiyle gerçek görüntüyü tanır ve üzerine sanal nesneyi yerleştirir. (s. 21)"
+  },
+  {
+   "soru": "Yapay zekâ fikri nereden çıktı?",
+   "cevap": "İnsanlar gibi düşünebilen, kendi başına hareket edebilen ve öğrenebilen makineler yapma düşüncesinden. (s. 21)"
+  },
+  {
+   "soru": "Giyilebilir cihazlar veriyi nasıl toplar?",
+   "cevap": "Sensörler ve iletişim sistemleriyle veri toplar ve paylaşır. (s. 22)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okulda artırılmış gerçeklik ya da yapay zekâ nasıl kullanılabilir? Bir örnek yaz.",
+   "ornekCevap": "Fen dersinde telefonu kitaba tutunca kalbin üç boyutlu modeli sayfanın üstünde görünebilir. Bu artırılmış gerçekliktir.",
+   "anahtarlar": [
+    "sanal",
+    "gerçek",
+    "üstüne",
+    "yapay zek",
+    "öğren"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "İnsanlar gibi öğrenebilen makineler yapma fikri hangi teknolojinin temelidir?",
+   "secenekler": [
+    "Yapay zekâ",
+    "Güneş çatısı",
+    "Bulut bilişim"
+   ],
+   "dogru": 0,
+   "ipucu": "Düşünen, öğrenen makine…",
+   "aciklama": "Yapay zekâ fikrinin temelinde insanlar gibi öğrenebilen makineler vardır. (s. 21)",
+   "kavram": "Yapay Zekâ"
+  },
+  {
+   "soru": "Sosyal medya paylaşımları ve fotoğraf arşivleri gibi verilerin anlamlı hâle getirilmesine ne denir?",
+   "secenekler": [
+    "Artırılmış gerçeklik",
+    "Büyük veri",
+    "Giyilebilir teknoloji"
+   ],
+   "dogru": 1,
+   "ipucu": "İngilizcesi Big Data.",
+   "aciklama": "Farklı kaynaklardan gelen verilerin anlamlı ve işlenebilir hâli büyük veridir. (s. 21)",
+   "kavram": "Büyük Veri"
+  },
+  {
+   "soru": "Ödevini evde kaydedip okulda başka bir bilgisayardan açmanı sağlayan teknoloji hangisidir?",
+   "secenekler": [
+    "Giyilebilir teknoloji",
+    "Artırılmış gerçeklik",
+    "Bulut bilişim"
+   ],
+   "dogru": 2,
+   "ipucu": "Bilgin internetle her yerde seninle…",
+   "aciklama": "Bulut bilişim, istenen yerde ve zamanda bilgiye ulaşmayı sağlar. (s. 22)",
+   "kavram": "Bulut Bilişim",
+   "yardim": {
+    "adimlar": [
+     "Ödev nerede saklanıyor: bilgisayarın içinde mi, internette mi?",
+     "İnternette saklanıp her yerden açılan teknolojiyi hatırla."
+    ]
+   }
+  },
+  {
+   "soru": "Artırılmış gerçeklikte ne olur?",
+   "secenekler": [
+    "Sanal nesneler gerçek görüntünün üzerine bindirilir",
+    "Bütün veriler silinir",
+    "Makine kendi başına öğrenir"
+   ],
+   "dogru": 0,
+   "ipucu": "Gerçeğin üstüne sanal…",
+   "aciklama": "Artırılmış gerçeklik, sanal nesneleri gerçek görüntünün üzerine bindirir. (s. 21)",
+   "kavram": "Artırılmış Gerçeklik"
+  },
+  {
+   "soru": "Bulut bilişimi kitap neye benzetir?",
+   "secenekler": [
+    "Bir oyuncağa",
+    "Elektrik dağıtım ağına",
+    "Bir kitaplığa"
+   ],
+   "dogru": 1,
+   "ipucu": "Her prize gelen bir şey…",
+   "aciklama": "Kitap bulut bilişimi elektrik dağıtıcılarına benzer bir ağ olarak anlatır. (s. 22)",
+   "kavram": "Bulut Bilişim"
+  },
+  {
+   "soru": "Hangisi giyilebilir teknoloji değildir?",
+   "secenekler": [
+    "Akıllı saat",
+    "Sanal gerçeklik gözlüğü",
+    "Çamaşır makinesi"
+   ],
+   "dogru": 2,
+   "ipucu": "Giyilebilir: üzerimizde taşıdığımız.",
+   "aciklama": "Akıllı saat ve sanal gerçeklik gözlüğü giyilebilir; çamaşır makinesi giyilmez. (s. 22)",
+   "kavram": "Giyilebilir Teknoloji"
+  },
+  {
+   "soru": "Giyilebilir teknoloji veriyi neyle toplar?",
+   "secenekler": [
+    "Sensörler ve iletişim sistemleriyle",
+    "Kâğıt ve kalemle",
+    "Rüzgârla"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartta kalp atışını ölçen bir saat vardı.",
+   "aciklama": "Giyilebilir teknoloji sensörler ve iletişim sistemleriyle veri alışverişi yapar. (s. 22)",
+   "kavram": "Giyilebilir Teknoloji"
+  }
+ ]
+}

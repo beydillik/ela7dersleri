@@ -1,0 +1,332 @@
+{
+ "id": "u1k5",
+ "unite": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum",
+ "baslik": "Ülkemizde ve Dünyada Teknoloji",
+ "sayfalar": "s. 18–19",
+ "giris": "Tarih boyunca en iyi teknolojiyi kullanan ve üreten toplumlar kalkınmada başarılı oldu. Bu konuda ülkeleri teknolojiye göre üç gruba ayıracağız. Ar-Ge'yi ve ülkemizdeki araştırma kurumlarını tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Teknoloji Üreten Ülkeler",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 92v-30l16 10v-10l16 10v-26h12v46z' fill='#9cc3ff'/><rect x='60' y='50' width='8' height='8' fill='#f2c14e'/><circle cx='92' cy='60' r='20' fill='#2d6cdf'/><path d='M80 52q6 -6 12 0t10 6q-2 10 -12 8t-10 -14z' fill='#52b788'/><path d='M58 30h24' stroke='#f2c14e' stroke-width='4'/><path d='M76 24l8 6-8 6' stroke='#f2c14e' stroke-width='4' fill='none'/><rect x='30' y='24' width='12' height='12' rx='2' fill='#f4a261'/></svg>",
+   "aciklama": "Dünyanın neredeyse bütün teknolojik ihtiyacını karşılayan ülkelerdir.",
+   "akilda": "Üretir ve dünyaya satar",
+   "soru": {
+    "soru": "Dünyanın teknolojik ihtiyacının neredeyse tamamını hangi ülkeler karşılar?",
+    "secenekler": [
+     "Teknoloji üreten ülkeler",
+     "Teknoloji kullanan ülkeler",
+     "Teknolojinin dışında kalanlar"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta fabrikadan dünyaya giden ok vardı.",
+    "aciklama": "Teknoloji üreten ülkeler, dünyanın neredeyse tümünün teknolojik ihtiyacını karşılar. (s. 18)"
+   }
+  },
+  {
+   "ad": "Teknoloji Kullanan Ülkeler",
+   "renk": "#e8a33d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M32 44h56l-6 58h-44z' fill='#e8a33d'/><path d='M46 44q0 -20 14 -20t14 20' stroke='#f4d6a0' stroke-width='4' fill='none'/><rect x='50' y='56' width='20' height='34' rx='4' fill='#1b2340'/><rect x='53' y='60' width='14' height='24' fill='#9cc3ff'/><path d='M104 24h-16' stroke='#9cc3ff' stroke-width='4'/><path d='M94 18l-8 6 8 6' stroke='#9cc3ff' stroke-width='4' fill='none'/></svg>",
+   "aciklama": "Başkalarının ürettiği teknolojileri satın alıp kullanan ülkelerdir.",
+   "akilda": "Satın alır, kullanır",
+   "soru": {
+    "soru": "Teknolojiyi kendisi üretmeyip satın alarak kullanan ülkeler hangi gruptadır?",
+    "secenekler": [
+     "Teknoloji üretenler",
+     "Teknoloji kullananlar",
+     "İkisinin de dışında kalanlar"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta alışveriş çantası vardı.",
+    "aciklama": "İkinci grup teknolojileri benimser, satın alır ve kullanır. (s. 18)"
+   }
+  },
+  {
+   "ad": "Teknolojinin Dışında Kalanlar",
+   "renk": "#5f6b7a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='44' width='34' height='32' rx='6' fill='#adb5bd'/><path d='M26 44v-12M44 44v-12' stroke='#adb5bd' stroke-width='5'/><path d='M52 60h12' stroke='#adb5bd' stroke-width='5'/><rect x='76' y='48' width='28' height='26' rx='5' fill='none' stroke='#adb5bd' stroke-width='4'/><circle cx='86' cy='61' r='3' fill='#adb5bd'/><circle cx='96' cy='61' r='3' fill='#adb5bd'/><path d='M60 36l14 50' stroke='#e63946' stroke-width='5' stroke-linecap='round'/><path d='M20 96q20 -10 40 0t40 0' stroke='#495057' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Teknolojiden kopuk kalan; ne yenilik yapan ne de yabancı teknolojiyi benimseyen ülkelerdir.",
+   "akilda": "Fişi takılı değil",
+   "soru": {
+    "soru": "Ne yenilik yapan ne de yabancı teknolojiyi benimseyen ülkeler hangi gruptadır?",
+    "secenekler": [
+     "Teknoloji üretenler",
+     "Teknoloji kullananlar",
+     "İkisinin de dışında kalanlar"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta prizden çekilmiş fiş vardı.",
+    "aciklama": "Üçüncü grup teknolojik olarak kopuktur. (s. 18)"
+   }
+  },
+  {
+   "ad": "Ar-Ge",
+   "renk": "#52b788",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='20' cy='60' r='12' fill='#f2c14e'/><text x='20' y='65' font-size='14' font-weight='700' fill='#8d5524' text-anchor='middle'>₺</text><path d='M36 60h10' stroke='#e9ecef' stroke-width='3'/><path d='M42 55l5 5-5 5' stroke='#e9ecef' stroke-width='3' fill='none'/><g transform='translate(60 56) scale(0.9)'><circle cx='0' cy='0' r='14' fill='#f2c14e'/><rect x='-7' y='12' width='14' height='9' rx='2' fill='#ced4da'/><path d='M-7 15h14M-7 18h14' stroke='#868e96' stroke-width='1.2'/><path d='M-5 2q5 -8 10 0' stroke='#fff7d6' stroke-width='2' fill='none'/></g><path d='M76 60h10' stroke='#e9ecef' stroke-width='3'/><path d='M82 55l5 5-5 5' stroke='#e9ecef' stroke-width='3' fill='none'/><circle cx='100' cy='60' r='12' fill='#f2c14e'/><text x='100' y='65' font-size='14' font-weight='700' fill='#8d5524' text-anchor='middle'>₺</text><path d='M24 100l24 -10 20 6 30 -18' stroke='#52b788' stroke-width='4' fill='none'/><path d='M92 76l8 2-2 8' stroke='#52b788' stroke-width='4' fill='none'/></svg>",
+   "aciklama": "Araştırma-geliştirme: henüz bulunmamışı araştırıp bulmak, sonra bilgiyi ya da ürünü geliştirmektir.",
+   "ek": "Kitaptaki söz: Ar-Ge parayı bilgiye, yenilik bilgiyi paraya döndürür. Gelişmiş ülkeler gelirlerinden Ar-Ge'ye önemli pay ayırır.",
+   "akilda": "Para → bilgi → yenilik",
+   "soru": {
+    "soru": "Ar-Ge'nin açılımı nedir?",
+    "secenekler": [
+     "Araştırma-Geliştirme",
+     "Aracı-Gelir",
+     "Araç-Gereç"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın ilk kelimesine bak.",
+    "aciklama": "Ar-Ge, araştırma ve geliştirme demektir. (s. 18)"
+   }
+  },
+  {
+   "ad": "Güney Kore Örneği",
+   "renk": "#d63384",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 40l30 -12 30 12-30 12z' fill='#1b2340' stroke='#e9ecef' stroke-width='2'/><path d='M36 46v14q18 10 36 0v-14' fill='#e9ecef'/><path d='M84 40v18' stroke='#f2c14e' stroke-width='3'/><g transform='translate(32 90)'><circle r='11' fill='none' stroke='#9cc3ff' stroke-width='7' stroke-dasharray='5 4'/><circle r='7' fill='#9cc3ff'/><circle r='3.7' fill='#1b2340'/></g><rect x='60' y='88' width='10' height='14' fill='#d63384'/><rect x='74' y='78' width='10' height='24' fill='#d63384'/><rect x='88' y='64' width='10' height='38' fill='#d63384'/><path d='M60 76l30 -20' stroke='#f2c14e' stroke-width='3'/><path d='M84 54l8 0 -2 8' stroke='#f2c14e' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Savaştan yoksul çıkan Güney Kore, Ar-Ge'ye ve eğitime önem vererek kalkındı.",
+   "ek": "Üniversiteleri sanayiyle bütünleştirdi; teknolojiyi öğrenmekle kalmadı, geliştirdi ve dışarıya sattı.",
+   "akilda": "Ar-Ge + eğitim = kalkınma",
+   "soru": {
+    "soru": "Kitaba göre Güney Kore ekonomik gelişmesini neye borçludur?",
+    "secenekler": [
+     "Sadece doğal kaynaklarına",
+     "Ar-Ge çalışmalarına ve eğitime",
+     "Başka ülkelerden telefon almaya"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\" ifadesine bak.",
+    "aciklama": "Güney Kore gelişmesini Ar-Ge çalışmalarına ve eğitimde yaptığı devrimlere borçludur. (s. 18)"
+   }
+  },
+  {
+   "ad": "TÜBİTAK",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 46l46 -26 46 26z' fill='#e9ecef'/><rect x='18' y='46' width='84' height='6' fill='#ced4da'/><g fill='#ced4da'><rect x='24' y='54' width='8' height='36'/><rect x='44' y='54' width='8' height='36'/><rect x='68' y='54' width='8' height='36'/><rect x='88' y='54' width='8' height='36'/></g><rect x='14' y='90' width='92' height='8' fill='#e9ecef'/><circle cx='60' cy='36' r='3' fill='#e76f51'/><ellipse cx='60' cy='36' rx='10' ry='4' fill='none' stroke='#e76f51' stroke-width='1.5'/><text x='60' y='114' font-size='13' font-weight='700' fill='#f2c14e' text-anchor='middle'>1963</text></svg>",
+   "aciklama": "1963'te kuruldu. Türkiye'de bilim ve teknoloji için üniversiteler dışındaki ilk kurumsal yapıdır.",
+   "ek": "Türkiye'de bilim ve teknolojinin bir plan içinde ele alınması Planlı Dönem'le başladı.",
+   "akilda": "1963, ilk kurum",
+   "soru": {
+    "soru": "TÜBİTAK hangi yıl kuruldu?",
+    "secenekler": [
+     "1923",
+     "1963",
+     "2008"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki binanın altında yazıyordu.",
+    "aciklama": "TÜBİTAK 1963 yılında kuruldu. (s. 19)"
+   }
+  },
+  {
+   "ad": "Türkiye Araştırma Alanı",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='14' fill='#f2c14e'/><text x='60' y='65' font-size='12' font-weight='700' fill='#1b2340' text-anchor='middle'>TR</text><rect x='12' y='14' width='30' height='22' rx='5' fill='#2d6cdf'/><rect x='78' y='14' width='30' height='22' rx='5' fill='#e76f51'/><rect x='12' y='84' width='30' height='22' rx='5' fill='#52b788'/><rect x='78' y='84' width='30' height='22' rx='5' fill='#d63384'/><path d='M38 34l12 14M82 34l-12 14M38 86l12 -14M82 86l-12 -14' stroke='#e9ecef' stroke-width='3'/></svg>",
+   "aciklama": "Kamu kuruluşları, özel sektör, üniversiteler ve sivil toplum kuruluşlarının birlikte araştırma yaptığı alandır.",
+   "ek": "Kitaba göre temel sorun: bu çalışmaların ekonomiye katkısının yeterli olmaması. Ülkemizin olgunlaşması için Ulusal İnovasyon Sistemi'ni geliştirmesi, yani Ar-Ge'nin artması gerekir.",
+   "akilda": "Dört ortak, bir hedef",
+   "soru": {
+    "soru": "Hangisi Türkiye Araştırma Alanı'ndaki dört gruptan biridir?",
+    "secenekler": [
+     "Üniversiteler",
+     "Oyun parkları",
+     "Müzeler"
+    ],
+    "dogru": 0,
+    "ipucu": "Kamu, özel sektör, STK ve …",
+    "aciklama": "Türkiye Araştırma Alanı: kamu kuruluşları, özel sektör, üniversiteler ve STK'lar. (s. 19)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Ülke grupları",
+   "kutular": [
+    {
+     "etiket": "Teknolojiyle bağı var",
+     "uyeler": [
+      "Teknoloji Üreten Ülkeler",
+      "Teknoloji Kullanan Ülkeler"
+     ]
+    },
+    {
+     "etiket": "Teknolojiden kopuk",
+     "uyeler": [
+      "Teknolojinin Dışında Kalanlar"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Ülke grubu mu, kalkınma yolu mu?",
+   "kutular": [
+    {
+     "etiket": "Ülke grubu",
+     "uyeler": [
+      "Teknoloji Üreten Ülkeler",
+      "Teknoloji Kullanan Ülkeler",
+      "Teknolojinin Dışında Kalanlar"
+     ]
+    },
+    {
+     "etiket": "Kalkınmaya yardım eden",
+     "uyeler": [
+      "Ar-Ge",
+      "Güney Kore Örneği",
+      "TÜBİTAK",
+      "Türkiye Araştırma Alanı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaba göre en çok değiştirdiğimiz teknolojik ürün cep telefonudur. Dışarıdan aldığımız telefon, sattığımızdan çok daha fazladır. (s. 18)",
+  "Güney Kore, üniversitelerini sanayiyle bütünleştirerek teknolojiyi hem öğrendi hem de geliştirdi. (s. 18)"
+ ],
+ "akildaKalsin": [
+  "Üç grup: teknoloji üretenler, kullananlar, ikisinin dışında kalanlar.",
+  "Üreten ülkeler dünyanın teknoloji ihtiyacını karşılar.",
+  "Ar-Ge: araştır, bul, geliştir.",
+  "Güney Kore: Ar-Ge + eğitim + üniversite-sanayi işbirliği.",
+  "TÜBİTAK 1963'te kuruldu.",
+  "Türkiye Araştırma Alanı: kamu, özel sektör, üniversite, STK."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Ülkemiz hangi grupta?",
+   "cevap": "Kitap bu soruyu sorar ve telefon verisine bakmamızı ister: çok telefon alıyor, az satıyoruz. Üreten ülke olmak için Ar-Ge'nin artması gerekir. (s. 18–19)"
+  },
+  {
+   "soru": "Ar-Ge neden önemli?",
+   "cevap": "Gelişmiş ülkeler Ar-Ge ile ürettikleri teknolojileri hem kendi ülkelerinde hem dışarıda satarak gelir elde eder. (s. 18)"
+  },
+  {
+   "soru": "STK ne demek?",
+   "cevap": "Sivil toplum kuruluşu. Türkiye Araştırma Alanı'ndaki dört gruptan biridir. (s. 19)"
+  },
+  {
+   "soru": "Hangi toplumlar kalkınmada başarılı oldu?",
+   "cevap": "En iyi teknolojiyi kullanan, sonra en iyi teknolojiyi üretip satan toplumlar. (s. 18)"
+  },
+  {
+   "soru": "Türkiye'de araştırmalardaki sorun ne?",
+   "cevap": "Kitaba göre temel sorun, bu çalışmaların ekonomiye katkısının yeterli olmamasıdır. (s. 19)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir ülke teknoloji kullanan ülkeyken teknoloji üreten ülke olmak için ne yapabilir? İki şey yaz.",
+   "ornekCevap": "Ar-Ge çalışmalarına daha çok pay ayırabilir. Eğitime önem verip üniversiteleri sanayiyle birlikte çalıştırabilir.",
+   "anahtarlar": [
+    "ar-ge",
+    "araştır",
+    "eğitim",
+    "üniversite",
+    "sanayi"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Teknolojiyi üretip başka ülkelere de satan ülkeler hangi gruptadır?",
+   "secenekler": [
+    "Teknoloji üreten ülkeler",
+    "Teknoloji kullanan ülkeler",
+    "Teknolojinin dışında kalanlar"
+   ],
+   "dogru": 0,
+   "ipucu": "\"Üretir ve dünyaya satar\"…",
+   "aciklama": "Teknoloji üreten ülkeler dünyanın teknolojik ihtiyacını karşılar. (s. 18)",
+   "kavram": "Teknoloji Üreten Ülkeler"
+  },
+  {
+   "soru": "Bir ülke telefonları hep dışarıdan alıp kullanıyorsa hangi gruba yakındır?",
+   "secenekler": [
+    "Teknoloji üretenler",
+    "Teknoloji kullananlar",
+    "Teknolojinin dışında kalanlar"
+   ],
+   "dogru": 1,
+   "ipucu": "Satın alıp kullanan grup hangisiydi?",
+   "aciklama": "Teknolojiyi satın alıp kullanan ülkeler ikinci gruptadır. (s. 18)",
+   "kavram": "Teknoloji Kullanan Ülkeler",
+   "yardim": {
+    "adimlar": [
+     "Ülke telefonu kendisi mi üretiyor, yoksa satın mı alıyor?",
+     "Satın alıp kullanan grubun adını hatırla."
+    ]
+   }
+  },
+  {
+   "soru": "Teknolojik olarak kopuk olan ülkeler için hangisi doğrudur?",
+   "secenekler": [
+    "Dünyaya teknoloji satarlar",
+    "En çok Ar-Ge yaparlar",
+    "Ne yenilik yaparlar ne yabancı teknolojiyi benimserler"
+   ],
+   "dogru": 2,
+   "ipucu": "Fişi takılı olmayan grup…",
+   "aciklama": "Üçüncü grup ne evde yenilik yapar ne de yabancı teknolojileri benimser. (s. 18)",
+   "kavram": "Teknolojinin Dışında Kalanlar"
+  },
+  {
+   "soru": "\"Parayı bilgiye, yenilik bilgiyi paraya döndüren süreç\" hangisidir?",
+   "secenekler": [
+    "Ar-Ge",
+    "Endüstri 1.0",
+    "Grafik tasarım"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartta para → ampul → para çizimi vardı.",
+   "aciklama": "Ar-Ge parayı bilgiye, yenilik bilgiyi paraya döndürür. (s. 18)",
+   "kavram": "Ar-Ge"
+  },
+  {
+   "soru": "Henüz bulunmamışı araştırıp bulmak ve sonra ürünü geliştirmek ne demektir?",
+   "secenekler": [
+    "Keşif",
+    "Ar-Ge",
+    "Küreselleşme"
+   ],
+   "dogru": 1,
+   "ipucu": "Araştır, bul, geliştir…",
+   "aciklama": "Ar-Ge, henüz bulunmamışı araştırarak bulmak ve geliştirmektir. (s. 18)",
+   "kavram": "Ar-Ge"
+  },
+  {
+   "soru": "Güney Kore üniversitelerini ne ile bütünleştirdi?",
+   "secenekler": [
+    "Müzelerle",
+    "Tarlalarla",
+    "Sanayi ile"
+   ],
+   "dogru": 2,
+   "ipucu": "Teknolojiyi üretmek için üniversiteler kiminle çalışmalı?",
+   "aciklama": "Güney Kore üniversiteleri sanayi ile bütünleştirdi. (s. 18)",
+   "kavram": "Güney Kore Örneği"
+  },
+  {
+   "soru": "Türkiye'de üniversiteler dışındaki ilk bilim ve teknoloji kurumu hangisidir?",
+   "secenekler": [
+    "TÜBİTAK",
+    "Bir fabrika",
+    "Bir müze"
+   ],
+   "dogru": 0,
+   "ipucu": "1963'te kurulan kurum…",
+   "aciklama": "1963'te kurulan TÜBİTAK, üniversiteler dışındaki ilk kurumsal yapıdır. (s. 19)",
+   "kavram": "TÜBİTAK"
+  },
+  {
+   "soru": "Hangisi Türkiye Araştırma Alanı'ndaki gruplardan biri değildir?",
+   "secenekler": [
+    "Özel sektör",
+    "Sivil toplum kuruluşları",
+    "Spor kulüpleri"
+   ],
+   "dogru": 2,
+   "ipucu": "Dört grup: kamu, özel sektör, üniversite, STK.",
+   "aciklama": "Türkiye Araştırma Alanı'nda kamu, özel sektör, üniversiteler ve STK'lar vardır. (s. 19)",
+   "kavram": "Türkiye Araştırma Alanı"
+  }
+ ]
+}

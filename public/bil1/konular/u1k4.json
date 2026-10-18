@@ -1,0 +1,346 @@
+{
+ "id": "u1k4",
+ "unite": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum",
+ "baslik": "Teknoloji-Tasarım İlişkisi ve STEAM",
+ "sayfalar": "s. 15–17 · program",
+ "kaynakNotu": "Ölçütle Değerlendirme ve STEAM kavramları kitapta yok; MEB Teknoloji ve Tasarım Öğretim Programı'ndan (2026) alındı: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1437 (TT.7.1.4), https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1444, https://mufredat.meb.gov.tr/Dosyalar/202651415165252-teknotasardöp.pdf",
+ "giris": "Teknoloji ve tasarım hep birlikte çalışır. Hayatımızı kolaylaştırırlar ama bazı zararları da vardır. Bu konuda ikisinin ilişkisini, bir ürünü nasıl değerlendireceğimizi ve STEAM'i öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Teknoloji-Tasarım İlişkisi",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g transform='translate(34 60)'><circle r='16' fill='none' stroke='#9cc3ff' stroke-width='7' stroke-dasharray='5 4'/><circle r='12' fill='#9cc3ff'/><circle r='5.3' fill='#1b2340'/></g><path d='M98 30l-20 30-3 9 8 -5 20 -30z' fill='#f2c14e'/><path d='M75 69l3 -9 5 5z' fill='#f4d6a0'/><path d='M38 30q22 -22 46 -4' stroke='#e9ecef' stroke-width='3' fill='none'/><path d='M80 20l5 7-8 2' stroke='#e9ecef' stroke-width='3' fill='none'/><path d='M84 92q-22 22 -46 4' stroke='#e9ecef' stroke-width='3' fill='none'/><path d='M42 102l-5 -7 8 -2' stroke='#e9ecef' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Teknoloji ve tasarım birbirini doğrudan etkiler. Bu süreç hiç bitmez.",
+   "ek": "İhtiyaçlarımız ve beklentilerimiz değiştikçe araç-gereçler de değişir. Hayattaki sorunlara çözüm fikirleri (tasarımlar) teknolojinin yardımıyla gerçekleşir.",
+   "akilda": "Birbirini etkiler, bitmez",
+   "soru": {
+    "soru": "Teknoloji ve tasarım süreci için hangisi doğrudur?",
+    "secenekler": [
+     "Bir gün tamamen biter",
+     "Sonu yoktur, hep devam eder",
+     "Birbiriyle ilgisi yoktur"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\" ifadesinin ikinci kelimesine bak.",
+    "aciklama": "Teknoloji ve tasarım sürecinin sonu yoktur; insanlar hep daha iyisini arar. (s. 15)"
+   }
+  },
+  {
+   "ad": "Teknolojinin Faydaları",
+   "renk": "#52b788",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='34' fill='#52b788'/><path d='M44 56l11 11 22 -24' stroke='#fff' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/><rect x='12' y='94' width='22' height='14' rx='2' fill='#9cc3ff'/><path d='M23 94v14' stroke='#2d6cdf' stroke-width='2'/><rect x='49' y='94' width='22' height='14' rx='3' fill='#e9ecef'/><path d='M60 97v8M56 101h8' stroke='#e63946' stroke-width='3'/><rect x='86' y='96' width='24' height='10' rx='4' fill='#f2c14e'/><circle cx='92' cy='107' r='3' fill='#495057'/><circle cx='104' cy='107' r='3' fill='#495057'/></svg>",
+   "aciklama": "Teknoloji yaşam standardını artırır; ulaşım, tıp, eğitim ve bilgiye erişim gelişir.",
+   "ek": "Matbaa sayesinde kitaplar herkesin ulaşabileceği hâle geldi. İnternetle dünyanın öbür ucundaki bilgiye ulaşabiliyoruz.",
+   "akilda": "Kolay, hızlı, sağlıklı",
+   "soru": {
+    "soru": "Hangisi teknolojinin faydalarından biridir?",
+    "secenekler": [
+     "Hastalıkların teşhis ve tedavi süresi kısaldı",
+     "Hava kirliliği arttı",
+     "Yüz yüze iletişim azaldı"
+    ],
+    "dogru": 0,
+    "ipucu": "Faydalar kartında tıp için kırmızı artı vardı.",
+    "aciklama": "Teknoloji tıbbı ileri taşıdı; teşhis ve tedavi süresi kısaldı. (s. 15)"
+   }
+  },
+  {
+   "ad": "Teknolojinin Zararları",
+   "renk": "#5f6b7a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M16 98v-34l16 10v-10l16 10v-28h12v52z' fill='#868e96'/><circle cx='54' cy='26' r='10' fill='#adb5bd'/><circle cx='70' cy='18' r='12' fill='#ced4da'/><circle cx='88' cy='22' r='9' fill='#adb5bd'/><rect x='86' y='48' width='12' height='44' rx='6' fill='#e9ecef'/><circle cx='92' cy='96' r='10' fill='#e63946'/><rect x='89' y='60' width='6' height='36' fill='#e63946'/><path d='M104 62l6 -6 6 6M110 56v16' stroke='#e63946' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Teknoloji küresel ısınmayı ve çevre kirliliğini artırabilir; bazı insanların işsiz kalmasına yol açabilir.",
+   "ek": "Ayrıca insanları tembelleştirebilir, yüz yüze iletişimi azaltabilir ve silah yapımında kullanılabilir.",
+   "akilda": "Kirlilik, işsizlik, tembellik",
+   "soru": {
+    "soru": "Hangisi teknolojinin zararlarından biridir?",
+    "secenekler": [
+     "Ulaşımın gelişmesi",
+     "Bilgiye kolay ulaşmak",
+     "Fabrika dumanlarının çevreyi kirletmesi"
+    ],
+    "dogru": 2,
+    "ipucu": "Zararlar kartında baca dumanı ve termometre vardı.",
+    "aciklama": "Fabrika bacalarından çıkan dumanlar ve egzoz gazları doğal çevreyi kirletir. (s. 15)"
+   }
+  },
+  {
+   "ad": "Sorun ve Çözüm",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 40l12 -10h12q4 6 10 0h12l12 10-8 10-6 -4v34h-32v-34l-6 4z' fill='#f4d6a0'/><circle cx='38' cy='60' r='4' fill='#8d5524'/><circle cx='48' cy='70' r='3' fill='#8d5524'/><path d='M30 20q4 -6 0 -12M42 20q4 -6 0 -12' stroke='#adb5bd' stroke-width='2' fill='none'/><path d='M70 66h10' stroke='#f2c14e' stroke-width='4'/><path d='M78 60l6 6-6 6' stroke='#f2c14e' stroke-width='4' fill='none'/><rect x='86' y='44' width='28' height='52' rx='4' fill='#e9ecef'/><circle cx='100' cy='74' r='10' fill='#2d6cdf' stroke='#adb5bd' stroke-width='3'/><rect x='90' y='48' width='10' height='4' rx='2' fill='#adb5bd'/></svg>",
+   "aciklama": "İnsanlar yaşam kalitesini artırmak ve sorunlarını çözmek için teknolojiler üretir.",
+   "ek": "Çatal-kaşıktan bilgisayara, ütüden gözlüğe binlerce araç-gereç teknoloji ve tasarımın eseridir.",
+   "akilda": "Sorun var, çözüm üret",
+   "soru": {
+    "soru": "Kitaba göre çamaşırların kirlenip kötü kokması sorununa geliştirilen çözüm hangisidir?",
+    "secenekler": [
+     "Çamaşır makinesi ve deterjan",
+     "Televizyon",
+     "Mikroskop"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta kirli tişörtün yanında hangi makine vardı?",
+    "aciklama": "Çamaşır makineleri ve deterjanlar bu sorunu çözmek için üretilmiş teknolojilerdir. (s. 16)"
+   }
+  },
+  {
+   "ad": "Aynı İşlev, Farklı Tasarım",
+   "renk": "#e8a33d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#e8a33d'><rect x='12' y='50' width='26' height='6'/><rect x='12' y='26' width='6' height='30'/><rect x='12' y='56' width='4' height='26'/><rect x='34' y='56' width='4' height='26'/></g><g fill='#9cc3ff'><path d='M46 56h28v6h-28z'/><path d='M50 30q10 -8 20 0v26h-20z'/><rect x='58' y='62' width='4' height='20'/><rect x='48' y='80' width='24' height='4' rx='2'/></g><g fill='#e63946'><circle cx='96' cy='54' r='14'/><rect x='93' y='66' width='6' height='16'/><rect x='84' y='80' width='24' height='4' rx='2'/></g><path d='M14 100h92' stroke='#adb5bd' stroke-width='3' stroke-dasharray='5 4'/></svg>",
+   "aciklama": "Aynı işi yapan ama görünüşü ve özellikleri farklı olan ürünlerdir.",
+   "ek": "Örnek: tabureden koltuğa kadar hepsi oturmak içindir. Teknoloji-tasarım ilişkisi, yaratıcılık geliştikçe gelişir.",
+   "akilda": "Aynı iş, farklı görünüş",
+   "soru": {
+    "soru": "Aynı işi yapan ama farklı görünen ürünler neyin eseridir?",
+    "secenekler": [
+     "Şansın",
+     "Yaratıcılık, zekâ ve hayal gücünün",
+     "Yalnızca makinelerin"
+    ],
+    "dogru": 1,
+    "ipucu": "Bu ürünleri gelişmiş bireyler yapar. Hangi özellikleri gelişmiştir?",
+    "aciklama": "Aynı işi yapan farklı ürünler, yaratıcılık, zekâ ve hayal gücü gelişmiş bireylerin eseridir. (s. 17)"
+   }
+  },
+  {
+   "ad": "Ölçütle Değerlendirme",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='14' width='56' height='92' rx='6' fill='#e9ecef'/><path d='M30 34l5 5 9 -10' stroke='#52b788' stroke-width='4' fill='none'/><path d='M50 34h16' stroke='#495057' stroke-width='3'/><path d='M30 60l5 5 9 -10' stroke='#52b788' stroke-width='4' fill='none'/><path d='M50 60h16' stroke='#495057' stroke-width='3'/><rect x='30' y='80' width='14' height='12' rx='2' fill='none' stroke='#adb5bd' stroke-width='2'/><path d='M50 86h16' stroke='#495057' stroke-width='3'/><path d='M98 18l-10 18h8l-4 16 12 -20h-8l4 -14z' fill='#f2c14e'/><path d='M86 70q10 -16 24 -10q-2 16 -18 16z' fill='#52b788'/><path d='M88 92a10 10 0 1 1 16 4' stroke='#9cc3ff' stroke-width='3' fill='none'/><path d='M102 92l3 5 5 -3' stroke='#9cc3ff' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Bir ürünü ya da sorunu belirlediğimiz ölçütlere göre ölçüp karşılaştırarak karar vermektir.",
+   "ek": "Kitap dışı (MEB programı). Örnek ölçütler: enerji tüketimi, çevresel etki, geri dönüşüm oranı. Örneğin plastik ambalajı başka bir ambalajla bu ölçütlere göre karşılaştırırız.",
+   "akilda": "Ölçüt koy, ölç, karar ver",
+   "soru": {
+    "soru": "Programa göre bir ürünü değerlendirirken hangisi ölçüt olarak kullanılabilir?",
+    "secenekler": [
+     "Ürünün sevdiğimiz rengi",
+     "Enerji tüketimi",
+     "Ürünü kimin aldığı"
+    ],
+    "dogru": 1,
+    "ipucu": "Karttaki şimşek, yaprak ve geri dönüşüm okunu hatırla.",
+    "aciklama": "Programda ölçüt örnekleri: enerji tüketimi, çevresel etki, geri dönüşüm oranı. (program)"
+   }
+  },
+  {
+   "ad": "STEAM",
+   "renk": "#d63384",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g font-size='26' font-weight='700' text-anchor='middle'><rect x='6' y='40' width='20' height='40' rx='4' fill='#2d6cdf'/><text x='16' y='70' fill='#fff' font-size='20'>S</text><rect x='28' y='40' width='20' height='40' rx='4' fill='#52b788'/><text x='38' y='70' fill='#fff' font-size='20'>T</text><rect x='50' y='40' width='20' height='40' rx='4' fill='#e76f51'/><text x='60' y='70' fill='#fff' font-size='20'>E</text><rect x='72' y='40' width='20' height='40' rx='4' fill='#d63384'/><text x='82' y='70' fill='#fff' font-size='20'>A</text><rect x='94' y='40' width='20' height='40' rx='4' fill='#f2c14e'/><text x='104' y='70' fill='#1b2340' font-size='20'>M</text></g><path d='M16 90q44 22 88 0' stroke='#e9ecef' stroke-width='2.5' fill='none' stroke-dasharray='4 4'/></svg>",
+   "aciklama": "Bilim, teknoloji, mühendislik, sanat ve matematiği birlikte kullanan bütünleşik öğrenme yaklaşımıdır.",
+   "ek": "Kitap dışı (MEB programı). Proje temelli çalışılır; dersler arasında bağlantı kurmayı ve proje odaklı düşünmeyi geliştirir.",
+   "akilda": "Beş alan bir arada",
+   "soru": {
+    "soru": "STEAM'deki \"A\" harfi hangi alanı anlatır?",
+    "secenekler": [
+     "Astronomi",
+     "Araba",
+     "Sanat"
+    ],
+    "dogru": 2,
+    "ipucu": "İngilizce \"Arts\" kelimesinin baş harfi.",
+    "aciklama": "STEAM: bilim, teknoloji, mühendislik, sanat (Arts), matematik. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Fayda mı, zarar mı?",
+   "kutular": [
+    {
+     "etiket": "Fayda",
+     "uyeler": [
+      "Teknolojinin Faydaları",
+      "Sorun ve Çözüm"
+     ]
+    },
+    {
+     "etiket": "Zarar",
+     "uyeler": [
+      "Teknolojinin Zararları"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Kitapta mı, programda mı?",
+   "kutular": [
+    {
+     "etiket": "Kitapta anlatılıyor",
+     "uyeler": [
+      "Teknoloji-Tasarım İlişkisi",
+      "Aynı İşlev, Farklı Tasarım",
+      "Sorun ve Çözüm"
+     ]
+    },
+    {
+     "etiket": "Programda geçen kavram",
+     "uyeler": [
+      "Ölçütle Değerlendirme",
+      "STEAM"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaba göre insanlar her zaman daha yeni, daha ekonomik, daha estetik ve daha ergonomik ürünü aramaya devam edecek. (s. 15)",
+  "STEAM, Bilim-Teknoloji-Mühendislik-Sanat-Matematik kelimelerinin İngilizce baş harflerinden oluşur. (program)"
+ ],
+ "akildaKalsin": [
+  "Teknoloji ve tasarım birbirini etkiler; süreç hiç bitmez.",
+  "Faydalar: tıp, ulaşım, eğitim, bilgiye erişim.",
+  "Zararlar: küresel ısınma, kirlilik, işsizlik, tembellik.",
+  "Her teknoloji bir soruna çözümdür: çamaşır makinesi gibi.",
+  "Aynı iş, farklı tasarım: yaratıcılığın eseri.",
+  "Ölçüt: enerji tüketimi, çevresel etki, geri dönüşüm oranı (program).",
+  "STEAM: bilim, teknoloji, mühendislik, sanat, matematik (program)."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Teknoloji neden bizi tembelleştirebilir?",
+   "cevap": "Birçok işi makineler yaptığı için insanlar hazıra alışabilir. Kitap bunu zararlar arasında sayar. (s. 15)"
+  },
+  {
+   "soru": "Matbaa neyi değiştirdi?",
+   "cevap": "Kitaplar herkesin ulaşabileceği hâle geldi; insanlar duygu ve düşüncelerini daha kolay anlattı. (s. 15)"
+  },
+  {
+   "soru": "Ölçüt ne demek?",
+   "cevap": "Bir şeyi değerlendirirken baktığımız özelliktir. Programda örnekler: enerji tüketimi, çevresel etki, geri dönüşüm oranı. (program)"
+  },
+  {
+   "soru": "STEAM'de neden sanat da var?",
+   "cevap": "Program, bilim, teknoloji, mühendislik ve matematiğin yanına sanatı da ekleyerek dersleri birleştirir; böylece proje yaparken yaratıcılık da işe girer. (program)"
+  },
+  {
+   "soru": "Tasarımlar nasıl gerçeğe dönüşür?",
+   "cevap": "Hayatımızdaki sorunlara çözüm fikirleri, yani tasarımlar, teknolojinin yardımıyla ortaya çıkar. (s. 17)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Evinde kullandığın bir teknolojiyi seç. Hangi sorunu çözüyor? Bir faydasını ve bir zararını yaz.",
+   "ornekCevap": "Buzdolabı yiyeceklerin bozulması sorununu çözer. Faydası yiyecekleri uzun süre saklamaktır. Zararı çok elektrik harcayabilmesidir.",
+   "anahtarlar": [
+    "sorun",
+    "çöz",
+    "fayda",
+    "zarar"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Teknoloji ve tasarım için hangisi doğrudur?",
+   "secenekler": [
+    "Birbirini doğrudan etkiler",
+    "Birbirinden tamamen bağımsızdır",
+    "Sadece fabrikada kullanılır"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartın ilk cümlesini hatırla.",
+   "aciklama": "Teknoloji ve tasarım birbirini doğrudan etkileyen kavramlardır. (s. 15)",
+   "kavram": "Teknoloji-Tasarım İlişkisi"
+  },
+  {
+   "soru": "İhtiyaçlarımız ve beklentilerimiz değişince araç-gereçlere ne olur?",
+   "secenekler": [
+    "Hep aynı kalır",
+    "Değişir ve gelişir",
+    "Kullanılmaz olur"
+   ],
+   "dogru": 1,
+   "ipucu": "Süreç hiç bitmez…",
+   "aciklama": "İhtiyaçlar değiştikçe araç-gereçlerde de değişme ve gelişmeler olur. (s. 15)",
+   "kavram": "Teknoloji-Tasarım İlişkisi"
+  },
+  {
+   "soru": "Hangisi teknolojinin faydalarındandır?",
+   "secenekler": [
+    "İnsanların işsiz kalması",
+    "Küresel ısınmanın artması",
+    "Bilgi alışverişinin kolaylaşması"
+   ],
+   "dogru": 2,
+   "ipucu": "Faydaları düşün: kolay, hızlı, sağlıklı.",
+   "aciklama": "İnternet sayesinde bilgi alışverişi kolaylaştı. (s. 15)",
+   "kavram": "Teknolojinin Faydaları"
+  },
+  {
+   "soru": "Hangisi teknolojinin zararlarındandır?",
+   "secenekler": [
+    "Yüz yüze iletişimin azalması",
+    "Ulaşımın gelişmesi",
+    "Eğitimin kolaylaşması"
+   ],
+   "dogru": 0,
+   "ipucu": "Zararlar: kirlilik, işsizlik, tembellik ve…",
+   "aciklama": "Teknoloji insanlar arasındaki yüz yüze iletişimi azaltmıştır. (s. 15)",
+   "kavram": "Teknolojinin Zararları"
+  },
+  {
+   "soru": "Üretimin makinelerle yapılmaya başlaması hangi zarara yol açtı?",
+   "secenekler": [
+    "Kitapların artmasına",
+    "Birçok insanın işsiz kalmasına",
+    "Teşhis süresinin kısalmasına"
+   ],
+   "dogru": 1,
+   "ipucu": "Makine işi yapınca işçiye ne olur?",
+   "aciklama": "Üretim makinelerle yapılmaya başlayınca birçok insan işsiz kaldı. (s. 15)",
+   "kavram": "Teknolojinin Zararları"
+  },
+  {
+   "soru": "İnsanlar teknolojiyi neden üretir?",
+   "secenekler": [
+    "Sadece eğlenmek için",
+    "Sorunları artırmak için",
+    "Sorunlarını çözüp yaşam kalitesini artırmak için"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Sorun var, çözüm üret\" kartını hatırla.",
+   "aciklama": "İnsanoğlu sorunlarını çözmek ve yaşam kalitesini artırmak için teknolojiler üretmiştir. (s. 16)",
+   "kavram": "Sorun ve Çözüm"
+  },
+  {
+   "soru": "Tabure, koltuk ve sandalyenin ortak özelliği hangisidir?",
+   "secenekler": [
+    "Aynı işi yapıp farklı tasarlanmaları",
+    "Hepsinin aynı renkte olması",
+    "Hiçbirinin işe yaramaması"
+   ],
+   "dogru": 0,
+   "ipucu": "Hepsi oturmak içindir ama görünüşleri…",
+   "aciklama": "Aynı işlevde ama farklı tasarımda birçok ürün vardır. (s. 17)",
+   "kavram": "Aynı İşlev, Farklı Tasarım"
+  },
+  {
+   "soru": "Plastik bir ambalajı başka bir ambalajla karşılaştırırken programa göre hangisine bakabiliriz?",
+   "secenekler": [
+    "Kutunun üstündeki resme",
+    "Çevresel etkisine",
+    "Kaç yaşında birinin aldığına"
+   ],
+   "dogru": 1,
+   "ipucu": "Ölçüt örnekleri: enerji tüketimi, çevresel etki, geri dönüşüm oranı.",
+   "aciklama": "Programda ürünler enerji tüketimi, çevresel etki, geri dönüşüm oranı gibi ölçütlerle değerlendirilir. (program)",
+   "kavram": "Ölçütle Değerlendirme",
+   "yardim": {
+    "adimlar": [
+     "Önce ölçüt örneklerini hatırla.",
+     "Hangi şık bu örneklerden birine benziyor?"
+    ]
+   }
+  },
+  {
+   "soru": "STEAM'in harfleri hangi alanları anlatır?",
+   "secenekler": [
+    "Spor, tiyatro, edebiyat, resim, müzik",
+    "Bilim, teknoloji, mühendislik, sanat, matematik",
+    "Sağlık, tarih, ekonomi, sanayi, maden"
+   ],
+   "dogru": 1,
+   "ipucu": "T harfi zaten bu dersin adında var.",
+   "aciklama": "STEAM: bilim, teknoloji, mühendislik, sanat ve matematik. (program)",
+   "kavram": "STEAM"
+  }
+ ]
+}

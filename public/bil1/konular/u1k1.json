@@ -1,0 +1,344 @@
+{
+ "id": "u1k1",
+ "unite": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum",
+ "baslik": "Buluş, İcat ve Teknoloji",
+ "sayfalar": "s. 11",
+ "giris": "Ateşi, tekerleği, kibriti, cep telefonunu düşün. Bunların bir kısmı bulundu, bir kısmı icat edildi. Bu konuda buluş, keşif, icat, bilim, teknik, teknoloji ve inovasyon kelimelerini tanıyacağız.",
+ "kavramlar": [
+  {
+   "ad": "Buluş",
+   "renk": "#e8a33d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='40' cy='34' r='12' fill='#e63946'/><path d='M40 22q2 -8 8 -9' stroke='#52b788' stroke-width='3' fill='none'/><path d='M40 52v26' stroke='#fff' stroke-width='3' stroke-dasharray='4 4'/><path d='M33 72l7 10 7 -10' fill='none' stroke='#fff' stroke-width='3'/><rect x='14' y='92' width='92' height='6' rx='3' fill='#52b788'/><g transform='translate(84 40) scale(1)'><circle cx='0' cy='0' r='14' fill='#f2c14e'/><rect x='-7' y='12' width='14' height='9' rx='2' fill='#ced4da'/><path d='M-7 15h14M-7 18h14' stroke='#868e96' stroke-width='1.2'/><path d='M-5 2q5 -8 10 0' stroke='#fff7d6' stroke-width='2' fill='none'/></g></svg>",
+   "aciklama": "Daha önce var olan ama bilinmeyen bir şeyin öğrenilmesidir.",
+   "ek": "Kitaptaki örnekler: ateş, tekerlek, yazı, yer çekiminin ve suyun kaldırma kuvvetinin fark edilmesi.",
+   "akilda": "Önceden vardı, fark ettik",
+   "soru": {
+    "soru": "Buluş nedir?",
+    "secenekler": [
+     "Var olan ama bilinmeyen bir şeyin öğrenilmesi",
+     "Yeni bir makine satmak",
+     "Bir fabrika kurmak"
+    ],
+    "dogru": 0,
+    "ipucu": "\"Akılda kalsın\": önceden vardı, fark ettik.",
+    "aciklama": "Buluş, var olan ama bilinmeyen bir şeyin öğrenilmesidir. (s. 11)"
+   }
+  },
+  {
+   "ad": "Keşif",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='58' r='38' fill='#2d6cdf'/><path d='M42 40q10 -8 18 2t14 18q-6 14 -20 8t-12 -28z' fill='#52b788'/><path d='M70 66v-24' stroke='#fff' stroke-width='2.5'/><path d='M70 42h14l-4 5 4 5h-14z' fill='#e63946'/><path d='M24 100h72' stroke='#9cc3ff' stroke-width='3' stroke-dasharray='6 5'/></svg>",
+   "aciklama": "Bilinmeyen bir kıtanın ya da gezegenin bulunmasıdır.",
+   "akilda": "Yeni yer bulmak",
+   "soru": {
+    "soru": "Bilinmeyen bir gezegenin bulunmasına ne denir?",
+    "secenekler": [
+     "İcat",
+     "Keşif",
+     "İnovasyon"
+    ],
+    "dogru": 1,
+    "ipucu": "Bilgi kartında kıta ve gezegen örneği vardı.",
+    "aciklama": "Bilinmeyen bir kıtanın ya da gezegenin bulunması keşiftir. (s. 11)"
+   }
+  },
+  {
+   "ad": "İcat",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='54' y='40' width='8' height='58' rx='3' fill='#f4d6a0'/><ellipse cx='58' cy='38' rx='8' ry='10' fill='#c1121f'/><path d='M58 6q-14 14 -6 26q6 6 12 0q6 -12 -6 -26z' fill='#ffb703'/><path d='M58 16q-6 8 -2 14q4 2 6 -2q2 -6 -4 -12z' fill='#ff7a33'/><rect x='20' y='84' width='26' height='16' rx='3' fill='#9cc3ff'/><rect x='74' y='84' width='26' height='16' rx='3' fill='#9cc3ff'/><path d='M46 92h6M68 92h6' stroke='#fff' stroke-width='3'/></svg>",
+   "aciklama": "Var olan teknolojilerin çaba ve araştırmayla yeni ve benzersiz biçimde bir araya getirilmesidir.",
+   "ek": "Örnek: kibrit, araba, daktilo. Bazen aynı icat, birbirinden habersiz farklı ülkelerde aynı zamanlarda yapılır.",
+   "akilda": "Birleştir, yeniyi yap",
+   "soru": {
+    "soru": "Kibrit, araba ve daktilo hangisine örnektir?",
+    "secenekler": [
+     "Keşif",
+     "Buluş",
+     "İcat"
+    ],
+    "dogru": 2,
+    "ipucu": "Bunlar doğada hazır bulunmaz; insanlar yapmıştır.",
+    "aciklama": "Kibrit, araba ve daktilo birer icattır. (s. 11)"
+   }
+  },
+  {
+   "ad": "Bilim",
+   "renk": "#7b61ff",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M50 20h20M54 20v26l-22 40q-4 10 8 10h40q12 0 8 -10l-22 -40v-26' fill='none' stroke='#ced4da' stroke-width='4' stroke-linejoin='round'/><path d='M38 76h44l6 12q2 6 -6 6h-44q-8 0 -6 -6z' fill='#52b788'/><circle cx='52' cy='84' r='3' fill='#d8f3dc'/><circle cx='66' cy='80' r='2' fill='#d8f3dc'/><circle cx='92' cy='30' r='4' fill='#f2c14e'/><ellipse cx='92' cy='30' rx='16' ry='6' fill='none' stroke='#9cc3ff' stroke-width='2'/><ellipse cx='92' cy='30' rx='16' ry='6' transform='rotate(60 92 30)' fill='none' stroke='#9cc3ff' stroke-width='2'/></svg>",
+   "aciklama": "Deneylere ve gerçeklere dayanarak yasalar bulmaya çalışan düzenli bilgilerdir.",
+   "ek": "Bilim teknolojiyi üretir; teknoloji de bilimi hızlandırır. İkisi bir döngü gibidir.",
+   "akilda": "Deney, gerçek, düzenli bilgi",
+   "soru": {
+    "soru": "Bilim neye dayanır?",
+    "secenekler": [
+     "Deneylere ve gerçeklere",
+     "Tahminlere ve şansa",
+     "Yalnızca hayal gücüne"
+    ],
+    "dogru": 0,
+    "ipucu": "\"Akılda kalsın\" kelimelerini hatırla.",
+    "aciklama": "Bilim, deneysel yöntemlere ve gerçekliğe dayanır. (s. 11)"
+   }
+  },
+  {
+   "ad": "Teknik",
+   "renk": "#5c677d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 88l40 -40' stroke='#ced4da' stroke-width='9' stroke-linecap='round'/><circle cx='76' cy='42' r='14' fill='#ced4da'/><path d='M76 30v12h12' fill='#1b2340' stroke='#1b2340' stroke-width='6'/><path d='M86 88l-34 -34' stroke='#f2c14e' stroke-width='7' stroke-linecap='round'/><path d='M40 42l-8 -8' stroke='#e9ecef' stroke-width='5' stroke-linecap='round'/><path d='M18 104h22M18 96h14' stroke='#9cc3ff' stroke-width='3' stroke-linecap='round'/><circle cx='12' cy='96' r='2' fill='#9cc3ff'/><circle cx='12' cy='104' r='2' fill='#9cc3ff'/></svg>",
+   "aciklama": "Bir bilim, sanat ya da meslek dalında kullanılan yöntemlerin tümüdür.",
+   "ek": "Bilim, teknoloji üretirken teknik bilgiye ihtiyaç duyar.",
+   "akilda": "İşin yapılış yolu",
+   "soru": {
+    "soru": "Bir meslekte kullanılan yöntemlerin tümüne ne denir?",
+    "secenekler": [
+     "Keşif",
+     "Teknik",
+     "Endüstri"
+    ],
+    "dogru": 1,
+    "ipucu": "\"Akılda kalsın\": işin yapılış yolu.",
+    "aciklama": "Bir bilim, sanat ya da meslek dalında kullanılan yöntemlerin tümüne teknik denir. (s. 11)"
+   }
+  },
+  {
+   "ad": "Teknoloji",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g transform='translate(42 74)'><circle r='16' fill='none' stroke='#9cc3ff' stroke-width='7' stroke-dasharray='5 4'/><circle r='12' fill='#9cc3ff'/><circle r='5.3' fill='#1b2340'/></g><g transform='translate(74 88)'><circle r='11' fill='none' stroke='#f4a261' stroke-width='7' stroke-dasharray='5 4'/><circle r='7' fill='#f4a261'/><circle r='3.7' fill='#1b2340'/></g><g transform='translate(74 36) scale(1.1)'><circle cx='0' cy='0' r='14' fill='#f2c14e'/><rect x='-7' y='12' width='14' height='9' rx='2' fill='#ced4da'/><path d='M-7 15h14M-7 18h14' stroke='#868e96' stroke-width='1.2'/><path d='M-5 2q5 -8 10 0' stroke='#fff7d6' stroke-width='2' fill='none'/></g><path d='M18 28l6 4M100 24l-6 6M74 8v-2' stroke='#f2c14e' stroke-width='2.5' stroke-linecap='round'/></svg>",
+   "aciklama": "Araç-gereç yapabilmek için gereken bilgi ve yetenektir.",
+   "ek": "Kelime \"techne\" (yapmak) ve \"logos\" (bilmek) sözcüklerinden gelir. Amacı insan hayatının kalitesini artırmaktır.",
+   "akilda": "Daha iyi, hızlı, kolay",
+   "soru": {
+    "soru": "Teknoloji bir işi nasıl yapmaya çalışır?",
+    "secenekler": [
+     "Daha zor ve yavaş",
+     "Hep aynı şekilde",
+     "Daha iyi, hızlı ve kolay"
+    ],
+    "dogru": 2,
+    "ipucu": "\"Akılda kalsın\" ifadesini hatırla.",
+    "aciklama": "Teknoloji, bir şeyi daha iyi, daha hızlı, daha kolay yapma girişimidir. (s. 11)"
+   }
+  },
+  {
+   "ad": "İnovasyon",
+   "renk": "#d63384",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='38' y='14' width='44' height='86' rx='8' fill='#ced4da'/><rect x='43' y='22' width='34' height='64' rx='3' fill='#2d6cdf'/><circle cx='60' cy='46' r='10' fill='#f4d6a0'/><path d='M46 82q14 -22 28 0z' fill='#f4a261'/><circle cx='56' cy='44' r='1.5' fill='#1b2340'/><circle cx='64' cy='44' r='1.5' fill='#1b2340'/><path d='M56 50q4 3 8 0' stroke='#1b2340' stroke-width='1.5' fill='none'/><circle cx='60' cy='93' r='3' fill='#868e96'/><path d='M90 30l4 -8 4 8 8 4 -8 4 -4 8 -4 -8 -8 -4z' fill='#f2c14e'/></svg>",
+   "aciklama": "Bilim ve teknolojinin insanlara ve ekonomiye yarar sağlayacak şekilde yenilenmesidir.",
+   "ek": "Var olan bir ürünü iyileştirmek de inovasyondur: bilgisayardaki yazılımları taşıyan cep telefonları gibi.",
+   "akilda": "Yaratıcılık + ticari ustalık",
+   "soru": {
+    "soru": "Hangisi inovasyona örnektir?",
+    "secenekler": [
+     "Cep telefonuyla görüntülü konuşmak",
+     "Yeni bir kıtayı bulmak",
+     "Yer çekimini fark etmek"
+    ],
+    "dogru": 0,
+    "ipucu": "İnovasyon yeni bir fikri insanların kullanacağı bir ürüne dönüştürür.",
+    "aciklama": "Cep telefonlarıyla görüntülü iletişim, kitaptaki inovasyon örneğidir. (s. 11)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bulma mı, yapma mı?",
+   "kutular": [
+    {
+     "etiket": "Var olanı bulma",
+     "uyeler": [
+      "Buluş",
+      "Keşif"
+     ]
+    },
+    {
+     "etiket": "Yeni bir şey yapma ya da yenileme",
+     "uyeler": [
+      "İcat",
+      "İnovasyon"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Bilgi mi, yöntem mi?",
+   "kutular": [
+    {
+     "etiket": "Düzenli bilgi",
+     "uyeler": [
+      "Bilim"
+     ]
+    },
+    {
+     "etiket": "Yapma yolu ve yeteneği",
+     "uyeler": [
+      "Teknik",
+      "Teknoloji"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Teknoloji kelimesi iki parçadan oluşur: \"techne\" yapmak, \"logos\" bilmek demektir. (s. 11)",
+  "Bazı icatlar, dünyanın farklı yerlerinde aynı zamanlarda, birbirinden habersiz yapılmıştır. (s. 11)"
+ ],
+ "akildaKalsin": [
+  "Buluş: var olan ama bilinmeyeni öğrenmek.",
+  "Keşif: bilinmeyen kıta ya da gezegeni bulmak.",
+  "İcat: var olanları birleştirip yeni bir şey yapmak (kibrit, araba).",
+  "Bilim deneylere ve gerçeklere dayanır.",
+  "Teknik: işin yapılış yöntemleri. Teknoloji: araç yapma bilgisi ve yeteneği.",
+  "İnovasyon: yeni fikri yararlı bir ürüne dönüştürmek."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Bilim mi önce gelir, teknoloji mi?",
+   "cevap": "İkisi bir döngüdür. Bilim teknolojiyi üretir; teknoloji de bilimsel araştırmayı kolaylaştırıp hızlandırır. (s. 11)"
+  },
+  {
+   "soru": "Ateş bir icat mı?",
+   "cevap": "Kitaba göre ateş bir buluştur. Ateş zaten vardı; insanlar onu fark edip kullanmayı öğrendi. (s. 11)"
+  },
+  {
+   "soru": "Bir buluş herkese nasıl ulaşır?",
+   "cevap": "Çok sayıda üretilmesi gerekir. Bu noktada endüstri devreye girer. (s. 11)"
+  },
+  {
+   "soru": "Var olan bir ürünü güzelleştirmek de inovasyon mu?",
+   "cevap": "Evet. Var olan ürünleri iyileştirip daha çok insanın işine yarar hâle getirmek de inovasyondur. (s. 11)"
+  },
+  {
+   "soru": "Teknolojinin amacı nedir?",
+   "cevap": "İnsan hayatının kalitesini artırmak. Bunun için yaratıcılık ve zekâ; bilim, sanat ve mühendislikle birleşir. (s. 11)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Buluş ile icat arasındaki farkı birer örnekle yaz.",
+   "ornekCevap": "Buluş, var olan ama bilinmeyen bir şeyin öğrenilmesidir; yer çekiminin fark edilmesi gibi. İcat ise var olanları birleştirip yeni bir şey yapmaktır; kibrit gibi.",
+   "anahtarlar": [
+    "var ol",
+    "bilinme",
+    "birleştir",
+    "yeni",
+    "kibrit",
+    "yer çekim"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Yer çekiminin fark edilmesi neye örnektir?",
+   "secenekler": [
+    "Buluş",
+    "İcat",
+    "İnovasyon"
+   ],
+   "dogru": 0,
+   "ipucu": "Yer çekimi önceden de vardı. İnsanlar sadece fark etti.",
+   "aciklama": "Yer çekimi zaten vardı; fark edilmesi bir buluştur. (s. 11)",
+   "kavram": "Buluş"
+  },
+  {
+   "soru": "Bilinmeyen bir kıtanın bulunması hangisidir?",
+   "secenekler": [
+    "Teknik",
+    "Keşif",
+    "İcat"
+   ],
+   "dogru": 1,
+   "ipucu": "Yeni bir yer bulmak hangi kelimeydi?",
+   "aciklama": "Bilinmeyen bir kıtanın ya da gezegenin bulunması keşiftir. (s. 11)",
+   "kavram": "Keşif"
+  },
+  {
+   "soru": "Var olan teknolojileri yeni ve benzersiz biçimde bir araya getirmeye ne denir?",
+   "secenekler": [
+    "Bilim",
+    "Buluş",
+    "İcat"
+   ],
+   "dogru": 2,
+   "ipucu": "\"Birleştir, yeniyi yap\" hangi kavramdı?",
+   "aciklama": "Var olanları yeni ve benzersiz biçimde birleştirmek icattır. (s. 11)",
+   "kavram": "İcat"
+  },
+  {
+   "soru": "Bilim ile teknoloji arasındaki ilişki için hangisi doğrudur?",
+   "secenekler": [
+    "Birbirini besler, döngü gibidir",
+    "Birbiriyle hiç ilgisi yoktur",
+    "Teknoloji bilimi yavaşlatır"
+   ],
+   "dogru": 0,
+   "ipucu": "Bilim teknolojiyi üretir. Teknoloji de bilime ne yapar?",
+   "aciklama": "Bilim teknolojiyi üretir, teknoloji de bilimi hızlandırır. (s. 11)",
+   "kavram": "Bilim",
+   "yardim": {
+    "adimlar": [
+     "Bilim neyi üretiyordu?",
+     "Teknoloji de bilimsel araştırmaya nasıl yardım ediyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir aşçının yemek yaparken kullandığı yöntemlerin tümü hangi kavrama örnektir?",
+   "secenekler": [
+    "Keşif",
+    "Teknik",
+    "İnovasyon"
+   ],
+   "dogru": 1,
+   "ipucu": "Bir meslekte kullanılan yöntemlerin tümü…",
+   "aciklama": "Bir meslekte kullanılan yöntemlerin tümü tekniktir. (s. 11)",
+   "kavram": "Teknik"
+  },
+  {
+   "soru": "\"Techne\" ve \"logos\" sözcüklerinden gelen kavram hangisidir?",
+   "secenekler": [
+    "Bilim",
+    "Endüstri",
+    "Teknoloji"
+   ],
+   "dogru": 2,
+   "ipucu": "Techne yapmak, logos bilmek demek. Yapmayı bilmek…",
+   "aciklama": "Teknoloji kelimesi techne (yapmak) ve logos (bilmek) sözcüklerinden gelir. (s. 11)",
+   "kavram": "Teknoloji"
+  },
+  {
+   "soru": "Teknolojinin amacı nedir?",
+   "secenekler": [
+    "İnsan hayatının kalitesini artırmak",
+    "İşleri zorlaştırmak",
+    "Sadece para kazanmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Teknoloji işleri daha kolay ve daha iyi yapmaya çalışır.",
+   "aciklama": "Teknoloji, insan hayatının kalitesini artırmak amacıyla oluşturulur. (s. 11)",
+   "kavram": "Teknoloji"
+  },
+  {
+   "soru": "İnovasyon için hangisi doğrudur?",
+   "secenekler": [
+    "Bilinmeyen bir yeri bulmaktır",
+    "Yeni fikirleri insanlara yarar sağlayan ürünlere dönüştürmektir",
+    "Sadece eski ürünleri saklamaktır"
+   ],
+   "dogru": 1,
+   "ipucu": "\"Yaratıcılık + ticari ustalık\" ifadesini düşün.",
+   "aciklama": "İnovasyon yaratıcılığı ticari ustalıkla birleştirir; yeni fikirleri uygulamaya koyar. (s. 11)",
+   "kavram": "İnovasyon"
+  },
+  {
+   "soru": "Bilgisayardaki yazılımları taşıyan cep telefonları üretmek hangisine örnektir?",
+   "secenekler": [
+    "Keşif",
+    "Buluş",
+    "İnovasyon"
+   ],
+   "dogru": 2,
+   "ipucu": "Var olan bir ürünü iyileştirmek hangi kavramdı?",
+   "aciklama": "Var olan ürünü iyileştirip daha çok insanın işine yarar hâle getirmek inovasyondur. (s. 11)",
+   "kavram": "İnovasyon"
+  }
+ ]
+}
