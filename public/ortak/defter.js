@@ -161,7 +161,7 @@
     alanlar: {
       v: "Kayıt biçimi sürümü (1)", k: "Olayın benzersiz kimliği", ts: "Zaman damgası (ms)", t: "Yerel tarih-saat (YYYY-AA-GGTss:dd:ss)",
       cihaz: "Cihaz kimliği (tarayıcıya özgü rastgele)", oturum: "Oturum kimliği (30 dk ara → yeni oturum)",
-      ders: "Ders kodu (tr1 Türkçe, mat1 Matematik, fen1 Fen, ing1 İngilizce MEB, own1 İngilizce Own It, sos1 Sosyal, din1 Din Kültürü)",
+      ders: "Ders kodu (tr1 Türkçe, mat1 Matematik, fen1 Fen, ing1 İngilizce MEB, own1 İngilizce Own It, sos1 Sosyal, din1 Din Kültürü, bil1 Teknoloji ve Tasarım)",
       konu: "Konu kimliği (u1k2 = 1. ünite 2. konu; u1t1 = 1. ünite Ara Durak 1; atolye:<metin> = Okuma Atölyesi)", konuBaslik: "Konunun adı",
       bolum: "Ekran: ogren (Öğren), bak (Konuya Bak), tekrar (Tekrar oyunları), test (Test), okuma (Oku ve Dinle), hatirla / tarama / oyunlar (Ara Durak), atolye, rapor",
       olay: "Olay türü (aşağıdaki 'olaylar' listesi)",
@@ -2536,7 +2536,7 @@
   // =================================================================
   const DERS_LISTE = [["tr1", "Türkçe", "#c99a06"], ["mat1", "Matematik", "#1f9e8f"], ["fen1", "Fen Bilimleri", "#ff7a33"],
     ["ing1", "İngilizce (MEB)", "#1d6fa3"], ["own1", "İngilizce (Own It)", "#7a5ce0"], ["sos1", "Sosyal Bilgiler", "#2f8f5f"],
-    ["din1", "Din Kültürü", "#1a7f86"]];
+    ["din1", "Din Kültürü", "#1a7f86"], ["bil1", "Teknoloji ve Tasarım", "#9b3fa6"]];
   const dersRenk = k => (DERS_LISTE.find(x => x[0] === k) || [])[2] || "#8a8fa3";
   const gunKey = ts => yerelZaman(ts).slice(0, 10);
   const yuzde2 = (a, b) => b ? `%${Math.round(a / b * 100)}` : "—";
@@ -3089,6 +3089,39 @@
       g.globalAlpha = .7; g.fillStyle = "#f5c53d"; g.beginPath(); g.ellipse(xb + 6, y0 - 16, 6, 4.5, 0, 0, 7); g.fill();
       g.fillStyle = "#3a2a12"; g.fillRect(xb + 4, y0 - 20, 2, 8); g.fillRect(xb + 8, y0 - 20, 2, 8);
       g.fillStyle = "rgba(234,246,255,.8)"; g.beginPath(); g.ellipse(xb + 4, y0 - 23, 3, 4.5, -.4, 0, 7); g.ellipse(xb + 9, y0 - 23, 3, 4.5, .4, 0, 7); g.fill();
+      g.globalAlpha = 1;
+    },
+    // Teknoloji ve Tasarım — "Teknik çizim masası": mavi kâğıt ızgarası, gönye, pergel, ampul ve ölçü çizgileri (geniş ekranda başlığın sağında)
+    cizim(g, w, h, rnd) {
+      g.lineWidth = 1;
+      for (let x = 0; x < w; x += 20) { g.strokeStyle = x % 100 ? "rgba(255,255,255,.05)" : "rgba(255,255,255,.1)"; g.beginPath(); g.moveTo(x + .5, 0); g.lineTo(x + .5, h); g.stroke(); }
+      for (let y = 0; y < h; y += 20) { g.strokeStyle = y % 100 ? "rgba(255,255,255,.05)" : "rgba(255,255,255,.1)"; g.beginPath(); g.moveTo(0, y + .5); g.lineTo(w, y + .5); g.stroke(); }
+      const x0 = w > 700 ? w * .42 : 0, ww = w - x0;
+      g.lineCap = "round"; g.lineJoin = "round"; g.lineWidth = 1.8;
+      const ciz = [
+        (s) => { g.beginPath(); g.moveTo(0, 0); g.lineTo(0, -60 * s); g.lineTo(46 * s, 0); g.closePath(); g.stroke();        // gönye
+                 g.beginPath(); g.moveTo(10 * s, -10 * s); g.lineTo(10 * s, -36 * s); g.lineTo(28 * s, -10 * s); g.closePath(); g.stroke();
+                 for (let k = 1; k < 6; k++) { g.beginPath(); g.moveTo(k * 7 * s, 0); g.lineTo(k * 7 * s, -4 * s); g.stroke(); } },
+        (s) => { g.beginPath(); g.arc(0, -52 * s, 4 * s, 0, 7); g.stroke();                                                    // pergel
+                 g.beginPath(); g.moveTo(-2 * s, -48 * s); g.lineTo(-20 * s, 0); g.moveTo(2 * s, -48 * s); g.lineTo(18 * s, -4 * s); g.stroke();
+                 g.setLineDash([3, 4]); g.beginPath(); g.arc(-20 * s, 0, 38 * s, -1.1, -.15); g.stroke(); g.setLineDash([]); },
+        (s) => { g.beginPath(); g.arc(0, -34 * s, 16 * s, Math.PI * .8, Math.PI * 2.2); g.lineTo(7 * s, -12 * s); g.lineTo(-7 * s, -12 * s); g.closePath(); g.stroke();  // ampul
+                 g.beginPath(); g.moveTo(-6 * s, -7 * s); g.lineTo(6 * s, -7 * s); g.moveTo(-4 * s, -2 * s); g.lineTo(4 * s, -2 * s); g.stroke();
+                 for (let k = 0; k < 5; k++) { const a = -Math.PI * (.1 + k * .2); g.beginPath(); g.moveTo(Math.cos(a) * 22 * s, -34 * s + Math.sin(a) * 22 * s); g.lineTo(Math.cos(a) * 28 * s, -34 * s + Math.sin(a) * 28 * s); g.stroke(); } },
+        (s) => { g.strokeRect(-22 * s, -44 * s, 44 * s, 30 * s);                                                                // küp (perspektif)
+                 g.beginPath(); g.moveTo(-22 * s, -44 * s); g.lineTo(-8 * s, -56 * s); g.lineTo(36 * s, -56 * s); g.lineTo(22 * s, -44 * s); g.moveTo(36 * s, -56 * s); g.lineTo(36 * s, -26 * s); g.lineTo(22 * s, -14 * s); g.stroke(); }
+      ];
+      const n = Math.max(4, Math.round(ww / 150));
+      for (let i = 0; i < n; i++) {
+        const x = x0 + (i + .25 + rnd() * .5) * ww / n, y = h * (.62 + rnd() * .22), s = .55 + rnd() * .35;
+        g.save(); g.translate(x, y); g.rotate((rnd() - .5) * .25); g.globalAlpha = .2 + rnd() * .14;
+        g.strokeStyle = i % 3 === 1 ? "#f2c14e" : i % 3 === 2 ? "#e4b7ea" : "#cfe3ff"; ciz[i % ciz.length](s); g.restore();
+      }
+      g.globalAlpha = .3; g.strokeStyle = "#cfe3ff"; g.fillStyle = "#cfe3ff"; g.lineWidth = 1;          // ölçü çizgisi
+      const ly = h * .2, a1 = x0 + ww * .12, a2 = x0 + ww * .46;
+      g.beginPath(); g.moveTo(a1, ly - 6); g.lineTo(a1, ly + 6); g.moveTo(a2, ly - 6); g.lineTo(a2, ly + 6); g.moveTo(a1, ly); g.lineTo(a2, ly); g.stroke();
+      g.beginPath(); g.moveTo(a1, ly); g.lineTo(a1 + 7, ly - 3); g.lineTo(a1 + 7, ly + 3); g.fill(); g.beginPath(); g.moveTo(a2, ly); g.lineTo(a2 - 7, ly - 3); g.lineTo(a2 - 7, ly + 3); g.fill();
+      g.font = "600 11px 'Quicksand', 'Baloo 2', sans-serif"; g.textAlign = "center"; g.fillText("120", (a1 + a2) / 2, ly - 5);
       g.globalAlpha = 1;
     },
     // Din Kültürü — "Çini": sekiz köşeli yıldızlar, lale çizgileri, altın noktalar (geniş ekranda başlığın sağında)

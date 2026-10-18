@@ -1,0 +1,74 @@
+{
+ "kod": "bil1",
+ "ders": "Teknoloji ve Tasarım",
+ "sinif": "7. Sınıf",
+ "donem": "1. Dönem",
+ "kaynak": "Teknoloji ve Tasarım 7. Sınıf Ders Kitabı (Dilek Tekgül Öztürk, KARACA Eğitim Yayınları)",
+ "olumsuzVurgu": true,
+ "tema": {
+  "ad": "bil",
+  "desen": "cizim",
+  "font": "Quicksand:wght@400;500;600;700"
+ },
+ "bot": {
+  "ad": "Fikri",
+  "dugme": "Fikri'ye sor",
+  "svg": "<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Fikri'><circle cx='32' cy='32' r='32' fill='#1d3f74'/><path d='M0 40h64M0 50h64M12 0v64M24 0v64M36 0v64M48 0v64M0 16h64M0 28h64' stroke='#ffffff' stroke-opacity='.08' stroke-width='1'/><ellipse cx='47' cy='50' rx='8' ry='12' transform='rotate(35 47 50)' fill='#6b4428'/><path d='M42 43l9 13M46 41l8 11M40 47l14-4M42 52l12-4' stroke='#4a2e1a' stroke-width='1' stroke-opacity='.7'/><ellipse cx='30' cy='45' rx='14' ry='13' fill='#a8703f'/><ellipse cx='30' cy='48' rx='8' ry='8' fill='#d9ad7c'/><circle cx='30' cy='25' r='13' fill='#a8703f'/><circle cx='19' cy='15' r='3.6' fill='#a8703f'/><circle cx='41' cy='15' r='3.6' fill='#a8703f'/><circle cx='19' cy='15' r='1.6' fill='#6b4428'/><circle cx='41' cy='15' r='1.6' fill='#6b4428'/><ellipse cx='30' cy='30' rx='7.5' ry='5.5' fill='#d9ad7c'/><circle cx='25' cy='22' r='2' fill='#1b2340'/><circle cx='35' cy='22' r='2' fill='#1b2340'/><circle cx='25.7' cy='21.3' r='.6' fill='#fff'/><circle cx='35.7' cy='21.3' r='.6' fill='#fff'/><ellipse cx='30' cy='27.5' rx='2.4' ry='1.6' fill='#3a2414'/><rect x='28' y='31' width='4' height='4.5' rx='.8' fill='#fffaf0' stroke='#c9b28f' stroke-width='.5'/><path d='M30 31v4.5' stroke='#c9b28f' stroke-width='.5'/><path d='M12 51l12-17v17z' fill='none' stroke='#f2c14e' stroke-width='2.2' stroke-linejoin='round'/><path d='M15 51v-2.5M18 51v-2.5M21 51v-2.5' stroke='#f2c14e' stroke-width='1'/><ellipse cx='22' cy='44' rx='3.6' ry='3' fill='#8a5a32'/><ellipse cx='38' cy='44' rx='3.6' ry='3' fill='#8a5a32'/></svg>",
+  "karsilama": "Merhaba! Ben Fikri, Teknoloji ve Tasarım robotuyum. Kunduzlar doğanın mühendisidir; ben de tasarlamayı çok severim. Şu an \"{konu}\" konusundayız. Ne merak ediyorsun?",
+  "oneriler": [
+   "Bu konuyu bana kısaca anlat",
+   "Evdeki bir eşyayla örnek verir misin?",
+   "Bana kolay bir soru sor",
+   "Hangi kavramlar önemli?"
+  ],
+  "ekTalimat": "Bu bir Teknoloji ve Tasarım dersi. Kitaptaki tanım, terim ve sınıflandırmalara sadık kal; kitapta olmayan ama MEB programında geçen kavramları (STEAM, zıtlık, analoji, erişilebilirlik gibi) 'programda geçen kavram' diye belirterek, konu dosyasındaki tanımla anlat. Örnekleri evde, okulda ve sokakta görülen gündelik eşyalardan ver (sandalye, makas, diş fırçası, afiş, okul binası). Marka ya da satın alınacak ürün önerme. Kitaptaki istatistikleri değiştirme; bilmediğin güncel bilgi ya da tarih uydurma. Tehlikeli araç-gereç (kesici, delici, yanıcı) kullanımında her zaman öğretmen gözetimini hatırlat. En fazla 4 kısa, numaralı adım yaz. Yanlış cevapta nedenini nazikçe göster ve tekrar denemesini iste."
+ },
+ "uniteler": [
+  {"ad": "1. Ünite: Teknoloji ve Tasarım Öğreniyorum", "no": 1, "konular": [
+   {"id": "u1k1", "baslik": "Buluş, İcat ve Teknoloji", "sayfalar": "s. 11", "kaynakSayfalar": [[10, 11]], "hazir": false},
+   {"id": "u1k2", "baslik": "Endüstri Devrimleri", "sayfalar": "s. 12", "kaynakSayfalar": [[12, 12]], "hazir": false},
+   {"id": "u1k3", "baslik": "Tasarım ve Tasarım Dalları", "sayfalar": "s. 13–14", "kaynakSayfalar": [[13, 14]], "hazir": false},
+   {"id": "u1k4", "baslik": "Teknoloji-Tasarım İlişkisi ve STEAM", "sayfalar": "s. 15–17 · program", "kaynakSayfalar": [[15, 17]], "hazir": false},
+   {"id": "u1k5", "baslik": "Ülkemizde ve Dünyada Teknoloji", "sayfalar": "s. 18–19", "kaynakSayfalar": [[18, 19]], "hazir": false},
+   {"id": "u1k6", "baslik": "Yeni Teknolojiler 1: Yapay Zekâ ve Veri", "sayfalar": "s. 21–22", "kaynakSayfalar": [[21, 22]], "hazir": false},
+   {"id": "u1k7", "baslik": "Yeni Teknolojiler 2: Araçlar ve Enerji", "sayfalar": "s. 21–22", "kaynakSayfalar": [[21, 22]], "hazir": false},
+   {"id": "u1t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–7", "kaynakSayfalar": [[9, 22]], "hazir": false}
+  ]},
+  {"ad": "2. Ünite: Temel Tasarım", "no": 2, "konular": [
+   {"id": "u2k1", "baslik": "Tasarım Elemanları 1: Nokta, Çizgi, Şekil ve Biçim", "sayfalar": "s. 23–24 · program", "kaynakSayfalar": [[23, 24]], "hazir": false},
+   {"id": "u2k2", "baslik": "Tasarım Elemanları 2: Renk, Değer, Işık-Gölge ve Doku", "sayfalar": "s. 24 · program", "kaynakSayfalar": [[24, 24]], "hazir": false},
+   {"id": "u2k3", "baslik": "Tasarım İlkeleri 1: Denge, Ritim, Hareket, Vurgu, Zıtlık", "sayfalar": "s. 27–28 · program", "kaynakSayfalar": [[27, 28]], "hazir": false},
+   {"id": "u2k4", "baslik": "Tasarım İlkeleri 2: Birlik, Harmoni, Çeşitlilik, Oran", "sayfalar": "s. 27–28", "kaynakSayfalar": [[27, 28]], "hazir": false},
+   {"id": "u2k5", "baslik": "Analoji ve Ürünü Yeniden Yorumlama", "sayfalar": "s. 29–30 · program", "kaynakSayfalar": [[29, 30]], "hazir": false},
+   {"id": "u2t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–5", "kaynakSayfalar": [[23, 30]], "hazir": false}
+  ]},
+  {"ad": "3. Ünite: Tasarım Odaklı Süreç", "no": 3, "konular": [
+   {"id": "u3k1", "baslik": "Tasarım Sürecinin Aşamaları", "sayfalar": "s. 33–34", "kaynakSayfalar": [[32, 34]], "hazir": false},
+   {"id": "u3k2", "baslik": "Teknik Resim ve Perspektif", "sayfalar": "s. 35–38", "kaynakSayfalar": [[35, 38]], "hazir": false},
+   {"id": "u3k3", "baslik": "Problem Tanımlama ve Fikir Geliştirme", "sayfalar": "s. 39–40 · program", "kaynakSayfalar": [[39, 40]], "hazir": false},
+   {"id": "u3k4", "baslik": "Bilimsel Araştırma Basamakları", "sayfalar": "s. 41", "kaynakSayfalar": [[41, 41]], "hazir": false},
+   {"id": "u3k5", "baslik": "Ergonomi", "sayfalar": "s. 43–44", "kaynakSayfalar": [[43, 44]], "hazir": false},
+   {"id": "u3k6", "baslik": "Tasarım Geliştirme Kriterleri", "sayfalar": "s. 45–46 · program", "kaynakSayfalar": [[42, 46]], "hazir": false},
+   {"id": "u3k7", "baslik": "Maket, Model ve Prototip", "sayfalar": "s. 47–49", "kaynakSayfalar": [[47, 49]], "hazir": false},
+   {"id": "u3k8", "baslik": "İş Güvenliği ve Geri Dönüşüm", "sayfalar": "s. 50–51", "kaynakSayfalar": [[50, 51]], "hazir": false},
+   {"id": "u3k9", "baslik": "Değerlendirme, Tanıtım ve Sunum", "sayfalar": "s. 52–57", "kaynakSayfalar": [[52, 57]], "hazir": false},
+   {"id": "u3t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–9", "kaynakSayfalar": [[31, 57]], "hazir": false}
+  ]},
+  {"ad": "4. Ünite: Bilgisayar Destekli Tasarım", "no": 4, "konular": [
+   {"id": "u4k1", "baslik": "Bilgisayar Destekli Tasarım", "sayfalar": "s. 59–60", "kaynakSayfalar": [[58, 60]], "hazir": false},
+   {"id": "u4k2", "baslik": "Boyutlar ve Koordinat Sistemi", "sayfalar": "s. 61–62", "kaynakSayfalar": [[61, 62]], "hazir": false},
+   {"id": "u4k3", "baslik": "Taslaktan 2B ve 3B Çizime", "sayfalar": "s. 62–63 · program", "kaynakSayfalar": [[62, 63]], "hazir": false},
+   {"id": "u4k4", "baslik": "Çoklu Ortam ve Sunu Hazırlama", "sayfalar": "s. 64–68", "kaynakSayfalar": [[64, 68]], "hazir": false},
+   {"id": "u4t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–4", "kaynakSayfalar": [[58, 68]], "hazir": false}
+  ]},
+  {"ad": "5. Ünite: Mimari Tasarım", "no": 5, "konular": [
+   {"id": "u5k1", "baslik": "Mimar ve Mimari Tasarım", "sayfalar": "s. 71–72 · program", "kaynakSayfalar": [[70, 72]], "hazir": false},
+   {"id": "u5k2", "baslik": "İşlevlerine Göre Mimari Yapılar", "sayfalar": "s. 72–74 · program", "kaynakSayfalar": [[72, 74]], "hazir": false},
+   {"id": "u5k3", "baslik": "Yaşam Biçimi ve Geleneksel Evler", "sayfalar": "s. 75–76", "kaynakSayfalar": [[75, 76]], "hazir": false},
+   {"id": "u5k4", "baslik": "Mimariyi Etkileyen Unsurlar", "sayfalar": "s. 77–78 · program", "kaynakSayfalar": [[77, 78]], "hazir": false},
+   {"id": "u5k5", "baslik": "Konutun Çevreyle Uyumu", "sayfalar": "program · s. 77–78", "kaynakSayfalar": [[77, 78]], "hazir": false},
+   {"id": "u5k6", "baslik": "Mekân Tasarımı", "sayfalar": "s. 79–82 · program", "kaynakSayfalar": [[79, 82]], "hazir": false},
+   {"id": "u5t1", "tur": "tarama", "baslik": "Ünite Sonu Taraması", "sayfalar": "Tekrar: Konu 1–6", "kaynakSayfalar": [[69, 82]], "hazir": false}
+  ]}
+ ]
+}
