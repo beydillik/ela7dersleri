@@ -1,0 +1,319 @@
+{
+ "id": "u3k1",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Tasarım Sürecinin Aşamaları",
+ "sayfalar": "s. 33–34",
+ "kaynakNotu": "Problem odaklı düşünme kitapta tanımlanmaz. MEB programı anahtar kavramı; açıklama TT.7.3.1 öğrenme çıktısından (problemi oluşturan unsurları ayrıştırır, değişkenleri ve ölçütleri belirler): https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1439",
+ "giris": "Bir tasarım nasıl yapılır? Tasarımcılar adım adım ilerler. Bu konuda tasarım sürecini, beş temel basamağı ve tasarımın aşamalarını öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Tasarım Süreci",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='28' cy='58' r='17' fill='#d9480f'/><text x='28' y='66' font-size='22' font-weight='700' fill='#ffffff' text-anchor='middle' font-family='sans-serif'>?</text><path d='M50 58L70 58' stroke='#e9ecef' stroke-width='4' stroke-linecap='round'/><path d='M70 52L78 58L70 64z' fill='#e9ecef'/><circle cx='94' cy='52' r='14' fill='#f2c14e'/><rect x='88' y='64' width='12' height='9' rx='2' fill='#5c677d'/><text x='60' y='100' font-size='10' font-weight='600' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>problem → çözüm</text></svg>",
+   "aciklama": "Tasarım süreci, bir problemi tanımlayıp ona çözüm önerdiğimiz yoldur.",
+   "ek": "Kitap bu yolu altı aşamayla anlatır: problemi tanımlama, öneri geliştirme-araştırma, görselleştirme, planlama, uygulama, değerlendirme ve sunma.",
+   "akilda": "Problem → çözüm yolu",
+   "soru": {
+    "soru": "Tasarım süreci neyle başlar?",
+    "secenekler": [
+     "Ürünü satmakla",
+     "Bir problemi tanımlamakla",
+     "Afiş asmakla"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın ilk kelimelerine bak: problemi…",
+    "aciklama": "Tasarım süreci, problem tanımlama ve çözüm önerme sürecidir. (s. 32, 34)"
+   }
+  },
+  {
+   "ad": "Problem Odaklı Düşünme",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='36' width='32' height='48' rx='5' fill='#9b3fa6'/><text x='26' y='66' font-size='20' font-weight='700' fill='#ffffff' text-anchor='middle' font-family='sans-serif'>?</text><path d='M48 60L62 60' stroke='#e9ecef' stroke-width='4' stroke-linecap='round'/><path d='M62 54L70 60L62 66z' fill='#e9ecef'/><rect x='72' y='22' width='38' height='20' rx='4' fill='#c77dcf'/><rect x='72' y='50' width='38' height='20' rx='4' fill='#c77dcf'/><rect x='72' y='78' width='38' height='20' rx='4' fill='#c77dcf'/><text x='91' y='36' font-size='12' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>1</text><text x='91' y='64' font-size='12' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>2</text><text x='91' y='92' font-size='12' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>3</text></svg>",
+   "aciklama": "Problem odaklı düşünme, bir problemi küçük parçalarına ayırarak incelemektir.",
+   "ek": "Programda geçen kavram (kitap dışı, MEB programı). Problemin parçaları ve neyle ölçüleceği belirlenir. Örnek: 'Çantam ağır' → kitaplar mı, çanta mı, askısı mı?",
+   "akilda": "Problemi parçalara böl",
+   "soru": {
+    "soru": "Ali 'Odam dağınık' problemini kıyafetler, kitaplar ve oyuncaklar diye üçe ayırıyor. Ali ne yapıyor?",
+    "secenekler": [
+     "Problem odaklı düşünüyor",
+     "Ürün tanıtıyor",
+     "Maket yapıyor"
+    ],
+    "dogru": 0,
+    "ipucu": "Problemi parçalara ayırmanın adı neydi?",
+    "aciklama": "Problemi parçalarına ayırmak problem odaklı düşünmedir. (program)"
+   }
+  },
+  {
+   "ad": "Beş Temel Basamak",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='84' width='19' height='14' fill='#2a9d8f'/><text x='21.5' y='80' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>1</text><rect x='31' y='70' width='19' height='28' fill='#1d6fa3'/><text x='40.5' y='66' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>2</text><rect x='50' y='56' width='19' height='42' fill='#9b3fa6'/><text x='59.5' y='52' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>3</text><rect x='69' y='42' width='19' height='56' fill='#c2255c'/><text x='78.5' y='38' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>4</text><rect x='88' y='28' width='19' height='70' fill='#d9480f'/><text x='97.5' y='24' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>5</text><path d='M10 98h100' stroke='#5c677d' stroke-width='3'/></svg>",
+   "aciklama": "Kitap tasarımı beş basamaklı bir merdivenle anlatır: problemi tanımlama, bilgi toplama, yaratıcılık ve buluş, çözüm bulma, uygulama.",
+   "ek": "Bilgi toplamada önceki araştırmalara ve örnek olaylara bakılır. Çözüm bulmada bir karara varılır ve araştırma biter.",
+   "akilda": "Beş basamaklı merdiven",
+   "soru": {
+    "soru": "Tasarım merdiveninin ilk basamağı hangisidir?",
+    "secenekler": [
+     "Uygulama",
+     "Çözüm bulma",
+     "Problemi tanımlama"
+    ],
+    "dogru": 2,
+    "ipucu": "Her iş önce neyi anlamakla başlar?",
+    "aciklama": "İlk basamak problemi tanımlamadır; sorunun kaynağı ayrıntısıyla öğrenilir. (s. 33)"
+   }
+  },
+  {
+   "ad": "Yaratıcılık ve Buluş Süreci",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='54' r='20' fill='#f2c14e'/><rect x='54' y='72' width='12' height='9' rx='2' fill='#5c677d'/><path d='M90 54L100 54' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/><path d='M30 54L20 54' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/><path d='M60 24L60 14' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/><path d='M81 33L88 26' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/><path d='M39 33L32 26' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Toplanan bilgilerle çözümün tasarlandığı basamaktır. Burada hipotez, yani geçici bir çözüm geliştirilir.",
+   "ek": "Kitaba göre bu basamak en önemli aşamadır.",
+   "akilda": "En önemli basamak",
+   "soru": {
+    "soru": "Kitaba göre tasarımın en önemli basamağı hangisidir?",
+    "secenekler": [
+     "Bilgi toplama",
+     "Uygulama",
+     "Yaratıcılık ve buluş süreci"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta 'en önemli' yazan basamak…",
+    "aciklama": "Kitap yaratıcılık ve buluş sürecini en önemli aşama olarak belirtir. (s. 33)"
+   }
+  },
+  {
+   "ad": "Görselleştirme",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='64' height='84' rx='4' fill='#e9ecef'/><path d='M30 70l18-16 18 16v20H30z' fill='#ff8fab'/><path d='M30 70l18-16 18 16' stroke='#c2255c' stroke-width='3' fill='none'/><rect x='44' y='78' width='8' height='12' fill='#c2255c'/><path d='M82 92l22-58 8 3-22 58z' fill='#f2c14e'/><path d='M82 92l8 3-6 6z' fill='#5c677d'/></svg>",
+   "aciklama": "Görselleştirme, fikri yazarak, çizerek, maket yaparak ya da bilgisayarla göstermektir.",
+   "ek": "Ayrıntı ne kadar çok olursa proje o kadar iyi anlaşılır.",
+   "akilda": "Fikri göster",
+   "soru": {
+    "soru": "Ece fikrini kâğıda çizip renklendirdi. Ece hangi aşamada?",
+    "secenekler": [
+     "Değerlendirme",
+     "Görselleştirme",
+     "Problem tanımlama"
+    ],
+    "dogru": 1,
+    "ipucu": "Fikrini gösterir hâle getirdi…",
+    "aciklama": "Fikri çizerek ifade etmek görselleştirmedir. (s. 34)"
+   }
+  },
+  {
+   "ad": "Planlama ve Uygulama",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='54' height='84' rx='6' fill='#e9ecef'/><rect x='30' y='12' width='22' height='12' rx='3' fill='#5c677d'/><path d='M22 40l5 5 9-10' stroke='#2f9e44' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M42 40h18' stroke='#5c677d' stroke-width='4' stroke-linecap='round'/><path d='M22 60l5 5 9-10' stroke='#2f9e44' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M42 60h18' stroke='#5c677d' stroke-width='4' stroke-linecap='round'/><path d='M22 80l5 5 9-10' stroke='#2f9e44' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M42 80h18' stroke='#5c677d' stroke-width='4' stroke-linecap='round'/><path d='M84 50l18 18' stroke='#c99a06' stroke-width='7' stroke-linecap='round'/><rect x='74' y='34' width='26' height='14' rx='3' fill='#d9480f' transform='rotate(45 87 41)'/><path d='M80 98l26-26' stroke='#c99a06' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Planlamada üretimin her adımı netleşir. Uygulamada tasarım yapılır; model ya da prototip hazırlanır.",
+   "ek": "Planlarken ergonomi, estetik, yenilikçilik ve işlevsellik düşünülür. Malzeme dayanıklı, kolay bulunur, geri dönüşüme uygun ve ekonomik olmalıdır.",
+   "akilda": "Önce plan, sonra yapım",
+   "soru": {
+    "soru": "Planlamada malzeme seçerken hangisine dikkat edilmez?",
+    "secenekler": [
+     "En pahalı malzemeyi seçmeye",
+     "Dayanıklı olmasına",
+     "Kolay bulunmasına"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta malzemenin ekonomik olması gerektiği yazıyordu.",
+    "aciklama": "Malzeme dayanıklı, kolay bulunur, geri dönüşüme uygun ve ekonomik olmalıdır. (s. 34)"
+   }
+  },
+  {
+   "ad": "Değerlendirme ve Sunma",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='88' height='60' rx='6' fill='#e9ecef'/><path d='M40 48l14 14 28-28' stroke='#2f9e44' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M60 78v16M46 104l14-10 14 10' stroke='#5c677d' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Son aşamada tasarım incelenir ve başkalarına sunulur.",
+   "ek": "Tasarım özgünlük, işlevsellik, yapılabilirlik ve sürdürülebilirlik açılarından değerlendirilir; görsel ve sözel sunum yapılır.",
+   "akilda": "İncele ve sun",
+   "soru": {
+    "soru": "Hazırlanan ürünün sınıfa anlatıldığı aşama hangisidir?",
+    "secenekler": [
+     "Değerlendirme ve sunma",
+     "Görselleştirme",
+     "Planlama"
+    ],
+    "dogru": 0,
+    "ipucu": "Son aşamanın adında 'sunma' geçiyordu.",
+    "aciklama": "Tasarlanan ürün hakkında görsel ve sözel sunum son aşamada yapılır. (s. 34)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu aşamada ne yapılır?",
+   "kutular": [
+    {
+     "etiket": "Düşünür, fikir buluruz",
+     "uyeler": [
+      "Problem Odaklı Düşünme",
+      "Yaratıcılık ve Buluş Süreci"
+     ]
+    },
+    {
+     "etiket": "Gösterir, yaparız",
+     "uyeler": [
+      "Görselleştirme",
+      "Planlama ve Uygulama"
+     ]
+    },
+    {
+     "etiket": "İnceler, anlatırız",
+     "uyeler": [
+      "Değerlendirme ve Sunma"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitap tasarımın basamaklarını bir merdivene, aşamalarını yol tabelalarına benzetir. (s. 33, 34)"
+ ],
+ "akildaKalsin": [
+  "Tasarım süreci: problemi tanımla, çözüm öner.",
+  "Beş basamak: problem, bilgi, yaratıcılık-buluş, çözüm, uygulama.",
+  "En önemli basamak: yaratıcılık ve buluş (hipotez).",
+  "Görselleştirme: yaz, çiz, maket yap ya da bilgisayarla göster.",
+  "Son aşama: değerlendir ve sun."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Bir durumun problem sayılması için ne gerekir?",
+   "cevap": "Kişide rahatsızlık uyandırmalı ve birden fazla çözüm yolu olmalı. (s. 34)"
+  },
+  {
+   "soru": "Hipotez ne demek?",
+   "cevap": "Araştırmacının kendi görüşüyle ortaya koyduğu geçici çözümdür. (s. 34)"
+  },
+  {
+   "soru": "Görselleştirme sadece çizimle mi olur?",
+   "cevap": "Hayır. Yazarak, maket yaparak ya da bilgisayar programıyla da olur. (s. 34)"
+  },
+  {
+   "soru": "Tasarım bitince iş biter mi?",
+   "cevap": "Hayır. Tasarım etkili mi, verimli mi, kullanıcı memnun mu diye incelenir. (s. 34)"
+  },
+  {
+   "soru": "Uygulama aşamasında neden geri dönüşüm konuşulur?",
+   "cevap": "Ambalaj gibi günlük ürünlerin dönüşümü ve yeniden kullanımı bu aşamada araştırılır. (s. 34)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okul çantan çok ağır. Bu problemi tasarım sürecinin ilk iki aşamasıyla nasıl ele alırdın?",
+   "ornekCevap": "Önce problemi tanımlardım: Çanta neden ağır, hangi kitaplar gereksiz? Sonra araştırma yapıp çözüm önerileri yazardım; örneğin ders programına göre çanta hazırlamak.",
+   "anahtarlar": [
+    "problem",
+    "tanım",
+    "araştır",
+    "çözüm",
+    "öneri"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Tasarım sürecinin altı aşamasından ilki hangisidir?",
+   "secenekler": [
+    "Değerlendirme ve sunma",
+    "Planlama",
+    "Tasarım problemi tanımlama"
+   ],
+   "dogru": 2,
+   "ipucu": "Her şey bir problemle başlar.",
+   "aciklama": "İlk aşama tasarım problemini tanımlamaktır. (s. 34)",
+   "kavram": "Tasarım Süreci"
+  },
+  {
+   "soru": "Hangisi beş temel basamaktan biri değildir?",
+   "secenekler": [
+    "Bilgi toplama",
+    "Ürünü satmak",
+    "Çözüm bulma"
+   ],
+   "dogru": 1,
+   "ipucu": "Merdivenin basamaklarını hatırla.",
+   "aciklama": "Basamaklar: problemi tanımlama, bilgi toplama, yaratıcılık-buluş, çözüm bulma, uygulama. (s. 33)",
+   "kavram": "Beş Temel Basamak",
+   "yardim": {
+    "adimlar": [
+     "Beş basamağı sırayla say.",
+     "Bu listede olmayan seçenek hangisi?"
+    ]
+   }
+  },
+  {
+   "soru": "Bilgi toplama basamağında ne yapılır?",
+   "secenekler": [
+    "Ürün sergilenir",
+    "Maket boyanır",
+    "Önceki araştırmalara ve örnek olaylara bakılır"
+   ],
+   "dogru": 2,
+   "ipucu": "Bilgi nereden toplanır?",
+   "aciklama": "Soruna ve çözüme yönelik önceki araştırmalardan ve örnek olaylardan bilgi toplanır. (s. 33)",
+   "kavram": "Beş Temel Basamak"
+  },
+  {
+   "soru": "Hipotez hangi basamakta geliştirilir?",
+   "secenekler": [
+    "Yaratıcılık ve buluş süreci",
+    "Uygulama",
+    "Problemi tanımlama"
+   ],
+   "dogru": 0,
+   "ipucu": "En önemli basamağı hatırla.",
+   "aciklama": "Yaratıcılık ve buluş sürecinde hipotez geliştirilir. (s. 33)",
+   "kavram": "Yaratıcılık ve Buluş Süreci"
+  },
+  {
+   "soru": "Görselleştirmede ayrıntı artınca ne olur?",
+   "secenekler": [
+    "Proje karışır",
+    "Proje daha iyi anlaşılır",
+    "Tasarım biter"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartın ek bilgisine bak.",
+   "aciklama": "Ayrıntı ne kadar çok olursa projenin anlaşılırlığı o kadar iyi olur. (s. 34)",
+   "kavram": "Görselleştirme"
+  },
+  {
+   "soru": "Tasarım hangi açılardan değerlendirilir?",
+   "secenekler": [
+    "Yalnız fiyatı",
+    "Özgünlük, işlevsellik, yapılabilirlik, sürdürülebilirlik",
+    "Yalnız rengi"
+   ],
+   "dogru": 1,
+   "ipucu": "Dört ölçüt vardı.",
+   "aciklama": "Tasarım özgünlük, işlevsellik, yapılabilirlik ve sürdürülebilirlik açılarından değerlendirilir. (s. 34)",
+   "kavram": "Değerlendirme ve Sunma"
+  },
+  {
+   "soru": "'Bisikletim çabuk kirleniyor' problemini çamurluk, zincir ve tekerlek diye ayırmak neye örnektir?",
+   "secenekler": [
+    "Problem odaklı düşünme",
+    "Ürün tanıtımı",
+    "Prototip yapma"
+   ],
+   "dogru": 0,
+   "ipucu": "Problem parçalara ayrılıyor.",
+   "aciklama": "Problemi parçalarına ayırarak incelemek problem odaklı düşünmedir. (program)",
+   "kavram": "Problem Odaklı Düşünme"
+  },
+  {
+   "soru": "Planlama yaparken hangisine özen gösterilir?",
+   "secenekler": [
+    "Yalnız süslü olmasına",
+    "Kimsenin kullanmamasına",
+    "Ergonomi ve işlevselliğe"
+   ],
+   "dogru": 2,
+   "ipucu": "Kullanıcı ihtiyaçlarını düşün.",
+   "aciklama": "Planlamada ergonomi, estetik, yenilikçilik, işlevsellik gibi niteliklere özen gösterilir. (s. 34)",
+   "kavram": "Planlama ve Uygulama"
+  }
+ ]
+}

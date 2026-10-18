@@ -1,0 +1,309 @@
+{
+ "id": "u3k5",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Ergonomi",
+ "sayfalar": "s. 43–44",
+ "giris": "Sandalyen sırtını ağrıtıyorsa ya da çantan omzunu acıtıyorsa bu bir ergonomi sorunudur. Bu konuda ergonomiyi ve ergonomiyle ilgilenen bilim dallarını öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Ergonomi",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='42' cy='30' r='9' fill='#ffd8a8'/><path d='M42 40v28M42 68l-10 26M42 68l10 26M42 48l-12 14M42 48l16 10' stroke='#ffd8a8' stroke-width='6' stroke-linecap='round' fill='none'/><rect x='58' y='56' width='42' height='6' rx='3' fill='#2a9d8f'/><path d='M64 62v32M94 62v32' stroke='#2a9d8f' stroke-width='5'/><rect x='72' y='36' width='22' height='16' rx='2' fill='#6fb3ff'/></svg>",
+   "aciklama": "Ergonomi, yaşamın insana uygun hâle getirilmesidir.",
+   "ek": "İnsan, makine ve çevre arasında uyum kurar. Çalışanın sağlığını korur, gereksiz ve aşırı zorlanmayı önler.",
+   "akilda": "Yaşam insana uysun",
+   "soru": {
+    "soru": "Ergonominin amacı nedir?",
+    "secenekler": [
+     "Yaşamı insana uygun hâle getirmek",
+     "Ürünü pahalı yapmak",
+     "Makineyi süslemek"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın ilk cümlesini hatırla.",
+    "aciklama": "Ergonomi, yaşamın insana uygun hâle getirilmesidir. (s. 44)"
+   }
+  },
+  {
+   "ad": "Fizyoloji",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 76c0-22 14-34 30-34s30 12 30 34' stroke='#ff8fab' stroke-width='14' fill='none' stroke-linecap='round'/><circle cx='60' cy='40' r='10' fill='#ffd8a8'/><path d='M84 30l8-14 4 10 8-4-6 16' fill='#f2c14e'/><text x='60' y='104' font-size='11' font-weight='600' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>kas · enerji</text></svg>",
+   "aciklama": "Fizyoloji; kas çalışmasını, harcanan enerjiyi, ısıyı ve vücudun ısıya tepkisini inceler.",
+   "akilda": "Kaslar ve enerji",
+   "soru": {
+    "soru": "Kas çalışmasını ve enerji harcamasını inceleyen dal hangisidir?",
+    "secenekler": [
+     "Sosyoloji",
+     "Antropometri",
+     "Fizyoloji"
+    ],
+    "dogru": 2,
+    "ipucu": "Kaslar ve enerji…",
+    "aciklama": "Fizyoloji kas çalışması ve enerji harcaması gibi konuları inceler. (s. 43)"
+   }
+  },
+  {
+   "ad": "Psikoloji",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='20' width='88' height='70' rx='8' fill='#b2f2bb'/><rect x='28' y='32' width='26' height='20' rx='3' fill='#6fb3ff'/><circle cx='80' cy='46' r='12' fill='#f2c14e'/><path d='M74 48q6 6 12 0' stroke='#1b2340' stroke-width='3' fill='none'/><path d='M26 76h68' stroke='#9b3fa6' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Psikoloji; renk, şekil ve düzenle çalışma ortamını rahatlatıcı ve hoş yapmayı amaçlar.",
+   "akilda": "Hoş ve rahat ortam",
+   "soru": {
+    "soru": "Çalışma odasının duvarları rahatlatıcı bir renge boyandı. Bu hangi dalın ilgi alanıdır?",
+    "secenekler": [
+     "Fizyoloji",
+     "Antropometri",
+     "Psikoloji"
+    ],
+    "dogru": 2,
+    "ipucu": "Renk ve düzenle rahatlık…",
+    "aciklama": "Psikoloji renk, şekil, düzen gibi rahatlatıcı düzenlemeleri amaçlar. (s. 43)"
+   }
+  },
+  {
+   "ad": "Sosyoloji",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='30' cy='44' r='9' fill='#6fb3ff'/><path d='M18 84c0-18 6-26 12-26s12 8 12 26' fill='#1d6fa3'/><circle cx='60' cy='44' r='9' fill='#6fb3ff'/><path d='M48 84c0-18 6-26 12-26s12 8 12 26' fill='#1d6fa3'/><circle cx='90' cy='44' r='9' fill='#6fb3ff'/><path d='M78 84c0-18 6-26 12-26s12 8 12 26' fill='#1d6fa3'/><text x='60' y='104' font-size='11' font-weight='600' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>toplum</text></svg>",
+   "aciklama": "Sosyoloji, toplumu ve toplumsal grupları ilgilendiren sorunları inceler.",
+   "ek": "Ergonomi bu bilgilerden yararlanarak bazı toplumsal sorunların çözümüne katkı sağlar.",
+   "akilda": "Toplum ve gruplar",
+   "soru": {
+    "soru": "Toplumu ve toplumsal grupları ilgilendiren sorunlarla hangi dal ilgilenir?",
+    "secenekler": [
+     "Psikoloji",
+     "Sosyoloji",
+     "Fizyoloji"
+    ],
+    "dogru": 1,
+    "ipucu": "Toplum kelimesini hatırla.",
+    "aciklama": "Ergonomi toplumsal sorunlarda sosyolojik çalışmalardan yararlanır. (s. 43)"
+   }
+  },
+  {
+   "ad": "Antropometri",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='42' cy='30' r='9' fill='#ffd8a8'/><path d='M42 40v28M42 68l-10 26M42 68l10 26M42 48l-12 14M42 48l16 10' stroke='#ffd8a8' stroke-width='6' stroke-linecap='round' fill='none'/><path d='M76 20v80' stroke='#f2c14e' stroke-width='4'/><path d='M76 24h12' stroke='#f2c14e' stroke-width='3'/><path d='M76 34h8' stroke='#f2c14e' stroke-width='3'/><path d='M76 44h12' stroke='#f2c14e' stroke-width='3'/><path d='M76 54h8' stroke='#f2c14e' stroke-width='3'/><path d='M76 64h12' stroke='#f2c14e' stroke-width='3'/><path d='M76 74h8' stroke='#f2c14e' stroke-width='3'/><path d='M76 84h12' stroke='#f2c14e' stroke-width='3'/><path d='M76 94h8' stroke='#f2c14e' stroke-width='3'/></svg>",
+   "aciklama": "Antropometri, insanın vücut ölçülerini inceleyen bilim dalıdır.",
+   "ek": "Araç ve gereçler insanın ölçülerine ve yeteneklerine uygun tasarlanmalıdır. Örneğin sıra ve sandalye öğrencinin boyuna göre yapılır.",
+   "akilda": "Vücut ölçüleri",
+   "soru": {
+    "soru": "Okul sıralarının yüksekliği öğrencilerin boyuna göre belirleniyor. Bu hangi bilim dalından yararlanmaktır?",
+    "secenekler": [
+     "Antropometri",
+     "Sosyoloji",
+     "Psikoloji"
+    ],
+    "dogru": 0,
+    "ipucu": "Vücut ölçüleri…",
+    "aciklama": "Antropometri insanın vücut ölçülerini inceler; araçlar bu ölçülere uygun tasarlanır. (s. 43)"
+   }
+  },
+  {
+   "ad": "Ergonominin Konuları",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='32' cy='34' r='11' fill='#f2c14e'/><rect x='26' y='43' width='12' height='9' rx='2' fill='#5c677d'/><path d='M80 24l-10 8h-8v12h8l10 8z' fill='#e9ecef'/><path d='M86 30q6 8 0 16' stroke='#e9ecef' stroke-width='3' fill='none'/><rect x='24' y='68' width='8' height='30' rx='4' fill='#e9ecef'/><circle cx='28' cy='98' r='7' fill='#ff4d6d'/><path d='M28 76v20' stroke='#ff4d6d' stroke-width='4'/><circle cx='82' cy='82' r='18' fill='none' stroke='#e9ecef' stroke-width='4'/><path d='M82 82V70M82 82l8 6' stroke='#e9ecef' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Ergonomi gürültü, aydınlatma, ısı, titreşim, çalışma alanı, el aletleri, çalışma ve mola saatleri gibi konularla ilgilenir.",
+   "akilda": "Ses, ışık, ısı, mola",
+   "soru": {
+    "soru": "Hangisi ergonominin konularından biridir?",
+    "secenekler": [
+     "Aydınlatma",
+     "Ürünün fiyatı",
+     "Reklam sloganı"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta ışıkla ilgili bir konu vardı.",
+    "aciklama": "Aydınlatma ergonominin konularındandır. (s. 43)"
+   }
+  },
+  {
+   "ad": "Ergonomik Düzenleme",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='20' width='44' height='80' rx='6' fill='#ffe3e3'/><rect x='64' y='20' width='44' height='80' rx='6' fill='#d3f9d8'/><circle cx='34' cy='50' r='8' fill='#5c677d'/><path d='M34 58v20M22 66q12-8 24 0' stroke='#5c677d' stroke-width='5' fill='none'/><path d='M20 40q14-16 28 0' stroke='#c2255c' stroke-width='3' fill='none'/><circle cx='86' cy='50' r='8' fill='#5c677d'/><path d='M86 58v20M76 64h20' stroke='#5c677d' stroke-width='5'/><rect x='80' y='30' width='12' height='8' fill='#2f9e44'/><text x='34' y='94' font-size='10' font-weight='700' fill='#c2255c' text-anchor='middle' font-family='sans-serif'>önce</text><text x='86' y='94' font-size='10' font-weight='700' fill='#2f9e44' text-anchor='middle' font-family='sans-serif'>sonra</text></svg>",
+   "aciklama": "Kitaptaki örnekte çalışan, arkasındaki raftan tabaka almak için her seferinde dönüyordu. Tabakalar önündeki kancaya asılınca bu gereksiz hareket kalktı.",
+   "ek": "Ergonomik tasarım insanın ölçülerine, yeteneklerine, kısıtlılıklarına ve beklentilerine uygun olmalıdır.",
+   "akilda": "Gereksiz hareketi kaldır",
+   "soru": {
+    "soru": "Tabakalar çalışanın önüne asılınca ne oldu?",
+    "secenekler": [
+     "Çalışan daha çok yoruldu",
+     "Tabakalar kayboldu",
+     "Gereksiz dönme hareketi kalktı"
+    ],
+    "dogru": 2,
+    "ipucu": "Çalışan artık dönmek zorunda mı?",
+    "aciklama": "Tabakalar öne asılınca çalışan dönmek zorunda kalmadı; hareket israfı yok oldu. (s. 44)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bilim dalı neyle ilgilenir?",
+   "kutular": [
+    {
+     "etiket": "Vücut",
+     "uyeler": [
+      "Fizyoloji",
+      "Antropometri"
+     ]
+    },
+    {
+     "etiket": "Ortam ve duygular",
+     "uyeler": [
+      "Psikoloji"
+     ]
+    },
+    {
+     "etiket": "Toplum",
+     "uyeler": [
+      "Sosyoloji"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitap ergonomiyi bir yaşam biçimi olarak görür. (s. 43)",
+  "Eğilerek yük kaldırmak ve çok uzanmak, kitapta kusurlu hareket örneği olarak gösterilir. (s. 43)"
+ ],
+ "akildaKalsin": [
+  "Ergonomi: yaşamın insana uygun hâle getirilmesi.",
+  "Fizyoloji kaslar ve enerji; psikoloji hoş ortam; sosyoloji toplum.",
+  "Antropometri: insanın vücut ölçüleri.",
+  "Konuları: gürültü, aydınlatma, ısı, titreşim, mola saatleri.",
+  "Ergonomik düzenleme gereksiz hareketi kaldırır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Ergonomi sadece fabrikalarda mı önemlidir?",
+   "cevap": "Hayır. Kitaba göre ergonomi bir yaşam biçimidir; evde ve okulda da önemlidir. (s. 43, 44)"
+  },
+  {
+   "soru": "Eğilerek yük kaldırmak neden kusurlu harekettir?",
+   "cevap": "Vücudu gereksiz ve aşırı zorlar. Ergonomi bu zorlanmayı önlemeyi amaçlar. (s. 43)"
+  },
+  {
+   "soru": "Mola saatleri neden ergonominin konusudur?",
+   "cevap": "Çalışma saatleri, vardiya ve molalar insanın yorulmasını etkiler; bunlar ergonominin konularındandır. (s. 43)"
+  },
+  {
+   "soru": "Ergonomik bir ürün kimi düşünür?",
+   "cevap": "İnsanı: ölçülerini, yeteneklerini, kısıtlılıklarını ve beklentilerini. (s. 44)"
+  },
+  {
+   "soru": "Ergonomi çalışana ne kazandırır?",
+   "cevap": "Hem çalışanın sağlığını korur hem de üretimin artmasını sağlar. (s. 43)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Ders çalıştığın masayı ergonomik hâle getirmek için ne yapardın? İki öneri yaz.",
+   "ornekCevap": "Masanın ve sandalyenin yüksekliğini boyuma uygun yapardım. Lambayı masayı iyi aydınlatacak yere koyardım.",
+   "anahtarlar": [
+    "boy",
+    "ölçü",
+    "ışık",
+    "aydınlat",
+    "sandalye"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Ergonomi neler arasındaki uyumla ilgilenir?",
+   "secenekler": [
+    "Yalnız makineler",
+    "İnsan, makine ve çevre",
+    "Yalnız binalar"
+   ],
+   "dogru": 1,
+   "ipucu": "Üç şey vardı: insan, …",
+   "aciklama": "Ergonomi insan – makine – çevre sisteminin uyumunu amaçlar. (s. 43)",
+   "kavram": "Ergonomi"
+  },
+  {
+   "soru": "Hangisi ergonominin amaçlarından biri değildir?",
+   "secenekler": [
+    "Aşırı zorlamayı önlemek",
+    "Vücudun zarar görmesini önlemek",
+    "Çalışanı daha çok yormak"
+   ],
+   "dogru": 2,
+   "ipucu": "Ergonomi insanı korur.",
+   "aciklama": "Ergonomi gereksiz ve aşırı zorlamadan kaçınmayı, organizmanın zarar görmesini önlemeyi amaçlar. (s. 43)",
+   "kavram": "Ergonomi"
+  },
+  {
+   "soru": "Isı ve vücudun ısıya tepkisi konusunda ergonomiye ışık tutan dal hangisidir?",
+   "secenekler": [
+    "Fizyoloji",
+    "Sosyoloji",
+    "Antropometri"
+   ],
+   "dogru": 0,
+   "ipucu": "Vücudun çalışmasıyla ilgili dal…",
+   "aciklama": "Fizyoloji ısı ve ısıya karşı tepki konularını inceler. (s. 43)",
+   "kavram": "Fizyoloji"
+  },
+  {
+   "soru": "İnsanın vücut ölçülerini inceleyen bilim dalı hangisidir?",
+   "secenekler": [
+    "Psikoloji",
+    "Antropometri",
+    "Sosyoloji"
+   ],
+   "dogru": 1,
+   "ipucu": "Cetvelli kartı hatırla.",
+   "aciklama": "Antropometri insanın vücut ölçülerini inceleyen bilim dalıdır. (s. 43)",
+   "kavram": "Antropometri"
+  },
+  {
+   "soru": "Psikolojinin ergonomideki amacı nedir?",
+   "secenekler": [
+    "Kasları güçlendirmek",
+    "Çalışana hoş bir ortam oluşturmak",
+    "Vücudu ölçmek"
+   ],
+   "dogru": 1,
+   "ipucu": "Renk, şekil, düzen…",
+   "aciklama": "Psikoloji, psikolojik rahatlık sağlayıcı düzenlemelerle hoş bir ortam oluşturmayı amaçlar. (s. 43)",
+   "kavram": "Psikoloji"
+  },
+  {
+   "soru": "Hangisi ergonominin konularından biri değildir?",
+   "secenekler": [
+    "Ürünün reklamı",
+    "Gürültü",
+    "Titreşim"
+   ],
+   "dogru": 0,
+   "ipucu": "Ses, ışık, ısı, titreşim…",
+   "aciklama": "Gürültü ve titreşim ergonominin konularıdır; reklam değildir. (s. 43)",
+   "kavram": "Ergonominin Konuları"
+  },
+  {
+   "soru": "Ergonomik tasarım hangisine uygun olmalıdır?",
+   "secenekler": [
+    "Yalnız makinenin hızına",
+    "Yalnız ürünün rengine",
+    "İnsanın ölçülerine ve yeteneklerine"
+   ],
+   "dogru": 2,
+   "ipucu": "Ergonomi kimi düşünür?",
+   "aciklama": "Ergonomik tasarım insan ölçüleri, yetenekleri, kısıtlılıkları ve beklentileriyle uyumlu olmalıdır. (s. 44)",
+   "kavram": "Ergonomik Düzenleme"
+  },
+  {
+   "soru": "Ergonomi bazı toplumsal sorunları hangi dalın çalışmalarından yararlanarak çözer?",
+   "secenekler": [
+    "Fizyoloji",
+    "Antropometri",
+    "Sosyoloji"
+   ],
+   "dogru": 2,
+   "ipucu": "Toplum…",
+   "aciklama": "Ergonomi toplumsal sorunlarda sosyolojik çalışmalardan yararlanır. (s. 43)",
+   "kavram": "Sosyoloji"
+  }
+ ]
+}

@@ -1,0 +1,303 @@
+{
+ "id": "u3t1",
+ "tur": "tarama",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–9 · s. 31–57",
+ "giris": "Üçüncü ünite bitti! Dokuz konunun hepsine kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bir tasarım problemle başlar: problemi tanımlar, araştırır, fikir geliştiririz. Fikri teknik resimle çizer, ergonomi ve diğer kriterlerle kontrol ederiz. Sonra taslak, maket ya da prototip yaparız; bunu güvenle ve atıkları değerlendirerek yaparız. En sonunda tasarımı değerlendirir, eksiklerini düzeltir ve tanıtırız.",
+ "kapsar": [
+  "u3k1",
+  "u3k2",
+  "u3k3",
+  "u3k4",
+  "u3k5",
+  "u3k6",
+  "u3k7",
+  "u3k8",
+  "u3k9"
+ ],
+ "hatirla": [
+  {
+   "konu": "u3k1",
+   "maddeler": [
+    "Tasarım süreci: problemi tanımla, çözüm öner.",
+    "Beş basamak: problem, bilgi, yaratıcılık-buluş, çözüm, uygulama.",
+    "En önemli basamak yaratıcılık ve buluş; son aşama değerlendir ve sun."
+   ]
+  },
+  {
+   "konu": "u3k2",
+   "maddeler": [
+    "Teknik resim: üç boyutlu nesnenin iki boyutlu çizimi.",
+    "Perspektifte uzaklaşan küçük görünür; çizgiler kaçma noktasında buluşur.",
+    "Üç görünüş: ön, üst, yan."
+   ]
+  },
+  {
+   "konu": "u3k3",
+   "maddeler": [
+    "Problem rahatsız eder ve birden çok çözümü vardır; hipotez geçici çözümdür.",
+    "Beyin fırtınası çok fikir üretir, eleştiri yoktur.",
+    "Balık kılçığı nedenleri, karar diyagramı seçenekleri, kontrol diyagramı sınırları gösterir."
+   ]
+  },
+  {
+   "konu": "u3k4",
+   "maddeler": [
+    "Basamaklar: sorun, plan, araştırma, sunum, değerlendirme.",
+    "Sorun açık ve net olmalı; plan amaca giden yoldur.",
+    "Veriler güvenilir ve eksiksiz olmalı."
+   ]
+  },
+  {
+   "konu": "u3k5",
+   "maddeler": [
+    "Ergonomi: yaşamın insana uygun hâle getirilmesi.",
+    "Fizyoloji kaslar, psikoloji hoş ortam, sosyoloji toplum, antropometri vücut ölçüleri.",
+    "Konuları: gürültü, aydınlatma, ısı, titreşim, mola."
+   ]
+  },
+  {
+   "konu": "u3k6",
+   "maddeler": [
+    "Kriterler: ergonomik, estetik, özgün-yenilikçi, işlevsel, yalın.",
+    "Malzeme kolay bulunur, dayanıklı, ekonomik, geri dönüşüme uygun.",
+    "Sürdürülebilirlik: geleceği de düşün."
+   ]
+  },
+  {
+   "konu": "u3k7",
+   "maddeler": [
+    "Taslak ilk çizim; model basit örnek; maket ölçekli kopya.",
+    "Prototip üretimden önceki ilk örnek.",
+    "3D yazıcı katman katman basar."
+   ]
+  },
+  {
+   "konu": "u3k8",
+   "maddeler": [
+    "Tabelalara uy, koruyucunu her zaman kullan.",
+    "Kesici, delici, yanıcı araç öğretmen gözetiminde; kaza olursa hemen söyle.",
+    "Geri dönüşüm: atık ham madde olur; ikincil kullanım: başka işe kullan."
+   ]
+  },
+  {
+   "konu": "u3k9",
+   "maddeler": [
+    "Değerlendirme: sorunu çözdü mü? Eksikler düzeltilir.",
+    "Afiş: kısa mesaj, canlı renk.",
+    "En etkili tanıtım hem göze hem kulağa hitap eder."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 20,
+ "gruplar": [
+  {
+   "soru": "Fikir bulma yöntemi mi, tasarımı kontrol etme ölçütü mü?",
+   "kutular": [
+    {
+     "etiket": "Fikir bulma yöntemi",
+     "uyeler": [
+      "Beyin Fırtınası",
+      "Balık Kılçığı Diyagramı",
+      "Karar Diyagramı"
+     ]
+    },
+    {
+     "etiket": "Kontrol ölçütü (kriter)",
+     "uyeler": [
+      "Ergonomik",
+      "Estetik",
+      "İşlevsel",
+      "Yalın"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Çizim mi, üç boyutlu örnek mi?",
+   "kutular": [
+    {
+     "etiket": "Çizim",
+     "uyeler": [
+      "Taslak",
+      "Teknik Resim",
+      "Perspektif"
+     ]
+    },
+    {
+     "etiket": "Üç boyutlu örnek",
+     "uyeler": [
+      "Maket",
+      "Model",
+      "Prototip"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Tasarım sürecinde fikri kâğıda çizmek hangi aşamadır ve bu çizimin ilk hâline ne denir?",
+   "secenekler": [
+    "Değerlendirme – afiş",
+    "Görselleştirme – taslak",
+    "Uygulama – prototip"
+   ],
+   "dogru": 1,
+   "ipucu": "Fikri gösterme aşaması ve ilk çizim…",
+   "aciklama": "Fikri çizerek göstermek görselleştirmedir; tasarımın ilk çizimi taslaktır. (s. 34, 42)",
+   "yardim": {
+    "adimlar": [
+     "Fikri göstermenin adı neydi?",
+     "Tasarımın ilk çizimine ne deniyordu?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u3k1",
+     "kavram": "Görselleştirme"
+    },
+    {
+     "konu": "u3k7",
+     "kavram": "Taslak"
+    }
+   ]
+  },
+  {
+   "soru": "Bir ekip 'Okul kantininde kuyruk uzun' problemi için önce çok sayıda fikir topluyor, sonra bu fikirleri hipotez olarak yazıyor. Sırasıyla hangi kavramlar kullanılmıştır?",
+   "secenekler": [
+    "Beyin fırtınası – geçici çözüm",
+    "Kontrol diyagramı – prototip",
+    "Ergonomi – sunum"
+   ],
+   "dogru": 0,
+   "ipucu": "Çok fikir üreten yöntem ve hipotezin anlamı…",
+   "aciklama": "Çok fikir beyin fırtınasıyla toplanır; hipotez geçici çözümdür. (s. 40; program)",
+   "kaynak": [
+    {
+     "konu": "u3k3",
+     "kavram": "Beyin Fırtınası"
+    },
+    {
+     "konu": "u3k3",
+     "kavram": "Hipotez"
+    }
+   ]
+  },
+  {
+   "soru": "Sıra tasarlayan biri önce öğrencilerin boy ölçülerini inceliyor. Bu bilgi tasarımın hangi kriterine yardım eder?",
+   "secenekler": [
+    "Estetik olmasına",
+    "Özgün olmasına",
+    "Ergonomik olmasına"
+   ],
+   "dogru": 2,
+   "ipucu": "Vücut ölçüleri hangi dalın konusu, o dal neye hizmet eder?",
+   "aciklama": "Antropometri vücut ölçülerini inceler; bu, tasarımın ergonomik olmasını sağlar. (s. 43, 45)",
+   "yardim": {
+    "adimlar": [
+     "Vücut ölçülerini inceleyen dal ergonominin bir parçasıydı.",
+     "Ergonomi hangi kriterin adıydı?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u3k5",
+     "kavram": "Antropometri"
+    },
+    {
+     "konu": "u3k6",
+     "kavram": "Ergonomik"
+    }
+   ]
+  },
+  {
+   "soru": "Bir maket için atık kartonlar kullanılıyor ve maket bıçağı öğretmen yanında kullanılıyor. Hangi iki kurala uyulmuştur?",
+   "secenekler": [
+    "Perspektif ve ufuk çizgisi",
+    "Afiş ve broşür",
+    "İkincil kullanım ve öğretmen gözetimi"
+   ],
+   "dogru": 2,
+   "ipucu": "Atığı değerlendirme + kesici araç kuralı…",
+   "aciklama": "Atık malzemeyi değerlendirmek ve kesici aracı öğretmen gözetiminde kullanmak gerekir. (s. 50, 51)",
+   "kaynak": [
+    {
+     "konu": "u3k8",
+     "kavram": "İkincil Kullanım"
+    },
+    {
+     "konu": "u3k8",
+     "kavram": "Öğretmen Gözetimi"
+    }
+   ]
+  },
+  {
+   "soru": "Prototip test edildi ve bir parçası kırıldı. Tasarım sürecine göre şimdi ne yapılır?",
+   "secenekler": [
+    "Hemen afiş hazırlanır",
+    "Eksik düzeltilip tasarım geliştirilir",
+    "Tasarım bırakılır"
+   ],
+   "dogru": 1,
+   "ipucu": "Süreç döngüseldir.",
+   "aciklama": "Değerlendirmede bulunan eksikler düzeltilerek tasarım yeniden geliştirilir. (s. 47, 57)",
+   "kaynak": [
+    {
+     "konu": "u3k7",
+     "kavram": "Prototip"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Yeniden Tasarım"
+    }
+   ]
+  },
+  {
+   "soru": "Bilimsel araştırmada güvenilir veri toplamak, tasarım sürecinin hangi basamağına benzer?",
+   "secenekler": [
+    "Bilgi toplama",
+    "Uygulama",
+    "Sunma"
+   ],
+   "dogru": 0,
+   "ipucu": "Veri = bilgi.",
+   "aciklama": "Araştırma basamağında veri toplanır; tasarımda da bilgi toplama basamağı vardır. (s. 33, 41)",
+   "kaynak": [
+    {
+     "konu": "u3k4",
+     "kavram": "Güvenilir Veri"
+    },
+    {
+     "konu": "u3k1",
+     "kavram": "Beş Temel Basamak"
+    }
+   ]
+  },
+  {
+   "soru": "Bir sergide ürün üç görünüşlü teknik resimle anlatılıyor ve tasarımcı ses sisteminden açıklama yapıyor. Sergi hangi tanıtım türüne girer?",
+   "secenekler": [
+    "Hem göze hem kulağa hitap eden",
+    "Yalnız kulağa hitap eden",
+    "Yalnız göze hitap eden"
+   ],
+   "dogru": 0,
+   "ipucu": "Resim görülür, açıklama duyulur.",
+   "aciklama": "Sergi hem göze hem kulağa hitap eder; çizimler görülür, açıklama duyulur. (s. 37, 56)",
+   "kaynak": [
+    {
+     "konu": "u3k2",
+     "kavram": "Üç Görünüş"
+    },
+    {
+     "konu": "u3k9",
+     "kavram": "Göze ve Kulağa Hitap Eden Araçlar"
+    }
+   ]
+  }
+ ]
+}

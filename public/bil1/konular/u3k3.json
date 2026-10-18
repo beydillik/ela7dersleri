@@ -1,0 +1,317 @@
+{
+ "id": "u3k3",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Problem Tanımlama ve Fikir Geliştirme",
+ "sayfalar": "s. 34, 39–40 · program",
+ "kaynakNotu": "Beyin fırtınası, balık kılçığı diyagramı, karar diyagramı ve kontrol diyagramı kitapta yok; MEB programında fikir geliştirme yöntemi olarak adı geçer: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1439 · Beyin fırtınası ve balık kılçığı tanımı: MEB Onur Ekemen Ortaokulu 'Problem Çözme Teknikleri' sunumu: https://onurekemenortaokulu.meb.k12.tr/meb_iys_dosyalar/51/03/761195/dosyalar/2017_04/18212323_problemcozME_TEKNYKLERY_Uyumluluk_Modu.pdf · Karar diyagramı, karar ağacı tanımıyla anlatıldı (Lezki ve Er, İstatistikçiler Dergisi, 2010): https://dergipark.org.tr/en/download/article-file/105665 — programın 'karar diyagramı' ile karar ağacını kastettiği varsayımdır. · Kontrol diyagramı, kontrol grafiği tanımıyla anlatıldı (Yıldırım ve Karaca, Öneri Dergisi, 2013): https://dergipark.org.tr/tr/download/article-file/165797",
+ "giris": "Her tasarım bir problemle başlar. Bu konuda problemi tanımlamayı, geçici çözüm olan hipotezi ve fikir bulmaya yarayan dört yöntemi öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Problem",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='58' r='34' fill='#f2c14e'/><circle cx='48' cy='50' r='4' fill='#1b2340'/><circle cx='72' cy='50' r='4' fill='#1b2340'/><path d='M44 76q16-12 32 0' stroke='#1b2340' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M40 40l12 4M80 40l-12 4' stroke='#1b2340' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Problem, kişiyi rahatsız eden ve çözüm bekleyen her türlü güçlüktür.",
+   "ek": "Bir durumun problem sayılması için iki koşul vardır: kişiyi rahatsız etmeli ve birden fazla çözüm yolu olmalı.",
+   "akilda": "Rahatsız eder, çözüm bekler",
+   "soru": {
+    "soru": "Bir durumun problem sayılması için hangisi gerekir?",
+    "secenekler": [
+     "Kişide rahatsızlık uyandırması",
+     "Herkesin onu sevmesi",
+     "Hiç çözümü olmaması"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta problemin ilk özelliği…",
+    "aciklama": "Problem kişide rahatsızlık uyandırmalı ve birden fazla çözüm yolu olmalıdır. (s. 34)"
+   }
+  },
+  {
+   "ad": "Tasarım Problemi",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='16' width='84' height='88' rx='6' fill='#e9ecef'/><circle cx='32' cy='36' r='5' fill='#5c677d'/><path d='M44 36h46' stroke='#5c677d' stroke-width='5' stroke-linecap='round'/><circle cx='32' cy='60' r='5' fill='#5c677d'/><path d='M44 60h46' stroke='#5c677d' stroke-width='5' stroke-linecap='round'/><circle cx='32' cy='84' r='5' fill='#5c677d'/><path d='M44 84h46' stroke='#5c677d' stroke-width='5' stroke-linecap='round'/><ellipse cx='62' cy='60' rx='40' ry='12' stroke='#9b3fa6' stroke-width='4' fill='none'/></svg>",
+   "aciklama": "Listelediğimiz problemlerden çözmek için seçtiğimiz probleme tasarım problemi denir.",
+   "ek": "Sonra bu probleme bugünkü çözümler araştırılır; eksik ve rahatsız eden yanları bulunur.",
+   "akilda": "Seçilen problem",
+   "soru": {
+    "soru": "Elif üç problem yazdı ve en çok ilgisini çekeni seçti. Seçtiği probleme ne denir?",
+    "secenekler": [
+     "Tasarım problemi",
+     "Hipotez",
+     "Prototip"
+    ],
+    "dogru": 0,
+    "ipucu": "Seçilen problemin özel bir adı vardı.",
+    "aciklama": "Listelenen problemlerden seçilene tasarım problemi denir. (s. 34, 39)"
+   }
+  },
+  {
+   "ad": "Hipotez",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='52' r='24' fill='none' stroke='#f2c14e' stroke-width='4' stroke-dasharray='8 6'/><text x='60' y='62' font-size='28' font-weight='700' fill='#f2c14e' text-anchor='middle' font-family='sans-serif'>?</text><rect x='52' y='78' width='16' height='10' rx='2' fill='#5c677d'/><text x='60' y='106' font-size='11' font-weight='600' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>geçici çözüm</text></svg>",
+   "aciklama": "Hipotez, araştırmaya dayanarak kendi görüşümüzle ortaya koyduğumuz geçici çözümdür.",
+   "ek": "İlk fikirler için insanlardan, İnternet'ten, ansiklopedilerden ve deneyimlerden yararlanılır.",
+   "akilda": "Geçici çözüm",
+   "soru": {
+    "soru": "Hipotez nedir?",
+    "secenekler": [
+     "Kesin sonuç",
+     "Ürün etiketi",
+     "Geçici çözüm önerisi"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta 'geçici' kelimesi vardı.",
+    "aciklama": "Hipotez, araştırmacının kendi görüşlerini ifade ettiği geçici çözümdür. (s. 40)"
+   }
+  },
+  {
+   "ad": "Beyin Fırtınası",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M28 70a18 18 0 0 1 8-34a22 22 0 0 1 42-4a18 18 0 0 1 14 38z' fill='#6fb3ff'/><circle cx='42' cy='50' r='6' fill='#f2c14e'/><rect x='36' y='54' width='12' height='9' rx='2' fill='#5c677d'/><circle cx='60' cy='42' r='6' fill='#f2c14e'/><rect x='54' y='46' width='12' height='9' rx='2' fill='#5c677d'/><circle cx='78' cy='52' r='6' fill='#f2c14e'/><rect x='72' y='56' width='12' height='9' rx='2' fill='#5c677d'/><path d='M44 80l-6 14M60 80v16M76 80l6 14' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "Beyin fırtınası, bir grubun eleştirilmekten korkmadan çok sayıda fikir söylediği yöntemdir.",
+   "ek": "Programda geçen fikir geliştirme yöntemi (kitap dışı, MEB programı). Fikirlere gülünmez; ilginç görünen fikir de yazılır. Önemli olan fikirlerin çok olmasıdır.",
+   "akilda": "Çok fikir, eleştiri yok",
+   "soru": {
+    "soru": "Beyin fırtınasında hangisi yapılmaz?",
+    "secenekler": [
+     "Her fikir yazılır",
+     "Fikirler eleştirilir",
+     "Çok fikir üretilir"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın 'akılda kalsın' kısmını hatırla.",
+    "aciklama": "Beyin fırtınasında fikirlere yorum yapılmaz ve eleştirilmez. (program)"
+   }
+  },
+  {
+   "ad": "Balık Kılçığı Diyagramı",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 60h76' stroke='#e9ecef' stroke-width='4'/><path d='M90 44l22 16-22 16z' fill='#f2c14e'/><path d='M40 60l-12-22M40 60l-12 22' stroke='#e9ecef' stroke-width='3' stroke-linecap='round'/><path d='M62 60l-12-22M62 60l-12 22' stroke='#e9ecef' stroke-width='3' stroke-linecap='round'/><path d='M84 60l-12-22M84 60l-12 22' stroke='#e9ecef' stroke-width='3' stroke-linecap='round'/><path d='M14 60l-6-10M14 60l-6 10' stroke='#e9ecef' stroke-width='3'/><text x='96' y='64' font-size='11' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>?</text><text x='50' y='104' font-size='11' font-weight='600' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>nedenler</text></svg>",
+   "aciklama": "Bir problemin nedenlerini bulmak için balık iskeletine benzeyen bir şema çizilir.",
+   "ek": "Programda geçen fikir geliştirme yöntemi (kitap dışı). Kılçıklara nedenler yazılır; her neden için 'Bu niçin oldu?' diye sorulur.",
+   "akilda": "Baş: problem, kılçık: neden",
+   "soru": {
+    "soru": "Balık kılçığı diyagramında balığın başına ne yazılır?",
+    "secenekler": [
+     "Ürünün fiyatı",
+     "Tasarımcının adı",
+     "Problem"
+    ],
+    "dogru": 2,
+    "ipucu": "Kılçıklara nedenler yazılıyordu; ya başa?",
+    "aciklama": "Balığın başına problem, kılçıklara nedenler yazılır. (program)"
+   }
+  },
+  {
+   "ad": "Karar Diyagramı",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='44' y='12' width='32' height='18' rx='4' fill='#2a9d8f'/><path d='M60 30v10M30 40h60M30 40v10M90 40v10' stroke='#e9ecef' stroke-width='3' fill='none'/><rect x='14' y='50' width='32' height='18' rx='4' fill='#1d6fa3'/><rect x='74' y='50' width='32' height='18' rx='4' fill='#1d6fa3'/><path d='M30 68v10M18 78h24M18 78v8M42 78v8' stroke='#e9ecef' stroke-width='3' fill='none'/><circle cx='18' cy='94' r='7' fill='#2f9e44'/><circle cx='42' cy='94' r='7' fill='#d9480f'/><circle cx='90' cy='86' r='7' fill='#f2c14e'/><path d='M90 68v11' stroke='#e9ecef' stroke-width='3'/></svg>",
+   "aciklama": "Karar diyagramı, seçenekleri ve her seçeneğin sonucunu dallar hâlinde gösteren şemadır.",
+   "ek": "Programda geçen yöntem (kitap dışı). Ağaç dalları gibi ayrılır; böylece hangi seçeneği seçeceğimize daha kolay karar veririz. Karar ağacı diye de bilinir.",
+   "akilda": "Seçenekler dallanır",
+   "soru": {
+    "soru": "Tasarımcı 'Kutuyu kartondan mı, plastikten mi yapayım?' sorusunun sonuçlarını dallar hâlinde çizdi. Hangi şemayı kullandı?",
+    "secenekler": [
+     "Karar diyagramı",
+     "Balık kılçığı diyagramı",
+     "Kontrol diyagramı"
+    ],
+    "dogru": 0,
+    "ipucu": "Dallar hâlinde seçenekler…",
+    "aciklama": "Seçenekleri ve sonuçlarını dallarla gösteren şema karar diyagramıdır. (program)"
+   }
+  },
+  {
+   "ad": "Kontrol Diyagramı",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 22v80h94' stroke='#e9ecef' stroke-width='3' fill='none'/><path d='M16 38h90M16 84h90' stroke='#ff8fab' stroke-width='2' stroke-dasharray='5 4'/><polyline points='22,62 36,54 50,68 64,58 78,28 92,64' stroke='#6fb3ff' stroke-width='3' fill='none'/><circle cx='22' cy='62' r='4' fill='#6fb3ff'/><circle cx='36' cy='54' r='4' fill='#6fb3ff'/><circle cx='50' cy='68' r='4' fill='#6fb3ff'/><circle cx='64' cy='58' r='4' fill='#6fb3ff'/><circle cx='92' cy='64' r='4' fill='#6fb3ff'/><circle cx='78' cy='28' r='6' fill='#ff4d6d'/></svg>",
+   "aciklama": "Kontrol diyagramı, bir işteki ölçümlerin olması gereken sınırlar içinde kalıp kalmadığını gösteren grafiktir.",
+   "ek": "Programda geçen yöntem (kitap dışı). Grafikte bir alt, bir üst sınır çizgisi vardır. Sınırın dışına çıkan ölçüm bir sorun olduğunu haber verir.",
+   "akilda": "Sınır dışı = sorun var",
+   "soru": {
+    "soru": "Kontrol diyagramında bir ölçüm üst sınırın dışına çıktı. Bu ne anlama gelir?",
+    "secenekler": [
+     "Her şey yolunda",
+     "Bir sorun olabilir",
+     "Grafik bitti"
+    ],
+    "dogru": 1,
+    "ipucu": "Kırmızı noktayı düşün.",
+    "aciklama": "Sınırların dışına çıkan ölçüm, işte bir sorun olduğunu gösterir. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu yöntem ne işe yarar?",
+   "kutular": [
+    {
+     "etiket": "Çok fikir üretir",
+     "uyeler": [
+      "Beyin Fırtınası"
+     ]
+    },
+    {
+     "etiket": "Nedenleri bulur",
+     "uyeler": [
+      "Balık Kılçığı Diyagramı"
+     ]
+    },
+    {
+     "etiket": "Seçim yaptırır",
+     "uyeler": [
+      "Karar Diyagramı"
+     ]
+    },
+    {
+     "etiket": "Sınırları izler",
+     "uyeler": [
+      "Kontrol Diyagramı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaba göre bir durumun problem olması için birden fazla çözüm yolu olmalıdır. (s. 34)"
+ ],
+ "akildaKalsin": [
+  "Problem: rahatsız eden, çözüm bekleyen güçlük.",
+  "Seçtiğimiz problem tasarım problemidir.",
+  "Hipotez: geçici çözüm.",
+  "Beyin fırtınası: çok fikir, eleştiri yok.",
+  "Balık kılçığı nedenleri, karar diyagramı seçenekleri, kontrol diyagramı sınırları gösterir."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Hipoteze neden 'geçici' çözüm denir?",
+   "cevap": "Çünkü araştırma sonuçları analiz edilerek belirlenir; henüz denenmiş kesin bir çözüm değildir. (s. 40)"
+  },
+  {
+   "soru": "Fikir bulmak için hangi kaynaklara bakılır?",
+   "cevap": "İnsanlara, İnternet'e, ansiklopedilere ve kendi deneyimlerimize. (s. 40)"
+  },
+  {
+   "soru": "Bugünkü çözümleri neden araştırırız?",
+   "cevap": "Eksik ve bizi rahatsız eden yanlarını bulmak için. (s. 39)"
+  },
+  {
+   "soru": "Beyin fırtınasında garip görünen bir fikir söyleyebilir miyim?",
+   "cevap": "Evet. Her fikir kabul edilir ve yazılır; sonra benzer fikirler gruplanıp tartışılır. (program)"
+  },
+  {
+   "soru": "Balık kılçığı diyagramı neden bu adı almış?",
+   "cevap": "Çizimi balık iskeletine benzer: ortada omurga, başta problem, yanlarda kılçıklar. (program)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okul bahçesinde çöpler yere atılıyor. Bu problemin nedenlerini balık kılçığı gibi düşünerek yaz.",
+   "ornekCevap": "Çöp kutusu az. Kutular uzakta. Kutuların ağzı dolu. Bazı öğrenciler dikkat etmiyor.",
+   "anahtarlar": [
+    "neden",
+    "kutu",
+    "az",
+    "uzak",
+    "dikkat"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Problem için hangisi doğrudur?",
+   "secenekler": [
+    "Hiç çözümü olmayan durumdur",
+    "Çözüm bekleyen bir güçlüktür",
+    "Herkesin hoşuna giden durumdur"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartta 'çözüm bekleyen' yazıyordu.",
+   "aciklama": "Problem; rahatsız eden, çözüm bekleyen her türlü güçlüktür. (s. 39)",
+   "kavram": "Problem"
+  },
+  {
+   "soru": "Bugünkü çözümleri incelerken neyi belirleriz?",
+   "secenekler": [
+    "Eksik ve rahatsız eden yanlarını",
+    "Yalnız rengini",
+    "Kimin icat ettiğini"
+   ],
+   "dogru": 0,
+   "ipucu": "Bir çözümü neden geliştirmek isteriz?",
+   "aciklama": "Mevcut çözümün eksik ve rahatsız eden yanları belirlenir. (s. 39)",
+   "kavram": "Tasarım Problemi"
+  },
+  {
+   "soru": "İlk fikirleri bulurken hangi kaynaktan yararlanılabilir?",
+   "secenekler": [
+    "Hiçbir kaynak",
+    "Yalnız rüyalar",
+    "Ansiklopedi ve deneyimler"
+   ],
+   "dogru": 2,
+   "ipucu": "Hipotez kartının ek bilgisine bak.",
+   "aciklama": "İnsani kaynaklar, İnternet, ansiklopediler ve deneyimler incelenir. (s. 40)",
+   "kavram": "Hipotez"
+  },
+  {
+   "soru": "Geçici çözüm önerisine ne ad verilir?",
+   "secenekler": [
+    "Prototip",
+    "Afiş",
+    "Hipotez"
+   ],
+   "dogru": 2,
+   "ipucu": "Yaratıcılık basamağında geliştirilir.",
+   "aciklama": "Araştırmacının görüşünü ifade ettiği geçici çözüm hipotezdir. (s. 40)",
+   "kavram": "Hipotez"
+  },
+  {
+   "soru": "Beyin fırtınasında önemli olan nedir?",
+   "secenekler": [
+    "Fikirlerin az ve kusursuz olması",
+    "Fikirlerin çok olması",
+    "Yalnız bir kişinin konuşması"
+   ],
+   "dogru": 1,
+   "ipucu": "Çok fikir…",
+   "aciklama": "Beyin fırtınasında fikrin niteliğinden çok sayısı önemlidir. (program)",
+   "kavram": "Beyin Fırtınası"
+  },
+  {
+   "soru": "Balık kılçığı diyagramı ne işe yarar?",
+   "secenekler": [
+    "Problemin nedenlerini bulmaya",
+    "Ürünü tanıtmaya",
+    "Ürünü boyamaya"
+   ],
+   "dogru": 0,
+   "ipucu": "Kılçıklara ne yazılıyordu?",
+   "aciklama": "Balık kılçığı diyagramı problemin olası nedenlerini bulmaya yarar. (program)",
+   "kavram": "Balık Kılçığı Diyagramı"
+  },
+  {
+   "soru": "Seçenekleri ve sonuçlarını dallar hâlinde gösteren şema hangisidir?",
+   "secenekler": [
+    "Karar diyagramı",
+    "Kontrol diyagramı",
+    "Balık kılçığı diyagramı"
+   ],
+   "dogru": 0,
+   "ipucu": "Ağaç dalları gibi…",
+   "aciklama": "Karar diyagramı seçenekleri ve sonuçlarını dallarla gösterir. (program)",
+   "kavram": "Karar Diyagramı"
+  },
+  {
+   "soru": "Bir makinenin yaptığı vidaların boyu her gün ölçülüp alt ve üst sınırı olan bir grafiğe işaretleniyor. Bu hangisidir?",
+   "secenekler": [
+    "Karar diyagramı",
+    "Beyin fırtınası",
+    "Kontrol diyagramı"
+   ],
+   "dogru": 2,
+   "ipucu": "Sınır çizgileri olan grafik…",
+   "aciklama": "Ölçümlerin sınırlar içinde kalıp kalmadığını gösteren grafik kontrol diyagramıdır. (program)",
+   "kavram": "Kontrol Diyagramı"
+  }
+ ]
+}

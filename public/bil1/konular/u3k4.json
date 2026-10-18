@@ -1,0 +1,281 @@
+{
+ "id": "u3k4",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Bilimsel Araştırma Basamakları",
+ "sayfalar": "s. 41",
+ "giris": "Bilim insanları bir soruyu araştırırken belli basamakları izler. Tasarımcılar da böyle yapar. Bu konuda bilimsel araştırma basamaklarını öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Sorun",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#d9480f'/><text x='60' y='74' font-size='48' font-weight='700' fill='#ffffff' text-anchor='middle' font-family='sans-serif'>?</text></svg>",
+   "aciklama": "Araştırmanın ilk basamağı, araştırılacak sorunu belirlemektir.",
+   "ek": "Sorun çözülebilir, önemli, özgün, güncel ve araştırılabilir olmalıdır.",
+   "akilda": "Açık ve net sorun",
+   "soru": {
+    "soru": "Araştırılacak sorun nasıl yazılmalıdır?",
+    "secenekler": [
+     "Karışık ve uzun",
+     "Kesin ve açık",
+     "Gizli"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta sorunun nasıl ifade edileceği yazıyordu.",
+    "aciklama": "Araştırma problemi kesin ve açık bir şekilde ifade edilmelidir. (s. 41)"
+   }
+  },
+  {
+   "ad": "Plan",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#1d6fa3'/><circle cx='40' cy='40' r='7' fill='#f2c14e'/><circle cx='80' cy='84' r='7' fill='#2f9e44'/><path d='M40 47q0 20 20 20t20 10' stroke='#e9ecef' stroke-width='4' fill='none' stroke-dasharray='6 5'/></svg>",
+   "aciklama": "Araştırma planı, amaca ulaşmak için izlenecek yolu gösteren bir kılavuzdur.",
+   "ek": "Plan mantıklı, anlaşılır ve yapılabilir olmalıdır.",
+   "akilda": "İzlenecek yol",
+   "soru": {
+    "soru": "Araştırma planında mutlaka ne belirtilmelidir?",
+    "secenekler": [
+     "Ulaşılmak istenen amaç",
+     "Sunumun rengi",
+     "Öğretmenin adı"
+    ],
+    "dogru": 0,
+    "ipucu": "Planın sonunda nereye varmak istiyoruz?",
+    "aciklama": "Araştırma sonucunda erişilmek istenen sonuç (amaç) belirtilmelidir. (s. 41)"
+   }
+  },
+  {
+   "ad": "Araştırma",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#2a9d8f'/><rect x='34' y='30' width='20' height='28' fill='#e9ecef'/><rect x='58' y='30' width='20' height='28' fill='#ffd8a8'/><circle cx='60' cy='76' r='12' stroke='#e9ecef' stroke-width='4' fill='none'/><path d='M69 85l10 10' stroke='#e9ecef' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Araştırma basamağında konuyla ilgili veriler, yani bilgiler toplanır.",
+   "ek": "Kitaplardan, dergilerden, İnternet'ten, insanlardan ve kurumlardan bilgi toplanır.",
+   "akilda": "Veri topla",
+   "soru": {
+    "soru": "Bilgi toplanabilecek kaynaklar hangileridir?",
+    "secenekler": [
+     "Yalnız hayal gücü",
+     "Yalnız reklamlar",
+     "Kitap, dergi, İnternet ve insanlar"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisinde kaynaklar sayılıyordu.",
+    "aciklama": "Kaynak kitaplardan, dergilerden, İnternet'ten, insanlardan ve kurumlardan bilgi toplanır. (s. 41)"
+   }
+  },
+  {
+   "ad": "Güvenilir Veri",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#2f9e44'/><path d='M60 28l26 10v18c0 18-12 28-26 34-14-6-26-16-26-34V38z' fill='#e9ecef'/><path d='M48 60l9 9 16-18' stroke='#2f9e44' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Doğru toplanmış veriler doğru sonuca, yanlış ya da eksik veriler yanlış sonuca götürür.",
+   "ek": "Veriler güvenilir, doğru, kullanılabilir, yararlı ve eksiksiz olmalıdır. Kaynakların güvenilir olmasına dikkat edilir.",
+   "akilda": "Doğru veri, doğru sonuç",
+   "soru": {
+    "soru": "Eksik toplanmış verilere dayanan kararlar nereye götürür?",
+    "secenekler": [
+     "Kesin başarıya",
+     "Ödüle",
+     "Yanlış yola"
+    ],
+    "dogru": 2,
+    "ipucu": "Eksik veri doğru sonuca götürür mü?",
+    "aciklama": "Eksik veya yanlış toplanmış verilere dayanan kararlar yanlış yola götürür. (s. 41)"
+   }
+  },
+  {
+   "ad": "Sunum",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#9b3fa6'/><rect x='32' y='30' width='56' height='36' rx='4' fill='#e9ecef'/><path d='M40 58l12-12 10 8 16-16' stroke='#9b3fa6' stroke-width='4' fill='none'/><path d='M60 66v14M48 92l12-12 12 12' stroke='#e9ecef' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Sunum basamağında araştırmanın sonucu, özeti ve önerileri anlatılır.",
+   "ek": "Araştırmadan bir sonuç çıkarılır ve bu sonuca dayanan öneriler yapılır.",
+   "akilda": "Sonucu ve öneriyi anlat",
+   "soru": {
+    "soru": "Araştırmanın sonucu ve önerileri hangi basamakta verilir?",
+    "secenekler": [
+     "Sorun",
+     "Sunum",
+     "Plan"
+    ],
+    "dogru": 1,
+    "ipucu": "Sonuçları başkalarına anlatma…",
+    "aciklama": "Sonuçların, özet, yargı ve önerilerin verildiği bölüm sunumdur. (s. 41)"
+   }
+  },
+  {
+   "ad": "Değerlendirme",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#c99a06'/><path d='M34 36h52M60 36v52M44 88h32' stroke='#1b2340' stroke-width='4' stroke-linecap='round'/><path d='M34 36l-8 20h16zM86 36l-8 20h16z' fill='#1b2340'/></svg>",
+   "aciklama": "Değerlendirmede probleme en uygun çözüm yolu seçilir; veriler sınıflandırılır ve özetlenir.",
+   "akilda": "En uygun çözümü seç",
+   "soru": {
+    "soru": "Toplanan verilerin amaca uygun sınıflandırıldığı basamak hangisidir?",
+    "secenekler": [
+     "Değerlendirme",
+     "Sorun",
+     "Araştırma"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta 'sınıflandırılır' yazan basamak…",
+    "aciklama": "Değerlendirmede toplanan veriler amaca uygun biçimde sınıflandırılır. (s. 41)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu basamak araştırmanın neresinde?",
+   "kutular": [
+    {
+     "etiket": "Başlarken",
+     "uyeler": [
+      "Sorun",
+      "Plan"
+     ]
+    },
+    {
+     "etiket": "Bilgi toplarken",
+     "uyeler": [
+      "Araştırma",
+      "Güvenilir Veri"
+     ]
+    },
+    {
+     "etiket": "Sonuçta",
+     "uyeler": [
+      "Sunum",
+      "Değerlendirme"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaba göre sorun, ilgi duyduğumuz bir alandan seçilmeli ve ondan yararlanacak kişi sayısı çok olmalıdır. (s. 41)"
+ ],
+ "akildaKalsin": [
+  "İlk basamak: sorunu açık ve net belirle.",
+  "Plan: amaca giden yol.",
+  "Araştırma: kitap, dergi, İnternet, insanlar ve kurumlardan bilgi topla.",
+  "Veriler güvenilir ve eksiksiz olmalı.",
+  "Sunumda sonuç ve öneriler; değerlendirmede en uygun çözüm."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Her rahatsız eden durum problem midir?",
+   "cevap": "Bizi rahatsız eden, kararsız bırakan ve birden çok çözüm yolu olan her durum bir problemdir. (s. 41)"
+  },
+  {
+   "soru": "Plan ne zaman kesinleşir?",
+   "cevap": "Plan, araştırma metni yazılırken kesin hâlini alır. (s. 41)"
+  },
+  {
+   "soru": "İnternet'teki her bilgiye güvenebilir miyim?",
+   "cevap": "Hayır. Kitap kaynakların güvenilir olmasına özen gösterilmesini ister. (s. 41)"
+  },
+  {
+   "soru": "Sunum sadece sonucu söylemek mi?",
+   "cevap": "Hayır. Özet, yargı ve öneriler de verilir. (s. 41)"
+  },
+  {
+   "soru": "Sorunun 'güncel' olması ne demek?",
+   "cevap": "Bugün de önemli olan bir konu olması demektir; kitap sorunun güncel olmasını ister. (s. 41)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "'Öğrenciler neden kahvaltı yapmıyor?' sorusunu araştıracaksın. Hangi kaynaklardan bilgi toplarsın? Neden?",
+   "ornekCevap": "Arkadaşlarıma ve öğretmenlerime sorardım. Kitaplardan ve güvenilir İnternet sitelerinden bilgi bulurdum. Çünkü veriler doğru ve güvenilir olmalı.",
+   "anahtarlar": [
+    "kaynak",
+    "güvenilir",
+    "sor",
+    "kitap",
+    "veri"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bilimsel araştırma hangisiyle başlar?",
+   "secenekler": [
+    "Sorunun belirlenmesi",
+    "Sonuçların sunulması",
+    "Değerlendirme"
+   ],
+   "dogru": 0,
+   "ipucu": "İlk basamak hangisiydi?",
+   "aciklama": "Araştırma, araştırılacak sorunun saptanmasıyla başlar. (s. 41)",
+   "kavram": "Sorun"
+  },
+  {
+   "soru": "Hangisi seçilecek sorunun özelliklerinden biri değildir?",
+   "secenekler": [
+    "Önemli olması",
+    "Güncel olması",
+    "Çözülemez olması"
+   ],
+   "dogru": 2,
+   "ipucu": "Sorun çözülebilir mi olmalı?",
+   "aciklama": "Sorun çözülebilir, önemli, özgün, güncel ve araştırılabilir olmalıdır. (s. 41)",
+   "kavram": "Sorun"
+  },
+  {
+   "soru": "Araştırma planı için hangisi doğrudur?",
+   "secenekler": [
+    "Gizli tutulmalı",
+    "Mantıklı ve yapılabilir olmalı",
+    "Amaç yazılmamalı"
+   ],
+   "dogru": 1,
+   "ipucu": "Planın özellikleri kartta yazıyordu.",
+   "aciklama": "Planlama mantıksal, anlaşılır ve gerçekleştirilebilir olmalıdır. (s. 41)",
+   "kavram": "Plan"
+  },
+  {
+   "soru": "Verilerle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Az olsa da olur",
+    "Kaynağı önemsizdir",
+    "Eksiksiz ve güvenilir olmalı"
+   ],
+   "dogru": 2,
+   "ipucu": "Doğru veri, doğru sonuç.",
+   "aciklama": "Veriler güvenilir, doğru, yararlı ve eksiksiz olmalıdır. (s. 41)",
+   "kavram": "Güvenilir Veri"
+  },
+  {
+   "soru": "Bir öğrenci araştırmasını bitirip sınıfa sonuçları ve önerilerini anlatıyor. Hangi basamaktadır?",
+   "secenekler": [
+    "Sunum",
+    "Plan",
+    "Sorun"
+   ],
+   "dogru": 0,
+   "ipucu": "Sonuç ve öneri anlatılan basamak…",
+   "aciklama": "Sonuçların ve önerilerin verildiği basamak sunumdur. (s. 41)",
+   "kavram": "Sunum"
+  },
+  {
+   "soru": "Probleme en uygun çözüm yolu hangi basamakta seçilir?",
+   "secenekler": [
+    "Sorun",
+    "Değerlendirme",
+    "Plan"
+   ],
+   "dogru": 1,
+   "ipucu": "En uygun çözümü seç…",
+   "aciklama": "Değerlendirme aşamasında probleme en uygun çözüm yolu seçilir. (s. 41)",
+   "kavram": "Değerlendirme"
+  },
+  {
+   "soru": "Kurumlardan bilgi almak hangi basamakta yapılır?",
+   "secenekler": [
+    "Sunum",
+    "Araştırma",
+    "Sorun"
+   ],
+   "dogru": 1,
+   "ipucu": "Bilgi toplanan basamak…",
+   "aciklama": "Araştırmanın uygulanmasında kurumlardan da bilgi toplanır. (s. 41)",
+   "kavram": "Araştırma"
+  }
+ ]
+}

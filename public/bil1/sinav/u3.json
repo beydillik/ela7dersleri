@@ -1,0 +1,963 @@
+{
+ "unite": 3,
+ "ders": "bil1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "b3-01",
+   "konu": "u3k1",
+   "kavram": "Beş Temel Basamak",
+   "tur": "bosluk",
+   "havuz": [
+    "sunum",
+    "afiş"
+   ],
+   "cumleler": [
+    {
+     "c": "Tasarımın ilk basamağı problemi ___ basamağıdır.",
+     "cevap": "tanımlama"
+    },
+    {
+     "c": "İkinci basamakta önceki araştırmalardan bilgi ___.",
+     "cevap": "toplanır"
+    },
+    {
+     "c": "Son basamak, tasarımın hazır hâle geldiği ___ basamağıdır.",
+     "cevap": "uygulama"
+    }
+   ],
+   "aciklama": "Basamaklar: problemi tanımlama, bilgi toplama, yaratıcılık-buluş, çözüm bulma, uygulama (s. 33)."
+  },
+  {
+   "id": "b3-02",
+   "konu": "u3k1",
+   "kavram": "Yaratıcılık ve Buluş Süreci",
+   "tur": "dy",
+   "ifade": "Kitaba göre tasarımın en önemli basamağı uygulamadır.",
+   "dogru": false,
+   "duzeltme": "En önemli basamak yaratıcılık ve buluş sürecidir.",
+   "aciklama": "Hipotezin geliştirildiği yaratıcılık ve buluş süreci en önemli aşamadır (s. 33)."
+  },
+  {
+   "id": "b3-03",
+   "konu": "u3k1",
+   "kavram": "Görselleştirme",
+   "tur": "secim",
+   "soru": "Görselleştirme ile ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "Çizerek yapılabilir.",
+    "Maket yapılarak yapılabilir.",
+    "Bilgisayar programlarıyla yapılabilir."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Görselleştirme yazarak, çizerek, maketle ya da bilgisayarla yapılabilir (s. 34)."
+  },
+  {
+   "id": "b3-04",
+   "konu": "u3k1",
+   "kavram": "Değerlendirme ve Sunma",
+   "tur": "secim",
+   "soru": "Tasarım hangi açılardan değerlendirilmez?",
+   "secenekler": [
+    "Özgünlük",
+    "İşlevsellik",
+    "Tasarımcının yaşı",
+    "Sürdürülebilirlik"
+   ],
+   "dogru": 2,
+   "aciklama": "Özgünlük, işlevsellik, yapılabilirlik ve sürdürülebilirlik ölçütleridir (s. 34)."
+  },
+  {
+   "id": "b3-05",
+   "konu": "u3k1",
+   "kavram": "Problem Odaklı Düşünme",
+   "tur": "kisa",
+   "soru": "Bir problemi küçük parçalarına ayırarak incelemeye ne tür düşünme denir? (İki kelime: ___ odaklı düşünme)",
+   "yanit": "problem",
+   "kabul": [
+    "problem odaklı",
+    "problem odaklı düşünme"
+   ],
+   "aciklama": "Problemi parçalara ayırmak problem odaklı düşünmedir (program)."
+  },
+  {
+   "id": "b3-06",
+   "konu": "u3k1",
+   "kavram": "Tasarım Süreci",
+   "tur": "eslestir",
+   "soru": "Aşamaları yapılan işle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Problem tanımlama",
+     "sag": "Rahatsız eden durumu belirlemek"
+    },
+    {
+     "sol": "Görselleştirme",
+     "sag": "Fikri çizerek göstermek"
+    },
+    {
+     "sol": "Planlama",
+     "sag": "Üretimin adımlarını netleştirmek"
+    },
+    {
+     "sol": "Değerlendirme ve sunma",
+     "sag": "Ürünü incelemek ve anlatmak"
+    }
+   ],
+   "aciklama": "Her aşamanın kendi işi vardır (s. 34)."
+  },
+  {
+   "id": "b3-07",
+   "konu": "u3k2",
+   "kavram": "Teknik Resim",
+   "tur": "dy",
+   "ifade": "Teknik resmi yalnızca o dili konuşan mühendisler anlayabilir.",
+   "dogru": false,
+   "duzeltme": "Teknik resim dile bakılmadan dünyanın her yerinde kullanılabilir.",
+   "aciklama": "Teknik resim mühendislerin ortak dilidir (s. 35)."
+  },
+  {
+   "id": "b3-08",
+   "konu": "u3k2",
+   "kavram": "Perspektif",
+   "tur": "secim",
+   "soru": "Resimde yolun iki yanındaki direkler uzaklaştıkça küçülüyor. Burada hangi teknik kullanılmıştır?",
+   "secenekler": [
+    "Üç görünüş",
+    "Perspektif",
+    "Teknik rapor",
+    "Beyin fırtınası"
+   ],
+   "dogru": 1,
+   "aciklama": "Perspektifte gözden uzaklaşan her şey küçük görünür (s. 35)."
+  },
+  {
+   "id": "b3-09",
+   "konu": "u3k2",
+   "kavram": "Kaçma Noktası",
+   "tur": "bosluk",
+   "havuz": [
+    "orijin",
+    "taslak"
+   ],
+   "cumleler": [
+    {
+     "c": "Perspektif çiziminde önce ___ çizgisi çizilir.",
+     "cevap": "ufuk"
+    },
+    {
+     "c": "Paralel çizgilerin birleşiyor gibi göründüğü noktaya ___ noktası denir.",
+     "cevap": "kaçma"
+    },
+    {
+     "c": "Gözden uzaklaşan her şey ___ görünür.",
+     "cevap": "küçük"
+    }
+   ],
+   "aciklama": "Ufuk çizgisi, kaçma noktası ve küçülme perspektifin temelidir (s. 35–36)."
+  },
+  {
+   "id": "b3-10",
+   "konu": "u3k2",
+   "kavram": "Üç Görünüş",
+   "tur": "dytablo",
+   "soru": "Üç görünüşten biriyse D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Önden görünüş",
+     "d": true
+    },
+    {
+     "s": "Üstten görünüş",
+     "d": true
+    },
+    {
+     "s": "İçten görünüş",
+     "d": false
+    },
+    {
+     "s": "Yandan görünüş",
+     "d": true
+    }
+   ],
+   "aciklama": "Üretim için ön, üst ve yan görünüşler çizilir (s. 37)."
+  },
+  {
+   "id": "b3-11",
+   "konu": "u3k2",
+   "kavram": "Teknik Çizim",
+   "tur": "kisa",
+   "soru": "Teknik çizim yapan kişiye ne denir? (İki kelime)",
+   "yanit": "teknik ressam",
+   "kabul": [
+    "ressam"
+   ],
+   "aciklama": "Teknik çizim yapan kişilere teknik ressam denir (s. 35)."
+  },
+  {
+   "id": "b3-12",
+   "konu": "u3k2",
+   "kavram": "Ufuk Çizgisi",
+   "tur": "secim",
+   "soru": "Göz hizamızdan geçen yatay çizgiye ne denir?",
+   "secenekler": [
+    "Kaçma noktası",
+    "Kesit çizgisi",
+    "Ölçü oku",
+    "Ufuk çizgisi"
+   ],
+   "dogru": 3,
+   "aciklama": "Ufuk çizgisi göz hizasından geçen yatay çizgidir (s. 36)."
+  },
+  {
+   "id": "b3-13",
+   "konu": "u3k3",
+   "kavram": "Problem",
+   "tur": "secim",
+   "soru": "Bir durumun problem sayılması için gereken koşullarla ilgili bilgiler verilmiştir.",
+   "onculler": [
+    "Kişide rahatsızlık uyandırmalı.",
+    "Birden fazla çözüm yolu olmalı.",
+    "Hiç kimse onu fark etmemeli."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Problem rahatsızlık uyandırmalı ve birden çok çözümü olmalıdır (s. 34)."
+  },
+  {
+   "id": "b3-14",
+   "konu": "u3k3",
+   "kavram": "Hipotez",
+   "tur": "kisa",
+   "soru": "Araştırmacının kendi görüşleriyle ortaya koyduğu geçici çözüme ne denir?",
+   "yanit": "hipotez",
+   "aciklama": "Geçici çözüm hipotezdir (s. 40)."
+  },
+  {
+   "id": "b3-15",
+   "konu": "u3k3",
+   "kavram": "Beyin Fırtınası",
+   "tur": "dy",
+   "ifade": "Beyin fırtınasında söylenen fikirler hemen eleştirilir.",
+   "dogru": false,
+   "duzeltme": "Beyin fırtınasında fikirler eleştirilmez; her fikir yazılır.",
+   "aciklama": "Eleştirilme korkusu olmadan çok fikir üretilir (program)."
+  },
+  {
+   "id": "b3-16",
+   "konu": "u3k3",
+   "kavram": "Balık Kılçığı Diyagramı",
+   "tur": "eslestir",
+   "soru": "Yöntemleri işleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Beyin fırtınası",
+     "sag": "Çok sayıda fikir üretir"
+    },
+    {
+     "sol": "Balık kılçığı diyagramı",
+     "sag": "Problemin nedenlerini bulur"
+    },
+    {
+     "sol": "Karar diyagramı",
+     "sag": "Seçenekleri dallar hâlinde gösterir"
+    },
+    {
+     "sol": "Kontrol diyagramı",
+     "sag": "Ölçümün sınırlar içinde olup olmadığını gösterir"
+    }
+   ],
+   "aciklama": "Programdaki dört fikir geliştirme yönteminin her biri farklı işe yarar (program)."
+  },
+  {
+   "id": "b3-17",
+   "konu": "u3k3",
+   "kavram": "Kontrol Diyagramı",
+   "tur": "secim",
+   "soru": "Kontrol diyagramında bir ölçüm alt sınırın altına düştü. Bu ne anlama gelir?",
+   "secenekler": [
+    "Her şey yolunda",
+    "Bir sorun olabilir",
+    "Grafik bitti",
+    "Yeni fikir gerekmez"
+   ],
+   "dogru": 1,
+   "aciklama": "Sınırların dışına çıkan ölçüm bir sorun olduğunu gösterir (program)."
+  },
+  {
+   "id": "b3-18",
+   "konu": "u3k3",
+   "kavram": "Tasarım Problemi",
+   "tur": "dy",
+   "ifade": "Tasarım problemini seçtikten sonra o probleme bugünkü çözümler araştırılır.",
+   "dogru": true,
+   "aciklama": "Mevcut çözümler araştırılır ve eksik yanları belirlenir (s. 39)."
+  },
+  {
+   "id": "b3-19",
+   "konu": "u3k3",
+   "kavram": "Karar Diyagramı",
+   "tur": "secim",
+   "soru": "Tasarımcı 'Lamba pilli mi, fişli mi olsun?' sorusunun sonuçlarını dallar hâlinde çizdi. Hangi yöntemi kullandı?",
+   "secenekler": [
+    "Karar diyagramı",
+    "Balık kılçığı diyagramı",
+    "Perspektif",
+    "Antropometri"
+   ],
+   "dogru": 0,
+   "aciklama": "Seçenekleri ve sonuçlarını dallarla gösteren şema karar diyagramıdır (program)."
+  },
+  {
+   "id": "b3-20",
+   "konu": "u3k4",
+   "kavram": "Sorun",
+   "tur": "dytablo",
+   "soru": "Araştırılacak sorunun özelliği ise D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Çözülebilir olmalı",
+     "d": true
+    },
+    {
+     "s": "Güncel olmalı",
+     "d": true
+    },
+    {
+     "s": "Belirsiz yazılmalı",
+     "d": false
+    },
+    {
+     "s": "Özgün olmalı",
+     "d": true
+    }
+   ],
+   "aciklama": "Sorun çözülebilir, önemli, özgün, güncel ve açık olmalıdır (s. 41)."
+  },
+  {
+   "id": "b3-21",
+   "konu": "u3k4",
+   "kavram": "Güvenilir Veri",
+   "tur": "secim",
+   "soru": "Araştırmada toplanan verilerle ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "Güvenilir olmalıdır.",
+    "Eksiksiz olmalıdır.",
+    "Kaynağı önemli değildir."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Veriler güvenilir ve eksiksiz olmalı; kaynakların güvenilir olmasına özen gösterilir (s. 41)."
+  },
+  {
+   "id": "b3-22",
+   "konu": "u3k4",
+   "kavram": "Sunum",
+   "tur": "eslestir",
+   "soru": "Basamakları yapılan işle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Sorun",
+     "sag": "Araştırılacak konuyu belirlemek"
+    },
+    {
+     "sol": "Plan",
+     "sag": "Amaca giden yolu yazmak"
+    },
+    {
+     "sol": "Araştırma",
+     "sag": "Kaynaklardan bilgi toplamak"
+    },
+    {
+     "sol": "Sunum",
+     "sag": "Sonuç ve önerileri anlatmak"
+    }
+   ],
+   "aciklama": "Her basamağın kendi işi vardır (s. 41)."
+  },
+  {
+   "id": "b3-23",
+   "konu": "u3k4",
+   "kavram": "Plan",
+   "tur": "dy",
+   "ifade": "Araştırma planında ulaşılmak istenen amaç belirtilmelidir.",
+   "dogru": true,
+   "aciklama": "Plan, amaca uygun bilgi sağlamak için izlenen bir kılavuzdur (s. 41)."
+  },
+  {
+   "id": "b3-24",
+   "konu": "u3k4",
+   "kavram": "Değerlendirme",
+   "tur": "secim",
+   "soru": "Probleme en uygun çözüm yolunun seçildiği basamak hangisidir?",
+   "secenekler": [
+    "Sorun",
+    "Plan",
+    "Araştırma",
+    "Değerlendirme"
+   ],
+   "dogru": 3,
+   "aciklama": "Değerlendirmede en uygun çözüm seçilir, veriler sınıflandırılır (s. 41)."
+  },
+  {
+   "id": "b3-25",
+   "konu": "u3k4",
+   "kavram": "Araştırma",
+   "tur": "bosluk",
+   "havuz": [
+    "prototip",
+    "maket"
+   ],
+   "cumleler": [
+    {
+     "c": "Doğru toplanmış veriler ___ yola götürür.",
+     "cevap": "doğru"
+    },
+    {
+     "c": "Eksik toplanmış veriler ___ yola götürür.",
+     "cevap": "yanlış"
+    },
+    {
+     "c": "Bilgi kitaplardan, dergilerden ve ___ toplanabilir.",
+     "cevap": "kurumlardan"
+    }
+   ],
+   "aciklama": "Veri toplama doğru yapılırsa doğru karar verilir (s. 41)."
+  },
+  {
+   "id": "b3-26",
+   "konu": "u3k5",
+   "kavram": "Ergonomi",
+   "tur": "kisa",
+   "soru": "Yaşamın insana uygun hâle getirilmesine ne denir?",
+   "yanit": "ergonomi",
+   "aciklama": "Ergonomi yaşamın insana uygun hâle getirilmesidir (s. 44)."
+  },
+  {
+   "id": "b3-27",
+   "konu": "u3k5",
+   "kavram": "Antropometri",
+   "tur": "eslestir",
+   "soru": "Bilim dallarını ilgi alanlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Fizyoloji",
+     "sag": "Kas çalışması ve enerji"
+    },
+    {
+     "sol": "Psikoloji",
+     "sag": "Renk ve düzenle hoş ortam"
+    },
+    {
+     "sol": "Sosyoloji",
+     "sag": "Toplumsal sorunlar"
+    },
+    {
+     "sol": "Antropometri",
+     "sag": "İnsanın vücut ölçüleri"
+    }
+   ],
+   "aciklama": "Dört bilim dalı ergonomiye farklı yönlerden yardım eder (s. 43)."
+  },
+  {
+   "id": "b3-28",
+   "konu": "u3k5",
+   "kavram": "Ergonominin Konuları",
+   "tur": "dytablo",
+   "soru": "Ergonominin konusuysa D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Gürültü",
+     "d": true
+    },
+    {
+     "s": "Aydınlatma",
+     "d": true
+    },
+    {
+     "s": "Reklam filmi",
+     "d": false
+    },
+    {
+     "s": "Mola saatleri",
+     "d": true
+    }
+   ],
+   "aciklama": "Gürültü, aydınlatma, ısı, titreşim ve mola saatleri ergonominin konularıdır (s. 43)."
+  },
+  {
+   "id": "b3-29",
+   "konu": "u3k5",
+   "kavram": "Ergonomi",
+   "tur": "secim",
+   "soru": "Hangisi ergonominin amaçlarından biri değildir?",
+   "secenekler": [
+    "Aşırı zorlamayı önlemek",
+    "Çalışanın sağlığını korumak",
+    "Gereksiz hareketleri önlemek",
+    "Ürünü daha süslü yapmak"
+   ],
+   "dogru": 3,
+   "aciklama": "Ergonomi sağlığı korur, zorlanmayı ve gereksiz hareketi önler (s. 43)."
+  },
+  {
+   "id": "b3-30",
+   "konu": "u3k5",
+   "kavram": "Ergonomik Düzenleme",
+   "tur": "dy",
+   "ifade": "Kitaptaki örnekte tabakalar çalışanın önüne asılınca dönme hareketine gerek kalmamıştır.",
+   "dogru": true,
+   "aciklama": "Tabakalar öne asılınca hareket israfı yok edilmiştir (s. 44)."
+  },
+  {
+   "id": "b3-31",
+   "konu": "u3k5",
+   "kavram": "Psikoloji",
+   "tur": "secim",
+   "soru": "Çalışma odasında rahatlatıcı renkler ve düzenli bir yerleşim kullanıldı. Ergonomi burada hangi daldan yararlanmıştır?",
+   "secenekler": [
+    "Antropometri",
+    "Psikoloji",
+    "Fizyoloji",
+    "Sosyoloji"
+   ],
+   "dogru": 1,
+   "aciklama": "Renk, şekil ve düzenle hoş ortam psikolojinin konusudur (s. 43)."
+  },
+  {
+   "id": "b3-32",
+   "konu": "u3k6",
+   "kavram": "Estetik",
+   "tur": "eslestir",
+   "soru": "Kriterleri sorularıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Ergonomik",
+     "sag": "İnsana uygun mu?"
+    },
+    {
+     "sol": "Estetik",
+     "sag": "Göze güzel geliyor mu?"
+    },
+    {
+     "sol": "İşlevsel",
+     "sag": "İşe yarıyor mu?"
+    },
+    {
+     "sol": "Yalın",
+     "sag": "Sade ve anlaşılır mı?"
+    }
+   ],
+   "aciklama": "Her kriter tasarıma bir soru sorar (s. 45)."
+  },
+  {
+   "id": "b3-33",
+   "konu": "u3k6",
+   "kavram": "Malzeme ve Maliyet",
+   "tur": "secim",
+   "soru": "Tasarımda kullanılacak malzemelerle ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "Kolay bulunabilmelidir.",
+    "Dayanıklı olmalıdır.",
+    "Geri dönüşüme uygun olmalıdır."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Malzeme kolay bulunur, dayanıklı, ekonomik ve geri dönüşüme uygun olmalıdır (s. 45)."
+  },
+  {
+   "id": "b3-34",
+   "konu": "u3k6",
+   "kavram": "Özgün-Yenilikçi",
+   "tur": "dy",
+   "ifade": "Özgün tasarım, benzerlerinin aynısı olan tasarımdır.",
+   "dogru": false,
+   "duzeltme": "Özgün tasarım benzerlerinden ayrı ve üstündür.",
+   "aciklama": "Özgün-yenilikçi tasarım bir buluş sonucu ortaya çıkar (s. 45)."
+  },
+  {
+   "id": "b3-35",
+   "konu": "u3k6",
+   "kavram": "Sürdürülebilirlik",
+   "tur": "secim",
+   "soru": "Hangisi sürdürülebilir bir tasarım kararıdır?",
+   "secenekler": [
+    "Bir kez kullanılıp atılan tabak",
+    "Tamir edilebilen sandalye",
+    "Kısa sürede bozulan oyuncak",
+    "Geri dönüşmeyen ambalaj"
+   ],
+   "dogru": 1,
+   "aciklama": "Uzun süre kullanılan, atık azaltan ürün geleceği de düşünür (s. 34; program)."
+  },
+  {
+   "id": "b3-36",
+   "konu": "u3k6",
+   "kavram": "İşlevsel",
+   "tur": "kisa",
+   "soru": "Bir objenin kullanıldığı duruma göre işe yarar olmasına ne denir?",
+   "yanit": "işlevsellik",
+   "kabul": [
+    "işlevsel",
+    "islevsellik",
+    "islevsel"
+   ],
+   "aciklama": "İşlevsellik, objenin kullanıldığı duruma göre işe yaramasıdır (s. 45)."
+  },
+  {
+   "id": "b3-37",
+   "konu": "u3k6",
+   "kavram": "Estetik",
+   "tur": "bosluk",
+   "havuz": [
+    "titreşim",
+    "ölçek"
+   ],
+   "cumleler": [
+    {
+     "c": "Sanatla, güzellikle ve tatla ilgilenen felsefe dalına ___ denir.",
+     "cevap": "estetik"
+    },
+    {
+     "c": "Karmaşık olmayan, sade tasarıma ___ tasarım denir.",
+     "cevap": "yalın"
+    },
+    {
+     "c": "Benzerlerinden ayrı ve üstün tasarım ___ tasarımdır.",
+     "cevap": "özgün"
+    }
+   ],
+   "aciklama": "Estetik, yalın ve özgün tasarım geliştirme kriterleridir (s. 45)."
+  },
+  {
+   "id": "b3-38",
+   "konu": "u3k7",
+   "kavram": "Prototip",
+   "tur": "eslestir",
+   "soru": "Kavramları anlamlarıyla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Taslak",
+     "sag": "Tasarımın ilk çizimi"
+    },
+    {
+     "sol": "Maket",
+     "sag": "Ölçekle küçültülmüş üç boyutlu kopya"
+    },
+    {
+     "sol": "Prototip",
+     "sag": "Üretimden önceki elle tutulur ilk örnek"
+    },
+    {
+     "sol": "Model",
+     "sag": "Bir sistemin basit örneği"
+    }
+   ],
+   "aciklama": "Her biri tasarımın farklı bir aşamasını gösterir (s. 42, 47)."
+  },
+  {
+   "id": "b3-39",
+   "konu": "u3k7",
+   "kavram": "Model",
+   "tur": "dy",
+   "ifade": "Modeller her zaman aslından küçük yapılır.",
+   "dogru": false,
+   "duzeltme": "Molekül modeli gibi bazı modeller aslından büyüktür.",
+   "aciklama": "Güneş sistemi modeli küçük, molekül modeli büyüktür (s. 47)."
+  },
+  {
+   "id": "b3-40",
+   "konu": "u3k7",
+   "kavram": "3D Yazıcı",
+   "tur": "secim",
+   "soru": "3D yazıcı ile ilgili aşağıdaki bilgiler verilmiştir.",
+   "onculler": [
+    "Nesneyi katman katman oluşturur.",
+    "Yalnızca kâğıt kullanabilir.",
+    "Bilgisayarda hazırlanan tasarımı basar."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "I ve III",
+    "II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "3D yazıcı plastik, seramik, metal tozu kullanır; bilgisayardaki tasarımı katmanlarla basar (s. 47)."
+  },
+  {
+   "id": "b3-41",
+   "konu": "u3k7",
+   "kavram": "Maket",
+   "tur": "secim",
+   "soru": "Maketin taslaktaki ürüne benzemesi için en çok neye dikkat edilmelidir?",
+   "secenekler": [
+    "Ölçülerde hata yapmamaya",
+    "Pahalı boya kullanmaya",
+    "Hızlı bitirmeye",
+    "Büyük yapmaya"
+   ],
+   "dogru": 0,
+   "aciklama": "Maket belirli bir ölçekle yapılır; ölçülerde hata yapılmamalıdır (s. 47)."
+  },
+  {
+   "id": "b3-42",
+   "konu": "u3k7",
+   "kavram": "Uygulama Takvimi",
+   "tur": "bosluk",
+   "havuz": [
+    "broşür",
+    "ufuk"
+   ],
+   "cumleler": [
+    {
+     "c": "Yapım aşamaları öncelik ___ göre belirlenir.",
+     "cevap": "sırasına"
+    },
+    {
+     "c": "Uygulama takvimi zaman ___ önler.",
+     "cevap": "kaybını"
+    },
+    {
+     "c": "Tasarım güvenlik ___ dikkat edilerek yapılır.",
+     "cevap": "önlemlerine"
+    }
+   ],
+   "aciklama": "Sıra ve takvim işi kolaylaştırır; güvenlik her zaman önce gelir (s. 49)."
+  },
+  {
+   "id": "b3-43",
+   "konu": "u3k7",
+   "kavram": "Taslak",
+   "tur": "kisa",
+   "soru": "Tasarım önerisinin ayrıntıları gösterilen ilk çizimine ne denir?",
+   "yanit": "taslak",
+   "aciklama": "Taslak önerinin ilk hâlinin çizimidir (s. 42)."
+  },
+  {
+   "id": "b3-44",
+   "konu": "u3k8",
+   "kavram": "Öğretmen Gözetimi",
+   "tur": "dy",
+   "ifade": "Kesici ve delici araçlar öğretmen gözetiminde kullanılmalıdır.",
+   "dogru": true,
+   "aciklama": "Tehlikeli araçlar kendi başına kullanılmaz (s. 50)."
+  },
+  {
+   "id": "b3-45",
+   "konu": "u3k8",
+   "kavram": "İş Güvenliği",
+   "tur": "dytablo",
+   "soru": "Atölyede doğru davranışsa D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "Aldığım malzemeyi yerine koyarım.",
+     "d": true
+    },
+    {
+     "s": "Arkadaşımla şakalaşarak çalışırım.",
+     "d": false
+    },
+    {
+     "s": "Uyarı tabelalarına uyarım.",
+     "d": true
+    },
+    {
+     "s": "Bozulan elektrikli aleti kendim tamir ederim.",
+     "d": false
+    }
+   ],
+   "aciklama": "Tabelalara uyulur; şakalaşma kazaya yol açar, tamiri yetkililer yapar (s. 50)."
+  },
+  {
+   "id": "b3-46",
+   "konu": "u3k8",
+   "kavram": "Geri Dönüşümün Faydaları",
+   "tur": "secim",
+   "soru": "Hangisi geri dönüşümün faydalarından biri değildir?",
+   "secenekler": [
+    "Atık miktarı azalır",
+    "Doğal kaynaklar korunur",
+    "Enerji tasarrufu sağlanır",
+    "Çöp miktarı artar"
+   ],
+   "dogru": 3,
+   "aciklama": "Geri dönüşüm atığı azaltır, kaynakları korur, enerji tasarrufu sağlar (s. 51)."
+  },
+  {
+   "id": "b3-47",
+   "konu": "u3k8",
+   "kavram": "Geri Dönüşüm",
+   "tur": "kisa",
+   "soru": "Atıkların işlenip yeniden ham madde olarak üretime katılmasına ne denir? (İki kelime)",
+   "yanit": "geri dönüşüm",
+   "kabul": [
+    "geridönüşüm"
+   ],
+   "aciklama": "Atıkların ikinci bir ham maddeye dönüştürülmesi geri dönüşümdür (s. 51)."
+  },
+  {
+   "id": "b3-48",
+   "konu": "u3k8",
+   "kavram": "Kazaya Karşı Dikkat",
+   "tur": "secim",
+   "soru": "Atölyede bir arkadaşın elini kesti. Ne yapmalısın?",
+   "secenekler": [
+    "Hemen öğretmene haber vermeliyim",
+    "Kimseye söylememeliyim",
+    "Çalışmaya devam etmeliyim",
+    "Kendim dikiş atmalıyım"
+   ],
+   "dogru": 0,
+   "aciklama": "Herhangi bir kaza ya da yaralanma hemen öğretmene bildirilir (s. 50)."
+  },
+  {
+   "id": "b3-49",
+   "konu": "u3k8",
+   "kavram": "İkincil Kullanım",
+   "tur": "eslestir",
+   "soru": "Durumları kavramlarla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Boş kavanozu kalemlik yapmak",
+     "sag": "İkincil kullanım"
+    },
+    {
+     "sol": "Eski şişeleri eritip yeni şişe yapmak",
+     "sag": "Geri dönüşüm"
+    },
+    {
+     "sol": "Koruyucu gözlük takmak",
+     "sag": "Kişisel korunma"
+    }
+   ],
+   "aciklama": "Ürünü başka işe kullanmak ikincil kullanım, ham maddeye dönüştürmek geri dönüşümdür (s. 50–51)."
+  },
+  {
+   "id": "b3-50",
+   "konu": "u3k9",
+   "kavram": "Afiş",
+   "tur": "dy",
+   "ifade": "Afişteki mesaj 10 kelimeden uzun olursa okunma oranı artar.",
+   "dogru": false,
+   "duzeltme": "Mesaj 5–6 kelime olmalı; 10 kelime ve üstünde okuma oranı düşer.",
+   "aciklama": "Kısa mesaj gözden kaçmaz (s. 54)."
+  },
+  {
+   "id": "b3-51",
+   "konu": "u3k9",
+   "kavram": "Göze ve Kulağa Hitap Eden Araçlar",
+   "tur": "eslestir",
+   "soru": "Tanıtım araçlarını türleriyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Broşür",
+     "sag": "Göze hitap eder"
+    },
+    {
+     "sol": "Radyo",
+     "sag": "Kulağa hitap eder"
+    },
+    {
+     "sol": "Televizyon",
+     "sag": "Hem göze hem kulağa hitap eder"
+    }
+   ],
+   "aciklama": "Tanıtım araçları üç şekilde sınıflandırılır (s. 53)."
+  },
+  {
+   "id": "b3-52",
+   "konu": "u3k9",
+   "kavram": "Ürün Değerlendirme",
+   "tur": "dytablo",
+   "soru": "Değerlendirmede sorulan bir soruysa D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Sorunu çözdü mü?",
+     "d": true
+    },
+    {
+     "s": "Kullanıcı ihtiyaçlarını karşılıyor mu?",
+     "d": true
+    },
+    {
+     "s": "Tasarımcı kaç yaşında?",
+     "d": false
+    },
+    {
+     "s": "Üretime uygun mu?",
+     "d": true
+    }
+   ],
+   "aciklama": "Değerlendirme soruları tasarımın işe yarayıp yaramadığını ölçer (s. 52)."
+  },
+  {
+   "id": "b3-53",
+   "konu": "u3k9",
+   "kavram": "Ürün Tanıtımı",
+   "tur": "secim",
+   "soru": "Pazarlamanın ilk ve en önemli adımı hangisidir?",
+   "secenekler": [
+    "Ürünü saklamak",
+    "Fiyatı artırmak",
+    "Tanıtım (görsel sunum)",
+    "Maketi bozmak"
+   ],
+   "dogru": 2,
+   "aciklama": "Tanıtım, yani görsel sunum, pazarlamanın ilk ve en önemli adımıdır (s. 53)."
+  },
+  {
+   "id": "b3-54",
+   "konu": "u3k9",
+   "kavram": "Yeniden Tasarım",
+   "tur": "secim",
+   "soru": "Değerlendirmede ürününün bir eksiği bulundu. Döngüsel tasarım sürecine göre ne yaparsın?",
+   "secenekler": [
+    "Eksikleri düzeltip tasarımı geliştiririm",
+    "Tasarımı hemen satarım",
+    "Tasarımı çöpe atarım",
+    "Hiçbir şey yapmam"
+   ],
+   "dogru": 0,
+   "aciklama": "Döngüsel süreçte eksikler giderilerek tasarım geliştirilir (s. 57)."
+  },
+  {
+   "id": "b3-55",
+   "konu": "u3k9",
+   "kavram": "Göze Hitap Eden Araçlar",
+   "tur": "kisa",
+   "soru": "Bir ürünü tanıtan, kısa açıklamalar ve fotoğraflar içeren, çok sayıda basılıp dağıtılan materyale ne denir?",
+   "yanit": "broşür",
+   "kabul": [
+    "brosur"
+   ],
+   "aciklama": "Broşür ürünü kısa metin ve fotoğraflarla tanıtır (s. 55)."
+  }
+ ]
+}

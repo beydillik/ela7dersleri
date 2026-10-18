@@ -1,0 +1,287 @@
+{
+ "id": "u3k7",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Maket, Model ve Prototip",
+ "sayfalar": "s. 42, 47–49",
+ "giris": "Bir ürünü yapmadan önce onun çizimini ve küçük bir örneğini hazırlarız. Bu konuda taslak, model, maket ve prototip arasındaki farkı öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Taslak",
+   "renk": "#5c677d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='16' width='70' height='88' rx='4' fill='#e9ecef'/><path d='M30 70l20-20 20 20v22H30z' stroke='#5c677d' stroke-width='3' fill='none' stroke-dasharray='5 4'/><path d='M86 96l18-56 7 3-18 56z' fill='#f2c14e'/></svg>",
+   "aciklama": "Taslak, tasarım önerisinin ilk hâlinin çizimidir. Ayrıntılar çizimin üzerinde gösterilir.",
+   "akilda": "İlk çizim",
+   "soru": {
+    "soru": "Tasarımın ilk hâlinin çizimine ne denir?",
+    "secenekler": [
+     "Prototip",
+     "Taslak",
+     "Maket"
+    ],
+    "dogru": 1,
+    "ipucu": "Kalemle çizilen ilk hâl…",
+    "aciklama": "Taslak önerinin ilk hâli çizilir ve ayrıntılar çizim üzerinde gösterilir. (s. 42)"
+   }
+  },
+  {
+   "ad": "Model",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='12' fill='#f2c14e'/><circle cx='60' cy='60' r='28' stroke='#5c677d' stroke-width='2' fill='none'/><circle cx='60' cy='60' r='44' stroke='#5c677d' stroke-width='2' fill='none'/><circle cx='88' cy='60' r='5' fill='#6fb3ff'/><circle cx='29' cy='30' r='7' fill='#ff8fab'/></svg>",
+   "aciklama": "Model, bir şeyin bazı özelliklerini anlatmak için yapılan üç boyutlu örnektir.",
+   "ek": "Model genellikle aslından küçüktür; Güneş sistemi modeli gibi. Ama molekül modeli aslından çok büyüktür.",
+   "akilda": "Bir sistemin basit örneği",
+   "soru": {
+    "soru": "Hangisi aslından büyük yapılan bir modele örnektir?",
+    "secenekler": [
+     "Molekül modeli",
+     "Güneş sistemi modeli",
+     "Uçak modeli"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın ek bilgisinde büyük yapılan bir model vardı.",
+    "aciklama": "Maddenin moleküler yapısını gösteren model aslından çok büyüktür. (s. 47)"
+   }
+  },
+  {
+   "ad": "Maket",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 92V60l22-18 22 18v32z' fill='#2a9d8f'/><path d='M68 92V50h28v42z' fill='#63e6be'/><rect x='38' y='72' width='14' height='20' fill='#1b2340'/><path d='M14 100h92' stroke='#e9ecef' stroke-width='3'/><text x='60' y='24' font-size='12' font-weight='700' fill='#f2c14e' text-anchor='middle' font-family='sans-serif'>1/100</text></svg>",
+   "aciklama": "Maket, taslaktaki ürünün belirli bir ölçekle küçültülmüş üç boyutlu hâlidir.",
+   "ek": "Maketin taslaktaki ürüne benzemesi çok önemlidir. Bunun için ölçülerde hata yapılmamalıdır.",
+   "akilda": "Ölçekli küçük kopya",
+   "soru": {
+    "soru": "Maket yaparken en çok neye dikkat edilir?",
+    "secenekler": [
+     "En pahalı malzemeyi kullanmaya",
+     "Hiç ölçü almamaya",
+     "Ölçülerde hata yapmamaya"
+    ],
+    "dogru": 2,
+    "ipucu": "Maket taslağa benzemeli…",
+    "aciklama": "Maketin taslaktaki ürüne benzemesi için ölçülerde hata yapılmamalıdır. (s. 47)"
+   }
+  },
+  {
+   "ad": "Prototip",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='44' width='76' height='34' rx='10' fill='#d9480f'/><rect x='36' y='30' width='40' height='18' rx='6' fill='#ffa94d'/><circle cx='40' cy='82' r='11' fill='#6fb3ff'/><circle cx='82' cy='82' r='11' fill='#69db7c'/></svg>",
+   "aciklama": "Prototip, ürün üretilmeden önce yapılan elle tutulur ilk örnektir.",
+   "ek": "Prototip sayesinde sorunlar üretimden önce görülür. Parçalar farklı renklere boyanır ki daha anlaşılır olsun.",
+   "akilda": "Üretimden önceki ilk örnek",
+   "soru": {
+    "soru": "Prototip ne zaman yapılır?",
+    "secenekler": [
+     "Ürün satıldıktan sonra",
+     "Ürün eskiyince",
+     "Ürün üretilmeden önce"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta 'üretilmeden önce' yazıyordu.",
+    "aciklama": "Prototip, ürünün imal edilmeden önceki elle tutulur ilk şeklidir. (s. 47)"
+   }
+  },
+  {
+   "ad": "3D Yazıcı",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='88' height='14' rx='3' fill='#5c677d'/><path d='M22 32v70M98 32v70' stroke='#5c677d' stroke-width='5'/><path d='M54 32h12v14l-6 8-6-8z' fill='#e9ecef'/><rect x='40' y='94' width='40' height='6' rx='2' fill='#9b3fa6'/><rect x='42' y='87' width='36' height='6' rx='2' fill='#b45fc0'/><rect x='44' y='80' width='32' height='6' rx='2' fill='#c77dcf'/><rect x='46' y='73' width='28' height='6' rx='2' fill='#da98df'/><path d='M14 102h92' stroke='#e9ecef' stroke-width='3'/></svg>",
+   "aciklama": "3D yazıcı, bilgisayarda çizilen tasarımı katman katman üst üste ekleyerek üç boyutlu basar.",
+   "ek": "Plastik, seramik tozu, metal tozu gibi malzemeler kullanabilir. Tasarımcı hatalarını kısa sürede görür.",
+   "akilda": "Katman katman basar",
+   "soru": {
+    "soru": "3D yazıcı nesneyi nasıl oluşturur?",
+    "secenekler": [
+     "Kâğıdı katlayarak",
+     "Katmanları üst üste ekleyerek",
+     "Fotoğraf çekerek"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın akılda kalsın kısmı…",
+    "aciklama": "3D baskıda obje katmanlar hâlinde üst üste serilerek oluşturulur. (s. 47)"
+   }
+  },
+  {
+   "ad": "Uygulama Takvimi",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='22' width='84' height='78' rx='8' fill='#e9ecef'/><rect x='18' y='22' width='84' height='18' rx='8' fill='#2f9e44'/><rect x='28' y='48' width='12' height='10' rx='2' fill='#69db7c'/><rect x='46' y='48' width='12' height='10' rx='2' fill='#69db7c'/><rect x='64' y='48' width='12' height='10' rx='2' fill='#69db7c'/><rect x='82' y='48' width='12' height='10' rx='2' fill='#69db7c'/><rect x='28' y='64' width='12' height='10' rx='2' fill='#69db7c'/><rect x='46' y='64' width='12' height='10' rx='2' fill='#69db7c'/><rect x='64' y='64' width='12' height='10' rx='2' fill='#adb5bd'/><rect x='82' y='64' width='12' height='10' rx='2' fill='#adb5bd'/><rect x='28' y='80' width='12' height='10' rx='2' fill='#adb5bd'/><rect x='46' y='80' width='12' height='10' rx='2' fill='#adb5bd'/><rect x='64' y='80' width='12' height='10' rx='2' fill='#adb5bd'/><rect x='82' y='80' width='12' height='10' rx='2' fill='#adb5bd'/><path d='M34 18v10M86 18v10' stroke='#5c677d' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Tasarımın yapım aşamaları öncelik sırasına göre sıralanır; her aşamanın ne zaman başlayıp biteceği yazılır.",
+   "ek": "Böylece işler kolaylaşır ve zaman kaybı önlenir. Tasarım güvenlik önlemlerine dikkat edilerek yapılır.",
+   "akilda": "Sıra ve süre belli",
+   "soru": {
+    "soru": "Uygulama takvimi neyi önler?",
+    "secenekler": [
+     "Zaman kaybını",
+     "Güvenliği",
+     "Planlamayı"
+    ],
+    "dogru": 0,
+    "ipucu": "İşler sırayla ve zamanında yapılınca…",
+    "aciklama": "Yapım aşamalarını sıralamak işleri kolaylaştırır ve zaman kaybını önler. (s. 49)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Çizim mi, üç boyutlu örnek mi?",
+   "kutular": [
+    {
+     "etiket": "Kâğıt üzerinde çizim",
+     "uyeler": [
+      "Taslak"
+     ]
+    },
+    {
+     "etiket": "Üç boyutlu örnek",
+     "uyeler": [
+      "Model",
+      "Maket",
+      "Prototip"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Uçak, otomobil ve gemi yapımında modelcilik başlı başına bir konudur. (s. 47)",
+  "Kitaba göre birleştirilecek parçaları yan yana çizersen uygulaman kolaylaşır. (s. 48)"
+ ],
+ "akildaKalsin": [
+  "Taslak: tasarımın ilk çizimi.",
+  "Model: bir şeyin basit üç boyutlu örneği.",
+  "Maket: ölçekle küçültülmüş kopya; ölçüler doğru olmalı.",
+  "Prototip: üretimden önceki ilk örnek.",
+  "3D yazıcı katman katman basar; uygulama takvimi zaman kaybını önler."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Model hep küçük mü olur?",
+   "cevap": "Genellikle küçüktür ama maddenin moleküler yapısını gösteren model aslından çok büyüktür. (s. 47)"
+  },
+  {
+   "soru": "Prototipte parçalar neden farklı renklere boyanır?",
+   "cevap": "Parçalar arasında fark görünsün ve prototip daha anlaşılır olsun diye. (s. 47)"
+  },
+  {
+   "soru": "3D yazıcı hangi malzemeleri kullanır?",
+   "cevap": "Plastiğin her türü, seramik tozu, metal tozu, altın ve platin gibi malzemeler. (s. 47)"
+  },
+  {
+   "soru": "Maket tasarımcının hangi yeteneğini gösterir?",
+   "cevap": "Üç boyutlu düşünebilme ve hayal gücünü şekillendirebilme yeteneğini. (s. 47)"
+  },
+  {
+   "soru": "Önce prototip mi yapılır, malzeme mi seçilir?",
+   "cevap": "Kitaba göre prototip malzeme seçiminden önce yapılır; böylece malzemeye daha doğru karar verilir. (s. 47)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Kuş yuvası tasarlıyorsun. Taslak, maket ve prototip aşamalarında neler yaparsın?",
+   "ornekCevap": "Önce kâğıda kuş yuvasının taslağını çizerim. Sonra kartondan küçük bir maketini yaparım. En son ilk gerçek örneği, yani prototipi yaparım.",
+   "anahtarlar": [
+    "taslak",
+    "çiz",
+    "maket",
+    "prototip",
+    "küçük"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Ayrıntıların üzerinde gösterildiği ilk çizime ne denir?",
+   "secenekler": [
+    "Taslak",
+    "Model",
+    "Prototip"
+   ],
+   "dogru": 0,
+   "ipucu": "Kalemle başlayan aşama…",
+   "aciklama": "Taslak önerinin ilk hâli çizilir, ayrıntılar çizim üzerinde gösterilir. (s. 42)",
+   "kavram": "Taslak"
+  },
+  {
+   "soru": "Model için hangisi doğrudur?",
+   "secenekler": [
+    "Ürünün satış fiyatıdır",
+    "Ürünün reklamıdır",
+    "Bir sistemi incelemek için yapılan basit örnektir"
+   ],
+   "dogru": 2,
+   "ipucu": "Güneş sistemi modelini düşün.",
+   "aciklama": "Model, bir sistemi incelemek üzere o sistemin basit bir örneğinin yapılmasıdır. (s. 47)",
+   "kavram": "Model"
+  },
+  {
+   "soru": "Güneş sistemi modeli için hangisi doğrudur?",
+   "secenekler": [
+    "Aslından çok büyüktür",
+    "Aslından çok küçüktür",
+    "Aslıyla aynı boydadır"
+   ],
+   "dogru": 1,
+   "ipucu": "Gezegenler bir masaya sığar mı?",
+   "aciklama": "Güneş sistemini sembolize eden model oldukça küçüktür. (s. 47)",
+   "kavram": "Model"
+  },
+  {
+   "soru": "Maket nasıl yapılmalıdır?",
+   "secenekler": [
+    "Rastgele ölçülerle",
+    "Ölçü almadan",
+    "Belirli bir ölçekle"
+   ],
+   "dogru": 2,
+   "ipucu": "1/100 gibi…",
+   "aciklama": "Maket, taslaktaki ürünün ölçüleri göz önünde bulundurularak belirli bir ölçekle yapılır. (s. 47)",
+   "kavram": "Maket"
+  },
+  {
+   "soru": "Prototip yapılınca üretimde ne olur?",
+   "secenekler": [
+    "Sorunlar en aza iner",
+    "Sorunlar artar",
+    "Ürün hiç üretilmez"
+   ],
+   "dogru": 0,
+   "ipucu": "Sorunlar önceden görülür…",
+   "aciklama": "Prototiple giderilen sorunlar sayesinde üretimde sorunlar en aza indirgenir. (s. 47)",
+   "kavram": "Prototip"
+  },
+  {
+   "soru": "3D yazıcıdan önce tasarım nerede hazırlanır?",
+   "secenekler": [
+    "Yalnız kâğıt üzerinde",
+    "Bilgisayarda, 3 boyutlu tasarım programıyla",
+    "Hiç hazırlanmaz"
+   ],
+   "dogru": 1,
+   "ipucu": "Bilgisayar datası oluşturulur…",
+   "aciklama": "Ürün 3 boyutlu tasarım programları ya da tarama sistemleriyle bilgisayarda hazırlanır. (s. 47)",
+   "kavram": "3D Yazıcı"
+  },
+  {
+   "soru": "Uygulama takviminde ne yazılır?",
+   "secenekler": [
+    "Ürünün rengi",
+    "Her aşamanın ne zaman başlayıp biteceği",
+    "Afişin sloganı"
+   ],
+   "dogru": 1,
+   "ipucu": "Takvim = zaman.",
+   "aciklama": "Hangi aşamanın ne kadar süreceği, ne zaman başlayıp biteceği belirlenir. (s. 49)",
+   "kavram": "Uygulama Takvimi"
+  },
+  {
+   "soru": "Prototip hangi aşamadan sonra gelir?",
+   "secenekler": [
+    "Tasarım aşamasından",
+    "Satıştan",
+    "Tanıtımdan"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce tasarlanır, sonra…",
+   "aciklama": "Prototip, tasarım aşamasından sonra gelir. (s. 47)",
+   "kavram": "Prototip"
+  }
+ ]
+}

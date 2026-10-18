@@ -1,0 +1,330 @@
+{
+ "id": "u3k9",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Değerlendirme, Tanıtım ve Sunum",
+ "sayfalar": "s. 52–57",
+ "giris": "Tasarımın bitti! Peki gerçekten işe yarıyor mu? İnsanlar onu nasıl tanıyacak? Bu konuda tasarımı değerlendirmeyi ve tanıtmayı öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Ürün Değerlendirme",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#e9ecef'/><path d='M32 36l5 5 9-10' stroke='#2f9e44' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M54 36h34' stroke='#5c677d' stroke-width='4' stroke-linecap='round'/><path d='M32 56l5 5 9-10' stroke='#2f9e44' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M54 56h34' stroke='#5c677d' stroke-width='4' stroke-linecap='round'/><path d='M32 76l5 5 9-10' stroke='#2f9e44' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M54 76h34' stroke='#5c677d' stroke-width='4' stroke-linecap='round'/><text x='36' y='98' font-size='14' font-weight='700' fill='#c2255c' text-anchor='middle' font-family='sans-serif'>?</text></svg>",
+   "aciklama": "Değerlendirmede tasarımın sorunu ne kadar çözdüğüne ve kullanıcının ihtiyacını karşılayıp karşılamadığına bakılır.",
+   "ek": "Sorular: Kullanıcı ihtiyacını karşılıyor mu? Benzerlerinden üstün yanları ne? Üretime uygun mu? Neyin değişmesi gerekiyor?",
+   "akilda": "İşe yaradı mı?",
+   "soru": {
+    "soru": "Değerlendirmede hangi soru sorulur?",
+    "secenekler": [
+     "Sorunu çözdü mü?",
+     "Ürünü kim boyadı?",
+     "Hangi gün bitti?"
+    ],
+    "dogru": 0,
+    "ipucu": "Değerlendirmenin ilk sorusu…",
+    "aciklama": "Değerlendirmede 'Sorunu çözümledi mi?' diye sorulur. (s. 52)"
+   }
+  },
+  {
+   "ad": "Yeniden Tasarım",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 26a34 34 0 1 1-30 18' stroke='#6fb3ff' stroke-width='8' fill='none' stroke-linecap='round'/><path d='M20 34l12 14 6-16z' fill='#6fb3ff'/><path d='M48 64l8 8 16-18' stroke='#f2c14e' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>",
+   "aciklama": "Değerlendirmede bulunan eksikler düzeltilerek tasarım geliştirilir. Tasarım süreci döngüseldir, yani yeniden başa dönebilir.",
+   "akilda": "Eksikleri düzelt, geliştir",
+   "soru": {
+    "soru": "Değerlendirmede eksiği bulunan tasarıma ne yapılır?",
+    "secenekler": [
+     "Eksikleri düzeltilip geliştirilir",
+     "Hemen çöpe atılır",
+     "Olduğu gibi satılır"
+    ],
+    "dogru": 0,
+    "ipucu": "Süreç döngüseldir…",
+    "aciklama": "Döngüsel tasarım sürecinde eksikler tespit edilip tasarım geliştirilir. (s. 57)"
+   }
+  },
+  {
+   "ad": "Ürün Tanıtımı",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 50h22l34-20v60L46 70H24z' fill='#c77dcf'/><rect x='30' y='70' width='12' height='22' rx='3' fill='#9b3fa6'/><path d='M88 46q10 14 0 28M96 38q16 22 0 44' stroke='#f2c14e' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Ürün tanıtımı, bir ürünü çok kişiye tanıtmak ve beğendirmek için yapılan çalışmaların tümüdür.",
+   "ek": "Tanıtım, yani görsel sunum, pazarlamanın ilk ve en önemli adımıdır. Markette ürün seçerken önce etiketine bakarız.",
+   "akilda": "Tanıt, beğendir",
+   "soru": {
+    "soru": "Pazarlamanın ilk ve en önemli adımı hangisidir?",
+    "secenekler": [
+     "Üretim",
+     "Geri dönüşüm",
+     "Tanıtım"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisine bak.",
+    "aciklama": "Tanıtım yani görsel sunum, pazarlamanın ilk ve en önemli adımıdır. (s. 53)"
+   }
+  },
+  {
+   "ad": "Göze Hitap Eden Araçlar",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 60q46-44 92 0q-46 44-92 0z' fill='#e9ecef'/><circle cx='60' cy='60' r='16' fill='#d9480f'/><circle cx='60' cy='60' r='7' fill='#1b2340'/><text x='60' y='104' font-size='11' font-weight='600' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>afiş · broşür</text></svg>",
+   "aciklama": "Dergi, gazete, afiş, broşür, davetiye ve tanıtım kartı gibi basılı araçlar göze hitap eder.",
+   "ek": "Broşür kısa açıklamalar ve fotoğraflarla ürünü tanıtır. Davetiyede etkinliğin nedeni, yeri, tarihi ve saati yazılır.",
+   "akilda": "Gözle görülen basılı araçlar",
+   "soru": {
+    "soru": "Hangisi göze hitap eden bir tanıtım aracıdır?",
+    "secenekler": [
+     "Radyo",
+     "Broşür",
+     "Megafon"
+    ],
+    "dogru": 1,
+    "ipucu": "Basılı araçları hatırla.",
+    "aciklama": "Broşür basılı, göze hitap eden bir tanıtım aracıdır. (s. 53, 55)"
+   }
+  },
+  {
+   "ad": "Afiş",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='12' width='72' height='96' rx='4' fill='#ffc9de'/><circle cx='60' cy='48' r='20' fill='#c2255c'/><path d='M36 82h48M42 94h36' stroke='#1b2340' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Afiş, kalabalık yerlere asılan, genellikle resimli duvar ilanıdır.",
+   "ek": "Canlı renkler dikkat çeker. Mesaj 5–6 kelime olmalı; slogan 3–4 metre uzaktan okunabilmeli.",
+   "akilda": "Kısa mesaj, canlı renk",
+   "soru": {
+    "soru": "Afişteki mesaj nasıl olmalıdır?",
+    "secenekler": [
+     "Uzun bir paragraf",
+     "Hiç yazı olmamalı",
+     "Kısa, 5–6 kelime"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisinde kelime sayısı vardı.",
+    "aciklama": "Mesajın 5–6 kelimeden oluşması dikkatin dağılmamasını sağlar. (s. 54)"
+   }
+  },
+  {
+   "ad": "Kulağa Hitap Eden Araçlar",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M40 88c-10-14-10-46 20-50s34 24 22 36c-8 8-16 6-16 16 0 8-10 12-14 6' stroke='#f2c14e' stroke-width='8' fill='none' stroke-linecap='round'/><path d='M90 40q8 10 0 20M98 32q14 18 0 36' stroke='#e9ecef' stroke-width='4' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "Radyo, telefon ve megafon kulağa hitap eden tanıtım araçlarıdır.",
+   "ek": "Sergide salonun ses sisteminden projeler hakkında bilgi verilebilir.",
+   "akilda": "Duyduğumuz araçlar",
+   "soru": {
+    "soru": "Sergide ses sisteminden duyuru yapmak hangi araç türüne girer?",
+    "secenekler": [
+     "Kulağa hitap eden",
+     "Göze hitap eden",
+     "Basılı araç"
+    ],
+    "dogru": 0,
+    "ipucu": "Duyuruyu gözle mi kulakla mı alırız?",
+    "aciklama": "Ses sisteminden bilgi vermek kulağa hitap eden tanıtımdır. (s. 56)"
+   }
+  },
+  {
+   "ad": "Göze ve Kulağa Hitap Eden Araçlar",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='22' width='88' height='60' rx='8' fill='#2a9d8f'/><rect x='24' y='30' width='72' height='44' rx='4' fill='#c3fae8'/><path d='M52 42v20l18-10z' fill='#2a9d8f'/><path d='M46 82l-8 16M74 82l8 16' stroke='#e9ecef' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Televizyon, sunular, sergiler ve fuarlar hem göze hem kulağa hitap eder. Bunlar en etkili tanıtım araçlarıdır.",
+   "ek": "Fuar, belirli aralıklarla aynı yerde yapılan tanıtım etkinliğidir. Okulda ürünler en çok sergiyle sunulur. İyi bir web sitesi de ucuz bir tanıtım yoludur.",
+   "akilda": "Görüp duyunca daha iyi hatırlarız",
+   "soru": {
+    "soru": "Hangi tanıtım araçları en etkilidir?",
+    "secenekler": [
+     "Yalnız kulağa hitap edenler",
+     "Hem göze hem kulağa hitap edenler",
+     "Yalnız göze hitap edenler"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın akılda kalsın kısmını düşün.",
+    "aciklama": "Hem göze hem kulağa hitap eden araçlar en etkili tanıtım araçlarıdır. (s. 56)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Hangi duyuya hitap eder?",
+   "kutular": [
+    {
+     "etiket": "Göz",
+     "uyeler": [
+      "Göze Hitap Eden Araçlar",
+      "Afiş"
+     ]
+    },
+    {
+     "etiket": "Kulak",
+     "uyeler": [
+      "Kulağa Hitap Eden Araçlar"
+     ]
+    },
+    {
+     "etiket": "Göz ve kulak",
+     "uyeler": [
+      "Göze ve Kulağa Hitap Eden Araçlar"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Tasarımı geliştirmek mi, tanıtmak mı?",
+   "kutular": [
+    {
+     "etiket": "Geliştirmek",
+     "uyeler": [
+      "Ürün Değerlendirme",
+      "Yeniden Tasarım"
+     ]
+    },
+    {
+     "etiket": "Tanıtmak",
+     "uyeler": [
+      "Ürün Tanıtımı",
+      "Afiş"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Görevli kartları, ziyaretçilerin sorularını doğru kişiye sormasını sağlar. (s. 55)",
+  "Bir afişe bakan kişi onu yalnızca birkaç saniyede algılar; bu yüzden mesaj kısa olmalıdır. (s. 54)"
+ ],
+ "akildaKalsin": [
+  "Değerlendirme: sorunu çözdü mü, kullanıcıya uygun mu?",
+  "Eksikler düzeltilir; tasarım süreci döngüseldir.",
+  "Tanıtım pazarlamanın ilk ve en önemli adımıdır.",
+  "Afiş: kısa mesaj (5–6 kelime), canlı renk.",
+  "En etkilisi hem göze hem kulağa hitap edenler: sunu, sergi, fuar."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Neden hem görüp hem duyduğumuzu daha iyi hatırlarız?",
+   "cevap": "Kitaba göre yalnız okuduğumuzu az, gördüğümüzü daha çok, hem görüp hem duyduğumuzu çok daha iyi hatırlarız; söyleyip dokununca daha da iyi. (s. 56)"
+  },
+  {
+   "soru": "Davetiyeye neler yazılır?",
+   "cevap": "Davet nedeni, konusu, yeri, tarihi ve saati; bir resim ya da logo da eklenebilir. (s. 54)"
+  },
+  {
+   "soru": "Tanıtım kartı ne işe yarar?",
+   "cevap": "Sergideki ürünlerin etiketidir; izleyiciler ürün hakkında bilgi edinir. (s. 55)"
+  },
+  {
+   "soru": "Fuarlar ne zaman yapılır?",
+   "cevap": "Belli bir takvime göre, düzenli aralıklarla ve aynı yerlerde. Kitap, bilim ve gıda fuarları buna örnektir. (s. 56)"
+  },
+  {
+   "soru": "Sergi salonunda nelere dikkat edilir?",
+   "cevap": "Işık ve ses düzenine. Ürün etiketi, davetiye, afiş ve broşür de sunumu zenginleştirir. (s. 56)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Tasarladığın ürün için bir afiş sloganı yaz. Sloganın neden kısa olmalı?",
+   "ornekCevap": "'Kalemin evi, masanın düzeni!' Slogan kısa olmalı çünkü afişe birkaç saniye bakılır; kısa slogan uzaktan okunur ve akılda kalır.",
+   "anahtarlar": [
+    "kısa",
+    "kelime",
+    "slogan",
+    "saniye",
+    "uzak"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Değerlendirmede 'Benzerlerine göre üstün yanları neler?' diye sorulur. Bu soru neyi anlamak içindir?",
+   "secenekler": [
+    "Ürünün kaç kilo olduğunu",
+    "Tasarımın diğerlerinden iyi yanlarını",
+    "Tasarımcının yaşını"
+   ],
+   "dogru": 1,
+   "ipucu": "Benzerleriyle karşılaştırıyoruz.",
+   "aciklama": "Değerlendirmede tasarımın benzerlerine göre üstün yanları sorgulanır. (s. 52)",
+   "kavram": "Ürün Değerlendirme"
+  },
+  {
+   "soru": "Tasarım süreci neden döngüseldir?",
+   "secenekler": [
+    "Eksikler bulununca tasarım yeniden geliştirilir",
+    "Tasarım bir kez yapılıp biter",
+    "Hiç değerlendirme yapılmaz"
+   ],
+   "dogru": 0,
+   "ipucu": "Daire gibi başa dönen süreç…",
+   "aciklama": "Döngüsel süreçte eksikler tespit edilip tasarım geliştirilir. (s. 57)",
+   "kavram": "Yeniden Tasarım"
+  },
+  {
+   "soru": "Ürün tanıtımının amacı nedir?",
+   "secenekler": [
+    "Ürünü saklamak",
+    "Ürünü bozmak",
+    "Ürünü çok kişiye tanıtmak ve beğendirmek"
+   ],
+   "dogru": 2,
+   "ipucu": "Tanıt, beğendir.",
+   "aciklama": "Ürün tanıtımı bir malı geniş kitlelere tanıtmak ve beğendirmek için yapılır. (s. 53)",
+   "kavram": "Ürün Tanıtımı"
+  },
+  {
+   "soru": "Davetiyede hangisi mutlaka belirtilmelidir?",
+   "secenekler": [
+    "Davet edenin boyu",
+    "Davetiyenin fiyatı",
+    "Yer, tarih ve saat"
+   ],
+   "dogru": 2,
+   "ipucu": "Davetliler nereye ve ne zaman gelecek?",
+   "aciklama": "Davetiyede davet nedeni, yeri, tarihi ve saati açıkça belirtilir. (s. 54)",
+   "kavram": "Göze Hitap Eden Araçlar"
+  },
+  {
+   "soru": "Afişteki slogan kaç metre uzaktan okunabilmelidir?",
+   "secenekler": [
+    "30–40 metre",
+    "3–4 metre",
+    "Yalnız yakından"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartın ek bilgisine bak.",
+   "aciklama": "Slogan 3–4 metre uzaktan okunabilmelidir. (s. 54)",
+   "kavram": "Afiş"
+  },
+  {
+   "soru": "Hangisi kulağa hitap eden bir tanıtım aracıdır?",
+   "secenekler": [
+    "Radyo",
+    "Afiş",
+    "Broşür"
+   ],
+   "dogru": 0,
+   "ipucu": "Duyduğumuz araç…",
+   "aciklama": "Radyo, telefon ve megafon kulağa hitap eden araçlardır. (s. 56)",
+   "kavram": "Kulağa Hitap Eden Araçlar"
+  },
+  {
+   "soru": "Okulda yapılan ürünlerin sunumunda en çok hangi yöntem kullanılır?",
+   "secenekler": [
+    "Sergi",
+    "Radyo reklamı",
+    "Gazete ilanı"
+   ],
+   "dogru": 0,
+   "ipucu": "Okul koridorunda ürünler sergilenir…",
+   "aciklama": "Sergi, okul ortamında ürünlerin sunumunda en çok kullanılan yöntemdir. (s. 56)",
+   "kavram": "Göze ve Kulağa Hitap Eden Araçlar"
+  },
+  {
+   "soru": "Ürünü dünya genelinde ucuza tanıtmanın bir yolu hangisidir?",
+   "secenekler": [
+    "Megafon",
+    "Görevli kartı",
+    "İyi bir web sitesi"
+   ],
+   "dogru": 2,
+   "ipucu": "Elektronik ortam…",
+   "aciklama": "İyi bir web sitesi ürünleri dünya genelinde pazarlamak için görece ucuz bir yoldur. (s. 56)",
+   "kavram": "Göze ve Kulağa Hitap Eden Araçlar"
+  }
+ ]
+}

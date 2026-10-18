@@ -1,0 +1,317 @@
+{
+ "id": "u3k6",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "Tasarım Geliştirme Kriterleri",
+ "sayfalar": "s. 34, 42–46 · program",
+ "kaynakNotu": "Kullanım kolaylığı, sürdürülebilirlik ölçütleri ile kullanıcı, malzeme, uygulama ve çevre faktörleri MEB programının öğrenme-öğretme uygulamalarında geçer: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1439 · Sürdürülebilirlik tanımı (Brundtland Komisyonu, 1987), İstanbul Maden ve Metal İhracatçı Birlikleri: https://immib.org.tr/TR/12-ayda-surdurulebilirlik · Kitapta sürdürülebilirlik değerlendirme ölçütü olarak geçer (s. 34).",
+ "giris": "Bir tasarımın iyi olup olmadığını nasıl anlarız? Tasarımcılar taslaklarını bazı sorularla kontrol eder. Bu konuda bu ölçütleri, yani tasarım geliştirme kriterlerini öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Ergonomik",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='36' fill='#2a9d8f'/><path d='M42 70c0-14 8-24 18-24s18 10 18 24' stroke='#ffd8a8' stroke-width='10' fill='none' stroke-linecap='round'/><circle cx='60' cy='40' r='8' fill='#ffd8a8'/></svg>",
+   "aciklama": "Ergonomik tasarım, insanın makine ve çevreyle uyumunu gözetir; insana rahat gelir.",
+   "akilda": "İnsana uygun mu?",
+   "soru": {
+    "soru": "Elini yormayan, tutması rahat bir makas hangi kritere uyar?",
+    "secenekler": [
+     "Yalın",
+     "Ergonomik",
+     "Özgün-yenilikçi"
+    ],
+    "dogru": 1,
+    "ipucu": "İnsana rahat gelen tasarım…",
+    "aciklama": "Ergonomi insanın makine ve çevreyle uyumunu araştırır. (s. 45)"
+   }
+  },
+  {
+   "ad": "Estetik",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='36' fill='#c2255c'/><ellipse cx='74' cy='56' rx='9' ry='9' fill='#ffc9de'/><ellipse cx='46' cy='56' rx='9' ry='9' fill='#ffc9de'/><ellipse cx='60' cy='70' rx='9' ry='9' fill='#ffc9de'/><ellipse cx='60' cy='42' rx='9' ry='9' fill='#ffc9de'/><circle cx='60' cy='56' r='8' fill='#f2c14e'/></svg>",
+   "aciklama": "Estetik; sanatla, güzellikle ve tatla ilgilenen felsefe dalıdır. Estetik bir tasarım göze güzel gelir.",
+   "akilda": "Güzel mi?",
+   "soru": {
+    "soru": "'Tasarımın göze güzel görünüyor mu?' sorusu hangi kriteri sorar?",
+    "secenekler": [
+     "Estetik",
+     "Ergonomik",
+     "İşlevsel"
+    ],
+    "dogru": 0,
+    "ipucu": "Güzellikle ilgilenen…",
+    "aciklama": "Estetik sanatla, güzellikle ve tatla ilgilenir. (s. 45)"
+   }
+  },
+  {
+   "ad": "Özgün-Yenilikçi",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='36' fill='#c99a06'/><path d='M60 28l8 18 20 2-15 13 5 19-18-10-18 10 5-19-15-13 20-2z' fill='#ffffff'/></svg>",
+   "aciklama": "Özgün tasarım bir buluş sonucu ortaya çıkar; benzerlerinden ayrı ve üstündür.",
+   "akilda": "Benzerlerinden farklı mı?",
+   "soru": {
+    "soru": "Başka hiçbir üründe olmayan yeni bir özellik taşıyan tasarım hangi kritere uyar?",
+    "secenekler": [
+     "Özgün-yenilikçi",
+     "Yalın",
+     "Estetik"
+    ],
+    "dogru": 0,
+    "ipucu": "Benzerlerinden ayrı ve üstün…",
+    "aciklama": "Özgün-yenilikçi tasarım benzerlerinden ayrı ve üstündür. (s. 45)"
+   }
+  },
+  {
+   "ad": "İşlevsel",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='36' fill='#1d6fa3'/><circle cx='60' cy='56' r='14' fill='none' stroke='#ffffff' stroke-width='6'/><rect x='56' y='28' width='8' height='12' fill='#ffffff' transform='rotate(0 60 56)'/><rect x='56' y='28' width='8' height='12' fill='#ffffff' transform='rotate(60 60 56)'/><rect x='56' y='28' width='8' height='12' fill='#ffffff' transform='rotate(120 60 56)'/><rect x='56' y='28' width='8' height='12' fill='#ffffff' transform='rotate(180 60 56)'/><rect x='56' y='28' width='8' height='12' fill='#ffffff' transform='rotate(240 60 56)'/><rect x='56' y='28' width='8' height='12' fill='#ffffff' transform='rotate(300 60 56)'/></svg>",
+   "aciklama": "İşlevsel tasarım, kullanıldığı yerde ve durumda işe yarar.",
+   "ek": "Program bir de kullanım kolaylığı ölçütünü sayar: Ürün zorlanmadan kullanılabilmeli (kitap dışı, MEB programı).",
+   "akilda": "İşe yarıyor mu?",
+   "soru": {
+    "soru": "Su sızdıran bir su şişesi hangi kritere uymaz?",
+    "secenekler": [
+     "Estetik",
+     "Özgün-yenilikçi",
+     "İşlevsel"
+    ],
+    "dogru": 2,
+    "ipucu": "Şişe işini yapıyor mu?",
+    "aciklama": "İşlevsellik, objenin kullanıldığı duruma göre işe yarar olmasıdır. (s. 45)"
+   }
+  },
+  {
+   "ad": "Yalın",
+   "renk": "#5c677d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='36' fill='#5c677d'/><rect x='42' y='38' width='36' height='36' rx='6' fill='#ffffff'/></svg>",
+   "aciklama": "Yalın tasarım karmaşık değildir; sade, süssüz ve kolay anlaşılır.",
+   "ek": "Kitap ayrıca sorar: Tasarımın bakımı kolay mı? Tamir edilebilir mi?",
+   "akilda": "Sade ve anlaşılır",
+   "soru": {
+    "soru": "Gereksiz süsü olmayan, kolay anlaşılan bir kumanda hangi kritere uyar?",
+    "secenekler": [
+     "Ergonomik",
+     "Yalın",
+     "Estetik"
+    ],
+    "dogru": 1,
+    "ipucu": "Sade ve süssüz…",
+    "aciklama": "Yalın tasarım karmaşık olmayan, kolay anlaşılan, sade bir yapıdadır. (s. 45)"
+   }
+  },
+  {
+   "ad": "Malzeme ve Maliyet",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='36' fill='#d9480f'/><rect x='36' y='42' width='26' height='26' fill='#ffd8a8'/><rect x='58' y='52' width='26' height='18' fill='#e9ecef'/><path d='M50 32a10 10 0 1 1 20 0' stroke='#ffffff' stroke-width='4' fill='none'/><text x='60' y='86' font-size='12' font-weight='700' fill='#ffffff' text-anchor='middle' font-family='sans-serif'>₺</text></svg>",
+   "aciklama": "Malzemeler kolay bulunmalı, dayanıklı, ekonomik ve geri dönüşüme uygun olmalıdır.",
+   "ek": "Önce bugünkü çözümlerde kullanılan yöntem, teknik ve malzemeler araştırılır. Sonra kullanılacak malzeme ve maliyeti yazılır.",
+   "akilda": "Dayanıklı, ucuz, dönüşebilir",
+   "soru": {
+    "soru": "Malzeme seçerken hangisi istenir?",
+    "secenekler": [
+     "Çok kırılgan olması",
+     "Geri dönüşmemesi",
+     "Kolay bulunabilmesi"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta dört özellik vardı.",
+    "aciklama": "Malzemeler kolay bulunabilir, dayanıklı, ekonomik ve geri dönüşüme uygun olmalıdır. (s. 45)"
+   }
+  },
+  {
+   "ad": "Sürdürülebilirlik",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='36' fill='#2f9e44'/><path d='M60 30c18 6 22 26 8 40-6 6-14 8-20 6 0-20 4-36 12-46z' fill='#b2f2bb'/><path d='M48 76q6-22 16-36' stroke='#2f9e44' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Sürdürülebilirlik, bugünün ihtiyaçlarını karşılarken gelecek nesillerin ihtiyaçlarını da düşünmektir.",
+   "ek": "Kitaba göre tasarım sürdürülebilirlik açısından da değerlendirilir (s. 34). Tanım kitap dışıdır.",
+   "akilda": "Geleceği de düşün",
+   "soru": {
+    "soru": "Hangisi sürdürülebilir bir tasarıma örnektir?",
+    "secenekler": [
+     "Tekrar doldurulabilen kalem",
+     "Bir kez kullanılıp atılan plastik çatal",
+     "Kısa sürede bozulan oyuncak"
+    ],
+    "dogru": 0,
+    "ipucu": "Gelecek nesilleri düşün: atık az olmalı.",
+    "aciklama": "Uzun süre kullanılan ve atık oluşturmayan ürün sürdürülebilirliğe uygundur. (s. 34; program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu kriter neye bakar?",
+   "kutular": [
+    {
+     "etiket": "Kullanana",
+     "uyeler": [
+      "Ergonomik",
+      "İşlevsel"
+     ]
+    },
+    {
+     "etiket": "Görünüşe",
+     "uyeler": [
+      "Estetik",
+      "Yalın"
+     ]
+    },
+    {
+     "etiket": "Yeniliğe",
+     "uyeler": [
+      "Özgün-Yenilikçi"
+     ]
+    },
+    {
+     "etiket": "Malzemeye ve çevreye",
+     "uyeler": [
+      "Malzeme ve Maliyet",
+      "Sürdürülebilirlik"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Taslak geliştirilirken bu kriterler tek tek sorgulanır; sonra taslak öneri açıklanır. (s. 45)"
+ ],
+ "akildaKalsin": [
+  "Ergonomik: insana uygun; estetik: göze güzel.",
+  "Özgün-yenilikçi: benzerlerinden ayrı ve üstün.",
+  "İşlevsel: işe yarar; yalın: sade ve anlaşılır.",
+  "Malzeme: kolay bulunur, dayanıklı, ekonomik, geri dönüşüme uygun.",
+  "Sürdürülebilirlik: geleceği de düşün."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Tasarım yaparken hangi faktörler birlikte düşünülür?",
+   "cevap": "Kullanıcı, malzeme, uygulama ve çevre. Program bu dört faktörün birbiriyle ilişkisini incelememizi ister. (program)"
+  },
+  {
+   "soru": "Estetik bir felsefe dalı mı?",
+   "cevap": "Evet. Estetik; sanatla, güzellikle ve tatla ilgilenen felsefe dalıdır. (s. 45)"
+  },
+  {
+   "soru": "Bugünkü çözümlerin malzemelerini neden araştırırız?",
+   "cevap": "Hangi yöntem, teknik ve araç gereçlerin kullanıldığını görüp kendi seçimimizi yapmak için. (s. 46)"
+  },
+  {
+   "soru": "Kitap bakım için ne sorar?",
+   "cevap": "'Tasarımınızın bakımı kolay mı? Tamir edilebilir mi?' diye sorar. (s. 45)"
+  },
+  {
+   "soru": "Taslak öneri nedir?",
+   "cevap": "Tasarımın ilk hâlinin çizimidir; ayrıntılar çizimin üzerinde gösterilir. (s. 42)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir kalemlik tasarlayacaksın. Sürdürülebilir olması için ne yapardın?",
+   "ornekCevap": "Eski bir kavanozdan ya da atık kartondan yapardım. Uzun süre kullanılır ve geri dönüşüme uygun olur.",
+   "anahtarlar": [
+    "geri dön",
+    "atık",
+    "uzun",
+    "kavanoz",
+    "karton"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Estetik hangi konularla ilgilenen felsefe dalıdır?",
+   "secenekler": [
+    "Sayılar",
+    "Sanat, güzellik ve tat",
+    "Hastalıklar"
+   ],
+   "dogru": 1,
+   "ipucu": "Estetik kartını hatırla.",
+   "aciklama": "Estetik sanatla, güzellikle ve tatla ilgilenen felsefe dalıdır. (s. 45)",
+   "kavram": "Estetik"
+  },
+  {
+   "soru": "Hangisi tasarım geliştirme kriterlerinden biri değildir?",
+   "secenekler": [
+    "Yalın olması",
+    "Çok pahalı olması",
+    "İşlevsel olması"
+   ],
+   "dogru": 1,
+   "ipucu": "Malzeme ekonomik mi olmalı?",
+   "aciklama": "Kullanılacak malzemeler ekonomik olmalıdır; pahalılık bir kriter değildir. (s. 45)",
+   "kavram": "Malzeme ve Maliyet"
+  },
+  {
+   "soru": "'Benzerlerinden ayrı ve üstün mü?' sorusu hangi kriteri sorar?",
+   "secenekler": [
+    "Özgün-yenilikçi",
+    "Yalın",
+    "Ergonomik"
+   ],
+   "dogru": 0,
+   "ipucu": "Buluş sonucu ortaya çıkan…",
+   "aciklama": "Özgün-yenilikçi tasarım benzerlerinden ayrı ve üstündür. (s. 45)",
+   "kavram": "Özgün-Yenilikçi"
+  },
+  {
+   "soru": "Bir objenin kullanıldığı duruma göre işe yarar olması neyi gösterir?",
+   "secenekler": [
+    "Estetiği",
+    "Yalınlığı",
+    "İşlevselliği"
+   ],
+   "dogru": 2,
+   "ipucu": "İşe yarıyor mu?",
+   "aciklama": "İşlevsellik, objenin kullanılan olaya ve duruma göre işe yarar olmasıdır. (s. 45)",
+   "kavram": "İşlevsel"
+  },
+  {
+   "soru": "Kullanılacak malzemeler için hangisi doğrudur?",
+   "secenekler": [
+    "Bulunması çok zor olmalı",
+    "Kolay kırılmalı",
+    "Ekonomik ve geri dönüşüme uygun olmalı"
+   ],
+   "dogru": 2,
+   "ipucu": "Dört özellik: kolay bulunur, dayanıklı…",
+   "aciklama": "Malzemeler ekonomik ve geri dönüşüme uygun olmalıdır. (s. 45)",
+   "kavram": "Malzeme ve Maliyet"
+  },
+  {
+   "soru": "Yalın tasarımın özelliği hangisidir?",
+   "secenekler": [
+    "Çok süslü olması",
+    "Sade ve kolay anlaşılır olması",
+    "Karmaşık olması"
+   ],
+   "dogru": 1,
+   "ipucu": "Yalın = sade.",
+   "aciklama": "Yalın tasarım karmaşık olmayan, kolay anlaşılan, sade bir yapıdadır. (s. 45)",
+   "kavram": "Yalın"
+  },
+  {
+   "soru": "Ergonomik kriteri hangi soruyla kontrol edilir?",
+   "secenekler": [
+    "İnsanın makine ve çevreyle uyumu iyi mi?",
+    "Ürün kaç liraya satılır?",
+    "Ürün hangi renkte?"
+   ],
+   "dogru": 0,
+   "ipucu": "Ergonomi insanla ilgilidir.",
+   "aciklama": "Ergonomi insanın makine ve çevre ile uyumunu araştırır. (s. 45)",
+   "kavram": "Ergonomik"
+  },
+  {
+   "soru": "Sürdürülebilirlik neyi düşünmemizi ister?",
+   "secenekler": [
+    "Gelecek nesillerin ihtiyaçlarını da",
+    "Yalnız bugünü",
+    "Yalnız ürünün süsünü"
+   ],
+   "dogru": 0,
+   "ipucu": "Geleceği de düşün.",
+   "aciklama": "Sürdürülebilirlik bugünün ihtiyacını karşılarken gelecek nesilleri de düşünmektir. (program)",
+   "kavram": "Sürdürülebilirlik"
+  }
+ ]
+}

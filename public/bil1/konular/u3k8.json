@@ -1,0 +1,308 @@
+{
+ "id": "u3k8",
+ "unite": "3. Ünite: Tasarım Odaklı Süreç",
+ "baslik": "İş Güvenliği ve Geri Dönüşüm",
+ "sayfalar": "s. 50–51",
+ "giris": "Atölyede çalışırken önce güvenliğimizi düşünürüz. Proje bitince atık malzemeleri değerlendiririz. Bu konuda iş güvenliğini ve geri dönüşümü öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "İş Güvenliği",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 18l46 80H14z' fill='#f2c14e'/><path d='M60 18l46 80H14z' stroke='#1b2340' stroke-width='4' fill='none' transform='scale(.82) translate(13 16)'/><text x='60' y='88' font-size='40' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>!</text></svg>",
+   "aciklama": "İş güvenliği, çalışırken kendimizi ve arkadaşlarımızı kazalardan korumak için uyduğumuz kurallardır.",
+   "ek": "Yasaklayıcı ve uyarıcı tabelalara, işaretlere uyulur. Kitaba göre gerekli önlemler alınırsa iş kazalarının neredeyse hepsi önlenebilir.",
+   "akilda": "Önce güvenlik",
+   "soru": {
+    "soru": "Atölyedeki uyarı tabelaları için ne yapmalıyız?",
+    "secenekler": [
+     "Görmezden gelmeliyiz",
+     "Yerlerini değiştirmeliyiz",
+     "Onlara uymalıyız"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisine bak.",
+    "aciklama": "İş güvenliği için yasaklayıcı ve uyarıcı tabelalara, işaretlere uyulur. (s. 50)"
+   }
+  },
+  {
+   "ad": "Kişisel Korunma",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='46' r='22' fill='#ffd8a8'/><path d='M36 42q24-30 48 0z' fill='#f2c14e'/><rect x='30' y='40' width='60' height='6' rx='3' fill='#f2c14e'/><rect x='42' y='48' width='14' height='10' rx='4' fill='#6fb3ff'/><rect x='64' y='48' width='14' height='10' rx='4' fill='#6fb3ff'/><path d='M56 53h8' stroke='#1b2340' stroke-width='2'/><path d='M34 104c0-20 12-30 26-30s26 10 26 30' fill='#1d6fa3'/></svg>",
+   "aciklama": "İş için istenen giysi ve kişisel korunma araçları her zaman kullanılır.",
+   "ek": "Örneğin koruyucu gözlük ya da eldiven (kitap dışı örnek).",
+   "akilda": "Koruyucunu giy",
+   "soru": {
+    "soru": "Atölyede iş için istenen koruyucu gözlük ne zaman kullanılmalıdır?",
+    "secenekler": [
+     "Yalnız öğretmen bakarken",
+     "Hiçbir zaman",
+     "Her zaman"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta 'mutlaka her zaman' yazıyordu.",
+    "aciklama": "İş için istenen giysi ve kişisel korunma araçları mutlaka her zaman kullanılmalıdır. (s. 50)"
+   }
+  },
+  {
+   "ad": "Öğretmen Gözetimi",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M22 86l40-40' stroke='#e9ecef' stroke-width='8' stroke-linecap='round'/><path d='M62 46l16-16 10 10-16 16z' fill='#adb5bd'/><circle cx='84' cy='76' r='22' fill='#9b3fa6'/><circle cx='78' cy='72' r='3' fill='#ffffff'/><circle cx='90' cy='72' r='3' fill='#ffffff'/><path d='M78 82q6 5 12 0' stroke='#ffffff' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Kesici, delici, yanıcı araçlar yalnız öğretmen gözetiminde kullanılır. Kullanmayı bilmediğin aracı kullanmazsın.",
+   "ek": "Emin olmadığın konuda öğretmenine danış. Elektrikli aletlerin tamir ve ayarını yalnız yetkili kişiler yapar.",
+   "akilda": "Kesici araç: öğretmen yanında",
+   "soru": {
+    "soru": "Makası ve maket bıçağını nasıl kullanmalıyız?",
+    "secenekler": [
+     "Tek başımıza",
+     "Öğretmen gözetiminde",
+     "Şakalaşarak"
+    ],
+    "dogru": 1,
+    "ipucu": "Kesici araçlar için kural…",
+    "aciklama": "Kesici, delici, yanıcı araçlar öğretmen gözetiminde kullanılır. (s. 50)"
+   }
+  },
+  {
+   "ad": "Kazaya Karşı Dikkat",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='24' width='76' height='72' rx='14' fill='#e9ecef'/><path d='M60 40v40M40 60h40' stroke='#c2255c' stroke-width='14' stroke-linecap='round'/></svg>",
+   "aciklama": "Dikkatsizlik, bilgisizlik ve şakalaşma kazaya yol açabilir. Kaza olursa hemen öğretmene haber verilir.",
+   "ek": "Arkadaşlarına fazla yaklaşma; güvenli bir hareket alanı bırak. Aldığın malzemeyi yerine koy, atölyeyi temiz tut.",
+   "akilda": "Kaza olursa öğretmene söyle",
+   "soru": {
+    "soru": "Atölyede elin hafifçe kesildi. İlk ne yapmalısın?",
+    "secenekler": [
+     "Hemen öğretmene bildirmeliyim",
+     "Kimseye söylememeliyim",
+     "Çalışmaya devam etmeliyim"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta kaza olunca yapılacak şey yazıyordu.",
+    "aciklama": "Herhangi bir kaza ya da yaralanmada hemen öğretmene bildirilir. (s. 50)"
+   }
+  },
+  {
+   "ad": "Geri Dönüşüm",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 60m0 -30a30 30 0 0 1 26 15' stroke='#2f9e44' stroke-width='9' fill='none' transform='rotate(0 60 60)'/><path d='M84 36l8 12-14 2z' fill='#2f9e44' transform='rotate(0 60 60)'/><path d='M60 60m0 -30a30 30 0 0 1 26 15' stroke='#2f9e44' stroke-width='9' fill='none' transform='rotate(120 60 60)'/><path d='M84 36l8 12-14 2z' fill='#2f9e44' transform='rotate(120 60 60)'/><path d='M60 60m0 -30a30 30 0 0 1 26 15' stroke='#2f9e44' stroke-width='9' fill='none' transform='rotate(240 60 60)'/><path d='M84 36l8 12-14 2z' fill='#2f9e44' transform='rotate(240 60 60)'/></svg>",
+   "aciklama": "Geri dönüşüm, atıkların işlemlerden geçirilip yeniden ham madde olarak üretime katılmasıdır.",
+   "akilda": "Atık → ham madde",
+   "soru": {
+    "soru": "Eski gazetelerin işlenip yeniden kâğıt yapılması neye örnektir?",
+    "secenekler": [
+     "Geri dönüşüm",
+     "İş güvenliği",
+     "Prototip"
+    ],
+    "dogru": 0,
+    "ipucu": "Atık yeniden ham madde oluyor…",
+    "aciklama": "Atıkların işlenip ikinci bir ham maddeye dönüştürülmesi geri dönüşümdür. (s. 51)"
+   }
+  },
+  {
+   "ad": "Geri Dönüşümün Faydaları",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 22c22 8 28 34 10 52-8 8-18 10-26 8 0-26 6-46 16-60z' fill='#63e6be'/><circle cx='88' cy='82' r='10' fill='#f2c14e'/><rect x='82' y='90' width='12' height='9' rx='2' fill='#5c677d'/><rect x='18' y='74' width='26' height='26' rx='4' fill='#e9ecef'/><text x='31' y='93' font-size='14' font-weight='700' fill='#2a9d8f' text-anchor='middle' font-family='sans-serif'>₺</text></svg>",
+   "aciklama": "Geri dönüşümle atık miktarı azalır, doğal kaynaklar korunur, enerji tasarrufu sağlanır ve ekonomiye katkı olur.",
+   "akilda": "Az atık, çok tasarruf",
+   "soru": {
+    "soru": "Hangisi geri dönüşümün faydalarından biri değildir?",
+    "secenekler": [
+     "Enerji tasarrufu sağlaması",
+     "Doğal kaynakları koruması",
+     "Atık miktarını artırması"
+    ],
+    "dogru": 2,
+    "ipucu": "Geri dönüşümle atık azalır mı, artar mı?",
+    "aciklama": "Geri dönüşümle atık miktarı azalır, kaynaklar korunur, enerji tasarrufu sağlanır. (s. 51)"
+   }
+  },
+  {
+   "ad": "İkincil Kullanım",
+   "renk": "#d9480f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='34' width='30' height='54' rx='6' fill='#6fb3ff'/><rect x='24' y='26' width='18' height='10' rx='2' fill='#5c677d'/><path d='M54 60L68 60' stroke='#e9ecef' stroke-width='4' stroke-linecap='round'/><path d='M68 54L76 60L68 66z' fill='#e9ecef'/><rect x='76' y='50' width='30' height='40' rx='4' fill='#6fb3ff'/><path d='M82 50l-4-24M90 50l2-26M98 50l6-22' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/></svg>",
+   "aciklama": "İkincil kullanım, kullanımı biten bir ürünü başka bir iş için yeniden kullanmaktır.",
+   "ek": "Burada ürün ham maddeye dönüşmez, olduğu gibi başka işe kullanılır. Kitap projelerde dönüştürülebilir atıkları kullanmamızı ister.",
+   "akilda": "Atma, başka işe kullan",
+   "soru": {
+    "soru": "Boş bir kavanozu kalemlik yapmak neye örnektir?",
+    "secenekler": [
+     "Ergonomi",
+     "İkincil kullanım",
+     "Teknik resim"
+    ],
+    "dogru": 1,
+    "ipucu": "Kullanımı biten ürün başka işte…",
+    "aciklama": "Kullanımı tamamlanmış ürünler ikincil amaçlar için kullanılabilir. (s. 51)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Güvenlik mi, atığı değerlendirme mi?",
+   "kutular": [
+    {
+     "etiket": "Güvenlik",
+     "uyeler": [
+      "İş Güvenliği",
+      "Kişisel Korunma",
+      "Öğretmen Gözetimi",
+      "Kazaya Karşı Dikkat"
+     ]
+    },
+    {
+     "etiket": "Atığı değerlendirme",
+     "uyeler": [
+      "Geri Dönüşüm",
+      "Geri Dönüşümün Faydaları",
+      "İkincil Kullanım"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Atölye tabelalarında 'Aldığın takım ve malzemeni yerine koy' ve 'İşe başlamadan güvenlik tedbirini al' gibi uyarılar bulunur. (s. 50)",
+  "Giysi toplama kutusu da eski giysileri değerlendirmenin bir yoludur. (s. 51)"
+ ],
+ "akildaKalsin": [
+  "Tabelalara uy, koruyucunu her zaman kullan.",
+  "Kesici, delici, yanıcı araç: öğretmen gözetiminde.",
+  "Kaza olursa hemen öğretmene söyle.",
+  "Geri dönüşüm: atık yeniden ham madde olur.",
+  "İkincil kullanım: biten ürünü başka işe kullan."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "İş güvenliği eğitimi neden önemli?",
+   "cevap": "Kitaba göre eğitim, iş kazalarını ve meslek hastalıklarını azaltmanın en temel yoludur. Özellikle gençler bu kazalardan etkilenir. (s. 50)"
+  },
+  {
+   "soru": "Kazalar önlenebilir mi?",
+   "cevap": "Evet. Kitaba göre gerekli önlemler alınırsa iş kazalarının neredeyse hepsi önlenebilir. (s. 50)"
+  },
+  {
+   "soru": "Elektrikli bir alet bozulursa ben tamir edebilir miyim?",
+   "cevap": "Hayır. Elektrikli alet ve makinelerin tamirini yalnız yetkili kişiler yapar. (s. 50)"
+  },
+  {
+   "soru": "Atölyede neden arkadaşlarımıza çok yaklaşmamalıyız?",
+   "cevap": "Çalışanların hareketini engellememek için. Güvenli bir hareket alanı bırakılır. (s. 50)"
+  },
+  {
+   "soru": "Geri dönüşüm doğaya nasıl yardım eder?",
+   "cevap": "Atık azalır ve doğal kaynaklarımız korunur. (s. 51)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Sınıfta biten projelerden boş kartonlar ve şişeler kaldı. Bunları nasıl değerlendirirsin? Bir fikir yaz.",
+   "ornekCevap": "Kartonlardan kalemlik, şişelerden saksı yapardım. Kullanamadıklarımı geri dönüşüm kutusuna atardım.",
+   "anahtarlar": [
+    "geri dön",
+    "kutu",
+    "kalemlik",
+    "yeniden",
+    "kullan"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Çalışmasını bilmediğin bir aracı kullanman gerekirse ne yapmalısın?",
+   "secenekler": [
+    "Tek başıma denemeliyim",
+    "Arkadaşımla şakalaşarak denemeliyim",
+    "Öğretmenime danışmalıyım"
+   ],
+   "dogru": 2,
+   "ipucu": "Emin olmadığın konularda…",
+   "aciklama": "Çalışmasını bilmediğiniz araçları kullanmayın, emin olmadığınız konularda öğretmeninize danışın. (s. 50)",
+   "kavram": "Öğretmen Gözetimi"
+  },
+  {
+   "soru": "Elektrikli makinelerin tamirini kim yapar?",
+   "secenekler": [
+    "Yetkili kişiler",
+    "Öğrenciler",
+    "Herkes"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartın ek bilgisinde yazıyordu.",
+   "aciklama": "Elektrik teçhizatı ve makinelerin tamirini yetkili personel dışında kimse yapamaz. (s. 50)",
+   "kavram": "Öğretmen Gözetimi"
+  },
+  {
+   "soru": "Hangisi kazaya yol açabilecek davranışlardan biridir?",
+   "secenekler": [
+    "Tabelalara uymak",
+    "Şakalaşmak",
+    "Koruyucu giymek"
+   ],
+   "dogru": 1,
+   "ipucu": "Dikkatsizlik, bilgisizlik ve…",
+   "aciklama": "Dikkatsizlik, bilgisizlik ve şakalaşma kazaya yol açabilir. (s. 50)",
+   "kavram": "Kazaya Karşı Dikkat"
+  },
+  {
+   "soru": "Atölyede çalışırken arkadaşlarımızla aramızda ne bırakmalıyız?",
+   "secenekler": [
+    "Hiç boşluk",
+    "Güvenli bir hareket alanı",
+    "Kesici aletler"
+   ],
+   "dogru": 1,
+   "ipucu": "Birbirinize çok yaklaşmayın…",
+   "aciklama": "Çalışanların hareketini engellememek için güvenli bir hareket alanı bırakılır. (s. 50)",
+   "kavram": "Kazaya Karşı Dikkat"
+  },
+  {
+   "soru": "İş güvenliği için hangisine uyulur?",
+   "secenekler": [
+    "Yasaklayıcı ve uyarıcı tabelalara",
+    "Yalnız kendi isteğimize",
+    "Hiçbir kurala"
+   ],
+   "dogru": 0,
+   "ipucu": "Tabelalar…",
+   "aciklama": "Yasaklayıcı ve uyarıcı tabelalara, işaretlere uyulur. (s. 50)",
+   "kavram": "İş Güvenliği"
+  },
+  {
+   "soru": "Atıkların işlenip yeniden ham madde olması neye denir?",
+   "secenekler": [
+    "İkincil kullanım",
+    "Prototip",
+    "Geri dönüşüm"
+   ],
+   "dogru": 2,
+   "ipucu": "Ham madde kelimesine dikkat et.",
+   "aciklama": "Atıkların işlemlerden geçirilip ham maddeye dönüştürülmesi geri dönüşümdür. (s. 51)",
+   "kavram": "Geri Dönüşüm"
+  },
+  {
+   "soru": "Geri dönüşümün ekonomiye etkisi nedir?",
+   "secenekler": [
+    "Ekonomiye zarar verir",
+    "Hiç etkisi yoktur",
+    "Ekonomiye katkı sağlar"
+   ],
+   "dogru": 2,
+   "ipucu": "Dört faydadan biri…",
+   "aciklama": "Geri dönüşümle ekonomiye katkı sağlanır. (s. 51)",
+   "kavram": "Geri Dönüşümün Faydaları"
+  },
+  {
+   "soru": "Eski bir ayakkabı kutusunu oyuncak dolabı olarak kullanmak neye örnektir?",
+   "secenekler": [
+    "Geri dönüşüm fabrikası",
+    "İkincil kullanım",
+    "Teknik çizim"
+   ],
+   "dogru": 1,
+   "ipucu": "Kutu olduğu gibi başka işe yarıyor.",
+   "aciklama": "Kullanımı biten ürünü başka bir amaç için kullanmak ikincil kullanımdır. (s. 51)",
+   "kavram": "İkincil Kullanım"
+  }
+ ]
+}
