@@ -1,0 +1,286 @@
+{
+ "id": "u2k3",
+ "unite": "2. Ünite: Temel Tasarım",
+ "baslik": "Tasarım İlkeleri 1: Denge, Ritim, Hareket, Vurgu, Zıtlık",
+ "sayfalar": "s. 24, 27–28 · program",
+ "kaynakNotu": "Hareket ve zıtlık kitapta tanımlanmaz (hareket yalnız s. 28'deki listede geçer). MEB programı anahtar kavramları: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1438. Zıtlık tanımı Görsel Sanatlar Dersi Öğretim Programı'ndan (2018; Kontrast: koyu-açık ve zıt; Denge: simetrik, asimetrik): https://mufredat.meb.gov.tr/Dosyalar/2018121111026326-GORSEL%20SANATLAR.pdf. Hareket tanımı MEB MEGEP Tasarı İlkeleri modülünden (hareket genellikle yöne bağlı oluşur): https://samsunhem.meb.k12.tr/meb_iys_dosyalar/55/18/970092/dosyalar/2016_06/19112925_6.tasari_ilkeleri.pdf",
+ "giris": "Elemanlar tasarımın parçalarıdır. İlkeler ise bu parçaları nasıl düzenleyeceğimizi söyler. Bu konuda denge, ritim, hareket, vurgu ve zıtlığı öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Denge",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 92l-12 12h24z' fill='#5c677d'/><path d='M14 84h92' stroke='#e9ecef' stroke-width='5' stroke-linecap='round'/><path d='M60 84v8' stroke='#5c677d' stroke-width='4'/><rect x='20' y='60' width='22' height='22' rx='3' fill='#2a9d8f'/><rect x='78' y='60' width='22' height='22' rx='3' fill='#2a9d8f'/></svg>",
+   "aciklama": "Denge, parçaların bütün içinde eşit dağılmasıdır. Böylece tasarım kararlı görünür.",
+   "ek": "İki tarafın aynı olduğu dengeye simetrik, farklı ama yine dengeli olana asimetrik denge denir (kitap dışı: Görsel Sanatlar programı).",
+   "akilda": "Parçalar eşit dağılır",
+   "soru": {
+    "soru": "Tahterevallinin iki ucuna aynı ağırlıkta iki çocuk oturursa hangi ilke oluşur?",
+    "secenekler": [
+     "Denge",
+     "Vurgu",
+     "Çeşitlilik"
+    ],
+    "dogru": 0,
+    "ipucu": "Parçalar eşit dağılınca…",
+    "aciklama": "Denge, parçaların bütün içinde eşit dağılımıdır. (s. 27)"
+   }
+  },
+  {
+   "ad": "Ritim",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#ff8fab'><circle cx='20' cy='60' r='8'/><circle cx='60' cy='60' r='8'/><circle cx='100' cy='60' r='8'/></g><g fill='#6fb3ff'><rect x='32' y='52' width='16' height='16' rx='2'/><rect x='72' y='52' width='16' height='16' rx='2'/></g><path d='M12 86q8-10 16 0t16 0 16 0 16 0 16 0 16 0' stroke='#f2c14e' stroke-width='3' fill='none'/><path d='M12 34h96' stroke='#5c677d' stroke-width='2' stroke-dasharray='6 6'/></svg>",
+   "aciklama": "Ritim, renk, çizgi, şekil gibi elemanların uyumlu tekrarıdır.",
+   "ek": "Müzik, gece ile gündüz ve kalp atışı ritme örnektir. Farklı ya da zıt elemanlarla da ritim kurulabilir.",
+   "akilda": "Uyumlu tekrar",
+   "soru": {
+    "soru": "Bir kumaşta aynı çiçek deseninin sıra sıra tekrarlanması hangi ilkedir?",
+    "secenekler": [
+     "Zıtlık",
+     "Ritim",
+     "Oran"
+    ],
+    "dogru": 1,
+    "ipucu": "Tekrar eden desen…",
+    "aciklama": "Ritim, elemanların uyumlu tekrarıdır. (s. 27)"
+   }
+  },
+  {
+   "ad": "Hareket",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='86' cy='38' r='12' fill='#f2c14e'/><g stroke='#ff8fab' stroke-width='3' stroke-linecap='round'><path d='M62 50l-24 14'/><path d='M66 60l-30 18'/><path d='M58 40l-18 10'/></g><path d='M14 98q40-6 70-40' stroke='#6fb3ff' stroke-width='3' fill='none' stroke-dasharray='5 5'/><path d='M76 52l10-12 2 14' stroke='#6fb3ff' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Hareket, tasarımda bir şey ilerliyormuş ya da kayıyormuş gibi görünmesidir. Genellikle yöne bağlı oluşur.",
+   "ek": "Programda geçen kavram; kitapta s. 28'deki ilke listesinde adı geçer. Eğik çizgiler, oklar ve hız çizgileri hareket hissi verir. Tanım MEB modülünden.",
+   "akilda": "Yönle gelen hareket hissi",
+   "soru": {
+    "soru": "Resimde topun arkasına çizilen kısa hız çizgileri hangi ilkeyi sağlar?",
+    "secenekler": [
+     "Denge",
+     "Birlik",
+     "Hareket"
+    ],
+    "dogru": 2,
+    "ipucu": "Top ilerliyor gibi görünüyor…",
+    "aciklama": "Hız çizgileri yön verir ve hareket hissi oluşturur. (s. 28; program)"
+   }
+  },
+  {
+   "ad": "Vurgu",
+   "renk": "#d63384",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#5c677d'><circle cx='24' cy='28' r='7'/><circle cx='48' cy='28' r='7'/><circle cx='72' cy='28' r='7'/><circle cx='96' cy='28' r='7'/><circle cx='24' cy='60' r='7'/><circle cx='96' cy='60' r='7'/><circle cx='24' cy='92' r='7'/><circle cx='48' cy='92' r='7'/><circle cx='72' cy='92' r='7'/><circle cx='96' cy='92' r='7'/></g><circle cx='60' cy='60' r='16' fill='#ff4d6d'/><circle cx='60' cy='60' r='22' fill='none' stroke='#ff4d6d' stroke-width='2' stroke-dasharray='4 4'/></svg>",
+   "aciklama": "Vurgu, tasarımda göz alıcı olan odak noktasıdır. Boyut, yer, renk ya da çizgiyle sağlanır.",
+   "ek": "Düz bir kıyafetin üstüne takılan kolye ya da metindeki koyu yazılmış bölüm dikkati oraya çeker.",
+   "akilda": "Dikkat çeken odak",
+   "soru": {
+    "soru": "Gri noktalar arasındaki tek büyük kırmızı nokta hangi ilkeye örnektir?",
+    "secenekler": [
+     "Vurgu",
+     "Ritim",
+     "Denge"
+    ],
+    "dogru": 0,
+    "ipucu": "Göz hemen nereye gidiyor?",
+    "aciklama": "Göz alıcı odak noktası vurgudur. (s. 27)"
+   }
+  },
+  {
+   "ad": "Zıtlık",
+   "renk": "#5c677d",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='22' width='46' height='76' rx='8' fill='#0d1226'/><rect x='60' y='22' width='46' height='76' rx='8' fill='#f8f9fa'/><rect x='56' y='22' width='8' height='76' fill='#0d1226'/><circle cx='37' cy='60' r='12' fill='#f8f9fa'/><circle cx='83' cy='60' r='12' fill='#0d1226'/></svg>",
+   "aciklama": "Zıtlık (kontrast), birbirine karşıt elemanların yan yana kullanılmasıdır: açık-koyu, büyük-küçük, sıcak-soğuk gibi.",
+   "ek": "Kitap dışı (MEB programı). Tanım Görsel Sanatlar programından. Zıtlık, tasarımı ilgi çekici yapar; kitaptaki çeşitlilik ilkesi de zıtlıkları içerir.",
+   "akilda": "Karşıtlar yan yana",
+   "soru": {
+    "soru": "Siyah zemin üzerine beyaz yazı yazmak hangi ilkeye örnektir?",
+    "secenekler": [
+     "Ritim",
+     "Zıtlık",
+     "Oran"
+    ],
+    "dogru": 1,
+    "ipucu": "Açık ile koyu birbirinin karşıtıdır.",
+    "aciklama": "Açık-koyu gibi karşıtların yan yana gelmesi zıtlıktır. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu ilke ne yapar?",
+   "kutular": [
+    {
+     "etiket": "Dikkati bir yere çeker",
+     "uyeler": [
+      "Vurgu",
+      "Zıtlık"
+     ]
+    },
+    {
+     "etiket": "Düzen ve tekrar kurar",
+     "uyeler": [
+      "Denge",
+      "Ritim"
+     ]
+    },
+    {
+     "etiket": "İlerleme hissi verir",
+     "uyeler": [
+      "Hareket"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kalp atışımız da bir ritimdir; kitap, gece-gündüzü ve müziği de ritme örnek verir. (s. 27)"
+ ],
+ "akildaKalsin": [
+  "Denge: parçalar bütün içinde eşit dağılır.",
+  "Ritim: elemanların uyumlu tekrarı.",
+  "Hareket: yönle oluşan ilerleme hissi.",
+  "Vurgu: göz alıcı odak noktası.",
+  "Zıtlık: açık-koyu, büyük-küçük gibi karşıtlar yan yana."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Eleman ile ilke arasındaki fark nedir?",
+   "cevap": "Kitap nokta, çizgi, renk gibi elemanları ayrı (s. 24); denge, ritim, vurgu gibi ilkeleri ayrı listeler (s. 27). Elemanlar parçalar, ilkeler bu parçaların düzenidir."
+  },
+  {
+   "soru": "Ritim sadece müzikte mi olur?",
+   "cevap": "Hayır. Bir kumaştaki tekrar eden desen, gece ile gündüz, kalp atışı da ritimdir. (s. 27)"
+  },
+  {
+   "soru": "Bir metinde neden bazı kelimeler kalın yazılır?",
+   "cevap": "Koyu renkli bölüm dikkati oraya çeker. Bu bir vurgudur. (s. 27)"
+  },
+  {
+   "soru": "Durgun bir resim nasıl hareketli görünür?",
+   "cevap": "Eğik çizgiler, oklar ve hız çizgileri gözümüzü bir yöne götürür. Hareket genellikle yönle oluşur. (program)"
+  },
+  {
+   "soru": "Trafik işaretlerinde neden çok zıt renkler kullanılır?",
+   "cevap": "Zıt renkler yan yana gelince hemen göze çarpar; zıtlık tasarımı dikkat çekici yapar. (program)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir doğum günü davetiyesi tasarlasan dikkat çekmesi için vurguyu nasıl sağlardın? Bir yöntem yaz.",
+   "ornekCevap": "Doğum günü yapan kişinin adını büyük ve kırmızı renkle ortaya yazardım. Böylece göz önce oraya gider.",
+   "anahtarlar": [
+    "vurgu",
+    "büyük",
+    "renk",
+    "dikkat"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Hangisi bir tasarım ilkesidir?",
+   "secenekler": [
+    "Nokta",
+    "Doku",
+    "Denge"
+   ],
+   "dogru": 2,
+   "ipucu": "Nokta ve doku elemandır.",
+   "aciklama": "Denge bir tasarım ilkesidir; nokta ve doku tasarım elemanıdır. (s. 24, 27)",
+   "kavram": "Denge",
+   "yardim": {
+    "adimlar": [
+     "Kitaptaki eleman listesini hatırla: nokta, çizgi, renk, doku…",
+     "Bu listede olmayan hangisi?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir tablonun iki yanına aynı büyüklükte iki çerçeve asılırsa duvar nasıl görünür?",
+   "secenekler": [
+    "Dengeli",
+    "Dağınık",
+    "Karanlık"
+   ],
+   "dogru": 0,
+   "ipucu": "Parçalar eşit dağılmış mı?",
+   "aciklama": "Parçaların eşit dağılımı denge sağlar. (s. 27)",
+   "kavram": "Denge"
+  },
+  {
+   "soru": "Gece ile gündüzün sürekli birbirini izlemesi hangi ilkeye örnektir?",
+   "secenekler": [
+    "Vurgu",
+    "Ritim",
+    "Zıtlık"
+   ],
+   "dogru": 1,
+   "ipucu": "Kitap bu örneği hangi ilkede veriyordu?",
+   "aciklama": "Kitap müzik, gece-gündüz ve kalp atışını ritme örnek verir. (s. 27)",
+   "kavram": "Ritim"
+  },
+  {
+   "soru": "Bir afişte eğik bir yol ve ok çizilmiş. Göz sola doğru ilerliyor. Bu en çok hangi ilkedir?",
+   "secenekler": [
+    "Birlik",
+    "Oran-orantı",
+    "Hareket"
+   ],
+   "dogru": 2,
+   "ipucu": "Göz bir yönde ilerliyor…",
+   "aciklama": "Hareket genellikle yöne bağlı oluşur. (s. 28; program)",
+   "kavram": "Hareket"
+  },
+  {
+   "soru": "Düz siyah bir elbisenin üzerine takılan parlak kolye hangi ilkeye örnektir?",
+   "secenekler": [
+    "Vurgu",
+    "Ritim",
+    "Denge"
+   ],
+   "dogru": 0,
+   "ipucu": "Kitaptaki kolye örneğini hatırla.",
+   "aciklama": "Düz kıyafet üzerindeki kolye dikkati çeker; bu vurgudur. (s. 27)",
+   "kavram": "Vurgu"
+  },
+  {
+   "soru": "Vurgu hangi yollarla sağlanabilir?",
+   "secenekler": [
+    "Yalnız sesle",
+    "Boyut, yer, renk ya da çizgiyle",
+    "Hiçbir şey kullanmadan"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartta vurgunun nasıl sağlandığı yazıyordu.",
+   "aciklama": "Boyut, yerleşim, şekil, renk ya da çizgiyle vurgu yapılır. (s. 27)",
+   "kavram": "Vurgu"
+  },
+  {
+   "soru": "Açık sarı bir afişte koyu mor bir başlık hemen göze çarpıyor. Bunu hangi ilke sağlamıştır?",
+   "secenekler": [
+    "Ritim",
+    "Denge",
+    "Zıtlık"
+   ],
+   "dogru": 2,
+   "ipucu": "Açık ile koyu birbirinin karşıtıdır.",
+   "aciklama": "Açık-koyu karşıtlığı zıtlıktır ve dikkat çeker. (program)",
+   "kavram": "Zıtlık",
+   "yardim": {
+    "adimlar": [
+     "Sarı açık mı, koyu mu? Mor açık mı, koyu mu?",
+     "Karşıtların yan yana gelmesine ne deniyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "Ritim için hangisi doğrudur?",
+   "secenekler": [
+    "Farklı ya da zıt elemanlarla da sağlanabilir",
+    "Sadece aynı elemanlarla olur",
+    "Sadece müzikte olur"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartın ek bilgisini hatırla.",
+   "aciklama": "Ritmik etki farklı veya zıt elemanlarla da sağlanabilir. (s. 27)",
+   "kavram": "Ritim"
+  }
+ ]
+}

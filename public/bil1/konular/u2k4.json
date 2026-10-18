@@ -1,0 +1,281 @@
+{
+ "id": "u2k4",
+ "unite": "2. Ünite: Temel Tasarım",
+ "baslik": "Tasarım İlkeleri 2: Birlik, Harmoni, Çeşitlilik, Oran",
+ "sayfalar": "s. 24, 27–28",
+ "kaynakNotu": "Programda \"birlik\" diye geçen ilke kitapta \"bütünlük\" adıyla anlatılır (s. 27); kitap s. 28'de \"birlik\" adını da kullanır. Program: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1438",
+ "giris": "Bu konuda tasarımın parçalarının birbirine nasıl uyduğunu öğreneceğiz: birlik, harmoni, çeşitlilik ve oran-orantı. Sonunda eleman ile ilke farkına bakacağız.",
+ "kavramlar": [
+  {
+   "ad": "Birlik (Bütünlük)",
+   "renk": "#2d6cdf",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g fill='#6fb3ff'><rect x='20' y='20' width='39' height='39' rx='3'/><rect x='61' y='20' width='39' height='39' rx='3'/><rect x='20' y='61' width='39' height='39' rx='3'/><rect x='61' y='61' width='39' height='39' rx='3'/><circle cx='60' cy='39' r='7'/><circle cx='60' cy='81' r='7'/><circle cx='39' cy='60' r='7'/><circle cx='81' cy='60' r='7'/></g><rect x='14' y='14' width='92' height='92' rx='8' fill='none' stroke='#f2c14e' stroke-width='3' stroke-dasharray='6 5'/></svg>",
+   "aciklama": "Birlik, tasarımın bütün parçalarının birbirine uyumlu bir bütün oluşturmasıdır.",
+   "ek": "Kitapta \"bütünlük\" diye geçer. Çizgi, renk, malzeme ve doku tutarlı kullanılır: klasik mobilyalı bir odaya klasik perde uyar.",
+   "akilda": "Parçalar bir bütün olur",
+   "soru": {
+    "soru": "Klasik mobilyaların olduğu bir odaya klasik perde seçmek hangi ilkeye örnektir?",
+    "secenekler": [
+     "Zıtlık",
+     "Birlik (bütünlük)",
+     "Hareket"
+    ],
+    "dogru": 1,
+    "ipucu": "Kitaptaki oda örneğini hatırla.",
+    "aciklama": "Elemanların tutarlı kullanımı bütünlük (birlik) sağlar. (s. 27)"
+   }
+  },
+  {
+   "ad": "Harmoni",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M38 18l22 10 22-10 22 16-10 16-10-6v58H34V44l-10 6-10-16z' fill='#2a9d8f'/><path d='M60 28v76' stroke='#1b2340' stroke-width='2'/><g fill='#6fd3c3'><circle cx='66' cy='46' r='4'/><circle cx='66' cy='64' r='4'/><circle cx='66' cy='82' r='4'/></g></svg>",
+   "aciklama": "Harmoni, bir bütünün parçaları arasındaki uygunluktur. Elemanlar uyumlu, dengeli ve düzenli dağılır.",
+   "ek": "Bir giysideki düğmenin kumaşın rengine ve dokusuna uygun olması harmonidir.",
+   "akilda": "Parçalar birbirine uyar",
+   "soru": {
+    "soru": "Yeşil bir gömleğe açık yeşil düğmeler dikilmesi hangi ilkeye örnektir?",
+    "secenekler": [
+     "Vurgu",
+     "Zıtlık",
+     "Harmoni"
+    ],
+    "dogru": 2,
+    "ipucu": "Kitaptaki düğme örneğini hatırla.",
+    "aciklama": "Düğmenin kumaşa uygun olması harmonidir. (s. 27)"
+   }
+  },
+  {
+   "ad": "Çeşitlilik",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='22' width='26' height='26' rx='4' fill='#6fb3ff'/><circle cx='86' cy='34' r='14' fill='#f2c14e'/><path d='M52 46l12-24 12 24z' fill='#ff8fab'/><path d='M18 92c4-18 26-18 26 0z' fill='#52b788'/><rect x='54' y='68' width='14' height='32' rx='3' fill='#9b3fa6'/><path d='M80 78l8-10 8 10 8-10v20H80z' fill='#ff7b54'/></svg>",
+   "aciklama": "Çeşitlilik, farklı şekil, boyut, renk ve zıtlıkları bir arada kullanmaktır.",
+   "ek": "Değişiklik ve zıtlıkları içerir. Tasarımı tekdüze olmaktan kurtarır.",
+   "akilda": "Farklılıklar bir arada",
+   "soru": {
+    "soru": "Bir panoda farklı şekil, renk ve boyutta kartlar kullanmak hangi ilkedir?",
+    "secenekler": [
+     "Çeşitlilik",
+     "Ritim",
+     "Denge"
+    ],
+    "dogru": 0,
+    "ipucu": "Farklılıklar bir arada…",
+    "aciklama": "Çeşitlilik, farklı form, şekil, boyut ve oranları içeren ilkedir. (s. 27)"
+   }
+  },
+  {
+   "ad": "Oran-Orantı",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='30' y='16' width='60' height='88' rx='3' fill='#5c677d'/><g fill='#ffe066'><rect x='38' y='24' width='12' height='14'/><rect x='54' y='24' width='12' height='14'/><rect x='70' y='24' width='12' height='14'/><rect x='38' y='46' width='12' height='14'/><rect x='54' y='46' width='12' height='14'/><rect x='70' y='46' width='12' height='14'/><rect x='38' y='68' width='12' height='14'/><rect x='70' y='68' width='12' height='14'/></g><rect x='54' y='80' width='12' height='24' fill='#1b2340'/></svg>",
+   "aciklama": "Oran-orantı (ilke), bir parçanın diğer parçalarla ve bütünle olan ilişkisidir.",
+   "ek": "Bir binadaki pencerelerin sayısı ve büyüklüğü binaya uygun olmalıdır. Doğadaki bütün varlıkların estetik bir oranı vardır.",
+   "akilda": "Parça ile bütün uyumu",
+   "soru": {
+    "soru": "Bir binada pencerelerin binanın büyüklüğüne uygun seçilmesi hangi ilkeyle ilgilidir?",
+    "secenekler": [
+     "Ritim",
+     "Oran-orantı",
+     "Zıtlık"
+    ],
+    "dogru": 1,
+    "ipucu": "Kitaptaki bina örneğini hatırla.",
+    "aciklama": "Bir parçanın bütünle ilişkisi oran-orantıdır; kitap pencere örneğini verir. (s. 27)"
+   }
+  },
+  {
+   "ad": "Eleman mı, İlke mi?",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='10' y='22' width='46' height='76' rx='8' fill='#2b3561'/><circle cx='22' cy='40' r='5' fill='#f2c14e'/><path d='M32 40h16' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><rect x='18' y='54' width='14' height='14' fill='#6fb3ff'/><circle cx='42' cy='61' r='7' fill='#ff8fab'/><path d='M18 82q6-8 12 0t12 0' stroke='#52b788' stroke-width='3' fill='none'/><rect x='64' y='22' width='46' height='76' rx='8' fill='#2b3561'/><path d='M70 70h34' stroke='#e9ecef' stroke-width='3'/><path d='M87 70l-6 10h12z' fill='#e9ecef'/><rect x='72' y='58' width='10' height='10' fill='#2a9d8f'/><rect x='92' y='58' width='10' height='10' fill='#2a9d8f'/><g fill='#ff4d6d'><circle cx='80' cy='40' r='4'/><circle cx='94' cy='40' r='4'/></g></svg>",
+   "aciklama": "Elemanlar tasarımın parçalarıdır: nokta, çizgi, renk, doku. İlkeler bu parçaların düzenidir: denge, ritim, vurgu, birlik.",
+   "ek": "Oran ikisinde de geçer: eleman olarak büyüklük karşılaştırması (s. 24), ilke olarak parçanın bütünle ilişkisi (s. 27).",
+   "akilda": "Parçalar ve düzen",
+   "soru": {
+    "soru": "Hangisi ilke değil, tasarım elemanıdır?",
+    "secenekler": [
+     "Denge",
+     "Harmoni",
+     "Renk"
+    ],
+    "dogru": 2,
+    "ipucu": "Elemanlar parçalardı: nokta, çizgi, …",
+    "aciklama": "Renk tasarım elemanıdır; denge ve harmoni ilkedir. (s. 24, 27)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Eleman mı, ilke mi? (kitaptaki iki liste)",
+   "kutular": [
+    {
+     "etiket": "Hem eleman hem ilke listesinde",
+     "uyeler": [
+      "Oran-Orantı"
+     ]
+    },
+    {
+     "etiket": "Yalnız ilke listesinde",
+     "uyeler": [
+      "Birlik (Bütünlük)",
+      "Harmoni",
+      "Çeşitlilik"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaba göre doğadaki bütün varlıkların estetik bir oranı vardır. (s. 27)"
+ ],
+ "akildaKalsin": [
+  "Birlik (bütünlük): bütün parçalar uyumlu bir bütün olur.",
+  "Harmoni: parçalar birbirine uyar (düğme kumaşa uygun).",
+  "Çeşitlilik: farklılık ve zıtlıklar bir arada.",
+  "Oran-orantı: parçanın bütünle ilişkisi (binadaki pencereler).",
+  "Elemanlar parçalardır, ilkeler parçaların düzenidir."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Harmoni ile birlik aynı şey mi?",
+   "cevap": "Çok yakındır. Harmoni parçaların birbirine uygunluğudur (düğme ve kumaş). Birlik ise bütün tasarımın tutarlı bir bütün olmasıdır (klasik oda, klasik perde). (s. 27)"
+  },
+  {
+   "soru": "Çeşitlilik tasarımı karmaşık yapmaz mı?",
+   "cevap": "Çeşitlilik farklılıkları bir araya getirir, tekdüzeliği kırar. Birlik ve denge ile birlikte kullanılınca tasarım düzenli kalır. (s. 27)"
+  },
+  {
+   "soru": "Oran neden hem eleman hem ilke?",
+   "cevap": "Eleman olarak nesnelerin büyüklüklerini karşılaştırırız (s. 24). İlke olarak bir parçanın bütüne uygun olup olmadığına bakarız (s. 27)."
+  },
+  {
+   "soru": "Çiçeklerin güzel görünmesinin bir nedeni oran olabilir mi?",
+   "cevap": "Kitap, doğadaki bütün varlıkların estetik bir orana sahip olduğunu söyler. (s. 27)"
+  },
+  {
+   "soru": "Bir ürünü ilkelere göre nasıl değerlendiririz?",
+   "cevap": "Kitap şu kavramlara bakmamızı ister: denge, ritim, vurgu, hareket, birlik, çeşitlilik, oran-orantı. (s. 28)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okul formanı düşün. Renkleri ve parçaları birbirine uyuyor mu? Harmoni ya da birlik kavramıyla açıkla.",
+   "ornekCevap": "Formamın gömleği ve eteği aynı renk tonlarında. Düğmeleri de kumaşın rengine uygun. Bu yüzden harmoni var ve bir bütün gibi görünüyor.",
+   "anahtarlar": [
+    "uygun",
+    "uyum",
+    "harmoni",
+    "bütün",
+    "birlik"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir tasarımı oluşturan bütün parçalarda aranan bütünsel uyuma ne denir?",
+   "secenekler": [
+    "Bütünlük (birlik)",
+    "Ritim",
+    "Hareket"
+   ],
+   "dogru": 0,
+   "ipucu": "Kitaptaki tanım: bütün parçalarda aranan…",
+   "aciklama": "Bütün parçalarda aranan bütünsel uyum bütünlüktür (birlik). (s. 27)",
+   "kavram": "Birlik (Bütünlük)"
+  },
+  {
+   "soru": "Modern bir mutfakta her şey modern ama bir dolap çok eski tarzda. Hangi ilke bozulmuştur?",
+   "secenekler": [
+    "Vurgu",
+    "Birlik (bütünlük)",
+    "Ritim"
+   ],
+   "dogru": 1,
+   "ipucu": "Klasik oda – klasik perde örneğini düşün.",
+   "aciklama": "Elemanlar tutarlı kullanılmazsa bütünlük bozulur. (s. 27)",
+   "kavram": "Birlik (Bütünlük)",
+   "yardim": {
+    "adimlar": [
+     "Odadaki eşyaların tarzı aynı mı?",
+     "Tutarlı kullanımla hangi ilke sağlanıyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "Harmoni için hangisi doğrudur?",
+   "secenekler": [
+    "Tek bir parçanın parlamasıdır",
+    "Parçaların tekrarıdır",
+    "Parçalar arasındaki uygunluktur"
+   ],
+   "dogru": 2,
+   "ipucu": "Düğme-kumaş örneğini hatırla.",
+   "aciklama": "Harmoni, bir bütünün parçaları arasındaki uygunluktur. (s. 27)",
+   "kavram": "Harmoni"
+  },
+  {
+   "soru": "Değişiklik ve zıtlıkları içeren tasarım ilkesi hangisidir?",
+   "secenekler": [
+    "Çeşitlilik",
+    "Denge",
+    "Harmoni"
+   ],
+   "dogru": 0,
+   "ipucu": "Farklılıklar bir arada…",
+   "aciklama": "Çeşitlilik, değişiklik ve zıtlıkları içeren ilkedir. (s. 27)",
+   "kavram": "Çeşitlilik"
+  },
+  {
+   "soru": "Bir bahçede hep aynı tür ve renkte çiçek var. Bahçeye farklı renk ve boyda çiçekler eklemek hangi ilkeyi güçlendirir?",
+   "secenekler": [
+    "Oran-orantı",
+    "Çeşitlilik",
+    "Birlik (bütünlük)"
+   ],
+   "dogru": 1,
+   "ipucu": "Farklı renk ve boylar…",
+   "aciklama": "Farklı boyut ve renkler çeşitlilik sağlar. (s. 27)",
+   "kavram": "Çeşitlilik"
+  },
+  {
+   "soru": "Bir parçanın diğer parçalarla ve bütünle olan ilişkisi hangi ilkedir?",
+   "secenekler": [
+    "Ritim",
+    "Vurgu",
+    "Oran-orantı"
+   ],
+   "dogru": 2,
+   "ipucu": "Kitaptaki pencere örneğini hatırla.",
+   "aciklama": "Bir parçanın bütünle ilişkisi oran-orantıdır. (s. 27)",
+   "kavram": "Oran-Orantı"
+  },
+  {
+   "soru": "Oran için hangisi doğrudur?",
+   "secenekler": [
+    "Hem eleman hem ilke listesinde geçer",
+    "Sadece eleman listesinde vardır",
+    "Hiçbir listede yoktur"
+   ],
+   "dogru": 0,
+   "ipucu": "Kitabın iki listesine de bak: s. 24 ve s. 27.",
+   "aciklama": "Oran s. 24'te eleman, s. 27'de ilke olarak geçer. (s. 24, 27)",
+   "kavram": "Eleman mı, İlke mi?",
+   "yardim": {
+    "adimlar": [
+     "s. 24'teki eleman listesinde oran var mı?",
+     "s. 27'deki ilke listesinde oran var mı?"
+    ]
+   }
+  },
+  {
+   "soru": "Hangisi tasarım elemanıdır?",
+   "secenekler": [
+    "Çeşitlilik",
+    "Doku",
+    "Birlik"
+   ],
+   "dogru": 1,
+   "ipucu": "Elemanlar parçalardı: nokta, çizgi, renk, …",
+   "aciklama": "Doku elemandır; çeşitlilik ve birlik ilkedir. (s. 24, 27)",
+   "kavram": "Eleman mı, İlke mi?"
+  }
+ ]
+}

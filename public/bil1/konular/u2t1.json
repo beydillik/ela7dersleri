@@ -1,0 +1,247 @@
+{
+ "id": "u2t1",
+ "tur": "tarama",
+ "unite": "2. Ünite: Temel Tasarım",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–5 · s. 23–30",
+ "giris": "İkinci ünite bitti! Beş konunun hepsine kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Önce tasarımın parçalarını, yani elemanları öğrendik: nokta, çizgi, şekil, renk, doku ve diğerleri. Sonra bu parçaları nasıl düzenleyeceğimizi söyleyen ilkeleri gördük: denge, ritim, vurgu, birlik. Son olarak bu bilgilerle analoji kurmayı, bir ürünü yeniden yorumlamayı ve ürünü sorularla incelemeyi öğrendik.",
+ "kapsar": [
+  "u2k1",
+  "u2k2",
+  "u2k3",
+  "u2k4",
+  "u2k5"
+ ],
+ "hatirla": [
+  {
+   "konu": "u2k1",
+   "maddeler": [
+    "Nokta yer belirten işarettir; çizgi noktanın bir yöne uzamasıdır.",
+    "Şekil iki boyutludur (geometrik, organik); form üç boyutludur.",
+    "Aralık iki şeyin arası; mekân dolu (pozitif) ve boş (negatif) alanlar."
+   ]
+  },
+  {
+   "konu": "u2k2",
+   "maddeler": [
+    "Renk ışığın yansımasıyla oluşur; sıcak renk uyarır, soğuk renk dinlendirir.",
+    "Valör: bir rengin açıklık-koyuluk derecesi.",
+    "Her ışık gölge yaratır; doku yüzeyin yapısı, oran büyüklük karşılaştırmasıdır."
+   ]
+  },
+  {
+   "konu": "u2k3",
+   "maddeler": [
+    "Denge: parçalar eşit dağılır; ritim: uyumlu tekrar.",
+    "Vurgu: göz alıcı odak noktası (düz elbisede kolye).",
+    "Hareket yönle oluşur; zıtlık: açık-koyu gibi karşıtlar yan yana."
+   ]
+  },
+  {
+   "konu": "u2k4",
+   "maddeler": [
+    "Birlik (bütünlük): klasik odaya klasik perde.",
+    "Harmoni: düğme kumaşa uygun; çeşitlilik: farklılıklar bir arada.",
+    "Oran-orantı: parçanın bütünle ilişkisi; elemanlar parça, ilkeler düzendir."
+   ]
+  },
+  {
+   "konu": "u2k5",
+   "maddeler": [
+    "Analoji: birbirine benzeyen iki şeyi ilişkilendirmek.",
+    "Yeniden yorumlama: anlamını bozmadan dönüştürmek; önce taslak, sonra özgün ürün.",
+    "Ürün analizi: güvenlik, malzeme, üretim, ölçü, çalışma, parçalar."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 15,
+ "gruplar": [
+  {
+   "soru": "Eleman mı, ilke mi?",
+   "kutular": [
+    {
+     "etiket": "Tasarım elemanı (parça)",
+     "uyeler": [
+      "Nokta",
+      "Çizgi",
+      "Renk",
+      "Doku"
+     ]
+    },
+    {
+     "etiket": "Tasarım ilkesi (düzen)",
+     "uyeler": [
+      "Denge",
+      "Ritim",
+      "Vurgu",
+      "Harmoni"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bir afişte koyu renkli zemin üzerine büyük, açık renkli bir başlık yazılmış. Burada hangi eleman ve ilke birlikte kullanılmıştır?",
+   "secenekler": [
+    "Yazı ve zıtlık",
+    "Doku ve ritim",
+    "Nokta ve denge"
+   ],
+   "dogru": 0,
+   "ipucu": "Başlık hangi elemandır? Açık-koyu yan yana gelince hangi ilke oluşur?",
+   "aciklama": "Başlık yazı elemanıdır; açık-koyu karşıtlığı zıtlıktır. (s. 24; program)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Yazı"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Zıtlık"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Başlık hangi elemandı: dile ait işaretler…",
+     "Açık ile koyunun yan yana gelmesine ne deniyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir kumaşta aynı küçük noktalar sıra sıra tekrarlanıyor. Hangi eleman ve ilke vardır?",
+   "secenekler": [
+    "Yön ve vurgu",
+    "Nokta ve ritim",
+    "Oran ve birlik"
+   ],
+   "dogru": 1,
+   "ipucu": "Tekrarlanan şey ne? Tekrarın adı ne?",
+   "aciklama": "Noktaların uyumlu tekrarı ritim oluşturur. (s. 24, 27)",
+   "kaynak": [
+    {
+     "konu": "u2k1",
+     "kavram": "Nokta"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Ritim"
+    }
+   ]
+  },
+  {
+   "soru": "Odak noktası oluşturmak için sıcak bir renk seçmek hangi iki kavramı birleştirir?",
+   "secenekler": [
+    "Doku ve denge",
+    "Aralık ve harmoni",
+    "Renk ve vurgu"
+   ],
+   "dogru": 2,
+   "ipucu": "Sıcak renkler ne yapıyordu? Odak noktasının adı neydi?",
+   "aciklama": "Sıcak renkler uyarır ve dikkat çeker; odak noktası vurgudur. (s. 24, 27)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Renk"
+    },
+    {
+     "konu": "u2k3",
+     "kavram": "Vurgu"
+    }
+   ]
+  },
+  {
+   "soru": "\"Oran\" için hangisi doğrudur?",
+   "secenekler": [
+    "Eleman olarak büyüklük karşılaştırması, ilke olarak parçanın bütünle ilişkisidir",
+    "Yalnız eleman olarak kullanılır",
+    "Sadece renklerle ilgilidir"
+   ],
+   "dogru": 0,
+   "ipucu": "Oranı iki listede de görmüştük.",
+   "aciklama": "Oran s. 24'te eleman, s. 27'de ilke olarak geçer. (s. 24, 27)",
+   "kaynak": [
+    {
+     "konu": "u2k2",
+     "kavram": "Oran"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Oran-Orantı"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "s. 24'te oran neyi karşılaştırıyordu?",
+     "s. 27'de oran-orantı neyin ilişkisiydi?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir öğrenci kaplumbağa kabuğuna benzeyen, altıgen desenli bir kalem kutusu tasarlıyor. Bu çalışmada hangisi vardır?",
+   "secenekler": [
+    "Işık-gölge ve yazı",
+    "Analoji ve şekil",
+    "Zıtlık ve aralık"
+   ],
+   "dogru": 1,
+   "ipucu": "Kabuğa benzetmek… Altıgen düz bir…",
+   "aciklama": "Benzetme analojidir; altıgen geometrik bir şekildir. (program)",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Analoji"
+    },
+    {
+     "konu": "u2k1",
+     "kavram": "Şekil"
+    }
+   ]
+  },
+  {
+   "soru": "Bir kupayı yeniden yorumlarken üzerine aynı renk tonlarında, birbirine uyan desenler yapmak hangi ilkeyi destekler?",
+   "secenekler": [
+    "Zıtlık",
+    "Hareket",
+    "Harmoni"
+   ],
+   "dogru": 2,
+   "ipucu": "Parçalar birbirine uyuyorsa…",
+   "aciklama": "Parçaların birbirine uygunluğu harmonidir. (s. 27; program)",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Yeniden Yorumlama"
+    },
+    {
+     "konu": "u2k4",
+     "kavram": "Harmoni"
+    }
+   ]
+  },
+  {
+   "soru": "Ürün analizinde \"Boyutları nasıl?\" sorusuna cevap verirken en çok hangi elemanı düşünürüz?",
+   "secenekler": [
+    "Oran",
+    "Renk",
+    "Yazı"
+   ],
+   "dogru": 0,
+   "ipucu": "Boyut büyüklük-küçüklükle ilgilidir.",
+   "aciklama": "Boyutlar, büyüklük-küçüklük ilişkisi olan oranla ilgilidir. (s. 24, 30)",
+   "kaynak": [
+    {
+     "konu": "u2k5",
+     "kavram": "Ürün Analizi"
+    },
+    {
+     "konu": "u2k2",
+     "kavram": "Oran"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,301 @@
+{
+ "id": "u2k2",
+ "unite": "2. Ünite: Temel Tasarım",
+ "baslik": "Tasarım Elemanları 2: Renk, Değer, Işık-Gölge ve Doku",
+ "sayfalar": "s. 24 · program",
+ "kaynakNotu": "Valör (değer) kavramı kitapta yok; MEB programından alındı: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1438. Tanım Görsel Sanatlar Dersi Öğretim Programı'ndan (2018; Değer (valör): bir rengin şiddeti, açık-koyu, derecelendirme ve gölgelendirme; Doku: gerçek, yapay): https://mufredat.meb.gov.tr/Dosyalar/2018121111026326-GORSEL%20SANATLAR.pdf. Sıcak/soğuk renk örnekleri (kırmızı, turuncu / mavi, yeşil) kitap dışıdır.",
+ "giris": "Bu konuda tasarımı canlandıran elemanları öğreneceğiz: renk, açıklık-koyuluk (valör), ışık-gölge, doku, oran ve yazı.",
+ "kavramlar": [
+  {
+   "ad": "Renk",
+   "renk": "#e76f51",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='26' r='12' fill='#f2c14e'/><path d='M36 34l26 24' stroke='#f2c14e' stroke-width='3' stroke-dasharray='4 4'/><circle cx='68' cy='66' r='14' fill='#e63946'/><path d='M80 58l18-14' stroke='#e63946' stroke-width='3' stroke-dasharray='4 4'/><ellipse cx='102' cy='40' rx='12' ry='8' fill='#e9ecef'/><circle cx='102' cy='40' r='4' fill='#1b2340'/><rect x='14' y='92' width='44' height='12' rx='4' fill='#ff7b54'/><rect x='62' y='92' width='44' height='12' rx='4' fill='#4dabf7'/></svg>",
+   "aciklama": "Renk, ışığın cisimlere çarpıp yansıyarak gözümüzde bıraktığı etkidir.",
+   "ek": "Sıcak renkler (kırmızı, turuncu) uyarır; soğuk renkler (mavi, yeşil) gevşetir ve dinlendirir. Renk örnekleri kitap dışı.",
+   "akilda": "Işıktan gelen etki",
+   "soru": {
+    "soru": "Renk nasıl oluşur?",
+    "secenekler": [
+     "Rüzgârın esmesiyle",
+     "Sesin yansımasıyla",
+     "Işığın cisimden yansıyıp gözümüze gelmesiyle"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta ışığın cisme çarpınca ne yaptığı yazıyordu.",
+    "aciklama": "Renk, ışığın cisimlere çarpıp yansıyarak görme duyumuzda bıraktığı etkidir. (s. 24)"
+   }
+  },
+  {
+   "ad": "Valör (Değer)",
+   "renk": "#2d6cdf",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><g><rect x='10' y='44' width='20' height='32' rx='3' fill='#d0e4ff'/><rect x='30' y='44' width='20' height='32' fill='#91c0ff'/><rect x='50' y='44' width='20' height='32' fill='#4d8ff0'/><rect x='70' y='44' width='20' height='32' fill='#2453a8'/><rect x='90' y='44' width='20' height='32' rx='3' fill='#0f2a5c'/></g><path d='M14 90h92' stroke='#e9ecef' stroke-width='2'/><path d='M98 84l8 6-8 6' stroke='#e9ecef' stroke-width='2' fill='none'/></svg>",
+   "aciklama": "Valör (değer), bir rengin açıklık ya da koyuluk derecesidir.",
+   "ek": "Kitap dışı (MEB programı). Açıktan koyuya sıralanan renk tonlarıyla gölgelendirme yapılır; tanım Görsel Sanatlar programından.",
+   "akilda": "Açıktan koyuya",
+   "soru": {
+    "soru": "Açık maviden lacivert renge doğru sıralanan kutular hangi kavramı gösterir?",
+    "secenekler": [
+     "Valör (değer)",
+     "Yazı",
+     "Aralık"
+    ],
+    "dogru": 0,
+    "ipucu": "Aynı rengin açıklığı ve koyuluğu…",
+    "aciklama": "Bir rengin açık-koyu derecelendirmesine valör (değer) denir. (program)"
+   }
+  },
+  {
+   "ad": "Işık-Gölge",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 18h24l-6 14h-12z' fill='#5c677d'/><circle cx='30' cy='36' r='6' fill='#ffe066'/><path d='M34 40l22 22M26 42l14 30' stroke='#ffe066' stroke-width='2' stroke-dasharray='3 4'/><circle cx='62' cy='72' r='14' fill='#f2c14e'/><ellipse cx='88' cy='92' rx='22' ry='6' fill='#0d1226'/><path d='M12 98h96' stroke='#5c677d' stroke-width='2'/></svg>",
+   "aciklama": "Her ışık kaynağı bir gölge yaratır. Işığın yönü değişince gölgenin yönü de değişir.",
+   "ek": "Işık ve gölge oyunlarıyla canlı, hareketli bir resim oluşturulabilir.",
+   "akilda": "Işık varsa gölge var",
+   "soru": {
+    "soru": "Lambayı topun sol tarafına koyarsak gölge hangi tarafa düşer?",
+    "secenekler": [
+     "Sol tarafa",
+     "Sağ tarafa",
+     "Gölge oluşmaz"
+    ],
+    "dogru": 1,
+    "ipucu": "Gölge ışığın tam tersine düşer.",
+    "aciklama": "Işık soldan gelirse gölge sağa düşer; yön değişince gölge de değişir. (s. 24)"
+   }
+  },
+  {
+   "ad": "Doku",
+   "renk": "#52b788",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='24' width='44' height='72' rx='6' fill='#8d5a3b'/><g stroke='#5a3622' stroke-width='3' fill='none'><path d='M20 30q4 16 0 32t2 30'/><path d='M34 28q-4 18 2 34t-2 32'/><path d='M48 30q4 16-2 32t2 30'/></g><rect x='64' y='24' width='44' height='72' rx='6' fill='#e9ecef'/><g fill='#52b788'><circle cx='72' cy='32' r='3'/><circle cx='86' cy='32' r='3'/><circle cx='100' cy='32' r='3'/><circle cx='79' cy='44' r='3'/><circle cx='93' cy='44' r='3'/><circle cx='72' cy='56' r='3'/><circle cx='86' cy='56' r='3'/><circle cx='100' cy='56' r='3'/><circle cx='79' cy='68' r='3'/><circle cx='93' cy='68' r='3'/><circle cx='72' cy='80' r='3'/><circle cx='86' cy='80' r='3'/><circle cx='100' cy='80' r='3'/></g></svg>",
+   "aciklama": "Doku, bir nesnenin dış yüzeyinin yapısıdır: pürüzlü, kaygan, yumuşak gibi.",
+   "ek": "Gerçek doku elle hissedilir (ağaç kabuğu). Resimde çizilerek gösterilen dokuya yapay doku denir (gerçek-yapay ayrımı kitap dışı: Görsel Sanatlar programı).",
+   "akilda": "Yüzeyin yapısı",
+   "soru": {
+    "soru": "Ağaç kabuğunun pürüzlü yüzeyi hangi elemana örnektir?",
+    "secenekler": [
+     "Yön",
+     "Yazı",
+     "Doku"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta nesnelerin dış yapısının adı vardı.",
+    "aciklama": "Nesnelerin dış yapı özellikleri dokuyu oluşturur. (s. 24)"
+   }
+  },
+  {
+   "ad": "Oran",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 70l20-18 20 18v28H14z' fill='#6fb3ff'/><rect x='28' y='80' width='12' height='18' fill='#1b2340'/><path d='M62 48l22-24 22 24v50H62z' fill='#ff8fab'/><rect x='76' y='76' width='16' height='22' fill='#1b2340'/><rect x='72' y='54' width='8' height='8' fill='#1b2340'/><rect x='88' y='54' width='8' height='8' fill='#1b2340'/><path d='M10 98h100' stroke='#5c677d' stroke-width='2'/></svg>",
+   "aciklama": "Oran, nesnelerin büyüklük ve küçüklük bakımından birbiriyle ilişkisidir.",
+   "ek": "Bir şeyi çizerken parçalarını birbiriyle ya da yanındaki nesnelerle karşılaştırırız.",
+   "akilda": "Büyük mü, küçük mü?",
+   "soru": {
+    "soru": "Ağacın evden ne kadar büyük olduğunu karşılaştırarak çizmek hangi elemanla ilgilidir?",
+    "secenekler": [
+     "Oran",
+     "Doku",
+     "Renk"
+    ],
+    "dogru": 0,
+    "ipucu": "Büyüklük-küçüklük karşılaştırması…",
+    "aciklama": "Cisimler birbirine göre büyüklük-küçüklük olarak karşılaştırılırsa oran bulunur. (s. 24)"
+   }
+  },
+  {
+   "ad": "Yazı",
+   "renk": "#d63384",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='14' width='80' height='92' rx='6' fill='#e9ecef'/><text x='60' y='52' text-anchor='middle' font-size='30' font-weight='700' fill='#d63384'>Aa</text><rect x='32' y='64' width='56' height='6' rx='3' fill='#5c677d'/><rect x='32' y='76' width='44' height='6' rx='3' fill='#5c677d'/><rect x='32' y='88' width='50' height='6' rx='3' fill='#5c677d'/></svg>",
+   "aciklama": "Yazı, dile ait görsel işaretlerin kullanıldığı bir iletişim aracıdır.",
+   "ek": "Afişteki slogan, ürün etiketindeki bilgi tasarımın yazı elemanıdır.",
+   "akilda": "Görsel iletişim aracı",
+   "soru": {
+    "soru": "Bir afişteki slogan hangi tasarım elemanıdır?",
+    "secenekler": [
+     "Doku",
+     "Yazı",
+     "Işık-gölge"
+    ],
+    "dogru": 1,
+    "ipucu": "Dile ait işaretlerle iletişim…",
+    "aciklama": "Yazı, dile dair görsel işaretlerin kullanıldığı iletişim aracıdır. (s. 24)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Gözle mi, elle mi?",
+   "kutular": [
+    {
+     "etiket": "Işıkla ilgili",
+     "uyeler": [
+      "Renk",
+      "Valör (Değer)",
+      "Işık-Gölge"
+     ]
+    },
+    {
+     "etiket": "Yüzey, büyüklük ve iletişim",
+     "uyeler": [
+      "Doku",
+      "Oran",
+      "Yazı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Sıcak renkler insanı uyarır, soğuk renkler ise gevşetir ve dinlendirir. (s. 24)"
+ ],
+ "akildaKalsin": [
+  "Renk, ışığın yansımasıyla gözümüzde oluşan etkidir.",
+  "Sıcak renk uyarır, soğuk renk dinlendirir.",
+  "Valör: bir rengin açıklık-koyuluk derecesi.",
+  "Her ışık bir gölge yaratır; ışık yön değiştirirse gölge de değişir.",
+  "Doku yüzeyin yapısıdır; oran büyüklük karşılaştırmasıdır; yazı iletişim aracıdır."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Karanlıkta neden renkleri göremeyiz?",
+   "cevap": "Renk, ışığın cisimlere çarpıp yansımasıyla oluşur. Işık olmazsa renk de görünmez. (s. 24)"
+  },
+  {
+   "soru": "Okul koridorlarında neden çoğunlukla açık ve soğuk renkler kullanılır?",
+   "cevap": "Soğuk renkler gevşetici ve dinlendirici etki uyandırır. Sıcak renkler ise uyarıcıdır. (s. 24)"
+  },
+  {
+   "soru": "Resimde bir topun yuvarlak görünmesini ne sağlar?",
+   "cevap": "Açık ve koyu tonlar (valör) ile ışık-gölge kullanılır. Böylece düz çizim derinlik kazanır. (s. 24; program)"
+  },
+  {
+   "soru": "Akşamüstü gölgemiz neden uzar?",
+   "cevap": "Kitap, ışığın yönü değişince gölgenin de yön değiştirdiğini söyler. Güneş alçalınca gölgenin yönü ve boyu değişir. (s. 24)"
+  },
+  {
+   "soru": "Resimdeki ağaç kabuğuna dokunsak pürüzlü mü hissederiz?",
+   "cevap": "Hayır. Kâğıt düzdür; çizgilerle pürüzlü gibi gösterilmiştir. Buna yapay doku denir. (program)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Odan için duvar rengi seçecek olsan sıcak mı soğuk mu renk seçerdin? Nedenini yaz.",
+   "ornekCevap": "Soğuk bir renk, örneğin açık mavi seçerdim. Çünkü soğuk renkler dinlendirir ve odada rahat ders çalışırım.",
+   "anahtarlar": [
+    "soğuk",
+    "sıcak",
+    "dinlendir",
+    "uyar"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kırmızı ve turuncu gibi sıcak renklerin insan üzerindeki etkisi nedir?",
+   "secenekler": [
+    "Uyutur",
+    "Hiç etkisi yoktur",
+    "Uyarıcıdır"
+   ],
+   "dogru": 2,
+   "ipucu": "Sıcak renk … , soğuk renk dinlendirir.",
+   "aciklama": "Sıcak renkler uyarıcı, soğuk renkler gevşetici ve dinlendiricidir. (s. 24)",
+   "kavram": "Renk"
+  },
+  {
+   "soru": "Dinlenme odası için hangi renk etkisi daha uygundur?",
+   "secenekler": [
+    "Gevşetici soğuk renkler",
+    "Uyarıcı sıcak renkler",
+    "Hiç renk olmaması"
+   ],
+   "dogru": 0,
+   "ipucu": "Dinlenme odasında rahatlamak isteriz.",
+   "aciklama": "Soğuk renkler gevşetici ve dinlendirici etki uyandırır. (s. 24)",
+   "kavram": "Renk",
+   "yardim": {
+    "adimlar": [
+     "Odada ne yapmak istiyoruz: hareketlenmek mi, dinlenmek mi?",
+     "Hangi renkler dinlendiriyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir öğrenci aynı yeşili beyazla açıp siyahla koyulaştırarak beş kutuya boyuyor. Hangi kavramı çalışıyor?",
+   "secenekler": [
+    "Doku",
+    "Valör (değer)",
+    "Yön"
+   ],
+   "dogru": 1,
+   "ipucu": "Aynı renk, farklı açıklık-koyuluk…",
+   "aciklama": "Bir rengin açık-koyu derecelendirmesi valördür. (program)",
+   "kavram": "Valör (Değer)",
+   "yardim": {
+    "adimlar": [
+     "Kutularda renk değişiyor mu, yoksa aynı rengin açıklığı mı?",
+     "Açıklık-koyuluk derecesinin adı neydi?"
+    ]
+   }
+  },
+  {
+   "soru": "Işık-gölge için hangisi doğrudur?",
+   "secenekler": [
+    "Gölge ışıktan bağımsızdır",
+    "Sadece güneş gölge yaratır",
+    "Işık kaynağının yönü değişince gölge de yön değiştirir"
+   ],
+   "dogru": 2,
+   "ipucu": "Lambayı oynatınca gölgeye ne olur?",
+   "aciklama": "Her ışık kaynağı bir gölge yaratır; yön değişince gölge de değişir. (s. 24)",
+   "kavram": "Işık-Gölge"
+  },
+  {
+   "soru": "Kadife kumaşın yumuşak, zımparanın sert yüzeyi hangi elemanla anlatılır?",
+   "secenekler": [
+    "Doku",
+    "Oran",
+    "Yazı"
+   ],
+   "dogru": 0,
+   "ipucu": "Yüzeyin yapısı…",
+   "aciklama": "Nesnelerin dış yapı özellikleri dokuyu oluşturur. (s. 24)",
+   "kavram": "Doku"
+  },
+  {
+   "soru": "Bir resimde insanı kapıdan büyük çizersek hangi elemanda hata yapmış oluruz?",
+   "secenekler": [
+    "Renk",
+    "Oran",
+    "Yön"
+   ],
+   "dogru": 1,
+   "ipucu": "Büyüklük-küçüklük ilişkisi…",
+   "aciklama": "Nesnelerin birbirine göre büyüklüğü orandır. (s. 24)",
+   "kavram": "Oran"
+  },
+  {
+   "soru": "Ürün etiketindeki \"Kullanmadan önce çalkalayınız\" bilgisi hangi elemandır?",
+   "secenekler": [
+    "Doku",
+    "Valör",
+    "Yazı"
+   ],
+   "dogru": 2,
+   "ipucu": "Dile ait görsel işaretler…",
+   "aciklama": "Yazı, dile dair işaretlerle yapılan iletişimdir. (s. 24)",
+   "kavram": "Yazı"
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi ışık olmadan oluşamaz?",
+   "secenekler": [
+    "Renk",
+    "Yazının anlamı",
+    "Bir eşyanın ağırlığı"
+   ],
+   "dogru": 0,
+   "ipucu": "Renk neyin yansımasıyla oluşuyordu?",
+   "aciklama": "Renk, ışığın cisimlere çarpıp yansımasıyla oluşur. (s. 24)",
+   "kavram": "Renk"
+  }
+ ]
+}
