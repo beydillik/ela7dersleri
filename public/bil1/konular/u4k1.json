@@ -1,0 +1,322 @@
+{
+ "id": "u4k1",
+ "unite": "4. Ünite: Bilgisayar Destekli Tasarım",
+ "baslik": "Bilgisayar Destekli Tasarım",
+ "sayfalar": "s. 58–60",
+ "giris": "Filmlerdeki efektler, oyunlar, köprüler ve binalar… Hepsinin tasarımında bilgisayar kullanılır. Bu konuda bilgisayar destekli tasarımın ne olduğunu ve neden işimizi kolaylaştırdığını öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Bilgi Çağı",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='56' r='30' fill='#1d6fa3'/><path d='M30 56h60M60 26v60M40 36q20 20 40 0M40 76q20-20 40 0' stroke='#6fb3ff' stroke-width='2.5' fill='none'/><path d='M18 96h84' stroke='#f2c14e' stroke-width='4' stroke-linecap='round'/><path d='M90 90l12 6-12 6' fill='#f2c14e'/><text x='60' y='112' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>21. yüzyıl</text></svg>",
+   "aciklama": "21. yüzyıla bilgi çağı denir. Bu çağda bilgiye ulaşmanın yolu ve hızı değişti.",
+   "ek": "Teknoloji tasarımı da çok kolaylaştırdı: bilgisayarla tasarımlar daha hızlı, kolay, estetik ve doğru yapılır.",
+   "akilda": "Bilgiye hızlı ulaşma çağı",
+   "soru": {
+    "soru": "21. yüzyıla ne ad verilir?",
+    "secenekler": [
+     "Taş çağı",
+     "Buhar çağı",
+     "Bilgi çağı"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın başlığına bak.",
+    "aciklama": "21. yüzyıl bilgi çağı olarak da adlandırılır. (s. 59)"
+   }
+  },
+  {
+   "ad": "Bilgisayar Destekli Tasarım",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='20' width='88' height='58' rx='6' fill='#e9ecef'/><rect x='22' y='26' width='76' height='46' fill='#1d3f74'/><path d='M36 62l16-24 16 24zM70 62h18V44H70z' stroke='#f2c14e' stroke-width='2.5' fill='none'/><path d='M52 78l-6 14h28l-6-14' fill='#5c677d'/><rect x='34' y='92' width='52' height='6' rx='3' fill='#5c677d'/><text x='60' y='113' font-size='12' font-weight='700' fill='#b197fc' text-anchor='middle' font-family='sans-serif'>BDT</text></svg>",
+   "aciklama": "Bilgisayar destekli tasarım (BDT), üretilecek bir parçanın önce bilgisayarda oluşturulmasıdır.",
+   "ek": "Tasarımcılar ve mühendisler bu sayede tasarımı çok hızlı değiştirir, istediklerinde yazıcıdan kâğıda döker. Parçaları bilgisayarda birleştirip (montaj) düzgün çalışıp çalışmadığını kontrol eder.",
+   "akilda": "Önce bilgisayarda yap",
+   "soru": {
+    "soru": "Bilgisayar destekli tasarımda parça önce nerede oluşturulur?",
+    "secenekler": [
+     "Bilgisayarda",
+     "Fabrikada",
+     "Tezgâhta"
+    ],
+    "dogru": 0,
+    "ipucu": "Adı üstünde: bilgisayar destekli…",
+    "aciklama": "İmalatı düşünülen parça ilk olarak bilgisayar ortamında oluşturulur. (s. 59)"
+   }
+  },
+  {
+   "ad": "Konstrüksiyon",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M24 100V40M96 100V40M24 40h72M24 70h72M24 40l36 30 36-30M24 70l36 30 36-30' stroke='#ff8fab' stroke-width='4' stroke-linecap='round' fill='none'/><path d='M14 100h92' stroke='#e9ecef' stroke-width='4' stroke-linecap='round'/><text x='60' y='28' font-size='12' font-weight='700' fill='#ffd8e1' text-anchor='middle' font-family='sans-serif'>iskelet</text></svg>",
+   "aciklama": "Konstrüksiyon, bir yapıyı taşıyan ve bir araya gelip yapıyı oluşturan parçaların bütünüdür.",
+   "ek": "Bir binanın ya da köprünün iskeleti gibi düşün (kitap dışı benzetme).",
+   "akilda": "Yapıyı taşıyan iskelet",
+   "soru": {
+    "soru": "Bir yapıda taşıyıcı olan ve bir araya gelip yapıyı oluşturan parçaların bütününe ne denir?",
+    "secenekler": [
+     "Simülasyon",
+     "Konstrüksiyon",
+     "Animasyon"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartta 'iskelet' benzetmesi vardı.",
+    "aciklama": "Konstrüksiyon, yapıyı oluşturan taşıyıcı öğelerin bütünüdür. (s. 59)"
+   }
+  },
+  {
+   "ad": "Simülasyon",
+   "renk": "#2a9d8f",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='70' rx='6' fill='#1d3f74'/><rect x='42' y='34' width='36' height='46' fill='#2a9d8f'/><path d='M48 42h8M64 42h8M48 54h8M64 54h8M48 66h8M64 66h8' stroke='#e9ecef' stroke-width='4'/><path d='M22 84q6-8 12 0t12 0t12 0t12 0t12 0t12 0' stroke='#f2c14e' stroke-width='3' fill='none'/><text x='60' y='108' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>deprem testi</text></svg>",
+   "aciklama": "Simülasyon, bir şeyin bilgisayarda modellenip denenmesidir. Kitapta 'simule etmek: bilgisayar yoluyla modelleme' diye açıklanır.",
+   "ek": "Örneğin bir binanın depreme dayanımı, aydınlatması ve ısıyı koruması bina yapılmadan bilgisayarda denenir.",
+   "akilda": "Yapmadan önce bilgisayarda dene",
+   "soru": {
+    "soru": "Bina yapılmadan önce depreme dayanıp dayanmadığı bilgisayarda denenirse buna ne denir?",
+    "secenekler": [
+     "Arşivleme",
+     "Montaj",
+     "Simülasyon"
+    ],
+    "dogru": 2,
+    "ipucu": "Bilgisayar yoluyla modelleme…",
+    "aciklama": "Deprem dayanımı, aydınlatma, ısı korunumu gibi performanslar bilgisayarda simüle edilir. (s. 60)"
+   }
+  },
+  {
+   "ad": "Yapım Sürecinin Takibi",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='16' width='76' height='88' rx='8' fill='#e9ecef'/><rect x='44' y='10' width='32' height='12' rx='4' fill='#5c677d'/><path d='M32 38l5 5 9-10M32 60l5 5 9-10M32 82l5 5 9-10' stroke='#2f9e44' stroke-width='3.5' fill='none' stroke-linecap='round'/><path d='M54 40h34M54 62h34M54 84h26' stroke='#e8590c' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Bilgisayar, bir yapı yapılırken işin takibinde de kullanılır.",
+   "ek": "Örnekler: malzeme stokunu kontrol etmek, maliyeti hesaplamak, işçileri takip etmek, malzeme sipariş etmek. Akıllı binalarda ışıklar gibi işler kendiliğinden yönetilir (otomasyon).",
+   "akilda": "Malzeme, maliyet, işçi takibi",
+   "soru": {
+    "soru": "Hangisi yapım sürecinde bilgisayarın yaptığı bir iştir?",
+    "secenekler": [
+     "Malzeme stokunu kontrol etmek",
+     "Tuğla taşımak",
+     "Duvarı boyamak"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta sayılan işler kâğıt üstünde, kayıtla yapılan işlerdi.",
+    "aciklama": "Malzeme stok kontrolü, maliyet analizi, işçi takibi bilgisayarla yapılır. (s. 60)"
+   }
+  },
+  {
+   "ad": "Kullanım Alanları",
+   "renk": "#1971c2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='22' width='44' height='32' rx='5' fill='#1971c2'/><path d='M28 30l12 8-12 8z' fill='#e9ecef'/><rect x='64' y='22' width='44' height='32' rx='10' fill='#5c677d'/><circle cx='76' cy='38' r='5' fill='#e9ecef'/><circle cx='96' cy='34' r='3' fill='#f2c14e'/><circle cx='100' cy='42' r='3' fill='#ff8fab'/><path d='M16 102V76l10-8 10 8v26M44 102V66h16v36M68 102V80h14v22M88 102V70h16v32' stroke='#6fb3ff' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Bilgisayarla tasarım; sinema efektlerinde, bilgisayar ve telefon oyunlarında, çizgi filmlerde ve şehir planlamada kullanılır.",
+   "ek": "Ayrıca 2 boyutlu ve 3 boyutlu yapımlar ile canlandırmalar da bilgisayarla hazırlanır.",
+   "akilda": "Film, oyun, çizgi film, şehir",
+   "soru": {
+    "soru": "Hangisi bilgisayar destekli tasarımın kullanıldığı bir alandır?",
+    "secenekler": [
+     "Bahçe sulama",
+     "Çizgi film",
+     "Ekmek pişirme"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çiziminde film ve oyun vardı.",
+    "aciklama": "Çizgi filmler, oyunlar ve sinema efektleri bilgisayarla yapılır. (s. 60)"
+   }
+  },
+  {
+   "ad": "BDT'nin Yararları",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='38' fill='#2f9e44'/><path d='M40 60l14 14 28-30' stroke='#e9ecef' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>",
+   "aciklama": "Bilgisayarla tasarım; kısa sürede daha çok seçenek üretmeyi sağlar, hataları azaltır, gerçeğe yakın görüntüler verir.",
+   "ek": "Bilgiler kolayca saklanır (arşiv), çabuk bulunur; tasarımcının iş yükü azalır. Çizimler daha kesin ve hassas olur.",
+   "akilda": "Hızlı, doğru, çok seçenek",
+   "soru": {
+    "soru": "Hangisi bilgisayar destekli tasarımın bir yararıdır?",
+    "secenekler": [
+     "Hataları artırır",
+     "İşi yavaşlatır",
+     "Kısa sürede çok seçenek üretir"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartta 'kısa sürede' diye başlayan yarar…",
+    "aciklama": "BDT kısa sürede daha fazla alternatif üretme şansını artırır. (s. 60)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bir kavram mı, BDT'nin yararı mı?",
+   "kutular": [
+    {
+     "etiket": "Tasarımda kullanılan kavram",
+     "uyeler": [
+      "Bilgisayar Destekli Tasarım",
+      "Konstrüksiyon",
+      "Simülasyon"
+     ]
+    },
+    {
+     "etiket": "Bilgisayarın katkısı",
+     "uyeler": [
+      "Yapım Sürecinin Takibi",
+      "Kullanım Alanları",
+      "BDT'nin Yararları"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Üç boyutlu yazıcılarla tasarımın birebir ölçülü modeli basılabilir. Böylece bitmiş hâli çok daha kısa sürede görülür. (s. 59)",
+  "Bilgisayar, belleğindeki bir yazılıma göre çok sayıda karmaşık işlemi çok kısa sürede yapabilir. (s. 59)"
+ ],
+ "akildaKalsin": [
+  "21. yüzyıl bilgi çağıdır.",
+  "BDT: parça önce bilgisayarda oluşturulur.",
+  "Konstrüksiyon: yapıyı taşıyan parçaların bütünü.",
+  "Simülasyon: bilgisayarda modelleyip denemek.",
+  "Yararları: hızlı, doğru, çok seçenek, az hata."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Mühendisler bilgisayarda yaptıkları tasarımı kâğıtta görebilir mi?",
+   "cevap": "Evet. İstedikleri zaman yazıcıdan kâğıda dökebilirler. (s. 59)"
+  },
+  {
+   "soru": "Bir parçanın çalışıp çalışmayacağı yapılmadan anlaşılır mı?",
+   "cevap": "Evet. Parçalar bilgisayarda birleştirilir (montaj) ve bütün hâlinde düzgün çalışıp çalışmadığı kontrol edilir. (s. 59)"
+  },
+  {
+   "soru": "Bilgisayar destekli tasarım hataları neden azaltır?",
+   "cevap": "Çünkü üretim hızlanır ve insandan kaynaklanan hatalar en aza iner. (s. 60)"
+  },
+  {
+   "soru": "Akıllı bina ne yapar?",
+   "cevap": "Kişileri tanıma, ışığı çevreye göre ayarlama gibi birçok işi kendiliğinden yapar. (s. 60)"
+  },
+  {
+   "soru": "Mimar, aklındaki binayı başkasına nasıl gösterir?",
+   "cevap": "Özel programlarla aklındaki görüntüyü fotoğraf gibi gerçekçi hâle getirir; insanlar mekânı gezmiş gibi olur. (s. 60)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Bir köprü tasarlıyorsun. Bilgisayar destekli tasarım sana hangi iki konuda yardım eder? Yaz.",
+   "ornekCevap": "Köprüyü yapmadan önce depreme dayanıp dayanmadığını bilgisayarda denerim (simülasyon). Ayrıca kısa sürede birçok farklı köprü tasarımı çizip en iyisini seçerim.",
+   "anahtarlar": [
+    "dene",
+    "simülasyon",
+    "hızlı",
+    "seçenek",
+    "hata",
+    "deprem"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bilgisayar destekli tasarımın kısaltması hangisidir?",
+   "secenekler": [
+    "TBD",
+    "BDT",
+    "DTB"
+   ],
+   "dogru": 1,
+   "ipucu": "Bilgisayar – Destekli – Tasarım kelimelerinin ilk harfleri…",
+   "aciklama": "Bilgisayar Destekli Tasarım kısaca BDT diye yazılır. (s. 59)",
+   "kavram": "Bilgisayar Destekli Tasarım"
+  },
+  {
+   "soru": "Bilgisayarlar sayesinde tasarımlar nasıl yapılabilir?",
+   "secenekler": [
+    "Daha yavaş ve zor",
+    "Yalnızca elle",
+    "Daha hızlı, kolay ve doğru"
+   ],
+   "dogru": 2,
+   "ipucu": "Bilgi çağı kartının ek bilgisine bak.",
+   "aciklama": "Bilgisayarlar sayesinde tasarımlar daha hızlı, kolay, estetik ve doğru yapılır. (s. 59)",
+   "kavram": "Bilgi Çağı"
+  },
+  {
+   "soru": "Bir binanın iskeleti gibi, yapıyı taşıyan parçaların bütününe ne denir?",
+   "secenekler": [
+    "Konstrüksiyon",
+    "Simülasyon",
+    "Otomasyon"
+   ],
+   "dogru": 0,
+   "ipucu": "Kartta iskelet benzetmesi vardı.",
+   "aciklama": "Yapıyı oluşturan taşıyıcı öğelerin bütünü konstrüksiyondur. (s. 59)",
+   "kavram": "Konstrüksiyon"
+  },
+  {
+   "soru": "Mühendis, tasarladığı parçaları bilgisayarda birleştirip kontrol ediyor. Neyi kontrol eder?",
+   "secenekler": [
+    "Parçaların rengini",
+    "Tasarımın bütün hâlinde düzgün çalışıp çalışmadığını",
+    "Parçaların fiyatını"
+   ],
+   "dogru": 1,
+   "ipucu": "Montajdan sonra neye bakılır?",
+   "aciklama": "Parçalar montaj edilir ve tasarımın düzgün çalışıp çalışmadığı kontrol edilir. (s. 59)",
+   "kavram": "Bilgisayar Destekli Tasarım"
+  },
+  {
+   "soru": "Bir binanın ışığı ve ısıyı ne kadar koruduğu bilgisayarda deneniyor. Buna ne denir?",
+   "secenekler": [
+    "Arşivleme",
+    "Montaj",
+    "Simülasyon"
+   ],
+   "dogru": 2,
+   "ipucu": "Yapmadan önce bilgisayarda deneme…",
+   "aciklama": "Aydınlatma ve ısı korunumu gibi performanslar bilgisayarda simüle edilir. (s. 60)",
+   "kavram": "Simülasyon"
+  },
+  {
+   "soru": "Akıllı binada ışıkların kendiliğinden yönetilmesine ne denir?",
+   "secenekler": [
+    "Otomasyon",
+    "Konstrüksiyon",
+    "Ufuk çizgisi"
+   ],
+   "dogru": 0,
+   "ipucu": "Yapım sürecinin takibi kartının ek bilgisine bak.",
+   "aciklama": "Akıllı binalarda binanın birçok işlevi otomasyonla yönetilir. (s. 60)",
+   "kavram": "Yapım Sürecinin Takibi"
+  },
+  {
+   "soru": "Hangisi bilgisayar destekli tasarımın kullanıldığı alanlardan değildir?",
+   "secenekler": [
+    "Sinema efektleri",
+    "Elle örgü örmek",
+    "Bilgisayar oyunları"
+   ],
+   "dogru": 1,
+   "ipucu": "Kullanım alanları kartındaki örnekleri hatırla.",
+   "aciklama": "Sinema efektleri, oyunlar, çizgi filmler ve şehir planlama bilgisayarla yapılır; elle örgü örmek bunlardan değildir. (s. 60)",
+   "kavram": "Kullanım Alanları"
+  },
+  {
+   "soru": "Bilgisayar destekli tasarım insandan kaynaklanan hataları nasıl etkiler?",
+   "secenekler": [
+    "Artırır",
+    "Hiç değiştirmez",
+    "En aza indirir"
+   ],
+   "dogru": 2,
+   "ipucu": "Yararlar kartında 'az hata' yazıyordu.",
+   "aciklama": "Üretimde hız artarak insani nedenlerden oluşabilecek hatalar en aza iner. (s. 60)",
+   "kavram": "BDT'nin Yararları"
+  },
+  {
+   "soru": "Bilgilerin bilgisayarda saklanması tasarımcıya ne kazandırır?",
+   "secenekler": [
+    "Bilgiye erişim süresi kısalır, iş yükü azalır",
+    "Bilgiler kaybolur",
+    "Tasarımcının işi artar"
+   ],
+   "dogru": 0,
+   "ipucu": "Arşivlemenin yararını düşün.",
+   "aciklama": "Arşivleme kolaylaşır, bilgiye erişim süresi kısalır, tasarımcının iş yükü azalır. (s. 60)",
+   "kavram": "BDT'nin Yararları"
+  }
+ ]
+}

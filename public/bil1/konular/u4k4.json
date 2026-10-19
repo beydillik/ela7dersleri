@@ -1,0 +1,329 @@
+{
+ "id": "u4k4",
+ "unite": "4. Ünite: Bilgisayar Destekli Tasarım",
+ "baslik": "Çoklu Ortam ve Sunu Hazırlama",
+ "sayfalar": "s. 64–68",
+ "giris": "Bir haberi okumak, dinlemek ve izlemek… Hangisi aklında daha çok kalır? Bu konuda çoklu ortamı, sununun ne olduğunu, nasıl hazırlandığını ve iyi bir sunu için dikkat edilecek ilkeleri öğreneceğiz.",
+ "kaynakNotu": "Sunum ilkelerinin adları kitapta (s. 64) tanımsız verilir. Tutarlılık, gereksizlik, parçalara bölme ve dikkat çekme (işaretleme) ilkelerinin kısa açıklamaları Mayer'in çoklu ortam ilkelerinden alındı: Küre Ansiklopedisi, Multimedya Öğrenme: https://kureansiklopedi.com/tr/detay/multimedya-ogrenme-6aad6 · Çoklu ortam sunusu MEB programında (TT.7.4.2) geçer: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1440 · Sunu hazırlama basamaklarının ara sırası kitapta iki sütunlu şemadan okundu; ilk (konu tespiti) ve son (değerlendirme ve sunma) basamak dışındaki sıra sorulmadı.",
+ "kavramlar": [
+  {
+   "ad": "Çoklu Ortam",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='38' y='38' width='44' height='44' rx='10' fill='#1d6fa3'/><path d='M54 50l16 10-16 10z' fill='#e9ecef'/><circle cx='22' cy='24' r='10' fill='#f2c14e'/><circle cx='98' cy='24' r='10' fill='#ff8fab'/><circle cx='22' cy='96' r='10' fill='#69db7c'/><circle cx='98' cy='96' r='10' fill='#b197fc'/><path d='M30 32l10 8M90 32l-10 8M30 88l10-8M90 88l-10-8' stroke='#e9ecef' stroke-width='2'/></svg>",
+   "aciklama": "Çoklu ortam (multimedya), bir içeriğin ses, görüntü, grafik, animasyon ve müzik gibi birçok şekilde sunulmasıdır.",
+   "ek": "Önceleri çoğunlukla eğlence için kullanıldı, sonra birçok alana yayıldı. Eğitimde bilgiyi daha kolay ve kalıcı öğrenmemizi sağlar.",
+   "akilda": "Birçok şekilde anlatmak",
+   "soru": {
+    "soru": "İçeriğin ses, görüntü, animasyon ve müzikle birlikte sunulmasına ne denir?",
+    "secenekler": [
+     "Konstrüksiyon",
+     "Koordinat",
+     "Çoklu ortam"
+    ],
+    "dogru": 2,
+    "ipucu": "Diğer adı multimedya…",
+    "aciklama": "Çoklu ortam, içeriğin ses, görüntü, grafik, animasyon, müzik gibi formlarda sunulmasıdır. (s. 64)"
+   }
+  },
+  {
+   "ad": "Çoklu Ortam Araçları",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='16' width='44' height='24' rx='4' fill='#e9ecef'/><path d='M18 24h32M18 32h22' stroke='#495057' stroke-width='3'/><path d='M68 22h8l10-8v28l-10-8h-8z' fill='#ffa26b'/><path d='M92 20q6 8 0 16' stroke='#ffa26b' stroke-width='3' fill='none'/><rect x='12' y='52' width='44' height='30' rx='4' fill='#1d6fa3'/><path d='M28 60l12 7-12 7z' fill='#e9ecef'/><rect x='64' y='52' width='44' height='30' rx='4' fill='#2f9e44'/><circle cx='86' cy='67' r='9' fill='#e9ecef'/><circle cx='86' cy='67' r='4' fill='#2f9e44'/><text x='60' y='104' font-size='9' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>metin · ses · video · foto</text></svg>",
+   "aciklama": "Çoklu ortam ürünlerini oluşturan araçlar: metin, ses, video, fotoğraf, animasyon ve diğer görseller.",
+   "ek": "Bir sunuda bunların birkaçını birlikte kullanırız.",
+   "akilda": "Metin, ses, video, foto, animasyon",
+   "soru": {
+    "soru": "Hangisi çoklu ortam araçlarından biridir?",
+    "secenekler": [
+     "Video",
+     "Cetvel",
+     "Silgi"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminde oynat düğmesi vardı.",
+    "aciklama": "Metin, ses, video, fotoğraf, animasyon ve diğer görseller çoklu ortam araçlarıdır. (s. 64)"
+   }
+  },
+  {
+   "ad": "Sunu",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='22' width='92' height='60' rx='6' fill='#e9ecef'/><rect x='22' y='30' width='46' height='8' rx='3' fill='#7950f2'/><path d='M22 50h40M22 60h34M22 70h38' stroke='#868e96' stroke-width='3'/><rect x='72' y='46' width='26' height='28' rx='3' fill='#b197fc'/><path d='M60 82v14M44 104l16-8 16 8' stroke='#e9ecef' stroke-width='3' fill='none'/></svg>",
+   "aciklama": "Sunu; metin, resim, grafik gibi bilgilerden düzenli bir sırayla hazırlanmış slaytlar grubudur.",
+   "ek": "Kitapta örnek olarak PowerPoint programıyla sunu hazırlanır. Slayta resim, film, ses, şekil, metin kutusu ve animasyon eklenebilir.",
+   "akilda": "Düzenli slaytlar grubu",
+   "soru": {
+    "soru": "Sunu neyden oluşur?",
+    "secenekler": [
+     "Tuğlalardan",
+     "Slaytlardan",
+     "Eksenlerden"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın akılda kalsın yazısı…",
+    "aciklama": "Sunu, verilerden düzenli şekilde oluşturulan slaytlar grubudur. (s. 65)"
+   }
+  },
+  {
+   "ad": "Sunu Hazırlama Basamakları",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M16 100h22V80h22V60h22V40h22V20' stroke='#69db7c' stroke-width='5' fill='none' stroke-linejoin='round'/><text x='27' y='94' font-size='12' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>1</text><text x='80' y='16' font-size='10' font-weight='700' fill='#f2c14e' text-anchor='middle' font-family='sans-serif'>son</text><circle cx='96' cy='12' r='6' fill='#f2c14e'/></svg>",
+   "aciklama": "Sunu hazırlamanın ilk basamağı konuyu belirlemek (konu tespiti), son basamağı değerlendirme ve sunmadır.",
+   "ek": "Arada: konu araştırılır, metin oluşturulur, görseller bulunup seçilir, animasyon ve müzik seçilir, şablon oluşturulur, metin ve görseller slaytlara yerleştirilir.",
+   "akilda": "Konu ile başla, sunarak bitir",
+   "soru": {
+    "soru": "Sunu hazırlamanın ilk basamağı hangisidir?",
+    "secenekler": [
+     "Değerlendirme ve sunma",
+     "Müzik seçimi",
+     "Konu tespiti"
+    ],
+    "dogru": 2,
+    "ipucu": "Önce ne anlatacağına karar verirsin.",
+    "aciklama": "Sunu hazırlama konu tespitiyle başlar. (s. 64)"
+   }
+  },
+  {
+   "ad": "Sunum İlkeleri",
+   "renk": "#1971c2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='22' rx='6' fill='#1971c2'/><rect x='14' y='48' width='92' height='22' rx='6' fill='#2a9d8f'/><rect x='14' y='78' width='92' height='22' rx='6' fill='#5f3dc4'/><text x='60' y='33' font-size='12' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>1 · azaltma</text><text x='60' y='63' font-size='12' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>2 · yönetme</text><text x='60' y='93' font-size='12' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>3 · geliştirme</text></svg>",
+   "aciklama": "Kitapta bilgisayarla sunu hazırlarken dikkat edilecek ilkeler üç grupta verilir: konu dışı işlemleri azaltma, temel süreçleri yönetme ve üretici süreçleri geliştirme ilkeleri.",
+   "ek": "Kitap bu gruplara giren ilkelerin adlarını sayar: tutarlılık, dikkat çekme, gereksizlik, konumsal ve zamansal yakınlık, parçalara bölme, ön alıştırma, biçim, çoklu ortam, kişiselleştirme, ses, resim.",
+   "akilda": "Üç grup ilke",
+   "soru": {
+    "soru": "Kitapta sunum ilkeleri kaç grupta verilir?",
+    "secenekler": [
+     "Üç",
+     "İki",
+     "Beş"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminde kaç şerit vardı?",
+    "aciklama": "Sunum ilkeleri üç başlık altında toplanır. (s. 64)"
+   }
+  },
+  {
+   "ad": "Tutarlılık ve Gereksizlik",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='88' height='66' rx='6' fill='#e9ecef'/><rect x='26' y='28' width='40' height='8' rx='3' fill='#c2255c'/><path d='M26 48h50M26 58h40' stroke='#495057' stroke-width='3'/><path d='M74 64l20 16M94 64L74 80' stroke='#e03131' stroke-width='5' stroke-linecap='round'/><path d='M38 100h44' stroke='#ff8fab' stroke-width='5' stroke-linecap='round'/></svg>",
+   "aciklama": "Tutarlılık ilkesi: sunudan konuyla ilgisi olmayan kelime, görsel ve sesler çıkarılır.",
+   "ek": "Gereksizlik ilkesi: aynı bilgiyi hem resim, hem sesli anlatım, hem de yazı olarak üç kez vermeye gerek yoktur; resim ve anlatım birlikte yeterlidir. (Açıklama kitap dışı kaynaktan.)",
+   "akilda": "Fazlasını çıkar",
+   "soru": {
+    "soru": "Tutarlılık ilkesine göre sunuda ne yapılır?",
+    "secenekler": [
+     "Her slayta farklı müzik konur",
+     "Konuyla ilgisiz görsel ve sesler çıkarılır",
+     "Bütün yazılar büyütülür"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın akılda kalsın yazısı: fazlasını…",
+    "aciklama": "Tutarlılık: gereksiz kelime, görsel ve sesler çıkarılır. (s. 64; açıklama kitap dışı)"
+   }
+  },
+  {
+   "ad": "Parçalara Bölme ve Dikkat Çekme",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='24' width='28' height='40' rx='4' fill='#f2c14e'/><rect x='46' y='24' width='28' height='40' rx='4' fill='#f2c14e'/><rect x='80' y='24' width='28' height='40' rx='4' fill='#f2c14e'/><text x='26' y='49' font-size='14' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>1</text><text x='60' y='49' font-size='14' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>2</text><text x='94' y='49' font-size='14' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>3</text><path d='M44 92h32' stroke='#ff4d6d' stroke-width='4' stroke-linecap='round'/><path d='M60 74v10M52 78l4 6M68 78l-4 6' stroke='#ff4d6d' stroke-width='3' stroke-linecap='round'/></svg>",
+   "aciklama": "Parçalara bölme ilkesi: uzun bir konu küçük bölümlere ayrılır. Dikkat çekme ilkesi: önemli noktalar belirgin hâle getirilir.",
+   "ek": "Böylece izleyen kişi konuyu adım adım ve kolay izler. (Açıklama kitap dışı kaynaktan.)",
+   "akilda": "Küçük parça, önemliyi belirt",
+   "soru": {
+    "soru": "Uzun bir konunun küçük bölümlere ayrılması hangi ilkedir?",
+    "secenekler": [
+     "Kişiselleştirme",
+     "Gereksizlik",
+     "Parçalara bölme"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın çiziminde konu 1, 2, 3 diye bölünmüştü.",
+    "aciklama": "Parçalara bölme ilkesinde uzun içerik küçük bölümlere ayrılır. (s. 64; açıklama kitap dışı)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bir çoklu ortam aracı mı, sunum ilkesi mi?",
+   "kutular": [
+    {
+     "etiket": "Çoklu ortam aracı",
+     "uyeler": [
+      "Çoklu Ortam Araçları",
+      "Sunu"
+     ]
+    },
+    {
+     "etiket": "Sunum ilkesi",
+     "uyeler": [
+      "Sunum İlkeleri",
+      "Tutarlılık ve Gereksizlik",
+      "Parçalara Bölme ve Dikkat Çekme"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki sunu etkinliğinde şunlar kontrol edilir: konu, kaynaklar, metnin ana başlıkları, resim sayısı, müzik-video, renk teması, sayfa sayısı ve süre. (s. 66–67)",
+  "Hazırlanan sunu sınıfta paylaşılır; arkadaşlardan gelen geri bildirimlere göre düzeltilir. (s. 67)"
+ ],
+ "akildaKalsin": [
+  "Çoklu ortam: içeriği ses, görüntü, animasyon, müzikle sunmak.",
+  "Araçlar: metin, ses, video, fotoğraf, animasyon, görsel.",
+  "Sunu: düzenli slaytlar grubu (örnek program PowerPoint).",
+  "İlk basamak konu tespiti, son basamak değerlendirme ve sunma.",
+  "İlkeler üç grupta; gereksizi çıkar, konuyu parçala, önemliyi belirt."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Çoklu ortam neden öğrenmeyi kolaylaştırır?",
+   "cevap": "Öğretenin işini daha etkili yapar; öğrenen de bilgiye daha kolay ve kalıcı ulaşır. (s. 64)"
+  },
+  {
+   "soru": "Slayta neler eklenebilir?",
+   "cevap": "Resim, film, ses, şekil, metin kutusu ve özel animasyon eklenebilir. (s. 65)"
+  },
+  {
+   "soru": "Sunu hazırladıktan sonra ne yapılır?",
+   "cevap": "Sınıfta arkadaşlarla paylaşılır, değerlendirilir ve gelen geri bildirimlere göre düzeltilir. (s. 67)"
+  },
+  {
+   "soru": "Sunuda her slayta çok sayıda resim ve ses koymak iyi midir?",
+   "cevap": "Hayır. Tutarlılık ilkesine göre konuyla ilgisi olmayan görsel ve sesler çıkarılır. (s. 64; açıklama kitap dışı)"
+  },
+  {
+   "soru": "Sunumu hazırlarken hangi soruları sorabilirim?",
+   "cevap": "Konum ne? Hangi kaynakları kullandım? Ana başlıklar neler? Kaç resim var? Renk temam ne? Sunu kaç dakika sürüyor? (s. 66–67)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Sınıfta en sevdiğin hayvanı anlatan bir sunu hazırlayacaksın. Hangi çoklu ortam araçlarını kullanırsın ve hangi ilkeye dikkat edersin?",
+   "ornekCevap": "Hayvanın fotoğrafını, sesini ve kısa bir videosunu kullanırım. Konuyu beslenme, yaşadığı yer gibi küçük parçalara bölerim. Konuyla ilgisi olmayan resim ve müzik koymam.",
+   "anahtarlar": [
+    "fotoğraf",
+    "ses",
+    "video",
+    "parça",
+    "gereksiz",
+    "ilgisi",
+    "metin"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Çoklu ortamın diğer adı nedir?",
+   "secenekler": [
+    "Simülasyon",
+    "Multimedya",
+    "Konstrüksiyon"
+   ],
+   "dogru": 1,
+   "ipucu": "Çoklu ortam kartının ilk cümlesinde parantez içinde yazıyordu.",
+   "aciklama": "Çoklu ortamın diğer adı multimedyadır. (s. 64)",
+   "kavram": "Çoklu Ortam"
+  },
+  {
+   "soru": "Çoklu ortamın eğitime katkısı nedir?",
+   "secenekler": [
+    "Öğrenmeyi zorlaştırır",
+    "Yalnız eğlence sağlar",
+    "Bilgiye daha kolay ve kalıcı ulaşmayı sağlar"
+   ],
+   "dogru": 2,
+   "ipucu": "Kalıcı…",
+   "aciklama": "Eğitimde çoklu ortamlar öğrenenin bilgiye daha kolay ve kalıcı erişmesini sağlar. (s. 64)",
+   "kavram": "Çoklu Ortam"
+  },
+  {
+   "soru": "Hangisi çoklu ortam araçlarından değildir?",
+   "secenekler": [
+    "Pergel",
+    "Fotoğraf",
+    "Animasyon"
+   ],
+   "dogru": 0,
+   "ipucu": "Bilgisayarda sunulamayan araç…",
+   "aciklama": "Metin, ses, video, fotoğraf, animasyon ve görseller çoklu ortam araçlarıdır; pergel değildir. (s. 64)",
+   "kavram": "Çoklu Ortam Araçları"
+  },
+  {
+   "soru": "Kitapta sunu hazırlamak için örnek olarak hangi program kullanılır?",
+   "secenekler": [
+    "AutoCAD",
+    "PowerPoint",
+    "Tinkercad"
+   ],
+   "dogru": 1,
+   "ipucu": "Sunu kartının ek bilgisine bak.",
+   "aciklama": "Kitapta sunu PowerPoint programıyla hazırlanır. (s. 65)",
+   "kavram": "Sunu"
+  },
+  {
+   "soru": "Metin, resim ve grafiklerden düzenli bir şekilde hazırlanan slaytlar grubuna ne denir?",
+   "secenekler": [
+    "Afiş",
+    "Koordinat",
+    "Sunu"
+   ],
+   "dogru": 2,
+   "ipucu": "Slaytlar grubu…",
+   "aciklama": "Sunu, verilerden düzenli şekilde oluşturulan slaytlar grubudur. (s. 65)",
+   "kavram": "Sunu"
+  },
+  {
+   "soru": "Sunu hazırlamanın son basamağı hangisidir?",
+   "secenekler": [
+    "Değerlendirme ve sunma",
+    "Görsellerin seçimi",
+    "Konu tespiti"
+   ],
+   "dogru": 0,
+   "ipucu": "Sunu hazırlanınca en sonda ne yapılır?",
+   "aciklama": "Sunu hazırlama değerlendirme ve sunma ile biter. (s. 64)",
+   "kavram": "Sunu Hazırlama Basamakları"
+  },
+  {
+   "soru": "Kitapta sunum ilkelerinin gruplarından biri hangisidir?",
+   "secenekler": [
+    "Çizgileri uzatma",
+    "Konu dışı işlemleri azaltma",
+    "Renkleri karıştırma"
+   ],
+   "dogru": 1,
+   "ipucu": "Üç grubun ilki 'gereksizi azalt' anlamındaydı.",
+   "aciklama": "Gruplar: konu dışı işlemleri azaltma, temel süreçleri yönetme, üretici süreçleri geliştirme. (s. 64)",
+   "kavram": "Sunum İlkeleri"
+  },
+  {
+   "soru": "Ela'nın sunusunda konuyla ilgisi olmayan bir şarkı ve süs resimleri var. Hangi ilkeye uymamıştır?",
+   "secenekler": [
+    "Ön alıştırma",
+    "Parçalara bölme",
+    "Tutarlılık"
+   ],
+   "dogru": 2,
+   "ipucu": "Konuyla ilgisiz olanları çıkarma ilkesi…",
+   "aciklama": "Tutarlılık ilkesine göre konuyla ilgisiz görsel ve sesler çıkarılır. (s. 64; açıklama kitap dışı)",
+   "kavram": "Tutarlılık ve Gereksizlik",
+   "yardim": {
+    "adimlar": [
+     "Sunudaki fazlalık nedir?",
+     "Fazlalıkları çıkarmayı söyleyen ilke hangi karttaydı?"
+    ]
+   }
+  },
+  {
+   "soru": "Sunudaki önemli bir bilgi kalın yazı ve okla belirgin hâle getirildi. Bu hangi ilkedir?",
+   "secenekler": [
+    "Dikkat çekme",
+    "Gereksizlik",
+    "Kişiselleştirme"
+   ],
+   "dogru": 0,
+   "ipucu": "Önemliyi belirtmek…",
+   "aciklama": "Dikkat çekme ilkesinde önemli noktalar belirginleştirilir. (s. 64; açıklama kitap dışı)",
+   "kavram": "Parçalara Bölme ve Dikkat Çekme"
+  }
+ ]
+}

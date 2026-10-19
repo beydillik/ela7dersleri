@@ -1,0 +1,329 @@
+{
+ "id": "u4k2",
+ "unite": "4. Ünite: Bilgisayar Destekli Tasarım",
+ "baslik": "Boyutlar ve Koordinat Sistemi",
+ "sayfalar": "s. 61–62",
+ "giris": "Bilgisayarda çizim yapmak için önce boyutları ve koordinat sistemini bilmeliyiz. Bu konuda tek, iki ve üç boyutu, sonra da x ve y eksenlerini öğreneceğiz.",
+ "kavramlar": [
+  {
+   "ad": "Boyut",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 76h84' stroke='#6fb3ff' stroke-width='4'/><path d='M18 66v20M102 66v20' stroke='#6fb3ff' stroke-width='4'/><path d='M30 50h60' stroke='#f2c14e' stroke-width='3'/><path d='M30 50l8-5v10zM90 50l-8-5v10z' fill='#f2c14e'/><text x='60' y='40' font-size='13' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>ölçü</text><text x='60' y='104' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>bir yönde</text></svg>",
+   "aciklama": "Boyut, belirli bir yönde ölçülen büyüklüktür.",
+   "ek": "Nokta boyutsuz kabul edilir. Boyut kelimesi zaman ve kütle gibi büyüklüklerin birimleri için de kullanılır.",
+   "akilda": "Bir yönde ölçülen büyüklük",
+   "soru": {
+    "soru": "Kitaba göre hangisi boyutsuz kabul edilir?",
+    "secenekler": [
+     "Küp",
+     "Çizgi",
+     "Nokta"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisine bak.",
+    "aciklama": "Nokta boyutsuz olarak kabul edilir. (s. 61)"
+   }
+  },
+  {
+   "ad": "Tek Boyut",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M16 60h88' stroke='#ffa26b' stroke-width='6' stroke-linecap='round'/><text x='60' y='44' font-size='13' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>uzunluk</text><text x='60' y='90' font-size='16' font-weight='700' fill='#ffa26b' text-anchor='middle' font-family='sans-serif'>1B</text></svg>",
+   "aciklama": "Çizginin tek boyutu vardır: uzunluk.",
+   "ek": "Çizgiyi ölçerken yalnız ne kadar uzun olduğuna bakarız.",
+   "akilda": "Çizgi = yalnız uzunluk",
+   "soru": {
+    "soru": "Çizginin hangi boyutu vardır?",
+    "secenekler": [
+     "Yalnız uzunluk",
+     "Yalnız derinlik",
+     "En, boy ve derinlik"
+    ],
+    "dogru": 0,
+    "ipucu": "Çizgi tek boyutludur…",
+    "aciklama": "Çizginin sadece uzunluk olmak üzere bir boyutu vardır. (s. 61)"
+   }
+  },
+  {
+   "ad": "İki Boyut",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='30' width='30' height='30' fill='#2f9e44'/><rect x='50' y='34' width='42' height='24' fill='#69db7c'/><path d='M70 98l22-34 22 34z' fill='#8ce99a'/><text x='36' y='90' font-size='12' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>en + boy</text><text x='30' y='22' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>kare</text></svg>",
+   "aciklama": "Yüzeylerin iki boyutu vardır: en ve boy. Kare, dikdörtgen ve üçgen iki boyutludur.",
+   "ek": "İki boyutlu şekillerin alanı bulunur.",
+   "akilda": "En ve boy → alan",
+   "soru": {
+    "soru": "Hangisi iki boyutlu bir şekildir?",
+    "secenekler": [
+     "Küp",
+     "Üçgen",
+     "Piramit"
+    ],
+    "dogru": 1,
+    "ipucu": "Kâğıda düz çizilen, yalnız eni ve boyu olan şekil…",
+    "aciklama": "Kare, dikdörtgen, üçgen gibi şekiller 2 boyutludur. (s. 61)"
+   }
+  },
+  {
+   "ad": "Üç Boyut",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M34 46l26-14 26 14v32l-26 14-26-14z' fill='#7950f2'/><path d='M34 46l26 14 26-14M60 60v32' stroke='#e5dbff' stroke-width='2.5' fill='none'/><text x='60' y='112' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>en + boy + derinlik</text></svg>",
+   "aciklama": "Cisimlerin üç boyutu vardır: en, boy ve derinlik. Küp, dikdörtgenler prizması ve üçgen piramit üç boyutludur.",
+   "ek": "Üç boyutlu cisimlerin hacmi bulunur.",
+   "akilda": "Derinlik de var → hacim",
+   "soru": {
+    "soru": "Üç boyutlu cisimlerde ne bulunur?",
+    "secenekler": [
+     "Hiçbir ölçü",
+     "Yalnız uzunluk",
+     "Hacim"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisinde bir ölçü vardı.",
+    "aciklama": "3 boyutlu cisimlerde hacim bulunur. (s. 61)"
+   }
+  },
+  {
+   "ad": "Koordinat",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='16' width='88' height='88' rx='6' fill='#1d3f74'/><path d='M16 46h88M16 76h88M46 16v88M76 16v88' stroke='#5c677d' stroke-width='1.5'/><path d='M76 26c-9 0-15 7-15 15 0 11 15 25 15 25s15-14 15-25c0-8-6-15-15-15z' fill='#ff4d6d'/><circle cx='76' cy='41' r='5' fill='#ffffff'/></svg>",
+   "aciklama": "Koordinat, bir noktanın düzlemdeki ya da uzaydaki yerini (konumunu) belirler.",
+   "ek": "Dünya'daki bir yeri bulmak ve harita çizmek için kullanılır.",
+   "akilda": "Noktanın adresi",
+   "soru": {
+    "soru": "Koordinat ne işe yarar?",
+    "secenekler": [
+     "Bir noktanın konumunu belirler",
+     "Rengi açar",
+     "Sesi büyütür"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminde haritada bir işaret vardı.",
+    "aciklama": "Koordinat, bir noktanın düzlem ya da uzaydaki konumunu belirlemeye yarar. (s. 62)"
+   }
+  },
+  {
+   "ad": "Koordinat Sistemi",
+   "renk": "#1971c2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 92h92M30 106V14' stroke='#e9ecef' stroke-width='3'/><path d='M106 92l-8-4v8zM30 14l-4 8h8z' fill='#e9ecef'/><text x='100' y='108' font-size='13' font-weight='700' fill='#6fb3ff' text-anchor='middle' font-family='sans-serif'>x</text><text x='42' y='20' font-size='13' font-weight='700' fill='#ffa26b' text-anchor='middle' font-family='sans-serif'>y</text><text x='76' y='50' font-size='10' font-weight='700' fill='#6fb3ff' text-anchor='middle' font-family='sans-serif'>x yatay</text><text x='76' y='66' font-size='10' font-weight='700' fill='#ffa26b' text-anchor='middle' font-family='sans-serif'>y dikey</text></svg>",
+   "aciklama": "Başlangıç noktası aynı olan ve birbirini dik kesen iki sayı doğrusunun oluşturduğu sisteme koordinat sistemi denir.",
+   "ek": "Eksen adları: x apsis (yatay), y ordinat (dikey), z kot (düşey, derinlik). İki boyutta x ve y, üç boyutta x, y ve z vardır.",
+   "akilda": "x yatay, y dikey, z kot",
+   "soru": {
+    "soru": "Koordinat sisteminde yatay eksen hangisidir?",
+    "secenekler": [
+     "y ekseni",
+     "x ekseni",
+     "z ekseni"
+    ],
+    "dogru": 1,
+    "ipucu": "x apsis…",
+    "aciklama": "x apsis (yatay), y ordinat (dikey), z kot ekseni adını alır. (s. 62)"
+   }
+  },
+  {
+   "ad": "Orijin",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 60h92M60 14v92' stroke='#e9ecef' stroke-width='3'/><circle cx='60' cy='60' r='9' fill='#f2c14e'/><text x='86' y='84' font-size='13' font-weight='700' fill='#f2c14e' text-anchor='middle' font-family='sans-serif'>(0,0)</text></svg>",
+   "aciklama": "Koordinat eksenlerinin kesiştiği noktaya orijin (koordinat merkezi) denir.",
+   "ek": "Orijinin yeri (0,0) diye yazılır.",
+   "akilda": "Eksenlerin buluştuğu yer (0,0)",
+   "soru": {
+    "soru": "x ve y eksenlerinin kesiştiği noktaya ne denir?",
+    "secenekler": [
+     "Kaçma noktası",
+     "Ufuk çizgisi",
+     "Orijin"
+    ],
+    "dogru": 2,
+    "ipucu": "Koordinat merkezinin diğer adı…",
+    "aciklama": "Koordinat eksenlerinin kesim noktasına koordinat merkezi ya da orijin denir. (s. 62)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bir boyut bilgisi mi, koordinat bilgisi mi?",
+   "kutular": [
+    {
+     "etiket": "Boyut",
+     "uyeler": [
+      "Boyut",
+      "Tek Boyut",
+      "İki Boyut",
+      "Üç Boyut"
+     ]
+    },
+    {
+     "etiket": "Koordinat",
+     "uyeler": [
+      "Koordinat",
+      "Koordinat Sistemi",
+      "Orijin"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Bilgisayar destekli tasarım programlarını kullanabilmek için koordinat sistemini anlamak gerekir. (s. 62)",
+  "Kitaptaki örnekte (2,3) ve (–3,1) noktaları koordinat düzleminde gösterilir; orijin (0,0) noktasıdır. (s. 62)"
+ ],
+ "akildaKalsin": [
+  "Nokta boyutsuz; çizgi tek boyutlu (uzunluk).",
+  "İki boyut: en ve boy; alan bulunur.",
+  "Üç boyut: en, boy, derinlik; hacim bulunur.",
+  "Koordinat: noktanın konumu.",
+  "x yatay (apsis), y dikey (ordinat), z kot; kesiştikleri yer orijin."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Küp ile kare arasındaki fark nedir?",
+   "cevap": "Karenin yalnız eni ve boyu vardır, iki boyutludur. Küpün derinliği de vardır, üç boyutludur. (s. 61)"
+  },
+  {
+   "soru": "Alan ve hacim nerede bulunur?",
+   "cevap": "Alan iki boyutlu şekillerde, hacim üç boyutlu cisimlerde bulunur. (s. 61)"
+  },
+  {
+   "soru": "Koordinat nerede işimize yarar?",
+   "cevap": "Dünya'daki bir yeri bulmada ve harita çizmede kullanılır. (s. 62)"
+  },
+  {
+   "soru": "z ekseni ne zaman kullanılır?",
+   "cevap": "Üç boyutlu (uzaysal) çizimlerde. İki boyutlu çizimde yalnız x ve y vardır. (s. 62)"
+  },
+  {
+   "soru": "Koordinat sistemindeki iki sayı doğrusu nasıl durur?",
+   "cevap": "Başlangıç noktaları aynıdır ve birbirlerini dik keserler. (s. 62)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Masandaki bir kitabı düşün. Kitabın kapağı kaç boyutlu bir şekil gibi, kitabın kendisi kaç boyutlu bir cisimdir? Nedenini yaz.",
+   "ornekCevap": "Kapak iki boyutlu bir dikdörtgen gibidir, çünkü eni ve boyu vardır. Kitabın kendisi üç boyutludur, çünkü kalınlığı yani derinliği de vardır.",
+   "anahtarlar": [
+    "iki",
+    "üç",
+    "en",
+    "boy",
+    "derinlik",
+    "kalınlık"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Boyut ne demektir?",
+   "secenekler": [
+    "Bir nesnenin rengi",
+    "Belirli bir yönde ölçülen büyüklük",
+    "Bir şeklin adı"
+   ],
+   "dogru": 1,
+   "ipucu": "Boyut kartının ilk cümlesi…",
+   "aciklama": "Boyut, belirli bir doğrultuda ölçülmüş büyüklüktür. (s. 61)",
+   "kavram": "Boyut"
+  },
+  {
+   "soru": "Yalnızca uzunluğu olan çizgi kaç boyutludur?",
+   "secenekler": [
+    "Üç boyutlu",
+    "İki boyutlu",
+    "Tek boyutlu"
+   ],
+   "dogru": 2,
+   "ipucu": "Bir ölçü = …",
+   "aciklama": "Çizginin yalnız uzunluk boyutu vardır; tek boyutludur. (s. 61)",
+   "kavram": "Tek Boyut"
+  },
+  {
+   "soru": "Dikdörtgenin hangi ölçüleri vardır?",
+   "secenekler": [
+    "En ve boy",
+    "Yalnız uzunluk",
+    "En, boy ve derinlik"
+   ],
+   "dogru": 0,
+   "ipucu": "Dikdörtgen kâğıda düz çizilir.",
+   "aciklama": "Dikdörtgen iki boyutludur; eni ve boyu vardır. (s. 61)",
+   "kavram": "İki Boyut"
+  },
+  {
+   "soru": "Hangisi üç boyutlu bir cisimdir?",
+   "secenekler": [
+    "Kare",
+    "Dikdörtgenler prizması",
+    "Çizgi"
+   ],
+   "dogru": 1,
+   "ipucu": "Derinliği olanı bul.",
+   "aciklama": "Küp, dikdörtgenler prizması ve üçgen piramit üç boyutludur. (s. 61)",
+   "kavram": "Üç Boyut"
+  },
+  {
+   "soru": "Üçgenin alanı bulunabilir. Bunun sebebi nedir?",
+   "secenekler": [
+    "Üçgenin hacmi vardır",
+    "Üçgen boyutsuzdur",
+    "Üçgen iki boyutludur"
+   ],
+   "dogru": 2,
+   "ipucu": "Alan hangi şekillerde bulunuyordu?",
+   "aciklama": "2 boyutlu şekillerin alanı bulunabilir; üçgen 2 boyutludur. (s. 61)",
+   "kavram": "İki Boyut",
+   "yardim": {
+    "adimlar": [
+     "Üçgenin eni ve boyu var mı?",
+     "Eni ve boyu olan şekiller kaç boyutluydu?"
+    ]
+   }
+  },
+  {
+   "soru": "Harita çizmek ve bir yeri bulmak için ne kullanılır?",
+   "secenekler": [
+    "Koordinat",
+    "Animasyon",
+    "Konstrüksiyon"
+   ],
+   "dogru": 0,
+   "ipucu": "Noktanın adresi…",
+   "aciklama": "Koordinat, Dünya'daki bir yeri bulmak ve harita çiziminde kullanılır. (s. 62)",
+   "kavram": "Koordinat"
+  },
+  {
+   "soru": "Koordinat sisteminde dikey eksenin adı nedir?",
+   "secenekler": [
+    "x apsis",
+    "y ordinat",
+    "z kot"
+   ],
+   "dogru": 1,
+   "ipucu": "x yatay, y …",
+   "aciklama": "y ekseni ordinat adını alır ve dikeydir. (s. 62)",
+   "kavram": "Koordinat Sistemi"
+  },
+  {
+   "soru": "Üç boyutlu (uzaysal) çizimde hangi eksenler bulunur?",
+   "secenekler": [
+    "Yalnız x",
+    "x ve y",
+    "x, y ve z"
+   ],
+   "dogru": 2,
+   "ipucu": "Üçüncü boyut için üçüncü bir eksen gerekir.",
+   "aciklama": "Üç boyutlu durumda x, y, z eksenleri vardır. (s. 62)",
+   "kavram": "Koordinat Sistemi"
+  },
+  {
+   "soru": "Orijin noktasının yeri nasıl yazılır?",
+   "secenekler": [
+    "(0,0)",
+    "(1,1)",
+    "(2,3)"
+   ],
+   "dogru": 0,
+   "ipucu": "Eksenler sıfırda buluşur.",
+   "aciklama": "Orijin, eksenlerin kesiştiği (0,0) noktasıdır. (s. 62)",
+   "kavram": "Orijin"
+  }
+ ]
+}

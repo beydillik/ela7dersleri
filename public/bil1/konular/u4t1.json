@@ -1,0 +1,257 @@
+{
+ "id": "u4t1",
+ "tur": "tarama",
+ "unite": "4. Ünite: Bilgisayar Destekli Tasarım",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–4 · s. 58–68",
+ "giris": "Dördüncü ünite bitti! Dört konuya kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Bilgisayar destekli tasarımla parçalar önce bilgisayarda oluşturulur ve denenir. Bilgisayarda çizmek için boyutları ve koordinat sistemini biliriz. Elle yaptığımız taslağı programlarla iki ve üç boyutlu çizime dönüştürürüz. En sonunda tasarımımızı çoklu ortam sunusuyla anlatırız.",
+ "kapsar": [
+  "u4k1",
+  "u4k2",
+  "u4k3",
+  "u4k4"
+ ],
+ "hatirla": [
+  {
+   "konu": "u4k1",
+   "maddeler": [
+    "BDT: parça önce bilgisayarda oluşturulur.",
+    "Simülasyon: bilgisayarda modelleyip denemek.",
+    "Yararları: hızlı, doğru, çok seçenek, az hata."
+   ]
+  },
+  {
+   "konu": "u4k2",
+   "maddeler": [
+    "Çizgi tek boyut; kare iki boyut (alan); küp üç boyut (hacim).",
+    "Koordinat: noktanın konumu.",
+    "x apsis yatay, y ordinat dikey, z kot; kesiştikleri yer orijin."
+   ]
+  },
+  {
+   "konu": "u4k3",
+   "maddeler": [
+    "Önce elle taslak, sonra bilgisayarda 2B ve 3B çizim.",
+    "Paint 2B; CAD (AutoCAD…) hassas tasarım; Photoshop resim; Canva görsel iletişim; Tinkercad kurulumsuz 2B-3B.",
+    "3B nesneye ışık, doku, malzeme verilince gerçek görünür."
+   ]
+  },
+  {
+   "konu": "u4k4",
+   "maddeler": [
+    "Çoklu ortam: metin, ses, video, fotoğraf, animasyon birlikte.",
+    "Sunu: düzenli slaytlar grubu; konu tespitiyle başlar, değerlendirme ve sunmayla biter.",
+    "İlkeler: gereksizi çıkar (tutarlılık), konuyu parçala, önemliyi belirt."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 15,
+ "gruplar": [
+  {
+   "soru": "İki boyutlu mu, üç boyutlu mu?",
+   "kutular": [
+    {
+     "etiket": "İki boyutlu",
+     "uyeler": [
+      "İki Boyut",
+      "İki Boyutlu Çizim"
+     ]
+    },
+    {
+     "etiket": "Üç boyutlu",
+     "uyeler": [
+      "Üç Boyut",
+      "Üç Boyutlu Çizim",
+      "Işık, Doku ve Malzeme"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Çizim yapmakla mı, sunmakla mı ilgili?",
+   "kutular": [
+    {
+     "etiket": "Çizim yapmak",
+     "uyeler": [
+      "Taslak Çizim",
+      "CAD Programları",
+      "Tinkercad",
+      "Koordinat Sistemi"
+     ]
+    },
+    {
+     "etiket": "Sunmak",
+     "uyeler": [
+      "Çoklu Ortam",
+      "Sunu",
+      "Sunu Hazırlama Basamakları"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Bilgisayarda çizilen iki boyutlu bir şeklin yeri hangi eksenlerle belirlenir?",
+   "secenekler": [
+    "x ve y eksenleriyle",
+    "Yalnız z ekseniyle",
+    "Işık ve doku ile"
+   ],
+   "dogru": 0,
+   "ipucu": "İki boyutta kaç eksen vardı?",
+   "aciklama": "İki boyutlu çizimde konum x ve y eksenleriyle belirlenir. (s. 62)",
+   "yardim": {
+    "adimlar": [
+     "İki boyutlu çizimde hangi ölçüler var?",
+     "Koordinat sisteminde yatay ve dikey eksenin adları neydi?"
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k2",
+     "kavram": "Koordinat Sistemi"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "İki Boyutlu Çizim"
+    }
+   ]
+  },
+  {
+   "soru": "Tinkercad'de bir küp çizdin. Küpün kaç boyutu vardır ve neyi bulabilirsin?",
+   "secenekler": [
+    "İki boyutu; hacmini",
+    "Üç boyutu; hacmini",
+    "Tek boyutu; alanını"
+   ],
+   "dogru": 1,
+   "ipucu": "Küpün derinliği var mı?",
+   "aciklama": "Küp üç boyutludur (en, boy, derinlik); üç boyutlu cisimlerde hacim bulunur. (s. 61–62)",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "Tinkercad"
+    },
+    {
+     "konu": "u4k2",
+     "kavram": "Üç Boyut"
+    }
+   ]
+  },
+  {
+   "soru": "Bir mimar köprüsünü CAD programında çizdi ve depreme dayanıp dayanmadığını bilgisayarda denedi. Sırasıyla hangi kavramlar kullanılmıştır?",
+   "secenekler": [
+    "Paint – arşivleme",
+    "Çoklu ortam – montaj",
+    "CAD programı – simülasyon"
+   ],
+   "dogru": 2,
+   "ipucu": "Hassas teknik çizim programı ve bilgisayarda deneme…",
+   "aciklama": "CAD programları hassas tasarım içindir; bilgisayarda denemek simülasyondur. (s. 60, 62)",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "CAD Programları"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "Simülasyon"
+    }
+   ]
+  },
+  {
+   "soru": "Tasarımını bitiren Ela, çizimini sınıfa sesli anlatım, fotoğraf ve kısa bir videoyla tanıtacak. Ne hazırlamalıdır?",
+   "secenekler": [
+    "Çoklu ortam sunusu",
+    "Konstrüksiyon",
+    "Koordinat sistemi"
+   ],
+   "dogru": 0,
+   "ipucu": "Ses, fotoğraf ve video birlikte…",
+   "aciklama": "Ses, görüntü ve video birlikte kullanılan sunu çoklu ortam sunusudur. (s. 64)",
+   "kaynak": [
+    {
+     "konu": "u4k4",
+     "kavram": "Çoklu Ortam"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "Çoklu Ortam Araçları"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisi elle yapılan taslak çizime göre bilgisayarda çizimin bir üstünlüğüdür?",
+   "secenekler": [
+    "Daha yavaş yapılır",
+    "Kolayca değiştirilir ve hatalar azalır",
+    "Hiç ölçü kullanılmaz"
+   ],
+   "dogru": 1,
+   "ipucu": "BDT'nin yararlarını hatırla.",
+   "aciklama": "Bilgisayarda tasarım hızlı değiştirilir ve hatalar en aza iner. (s. 59–60, 63)",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "Taslak Çizim"
+    },
+    {
+     "konu": "u4k1",
+     "kavram": "BDT'nin Yararları"
+    }
+   ]
+  },
+  {
+   "soru": "3B bir küreye ışık verip yüzeyine metal görünüm ekledin. Sonra bunu sunuya koyarken gereksiz süs resimlerini çıkardın. Hangi iki kavramı kullandın?",
+   "secenekler": [
+    "Orijin ve parçalara bölme",
+    "Konstrüksiyon ve dikkat çekme",
+    "Işık-doku-malzeme ve tutarlılık"
+   ],
+   "dogru": 2,
+   "ipucu": "Gerçek gibi gösterme + fazlasını çıkarma…",
+   "aciklama": "Işık, doku ve malzeme gerçeklik katar; tutarlılık ilkesi gereksizi çıkarır. (program; s. 64)",
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "Işık, Doku ve Malzeme"
+    },
+    {
+     "konu": "u4k4",
+     "kavram": "Tutarlılık ve Gereksizlik"
+    }
+   ]
+  },
+  {
+   "soru": "Hangisinde iki boyutlu bir şekil ile üç boyutlu bir nesne birlikte verilmiştir?",
+   "secenekler": [
+    "Elips ve piramit",
+    "Küp ve küre",
+    "Daire ve çokgen"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce derinliği olmayan, sonra derinliği olanı bul.",
+   "aciklama": "Elips iki boyutlu şekil, piramit üç boyutlu nesnedir. (s. 61; program)",
+   "yardim": {
+    "adimlar": [
+     "Hangileri kâğıda düz çizilir, hangilerinin derinliği vardır?",
+     "Her seçenekte bir düz şekil bir de cisim var mı, bak."
+    ]
+   },
+   "kaynak": [
+    {
+     "konu": "u4k3",
+     "kavram": "İki Boyutlu Çizim"
+    },
+    {
+     "konu": "u4k3",
+     "kavram": "Üç Boyutlu Çizim"
+    }
+   ]
+  }
+ ]
+}

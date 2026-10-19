@@ -1,0 +1,337 @@
+{
+ "id": "u4k3",
+ "unite": "4. Ünite: Bilgisayar Destekli Tasarım",
+ "baslik": "Taslaktan 2B ve 3B Çizime",
+ "sayfalar": "s. 62–63 · program",
+ "giris": "Bir tasarım önce kâğıtta elle çizilir, sonra bilgisayara taşınır. Bu konuda iki ve üç boyutlu çizimi, hangi programlarla çizim yapıldığını ve 3B bir nesneyi nasıl gerçek gibi gösterdiğimizi öğreneceğiz.",
+ "kaynakNotu": "Üç boyutlu çizim, temel şekiller (çokgen, elips, dikdörtgen, daire) ve cisimler (piramit, küp, küre), 3B görünüm için ışık-doku-malzeme kitapta yok; MEB programının 4. ünitesinde (TT.7.4.1, içerik çerçevesi ve uygulamalar) geçer: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1440 · Program adları (AutoCAD, Paint, Photoshop, Tinkercad, Canva…) kitaptan, s. 62; Kemal'in isteğiyle (öğretmen sınavda soruyor) yazıldı.",
+ "kavramlar": [
+  {
+   "ad": "Taslak Çizim",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='14' width='80' height='92' rx='6' fill='#e9ecef'/><path d='M36 80l2-24 22-16 22 16-1 25z' stroke='#495057' stroke-width='2.5' fill='none' stroke-dasharray='5 3'/><path d='M52 81V64h14v17' stroke='#495057' stroke-width='2.5' fill='none'/><path d='M78 96l14-22 6 4-14 22-8 2z' fill='#f2c14e'/></svg>",
+   "aciklama": "Taslak çizim, tasarımın elle kâğıda yapılan ilk çizimidir.",
+   "ek": "Programa göre önce taslak hazırlanır, sonra taslak tasarım programlarıyla bilgisayarda ürüne dönüştürülür. Kitapta bir ev, araba, masa ya da tencerenin taslağı çizilip renklendirilir.",
+   "akilda": "Önce kâğıtta, elle",
+   "soru": {
+    "soru": "Bilgisayarda çizmeden önce tasarımın ilk hâli nasıl çizilir?",
+    "secenekler": [
+     "Hiç çizilmez",
+     "3D yazıcıyla",
+     "Elle, kâğıda taslak olarak"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın akılda kalsın yazısını hatırla.",
+    "aciklama": "Önce taslak çizim yapılır, sonra bilgisayarda 2 boyutlu çizilir. (s. 63; program)"
+   }
+  },
+  {
+   "ad": "İki Boyutlu Çizim",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='70' rx='6' fill='#e9ecef'/><rect x='22' y='28' width='28' height='22' fill='#2f9e44'/><circle cx='74' cy='40' r='13' fill='#ffa26b'/><ellipse cx='38' cy='70' rx='16' ry='9' fill='#6fb3ff'/><path d='M66 78l8-18 16 4 2 14z' fill='#b197fc'/><text x='60' y='108' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>en + boy</text></svg>",
+   "aciklama": "İki boyutlu (2B) çizim, bilgisayarda yalnızca eni ve boyu olan düz çizimdir.",
+   "ek": "Temel iki boyutlu şekiller: çokgen, elips, dikdörtgen, daire (program). Kitaba göre ofis programlarındaki Paint ile 2B çizim yapılabilir.",
+   "akilda": "Düz çizim: en ve boy",
+   "soru": {
+    "soru": "Hangisi iki boyutlu temel şekillerden biridir?",
+    "secenekler": [
+     "Elips",
+     "Küp",
+     "Küre"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminde basık bir daire vardı.",
+    "aciklama": "Çokgen, elips, dikdörtgen ve daire iki boyutlu şekillerdir. (program)"
+   }
+  },
+  {
+   "ad": "CAD Programları",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='64' rx='6' fill='#1d3f74'/><path d='M14 34h92' stroke='#6fb3ff' stroke-width='2'/><path d='M34 70V48h30v22M64 48l16-10v22l-16 10' stroke='#e9ecef' stroke-width='2.5' fill='none'/><path d='M84 70h14M84 66v8M98 66v8' stroke='#f2c14e' stroke-width='2'/><text x='60' y='104' font-size='15' font-weight='700' fill='#6fb3ff' text-anchor='middle' font-family='sans-serif'>CAD</text></svg>",
+   "aciklama": "CAD (Bilgisayar Destekli Tasarım) programları; inşaat, mimari, elektrik-elektronik ve makine parçası tasarımlarını kısa sürede ve hassas yapmayı sağlar.",
+   "ek": "Kitapta geçen CAD programları: AutoCAD, Solid Edge 2D Drafting, KitchenDraw, ZWCAD Standart, Autodesk Alias Automotive, Autodesk Maya. Üç boyutlu tasarımlar bu programlarla yapılabilir.",
+   "akilda": "Hassas ve hızlı teknik tasarım",
+   "soru": {
+    "soru": "Hangisi kitapta geçen bir CAD programıdır?",
+    "secenekler": [
+     "Paint",
+     "AutoCAD",
+     "Picasa"
+    ],
+    "dogru": 1,
+    "ipucu": "Adının içinde 'CAD' geçen program…",
+    "aciklama": "AutoCAD, kitapta sayılan CAD programlarındandır. (s. 62)"
+   }
+  },
+  {
+   "ad": "Resim ve Grafik Programları",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='20' width='84' height='62' rx='6' fill='#e9ecef'/><path d='M24 76l22-26 16 18 10-10 24 18z' fill='#2f9e44'/><circle cx='80' cy='36' r='8' fill='#f2c14e'/><path d='M30 96h60' stroke='#ff8fab' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Resim ve grafik işlemek için hazırlanmış programlar da vardır. Kitapta Photoshop, Corel ve Picasa gibi programlar sayılır.",
+   "ek": "Kitap bu gruba Octave, AForge ve Matlab'ı da yazar. Canva ile görsel iletişim tasarımı (afiş, davetiye gibi) ürünler hazırlanabilir; birçok web 2.0 aracıyla da tasarım yapılabilir.",
+   "akilda": "Resmi ve grafiği düzenle",
+   "soru": {
+    "soru": "Kitaba göre Canva ile ne hazırlanabilir?",
+    "secenekler": [
+     "Makine parçası",
+     "Bina temeli",
+     "Görsel iletişim tasarımı ürünleri"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisine bak.",
+    "aciklama": "Canva ile görsel iletişim tasarımı ürünler çıkarılabilir. (s. 62)"
+   }
+  },
+  {
+   "ad": "Tinkercad",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M26 50l18-10 18 10v20l-18 10-18-10z' fill='#7950f2'/><path d='M66 64l14-8 14 8v16l-14 8-14-8z' fill='#b197fc'/><circle cx='86' cy='38' r='12' fill='#ff8fab'/><path d='M18 98h84' stroke='#e9ecef' stroke-width='3'/><text x='60' y='112' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>çevrimiçi</text></svg>",
+   "aciklama": "Tinkercad, kurulum gerektirmeyen, internet üzerinden (çevrimiçi) çalışan bir programdır. Onunla basit 2 ve 3 boyutlu çizimler yapılır.",
+   "ek": "EBA'da eğitim videoları vardır. Tinkercad'de yapılan çizimler 3D yazıcılarda yazdırılabilir.",
+   "akilda": "Kurulumsuz, çevrimiçi 3B",
+   "soru": {
+    "soru": "Tinkercad'in özelliği hangisidir?",
+    "secenekler": [
+     "Kurulum gerektirmeden çevrimiçi çalışır",
+     "Yalnızca ses kaydeder",
+     "Sadece bilgisayara kurularak çalışır"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın akılda kalsın yazısı: kurulumsuz…",
+    "aciklama": "Tinkercad kurulum gerekmeyen, online çalışılan bir programdır. (s. 62)"
+   }
+  },
+  {
+   "ad": "Üç Boyutlu Çizim",
+   "renk": "#1971c2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 92l24-56 24 56z' fill='#1971c2'/><path d='M42 36l12 50' stroke='#6fb3ff' stroke-width='2'/><rect x='70' y='60' width='30' height='30' fill='#ffa26b'/><path d='M70 60l10-10h30l-10 10M100 60l10-10v30l-10 10' fill='#d9480f'/><circle cx='86' cy='32' r='12' fill='#69db7c'/></svg>",
+   "aciklama": "Üç boyutlu (3B) çizim, nesnenin eni, boyu ve derinliği olacak şekilde bilgisayarda çizilmesidir.",
+   "ek": "Programda geçen kavram (kitap dışı, MEB programı). Taslak çizimler üç boyutlu görsele dönüştürülür. Temel üç boyutlu nesneler: piramit, küp, küre.",
+   "akilda": "Derinliği olan çizim",
+   "soru": {
+    "soru": "Hangisi üç boyutlu temel nesnelerden biridir?",
+    "secenekler": [
+     "Daire",
+     "Küre",
+     "Elips"
+    ],
+    "dogru": 1,
+    "ipucu": "Top gibi yuvarlak, derinliği olan cisim…",
+    "aciklama": "Piramit, küp ve küre üç boyutlu nesnelerdir. (program)"
+   }
+  },
+  {
+   "ad": "Işık, Doku ve Malzeme",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='28' r='10' fill='#f2c14e'/><path d='M34 34l14 10M30 40l8 14' stroke='#f2c14e' stroke-width='2.5'/><circle cx='70' cy='68' r='28' fill='#5c677d'/><circle cx='60' cy='58' r='12' fill='#ced4da'/><ellipse cx='74' cy='102' rx='26' ry='5' fill='#0f1530'/><path d='M50 80l8 4M60 88l8 3M78 90l8-2' stroke='#343a40' stroke-width='2'/></svg>",
+   "aciklama": "Üç boyutlu bir nesneye ışık, doku ve malzeme özellikleri verilince nesne daha gerçek görünür.",
+   "ek": "Programda geçen kavram (kitap dışı, MEB programı). Işık parlaklık ve gölge verir, doku yüzeyin pürüzünü gösterir, malzeme nesnenin neyden yapıldığını (ahşap, metal gibi) hissettirir. Bunlar nesnenin algısını değiştirir.",
+   "akilda": "Gerçek gibi görünsün",
+   "soru": {
+    "soru": "3B nesneye ışık, doku ve malzeme vermek neyi sağlar?",
+    "secenekler": [
+     "Nesne silinir",
+     "Nesne iki boyutlu olur",
+     "Nesne daha gerçek görünür"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın akılda kalsın yazısı…",
+    "aciklama": "Işık, doku ve malzeme özellikleri nesnenin algısını değiştirir, daha gerçekçi yapar. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Bu bir çizim türü mü, çizim programı mı?",
+   "kutular": [
+    {
+     "etiket": "Çizim türü",
+     "uyeler": [
+      "Taslak Çizim",
+      "İki Boyutlu Çizim",
+      "Üç Boyutlu Çizim"
+     ]
+    },
+    {
+     "etiket": "Program",
+     "uyeler": [
+      "CAD Programları",
+      "Resim ve Grafik Programları",
+      "Tinkercad"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki etkinlikte önce bir nesnenin taslağı elle çizilir, sonra bilgisayarda çizilir ve iki çizimin farkları ile benzerlikleri yazılır. (s. 63)",
+  "Tinkercad'de yapılan bir çizim 3D yazıcıda gerçek bir nesne olarak basılabilir. (s. 62)"
+ ],
+ "akildaKalsin": [
+  "Önce elle taslak, sonra bilgisayarda çizim.",
+  "2B şekiller: çokgen, elips, dikdörtgen, daire; Paint ile çizilebilir.",
+  "CAD programları: AutoCAD, Solid Edge, KitchenDraw, ZWCAD, Alias, Maya.",
+  "Resim-grafik: Photoshop, Corel, Picasa; görsel iletişim: Canva.",
+  "Tinkercad: kurulumsuz, çevrimiçi, 2B-3B.",
+  "3B nesneler: piramit, küp, küre; ışık-doku-malzeme gerçeklik katar."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Paint ile ne yapılabilir?",
+   "cevap": "Ofis programları içindeki Paint ile iki boyutlu çizimler yapılabilir. (s. 62)"
+  },
+  {
+   "soru": "CAD ne demek?",
+   "cevap": "Bilgisayar Destekli Tasarım demektir (İngilizcesi Computer Aided Design). (s. 62)"
+  },
+  {
+   "soru": "Tinkercad'i öğrenmek için nereye bakabilirim?",
+   "cevap": "Kitaba göre EBA'da Tinkercad'in eğitim videoları var. (s. 62)"
+  },
+  {
+   "soru": "Elle çizim ile bilgisayarda çizim arasında ne fark olur?",
+   "cevap": "Bilgisayarda çizim genelde daha ölçülü ve düzenlidir, kolayca değiştirilir. Kitaptaki etkinlik bu farkı senin bulmanı ister. (s. 63)"
+  },
+  {
+   "soru": "Bir küreye ışık verince ne değişir?",
+   "cevap": "Bir yanı parlak, öbür yanı gölgeli görünür; küre düz bir daire değil, top gibi görünür. (program; kitap dışı örnek)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Odandaki bir eşyayı (masa, dolap gibi) bilgisayarda çizeceksin. Hangi sırayla çalışırsın? Hangi programı kullanabilirsin?",
+   "ornekCevap": "Önce masanın taslağını elle kâğıda çizerim. Sonra Tinkercad gibi bir programda önce 2 boyutlu, sonra 3 boyutlu çizerim. En sonunda ışık ve malzeme vererek gerçek gibi görünmesini sağlarım.",
+   "anahtarlar": [
+    "taslak",
+    "elle",
+    "boyut",
+    "tinkercad",
+    "paint",
+    "program",
+    "ışık"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Tasarımı bilgisayarda çizmeden önce ne yapılır?",
+   "secenekler": [
+    "Prototip basılır",
+    "Elle taslak çizim yapılır",
+    "Sunu hazırlanır"
+   ],
+   "dogru": 1,
+   "ipucu": "Önce kâğıtta…",
+   "aciklama": "Önce taslak çizim yapılır, sonra bilgisayarda çizilir. (s. 63)",
+   "kavram": "Taslak Çizim"
+  },
+  {
+   "soru": "Kitaba göre ofis programlarındaki hangi programla 2B çizim yapılabilir?",
+   "secenekler": [
+    "Matlab",
+    "Maya",
+    "Paint"
+   ],
+   "dogru": 2,
+   "ipucu": "İki boyutlu çizim kartının ek bilgisine bak.",
+   "aciklama": "Ofis programları içinde yer alan Paint ile 2B çizimler yapılabilir. (s. 62)",
+   "kavram": "İki Boyutlu Çizim"
+  },
+  {
+   "soru": "Hangisi iki boyutlu temel şekillerden değildir?",
+   "secenekler": [
+    "Piramit",
+    "Çokgen",
+    "Daire"
+   ],
+   "dogru": 0,
+   "ipucu": "Derinliği olanı bul.",
+   "aciklama": "Piramit üç boyutludur; çokgen, elips, dikdörtgen, daire iki boyutludur. (program)",
+   "kavram": "İki Boyutlu Çizim"
+  },
+  {
+   "soru": "Bir mühendis makine parçasını kısa sürede ve hassas çizmek istiyor. Hangi tür programı kullanmalı?",
+   "secenekler": [
+    "Ses kayıt programı",
+    "CAD programı",
+    "Oyun programı"
+   ],
+   "dogru": 1,
+   "ipucu": "Hassas teknik tasarım…",
+   "aciklama": "CAD programları makine parçalarının kısa zamanda, hassas tasarlanmasını sağlar. (s. 62)",
+   "kavram": "CAD Programları"
+  },
+  {
+   "soru": "Hangisi kitapta resim ve grafik işlemek için sayılan programlardandır?",
+   "secenekler": [
+    "ZWCAD",
+    "KitchenDraw",
+    "Photoshop"
+   ],
+   "dogru": 2,
+   "ipucu": "Fotoğraf düzenlemeyle bilinen program…",
+   "aciklama": "Photoshop, Corel, Picasa gibi programlar resim ve grafik işlemek için hazırlanmıştır. (s. 62)",
+   "kavram": "Resim ve Grafik Programları"
+  },
+  {
+   "soru": "Okulda kurulum yapmadan basit 3 boyutlu çizim yapmak isteyen öğrenci hangi programı kullanabilir?",
+   "secenekler": [
+    "Tinkercad",
+    "AutoCAD",
+    "Picasa"
+   ],
+   "dogru": 0,
+   "ipucu": "Kurulumsuz, çevrimiçi…",
+   "aciklama": "Tinkercad kurulum gerektirmeyen, online çalışan bir programdır. (s. 62)",
+   "kavram": "Tinkercad"
+  },
+  {
+   "soru": "Tinkercad'de yapılan çizimler ne ile gerçek nesneye dönüştürülebilir?",
+   "secenekler": [
+    "Hoparlör",
+    "3D yazıcı",
+    "Tarayıcı"
+   ],
+   "dogru": 1,
+   "ipucu": "Tinkercad kartının ek bilgisine bak.",
+   "aciklama": "Tinkercad'de yapılan çizimler 3D yazıcılarda yazdırılabilir. (s. 62)",
+   "kavram": "Tinkercad"
+  },
+  {
+   "soru": "Küp, piramit ve küre neden üç boyutlu nesnelerdir?",
+   "secenekler": [
+    "Renkli oldukları için",
+    "Yalnız uzunlukları vardır",
+    "Eni, boyu ve derinliği vardır"
+   ],
+   "dogru": 2,
+   "ipucu": "Üç boyutun üç ölçüsünü hatırla.",
+   "aciklama": "Üç boyutlu nesnelerde en, boy ve derinlik vardır. (program)",
+   "kavram": "Üç Boyutlu Çizim"
+  },
+  {
+   "soru": "Bilgisayardaki gri bir küreye parlaklık, pürüzlü yüzey ve metal görünüm verildi. Ne yapılmış olur?",
+   "secenekler": [
+    "Işık, doku ve malzeme verilmiştir",
+    "Küre iki boyutlu yapılmıştır",
+    "Koordinat silinmiştir"
+   ],
+   "dogru": 0,
+   "ipucu": "Gerçek gibi görünsün diye verilen üç özellik…",
+   "aciklama": "Işık, doku ve malzeme özellikleri 3B nesneyi daha gerçek gösterir. (program)",
+   "kavram": "Işık, Doku ve Malzeme"
+  },
+  {
+   "soru": "Hangi program kitapta CAD programları arasında sayılmaz?",
+   "secenekler": [
+    "Solid Edge 2D Drafting",
+    "Canva",
+    "Autodesk Maya"
+   ],
+   "dogru": 1,
+   "ipucu": "Canva görsel iletişim tasarımı içindi.",
+   "aciklama": "Canva görsel iletişim tasarımı için kullanılır; diğer ikisi kitapta CAD programı olarak geçer. (s. 62)",
+   "kavram": "CAD Programları"
+  }
+ ]
+}
