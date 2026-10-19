@@ -1,0 +1,324 @@
+{
+ "id": "u5k2",
+ "unite": "5. Ünite: Mimari Tasarım",
+ "baslik": "İşlevlerine Göre Mimari Yapılar",
+ "sayfalar": "s. 72–74 · program",
+ "giris": "Her bina aynı işi yapmaz: bazısında yaşarız, bazısında alışveriş yaparız, bazısında tedavi oluruz. Bu konuda binaları kullanım amaçlarına göre gruplayacak ve işlevin binanın yapısını nasıl değiştirdiğini öğreneceğiz.",
+ "kaynakNotu": "İşlevsellik ve mekânsal analoji kitapta kavram olarak yok; MEB programının 5. ünitesinde geçer (anahtar kavram işlevsellik; TT.7.5.1 mekânsal analoji: mekânları gözlemleyip niteliklerini belirleme ve benzerliklerden çıkarım yapma; TT.7.5.2 işlevsel farklılıklar): https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1441 · İşlevsel tanımı TDK: https://sozluk.gov.tr/gts?ara=işlevsel",
+ "kavramlar": [
+  {
+   "ad": "Konut",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='26' y='52' width='68' height='46' fill='#ffa26b'/><path d='M18 54l42-32 42 32z' fill='#d9480f'/><rect x='52' y='72' width='16' height='26' fill='#1b2340'/><rect x='34' y='62' width='12' height='12' fill='#e9ecef'/><rect x='74' y='62' width='12' height='12' fill='#e9ecef'/><rect x='78' y='26' width='8' height='16' fill='#d9480f'/></svg>",
+   "aciklama": "Konut, insanların içinde yaşadığı yapıdır.",
+   "ek": "Kitaptaki örnekler: daire, villa, yalı, köşk. (s. 72)",
+   "akilda": "İçinde yaşadığımız yer",
+   "soru": {
+    "soru": "Hangisi bir konuttur?",
+    "secenekler": [
+     "Köprü",
+     "Yalı",
+     "Fabrika"
+    ],
+    "dogru": 1,
+    "ipucu": "İçinde aile yaşayan yapıyı bul.",
+    "aciklama": "Yalı bir konuttur; daire, villa ve köşk de konuttur. (s. 72)"
+   }
+  },
+  {
+   "ad": "İş Merkezleri",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='30' width='34' height='70' fill='#6fb3ff'/><rect x='58' y='16' width='44' height='84' fill='#1d6fa3'/><path d='M24 40h22M24 52h22M24 64h22M24 76h22M64 28h32M64 40h32M64 52h32M64 64h32M64 76h32' stroke='#e9ecef' stroke-width='3'/><rect x='74' y='86' width='12' height='14' fill='#f2c14e'/></svg>",
+   "aciklama": "İş merkezleri, ticaret ve iş yapılan yapılardır: mağaza, han, otel, fabrika, depo, plaza gibi.",
+   "ek": "Kitaba göre iş merkezleri ticaret, eğitim, sağlık, kültür ve gösteri merkezleri olarak da gruplanabilir. (s. 72)",
+   "akilda": "Çalışılan, alışveriş edilen yer",
+   "soru": {
+    "soru": "Hangisi bir iş merkezidir?",
+    "secenekler": [
+     "Fabrika",
+     "Baraj",
+     "Villa"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartta sayılan örnekleri hatırla: mağaza, han, otel, …",
+    "aciklama": "Fabrika iş merkezlerindendir. (s. 72)"
+   }
+  },
+  {
+   "ad": "Hizmet Binaları",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='20' y='40' width='80' height='58' fill='#e9ecef'/><rect x='50' y='22' width='20' height='18' fill='#e9ecef'/><path d='M60 24v14M53 31h14' stroke='#e03131' stroke-width='5'/><rect x='30' y='52' width='12' height='12' fill='#6fb3ff'/><rect x='78' y='52' width='12' height='12' fill='#6fb3ff'/><rect x='52' y='72' width='16' height='26' fill='#2f9e44'/></svg>",
+   "aciklama": "Hizmet binaları, insanlara sağlık, eğitim, kültür, ticaret ve din alanında hizmet veren yapılardır.",
+   "ek": "Kitaptaki örnekler: hastane, okul, liman, tiyatro, sinema, camiler, kiliseler. (s. 72)",
+   "akilda": "Hizmet aldığımız yer",
+   "soru": {
+    "soru": "Hastane ve okul hangi gruba girer?",
+    "secenekler": [
+     "Konut",
+     "Mühendislik yapısı",
+     "Hizmet binası"
+    ],
+    "dogru": 2,
+    "ipucu": "Bu yapılarda bize sağlık ve eğitim hizmeti verilir.",
+    "aciklama": "Hastane ve okul hizmet binalarıdır. (s. 72)"
+   }
+  },
+  {
+   "ad": "Mühendislik Yapıları",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 66h100' stroke='#b197fc' stroke-width='6'/><path d='M16 66a18 18 0 0 1 28 0M46 66a18 18 0 0 1 28 0M76 66a18 18 0 0 1 28 0' stroke='#b197fc' stroke-width='5' fill='none'/><path d='M20 66v26M50 66v26M80 66v26M100 66v26' stroke='#7950f2' stroke-width='5'/><path d='M12 98c16-6 32 6 48 0s32-6 48 0' stroke='#6fb3ff' stroke-width='4' fill='none'/></svg>",
+   "aciklama": "Mühendislik yapıları; köprü, viyadük, baraj, kanalizasyon ve yol gibi yapılardır.",
+   "ek": "Kitapta bunlara sanat yapıları da denir. (s. 72)",
+   "akilda": "Köprü, baraj, yol",
+   "soru": {
+    "soru": "Hangisi bir mühendislik yapısıdır?",
+    "secenekler": [
+     "Köprü",
+     "Otel",
+     "Okul"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çizimine bak.",
+    "aciklama": "Köprüler mühendislik (sanat) yapılarıdır. (s. 72)"
+   }
+  },
+  {
+   "ad": "İşlev-Mekân İlişkisi",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='30' width='88' height='60' rx='6' fill='#e9ecef'/><rect x='24' y='38' width='72' height='30' fill='#343a40'/><path d='M28 80h10M44 80h10M60 80h10M76 80h10' stroke='#c2255c' stroke-width='6' stroke-linecap='round'/><path d='M100 22l10-6v20l-10-6z' fill='#f2c14e'/><circle cx='60' cy='20' r='6' fill='#f2c14e'/><text x='60' y='108' font-size='11' font-weight='700' fill='#ff8fab' text-anchor='middle' font-family='sans-serif'>işlev?</text></svg>",
+   "aciklama": "Bir mekânın işlevi, yani ne için kullanıldığı, onun biçimini, ışığını ve sesini belirler.",
+   "ek": "Kitap bir mekânı incelerken dört soru sorar: En önemli işlevi nedir? Fiziksel ve biçimsel özellikleri nelerdir? Aydınlatma ve ses yalıtımı nasıldır? Nerelere yapılmalıdır? (s. 73)",
+   "akilda": "İş, biçimi belirler",
+   "soru": {
+    "soru": "Kitaba göre bir mekânı incelerken ilk sorulan soru hangisidir?",
+    "secenekler": [
+     "Kaç katlıdır?",
+     "Mekânın en önemli işlevi nedir?",
+     "Kim yaptırmıştır?"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın akılda kalsın yazısı: iş, biçimi belirler.",
+    "aciklama": "İlk soru mekânın en önemli işlevidir. (s. 73)"
+   }
+  },
+  {
+   "ad": "İşlevsellik",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='46' cy='60' r='24' fill='none' stroke='#f2c14e' stroke-width='10' stroke-dasharray='9 6'/><circle cx='46' cy='60' r='9' fill='#f2c14e'/><path d='M76 64l10 10 20-24' stroke='#69db7c' stroke-width='8' fill='none' stroke-linecap='round'/></svg>",
+   "aciklama": "İşlevsellik, bir yapının yapılış amacına uygun çalışması, işe yarar olmasıdır.",
+   "ek": "Kitap dışı (MEB programı). TDK'ya göre işlevsel; kullanılabilir, çalışır durumda olandır. Örneğin bir okulda sınıflar aydınlık, koridorlar kalabalığa yetecek kadar geniş olmalıdır (kitap dışı örnek).",
+   "akilda": "Amacına uygun mu?",
+   "soru": {
+    "soru": "Bir binanın yapılış amacına uygun çalışmasına ne denir?",
+    "secenekler": [
+     "Estetik",
+     "Peyzaj",
+     "İşlevsellik"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın başlığına bak.",
+    "aciklama": "Amacına uygun, işe yarar olmak işlevselliktir. (program)"
+   }
+  },
+  {
+   "ad": "Mekânsal Analoji",
+   "renk": "#1971c2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='36' width='38' height='44' fill='#6fb3ff'/><path d='M10 38l21-16 21 16z' fill='#1971c2'/><rect x='70' y='36' width='38' height='44' fill='#6fb3ff'/><path d='M68 38l21-16 21 16z' fill='#1971c2'/><path d='M50 58h20' stroke='#f2c14e' stroke-width='4'/><path d='M54 52l-6 6 6 6M66 52l6 6-6 6' stroke='#f2c14e' stroke-width='4' fill='none'/><text x='60' y='104' font-size='12' font-weight='700' fill='#f2c14e' text-anchor='middle' font-family='sans-serif'>benzerlik</text></svg>",
+   "aciklama": "Mekânsal analoji, birden fazla mekânı gözlemleyip benzer yönlerini bulmak ve bu benzerliklerden sonuç çıkarmaktır.",
+   "ek": "Kitap dışı (MEB programı). 2. Ünite'deki analojiyi hatırla: iki şey arasında benzerlik kurmak. Örneğin kütüphane ve müzede ikisinde de sessiz ve aydınlık bir ortam gerekir (kitap dışı örnek). Kitap da iki binayı ışık, renk, doku ve ölçü yönünden karşılaştırır (s. 74).",
+   "akilda": "Mekânları karşılaştır, benzerini bul",
+   "soru": {
+    "soru": "Mekânsal analoji yaparken ne yapılır?",
+    "secenekler": [
+     "Mekânlar gözlenir, benzerlikleri bulunur",
+     "Bina yıkılıp yeniden yapılır",
+     "Yalnızca tek bir mekâna bakılır"
+    ],
+    "dogru": 0,
+    "ipucu": "Analoji = benzerlik kurmak.",
+    "aciklama": "Mekânsal analojide birden fazla mekân gözlenir ve benzerliklerinden sonuç çıkarılır. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Yapı türü mü, mekânı inceleme yolu mu?",
+   "kutular": [
+    {
+     "etiket": "Yapı türü",
+     "uyeler": [
+      "Konut",
+      "İş Merkezleri",
+      "Hizmet Binaları",
+      "Mühendislik Yapıları"
+     ]
+    },
+    {
+     "etiket": "Mekânı inceleme",
+     "uyeler": [
+      "İşlev-Mekân İlişkisi",
+      "İşlevsellik",
+      "Mekânsal Analoji"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitapta bir hastane binasının resmi üzerinden işlev ile mekân arasındaki ilişki incelenir. (s. 73)"
+ ],
+ "akildaKalsin": [
+  "Konut: daire, villa, yalı, köşk.",
+  "İş merkezleri: mağaza, han, otel, fabrika, depo, plaza.",
+  "Hizmet binaları: hastane, okul, liman, tiyatro, sinema, cami, kilise.",
+  "Mühendislik (sanat) yapıları: köprü, viyadük, baraj, kanalizasyon, yol.",
+  "İşlev farklıysa yapı da farklı olur.",
+  "Mekânsal analoji: mekânları karşılaştırıp benzerlik bulmak."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Otel hangi gruba girer?",
+   "cevap": "Kitapta otel, iş merkezleri arasında sayılır. (s. 72)"
+  },
+  {
+   "soru": "Liman bir hizmet binası mı?",
+   "cevap": "Evet. Kitapta liman, hizmet binaları arasında sayılır. (s. 72)"
+  },
+  {
+   "soru": "Bir hastane binası nasıl incelenir?",
+   "cevap": "Şu sorular sorulur: En önemli işlevi ne? Biçimi nasıl? Aydınlatma ve ses yalıtımı nasıl? Nereye yapılmalı? (s. 73)"
+  },
+  {
+   "soru": "İki binayı karşılaştırırken nelere bakarım?",
+   "cevap": "Fiziksel ölçülerine, biçimine, aydınlatma ve ses yalıtımına, rengine, dokusuna ve estetik özelliklerine. (s. 74)"
+  },
+  {
+   "soru": "İş merkezleri kendi içinde nasıl gruplanır?",
+   "cevap": "Ticaret, eğitim, sağlık, kültür ve gösteri merkezleri olarak. (s. 72)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okulun ile evin arasında hangi farklar var? İşlevlerinin farklı olması bu binaların yapısını nasıl değiştiriyor?",
+   "ornekCevap": "Okulda çok sayıda öğrenci için geniş sınıflar, koridorlar ve bahçe vardır; sınıflar aydınlık olmalıdır. Evde ise bir ailenin yaşaması için yatak odası, mutfak ve salon bulunur. İşlevleri farklı olduğu için büyüklükleri ve biçimleri de farklıdır.",
+   "anahtarlar": [
+    "işlev",
+    "sınıf",
+    "oda",
+    "büyük",
+    "farklı",
+    "aydınlat"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Daire, villa, yalı ve köşk hangi grupta yer alır?",
+   "secenekler": [
+    "Hizmet binaları",
+    "Konut",
+    "İş merkezleri"
+   ],
+   "dogru": 1,
+   "ipucu": "İçlerinde aileler yaşar.",
+   "aciklama": "Daire, villa, yalı ve köşk konuttur. (s. 72)",
+   "kavram": "Konut"
+  },
+  {
+   "soru": "Mağaza, han ve plaza hangi gruptadır?",
+   "secenekler": [
+    "İş merkezleri",
+    "Mühendislik yapıları",
+    "Konut"
+   ],
+   "dogru": 0,
+   "ipucu": "Ticaret yapılan yerler…",
+   "aciklama": "Mağaza, han ve plaza iş merkezleridir. (s. 72)",
+   "kavram": "İş Merkezleri"
+  },
+  {
+   "soru": "Hangisi hizmet binalarından değildir?",
+   "secenekler": [
+    "Hastane",
+    "Tiyatro",
+    "Viyadük"
+   ],
+   "dogru": 2,
+   "ipucu": "Hangisi köprü gibi bir mühendislik yapısıdır?",
+   "aciklama": "Viyadük bir mühendislik yapısıdır; hastane ve tiyatro hizmet binasıdır. (s. 72)",
+   "kavram": "Hizmet Binaları"
+  },
+  {
+   "soru": "Baraj ve kanalizasyon hangi grupta yer alır?",
+   "secenekler": [
+    "Hizmet binaları",
+    "Konut",
+    "Mühendislik (sanat) yapıları"
+   ],
+   "dogru": 2,
+   "ipucu": "Köprü, viyadük, yol ile aynı grupta…",
+   "aciklama": "Barajlar ve kanalizasyonlar mühendislik (sanat) yapılarıdır. (s. 72)",
+   "kavram": "Mühendislik Yapıları"
+  },
+  {
+   "soru": "Bir sinema salonu tasarlanırken özellikle neye dikkat edilir?",
+   "secenekler": [
+    "Aydınlatma ve ses yalıtımına",
+    "Hayvan barınağına",
+    "Bahçedeki ağaç sayısına"
+   ],
+   "dogru": 0,
+   "ipucu": "Kitaptaki dört sorudan biri ışık ve sesle ilgiliydi.",
+   "aciklama": "Mekânı incelerken aydınlatma ve ses yalıtımı özelliklerine bakılır; sinemada bu çok önemlidir. (s. 73)",
+   "kavram": "İşlev-Mekân İlişkisi"
+  },
+  {
+   "soru": "Okul ile hastane binaları neden farklı tasarlanır?",
+   "secenekler": [
+    "Farklı renkleri sevdikleri için",
+    "İşlevleri farklı olduğu için",
+    "Aynı mimar yapmadığı için"
+   ],
+   "dogru": 1,
+   "ipucu": "İşlev-mekân kartının akılda kalsın yazısını hatırla.",
+   "aciklama": "İşlevsel farklılıklar yapısal farklılıklara yol açar. (s. 73; program)",
+   "kavram": "İşlev-Mekân İlişkisi"
+  },
+  {
+   "soru": "Kullanıldığı amaca uygun çalışan bir bina için ne söylenir?",
+   "secenekler": [
+    "Süslüdür",
+    "İşlevseldir",
+    "Eskidir"
+   ],
+   "dogru": 1,
+   "ipucu": "Amacına uygun = …",
+   "aciklama": "Amacına uygun çalışan yapı işlevseldir. (program)",
+   "kavram": "İşlevsellik"
+  },
+  {
+   "soru": "Bir öğrenci kütüphane ile müzeyi gözlemledi ve ikisinin de sessiz ve aydınlık olması gerektiğini buldu. Öğrenci ne yapmıştır?",
+   "secenekler": [
+    "Mekânsal analoji",
+    "Peyzaj tasarımı",
+    "Simülasyon"
+   ],
+   "dogru": 0,
+   "ipucu": "İki mekân arasında benzerlik kurdu.",
+   "aciklama": "Mekânları gözlemleyip benzerlik bulmak mekânsal analojidir. (program)",
+   "kavram": "Mekânsal Analoji"
+  },
+  {
+   "soru": "Kitaptaki etkinlikte iki binayı karşılaştırırken hangisine bakılmaz?",
+   "secenekler": [
+    "Aydınlatma ve ses yalıtımı",
+    "Renk ve doku",
+    "Binada oturanların adları"
+   ],
+   "dogru": 2,
+   "ipucu": "Binanın özelliği olmayanı bul.",
+   "aciklama": "Karşılaştırmada ölçü, biçim, aydınlatma, ses yalıtımı, renk, doku ve estetiğe bakılır. (s. 74)",
+   "kavram": "İşlev-Mekân İlişkisi"
+  }
+ ]
+}

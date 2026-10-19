@@ -1,0 +1,700 @@
+{
+ "unite": 5,
+ "ders": "bil1",
+ "aciklama": "Sınav Provası soru havuzu. Sorular kitaba ve sitedeki konu anlatımına dayanarak yazıldı; okul testlerinin yalnızca biçimi örnek alındı.",
+ "sorular": [
+  {
+   "id": "b5-01",
+   "konu": "u5k1",
+   "kavram": "Mimar",
+   "tur": "kisa",
+   "soru": "İnsanların yaşayacağı yapıların çizimlerini yapan ve yapılmasını yöneten uzmana ne denir?",
+   "yanit": "mimar",
+   "kabul": [
+    "mimarlar"
+   ],
+   "aciklama": "Yapıların tasarısını çizen ve uygulamasını yöneten uzman mimardır (s. 71)."
+  },
+  {
+   "id": "b5-02",
+   "konu": "u5k1",
+   "kavram": "Mimar Sinan",
+   "tur": "secim",
+   "soru": "Mimar Sinan ile ilgili bilgiler verilmiştir.",
+   "onculler": [
+    "Osmanlı'nın en görkemli döneminde yaşamıştır.",
+    "Toplam 375 mimari eseri vardır.",
+    "Hep aynı kalıpla çalışmıştır."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Sinan Osmanlı'nın görkemli döneminde yaşadı, 375 eseri var; kalıplara bağlı kalmadı (s. 71)."
+  },
+  {
+   "id": "b5-03",
+   "konu": "u5k1",
+   "kavram": "Mimarın Görevleri",
+   "tur": "dytablo",
+   "soru": "Mimarın görevi ise D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Binanın planını çizmek",
+     "d": true
+    },
+    {
+     "s": "Binanın maketini hazırlamak",
+     "d": true
+    },
+    {
+     "s": "Binanın imar planına uygunluğunu incelemek",
+     "d": true
+    },
+    {
+     "s": "Binada satılacak ürünlerin fiyatını belirlemek",
+     "d": false
+    }
+   ],
+   "aciklama": "Plan, maket ve imar planı incelemesi mimarın görevleridir (s. 72)."
+  },
+  {
+   "id": "b5-04",
+   "konu": "u5k1",
+   "kavram": "Mimari Tasarım",
+   "tur": "dy",
+   "ifade": "Mimari tasarım coğrafi yapıdan, iklimden ve kültürel farklılıklardan etkilenir.",
+   "dogru": true,
+   "aciklama": "Mimari tasarım coğrafya, iklim ve kültürle şekillenir (s. 71)."
+  },
+  {
+   "id": "b5-05",
+   "konu": "u5k1",
+   "kavram": "Peyzaj Tasarımı",
+   "tur": "bosluk",
+   "havuz": [
+    "topografya",
+    "kiriş"
+   ],
+   "cumleler": [
+    {
+     "c": "Binaları saran dış çevrenin tasarımına ___ tasarımı denir.",
+     "cevap": "peyzaj"
+    },
+    {
+     "c": "Mimar Sinan bir ___ iken mimari zekâsıyla öne çıktı.",
+     "cevap": "yeniçeri"
+    },
+    {
+     "c": "Bir binayı görünce onu güzel bulmamız estetik ___ ile ilgilidir.",
+     "cevap": "algı"
+    }
+   ],
+   "aciklama": "Peyzaj dış çevre tasarımıdır; Sinan yeniçeriydi; güzel bulmak estetik algıdır (s. 71–72; program)."
+  },
+  {
+   "id": "b5-06",
+   "konu": "u5k1",
+   "kavram": "Mimari Mekân",
+   "tur": "dy",
+   "ifade": "Okul bahçesi kapalı bir mekândır.",
+   "dogru": false,
+   "duzeltme": "Okul bahçesi açık bir mekândır; sınıf kapalı mekândır.",
+   "aciklama": "Bahçe ve avlu açık, oda ve sınıf kapalı mekândır (program; s. 72)."
+  },
+  {
+   "id": "b5-07",
+   "konu": "u5k1",
+   "kavram": "Estetik Algı",
+   "tur": "secim",
+   "soru": "Hangisi bir binanın estetik algısıyla en çok ilgilidir?",
+   "secenekler": [
+    "Binanın imar planına uygunluğu",
+    "Binanın renginin ve biçiminin göze güzel gelmesi",
+    "Binanın kaç işçiyle yapıldığı",
+    "Binanın tapu kaydı"
+   ],
+   "dogru": 1,
+   "aciklama": "Estetik algı, yapıyı güzel bulup bulmamamızdır (program)."
+  },
+  {
+   "id": "b5-08",
+   "konu": "u5k2",
+   "kavram": "Konut",
+   "tur": "eslestir",
+   "soru": "Yapıyı ait olduğu grupla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Villa",
+     "sag": "Konut"
+    },
+    {
+     "sol": "Plaza",
+     "sag": "İş merkezi"
+    },
+    {
+     "sol": "Hastane",
+     "sag": "Hizmet binası"
+    },
+    {
+     "sol": "Baraj",
+     "sag": "Mühendislik yapısı"
+    }
+   ],
+   "aciklama": "Kitap yapıları kullanım amacına göre dört gruba ayırır (s. 72)."
+  },
+  {
+   "id": "b5-09",
+   "konu": "u5k2",
+   "kavram": "Hizmet Binaları",
+   "tur": "secim",
+   "soru": "Hangisi hizmet binalarından biri değildir?",
+   "secenekler": [
+    "Okul",
+    "Sinema",
+    "Liman",
+    "Köşk"
+   ],
+   "dogru": 3,
+   "aciklama": "Köşk bir konuttur; okul, sinema ve liman hizmet binasıdır (s. 72)."
+  },
+  {
+   "id": "b5-10",
+   "konu": "u5k2",
+   "kavram": "Mühendislik Yapıları",
+   "tur": "kisa",
+   "soru": "Köprü, viyadük, baraj ve yol gibi yapılara mühendislik yapıları dışında hangi ad verilir?",
+   "yanit": "sanat yapıları",
+   "kabul": [
+    "sanat yapısı",
+    "sanat yapilari"
+   ],
+   "aciklama": "Mühendislik yapılarına sanat yapıları da denir (s. 72)."
+  },
+  {
+   "id": "b5-11",
+   "konu": "u5k2",
+   "kavram": "İş Merkezleri",
+   "tur": "dy",
+   "ifade": "Fabrika ve depo, kitapta iş merkezleri arasında sayılır.",
+   "dogru": true,
+   "aciklama": "Mağaza, han, otel, fabrika, depo ve plaza iş merkezleridir (s. 72)."
+  },
+  {
+   "id": "b5-12",
+   "konu": "u5k2",
+   "kavram": "İşlev-Mekân İlişkisi",
+   "tur": "secim",
+   "soru": "Bir mekânın tasarımı incelenirken sorulan sorular verilmiştir.",
+   "onculler": [
+    "Mekânın en önemli işlevi nedir?",
+    "Aydınlatma ve ses yalıtımı özellikleri nelerdir?",
+    "Nerelere yapılması lazım?"
+   ],
+   "kok": "Bunlardan hangileri kitapta sorulur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 3,
+   "aciklama": "Kitap bu üç soruyu ve biçimsel özellikleri sorar (s. 73)."
+  },
+  {
+   "id": "b5-13",
+   "konu": "u5k2",
+   "kavram": "İşlevsellik",
+   "tur": "dy",
+   "ifade": "İşlevsellik, bir binanın yalnızca süslü görünmesidir.",
+   "dogru": false,
+   "duzeltme": "İşlevsellik, binanın yapılış amacına uygun çalışmasıdır.",
+   "aciklama": "İşlevsel yapı amacına uygun, kullanılabilir yapıdır (program)."
+  },
+  {
+   "id": "b5-14",
+   "konu": "u5k2",
+   "kavram": "Mekânsal Analoji",
+   "tur": "secim",
+   "soru": "Bir öğrenci kütüphane ile müzeyi gözlemleyip ikisinde de sessiz ve aydınlık ortam gerektiğini buluyor. Öğrenci ne yapmıştır?",
+   "secenekler": [
+    "Mekânsal analoji",
+    "Simülasyon",
+    "Peyzaj tasarımı",
+    "Toplu konut"
+   ],
+   "dogru": 0,
+   "aciklama": "Mekânları gözlemleyip benzerlik bulmak mekânsal analojidir (program)."
+  },
+  {
+   "id": "b5-15",
+   "konu": "u5k3",
+   "kavram": "Harran Evleri",
+   "tur": "eslestir",
+   "soru": "Geleneksel evi özelliğiyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Harran evleri",
+     "sag": "Tuğladan konik kubbe"
+    },
+    {
+     "sol": "Kapadokya evleri",
+     "sag": "Peribacasına oyulmuş"
+    },
+    {
+     "sol": "Safranbolu",
+     "sag": "UNESCO Dünya Miras Listesi"
+    },
+    {
+     "sol": "Karadeniz evi",
+     "sag": "Alt katta hayvan barınağı"
+    }
+   ],
+   "aciklama": "Her geleneksel ev kendi yaşam biçimini ve çevresini yansıtır (s. 75–76)."
+  },
+  {
+   "id": "b5-16",
+   "konu": "u5k3",
+   "kavram": "Toplu Konut",
+   "tur": "secim",
+   "soru": "Kitaba göre toplu konutların ortaya çıkmasının nedeni hangisidir?",
+   "secenekler": [
+    "Göçler sonucu büyük kentlerde konut açığı",
+    "Kapadokya'daki yanardağlar",
+    "Harran'da ağacın az olması",
+    "Pagodaların yayılması"
+   ],
+   "dogru": 0,
+   "aciklama": "Göçlerle büyük kentlerde konut açığı oluştu, toplu konutlar doğdu (s. 75)."
+  },
+  {
+   "id": "b5-17",
+   "konu": "u5k3",
+   "kavram": "Kültürel Kanıt",
+   "tur": "dy",
+   "ifade": "Kitaba göre yapılar yalnızca insanı çevreden koruyan bir kalkandır.",
+   "dogru": false,
+   "duzeltme": "Yapılar aynı zamanda birer kültürel kanıttır.",
+   "aciklama": "Yapılar hem korur hem de kültürün kanıtıdır (s. 75)."
+  },
+  {
+   "id": "b5-18",
+   "konu": "u5k3",
+   "kavram": "Kapadokya Evleri",
+   "tur": "secim",
+   "soru": "Kapadokya ile ilgili bilgiler verilmiştir.",
+   "onculler": [
+    "Evler kardan ve buzdan yapılmıştır.",
+    "Peribacalarını yağmur ve rüzgârın aşındırması oluşturmuştur.",
+    "Taşlar hava ile temas edene kadar yumuşaktır."
+   ],
+   "kok": "Bu bilgilerden hangileri doğrudur?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 2,
+   "aciklama": "Peribacaları aşınmayla oluştu, taşlar kolay oyulur; kar-buz iglodur (s. 76)."
+  },
+  {
+   "id": "b5-19",
+   "konu": "u5k3",
+   "kavram": "Safranbolu Evleri",
+   "tur": "kisa",
+   "soru": "Safranbolu adını hangi bitkiden alır?",
+   "yanit": "safran",
+   "kabul": [
+    "safran bitkisi"
+   ],
+   "aciklama": "Safranbolu adını safran bitkisinden alır (s. 76)."
+  },
+  {
+   "id": "b5-20",
+   "konu": "u5k3",
+   "kavram": "Harran Evleri",
+   "tur": "dy",
+   "ifade": "Harran evlerinin kubbeli yapısı evi yazın serin, kışın sıcak tutar.",
+   "dogru": true,
+   "aciklama": "Kubbeli yapı sıcak ve kurak yazlarda evi serin tutar (s. 76)."
+  },
+  {
+   "id": "b5-21",
+   "konu": "u5k3",
+   "kavram": "Yaşam Biçimi",
+   "tur": "bosluk",
+   "havuz": [
+    "iglo",
+    "pagoda"
+   ],
+   "cumleler": [
+    {
+     "c": "Harran evleri ___ tekniğiyle yapılmıştır.",
+     "cevap": "bindirme"
+    },
+    {
+     "c": "Tipik Karadeniz evinin alt katı hayvan ___ olarak kullanılır.",
+     "cevap": "barınağı"
+    },
+    {
+     "c": "Evler bölgesel, iklimsel ve ___ olanaklara göre değişmiştir.",
+     "cevap": "teknik"
+    }
+   ],
+   "aciklama": "Evler yaşam biçimine, bölgeye, iklime ve tekniğe göre şekillenir (s. 75–76)."
+  },
+  {
+   "id": "b5-22",
+   "konu": "u5k4",
+   "kavram": "İklim",
+   "tur": "secim",
+   "soru": "Kuzeye gidildikçe evlerde hangi değişiklik görülür?",
+   "secenekler": [
+    "Pencereler büyür, çatılar düzleşir",
+    "Pencereler küçülür, çatılar dikleşir",
+    "Geniş avlular yapılır",
+    "Duvarlar incelir"
+   ],
+   "dogru": 1,
+   "aciklama": "Kuzeye gittikçe pencereler küçülür, çatılar dikleşir (s. 77)."
+  },
+  {
+   "id": "b5-23",
+   "konu": "u5k4",
+   "kavram": "Coğrafi Yapı",
+   "tur": "dytablo",
+   "soru": "Kitaptaki bilgilere göre doğruysa D, yanlışsa Y seç.",
+   "ifadeler": [
+    {
+     "s": "Deniz kıyısındaki evlerde büyük camlar ve teras düşünülür.",
+     "d": true
+    },
+    {
+     "s": "Yaylalarda rüzgâra karşı güçlendirilmiş çatılar yapılır.",
+     "d": true
+    },
+    {
+     "s": "Eğimli arazideki ve ovadaki yapılar hep aynıdır.",
+     "d": false
+    }
+   ],
+   "aciklama": "Kıyıda büyük cam, yaylada güçlü çatı; eğimli arazi ile ova farklıdır (s. 77)."
+  },
+  {
+   "id": "b5-24",
+   "konu": "u5k4",
+   "kavram": "Topografya",
+   "tur": "kisa",
+   "soru": "Dağ, tepe, yayla ve vadi gibi farklı yüksekliklerle ilgili kavram hangisidir?",
+   "yanit": "topografya",
+   "kabul": [
+    "topoğrafya",
+    "topografik oluşumlar"
+   ],
+   "aciklama": "Yeryüzünü şekillendiren değişik yükseklikler topografik oluşumlardır (s. 77)."
+  },
+  {
+   "id": "b5-25",
+   "konu": "u5k4",
+   "kavram": "İnanç ve Kültür",
+   "tur": "secim",
+   "soru": "Budistlerin dinî yapılarına ne ad verilir?",
+   "secenekler": [
+    "Tulou",
+    "İglo",
+    "Torf ev",
+    "Pagoda"
+   ],
+   "dogru": 3,
+   "aciklama": "Pagoda, Budistlerin dinî yapısıdır (s. 78)."
+  },
+  {
+   "id": "b5-26",
+   "konu": "u5k4",
+   "kavram": "Tulou Evleri",
+   "tur": "eslestir",
+   "soru": "Evi bulunduğu yerle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Tulou evler",
+     "sag": "Çin"
+    },
+    {
+     "sol": "İglo",
+     "sag": "Kutuplar"
+    },
+    {
+     "sol": "Torf evler",
+     "sag": "İzlanda"
+    }
+   ],
+   "aciklama": "Tulou Çin'de, iglo kutuplarda, torf ev İzlanda'dadır (s. 77–78)."
+  },
+  {
+   "id": "b5-27",
+   "konu": "u5k4",
+   "kavram": "Torf Ev",
+   "tur": "dy",
+   "ifade": "Torf evler ahşap ya da taş evlere göre çok daha iyi yalıtım sağlar.",
+   "dogru": true,
+   "aciklama": "Toprakla kaplı torf evler iyi yalıtım sağlar (s. 78)."
+  },
+  {
+   "id": "b5-28",
+   "konu": "u5k4",
+   "kavram": "İglo",
+   "tur": "bosluk",
+   "havuz": [
+    "tuğla",
+    "bambu"
+   ],
+   "cumleler": [
+    {
+     "c": "Eskimolar igloları kardan ve ___ yapar.",
+     "cevap": "buzdan"
+    },
+    {
+     "c": "Tulou, Çince'de ___ yapı anlamına gelir.",
+     "cevap": "toprak"
+    },
+    {
+     "c": "Bir yerde uzun süre gözlenen hava olaylarının ortalamasına ___ denir.",
+     "cevap": "iklim"
+    }
+   ],
+   "aciklama": "İglo kar-buz, Tulou toprak yapıdır; iklim uzun süreli ortalamadır (s. 77–78)."
+  },
+  {
+   "id": "b5-29",
+   "konu": "u5k5",
+   "kavram": "Konutun Yönü",
+   "tur": "secim",
+   "soru": "Ülkemiz gibi kuzey yarım küredeki soğuk bir yerde ev, güneş ısısından çok yararlanmak için hangi yöne bakmalıdır?",
+   "secenekler": [
+    "Kuzeye",
+    "Güneye",
+    "Hiçbir yöne",
+    "Yalnızca yere"
+   ],
+   "dogru": 1,
+   "aciklama": "Soğuk iklimlerde binalar güneye yönlendirilir (program)."
+  },
+  {
+   "id": "b5-30",
+   "konu": "u5k5",
+   "kavram": "Doğal Işık Durumu",
+   "tur": "dy",
+   "ifade": "Gün ışığından iyi yararlanan bir ev, lambalar için daha çok elektrik harcar.",
+   "dogru": false,
+   "duzeltme": "Gün ışığı lambalar için harcanan enerjiyi azaltır.",
+   "aciklama": "Gün ışığı yenilenebilir bir kaynaktır, aydınlatma enerjisini azaltır (program)."
+  },
+  {
+   "id": "b5-31",
+   "konu": "u5k5",
+   "kavram": "Gürültü",
+   "tur": "kisa",
+   "soru": "Aralarında uyum bulunmayan, düzensiz ve istenmeyen seslerin bütününe ne denir?",
+   "yanit": "gürültü",
+   "kabul": [
+    "gurultu"
+   ],
+   "aciklama": "TDK'ya göre bu seslerin bütünü gürültüdür (program)."
+  },
+  {
+   "id": "b5-32",
+   "konu": "u5k5",
+   "kavram": "Erişilebilirlik",
+   "tur": "secim",
+   "soru": "Bir binanın girişine rampa yapılması hangi kavramla ilgilidir?",
+   "secenekler": [
+    "Manzara",
+    "Topografya",
+    "Erişilebilirlik",
+    "Peyzaj"
+   ],
+   "dogru": 2,
+   "aciklama": "Rampa engelli bireylerin binayı kendi başına kullanmasını sağlar: erişilebilirlik (program)."
+  },
+  {
+   "id": "b5-33",
+   "konu": "u5k5",
+   "kavram": "Manzara",
+   "tur": "eslestir",
+   "soru": "Konutla ilgili kararı kavramla eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Göle bakan büyük pencere",
+     "sag": "Manzara"
+    },
+    {
+     "sol": "Yola karşı ses yalıtımı",
+     "sag": "Gürültü"
+    },
+    {
+     "sol": "Kapı ve tezgâhı insan boyuna göre yapmak",
+     "sag": "Antropometri"
+    },
+    {
+     "sol": "Güneye bakan pencereler",
+     "sag": "Yön"
+    }
+   ],
+   "aciklama": "Her karar konutun çevreyle ve insanla uyumunu sağlar (program)."
+  },
+  {
+   "id": "b5-34",
+   "konu": "u5k5",
+   "kavram": "Sürdürülebilir Konut",
+   "tur": "secim",
+   "soru": "Programa göre sürdürülebilir konut için yöresel malzeme örnekleri verilmiştir.",
+   "onculler": [
+    "Karadeniz'de ahşap",
+    "İç Anadolu'da kerpiç ya da taş",
+    "Kutuplarda plastik"
+   ],
+   "kok": "Bunlardan hangileri programdaki örneklerdir?",
+   "secenekler": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "dogru": 1,
+   "aciklama": "Program Karadeniz için ahşap, İç Anadolu için kerpiç ya da taşı örnek verir (program)."
+  },
+  {
+   "id": "b5-35",
+   "konu": "u5k5",
+   "kavram": "Antropometri ve Konut",
+   "tur": "dy",
+   "ifade": "Evdeki kapı, merdiven ve tezgâhlar insanın vücut ölçülerine göre tasarlanmalıdır.",
+   "dogru": true,
+   "aciklama": "Antropometri, insan ölçülerine uygun tasarım için kullanılır (program)."
+  },
+  {
+   "id": "b5-36",
+   "konu": "u5k6",
+   "kavram": "Kolon ve Kiriş",
+   "tur": "eslestir",
+   "soru": "Yapı elemanını göreviyle eşleştir.",
+   "ciftler": [
+    {
+     "sol": "Kolon",
+     "sag": "Dik (düşey) taşıyıcı"
+    },
+    {
+     "sol": "Kiriş",
+     "sag": "Yatay taşıyıcı"
+    },
+    {
+     "sol": "Temel",
+     "sag": "Yükü zemine dağıtır"
+    },
+    {
+     "sol": "Çatı",
+     "sag": "Binanın üst örtüsü"
+    }
+   ],
+   "aciklama": "Kolon dik, kiriş yatay taşır; temel yükü zemine verir; çatı üst örtüdür (s. 79)."
+  },
+  {
+   "id": "b5-37",
+   "konu": "u5k6",
+   "kavram": "Çatı Tipleri",
+   "tur": "secim",
+   "soru": "Hangisi kitapta geçen çatı tiplerinden biri değildir?",
+   "secenekler": [
+    "Beşik",
+    "Kelebek",
+    "Piramit",
+    "Kubbe"
+   ],
+   "dogru": 3,
+   "aciklama": "Beşik, kelebek ve piramit kitaptaki çatı tiplerindendir (s. 79)."
+  },
+  {
+   "id": "b5-38",
+   "konu": "u5k6",
+   "kavram": "Kuş Bakışı Çizim",
+   "tur": "kisa",
+   "soru": "Bir yeri yüksekten aşağıya, bütün genişliğiyle bakılmış gibi çizmeye ne denir?",
+   "yanit": "kuş bakışı",
+   "kabul": [
+    "kuş bakışı çizim",
+    "kus bakisi"
+   ],
+   "aciklama": "Yukarıdan, bütün genişliğiyle bakış kuş bakışıdır (s. 81)."
+  },
+  {
+   "id": "b5-39",
+   "konu": "u5k6",
+   "kavram": "Konut Tasarım Soruları",
+   "tur": "dytablo",
+   "soru": "Hayalindeki evi tasarlamadan önce kitapta sorulan bir soruysa D, değilse Y seç.",
+   "ifadeler": [
+    {
+     "s": "Bu yer nasıl bir iklimde?",
+     "d": true
+    },
+    {
+     "s": "Ne iş yapıyorsunuz?",
+     "d": true
+    },
+    {
+     "s": "Hobileriniz neler?",
+     "d": true
+    },
+    {
+     "s": "Hangi takımı tutuyorsunuz?",
+     "d": false
+    }
+   ],
+   "aciklama": "Coğrafya, iklim, meslek, aile ve hobiler sorulur (s. 80)."
+  },
+  {
+   "id": "b5-40",
+   "konu": "u5k6",
+   "kavram": "Temel",
+   "tur": "secim",
+   "soru": "Binada yükün ilerleyiş sırası hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "Kiriş → kolon → temel → zemin",
+    "Temel → kiriş → çatı → zemin",
+    "Kolon → çatı → kiriş → temel",
+    "Zemin → temel → kolon → kiriş"
+   ],
+   "dogru": 0,
+   "aciklama": "Kiriş yükü kolona, kolon temele, temel zemine aktarır (s. 79)."
+  },
+  {
+   "id": "b5-41",
+   "konu": "u5k6",
+   "kavram": "Ev Planı",
+   "tur": "dy",
+   "ifade": "Kitaptaki ev planlarında yatak odaları, banyo, mutfak, salon ve veranda görülür.",
+   "dogru": true,
+   "aciklama": "Tek katlı ve iki katlı ev planlarında bu bölümler vardır (s. 79)."
+  },
+  {
+   "id": "b5-42",
+   "konu": "u5k6",
+   "kavram": "Mimari Tasarımın Sunumu",
+   "tur": "secim",
+   "soru": "Programa göre mimari tasarımın sunumunda adımlar hangi sırayla yapılır?",
+   "secenekler": [
+    "Değerlendir → uygula → planla → tasarla",
+    "Planla → tasarla → uygula → değerlendir",
+    "Uygula → planla → değerlendir → tasarla",
+    "Tasarla → değerlendir → planla → uygula"
+   ],
+   "dogru": 1,
+   "aciklama": "Sunum planlanır, tasarlanır, uygulanır ve değerlendirilir (program)."
+  }
+ ]
+}

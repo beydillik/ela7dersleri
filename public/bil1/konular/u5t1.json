@@ -1,0 +1,277 @@
+{
+ "id": "u5t1",
+ "tur": "tarama",
+ "unite": "5. Ünite: Mimari Tasarım",
+ "baslik": "Ünite Sonu Taraması",
+ "sayfalar": "Konu 1–6 · s. 69–82",
+ "giris": "Beşinci ünite bitti! Altı konuya kısa bir tekrar yapacağız. Önce özetleri oku ve kartları hatırlamaya çalış. Sonra tarama testini çöz. Not yok; neyi iyi bildiğini ve neye tekrar bakacağını bulacağız.",
+ "buyukResim": "Mimar, insanların yaşayacağı mekânları tasarlar. Her yapının işlevi farklıdır ve işlev yapının biçimini belirler. Evler insanların yaşam biçimine, iklime, araziye, inanca ve kültüre göre şekillenir. İyi bir ev çevresiyle de uyumludur: güneşi, manzarayı, sesi ve kullanan herkesi düşünür. En sonunda ev planlanır, çizilir ve sunulur.",
+ "kapsar": [
+  "u5k1",
+  "u5k2",
+  "u5k3",
+  "u5k4",
+  "u5k5",
+  "u5k6"
+ ],
+ "hatirla": [
+  {
+   "konu": "u5k1",
+   "maddeler": [
+    "Mimar: yapıların çizimini yapar, yapımını yönetir.",
+    "Mimari tasarımı coğrafya, iklim ve kültür etkiler.",
+    "Mimar Sinan: Osmanlı'nın büyük mimarı, 375 eser."
+   ]
+  },
+  {
+   "konu": "u5k2",
+   "maddeler": [
+    "Konut, iş merkezi, hizmet binası, mühendislik (sanat) yapısı.",
+    "İşlev farklıysa yapı da farklı olur.",
+    "Mekânsal analoji: mekânları karşılaştırıp benzerlik bulmak."
+   ]
+  },
+  {
+   "konu": "u5k3",
+   "maddeler": [
+    "Evler yaşam biçimine göre şekillenir; yapılar kültürün kanıtıdır.",
+    "Karadeniz evi: altta hayvan barınağı, üstte yaşam alanı.",
+    "Kapadokya: peribacası; Safranbolu: UNESCO; Harran: tuğladan konik kubbe."
+   ]
+  },
+  {
+   "konu": "u5k4",
+   "maddeler": [
+    "İklim, coğrafi yapı, topografya, inanç ve kültür mimariyi etkiler.",
+    "Kuzeyde küçük pencere, dik çatı; kıyıda büyük cam ve teras.",
+    "Tulou: Çin; iglo: kar ve buz; torf ev: İzlanda; pagoda: Budistlerin dinî yapısı."
+   ]
+  },
+  {
+   "konu": "u5k5",
+   "maddeler": [
+    "Soğukta ev güneye bakar; gün ışığı enerji tasarrufu sağlar.",
+    "Gürültüye karşı ses yalıtımı; manzara için büyük pencere.",
+    "Erişilebilirlik: rampa; sürdürülebilirlik: yöresel malzeme."
+   ]
+  },
+  {
+   "konu": "u5k6",
+   "maddeler": [
+    "Ev planı odaları gösterir; arazi kuş bakışı çizilir.",
+    "Kolon dik, kiriş yatay taşıyıcı; temel yükü zemine verir.",
+    "Tasarım soruları: coğrafya, iklim, iş, aile, hobi."
+   ]
+  }
+ ],
+ "eskiSoru": 4,
+ "oyunKavram": 10,
+ "sinavSoru": 20,
+ "gruplar": [
+  {
+   "soru": "Türkiye'den mi, dünyadan mı bir ev örneği?",
+   "kutular": [
+    {
+     "etiket": "Türkiye",
+     "uyeler": [
+      "Karadeniz Evi",
+      "Kapadokya Evleri",
+      "Safranbolu Evleri",
+      "Harran Evleri"
+     ]
+    },
+    {
+     "etiket": "Dünya",
+     "uyeler": [
+      "Tulou Evleri",
+      "İglo",
+      "Torf Ev"
+     ]
+    }
+   ]
+  },
+  {
+   "soru": "Evi etkileyen bir çevre koşulu mu, binanın bir parçası mı?",
+   "kutular": [
+    {
+     "etiket": "Çevre koşulu",
+     "uyeler": [
+      "İklim",
+      "Topografya",
+      "Gürültü",
+      "Manzara"
+     ]
+    },
+    {
+     "etiket": "Binanın parçası",
+     "uyeler": [
+      "Kolon ve Kiriş",
+      "Temel",
+      "Çatı Tipleri"
+     ]
+    }
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Harran'da yazlar çok sıcaktır ve ağaç azdır. Harran evlerinin biçimini en çok hangi iki unsur etkilemiştir?",
+   "secenekler": [
+    "İklim ve malzeme (tuğla bolluğu)",
+    "Manzara ve gürültü",
+    "İnanç ve toplu konut"
+   ],
+   "dogru": 0,
+   "ipucu": "Harran kartında sıcaklık ve tuğla geçiyordu.",
+   "aciklama": "Kubbeler tuğla bol olduğu için tuğladan yapılmış; kubbeli yapı sıcak iklimde evi serin tutar. (s. 76–77)",
+   "kaynak": [
+    {
+     "konu": "u5k3",
+     "kavram": "Harran Evleri"
+    },
+    {
+     "konu": "u5k4",
+     "kavram": "İklim"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Harran'ın havası nasıl?",
+     "Harran'da hangi malzeme bol, hangisi az?"
+    ]
+   }
+  },
+  {
+   "soru": "Bir mimar kutuplarda yaşayan bir aile için ev tasarlıyor. Hangi kararı vermesi en uygundur?",
+   "secenekler": [
+    "Büyük camlar ve geniş teras yapmak",
+    "Hava akımlarına kapalı, iyi yalıtımlı bir ev yapmak",
+    "Duvarları çok ince yapmak"
+   ],
+   "dogru": 1,
+   "ipucu": "İgloyu ve kuzeydeki evleri hatırla.",
+   "aciklama": "Soğukta hava akımlarına kapalı, iyi yalıtımlı yapılar gerekir; kuzeye gittikçe pencereler küçülür. (s. 77–78)",
+   "kaynak": [
+    {
+     "konu": "u5k1",
+     "kavram": "Mimarın Görevleri"
+    },
+    {
+     "konu": "u5k4",
+     "kavram": "İglo"
+    }
+   ]
+  },
+  {
+   "soru": "Okul ile hastaneyi gözlemleyen bir öğrenci, ikisinin de geniş koridorlara ve aydınlık odalara ihtiyacı olduğunu buldu. Öğrenci hangi iki kavramı kullanmıştır?",
+   "secenekler": [
+    "Mekânsal analoji ve hizmet binaları",
+    "Toplu konut ve topografya",
+    "Peyzaj ve torf ev"
+   ],
+   "dogru": 0,
+   "ipucu": "Okul ve hastane hangi gruptaydı? İki mekânı karşılaştırmak neydi?",
+   "aciklama": "Okul ve hastane hizmet binasıdır; benzerlik bulmak mekânsal analojidir. (s. 72; program)",
+   "kaynak": [
+    {
+     "konu": "u5k2",
+     "kavram": "Mekânsal Analoji"
+    },
+    {
+     "konu": "u5k2",
+     "kavram": "Hizmet Binaları"
+    }
+   ]
+  },
+  {
+   "soru": "Soğuk bir yaylada ev yapacaksın. Hangisi hem iklime hem de çevreyle uyuma uygun bir karardır?",
+   "secenekler": [
+    "Kuzeye bakan büyük camlar",
+    "İnce duvarlı ve düz çatılı ev",
+    "Güneye bakan pencereler ve rüzgâra karşı güçlü bir çatı"
+   ],
+   "dogru": 2,
+   "ipucu": "Soğukta güneşi nereden alırız? Yaylada rüzgâr nasıldır?",
+   "aciklama": "Soğukta ev güneye yönlendirilir; yaylalarda rüzgâra karşı güçlendirilmiş çatılar yapılır. (s. 77; program)",
+   "kaynak": [
+    {
+     "konu": "u5k4",
+     "kavram": "Coğrafi Yapı"
+    },
+    {
+     "konu": "u5k5",
+     "kavram": "Konutun Yönü"
+    }
+   ],
+   "yardim": {
+    "adimlar": [
+     "Soğuk iklimde ev hangi yöne bakmalıydı?",
+     "Yayladaki evlerde çatı nasıl yapılıyordu?"
+    ]
+   }
+  },
+  {
+   "soru": "Karadeniz'de bir aile, hayvancılıkla geçiniyor ve çevre dostu bir ev istiyor. Hangisi bu aileye en uygun evdir?",
+   "secenekler": [
+    "Kardan yapılmış bir iglo",
+    "Alt katı hayvan barınağı olan, ahşaptan bir ev",
+    "Peribacasına oyulmuş bir ev"
+   ],
+   "dogru": 1,
+   "ipucu": "Karadeniz evini ve yöresel malzemeyi hatırla.",
+   "aciklama": "Tipik Karadeniz evinde alt kat hayvan barınağıdır; program Karadeniz için ahşap malzemeyi önerir. (s. 75; program)",
+   "kaynak": [
+    {
+     "konu": "u5k3",
+     "kavram": "Karadeniz Evi"
+    },
+    {
+     "konu": "u5k5",
+     "kavram": "Sürdürülebilir Konut"
+    }
+   ]
+  },
+  {
+   "soru": "Hayalindeki evi tasarlarken önce 'Nasıl bir iklimde?' diye soruyorsun. Bu soru hangi bilgiyle ilgilidir?",
+   "secenekler": [
+    "Mimar Sinan'ın eser sayısı",
+    "Mağazaların iş merkezi olması",
+    "Kuzeyde pencerelerin küçülmesi, güneyde büyümesi"
+   ],
+   "dogru": 2,
+   "ipucu": "İklim evin biçimini nasıl değiştiriyordu?",
+   "aciklama": "Tasarımda iklim sorulur çünkü evler iklime göre planlanır: kuzeyde küçük pencere, güneyde büyük pencere. (s. 77, 80)",
+   "kaynak": [
+    {
+     "konu": "u5k6",
+     "kavram": "Konut Tasarım Soruları"
+    },
+    {
+     "konu": "u5k4",
+     "kavram": "İklim"
+    }
+   ]
+  },
+  {
+   "soru": "Bir binada kiriş, kolon ve temel birlikte çalışır. Bu parçalar hangi amaçla tasarlanır?",
+   "secenekler": [
+    "Binanın güzel görünmesi için",
+    "Binanın yükünü taşıyıp zemine aktarmak için",
+    "Binaya manzara kazandırmak için"
+   ],
+   "dogru": 1,
+   "ipucu": "Kolon ve kiriş kartının akılda kalsın yazısını hatırla.",
+   "aciklama": "Kiriş yükü kolona, kolon temele, temel zemine aktarır. (s. 79; kitap dışı tanım)",
+   "kaynak": [
+    {
+     "konu": "u5k6",
+     "kavram": "Kolon ve Kiriş"
+    },
+    {
+     "konu": "u5k6",
+     "kavram": "Temel"
+    }
+   ]
+  }
+ ]
+}

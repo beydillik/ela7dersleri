@@ -1,0 +1,324 @@
+{
+ "id": "u5k5",
+ "unite": "5. Ünite: Mimari Tasarım",
+ "baslik": "Konutun Çevreyle Uyumu",
+ "sayfalar": "program · s. 77–78",
+ "giris": "Bir ev yapılırken yalnızca iklime değil; evin baktığı yöne, gün ışığına, manzaraya, gürültüye ve evi kimlerin kullanacağına da bakılır. Bu konudaki kavramlar MEB programında geçer; kitapta yoktur.",
+ "kaynakNotu": "Bu konunun kavramları kitapta yok; MEB programının 5. ünitesinin anahtar kavramlarıdır (yön, doğal ışık, manzara, gürültü, erişilebilirlik, sürdürülebilirlik, antropometri) ve yöresel malzeme örneği (Karadeniz'de ahşap, İç Anadolu'da kerpiç ya da taş) programın uygulamalarındadır: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1441 · Yön ve gün ışığı: Çiftçi, M. E. ve Arpacıoğlu, Ü. T. (2021), Gün Işığı Yönlendirme Sistemleri, Mimarlık Bilimleri ve Uygulamaları Dergisi 6(1): https://dergipark.org.tr/tr/download/article-file/1287874 · Manzara (TDK): https://sozluk.gov.tr/gts?ara=manzara · Gürültü (TDK): https://sozluk.gov.tr/gts?ara=gürültü ve Çevresel Gürültü Kontrol Yönetmeliği (2022): https://resmigazete.gov.tr/eskiler/2022/11/20221130-1.htm · Erişilebilirlik, Aile ve Sosyal Hizmetler Bakanlığı: https://aile.gov.tr/sss/engelli-ve-yasli-hizmetleri-genel-mudurlugu/erisilebilirlik/ · Sürdürülebilirlik ve antropometri tanımları 3. Ünite'den (u3k6, u3k5). Robot yalnız 5. Ünite metnini okur; antropometri için 3. Ünite Ergonomi konusuna bakılır.",
+ "kavramlar": [
+  {
+   "ad": "Konutun Yönü",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='40' fill='none' stroke='#e9ecef' stroke-width='3'/><path d='M60 24l8 36h-16z' fill='#ff6b6b'/><path d='M60 96l8-36h-16z' fill='#e9ecef'/><text x='60' y='18' font-size='12' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>K</text><text x='60' y='111' font-size='12' font-weight='700' fill='#f2c14e' text-anchor='middle' font-family='sans-serif'>G</text><circle cx='96' cy='98' r='10' fill='#f2c14e'/></svg>",
+   "aciklama": "Konutun yönü, evin cephesinin ve pencerelerinin hangi tarafa (kuzey, güney, doğu, batı) baktığıdır.",
+   "ek": "Kitap dışı (MEB programı). Ülkemiz gibi kuzey yarım küredeki soğuk iklimlerde binalar güneş ısısından çok yararlanmak için güneye yönlendirilir ve güney cephedeki cam yüzey artırılır. Sıcak iklimlerde ise doğrudan güneşin ısıtmasından korunulur (Çiftçi ve Arpacıoğlu, 2021).",
+   "akilda": "Soğukta güneye bak",
+   "soru": {
+    "soru": "Soğuk bir yerde ev, güneşten çok yararlanmak için hangi yöne bakmalıdır?",
+    "secenekler": [
+     "Güneye",
+     "Kuzeye",
+     "Hiçbir yöne"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın akılda kalsın yazısını hatırla.",
+    "aciklama": "Soğuk iklimlerde binalar güneş ısısı için güneye yönlendirilir. (program)"
+   }
+  },
+  {
+   "ad": "Doğal Işık Durumu",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='26' cy='26' r='12' fill='#f2c14e'/><path d='M36 36l26 22M30 40l22 30M40 30l30 18' stroke='#f2c14e' stroke-width='3'/><rect x='56' y='46' width='50' height='52' fill='#e9ecef'/><rect x='64' y='54' width='16' height='20' fill='#ffe066'/><path d='M66 74l-10 24h34z' fill='#ffe066' opacity='0.6'/></svg>",
+   "aciklama": "Doğal ışık güneşten gelen gün ışığıdır. Evin ne kadar gün ışığı aldığına doğal ışık durumu denir.",
+   "ek": "Kitap dışı (MEB programı). Gün ışığı yenilenebilir bir kaynaktır. İyi kullanılırsa lambalar için harcanan enerji azalır, göz rahat eder ve sağlığa iyi gelir (Çiftçi ve Arpacıoğlu, 2021).",
+   "akilda": "Gün ışığı = az elektrik",
+   "soru": {
+    "soru": "Evin bol gün ışığı alması neyi azaltır?",
+    "secenekler": [
+     "Evin büyüklüğünü",
+     "Lambalar için harcanan enerjiyi",
+     "Manzarayı"
+    ],
+    "dogru": 1,
+    "ipucu": "Gün ışığı varken lambaya gerek kalır mı?",
+    "aciklama": "Gün ışığı yapay aydınlatma için harcanan enerjiyi azaltır. (program)"
+   }
+  },
+  {
+   "ad": "Manzara",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='72' rx='4' fill='#6fb3ff'/><path d='M14 72l26-26 20 18 18-22 28 30v18H14z' fill='#2f9e44'/><rect x='14' y='78' width='92' height='12' fill='#1971c2'/><circle cx='84' cy='34' r='8' fill='#f2c14e'/><path d='M60 18v72M14 54h92' stroke='#e9ecef' stroke-width='4'/><rect x='14' y='18' width='92' height='72' rx='4' fill='none' stroke='#e9ecef' stroke-width='5'/></svg>",
+   "aciklama": "Manzara, bakınca görüş alanımıza giren doğa ya da şehir görüntüsüdür.",
+   "ek": "Kitap dışı (MEB programı); tanım TDK'dan. Ev tasarlanırken güzel bir manzaraya bakan pencereler düşünülür. Kitap da deniz ve göl kıyısındaki evlerde büyük camlar ve teras yapıldığını söyler (s. 77).",
+   "akilda": "Pencereden görünen",
+   "soru": {
+    "soru": "Göl kenarındaki bir evde manzaradan yararlanmak için ne yapılır?",
+    "secenekler": [
+     "Pencere hiç yapılmaz",
+     "Duvarlar kalınlaştırılır",
+     "Büyük camlar ve teras yapılır"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisinin son cümlesine bak.",
+    "aciklama": "Deniz ve göl kıyısındaki yapılarda büyük camlar ve teras düşünülür. (s. 77)"
+   }
+  },
+  {
+   "ad": "Gürültü",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='60' width='40' height='22' rx='6' fill='#ff8fab'/><circle cx='22' cy='84' r='6' fill='#343a40'/><circle cx='42' cy='84' r='6' fill='#343a40'/><path d='M58 54c6 6 6 18 0 24M66 48c10 10 10 26 0 36' stroke='#ff6b6b' stroke-width='4' fill='none' stroke-linecap='round'/><rect x='78' y='40' width='8' height='56' fill='#e9ecef'/><rect x='88' y='50' width='22' height='46' fill='#ffa26b'/><path d='M84 40v56' stroke='#5c677d' stroke-width='4'/></svg>",
+   "aciklama": "Gürültü, uyumsuz ve düzensiz seslerin bütünüdür; istemediğimiz seslerdir.",
+   "ek": "Kitap dışı (MEB programı); tanım TDK'dan. Çevresel Gürültü Kontrol Yönetmeliği'ne göre taşıt, sanayi, inşaat ve eğlence yerlerinden gelen istenmeyen sesler çevresel gürültüdür. Ev yapılırken gürültü kaynaklarından uzak durulur ya da ses yalıtımı yapılır.",
+   "akilda": "İstenmeyen ses",
+   "soru": {
+    "soru": "Ev gürültülü bir yolun yanına yapılacaksa ne düşünülmelidir?",
+    "secenekler": [
+     "Ses yalıtımı",
+     "Daha çok pencere",
+     "Daha ince duvar"
+    ],
+    "dogru": 0,
+    "ipucu": "Sesin içeri girmesini ne engeller?",
+    "aciklama": "Gürültüye karşı ses yalıtımı yapılır. (program)"
+   }
+  },
+  {
+   "ad": "Erişilebilirlik",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 96h40l40-30h14' stroke='#e9ecef' stroke-width='5' fill='none'/><path d='M54 96l40-30v30z' fill='#5c677d'/><circle cx='34' cy='54' r='6' fill='#6fb3ff'/><path d='M34 60v16h14' stroke='#6fb3ff' stroke-width='5' fill='none' stroke-linecap='round'/><circle cx='36' cy='82' r='11' fill='none' stroke='#6fb3ff' stroke-width='4'/><rect x='96' y='34' width='14' height='32' fill='#ffa26b'/></svg>",
+   "aciklama": "Erişilebilirlik, bir yerin engelli bireyler tarafından güvenle ve kendi başına kullanılabilmesidir.",
+   "ek": "Kitap dışı (MEB programı); tanım Aile ve Sosyal Hizmetler Bakanlığı'ndan. Örneğin merdiven yanındaki rampa ve geniş kapılar tekerlekli sandalyeyle girişi kolaylaştırır (kitap dışı örnek).",
+   "akilda": "Herkes kolayca kullanabilsin",
+   "soru": {
+    "soru": "Bir binaya tekerlekli sandalyeyle girilebilmesi için ne yapılır?",
+    "secenekler": [
+     "Daha çok basamak",
+     "Rampa",
+     "Dar kapı"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çizimindeki eğik yola bak.",
+    "aciklama": "Rampa, tekerlekli sandalyeyle girişi kolaylaştırır. (program)"
+   }
+  },
+  {
+   "ad": "Sürdürülebilir Konut",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='54' width='56' height='44' fill='#c4a07a'/><path d='M16 56l36-28 36 28z' fill='#8d6e63'/><rect x='44' y='74' width='16' height='24' fill='#5c4033'/><path d='M96 96V60' stroke='#69db7c' stroke-width='4'/><path d='M96 62c-14-2-18-16-12-24 8 4 12 12 12 24zM96 72c12-2 16-14 10-20-6 4-10 10-10 20z' fill='#2f9e44'/></svg>",
+   "aciklama": "Sürdürülebilir konut, bugünün ihtiyacını karşılarken doğayı ve gelecek nesilleri de düşünen evdir.",
+   "ek": "Kitap dışı (MEB programı). 3. Ünite'deki sürdürülebilirliği hatırla. Program, konut tasarlarken yöreye özgü malzeme kullanmayı önerir: Karadeniz'de ahşap, İç Anadolu'da kerpiç ya da taş.",
+   "akilda": "Doğayı ve geleceği düşün",
+   "soru": {
+    "soru": "Programa göre İç Anadolu'da sürdürülebilir bir ev için hangi yöresel malzeme kullanılabilir?",
+    "secenekler": [
+     "Plastik",
+     "Buz",
+     "Kerpiç ya da taş"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisinin son cümlesine bak.",
+    "aciklama": "Program İç Anadolu için kerpiç ya da taşı örnek verir. (program)"
+   }
+  },
+  {
+   "ad": "Antropometri ve Konut",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='30' height='80' fill='#ffa26b'/><circle cx='40' cy='60' r='3' fill='#1b2340'/><circle cx='70' cy='34' r='8' fill='#ff8fab'/><path d='M70 42v30M70 50l-10 12M70 50l10 12M70 72l-8 24M70 72l8 24' stroke='#ff8fab' stroke-width='5' stroke-linecap='round'/><path d='M96 18v80M92 18h8M92 98h8' stroke='#f2c14e' stroke-width='3'/></svg>",
+   "aciklama": "Antropometri insanın vücut ölçülerini inceler. Evde kapı, merdiven, tezgâh ve dolaplar insan ölçülerine göre tasarlanır.",
+   "ek": "Kitap dışı (MEB programı). Tanımı 3. Ünite Ergonomi konusunda öğrendin. Örneğin mutfak tezgâhı çok alçak ya da çok yüksek olursa kullanmak zorlaşır (kitap dışı örnek).",
+   "akilda": "Ev insan ölçüsünde",
+   "soru": {
+    "soru": "Kapı yüksekliği ve tezgâh boyu belirlenirken hangi bilgi kullanılır?",
+    "secenekler": [
+     "Antropometri",
+     "Topografya",
+     "Manzara"
+    ],
+    "dogru": 0,
+    "ipucu": "Vücut ölçüleri…",
+    "aciklama": "İnsan vücut ölçülerini inceleyen antropometri kullanılır. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Çevreden gelen bir etki mi, evi kullanan insanla ve gelecekle mi ilgili?",
+   "kutular": [
+    {
+     "etiket": "Çevreden gelen",
+     "uyeler": [
+      "Konutun Yönü",
+      "Doğal Işık Durumu",
+      "Manzara",
+      "Gürültü"
+     ]
+    },
+    {
+     "etiket": "İnsan ve gelecek",
+     "uyeler": [
+      "Erişilebilirlik",
+      "Sürdürülebilir Konut",
+      "Antropometri ve Konut"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Gün ışığını odaya taşıyan özel sistemler, ışığı daha eşit dağıtır; odadaki aydınlık ve loş yerler arasındaki fark azalır. (kitap dışı; Çiftçi ve Arpacıoğlu, 2021)"
+ ],
+ "akildaKalsin": [
+  "Yön ve gün ışığı: soğukta güneye bak; gün ışığı enerji tasarrufu sağlar.",
+  "Manzara: pencereden görünen doğa ya da şehir görüntüsü.",
+  "Gürültü: istenmeyen ses; ses yalıtımı yapılır.",
+  "Erişilebilirlik: engelli bireyler de güvenle kullanabilsin.",
+  "Sürdürülebilir konut: yöresel malzeme, doğaya ve geleceğe saygı.",
+  "Antropometri: ev insan ölçüsünde."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Güneye bakan ev neden daha çok güneş alır?",
+   "cevap": "Ülkemiz gibi kuzey yarım küredeki yerlerde güneş gün boyunca daha çok güney taraftan gelir. Bu yüzden soğuk iklimlerde binalar güneye yönlendirilir. (kitap dışı)"
+  },
+  {
+   "soru": "Erişilebilirlik yalnızca binalar için mi?",
+   "cevap": "Hayır. Açık alanlar, ulaşım ve bilgi-iletişim teknolojileri de erişilebilir olmalıdır. (Aile ve Sosyal Hizmetler Bakanlığı)"
+  },
+  {
+   "soru": "Manzara yalnızca doğa mı?",
+   "cevap": "Hayır. TDK'ya göre görüş alanına giren, dikkati çeken her yer manzaradır; bir şehir görüntüsü de manzara olabilir."
+  },
+  {
+   "soru": "Programa göre konut tasarlarken nelere bakılır?",
+   "cevap": "Farklı coğrafya ve iklimlere uygun olmasına ve içinde yaşayanların ihtiyaçlarını karşılamasına. (program)"
+  },
+  {
+   "soru": "Antropometriyi daha önce nerede öğrendik?",
+   "cevap": "3. Ünite'de ergonomi konusunda; sıra ve sandalyenin öğrencinin boyuna göre yapılması örneğiyle."
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Hayalindeki evi nereye ve nasıl yerleştirirdin? Yön, gün ışığı, manzara, gürültü ve erişilebilirlikten en az üçünü kullanarak yaz.",
+   "ornekCevap": "Evimi gürültülü yollardan uzak, göl manzaralı bir yere yaparım. Salonun büyük pencerelerini güneye bakacak şekilde yaparım; gün boyu ışık alır, lambaya daha az ihtiyaç olur. Girişe rampa koyarım ki tekerlekli sandalyeyle de girilebilsin.",
+   "anahtarlar": [
+    "güney",
+    "ışık",
+    "manzara",
+    "gürültü",
+    "rampa",
+    "yön"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Evin pencerelerinin hangi tarafa baktığı hangi kavramla ilgilidir?",
+   "secenekler": [
+    "Konutun yönü",
+    "Gürültü",
+    "Antropometri"
+   ],
+   "dogru": 0,
+   "ipucu": "Kuzey, güney, doğu, batı…",
+   "aciklama": "Evin cephesinin baktığı taraf konutun yönüdür. (program)",
+   "kavram": "Konutun Yönü"
+  },
+  {
+   "soru": "Sıcak bir iklimde ev tasarlanırken güneş için ne yapılır?",
+   "secenekler": [
+    "Güneşin hepsi içeri alınır",
+    "Doğrudan güneşin ısıtmasından korunulur",
+    "Güneş hiç düşünülmez"
+   ],
+   "dogru": 1,
+   "ipucu": "Sıcak yerde evin daha da ısınması istenir mi?",
+   "aciklama": "Sıcak iklimlerde binalar doğrudan güneşin ısıtmasından korunacak şekilde düzenlenir. (program)",
+   "kavram": "Konutun Yönü"
+  },
+  {
+   "soru": "Gün ışığı için hangisi yanlıştır?",
+   "secenekler": [
+    "Yenilenebilir bir kaynaktır",
+    "Göze rahatlık sağlar",
+    "Elektrik tüketimini artırır"
+   ],
+   "dogru": 2,
+   "ipucu": "Gün ışığı varken lambaya ihtiyaç azalır mı, artar mı?",
+   "aciklama": "Gün ışığı yapay aydınlatmaya harcanan enerjiyi azaltır. (program)",
+   "kavram": "Doğal Işık Durumu"
+  },
+  {
+   "soru": "TDK'ya göre manzara nedir?",
+   "secenekler": [
+    "Görüş alanına giren, dikkati çeken yer; görüntü",
+    "Evin temeli",
+    "İstenmeyen ses"
+   ],
+   "dogru": 0,
+   "ipucu": "Pencereden ne görürüz?",
+   "aciklama": "Manzara, bakış ve görüş alanına giren, dikkati çeken her yerdir. (program)",
+   "kavram": "Manzara"
+  },
+  {
+   "soru": "Uyumsuz ve düzensiz seslerin bütününe ne denir?",
+   "secenekler": [
+    "Manzara",
+    "Gürültü",
+    "Müzik"
+   ],
+   "dogru": 1,
+   "ipucu": "İstenmeyen ses…",
+   "aciklama": "TDK'ya göre gürültü, aralarında uyum bulunmayan düzensiz seslerin bütünüdür. (program)",
+   "kavram": "Gürültü"
+  },
+  {
+   "soru": "Bir binanın engelli bireylerce güvenle ve kendi başına kullanılabilmesine ne denir?",
+   "secenekler": [
+    "Sürdürülebilirlik",
+    "İşlevsellik",
+    "Erişilebilirlik"
+   ],
+   "dogru": 2,
+   "ipucu": "Rampa örneğini hatırla.",
+   "aciklama": "Bu erişilebilirliktir. (program)",
+   "kavram": "Erişilebilirlik"
+  },
+  {
+   "soru": "Karadeniz'de yöresel malzemeyle sürdürülebilir bir ev yapan biri hangisini seçebilir?",
+   "secenekler": [
+    "Buz",
+    "Ahşap",
+    "Kar"
+   ],
+   "dogru": 1,
+   "ipucu": "Karadeniz ormanlarıyla ünlüdür.",
+   "aciklama": "Program Karadeniz için ahşabı örnek verir. (program)",
+   "kavram": "Sürdürülebilir Konut"
+  },
+  {
+   "soru": "Kapıların ve tezgâhların insan ölçüsüne göre yapılması hangi kavramla ilgilidir?",
+   "secenekler": [
+    "Topografya",
+    "Manzara",
+    "Antropometri"
+   ],
+   "dogru": 2,
+   "ipucu": "Vücut ölçüleri…",
+   "aciklama": "Antropometri insanın vücut ölçülerini inceler. (program)",
+   "kavram": "Antropometri ve Konut"
+  },
+  {
+   "soru": "Ela'nın ailesi yeni ev arıyor. Hangisi evin çevreyle uyumunu değerlendiren bir soru değildir?",
+   "secenekler": [
+    "Evin kapı numarası tek mi çift mi?",
+    "Ev bol gün ışığı alıyor mu?",
+    "Evin yanında gürültülü bir yol var mı?"
+   ],
+   "dogru": 0,
+   "ipucu": "Işık ve gürültü çevreden gelir; hangisinin evin tasarımıyla ilgisi yok?",
+   "aciklama": "Gün ışığı ve gürültü çevreyle uyumu gösterir; kapı numarası göstermez. (program)",
+   "kavram": "Doğal Işık Durumu"
+  }
+ ]
+}

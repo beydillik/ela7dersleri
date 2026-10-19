@@ -1,0 +1,343 @@
+{
+ "id": "u5k6",
+ "unite": "5. Ünite: Mimari Tasarım",
+ "baslik": "Mekân Tasarımı",
+ "sayfalar": "s. 79–82 · program",
+ "giris": "Bir ev önce kâğıt üzerinde tasarlanır. Bu konuda ev planlarını, çatı tiplerini, binayı ayakta tutan kolon, kiriş ve temeli ve hayalimizdeki evi tasarlarken sorulacak soruları öğreneceğiz.",
+ "kaynakNotu": "Kitapta kolon, kiriş, temel ve çatı yalnızca çizim üzerinde adıyla geçer (s. 79); tanımlar Küre Ansiklopedisi 'Yapı Elemanları': https://kureansiklopedi.com/tr/detay/yapi-elemanlari-bc77c · Kuş bakışı tanımı TDK: https://sozluk.gov.tr/gts?ara=kuş bakışı · Mimari tasarımın sunumu MEB programında (TT.7.5.4: planlama, tasarlama, uygulama, değerlendirme; tanıtım kartı, afiş, broşür, video, dijital sunum) ve konutun çizim ya da maketle somutlaştırılması (TT.7.5.3): https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1441 · Ev planlarının metrekareleri Kemal'in kararıyla yazılmadı.",
+ "kavramlar": [
+  {
+   "ad": "Ev Planı",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='84' fill='#e9ecef'/><path d='M14 58h50M64 18v84M64 72h42M46 58v44' stroke='#1d3f74' stroke-width='4'/><path d='M24 58h12M64 32v12M76 72h12M46 80v12' stroke='#e9ecef' stroke-width='5'/><text x='39' y='42' font-size='10' font-weight='700' fill='#1d3f74' text-anchor='middle' font-family='sans-serif'>yatak</text><text x='85' y='48' font-size='10' font-weight='700' fill='#1d3f74' text-anchor='middle' font-family='sans-serif'>salon</text><text x='30' y='84' font-size='9' font-weight='700' fill='#1d3f74' text-anchor='middle' font-family='sans-serif'>banyo</text><text x='85' y='92' font-size='10' font-weight='700' fill='#1d3f74' text-anchor='middle' font-family='sans-serif'>mutfak</text></svg>",
+   "aciklama": "Ev planı, bir evin odalarının nerede olduğunu ve birbirine nasıl bağlandığını gösteren çizimdir.",
+   "ek": "Kitapta tek katlı ve iki katlı iki ev planı vardır. Planlarda yatak odaları, banyo, mutfak, salon ve veranda görülür. (s. 79)",
+   "akilda": "Evin odalarının haritası",
+   "soru": {
+    "soru": "Hangisi kitaptaki ev planlarında görülen bölümlerden biridir?",
+    "secenekler": [
+     "Asansör",
+     "Veranda",
+     "Sahne"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın ek bilgisinde sayılan bölümleri hatırla.",
+    "aciklama": "Planlarda yatak odaları, banyo, mutfak, salon ve veranda vardır. (s. 79)"
+   }
+  },
+  {
+   "ad": "Kuş Bakışı Çizim",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 20c-8-6-18-6-24 0 6 0 12 2 16 6zM60 20c8-6 18-6 24 0-6 0-12 2-16 6z' fill='#e9ecef'/><circle cx='60' cy='22' r='4' fill='#e9ecef'/><path d='M60 30v14' stroke='#f2c14e' stroke-width='3' stroke-dasharray='4 3'/><rect x='14' y='50' width='92' height='52' rx='4' fill='#2f9e44'/><rect x='38' y='62' width='34' height='24' fill='#ffa26b'/><path d='M38 62l34 24M72 62l-34 24' stroke='#d9480f' stroke-width='2'/><circle cx='90' cy='66' r='7' fill='#69db7c'/><path d='M14 94h92' stroke='#c4a07a' stroke-width='6'/></svg>",
+   "aciklama": "Kuş bakışı çizim, bir yeri yüksekten aşağıya, bütün genişliğiyle bakılmış gibi çizmektir.",
+   "ek": "Tanım TDK'dan. Kitaptaki etkinlikte önce evin yapılacağı arazi coğrafi koşullara göre kuş bakışı çizilir, sonra ev bu arsanın üstüne yerleştirilir. (s. 81)",
+   "akilda": "Yukarıdan bakış",
+   "soru": {
+    "soru": "Kitaba göre hayalindeki evden önce ne kuş bakışı çizilir?",
+    "secenekler": [
+     "Evin yapılacağı arazi",
+     "Evin kapısı",
+     "Mobilyalar"
+    ],
+    "dogru": 0,
+    "ipucu": "Ev neyin üstüne yerleştiriliyordu?",
+    "aciklama": "Önce arazi kuş bakışı çizilir, sonra ev arsanın üzerine yerleştirilir. (s. 81)"
+   }
+  },
+  {
+   "ad": "Çatı Tipleri",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M10 44l16-14 16 14z' fill='#ff6b6b'/><rect x='12' y='44' width='28' height='14' fill='#e9ecef'/><rect x='48' y='34' width='26' height='4' fill='#ff6b6b'/><rect x='48' y='38' width='26' height='20' fill='#e9ecef'/><path d='M82 44l28-12v12z' fill='#ff6b6b'/><rect x='82' y='44' width='28' height='14' fill='#e9ecef'/><path d='M10 76l14 8 14-8v8H10z' fill='#ff6b6b'/><rect x='10' y='84' width='28' height='14' fill='#e9ecef'/><path d='M48 84l13-16 13 16z' fill='#ff6b6b'/><rect x='48' y='84' width='26' height='14' fill='#e9ecef'/><path d='M82 84l7-10 7 10 7-10 7 10z' fill='#ff6b6b'/><rect x='82' y='84' width='28' height='14' fill='#e9ecef'/></svg>",
+   "aciklama": "Çatılar farklı biçimlerde yapılır. Kitapta beşik, düz, tek eğimli, piramit, kelebek ve M şekli gibi çatı tipleri gösterilir.",
+   "ek": "Kitaptaki tüm tipler: yan binaya yaslı, açık üçgen, beşik, pencereli, geniş açı, kelebek, altıgen, düz, tek eğimli, M şekli, piramit (s. 79). Çatı yapının üst örtüsüdür; kar, yağmur, rüzgâr ve güneşe karşı korur (kitap dışı, Küre Ansiklopedisi).",
+   "akilda": "Beşik, düz, piramit, kelebek…",
+   "soru": {
+    "soru": "Hangisi kitapta geçen bir çatı tipidir?",
+    "secenekler": [
+     "Kolon",
+     "Kelebek",
+     "Temel pabucu"
+    ],
+    "dogru": 1,
+    "ipucu": "Kolon ve temel binanın taşıyıcılarıdır.",
+    "aciklama": "Kelebek, kitapta geçen çatı tiplerinden biridir. (s. 79)"
+   }
+  },
+  {
+   "ad": "Kolon ve Kiriş",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='26' width='12' height='70' fill='#b197fc'/><rect x='86' y='26' width='12' height='70' fill='#b197fc'/><rect x='16' y='20' width='88' height='12' fill='#7950f2'/><rect x='16' y='58' width='88' height='10' fill='#7950f2'/><text x='60' y='50' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>kiriş</text><path d='M28 98v8M92 98v8' stroke='#f2c14e' stroke-width='3'/><text x='60' y='90' font-size='11' font-weight='700' fill='#b197fc' text-anchor='middle' font-family='sans-serif'>kolon</text></svg>",
+   "aciklama": "Kolon binanın dik (düşey) taşıyıcısı, kiriş ise yatay taşıyıcısıdır. Kiriş yükü kolona, kolon da temele aktarır.",
+   "ek": "Kitapta kolon, kiriş, temel kirişi ve temel pabucu bir çizimde gösterilir (s. 79). Tanımlar kitap dışıdır (Küre Ansiklopedisi): kiriş, döşeme ve duvarlardan gelen yükü kolonlara iletir.",
+   "akilda": "Kolon dik, kiriş yatay",
+   "soru": {
+    "soru": "Binanın dik (düşey) taşıyıcı elemanı hangisidir?",
+    "secenekler": [
+     "Kiriş",
+     "Kolon",
+     "Çatı"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın akılda kalsın yazısını hatırla.",
+    "aciklama": "Kolon, yapının düşey taşıyıcı elemanıdır. (s. 79; kitap dışı tanım)"
+   }
+  },
+  {
+   "ad": "Temel",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='34' y='20' width='52' height='54' fill='#e9ecef'/><path d='M30 22l30-14 30 14z' fill='#ff6b6b'/><rect x='24' y='74' width='72' height='12' fill='#f2c14e'/><rect x='18' y='86' width='22' height='10' fill='#f2c14e'/><rect x='80' y='86' width='22' height='10' fill='#f2c14e'/><path d='M8 96h104' stroke='#8d6e63' stroke-width='4'/><path d='M60 34v28M54 56l6 8 6-8' stroke='#5c677d' stroke-width='4' fill='none'/></svg>",
+   "aciklama": "Temel, binanın zemine değen ve binanın bütün yükünü zemine dağıtan en alt bölümüdür.",
+   "ek": "Kitaptaki çizimde temel kirişi ve temel pabucu gösterilir (s. 79). Tanım kitap dışıdır (Küre Ansiklopedisi). Ağacın kökü gibi düşünebilirsin (kitap dışı benzetme).",
+   "akilda": "Yükü zemine verir",
+   "soru": {
+    "soru": "Binanın yükünü zemine aktaran bölüm hangisidir?",
+    "secenekler": [
+     "Çatı",
+     "Pencere",
+     "Temel"
+    ],
+    "dogru": 2,
+    "ipucu": "En alttaki bölüm…",
+    "aciklama": "Temel, yapının zeminle temas eden ve yükü zemine dağıtan bölümüdür. (s. 79; kitap dışı tanım)"
+   }
+  },
+  {
+   "ad": "Konut Tasarım Soruları",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><circle cx='60' cy='60' r='38' fill='#ffa26b'/><text x='60' y='76' font-size='46' font-weight='700' fill='#1b2340' text-anchor='middle' font-family='sans-serif'>?</text><text x='22' y='26' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>iklim</text><text x='98' y='26' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>aile</text><text x='22' y='106' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>iş</text><text x='98' y='106' font-size='10' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>hobi</text></svg>",
+   "aciklama": "Hayalindeki evi tasarlamadan önce beş soru sorulur: Nasıl bir coğrafyada? Nasıl bir iklimde? Ne iş yapıyorsun? Ailen kaç kişi? Hobilerin neler?",
+   "ek": "Kitaba göre çizim yaparken iklim, aile yapısı, geçim kaynağı ve hobiler unutulmamalıdır. Sonra tasarımın bunlara uygun olup olmadığına bakılır, eksikler tamamlanır. (s. 80–82)",
+   "akilda": "Coğrafya, iklim, iş, aile, hobi",
+   "soru": {
+    "soru": "Hangisi kitapta evi tasarlamadan önce sorulan sorulardan biridir?",
+    "secenekler": [
+     "Kaç kişilik bir aileniz var?",
+     "En sevdiğin renk ne?",
+     "Hangi takımı tutuyorsun?"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çizimindeki kelimelere bak.",
+    "aciklama": "Coğrafya, iklim, iş, aile ve hobiler sorulur. (s. 80)"
+   }
+  },
+  {
+   "ad": "Mimari Tasarımın Sunumu",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='18' width='92' height='60' rx='6' fill='#e9ecef'/><rect x='24' y='34' width='34' height='30' fill='#ffa26b'/><path d='M20 36l21-16 21 16z' fill='#c2255c'/><path d='M66 36h30M66 48h30M66 60h20' stroke='#5c677d' stroke-width='4'/><path d='M60 78v14M44 104l16-12 16 12' stroke='#e9ecef' stroke-width='4' fill='none'/></svg>",
+   "aciklama": "Mimari tasarım bitince başkalarına anlatılır. Bunun için çizim, maket ya da çoklu ortam sunusu hazırlanır.",
+   "ek": "Kitap dışı (MEB programı): Sunum planlanır, tasarlanır, uygulanır ve değerlendirilir. Tanıtım kartı, afiş, broşür, video ya da dijital sunu hazırlanabilir. Kitap da tasarımı sınıfta arkadaşlarla paylaşmayı ister (s. 82).",
+   "akilda": "Planla, hazırla, sun, değerlendir",
+   "soru": {
+    "soru": "Programa göre mimari tasarım sunumu hazırlanırken ilk adım hangisidir?",
+    "secenekler": [
+     "Değerlendirmek",
+     "Uygulamak",
+     "Planlamak"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın akılda kalsın yazısının ilk kelimesi…",
+    "aciklama": "Sunum önce planlanır, sonra tasarlanır, uygulanır ve değerlendirilir. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Binayı taşıyan bir parça mı, tasarım ve sunum adımı mı?",
+   "kutular": [
+    {
+     "etiket": "Binayı taşır",
+     "uyeler": [
+      "Kolon ve Kiriş",
+      "Temel"
+     ]
+    },
+    {
+     "etiket": "Tasarım ve sunum",
+     "uyeler": [
+      "Ev Planı",
+      "Kuş Bakışı Çizim",
+      "Konut Tasarım Soruları",
+      "Mimari Tasarımın Sunumu"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Kitaptaki etkinlikte tasarımlar sınıfta paylaşılır ve en iyi tasarımı yapan arkadaşlar birlikte belirlenir. (s. 82)"
+ ],
+ "akildaKalsin": [
+  "Ev planı odaları gösterir; kuş bakışı yukarıdan bakıştır.",
+  "Çatı tipleri: beşik, düz, tek eğimli, piramit, kelebek, M şekli…",
+  "Kolon dik, kiriş yatay taşıyıcıdır.",
+  "Temel, yükü zemine verir.",
+  "Tasarım soruları: coğrafya, iklim, iş, aile, hobi.",
+  "Tasarım kontrol edilir, eksikler tamamlanır ve sunulur."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Kitapta kaç çeşit çatı tipi var?",
+   "cevap": "On bir: yan binaya yaslı, açık üçgen, beşik, pencereli, geniş açı, kelebek, altıgen, düz, tek eğimli, M şekli ve piramit. (s. 79)"
+  },
+  {
+   "soru": "Kolon olmasaydı ne olurdu?",
+   "cevap": "Kirişlerden gelen yükü temele aktaran parça olmazdı; bina ayakta duramazdı. (kitap dışı)"
+  },
+  {
+   "soru": "Evimi tasarlarken hobilerim neden önemli?",
+   "cevap": "Kitaba göre çizimde hobiler de dikkate alınır. Örneğin resim yapmayı seven biri için aydınlık bir köşe düşünülebilir (örnek kitap dışı). (s. 81)"
+  },
+  {
+   "soru": "En iyi tasarımı kim seçer?",
+   "cevap": "Tasarımlar sınıfta paylaşılır; en iyi tasarımı yapan arkadaşlar birlikte belirlenir. (s. 82)"
+  },
+  {
+   "soru": "Tasarımımı maketle gösterebilir miyim?",
+   "cevap": "Evet. Programa göre konut tasarımı çizim ya da maketle somutlaştırılabilir. (program)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Hayalindeki evi anlat: Nerede (coğrafya, iklim)? Kaç kişi yaşayacak? Çatısı nasıl olacak? Neden?",
+   "ornekCevap": "Evim Karadeniz'de, yağmurlu bir yerde olsun. Dört kişilik ailem için üç yatak odası, salon ve mutfak olsun. Yağmur kolay aksın diye beşik çatı yaparım. Sağlam olması için kolon, kiriş ve temele dikkat ederim.",
+   "anahtarlar": [
+    "iklim",
+    "coğrafya",
+    "aile",
+    "çatı",
+    "oda",
+    "temel",
+    "kolon"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kitaptaki ev planlarında hangi bölümler görülür?",
+   "secenekler": [
+    "Yatak odası, banyo, mutfak, salon, veranda",
+    "Sahne ve seyirci koltukları",
+    "Ameliyathane ve bekleme salonu"
+   ],
+   "dogru": 0,
+   "ipucu": "Bunlar bir evin planı.",
+   "aciklama": "Planlarda yatak odaları, banyo, mutfak, salon ve veranda vardır. (s. 79)",
+   "kavram": "Ev Planı"
+  },
+  {
+   "soru": "Yüksek bir yerden aşağıya, her yeri görecek biçimde bakarak yapılan çizime ne denir?",
+   "secenekler": [
+    "Ön görünüş",
+    "Kuş bakışı çizim",
+    "Afiş"
+   ],
+   "dogru": 1,
+   "ipucu": "Gökyüzünde uçan bir hayvan gibi bak…",
+   "aciklama": "Bu kuş bakışı çizimdir. (s. 81)",
+   "kavram": "Kuş Bakışı Çizim"
+  },
+  {
+   "soru": "Hangisi kitapta geçen çatı tiplerinden değildir?",
+   "secenekler": [
+    "Beşik",
+    "Piramit",
+    "Kubbe"
+   ],
+   "dogru": 2,
+   "ipucu": "Çatı tipleri kartındaki listeyi hatırla.",
+   "aciklama": "Beşik ve piramit kitaptaki çatı tiplerindendir; kubbe listede yoktur. (s. 79)",
+   "kavram": "Çatı Tipleri"
+  },
+  {
+   "soru": "Çatının görevi hangisidir?",
+   "secenekler": [
+    "Binayı kar, yağmur ve rüzgârdan korumak",
+    "Yükü zemine dağıtmak",
+    "Katları birbirinden ayırmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Çatı binanın en üstündedir.",
+   "aciklama": "Çatı yapının üst örtüsüdür; kar, yağmur, rüzgâr ve güneşe karşı korur. (s. 79; kitap dışı tanım)",
+   "kavram": "Çatı Tipleri"
+  },
+  {
+   "soru": "Döşeme ve duvarlardan gelen yükü kolonlara ileten yatay eleman hangisidir?",
+   "secenekler": [
+    "Temel",
+    "Kiriş",
+    "Pencere"
+   ],
+   "dogru": 1,
+   "ipucu": "Kolon dik, … yatay.",
+   "aciklama": "Kiriş yatay taşıyıcıdır; yükü kolonlara iletir. (s. 79; kitap dışı tanım)",
+   "kavram": "Kolon ve Kiriş"
+  },
+  {
+   "soru": "Yükün binada ilerleyiş sırası hangisinde doğru verilmiştir?",
+   "secenekler": [
+    "Temel → kiriş → çatı → zemin",
+    "Kolon → çatı → kiriş → temel",
+    "Kiriş → kolon → temel → zemin"
+   ],
+   "dogru": 2,
+   "ipucu": "Yük yukarıdan aşağıya iner; en sonda zemin vardır.",
+   "aciklama": "Kiriş yükü kolona, kolon temele, temel zemine aktarır. (s. 79; kitap dışı tanım)",
+   "kavram": "Temel",
+   "yardim": {
+    "adimlar": [
+     "Yük hangi yöne gider: yukarı mı, aşağı mı?",
+     "Kolondan sonra hangi parça gelir?",
+     "Zemin her zaman en sonda olmalı."
+    ]
+   }
+  },
+  {
+   "soru": "Kitaptaki çizimde temelle ilgili hangi parçalar gösterilir?",
+   "secenekler": [
+    "Temel kirişi ve temel pabucu",
+    "Çatı kiremidi ve baca",
+    "Pencere ve kapı"
+   ],
+   "dogru": 0,
+   "ipucu": "Temel kartının ek bilgisine bak.",
+   "aciklama": "Çizimde temel kirişi ve temel pabucu gösterilir. (s. 79)",
+   "kavram": "Temel"
+  },
+  {
+   "soru": "Hayalindeki evi tasarlarken 'Ne iş yapıyorsunuz?' sorusu neden sorulur?",
+   "secenekler": [
+    "Evin rengini seçmek için",
+    "Geçim kaynağı evin tasarımını etkilediği için",
+    "Gereksiz bir sorudur"
+   ],
+   "dogru": 1,
+   "ipucu": "Kitap çizimde neyi unutmamamızı istiyordu?",
+   "aciklama": "Çizimde iklim, aile yapısı, geçim kaynağı ve hobiler dikkate alınır. (s. 81)",
+   "kavram": "Konut Tasarım Soruları"
+  },
+  {
+   "soru": "Kitaba göre tasarımını çizdikten sonra ne yaparsın?",
+   "secenekler": [
+    "Hemen yıkarsın",
+    "Kimseye göstermezsin",
+    "Koşullara uygun mu diye bakar, eksikleri tamamlarsın"
+   ],
+   "dogru": 2,
+   "ipucu": "Kartın ek bilgisinin son cümlesi…",
+   "aciklama": "Tasarımın koşullara uygunluğu kontrol edilir, eksikler tamamlanır. (s. 82)",
+   "kavram": "Konut Tasarım Soruları"
+  },
+  {
+   "soru": "Mimari tasarımını sunmak için hangisi kullanılabilir?",
+   "secenekler": [
+    "Termometre",
+    "Afiş, broşür ya da dijital sunu",
+    "Kumpas"
+   ],
+   "dogru": 1,
+   "ipucu": "Göze hitap eden tanıtım araçlarını hatırla.",
+   "aciklama": "Program tanıtım kartı, afiş, broşür, video ve dijital sunumu sayar. (program)",
+   "kavram": "Mimari Tasarımın Sunumu"
+  }
+ ]
+}

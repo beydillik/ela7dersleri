@@ -1,0 +1,324 @@
+{
+ "id": "u5k1",
+ "unite": "5. Ünite: Mimari Tasarım",
+ "baslik": "Mimar ve Mimari Tasarım",
+ "sayfalar": "s. 71–72 · program",
+ "giris": "İnsanlar barınmak ve doğadan korunmak için yapılar yapar. Bu konuda mimarın kim olduğunu, mimari tasarımın ne demek olduğunu ve büyük mimarımız Mimar Sinan'ı öğreneceğiz.",
+ "kaynakNotu": "Mimari mekân ve estetik algı kitapta kavram olarak yok; MEB programının 5. ünitesinin içerik çerçevesinde geçer (mekân kavramı, estetik algının mimari yapıya etkisi): https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1441 · Mekân tanımı TDK Güncel Türkçe Sözlük: https://sozluk.gov.tr/gts?ara=mekân",
+ "kavramlar": [
+  {
+   "ad": "Mimar",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='46' width='46' height='50' fill='#6fb3ff'/><path d='M18 48l27-24 27 24z' fill='#e9ecef'/><rect x='32' y='58' width='10' height='10' fill='#1b2340'/><rect x='48' y='58' width='10' height='10' fill='#1b2340'/><rect x='40' y='76' width='10' height='20' fill='#1b2340'/><path d='M80 96l14-48 8 3-14 47-8 2z' fill='#f2c14e'/><path d='M94 48l2-8 6 11z' fill='#ffa26b'/></svg>",
+   "aciklama": "Mimar, insanların içinde yaşayacağı yapıların çizimlerini yapan ve bu yapıların yapılmasını yöneten uzmandır.",
+   "ek": "Mimari ise bu yapıları uygun ölçüde tasarlama ve inşa etme sanatı ve bilimidir. (s. 71)",
+   "akilda": "Yapıyı çizer ve yönetir",
+   "soru": {
+    "soru": "Yapıların çizimini yapan ve yapılmasını yöneten uzman kimdir?",
+    "secenekler": [
+     "Ressam",
+     "Mimar",
+     "Pilot"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın başlığına bak.",
+    "aciklama": "Yapıların tasarısını çizen ve uygulamasını yöneten uzmana mimar denir. (s. 71)"
+   }
+  },
+  {
+   "ad": "Mimari Tasarım",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M18 60l42-34 42 34z' fill='#b197fc'/><rect x='26' y='60' width='68' height='40' fill='#e9ecef'/><rect x='50' y='74' width='20' height='26' fill='#9b3fa6'/><circle cx='36' cy='72' r='5' fill='#6fb3ff'/><circle cx='84' cy='72' r='5' fill='#6fb3ff'/><path d='M60 14l3 6 6 1-5 4 1 6-5-3-5 3 1-6-5-4 6-1z' fill='#f2c14e'/></svg>",
+   "aciklama": "Mimari tasarım, insanların yaşamını kolaylaştıran mekânları ihtiyaca, bütçeye ve tekniğe uygun ve güzel olacak şekilde yapma sanatıdır.",
+   "ek": "İnsanlar barınmak, yaşamak ve doğal şartlardan korunmak için mekâna ihtiyaç duyar. Mimari tasarım coğrafi yapıdan, iklimden ve kültürden etkilenir. (s. 71)",
+   "akilda": "İhtiyaç + teknik + güzellik",
+   "soru": {
+    "soru": "Kitaba göre mimari tasarımı etkileyen şeylerden biri hangisidir?",
+    "secenekler": [
+     "Telefonun rengi",
+     "Saat dilimi",
+     "İklim"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisinde üç şey sayılıyordu: coğrafi yapı, … ve kültür.",
+    "aciklama": "Mimari tasarım coğrafi yapıdan, iklimden ve kültürel farklılıklardan etkilenir. (s. 71)"
+   }
+  },
+  {
+   "ad": "Mimar Sinan",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M30 70a30 26 0 0 1 60 0z' fill='#e9ecef'/><rect x='26' y='70' width='68' height='26' fill='#ced4da'/><rect x='14' y='30' width='6' height='66' fill='#e9ecef'/><path d='M13 30l4-12 4 12z' fill='#ffa26b'/><rect x='100' y='30' width='6' height='66' fill='#e9ecef'/><path d='M99 30l4-12 4 12z' fill='#ffa26b'/><path d='M60 44v-10' stroke='#f2c14e' stroke-width='3'/><rect x='54' y='80' width='12' height='16' rx='6' fill='#1b2340'/><text x='60' y='112' font-size='11' font-weight='700' fill='#f2c14e' text-anchor='middle' font-family='sans-serif'>375 eser</text></svg>",
+   "aciklama": "Mimar Sinan, Osmanlı Devleti'nin en görkemli döneminde yaşamış, dünyanın en büyük yapı sanatçılarından biridir.",
+   "ek": "Bir yeniçeriyken mimari zekâsıyla öne çıktı. Kalıplara bağlı kalmadan denemeler yaptı. Toplam 375 mimari eseri vardır. (s. 71)",
+   "akilda": "Osmanlı'nın ustası: 375 eser",
+   "soru": {
+    "soru": "Kitaba göre Mimar Sinan'ın kaç mimari eseri vardır?",
+    "secenekler": [
+     "375",
+     "37",
+     "3750"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın çiziminin altındaki sayıya bak.",
+    "aciklama": "Mimar Sinan'ın toplam 375 mimari eseri vardır. (s. 71)"
+   }
+  },
+  {
+   "ad": "Mimarın Görevleri",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='16' y='18' width='60' height='78' rx='6' fill='#e9ecef'/><path d='M26 34h40M26 50h40M26 66h40M26 82h28' stroke='#495057' stroke-width='3'/><path d='M22 34l2 2 4-4M22 50l2 2 4-4M22 66l2 2 4-4' stroke='#2f9e44' stroke-width='2' fill='none'/><circle cx='86' cy='74' r='16' fill='none' stroke='#ffa26b' stroke-width='5'/><path d='M97 86l10 12' stroke='#ffa26b' stroke-width='6' stroke-linecap='round'/></svg>",
+   "aciklama": "Mimar binanın planını çizer, maketini hazırlar ve binanın plana uygun yapılıp yapılmadığını denetler.",
+   "ek": "Ayrıca binanın şehrin imar planına uygun olup olmadığını inceler, binayı kullanacak kişilerin isteklerini ve bütçesini öğrenir, mühendislerle birlikte çalışır, değişiklik ya da onarım için plan hazırlar. (s. 72)",
+   "akilda": "Dinle, çiz, maket yap, denetle",
+   "soru": {
+    "soru": "Hangisi mimarın görevlerinden biridir?",
+    "secenekler": [
+     "Binanın planını çizmek",
+     "Hastaları muayene etmek",
+     "Uçak kullanmak"
+    ],
+    "dogru": 0,
+    "ipucu": "Mimar binayla ilgili işler yapar.",
+    "aciklama": "Mimar binanın planını çizer. (s. 72)"
+   }
+  },
+  {
+   "ad": "Peyzaj Tasarımı",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='44' y='40' width='32' height='30' fill='#e9ecef'/><path d='M40 42l20-16 20 16z' fill='#ffa26b'/><circle cx='24' cy='62' r='12' fill='#2f9e44'/><rect x='22' y='72' width='4' height='14' fill='#8d6e63'/><circle cx='96' cy='62' r='12' fill='#2f9e44'/><rect x='94' y='72' width='4' height='14' fill='#8d6e63'/><path d='M14 98c20-10 72-10 92 0' stroke='#69db7c' stroke-width='6' fill='none' stroke-linecap='round'/><path d='M60 70v26' stroke='#f2c14e' stroke-width='5'/></svg>",
+   "aciklama": "Peyzaj tasarımı, binaları saran dış çevrenin (bahçe, park, yol gibi) tasarımıdır. Mimari tasarımın içinde yer alır.",
+   "ek": "Mimarlık evrensel bir meslektir. Dinî yapılardan saraylara, basit evlere kadar her açık ve kapalı mekân mimarlığın konusudur. Bu çevre kırsal ya da kentsel olabilir. (s. 72) Bahçe ve park örnekleri kitap dışıdır.",
+   "akilda": "Binanın dışındaki çevre",
+   "soru": {
+    "soru": "Bir binanın çevresindeki bahçe ve yolların tasarımına ne denir?",
+    "secenekler": [
+     "Grafik tasarım",
+     "Peyzaj tasarımı",
+     "Ürün tasarımı"
+    ],
+    "dogru": 1,
+    "ipucu": "Binayı saran dış çevre…",
+    "aciklama": "Mekânları kuşatan dış çevrenin tasarımı peyzaj tasarımıdır. (s. 72)"
+   }
+  },
+  {
+   "ad": "Mimari Mekân",
+   "renk": "#1971c2",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='14' y='26' width='54' height='60' fill='none' stroke='#6fb3ff' stroke-width='5'/><rect x='30' y='56' width='20' height='14' fill='#ffa26b'/><path d='M14 86h54' stroke='#6fb3ff' stroke-width='5'/><text x='41' y='104' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>kapalı</text><path d='M76 86h32' stroke='#69db7c' stroke-width='5'/><circle cx='92' cy='60' r='12' fill='#2f9e44'/><rect x='90' y='70' width='4' height='16' fill='#8d6e63'/><text x='92' y='104' font-size='11' font-weight='700' fill='#e9ecef' text-anchor='middle' font-family='sans-serif'>açık</text></svg>",
+   "aciklama": "Mimaride mekân, insanların içinde yaşadığı, çalıştığı ya da bulunduğu yerdir: oda, sınıf, avlu gibi.",
+   "ek": "Kitap dışı (MEB programı). Programda mekân kavramı incelenir; TDK'ya göre mekân bulunulan yerdir. Mekânlar kapalı (oda, sınıf) ya da açık (avlu, bahçe) olabilir; kitap da açık ve kapalı mekânlardan söz eder (s. 72).",
+   "akilda": "İçinde bulunduğumuz yer",
+   "soru": {
+    "soru": "Hangisi kapalı bir mekândır?",
+    "secenekler": [
+     "Bahçe",
+     "Sınıf",
+     "Park"
+    ],
+    "dogru": 1,
+    "ipucu": "Duvarları ve tavanı olan yeri bul.",
+    "aciklama": "Sınıf duvarlarla çevrili, kapalı bir mekândır. (program; s. 72)"
+   }
+  },
+  {
+   "ad": "Estetik Algı",
+   "renk": "#c2255c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='30' y='44' width='60' height='52' fill='#ff8fab'/><path d='M24 46l36-26 36 26z' fill='#c2255c'/><rect x='52' y='70' width='16' height='26' fill='#1b2340'/><circle cx='42' cy='60' r='5' fill='#e9ecef'/><circle cx='78' cy='60' r='5' fill='#e9ecef'/><path d='M96 22c-4-6-12-2-8 4l8 8 8-8c4-6-4-10-8-4z' fill='#ff6b6b'/></svg>",
+   "aciklama": "Estetik algı, bir yapıyı görünce onu güzel bulup bulmamamızdır.",
+   "ek": "Kitap dışı (MEB programı). Programda estetik algının mimari yapıya etkisi araştırılır. Kitaba göre mimari tasarım estetik yaratıcılıkla yapılır (s. 71); yani bina yalnız işe yaramamalı, göze de güzel gelmelidir.",
+   "akilda": "Göze güzel geliyor mu?",
+   "soru": {
+    "soru": "Bir binanın renginin ve biçiminin göze güzel gelmesi hangi kavramla ilgilidir?",
+    "secenekler": [
+     "İmar planı",
+     "Maliyet",
+     "Estetik algı"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın akılda kalsın yazısını hatırla.",
+    "aciklama": "Bir yapıyı güzel bulmamız estetik algıyla ilgilidir. (program)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Kişi mi, tasarım kavramı mı?",
+   "kutular": [
+    {
+     "etiket": "Kişi",
+     "uyeler": [
+      "Mimar",
+      "Mimar Sinan"
+     ]
+    },
+    {
+     "etiket": "Tasarım kavramı",
+     "uyeler": [
+      "Mimari Tasarım",
+      "Peyzaj Tasarımı",
+      "Mimari Mekân",
+      "Estetik Algı"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Mimarlık, insanlık tarihinin her döneminde önemli olmuş evrensel bir meslektir. (s. 72)",
+  "Ülkemizin doğusuyla batısındaki binalar bile birbirinden farklıdır. Kitap bunun nedenini düşünmemizi ister. (s. 70)"
+ ],
+ "akildaKalsin": [
+  "Mimar: yapıların çizimini yapar, yapımını yönetir.",
+  "Mimari tasarım: ihtiyaç, teknik ve güzelliği birleştirir.",
+  "Mimari tasarımı coğrafya, iklim ve kültür etkiler.",
+  "Mimar Sinan: Osmanlı'nın büyük mimarı, 375 eser.",
+  "Peyzaj tasarımı: binayı saran dış çevrenin tasarımı.",
+  "Mekân: bulunduğumuz yer; estetik algı: yapıyı güzel bulmamız."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Mimar tek başına mı çalışır?",
+   "cevap": "Hayır. Binanın statik, sıhhi tesisat ve elektrik işlerini inşaat, makine ve elektrik mühendisleriyle birlikte hazırlar ve denetler. (s. 72)"
+  },
+  {
+   "soru": "Mimar neden maket yapar?",
+   "cevap": "Bina yapıldığında nasıl bir şekil alacağını göstermek için. (s. 72)"
+  },
+  {
+   "soru": "Mimar Sinan mimar olmadan önce ne yapıyordu?",
+   "cevap": "Bir yeniçeriydi; mimari zekâsıyla öne çıktı. (s. 71)"
+  },
+  {
+   "soru": "Dünyadaki binalar neden birbirinden farklı?",
+   "cevap": "Çünkü mimari tasarım coğrafi yapıdan, iklimden ve kültürel farklılıklardan etkilenir. (s. 71)"
+  },
+  {
+   "soru": "Bina bitince mimarın işi biter mi?",
+   "cevap": "Bitmez. Mimar binalarda değişiklik ya da onarım için de plan hazırlar. (s. 72)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Okulunun yeni bir binası yapılacak. Mimar işe başlamadan önce kimlerle konuşmalı ve neler yapmalı? Kısaca yaz.",
+   "ornekCevap": "Mimar önce okulu kullanacak öğrenci ve öğretmenlerin isteklerini öğrenir, binanın imar planına uygun olup olmadığını inceler. Sonra planı çizer, maket hazırlar ve mühendislerle birlikte çalışır. Bina yapılırken plana uyulup uyulmadığını denetler.",
+   "anahtarlar": [
+    "iste",
+    "plan",
+    "maket",
+    "mühendis",
+    "imar",
+    "denetle"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kitaba göre mimari nedir?",
+   "secenekler": [
+    "Yapıları uygun ölçüde tasarlama ve inşa etme sanatı ve bilimi",
+    "Yalnızca resim yapma sanatı",
+    "Makine onarma bilimi"
+   ],
+   "dogru": 0,
+   "ipucu": "Mimar kartının ek bilgisine bak.",
+   "aciklama": "Mimari, yapıları uygun ölçüde tasarlama ve inşa etme sanatı ve bilimidir. (s. 71)",
+   "kavram": "Mimar"
+  },
+  {
+   "soru": "İnsanlar neden bir mekâna ihtiyaç duyar?",
+   "secenekler": [
+    "Yalnızca eğlenmek için",
+    "Barınmak, yaşamak ve doğal şartlardan korunmak için",
+    "Yarışma kazanmak için"
+   ],
+   "dogru": 1,
+   "ipucu": "Mimari tasarım kartının ek bilgisini hatırla.",
+   "aciklama": "İnsanlar barınmak, yaşamak ve doğal şartlardan korunmak için mekân ihtiyacı duyar. (s. 71)",
+   "kavram": "Mimari Tasarım"
+  },
+  {
+   "soru": "Mimar Sinan hangi devletin en görkemli döneminde yaşamıştır?",
+   "secenekler": [
+    "Selçuklu",
+    "Roma",
+    "Osmanlı"
+   ],
+   "dogru": 2,
+   "ipucu": "Kartın ilk cümlesine bak.",
+   "aciklama": "Mimar Sinan, Osmanlı İmparatorluğu'nun en görkemli döneminde yaşamıştır. (s. 71)",
+   "kavram": "Mimar Sinan"
+  },
+  {
+   "soru": "Mimar Sinan'ın çalışma biçimi kitapta nasıl anlatılır?",
+   "secenekler": [
+    "Kalıplara bağlı kalmadan, denemelerle",
+    "Hep aynı planı kopyalayarak",
+    "Hiç çizim yapmadan"
+   ],
+   "dogru": 0,
+   "ipucu": "Ek bilgide 'kalıp' kelimesi geçiyordu.",
+   "aciklama": "Mimar Sinan kalıplara bağlı kalmadan, arayış ve denemelerle dolu bir yaşam sürmüştür. (s. 71)",
+   "kavram": "Mimar Sinan"
+  },
+  {
+   "soru": "Hangisi mimarın görevlerinden değildir?",
+   "secenekler": [
+    "Binanın maketini hazırlamak",
+    "Binanın plana uygun yapılıp yapılmadığını denetlemek",
+    "Binada satılacak ürünlerin fiyatını belirlemek"
+   ],
+   "dogru": 2,
+   "ipucu": "Binayla ilgisi olmayan işi bul.",
+   "aciklama": "Mimar plan çizer, maket hazırlar ve denetler; ürün fiyatı belirlemek onun işi değildir. (s. 72)",
+   "kavram": "Mimarın Görevleri"
+  },
+  {
+   "soru": "Mimar binayı tasarlamadan önce kimin isteklerini öğrenir?",
+   "secenekler": [
+    "Yapıyı kullanacak kişilerin",
+    "Yalnızca komşuların",
+    "Hiç kimsenin"
+   ],
+   "dogru": 0,
+   "ipucu": "Binada kim yaşayacak ya da çalışacak?",
+   "aciklama": "Mimar yapıyı kullanacak kişilerin isteklerini, görüşlerini ve bütçesini öğrenir. (s. 72)",
+   "kavram": "Mimarın Görevleri"
+  },
+  {
+   "soru": "Mimarlık mesleği için hangisi doğrudur?",
+   "secenekler": [
+    "Yalnızca saraylarla ilgilenir",
+    "Evrensel bir meslektir; her açık ve kapalı mekân konusudur",
+    "Yalnızca şehirlerde yapılır"
+   ],
+   "dogru": 1,
+   "ipucu": "Peyzaj tasarımı kartının ek bilgisini hatırla.",
+   "aciklama": "Mimarlık evrenseldir; açık-kapalı her mekân, kırsal ya da kentsel çevre konusudur. (s. 72)",
+   "kavram": "Peyzaj Tasarımı"
+  },
+  {
+   "soru": "Okul bahçesi nasıl bir mekândır?",
+   "secenekler": [
+    "Kapalı mekân",
+    "Açık mekân",
+    "Mekân değildir"
+   ],
+   "dogru": 1,
+   "ipucu": "Bahçenin tavanı var mı?",
+   "aciklama": "Bahçe ve avlu gibi yerler açık mekândır. (program; s. 72)",
+   "kavram": "Mimari Mekân"
+  },
+  {
+   "soru": "Ela yeni yapılan kütüphanenin rengini ve biçimini çok beğendi. Bu duygusu hangi kavramla ilgilidir?",
+   "secenekler": [
+    "Peyzaj",
+    "İmar planı",
+    "Estetik algı"
+   ],
+   "dogru": 2,
+   "ipucu": "Beğenmek, güzel bulmak…",
+   "aciklama": "Bir yapıyı güzel bulmak estetik algıyla ilgilidir. (program)",
+   "kavram": "Estetik Algı"
+  }
+ ]
+}

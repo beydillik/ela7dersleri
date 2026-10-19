@@ -1,0 +1,337 @@
+{
+ "id": "u5k3",
+ "unite": "5. Ünite: Mimari Tasarım",
+ "baslik": "Yaşam Biçimi ve Geleneksel Evler",
+ "sayfalar": "s. 75–76",
+ "giris": "İnsanlar nasıl yaşıyorsa evlerini de ona göre yapar. Bu konuda yaşam biçimi ile ev arasındaki ilişkiyi ve ülkemizin ünlü geleneksel evlerini tanıyacağız.",
+ "kaynakNotu": "Yaşam biçimi MEB programının 5. ünitesinde anahtar kavramdır (tanımı programda yok; gündelik anlamıyla verildi): https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1441 · Karadeniz'de ahşap malzeme örneği programın öğrenme-öğretme uygulamalarından. Kitaptaki sayılar (kubbeli evlerin tarihi, Kapadokya tüf tabakasının yaşı, safranın boyama gücü) Kemal'in kararıyla nitel yazıldı.",
+ "kavramlar": [
+  {
+   "ad": "Yaşam Biçimi",
+   "renk": "#9b3fa6",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='24' y='50' width='72' height='48' fill='#b197fc'/><path d='M16 52l44-32 44 32z' fill='#9b3fa6'/><circle cx='44' cy='70' r='7' fill='#ffa26b'/><path d='M37 92a7 10 0 0 1 14 0' fill='#ffa26b'/><circle cx='76' cy='70' r='7' fill='#6fb3ff'/><path d='M69 92a7 10 0 0 1 14 0' fill='#6fb3ff'/><circle cx='60' cy='78' r='5' fill='#f2c14e'/><path d='M55 94a5 7 0 0 1 10 0' fill='#f2c14e'/></svg>",
+   "aciklama": "Yaşam biçimi, insanların günlük hayatı nasıl sürdürdüğüdür: ne iş yaptıkları, aileleri, alışkanlıkları. Evler bu yaşama göre şekillenir.",
+   "ek": "Programda geçen kavram (tanım gündelik anlamıyla). Kitaba göre barınma günlük yaşamla doğrudan ilgilidir. İnsanlar aile ve ev yaşantısını sürdürmek için yapım teknikleri geliştirdi; evler bölgeye, iklime ve teknik olanaklara göre zamanla değişti. (s. 75)",
+   "akilda": "Nasıl yaşıyorsan öyle ev",
+   "soru": {
+    "soru": "Kitaba göre evler zamanla neye göre değişmiştir?",
+    "secenekler": [
+     "Bölgeye, iklime ve teknik olanaklara",
+     "Yalnızca modaya",
+     "Hiç değişmemiştir"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın ek bilgisinde üç şey sayılıyordu.",
+    "aciklama": "İnsan konutları bölgesel, iklimsel ve teknik olanaklara göre sürekli değişmiştir. (s. 75)"
+   }
+  },
+  {
+   "ad": "Toplu Konut",
+   "renk": "#1d6fa3",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='12' y='34' width='26' height='64' fill='#6fb3ff'/><rect x='47' y='24' width='26' height='74' fill='#1d6fa3'/><rect x='82' y='34' width='26' height='64' fill='#6fb3ff'/><path d='M17 44h16M17 56h16M17 68h16M17 80h16M52 34h16M52 46h16M52 58h16M52 70h16M52 82h16M87 44h16M87 56h16M87 68h16M87 80h16' stroke='#e9ecef' stroke-width='3'/></svg>",
+   "aciklama": "Toplu konut, aynı yerde birlikte yapılmış çok sayıda konuttur (tanım kitap dışı).",
+   "ek": "Kitaba göre 1980 sonrasında göçler büyük kentlerde konut açığı yarattı. Tarım alanları imara açıldı, konut yatırım ve tüketim nesnesi oldu ve toplu konutlar ortaya çıktı. (s. 75)",
+   "akilda": "Göçle büyüyen kentin evleri",
+   "soru": {
+    "soru": "Kitaba göre toplu konutların ortaya çıkmasının nedeni hangisidir?",
+    "secenekler": [
+     "Köylerin büyümesi",
+     "Göçler ve büyük kentlerdeki konut açığı",
+     "Depremler"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın ek bilgisinde 'göç' kelimesi geçiyordu.",
+    "aciklama": "Göçler sonucu büyük kentlerde yaşanan konut açığı toplu konutları doğurdu. (s. 75)"
+   }
+  },
+  {
+   "ad": "Kültürel Kanıt",
+   "renk": "#5f3dc4",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='22' y='54' width='56' height='42' fill='#e9ecef'/><path d='M16 56l34-26 34 26z' fill='#b197fc'/><rect x='42' y='72' width='16' height='24' fill='#5f3dc4'/><circle cx='88' cy='40' r='16' fill='none' stroke='#f2c14e' stroke-width='5'/><path d='M80 40l6 6 10-12' stroke='#f2c14e' stroke-width='4' fill='none'/></svg>",
+   "aciklama": "Yapılar insanı yalnızca çevreden korumaz; aynı zamanda kültürün birer kanıtıdır.",
+   "ek": "Geleneksel Türk evleri kültürümüzü gelecek nesillere tanıtır. Safranbolu, Harran ve Kapadokya evleri kültürel mimarimizin örnekleridir. (s. 75)",
+   "akilda": "Ev, kültürün kanıtı",
+   "soru": {
+    "soru": "Kitaba göre yapılar, insanı korumanın yanında neyin kanıtıdır?",
+    "secenekler": [
+     "Kültürün",
+     "Zenginliğin",
+     "Hızın"
+    ],
+    "dogru": 0,
+    "ipucu": "Kartın başlığına bak.",
+    "aciklama": "Yapılar birer kültürel kanıttır. (s. 75)"
+   }
+  },
+  {
+   "ad": "Karadeniz Evi",
+   "renk": "#2f9e44",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M60 14l46 30H14z' fill='#8d6e63'/><rect x='20' y='44' width='80' height='26' fill='#c4a07a'/><path d='M20 57h80' stroke='#8d6e63' stroke-width='2'/><rect x='30' y='48' width='12' height='12' fill='#e9ecef'/><rect x='78' y='48' width='12' height='12' fill='#e9ecef'/><rect x='20' y='70' width='80' height='28' fill='#5c677d'/><ellipse cx='48' cy='86' rx='12' ry='7' fill='#e9ecef'/><circle cx='60' cy='82' r='5' fill='#e9ecef'/><rect x='80' y='76' width='12' height='22' fill='#343a40'/></svg>",
+   "aciklama": "Tipik Karadeniz evinde alt kat hayvan barınağı, üst kat yaşam alanıdır.",
+   "ek": "Kitaptaki resim altı yazısından (s. 75). Programa göre Karadeniz'de yöresel malzeme olarak ahşap kullanılır.",
+   "akilda": "Altta hayvan, üstte insan",
+   "soru": {
+    "soru": "Tipik Karadeniz evinin alt katında ne bulunur?",
+    "secenekler": [
+     "Yatak odası",
+     "Mutfak",
+     "Hayvan barınağı"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın çiziminde alt katta bir hayvan var.",
+    "aciklama": "Tipik Karadeniz evinin alt katı hayvan barınağı, üst katı yaşam alanıdır. (s. 75)"
+   }
+  },
+  {
+   "ad": "Kapadokya Evleri",
+   "renk": "#e8590c",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 98l12-50h14l12 50z' fill='#e0a96d'/><path d='M22 50a12 10 0 0 1 22 0z' fill='#8d6e63'/><path d='M60 98l12-62h12l12 62z' fill='#e0a96d'/><path d='M68 38a12 10 0 0 1 20 0z' fill='#8d6e63'/><rect x='28' y='76' width='8' height='12' rx='4' fill='#1b2340'/><rect x='74' y='60' width='8' height='12' rx='4' fill='#1b2340'/><rect x='74' y='82' width='8' height='12' rx='4' fill='#1b2340'/></svg>",
+   "aciklama": "Kapadokya'da insanlar peribacalarının içine evler, kiliseler ve manastırlar oymuştur.",
+   "ek": "Çok uzun zaman önce yanardağ külleri yumuşak bir tüf tabakası oluşturdu. Yağmur ve rüzgâr bu tabakayı aşındırınca peribacaları ortaya çıktı. Taşlar hava ile temas edene kadar yumuşak olduğu için kolay oyulur. (s. 76)",
+   "akilda": "Peribacasına oyulmuş ev",
+   "soru": {
+    "soru": "Kapadokya'da evler nereye oyulmuştur?",
+    "secenekler": [
+     "Buz kalıplarına",
+     "Peribacalarına",
+     "Ağaç gövdelerine"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çizimindeki kayalara bak.",
+    "aciklama": "Kapadokya'da evler peribacalarının içine oyulmuştur. (s. 76)"
+   }
+  },
+  {
+   "ad": "Safranbolu Evleri",
+   "renk": "#c92a2a",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><rect x='18' y='56' width='38' height='40' fill='#e9ecef'/><rect x='14' y='38' width='46' height='22' fill='#e9ecef'/><path d='M10 40l27-18 27 18z' fill='#c92a2a'/><path d='M14 49h46M18 76h38' stroke='#8d6e63' stroke-width='3'/><rect x='30' y='80' width='14' height='16' fill='#8d6e63'/><path d='M84 96v-30' stroke='#2f9e44' stroke-width='3'/><path d='M84 66c-10-4-14-14-8-20 4 6 8 10 8 20z M84 66c10-4 14-14 8-20-4 6-8 10-8 20z' fill='#b197fc'/><circle cx='84' cy='60' r='4' fill='#f2c14e'/></svg>",
+   "aciklama": "Safranbolu, geleneksel Türk yaşamını şehir ölçeğinde yaşatan örnek bir kenttir.",
+   "ek": "Adını safran bitkisinden alır. Zengin kültürel mirasını iyi koruduğu için UNESCO Dünya Miras Listesi'ne alınmıştır. (s. 76)",
+   "akilda": "UNESCO mirası, safran",
+   "soru": {
+    "soru": "Safranbolu adını nereden alır?",
+    "secenekler": [
+     "Bir padişahtan",
+     "Safran bitkisinden",
+     "Bir nehirden"
+    ],
+    "dogru": 1,
+    "ipucu": "Kartın çizimindeki çiçeğe bak.",
+    "aciklama": "Safranbolu adını safran bitkisinden alır. (s. 76)"
+   }
+  },
+  {
+   "ad": "Harran Evleri",
+   "renk": "#c99a06",
+   "svg": "<svg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg' role='img'><rect width='120' height='120' rx='22' fill='#1b2340'/><path d='M14 96V70a12 26 0 0 1 24 0v26z' fill='#e0a96d'/><path d='M40 96V64a12 30 0 0 1 24 0v32z' fill='#d9a05b'/><path d='M66 96V70a12 26 0 0 1 24 0v26z' fill='#e0a96d'/><path d='M92 96V74a10 22 0 0 1 16 0v22z' fill='#d9a05b'/><path d='M18 78h16M44 74h16M70 78h16' stroke='#8d6e63' stroke-width='2'/><circle cx='98' cy='26' r='10' fill='#f2c14e'/></svg>",
+   "aciklama": "Harran evleri, bindirme tekniğiyle yapılmış, külah biçiminde, konik kubbeli evlerdir.",
+   "ek": "Bölgede tuğla bol, ağaç az olduğu için kubbeler tuğladan yapılmıştır. Yazları sıcak, kışları soğuk olan Harran'da kubbeli yapı evi yazın serin, kışın sıcak tutar. Kubbeli evlerin tarihi çok eskilere gider. (s. 76)",
+   "akilda": "Konik kubbe: yazın serin",
+   "soru": {
+    "soru": "Harran evlerinin kubbeleri neden tuğladan yapılmıştır?",
+    "secenekler": [
+     "Tuğla az, ağaç çok olduğu için",
+     "Tuğla daha renkli olduğu için",
+     "Tuğla bol, ağaç az olduğu için"
+    ],
+    "dogru": 2,
+    "ipucu": "Kartın ek bilgisinin ilk cümlesini hatırla.",
+    "aciklama": "Tuğla malzemesinin bol, ağacın az olması nedeniyle kubbeler tuğladan yapılmıştır. (s. 76)"
+   }
+  }
+ ],
+ "gruplar": [
+  {
+   "soru": "Geleneksel ev örneği mi, genel kavram mı?",
+   "kutular": [
+    {
+     "etiket": "Geleneksel ev örneği",
+     "uyeler": [
+      "Karadeniz Evi",
+      "Kapadokya Evleri",
+      "Safranbolu Evleri",
+      "Harran Evleri"
+     ]
+    },
+    {
+     "etiket": "Genel kavram",
+     "uyeler": [
+      "Yaşam Biçimi",
+      "Toplu Konut",
+      "Kültürel Kanıt"
+     ]
+    }
+   ]
+  }
+ ],
+ "biliyorMusun": [
+  "Safranbolu tarih boyunca birçok uygarlığa ev sahipliği yapmıştır. (s. 76)",
+  "Kapadokya, doğa ile tarihin bütünleştiği bir yerdir; binlerce yıllık izleri bugüne taşır. (s. 76)"
+ ],
+ "akildaKalsin": [
+  "Evler yaşam biçimine, bölgeye, iklime ve tekniğe göre değişir.",
+  "Göç ve konut açığı toplu konutları doğurdu.",
+  "Yapılar kültürün kanıtıdır.",
+  "Karadeniz evi: altta hayvan barınağı, üstte yaşam alanı.",
+  "Kapadokya: peribacalarına oyulmuş evler.",
+  "Safranbolu: UNESCO mirası; Harran: tuğladan konik kubbeli evler."
+ ],
+ "merakKutusu": [
+  {
+   "soru": "Eski insanlar ev yapmak için nelerle uğraştı?",
+   "cevap": "Her yanı kaplayan ormanlara ve vadilerdeki su taşkınlarına karşı mücadele ettiler; ateşi, suyu ve ürünlerini saklayabilmek için yapım teknikleri geliştirdiler. (s. 75)"
+  },
+  {
+   "soru": "Kapadokya'da yalnızca ev mi var?",
+   "cevap": "Hayır. Peribacalarına evlerin yanında kiliseler ve manastırlar da oyulmuştur. (s. 76)"
+  },
+  {
+   "soru": "Safran neden ünlü bir bitki?",
+   "cevap": "Kitaba göre safran, kendi ağırlığından çok daha fazla sıvıyı sarıya boyayabilir. (s. 76)"
+  },
+  {
+   "soru": "Harran evleri yeni mi yapıldı?",
+   "cevap": "Hayır. Kubbeli evlerin tarihi binlerce yıl öncesine gider. (s. 76)"
+  },
+  {
+   "soru": "Öğrenci için nasıl bir ev yapılır?",
+   "cevap": "Kitapta tek kişinin yaşamına uygun 'öğrenci tipi tek odalı konut' örneği vardır. (s. 75)"
+  }
+ ],
+ "dusunVeYaz": [
+  {
+   "soru": "Harran evleri ile Karadeniz evi neden birbirine benzemez? Yaşam biçimi ve çevre açısından açıkla.",
+   "ornekCevap": "Harran'da ağaç az, tuğla bol ve yazlar çok sıcak; bu yüzden evler tuğladan ve kubbeli yapılır, yazın serin kalır. Karadeniz'de insanlar hayvancılıkla da uğraşır; evin alt katı hayvan barınağı, üst katı yaşam alanıdır. Yaşam biçimleri ve çevreleri farklı olduğu için evleri de farklıdır.",
+   "anahtarlar": [
+    "tuğla",
+    "kubbe",
+    "serin",
+    "hayvan",
+    "iklim",
+    "yaşam"
+   ]
+  }
+ ],
+ "sorular": [
+  {
+   "soru": "Kitaba göre barınma konusu neden önemlidir?",
+   "secenekler": [
+    "Gündelik yaşamla doğrudan ilgili olduğu için",
+    "Yalnızca zenginleri ilgilendirdiği için",
+    "Yalnızca eski çağlarda önemli olduğu için"
+   ],
+   "dogru": 0,
+   "ipucu": "Yaşam biçimi kartının ek bilgisini hatırla.",
+   "aciklama": "Barınma, gündelik yaşamla doğrudan ilgili olduğu için önemlidir. (s. 75)",
+   "kavram": "Yaşam Biçimi"
+  },
+  {
+   "soru": "'Öğrenci tipi tek odalı konut' hangi yaşam biçimine uygundur?",
+   "secenekler": [
+    "Tek başına yaşayan bir öğrenciye",
+    "Kalabalık bir aileye",
+    "Hayvancılık yapan bir köylüye"
+   ],
+   "dogru": 0,
+   "ipucu": "Adına dikkat et: tek oda, öğrenci.",
+   "aciklama": "Tek odalı öğrenci konutu, tek kişinin yaşam biçimine göre tasarlanmıştır. (s. 75)",
+   "kavram": "Yaşam Biçimi"
+  },
+  {
+   "soru": "Hangisi toplu konutların ortaya çıkmasına yol açmıştır?",
+   "secenekler": [
+    "Kapadokya'daki yanardağlar",
+    "Harran'da ağacın az olması",
+    "Göçler sonucu büyük kentlerde konut açığı"
+   ],
+   "dogru": 2,
+   "ipucu": "Toplu konut kartının akılda kalsın yazısını hatırla.",
+   "aciklama": "Göçler sonucu büyük kentlerde yaşanan konut açığı toplu konutları doğurdu. (s. 75)",
+   "kavram": "Toplu Konut"
+  },
+  {
+   "soru": "Hangisi kitapta kültürel mimarimize örnek olarak verilmemiştir?",
+   "secenekler": [
+    "Safranbolu evleri",
+    "Plaza",
+    "Harran evleri"
+   ],
+   "dogru": 1,
+   "ipucu": "Geleneksel olmayanı bul.",
+   "aciklama": "Safranbolu, Harran ve Kapadokya evleri kültürel mimarimizin örnekleridir. (s. 75)",
+   "kavram": "Kültürel Kanıt"
+  },
+  {
+   "soru": "Kapadokya'daki peribacalarını ne oluşturmuştur?",
+   "secenekler": [
+    "İnsanlar",
+    "Yağmur ve rüzgârın aşındırması gibi coğrafi olaylar",
+    "Depremler"
+   ],
+   "dogru": 1,
+   "ipucu": "Yumuşak tüf tabakasını ne aşındırdı?",
+   "aciklama": "Peribacalarını coğrafi olaylar oluşturmuştur; tüf tabakası yağmur ve rüzgârla aşınmıştır. (s. 76)",
+   "kavram": "Kapadokya Evleri"
+  },
+  {
+   "soru": "Kapadokya taşları neden kolay oyulur?",
+   "secenekler": [
+    "Çok sert oldukları için",
+    "Buzdan oldukları için",
+    "Hava ile temas edene kadar yumuşak oldukları için"
+   ],
+   "dogru": 2,
+   "ipucu": "Kartın ek bilgisinin son cümlesi…",
+   "aciklama": "Volkanik taşlar hava ile temas edinceye kadar yumuşaktır, kolay işlenir. (s. 76)",
+   "kavram": "Kapadokya Evleri"
+  },
+  {
+   "soru": "Kitapta UNESCO Dünya Miras Listesi'ne alındığı belirtilen kent hangisidir?",
+   "secenekler": [
+    "Safranbolu",
+    "Ankara",
+    "Bir toplu konut sitesi"
+   ],
+   "dogru": 0,
+   "ipucu": "Adını bir bitkiden alan kent…",
+   "aciklama": "Safranbolu, UNESCO Dünya Miras Listesi'ne alınmıştır. (s. 76)",
+   "kavram": "Safranbolu Evleri"
+  },
+  {
+   "soru": "Harran evlerinin kubbeli yapısı ne sağlar?",
+   "secenekler": [
+    "Yazın sıcak, kışın soğuk tutar",
+    "Yazın serin, kışın sıcak tutar",
+    "Evi su geçirmez yapar"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartın akılda kalsın yazısını hatırla.",
+   "aciklama": "Kubbeli yapı Harran evlerini yazın serin, kışın sıcak tutar. (s. 76)",
+   "kavram": "Harran Evleri"
+  },
+  {
+   "soru": "Harran evleri hangi teknikle yapılmıştır?",
+   "secenekler": [
+    "Oyma",
+    "Kesme-katlama",
+    "Bindirme tekniği"
+   ],
+   "dogru": 2,
+   "ipucu": "Kartın ilk cümlesine bak.",
+   "aciklama": "Harran evleri bindirme tekniğinde yapılmış konik kubbeli evlerdir. (s. 76)",
+   "kavram": "Harran Evleri"
+  },
+  {
+   "soru": "Alt katı hayvan barınağı, üst katı yaşam alanı olan ev hangisidir?",
+   "secenekler": [
+    "Harran evi",
+    "Tipik Karadeniz evi",
+    "Kapadokya evi"
+   ],
+   "dogru": 1,
+   "ipucu": "Hayvancılıkla da geçinen bölgeyi düşün.",
+   "aciklama": "Tipik Karadeniz evinde alt kat hayvan barınağı, üst kat yaşam alanıdır. (s. 75)",
+   "kavram": "Karadeniz Evi"
+  }
+ ]
+}
