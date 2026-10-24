@@ -1269,3 +1269,7 @@ html[data-dil="en"] .stage .kicker, html[data-dil="en"] .isinma-etiket, html[dat
 .rp-kars .kf-kotu { color: var(--bad, #c92a2a); font-weight: 800; }
 .rp-kars .kf-esit { color: var(--muted); }
 @media (max-width: 640px) { .mod-kartlar { grid-template-columns: 1fr; } }
+.esik-sec { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 12px; padding: 10px 14px; border-radius: 12px; background: var(--surface-2); }
+.esik-sec label { flex: 1; min-width: 220px; }
+.esik-sec small { display: block; color: var(--muted); }
+.esik-sec select { font: inherit; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }

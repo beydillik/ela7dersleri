@@ -181,7 +181,7 @@
       mod: "Sınav Provası biçimi: anlik (her soruda sonuç hemen) ya da sonda (sonuçlar sınav sonunda)", yeniden: "true: Sınav Provası'ndan sonra yanlışları yeniden çözerken verilen cevap",
       hazir: "hata-acele olayında: okuma beklemesi bitmişti, yalnızca neden seçilmemişti",
       kullanimModu: "mod olayında: yeni kullanım modu (normal, destekli, odakli, ozel); once: önceki mod", kavramlar: "hedefli-tekrar olayında: tekrar gösterilen kavramlar",
-      oran: "hedefli-tekrar olayında: testte ilk denemede doğru oranı (0–1)"
+      oran: "hedefli-tekrar olayında: testte ilk denemede doğru oranı (0–1)", esik: "hedefli-tekrar olayında: tamamlanma eşiği (0–1)"
     },
     olaylar: {
       "konu-ac": "Konu ya da Ara Durak açıldı", sekme: "Ekran (sekme) değişti", adim: "Öğren'de bir adımdan çıkıldı (sureSn o adımda geçen süre)",
@@ -195,7 +195,7 @@
       "sinav-inceleme": "Sınav Provası'ndan sonra yanlışlarını tek tek incelemeyi bitirdi", "sinav-yeniden": "Sınav Provası'nın yanlışlarını yeniden çözdü (dogru/toplam)",
       mod: "Bu cihazda kullanım modu değişti (Veli Paneli'nden; kullanimModu, once)",
       "kart-bekle": "Odaklı mod: Öğren'de bilgi kartı okuma süresi dolmadan 'Sonraki'ye dokundu",
-      "hedefli-tekrar": "Odaklı mod: testte %80 altı kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
+      "hedefli-tekrar": "Odaklı mod: testte tamamlanma eşiğinin altında kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
       "sinav-soru": "Sınav Provası'nda bir sorunun sonucu (tur sinav-<tür>; sonuc 1 doğru 0 yanlış; kismi kısmi doğru oranı; cevap Ela'nın cevabı; kaynakKonu sorunun konusu)"
     }
   };
@@ -344,22 +344,29 @@
   // Veli ayarları (Veli Paneli'nden değiştirilir; bağlı cihazda buluttan gelir). Varsayılan = Normal mod.
   // Ayarı hiç yapılmamış ve bağlı olmayan cihaz (öğretmen, arkadaş) her zaman Normal moddadır.
   const AYAR_VARSAYILAN = { mod: "normal", robotUyari: true, sikBekle: false, oyunKilit: false, ogrenKilit: false, hataDur: true, sinavAnlik: true,
-    kartBekle: false, hedefliTekrar: false, isaretler: [] };
-  const ayar = () => ({ ...AYAR_VARSAYILAN, ...(store.get("ela7:ayar", {}) || {}) });
+    kartBekle: false, hedefliTekrar: false, tamamEsik: 80, isaretler: [] };
+  // Bağlı (Ela'nın) cihazında, veli henüz mod seçmemişse (ayarda "mod" alanı yoksa) varsayılan Destekli'dir (Kemal'in kararı, 25 Ekim 2026).
+  // Bağlı olmayan cihaz (öğretmen, arkadaş) ayarı yoksa Normal'dir.
+  const ayarCoz = (a, bagli) => { a = a || {}; const eski = bagli && !a.mod;
+    return { ...AYAR_VARSAYILAN, ...a, ...(eski ? { ...MODLAR.destekli.ayar, mod: "destekli" } : {}) }; };
+  const ayar = () => ayarCoz(store.get("ela7:ayar", {}), !!BULUT.bilgi());
+  const ESIKLER = [70, 75, 80, 85, 90];
+  const esikOf = a => (ESIKLER.includes(+a.tamamEsik) ? +a.tamamEsik : 80) / 100;
   // Kullanım modları: kilit ayarlarının hazır birleşimleri (robot uyarıları ve Sınav Provası biçimi moddan bağımsız).
   const MODLAR = {
     normal: { ad: "Normal", kisa: "Bugünkü davranış. Kilit yok; yanlıştan sonra açıklama okutulur.",
       ayar: { sikBekle: false, oyunKilit: false, ogrenKilit: false, hataDur: true, kartBekle: false, hedefliTekrar: false } },
     destekli: { ad: "Destekli", kisa: "Şıklar soru okunana kadar bekler, Öğren bitmeden Test açılmaz, oyunda hızlı yanlışta 3 sn düşünme molası.",
       ayar: { sikBekle: true, oyunKilit: true, ogrenKilit: true, hataDur: true, kartBekle: false, hedefliTekrar: false } },
-    odakli: { ad: "Odaklı", kisa: "Destekli + Öğren'de bilgi kartı okunmadan “Sonraki” açılmaz + testte %80 altı kalınca yalnız yanlış yapılan kavramlarla kısa tekrar, sonra yeniden test.",
+    odakli: { ad: "Odaklı", kisa: "Destekli + Öğren'de bilgi kartı okunmadan “Sonraki” açılmaz + testte tamamlanma eşiğinin altında kalınca yalnız yanlış yapılan kavramlarla kısa tekrar, sonra yeniden test.",
       ayar: { sikBekle: true, oyunKilit: true, ogrenKilit: true, hataDur: true, kartBekle: true, hedefliTekrar: true } }
   };
   const MOD_SIRA = ["normal", "destekli", "odakli"];
   const modBul = a => MOD_SIRA.find(m => Object.entries(MODLAR[m].ayar).every(([k, v]) => !!a[k] === v)) || "ozel";
   const modAdi = m => (MODLAR[m] || {}).ad || "Özel";
-  // Konu "tamamlandı" eşiği: son testte ilk denemede doğru oranı (taramada ilk denemede doğru oranı)
-  const TAMAM_ESIK = .8;
+  // Konu "tamamlandı" eşiği: son testte ilk denemede doğru oranı (taramada ilk denemede doğru oranı). Veli seçer: %70–90, varsayılan %80.
+  const tamamEsik = () => esikOf(ayar());
+  const yuzdeEsik = e => `%${Math.round(e * 100)}`;
 
   // =================================================================
   // ---------- Robot koç: dersin robotu (Hece, Kuark, Pisi…) kısa uyarı ve yönlendirme baloncukları gösterir ----------
@@ -2303,7 +2310,7 @@
       bitis: (st, oz, basla) => {
         const gec = store.get(key("testler:" + S.konu), []); gec.push({ t: gun(), ...oz }); store.set(key("testler:" + S.konu), gec.slice(-20));
         renderNav();
-        const oran = oz.toplam ? oz.ilk1 / oz.toplam : 0, tamam = oran >= TAMAM_ESIK, gerek = Math.ceil(oz.toplam * TAMAM_ESIK - 1e-9);
+        const esik = tamamEsik(), oran = oz.toplam ? oz.ilk1 / oz.toplam : 0, tamam = oran >= esik - 1e-9, gerek = Math.ceil(oz.toplam * esik - 1e-9);
         const tikNot = tamam ? `<div class="tik-not ok"><span class="tik tik-tamam" aria-hidden="true">✓</span><span><b>Konu tamamlandı!</b> Konu listesinde bu konunun yanında artık yeşil tik var.</span></div>`
           : `<div class="tik-not"><span class="tik tik-ogrendi" aria-hidden="true">✓</span><span>Yeşil tik için ilk denemede en az <b>${gerek} / ${oz.toplam}</b> soruyu bulman gerekiyor; sen <b>${oz.ilk1}</b> buldun. Testi yeniden çözerek yeşil tiki kazanabilirsin.</span></div>`;
         // Odaklı mod: ilk denemede bulunamayan soruların kavramları (eski konudan gelenler dahil) kısa tekrar olarak gösterilir
@@ -2313,7 +2320,7 @@
           if (kv && !zayif.includes(kv)) zayif.push(kv);
         });
         if (ayar().hedefliTekrar && !tamam && zayif.length && !document.body.classList.contains("sinif")) {
-          KAYIT.olay("hedefli-tekrar", { kavramlar: zayif.map(k => k.ad), oran: +oran.toFixed(2) });
+          KAYIT.olay("hedefli-tekrar", { kavramlar: zayif.map(k => k.ad), oran: +oran.toFixed(2), esik });
           const ms = Math.round(Math.min(25000, zayif.reduce((a, k) => a + Math.max(3000, okumaEsik(kelimeSay([k.aciklama, k.akilda])) * 1000), 0)));
           root.innerHTML = `<div class="stage"><div class="kicker">Konu testi · Kısa tekrar</div><h3>Önce şu ${zayif.length} kavrama bir daha bakalım</h3>
             ${robotDer(`İlk denemede ${oz.toplam} sorudan ${oz.ilk1} tanesini buldun. Yanlış yaptığın soruların kavramları aşağıda. Her kartı dikkatle oku, sonra testi yeniden çöz. Bu sefer yeşil tiki kazanabilirsin!`)}
@@ -2615,18 +2622,18 @@
 
   // Bir dersin konu konu durumu (panelde tablo, raporda "konuDurumu")
   function konuDurumu(kod, ders, olaylar) {
-    const g = k => VELI.oku(`ela7:${kod}:${k}`), satir = [];
+    const g = k => VELI.oku(`ela7:${kod}:${k}`), satir = [], esik = esikOf(VELI.ayar());
     (ders.uniteler || []).forEach(u => u.konular.filter(k => k.hazir).forEach(k => {
       const sonIs = olaylar.filter(o => o.ders === kod && o.konu === k.id).reduce((a, o) => Math.max(a, o.ts), 0) || null;
       if (k.tur === "tarama") {
         const r = g("durak:" + k.id), yarim = !!g("akis:" + k.id);
         const sv = g("sinavlar:" + k.id) || [], sl = sv[sv.length - 1];
-        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "durak", durum: konuIsaretHesap(g, k) || "baslanmadi", tarama: r ? { tarih: r.t, dogru: r.dogru, toplam: r.toplam, kez: r.kez, sonraki: r.n } : null, yarim, sonIs,
+        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "durak", durum: konuIsaretHesap(g, k, esik) || "baslanmadi", tarama: r ? { tarih: r.t, dogru: r.dogru, toplam: r.toplam, kez: r.kez, sonraki: r.n } : null, yarim, sonIs,
           sinav: sl ? { tarih: sl.t, dogru: sl.dogru, toplam: sl.toplam, kez: sv.length, ilk: { dogru: sv[0].dogru, toplam: sv[0].toplam }, yeniden: sl.yeniden || null, mod: sl.mod || "sonda" } : null });
       } else {
         const tl = g("testler:" + k.id) || [], sn = g("sonuc:" + k.id) || {};
         const zorEv = olaylar.filter(o => o.ders === kod && o.konu === k.id && o.olay === "soru" && o.sonuc === 0 && o.kavram).map(o => o.kavram);
-        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "konu", durum: konuIsaretHesap(g, k) || "baslanmadi",
+        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "konu", durum: konuIsaretHesap(g, k, esik) || "baslanmadi",
           ogren: g("ogren-bitti:" + k.id) ? "bitti" : g("adim:" + k.id) !== null ? `${g("adim:" + k.id) + 1}. adımda` : "başlamadı",
           testIlk: tl[0] ? { tarih: tl[0].t, ilk1: tl[0].ilk1, toplam: tl[0].toplam } : null,
           testSon: tl.length > 1 ? { tarih: tl[tl.length - 1].t, ilk1: tl[tl.length - 1].ilk1, toplam: tl[tl.length - 1].toplam, kez: tl.length } : null,
@@ -2650,7 +2657,7 @@
     const konular = {};
     for (const kod of dersler) { const d = VELI.dersler[kod]; if (d) konular[kod] = { ders: d.ders, konular: konuDurumu(kod, d, hepsi) }; }
     const hd = hepsi.filter(o => dersler.includes(o.ders) || o.olay === "mod"), ay = VELI.ayar(), { isaretler = [], ...ayarlar } = ay;
-    const kullanim = { mod: modBul(ay), modAdi: modAdi(modBul(ay)), ayarlar, tamamEsik: TAMAM_ESIK,
+    const kullanim = { mod: modBul(ay), modAdi: modAdi(modBul(ay)), ayarlar, tamamEsik: esikOf(ay),
       modlar: Object.fromEntries(MOD_SIRA.map(m => [m, { ad: MODLAR[m].ad, aciklama: MODLAR[m].kisa, ayar: MODLAR[m].ayar }])),
       isaretler: [...isaretler].sort((a, b) => a.ts - b.ts).map(i => ({ tarih: i.g, not: i.not, tur: i.tur || "elle" })) };
     const olcumler = { tanim: OLCUM_TANIM, son14Gun: olcum(hd.filter(o => o.ts >= simdi() - 14 * 864e5)), haftalik: haftalik(hd, 12),
@@ -2658,7 +2665,7 @@
       seviyeOnerisi: (({ tur, hedef, metin }) => ({ tur, hedef: hedef || null, metin: metin.replace(/<[^>]+>/g, "") }))(seviyeOneri(hd, ay)) };
     const veri = { tur: "ela7dersleri-analiz", v: KAYIT_V, olusturma: yerelZaman(simdi()), kaynak: VELI.bulut ? `bulut (öğrenci: ${VELI.bulut.ogr.takmaAd}, bütün bağlı cihazlar)` : location.origin, cihaz: VELI.bulut ? "hepsi" : cihazId,
       kapsam: { dersler: dersler.map(k => `${k} (${dersAd(k)})`), donem: gunSay ? `son ${gunSay} gün` : "bütün kayıt" },
-      okuma: "Claude için analiz paketi: önce 'sozluk'u oku. 'kullanim' kullanım modu, mod tanımları ve değişiklik işaretleri (mod değişimleri ve velinin elle koyduğu tarihler). 'olcumler' son 14 gün, haftalık gidiş (son 12 hafta) ve her işaret için önceki/sonraki 14 günün karşılaştırması ('tanim' alanlarda); amaç yapılan değişikliklerin işe yarayıp yaramadığını görmek. 'konuDurumu' her dersin konu konu durumu (durum: tamam = son test ilk denemede ≥ %80, ogrendi, yarim; Öğren; test ilk/son çözüş; zorlandığı kavramlar; tarama ve Sınav Provası). 'oturumlar' oturum özetleri, 'olaylar' seçilen dönemin ayrıntılı kaydı.",
+      okuma: "Claude için analiz paketi: önce 'sozluk'u oku. 'kullanim' kullanım modu, mod tanımları ve değişiklik işaretleri (mod değişimleri ve velinin elle koyduğu tarihler). 'olcumler' son 14 gün, haftalık gidiş (son 12 hafta) ve her işaret için önceki/sonraki 14 günün karşılaştırması ('tanim' alanlarda); amaç yapılan değişikliklerin işe yarayıp yaramadığını görmek. 'konuDurumu' her dersin konu konu durumu (durum: tamam = son test ilk denemede ≥ kullanim.tamamEsik, ogrendi, yarim, baslanmadi; Öğren; test ilk/son çözüş; zorlandığı kavramlar; tarama ve Sınav Provası). 'oturumlar' oturum özetleri, 'olaylar' seçilen dönemin ayrıntılı kaydı.",
       sozluk: KAYIT_SOZLUK, kullanim, olcumler, konuDurumu: konular, oturumlar: ozetle(ev), olaylar: ev };
     indir(`ela7-analiz-${ad}-${tarih}.json`, JSON.stringify(veri, null, 1), "application/json");
   }
@@ -2782,7 +2789,7 @@
       VELI.oku = k => { const x = il[k]; if (!x || x.v == null) return null; try { return JSON.parse(x.v); } catch (e) { return null; } };
     } catch (e) { c.innerHTML = `<div class="notice">Kayıtlar okunamadı: ${esc(hataYaz(e))}</div>`; return; }
     VELI.bulut = { m, ogr, liste, buCihaz };
-    VELI.ayar = () => ({ ...AYAR_VARSAYILAN, ...(ogr.ayar || {}) });
+    VELI.ayar = () => ayarCoz(ogr.ayar, true);
     VELI.ayarYaz = async a => { ogr.ayar = a; if (buCihaz) store.set("ela7:ayar", a); try { await m.ayarYaz(ogr.id, a); } catch (e) { alert("Ayar kaydedilemedi: " + hataYaz(e)); } };
     veliCiz(c);
   }
@@ -2925,7 +2932,7 @@
     return { tur: "devam", metin: `${donem}: belirgin bir sorun görünmüyor; ${m === "ozel" ? "özel ayarlarla" : modAdi(m) + " modda"} devam.`, o };
   }
   // Mod değiştir: kilit ayarlarını uygula, mod değiştiyse tarihli işaret ekle
-  const modAyar = (a, m) => { const once = modBul(a), y = { ...a, ...MODLAR[m].ayar, mod: m };
+  const modAyar = (a, m) => { const once = modBul(a), y = { ...a, ...MODLAR[m].ayar, mod: m, tamamEsik: Math.round(esikOf(a) * 100) };
     if (once !== m) y.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Mod: ${modAdi(once)} → ${modAdi(m)}`, tur: "mod" }];
     return y; };
   const ayarDegis = (a, k, v) => { const once = modBul(a), y = { ...a, [k]: v }, son = modBul(y); y.mod = son;
@@ -2956,7 +2963,7 @@
         hf.map(h => [tarihYaz(h.hafta), h.gun, h.aktifDk, h.soru, yuzdeYaz(h.ilkDogru), yuzdeYaz(h.hizli), yuzdeYaz(h.kartGecis), yuzdeYaz(h.test)]))}
       ${is.length ? `<h2>Değişiklik işaretleri</h2>${is.map(i => `<p><b>${tarihYaz(i.g)} ${String(i.g).slice(0, 4)}</b> — ${esc(i.not)}</p>${kars(i)}`).join("")}` : ""}
       <h2>Yanlışların nedeni (son 30 gün, Ela'nın kendi seçimi)</h2>${nd.length ? tab(["Neden", "Sayı"], HATA_NEDEN.map(([k, a]) => [a, nd.filter(o => o.neden === k).length])) : "<p>Kayıt yok.</p>"}
-      <h2>Konu durumu</h2>${tab(["Ders", "Tamamlandı (test ≥ %80)", "Öğren bitti", "Yarım", "Başlanmadı", "Hazır konu"], Object.values(tm).filter(x => x.toplam).map(x => [esc(x.ders), x.tamam, x.ogrendi, x.yarim, x.baslanmadi, x.toplam]))}
+      <h2>Konu durumu</h2>${tab(["Ders", `Tamamlandı (test ≥ ${yuzdeEsik(esikOf(ay))})`, "Öğren bitti", "Yarım", "Başlanmadı", "Hazır konu"], Object.values(tm).filter(x => x.toplam).map(x => [esc(x.ders), x.tamam, x.ogrendi, x.yarim, x.baslanmadi, x.toplam]))}
       <p class="k">Ölçümler uygulamanın kendi kayıtlarından hesaplanır. Hızlı cevap: ilk dokunuşun soruyu okuma süresinden (kelime sayısı / 4,5 sn) önce olması. Okunmadan geçilen kart: Öğren'deki bilgi kartından okuma süresi dolmadan çıkılması. Bunlar dikkat davranışının göstergesidir, tanı aracı değildir.</p>
       </body></html>`;
     const w = window.open("", "_blank");
@@ -2970,6 +2977,9 @@
     return `<section><div class="sec-title"><h3>Kullanım modu</h3><span>${VELI.bulut ? `${esc(VELI.bulut.ogr.takmaAd)} · bağlı bütün cihazlar` : "Bu cihaz"} · bağlı olmayan cihazlar (öğretmen, arkadaş) hep Normal</span></div>
       ${kilit ? `<p class="ek">Bu cihaz bağlı: mod veli hesabından gelir. Değiştirmek için veli girişi yap.</p>` : ""}
       <div class="mod-kartlar">${MOD_SIRA.map(k => `<button class="mod-kart" data-mod="${k}" aria-pressed="${m === k}" ${kilit ? "disabled" : ""}><b>${MODLAR[k].ad}${m === k ? " ✓" : ""}</b><span>${MODLAR[k].kisa}</span></button>`).join("")}</div>
+      <div class="esik-sec"><label for="esikSec"><b>Tamamlanma eşiği</b> <small>Yeşil tik ve Odaklı moddaki kısa tekrar bu eşiğe göre: son testte ilk denemede en az</small></label>
+        <select id="esikSec" ${kilit ? "disabled" : ""}>${ESIKLER.map(e => `<option value="${e}" ${Math.round(esikOf(ay) * 100) === e ? "selected" : ""}>%${e}</option>`).join("")}</select></div>
+      ${VELI.bulut && !(VELI.bulut.ogr.ayar || {}).mod ? `<p class="ek">Henüz mod seçilmediği için Ela'nın bağlı cihazlarında <b>Destekli</b> mod varsayılan olarak açık.</p>` : ""}
       ${m === "ozel" ? `<p class="ek">Şu an <b>Özel</b> ayarlar kullanılıyor (aşağıdaki Ayarlar bölümünde tek tek değiştirildi). Bir moda dokununca o modun ayarları uygulanır.</p>` : ""}
       <div class="oneri oneri-${on.tur}"><b>Seviye önerisi:</b> ${on.metin}${on.hedef && !kilit ? ` <button class="btn" data-mod="${on.hedef}">${modAdi(on.hedef)} moda geç</button>` : ""}</div></section>
       <section><div class="sec-title"><h3>Değişiklik işaretleri</h3><span>Önce/sonra karşılaştırması için tarih işaretle</span></div>
@@ -2985,6 +2995,8 @@
     const ek = $("#isEkle", p); if (ek) ek.onclick = () => { const g = $("#isG", p).value || gun(), not = $("#isNot", p).value.trim(); if (!not) { $("#isNot", p).focus(); return; }
       const a = { ...VELI.ayar() }, ts = g === gun() ? simdi() : gunTs(g); a.isaretler = [...(a.isaretler || []), { g, ts, not }]; VELI.karsSec = String(ts); yaz(a); };
     const ks = $("#karsSec", p); if (ks) ks.onchange = () => { VELI.karsSec = ks.value; yenile(); };
+    const es = $("#esikSec", p); if (es) es.onchange = () => { const a = { ...VELI.ayar() }, once = Math.round(esikOf(a) * 100), yeni = +es.value; if (once === yeni) return;
+      a.tamamEsik = yeni; a.mod = modBul(a); a.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Tamamlanma eşiği: %${once} → %${yeni}`, tur: "esik" }]; yaz(a); };
     $("#ozetYaz", p).onclick = () => ozetYazdir(olaylar, kodlar);
   }
 
@@ -3013,7 +3025,7 @@
            ["oyunKilit", "Oyunda düşünme molası", "Art arda hızlı yanlış dokunuşta oyun 3 saniye durur."],
            ["ogrenKilit", "Öğren bitmeden Test kilitli", "Test sekmesi, Öğren'in son adımına gelinince açılır."],
            ["kartBekle", "Bilgi kartı okunmadan geçilmesin", "Öğren'de her bilgi kartı ilk açıldığında “Sonraki” düğmesi kart okunacak kadar (4–15 sn) kapalı kalır. Öğren bir kez bittiyse beklemez."],
-           ["hedefliTekrar", "Testten sonra hedefli kısa tekrar", "Konu testinde ilk denemede %80'in altında kalınca yalnız yanlış yapılan kavramların kartları gösterilir; okuduktan sonra testi yeniden çözer."],
+           ["hedefliTekrar", "Testten sonra hedefli kısa tekrar", "Konu testinde ilk denemede tamamlanma eşiğinin altında kalınca yalnız yanlış yapılan kavramların kartları gösterilir; okuduktan sonra testi yeniden çözer."],
            ["hataDur", "Yanlıştan sonra açıklamayı okut", "Cevabı gösterilen yanlışta (Test, Tarama, Sınav Provası) ilerleme düğmesi açıklamanın uzunluğuna göre 5–12 sn kapalı kalır; Ela “Neden yanlış yaptın?” sorusunu cevaplayınca geçer."],
            ["sinavAnlik", "Sınav Provası'nda cevabı hemen göster", "Açıksa her sorudan sonra doğru mu yanlış mı ve açıklaması görünür. Kapalıysa okuldaki gibi sonuçlar sınavın sonunda; yanlışlar sonuç sayfasında tek tek incelenir. Yeni başlayan provada geçerli olur."]].map(([k, a, t]) => `<label class="rp-sw"><input type="checkbox" data-ayar="${k}" ${ay[k] ? "checked" : ""} ${ayarKilit ? "disabled" : ""}><span><b>${a}</b><small>${t}</small></span></label>`).join("")}
       </div></section>
@@ -3052,17 +3064,17 @@
     const uniteler = [...new Set(ks.map(x => x.unite))];
     const tamam = ks.filter(x => x.tur === "konu" && x.durum === "tamam").length, toplamK = ks.filter(x => x.tur === "konu").length;
     const satir = x => x.tur === "durak"
-      ? `<tr class="rp-durak"><td>🚩 ${esc(x.baslik)} ${isaretHTML(x.durum)}</td><td colspan="2">${x.tarama ? `Son tarama ${tarihK(x.tarama.tarih)}: <b>${x.tarama.dogru}/${x.tarama.toplam}</b> ilk denemede${x.tarama.kez > 1 ? ` · ${x.tarama.kez}. kez` : ""}` : x.yarim ? "Yarım kaldı" : "Henüz yapılmadı"}</td>
+      ? `<tr class="rp-durak"><td>🚩 ${esc(x.baslik)} ${isaretHTML(x.durum, esikOf(VELI.ayar()))}</td><td colspan="2">${x.tarama ? `Son tarama ${tarihK(x.tarama.tarih)}: <b>${x.tarama.dogru}/${x.tarama.toplam}</b> ilk denemede${x.tarama.kez > 1 ? ` · ${x.tarama.kez}. kez` : ""}` : x.yarim ? "Yarım kaldı" : "Henüz yapılmadı"}</td>
         <td>${x.tarama ? `Sonraki tekrar: ${x.tarama.sonraki <= gun() ? `<b class="rp-k">şimdi</b>` : tarihK(x.tarama.sonraki)}` : ""}${x.sinav ? `<br>Sınav provası: <b>${x.sinav.dogru}/${x.sinav.toplam}</b>${x.sinav.yeniden ? ` → yanlışlarını yeniden çözünce <b>${x.sinav.yeniden.dogru}/${x.sinav.yeniden.toplam}</b>` : ""} <small>${tarihK(x.sinav.tarih)}${x.sinav.kez > 1 ? ` · ${x.sinav.kez}. prova (ilk: ${x.sinav.ilk.dogru}/${x.sinav.ilk.toplam})` : ""}</small>` : ""}</td><td>${x.sonIs ? gunAdi(x.sonIs) : "—"}</td></tr>`
-      : `<tr><td>${esc(x.baslik)} ${isaretHTML(x.durum)}</td><td>${x.ogren === "bitti" ? `<span class="rp-ok">✓ bitti</span>` : esc(x.ogren)}</td>
+      : `<tr><td>${esc(x.baslik)} ${isaretHTML(x.durum, esikOf(VELI.ayar()))}</td><td>${x.ogren === "bitti" ? `<span class="rp-ok">✓ bitti</span>` : esc(x.ogren)}</td>
         <td>${x.testIlk ? `<b>${x.testIlk.ilk1}/${x.testIlk.toplam}</b> <small>${tarihK(x.testIlk.tarih)}</small>${x.testSon ? ` → <b>${x.testSon.ilk1}/${x.testSon.toplam}</b> <small>${x.testSon.kez}. kez</small>` : ""}` : x.testYarim ? "yarım" : "—"}</td>
         <td>${x.zorlandigi.length ? x.zorlandigi.map(z => `<span class="rp-etiket">${esc(z)}</span>`).join(" ") : "—"}</td><td>${x.sonIs ? gunAdi(x.sonIs) : "—"}</td></tr>`;
     const at = kod === "tr1" || d.atolye ? VELI.oku(`ela7:${kod}:atolye`) : null;
     p.innerHTML = `<section><div class="sec-title"><h3>${esc(dersAd(kod))} · son 7 gün</h3></div>${ozetKutular(s7)}</section>
-      <section><div class="sec-title"><h3>Konular</h3><span>${tamam} / ${toplamK} konu tamamlandı (son test ilk denemede %80 ve üstü)</span></div>
+      <section><div class="sec-title"><h3>Konular</h3><span>${tamam} / ${toplamK} konu tamamlandı (son test ilk denemede ${yuzdeEsik(esikOf(VELI.ayar()))} ve üstü)</span></div>
         <div class="rp-ilerleme" aria-hidden="true"><i style="width:${toplamK ? tamam / toplamK * 100 : 0}%;background:${dersRenk(kod)}"></i></div>
         ${uniteler.map(u => `<h4 class="rp-unite">${esc(u)}</h4><div class="rp-tablo-wrap"><table class="rp-tablo rp-konu"><thead><tr><th>Konu</th><th>Öğren</th><th>Test: ilk çözüş → son</th><th>Zorlandığı kavramlar</th><th>Son çalışma</th></tr></thead><tbody>${ks.filter(x => x.unite === u).map(satir).join("")}</tbody></table></div>`).join("") || `<div class="notice">Hazır konu yok.</div>`}
-        <p class="ek">İşaretler: <span class="tik tik-tamam">✓</span> tamamlandı (son test ilk denemede %80+), <span class="tik tik-ogrendi">✓</span> Öğren bitti, <span class="tik tik-yarim"></span> yarım. Test sonuçları "ilk denemede doğru / soru sayısı". Zorlandığı kavramlar: Öğren sorularında ilk denemede bulamadığı ve testlerde cevabı gösterilen kavramlar.</p></section>
+        <p class="ek">İşaretler: <span class="tik tik-tamam">✓</span> tamamlandı (son test ilk denemede ${yuzdeEsik(esikOf(VELI.ayar()))}+), <span class="tik tik-ogrendi">✓</span> Öğren bitti, <span class="tik tik-yarim"></span> yarım. Test sonuçları "ilk denemede doğru / soru sayısı". Zorlandığı kavramlar: Öğren sorularında ilk denemede bulamadığı ve testlerde cevabı gösterilen kavramlar.</p></section>
       ${at ? `<section><div class="sec-title"><h3>Okuma Atölyesi</h3></div><div class="rp-kutular">${Object.entries(at.sev || {}).map(([n, s]) => kutucuk(`S${n}`, `${(s.turlar || []).length} tur${s.gecti ? " · geçti ✓" : ""}${(s.turlar || []).length ? ` · son: ${s.turlar[s.turlar.length - 1].d}/${s.turlar[s.turlar.length - 1].n}` : ""}`)).join("") || `<p class="ek">Henüz tur yok.</p>`}</div></section>` : ""}
       <section><div class="sec-title"><h3>Yanlış yapılan sorular</h3><span>Son 30 gün</span></div>${zorSorular(s30)}</section>
       <section><div class="sec-title"><h3>Yanlışların nedeni</h3><span>Son 30 gün · Ela'nın kendi seçimi</span></div>${nedenHTML(s30)}</section>
@@ -3089,21 +3101,21 @@
   const siradakiKonuBagla = root => $$("[data-sonraki-konu]", root).forEach(b => b.onclick = () => { S.donus = null; openKonu(b.dataset.sonrakiKonu, true); });
 
   // ---------- Tamamlanma işareti ----------
-  // g(son ek) → kayıt değeri. Konu: "tamam" (son test ilk denemede ≥ %80), "ogrendi" (Öğren bitti ya da test yapıldı ama eşik altı),
-  // "yarim" (Öğren'e başlandı). Ünite Sonu Taraması / Ara Durak: son tarama ≥ %80 → "tamam", altı → "ogrendi", yarım → "yarim".
+  // g(son ek) → kayıt değeri. Konu: "tamam" (son test ilk denemede ≥ eşik; veli seçer, varsayılan %80), "ogrendi" (Öğren bitti ya da test yapıldı ama eşik altı),
+  // "yarim" (Öğren'e başlandı). Ünite Sonu Taraması / Ara Durak: son tarama ≥ eşik → "tamam", altı → "ogrendi", yarım → "yarim".
   // Kayıtlar cihazda tutulur; bağlı cihazda buluttan gelir (bütün bağlı cihazlarda aynı), bağlı olmayan cihazda yalnız o cihazınki.
-  function konuIsaretHesap(g, k) {
+  function konuIsaretHesap(g, k, esik = tamamEsik()) {
     if (isDurak(k)) {
-      const r = g("durak:" + k.id); if (r && r.toplam) return r.dogru / r.toplam >= TAMAM_ESIK ? "tamam" : "ogrendi";
+      const r = g("durak:" + k.id); if (r && r.toplam) return r.dogru / r.toplam >= esik - 1e-9 ? "tamam" : "ogrendi";
       return g("akis:" + k.id) ? "yarim" : "";
     }
     const tl = g("testler:" + k.id) || [], son = tl[tl.length - 1];
-    if (son && son.toplam && son.ilk1 / son.toplam >= TAMAM_ESIK) return "tamam";
+    if (son && son.toplam && son.ilk1 / son.toplam >= esik - 1e-9) return "tamam";
     if (son || g("ogren-bitti:" + k.id)) return "ogrendi";
     return g("adim:" + k.id) !== null && g("adim:" + k.id) !== undefined ? "yarim" : "";
   }
-  const ISARET_AD = { tamam: "Tamamlandı: son testte %80 ve üstü", ogrendi: "Öğren bitti; yeşil tik için testte %80 gerekli", yarim: "Öğren'e başlandı, yarım" };
-  const isaretHTML = s => ISARET_AD[s] ? `<span class="tik tik-${s}" title="${esc(ISARET_AD[s])}" aria-label="${esc(ISARET_AD[s])}">${s === "yarim" ? "" : "✓"}</span>` : "";
+  const ISARET_AD = { tamam: e => `Tamamlandı: son testte ${yuzdeEsik(e)} ve üstü`, ogrendi: e => `Öğren bitti; yeşil tik için testte ${yuzdeEsik(e)} gerekli`, yarim: () => "Öğren'e başlandı, yarım" };
+  const isaretHTML = (s, e = tamamEsik()) => ISARET_AD[s] ? `<span class="tik tik-${s}" title="${esc(ISARET_AD[s](e))}" aria-label="${esc(ISARET_AD[s](e))}">${s === "yarim" ? "" : "✓"}</span>` : "";
   const konuIsaret = k => k.hazir ? konuIsaretHesap(s => store.get(key(s), null), k) : "";
 
   // ---------- Kompakt şerit ----------
