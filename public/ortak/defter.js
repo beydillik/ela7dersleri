@@ -179,7 +179,9 @@
       tekrarSoru: "Testte yeniden gelen soru sayısı", sureDk: "Test süresi (dk)", seviye: "Okuma Atölyesi seviyesi", dogru: "Doğru sayısı",
       neden: "Ela'nın seçtiği yanlış nedeni: bilmiyordum, yanlis-okudum (soruyu yanlış okudum), karistirdim (iki şeyi karıştırdım), acele (acele ettim)",
       mod: "Sınav Provası biçimi: anlik (her soruda sonuç hemen) ya da sonda (sonuçlar sınav sonunda)", yeniden: "true: Sınav Provası'ndan sonra yanlışları yeniden çözerken verilen cevap",
-      hazir: "hata-acele olayında: okuma beklemesi bitmişti, yalnızca neden seçilmemişti"
+      hazir: "hata-acele olayında: okuma beklemesi bitmişti, yalnızca neden seçilmemişti",
+      kullanimModu: "mod olayında: yeni kullanım modu (normal, destekli, odakli, ozel); once: önceki mod", kavramlar: "hedefli-tekrar olayında: tekrar gösterilen kavramlar",
+      oran: "hedefli-tekrar olayında: testte ilk denemede doğru oranı (0–1)"
     },
     olaylar: {
       "konu-ac": "Konu ya da Ara Durak açıldı", sekme: "Ekran (sekme) değişti", adim: "Öğren'de bir adımdan çıkıldı (sureSn o adımda geçen süre)",
@@ -191,6 +193,9 @@
       "hata-neden": "Cevabı gösterilen yanlıştan sonra Ela 'Neden yanlış yaptın?' sorusuna cevap verdi (sureSn: yanlıştan seçime kadar geçen süre)",
       "hata-acele": "Yanlıştan sonra açıklamayı okumadan ileri düğmesine dokundu (robot uyardı)",
       "sinav-inceleme": "Sınav Provası'ndan sonra yanlışlarını tek tek incelemeyi bitirdi", "sinav-yeniden": "Sınav Provası'nın yanlışlarını yeniden çözdü (dogru/toplam)",
+      mod: "Bu cihazda kullanım modu değişti (Veli Paneli'nden; kullanimModu, once)",
+      "kart-bekle": "Odaklı mod: Öğren'de bilgi kartı okuma süresi dolmadan 'Sonraki'ye dokundu",
+      "hedefli-tekrar": "Odaklı mod: testte %80 altı kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
       "sinav-soru": "Sınav Provası'nda bir sorunun sonucu (tur sinav-<tür>; sonuc 1 doğru 0 yanlış; kismi kısmi doğru oranı; cevap Ela'nın cevabı; kaynakKonu sorunun konusu)"
     }
   };
@@ -290,7 +295,7 @@
       // 1) Veli ayarları
       const o = await m.ogrenciOku(b.ogr);
       if (!o) throw new Error("Öğrenci kaydı okunamadı.");
-      if (o.ayar) store.set("ela7:ayar", o.ayar);
+      if (o.ayar) { const once = modBul(ayar()); store.set("ela7:ayar", o.ayar); const yeni = modBul(ayar()); if (once !== yeni) KAYIT.olay("mod", { kullanimModu: yeni, once }); }
       // 2) İlerleme
       const anlik = store.get("ela7:bulut-anlik", {}) || {}, uzak = await m.ilerlemeOku(b.ogr), yerel = {}, gonder = {}, yeni = {}, t = simdi();
       let cekilen = 0;
@@ -336,9 +341,25 @@
     birak() { try { ["ela7:bulut", "ela7:bulut-anlik", "ela7:bulut-say"].forEach(k => localStorage.removeItem(k)); } catch (e) {} }
   };
 
-  // Veli ayarları (PIN'li rapor ekranından değiştirilir). Varsayılan: robot uyarıları açık, kilitler kapalı.
-  const AYAR_VARSAYILAN = { robotUyari: true, sikBekle: false, oyunKilit: false, ogrenKilit: false, hataDur: true, sinavAnlik: true };
+  // Veli ayarları (Veli Paneli'nden değiştirilir; bağlı cihazda buluttan gelir). Varsayılan = Normal mod.
+  // Ayarı hiç yapılmamış ve bağlı olmayan cihaz (öğretmen, arkadaş) her zaman Normal moddadır.
+  const AYAR_VARSAYILAN = { mod: "normal", robotUyari: true, sikBekle: false, oyunKilit: false, ogrenKilit: false, hataDur: true, sinavAnlik: true,
+    kartBekle: false, hedefliTekrar: false, isaretler: [] };
   const ayar = () => ({ ...AYAR_VARSAYILAN, ...(store.get("ela7:ayar", {}) || {}) });
+  // Kullanım modları: kilit ayarlarının hazır birleşimleri (robot uyarıları ve Sınav Provası biçimi moddan bağımsız).
+  const MODLAR = {
+    normal: { ad: "Normal", kisa: "Bugünkü davranış. Kilit yok; yanlıştan sonra açıklama okutulur.",
+      ayar: { sikBekle: false, oyunKilit: false, ogrenKilit: false, hataDur: true, kartBekle: false, hedefliTekrar: false } },
+    destekli: { ad: "Destekli", kisa: "Şıklar soru okunana kadar bekler, Öğren bitmeden Test açılmaz, oyunda hızlı yanlışta 3 sn düşünme molası.",
+      ayar: { sikBekle: true, oyunKilit: true, ogrenKilit: true, hataDur: true, kartBekle: false, hedefliTekrar: false } },
+    odakli: { ad: "Odaklı", kisa: "Destekli + Öğren'de bilgi kartı okunmadan “Sonraki” açılmaz + testte %80 altı kalınca yalnız yanlış yapılan kavramlarla kısa tekrar, sonra yeniden test.",
+      ayar: { sikBekle: true, oyunKilit: true, ogrenKilit: true, hataDur: true, kartBekle: true, hedefliTekrar: true } }
+  };
+  const MOD_SIRA = ["normal", "destekli", "odakli"];
+  const modBul = a => MOD_SIRA.find(m => Object.entries(MODLAR[m].ayar).every(([k, v]) => !!a[k] === v)) || "ozel";
+  const modAdi = m => (MODLAR[m] || {}).ad || "Özel";
+  // Konu "tamamlandı" eşiği: son testte ilk denemede doğru oranı (taramada ilk denemede doğru oranı)
+  const TAMAM_ESIK = .8;
 
   // =================================================================
   // ---------- Robot koç: dersin robotu (Hece, Kuark, Pisi…) kısa uyarı ve yönlendirme baloncukları gösterir ----------
@@ -635,7 +656,7 @@
     if (isinmaVar) store.set(isKey, true);
     const steps = buildSteps(d, isinmaVar);
     let pos = Math.min(store.get(posKey, 0), steps.length - 1);
-    const qstate = {};
+    const qstate = {}, kartGoruldu = new Set();
     let adimT0 = simdi(), hizliGecis = 0;
     // Adımdan çıkarken süreyi kaydet; bilgi kartı okunacak kadar açık kalmadan geçildiyse "hizli-gecis" bayrağı.
     const adimBirak = yeni => {
@@ -714,7 +735,7 @@
           <div class="row"><button class="btn" id="yazCheck">Örnek cevabı göster</button></div>
           <div id="yazOut" hidden></div>${nav("Devam", true)}</div>`;
       } else if (st.t === "bitis") {
-        if (!store.get(key("ogren-bitti:" + S.konu), false)) { store.set(key("ogren-bitti:" + S.konu), true); KAYIT.olay("ogren-bitti", { toplam: steps.length }); KOC.ozet(); }
+        if (!store.get(key("ogren-bitti:" + S.konu), false)) { store.set(key("ogren-bitti:" + S.konu), true); KAYIT.olay("ogren-bitti", { toplam: steps.length }); KOC.ozet(); setTimeout(renderNav, 0); }
         const r = results.all(), vals = d.kavramlar.filter(k => k.soru).map(k => r[k.ad]);
         const c1 = vals.filter(v => v === 1).length, c2 = vals.filter(v => v === 2).length, c0 = vals.filter(v => v === 0).length;
         const msg = c0 === 0 && c2 === 0 ? "Harika bir dikkatle çalıştın!" : c0 === 0 ? "İpuçlarını kullanarak hepsini buldun. Bu, iyi çalışmanın işareti." : "Her yanlış, yeni bir şey öğrenmek demek. Tekrar bölümünde bunlar öne çıkacak.";
@@ -730,6 +751,20 @@
       const prev = $("[data-prev]", stage), next = $("[data-next]", stage);
       if (prev) prev.onclick = () => go(pos - 1);
       if (next) next.onclick = () => go(pos + 1);
+      // Odaklı mod (kartBekle): bilgi kartı ilk kez açıldığında "Sonraki", kart okunacak kadar (4–15 sn) kapalı kalır. Öğren bir kez bittiyse beklemez.
+      if (st.t === "bilgi" && next && ayar().kartBekle && !kartGoruldu.has(pos) && !store.get(key("ogren-bitti:" + S.konu), false) && !document.body.classList.contains("sinif")) {
+        const k = d.kavramlar[st.k], ms = Math.round(Math.min(15000, Math.max(4000, okumaEsik(kelimeSay([k.aciklama, k.ek || "", k.akilda])) * 1000)));
+        next.classList.add("kilitli"); next.setAttribute("aria-disabled", "true");
+        $(".stage-nav", stage).insertAdjacentHTML("beforebegin", `<div class="kb-not" style="--kb-sure:${ms}ms"><span>Kartı dikkatle oku. “Akılda kalsın” kısmını kendine söyle; düğme birazdan açılır.</span><i class="kb-cubuk" aria-hidden="true"></i></div>`);
+        let acik = false;
+        next.onclick = () => {
+          if (acik) return go(pos + 1);
+          KAYIT.olay("kart-bekle", { kavram: k.ad });
+          const n = $(".kb-not", stage); if (n) { n.classList.remove("salla"); void n.offsetWidth; n.classList.add("salla"); }
+        };
+        const p0 = pos;
+        setTimeout(() => { kartGoruldu.add(p0); acik = true; if (next.isConnected) { next.classList.remove("kilitli"); next.removeAttribute("aria-disabled"); const n = $(".kb-not", stage); if (n) n.classList.add("bitti"); } }, ms);
+      }
       if (st.t === "soru") {
         const k = d.kavramlar[st.k];
         qstate[pos] = qstate[pos] || { wrong: [], result: undefined };
@@ -2267,11 +2302,37 @@
       },
       bitis: (st, oz, basla) => {
         const gec = store.get(key("testler:" + S.konu), []); gec.push({ t: gun(), ...oz }); store.set(key("testler:" + S.konu), gec.slice(-20));
+        renderNav();
+        const oran = oz.toplam ? oz.ilk1 / oz.toplam : 0, tamam = oran >= TAMAM_ESIK, gerek = Math.ceil(oz.toplam * TAMAM_ESIK - 1e-9);
+        const tikNot = tamam ? `<div class="tik-not ok"><span class="tik tik-tamam" aria-hidden="true">✓</span><span><b>Konu tamamlandı!</b> Konu listesinde bu konunun yanında artık yeşil tik var.</span></div>`
+          : `<div class="tik-not"><span class="tik tik-ogrendi" aria-hidden="true">✓</span><span>Yeşil tik için ilk denemede en az <b>${gerek} / ${oz.toplam}</b> soruyu bulman gerekiyor; sen <b>${oz.ilk1}</b> buldun. Testi yeniden çözerek yeşil tiki kazanabilirsin.</span></div>`;
+        // Odaklı mod: ilk denemede bulunamayan soruların kavramları (eski konudan gelenler dahil) kısa tekrar olarak gösterilir
+        const zayif = [];
+        st.liste.filter(x => !x.tekrar && st.ilk[x.n] !== 1).forEach(x => {
+          const kv = x.eski ? ((S.cache[x.konu] || {}).kavramlar || []).find(y => y.ad === x.kavramAd) : d.kavramlar.find(y => y.ad === x.q.kavram);
+          if (kv && !zayif.includes(kv)) zayif.push(kv);
+        });
+        if (ayar().hedefliTekrar && !tamam && zayif.length && !document.body.classList.contains("sinif")) {
+          KAYIT.olay("hedefli-tekrar", { kavramlar: zayif.map(k => k.ad), oran: +oran.toFixed(2) });
+          const ms = Math.round(Math.min(25000, zayif.reduce((a, k) => a + Math.max(3000, okumaEsik(kelimeSay([k.aciklama, k.akilda])) * 1000), 0)));
+          root.innerHTML = `<div class="stage"><div class="kicker">Konu testi · Kısa tekrar</div><h3>Önce şu ${zayif.length} kavrama bir daha bakalım</h3>
+            ${robotDer(`İlk denemede ${oz.toplam} sorudan ${oz.ilk1} tanesini buldun. Yanlış yaptığın soruların kavramları aşağıda. Her kartı dikkatle oku, sonra testi yeniden çöz. Bu sefer yeşil tiki kazanabilirsin!`)}
+            ${tikNot}
+            <div class="cards hedefli">${zayif.map(k => `<article class="card">${k.svg}<div><h4 style="color:${esc(k.renk || "inherit")}"${isEn() ? ' lang="en"' : ""}>${adHTML(k)}</h4><p>${rx(k.aciklama)}</p>${formulHTML(k.formul)}<span class="key"><b>Akılda kalsın</b>${rx(k.akilda)}</span></div></article>`).join("")}</div>
+            <div class="kb-not" style="--kb-sure:${ms}ms"><span>Kartları oku; “Testi yeniden çöz” düğmesi birazdan açılır.</span><i class="kb-cubuk" aria-hidden="true"></i></div>
+            <div class="row"><button class="btn primary kilitli" aria-disabled="true" data-yeniden>Testi yeniden çöz</button><button class="btn ghost" data-goto="bak">Konuya Bak'ta incele</button></div></div>`;
+          const yb = $("[data-yeniden]", root); let acik = false;
+          yb.onclick = () => { if (acik) return basla(); const n = $(".kb-not", root); n.classList.remove("salla"); void n.offsetWidth; n.classList.add("salla"); };
+          setTimeout(() => { acik = true; if (yb.isConnected) { yb.classList.remove("kilitli"); yb.removeAttribute("aria-disabled"); const n = $(".kb-not", root); if (n) n.classList.add("bitti"); } }, ms);
+          $("[data-goto]", root).onclick = () => gitSekme("bak");
+          return;
+        }
         const msg = !oz.ilk0 && !oz.ilk2 ? "Hepsini ilk denemede buldun. Çok dikkatli çalıştın!"
           : !oz.ilk0 ? "Hepsini buldun! Bazılarında ipucunu ya da ikinci hakkını iyi kullandın."
           : "Hepsini tamamladın! Yanlış yaptığın sorular tekrar geldiğinde üzerinde çalıştın. Düzeltmek de öğrenmek.";
         root.innerHTML = `<div class="stage"><div class="kicker">Konu testi · Sonuç</div><h3>${oz.toplam} sorunun hepsini tamamladın!</h3>${robotDer(`${msg}`)}
           <div class="done-stats"><div class="stat"><b>${oz.ilk1}</b><span>ilk denemede doğru</span></div><div class="stat"><b>${oz.ilk2}</b><span>ipucuyla / ikinci denemede</span></div><div class="stat"><b>${oz.ilk0}</b><span>tekrar gelince çalıştın</span></div></div>
+          ${tikNot}
           ${gec.length > 1 ? `<p class="ek">İlk çözüşünde ${gec[0].ilk1} / ${gec[0].toplam} soruyu ilk denemede bulmuştun.</p>` : ""}
           <div class="siradaki">${siradakiKonuBtn()}</div>
           <div class="row"><button class="btn ghost" data-goto="tekrar">Tekrar'a dön</button><button class="btn ghost" data-yeniden>Testi yeniden çöz</button></div></div>`;
@@ -2560,12 +2621,12 @@
       if (k.tur === "tarama") {
         const r = g("durak:" + k.id), yarim = !!g("akis:" + k.id);
         const sv = g("sinavlar:" + k.id) || [], sl = sv[sv.length - 1];
-        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "durak", tarama: r ? { tarih: r.t, dogru: r.dogru, toplam: r.toplam, kez: r.kez, sonraki: r.n } : null, yarim, sonIs,
+        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "durak", durum: konuIsaretHesap(g, k) || "baslanmadi", tarama: r ? { tarih: r.t, dogru: r.dogru, toplam: r.toplam, kez: r.kez, sonraki: r.n } : null, yarim, sonIs,
           sinav: sl ? { tarih: sl.t, dogru: sl.dogru, toplam: sl.toplam, kez: sv.length, ilk: { dogru: sv[0].dogru, toplam: sv[0].toplam }, yeniden: sl.yeniden || null, mod: sl.mod || "sonda" } : null });
       } else {
         const tl = g("testler:" + k.id) || [], sn = g("sonuc:" + k.id) || {};
         const zorEv = olaylar.filter(o => o.ders === kod && o.konu === k.id && o.olay === "soru" && o.sonuc === 0 && o.kavram).map(o => o.kavram);
-        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "konu",
+        satir.push({ unite: u.ad, id: k.id, baslik: k.baslik, tur: "konu", durum: konuIsaretHesap(g, k) || "baslanmadi",
           ogren: g("ogren-bitti:" + k.id) ? "bitti" : g("adim:" + k.id) !== null ? `${g("adim:" + k.id) + 1}. adımda` : "başlamadı",
           testIlk: tl[0] ? { tarih: tl[0].t, ilk1: tl[0].ilk1, toplam: tl[0].toplam } : null,
           testSon: tl.length > 1 ? { tarih: tl[tl.length - 1].t, ilk1: tl[tl.length - 1].ilk1, toplam: tl[tl.length - 1].toplam, kez: tl.length } : null,
@@ -2588,11 +2649,18 @@
     }
     const konular = {};
     for (const kod of dersler) { const d = VELI.dersler[kod]; if (d) konular[kod] = { ders: d.ders, konular: konuDurumu(kod, d, hepsi) }; }
-    const veri = { tur: "ela7dersleri-rapor", v: KAYIT_V, olusturma: yerelZaman(simdi()), kaynak: VELI.bulut ? `bulut (öğrenci: ${VELI.bulut.ogr.takmaAd}, bütün bağlı cihazlar)` : location.origin, cihaz: VELI.bulut ? "hepsi" : cihazId,
+    const hd = hepsi.filter(o => dersler.includes(o.ders) || o.olay === "mod"), ay = VELI.ayar(), { isaretler = [], ...ayarlar } = ay;
+    const kullanim = { mod: modBul(ay), modAdi: modAdi(modBul(ay)), ayarlar, tamamEsik: TAMAM_ESIK,
+      modlar: Object.fromEntries(MOD_SIRA.map(m => [m, { ad: MODLAR[m].ad, aciklama: MODLAR[m].kisa, ayar: MODLAR[m].ayar }])),
+      isaretler: [...isaretler].sort((a, b) => a.ts - b.ts).map(i => ({ tarih: i.g, not: i.not, tur: i.tur || "elle" })) };
+    const olcumler = { tanim: OLCUM_TANIM, son14Gun: olcum(hd.filter(o => o.ts >= simdi() - 14 * 864e5)), haftalik: haftalik(hd, 12),
+      isaretKarsilastirma: [...isaretler].sort((a, b) => a.ts - b.ts).map(i => ({ tarih: i.g, not: i.not, ...karsilastir(hd, i.ts) })),
+      seviyeOnerisi: (({ tur, hedef, metin }) => ({ tur, hedef: hedef || null, metin: metin.replace(/<[^>]+>/g, "") }))(seviyeOneri(hd, ay)) };
+    const veri = { tur: "ela7dersleri-analiz", v: KAYIT_V, olusturma: yerelZaman(simdi()), kaynak: VELI.bulut ? `bulut (öğrenci: ${VELI.bulut.ogr.takmaAd}, bütün bağlı cihazlar)` : location.origin, cihaz: VELI.bulut ? "hepsi" : cihazId,
       kapsam: { dersler: dersler.map(k => `${k} (${dersAd(k)})`), donem: gunSay ? `son ${gunSay} gün` : "bütün kayıt" },
-      okuma: "Claude için: önce 'sozluk'u oku. 'konuDurumu' her dersin konu konu durumu (Öğren, test ilk/son çözüş, zorlandığı kavramlar, Ara Durak sonucu), 'oturumlar' her çalışma oturumunun özeti, 'olaylar' ayrıntılı kayıt.",
-      sozluk: KAYIT_SOZLUK, konuDurumu: konular, oturumlar: ozetle(ev), olaylar: ev };
-    indir(`ela7-rapor-${ad}-${tarih}.json`, JSON.stringify(veri, null, 1), "application/json");
+      okuma: "Claude için analiz paketi: önce 'sozluk'u oku. 'kullanim' kullanım modu, mod tanımları ve değişiklik işaretleri (mod değişimleri ve velinin elle koyduğu tarihler). 'olcumler' son 14 gün, haftalık gidiş (son 12 hafta) ve her işaret için önceki/sonraki 14 günün karşılaştırması ('tanim' alanlarda); amaç yapılan değişikliklerin işe yarayıp yaramadığını görmek. 'konuDurumu' her dersin konu konu durumu (durum: tamam = son test ilk denemede ≥ %80, ogrendi, yarim; Öğren; test ilk/son çözüş; zorlandığı kavramlar; tarama ve Sınav Provası). 'oturumlar' oturum özetleri, 'olaylar' seçilen dönemin ayrıntılı kaydı.",
+      sozluk: KAYIT_SOZLUK, kullanim, olcumler, konuDurumu: konular, oturumlar: ozetle(ev), olaylar: ev };
+    indir(`ela7-analiz-${ad}-${tarih}.json`, JSON.stringify(veri, null, 1), "application/json");
   }
 
   // PIN kapısı (bir kez belirlenir; oturum boyunca açık kalır)
@@ -2789,12 +2857,144 @@
     return `<div class="rp-kart rp-neden">${say.map(([a, v]) => `<div class="rp-nd"><span>${esc(a)}</span><i style="width:${v / mx * 100}%"></i><b>${v}</b></div>`).join("")}
       <p class="ek">${n.length} yanlıştan sonra seçti${acele ? ` · <b class="rp-k">${acele} kez açıklamayı okumadan geçmeye çalıştı</b>` : ""}. “Acele ettim” ve “Soruyu yanlış okudum” çoksa sorun bilgi değil dikkat olabilir.</p></div>`;
   };
+  // =================================================================
+  // ---------- Gelişim ölçümleri: değişiklik işaretleri, önce/sonra karşılaştırma, seviye önerisi, özet ----------
+  // İşaretler veli ayarında tutulur (ayar.isaretler: [{g: "YYYY-MM-DD", ts, not, tur?: "mod"}]); mod değişince işaret kendiliğinden eklenir.
+  // Karşılaştırma: işaretten önceki 14 gün ile sonraki 14 gün. Ölçümler olay kaydından hesaplanır (KAYIT_SOZLUK).
+  // =================================================================
+  const yz = (a, b) => b ? Math.round(a / b * 100) : null;
+  const ortY = a => a.length ? Math.round(a.reduce((x, y) => x + y, 0) / a.length * 100) : null;
+  function olcum(ev) {
+    const so = ev.filter(o => o.olay === "soru"), ilk = so.filter(o => !o.tekrar), bil = ev.filter(o => o.olay === "adim" && o.adimTur === "bilgi");
+    const tt = ev.filter(o => o.olay === "test-bitti" && o.tur === "test" && o.toplam), ta = ev.filter(o => o.olay === "test-bitti" && o.tur === "tarama" && o.toplam);
+    const sv = ev.filter(o => o.olay === "sinav-bitti" && o.toplam), nd = ev.filter(o => o.olay === "hata-neden");
+    const ak = Object.values(aktifDagit(ev)).reduce((a, g) => a + Object.values(g).reduce((x, y) => x + y, 0), 0);
+    return { gun: new Set(ev.filter(o => o.ders).map(o => gunKey(o.ts))).size, aktifDk: dk(ak), soru: so.length,
+      ilkDogru: yz(ilk.filter(o => o.sonuc === 1).length, ilk.length),
+      hizli: yz(so.filter(o => (o.bayrak || []).includes("hizli")).length, so.length),
+      kartGecis: yz(bil.filter(o => (o.bayrak || []).includes("hizli-gecis")).length, bil.length),
+      test: ortY(tt.map(o => o.ilk1 / o.toplam)), testSay: tt.length, tarama: ortY(ta.map(o => o.ilk1 / o.toplam)),
+      sinav: ortY(sv.map(o => o.dogru / o.toplam)), sinavSay: sv.length,
+      dikkat: yz(nd.filter(o => o.neden === "acele" || o.neden === "yanlis-okudum").length, nd.length), nedenSay: nd.length,
+      rastgele: ev.filter(o => o.olay === "oyun-rastgele").length, atlama: ev.filter(o => o.olay === "atlama").length };
+  }
+  const OLCUM_TANIM = {
+    gun: "Çalışılan gün sayısı", aktifDk: "Aktif çalışma süresi (dk; 3 dk'dan uzun boşluklar sayılmaz)", soru: "Cevaplanan soru (Öğren, Test, Tarama, Isınma)",
+    ilkDogru: "İlk denemede doğru oranı (%; tekrar gelen sorular hariç)", hizli: "Hızlı cevap oranı (%; ilk dokunuş soru okuma süresinden — kelime/4,5 sn — önce)",
+    kartGecis: "Okunmadan geçilen bilgi kartı oranı (%)", test: "Konu testi ilk deneme ortalaması (%)", testSay: "Biten konu testi", tarama: "Tarama ilk deneme ortalaması (%)",
+    sinav: "Sınav Provası doğru ortalaması (%)", sinavSay: "Biten Sınav Provası", dikkat: "Yanlışlarda 'acele ettim' ya da 'yanlış okudum' seçme oranı (%)",
+    nedenSay: "'Neden yanlış yaptın?' cevabı", rastgele: "Oyunda rastgele dokunuş", atlama: "Öğren bitmeden Test'e geçme" };
+  // [alan, etiket, yön (1: yükselmesi iyi, -1: düşmesi iyi)]
+  const OLCUM_SATIR = [["ilkDogru", "İlk denemede doğru", 1], ["test", "Konu testi ortalaması", 1], ["tarama", "Tarama ortalaması", 1], ["sinav", "Sınav Provası ortalaması", 1],
+    ["hizli", "Hızlı cevap oranı", -1], ["kartGecis", "Okunmadan geçilen kart", -1], ["dikkat", "Yanlışta “acele / yanlış okudum”", -1]];
+  const ADET_SATIR = [["gun", "Çalışılan gün"], ["aktifDk", "Aktif çalışma (dk)"], ["soru", "Cevaplanan soru"], ["testSay", "Biten konu testi"]];
+  const gunTs = g => new Date(g + "T00:00:00").getTime();
+  const karsilastir = (olaylar, ts, gs = 14) => ({ once: olcum(olaylar.filter(o => o.ts >= ts - gs * 864e5 && o.ts < ts)), sonra: olcum(olaylar.filter(o => o.ts >= ts && o.ts < ts + gs * 864e5)) });
+  function haftalik(olaylar, n = 8) {
+    const pzt = ts => { const d = new Date(ts); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return d.getTime(); };
+    const bu = pzt(simdi()), r = [];
+    for (let i = n - 1; i >= 0; i--) { const b = bu - i * 7 * 864e5; r.push({ hafta: gunKey(b), ...olcum(olaylar.filter(o => o.ts >= b && o.ts < b + 7 * 864e5)) }); }
+    return r;
+  }
+  const yuzdeYaz = v => v === null || v === undefined ? "—" : `%${v}`;
+  function karsTabloHTML(k) {
+    const az = k.once.soru < 20 || k.sonra.soru < 20;
+    const fark = (a, b, yon) => { if (a === null || b === null) return `<td>—</td>`; const d = b - a; if (Math.abs(d) < 3) return `<td class="kf-esit">≈</td>`;
+      return `<td class="${d * yon > 0 ? "kf-iyi" : "kf-kotu"}">${d > 0 ? "▲" : "▼"} ${Math.abs(d)} puan</td>`; };
+    return `<div class="rp-tablo-wrap"><table class="rp-tablo rp-kars"><thead><tr><th>Ölçüm</th><th>Önceki 14 gün</th><th>Sonraki 14 gün</th><th>Değişim</th></tr></thead><tbody>
+      ${ADET_SATIR.map(([a, t]) => `<tr><td>${t}</td><td>${k.once[a]}</td><td>${k.sonra[a]}</td><td></td></tr>`).join("")}
+      ${OLCUM_SATIR.map(([a, t, yon]) => `<tr><td>${t}</td><td>${yuzdeYaz(k.once[a])}</td><td>${yuzdeYaz(k.sonra[a])}</td>${fark(k.once[a], k.sonra[a], yon)}</tr>`).join("")}</tbody></table></div>
+      ${az ? `<p class="ek"><b class="rp-k">Az veri:</b> iki dönemden birinde 20'den az soru var; değişimi birkaç gün daha çalıştıktan sonra yorumla.</p>` : ""}
+      <p class="ek">Yeşil ▲/▼ iyiye, kırmızı kötüye gidiş. 3 puandan küçük farklar ≈ gösterilir.</p>`;
+  }
+  // Seviye önerisi: mod değiştiğinden beri (en çok son 14 gün) ölçümlere bakar. Kendiliğinden değiştirmez; veli uygular.
+  function seviyeOneri(olaylar, ay) {
+    const m = modBul(ay), modT = (ay.isaretler || []).filter(x => x.tur === "mod").reduce((a, x) => Math.max(a, x.ts || 0), 0);
+    const bas = Math.max(modT, simdi() - 14 * 864e5), o = olcum(olaylar.filter(x => x.ts >= bas)), gunMod = modT ? Math.floor((simdi() - modT) / 864e5) : 99;
+    const donem = modT && modT > simdi() - 14 * 864e5 ? `${modAdi(m)} moda geçtiğinden beri (${gunMod} gün)` : "son 14 günde";
+    if (o.soru < 30) return { tur: "bekle", metin: `Öneri için biraz daha veri gerekiyor: ${donem} ${o.soru} soru cevaplandı (en az 30).`, o };
+    const i = MOD_SIRA.indexOf(m), neden = [];
+    if ((o.hizli ?? 0) > 25) neden.push(`hızlı cevap oranı yüksek (${yuzdeYaz(o.hizli)})`);
+    if (o.test !== null && o.test < 70) neden.push(`konu testi ortalaması düşük (${yuzdeYaz(o.test)})`);
+    if ((o.kartGecis ?? 0) > 30) neden.push(`bilgi kartlarının çoğu okunmadan geçiliyor (${yuzdeYaz(o.kartGecis)})`);
+    const iyi = (o.hizli ?? 100) < 10 && (o.test ?? 0) >= 85 && (o.kartGecis ?? 100) < 15;
+    if (neden.length && i >= 0 && i < MOD_SIRA.length - 1) return { tur: "yukari", hedef: MOD_SIRA[i + 1], metin: `${donem}: ${neden.join(", ")}. <b>${modAdi(MOD_SIRA[i + 1])}</b> moda geçmeyi düşünebilirsin.`, o };
+    if (neden.length && i === MOD_SIRA.length - 1) return { tur: "devam", metin: `${donem}: ${neden.join(", ")}. En kapsamlı moddasın; analiz paketini Claude'a vererek birlikte değerlendirebilirsiniz.`, o };
+    if (iyi && i > 0 && gunMod >= 14) return { tur: "asagi", hedef: MOD_SIRA[i - 1], metin: `${donem}: hızlı cevap az (${yuzdeYaz(o.hizli)}), test ortalaması yüksek (${yuzdeYaz(o.test)}). <b>${modAdi(MOD_SIRA[i - 1])}</b> moda inmeyi deneyebilirsin; geri dönmek tek dokunuş.`, o };
+    if (iyi && i > 0) return { tur: "devam", metin: `${donem}: sonuçlar iyi. Kalıcı olduğundan emin olmak için bu modda en az 14 gün kalmak iyi olur (şu an ${gunMod} gün).`, o };
+    return { tur: "devam", metin: `${donem}: belirgin bir sorun görünmüyor; ${m === "ozel" ? "özel ayarlarla" : modAdi(m) + " modda"} devam.`, o };
+  }
+  // Mod değiştir: kilit ayarlarını uygula, mod değiştiyse tarihli işaret ekle
+  const modAyar = (a, m) => { const once = modBul(a), y = { ...a, ...MODLAR[m].ayar, mod: m };
+    if (once !== m) y.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Mod: ${modAdi(once)} → ${modAdi(m)}`, tur: "mod" }];
+    return y; };
+  const ayarDegis = (a, k, v) => { const once = modBul(a), y = { ...a, [k]: v }, son = modBul(y); y.mod = son;
+    if (once !== son) y.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Mod: ${modAdi(once)} → ${modAdi(son)}`, tur: "mod" }];
+    return y; };
+  // Konu tamamlanma sayıları (ders başına)
+  const tamamlanma = (kodlar, olaylar) => Object.fromEntries(kodlar.filter(k => VELI.dersler[k]).map(kod => {
+    const ks = konuDurumu(kod, VELI.dersler[kod], olaylar), konu = ks.filter(x => x.tur === "konu"), say = d_ => konu.filter(x => x.durum === d_).length;
+    return [kod, { ders: dersAd(kod), toplam: konu.length, tamam: say("tamam"), ogrendi: say("ogrendi"), yarim: say("yarim"), baslanmadi: say("baslanmadi"),
+      konular: ks.map(x => ({ id: x.id, baslik: x.baslik, tur: x.tur, durum: x.durum })) }];
+  }));
+  // Yazdırılabilir özet (doktor, öğretmen ya da kendi takibin için tek sayfa)
+  function ozetYazdir(olaylar, kodlar) {
+    const ay = VELI.ayar(), m = modBul(ay), is = [...(ay.isaretler || [])].sort((a, b) => a.ts - b.ts), son14 = olcum(olaylar.filter(o => o.ts >= simdi() - 14 * 864e5));
+    const hf = haftalik(olaylar, 8), tm = tamamlanma(kodlar, olaylar), nd = olaylar.filter(o => o.olay === "hata-neden" && o.ts >= simdi() - 30 * 864e5);
+    const ad = VELI.bulut ? VELI.bulut.ogr.takmaAd : "Bu cihaz";
+    const tab = (bas, satirlar) => `<table><thead><tr>${bas.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${satirlar.map(r => `<tr>${r.map(x => `<td>${x}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+    const kars = i => { const k = karsilastir(olaylar, i.ts); return tab(["Ölçüm", "Önceki 14 gün", "Sonraki 14 gün"],
+      [...ADET_SATIR.map(([a, t]) => [t, k.once[a], k.sonra[a]]), ...OLCUM_SATIR.map(([a, t]) => [t, yuzdeYaz(k.once[a]), yuzdeYaz(k.sonra[a])])]); };
+    const html = `<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>Çalışma özeti · ${esc(ad)} · ${gun()}</title>
+      <style>body{font:13px/1.45 system-ui,sans-serif;color:#1b2340;margin:24px;max-width:820px}h1{font-size:20px;margin:0 0 4px}h2{font-size:15px;margin:22px 0 6px;border-bottom:2px solid #1b2340;padding-bottom:3px}
+      table{border-collapse:collapse;width:100%;margin:4px 0}th,td{border:1px solid #c9cfdc;padding:4px 7px;text-align:left}th{background:#eef1f7}.k{color:#5c677d;font-size:11.5px}
+      button{font:inherit;padding:6px 14px;margin:8px 0}@media print{button{display:none}body{margin:0}}</style></head><body>
+      <button onclick="print()">Yazdır / PDF olarak kaydet</button>
+      <h1>Ela'nın Ders Defteri — çalışma özeti</h1><p class="k">${esc(ad)} · ${tarihYaz(gun())} ${new Date().getFullYear()} · Kullanım modu: <b>${esc(modAdi(m))}</b> · Kaynak: ${VELI.bulut ? "bulut (bütün bağlı cihazlar)" : "bu cihaz"}</p>
+      <h2>Son 14 gün</h2>${tab(["Ölçüm", "Değer"], [...ADET_SATIR.map(([a, t]) => [t, son14[a]]), ...OLCUM_SATIR.map(([a, t]) => [t, yuzdeYaz(son14[a])])])}
+      <h2>Haftalık gidiş (son 8 hafta)</h2>${tab(["Hafta (Pzt)", "Gün", "Aktif dk", "Soru", "İlk denemede doğru", "Hızlı cevap", "Okunmadan geçilen kart", "Test ort."],
+        hf.map(h => [tarihYaz(h.hafta), h.gun, h.aktifDk, h.soru, yuzdeYaz(h.ilkDogru), yuzdeYaz(h.hizli), yuzdeYaz(h.kartGecis), yuzdeYaz(h.test)]))}
+      ${is.length ? `<h2>Değişiklik işaretleri</h2>${is.map(i => `<p><b>${tarihYaz(i.g)} ${String(i.g).slice(0, 4)}</b> — ${esc(i.not)}</p>${kars(i)}`).join("")}` : ""}
+      <h2>Yanlışların nedeni (son 30 gün, Ela'nın kendi seçimi)</h2>${nd.length ? tab(["Neden", "Sayı"], HATA_NEDEN.map(([k, a]) => [a, nd.filter(o => o.neden === k).length])) : "<p>Kayıt yok.</p>"}
+      <h2>Konu durumu</h2>${tab(["Ders", "Tamamlandı (test ≥ %80)", "Öğren bitti", "Yarım", "Başlanmadı", "Hazır konu"], Object.values(tm).filter(x => x.toplam).map(x => [esc(x.ders), x.tamam, x.ogrendi, x.yarim, x.baslanmadi, x.toplam]))}
+      <p class="k">Ölçümler uygulamanın kendi kayıtlarından hesaplanır. Hızlı cevap: ilk dokunuşun soruyu okuma süresinden (kelime sayısı / 4,5 sn) önce olması. Okunmadan geçilen kart: Öğren'deki bilgi kartından okuma süresi dolmadan çıkılması. Bunlar dikkat davranışının göstergesidir, tanı aracı değildir.</p>
+      </body></html>`;
+    const w = window.open("", "_blank");
+    if (!w) return alert("Yeni pencere açılamadı. Tarayıcının açılır pencere engelini bu site için kaldırıp yeniden dene.");
+    w.document.open(); w.document.write(html); w.document.close();
+  }
+  // Veli Paneli bölümü: kullanım modu, seviye önerisi, değişiklik işaretleri ve önce/sonra karşılaştırması
+  function gelisimHTML(olaylar, ay, kilit) {
+    const m = modBul(ay), on = seviyeOneri(olaylar, ay), is = [...(ay.isaretler || [])].sort((a, b) => b.ts - a.ts);
+    const secK = is.length ? (VELI.karsSec && is.find(x => String(x.ts) === VELI.karsSec)) || is[0] : null;
+    return `<section><div class="sec-title"><h3>Kullanım modu</h3><span>${VELI.bulut ? `${esc(VELI.bulut.ogr.takmaAd)} · bağlı bütün cihazlar` : "Bu cihaz"} · bağlı olmayan cihazlar (öğretmen, arkadaş) hep Normal</span></div>
+      ${kilit ? `<p class="ek">Bu cihaz bağlı: mod veli hesabından gelir. Değiştirmek için veli girişi yap.</p>` : ""}
+      <div class="mod-kartlar">${MOD_SIRA.map(k => `<button class="mod-kart" data-mod="${k}" aria-pressed="${m === k}" ${kilit ? "disabled" : ""}><b>${MODLAR[k].ad}${m === k ? " ✓" : ""}</b><span>${MODLAR[k].kisa}</span></button>`).join("")}</div>
+      ${m === "ozel" ? `<p class="ek">Şu an <b>Özel</b> ayarlar kullanılıyor (aşağıdaki Ayarlar bölümünde tek tek değiştirildi). Bir moda dokununca o modun ayarları uygulanır.</p>` : ""}
+      <div class="oneri oneri-${on.tur}"><b>Seviye önerisi:</b> ${on.metin}${on.hedef && !kilit ? ` <button class="btn" data-mod="${on.hedef}">${modAdi(on.hedef)} moda geç</button>` : ""}</div></section>
+      <section><div class="sec-title"><h3>Değişiklik işaretleri</h3><span>Önce/sonra karşılaştırması için tarih işaretle</span></div>
+      <div class="rp-kart">${is.length ? `<ul class="isaret-liste">${is.map(i => `<li><b>${tarihYaz(i.g)}</b> <span>${esc(i.not)}</span>${kilit ? "" : `<button class="btn ghost" data-is-sil="${i.ts}" aria-label="İşareti sil">×</button>`}</li>`).join("")}</ul>` : `<p class="ek">Henüz işaret yok. Mod değişince işaret kendiliğinden eklenir. Okulda, evde ya da tedavide bir değişiklik olduğunda da buraya tarih koyabilirsin.</p>`}
+        ${kilit ? "" : `<div class="row isaret-ekle"><input type="date" id="isG" value="${gun()}" max="${gun()}" aria-label="Tarih"><input type="text" id="isNot" maxlength="80" placeholder="Ne değişti? (kısa not)" aria-label="Not"><button class="btn" id="isEkle">İşaret ekle</button></div>`}
+        ${secK ? `<h4 class="rp-unite">Karşılaştırma ${is.length > 1 ? `<select id="karsSec" aria-label="İşaret seç">${is.map(i => `<option value="${i.ts}" ${i === secK ? "selected" : ""}>${tarihYaz(i.g)} · ${esc(kisa(i.not, 40))}</option>`).join("")}</select>` : `· ${tarihYaz(secK.g)} · ${esc(secK.not)}`}</h4>${karsTabloHTML(karsilastir(olaylar, secK.ts))}` : ""}
+        <div class="row"><button class="btn" id="ozetYaz">Yazdırılabilir özet</button></div></div></section>`;
+  }
+  function gelisimBagla(p, olaylar, kodlar, yenile) {
+    const yaz = async a => { await VELI.ayarYaz(a); yenile(); };
+    $$("[data-mod]", p).forEach(b => b.onclick = () => { if (b.disabled) return; const m = b.dataset.mod; if (modBul(VELI.ayar()) === m) return; yaz(modAyar(VELI.ayar(), m)); });
+    $$("[data-is-sil]", p).forEach(b => b.onclick = () => { if (!confirm("Bu işaret silinsin mi?")) return; const a = { ...VELI.ayar() }; a.isaretler = (a.isaretler || []).filter(x => String(x.ts) !== b.dataset.isSil); yaz(a); });
+    const ek = $("#isEkle", p); if (ek) ek.onclick = () => { const g = $("#isG", p).value || gun(), not = $("#isNot", p).value.trim(); if (!not) { $("#isNot", p).focus(); return; }
+      const a = { ...VELI.ayar() }, ts = g === gun() ? simdi() : gunTs(g); a.isaretler = [...(a.isaretler || []), { g, ts, not }]; VELI.karsSec = String(ts); yaz(a); };
+    const ks = $("#karsSec", p); if (ks) ks.onchange = () => { VELI.karsSec = ks.value; yenile(); };
+    $("#ozetYaz", p).onclick = () => ozetYazdir(olaylar, kodlar);
+  }
+
   function veliGenel(p, olaylar, kodlar) {
     const s7 = olaylar.filter(o => o.ts >= simdi() - 7 * 864e5), dag = aktifDagit(olaylar), ay = VELI.ayar(), vb = VELI.bulut, bagli = BULUT.bilgi();
     const ayarKilit = !vb && bagli;   // bağlı cihazda ayarlar veli hesabından gelir
     const gunler = new Map(); ozetle(s7).forEach(z => { const g = gunKey(z.bas); const x = gunler.get(g) || { ts: z.bas, soru: 0, ilkSoru: 0, ilk1: 0, hizli: 0, rastgele: 0, hizliGecis: 0, atlama: 0, dersler: new Set() }; ["soru", "ilkSoru", "ilk1", "hizli", "rastgele", "hizliGecis", "atlama"].forEach(f => x[f] += z[f]); Object.keys(z.dersler).forEach(d_ => x.dersler.add(dersAd(d_))); gunler.set(g, x); });
     const bay = (n, t) => n ? `<span class="rp-bay" title="${esc(t)}">${n}</span>` : `<span class="rp-sifir">0</span>`;
     p.innerHTML = `<section><div class="sec-title"><h3>Son 7 gün</h3><span>Bütün dersler</span></div>${ozetKutular(s7)}</section>
+      ${gelisimHTML(olaylar, ay, ayarKilit)}
       <section><div class="sec-title"><h3>Günlük çalışma</h3><span>Son 14 gün</span></div><div class="rp-kart">${grafikHTML(dag, 14, kodlar)}</div></section>
       ${gunler.size ? `<section><div class="sec-title"><h3>Günler</h3><span>Son 7 gün</span></div><div class="rp-tablo-wrap"><table class="rp-tablo"><thead><tr><th>Gün</th><th>Aktif</th><th>Dersler</th><th>Soru</th><th>İlk denemede</th><th>Hızlı cevap</th><th>Rastgele dokunuş</th><th>Hızlı kart geçişi</th><th>Öğren'i atladı</th></tr></thead><tbody>
         ${[...gunler.entries()].sort((a, b) => b[1].ts - a[1].ts).map(([g, x]) => `<tr><td>${gunAdi(x.ts)}</td><td>${dk(Object.values(dag[g] || {}).reduce((a, b) => a + b, 0))} dk</td><td>${[...x.dersler].map(esc).join(", ")}</td><td>${x.soru}</td><td>${yuzde2(x.ilk1, x.ilkSoru)}</td><td>${bay(x.hizli, "Okuma süresinden kısa cevap")}</td><td>${bay(x.rastgele, "Oyunda art arda hızlı yanlış")}</td><td>${bay(x.hizliGecis, "Öğren kartını okumadan geçti")}</td><td>${bay(x.atlama, "Öğren bitmeden Test")}</td></tr>`).join("")}
@@ -2802,15 +3002,18 @@
       <section><div class="sec-title"><h3>Oturumlar</h3><span>Son 7 gün · ayrıntı için dokun</span></div>${oturumListesi(s7, true)}</section>
       <section><div class="sec-title"><h3>Yanlış yapılan sorular</h3><span>Son 7 gün · testte iki yanlıştan sonra ya da Sınav Provası'nda</span></div>${zorSorular(s7)}</section>
       <section><div class="sec-title"><h3>Yanlışların nedeni</h3><span>Son 30 gün · Ela'nın kendi seçimi</span></div>${nedenHTML(olaylar.filter(o => o.ts >= simdi() - 30 * 864e5))}</section>
-      <section><div class="sec-title"><h3>Rapor indir</h3><span>Claude'a vermek ya da Excel'de açmak için</span></div>
+      <section><div class="sec-title"><h3>Analiz paketi ve rapor</h3><span>Claude'a vermek ya da Excel'de açmak için</span></div>
+        <p class="ek">“Analiz paketi” dosyasını Claude'a ver: konu durumu, kullanım modu, değişiklik işaretleri, haftalık ölçümler, önce/sonra karşılaştırmaları ve ayrıntılı oturum kaydı içinde. Ara ara (ör. iki haftada bir) vermen yeterli.</p>
         <div class="rp-indir"><div class="rp-secim">${kodlar.map(k => `<label><input type="checkbox" data-rd="${k}" checked> ${esc(dersAd(k))}</label>`).join("")}</div>
         <div class="row"><select id="rpDonem"><option value="7">Son 7 gün</option><option value="30" selected>Son 30 gün</option><option value="90">Son 90 gün</option><option value="0">Bütün kayıt</option></select>
-        <button class="btn primary" id="rpJson">Rapor (JSON, Claude için)</button><button class="btn" id="rpCsv">Kayıtlar (CSV, Excel)</button></div><p class="ek" id="rpMsg"></p></div></section>
+        <button class="btn primary" id="rpJson">Analiz paketi (JSON, Claude için)</button><button class="btn" id="rpCsv">Kayıtlar (CSV, Excel)</button></div><p class="ek" id="rpMsg"></p></div></section>
       <section><div class="sec-title"><h3>Ayarlar</h3><span>${vb ? `${esc(vb.ogr.takmaAd)} · bağlı bütün cihazlar` : "Bu cihaz için"}</span></div>${ayarKilit ? `<p class="ek">Bu cihaz bağlı: ayarlar veli hesabından gelir. Değiştirmek için veli girişi yap.</p>` : vb ? `<p class="ek">Değişiklik, Ela'nın cihazında bir sonraki açılışta (ya da en geç birkaç dakika içinde) geçerli olur.</p>` : ""}<div class="rp-ayar">
         ${[["robotUyari", "Robot uyarıları ve yönlendirmeleri", "Hız uyarısı, “Dur, düşün”, Öğren'i atlama yönlendirmesi, “Nasıl buldun?”, oturum başı planı ve özet."],
            ["sikBekle", "Şıklar biraz beklesin", "Seçmeli sorularda şıklar, soru okunacak kadar (en çok 5 sn) sonra açılır."],
            ["oyunKilit", "Oyunda düşünme molası", "Art arda hızlı yanlış dokunuşta oyun 3 saniye durur."],
            ["ogrenKilit", "Öğren bitmeden Test kilitli", "Test sekmesi, Öğren'in son adımına gelinince açılır."],
+           ["kartBekle", "Bilgi kartı okunmadan geçilmesin", "Öğren'de her bilgi kartı ilk açıldığında “Sonraki” düğmesi kart okunacak kadar (4–15 sn) kapalı kalır. Öğren bir kez bittiyse beklemez."],
+           ["hedefliTekrar", "Testten sonra hedefli kısa tekrar", "Konu testinde ilk denemede %80'in altında kalınca yalnız yanlış yapılan kavramların kartları gösterilir; okuduktan sonra testi yeniden çözer."],
            ["hataDur", "Yanlıştan sonra açıklamayı okut", "Cevabı gösterilen yanlışta (Test, Tarama, Sınav Provası) ilerleme düğmesi açıklamanın uzunluğuna göre 5–12 sn kapalı kalır; Ela “Neden yanlış yaptın?” sorusunu cevaplayınca geçer."],
            ["sinavAnlik", "Sınav Provası'nda cevabı hemen göster", "Açıksa her sorudan sonra doğru mu yanlış mı ve açıklaması görünür. Kapalıysa okuldaki gibi sonuçlar sınavın sonunda; yanlışlar sonuç sayfasında tek tek incelenir. Yeni başlayan provada geçerli olur."]].map(([k, a, t]) => `<label class="rp-sw"><input type="checkbox" data-ayar="${k}" ${ay[k] ? "checked" : ""} ${ayarKilit ? "disabled" : ""}><span><b>${a}</b><small>${t}</small></span></label>`).join("")}
       </div></section>
@@ -2826,7 +3029,9 @@
     const secili = () => $$("[data-rd]", p).filter(x => x.checked).map(x => x.dataset.rd);
     const indirBtn = bicim => () => { const d = secili(); if (!d.length) return $("#rpMsg").textContent = "En az bir ders seç."; $("#rpMsg").textContent = ""; raporIndir(d, +$("#rpDonem").value, bicim); };
     $("#rpJson").onclick = indirBtn("json"); $("#rpCsv").onclick = indirBtn("csv");
-    $$("[data-ayar]", p).forEach(x => x.onchange = () => { const a = { ...VELI.ayar() }; a[x.dataset.ayar] = x.checked; VELI.ayarYaz(a); });
+    $$("[data-ayar]", p).forEach(x => x.onchange = async () => { await VELI.ayarYaz(ayarDegis(VELI.ayar(), x.dataset.ayar, x.checked)); veliGenel(p, olaylar, kodlar); });
+    if (!ayarKilit) gelisimBagla(p, olaylar, kodlar, () => veliGenel(p, olaylar, kodlar));
+    else $("#ozetYaz", p).onclick = () => ozetYazdir(olaylar, kodlar);
     if (vb) {
       const msg = t => $("#vbMsg").textContent = t, c = $("#content");
       if ($("#vbBagla")) $("#vbBagla").onclick = async () => { msg("Bağlanıyor ve eşitleniyor… (bu cihazdaki eski kayıtlar da gönderiliyor)"); try { const k = await vb.m.kodUret(vb.ogr.id); await BULUT.bagla(k); msg("Bağlandı."); setTimeout(() => veliBulut(c, vb.m), 700); } catch (e) { msg(hataYaz(e)); } };
@@ -2845,25 +3050,25 @@
     const d = VELI.dersler[kod], ev = olaylar.filter(o => o.ders === kod), s7 = ev.filter(o => o.ts >= simdi() - 7 * 864e5), s30 = ev.filter(o => o.ts >= simdi() - 30 * 864e5);
     const ks = konuDurumu(kod, d, olaylar), tarihK = s => s ? tarihYaz(s) : "—";
     const uniteler = [...new Set(ks.map(x => x.unite))];
-    const tamam = ks.filter(x => x.tur === "konu" && x.ogren === "bitti" && x.testIlk).length, toplamK = ks.filter(x => x.tur === "konu").length;
+    const tamam = ks.filter(x => x.tur === "konu" && x.durum === "tamam").length, toplamK = ks.filter(x => x.tur === "konu").length;
     const satir = x => x.tur === "durak"
-      ? `<tr class="rp-durak"><td>🚩 ${esc(x.baslik)}</td><td colspan="2">${x.tarama ? `Son tarama ${tarihK(x.tarama.tarih)}: <b>${x.tarama.dogru}/${x.tarama.toplam}</b> ilk denemede${x.tarama.kez > 1 ? ` · ${x.tarama.kez}. kez` : ""}` : x.yarim ? "Yarım kaldı" : "Henüz yapılmadı"}</td>
+      ? `<tr class="rp-durak"><td>🚩 ${esc(x.baslik)} ${isaretHTML(x.durum)}</td><td colspan="2">${x.tarama ? `Son tarama ${tarihK(x.tarama.tarih)}: <b>${x.tarama.dogru}/${x.tarama.toplam}</b> ilk denemede${x.tarama.kez > 1 ? ` · ${x.tarama.kez}. kez` : ""}` : x.yarim ? "Yarım kaldı" : "Henüz yapılmadı"}</td>
         <td>${x.tarama ? `Sonraki tekrar: ${x.tarama.sonraki <= gun() ? `<b class="rp-k">şimdi</b>` : tarihK(x.tarama.sonraki)}` : ""}${x.sinav ? `<br>Sınav provası: <b>${x.sinav.dogru}/${x.sinav.toplam}</b>${x.sinav.yeniden ? ` → yanlışlarını yeniden çözünce <b>${x.sinav.yeniden.dogru}/${x.sinav.yeniden.toplam}</b>` : ""} <small>${tarihK(x.sinav.tarih)}${x.sinav.kez > 1 ? ` · ${x.sinav.kez}. prova (ilk: ${x.sinav.ilk.dogru}/${x.sinav.ilk.toplam})` : ""}</small>` : ""}</td><td>${x.sonIs ? gunAdi(x.sonIs) : "—"}</td></tr>`
-      : `<tr><td>${esc(x.baslik)}</td><td>${x.ogren === "bitti" ? `<span class="rp-ok">✓ bitti</span>` : esc(x.ogren)}</td>
+      : `<tr><td>${esc(x.baslik)} ${isaretHTML(x.durum)}</td><td>${x.ogren === "bitti" ? `<span class="rp-ok">✓ bitti</span>` : esc(x.ogren)}</td>
         <td>${x.testIlk ? `<b>${x.testIlk.ilk1}/${x.testIlk.toplam}</b> <small>${tarihK(x.testIlk.tarih)}</small>${x.testSon ? ` → <b>${x.testSon.ilk1}/${x.testSon.toplam}</b> <small>${x.testSon.kez}. kez</small>` : ""}` : x.testYarim ? "yarım" : "—"}</td>
         <td>${x.zorlandigi.length ? x.zorlandigi.map(z => `<span class="rp-etiket">${esc(z)}</span>`).join(" ") : "—"}</td><td>${x.sonIs ? gunAdi(x.sonIs) : "—"}</td></tr>`;
     const at = kod === "tr1" || d.atolye ? VELI.oku(`ela7:${kod}:atolye`) : null;
     p.innerHTML = `<section><div class="sec-title"><h3>${esc(dersAd(kod))} · son 7 gün</h3></div>${ozetKutular(s7)}</section>
-      <section><div class="sec-title"><h3>Konular</h3><span>${tamam} / ${toplamK} konuda Öğren ve Test yapıldı</span></div>
+      <section><div class="sec-title"><h3>Konular</h3><span>${tamam} / ${toplamK} konu tamamlandı (son test ilk denemede %80 ve üstü)</span></div>
         <div class="rp-ilerleme" aria-hidden="true"><i style="width:${toplamK ? tamam / toplamK * 100 : 0}%;background:${dersRenk(kod)}"></i></div>
         ${uniteler.map(u => `<h4 class="rp-unite">${esc(u)}</h4><div class="rp-tablo-wrap"><table class="rp-tablo rp-konu"><thead><tr><th>Konu</th><th>Öğren</th><th>Test: ilk çözüş → son</th><th>Zorlandığı kavramlar</th><th>Son çalışma</th></tr></thead><tbody>${ks.filter(x => x.unite === u).map(satir).join("")}</tbody></table></div>`).join("") || `<div class="notice">Hazır konu yok.</div>`}
-        <p class="ek">Test sonuçları "ilk denemede doğru / soru sayısı". Zorlandığı kavramlar: Öğren sorularında ilk denemede bulamadığı ve testlerde cevabı gösterilen kavramlar.</p></section>
+        <p class="ek">İşaretler: <span class="tik tik-tamam">✓</span> tamamlandı (son test ilk denemede %80+), <span class="tik tik-ogrendi">✓</span> Öğren bitti, <span class="tik tik-yarim"></span> yarım. Test sonuçları "ilk denemede doğru / soru sayısı". Zorlandığı kavramlar: Öğren sorularında ilk denemede bulamadığı ve testlerde cevabı gösterilen kavramlar.</p></section>
       ${at ? `<section><div class="sec-title"><h3>Okuma Atölyesi</h3></div><div class="rp-kutular">${Object.entries(at.sev || {}).map(([n, s]) => kutucuk(`S${n}`, `${(s.turlar || []).length} tur${s.gecti ? " · geçti ✓" : ""}${(s.turlar || []).length ? ` · son: ${s.turlar[s.turlar.length - 1].d}/${s.turlar[s.turlar.length - 1].n}` : ""}`)).join("") || `<p class="ek">Henüz tur yok.</p>`}</div></section>` : ""}
       <section><div class="sec-title"><h3>Yanlış yapılan sorular</h3><span>Son 30 gün</span></div>${zorSorular(s30)}</section>
       <section><div class="sec-title"><h3>Yanlışların nedeni</h3><span>Son 30 gün · Ela'nın kendi seçimi</span></div>${nedenHTML(s30)}</section>
       <section><div class="sec-title"><h3>Oturumlar</h3><span>Son 7 gün · bu ders</span></div>${oturumListesi(s7, false)}</section>
       <section><div class="sec-title"><h3>Bu dersin raporu</h3></div><div class="row"><select id="rpDonem"><option value="7">Son 7 gün</option><option value="30" selected>Son 30 gün</option><option value="90">Son 90 gün</option><option value="0">Bütün kayıt</option></select>
-        <button class="btn primary" id="rpJson">Rapor (JSON, Claude için)</button><button class="btn" id="rpCsv">Kayıtlar (CSV, Excel)</button></div></section>`;
+        <button class="btn primary" id="rpJson">Analiz paketi (JSON, Claude için)</button><button class="btn" id="rpCsv">Kayıtlar (CSV, Excel)</button></div></section>`;
     $("#rpJson").onclick = () => raporIndir([kod], +$("#rpDonem").value, "json");
     $("#rpCsv").onclick = () => raporIndir([kod], +$("#rpDonem").value, "csv");
   }
@@ -2883,17 +3088,36 @@
   const siradakiKonuBtn = () => { const n = sonrakiKonu(); return n ? `<button class="btn primary" data-sonraki-konu="${esc(n.id)}">Sıradaki: ${esc(n.baslik)} →</button>` : `<span class="ek">Bu dersin hazır konularının sonuna geldin!</span>`; };
   const siradakiKonuBagla = root => $$("[data-sonraki-konu]", root).forEach(b => b.onclick = () => { S.donus = null; openKonu(b.dataset.sonrakiKonu, true); });
 
+  // ---------- Tamamlanma işareti ----------
+  // g(son ek) → kayıt değeri. Konu: "tamam" (son test ilk denemede ≥ %80), "ogrendi" (Öğren bitti ya da test yapıldı ama eşik altı),
+  // "yarim" (Öğren'e başlandı). Ünite Sonu Taraması / Ara Durak: son tarama ≥ %80 → "tamam", altı → "ogrendi", yarım → "yarim".
+  // Kayıtlar cihazda tutulur; bağlı cihazda buluttan gelir (bütün bağlı cihazlarda aynı), bağlı olmayan cihazda yalnız o cihazınki.
+  function konuIsaretHesap(g, k) {
+    if (isDurak(k)) {
+      const r = g("durak:" + k.id); if (r && r.toplam) return r.dogru / r.toplam >= TAMAM_ESIK ? "tamam" : "ogrendi";
+      return g("akis:" + k.id) ? "yarim" : "";
+    }
+    const tl = g("testler:" + k.id) || [], son = tl[tl.length - 1];
+    if (son && son.toplam && son.ilk1 / son.toplam >= TAMAM_ESIK) return "tamam";
+    if (son || g("ogren-bitti:" + k.id)) return "ogrendi";
+    return g("adim:" + k.id) !== null && g("adim:" + k.id) !== undefined ? "yarim" : "";
+  }
+  const ISARET_AD = { tamam: "Tamamlandı: son testte %80 ve üstü", ogrendi: "Öğren bitti; yeşil tik için testte %80 gerekli", yarim: "Öğren'e başlandı, yarım" };
+  const isaretHTML = s => ISARET_AD[s] ? `<span class="tik tik-${s}" title="${esc(ISARET_AD[s])}" aria-label="${esc(ISARET_AD[s])}">${s === "yarim" ? "" : "✓"}</span>` : "";
+  const konuIsaret = k => k.hazir ? konuIsaretHesap(s => store.get(key(s), null), k) : "";
+
   // ---------- Kompakt şerit ----------
   // Sayfa en üstteyken konu listesi tam açık. Konu başlığı ve sekmeler ekrandan çıkınca üstte ince bir şerit belirir:
   // "☰ Konular" (dokununca liste şeridin altında açılır) · konu adı · sekmeler. Fareyle üstüne gelince açılmaz (bilerek).
   function navHTML(ui) {
     const u = S.ders.uniteler[ui]; let no = 0;
     return {
-      units: S.ders.uniteler.map((x, i) => `<button class="unit-btn" data-u="${i}" aria-pressed="${i === ui}">${esc(x.ad)}</button>`).join(""),
+      units: S.ders.uniteler.map((x, i) => { const hz = x.konular.filter(k => k.hazir && !isDurak(k)), tm = hz.filter(k => konuIsaret(k) === "tamam").length;
+        return `<button class="unit-btn" data-u="${i}" aria-pressed="${i === ui}">${esc(x.ad)}${hz.length ? ` <span class="u-say${tm === hz.length ? " hepsi" : ""}" title="${tm} / ${hz.length} konu tamamlandı">${tm}/${hz.length}</span>` : ""}</button>`; }).join(""),
       topics: u.konular.length ? u.konular.map(k => { const dk = isDurak(k); if (!dk) no++;
         const ek = !k.hazir ? '<span class="soon">yakında</span>' : dk && durakKayit.zaman(k.id) ? '<span class="due">tekrar zamanı</span>' : "";
         return `<button class="topic${dk ? " durak" : ""}" data-id="${esc(k.id)}" ${k.hazir ? "" : "disabled"} aria-current="${S.konu === k.id}">
-        <span class="num">${dk ? ICON.durak : no}</span><span>${esc(k.baslik)}</span>${ek}</button>`; }).join("")
+        <span class="num">${dk ? ICON.durak : no}</span><span>${esc(k.baslik)}</span>${ek}${isaretHTML(konuIsaret(k))}</button>`; }).join("")
         : `<div class="empty-unit">Bu ünitenin konuları sırası gelince eklenecek.</div>`
     };
   }
