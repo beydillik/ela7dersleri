@@ -181,7 +181,9 @@
       mod: "Sınav Provası biçimi: anlik (her soruda sonuç hemen) ya da sonda (sonuçlar sınav sonunda)", yeniden: "true: Sınav Provası'ndan sonra yanlışları yeniden çözerken verilen cevap",
       hazir: "hata-acele olayında: okuma beklemesi bitmişti, yalnızca neden seçilmemişti",
       kullanimModu: "mod olayında: yeni kullanım modu (normal, destekli, odakli, ozel); once: önceki mod", kavramlar: "hedefli-tekrar olayında: tekrar gösterilen kavramlar",
-      oran: "hedefli-tekrar olayında: testte ilk denemede doğru oranı (0–1)", esik: "hedefli-tekrar olayında: tamamlanma eşiği (0–1)"
+      oran: "hedefli-tekrar olayında: testte ilk denemede doğru oranı (0–1); yazili-madde olayında: maddede işaretlenen puanlı parça oranı (0–1)", esik: "hedefli-tekrar olayında: tamamlanma eşiği (0–1)",
+      kazanim: "Yazılıya Hazırlık: MEB öğrenme çıktısı kodu (ör. FB.7.2.1)", otomatik: "Yazılıya Hazırlık: anahtar kelimelerin otomatik bulduğu oran (madde) ya da puan (prova); Ela'nın işaretlediğiyle karşılaştırmak için",
+      prova: "Yazılıya Hazırlık: prova kimliği (p1, p2…)", puan: "Yazılıya Hazırlık: provada alınan puan (100 üzerinden)"
     },
     olaylar: {
       "konu-ac": "Konu ya da Ara Durak açıldı", sekme: "Ekran (sekme) değişti", adim: "Öğren'de bir adımdan çıkıldı (sureSn o adımda geçen süre)",
@@ -196,6 +198,8 @@
       mod: "Bu cihazda kullanım modu değişti (Veli Paneli'nden; kullanimModu, once)",
       "kart-bekle": "Odaklı mod: Öğren'de bilgi kartı okuma süresi dolmadan 'Sonraki'ye dokundu",
       "hedefli-tekrar": "Odaklı mod: testte tamamlanma eşiğinin altında kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
+      "yazili-ac": "Yazılıya Hazırlık bölümü açıldı (konu: yazili:<id>)", "yazili-madde": "Yazılıya Hazırlık'ta bir sorunun bir maddesi bitti (tur: yazili-meb / yazili-ikiz; oran: işaretlenen parça oranı; otomatik: otomatik bulunan oran)",
+      "yazili-prova": "Prova yazılısı puanlandı (mod: ekran / kagit; sureDk ekranda geçen süre)", "yazili-kuark": "Kuark'ın Hatası turu bitti (dogru/toplam, ilk1)", "yazili-yazdir": "Prova soru kâğıdı ya da cevap anahtarı yazdırıldı",
       "sinav-soru": "Sınav Provası'nda bir sorunun sonucu (tur sinav-<tür>; sonuc 1 doğru 0 yanlış; kismi kısmi doğru oranı; cevap Ela'nın cevabı; kaynakKonu sorunun konusu)"
     }
   };
@@ -2382,6 +2386,7 @@
       try { const r = await fetch("atolye.json", { cache: "no-cache" }); if (!r.ok) throw 0; S.atolye = await r.json(); }
       catch (e) { $("#content").innerHTML = `<div class="notice">Okuma Atölyesi açılamadı. İnternet bağlantını kontrol edip sayfayı yenile.</div>`; return; }
     }
+    yazilidanCik();
     S.konu = "atolye"; S.data = null; S.durakAsil = null; S.botBaslik = "Okuma Atölyesi"; renderNav();
     if (location.hash.slice(1) !== "atolye") history.replaceState(null, "", "#atolye");
     $$(".head-actions a[href='#atolye']").forEach(a => a.setAttribute("aria-pressed", "true"));
@@ -2466,6 +2471,378 @@
       root.scrollIntoView({ block: "start", behavior: "smooth" });
     };
     ciz();
+  }
+
+  // =================================================================
+  // ---------- Yazılıya Hazırlık (ders.json "yazili": [{id, baslik, dosya}]; veri public/<kod>/yazili/<id>.json) ----------
+  // Okulun seçtiği MEB senaryosuna göre: Harita → Hatırla → Cevap Kalıpları → MEB Soruları (önce ısınma/iskele, sonra yazarak
+  // cevap; "Benzerini çöz" ikizleri) → Kuark'ın Hatası → Prova Yazılıları (ekranda ya da kâğıtta; rubrikle puan).
+  // Açık uçlu cevaplar anahtar köklerle otomatik işaretlenir, Ela kendisi onaylar (yapay zekâ yok; robot paneli gizlenir).
+  // Kayıt: ela7:<kod>:yazili:<id> (kaz: kazanım denemeleri, meb, ikizGor, prova, hatirla, kalip, kuark);
+  // ekranda prova taslağı ela7:<kod>:yazili-taslak:<id>:<prova>. Olaylar: yazili-ac, yazili-madde, yazili-prova, yazili-kuark.
+  // =================================================================
+  const YZ = { d: null, id: null };
+  const yzHtml = s => esc(s).replace(/&lt;(\/?)b&gt;/g, "<$1b>");          // veri metninde yalnız <b> izinli
+  const yzDuz = s => String(s ?? "").replace(/<[^>]+>/g, "");
+  const YZ_HARF = { ı: "i", ç: "c", ğ: "g", ö: "o", ş: "s", ü: "u", â: "a", î: "i", û: "u" };
+  const yzSade = s => String(s ?? "").replace(/I/g, "ı").replace(/İ/g, "i").toLocaleLowerCase("tr").replace(/[ıçğöşüâîû]/g, c => YZ_HARF[c]).normalize("NFD").replace(/[̀-ͯ]/g, "");
+  // Sıra anahtarı: her öğe (alternatif kökler) bir öncekinden sonra geçmeli (araclar/yazili/yazili.py sira_tamam ile aynı)
+  const yzSira = (t, sira) => { let i = 0; for (const alt of sira) { const y = alt.map(x => t.indexOf(yzSade(x), i)).filter(v => v >= 0); if (!y.length) return false; i = Math.min(...y) + 1; } return true; };
+  const yzVar = (metin, a) => { const t = yzSade(metin); return a.sira ? yzSira(t, a.sira) : (a.k || []).some(x => t.includes(yzSade(x))); };
+  const yzKayit = {
+    get() { const v = store.get(key("yazili:" + YZ.id), null) || {}; return { kaz: {}, meb: {}, ikizGor: {}, prova: {}, hatirla: {}, ...v }; },
+    set(v) { store.set(key("yazili:" + YZ.id), v); }
+  };
+  const yzKaz = kod => YZ.d.kazanimlar.find(k => k.kod === kod) || { kisa: kod, kod, maddeler: [], renk: "#5a6280" };
+  const yzKazEkle = (k, kod, r, kaynak) => { (k.kaz[kod] = k.kaz[kod] || []).push({ t: Date.now(), r: +r.toFixed(2), kaynak }); k.kaz[kod] = k.kaz[kod].slice(-12); };
+  const yzHazir = kod => { const l = (yzKayit.get().kaz[kod] || []).slice(-4); return l.length ? l.reduce((a, x) => a + x.r, 0) / l.length : null; };
+  const yzYuzde = r => r === null || r === undefined ? "–" : "%" + Math.round(r * 100);
+  const yzHalka = r => `<span class="yz-halka${r === null ? " bos" : r >= .8 ? " iyi" : r >= .5 ? " orta" : " zayif"}" style="--p:${r === null ? 0 : Math.round(r * 100)}">${yzYuzde(r)}</span>`;
+  const yzSoruSay = () => Object.values(YZ.d.dagilim || {}).reduce((a, b) => a + b, 0);
+  const yzUst = baslik => `<div class="yz-ust"><button class="btn ghost" data-yz-ana>← Yazılı haritası</button><span>${esc(baslik)}</span></div>`;
+  const yzGorsel = q => q.svg ? `<div class="q-gorsel">${q.svg}</div>` : "";
+  const yzMetin = q => (q.metin || []).length ? `<div class="pasaj">${q.metin.map(p => `<p class="pasaj-p">${esc(p)}</p>`).join("")}</div>` : "";
+  const yzKonuAd = id => (allTopics().find(t => t.id === id) || {}).baslik || id;
+
+  async function openYazili(id) {
+    tts.stop();
+    const liste = S.ders.yazili || [], y = liste.find(x => x.id === id) || liste[liste.length - 1]; if (!y) return;
+    if (YZ.id !== y.id || !YZ.d) {
+      try { const r = await fetch(y.dosya || `yazili/${y.id}.json`, { cache: "no-cache" }); if (!r.ok) throw 0; YZ.d = await r.json(); YZ.id = y.id; }
+      catch (e) { $("#content").innerHTML = `<div class="notice">Yazılıya Hazırlık açılamadı. İnternet bağlantını kontrol edip sayfayı yenile.</div>`; return; }
+    }
+    S.konu = "yazili:" + y.id; S.data = null; S.durakAsil = null; S.botBaslik = "Yazılıya Hazırlık"; S.tab = "yazili"; renderNav();
+    document.body.classList.add("yazili-mod");
+    if (location.hash.slice(1) !== "yazili") history.replaceState(null, "", "#yazili");
+    $$(".head-actions a").forEach(a => a.getAttribute("href") === "#yazili" ? a.setAttribute("aria-pressed", "true") : a.removeAttribute("aria-pressed"));
+    $("#content").innerHTML = `<section class="konu-head yz-head"><div class="meta"><span>${esc(S.ders.ders)}</span><span class="pill">${esc(YZ.d.senaryo || "")}</span><span class="pill">${yzSoruSay()} soru · ${YZ.d.sure || 40} dk</span></div>
+      <h2>Yazılıya Hazırlık · ${esc(YZ.d.baslik)}</h2></section><div class="panel" id="panel"></div>`;
+    KAYIT.olay("yazili-ac");
+    yzAna($("#panel"));
+    S.seritGuncelle && S.seritGuncelle();
+  }
+  const yazilidanCik = () => { document.body.classList.remove("yazili-mod"); $$(".head-actions a[href='#yazili']").forEach(a => a.removeAttribute("aria-pressed")); clearInterval(YZ.saat); };
+  function yzGit(root, ne, ...a) {
+    tts.stop(); clearInterval(YZ.saat);
+    ({ ana: yzAna, hatirla: yzHatirla, kalip: yzKalip, meb: yzMebListe, kuark: yzKuark, prova: yzProvaListe })[ne](root, ...a);
+    root.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+  const yzAnaBagla = root => $$("[data-yz-ana]", root).forEach(b => b.onclick = () => yzGit(root, "ana"));
+
+  // ---------- Harita ----------
+  function yzAna(root) {
+    const D = YZ.d, k = yzKayit.get();
+    const gun = D.tarih ? Math.ceil((new Date(D.tarih + "T09:00") - Date.now()) / 864e5) : null;
+    const mebBitti = D.mebSorular.filter(q => k.meb[q.id]).length;
+    const provaSon = D.provalar.map(p => (k.prova[p.id] || []).slice(-1)[0]).filter(Boolean);
+    const sonProva = D.provalar.map(p => ({ p, s: (k.prova[p.id] || []).slice(-1)[0] })).filter(x => x.s).sort((a, b) => b.s.t - a.s.t)[0];
+    const adim = [
+      ["hatirla", "Hatırla", `${D.kazanimlar.length} kazanım kartı · sınavda ne sorulur?`, D.kazanimlar.every(z => k.hatirla[z.kod])],
+      ["kalip", "Cevap Kalıpları", "Açık uçlu cevap nasıl yazılır?", !!k.kalip],
+      ["meb", "MEB Soruları", `${mebBitti} / ${D.mebSorular.length} soru çözüldü · benzerleriyle tekrar`, mebBitti === D.mebSorular.length],
+      ["kuark", "Kuark'ın Hatası", k.kuark ? `Son tur: ${k.kuark.d} / ${k.kuark.n} hatayı buldun` : "Kuark yanlış cevap yazdı, hatasını bul", !!k.kuark],
+      ["prova", "Prova Yazılıları", sonProva ? `${provaSon.length} / ${D.provalar.length} prova · son puan ${sonProva.s.puan}` : `${D.provalar.length} deneme · gerçek yazılı gibi ${D.sure || 40} dk`, provaSon.length === D.provalar.length]
+    ];
+    root.innerHTML = `<section>${robotDer(yzHtml(D.giris), "buyuk")}</section>
+      ${gun !== null && gun >= 0 ? `<div class="yz-sayac"><b>${gun === 0 ? "Yazılı bugün!" : gun + " gün kaldı"}</b><span>Her gün 1–2 adım yeter.</span></div>` : ""}
+      <section class="yz-yol">${adim.map(([id, ad, alt, ok], i) => `<button class="yz-adim${ok ? " bitti" : ""}" data-yz="${id}"><span class="yz-no">${ok ? "✓" : i + 1}</span><span class="yz-adim-m"><b>${esc(ad)}</b><small>${esc(alt)}</small></span><span class="yz-ok" aria-hidden="true">→</span></button>`).join("")}</section>
+      <section class="yz-harita"><div class="eyebrow">Senaryo haritası · hangi kazanımdan kaç soru?</div>
+        <div class="yz-kazlar">${D.kazanimlar.map((z, i) => `<button class="yz-kaz" data-kaz="${i}" style="--kr:${esc(z.renk || "#5a6280")}">${yzHalka(yzHazir(z.kod))}<span class="yz-kaz-ad"><b>${esc(z.kisa)}</b><small>${esc(z.kod)} · ${z.soru} soru</small></span></button>`).join("")}</div>
+        <p class="ek">Halka, o kazanımdaki son denemelerinin ortalaması. Dokununca Hatırla kartı açılır.</p></section>
+      <details class="yz-disi"><summary>Bu yazılıda olmayanlar: bunlara çalışma</summary><ul>${(D.kapsamDisi || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>`;
+    $$("[data-yz]", root).forEach(b => b.onclick = () => yzGit(root, b.dataset.yz));
+    $$("[data-kaz]", root).forEach(b => b.onclick = () => yzGit(root, "hatirla", +b.dataset.kaz));
+  }
+
+  // ---------- Hatırla: kazanım başına tek ekran ----------
+  const yzHatirlaIc = z => `${z.svg ? `<div class="q-gorsel">${z.svg}</div>` : ""}
+      <ul class="yz-maddeler">${z.maddeler.map(m => `<li>${yzHtml(m)}</li>`).join("")}</ul>
+      <div class="yz-kelime"><b>Puan getiren kelimeler</b><div class="chips">${(z.kelimeler || []).map(w => `<span class="chip yz-chip">${esc(w)}</span>`).join("")}</div></div>
+      <div class="yz-hatalar"><b>Sık yapılan hatalar</b>${(z.hatalar || []).map(h => `<div class="yz-hata"><p class="no">✗ ${esc(h.yanlis)}</p><p class="ok">✓ ${esc(h.dogru)}</p></div>`).join("")}</div>`;
+  function yzHatirla(root, i = 0) {
+    const D = YZ.d, z = D.kazanimlar[i], k = yzKayit.get(), son = i === D.kazanimlar.length - 1;
+    k.hatirla[z.kod] = Date.now(); yzKayit.set(k);
+    const meb = D.mebSorular.find(q => q.kazanim === z.kod);
+    const oku = `${z.kisa}. ${z.maddeler.map(yzDuz).join(" ")} Puan getiren kelimeler: ${(z.kelimeler || []).join(", ")}.`;
+    root.innerHTML = `${yzUst("Hatırla")}<div class="stage yz-hatirla" style="--kr:${esc(z.renk || "#5a6280")}">
+      <div class="progress"><span>Kazanım ${i + 1} / ${D.kazanimlar.length}</span><div class="bar"><i style="width:${(i + 1) / D.kazanimlar.length * 100}%"></i></div></div>
+      <div class="kicker">${esc(z.kod)} · Yazılıda ${z.soru} soru · ${esc(z.sayfa || "")}</div><h3>${esc(z.kisa)}</h3><p class="ek yz-kazad">${esc(z.ad)}</p>
+      ${yzHatirlaIc(z)}
+      <div class="row">${listenBtn(oku)}${(z.konular || []).map(c => `<button class="btn ghost" data-konu="${esc(c)}">Defterde aç: ${esc(yzKonuAd(c))}</button>`).join("")}</div>
+      <div class="stage-nav"><button class="btn ghost" data-onceki ${i ? "" : "disabled"}>← Önceki</button>${meb ? `<button class="btn" data-meb="${esc(meb.id)}">Bu kazanımın MEB sorusu</button>` : ""}<button class="btn primary" data-sonraki>${son ? "Cevap Kalıpları →" : "Sonraki kazanım →"}</button></div></div>`;
+    yzAnaBagla(root);
+    $("[data-onceki]", root).onclick = () => yzGit(root, "hatirla", i - 1);
+    $("[data-sonraki]", root).onclick = () => son ? yzGit(root, "kalip") : yzGit(root, "hatirla", i + 1);
+    const mb = $("[data-meb]", root); if (mb) mb.onclick = () => { tts.stop(); yzSoruCoz(root, meb, { tur: "meb", ana: meb }); };
+    $$("[data-konu]", root).forEach(b => b.onclick = () => { S.donus = null; openKonu(b.dataset.konu, true); });
+  }
+
+  // ---------- Cevap kalıpları ----------
+  function yzKalip(root) {
+    const D = YZ.d, k = yzKayit.get(); k.kalip = Date.now(); yzKayit.set(k);
+    root.innerHTML = `${yzUst("Cevap Kalıpları")}<div class="stage">
+      ${robotDer("Yazılıda puanı <b>bilgi + gerekçe</b> getirir. Tek kelimeyle cevap verme; sorunun istediği kalıbı kullan. Soruda “açıklayınız, neden” varsa mutlaka <b>çünkü</b> yaz.", "kucuk")}
+      <div class="yz-kaliplar">${D.formuller.map(f => `<div class="yz-kalip-k"><div class="yz-kalip-ad">${esc(f.ad)}</div><div class="yz-kalip">${esc(f.kalip)}</div><small>${esc(f.ne)}</small><p><b>Örnek:</b> ${esc(f.ornek)}</p></div>`).join("")}</div>
+      <div class="stage-nav"><button class="btn ghost" data-yz-ana>← Harita</button><button class="btn primary" data-meb>MEB Soruları →</button></div></div>`;
+    yzAnaBagla(root);
+    $("[data-meb]", root).onclick = () => yzGit(root, "meb");
+  }
+
+  // ---------- MEB soruları listesi ----------
+  function yzMebListe(root) {
+    const D = YZ.d, k = yzKayit.get();
+    root.innerHTML = `${yzUst("MEB Soruları")}<div class="stage">
+      ${robotDer("Bunlar MEB'in yayımladığı örnek sorular. Yazılıda <b>benzerleri</b> çıkacak. Önce ısınma sorusunu çöz, sonra cevabı <b>yazarak</b> ver. Eksik kalırsa “Benzerini çöz” ile aynı kalıpta yeni bir soru gelir.", "kucuk")}
+      <div class="yz-liste">${D.mebSorular.map(q => { const s = k.meb[q.id], z = yzKaz(q.kazanim), kalan = (q.ikizler || []).filter(x => !k.ikizGor[x.id]).length;
+        return `<div class="yz-li" style="--kr:${esc(z.renk || "#5a6280")}">${yzHalka(s ? s.r : null)}<div class="yz-li-m"><b>MEB Soru ${q.no}</b><small>${esc(z.kisa)} · ${q.maddeler.length} madde</small></div>
+          <div class="yz-li-b"><button class="btn${s ? " ghost" : " primary"}" data-coz="${esc(q.id)}">${s ? "Tekrar çöz" : "Çöz"}</button>${s && (q.ikizler || []).length ? `<button class="btn" data-ikiz="${esc(q.id)}">Benzerini çöz${kalan ? ` (${kalan} yeni)` : ""}</button>` : ""}</div></div>`; }).join("")}</div>
+      <div class="stage-nav"><button class="btn ghost" data-yz-ana>← Harita</button><button class="btn primary" data-kuark>Kuark'ın Hatası →</button></div></div>`;
+    yzAnaBagla(root);
+    $("[data-kuark]", root).onclick = () => yzGit(root, "kuark");
+    $$("[data-coz]", root).forEach(b => b.onclick = () => { const q = D.mebSorular.find(x => x.id === b.dataset.coz); yzSoruCoz(root, q, { tur: "meb", ana: q }); });
+    $$("[data-ikiz]", root).forEach(b => b.onclick = () => yzIkizAc(root, D.mebSorular.find(x => x.id === b.dataset.ikiz)));
+  }
+  function yzIkizAc(root, ana) {
+    const gor = yzKayit.get().ikizGor, l = shuffle(ana.ikizler || []).sort((a, b) => (gor[a.id] || 0) - (gor[b.id] || 0));
+    if (l.length) yzSoruCoz(root, { ...l[0], kazanim: l[0].kazanim || ana.kazanim }, { tur: "ikiz", ana });
+  }
+
+  // ---------- Açık uçlu cevabı değerlendirme (anahtar kontrol listesi) ----------
+  // metin: Ela'nın yazdığı (kâğıt modunda null → kutular boş gelir); hepsi Ela'nın onayıyla değişebilir.
+  function yzDegHTML(m, metin, ad) {
+    const an = m.anahtarlar || [];
+    return `<ul class="yz-anahtar">${an.map((a, j) => { const v = metin ? yzVar(metin, a) : false;
+      return `<li><label><input type="checkbox" data-an="${ad}-${j}" ${v ? "checked" : ""}><span>${esc(a.ad)}</span>${metin !== null ? `<small class="${v ? "bul" : "yok"}">${v ? "cevabında buldum" : "bulamadım · yazdıysan işaretle"}</small>` : ""}</label></li>`; }).join("")}</ul>`;
+  }
+  const yzOran = (scope, ad, n) => n ? $$(`[data-an^="${ad}-"]`, scope).filter(x => x.checked).length / n : 0;
+  const yzOtoOran = (m, metin) => { const an = m.anahtarlar || []; return an.length && metin ? an.filter(a => yzVar(metin, a)).length / an.length : 0; };
+
+  // ---------- Bir soruyu madde madde çöz (MEB ya da benzeri) ----------
+  function yzSoruCoz(root, q, ctx) {
+    clearInterval(YZ.saat);
+    const z = yzKaz(q.kazanim), st = { i: 0, faz: null, sonuc: [] };
+    const fazIlk = m => m.iskele ? "iskele" : "yaz";
+    const baslik = ctx.tur === "meb" ? `MEB Soru ${q.no}` : `Benzer soru · MEB ${ctx.ana.no}'e benzer`;
+    const ciz = () => {
+      const m = q.maddeler[st.i]; st.faz = st.faz || fazIlk(m);
+      root.innerHTML = `${yzUst(baslik)}<div class="stage yz-soru" style="--kr:${esc(z.renk || "#5a6280")}">
+        <div class="progress"><span>Madde ${st.i + 1} / ${q.maddeler.length}</span><div class="bar"><i style="width:${(st.i + 1) / q.maddeler.length * 100}%"></i></div></div>
+        <div class="kicker">${esc(baslik)} · ${esc(z.kisa)} (${esc(z.kod)})</div>${yzMetin(q)}${yzGorsel(q)}
+        <p class="q-text yz-madde-soru"><span class="qn">${m.harf})</span><span>${esc(m.soru)}</span></p></div><div id="yzM"></div>`;
+      yzAnaBagla(root);
+      const kutu = $("#yzM", root);
+      if (st.faz === "iskele") return iskele(kutu, m);
+      if (st.faz === "yaz") return yaz(kutu, m);
+      return deg(kutu, m);
+    };
+    const ileri = () => { st.i++; st.faz = null; st.ic = undefined; st.ik = false; st.neden = undefined; st.yazi = ""; if (st.i < q.maddeler.length) { ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); } else bitir(); };
+    const kaydet = (m, r, oto) => {
+      st.sonuc[st.i] = r;
+      KAYIT.olay("yazili-madde", { soru: kisa(m.soru), kazanim: q.kazanim, tur: "yazili-" + ctx.tur, oran: +r.toFixed(2), otomatik: oto === undefined ? undefined : +oto.toFixed(2) });
+    };
+    const iskele = (kutu, m) => {
+      const t = m.iskele, it = { q: t.tur === "secim" ? karistir(t) : { ...t } };
+      if (t.tur === "bosluk") it.havuz = shuffle([...new Set([...t.cumleler.map(x => x.cevap), ...(t.havuz || [])])]);
+      if (t.tur === "eslestir") it.perm = shuffle(t.ciftler.map((x, j) => j));
+      sinavTek(kutu, { it, ust: "", kicker: m.cevap ? `${m.harf}) Isınma · önce seçerek` : `${m.harf}) Cevapla`, ileriEt: m.cevap ? "Şimdi yazarak cevapla →" : st.i < q.maddeler.length - 1 ? "Sonraki madde →" : "Sonucu gör",
+        konuBtn: false, cevap: () => st.ic, kontrol: () => st.ik, neden: () => st.neden,
+        onYaz: v => st.ic = v, onKontrol: p => { st.ik = true; st.ip = p; }, onNeden: n => st.neden = n,
+        onIleri: () => { if (m.cevap) { st.faz = "yaz"; ciz(); $("#yzM", root).scrollIntoView({ block: "nearest", behavior: "smooth" }); } else { kaydet(m, st.ip.r ? 1 : st.ip.kismi || 0); ileri(); } } });
+    };
+    const yaz = (kutu, m) => {
+      const f = YZ.d.formuller.find(x => x.id === m.formul);
+      kutu.innerHTML = `<div class="stage yz-yaz"><div class="kicker">${m.harf}) Yazarak cevapla · yazılıdaki gibi</div>
+        ${f ? `<div class="yz-formul-ipucu"><b>Kalıp: ${esc(f.ad)}</b> <span>${esc(f.kalip)}</span></div>` : ""}
+        <textarea class="yz-ta" rows="4" placeholder="Cevabını tam cümleyle yaz…" spellcheck="true">${esc(st.yazi || "")}</textarea>
+        <div class="stage-nav"><button class="btn ghost" data-bilmiyorum>Bilmiyorum, örneğe bak</button><button class="btn primary" data-kontrol disabled>Cevabımı kontrol et</button></div></div>`;
+      const ta = $(".yz-ta", kutu), kb = $("[data-kontrol]", kutu);
+      const durum = () => kb.disabled = ta.value.trim().length < 3;
+      ta.oninput = () => { st.yazi = ta.value; durum(); }; durum(); ta.focus();
+      kb.onclick = () => { st.yazi = ta.value.trim(); st.faz = "deg"; ciz(); };
+      $("[data-bilmiyorum]", kutu).onclick = () => { st.yazi = ""; st.faz = "deg"; ciz(); };
+    };
+    const deg = (kutu, m) => {
+      const metin = st.yazi || "", n = (m.anahtarlar || []).length;
+      kutu.innerHTML = `<div class="stage yz-deg"><div class="kicker">${m.harf}) Kendini kontrol et</div>
+        <div class="yz-senin"><span>Senin cevabın</span><p>${metin ? esc(metin) : "<i>Boş bıraktın.</i>"}</p></div>
+        <p class="yz-not">Puan getiren parçalar aşağıda. Cevabında bulduklarımı işaretledim; sen de kontrol et. <b>Dürüst ol</b>: yazmadığını işaretleme.</p>
+        ${yzDegHTML(m, metin, "m")}
+        <div class="yz-oran" aria-live="polite"></div>
+        ${robotDer(`<b>Örnek cevap:</b> ${esc(m.cevap)}`, "kucuk")}
+        <details class="yz-mini"><summary>Hatırla kartına bak: ${esc(yzKaz(q.kazanim).kisa)}</summary>${yzHatirlaIc(yzKaz(q.kazanim))}</details>
+        <div class="stage-nav"><button class="btn ghost" data-tekrar-yaz>Cevabımı düzelt</button><button class="btn primary" data-kaydet>${st.i < q.maddeler.length - 1 ? "Kaydet, sonraki madde →" : "Kaydet, sonucu gör"}</button></div></div>`;
+      const oranCiz = () => { const r = yzOran(kutu, "m", n); $(".yz-oran", kutu).innerHTML = `<b>${Math.round(r * n)} / ${n}</b> parça · ${r === 1 ? "Tam puanlık cevap!" : r >= .5 ? "Yarısından fazlası tamam, eksik parçayı örnek cevapta gör." : "Örnek cevabı oku, sonra Benzerini çöz ile tekrar dene."}`; };
+      $$("input[data-an]", kutu).forEach(x => x.onchange = oranCiz); oranCiz();
+      $("[data-tekrar-yaz]", kutu).onclick = () => { st.faz = "yaz"; ciz(); };
+      $("[data-kaydet]", kutu).onclick = () => { kaydet(m, yzOran(kutu, "m", n), yzOtoOran(m, metin)); ileri(); };
+    };
+    const bitir = () => {
+      const r = st.sonuc.reduce((a, x) => a + (x || 0), 0) / q.maddeler.length, k = yzKayit.get();
+      if (ctx.tur === "meb") k.meb[q.id] = { t: Date.now(), r: +r.toFixed(2) };
+      else k.ikizGor[q.id] = (k.ikizGor[q.id] || 0) + 1;
+      yzKazEkle(k, q.kazanim, r, ctx.tur); yzKayit.set(k);
+      const sonraki = ctx.tur === "meb" ? YZ.d.mebSorular[YZ.d.mebSorular.indexOf(q) + 1] : null;
+      const mesaj = r === 1 ? "Bütün parçaları yazdın. Yazılıda tam puan alacak bir cevap!" : r >= .6 ? "Çok iyi çalıştın. Eksik parçayı bir benzer soruda tekrar yazarsan kalıcı olur." : "Bu kalıbı öğrenmek zaman ister. Hatırla kartına bak, sonra benzer bir soruyu çöz.";
+      root.innerHTML = `${yzUst(baslik)}<div class="stage"><div class="kicker">${esc(baslik)} · Sonuç</div><h3>${r === 1 ? "Tam puan!" : "Soru bitti!"}</h3>${robotDer(mesaj)}
+        <div class="yz-sonuc">${q.maddeler.map((m, j) => `<div class="yz-sonuc-s">${yzHalka(st.sonuc[j] ?? 0)}<span><b>${m.harf})</b> ${esc(kisa(m.soru, 70))}</span></div>`).join("")}</div>
+        <div class="row">${(ctx.ana.ikizler || []).length ? `<button class="btn${r < 1 ? " primary" : ""}" data-ikiz>Benzerini çöz</button>` : ""}<button class="btn ghost" data-tekrar>Bu soruyu tekrar çöz</button>
+          ${r < .6 ? `<button class="btn ghost" data-hatirla>Hatırla: ${esc(z.kisa)}</button>` : ""}${sonraki ? `<button class="btn${r >= 1 ? " primary" : ""}" data-sonraki>Sıradaki: MEB Soru ${sonraki.no} →</button>` : ""}<button class="btn ghost" data-liste>MEB sorularına dön</button></div></div>`;
+      yzAnaBagla(root);
+      const b = (s, f) => { const e = $(s, root); if (e) e.onclick = f; };
+      b("[data-ikiz]", () => yzIkizAc(root, ctx.ana));
+      b("[data-tekrar]", () => yzSoruCoz(root, q, ctx));
+      b("[data-hatirla]", () => yzGit(root, "hatirla", YZ.d.kazanimlar.indexOf(z)));
+      b("[data-sonraki]", () => yzSoruCoz(root, sonraki, { tur: "meb", ana: sonraki }));
+      b("[data-liste]", () => yzGit(root, "meb"));
+      root.scrollIntoView({ block: "start", behavior: "smooth" });
+    };
+    ciz();
+  }
+
+  // ---------- Kuark'ın Hatası ----------
+  function yzKuark(root) {
+    const D = YZ.d, liste = shuffle(D.kuarkHata).slice(0, 6), st = { i: 0, q: [], r: [] };
+    const ciz = () => {
+      const h = liste[st.i], son = st.i === liste.length - 1, z = yzKaz(h.kazanim);
+      st.q[st.i] = st.q[st.i] || { o: karistir({ soru: "Kuark'ın hatası ne?", secenekler: h.secenekler, dogru: h.dogru, ipucu: h.ipucu, aciklama: h.aciklama }), s: { wrong: [], result: undefined } };
+      const { o, s } = st.q[st.i];
+      root.innerHTML = `${yzUst("Kuark'ın Hatası")}<div class="stage yz-kuark"><div class="progress"><span>Hata ${st.i + 1} / ${liste.length}</span><div class="bar"><i style="width:${(st.i + 1) / liste.length * 100}%"></i></div></div>
+        <div class="kicker">${esc(z.kisa)} · Öğretmen gibi oku, hatayı bul</div>
+        <div class="yz-kuark-soru"><span>Yazılı sorusu</span><p>${esc(h.soru)}</p></div>
+        ${robotDer(`<b>Benim cevabım:</b> “${esc(h.kuark)}”`, "kucuk")}
+        <div id="yzQ">${questionHTML(o)}</div><div class="yz-dogrusu" hidden><b>Tam puanlık cevap:</b> ${esc(h.dogruCevap)}</div>
+        <div class="stage-nav"><button class="btn ghost" data-yz-ana>Turu bırak</button><button class="btn primary" data-sonraki disabled>${son ? "Sonucu gör" : "Sonraki hata →"}</button></div></div>`;
+      yzAnaBagla(root);
+      const nb = $("[data-sonraki]", root), dg = $(".yz-dogrusu", root);
+      const tamam = r => { st.r[st.i] = r; nb.disabled = false; dg.hidden = false; };
+      wireQuestion($("#yzQ .q", root), o, { state: s, kavram: { ad: z.kisa, aciklama: yzDuz(z.maddeler[0] || ""), akilda: (z.kelimeler || []).slice(0, 2).join(", ") }, onDone: tamam });
+      if (s.result !== undefined) tamam(s.result);
+      nb.onclick = () => { tts.stop(); if (!son) { st.i++; ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); } else bitir(); };
+    };
+    const bitir = () => {
+      const d = st.r.filter(x => x > 0).length, ilk = st.r.filter(x => x === 1).length, k = yzKayit.get();
+      k.kuark = { t: Date.now(), d, n: liste.length }; yzKayit.set(k); KAYIT.olay("yazili-kuark", { dogru: d, toplam: liste.length, ilk1: ilk });
+      root.innerHTML = `${yzUst("Kuark'ın Hatası")}<div class="stage"><div class="kicker">Kuark'ın Hatası · Sonuç</div><h3>${d === liste.length ? "Kuark'ı yakaladın!" : "Tur bitti!"}</h3>
+        ${robotDer(d === liste.length ? "Bütün hatalarımı buldun. Yazılıda kendi cevabını da böyle kontrol et: bilgi doğru mu, “çünkü” var mı?" : "Hata bulmak dikkat ister, iyi çalıştın. Yazılıda kendi cevabını da böyle kontrol et.")}
+        <div class="done-stats"><div class="stat"><b>${ilk}</b><span>ilk denemede buldun</span></div><div class="stat"><b>${d - ilk}</b><span>ipucuyla buldun</span></div><div class="stat"><b>${liste.length - d}</b><span>birlikte öğrendik</span></div></div>
+        <div class="row"><button class="btn" data-tekrar>Yeni tur</button><button class="btn primary" data-prova>Prova Yazılıları →</button></div></div>`;
+      yzAnaBagla(root);
+      $("[data-tekrar]", root).onclick = () => yzKuark(root);
+      $("[data-prova]", root).onclick = () => yzGit(root, "prova");
+    };
+    ciz();
+  }
+
+  // ---------- Prova yazılıları ----------
+  const yzTaslakKey = p => key(`yazili-taslak:${YZ.id}:${p.id}`);
+  function yzProvaListe(root) {
+    const D = YZ.d, k = yzKayit.get();
+    root.innerHTML = `${yzUst("Prova Yazılıları")}<div class="stage">
+      ${robotDer(`Her prova gerçek yazılı gibi: <b>${yzSoruSay()} soru, ${D.sure || 40} dakika</b>, açık uçlu. Ekranda çözebilir ya da kâğıda yazdırıp elle yazabilirsin. Yazılıdan önceki son 1–2 provayı <b>kâğıtta</b> yap: gerçek sınav kâğıtta.`, "kucuk")}
+      <div class="yz-liste">${D.provalar.map(p => { const l = k.prova[p.id] || [], son = l[l.length - 1], en = l.length ? Math.max(...l.map(x => x.puan)) : null, taslak = store.get(yzTaslakKey(p), null);
+        return `<div class="yz-li yz-prova-li">${yzHalka(son ? son.puan / 100 : null)}<div class="yz-li-m"><b>${esc(p.ad)}</b><small>${l.length ? `${l.length} kez · son ${son.puan} · en iyi ${en}` : "henüz çözülmedi"}${taslak ? " · yarım kaldı" : ""}</small></div>
+          <div class="yz-li-b"><button class="btn primary" data-ekran="${esc(p.id)}">${taslak ? "Devam et" : "Ekranda çöz"}</button><button class="btn" data-kagit="${esc(p.id)}">${ICON.yazdir}Kâğıda yazdır</button>
+          <button class="btn ghost" data-puanla="${esc(p.id)}">Kâğıdı puanla</button><button class="btn ghost" data-anahtar="${esc(p.id)}">Cevap anahtarı</button></div></div>`; }).join("")}</div>
+      <p class="ek">${esc(D.puanNotu || "")} Kâğıtta çözünce “Kâğıdı puanla” ile puanını gir; cevap anahtarını yetişkin biri yazdırıp kontrol edebilir.</p>
+      <div class="stage-nav"><button class="btn ghost" data-yz-ana>← Harita</button><span></span></div></div>`;
+    yzAnaBagla(root);
+    const bul = id => D.provalar.find(p => p.id === id);
+    $$("[data-ekran]", root).forEach(b => b.onclick = () => yzProvaCoz(root, bul(b.dataset.ekran)));
+    $$("[data-kagit]", root).forEach(b => b.onclick = () => yzYazdir(bul(b.dataset.kagit), false));
+    $$("[data-anahtar]", root).forEach(b => b.onclick = () => yzYazdir(bul(b.dataset.anahtar), true));
+    $$("[data-puanla]", root).forEach(b => b.onclick = () => yzProvaPuanla(root, bul(b.dataset.puanla), null, "kagit", null));
+  }
+  function yzProvaCoz(root, p) {
+    const tk = yzTaslakKey(p), t = store.get(tk, null) || { bas: Date.now(), c: {} }; store.set(tk, t);
+    const sure = YZ.d.sure || 40;
+    root.innerHTML = `${yzUst(p.ad)}<div class="stage yz-prova">
+      <div class="yz-prova-bas"><div><b>${esc(S.ders.ders)} · ${esc(YZ.d.baslik)} · ${esc(p.ad)}</b><small>${yzSoruSay()} soru · toplam 100 puan · cevaplar açık uçlu</small></div><div class="yz-saat" aria-live="off"></div></div>
+      ${p.sorular.map((q, n) => `<section class="yz-p-soru"><div class="yz-p-no"><b>${n + 1}.</b><span class="pill">${q.puan} puan</span></div>${yzMetin(q)}${yzGorsel(q)}
+        ${q.maddeler.map(m => `<div class="yz-p-madde"><p class="q-text"><span class="qn">${m.harf})</span><span>${esc(m.soru)} <small class="yz-mp">(${m.puan} puan)</small></span></p>
+          <textarea class="yz-ta" rows="3" data-c="${n}-${m.harf}" placeholder="Cevabını yaz…">${esc(t.c[`${n}-${m.harf}`] || "")}</textarea></div>`).join("")}</section>`).join("")}
+      <div class="stage-nav"><button class="btn ghost" data-birak>Bırak (yazdıkların kalır)</button><button class="btn primary" data-bitir>Sınavı bitir ve puanla</button></div></div>`;
+    yzAnaBagla(root);
+    $$(".yz-ta", root).forEach(ta => ta.oninput = () => { const v = store.get(tk, t); v.c[ta.dataset.c] = ta.value; store.set(tk, v); });
+    const saat = $(".yz-saat", root);
+    const tik = () => { const dk = Math.floor((Date.now() - t.bas) / 60e3), kalan = sure - dk; saat.innerHTML = kalan > 0 ? `<b>${kalan} dk</b><small>kaldı</small>` : `<b>Süre doldu</b><small>istersen bitir</small>`; saat.classList.toggle("bitti", kalan <= 0); saat.classList.toggle("az", kalan > 0 && kalan <= 5); };
+    tik(); clearInterval(YZ.saat); YZ.saat = setInterval(() => { if (!document.body.contains(saat)) return clearInterval(YZ.saat); tik(); }, 20e3);
+    $("[data-birak]", root).onclick = () => yzGit(root, "prova");
+    $("[data-bitir]", root).onclick = () => {
+      const v = store.get(tk, t), bos = p.sorular.flatMap((q, n) => q.maddeler.map(m => (v.c[`${n}-${m.harf}`] || "").trim())).filter(x => !x).length;
+      if (bos && !confirm(`${bos} madde boş. Yine de bitirip puanlayalım mı?`)) return;
+      clearInterval(YZ.saat); yzProvaPuanla(root, p, v.c, "ekran", Math.max(1, Math.round((Date.now() - v.bas) / 60e3)));
+    };
+  }
+  // cevaplar: {"n-harf": metin} (ekran) ya da null (kâğıt: kutular boş gelir, puanı yetişkin ya da Ela işaretler)
+  function yzProvaPuanla(root, p, cevaplar, mod, sureDk) {
+    clearInterval(YZ.saat);
+    root.innerHTML = `${yzUst(p.ad + " · Puanlama")}<div class="stage yz-puanla">
+      ${robotDer(mod === "kagit" ? "Kâğıttaki cevabına bak. Her madde için yazdığın parçaları işaretle. Örnek cevap her maddenin altında." : "Cevabında bulduğum parçaları işaretledim. Sen de kontrol et; yazmadığını işaretleme, yazdığını işaretle.", "kucuk")}
+      <div class="yz-toplam" aria-live="polite"></div>
+      ${p.sorular.map((q, n) => `<section class="yz-p-soru"><div class="yz-p-no"><b>${n + 1}.</b><span class="pill">${q.puan} puan</span><small>${esc(yzKaz(q.kazanim).kisa)}</small></div>
+        ${q.maddeler.map(m => { const metin = cevaplar ? (cevaplar[`${n}-${m.harf}`] || "") : null;
+          return `<div class="yz-p-madde"><p class="q-text"><span class="qn">${m.harf})</span><span>${esc(m.soru)}</span></p>
+            ${cevaplar ? `<div class="yz-senin"><span>Senin cevabın</span><p>${metin ? esc(metin) : "<i>Boş</i>"}</p></div>` : ""}
+            ${yzDegHTML(m, metin, `${n}${m.harf}`)}<div class="yz-mpuan" data-mp="${n}${m.harf}"></div>
+            <details class="yz-ornek"><summary>Örnek cevap</summary><p>${esc(m.cevap)}</p></details></div>`; }).join("")}</section>`).join("")}
+      <div class="stage-nav"><button class="btn ghost" data-geri>${cevaplar ? "← Cevaplara dön" : "← Provalar"}</button><button class="btn primary" data-kaydet>Puanı kaydet</button></div></div>`;
+    yzAnaBagla(root);
+    const hesap = () => {
+      let top = 0; const kaz = {};
+      p.sorular.forEach((q, n) => q.maddeler.forEach(m => {
+        const ad = `${n}${m.harf}`, r = yzOran(root, ad, (m.anahtarlar || []).length), pu = Math.round(m.puan * r * 2) / 2;
+        top += pu; const kz = kaz[q.kazanim] = kaz[q.kazanim] || [0, 0]; kz[0] += pu; kz[1] += m.puan;
+        $(`[data-mp="${ad}"]`, root).textContent = `${pu} / ${m.puan} puan`;
+      }));
+      return { puan: Math.round(top), kaz };
+    };
+    const ciz = () => { const h = hesap(); $(".yz-toplam", root).innerHTML = `<b>${h.puan}</b><span>/ 100 puan</span>`; };
+    $$("input[data-an]", root).forEach(x => x.onchange = ciz); ciz();
+    $("[data-geri]", root).onclick = () => cevaplar ? yzProvaCoz(root, p) : yzGit(root, "prova");
+    $("[data-kaydet]", root).onclick = () => {
+      const h = hesap(), k = yzKayit.get(), oto = cevaplar ? p.sorular.reduce((a, q, n) => a + q.maddeler.reduce((b, m) => b + m.puan * yzOtoOran(m, cevaplar[`${n}-${m.harf}`] || ""), 0), 0) : null;
+      (k.prova[p.id] = k.prova[p.id] || []).push({ t: Date.now(), puan: h.puan, mod, sureDk, kaz: h.kaz });
+      Object.entries(h.kaz).forEach(([kod, [a, b]]) => yzKazEkle(k, kod, b ? a / b : 0, "prova"));
+      yzKayit.set(k); store.set(yzTaslakKey(p), null);
+      KAYIT.olay("yazili-prova", { prova: p.id, puan: h.puan, toplam: 100, mod, sureDk, otomatik: oto === null ? undefined : Math.round(oto) });
+      yzProvaSonuc(root, p, h);
+    };
+  }
+  function yzProvaSonuc(root, p, h) {
+    const sira = Object.entries(h.kaz).map(([kod, [a, b]]) => ({ z: yzKaz(kod), a, b, r: b ? a / b : 0 })).sort((x, y) => x.r - y.r);
+    const zayif = sira.find(x => x.r < .8), l = yzKayit.get().prova[p.id] || [], once = l.length > 1 ? l[l.length - 2].puan : null;
+    const mesaj = h.puan >= 85 ? "Harika bir prova! Bu düzeyde yazarsan yazılıda da yüksek puan alırsın." : h.puan >= 70 ? "İyi çalıştın. Eksik parçaları tamamlarsan puanın daha da yükselir." : "Prova yapmak cesaret ister, iyi ki denedin. Zayıf kazanımın Hatırla kartına bakıp MEB benzer sorularını çöz.";
+    root.innerHTML = `${yzUst(p.ad + " · Sonuç")}<div class="stage"><div class="kicker">${esc(p.ad)} · Sonuç</div>
+      <div class="yz-buyuk-puan"><b>${h.puan}</b><span>/ 100${once !== null ? ` · önceki ${once}` : ""}</span></div>${robotDer(mesaj)}
+      <div class="yz-kaz-bar">${sira.map(x => `<div class="yz-kb"><span>${esc(x.z.kisa)}</span><div class="bar"><i style="width:${Math.round(x.r * 100)}%;background:${esc(x.z.renk || "var(--accent)")}"></i></div><b>${x.a} / ${x.b}</b></div>`).join("")}</div>
+      <p class="ek">${esc(YZ.d.puanNotu || "")}</p>
+      <div class="row">${zayif ? `<button class="btn primary" data-hatirla>Hatırla: ${esc(zayif.z.kisa)}</button>` : ""}<button class="btn${zayif ? "" : " primary"}" data-prova>Provalara dön</button><button class="btn ghost" data-yz-ana>Harita</button></div></div>`;
+    yzAnaBagla(root);
+    $("[data-prova]", root).onclick = () => yzGit(root, "prova");
+    const hb = $("[data-hatirla]", root); if (hb) hb.onclick = () => yzGit(root, "hatirla", YZ.d.kazanimlar.indexOf(zayif.z));
+    root.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+  // Yazdır: soru kâğıdı (cevap satırlarıyla) ya da cevap anahtarı (örnek cevap + puanlama listesi)
+  function yzYazdir(p, anahtar) {
+    const w = open("", "_blank");
+    if (!w) { alert("Yazdırma penceresi açılamadı. Tarayıcının açılır pencere engelini kapatıp tekrar dene."); return; }
+    const satir = n => `<div class="sat"></div>`.repeat(n);
+    const govde = p.sorular.map((q, n) => `<section class="s"><h3>${n + 1}. <small>(${q.puan} puan)</small></h3>${(q.metin || []).map(x => `<p>${esc(x)}</p>`).join("")}
+      ${q.svg ? `<div class="g">${q.svg}</div>` : ""}
+      ${q.maddeler.map(m => `<div class="m"><p><b>${m.harf})</b> ${esc(m.soru)} <small>(${m.puan} puan)</small></p>
+        ${anahtar ? `<div class="cv"><b>Örnek cevap:</b> ${esc(m.cevap)}</div><ul class="rb">${(m.anahtarlar || []).map(a => `<li>☐ ${esc(a.ad)} <small>(${Math.round(m.puan / m.anahtarlar.length * 10) / 10} puan)</small></li>`).join("")}</ul>` : satir(4)}</div>`).join("")}</section>`).join("");
+    w.document.write(`<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>${esc(p.ad)}${anahtar ? " · Cevap Anahtarı" : ""}</title><style>
+      body{font-family:Nunito,Segoe UI,Arial,sans-serif;color:#111;margin:18mm 16mm;font-size:13pt;line-height:1.45}
+      header{display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid #111;padding-bottom:8px;margin-bottom:14px} header small{display:block;color:#444}
+      h1{font-size:16pt;margin:0} h3{margin:14px 0 6px} .s{break-inside:avoid-page;margin-bottom:10px} .m{margin:6px 0 12px} .sat{border-bottom:1px solid #999;height:28px}
+      .g{background:#1b2340;border-radius:10px;padding:6px;max-width:440px;-webkit-print-color-adjust:exact;print-color-adjust:exact} .g svg{width:100%;height:auto;display:block}
+      .cv{background:#f1f3f8;border-radius:8px;padding:6px 10px;-webkit-print-color-adjust:exact;print-color-adjust:exact} .rb{margin:4px 0 0;padding-left:18px;list-style:none} .not{color:#444;font-size:10pt;margin-top:16px}
+      @media print{body{margin:12mm}}</style></head><body>
+      <header><div><h1>${esc(S.ders.ders)} · ${esc(YZ.d.baslik)} · ${esc(p.ad)}${anahtar ? " · CEVAP ANAHTARI" : ""}</h1><small>${yzSoruSay()} soru · ${YZ.d.sure || 40} dakika · toplam 100 puan</small></div>${anahtar ? "" : "<div>Ad Soyad: ____________________<br>Puan: ______</div>"}</header>
+      ${govde}<p class="not">${esc(YZ.d.puanNotu || "")} ${anahtar ? "Her işaretli parça, maddenin puanının eşit bir payını alır." : ""}</p>
+      <script>window.onload=()=>setTimeout(()=>print(),300)<\/script></body></html>`);
+    w.document.close();
+    KAYIT.olay("yazili-yazdir", { prova: p.id, mod: anahtar ? "anahtar" : "kagit" });
   }
 
   // ---------- Kuark / ders botu ----------
@@ -3211,6 +3588,7 @@
 
   async function openKonu(id, scroll) {
     const t = allTopics().find(k => k.id === id && k.hazir); if (!t) return;
+    yazilidanCik();
     S.konu = id; S.unit = t.ui; S.botBaslik = null; renderNav(); store.set(key("son"), id);
     $$(".head-actions a[href='#atolye']").forEach(a => a.removeAttribute("aria-pressed"));
     if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id);
@@ -3428,6 +3806,7 @@
     if (t.font) { const l = document.createElement("link"); l.rel = "stylesheet"; l.href = `https://fonts.googleapis.com/css2?family=${t.font}&display=swap`; document.head.appendChild(l); }
   }
 
+  const yaziliVar = () => !!(S.ders.yazili && S.ders.yazili.length);
   async function boot() {
     tts.init(); addEventListener("resize", drawStars);
     try {
@@ -3445,10 +3824,11 @@
     sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data && $("#panel")) setTab(S.tab); };
     $("#units").onclick = e => { const b = e.target.closest(".unit-btn"); if (b) openUnit(+b.dataset.u); };
     $("#topics").onclick = e => { const b = e.target.closest(".topic"); if (b && !b.disabled) { S.donus = null; openKonu(b.dataset.id, true); } };
-    const yol = h => h === "rapor" ? openRapor() : h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : openKonu(h, true);
+    const yol = h => h === "rapor" ? openRapor() : h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : h === "yazili" && yaziliVar() ? openYazili() : openKonu(h, true);
     addEventListener("hashchange", () => yol(location.hash.slice(1)));
     if (isEn()) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#gunluk">Günün Tekrarı</a><a class="head-btn" href="#defter">Kelime Defterim</a>`);
     if (S.ders.atolye) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#atolye">${ICON.okuma}Okuma Atölyesi</a>`);
+    if (yaziliVar()) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn yz-btn" href="#yazili">${ICON.test}Yazılıya Hazırlık</a>`);
     $$(".head-actions a").forEach(l => l.onclick = e => { const h = l.getAttribute("href").slice(1); if (location.hash.slice(1) === h) { e.preventDefault(); yol(h); } });
     const ready = allTopics().filter(k => k.hazir);
     const want = [location.hash.slice(1), store.get(key("son"))].find(id => ready.some(k => k.id === id));
@@ -3456,7 +3836,7 @@
     renderNav(); setupBot(); setupSerit();
     const ozel = location.hash.slice(1);
     KDB.temizle();
-    if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye")) yol(ozel);
+    if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye") || (yaziliVar() && ozel === "yazili")) yol(ozel);
     else if (first) openKonu(first, false); else $("#content").innerHTML = `<div class="notice">Henüz eklenmiş konu yok.</div>`;
     if (ozel !== "rapor") KOC.plan();
     if (BULUT.bilgi()) {
