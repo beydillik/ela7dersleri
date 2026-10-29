@@ -1275,7 +1275,13 @@ html[data-dil="en"] .stage .kicker, html[data-dil="en"] .isinma-etiket, html[dat
 .esik-sec select { font: inherit; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
 
 /* ---------- Yazılıya Hazırlık ---------- */
-.yazili-mod .bot-fab, .yazili-mod .bot-panel { display: none !important; }   /* hazırlıkta sohbet botu yok (Kemal'in kararı) */
+/* Yazılı modunda tam odak (Kemal'in kararı): sohbet botu, konu menüsü, kaydırma şeridi ve başlık düğmeleri gizli */
+.yazili-mod .bot-fab, .yazili-mod .bot-panel, .yazili-mod .nav, .yazili-mod .serit, .yazili-mod .head-actions { display: none !important; }
+.yz-cik { margin-top: 10px; }
+.yz-defter { margin: 0; font-size: 15px; color: var(--muted); } .yz-defter a { color: var(--ink); font-weight: 700; }
+.yz-adim.sirada { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow); }
+.yz-adim.sirada .yz-no { background: var(--accent); }
+.yz-sirada { display: inline-block; margin-left: 6px; font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; background: var(--accent); color: #fff; border-radius: 999px; padding: 1px 8px; vertical-align: 2px; }
 .head-btn.yz-btn { background: var(--gold); color: #1b2340; border-color: var(--gold); display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
 .head-btn.yz-btn svg { width: 18px; height: 18px; }
 .head-btn.yz-btn[aria-pressed="true"] { box-shadow: 0 0 0 3px rgba(255,255,255,.55); }
