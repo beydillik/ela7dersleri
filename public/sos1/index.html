@@ -13,11 +13,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
 <link rel="stylesheet" href="../ortak/defter.css">
 </head>
-<body>
+<body class="ders-sayfa">
 <!-- Bu dosya tüm dersler için aynıdır. Ders bilgisi ./ders.json, konular ./konular/ klasöründen okunur. -->
 <header class="masthead">
   <canvas id="stars" aria-hidden="true"></canvas>
   <div class="wrap">
+    <button class="yan-ac-btn" id="yanAc" aria-label="Konu listesini aç">☰</button>
     <div class="brand">
       <a class="eyebrow" href="../">← Ela'nın 7. Sınıf Defteri</a>
       <h1 id="dersBaslik">Yükleniyor…</h1>
@@ -26,13 +27,11 @@
     <div class="head-actions"><button class="head-btn" id="sinifBtn" aria-pressed="false">Sınıf modu</button></div>
   </div>
 </header>
-<nav class="nav" aria-label="Konular">
-  <div class="wrap">
-    <div class="unit-row" id="units"></div>
-    <div class="topics" id="topics"></div>
-  </div>
-</nav>
-<div class="wrap"><main id="content"><div class="notice">Konular yükleniyor…</div></main></div>
+<div class="duzen">
+  <aside class="yan" id="yan" aria-label="Konular"><div class="yan-tam"></div><div class="yan-ray"></div></aside>
+  <div class="wrap"><main id="content"><div class="notice">Konular yükleniyor…</div></main></div>
+</div>
+<div class="yan-perde" hidden></div>
 <script src="../ortak/defter.js"></script>
 </body>
 </html>

@@ -196,6 +196,7 @@
       "hata-acele": "Yanlıştan sonra açıklamayı okumadan ileri düğmesine dokundu (robot uyardı)",
       "sinav-inceleme": "Sınav Provası'ndan sonra yanlışlarını tek tek incelemeyi bitirdi", "sinav-yeniden": "Sınav Provası'nın yanlışlarını yeniden çözdü (dogru/toplam)",
       mod: "Bu cihazda kullanım modu değişti (Veli Paneli'nden; kullanimModu, once)",
+      menu: "Ela konu menüsünü daralttı ya da açık bıraktı (secim: dar / acik; bu cihazda saklanır)",
       "kart-bekle": "Odaklı mod: Öğren'de bilgi kartı okuma süresi dolmadan 'Sonraki'ye dokundu",
       "hedefli-tekrar": "Odaklı mod: testte tamamlanma eşiğinin altında kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
       "yazili-ac": "Yazılıya Hazırlık bölümü açıldı (konu: yazili:<id>)", "yazili-madde": "Yazılıya Hazırlık'ta bir sorunun bir maddesi bitti (tur: yazili-meb / yazili-ikiz; oran: işaretlenen parça oranı; otomatik: otomatik bulunan oran)",
@@ -272,7 +273,7 @@
   // İlerleme birleştirme: son eşitlemeden beri bu cihazda değişen anahtar buluta yazılır; değişmeyen anahtar buluttakiyle güncellenir.
   // =================================================================
   const MOTOR_URL = (document.currentScript && document.currentScript.src) || location.href;
-  const BULUT_HARIC = /^ela7:(cihaz|oturum|pin|bulut|bulut-anlik|bulut-say|temizlik|sinif|ayar|veli-sekme|bot-onay)$|:sekme:|:oyun$/;
+  const BULUT_HARIC = /^ela7:(cihaz|oturum|pin|bulut|bulut-anlik|bulut-say|temizlik|sinif|ayar|veli-sekme|bot-onay|menu-el)$|:sekme:|:oyun$/;
   const BULUT_TETIK = ["test-bitti", "sinav-bitti", "ogren-bitti", "atolye-tur"];
   const BULUT_PARCA = 800;   // oturum belgesi başına en çok olay
   const BULUT = {
@@ -348,7 +349,7 @@
   // Veli ayarları (Veli Paneli'nden değiştirilir; bağlı cihazda buluttan gelir). Varsayılan = Normal mod.
   // Ayarı hiç yapılmamış ve bağlı olmayan cihaz (öğretmen, arkadaş) her zaman Normal moddadır.
   const AYAR_VARSAYILAN = { mod: "normal", robotUyari: true, sikBekle: false, oyunKilit: false, ogrenKilit: false, hataDur: true, sinavAnlik: true,
-    kartBekle: false, hedefliTekrar: false, tamamEsik: 80, isaretler: [] };
+    kartBekle: false, hedefliTekrar: false, tamamEsik: 80, menu: "otomatik", isaretler: [] };
   // Bağlı (Ela'nın) cihazında, veli henüz mod seçmemişse (ayarda "mod" alanı yoksa) varsayılan Destekli'dir (Kemal'in kararı, 25 Ekim 2026).
   // Bağlı olmayan cihaz (öğretmen, arkadaş) ayarı yoksa Normal'dir.
   const ayarCoz = (a, bagli) => { a = a || {}; const eski = bagli && !a.mod;
@@ -3491,6 +3492,8 @@
       <div class="mod-kartlar">${MOD_SIRA.map(k => `<button class="mod-kart" data-mod="${k}" aria-pressed="${m === k}" ${kilit ? "disabled" : ""}><b>${MODLAR[k].ad}${m === k ? " ✓" : ""}</b><span>${MODLAR[k].kisa}</span></button>`).join("")}</div>
       <div class="esik-sec"><label for="esikSec"><b>Tamamlanma eşiği</b> <small>Yeşil tik ve Odaklı moddaki kısa tekrar bu eşiğe göre: son testte ilk denemede en az</small></label>
         <select id="esikSec" ${kilit ? "disabled" : ""}>${ESIKLER.map(e => `<option value="${e}" ${Math.round(esikOf(ay) * 100) === e ? "selected" : ""}>%${e}</option>`).join("")}</select></div>
+      <div class="esik-sec"><label for="menuSec"><b>Konu menüsü</b> <small>${esc((MENU_SECENEK.find(x => x[0] === (ay.menu || "otomatik")) || MENU_SECENEK[0])[2])} Ela menüdeki “« Daralt” düğmesiyle kendi cihazında değiştirebilir; bu ayar değişince onun seçimi sıfırlanır.</small></label>
+        <select id="menuSec" ${kilit ? "disabled" : ""}>${MENU_SECENEK.map(([v, a]) => `<option value="${v}" ${(ay.menu || "otomatik") === v ? "selected" : ""}>${a}</option>`).join("")}</select></div>
       ${VELI.bulut && !(VELI.bulut.ogr.ayar || {}).mod ? `<p class="ek">Henüz mod seçilmediği için Ela'nın bağlı cihazlarında <b>Destekli</b> mod varsayılan olarak açık.</p>` : ""}
       ${m === "ozel" ? `<p class="ek">Şu an <b>Özel</b> ayarlar kullanılıyor (aşağıdaki Ayarlar bölümünde tek tek değiştirildi). Bir moda dokununca o modun ayarları uygulanır.</p>` : ""}
       <div class="oneri oneri-${on.tur}"><b>Seviye önerisi:</b> ${on.metin}${on.hedef && !kilit ? ` <button class="btn" data-mod="${on.hedef}">${modAdi(on.hedef)} moda geç</button>` : ""}</div></section>
@@ -3509,6 +3512,9 @@
     const ks = $("#karsSec", p); if (ks) ks.onchange = () => { VELI.karsSec = ks.value; yenile(); };
     const es = $("#esikSec", p); if (es) es.onchange = () => { const a = { ...VELI.ayar() }, once = Math.round(esikOf(a) * 100), yeni = +es.value; if (once === yeni) return;
       a.tamamEsik = yeni; a.mod = modBul(a); a.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Tamamlanma eşiği: %${once} → %${yeni}`, tur: "esik" }]; yaz(a); };
+    const ms = $("#menuSec", p); if (ms) ms.onchange = () => { const a = { ...VELI.ayar() }, once = a.menu || "otomatik", yeni = ms.value; if (once === yeni) return;
+      const ad = v => (MENU_SECENEK.find(x => x[0] === v) || [, v])[1];
+      a.menu = yeni; a.mod = modBul(a); a.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Konu menüsü: ${ad(once)} → ${ad(yeni)}`, tur: "menu" }]; yaz(a); };
     $("#ozetYaz", p).onclick = () => ozetYazdir(olaylar, kodlar);
   }
 
@@ -3630,42 +3636,109 @@
   const isaretHTML = (s, e = tamamEsik()) => ISARET_AD[s] ? `<span class="tik tik-${s}" title="${esc(ISARET_AD[s](e))}" aria-label="${esc(ISARET_AD[s](e))}">${s === "yarim" ? "" : "✓"}</span>` : "";
   const konuIsaret = k => k.hazir ? konuIsaretHesap(s => store.get(key(s), null), k) : "";
 
-  // ---------- Kompakt şerit ----------
-  // Sayfa en üstteyken konu listesi tam açık. Konu başlığı ve sekmeler ekrandan çıkınca üstte ince bir şerit belirir:
-  // "☰ Konular" (dokununca liste şeridin altında açılır) · konu adı · sekmeler. Fareyle üstüne gelince açılmaz (bilerek).
-  function navHTML(ui) {
-    const u = S.ders.uniteler[ui]; let no = 0;
-    return {
-      units: S.ders.uniteler.map((x, i) => { const hz = x.konular.filter(k => k.hazir && !isDurak(k)), tm = hz.filter(k => konuIsaret(k) === "tamam").length;
-        return `<button class="unit-btn" data-u="${i}" aria-pressed="${i === ui}">${esc(x.ad)}${hz.length ? ` <span class="u-say${tm === hz.length ? " hepsi" : ""}" title="${tm} / ${hz.length} konu tamamlandı">${tm}/${hz.length}</span>` : ""}</button>`; }).join(""),
-      topics: u.konular.length ? u.konular.map(k => { const dk = isDurak(k); if (!dk) no++;
+  // ---------- Konu menüsü (30 Ekim 2026): solda dikey ağaç menü ----------
+  // Geniş ekranda (≥ 900 px) solda yapışkan ağaç: ünite başlıkları, yalnız açık ünite genişler. Dar ekranda aynı menü ☰ ile açılan çekmece.
+  // Dar şerit ("menu-dar"): yalnız ünite numaraları + açık konunun numarası; ☰ ile menü üstte açılır (göz atma).
+  // Veli ayarı "menu": otomatik (Normal modda açık; Destekli/Odaklı modda konu açıkken dar) / acik / dar.
+  // Ela'nın "« Daralt" / "Açık kalsın" seçimi bu cihazda saklanır (MENU_YEREL); veli ayarı ya da mod değişince geçersiz olur.
+  const MENU_YEREL = "ela7:menu-el";
+  const MENU_SECENEK = [["otomatik", "Otomatik", "Normal modda açık; Destekli ve Odaklı modda konu açılınca dar şeride iner."],
+    ["acik", "Hep açık", "Konu listesi solda hep açık durur."], ["dar", "Hep dar", "Solda yalnız ünite numaraları; ☰ ile açılır."]];
+  const genisEkran = () => matchMedia("(min-width: 900px)").matches;
+  const menuImza = a => `${a.menu || "otomatik"}|${modBul(a)}`;
+  function menuDar() {
+    const a = ayar(), y = store.get(MENU_YEREL, null);
+    if (y && y.imza === menuImza(a)) return y.v === "dar";
+    if (a.menu === "acik") return false;
+    if (a.menu === "dar") return true;
+    return ["destekli", "odakli"].includes(modBul(a)) && !!S.data;   // otomatik
+  }
+  const menuSec = v => { store.set(MENU_YEREL, { v, imza: menuImza(ayar()) }); KAYIT.olay("menu", { secim: v }); };
+  const uniteNo = (u, i) => u.no > 0 ? String(u.no) : u.no === 0 ? u.ad.trim()[0] : String(i + 1);
+  function agacHTML(acik) {
+    const goz = document.body.classList.contains("menu-goz"), cek = !genisEkran();
+    const bas = cek || goz ? `<button class="yan-kucuk" data-kapat aria-label="Menüyü kapat">✕ Kapat</button>${goz ? `<button class="yan-kucuk" data-sabit title="Menü açık kalsın">Açık kalsın »</button>` : ""}`
+      : `<button class="yan-kucuk" data-dar title="Menüyü daralt">« Daralt</button>`;
+    return `<div class="yan-bas"><span>Konular</span><span class="yan-bas-d">${bas}</span></div>` + S.ders.uniteler.map((u, i) => {
+      const hz = u.konular.filter(k => k.hazir && !isDurak(k)), tm = hz.filter(k => konuIsaret(k) === "tamam").length, ac = i === acik;
+      const say = hz.length ? `<span class="u-say${tm === hz.length ? " hepsi" : ""}" title="${tm} / ${hz.length} konu tamamlandı">${tm}/${hz.length}</span>` : "";
+      let no = 0;
+      const konular = !ac ? "" : `<div class="yan-konular">${u.konular.length ? u.konular.map(k => { const dk = isDurak(k); if (!dk) no++;
         const ek = !k.hazir ? '<span class="soon">yakında</span>' : dk && durakKayit.zaman(k.id) ? '<span class="due">tekrar zamanı</span>' : "";
         return `<button class="topic${dk ? " durak" : ""}" data-id="${esc(k.id)}" ${k.hazir ? "" : "disabled"} aria-current="${S.konu === k.id}">
-        <span class="num">${dk ? ICON.durak : no}</span><span>${esc(k.baslik)}</span>${ek}${isaretHTML(konuIsaret(k))}</button>`; }).join("")
-        : `<div class="empty-unit">Bu ünitenin konuları sırası gelince eklenecek.</div>`
-    };
+          <span class="num">${dk ? ICON.durak : no}</span><span class="t-ad">${esc(k.baslik)}</span>${ek}${isaretHTML(konuIsaret(k))}</button>`; }).join("")
+        : `<div class="empty-unit">Bu ünitenin konuları sırası gelince eklenecek.</div>`}</div>`;
+      return `<button class="yan-unite${i === S.unit ? " bu" : ""}" data-u="${i}" aria-expanded="${ac}"><span class="ok" aria-hidden="true"></span><span class="ad">${esc(u.ad)}</span>${say}</button>${konular}`;
+    }).join("");
   }
+  function rayHTML() {
+    const t = S.data && allTopics().find(k => k.id === S.konu);
+    return `<button class="ray-ac" data-ac aria-label="Konu listesini aç"><b aria-hidden="true">☰</b>Konular</button>` +
+      S.ders.uniteler.map((u, i) => `<button class="ray-u" data-ru="${i}" aria-current="${i === S.unit}" title="${esc(u.ad)}">${esc(uniteNo(u, i))}</button>`).join("") +
+      (t ? `<div class="ray-konu" title="${esc(t.baslik)}"><small>${isDurak(t) ? "Durak" : "Konu"}</small>${isDurak(t) ? ICON.durak : konuNoOf(t.id)}</div>` : "");
+  }
+  function menuUygula() {
+    const dar = genisEkran() && menuDar();
+    document.body.classList.toggle("menu-dar", dar);
+    if (!dar) document.body.classList.remove("menu-goz");
+    if (genisEkran()) document.body.classList.remove("cekmece-acik");
+    const ac = document.body.classList.contains("menu-goz") || document.body.classList.contains("cekmece-acik");
+    $(".yan-perde").hidden = !ac;
+  }
+  function renderNav() {
+    const yan = $("#yan"); if (!yan || !S.ders) return;
+    if (S.konu !== S.navKonu) { S.navKonu = S.konu; S.agacUnit = null; }   // yeni konu açılınca onun ünitesi genişler
+    menuUygula();
+    const tam = $(".yan-tam", yan), ust = tam.scrollTop;
+    tam.innerHTML = agacHTML(S.agacUnit ?? S.unit); tam.scrollTop = ust;
+    $(".yan-ray", yan).innerHTML = rayHTML();
+    // Açık konu görünmüyorsa kaydır: mümkünse ünite başlığı da görünsün (Ela hangi ünitede olduğunu görsün)
+    const cur = $(".topic[aria-current='true']", tam), gor = tam.clientHeight - 80;   // alttaki ~60 px bant yüzünden ilk ekranda görünmez
+    if (cur && (cur.offsetTop < tam.scrollTop + 40 || cur.offsetTop + cur.offsetHeight > tam.scrollTop + gor)) {
+      const ub = $(".yan-unite[aria-expanded='true']", tam), hedef = ub ? ub.offsetTop - 44 : cur.offsetTop - 120;
+      tam.scrollTop = Math.max(0, cur.offsetTop + cur.offsetHeight - hedef > gor ? cur.offsetTop - 120 : hedef);
+    }
+  }
+  const menuKapat = () => { document.body.classList.remove("menu-goz", "cekmece-acik"); renderNav(); };
+  // Konu listesini aç: dar ekranda çekmece, dar şeritte göz atma; geniş ve açık menüde yalnız açık konuya kaydırır
+  function menuAc(ui) {
+    S.agacUnit = ui ?? S.unit;
+    if (!genisEkran()) document.body.classList.add("cekmece-acik");
+    else if (document.body.classList.contains("menu-dar")) document.body.classList.add("menu-goz");
+    renderNav();
+    const ilk = $("#yan .yan-tam .topic[aria-current='true']") || $("#yan .yan-tam .yan-unite[aria-expanded='true']"); if (ilk) ilk.focus({ preventScroll: true });
+  }
+  function setupYan() {
+    const yan = $("#yan"); S.navKonu = S.konu;
+    yan.onclick = e => {
+      const u = e.target.closest(".yan-unite"); if (u) { const i = +u.dataset.u; S.agacUnit = (S.agacUnit ?? S.unit) === i ? -1 : i; renderNav(); return; }
+      const t = e.target.closest(".topic"); if (t && !t.disabled) { document.body.classList.remove("menu-goz", "cekmece-acik"); S.donus = null; openKonu(t.dataset.id, true); return; }
+      if (e.target.closest("[data-dar]")) { menuSec("dar"); renderNav(); return; }
+      if (e.target.closest("[data-sabit]")) { menuSec("acik"); document.body.classList.remove("menu-goz"); renderNav(); return; }
+      if (e.target.closest("[data-kapat]")) { menuKapat(); return; }
+      if (e.target.closest("[data-ac]")) { menuAc(); return; }
+      const r = e.target.closest("[data-ru]"); if (r) menuAc(+r.dataset.ru);
+    };
+    $(".yan-perde").onclick = menuKapat;
+    const hb = $("#yanAc"); if (hb) hb.onclick = () => menuAc();
+    addEventListener("keydown", e => { if (e.key === "Escape" && (document.body.classList.contains("menu-goz") || document.body.classList.contains("cekmece-acik"))) menuKapat(); });
+    let gen = genisEkran(); addEventListener("resize", () => { if (genisEkran() !== gen) { gen = genisEkran(); renderNav(); } });
+  }
+
+  // ---------- Kompakt şerit ----------
+  // Konu başlığı ve sekmeler ekrandan çıkınca üstte ince bir şerit belirir: konu adı · sekmeler. Dar ekranda ve dar şeritte
+  // başta "☰ Konular" da vardır (menüyü açar); geniş ekranda açık menü zaten solda durduğu için bu düğme gizlidir.
   function setupSerit() {
     const el = document.createElement("div"); el.className = "serit"; el.setAttribute("aria-hidden", "true");
-    el.innerHTML = `<div class="wrap serit-ic"><button class="serit-konular" aria-expanded="false">☰ Konular</button><span class="serit-ad"></span><div class="serit-tabs" role="tablist"></div></div>
-      <div class="serit-liste" hidden><div class="wrap"><div class="unit-row"></div><div class="topics"></div></div></div>`;
+    el.innerHTML = `<div class="wrap serit-ic"><button class="serit-konular">☰ Konular</button><span class="serit-ad"></span><div class="serit-tabs" role="tablist"></div></div>`;
     document.body.appendChild(el); S.serit = el;
-    const liste = $(".serit-liste", el), kb = $(".serit-konular", el);
-    const listeCiz = () => { const h = navHTML(S.serUnit ?? S.unit); $(".unit-row", liste).innerHTML = h.units; $(".topics", liste).innerHTML = h.topics; };
-    const listeKapat = () => { liste.hidden = true; kb.setAttribute("aria-expanded", "false"); };
-    S.seritListe = () => { if (!liste.hidden) listeCiz(); };
-    kb.onclick = () => { const ac = liste.hidden; if (ac) { S.serUnit = S.unit; listeCiz(); } liste.hidden = !ac; kb.setAttribute("aria-expanded", ac); };
-    liste.onclick = e => {
-      const u = e.target.closest(".unit-btn"); if (u) { S.serUnit = +u.dataset.u; listeCiz(); return; }
-      const t = e.target.closest(".topic"); if (t && !t.disabled) { listeKapat(); S.donus = null; openKonu(t.dataset.id, true); }
-    };
-    document.addEventListener("click", e => { if (!liste.hidden && !el.contains(e.target)) listeKapat(); });
+    $(".serit-konular", el).onclick = () => menuAc();
     $(".serit-tabs", el).onclick = e => { const b = e.target.closest("[data-st]"); if (b) gitSekme(b.dataset.st); };
     let bekle = false;
     const kontrol = () => {
       bekle = false;
       const h = $("#content .konu-head"), t = h && ($(".tabs", h) || h), goster = !!t && t.getBoundingClientRect().bottom < 0;
-      el.classList.toggle("acik", goster); el.setAttribute("aria-hidden", String(!goster)); if (!goster) listeKapat();
+      el.classList.toggle("acik", goster); el.setAttribute("aria-hidden", String(!goster));
     };
     addEventListener("scroll", () => { if (!bekle) { bekle = true; requestAnimationFrame(kontrol); } }, { passive: true });
     S.seritGuncelle = () => {
@@ -3674,13 +3747,6 @@
       $(".serit-tabs", el).innerHTML = h ? $$(".tabs .tab", h).map(b => `<button class="serit-tab" role="tab" data-st="${esc(b.dataset.tab)}" aria-selected="${b.getAttribute("aria-selected") === "true"}">${b.innerHTML}</button>`).join("") : "";
       kontrol();
     };
-  }
-
-  function renderNav() {
-    const h = navHTML(S.unit);
-    $("#units").innerHTML = h.units; $("#topics").innerHTML = h.topics;
-    S.seritListe && S.seritListe();
-    const cur = $(".topic[aria-current='true']"); if (cur) cur.scrollIntoView({ block: "nearest", inline: "nearest" });
   }
 
   function setTab(t) {
@@ -3733,27 +3799,10 @@
       KAYIT.olay("konu-ac"); S.sekmeKayit = false;
       if (isDurak(S.data)) { S.donus = null; await Promise.all([yukleKonular(S.data.kapsar || []), sinavYukle(id)]); if (S.konu !== id) return; renderDurak(); }
       else { await yukleKonular(TEKRAR.oncekiler(id)); if (S.konu !== id) return; renderKonu(konuNoOf(id)); }
+      renderNav();   // konu yüklendi: menü durumu (otomatikte dar şerit) ve şeritteki konu numarası güncellenir
       if (isEn() && !isDurak(S.data)) { store.set(key("acildi:" + id), true); srs.add(wordsOf(S.data)); }
       if (scroll) $("#content").scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (e) { $("#content").innerHTML = `<div class="notice">Bu konu açılamadı. İnternet bağlantını kontrol edip sayfayı yenile.</div>`; }
-  }
-
-  // Ünite seçimi: açık konu bu ünitedeyse dokunma; ünitede hazır konu varsa ilkini aç; yoksa "Yakında" göster.
-  function openUnit(ui) {
-    S.unit = ui; renderNav();
-    const cur = allTopics().find(k => k.id === S.konu);
-    if (cur && cur.ui === ui) { if (!S.data) openKonu(cur.id, false); return; }
-    const ready = S.ders.uniteler[ui].konular.find(k => k.hazir);
-    if (ready) { openKonu(ready.id, false); return; }
-    tts.stop(); S.data = null;
-    const u = S.ders.uniteler[ui];
-    const liste = u.konular.length
-      ? `<ol class="yakinda-liste">${u.konular.map(k => `<li>${esc(k.baslik)}</li>`).join("")}</ol>` : "";
-    $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(u.ad)}</span><span class="pill">Yakında</span></div>
-      <h2>Bu ünite yakında geliyor</h2></section>
-      <div class="notice"><p>Bu ünitenin konuları hazırlanıyor. Hazır olan konular, konu listesinden açılabilir hâle gelecek.</p>
-      ${liste ? `<p>Bu ünitede öğreneceklerimiz:</p>${liste}` : ""}</div>`;
-    S.seritGuncelle && S.seritGuncelle();
   }
 
   // Başlık bandı deseni: varsayılan yıldızlar; ders.json "tema.desen" ile değişir (ör. "harita").
@@ -3931,6 +3980,10 @@
     let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
     const desen = DESEN[S.ders && S.ders.tema && S.ders.tema.desen] || DESEN.yildiz;
     desen(g, r.width, r.height, rnd);
+    // İnce bantta desen ders adının arkasına düşmesin: yazının altını yumuşakça sil
+    const br = $(".masthead .brand"); if (br && r.width > 700) { const x = br.getBoundingClientRect().right - r.left + 16, gr = g.createLinearGradient(0, 0, x + 70, 0);
+      gr.addColorStop(0, "rgba(0,0,0,.85)"); gr.addColorStop(x / (x + 70), "rgba(0,0,0,.85)"); gr.addColorStop(1, "rgba(0,0,0,0)");
+      g.globalAlpha = 1; g.globalCompositeOperation = "destination-out"; g.fillStyle = gr; g.fillRect(0, 0, x + 70, r.height); g.globalCompositeOperation = "source-over"; }
   }
 
   // Derse özgü tema: ders.json'da "tema": {"ad": "...", "desen": "...", "font": "<Google Fonts family parametresi>"}.
@@ -3957,8 +4010,6 @@
     const applyClass = on => { document.body.classList.toggle("sinif", on); sb.setAttribute("aria-pressed", on); };
     applyClass(store.get("ela7:sinif", false));
     sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data && $("#panel")) setTab(S.tab); };
-    $("#units").onclick = e => { const b = e.target.closest(".unit-btn"); if (b) openUnit(+b.dataset.u); };
-    $("#topics").onclick = e => { const b = e.target.closest(".topic"); if (b && !b.disabled) { S.donus = null; openKonu(b.dataset.id, true); } };
     const yol = h => h === "rapor" ? openRapor() : h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : h === "yazili" && yaziliVar() ? openYazili() : openKonu(h, true);
     addEventListener("hashchange", () => yol(location.hash.slice(1)));
     if (isEn()) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#gunluk">Günün Tekrarı</a><a class="head-btn" href="#defter">Kelime Defterim</a>`);
@@ -3968,7 +4019,7 @@
     const ready = allTopics().filter(k => k.hazir);
     const want = [location.hash.slice(1), store.get(key("son"))].find(id => ready.some(k => k.id === id));
     const first = want || (ready.length ? ready[ready.length - 1].id : null);
-    renderNav(); setupBot(); setupSerit();
+    setupYan(); renderNav(); setupBot(); setupSerit();
     const ozel = location.hash.slice(1);
     KDB.temizle();
     if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye") || (yaziliVar() && ozel === "yazili")) yol(ozel);

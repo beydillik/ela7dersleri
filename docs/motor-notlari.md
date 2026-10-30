@@ -9,7 +9,13 @@ Bu notlar 15 Ekim 2026'da ela-ders-defteri skill'inin 10. bölümüne taşındı
 - Rapor JSON: `konuDurumu` (konu konu Öğren, test ilk/son, zorlandığı kavramlar, Ara Durak tarama ve sınav provası), `oturumlar`, `olaylar`, `sozluk`.
 
 ## Tasarım
-- `.nav` sabit değil. Kaydırınca `.serit` (☰ Konular açılır listesi + konu adı + sekmeler) üstte belirir (`setupSerit`). Fareyle üzerine gelince açılmaz (bilerek).
+- **Konu menüsü (30 Ekim 2026):** eski üst menü (`.nav`, `#units`, `#topics`, `openUnit`) kaldırıldı. Ders sayfası iskeleti: `body.ders-sayfa` → ince `.masthead` (dar ekranda `#yanAc` ☰) + `.duzen` [`aside#yan.yan` (`.yan-tam` ağaç, `.yan-ray` dar şerit) | `.wrap > #content`] + `.yan-perde`.
+  - Geniş ekran (≥ 900 px): solda yapışkan ağaç (`agacHTML`); yalnız açık ünite genişler (`S.agacUnit`; yeni konu açılınca onun ünitesi). Ünite başlığına dokunmak yalnız açar/kapar, konu açmaz; açık ünite başlığı liste içinde yapışkan.
+  - Dar şerit `body.menu-dar` (`rayHTML`: ☰, ünite numaraları, açık konu numarası); ☰ ya da ünite numarası → `body.menu-goz` (menü üstte açılır, perde). Dar ekran (< 900 px): menü çekmece `body.cekmece-acik` (☰ bantta ve şeritte; Esc/perde kapatır).
+  - Veli ayarı `menu`: `otomatik` (varsayılan; Normal modda açık, Destekli/Odaklı modda konu açıkken dar) / `acik` / `dar`; mod eşleşmesinin (`modBul`) dışında, değişince işaret (`tur: "menu"`). Ela'nın “« Daralt” / “Açık kalsın” seçimi `ela7:menu-el` = `{v, imza}` (cihaza özgü, `BULUT_HARIC`); imza = `menu|mod`, veli ayarı ya da mod değişince geçersiz. Olay `menu` (`secim`).
+  - `.serit` korunur: kaydırınca konu adı + sekmeler; geniş ekranda menünün sağından başlar ve açık menüde ☰ gizlidir. Fareyle üzerine gelince açılmaz (bilerek).
+  - Bant desenleri yazının arkasında silinir (`drawStars` sonunda `destination-out`); yeni desen eklerken ayrıca başlık boşluğu bırakmak gerekmez.
+  - Playwright: tam sayfa görüntüde yapışkan menü sorun çıkarmaz; menü testinde `[data-dar]`, `[data-ac]`, `[data-ru]`, `[data-sabit]`, `[data-kapat]`, `.yan-unite`, `.yan-konular .topic` kullan.
 - Her sekmenin sonunda "Sıradaki" düğmesi: Öğren → Konuya Bak → Tekrar → Test → sıradaki konu. Ara Durak sekme sırası: Hatırla → Tarama Testi → Oyunlar → Sınav Provası (en sonda: bütün çalışmalardan sonra prova) → sıradaki konu.
 - Dersin robotu anlatıcı (`robotDer(metin, "buyuk"|"kucuk")`): bütün giriş ve yönerge metinleri (konu girişi, Isınma, Hatırlayalım, Düşün ve Yaz, Konuya Bak girişi, oyun yönergeleri, test/tarama/sınav girişi ve sonuç mesajları, Hazır mısın?, Atölye) dersin maskotunun konuşma balonunda. Yeni ekranda yönerge yazarken `<p class="big">` yerine `robotDer` kullan.
 
