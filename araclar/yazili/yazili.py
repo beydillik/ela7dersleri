@@ -33,6 +33,9 @@ def sira_tamam(metin, sira):
 
 class Yazili:
     def __init__(self, kod, id, **ust):
+        """ust: baslik, ders, senaryo, sure, tarih, dagilim, giris, kapsamDisi, puanNotu, kaynakNotu; isteğe bağlı
+        soruBaslik/soruEtiket/soruGiris (MEB dışı soru seti, ör. öğretmenin çalışma kâğıdı), kazanimAd ("konu"),
+        ikizsiz=True (yalnız verilen sorular: "Benzerini çöz" yok)."""
         self.kod, self.id = kod, id
         self.d = {"id": id, **ust, "kazanimlar": [], "formuller": [], "mebSorular": [], "kuarkHata": [], "provalar": []}
 
@@ -101,7 +104,7 @@ class Yazili:
         for q in d["mebSorular"]:
             if q["id"] in ids: h.append("id tekrar " + q["id"])
             ids.add(q["id"]); self._soru(q, q["id"], h)
-            if len(q.get("ikizler", [])) < 1: h.append(q["id"] + ": ikiz yok")
+            if len(q.get("ikizler", [])) < 1 and not d.get("ikizsiz"): h.append(q["id"] + ": ikiz yok")
             for i, z in enumerate(q.get("ikizler", [])):
                 z.setdefault("kazanim", q["kazanim"]); z.setdefault("id", f"{q['id']}i{i + 1}")
                 if z["id"] in ids: h.append("id tekrar " + z["id"])

@@ -1,0 +1,4265 @@
+{
+ "id": "d1y1",
+ "baslik": "1. Dönem 1. Yazılı",
+ "ders": "Teknoloji ve Tasarım",
+ "senaryo": "Öğretmenin çalışma kâğıdı",
+ "sure": 40,
+ "tarih": "2026-11-02",
+ "dagilim": {
+  "Ü1·A": 3,
+  "Ü1·B": 3,
+  "Ü2·A": 3,
+  "Ü2·B": 1
+ },
+ "soruBaslik": "Öğretmenin Soruları",
+ "soruEtiket": "Soru",
+ "kazanimAd": "konu",
+ "ikizsiz": true,
+ "soruGiris": "Bunlar öğretmeninin gönderdiği <b>15 soru</b>. Yazılıda bunlardan <b>10'u</b> çıkacak. Bazılarında önce kısa bir ısınma var; sonra cevabı <b>yazarak</b> ver. Eksik kalan parçalar Yanlış Defterim'e gider.",
+ "giris": "Öğretmeninin gönderdiği çalışma kâğıdında <b>15 soru</b> var; yazılıda bunlardan <b>10'u</b> sorulacak. Hepsi 1. ve 2. üniteden. Önce 4 konu kartına bak, sonra 15 soruyu yazarak çöz, en sonda 10 soruluk prova yap.",
+ "kapsamDisi": [
+  "3. Ünite ve sonrası (tasarım süreci, teknik resim, ergonomi…)",
+  "Endüstri devrimlerinin ayrıntıları (1.0–5.0)",
+  "Ülkelerin teknoloji karşılaştırması, Ar-Ge, yeni teknolojiler",
+  "Analoji ve ürünü yeniden yorumlama",
+  "Denge, ritim, harmoni gibi diğer ilkelerin ayrıntısı"
+ ],
+ "puanNotu": "Puanlar tahminidir: 10 soru, her biri 10 puan sayıldı. Öğretmen puanları farklı dağıtabilir.",
+ "kaynakNotu": "Sorular öğretmenin çalışma kâğıdından (15 soru). Cevaplar Teknoloji ve Tasarım 7 ders kitabından (Karaca, 2022). Kitap dışı: mucit, TDK tanımı (Habertürk'ün aktarımı): https://www.haberturk.com/ne-demek/mucit-ne-anlama-gelir · dokunun tasarıma etkileri: Ankara Üniversitesi Açık Ders, Görsel Tasarım Öge ve İlkeleri (Doku): https://acikders.ankara.edu.tr/mod/resource/view.php?id=101429 · valör, form, zıtlık: MEB Görsel Sanatlar Dersi Öğretim Programı (2018): https://mufredat.meb.gov.tr/Dosyalar/2018121111026326-GORSEL%20SANATLAR.pdf ve TT programı 2. ünite: https://tymm.meb.gov.tr/teknoloji-tasarim-dersi/unite/1438",
+ "kazanimlar": [
+  {
+   "kod": "Ü1·A",
+   "ad": "Teknoloji kavramını açıklar; buluş, keşif ve icatı ayırt eder.",
+   "kisa": "Teknoloji, Keşif ve İcat",
+   "soru": 3,
+   "soruNot": "Kâğıtta 4 soru: 1, 4, 8, 9",
+   "renk": "#1d6fa3",
+   "konular": [
+    "u1k1"
+   ],
+   "sayfa": "s. 11",
+   "svg": "<svg viewBox='0 0 360 190' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Keşif var olanı bulmak, icat var olanları birleştirip yeni bir şey yapmaktır' font-family='Nunito, sans-serif'><text text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'><tspan x='90' y='22.0'>KEŞİF / BULUŞ</tspan></text><circle cx='78' cy='92' r='34' fill='none' stroke='#f5f6fa' stroke-width='4'/><line x1='102' y1='116' x2='126' y2='140' stroke='#f5f6fa' stroke-width='7' stroke-linecap='round'/><circle cx='78' cy='86' r='11' fill='#ff8a8a'/><path d='M78 75 q4 -8 10 -8' stroke='#5fd08f' stroke-width='3' fill='none'/><line x1='78' y1='100' x2='78' y2='116' stroke='#8ee3d6' stroke-width='3' stroke-linecap='round'/><polygon points='78,116 74.1,107.9 81.9,107.9' fill='#8ee3d6'/><text text-anchor='middle' font-size='11' font-weight='700' fill='#a3abc6'><tspan x='90' y='161.9'>Vardı, bilinmiyordu:</tspan><tspan x='90' y='174.0'>bulundu</tspan></text><line x1='180' y1='18' x2='180' y2='182' stroke='#a3abc6' stroke-width='2' stroke-dasharray='5 6'/><text text-anchor='middle' font-size='13' font-weight='800' fill='#6fb3ff'><tspan x='270' y='22.0'>İCAT</tspan></text><rect x='200' y='50' width='46' height='30' rx='8' fill='#8ee3d6' fill-opacity='.18' stroke='#8ee3d6' stroke-width='2'/><text text-anchor='middle' font-size='10' font-weight='700' fill='#f5f6fa'><tspan x='223.0' y='68.5'>tahta</tspan></text><text text-anchor='middle' font-size='18' font-weight='800' fill='#f5f6fa'><tspan x='256' y='70.0'>+</tspan></text><rect x='266' y='50' width='46' height='30' rx='8' fill='#ff7a33' fill-opacity='.18' stroke='#ff7a33' stroke-width='2'/><text text-anchor='middle' font-size='10' font-weight='700' fill='#f5f6fa'><tspan x='289.0' y='68.5'>ateş</tspan></text><line x1='256' y1='88' x2='256' y2='112' stroke='#f2c14e' stroke-width='3' stroke-linecap='round'/><polygon points='256,112 252.1,103.9 259.9,103.9' fill='#f2c14e'/><rect x='216' y='118' width='80' height='30' rx='8' fill='#f2c14e' fill-opacity='.18' stroke='#f2c14e' stroke-width='2'/><text text-anchor='middle' font-size='11' font-weight='700' fill='#f5f6fa'><tspan x='256.0' y='136.8'>kibrit</tspan></text><text text-anchor='middle' font-size='11' font-weight='700' fill='#a3abc6'><tspan x='270' y='161.9'>Var olanlar birleşti:</tspan><tspan x='270' y='174.0'>yeni şey yapıldı</tspan></text></svg>",
+   "maddeler": [
+    "<b>Teknoloji:</b> Araç-gereç yapabilmek için gereken <b>bilgi ve yetenek</b>tir. Bir işi daha iyi, daha hızlı, daha kolay, daha ekonomik ve daha verimli yapma girişimidir. (s. 11)",
+    "Teknolojinin amacı insan hayatının kalitesini artırmaktır. (s. 11)",
+    "<b>Keşif (buluş):</b> Daha önce <b>var olan</b> ama bilinmeyen bir şeyin bulunmasıdır. Örnek: ateşin, yer çekiminin, suyun kaldırma kuvvetinin fark edilmesi; bilinmeyen bir kıtanın ya da gezegenin bulunması. (s. 11)",
+    "<b>İcat:</b> Var olan teknolojilerin çaba ve araştırmayla <b>yeni ve benzersiz</b> biçimde bir araya getirilmesidir. Örnek: kibrit, araba, daktilo. (s. 11)",
+    "Fark: keşifte var olan <b>bulunur</b>, icatta daha önce olmayan bir şey <b>yapılır</b>. (s. 11)",
+    "İcat yapan kişiye <b>mucit</b> denir. (kitap dışı: TDK)"
+   ],
+   "kelimeler": [
+    "bilgi ve yetenek",
+    "araç-gereç",
+    "daha iyi, hızlı, kolay",
+    "var olan ama bilinmeyen",
+    "yeni ve benzersiz",
+    "bir araya getirmek",
+    "mucit"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Keşif ve icat aynı şeydir.",
+     "dogru": "Keşif: var olanı bulmak. İcat: var olanları birleştirip yeni bir şey yapmak."
+    },
+    {
+     "yanlis": "Keşif örneği olarak kibrit, araba yazmak.",
+     "dogru": "Kibrit ve araba icattır. Keşif: yer çekiminin fark edilmesi, yeni bir kıtanın bulunması."
+    },
+    {
+     "yanlis": "“Teknoloji telefon ve bilgisayardır.”",
+     "dogru": "Bunlar teknoloji ürünü. Teknoloji, araç-gereç yapmak için gereken bilgi ve yetenektir."
+    }
+   ]
+  },
+  {
+   "kod": "Ü1·B",
+   "ad": "Tasarım kavramını açıklar; endüstri ve tasarım dallarını tanır.",
+   "kisa": "Tasarım, Endüstri ve Tasarım Dalları",
+   "soru": 3,
+   "soruNot": "Kâğıtta 5 soru: 2, 3, 6, 7, 10",
+   "renk": "#9b3fa6",
+   "konular": [
+    "u1k2",
+    "u1k3"
+   ],
+   "sayfa": "s. 12–14",
+   "svg": "<svg viewBox='0 0 360 190' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Endüstriyel tasarım, çevre tasarımı ve grafik tasarım' font-family='Nunito, sans-serif'><text text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'><tspan x='180' y='22.0'>TASARIM DALLARI</tspan></text><rect x='22' y='62' width='76' height='46' rx='8' fill='none' stroke='#8ee3d6' stroke-width='4'/><line x1='12' y1='70' x2='22' y2='70' stroke='#8ee3d6' stroke-width='4'/><line x1='98' y1='70' x2='108' y2='70' stroke='#8ee3d6' stroke-width='4'/><rect x='30' y='52' width='60' height='10' rx='4' fill='#8ee3d6'/><text text-anchor='middle' font-size='12' font-weight='800' fill='#f5f6fa'><tspan x='60' y='129.4'>Endüstriyel</tspan><tspan x='60' y='142.6'>tasarım</tspan></text><text text-anchor='middle' font-size='10' font-weight='600' fill='#a3abc6'><tspan x='60' y='170.0'>seri üretim ürün</tspan></text><path d='M140 108 v-34 l30 -24 l30 24 v34 z' fill='none' stroke='#ffa26b' stroke-width='4' stroke-linejoin='round'/><rect x='162' y='86' width='16' height='22' fill='#ffa26b'/><circle cx='214' cy='80' r='12' fill='#5fd08f'/><line x1='214' y1='92' x2='214' y2='108' stroke='#5fd08f' stroke-width='4'/><text text-anchor='middle' font-size='12' font-weight='800' fill='#f5f6fa'><tspan x='180' y='129.4'>Çevre</tspan><tspan x='180' y='142.6'>tasarımı</tspan></text><text text-anchor='middle' font-size='10' font-weight='600' fill='#a3abc6'><tspan x='180' y='170.0'>bina, peyzaj, iç mekân</tspan></text><rect x='268' y='48' width='56' height='64' rx='4' fill='none' stroke='#b197fc' stroke-width='4'/><circle cx='296' cy='70' r='9' fill='#f2c14e'/><line x1='278' y1='92' x2='314' y2='92' stroke='#b197fc' stroke-width='4'/><line x1='278' y1='102' x2='304' y2='102' stroke='#b197fc' stroke-width='3'/><text text-anchor='middle' font-size='12' font-weight='800' fill='#f5f6fa'><tspan x='296' y='129.4'>Grafik</tspan><tspan x='296' y='142.6'>tasarım</tspan></text><text text-anchor='middle' font-size='10' font-weight='600' fill='#a3abc6'><tspan x='296' y='170.0'>afiş, broşür, kitap</tspan></text></svg>",
+   "maddeler": [
+    "<b>Tasarım:</b> Bir fikrin <b>zihinde canlandırılıp planlanmasıdır</b>. En önemli özelliği <b>planlama</b>dır. Bir fikrin kâğıt üzerine çizilmiş şekli de tasarımdır. (s. 13)",
+    "<b>Endüstri (sanayi):</b> Makine ve benzeri araçlarla <b>toplu üretim</b> yapılan faaliyet dalıdır. Ham maddeleri kullanıma hazır hâle getirir. (s. 12)",
+    "<b>Endüstriyel tasarım:</b> <b>Seri üretime</b> uygun ürün tasarlama işidir. <b>Üç boyutlu</b> nesnelerle ilgilenir: makineler, araç-gereçler, mutfak malzemeleri. (s. 13)",
+    "<b>Çevre tasarımı:</b> <b>Bina, peyzaj ve iç mekân</b> tasarımıdır. Programda “mimari-çevre tasarımı” diye geçer. (s. 14)",
+    "<b>Grafik tasarım:</b> <b>Okunan ve izlenen</b> görüntülerin tasarımıdır: afiş, broşür, kitap, dergi, ambalaj. (s. 14)"
+   ],
+   "kelimeler": [
+    "zihinde canlandırma",
+    "planlama",
+    "makineyle toplu üretim",
+    "seri üretim",
+    "üç boyutlu ürün",
+    "bina, peyzaj, iç mekân",
+    "okunan ve izlenen görüntü"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Afiş ve broşür endüstriyel tasarımdır.",
+     "dogru": "Afiş, broşür, kitap: grafik tasarım (okunan ve izlenen görüntüler)."
+    },
+    {
+     "yanlis": "Bina ve iç mekân grafik tasarımdır.",
+     "dogru": "Bina, peyzaj ve iç mekân: çevre tasarımı."
+    },
+    {
+     "yanlis": "Endüstri: elle tek tek eşya yapmak.",
+     "dogru": "Endüstri: makine ve araçlarla toplu üretim."
+    }
+   ]
+  },
+  {
+   "kod": "Ü2·A",
+   "ad": "Sanat/tasarım elemanlarını açıklar.",
+   "kisa": "Tasarım Elemanları",
+   "soru": 3,
+   "soruNot": "Kâğıtta 4 soru: 5, 11, 12, 13",
+   "renk": "#d9480f",
+   "konular": [
+    "u2k1",
+    "u2k2"
+   ],
+   "sayfa": "s. 24 + program",
+   "svg": "<svg viewBox='0 0 360 190' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Nokta, çizgi, renk, doku ve form çizimleri' font-family='Nunito, sans-serif'><text text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'><tspan x='180' y='22.0'>TASARIM ELEMANLARI</tspan></text><circle cx='36' cy='78' r='7' fill='#f5f6fa'/><text text-anchor='middle' font-size='11' font-weight='800' fill='#f5f6fa'><tspan x='36' y='128.0'>nokta</tspan></text><circle cx='78' cy='66' r='4' fill='#8ee3d6'/><path d='M78 66 q22 -18 30 10 t32 4' fill='none' stroke='#8ee3d6' stroke-width='4' stroke-linecap='round'/><text text-anchor='middle' font-size='11' font-weight='800' fill='#f5f6fa'><tspan x='108' y='128.0'>çizgi</tspan></text><rect x='160' y='56' width='16' height='40' fill='#ff7a33'/><rect x='176' y='56' width='16' height='40' fill='#f2c14e'/><rect x='192' y='56' width='16' height='40' fill='#6fb3ff'/><text text-anchor='middle' font-size='11' font-weight='800' fill='#f5f6fa'><tspan x='184' y='128.0'>renk</tspan></text><rect x='226' y='56' width='44' height='40' rx='4' fill='none' stroke='#5fd08f' stroke-width='3'/><path d='M230 60 l6 6 m-6 10 l6 6 m-6 10 l6 6' stroke='#5fd08f' stroke-width='2'/><path d='M238 64 l6 6 m-6 10 l6 6 m-6 10 l6 6' stroke='#5fd08f' stroke-width='2'/><path d='M246 60 l6 6 m-6 10 l6 6 m-6 10 l6 6' stroke='#5fd08f' stroke-width='2'/><path d='M254 64 l6 6 m-6 10 l6 6 m-6 10 l6 6' stroke='#5fd08f' stroke-width='2'/><path d='M262 60 l6 6 m-6 10 l6 6 m-6 10 l6 6' stroke='#5fd08f' stroke-width='2'/><text text-anchor='middle' font-size='11' font-weight='800' fill='#f5f6fa'><tspan x='248' y='128.0'>doku</tspan></text><path d='M296 66 l20 -10 l20 10 v26 l-20 10 l-20 -10 z M296 66 l20 10 l20 -10 M316 76 v26' fill='none' stroke='#b197fc' stroke-width='3' stroke-linejoin='round'/><text text-anchor='middle' font-size='11' font-weight='800' fill='#f5f6fa'><tspan x='316' y='128.0'>form</tspan></text><text text-anchor='middle' font-size='10' font-weight='600' fill='#a3abc6'><tspan x='180' y='160.5'>Ayrıca: şekil, valör (değer), yön, aralık,</tspan><tspan x='180' y='171.5'>ışık-gölge, oran, yazı, mekân</tspan></text></svg>",
+   "maddeler": [
+    "Elemanlar: <b>nokta, çizgi, renk, doku, biçim-form</b>, şekil, valör (değer), yön, aralık, ışık-gölge, oran, yazı, mekân. (s. 24, program)",
+    "<b>Nokta:</b> Görsel anlatımın en küçük, temel elemanıdır; yer belirten işarettir. <b>Çizgi:</b> Hareket eden bir noktanın izidir (noktanın bir doğrultuda uzaması). (s. 24)",
+    "<b>Renk:</b> Işığın cisimlere çarpıp <b>yansıyarak</b> gözümüzde bıraktığı etkidir. <b>Sıcak renkler uyarıcı</b>, <b>soğuk renkler gevşetici ve dinlendiricidir</b>. Renkle dikkat çekilir (vurgu). (s. 24, 27)",
+    "<b>Valör (değer):</b> Bir rengin <b>açıklık ve koyuluk</b> derecesidir. <b>Form:</b> Şeklin <b>üç boyut</b> ve hacim kazanmış hâlidir. (program)",
+    "<b>Doku:</b> Nesnenin <b>dış yüzeyinin yapısıdır</b> (pürüzlü, kaygan, yumuşak). Gözle görülür, elle hissedilir. (s. 24)",
+    "Dokunun etkileri: tasarımı <b>zenginleştirir</b>, <b>dikkati çeker</b>, nesneyi <b>gerçek gibi hissettirir</b>, düz resme <b>derinlik</b> verir. (kitap dışı: açık ders)"
+   ],
+   "kelimeler": [
+    "ışığın yansıması",
+    "sıcak = uyarıcı",
+    "soğuk = dinlendirici",
+    "açıklık-koyuluk = valör",
+    "üç boyut = form",
+    "dış yüzeyin yapısı",
+    "zenginleştirir, dikkat çeker"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Vurgu, denge, ritim tasarım elemanıdır.",
+     "dogru": "Bunlar tasarım İLKESİ. Eleman: nokta, çizgi, renk, doku, form…"
+    },
+    {
+     "yanlis": "Soğuk renkler uyarır, sıcak renkler dinlendirir.",
+     "dogru": "Sıcak renkler (kırmızı, turuncu) uyarır; soğuk renkler (mavi, yeşil) dinlendirir."
+    },
+    {
+     "yanlis": "Rengin açıklık-koyuluğu: renk. Üç boyutlu hâl: şekil.",
+     "dogru": "Açıklık-koyuluk: valör (değer). Üç boyut ve hacim: form."
+    }
+   ]
+  },
+  {
+   "kod": "Ü2·B",
+   "ad": "Tasarım ilkelerini bir ürün üzerinde göstererek açıklar.",
+   "kisa": "Tasarım İlkeleri: Vurgu ve Zıtlık",
+   "soru": 1,
+   "soruNot": "Kâğıtta 2 soru: 14, 15",
+   "renk": "#2b8a3e",
+   "konular": [
+    "u2k3"
+   ],
+   "sayfa": "s. 27 + program",
+   "svg": "<svg viewBox='0 0 360 190' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Vurgu: gri noktalar arasında turuncu nokta. Zıtlık: açık ve koyu yan yana' font-family='Nunito, sans-serif'><text text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'><tspan x='90' y='22.0'>VURGU</tspan></text><circle cx='34' cy='60' r='9' fill='#a3abc6'/><circle cx='64' cy='60' r='9' fill='#a3abc6'/><circle cx='94' cy='60' r='9' fill='#a3abc6'/><circle cx='124' cy='60' r='9' fill='#a3abc6'/><circle cx='34' cy='90' r='9' fill='#a3abc6'/><circle cx='94' cy='90' r='9' fill='#a3abc6'/><circle cx='124' cy='90' r='9' fill='#a3abc6'/><circle cx='34' cy='120' r='9' fill='#a3abc6'/><circle cx='64' cy='120' r='9' fill='#a3abc6'/><circle cx='94' cy='120' r='9' fill='#a3abc6'/><circle cx='124' cy='120' r='9' fill='#a3abc6'/><circle cx='64' cy='90' r='13' fill='#ff7a33'/><text text-anchor='middle' font-size='11' font-weight='700' fill='#a3abc6'><tspan x='90' y='161.9'>Göz önce turuncuya gider:</tspan><tspan x='90' y='174.0'>odak noktası</tspan></text><line x1='180' y1='18' x2='180' y2='182' stroke='#a3abc6' stroke-width='2' stroke-dasharray='5 6'/><text text-anchor='middle' font-size='13' font-weight='800' fill='#6fb3ff'><tspan x='270' y='22.0'>ZITLIK</tspan></text><rect x='208' y='44' width='62' height='82' fill='#f5f6fa'/><rect x='270' y='44' width='62' height='82' fill='#0d1226' stroke='#f5f6fa' stroke-width='2'/><circle cx='239' cy='85' r='16' fill='#0d1226'/><circle cx='301' cy='85' r='8' fill='#f5f6fa'/><text text-anchor='middle' font-size='11' font-weight='700' fill='#a3abc6'><tspan x='270' y='161.9'>açık-koyu, büyük-küçük</tspan><tspan x='270' y='174.0'>yan yana: güçlü etki</tspan></text></svg>",
+   "maddeler": [
+    "<b>Vurgu:</b> Tasarımda <b>göz alıcı olan odak noktası</b>dır. (s. 27)",
+    "Vurgu <b>renk, şekil, form, boyut, yerleşim</b> ya da çizgiyle sağlanır; vurgulanan kısım daha etkili görünür. (s. 27)",
+    "Vurgu örneği: düz bir kıyafetin üstüne takılan <b>kolye</b>, bir metindeki <b>koyu yazılmış</b> bölüm dikkati oraya çeker. (s. 27)",
+    "<b>Zıtlık (kontrast):</b> Zıt özelliklerin yan yana getirilmesiyle oluşan <b>güçlü görsel etki</b>dir: açık-koyu, büyük-küçük, sıcak-soğuk. (program)",
+    "Karıştırma: <b>denge</b> parçaların eşit dağılması, <b>ritim</b> uyumlu tekrardır. (s. 27)"
+   ],
+   "kelimeler": [
+    "göz alıcı",
+    "odak noktası",
+    "dikkati çeker",
+    "kolye, koyu yazı",
+    "zıtlık = kontrast",
+    "açık-koyu yan yana"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Vurgu: parçaların eşit dağılması.",
+     "dogru": "Bu denge. Vurgu: göz alıcı odak noktası."
+    },
+    {
+     "yanlis": "Zıt özellikleri yan yana getirmek: ritim.",
+     "dogru": "Bu zıtlık (kontrast). Ritim: uyumlu tekrar."
+    },
+    {
+     "yanlis": "Vurguyu açıklarken örnek vermemek.",
+     "dogru": "Tanım + nasıl sağlanır + örnek (kolye, koyu yazı)."
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "tanim",
+   "ad": "Tanım",
+   "kalip": "X, … dır. (Örneğin …)",
+   "ne": "“… nedir? Açıklayınız.” sorularında",
+   "ornek": "Teknoloji, araç-gereç yapabilmek için gereken bilgi ve yetenektir."
+  },
+  {
+   "id": "alan",
+   "ad": "Adını bul + Çünkü",
+   "kalip": "Bu …'dır, çünkü …",
+   "ne": "“Tanımı verilen alan / ilke / eleman hangisidir?” sorularında",
+   "ornek": "Bu grafik tasarımdır, çünkü okunan ve izlenen görüntülerin tasarımıdır."
+  },
+  {
+   "id": "karsilastir",
+   "ad": "Karşılaştır",
+   "kalip": "X … dır, Y ise … dır.",
+   "ne": "“Arasındaki fark nedir?” sorularında",
+   "ornek": "Sıcak renkler uyarıcıdır, soğuk renkler ise dinlendiricidir."
+  },
+  {
+   "id": "ornek",
+   "ad": "Örnek ver",
+   "kalip": "1. …  2. …",
+   "ne": "“İki örnek yazınız”, “5 tane yazınız” sorularında: istenen sayıda, numaralı yaz",
+   "ornek": "İki icat örneği: 1. Kibrit  2. Daktilo"
+  },
+  {
+   "id": "etki",
+   "ad": "Tanım + Etki",
+   "kalip": "X, … dır. Tasarıma etkisi: … ve …",
+   "ne": "“Kavramı açıklayınız. Etkileri nelerdir?” sorularında: iki parçayı da yaz",
+   "ornek": "Işık-gölge: her ışık kaynağı bir gölge yaratır. Tasarıma etkisi: resmi canlı ve hareketli yapar. (s. 24)"
+  }
+ ],
+ "mebSorular": [
+  {
+   "id": "m1",
+   "no": 1,
+   "kazanim": "Ü1·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Teknoloji nedir? Açıklayınız.",
+     "formul": "tanim",
+     "iskele": {
+      "tur": "secim",
+      "soru": "Önce ısınalım: Hangisi teknolojinin tanımıdır?",
+      "secenekler": [
+       "Araç-gereç yapabilmek için gereken bilgi ve yetenek",
+       "Var olan ama bilinmeyen bir şeyin bulunması",
+       "Makinelerle toplu üretim yapılan faaliyet dalı",
+       "Okunan ve izlenen görüntülerin tasarımı"
+      ],
+      "dogru": 0,
+      "aciklama": "Teknoloji: araç-gereç yapmak için bilgi ve yetenek. Diğerleri keşif, endüstri ve grafik tasarım. (s. 11)"
+     },
+     "cevap": "Teknoloji, araç-gereç yapabilmek için gereken bilgi ve yetenektir. Bir işi daha iyi, daha hızlı, daha kolay, daha ekonomik ve daha verimli yapma girişimidir. Amacı insan hayatının kalitesini artırmaktır.",
+     "anahtarlar": [
+      {
+       "ad": "Araç-gereç yapmak için gereken bilgi ve yetenek",
+       "k": [
+        "araç",
+        "gereç",
+        "yetenek"
+       ]
+      },
+      {
+       "ad": "Bir işi daha iyi, hızlı, kolay, verimli yapma",
+       "k": [
+        "daha iyi",
+        "hızlı",
+        "kolay",
+        "verimli",
+        "ekonomik"
+       ]
+      },
+      {
+       "ad": "Amacı: hayat kalitesini artırmak",
+       "k": [
+        "kalite",
+        "hayatı",
+        "hayatımızı",
+        "yaşam"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "no": 2,
+   "kazanim": "Ü1·B",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Yukarıda tanımı verilen tasarım alanı hangi tasarım alanıdır?",
+     "formul": "alan",
+     "cevap": "Grafik tasarımdır. Grafik tasarım, okunan ve izlenen görüntülerin tasarımıdır.",
+     "anahtarlar": [
+      {
+       "ad": "Grafik tasarım",
+       "k": [
+        "grafik"
+       ]
+      }
+     ]
+    }
+   ],
+   "metin": [
+    "Broşür, afiş, kitap, dergi vb. okunan ve izlenen görüntülerin tasarımını yapmaktır."
+   ]
+  },
+  {
+   "id": "m3",
+   "no": 3,
+   "kazanim": "Ü1·B",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Tasarım nedir? Açıklayınız.",
+     "formul": "tanim",
+     "iskele": {
+      "tur": "secim",
+      "soru": "Önce ısınalım: Kitaba göre tasarımın en önemli özelliği hangisidir?",
+      "secenekler": [
+       "Planlama",
+       "Seri üretim",
+       "Süsleme",
+       "Satış"
+      ],
+      "dogru": 0,
+      "aciklama": "Planlamanın olduğu her yerde tasarımdan söz edilebilir. (s. 13)"
+     },
+     "cevap": "Tasarım, bir fikrin zihinde canlandırılıp planlanmasıdır. En önemli özelliği planlamadır. Bir fikrin kâğıt üzerine çizilmiş şekli de tasarımdır.",
+     "anahtarlar": [
+      {
+       "ad": "Zihinde canlandırma",
+       "k": [
+        "zihin",
+        "canlandır",
+        "hayal"
+       ]
+      },
+      {
+       "ad": "Planlama",
+       "k": [
+        "plan"
+       ]
+      },
+      {
+       "ad": "Fikrin kâğıda çizilmesi",
+       "k": [
+        "kâğıt",
+        "kağıt",
+        "çiz"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "no": 4,
+   "kazanim": "Ü1·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "İcat yapan kişilere ne isim verilir?",
+     "formul": "alan",
+     "cevap": "İcat yapan kişilere mucit denir.",
+     "anahtarlar": [
+      {
+       "ad": "Mucit",
+       "k": [
+        "mucit"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m5",
+   "no": 5,
+   "kazanim": "Ü2·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "5 adet tasarım elemanı yazınız.",
+     "formul": "ornek",
+     "iskele": {
+      "tur": "dytablo",
+      "soru": "Önce ısınalım: Hangileri tasarım ELEMANIdır? Doğru (D) ya da Yanlış (Y) seç.",
+      "ifadeler": [
+       {
+        "s": "Nokta",
+        "d": true
+       },
+       {
+        "s": "Doku",
+        "d": true
+       },
+       {
+        "s": "Renk",
+        "d": true
+       },
+       {
+        "s": "Vurgu",
+        "d": false
+       },
+       {
+        "s": "Denge",
+        "d": false
+       }
+      ],
+      "aciklama": "Vurgu ve denge tasarım İLKESİdir. Nokta, doku, renk elemandır. (s. 24, 27)"
+     },
+     "cevap": "1. Nokta 2. Çizgi 3. Renk 4. Doku 5. Biçim (form)",
+     "anahtarlar": [
+      {
+       "ad": "1. eleman doğru",
+       "sira": [
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ]
+       ]
+      },
+      {
+       "ad": "2. eleman doğru",
+       "sira": [
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ]
+       ]
+      },
+      {
+       "ad": "3. eleman doğru",
+       "sira": [
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ]
+       ]
+      },
+      {
+       "ad": "4. eleman doğru",
+       "sira": [
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ]
+       ]
+      },
+      {
+       "ad": "5. eleman doğru",
+       "sira": [
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ],
+        [
+         "nokta",
+         "çizgi",
+         "renk",
+         "doku",
+         "biçim",
+         "form",
+         "şekil",
+         "yön",
+         "aralık",
+         "ışık",
+         "gölge",
+         "oran",
+         "yazı",
+         "valör",
+         "değer",
+         "mekân",
+         "mekan"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m6",
+   "no": 6,
+   "kazanim": "Ü1·B",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Endüstri nedir? Açıklayınız.",
+     "formul": "tanim",
+     "iskele": {
+      "tur": "secim",
+      "soru": "Önce ısınalım: Endüstrinin bir diğer adı nedir?",
+      "secenekler": [
+       "Sanayi",
+       "Teknik",
+       "İnovasyon",
+       "Tasarım"
+      ],
+      "dogru": 0,
+      "aciklama": "Kitapta “Sanayi ya da endüstri” diye geçer. (s. 12)"
+     },
+     "cevap": "Endüstri (sanayi), makine ve benzeri araçlar kullanılarak toplu üretim yapılan faaliyet dalıdır. Ham maddeleri ve yarı işlenmiş maddeleri kullanıma hazır hâle getirir.",
+     "anahtarlar": [
+      {
+       "ad": "Makine ve araçlarla",
+       "k": [
+        "makine"
+       ]
+      },
+      {
+       "ad": "Toplu üretim",
+       "k": [
+        "toplu",
+        "seri"
+       ]
+      },
+      {
+       "ad": "Ham maddeyi kullanıma hazır hâle getirir",
+       "k": [
+        "ham madde",
+        "hammadde",
+        "kullanıma hazır",
+        "yarı işlen"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m7",
+   "no": 7,
+   "kazanim": "Ü1·B",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Endüstriyel tasarım nedir? Açıklayınız.",
+     "formul": "tanim",
+     "iskele": {
+      "tur": "secim",
+      "soru": "Önce ısınalım: Hangisi endüstriyel tasarımın konusudur?",
+      "secenekler": [
+       "Mutfak malzemesi",
+       "Afiş",
+       "Park ve bahçe",
+       "Kitap kapağı"
+      ],
+      "dogru": 0,
+      "aciklama": "Makineler, araç-gereçler, mutfak malzemeleri endüstri tasarımına girer. (s. 13)"
+     },
+     "cevap": "Endüstriyel tasarım, seri üretime uygun ürün tasarlama işidir. Üç boyutlu nesnelerin tasarlanması ve geliştirilmesiyle ilgilidir. Örneğin makineler, araç-gereçler ve mutfak malzemeleri.",
+     "anahtarlar": [
+      {
+       "ad": "Seri üretime uygun ürün tasarlama",
+       "k": [
+        "seri üretim",
+        "seri"
+       ]
+      },
+      {
+       "ad": "Üç boyutlu nesneler",
+       "k": [
+        "üç boyut",
+        "3 boyut",
+        "3b"
+       ]
+      },
+      {
+       "ad": "Örnek: makine, araç-gereç, mutfak malzemesi",
+       "k": [
+        "makine",
+        "araç",
+        "mutfak",
+        "tencere",
+        "sandalye",
+        "araba",
+        "otomobil",
+        "telefon"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m8",
+   "no": 8,
+   "kazanim": "Ü1·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Keşif ve icat arasındaki fark nedir? Açıklayınız.",
+     "formul": "karsilastir",
+     "iskele": {
+      "tur": "secim",
+      "soru": "Önce ısınalım: Hangisi doğrudur?",
+      "secenekler": [
+       "Keşifte var olan bulunur, icatta yeni bir şey yapılır.",
+       "Keşifte yeni bir şey yapılır, icatta var olan bulunur.",
+       "Keşif ve icat aynı anlama gelir.",
+       "Keşif yalnızca makinelerle yapılır."
+      ],
+      "dogru": 0,
+      "aciklama": "Keşif: var olan ama bilinmeyenin bulunması. İcat: var olanların yeni biçimde bir araya getirilmesi. (s. 11)"
+     },
+     "cevap": "Keşif, daha önce var olan ama bilinmeyen bir şeyin bulunmasıdır; örneğin yer çekiminin fark edilmesi. İcat ise var olan teknolojilerin bir araya getirilerek yeni ve benzersiz bir şeyin yapılmasıdır; örneğin kibrit. Yani keşifte var olan bulunur, icatta yeni bir şey yapılır.",
+     "anahtarlar": [
+      {
+       "ad": "Keşif: var olan ama bilinmeyen bir şeyi bulmak",
+       "k": [
+        "var olan",
+        "bilinmeyen",
+        "fark ed"
+       ]
+      },
+      {
+       "ad": "İcat: var olanları birleştirip yeni bir şey yapmak",
+       "k": [
+        "yeni",
+        "bir araya",
+        "birleştir",
+        "benzersiz"
+       ]
+      },
+      {
+       "ad": "Her birine örnek (yer çekimi, kıta / kibrit, araba…)",
+       "k": [
+        "ateş",
+        "yer çekimi",
+        "yerçekimi",
+        "kaldırma kuvveti",
+        "kıta",
+        "gezegen",
+        "amerika",
+        "kibrit",
+        "araba",
+        "daktilo"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m9",
+   "no": 9,
+   "kazanim": "Ü1·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "İki adet keşif örneği yazınız.",
+     "formul": "ornek",
+     "iskele": {
+      "tur": "dytablo",
+      "soru": "Önce ısınalım: Hangileri KEŞİF örneğidir? D ya da Y seç.",
+      "ifadeler": [
+       {
+        "s": "Yer çekiminin fark edilmesi",
+        "d": true
+       },
+       {
+        "s": "Bilinmeyen bir kıtanın bulunması",
+        "d": true
+       },
+       {
+        "s": "Kibrit",
+        "d": false
+       },
+       {
+        "s": "Araba",
+        "d": false
+       }
+      ],
+      "aciklama": "Kibrit ve araba icattır; yer çekimi ve yeni bir kıta var olan ama bilinmeyen şeylerdir. (s. 11)"
+     },
+     "cevap": "1. Yer çekiminin fark edilmesi 2. Bilinmeyen bir kıtanın bulunması",
+     "anahtarlar": [
+      {
+       "ad": "1. keşif örneği doğru",
+       "sira": [
+        [
+         "ateş",
+         "yer çekimi",
+         "yerçekimi",
+         "kaldırma kuvveti",
+         "kıta",
+         "gezegen",
+         "amerika"
+        ]
+       ]
+      },
+      {
+       "ad": "2. keşif örneği doğru",
+       "sira": [
+        [
+         "ateş",
+         "yer çekimi",
+         "yerçekimi",
+         "kaldırma kuvveti",
+         "kıta",
+         "gezegen",
+         "amerika"
+        ],
+        [
+         "ateş",
+         "yer çekimi",
+         "yerçekimi",
+         "kaldırma kuvveti",
+         "kıta",
+         "gezegen",
+         "amerika"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m10",
+   "no": 10,
+   "kazanim": "Ü1·B",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Yukarıda tanımı verilen tasarım alanı hangi tasarım alanıdır?",
+     "formul": "alan",
+     "cevap": "Çevre tasarımıdır (mimari-çevre tasarımı). Çevre tasarımı bina, peyzaj ve iç mekân tasarımını kapsar.",
+     "anahtarlar": [
+      {
+       "ad": "Çevre tasarımı (mimari-çevre)",
+       "k": [
+        "çevre",
+        "mimari"
+       ]
+      }
+     ]
+    }
+   ],
+   "metin": [
+    "Bina, peyzaj ve iç mekân tasarımını kapsayan oldukça geniş bir çalışma alanıdır."
+   ]
+  },
+  {
+   "id": "m11",
+   "no": 11,
+   "kazanim": "Ü2·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Tasarım elemanlarından biri olan doku kavramını açıklayınız.",
+     "formul": "tanim",
+     "cevap": "Doku, nesnelerin dış yüzeyinin yapısıdır; pürüzlü, kaygan, yumuşak, sert gibi. Doku gözle görülür, elle dokunarak hissedilir.",
+     "anahtarlar": [
+      {
+       "ad": "Nesnenin dış yüzeyinin (dış yapısının) özelliği",
+       "k": [
+        "dış yapı",
+        "yüzey",
+        "dış görünüş"
+       ]
+      },
+      {
+       "ad": "Örnek: pürüzlü, kaygan, yumuşak, sert…",
+       "k": [
+        "pürüzlü",
+        "kaygan",
+        "yumuşak",
+        "sert",
+        "pürüzsüz",
+        "ağaç kabuğu",
+        "kumaş",
+        "dokun",
+        "hissed"
+       ]
+      }
+     ]
+    },
+    {
+     "harf": "b",
+     "soru": "Dokunun tasarıma kattığı etkiler nelerdir?",
+     "formul": "etki",
+     "cevap": "Doku tasarımı zenginleştirir ve çeşitlendirir. Dikkati nesneye çeker. Nesneyi gerçek gibi hissettirir ve düz bir resme derinlik (üç boyut) etkisi verir.",
+     "anahtarlar": [
+      {
+       "ad": "Tasarımı zenginleştirir, çeşitlendirir",
+       "k": [
+        "zengin",
+        "çeşit"
+       ]
+      },
+      {
+       "ad": "Dikkat çeker, ilgi uyandırır",
+       "k": [
+        "dikkat",
+        "ilgi"
+       ]
+      },
+      {
+       "ad": "Gerçek gibi hissettirir, derinlik verir",
+       "k": [
+        "gerçek",
+        "derinlik",
+        "üç boyut",
+        "hissettir"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m12",
+   "no": 12,
+   "kazanim": "Ü2·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Tasarım elemanlarından biri olan renk kavramını açıklayınız.",
+     "formul": "tanim",
+     "iskele": {
+      "tur": "secim",
+      "soru": "Önce ısınalım: Renk nasıl oluşur?",
+      "secenekler": [
+       "Işığın cisimlerden yansıyıp gözümüzde bıraktığı etkiyle",
+       "Noktanın bir doğrultuda uzamasıyla",
+       "Nesnenin dış yüzeyinin yapısıyla",
+       "Şeklin üç boyut kazanmasıyla"
+      ],
+      "dogru": 0,
+      "aciklama": "Renk: ışığın cisimlere çarpıp yansıyarak görme duyumuzda bıraktığı etki. (s. 24)"
+     },
+     "cevap": "Renk, ışığın cisimlere çarptıktan sonra yansıyarak gözümüzde bıraktığı etkidir.",
+     "anahtarlar": [
+      {
+       "ad": "Işık",
+       "k": [
+        "ışı"
+       ]
+      },
+      {
+       "ad": "Cisimlerden yansıma",
+       "k": [
+        "yansı"
+       ]
+      },
+      {
+       "ad": "Gözde bıraktığı etki",
+       "k": [
+        "göz",
+        "görme"
+       ]
+      }
+     ]
+    },
+    {
+     "harf": "b",
+     "soru": "Rengin tasarım üzerindeki etkileri nelerdir?",
+     "formul": "etki",
+     "cevap": "Renk insanları etkiler. Sıcak renkler (kırmızı, turuncu) uyarıcıdır, soğuk renkler (mavi, yeşil) gevşetici ve dinlendiricidir. Renkle tasarımda dikkat çekilir, vurgu yapılır.",
+     "anahtarlar": [
+      {
+       "ad": "Sıcak renkler uyarıcı",
+       "k": [
+        "sıcak",
+        "uyar"
+       ]
+      },
+      {
+       "ad": "Soğuk renkler gevşetici, dinlendirici",
+       "k": [
+        "soğuk",
+        "dinlendir",
+        "gevşe",
+        "sakin"
+       ]
+      },
+      {
+       "ad": "Dikkat çeker, vurgu yapar",
+       "k": [
+        "dikkat",
+        "vurgu",
+        "odak"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m13",
+   "no": 13,
+   "kazanim": "Ü2·A",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "“Hareket eden bir noktanın izidir.” Bu tanım hangi tasarım elemanına aittir?",
+     "iskele": {
+      "tur": "eslestir",
+      "soru": "Önce ısınalım: Tanımları tasarım elemanlarıyla eşleştir.",
+      "ciftler": [
+       {
+        "sol": "Hareket eden bir noktanın izidir.",
+        "sag": "Çizgi"
+       },
+       {
+        "sol": "Işığın nesnelerden yansıyarak gözümüzde oluşturduğu etkidir.",
+        "sag": "Renk"
+       },
+       {
+        "sol": "Bir rengin açıklık ve koyuluk derecesidir.",
+        "sag": "Valör (değer)"
+       },
+       {
+        "sol": "Görsel anlatımın en küçük ve en temel elemanıdır.",
+        "sag": "Nokta"
+       },
+       {
+        "sol": "Şeklin üç boyut ve hacim kazanmış hâlidir.",
+        "sag": "Form"
+       }
+      ],
+      "aciklama": "Çizgi: noktanın uzaması. Renk: ışığın yansıması. Valör: açıklık-koyuluk. Nokta: en temel eleman. Form: üç boyut. (s. 24, program)"
+     },
+     "cevap": "Çizgi",
+     "anahtarlar": [
+      {
+       "ad": "Çizgi",
+       "k": [
+        "çizgi"
+       ]
+      }
+     ]
+    },
+    {
+     "harf": "b",
+     "soru": "“Işığın nesnelerden yansıyarak gözümüzde oluşturduğu etkidir.” Bu tanım hangi tasarım elemanına aittir?",
+     "cevap": "Renk",
+     "anahtarlar": [
+      {
+       "ad": "Renk",
+       "k": [
+        "renk"
+       ]
+      }
+     ]
+    },
+    {
+     "harf": "c",
+     "soru": "“Bir rengin açıklık ve koyuluk derecesidir.” Bu tanım hangi tasarım elemanına aittir?",
+     "cevap": "Valör (değer)",
+     "anahtarlar": [
+      {
+       "ad": "Valör (değer)",
+       "k": [
+        "valör",
+        "valor",
+        "değer"
+       ]
+      }
+     ]
+    },
+    {
+     "harf": "d",
+     "soru": "“Görsel anlatımın en küçük ve en temel elemanıdır.” Bu tanım hangi tasarım elemanına aittir?",
+     "cevap": "Nokta",
+     "anahtarlar": [
+      {
+       "ad": "Nokta",
+       "k": [
+        "nokta"
+       ]
+      }
+     ]
+    },
+    {
+     "harf": "e",
+     "soru": "“Şeklin üç boyut ve hacim kazanmış hâlidir.” Bu tanım hangi tasarım elemanına aittir?",
+     "cevap": "Form (biçim-form)",
+     "anahtarlar": [
+      {
+       "ad": "Form (biçim-form)",
+       "k": [
+        "form",
+        "biçim"
+       ]
+      }
+     ]
+    }
+   ],
+   "metin": [
+    "Aşağıda verilen tanımların hangi tasarım elemanına ait olduğunu yazınız."
+   ]
+  },
+  {
+   "id": "m14",
+   "no": 14,
+   "kazanim": "Ü2·B",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Vurgu tasarım ilkesini açıklayınız.",
+     "formul": "tanim",
+     "iskele": {
+      "tur": "secim",
+      "soru": "Önce ısınalım: Vurgu nedir?",
+      "secenekler": [
+       "Tasarımda göz alıcı olan odak noktası",
+       "Parçaların bütün içinde eşit dağılması",
+       "Elemanların uyumlu tekrarı",
+       "Zıt özelliklerin yan yana getirilmesi"
+      ],
+      "dogru": 0,
+      "aciklama": "Vurgu odak noktasıdır. Diğerleri denge, ritim ve zıtlık. (s. 27)"
+     },
+     "cevap": "Vurgu, tasarımda göz alıcı olan odak noktasıdır. Renk, şekil, form, boyut ya da yerleşimle sağlanır. Örneğin düz bir kıyafetin üstüne takılan kolye ya da metindeki koyu yazılmış bölüm dikkati oraya çeker.",
+     "anahtarlar": [
+      {
+       "ad": "Göz alıcı odak noktası, dikkati çeker",
+       "k": [
+        "odak",
+        "göz alıcı",
+        "dikkat"
+       ]
+      },
+      {
+       "ad": "Renk, şekil, boyut gibi elemanlarla sağlanır",
+       "k": [
+        "renk",
+        "şekil",
+        "boyut",
+        "form",
+        "yerleşim",
+        "çizgi"
+       ]
+      },
+      {
+       "ad": "Örnek: kolye, koyu yazılmış bölüm",
+       "k": [
+        "kolye",
+        "koyu",
+        "kalın"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m15",
+   "no": 15,
+   "kazanim": "Ü2·B",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Yukarıda tanımı verilen tasarım ilkesi hangisidir?",
+     "formul": "alan",
+     "cevap": "Zıtlıktır (kontrast). Açık-koyu, büyük-küçük gibi zıt özellikler yan yana gelince güçlü bir görsel etki oluşur.",
+     "anahtarlar": [
+      {
+       "ad": "Zıtlık (kontrast)",
+       "k": [
+        "zıt",
+        "kontrast"
+       ]
+      }
+     ]
+    }
+   ],
+   "metin": [
+    "Zıt özelliklerin yan yana getirilmesiyle oluşan güçlü görsel etkidir."
+   ]
+  }
+ ],
+ "kuarkHata": [
+  {
+   "kazanim": "Ü1·A",
+   "soru": "Teknoloji nedir? Açıklayınız.",
+   "kuark": "Teknoloji, telefon ve bilgisayardır.",
+   "secenekler": [
+    "Telefon ve bilgisayar teknoloji ürünüdür; teknoloji, araç-gereç yapmak için gereken bilgi ve yetenektir.",
+    "Teknoloji, bilinmeyen bir kıtanın bulunmasıdır.",
+    "Fikri haklı, cevapta hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Ürün mü sordu, kavram mı?",
+   "aciklama": "Teknoloji: araç-gereç yapabilmek için gerekli bilgi ve yetenek. (s. 11)",
+   "dogruCevap": "Teknoloji, araç-gereç yapabilmek için gereken bilgi ve yetenektir. Bir işi daha iyi, hızlı ve kolay yapma girişimidir."
+  },
+  {
+   "kazanim": "Ü1·A",
+   "soru": "İcat yapan kişilere ne isim verilir?",
+   "kuark": "Tasarımcı.",
+   "secenekler": [
+    "İcat yapan kişiye mucit denir.",
+    "İcat yapan kişiye teknisyen denir.",
+    "Fikri haklı, icat yapan herkes tasarımcıdır."
+   ],
+   "dogru": 0,
+   "ipucu": "İcat → mu…",
+   "aciklama": "Mucit: yeni bir buluş ortaya koyan, icat eden kimse (TDK).",
+   "dogruCevap": "İcat yapan kişilere mucit denir."
+  },
+  {
+   "kazanim": "Ü1·A",
+   "soru": "Keşif ve icat arasındaki fark nedir? Açıklayınız.",
+   "kuark": "Keşif ve icat aynı şeydir; ikisi de yeni bir şey yapmaktır.",
+   "secenekler": [
+    "Keşifte var olan ama bilinmeyen bir şey bulunur; icatta var olanlar birleştirilip yeni bir şey yapılır.",
+    "Ters söylemeliydi: keşif yeni şey yapmak, icat var olanı bulmaktır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Yer çekimi Newton'dan önce de var mıydı?",
+   "aciklama": "Keşif: var olanın bulunması. İcat: yeni ve benzersiz bir araya getirme. (s. 11)",
+   "dogruCevap": "Keşif, var olan ama bilinmeyen bir şeyin bulunmasıdır. İcat ise var olanların bir araya getirilip yeni bir şey yapılmasıdır."
+  },
+  {
+   "kazanim": "Ü1·A",
+   "soru": "Keşif ve icat arasındaki fark nedir? Açıklayınız.",
+   "kuark": "Farklıdır.",
+   "secenekler": [
+    "Cevap eksik: keşfin ve icatın ne olduğu ayrı ayrı yazılmalı.",
+    "Cevap yanlış; keşif ve icat aynıdır.",
+    "Hata yok, tek kelime yeterli."
+   ],
+   "dogru": 0,
+   "ipucu": "“Açıklayınız” diyen soruda puanı ne getirir?",
+   "aciklama": "Karşılaştırma sorusunda ikisini de anlat: “Keşif …, icat ise …”.",
+   "dogruCevap": "Keşif, var olan ama bilinmeyen bir şeyin bulunmasıdır. İcat ise var olanların bir araya getirilip yeni bir şey yapılmasıdır."
+  },
+  {
+   "kazanim": "Ü1·A",
+   "soru": "İki adet keşif örneği yazınız.",
+   "kuark": "1. Kibrit 2. Araba",
+   "secenekler": [
+    "Kibrit ve araba icattır; keşif örneği yer çekiminin fark edilmesi ya da yeni bir kıtanın bulunması olabilir.",
+    "Kibrit keşif, araba icattır.",
+    "Fikri haklı, ikisi de keşiftir."
+   ],
+   "dogru": 0,
+   "ipucu": "Kibrit doğada hazır var mıydı?",
+   "aciklama": "Kibrit, araba, daktilo icat örnekleridir. (s. 11)",
+   "dogruCevap": "1. Yer çekiminin fark edilmesi 2. Bilinmeyen bir kıtanın bulunması"
+  },
+  {
+   "kazanim": "Ü1·B",
+   "soru": "Broşür, afiş, kitap, dergi vb. okunan ve izlenen görüntülerin tasarımı hangi tasarım alanıdır?",
+   "kuark": "Endüstriyel tasarım.",
+   "secenekler": [
+    "Okunan ve izlenen görüntüler grafik tasarımın alanıdır.",
+    "Bu çevre tasarımıdır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Afiş ve kitap seri üretilen üç boyutlu eşya mı, okunan görüntü mü?",
+   "aciklama": "Grafik tasarım: okunan ve izlenen görüntülerin tasarımı. (s. 14)",
+   "dogruCevap": "Grafik tasarımdır."
+  },
+  {
+   "kazanim": "Ü1·B",
+   "soru": "Bina, peyzaj ve iç mekân tasarımını kapsayan alan hangi tasarım alanıdır?",
+   "kuark": "Grafik tasarım.",
+   "secenekler": [
+    "Bina, peyzaj ve iç mekân çevre tasarımının alanıdır.",
+    "Bu endüstriyel tasarımdır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Bina ve bahçe nerede durur: kâğıtta mı, çevremizde mi?",
+   "aciklama": "Çevre tasarımı: bina, peyzaj ve iç mekân. (s. 14)",
+   "dogruCevap": "Çevre tasarımıdır (mimari-çevre tasarımı)."
+  },
+  {
+   "kazanim": "Ü1·B",
+   "soru": "Endüstriyel tasarım nedir? Açıklayınız.",
+   "kuark": "Endüstriyel tasarım, bina ve bahçe tasarlamaktır.",
+   "secenekler": [
+    "Bina ve bahçe çevre tasarımıdır; endüstriyel tasarım seri üretime uygun, üç boyutlu ürün tasarlamaktır.",
+    "Endüstriyel tasarım, afiş ve broşür tasarlamaktır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Endüstri = toplu üretim. Ne üretilir?",
+   "aciklama": "Endüstriyel tasarım: seri üretime uygun ürün tasarlama işi. (s. 13)",
+   "dogruCevap": "Endüstriyel tasarım, seri üretime uygun ürün tasarlama işidir. Üç boyutlu nesnelerle ilgilenir."
+  },
+  {
+   "kazanim": "Ü1·B",
+   "soru": "Endüstri nedir? Açıklayınız.",
+   "kuark": "Endüstri, eşyaları elle tek tek yapmaktır.",
+   "secenekler": [
+    "Endüstri, makine ve araçlarla toplu üretim yapılan faaliyet dalıdır.",
+    "Endüstri, yeni bir kıtanın bulunmasıdır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Fabrikada eşyalar elle mi, makineyle mi yapılır?",
+   "aciklama": "Endüstri: makine ve benzeri araçlarla toplu üretim. (s. 12)",
+   "dogruCevap": "Endüstri, makine ve benzeri araçlarla toplu üretim yapılan faaliyet dalıdır."
+  },
+  {
+   "kazanim": "Ü1·B",
+   "soru": "Tasarım nedir? Açıklayınız.",
+   "kuark": "Tasarım, bir ürünü satmaktır.",
+   "secenekler": [
+    "Tasarım, bir fikri zihinde canlandırıp planlamaktır; en önemli özelliği planlamadır.",
+    "Tasarım, ürünü makineyle çok sayıda üretmektir.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Tasarımın en önemli özelliği neydi?",
+   "aciklama": "Tasarımın en önemli özelliği planlamadır. (s. 13)",
+   "dogruCevap": "Tasarım, bir fikrin zihinde canlandırılıp planlanmasıdır. En önemli özelliği planlamadır."
+  },
+  {
+   "kazanim": "Ü2·A",
+   "soru": "5 adet tasarım elemanı yazınız.",
+   "kuark": "Nokta, çizgi, renk, vurgu, denge.",
+   "secenekler": [
+    "Vurgu ve denge tasarım ilkesidir; yerine doku, biçim-form gibi elemanlar yazılmalı.",
+    "Nokta ve çizgi eleman değildir.",
+    "Fikri haklı, hepsi eleman."
+   ],
+   "dogru": 0,
+   "ipucu": "Eleman mı, ilke mi? Vurgu hangi listedeydi?",
+   "aciklama": "Elemanlar s. 24'te, ilkeler s. 27'de.",
+   "dogruCevap": "Nokta, çizgi, renk, doku, biçim (form)."
+  },
+  {
+   "kazanim": "Ü2·A",
+   "soru": "Rengin tasarım üzerindeki etkileri nelerdir?",
+   "kuark": "Soğuk renkler insanı uyarır, sıcak renkler dinlendirir.",
+   "secenekler": [
+    "Ters söylemiş: sıcak renkler uyarıcı, soğuk renkler gevşetici ve dinlendiricidir.",
+    "Renklerin insan üzerinde hiçbir etkisi yoktur.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Kırmızı mı daha heyecanlı, mavi mi?",
+   "aciklama": "Sıcak renkler uyarıcı, soğuk renkler gevşetici ve dinlendirici etki uyandırır. (s. 24)",
+   "dogruCevap": "Sıcak renkler uyarıcı, soğuk renkler gevşetici ve dinlendiricidir. Renkle dikkat çekilir."
+  },
+  {
+   "kazanim": "Ü2·A",
+   "soru": "Doku kavramını açıklayınız.",
+   "kuark": "Doku, bir nesnenin rengidir.",
+   "secenekler": [
+    "Doku, nesnenin dış yüzeyinin yapısıdır (pürüzlü, kaygan gibi); renk ayrı bir elemandır.",
+    "Doku, noktanın bir doğrultuda uzamasıdır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Gözünü kapatıp ağaç kabuğuna dokunsan ne hissedersin?",
+   "aciklama": "Doku: nesnelerin dış yapı özellikleri. (s. 24)",
+   "dogruCevap": "Doku, nesnelerin dış yüzeyinin yapısıdır: pürüzlü, kaygan, yumuşak gibi."
+  },
+  {
+   "kazanim": "Ü2·A",
+   "soru": "“Bir rengin açıklık ve koyuluk derecesidir.” Hangi tasarım elemanıdır?",
+   "kuark": "Renk.",
+   "secenekler": [
+    "Bu valördür (değer); renk, ışığın yansımasıyla gözümüzde oluşan etkidir.",
+    "Bu dokudur.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Aynı rengin açığı ve koyusu… bunun özel bir adı vardı.",
+   "aciklama": "Valör (değer): bir rengin açıklık-koyuluk derecesi (program).",
+   "dogruCevap": "Valör (değer)"
+  },
+  {
+   "kazanim": "Ü2·A",
+   "soru": "“Şeklin üç boyut ve hacim kazanmış hâlidir.” Hangi tasarım elemanıdır?",
+   "kuark": "Şekil.",
+   "secenekler": [
+    "Bu formdur; şekil düz, iki boyutludur.",
+    "Bu noktadır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Kare düzdür; küp üç boyutludur. Küpe ne denir?",
+   "aciklama": "Form: eni, boyu ve derinliği olan üç boyutlu biçim (program).",
+   "dogruCevap": "Form (biçim-form)"
+  },
+  {
+   "kazanim": "Ü2·B",
+   "soru": "Vurgu tasarım ilkesini açıklayınız.",
+   "kuark": "Vurgu, tasarımdaki parçaların eşit dağılmasıdır.",
+   "secenekler": [
+    "Bu dengenin tanımı; vurgu, tasarımda göz alıcı olan odak noktasıdır.",
+    "Vurgu, elemanların uyumlu tekrarıdır.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Düz kıyafetteki kolyeyi düşün: gözün nereye gider?",
+   "aciklama": "Vurgu: göz alıcı odak noktası. (s. 27)",
+   "dogruCevap": "Vurgu, tasarımda göz alıcı olan odak noktasıdır. Renk, şekil, boyutla sağlanır; örneğin düz kıyafetteki kolye."
+  },
+  {
+   "kazanim": "Ü2·B",
+   "soru": "“Zıt özelliklerin yan yana getirilmesiyle oluşan güçlü görsel etkidir.” Hangi tasarım ilkesidir?",
+   "kuark": "Ritim.",
+   "secenekler": [
+    "Bu zıtlıktır (kontrast); ritim uyumlu tekrardır.",
+    "Bu dengedir.",
+    "Fikri haklı, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Tanımda hangi kelime ilkenin adını veriyor?",
+   "aciklama": "Zıtlık (kontrast): karşıt elemanlar yan yana (program). Ritim: uyumlu tekrar (s. 27).",
+   "dogruCevap": "Zıtlık (kontrast)"
+  }
+ ],
+ "provalar": [
+  {
+   "id": "p1",
+   "ad": "Prova 1",
+   "sorular": [
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Teknoloji nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Teknoloji, araç-gereç yapabilmek için gereken bilgi ve yetenektir. Bir işi daha iyi, daha hızlı, daha kolay, daha ekonomik ve daha verimli yapma girişimidir. Amacı insan hayatının kalitesini artırmaktır.",
+       "anahtarlar": [
+        {
+         "ad": "Araç-gereç yapmak için gereken bilgi ve yetenek",
+         "k": [
+          "araç",
+          "gereç",
+          "yetenek"
+         ]
+        },
+        {
+         "ad": "Bir işi daha iyi, hızlı, kolay, verimli yapma",
+         "k": [
+          "daha iyi",
+          "hızlı",
+          "kolay",
+          "verimli",
+          "ekonomik"
+         ]
+        },
+        {
+         "ad": "Amacı: hayat kalitesini artırmak",
+         "k": [
+          "kalite",
+          "hayatı",
+          "hayatımızı",
+          "yaşam"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yukarıda tanımı verilen tasarım alanı hangi tasarım alanıdır?",
+       "formul": "alan",
+       "cevap": "Grafik tasarımdır. Grafik tasarım, okunan ve izlenen görüntülerin tasarımıdır.",
+       "anahtarlar": [
+        {
+         "ad": "Grafik tasarım",
+         "k": [
+          "grafik"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "metin": [
+      "Broşür, afiş, kitap, dergi vb. okunan ve izlenen görüntülerin tasarımını yapmaktır."
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "5 adet tasarım elemanı yazınız.",
+       "formul": "ornek",
+       "cevap": "1. Nokta 2. Çizgi 3. Renk 4. Doku 5. Biçim (form)",
+       "anahtarlar": [
+        {
+         "ad": "1. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "2. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "3. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "4. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "5. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Endüstri nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Endüstri (sanayi), makine ve benzeri araçlar kullanılarak toplu üretim yapılan faaliyet dalıdır. Ham maddeleri ve yarı işlenmiş maddeleri kullanıma hazır hâle getirir.",
+       "anahtarlar": [
+        {
+         "ad": "Makine ve araçlarla",
+         "k": [
+          "makine"
+         ]
+        },
+        {
+         "ad": "Toplu üretim",
+         "k": [
+          "toplu",
+          "seri"
+         ]
+        },
+        {
+         "ad": "Ham maddeyi kullanıma hazır hâle getirir",
+         "k": [
+          "ham madde",
+          "hammadde",
+          "kullanıma hazır",
+          "yarı işlen"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Endüstriyel tasarım nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Endüstriyel tasarım, seri üretime uygun ürün tasarlama işidir. Üç boyutlu nesnelerin tasarlanması ve geliştirilmesiyle ilgilidir. Örneğin makineler, araç-gereçler ve mutfak malzemeleri.",
+       "anahtarlar": [
+        {
+         "ad": "Seri üretime uygun ürün tasarlama",
+         "k": [
+          "seri üretim",
+          "seri"
+         ]
+        },
+        {
+         "ad": "Üç boyutlu nesneler",
+         "k": [
+          "üç boyut",
+          "3 boyut",
+          "3b"
+         ]
+        },
+        {
+         "ad": "Örnek: makine, araç-gereç, mutfak malzemesi",
+         "k": [
+          "makine",
+          "araç",
+          "mutfak",
+          "tencere",
+          "sandalye",
+          "araba",
+          "otomobil",
+          "telefon"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Keşif ve icat arasındaki fark nedir? Açıklayınız.",
+       "formul": "karsilastir",
+       "cevap": "Keşif, daha önce var olan ama bilinmeyen bir şeyin bulunmasıdır; örneğin yer çekiminin fark edilmesi. İcat ise var olan teknolojilerin bir araya getirilerek yeni ve benzersiz bir şeyin yapılmasıdır; örneğin kibrit. Yani keşifte var olan bulunur, icatta yeni bir şey yapılır.",
+       "anahtarlar": [
+        {
+         "ad": "Keşif: var olan ama bilinmeyen bir şeyi bulmak",
+         "k": [
+          "var olan",
+          "bilinmeyen",
+          "fark ed"
+         ]
+        },
+        {
+         "ad": "İcat: var olanları birleştirip yeni bir şey yapmak",
+         "k": [
+          "yeni",
+          "bir araya",
+          "birleştir",
+          "benzersiz"
+         ]
+        },
+        {
+         "ad": "Her birine örnek (yer çekimi, kıta / kibrit, araba…)",
+         "k": [
+          "ateş",
+          "yer çekimi",
+          "yerçekimi",
+          "kaldırma kuvveti",
+          "kıta",
+          "gezegen",
+          "amerika",
+          "kibrit",
+          "araba",
+          "daktilo"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "İki adet keşif örneği yazınız.",
+       "formul": "ornek",
+       "cevap": "1. Yer çekiminin fark edilmesi 2. Bilinmeyen bir kıtanın bulunması",
+       "anahtarlar": [
+        {
+         "ad": "1. keşif örneği doğru",
+         "sira": [
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ]
+         ]
+        },
+        {
+         "ad": "2. keşif örneği doğru",
+         "sira": [
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ],
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ]
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım elemanlarından biri olan renk kavramını açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Renk, ışığın cisimlere çarptıktan sonra yansıyarak gözümüzde bıraktığı etkidir.",
+       "anahtarlar": [
+        {
+         "ad": "Işık",
+         "k": [
+          "ışı"
+         ]
+        },
+        {
+         "ad": "Cisimlerden yansıma",
+         "k": [
+          "yansı"
+         ]
+        },
+        {
+         "ad": "Gözde bıraktığı etki",
+         "k": [
+          "göz",
+          "görme"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Rengin tasarım üzerindeki etkileri nelerdir?",
+       "formul": "etki",
+       "cevap": "Renk insanları etkiler. Sıcak renkler (kırmızı, turuncu) uyarıcıdır, soğuk renkler (mavi, yeşil) gevşetici ve dinlendiricidir. Renkle tasarımda dikkat çekilir, vurgu yapılır.",
+       "anahtarlar": [
+        {
+         "ad": "Sıcak renkler uyarıcı",
+         "k": [
+          "sıcak",
+          "uyar"
+         ]
+        },
+        {
+         "ad": "Soğuk renkler gevşetici, dinlendirici",
+         "k": [
+          "soğuk",
+          "dinlendir",
+          "gevşe",
+          "sakin"
+         ]
+        },
+        {
+         "ad": "Dikkat çeker, vurgu yapar",
+         "k": [
+          "dikkat",
+          "vurgu",
+          "odak"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Hareket eden bir noktanın izidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Çizgi",
+       "anahtarlar": [
+        {
+         "ad": "Çizgi",
+         "k": [
+          "çizgi"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "b",
+       "soru": "“Işığın nesnelerden yansıyarak gözümüzde oluşturduğu etkidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Renk",
+       "anahtarlar": [
+        {
+         "ad": "Renk",
+         "k": [
+          "renk"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "c",
+       "soru": "“Bir rengin açıklık ve koyuluk derecesidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Valör (değer)",
+       "anahtarlar": [
+        {
+         "ad": "Valör (değer)",
+         "k": [
+          "valör",
+          "valor",
+          "değer"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "d",
+       "soru": "“Görsel anlatımın en küçük ve en temel elemanıdır.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Nokta",
+       "anahtarlar": [
+        {
+         "ad": "Nokta",
+         "k": [
+          "nokta"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "e",
+       "soru": "“Şeklin üç boyut ve hacim kazanmış hâlidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Form (biçim-form)",
+       "anahtarlar": [
+        {
+         "ad": "Form (biçim-form)",
+         "k": [
+          "form",
+          "biçim"
+         ]
+        }
+       ],
+       "puan": 2
+      }
+     ],
+     "metin": [
+      "Aşağıda verilen tanımların hangi tasarım elemanına ait olduğunu yazınız."
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Vurgu tasarım ilkesini açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Vurgu, tasarımda göz alıcı olan odak noktasıdır. Renk, şekil, form, boyut ya da yerleşimle sağlanır. Örneğin düz bir kıyafetin üstüne takılan kolye ya da metindeki koyu yazılmış bölüm dikkati oraya çeker.",
+       "anahtarlar": [
+        {
+         "ad": "Göz alıcı odak noktası, dikkati çeker",
+         "k": [
+          "odak",
+          "göz alıcı",
+          "dikkat"
+         ]
+        },
+        {
+         "ad": "Renk, şekil, boyut gibi elemanlarla sağlanır",
+         "k": [
+          "renk",
+          "şekil",
+          "boyut",
+          "form",
+          "yerleşim",
+          "çizgi"
+         ]
+        },
+        {
+         "ad": "Örnek: kolye, koyu yazılmış bölüm",
+         "k": [
+          "kolye",
+          "koyu",
+          "kalın"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "ad": "Prova 2",
+   "sorular": [
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Teknoloji nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Teknoloji, araç-gereç yapabilmek için gereken bilgi ve yetenektir. Bir işi daha iyi, daha hızlı, daha kolay, daha ekonomik ve daha verimli yapma girişimidir. Amacı insan hayatının kalitesini artırmaktır.",
+       "anahtarlar": [
+        {
+         "ad": "Araç-gereç yapmak için gereken bilgi ve yetenek",
+         "k": [
+          "araç",
+          "gereç",
+          "yetenek"
+         ]
+        },
+        {
+         "ad": "Bir işi daha iyi, hızlı, kolay, verimli yapma",
+         "k": [
+          "daha iyi",
+          "hızlı",
+          "kolay",
+          "verimli",
+          "ekonomik"
+         ]
+        },
+        {
+         "ad": "Amacı: hayat kalitesini artırmak",
+         "k": [
+          "kalite",
+          "hayatı",
+          "hayatımızı",
+          "yaşam"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Tasarım, bir fikrin zihinde canlandırılıp planlanmasıdır. En önemli özelliği planlamadır. Bir fikrin kâğıt üzerine çizilmiş şekli de tasarımdır.",
+       "anahtarlar": [
+        {
+         "ad": "Zihinde canlandırma",
+         "k": [
+          "zihin",
+          "canlandır",
+          "hayal"
+         ]
+        },
+        {
+         "ad": "Planlama",
+         "k": [
+          "plan"
+         ]
+        },
+        {
+         "ad": "Fikrin kâğıda çizilmesi",
+         "k": [
+          "kâğıt",
+          "kağıt",
+          "çiz"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "İcat yapan kişilere ne isim verilir?",
+       "formul": "alan",
+       "cevap": "İcat yapan kişilere mucit denir.",
+       "anahtarlar": [
+        {
+         "ad": "Mucit",
+         "k": [
+          "mucit"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Endüstriyel tasarım nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Endüstriyel tasarım, seri üretime uygun ürün tasarlama işidir. Üç boyutlu nesnelerin tasarlanması ve geliştirilmesiyle ilgilidir. Örneğin makineler, araç-gereçler ve mutfak malzemeleri.",
+       "anahtarlar": [
+        {
+         "ad": "Seri üretime uygun ürün tasarlama",
+         "k": [
+          "seri üretim",
+          "seri"
+         ]
+        },
+        {
+         "ad": "Üç boyutlu nesneler",
+         "k": [
+          "üç boyut",
+          "3 boyut",
+          "3b"
+         ]
+        },
+        {
+         "ad": "Örnek: makine, araç-gereç, mutfak malzemesi",
+         "k": [
+          "makine",
+          "araç",
+          "mutfak",
+          "tencere",
+          "sandalye",
+          "araba",
+          "otomobil",
+          "telefon"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Keşif ve icat arasındaki fark nedir? Açıklayınız.",
+       "formul": "karsilastir",
+       "cevap": "Keşif, daha önce var olan ama bilinmeyen bir şeyin bulunmasıdır; örneğin yer çekiminin fark edilmesi. İcat ise var olan teknolojilerin bir araya getirilerek yeni ve benzersiz bir şeyin yapılmasıdır; örneğin kibrit. Yani keşifte var olan bulunur, icatta yeni bir şey yapılır.",
+       "anahtarlar": [
+        {
+         "ad": "Keşif: var olan ama bilinmeyen bir şeyi bulmak",
+         "k": [
+          "var olan",
+          "bilinmeyen",
+          "fark ed"
+         ]
+        },
+        {
+         "ad": "İcat: var olanları birleştirip yeni bir şey yapmak",
+         "k": [
+          "yeni",
+          "bir araya",
+          "birleştir",
+          "benzersiz"
+         ]
+        },
+        {
+         "ad": "Her birine örnek (yer çekimi, kıta / kibrit, araba…)",
+         "k": [
+          "ateş",
+          "yer çekimi",
+          "yerçekimi",
+          "kaldırma kuvveti",
+          "kıta",
+          "gezegen",
+          "amerika",
+          "kibrit",
+          "araba",
+          "daktilo"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yukarıda tanımı verilen tasarım alanı hangi tasarım alanıdır?",
+       "formul": "alan",
+       "cevap": "Çevre tasarımıdır (mimari-çevre tasarımı). Çevre tasarımı bina, peyzaj ve iç mekân tasarımını kapsar.",
+       "anahtarlar": [
+        {
+         "ad": "Çevre tasarımı (mimari-çevre)",
+         "k": [
+          "çevre",
+          "mimari"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "metin": [
+      "Bina, peyzaj ve iç mekân tasarımını kapsayan oldukça geniş bir çalışma alanıdır."
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım elemanlarından biri olan doku kavramını açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Doku, nesnelerin dış yüzeyinin yapısıdır; pürüzlü, kaygan, yumuşak, sert gibi. Doku gözle görülür, elle dokunarak hissedilir.",
+       "anahtarlar": [
+        {
+         "ad": "Nesnenin dış yüzeyinin (dış yapısının) özelliği",
+         "k": [
+          "dış yapı",
+          "yüzey",
+          "dış görünüş"
+         ]
+        },
+        {
+         "ad": "Örnek: pürüzlü, kaygan, yumuşak, sert…",
+         "k": [
+          "pürüzlü",
+          "kaygan",
+          "yumuşak",
+          "sert",
+          "pürüzsüz",
+          "ağaç kabuğu",
+          "kumaş",
+          "dokun",
+          "hissed"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Dokunun tasarıma kattığı etkiler nelerdir?",
+       "formul": "etki",
+       "cevap": "Doku tasarımı zenginleştirir ve çeşitlendirir. Dikkati nesneye çeker. Nesneyi gerçek gibi hissettirir ve düz bir resme derinlik (üç boyut) etkisi verir.",
+       "anahtarlar": [
+        {
+         "ad": "Tasarımı zenginleştirir, çeşitlendirir",
+         "k": [
+          "zengin",
+          "çeşit"
+         ]
+        },
+        {
+         "ad": "Dikkat çeker, ilgi uyandırır",
+         "k": [
+          "dikkat",
+          "ilgi"
+         ]
+        },
+        {
+         "ad": "Gerçek gibi hissettirir, derinlik verir",
+         "k": [
+          "gerçek",
+          "derinlik",
+          "üç boyut",
+          "hissettir"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım elemanlarından biri olan renk kavramını açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Renk, ışığın cisimlere çarptıktan sonra yansıyarak gözümüzde bıraktığı etkidir.",
+       "anahtarlar": [
+        {
+         "ad": "Işık",
+         "k": [
+          "ışı"
+         ]
+        },
+        {
+         "ad": "Cisimlerden yansıma",
+         "k": [
+          "yansı"
+         ]
+        },
+        {
+         "ad": "Gözde bıraktığı etki",
+         "k": [
+          "göz",
+          "görme"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Rengin tasarım üzerindeki etkileri nelerdir?",
+       "formul": "etki",
+       "cevap": "Renk insanları etkiler. Sıcak renkler (kırmızı, turuncu) uyarıcıdır, soğuk renkler (mavi, yeşil) gevşetici ve dinlendiricidir. Renkle tasarımda dikkat çekilir, vurgu yapılır.",
+       "anahtarlar": [
+        {
+         "ad": "Sıcak renkler uyarıcı",
+         "k": [
+          "sıcak",
+          "uyar"
+         ]
+        },
+        {
+         "ad": "Soğuk renkler gevşetici, dinlendirici",
+         "k": [
+          "soğuk",
+          "dinlendir",
+          "gevşe",
+          "sakin"
+         ]
+        },
+        {
+         "ad": "Dikkat çeker, vurgu yapar",
+         "k": [
+          "dikkat",
+          "vurgu",
+          "odak"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Hareket eden bir noktanın izidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Çizgi",
+       "anahtarlar": [
+        {
+         "ad": "Çizgi",
+         "k": [
+          "çizgi"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "b",
+       "soru": "“Işığın nesnelerden yansıyarak gözümüzde oluşturduğu etkidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Renk",
+       "anahtarlar": [
+        {
+         "ad": "Renk",
+         "k": [
+          "renk"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "c",
+       "soru": "“Bir rengin açıklık ve koyuluk derecesidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Valör (değer)",
+       "anahtarlar": [
+        {
+         "ad": "Valör (değer)",
+         "k": [
+          "valör",
+          "valor",
+          "değer"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "d",
+       "soru": "“Görsel anlatımın en küçük ve en temel elemanıdır.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Nokta",
+       "anahtarlar": [
+        {
+         "ad": "Nokta",
+         "k": [
+          "nokta"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "e",
+       "soru": "“Şeklin üç boyut ve hacim kazanmış hâlidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Form (biçim-form)",
+       "anahtarlar": [
+        {
+         "ad": "Form (biçim-form)",
+         "k": [
+          "form",
+          "biçim"
+         ]
+        }
+       ],
+       "puan": 2
+      }
+     ],
+     "metin": [
+      "Aşağıda verilen tanımların hangi tasarım elemanına ait olduğunu yazınız."
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yukarıda tanımı verilen tasarım ilkesi hangisidir?",
+       "formul": "alan",
+       "cevap": "Zıtlıktır (kontrast). Açık-koyu, büyük-küçük gibi zıt özellikler yan yana gelince güçlü bir görsel etki oluşur.",
+       "anahtarlar": [
+        {
+         "ad": "Zıtlık (kontrast)",
+         "k": [
+          "zıt",
+          "kontrast"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "metin": [
+      "Zıt özelliklerin yan yana getirilmesiyle oluşan güçlü görsel etkidir."
+     ],
+     "puan": 10
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "ad": "Prova 3",
+   "sorular": [
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yukarıda tanımı verilen tasarım alanı hangi tasarım alanıdır?",
+       "formul": "alan",
+       "cevap": "Grafik tasarımdır. Grafik tasarım, okunan ve izlenen görüntülerin tasarımıdır.",
+       "anahtarlar": [
+        {
+         "ad": "Grafik tasarım",
+         "k": [
+          "grafik"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "metin": [
+      "Broşür, afiş, kitap, dergi vb. okunan ve izlenen görüntülerin tasarımını yapmaktır."
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Tasarım, bir fikrin zihinde canlandırılıp planlanmasıdır. En önemli özelliği planlamadır. Bir fikrin kâğıt üzerine çizilmiş şekli de tasarımdır.",
+       "anahtarlar": [
+        {
+         "ad": "Zihinde canlandırma",
+         "k": [
+          "zihin",
+          "canlandır",
+          "hayal"
+         ]
+        },
+        {
+         "ad": "Planlama",
+         "k": [
+          "plan"
+         ]
+        },
+        {
+         "ad": "Fikrin kâğıda çizilmesi",
+         "k": [
+          "kâğıt",
+          "kağıt",
+          "çiz"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "İcat yapan kişilere ne isim verilir?",
+       "formul": "alan",
+       "cevap": "İcat yapan kişilere mucit denir.",
+       "anahtarlar": [
+        {
+         "ad": "Mucit",
+         "k": [
+          "mucit"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "5 adet tasarım elemanı yazınız.",
+       "formul": "ornek",
+       "cevap": "1. Nokta 2. Çizgi 3. Renk 4. Doku 5. Biçim (form)",
+       "anahtarlar": [
+        {
+         "ad": "1. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "2. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "3. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "4. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "5. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Endüstri nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Endüstri (sanayi), makine ve benzeri araçlar kullanılarak toplu üretim yapılan faaliyet dalıdır. Ham maddeleri ve yarı işlenmiş maddeleri kullanıma hazır hâle getirir.",
+       "anahtarlar": [
+        {
+         "ad": "Makine ve araçlarla",
+         "k": [
+          "makine"
+         ]
+        },
+        {
+         "ad": "Toplu üretim",
+         "k": [
+          "toplu",
+          "seri"
+         ]
+        },
+        {
+         "ad": "Ham maddeyi kullanıma hazır hâle getirir",
+         "k": [
+          "ham madde",
+          "hammadde",
+          "kullanıma hazır",
+          "yarı işlen"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Keşif ve icat arasındaki fark nedir? Açıklayınız.",
+       "formul": "karsilastir",
+       "cevap": "Keşif, daha önce var olan ama bilinmeyen bir şeyin bulunmasıdır; örneğin yer çekiminin fark edilmesi. İcat ise var olan teknolojilerin bir araya getirilerek yeni ve benzersiz bir şeyin yapılmasıdır; örneğin kibrit. Yani keşifte var olan bulunur, icatta yeni bir şey yapılır.",
+       "anahtarlar": [
+        {
+         "ad": "Keşif: var olan ama bilinmeyen bir şeyi bulmak",
+         "k": [
+          "var olan",
+          "bilinmeyen",
+          "fark ed"
+         ]
+        },
+        {
+         "ad": "İcat: var olanları birleştirip yeni bir şey yapmak",
+         "k": [
+          "yeni",
+          "bir araya",
+          "birleştir",
+          "benzersiz"
+         ]
+        },
+        {
+         "ad": "Her birine örnek (yer çekimi, kıta / kibrit, araba…)",
+         "k": [
+          "ateş",
+          "yer çekimi",
+          "yerçekimi",
+          "kaldırma kuvveti",
+          "kıta",
+          "gezegen",
+          "amerika",
+          "kibrit",
+          "araba",
+          "daktilo"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "İki adet keşif örneği yazınız.",
+       "formul": "ornek",
+       "cevap": "1. Yer çekiminin fark edilmesi 2. Bilinmeyen bir kıtanın bulunması",
+       "anahtarlar": [
+        {
+         "ad": "1. keşif örneği doğru",
+         "sira": [
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ]
+         ]
+        },
+        {
+         "ad": "2. keşif örneği doğru",
+         "sira": [
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ],
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ]
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım elemanlarından biri olan doku kavramını açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Doku, nesnelerin dış yüzeyinin yapısıdır; pürüzlü, kaygan, yumuşak, sert gibi. Doku gözle görülür, elle dokunarak hissedilir.",
+       "anahtarlar": [
+        {
+         "ad": "Nesnenin dış yüzeyinin (dış yapısının) özelliği",
+         "k": [
+          "dış yapı",
+          "yüzey",
+          "dış görünüş"
+         ]
+        },
+        {
+         "ad": "Örnek: pürüzlü, kaygan, yumuşak, sert…",
+         "k": [
+          "pürüzlü",
+          "kaygan",
+          "yumuşak",
+          "sert",
+          "pürüzsüz",
+          "ağaç kabuğu",
+          "kumaş",
+          "dokun",
+          "hissed"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Dokunun tasarıma kattığı etkiler nelerdir?",
+       "formul": "etki",
+       "cevap": "Doku tasarımı zenginleştirir ve çeşitlendirir. Dikkati nesneye çeker. Nesneyi gerçek gibi hissettirir ve düz bir resme derinlik (üç boyut) etkisi verir.",
+       "anahtarlar": [
+        {
+         "ad": "Tasarımı zenginleştirir, çeşitlendirir",
+         "k": [
+          "zengin",
+          "çeşit"
+         ]
+        },
+        {
+         "ad": "Dikkat çeker, ilgi uyandırır",
+         "k": [
+          "dikkat",
+          "ilgi"
+         ]
+        },
+        {
+         "ad": "Gerçek gibi hissettirir, derinlik verir",
+         "k": [
+          "gerçek",
+          "derinlik",
+          "üç boyut",
+          "hissettir"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Hareket eden bir noktanın izidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Çizgi",
+       "anahtarlar": [
+        {
+         "ad": "Çizgi",
+         "k": [
+          "çizgi"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "b",
+       "soru": "“Işığın nesnelerden yansıyarak gözümüzde oluşturduğu etkidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Renk",
+       "anahtarlar": [
+        {
+         "ad": "Renk",
+         "k": [
+          "renk"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "c",
+       "soru": "“Bir rengin açıklık ve koyuluk derecesidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Valör (değer)",
+       "anahtarlar": [
+        {
+         "ad": "Valör (değer)",
+         "k": [
+          "valör",
+          "valor",
+          "değer"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "d",
+       "soru": "“Görsel anlatımın en küçük ve en temel elemanıdır.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Nokta",
+       "anahtarlar": [
+        {
+         "ad": "Nokta",
+         "k": [
+          "nokta"
+         ]
+        }
+       ],
+       "puan": 2
+      },
+      {
+       "harf": "e",
+       "soru": "“Şeklin üç boyut ve hacim kazanmış hâlidir.” Bu tanım hangi tasarım elemanına aittir?",
+       "cevap": "Form (biçim-form)",
+       "anahtarlar": [
+        {
+         "ad": "Form (biçim-form)",
+         "k": [
+          "form",
+          "biçim"
+         ]
+        }
+       ],
+       "puan": 2
+      }
+     ],
+     "metin": [
+      "Aşağıda verilen tanımların hangi tasarım elemanına ait olduğunu yazınız."
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Vurgu tasarım ilkesini açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Vurgu, tasarımda göz alıcı olan odak noktasıdır. Renk, şekil, form, boyut ya da yerleşimle sağlanır. Örneğin düz bir kıyafetin üstüne takılan kolye ya da metindeki koyu yazılmış bölüm dikkati oraya çeker.",
+       "anahtarlar": [
+        {
+         "ad": "Göz alıcı odak noktası, dikkati çeker",
+         "k": [
+          "odak",
+          "göz alıcı",
+          "dikkat"
+         ]
+        },
+        {
+         "ad": "Renk, şekil, boyut gibi elemanlarla sağlanır",
+         "k": [
+          "renk",
+          "şekil",
+          "boyut",
+          "form",
+          "yerleşim",
+          "çizgi"
+         ]
+        },
+        {
+         "ad": "Örnek: kolye, koyu yazılmış bölüm",
+         "k": [
+          "kolye",
+          "koyu",
+          "kalın"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "ad": "Prova 4",
+   "sorular": [
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Teknoloji nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Teknoloji, araç-gereç yapabilmek için gereken bilgi ve yetenektir. Bir işi daha iyi, daha hızlı, daha kolay, daha ekonomik ve daha verimli yapma girişimidir. Amacı insan hayatının kalitesini artırmaktır.",
+       "anahtarlar": [
+        {
+         "ad": "Araç-gereç yapmak için gereken bilgi ve yetenek",
+         "k": [
+          "araç",
+          "gereç",
+          "yetenek"
+         ]
+        },
+        {
+         "ad": "Bir işi daha iyi, hızlı, kolay, verimli yapma",
+         "k": [
+          "daha iyi",
+          "hızlı",
+          "kolay",
+          "verimli",
+          "ekonomik"
+         ]
+        },
+        {
+         "ad": "Amacı: hayat kalitesini artırmak",
+         "k": [
+          "kalite",
+          "hayatı",
+          "hayatımızı",
+          "yaşam"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "İcat yapan kişilere ne isim verilir?",
+       "formul": "alan",
+       "cevap": "İcat yapan kişilere mucit denir.",
+       "anahtarlar": [
+        {
+         "ad": "Mucit",
+         "k": [
+          "mucit"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "5 adet tasarım elemanı yazınız.",
+       "formul": "ornek",
+       "cevap": "1. Nokta 2. Çizgi 3. Renk 4. Doku 5. Biçim (form)",
+       "anahtarlar": [
+        {
+         "ad": "1. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "2. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "3. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "4. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        },
+        {
+         "ad": "5. eleman doğru",
+         "sira": [
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ],
+          [
+           "nokta",
+           "çizgi",
+           "renk",
+           "doku",
+           "biçim",
+           "form",
+           "şekil",
+           "yön",
+           "aralık",
+           "ışık",
+           "gölge",
+           "oran",
+           "yazı",
+           "valör",
+           "değer",
+           "mekân",
+           "mekan"
+          ]
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Endüstri nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Endüstri (sanayi), makine ve benzeri araçlar kullanılarak toplu üretim yapılan faaliyet dalıdır. Ham maddeleri ve yarı işlenmiş maddeleri kullanıma hazır hâle getirir.",
+       "anahtarlar": [
+        {
+         "ad": "Makine ve araçlarla",
+         "k": [
+          "makine"
+         ]
+        },
+        {
+         "ad": "Toplu üretim",
+         "k": [
+          "toplu",
+          "seri"
+         ]
+        },
+        {
+         "ad": "Ham maddeyi kullanıma hazır hâle getirir",
+         "k": [
+          "ham madde",
+          "hammadde",
+          "kullanıma hazır",
+          "yarı işlen"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Endüstriyel tasarım nedir? Açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Endüstriyel tasarım, seri üretime uygun ürün tasarlama işidir. Üç boyutlu nesnelerin tasarlanması ve geliştirilmesiyle ilgilidir. Örneğin makineler, araç-gereçler ve mutfak malzemeleri.",
+       "anahtarlar": [
+        {
+         "ad": "Seri üretime uygun ürün tasarlama",
+         "k": [
+          "seri üretim",
+          "seri"
+         ]
+        },
+        {
+         "ad": "Üç boyutlu nesneler",
+         "k": [
+          "üç boyut",
+          "3 boyut",
+          "3b"
+         ]
+        },
+        {
+         "ad": "Örnek: makine, araç-gereç, mutfak malzemesi",
+         "k": [
+          "makine",
+          "araç",
+          "mutfak",
+          "tencere",
+          "sandalye",
+          "araba",
+          "otomobil",
+          "telefon"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "İki adet keşif örneği yazınız.",
+       "formul": "ornek",
+       "cevap": "1. Yer çekiminin fark edilmesi 2. Bilinmeyen bir kıtanın bulunması",
+       "anahtarlar": [
+        {
+         "ad": "1. keşif örneği doğru",
+         "sira": [
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ]
+         ]
+        },
+        {
+         "ad": "2. keşif örneği doğru",
+         "sira": [
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ],
+          [
+           "ateş",
+           "yer çekimi",
+           "yerçekimi",
+           "kaldırma kuvveti",
+           "kıta",
+           "gezegen",
+           "amerika"
+          ]
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü1·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yukarıda tanımı verilen tasarım alanı hangi tasarım alanıdır?",
+       "formul": "alan",
+       "cevap": "Çevre tasarımıdır (mimari-çevre tasarımı). Çevre tasarımı bina, peyzaj ve iç mekân tasarımını kapsar.",
+       "anahtarlar": [
+        {
+         "ad": "Çevre tasarımı (mimari-çevre)",
+         "k": [
+          "çevre",
+          "mimari"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "metin": [
+      "Bina, peyzaj ve iç mekân tasarımını kapsayan oldukça geniş bir çalışma alanıdır."
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım elemanlarından biri olan doku kavramını açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Doku, nesnelerin dış yüzeyinin yapısıdır; pürüzlü, kaygan, yumuşak, sert gibi. Doku gözle görülür, elle dokunarak hissedilir.",
+       "anahtarlar": [
+        {
+         "ad": "Nesnenin dış yüzeyinin (dış yapısının) özelliği",
+         "k": [
+          "dış yapı",
+          "yüzey",
+          "dış görünüş"
+         ]
+        },
+        {
+         "ad": "Örnek: pürüzlü, kaygan, yumuşak, sert…",
+         "k": [
+          "pürüzlü",
+          "kaygan",
+          "yumuşak",
+          "sert",
+          "pürüzsüz",
+          "ağaç kabuğu",
+          "kumaş",
+          "dokun",
+          "hissed"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Dokunun tasarıma kattığı etkiler nelerdir?",
+       "formul": "etki",
+       "cevap": "Doku tasarımı zenginleştirir ve çeşitlendirir. Dikkati nesneye çeker. Nesneyi gerçek gibi hissettirir ve düz bir resme derinlik (üç boyut) etkisi verir.",
+       "anahtarlar": [
+        {
+         "ad": "Tasarımı zenginleştirir, çeşitlendirir",
+         "k": [
+          "zengin",
+          "çeşit"
+         ]
+        },
+        {
+         "ad": "Dikkat çeker, ilgi uyandırır",
+         "k": [
+          "dikkat",
+          "ilgi"
+         ]
+        },
+        {
+         "ad": "Gerçek gibi hissettirir, derinlik verir",
+         "k": [
+          "gerçek",
+          "derinlik",
+          "üç boyut",
+          "hissettir"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·A",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Tasarım elemanlarından biri olan renk kavramını açıklayınız.",
+       "formul": "tanim",
+       "cevap": "Renk, ışığın cisimlere çarptıktan sonra yansıyarak gözümüzde bıraktığı etkidir.",
+       "anahtarlar": [
+        {
+         "ad": "Işık",
+         "k": [
+          "ışı"
+         ]
+        },
+        {
+         "ad": "Cisimlerden yansıma",
+         "k": [
+          "yansı"
+         ]
+        },
+        {
+         "ad": "Gözde bıraktığı etki",
+         "k": [
+          "göz",
+          "görme"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Rengin tasarım üzerindeki etkileri nelerdir?",
+       "formul": "etki",
+       "cevap": "Renk insanları etkiler. Sıcak renkler (kırmızı, turuncu) uyarıcıdır, soğuk renkler (mavi, yeşil) gevşetici ve dinlendiricidir. Renkle tasarımda dikkat çekilir, vurgu yapılır.",
+       "anahtarlar": [
+        {
+         "ad": "Sıcak renkler uyarıcı",
+         "k": [
+          "sıcak",
+          "uyar"
+         ]
+        },
+        {
+         "ad": "Soğuk renkler gevşetici, dinlendirici",
+         "k": [
+          "soğuk",
+          "dinlendir",
+          "gevşe",
+          "sakin"
+         ]
+        },
+        {
+         "ad": "Dikkat çeker, vurgu yapar",
+         "k": [
+          "dikkat",
+          "vurgu",
+          "odak"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ],
+     "puan": 10
+    },
+    {
+     "kazanim": "Ü2·B",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yukarıda tanımı verilen tasarım ilkesi hangisidir?",
+       "formul": "alan",
+       "cevap": "Zıtlıktır (kontrast). Açık-koyu, büyük-küçük gibi zıt özellikler yan yana gelince güçlü bir görsel etki oluşur.",
+       "anahtarlar": [
+        {
+         "ad": "Zıtlık (kontrast)",
+         "k": [
+          "zıt",
+          "kontrast"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ],
+     "metin": [
+      "Zıt özelliklerin yan yana getirilmesiyle oluşan güçlü görsel etkidir."
+     ],
+     "puan": 10
+    }
+   ]
+  }
+ ]
+}
