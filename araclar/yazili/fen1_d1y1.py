@@ -575,4 +575,107 @@ Y.prova(id="p4", ad="Prova 4", sorular=[
         M("b", "K ve L cisimlerinin kinetik enerjileri hakkında ne söylenebilir? Açıklayınız.", "İkisinin de kinetik enerjisi yoktur, çünkü ikisi de hareketsiz tutuluyor; kinetik enerji için hareket gerekir.",
           [A("İkisinde de kinetik enerji yok", "yok", "sıfır"), A("Hareket etmiyorlar", "hareketsiz", "hareket etm", "hareket gerek", "duruyor")], "cunku", puan=7)]}])
 
+
+# =====================================================================
+# BASAMAKLAR (MEB soruları): 1 tam cevabı tanı → 2 parça parça kur → 3 kalıpla yaz → 4 sınavdaki hâli.
+# kisaCevap: puanın büyük kısmını (%70+) getiren en kısa cevap; Ela'nın hedefi bu (Kemal'in kararı, 1 Kasım 2026).
+# Parça: bas (hazır cümle başı; anahtar köklerini İÇERMEZ), ornek, k (kabul kökleri) | hepsi | sira | serbest, havuz (2 çeldirici).
+# =====================================================================
+def B(kisa, dogru, eksik, yanlis, ipucu, aciklama, *parcalar):
+    return {"kisaCevap": kisa, "basamak": {"sec": {"secenekler": [dogru, eksik, yanlis], "dogru": 0, "ipucu": ipucu, "aciklama": aciklama}, "parcalar": list(parcalar)}}
+def P(bas, ornek, havuz, k=None, hepsi=None, sira=None, serbest=False):
+    d = {"bas": bas, "ornek": ornek, "havuz": havuz}
+    if k: d["k"] = k
+    if hepsi: d["hepsi"] = hepsi
+    if sira: d["sira"] = sira
+    if serbest: d["serbest"] = True
+    return d
+
+BASAMAK = {
+ ("m3", "a"): B("Uzay kirliliği. Nedeni: eski uydular ve roket parçaları yörüngede kalır. Sonucu: uzay araçlarına çarpar.",
+    "Uzay kirliliği. Nedeni: eski uydular ve roket parçaları yörüngede kalır. Sonucu: uzay araçlarına çarpar.",
+    "Uzay kirliliği.", "Hava kirliliği. Fabrikaların dumanı atmosferi kirletir.",
+    "Soru üç şey istiyor: problem, neden, sonuç.", "Tam puan için adı, nedeni ve sonucu birlikte yazılır. (s. 30, 32)",
+    P("Problem:", "uzay kirliliği", ["hava kirliliği", "ışık kirliliği"], k=["uzay kirlili", "uzay çöp", "uzay copu"]),
+    P("Nedeni:", "eski uydular yörüngede kalır", ["fabrikalar duman çıkarır", "yıldızlar patlar"], k=["eski uydu", "görevi", "parça", "kalır", "kalıyor", "bitmiş", "biten"]),
+    P("Sonucu:", "uzay araçlarına çarpar", ["yağmur yağmaz", "Güneş söner"], k=["çarp", "zarar", "hasar"])),
+ ("m3", "b"): B("Çöpler uydulara çarpar; GPS ve televizyon bozulur.",
+    "Çöpler uydulara çarpar; GPS ve televizyon bozulur.", "Uzay yolculukları zorlaşır.", "Yağmurlar durur, hava kirlenir.",
+    "Günlük hayatta kullandığın bir teknoloji yaz.", "Uydular zarar görürse GPS, TV, telefon aksar. (s. 32)",
+    P("Çöpler neye çarpar?", "çalışan uydulara", ["uçaklara", "dağlara"], k=["uydu"]),
+    P("Bozulabilecek bir teknoloji:", "GPS / televizyon", ["buzdolabı", "bisiklet"], k=["televizyon", "tv", "gps", "navigasyon", "telefon", "internet", "hava durumu", "haberleşme", "iletişim", "yayın"])),
+ ("m3", "c"): B("2. yöntem, çünkü uydular çok yüksekte; atmosfere çekmek zor.",
+    "2. yöntem, çünkü uydular çok yüksekte; atmosfere çekmek zor.", "2. yöntem.", "Hiçbiri; uzaya hiç uydu gönderilmemeli.",
+    "Bir yöntem seç ve “çünkü” ile nedenini yaz.", "Hangi yöntemi seçtiğin değil, gerekçe yazman puan getirir.",
+    P("Seçtiğim yöntem:", "2. yöntem (ağla toplamak)", ["hiçbiri", "uydu göndermemek"], k=["1", "2", "birinci", "ikinci", "ağ", "atmosfer", "mıknatıs"]),
+    P("Nedeni:", "uydular yüksekte, atmosfere çekmek zor", ["bilmiyorum", "çünkü"], serbest=True)),
+ ("m4", "a"): B("Bulutsu. Büyük kütleli olmalı.",
+    "Bulutsu. Büyük kütleli olmalı.", "Bulutsu.", "Kara delik. Küçük kütleli olmalı.",
+    "Soru iki şey soruyor: doğum yeri ve kütle.", "Yıldızlar bulutsuda doğar; süpernova büyük kütleli yıldızlarda olur. (s. 41–42)",
+    P("Doğum yeri:", "bulutsu", ["kara delik", "beyaz cüce"], k=["bulutsu", "nebula"]),
+    P("Süpernova için kütle:", "büyük", ["küçük", "orta"], k=["büyük"])),
+ ("m4", "b"): B("Hayır, çünkü Güneş küçük kütleli; beyaz cüce olur.",
+    "Hayır, çünkü Güneş küçük kütleli; beyaz cüce olur.", "Hayır.", "Evet, çünkü Güneş çok büyük bir yıldızdır.",
+    "Evet/hayır tek başına puan getirmez.", "Güneş küçük kütleli, sonu beyaz cüce; kara delik büyük kütleli yıldızdan olur. (s. 42)",
+    P("Cevap:", "hayır", ["evet", "belki"], k=["hayır", "beklenemez", "olmaz", "dönüşmez"]),
+    P("Güneş'in kütlesi:", "küçük", ["büyük", "çok büyük"], k=["küçük"]),
+    P("Güneş'in sonu:", "beyaz cüce", ["kara delik", "süpernova"], k=["beyaz cüce"])),
+ ("m5", "a"): B("X: bulutsu, Y: kara delik, Z: küçük kütleli yıldız",
+    "X: bulutsu, Y: kara delik, Z: küçük kütleli yıldız", "X: bulutsu, Y: süpernova, Z: beyaz cüce", "X: galaksi, Y: kara delik, Z: büyük kütleli yıldız",
+    "Her cismin anlattığı son cümleye dikkat et.", "X gaz-toz bulutu, Y ışığın kaçamadığı merkez, Z beyaz cüce olacak yıldız. (s. 41–42)",
+    P("X:", "bulutsu", ["galaksi", "süpernova"], k=["bulutsu", "nebula"]),
+    P("Y:", "kara delik", ["süpernova", "nötron yıldızı"], k=["kara delik", "karadelik"]),
+    P("Z:", "küçük kütleli yıldız", ["büyük kütleli yıldız", "kırmızı süperdev"], k=["küçük kütle", "güneş"])),
+ ("m5", "b"): B("Başlangıç kütlesi: Y büyük kütleli → süpernova; Z küçük kütleli → beyaz cüce.",
+    "Başlangıç kütlesi: Y büyük kütleli → süpernova; Z küçük kütleli → beyaz cüce.", "Başlangıç kütlesi.", "Renkleri farklı olduğu için.",
+    "Yıldızın yaşamını belirleyen özellik neydi?", "Yaşam sürecini başlangıç kütlesi belirler. (s. 42)",
+    P("Belirleyen özellik:", "başlangıç kütlesi", ["renk", "uzaklık"], k=["kütle"]),
+    P("Y'nin sonu:", "süpernova → kara delik", ["beyaz cüce", "kırmızı dev"], k=["süpernova", "nötron", "kara delik"]),
+    P("Z'nin sonu:", "beyaz cüce", ["kara delik", "süpernova"], k=["beyaz cüce"])),
+ ("m6", "a"): B("Yıldız, galaksi, evren. Evren → Galaksi → Yıldız.",
+    "Yıldız, galaksi, evren. Evren → Galaksi → Yıldız.", "Galaksi → Evren → Yıldız", "Güneş sistemi → Dünya → Ay",
+    "En büyük kavram her şeyi içine alır.", "Evren galaksileri, galaksi yıldızları içine alır. (s. 46, 48)",
+    P("Kavramlar:", "yıldız, galaksi, evren", ["Dünya, Ay", "gezegen, uydu"], hepsi=[["yıldız"], ["galaksi", "gök ada"], ["evren"]]),
+    P("Büyükten küçüğe:", "evren → galaksi → yıldız", ["galaksi → evren → yıldız", "yıldız → galaksi → evren"], sira=[["evren"], ["galaksi", "gök ada"], ["yıldız"]])),
+ ("m7", "a"): B("Sandığı iten. Poşette kuvvet yukarı, hareket yatay; iş yok.",
+    "Sandığı iten. Poşette kuvvet yukarı, hareket yatay; iş yok.", "Sandığı iten kişi.", "İkisi de iş yapar, ikisi de yoruluyor.",
+    "Kuvvetin ve hareketin yönüne bak.", "Poşette kuvvet ile hareket diktir, iş yapılmaz. (s. 62)",
+    P("İş yapan:", "sandığı iten", ["poşet taşıyan", "ikisi de"], k=["sandı", "iten", "görsel 1", "birinci"]),
+    P("Poşet taşıyanın kuvveti ve hareketi:", "kuvvet yukarı, hareket yatay (dik)", ["ikisi de ileri", "kuvvet çok büyük"], k=["dik", "yatay", "farklı doğrultu", "farklı yön"])),
+ ("m7", "b"): B("Aynı doğrultuda olmalı; cisim yer değiştirmeli.",
+    "Aynı doğrultuda olmalı; cisim yer değiştirmeli.", "Kuvvet büyük olmalı.", "Birbirine dik olmalı.",
+    "İki koşulu hatırla.", "Cisim, uygulanan kuvvetle aynı doğrultuda yer değiştirmeli. (s. 61)",
+    P("Kuvvet ile cismin yolu:", "aynı doğrultuda olmalı", ["dik olmalı", "zıt olmalı"], k=["aynı doğrultu", "aynı yön", "doğrultusunda", "paralel"]),
+    P("Cisim ne yapmalı?", "yer değiştirmeli", ["durmalı", "ısınmalı"], k=["yer değiştir", "hareket", "yol al"])),
+ ("m8", "a"): B("Evet. Kuvvet de halter de yukarı (aynı doğrultu).",
+    "Evet. Kuvvet de halter de yukarı (aynı doğrultu).", "Evet.", "Hayır, çünkü halter çok ağır.",
+    "Evet/hayır + kuvvet ve hareketin yönü.", "Kuvvet yukarı, halter de yukarı hareket ediyor: iş var. (s. 61)",
+    P("Cevap:", "evet, iş var", ["hayır", "bilinmez"], k=["evet", "yapılmış", "yapmış", "yapar", "var"]),
+    P("Kuvvet ve halter hangi yöne?", "ikisi de yukarı (aynı doğrultu)", ["ikisi de aşağı", "farklı yönlere"], k=["aynı doğrultu", "aynı yön", "yukarı"])),
+ ("m8", "b"): B("Hayır. Halter hareket etmiyor.",
+    "Hayır. Halter hareket etmiyor.", "Hayır.", "Evet, çünkü çok yoruluyor.",
+    "Halter yer değiştiriyor mu?", "Kuvvet var ama hareket yok: iş yapılmaz. (s. 62)",
+    P("Cevap:", "hayır, iş yok", ["evet", "biraz"], k=["hayır", "yapılmamış", "yapmamış", "yapmaz", "yok", "sıfır"]),
+    P("Halter ne durumda?", "hareket etmiyor (sabit)", ["yukarı çıkıyor", "düşüyor"], k=["hareket etm", "sabit", "duruyor", "hareketsiz", "yer değiştirm"])),
+ ("m9", "a"): B("Çekim potansiyel enerjisi; kütle ve yükseklik.",
+    "Çekim potansiyel enerjisi; kütle ve yükseklik.", "Potansiyel enerji.", "Kinetik enerji; hız ve kütle.",
+    "Elma duruyor ama yüksekte.", "Yüksekte duran cismin çekim potansiyel enerjisi var; kütle ve yüksekliğe bağlı. (s. 68)",
+    P("Enerjinin adı:", "çekim potansiyel enerjisi", ["kinetik enerji", "ısı enerjisi"], k=["potansiyel"]),
+    P("Bağlı olduğu iki şey:", "kütle ve yükseklik", ["hız ve renk", "sıcaklık"], hepsi=[["kütle", "ağırlı"], ["yüksek"]])),
+ ("m9", "b"): B("Kinetik enerji.",
+    "Kinetik enerji.", "Potansiyel enerji.", "Esneklik potansiyel enerjisi.",
+    "Elma artık hareket ediyor.", "Hareketten dolayı sahip olunan enerji kinetik enerjidir. (s. 66)",
+    P("Enerjinin adı:", "kinetik enerji", ["potansiyel enerji", "ışık enerjisi"], k=["kinetik", "hareket enerjisi"])),
+ ("m9", "c"): B("Kinetik için hareket, potansiyel için yükseklik gerekir.",
+    "Kinetik için hareket, potansiyel için yükseklik gerekir.", "Kinetik enerji hareket enerjisidir.", "İkisi de yüksekliğe bağlıdır.",
+    "Karşılaştırmada iki tarafı da yaz.", "Kinetik: hareket; çekim potansiyel: yükseklik. (s. 66, 68)",
+    P("Kinetik için gereken:", "hareket", ["yükseklik", "renk"], k=["hareket", "hız", "sürat"]),
+    P("Potansiyel için gereken:", "yükseklik", ["hız", "ses"], k=["yüksek", "konum"])),
+}
+for q in Y.d["mebSorular"]:
+    for m in q["maddeler"]:
+        b = BASAMAK.get((q["id"], m["harf"]))
+        if b:
+            m.update(b); m.pop("iskele", None)   # basamaklı maddede ısınma yerine basamak 1–2
+
 Y.yaz()

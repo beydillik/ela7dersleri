@@ -287,17 +287,6 @@
      "harf": "a",
      "soru": "Uzay araştırmaları esnasında yaşanan bu problem nedir? Bu durumun nedenlerini ve sonuçlarını kısaca yazınız.",
      "formul": "problem",
-     "iskele": {
-      "tur": "kisa",
-      "soru": "Önce ısınalım: Metinde anlatılan problemin adı nedir?",
-      "yanit": "uzay kirliliği",
-      "kabul": [
-       "uzay çöpü",
-       "uzay kirliliği problemi",
-       "uzay çöpleri"
-      ],
-      "aciklama": "Yörüngede dolanan işlevsiz araç ve parçalar uzay kirliliği oluşturur. (s. 30)"
-     },
      "cevap": "Bu problem uzay kirliliğidir. Nedeni, görevini tamamlamış uyduların ve roket parçalarının yörüngede kalmasıdır. Sonucu, bu çok hızlı parçaların yeni uzay araçlarına çarpıp zarar verebilmesidir.",
      "anahtarlar": [
       {
@@ -330,35 +319,70 @@
         "hasar"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Uzay kirliliği. Nedeni: eski uydular ve roket parçaları yörüngede kalır. Sonucu: uzay araçlarına çarpar.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Uzay kirliliği. Nedeni: eski uydular ve roket parçaları yörüngede kalır. Sonucu: uzay araçlarına çarpar.",
+        "Uzay kirliliği.",
+        "Hava kirliliği. Fabrikaların dumanı atmosferi kirletir."
+       ],
+       "dogru": 0,
+       "ipucu": "Soru üç şey istiyor: problem, neden, sonuç.",
+       "aciklama": "Tam puan için adı, nedeni ve sonucu birlikte yazılır. (s. 30, 32)"
+      },
+      "parcalar": [
+       {
+        "bas": "Problem:",
+        "ornek": "uzay kirliliği",
+        "havuz": [
+         "hava kirliliği",
+         "ışık kirliliği"
+        ],
+        "k": [
+         "uzay kirlili",
+         "uzay çöp",
+         "uzay copu"
+        ]
+       },
+       {
+        "bas": "Nedeni:",
+        "ornek": "eski uydular yörüngede kalır",
+        "havuz": [
+         "fabrikalar duman çıkarır",
+         "yıldızlar patlar"
+        ],
+        "k": [
+         "eski uydu",
+         "görevi",
+         "parça",
+         "kalır",
+         "kalıyor",
+         "bitmiş",
+         "biten"
+        ]
+       },
+       {
+        "bas": "Sonucu:",
+        "ornek": "uzay araçlarına çarpar",
+        "havuz": [
+         "yağmur yağmaz",
+         "Güneş söner"
+        ],
+        "k": [
+         "çarp",
+         "zarar",
+         "hasar"
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "b",
      "soru": "Eğer bu sorun çözülmezse gelecekte, günlük hayatımızı etkileyen teknolojilerde ne gibi aksaklıklar yaşanabilir? Tahmininizi kısaca yazınız.",
      "formul": "tahmin",
-     "iskele": {
-      "tur": "dytablo",
-      "soru": "Önce ısınalım: Uzay kirliliği çözülmezse hangileri olabilir? D ya da Y seç.",
-      "ifadeler": [
-       {
-        "s": "GPS (navigasyon) bozulabilir.",
-        "d": true
-       },
-       {
-        "s": "Televizyon yayınları kesilebilir.",
-        "d": true
-       },
-       {
-        "s": "Hava durumu tahminleri zorlaşabilir.",
-        "d": true
-       },
-       {
-        "s": "Yağmurlar tamamen durur.",
-        "d": false
-       }
-      ],
-      "aciklama": "Çöpler uydulara çarparsa haberleşme ve ulaşım (GPS) aksar. (s. 32)"
-     },
      "cevap": "Yörüngedeki çöpler çalışan uydulara çarpabilir. Bu yüzden televizyon yayınları kesilebilir, GPS (navigasyon) bozulabilir, hava durumu tahminleri yapılamayabilir.",
      "anahtarlar": [
       {
@@ -382,7 +406,53 @@
         "yayın"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Çöpler uydulara çarpar; GPS ve televizyon bozulur.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Çöpler uydulara çarpar; GPS ve televizyon bozulur.",
+        "Uzay yolculukları zorlaşır.",
+        "Yağmurlar durur, hava kirlenir."
+       ],
+       "dogru": 0,
+       "ipucu": "Günlük hayatta kullandığın bir teknoloji yaz.",
+       "aciklama": "Uydular zarar görürse GPS, TV, telefon aksar. (s. 32)"
+      },
+      "parcalar": [
+       {
+        "bas": "Çöpler neye çarpar?",
+        "ornek": "çalışan uydulara",
+        "havuz": [
+         "uçaklara",
+         "dağlara"
+        ],
+        "k": [
+         "uydu"
+        ]
+       },
+       {
+        "bas": "Bozulabilecek bir teknoloji:",
+        "ornek": "GPS / televizyon",
+        "havuz": [
+         "buzdolabı",
+         "bisiklet"
+        ],
+        "k": [
+         "televizyon",
+         "tv",
+         "gps",
+         "navigasyon",
+         "telefon",
+         "internet",
+         "hava durumu",
+         "haberleşme",
+         "iletişim",
+         "yayın"
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "c",
@@ -413,7 +483,48 @@
         "tamamen"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "2. yöntem, çünkü uydular çok yüksekte; atmosfere çekmek zor.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "2. yöntem, çünkü uydular çok yüksekte; atmosfere çekmek zor.",
+        "2. yöntem.",
+        "Hiçbiri; uzaya hiç uydu gönderilmemeli."
+       ],
+       "dogru": 0,
+       "ipucu": "Bir yöntem seç ve “çünkü” ile nedenini yaz.",
+       "aciklama": "Hangi yöntemi seçtiğin değil, gerekçe yazman puan getirir."
+      },
+      "parcalar": [
+       {
+        "bas": "Seçtiğim yöntem:",
+        "ornek": "2. yöntem (ağla toplamak)",
+        "havuz": [
+         "hiçbiri",
+         "uydu göndermemek"
+        ],
+        "k": [
+         "1",
+         "2",
+         "birinci",
+         "ikinci",
+         "ağ",
+         "atmosfer",
+         "mıknatıs"
+        ]
+       },
+       {
+        "bas": "Nedeni:",
+        "ornek": "uydular yüksekte, atmosfere çekmek zor",
+        "havuz": [
+         "bilmiyorum",
+         "çünkü"
+        ],
+        "serbest": true
+       }
+      ]
+     }
     }
    ],
    "ikizler": [
@@ -609,25 +720,6 @@
     {
      "harf": "a",
      "soru": "Şemaya göre tüm yıldızların ortak doğum yeri olan yapıya ne ad verilir? Bu yapıdan çıkan bir yıldızın “süpernova patlaması” ile ömrünü tamamlaması için başlangıçta nasıl bir kütleye sahip olması gerekir?",
-     "iskele": {
-      "tur": "bosluk",
-      "soru": "Önce ısınalım: Boşlukları doldur.",
-      "cumleler": [
-       {
-        "c": "Bütün yıldızlar ___ adı verilen gaz ve toz bulutlarında doğar.",
-        "cevap": "bulutsu"
-       },
-       {
-        "c": "Süpernova patlaması ___ kütleli yıldızlarda görülür.",
-        "cevap": "büyük"
-       }
-      ],
-      "havuz": [
-       "küçük",
-       "kara delik"
-      ],
-      "aciklama": "Yıldızlar bulutsuda doğar; süpernova büyük kütleli yıldızların sonudur. (s. 41–42)"
-     },
      "cevap": "Bu yapıya bulutsu (nebula) denir. Süpernova patlaması için yıldızın başlangıçta büyük kütleli olması gerekir.",
      "anahtarlar": [
       {
@@ -645,19 +737,50 @@
         "büyük"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Bulutsu. Büyük kütleli olmalı.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Bulutsu. Büyük kütleli olmalı.",
+        "Bulutsu.",
+        "Kara delik. Küçük kütleli olmalı."
+       ],
+       "dogru": 0,
+       "ipucu": "Soru iki şey soruyor: doğum yeri ve kütle.",
+       "aciklama": "Yıldızlar bulutsuda doğar; süpernova büyük kütleli yıldızlarda olur. (s. 41–42)"
+      },
+      "parcalar": [
+       {
+        "bas": "Doğum yeri:",
+        "ornek": "bulutsu",
+        "havuz": [
+         "kara delik",
+         "beyaz cüce"
+        ],
+        "k": [
+         "bulutsu",
+         "nebula"
+        ]
+       },
+       {
+        "bas": "Süpernova için kütle:",
+        "ornek": "büyük",
+        "havuz": [
+         "küçük",
+         "orta"
+        ],
+        "k": [
+         "büyük"
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "b",
      "soru": "Güneş, orta büyüklükte (küçük kütleli) bir yıldızdır. Güneş'in yaşam döngüsünün sonunda bir “kara delik”e dönüşmesi beklenebilir mi? Şemadaki verilere dayanarak kısaca açıklayınız.",
      "formul": "cunku",
-     "iskele": {
-      "tur": "dy",
-      "ifade": "Güneş'in ömrünü kara delik olarak tamamlaması beklenir.",
-      "dogru": false,
-      "duzeltme": "Güneş küçük kütleli bir yıldızdır; beyaz cüce olarak sona erer.",
-      "aciklama": "Kara delik büyük kütleli yıldızlardan oluşur. (s. 42)"
-     },
      "cevap": "Hayır, beklenemez. Çünkü Güneş küçük kütleli bir yıldızdır. Kara delik yalnızca büyük kütleli yıldızların süpernova patlamasından sonra oluşur. Güneş ömrünü beyaz cüce olarak tamamlar.",
      "anahtarlar": [
       {
@@ -693,7 +816,58 @@
         "beyaz cüce"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Hayır, çünkü Güneş küçük kütleli; beyaz cüce olur.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Hayır, çünkü Güneş küçük kütleli; beyaz cüce olur.",
+        "Hayır.",
+        "Evet, çünkü Güneş çok büyük bir yıldızdır."
+       ],
+       "dogru": 0,
+       "ipucu": "Evet/hayır tek başına puan getirmez.",
+       "aciklama": "Güneş küçük kütleli, sonu beyaz cüce; kara delik büyük kütleli yıldızdan olur. (s. 42)"
+      },
+      "parcalar": [
+       {
+        "bas": "Cevap:",
+        "ornek": "hayır",
+        "havuz": [
+         "evet",
+         "belki"
+        ],
+        "k": [
+         "hayır",
+         "beklenemez",
+         "olmaz",
+         "dönüşmez"
+        ]
+       },
+       {
+        "bas": "Güneş'in kütlesi:",
+        "ornek": "küçük",
+        "havuz": [
+         "büyük",
+         "çok büyük"
+        ],
+        "k": [
+         "küçük"
+        ]
+       },
+       {
+        "bas": "Güneş'in sonu:",
+        "ornek": "beyaz cüce",
+        "havuz": [
+         "kara delik",
+         "süpernova"
+        ],
+        "k": [
+         "beyaz cüce"
+        ]
+       }
+      ]
+     }
     }
    ],
    "ikizler": [
@@ -853,25 +1027,6 @@
     {
      "harf": "a",
      "soru": "Yukarıda kendisini tanıtan X, Y ve Z cisimlerinin bilimsel adlarını yazınız.",
-     "iskele": {
-      "tur": "eslestir",
-      "soru": "Önce ısınalım: Cisimleri adlarıyla eşleştir.",
-      "ciftler": [
-       {
-        "sol": "X: Gaz ve toz bulutu, içinde yıldızlar doğar.",
-        "sag": "Bulutsu (nebula)"
-       },
-       {
-        "sol": "Y: Patlamadan sonra ışığın kaçamadığı çekim merkezi oldu.",
-        "sag": "Kara delik"
-       },
-       {
-        "sol": "Z: Kırmızı dev, sonra beyaz cüce olacak.",
-        "sag": "Küçük kütleli yıldız"
-       }
-      ],
-      "aciklama": "Yıldız bulutsuda doğar; büyük kütleli kara delik, küçük kütleli beyaz cüce olur. (s. 41–42)"
-     },
      "cevap": "X: Bulutsu (nebula). Y: Kara delik. Z: Küçük kütleli yıldız (Güneş gibi).",
      "anahtarlar": [
       {
@@ -895,24 +1050,63 @@
         "güneş"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "X: bulutsu, Y: kara delik, Z: küçük kütleli yıldız",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "X: bulutsu, Y: kara delik, Z: küçük kütleli yıldız",
+        "X: bulutsu, Y: süpernova, Z: beyaz cüce",
+        "X: galaksi, Y: kara delik, Z: büyük kütleli yıldız"
+       ],
+       "dogru": 0,
+       "ipucu": "Her cismin anlattığı son cümleye dikkat et.",
+       "aciklama": "X gaz-toz bulutu, Y ışığın kaçamadığı merkez, Z beyaz cüce olacak yıldız. (s. 41–42)"
+      },
+      "parcalar": [
+       {
+        "bas": "X:",
+        "ornek": "bulutsu",
+        "havuz": [
+         "galaksi",
+         "süpernova"
+        ],
+        "k": [
+         "bulutsu",
+         "nebula"
+        ]
+       },
+       {
+        "bas": "Y:",
+        "ornek": "kara delik",
+        "havuz": [
+         "süpernova",
+         "nötron yıldızı"
+        ],
+        "k": [
+         "kara delik",
+         "karadelik"
+        ]
+       },
+       {
+        "bas": "Z:",
+        "ornek": "küçük kütleli yıldız",
+        "havuz": [
+         "büyük kütleli yıldız",
+         "kırmızı süperdev"
+        ],
+        "k": [
+         "küçük kütle",
+         "güneş"
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "b",
      "soru": "Metindeki Y cismi ile Z cisminin yaşamlarının “son evrelerinin” neden birbirinden farklı olduğunu, yıldızların başlangıçtaki hangi temel özelliğiyle açıklarsınız?",
      "formul": "karsilastir",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Y ve Z'nin son evrelerini farklı yapan özellik hangisidir?",
-      "secenekler": [
-       "Başlangıçtaki kütleleri",
-       "Renkleri",
-       "Dünya'ya uzaklıkları",
-       "Parlaklıkları"
-      ],
-      "dogru": 0,
-      "aciklama": "Yıldızların yaşam sürecini kütleleri belirler. (s. 42)"
-     },
      "cevap": "Bu farkın nedeni yıldızların başlangıçtaki kütleleridir. Büyük kütleli yıldız (Y) süpernova patlamasıyla kara delik ya da nötron yıldızı olur. Küçük kütleli yıldız (Z) patlamadan beyaz cüce olur.",
      "anahtarlar": [
       {
@@ -936,7 +1130,57 @@
         "küçük kütle"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Başlangıç kütlesi: Y büyük kütleli → süpernova; Z küçük kütleli → beyaz cüce.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Başlangıç kütlesi: Y büyük kütleli → süpernova; Z küçük kütleli → beyaz cüce.",
+        "Başlangıç kütlesi.",
+        "Renkleri farklı olduğu için."
+       ],
+       "dogru": 0,
+       "ipucu": "Yıldızın yaşamını belirleyen özellik neydi?",
+       "aciklama": "Yaşam sürecini başlangıç kütlesi belirler. (s. 42)"
+      },
+      "parcalar": [
+       {
+        "bas": "Belirleyen özellik:",
+        "ornek": "başlangıç kütlesi",
+        "havuz": [
+         "renk",
+         "uzaklık"
+        ],
+        "k": [
+         "kütle"
+        ]
+       },
+       {
+        "bas": "Y'nin sonu:",
+        "ornek": "süpernova → kara delik",
+        "havuz": [
+         "beyaz cüce",
+         "kırmızı dev"
+        ],
+        "k": [
+         "süpernova",
+         "nötron",
+         "kara delik"
+        ]
+       },
+       {
+        "bas": "Z'nin sonu:",
+        "ornek": "beyaz cüce",
+        "havuz": [
+         "kara delik",
+         "süpernova"
+        ],
+        "k": [
+         "beyaz cüce"
+        ]
+       }
+      ]
+     }
     }
    ],
    "ikizler": [
@@ -1073,18 +1317,6 @@
      "harf": "a",
      "soru": "Yukarıdaki açıklamaya göre hangi kavramlardan bahsedilmiştir? İsimlerini yazınız. Bu kavramları kapsam alanı en geniş olandan en dar olana (büyükten küçüğe) doğru sıralayınız.",
      "formul": "sira",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Kavramların büyükten küçüğe sıralaması hangisidir?",
-      "secenekler": [
-       "Evren → Galaksi → Yıldız",
-       "Galaksi → Evren → Yıldız",
-       "Yıldız → Galaksi → Evren",
-       "Evren → Yıldız → Galaksi"
-      ],
-      "dogru": 0,
-      "aciklama": "Evren galaksileri, galaksi yıldızları içine alır. (s. 46, 48)"
-     },
      "cevap": "Yıldız, galaksi ve evren. Sıralama: Evren → Galaksi → Yıldız.",
      "anahtarlar": [
       {
@@ -1123,7 +1355,62 @@
         ]
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Yıldız, galaksi, evren. Evren → Galaksi → Yıldız.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Yıldız, galaksi, evren. Evren → Galaksi → Yıldız.",
+        "Galaksi → Evren → Yıldız",
+        "Güneş sistemi → Dünya → Ay"
+       ],
+       "dogru": 0,
+       "ipucu": "En büyük kavram her şeyi içine alır.",
+       "aciklama": "Evren galaksileri, galaksi yıldızları içine alır. (s. 46, 48)"
+      },
+      "parcalar": [
+       {
+        "bas": "Kavramlar:",
+        "ornek": "yıldız, galaksi, evren",
+        "havuz": [
+         "Dünya, Ay",
+         "gezegen, uydu"
+        ],
+        "hepsi": [
+         [
+          "yıldız"
+         ],
+         [
+          "galaksi",
+          "gök ada"
+         ],
+         [
+          "evren"
+         ]
+        ]
+       },
+       {
+        "bas": "Büyükten küçüğe:",
+        "ornek": "evren → galaksi → yıldız",
+        "havuz": [
+         "galaksi → evren → yıldız",
+         "yıldız → galaksi → evren"
+        ],
+        "sira": [
+         [
+          "evren"
+         ],
+         [
+          "galaksi",
+          "gök ada"
+         ],
+         [
+          "yıldız"
+         ]
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "b",
@@ -1295,21 +1582,6 @@
      "harf": "a",
      "soru": "Görseldeki kişilerden hangisi fiziksel anlamda iş yapmıştır?",
      "formul": "cunku",
-     "iskele": {
-      "tur": "dytablo",
-      "soru": "Önce ısınalım: D ya da Y seç.",
-      "ifadeler": [
-       {
-        "s": "Sandığı iten kişi fiziksel anlamda iş yapmıştır.",
-        "d": true
-       },
-       {
-        "s": "Poşetleri taşıyan kişi poşetlere fiziksel anlamda iş yapmıştır.",
-        "d": false
-       }
-      ],
-      "aciklama": "Poşette kuvvet yukarı, hareket yatay: doğrultular farklı, iş yok. (s. 62)"
-     },
      "cevap": "Sandığı iten kişi iş yapmıştır. Poşetleri taşıyan kişi poşetlere yukarı doğru kuvvet uygular ama poşetler yatayda hareket eder. Kuvvet ile hareket yönü dik olduğu için iş yapılmaz.",
      "anahtarlar": [
       {
@@ -1331,24 +1603,55 @@
         "yatay"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Sandığı iten. Poşette kuvvet yukarı, hareket yatay; iş yok.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Sandığı iten. Poşette kuvvet yukarı, hareket yatay; iş yok.",
+        "Sandığı iten kişi.",
+        "İkisi de iş yapar, ikisi de yoruluyor."
+       ],
+       "dogru": 0,
+       "ipucu": "Kuvvetin ve hareketin yönüne bak.",
+       "aciklama": "Poşette kuvvet ile hareket diktir, iş yapılmaz. (s. 62)"
+      },
+      "parcalar": [
+       {
+        "bas": "İş yapan:",
+        "ornek": "sandığı iten",
+        "havuz": [
+         "poşet taşıyan",
+         "ikisi de"
+        ],
+        "k": [
+         "sandı",
+         "iten",
+         "görsel 1",
+         "birinci"
+        ]
+       },
+       {
+        "bas": "Poşet taşıyanın kuvveti ve hareketi:",
+        "ornek": "kuvvet yukarı, hareket yatay (dik)",
+        "havuz": [
+         "ikisi de ileri",
+         "kuvvet çok büyük"
+        ],
+        "k": [
+         "dik",
+         "yatay",
+         "farklı doğrultu",
+         "farklı yön"
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "b",
      "soru": "Bir eylemin “fiziksel anlamda iş” sayılabilmesi için uygulanan kuvvet ile hareket yönü arasında nasıl bir ilişki olması gerektiğini açıklayınız.",
      "formul": "cunku",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: İş için kuvvet ile hareket arasındaki ilişki nasıl olmalıdır?",
-      "secenekler": [
-       "Aynı doğrultuda olmalıdır.",
-       "Birbirine dik olmalıdır.",
-       "Kuvvet hareketten büyük olmalıdır.",
-       "İlişki önemli değildir."
-      ],
-      "dogru": 0,
-      "aciklama": "Cisim, uygulanan kuvvetle aynı doğrultuda yer değiştirmelidir. (s. 61)"
-     },
      "cevap": "Uygulanan kuvvet ile hareket yönü aynı doğrultuda olmalıdır. Yani cisim, uygulanan kuvvetin doğrultusunda yer değiştirmelidir.",
      "anahtarlar": [
       {
@@ -1368,7 +1671,49 @@
         "yol al"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Aynı doğrultuda olmalı; cisim yer değiştirmeli.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Aynı doğrultuda olmalı; cisim yer değiştirmeli.",
+        "Kuvvet büyük olmalı.",
+        "Birbirine dik olmalı."
+       ],
+       "dogru": 0,
+       "ipucu": "İki koşulu hatırla.",
+       "aciklama": "Cisim, uygulanan kuvvetle aynı doğrultuda yer değiştirmeli. (s. 61)"
+      },
+      "parcalar": [
+       {
+        "bas": "Kuvvet ile cismin yolu:",
+        "ornek": "aynı doğrultuda olmalı",
+        "havuz": [
+         "dik olmalı",
+         "zıt olmalı"
+        ],
+        "k": [
+         "aynı doğrultu",
+         "aynı yön",
+         "doğrultusunda",
+         "paralel"
+        ]
+       },
+       {
+        "bas": "Cisim ne yapmalı?",
+        "ornek": "yer değiştirmeli",
+        "havuz": [
+         "durmalı",
+         "ısınmalı"
+        ],
+        "k": [
+         "yer değiştir",
+         "hareket",
+         "yol al"
+        ]
+       }
+      ]
+     }
     }
    ],
    "ikizler": [
@@ -1532,12 +1877,6 @@
      "harf": "a",
      "soru": "Haltercinin, halteri yerden yukarı doğru kaldırdığı 1. durumu “fiziksel anlamda iş” kavramı açısından değerlendiriniz. Bu durumda iş yapılmış mıdır? Kısaca açıklayınız.",
      "formul": "cunku",
-     "iskele": {
-      "tur": "dy",
-      "ifade": "Halterci halteri yerden yukarı kaldırırken fiziksel anlamda iş yapar.",
-      "dogru": true,
-      "aciklama": "Kuvvet yukarı, halter de yukarı hareket ediyor. (s. 61)"
-     },
      "cevap": "Evet, iş yapılmıştır. Çünkü halterci yukarı yönde kuvvet uygulamış ve halter bu kuvvetle aynı doğrultuda yukarı hareket etmiştir.",
      "anahtarlar": [
       {
@@ -1559,19 +1898,55 @@
         "yer değiştir"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Evet. Kuvvet de halter de yukarı (aynı doğrultu).",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Evet. Kuvvet de halter de yukarı (aynı doğrultu).",
+        "Evet.",
+        "Hayır, çünkü halter çok ağır."
+       ],
+       "dogru": 0,
+       "ipucu": "Evet/hayır + kuvvet ve hareketin yönü.",
+       "aciklama": "Kuvvet yukarı, halter de yukarı hareket ediyor: iş var. (s. 61)"
+      },
+      "parcalar": [
+       {
+        "bas": "Cevap:",
+        "ornek": "evet, iş var",
+        "havuz": [
+         "hayır",
+         "bilinmez"
+        ],
+        "k": [
+         "evet",
+         "yapılmış",
+         "yapmış",
+         "yapar",
+         "var"
+        ]
+       },
+       {
+        "bas": "Kuvvet ve halter hangi yöne?",
+        "ornek": "ikisi de yukarı (aynı doğrultu)",
+        "havuz": [
+         "ikisi de aşağı",
+         "farklı yönlere"
+        ],
+        "k": [
+         "aynı doğrultu",
+         "aynı yön",
+         "yukarı"
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "b",
      "soru": "Haltercinin, ağırlığı başının üzerinde sabit tuttuğu 2. durumu “fiziksel anlamda iş” kavramı açısından değerlendiriniz. Bu durumda iş yapılmış mıdır? Kısaca açıklayınız.",
      "formul": "cunku",
-     "iskele": {
-      "tur": "dy",
-      "ifade": "Halterci halteri başının üzerinde sabit tutarken çok yorulduğu için iş yapar.",
-      "dogru": false,
-      "duzeltme": "Halter yer değiştirmediği için iş yapılmaz; yorulmak iş demek değildir.",
-      "aciklama": "Kuvvet var ama hareket yoksa iş yoktur. (s. 62)"
-     },
      "cevap": "Hayır, iş yapılmamıştır. Çünkü halter sabit duruyor, yer değiştirmiyor. Kuvvet olsa da yol alınmadığı için iş sıfırdır.",
      "anahtarlar": [
       {
@@ -1598,7 +1973,53 @@
         "hareketsiz"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Hayır. Halter hareket etmiyor.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Hayır. Halter hareket etmiyor.",
+        "Hayır.",
+        "Evet, çünkü çok yoruluyor."
+       ],
+       "dogru": 0,
+       "ipucu": "Halter yer değiştiriyor mu?",
+       "aciklama": "Kuvvet var ama hareket yok: iş yapılmaz. (s. 62)"
+      },
+      "parcalar": [
+       {
+        "bas": "Cevap:",
+        "ornek": "hayır, iş yok",
+        "havuz": [
+         "evet",
+         "biraz"
+        ],
+        "k": [
+         "hayır",
+         "yapılmamış",
+         "yapmamış",
+         "yapmaz",
+         "yok",
+         "sıfır"
+        ]
+       },
+       {
+        "bas": "Halter ne durumda?",
+        "ornek": "hareket etmiyor (sabit)",
+        "havuz": [
+         "yukarı çıkıyor",
+         "düşüyor"
+        ],
+        "k": [
+         "hareket etm",
+         "sabit",
+         "duruyor",
+         "hareketsiz",
+         "yer değiştirm"
+        ]
+       }
+      ]
+     }
     }
    ],
    "ikizler": [
@@ -1747,18 +2168,6 @@
     {
      "harf": "a",
      "soru": "Dalda duran elmanın sahip olduğu enerji çeşidi nedir? Bu enerji, elmanın hangi özelliklerine bağlıdır?",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Dalda duran elmanın enerjisi hangisidir?",
-      "secenekler": [
-       "Çekim potansiyel enerjisi",
-       "Kinetik enerji",
-       "Esneklik potansiyel enerjisi",
-       "Elektrik enerjisi"
-      ],
-      "dogru": 0,
-      "aciklama": "Yüksekte duran cismin çekim potansiyel enerjisi vardır. (s. 68)"
-     },
      "cevap": "Dalda duran elmanın çekim potansiyel enerjisi vardır. Bu enerji elmanın kütlesine (ağırlığına) ve yerden yüksekliğine bağlıdır.",
      "anahtarlar": [
       {
@@ -1780,7 +2189,50 @@
         "yüksek"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Çekim potansiyel enerjisi; kütle ve yükseklik.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Çekim potansiyel enerjisi; kütle ve yükseklik.",
+        "Potansiyel enerji.",
+        "Kinetik enerji; hız ve kütle."
+       ],
+       "dogru": 0,
+       "ipucu": "Elma duruyor ama yüksekte.",
+       "aciklama": "Yüksekte duran cismin çekim potansiyel enerjisi var; kütle ve yüksekliğe bağlı. (s. 68)"
+      },
+      "parcalar": [
+       {
+        "bas": "Enerjinin adı:",
+        "ornek": "çekim potansiyel enerjisi",
+        "havuz": [
+         "kinetik enerji",
+         "ısı enerjisi"
+        ],
+        "k": [
+         "potansiyel"
+        ]
+       },
+       {
+        "bas": "Bağlı olduğu iki şey:",
+        "ornek": "kütle ve yükseklik",
+        "havuz": [
+         "hız ve renk",
+         "sıcaklık"
+        ],
+        "hepsi": [
+         [
+          "kütle",
+          "ağırlı"
+         ],
+         [
+          "yüksek"
+         ]
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "b",
@@ -1794,7 +2246,34 @@
         "hareket enerjisi"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Kinetik enerji.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Kinetik enerji.",
+        "Potansiyel enerji.",
+        "Esneklik potansiyel enerjisi."
+       ],
+       "dogru": 0,
+       "ipucu": "Elma artık hareket ediyor.",
+       "aciklama": "Hareketten dolayı sahip olunan enerji kinetik enerjidir. (s. 66)"
+      },
+      "parcalar": [
+       {
+        "bas": "Enerjinin adı:",
+        "ornek": "kinetik enerji",
+        "havuz": [
+         "potansiyel enerji",
+         "ışık enerjisi"
+        ],
+        "k": [
+         "kinetik",
+         "hareket enerjisi"
+        ]
+       }
+      ]
+     }
     },
     {
      "harf": "c",
@@ -1817,7 +2296,47 @@
         "konum"
        ]
       }
-     ]
+     ],
+     "kisaCevap": "Kinetik için hareket, potansiyel için yükseklik gerekir.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Kinetik için hareket, potansiyel için yükseklik gerekir.",
+        "Kinetik enerji hareket enerjisidir.",
+        "İkisi de yüksekliğe bağlıdır."
+       ],
+       "dogru": 0,
+       "ipucu": "Karşılaştırmada iki tarafı da yaz.",
+       "aciklama": "Kinetik: hareket; çekim potansiyel: yükseklik. (s. 66, 68)"
+      },
+      "parcalar": [
+       {
+        "bas": "Kinetik için gereken:",
+        "ornek": "hareket",
+        "havuz": [
+         "yükseklik",
+         "renk"
+        ],
+        "k": [
+         "hareket",
+         "hız",
+         "sürat"
+        ]
+       },
+       {
+        "bas": "Potansiyel için gereken:",
+        "ornek": "yükseklik",
+        "havuz": [
+         "hız",
+         "ses"
+        ],
+        "k": [
+         "yüksek",
+         "konum"
+        ]
+       }
+      ]
+     }
     }
    ],
    "ikizler": [

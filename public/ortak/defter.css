@@ -1515,3 +1515,22 @@ body.ders-sayfa .masthead .head-actions { flex: none; flex-wrap: nowrap; }
 }
 @media (prefers-reduced-motion: reduce) { .yan, .yan-unite .ok { transition: none; } }
 @media print { .yan, .yan-perde, .yan-ac-btn { display: none !important; } .duzen { display: block; } }
+
+/* Basamaklar (MEB soruları): 1 tanı → 2 parça → 3 kalıp → 4 sınavdaki gibi */
+.yz-merdiven { list-style: none; margin: 4px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.yz-merdiven li { display: flex; align-items: center; gap: 6px; padding: 6px 8px; border-radius: 10px; background: var(--surface-2); color: var(--muted); font-size: 14px; font-weight: 700; line-height: 1.2; }
+.yz-merdiven b { flex: none; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--line); color: var(--ink); font-size: 13px; }
+.yz-merdiven li.gecti b { background: var(--ok); color: #fff; } .yz-merdiven li.gecti { color: var(--ok); }
+.yz-merdiven li.simdi { background: var(--accent-soft); color: var(--ink); box-shadow: inset 0 0 0 2px var(--accent); } .yz-merdiven li.simdi b { background: var(--accent); color: #fff; }
+@media (max-width: 560px) { .yz-merdiven span { display: none; } .yz-merdiven li { justify-content: center; } .yz-merdiven li.simdi span { display: inline; } .yz-merdiven li.simdi { grid-column: span 1; } }
+.yz-parca { display: grid; gap: 6px; background: var(--surface); border: 2px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.yz-parca label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.yz-parca-bas { font-weight: 800; }
+.yz-parca-in { flex: 1 1 180px; min-width: 0; font: inherit; font-size: 18px; border: 0; border-bottom: 2px dashed var(--muted); background: transparent; color: var(--ink); padding: 2px 4px; }
+.yz-parca-in:focus { outline: none; border-bottom-color: var(--accent); }
+.yz-parca.ok { border-color: var(--ok); background: var(--ok-soft); } .yz-parca.ok .yz-parca-in { border-bottom-style: solid; border-bottom-color: var(--ok); }
+.yz-parca.hata { border-color: var(--gold); } .yz-parca.goster { border-color: var(--line); background: var(--surface-2); }
+.yz-parca-not { color: var(--muted); }
+.yz-havuz .chip { padding: 4px 12px; }
+.yz-defter { grid-template-columns: minmax(0, 1fr); } .yz-defter > *, .yz-defter .stage > * { min-width: 0; }
+.yz-parca label { min-width: 0; } .yz-parca-in { width: 100%; flex-basis: 140px; }

@@ -31,6 +31,16 @@ def sira_tamam(metin, sira):
     return True
 
 
+def parca_ok(p, metin):
+    """Basamak 2 parça kontrolü (motordaki yzParcaOk ile aynı)."""
+    t = sade(metin).strip()
+    if not t: return False
+    if p.get("serbest"): return len(t) >= 3
+    if p.get("hepsi"): return all(any(sade(x) in t for x in g) for g in p["hepsi"])
+    if p.get("sira"): return sira_tamam(metin, p["sira"])
+    return any(sade(x) in t for x in p.get("k", []))
+
+
 class Yazili:
     def __init__(self, kod, id, **ust):
         """ust: baslik, ders, senaryo, sure, tarih, dagilim, giris, kapsamDisi, puanNotu, kaynakNotu; isteğe bağlı
@@ -81,6 +91,27 @@ class Yazili:
                 if a.get("k") and not any(sade(x) in cv for x in a["k"]): h.append(f"{yer}: örnek cevap '{a['ad']}' anahtarını karşılamıyor")
                 if a.get("sira") and not sira_tamam(cv, a["sira"]): h.append(f"{yer}: örnek cevap sıra anahtarını karşılamıyor")
         if prova and not isinstance(m.get("puan"), int): h.append(f"{yer}: puan yok")
+        if m.get("basamak"): self._basamak(m, yer, h)
+
+    def _basamak(self, m, yer, h):
+        b, an = m["basamak"], m.get("anahtarlar") or []
+        sec = b.get("sec", {})
+        if len(sec.get("secenekler", [])) != 3 or len(set(sec["secenekler"])) != 3 or sec.get("dogru") != 0 or not sec.get("ipucu") or not sec.get("aciklama"): h.append(f"{yer}: basamak 1 (3 farklı şık, dogru 0, ipucu, açıklama)")
+        if not b.get("parcalar"): h.append(f"{yer}: parça yok")
+        for j, p in enumerate(b.get("parcalar", [])):
+            if not p.get("bas") or not p.get("ornek") or len(p.get("havuz", [])) != 2: h.append(f"{yer} parça {j + 1}: bas/ornek/havuz(2)")
+            if not parca_ok(p, p.get("ornek", "")): h.append(f"{yer} parça {j + 1}: örnek kendi kontrolünü geçmiyor")
+            if not p.get("serbest") and any(parca_ok(p, x) for x in p.get("havuz", [])): h.append(f"{yer} parça {j + 1}: çeldirici doğru sayılıyor")
+        sablon = " ".join(p.get("bas", "") for p in b.get("parcalar", []))
+        for a in an:
+            if (a.get("k") and any(sade(x) in sade(sablon) for x in a["k"])) or (a.get("sira") and sira_tamam(sablon, a["sira"])):
+                h.append(f"{yer}: cümle başları '{a['ad']}' anahtarını kendiliğinden karşılıyor")
+        kc = m.get("kisaCevap", "")
+        if not kc: h.append(f"{yer}: kısa cevap yok")
+        elif an:
+            r = sum(1 for a in an if (a.get("k") and any(sade(x) in sade(kc) for x in a["k"])) or (a.get("sira") and sira_tamam(kc, a["sira"]))) / len(an)
+            if r < .7: h.append(f"{yer}: kısa cevap anahtarların %{round(r * 100)}'ini karşılıyor (en az %70)")
+        if len(kc) > len(m.get("cevap", "")) and len(m.get("cevap", "")) > 40: h.append(f"{yer}: kısa cevap örnek cevaptan uzun")
 
     def _soru(self, q, yer, h, prova=False):
         if q.get("kazanim") not in self.kodlar: h.append(f"{yer}: kazanım yok '{q.get('kazanim')}'")
@@ -134,6 +165,8 @@ class Yazili:
               f"ikiz {len(ikiz)} ({madde(ikiz)} madde) | Kuark'ın hatası {len(d['kuarkHata'])} | prova {len(d['provalar'])} × "
               f"{[len(p['sorular']) for p in d['provalar']]} soru ({sum(madde(p['sorular']) for p in d['provalar'])} madde)")
         dag = [k["dogru"] for k in d["kuarkHata"]]
+        bm = [m for q in d["mebSorular"] for m in q["maddeler"] if m.get("basamak")]
+        print(f"basamaklı madde {len(bm)} | parça {sum(len(m['basamak']['parcalar']) for m in bm)} | kısa cevap ort. {round(sum(len(m['kisaCevap']) for m in bm) / max(1, len(bm)))} harf (örnek cevap ort. {round(sum(len(m['cevap']) for m in bm) / max(1, len(bm)))})")
         print("Kuark doğru şık dağılımı (motor karıştırır):", [dag.count(i) for i in range(3)])
         if h:
             print("HATA:", *h, sep="\n"); raise SystemExit(1)
