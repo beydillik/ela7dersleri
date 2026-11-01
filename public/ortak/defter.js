@@ -2723,7 +2723,10 @@
     const ipucuHTML = (m, seviye) => { const ps = m.basamak.parcalar; if (!seviye) return "";
       st.hvI = st.hvI || ps.map(p => shuffle([p.ornek, ...p.havuz]));
       return `<div class="yz-ipucu-kutu">${ICON.ampul}<div>${seviye >= 1 && st.faz === "yaz" ? `<p><b>Cümle başları:</b> ${ps.map(p => esc(p.bas)).join(" · ")}</p>` : ""}
-        ${seviye >= (st.faz === "yaz" ? 2 : 1) ? ps.map((p, j) => `<p class="yz-ipucu-hv"><b>${esc(p.bas)}</b> ${st.hvI[j].map(w => `<span class="chip">${esc(w)}</span>`).join(" ")}</p>`).join("") : ""}</div></div>`; };
+        ${seviye >= (st.faz === "yaz" ? 2 : 1) ? ps.map((p, j) => `<p class="yz-ipucu-hv"><b>${esc(p.bas)}</b> ${st.hvI[j].map(w => `<span class="chip">${esc(w)}</span>`).join(" ")}</p>`).join("") : ""}
+        <div class="row"><button class="btn primary" data-anladim>Anladım, şimdi yazacağım</button></div></div></div>`; };
+    // İpucu açıkken yazı kutusu gizlenir (Kemal: ipucuna bakarak kopyalamasın); "Anladım" ile kapanır, Ela aklında kalanla yazar.
+    const ipucuKapali = () => `<p class="yz-ipucu-not">${ICON.ampul}İpucuna baktın. Şimdi bakmadan, aklında kalanla yaz.</p>`;
     const ipucuMax = () => st.faz === "yaz" ? 2 : 1;
     const merdiven = m => { if (!m.basamak) return ""; const c = { b1: 0, b2: 1, b3: 2, deg3: 2, yaz: 3, deg: 3 }[st.faz];
       return `<ol class="yz-merdiven" aria-label="Basamaklar">${BAS_AD.map((a, j) => `<li class="${j < c ? "gecti" : j === c ? "simdi" : ""}"><b>${j + 1}</b><span>${a}</span></li>`).join("")}</ol>`; };
@@ -2743,7 +2746,7 @@
       if (st.faz === "yaz") return yaz(kutu, m);
       return deg(kutu, m, st.faz === "deg3");
     };
-    const ileri = () => { st.i++; st.faz = null; st.ic = undefined; st.ik = false; st.neden = undefined; st.yazi = ""; st.o1 = st.s1 = st.p = st.hv = st.yazi3 = st.hvI = null; st.ip = 0; if (st.i < q.maddeler.length) { ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); } else bitir(); };
+    const ileri = () => { st.i++; st.faz = null; st.ic = undefined; st.ik = false; st.neden = undefined; st.yazi = ""; st.o1 = st.s1 = st.p = st.hv = st.yazi3 = st.hvI = null; st.ip = 0; st.ipAcik = false; if (st.i < q.maddeler.length) { ciz(); root.scrollIntoView({ block: "start", behavior: "smooth" }); } else bitir(); };
     const kaydet = (m, r, oto) => {
       st.sonuc[st.i] = r;
       { const k = yzKayit.get(); yzEksikYaz(k, ctx.eksikAnahtar || `${ctx.tur}|${q.id}|${m.harf}`, r, q.kazanim); yzKayit.set(k); }
@@ -2796,25 +2799,27 @@
       if (st.yazi3 === null || st.yazi3 === undefined) st.yazi3 = ps.map(p => p.bas + " ").join("\n");
       kutu.innerHTML = `<div class="stage yz-yaz"><div class="kicker">${m.harf}) Basamak 3 · Kalıpla yaz</div>
         <p class="yz-not">Cümle başları hazır. Her satırı kendin tamamla. Cevap görünmüyor; hatırladığını yaz.</p>
-        ${ipucuHTML(m, st.ip || 0)}<textarea class="yz-ta" rows="${Math.max(3, ps.length + 1)}" spellcheck="true">${esc(st.yazi3)}</textarea>
-        <div class="stage-nav">${(st.ip || 0) < ipucuMax() ? `<button class="btn ghost" data-ipucu>${ICON.ampul}İpucu: kelime havuzu</button>` : "<span></span>"}<button class="btn primary" data-kontrol>Kontrol et</button></div></div>`;
+        ${st.ipAcik ? ipucuHTML(m, st.ip || 0) : st.ip ? ipucuKapali() : ""}<textarea class="yz-ta" rows="${Math.max(3, ps.length + 1)}" spellcheck="true"${st.ipAcik ? " hidden" : ""}>${esc(st.yazi3)}</textarea>
+        <div class="stage-nav"${st.ipAcik ? " hidden" : ""}>${(st.ip || 0) < ipucuMax() ? `<button class="btn ghost" data-ipucu>${ICON.ampul}İpucu: kelime havuzu</button>` : "<span></span>"}<button class="btn primary" data-kontrol>Kontrol et</button></div></div>`;
       const ta = $(".yz-ta", kutu); ta.oninput = () => st.yazi3 = ta.value;
-      ta.focus(); const c = ps[0].bas.length + 1; try { ta.setSelectionRange(c, c); } catch (e) {}
-      const ib3 = $("[data-ipucu]", kutu); if (ib3) ib3.onclick = () => { st.yazi3 = ta.value; st.ip = (st.ip || 0) + 1; st.indi = true; b3(kutu, m); };
-      $("[data-kontrol]", kutu).onclick = () => { st.yazi = ta.value.trim(); st.ip = 0; st.faz = "deg3"; ciz(); };
+      if (!st.ipAcik) { ta.focus(); if (!st.ip) { const c = ps[0].bas.length + 1; try { ta.setSelectionRange(c, c); } catch (e) {} } }
+      const ib3 = $("[data-ipucu]", kutu); if (ib3) ib3.onclick = () => { st.yazi3 = ta.value; st.ip = (st.ip || 0) + 1; st.ipAcik = true; st.indi = true; b3(kutu, m); };
+      const an3 = $("[data-anladim]", kutu); if (an3) an3.onclick = () => { st.ipAcik = false; b3(kutu, m); };
+      $("[data-kontrol]", kutu).onclick = () => { st.yazi = ta.value.trim(); st.ip = 0; st.ipAcik = false; st.faz = "deg3"; ciz(); };
     };
     const yaz = (kutu, m) => {
       const f = YZ.d.formuller.find(x => x.id === m.formul);
       kutu.innerHTML = `<div class="stage yz-yaz"><div class="kicker">${m.harf}) Yazarak cevapla · yazılıdaki gibi</div>
         ${f ? `<div class="yz-formul-ipucu"><b>Kalıp: ${esc(f.ad)}</b> <span>${esc(f.kalip)}</span></div>` : ""}
-        ${m.basamak ? ipucuHTML(m, st.ip || 0) : ""}<textarea class="yz-ta" rows="4" placeholder="Cevabını tam cümleyle yaz…" spellcheck="true">${esc(st.yazi || "")}</textarea>
-        <div class="stage-nav">${m.basamak ? ((st.ip || 0) < ipucuMax() ? `<button class="btn ghost" data-ipucu>${ICON.ampul}${st.ip ? "Bir ipucu daha: kelime havuzu" : "İpucu: cümle başları"}</button>` : "<span></span>") : `<button class="btn ghost" data-bilmiyorum>Bilmiyorum, örneğe bak</button>`}<button class="btn primary" data-kontrol disabled>Cevabımı kontrol et</button></div></div>`;
+        ${m.basamak ? (st.ipAcik ? ipucuHTML(m, st.ip || 0) : st.ip ? ipucuKapali() : "") : ""}<textarea class="yz-ta" rows="4" placeholder="Cevabını tam cümleyle yaz…" spellcheck="true"${st.ipAcik ? " hidden" : ""}>${esc(st.yazi || "")}</textarea>
+        <div class="stage-nav"${st.ipAcik ? " hidden" : ""}>${m.basamak ? ((st.ip || 0) < ipucuMax() ? `<button class="btn ghost" data-ipucu>${ICON.ampul}${st.ip ? "Bir ipucu daha: kelime havuzu" : "İpucu: cümle başları"}</button>` : "<span></span>") : `<button class="btn ghost" data-bilmiyorum>Bilmiyorum, örneğe bak</button>`}<button class="btn primary" data-kontrol disabled>Cevabımı kontrol et</button></div></div>`;
       const ta = $(".yz-ta", kutu), kb = $("[data-kontrol]", kutu);
       const durum = () => kb.disabled = ta.value.trim().length < 3;
-      ta.oninput = () => { st.yazi = ta.value; durum(); }; durum(); ta.focus();
-      kb.onclick = () => { st.yazi = ta.value.trim(); st.ip = 0; st.faz = "deg"; ciz(); };
+      ta.oninput = () => { st.yazi = ta.value; durum(); }; durum(); if (!st.ipAcik) ta.focus();
+      kb.onclick = () => { st.yazi = ta.value.trim(); st.ip = 0; st.ipAcik = false; st.faz = "deg"; ciz(); };
       const bl = $("[data-bilmiyorum]", kutu); if (bl) bl.onclick = () => { st.yazi = ""; st.faz = "deg"; ciz(); };
-      const ib4 = $("[data-ipucu]", kutu); if (ib4) ib4.onclick = () => { st.yazi = ta.value; st.ip = (st.ip || 0) + 1; st.indi = true; yaz(kutu, m); };
+      const ib4 = $("[data-ipucu]", kutu); if (ib4) ib4.onclick = () => { st.yazi = ta.value; st.ip = (st.ip || 0) + 1; st.ipAcik = true; st.indi = true; yaz(kutu, m); };
+      const an4 = $("[data-anladim]", kutu); if (an4) an4.onclick = () => { st.ipAcik = false; yaz(kutu, m); };
     };
     const deg = (kutu, m, ara) => {
       const metin = st.yazi || "", n = (m.anahtarlar || []).length;
