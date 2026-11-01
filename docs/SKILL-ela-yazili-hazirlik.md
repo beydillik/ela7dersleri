@@ -52,6 +52,8 @@ Menü/yol: **Başlangıç** → 1 **Hatırla** → 2 **MEB Soruları** (adı ver
 - **MEB sorusu:** id, no, kazanim, metin [paragraf], svg?, maddeler, ikizler (2; aynı kalıp, farklı bağlam; `ikizsiz` derste yok).
 - **Kuark (yeni biçim):** `KH(kazanim, tur ["eksik"|"yanilgi"], soru, kuark, dogruSik, yanlis1, yanlis2, ipucu, aciklama, once, ornek, sonra, k, havuz)` → `tamamla` {once, ornek, sonra, k, havuz} ve dogruCevap. Yanılgı sayısı eksikten az (doğrulayıcı kontrol eder); 8 eksik + 4 yanılgı iyi denge.
 - **Prova:** id, ad, sorular (dağılıma birebir, toplam 100, madde `puan`); bağlamlar MEB ve ikizlerden farklı.
+- **Anahtar eşleştirme:** harfler sadeleştirilir (ı→i, ş→s…), kök metinde geçiyorsa bulunur; `sira` anahtarında her öğe bir öncekinden sonra geçmeli (açgözlü arama; motordaki `yzSira` = yazili.py `sira_tamam`). Olumsuz/olumlu kökleri ayır ("yapılmış" / "yapılmamış" alt dize değil); "değil" ile kurulan olumsuzlar yakalanmaz, Ela düzeltir. Kökü kısa tutma (ör. "ağ" "ağır"ı da yakalar).
+- **Kuark (eski biçim, bil1):** kazanim, soru, kuark, secenekler 3 (doğrusu ilk; motor karıştırır), ipucu, aciklama, dogruCevap; `tamamla` yok.
 - **Doğrulayıcı kontrolleri:** örnek ve kısa cevap kendi anahtarlarını karşılar; parça örneği kendi kontrolünü geçer, çeldirici geçmez; cümle başları anahtarları tetiklemez; tetik ifadeleri soru metninde; basamak 1 = 3 farklı şık, doğru 0; iskele türü kuralları; prova dağılımı ve 100 puan; kazanım/konu kimlikleri.
 
 ## 4. Yeni yazılı ekleme (her ders)
