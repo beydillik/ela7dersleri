@@ -1567,3 +1567,18 @@ mark.yz-tetik { background: color-mix(in srgb, #ffe45c 70%, transparent); color:
 .yz-kopru { margin: 12px 0; padding: 10px 12px; border-left: 4px solid var(--accent); background: var(--surface-2, rgba(0,0,0,.03)); border-radius: 0 10px 10px 0; }
 .yz-kopru .row { margin-top: 8px; flex-wrap: wrap; }
 @media print { .yz-benzer { display: none; } }
+/* #yazili ile açılışta ders sayfası bir an görünmesin: yazılı kabuğu gelene kadar yalnız "açılıyor" defter yaprağı */
+html.yz-yukle body { background: #15232a; }
+html.yz-yukle body > * { visibility: hidden; }
+html.yz-yukle body::after { content: "Yazılıya Hazırlık açılıyor…"; position: fixed; inset: 0; display: grid; place-items: center; color: #f4ecd8; font: 700 22px/1.3 "Nunito", sans-serif; }
+/* "Bu soru senden ne istiyor?" */
+.yz-oku-s { font-weight: 800; font-size: 19px; margin: 0 0 8px; }
+.yz-oku-bar { height: 6px; border-radius: 4px; background: rgba(0,0,0,.08); overflow: hidden; margin-bottom: 10px; }
+.yz-oku-bar i { display: block; height: 100%; width: 0; background: var(--accent); }
+.yz-oku-sec { display: grid; gap: 8px; }
+.yz-oku-b { text-align: left; justify-content: flex-start; white-space: normal; }
+.yz-oku-msg { margin: 8px 0 0; font-weight: 700; color: #b5532a; min-height: 1.3em; }
+mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
+@keyframes yzYanip { 50% { background: #ffd23f; box-shadow: 0 0 0 4px #ffd23f; } }
+@media (prefers-reduced-motion: reduce) { mark.yz-tetik-yanip { animation: none; outline: 3px solid #e9b800; } }
+.yz-araclar { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
