@@ -814,4 +814,57 @@ BENZER = {"p1": ["m3", "m4", "m6", "m7", "m7", "m9"], "p2": ["m3", "m5", "m6", "
 for pv in Y.d["provalar"]:
     for q, b in zip(pv["sorular"], BENZER[pv["id"]]): q["benzer"] = b
 
+
+# =====================================================================
+# HATIRLADIĞINI TEKRARLA (Kemal, 1 Kasım 2026): Hatırla kartının cümleleri boşluklu; puan getiren kelime açılır listeden seçilir.
+# Sözdizimi: {doğru|çeldirici|çeldirici}. Çeldiriciler çoğunlukla Hatırla'daki "sık hatalar"dan; bağlamda açıkça yanlış olmalı.
+# =====================================================================
+HT = {
+ "FB.7.1.3": [
+  ("Görevini bitirmiş uydular, roket parçaları ve yakıt tankları Dünya'nın çevresinde kontrolsüz dolanır. Buna {uzay kirliliği|hava kirliliği|ışık kirliliği} denir.", "s. 30"),
+  ("Nedeni: işlevini yitiren uzay araçları ve parçaları {yörüngede kalır|atmosferde yanıp yok olur|hemen Dünya'ya düşer}.", "s. 30, 32"),
+  ("Uzay çöpleri {çok hızlı|çok yavaş|hiç} hareket eder; bu yüzden {küçük|dev|yalnızca büyük} bir parça bile uzay aracına büyük zarar verir.", "s. 32"),
+  ("Önlem alınmazsa {haberleşme ve GPS|yağmur ve rüzgâr|tarım ve hayvancılık} aksar.", "s. 32"),
+  ("Çözüm: görevi biten uyduları kontrollü olarak {yörüngeden çıkarmak|yörüngede bırakmak|parçalara ayırıp bırakmak}, çöpleri yakalayıp Dünya'ya getirmek.", "s. 32"),
+  ("Çözüm sorusunda yöntemi yaz, sonra {çünkü|belki|veya} ile neden işe yarayacağını ekle.", "cevap kalıbı"),
+ ],
+ "FB.7.1.4": [
+  ("Yıldızlar {bulutsu (nebula)|kara delik|beyaz cüce} denen gaz ve toz bulutlarında doğar.", "s. 41"),
+  ("Gaz ve toz bulutu kütle çekimiyle çöker ve ısınır; önce {ön yıldız|süpernova|nötron yıldızı} oluşur.", "s. 42"),
+  ("Yıldızın yaşamını {kütlesi|rengi|Dünya'ya uzaklığı} belirler. Kütle büyükse yaşam {kısa|uzun|sonsuz} olur.", "s. 42"),
+  ("Küçük kütleli yıldız: {kırmızı dev|kırmızı süperdev|süpernova} → gezegenimsi bulutsu → {beyaz cüce|kara delik|nötron yıldızı}.", "s. 42"),
+  ("Büyük kütleli yıldız: {kırmızı süperdev|kırmızı dev|beyaz cüce} → {süpernova|gezegenimsi bulutsu|ön yıldız} patlaması → nötron yıldızı veya {kara delik|beyaz cüce|bulutsu}.", "s. 42"),
+  ("Güneş {küçük kütleli|büyük kütleli|kütlesi en büyük} bir yıldızdır; sonu {beyaz cüce|kara delik|süpernova} olur.", "s. 40, 42"),
+ ],
+ "FB.7.1.5": [
+  ("Galaksinin diğer adı {gök ada|gök taşı|takım yıldız}'dır.", "s. 48"),
+  ("Galaksi; yıldız, gezegen, bulutsu gibi {gök cisimlerinden|yalnızca gezegenlerden|yalnızca gazdan} oluşan yapıdır.", "s. 48"),
+  ("{Evren|Galaksi|Samanyolu}: Dünya, yıldızlar, gezegenler ve galaksiler gibi tüm gök cisimlerini içine alan boşluktur.", "s. 48"),
+  ("Bu kavramlar birbirini {kapsar|kapsamaz}. Büyükten küçüğe: {Evren|Galaksi|Yıldız} → {Galaksi|Evren|Yıldız} → Güneş sistemi → Yıldız.", "s. 46"),
+  ("Güneş sistemi, sarmal kollu {Samanyolu|Andromeda|Evren} galaksisindedir. En yakın komşu galaksinin adı: {Andromeda|Samanyolu|Ay}.", "s. 48"),
+  ("Yıldız: ısı ve {ışık|ses|su} yayan, büyük gaz küresi şeklindeki gök cismidir.", "MEB örnek sorusu"),
+  ("Adres gibi düşün: ülke içinde il, il içinde ilçe. Evren içinde {galaksiler|yalnız bir yıldız}, galaksi içinde {yıldızlar|evrenler} vardır.", "s. 46"),
+ ],
+ "FB.7.2.1": [
+  ("Fiziksel anlamda iş için iki koşul: cisme {kuvvet uygulanmalı|ısı verilmeli|bakılmalı} ve cisim kuvvetle {aynı doğrultuda|dik doğrultuda} hareket etmeli.", "s. 61–62"),
+  ("Kuvvet var ama cisim hareket etmiyorsa iş {yoktur|vardır|iki katına çıkar}: duvarı itmek, halteri havada tutmak.", "s. 62"),
+  ("Kuvvet ile hareket {dik|aynı doğrultuda} ise o kuvvet iş yapmaz: poşeti yukarı tutup düz yolda yürümek gibi.", "s. 62"),
+  ("İş; kuvvet ve kuvvet doğrultusunda alınan {yol|zaman|renk} ile {doğru|ters} orantılıdır. Kuvvet ya da yol artarsa iş {artar|azalır|değişmez}.", "s. 62"),
+  ("Kuvvet newton (N), yol metre (m) olursa işin birimi {joule (J)|kilogram (kg)|saniye (s)} olur.", "s. 62"),
+  ("Fizikteki iş günlük hayattaki işten farklıdır: {yorulmak|kuvvet doğrultusunda yer değiştirmek} iş yapıldığını göstermez.", "s. 62"),
+  ("“İş yapmış mıdır?” sorusunda yalnız evet ya da hayır yetmez; {çünkü|belki|ama} ile kuvvetin ve hareketin doğrultusunu yaz.", "cevap kalıbı"),
+ ],
+ "FB.7.2.2": [
+  ("Enerji, {iş yapabilme|hareketsiz kalabilme|ısınma} yeteneğidir. Birimi: {joule (J)|newton (N)|metre (m)}.", "s. 64"),
+  ("{Kinetik|Çekim potansiyel} enerji, cismin hareketinden dolayı sahip olduğu enerjidir. {Kütle|Renk|Sıcaklık} ve {hız|yükseklik|hacim} ile doğru orantılıdır.", "s. 66–67"),
+  ("Çekim potansiyel enerjisi, cismin {yüksekliğinden|hızından|renginden} dolayı sahip olduğu enerjidir; ağırlığa ve yüksekliğe bağlıdır.", "s. 68"),
+  ("Gerilen yay ve paket lastiğinde {esneklik potansiyel|kinetik|ses} enerjisi depolanır.", "s. 68"),
+  ("Kinetik enerji için cisim {hareket etmeli|yüksekte olmalı|gerilmeli}. Duran cismin kinetik enerjisi {yoktur|çok fazladır|yükseklikle artar}.", "s. 66, 68"),
+  ("Dalda duran elmanın {çekim potansiyel|kinetik|esneklik potansiyel} enerjisi vardır.", "s. 68"),
+  ("Karşılaştırma sorusunda ikisini de yaz: “Kinetik enerji … , potansiyel enerji {ise|çünkü|belki} …”", "cevap kalıbı"),
+ ],
+}
+for z in Y.d["kazanimlar"]:
+    if z["kod"] in HT: z["tekrar"] = [{"c": c, "s": sy} for c, sy in HT[z["kod"]]]
+
 Y.yaz()

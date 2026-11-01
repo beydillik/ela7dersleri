@@ -1,3 +1,4 @@
+import re
 """Yazılıya Hazırlık veri üretici ve doğrulayıcı (bütün dersler için ortak).
 Kullanım: araclar/yazili/<kod>_<id>.py dosyası Y = Yazili("fen1", "d1y1", ...) ile başlar, kazanım, formül,
 MEB sorusu (ikizleriyle), Kuark'ın hatası ve prova yazılılarını ekler, en sonda Y.yaz() çağırır.
@@ -151,6 +152,14 @@ class Yazili:
                 if not parca_ok(t, t.get("ornek", "")) or len(t.get("havuz", [])) != 2 or any(parca_ok(t, x) for x in t["havuz"]): h.append(f"kuark {i}: tamamla (örnek kontrolü / 2 çeldirici)")
         yan = sum(1 for k in d["kuarkHata"] if k.get("tur") == "yanilgi")
         if yan > len(d["kuarkHata"]) / 2: h.append(f"kuark: yanılgı türü {yan} (eksik türünden az olmalı)")
+        for z in d["kazanimlar"]:   # Hatırladığını Tekrarla: {doğru|çeldirici…}
+            for j, t in enumerate(z.get("tekrar", [])):
+                bs = re.findall(r"\{([^{}]+)\}", t["c"])
+                if not bs or "{" in re.sub(r"\{[^{}]+\}", "", t["c"]) or not t.get("s"): h.append(f"{z['kod']} tekrar {j + 1}: boşluk/sayfa")
+                for b in bs:
+                    o = [x.strip() for x in b.split("|")]
+                    if len(o) < 2 or len(set(o)) != len(o) or not all(o): h.append(f"{z['kod']} tekrar {j + 1}: '{b}' en az 1 çeldirici, tekrarsız")
+            if z.get("tekrar") and len(z["tekrar"]) < 4: h.append(f"{z['kod']}: tekrar en az 4 cümle")
         for q in d["mebSorular"] + [z for q0 in d["mebSorular"] for z in q0.get("ikizler", [])]:
             for m in q["maddeler"]:
                 for x in m.get("tetik", []):

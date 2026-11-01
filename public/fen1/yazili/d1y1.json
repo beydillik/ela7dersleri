@@ -63,6 +63,32 @@
      "yanlis": "“Küçük parça zarar vermez.”",
      "dogru": "Parçalar çok hızlı olduğu için küçük parça bile büyük zarar verir."
     }
+   ],
+   "tekrar": [
+    {
+     "c": "Görevini bitirmiş uydular, roket parçaları ve yakıt tankları Dünya'nın çevresinde kontrolsüz dolanır. Buna {uzay kirliliği|hava kirliliği|ışık kirliliği} denir.",
+     "s": "s. 30"
+    },
+    {
+     "c": "Nedeni: işlevini yitiren uzay araçları ve parçaları {yörüngede kalır|atmosferde yanıp yok olur|hemen Dünya'ya düşer}.",
+     "s": "s. 30, 32"
+    },
+    {
+     "c": "Uzay çöpleri {çok hızlı|çok yavaş|hiç} hareket eder; bu yüzden {küçük|dev|yalnızca büyük} bir parça bile uzay aracına büyük zarar verir.",
+     "s": "s. 32"
+    },
+    {
+     "c": "Önlem alınmazsa {haberleşme ve GPS|yağmur ve rüzgâr|tarım ve hayvancılık} aksar.",
+     "s": "s. 32"
+    },
+    {
+     "c": "Çözüm: görevi biten uyduları kontrollü olarak {yörüngeden çıkarmak|yörüngede bırakmak|parçalara ayırıp bırakmak}, çöpleri yakalayıp Dünya'ya getirmek.",
+     "s": "s. 32"
+    },
+    {
+     "c": "Çözüm sorusunda yöntemi yaz, sonra {çünkü|belki|veya} ile neden işe yarayacağını ekle.",
+     "s": "cevap kalıbı"
+    }
    ]
   },
   {
@@ -107,6 +133,32 @@
      "yanlis": "Kütlesi büyük yıldız daha uzun yaşar.",
      "dogru": "Kütle büyükse yaşam daha kısa olur."
     }
+   ],
+   "tekrar": [
+    {
+     "c": "Yıldızlar {bulutsu (nebula)|kara delik|beyaz cüce} denen gaz ve toz bulutlarında doğar.",
+     "s": "s. 41"
+    },
+    {
+     "c": "Gaz ve toz bulutu kütle çekimiyle çöker ve ısınır; önce {ön yıldız|süpernova|nötron yıldızı} oluşur.",
+     "s": "s. 42"
+    },
+    {
+     "c": "Yıldızın yaşamını {kütlesi|rengi|Dünya'ya uzaklığı} belirler. Kütle büyükse yaşam {kısa|uzun|sonsuz} olur.",
+     "s": "s. 42"
+    },
+    {
+     "c": "Küçük kütleli yıldız: {kırmızı dev|kırmızı süperdev|süpernova} → gezegenimsi bulutsu → {beyaz cüce|kara delik|nötron yıldızı}.",
+     "s": "s. 42"
+    },
+    {
+     "c": "Büyük kütleli yıldız: {kırmızı süperdev|kırmızı dev|beyaz cüce} → {süpernova|gezegenimsi bulutsu|ön yıldız} patlaması → nötron yıldızı veya {kara delik|beyaz cüce|bulutsu}.",
+     "s": "s. 42"
+    },
+    {
+     "c": "Güneş {küçük kütleli|büyük kütleli|kütlesi en büyük} bir yıldızdır; sonu {beyaz cüce|kara delik|süpernova} olur.",
+     "s": "s. 40, 42"
+    }
    ]
   },
   {
@@ -148,6 +200,36 @@
     {
      "yanlis": "Güneş sistemi Andromeda'dadır.",
      "dogru": "Güneş sistemi Samanyolu'nda. Andromeda en yakın komşu galaksi."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Galaksinin diğer adı {gök ada|gök taşı|takım yıldız}'dır.",
+     "s": "s. 48"
+    },
+    {
+     "c": "Galaksi; yıldız, gezegen, bulutsu gibi {gök cisimlerinden|yalnızca gezegenlerden|yalnızca gazdan} oluşan yapıdır.",
+     "s": "s. 48"
+    },
+    {
+     "c": "{Evren|Galaksi|Samanyolu}: Dünya, yıldızlar, gezegenler ve galaksiler gibi tüm gök cisimlerini içine alan boşluktur.",
+     "s": "s. 48"
+    },
+    {
+     "c": "Bu kavramlar birbirini {kapsar|kapsamaz}. Büyükten küçüğe: {Evren|Galaksi|Yıldız} → {Galaksi|Evren|Yıldız} → Güneş sistemi → Yıldız.",
+     "s": "s. 46"
+    },
+    {
+     "c": "Güneş sistemi, sarmal kollu {Samanyolu|Andromeda|Evren} galaksisindedir. En yakın komşu galaksinin adı: {Andromeda|Samanyolu|Ay}.",
+     "s": "s. 48"
+    },
+    {
+     "c": "Yıldız: ısı ve {ışık|ses|su} yayan, büyük gaz küresi şeklindeki gök cismidir.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Adres gibi düşün: ülke içinde il, il içinde ilçe. Evren içinde {galaksiler|yalnız bir yıldız}, galaksi içinde {yıldızlar|evrenler} vardır.",
+     "s": "s. 46"
     }
    ]
   },
@@ -191,6 +273,36 @@
      "yanlis": "Sadece “evet” ya da “hayır” yazmak.",
      "dogru": "Evet/hayır + çünkü: kuvvet ve hareketin doğrultusunu yaz."
     }
+   ],
+   "tekrar": [
+    {
+     "c": "Fiziksel anlamda iş için iki koşul: cisme {kuvvet uygulanmalı|ısı verilmeli|bakılmalı} ve cisim kuvvetle {aynı doğrultuda|dik doğrultuda} hareket etmeli.",
+     "s": "s. 61–62"
+    },
+    {
+     "c": "Kuvvet var ama cisim hareket etmiyorsa iş {yoktur|vardır|iki katına çıkar}: duvarı itmek, halteri havada tutmak.",
+     "s": "s. 62"
+    },
+    {
+     "c": "Kuvvet ile hareket {dik|aynı doğrultuda} ise o kuvvet iş yapmaz: poşeti yukarı tutup düz yolda yürümek gibi.",
+     "s": "s. 62"
+    },
+    {
+     "c": "İş; kuvvet ve kuvvet doğrultusunda alınan {yol|zaman|renk} ile {doğru|ters} orantılıdır. Kuvvet ya da yol artarsa iş {artar|azalır|değişmez}.",
+     "s": "s. 62"
+    },
+    {
+     "c": "Kuvvet newton (N), yol metre (m) olursa işin birimi {joule (J)|kilogram (kg)|saniye (s)} olur.",
+     "s": "s. 62"
+    },
+    {
+     "c": "Fizikteki iş günlük hayattaki işten farklıdır: {yorulmak|kuvvet doğrultusunda yer değiştirmek} iş yapıldığını göstermez.",
+     "s": "s. 62"
+    },
+    {
+     "c": "“İş yapmış mıdır?” sorusunda yalnız evet ya da hayır yetmez; {çünkü|belki|ama} ile kuvvetin ve hareketin doğrultusunu yaz.",
+     "s": "cevap kalıbı"
+    }
    ]
   },
   {
@@ -233,6 +345,36 @@
     {
      "yanlis": "Karşılaştırma sorusunda yalnız birini anlatmak.",
      "dogru": "İkisini de yaz: “Kinetik …, potansiyel ise …”"
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Enerji, {iş yapabilme|hareketsiz kalabilme|ısınma} yeteneğidir. Birimi: {joule (J)|newton (N)|metre (m)}.",
+     "s": "s. 64"
+    },
+    {
+     "c": "{Kinetik|Çekim potansiyel} enerji, cismin hareketinden dolayı sahip olduğu enerjidir. {Kütle|Renk|Sıcaklık} ve {hız|yükseklik|hacim} ile doğru orantılıdır.",
+     "s": "s. 66–67"
+    },
+    {
+     "c": "Çekim potansiyel enerjisi, cismin {yüksekliğinden|hızından|renginden} dolayı sahip olduğu enerjidir; ağırlığa ve yüksekliğe bağlıdır.",
+     "s": "s. 68"
+    },
+    {
+     "c": "Gerilen yay ve paket lastiğinde {esneklik potansiyel|kinetik|ses} enerjisi depolanır.",
+     "s": "s. 68"
+    },
+    {
+     "c": "Kinetik enerji için cisim {hareket etmeli|yüksekte olmalı|gerilmeli}. Duran cismin kinetik enerjisi {yoktur|çok fazladır|yükseklikle artar}.",
+     "s": "s. 66, 68"
+    },
+    {
+     "c": "Dalda duran elmanın {çekim potansiyel|kinetik|esneklik potansiyel} enerjisi vardır.",
+     "s": "s. 68"
+    },
+    {
+     "c": "Karşılaştırma sorusunda ikisini de yaz: “Kinetik enerji … , potansiyel enerji {ise|çünkü|belki} …”",
+     "s": "cevap kalıbı"
     }
    ]
   }

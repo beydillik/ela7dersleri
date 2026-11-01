@@ -1582,3 +1582,15 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 @keyframes yzYanip { 50% { background: #ffd23f; box-shadow: 0 0 0 4px #ffd23f; } }
 @media (prefers-reduced-motion: reduce) { mark.yz-tetik-yanip { animation: none; outline: 3px solid #e9b800; } }
 .yz-araclar { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+/* Hatırladığını Tekrarla */
+.yz-ht-l { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 12px; counter-reset: ht; }
+.yz-ht-l li { counter-increment: ht; position: relative; padding: 10px 12px 10px 40px; border-radius: 12px; background: rgba(0,0,0,.03); font-size: 18px; line-height: 2; }
+.yz-ht-l li::before { content: counter(ht); position: absolute; left: 10px; top: 12px; width: 22px; height: 22px; border-radius: 50%; background: var(--kr, #5a6280); color: #fff; font: 700 13px/22px "Nunito", sans-serif; text-align: center; }
+.yz-ht-l li.simdi { background: var(--gold-soft, #fff4cc); box-shadow: inset 4px 0 0 #e9b800; }
+.yz-ht-sec { font: inherit; font-size: 17px; font-weight: 700; padding: 2px 8px; border: 2px dashed #b8a46a; border-radius: 8px; background: #fffdf5; color: #1b2340; max-width: 100%; }
+.yz-ht-sec.hata { border-color: #d9480f; animation: yzSalla .3s; }
+@keyframes yzSalla { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+.yz-ht-ok { color: #1f7a3a; background: #dff3e4; padding: 0 6px; border-radius: 6px; }
+.yz-ht-gec { color: #2b6cb0; background: #e3eefb; padding: 0 6px; border-radius: 6px; }
+.yz-ht-goster { color: #b5532a; background: #ffe6d5; padding: 0 6px; border-radius: 6px; }
+.yz-ht-s { color: #6b6b6b; font-size: 13px; }
