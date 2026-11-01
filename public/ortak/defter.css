@@ -1559,3 +1559,11 @@ mark.yz-tetik { background: color-mix(in srgb, #ffe45c 70%, transparent); color:
 .yz-ipucu-kutu .row { margin-top: 6px; }
 .yz-ipucu-not { display: flex; gap: 8px; align-items: center; margin: 0; color: var(--muted); font-weight: 700; font-size: 15px; }
 .yz-ipucu-not svg { width: 18px; height: 18px; color: #a07c00; flex: none; }
+
+/* Konu Tekrarı / prova köprüsü */
+.yz-benzer { margin: 6px 0 10px; padding: 6px 12px; border: 1px dashed #c9a400; border-radius: 10px; background: var(--gold-soft); font-size: 16px; }
+.yz-benzer summary { cursor: pointer; font-weight: 700; display: flex; gap: 6px; align-items: center; }
+.yz-benzer ul { margin: 4px 0 2px; padding-left: 20px; }
+.yz-kopru { margin: 12px 0; padding: 10px 12px; border-left: 4px solid var(--accent); background: var(--surface-2, rgba(0,0,0,.03)); border-radius: 0 10px 10px 0; }
+.yz-kopru .row { margin-top: 8px; flex-wrap: wrap; }
+@media print { .yz-benzer { display: none; } }

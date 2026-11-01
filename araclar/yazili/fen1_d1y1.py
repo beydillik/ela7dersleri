@@ -40,7 +40,7 @@ YUKSEKLIK = A("Yükseklik", "yüksek")
 HIZ = A("Hız (sürat)", "hız", "sürat")
 
 Y = Yazili("fen1", "d1y1",
-    baslik="1. Dönem 1. Yazılı", ders="Fen Bilimleri", senaryo="Senaryo 4", sure=40, tarih=None,
+    baslik="1. Dönem 1. Yazılı", ders="Fen Bilimleri", senaryo="Senaryo 4", sure=40, tarih="2026-11-03",
     dagilim={"FB.7.1.3": 1, "FB.7.1.4": 1, "FB.7.1.5": 1, "FB.7.2.1": 2, "FB.7.2.2": 1},
     giris="Okulun seçtiği senaryoda <b>6 açık uçlu soru</b> var. Hepsi 5 kazanımdan geliyor. Önce hatırla, sonra MEB'in sorularını çöz, en sonda gerçek yazılı gibi prova yap. Uzay araçları, teleskoplar ve takımyıldızlar bu yazılıda yok; onlara çalışma.",
     kapsamDisi=["Uzay araçlarını karşılaştırma (FB.7.1.1)", "Teleskoplar ve gözlem araçları (FB.7.1.2)", "Türkiye'nin uyduları", "Takımyıldızlar", "Enerji dönüşümü ve sürtünme"],
@@ -705,5 +705,113 @@ for q in Y.d["mebSorular"]:
         b = BASAMAK.get((q["id"], m["harf"]))
         if b:
             m.update(b); m.pop("iskele", None)   # basamaklı maddede ısınma yerine basamak 1–2
+
+
+# =====================================================================
+# BENZER SORULAR (Konu Tekrarı): basamaksız, doğrudan sınavdaki gibi yazma + ipucu (cümle başları, kelime havuzu, "Anladım").
+# Her maddede kisaCevap, tetik, kalipNot ve parçalar (basamak.sec YOK → motor doğrudan 4. basamaktan başlatır). (Kemal, 1 Kasım 2026)
+# =====================================================================
+def IK(kisa, tetik, notu, *parcalar): return {"kisaCevap": kisa, "tetik": tetik, "kalipNot": notu, "basamak": {"parcalar": list(parcalar)}}
+PROB = P("Problem:", "uzay kirliliği", ["hava kirliliği", "ışık kirliliği"], k=["uzay kirlili", "uzay çöp", "uzay copu"])
+EVET = P("Cevap:", "evet, iş var", ["hayır", "bilinmez"], k=["evet", "yapılmış", "yapmış", "yapar", "var"])
+HAYIR = P("Cevap:", "hayır, iş yok", ["evet", "biraz"], k=["hayır", "yapılmamış", "yapmamış", "yapmaz", "yok", "sıfır"])
+DURUYOR = ["hareket etm", "yer değiştirm", "kıpırda", "duruyor", "hareketsiz", "sabit"]
+IKIZ = {
+ ("m3i1", "a"): IK("Uzay kirliliği. Nedeni: eski uydular yörüngede kalır.", ["hangi probleme örnektir", "bir nedenini"], "Problem + neden.",
+    PROB, P("Nedeni:", "eski uydular yörüngede kalır", ["fabrikalar duman çıkarır", "yıldızlar patlar"], k=["eski uydu", "görevi", "parça", "kalır", "kalıyor", "bitmiş", "biten"])),
+ ("m3i1", "b"): IK("Uydu zarar görür; telefon ve TV kesilir.", ["Tahmininizi"], "Tahmin: “… kesilebilir, çünkü …”",
+    P("Neye çarpar?", "haberleşme uydusuna", ["Dünya'ya", "Ay'a"], k=["uydu"]),
+    P("Kesilebilecek teknoloji:", "telefon / televizyon", ["buzdolabı", "bisiklet"], k=["televizyon", "tv", "telefon", "internet", "gps", "yayın", "haberleşme", "iletişim"])),
+ ("m3i1", "c"): IK("Eski uyduları yörüngeden çıkarmak; çarpışma riski azalır.", ["bir çözüm önerisi", "neden işe yarayacağını"], "Öneri + çünkü.",
+    P("Önerim:", "eski uyduları yörüngeden çıkarmak", ["daha çok uydu göndermek", "uzaya hiç gitmemek"], k=["yörüngeden çıkar", "topla", "yakala", "getir", "atmosfer", "temizle"]),
+    P("Bunun sonucu:", "çarpışma azalır", ["çarpışma artar", "hiçbir şey olmaz"], k=["azal", "düş", "önlen"])),
+ ("m3i2", "a"): IK("Uzay kirliliği. Sonucu: araçlara çarpar.", ["hangi problemi", "bir sonucunu"], "Problem + sonuç.",
+    PROB, P("Sonucu:", "uzay araçlarına çarpar", ["yağmur yağmaz", "Güneş söner"], k=["çarp", "zarar", "hasar"])),
+ ("m3i2", "b"): IK("2. proje, çünkü yeni çöp oluşmaz.", ["hangi proje", "Nedenini açıklayınız"], "Seçim + çünkü.",
+    P("Seçtiğim proje:", "2. proje", ["hiçbiri", "ikisi de değil"], k=["1", "2", "birinci", "ikinci"]),
+    P("Nedeni:", "yeni çöp oluşmaz", ["bilmiyorum", "çünkü"], serbest=True)),
+ ("m3i2", "c"): IK("Çok hızlı hareket eder; küçük parça bile zarar verir.", ["Bunun nedenini açıklayınız"], "Neden + sonuç: “… hızlı, bu yüzden …”",
+    P("Çöpler nasıl hareket eder?", "çok hızlı", ["çok yavaş", "hiç"], k=["hız", "sürat"]),
+    P("Bir araca değerse:", "zarar verir", ["hiçbir şey olmaz", "yavaşlar"], k=["zarar", "hasar"])),
+ ("m4i1", "a"): IK("A yıldızı, çünkü büyük kütleli.", ["Hangi yıldız", "Nedenini yazınız"], "Yıldız + çünkü.",
+    P("Yıldız:", "A yıldızı", ["B yıldızı", "ikisi de"], k=["a yıldızı", "a'"]),
+    P("Çünkü kütlesi:", "büyük", ["küçük", "sıfır"], k=["büyük"])),
+ ("m4i1", "b"): IK("Beyaz cüce; önce kırmızı dev.", ["son evresi ne olur", "hangi evreden geçer"], "İki şey: son evre + ondan önceki evre.",
+    P("Son evre:", "beyaz cüce", ["kara delik", "süpernova"], k=["beyaz cüce"]),
+    P("Önceki evre:", "kırmızı dev", ["kırmızı süperdev", "bulutsu"], k=["kırmızı dev"])),
+ ("m4i1", "c"): IK("A yıldızı; kütle büyükse yaşam kısa.", ["daha kısa sürer", "Açıklayınız"], "Yıldız + çünkü.",
+    P("Yıldız:", "A yıldızı", ["B yıldızı", "ikisi de"], k=["a yıldızı", "a'"]),
+    P("Kural:", "kütle büyükse yaşam kısa", ["kütle büyükse yaşam uzun", "kütle önemsiz"], k=["kısa"])),
+ ("m4i2", "a"): IK("Bulutsu → büyük kütleli yıldız → süperdev → süpernova → kara delik", ["sıralayınız"], "Sırala: A → B → C …",
+    P("İlk iki evre:", "bulutsu → büyük kütleli yıldız", ["kırmızı dev → beyaz cüce", "büyük kütleli yıldız → bulutsu"], sira=[["bulutsu"], ["büyük kütle"]]),
+    P("Son üç evre:", "süperdev → süpernova → kara delik", ["kırmızı dev → beyaz cüce → bulutsu", "süpernova → süperdev → kara delik"], sira=[["süperdev"], ["süpernova"], ["kara delik", "karadelik"]])),
+ ("m4i2", "b"): IK("Küçük kütleli olurdu.", ["başlangıç kütlesi hakkında"], "Kütle: küçük mü, büyük mü?",
+    P("Kütlesi:", "küçük", ["büyük", "çok büyük"], k=["küçük"])),
+ ("m5i1", "a"): IK("K: Ön yıldız. L: Süpernova. M: Beyaz cüce.", ["bilimsel adlarını"], "Üç ad yaz.",
+    P("K:", "ön yıldız", ["bulutsu", "kara delik"], k=["ön yıldız", "önyıldız"]), P("L:", "süpernova", ["beyaz cüce", "kırmızı dev"], k=["süpernova"]),
+    P("M:", "beyaz cüce", ["kara delik", "nötron yıldızı"], k=["beyaz cüce"])),
+ ("m5i1", "b"): IK("L büyük kütleli yıldızdan, M küçük kütleli yıldızdan.", ["karşılaştırınız"], "Karşılaştır: “L … , M ise …”",
+    P("L'nin yıldızı:", "büyük kütleli", ["küçük kütleli", "Güneş"], k=["büyük"]), P("M'nin yıldızı:", "küçük kütleli", ["büyük kütleli", "kara delik"], k=["küçük"])),
+ ("m5i2", "a"): IK("N: kırmızı süperdev, P: kırmızı dev", ["hangi evrededir"], "İki ad yaz.",
+    P("N:", "kırmızı süperdev", ["kırmızı dev", "beyaz cüce"], k=["süperdev"]), P("P:", "kırmızı dev", ["kırmızı süperdev", "süpernova"], k=["kırmızı dev"])),
+ ("m5i2", "b"): IK("N süpernova → kara delik; P beyaz cüce. Neden: başlangıç kütlesi.", ["nasıl sona erecek", "farkın nedeni"], "İki sonu yaz + nedeni.",
+    P("N'nin sonu:", "süpernova", ["beyaz cüce", "bulutsu"], k=["süpernova", "nötron", "kara delik"]), P("P'nin sonu:", "beyaz cüce", ["kara delik", "süpernova"], k=["beyaz cüce"]),
+    P("Farkın nedeni:", "başlangıç kütlesi", ["renk", "uzaklık"], k=["kütle"])),
+ ("m6i1", "a"): IK("Evren → Samanyolu → Güneş sistemi → Dünya", ["büyükten küçüğe"], "Sırala: A → B → C → D",
+    P("En büyük iki:", "evren → Samanyolu", ["Dünya → Güneş sistemi", "Samanyolu → evren"], sira=[["evren"], ["samanyolu", "galaksi"]]),
+    P("En küçük iki:", "Güneş sistemi → Dünya", ["Dünya → Güneş sistemi", "evren → Dünya"], sira=[["güneş sistemi", "sistem"], ["dünya"]])),
+ ("m6i1", "b"): IK("Galaksi: yıldız ve gezegenlerden oluşan yapı. Evren: hepsini içine alan boşluk.", ["kendi cümlelerinizle tanımlayınız"], "İki tanım: “Galaksi … , evren …”",
+    P("Galaksi neyden oluşur?", "yıldız, gezegen, bulutsu", ["sudan", "taşlardan"], k=["yıldız", "gezegen", "bulutsu", "gök cisim"]),
+    P("Evren nedir?", "hepsini içine alan boşluk", ["tek bir yıldız", "Güneş sistemi"], k=["içine alan", "kapsayan", "tüm", "bütün", "hepsini"])),
+ ("m6i2", "a"): IK("Yıldız ve galaksi (Samanyolu).", ["kavramlar nelerdir"], "İki kavram adı.",
+    P("Parlak noktalar:", "yıldız", ["gezegen", "uydu"], k=["yıldız"]), P("Sarmal yapı:", "galaksi (Samanyolu)", ["evren", "Güneş sistemi"], k=["galaksi", "samanyolu", "gök ada"])),
+ ("m6i2", "b"): IK("Andromeda.", ["Komşu yapının adı"], "Yalnız adı yeter.", P("Adı:", "Andromeda", ["Samanyolu", "Güneş"], k=["andromeda"])),
+ ("m6i2", "c"): IK("Evren: bütün gök cisimlerini içine alan boşluk.", ["hepsini içine alan kavram", "Tanımını yazınız"], "Ad + tanım.",
+    P("Kavram:", "evren", ["galaksi", "yıldız"], k=["evren"]), P("Tanımı:", "her şeyi içine alan boşluk", ["en büyük yıldız", "bir gezegen"], k=["içine alan", "kapsayan", "boşluk"])),
+ ("m7i1", "a"): IK("I ve IV.", ["Hangi durumlarda"], "Durum numaralarını yaz.",
+    P("İş yapılan durumlar:", "I ve IV", ["II ve III", "yalnız II"], hepsi=[["i ve", "i,", "i."], ["iv"]])),
+ ("m7i1", "b"): IK("II: dolap hareket etmiyor. III: kuvvet yukarı, hareket yatay.", ["neden iş yapılmadığını"], "İkisini ayrı yaz: “II … , III …”",
+    P("II'de dolap:", "hareket etmiyor", ["hızla ilerliyor", "yukarı çıkıyor"], k=DURUYOR),
+    P("III'te kuvvet ve hareket:", "kuvvet yukarı, hareket yatay", ["ikisi de ileri", "ikisi de yukarı"], k=["yatay", "dik", "farklı"])),
+ ("m7i2", "a"): IK("2. durum, çünkü yol daha fazla.", ["Hangi durumda", "Nedenini açıklayınız"], "Durum + çünkü.",
+    P("Durum:", "2. durum", ["1. durum", "ikisi eşit"], k=["2", "ikinci", "6"]), P("Çünkü:", "yol daha fazla", ["daha az", "aynı"], k=["fazla", "uzun", "çok"])),
+ ("m7i2", "b"): IK("İş artar, çünkü iş kuvvetle doğru orantılı.", ["nasıl değişirdi"], "Artar mı, azalır mı + çünkü.",
+    P("İş:", "artar", ["azalır", "değişmez"], k=["artar", "artardı", "fazla", "çoğal"]), P("Çünkü iş neye bağlı?", "kuvvete", ["renge", "zamana"], k=["kuvvet"])),
+ ("m8i1", "a"): IK("Evet. Kuvvet de kutu da yukarı (aynı doğrultu).", ["iş yapmış mıdır", "Açıklayınız"], "Evet/Hayır + çünkü.",
+    EVET, P("Kuvvet ve kutu hangi yöne?", "ikisi de yukarı (aynı doğrultu)", ["ikisi de aşağı", "farklı yönlere"], k=["aynı doğrultu", "aynı yön", "yukarı"])),
+ ("m8i1", "b"): IK("Hayır. Kutu hareket etmiyor.", ["iş yapmış mıdır", "Açıklayınız"], "Evet/Hayır + çünkü.",
+    HAYIR, P("Kutu ne durumda?", "hareket etmiyor", ["yukarı çıkıyor", "düşüyor"], k=DURUYOR)),
+ ("m8i2", "a"): IK("Evet. Kuvvet de tepsi de yukarı (aynı doğrultu).", ["iş yapmış mıdır", "Açıklayınız"], "Evet/Hayır + çünkü.",
+    EVET, P("Kuvvet ve tepsi hangi yöne?", "ikisi de yukarı (aynı doğrultu)", ["ikisi de aşağı", "farklı yönlere"], k=["aynı doğrultu", "aynı yön", "yukarı"])),
+ ("m8i2", "b"): IK("Hayır. Kuvvet yukarı, hareket yatay.", ["iş yapmış mıdır", "Açıklayınız"], "Evet/Hayır + çünkü.",
+    HAYIR, P("Kuvvetin ve hareketin yönü:", "kuvvet yukarı, hareket yatay", ["ikisi de ileri", "ikisi de yukarı"], k=["yatay", "dik", "farklı"])),
+ ("m9i1", "a"): IK("Çekim potansiyel enerjisi; kütle ve yükseklik.", ["hangi enerjisi vardır", "hangi özelliklere bağlıdır"], "Enerjinin adı + bağlı olduğu iki şey.",
+    P("Enerjinin adı:", "çekim potansiyel enerjisi", ["kinetik enerji", "ısı enerjisi"], k=["potansiyel"]),
+    P("Bağlı olduğu iki şey:", "kütle ve yükseklik", ["hız ve renk", "sıcaklık"], hepsi=[["kütle", "ağırlı"], ["yüksek"]])),
+ ("m9i1", "b"): IK("Kinetik enerji; kütle ve hız.", ["enerji nedir", "hangi özelliklere bağlıdır"], "Enerjinin adı + bağlı olduğu iki şey.",
+    P("Enerjinin adı:", "kinetik enerji", ["potansiyel enerji", "ışık enerjisi"], k=["kinetik", "hareket enerjisi"]),
+    P("Bağlı olduğu iki şey:", "kütle ve hız", ["yükseklik ve renk", "sıcaklık"], hepsi=[["kütle", "ağırlı"], ["hız", "sürat"]])),
+ ("m9i1", "c"): IK("Hayır, çünkü hareket etmiyor.", ["kinetik enerjisi var mıdır", "Nedenini yazınız"], "Evet/Hayır + çünkü.",
+    P("Cevap:", "hayır, yoktur", ["evet", "biraz vardır"], k=["hayır", "yok"]), P("Çünkü çocuk:", "hareket etmiyor", ["kayıyor", "koşuyor"], k=["hareket etm", "hareketsiz", "duruyor", "oturuyor"])),
+ ("m9i2", "a"): IK("Esneklik potansiyel enerjisi.", ["hangi enerji depolanmıştır"], "Enerjinin adı yeter.",
+    P("Enerjinin adı:", "esneklik potansiyel enerjisi", ["kinetik enerji", "ısı enerjisi"], k=["esneklik"])),
+ ("m9i2", "b"): IK("Kinetik enerji.", ["enerji nedir"], "Enerjinin adı yeter.",
+    P("Enerjinin adı:", "kinetik enerji", ["potansiyel enerji", "ışık enerjisi"], k=["kinetik", "hareket enerjisi"])),
+ ("m9i2", "c"): IK("Esneklik için yay gerilmeli; kinetik için hareket gerekir.", ["karşılaştırınız"], "Karşılaştır: “Esneklik için … , kinetik için …”",
+    P("Yay için gereken:", "gerilmesi (şeklinin değişmesi)", ["soğuması", "boyanması"], k=["geril", "şekl", "esne"]),
+    P("Ok için gereken:", "hareket etmesi", ["durması", "boyanması"], k=["hareket", "hız"])),
+}
+for q in Y.d["mebSorular"]:
+    for i, z in enumerate(q.get("ikizler", [])):
+        zid = z.get("id") or f"{q['id']}i{i + 1}"
+        for m in z["maddeler"]:
+            b = IKIZ.get((zid, m["harf"]))
+            if b: m.update(b); m.pop("iskele", None)
+
+# Prova → benzediği MEB sorusu (provada "Hangi MEB sorusuna benziyor?" köprüsü)
+BENZER = {"p1": ["m3", "m4", "m6", "m7", "m7", "m9"], "p2": ["m3", "m5", "m6", "m8", "m7", "m9"],
+          "p3": ["m3", "m4", "m6", "m7", "m8", "m9"], "p4": ["m3", "m4", "m6", "m7", "m7", "m9"]}
+for pv in Y.d["provalar"]:
+    for q, b in zip(pv["sorular"], BENZER[pv["id"]]): q["benzer"] = b
 
 Y.yaz()

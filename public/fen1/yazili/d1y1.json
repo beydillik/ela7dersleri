@@ -4,7 +4,7 @@
  "ders": "Fen Bilimleri",
  "senaryo": "Senaryo 4",
  "sure": 40,
- "tarih": null,
+ "tarih": "2026-11-03",
  "dagilim": {
   "FB.7.1.3": 1,
   "FB.7.1.4": 1,
@@ -574,7 +574,47 @@
           "bitince"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Uzay kirliliği. Nedeni: eski uydular yörüngede kalır.",
+       "tetik": [
+        "hangi probleme örnektir",
+        "bir nedenini"
+       ],
+       "kalipNot": "Problem + neden.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Problem:",
+          "ornek": "uzay kirliliği",
+          "havuz": [
+           "hava kirliliği",
+           "ışık kirliliği"
+          ],
+          "k": [
+           "uzay kirlili",
+           "uzay çöp",
+           "uzay copu"
+          ]
+         },
+         {
+          "bas": "Nedeni:",
+          "ornek": "eski uydular yörüngede kalır",
+          "havuz": [
+           "fabrikalar duman çıkarır",
+           "yıldızlar patlar"
+          ],
+          "k": [
+           "eski uydu",
+           "görevi",
+           "parça",
+           "kalır",
+           "kalıyor",
+           "bitmiş",
+           "biten"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -604,7 +644,45 @@
           "yayın"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Uydu zarar görür; telefon ve TV kesilir.",
+       "tetik": [
+        "Tahmininizi"
+       ],
+       "kalipNot": "Tahmin: “… kesilebilir, çünkü …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Neye çarpar?",
+          "ornek": "haberleşme uydusuna",
+          "havuz": [
+           "Dünya'ya",
+           "Ay'a"
+          ],
+          "k": [
+           "uydu"
+          ]
+         },
+         {
+          "bas": "Kesilebilecek teknoloji:",
+          "ornek": "telefon / televizyon",
+          "havuz": [
+           "buzdolabı",
+           "bisiklet"
+          ],
+          "k": [
+           "televizyon",
+           "tv",
+           "telefon",
+           "internet",
+           "gps",
+           "yayın",
+           "haberleşme",
+           "iletişim"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "c",
@@ -633,7 +711,46 @@
           "çünkü"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Eski uyduları yörüngeden çıkarmak; çarpışma riski azalır.",
+       "tetik": [
+        "bir çözüm önerisi",
+        "neden işe yarayacağını"
+       ],
+       "kalipNot": "Öneri + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Önerim:",
+          "ornek": "eski uyduları yörüngeden çıkarmak",
+          "havuz": [
+           "daha çok uydu göndermek",
+           "uzaya hiç gitmemek"
+          ],
+          "k": [
+           "yörüngeden çıkar",
+           "topla",
+           "yakala",
+           "getir",
+           "atmosfer",
+           "temizle"
+          ]
+         },
+         {
+          "bas": "Bunun sonucu:",
+          "ornek": "çarpışma azalır",
+          "havuz": [
+           "çarpışma artar",
+           "hiçbir şey olmaz"
+          ],
+          "k": [
+           "azal",
+           "düş",
+           "önlen"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.3",
@@ -665,7 +782,43 @@
           "hasar"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Uzay kirliliği. Sonucu: araçlara çarpar.",
+       "tetik": [
+        "hangi problemi",
+        "bir sonucunu"
+       ],
+       "kalipNot": "Problem + sonuç.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Problem:",
+          "ornek": "uzay kirliliği",
+          "havuz": [
+           "hava kirliliği",
+           "ışık kirliliği"
+          ],
+          "k": [
+           "uzay kirlili",
+           "uzay çöp",
+           "uzay copu"
+          ]
+         },
+         {
+          "bas": "Sonucu:",
+          "ornek": "uzay araçlarına çarpar",
+          "havuz": [
+           "yağmur yağmaz",
+           "Güneş söner"
+          ],
+          "k": [
+           "çarp",
+           "zarar",
+           "hasar"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -689,7 +842,40 @@
           "için"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "2. proje, çünkü yeni çöp oluşmaz.",
+       "tetik": [
+        "hangi proje",
+        "Nedenini açıklayınız"
+       ],
+       "kalipNot": "Seçim + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Seçtiğim proje:",
+          "ornek": "2. proje",
+          "havuz": [
+           "hiçbiri",
+           "ikisi de değil"
+          ],
+          "k": [
+           "1",
+           "2",
+           "birinci",
+           "ikinci"
+          ]
+         },
+         {
+          "bas": "Nedeni:",
+          "ornek": "yeni çöp oluşmaz",
+          "havuz": [
+           "bilmiyorum",
+           "çünkü"
+          ],
+          "serbest": true
+         }
+        ]
+       }
       },
       {
        "harf": "c",
@@ -713,7 +899,40 @@
           "hasar"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Çok hızlı hareket eder; küçük parça bile zarar verir.",
+       "tetik": [
+        "Bunun nedenini açıklayınız"
+       ],
+       "kalipNot": "Neden + sonuç: “… hızlı, bu yüzden …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Çöpler nasıl hareket eder?",
+          "ornek": "çok hızlı",
+          "havuz": [
+           "çok yavaş",
+           "hiç"
+          ],
+          "k": [
+           "hız",
+           "sürat"
+          ]
+         },
+         {
+          "bas": "Bir araca değerse:",
+          "ornek": "zarar verir",
+          "havuz": [
+           "hiçbir şey olmaz",
+           "yavaşlar"
+          ],
+          "k": [
+           "zarar",
+           "hasar"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.3",
@@ -920,7 +1139,40 @@
           "büyük"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "A yıldızı, çünkü büyük kütleli.",
+       "tetik": [
+        "Hangi yıldız",
+        "Nedenini yazınız"
+       ],
+       "kalipNot": "Yıldız + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Yıldız:",
+          "ornek": "A yıldızı",
+          "havuz": [
+           "B yıldızı",
+           "ikisi de"
+          ],
+          "k": [
+           "a yıldızı",
+           "a'"
+          ]
+         },
+         {
+          "bas": "Çünkü kütlesi:",
+          "ornek": "büyük",
+          "havuz": [
+           "küçük",
+           "sıfır"
+          ],
+          "k": [
+           "büyük"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -941,7 +1193,39 @@
           "gezegenimsi"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Beyaz cüce; önce kırmızı dev.",
+       "tetik": [
+        "son evresi ne olur",
+        "hangi evreden geçer"
+       ],
+       "kalipNot": "İki şey: son evre + ondan önceki evre.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Son evre:",
+          "ornek": "beyaz cüce",
+          "havuz": [
+           "kara delik",
+           "süpernova"
+          ],
+          "k": [
+           "beyaz cüce"
+          ]
+         },
+         {
+          "bas": "Önceki evre:",
+          "ornek": "kırmızı dev",
+          "havuz": [
+           "kırmızı süperdev",
+           "bulutsu"
+          ],
+          "k": [
+           "kırmızı dev"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "c",
@@ -962,7 +1246,40 @@
           "kütle"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "A yıldızı; kütle büyükse yaşam kısa.",
+       "tetik": [
+        "daha kısa sürer",
+        "Açıklayınız"
+       ],
+       "kalipNot": "Yıldız + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Yıldız:",
+          "ornek": "A yıldızı",
+          "havuz": [
+           "B yıldızı",
+           "ikisi de"
+          ],
+          "k": [
+           "a yıldızı",
+           "a'"
+          ]
+         },
+         {
+          "bas": "Kural:",
+          "ornek": "kütle büyükse yaşam kısa",
+          "havuz": [
+           "kütle büyükse yaşam uzun",
+           "kütle önemsiz"
+          ],
+          "k": [
+           "kısa"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.4",
@@ -977,18 +1294,6 @@
        "harf": "a",
        "soru": "Bu evreleri doğumdan ölüme doğru sıralayınız.",
        "formul": "sira",
-       "iskele": {
-        "tur": "secim",
-        "soru": "Önce ısınalım: Doğru sıralama hangisidir?",
-        "secenekler": [
-         "Bulutsu → Büyük kütleli yıldız → Kırmızı süperdev → Süpernova → Kara delik",
-         "Bulutsu → Kırmızı süperdev → Büyük kütleli yıldız → Kara delik → Süpernova",
-         "Büyük kütleli yıldız → Bulutsu → Süpernova → Kırmızı süperdev → Kara delik",
-         "Bulutsu → Büyük kütleli yıldız → Kırmızı dev → Beyaz cüce → Kara delik"
-        ],
-        "dogru": 0,
-        "aciklama": "Büyük kütleli yıldız süperdev olur, süpernova ile patlar, geriye kara delik ya da nötron yıldızı kalır. (s. 42)"
-       },
        "cevap": "Bulutsu → Büyük kütleli yıldız → Kırmızı süperdev → Süpernova → Kara delik",
        "anahtarlar": [
         {
@@ -1012,7 +1317,52 @@
           ]
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Bulutsu → büyük kütleli yıldız → süperdev → süpernova → kara delik",
+       "tetik": [
+        "sıralayınız"
+       ],
+       "kalipNot": "Sırala: A → B → C …",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İlk iki evre:",
+          "ornek": "bulutsu → büyük kütleli yıldız",
+          "havuz": [
+           "kırmızı dev → beyaz cüce",
+           "büyük kütleli yıldız → bulutsu"
+          ],
+          "sira": [
+           [
+            "bulutsu"
+           ],
+           [
+            "büyük kütle"
+           ]
+          ]
+         },
+         {
+          "bas": "Son üç evre:",
+          "ornek": "süperdev → süpernova → kara delik",
+          "havuz": [
+           "kırmızı dev → beyaz cüce → bulutsu",
+           "süpernova → süperdev → kara delik"
+          ],
+          "sira": [
+           [
+            "süperdev"
+           ],
+           [
+            "süpernova"
+           ],
+           [
+            "kara delik",
+            "karadelik"
+           ]
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -1028,7 +1378,27 @@
           "küçük"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Küçük kütleli olurdu.",
+       "tetik": [
+        "başlangıç kütlesi hakkında"
+       ],
+       "kalipNot": "Kütle: küçük mü, büyük mü?",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Kütlesi:",
+          "ornek": "küçük",
+          "havuz": [
+           "büyük",
+           "çok büyük"
+          ],
+          "k": [
+           "küçük"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.4",
@@ -1247,7 +1617,50 @@
           "beyaz cüce"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "K: Ön yıldız. L: Süpernova. M: Beyaz cüce.",
+       "tetik": [
+        "bilimsel adlarını"
+       ],
+       "kalipNot": "Üç ad yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "K:",
+          "ornek": "ön yıldız",
+          "havuz": [
+           "bulutsu",
+           "kara delik"
+          ],
+          "k": [
+           "ön yıldız",
+           "önyıldız"
+          ]
+         },
+         {
+          "bas": "L:",
+          "ornek": "süpernova",
+          "havuz": [
+           "beyaz cüce",
+           "kırmızı dev"
+          ],
+          "k": [
+           "süpernova"
+          ]
+         },
+         {
+          "bas": "M:",
+          "ornek": "beyaz cüce",
+          "havuz": [
+           "kara delik",
+           "nötron yıldızı"
+          ],
+          "k": [
+           "beyaz cüce"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -1271,7 +1684,38 @@
           "küçük"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "L büyük kütleli yıldızdan, M küçük kütleli yıldızdan.",
+       "tetik": [
+        "karşılaştırınız"
+       ],
+       "kalipNot": "Karşılaştır: “L … , M ise …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "L'nin yıldızı:",
+          "ornek": "büyük kütleli",
+          "havuz": [
+           "küçük kütleli",
+           "Güneş"
+          ],
+          "k": [
+           "büyük"
+          ]
+         },
+         {
+          "bas": "M'nin yıldızı:",
+          "ornek": "küçük kütleli",
+          "havuz": [
+           "büyük kütleli",
+           "kara delik"
+          ],
+          "k": [
+           "küçük"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.4",
@@ -1300,7 +1744,38 @@
           "kırmızı dev"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "N: kırmızı süperdev, P: kırmızı dev",
+       "tetik": [
+        "hangi evrededir"
+       ],
+       "kalipNot": "İki ad yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "N:",
+          "ornek": "kırmızı süperdev",
+          "havuz": [
+           "kırmızı dev",
+           "beyaz cüce"
+          ],
+          "k": [
+           "süperdev"
+          ]
+         },
+         {
+          "bas": "P:",
+          "ornek": "kırmızı dev",
+          "havuz": [
+           "kırmızı süperdev",
+           "süpernova"
+          ],
+          "k": [
+           "kırmızı dev"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -1328,7 +1803,52 @@
           "kütle"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "N süpernova → kara delik; P beyaz cüce. Neden: başlangıç kütlesi.",
+       "tetik": [
+        "nasıl sona erecek",
+        "farkın nedeni"
+       ],
+       "kalipNot": "İki sonu yaz + nedeni.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "N'nin sonu:",
+          "ornek": "süpernova",
+          "havuz": [
+           "beyaz cüce",
+           "bulutsu"
+          ],
+          "k": [
+           "süpernova",
+           "nötron",
+           "kara delik"
+          ]
+         },
+         {
+          "bas": "P'nin sonu:",
+          "ornek": "beyaz cüce",
+          "havuz": [
+           "kara delik",
+           "süpernova"
+          ],
+          "k": [
+           "beyaz cüce"
+          ]
+         },
+         {
+          "bas": "Farkın nedeni:",
+          "ornek": "başlangıç kütlesi",
+          "havuz": [
+           "renk",
+           "uzaklık"
+          ],
+          "k": [
+           "kütle"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.4",
@@ -1507,7 +2027,50 @@
           ]
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Evren → Samanyolu → Güneş sistemi → Dünya",
+       "tetik": [
+        "büyükten küçüğe"
+       ],
+       "kalipNot": "Sırala: A → B → C → D",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "En büyük iki:",
+          "ornek": "evren → Samanyolu",
+          "havuz": [
+           "Dünya → Güneş sistemi",
+           "Samanyolu → evren"
+          ],
+          "sira": [
+           [
+            "evren"
+           ],
+           [
+            "samanyolu",
+            "galaksi"
+           ]
+          ]
+         },
+         {
+          "bas": "En küçük iki:",
+          "ornek": "Güneş sistemi → Dünya",
+          "havuz": [
+           "Dünya → Güneş sistemi",
+           "evren → Dünya"
+          ],
+          "sira": [
+           [
+            "güneş sistemi",
+            "sistem"
+           ],
+           [
+            "dünya"
+           ]
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -1533,7 +2096,45 @@
           "hepsini"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Galaksi: yıldız ve gezegenlerden oluşan yapı. Evren: hepsini içine alan boşluk.",
+       "tetik": [
+        "kendi cümlelerinizle tanımlayınız"
+       ],
+       "kalipNot": "İki tanım: “Galaksi … , evren …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Galaksi neyden oluşur?",
+          "ornek": "yıldız, gezegen, bulutsu",
+          "havuz": [
+           "sudan",
+           "taşlardan"
+          ],
+          "k": [
+           "yıldız",
+           "gezegen",
+           "bulutsu",
+           "gök cisim"
+          ]
+         },
+         {
+          "bas": "Evren nedir?",
+          "ornek": "hepsini içine alan boşluk",
+          "havuz": [
+           "tek bir yıldız",
+           "Güneş sistemi"
+          ],
+          "k": [
+           "içine alan",
+           "kapsayan",
+           "tüm",
+           "bütün",
+           "hepsini"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.5",
@@ -1563,7 +2164,40 @@
           "gök ada"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Yıldız ve galaksi (Samanyolu).",
+       "tetik": [
+        "kavramlar nelerdir"
+       ],
+       "kalipNot": "İki kavram adı.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Parlak noktalar:",
+          "ornek": "yıldız",
+          "havuz": [
+           "gezegen",
+           "uydu"
+          ],
+          "k": [
+           "yıldız"
+          ]
+         },
+         {
+          "bas": "Sarmal yapı:",
+          "ornek": "galaksi (Samanyolu)",
+          "havuz": [
+           "evren",
+           "Güneş sistemi"
+          ],
+          "k": [
+           "galaksi",
+           "samanyolu",
+           "gök ada"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -1576,7 +2210,27 @@
           "andromeda"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Andromeda.",
+       "tetik": [
+        "Komşu yapının adı"
+       ],
+       "kalipNot": "Yalnız adı yeter.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Adı:",
+          "ornek": "Andromeda",
+          "havuz": [
+           "Samanyolu",
+           "Güneş"
+          ],
+          "k": [
+           "andromeda"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "c",
@@ -1597,7 +2251,41 @@
           "boşluk"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Evren: bütün gök cisimlerini içine alan boşluk.",
+       "tetik": [
+        "hepsini içine alan kavram",
+        "Tanımını yazınız"
+       ],
+       "kalipNot": "Ad + tanım.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Kavram:",
+          "ornek": "evren",
+          "havuz": [
+           "galaksi",
+           "yıldız"
+          ],
+          "k": [
+           "evren"
+          ]
+         },
+         {
+          "bas": "Tanımı:",
+          "ornek": "her şeyi içine alan boşluk",
+          "havuz": [
+           "en büyük yıldız",
+           "bir gezegen"
+          ],
+          "k": [
+           "içine alan",
+           "kapsayan",
+           "boşluk"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.1.5",
@@ -1773,29 +2461,6 @@
       {
        "harf": "a",
        "soru": "Hangi durumlarda fiziksel anlamda iş yapılmıştır?",
-       "iskele": {
-        "tur": "dytablo",
-        "soru": "Önce ısınalım: Her durum için iş yapıldı mı? (D: yapıldı, Y: yapılmadı)",
-        "ifadeler": [
-         {
-          "s": "I. Elif kutuyu itiyor, kutu ilerliyor.",
-          "d": true
-         },
-         {
-          "s": "II. Kerem dolabı itiyor, dolap kıpırdamıyor.",
-          "d": false
-         },
-         {
-          "s": "III. Duru çantayı tutarak düz yolda yürüyor.",
-          "d": false
-         },
-         {
-          "s": "IV. Öğrenci topu yukarı kaldırıyor.",
-          "d": true
-         }
-        ],
-        "aciklama": "İş için kuvvet ve aynı doğrultuda yer değiştirme birlikte gerekir. (s. 61–62)"
-       },
        "cevap": "I ve IV numaralı durumlarda fiziksel anlamda iş yapılmıştır.",
        "anahtarlar": [
         {
@@ -1813,7 +2478,34 @@
           "kaldır"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "I ve IV.",
+       "tetik": [
+        "Hangi durumlarda"
+       ],
+       "kalipNot": "Durum numaralarını yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İş yapılan durumlar:",
+          "ornek": "I ve IV",
+          "havuz": [
+           "II ve III",
+           "yalnız II"
+          ],
+          "hepsi": [
+           [
+            "i ve",
+            "i,",
+            "i."
+           ],
+           [
+            "iv"
+           ]
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -1843,7 +2535,45 @@
           "yatay"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "II: dolap hareket etmiyor. III: kuvvet yukarı, hareket yatay.",
+       "tetik": [
+        "neden iş yapılmadığını"
+       ],
+       "kalipNot": "İkisini ayrı yaz: “II … , III …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "II'de dolap:",
+          "ornek": "hareket etmiyor",
+          "havuz": [
+           "hızla ilerliyor",
+           "yukarı çıkıyor"
+          ],
+          "k": [
+           "hareket etm",
+           "yer değiştirm",
+           "kıpırda",
+           "duruyor",
+           "hareketsiz",
+           "sabit"
+          ]
+         },
+         {
+          "bas": "III'te kuvvet ve hareket:",
+          "ornek": "kuvvet yukarı, hareket yatay",
+          "havuz": [
+           "ikisi de ileri",
+           "ikisi de yukarı"
+          ],
+          "k": [
+           "yatay",
+           "dik",
+           "farklı"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.2.1",
@@ -1877,7 +2607,43 @@
           "metre"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "2. durum, çünkü yol daha fazla.",
+       "tetik": [
+        "Hangi durumda",
+        "Nedenini açıklayınız"
+       ],
+       "kalipNot": "Durum + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Durum:",
+          "ornek": "2. durum",
+          "havuz": [
+           "1. durum",
+           "ikisi eşit"
+          ],
+          "k": [
+           "2",
+           "ikinci",
+           "6"
+          ]
+         },
+         {
+          "bas": "Çünkü:",
+          "ornek": "yol daha fazla",
+          "havuz": [
+           "daha az",
+           "aynı"
+          ],
+          "k": [
+           "fazla",
+           "uzun",
+           "çok"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -1901,7 +2667,41 @@
           "doğru orantı"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "İş artar, çünkü iş kuvvetle doğru orantılı.",
+       "tetik": [
+        "nasıl değişirdi"
+       ],
+       "kalipNot": "Artar mı, azalır mı + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İş:",
+          "ornek": "artar",
+          "havuz": [
+           "azalır",
+           "değişmez"
+          ],
+          "k": [
+           "artar",
+           "artardı",
+           "fazla",
+           "çoğal"
+          ]
+         },
+         {
+          "bas": "Çünkü iş neye bağlı?",
+          "ornek": "kuvvete",
+          "havuz": [
+           "renge",
+           "zamana"
+          ],
+          "k": [
+           "kuvvet"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.2.1",
@@ -2108,7 +2908,45 @@
           "yer değiştir"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Evet. Kuvvet de kutu da yukarı (aynı doğrultu).",
+       "tetik": [
+        "iş yapmış mıdır",
+        "Açıklayınız"
+       ],
+       "kalipNot": "Evet/Hayır + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Cevap:",
+          "ornek": "evet, iş var",
+          "havuz": [
+           "hayır",
+           "bilinmez"
+          ],
+          "k": [
+           "evet",
+           "yapılmış",
+           "yapmış",
+           "yapar",
+           "var"
+          ]
+         },
+         {
+          "bas": "Kuvvet ve kutu hangi yöne?",
+          "ornek": "ikisi de yukarı (aynı doğrultu)",
+          "havuz": [
+           "ikisi de aşağı",
+           "farklı yönlere"
+          ],
+          "k": [
+           "aynı doğrultu",
+           "aynı yön",
+           "yukarı"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -2140,7 +2978,49 @@
           "hareketsiz"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Hayır. Kutu hareket etmiyor.",
+       "tetik": [
+        "iş yapmış mıdır",
+        "Açıklayınız"
+       ],
+       "kalipNot": "Evet/Hayır + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Cevap:",
+          "ornek": "hayır, iş yok",
+          "havuz": [
+           "evet",
+           "biraz"
+          ],
+          "k": [
+           "hayır",
+           "yapılmamış",
+           "yapmamış",
+           "yapmaz",
+           "yok",
+           "sıfır"
+          ]
+         },
+         {
+          "bas": "Kutu ne durumda?",
+          "ornek": "hareket etmiyor",
+          "havuz": [
+           "yukarı çıkıyor",
+           "düşüyor"
+          ],
+          "k": [
+           "hareket etm",
+           "yer değiştirm",
+           "kıpırda",
+           "duruyor",
+           "hareketsiz",
+           "sabit"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.2.1",
@@ -2175,7 +3055,45 @@
           "yukarı"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Evet. Kuvvet de tepsi de yukarı (aynı doğrultu).",
+       "tetik": [
+        "iş yapmış mıdır",
+        "Açıklayınız"
+       ],
+       "kalipNot": "Evet/Hayır + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Cevap:",
+          "ornek": "evet, iş var",
+          "havuz": [
+           "hayır",
+           "bilinmez"
+          ],
+          "k": [
+           "evet",
+           "yapılmış",
+           "yapmış",
+           "yapar",
+           "var"
+          ]
+         },
+         {
+          "bas": "Kuvvet ve tepsi hangi yöne?",
+          "ornek": "ikisi de yukarı (aynı doğrultu)",
+          "havuz": [
+           "ikisi de aşağı",
+           "farklı yönlere"
+          ],
+          "k": [
+           "aynı doğrultu",
+           "aynı yön",
+           "yukarı"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -2203,7 +3121,46 @@
           "yatay"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Hayır. Kuvvet yukarı, hareket yatay.",
+       "tetik": [
+        "iş yapmış mıdır",
+        "Açıklayınız"
+       ],
+       "kalipNot": "Evet/Hayır + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Cevap:",
+          "ornek": "hayır, iş yok",
+          "havuz": [
+           "evet",
+           "biraz"
+          ],
+          "k": [
+           "hayır",
+           "yapılmamış",
+           "yapmamış",
+           "yapmaz",
+           "yok",
+           "sıfır"
+          ]
+         },
+         {
+          "bas": "Kuvvetin ve hareketin yönü:",
+          "ornek": "kuvvet yukarı, hareket yatay",
+          "havuz": [
+           "ikisi de ileri",
+           "ikisi de yukarı"
+          ],
+          "k": [
+           "yatay",
+           "dik",
+           "farklı"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.2.1",
@@ -2438,7 +3395,45 @@
           "yüksek"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Çekim potansiyel enerjisi; kütle ve yükseklik.",
+       "tetik": [
+        "hangi enerjisi vardır",
+        "hangi özelliklere bağlıdır"
+       ],
+       "kalipNot": "Enerjinin adı + bağlı olduğu iki şey.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Enerjinin adı:",
+          "ornek": "çekim potansiyel enerjisi",
+          "havuz": [
+           "kinetik enerji",
+           "ısı enerjisi"
+          ],
+          "k": [
+           "potansiyel"
+          ]
+         },
+         {
+          "bas": "Bağlı olduğu iki şey:",
+          "ornek": "kütle ve yükseklik",
+          "havuz": [
+           "hız ve renk",
+           "sıcaklık"
+          ],
+          "hepsi": [
+           [
+            "kütle",
+            "ağırlı"
+           ],
+           [
+            "yüksek"
+           ]
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -2466,7 +3461,47 @@
           "sürat"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Kinetik enerji; kütle ve hız.",
+       "tetik": [
+        "enerji nedir",
+        "hangi özelliklere bağlıdır"
+       ],
+       "kalipNot": "Enerjinin adı + bağlı olduğu iki şey.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Enerjinin adı:",
+          "ornek": "kinetik enerji",
+          "havuz": [
+           "potansiyel enerji",
+           "ışık enerjisi"
+          ],
+          "k": [
+           "kinetik",
+           "hareket enerjisi"
+          ]
+         },
+         {
+          "bas": "Bağlı olduğu iki şey:",
+          "ornek": "kütle ve hız",
+          "havuz": [
+           "yükseklik ve renk",
+           "sıcaklık"
+          ],
+          "hepsi": [
+           [
+            "kütle",
+            "ağırlı"
+           ],
+           [
+            "hız",
+            "sürat"
+           ]
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "c",
@@ -2490,7 +3525,43 @@
           "hareket gerek"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Hayır, çünkü hareket etmiyor.",
+       "tetik": [
+        "kinetik enerjisi var mıdır",
+        "Nedenini yazınız"
+       ],
+       "kalipNot": "Evet/Hayır + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Cevap:",
+          "ornek": "hayır, yoktur",
+          "havuz": [
+           "evet",
+           "biraz vardır"
+          ],
+          "k": [
+           "hayır",
+           "yok"
+          ]
+         },
+         {
+          "bas": "Çünkü çocuk:",
+          "ornek": "hareket etmiyor",
+          "havuz": [
+           "kayıyor",
+           "koşuyor"
+          ],
+          "k": [
+           "hareket etm",
+           "hareketsiz",
+           "duruyor",
+           "oturuyor"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.2.2",
@@ -2513,7 +3584,27 @@
           "esneklik"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Esneklik potansiyel enerjisi.",
+       "tetik": [
+        "hangi enerji depolanmıştır"
+       ],
+       "kalipNot": "Enerjinin adı yeter.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Enerjinin adı:",
+          "ornek": "esneklik potansiyel enerjisi",
+          "havuz": [
+           "kinetik enerji",
+           "ısı enerjisi"
+          ],
+          "k": [
+           "esneklik"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "b",
@@ -2527,7 +3618,28 @@
           "hareket enerjisi"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Kinetik enerji.",
+       "tetik": [
+        "enerji nedir"
+       ],
+       "kalipNot": "Enerjinin adı yeter.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Enerjinin adı:",
+          "ornek": "kinetik enerji",
+          "havuz": [
+           "potansiyel enerji",
+           "ışık enerjisi"
+          ],
+          "k": [
+           "kinetik",
+           "hareket enerjisi"
+          ]
+         }
+        ]
+       }
       },
       {
        "harf": "c",
@@ -2550,7 +3662,41 @@
           "hız"
          ]
         }
-       ]
+       ],
+       "kisaCevap": "Esneklik için yay gerilmeli; kinetik için hareket gerekir.",
+       "tetik": [
+        "karşılaştırınız"
+       ],
+       "kalipNot": "Karşılaştır: “Esneklik için … , kinetik için …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Yay için gereken:",
+          "ornek": "gerilmesi (şeklinin değişmesi)",
+          "havuz": [
+           "soğuması",
+           "boyanması"
+          ],
+          "k": [
+           "geril",
+           "şekl",
+           "esne"
+          ]
+         },
+         {
+          "bas": "Ok için gereken:",
+          "ornek": "hareket etmesi",
+          "havuz": [
+           "durması",
+           "boyanması"
+          ],
+          "k": [
+           "hareket",
+           "hız"
+          ]
+         }
+        ]
+       }
       }
      ],
      "kazanim": "FB.7.2.2",
@@ -2975,7 +4121,8 @@
        ],
        "puan": 12
       }
-     ]
+     ],
+     "benzer": "m3"
     },
     {
      "kazanim": "FB.7.1.4",
@@ -3035,7 +4182,8 @@
        ],
        "puan": 8
       }
-     ]
+     ],
+     "benzer": "m4"
     },
     {
      "kazanim": "FB.7.1.5",
@@ -3094,7 +4242,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m6"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -3151,7 +4300,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m7"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -3216,7 +4366,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m7"
     },
     {
      "kazanim": "FB.7.2.2",
@@ -3274,7 +4425,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m9"
     }
    ]
   },
@@ -3346,7 +4498,8 @@
        ],
        "puan": 12
       }
-     ]
+     ],
+     "benzer": "m3"
     },
     {
      "kazanim": "FB.7.1.4",
@@ -3422,7 +4575,8 @@
        ],
        "puan": 11
       }
-     ]
+     ],
+     "benzer": "m5"
     },
     {
      "kazanim": "FB.7.1.5",
@@ -3480,7 +4634,8 @@
        ],
        "puan": 6
       }
-     ]
+     ],
+     "benzer": "m6"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -3550,7 +4705,8 @@
        ],
        "puan": 8
       }
-     ]
+     ],
+     "benzer": "m8"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -3610,7 +4766,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m7"
     },
     {
      "kazanim": "FB.7.2.2",
@@ -3676,7 +4833,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m9"
     }
    ]
   },
@@ -3745,7 +4903,8 @@
        ],
        "puan": 12
       }
-     ]
+     ],
+     "benzer": "m3"
     },
     {
      "kazanim": "FB.7.1.4",
@@ -3798,7 +4957,8 @@
        ],
        "puan": 10
       }
-     ]
+     ],
+     "benzer": "m4"
     },
     {
      "kazanim": "FB.7.1.5",
@@ -3850,7 +5010,8 @@
        ],
        "puan": 6
       }
-     ]
+     ],
+     "benzer": "m6"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -3921,7 +5082,8 @@
        ],
        "puan": 6
       }
-     ]
+     ],
+     "benzer": "m7"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -3996,7 +5158,8 @@
        ],
        "puan": 8
       }
-     ]
+     ],
+     "benzer": "m8"
     },
     {
      "kazanim": "FB.7.2.2",
@@ -4049,7 +5212,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m9"
     }
    ]
   },
@@ -4127,7 +5291,8 @@
        ],
        "puan": 10
       }
-     ]
+     ],
+     "benzer": "m3"
     },
     {
      "kazanim": "FB.7.1.4",
@@ -4196,7 +5361,8 @@
        ],
        "puan": 8
       }
-     ]
+     ],
+     "benzer": "m4"
     },
     {
      "kazanim": "FB.7.1.5",
@@ -4249,7 +5415,8 @@
        ],
        "puan": 6
       }
-     ]
+     ],
+     "benzer": "m6"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -4307,7 +5474,8 @@
        ],
        "puan": 6
       }
-     ]
+     ],
+     "benzer": "m7"
     },
     {
      "kazanim": "FB.7.2.1",
@@ -4360,7 +5528,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m7"
     },
     {
      "kazanim": "FB.7.2.2",
@@ -4417,7 +5586,8 @@
        ],
        "puan": 7
       }
-     ]
+     ],
+     "benzer": "m9"
     }
    ]
   }

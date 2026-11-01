@@ -95,8 +95,8 @@ class Yazili:
 
     def _basamak(self, m, yer, h):
         b, an = m["basamak"], m.get("anahtarlar") or []
-        sec = b.get("sec", {})
-        if len(sec.get("secenekler", [])) != 3 or len(set(sec["secenekler"])) != 3 or sec.get("dogru") != 0 or not sec.get("ipucu") or not sec.get("aciklama"): h.append(f"{yer}: basamak 1 (3 farklı şık, dogru 0, ipucu, açıklama)")
+        sec = b.get("sec")
+        if sec is not None and (len(sec.get("secenekler", [])) != 3 or len(set(sec["secenekler"])) != 3 or sec.get("dogru") != 0 or not sec.get("ipucu") or not sec.get("aciklama")): h.append(f"{yer}: basamak 1 (3 farklı şık, dogru 0, ipucu, açıklama)")
         if not b.get("parcalar"): h.append(f"{yer}: parça yok")
         for j, p in enumerate(b.get("parcalar", [])):
             if not p.get("bas") or not p.get("ornek") or len(p.get("havuz", [])) != 2: h.append(f"{yer} parça {j + 1}: bas/ornek/havuz(2)")
@@ -151,7 +151,7 @@ class Yazili:
                 if not parca_ok(t, t.get("ornek", "")) or len(t.get("havuz", [])) != 2 or any(parca_ok(t, x) for x in t["havuz"]): h.append(f"kuark {i}: tamamla (örnek kontrolü / 2 çeldirici)")
         yan = sum(1 for k in d["kuarkHata"] if k.get("tur") == "yanilgi")
         if yan > len(d["kuarkHata"]) / 2: h.append(f"kuark: yanılgı türü {yan} (eksik türünden az olmalı)")
-        for q in d["mebSorular"]:
+        for q in d["mebSorular"] + [z for q0 in d["mebSorular"] for z in q0.get("ikizler", [])]:
             for m in q["maddeler"]:
                 for x in m.get("tetik", []):
                     if x not in m["soru"]: h.append(f"{q['id']}{m['harf']}: tetik '{x}' soru metninde yok")
@@ -163,6 +163,8 @@ class Yazili:
                 self._soru(q, f"{p['id']}-{n + 1}", h, prova=True); top += q.get("puan", 0)
                 say[q["kazanim"]] = say.get(q["kazanim"], 0) + 1
             if top != 100: h.append(f"{p['id']}: toplam puan {top}")
+            for q in p["sorular"]:
+                if q.get("benzer") and q["benzer"] not in {x["id"] for x in d["mebSorular"]}: h.append(f"{p['id']}: benzer '{q['benzer']}' yok")
             if d.get("dagilim") and say != d["dagilim"]: h.append(f"{p['id']}: dağılım {say} ≠ senaryo {d['dagilim']}")
         return h
 
