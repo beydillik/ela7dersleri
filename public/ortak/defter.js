@@ -2595,8 +2595,7 @@
       ${gun !== null && gun >= 0 ? `<div class="yz-menu-sayac">${gun === 0 ? "Yazılı bugün!" : gun === 1 ? "Yazılı <b>yarın</b>!" : `Yazılıya <b>${gun}</b> gün`}</div>` : ""}
       <nav aria-label="Yazılıya Hazırlık"><ol>
         ${mi("ana", "⌂", "Başlangıç", false)}
-        ${mi("hatirla", "1", "Hatırla", D.kazanimlar.every(z => k.hatirla[z.kod]), D.kazanimlar.map((z, i) => al(`hatirla:${i}`, z.kisa, mini(yzHazir(z.kod)), alt === i)).join(""))}
-        ${yzHTVar() ? mi("htekrar", String(++no), "Hatırladığını Tekrarla", D.kazanimlar.every(z => !(z.tekrar || []).length || (k.htekrar || {})[z.kod]), D.kazanimlar.map((z, i) => (z.tekrar || []).length ? al(`htekrar:${i}`, z.kisa, mini(((k.htekrar || {})[z.kod] || {}).r ?? null), alt === i) : "").join("")) : ""}
+        ${mi("hatirla", "1", yzHTVar() ? "Hatırla ve Tekrarla" : "Hatırla", D.kazanimlar.every(z => k.hatirla[z.kod] && (!(z.tekrar || []).length || (k.htekrar || {})[z.kod])), D.kazanimlar.map((z, i) => al(`hatirla:${i}`, z.kisa, mini((z.tekrar || []).length ? ((k.htekrar || {})[z.kod] || {}).r ?? null : yzHazir(z.kod)), alt === i)).join(""))}
         ${mi("meb", String(++no), yzSoruB(), D.mebSorular.every(q => k.meb[q.id]), D.mebSorular.map(q => al(`meb:${q.id}`, `Soru ${q.no} · ${yzKaz(q.kazanim).kisa}`, mini(k.meb[q.id] ? k.meb[q.id].r : null), alt === q.id)).join(""))}
         ${yzTekrarVar() ? mi("tekrar", String(++no), "Konu Tekrarı", D.kazanimlar.every(z => (k.tekrar || {})[z.kod] || !yzTekrarSira(z.kod).length), D.kazanimlar.filter(z => yzTekrarSira(z.kod).length).map(z => al(`tekrar:${z.kod}`, z.kisa, mini(((k.tekrar || {})[z.kod] || {}).r ?? null), alt === z.kod)).join("")) : ""}
         ${mi("kuark", String(++no), yzKuarkAd(), !!k.kuark)}
@@ -2626,8 +2625,7 @@
     const provaSon = D.provalar.map(p => (k.prova[p.id] || []).slice(-1)[0]).filter(Boolean);
     const sonProva = D.provalar.map(p => ({ p, s: (k.prova[p.id] || []).slice(-1)[0] })).filter(x => x.s).sort((a, b) => b.s.t - a.s.t)[0];
     const adim = [
-      ["hatirla", "Hatırla", `${D.kazanimlar.length} ${yzKazAd()} kartı · sınavda ne sorulur?`, D.kazanimlar.every(z => k.hatirla[z.kod])],
-      ...(yzHTVar() ? [["htekrar", "Hatırladığını Tekrarla", (() => { const l = D.kazanimlar.filter(z => (z.tekrar || []).length); return `${l.filter(z => (k.htekrar || {})[z.kod]).length} / ${l.length} konu · puan getiren kelimeleri yerine koy`; })(), D.kazanimlar.every(z => !(z.tekrar || []).length || (k.htekrar || {})[z.kod])]] : []),
+      ["hatirla", yzHTVar() ? "Hatırla ve Tekrarla" : "Hatırla", yzHTVar() ? `${D.kazanimlar.filter(z => (k.htekrar || {})[z.kod]).length} / ${D.kazanimlar.length} ${yzKazAd()} · önce oku, hemen ardından boşlukları doldur` : `${D.kazanimlar.length} ${yzKazAd()} kartı · sınavda ne sorulur?`, D.kazanimlar.every(z => k.hatirla[z.kod] && (!(z.tekrar || []).length || (k.htekrar || {})[z.kod]))],
       ["meb", yzSoruB(), `${mebBitti} / ${D.mebSorular.length} soru çözüldü${yzIkizVar() ? " · benzerleriyle tekrar" : ""}`, mebBitti === D.mebSorular.length],
       ...(yzTekrarVar() ? [["tekrar", "Konu Tekrarı", (() => { const l = D.kazanimlar.filter(z => yzTekrarSira(z.kod).length), b = l.filter(z => (k.tekrar || {})[z.kod]).length; return `${b} / ${l.length} konu · ısınma + MEB soruları + benzer sorular`; })(), D.kazanimlar.every(z => (k.tekrar || {})[z.kod] || !yzTekrarSira(z.kod).length)]] : []),
       ...(!yzTekrarVar() && yzKartVar() ? [["kart", "Kısa Cevap Kartları", `${yzKartOturdu(k)} / ${yzKartlar().length} kısa cevap oturdu · her gün bir tur`, yzKartOturdu(k) === yzKartlar().length]] : []),
@@ -2657,15 +2655,15 @@
     k.hatirla[z.kod] = Date.now(); yzKayit.set(k);
     const meb = D.mebSorular.find(q => q.kazanim === z.kod);
     const oku = `${z.kisa}. ${z.maddeler.map(yzDuz).join(" ")} Puan getiren kelimeler: ${(z.kelimeler || []).join(", ")}.`;
-    root.innerHTML = `${yzUst("Hatırla")}<div class="stage yz-hatirla" style="--kr:${esc(z.renk || "#5a6280")}">
+    root.innerHTML = `${yzUst(yzHTVar() ? "Hatırla ve Tekrarla" : "Hatırla")}<div class="stage yz-hatirla" style="--kr:${esc(z.renk || "#5a6280")}">
       <div class="progress"><span>${yzKazAd()[0].toLocaleUpperCase("tr") + yzKazAd().slice(1)} ${i + 1} / ${D.kazanimlar.length}</span><div class="bar"><i style="width:${(i + 1) / D.kazanimlar.length * 100}%"></i></div></div>
       <div class="kicker">${esc(z.kod)} · ${esc(z.soruNot || `Yazılıda ${z.soru} soru`)} · ${esc(z.sayfa || "")}</div><h3>${esc(z.kisa)}</h3><p class="ek yz-kazad">${esc(z.ad)}</p>
       ${yzHatirlaIc(z)}
       <div class="row">${listenBtn(oku)}</div>
-      <div class="stage-nav"><button class="btn ghost" data-onceki ${i ? "" : "disabled"}>← Önceki</button>${meb ? `<button class="btn" data-meb="${esc(meb.id)}">${YZ.d.soruBaslik ? `Bu konunun sorusu: Soru ${meb.no}` : "Bu kazanımın MEB sorusu"}</button>` : ""}${(z.tekrar || []).length ? `<button class="btn" data-ht>Bu konuyu tekrarla</button>` : ""}<button class="btn primary" data-sonraki>${son ? `${esc(yzHTVar() ? "Hatırladığını Tekrarla" : yzSoruB())} →` : `Sonraki ${yzKazAd()} →`}</button></div></div>`;
+      <div class="stage-nav"><button class="btn ghost" data-onceki ${i ? "" : "disabled"}>← Önceki</button>${meb ? `<button class="btn" data-meb="${esc(meb.id)}">${YZ.d.soruBaslik ? `Bu konunun sorusu: Soru ${meb.no}` : "Bu kazanımın MEB sorusu"}</button>` : ""}${(z.tekrar || []).length ? `<button class="btn primary" data-ht>Okudum, şimdi tekrarla →</button>` : `<button class="btn primary" data-sonraki>${son ? `${esc(yzSoruB())} →` : `Sonraki ${yzKazAd()} →`}</button>`}</div></div>`;
     yzAnaBagla(root);
     $("[data-onceki]", root).onclick = () => yzGit(root, "hatirla", i - 1);
-    $("[data-sonraki]", root).onclick = () => son ? yzGit(root, yzHTVar() ? "htekrar" : "meb") : yzGit(root, "hatirla", i + 1);
+    const sb = $("[data-sonraki]", root); if (sb) sb.onclick = () => son ? yzGit(root, "meb") : yzGit(root, "hatirla", i + 1);
     const ht = $("[data-ht]", root); if (ht) ht.onclick = () => yzGit(root, "htekrar", i);
     const mb = $("[data-meb]", root); if (mb) mb.onclick = () => { tts.stop(); yzSoruCoz(root, meb, { tur: "meb", ana: meb }); };
   }
@@ -2678,7 +2676,7 @@
   function yzHTekrar(root, i = 0) {
     const D = YZ.d, l = D.kazanimlar.map((z, j) => j).filter(j => (D.kazanimlar[j].tekrar || []).length);
     if (!l.includes(i)) i = l[0];
-    YZ.yer = ["htekrar", i];
+    YZ.yer = ["hatirla", i];
     const z = D.kazanimlar[i], cm = z.tekrar.map(t => ({ p: yzHTParca(t.c), s: t.s })), st = { c: 0, b: {}, ilk: 0, top: 0 };
     cm.forEach((c, ci) => c.p.forEach((p, pi) => { if (typeof p !== "string") { st.top++; st.b[`${ci}-${pi}`] = { kalan: shuffle([...p.o]), hata: 0, son: null }; } }));
     const sonKon = l[l.length - 1] === i, sonraki = l[l.indexOf(i) + 1];
@@ -2687,11 +2685,11 @@
       return `<select class="yz-ht-sec${b.hata ? " hata" : ""}" data-b="${ci}-${pi}" aria-label="Boşluk"><option value="">— seç —</option>${b.kalan.map(o => `<option>${esc(o)}</option>`).join("")}</select>`; }).join("");
     const bitti = ci => cm[ci].p.every((p, pi) => typeof p === "string" || st.b[`${ci}-${pi}`].son);
     const ciz = () => {
-      root.innerHTML = `${yzUst("Hatırladığını Tekrarla")}<div class="stage yz-ht" style="--kr:${esc(z.renk || "#5a6280")}">
+      root.innerHTML = `${yzUst(`Hatırla ve Tekrarla · ${esc(z.kisa)}`)}<div class="stage yz-ht" style="--kr:${esc(z.renk || "#5a6280")}">
         <div class="progress"><span>${esc(z.kisa)} · Cümle ${Math.min(st.c + 1, cm.length)} / ${cm.length}</span><div class="bar"><i style="width:${Math.min(st.c + 1, cm.length) / cm.length * 100}%"></i></div></div>
         <ol class="yz-ht-l">${cm.slice(0, st.c + 1).map((c, ci) => `<li class="${bitti(ci) ? "tamam" : "simdi"}"><span>${cumle(c, ci)}</span>${bitti(ci) ? ` <small class="yz-ht-s">(${esc(c.s)})</small>` : ""}</li>`).join("")}</ol>
         ${st.c >= cm.length ? robotDer(`${st.ilk} / ${st.top} kelimeyi ilk denemede buldun. ${st.ilk === st.top ? "Bu konunun puan getiren kelimeleri aklında!" : "Turuncu kelimeler bir dahaki sefere ilk denemede gelsin; bir tur daha yapabilirsin."}`) + `
-          <div class="row"><button class="btn${st.ilk === st.top ? " ghost" : ""}" data-yeniden>Bu konuyu yeniden tekrarla</button><button class="btn ghost" data-hat>Hatırla kartına bak</button><button class="btn primary" data-sonraki>${sonKon ? `${esc(yzSoruB())} →` : `Sıradaki konu: ${esc(D.kazanimlar[sonraki].kisa)} →`}</button></div>` : ""}</div>`;
+          <div class="row"><button class="btn${st.ilk === st.top ? " ghost" : ""}" data-yeniden>Bu konuyu yeniden tekrarla</button><button class="btn ghost" data-hat>Hatırla kartına bak</button><button class="btn primary" data-sonraki>${sonKon ? `${esc(yzSoruB())} →` : `Sıradaki konu: ${esc(D.kazanimlar[sonraki].kisa)} (Hatırla) →`}</button></div>` : ""}</div>`;
       yzAnaBagla(root);
       $$("select[data-b]", root).forEach(se => { se.onchange = () => {
         const b = st.b[se.dataset.b], [ci, pi] = se.dataset.b.split("-").map(Number), dogru = cm[ci].p[pi].o[0], v = se.value; if (!v) return;
@@ -2705,7 +2703,7 @@
       const b = (q, f) => { const e = $(q, root); if (e) e.onclick = f; };
       b("[data-yeniden]", () => yzHTekrar(root, i));
       b("[data-hat]", () => yzGit(root, "hatirla", i));
-      b("[data-sonraki]", () => sonKon ? yzGit(root, "meb") : yzGit(root, "htekrar", sonraki));
+      b("[data-sonraki]", () => sonKon ? yzGit(root, "meb") : yzGit(root, "hatirla", sonraki));
     };
     ciz();
   }
