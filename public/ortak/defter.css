@@ -1534,3 +1534,20 @@ body.ders-sayfa .masthead .head-actions { flex: none; flex-wrap: nowrap; }
 .yz-havuz .chip { padding: 4px 12px; }
 .yz-defter { grid-template-columns: minmax(0, 1fr); } .yz-defter > *, .yz-defter .stage > * { min-width: 0; }
 .yz-parca label { min-width: 0; } .yz-parca-in { width: 100%; flex-basis: 140px; }
+/* Soru kelimesi → cevap kalıbı */
+mark.yz-tetik { background: color-mix(in srgb, #ffe45c 70%, transparent); color: inherit; border-radius: 4px; padding: 0 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.yz-kalip-not { margin: 0; padding: 6px 12px; border-left: 4px solid #e9b800; background: var(--gold-soft); border-radius: 0 10px 10px 0; font-size: 16px; }
+/* Kuark'ın Cevabını Düzelt */
+.yz-kuark-c.cizik { text-decoration: line-through; text-decoration-color: var(--bad); text-decoration-thickness: 2px; opacity: .55; }
+.yz-kuark-c.yarim { opacity: .75; }
+.yz-etiket { font-size: 12px; font-weight: 800; border-radius: 999px; padding: 1px 8px; vertical-align: 2px; color: #fff; } .yz-etiket.no { background: var(--bad); } .yz-etiket.orta { background: #c99a06; }
+.yz-tamamla { display: grid; gap: 8px; background: var(--surface); border: 2px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.yz-tamamla.ok { border-color: var(--ok); background: var(--ok-soft); } .yz-tamamla.hata { border-color: var(--gold); }
+.yz-tamamla-c { margin: 0; font-size: 18px; line-height: 2; } .yz-tamamla-c .yz-parca-in { width: auto; min-width: 140px; max-width: 100%; }
+.yz-dogru-buyuk { font-size: 19px; font-weight: 800; }
+/* Kısa Cevap Kartları */
+.yz-kart { border-top: 6px solid var(--kr); }
+.yz-kutu { letter-spacing: 2px; color: var(--ok); }
+.yz-kart-arka { background: var(--ok-soft); border: 2px solid var(--ok); border-radius: 14px; padding: 14px 16px; }
+.yz-kart-arka span { font-size: 13px; font-weight: 800; color: var(--ok); text-transform: uppercase; letter-spacing: .06em; }
+.yz-kart-arka p { margin: 4px 0 0; font-size: 21px; font-weight: 800; line-height: 1.4; }

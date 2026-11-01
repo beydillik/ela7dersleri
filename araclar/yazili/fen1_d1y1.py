@@ -373,55 +373,62 @@ Y.meb(id="m9", no=9, kazanim="FB.7.2.2", svg=Z.elma(),
 # =====================================================================
 # KUARK'IN HATASI
 # =====================================================================
-def KH(kazanim, soru, kuark, dogruSik, yanlis1, yanlis2, ipucu, aciklama, dogruCevap):
-    Y.kuark(kazanim=kazanim, soru=soru, kuark=kuark, secenekler=[dogruSik, yanlis1, yanlis2], dogru=0, ipucu=ipucu, aciklama=aciklama, dogruCevap=dogruCevap)
+def KH(kazanim, tur, soru, kuark, dogruSik, yanlis1, yanlis2, ipucu, aciklama, once, ornek, sonra, k, havuz):
+    """tur: eksik (Kuark'ın cevabı doğru ama yarım) | yanilgi (Hatırla kartlarındaki klasik hatalar; yalnız bunlar).
+    Ela önce eksiği/hatayı seçer, sonra tam cevabın boşluğunu (once ___ sonra) kendisi yazar: son yaptığı şey doğru cevap olur."""
+    Y.kuark(kazanim=kazanim, tur=tur, soru=soru, kuark=kuark, secenekler=[dogruSik, yanlis1, yanlis2], dogru=0, ipucu=ipucu, aciklama=aciklama,
+            dogruCevap=f"{once} {ornek} {sonra}".replace(" .", ".").replace(" ;", ";").strip(), tamamla={"once": once, "ornek": ornek, "sonra": sonra, "k": k, "havuz": havuz})
 
-KH("FB.7.2.1", "Halteri başının üzerinde sabit tutan halterci iş yapar mı?", "Evet, iş yapar. Çünkü çok yoruluyor ve halteri tutmak için kuvvet uyguluyor.",
-   "Yorulmak iş yapıldığını göstermez; halter yer değiştirmediği için iş yapılmaz.", "Halterci halteri tutarken hiç kuvvet uygulamaz.", "Kuark haklı, cevapta hata yok.",
-   "İş için iki koşulu hatırla: kuvvet + o doğrultuda yer değiştirme.", "Kuvvet var ama yer değiştirme yok: iş sıfır. (s. 62)",
-   "Hayır, iş yapmaz. Çünkü halter sabit duruyor, yer değiştirmiyor.")
-KH("FB.7.2.1", "Poşetleri elinde taşıyarak düz yolda yürüyen kişi poşetlere iş yapar mı?", "Evet, iş yapar. Çünkü poşetler kişiyle birlikte yer değiştiriyor.",
-   "Poşetler yer değiştiriyor ama kuvvet yukarı, hareket yatay; doğrultular dik olduğu için iş yok.", "Poşetler hiç yer değiştirmiyor.", "Poşetler hafif olduğu için iş yapılmaz.",
-   "Kuvvetin yönüne ve hareketin yönüne ayrı ayrı bak.", "Kuvvet ile hareket aynı doğrultuda değilse o kuvvet iş yapmaz. (s. 62)",
-   "Hayır, iş yapmaz. Çünkü poşete uygulanan kuvvet yukarı, poşetin hareketi yataydır.")
-KH("FB.7.2.1", "Görsel 1'deki kişi sandığı itiyor ve sandık ilerliyor. İş yapılmış mıdır?", "Evet.",
-   "Cevap doğru ama “çünkü” kısmı eksik: kuvvet ile hareket aynı doğrultuda olduğu yazılmalı.", "Cevap yanlış; sandığı itmek iş değildir.", "Hata yok, yazılıda tek kelime yeterli.",
-   "Açık uçlu soruda puanı ne getirir?", "Yazılıda gerekçesiz cevap tam puan almaz.",
-   "Evet, iş yapılmıştır. Çünkü kişi sandığa kuvvet uygulamış ve sandık bu kuvvetle aynı doğrultuda hareket etmiştir.")
-KH("FB.7.1.4", "Güneş'in ömrünün sonunda ne olacak?", "Güneş süpernova olarak patlayacak ve kara deliğe dönüşecek.",
-   "Güneş küçük kütleli bir yıldızdır; kırmızı dev olup beyaz cüce olarak sona erer.", "Güneş önce nötron yıldızı, sonra beyaz cüce olur.", "Güneş'in yaşamı hiç bitmez.",
+# Eksik cevap (8): Ela'nın gerçek hatası, bilgiyi biliyor ama yarım yazıyor
+KH("FB.7.2.1", "eksik", "Sandığı iterek hareket ettiren kişi iş yapmış mıdır? Açıklayınız.", "Evet.",
+   "Eksik: “çünkü” yok; kuvvet ile hareketin aynı doğrultuda olduğu yazılmalı.", "Yanlış: sandığı iten iş yapmaz.", "Tam, eksik yok.",
+   "“Açıklayınız” ne istiyor?", "Gerekçesiz cevap yazılıda tam puan almaz. (s. 61)",
+   "Evet, çünkü kuvvet ile hareket", "aynı doğrultuda", ".", ["aynı doğrultu", "aynı yön", "doğrultusunda"], ["dik", "zıt yönde"])
+KH("FB.7.1.4", "eksik", "Yıldızların yaşam süresini ne belirler? Açıklayınız.", "Kütlesi.",
+   "Eksik: nasıl belirlediği yok; kütle büyükse yaşam kısa olur.", "Yanlış: yaşam süresini renk belirler.", "Tam, eksik yok.",
+   "Kütle büyüyünce yaşam ne olur?", "Kütle ne kadar büyükse yaşam o kadar kısa olur. (s. 42)",
+   "Kütlesi. Kütle büyükse yaşam", "kısa", "olur.", ["kısa"], ["uzun", "sonsuz"])
+KH("FB.7.1.4", "eksik", "Kırmızı süperdev evresinden sonra yıldızın yaşamı nasıl sona erer?", "Patlar.",
+   "Eksik: patlamanın adı (süpernova) ve geriye ne kaldığı yazılmamış.", "Yanlış: süperdev beyaz cüce olur.", "Tam, eksik yok.",
+   "Patlamanın bir adı var.", "Süperdev süpernova ile patlar; geriye nötron yıldızı ya da kara delik kalır. (s. 42)",
+   "Süpernova ile patlar; geriye nötron yıldızı ya da", "kara delik", "kalır.", ["kara delik", "karadelik"], ["beyaz cüce", "bulutsu"])
+KH("FB.7.1.5", "eksik", "Evren, galaksi ve yıldızı büyükten küçüğe sıralayınız.", "Evren en büyüktür.",
+   "Eksik: yalnız en büyüğü yazılmış; tam sıra yazılmalı.", "Yanlış: en büyük galaksidir.", "Tam, eksik yok.",
+   "“Sıralayınız” üçünü de istiyor.", "Evren galaksileri, galaksi yıldızları içine alır. (s. 46, 48)",
+   "Evren →", "Galaksi", "→ Yıldız", ["galaksi", "gök ada", "gökada"], ["Dünya", "Güneş sistemi"])
+KH("FB.7.1.5", "eksik", "Galaksi nedir?", "Çok büyük bir yapıdır.",
+   "Eksik: neyden oluştuğu yazılmamış (yıldız, gezegen, bulutsu…).", "Yanlış: galaksi tek bir yıldızdır.", "Tam, eksik yok.",
+   "Galaksinin içinde neler var?", "Galaksi; yıldız, gezegen, bulutsu gibi gök cisimlerinden oluşur. (s. 48)",
+   "Yıldız, gezegen, bulutsu gibi", "gök cisimlerinden", "oluşan yapıdır.", ["gök cisim", "cisim"], ["sulardan", "taşlardan"])
+KH("FB.7.2.2", "eksik", "Kinetik enerji hangi iki özelliğe bağlıdır?", "Kütleye bağlıdır.",
+   "Eksik: ikinci özellik (hız) yazılmamış.", "Yanlış: kinetik enerji kütleye bağlı değildir.", "Tam, eksik yok.",
+   "Soru “iki özellik” diyor.", "Kinetik enerji kütle ve hızla doğru orantılıdır. (s. 67)",
+   "Kütleye ve", "hıza", "bağlıdır.", ["hız", "sürat"], ["yüksekliğe", "renge"])
+KH("FB.7.1.3", "eksik", "Uzay kirliliği problemini nedeni ve sonucuyla açıklayınız.", "Uzay kirliliği.",
+   "Eksik: nedeni ve sonucu yazılmamış.", "Yanlış: bu hava kirliliğidir.", "Tam, eksik yok.",
+   "Soru üç şey istiyor: problem, neden, sonuç.", "Neden: eski uydular yörüngede kalır; sonuç: araçlara çarpar. (s. 30, 32)",
+   "Uzay kirliliği. Nedeni: eski uydular yörüngede kalır. Sonucu: uzay araçlarına", "çarpar", ".", ["çarp", "zarar"], ["yağar", "ısınır"])
+KH("FB.7.1.3", "eksik", "Uzay kirliliğine bir çözüm önerisi yazınız ve nedenini açıklayınız.", "Çöpleri toplamak.",
+   "Eksik: “çünkü” ile neden işe yarayacağı yazılmamış.", "Yanlış: çöp toplamak çözüm değildir.", "Tam, eksik yok.",
+   "Öneri + çünkü.", "Çözüm önerisinde gerekçe de puan getirir. (s. 32)",
+   "Çöpleri toplamak, çünkü çarpışma riski", "azalır", ".", ["azal", "düş", "önlen"], ["artar", "değişmez"])
+# Yanılgı (4): yalnız Hatırla kartlarının "sık yapılan hatalar"ında zaten geçen klasikler
+KH("FB.7.2.1", "yanilgi", "Halteri başının üzerinde sabit tutan halterci iş yapar mı?", "Evet, çünkü çok yoruluyor.",
+   "Yanlış: halter yer değiştirmiyor; yorulmak iş demek değil.", "Yanlış: halterci hiç kuvvet uygulamıyor.", "Doğru, hata yok.",
+   "Halter hareket ediyor mu?", "Kuvvet var ama yer değiştirme yok: iş yok. (s. 62)",
+   "Hayır, iş yapmaz, çünkü halter", "hareket etmiyor", ".", ["hareket etm", "sabit", "yer değiştirm", "duruyor", "hareketsiz"], ["yukarı çıkıyor", "çok ağır"])
+KH("FB.7.2.1", "yanilgi", "Poşetleri elinde taşıyarak düz yolda yürüyen kişi poşetlere iş yapar mı?", "Evet, çünkü poşetler onunla birlikte yer değiştiriyor.",
+   "Yanlış: kuvvet yukarı, hareket yatay; doğrultular dik olduğu için iş yok.", "Yanlış: poşetler hiç yer değiştirmiyor.", "Doğru, hata yok.",
+   "Kuvvetin yönüne ve hareketin yönüne ayrı ayrı bak.", "Kuvvet ile hareket aynı doğrultuda değilse iş yok. (s. 62)",
+   "Hayır, çünkü kuvvet yukarı, hareket", "yatay", "; doğrultular dik.", ["yatay", "ileri", "düz"], ["yukarı", "aşağı"])
+KH("FB.7.1.4", "yanilgi", "Güneş'in ömrünün sonunda ne olacak?", "Süpernova olarak patlayıp kara deliğe dönüşecek.",
+   "Yanlış: Güneş küçük kütleli; beyaz cüce olacak.", "Yanlış: Güneş nötron yıldızı olacak.", "Doğru, hata yok.",
    "Güneş küçük kütleli mi, büyük kütleli mi?", "Süpernova ve kara delik büyük kütleli yıldızlara aittir. (s. 42)",
-   "Güneş küçük kütleli bir yıldızdır. Kırmızı dev, gezegenimsi bulutsu ve en sonunda beyaz cüce olur.")
-KH("FB.7.1.4", "Yıldızların yaşam süresini ne belirler?", "Kütlesi büyük olan yıldız daha uzun yaşar.",
-   "Ters söylemiş: kütle büyükse yaşam daha kısa olur.", "Yaşam süresini kütle değil, rengi belirler.", "Yaşam süresini Dünya'ya uzaklığı belirler.",
-   "Kütle büyüyünce yaşam uzar mı, kısalır mı?", "Kütle ne kadar büyükse yaşam o kadar kısa olur. (s. 42)",
-   "Yıldızın yaşamını kütlesi belirler. Kütle büyükse yaşam kısa olur.")
-KH("FB.7.1.4", "Kırmızı süperdev evresinden sonra yıldızın yaşamı nasıl sona erer?", "Kırmızı süperdev sonunda beyaz cüce olur.",
-   "Dev ile süperdevi karıştırmış: süperdev süpernova ile patlar, nötron yıldızı ya da kara delik olur.", "Kırmızı süperdev yeniden bulutsuya dönüşür.", "Kuark haklı, hata yok.",
-   "Süperdev hangi yolda: küçük mü büyük kütleli mi?", "Kırmızı dev → beyaz cüce; kırmızı süperdev → süpernova. (s. 42)",
-   "Kırmızı süperdev süpernova ile patlar; geriye nötron yıldızı ya da kara delik kalır.")
-KH("FB.7.1.5", "Evren, galaksi ve yıldızı büyükten küçüğe sıralayınız.", "Galaksi → Evren → Yıldız",
-   "Evren en büyüktür ve galaksileri içine alır: Evren → Galaksi → Yıldız.", "Yıldız en büyüktür: Yıldız → Galaksi → Evren.", "Sıralama doğru, hata yok.",
-   "Hangisi her şeyi içine alır?", "Evren tüm gök cisimlerini ve galaksileri içine alır. (s. 48)", "Evren → Galaksi → Yıldız")
-KH("FB.7.1.5", "Galaksi nedir?", "Galaksi, Güneş ve etrafındaki gezegenlerdir.",
-   "Bu Güneş sistemi; galaksi, yıldız ve gezegen gibi pek çok gök cisminden oluşan çok daha büyük bir yapıdır.", "Galaksi, tek bir büyük yıldızdır.", "Tanım doğru, hata yok.",
-   "Güneş sistemi galaksinin neresinde?", "Güneş sistemi Samanyolu galaksisinin küçük bir parçasıdır. (s. 48)",
-   "Galaksi; yıldız, gezegen, bulutsu, gök taşı gibi gök cisimlerinden oluşan yapıdır.")
-KH("FB.7.2.2", "Dalda duran elmanın enerjisi nedir?", "Elmanın kinetik enerjisi vardır, çünkü yüksekte duruyor.",
-   "Yüksekte duran cismin çekim potansiyel enerjisi vardır; kinetik enerji için hareket gerekir.", "Elmanın hiç enerjisi yoktur.", "Elmanın esneklik potansiyel enerjisi vardır.",
+   "Güneş küçük kütleli olduğu için", "beyaz cüce", "olacak.", ["beyaz cüce"], ["kara delik", "süpernova"])
+KH("FB.7.2.2", "yanilgi", "Dalda duran elmanın enerjisi nedir?", "Kinetik enerji, çünkü yüksekte duruyor.",
+   "Yanlış: yüksekte duran cismin çekim potansiyel enerjisi var; kinetik için hareket gerekir.", "Yanlış: elmanın hiç enerjisi yoktur.", "Doğru, hata yok.",
    "Elma hareket ediyor mu?", "Kinetik = hareket; çekim potansiyel = yükseklik. (s. 66, 68)",
-   "Dalda duran elmanın çekim potansiyel enerjisi vardır. Kütlesine ve yüksekliğine bağlıdır.")
-KH("FB.7.2.2", "Kinetik enerji hangi özelliklere bağlıdır?", "Kütleye ve yüksekliğe bağlıdır.",
-   "Yükseklik potansiyel enerjiyi etkiler; kinetik enerji kütleye ve hıza bağlıdır.", "Kinetik enerji kütleye bağlı değildir.", "Kuark haklı, hata yok.",
-   "Kinetik enerji hareketle ilgili; hareketi ne anlatır?", "Kinetik enerji kütle ve hızla doğru orantılıdır. (s. 67)", "Kinetik enerji kütleye ve hıza bağlıdır.")
-KH("FB.7.1.3", "Uzay kirliliği nedir?", "Fabrika dumanlarının atmosferi kirletmesidir.",
-   "Bu hava kirliliği; uzay kirliliği, Dünya'nın çevresinde dolanan işlevsiz uydu ve roket parçalarıdır.", "Uzay kirliliği, yıldız patlamalarından kalan tozlardır.", "Cevap doğru, hata yok.",
-   "Uzay kirliliği nerede oluyor ve neyden oluşuyor?", "Görevi biten uydular ve roket parçaları uzay kirliliği oluşturur. (s. 30)",
-   "Uzay kirliliği, görevini bitirmiş uyduların ve roket parçalarının Dünya'nın çevresinde kontrolsüz dolanmasıdır.")
-KH("FB.7.1.3", "Uzay kirliliğine bir çözüm önerisi yazınız.", "Uzaya daha çok uydu gönderilmeli.",
-   "Bu öneri çöpü artırır; görevi biten uyduları yörüngeden çıkarmak ya da çöpleri toplamak gerekir.", "Öneri doğru ama gerekçe yazılmamış.", "Uydular hiç kullanılmamalı, öneri tamamdır.",
-   "Daha çok uydu, daha çok ne demek?", "Çözüm: çöpleri yakalayıp Dünya'ya getirmek, kontrollü yörüngeden çıkarmak. (s. 32)",
-   "Görevi biten uydular kontrollü olarak yörüngeden çıkarılmalı ya da çöpler yakalanıp Dünya'ya getirilmelidir.")
+   "Dalda duran elmanın", "çekim potansiyel", "enerjisi vardır.", ["potansiyel"], ["kinetik", "ışık"])
 
 # =====================================================================
 # PROVA YAZILILARI (Senaryo 4: 6 soru, toplam 100; puanlar tahmini)
@@ -672,8 +679,29 @@ BASAMAK = {
     P("Kinetik için gereken:", "hareket", ["yükseklik", "renk"], k=["hareket", "hız", "sürat"]),
     P("Potansiyel için gereken:", "yükseklik", ["hız", "ses"], k=["yüksek", "konum"])),
 }
+
+# Soru kelimesi → cevap kalıbı: soru metnindeki tetikleyici ifadeler vurgulanır, altında tek satır kalıp notu (Kemal'in kararı: kalıplar ayrı sayfada değil, sorunun içinde)
+TETIK = {
+ ("m3", "a"): (["nedenlerini ve sonuçlarını"], "Problem · Neden · Sonuç: üç parça yaz."),
+ ("m3", "b"): (["Tahmininizi"], "Tahmin + gerekçe: “… bozulabilir, çünkü …”"),
+ ("m3", "c"): (["hangisi daha uygulanabilir", "neden daha iyi olduğunu"], "Seçim + çünkü: “… yöntem, çünkü …”"),
+ ("m4", "a"): (["ne ad verilir", "nasıl bir kütleye"], "İki soru var: adı yaz + kütleyi yaz."),
+ ("m4", "b"): (["beklenebilir mi", "açıklayınız"], "Evet/Hayır + çünkü."),
+ ("m5", "a"): (["bilimsel adlarını"], "Üç ad yaz: X: … Y: … Z: …"),
+ ("m5", "b"): (["neden birbirinden farklı", "hangi temel özelliğiyle"], "Özellik + iki tarafın sonu: “Y … , Z ise …”"),
+ ("m6", "a"): (["İsimlerini yazınız", "sıralayınız"], "Önce adlar, sonra sıra: A → B → C"),
+ ("m7", "a"): (["hangisi fiziksel anlamda iş yapmıştır"], "Kişiyi yaz + çünkü (kuvvetin ve hareketin yönü)."),
+ ("m7", "b"): (["nasıl bir ilişki"], "İlişkiyi yaz: “… doğrultuda olmalı”."),
+ ("m8", "a"): (["iş yapılmış mıdır", "açıklayınız"], "Evet/Hayır + çünkü."),
+ ("m8", "b"): (["iş yapılmış mıdır", "açıklayınız"], "Evet/Hayır + çünkü."),
+ ("m9", "a"): (["enerji çeşidi nedir", "hangi özelliklerine bağlıdır"], "Enerjinin adı + bağlı olduğu iki şey."),
+ ("m9", "b"): (["enerji çeşidi nedir"], "Yalnız enerjinin adı yeter."),
+ ("m9", "c"): (["karşılaştırarak"], "Karşılaştır: “Kinetik için … , potansiyel için …”"),
+}
 for q in Y.d["mebSorular"]:
     for m in q["maddeler"]:
+        t = TETIK.get((q["id"], m["harf"]))
+        if t: m["tetik"], m["kalipNot"] = t
         b = BASAMAK.get((q["id"], m["harf"]))
         if b:
             m.update(b); m.pop("iskele", None)   # basamaklı maddede ısınma yerine basamak 1–2

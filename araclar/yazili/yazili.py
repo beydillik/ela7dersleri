@@ -145,6 +145,16 @@ class Yazili:
             if len(k.get("secenekler", [])) != 3 or not 0 <= k.get("dogru", -1) < 3 or len(set(k["secenekler"])) != 3: h.append(f"kuark {i}: 3 şık")
             for f in ("soru", "kuark", "ipucu", "aciklama", "dogruCevap"):
                 if not k.get(f): h.append(f"kuark {i}: {f} yok")
+            t = k.get("tamamla")
+            if t:
+                if k.get("tur") not in ("eksik", "yanilgi"): h.append(f"kuark {i}: tur eksik|yanilgi")
+                if not parca_ok(t, t.get("ornek", "")) or len(t.get("havuz", [])) != 2 or any(parca_ok(t, x) for x in t["havuz"]): h.append(f"kuark {i}: tamamla (örnek kontrolü / 2 çeldirici)")
+        yan = sum(1 for k in d["kuarkHata"] if k.get("tur") == "yanilgi")
+        if yan > len(d["kuarkHata"]) / 2: h.append(f"kuark: yanılgı türü {yan} (eksik türünden az olmalı)")
+        for q in d["mebSorular"]:
+            for m in q["maddeler"]:
+                for x in m.get("tetik", []):
+                    if x not in m["soru"]: h.append(f"{q['id']}{m['harf']}: tetik '{x}' soru metninde yok")
         dag = {}
         for p in d["provalar"]:
             if p["id"] in ids: h.append("id tekrar " + p["id"])
