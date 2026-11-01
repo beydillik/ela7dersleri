@@ -1551,3 +1551,7 @@ mark.yz-tetik { background: color-mix(in srgb, #ffe45c 70%, transparent); color:
 .yz-kart-arka { background: var(--ok-soft); border: 2px solid var(--ok); border-radius: 14px; padding: 14px 16px; }
 .yz-kart-arka span { font-size: 13px; font-weight: 800; color: var(--ok); text-transform: uppercase; letter-spacing: .06em; }
 .yz-kart-arka p { margin: 4px 0 0; font-size: 21px; font-weight: 800; line-height: 1.4; }
+
+.yz-ipucu-kutu { display: flex; gap: 10px; align-items: flex-start; background: var(--gold-soft); border: 1.5px dashed #e9b800; border-radius: 12px; padding: 8px 12px; }
+.yz-ipucu-kutu > svg { width: 22px; height: 22px; flex: none; margin-top: 2px; color: #a07c00; }
+.yz-ipucu-kutu p { margin: 2px 0; } .yz-ipucu-hv .chip { padding: 2px 10px; margin: 2px 2px 0 0; }
