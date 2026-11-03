@@ -2528,7 +2528,8 @@
   const yzDefterLink = z => (z.konular || []).length ? `<p class="yz-defter">Kartta yoksa konuyu ders defterinde aç (yeni sekmede): ${z.konular.map(c => `<a href="${esc(location.pathname)}#${esc(c)}" target="_blank" rel="noopener">${esc(yzKonuAd(c))}</a>`).join(", ")}</p>` : "";
   // Dersin robotu (Fen: Kuark, Teknoloji ve Tasarım: Fikri…) ve soru bölümünün adı veriden: soruBaslik / soruEtiket / soruGiris
   const yzBot = () => (S.ders.bot && S.ders.bot.ad) || "Kuark";
-  const yzEk = (ad, tur) => { const t = ad.toLocaleLowerCase("tr"), sesli = t.match(/[aeıioöuü]/g) || ["a"], son = sesli[sesli.length - 1], unluBit = /[aeıioöuü]$/.test(t);
+  // İngilizce adın sonundaki y (Polly) "i" okunur: Polly'nin, Polly'ye
+  const yzEk = (ad, tur) => { const t = ad.toLocaleLowerCase("tr").replace(/([^aeıioöuü])y$/, "$1i"), sesli = t.match(/[aeıioöuü]/g) || ["a"], son = sesli[sesli.length - 1], unluBit = /[aeıioöuü]$/.test(t);
     const h = { a: "ı", ı: "ı", e: "i", i: "i", o: "u", u: "u", ö: "ü", ü: "ü" }[son]; return ad + "'" + (tur === "in" ? (unluBit ? "n" : "") + h + "n" : (unluBit ? "y" : "") + h); };
   const yzBotHata = () => yzEk(yzBot(), "in") + " Hatası";
   // Yeni biçim (madde "tamamla" alanı): "Kuark'ın Cevabını Düzelt"; eski biçim (bil1): "Fikri'nin Hatası"
