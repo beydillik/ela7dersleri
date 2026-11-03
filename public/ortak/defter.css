@@ -1607,3 +1607,15 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .yz-onc-no { font: inherit; font-size: 14px; border: 1px solid var(--line, #ccd); background: transparent; color: inherit; border-radius: 8px; padding: 2px 8px; margin: 2px 4px 2px 0; cursor: pointer; }
 .yz-onc-baslik { margin: 14px 0 2px; font-weight: 700; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .yz-onc-baslik span:not(.yz-onc) { color: var(--muted); font-weight: 400; font-size: 14px; }
+
+/* Yazılıya Hazırlık · çalışma kâğıdı düğmesi ve seçim kutusu — Kemal, 3 Kasım 2026 */
+.yz-h1-sat { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.yz-ck-b { display: inline-flex; align-items: center; gap: 6px; font-size: 15px; }
+.yz-ck-b svg, .yz-ck-kutu h2 svg { width: 20px; height: 20px; flex: none; }
+.yz-ck-zemin { position: fixed; inset: 0; background: rgba(15, 20, 35, .55); display: grid; place-items: center; z-index: 1000; padding: 12px; }
+.yz-ck-kutu { background: var(--surface, #fff); color: var(--ink, #222); border-radius: 16px; padding: 18px 20px; width: min(460px, 100%); max-height: 92vh; overflow: auto; display: grid; gap: 12px; box-shadow: 0 12px 40px rgba(0,0,0,.3); }
+.yz-ck-kutu h2 { margin: 0; font-size: 20px; display: flex; align-items: center; gap: 8px; }
+.yz-ck-s { display: grid; gap: 6px; border: 0; padding: 0; margin: 0; } .yz-ck-s > span, .yz-ck-s legend { font-weight: 700; padding: 0; }
+.yz-ck-s select { font: inherit; padding: 8px; border-radius: 10px; border: 1px solid var(--line, #ccd); background: var(--surface-2, #fff); color: inherit; }
+.yz-ck-s label, .yz-ck-c { display: flex; gap: 8px; align-items: baseline; font-size: 15px; }
+.yz-ck-kutu .row { display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
