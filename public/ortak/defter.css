@@ -1563,6 +1563,7 @@ mark.yz-tetik { background: color-mix(in srgb, #ffe45c 70%, transparent); color:
 /* Konu Tekrarı / prova köprüsü */
 .yz-benzer { margin: 6px 0 10px; padding: 6px 12px; border: 1px dashed #c9a400; border-radius: 10px; background: var(--gold-soft); font-size: 16px; }
 .yz-benzer summary { cursor: pointer; font-weight: 700; display: flex; gap: 6px; align-items: center; }
+.yz-benzer summary svg { width: 20px; height: 20px; flex: none; }
 .yz-benzer ul { margin: 4px 0 2px; padding-left: 20px; }
 .yz-kopru { margin: 12px 0; padding: 10px 12px; border-left: 4px solid var(--accent); background: var(--surface-2, rgba(0,0,0,.03)); border-radius: 0 10px 10px 0; }
 .yz-kopru .row { margin-top: 8px; flex-wrap: wrap; }
@@ -1594,3 +1595,15 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .yz-ht-gec { color: #2b6cb0; background: #e3eefb; padding: 0 6px; border-radius: 6px; }
 .yz-ht-goster { color: #b5532a; background: #ffe6d5; padding: 0 6px; border-radius: 6px; }
 .yz-ht-s { color: #6b6b6b; font-size: 13px; }
+
+/* Yazılıya Hazırlık · öncelik (banko) rozetleri — Kemal, 3 Kasım 2026 */
+.yz-onc { display: inline-block; font-size: 13px; font-weight: 700; padding: 1px 8px; border-radius: 999px; vertical-align: middle; white-space: nowrap; }
+.yz-onc3 { background: #2f9e44; color: #fff; } .yz-onc2 { background: #f2c14e; color: #3b2a00; } .yz-onc1 { background: #dee2e6; color: #343a40; }
+.yz-onc-not { color: var(--muted); font-size: 14px; }
+.yz-onc-sat { margin: 4px 0 8px; }
+.yz-onc-kart { border: 2px solid #2f9e44; border-radius: 14px; padding: 10px 14px; margin: 12px 0; display: grid; gap: 8px; }
+.yz-onc-satir { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; align-items: center; }
+.yz-onc-satir small { grid-column: 2; color: var(--muted); font-size: 13px; }
+.yz-onc-no { font: inherit; font-size: 14px; border: 1px solid var(--line, #ccd); background: transparent; color: inherit; border-radius: 8px; padding: 2px 8px; margin: 2px 4px 2px 0; cursor: pointer; }
+.yz-onc-baslik { margin: 14px 0 2px; font-weight: 700; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.yz-onc-baslik span:not(.yz-onc) { color: var(--muted); font-weight: 400; font-size: 14px; }

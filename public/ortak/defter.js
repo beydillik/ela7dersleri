@@ -2486,7 +2486,7 @@
   const yzHtml = s => esc(s).replace(/&lt;(\/?)b&gt;/g, "<$1b>");          // veri metninde yalnız <b> izinli
   const yzDuz = s => String(s ?? "").replace(/<[^>]+>/g, "");
   const YZ_HARF = { ı: "i", ç: "c", ğ: "g", ö: "o", ş: "s", ü: "u", â: "a", î: "i", û: "u" };
-  const yzSade = s => String(s ?? "").replace(/I/g, "ı").replace(/İ/g, "i").toLocaleLowerCase("tr").replace(/[ıçğöşüâîû]/g, c => YZ_HARF[c]).normalize("NFD").replace(/[̀-ͯ]/g, "");
+  const yzSade = s => String(s ?? "").replace(/[−–]/g, "-").replace(/-\s+(?=\d)/g, "-").replace(/\s*\/\s*/g, "/").replace(/I/g, "ı").replace(/İ/g, "i").toLocaleLowerCase("tr").replace(/[ıçğöşüâîû]/g, c => YZ_HARF[c]).normalize("NFD").replace(/[̀-ͯ]/g, "");
   // Sıra anahtarı: her öğe (alternatif kökler) bir öncekinden sonra geçmeli (araclar/yazili/yazili.py sira_tamam ile aynı)
   const yzSira = (t, sira) => { let i = 0; for (const alt of sira) { const y = alt.map(x => t.indexOf(yzSade(x), i)).filter(v => v >= 0); if (!y.length) return false; i = Math.min(...y) + 1; } return true; };
   // Basamak 2 parça kontrolü (araclar/yazili/yazili.py parca_ok ile aynı): k kökü / hepsi (bütün gruplar) / sira / serbest (boş olmasın)
@@ -2497,6 +2497,10 @@
     get() { const v = store.get(key("yazili:" + YZ.id), null) || {}; return { kaz: {}, meb: {}, ikizGor: {}, prova: {}, hatirla: {}, ...v }; },
     set(v) { store.set(key("yazili:" + YZ.id), v); }
   };
+  // Öncelik (Kemal, 3 Kasım 2026; her derste kullanılabilir): MEB sorusunda "oncelik": 3 banko (kaçırma), 2 puan topla, 1 bir adımını yaz.
+  const YZ_ONC = { 3: ["★★★", "Banko", "Kaçırma: tam puan hedefi"], 2: ["★★", "Puan topla", "Çoğunu al"], 1: ["★", "Bir adım yaz", "İlk adımı yazmak bile puan getirir"] };
+  const yzOncVar = () => YZ.d.mebSorular.some(q => q.oncelik);
+  const yzOncRozet = (q, uzun) => { const o = q && YZ_ONC[q.oncelik]; return o ? `<span class="yz-onc yz-onc${q.oncelik}" title="${o[2]}">${o[0]} ${o[1]}</span>${uzun ? ` <small class="yz-onc-not">${o[2]}</small>` : ""}` : ""; };
   const yzKaz = kod => YZ.d.kazanimlar.find(k => k.kod === kod) || { kisa: kod, kod, maddeler: [], renk: "#5a6280" };
   const yzKazEkle = (k, kod, r, kaynak) => { (k.kaz[kod] = k.kaz[kod] || []).push({ t: Date.now(), r: +r.toFixed(2), kaynak }); k.kaz[kod] = k.kaz[kod].slice(-12); };
   // Yanlış defteri: tam puan almayan maddeler. Anahtar "meb|m3|a", "ikiz|m3i1|b", "prova|p1|2|a"; tam yapılınca silinir.
@@ -2567,6 +2571,7 @@
       k.innerHTML = `<div class="yz-ust-bar"><button class="yz-menu-ac" aria-expanded="false" aria-controls="yzMenu">☰</button><span class="yz-el">Yazılıya Hazırlık</span></div>
         <aside class="yz-menu" id="yzMenu"></aside><main class="yz-ana"><div class="yz-defter" id="yzSayfa"></div></main>`;
       document.body.appendChild(k);
+      yzFxIzle(k);
       const ac = $(".yz-menu-ac", k);
       ac.onclick = () => { const a = !k.classList.contains("menu-acik"); k.classList.toggle("menu-acik", a); ac.setAttribute("aria-expanded", a); };
       $("#yzMenu", k).onclick = e => {
@@ -2574,6 +2579,20 @@
         if (e.target.closest("[data-defter]")) yzDefteraDon();
       };
     }
+  }
+  // Veri metinleri esc() ile yazıldığı için matematik yazımı ([[3/4]], [[u:2]], [[d:6]]) burada, metin düğümünde çevrilir; açılır liste ve yazı kutusunda düz yazım (plain).
+  function yzFxUygula(el) {
+    const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), l = [];
+    while (w.nextNode()) if (w.currentNode.nodeValue.includes("[[")) l.push(w.currentNode);
+    for (const n of l) {
+      const p = n.parentNode; if (!p) continue;
+      if (p.closest("option, textarea, script, style, title")) { n.nodeValue = plain(n.nodeValue); continue; }
+      const t = document.createElement("template"); t.innerHTML = fx(esc(n.nodeValue)); p.replaceChild(t.content, n);
+    }
+  }
+  function yzFxIzle(k) {
+    yzFxUygula(k);
+    new MutationObserver(ms => { for (const m of ms) m.addedNodes.forEach(n => { if (n.nodeType === 1) yzFxUygula(n); else if (n.nodeType === 3 && n.nodeValue.includes("[[") && n.parentNode) yzFxUygula(n.parentNode); }); }).observe(k, { childList: true, subtree: true });
   }
   function yzMenuGit(g) {
     const [ne, a] = g.split(":"), root = $("#yzSayfa"), D = YZ.d;
@@ -2596,7 +2615,7 @@
       <nav aria-label="Yazılıya Hazırlık"><ol>
         ${mi("ana", "⌂", "Başlangıç", false)}
         ${mi("hatirla", "1", yzHTVar() ? "Hatırla ve Tekrarla" : "Hatırla", D.kazanimlar.every(z => k.hatirla[z.kod] && (!(z.tekrar || []).length || (k.htekrar || {})[z.kod])), D.kazanimlar.map((z, i) => al(`hatirla:${i}`, z.kisa, mini((z.tekrar || []).length ? ((k.htekrar || {})[z.kod] || {}).r ?? null : yzHazir(z.kod)), alt === i)).join(""))}
-        ${mi("meb", String(++no), yzSoruB(), D.mebSorular.every(q => k.meb[q.id]), D.mebSorular.map(q => al(`meb:${q.id}`, `Soru ${q.no} · ${yzKaz(q.kazanim).kisa}`, mini(k.meb[q.id] ? k.meb[q.id].r : null), alt === q.id)).join(""))}
+        ${mi("meb", String(++no), yzSoruB(), D.mebSorular.every(q => k.meb[q.id]), D.mebSorular.map(q => al(`meb:${q.id}`, `${q.oncelik ? YZ_ONC[q.oncelik][0] + " " : ""}Soru ${q.no} · ${yzKaz(q.kazanim).kisa}`, mini(k.meb[q.id] ? k.meb[q.id].r : null), alt === q.id)).join(""))}
         ${yzTekrarVar() ? mi("tekrar", String(++no), "Konu Tekrarı", D.kazanimlar.every(z => (k.tekrar || {})[z.kod] || !yzTekrarSira(z.kod).length), D.kazanimlar.filter(z => yzTekrarSira(z.kod).length).map(z => al(`tekrar:${z.kod}`, z.kisa, mini(((k.tekrar || {})[z.kod] || {}).r ?? null), alt === z.kod)).join("")) : ""}
         ${mi("kuark", String(++no), yzKuarkAd(), !!k.kuark)}
       </ol>
@@ -2637,10 +2656,12 @@
       ${gun !== null && gun >= 0 ? `<div class="yz-sayac"><b>${gun === 0 ? "Yazılı bugün!" : gun === 1 ? "Yazılı yarın!" : gun + " gün kaldı"}</b><span>Her gün 1–2 adım yeter.</span></div>` : ""}
       <section class="yz-yol">${adim.map(([id, ad, alt, ok], i) => { const sira = i === sirada;
         return `<button class="yz-adim${ok ? " bitti" : ""}${sira ? " sirada" : ""}" data-yz="${id}"><span class="yz-no">${ok ? "✓" : i + 1}</span><span class="yz-adim-m"><b>${esc(ad)}${sira ? ` <span class="yz-sirada">Sıradaki</span>` : ""}</b><small>${esc(alt)}</small></span><span class="yz-ok" aria-hidden="true">→</span></button>`; }).join("")}</section>
+      ${yzOncVar() ? `<section class="yz-onc-kart"><b>Önce hangi sorular?</b>${[3, 2, 1].map(o => { const l = D.mebSorular.filter(q => q.oncelik === o); return l.length ? `<div class="yz-onc-satir">${yzOncRozet({ oncelik: o })}<span>${l.map(q => `<button class="yz-onc-no" data-onc-meb="${esc(q.id)}">${esc(yzSoruE())} ${q.no}${k.meb[q.id] ? ` ${k.meb[q.id].r >= .8 ? "✓" : "~"}` : ""}</button>`).join("")}</span><small>${YZ_ONC[o][2]}</small></div>` : ""; }).join("")}</section>` : ""}
       ${yzTekrarVar() ? `<div class="yz-araclar"><button class="btn ghost" data-yz="kart">Sınav Sabahı Kartları</button><button class="btn ghost" data-yz="prova">Prova Yazılıları (isteğe bağlı)</button><button class="btn ghost" data-yz="ozet">Sınav Öncesi Özet</button></div>` : ""}
       ${yzEksikSay() ? `<button class="yz-adim yz-eksik-k" data-yz="eksik"><span class="yz-no">✎</span><span class="yz-adim-m"><b>Yanlış Defterim</b><small>${yzEksikSay()} madde tam puan bekliyor · yeniden yaz</small></span><span class="yz-ok" aria-hidden="true">→</span></button>` : ""}
       <details class="yz-disi"><summary>Bu yazılıda olmayanlar: bunlara çalışma</summary><ul>${(D.kapsamDisi || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>`;
     $$("[data-yz]", root).forEach(b => b.onclick = () => yzGit(root, b.dataset.yz));
+    $$("[data-onc-meb]", root).forEach(b => b.onclick = () => { const q = D.mebSorular.find(x => x.id === b.dataset.oncMeb); yzSoruCoz(root, q, { tur: "meb", ana: q }); scrollTo(0, 0); });
     yzAnaBagla(root);
   }
 
@@ -2726,8 +2747,8 @@
     const D = YZ.d, k = yzKayit.get();
     root.innerHTML = `${yzUst(yzSoruB())}<div class="stage">
       ${robotDer(yzHtml(D.soruGiris || "Bunlar MEB'in yayımladığı örnek sorular. Yazılıda <b>benzerleri</b> çıkacak. Önce ısınma sorusunu çöz, sonra cevabı <b>yazarak</b> ver. Eksik kalırsa “Benzerini çöz” ile aynı kalıpta yeni bir soru gelir."), "kucuk")}
-      <div class="yz-liste">${D.mebSorular.map(q => { const s = k.meb[q.id], z = yzKaz(q.kazanim), kalan = (q.ikizler || []).filter(x => !k.ikizGor[x.id]).length;
-        return `<div class="yz-li" style="--kr:${esc(z.renk || "#5a6280")}">${yzHalka(s ? s.r : null)}<div class="yz-li-m"><b>${esc(yzSoruE())} ${q.no}</b><small>${esc(z.kisa)} · ${q.maddeler.length} madde</small></div>
+      <div class="yz-liste">${(yzOncVar() ? [3, 2, 1, 0].flatMap(o => D.mebSorular.filter(q => (q.oncelik || 0) === o)) : D.mebSorular).map((q, j, l) => { const s = k.meb[q.id], z = yzKaz(q.kazanim), kalan = (q.ikizler || []).filter(x => !k.ikizGor[x.id]).length;
+        return `${yzOncVar() && (q.oncelik || 0) !== ((l[j - 1] || {}).oncelik || 0) ? `<div class="yz-onc-baslik">${q.oncelik ? `${yzOncRozet(q)} <span>${YZ_ONC[q.oncelik][2]}</span>` : "Diğer sorular"}</div>` : ""}<div class="yz-li" style="--kr:${esc(z.renk || "#5a6280")}">${yzHalka(s ? s.r : null)}<div class="yz-li-m"><b>${esc(yzSoruE())} ${q.no} ${yzOncRozet(q)}</b><small>${esc(z.kisa)} · ${q.maddeler.length} madde</small></div>
           <div class="yz-li-b"><button class="btn${s ? " ghost" : " primary"}" data-coz="${esc(q.id)}">${s ? "Tekrar çöz" : "Çöz"}</button>${s && (q.ikizler || []).length ? `<button class="btn" data-ikiz="${esc(q.id)}">Benzerini çöz${kalan ? ` (${kalan} yeni)` : ""}</button>` : ""}</div></div>`; }).join("")}</div>
       <div class="stage-nav"><button class="btn ghost" data-yz-ana>← Harita</button><button class="btn primary" data-kuark>${esc(yzTekrarVar() ? "Konu Tekrarı" : yzKartVar() ? "Kısa Cevap Kartları" : yzKuarkAd())} →</button></div></div>`;
     yzAnaBagla(root);
@@ -2885,7 +2906,7 @@
       const m = q.maddeler[st.i]; st.faz = st.faz || fazIlk(m); const ok = !okuGerek(m);
       root.innerHTML = `${yzUst(baslik)}<div class="stage yz-soru" style="--kr:${esc(z.renk || "#5a6280")}">
         <div class="progress"><span>Madde ${st.i + 1} / ${q.maddeler.length}</span><div class="bar"><i style="width:${(st.i + 1) / q.maddeler.length * 100}%"></i></div></div>
-        ${yzMetin(q)}${yzGorsel(q)}
+        ${(ctx.ana || q).oncelik && ctx.tur !== "prova" ? `<p class="yz-onc-sat">${yzOncRozet(ctx.ana || q, true)}</p>` : ""}${yzMetin(q)}${yzGorsel(q)}
         <p class="q-text yz-madde-soru"><span class="qn">${m.harf})</span><span class="yz-ms">${ok ? yzTetikli(m) : esc(m.soru)}</span></p>${ok ? yzKalipNot(m) + merdiven(m) : ""}</div><div id="yzM"></div>`;
       yzAnaBagla(root);
       const kutu = $("#yzM", root);
@@ -2956,13 +2977,13 @@
         return `<div class="yz-parca${d.ok ? " ok" : d.goster ? " goster" : d.hata ? " hata" : ""}"><label><span class="yz-parca-bas">${esc(p.bas)}</span>
           <input class="yz-parca-in" data-pi="${j}" value="${esc(d.ok ? d.v : d.goster ? p.ornek : d.v)}" ${kapali ? "disabled" : ""} autocomplete="off" placeholder="…">${d.ok ? `<b class="ok-i" aria-label="doğru">✓</b>` : ""}</label>
           ${d.goster ? `<small class="yz-parca-not">Bunu birlikte öğrendik; bir dahaki sefere sen yazacaksın.</small>` : ""}
-          ${!kapali && d.havuz ? `<div class="chips yz-havuz">${st.hv[j].map(w => `<button class="chip pick" data-hv="${j}">${esc(w)}</button>`).join("")}</div>` : ""}</div>`; };
+          ${!kapali && d.havuz ? `<div class="chips yz-havuz">${st.hv[j].map(w => `<button class="chip pick" data-hv="${j}" data-hw="${esc(plain(w))}">${esc(w)}</button>`).join("")}</div>` : ""}</div>`; };
       kutu.innerHTML = `<div class="stage yz-b2">
         ${ps.map(satir).join("")}
         ${bitti ? robotDer(`<b>İşte cevabını kendin kurdun:</b> ${ps.map((p, j) => `${esc(p.bas)} ${esc(st.p[j].ok ? st.p[j].v : p.ornek)}`).join(" ")}`, "kucuk") : ""}
         <div class="stage-nav">${bitti ? `<span></span><button class="btn primary" data-ileri>Kalıpla yazalım →</button>` : `<button class="btn ghost" data-havuz>Kelime havuzu</button><button class="btn primary" data-kontrol>Kontrol et</button>`}</div></div>`;
       $$("[data-pi]", kutu).forEach(i => i.oninput = () => { st.p[+i.dataset.pi].v = i.value; });
-      $$("[data-hv]", kutu).forEach(b => b.onclick = () => { const j = +b.dataset.hv; st.p[j].v = b.textContent; $(`[data-pi="${j}"]`, kutu).value = b.textContent; });
+      $$("[data-hv]", kutu).forEach(b => b.onclick = () => { const j = +b.dataset.hv; st.p[j].v = b.dataset.hw; $(`[data-pi="${j}"]`, kutu).value = b.dataset.hw; });   // kesirli şıkta textContent "−74" olurdu
       const hb = $("[data-havuz]", kutu); if (hb) hb.onclick = () => { st.p.forEach(d => { if (!d.ok && !d.goster) d.havuz = true; }); b2(kutu, m); };
       const kb = $("[data-kontrol]", kutu);
       if (kb) kb.onclick = () => { st.p.forEach((d, j) => { if (d.ok || d.goster || !d.v.trim()) return; if (yzParcaOk(ps[j], d.v)) d.ok = true; else { d.hata++; d.havuz = true; if (d.hata >= 2) d.goster = true; } }); b2(kutu, m); };
@@ -3058,7 +3079,7 @@
       const kuarkCevap = `<b>Benim cevabım:</b> <span class="yz-kuark-c${secti && h.tamamla ? (h.tur === "yanilgi" ? " cizik" : " yarim") : ""}">“${esc(h.kuark)}”</span>${secti && h.tamamla ? (h.tur === "yanilgi" ? ` <span class="yz-etiket no">yanlış</span>` : ` <span class="yz-etiket orta">yarım</span>`) : ""}`;
       const tamamlaHTML = !h.tamamla || !secti ? "" : `<div class="yz-tamamla${tm.ok ? " ok" : tm.goster ? " goster" : tm.hata ? " hata" : ""}"><div class="kicker">Şimdi tam cevabı sen tamamla</div>
           <p class="yz-tamamla-c">${esc(h.tamamla.once)} <input class="yz-parca-in" data-ti value="${esc(tm.ok ? tm.v : tm.goster ? h.tamamla.ornek : tm.v)}" ${tm.ok || tm.goster ? "disabled" : ""} autocomplete="off" placeholder="…"> ${esc(h.tamamla.sonra)}${tm.ok ? ` <b class="ok-i">✓</b>` : ""}</p>
-          ${!bitti && tm.havuz ? `<div class="chips yz-havuz">${tm.hv.map(w => `<button class="chip pick" data-thv>${esc(w)}</button>`).join("")}</div>` : ""}
+          ${!bitti && tm.havuz ? `<div class="chips yz-havuz">${tm.hv.map(w => `<button class="chip pick" data-thv="${esc(plain(w))}">${esc(w)}</button>`).join("")}</div>` : ""}
           ${!bitti ? `<div class="row"><button class="btn ghost" data-thavuz>Kelime havuzu</button><button class="btn primary" data-tkontrol>Kontrol et</button></div>` : ""}</div>`;
       root.innerHTML = `${yzUst(ad)}<div class="stage yz-kuark"><div class="progress"><span>${st.i + 1} / ${liste.length}</span><div class="bar"><i style="width:${(st.i + 1) / liste.length * 100}%"></i></div></div>
         <div class="kicker">${esc(z.kisa)} · Öğretmen gibi oku</div>
@@ -3071,7 +3092,7 @@
       wireQuestion($("#yzQ .q", root), o, { state: s, kavram: { ad: z.kisa, aciklama: yzDuz(z.maddeler[0] || ""), akilda: (z.kelimeler || []).slice(0, 2).join(", ") },
         onDone: r => { st.r[st.i] = r; ciz(); const t = $(".yz-tamamla [data-ti]", root); if (t) { t.focus(); t.scrollIntoView({ block: "center", behavior: "smooth" }); } } });
       const ti = $("[data-ti]", root); if (ti) ti.oninput = () => tm.v = ti.value;
-      $$("[data-thv]", root).forEach(b => b.onclick = () => { tm.v = b.textContent; ti.value = b.textContent; });
+      $$("[data-thv]", root).forEach(b => b.onclick = () => { tm.v = b.dataset.thv; ti.value = b.dataset.thv; });
       const hb = $("[data-thavuz]", root); if (hb) hb.onclick = () => { tm.havuz = true; ciz(); };
       const kb = $("[data-tkontrol]", root);
       if (kb) kb.onclick = () => { if (!tm.v.trim()) return; if (yzParcaOk(h.tamamla, tm.v)) tm.ok = true; else { tm.hata++; tm.havuz = true; if (tm.hata >= 2) tm.goster = true; } ciz(); };

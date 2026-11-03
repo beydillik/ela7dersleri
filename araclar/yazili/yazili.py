@@ -17,7 +17,9 @@ ISKELE_TUR = {"secim", "dy", "dytablo", "bosluk", "eslestir", "kisa"}
 
 
 def sade(s):
-    s = str(s).replace("I", "ı").replace("İ", "i").lower()
+    # sayı yazımı (Matematik): gerçek eksi/tire → "-", eksiden sonraki ve bölü çevresindeki boşluk atılır (motordaki yzSade ile aynı)
+    s = re.sub(r"\s*/\s*", "/", re.sub(r"-\s+(?=\d)", "-", str(s).replace("−", "-").replace("–", "-")))
+    s = s.replace("I", "ı").replace("İ", "i").lower()
     s = s.translate(str.maketrans("ıçğöşüâîû", "icgosuaiu"))
     return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
 
@@ -165,12 +167,13 @@ class Yazili:
                 for x in m.get("tetik", []):
                     if x not in m["soru"]: h.append(f"{q['id']}{m['harf']}: tetik '{x}' soru metninde yok")
         dag = {}
+        ust = {k["kod"]: k["ust"] for k in d["kazanimlar"] if k.get("ust")}
         for p in d["provalar"]:
             if p["id"] in ids: h.append("id tekrar " + p["id"])
             ids.add(p["id"]); top = 0; say = {}
             for n, q in enumerate(p["sorular"]):
                 self._soru(q, f"{p['id']}-{n + 1}", h, prova=True); top += q.get("puan", 0)
-                say[q["kazanim"]] = say.get(q["kazanim"], 0) + 1
+                u = ust.get(q["kazanim"], q["kazanim"]); say[u] = say.get(u, 0) + 1   # alt konu → senaryodaki kazanım (kazanım "ust" alanı)
             if top != 100: h.append(f"{p['id']}: toplam puan {top}")
             for q in p["sorular"]:
                 if q.get("benzer") and q["benzer"] not in {x["id"] for x in d["mebSorular"]}: h.append(f"{p['id']}: benzer '{q['benzer']}' yok")
