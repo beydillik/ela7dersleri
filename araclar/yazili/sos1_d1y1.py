@@ -34,6 +34,7 @@ K1, K2, K3, K4 = "SB.7.1.1", "SB.7.1.2", "SB.7.1.3", "SB.7.2.1"
 Y = Yazili("sos1", "d1y1",
     baslik="1. Dönem 1. Yazılı", ders="Sosyal Bilgiler", senaryo="Senaryo 5", sure=40, tarih="2026-11-06",
     dagilim={K1: 1, K2: 2, K3: 2, K4: 1},
+    mebToplam=5, mebHaric=[],   # MEB "öğrenme çıktısı – soru no": 7.1.1 → 1, 2 · 7.1.2 → 3 · 7.1.3 → 4 · 7.2.1 → 5; hepsi Senaryo 5'te
     giris="Okulun seçtiği senaryoda <b>6 soru</b> var: İletişimden 1, Özel gereksinimli bireylerden 2, Millî meselelerden 2, Küreselleşmeden 1. "
           "Önce <b>★★★ Banko</b> soruları sağlamla: kalıbını bilirsen puan kesin. Millî Mücadele sorusu için üç kelime yeter: <b>yenilgi – Mondros – işgal</b>.",
     kapsamDisi=["Komşularımız ve Türk dünyası, barış ve ara buluculuk, göç, iklim krizi ve insani yardım (2. öğrenme alanının küreselleşme dışındaki konuları)",

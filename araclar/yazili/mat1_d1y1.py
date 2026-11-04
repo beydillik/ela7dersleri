@@ -43,6 +43,9 @@ AD13 = "Rasyonel sayıların karşılaştırma ve sıralama ilişkilerini yoruml
 Y = Yazili("mat1", "d1y1",
     baslik="1. Dönem 1. Yazılı", ders="Matematik", senaryo="Senaryo 4", sure=40, tarih="2026-11-05",
     dagilim={K11: 2, K12: 2, K13: 2},
+    # MEB "öğrenme çıktısı – soru no" (PDF s. 16): 7.1.1 → 1, 2, 4, 6, 8, 9 · 7.1.2 → 3, 5, 7 · 7.1.3 → 10, 11 · 7.1.4 → 12–22 (Senaryo 4'te yok).
+    # 12–15 sınırda: bağlam 7.1.1 gibi (deniz seviyesi, sıcaklık, borç, puan) ama çözüm tam sayılarla işlem (Kemal, 5 Kasım 2026).
+    mebToplam=22, mebHaric=[{"no": n, "kazanim": "MAT.7.1.4", "ad": "Rasyonel sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme", **({"sinir": True} if n <= 15 else {})} for n in range(12, 23)],
     giris="Okulun seçtiği senaryoda <b>6 soru</b> var: üç kazanımın her birinden 2 soru. Önce <b>★★★ Banko</b> soruları sağlamla, bunlar kesin puan. <b>★</b> sorularda ilk adımı yazmak bile puan getirir. İşlem problemleri (toplama, çarpma, üslü ifadeler) bu yazılıda yok.",
     kapsamDisi=["Tam sayılarla ve rasyonel sayılarla dört işlem problemleri (MAT.7.1.4)", "Üslü ifadeler", "İşlem önceliği ve çok adımlı işlemler", "Toplama ve çarpma işleminin özellikleri"],
     puanNotu="Puanlar tahminidir: okul soruların puanını farklı dağıtabilir. Toplam 100. Provalarda her kazanımdan 2 soru var; hangi alt konudan geleceği tahmindir.",

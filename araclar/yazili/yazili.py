@@ -46,7 +46,7 @@ def parca_ok(p, metin):
 
 class Yazili:
     def __init__(self, kod, id, **ust):
-        """ust: baslik, ders, senaryo, sure, tarih, dagilim, giris, kapsamDisi, puanNotu, kaynakNotu; isteğe bağlı
+        """ust: baslik, ders, senaryo, sure, tarih, dagilim, giris, kapsamDisi, puanNotu, kaynakNotu, mebToplam, mebHaric; isteğe bağlı
         soruBaslik/soruEtiket/soruGiris (MEB dışı soru seti, ör. öğretmenin çalışma kâğıdı), kazanimAd ("konu"),
         ikizsiz=True (yalnız verilen sorular: "Benzerini çöz" yok)."""
         self.kod, self.id = kod, id
@@ -166,6 +166,17 @@ class Yazili:
             for m in q["maddeler"]:
                 for x in m.get("tetik", []):
                     if x not in m["soru"]: h.append(f"{q['id']}{m['harf']}: tetik '{x}' soru metninde yok")
+        # MEB kapsamı (Kemal, 5 Kasım 2026): MEB dokümanındaki her soru ya sitede ya da gerekçeli olarak hariç.
+        # mebToplam = dokümandaki soru sayısı; mebHaric = [{no, kazanim, ad, sinir?}] (kazanım MEB'in "öğrenme çıktısı – soru no" tablosundan).
+        if d.get("dagilim") and not d.get("soruBaslik"):
+            if not isinstance(d.get("mebToplam"), int): h.append("mebToplam yok (MEB dokümanındaki soru sayısı) ve mebHaric listesi")
+            else:
+                dahil = [q.get("no") for q in d["mebSorular"]]; haric = [x.get("no") for x in d.get("mebHaric", [])]
+                if sorted(dahil + haric) != list(range(1, d["mebToplam"] + 1)): h.append(f"MEB kapsamı: dahil {sorted(dahil)} + hariç {sorted(haric)} ≠ 1–{d['mebToplam']} (eksik ya da çift soru)")
+                senaryo = set(d["dagilim"])
+                for x in d.get("mebHaric", []):
+                    if not x.get("kazanim") or not x.get("ad"): h.append(f"MEB hariç {x.get('no')}: kazanim ve ad gerekli")
+                    if x.get("kazanim") in senaryo: h.append(f"MEB hariç {x.get('no')}: {x['kazanim']} senaryoda var ({d['dagilim'][x['kazanim']]} soru) → bu soru dahil edilmeli")
         dag = {}
         ust = {k["kod"]: k["ust"] for k in d["kazanimlar"] if k.get("ust")}
         for p in d["provalar"]:
@@ -192,6 +203,9 @@ class Yazili:
         bm = [m for q in d["mebSorular"] for m in q["maddeler"] if m.get("basamak")]
         print(f"basamaklı madde {len(bm)} | parça {sum(len(m['basamak']['parcalar']) for m in bm)} | kısa cevap ort. {round(sum(len(m['kisaCevap']) for m in bm) / max(1, len(bm)))} harf (örnek cevap ort. {round(sum(len(m['cevap']) for m in bm) / max(1, len(bm)))})")
         print("Kuark doğru şık dağılımı (motor karıştırır):", [dag.count(i) for i in range(3)])
+        if d.get("mebToplam"):
+            print(f"MEB kapsamı: {d['mebToplam']} soru → sitede {len(d['mebSorular'])}, hariç {len(d.get('mebHaric', []))} "
+                  f"{[(x['no'], x['kazanim']) for x in d.get('mebHaric', [])] if d.get('mebHaric') else ''}".rstrip())
         if h:
             print("HATA:", *h, sep="\n"); raise SystemExit(1)
         os.makedirs(f"{KOK}/public/{self.kod}/yazili", exist_ok=True)

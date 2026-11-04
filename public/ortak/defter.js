@@ -2637,6 +2637,15 @@
   }
   const yzAnaBagla = root => { $$("[data-yz-ana]", root).forEach(b => b.onclick = () => yzGit(root, "ana")); yzMenuCiz(); };
 
+  // MEB kapsamı (Kemal, 5 Kasım 2026): dokümandaki soruların kaçı burada, hariç olanlar hangileri ve neden (MEB'in kendi eşlemesine göre).
+  // Veri: mebToplam, mebHaric [{no, kazanim, ad, sinir?}]; sinir = bağlamı senaryodaki konulara benzeyen hariç soru.
+  const yzAralik = l => { const s = [...l].sort((a, b) => a - b), p = []; for (let i = 0; i < s.length; i++) { let j = i; while (j + 1 < s.length && s[j + 1] === s[j] + 1) j++; if (j - i >= 2) p.push(`${s[i]}–${s[j]}`); else p.push(...s.slice(i, j + 1)); i = j; } return p.length > 1 ? `${p.slice(0, -1).join(", ")} ve ${p[p.length - 1]}` : p.join(""); };
+  const yzHaricGrup = () => { const g = {}; (YZ.d.mebHaric || []).forEach(x => (g[x.kazanim] = g[x.kazanim] || { ad: x.ad, no: [], sinir: [] }).no.push(x.no) && x.sinir && g[x.kazanim].sinir.push(x.no)); return g; };
+  const yzHaricLi = () => Object.entries(yzHaricGrup()).map(([k, x]) => `<li>MEB örneğinin ${yzAralik(x.no)}. soruları (${esc(k)} · ${esc(x.ad)}): bu kazanım senaryoda yok.${x.sinir.length ? ` <b>${yzAralik(x.sinir)}. sorular sınırda</b>: bağlamı senaryodaki konulara benziyor; vaktin olursa kâğıtta bak.` : ""}</li>`).join("");
+  const yzKapsamNot = () => { const D = YZ.d; if (!D.mebToplam) return "";
+    const n = D.mebSorular.length, g = yzHaricGrup();
+    return `<p class="yz-not yz-kapsam">${n === D.mebToplam ? `MEB örneğindeki <b>${n} sorunun hepsi</b> burada; hepsi bu senaryoya giriyor.` : `MEB örneğinde ${D.mebToplam} soru var; bu senaryoya giren <b>${n} tanesi</b> burada. ${Object.entries(g).map(([k, x]) => `${yzAralik(x.no)}. sorular ${esc(k)} kazanımından, o kazanım senaryoda yok${x.sinir.length ? ` (${yzAralik(x.sinir)}. sorular sınırda: bağlamı benzer)` : ""}.`).join(" ")}`}</p>`; };
+
   // ---------- Harita ----------
   function yzAna(root) {
     YZ.yer = ["ana"];
@@ -2661,7 +2670,7 @@
       ${yzOncVar() ? `<section class="yz-onc-kart"><b>Önce hangi sorular?</b>${[3, 2, 1].map(o => { const l = D.mebSorular.filter(q => q.oncelik === o); return l.length ? `<div class="yz-onc-satir">${yzOncRozet({ oncelik: o })}<span>${l.map(q => `<button class="yz-onc-no" data-onc-meb="${esc(q.id)}">${esc(yzSoruE())} ${q.no}${k.meb[q.id] ? ` ${k.meb[q.id].r >= .8 ? "✓" : "~"}` : ""}</button>`).join("")}</span><small>${YZ_ONC[o][2]}</small></div>` : ""; }).join("")}</section>` : ""}
       ${yzTekrarVar() ? `<div class="yz-araclar"><button class="btn ghost" data-yz="kart">Sınav Sabahı Kartları</button><button class="btn ghost" data-yz="prova">Prova Yazılıları (isteğe bağlı)</button><button class="btn ghost" data-yz="ozet">Sınav Öncesi Özet</button></div>` : ""}
       ${yzEksikSay() ? `<button class="yz-adim yz-eksik-k" data-yz="eksik"><span class="yz-no">✎</span><span class="yz-adim-m"><b>Yanlış Defterim</b><small>${yzEksikSay()} madde tam puan bekliyor · yeniden yaz</small></span><span class="yz-ok" aria-hidden="true">→</span></button>` : ""}
-      <details class="yz-disi"><summary>Bu yazılıda olmayanlar: bunlara çalışma</summary><ul>${(D.kapsamDisi || []).map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>`;
+      <details class="yz-disi"><summary>Bu yazılıda olmayanlar: bunlara çalışma</summary><ul>${(D.kapsamDisi || []).map(x => `<li>${esc(x)}</li>`).join("")}${yzHaricLi()}</ul></details>`;
     $$("[data-yz]", root).forEach(b => b.onclick = () => yzGit(root, b.dataset.yz));
     $$("[data-onc-meb]", root).forEach(b => b.onclick = () => { const q = D.mebSorular.find(x => x.id === b.dataset.oncMeb); yzSoruCoz(root, q, { tur: "meb", ana: q }); scrollTo(0, 0); });
     yzAnaBagla(root);
@@ -2752,6 +2761,7 @@
       <div class="yz-liste">${(yzOncVar() ? [3, 2, 1, 0].flatMap(o => D.mebSorular.filter(q => (q.oncelik || 0) === o)) : D.mebSorular).map((q, j, l) => { const s = k.meb[q.id], z = yzKaz(q.kazanim), kalan = (q.ikizler || []).filter(x => !k.ikizGor[x.id]).length;
         return `${yzOncVar() && (q.oncelik || 0) !== ((l[j - 1] || {}).oncelik || 0) ? `<div class="yz-onc-baslik">${q.oncelik ? `${yzOncRozet(q)} <span>${YZ_ONC[q.oncelik][2]}</span>` : "Diğer sorular"}</div>` : ""}<div class="yz-li" style="--kr:${esc(z.renk || "#5a6280")}">${yzHalka(s ? s.r : null)}<div class="yz-li-m"><b>${esc(yzSoruE())} ${q.no} ${yzOncRozet(q)}</b><small>${esc(z.kisa)} · ${q.maddeler.length} madde</small></div>
           <div class="yz-li-b"><button class="btn${s ? " ghost" : " primary"}" data-coz="${esc(q.id)}">${s ? "Tekrar çöz" : "Çöz"}</button>${s && (q.ikizler || []).length ? `<button class="btn" data-ikiz="${esc(q.id)}">Benzerini çöz${kalan ? ` (${kalan} yeni)` : ""}</button>` : ""}</div></div>`; }).join("")}</div>
+      ${yzKapsamNot()}
       <div class="stage-nav"><button class="btn ghost" data-yz-ana>← Harita</button><button class="btn primary" data-kuark>${esc(yzTekrarVar() ? "Konu Tekrarı" : yzKartVar() ? "Kısa Cevap Kartları" : yzKuarkAd())} →</button></div></div>`;
     yzAnaBagla(root);
     $("[data-kuark]", root).onclick = () => yzGit(root, yzTekrarVar() ? "tekrar" : yzKartVar() ? "kart" : "kuark");

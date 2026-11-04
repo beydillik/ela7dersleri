@@ -1387,7 +1387,7 @@ html[data-dil="en"] .stage .kicker, html[data-dil="en"] .isinma-etiket, html[dat
 .yz-ta:focus { border-color: var(--accent); outline: none; }
 .yz-formul-ipucu { background: var(--accent-soft); border-radius: 10px; padding: 6px 12px; } .yz-formul-ipucu span { font-family: var(--display); }
 .yz-senin { background: var(--surface-2); border-radius: 12px; padding: 8px 12px; } .yz-senin span { font-size: 13px; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; } .yz-senin p { margin: 2px 0 0; white-space: pre-wrap; }
-.yz-not { margin: 0; color: var(--muted); }
+.yz-not { margin: 0; color: var(--muted); } .yz-kapsam { margin-top: 14px; font-size: .92rem; }
 .yz-anahtar { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .yz-anahtar label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; background: var(--surface); border: 2px solid var(--line); border-radius: 12px; padding: 8px 12px; cursor: pointer; }
 .yz-anahtar label:has(input:checked) { border-color: var(--ok); background: var(--ok-soft); }

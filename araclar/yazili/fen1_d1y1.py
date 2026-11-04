@@ -42,6 +42,7 @@ HIZ = A("Hız (sürat)", "hız", "sürat")
 Y = Yazili("fen1", "d1y1",
     baslik="1. Dönem 1. Yazılı", ders="Fen Bilimleri", senaryo="Senaryo 4", sure=40, tarih="2026-11-03",
     dagilim={"FB.7.1.3": 1, "FB.7.1.4": 1, "FB.7.1.5": 1, "FB.7.2.1": 2, "FB.7.2.2": 1},
+    mebToplam=9, mebHaric=[{"no": n, "kazanim": "FB.7.1.1", "ad": "Uzay araştırmaları için geliştirilen teknolojileri karşılaştırabilme"} for n in (1, 2)],   # MEB tablosu: 7.1.1 → 1, 2 (Senaryo 4'te yok)
     giris="Okulun seçtiği senaryoda <b>6 açık uçlu soru</b> var. Hepsi 5 kazanımdan geliyor. Önce hatırla, sonra MEB'in sorularını çöz, en sonda gerçek yazılı gibi prova yap. Uzay araçları, teleskoplar ve takımyıldızlar bu yazılıda yok; onlara çalışma.",
     kapsamDisi=["Uzay araçlarını karşılaştırma (FB.7.1.1)", "Teleskoplar ve gözlem araçları (FB.7.1.2)", "Türkiye'nin uyduları", "Takımyıldızlar", "Enerji dönüşümü ve sürtünme"],
     puanNotu="Puanlar tahminidir: okul soruların puanını farklı dağıtabilir. Toplam 100.",
