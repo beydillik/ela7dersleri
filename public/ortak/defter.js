@@ -172,7 +172,7 @@
       ipucu: "Açılan ipucu adımı sayısı", yanlis: "Seçilen yanlış şıklar (sırayla)", kanit: "Kanıtı bul: 1 ilk dokunuşta, 2 ikinci dokunuşta, 0 gösterildi",
       tekrar: "true: yanlıştan sonra testin sonuna doğru yeniden gelen soru", eski: "true: önceki bir konudan gelen tekrar sorusu (Öğren başındaki Isınma ya da Test'teki 'Eski konudan')", kavram: "Sorunun bağlı olduğu kavram",
       bayrak: "Uyarı işaretleri: hizli (okumadan cevap), hizli-gecis (Öğren kartını okumadan geçti)",
-      adim: "Öğren adım no", toplam: "Toplam adım / soru sayısı", adimTur: "Öğren adımının türü: giris, hazir, bilgi, cozum, soru, hatirla, ozet, yaz, bitis",
+      adim: "Öğren adım no", toplam: "Toplam adım / soru sayısı", adimTur: "Öğren adımının türü: giris, hazir, bilgi, cozum, soru, hatirla, ozet, htekrar (Hatırla ve Tekrarla), yaz, kisa (Kısa Cevap), bitis",
       oyun: "Oyun adı (kart, eslestir, grupla, dinle, kur, cumle, resim, hata, gunluk)", oge: "Oyundaki öğe sayısı",
       mesaj: "Robotun gösterdiği mesajın türü", metin: "Mesaj ya da robota sorulan sorunun başı", secim: "Robot mesajında Ela'nın dokunduğu düğme",
       ilkSoru: "Oturum özetinde: tekrar gelenler hariç soru sayısı (ilk deneme yüzdesinin paydası)", ilk1: "Testte ilk denemede doğru sayısı", ilk2: "Testte ipucuyla/ikinci denemede doğru sayısı", ilk0: "Testte cevabı gösterilen (sonra tekrar gelen) soru sayısı",
@@ -200,7 +200,7 @@
       "kart-bekle": "Odaklı mod: Öğren'de bilgi kartı okuma süresi dolmadan 'Sonraki'ye dokundu",
       "hedefli-tekrar": "Odaklı mod: testte tamamlanma eşiğinin altında kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
       "yazili-ac": "Yazılıya Hazırlık bölümü açıldı (konu: yazili:<id>)", "yazili-madde": "Yazılıya Hazırlık'ta bir sorunun bir maddesi bitti (tur: yazili-meb / yazili-ikiz; oran: işaretlenen parça oranı; otomatik: otomatik bulunan oran)",
-      "yazili-prova": "Prova yazılısı puanlandı (mod: ekran / sinav (sınav modu) / kagit; sureDk ekranda geçen süre)", "yazili-kuark": "Kuark'ın Hatası / Cevabını Düzelt turu bitti (dogru/toplam, ilk1; tamamladi: tam cevabı kendisi tamamladığı madde sayısı)", "yazili-kart": "Kısa Cevap Kartları'nda bir kart (sonuc 1 ilk denemede doğru şık, 2 ipucuyla/ikinci denemede, 0 gösterildi; tekrar: turda ikinci kez gelen)", "yazili-basamak": "Basamaklı maddede kalıpla yazma (basamak 3) kontrol edildi (oran)", "yazili-yazdir": "Prova soru kâğıdı, cevap anahtarı, sınav öncesi özet ya da bölüm çalışma kâğıdı yazdırıldı (mod: kagit / anahtar / ozet / ck-hatirla / ck-meb / ck-tekrar / ck-kuark; surum: ipuclu / sinav; konu: kazanım kodu ya da hepsi)", "yazili-sure": "Sınav modunda süre doldu, prova kendiliğinden puanlamaya geçti", "yazili-tekrar": "Konu Tekrarı bitti: konunun MEB soruları + benzerleri (kazanim, oran ortalaması, soru sayısı)", "yazili-htekrar": "Hatırladığını Tekrarla'da bir konu bitti (ilk: ilk denemede doğru kelime, toplam)", "yazili-oku": "“Bu soru senden ne istiyor?” doğru seçildi (yanlis: önceki yanlış seçim sayısı)",
+      "yazili-prova": "Prova yazılısı puanlandı (mod: ekran / sinav (sınav modu) / kagit; sureDk ekranda geçen süre)", "yazili-kuark": "Kuark'ın Hatası / Cevabını Düzelt turu bitti (dogru/toplam, ilk1; tamamladi: tam cevabı kendisi tamamladığı madde sayısı)", "yazili-kart": "Kısa Cevap Kartları'nda bir kart (sonuc 1 ilk denemede doğru şık, 2 ipucuyla/ikinci denemede, 0 gösterildi; tekrar: turda ikinci kez gelen)", "yazili-basamak": "Basamaklı maddede kalıpla yazma (basamak 3) kontrol edildi (oran)", "yazili-yazdir": "Prova soru kâğıdı, cevap anahtarı, sınav öncesi özet ya da bölüm çalışma kâğıdı yazdırıldı (mod: kagit / anahtar / ozet / ck-hatirla / ck-meb / ck-tekrar / ck-kuark; surum: ipuclu / sinav; konu: kazanım kodu ya da hepsi)", "yazili-sure": "Sınav modunda süre doldu, prova kendiliğinden puanlamaya geçti", "yazili-tekrar": "Konu Tekrarı bitti: konunun MEB soruları + benzerleri (kazanim, oran ortalaması, soru sayısı)", "ogren-ht": "Öğren'de Hatırla ve Tekrarla (bu konunun boşluklu cümleleri) turu bitti (ilk: ilk denemede doğru kelime, toplam, tur: 1 ya da 2, tamam:false: eşik altı, ikinci tura geçildi)", "ogren-kisa": "Öğren'de Kısa Cevap sorusu kontrol edildi (oran: puan getiren parçaların oranı, ipucu: ipucu kaç kez açıldı, serbest: kalıpsız deneme)", "ogren-kisa-oku": "Kısa Cevap'ta \"Bu soru senden ne istiyor?\" doğru seçildi (yanlis: önceki yanlış seçim, sureSn)", "hizli-tik": "Hızlı tık koruması: Hatırla ve Tekrarla'da cümleyi okumaya yetmeyecek kadar kısa sürede seçilen şık sayılmadı (sureSn, esikSn)", "konu-kagit": "Konu çalışma kâğıdı yazdırıldı (surum: ipuclu / sinav)", "yazili-htekrar": "Hatırladığını Tekrarla'da bir konu bitti (ilk: ilk denemede doğru kelime, toplam)", "yazili-oku": "“Bu soru senden ne istiyor?” doğru seçildi (yanlis: önceki yanlış seçim sayısı)",
       "sinav-soru": "Sınav Provası'nda bir sorunun sonucu (tur sinav-<tür>; sonuc 1 doğru 0 yanlış; kismi kısmi doğru oranı; cevap Ela'nın cevabı; kaynakKonu sorunun konusu)"
     }
   };
@@ -562,10 +562,23 @@
     let tries = 0, finished = false, picked = null;
     const state = opts.state || { wrong: [], result: undefined };
     // Veli ayarı "sikBekle": şıklar, soru okunacak kadar (en çok 5 sn) bekledikten sonra açılır (Kanıtı bul sorularında gerekmez).
-    if (ayar().sikBekle && !kanitli(o) && state.result === undefined && !state.wrong.length && !opts.classMode) {
-      const ob = $(".opts", el), ms = Math.min(5000, Math.max(1200, okumaEsik(kelimeSay(o.soru)) * 1000));
+    // Konu dosyasında `dikkat: true` ve sorunun `tetik` listesi varsa şıklar ayrıca "soru kelimesine dokununca" açılır: Ela önce soru kökünü bulur (pilot).
+    const sikBekleAcik = ayar().sikBekle && !kanitli(o) && state.result === undefined && !state.wrong.length && !opts.classMode;
+    const dokunAcik = !!(S.data && S.data.dikkat && (o.tetik || []).length && !kanitli(o) && state.result === undefined && !state.wrong.length && !opts.classMode && !document.body.classList.contains("sinif"));
+    if (sikBekleAcik || dokunAcik) {
+      const ob = $(".opts", el); let sureTamam = !sikBekleAcik, dokunTamam = !dokunAcik;
+      const ac = () => { if (!sureTamam || !dokunTamam) return; ob.classList.remove("bekle", "dokun"); $$(".opt", ob).forEach(b => { if (!b.classList.contains("wrong") && !finished) b.disabled = false; }); };
       ob.classList.add("bekle"); $$(".opt", ob).forEach(b => b.disabled = true);
-      setTimeout(() => { ob.classList.remove("bekle"); $$(".opt", ob).forEach(b => { if (!b.classList.contains("wrong") && !finished) b.disabled = false; }); }, ms);
+      if (sikBekleAcik) { const ms = Math.min(5000, Math.max(1200, okumaEsik(kelimeSay(o.soru)) * 1000)); setTimeout(() => { sureTamam = true; ac(); }, ms); }
+      if (dokunAcik) {
+        const metin = $(".q-text > span:last-child", el), t = o.tetik[0];
+        if (metin && metin.innerHTML.includes(esc(t))) {
+          metin.innerHTML = metin.innerHTML.replace(esc(t), `<mark class="tetik-dok" role="button" tabindex="0">${esc(t)}</mark>`);
+          const mk = $(".tetik-dok", metin); ob.classList.add("dokun");
+          const dokun = () => { if (dokunTamam) return; dokunTamam = true; mk.classList.add("tamam"); ac(); };
+          mk.onclick = dokun; mk.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); dokun(); } };
+        } else dokunTamam = true;
+      }
     }
     const fb = $(".fb", el), yr = wireYardim(el, o, opts, state);
     // Kanıt adımı: önce kanıt cümlesi, sonra şıklar. state.kanit: 1 ilk denemede, 2 ikinci denemede, 0 gösterildi.
@@ -652,9 +665,10 @@
     });
     const n = d.kavramlar.length;
     if (n) { const from = n % 3 === 0 ? n - 3 : n - (n % 3); steps.push({ t: "hatirla", from, to: n - 1 }); }
-    steps.push({ t: "ozet" });
+    steps.push(d.tekrar && d.tekrar.length ? { t: "htekrar" } : { t: "ozet" });   // htekrar: Hatırla ve Tekrarla (bu konu), pilot
     if (isEn()) steps.push({ t: "duvar" });
-    if (d.dusunVeYaz && d.dusunVeYaz.length) steps.push({ t: "yaz" });
+    if (d.kisaCevap && d.kisaCevap.length) steps.push({ t: "kisa" });   // kisa: Kısa Cevap (Düşün ve Yaz'ın yerine), pilot
+    else if (d.dusunVeYaz && d.dusunVeYaz.length) steps.push({ t: "yaz" });
     steps.push({ t: "bitis" });
     return steps;
   }
@@ -664,7 +678,7 @@
     // Isınma: konuya ilk başlarken (ya da önceki seferde Isınma ile başlandıysa adımlar kaymasın diye) önceki konulardan 2–3 soru
     S.isinma = S.isinma || {};
     if (!S.isinma[S.konu]) S.isinma[S.konu] = TEKRAR.sec(3);
-    const isinmaVar = S.isinma[S.konu].length > 0 && (store.get(posKey, 0) === 0 || store.get(isKey, false));
+    const isinmaVar = d.isinma !== false && S.isinma[S.konu].length > 0 && (store.get(posKey, 0) === 0 || store.get(isKey, false));
     if (isinmaVar) store.set(isKey, true);
     const steps = buildSteps(d, isinmaVar);
     let pos = Math.min(store.get(posKey, 0), steps.length - 1);
@@ -735,6 +749,10 @@
         html = `<div class="stage"><div class="kicker">Özet</div><h3>Akılda Kalsın</h3>
           <ul class="remember">${d.akildaKalsin.map(a => `<li>${rx(a)}</li>`).join("")}</ul>
           <div class="row">${listenBtn(d.akildaKalsin.join(". "))}</div>${nav("Devam")}</div>`;
+      } else if (st.t === "htekrar") {
+        html = `<div class="stage og-ht"><div id="htBox"></div>${nav("Devam", false)}</div>`;
+      } else if (st.t === "kisa") {
+        html = `<div class="stage og-kisa"><div id="kisaBox"></div>${nav("Devam", false)}</div>`;
       } else if (st.t === "duvar") {
         html = `<div class="stage"><div class="kicker">Kelime Duvarı</div><h3>Bu konunun kelimeleri</h3>
           ${robotDer(`Her kutuya dokun: kart döner, kelimeyi duyarsın. Biliyorsan ✓, zorlanıyorsan ↻ işaretle. 🎤 ile kendi sesini kaydedip karşılaştırabilirsin.`)}
@@ -800,6 +818,12 @@
         runCozum($("#cozBox", stage), d.kavramlar[st.k][st.f], qstate[pos], () => { const n = $("[data-next]", stage); if (n) n.disabled = false; }, d.kavramlar[st.k]);
       }
       if (st.t === "yaz") wireWrite(stage, d.dusunVeYaz[0]);
+      const devamAc = () => { const n = $("[data-next]", stage); if (n) n.disabled = false; };
+      if (st.t === "htekrar") ogrenHT($("#htBox", stage), d, devamAc, () => !!store.get(key("ht:" + S.konu), null));
+      if (st.t === "kisa") {
+        if (store.get(key("kisa-ok:" + S.konu), false)) devamAc();
+        ogrenKisa($("#kisaBox", stage), d, () => { store.set(key("kisa-ok:" + S.konu), true); devamAc(); });
+      }
       if (st.t === "duvar") renderWall($("#wallBox", stage), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}`, kartlar: kartlarOf(S.konu) });
       $$("[data-goto]", stage).forEach(b => b.onclick = () => gitSekme(b.dataset.goto));
       const rs = $("[data-restart]", stage); if (rs) rs.onclick = () => { for (const k in qstate) delete qstate[k]; go(0); };
@@ -817,11 +841,213 @@
     };
   }
 
+  // ---------- Hatırla ve Tekrarla (bu konu) · Kısa Cevap · Çalışma kâğıdı (pilot: Fen u1k1, u1k2; Kemal, 5 Kasım 2026) ----------
+  // Konu dosyasında `tekrar` [{c, s}] varsa Öğren'in "Özet" adımı yerine Hatırla ve Tekrarla (o konunun kendi bilgisi: önce kart, sonra
+  // boşluklu cümleler); `kisaCevap` varsa "Düşün ve Yaz" yerine Kısa Cevap adımı gelir. `dikkat: true` konularda ayrıca soru kelimesine
+  // dokunma (wireQuestion) ve hızlı tık koruması çalışır. Veri biçimi için bkz. docs/motor-notlari.md "Pilot: Hatırla ve Tekrarla".
+  // Sadeleştirme: Türkçe harfler ve noktalama atılır, "dünya'dan" ile "dunyadan" aynı sayılır.
+  const ogNorm = s => lower(plain(String(s ?? ""))).replace(/ı/g, "i").replace(/ş/g, "s").replace(/ğ/g, "g").replace(/ü/g, "u").replace(/ö/g, "o").replace(/ç/g, "c").replace(/[’'`´.,;:!?()[\]"“”]/g, "").replace(/\s+/g, " ").trim();
+  const ogParca = c => c.split(/(\{[^{}]+\})/).map(p => /^\{.*\}$/.test(p) ? { o: p.slice(1, -1).split("|").map(x => x.trim()) } : p);
+  const ogDuz = c => c.replace(/\{([^{}|]+)[^{}]*\}/g, "$1");   // boşlukları doğru kelimeyle doldurulmuş düz cümle (okuma süresi ve anahtar için)
+  const ogSalla = el => { if (!el) return; el.classList.remove("salla"); void el.offsetWidth; el.classList.add("salla"); };
+
+  function ogrenHT(box, d, onDone, onceTamam) {
+    const tum = d.tekrar.map(t => ({ p: ogParca(t.c), s: t.s, duz: ogDuz(t.c) }));
+    let tur = 1, sira = tum.map((_, i) => i), st = null, hizliSay = 0;
+    const yeni = () => {
+      st = { c: 0, b: {}, ilk: 0, top: 0, kacir: new Set(), t0: simdi(), yanlisSonra: false };
+      sira.forEach(ci => tum[ci].p.forEach((p, pi) => { if (typeof p !== "string") { st.top++; st.b[`${ci}-${pi}`] = { kalan: shuffle(p.o), hata: 0, son: null }; } }));
+    };
+    const ck = () => { const b = $("[data-ck]", box); if (b) b.onclick = () => konuKagitSec(); };
+    const kart = () => {
+      const ms = Math.round(Math.min(15000, Math.max(4000, okumaEsik(kelimeSay(d.akildaKalsin.join(" "))) * 1000))), bekle = !onceTamam() && !!d.dikkat;
+      box.innerHTML = `<div class="kicker">Hatırla ve Tekrarla</div><h3>${esc(d.baslik)}</h3>
+        ${robotDer(`Bu konunun en önemli noktaları burada. Önce oku, sonra cümlelerdeki boşlukları sen dolduracaksın.`)}
+        <ul class="remember">${d.akildaKalsin.map(a => `<li>${rx(a)}</li>`).join("")}</ul>
+        ${bekle ? `<div class="kb-not" style="--kb-sure:${ms}ms"><span>Maddeleri dikkatle oku; düğme birazdan açılır.</span><i class="kb-cubuk" aria-hidden="true"></i></div>` : ""}
+        <div class="row">${listenBtn(d.akildaKalsin.join(". "))}<button class="btn ghost" type="button" data-ck>${ICON.yazdir}Çalışma kâğıdı</button><button class="btn primary${bekle ? " kilitli" : ""}" type="button" data-basla${bekle ? ' aria-disabled="true"' : ""}>Okudum, şimdi tekrarla →</button></div>`;
+      ck();
+      const bt = $("[data-basla]", box); let acik = !bekle;
+      bt.onclick = () => { if (!acik) { ogSalla($(".kb-not", box)); KAYIT.olay("kart-bekle", { kavram: "Hatırla ve Tekrarla" }); return; } yeni(); ciz(); };
+      if (bekle) setTimeout(() => { acik = true; if (bt.isConnected) { bt.classList.remove("kilitli"); bt.removeAttribute("aria-disabled"); const n = $(".kb-not", box); if (n) n.classList.add("bitti"); } }, ms);
+      if (onceTamam()) onDone();   // daha önce bitirildiyse "Devam" açık gelir
+    };
+    const ciz = () => {
+      const bitti = ci => tum[ci].p.every((p, pi) => typeof p === "string" || st.b[`${ci}-${pi}`].son);
+      const cumle = ci => tum[ci].p.map((p, pi) => { if (typeof p === "string") return esc(p); const b = st.b[`${ci}-${pi}`];
+        if (b.son) return `<b class="yz-ht-${b.son}">${esc(p.o[0])}</b>`;
+        return `<select class="yz-ht-sec${b.hata ? " hata" : ""}" data-b="${ci}-${pi}" aria-label="Boşluk"><option value="">— seç —</option>${b.kalan.map(o => `<option>${esc(o)}</option>`).join("")}</select>`; }).join("");
+      const son = st.c >= sira.length, oran = st.top ? st.ilk / st.top : 1, tamam = son && (oran >= 0.7 || tur >= 2);
+      box.innerHTML = `<div class="kicker">Hatırla ve Tekrarla · ${tur}. tur</div><h3>${esc(d.baslik)}</h3>
+        <div class="progress"><span>Cümle ${Math.min(st.c + 1, sira.length)} / ${sira.length}</span><div class="bar"><i style="width:${Math.min(st.c + 1, sira.length) / sira.length * 100}%"></i></div></div>
+        <ol class="yz-ht-l">${sira.slice(0, st.c + 1).map(ci => `<li class="${bitti(ci) ? "tamam" : "simdi"}"><span>${cumle(ci)}</span>${bitti(ci) ? ` <small class="yz-ht-s">(${esc(tum[ci].s)})</small>` : ""}</li>`).join("")}</ol>
+        <p class="og-ht-not" role="status" hidden></p>
+        ${son ? (tamam
+          ? robotDer(`${st.ilk} / ${st.top} kelimeyi ilk denemede buldun. ${st.ilk === st.top ? "Bu konunun önemli noktaları aklında!" : "Turuncu kelimeler bir dahaki sefere ilk denemede gelsin."}`) + `<div class="row"><button class="btn ghost" type="button" data-yeniden>Bu konuyu yeniden tekrarla</button><button class="btn ghost" type="button" data-kart>Hatırla kartına bak</button><button class="btn ghost" type="button" data-ck>${ICON.yazdir}Çalışma kâğıdı</button></div>`
+          : robotDer(`${st.ilk} / ${st.top} kelimeyi ilk denemede buldun. Olsun! Birlikte bir tur daha yapalım; bu kez yalnız takıldığın cümleler gelecek.`) + `<div class="row"><button class="btn ghost" type="button" data-kart>Hatırla kartına bak</button><button class="btn primary" type="button" data-ikinci>İkinci tur →</button></div>`) : ""}`;
+      $$("select[data-b]", box).forEach(se => { se.onchange = () => {
+        const v = se.value; if (!v) return;
+        const [ci, pi] = se.dataset.b.split("-").map(Number), b = st.b[se.dataset.b], dogru = tum[ci].p[pi].o[0];
+        // Hızlı tık koruması: cümleyi okumaya yetmeyecek kadar kısa sürede seçilen şık sayılmaz (ilk seçimde okuma süresinin %40'ı, yanlıştan sonra 1,5 sn).
+        const gec = (simdi() - st.t0) / 1000, enAz = st.yanlisSonra ? 1.5 : Math.max(1.5, 0.4 * okumaEsik(kelimeSay(tum[ci].duz)));
+        if (d.dikkat && gec < enAz) {
+          se.value = "";
+          const n = $(".og-ht-not", box); n.hidden = false; n.textContent = "Çok hızlı! Önce cümleyi sonuna kadar oku (içinden ya da sesli). Sonra seç.";
+          ogSalla(n); KAYIT.olay("hizli-tik", { yer: "htekrar", kavram: d.baslik, sureSn: +gec.toFixed(1), esikSn: +enAz.toFixed(1) });
+          if (++hizliSay >= 2) { hizliSay = 0; KOC.goster("hizli-tik", "Seçimi cümleyi okumadan yapıyorsun. Cümleyi önce içinden oku, boşlukta ne olması gerektiğini düşün, sonra listeden seç."); }
+          return;
+        }
+        if (v === dogru) { b.son = b.hata ? "gec" : "ok"; if (!b.hata) st.ilk++; else st.kacir.add(ci); }
+        else { b.hata++; st.kacir.add(ci); b.kalan = b.kalan.filter(x => x !== v); st.t0 = simdi(); st.yanlisSonra = true; if (b.hata >= 2 || b.kalan.length <= 1) b.son = "goster"; }
+        if (bitti(sira[st.c])) { st.c++; st.t0 = simdi(); st.yanlisSonra = false; }
+        ciz();
+        const bitis = st.c >= sira.length, gecti = bitis && ((st.top ? st.ilk / st.top : 1) >= 0.7 || tur >= 2);
+        if (gecti) {
+          store.set(key("ht:" + S.konu), { t: Date.now(), r: +(st.ilk / (st.top || 1)).toFixed(2), tur });
+          KAYIT.olay("ogren-ht", { ilk: st.ilk, toplam: st.top, tur });
+          onDone();
+        } else if (bitis) KAYIT.olay("ogren-ht", { ilk: st.ilk, toplam: st.top, tur, tamam: false });
+        else { const s2 = $("select[data-b]", box); if (s2) { s2.closest("li").scrollIntoView({ block: "nearest", behavior: "smooth" }); if (v !== dogru && !b.son) s2.focus(); } }
+      }; });
+      const bs = (q, f) => { const e = $(q, box); if (e) e.onclick = f; };
+      bs("[data-yeniden]", () => { tur = 1; sira = tum.map((_, i) => i); yeni(); ciz(); });
+      bs("[data-ikinci]", () => { tur = 2; sira = [...st.kacir].sort((a, b) => a - b); if (!sira.length) sira = tum.map((_, i) => i); yeni(); ciz(); });
+      bs("[data-kart]", kart);
+      ck();
+    };
+    kart();
+  }
+
+  // Kısa Cevap: (1) "Bu soru senden ne istiyor?" (okuma süresinden sonra açılır) → (2) kalıpla yaz (cümle başları hazır, İpucu açıkken yazı alanı gizli)
+  // → (3) kontrol (anahtar parçalar + "Bu kadarı yeter" + katlı uzun örnek) → isteğe bağlı kalıpsız yaz. Yapay zekâ yok; Ela kendi kendini kontrol eder.
+  function ogrenKisa(box, d, onDone) {
+    const L = d.kisaCevap, biten = new Set(); let i = 0;
+    const vurgu = (q, ac) => { let h = esc(q.soru); if (ac) q.tetik.forEach(t => { h = h.replace(esc(t), `<mark class="tetik-dok tamam">${esc(t)}</mark>`); }); return h; };
+    const bas = () => `<div class="kicker">Kısa cevap · ${i + 1} / ${L.length}</div>`;
+    const okut = () => {
+      const q = L[i], oku = Math.round(Math.min(12000, Math.max(4000, okumaEsik(kelimeSay(q.soru)) * 1000))), t0 = simdi(); let yanlis = 0;
+      box.innerHTML = `${bas()}<h3>Bu soru senden ne istiyor?</h3><p class="og-soru">${vurgu(q, false)}</p>
+        <div class="kb-not og-okut-bar" style="--kb-sure:${oku}ms"><span>Soruyu dikkatle oku…</span><i class="kb-cubuk" aria-hidden="true"></i></div>
+        <div class="opts og-okut" hidden></div><div class="fb" hidden></div>`;
+      const ob = $(".opts", box), fb = $(".fb", box), bar = $(".og-okut-bar", box);
+      const ac = () => {
+        bar.classList.add("bitti"); ob.hidden = false; fb.hidden = true;
+        ob.innerHTML = shuffle(q.okut.map((t, j) => [t, j])).map(([t, j]) => `<button class="opt" type="button" data-j="${j}">${esc(t)}</button>`).join("");
+      };
+      const kapat = (ms) => { ob.hidden = true; bar.classList.remove("bitti"); bar.style.setProperty("--kb-sure", ms + "ms"); const c = $(".kb-cubuk", bar); c.style.animation = "none"; void c.offsetWidth; c.style.animation = ""; $("span", bar).textContent = "Soruyu bir kez daha, sonuna kadar oku…"; setTimeout(ac, ms); };
+      setTimeout(ac, oku);
+      ob.onclick = e => {
+        const b = e.target.closest(".opt"); if (!b) return;
+        if (b.dataset.j === "0") {
+          KAYIT.olay("ogren-kisa-oku", { soru: kisa(q.soru), yanlis, sureSn: +((simdi() - t0) / 1000).toFixed(1) });
+          $(".og-soru", box).innerHTML = vurgu(q, true);
+          ob.hidden = true; fb.hidden = false; fb.className = "fb ok";
+          fb.innerHTML = `<div><b>Evet!</b> ${esc(q.okut[0])}</div><div class="row"><button class="btn primary" type="button" data-yaz>Yazmaya başla →</button></div>`;
+          $("[data-yaz]", fb).onclick = kalip;
+        } else {
+          yanlis++; fb.hidden = false; fb.className = "fb hint";
+          fb.innerHTML = `<div><b>Henüz değil.</b> Soruyu tekrar dikkatle oku.${yanlis >= 2 ? " Soru kelimesi işaretlendi." : ""}</div>`;
+          if (yanlis >= 2) $(".og-soru", box).innerHTML = vurgu(q, true).replace('tetik-dok tamam', 'tetik-dok yanip');
+          kapat(8000);
+        }
+      };
+    };
+    const kalip = () => {
+      const q = L[i], t0 = simdi(); let ipucu = 0;
+      box.innerHTML = `${bas()}<h3>Kalıpla yaz</h3><p class="og-soru">${vurgu(q, true)}</p><p class="kn">💡 ${esc(q.okut[0])}</p>
+        <div class="og-yaz">${q.parcalar.map((p, k) => `<label class="og-p"><span>${esc(p.bas)}</span><input type="text" data-p="${k}" autocomplete="off" placeholder="Buraya yaz…"></label>`).join("")}</div>
+        <div class="og-ipucu" hidden><p class="ek">Sadece oku. Yazarken bakmadan, aklında kalanı yazacaksın.</p>
+          ${q.parcalar.map(p => `<div class="og-p-ip"><b>${esc(p.bas)}</b><ul>${shuffle([p.ornek, ...p.havuz]).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}
+          <button class="btn" type="button" data-anladim>Anladım, şimdi yazacağım</button></div>
+        <div class="row og-dug"><button class="btn ghost" type="button" data-ip>${ICON.ampul}İpucu</button><button class="btn primary" type="button" data-kontrol>Kontrol et</button></div>`;
+      const yaz = $(".og-yaz", box), ip = $(".og-ipucu", box), dug = $(".og-dug", box);
+      $("[data-ip]", box).onclick = () => { ipucu++; yaz.hidden = true; dug.hidden = true; ip.hidden = false; };
+      $("[data-anladim]", box).onclick = () => { ip.hidden = true; yaz.hidden = false; dug.hidden = false; const x = $("input", yaz); if (x) x.focus(); };
+      $("[data-kontrol]", box).onclick = () => kontrol($$("input", yaz).map(x => x.value).join(" "), { ipucu, sure: +((simdi() - t0) / 1000).toFixed(1), serbest: false });
+    };
+    const serbest = () => {
+      const q = L[i], t0 = simdi();
+      box.innerHTML = `${bas()}<h3>Şimdi kalıpsız dene</h3><p class="og-soru">${vurgu(q, true)}</p>
+        <textarea class="og-ta" placeholder="Cevabını kendi cümlelerinle yaz…"></textarea><div class="row"><button class="btn primary" type="button" data-kontrol>Kontrol et</button></div>`;
+      $("[data-kontrol]", box).onclick = () => kontrol($(".og-ta", box).value, { ipucu: 0, sure: +((simdi() - t0) / 1000).toFixed(1), serbest: true });
+    };
+    const kontrol = (metin, o) => {
+      const q = L[i], t = ogNorm(metin), isa = q.anahtarlar.map(a => ({ a, ok: a.k.some(x => t.includes(ogNorm(x))) })), oran = isa.filter(x => x.ok).length / isa.length;
+      KAYIT.olay("ogren-kisa", { soru: kisa(q.soru), oran: +oran.toFixed(2), ipucu: o.ipucu, serbest: o.serbest, sureSn: o.sure });
+      biten.add(i);
+      const son = i === L.length - 1, ileri = son ? "Bitir →" : "Sıradaki soru →";
+      box.innerHTML = `${bas()}<h3>Kontrol</h3><p class="og-soru">${vurgu(q, true)}</p>
+        <p class="ek" style="margin:8px 0 6px">Puan getiren parçalar (yeşil olanları yazmışsın):</p>
+        <div class="kw">${isa.map(x => `<span class="${x.ok ? "hit" : ""}">${esc(x.a.ad)}</span>`).join("")}</div>
+        ${robotDer(oran === 1 ? "Puan getiren parçaların hepsi var. Dikkatle çalıştın!" : oran > 0 ? "Güzel bir başlangıç. Boş kalan parçayı aşağıdaki kısa cevaptan tamamla." : "Olsun! Kısa cevaba bak; bir dahaki sefere bu parçaları yazarsın.", "kucuk")}
+        <div class="model"><b>Bu kadarı yeter:</b> ${esc(q.kisa)} <small>(${esc(q.sayfa)})</small></div>
+        <details class="og-uzun"><summary>Uzun örnek cevap</summary><p>${esc(q.cevap)}</p></details>
+        <div class="row">${o.serbest ? "" : `<button class="btn ghost" type="button" data-serbest>Kalıpsız dene (isteğe bağlı)</button>`}<button class="btn primary" type="button" data-ileri>${ileri}</button></div>`;
+      const sb = $("[data-serbest]", box); if (sb) sb.onclick = serbest;
+      $("[data-ileri]", box).onclick = () => { if (son) { box.innerHTML = `${robotDer("Kısa cevapları bitirdin. Cevabı kısa tutmak, sınavda da en çok puan getiren yoldur.")}`; onDone(); } else { i++; okut(); } };
+      if (biten.size === L.length) onDone();
+    };
+    okut();
+  }
+
+  // Çalışma kâğıdı (konu): Hatırla kartı + boşluklu cümleler + kısa cevap soruları; kâğıtta çalışmak için. Yeni sekmede A4, yazdırma penceresi açılır.
+  function konuKagitSec() {
+    const d = S.data, eski = $("#yzCk"); if (eski) eski.remove();
+    const z = document.createElement("div"); z.id = "yzCk"; z.className = "yz-ck-zemin";
+    z.innerHTML = `<div class="yz-ck-kutu" role="dialog" aria-modal="true" aria-labelledby="yzCkB"><h2 id="yzCkB">${ICON.yazdir}Çalışma kâğıdı · ${esc(d.baslik)}</h2>
+      <fieldset class="yz-ck-s"><legend>Sürüm</legend>
+        <label><input type="radio" name="ckSurum" value="ipuclu" checked> <b>İpuçlu</b> · Hatırla kartı üstte, boşlukların yanında seçenekler, kısa cevapta cümle başları</label>
+        <label><input type="radio" name="ckSurum" value="sinav"> <b>Sınav gibi</b> · yalnız boşluk ve soru</label></fieldset>
+      <label class="yz-ck-c"><input type="checkbox" data-ck-anahtar checked> Cevap anahtarı (son sayfada)</label>
+      <label class="yz-ck-c"><input type="checkbox" data-ck-deg checked> Kendimi değerlendir kutusu</label>
+      <p class="ek">Yazdırma penceresinde <b>Hedef: “PDF olarak kaydet”</b> seçersen PDF iner; yazıcıyı seçersen doğrudan basılır.</p>
+      <div class="row"><button class="btn ghost" type="button" data-ck-iptal>Vazgeç</button><button class="btn primary" type="button" data-ck-yap>Kâğıdı oluştur</button></div></div>`;
+    document.body.appendChild(z);
+    const kapat = () => z.remove();
+    z.onclick = e => { if (e.target === z || e.target.closest("[data-ck-iptal]")) kapat(); };
+    z.onkeydown = e => { if (e.key === "Escape") kapat(); };
+    $("[data-ck-yap]", z).onclick = () => { konuKagit({ surum: $("input[name=ckSurum]:checked", z).value, anahtar: $("[data-ck-anahtar]", z).checked, deg: $("[data-ck-deg]", z).checked }); kapat(); };
+    $("[data-ck-yap]", z).focus();
+  }
+  function konuKagit(o) {
+    const d = S.data, ip = o.surum === "ipuclu", alan = n => `<div class="alan cizgili" style="height:${n * 9}mm"></div>`;
+    const deg = ne => o.deg ? `<p class="deg">${esc(ne)}: ☐ kendim yaptım &nbsp; ☐ ipucuyla yaptım &nbsp; ☐ yapamadım</p>` : "";
+    const bos = c => esc(c.replace(/\{([^{}]+)\}/g, "\u0001$1\u0002")).replace(/\u0001([^\u0002]+)\u0002/g, (x, b) => `<span class="bos"></span>${ip ? `<small class="sec">(${shuffle(b.split("|").map(v => v.trim())).map(esc).join(" / ")})</small>` : ""}`);
+    const tetikli = q => { let h = esc(q.soru); if (ip) q.tetik.forEach(t => { h = h.replace(esc(t), `<u><b>${esc(t)}</b></u>`); }); return h; };
+    let govde = "", anahtar = "";
+    if (ip) govde += `<section class="s"><h3>Hatırla</h3><ul class="hk">${d.akildaKalsin.map(a => `<li>${esc(plain(a))}</li>`).join("")}</ul></section>`;
+    govde += `<section class="s"><h3>Hatırla ve Tekrarla</h3><p class="yon">Boşlukları doldur.${ip ? " Parantezdeki seçeneklerden doğrusunu yaz." : ""}</p><ol class="ht">${d.tekrar.map(t => `<li>${bos(t.c)} <small class="sy">(${esc(t.s)})</small></li>`).join("")}</ol>${deg("Bu bölümü")}</section>`;
+    anahtar += `<div class="ak"><h4>Hatırla ve Tekrarla</h4><ol class="ht">${d.tekrar.map(t => `<li>${esc(t.c.replace(/\{([^|{}]+)[^{}]*\}/g, "【$1】")).replace(/【([^】]+)】/g, "<b><u>$1</u></b>")}</li>`).join("")}</ol></div>`;
+    (d.kisaCevap || []).forEach((q, n) => {
+      govde += `<section class="s sq"><h3>Kısa cevap ${n + 1}</h3><p class="ms">${tetikli(q)}</p>${ip ? `<p class="kn">💡 ${esc(q.okut[0])}</p><div class="ps">${q.parcalar.map(p => `<div class="p"><span>${esc(p.bas)}</span><i></i></div>`).join("")}</div>` : alan(4)}${deg("Bu soruyu")}</section>`;
+      anahtar += `<div class="ak"><h4>Kısa cevap ${n + 1}</h4><p><b>Bu kadarı yeter:</b> ${esc(q.kisa)}</p><p class="uz">Uzun örnek: ${esc(q.cevap)}</p><p class="uz">Puan getiren parçalar: ${q.anahtarlar.map(a => "☐ " + esc(a.ad)).join(" &nbsp; ")}</p><p class="uz">(${esc(q.sayfa)})</p></div>`;
+    });
+    const w = open("", "_blank");
+    if (!w) { alert("Yazdırma penceresi açılamadı. Tarayıcının açılır pencere engelini kapatıp tekrar dene."); return; }
+    w.document.write(`<!doctype html><html lang="tr"><head><meta charset="utf-8"><title>${esc(S.ders.ders)} · ${esc(d.baslik)} · Çalışma kâğıdı</title><style>
+      body{font-family:Nunito,Segoe UI,Arial,sans-serif;color:#111;margin:14mm;font-size:12.5pt;line-height:1.45}
+      header{display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid #111;padding-bottom:6px;margin-bottom:10px} header small{display:block;color:#444} h1{font-size:15pt;margin:0}
+      .bilgi{text-align:right;font-size:11pt;white-space:nowrap} h3{margin:12px 0 4px;font-size:13pt} .s{break-inside:avoid-page;margin-bottom:10px;padding-bottom:6px;border-bottom:1px dashed #bbb}
+      .ms{margin:4px 0} .kn{margin:2px 0 4px;font-size:11pt;background:#fff6d6;border-left:3px solid #e0b100;padding:3px 8px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .ps .p{display:flex;align-items:flex-end;gap:6px;margin:8px 0} .ps .p span{white-space:nowrap;font-weight:600} .ps .p i{flex:1;border-bottom:1.5px solid #555;height:22px}
+      .alan{border:1px solid #9aa4b5;border-radius:6px;margin:4px 0} .cizgili{background-image:repeating-linear-gradient(transparent 0,transparent calc(9mm - 1px),#b8c0cf calc(9mm - 1px),#b8c0cf 9mm);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .deg{font-size:10.5pt;color:#333;margin:6px 0 0} .yon{margin:2px 0;color:#333} .ht li{margin:8px 0} .bos{display:inline-block;min-width:34mm;border-bottom:1.5px solid #333;height:1em;vertical-align:baseline} .sec{color:#555} .sy{color:#888;font-size:9pt}
+      .hk{font-size:11.5pt;margin:2px 0} .anahtar{break-before:page} .anahtar h2{font-size:14pt;border-bottom:2px solid #111;padding-bottom:4px} .ak{break-inside:avoid-page;margin:8px 0;padding-bottom:6px;border-bottom:1px dashed #ccc} .ak h4{margin:4px 0} .ak p{margin:2px 0} .uz{font-size:10.5pt;color:#333}
+      @media print{body{margin:10mm 12mm}}</style></head><body>
+      <header><div><h1>${esc(S.ders.ders)} · ${esc(d.baslik)}</h1><small>${esc(d.unite)} · ${esc(d.sayfalar)} · ${ip ? "İpuçlu" : "Sınav gibi"}</small></div><div class="bilgi">Ad: ______________<br>Tarih: ____ / ____</div></header>
+      ${govde}
+      ${o.anahtar ? `<section class="anahtar"><h2>Cevap anahtarı · ${esc(d.baslik)}</h2>${anahtar}</section>` : ""}
+      <script>window.onload=()=>setTimeout(()=>print(),400)<\/script></body></html>`);
+    w.document.close();
+    KAYIT.olay("konu-kagit", { surum: o.surum, konu: S.konu });
+  }
+
   // ---------- Konuya Bak ----------
   function renderBak(root) {
     const d = S.data, icon = {}; d.kavramlar.forEach(k => icon[k.ad] = k.svg);
     const h = [];
     h.push(`<section>${robotDer(`${rx(d.giris)}`, "buyuk")}</section>`);
+    if (d.tekrar && d.tekrar.length) h.push(`<section class="row"><button class="btn ghost" type="button" data-konu-ck>${ICON.yazdir}Çalışma kâğıdı (yazdır)</button></section>`);
     if (d.hazirlik && d.hazirlik.maddeler) h.push(`<section><div class="sec-title"><h3>Önce Hatırla</h3><span>Bu konu için gereken eski bilgiler</span></div><div class="merak hz-bak">` +
       d.hazirlik.maddeler.map(m => `<details><summary>${esc(m.ad)}${m.sinif ? ` <small>· ${esc(m.sinif)}</small>` : ""}</summary><p>${rx(m.anlatim)}</p>${m.sayiDogrusu ? `<div class="sd-wrap">${sdHTML(m.sayiDogrusu)}</div>` : ""}${m.ornek ? cozumStatik(m.ornek) : ""}</details>`).join("") + `</div></section>`);
     h.push(`<section><div class="sec-title"><h3>Kavramlar</h3><span>${d.kavramlar.length} kavram</span></div><div class="cards${d.kavramlar.some(k => k.sayiDogrusu || k.cozum) ? " genis" : ""}">` +
@@ -840,6 +1066,7 @@
     root.innerHTML = h.join("");
     if (isEn()) renderWall($("#bakWall", root), wordsOf(d), { baslik: `${d.unite} — ${d.baslik}`, kartlar: kartlarOf(S.konu) });
     siradaki(root, "Tekrar", () => gitSekme("tekrar"));
+    const kck = $("[data-konu-ck]", root); if (kck) kck.onclick = konuKagitSec;
     // Ara Durak'tan "Konuda bak" ile gelindiyse ilgili kavram kartını göster ve vurgula
     if (S.hedef) {
       const c = $$(".card", root).find(x => x.dataset.ad === S.hedef); S.hedef = null;
@@ -2299,7 +2526,7 @@
     soruAkisi(root, {
       anahtar: "akis:test:" + S.konu, tur: "test",
       hazirla: () => [...d.sorular.map((q, n) => ({ q, n })),
-        ...TEKRAR.sec(2, new Set((S.isinma && S.isinma[S.konu] || []).map(x => x.q.soru))).map((x, i) => ({ q: x.q, n: 1000 + i, eski: true, konu: x.konu, kavramAd: x.kavram.ad }))],
+        ...(d.eskiKonu === false ? [] : TEKRAR.sec(2, new Set((S.isinma && S.isinma[S.konu] || []).map(x => x.q.soru)))).map((x, i) => ({ q: x.q, n: 1000 + i, eski: true, konu: x.konu, kavramAd: x.kavram.ad }))],
       kicker: it => it.eski ? `<span class="eski-etiket">${ICON.tekrar}Eski konudan · ${konuNoOf(it.konu)}. konu</span>` : "Konu testi",
       kavram: it => it.eski ? ((S.cache[it.konu] || {}).kavramlar || []).find(x => x.ad === it.kavramAd) || null : it.q.kavram ? d.kavramlar.find(x => x.ad === it.q.kavram) || null : null,
       sonuc: (box, it, r, yeni) => { if (yeni && it.eski) TEKRAR.isle(it.konu, it.kavramAd, r === 1); },

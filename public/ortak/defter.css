@@ -1619,3 +1619,26 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .yz-ck-s select { font: inherit; padding: 8px; border-radius: 10px; border: 1px solid var(--line, #ccd); background: var(--surface-2, #fff); color: inherit; }
 .yz-ck-s label, .yz-ck-c { display: flex; gap: 8px; align-items: baseline; font-size: 15px; }
 .yz-ck-kutu .row { display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
+
+/* ---------- Pilot (5 Kasım 2026): soru kelimesine dokun, Hatırla ve Tekrarla, Kısa Cevap ---------- */
+.tetik-dok { background: #ffe58a; color: #1b2340; border-radius: 6px; padding: 0 4px; cursor: pointer; font-weight: 800; animation: tetikNabiz 1.4s ease-in-out infinite; }
+.tetik-dok.tamam { animation: none; background: var(--ok-soft, #dff3e4); color: var(--ok, #1f7a3a); cursor: default; }
+.tetik-dok.yanip { animation: tetikYan .5s ease-in-out infinite alternate; }
+@keyframes tetikNabiz { 0%, 100% { box-shadow: 0 0 0 0 rgba(233, 184, 0, .75); } 50% { box-shadow: 0 0 0 7px rgba(233, 184, 0, 0); } }
+@keyframes tetikYan { from { background: #ffe58a; } to { background: #ffb347; } }
+.opts.bekle.dokun::before { content: "Önce parlayan soru kelimesine dokun…"; }
+@media (prefers-reduced-motion: reduce) { .tetik-dok, .tetik-dok.yanip { animation: none; outline: 2px dashed #e9b800; } }
+.og-ht-not { margin: 10px 0 0; padding: 8px 12px; border-radius: 10px; background: #ffe6d5; color: #8a3a12; font-weight: 700; }
+.og-ht-not.salla { animation: hnSalla .4s; }
+.og-soru { font-size: 19px; font-weight: 700; line-height: 1.55; margin: 8px 0 12px; }
+.og-kisa .kn { margin: 6px 0 10px; padding: 8px 12px; border-radius: 10px; background: var(--gold-soft, #fff4cc); box-shadow: inset 4px 0 0 #e9b800; }
+.og-yaz { display: grid; gap: 12px; margin: 10px 0 14px; }
+.og-p { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.og-p > span { font-weight: 800; min-width: 130px; }
+.og-p input { flex: 1; min-width: 220px; font: inherit; font-size: 17px; padding: 9px 12px; border: 2px solid var(--line); border-radius: 10px; background: var(--surface); color: inherit; }
+.og-p input:focus, .og-ta:focus { outline: 3px solid rgba(255, 122, 51, .35); border-color: var(--accent); }
+.og-ta { width: 100%; min-height: 120px; font: inherit; font-size: 17px; padding: 10px 12px; border: 2px solid var(--line); border-radius: 12px; background: var(--surface); color: inherit; box-sizing: border-box; }
+.og-ipucu { margin: 8px 0 14px; padding: 12px 14px; border-radius: 12px; background: var(--surface-2); display: grid; gap: 10px; }
+.og-p-ip ul { margin: 4px 0 0; padding-left: 20px; }
+.og-uzun { margin: 10px 0; } .og-uzun summary { cursor: pointer; font-weight: 700; }
+.og-okut .opt { text-align: left; }

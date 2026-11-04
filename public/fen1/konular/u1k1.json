@@ -21,7 +21,10 @@
     ],
     "dogru": 1,
     "ipucu": "\"Akılda kalsın\" ifadesini hatırla: uzay taksisi. Taksi ne yapar?",
-    "aciklama": "Roket, uzay araçlarını yeryüzünden yörüngeye veya daha uzağa taşır. (s. 18)"
+    "aciklama": "Roket, uzay araçlarını yeryüzünden yörüngeye veya daha uzağa taşır. (s. 18)",
+    "tetik": [
+     "nedir"
+    ]
    }
   },
   {
@@ -40,7 +43,10 @@
     ],
     "dogru": 0,
     "ipucu": "Uydunun hareketini düşün: bir şeyin etrafında ne yapıyordu?",
-    "aciklama": "Yapay uydular belirli bir yörüngede dolanır; iletişim, gözlem ve keşif için kullanılır. (s. 18)"
+    "aciklama": "Yapay uydular belirli bir yörüngede dolanır; iletişim, gözlem ve keşif için kullanılır. (s. 18)",
+    "tetik": [
+     "ne yapar"
+    ]
    }
   },
   {
@@ -59,7 +65,10 @@
     ],
     "dogru": 1,
     "ipucu": "Sonda bir robottur. Robotun içinde insan var mı?",
-    "aciklama": "Uzay sondası robotik bir araçtır, içinde insan yoktur ve Dünya'dan kontrol edilir. (s. 18)"
+    "aciklama": "Uzay sondası robotik bir araçtır, içinde insan yoktur ve Dünya'dan kontrol edilir. (s. 18)",
+    "tetik": [
+     "kim"
+    ]
    }
   },
   {
@@ -78,7 +87,10 @@
     ],
     "dogru": 2,
     "ipucu": "\"Astronot servisi\" ifadesini hatırla. Servis kimleri taşır?",
-    "aciklama": "Uzay mekiği astronotları, büyük uyduları ve gerekli malzemeleri uzay istasyonuna taşır. (s. 18)"
+    "aciklama": "Uzay mekiği astronotları, büyük uyduları ve gerekli malzemeleri uzay istasyonuna taşır. (s. 18)",
+    "tetik": [
+     "neleri"
+    ]
    }
   },
   {
@@ -97,7 +109,10 @@
     ],
     "dogru": 0,
     "ipucu": "\"Ev + laboratuvar\" ifadesini düşün. Evde ne yapılır, laboratuvarda ne yapılır?",
-    "aciklama": "Uzay istasyonunda astronotlar yaşar ve düşük yer çekimli ortamda deney yapar. (s. 19)"
+    "aciklama": "Uzay istasyonunda astronotlar yaşar ve düşük yer çekimli ortamda deney yapar. (s. 19)",
+    "tetik": [
+     "ne yapar"
+    ]
    }
   },
   {
@@ -116,7 +131,10 @@
     ],
     "dogru": 1,
     "ipucu": "Dürbünle ne yaparız?",
-    "aciklama": "Teleskoplar gök cisimlerini gözlemlemek için kullanılır. (s. 19)"
+    "aciklama": "Teleskoplar gök cisimlerini gözlemlemek için kullanılır. (s. 19)",
+    "tetik": [
+     "ne için"
+    ]
    }
   }
  ],
@@ -239,7 +257,10 @@
    ],
    "dogru": 1,
    "ipucu": "Uzayın tanımında \"tamamen boş olmayan\" ifadesi geçiyordu.",
-   "aciklama": "Uzay tamamen boş değildir; çok az miktarda gaz, toz ve çeşitli parçacıklar bulunur. (s. 16)"
+   "aciklama": "Uzay tamamen boş değildir; çok az miktarda gaz, toz ve çeşitli parçacıklar bulunur. (s. 16)",
+   "tetik": [
+    "hangisi doğrudur"
+   ]
   },
   {
    "soru": "Uzay araçlarını yeryüzünden yörüngeye taşıyan araç hangisidir?",
@@ -250,7 +271,10 @@
    ],
    "dogru": 0,
    "ipucu": "Uzay taksisi hangisiydi?",
-   "aciklama": "Uzay roketi, uzay araçlarını yörüngeye veya daha uzak bölgelere taşır. (s. 18)"
+   "aciklama": "Uzay roketi, uzay araçlarını yörüngeye veya daha uzak bölgelere taşır. (s. 18)",
+   "tetik": [
+    "hangisidir"
+   ]
   },
   {
    "soru": "Bir gök cismini incelemek için gönderilen, Dünya'dan kontrol edilen robot araç hangisidir?",
@@ -261,7 +285,10 @@
    ],
    "dogru": 1,
    "ipucu": "\"Robot kâşif\" hangisiydi?",
-   "aciklama": "Uzay sondası robotik bir araçtır ve Dünya'dan kontrol edilir. (s. 18)"
+   "aciklama": "Uzay sondası robotik bir araçtır ve Dünya'dan kontrol edilir. (s. 18)",
+   "tetik": [
+    "hangisidir"
+   ]
   },
   {
    "soru": "İletişim, gözlem ve keşif için Dünya'nın çevresinde dolanan araç hangisidir?",
@@ -272,7 +299,10 @@
    ],
    "dogru": 2,
    "ipucu": "Televizyon ve hava durumu hangi araç sayesinde çalışıyordu?",
-   "aciklama": "Yapay uydular belirli bir yörüngede dolanır ve Dünya'dan kontrol edilir. (s. 18)"
+   "aciklama": "Yapay uydular belirli bir yörüngede dolanır ve Dünya'dan kontrol edilir. (s. 18)",
+   "tetik": [
+    "hangisidir"
+   ]
   },
   {
    "soru": "Uzay mekiğini kim kontrol eder?",
@@ -283,7 +313,10 @@
    ],
    "dogru": 1,
    "ipucu": "Mekik bir \"astronot servisi\". Servisi kim kullanır?",
-   "aciklama": "Mekiğin kontrolünü içinde görev alan astronotlar yapar. (s. 18)"
+   "aciklama": "Mekiğin kontrolünü içinde görev alan astronotlar yapar. (s. 18)",
+   "tetik": [
+    "kim"
+   ]
   },
   {
    "soru": "Astronotların düşük yer çekimli ortamda deney yaptığı araç hangisidir?",
@@ -294,7 +327,10 @@
    ],
    "dogru": 0,
    "ipucu": "Uzaydaki ev + laboratuvar hangisiydi?",
-   "aciklama": "Uzay istasyonunda astronotların yaşam alanı ve deney donanımı vardır. (s. 19)"
+   "aciklama": "Uzay istasyonunda astronotların yaşam alanı ve deney donanımı vardır. (s. 19)",
+   "tetik": [
+    "hangisidir"
+   ]
   },
   {
    "soru": "Hangisi güneş paneli kullanmaz?",
@@ -305,7 +341,10 @@
    ],
    "dogru": 2,
    "ipucu": "Gruplayalım bölümündeki \"Güneş paneli kullanır mı?\" sorusunu hatırla.",
-   "aciklama": "Kitaptaki örnek: Yapay uyduda güneş panelleri kullanılır, uzay roketinde kullanılmaz. (s. 24)"
+   "aciklama": "Kitaptaki örnek: Yapay uyduda güneş panelleri kullanılır, uzay roketinde kullanılmaz. (s. 24)",
+   "tetik": [
+    "kullanmaz"
+   ]
   },
   {
    "soru": "Önceden tek kullanımlık olan, artık yeniden kullanılabilen araç hangisidir?",
@@ -316,7 +355,10 @@
    ],
    "dogru": 0,
    "ipucu": "Uzay istasyonu yeniden kullanılamıyordu. Diğer iki seçeneği düşün.",
-   "aciklama": "Yeni teknolojiler sayesinde uzay roketleri yeniden kullanılabilir şekilde üretiliyor. (s. 18)"
+   "aciklama": "Yeni teknolojiler sayesinde uzay roketleri yeniden kullanılabilir şekilde üretiliyor. (s. 18)",
+   "tetik": [
+    "hangisidir"
+   ]
   },
   {
    "soru": "Teleskoplar Dünya'nın yörüngesine çıkarılınca ne olur?",
@@ -327,7 +369,158 @@
    ],
    "dogru": 2,
    "ipucu": "Uzaya çıkarmanın amacı daha iyi görmektir.",
-   "aciklama": "Yörüngedeki teleskoplar daha net görüntüler elde eder. (s. 19)"
+   "aciklama": "Yörüngedeki teleskoplar daha net görüntüler elde eder. (s. 19)",
+   "tetik": [
+    "ne olur"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Uzay, Dünya'nın {atmosferi dışında|içinde|altında} yer alan çok geniş bir ortamdır. {Tamamen boş değildir|Tamamen boştur}; çok az gaz, toz ve parçacık bulunur.",
+   "s": "s. 16"
+  },
+  {
+   "c": "Uzay roketi, uzay araçlarını yeryüzünden {yörüngeye|yeraltına|okyanusa} taşır. Önceden tek kullanımlıktı, artık {yeniden kullanılabilir|tek kullanımlık} biçimde üretiliyor.",
+   "s": "s. 18"
+  },
+  {
+   "c": "Yapay uydu, Dünya'nın çevresinde belirli bir {yörüngede dolanır|yüzeyinde yürür|çevresinde durur}. Enerjisini {güneş panellerinden|rüzgâr türbininden|yakıttan} alır.",
+   "s": "s. 18"
+  },
+  {
+   "c": "Uzay sondası, bir gök cismini incelemek için gönderilen {robotik|insanlı} bir araçtır; {Dünya'dan kontrol edilir|içindeki astronotlar kontrol eder}.",
+   "s": "s. 18"
+  },
+  {
+   "c": "Uzay mekiğini içindeki {astronotlar|Dünya'daki bilgisayarlar|robotlar} kontrol eder. Astronotları, büyük uyduları ve malzemeleri {uzay istasyonuna|Ay'ın yüzeyine|gözlemevine} taşır.",
+   "s": "s. 18"
+  },
+  {
+   "c": "Uzay istasyonunda astronotlar {düşük|yüksek} yer çekimli ortamda deney yapar. Yeniden kullanılamaz; ömrü {bakım ve onarımla|yakıt eklenerek|boyanarak} uzatılır.",
+   "s": "s. 19"
+  },
+  {
+   "c": "Teleskop, gök cisimlerini {gözlemlemek|taşımak|kontrol etmek} için kullanılır. Dünya'nın yörüngesine çıkarılırsa {daha net|daha bulanık} görüntü elde edilir.",
+   "s": "s. 19"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Uzay mekiği ile uzay roketi arasındaki bir benzerliği ve bir farkı yazınız.",
+   "tetik": [
+    "benzerliği",
+    "farkı"
+   ],
+   "okut": [
+    "Önce benzerliği, sonra farkı yaz (iki parça).",
+    "Yalnız bir tanım yaz: “X, … araçtır.”",
+    "Evet ya da hayır yaz, sonra nedenini ekle."
+   ],
+   "parcalar": [
+    {
+     "bas": "Benzerlik:",
+     "ornek": "İkisi de yeniden kullanılabilir.",
+     "havuz": [
+      "İkisi de tek kullanımlıktır.",
+      "İkisi de insansız araçtır."
+     ],
+     "k": [
+      "yeniden"
+     ]
+    },
+    {
+     "bas": "Fark:",
+     "ornek": "Mekiği içindeki astronotlar kontrol eder, roket ise Dünya'dan kontrol edilebilir.",
+     "havuz": [
+      "Mekik uyduları taşır, roket hiçbir şey taşımaz.",
+      "Mekik tek kullanımlıktır, roket yeniden kullanılabilir."
+     ],
+     "k": [
+      "astronot",
+      "dünya"
+     ]
+    }
+   ],
+   "kisa": "Benzerlik: ikisi de yeniden kullanılabilir. Fark: mekiği astronotlar, roketi Dünya'dan kontrol eder.",
+   "cevap": "Benzerlik: İkisi de yeniden kullanılabilir. Fark: Mekiği içindeki astronotlar kontrol eder, roket ise Dünya'dan kontrol edilebilir.",
+   "anahtarlar": [
+    {
+     "ad": "ikisi de yeniden kullanılabilir",
+     "k": [
+      "yeniden"
+     ]
+    },
+    {
+     "ad": "mekiği astronotlar kontrol eder",
+     "k": [
+      "astronot"
+     ]
+    },
+    {
+     "ad": "roket Dünya'dan kontrol edilir",
+     "k": [
+      "dünya"
+     ]
+    }
+   ],
+   "sayfa": "s. 18"
+  },
+  {
+   "soru": "Uzay sondasının görevi nedir ve nasıl kontrol edilir? Yazınız.",
+   "tetik": [
+    "görevi nedir",
+    "nasıl kontrol edilir"
+   ],
+   "okut": [
+    "Görevini yaz, sonra kim kontrol eder yaz (iki parça).",
+    "Benzerlik ve fark yaz.",
+    "Sebep ve sonuç yaz: “… çünkü …”"
+   ],
+   "parcalar": [
+    {
+     "bas": "Görevi:",
+     "ornek": "Bir gök cismini ya da uzaydaki olayları incelemek.",
+     "havuz": [
+      "Astronotları uzay istasyonuna taşımak.",
+      "Dünya'nın çevresinde dolanarak haberleşmeyi sağlamak."
+     ],
+     "k": [
+      "incele"
+     ]
+    },
+    {
+     "bas": "Kontrol:",
+     "ornek": "Dünya'dan kontrol edilir.",
+     "havuz": [
+      "İçindeki astronotlar kontrol eder.",
+      "Uzay istasyonundaki personel kontrol eder."
+     ],
+     "k": [
+      "dünya"
+     ]
+    }
+   ],
+   "kisa": "Gök cismini ya da uzaydaki olayları incelemek için gönderilir; Dünya'dan kontrol edilir.",
+   "cevap": "Uzay sondası, bir gök cismini veya uzayda meydana gelen olayları incelemek için gönderilen robotik uzay aracıdır. Dünya'dan kontrol edilebilir.",
+   "anahtarlar": [
+    {
+     "ad": "gök cismini / uzay olaylarını incelemek",
+     "k": [
+      "incele"
+     ]
+    },
+    {
+     "ad": "Dünya'dan kontrol edilir",
+     "k": [
+      "dünya"
+     ]
+    }
+   ],
+   "sayfa": "s. 18"
   }
  ]
 }
