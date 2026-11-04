@@ -1642,3 +1642,14 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .og-p-ip ul { margin: 4px 0 0; padding-left: 20px; }
 .og-uzun { margin: 10px 0; } .og-uzun summary { cursor: pointer; font-weight: 700; }
 .og-okut .opt { text-align: left; }
+
+/* "Yazılıda çıkacak" rozeti */
+.yz-rozet { display: flex; flex-wrap: wrap; gap: 6px; }
+.yzr { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 800; border: 1.5px solid currentColor; }
+.yzr svg { width: 14px; height: 14px; }
+.yzr small { font-weight: 700; opacity: .8; }
+.yzr.ok { color: #9a3d00; background: #fff1d6; border-color: #e8a13a; }
+.yzr.belki { color: var(--ink-2, #3b4660); background: transparent; font-weight: 700; }
+.yzr.yok { color: var(--ink-3, #6b7488); background: transparent; font-weight: 600; border-style: dashed; }
+:root[data-theme="dark"] .yzr.ok, [data-theme="dark"] .yzr.ok { color: #ffd28a; background: rgba(232,161,58,.16); border-color: #e8a13a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .yzr.ok { color: #ffd28a; background: rgba(232,161,58,.16); border-color: #e8a13a; } }

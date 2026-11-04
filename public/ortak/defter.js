@@ -1077,14 +1077,15 @@
   // ---------- Tekrar ----------
   function renderTekrar(root) {
     const d = S.data;
-    const games = [["kart", "Hafıza Kartları"], ["eslestir", "Eşleştir"]];
-    if (d.gruplar && d.gruplar.length) games.push(["grupla", "Gruplayalım"]);
+    // Dikkat pilotu (d.dikkat): Hatırla ve Tekrarla kart + boşluk işini yaptığı için burada yalnız Eşleştir kalır.
+    const games = d.dikkat ? [["eslestir", "Eşleştir"]] : [["kart", "Hafıza Kartları"], ["eslestir", "Eşleştir"]];
+    if (!d.dikkat && d.gruplar && d.gruplar.length) games.push(["grupla", "Gruplayalım"]);
     if (isEn() && d.kelimeOyunlari !== false) games.push(["dinle", "Dinle ve Bul"], ["kur", "Kelimeyi Kur"]); // dilbilgisi konularında kapatılır
     if (d.cumleler && d.cumleler.length) games.push(["cumle", "Cümle Kur"]);
     if (d.resimEslestir) games.push(["resim", "Resim Eşleştir"]);
     if (d.hatalar && d.hatalar.length) games.push(["hata", "Hatayı Bul"]);
-    let g = store.get(key("oyun"), "kart"); if (!games.some(x => x[0] === g)) g = "kart";
-    root.innerHTML = `<div class="subtabs">${games.map(([k, n]) => `<button class="subtab" data-g="${k}" aria-pressed="${k === g}">${n}</button>`).join("")}</div><div id="game"></div>`;
+    let g = store.get(key("oyun"), "kart"); if (!games.some(x => x[0] === g)) g = games[0][0];
+    root.innerHTML = `<div class="subtabs"${games.length < 2 ? " hidden" : ""}>${games.map(([k, n]) => `<button class="subtab" data-g="${k}" aria-pressed="${k === g}">${n}</button>`).join("")}</div><div id="game"></div>`;
     if (S.durakAsil) { if (sinavVar(S.durakAsil)) siradaki(root, "Sınav Provası", () => gitSekme("sinav")); else { const n = sonrakiKonu(); if (n) siradaki(root, n.baslik, () => { S.donus = null; openKonu(n.id, true); }); } }
     else siradaki(root, "Test", () => gitSekme("test"));
     $$(".subtab", root).forEach(b => b.onclick = () => { g = b.dataset.g; store.set(key("oyun"), g); $$(".subtab", root).forEach(x => x.setAttribute("aria-pressed", x === b)); run(); });
@@ -4470,13 +4471,23 @@
     S.seritGuncelle && S.seritGuncelle();
   }
 
+  // "Yazılıda çıkacak" rozeti: ders.json `yaziliRozet[konuId] = {kod, y1: true/false, y2: [senaryo no…]}` (MEB konu-soru dağılım tablosundan).
+  // y1 = okulun seçtiği 1. ortak yazılı senaryosunda var; y2 = 2. ortak yazılıda bu kazanımın bulunduğu senaryolar (okulun seçimi henüz bilinmiyor).
+  function yaziliRozet(id) {
+    const r = S.ders && S.ders.yaziliRozet && S.ders.yaziliRozet[id]; if (!r) return "";
+    const p = [];
+    if (r.y1) p.push(`<span class="yzr ok" title="${esc(r.kod)}">Yazılıda çıkacak <small>1. ortak yazılı</small></span>`);
+    if (r.y2 && r.y2.length) p.push(`<span class="yzr belki" title="${esc(r.kod)}">${r.y2.length === 5 ? "2. ortak yazılıda her senaryoda var" : `2. ortak yazılıda 5 senaryonun ${r.y2.length}'inde var`}</span>`);
+    if (!p.length) p.push(`<span class="yzr yok" title="${esc(r.kod)}">Ortak yazılıda bu kazanımdan soru yok</span>`);
+    return `<div class="yz-rozet">${p.join("")}</div>`;
+  }
   function renderKonu(no) {
     const d = S.data; S.durakAsil = null;
     const donus = S.donus && allTopics().find(k => k.id === S.donus && isDurak(k));
     const vade = !donus && allTopics().find(k => isDurak(k) && k.hazir && durakKayit.zaman(k.id));
     $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(d.unite)}</span><span class="pill">Konu ${no}</span><span class="pill">${esc(d.sayfalar)}</span>${donus ? `<button class="btn ghost dk-don" data-donus>← Ara Durak'a dön</button>` : ""}</div>
       ${vade ? `<div class="dk-vade">${ICON.tekrar}<span><b>${esc(vade.baslik)}</b> için tekrar zamanı geldi.</span><button class="btn" data-vade="${esc(vade.id)}">Aç</button></div>` : ""}
-      <h2>${esc(d.baslik)}</h2>
+      <h2>${esc(d.baslik)}</h2>${yaziliRozet(S.konu)}
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="ogren">${ICON.ogren}Öğren</button>
         <button class="tab" role="tab" data-tab="bak">${ICON.bak}Konuya Bak</button>
