@@ -59,6 +59,7 @@ N_TABLO2 = "Sport · Equipment · Place · Frequency → diyalogdan kelimeleri k
 Y = Yazili("ing1", "d1y1",
     baslik="1. Dönem 1. Yazılı", ders="İngilizce (MEB)", senaryo="Senaryo 1", sure=40, tarih="2026-11-12",
     dagilim={K1: 1, K2: 1, K3: 1, K4: 1},
+    mebToplam=10, mebHaric=[],   # MEB dokümanının 10 sorusunun hepsi Senaryo 1'in çıktılarından (dosya başı notu)
     giris="Okulun seçtiği Senaryo 1'de <b>4 soru</b> var: her konudan 1 soru, her soruda 4–5 küçük madde. "
           "Önce <b>★★★ Banko</b> soruları sağlamla: cevap tek kelime ya da metinden kopyalanan bir parça. Kalıbını bilirsen puan kesin.",
     kapsamDisi=["Unit 3: Biographies, Unit 4: Wild Animals, Unit 5: Television", "Dinleme (Listening) ve konuşma (Speaking) etkinlikleri"],
