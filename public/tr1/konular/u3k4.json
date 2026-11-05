@@ -89,7 +89,13 @@
     ],
     "dogru": 0,
     "ipucu": "Akılda kalsın: Neye göre bakıyorum?",
-    "aciklama": "Neye göre baktığımız ölçüttür; burada ölçüt saygıdır (s. 150)."
+    "aciklama": "Neye göre baktığımız ölçüttür; burada ölçüt saygıdır (s. 150).",
+    "tetik": [
+     "nedir"
+    ],
+    "bolge": [
+     "“saygı” nedir"
+    ]
    }
   },
   {
@@ -108,7 +114,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kelimenin içine bak: farklı …",
-    "aciklama": "“-den farklı olarak” ayrı yönü, yani farklılığı gösterir."
+    "aciklama": "“-den farklı olarak” ayrı yönü, yani farklılığı gösterir.",
+    "tetik": [
+     "neyi anlatmak"
+    ],
+    "bolge": [
+     "neyi anlatmak için kullanılır"
+    ]
    }
   },
   {
@@ -127,7 +139,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: Aynı ölçüt, iki kanıt.",
-    "aciklama": "İki metne de aynı ölçütle bakılır, her metinden kanıt bulunur."
+    "aciklama": "İki metne de aynı ölçütle bakılır, her metinden kanıt bulunur.",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "doğru yolu hangisidir"
+    ]
    },
    "cozum": {
     "baslik": "Birlikte çözelim",
@@ -169,7 +187,13 @@
     ],
     "dogru": 0,
     "ipucu": "Akılda kalsın: Önce eksenleri oku. Yatay eksen alttadır.",
-    "aciklama": "Yatay eksende yıllar, dikey eksende arama sayısı vardır (s. 151)."
+    "aciklama": "Yatay eksende yıllar, dikey eksende arama sayısı vardır (s. 151).",
+    "tetik": [
+     "ne yazar"
+    ],
+    "bolge": [
+     "yatay eksende ne yazar"
+    ]
    }
   },
   {
@@ -188,7 +212,13 @@
     ],
     "dogru": 1,
     "ipucu": "Akılda kalsın: Bir öncekine bak. 8.716 mı büyük, 4.840 mı?",
-    "aciklama": "8.716, 4.840'tan büyüktür; 2014'te artış olmuştur (s. 151)."
+    "aciklama": "8.716, 4.840'tan büyüktür; 2014'te artış olmuştur (s. 151).",
+    "tetik": [
+     "ne söylenir"
+    ],
+    "bolge": [
+     "2014 için ne söylenir"
+    ]
    },
    "cozum": {
     "baslik": "Birlikte çözelim",
@@ -226,7 +256,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: Sayıyla kanıtla.",
-    "aciklama": "Yargı, grafikteki sayılarla kontrol edilir."
+    "aciklama": "Yargı, grafikteki sayılarla kontrol edilir.",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "nasıl doğrularız"
+    ]
    },
    "sende": {
     "baslik": "Şimdi sen çöz",
@@ -352,7 +388,13 @@
    "dogru": 0,
    "ipucu": "Akılda kalsın: Neye göre bakıyorum? Kitaptaki kutuları hatırla.",
    "aciklama": "Kitaptaki dört ölçüt saygı, zorbalık, empati ve sevgi odaklı iletişimdir (s. 150).",
-   "kavram": "Karşılaştırma Ölçütü"
+   "kavram": "Karşılaştırma Ölçütü",
+   "tetik": [
+    "hangi ölçütlere"
+   ],
+   "bolge": [
+    "hangi ölçütlere göre karşılaştırtır"
+   ]
   },
   {
    "soru": "Hangisi bir farklılık cümlesidir?",
@@ -364,7 +406,13 @@
    "dogru": 1,
    "ipucu": "Farklılık ipuçlarını ara: oysa, ise …",
    "aciklama": "“ise” ile iki metnin ayrı yönü anlatılmış; bu bir farklılıktır.",
-   "kavram": "Benzerlik ve Farklılık"
+   "kavram": "Benzerlik ve Farklılık",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bir farklılık cümlesidir"
+   ]
   },
   {
    "soru": "Metne göre mektup ile e-posta hangi yönden benzerdir?",
@@ -395,7 +443,14 @@
      "Kanıt: İkisinin ortak yönünü söyleyen cümleyi bul.",
      "Şıkları ele: Hız ve araç ortak mı, yoksa metinde farklı mı anlatılıyor?"
     ]
-   }
+   },
+   "tetik": [
+    "hangi yönden"
+   ],
+   "bolge": [
+    "hangi yönden benzerdir"
+   ],
+   "serit": "Mektup ile e-postanın ortak yönü"
   },
   {
    "soru": "“Sağlıklı Aile”de koşulsuz seven kişi sevdiğini dinler, anlamaya çalışır (s. 149). “Ekranın Öbür Ucu”nda yazmadan önce “Bu söz bana söylense ne hissederdim?” diye düşünmek öneriliyor. İki metin hangi ölçütte benzeşiyor?",
@@ -407,7 +462,13 @@
    "dogru": 0,
    "ipucu": "Karşındakinin yerine kendini koymaya ne ad verilir?",
    "aciklama": "İki metin de karşımızdakini anlamayı önerir; ortak ölçüt empatidir (s. 149–150).",
-   "kavram": "Metinleri Karşılaştırma"
+   "kavram": "Metinleri Karşılaştırma",
+   "tetik": [
+    "hangi ölçütte"
+   ],
+   "bolge": [
+    "hangi ölçütte benzeşiyor"
+   ]
   },
   {
    "soru": "İki metin hangi ölçüte göre karşılaştırılabilir?",
@@ -444,7 +505,14 @@
      "Kanıt: İki metinde de geçen bilgiyi taşıyan cümleyi bul.",
      "Şıkları ele: Uydu adı ve keşif yılı metinlerde geçiyor mu?"
     ]
-   }
+   },
+   "tetik": [
+    "hangi ölçüte"
+   ],
+   "bolge": [
+    "hangi ölçüte göre karşılaştırılabilir"
+   ],
+   "serit": "İki metinde de bulunan ortak ölçüt"
   },
   {
    "soru": "Bir çubuk grafikte çubuğun boyu neyi gösterir?",
@@ -456,7 +524,13 @@
    "dogru": 1,
    "ipucu": "Akılda kalsın: Önce eksenleri oku. Çubuk hangi eksene doğru uzanıyor?",
    "aciklama": "Çubuk ne kadar uzunsa miktar o kadar büyüktür.",
-   "kavram": "Grafik Okuma"
+   "kavram": "Grafik Okuma",
+   "tetik": [
+    "neyi gösterir"
+   ],
+   "bolge": [
+    "çubuğun boyu neyi gösterir"
+   ]
   },
   {
    "soru": "Kitaptaki grafiğe göre arama sayısının en yüksek olduğu yıl hangisidir?",
@@ -468,7 +542,13 @@
    "dogru": 2,
    "ipucu": "En uzun çubuğu ara.",
    "aciklama": "En yüksek değer 2010'daki 45.172'dir (s. 151).",
-   "kavram": "Grafik Okuma"
+   "kavram": "Grafik Okuma",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en yüksek olduğu yıl hangisidir"
+   ]
   },
   {
    "soru": "Kitaptaki grafikte arama sayısının bir önceki yıla göre arttığı tek yıl hangisidir?",
@@ -480,7 +560,13 @@
    "dogru": 0,
    "ipucu": "Akılda kalsın: Bir öncekine bak. Hangi yıl sayı büyümüş?",
    "aciklama": "2013'te 4.840 olan sayı 2014'te 8.716'ya çıkmıştır (s. 151).",
-   "kavram": "Artış ve Azalma"
+   "kavram": "Artış ve Azalma",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "bir önceki yıla göre arttığı tek yıl hangisidir"
+   ]
   },
   {
    "soru": "Tabloya göre aşağıdakilerden hangisi söylenemez?",
@@ -545,7 +631,14 @@
      "Kanıt: Şıktaki yılların satırlarını bul, sayıları yan yana koy.",
      "Şıkları ele: Hangi yargı sayılarla uyuşmuyor?"
     ]
-   }
+   },
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi söylenemez"
+   ],
+   "serit": "Tablodaki sayılarla çelişen yargı"
   },
   {
    "soru": "“İnsanlar 2016'da telefonla daha az konuşmuştur.” yargısı için hangisi doğrudur?",
@@ -557,7 +650,169 @@
    "dogru": 0,
    "ipucu": "Grafiğin başlığı neyi sayıyor? Bütün telefon konuşmalarını mı?",
    "aciklama": "Grafik yalnızca genel ağ üzerinden yapılan aramaları sayar; bütün konuşmaları göstermez (s. 151).",
-   "kavram": "Grafikten Yargı Doğrulama"
+   "kavram": "Grafikten Yargı Doğrulama",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "yargısı için hangisi doğrudur"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Karşılaştırmaya başlamadan önce neye göre bakacağımızı, yani {ölçütü|başlığı|sonucu} seçeriz.",
+   "s": "s. 150"
+  },
+  {
+   "c": "Kitap, “Sağlıklı Aile” metnini saygı, zorbalık, {empati|hız|renk} ve sevgi odaklı iletişim ölçütleriyle karşılaştırtır.",
+   "s": "s. 150"
+  },
+  {
+   "c": "İki şeyin ortak yönlerine {benzerlik|farklılık}, ayrı yönlerine {farklılık|benzerlik} denir.",
+   "s": "s. 150"
+  },
+  {
+   "c": "Farklılığı anlatırken “oysa, ise, {-den farklı olarak|ikisi de|benzer şekilde}” gibi ifadeler kullanırız.",
+   "s": "s. 150"
+  },
+  {
+   "c": "Grafiği okurken önce başlığa, sonra {yatay ve dikey eksene|en büyük sayıya|renklere} bakarız.",
+   "s": "s. 151"
+  },
+  {
+   "c": "Kitaptaki grafikte arama sayısı yalnızca {2014|2012|2016} yılında bir önceki yıla göre artmıştır.",
+   "s": "s. 151"
+  },
+  {
+   "c": "Grafik sayıları gösterir ama {sebepleri|yılları|değerleri} söylemez.",
+   "s": "s. 151–152"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "İki metni karşılaştırırken nasıl bir yol izlenir? Yazınız.",
+   "tetik": [
+    "nasıl bir yol izlenir"
+   ],
+   "parcalar": [
+    {
+     "bas": "Önce:",
+     "ornek": "Bir karşılaştırma ölçütü seçilir.",
+     "havuz": [
+      "Metinlerin uzunluğu ölçülür.",
+      "Daha güzel olan metin seçilir."
+     ],
+     "k": [
+      "ölçüt"
+     ]
+    },
+    {
+     "bas": "Sonra:",
+     "ornek": "İki metne de aynı ölçütle bakılır, her birinden kanıt bulunur.",
+     "havuz": [
+      "Yalnız bir metin okunur.",
+      "Metnin başlığı değiştirilir."
+     ],
+     "k": [
+      "kanıt"
+     ]
+    }
+   ],
+   "kisa": "Bir ölçüt seçilir; iki metne de bu ölçütle bakılıp her birinden kanıt bulunur.",
+   "cevap": "Önce iki metne neye göre bakacağımızı, yani karşılaştırma ölçütünü seçeriz (ör. saygı). Sonra iki metni de aynı ölçütle okur, her metinden bu ölçütle ilgili bir kanıt bulur ve benzerlik ile farklılıkları yazarız.",
+   "anahtarlar": [
+    {
+     "ad": "ölçüt seçilir",
+     "k": [
+      "ölçüt"
+     ]
+    },
+    {
+     "ad": "her metinden kanıt",
+     "k": [
+      "kanıt"
+     ]
+    }
+   ],
+   "sayfa": "s. 150",
+   "okut": [
+    "karşılaştırmada hangi adımları sırayla izlediğini anlatmanı",
+    "iki metnin konusunu yazmanı",
+    "hangi metni daha çok sevdiğini söylemeni"
+   ],
+   "bolge": [
+    "nasıl bir yol izlenir"
+   ]
+  },
+  {
+   "soru": "Kitaptaki grafiğe göre 2013'ten 2014'e arama sayısı nasıl değişmiştir? Sayılarla yazınız.",
+   "tetik": [
+    "nasıl değişmiştir"
+   ],
+   "parcalar": [
+    {
+     "bas": "Değişim:",
+     "ornek": "Arama sayısı artmıştır.",
+     "havuz": [
+      "Arama sayısı azalmıştır.",
+      "Arama sayısı hiç değişmemiştir."
+     ],
+     "k": [
+      "arttı",
+      "artmış",
+      "artış"
+     ]
+    },
+    {
+     "bas": "Sayılarla kanıt:",
+     "ornek": "2013'te 4.840 olan arama sayısı 2014'te 8.716'ya çıkmıştır.",
+     "havuz": [
+      "2016'da 2.223 arama yapılmıştır.",
+      "2010'da 45.172 arama yapılmıştır."
+     ],
+     "k": [
+      "4.840",
+      "8.716",
+      "4840",
+      "8716"
+     ]
+    }
+   ],
+   "kisa": "Artış olmuştur: 4.840'tan 8.716'ya çıkmıştır.",
+   "cevap": "2013'te 4.840 olan arama sayısı 2014'te 8.716'ya çıkmıştır. Yani arama sayısı artmıştır; grafikte bir önceki yıla göre artışın olduğu tek yıl budur.",
+   "anahtarlar": [
+    {
+     "ad": "artış olmuştur",
+     "k": [
+      "arttı",
+      "artmış",
+      "artış"
+     ]
+    },
+    {
+     "ad": "4.840 → 8.716",
+     "k": [
+      "4.840",
+      "8.716",
+      "4840",
+      "8716"
+     ]
+    }
+   ],
+   "sayfa": "s. 151",
+   "okut": [
+    "arama sayısının arttığını mı azaldığını mı söyleyip bunu iki yılın sayısıyla göstermeni",
+    "grafiğin başlığını yazmanı",
+    "insanların neden daha az aradığını açıklamanı"
+   ],
+   "bolge": [
+    "arama sayısı nasıl değişmiştir",
+    "Sayılarla yazınız"
+   ]
   }
  ]
 }

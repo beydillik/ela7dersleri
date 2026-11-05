@@ -89,7 +89,13 @@
     ],
     "dogru": 1,
     "ipucu": "Metinde en sık geçen ve konuyu taşıyan kelime hangisi?",
-    "aciklama": "Metin “hayır” kelimesini savunur; anahtar kelime “hayır”dır (s. 134–135)."
+    "aciklama": "Metin “hayır” kelimesini savunur; anahtar kelime “hayır”dır (s. 134–135).",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "anahtar kelimesi hangisidir"
+    ]
    }
   },
   {
@@ -108,7 +114,13 @@
     ],
     "dogru": 2,
     "ipucu": "“Niyet” işin başıdır. “Akıbet” işin neresi olabilir?",
-    "aciklama": "Akıbet, bir işin sonu, sonucu demektir."
+    "aciklama": "Akıbet, bir işin sonu, sonucu demektir.",
+    "tetik": [
+     "ne demektir"
+    ],
+    "bolge": [
+     "“akıbet” ne demektir"
+    ]
    }
   },
   {
@@ -127,7 +139,14 @@
     ],
     "dogru": 0,
     "ipucu": "Akılda kalsın: aynı yazılış, farklı anlam. Hangisinde “olumsuz cevap” yok?",
-    "aciklama": "Çeşmeyi iyilik için yaptırmış; burada “hayır” iyilik demektir (s. 135)."
+    "aciklama": "Çeşmeyi iyilik için yaptırmış; burada “hayır” iyilik demektir (s. 135).",
+    "tetik": [
+     "Hangi cümlede"
+    ],
+    "bolge": [
+     "Hangi cümlede",
+     "iyilik anlamında kullanılmıştır"
+    ]
    }
   },
   {
@@ -165,7 +184,13 @@
     ],
     "dogru": 1,
     "ipucu": "Akılda kalsın: Kalıp…",
-    "aciklama": "Deyim kalıplaşmıştır; kelimeleri değiştirilemez."
+    "aciklama": "Deyim kalıplaşmıştır; kelimeleri değiştirilemez.",
+    "tetik": [
+     "değiştirilebilir mi"
+    ],
+    "bolge": [
+     "Deyimin kelimeleri değiştirilebilir mi"
+    ]
    }
   },
   {
@@ -184,7 +209,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: belli durumun hazır sözü. Durum: hastalık.",
-    "aciklama": "Hasta birine “Geçmiş olsun.” denir."
+    "aciklama": "Hasta birine “Geçmiş olsun.” denir.",
+    "tetik": [
+     "hangi kalıp"
+    ],
+    "bolge": [
+     "hangi kalıp ifadeyi söyleriz"
+    ]
    }
   },
   {
@@ -244,7 +275,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: Kanıtlanır mı?",
-    "aciklama": "Başkentin Ankara olduğu herkesçe kontrol edilebilir; bu nesneldir."
+    "aciklama": "Başkentin Ankara olduğu herkesçe kontrol edilebilir; bu nesneldir.",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi nesnel bir ifadedir"
+    ]
    }
   }
  ],
@@ -327,7 +364,13 @@
    "dogru": 0,
    "ipucu": "Akılda kalsın: konuyu taşıyan kelimeler.",
    "aciklama": "Anahtar kelimeler konuyu taşır ve metinde sık geçer (s. 136).",
-   "kavram": "Anahtar Söz Varlığı"
+   "kavram": "Anahtar Söz Varlığı",
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "anahtar kelimeleri nasıl bulunur"
+   ]
   },
   {
    "soru": "“Bu konuda bilgisi olan birini yeğlerim.” cümlesinde “yeğlemek” ne demektir?",
@@ -339,7 +382,13 @@
    "dogru": 1,
    "ipucu": "Cümleden tahmin et: Bilgisi olan biriyle ilgili ne yapılır?",
    "aciklama": "Yeğlemek, tercih etmek demektir (s. 135).",
-   "kavram": "Metindeki Anlam ve Sözlük Anlamı"
+   "kavram": "Metindeki Anlam ve Sözlük Anlamı",
+   "tetik": [
+    "ne demektir"
+   ],
+   "bolge": [
+    "“yeğlemek” ne demektir"
+   ]
   },
   {
    "soru": "Hangi cümlede “yüz” kelimesi sayı anlamında kullanılmıştır?",
@@ -351,7 +400,14 @@
    "dogru": 2,
    "ipucu": "“Kaç?” sorusuna cevap veren cümleyi ara.",
    "aciklama": "“Yüz sayfalık” sayıdır; öbürlerinde “yüz” surat demektir.",
-   "kavram": "Eş Sesli Kelimeler"
+   "kavram": "Eş Sesli Kelimeler",
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "Hangi cümlede",
+    "sayı anlamında kullanılmıştır"
+   ]
   },
   {
    "soru": "Hangisi bir deyimdir?",
@@ -363,7 +419,13 @@
    "dogru": 0,
    "ipucu": "Gerçek anlamından ayrı bir anlam taşıyan sözü ara.",
    "aciklama": "“Göz kulak olmak” korumak, kollamak demektir; kalıplaşmış bir deyimdir.",
-   "kavram": "Deyim"
+   "kavram": "Deyim",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bir deyimdir"
+   ]
   },
   {
    "soru": "Yemek yiyen birine söylenen kalıp ifade hangisidir?",
@@ -375,7 +437,13 @@
    "dogru": 1,
    "ipucu": "Durum: yemek.",
    "aciklama": "Yemek yiyen birine “Afiyet olsun.” denir.",
-   "kavram": "Kalıp İfade"
+   "kavram": "Kalıp İfade",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "söylenen kalıp ifade hangisidir"
+   ]
   },
   {
    "soru": "Hangisi öznel bir ifadedir?",
@@ -387,7 +455,13 @@
    "dogru": 2,
    "ipucu": "Hangisi kişisel bir görüş?",
    "aciklama": "“En etkileyici” kişisel bir değerlendirmedir; cümle özneldir.",
-   "kavram": "Öznel ve Nesnel İfade"
+   "kavram": "Öznel ve Nesnel İfade",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi öznel bir ifadedir"
+   ]
   },
   {
    "soru": "“Ağzını hayra aç.” ve “Hayırlı olsun.” sözleri için hangisi doğrudur?",
@@ -406,7 +480,13 @@
      "İkinci söz hangi durumda söylenir?",
      "Mecaz anlam deyimi, belli durumun hazır sözü kalıp ifadeyi gösterir."
     ]
-   }
+   },
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "sözleri için hangisi doğrudur"
+   ]
   },
   {
    "soru": "Metindeki öznel cümle hangi kelimeden anlaşılır?",
@@ -437,7 +517,14 @@
      "Kanıt: Herkesin kontrol edemeyeceği bir görüş bildiren cümleyi bul.",
      "Şıkları ele: Hangi kelimeler bir bilgiyi anlatıyor?"
     ]
-   }
+   },
+   "tetik": [
+    "hangi kelimeden"
+   ],
+   "bolge": [
+    "öznel cümle hangi kelimeden anlaşılır"
+   ],
+   "serit": "Öznel cümleyi gösteren kelime"
   },
   {
    "soru": "Metinde iki farklı anlamda kullanılan eş sesli kelime hangisidir?",
@@ -469,7 +556,14 @@
      "Kanıt: Aynı kelimenin geçtiği iki cümleyi bul.",
      "Şıkları ele: “defter” ve “tatil” metinde farklı anlamlarda mı geçiyor?"
     ]
-   }
+   },
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "iki farklı anlamda kullanılan eş sesli kelime hangisidir"
+   ],
+   "serit": "İki farklı anlamda kullanılan kelime"
   },
   {
    "soru": "Metinde kullanılan deyim hangisidir?",
@@ -500,7 +594,169 @@
      "Kanıt: İnsanlar gerçekten omuzlarını birbirine mi dayadı? O cümleyi bul.",
      "Şıkları ele: Hangileri gerçek anlamda bir işi anlatıyor?"
     ]
-   }
+   },
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "deyim hangisidir"
+   ],
+   "serit": "Kalıplaşmış, mecaz anlamlı söz (deyim)"
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Metnin konusunu taşıyan ve metinde sık geçen kelimelere {anahtar söz varlığı|deyim|kalıp ifade} denir.",
+   "s": "s. 136"
+  },
+  {
+   "c": "Bir kelimenin metindeki anlamını önce {cümleden tahmin ederiz|ezberleriz|başlıktan buluruz}, sonra sözlükten kontrol ederiz.",
+   "s": "s. 136"
+  },
+  {
+   "c": "Yazılışları ve okunuşları aynı, anlamları farklı kelimelere {eş sesli|eş anlamlı|zıt anlamlı} kelimeler denir.",
+   "s": "s. 136"
+  },
+  {
+   "c": "“Ya Hayır Söyle...” metninde “hayır” kelimesi {iyilik|olumsuz cevap|soru} anlamında kullanılmıştır.",
+   "s": "s. 135"
+  },
+  {
+   "c": "Deyimler {kalıplaşmıştır|her zaman gerçek anlamlıdır|tek kelimedir}; kelimeleri değiştirilemez.",
+   "s": "s. 135"
+  },
+  {
+   "c": "“Geçmiş olsun, günaydın, hayırlı olsun” gibi belli durumlarda söylenen hazır sözlere {kalıp ifade|deyim|atasözü} denir.",
+   "s": "s. 134–135"
+  },
+  {
+   "c": "Doğruluğu herkesçe kontrol edilebilen ifade {nesnel|öznel}, kişinin kendi görüşünü bildiren ifade {öznel|nesnel} ifadedir.",
+   "s": "s. 138"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Deyim ile kalıp ifade arasındaki farkı yazınız.",
+   "tetik": [
+    "farkı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Deyim:",
+     "ornek": "Kalıplaşmış, mecaz anlam taşıyan söz grubudur.",
+     "havuz": [
+      "Selamlaşırken hep aynı biçimde söylenen hazır sözdür.",
+      "Tek bir kelimeden oluşur."
+     ],
+     "k": [
+      "mecaz"
+     ]
+    },
+    {
+     "bas": "Kalıp ifade:",
+     "ornek": "Selamlaşma, dilek, teşekkür gibi belli bir durumda söylenen hazır sözdür.",
+     "havuz": [
+      "Gerçek anlamından ayrı, mecaz anlam taşır.",
+      "Doğruluğu kanıtlanabilen bilgidir."
+     ],
+     "k": [
+      "durum",
+      "selam",
+      "dilek"
+     ]
+    }
+   ],
+   "kisa": "Deyim mecaz anlam taşır; kalıp ifade belli bir durumda söylenen hazır sözdür.",
+   "cevap": "Deyim, genellikle gerçek anlamından ayrı, mecaz bir anlam taşıyan kalıplaşmış söz grubudur: “ağzını hayra açmak”. Kalıp ifade ise selamlaşma, dilek ve teşekkür gibi belli bir durumda hep aynı biçimde söylenen hazır sözdür: “geçmiş olsun”.",
+   "anahtarlar": [
+    {
+     "ad": "deyim: mecaz anlam",
+     "k": [
+      "mecaz"
+     ]
+    },
+    {
+     "ad": "kalıp ifade: belli bir durumun hazır sözü",
+     "k": [
+      "durum",
+      "selam",
+      "dilek"
+     ]
+    }
+   ],
+   "sayfa": "s. 135, 138",
+   "okut": [
+    "deyimi ve kalıp ifadeyi ayrı ayrı anlatıp farkını göstermeni",
+    "bir deyim örneği yazmanı",
+    "kalıp ifadelerin nerede kullanıldığını söylemeni"
+   ],
+   "bolge": [
+    "arasındaki farkı yazınız"
+   ]
+  },
+  {
+   "soru": "Bir ifadenin öznel mi nesnel mi olduğunu nasıl anlarız? Yazınız.",
+   "tetik": [
+    "nasıl anlarız"
+   ],
+   "parcalar": [
+    {
+     "bas": "Nesnel ifade:",
+     "ornek": "Doğruluğu kanıtlanabilir, herkes kontrol edebilir.",
+     "havuz": [
+      "Kişinin kendi duygusunu anlatır.",
+      "Her zaman “bence” kelimesiyle başlar."
+     ],
+     "k": [
+      "kanıt",
+      "kontrol"
+     ]
+    },
+    {
+     "bas": "Öznel ifade:",
+     "ornek": "Kişinin kendi duygu ve görüşüdür; “bence, güzel” gibi kelimeler ipucudur.",
+     "havuz": [
+      "Herkesçe doğruluğu kanıtlanır.",
+      "Sayılarla ölçülen bilgidir."
+     ],
+     "k": [
+      "görüş",
+      "duygu",
+      "bence"
+     ]
+    }
+   ],
+   "kisa": "Nesnel ifade kanıtlanabilir; öznel ifade kişinin görüşüdür (bence, güzel).",
+   "cevap": "Nesnel ifadenin doğruluğu herkesçe kontrol edilebilir, kanıtlanabilir: “Türkiye'nin başkenti Ankara'dır.” Öznel ifade ise kişinin kendi duygu ve görüşüdür, kanıtlanamaz: “Bence en güzel mevsim bahardır.”",
+   "anahtarlar": [
+    {
+     "ad": "nesnel: kanıtlanabilir",
+     "k": [
+      "kanıt",
+      "kontrol"
+     ]
+    },
+    {
+     "ad": "öznel: kişisel görüş / duygu",
+     "k": [
+      "görüş",
+      "duygu",
+      "bence"
+     ]
+    }
+   ],
+   "sayfa": "s. 138",
+   "okut": [
+    "öznel ve nesnel ifadeyi nasıl ayırt edeceğini (her birinin özelliğini) anlatmanı",
+    "öznel bir cümle örneği yazmanı",
+    "bu konudaki kendi görüşünü yazmanı"
+   ],
+   "bolge": [
+    "öznel mi nesnel mi olduğunu nasıl anlarız"
+   ]
   }
  ]
 }

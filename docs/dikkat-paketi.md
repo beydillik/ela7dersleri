@@ -36,7 +36,8 @@ Bir sohbette bir tema/ünite (8–10 konu) yapılabilir. İki tema birden bağla
 6. Commit → `taslak`; Kemal "yayınla" demedikçe `main`'e gitmez.
 
 ## Derse göre notlar (tahmin; uygularken doğrulanmalı)
-- **Türkçe:** her konuda zaten 3 kanıtlı metinli soru var → yeni `METINLI` yazma (Test'te kısa soruların yerini alır, metinli oranı fazla artar); var olanlara `SERIT` yaz. Olumsuz kökler (`olumsuzVurgu`) seri ödülünde de bulmalı kalır.
+- **Türkçe (uygulandı: tr1 u3k1–u3k8, 5 Kasım 2026; veri `araclar/dikkat/tr1/`):** her konuda zaten 3 kanıtlı metinli soru var → yeni `METINLI` yazılmadı; var olanlara `SERIT` yazıldı. Kanıtlı sorularda bölge `"TUM"` olamaz (motor bulma adımını atlarsa önce-soru-sonra-metin akışı ve şerit de atlanır). Olumsuz kökler (`olumsuzVurgu`) seri ödülünde de bulmalı kalır. Türkçe'de "ne demektir, ne zaman, ne katar, ne gösterir…" gibi soru kelimeleri `GEN` kalıbında yok → `ELLE`'ye yazıldı. "Hazır mısın?" ve "Sıra sende" soruları üreticinin kapsamında değil, bulmasız kalır. `OKUT` şıkları harfle başlamalı (motor ilk harfi büyütür; tırnak ya da parantezle başlayan şık küçük harfle görünür). 145 sorunun 135'i bulmalı, 10'u bulmasız.
+- **Test betiği** (`test_dikkat.py`) "Hazır mısın?", "Birlikte çözelim / Sıra sende" adımlarını ve konudaki kanıtlı test sorularını (Türkçe) da geçer.
 - **Sosyal, Din, Teknoloji:** doğrudan uygulanabilir; metinli sorular `METINLI` ile yazılır.
 - **Matematik:** sorular çoğunlukla kesir/üs işaretli ve "tuş takımı" türünde; "sorunun kalbi" yalnız düz metinli sözel problemlerde çalışır. Kısa Cevap yerine işlem adımı daha uygun olabilir.
 - **İngilizce:** kalıplar İngilizce soru kelimelerine (what, which, why…) göre genişletilmeli; ön soru şıkları Türkçe kalabilir.

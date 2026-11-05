@@ -108,7 +108,13 @@
     ],
     "dogru": 1,
     "ipucu": "Akılda kalsın: Bölümleri say, mısraları say. Dörtlük adı neyi söylüyor?",
-    "aciklama": "Dörtlükte dört mısra vardır (s. 156)."
+    "aciklama": "Dörtlükte dört mısra vardır (s. 156).",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "her dörtlüğünde kaç mısra vardır"
+    ]
    }
   },
   {
@@ -168,7 +174,13 @@
     ],
     "dogru": 0,
     "ipucu": "Akılda kalsın: Benzer ses = ahenk.",
-    "aciklama": "Üç kelime de “-endini” sesleriyle biter: ses benzerliği, yani kafiye (s. 156)."
+    "aciklama": "Üç kelime de “-endini” sesleriyle biter: ses benzerliği, yani kafiye (s. 156).",
+    "tetik": [
+     "ne vardır"
+    ],
+    "bolge": [
+     "sonunda ne vardır"
+    ]
    }
   },
   {
@@ -206,7 +218,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: Aynı ölçütle bak. Biçim, şiirin yapısıdır.",
-    "aciklama": "Mısra sayısı şiirin biçimiyle ilgilidir; ötekiler biçim değildir."
+    "aciklama": "Mısra sayısı şiirin biçimiyle ilgilidir; ötekiler biçim değildir.",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "biçimce karşılaştırmak için bir ölçüttür"
+    ]
    }
   },
   {
@@ -225,7 +243,13 @@
     ],
     "dogru": 0,
     "ipucu": "Akılda kalsın: “Gibi” varsa benzetme.",
-    "aciklama": "Gözler yıldızlara benzetilmiş; “gibi” kelimesi var."
+    "aciklama": "Gözler yıldızlara benzetilmiş; “gibi” kelimesi var.",
+    "tetik": [
+     "Hangi cümlede"
+    ],
+    "bolge": [
+     "Hangi cümlede benzetme vardır"
+    ]
    }
   },
   {
@@ -244,7 +268,13 @@
     ],
     "dogru": 1,
     "ipucu": "Akılda kalsın: İnsan gibi davranır. Düşman olmak kime ait bir özelliktir?",
-    "aciklama": "Düşmanlık insana ait bir özelliktir; aynalara verilmiş: kişileştirme."
+    "aciklama": "Düşmanlık insana ait bir özelliktir; aynalara verilmiş: kişileştirme.",
+    "tetik": [
+     "hangi söz"
+    ],
+    "bolge": [
+     "hangi söz sanatı vardır"
+    ]
    }
   },
   {
@@ -282,7 +312,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: Gerçekte olamaz, çok büyük.",
-    "aciklama": "Kahkaha Ay'dan duyulamaz; durum çok büyük gösterilmiş: abartma."
+    "aciklama": "Kahkaha Ay'dan duyulamaz; durum çok büyük gösterilmiş: abartma.",
+    "tetik": [
+     "Hangi cümlede"
+    ],
+    "bolge": [
+     "Hangi cümlede abartma vardır"
+    ]
    }
   },
   {
@@ -301,7 +337,13 @@
     ],
     "dogru": 1,
     "ipucu": "Akılda kalsın: Öğütten değere. “Alçaklarda otur” ne demek?",
-    "aciklama": "Kendini büyük görmemek, alçak gönüllü olmaktır (s. 156, 158)."
+    "aciklama": "Kendini büyük görmemek, alçak gönüllü olmaktır (s. 156, 158).",
+    "tetik": [
+     "hangi değer"
+    ],
+    "bolge": [
+     "hangi değer öğütlenir"
+    ]
    }
   }
  ],
@@ -393,7 +435,13 @@
    "dogru": 0,
    "ipucu": "Kitap “Söz Söyle”yi dörtlüklerle verir. Dörtlükte kaç mısra olur?",
    "aciklama": "Her bölüm bir dörtlüktür; dört mısra vardır (s. 159).",
-   "kavram": "Şiirin Bölümleri ve Mısra Sayısı"
+   "kavram": "Şiirin Bölümleri ve Mısra Sayısı",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "bir bölümde kaç mısra vardır"
+   ]
   },
   {
    "soru": "Mısra sonlarındaki ses benzerlikleri şiire ne kazandırır?",
@@ -405,7 +453,13 @@
    "dogru": 1,
    "ipucu": "Kulağa hoş gelen ritmin adını hatırla.",
    "aciklama": "Ses benzerlikleri şiire ahenk kazandırır (s. 159).",
-   "kavram": "Kafiye ve Ahenk"
+   "kavram": "Kafiye ve Ahenk",
+   "tetik": [
+    "ne kazandırır"
+   ],
+   "bolge": [
+    "şiire ne kazandırır"
+   ]
   },
   {
    "soru": "“Sevgilerde” şiiri “Öğüt”ten biçimce nasıl ayrılır?",
@@ -417,7 +471,13 @@
    "dogru": 2,
    "ipucu": "Biçim: bölüm, mısra, hece, kafiye. Şair ve öğüt biçim değildir.",
    "aciklama": "“Sevgilerde” dörtlüklere ayrılmaz, kafiyesi yoktur (s. 166).",
-   "kavram": "İki Şiiri Biçimce Karşılaştırma"
+   "kavram": "İki Şiiri Biçimce Karşılaştırma",
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "biçimce nasıl ayrılır"
+   ]
   },
   {
    "soru": "Hangi dizede benzetme vardır?",
@@ -429,7 +489,13 @@
    "dogru": 0,
    "ipucu": "“Gibi” kelimesini ara.",
    "aciklama": "Bulutlar pamuğa benzetilmiş; “gibi” var.",
-   "kavram": "Dizede Benzetme"
+   "kavram": "Dizede Benzetme",
+   "tetik": [
+    "Hangi dizede"
+   ],
+   "bolge": [
+    "Hangi dizede benzetme vardır"
+   ]
   },
   {
    "soru": "Hangi cümlede kişileştirme vardır?",
@@ -441,7 +507,13 @@
    "dogru": 1,
    "ipucu": "İnsana ait bir davranış arıyoruz: sızlanmak kime aittir?",
    "aciklama": "Sızlanmak insana aittir; kapıya verilmiş: kişileştirme.",
-   "kavram": "Dizede Kişileştirme"
+   "kavram": "Dizede Kişileştirme",
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "Hangi cümlede kişileştirme vardır"
+   ]
   },
   {
    "soru": "“Ağlamaktan gözlerimden ırmaklar aktı.” cümlesindeki söz sanatı hangisidir?",
@@ -453,7 +525,13 @@
    "dogru": 2,
    "ipucu": "Gözden ırmak akabilir mi?",
    "aciklama": "Gözyaşı ırmak olamaz; durum çok büyük gösterilmiş: abartma.",
-   "kavram": "Dizede Abartma"
+   "kavram": "Dizede Abartma",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "söz sanatı hangisidir"
+   ]
   },
   {
    "soru": "“Sen iyilik eyle, o zâyi olmaz” (s. 156) mısrasında hangi değer öğütlenir? (zâyi olmak: boşa gitmek)",
@@ -465,7 +543,13 @@
    "dogru": 1,
    "ipucu": "Mısrada geçen değeri bul.",
    "aciklama": "Şair iyilik yapmayı öğütler: Yapılan iyilik boşa gitmez (s. 156, 158).",
-   "kavram": "Şiirin Öğüdü ve Değerler"
+   "kavram": "Şiirin Öğüdü ve Değerler",
+   "tetik": [
+    "hangi değer"
+   ],
+   "bolge": [
+    "hangi değer öğütlenir"
+   ]
   },
   {
    "soru": "Bu dörtlükte ilk üç mısranın sonunda tekrar eden ses hangisidir?",
@@ -498,7 +582,14 @@
      "Kanıt: İlk üç mısranın son kelimelerini bul: bendini, …",
      "Şıkları ele: Hangi ses üç kelimede de var, hangisi yalnızca son mısrada?"
     ]
-   }
+   },
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "ilk üç mısranın sonunda tekrar eden ses hangisidir"
+   ],
+   "serit": "İlk üç mısranın son sesleri"
   },
   {
    "soru": "Bu dörtlükte şair hangi öğüdü veriyor?",
@@ -530,7 +621,14 @@
      "Kanıt: “açıcı olma” diyen mısrayı bul.",
      "Şıkları ele: Hangi öğüt bu dörtlükte hiç geçmiyor?"
     ]
-   }
+   },
+   "tetik": [
+    "hangi öğüdü"
+   ],
+   "bolge": [
+    "hangi öğüdü veriyor"
+   ],
+   "serit": "Şairin öğüdünü söylediği mısralar"
   },
   {
    "soru": "Bu dörtlükle ilgili hangisi söylenemez?",
@@ -561,7 +659,171 @@
      "Kanıt: İnsan dışındaki bir varlığın insan gibi davrandığı mısrayı bul.",
      "Şıkları ele: O mısra varken hangi yargı yanlış olur?"
     ]
-   }
+   },
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi söylenemez"
+   ],
+   "serit": "Dörtlükte yazanlarla çelişen yargı"
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Şiirin her satırına {mısra|cümle|paragraf} denir; dört mısralık bölüme dörtlük denir.",
+   "s": "s. 156"
+  },
+  {
+   "c": "Karacaoğlan'ın “Öğüt” şiiri {5|3|8} dörtlükten oluşur.",
+   "s": "s. 156"
+  },
+  {
+   "c": "Mısra sonlarındaki ses benzerliğine {kafiye|başlık|hece} denir; kafiye şiire ahenk verir.",
+   "s": "s. 156"
+  },
+  {
+   "c": "Benzetme çoğunlukla {“gibi”|“ve”|“ama”} kelimesiyle yapılır.",
+   "s": "s. 160"
+  },
+  {
+   "c": "İnsana ait bir özelliği insan dışındaki varlıklara vermeye {kişileştirme|benzetme|abartma} denir.",
+   "s": "s. 160"
+  },
+  {
+   "c": "Âkif'in “Şüheda fışkıracak toprağı sıksan, şüheda!” dizesinde {abartma|kişileştirme|benzetme} vardır.",
+   "s": "s. 160"
+  },
+  {
+   "c": "“Alçaklarda otur, gözet kendini” mısrası {alçak gönüllülüğü|cesareti|çalışkanlığı} öğütler.",
+   "s": "s. 156"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "“Öğüt” şiirinin biçim özelliklerini yazınız.",
+   "tetik": [
+    "biçim özelliklerini"
+   ],
+   "parcalar": [
+    {
+     "bas": "Bölüm ve mısra:",
+     "ornek": "5 dörtlükten oluşur; her dörtlükte 4 mısra vardır.",
+     "havuz": [
+      "Tek bölümden oluşur, mısra sayısı düzensizdir.",
+      "3 bölüm vardır, her bölümde 8 mısra vardır."
+     ],
+     "k": [
+      "dörtlük",
+      "4 mısra",
+      "dört mısra"
+     ]
+    },
+    {
+     "bas": "Mısra sonları:",
+     "ornek": "Mısra sonlarında ses benzerliği (kafiye) vardır: bendini, fendini, kendini.",
+     "havuz": [
+      "Mısraların sonu birbirine hiç benzemez.",
+      "Her mısra soru işaretiyle biter."
+     ],
+     "k": [
+      "ses benzer",
+      "kafiye",
+      "uyak",
+      "endini"
+     ]
+    }
+   ],
+   "kisa": "5 dörtlük, her dörtlükte 4 mısra; mısra sonlarında ses benzerliği (kafiye) var.",
+   "cevap": "“Öğüt” şiiri 5 dörtlükten oluşur ve her dörtlükte 4 mısra vardır. Mısra sonlarında ses benzerliği, yani kafiye vardır: dördüncü dörtlükte “bendini, fendini, kendini”. Her dörtlüğün son mısrası da “… olma” sözüyle biter.",
+   "anahtarlar": [
+    {
+     "ad": "5 dörtlük, 4'er mısra",
+     "k": [
+      "dörtlük",
+      "4 mısra",
+      "dört mısra"
+     ]
+    },
+    {
+     "ad": "kafiye (ses benzerliği)",
+     "k": [
+      "ses benzer",
+      "kafiye",
+      "uyak",
+      "endini"
+     ]
+    }
+   ],
+   "sayfa": "s. 156",
+   "okut": [
+    "şiirin kaç bölüm ve kaç mısradan oluştuğunu ve kafiyesini yazmanı",
+    "şiirin hangi öğüdü verdiğini anlatmanı",
+    "şiirin şairini söylemeni"
+   ],
+   "bolge": [
+    "biçim özelliklerini yazınız"
+   ]
+  },
+  {
+   "soru": "“Bahçedeki çiçekler sabah güneşine gülümsedi.” cümlesindeki söz sanatını adıyla yazıp nedenini açıklayınız.",
+   "tetik": [
+    "söz sanatını"
+   ],
+   "parcalar": [
+    {
+     "bas": "Söz sanatı:",
+     "ornek": "Kişileştirme",
+     "havuz": [
+      "Abartma",
+      "Benzetme"
+     ],
+     "k": [
+      "kişileştir",
+      "teşhis"
+     ]
+    },
+    {
+     "bas": "Nedeni:",
+     "ornek": "Gülümsemek insana ait bir özelliktir; çiçeklere verilmiştir.",
+     "havuz": [
+      "Çiçekler “gibi” kelimesiyle güneşe benzetilmiştir.",
+      "Çiçekler olduğundan çok büyük gösterilmiştir."
+     ],
+     "k": [
+      "insan"
+     ]
+    }
+   ],
+   "kisa": "Kişileştirme; gülümsemek insana ait bir özelliktir, çiçeklere verilmiştir.",
+   "cevap": "Bu cümlede kişileştirme vardır. Gülümsemek yalnızca insana ait bir özelliktir; bu özellik insan dışındaki bir varlığa, çiçeklere verilmiştir.",
+   "anahtarlar": [
+    {
+     "ad": "kişileştirme",
+     "k": [
+      "kişileştir",
+      "teşhis"
+     ]
+    },
+    {
+     "ad": "insana ait özellik verilmiş",
+     "k": [
+      "insan"
+     ]
+    }
+   ],
+   "sayfa": "s. 160",
+   "okut": [
+    "söz sanatının adını yazıp cümlede neden o sanatın olduğunu açıklamanı",
+    "cümlenin anlamını kendi sözlerinle anlatmanı",
+    "yalnız söz sanatının adını yazmanı"
+   ],
+   "bolge": [
+    "söz sanatını adıyla yazıp nedenini açıklayınız"
+   ]
   }
  ]
 }

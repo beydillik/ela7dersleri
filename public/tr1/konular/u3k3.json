@@ -89,7 +89,13 @@
     ],
     "dogru": 1,
     "ipucu": "Akılda kalsın: Konuyu …",
-    "aciklama": "Giriş konuyu tanıtır ve ilgi çeker."
+    "aciklama": "Giriş konuyu tanıtır ve ilgi çeker.",
+    "tetik": [
+     "ne yapılır"
+    ],
+    "bolge": [
+     "girişinde ne yapılır"
+    ]
    }
   },
   {
@@ -108,7 +114,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: Açıklar, destekler.",
-    "aciklama": "Konu gelişmede açıklanır ve desteklenir."
+    "aciklama": "Konu gelişmede açıklanır ve desteklenir.",
+    "tetik": [
+     "hangi bölümde"
+    ],
+    "bolge": [
+     "en çok hangi bölümde kullanılır"
+    ]
    }
   },
   {
@@ -146,7 +158,13 @@
     ],
     "dogru": 0,
     "ipucu": "Akılda kalsın: Toparlar, vurgular.",
-    "aciklama": "“Sonuç olarak” sonucun geldiğini haber verir (s. 167)."
+    "aciklama": "“Sonuç olarak” sonucun geldiğini haber verir (s. 167).",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "sonuç bölümünü haber veren bir ifadedir"
+    ]
    }
   },
   {
@@ -165,7 +183,13 @@
     ],
     "dogru": 1,
     "ipucu": "“Oysa”dan önceki ve sonraki düşünce aynı yönde mi?",
-    "aciklama": "“Oysa” karşıt bir düşünceye geçirir (s. 167)."
+    "aciklama": "“Oysa” karşıt bir düşünceye geçirir (s. 167).",
+    "tetik": [
+     "ne işe yarar"
+    ],
+    "bolge": [
+     "ne işe yarar"
+    ]
    }
   },
   {
@@ -225,7 +249,13 @@
     ],
     "dogru": 1,
     "ipucu": "Ünlü birinin sözü aktarılmış mı?",
-    "aciklama": "Ünlü birinin sözü aktarıldığı için tanık göstermedir (s. 134)."
+    "aciklama": "Ünlü birinin sözü aktarıldığı için tanık göstermedir (s. 134).",
+    "tetik": [
+     "hangi yol"
+    ],
+    "bolge": [
+     "hangi yol kullanılmıştır"
+    ]
    }
   },
   {
@@ -244,7 +274,13 @@
     ],
     "dogru": 2,
     "ipucu": "Akılda kalsın: Tanık gösterme …",
-    "aciklama": "Ünlü birinin sözü düşünceyi daha inandırıcı yapar."
+    "aciklama": "Ünlü birinin sözü düşünceyi daha inandırıcı yapar.",
+    "tetik": [
+     "ne katar"
+    ],
+    "bolge": [
+     "anlatıma ne katar"
+    ]
    }
   }
  ],
@@ -327,7 +363,13 @@
    "dogru": 0,
    "ipucu": "Akılda kalsın: Konuyu …",
    "aciklama": "Giriş konuyu tanıtır ve okurun ilgisini çeker.",
-   "kavram": "Giriş"
+   "kavram": "Giriş",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "giriş bölümüyle ilgili hangisi doğrudur"
+   ]
   },
   {
    "soru": "Gelişme bölümü için hangisi söylenebilir?",
@@ -339,7 +381,13 @@
    "dogru": 1,
    "ipucu": "Akılda kalsın: Açıklar, destekler.",
    "aciklama": "Gelişmede konu açıklanır ve desteklenir.",
-   "kavram": "Gelişme"
+   "kavram": "Gelişme",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi söylenebilir"
+   ]
   },
   {
    "soru": "“Kısacası, düzenli uyku sağlığımızın temelidir.” cümlesi metnin hangi bölümünde yer alır?",
@@ -351,7 +399,13 @@
    "dogru": 2,
    "ipucu": "“Kısacası” ne haber verir?",
    "aciklama": "“Kısacası” toparlama ifadesidir; cümle sonuç bölümündedir.",
-   "kavram": "Sonuç"
+   "kavram": "Sonuç",
+   "tetik": [
+    "hangi bölümünde"
+   ],
+   "bolge": [
+    "metnin hangi bölümünde yer alır"
+   ]
   },
   {
    "soru": "“Kış geldi. ___ sokaklar karla kaplandı.” Boşluğa hangisi gelirse akış bozulmaz?",
@@ -363,7 +417,13 @@
    "dogru": 0,
    "ipucu": "Kışın gelmesi ile karın yağması arasında nasıl bir bağ var?",
    "aciklama": "Kar yağması kışın sonucudur; “bu yüzden” sonucu bağlar.",
-   "kavram": "Bölümler Arası Akış"
+   "kavram": "Bölümler Arası Akış",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi gelirse akış bozulmaz"
+   ]
   },
   {
    "soru": "“Yazın günler, kışa göre daha uzundur.” cümlesinde hangi yol kullanılmıştır?",
@@ -375,7 +435,13 @@
    "dogru": 1,
    "ipucu": "İpucu kelimeyi ara: “göre, daha”.",
    "aciklama": "Yaz ve kış günleri karşılaştırılmış; ipucu “göre, daha”dır.",
-   "kavram": "Yolu Metinde Bulma"
+   "kavram": "Yolu Metinde Bulma",
+   "tetik": [
+    "hangi yol"
+   ],
+   "bolge": [
+    "hangi yol kullanılmıştır"
+   ]
   },
   {
    "soru": "“Okulumuzdaki 600 öğrenciden 450'si her gün kitap okuyor.” cümlesi anlatıma ne katar?",
@@ -387,7 +453,13 @@
    "dogru": 2,
    "ipucu": "Akılda kalsın: Neden kullanılmış? Sayılar ne yapar?",
    "aciklama": "Sayısal veriler düşünceyi kanıtlayarak güçlendirir.",
-   "kavram": "Anlatıma Katkısı"
+   "kavram": "Anlatıma Katkısı",
+   "tetik": [
+    "ne katar"
+   ],
+   "bolge": [
+    "anlatıma ne katar"
+   ]
   },
   {
    "soru": "“«Hayır sahibi», iyilik sever kişidir.” (s. 135) cümlesinde hangi yol kullanılmıştır?",
@@ -399,7 +471,13 @@
    "dogru": 0,
    "ipucu": "“… kişidir” kalıbı neyi gösterir?",
    "aciklama": "Bir kavramın ne olduğu açıklanmış; bu tanımlamadır (s. 135).",
-   "kavram": "Yolu Metinde Bulma"
+   "kavram": "Yolu Metinde Bulma",
+   "tetik": [
+    "hangi yol"
+   ],
+   "bolge": [
+    "hangi yol kullanılmıştır"
+   ]
   },
   {
    "soru": "Metnin sonuç bölümü hangi ifadeyle başlar?",
@@ -430,7 +508,14 @@
      "Kanıt: Anlatılanları toparlayan cümleyi bul.",
      "Şıkları ele: “Örneğin” bir örnek mi veriyor, toparlıyor mu?"
     ]
-   }
+   },
+   "tetik": [
+    "hangi ifadeyle"
+   ],
+   "bolge": [
+    "sonuç bölümü hangi ifadeyle başlar"
+   ],
+   "serit": "Sonuç bölümünü başlatan ifade"
   },
   {
    "soru": "Metinde kervansaraylar neye benzetilmiştir?",
@@ -461,7 +546,14 @@
      "Kanıt: “gibi” kelimesinin geçtiği cümleyi bul.",
      "Şıkları ele: Ticaret yolları ve Selçuklular neye benzetilmeden anlatılıyor?"
     ]
-   }
+   },
+   "tetik": [
+    "neye benzetilmiştir"
+   ],
+   "bolge": [
+    "neye benzetilmiştir"
+   ],
+   "serit": "Kervansarayların benzetildiği şey"
   },
   {
    "soru": "Metinde sayısal verilerin anlatıma katkısı nedir?",
@@ -493,7 +585,168 @@
      "Kanıt: Sayıların geçtiği cümleleri bul. Sayı arttı mı, azaldı mı?",
      "Şıkları ele: Sayılar bir duygu mu anlatıyor, bir değişimi mi kanıtlıyor?"
     ]
-   }
+   },
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "anlatıma katkısı nedir"
+   ],
+   "serit": "Sayıların metinde ne işe yaradığı"
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bilgilendirici metnin ilk bölümü olan {giriş|gelişme|sonuç} konuyu tanıtır ve okurun ilgisini çeker.",
+   "s": "s. 167"
+  },
+  {
+   "c": "Metnin en uzun bölümü {gelişmedir|giriştir|sonuçtur}; konu burada açıklanır ve örneklerle desteklenir.",
+   "s": "s. 167"
+  },
+  {
+   "c": "Sonuç bölümü anlatılanları toparlar ve {ana fikri|başlığı|ilk cümleyi} bir kez daha vurgular.",
+   "s": "s. 167"
+  },
+  {
+   "c": "“Sonuç olarak, kısacası, özetle” ifadeleri {sonuç|giriş|gelişme} bölümünü haber verir.",
+   "s": "s. 167"
+  },
+  {
+   "c": "“Oysa” kelimesi {karşıt bir düşünceye|bir örneğe|bir tanıma} geçirir; “çünkü” ise sebep ekler.",
+   "s": "s. 167"
+  },
+  {
+   "c": "Düşünceyi geliştirme yolunu ipucu kelimeyle buluruz: “gibi” {benzetme|karşılaştırma|tanımlama}, “daha” {karşılaştırma|benzetme|tanık gösterme} yoludur.",
+   "s": "s. 137, 167"
+  },
+  {
+   "c": "Ünlü birinin sözünü aktarmak (tanık gösterme) düşünceyi {daha inandırıcı|daha kısa|daha eğlenceli} yapar.",
+   "s": "s. 168"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Bilgilendirici bir metnin giriş ve sonuç bölümlerinde ne yapılır? Yazınız.",
+   "tetik": [
+    "ne yapılır"
+   ],
+   "parcalar": [
+    {
+     "bas": "Girişte:",
+     "ornek": "Konu tanıtılır, okurun ilgisi çekilir.",
+     "havuz": [
+      "Konu örneklerle ayrıntılı açıklanır.",
+      "Ana fikir bir kez daha vurgulanır."
+     ],
+     "k": [
+      "tanıt",
+      "ilgi"
+     ]
+    },
+    {
+     "bas": "Sonuçta:",
+     "ornek": "Anlatılanlar toparlanır, ana fikir vurgulanır.",
+     "havuz": [
+      "Konu ilk kez tanıtılır.",
+      "Yeni örnekler ve sayılar verilir."
+     ],
+     "k": [
+      "topar",
+      "ana fikir",
+      "vurgu"
+     ]
+    }
+   ],
+   "kisa": "Girişte konu tanıtılır; sonuçta anlatılanlar toparlanır, ana fikir vurgulanır.",
+   "cevap": "Giriş bölümünde konu tanıtılır ve okurun ilgisi çekilir. Sonuç bölümünde ise anlatılanlar toparlanır ve ana fikir bir kez daha vurgulanır; bu bölüm çoğu zaman “sonuç olarak, kısacası” gibi ifadelerle başlar.",
+   "anahtarlar": [
+    {
+     "ad": "giriş: konuyu tanıtır",
+     "k": [
+      "tanıt",
+      "ilgi"
+     ]
+    },
+    {
+     "ad": "sonuç: toparlar, ana fikri vurgular",
+     "k": [
+      "topar",
+      "ana fikir",
+      "vurgu"
+     ]
+    }
+   ],
+   "sayfa": "s. 167",
+   "okut": [
+    "giriş bölümünün ve sonuç bölümünün görevini ayrı ayrı anlatmanı",
+    "yalnız giriş bölümünü anlatmanı",
+    "metnin hangi konuyu anlattığını söylemeni"
+   ],
+   "bolge": [
+    "giriş ve sonuç bölümlerinde ne yapılır"
+   ]
+  },
+  {
+   "soru": "“Ya Hayır Söyle...” metninde Mevlana'nın sözü aktarılır. Burada hangi düşünceyi geliştirme yolu kullanılmıştır ve anlatıma ne katar? Yazınız.",
+   "tetik": [
+    "hangi düşünceyi geliştirme yolu"
+   ],
+   "parcalar": [
+    {
+     "bas": "Kullanılan yol:",
+     "ornek": "Tanık gösterme",
+     "havuz": [
+      "Benzetme",
+      "Sayısal verilerden yararlanma"
+     ],
+     "k": [
+      "tanık"
+     ]
+    },
+    {
+     "bas": "Anlatıma katkısı:",
+     "ornek": "Ünlü birinin sözü düşünceyi daha inandırıcı yapar.",
+     "havuz": [
+      "Konuyu sayılarla ölçer.",
+      "Bir şeyi başka bir şeye benzetir."
+     ],
+     "k": [
+      "inandır",
+      "güçlendir"
+     ]
+    }
+   ],
+   "kisa": "Tanık gösterme; düşünceyi daha inandırıcı yapar.",
+   "cevap": "Bu bölümde tanık gösterme yolu kullanılmıştır. Yazar, Mevlana gibi ünlü ve sözüne güvenilen birinin sözünü aktararak düşüncesini daha inandırıcı ve güçlü hâle getirmiştir.",
+   "anahtarlar": [
+    {
+     "ad": "tanık gösterme",
+     "k": [
+      "tanık"
+     ]
+    },
+    {
+     "ad": "inandırıcı yapar",
+     "k": [
+      "inandır",
+      "güçlendir"
+     ]
+    }
+   ],
+   "sayfa": "s. 134, 168",
+   "okut": [
+    "kullanılan yolun adını ve bu yolun anlatıma katkısını yazmanı",
+    "Mevlana'nın kim olduğunu anlatmanı",
+    "yalnız yolun adını yazmanı"
+   ],
+   "bolge": [
+    "hangi düşünceyi geliştirme yolu kullanılmıştır",
+    "anlatıma ne katar"
+   ]
   }
  ]
 }
