@@ -24,6 +24,9 @@
     "aciklama": "Bu besinler sindirimi düzenler ve bağışıklık sistemini güçlendirir. (s. 99)",
     "tetik": [
      "hangi sistemimizi"
+    ],
+    "bolge": [
+     "hangi sistemimizi de güçlendirir"
     ]
    }
   },
@@ -46,6 +49,9 @@
     "aciklama": "Aşırı yağlı, baharatlı, paketli ve hazır yiyecekler mide rahatsızlıklarına ve aşırı kilo almaya neden olabilir. (s. 99)",
     "tetik": [
      "neye neden"
+    ],
+    "bolge": [
+     "paketli gıdalar neye neden olabilir"
     ]
    }
   },
@@ -68,6 +74,9 @@
     "aciklama": "Yeterli su içmek ve düzenli, dengeli, yeterli öğünlerle beslenmek sindirim organlarının sağlıklı çalışmasına yardım eder. (s. 99)",
     "tetik": [
      "hangisi"
+    ],
+    "bolge": [
+     "sağlıklı çalışmasına hangisi yardım eder"
     ]
    }
   },
@@ -90,6 +99,9 @@
     "aciklama": "Düzenli fiziksel aktivite bağırsakların hareketliliğini artırır. (s. 99)",
     "tetik": [
      "ne yapar"
+    ],
+    "bolge": [
+     "aktivite bağırsaklara ne yapar"
     ]
    }
   },
@@ -112,6 +124,9 @@
     "aciklama": "Düzenli spor yapmak insanları stresten uzaklaştırabilir. (s. 99)",
     "tetik": [
      "ne öneriyor"
+    ],
+    "bolge": [
+     "için kitap ne öneriyor"
     ]
    }
   },
@@ -134,6 +149,9 @@
     "aciklama": "Uzun süre hareketsiz kalmak bağırsak hareketlerini yavaşlatır. (s. 99)",
     "tetik": [
      "nasıl"
+    ],
+    "bolge": [
+     "bağırsak hareketlerini nasıl etkiler"
     ]
    }
   }
@@ -222,6 +240,9 @@
    "aciklama": "Sindirim sistemi rahatsızlıkları genellikle yaşam tarzından kaynaklanır. (s. 99)",
    "tetik": [
     "neden"
+   ],
+   "bolge": [
+    "rahatsızlıkları genellikle neden kaynaklanır"
    ]
   },
   {
@@ -236,6 +257,9 @@
    "aciklama": "Düzenli öğünler, yeterli su ve düzenli egzersiz sindirim sistemini korur. (s. 96, 99)",
    "tetik": [
     "Hangi değişiklik"
+   ],
+   "bolge": [
+    "Hangi değişiklik ona iyi gelir"
    ]
   },
   {
@@ -250,6 +274,9 @@
    "aciklama": "Özden büyük porsiyonları hızlıca ve yeterince çiğnemeden yutuyordu; zamanla sindirim sorunları yaşadı. (s. 100)",
    "tetik": [
     "hangi alışkanlığı"
+   ],
+   "bolge": [
+    "hangi alışkanlığı sindirim sistemi için hatalıdır"
    ]
   },
   {
@@ -264,6 +291,9 @@
    "aciklama": "Özden her sabah peynir, zeytin, yumurta, domates, salatalık ve bal ile kahvaltı yapıyordu; düzenli öğün sindirim için iyidir. (s. 99, 100)",
    "tetik": [
     "hangi alışkanlığı"
+   ],
+   "bolge": [
+    "Özden'in hangi alışkanlığı doğrudur"
    ]
   },
   {
@@ -278,6 +308,9 @@
    "aciklama": "Bedensel hareketlilikle kan dolaşımı artar, besinler daha kolay sindirilir. (s. 99)",
    "tetik": [
     "nedir"
+   ],
+   "bolge": [
+    "Bunun sindirime faydası nedir"
    ]
   },
   {
@@ -292,6 +325,9 @@
    "aciklama": "Uzun süre öne eğilerek oturmak sindirim sistemine baskı yapıp sorunlara yol açabilir. (s. 99)",
    "tetik": [
     "neye yol açabilir"
+   ],
+   "bolge": [
+    "eğilerek oturmak neye yol açabilir"
    ]
   },
   {
@@ -306,6 +342,9 @@
    "aciklama": "Ekran dikkat dağınıklığına yol açar; yemekler farkında olmadan hızlı ve fazla yenir, öğünler atlanabilir. (s. 99)",
    "tetik": [
     "nasıl"
+   ],
+   "bolge": [
+    "yemek yemeyi nasıl etkileyebilir"
    ]
   },
   {
@@ -320,6 +359,10 @@
    "aciklama": "Düzenli, dengeli ve yeterli öğünler sindirim organlarının sağlıklı çalışmasına yardım eder. (s. 99)",
    "tetik": [
     "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi",
+    "doğru bir davranıştır"
    ]
   },
   {
@@ -334,6 +377,9 @@
    "aciklama": "Paketli, hazır ve ayaküstü yiyecekler mide rahatsızlıklarına ve aşırı kilo almaya neden olabilir. (s. 99)",
    "tetik": [
     "nasıl"
+   ],
+   "bolge": [
+    "sindirim sistemini nasıl etkiler"
    ]
   }
  ],
@@ -343,31 +389,31 @@
  "tekrar": [
   {
    "c": "Sindirim sistemi rahatsızlıkları genellikle {yaşam tarzından|kalıtımdan|iklimden} kaynaklanır. Doğru beslenme, yeterli sıvı alımı ve düzenli {egzersiz|uykusuzluk|ekran süresi} sağlığı korur.",
-   "s": "s. 98"
+   "s": "s. 99"
   },
   {
    "c": "Yeterli miktarda protein, karbohidrat, yağ ve vitamin almak sindirim sürecini {dengeler|bozar|durdurur}. Bu besinler bağışıklık sistemini de güçlendirir.",
-   "s": "s. 98"
+   "s": "s. 99"
   },
   {
    "c": "Aşırı yağlı, çok baharatlı ve paketli gıdalar mide {rahatsızlıklarına|iyileşmesine} ve aşırı kilo almaya neden olabilir.",
-   "s": "s. 98"
+   "s": "s. 99"
   },
   {
    "c": "Yeterli su içmek ve düzenli, dengeli, yeterli {öğünlerle|atıştırmalıklarla|ayaküstü yemeklerle} beslenmek sindirim organlarının sağlıklı çalışmasına yardımcı olur.",
-   "s": "s. 98"
+   "s": "s. 99"
   },
   {
    "c": "Düzenli fiziksel aktivite bağırsakların kasılma ve gevşeme hareketlerini {artırır|yavaşlatır|durdurur}. Kan akışı hızlanınca besinler daha {kolay|zor} sindirilir.",
-   "s": "s. 98"
+   "s": "s. 99"
   },
   {
    "c": "Uzun süre hareketsiz kalmak bağırsak hareketlerini {yavaşlatır|hızlandırır}. Ekran başında kalan kişi yemeği farkında olmadan {hızlı|yavaş} yiyebilir.",
-   "s": "s. 98"
+   "s": "s. 99"
   },
   {
    "c": "Stres sindirim sistemi organlarını olumsuz etkiler. Düzenli spor insanı stresten {uzaklaştırabilir|yaklaştırabilir|etkilemez}.",
-   "s": "s. 98"
+   "s": "s. 99"
   }
  ],
  "kisaCevap": [
@@ -377,9 +423,9 @@
     "nasıl"
    ],
    "okut": [
-    "Etkiyi ve sonucunu yaz (iki parça).",
-    "Tanım yaz: “X, … denir.”",
-    "İki ayrı örnek yaz."
+    "egzersizin sindirim sistemine ne yaptığını ve bunun sonucunu anlatmanı",
+    "hangi sporların yapılması gerektiğini sıralamanı",
+    "egzersizin kalbe faydasını anlatmanı"
    ],
    "parcalar": [
     {
@@ -423,7 +469,10 @@
      ]
     }
    ],
-   "sayfa": "s. 98"
+   "sayfa": "s. 99",
+   "bolge": [
+    "sistemi sağlığını nasıl etkiler"
+   ]
   },
   {
    "soru": "Ekran başında uzun süre kalmak sindirim sistemine neden zarar verebilir? İki sebep yazınız.",
@@ -432,9 +481,9 @@
     "İki sebep"
    ],
    "okut": [
-    "Neden → iki ayrı sebep yaz.",
-    "Evet ya da hayır yaz, sonra nedenini ekle.",
-    "Önce tanım, sonra örnek yaz."
+    "ekran başında kalmanın sindirime zarar vermesinin iki sebebini yazmanı",
+    "günde kaç saat ekrana bakılabileceğini söylemeni",
+    "ekranın gözlere zararını anlatmanı"
    ],
    "parcalar": [
     {
@@ -480,7 +529,74 @@
      ]
     }
    ],
-   "sayfa": "s. 98"
+   "sayfa": "s. 99",
+   "bolge": [
+    "sindirim sistemine neden zarar verebilir"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Ece her gün ekran başında uzun süre hareketsiz oturuyor.",
+    "Uzun süre hareketsiz kalmak bağırsak hareketlerini yavaşlatır.",
+    "Bu yüzden sindirim süreci olumsuz etkilenir."
+   ],
+   "soru": "Ece'nin sindirimini olumsuz etkileyen durum nedir?",
+   "bolge": [
+    "sindirimini olumsuz etkileyen durum nedir"
+   ],
+   "serit": "Ece'nin sindirimini bozan durum",
+   "kanit": [
+    0,
+    1
+   ],
+   "secenekler": [
+    "Uzun süre hareketsiz oturması",
+    "Bağırsak hareketlerinin hızlanması",
+    "Her gün çok su içmesi"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Ece ne yapıyor? Bu durum bağırsaklara ne oluyor?",
+   "kanitIpucu": "Ece'nin ne yaptığını anlatan cümleyi bul.",
+   "aciklama": "Uzun süre hareketsiz kalmak bağırsak hareketlerini yavaşlatır; sindirim süreci bundan olumsuz etkilenir (s. 99).",
+   "kavram": "Ekran Başında Hareketsizlik"
+  },
+  {
+   "metin": [
+    "Ruhi bir şirkette masa başında çalışıyor.",
+    "Sabahları evden aceleyle çıktığı için kahvaltı yapmıyor.",
+    "Öğle yemeklerini genellikle atıştırmalık yiyeceklerle geçiştiriyor.",
+    "Akşam yemeklerini hep geç saatlerde yiyor ve bazen su içmeyi unutuyor.",
+    "Spor yapmaya da zaman ayırmıyor.",
+    "Son günlerde midesinde şişkinlik ve kramplar oluyor."
+   ],
+   "soru": "Ruhi'nin beslenmesinde yapması gereken değişiklik hangisidir?",
+   "bolge": [
+    "beslenmesinde yapması gereken değişiklik hangisidir"
+   ],
+   "serit": "Ruhi'nin beslenmesinde yapması gereken değişiklik",
+   "kanit": [
+    1,
+    2,
+    3
+   ],
+   "secenekler": [
+    "Öğün atlamadan düzenli ve dengeli beslenmek, yeterli su içmek",
+    "Akşam yemeklerini daha geç saatlerde yemek",
+    "Masa başında daha uzun süre çalışmak"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Ruhi'nin yemek ve su alışkanlıklarını anlatan cümlelere bak. Hangisi yanlış bir alışkanlık?",
+   "kanitIpucu": "Ruhi'nin kahvaltı, öğle ya da akşam yemeğini anlatan cümlelerden birine dokun.",
+   "aciklama": "Yeterli su içmek; düzenli, dengeli ve yeterli öğünlerle beslenmek sindirim organlarının sağlıklı çalışmasına yardımcı olur (s. 96, 99).",
+   "kavram": "Su ve Düzenli Öğünler"
   }
  ]
 }

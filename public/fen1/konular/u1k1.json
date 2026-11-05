@@ -24,6 +24,9 @@
     "aciklama": "Roket, uzay araçlarını yeryüzünden yörüngeye veya daha uzağa taşır. (s. 18)",
     "tetik": [
      "nedir"
+    ],
+    "bolge": [
+     "Uzay roketinin görevi nedir"
     ]
    }
   },
@@ -46,6 +49,9 @@
     "aciklama": "Yapay uydular belirli bir yörüngede dolanır; iletişim, gözlem ve keşif için kullanılır. (s. 18)",
     "tetik": [
      "ne yapar"
+    ],
+    "bolge": [
+     "uydu uzayda ne yapar"
     ]
    }
   },
@@ -68,6 +74,9 @@
     "aciklama": "Uzay sondası robotik bir araçtır, içinde insan yoktur ve Dünya'dan kontrol edilir. (s. 18)",
     "tetik": [
      "kim"
+    ],
+    "bolge": [
+     "Uzay sondasını kim kontrol eder"
     ]
    }
   },
@@ -90,6 +99,9 @@
     "aciklama": "Uzay mekiği astronotları, büyük uyduları ve gerekli malzemeleri uzay istasyonuna taşır. (s. 18)",
     "tetik": [
      "neleri"
+    ],
+    "bolge": [
+     "neleri uzay istasyonuna taşır"
     ]
    }
   },
@@ -112,6 +124,9 @@
     "aciklama": "Uzay istasyonunda astronotlar yaşar ve düşük yer çekimli ortamda deney yapar. (s. 19)",
     "tetik": [
      "ne yapar"
+    ],
+    "bolge": [
+     "uzay istasyonunda ne yapar"
     ]
    }
   },
@@ -134,6 +149,9 @@
     "aciklama": "Teleskoplar gök cisimlerini gözlemlemek için kullanılır. (s. 19)",
     "tetik": [
      "ne için"
+    ],
+    "bolge": [
+     "Teleskop ne için kullanılır"
     ]
    }
   }
@@ -260,6 +278,9 @@
    "aciklama": "Uzay tamamen boş değildir; çok az miktarda gaz, toz ve çeşitli parçacıklar bulunur. (s. 16)",
    "tetik": [
     "hangisi doğrudur"
+   ],
+   "bolge": [
+    "Uzay için hangisi doğrudur"
    ]
   },
   {
@@ -274,6 +295,9 @@
    "aciklama": "Uzay roketi, uzay araçlarını yörüngeye veya daha uzak bölgelere taşır. (s. 18)",
    "tetik": [
     "hangisidir"
+   ],
+   "bolge": [
+    "yörüngeye taşıyan araç hangisidir"
    ]
   },
   {
@@ -288,6 +312,9 @@
    "aciklama": "Uzay sondası robotik bir araçtır ve Dünya'dan kontrol edilir. (s. 18)",
    "tetik": [
     "hangisidir"
+   ],
+   "bolge": [
+    "edilen robot araç hangisidir"
    ]
   },
   {
@@ -302,6 +329,9 @@
    "aciklama": "Yapay uydular belirli bir yörüngede dolanır ve Dünya'dan kontrol edilir. (s. 18)",
    "tetik": [
     "hangisidir"
+   ],
+   "bolge": [
+    "çevresinde dolanan araç hangisidir"
    ]
   },
   {
@@ -316,6 +346,9 @@
    "aciklama": "Mekiğin kontrolünü içinde görev alan astronotlar yapar. (s. 18)",
    "tetik": [
     "kim"
+   ],
+   "bolge": [
+    "Uzay mekiğini kim kontrol eder"
    ]
   },
   {
@@ -330,6 +363,9 @@
    "aciklama": "Uzay istasyonunda astronotların yaşam alanı ve deney donanımı vardır. (s. 19)",
    "tetik": [
     "hangisidir"
+   ],
+   "bolge": [
+    "deney yaptığı araç hangisidir"
    ]
   },
   {
@@ -344,6 +380,9 @@
    "aciklama": "Kitaptaki örnek: Yapay uyduda güneş panelleri kullanılır, uzay roketinde kullanılmaz. (s. 24)",
    "tetik": [
     "kullanmaz"
+   ],
+   "bolge": [
+    "Hangisi güneş paneli kullanmaz"
    ]
   },
   {
@@ -358,6 +397,9 @@
    "aciklama": "Yeni teknolojiler sayesinde uzay roketleri yeniden kullanılabilir şekilde üretiliyor. (s. 18)",
    "tetik": [
     "hangisidir"
+   ],
+   "bolge": [
+    "yeniden kullanılabilen araç hangisidir"
    ]
   },
   {
@@ -372,6 +414,9 @@
    "aciklama": "Yörüngedeki teleskoplar daha net görüntüler elde eder. (s. 19)",
    "tetik": [
     "ne olur"
+   ],
+   "bolge": [
+    "yörüngesine çıkarılınca ne olur"
    ]
   }
  ],
@@ -416,9 +461,9 @@
     "farkı"
    ],
    "okut": [
-    "Önce benzerliği, sonra farkı yaz (iki parça).",
-    "Yalnız bir tanım yaz: “X, … araçtır.”",
-    "Evet ya da hayır yaz, sonra nedenini ekle."
+    "mekik ile roketin bir benzer yanını ve bir farklı yanını yazmanı",
+    "mekiğin ne işe yaradığını anlatmanı",
+    "hangisinin daha büyük olduğunu söylemeni"
    ],
    "parcalar": [
     {
@@ -467,7 +512,10 @@
      ]
     }
    ],
-   "sayfa": "s. 18"
+   "sayfa": "s. 18",
+   "bolge": [
+    "benzerliği ve bir farkı yazınız"
+   ]
   },
   {
    "soru": "Uzay sondasının görevi nedir ve nasıl kontrol edilir? Yazınız.",
@@ -476,9 +524,9 @@
     "nasıl kontrol edilir"
    ],
    "okut": [
-    "Görevini yaz, sonra kim kontrol eder yaz (iki parça).",
-    "Benzerlik ve fark yaz.",
-    "Sebep ve sonuç yaz: “… çünkü …”"
+    "sondanın ne işe yaradığını ve onu kimin, nereden yönettiğini yazmanı",
+    "sondanın nasıl bir şekli olduğunu anlatmanı",
+    "sondanın ne zaman icat edildiğini söylemeni"
    ],
    "parcalar": [
     {
@@ -520,7 +568,10 @@
      ]
     }
    ],
-   "sayfa": "s. 18"
+   "sayfa": "s. 18",
+   "bolge": [
+    "görevi nedir ve nasıl kontrol edilir"
+   ]
   }
  ]
 }

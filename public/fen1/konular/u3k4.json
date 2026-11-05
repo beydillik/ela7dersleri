@@ -24,6 +24,9 @@
     "aciklama": "Kan, kalp tarafından pompalanan kırmızı renkli sıvıdır. (s. 107)",
     "tetik": [
      "hangisidir"
+    ],
+    "bolge": [
+     "vücuda pompalayan organ hangisidir"
     ]
    }
   },
@@ -46,6 +49,9 @@
     "aciklama": "Kan vücut sıcaklığını düzenler. (s. 107)",
     "tetik": [
      "hangisi"
+    ],
+    "bolge": [
+     "hangisi kanın görevlerinden biridir"
     ]
    }
   },
@@ -68,6 +74,9 @@
     "aciklama": "Plazma kanın sıvı kısmını oluşturur. (s. 107)",
     "tetik": [
      "ne ad verilir"
+    ],
+    "bolge": [
+     "sıvı kısmına ne ad verilir"
     ]
    }
   },
@@ -90,6 +99,9 @@
     "aciklama": "Kana kırmızı rengi veren hücreler alyuvarlardır. (s. 107)",
     "tetik": [
      "hangisidir"
+    ],
+    "bolge": [
+     "rengini veren hücre hangisidir"
     ]
    }
   },
@@ -112,6 +124,9 @@
     "aciklama": "Akyuvarlar vücudun mikroplara karşı savunmasında görevlidir. (s. 107)",
     "tetik": [
      "hangisidir"
+    ],
+    "bolge": [
+     "savunan kan hücresi hangisidir"
     ]
    }
   },
@@ -134,6 +149,9 @@
     "aciklama": "Kan pulcukları yaralanmalarda pıhtılaşarak kan kaybını önler. (s. 107)",
     "tetik": [
      "hangisidir"
+    ],
+    "bolge": [
+     "durmasını sağlayan yapı hangisidir"
     ]
    }
   }
@@ -217,6 +235,9 @@
    "aciklama": "Kan, kan plazması ve kan hücrelerinden oluşur. (s. 107)",
    "tetik": [
     "hangi iki"
+   ],
+   "bolge": [
+    "hangi iki bölümden oluşur"
    ]
   },
   {
@@ -231,6 +252,9 @@
    "aciklama": "Akyuvarlar kanda en az sayıda bulunan hücrelerdir. (s. 107)",
    "tetik": [
     "hangisidir"
+   ],
+   "bolge": [
+    "sayıda bulunan hücre hangisidir"
    ]
   },
   {
@@ -245,6 +269,9 @@
    "aciklama": "Alyuvarlar oksijen ve karbon dioksidin taşınmasında görevlidir. (s. 107)",
    "tetik": [
     "hangisidir"
+   ],
+   "bolge": [
+    "taşıyan kan hücresi hangisidir"
    ]
   },
   {
@@ -259,6 +286,9 @@
    "aciklama": "Kan plazmasının büyük bir miktarını su oluşturur. (s. 107)",
    "tetik": [
     "neden"
+   ],
+   "bolge": [
+    "bir kısmı neden oluşur"
    ]
   },
   {
@@ -273,6 +303,9 @@
    "aciklama": "Plazma kanın sıvı kısmıdır; alyuvar, akyuvar ve kan pulcukları ise kan hücreleridir. (s. 107)",
    "tetik": [
     "hangisi"
+   ],
+   "bolge": [
+    "hangisi kan hücresi değildir"
    ]
   },
   {
@@ -287,6 +320,9 @@
    "aciklama": "Kan, hücrelerde oluşan atık maddeleri ilgili organlara taşır. (s. 107)",
    "tetik": [
     "ne yapar"
+   ],
+   "bolge": [
+    "atık maddeleri ne yapar"
    ]
   },
   {
@@ -301,6 +337,9 @@
    "aciklama": "Beyaz kan hücreleri olan akyuvarlar vücudu mikroplara karşı savunur. (s. 107)",
    "tetik": [
     "hangi adla"
+   ],
+   "bolge": [
+    "Akyuvarlar başka hangi adla anılır"
    ]
   }
  ],
@@ -344,9 +383,9 @@
     "farkı"
    ],
    "okut": [
-    "İki hücreyi ayrı ayrı tanımla (iki parça).",
-    "Sebep ve sonuç yaz: “… çünkü …”",
-    "Yalnız bir organın adını yaz."
+    "alyuvarın ve akyuvarın her birinin ne işe yaradığını ayrı ayrı yazmanı",
+    "kanda hangisinin daha çok bulunduğunu söylemeni",
+    "kanın ne renk olduğunu anlatmanı"
    ],
    "parcalar": [
     {
@@ -390,7 +429,10 @@
      ]
     }
    ],
-   "sayfa": "s. 107"
+   "sayfa": "s. 107",
+   "bolge": [
+    "akyuvar arasındaki farkı yazınız"
+   ]
   },
   {
    "soru": "Yaralanmalarda kan kaybı nasıl önlenir? Yazınız.",
@@ -398,9 +440,9 @@
     "nasıl"
    ],
    "okut": [
-    "Hangi hücre ve ne yaptığını yaz (iki parça).",
-    "Benzerlik ve fark yaz.",
-    "Evet ya da hayır yaz."
+    "kan kaybını hangi hücrelerin, ne yaparak durdurduğunu yazmanı",
+    "yaralanınca ne yapman gerektiğini anlatmanı",
+    "kanın kaç bölümden oluştuğunu söylemeni"
    ],
    "parcalar": [
     {
@@ -444,7 +486,68 @@
      ]
     }
    ],
-   "sayfa": "s. 107"
+   "sayfa": "s. 107",
+   "bolge": [
+    "kan kaybı nasıl önlenir"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Kanın büyük bir kısmı sıvıdır.",
+    "Kanın bu sıvı kısmına plazma denir.",
+    "Plazmada besin, atık madde, enzim ve hormonlar bulunur."
+   ],
+   "soru": "Kanda besin ve hormonları taşıyan sıvı kısmın adı nedir?",
+   "bolge": [
+    "sıvı kısmın adı nedir"
+   ],
+   "serit": "Kanın sıvı kısmının adı",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Plazma",
+    "Alyuvar",
+    "Enzim"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    2
+   ],
+   "ipucu": "“Sıvı kısmına … denir” diyen cümleyi oku.",
+   "kanitIpucu": "Sıvı kısmın adını veren cümleyi bul.",
+   "aciklama": "Kanın sıvı kısmı plazmadır. Büyük bölümü sudur; içinde besin, atık madde, enzim ve hormon bulunur (s. 107).",
+   "kavram": "Plazma"
+  },
+  {
+   "metin": [
+    "Zeynep bahçede koşarken düştü ve dizi kanadı.",
+    "Annesi yarayı temiz bir bezle hafifçe bastırdı.",
+    "Bir süre sonra kanama durdu ve yaranın üstünde koyu renkli bir tabaka oluştu.",
+    "Zeynep bu tabakanın kandaki bazı yapılar sayesinde oluştuğunu derste öğrenmişti.",
+    "Bu yapılar damarın zedelenen yerinde pıhtılaşarak yarayı tıkar."
+   ],
+   "soru": "Zeynep'in kanamasının durmasını sağlayan kan yapıları hangileridir?",
+   "bolge": [
+    "kanamasının durmasını sağlayan kan yapıları hangileridir"
+   ],
+   "serit": "Kanamayı durduran kan yapıları",
+   "kanit": [
+    4
+   ],
+   "secenekler": [
+    "Kan pulcukları",
+    "Akyuvarlar",
+    "Alyuvarlar"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Metin bu yapıların ne yaptığını söylüyor: pıhtılaşmak. Pıhtılaşmayı hangi yapılar sağlar?",
+   "kanitIpucu": "Yapıların ne yaptığını anlatan cümleyi bul.",
+   "aciklama": "Yaralanmalarda kan pulcukları damarların iç yüzeyinde pıhtılaşır, zedelenen kısmı tıkayarak kan kaybını önler (s. 107). (Zeynep'in hikâyesi kitap dışı bir örnektir; bilgi kitaptandır.)",
+   "kavram": "Kan Pulcukları"
   }
  ]
 }

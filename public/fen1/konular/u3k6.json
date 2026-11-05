@@ -24,6 +24,9 @@
     "aciklama": "Teknoloji bağımlılığının dolaşım sistemi sağlığına olumsuz etkileri vardır. (s. 114)",
     "tetik": [
      "hangisi"
+    ],
+    "bolge": [
+     "hangisi dolaşım sistemi sağlığına zarar verir"
     ]
    }
   },
@@ -46,6 +49,9 @@
     "aciklama": "Çocukların günde 8–10 saat uyuması gerekir. (s. 115)",
     "tetik": [
      "kaç"
+    ],
+    "bolge": [
+     "kaç saat uyuması gerekir"
     ]
    }
   },
@@ -68,6 +74,9 @@
     "aciklama": "Hazır gıdalardan, aşırı şeker ve tuz kullanımından kaçınmalıyız. (s. 115)",
     "tetik": [
      "hangisinden"
+    ],
+    "bolge": [
+     "sağlığı için hangisinden kaçınmalıyız"
     ]
    }
   },
@@ -90,6 +99,9 @@
     "aciklama": "Spor yapmak kanın vücutta hızlı dolaşımını sağlar. (s. 115)",
     "tetik": [
      "nasıl"
+    ],
+    "bolge": [
+     "kan dolaşımını nasıl etkiler"
     ]
    }
   },
@@ -112,6 +124,9 @@
     "aciklama": "Uzun süre ekran başında vakit geçirmek hareketsiz kalmaya neden olur ve dolaşım sistemini olumsuz etkiler. (s. 115)",
     "tetik": [
      "neden"
+    ],
+    "bolge": [
+     "neden dolaşım sistemine zarar verir"
     ]
    }
   },
@@ -134,6 +149,9 @@
     "aciklama": "Mehmet çok hareket etmiyor; genellikle çok yağlı, tuzlu ve hazır gıdalar tercih ediyordu. (s. 113)",
     "tetik": [
      "nedeni neydi"
+    ],
+    "bolge": [
+     "rahatsızlığı yaşamasının nedeni neydi"
     ]
    }
   }
@@ -217,6 +235,9 @@
    "aciklama": "Yetişkinlerin günde 7–9 saat uyuması gerekir. (s. 115)",
    "tetik": [
     "kaç"
+   ],
+   "bolge": [
+    "kaç saat uyuması gerekir"
    ]
   },
   {
@@ -231,6 +252,9 @@
    "aciklama": "Zeytinyağı, ceviz yağı ve fındık yağı sağlıklı yağlara örnektir. (s. 115)",
    "tetik": [
     "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi sağlıklı yağlara örnektir"
    ]
   },
   {
@@ -245,6 +269,9 @@
    "aciklama": "Spor yapmak kanın vücutta hızlı dolaşımını sağlar; bu yüzden ifade yanlıştır. (s. 115, 116)",
    "tetik": [
     "ne söylenebilir"
+   ],
+   "bolge": [
+    "ifadesi için ne söylenebilir"
    ]
   },
   {
@@ -259,6 +286,9 @@
    "aciklama": "Sosyal ve sportif faaliyetler kişiyi stresten uzak tutarak kalp ve damar sağlığını korur. (s. 115)",
    "tetik": [
     "neden"
+   ],
+   "bolge": [
+    "faaliyetler kişiyi neden uzak tutar"
    ]
   },
   {
@@ -273,6 +303,9 @@
    "aciklama": "Doktor Mehmet'e su içmesini, az yağlı, az tuzlu, taze yiyecekler yemesini ve spor yapmasını önerdi. (s. 113)",
    "tetik": [
     "hangisini"
+   ],
+   "bolge": [
+    "Doktor, Mehmet'e hangisini önermedi"
    ]
   },
   {
@@ -287,6 +320,9 @@
    "aciklama": "Ekran karşısındaki süre kısaltılmalı ya da düzenli aralıklarla kısa yürüyüşler yapılmalıdır. (s. 115)",
    "tetik": [
     "ne yapmalıdır"
+   ],
+   "bolge": [
+    "sistemi için ne yapmalıdır"
    ]
   },
   {
@@ -301,6 +337,9 @@
    "aciklama": "Sigara ve alkol tüketimi kan damarlarına zarar verir. (s. 116)",
    "tetik": [
     "hangisi"
+   ],
+   "bolge": [
+    "tüketimi için hangisi doğrudur"
    ]
   },
   {
@@ -315,6 +354,9 @@
    "aciklama": "Çevremizdekileri de kalp ve damar rahatsızlıklarına dikkat etmeleri ve sağlıklı yaşam davranışları kazanmaları konusunda uyarmalıyız. (s. 115)",
    "tetik": [
     "ne yapmalıyız"
+   ],
+   "bolge": [
+    "insanlar için ne yapmalıyız"
    ]
   }
  ],
@@ -358,9 +400,9 @@
     "nasıl"
    ],
    "okut": [
-    "Etkiyi ve sonucunu yaz (iki parça).",
-    "Tanım yaz: “X, … denir.”",
-    "İki ayrı örnek yaz."
+    "sporun kana ne yaptığını ve bunun dolaşıma faydasını anlatmanı",
+    "hangi sporu yapman gerektiğini söylemeni",
+    "sporun kaslara faydasını anlatmanı"
    ],
    "parcalar": [
     {
@@ -404,7 +446,10 @@
      ]
     }
    ],
-   "sayfa": "s. 115"
+   "sayfa": "s. 115",
+   "bolge": [
+    "sistemi sağlığını nasıl korur"
+   ]
   },
   {
    "soru": "Uzun süre ekran başında kalmak dolaşım sistemine neden zarar verir? Yazınız.",
@@ -412,9 +457,9 @@
     "neden"
    ],
    "okut": [
-    "Davranışı ve sonucunu yaz (iki parça).",
-    "Benzerlik ve fark yaz.",
-    "Evet ya da hayır yaz."
+    "ekran başında uzun kalmanın dolaşım sistemine neden zarar verdiğini, sebebiyle yazmanı",
+    "ekran süresinin kaç saat olması gerektiğini söylemeni",
+    "ekranın uykuya etkisini anlatmanı"
    ],
    "parcalar": [
     {
@@ -458,7 +503,70 @@
      ]
     }
    ],
-   "sayfa": "s. 115"
+   "sayfa": "s. 115",
+   "bolge": [
+    "dolaşım sistemine neden zarar verir"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Çocukların günde 8-10 saat uyuması gerekir.",
+    "Düzenli uyku dolaşım sisteminin sağlığı için çok önemlidir.",
+    "Selin ise her gece 6 saat uyuyor."
+   ],
+   "soru": "Selin'in dolaşım sistemi sağlığı için ne yapması gerekir?",
+   "bolge": [
+    "sağlığı için ne yapması gerekir"
+   ],
+   "serit": "Selin'in yapması gereken",
+   "kanit": [
+    0
+   ],
+   "secenekler": [
+    "Her gece 8-10 saat uyumak",
+    "Her gece 6 saat uyumaya devam etmek",
+    "Daha az su içmek"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Çocukların kaç saat uyuması gerekiyor? Selin kaç saat uyuyor?",
+   "kanitIpucu": "Çocukların kaç saat uyuması gerektiğini söyleyen cümleyi bul.",
+   "aciklama": "Çocukların günde 8-10 saat uyuması gerekir; düzenli uyku dolaşım sistemi sağlığı için çok önemlidir (s. 115).",
+   "kavram": "Düzenli Uyku"
+  },
+  {
+   "metin": [
+    "Mehmet akşam yemeğinde çok yağlı ve tuzlu yiyecekler yedikten sonra başının şiddetle ağrıdığını fark etti.",
+    "Doktor testlerden sonra ona damar rahatsızlığı olduğunu söyledi.",
+    "Mehmet gün içinde çok hareket etmediğini, genellikle yağlı, tuzlu ve hazır gıdalar yediğini anlattı.",
+    "Doktor ona yeterince su içmesini; az yağlı, az tuzlu, taze yiyecekler yemesini söyledi.",
+    "Sporu da hayatının bir parçası yapmasını istedi."
+   ],
+   "soru": "Doktorun Mehmet'e önerdiği beslenme hangisidir?",
+   "bolge": [
+    "önerdiği beslenme hangisidir"
+   ],
+   "serit": "Doktorun önerdiği beslenme",
+   "kanit": [
+    3
+   ],
+   "secenekler": [
+    "Az yağlı, az tuzlu ve taze yiyecekler yemek",
+    "Yağlı, tuzlu ve hazır gıdalar yemek",
+    "Akşamları daha çok yemek"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Soru Mehmet'in ne yediğini değil, doktorun ne önerdiğini soruyor.",
+   "kanitIpucu": "Doktorun Mehmet'e ne söylediğini anlatan cümleyi bul.",
+   "aciklama": "Doktor yeterince su içmesini; az yağlı, az tuzlu, taze ve sağlıklı yiyecekler yemesini önerdi. Hazır gıdalardan, aşırı şeker ve tuzdan kaçınılmalıdır (s. 113, 115).",
+   "kavram": "Yağlı, Tuzlu ve Hazır Gıdalar"
   }
  ]
 }

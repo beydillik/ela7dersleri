@@ -24,6 +24,9 @@
     "aciklama": "Dolaşım sistemi kan, kalp ve damarlardan oluşur. (s. 104)",
     "tetik": [
      "hangi yapılardan"
+    ],
+    "bolge": [
+     "Dolaşım sistemi hangi yapılardan oluşur"
     ]
    }
   },
@@ -46,6 +49,9 @@
     "aciklama": "Kalp, kasılıp gevşeme hareketiyle kanın damarlarda dolaşmasını sağlar. (s. 104)",
     "tetik": [
      "nasıl"
+    ],
+    "bolge": [
+     "kanı damarlarda nasıl dolaştırır"
     ]
    }
   },
@@ -68,6 +74,9 @@
     "aciklama": "Atardamarlar kalpten çıkan kanı vücuda taşır. (s. 104)",
     "tetik": [
      "hangisidir"
+    ],
+    "bolge": [
+     "vücuda taşıyan damar hangisidir"
     ]
    }
   },
@@ -90,6 +99,9 @@
     "aciklama": "Toplardamarlar vücuda dağılan kanı toplayarak tekrar kalbe getirir. (s. 104)",
     "tetik": [
      "hangisidir"
+    ],
+    "bolge": [
+     "kalbe getiren damar hangisidir"
     ]
    }
   },
@@ -112,6 +124,9 @@
     "aciklama": "Kılcal damarlar kan ile hücreler arasında madde alışverişini sağlar. (s. 104)",
     "tetik": [
      "hangi damarlarda"
+    ],
+    "bolge": [
+     "madde alışverişi hangi damarlarda olur"
     ]
    }
   },
@@ -134,6 +149,9 @@
     "aciklama": "Küçük kan dolaşımında kan kalpten akciğerlere gider ve tekrar kalbe döner. (s. 105)",
     "tetik": [
      "nereye"
+    ],
+    "bolge": [
+     "kan kalpten nereye gider"
     ]
    }
   },
@@ -156,6 +174,9 @@
     "aciklama": "Büyük kan dolaşımında oksijen oranı yüksek kan kalbin sol tarafından tüm vücuda gönderilir. (s. 105)",
     "tetik": [
      "nasıldır"
+    ],
+    "bolge": [
+     "vücuda giden kan nasıldır"
     ]
    }
   }
@@ -248,6 +269,9 @@
    "aciklama": "Dolaşım sistemi hücrelerde oluşan atık maddelerin vücuttan uzaklaştırılmasını sağlar. (s. 104)",
    "tetik": [
     "hangi sistemin"
+   ],
+   "bolge": [
+    "maddeleri uzaklaştırmak hangi sistemin görevidir"
    ]
   },
   {
@@ -262,6 +286,9 @@
    "aciklama": "Kalp, özel kas dokusundan oluşan bir organdır. (s. 104)",
    "tetik": [
     "hangi dokudan"
+   ],
+   "bolge": [
+    "Kalp hangi dokudan oluşur"
    ]
   },
   {
@@ -276,6 +303,9 @@
    "aciklama": "Kılcal damarlar atardamarlarla toplardamarları birbirine bağlar. (s. 104)",
    "tetik": [
     "hangileridir"
+   ],
+   "bolge": [
+    "birbirine bağlayan damarlar hangileridir"
    ]
   },
   {
@@ -290,6 +320,10 @@
    "aciklama": "Akciğerlerden kalbe gelen toplardamar dışındaki toplardamarlar oksijeni az kan taşır; akciğerden gelen ise oksijenlenmiş kanı taşır. (s. 104–105)",
    "tetik": [
     "Hangi toplardamar"
+   ],
+   "bolge": [
+    "Hangi toplardamar",
+    "zengin kan taşır"
    ]
   },
   {
@@ -304,6 +338,9 @@
    "aciklama": "Akciğerlere ulaşan kanın oksijen oranı artar, karbon dioksit oranı azalır. (s. 105)",
    "tetik": [
     "ne olur"
+   ],
+   "bolge": [
+    "ulaşan kanda ne olur"
    ]
   },
   {
@@ -318,6 +355,9 @@
    "aciklama": "Karbon dioksit oranı artan kan toplardamarlarla kalbin sağ tarafına gelir. (s. 105)",
    "tetik": [
     "hangi tarafına"
+   ],
+   "bolge": [
+    "kan kalbin hangi tarafına gelir"
    ]
   },
   {
@@ -332,6 +372,9 @@
    "aciklama": "Akciğerde oksijen alınır; kılcal damarlarda hücrelere verilir. Bu yüzden kırmızı kâğıt oksijence zengin kanı, mavi kâğıt oksijeni az kanı gösterir. (s. 105, 108)",
    "tetik": [
     "neyi temsil"
+   ],
+   "bolge": [
+    "not kâğıtları neyi temsil eder"
    ]
   },
   {
@@ -346,6 +389,9 @@
    "aciklama": "Kalpten çıkan kanın vücuda yayılıp tekrar kalbe dönmesine büyük kan dolaşımı denir. (s. 105)",
    "tetik": [
     "hangi dolaşımdır"
+   ],
+   "bolge": [
+    "yolu hangi dolaşımdır"
    ]
   },
   {
@@ -360,6 +406,9 @@
    "aciklama": "Nabız kalp atış hızını gösterir. (s. 105)",
    "tetik": [
     "neyi gösterir"
+   ],
+   "bolge": [
+    "Nabız neyi gösterir"
    ]
   }
  ],
@@ -369,31 +418,31 @@
  "tekrar": [
   {
    "c": "Dolaşım sistemi kan, kalp ve {damarlardan|bağırsaktan|akciğerden} oluşur.",
-   "s": "s. 103"
+   "s": "s. 104"
   },
   {
    "c": "Dolaşım sistemi oksijeni, besin maddelerini ve hormonları hücrelere taşır; hücrelerde oluşan {atık maddelerin|besin maddelerinin} vücuttan uzaklaştırılmasını sağlar.",
-   "s": "s. 103"
+   "s": "s. 104"
   },
   {
    "c": "Kasılıp gevşeme hareketiyle kanın damarlarda dolaşmasını sağlayan, özel kas dokusundan oluşan organa {kalp|akciğer|mide} denir.",
-   "s": "s. 103"
+   "s": "s. 104"
   },
   {
    "c": "Kalpten çıkan kanı vücuda {atardamarlar|toplardamarlar|kılcal damarlar} taşır; vücuda dağılan kanı toplayıp kalbe {toplardamarlar|atardamarlar|kılcal damarlar} getirir.",
-   "s": "s. 103"
+   "s": "s. 104"
   },
   {
    "c": "Kılcal damarlar atardamarlarla toplardamarları birbirine bağlar; kan ile hücreler arasında {madde alışverişini|ses iletimini|ışık geçişini} sağlar.",
-   "s": "s. 103"
+   "s": "s. 104"
   },
   {
    "c": "Kalpten çıkan kanın akciğerlere gidip kalbe dönmesine {küçük|büyük} kan dolaşımı, vücuda yayılıp kalbe dönmesine {büyük|küçük} kan dolaşımı denir.",
-   "s": "s. 104"
+   "s": "s. 105"
   },
   {
    "c": "Akciğerlere ulaşan kanın oksijen oranı {artar|azalır}, karbon dioksit oranı {azalır|artar}. Yetişkinlerde dinlenme anında nabız genellikle {60-100|10-30|150-200} atım/dakikadır.",
-   "s": "s. 104"
+   "s": "s. 105"
   }
  ],
  "kisaCevap": [
@@ -403,9 +452,9 @@
     "farkı"
    ],
    "okut": [
-    "İki dolaşımı ayrı ayrı tanımla (iki parça).",
-    "Sebep ve sonuç yaz: “… çünkü …”",
-    "Yalnız bir organın adını yaz."
+    "küçük ve büyük kan dolaşımında kanın nereye gidip geldiğini ayrı ayrı yazmanı",
+    "kalbin kaç bölümden oluştuğunu söylemeni",
+    "kan dolaşımını kimin keşfettiğini yazmanı"
    ],
    "parcalar": [
     {
@@ -447,7 +496,10 @@
      ]
     }
    ],
-   "sayfa": "s. 104"
+   "sayfa": "s. 105",
+   "bolge": [
+    "dolaşımı arasındaki farkı yazınız"
+   ]
   },
   {
    "soru": "Atardamar, toplardamar ve kılcal damarın görevlerini yazınız.",
@@ -455,9 +507,9 @@
     "görevlerini"
    ],
    "okut": [
-    "Üç damarı ayrı ayrı yaz (üç parça).",
-    "Benzerlik ve fark yaz.",
-    "Evet ya da hayır yaz, sonra nedenini ekle."
+    "atardamarın, toplardamarın ve kılcal damarın her birinin ne iş yaptığını yazmanı",
+    "en kalın damarın hangisi olduğunu söylemeni",
+    "damarların ne renk olduğunu anlatmanı"
    ],
    "parcalar": [
     {
@@ -518,7 +570,70 @@
      ]
     }
    ],
-   "sayfa": "s. 103"
+   "sayfa": "s. 104",
+   "bolge": [
+    "kılcal damarın görevlerini yazınız"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Kalpten çıkan kan akciğerlere gider.",
+    "Akciğerlerde kanın oksijen oranı artar, karbon dioksit oranı azalır.",
+    "Oksijenlenmiş kan kalbin sol tarafına geri döner."
+   ],
+   "soru": "Metinde anlatılan dolaşım hangisidir?",
+   "bolge": [
+    "anlatılan dolaşım hangisidir"
+   ],
+   "serit": "Metinde anlatılan dolaşımın adı",
+   "kanit": [
+    0,
+    2
+   ],
+   "secenekler": [
+    "Küçük kan dolaşımı",
+    "Büyük kan dolaşımı",
+    "Kanın hücrelerle madde alışverişi"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Kan kalpten nereye gidiyor ve nereye dönüyor?",
+   "kanitIpucu": "Kanın kalpten nereye gittiğini söyleyen cümleyi bul.",
+   "aciklama": "Kalpten çıkan kanın akciğerlere gidip tekrar kalbe dönmesine küçük kan dolaşımı denir (s. 105).",
+   "kavram": "Küçük Kan Dolaşımı"
+  },
+  {
+   "metin": [
+    "Okulda sınıflar arası futbol turnuvası vardı.",
+    "Barış maçta çok koştu.",
+    "Maç bitince arkadaşı Berat ona sarıldı ve Barış'ın kalbinin çok hızlı attığını fark etti.",
+    "Öğretmenleri ikisinden ellerini kalplerinin üzerine koymalarını istedi.",
+    "İki arkadaşın kalbi farklı hızlarda atıyordu."
+   ],
+   "soru": "Barış'ın kalbinin Berat'ınkinden hızlı atmasının sebebi nedir?",
+   "bolge": [
+    "hızlı atmasının sebebi nedir"
+   ],
+   "serit": "Barış'ın kalbinin hızlı atmasının sebebi",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Maçta çok koşması",
+    "Berat'ın ona sarılması",
+    "Elini kalbinin üzerine koyması"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Barış maçta ne yaptı? Nabız neye göre değişir?",
+   "kanitIpucu": "Barış'ın maçta ne yaptığını anlatan cümleyi bul.",
+   "aciklama": "Barış maçta çok koştuğu için kalbi hızlı atıyor. Nabız (kalp atış hızı) yaşa, cinsiyete ve aktiviteye göre değişir (s. 101, 105).",
+   "kavram": "Kalp"
   }
  ]
 }

@@ -1653,3 +1653,29 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .yzr.yok { color: var(--ink-3, #6b7488); background: transparent; font-weight: 600; border-style: dashed; }
 :root[data-theme="dark"] .yzr.ok, [data-theme="dark"] .yzr.ok { color: #ffd28a; background: rgba(232,161,58,.16); border-color: #e8a13a; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .yzr.ok { color: #ffd28a; background: rgba(232,161,58,.16); border-color: #e8a13a; } }
+
+/* Sorunun kalbi (dikkat pilotu): soru vurgusuz gelir, Ela asıl sorulan kısma dokunur */
+.kalp-alan .kk { border-radius: 5px; padding: 0 1px; }
+.kalp-alan:not(.kalp-tamam) .kk { cursor: pointer; }
+.kalp-alan:not(.kalp-tamam) .kk:hover { background: var(--surface-2); }
+.kalp-alan .kk:focus-visible { outline: 2px solid var(--accent, #e8732c); outline-offset: 1px; }
+.kalp-alan .kk.kk-x { text-decoration: line-through; text-decoration-color: #9aa4b5; color: var(--muted); }
+.kk-run.kalp { background: #ffe1df; color: #b3261e; font-weight: 800; border-radius: 6px; padding: 0 3px; box-shadow: 0 2px 0 #e0544b; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+:root[data-theme="dark"] .kk-run.kalp { background: rgba(224,84,75,.22); color: #ffb4ad; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kk-run.kalp { background: rgba(224,84,75,.22); color: #ffb4ad; } }
+.kk-run.kalp .kk { padding: 0; }
+.kk-run.kalp.yanip { animation: kalpYan .45s ease-in-out 4 alternate; }
+@keyframes kalpYan { from { box-shadow: 0 2px 0 #e0544b; } to { box-shadow: 0 0 0 3px #e0544b; } }
+.kalp-not { display: flex; align-items: center; gap: 8px; margin: 6px 0 10px; padding: 8px 12px; border-radius: 10px; background: var(--surface-2); font-size: 15px; }
+.kalp-not svg { width: 18px; height: 18px; flex: none; }
+.kalp-not.ok { background: #ffe1df; color: #7a1c16; }
+:root[data-theme="dark"] .kalp-not.ok { background: rgba(224,84,75,.18); color: #ffd2cd; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kalp-not.ok { background: rgba(224,84,75,.18); color: #ffd2cd; } }
+.kalp-not.salla { animation: hnSalla .4s; }
+.kalp-hatir { margin-top: 6px; font-size: 14.5px; }
+.kalp-serit { position: sticky; top: 8px; z-index: 4; margin: 4px 0 10px; padding: 8px 12px; border-radius: 10px; background: #fff4d1; border: 1.5px solid #e8b13a; color: #4a3500; box-shadow: var(--shadow); font-size: 15px; }
+:root[data-theme="dark"] .kalp-serit { background: #3a2f12; color: #ffe6a8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kalp-serit { background: #3a2f12; color: #ffe6a8; } }
+.og-okut-s { margin: 4px 0; font-weight: 700; }
+.kalp-kart { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .kk-run.kalp.yanip, .kalp-not.salla { animation: none; } .kk-run.kalp.yanip { outline: 2px dashed #e0544b; } }
