@@ -12,6 +12,10 @@ def ok(ad, kosul, ayrinti=""):
     SONUC.append((ad, bool(kosul))); print(("✓ " if kosul else "✗ ") + ad + (f"  [{ayrinti}]" if ayrinti and not kosul else ""))
 
 TUM = [k["soru"] for k in D["kavramlar"]] + D["sorular"] + D.get("metinli", [])
+def bulmali(q):   # motordaki kalpTum ile aynı: bölge sorunun bütün kelimelerini kapsıyorsa bulma adımı yok
+    kel = lambda x: re.findall(r"[^\W_]+", x)
+    b = {w for x in q.get("bolge", []) for w in kel(x)}
+    return bool(q.get("bolge")) and not all(w in b for w in kel(q["soru"]))
 def tam(t): return re.compile(r"^[a-d]\) " + re.escape(t) + r"$")
 def bul_q(metin):
     for q in TUM:
@@ -37,7 +41,7 @@ with sync_playwright() as pw:
     ok("Rozet sade (yalnız 'Yazılıda çıkacak/çıkabilir' ya da hiç)", all(t in ("Yazılıda çıkacak", "Yazılıda çıkabilir") for t in rz), str(rz))
 
     # ---------- Öğren
-    ilk_kart = True; soru_say = 0; seri_test = None; kalp_ok = 0
+    ilk_kart = True; soru_say = 0; seri_test = None; kalp_ok = 0; ilk_bulmali = True; yanlis_test = False; tum_gor = False
     adim = int(page.inner_text("#pgTxt").split("/")[1].split()[0])
     ok(f"Öğren: ara 'Hatırlayalım' adımı yok (adım sayısı {adim})", adim == 1 + 2 * len(D["kavramlar"]) + 3, f"beklenen {1 + 2*len(D['kavramlar']) + 3}")
     for _ in range(80):
@@ -48,21 +52,25 @@ with sync_playwright() as pw:
             soru_say += 1
             q = bul_q(page.inner_text("#qbox .q-text"))
             serbest = page.query_selector("#qbox .kalp-not") is None
-            if soru_say == 1:
+            if not bulmali(q):
+                if not tum_gor: tum_gor = True; ok("Kısa soru (bölge = sorunun tamamı): bulma adımı yok, şıklar açık", serbest and page.is_visible("#qbox .opts"))
+            elif ilk_bulmali:
+                ilk_bulmali = False
                 ok("Soru: şıklar gizli, 'Soru neyi soruyor?' notu var, bekleme çubuğu yok",
                    page.is_hidden("#qbox .opts") and page.is_visible("#qbox .kalp-not") and page.query_selector("#qbox .kb-cubuk, #qbox .opts.bekle") is None)
                 yanlis = page.locator("#qbox .kk:not(.kk-b)")
                 if yanlis.count():
                     yanlis.first.click(); ileri(50)
                     ok("Soru: yanlış kelimeye dokununca 'Burası değil' ve şıklar hâlâ gizli", "Burası değil" in page.inner_text("#qbox .kalp-not") and page.is_hidden("#qbox .opts"))
-            if not serbest:
                 page.locator("#qbox .kk-b").first.click(); ileri(50)
-                kalp_ok += 1
-                if soru_say == 1: ok("Soru: sorunun kalbine dokununca bölge kırmızı, şıklar açık", page.locator("#qbox .kk-run.kalp").count() > 0 and page.is_visible("#qbox .opts"))
+                ok("Soru: sorunun kalbine dokununca bölge kırmızı, şıklar açık", page.locator("#qbox .kk-run.kalp").count() > 0 and page.is_visible("#qbox .opts"))
+            elif not serbest:
+                page.locator("#qbox .kk-b").first.click(); ileri(50); kalp_ok += 1
             else:
                 seri_test = soru_say
                 ok(f"Seri ödülü: {soru_say}. soruda bulma adımı yok, şıklar doğrudan açık", page.is_visible("#qbox .opts"))
-            if soru_say == 2:   # bir yanlış cevap: sorunun kalbi hatırlatması
+            if bulmali(q) and not yanlis_test and not ilk_bulmali and page.query_selector("#qbox .kk-run"):   # bir yanlış cevap: sorunun kalbi hatırlatması
+                yanlis_test = True
                 yanl = [j for j in range(len(q["secenekler"])) if j != q["dogru"]][0]
                 page.locator("#qbox .opt").nth(yanl).click(); ileri(50)
                 ok("Yanlış cevapta 'Sorunun kalbine tekrar bak' hatırlatması", page.is_visible("#qbox .kalp-hatir"))
@@ -95,15 +103,17 @@ with sync_playwright() as pw:
     # Kısa cevap
     ok("Kısa Cevap adımı geldi", page.query_selector("#kisaBox") is not None)
     for qi, q in enumerate(D["kisaCevap"]):
-        ok(f"KC{qi+1}: önce sorunun kalbi, şıklar gizli, çubuk yok", page.is_hidden("#kisaBox .opts") and page.is_visible("#kisaBox .kalp-not") and page.query_selector("#kisaBox .kb-cubuk") is None)
-        page.locator("#kisaBox .kk-b").first.click(); ileri(50)
+        if bulmali(q):
+            ok(f"KC{qi+1}: önce sorunun kalbi, şıklar gizli, çubuk yok", page.is_hidden("#kisaBox .opts") and page.is_visible("#kisaBox .kalp-not") and page.query_selector("#kisaBox .kb-cubuk") is None)
+            page.locator("#kisaBox .kk-b").first.click(); ileri(50)
+        else: ok(f"KC{qi+1}: kısa soru, bulma yok, ön soru şıkları doğrudan açık", page.is_visible("#kisaBox .opts"))
         txt = page.locator("#kisaBox .opt").all_inner_texts()
         ok(f"KC{qi+1}: 3 ön soru şıkkı, büyük harfle ve öğretmen dilinde", len(txt) == 3 and all(t[0].isupper() for t in txt) and any(q["okut"][0][1:] in t for t in txt), str(txt)[:120])
         page.locator("#kisaBox .opt:not([data-j='0'])").first.click(); ileri(50)
-        ok(f"KC{qi+1}: yanlış ön soru şıkkı kapanır, kırmızı kısım hatırlatılır", page.locator("#kisaBox .opt[disabled]").count() == 1 and page.is_visible("#kisaBox .kalp-hatir"))
+        ok(f"KC{qi+1}: yanlış ön soru şıkkı kapanır" + (", kırmızı kısım hatırlatılır" if bulmali(q) else ""), page.locator("#kisaBox .opt[disabled]").count() == 1 and (page.is_visible("#kisaBox .kalp-hatir") or not bulmali(q)))
         page.click("#kisaBox .opt[data-j='0']"); ileri(50)
         page.click("[data-yaz]"); ileri(50)
-        ok(f"KC{qi+1}: kalıp ekranında 'Soru senden şunu istiyor' ve kırmızı bölge", "Soru senden şunu istiyor" in page.inner_text("#kisaBox") and page.locator("#kisaBox .kk-run.kalp").count() > 0)
+        ok(f"KC{qi+1}: kalıp ekranında 'Soru senden şunu istiyor'" + (" ve kırmızı bölge" if bulmali(q) else ""), "Soru senden şunu istiyor" in page.inner_text("#kisaBox") and (page.locator("#kisaBox .kk-run.kalp").count() > 0 or not bulmali(q)))
         for k, p in enumerate(q["parcalar"]): page.fill(f"#kisaBox input[data-p='{k}']", p["ornek"])
         page.click("[data-kontrol]"); ileri(50)
         ok(f"KC{qi+1}: kontrol tam, 'Kalıpsız dene' düğmesi yok", page.locator("#kisaBox .kw span.hit").count() == len(q["anahtarlar"]) and page.query_selector("[data-serbest]") is None)
@@ -117,12 +127,12 @@ with sync_playwright() as pw:
     toplam = int(re.search(r"/ (\d+)", page.inner_text(".akis .progress span")).group(1))
     ok(f"Test: toplam soru sayısı değişmedi ({toplam})", toplam == len(D["sorular"]))
     metinli_gor = 0; yanlis2 = False; tuzak_gor = False; sonuclar = []
-    ilk_test_serbest = page.query_selector("#sq .kalp-not") is None
-    ok("Seri ödülü çalışıyor (Öğren'de ya da Test'in başında bulmasız soru)", SERI_OGREN or ilk_test_serbest)
+    seri_gor = False
     for _ in range(60):
         if page.query_selector(".akis") is None: break
         qtext = page.inner_text("#sq .q-text"); q = bul_q(qtext); met = "metin" in q and q in D.get("metinli", [])
         no = int(re.search(r"Soru (\d+) /", page.inner_text(".akis .progress span")).group(1))
+        if bulmali(q) and not met and page.query_selector("#sq .kalp-not") is None and page.locator("#sq .opt[disabled]").count() == 0: seri_gor = True
         if page.query_selector("#sq .kalp-not") and "ok" not in (page.get_attribute("#sq .kalp-not", "class") or ""):
             if met: ok(f"Metinli: önce yalnız soru (metin gizli)", page.is_hidden("#sq .pasaj"))
             page.locator("#sq .kk-b").first.click(); ileri(50)
@@ -138,7 +148,7 @@ with sync_playwright() as pw:
                 page.locator("#sq .opt", has_text=tam(metin_tz)).click(); ileri(50); tuzak_gor = True
                 ok("Metinli: tuzak şık seçilince 'Bu bir tuzak şık!'", "tuzak şık" in page.inner_text("#sq .fb"))
         dogru_metin = q["secenekler"][q["dogru"]]
-        if not yanlis2 and not met:
+        if not yanlis2 and not met and bulmali(q):
             yanlis2 = True
             for t in [x for j, x in enumerate(q["secenekler"]) if j != q["dogru"]][:2]:
                 page.locator("#sq .opt", has_text=tam(t)).first.click(); ileri(50)
@@ -155,6 +165,8 @@ with sync_playwright() as pw:
             page.screenshot(path="/tmp/takildi.png"); break
         if not page.query_selector("[data-sonraki]"): print("DURUM:", page.inner_text("#panel")[:400]); break
         page.click("[data-sonraki]"); ileri(200)
+    if kalp_ok >= 5: ok("Seri ödülü çalışıyor (5 üst üste bulunca bulmalı bir soru bulmasız geldi)", SERI_OGREN or seri_gor)
+    else: print("   (bilgi) Öğren'de seri için yeterli bulmalı soru yok:", kalp_ok)
     ok(f"Test: {len(D.get('metinli', []))} metinli soru geldi", metinli_gor >= len(D.get("metinli", [])), str(metinli_gor))
     sonuc = page.inner_text("#panel")
     ok("Test bitti (sonuç ekranı)", "Sonuç" in sonuc or "tamamladın" in sonuc, sonuc[:80])

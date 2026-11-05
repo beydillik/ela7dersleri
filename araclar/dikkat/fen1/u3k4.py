@@ -41,7 +41,7 @@ METINLI = {"u3k4": [
   "ipucu": "“Sıvı kısmına … denir” diyen cümleyi oku.", "kanitIpucu": "Sıvı kısmın adını veren cümleyi bul.",
   "aciklama": "Kanın sıvı kısmı plazmadır. Büyük bölümü sudur; içinde besin, atık madde, enzim ve hormon bulunur (s. 107).", "kavram": "Plazma"},
  {"metin": ["Zeynep bahçede koşarken düştü ve dizi kanadı.", "Annesi yarayı temiz bir bezle hafifçe bastırdı.", "Bir süre sonra kanama durdu ve yaranın üstünde koyu renkli bir tabaka oluştu.", "Zeynep bu tabakanın kandaki bazı yapılar sayesinde oluştuğunu derste öğrenmişti.", "Bu yapılar damarın zedelenen yerinde pıhtılaşarak yarayı tıkar."],
-  "soru": "Zeynep'in kanamasının durmasını sağlayan kan yapıları hangileridir?", "bolge": ["kanamasının durmasını sağlayan kan yapıları hangileridir"],
+  "soru": "Zeynep'in kanamasının durmasını sağlayan kan yapıları hangileridir?", "bolge": ["durmasını sağlayan kan yapıları hangileridir"],
   "serit": "Kanamayı durduran kan yapıları", "kanit": [4],
   "secenekler": ["Kan pulcukları", "Akyuvarlar", "Alyuvarlar"], "dogru": 0, "tuzak": [],
   "ipucu": "Metin bu yapıların ne yaptığını söylüyor: pıhtılaşmak. Pıhtılaşmayı hangi yapılar sağlar?", "kanitIpucu": "Yapıların ne yaptığını anlatan cümleyi bul.",

@@ -41,7 +41,7 @@ METINLI = {"u3k2": [
   "ipucu": "Ece ne yapıyor? Bu durum bağırsaklara ne oluyor?", "kanitIpucu": "Ece'nin ne yaptığını anlatan cümleyi bul.",
   "aciklama": "Uzun süre hareketsiz kalmak bağırsak hareketlerini yavaşlatır; sindirim süreci bundan olumsuz etkilenir (s. 99).", "kavram": "Ekran Başında Hareketsizlik"},
  {"metin": ["Ruhi bir şirkette masa başında çalışıyor.", "Sabahları evden aceleyle çıktığı için kahvaltı yapmıyor.", "Öğle yemeklerini genellikle atıştırmalık yiyeceklerle geçiştiriyor.", "Akşam yemeklerini hep geç saatlerde yiyor ve bazen su içmeyi unutuyor.", "Spor yapmaya da zaman ayırmıyor.", "Son günlerde midesinde şişkinlik ve kramplar oluyor."],
-  "soru": "Ruhi'nin beslenmesinde yapması gereken değişiklik hangisidir?", "bolge": ["beslenmesinde yapması gereken değişiklik hangisidir"],
+  "soru": "Ruhi'nin beslenmesinde yapması gereken değişiklik hangisidir?", "bolge": ["yapması gereken değişiklik hangisidir"],
   "serit": "Ruhi'nin beslenmesinde yapması gereken değişiklik", "kanit": [1, 2, 3],
   "secenekler": ["Öğün atlamadan düzenli ve dengeli beslenmek, yeterli su içmek", "Akşam yemeklerini daha geç saatlerde yemek", "Masa başında daha uzun süre çalışmak"], "dogru": 0, "tuzak": [1],
   "ipucu": "Ruhi'nin yemek ve su alışkanlıklarını anlatan cümlelere bak. Hangisi yanlış bir alışkanlık?", "kanitIpucu": "Ruhi'nin kahvaltı, öğle ya da akşam yemeğini anlatan cümlelerden birine dokun.",

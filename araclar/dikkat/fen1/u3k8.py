@@ -30,7 +30,6 @@ KISA = {"u3k8": [
   "sayfa": "s. 125"},
 ]}
 ELLE = {"Doktora göre Elif'in yaşadığı yerde hava kirliliğine ne yol açıyordu?": "ne yol açıyordu", "Spor yapmak akciğerlere ne kazandırır?": "ne kazandırır", "Uzun süre kaldığımız kapalı ortamlar için ne yapmalıyız?": "ne yapmalıyız", "'Tütün ürünlerinden uzak durmalıyız.' ifadesi için ne söylenebilir?": "ne söylenebilir", "'Ağızdan nefes alıp vermeliyiz.' ifadesi için ne söylenebilir?": "ne söylenebilir"}
-BOLGE = {"'Tütün ürünleri sadece solunum sistemi sağlığına zarar verir.' ifadesi neden yanlıştır?": ["ifadesi neden yanlıştır"]}
 OKUT = {"u3k8": [
  ["solunum sistemini korumak için yapabileceğin iki davranışı yazmanı", "hava kirliliğinin nedenlerini sıralamanı", "sigaranın zararlarını anlatmanı"],
  ["bağımlılığın ne demek olduğunu tanımlamanı", "bağımlılığa yol açan maddeleri sıralamanı", "Yeşilay'ın ne iş yaptığını anlatmanı"]]}
@@ -42,7 +41,7 @@ METINLI = {"u3k8": [
   "ipucu": "“Akciğerleri” kelimesinin geçtiği cümleyi oku.", "kanitIpucu": "Akciğerlere ne olduğunu söyleyen cümleyi bul.",
   "aciklama": "Spor yapmak nefes alıp verme ihtiyacını artırır; bu da akciğerleri ve solunumda görevli kasları güçlendirir (s. 125).", "kavram": "Spor ve Temiz Hava"},
  {"metin": ["Elif büyük bir şehirde yaşıyor.", "Son zamanlarda nefes darlığı ve öksürük gibi rahatsızlıklar yaşıyordu.", "Doktor, çevrelerindeki yoğun araç trafiği ve fabrikaların hava kirliliğine yol açtığını söyledi.", "Bu kirliliğin solunum sistemi sağlığını olumsuz etkilediğini anlattı.", "Elif'in ailesi bir çözüm yolu aramaya başladı."],
-  "soru": "Elif'in solunum sistemi rahatsızlıklarına yol açan durum nedir?", "bolge": ["rahatsızlıklarına yol açan durum nedir"],
+  "soru": "Elif'in solunum sistemi rahatsızlıklarına yol açan durum nedir?", "bolge": ["yol açan durum nedir"],
   "serit": "Elif'in rahatsızlığına yol açan durum", "kanit": [2, 3],
   "secenekler": ["Araç trafiği ve fabrikaların yol açtığı hava kirliliği", "Büyük bir şehirde yaşamayı sevmesi", "Ailesinin çözüm yolu araması"], "dogru": 0, "tuzak": [1, 2],
   "ipucu": "Doktor rahatsızlığın sebebi olarak neyi söyledi?", "kanitIpucu": "Doktorun söylediklerini anlatan cümlelerden birine dokun.",

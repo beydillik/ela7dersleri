@@ -41,7 +41,7 @@ METINLI = {"u3k1": [
   "ipucu": "Metinde “kana geçti” ifadesinin geçtiği cümleyi bul.", "kanitIpucu": "“Kana geçti” ifadesi hangi cümlede?",
   "aciklama": "Sindirimi tamamlanan besinler, ince bağırsağın iç yüzeyindeki villuslar sayesinde emilerek kana geçer (s. 95).", "kavram": "İnce Bağırsak"},
  {"metin": ["Ayşe bahçeden kopardığı elmayı ısırıp çiğnemeye başladı.", "Elma ağızda hem fiziksel hem kimyasal sindirime uğradı.", "Yutaktan geçen lokmalar yemek borusuyla mideye ulaştı.", "Midede bulamaç hâline gelen parçalar ince bağırsağa gönderildi.", "İnce bağırsakta sindirim tamamlandı ve gerekli kısımlar emildi.", "Geriye kalan posadaki fazla su ve mineraller kalın bağırsakta emildi."],
-  "soru": "Metne göre elmanın sindirimi hangi organda tamamlanmıştır?", "bolge": ["sindirimi hangi organda tamamlanmıştır"],
+  "soru": "Metne göre elmanın sindirimi hangi organda tamamlanmıştır?", "bolge": ["hangi organda tamamlanmıştır"],
   "serit": "Sindirimin tamamlandığı organ", "kanit": [4],
   "secenekler": ["İnce bağırsak", "Mide", "Kalın bağırsak"], "dogru": 0, "tuzak": [1, 2],
   "ipucu": "“Tamamlandı” kelimesinin geçtiği cümleyi oku.", "kanitIpucu": "Metinde “tamamlandı” kelimesi hangi cümlede?",

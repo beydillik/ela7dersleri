@@ -30,7 +30,6 @@ KISA = {"u3k3": [
   "anahtarlar": [{"ad": "atardamar: kalpten vücuda", "k": ["kalpten"]}, {"ad": "toplardamar: kanı toplayıp kalbe getirir", "k": ["toplay", "kalbe getir"]}, {"ad": "kılcal damar: madde alışverişi", "k": ["alışveriş"]}],
   "sayfa": "s. 104"},
 ]}
-BOLGE = {'"Kalp → vücut → kalp" yolu hangi dolaşımdır?': ["yolu hangi dolaşımdır"]}
 OKUT = {"u3k3": [
  ["küçük ve büyük kan dolaşımında kanın nereye gidip geldiğini ayrı ayrı yazmanı", "kalbin kaç bölümden oluştuğunu söylemeni", "kan dolaşımını kimin keşfettiğini yazmanı"],
  ["atardamarın, toplardamarın ve kılcal damarın her birinin ne iş yaptığını yazmanı", "en kalın damarın hangisi olduğunu söylemeni", "damarların ne renk olduğunu anlatmanı"]]}

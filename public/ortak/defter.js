@@ -565,7 +565,9 @@
   const kalpBolge = o => ((o.bolge && o.bolge.length ? o.bolge : o.tetik) || []).filter(t => t && String(o.soru || "").includes(t));
   const kalpOlumsuz = o => KALP_OLUMSUZ.test(o.soru || "") || String(o.soru || "").search(OLUMSUZ_RE) >= 0;   // Türkçe'deki olumsuz kökler de (değinilmemiştir, söylenemez…)
   const kalpSeri = () => { S.kalpSeri = S.kalpSeri || {}; return (S.kalpSeri[S.konu] = S.kalpSeri[S.konu] || { n: 0, serbest: 0 }); };
-  const kalpDuz = o => !!o.soru && !/[<\[]/.test(o.soru) && kalpBolge(o).length > 0;   // yalnız düz metinli sorularda
+  // Bölge sorunun bütün kelimelerini kapsıyorsa (kısa soru: "Enzim nedir?") bulma adımı yok: her yere dokunmak doğru olurdu, düşünmeden dokunma alışkanlığı yapar.
+  const kalpTum = o => { const kel = s => (String(s).match(/[\p{L}\p{N}]+/gu) || []); const b = new Set(kalpBolge(o).flatMap(kel)); return kel(o.soru).every(w => b.has(w)); };
+  const kalpDuz = o => !!o.soru && !/[<\[]/.test(o.soru) && kalpBolge(o).length > 0 && !kalpTum(o);   // yalnız düz metinli ve bölgesi seçici sorularda
   // Bu soruda bulma adımı var mı? Seri ödülü hakkını ilk sorulduğunda tüketir; state.kalp = -1 → bu soru bulmasız.
   function kalpGerek(o, state) {
     if (state.kalp !== undefined) return state.kalp !== -1;

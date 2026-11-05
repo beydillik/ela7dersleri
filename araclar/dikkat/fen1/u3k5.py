@@ -41,7 +41,7 @@ METINLI = {"u3k5": [
   "ipucu": "Her şıkta yaşı ve kiloyu metindeki şartlarla karşılaştır.", "kanitIpucu": "Yaş ya da kilo şartını söyleyen cümleye dokun.",
   "aciklama": "18-65 yaş aralığında ve 50 kg üzerindeki sağlıklı her birey kan bağışçısı olabilir (s. 111).", "kavram": "Kimler Kan Verebilir?"},
  {"metin": ["Özgür televizyonda Kızılay Kan Merkezinde kan stoklarının azaldığını duydu.", "Kan bağışı yapıp yapamayacağını annesine sordu.", "Annesi on sekiz yaşından küçüklerin kan bağışı yapamayacağını söyledi.", "Özgür'ün üzüldüğünü gören annesi Kızılay'a gidip kan bağışı yaptı.", "Bir hafta sonra annesinin telefonuna “Bağışladığınız kan, ihtiyaç sahibine ulaşmıştır.” mesajı geldi."],
-  "soru": "Özgür'ün kan bağışı yapamamasının sebebi nedir?", "bolge": ["yapamamasının sebebi nedir"],
+  "soru": "Özgür'ün kan bağışı yapamamasının sebebi nedir?", "bolge": ["kan bağışı yapamamasının sebebi nedir"],
   "serit": "Özgür'ün kan veremeyişinin sebebi", "kanit": [2],
   "secenekler": ["On sekiz yaşından küçük olması", "Kan stoklarının azalması", "Annesinin kan bağışı yapması"], "dogru": 0, "tuzak": [1, 2],
   "ipucu": "Annesi Özgür'e ne söyledi?", "kanitIpucu": "Annesinin söylediği cümleyi bul.",

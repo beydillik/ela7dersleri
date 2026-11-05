@@ -35,7 +35,7 @@ OKUT = {"u3k6": [
  ["ekran başında uzun kalmanın dolaşım sistemine neden zarar verdiğini, sebebiyle yazmanı", "ekran süresinin kaç saat olması gerektiğini söylemeni", "ekranın uykuya etkisini anlatmanı"]]}
 METINLI = {"u3k6": [
  {"metin": ["Çocukların günde 8-10 saat uyuması gerekir.", "Düzenli uyku dolaşım sisteminin sağlığı için çok önemlidir.", "Selin ise her gece 6 saat uyuyor."],
-  "soru": "Selin'in dolaşım sistemi sağlığı için ne yapması gerekir?", "bolge": ["sağlığı için ne yapması gerekir"],
+  "soru": "Selin'in dolaşım sistemi sağlığı için ne yapması gerekir?", "bolge": ["ne yapması gerekir"],
   "serit": "Selin'in yapması gereken", "kanit": [0],
   "secenekler": ["Her gece 8-10 saat uyumak", "Her gece 6 saat uyumaya devam etmek", "Daha az su içmek"], "dogru": 0, "tuzak": [1],
   "ipucu": "Çocukların kaç saat uyuması gerekiyor? Selin kaç saat uyuyor?", "kanitIpucu": "Çocukların kaç saat uyuması gerektiğini söyleyen cümleyi bul.",

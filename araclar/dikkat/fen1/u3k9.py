@@ -31,7 +31,6 @@ KISA = {"u3k9": [
   "sayfa": "s. 132"},
 ]}
 ELLE = {"Boşaltım sistemi kandaki neleri vücuttan atar?": "neleri", "Terleme ile vücuttan ne atılır?": "ne atılır", "İdrarın vücut dışına atılıncaya kadar depolandığı yer neresidir?": "neresidir", "Bora maçta çok terledi. Çok su içmesine rağmen idrara sıkışmadı. Bunun nedeni ne olabilir?": "nedeni ne olabilir"}
-BOLGE = {"Üreter (idrar borusu) idrarı nereye iletir?": ["idrarı nereye iletir"]}
 OKUT = {"u3k9": [
  ["böbreklerin ne iş yaptığını, kana ve atıklara ne yaptığını yazmanı", "böbreklerin vücutta nerede olduğunu söylemeni", "kaç tane böbreğimiz olduğunu yazmanı"],
  ["idrarın böbrekten sonra sırayla hangi yapılardan geçtiğini yazmanı", "idrarın neden oluştuğunu anlatmanı", "günde ne kadar su içmen gerektiğini söylemeni"]]}
