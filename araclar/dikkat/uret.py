@@ -8,6 +8,7 @@ Veri:      araclar/dikkat/<kod>/<konu>.py  (bir dosyada birden çok konu olabili
   KISA    = {konu: [ {soru, tetik, okut[3], parcalar, kisa, cevap, anahtarlar, sayfa}, … ]}   okut[0] doğru: "…-manı/-meni" biçiminde
   OKUT    = {konu: [[3 şık], [3 şık]]}         (isteğe bağlı) KISA'daki okut'ları sırayla değiştirir
   METINLI = {konu: [ {metin[], soru, bolge[], serit, kanit[], secenekler[3], dogru, tuzak[], ipucu, kanitIpucu, aciklama, kavram}, … ]}
+  SERIT   = {soru metni: "Aradığın" şeridi}   var olan kanıtlı (metinli) sorulara şerit ekler (ör. Türkçe)
   ELLE    = {soru metni: tetik ifadesi}       kalıpla bulunamayan soru kelimeleri
   BOLGE   = {soru metni: [ifade, …]}           otomatik "sorunun kalbi" bölgesini elle değiştirir
 Hata varsa hiçbir dosya yazılmaz. Sayıları yazdırır. Kitap sayfası kuralı: [s. N] işaretinin ÜSTÜNDEKİ metin N. sayfadadır.
@@ -21,7 +22,7 @@ GEN = r"(?:hangisi\w*|hangileri\w*|hangi \w+|ne için|nedir|nelerdir|neler|ne ol
 def norm(s):
     return s.lower().replace("ı", "i").replace("İ", "i").replace("ş", "s").replace("ğ", "g").replace("ü", "u").replace("ö", "o").replace("ç", "c").replace("'", "").replace("’", "")
 
-veri = {k: {} for k in ("TEKRAR", "KISA", "OKUT", "METINLI", "ELLE", "BOLGE")}
+veri = {k: {} for k in ("TEKRAR", "KISA", "OKUT", "METINLI", "ELLE", "BOLGE", "SERIT")}
 for f in sorted(glob.glob(os.path.join(os.path.dirname(__file__), KOD, "*.py"))):
     g = {}; exec(open(f, encoding="utf-8").read(), g)
     for k in veri: veri[k].update(g.get(k, {}))
@@ -112,6 +113,8 @@ for kod in (ISTENEN or sorted(veri["TEKRAR"])):
     for q in [k["soru"] for k in d["kavramlar"] if k.get("soru")] + d["sorular"]:
         t = tetik_bul(q["soru"])
         if t: q["tetik"] = [t]; q["bolge"] = bolge_bul(q["soru"], q["tetik"]); n += 1
+        if q["soru"] in veri["SERIT"]: q["serit"] = veri["SERIT"][q["soru"]]
+        if q.get("kanit") and q.get("metin") and not q.get("serit"): hata.append(f"{kod}: kanıtlı soruya SERIT yazılmalı: {q['soru'][:60]}")
     if kod in veri["METINLI"]: d["metinli"] = veri["METINLI"][kod]
     else: d.pop("metinli", None)
     kontrol_kisa(kod, d, hata); kontrol_metinli(kod, d, hata)

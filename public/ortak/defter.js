@@ -457,7 +457,9 @@
       const bayrak = ilkSn < esik ? ["hizli"] : [];
       KAYIT.olay("soru", { soru: kisa(o.soru), tur: qKind(o), sonuc: r, sureSn: +sn.toFixed(1), ilkSn: +ilkSn.toFixed(1), esikSn: +esik.toFixed(1),
         ipucu: st.yardim || 0, yanlis: (st.wrong || []).map(j => kisa((o.secenekler || [])[j], 40)), kanit: st.kanit,
-        tekrar: !!opts.tekrar, eski: !!opts.eski, kavram: (opts.kavram && opts.kavram.ad) || o.kavram || "", bayrak });
+        tekrar: !!opts.tekrar, eski: !!opts.eski, kavram: (opts.kavram && opts.kavram.ad) || o.kavram || "", bayrak,
+        // Dikkat paketi: aynı kayıtta analiz için — kalp: 1 ilk dokunuşta, 2 ikinci, 0 gösterildi, -1 bulmasız (seri ödülü); metinli; tuzak: seçilen tuzak şık sayısı
+        ...(S.data && S.data.dikkat ? { dikkat: true, kalp: st.kalp, metinli: !!(o.serit && kanitli(o)), tuzak: (st.wrong || []).filter(j => (o.tuzak || []).includes(j)).length } : {}) });
       KAYIT.sayac(s => { s.soru = (s.soru || 0) + 1; if (r === 1) s.ilk = (s.ilk || 0) + 1; if (r === 2 && st.yardim) s.ipucu = (s.ipucu || 0) + 1; });
       asil && asil(r);
       KOC.soruSonrasi(o, r, bayrak, opts);
@@ -561,7 +563,7 @@
   // Seri: 5 kez üst üste ilk dokunuşta bulursa sonraki 3 soru bulmasız (olumsuz sorular hariç). Olaylar: kalp-bul, kalp-seri.
   const KALP_OLUMSUZ = /DEĞİL|değil|ARANMAZ|aranmaz|yanlıştır|YANLIŞTIR|kullanmaz|KULLANMAZ|önermedi|yapılmaz|yapamaz|olamaz/u;
   const kalpBolge = o => ((o.bolge && o.bolge.length ? o.bolge : o.tetik) || []).filter(t => t && String(o.soru || "").includes(t));
-  const kalpOlumsuz = o => KALP_OLUMSUZ.test(o.soru || "");
+  const kalpOlumsuz = o => KALP_OLUMSUZ.test(o.soru || "") || String(o.soru || "").search(OLUMSUZ_RE) >= 0;   // Türkçe'deki olumsuz kökler de (değinilmemiştir, söylenemez…)
   const kalpSeri = () => { S.kalpSeri = S.kalpSeri || {}; return (S.kalpSeri[S.konu] = S.kalpSeri[S.konu] || { n: 0, serbest: 0 }); };
   const kalpDuz = o => !!o.soru && !/[<\[]/.test(o.soru) && kalpBolge(o).length > 0;   // yalnız düz metinli sorularda
   // Bu soruda bulma adımı var mı? Seri ödülü hakkını ilk sorulduğunda tüketir; state.kalp = -1 → bu soru bulmasız.

@@ -9,9 +9,13 @@ Motor ortak (`public/ortak/defter.js`), yani paket her derste aynı çalışır;
 | `KISA` | Kısa cevap soruları (soru, tetik, parcalar, kisa, cevap, anahtarlar, sayfa) | 2 |
 | `OKUT` | Her kısa cevap için "Soru senden ne istiyor?" şıkları: doğru ilk, "…-manı/-meni"; yanlışlar tipik yanlış okumalar (sorunun yarısı, konuyu alıp isteneni kaçırmak) | 2 × 3 |
 | `METINLI` | Metinli sorular: kısa (2–3 cümle) + uzun (4–6 cümle; kitabın örnek olayından). `bolge`, `serit`, `kanit`, 3 şık, `tuzak`, ipucu, kanitIpucu, sayfalı açıklama, `kavram` | 2 |
+| `SERIT` | Konuda zaten var olan kanıtlı (metinli) sorular için "Aradığın: …" şeridi (doğrulayıcı eksikse uyarır) | var olan her kanıtlı soru |
 | `ELLE` / `BOLGE` | Kalıpla bulunamayan soru kelimesi / otomatik "sorunun kalbi" bölgesinin elle düzeltilmesi | gerektikçe |
 
 Kurallar: her bilgi kitaptan ve sayfalı (`[s. N]` işaretinin ÜSTÜNDEKİ metin N. sayfadadır); çeldiriciler bağlamda açıkça yanlış; tuzak şık metindeki kelimeleri içerir ama soruyu cevaplamaz; kitap dışı bağlam kullanılırsa açıklamada belirtilir.
+
+## Kapsam
+Bir sohbette bir tema/ünite (8–10 konu) yapılabilir. İki tema birden bağlamı zorlar; ikinci temayı aynı sohbette "devam" diyerek ya da yeni sohbette iste. Ara Duraklar bu paketin dışında.
 
 ## Adımlar (bir oturumda)
 1. `taslak` dalı; konunun kitap sayfalarını oku.
@@ -22,7 +26,8 @@ Kurallar: her bilgi kitaptan ve sayfalı (`[s. N]` işaretinin ÜSTÜNDEKİ meti
 6. Commit → `taslak`; Kemal "yayınla" demedikçe `main`'e gitmez.
 
 ## Derse göre notlar (tahmin; uygularken doğrulanmalı)
-- **Sosyal, Din, Türkçe, Teknoloji:** doğrudan uygulanabilir. Türkçe'de metinli sorular zaten var (`metin` + `kanit`); onlara `bolge` + `serit` eklemek yeterli.
+- **Türkçe:** her konuda zaten 3 kanıtlı metinli soru var → yeni `METINLI` yazma (Test'te kısa soruların yerini alır, metinli oranı fazla artar); var olanlara `SERIT` yaz. Olumsuz kökler (`olumsuzVurgu`) seri ödülünde de bulmalı kalır.
+- **Sosyal, Din, Teknoloji:** doğrudan uygulanabilir; metinli sorular `METINLI` ile yazılır.
 - **Matematik:** sorular çoğunlukla kesir/üs işaretli ve "tuş takımı" türünde; "sorunun kalbi" yalnız düz metinli sözel problemlerde çalışır. Kısa Cevap yerine işlem adımı daha uygun olabilir.
 - **İngilizce:** kalıplar İngilizce soru kelimelerine (what, which, why…) göre genişletilmeli; ön soru şıkları Türkçe kalabilir.
 - **Rozet:** her dersin MEB konu-soru dağılım tablosundan `ders.json` → `yaziliRozet` yazılır.
