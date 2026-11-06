@@ -45,7 +45,10 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki {{bitti ✓}} çizimini ve {{in June}} zamanını hatırla.",
-    "aciklama": "Past simple bitmiş işi anlatır: haziranda gitti, iş bitti. (WB s. 92)"
+    "aciklama": "Past simple bitmiş işi anlatır: haziranda gitti, iş bitti. (WB s. 92)",
+    "bolge": [
+     "{{I went to Liverpool in June.}} Bu iş bitti mi"
+    ]
    }
   },
   {
@@ -93,7 +96,10 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki {{...hâlâ}} çizgisini hatırla: çizgi şimdiye kadar geliyor.",
-    "aciklama": "Present perfect + {{for}}: beş yıldır sürüyor, bitmedi. (SB s. 39)"
+    "aciklama": "Present perfect + {{for}}: beş yıldır sürüyor, bitmedi. (SB s. 39)",
+    "bolge": [
+     "{{I've studied it for about five years.}} James hâlâ çalışıyor mu"
+    ]
    }
   },
   {
@@ -171,7 +177,14 @@
     ],
     "dogru": 2,
     "ipucu": "Ayrıntı soruları past simple ile: {{did}} + fiil yalın.",
-    "aciklama": "Ayrıntı past simple: {{Why did you tell it?}} (WB s. 28)"
+    "aciklama": "Ayrıntı past simple: {{Why did you tell it?}} (WB s. 28)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "ayrıntı soruyorsun",
+     "Hangisi doğru"
+    ]
    }
   },
   {
@@ -219,7 +232,10 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki küçük çocuktan büyük insana uzanan çizgiyi hatırla.",
-    "aciklama": "{{all my life}} = {{since I was born}}: doğduğumdan beri. (WB s. 29)"
+    "aciklama": "{{all my life}} = {{since I was born}}: doğduğumdan beri. (WB s. 29)",
+    "bolge": [
+     "{{all my life}} ne demek"
+    ]
    }
   },
   {
@@ -267,7 +283,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kitaptaki anlamı: son zamanlarda.",
-    "aciklama": "{{over the last few years}} = {{recently}}: son zamanlarda. (WB s. 29)"
+    "aciklama": "{{over the last few years}} = {{recently}}: son zamanlarda. (WB s. 29)",
+    "tetik": [
+     "hangisine"
+    ],
+    "bolge": [
+     "{{over the last few years}} hangisine en yakın"
+    ]
    }
   },
   {
@@ -288,7 +310,10 @@
     ],
     "dogru": 2,
     "ipucu": "Karttaki sağdaki turuncu nokta: zaman çizgisinde daha ileride.",
-    "aciklama": "{{later on}} = {{after some time has passed}}: sonra. (WB s. 29)"
+    "aciklama": "{{later on}} = {{after some time has passed}}: sonra. (WB s. 29)",
+    "bolge": [
+     "{{later on}} ne demek"
+    ]
    }
   },
   {
@@ -309,7 +334,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kitaptaki anlamı: {{in the very near future}}.",
-    "aciklama": "{{soon}} = {{in the very near future}}: yakında. (WB s. 29)"
+    "aciklama": "{{soon}} = {{in the very near future}}: yakında. (WB s. 29)",
+    "bolge": [
+     "{{soon}} ne demek"
+    ]
    }
   }
  ],
@@ -682,7 +710,13 @@
    "ipucu": "Fiile dikkat et: {{saw}} mı, {{'ve seen}} mi?",
    "aciklama": "Duyduğun cümle {{I saw the Empire State Building.}} İlk günde oldu, bitti: past simple. (SB s. 39)",
    "dinle": "I saw the Empire State Building.",
-   "kavram": "past simple"
+   "kavram": "past simple",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -695,7 +729,13 @@
    "ipucu": "Sonuna dikkat et: {{since this morning}} mi, {{for hours}} mı?",
    "aciklama": "Duyduğun cümle {{I haven't eaten anything since this morning.}} (SB s. 39)",
    "dinle": "I haven't eaten anything since this morning.",
-   "kavram": "present perfect"
+   "kavram": "present perfect",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Kitaba göre hangi zaman geçmişte başlayıp bitmiş işler için kullanılır?",
@@ -707,7 +747,14 @@
    "dogru": 0,
    "ipucu": "Karttaki {{bitti ✓}} çizimini hatırla.",
    "aciklama": "Başlayıp bitmiş işler: past simple. (SB s. 39)",
-   "kavram": "past simple"
+   "kavram": "past simple",
+   "tetik": [
+    "hangi zaman"
+   ],
+   "bolge": [
+    "hangi zaman",
+    "geçmişte başlayıp bitmiş"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{I can't play football this afternoon because I ___ off my bike yesterday.}}",
@@ -719,7 +766,13 @@
    "dogru": 1,
    "ipucu": "{{yesterday}}: bitmiş zaman.",
    "aciklama": "{{yesterday}} → past simple: {{fell}}. (WB s. 31)",
-   "kavram": "past simple"
+   "kavram": "past simple",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I can't play football this afternoon because I ___ off my bike yesterday.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{I ___ in London for about ten years – I love it here.}}",
@@ -731,7 +784,13 @@
    "dogru": 2,
    "ipucu": "{{for about ten years}} ve {{I love it here}}: hâlâ orada yaşıyor.",
    "aciklama": "Hâlâ sürüyor → present perfect: {{have lived}}. (WB s. 31)",
-   "kavram": "present perfect"
+   "kavram": "present perfect",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I ___ in London for about ten years – I love it here.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{They ___ much Russian in Moscow – they were only there for two months.}}",
@@ -743,7 +802,13 @@
    "dogru": 0,
    "ipucu": "{{they were only there}}: Moskova'daki zaman bitti.",
    "aciklama": "Bitmiş bir dönem → past simple: {{didn't learn}}. (WB s. 31)",
-   "kavram": "past simple"
+   "kavram": "past simple",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{They ___ much Russian in Moscow – they were only there for two months.}}"
+   ]
   },
   {
    "soru": "{{Have you ever told a lie?}} – {{Yes, I have.}} Sonraki soru hangisi olmalı?",
@@ -755,7 +820,13 @@
    "dogru": 1,
    "ipucu": "Ayrıntı sorusu past simple ile: {{did}} + fiil yalın.",
    "aciklama": "Önce {{Have you ever ...?}}, sonra ayrıntı {{Who did you ...?}} (WB s. 28)",
-   "kavram": "Have you ever …? / Did you …?"
+   "kavram": "Have you ever …? / Did you …?",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{Have you ever told a lie?}} – {{Yes, I have.}} Sonraki soru hangisi olmalı"
+   ]
   },
   {
    "soru": "Hangisi {{these days}} ile aynı anlama gelir?",
@@ -767,7 +838,13 @@
    "dogru": 2,
    "ipucu": "Kitaptaki anlam eşleştirmesini hatırla.",
    "aciklama": "{{these days}} = {{at the moment}}: şu sıralar. (WB s. 29)",
-   "kavram": "these days / soon"
+   "kavram": "these days / soon",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "aynı anlama gelir"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Before, I didn't use to think about intonation, but ___ I understand that how you say something is very important.}}",
@@ -779,7 +856,13 @@
    "dogru": 0,
    "ipucu": "{{Before}} eskiden; zıddı şimdi.",
    "aciklama": "Eskiden ({{before}}) ↔ şimdi ({{now}}). (WB s. 29)",
-   "kavram": "before / later on"
+   "kavram": "before / later on",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Before, I didn't use to think about intonation, but ___ I understand that how you say something is very important.}}"
+   ]
   },
   {
    "soru": "Okuma metninde {{the main language of a country has taken over}} cümlesi hangi zamanda?",
@@ -791,7 +874,13 @@
    "dogru": 1,
    "ipucu": "{{has}} + V3 ({{taken}}).",
    "aciklama": "{{has taken over}}: present perfect. Sonucu hâlâ sürüyor. (SB s. 42)",
-   "kavram": "present perfect"
+   "kavram": "present perfect",
+   "tetik": [
+    "hangi zamanda"
+   ],
+   "bolge": [
+    "hangi zamanda"
+   ]
   },
   {
    "soru": "{{Alex has loved languages ___.}} Boşluğa en uygun ifade hangisi?",
@@ -803,7 +892,13 @@
    "dogru": 2,
    "ipucu": "Present perfect ({{has loved}}) şimdiye kadar süren bir ifade ister.",
    "aciklama": "{{all his life}}: bütün hayatı boyunca. {{yesterday}} ve {{last week}} past simple ister. (WB s. 107)",
-   "kavram": "all my life"
+   "kavram": "all my life",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "en uygun ifade hangisi"
+   ]
   },
   {
    "soru": "{{Over the last few years, I've learned a few things.}} Bu cümle ne anlatıyor?",
@@ -815,7 +910,187 @@
    "dogru": 0,
    "ipucu": "{{over the last few years}} = {{recently}}.",
    "aciklama": "Son birkaç yılda öğrendi; present perfect {{'ve learned}}. (WB s. 29)",
-   "kavram": "over the last few years"
+   "kavram": "over the last few years",
+   "bolge": [
+    "{{Over the last few years, I've learned a few things.}} Bu cümle ne anlatıyor"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Sorry! I've been so busy since I {got|have got|get} here.",
+   "s": "SB s. 39"
+  },
+  {
+   "c": "On my first day, I {saw|have seen|see} the Empire State Building.",
+   "s": "SB s. 39"
+  },
+  {
+   "c": "I'm going to get a burger and fries with some friends I {made|have made|make} last night.",
+   "s": "SB s. 39"
+  },
+  {
+   "c": "I {haven't eaten|didn't eat|don't eat} anything since this morning.",
+   "s": "SB s. 39"
+  },
+  {
+   "c": "I {have heard|heard|hear} a lot of jokes in my life, but this one made me laugh.",
+   "s": "WB s. 28"
+  },
+  {
+   "c": "{Over the last few years|Tomorrow|Later on}, I've learned a few things and now I can communicate much better than before.",
+   "s": "WB s. 29"
+  },
+  {
+   "c": "{All my life|Tomorrow|Soon}, I've never been very confident or sociable.",
+   "s": "WB s. 29"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Ne kadar süredir İngilizce öğreniyorsun ve geçen hafta ne yaptın? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "Ne kadar süredir"
+   ],
+   "okut": [
+    "ne kadar süredir İngilizce öğrendiğini ve geçen hafta ne yaptığını yazmanı",
+    "yalnızca geçen hafta ne yaptığını yazmanı",
+    "İngilizceyi neden sevdiğini yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "I",
+     "ornek": "have studied English for five years.",
+     "havuz": [
+      "studied English five years ago.",
+      "study English since five years."
+     ],
+     "k": [
+      "have studied",
+      "ve studied",
+      "have learned",
+      "ve learned",
+      "have learnt",
+      "ve learnt"
+     ]
+    },
+    {
+     "bas": "Last week, I",
+     "ornek": "watched a film in English.",
+     "havuz": [
+      "have seen a film in English.",
+      "see a film in English."
+     ],
+     "k": [
+      "watched",
+      "played",
+      "visited",
+      "went",
+      "saw",
+      "made",
+      "did",
+      "had",
+      "ate"
+     ]
+    }
+   ],
+   "kisa": "I've studied English for five years. Last week, I watched a film.",
+   "cevap": "I have studied English for five years. Last week, I watched a film in English with my family.",
+   "anahtarlar": [
+    {
+     "ad": "have studied … for (present perfect)",
+     "k": [
+      "have studied",
+      "ve studied",
+      "have learned",
+      "ve learned",
+      "have learnt",
+      "ve learnt"
+     ]
+    },
+    {
+     "ad": "past simple fiil (watched, went …)",
+     "k": [
+      "watched",
+      "played",
+      "visited",
+      "went",
+      "saw",
+      "made",
+      "did",
+      "had",
+      "ate"
+     ]
+    }
+   ],
+   "sayfa": "SB s. 39",
+   "bolge": [
+    "Ne kadar süredir İngilizce öğreniyorsun",
+    "geçen hafta ne yaptın"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{On my first day, I saw the Empire State Building.}}",
+    "{{Tomorrow I'm going to the Museum of Modern Art.}}"
+   ],
+   "soru": "Metne göre Mario yarın nereye gidecek?",
+   "bolge": [
+    "yarın nereye gidecek"
+   ],
+   "serit": "yarın gideceği yer",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "the Museum of Modern Art",
+    "the Empire State Building",
+    "a burger restaurant"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "“yarın” İngilizcede “Tomorrow”.",
+   "kanitIpucu": "“Tomorrow” hangi cümlede?",
+   "aciklama": "“Tomorrow I'm going to the Museum of Modern Art.” Yarın Modern Sanat Müzesi'ne gidecek. Empire State Binası'nı ilk gün gördü (saw: past simple) (SB s. 39).",
+   "kavram": "past simple"
+  },
+  {
+   "metin": [
+    "{{The Pirahã tribe also lives in the Amazon region of Brazil.}}",
+    "{{Daniel Everett's research into their language has shocked many people because some things about it are completely different from any other language.}}",
+    "{{For example, Pirahã has no words for colours and no way to count.}}",
+    "{{Perhaps most interesting of all, there is no way to talk about the past.}}",
+    "{{Everett's explanation is that jungle life relies on understanding and noticing everything around you at all times, so it is a waste of time thinking about the past.}}"
+   ],
+   "soru": "Metne göre Pirahã dilinde en ilginç olan hangisidir?",
+   "bolge": [
+    "en ilginç olan hangisidir"
+   ],
+   "serit": "en ilginç özellik",
+   "kanit": [
+    3
+   ],
+   "secenekler": [
+    "There is no way to talk about the past.",
+    "It has no words for colours.",
+    "It has no way to count."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Soru “en ilginç” diyor. İngilizcede “most interesting” ifadesini ara.",
+   "kanitIpucu": "“most interesting” hangi cümlede?",
+   "aciklama": "“Perhaps most interesting of all, there is no way to talk about the past.” En ilginci geçmişten söz etmenin bir yolunun olmaması. Renk ve sayma da yok, ama “en ilginç” denen bu (SB s. 43).",
+   "kavram": "past simple"
   }
  ]
 }

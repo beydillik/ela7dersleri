@@ -23,7 +23,13 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta: biri nasıldır, onu sözle anlatmak.",
-    "aciklama": "Birinin nasıl olduğunu anlatmak {{describe}}: {{Can you describe her to me?}} (WB s. 24)"
+    "aciklama": "Birinin nasıl olduğunu anlatmak {{describe}}: {{Can you describe her to me?}} (WB s. 24)",
+    "tetik": [
+     "neye benzediğini"
+    ],
+    "bolge": [
+     "Ondan ne istersin"
+    ]
    }
   },
   {
@@ -44,7 +50,11 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta: {{say what someone's saying in another language}}.",
-    "aciklama": "Konuşulanı başka dile söylemek {{interpret}}. (SB s. 35)"
+    "aciklama": "Konuşulanı başka dile söylemek {{interpret}}. (SB s. 35)",
+    "bolge": [
+     "o anda",
+     "ne yapıyor"
+    ]
    }
   },
   {
@@ -65,7 +75,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta: {{put something on a blog or website}}.",
-    "aciklama": "İnternete bir şey koymak {{post}}: paylaşmak. (SB s. 35)"
+    "aciklama": "İnternete bir şey koymak {{post}}: paylaşmak. (SB s. 35)",
+    "bolge": [
+     "Ne yaptın"
+    ]
    }
   },
   {
@@ -86,7 +99,14 @@
     ],
     "dogru": 2,
     "ipucu": "Karttaki kocaman açık ağzı ve ses çizgilerini hatırla.",
-    "aciklama": "Çok yüksek sesle konuşmak {{shout}}: bağırmak. (WB s. 24)"
+    "aciklama": "Çok yüksek sesle konuşmak {{shout}}: bağırmak. (WB s. 24)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "Çok yüksek sesle",
+     "hangisi"
+    ]
    }
   },
   {
@@ -107,7 +127,13 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki {{Hello → Selam}} çizimini hatırla.",
-    "aciklama": "Bir dilden diğerine çevirmek {{translate}}. (WB s. 24)"
+    "aciklama": "Bir dilden diğerine çevirmek {{translate}}. (WB s. 24)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi"
+    ]
    }
   },
   {
@@ -128,7 +154,10 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki {{psst...}} çizimini hatırla: çok alçak ses.",
-    "aciklama": "Çok alçak sesle konuşmak {{whisper}}: {{Please whisper. You'll wake up the baby.}} (WB s. 24)"
+    "aciklama": "Çok alçak sesle konuşmak {{whisper}}: {{Please whisper. You'll wake up the baby.}} (WB s. 24)",
+    "bolge": [
+     "Ne yaparsın"
+    ]
    }
   }
  ],
@@ -350,7 +379,13 @@
    "ipucu": "Fısıldamakla ilgili kelime. Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun kelime {{whisper}}: fısıldamak. (SB s. 35)",
    "dinle": "whisper",
-   "kavram": "whisper"
+   "kavram": "whisper",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi kelimeyi duydun?",
@@ -363,7 +398,13 @@
    "ipucu": "Tarif etmek, anlatmak anlamına gelen kelime.",
    "aciklama": "Duyduğun kelime {{describe}}: tarif etmek. (SB s. 35)",
    "dinle": "describe",
-   "kavram": "describe"
+   "kavram": "describe",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "{{translate}} ile {{interpret}} arasındaki fark nedir?",
@@ -375,7 +416,13 @@
    "dogru": 2,
    "ipucu": "Kitap: makineler 1950'lerde yazıyı {{translate}} ediyordu ama konuşmayı {{interpret}} edemiyordu.",
    "aciklama": "Yazılı metin {{translate}}, konuşma {{interpret}} edilir. (SB s. 35–36)",
-   "kavram": "interpret"
+   "kavram": "interpret",
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "{{translate}} ile {{interpret}} arasındaki fark nedir"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Kazue sometimes ___ photos of him online.}}",
@@ -387,7 +434,13 @@
    "dogru": 1,
    "ipucu": "{{online}}: internette. İnternete fotoğraf koymak hangisi?",
    "aciklama": "İnternete fotoğraf koymak {{post}}: {{posted}}. (WB s. 24)",
-   "kavram": "post"
+   "kavram": "post",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Kazue sometimes ___ photos of him online.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Kazue's parents don't speak English, but Kazue ___ everything I said into Japanese.}}",
@@ -399,7 +452,13 @@
    "dogru": 0,
    "ipucu": "Konuşulanı o anda başka dile söylemek hangisiydi?",
    "aciklama": "Söylenenleri Japoncaya çevirdi: {{interpreted}}. (WB s. 24)",
-   "kavram": "interpret"
+   "kavram": "interpret",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Kazue's parents don't speak English, but Kazue ___ everything I said into Japanese.}}"
+   ]
   },
   {
    "soru": "Hangisi zıt anlamlı iki kelimedir?",
@@ -411,7 +470,13 @@
    "dogru": 0,
    "ipucu": "Sesin gücünü düşün: çok yüksek ve çok alçak.",
    "aciklama": "{{shout}} bağırmak, {{whisper}} fısıldamak: zıt anlamlılar. (WB s. 24)",
-   "kavram": "shout"
+   "kavram": "shout",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi zıt anlamlı iki kelimedir"
+   ]
   },
   {
    "soru": "{{whisper}}: insanlar bunu nerede yapar? Kitaptaki örnek hangisi?",
@@ -423,7 +488,13 @@
    "dogru": 2,
    "ipucu": "Sinemada yüksek sesle konuşulmaz.",
    "aciklama": "Kitaptaki örnek: {{People do this when they're in the cinema.}} (SB s. 35)",
-   "kavram": "whisper"
+   "kavram": "whisper",
+   "tetik": [
+    "nerede"
+   ],
+   "bolge": [
+    "nerede yapar"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{These instructions are in French. I need someone to ___ them for me.}}",
@@ -435,7 +506,13 @@
    "dogru": 2,
    "ipucu": "Fransızca yazıyı başka dile aktarmak.",
    "aciklama": "Yazılı talimatları çevirmek {{translate}}. (WB s. 24)",
-   "kavram": "translate"
+   "kavram": "translate",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{These instructions are in French. I need someone to ___ them for me.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{I asked Luis to ___ the area where he lives.}}",
@@ -447,7 +524,176 @@
    "dogru": 0,
    "ipucu": "Yaşadığı yerin nasıl olduğunu anlatmasını istedim.",
    "aciklama": "Bir yerin nasıl olduğunu anlatmak {{describe}}. (SB s. 130)",
-   "kavram": "describe"
+   "kavram": "describe",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I asked Luis to ___ the area where he lives.}}"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "I don't know what Jackie looks like. Can you {describe|whisper|post} her to me?",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "Don't speak loudly. Please {whisper|shout|post}. You'll wake up the baby.",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "These instructions are in French. I need someone to {translate|shout|post} them for me.",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "I only {shout|whisper|translate} when I'm very angry.",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "A woman was {interpreting|posting|shouting} the president's speech.",
+   "s": "SB s. 130"
+  },
+  {
+   "c": "I saw the man {whisper|post|describe} something in Helen's ear.",
+   "s": "SB s. 130"
+  },
+  {
+   "c": "In her emails, she {described|whispered|shouted} herself as quite small, but in fact she's as tall as me.",
+   "s": "WB s. 24"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "İnsanlar ne zaman fısıldar, ne zaman bağırır? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "ne zaman"
+   ],
+   "okut": [
+    "insanların ne zaman fısıldadığını ve ne zaman bağırdığını yazmanı",
+    "yalnızca bağırmanın İngilizcesini yazmanı",
+    "sinemada ne izlediğini anlatmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "People whisper when",
+     "ornek": "they're in the cinema.",
+     "havuz": [
+      "they're very angry.",
+      "they're at a football match."
+     ],
+     "k": [
+      "cinema",
+      "library",
+      "baby",
+      "sleep"
+     ]
+    },
+    {
+     "bas": "People shout when",
+     "ornek": "they're very angry.",
+     "havuz": [
+      "they're in the cinema.",
+      "the baby is sleeping."
+     ],
+     "k": [
+      "angry",
+      "match",
+      "football",
+      "far"
+     ]
+    }
+   ],
+   "kisa": "They whisper in the cinema. They shout when they're angry.",
+   "cevap": "People whisper when they're in the cinema. People shout when they're very angry or at a football match.",
+   "anahtarlar": [
+    {
+     "ad": "fısıldama: cinema …",
+     "k": [
+      "cinema",
+      "library",
+      "baby",
+      "sleep"
+     ]
+    },
+    {
+     "ad": "bağırma: angry …",
+     "k": [
+      "angry",
+      "match",
+      "football",
+      "far"
+     ]
+    }
+   ],
+   "sayfa": "SB s. 35",
+   "bolge": [
+    "ne zaman fısıldar, ne zaman bağırır"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{I already knew what her brother looked like, because Kazue sometimes posted photos of him online.}}",
+    "{{He was very friendly and he smiled a lot.}}"
+   ],
+   "soru": "Metne göre konuşan kişi Kazue'nin kardeşinin neye benzediğini nereden biliyordu?",
+   "bolge": [
+    "neye benzediğini nereden biliyordu"
+   ],
+   "serit": "kardeşinin neye benzediğini bilmesinin sebebi",
+   "kanit": [
+    0
+   ],
+   "secenekler": [
+    "Kazue posted photos of him online.",
+    "He smiled a lot.",
+    "He was very friendly."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“because” (çünkü) kelimesinden sonrasını oku.",
+   "kanitIpucu": "“looked like” hangi cümlede geçiyor?",
+   "aciklama": "“…because Kazue sometimes posted photos of him online.” Kazue onun fotoğraflarını internette paylaşıyordu. Gülümsemesi tanışınca görüldü (WB s. 24; boşluklar kitaptaki kelimelerle dolduruldu).",
+   "kavram": "post"
+  },
+  {
+   "metin": [
+    "{{Imagine you're travelling in a different country, but you can't speak the language.}}",
+    "{{You put the earpiece in your ear and the other person puts one in theirs.}}",
+    "{{When you speak, the earpiece translates what you say, so the other person hears what you said but in their own language.}}",
+    "{{As far back as the 1950s, machines could translate written texts, but they could not interpret spoken language.}}",
+    "{{Machines can understand people when they speak clearly, but they can't always understand people when they whisper or tell jokes.}}"
+   ],
+   "soru": "Metne göre makineler insanları hangi durumda her zaman anlayamaz?",
+   "bolge": [
+    "hangi durumda her zaman anlayamaz"
+   ],
+   "serit": "makinelerin zorlandığı durum",
+   "kanit": [
+    4
+   ],
+   "secenekler": [
+    "when they whisper or tell jokes",
+    "when they speak clearly",
+    "when they translate written texts"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“her zaman anlayamaz” İngilizcede “can't always understand” demek.",
+   "kanitIpucu": "“can't always understand” hangi cümlede?",
+   "aciklama": "“…they can't always understand people when they whisper or tell jokes.” Fısıldayınca ya da şaka yapınca her zaman anlayamazlar. Açık konuşunca anlarlar (SB s. 36).",
+   "kavram": "whisper"
   }
  ]
 }

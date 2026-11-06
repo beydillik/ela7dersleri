@@ -41,7 +41,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bu kartın fiili {{say}} ile başlıyor.",
-    "aciklama": "Merhaba demek {{say hello}}. (SB s. 38)"
+    "aciklama": "Merhaba demek {{say hello}}. (SB s. 38)",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "İngilizcede nasıl"
+    ]
    }
   },
   {
@@ -80,7 +86,13 @@
     ],
     "dogru": 1,
     "ipucu": "{{sorry}} hangi fiille kullanılıyordu? Kartın alt yazısına bak.",
-    "aciklama": "Özür dilemek {{say sorry}}. (WB s. 27)"
+    "aciklama": "Özür dilemek {{say sorry}}. (WB s. 27)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{I want to ___ sorry for shouting at you.}} Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -114,7 +126,11 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta: {{you can always say no}}.",
-    "aciklama": "Hayır demek {{say no}}. (WB s. 30)"
+    "aciklama": "Hayır demek {{say no}}. (WB s. 30)",
+    "bolge": [
+     "İstemediğin",
+     "ne yaparsın"
+    ]
    }
   },
   {
@@ -154,7 +170,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bir dilde bir şey söylemek: kartın fiili.",
-    "aciklama": "{{How do you say ... in English?}} (SB s. 38)"
+    "aciklama": "{{How do you say ... in English?}} (SB s. 38)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{How do you ___ 'merhaba' in English?}} Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -193,7 +215,13 @@
     ],
     "dogru": 1,
     "ipucu": "{{a joke}} hangi fiille kullanılıyordu? Kartın alt yazısına bak.",
-    "aciklama": "Şaka anlatmak {{tell a joke}}: {{told}}. (SB s. 130)"
+    "aciklama": "Şaka anlatmak {{tell a joke}}: {{told}}. (SB s. 130)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{Daniel ___ us a really funny joke.}} Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -232,7 +260,13 @@
     ],
     "dogru": 2,
     "ipucu": "{{lie}} hangi fiille kullanılıyordu? Kırmızı çarpılı kartı hatırla.",
-    "aciklama": "Yalan söylemek {{tell a lie}}. (WB s. 28)"
+    "aciklama": "Yalan söylemek {{tell a lie}}. (WB s. 28)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "'Yalan söylemek' hangisi"
+    ]
    }
   },
   {
@@ -266,7 +300,13 @@
     ],
     "dogru": 0,
     "ipucu": "{{the truth}} hangi fiille kullanılıyordu?",
-    "aciklama": "Doğruyu söylemek {{tell the truth}}. (SB s. 130)"
+    "aciklama": "Doğruyu söylemek {{tell the truth}}. (SB s. 130)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{Come on, ___ the truth! Where were you yesterday?}} Boşluğa hangisi"
+    ]
    }
   }
  ],
@@ -472,7 +512,13 @@
    "ipucu": "Doğruyu söylemekle ilgili kalıp. Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun kalıp {{tell the truth}}: doğruyu söylemek. (SB s. 38)",
    "dinle": "tell the truth",
-   "kavram": "tell the truth"
+   "kavram": "tell the truth",
+   "tetik": [
+    "Hangi kalıbı"
+   ],
+   "bolge": [
+    "Dinle. Hangi kalıbı duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi kalıbı duydun?",
@@ -485,7 +531,13 @@
    "ipucu": "Özür dilemekle ilgili kalıp.",
    "aciklama": "Duyduğun kalıp {{say sorry}}: özür dilemek. (SB s. 38)",
    "dinle": "say sorry",
-   "kavram": "say sorry"
+   "kavram": "say sorry",
+   "tetik": [
+    "Hangi kalıbı"
+   ],
+   "bolge": [
+    "Dinle. Hangi kalıbı duydun"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Paula didn't ___ hello to me at the party.}}",
@@ -497,7 +549,13 @@
    "dogru": 0,
    "ipucu": "{{hello}} hangi fiille? {{didn't}}'ten sonra fiil yalın gelir.",
    "aciklama": "{{say hello}}: {{Paula didn't say hello to me.}} (WB s. 30)",
-   "kavram": "say hello"
+   "kavram": "say hello",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Paula didn't ___ hello to me at the party.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{I'd like to know how to ___ 'thank you' in Italian.}}",
@@ -509,7 +567,13 @@
    "dogru": 1,
    "ipucu": "Bir dilde bir şey söylemek.",
    "aciklama": "{{say ... in Italian}}: İtalyanca söylemek. (WB s. 30)",
-   "kavram": "say something in Italian"
+   "kavram": "say something in Italian",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I'd like to know how to ___ 'thank you' in Italian.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{When you don't want to do something, you can always ___ no.}}",
@@ -521,7 +585,13 @@
    "dogru": 2,
    "ipucu": "{{no}} hangi fiille kullanılıyordu?",
    "aciklama": "{{say no}}: hayır demek. (WB s. 30)",
-   "kavram": "say yes/no"
+   "kavram": "say yes/no",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{When you don't want to do something, you can always ___ no.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Mike ___ a really terrible joke and no one laughed.}}",
@@ -533,7 +603,13 @@
    "dogru": 0,
    "ipucu": "{{a joke}} hangi fiille? Geçmiş hâlini düşün.",
    "aciklama": "{{tell a joke}} → {{told}}. Kimse gülmedi! (WB s. 30)",
-   "kavram": "tell a joke"
+   "kavram": "tell a joke",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Mike ___ a really terrible joke and no one laughed.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{I'm not very good at telling ___ – my face always goes red!}}",
@@ -545,7 +621,13 @@
    "dogru": 1,
    "ipucu": "Yüzü kızarıyor: yaparken utandığı şey.",
    "aciklama": "{{telling lies}}: yalan söylemek. Yüzü kızarınca anlaşılıyor. (WB s. 30)",
-   "kavram": "tell a lie"
+   "kavram": "tell a lie",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I'm not very good at telling ___ – my face always goes red!}}"
+   ]
   },
   {
    "soru": "{{say}} ile {{tell}} arasındaki en önemli fark hangisi?",
@@ -557,7 +639,13 @@
    "dogru": 2,
    "ipucu": "Formül şeritlerini karşılaştır: {{say hello to someone}} ve {{tell someone a joke}}.",
    "aciklama": "{{tell me a joke}} ama {{say hello to me}}. (SB s. 130)",
-   "kavram": "tell a joke"
+   "kavram": "tell a joke",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "en önemli fark hangisi"
+   ]
   },
   {
    "soru": "{{You should always tell the truth.}} Bu cümle ne demek?",
@@ -569,7 +657,163 @@
    "dogru": 0,
    "ipucu": "{{the truth}}: gerçek, doğru.",
    "aciklama": "{{tell the truth}}: doğruyu söylemek. (SB s. 130)",
+   "kavram": "tell the truth",
+   "bolge": [
+    "{{You should always tell the truth.}} Bu cümle ne demek"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Can I {tell|say|speak} you a secret? But promise you won't tell anyone else.",
+   "s": "WB s. 27"
+  },
+  {
+   "c": "Let me {tell|say|speak} you a story about how I met my best friend.",
+   "s": "WB s. 27"
+  },
+  {
+   "c": "The interviewer asked me if I wanted the job. I {said|told|spoke} yes, of course!",
+   "s": "WB s. 27"
+  },
+  {
+   "c": "Maria says she hasn't got any money, but I don't think she's {telling the truth|saying the truth|saying hello}.",
+   "s": "WB s. 27"
+  },
+  {
+   "c": "I {said|told|spoke} hello to your brother in the street, but he didn't answer me.",
+   "s": "WB s. 27"
+  },
+  {
+   "c": "The man {said|told|spoke} something in French.",
+   "s": "SB s. 130"
+  },
+  {
+   "c": "I said sorry to Luisa because I {told|said|spoke} her a lie.",
+   "s": "SB s. 130"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "En son ne zaman birine merhaba dedin ve en son ne zaman şaka anlattın? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "ne zaman"
+   ],
+   "okut": [
+    "en son ne zaman merhaba dediğini ve en son ne zaman şaka anlattığını yazmanı",
+    "yalnızca bugün kime merhaba dediğini yazmanı",
+    "en sevdiğin şakayı yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "The last time I",
+     "ornek": "said hello was this morning.",
+     "havuz": [
+      "told hello was this morning.",
+      "spoke hello was this morning."
+     ],
+     "k": [
+      "said hello"
+     ]
+    },
+    {
+     "bas": "The last time I",
+     "ornek": "told a joke was yesterday.",
+     "havuz": [
+      "said a joke was yesterday.",
+      "spoke a joke was yesterday."
+     ],
+     "k": [
+      "told a joke"
+     ]
+    }
+   ],
+   "kisa": "I said hello this morning. I told a joke yesterday.",
+   "cevap": "The last time I said hello was when I came into class this morning. The last time I told a joke was yesterday at lunch.",
+   "anahtarlar": [
+    {
+     "ad": "said hello",
+     "k": [
+      "said hello"
+     ]
+    },
+    {
+     "ad": "told a joke",
+     "k": [
+      "told a joke"
+     ]
+    }
+   ],
+   "sayfa": "SB s. 38",
+   "bolge": [
+    "En son ne zaman birine merhaba dedin",
+    "en son ne zaman şaka anlattın"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Maria says she hasn't got any money, but I don't think she's telling the truth.}}",
+    "{{She always wears expensive clothes.}}"
+   ],
+   "soru": "Metne göre konuşan kişi neden Maria'ya inanmıyor?",
+   "bolge": [
+    "neden Maria'ya inanmıyor"
+   ],
+   "serit": "Maria'ya inanmamasının sebebi",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "She always wears expensive clothes.",
+    "She hasn't got any money.",
+    "She tells jokes."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Maria “param yok” diyor. Bunu yalanlayan cümleyi bul.",
+   "kanitIpucu": "Hangi cümle Maria'nın parası olduğunu düşündürüyor?",
+   "aciklama": "“She always wears expensive clothes.” Hep pahalı giysiler giyiyor; bu yüzden “param yok” demesine inanmıyor (WB s. 27; boşluk kitaptaki kalıpla dolduruldu).",
    "kavram": "tell the truth"
+  },
+  {
+   "metin": [
+    "{{My friend told me a funny joke this morning.}}",
+    "{{A girl and her father were at the dinner table, having some soup.}}",
+    "{{The girl asked her dad, 'Dad, are spiders nice to eat?'}}",
+    "{{'What a horrible question,' said the father.}}",
+    "{{Later, the girl's father asked, 'Why did you want to know about spiders earlier?'}}",
+    "{{She replied, 'Oh, there was a spider in your soup. But it's gone now.'}}"
+   ],
+   "soru": "Metne göre bu şakayı konuşan kişiye kim anlattı?",
+   "bolge": [
+    "kim anlattı"
+   ],
+   "serit": "şakayı anlatan kişi",
+   "kanit": [
+    0
+   ],
+   "secenekler": [
+    "a friend",
+    "the girl's father",
+    "the girl"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“şaka anlatmak” İngilizcede “tell a joke”. “told” kelimesini ara.",
+   "kanitIpucu": "“told” ve “joke” hangi cümlede?",
+   "aciklama": "“My friend told me a funny joke this morning.” Şakayı bir arkadaşı anlattı; kız ve babası şakanın içindeki kişilerdir (WB s. 28; fiiller kitaptaki zamanlarla dolduruldu).",
+   "kavram": "tell a joke"
   }
  ]
 }

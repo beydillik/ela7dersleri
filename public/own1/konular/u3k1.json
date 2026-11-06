@@ -23,7 +23,10 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki {{Hello!}} balonunu hatırla.",
-    "aciklama": "Gelen birine {{Hello!}} demek {{greet}}: selamlamak. (WB s. 24)"
+    "aciklama": "Gelen birine {{Hello!}} demek {{greet}}: selamlamak. (WB s. 24)",
+    "bolge": [
+     "Ne yaptın"
+    ]
    }
   },
   {
@@ -44,7 +47,10 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki başparmak çizimini hatırla: anlamı olan el hareketi.",
-    "aciklama": "Anlamı olan el hareketi {{gesture}}: jest. (WB s. 24)"
+    "aciklama": "Anlamı olan el hareketi {{gesture}}: jest. (WB s. 24)",
+    "bolge": [
+     "Bu bir"
+    ]
    }
   },
   {
@@ -65,7 +71,10 @@
     ],
     "dogru": 2,
     "ipucu": "Karttaki iki elin birleştiği çizimi düşün.",
-    "aciklama": "Elleri tutup sallamak {{shake hands}}: el sıkışmak. (WB s. 24)"
+    "aciklama": "Elleri tutup sallamak {{shake hands}}: el sıkışmak. (WB s. 24)",
+    "bolge": [
+     "Ne yapıyorlar"
+    ]
    }
   },
   {
@@ -86,7 +95,11 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki gülen yüzü hatırla.",
-    "aciklama": "Mutlu olduğunu yüzünle göstermek {{smile}}: gülümsemek. (WB s. 24)"
+    "aciklama": "Mutlu olduğunu yüzünle göstermek {{smile}}: gülümsemek. (WB s. 24)",
+    "bolge": [
+     "Yüzünle",
+     "ne yaparsın"
+    ]
    }
   },
   {
@@ -107,7 +120,13 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki sallanan eli hatırla.",
-    "aciklama": "Elini sağa sola sallamak {{wave}}. (WB s. 24)"
+    "aciklama": "Elini sağa sola sallamak {{wave}}. (WB s. 24)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi"
+    ]
    }
   }
  ],
@@ -305,7 +324,13 @@
    "ipucu": "El sallamakla ilgili kelime. Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun kelime {{wave}}: el sallamak. (SB s. 35)",
    "dinle": "wave",
-   "kavram": "wave"
+   "kavram": "wave",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi kelimeyi duydun?",
@@ -318,7 +343,13 @@
    "ipucu": "Jest, el işareti anlamına gelen kelime.",
    "aciklama": "Duyduğun kelime {{gesture}}: jest. (SB s. 35)",
    "dinle": "gesture",
-   "kavram": "gesture"
+   "kavram": "gesture",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Mr Hicks ___ everyone: 'Welcome to the school.'}}",
@@ -330,7 +361,13 @@
    "dogru": 0,
    "ipucu": "{{Welcome}} demek: gelenleri karşılamak.",
    "aciklama": "Gelenlere {{Welcome!}} demek {{greet}}: {{Mr Hicks greeted everyone.}} (SB s. 44)",
-   "kavram": "greet"
+   "kavram": "greet",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Mr Hicks ___ everyone: 'Welcome to the school.'}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{In my country, we ___ hands when we meet someone new.}}",
@@ -342,7 +379,13 @@
    "dogru": 2,
    "ipucu": "{{hands}} kelimesiyle birlikte kullanılan fiil hangisi?",
    "aciklama": "Tanışırken el sıkışılır: {{shake hands}}. (SB s. 44)",
-   "kavram": "shake hands"
+   "kavram": "shake hands",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{In my country, we ___ hands when we meet someone new.}}"
+   ]
   },
   {
    "soru": "{{Everyone understands when you smile at them.}} Bu cümle ne anlatıyor?",
@@ -354,7 +397,10 @@
    "dogru": 1,
    "ipucu": "{{smile}} kelimesinin Türkçesini hatırla.",
    "aciklama": "{{smile}} gülümsemek: Gülümsediğinde herkes anlar. (WB s. 24)",
-   "kavram": "smile"
+   "kavram": "smile",
+   "bolge": [
+    "{{Everyone understands when you smile at them.}} Bu cümle ne anlatıyor"
+   ]
   },
   {
    "soru": "Kazue'nin ailesi Japonya'dan geldi. Kazue, Japonların tanışırken genelde ne yapmadığını söyledi?",
@@ -366,7 +412,10 @@
    "dogru": 0,
    "ipucu": "Hikâyede yazar onlarla {{shake hands}} yapmak istedi ama Kazue kulağına bir şey fısıldadı.",
    "aciklama": "Kazue: Japonlar tanışınca genelde el sıkışmaz ({{shake hands}}). (WB s. 24)",
-   "kavram": "shake hands"
+   "kavram": "shake hands",
+   "bolge": [
+    "tanışırken genelde ne yapmadığını söyledi"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Use your hands and ___ to make a point.}}",
@@ -378,7 +427,13 @@
    "dogru": 1,
    "ipucu": "Elleri kullanarak anlam vermek: el kol hareketi.",
    "aciklama": "Ellerini kullan ve el kol hareketi yap: {{gesture}}. (WB s. 29)",
-   "kavram": "gesture"
+   "kavram": "gesture",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Use your hands and ___ to make a point.}}"
+   ]
   },
   {
    "soru": "Hangisi vedalaşırken yapılır?",
@@ -390,6 +445,166 @@
    "dogru": 1,
    "ipucu": "{{goodbye}} kelimesiyle hangi fiil kullanılıyordu?",
    "aciklama": "Vedalaşırken el sallanır: {{wave goodbye}}. (SB s. 130)",
+   "kavram": "wave",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi vedalaşırken yapılır"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Sofia {greeted|whispered|translated} us at the door.",
+   "s": "SB s. 130"
+  },
+  {
+   "c": "A thumbs up sign is a {gesture|smile|wave} that means 'good'.",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "I wanted to {shake|greet|smile} hands with them.",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "Everyone understands when you {smile|shout|whisper} at them. It means you're happy.",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "There's Lucy across the road. Let's {wave|whisper|translate} at her. Maybe she will see us.",
+   "s": "WB s. 24"
+  },
+  {
+   "c": "When their guests left, they came outside to {wave|translate|greet} goodbye.",
+   "s": "SB s. 130"
+  },
+  {
+   "c": "Use your hands and {gesture|greet|shake} to make a point, and always make eye contact.",
+   "s": "WB s. 29"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Arkadaşlarınla karşılaşınca yüzünle ve elinle ne yaparsın? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "ne yaparsın"
+   ],
+   "okut": [
+    "arkadaşlarınla karşılaşınca yüzünle ve elinle ne yaptığını yazmanı",
+    "yalnızca arkadaşlarının adlarını yazmanı",
+    "arkadaşlarınla nerede buluştuğunu yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "When I meet my friends, I",
+     "ornek": "smile at them.",
+     "havuz": [
+      "shout at them.",
+      "translate them."
+     ],
+     "k": [
+      "smile"
+     ]
+    },
+    {
+     "bas": "I also",
+     "ornek": "wave at them.",
+     "havuz": [
+      "whisper to them.",
+      "post them."
+     ],
+     "k": [
+      "wave",
+      "shake"
+     ]
+    }
+   ],
+   "kisa": "I smile at them. I wave at them.",
+   "cevap": "When I meet my friends, I smile at them. I also wave at them, but I don't shake hands.",
+   "anahtarlar": [
+    {
+     "ad": "smile",
+     "k": [
+      "smile"
+     ]
+    },
+    {
+     "ad": "wave / shake hands",
+     "k": [
+      "wave",
+      "shake"
+     ]
+    }
+   ],
+   "sayfa": "WB s. 24",
+   "bolge": [
+    "yüzünle ve elinle ne yaparsın"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Use your hands and gesture to make a point, and always make eye contact.}}",
+    "{{Since I started doing this, people have paid a lot more attention to me!}}"
+   ],
+   "soru": "Metne göre bir fikri anlatırken ellerimizle ne yapmalıyız?",
+   "bolge": [
+    "ellerimizle ne yapmalıyız"
+   ],
+   "serit": "ellerimizle yapmamız gereken şey",
+   "kanit": [
+    0
+   ],
+   "secenekler": [
+    "gesture",
+    "make eye contact",
+    "pay attention"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“hands” kelimesinin hemen yanındaki fiile bak.",
+   "kanitIpucu": "“hands” hangi cümlede geçiyor?",
+   "aciklama": "“Use your hands and gesture to make a point…” Ellerimizle jest yapmalıyız. Göz teması (eye contact) gözlerle kurulur (WB s. 29).",
+   "kavram": "gesture"
+  },
+  {
+   "metin": [
+    "{{I greeted her at the airport when she arrived.}}",
+    "{{I wanted to shake hands with them, but Kazue quietly whispered in my ear that Japanese people don't usually do that when they meet.}}",
+    "{{I already knew what her brother looked like, because Kazue sometimes posted photos of him online.}}",
+    "{{He was very friendly and he smiled a lot.}}",
+    "{{Kazue's parents don't speak English, but Kazue interpreted everything I said into Japanese.}}",
+    "{{We waved goodbye as they drove away in a taxi.}}"
+   ],
+   "soru": "Metne göre vedalaşırken ne yaptılar?",
+   "bolge": [
+    "vedalaşırken ne yaptılar"
+   ],
+   "serit": "vedalaşırken yapılan şey",
+   "kanit": [
+    5
+   ],
+   "secenekler": [
+    "They waved goodbye.",
+    "They shook hands.",
+    "They greeted her."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“vedalaşmak” İngilizcede “goodbye” ile anlatılır.",
+   "kanitIpucu": "“goodbye” hangi cümlede geçiyor?",
+   "aciklama": "“We waved goodbye as they drove away in a taxi.” El sallayarak vedalaştılar. Selamlama (greet) havaalanında, karşılaşınca oldu; el sıkışmadılar (WB s. 24; boşluklar kitaptaki kelimelerle dolduruldu).",
    "kavram": "wave"
   }
  ]

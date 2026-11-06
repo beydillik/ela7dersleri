@@ -57,7 +57,13 @@
     ],
     "dogru": 0,
     "ipucu": "Formül: şimdiki yetenek için hangi kelime vardı?",
-    "aciklama": "Şimdiki yetenek {{can}}: {{He can speak Spanish and English perfectly.}} (SB s. 37)"
+    "aciklama": "Şimdiki yetenek {{can}}: {{He can speak Spanish and English perfectly.}} (SB s. 37)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{Carlos is bilingual. He ___ speak Spanish and English perfectly.}} Şimdiki yetenek. Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -96,7 +102,13 @@
     ],
     "dogru": 1,
     "ipucu": "Geçmişteki yetenek: {{can}}'in geçmiş hâli.",
-    "aciklama": "Geçmişteki yetenek {{could}}: {{Many Ancient Romans could speak both Latin and Greek.}} (SB s. 37)"
+    "aciklama": "Geçmişteki yetenek {{could}}: {{Many Ancient Romans could speak both Latin and Greek.}} (SB s. 37)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -135,7 +147,13 @@
     ],
     "dogru": 2,
     "ipucu": "Geçmişte yapamamak: kartın kırmızı çarpısı ve {{PAST}} noktası.",
-    "aciklama": "Geçmişte yapamamak {{couldn't}}: {{My parents couldn't understand their Turkish guests.}} (WB s. 93)"
+    "aciklama": "Geçmişte yapamamak {{couldn't}}: {{My parents couldn't understand their Turkish guests.}} (WB s. 93)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -174,7 +192,13 @@
     ],
     "dogru": 0,
     "ipucu": "{{tomorrow}}: gelecek. Gelecekteki yetenek kalıbını hatırla.",
-    "aciklama": "Gelecekteki yetenek {{will be able to}}: {{I will be able to translate this document tomorrow.}} (WB s. 92)"
+    "aciklama": "Gelecekteki yetenek {{will be able to}}: {{I will be able to translate this document tomorrow.}} (WB s. 92)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{I ___ translate this document tomorrow.}} Yarın yapacağım. Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -213,7 +237,13 @@
     ],
     "dogru": 1,
     "ipucu": "Gelecekte yapamamak: kartın kırmızı çarpısı ve {{FUTURE}} noktası.",
-    "aciklama": "Gelecekte yapamamak {{won't be able to}}: {{I won't be able to use my phone in the mountains.}} (WB s. 26)"
+    "aciklama": "Gelecekte yapamamak {{won't be able to}}: {{I won't be able to use my phone in the mountains.}} (WB s. 26)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "Boşluğa hangisi"
+    ]
    }
   },
   {
@@ -259,7 +289,13 @@
     ],
     "dogru": 2,
     "ipucu": "Formül: {{Will}} + özne + {{be able to}} + fiil.",
-    "aciklama": "Doğrusu {{Will you be able to help me ...?}} {{Will you can}} yanlıştır. (SB s. 37)"
+    "aciklama": "Doğrusu {{Will you be able to help me ...?}} {{Will you can}} yanlıştır. (SB s. 37)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "doğru bir soru"
+    ]
    }
   }
  ],
@@ -654,7 +690,13 @@
    "ipucu": "{{could}} mı, {{can}} mi? Sonunda {{t}} sesi var mı?",
    "aciklama": "Duyduğun cümle {{I can stand on my head.}}: Amuda kalkabiliyorum. (SB s. 37)",
    "dinle": "I can stand on my head.",
-   "kavram": "can"
+   "kavram": "can",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -667,7 +709,13 @@
    "ipucu": "Cümlenin başındaki {{won't}} mı, {{will}} mi?",
    "aciklama": "Duyduğun cümle {{You won't be able to see it.}}: Onu göremeyeceksin. (SB s. 37)",
    "dinle": "You won't be able to see it.",
-   "kavram": "won't be able to"
+   "kavram": "won't be able to",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{Most people couldn't send each other quick messages 30 years ago.}} Bu cümle hangi zamanı anlatıyor?",
@@ -679,7 +727,13 @@
    "dogru": 2,
    "ipucu": "{{30 years ago}}: 30 yıl önce.",
    "aciklama": "{{couldn't}} ve {{30 years ago}}: geçmiş. (WB s. 26)",
-   "kavram": "couldn't"
+   "kavram": "couldn't",
+   "tetik": [
+    "hangi zamanı"
+   ],
+   "bolge": [
+    "{{Most people couldn't send each other quick messages 30 years ago.}} Bu cümle hangi zamanı anlatıyor"
+   ]
   },
   {
    "soru": "{{It's possible that we will be able to interpret any language on a smartphone app.}} Bu cümle hangi zamanı anlatıyor?",
@@ -691,7 +745,13 @@
    "dogru": 0,
    "ipucu": "{{will be able to}} hangi zaman için kullanılıyordu?",
    "aciklama": "{{will be able to}}: gelecek. (WB s. 26)",
-   "kavram": "will be able to"
+   "kavram": "will be able to",
+   "tetik": [
+    "hangi zamanı"
+   ],
+   "bolge": [
+    "{{It's possible that we will be able to interpret any language on a smartphone app.}} Bu cümle hangi zamanı anlatıyor"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{Today, you ___ see the Rosetta Stone in the British Museum.}}",
@@ -703,7 +763,13 @@
    "dogru": 1,
    "ipucu": "{{Today}}: bugün. Şimdiki yetenek hangisi?",
    "aciklama": "Bugün: {{can}}. Rosetta Taşı'nı British Museum'da görebilirsin. (SB s. 37)",
-   "kavram": "can"
+   "kavram": "can",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Today, you ___ see the Rosetta Stone in the British Museum.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{When she was younger, she ___ speak Spanish, but she studied it at school.}}",
@@ -715,7 +781,13 @@
    "dogru": 2,
    "ipucu": "Küçükken konuşamıyordu, sonra okulda öğrendi.",
    "aciklama": "Geçmişte yapamamak: {{couldn't}}. (WB s. 93)",
-   "kavram": "couldn't"
+   "kavram": "couldn't",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{When she was younger, she ___ speak Spanish, but she studied it at school.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{As far back as the 1950s, machines ___ translate written texts.}}",
@@ -727,7 +799,13 @@
    "dogru": 0,
    "ipucu": "{{the 1950s}} geçmiş zaman.",
    "aciklama": "Geçmişteki yetenek {{could}}. (SB s. 36)",
-   "kavram": "could"
+   "kavram": "could",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{As far back as the 1950s, machines ___ translate written texts.}}"
+   ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{___ visit the British Museum when you're in London next week?}}",
@@ -739,7 +817,13 @@
    "dogru": 1,
    "ipucu": "{{next week}}: gelecek. Gelecek için soru kalıbı {{Will}} ile başlar.",
    "aciklama": "{{Will you be able to visit ...?}} (WB s. 93)",
-   "kavram": "Will … be able to …?"
+   "kavram": "Will … be able to …?",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{___ visit the British Museum when you're in London next week?}}"
+   ]
   },
   {
    "soru": "Hangi cümle gelecekteki bir yeteneği anlatıyor?",
@@ -751,7 +835,13 @@
    "dogru": 2,
    "ipucu": "{{in a few more years}}: birkaç yıl sonra.",
    "aciklama": "{{will be able to}} + {{in a few more years}}: gelecek. (SB s. 36)",
-   "kavram": "will be able to"
+   "kavram": "will be able to",
+   "tetik": [
+    "Hangi cümle"
+   ],
+   "bolge": [
+    "gelecekteki bir yeteneği anlatıyor"
+   ]
   },
   {
    "soru": "Cristina güneş kremini anlatırken ne dedi? {{It's a kind of liquid. You put it on your face at the beach.}} Satıcı ne getirdi?",
@@ -770,7 +860,10 @@
      "{{liquid}}: sıvı. {{on your face at the beach}}: plajda yüzüne.",
      "Güneşten korunmak için ne sürersin?"
     ]
-   }
+   },
+   "bolge": [
+    "Satıcı ne getirdi"
+   ]
   },
   {
    "soru": "Arkadaşın {{I broke my phone!}} dedi. Hangisini söylersin?",
@@ -789,7 +882,168 @@
      "Telefonun kırılması iyi mi kötü bir haber mi?",
      "Kötü habere 'Eyvah!' denir."
     ]
-   }
+   },
+   "tetik": [
+    "Hangisini"
+   ],
+   "bolge": [
+    "Arkadaşın {{I broke my phone!}} dedi. Hangisini söylersin"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Most people {couldn't|can't|won't be able to} send each other quick messages 30 years ago.",
+   "s": "WB s. 26"
+  },
+  {
+   "c": "I {couldn't|can't|won't be able to} speak until I was three years old.",
+   "s": "WB s. 26"
+  },
+  {
+   "c": "Sorry! I was at my grandparents' house in the middle of the countryside. I {couldn't|won't be able to|can} use my phone.",
+   "s": "WB s. 26"
+  },
+  {
+   "c": "Now I've got an electric piano and I {can|could|couldn't} use headphones.",
+   "s": "WB s. 26"
+  },
+  {
+   "c": "As far back as the 1950s, machines could translate written texts, but they {could not|cannot|will not be able to} interpret spoken language.",
+   "s": "SB s. 36"
+  },
+  {
+   "c": "In the future, you {will be able to|could|couldn't} chat with speakers of many more languages.",
+   "s": "SB s. 36"
+  },
+  {
+   "c": "{Will|Can|Could} tourists be able to travel without a dictionary or a guide?",
+   "s": "SB s. 36"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Küçükken yapamadığın ve şimdi yapabildiğin bir şeyi iki İngilizce cümleyle yaz.",
+   "tetik": [
+    "yapamadığın"
+   ],
+   "okut": [
+    "küçükken yapamadığın ve şimdi yapabildiğin bir şeyi yazmanı",
+    "yalnızca şimdi yapabildiğin bir şeyi yazmanı",
+    "gelecekte ne olmak istediğini yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "When I was five, I",
+     "ornek": "couldn't swim.",
+     "havuz": [
+      "can't swim.",
+      "won't be able to swim."
+     ],
+     "k": [
+      "couldn"
+     ]
+    },
+    {
+     "bas": "Now I",
+     "ornek": "can swim well.",
+     "havuz": [
+      "could swim well.",
+      "couldn't swim well."
+     ],
+     "k": [
+      "can "
+     ]
+    }
+   ],
+   "kisa": "I couldn't swim. I can swim now.",
+   "cevap": "When I was five, I couldn't swim. Now I can swim very well, and I can swim with my friends.",
+   "anahtarlar": [
+    {
+     "ad": "couldn't + fiil",
+     "k": [
+      "couldn"
+     ]
+    },
+    {
+     "ad": "can + fiil",
+     "k": [
+      "can "
+     ]
+    }
+   ],
+   "sayfa": "WB s. 26",
+   "bolge": [
+    "Küçükken yapamadığın",
+    "şimdi yapabildiğin"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{I can't swim at all, but I'd like to.}}",
+    "{{Last summer, I went with my friends to the beach and I couldn't join in the fun in the water.}}"
+   ],
+   "soru": "Metne göre Liam geçen yaz plajda neyi yapamadı?",
+   "bolge": [
+    "geçen yaz",
+    "neyi yapamadı"
+   ],
+   "serit": "geçen yaz yapamadığı şey",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "He couldn't join in the fun in the water.",
+    "He went to the beach with his friends.",
+    "He liked the beach."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“geçen yaz” İngilizcede “Last summer”. Geçmişte yapamamak “couldn't” ile anlatılır.",
+   "kanitIpucu": "“Last summer” hangi cümlede?",
+   "aciklama": "“…I couldn't join in the fun in the water.” Sudaki eğlenceye katılamadı. Plaja gitti ama yüzemediği için katılamadı (WB s. 26; boşluklar bağlamdan dolduruldu).",
+   "kavram": "couldn't"
+  },
+  {
+   "metin": [
+    "{{I couldn't play the piano very well when I was younger.}}",
+    "{{I didn't like practising because the piano was in our living room downstairs.}}",
+    "{{That meant everyone had to listen to me when I played and no one could watch TV or read.}}",
+    "{{Now I've got an electric piano and I can use headphones.}}",
+    "{{It's great because my family can't hear anything I'm playing!}}",
+    "{{So now I'm practising a lot and I can play quite well.}}"
+   ],
+   "soru": "Metne göre Julia şimdi elektrikli piyanoda neyi kullanabiliyor?",
+   "bolge": [
+    "şimdi",
+    "neyi kullanabiliyor"
+   ],
+   "serit": "şimdi kullanabildiği şey",
+   "kanit": [
+    3
+   ],
+   "secenekler": [
+    "headphones",
+    "the living room",
+    "the piano downstairs"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“şimdi” İngilizcede “Now”, “kullanmak” “use” demek.",
+   "kanitIpucu": "“use” hangi cümlede geçiyor?",
+   "aciklama": "“Now I've got an electric piano and I can use headphones.” Şimdi kulaklık kullanabiliyor; bu yüzden ailesi onu duymuyor (WB s. 26; boşluklar bağlamdan dolduruldu).",
+   "kavram": "can"
   }
  ]
 }
