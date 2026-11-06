@@ -1768,6 +1768,14 @@
     let tries = 0, finished = false, buf = "";
     const state = opts.state || { wrong: [], result: undefined };
     const fb = $(".fb", el), txt = $(".kp-txt", el), ekran = $(".kp-ekran", el), yr = wireYardim(el, o, opts, state);
+    // Dikkat paketi (S.data.dikkat): tuş takımı / sayı doğrusu, "sorunun kalbi" bulununca açılır (seçmeli sorulardaki gibi; yalnız düz metinli sorularda).
+    const dikkat = !!(S.data && S.data.dikkat) && !opts.classMode && !document.body.classList.contains("sinif");
+    const cevapAlan = kind === "nokta" ? $(".sd-pick", el) : $(".kp", el), kalpAlan = $(".q-text > span:last-child", el);
+    if (dikkat && cevapAlan && kalpAlan && kalpDuz(o)) {
+      const taze = state.result === undefined && !(state.wrong || []).length;
+      if (!taze || !kalpGerek(o, state)) { if (state.kalp >= 0) kalpCiz(kalpAlan, o, false); }
+      else { cevapAlan.hidden = true; kalpBul(kalpAlan, o, state, () => { cevapAlan.hidden = false; cevapAlan.scrollIntoView({ block: "nearest", behavior: "smooth" }); }); }
+    }
     // denk: true → değeri aynı olan her yazım kabul (2/4 = 1/2); yoksa yalnızca cevap ve kabul listesi
     const dogruMu = v => kind === "nokta" ? ayniSayi(v, o.nokta) : [o.cevap, ...(o.kabul || [])].some(c => normSayi(c) === normSayi(v) || (o.denk && ayniSayi(c, v)));
     const dogruYazi = kind === "nokta" ? (typeof o.nokta === "string" ? o.nokta.replace(/-/g, "−") : sayiYaz(o.nokta)) : String(o.cevap).replace(/-/g, "−");
@@ -1789,7 +1797,7 @@
       else { ekran.classList.add("shake", "yanlis"); setTimeout(() => ekran.classList.remove("shake"), 400); }
       if (tries >= 2) return finish(0);
       fb.hidden = false; fb.className = "fb hint";
-      fb.innerHTML = `<div><b>Henüz değil.</b> ${yanlisMetin(o, yr.yanlis())}</div>` +
+      fb.innerHTML = `<div><b>Henüz değil.</b> ${yanlisMetin(o, yr.yanlis())}</div>` + (dikkat ? kalpHatirlat(el, o) : "") +
         (opts.backToInfo ? `<div><button class="btn ghost" data-back>Bilgi kartına bak</button></div>` : "");
       const bk = $("[data-back]", fb); if (bk) bk.onclick = opts.backToInfo;
       if (kind === "girdi") { buf = ""; setTimeout(() => { ekran.classList.remove("yanlis"); ciz(); }, 700); }

@@ -157,7 +157,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartındaki ilk cümleye bak.",
-    "aciklama": "Hacmin temel birimi metreküptür (m³). Metre uzunluk, metrekare alan birimidir. (s. 146)"
+    "aciklama": "Hacmin temel birimi metreküptür (m³). Metre uzunluk, metrekare alan birimidir. (s. 146)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "temel birimi hangisidir"
+    ]
    }
   },
   {
@@ -176,7 +182,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kum çok mu, az mı?",
-    "aciklama": "Kamyondaki kum çok büyük bir hacimdir: m³ uygun. (s. 144)"
+    "aciklama": "Kamyondaki kum çok büyük bir hacimdir: m³ uygun. (s. 144)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "en uygun birim hangisidir"
+    ]
    }
   },
   {
@@ -216,7 +228,13 @@
       "Taban katmanında 10 · 10 kutu var.",
       "Kaç katman var? Bir katmanı katman sayısıyla çarp."
      ]
-    }
+    },
+    "tetik": [
+     "kaç tane"
+    ],
+    "bolge": [
+     "kaç tane sığar"
+    ]
    }
   },
   {
@@ -235,7 +253,11 @@
     ],
     "dogru": 0,
     "ipucu": "Merdivende aşağı iniyoruz.",
-    "aciklama": "Aşağı inerken her basamakta 1000 ile çarparız. (s. 146)"
+    "aciklama": "Aşağı inerken her basamakta 1000 ile çarparız. (s. 146)",
+    "bolge": [
+     "Büyük birimden küçük birime",
+     "çevirirken ne yaparız"
+    ]
    }
   },
   {
@@ -300,7 +322,13 @@
       "Merdivende aşağı mı iniyoruz, yukarı mı çıkıyoruz?",
       "Aşağı: 1000 ile çarp."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "3 dm³ kaç cm³"
+    ]
    }
   },
   {
@@ -363,7 +391,13 @@
       "Merdivende aşağı mı iniyoruz, yukarı mı çıkıyoruz?",
       "Yukarı: 1000'e böl. Sondan üç 0 sil."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "6000 cm³ kaç dm³"
+    ]
    }
   },
   {
@@ -449,7 +483,10 @@
     ],
     "dogru": 1,
     "ipucu": "Birimler aynı mı?",
-    "aciklama": "Önce birimleri eşitleriz: 1 m = 10 dm. Sonra 10 · 5 · 2 = 100 dm³. (s. 146)"
+    "aciklama": "Önce birimleri eşitleriz: 1 m = 10 dm. Sonra 10 · 5 · 2 = 100 dm³. (s. 146)",
+    "bolge": [
+     "ilk ne yapmalıyız"
+    ]
    }
   }
  ],
@@ -501,7 +538,13 @@
    "dogru": 0,
    "ipucu": "Havuz büyük mü, küçük mü?",
    "aciklama": "Havuz çok büyüktür; büyük birim m³ uygundur. (s. 144)",
-   "kavram": "Hangi Birim Uygun?"
+   "kavram": "Hangi Birim Uygun?",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en uygun birim hangisidir"
+   ]
   },
   {
    "soru": "3 m³ kaç dm³?",
@@ -515,7 +558,13 @@
      "m³'ten dm³'e: aşağı mı, yukarı mı?",
      "Aşağı: 1000 ile çarp. 3'ün sonuna üç 0 ekle."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "3 m³ kaç dm³"
+   ]
   },
   {
    "soru": "5 dm³ kaç cm³?",
@@ -529,7 +578,13 @@
      "dm³ büyük, cm³ küçük birim: sayı büyüyecek.",
      "1000 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "5 dm³ kaç cm³"
+   ]
   },
   {
    "soru": "7000 cm³ kaç dm³?",
@@ -543,7 +598,13 @@
      "cm³ küçük, dm³ büyük birim: sayı küçülecek.",
      "1000'e böl: sondan üç 0 sil."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "7000 cm³ kaç dm³"
+   ]
   },
   {
    "soru": "cm³'ü m³'e çevirirken ne yaparız?",
@@ -555,7 +616,10 @@
    "dogru": 1,
    "ipucu": "cm³ küçük, m³ büyük birim. Merdivende yukarı mı çıkıyoruz?",
    "aciklama": "Yukarı çıkıyoruz: her basamakta 1000'e böleriz. (s. 146)",
-   "kavram": "Hacim Basamakları"
+   "kavram": "Hacim Basamakları",
+   "bolge": [
+    "cm³'ü m³'e çevirirken ne yaparız"
+   ]
   },
   {
    "soru": "0,5 m³ kaç dm³?",
@@ -569,7 +633,13 @@
      "m³'ten dm³'e: aşağı iniyoruz, 1000 ile çarp.",
      "0,5'te virgülü 1 basamak kaydırınca 5 olur. 2 basamak daha var."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "0,5 m³ kaç dm³"
+   ]
   },
   {
    "soru": "Hangisi doğrudur?",
@@ -581,7 +651,13 @@
    "dogru": 2,
    "ipucu": "Hacimde basamaklar arası 10 mu, 1000 mi?",
    "aciklama": "Hacimde her basamak 1000 katıdır: 1 m³ = 1000 dm³. (s. 146)",
-   "kavram": "1 m³ = 1000 dm³"
+   "kavram": "1 m³ = 1000 dm³",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Ayrıtları 2 m, 1 m ve 50 cm olan prizma biçimindeki bir çukurun hacmi kaç dm³?",
@@ -597,7 +673,13 @@
      "Önce 20 · 10.",
      "Sonucu 5 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "hacmi kaç dm³"
+   ]
   },
   {
    "soru": "4500 dm³ kaç m³?",
@@ -612,7 +694,13 @@
      "dm³'ten m³'e: yukarı çıkıyoruz, 1000'e böl.",
      "4500'de virgül en sondadır. Virgülü 3 basamak sola kaydır."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "4500 dm³ kaç m³"
+   ]
   },
   {
    "soru": "Her ayrıtı 1 m olan küpün hacmi hangisidir?",
@@ -624,7 +712,220 @@
    "dogru": 1,
    "ipucu": "Hacim küp birimle yazılır.",
    "aciklama": "1 · 1 · 1 = 1 m³. (s. 146)",
-   "kavram": "Metreküp"
+   "kavram": "Metreküp",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "hacmi hangisidir"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Hacim ölçülerinin temel birimi {metreküptür|litredir|metrekaredir}.",
+   "s": "s. 146"
+  },
+  {
+   "c": "Her ayrıtı 1 m olan küpün hacmi {1 m³|1 m²|1 L}'tür.",
+   "s": "s. 146"
+  },
+  {
+   "c": "Bahçeye gelecek kum gibi büyük hacimler {büyük|küçük|her} birimle ölçülür.",
+   "s": "s. 144"
+  },
+  {
+   "c": "1 m³ = {1000|100|10} dm³.",
+   "s": "s. 145"
+  },
+  {
+   "c": "Hacim basamaklarında aşağı inerken her basamakta {1000 ile çarparız|1000'e böleriz|10 ile çarparız}.",
+   "s": "s. 146"
+  },
+  {
+   "c": "Hacim birimleri büyükten küçüğe: m³, {dm³|mm³|cm³}, cm³, mm³.",
+   "s": "s. 146"
+  },
+  {
+   "c": "Ayrıtlar farklı birimlerle verilmişse önce {aynı birime çeviririz|en büyüğünü alırız|toplarız}, sonra çarparız.",
+   "s": "s. 146"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Can “3 m³ = 30 dm³” dedi. Can'ın hatası ne? Doğrusunu yaz.",
+   "tetik": [
+    "hatası ne"
+   ],
+   "okut": [
+    "Can'ın hatasını ve doğrusunu yazmanı",
+    "Can'ın bulduğu sayıyı litreye çevirmeni",
+    "hacim birimlerini sıralamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Hatası:",
+     "ornek": "10 ile çarptı.",
+     "havuz": [
+      "1000 ile çarptı.",
+      "Birimi doğru çevirdi."
+     ],
+     "k": [
+      "10 ile"
+     ]
+    },
+    {
+     "bas": "Doğrusu:",
+     "ornek": "Hacimde 1000 ile çarpılır: 3 m³ = 3000 dm³.",
+     "havuz": [
+      "3 m³ = 300 dm³ olur.",
+      "3 m³ = 3 dm³ olur."
+     ],
+     "k": [
+      "1000",
+      "3000"
+     ]
+    }
+   ],
+   "kisa": "10 ile çarptı; 3000 dm³ olmalı.",
+   "cevap": "Can 10 ile çarptı. Hacim basamaklarında aşağı inerken 1000 ile çarparız; doğrusu 3 m³ = 3000 dm³.",
+   "anahtarlar": [
+    {
+     "ad": "10 ile çarptı",
+     "k": [
+      "10 ile"
+     ]
+    },
+    {
+     "ad": "3000 dm³",
+     "k": [
+      "3000"
+     ]
+    }
+   ],
+   "sayfa": "s. 146",
+   "bolge": [
+    "hatası ne",
+    "Doğrusunu yaz"
+   ]
+  },
+  {
+   "soru": "Ayrıtları 2 m, 1 m ve 40 cm olan bir kabın hacmini bulmadan önce ne yapmalıyız? Nedenini yaz.",
+   "tetik": [
+    "bulmadan önce ne yapmalıyız"
+   ],
+   "okut": [
+    "hacmi bulmadan önce yapılacak işi ve nedenini yazmanı",
+    "kabın hacmini hesaplamanı",
+    "en uzun ayrıtı bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Önce:",
+     "ornek": "Bütün ayrıtları aynı birime çevirmeliyiz.",
+     "havuz": [
+      "Ayrıtları toplamalıyız.",
+      "En küçük ayrıtı atmalıyız."
+     ],
+     "k": [
+      "aynı birim",
+      "çevir"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "m ile cm karışık; farklı birimler çarpılmaz.",
+     "havuz": [
+      "Kap çok büyüktür.",
+      "40 sayısı çift sayıdır."
+     ],
+     "k": [
+      "karışık",
+      "farklı"
+     ]
+    }
+   ],
+   "kisa": "Aynı birime çevirmeliyiz; birimler karışık.",
+   "cevap": "Önce bütün ayrıtları aynı birime çevirmeliyiz, örneğin dm'ye. Çünkü m ile cm karışık; farklı birimlerle yazılmış ayrıtlar çarpılmaz.",
+   "anahtarlar": [
+    {
+     "ad": "aynı birime çevir",
+     "k": [
+      "aynı birim"
+     ]
+    },
+    {
+     "ad": "birimler karışık",
+     "k": [
+      "karışık"
+     ]
+    }
+   ],
+   "sayfa": "s. 146",
+   "bolge": [
+    "bulmadan önce ne yapmalıyız",
+    "Nedenini yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Elif'in babası bahçe için kum sipariş etti.",
+    "Satıcıya “2 m³ kum getirin.” dedi.",
+    "Elif bu miktarı dm³ olarak hesaplamak istedi."
+   ],
+   "soru": "Metne göre sipariş edilen kum kaç dm³'tür?",
+   "bolge": [
+    "kaç dm³'tür"
+   ],
+   "serit": "Kumun dm³ olarak miktarı",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "2000 dm³",
+    "20 dm³",
+    "200 dm³"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "m³'ten dm³'e bir basamak aşağı inilir: kaç ile çarparız?",
+   "kanitIpucu": "Kum miktarını söyleyen cümleyi bul.",
+   "aciklama": "1 m³ = 1000 dm³; 2 · 1000 = 2000 dm³ (s. 145–146). Sipariş miktarı kitap dışı.",
+   "kavram": "Büyükten Küçüğe: Çarp"
+  },
+  {
+   "metin": [
+    "Okul bahçesine bir sebze yatağı yapılacak.",
+    "Yatağın uzunluğu 2 m, genişliği 1 m.",
+    "Toprağın derinliği 40 cm olacak.",
+    "Öğrenciler önce bütün ölçüleri dm'ye çevirdi: 20 dm, 10 dm ve 4 dm.",
+    "Yatağın kenarları 4 gün içinde boyanacak.",
+    "Toprak bir kamyonla getirilecek."
+   ],
+   "soru": "Metne göre yatağa kaç dm³ toprak gerekir?",
+   "bolge": [
+    "kaç dm³ toprak gerekir"
+   ],
+   "serit": "Gereken toprağın hacmi (dm³)",
+   "kanit": [
+    3
+   ],
+   "secenekler": [
+    "800 dm³",
+    "80 dm³",
+    "34 dm³"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Aynı birime çevrilmiş üç ayrıtı çarp.",
+   "kanitIpucu": "Ölçülerin dm'ye çevrildiği cümleyi bul.",
+   "aciklama": "20 · 10 · 4 = 800 dm³. 80, 40 cm'yi çevirmeden çarpınca (2 · 1 · 40); 34 ayrıtları toplayınca çıkar (s. 146). Ölçüler kitap dışı.",
+   "kavram": "Önce Birimleri Eşitle"
   }
  ]
 }

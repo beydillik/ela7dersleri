@@ -104,7 +104,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartındaki yönleri tek tek say: ön, arka…",
-    "aciklama": "Ön, arka, sağ, sol, üst ve alt: 6 yön. (s. 121–122)"
+    "aciklama": "Ön, arka, sağ, sol, üst ve alt: 6 yön. (s. 121–122)",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç farklı yönden bakabiliriz"
+    ]
    }
   },
   {
@@ -147,7 +153,13 @@
       "Her sütunda üst üste kaç küp var? Arkadaki küp öndekinin arkasında.",
       "Sütunlardaki kareleri topla."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "önden bakınca kaç kare görürsün"
+    ]
    }
   },
   {
@@ -187,7 +199,13 @@
     "dogru": 0,
     "ipucu": "Öndeki küp, arkasındakileri saklar.",
     "aciklama": "Arka arkaya duran küpler önden bakınca tek kare gibi görünür. (s. 119)",
-    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='158.0,110.0 186.0,110.0 186.0,82.0 158.0,82.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,82.0 186.0,82.0 200.0,68.0 172.0,68.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='186.0,110.0 200.0,96.0 200.0,68.0 186.0,82.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,124.0 172.0,124.0 172.0,96.0 144.0,96.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,96.0 172.0,96.0 186.0,82.0 158.0,82.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.0,124.0 186.0,110.0 186.0,82.0 172.0,96.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='130.0,138.0 158.0,138.0 158.0,110.0 130.0,110.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='130.0,110.0 158.0,110.0 172.0,96.0 144.0,96.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,138.0 172.0,124.0 172.0,96.0 158.0,110.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='144.0' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='204.0' y='134.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text></svg>"
+    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='158.0,110.0 186.0,110.0 186.0,82.0 158.0,82.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,82.0 186.0,82.0 200.0,68.0 172.0,68.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='186.0,110.0 200.0,96.0 200.0,68.0 186.0,82.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,124.0 172.0,124.0 172.0,96.0 144.0,96.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='144.0,96.0 172.0,96.0 186.0,82.0 158.0,82.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.0,124.0 186.0,110.0 186.0,82.0 172.0,96.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='130.0,138.0 158.0,138.0 158.0,110.0 130.0,110.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='130.0,110.0 158.0,110.0 172.0,96.0 144.0,96.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='158.0,138.0 172.0,124.0 172.0,96.0 158.0,110.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='144.0' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='204.0' y='134.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text></svg>",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "önden bakınca kaç kare görürsün"
+    ]
    }
   },
   {
@@ -248,7 +266,13 @@
     "dogru": 2,
     "ipucu": "Sağdan bakınca derinliği görürsün. Yapı tek sıra; en yüksek yeri kaç küp?",
     "aciklama": "Yapı tek sıradır; sağdan bakınca tek sütun görünür. En yüksek yer 2 küp: üst üste 2 kare, 3. çizim. (s. 121)",
-    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='126.5,108.0 148.5,108.0 148.5,86.0 126.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,86.0 148.5,86.0 159.5,75.0 137.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,108.0 159.5,97.0 159.5,75.0 148.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,108.0 170.5,108.0 170.5,86.0 148.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,86.0 170.5,86.0 181.5,75.0 159.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,108.0 181.5,97.0 181.5,75.0 170.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,108.0 192.5,108.0 192.5,86.0 170.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,86.0 192.5,86.0 203.5,75.0 181.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='192.5,108.0 203.5,97.0 203.5,75.0 192.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,86.0 148.5,86.0 148.5,64.0 126.5,64.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,64.0 148.5,64.0 159.5,53.0 137.5,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,86.0 159.5,75.0 159.5,53.0 148.5,64.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='159.5' y='122.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='207.5' y='104.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><rect x='22.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='22.0' y='56.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='44.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='66.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='132.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='154.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='176.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='264.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='264.0' y='56.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>"
+    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='126.5,108.0 148.5,108.0 148.5,86.0 126.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,86.0 148.5,86.0 159.5,75.0 137.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,108.0 159.5,97.0 159.5,75.0 148.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,108.0 170.5,108.0 170.5,86.0 148.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,86.0 170.5,86.0 181.5,75.0 159.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,108.0 181.5,97.0 181.5,75.0 170.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,108.0 192.5,108.0 192.5,86.0 170.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,86.0 192.5,86.0 203.5,75.0 181.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='192.5,108.0 203.5,97.0 203.5,75.0 192.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,86.0 148.5,86.0 148.5,64.0 126.5,64.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,64.0 148.5,64.0 159.5,53.0 137.5,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,86.0 159.5,75.0 159.5,53.0 148.5,64.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='159.5' y='122.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='207.5' y='104.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><rect x='22.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='22.0' y='56.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='44.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='66.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='132.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='154.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='176.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='264.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='264.0' y='56.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "sağdan görünümü hangisi"
+    ]
    }
   },
   {
@@ -287,7 +311,13 @@
     "dogru": 0,
     "ipucu": "Ön ile arka görünüm dikey bir doğruya göre simetrik: sağ ve sol yer değiştirir.",
     "aciklama": "Arkadan bakınca sağ ve sol yer değiştirir. Merdiven sola doğru yükselir: 1. çizim. (s. 122)",
-    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='138.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='156.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='156.0' y='72.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='72.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='54.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><text x='165.0' y='16.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Önden görünüm</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><rect x='32.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='32.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='32.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='47.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='47.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='62.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='142.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='157.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='157.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='252.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='267.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='267.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='282.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='282.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='282.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>"
+    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='138.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='156.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='156.0' y='72.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='72.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='54.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><text x='165.0' y='16.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Önden görünüm</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><rect x='32.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='32.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='32.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='47.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='47.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='62.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='142.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='157.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='157.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='252.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='267.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='267.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='282.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='282.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='282.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "arkadan görünümü hangisi"
+    ]
    }
   },
   {
@@ -328,7 +358,13 @@
       "Önden görünüm: üst üste duran küp var mı?",
       "Yerdeki ve üstteki küpleri topla."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "en az kaç küptür"
+    ]
    }
   }
  ],
@@ -388,7 +424,13 @@
      "Her sütunda üst üste kaç küp var? Arkadaki küp öndekinin arkasında saklanıyor.",
      "Sütunlardaki kareleri topla."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "önden bakınca kaç kare görürsün"
+   ]
   },
   {
    "soru": "Görseldeki yapının üstten görünümü hangisi?",
@@ -401,7 +443,13 @@
    "ipucu": "Yukarıdan bak: yerde kaç küp var? Üst üste duranlar tek kare görünür.",
    "aciklama": "Yerde yan yana 3 küp var; soldaki küpün üstündeki küp yeni kare eklemez. Üstten 3 kare yan yana: 2. çizim. (s. 121)",
    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='126.5,108.0 148.5,108.0 148.5,86.0 126.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,86.0 148.5,86.0 159.5,75.0 137.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,108.0 159.5,97.0 159.5,75.0 148.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,108.0 170.5,108.0 170.5,86.0 148.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,86.0 170.5,86.0 181.5,75.0 159.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,108.0 181.5,97.0 181.5,75.0 170.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,108.0 192.5,108.0 192.5,86.0 170.5,86.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='170.5,86.0 192.5,86.0 203.5,75.0 181.5,75.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='192.5,108.0 203.5,97.0 203.5,75.0 192.5,86.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,86.0 148.5,86.0 148.5,64.0 126.5,64.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='126.5,64.0 148.5,64.0 159.5,53.0 137.5,53.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='148.5,86.0 159.5,75.0 159.5,53.0 148.5,64.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='159.5' y='122.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='207.5' y='104.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><rect x='22.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='22.0' y='56.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='44.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='66.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='132.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='154.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='176.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='264.0' y='78.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='264.0' y='56.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>",
-   "kavram": "Görünümü Çizme"
+   "kavram": "Görünümü Çizme",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "üstten görünümü hangisi"
+   ]
   },
   {
    "soru": "Görseldeki yapı en az kaç küpten oluşur?",
@@ -416,7 +464,13 @@
      "Üstteki küpleri say. Her biri bir küpün üstünde duruyor.",
      "Yerdekileri ve üsttekileri topla."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "en az kaç küpten oluşur"
+   ]
   },
   {
    "soru": "Önden görünümü görseldeki gibi olan yapının arkadan görünümü hangisi?",
@@ -429,7 +483,13 @@
    "ipucu": "Arkadan bakınca sağ ve sol yer değiştirir. Uzun sütun hangi tarafa geçer?",
    "aciklama": "Arka görünüm, önden görünümün dikey doğruya göre simetriğidir. Merdiven sola doğru yükselir: 3. çizim. (s. 122)",
    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='138.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='156.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='156.0' y='72.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='90.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='72.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='174.0' y='54.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><text x='165.0' y='16.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Önden görünüm</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><rect x='32.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='47.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='47.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='62.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='62.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='62.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='142.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='157.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='157.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='172.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='252.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='252.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='252.5' y='55.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='267.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='267.5' y='70.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='282.5' y='85.0' width='15' height='15' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>",
-   "kavram": "Karşılıklı Görünümler Simetrik"
+   "kavram": "Karşılıklı Görünümler Simetrik",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "arkadan görünümü hangisi"
+   ]
   },
   {
    "soru": "Sağdan görünümü görseldeki gibi olan yapının soldan görünümü hangisi?",
@@ -442,7 +502,13 @@
    "ipucu": "Sağ ile sol görünüm dikey bir doğruya göre simetriktir.",
    "aciklama": "Soldan görünüm, sağdan görünümün ayna görüntüsüdür: yüksek sütun öbür tarafa geçer: 1. çizim. (s. 122)",
    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='143.0' y='86.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='143.0' y='64.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='165.0' y='86.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><text x='165.0' y='16.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Sağdan görünüm</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><rect x='37.0' y='82.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='55.0' y='82.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='55.0' y='64.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><rect x='147.0' y='82.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='147.0' y='64.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='165.0' y='82.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><rect x='257.0' y='82.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='257.0' y='64.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='275.0' y='64.0' width='18' height='18' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>",
-   "kavram": "Karşılıklı Görünümler Simetrik"
+   "kavram": "Karşılıklı Görünümler Simetrik",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "soldan görünümü hangisi"
+   ]
   },
   {
    "soru": "Hangisi doğrudur?",
@@ -454,7 +520,13 @@
    "dogru": 1,
    "ipucu": "Bilgi kartına bak: hangi çiftler dikey, hangi çift yatay doğruya göre simetrik?",
    "aciklama": "Ön-arka ve sağ-sol dikey, üst-alt yatay bir doğruya göre simetriktir. Sağ ve sol görünüm ayna görüntüsüdür; her zaman aynı değildir. (s. 122)",
-   "kavram": "Karşılıklı Görünümler Simetrik"
+   "kavram": "Karşılıklı Görünümler Simetrik",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Önden ve üstten görünümleri görseldeki gibi olan bir yapı en az kaç küptür?",
@@ -469,7 +541,13 @@
      "Önden görünüm: hangi sütunda üst üste 2 kare var?",
      "Yerdeki küplere üstteki küpü ekle."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "en az kaç küptür"
+   ]
   },
   {
    "soru": "Görseldeki yapıdan en üstteki küp çıkarılırsa hangi görünüm değişmez?",
@@ -482,7 +560,13 @@
    "ipucu": "Üstteki küp kalkınca yukarıdan bakan biri yeni bir boşluk görür mü? Altında küp var mı?",
    "aciklama": "Üstteki küpün altında başka bir küp var. Yukarıdan yine 3 kare görünür; önden ve sağdan görünümde ise üstteki kare kaybolur. (s. 124)",
    "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='112.5,138.0 142.5,138.0 142.5,108.0 112.5,108.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='112.5,108.0 142.5,108.0 157.5,93.0 127.5,93.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,138.0 157.5,123.0 157.5,93.0 142.5,108.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,138.0 172.5,138.0 172.5,108.0 142.5,108.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,108.0 172.5,108.0 187.5,93.0 157.5,93.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.5,138.0 187.5,123.0 187.5,93.0 172.5,108.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.5,138.0 202.5,138.0 202.5,108.0 172.5,108.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.5,108.0 202.5,108.0 217.5,93.0 187.5,93.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='202.5,138.0 217.5,123.0 217.5,93.0 202.5,108.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='112.5,108.0 142.5,108.0 142.5,78.0 112.5,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='112.5,78.0 142.5,78.0 157.5,63.0 127.5,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,108.0 157.5,93.0 157.5,63.0 142.5,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='157.5' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='221.5' y='134.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text></svg>",
-   "kavram": "Görünüm Kare Gösterir"
+   "kavram": "Görünüm Kare Gösterir",
+   "tetik": [
+    "hangi görünüm"
+   ],
+   "bolge": [
+    "hangi görünüm değişmez"
+   ]
   },
   {
    "soru": "Bir yapının ön tarafının tam karşısında hangi taraf vardır?",
@@ -494,7 +578,13 @@
    "dogru": 0,
    "ipucu": "Altı yönü çiftler hâlinde düşün: ön-…, sağ-…, üst-…",
    "aciklama": "Yönler çiftler hâlindedir: ön-arka, sağ-sol, üst-alt. (s. 121–122)",
-   "kavram": "Altı Yön"
+   "kavram": "Altı Yön",
+   "tetik": [
+    "hangi taraf"
+   ],
+   "bolge": [
+    "tam karşısında hangi taraf vardır"
+   ]
   },
   {
    "soru": "Görseldeki önden görünüm hangi yapıya aittir?",
@@ -507,7 +597,225 @@
    "ipucu": "Her yapıya önden bak: hangi sütun 2 küp yüksekliğinde?",
    "aciklama": "Önden görünümde sağ sütun 2 kare yüksekliğinde. 1. yapıda sağdaki küpün üstünde bir küp var. (s. 123)",
    "svg": "<svg viewBox='0 0 330 260' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='143.0' y='86.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='165.0' y='86.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><rect x='165.0' y='64.0' width='22' height='22' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6'/><text x='165.0' y='16.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='12' fill='#9aa3bf'>Önden görünüm</text><line x1='10' y1='128' x2='320' y2='128' stroke='#3a4570' stroke-width='1.5'/><g transform='translate(0 130)'><polygon points='30.0,100.0 50.0,100.0 50.0,80.0 30.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='30.0,80.0 50.0,80.0 60.0,70.0 40.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='50.0,100.0 60.0,90.0 60.0,70.0 50.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='50.0,100.0 70.0,100.0 70.0,80.0 50.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='50.0,80.0 70.0,80.0 80.0,70.0 60.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='70.0,100.0 80.0,90.0 80.0,70.0 70.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='50.0,80.0 70.0,80.0 70.0,60.0 50.0,60.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='50.0,60.0 70.0,60.0 80.0,50.0 60.0,50.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='70.0,80.0 80.0,70.0 80.0,50.0 70.0,60.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><circle cx='55.0' cy='118' r='10' fill='#f2c14e'/><text x='55.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><polygon points='140.0,100.0 160.0,100.0 160.0,80.0 140.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='140.0,80.0 160.0,80.0 170.0,70.0 150.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='160.0,100.0 170.0,90.0 170.0,70.0 160.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='160.0,100.0 180.0,100.0 180.0,80.0 160.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='160.0,80.0 180.0,80.0 190.0,70.0 170.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='180.0,100.0 190.0,90.0 190.0,70.0 180.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='140.0,80.0 160.0,80.0 160.0,60.0 140.0,60.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='140.0,60.0 160.0,60.0 170.0,50.0 150.0,50.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='160.0,80.0 170.0,70.0 170.0,50.0 160.0,60.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><circle cx='165.0' cy='118' r='10' fill='#f2c14e'/><text x='165.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><polygon points='240.0,100.0 260.0,100.0 260.0,80.0 240.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='240.0,80.0 260.0,80.0 270.0,70.0 250.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='260.0,100.0 270.0,90.0 270.0,70.0 260.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='260.0,100.0 280.0,100.0 280.0,80.0 260.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='260.0,80.0 280.0,80.0 290.0,70.0 270.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='280.0,100.0 290.0,90.0 290.0,70.0 280.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='280.0,100.0 300.0,100.0 300.0,80.0 280.0,80.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='280.0,80.0 300.0,80.0 310.0,70.0 290.0,70.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='300.0,100.0 310.0,90.0 310.0,70.0 300.0,80.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><circle cx='275.0' cy='118' r='10' fill='#f2c14e'/><text x='275.0' y='123.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='102' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></g></svg>",
+   "kavram": "Görünümden Yapıya",
+   "tetik": [
+    "hangi yapıya"
+   ],
+   "bolge": [
+    "hangi yapıya aittir"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bir yapıya {altı|dört|iki} yönden bakabiliriz: önden, arkadan, sağdan, soldan, üstten ve alttan.",
+   "s": "s. 121"
+  },
+  {
+   "c": "Eş küplerden yapılmış bir yapıya bir yönden bakınca her küpün yüzü {kare|üçgen|daire} görünür.",
+   "s": "s. 120"
+  },
+  {
+   "c": "Tek yönden bakmak yanıltabilir: öndeki küp, {arkasındaki|üstündeki|yanındaki} küpü saklar.",
+   "s": "s. 119"
+  },
+  {
+   "c": "Üstten görünümde yapının ön tarafı {aşağıda|yukarıda|sağda} kalır.",
+   "s": "s. 121"
+  },
+  {
+   "c": "Ön ile arka görünümler {dikey|yatay|eğik} bir doğruya göre simetriktir.",
+   "s": "s. 122"
+  },
+  {
+   "c": "Üst ile alt görünümler {yatay|dikey|eğik} bir doğruya göre simetriktir.",
+   "s": "s. 122"
+  },
+  {
+   "c": "Önden görünüm sütunların {yüksekliğini|rengini|ağırlığını}, üstten görünüm küplerin yere nasıl dizildiğini söyler.",
+   "s": "s. 122"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Bir yapıya yalnızca önden bakarak kaç küp olduğunu kesin söyleyebilir misin? Nedenini yaz.",
+   "tetik": [
+    "kesin söyleyebilir misin"
+   ],
+   "okut": [
+    "yalnız önden bakarak küp sayısını kesin söyleyip söyleyemeyeceğini ve nedenini yazmanı",
+    "yapıda kaç küp olduğunu saymanı",
+    "önden görünümü çizmeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Cevabım:",
+     "ornek": "Hayır, kesin söyleyemem.",
+     "havuz": [
+      "Evet, her zaman söylerim.",
+      "Sadece sağdan bakınca söylerim."
+     ],
+     "k": [
+      "hayır",
+      "söyleyeme"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "Öndeki küp arkasındaki küpü saklayabilir.",
+     "havuz": [
+      "Bütün küpler aynı renktedir.",
+      "Yapının hiç üst yüzü yoktur."
+     ],
+     "k": [
+      "sakla",
+      "arka"
+     ]
+    }
+   ],
+   "kisa": "Hayır; öndeki küp arkadakini saklar.",
+   "cevap": "Hayır, kesin söyleyemem. Önden bakınca her sütunun yalnızca ön küpünü görürüm; öndeki küp arkasındaki küpü saklayabilir.",
+   "anahtarlar": [
+    {
+     "ad": "hayır",
+     "k": [
+      "hayır"
+     ]
+    },
+    {
+     "ad": "öndeki küp arkadakini saklar",
+     "k": [
+      "sakla",
+      "arka"
+     ]
+    }
+   ],
+   "sayfa": "s. 119",
+   "bolge": [
+    "kesin söyleyebilir misin",
+    "Nedenini yaz"
+   ]
+  },
+  {
+   "soru": "Önden görünüm ve üstten görünüm bize yapı hakkında hangi bilgileri verir? İkisini de yaz.",
+   "tetik": [
+    "hangi bilgileri verir"
+   ],
+   "okut": [
+    "önden ve üstten görünümün hangi bilgileri verdiğini yazmanı",
+    "yalnız önden görünümü anlatmanı",
+    "bir yapıya kaç yönden bakılacağını söylemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Önden görünüm:",
+     "ornek": "Sütunların yüksekliğini söyler.",
+     "havuz": [
+      "Küplerin rengini söyler.",
+      "Yapının ağırlığını söyler."
+     ],
+     "k": [
+      "yüksek"
+     ]
+    },
+    {
+     "bas": "Üstten görünüm:",
+     "ornek": "Küplerin yere nasıl dizildiğini söyler.",
+     "havuz": [
+      "Kaç kat olduğunu söyler.",
+      "Küplerin sesini söyler."
+     ],
+     "k": [
+      "yer",
+      "dizil"
+     ]
+    }
+   ],
+   "kisa": "Önden: yükseklik. Üstten: yere diziliş.",
+   "cevap": "Önden görünüm sütunların yüksekliğini, yani her sütunda üst üste kaç küp olduğunu söyler. Üstten görünüm küplerin yere nasıl dizildiğini söyler.",
+   "anahtarlar": [
+    {
+     "ad": "önden: yükseklik",
+     "k": [
+      "yüksek"
+     ]
+    },
+    {
+     "ad": "üstten: yere diziliş",
+     "k": [
+      "yer",
+      "dizil"
+     ]
+    }
+   ],
+   "sayfa": "s. 122",
+   "bolge": [
+    "hangi bilgileri verir",
+    "İkisini de yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Ali eş küplerle bir yapı kurdu.",
+    "Önden görünümde yan yana üç sütun var: yükseklikleri 1, 3 ve 2 kare.",
+    "Üstten görünümde yalnızca üç kare var; küpler tek sıra dizilmiş."
+   ],
+   "soru": "Metne göre bu yapıda en yüksek sütunda kaç küp vardır?",
+   "bolge": [
+    "en yüksek sütunda kaç küp vardır"
+   ],
+   "serit": "En yüksek sütundaki küp sayısı",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "3 küp",
+    "6 küp",
+    "1 küp"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Sütunların yüksekliğini hangi görünüm söyler?",
+   "kanitIpucu": "“Sütun” ve “yükseklik” kelimelerinin geçtiği cümleyi bul.",
+   "aciklama": "Önden görünüm sütunların yüksekliğini söyler: en yüksek sütun 3 kare, yani 3 küp. 6, bütün küplerin sayısıdır; soru en yüksek sütunu soruyor (s. 122).",
    "kavram": "Görünümden Yapıya"
+  },
+  {
+   "metin": [
+    "Zeynep sınıfta küplerle bir kule yaptı.",
+    "Arkadaşı Mert kuleye yalnızca önden baktı ve iki sütun gördü.",
+    "Soldaki sütun 2 kare, sağdaki sütun 1 kare görünüyordu.",
+    "Mert “Kulede 3 küp var.” dedi.",
+    "Zeynep gülümsedi; sağdaki küpün arkasında bir küp daha saklıydı.",
+    "Öğretmen, yapıya üstten de bakmalarını önerdi."
+   ],
+   "soru": "Metne göre kulede gerçekte kaç küp vardır?",
+   "bolge": [
+    "gerçekte kaç küp vardır"
+   ],
+   "serit": "Kuledeki gerçek küp sayısı",
+   "kanit": [
+    2,
+    4
+   ],
+   "secenekler": [
+    "4 küp",
+    "Mert'in dediği gibi 3 küp",
+    "2 küp"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Mert'in gördüklerine saklı olanı da ekle.",
+   "kanitIpucu": "Saklı küpten söz eden cümle hangisi?",
+   "aciklama": "Önden 2 + 1 = 3 kare görünüyor ama bir küp saklı: 3 + 1 = 4 küp. Öndeki küp arkasındaki küpü saklar (s. 119). Hikâye kitap dışı.",
+   "kavram": "Saklanan Küpler"
   }
  ]
 }

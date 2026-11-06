@@ -143,7 +143,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartındaki ilk cümleye bak.",
-    "aciklama": "Bir cismin uzayda kapladığı yere hacim denir. (s. 136)"
+    "aciklama": "Bir cismin uzayda kapladığı yere hacim denir. (s. 136)",
+    "tetik": [
+     "ne denir"
+    ],
+    "bolge": [
+     "kapladığı yere ne denir"
+    ]
    }
   },
   {
@@ -210,7 +216,14 @@
     ],
     "dogru": 2,
     "ipucu": "Su akvaryumun dışını mı kaplar, içini mi doldurur?",
-    "aciklama": "Su akvaryumun içini doldurur. Doldurmak = hacim."
+    "aciklama": "Su akvaryumun içini doldurur. Doldurmak = hacim.",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç kova su sığacağını",
+     "Neyi bulmalıyız"
+    ]
    }
   },
   {
@@ -251,7 +264,14 @@
     ],
     "dogru": 2,
     "ipucu": "Dikkat kutusunu hatırla: nesneler aynı mı?",
-    "aciklama": "Bilye ve pinpon topu farklı büyüklükte. Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. (s. 135)"
+    "aciklama": "Bilye ve pinpon topu farklı büyüklükte. Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. (s. 135)",
+    "tetik": [
+     "hangi kutunun"
+    ],
+    "bolge": [
+     "Sayılara bakarak",
+     "hacminin büyük olduğunu bulabilir miyiz"
+    ]
    }
   },
   {
@@ -270,7 +290,13 @@
     ],
     "dogru": 0,
     "ipucu": "Adında “birim” var.",
-    "aciklama": "Birim küpün her ayrıtı 1 birimdir. (s. 138)"
+    "aciklama": "Birim küpün her ayrıtı 1 birimdir. (s. 138)",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç birimdir"
+    ]
    }
   },
   {
@@ -356,7 +382,13 @@
       "Alt katta önde kaç küp var? Arkada da aynısı var.",
       "Üst katta da alt kat kadar küp var. İki katı topla."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "Hacmi kaç br³"
+    ]
    }
   },
   {
@@ -375,7 +407,13 @@
     ],
     "dogru": 1,
     "ipucu": "Hangisi arada boşluk bırakmaz ve hepsi aynı mı?",
-    "aciklama": "Toplar arasında boşluk kalır, farklı taşlar eş değil. Eş küpler boşluksuz doldurur. (s. 138)"
+    "aciklama": "Toplar arasında boşluk kalır, farklı taşlar eş değil. Eş küpler boşluksuz doldurur. (s. 138)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "hangisi en uygun birimdir"
+    ]
    }
   }
  ],
@@ -437,7 +475,13 @@
      "Arkada saklı bir sıra daha var.",
      "İki sırayı topla."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Hacmi kaç br³"
+   ]
   },
   {
    "soru": "Hacim neyi anlatır?",
@@ -449,7 +493,13 @@
    "dogru": 2,
    "ipucu": "Hacim kutunun içiyle mi ilgili, dışıyla mı?",
    "aciklama": "Hacim, bir cismin uzayda kapladığı yerdir. (s. 136)",
-   "kavram": "Hacim"
+   "kavram": "Hacim",
+   "tetik": [
+    "neyi anlatır"
+   ],
+   "bolge": [
+    "Hacim neyi anlatır"
+   ]
   },
   {
    "soru": "Hangisinde hacmi bulmamız gerekir?",
@@ -461,7 +511,13 @@
    "dogru": 1,
    "ipucu": "Kaplamak mı, doldurmak mı?",
    "aciklama": "Oyuncaklar kutunun içini doldurur. Doldurmak = hacim.",
-   "kavram": "Kaplamak mı, Doldurmak mı?"
+   "kavram": "Kaplamak mı, Doldurmak mı?",
+   "tetik": [
+    "Hangisinde"
+   ],
+   "bolge": [
+    "Hangisinde hacmi bulmamız gerekir"
+   ]
   },
   {
    "soru": "Görseldeki prizma birim küplerle dolu. Hacmi kaç br³?",
@@ -478,7 +534,13 @@
      "Kaç kat var?",
      "Her katta aynı sayıda küp var: katları topla."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Hacmi kaç br³"
+   ]
   },
   {
    "soru": "Ece iki kutunun hacmini karşılaştırmak istiyor. Ne yapmalı?",
@@ -490,7 +552,11 @@
    "dogru": 0,
    "ipucu": "Dikkat kutusu: nesneler aynı olmalı.",
    "aciklama": "Karşılaştırmak için iki kutu da aynı eş nesnelerle doldurulmalı. (s. 135)",
-   "kavram": "Eş Nesnelerle Ölçme"
+   "kavram": "Eş Nesnelerle Ölçme",
+   "bolge": [
+    "karşılaştırmak istiyor",
+    "Ne yapmalı"
+   ]
   },
   {
    "soru": "Mert kutusuna her katta 6 tahta olacak biçimde 5 kat, Elif aynı tahtalardan her katta 4 tane olacak biçimde 8 kat yerleştirdi. Kutular tam doldu. Hangi kutunun hacmi daha büyük?",
@@ -510,7 +576,13 @@
      "Elif: 4 · 8.",
      "İki sayıyı karşılaştır."
     ]
-   }
+   },
+   "tetik": [
+    "Hangi kutunun"
+   ],
+   "bolge": [
+    "Hangi kutunun hacmi daha büyük"
+   ]
   },
   {
    "soru": "Birim küp hangisidir?",
@@ -522,7 +594,13 @@
    "dogru": 2,
    "ipucu": "Adında “birim” var.",
    "aciklama": "Ayrıtlarının her biri 1 birim olan küpe birim küp denir. (s. 138)",
-   "kavram": "Birim Küp"
+   "kavram": "Birim Küp",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "Birim küp hangisidir"
+   ]
   },
   {
    "soru": "Bir kutuya her sırada 5 birim küp olacak şekilde 3 sıra dizildi ve kutu tek katla tamamen doldu. Kutunun hacmi kaç br³?",
@@ -537,7 +615,13 @@
      "Bir sırada kaç küp, kaç sıra var?",
      "Sıra sayısını bir sıradaki küp sayısıyla çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Kutunun hacmi kaç br³"
+   ]
   },
   {
    "soru": "Cam bir kap bir kez kibrit kutularıyla, bir kez eş küplerle dolduruldu. Kutularla doldurunca arada boşluk kaldı. Hacmi ölçmek için hangisi daha uygun?",
@@ -549,7 +633,13 @@
    "dogru": 0,
    "ipucu": "Hangisi boşluk bırakmadı?",
    "aciklama": "Küpler boşluksuz doldurur; boşluk kalırsa hacim yanlış ölçülür. (s. 138)",
-   "kavram": "Daha Uygun Birim"
+   "kavram": "Daha Uygun Birim",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Hacmi ölçmek için hangisi daha uygun"
+   ]
   },
   {
    "soru": "Görseldeki kutu birim küplerle dolu. Hangisi doğrudur?",
@@ -569,7 +659,226 @@
      "Kaplamak = yüzey alanı: üstteki ve alttaki kareleri say.",
      "Dört yan yüzdeki kareleri ekle."
     ]
-   }
+   },
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bir cismin uzayda kapladığı yere o cismin {hacmi|yüzey alanı|çevresi} denir.",
+   "s": "s. 136"
+  },
+  {
+   "c": "Bir kutunun hacmi, içine ne kadar şey {sığacağını|boyanacağını|kaplanacağını} anlatır.",
+   "s": "s. 136"
+  },
+  {
+   "c": "Hacmi, kutunun içini {boşluk kalmayacak|aralıklı|yalnız tabanını} biçimde dolduran eş nesneleri sayarak ölçeriz.",
+   "s": "s. 136"
+  },
+  {
+   "c": "İki kutuyu karşılaştırırken ikisini de {aynı|farklı|en büyük} nesnelerle doldurmalıyız.",
+   "s": "s. 136"
+  },
+  {
+   "c": "Ayrıt uzunluklarının her biri 1 birim olan küplere {birim küp|kare prizma|açınım} denir.",
+   "s": "s. 138"
+  },
+  {
+   "c": "Prizmayı boşluksuz dolduran birim küplerin sayısı, prizmanın {hacmidir|yüzey alanıdır|yüksekliğidir}.",
+   "s": "s. 138"
+  },
+  {
+   "c": "Hacmi ölçerken arada {boşluk bırakmayan|boşluk bırakan|en hafif} nesne daha uygun birimdir.",
+   "s": "s. 138"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Deniz bir kutuya 20 bilye, Ece başka bir kutuya 15 küp koydu. Deniz'in kutusunun hacmi daha mı büyüktür? Nedenini yaz.",
+   "tetik": [
+    "hacmi daha mı büyüktür"
+   ],
+   "okut": [
+    "Deniz'in kutusunun hacminin daha büyük olup olmadığını ve nedenini yazmanı",
+    "iki kutudaki nesneleri toplamanı",
+    "hangi kutuda bilye olduğunu söylemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Cevabım:",
+     "ornek": "Bu sayılarla karşılaştıramayız.",
+     "havuz": [
+      "Evet, 20 sayısı 15'ten büyüktür.",
+      "Ece'nin kutusu kesin daha büyüktür."
+     ],
+     "k": [
+      "karşılaştıramayız",
+      "bilemeyiz"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "İki kutu aynı nesnelerle doldurulmadı.",
+     "havuz": [
+      "Bilyeler kırmızıdır.",
+      "Kutular aynı renkte değildir."
+     ],
+     "k": [
+      "aynı nesne"
+     ]
+    }
+   ],
+   "kisa": "Karşılaştıramayız; aynı nesneyle doldurulmadı.",
+   "cevap": "Bu sayılarla karşılaştıramayız. İki kutu aynı nesnelerle doldurulmadı; bilyeler ile küpler farklı büyüklükte ve bilyelerin arasında boşluk kalır.",
+   "anahtarlar": [
+    {
+     "ad": "karşılaştıramayız",
+     "k": [
+      "karşılaştıramayız"
+     ]
+    },
+    {
+     "ad": "aynı nesne gerekir",
+     "k": [
+      "aynı nesne"
+     ]
+    }
+   ],
+   "sayfa": "s. 136",
+   "bolge": [
+    "hacmi daha mı büyüktür",
+    "Nedenini yaz"
+   ]
+  },
+  {
+   "soru": "Bir kutunun dışını kaplamak ile içini doldurmak için hangi ölçüleri buluruz? İkisini de yaz.",
+   "tetik": [
+    "hangi ölçüleri buluruz"
+   ],
+   "okut": [
+    "kaplamak ve doldurmak için hangi ölçülerin bulunduğunu yazmanı",
+    "kutunun hacmini hesaplamanı",
+    "yalnız kaplamak için ne bulunduğunu söylemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Kaplamak için:",
+     "ornek": "Yüzey alanını buluruz.",
+     "havuz": [
+      "Hacmi buluruz.",
+      "Yalnız yüksekliği buluruz."
+     ],
+     "k": [
+      "yüzey alan"
+     ]
+    },
+    {
+     "bas": "Doldurmak için:",
+     "ornek": "Hacmini buluruz.",
+     "havuz": [
+      "Çevresini buluruz.",
+      "Bir yüzünün alanını buluruz."
+     ],
+     "k": [
+      "hacm",
+      "hacim"
+     ]
+    }
+   ],
+   "kisa": "Kaplamak: yüzey alanı. Doldurmak: hacim.",
+   "cevap": "Dışını kaplamak için yüzey alanını, içini doldurmak için hacmini buluruz. Yüzey alanı br², hacim br³ ile yazılır.",
+   "anahtarlar": [
+    {
+     "ad": "kaplamak: yüzey alanı",
+     "k": [
+      "yüzey alan"
+     ]
+    },
+    {
+     "ad": "doldurmak: hacim",
+     "k": [
+      "hacm",
+      "hacim"
+     ]
+    }
+   ],
+   "sayfa": "s. 136",
+   "bolge": [
+    "dışını kaplamak",
+    "içini doldurmak",
+    "hangi ölçüleri buluruz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Alper iki kutuyu çubuk makarnayla doldurdu.",
+    "Birinci kutuya 594, ikinci kutuya 726 çubuk makarna sığdı.",
+    "İki kutunun dışını kaplamak için aynı kâğıt kullanıldı."
+   ],
+   "soru": "Metne göre hacmi daha büyük olan kutu hangisidir?",
+   "bolge": [
+    "hacmi daha büyük olan kutu hangisidir"
+   ],
+   "serit": "Hacmi daha büyük kutu",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "İkinci kutu",
+    "Birinci kutu",
+    "Kâğıdı fazla olan kutu"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    2
+   ],
+   "ipucu": "İki kutu aynı nesneyle dolduruldu mu? Hangisine daha çok sığdı?",
+   "kanitIpucu": "Kaç makarna sığdığını söyleyen cümleyi bul.",
+   "aciklama": "İki kutu da aynı makarnayla dolduruldu; daha çok makarna sığan ikinci kutunun hacmi büyük. Kâğıt dışı kaplamakla ilgili, hacimle değil (s. 136).",
+   "kavram": "Eş Nesnelerle Ölçme"
+  },
+  {
+   "metin": [
+    "Selin bir cam kabın hacmini ölçmek istedi.",
+    "Önce kabı küçük kibrit kutularıyla doldurdu ve 30 kutu saydı.",
+    "Kutuların arasında boşluklar kaldı.",
+    "Sonra kabı eş küplerle doldurdu.",
+    "Bu kez arada hiç boşluk kalmadı ve 40 küp sığdı.",
+    "Selin sonucu defterine yazdı."
+   ],
+   "soru": "Metne göre kabın hacmini ölçmek için hangi nesne daha uygundur?",
+   "bolge": [
+    "hangi nesne daha uygundur"
+   ],
+   "serit": "Hacim ölçmek için daha uygun nesne",
+   "kanit": [
+    2,
+    4
+   ],
+   "secenekler": [
+    "Eş küpler",
+    "Kibrit kutuları",
+    "Cam kap"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Arada boşluk bırakmayan nesne daha uygun birimdir.",
+   "kanitIpucu": "“Boşluk” kelimesinin geçtiği cümleleri karşılaştır.",
+   "aciklama": "Hacmi ölçerken arada boşluk bırakmayan nesne daha uygundur; eş küpler kabı boşluksuz doldurdu (s. 138). Hikâye kitaptaki cam kap etkinliğinden uyarlandı.",
+   "kavram": "Daha Uygun Birim"
   }
  ]
 }

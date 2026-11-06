@@ -9726,3 +9726,9 @@ if __name__ == "__main__":
         d = bosluk(yardim_uygula(f()))
         json.dump(d, open(f"public/mat1/konular/{d['id']}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         print(d["id"], "yazıldı")
+    # Dikkat paketi (araclar/dikkat/mat1/): yukarıdaki yazım paket alanlarını siler; paketli konulara yeniden uygula.
+    # Soru metni değiştiyse uret.py "elle bölge eksik" der: araclar/dikkat/mat1/bolge.py'yi güncelle (docs/dikkat-paketi.md).
+    import subprocess, sys
+    r = subprocess.run([sys.executable, "-I", "araclar/dikkat/uret.py", "mat1"])
+    if r.returncode:
+        sys.exit("UYARI: dikkat paketi uygulanamadı; paketli konular şu an paketsiz. bolge.py'yi düzeltip `python3 -I araclar/dikkat/uret.py mat1` çalıştır.")

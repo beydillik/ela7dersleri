@@ -130,7 +130,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kutular koliyi kaplıyor mu, dolduruyor mu?",
-    "aciklama": "Kutular koliyi doldurur: hacim kullanırız. (s. 152)"
+    "aciklama": "Kutular koliyi doldurur: hacim kullanırız. (s. 152)",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "neyi kullanırız"
+    ]
    }
   },
   {
@@ -216,7 +222,13 @@
       "Büyük hacim hangisi, küçük hacim hangisi?",
       "24'ü 4'e böl."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "Koliye kaç kutu sığar"
+    ]
    }
   },
   {
@@ -307,7 +319,13 @@
       "Birimler aynı mı? Yüzey alanı dm², fiyat 1 dm² için.",
       "20'yi 4 ile çarp."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaplamak kaç TL tutar"
+    ]
    }
   },
   {
@@ -351,7 +369,13 @@
       "Litreyi dm³ yap: 12 L = 12 dm³.",
       "Hacmi taban alanına böl: 12 ÷ 6."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç dm yüksekliğe çıkar"
+    ]
    }
   },
   {
@@ -428,7 +452,13 @@
     ],
     "dogru": 0,
     "ipucu": "Yükselen su ince bir prizma gibi.",
-    "aciklama": "Yükselen suyun hacmi = taban alanı × yükselme; bu da cismin hacmidir. (s. 154)"
+    "aciklama": "Yükselen suyun hacmi = taban alanı × yükselme; bu da cismin hacmidir. (s. 154)",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "Cismin hacmi nasıl bulunur"
+    ]
    }
   },
   {
@@ -466,7 +496,13 @@
     ],
     "dogru": 2,
     "ipucu": "1 m³ = 1000 L.",
-    "aciklama": "50 · 1000 = 50 000 L. (s. 155)"
+    "aciklama": "50 · 1000 = 50 000 L. (s. 155)",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç litredir"
+    ]
    }
   }
  ],
@@ -523,7 +559,10 @@
    "dogru": 1,
    "ipucu": "Dört sorunun ilki.",
    "aciklama": "Önce ne verildiğini ve ne istendiğini buluruz; sonra kaplamak mı doldurmak mı diye sorarız.",
-   "kavram": "Problem İskeleti"
+   "kavram": "Problem İskeleti",
+   "bolge": [
+    "ilk ne yaparız"
+   ]
   },
   {
    "soru": "Bir rafın içi 8 dm, 2 dm ve 2 dm. Ayrıtı 2 dm olan küp kutular rafa boşluk kalmadan dizilecek. Kaç kutu sığar?",
@@ -538,7 +577,13 @@
      "Kutunun hacmi: 2 · 2 · 2.",
      "Büyük hacmi küçük hacme böl."
     ]
-   }
+   },
+   "tetik": [
+    "Kaç"
+   ],
+   "bolge": [
+    "Kaç kutu sığar"
+   ]
   },
   {
    "soru": "Ayrıtı 3 dm olan küp şeklindeki bir kutunun bütün yüzleri kaplanacak. Kumaşın 1 dm²'si 2 TL. Kumaş kaç TL tutar?",
@@ -553,7 +598,13 @@
      "Bir yüz: 3 · 3. Küpün 6 yüzü var.",
      "Birimler aynı (dm²). Yüzey alanını 2 TL ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Kumaş kaç TL tutar"
+   ]
   },
   {
    "soru": "Tabanı 5 dm × 2 dm olan bir akvaryuma 30 L su kondu. Su kaç dm yüksekliğe çıkar?",
@@ -570,7 +621,13 @@
      "Taban alanı: 5 · 2.",
      "Hacmi taban alanına böl."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç dm yüksekliğe çıkar"
+   ]
   },
   {
    "soru": "Tabanı 20 cm × 15 cm olan bir akvaryuma taşlar konunca su 2 cm yükseldi. Taşların hacmi kaç cm³?",
@@ -585,7 +642,13 @@
      "Taban alanı: 20 · 15.",
      "Taban alanını yükselmeyle (2 cm) çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Taşların hacmi kaç cm³"
+   ]
   },
   {
    "soru": "Bir su deposu 3 m³ su alıyor. Bu kaç litredir?",
@@ -599,7 +662,13 @@
      "1 m³ kaç litre?",
      "3'ü 1000 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç litredir"
+   ]
   },
   {
    "soru": "Bir kolinin ayrıtları 4 dm, 4 dm ve 2 dm. Ayrıtları 4 dm, 2 dm ve 1 dm olan kutular koliye boşluk kalmadan dizilecek. Kaç kutu sığar?",
@@ -618,7 +687,13 @@
      "Kutunun hacmi: 4 · 2 · 1.",
      "Büyük hacmi küçük hacme böl."
     ]
-   }
+   },
+   "tetik": [
+    "Kaç"
+   ],
+   "bolge": [
+    "Kaç kutu sığar"
+   ]
   },
   {
    "soru": "Tabanları aynı iki akvaryumdan ikincisine birincinin 2 katı su kondu. İkinci akvaryumdaki suyun yüksekliği için ne söylenebilir?",
@@ -630,7 +705,10 @@
    "dogru": 2,
    "ipucu": "Yükseklik = hacim ÷ taban alanı. Taban aynı.",
    "aciklama": "Taban alanı aynı, hacim 2 katı: yükseklik de 2 katı olur. (s. 154)",
-   "kavram": "Suyun Yüksekliği"
+   "kavram": "Suyun Yüksekliği",
+   "bolge": [
+    "suyun yüksekliği için ne söylenebilir"
+   ]
   },
   {
    "soru": "Diş fırçalarken musluk 2 dakika açık kalıyor ve dakikada 5 L su akıyor. 4 kişilik bir aile günde 2 kez diş fırçalarsa kaç litre su boşa akar?",
@@ -646,7 +724,13 @@
      "Toplam kaç fırçalama var? 4 · 2.",
      "Fırçalama sayısını bir fırçalamadaki suyla çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç litre su boşa akar"
+   ]
   },
   {
    "soru": "Tabanı 30 cm × 20 cm olan bir akvaryuma kum eklenince su 1 cm yükseldi. Kumun hacmi kaç cm³'tür?",
@@ -658,6 +742,217 @@
    "dogru": 0,
    "ipucu": "Taban alanını yükselmeyle çarp.",
    "aciklama": "30 · 20 = 600 cm². 600 · 1 = 600 cm³. (s. 154)",
+   "kavram": "Eklenen Cismin Hacmi",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Kumun hacmi kaç cm³'tür"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Büyük kutuya kaç küçük kutu sığdığını bulmak için büyük hacmi küçük hacme {böleriz|ekleriz|çarparız}.",
+   "s": "s. 152"
+  },
+  {
+   "c": "Bir kutuyu kaplamanın maliyeti = {yüzey alanı|hacim|yükseklik} × 1 birim karenin fiyatı.",
+   "s": "s. 153"
+  },
+  {
+   "c": "Kumaşın fiyatı 1 dm² için verilmişse kutunun ölçüleri de {dm|cm|m} ile olmalı.",
+   "s": "s. 153"
+  },
+  {
+   "c": "Akvaryumdaki suyun yüksekliği = suyun hacmi ÷ {taban alanı|yüzey alanı|yükseklik}.",
+   "s": "s. 154"
+  },
+  {
+   "c": "Akvaryuma kum eklenince kumun hacmi = taban alanı × suyun {yükselmesi|ilk yüksekliği|genişliği}.",
+   "s": "s. 154"
+  },
+  {
+   "c": "Çok büyük su miktarlarında 1 m³ = {1000|100|10} L kullanılır.",
+   "s": "s. 155"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Bir kutuyu kumaşla kaplamak ile içine kum doldurmak için hangi ölçüleri bulursun? Neden farklı olduğunu yaz.",
+   "tetik": [
+    "hangi ölçüleri bulursun",
+    "Neden farklı"
+   ],
+   "okut": [
+    "kaplamak ve doldurmak için hangi ölçülerin bulunduğunu ve neden farklı olduklarını yazmanı",
+    "kutunun hacmini hesaplamanı",
+    "kumaşın fiyatını bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Kumaş için:",
+     "ornek": "Yüzey alanını bulurum.",
+     "havuz": [
+      "Hacmini bulurum.",
+      "Yalnız yüksekliği bulurum."
+     ],
+     "k": [
+      "yüzey alan"
+     ]
+    },
+    {
+     "bas": "Kum için:",
+     "ornek": "Hacmini bulurum; kum içini doldurur.",
+     "havuz": [
+      "Çevresini bulurum.",
+      "Kum dışını kaplar."
+     ],
+     "k": [
+      "hacm",
+      "hacim"
+     ]
+    }
+   ],
+   "kisa": "Kumaş: yüzey alanı. Kum: hacim.",
+   "cevap": "Kumaş kutunun dışını kapladığı için yüzey alanını bulurum. Kum içini doldurduğu için hacmini bulurum. Biri kaplamak, öteki doldurmaktır.",
+   "anahtarlar": [
+    {
+     "ad": "kumaş: yüzey alanı",
+     "k": [
+      "yüzey alan"
+     ]
+    },
+    {
+     "ad": "kum: hacim",
+     "k": [
+      "hacm",
+      "hacim"
+     ]
+    }
+   ],
+   "sayfa": "s. 153",
+   "bolge": [
+    "hangi ölçüleri bulursun",
+    "Neden farklı olduğunu yaz"
+   ]
+  },
+  {
+   "soru": "Akvaryuma 12 L su konunca suyun kaç dm yükseldiğini bulmak için hangi iki işlemi yaparız? Yaz.",
+   "tetik": [
+    "hangi iki işlemi yaparız"
+   ],
+   "okut": [
+    "suyun yüksekliğini bulmak için yapılacak iki işlemi yazmanı",
+    "suyun yüksekliğini hesaplamanı",
+    "akvaryumun taban alanını bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Birinci işlem:",
+     "ornek": "Litreyi dm³'e çeviririz: 12 L = 12 dm³.",
+     "havuz": [
+      "Litreyi 100 ile çarparız.",
+      "Litreyi atarız."
+     ],
+     "k": [
+      "dm³",
+      "çevir"
+     ]
+    },
+    {
+     "bas": "İkinci işlem:",
+     "ornek": "Hacmi taban alanına böleriz.",
+     "havuz": [
+      "Hacmi taban alanıyla çarparız.",
+      "Taban alanını 2 ile çarparız."
+     ],
+     "k": [
+      "böl"
+     ]
+    }
+   ],
+   "kisa": "12 L = 12 dm³; sonra taban alanına böl.",
+   "cevap": "Önce litreyi dm³'e çeviririz: 12 L = 12 dm³. Sonra suyun hacmini taban alanına böleriz; sonuç suyun yüksekliğidir.",
+   "anahtarlar": [
+    {
+     "ad": "L → dm³",
+     "k": [
+      "dm³"
+     ]
+    },
+    {
+     "ad": "taban alanına böl",
+     "k": [
+      "böl"
+     ]
+    }
+   ],
+   "sayfa": "s. 154",
+   "bolge": [
+    "hangi iki işlemi yaparız"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Ahmet Bey ayrıtları 3 dm olan küp biçimli bir takı kutusunu kumaşla kaplayacak.",
+    "Kumaşın 1 dm²'si 2 TL.",
+    "Kutunun hacmi 27 dm³."
+   ],
+   "soru": "Metne göre kutuyu kaplamak kaç TL tutar?",
+   "bolge": [
+    "kaplamak kaç TL tutar"
+   ],
+   "serit": "Kaplama maliyeti (TL)",
+   "kanit": [
+    0,
+    1
+   ],
+   "secenekler": [
+    "108 TL",
+    "54 TL",
+    "18 TL"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Önce yüzey alanını bul (6 · a²), sonra fiyatla çarp.",
+   "kanitIpucu": "Kutunun ayrıtını ve kumaşın fiyatını veren cümleleri bul.",
+   "aciklama": "Yüzey alanı 6 · 9 = 54 dm²; 54 · 2 = 108 TL. 54, hacimle (27 · 2) hesaplanınca çıkar; kaplamak yüzey alanı ister (s. 153).",
+   "kavram": "Kaplama Maliyeti"
+  },
+  {
+   "metin": [
+    "Samet'in akvaryumunun tabanı 50 cm × 30 cm.",
+    "Akvaryumda 20 cm yüksekliğinde su var.",
+    "Samet akvaryuma bir torba renkli kum ekledi.",
+    "Kum dibe çökünce su 2 cm yükseldi.",
+    "Balıklar önce saklandı, sonra kumda oynamaya başladı.",
+    "Samet akvaryumun camını da temizledi."
+   ],
+   "soru": "Metne göre eklenen kumun hacmi kaç cm³'tür?",
+   "bolge": [
+    "eklenen kumun hacmi kaç cm³'tür"
+   ],
+   "serit": "Eklenen kumun hacmi",
+   "kanit": [
+    0,
+    3
+   ],
+   "secenekler": [
+    "3000 cm³",
+    "30 000 cm³",
+    "1500 cm³"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Kumun hacmi = taban alanı × suyun yükselmesi.",
+   "kanitIpucu": "Taban ölçülerini ve suyun ne kadar yükseldiğini söyleyen cümleleri bul.",
+   "aciklama": "Taban alanı 50 · 30 = 1500 cm²; 1500 · 2 = 3000 cm³. 30 000 cm³ suyun hacmi (1500 · 20); soru kumu soruyor (s. 154). Ölçüler kitap dışı.",
    "kavram": "Eklenen Cismin Hacmi"
   }
  ]

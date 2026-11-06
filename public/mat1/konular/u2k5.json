@@ -160,7 +160,13 @@
       "Bir katmanda kaç küp var? Kaç katman var?",
       "İkisini çarp."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "Hacmi kaç br³"
+    ]
    }
   },
   {
@@ -238,7 +244,13 @@
     ],
     "dogru": 2,
     "ipucu": "Taban alanını (a · b) yükseklikle çarp.",
-    "aciklama": "Hacim = (a · b) · c = a · b · c. Öbür ifade yüzey alanıdır. (s. 140)"
+    "aciklama": "Hacim = (a · b) · c = a · b · c. Öbür ifade yüzey alanıdır. (s. 140)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "hacmi hangisidir"
+    ]
    }
   },
   {
@@ -279,7 +291,13 @@
       "Küpün üç ayrıtı eşit: 4 · 4 · 4.",
       "Önce 4 · 4, sonra sonucu 4 ile çarp."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "hacmi kaç br³"
+    ]
    }
   },
   {
@@ -298,7 +316,13 @@
     ],
     "dogru": 1,
     "ipucu": "Hacimde kaç ayrıt çarpılır?",
-    "aciklama": "Üç ayrıt çarpıldığı için hacim br³ ile yazılır. (s. 142)"
+    "aciklama": "Üç ayrıt çarpıldığı için hacim br³ ile yazılır. (s. 142)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "hangisi gibi yazılır"
+    ]
    }
   },
   {
@@ -356,7 +380,14 @@
     ],
     "dogru": 0,
     "ipucu": "Üç sayıyı çarp: hangisi 18 ediyor?",
-    "aciklama": "2 · 3 · 3 = 18. Öbürleri 12 ve 27. (s. 141)"
+    "aciklama": "2 · 3 · 3 = 18. Öbürleri 12 ve 27. (s. 141)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi",
+     "ayrıtları olabilir"
+    ]
    }
   },
   {
@@ -394,7 +425,14 @@
     ],
     "dogru": 1,
     "ipucu": "Hacim = taban alanı × yükseklik. Taban aynı kaldı.",
-    "aciklama": "Taban alanı aynı, yükseklik 2 katı: hacim de 2 katı. (s. 143)"
+    "aciklama": "Taban alanı aynı, yükseklik 2 katı: hacim de 2 katı. (s. 143)",
+    "tetik": [
+     "ne olur"
+    ],
+    "bolge": [
+     "yalnızca yüksekliği",
+     "hacmi ne olur"
+    ]
    }
   }
  ],
@@ -451,7 +489,13 @@
      "Formül: taban alanı × yükseklik. Önce 5 · 3.",
      "Taban alanını 4 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "hacmi kaç br³"
+   ]
   },
   {
    "soru": "Görseldeki prizma birim küplerle dolu. Alt katman altın renkli. Prizmanın hacmi kaç br³?",
@@ -468,7 +512,13 @@
      "Kaç katman var?",
      "Bir katmanı katman sayısıyla çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Prizmanın hacmi kaç br³"
+   ]
   },
   {
    "soru": "Bir ayrıtı 5 br olan küpün hacmi kaç br³'tür?",
@@ -480,7 +530,13 @@
    "dogru": 1,
    "ipucu": "Küpün üç ayrıtı eşit: 5 · 5 · 5.",
    "aciklama": "5 · 5 = 25, 25 · 5 = 125 br³. (s. 142)",
-   "kavram": "Kare Prizma ve Küp"
+   "kavram": "Kare Prizma ve Küp",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "hacmi kaç br³'tür"
+   ]
   },
   {
    "soru": "Taban alanı 12 br², yüksekliği 5 br olan prizmanın hacmi hangisidir?",
@@ -492,7 +548,13 @@
    "dogru": 0,
    "ipucu": "Hacim = taban alanı × yükseklik; birimi br³.",
    "aciklama": "12 · 5 = 60. Hacim br³ ile yazılır: 60 br³. (s. 142)",
-   "kavram": "Hacim Birimi br³"
+   "kavram": "Hacim Birimi br³",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "hacmi hangisidir"
+   ]
   },
   {
    "soru": "Hacmi 40 br³ olan bir prizmanın taban alanı 8 br²'dir. Yüksekliği kaç br?",
@@ -507,7 +569,13 @@
      "Formül: taban alanı × yükseklik = hacim.",
      "8 · ? = 40. 8'i kaç kere toplayınca 40 olur?"
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Yüksekliği kaç br"
+   ]
   },
   {
    "soru": "Hangisi 18 eş birim küpten yapılmış bir prizmanın ayrıtları olamaz?",
@@ -519,7 +587,14 @@
    "dogru": 2,
    "ipucu": "Her birinde üç sayıyı çarp.",
    "aciklama": "1 · 2 · 9 = 18, 2 · 3 · 3 = 18, ama 2 · 2 · 4 = 16. (s. 141)",
-   "kavram": "Aynı Hacim, Farklı Prizma"
+   "kavram": "Aynı Hacim, Farklı Prizma",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi",
+    "ayrıtları olamaz"
+   ]
   },
   {
    "soru": "Ayrıtları 3 br, 4 br ve 5 br olan bir prizmanın yalnızca yüksekliği 2 katına çıkarıldı. Yeni hacim kaç br³?",
@@ -538,7 +613,13 @@
      "Yalnızca bir ayrıt 2 katı oldu: hacim de 2 katı olur.",
      "Eski hacmi 2 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Yeni hacim kaç br³"
+   ]
   },
   {
    "soru": "Bir kutunun tabanı 2,5 br ve 4 br, yüksekliği 3 br'dir. Hacmi kaç br³?",
@@ -554,7 +635,13 @@
      "Taban alanı: 2,5 · 4. Dört tane 2,5'i topla.",
      "Taban alanını yükseklikle (3) çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Hacmi kaç br³"
+   ]
   },
   {
    "soru": "Bir küpün bütün ayrıtları 2 katına çıkarılırsa hacmi kaç katına çıkar?",
@@ -566,7 +653,14 @@
    "dogru": 2,
    "ipucu": "Üç ayrıt da 2 katı oluyor.",
    "aciklama": "Üç ayrıt 2 katı: 2 · 2 · 2 = 8 katı. (s. 143)",
-   "kavram": "Ayrıt Değişince Hacim"
+   "kavram": "Ayrıt Değişince Hacim",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "bütün ayrıtları",
+    "hacmi kaç katına çıkar"
+   ]
   },
   {
    "soru": "Ayrıtı 1 br olan birim küplerle bir ayrıtı 3 br olan küp yapılacak. Kaç birim küp gerekir?",
@@ -580,7 +674,228 @@
      "Bir katmanda 3 · 3 küp var.",
      "Kaç katman var? Bir katmanı katman sayısıyla çarp."
     ]
-   }
+   },
+   "tetik": [
+    "Kaç"
+   ],
+   "bolge": [
+    "Kaç birim küp gerekir"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bir katmandaki küp sayısı ile katman sayısını {çarparak|toplayarak|çıkararak} bütün küpleri buluruz.",
+   "s": "s. 139"
+  },
+  {
+   "c": "Dikdörtgenler prizmasının hacmi = taban alanı × {yükseklik|çevre|yüzey alanı}.",
+   "s": "s. 140"
+  },
+  {
+   "c": "Hangi yüzü taban seçersek seçelim hacim {değişmez|iki katına çıkar|yarıya iner}.",
+   "s": "s. 140"
+  },
+  {
+   "c": "Küpün bir ayrıtı a ise hacmi {a · a · a|a + a + a|6 · a · a} olur.",
+   "s": "s. 142"
+  },
+  {
+   "c": "Hacimde üç ayrıt çarpıldığı için birim {br³|br²|br} olur.",
+   "s": "s. 142"
+  },
+  {
+   "c": "18 eş küple yapılan farklı prizmaların hepsinin hacmi {18|9|36} küptür.",
+   "s": "s. 141"
+  },
+  {
+   "c": "Bir ayrıt 2 katına çıkarsa hacim {2|4|8} katına çıkar.",
+   "s": "s. 143"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Ece prizmanın hacmini 2 + 3 + 5 = 10 br³ buldu. Ece'nin hatası ne? Doğru işlemi yaz.",
+   "tetik": [
+    "hatası ne"
+   ],
+   "okut": [
+    "Ece'nin hatasını ve doğru işlemi yazmanı",
+    "prizmanın yüzey alanını bulmanı",
+    "Ece'nin ayrıtları nasıl ölçtüğünü anlatmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Hatası:",
+     "ornek": "Ayrıtları topladı.",
+     "havuz": [
+      "Ayrıtları çarptı.",
+      "Birimi doğru yazdı."
+     ],
+     "k": [
+      "topla"
+     ]
+    },
+    {
+     "bas": "Doğrusu:",
+     "ornek": "Ayrıtları çarpmalı: 2 · 3 · 5 = 30 br³.",
+     "havuz": [
+      "2 + 3 = 5 br³ olmalı.",
+      "Sonucu 2'ye bölmeli."
+     ],
+     "k": [
+      "çarp",
+      "30"
+     ]
+    }
+   ],
+   "kisa": "Topladı; çarpmalı: 30 br³.",
+   "cevap": "Ece ayrıtları topladı. Hacim için ayrıtlar çarpılır: 2 · 3 · 5 = 30 br³.",
+   "anahtarlar": [
+    {
+     "ad": "topladı",
+     "k": [
+      "topla"
+     ]
+    },
+    {
+     "ad": "çarpmalı, 30",
+     "k": [
+      "çarp",
+      "30"
+     ]
+    }
+   ],
+   "sayfa": "s. 140",
+   "bolge": [
+    "hatası ne",
+    "Doğru işlemi yaz"
+   ]
+  },
+  {
+   "soru": "Bir prizmanın hacmini bulurken hangi yüzü taban seçtiğimiz sonucu değiştirir mi? Nedenini yaz.",
+   "tetik": [
+    "sonucu değiştirir mi"
+   ],
+   "okut": [
+    "tabanın değişmesinin hacmi değiştirip değiştirmediğini ve nedenini yazmanı",
+    "en büyük yüzü bulmanı",
+    "prizmanın hacmini hesaplamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Cevabım:",
+     "ornek": "Hayır, sonuç aynı çıkar.",
+     "havuz": [
+      "Evet, en büyük yüz seçilmeli.",
+      "Evet, sonuç iki katına çıkar."
+     ],
+     "k": [
+      "hayır",
+      "aynı"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "Hangi sırayla çarparsak çarpalım üç ayrıtın çarpımı aynıdır.",
+     "havuz": [
+      "Prizmanın yalnız bir yüzü vardır.",
+      "Taban hep karedir."
+     ],
+     "k": [
+      "çarpım"
+     ]
+    }
+   ],
+   "kisa": "Hayır; üç ayrıtın çarpımı hep aynı.",
+   "cevap": "Hayır, sonuç aynı çıkar. Hacim üç ayrıtın çarpımıdır; hangi sırayla çarparsak çarpalım çarpım değişmez: (a · b) · c = (b · c) · a.",
+   "anahtarlar": [
+    {
+     "ad": "hayır, aynı",
+     "k": [
+      "hayır",
+      "aynı"
+     ]
+    },
+    {
+     "ad": "çarpım değişmez",
+     "k": [
+      "çarpım"
+     ]
+    }
+   ],
+   "sayfa": "s. 140",
+   "bolge": [
+    "sonucu değiştirir mi",
+    "Nedenini yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Ahmet bir prizmanın tabanına 10 birim küp dizdi.",
+    "Prizma 3 katmanla tamamen doldu.",
+    "Prizmanın bir yüzünün alanı 15 br²."
+   ],
+   "soru": "Metne göre prizmanın hacmi kaç birim küptür?",
+   "bolge": [
+    "hacmi kaç birim küptür"
+   ],
+   "serit": "Prizmanın hacmi (birim küp sayısı)",
+   "kanit": [
+    0,
+    1
+   ],
+   "secenekler": [
+    "30 birim küp",
+    "13 birim küp",
+    "15 birim küp"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Bir katmandaki küp sayısını katman sayısıyla çarp.",
+   "kanitIpucu": "Tabandaki küpleri ve katman sayısını veren cümleleri bul.",
+   "aciklama": "10 · 3 = 30 birim küp. 13 toplama yapınca çıkar; 15 br² bir yüzün alanı (s. 139).",
+   "kavram": "Katman"
+  },
+  {
+   "metin": [
+    "Bir fabrika ayrıtları 2 dm, 3 dm ve 4 dm olan kutular üretiyor.",
+    "Bu kutunun hacmi 24 dm³.",
+    "Fabrika yeni bir kutu tasarladı.",
+    "Yeni kutunun yalnız yüksekliği 2 katına çıktı, diğer ayrıtlar aynı kaldı.",
+    "Kutunun rengi de maviden kırmızıya döndü.",
+    "Yeni kutular raflara dizildi."
+   ],
+   "soru": "Metne göre yeni kutunun hacmi kaç dm³ olur?",
+   "bolge": [
+    "yeni kutunun hacmi kaç dm³ olur"
+   ],
+   "serit": "Yeni kutunun hacmi",
+   "kanit": [
+    1,
+    3
+   ],
+   "secenekler": [
+    "48 dm³",
+    "Kutunun eski hacmi: 24 dm³",
+    "192 dm³"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Bir ayrıt 2 katına çıkarsa hacim kaç katına çıkar?",
+   "kanitIpucu": "Eski hacmi ve neyin değiştiğini söyleyen cümleleri bul.",
+   "aciklama": "Bir ayrıt 2 katına çıkınca hacim 2 katına çıkar: 24 · 2 = 48 dm³. 192, üç ayrıt birden 2 katına çıksaydı olurdu (s. 143).",
+   "kavram": "Ayrıt Değişince Hacim"
   }
  ]
 }

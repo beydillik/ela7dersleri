@@ -33,6 +33,8 @@ EKSIK = []
 def tetik_bul(soru):
     a = re.escape(veri["ELLE"][soru]) if soru in veri["ELLE"] else GEN
     m = re.search(r"(?<!\w)" + a + r"(?!\w)", soru, re.I)
+    # Elle bölgesi yazılmış soruda tetik gerekmez (motor bölgeyi kullanır; tetik yalnız bölge yoksa yedek). Ör. Matematik: "Açıklığa sayı doğrusunda dokun."
+    if not m and soru in veri["BOLGE"]: return None
     if not m: EKSIK.append(soru); return None
     return m.group(0)
 

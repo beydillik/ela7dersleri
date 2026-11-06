@@ -131,7 +131,13 @@
     ],
     "dogru": 0,
     "ipucu": "Litrenin baş harfi.",
-    "aciklama": "Litre L ile gösterilir. (s. 148)"
+    "aciklama": "Litre L ile gösterilir. (s. 148)",
+    "tetik": [
+     "hangi sembolle"
+    ],
+    "bolge": [
+     "Litre hangi sembolle gösterilir"
+    ]
    }
   },
   {
@@ -216,7 +222,13 @@
       "1 dm³ kaç litre?",
       "5 dm³ kaç litre olur?"
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç litre su alır"
+    ]
    }
   },
   {
@@ -293,7 +305,13 @@
       "L'den mL'ye üç basamak aşağı: 10 · 10 · 10 = 1000.",
       "3'ü 1000 ile çarp."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "3 L kaç mL"
+    ]
    }
   },
   {
@@ -312,7 +330,13 @@
     ],
     "dogru": 1,
     "ipucu": "1 mL = 1 cm³.",
-    "aciklama": "1 cm³ = 1 mL olduğu için 250 cm³ = 250 mL. (s. 147–148)"
+    "aciklama": "1 cm³ = 1 mL olduğu için 250 cm³ = 250 mL. (s. 147–148)",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç mL su alır"
+    ]
    }
   },
   {
@@ -358,7 +382,13 @@
       "Önce kaç mL, sonra kaç mL?",
       "Büyükten küçüğü çıkar."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "Kaşığın hacmi kaç cm³"
+    ]
    }
   },
   {
@@ -396,7 +426,13 @@
     ],
     "dogru": 1,
     "ipucu": "Hepsini mL'ye çevir.",
-    "aciklama": "1 L = 1000 mL, 80 cL = 800 mL. En büyüğü 1000 mL: 1 L. (s. 151)"
+    "aciklama": "1 L = 1000 mL, 80 cL = 800 mL. En büyüğü 1000 mL: 1 L. (s. 151)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi en çok sıvıdır"
+    ]
    }
   }
  ],
@@ -451,7 +487,13 @@
    "dogru": 0,
    "ipucu": "Litre sıvılar için kullanılır.",
    "aciklama": "Zeytinyağı bir sıvıdır; litreyle ölçülür. (s. 148)",
-   "kavram": "Litre"
+   "kavram": "Litre",
+   "tetik": [
+    "Hangisinin"
+   ],
+   "bolge": [
+    "Hangisinin miktarı litreyle ölçülür"
+   ]
   },
   {
    "soru": "Hacmi 4 dm³ olan bir kap kaç litre su alır?",
@@ -465,7 +507,13 @@
      "1 dm³ kaç litre?",
      "4 dm³ kaç litre olur?"
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç litre su alır"
+   ]
   },
   {
    "soru": "2 L kaç mL?",
@@ -479,7 +527,13 @@
      "1 L kaç mL?",
      "2'yi 1000 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "2 L kaç mL"
+   ]
   },
   {
    "soru": "Dereceli kapta 400 mL su vardı. Bir taş atınca su 550 mL'ye çıktı. Taşın hacmi kaç cm³?",
@@ -495,7 +549,13 @@
      "Büyükten küçüğü çıkar.",
      "1 mL = 1 cm³."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Taşın hacmi kaç cm³"
+   ]
   },
   {
    "soru": "1 L kaç cL'dir?",
@@ -507,7 +567,13 @@
    "dogru": 0,
    "ipucu": "L → dL → cL: iki basamak aşağı.",
    "aciklama": "1 L = 10 dL = 100 cL. (s. 148)",
-   "kavram": "Sıvı Basamakları"
+   "kavram": "Sıvı Basamakları",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "1 L kaç cL'dir"
+   ]
   },
   {
    "soru": "Hacmi 500 cm³ olan bir kap kaç mL su alır?",
@@ -519,7 +585,13 @@
    "dogru": 1,
    "ipucu": "1 mL = 1 cm³.",
    "aciklama": "500 cm³ = 500 mL. (s. 147–148)",
-   "kavram": "1 mL = 1 cm³"
+   "kavram": "1 mL = 1 cm³",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç mL su alır"
+   ]
   },
   {
    "soru": "1,5 L, 1200 mL ve 140 cL'lik üç şişeden en az su alan hangisidir?",
@@ -538,7 +610,13 @@
      "140 cL kaç mL? (× 10)",
      "Üç sayıyı karşılaştır."
     ]
-   }
+   },
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en az su alan hangisidir"
+   ]
   },
   {
    "soru": "Ayrıtları 20 cm, 10 cm ve 10 cm olan kutu biçimindeki bir kap kaç litre su alır?",
@@ -554,7 +632,13 @@
      "Hacmi bul: 2 · 1 · 1.",
      "1 dm³ = 1 L."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç litre su alır"
+   ]
   },
   {
    "soru": "35 dL kaç L?",
@@ -569,7 +653,13 @@
      "dL'den L'ye yukarı mı, aşağı mı?",
      "Yukarı: 10'a böl. Virgülü 1 basamak sola kaydır."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "35 dL kaç L"
+   ]
   },
   {
    "soru": "Dereceli kaba bir taş atınca su seviyesi yükseldi. Taşın hacmi neye eşittir?",
@@ -581,7 +671,224 @@
    "dogru": 2,
    "ipucu": "Taş suyun içinde yer kaplar.",
    "aciklama": "Su, taşın hacmi kadar yükselir: hacim = seviye farkı. (s. 149)",
+   "kavram": "Su Seviyesi Farkı",
+   "tetik": [
+    "neye eşittir"
+   ],
+   "bolge": [
+    "Taşın hacmi neye eşittir"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Sıvıların hacmini ölçmede temel birim {litredir|metreküptür|gramdır}.",
+   "s": "s. 148"
+  },
+  {
+   "c": "Kenar uzunlukları 1 dm olan küpün hacmi 1 dm³'tür ve 1 dm³ = {1 L|1 mL|10 L}.",
+   "s": "s. 147"
+  },
+  {
+   "c": "1 L = {1000|100|10} mL.",
+   "s": "s. 148"
+  },
+  {
+   "c": "Sıvı ölçü birimlerinde her basamak arasında {10|100|1000} katlık ilişki vardır.",
+   "s": "s. 148"
+  },
+  {
+   "c": "Bir taşı suya atınca su seviyesindeki {fark|toplam|ilk değer} taşın hacmidir.",
+   "s": "s. 149"
+  },
+  {
+   "c": "Farklı birimlerle yazılmış sıvı miktarlarını karşılaştırmak için önce {aynı birime çeviririz|sayıları toplarız|en büyük sayıyı seçeriz}.",
+   "s": "s. 151"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Ece “1 L = 100 mL” dedi. Ece haklı mı? Doğrusunu yaz.",
+   "tetik": [
+    "haklı mı"
+   ],
+   "okut": [
+    "Ece'nin haklı olup olmadığını ve doğrusunu yazmanı",
+    "litrenin kaç dL olduğunu söylemeni",
+    "sıvı birimlerini sıralamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Cevabım:",
+     "ornek": "Hayır, Ece haksız.",
+     "havuz": [
+      "Evet, Ece haklı.",
+      "Sadece yazın haklıdır."
+     ],
+     "k": [
+      "hayır",
+      "haksız"
+     ]
+    },
+    {
+     "bas": "Doğrusu:",
+     "ornek": "1 L = 1000 mL.",
+     "havuz": [
+      "1 L = 10 mL.",
+      "1 L = 1 mL."
+     ],
+     "k": [
+      "1000"
+     ]
+    }
+   ],
+   "kisa": "Hayır; 1 L = 1000 mL.",
+   "cevap": "Hayır, Ece haksız. 1 L = 10 dL = 100 cL = 1000 mL. Ece mL ile cL'yi karıştırdı.",
+   "anahtarlar": [
+    {
+     "ad": "hayır",
+     "k": [
+      "hayır"
+     ]
+    },
+    {
+     "ad": "1000 mL",
+     "k": [
+      "1000"
+     ]
+    }
+   ],
+   "sayfa": "s. 148",
+   "bolge": [
+    "haklı mı",
+    "Doğrusunu yaz"
+   ]
+  },
+  {
+   "soru": "Dereceli kaptaki suya bir taş atınca taşın hacmini nasıl buluruz? Nedenini de yaz.",
+   "tetik": [
+    "nasıl buluruz"
+   ],
+   "okut": [
+    "taşın hacminin nasıl bulunduğunu ve nedenini yazmanı",
+    "taşın ağırlığını bulmanı",
+    "kaptaki suyun miktarını söylemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Nasıl:",
+     "ornek": "Sonraki su seviyesinden önceki seviyeyi çıkarırız.",
+     "havuz": [
+      "İki seviyeyi toplarız.",
+      "Taşın ağırlığına bakarız."
+     ],
+     "k": [
+      "çıkar",
+      "fark"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "Taş suyun içinde yer kaplar ve suyu yükseltir.",
+     "havuz": [
+      "Taş suyu emer.",
+      "Su taşı küçültür."
+     ],
+     "k": [
+      "yer kapla",
+      "yüksel"
+     ]
+    }
+   ],
+   "kisa": "Sonra − önce; taş yer kaplar, su yükselir.",
+   "cevap": "Sonraki su seviyesinden önceki seviyeyi çıkarırız; fark taşın hacmidir. Çünkü taş suyun içinde yer kaplar ve suyu yükseltir.",
+   "anahtarlar": [
+    {
+     "ad": "seviye farkı",
+     "k": [
+      "çıkar",
+      "fark",
+      "−"
+     ]
+    },
+    {
+     "ad": "taş yer kaplar",
+     "k": [
+      "yer kapla",
+      "yüksel"
+     ]
+    }
+   ],
+   "sayfa": "s. 149",
+   "bolge": [
+    "taşın hacmini nasıl buluruz",
+    "Nedenini de yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Deniz dereceli kaba 200 mL su koydu.",
+    "Kaba bir silgi attı ve su seviyesi 230 mL'ye çıktı.",
+    "Silgi suyun dibine battı."
+   ],
+   "soru": "Metne göre silginin hacmi kaç cm³'tür?",
+   "bolge": [
+    "silginin hacmi kaç cm³'tür"
+   ],
+   "serit": "Silginin hacmi (cm³)",
+   "kanit": [
+    0,
+    1
+   ],
+   "secenekler": [
+    "30 cm³",
+    "230 cm³",
+    "430 cm³"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Sonraki seviyeden önceki seviyeyi çıkar. 1 mL = 1 cm³.",
+   "kanitIpucu": "Önceki ve sonraki su seviyesini veren cümleleri bul.",
+   "aciklama": "230 − 200 = 30 mL = 30 cm³. 230 mL suyla silginin toplamı (s. 148–149).",
    "kavram": "Su Seviyesi Farkı"
+  },
+  {
+   "metin": [
+    "Bir ailenin üç arabası var.",
+    "Birinci arabanın deposu 45 L benzin alıyor.",
+    "İkinci arabanın deposu 4800 dL alıyor.",
+    "Üçüncü arabanın deposu 52 000 mL alıyor.",
+    "Aile her hafta arabaları yıkatıyor.",
+    "Babası en büyük depolu arabayla tatile gitmek istiyor."
+   ],
+   "soru": "Metne göre deposu en çok benzin alan araba hangisidir?",
+   "bolge": [
+    "deposu en çok benzin alan araba hangisidir"
+   ],
+   "serit": "En büyük depo",
+   "kanit": [
+    1,
+    2,
+    3
+   ],
+   "secenekler": [
+    "İkinci araba",
+    "Üçüncü araba",
+    "Birinci araba"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Hepsini aynı birime çevir: L, dL ya da mL.",
+   "kanitIpucu": "Depo miktarlarını veren cümlelerden birini seç.",
+   "aciklama": "45 L = 45 000 mL; 4800 dL = 480 L = 480 000 mL; 52 000 mL. En büyük: ikinci araba. 52 000 sayısı büyük görünür ama birimi küçük (s. 151). Miktarlar kitap dışı.",
+   "kavram": "Aynı Birime Çevir, Sırala"
   }
  ]
 }

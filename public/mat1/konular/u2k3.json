@@ -139,7 +139,13 @@
     ],
     "dogru": 0,
     "ipucu": "Kaplamak, bütün yüzlerin üstünü örtmek demek.",
-    "aciklama": "Bütün yüzlerin alanları toplamı yüzey alanıdır; gereken en az kâğıt bu kadardır. (s. 129)"
+    "aciklama": "Bütün yüzlerin alanları toplamı yüzey alanıdır; gereken en az kâğıt bu kadardır. (s. 129)",
+    "tetik": [
+     "neyi bulmalıyız"
+    ],
+    "bolge": [
+     "kaplamak için neyi bulmalıyız"
+    ]
    }
   },
   {
@@ -180,7 +186,13 @@
       "Üç farklı yüzün alanını bul: 2 · 3, 2 · 4, 3 · 4.",
       "Üç sonucu karşılaştır."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "en büyük yüzünün alanı kaç cm²"
+    ]
    }
   },
   {
@@ -257,7 +269,13 @@
     ],
     "dogru": 2,
     "ipucu": "Üç farklı yüzün alanını topla, 2 ile çarp.",
-    "aciklama": "Yüzler a · b, a · c, b · c; ikişer tane. 2 · (a · b + a · c + b · c). (s. 129)"
+    "aciklama": "Yüzler a · b, a · c, b · c; ikişer tane. 2 · (a · b + a · c + b · c). (s. 129)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "yüzey alanı hangisidir"
+    ]
    }
   },
   {
@@ -299,7 +317,13 @@
       "Dört eş dikdörtgen yüz: 2 · 5, dört tane.",
       "İki sonucu topla."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "yüzey alanı kaç cm²"
+    ]
    }
   },
   {
@@ -320,7 +344,13 @@
       "Bir yüzün alanı: 2 · 2.",
       "Küpün 6 eş yüzü var: bir yüzün alanını 6 ile çarp."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "yüzey alanı kaç cm²"
+    ]
    }
   },
   {
@@ -386,7 +416,13 @@
     ],
     "dogru": 0,
     "ipucu": "Boyamak = kaplamak. Küpün kaç yüzü var, bir yüzün alanı ne?",
-    "aciklama": "Bir yüz 10 · 10; 6 yüz var: 6 · 10 · 10 = 600 cm². (s. 131)"
+    "aciklama": "Bir yüz 10 · 10; 6 yüz var: 6 · 10 · 10 = 600 cm². (s. 131)",
+    "tetik": [
+     "hangi işlem"
+    ],
+    "bolge": [
+     "Boyanacak alanı hangi işlem verir"
+    ]
    }
   }
  ],
@@ -443,7 +479,13 @@
      "Üçünü topla.",
      "Toplamı 2 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "yüzey alanı kaç cm²"
+   ]
   },
   {
    "soru": "Bir ayrıtı 5 cm olan küpün yüzey alanı kaç cm²?",
@@ -458,7 +500,13 @@
      "Küpün 6 eş yüzü var.",
      "Bir yüzün alanını 6 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "yüzey alanı kaç cm²"
+   ]
   },
   {
    "soru": "Görseldeki açınımda yüzlerin alanları cm² olarak yazılmıştır. Kutunun yüzey alanı kaç cm²?",
@@ -471,7 +519,13 @@
    "ipucu": "Açınımdaki altı sayıyı topla.",
    "aciklama": "8 + 8 + 12 + 12 + 6 + 6 = 52 cm². Açınımın alanı yüzey alanına eşittir. (s. 129)",
    "svg": "<svg viewBox='0 0 330 200' xmlns='http://www.w3.org/2000/svg' role='img'><rect x='125.0' y='10.0' width='80.0' height='40.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='35.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>8</text><rect x='125.0' y='50.0' width='80.0' height='50.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='80.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>12</text><rect x='125.0' y='100.0' width='80.0' height='40.0' fill='#ffd166' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='125.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>8</text><rect x='125.0' y='140.0' width='80.0' height='50.0' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.8'/><text x='165.0' y='170.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>12</text><rect x='85.0' y='50.0' width='40.0' height='50.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='105.0' y='80.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>6</text><rect x='205.0' y='50.0' width='40.0' height='50.0' fill='#ff8fab' stroke='#1b2340' stroke-width='1.8'/><text x='225.0' y='80.4' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='15' fill='#1b2340'>6</text></svg>",
-   "kavram": "Üç Çift Eş Yüz"
+   "kavram": "Üç Çift Eş Yüz",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "yüzey alanı kaç cm²"
+   ]
   },
   {
    "soru": "Tabanı kenarı 4 cm olan kare, yüksekliği 5 cm olan kare prizmanın yüzey alanı kaç cm²?",
@@ -486,7 +540,13 @@
      "Dört eş dikdörtgen yüzün alanı: 4 · 5, dört tane.",
      "İki sonucu topla."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "yüzey alanı kaç cm²"
+   ]
   },
   {
    "soru": "Hangisi yüzey alanı için uygun bir birimdir?",
@@ -498,7 +558,14 @@
    "dogru": 2,
    "ipucu": "Yüzey alanı bir alandır. Alan hangi birimle yazılır?",
    "aciklama": "Alan kare birimle yazılır: cm². (s. 129)",
-   "kavram": "Yüzey Alanı"
+   "kavram": "Yüzey Alanı",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi",
+    "uygun bir birimdir"
+   ]
   },
   {
    "soru": "Bir dikdörtgenler prizmasının birbirinden farklı üç yüzünün alanları 20 cm², 30 cm² ve 40 cm²'dir. Yüzey alanı kaç cm²'dir?",
@@ -510,7 +577,13 @@
    "dogru": 2,
    "ipucu": "Her yüzden kaç tane var?",
    "aciklama": "Her yüzden iki tane var: 2 · (20 + 30 + 40) = 180 cm². (s. 132)",
-   "kavram": "Üç Çift Eş Yüz"
+   "kavram": "Üç Çift Eş Yüz",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Yüzey alanı kaç cm²'dir"
+   ]
   },
   {
    "soru": "Tabanı 6 cm × 4 cm, yüksekliği 3 cm olan kapaksız bir kutunun dışı kâğıtla kaplanacak. Kaç cm² kâğıt gerekir?",
@@ -526,7 +599,14 @@
      "Ön ve arka: 6 · 3, iki tane. Sağ ve sol: 4 · 3, iki tane.",
      "Hepsini topla."
     ]
-   }
+   },
+   "tetik": [
+    "Kaç"
+   ],
+   "bolge": [
+    "kapaksız",
+    "Kaç cm² kâğıt gerekir"
+   ]
   },
   {
    "soru": "Bir küpün bütün ayrıtlarının uzunlukları toplamı 60 cm'dir. Bu küpün yüzey alanı kaç cm²'dir?",
@@ -545,7 +625,13 @@
      "Bir ayrıt: 60 ÷ 12.",
      "Bir yüzün alanını bul, 6 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "yüzey alanı kaç cm²'dir"
+   ]
   },
   {
    "soru": "Hangisi doğrudur?",
@@ -557,7 +643,13 @@
    "dogru": 0,
    "ipucu": "Kare özel bir dikdörtgendir. Küpün yüzleri ne şekildedir?",
    "aciklama": "Küp ve kare prizma, dikdörtgenler prizmasının özel durumlarıdır. (s. 131)",
-   "kavram": "Kare Prizma"
+   "kavram": "Kare Prizma",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Ela ayrıtları 10 cm, 10 cm ve 20 cm olan bir kutuyu paket kâğıdıyla kaplayacak. En az kaç cm² kâğıt gerekir?",
@@ -573,7 +665,219 @@
      "Üçünü topla.",
      "Toplamı 2 ile çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "En az kaç cm² kâğıt gerekir"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bir cismin bütün yüzlerinin alanlarının toplamına {yüzey alanı|hacim|çevre} denir.",
+   "s": "s. 129"
+  },
+  {
+   "c": "Hediye kutusunu kaplamak için gereken en az kâğıt, kutunun {yüzey alanı|hacmi|yüksekliği} kadardır.",
+   "s": "s. 129"
+  },
+  {
+   "c": "Ayrıtları a, b, c olan prizmada üç farklı yüzün alanını toplar, sonucu {2|3|6} ile çarparız.",
+   "s": "s. 129"
+  },
+  {
+   "c": "İki karşılıklı yüzü kare olan dikdörtgenler prizmasına {kare prizma|küp|üçgen prizma} denir.",
+   "s": "s. 131"
+  },
+  {
+   "c": "Bütün yüzleri eş kare olan prizma {küptür|kare prizmadır|piramittir}; yüzey alanı 6 · a².",
+   "s": "s. 131"
+  },
+  {
+   "c": "Yüzey alanı {kare|küp|uzunluk} birimle yazılır: cm², m².",
+   "s": "s. 129"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Can kutunun yüzey alanını 2 · 3 + 2 · 5 + 3 · 5 = 31 cm² buldu. Can neyi unuttu? Yaz.",
+   "tetik": [
+    "neyi unuttu"
+   ],
+   "okut": [
+    "Can'ın neyi unuttuğunu yazmanı",
+    "Can'ın kutusunun hacmini bulmanı",
+    "kutunun en büyük yüzünü bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Can'ın unuttuğu:",
+     "ornek": "Sonucu 2 ile çarpmayı unuttu.",
+     "havuz": [
+      "Sayıları toplamayı unuttu.",
+      "Birimi m yazmayı unuttu."
+     ],
+     "k": [
+      "2 ile",
+      "iki"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "Her yüzden iki tane vardır; karşılıklı yüzler eştir.",
+     "havuz": [
+      "Kutunun yalnız bir yüzü vardır.",
+      "Yüzlerin hepsi farklıdır."
+     ],
+     "k": [
+      "iki tane",
+      "eş",
+      "karşılıklı"
+     ]
+    }
+   ],
+   "kisa": "2 ile çarpmayı; her yüzden iki tane var.",
+   "cevap": "Can sonucu 2 ile çarpmayı unuttu. Karşılıklı yüzler eş olduğu için her yüzden iki tane vardır. Doğrusu 2 · 31 = 62 cm².",
+   "anahtarlar": [
+    {
+     "ad": "2 ile çarpmak",
+     "k": [
+      "2 ile"
+     ]
+    },
+    {
+     "ad": "her yüzden iki tane",
+     "k": [
+      "iki tane",
+      "eş"
+     ]
+    }
+   ],
+   "sayfa": "s. 129",
+   "bolge": [
+    "Can neyi unuttu"
+   ]
+  },
+  {
+   "soru": "Kapaksız bir kutunun dışını kaplarken yüzey alanı formülünü neden olduğu gibi kullanamayız? Yaz.",
+   "tetik": [
+    "neden olduğu gibi kullanamayız"
+   ],
+   "okut": [
+    "kapaksız kutuda formülün neden olduğu gibi kullanılamayacağını yazmanı",
+    "kapaksız kutunun yüzey alanını hesaplamanı",
+    "kutuya kapak yapmanın yolunu anlatmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Çünkü:",
+     "ornek": "Kapaksız kutunun üst yüzü yoktur.",
+     "havuz": [
+      "Bu kutunun hacmi yoktur.",
+      "Bu kutu küp olmak zorundadır."
+     ],
+     "k": [
+      "üst yüz"
+     ]
+    },
+    {
+     "bas": "Bu yüzden:",
+     "ornek": "Yalnızca 5 yüzün alanını toplarız.",
+     "havuz": [
+      "Yüzey alanını 3 ile çarparız.",
+      "Hiç hesap yapmayız."
+     ],
+     "k": [
+      "5"
+     ]
+    }
+   ],
+   "kisa": "Üst yüz yok; 5 yüzü toplarız.",
+   "cevap": "Kapaksız kutunun üst yüzü yoktur. Formül 6 yüzü sayar; biz yalnızca kaplanacak 5 yüzün alanını toplarız.",
+   "anahtarlar": [
+    {
+     "ad": "üst yüz yok",
+     "k": [
+      "üst yüz"
+     ]
+    },
+    {
+     "ad": "5 yüz",
+     "k": [
+      "5"
+     ]
+    }
+   ],
+   "sayfa": "s. 129",
+   "bolge": [
+    "neden olduğu gibi kullanamayız"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Yusuf Öğretmen ayrıtları 2 dm, 3 dm ve 4 dm olan bir hediye kutusunu paket kâğıdıyla kaplayacak.",
+    "Kutunun üç farklı yüzünün alanları toplamı 6 + 8 + 12 = 26 dm².",
+    "Kutunun hacmi 24 dm³."
+   ],
+   "soru": "Metne göre kutuyu kaplamak için en az kaç dm² kâğıt gerekir?",
+   "bolge": [
+    "kaplamak için en az kaç dm² kâğıt gerekir"
+   ],
+   "serit": "Kaplamak için gereken en az kâğıt (yüzey alanı)",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "52 dm² kâğıt",
+    "26 dm² kâğıt",
+    "24 dm³ kâğıt"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Kaplamak yüzey alanı demek. Her yüzden kaç tane var?",
+   "kanitIpucu": "Yüzlerin alanlarından söz eden cümleyi bul.",
+   "aciklama": "Yüzey alanı = 2 · 26 = 52 dm². 26 yalnız üç yüzün toplamı, 24 dm³ ise hacim (s. 129). Ölçüler kitap dışı.",
+   "kavram": "Yüzey Alanı Formülü"
+  },
+  {
+   "metin": [
+    "Bir marangoz bahçe için tahta bir sandık yaptı.",
+    "Sandığın tabanı 6 dm × 4 dm, yüksekliği 3 dm.",
+    "Sandığın üstü açık, kapağı yok.",
+    "Marangoz sandığın dışını boyayacak; tabanı da boyanacak.",
+    "Boyanın 1 kutusu 50 dm² yüzeye yetiyor.",
+    "Sandığın içine bahçe aletleri konacak."
+   ],
+   "soru": "Metne göre sandığın kaç yüzü boyanacaktır?",
+   "bolge": [
+    "kaç yüzü boyanacaktır"
+   ],
+   "serit": "Boyanacak yüz sayısı",
+   "kanit": [
+    2,
+    3
+   ],
+   "secenekler": [
+    "5 yüzü",
+    "6 yüzü",
+    "4 yüzü"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Kapaksız kutuda hangi yüz yoktur?",
+   "kanitIpucu": "Kapaktan ve tabandan söz eden cümleleri bul.",
+   "aciklama": "Sandığın kapağı yok, yani üst yüz yok; tabanla birlikte 5 yüz boyanır (s. 129). Hikâye kitap dışı.",
+   "kavram": "Hangi Yüzler Kaplanacak?"
   }
  ]
 }
