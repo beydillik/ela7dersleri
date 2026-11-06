@@ -23,7 +23,13 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki kitap tanımını hatırla: {{to become sick}}.",
-    "aciklama": "{{to become sick}} = {{get ill}}: hasta olmak. (SB s. 47)"
+    "aciklama": "{{to become sick}} = {{get ill}}: hasta olmak. (SB s. 47)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "{{to become sick}}: hasta olmak. Hangisi"
+    ]
    }
   },
   {
@@ -44,7 +50,10 @@
     ],
     "dogru": 2,
     "ipucu": "Karttaki termometreyi hatırla.",
-    "aciklama": "Vücut çok sıcaksa ateşin vardır: {{I have a fever.}} (SB s. 56)"
+    "aciklama": "Vücut çok sıcaksa ateşin vardır: {{I have a fever.}} (SB s. 56)",
+    "bolge": [
+     "Ne oldu"
+    ]
    }
   },
   {
@@ -65,7 +74,13 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki ağızdan çıkan küçük bulutları hatırla.",
-    "aciklama": "Öksürmek: {{cough}}. (SB s. 47)"
+    "aciklama": "Öksürmek: {{cough}}. (SB s. 47)",
+    "tetik": [
+     "Hangi kelime"
+    ],
+    "bolge": [
+     "Hangi kelime 'öksürmek' demek"
+    ]
    }
   },
   {
@@ -86,7 +101,13 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki {{ACHOO!}} yazısını hatırla.",
-    "aciklama": "Hapşırmak: {{sneeze}}. (SB s. 47)"
+    "aciklama": "Hapşırmak: {{sneeze}}. (SB s. 47)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "'Hapşırmak' İngilizce hangisi"
+    ]
    }
   },
   {
@@ -107,7 +128,10 @@
     ],
     "dogru": 2,
     "ipucu": "Karttaki üzgün yüzden mutlu yüze giden oku hatırla.",
-    "aciklama": "İyileşmek {{get better}}: {{I hope you get better soon.}} (SB s. 131)"
+    "aciklama": "İyileşmek {{get better}}: {{I hope you get better soon.}} (SB s. 131)",
+    "bolge": [
+     "Umarım yakında iyileşirsin"
+    ]
    }
   },
   {
@@ -128,7 +152,14 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki başın üstündeki zikzak çizgiyi hatırla.",
-    "aciklama": "Gerilmek, stres olmak: {{get stressed}}. (WB s. 32)"
+    "aciklama": "Gerilmek, stres olmak: {{get stressed}}. (WB s. 32)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "çok gerginsin",
+     "Hangisi"
+    ]
    }
   }
  ],
@@ -337,7 +368,13 @@
    "ipucu": "Hapşırmakla ilgili kelime. Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun kelime {{sneeze}}: hapşırmak. (SB s. 47)",
    "dinle": "sneeze",
-   "kavram": "sneeze"
+   "kavram": "sneeze",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi kelimeyi duydun?",
@@ -350,7 +387,13 @@
    "ipucu": "İyileşmekle ilgili kelime.",
    "aciklama": "Duyduğun kelime {{get better}}: iyileşmek. (SB s. 47)",
    "dinle": "get better",
-   "kavram": "get better"
+   "kavram": "get better",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "{{to stop feeling ill}} tanımı hangisinin?",
@@ -362,7 +405,13 @@
    "dogru": 0,
    "ipucu": "Hasta hissetmeyi bırakmak: iyileşmek.",
    "aciklama": "{{to stop feeling ill}} = {{get better}}. (SB s. 47)",
-   "kavram": "get better"
+   "kavram": "get better",
+   "tetik": [
+    "hangisinin"
+   ],
+   "bolge": [
+    "{{to stop feeling ill}} tanımı hangisinin"
+   ]
   },
   {
    "soru": "{{He's very hot. I'm sure he ___.}} Boşluğa hangisi?",
@@ -374,7 +423,13 @@
    "dogru": 0,
    "ipucu": "Vücut çok sıcaksa ne olur?",
    "aciklama": "Çok sıcak: {{he has a fever}}. (SB s. 131)",
-   "kavram": "have a fever"
+   "kavram": "have a fever",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{He's very hot. I'm sure he ___.}} Boşluğa hangisi"
+   ]
   },
   {
    "soru": "Doktor: {{Does your chest hurt? You're ___ a lot.}} Boşluğa hangisi?",
@@ -386,7 +441,13 @@
    "dogru": 1,
    "ipucu": "Göğüs ağrısıyla hangi belirti birlikte olur?",
    "aciklama": "Göğüs ağrısı ve öksürük: {{You're coughing a lot.}} (SB s. 56)",
-   "kavram": "cough"
+   "kavram": "cough",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Doktor: {{Does your chest hurt? You're ___ a lot.}} Boşluğa hangisi"
+   ]
   },
   {
    "soru": "{{Don't ___ about your exams – relax, you'll be OK!}}",
@@ -398,7 +459,10 @@
    "dogru": 0,
    "ipucu": "{{relax}} kelimesinin zıddını düşün.",
    "aciklama": "{{Don't get stressed about your exams.}} (WB s. 32)",
-   "kavram": "get stressed"
+   "kavram": "get stressed",
+   "bolge": [
+    "{{Don't ___ about your exams – relax, you'll be OK!}}"
+   ]
   },
   {
    "soru": "{{get ill}} kelimesinin zıt anlamlısı hangisi?",
@@ -410,7 +474,13 @@
    "dogru": 2,
    "ipucu": "Hasta olmanın tersi: iyileşmek.",
    "aciklama": "{{get ill}} ↔ {{get better}}. (SB s. 47)",
-   "kavram": "get ill"
+   "kavram": "get ill",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{get ill}} kelimesinin zıt anlamlısı hangisi"
+   ]
   },
   {
    "soru": "Tom: {{I think I'm getting ill. Look at my red nose! I'm ___ all the time.}}",
@@ -422,7 +492,171 @@
    "dogru": 0,
    "ipucu": "Kırmızı burun hangi belirtiyle olur?",
    "aciklama": "Burnu kızaran Tom sürekli hapşırıyor: {{sneezing}}. (SB s. 56)",
-   "kavram": "sneeze"
+   "kavram": "sneeze",
+   "bolge": [
+    "Tom: {{I think I'm getting ill. Look at my red nose! I'm ___ all the time.}}"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "He's very hot. I'm sure he {has a fever|gets better|sneezes}.",
+   "s": "SB s. 131"
+  },
+  {
+   "c": "I'm sorry you're ill. I hope you {get better|get ill|get stressed} soon.",
+   "s": "SB s. 131"
+  },
+  {
+   "c": "Is it true that you can't {sneeze|get better|have a fever} with your eyes open?",
+   "s": "WB s. 32"
+  },
+  {
+   "c": "Isabel can't come today. She's not feeling very well. — Oh, no! I hope she {gets better|gets ill|gets stressed} soon!",
+   "s": "WB s. 32"
+  },
+  {
+   "c": "Does your chest hurt? You're {coughing|relaxing|getting better} a lot.",
+   "s": "SB s. 56"
+  },
+  {
+   "c": "Sorry, I can't. I'm getting {stressed|better|ill} about my exams.",
+   "s": "WB s. 32"
+  },
+  {
+   "c": "I have a {fever|sneeze|stress} too. I'm really hot and I feel terrible.",
+   "s": "WB s. 32"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "En son ne zaman hasta oldun ve neler oldu? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "ne zaman"
+   ],
+   "okut": [
+    "en son ne zaman hasta olduğunu ve neler yaşadığını yazmanı",
+    "yalnızca hangi doktora gittiğini yazmanı",
+    "hasta olmamak için ne yaptığını yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "The last time I",
+     "ornek": "got ill was in March.",
+     "havuz": [
+      "got better was in March.",
+      "got stressed was in March."
+     ],
+     "k": [
+      "got ill",
+      "was ill",
+      "got sick"
+     ]
+    },
+    {
+     "bas": "I",
+     "ornek": "had a fever and I coughed a lot.",
+     "havuz": [
+      "warmed up and I relaxed.",
+      "worked out and I trained."
+     ],
+     "k": [
+      "fever",
+      "cough",
+      "sneez"
+     ]
+    }
+   ],
+   "kisa": "I got ill in March. I had a fever.",
+   "cevap": "The last time I got ill was in March. I had a fever and I coughed a lot.",
+   "anahtarlar": [
+    {
+     "ad": "got ill",
+     "k": [
+      "got ill",
+      "was ill",
+      "got sick"
+     ]
+    },
+    {
+     "ad": "fever / cough / sneeze",
+     "k": [
+      "fever",
+      "cough",
+      "sneez"
+     ]
+    }
+   ],
+   "sayfa": "SB s. 47",
+   "bolge": [
+    "En son ne zaman hasta oldun",
+    "neler oldu"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Azra: Sorry, I can't. I'm getting stressed about my exams.}}",
+    "{{I have a fever too. I'm really hot and I feel terrible.}}"
+   ],
+   "soru": "Metne göre Azra'nın sınavlardan başka hangi sorunu var?",
+   "bolge": [
+    "sınavlardan başka hangi sorunu var"
+   ],
+   "serit": "sınavlardan başka sorun",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "She has a fever.",
+    "She's getting stressed.",
+    "She's sorry."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Sınav stresi bir sorun. Soru “başka” diyor: ikinci cümleye bak.",
+   "kanitIpucu": "“too” (de/da) hangi cümlede geçiyor?",
+   "aciklama": "“I have a fever too. I'm really hot…” Ateşi de var. Stres sınavlarla ilgili olan sorun (WB s. 32; seçmeli kelimeler bağlamdan seçildi).",
+   "kavram": "have a fever"
+  },
+  {
+   "metin": [
+    "{{Tom: Doctor, I went jogging in the park yesterday and felt fine, but now I think I'm getting ill.}}",
+    "{{Look at my red nose! I'm sneezing all the time.}}",
+    "{{Doctor: Does your chest hurt? You're coughing a lot.}}",
+    "{{Tom: It does. And I'm sweating all the time but I feel cold.}}",
+    "{{Doctor: Well, let's take your temperature. Hmm, 39 degrees. You have a fever.}}",
+    "{{Here's some medicine. You need a week in bed.}}"
+   ],
+   "soru": "Metne göre doktor Tom'un ateşi olduğunu nasıl anladı?",
+   "bolge": [
+    "ateşi olduğunu nasıl anladı"
+   ],
+   "serit": "doktorun ateşi anlama yolu",
+   "kanit": [
+    4
+   ],
+   "secenekler": [
+    "He took Tom's temperature.",
+    "Tom's chest hurt.",
+    "Tom went jogging in the park."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“fever” kelimesinin geçtiği cümleye bak. Doktor ondan hemen önce ne yapıyor?",
+   "kanitIpucu": "“39 degrees” hangi cümlede?",
+   "aciklama": "“…let's take your temperature. Hmm, 39 degrees. You have a fever.” Ateşini ölçtü: 39 derece. Göğüs ağrısı öksürükle ilgili (SB s. 56; boşluklar kitaptaki kelimelerle dolduruldu).",
+   "kavram": "have a fever"
   }
  ]
 }

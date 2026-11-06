@@ -23,7 +23,10 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki koşan kişiyi hatırla.",
-    "aciklama": "Koşuya çıkmak: {{go jogging}}. (SB s. 47)"
+    "aciklama": "Koşuya çıkmak: {{go jogging}}. (SB s. 47)",
+    "bolge": [
+     "Parkta hafif tempoda koşuya çıkmak:"
+    ]
    }
   },
   {
@@ -44,7 +47,10 @@
     ],
     "dogru": 1,
     "ipucu": "Bir yarışa hazırlanmak: karttaki kronometreyi hatırla.",
-    "aciklama": "Yarışa hazırlanıyor: {{training}}. (WB s. 32)"
+    "aciklama": "Yarışa hazırlanıyor: {{training}}. (WB s. 32)",
+    "bolge": [
+     "{{Sam is ___ for a half marathon at the moment.}}"
+    ]
    }
   },
   {
@@ -65,7 +71,13 @@
     ],
     "dogru": 2,
     "ipucu": "Spordan ÖNCE hafifçe yapılan hareket.",
-    "aciklama": "Spordan önce hafif egzersiz: {{warm up}}. (SB s. 47)"
+    "aciklama": "Spordan önce hafif egzersiz: {{warm up}}. (SB s. 47)",
+    "tetik": [
+     "hangisinin"
+    ],
+    "bolge": [
+     "{{to exercise gently before doing sport}} tanımı hangisinin"
+    ]
    }
   },
   {
@@ -86,7 +98,10 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki dambılı hatırla.",
-    "aciklama": "Egzersiz yapmak: {{work out}}. (SB s. 47)"
+    "aciklama": "Egzersiz yapmak: {{work out}}. (SB s. 47)",
+    "bolge": [
+     "Spor salonunda ağırlık kaldırarak egzersiz yapmak:"
+    ]
    }
   },
   {
@@ -107,7 +122,11 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki su damlalarını hatırla.",
-    "aciklama": "Spor yapınca terleriz: {{sweat}}. (WB s. 32)"
+    "aciklama": "Spor yapınca terleriz: {{sweat}}. (WB s. 32)",
+    "bolge": [
+     "tişörtün ıslandı",
+     "Ne yaptın"
+    ]
    }
   },
   {
@@ -128,7 +147,13 @@
     ],
     "dogru": 2,
     "ipucu": "Karttaki gözleri kapalı, gülümseyen yüzü hatırla.",
-    "aciklama": "{{get stressed}} ↔ {{relax}}. (WB s. 32)"
+    "aciklama": "{{get stressed}} ↔ {{relax}}. (WB s. 32)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{get stressed}} kelimesinin zıddı hangisi"
+    ]
    }
   },
   {
@@ -149,7 +174,10 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki yatak ve ayı hatırla.",
-    "aciklama": "Yorgunsan yeterince uyumamışsındır: {{get enough sleep}}. (SB s. 131)"
+    "aciklama": "Yorgunsan yeterince uyumamışsındır: {{get enough sleep}}. (SB s. 131)",
+    "bolge": [
+     "{{I'm really tired. I didn't ___ last night.}}"
+    ]
    }
   }
  ],
@@ -368,7 +396,13 @@
    "ipucu": "Spordan önce yapılan hareket. Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun kelime {{warm up}}: ısınmak. (SB s. 47)",
    "dinle": "warm up",
-   "kavram": "warm up"
+   "kavram": "warm up",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi kelimeyi duydun?",
@@ -381,7 +415,13 @@
    "ipucu": "Terlemekle ilgili kelime.",
    "aciklama": "Duyduğun kelime {{sweat}}: terlemek. (SB s. 47)",
    "dinle": "sweat",
-   "kavram": "sweat"
+   "kavram": "sweat",
+   "tetik": [
+    "Hangi kelimeyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi kelimeyi duydun"
+   ]
   },
   {
    "soru": "{{Make sure you ___ before you go jogging.}}",
@@ -393,7 +433,10 @@
    "dogru": 2,
    "ipucu": "Koşudan ÖNCE ne yapılır?",
    "aciklama": "{{Make sure you warm up before you go jogging.}} (SB s. 131)",
-   "kavram": "warm up"
+   "kavram": "warm up",
+   "bolge": [
+    "{{Make sure you ___ before you go jogging.}}"
+   ]
   },
   {
    "soru": "{{Lucia is very fit because she ___ at the gym every day.}}",
@@ -405,7 +448,10 @@
    "dogru": 1,
    "ipucu": "Spor salonunda ne yapılır?",
    "aciklama": "{{She works out at the gym every day.}} (SB s. 131)",
-   "kavram": "work out"
+   "kavram": "work out",
+   "bolge": [
+    "{{Lucia is very fit because she ___ at the gym every day.}}"
+   ]
   },
   {
    "soru": "Astronotlar: {{If they get stressed, they ___ by enjoying the views.}}",
@@ -417,7 +463,10 @@
    "dogru": 0,
    "ipucu": "Stresin zıddı.",
    "aciklama": "Stres olunca manzarayı izleyip {{relax}}. (SB s. 48)",
-   "kavram": "relax"
+   "kavram": "relax",
+   "bolge": [
+    "Astronotlar: {{If they get stressed, they ___ by enjoying the views.}}"
+   ]
   },
   {
    "soru": "{{He ___ a lot when he exercises. His clothes get very wet!}}",
@@ -429,7 +478,10 @@
    "dogru": 2,
    "ipucu": "Elbiseleri neden ıslanıyor?",
    "aciklama": "Egzersizde terler: {{sweats}}. (WB s. 32)",
-   "kavram": "sweat"
+   "kavram": "sweat",
+   "bolge": [
+    "{{He ___ a lot when he exercises. His clothes get very wet!}}"
+   ]
   },
   {
    "soru": "{{Get enough ___. Don't study all night!}}",
@@ -441,7 +493,10 @@
    "dogru": 1,
    "ipucu": "Bütün gece çalışma; ne yap?",
    "aciklama": "{{Get enough sleep.}}: yeterince uyu. (WB s. 32)",
-   "kavram": "get enough sleep"
+   "kavram": "get enough sleep",
+   "bolge": [
+    "{{Get enough ___. Don't study all night!}}"
+   ]
   },
   {
    "soru": "{{Some astronauts go ___! One astronaut even ran a marathon in space.}}",
@@ -453,7 +508,10 @@
    "dogru": 0,
    "ipucu": "{{go}} ile hangi kelime gelir?",
    "aciklama": "{{Some astronauts go jogging!}} (SB s. 48)",
-   "kavram": "go jogging"
+   "kavram": "go jogging",
+   "bolge": [
+    "{{Some astronauts go ___! One astronaut even ran a marathon in space.}}"
+   ]
   },
   {
    "soru": "{{Astronauts ___ a lot on Earth before they go into space.}}",
@@ -465,7 +523,175 @@
    "dogru": 1,
    "ipucu": "Uzaya gitmeden önce hazırlanmak.",
    "aciklama": "{{Astronauts train a lot on Earth.}} (SB s. 48)",
-   "kavram": "train"
+   "kavram": "train",
+   "bolge": [
+    "{{Astronauts ___ a lot on Earth before they go into space.}}"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "I'm really tired. I didn't {get enough sleep|warm up|work out} last night.",
+   "s": "SB s. 131"
+  },
+  {
+   "c": "Lucia is very fit because she {works out|relaxes|sneezes} at the gym every day.",
+   "s": "SB s. 131"
+  },
+  {
+   "c": "Sam is {training|relaxing|sweating} for a half marathon at the moment.",
+   "s": "WB s. 32"
+  },
+  {
+   "c": "He {sweats|relaxes|sneezes} a lot when he exercises. His clothes get very wet!",
+   "s": "WB s. 32"
+  },
+  {
+   "c": "Remember to {warm up|get ill|relax} before you run or do exercise, especially in cold weather.",
+   "s": "WB s. 32"
+  },
+  {
+   "c": "Hey, Azra! Do you want to go {jogging|sweating|relaxing} in the park?",
+   "s": "WB s. 32"
+  },
+  {
+   "c": "If they get stressed, they {relax|train|sweat} by enjoying the incredible views of our beautiful planet from space.",
+   "s": "SB s. 48"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Hangi sporu yaparsın ve spordan önce ne yaparsın? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "Hangi sporu"
+   ],
+   "okut": [
+    "hangi sporu yaptığını ve spordan önce ne yaptığını yazmanı",
+    "yalnızca en sevdiğin sporcuyu yazmanı",
+    "spordan sonra ne yediğini yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "I",
+     "ornek": "go jogging in the park.",
+     "havuz": [
+      "get ill in the park.",
+      "sneeze in the park."
+     ],
+     "k": [
+      "jog",
+      "work out",
+      "train",
+      "swim",
+      "play",
+      "run",
+      "cycl"
+     ]
+    },
+    {
+     "bas": "Before I run, I",
+     "ornek": "warm up.",
+     "havuz": [
+      "get ill.",
+      "have a fever."
+     ],
+     "k": [
+      "warm"
+     ]
+    }
+   ],
+   "kisa": "I go jogging. I warm up first.",
+   "cevap": "I go jogging in the park. Before I run, I always warm up, and I relax after.",
+   "anahtarlar": [
+    {
+     "ad": "spor (go jogging, work out …)",
+     "k": [
+      "jog",
+      "work out",
+      "train",
+      "swim",
+      "play",
+      "run",
+      "cycl"
+     ]
+    },
+    {
+     "ad": "warm up",
+     "k": [
+      "warm"
+     ]
+    }
+   ],
+   "sayfa": "SB s. 131",
+   "bolge": [
+    "Hangi sporu yaparsın",
+    "spordan önce ne yaparsın"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Caro: OK. Get enough sleep. Don't study all night!}}",
+    "{{Azra: OK, and don't forget to warm up before running. You hurt your leg last time!}}"
+   ],
+   "soru": "Metne göre koşmadan önce ne yapılmalı?",
+   "bolge": [
+    "koşmadan önce ne yapılmalı"
+   ],
+   "serit": "koşmadan önce yapılacak şey",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "warm up",
+    "get enough sleep",
+    "study all night"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“koşmadan önce” İngilizcede “before running”.",
+   "kanitIpucu": "“before running” hangi cümlede?",
+   "aciklama": "“…don't forget to warm up before running.” Koşmadan önce ısınmalı. Yeterince uyumak (get enough sleep) gece için söylenen başka bir tavsiye (WB s. 32; seçmeli kelimeler bağlamdan seçildi).",
+   "kavram": "warm up"
+  },
+  {
+   "metin": [
+    "{{Astronauts train a lot on Earth, but if they don't do enough exercise in space, their muscles and hearts lose strength and their bones get weaker, and this can happen in just a few weeks!}}",
+    "{{Sometimes, when they get back to Earth, they're not strong enough to walk!}}",
+    "{{The answer is exercise and not just a little exercise – a lot!}}",
+    "{{Take Japanese astronaut Koichi Wakata, for example.}}",
+    "{{He lived on the ISS for 188 days and worked out for at least two hours every day.}}",
+    "{{One astronaut, Chris Hadfield, even ran a marathon in space!}}"
+   ],
+   "soru": "Metne göre Koichi Wakata uzayda her gün en az ne kadar egzersiz yaptı?",
+   "bolge": [
+    "her gün en az ne kadar egzersiz yaptı"
+   ],
+   "serit": "Wakata'nın her günkü egzersiz süresi",
+   "kanit": [
+    4
+   ],
+   "secenekler": [
+    "at least two hours",
+    "188 days",
+    "a few weeks"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“her gün” İngilizcede “every day”, “en az” “at least”.",
+   "kanitIpucu": "“every day” hangi cümlede?",
+   "aciklama": "“…worked out for at least two hours every day.” Her gün en az iki saat egzersiz yaptı. 188 gün uzay istasyonunda kaldığı süre (SB s. 48).",
+   "kavram": "work out"
   }
  ]
 }

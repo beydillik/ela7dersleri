@@ -45,7 +45,13 @@
     ],
     "dogru": 0,
     "ipucu": "Formül: {{too}} + sıfat = fazla …, bu yüzden olmuyor.",
-    "aciklama": "Araba sürmek için fazla genç: {{too young to drive}}. (SB s. 49)"
+    "aciklama": "Araba sürmek için fazla genç: {{too young to drive}}. (SB s. 49)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğru"
+    ]
    }
   },
   {
@@ -111,7 +117,13 @@
     ],
     "dogru": 1,
     "ipucu": "Formül: sıfat önce, {{enough}} sonra.",
-    "aciklama": "Sıfat + {{enough}}: {{old enough}}. (SB s. 49)"
+    "aciklama": "Sıfat + {{enough}}: {{old enough}}. (SB s. 49)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğru"
+    ]
    }
   },
   {
@@ -150,7 +162,10 @@
     ],
     "dogru": 2,
     "ipucu": "Sayılabilen çoğul isim: karttaki taşan topları hatırla.",
-    "aciklama": "Sayılabilen çoğul isimle {{too many}}: {{too many exams}}. (WB s. 94)"
+    "aciklama": "Sayılabilen çoğul isimle {{too many}}: {{too many exams}}. (WB s. 94)",
+    "bolge": [
+     "{{I have ___ exams this week!}} ({{exams}} sayılabilir.)"
+    ]
    }
   },
   {
@@ -189,7 +204,10 @@
     ],
     "dogru": 0,
     "ipucu": "Sayılamayan isim: karttaki taşan suyu hatırla.",
-    "aciklama": "Sayılamayan: {{Too much work}}. (SB s. 48)"
+    "aciklama": "Sayılamayan: {{Too much work}}. (SB s. 48)",
+    "bolge": [
+     "{{___ work isn't good for anyone.}} ({{work}} sayılamaz.)"
+    ]
    }
   },
   {
@@ -246,7 +264,10 @@
     ],
     "dogru": 1,
     "ipucu": "Formül: isimle kullanınca {{enough}} önce gelir.",
-    "aciklama": "{{enough}} + isim: {{enough chairs}}. (SB s. 49)"
+    "aciklama": "{{enough}} + isim: {{enough chairs}}. (SB s. 49)",
+    "bolge": [
+     "12 öğrenci, 12 sandalye var: {{We have ___.}}"
+    ]
    }
   },
   {
@@ -285,7 +306,10 @@
     ],
     "dogru": 2,
     "ipucu": "Sayılabilen isim: karttaki üç elmayı hatırla.",
-    "aciklama": "Sayılabilen: {{a few weeks}}. (SB s. 48)"
+    "aciklama": "Sayılabilen: {{a few weeks}}. (SB s. 48)",
+    "bolge": [
+     "{{This can happen in just ___ weeks.}} ({{weeks}} sayılabilir.)"
+    ]
    }
   },
   {
@@ -324,7 +348,10 @@
     ],
     "dogru": 0,
     "ipucu": "Sayılamayan isim: karttaki bardağın dibindeki az suyu hatırla.",
-    "aciklama": "Sayılamayan: {{a little fun}}. (SB s. 48)"
+    "aciklama": "Sayılamayan: {{a little fun}}. (SB s. 48)",
+    "bolge": [
+     "{{We all need ___ fun!}} ({{fun}} sayılamaz.)"
+    ]
    }
   }
  ],
@@ -741,7 +768,13 @@
    "ipucu": "Kaç kelime var ve ortadaki {{a ...}} hangisi? Yavaş dinle.",
    "aciklama": "Duyduğun cümle {{We need a little luck!}} {{luck}} sayılamaz. (SB s. 49)",
    "dinle": "We need a little luck!",
-   "kavram": "a little"
+   "kavram": "a little",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -754,7 +787,13 @@
    "ipucu": "Olumsuz mu olumlu mu? {{aren't}} sesine dikkat et.",
    "aciklama": "Duyduğun cümle {{There aren't enough chairs.}} (SB s. 49)",
    "dinle": "There aren't enough chairs.",
-   "kavram": "enough + noun"
+   "kavram": "enough + noun",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{I have some time to do my homework but not much.}} Altı çizili {{some time}} yerine hangisi?",
@@ -766,7 +805,13 @@
    "dogru": 0,
    "ipucu": "{{time}} sayılabilir mi?",
    "aciklama": "Sayılamayan isim: {{a little time}}. (SB s. 49)",
-   "kavram": "a little"
+   "kavram": "a little",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{I have some time to do my homework but not much.}} Altı çizili {{some time}} yerine hangisi"
+   ]
   },
   {
    "soru": "{{The team has three or four good players.}} {{three or four}} yerine hangisi?",
@@ -778,7 +823,13 @@
    "dogru": 1,
    "ipucu": "{{players}} sayılabilir.",
    "aciklama": "Sayılabilen, az sayıda: {{a few good players}}. (SB s. 49)",
-   "kavram": "a few"
+   "kavram": "a few",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{The team has three or four good players.}} {{three or four}} yerine hangisi"
+   ]
   },
   {
    "soru": "{{Jo was wearing shorts and a T-shirt in the cold weather. Now she's sick.}} Hangisi doğru?",
@@ -790,7 +841,13 @@
    "dogru": 2,
    "ipucu": "Soğukta şort ve tişört: kıyafet yeterli miydi?",
    "aciklama": "Yeterince kıyafet giymedi: {{She didn't wear enough clothes.}} (SB s. 49)",
-   "kavram": "enough + noun"
+   "kavram": "enough + noun",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğru"
+   ]
   },
   {
    "soru": "{{I want to go out, but I'm coughing and have a fever.}} Hangisi doğru?",
@@ -802,7 +859,13 @@
    "dogru": 1,
    "ipucu": "{{too}} + sıfat: o kadar … ki olmuyor.",
    "aciklama": "Dışarı çıkmak için fazla hasta: {{too sick to go out}}. (SB s. 49)",
-   "kavram": "too + adjective"
+   "kavram": "too + adjective",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğru"
+   ]
   },
   {
    "soru": "{{We weren't even good ___ to score one goal!}}",
@@ -814,7 +877,10 @@
    "dogru": 1,
    "ipucu": "Sıfattan SONRA hangi kelime gelir?",
    "aciklama": "Sıfat + {{enough}}: {{good enough to score}}. (SB s. 49)",
-   "kavram": "adjective + enough"
+   "kavram": "adjective + enough",
+   "bolge": [
+    "{{We weren't even good ___ to score one goal!}}"
+   ]
   },
   {
    "soru": "{{We spent too ___ time defending.}}",
@@ -826,7 +892,10 @@
    "dogru": 2,
    "ipucu": "{{time}} sayılamaz.",
    "aciklama": "Sayılamayan: {{too much time}}. (SB s. 49)",
-   "kavram": "too much"
+   "kavram": "too much",
+   "bolge": [
+    "{{We spent too ___ time defending.}}"
+   ]
   },
   {
    "soru": "{{If you lose too ___ games, you'll be out of the competition.}}",
@@ -838,7 +907,10 @@
    "dogru": 2,
    "ipucu": "{{games}} sayılabilir, çoğul.",
    "aciklama": "Sayılabilen: {{too many games}}. (SB s. 49)",
-   "kavram": "too many"
+   "kavram": "too many",
+   "bolge": [
+    "{{If you lose too ___ games, you'll be out of the competition.}}"
+   ]
   },
   {
    "soru": "Bugün doğum günün, çok mutlusun. Hangisi doğru?",
@@ -850,7 +922,13 @@
    "dogru": 1,
    "ipucu": "{{too}} bir sorun anlatır; mutluluk sorun değil.",
    "aciklama": "Güçlendirmek için {{very}}: {{I'm very happy.}} (SB s. 49)",
-   "kavram": "too + adjective"
+   "kavram": "too + adjective",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğru"
+   ]
   },
   {
    "soru": "{{Sometimes, when they get back to Earth, they're not strong enough to walk!}} Ne demek?",
@@ -862,7 +940,166 @@
    "dogru": 0,
    "ipucu": "{{not}} + sıfat + {{enough}}: yeterince … değil.",
    "aciklama": "{{not strong enough to walk}}: yürüyecek kadar güçlü değil. (SB s. 48)",
-   "kavram": "adjective + enough"
+   "kavram": "adjective + enough",
+   "bolge": [
+    "{{Sometimes, when they get back to Earth, they're not strong enough to walk!}} Ne demek"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "She did too {much|many|few} exercise yesterday and now she's very tired.",
+   "s": "WB s. 34"
+  },
+  {
+   "c": "There were too {many|much|little} people in the pool, so we didn't swim.",
+   "s": "WB s. 34"
+  },
+  {
+   "c": "Skiing costs too {much|many|few} money for most students.",
+   "s": "WB s. 34"
+  },
+  {
+   "c": "Swimming is great, but only {a few|a little|too much} schools have got swimming pools.",
+   "s": "WB s. 34"
+  },
+  {
+   "c": "It's very hot, so take {a little|a few|too many} water with you.",
+   "s": "WB s. 34"
+  },
+  {
+   "c": "There aren't {enough chairs|chairs enough|too chairs} for everyone.",
+   "s": "WB s. 34"
+  },
+  {
+   "c": "My baby sister isn't {old enough|enough old|too old} to make her own breakfast.",
+   "s": "WB s. 38"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Dün neyi çok fazla yedin ve geçen hafta neyi yeterince yapamadın? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "neyi çok fazla"
+   ],
+   "okut": [
+    "dün neyi çok fazla yediğini ve geçen hafta neyi yeterince yapamadığını yazmanı",
+    "yalnızca dün ne yediğini yazmanı",
+    "geçen hafta kaç saat uyuduğunu yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Yesterday, I ate",
+     "ornek": "too many sweets.",
+     "havuz": [
+      "a few sweets.",
+      "enough sweets."
+     ],
+     "k": [
+      "too many",
+      "too much"
+     ]
+    },
+    {
+     "bas": "Last week, I didn't get",
+     "ornek": "enough sleep.",
+     "havuz": [
+      "too many sleep.",
+      "a few sleep."
+     ],
+     "k": [
+      "enough"
+     ]
+    }
+   ],
+   "kisa": "I ate too many sweets. I didn't get enough sleep.",
+   "cevap": "Yesterday, I ate too many sweets at a party. Last week, I didn't get enough sleep because I had too many exams.",
+   "anahtarlar": [
+    {
+     "ad": "too many / too much",
+     "k": [
+      "too many",
+      "too much"
+     ]
+    },
+    {
+     "ad": "not … enough",
+     "k": [
+      "enough"
+     ]
+    }
+   ],
+   "sayfa": "WB s. 34",
+   "bolge": [
+    "neyi çok fazla yedin",
+    "neyi yeterince yapamadın"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{I spend too much time sitting at a desk and not enough time on my feet. What can I do?}}",
+    "{{We spend too many hours sitting at a desk or in front of a screen.}}",
+    "{{It's a good idea to stand and walk around every half an hour during long study sessions.}}"
+   ],
+   "soru": "Metne göre uzun ders çalışırken ne sıklıkla kalkıp yürümeliyiz?",
+   "bolge": [
+    "ne sıklıkla kalkıp yürümeliyiz"
+   ],
+   "serit": "kalkıp yürüme sıklığı",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "every half an hour",
+    "too many hours",
+    "not enough time"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“kalkıp yürümek” İngilizcede “stand and walk around”.",
+   "kanitIpucu": "“walk around” hangi cümlede?",
+   "aciklama": "“…stand and walk around every half an hour…” Her yarım saatte bir kalkıp yürümeliyiz. “too many hours” masa başında geçen fazla zaman (WB s. 33).",
+   "kavram": "too many"
+  },
+  {
+   "metin": [
+    "{{Our readers have asked us lots of questions about life on the International Space Station (ISS).}}",
+    "{{The list is too long to answer all of them, but we've answered four of the best ones.}}",
+    "{{They go on space walks, repair things, do experiments and communicate with Earth.}}",
+    "{{But too much work isn't good for anyone and we all need a little fun!}}",
+    "{{Astronauts play games, watch movies and listen to music.}}"
+   ],
+   "soru": "Metne göre neden okurların bütün sorularını cevaplayamadılar?",
+   "bolge": [
+    "neden",
+    "bütün sorularını cevaplayamadılar"
+   ],
+   "serit": "bütün soruları cevaplayamamanın sebebi",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "The list is too long.",
+    "Too much work isn't good.",
+    "They answered four of the best ones."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“bütün sorular” İngilizcede “all of them”.",
+   "kanitIpucu": "“all of them” hangi cümlede?",
+   "aciklama": "“The list is too long to answer all of them…” Liste hepsini cevaplamak için çok uzun. Dört tanesini cevapladılar (SB s. 48).",
+   "kavram": "too + adjective"
   }
  ]
 }

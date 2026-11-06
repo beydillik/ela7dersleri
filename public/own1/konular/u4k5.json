@@ -41,7 +41,13 @@
     ],
     "dogru": 0,
     "ipucu": "Formül: {{should}} + yapılması iyi olan şey.",
-    "aciklama": "Ateşin varsa: {{You should stay in bed.}} (SB s. 51)"
+    "aciklama": "Ateşin varsa: {{You should stay in bed.}} (SB s. 51)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{I have a fever.}} En iyi tavsiye hangisi"
+    ]
    }
   },
   {
@@ -80,7 +86,13 @@
     ],
     "dogru": 1,
     "ipucu": "Gözler yorgunsa telefona bakmak iyi bir fikir mi?",
-    "aciklama": "{{You shouldn't look at your phone before bed.}} (SB s. 51)"
+    "aciklama": "{{You shouldn't look at your phone before bed.}} (SB s. 51)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{My eyes are tired.}} Tavsiye hangisi"
+    ]
    }
   },
   {
@@ -143,7 +155,13 @@
     ],
     "dogru": 2,
     "ipucu": "Formül: soruda {{Should}} en başta.",
-    "aciklama": "{{Should}} başa gelir: {{Should I stay at home?}} (WB s. 94)"
+    "aciklama": "{{Should}} başa gelir: {{Should I stay at home?}} (WB s. 94)",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "Soru nasıl kurulur"
+    ]
    }
   },
   {
@@ -190,7 +208,13 @@
     ],
     "dogru": 0,
     "ipucu": "Formül: {{What}} + {{should}} + özne + fiil.",
-    "aciklama": "{{What should I do ...?}} (SB s. 51)"
+    "aciklama": "{{What should I do ...?}} (SB s. 51)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğru"
+    ]
    }
   },
   {
@@ -229,7 +253,10 @@
     ],
     "dogru": 1,
     "ipucu": "Formül: {{ought}}'tan sonra {{to}} hiç düşmez.",
-    "aciklama": "{{A balanced diet ought to include some fat.}} (SB s. 51)"
+    "aciklama": "{{A balanced diet ought to include some fat.}} (SB s. 51)",
+    "bolge": [
+     "{{A balanced diet ___ include some fat.}}"
+    ]
    }
   }
  ],
@@ -603,7 +630,13 @@
    "ipucu": "{{should}} mu {{shouldn't}} mı? Sondaki {{-n't}} sesine dikkat et.",
    "aciklama": "Duyduğun cümle {{You shouldn't go to school.}} (SB s. 51)",
    "dinle": "You shouldn't go to school.",
-   "kavram": "shouldn't"
+   "kavram": "shouldn't",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -616,7 +649,13 @@
    "ipucu": "Fiil {{do}} mu {{eat}} mi? Sıra nasıl?",
    "aciklama": "Duyduğun cümle {{What should we do to be healthy?}} (SB s. 51)",
    "dinle": "What should we do to be healthy?",
-   "kavram": "What should …?"
+   "kavram": "What should …?",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{My team loses every game!}} Tavsiye hangisi?",
@@ -628,7 +667,13 @@
    "dogru": 2,
    "ipucu": "{{should}}'dan sonra {{to}} gelmez.",
    "aciklama": "{{You should train harder.}} (SB s. 51)",
-   "kavram": "should"
+   "kavram": "should",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{My team loses every game!}} Tavsiye hangisi"
+   ]
   },
   {
    "soru": "{{I sneeze a lot in the summer.}} Tavsiye hangisi?",
@@ -640,7 +685,13 @@
    "dogru": 0,
    "ipucu": "Kırda çiçekler var; çok hapşıran biri için iyi bir fikir mi?",
    "aciklama": "{{You shouldn't walk in the countryside.}} (SB s. 51)",
-   "kavram": "shouldn't"
+   "kavram": "shouldn't",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{I sneeze a lot in the summer.}} Tavsiye hangisi"
+   ]
   },
   {
    "soru": "{{___ Paula stay at home if she's feeling ill?}}",
@@ -652,7 +703,10 @@
    "dogru": 1,
    "ipucu": "Soru cümlesinde başa hangi kelime gelir?",
    "aciklama": "{{Should Paula stay at home?}} (WB s. 95)",
-   "kavram": "Should I …?"
+   "kavram": "Should I …?",
+   "bolge": [
+    "{{___ Paula stay at home if she's feeling ill?}}"
+   ]
   },
   {
    "soru": "{{Should I drink more water?}} — {{Yes, you ___.}}",
@@ -664,7 +718,10 @@
    "dogru": 0,
    "ipucu": "Kısa cevap {{Yes}} ile başlıyor: olumlu.",
    "aciklama": "{{Yes, you should.}} (WB s. 94)",
-   "kavram": "Should I …?"
+   "kavram": "Should I …?",
+   "bolge": [
+    "{{Should I drink more water?}} — {{Yes, you ___.}}"
+   ]
   },
   {
    "soru": "{{We ___ to eat lots of fruit and vegetables every day.}}",
@@ -676,7 +733,10 @@
    "dogru": 1,
    "ipucu": "Boşluktan sonra {{to}} var.",
    "aciklama": "{{We ought to eat lots of fruit and vegetables.}} (WB s. 94)",
-   "kavram": "ought to"
+   "kavram": "ought to",
+   "bolge": [
+    "{{We ___ to eat lots of fruit and vegetables every day.}}"
+   ]
   },
   {
    "soru": "{{You ___ give chocolate to dogs – it's bad for them.}}",
@@ -688,7 +748,10 @@
    "dogru": 2,
    "ipucu": "Köpeklere kötü geliyorsa ne demeliyiz?",
    "aciklama": "Kötü bir fikir: {{You shouldn't give chocolate to dogs.}} (WB s. 36)",
-   "kavram": "shouldn't"
+   "kavram": "shouldn't",
+   "bolge": [
+    "{{You ___ give chocolate to dogs – it's bad for them.}}"
+   ]
   },
   {
    "soru": "Hangisi doğru?",
@@ -700,7 +763,13 @@
    "dogru": 1,
    "ipucu": "{{should}} değişmez ve sonra {{to}} gelmez.",
    "aciklama": "{{John should get more sleep.}} (WB s. 94)",
-   "kavram": "should"
+   "kavram": "should",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "doğru"
+   ]
   },
   {
    "soru": "Rapor: {{The canteen shouldn't sell fast food.}} Ne demek?",
@@ -712,7 +781,10 @@
    "dogru": 1,
    "ipucu": "{{shouldn't}}: -memeli.",
    "aciklama": "Kantin fast food satmamalı. (SB s. 54)",
-   "kavram": "shouldn't"
+   "kavram": "shouldn't",
+   "bolge": [
+    "Rapor: {{The canteen shouldn't sell fast food.}} Ne demek"
+   ]
   },
   {
    "soru": "{{If you're always late for class, you ___ get up earlier.}}",
@@ -724,6 +796,176 @@
    "dogru": 2,
    "ipucu": "Hep geç kalıyorsan erken kalkmak iyi bir fikir.",
    "aciklama": "{{you should get up earlier}}. (WB s. 36)",
+   "kavram": "should",
+   "bolge": [
+    "{{If you're always late for class, you ___ get up earlier.}}"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "I have a fever. — You should stay in bed and you {shouldn't|should|ought to} go to school.",
+   "s": "SB s. 51"
+  },
+  {
+   "c": "My eyes are tired. — You {shouldn't|should|ought to} look at your phone before bed.",
+   "s": "SB s. 51"
+  },
+  {
+   "c": "What {should we|we should|should we to} do to be healthy?",
+   "s": "SB s. 51"
+  },
+  {
+   "c": "You shouldn't try the 100 k – it's too difficult. You {ought|should|shouldn't} to start with the 50 k.",
+   "s": "SB s. 51"
+  },
+  {
+   "c": "Ilona can't relax: I think she {ought|should|shouldn't} to do yoga.",
+   "s": "WB s. 36"
+  },
+  {
+   "c": "Our fridge is empty so we {ought to|ought|oughts to} go to the shops.",
+   "s": "WB s. 36"
+  },
+  {
+   "c": "Every lesson {should|shouldn't|ought} have a short break in the middle.",
+   "s": "SB s. 54"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Sağlıklı olmak için insanlar ne yapmalı, ne yapmamalı? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "ne yapmalı"
+   ],
+   "okut": [
+    "sağlıklı olmak için insanların ne yapması ve ne yapmaması gerektiğini yazmanı",
+    "yalnızca senin ne yediğini yazmanı",
+    "sağlıklı yiyeceklerin adlarını sıralamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "People",
+     "ornek": "should eat a lot of fruit.",
+     "havuz": [
+      "should to eat a lot of fruit.",
+      "shoulds eat a lot of fruit."
+     ],
+     "k": [
+      "should eat",
+      "should drink",
+      "should get",
+      "should go",
+      "should sleep",
+      "should do",
+      "should walk",
+      "ought to"
+     ]
+    },
+    {
+     "bas": "They",
+     "ornek": "shouldn't eat too many sweets.",
+     "havuz": [
+      "should eat too many sweets.",
+      "ought eat too many sweets."
+     ],
+     "k": [
+      "shouldn"
+     ]
+    }
+   ],
+   "kisa": "People should eat fruit. They shouldn't eat sweets.",
+   "cevap": "People should eat a lot of fruit and vegetables. They shouldn't eat too many sweets or sit all day.",
+   "anahtarlar": [
+    {
+     "ad": "should + fiil",
+     "k": [
+      "should eat",
+      "should drink",
+      "should get",
+      "should go",
+      "should sleep",
+      "should do",
+      "should walk",
+      "ought to"
+     ]
+    },
+    {
+     "ad": "shouldn't + fiil",
+     "k": [
+      "shouldn"
+     ]
+    }
+   ],
+   "sayfa": "SB s. 51",
+   "bolge": [
+    "ne yapmalı, ne yapmamalı"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{The gym is not open enough – only a few hours every day.}}",
+    "{{The gym ought to be open all day.}}"
+   ],
+   "soru": "Metne göre spor salonu ne kadar açık olmalı?",
+   "bolge": [
+    "ne kadar açık olmalı"
+   ],
+   "serit": "spor salonunun açık olması gereken süre",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "all day",
+    "only a few hours every day",
+    "not open enough"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“olmalı” öneridir: “ought to” geçen cümleyi bul.",
+   "kanitIpucu": "“ought to” hangi cümlede?",
+   "aciklama": "“The gym ought to be open all day.” Bütün gün açık olmalı. “Birkaç saat” şu anki durum, yani sorun (SB s. 54).",
+   "kavram": "ought to"
+  },
+  {
+   "metin": [
+    "{{There are too many exams in the same week.}}",
+    "{{Lessons are too long – three hours without a break.}}",
+    "{{There aren't enough computers in the library.}}",
+    "{{Every lesson should have a short break in the middle.}}",
+    "{{There should be enough computers for everyone, and free wi-fi in all the buildings.}}",
+    "{{There should be a mixture of exams and project work, and exams shouldn't all happen in the same week.}}"
+   ],
+   "soru": "Metne göre uzun dersler sorunu için ne öneriliyor?",
+   "bolge": [
+    "uzun dersler",
+    "ne öneriliyor"
+   ],
+   "serit": "uzun derslerin çözümü",
+   "kanit": [
+    3
+   ],
+   "secenekler": [
+    "Every lesson should have a short break.",
+    "Exams shouldn't all happen in the same week.",
+    "There should be enough computers."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Sorun “three hours without a break”. Öneri “should” ile yazılır.",
+   "kanitIpucu": "“lesson” ve “should” hangi cümlede birlikte geçiyor?",
+   "aciklama": "“Every lesson should have a short break in the middle.” Her derste kısa bir mola olmalı. Diğer şıklar sınav ve bilgisayar sorunlarının önerileri (SB s. 54).",
    "kavram": "should"
   }
  ]

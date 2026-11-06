@@ -41,7 +41,10 @@
     ],
     "dogru": 1,
     "ipucu": "Formül: {{How about}} + fiil{{-ing}}.",
-    "aciklama": "{{How about going jogging?}} (SB s. 52)"
+    "aciklama": "{{How about going jogging?}} (SB s. 52)",
+    "bolge": [
+     "{{How about ___ jogging?}}"
+    ]
    }
   },
   {
@@ -80,7 +83,10 @@
     ],
     "dogru": 0,
     "ipucu": "Formül: {{Have you tried}} + fiil{{-ing}}.",
-    "aciklama": "{{Have you tried making healthy snacks?}} (SB s. 53)"
+    "aciklama": "{{Have you tried making healthy snacks?}} (SB s. 53)",
+    "bolge": [
+     "{{Have you tried ___ healthy snacks at home?}}"
+    ]
    }
   },
   {
@@ -119,7 +125,13 @@
     ],
     "dogru": 2,
     "ipucu": "Formül: {{Why}} + {{don't}} + {{you}} + V1.",
-    "aciklama": "{{Why don't you look online?}} (SB s. 53)"
+    "aciklama": "{{Why don't you look online?}} (SB s. 53)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "doğru"
+    ]
    }
   },
   {
@@ -163,7 +175,10 @@
     ],
     "dogru": 1,
     "ipucu": "Formül: {{You could always}} + V1.",
-    "aciklama": "{{You could always ask ...}} (SB s. 53)"
+    "aciklama": "{{You could always ask ...}} (SB s. 53)",
+    "bolge": [
+     "{{You ___ always ask your mum or dad to help you.}}"
+    ]
    }
   },
   {
@@ -202,7 +217,10 @@
     ],
     "dogru": 0,
     "ipucu": "Karttaki {{Make sure!}} balonunu hatırla.",
-    "aciklama": "{{Make sure you ...}} (SB s. 52)"
+    "aciklama": "{{Make sure you ...}} (SB s. 52)",
+    "bolge": [
+     "Önemli bir uyarı: {{___ sure you listen to something gentle.}}"
+    ]
    }
   },
   {
@@ -241,7 +259,10 @@
     ],
     "dogru": 2,
     "ipucu": "Formül: {{I recommend}} + fiil{{-ing}}.",
-    "aciklama": "{{I recommend having ...}} (SB s. 53)"
+    "aciklama": "{{I recommend having ...}} (SB s. 53)",
+    "bolge": [
+     "{{I recommend always ___ enough fruit in the house.}}"
+    ]
    }
   }
  ],
@@ -651,7 +672,13 @@
    "ipucu": "{{don't}} var mı? Fiil {{look}} mu {{go}} mu?",
    "aciklama": "Duyduğun cümle {{Why don't you look online?}} (SB s. 53)",
    "dinle": "Why don't you look online?",
-   "kavram": "Why don't you …?"
+   "kavram": "Why don't you …?",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -664,7 +691,13 @@
    "ipucu": "Başta {{Make}} mi {{Be}} mi? Sonda {{gentle}} mı {{loud}} mı?",
    "aciklama": "Duyduğun cümle {{Make sure you listen to something gentle.}} (SB s. 52)",
    "dinle": "Make sure you listen to something gentle.",
-   "kavram": "Make sure you …"
+   "kavram": "Make sure you …",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Robby: {{Jogging isn't your thing? You could just ___ for a walk.}}",
@@ -676,7 +709,10 @@
    "dogru": 1,
    "ipucu": "{{You could}}'dan sonra fiil yalın.",
    "aciklama": "{{You could just go for a walk.}} (SB s. 52)",
-   "kavram": "You could always/just …"
+   "kavram": "You could always/just …",
+   "bolge": [
+    "Robby: {{Jogging isn't your thing? You could just ___ for a walk.}}"
+   ]
   },
   {
    "soru": "Arkadaşın {{I'm going to try it.}} demek istiyor. Hangisini söyler?",
@@ -695,7 +731,13 @@
      "'Deneyeceğim' hangi kalıp?",
      "İçinde {{give}} geçen kalıbı düşün."
     ]
-   }
+   },
+   "tetik": [
+    "Hangisini"
+   ],
+   "bolge": [
+    "Hangisini söyler"
+   ]
   },
   {
    "soru": "{{I can recommend ___ a therapy dog.}}",
@@ -707,7 +749,10 @@
    "dogru": 2,
    "ipucu": "{{recommend}}'dan sonra fiil {{-ing}} alır.",
    "aciklama": "{{I can recommend trying a therapy dog.}} (WB s. 37)",
-   "kavram": "I recommend + -ing"
+   "kavram": "I recommend + -ing",
+   "bolge": [
+    "{{I can recommend ___ a therapy dog.}}"
+   ]
   },
   {
    "soru": "{{Have you ever tried ___ with a cat when you're stressed?}}",
@@ -719,7 +764,10 @@
    "dogru": 0,
    "ipucu": "{{Have you tried}} + fiil{{-ing}}.",
    "aciklama": "{{Have you ever tried sitting with a cat?}} (WB s. 37)",
-   "kavram": "Have you tried + -ing?"
+   "kavram": "Have you tried + -ing?",
+   "bolge": [
+    "{{Have you ever tried ___ with a cat when you're stressed?}}"
+   ]
   },
   {
    "soru": "Hangi kalıptan sonra fiil {{-ing}} alır?",
@@ -731,7 +779,13 @@
    "dogru": 1,
    "ipucu": "Robby'nin koşu önerisini hatırla: {{How about going jogging?}}",
    "aciklama": "{{How about}} + {{-ing}}. (SB s. 52)",
-   "kavram": "How about + -ing?"
+   "kavram": "How about + -ing?",
+   "tetik": [
+    "Hangi kalıptan"
+   ],
+   "bolge": [
+    "Hangi kalıptan sonra"
+   ]
   },
   {
    "soru": "Forum: {{___ you look online for a therapy pet centre near you?}}",
@@ -743,7 +797,10 @@
    "dogru": 0,
    "ipucu": "Boşluktan sonra {{you look}} geliyor: kibar öneri.",
    "aciklama": "{{Why don't you look online ...?}} (WB s. 37)",
-   "kavram": "Why don't you …?"
+   "kavram": "Why don't you …?",
+   "bolge": [
+    "Forum: {{___ you look online for a therapy pet centre near you?}}"
+   ]
   },
   {
    "soru": "Brightongirl: {{You could always ask your mum or dad to help you.}} Ne demek?",
@@ -755,7 +812,10 @@
    "dogru": 1,
    "ipucu": "{{You could}}: … yapabilirsin. {{ask ... to help you}}: sana yardım etmelerini istemek.",
    "aciklama": "Annenden ya da babandan yardım isteyebilirsin. (SB s. 53)",
-   "kavram": "You could always/just …"
+   "kavram": "You could always/just …",
+   "bolge": [
+    "Brightongirl: {{You could always ask your mum or dad to help you.}} Ne demek"
+   ]
   },
   {
    "soru": "{{Tomorrow, ___ sure you don't post more than 200 photos.}}",
@@ -767,7 +827,172 @@
    "dogru": 0,
    "ipucu": "Beatriz'in hatasını hatırla: {{do sure}} değil.",
    "aciklama": "{{make sure}}. (SB s. 57)",
-   "kavram": "Make sure you …"
+   "kavram": "Make sure you …",
+   "bolge": [
+    "{{Tomorrow, ___ sure you don't post more than 200 photos.}}"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "How about {going|go|to go} jogging? Exercise always works for me!",
+   "s": "SB s. 52"
+  },
+  {
+   "c": "You could just {go|going|to go} for a walk. You definitely shouldn't study all night.",
+   "s": "SB s. 52"
+  },
+  {
+   "c": "But make sure you {listen|listening|to listen} to something gentle.",
+   "s": "SB s. 52"
+  },
+  {
+   "c": "Have you tried {making|make|to make} healthy snacks at home?",
+   "s": "SB s. 53"
+  },
+  {
+   "c": "Why don't you {look|looking|to look} online for some ideas?",
+   "s": "SB s. 53"
+  },
+  {
+   "c": "Also, I recommend always {having|have|to have} enough fruit in the house.",
+   "s": "SB s. 53"
+  },
+  {
+   "c": "Or you {could|would|are} always ask at your local vets – they ought to be able to help.",
+   "s": "WB s. 37"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Arkadaşın yeni arkadaşlar edinmek istiyor ama çok utangaç. Ona iki İngilizce tavsiye yaz.",
+   "tetik": [
+    "tavsiye"
+   ],
+   "okut": [
+    "utangaç arkadaşına yeni arkadaş edinmesi için iki tavsiye yazmanı",
+    "utangaç olmanın ne demek olduğunu açıklamanı",
+    "kendi arkadaşlarının adlarını yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Why don't you",
+     "ornek": "join a sports club?",
+     "havuz": [
+      "joined a sports club?",
+      "joins a sports club?"
+     ],
+     "k": [
+      "join a",
+      "talk to",
+      "go to",
+      "ask ",
+      "say hello",
+      "play "
+     ]
+    },
+    {
+     "bas": "How about",
+     "ornek": "talking to one new person every day?",
+     "havuz": [
+      "talk to one new person every day?",
+      "to talk to one new person every day?"
+     ],
+     "k": [
+      "ing"
+     ]
+    }
+   ],
+   "kisa": "Why don't you join a club? How about talking to people?",
+   "cevap": "Why don't you join a sports club? How about talking to one new person every day? You could always say hello first.",
+   "anahtarlar": [
+    {
+     "ad": "Why don't you + yalın fiil",
+     "k": [
+      "join a",
+      "talk to",
+      "go to",
+      "ask ",
+      "say hello",
+      "play "
+     ]
+    },
+    {
+     "ad": "How about + -ing",
+     "k": [
+      "ing"
+     ]
+    }
+   ],
+   "sayfa": "SB s. 52",
+   "bolge": [
+    "iki İngilizce tavsiye yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Nicole: Jogging isn't really my thing.}}",
+    "{{Robby: You could just go for a walk. You definitely shouldn't study all night.}}"
+   ],
+   "soru": "Metne göre Robby koşu yerine ne öneriyor?",
+   "bolge": [
+    "koşu yerine ne öneriyor"
+   ],
+   "serit": "koşu yerine önerilen şey",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "to go for a walk",
+    "to go jogging",
+    "to study all night"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Öneri kalıbı “You could just …”.",
+   "kanitIpucu": "“You could just” hangi cümlede?",
+   "aciklama": "“You could just go for a walk.” Koşu Nicole'e göre değil; Robby yürüyüşe çıkmasını öneriyor (SB s. 52).",
+   "kavram": "You could always/just …"
+  },
+  {
+   "metin": [
+    "{{A lot of us eat too many snacks, so you're not alone.}}",
+    "{{Have you tried making healthy snacks at home?}}",
+    "{{I used to buy lots of crisps and sweets, but now I make healthy sandwiches and take them to school.}}",
+    "{{Why don't you look online for some ideas?}}",
+    "{{Also, I recommend always having enough fruit in the house.}}",
+    "{{If they offer you an unhealthy snack, offer them a piece of your orange!}}"
+   ],
+   "soru": "Metne göre Brightongirl şimdi okula ne götürüyor?",
+   "bolge": [
+    "şimdi okula ne götürüyor"
+   ],
+   "serit": "şimdi okula götürdüğü şey",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "healthy sandwiches",
+    "crisps and sweets",
+    "a piece of orange"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“şimdi” İngilizcede “now”, “okula götürmek” “take to school”.",
+   "kanitIpucu": "“school” hangi cümlede?",
+   "aciklama": "“…but now I make healthy sandwiches and take them to school.” Şimdi sağlıklı sandviçler götürüyor. Cips ve şekerleri eskiden alıyordu (SB s. 53).",
+   "kavram": "Have you tried + -ing?"
   }
  ]
 }
