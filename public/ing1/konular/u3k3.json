@@ -23,7 +23,13 @@
     ],
     "dogru": 0,
     "ipucu": "{{When}} zamanı sorar; doğum yılını bul.",
-    "aciklama": "{{When}} zaman sorar: {{He was born in 1791.}} (s. 48)"
+    "aciklama": "{{When}} zaman sorar: {{He was born in 1791.}} (s. 48)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "{{When was Samuel Morse born?}} Hangisi cevap"
+    ]
    },
    "formul": [
     [
@@ -83,7 +89,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta saat vardı. {{When}} ne demekti?",
-    "aciklama": "{{When}} ne zaman demektir: ne zaman evlendin? (s. 52)"
+    "aciklama": "{{When}} ne zaman demektir: ne zaman evlendin? (s. 52)",
+    "tetik": [
+     "neyi soruyor"
+    ],
+    "bolge": [
+     "{{When did you get married?}} Bu soru neyi soruyor"
+    ]
    },
    "formul": [
     [
@@ -127,7 +139,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta soru balonunun karşısında bir ampul, yani bir sebep vardı.",
-    "aciklama": "{{Why}} sebep sorar; cevap {{Because}} ile başlar. (s. 57)"
+    "aciklama": "{{Why}} sebep sorar; cevap {{Because}} ile başlar. (s. 57)",
+    "tetik": [
+     "hangi kelimeyle"
+    ],
+    "bolge": [
+     "{{Why did you move to New York?}} Cevap hangi kelimeyle başlar"
+    ]
    },
    "formul": [
     [
@@ -182,7 +200,13 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta bir tik ve bir çarpı vardı.",
-    "aciklama": "{{Did you …?}} evet/hayır sorusudur: {{No.}} (s. 52)"
+    "aciklama": "{{Did you …?}} evet/hayır sorusudur: {{No.}} (s. 52)",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "nasıl cevap verilir"
+    ]
    },
    "formul": [
     [
@@ -225,7 +249,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta takvimde bir gün yazıyordu.",
-    "aciklama": "Gün ve ay varsa {{on}}: {{on 30th March 1432}}. (s. 49)"
+    "aciklama": "Gün ve ay varsa {{on}}: {{on 30th March 1432}}. (s. 49)",
+    "tetik": [
+     "neden"
+    ],
+    "bolge": [
+     "{{Mehmed II was born on 30th March 1432.}} Burada neden {{on}} var"
+    ]
    },
    "formul": [
     [
@@ -270,7 +300,10 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta mumlu bir doğum günü pastası vardı.",
-    "aciklama": "{{at the age of 72}} 72 yaşında demektir. (s. 59)"
+    "aciklama": "{{at the age of 72}} 72 yaşında demektir. (s. 59)",
+    "bolge": [
+     "{{He died in 2010 at the age of 72.}} Ne anlatıyor"
+    ]
    },
    "formul": [
     [
@@ -366,7 +399,13 @@
    "ipucu": "Soru kelimesine ve olaya dikkat et: ne zaman mı, nerede mi? Doğdu mu, öldü mü?",
    "aciklama": "Duyduğun soru {{When was Newton born?}} (s. 50)",
    "dinle": "When was Newton born?",
-   "kavram": "When / Where were you born?"
+   "kavram": "When / Where were you born?",
+   "tetik": [
+    "Hangi soruyu"
+   ],
+   "bolge": [
+    "Dinle. Hangi soruyu duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi soruyu duydun?",
@@ -379,7 +418,13 @@
    "ipucu": "İlk kelimeyi dikkatle dinle: zaman mı, sebep mi soruyor?",
    "aciklama": "Duyduğun soru {{Why did you move to New York?}} (s. 57)",
    "dinle": "Why did you move to New York?",
-   "kavram": "Why did you …?"
+   "kavram": "Why did you …?",
+   "tetik": [
+    "Hangi soruyu"
+   ],
+   "bolge": [
+    "Dinle. Hangi soruyu duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -392,7 +437,13 @@
    "ipucu": "Günü ve yılı ayrı ayrı dinle. Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun cümle {{Mehmed II was born on 30th March 1432 in Edirne.}} (s. 49)",
    "dinle": "Mehmed II was born on 30th March 1432 in Edirne.",
-   "kavram": "in / on + tarih"
+   "kavram": "in / on + tarih",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{___ did you get married?}} — {{In 2014.}} Boşluğa ne gelir?",
@@ -404,7 +455,10 @@
    "dogru": 1,
    "ipucu": "Cevap bir yıl. Hangi soru kelimesi zamanı sorar?",
    "aciklama": "Cevap bir yıl olduğu için soru {{When}}: {{When did you get married?}} (s. 52, s. 57)",
-   "kavram": "When did you …?"
+   "kavram": "When did you …?",
+   "bolge": [
+    "{{___ did you get married?}} — {{In 2014.}} Boşluğa ne gelir"
+   ]
   },
   {
    "soru": "{{Why did you move to New York?}} Hangisi uygun cevap?",
@@ -416,7 +470,13 @@
    "dogru": 0,
    "ipucu": "{{Why}} sebep sorar. Sebep hangi kelimeyle başlıyordu?",
    "aciklama": "Sebep {{Because}} ile: {{Because I wanted to make music in New York.}} (s. 57)",
-   "kavram": "Why did you …?"
+   "kavram": "Why did you …?",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "{{Why did you move to New York?}} Hangisi uygun cevap"
+   ]
   },
   {
    "soru": "Hangi soru doğru yazılmış?",
@@ -435,7 +495,13 @@
      "{{Did}} geçmişi gösterir; fiile {{-ed}} eklenmez.",
      "Hangi şıkta hem {{Did}} hem yalın {{live}} var?"
     ]
-   }
+   },
+   "tetik": [
+    "Hangi soru"
+   ],
+   "bolge": [
+    "doğru yazılmış"
+   ]
   },
   {
    "soru": "{{Mehmed II died ___ 3rd May, 1481.}}",
@@ -447,7 +513,10 @@
    "dogru": 2,
    "ipucu": "Tarihte gün ve ay da var mı?",
    "aciklama": "Gün ve ay varsa {{on}}: {{He died on 3rd May, 1481.}} (s. 49)",
-   "kavram": "in / on + tarih"
+   "kavram": "in / on + tarih",
+   "bolge": [
+    "{{Mehmed II died ___ 3rd May, 1481.}}"
+   ]
   },
   {
    "soru": "{{Louis Braille was born ___ 1809.}}",
@@ -459,7 +528,10 @@
    "dogru": 0,
    "ipucu": "Burada yalnız yıl var.",
    "aciklama": "Yalnız yıl varsa {{in}}: {{in 1809}}. (s. 49)",
-   "kavram": "in / on + tarih"
+   "kavram": "in / on + tarih",
+   "bolge": [
+    "{{Louis Braille was born ___ 1809.}}"
+   ]
   },
   {
    "soru": "{{He died in 2010 at the age of 72.}} Oliver öldüğünde kaç yaşındaydı?",
@@ -471,7 +543,13 @@
    "dogru": 2,
    "ipucu": "{{at the age of}}'tan sonraki sayıya bak.",
    "aciklama": "{{at the age of 72}}: 72 yaşında. 2010 ise yıl. (s. 59)",
-   "kavram": "at the age of"
+   "kavram": "at the age of",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç yaşındaydı"
+   ]
   },
   {
    "soru": "{{When were you born?}} Hangisi uygun cevap?",
@@ -483,7 +561,13 @@
    "dogru": 1,
    "ipucu": "{{When}} zaman sorar. Hangi şıkta yıl var?",
    "aciklama": "Zaman soruluyor: {{in 1944}}. {{Phoenix}} bir yer, öteki bir sebep. (s. 61)",
-   "kavram": "When / Where were you born?"
+   "kavram": "When / Where were you born?",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "{{When were you born?}} Hangisi uygun cevap"
+   ]
   }
  ],
  "kelimeler": [
@@ -772,5 +856,159 @@
     ]
    }
   ]
- }
+ },
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "When {were|did|was} you born? — I was born in London in 1987.",
+   "s": "s. 57"
+  },
+  {
+   "c": "When did you {get|got|gets} married? — In 1976.",
+   "s": "s. 52"
+  },
+  {
+   "c": "{Why|When|Where} did you move to New York? — Because I wanted to make music in New York.",
+   "s": "s. 57"
+  },
+  {
+   "c": "{Did|Do|Were} you always live in Manchester? — No. I was born in Birmingham.",
+   "s": "s. 52"
+  },
+  {
+   "c": "Mehmed II was born {on|in|at} 30th March 1432 in Edirne.",
+   "s": "s. 49"
+  },
+  {
+   "c": "Louis Braille was born {in|on|at} 1809 in France.",
+   "s": "s. 49"
+  },
+  {
+   "c": "He died in 2010 {at|on|in} the age of 72.",
+   "s": "s. 59"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Büyüklerinden birine iki İngilizce soru yaz: biri ne zaman doğduğunu, biri neden taşındığını sorsun.",
+   "tetik": [
+    "ne zaman"
+   ],
+   "okut": [
+    "büyüğüne doğum zamanını ve taşınma sebebini soran iki soru yazmanı",
+    "kendi doğum yılını ve şehrini yazmanı",
+    "büyüğünün nerede doğduğunu soran tek bir soru yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "When",
+     "ornek": "were you born?",
+     "havuz": [
+      "did you born?",
+      "you were born?"
+     ],
+     "k": [
+      "were you born"
+     ]
+    },
+    {
+     "bas": "Why",
+     "ornek": "did you move?",
+     "havuz": [
+      "you moved?",
+      "do you moved?"
+     ],
+     "k": [
+      "did you move"
+     ]
+    }
+   ],
+   "kisa": "When were you born? Why did you move?",
+   "cevap": "When were you born, grandad? Why did you move to Manchester?",
+   "anahtarlar": [
+    {
+     "ad": "When were you born?",
+     "k": [
+      "were you born"
+     ]
+    },
+    {
+     "ad": "Why did you move …?",
+     "k": [
+      "did you move"
+     ]
+    }
+   ],
+   "sayfa": "s. 52",
+   "bolge": [
+    "ne zaman doğduğunu",
+    "neden taşındığını"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Mehmed II was born on 30th March 1432 in Edirne.}}",
+    "{{Mehmed II became Sultan twice, first when he was 12 and again when he was 19.}}"
+   ],
+   "soru": "Metne göre II. Mehmed ilk kez kaç yaşında padişah oldu?",
+   "bolge": [
+    "ilk kez kaç yaşında padişah oldu"
+   ],
+   "serit": "ilk kez padişah olduğu yaş",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "when he was 12",
+    "when he was 19",
+    "in 1432"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Soru “ilk kez” diyor. İngilizcede “first” kelimesini bul.",
+   "kanitIpucu": "“Sultan” kelimesi hangi cümlede geçiyor?",
+   "aciklama": "“…first when he was 12 and again when he was 19.” İlk kez 12, ikinci kez 19 yaşında padişah oldu (s. 49).",
+   "kavram": "at the age of"
+  },
+  {
+   "metin": [
+    "{{Oliver Bennett was born in Manchester on 12th March in 1938.}}",
+    "{{In 1960, Oliver released his first record.}}",
+    "{{It became very popular.}}",
+    "{{It was also the year he appeared in his first film.}}",
+    "{{He stopped performing when he was 65.}}",
+    "{{He died in 2010 at the age of 72.}}"
+   ],
+   "soru": "Metne göre Oliver ilk filminde hangi yıl oynadı?",
+   "bolge": [
+    "ilk filminde hangi yıl oynadı"
+   ],
+   "serit": "ilk filminin yılı",
+   "kanit": [
+    1,
+    3
+   ],
+   "secenekler": [
+    "in 1960",
+    "in 1938",
+    "in 2010"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“first film” cümlesinde yıl yazmıyor; “the year” hangi yılı gösteriyor?",
+   "kanitIpucu": "“his first film” hangi cümlede geçiyor?",
+   "aciklama": "“It was also the year he appeared in his first film.” “O yıl”, ilk plağını çıkardığı 1960'tır (s. 59).",
+   "kavram": "in / on + tarih"
+  }
+ ]
 }

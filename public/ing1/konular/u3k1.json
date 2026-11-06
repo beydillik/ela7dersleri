@@ -23,7 +23,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta {{born}} kelimesinin anlamı vardı.",
-    "aciklama": "{{was born}} doğdu demektir: 1809'da Fransa'da doğdu. (s. 49)"
+    "aciklama": "{{was born}} doğdu demektir: 1809'da Fransa'da doğdu. (s. 49)",
+    "bolge": [
+     "{{Louis Braille was born in 1809 in France.}} Bu cümle ne anlatıyor"
+    ]
    },
    "formul": [
     [
@@ -83,7 +86,10 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta küçükten büyüğe sıralanmış üç kişi vardı.",
-    "aciklama": "{{grew up}} büyüdüm demektir. (s. 62)"
+    "aciklama": "{{grew up}} büyüdüm demektir. (s. 62)",
+    "bolge": [
+     "{{I grew up in Venice.}} {{grew up}} ne demek"
+    ]
    },
    "formul": [
     [
@@ -135,7 +141,10 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta bir evden ötekine giden ok vardı.",
-    "aciklama": "{{moved}} taşındı demektir. (s. 52)"
+    "aciklama": "{{moved}} taşındı demektir. (s. 52)",
+    "bolge": [
+     "{{We moved to Manchester in 1954.}} 1954'te ne oldu"
+    ]
    },
    "formul": [
     [
@@ -187,7 +196,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta pencereden bakan, evden çıkmayan biri vardı.",
-    "aciklama": "{{stayed}} kaldı demektir: çoğu zaman evde kaldı. (s. 51)"
+    "aciklama": "{{stayed}} kaldı demektir: çoğu zaman evde kaldı. (s. 51)",
+    "bolge": [
+     "{{He stayed at home most of the time.}} Ne yaptı"
+    ]
    },
    "formul": [
     [
@@ -239,7 +251,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta açık bir kitap vardı.",
-    "aciklama": "{{studied hard}} çok çalıştı demektir. (s. 57)"
+    "aciklama": "{{studied hard}} çok çalıştı demektir. (s. 57)",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "nasıl bir öğrenciydi"
+    ]
    },
    "formul": [
     [
@@ -291,7 +309,10 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta kep ve diploma vardı.",
-    "aciklama": "{{graduated}} mezun oldu demektir. (s. 57)"
+    "aciklama": "{{graduated}} mezun oldu demektir. (s. 57)",
+    "bolge": [
+     "{{She graduated from university four years ago.}} Emma ne yaptı"
+    ]
    },
    "formul": [
     [
@@ -409,7 +430,13 @@
    "ipucu": "İki şeye dikkat et: doğdu mu, öldü mü? Hangi yıl? Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun cümle {{Louis Braille was born in 1809 in France.}} (s. 49)",
    "dinle": "Louis Braille was born in 1809 in France.",
-   "kavram": "be born"
+   "kavram": "be born",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -422,7 +449,13 @@
    "ipucu": "Taşındılar mı, kaldılar mı? Hangi şehir?",
    "aciklama": "Duyduğun cümle {{Then, we moved to Manchester in 1954.}} (s. 52)",
    "dinle": "Then, we moved to Manchester in 1954.",
-   "kavram": "move"
+   "kavram": "move",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -435,7 +468,13 @@
    "ipucu": "Mezun mu oldu, okudu mu? Okul mu, üniversite mi?",
    "aciklama": "Duyduğun cümle {{She graduated from university four years ago.}} (s. 57)",
    "dinle": "She graduated from university four years ago.",
-   "kavram": "graduate"
+   "kavram": "graduate",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{Amanda Key was ___ in Madrid.}} Boşluğa ne gelir?",
@@ -447,7 +486,10 @@
    "dogru": 0,
    "ipucu": "{{was}} ile birlikte kullanılan kelimeyi hatırla.",
    "aciklama": "{{was born}} doğdu: {{Amanda Key was born in Madrid.}} (s. 61)",
-   "kavram": "be born"
+   "kavram": "be born",
+   "bolge": [
+    "{{Amanda Key was ___ in Madrid.}} Boşluğa ne gelir"
+   ]
   },
   {
    "soru": "{{She grew up there till she was twelve. Then, she ___ to England to attend a university.}}",
@@ -459,7 +501,10 @@
    "dogru": 1,
    "ipucu": "İtalya'dan İngiltere'ye gitti. Başka şehre gitmeye ne deniyordu?",
    "aciklama": "Başka ülkeye gitti: {{moved}} taşındı. (s. 57)",
-   "kavram": "move"
+   "kavram": "move",
+   "bolge": [
+    "{{She grew up there till she was twelve. Then, she ___ to England to attend a university.}}"
+   ]
   },
   {
    "soru": "{{grow up}} kelimesinin geçmiş hâli hangisi?",
@@ -478,7 +523,13 @@
      "{{grow}} kurala uymaz, {{-ed}} almaz.",
      "Kartta {{I grew up in Venice.}} cümlesi vardı."
     ]
-   }
+   },
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{grow up}} kelimesinin geçmiş hâli hangisi"
+   ]
   },
   {
    "soru": "{{Helen ___ in New York till 2015. She lives in Miami now.}} Hangisi uygun?",
@@ -490,7 +541,13 @@
    "dogru": 1,
    "ipucu": "2015'e kadar New York'ta ne yaptı? Orada durdu.",
    "aciklama": "2015'e kadar New York'ta kaldı: {{stayed}}. (s. 46)",
-   "kavram": "stay"
+   "kavram": "stay",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "{{Helen ___ in New York till 2015. She lives in Miami now.}} Hangisi uygun"
+   ]
   },
   {
    "soru": "Bill'in hayatı sırayla: {{born in 1986}} → {{grew up in Liverpool}} → {{studied chemistry}} → ? Sırada hangisi var?",
@@ -509,7 +566,13 @@
      "Okuyan biri sonra okulu bitirir.",
      "Şıklardan hangisi daha önce olmadı?"
     ]
-   }
+   },
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Sırada hangisi var"
+   ]
   },
   {
    "soru": "{{Bill ___ chemistry at university.}} Boşluğa ne gelir?",
@@ -521,7 +584,10 @@
    "dogru": 2,
    "ipucu": "Üniversitede bir bölümde eğitim almak: hangi kelimeydi?",
    "aciklama": "Kimya okudu: {{Bill studied chemistry at university.}} (s. 56)",
-   "kavram": "study"
+   "kavram": "study",
+   "bolge": [
+    "{{Bill ___ chemistry at university.}} Boşluğa ne gelir"
+   ]
   },
   {
    "soru": "{{To go from one residence or location to another}} tanımı hangi kelimenin?",
@@ -533,7 +599,13 @@
    "dogru": 1,
    "ipucu": "Bir yerden başka bir yere gitmek. Kartta bir evden ötekine ok vardı.",
    "aciklama": "Bir yerden başka yere gitmek {{move}}dur. (s. 55)",
-   "kavram": "move"
+   "kavram": "move",
+   "tetik": [
+    "hangi kelimenin"
+   ],
+   "bolge": [
+    "{{To go from one residence or location to another}} tanımı hangi kelimenin"
+   ]
   }
  ],
  "kelimeler": [
@@ -800,5 +872,158 @@
     ]
    }
   ]
- }
+ },
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Louis Braille was {born|died|moved} in 1809 in France.",
+   "s": "s. 49"
+  },
+  {
+   "c": "Helen {stayed|moved|was born} in New York till 2015. She lives in Miami now.",
+   "s": "s. 46"
+  },
+  {
+   "c": "I was born in Birmingham. Then, we {moved|stayed|studied} to Manchester in 1954.",
+   "s": "s. 52"
+  },
+  {
+   "c": "Bill {studied|was born|moved} chemistry at university.",
+   "s": "s. 56"
+  },
+  {
+   "c": "She {graduated|grew up|stayed} from university four years ago.",
+   "s": "s. 57"
+  },
+  {
+   "c": "When he was 12, he joined a military school. Later on, he {graduated|was born|stayed} from the military academy in İstanbul.",
+   "s": "s. 54"
+  },
+  {
+   "c": "I {grew up|got married|died} in Venice. My family moved to Rome when I was 13.",
+   "s": "s. 62"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Kendi hayatını iki İngilizce cümleyle anlat: nerede doğdun ve nerede büyüdün?",
+   "tetik": [
+    "nerede"
+   ],
+   "okut": [
+    "İngilizce iki cümleyle nerede doğduğunu ve nerede büyüdüğünü yazmanı",
+    "yalnızca nerede doğduğunu yazmanı",
+    "doğduğun yılı ve okulunun adını yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "I was",
+     "ornek": "born in Ankara.",
+     "havuz": [
+      "died in Ankara.",
+      "graduated in Ankara."
+     ],
+     "k": [
+      "born"
+     ]
+    },
+    {
+     "bas": "I",
+     "ornek": "grew up in İzmir.",
+     "havuz": [
+      "got married in İzmir.",
+      "moved from İzmir."
+     ],
+     "k": [
+      "grew up",
+      "grow up"
+     ]
+    }
+   ],
+   "kisa": "I was born in Ankara. I grew up in İzmir.",
+   "cevap": "I was born in Ankara in 2013. I grew up in İzmir with my family.",
+   "anahtarlar": [
+    {
+     "ad": "was born in …",
+     "k": [
+      "born"
+     ]
+    },
+    {
+     "ad": "grew up in …",
+     "k": [
+      "grew up",
+      "grow up"
+     ]
+    }
+   ],
+   "sayfa": "s. 56",
+   "bolge": [
+    "nerede doğdun ve nerede büyüdün"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{No. I was born in Birmingham.}}",
+    "{{Then, we moved to Manchester in 1954.}}"
+   ],
+   "soru": "Metne göre Mr Butler 1954'te ne yaptı?",
+   "bolge": [
+    "1954'te ne yaptı"
+   ],
+   "serit": "1954'te yapılan şey",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "He moved to Manchester.",
+    "He was born in Birmingham.",
+    "He grew up in Birmingham."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "1954 yılının geçtiği cümleyi bul.",
+   "kanitIpucu": "“1954” hangi cümlede yazıyor?",
+   "aciklama": "“Then, we moved to Manchester in 1954.” 1954'te Manchester'a taşındılar. Birmingham doğduğu yerdir (s. 52).",
+   "kavram": "move"
+  },
+  {
+   "metin": [
+    "{{Thomas Edison was born in 1847 in the USA.}}",
+    "{{He started school when he was eight years old.}}",
+    "{{His teachers said he had difficulties in learning, so he left school and stayed at home most of the time.}}",
+    "{{Thomas rarely went to school. That's why his mother taught him.}}",
+    "{{When he was twelve years old, he left school permanently and began to work at a newsagent's.}}"
+   ],
+   "soru": "Metne göre Edison okulu bırakınca çoğu zaman nerede kaldı?",
+   "bolge": [
+    "çoğu zaman nerede kaldı"
+   ],
+   "serit": "Edison'ın çoğu zaman kaldığı yer",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "at home",
+    "at a newsagent's",
+    "at school"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“kaldı” İngilizcede “stayed” demek. Bu kelimeyi metinde ara.",
+   "kanitIpucu": "“stayed” ve “most of the time” hangi cümlede?",
+   "aciklama": "“…so he left school and stayed at home most of the time.” Çoğu zaman evde kaldı. Gazete bayisinde (newsagent's) 12 yaşından sonra çalıştı (s. 51; cümleler kitaptaki sıralama etkinliğinin doğru sırasıyla).",
+   "kavram": "stay"
+  }
+ ]
 }

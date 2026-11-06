@@ -23,7 +23,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta Dodo kuşu vardı: {{There aren't any Dodo birds in the world.}}",
-    "aciklama": "{{extinct}}: o hayvandan dünyada hiç kalmadı. (s. 79)"
+    "aciklama": "{{extinct}}: o hayvandan dünyada hiç kalmadı. (s. 79)",
+    "bolge": [
+     "ne söyleriz"
+    ]
    }
   },
   {
@@ -44,7 +47,10 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta {{there aren't many tigers}} vardı: çok değil, az.",
-    "aciklama": "{{endangered}}: çok az kaldı. {{This means there aren't many tigers in the world.}} (s. 70)"
+    "aciklama": "{{endangered}}: çok az kaldı. {{This means there aren't many tigers in the world.}} (s. 70)",
+    "bolge": [
+     "{{Tigers are endangered.}} Bu ne demek"
+    ]
    }
   },
   {
@@ -65,7 +71,10 @@
     ],
     "dogru": 1,
     "ipucu": "{{hunt}} kartının anlamına bak; {{-ed}} geçmiş demek.",
-    "aciklama": "{{hunt}} avlamak, {{hunted}} avladı. (s. 68)"
+    "aciklama": "{{hunt}} avlamak, {{hunted}} avladı. (s. 68)",
+    "bolge": [
+     "{{Men hunted wild animals.}} {{hunted}} ne demek"
+    ]
    }
   },
   {
@@ -86,7 +95,13 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta kaplanın çizgili {{fur}}'ü vardı.",
-    "aciklama": "{{because they want to take their beautiful fur}}: güzel kürkleri için. (s. 70)"
+    "aciklama": "{{because they want to take their beautiful fur}}: güzel kürkleri için. (s. 70)",
+    "tetik": [
+     "neden"
+    ],
+    "bolge": [
+     "İnsanlar kaplanları neden avlıyor"
+    ]
    }
   },
   {
@@ -107,7 +122,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta {{It has tusks and a trunk.}} vardı. Hortumu olan hayvan?",
-    "aciklama": "Filin fildişleri ve hortumu vardır. (s. 68)"
+    "aciklama": "Filin fildişleri ve hortumu vardır. (s. 68)",
+    "tetik": [
+     "Hangi hayvanın"
+    ],
+    "bolge": [
+     "Hangi hayvanın {{tusks}}'ı vardır"
+    ]
    }
   },
   {
@@ -128,7 +149,10 @@
     ],
     "dogru": 0,
     "ipucu": "{{destroy}} kartının anlamını hatırla.",
-    "aciklama": "{{destroyed}} yok etti: tarla için yaşam alanlarını yok ettiler. (s. 68)"
+    "aciklama": "{{destroyed}} yok etti: tarla için yaşam alanlarını yok ettiler. (s. 68)",
+    "bolge": [
+     "{{They destroyed their habitats to make fields.}} İnsanlar ne yaptı"
+    ]
    }
   },
   {
@@ -149,7 +173,10 @@
     ],
     "dogru": 1,
     "ipucu": "Karttaki fabrika dumanını düşün.",
-    "aciklama": "{{pollute}} kirletmek, {{polluted}} kirletti. (s. 68)"
+    "aciklama": "{{pollute}} kirletmek, {{polluted}} kirletti. (s. 68)",
+    "bolge": [
+     "{{They also polluted the environment.}} {{polluted}} ne demek"
+    ]
    }
   }
  ],
@@ -238,7 +265,13 @@
    "ipucu": "Hangi hayvan? Hiç kalmadı mı, az mı kaldı? Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun cümle {{In fact, tigers are endangered.}} (s. 70)",
    "dinle": "In fact, tigers are endangered.",
-   "kavram": "endangered"
+   "kavram": "endangered",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -251,7 +284,13 @@
    "ipucu": "Yok ettiler mi, kirlettiler mi? Ne yapmak için?",
    "aciklama": "Duyduğun cümle {{They destroyed their habitats to make fields.}} (s. 68)",
    "dinle": "They destroyed their habitats to make fields.",
-   "kavram": "destroy"
+   "kavram": "destroy",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -264,7 +303,13 @@
    "ipucu": "Kirlettiler mi, korudular mı?",
    "aciklama": "Duyduğun cümle {{They also polluted the environment.}} (s. 68)",
    "dinle": "They also polluted the environment.",
-   "kavram": "pollute"
+   "kavram": "pollute",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{There aren't any Dodo birds in the world.}} Dodo kuşu için hangisi doğru?",
@@ -276,7 +321,13 @@
    "dogru": 2,
    "ipucu": "Hiç kalmamışsa hangi kelime?",
    "aciklama": "Dünyada hiç kalmadıysa nesli tükenmiştir: {{extinct}}. (s. 79)",
-   "kavram": "extinct"
+   "kavram": "extinct",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğru"
+   ]
   },
   {
    "soru": "Hangisi doğrudur?",
@@ -295,7 +346,13 @@
      "{{extinct}}: hiç kalmadı.",
      "Hangisi önce gelir: az kalmak mı, hiç kalmamak mı?"
     ]
-   }
+   },
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "doğrudur"
+   ]
   },
   {
    "soru": "{{Men hunted wild animals for their skins, fur or teeth.}} İnsanlar hayvanları ne için avladı?",
@@ -307,7 +364,13 @@
    "dogru": 1,
    "ipucu": "{{for their}} kelimelerinden sonrasına bak.",
    "aciklama": "{{for their skins, fur or teeth}}: derileri, kürkleri ya da dişleri için. (s. 68)",
-   "kavram": "hunt"
+   "kavram": "hunt",
+   "tetik": [
+    "ne için"
+   ],
+   "bolge": [
+    "ne için avladı"
+   ]
   },
   {
    "soru": "{{Don't kill the elephants for their ___.}} Boşluğa hangisi gelir?",
@@ -319,7 +382,13 @@
    "dogru": 0,
    "ipucu": "Filin ağzının iki yanındaki beyaz dişler?",
    "aciklama": "Filler fildişi için öldürülür: {{tusks}}. (s. 75)",
-   "kavram": "tusk"
+   "kavram": "tusk",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{Don't kill the elephants for their ___.}} Boşluğa hangisi gelir"
+   ]
   },
   {
    "soru": "Kaplanların kürkü nasıldır?",
@@ -331,7 +400,13 @@
    "dogru": 1,
    "ipucu": "{{fur}} kartındaki örnek cümleyi hatırla.",
    "aciklama": "{{beautiful black and orange striped fur}}: siyah-turuncu çizgili kürk. (s. 70)",
-   "kavram": "fur"
+   "kavram": "fur",
+   "tetik": [
+    "nasıldır"
+   ],
+   "bolge": [
+    "Kaplanların kürkü nasıldır"
+   ]
   },
   {
    "soru": "Ormanları kesip tarla yapmak hangi kelimeyle anlatılır?",
@@ -343,7 +418,13 @@
    "dogru": 2,
    "ipucu": "Yaşam alanını ortadan kaldırmak: kirletmek mi, avlamak mı, yok etmek mi?",
    "aciklama": "Yaşam alanını yok etmek {{destroy}}: {{They destroyed their habitats to make fields.}} (s. 68)",
-   "kavram": "destroy"
+   "kavram": "destroy",
+   "tetik": [
+    "hangi kelimeyle"
+   ],
+   "bolge": [
+    "hangi kelimeyle anlatılır"
+   ]
   },
   {
    "soru": "Kitaba göre hangisi hayvanların neslinin tükenme sebeplerinden biri DEĞİLDİR?",
@@ -355,7 +436,13 @@
    "dogru": 2,
    "ipucu": "Kitapta küresel ısınma, iklim değişikliği ve insan faaliyetleri sayılıyor.",
    "aciklama": "Uzay yolculukları ({{space travels}}) bir sebep değildir. (s. 80)",
-   "kavram": "extinct"
+   "kavram": "extinct",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "neslinin tükenme sebeplerinden biri DEĞİLDİR"
+   ]
   }
  ],
  "kelimeler": [
@@ -639,5 +726,161 @@
     ]
    }
   ]
- }
+ },
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Men {hunted|protected|fed} wild animals for their skins, fur or teeth for years.",
+   "s": "s. 68"
+  },
+  {
+   "c": "They {destroyed|protected|cleaned} their habitats to make fields.",
+   "s": "s. 68"
+  },
+  {
+   "c": "They also {polluted|protected|cleaned} the environment.",
+   "s": "s. 68"
+  },
+  {
+   "c": "In fact, tigers are {endangered|extinct|domesticated}. This means there aren't many tigers in the world.",
+   "s": "s. 70"
+  },
+  {
+   "c": "There aren't any Dodo birds in the world. They are {extinct|endangered|enormous}.",
+   "s": "s. 79"
+  },
+  {
+   "c": "An elephant is one of the biggest mammals. It has {tusks|wings|scales} and a trunk.",
+   "s": "s. 68"
+  },
+  {
+   "c": "Sadly, people hunt tigers and kill them, because they want to take their beautiful {fur|milk|wings}.",
+   "s": "s. 70"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Bazı hayvanların nesli neden tükendi? İngilizce iki sebep yaz.",
+   "tetik": [
+    "neden"
+   ],
+   "okut": [
+    "bazı hayvanların neslinin tükenmesinin iki sebebini yazmanı",
+    "nesli tükenmiş bir hayvanın adını yazmanı",
+    "hayvanları korumak için bir öneri yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "People",
+     "ornek": "hunted animals for their fur.",
+     "havuz": [
+      "fed the animals.",
+      "protected the forests."
+     ],
+     "k": [
+      "hunt"
+     ]
+    },
+    {
+     "bas": "They",
+     "ornek": "destroyed their habitats.",
+     "havuz": [
+      "planted trees.",
+      "educated people."
+     ],
+     "k": [
+      "destroy",
+      "pollut"
+     ]
+    }
+   ],
+   "kisa": "People hunted animals. They destroyed their habitats.",
+   "cevap": "People hunted wild animals for their skins, fur or teeth. They destroyed their habitats to make fields and polluted the environment.",
+   "anahtarlar": [
+    {
+     "ad": "hunted (avladı)",
+     "k": [
+      "hunt"
+     ]
+    },
+    {
+     "ad": "destroyed / polluted (yok etti / kirletti)",
+     "k": [
+      "destroy",
+      "pollut"
+     ]
+    }
+   ],
+   "sayfa": "s. 68",
+   "bolge": [
+    "nesli neden tükendi",
+    "İngilizce iki sebep yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{In fact, tigers are endangered.}}",
+    "{{This means there aren't many tigers in the world.}}",
+    "{{Sadly, people hunt them and kill them, because they want to take their beautiful fur.}}"
+   ],
+   "soru": "Metne göre insanlar kaplanları neden avlıyor?",
+   "bolge": [
+    "neden avlıyor"
+   ],
+   "serit": "kaplanların avlanma sebebi",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "to take their beautiful fur",
+    "because there aren't many tigers",
+    "because tigers are endangered"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“avlamak” İngilizcede “hunt” demek. Bu cümlede “because”tan sonra ne yazıyor?",
+   "kanitIpucu": "“hunt” hangi cümlede geçiyor?",
+   "aciklama": "“…people hunt them and kill them, because they want to take their beautiful fur.” Güzel kürklerini almak için avlıyorlar (s. 70).",
+   "kavram": "fur"
+  },
+  {
+   "metin": [
+    "{{Hello. I'm Frank Hardy, a zoologist.}}",
+    "{{I'm studying on endangered and extinct animals.}}",
+    "{{Human beings are responsible for most of the extinctions.}}",
+    "{{Men hunted wild animals for their skins, fur or teeth for years.}}",
+    "{{They destroyed their habitats to make fields.}}",
+    "{{They also polluted the environment.}}"
+   ],
+   "soru": "Metne göre insanlar tarla yapmak için ne yaptı?",
+   "bolge": [
+    "tarla yapmak için ne yaptı"
+   ],
+   "serit": "tarla yapmak için yapılan şey",
+   "kanit": [
+    4
+   ],
+   "secenekler": [
+    "They destroyed the animals' habitats.",
+    "They polluted the environment.",
+    "They hunted wild animals."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“tarla” İngilizcede “fields” demek. Bu kelimeyi metinde ara.",
+   "kanitIpucu": "“fields” hangi cümlede geçiyor?",
+   "aciklama": "“They destroyed their habitats to make fields.” Tarla yapmak için hayvanların yaşam alanlarını yok ettiler (s. 68).",
+   "kavram": "destroy"
+  }
+ ]
 }

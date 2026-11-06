@@ -59,6 +59,9 @@ def kelime_sinir(soru, b):
     """Bölge kelimeyi ortadan kesmesin: başı ve sonu kelime sınırında olmalı."""
     i = soru.find(b)
     if i < 0: return False
+    # İngilizce dersler: bölge {{…}} parçasına girmez (motor o parçayı tek, dokunulmaz blok çizer)
+    for m in ([] if b == tum_bolge(soru)[0] else re.finditer(r"\{\{.+?\}\}", soru)):   # "TUM" sorunun tamamıdır, serbest
+        if i < m.end() and i + len(b) > m.start(): return False
     once = soru[i - 1] if i > 0 else " "; sonra = soru[i + len(b)] if i + len(b) < len(soru) else " "
     return not once.isalnum() and not sonra.isalnum()
 

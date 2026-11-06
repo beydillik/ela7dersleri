@@ -23,7 +23,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta {{feed on milk}} vardı. {{milk}} ne demek?",
-    "aciklama": "{{They feed on milk when they are born.}} Doğunca sütle beslenirler. (s. 67)"
+    "aciklama": "{{They feed on milk when they are born.}} Doğunca sütle beslenirler. (s. 67)",
+    "bolge": [
+     "doğunca neyle beslenir"
+    ]
    }
   },
   {
@@ -44,7 +47,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta {{They have wings, so they can fly.}} yazıyordu. {{wings}} ne demek?",
-    "aciklama": "{{wings}} kanat demek: kanatları olduğu için uçarlar. (s. 67)"
+    "aciklama": "{{wings}} kanat demek: kanatları olduğu için uçarlar. (s. 67)",
+    "tetik": [
+     "neden"
+    ],
+    "bolge": [
+     "Kuşlar neden uçabilir"
+    ]
    }
   },
   {
@@ -65,7 +74,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta sürüngen örnekleri vardı: timsah, yılan, kertenkele.",
-    "aciklama": "Yılan ({{snake}}) bir sürüngendir. (s. 64, s. 68)"
+    "aciklama": "Yılan ({{snake}}) bir sürüngendir. (s. 64, s. 68)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi bir sürüngendir ({{reptile}})"
+    ]
    }
   },
   {
@@ -86,7 +101,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta {{not domesticated}} vardı: evcil olmayan.",
-    "aciklama": "{{Wildlife}} evcil olmayan, doğada yaşayan hayvanlardır. (s. 72)"
+    "aciklama": "{{Wildlife}} evcil olmayan, doğada yaşayan hayvanlardır. (s. 72)",
+    "tetik": [
+     "hangi hayvanları"
+    ],
+    "bolge": [
+     "{{wildlife}} hangi hayvanları anlatır"
+    ]
    }
   },
   {
@@ -107,7 +128,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta benzetme vardı: hayvanın evi gibi.",
-    "aciklama": "{{habitat}} yaşam alanıdır: {{Forests are the habitat of the animals.}} (s. 74)"
+    "aciklama": "{{habitat}} yaşam alanıdır: {{Forests are the habitat of the animals.}} (s. 74)",
+    "bolge": [
+     "{{habitat}} ne demektir"
+    ]
    }
   },
   {
@@ -128,7 +152,13 @@
     ],
     "dogru": 0,
     "ipucu": "Boşluğa bir yer gelmeli. Hangisi bir yer?",
-    "aciklama": "Vahşi hayvanlar ormanda yaşar: {{jungle}}. (s. 74)"
+    "aciklama": "Vahşi hayvanlar ormanda yaşar: {{jungle}}. (s. 74)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{Wild animals live in the ___.}} Boşluğa hangisi gelir"
+    ]
    }
   },
   {
@@ -149,7 +179,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta develerin suyu az olan, kumlu yerde yaşadığı yazıyordu.",
-    "aciklama": "Develer çölde ({{desert}}) yaşar. (s. 74)"
+    "aciklama": "Develer çölde ({{desert}}) yaşar. (s. 74)",
+    "tetik": [
+     "nerede"
+    ],
+    "bolge": [
+     "en çok nerede yaşar"
+    ]
    }
   }
  ],
@@ -236,7 +272,13 @@
    "ipucu": "Kuşlar mı, memeliler mi? Nerede yaşıyorlar? Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun cümle {{Birds live all over the world and in all habitats.}} (s. 67)",
    "dinle": "Birds live all over the world and in all habitats.",
-   "kavram": "habitat"
+   "kavram": "habitat",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -249,7 +291,13 @@
    "ipucu": "Hangi hayvan? Çöl mü, orman mı?",
    "aciklama": "Duyduğun cümle {{Camels can survive in the deserts for a long time.}} (s. 74)",
    "dinle": "Camels can survive in the deserts for a long time.",
-   "kavram": "desert"
+   "kavram": "desert",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -262,7 +310,13 @@
    "ipucu": "Hangi grup? Sıcakkanlı mı, soğukkanlı mı?",
    "aciklama": "Duyduğun cümle {{Mammals are warm-blooded vertebrates with hair.}} (s. 67)",
    "dinle": "Mammals are warm-blooded vertebrates with hair.",
-   "kavram": "mammal"
+   "kavram": "mammal",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Hangisi memeli değildir?",
@@ -281,7 +335,13 @@
      "Kuşların kanadı vardır.",
      "Şıklardan hangisi kanatlı ve uçuyor?"
     ]
-   }
+   },
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "memeli değildir"
+   ]
   },
   {
    "soru": "Penguen ve devekuşu için hangisi doğru?",
@@ -293,7 +353,13 @@
    "dogru": 2,
    "ipucu": "Onlar kuş. Kuş kartında uçamayan iki kuş vardı.",
    "aciklama": "Penguenler ve devekuşları kuştur ama uçamaz. (s. 67)",
-   "kavram": "bird"
+   "kavram": "bird",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğru"
+   ]
   },
   {
    "soru": "Sürüngenler neden soğukkanlı hayvanlardır?",
@@ -305,7 +371,13 @@
    "dogru": 0,
    "ipucu": "Kartta {{don't have a constant body temperature}} vardı. {{constant}} sabit demek.",
    "aciklama": "{{They don't have a constant body temperature.}} Vücut sıcaklıkları sabit değildir. (s. 67)",
-   "kavram": "reptile"
+   "kavram": "reptile",
+   "tetik": [
+    "neden"
+   ],
+   "bolge": [
+    "Sürüngenler neden soğukkanlı hayvanlardır"
+   ]
   },
   {
    "soru": "{{Forests are the ___ of the animals.}} Boşluğa hangisi gelir?",
@@ -317,7 +389,13 @@
    "dogru": 1,
    "ipucu": "Ormanlar hayvanların neyidir? Evi gibi düşün.",
    "aciklama": "Ormanlar hayvanların yaşam alanıdır: {{habitat}}. (s. 74)",
-   "kavram": "habitat"
+   "kavram": "habitat",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{Forests are the ___ of the animals.}} Boşluğa hangisi gelir"
+   ]
   },
   {
    "soru": "Ev kedisi neden {{wildlife}} sayılmaz?",
@@ -329,7 +407,14 @@
    "dogru": 1,
    "ipucu": "{{wildlife}} kartında {{not domesticated}} vardı: evcil olmayan.",
    "aciklama": "{{Wildlife}} evcil olmayan hayvanlardır; ev kedisi evcildir. (s. 72)",
-   "kavram": "wildlife"
+   "kavram": "wildlife",
+   "tetik": [
+    "neden"
+   ],
+   "bolge": [
+    "neden",
+    "sayılmaz"
+   ]
   },
   {
    "soru": "Hangisi bir kuştur ({{bird}})?",
@@ -341,7 +426,13 @@
    "dogru": 0,
    "ipucu": "Hangisinin kanatları var?",
    "aciklama": "Baykuş ({{owl}}) bir kuştur. Kertenkele sürüngen, at memelidir. (s. 64, s. 65)",
-   "kavram": "bird"
+   "kavram": "bird",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bir kuştur ({{bird}})"
+   ]
   },
   {
    "soru": "{{It's an animal. Does it live in the jungle? Yes, it does.}} Hangi hayvan olabilir?",
@@ -353,7 +444,13 @@
    "dogru": 2,
    "ipucu": "Ormanda yaşayan hangisi? Deve çölde, balina denizde yaşar.",
    "aciklama": "Kaplan ormanda yaşar: {{They live in either forests or mountains.}} (s. 70)",
-   "kavram": "jungle"
+   "kavram": "jungle",
+   "tetik": [
+    "Hangi hayvan"
+   ],
+   "bolge": [
+    "{{It's an animal. Does it live in the jungle? Yes, it does.}} Hangi hayvan olabilir"
+   ]
   }
  ],
  "kelimeler": [
@@ -662,5 +759,171 @@
     ]
    }
   ]
- }
+ },
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Birds have {wings|scales|fur}, so they can fly.",
+   "s": "s. 67"
+  },
+  {
+   "c": "Mammals are {warm-blooded|cold-blooded|poisonous} vertebrates with hair.",
+   "s": "s. 67"
+  },
+  {
+   "c": "Mammals feed on {milk|leaves|insects} when they are born.",
+   "s": "s. 67"
+  },
+  {
+   "c": "Reptiles are {cold-blooded|warm-blooded|domesticated} animals because they don't have a constant body temperature.",
+   "s": "s. 67"
+  },
+  {
+   "c": "Wildlife refers to animals that are not {domesticated|wild|alive}.",
+   "s": "s. 72"
+  },
+  {
+   "c": "Camels can survive in the {deserts|jungle|sea} for a long time.",
+   "s": "s. 74"
+  },
+  {
+   "c": "Forests are the {habitat|desert|cage} of the animals.",
+   "s": "s. 74"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Sevdiğin bir vahşi hayvanı iki İngilizce cümleyle anlat: hangi gruptandır ve nerede yaşar?",
+   "tetik": [
+    "hangi gruptandır"
+   ],
+   "okut": [
+    "sevdiğin vahşi hayvanın hangi gruptan olduğunu ve nerede yaşadığını yazmanı",
+    "sevdiğin hayvanın ne yediğini yazmanı",
+    "üç hayvan grubunun adını sıralamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "It is a",
+     "ornek": "mammal.",
+     "havuz": [
+      "desert.",
+      "cage."
+     ],
+     "k": [
+      "mammal",
+      "bird",
+      "reptile"
+     ]
+    },
+    {
+     "bas": "It lives in the",
+     "ornek": "desert.",
+     "havuz": [
+      "milk.",
+      "wings."
+     ],
+     "k": [
+      "desert",
+      "jungle",
+      "forest",
+      "sea",
+      "water",
+      "mountain"
+     ]
+    }
+   ],
+   "kisa": "It is a mammal. It lives in the desert.",
+   "cevap": "A camel is a mammal. It lives in the desert, and it can live without water for one week.",
+   "anahtarlar": [
+    {
+     "ad": "grubu (mammal / bird / reptile)",
+     "k": [
+      "mammal",
+      "bird",
+      "reptile"
+     ]
+    },
+    {
+     "ad": "yaşam alanı (desert, jungle, forest…)",
+     "k": [
+      "desert",
+      "jungle",
+      "forest",
+      "sea",
+      "water",
+      "mountain"
+     ]
+    }
+   ],
+   "sayfa": "s. 72",
+   "bolge": [
+    "hangi gruptandır ve nerede yaşar"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Birds are vertebrate animals.}}",
+    "{{They have wings, so they can fly.}}",
+    "{{Some of them like penguins and ostriches can't fly, because they lost the ability to fly.}}"
+   ],
+   "soru": "Metne göre penguenler neden uçamaz?",
+   "bolge": [
+    "neden uçamaz"
+   ],
+   "serit": "penguenlerin uçamama sebebi",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "They lost the ability to fly.",
+    "They have wings.",
+    "They are vertebrate animals."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“penguins” kelimesinin geçtiği cümlede “because” ne diyor?",
+   "kanitIpucu": "“penguins” hangi cümlede geçiyor?",
+   "aciklama": "“…penguins and ostriches can't fly, because they lost the ability to fly.” Uçma yeteneklerini kaybettikleri için uçamazlar (s. 67).",
+   "kavram": "bird"
+  },
+  {
+   "metin": [
+    "{{Mammals are warm-blooded vertebrates with hair.}}",
+    "{{They feed on milk when they are born.}}",
+    "{{Some of the mammals like tigers live on their own, some like lions live in family groups.}}",
+    "{{Reptiles are air-breathing vertebrates.}}",
+    "{{Scales or bony plates cover their bodies.}}",
+    "{{Reptiles are cold-blooded animals because they don't have a constant body temperature.}}"
+   ],
+   "soru": "Metne göre aslanlar nasıl yaşar?",
+   "bolge": [
+    "aslanlar nasıl yaşar"
+   ],
+   "serit": "aslanların nasıl yaşadığı",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "in family groups",
+    "on their own",
+    "in cold places"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Soru kaplanları değil, aslanları (lions) soruyor.",
+   "kanitIpucu": "“lions” kelimesi hangi cümlede?",
+   "aciklama": "“…some like lions live in family groups.” Aslanlar aile grupları hâlinde yaşar; tek başına (on their own) yaşayanlar kaplanlardır (s. 67).",
+   "kavram": "mammal"
+  }
+ ]
 }

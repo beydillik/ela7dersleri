@@ -498,7 +498,8 @@
     if (!o.metin && !o.tablo) return "";
     const kl = kanitli(o), dk = kl ? ' role="button" tabindex="0"' : "", ps = paragraflar(o.metin);
     let i = 0;
-    const cm = c => `<span class="cumle" data-c="${i++}"${dk}>${rx(cumleMetin(c))}</span>`;
+    // Kanıtlı metinde {{İngilizce}} cümle dokununca okunmaz (dokunuş kanıt seçimidir); metnin tamamı "Dinle" ile İngilizce sesle okunur (ing1 dikkat paketi)
+    const cm = c => `<span class="cumle" data-c="${i++}"${dk}>${kl ? fx(esc(cumleMetin(c)).replace(EN_RE, '<span lang="en">$1</span>')) : rx(cumleMetin(c))}</span>`;
     const govde = ps.map(p => p.some(c => c && c.kim) ? `<div class="diyalog">${p.map(c => `<p>${c.kim ? `<b class="kim">${esc(c.kim)}:</b> ` : ""}${cm(c)}</p>`).join("")}</div>`
       : `<p class="pasaj-p">${p.map(cm).join(" ")}</p>`).join("");
     const t = o.tablo, tablo = t ? `<div class="tablo-wrap"><table class="pasaj-tablo">${t.baslik ? `<caption>${esc(t.baslik)}</caption>` : ""}<thead><tr>${t.basliklar.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead>
@@ -566,7 +567,8 @@
   const kalpOlumsuz = o => KALP_OLUMSUZ.test(o.soru || "") || String(o.soru || "").search(OLUMSUZ_RE) >= 0;   // Türkçe'deki olumsuz kökler de (değinilmemiştir, söylenemez…)
   const kalpSeri = () => { S.kalpSeri = S.kalpSeri || {}; return (S.kalpSeri[S.konu] = S.kalpSeri[S.konu] || { n: 0, serbest: 0 }); };
   // Bölge sorunun bütün kelimelerini kapsıyorsa (kısa soru: "Enzim nedir?") bulma adımı yok: her yere dokunmak doğru olurdu, düşünmeden dokunma alışkanlığı yapar.
-  const kalpTum = o => { const kel = s => (String(s).match(/[\p{L}\p{N}]+/gu) || []); const b = new Set(kalpBolge(o).flatMap(kel)); return kel(o.soru).every(w => b.has(w)); };
+  // İngilizce derslerde {{…}} parçası soru metninin bağlamıdır: kelimeleri sayılmaz, dokunulacak yer değildir (ing1, 6 Kasım 2026).
+  const kalpTum = o => { const kel = s => (String(s).match(/[\p{L}\p{N}]+/gu) || []); const b = new Set(kalpBolge(o).flatMap(kel)); return kel(String(o.soru).replace(EN_RE, " ")).every(w => b.has(w)); };
   const kalpDuz = o => !!o.soru && !/[<\[]/.test(o.soru) && kalpBolge(o).length > 0 && !kalpTum(o);   // yalnız düz metinli ve bölgesi seçici sorularda
   // Bu soruda bulma adımı var mı? Seri ödülü hakkını ilk sorulduğunda tüketir; state.kalp = -1 → bu soru bulmasız.
   function kalpGerek(o, state) {
@@ -579,11 +581,13 @@
   function kalpCiz(alan, o, bul) {
     const soru = String(o.soru), ar = [], tk = [];
     kalpBolge(o).forEach(b => { const i = soru.indexOf(b); if (i >= 0) ar.push([i, i + b.length]); });
-    soru.replace(/(\S+)|(\s+)/g, (m, kel, bos, ofs) => { tk.push({ kel, bos, ic: !!kel && ar.some(([a, b]) => ofs < b && ofs + kel.length > a) }); return m; });
+    // {{İngilizce}} parçası tek blok: renkli, dokununca okunur, sorunun kalbi olamaz (tıklama .kk aramadığı için bulma sayılmaz)
+    soru.replace(/(\{\{.+?\}\})|((?:(?!\{\{)\S)+)|(\s+)/g, (m, en, kel, bos, ofs) => { if (en) tk.push({ en }); else tk.push({ kel, bos, ic: !!kel && ar.some(([a, b]) => ofs < b && ofs + kel.length > a) }); return m; });
     // Bölgedeki ardışık kelimeler tek bir "kk-run" içinde: vurgu kesintisiz görünür
     let h = "", w = 0, run = false;
     tk.forEach((t, i) => {
-      if (t.kel) {
+      if (t.en) { if (run) { h += "</span>"; run = false; } h += rx(t.en); }
+      else if (t.kel) {
         if (t.ic && !run) { h += `<span class="kk-run${bul ? "" : " kalp"}">`; run = true; }
         h += `<span class="kk${t.ic ? " kk-b" : ""}" data-w="${w++}"${bul ? ' role="button" tabindex="0"' : ""}>${esc(t.kel)}</span>`;
         const sonraki = tk[i + 2];

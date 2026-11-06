@@ -23,7 +23,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta {{the latest events}} vardı: en yeni olaylar.",
-    "aciklama": "{{news}} dünyadaki en yeni olayları anlatır. (s. 87)"
+    "aciklama": "{{news}} dünyadaki en yeni olayları anlatır. (s. 87)",
+    "bolge": [
+     "{{news}} bize ne anlatır"
+    ]
    }
   },
   {
@@ -44,7 +47,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta {{funny situations}} vardı: komik durumlar.",
-    "aciklama": "{{sitcom}}, kişilerin komik durumlara düştüğü bir dizidir. (s. 87, s. 97)"
+    "aciklama": "{{sitcom}}, kişilerin komik durumlara düştüğü bir dizidir. (s. 87, s. 97)",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "{{sitcom}} nasıl bir programdır"
+    ]
    }
   },
   {
@@ -65,7 +74,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta belgeselin doğa, uzay ve tarih anlattığı yazıyordu.",
-    "aciklama": "Kate uzay hakkında bir belgesel izledi: {{documentary about space}}. (s. 89)"
+    "aciklama": "Kate uzay hakkında bir belgesel izledi: {{documentary about space}}. (s. 89)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "program hangisidir"
+    ]
    }
   },
   {
@@ -86,7 +101,13 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta {{I can test myself}} vardı: kendimi deneyebilirim.",
-    "aciklama": "Bilgi yarışmasında kendini denersin: {{quiz show}}. (s. 83)"
+    "aciklama": "Bilgi yarışmasında kendini denersin: {{quiz show}}. (s. 83)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "program hangisidir"
+    ]
    }
   },
   {
@@ -107,7 +128,10 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta {{real people}} vardı.",
-    "aciklama": "{{you can follow the lives of real people}}: gerçek insanlar. (s. 87)"
+    "aciklama": "{{you can follow the lives of real people}}: gerçek insanlar. (s. 87)",
+    "bolge": [
+     "{{reality show}}'da kimlerin hayatını izleriz"
+    ]
    }
   },
   {
@@ -128,7 +152,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta {{daytime}} ve {{melodramatic}} vardı.",
-    "aciklama": "{{soap opera}} gündüz yayınlanır ve duygusaldır. (s. 87)"
+    "aciklama": "{{soap opera}} gündüz yayınlanır ve duygusaldır. (s. 87)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "dizi hangisidir"
+    ]
    }
   },
   {
@@ -149,7 +179,13 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta {{sell their products}} vardı: ürünlerini satmak.",
-    "aciklama": "Reklam ürünü kısa bir filmle tanıtır. (s. 87)"
+    "aciklama": "Reklam ürünü kısa bir filmle tanıtır. (s. 87)",
+    "tetik": [
+     "ne yapar"
+    ],
+    "bolge": [
+     "{{commercial}} ne yapar"
+    ]
    }
   }
  ],
@@ -235,7 +271,13 @@
    "ipucu": "En yeni olaylar mı, komik olaylar mı? Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun cümle {{It informs people about the latest events happening all over the world.}} Bu {{news}}. (s. 87)",
    "dinle": "It informs people about the latest events happening all over the world.",
-   "kavram": "news"
+   "kavram": "news",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -248,7 +290,13 @@
    "ipucu": "Hangi program? Konu ne: uzay mı, hayvanlar mı?",
    "aciklama": "Duyduğun cümle {{I watched an interesting documentary about space.}} (s. 89)",
    "dinle": "I watched an interesting documentary about space.",
-   "kavram": "documentary"
+   "kavram": "documentary",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -261,7 +309,13 @@
    "ipucu": "{{never}} mı, {{always}} mı? Hangi program?",
    "aciklama": "Duyduğun cümle {{I never watch soap operas.}} (s. 84)",
    "dinle": "I never watch soap operas.",
-   "kavram": "soap opera"
+   "kavram": "soap opera",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{I could answer only five questions out of ten. It was a difficult ___.}} Boşluğa hangisi gelir?",
@@ -273,7 +327,13 @@
    "dogru": 1,
    "ipucu": "Soruları cevaplayan biri konuşuyor. Hangi programda soru vardır?",
    "aciklama": "Soru cevaplanan program bilgi yarışmasıdır: {{quiz show}}. (s. 87)",
-   "kavram": "quiz show"
+   "kavram": "quiz show",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{I could answer only five questions out of ten. It was a difficult ___.}} Boşluğa hangisi gelir"
+   ]
   },
   {
    "soru": "{{A group of people usually appear in funny situations in every episode.}} Bu hangi program?",
@@ -285,7 +345,13 @@
    "dogru": 0,
    "ipucu": "{{funny situations}}: komik durumlar.",
    "aciklama": "Komik durumlar anlatan dizi {{sitcom}}. (s. 87)",
-   "kavram": "sitcom"
+   "kavram": "sitcom",
+   "tetik": [
+    "hangi program"
+   ],
+   "bolge": [
+    "{{A group of people usually appear in funny situations in every episode.}} Bu hangi program"
+   ]
   },
   {
    "soru": "{{In this programme, you can follow the lives of real people.}} Bu hangi program?",
@@ -297,7 +363,13 @@
    "dogru": 2,
    "ipucu": "{{real people}}: gerçek insanlar.",
    "aciklama": "Gerçek insanların hayatını izlediğimiz program {{reality show}}. (s. 87)",
-   "kavram": "reality show"
+   "kavram": "reality show",
+   "tetik": [
+    "hangi program"
+   ],
+   "bolge": [
+    "{{In this programme, you can follow the lives of real people.}} Bu hangi program"
+   ]
   },
   {
    "soru": "{{Companies try to sell their products by introducing them in very short films.}} Bu hangi program?",
@@ -309,7 +381,13 @@
    "dogru": 1,
    "ipucu": "{{sell their products}}: ürünlerini satmak.",
    "aciklama": "Ürün tanıtan kısa film reklamdır: {{commercial}}. (s. 87)",
-   "kavram": "commercial"
+   "kavram": "commercial",
+   "tetik": [
+    "hangi program"
+   ],
+   "bolge": [
+    "{{Companies try to sell their products by introducing them in very short films.}} Bu hangi program"
+   ]
   },
   {
    "soru": "{{It's really good to watch a ___ because they are educative.}} Boşluğa hangisi gelir?",
@@ -321,7 +399,13 @@
    "dogru": 2,
    "ipucu": "{{educative}} öğretici demek. Hangi program öğretir?",
    "aciklama": "Öğretici program belgeseldir: {{documentary}}. (s. 87)",
-   "kavram": "documentary"
+   "kavram": "documentary",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{It's really good to watch a ___ because they are educative.}} Boşluğa hangisi gelir"
+   ]
   },
   {
    "soru": "Maria'nın en sevdiği program hangisidir? {{My favourite TV programme is the news.}}",
@@ -333,7 +417,13 @@
    "dogru": 0,
    "ipucu": "{{news}} kartını hatırla.",
    "aciklama": "{{the news}} haberler demek. (s. 84)",
-   "kavram": "news"
+   "kavram": "news",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en sevdiği program hangisidir"
+   ]
   },
   {
    "soru": "{{It is a kind of TV show. You can watch it daytime. It is usually melodramatic.}} Bu hangi program?",
@@ -345,7 +435,13 @@
    "dogru": 1,
    "ipucu": "{{daytime}} gündüz, {{melodramatic}} çok duygusal.",
    "aciklama": "Gündüz yayınlanan duygusal dizi {{soap opera}}. (s. 87)",
-   "kavram": "soap opera"
+   "kavram": "soap opera",
+   "tetik": [
+    "hangi program"
+   ],
+   "bolge": [
+    "{{It is a kind of TV show. You can watch it daytime. It is usually melodramatic.}} Bu hangi program"
+   ]
   }
  ],
  "kelimeler": [
@@ -619,5 +715,184 @@
     ]
    }
   ]
- }
+ },
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "The {news|commercial|sitcom} informs people about the latest events happening all over the world.",
+   "s": "s. 87"
+  },
+  {
+   "c": "In a {sitcom|documentary|commercial}, a group of people usually appear in funny situations in every episode.",
+   "s": "s. 87"
+  },
+  {
+   "c": "In a {reality show|commercial|quiz show}, you can follow the lives of real people.",
+   "s": "s. 87"
+  },
+  {
+   "c": "Companies try to sell their products by introducing them in very short films. These are {commercials|documentaries|quiz shows}.",
+   "s": "s. 87"
+  },
+  {
+   "c": "I could answer only five questions out of ten. It was a difficult {quiz show|soap opera|commercial}.",
+   "s": "s. 87"
+  },
+  {
+   "c": "A {soap opera|documentary|quiz show} is a kind of TV show. You can watch it daytime. It is usually melodramatic.",
+   "s": "s. 87"
+  },
+  {
+   "c": "I watched an interesting {documentary|commercial|soap opera} about space.",
+   "s": "s. 89"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "En sevdiğin TV programı türü hangisi ve onu neden seviyorsun? İki İngilizce cümleyle yaz.",
+   "tetik": [
+    "hangisi"
+   ],
+   "okut": [
+    "en sevdiğin TV programı türünü ve onu neden sevdiğini yazmanı",
+    "dün akşam ne izlediğini anlatmanı",
+    "bütün TV programı türlerini sıralamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "My favourite TV programme is",
+     "ornek": "the news.",
+     "havuz": [
+      "the remote control.",
+      "the TV set."
+     ],
+     "k": [
+      "news",
+      "sitcom",
+      "documentar",
+      "quiz",
+      "reality",
+      "soap",
+      "talk show",
+      "series"
+     ]
+    },
+    {
+     "bas": "I watch it because",
+     "ornek": "I learn new things.",
+     "havuz": [
+      "it is on TV.",
+      "my TV is big."
+     ],
+     "k": [
+      "learn",
+      "funny",
+      "amusing",
+      "educational",
+      "interesting",
+      "laugh",
+      "myself"
+     ]
+    }
+   ],
+   "kisa": "My favourite is the news because I learn new things.",
+   "cevap": "My favourite TV programme is the news. I watch it because it is good to know what is going on in the world, and I learn new things.",
+   "anahtarlar": [
+    {
+     "ad": "program türü (news, sitcom…)",
+     "k": [
+      "news",
+      "sitcom",
+      "documentar",
+      "quiz",
+      "reality",
+      "soap",
+      "talk show",
+      "series"
+     ]
+    },
+    {
+     "ad": "sebep (I learn…, it is funny…)",
+     "k": [
+      "learn",
+      "funny",
+      "amusing",
+      "educational",
+      "interesting",
+      "laugh",
+      "myself"
+     ]
+    }
+   ],
+   "sayfa": "s. 84",
+   "bolge": [
+    "TV programı türü hangisi ve onu neden seviyorsun"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Jim: {{What did you do last night?}}",
+    "Kate: {{I watched an interesting documentary about space. What about you?}}",
+    "Jim: {{My favourite sitcom was on. I watched it. It was very funny.}}"
+   ],
+   "soru": "Metne göre Jim dün akşam ne izledi?",
+   "bolge": [
+    "Jim",
+    "ne izledi"
+   ],
+   "serit": "Jim'in dün akşam izlediği program",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "his favourite sitcom",
+    "a documentary about space",
+    "the news"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Soru Kate'i değil, Jim'i soruyor.",
+   "kanitIpucu": "Jim'in cevap verdiği cümle hangisi?",
+   "aciklama": "“My favourite sitcom was on. I watched it.” Jim en sevdiği komedi dizisini izledi. Uzay belgeselini Kate izledi (s. 89).",
+   "kavram": "sitcom"
+  },
+  {
+   "metin": [
+    "{{Hello! I'm Samuel. I watch TV almost every day.}}",
+    "{{After school, I like to watch a few episodes of my favourite sitcom.}}",
+    "{{On Mondays, I watch a reality show about cooking, where different chefs compete.}}",
+    "{{In the evenings, I usually watch a documentary on animals or space.}}",
+    "{{I find these shows very interesting because I learn a lot of new things.}}",
+    "{{Sometimes, I watch the news to see what's happening in the world.}}"
+   ],
+   "soru": "Metne göre Samuel akşamları genellikle ne izler?",
+   "bolge": [
+    "akşamları genellikle ne izler"
+   ],
+   "serit": "Samuel'in akşamları izlediği program",
+   "kanit": [
+    3
+   ],
+   "secenekler": [
+    "a documentary on animals or space",
+    "a reality show about cooking",
+    "the news"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“akşamları” İngilizcede “in the evenings” demek.",
+   "kanitIpucu": "“In the evenings” hangi cümlede?",
+   "aciklama": "“In the evenings, I usually watch a documentary on animals or space.” Yemek yarışmasını pazartesi, haberleri ara sıra izliyor (s. 98).",
+   "kavram": "documentary"
+  }
+ ]
 }

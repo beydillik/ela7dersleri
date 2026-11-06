@@ -21,7 +21,14 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta taşlı bir yüzük vardı.",
-    "aciklama": "Nişanlanmak {{get engaged}}dir. Kitabın kelime listesinde var. (s. 46)"
+    "aciklama": "Nişanlanmak {{get engaged}}dir. Kitabın kelime listesinde var. (s. 46)",
+    "tetik": [
+     "ne denir"
+    ],
+    "bolge": [
+     "Evlenmeden önce",
+     "ne denir"
+    ]
    }
   },
   {
@@ -42,7 +49,10 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta düğün pastası vardı.",
-    "aciklama": "{{got married}} evlendi demektir. (s. 57)"
+    "aciklama": "{{got married}} evlendi demektir. (s. 57)",
+    "bolge": [
+     "{{She got married in 2016, and she's happy now.}} Emma 2016'da ne yaptı"
+    ]
    },
    "formul": [
     [
@@ -93,7 +103,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta çocuğunun elini tutan bir büyük vardı.",
-    "aciklama": "Çocuk yetiştirmek {{raise}}dir. (s. 55)"
+    "aciklama": "Çocuk yetiştirmek {{raise}}dir. (s. 55)",
+    "tetik": [
+     "hangi kelimenin"
+    ],
+    "bolge": [
+     "{{To bring up children}} tanımı hangi kelimenin"
+    ]
    },
    "formul": [
     [
@@ -145,7 +161,10 @@
     ],
     "dogru": 0,
     "ipucu": "Kartta yukarı çıkan basamaklar ve çanta vardı.",
-    "aciklama": "{{career}} kariyer, meslek hayatıdır. (s. 46)"
+    "aciklama": "{{career}} kariyer, meslek hayatıdır. (s. 46)",
+    "bolge": [
+     "{{James has an excellent career in photography.}} {{career}} ne demek"
+    ]
    }
   },
   {
@@ -166,7 +185,10 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta bir kupa vardı.",
-    "aciklama": "{{awards}} ödüller demektir. (s. 59)"
+    "aciklama": "{{awards}} ödüller demektir. (s. 59)",
+    "bolge": [
+     "{{He won several music awards.}} Oliver ne kazandı"
+    ]
    },
    "formul": [
     [
@@ -204,7 +226,10 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta yanan bir mum ve çiçekler vardı.",
-    "aciklama": "{{died}} öldü demektir. (s. 49)"
+    "aciklama": "{{died}} öldü demektir. (s. 49)",
+    "bolge": [
+     "{{L. Braille died in 1852.}} 1852'de ne oldu"
+    ]
    },
    "formul": [
     [
@@ -317,7 +342,13 @@
    "ipucu": "Evlendiler mi, nişanlandılar mı? Oğul mu, kız mı? Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun cümle {{They got married and had a son.}} (s. 59)",
    "dinle": "They got married and had a son.",
-   "kavram": "get married"
+   "kavram": "get married",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -330,7 +361,13 @@
    "ipucu": "Bir ödül mü, birkaç ödül mü? Kazandı mı, konser mi verdi?",
    "aciklama": "Duyduğun cümle {{He won several music awards.}} (s. 59)",
    "dinle": "He won several music awards.",
-   "kavram": "award"
+   "kavram": "award",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -343,7 +380,13 @@
    "ipucu": "Doğdu mu, öldü mü? Kaç yaşında?",
    "aciklama": "Duyduğun cümle {{He died in 2010 at the age of 72.}} (s. 59)",
    "dinle": "He died in 2010 at the age of 72.",
-   "kavram": "die"
+   "kavram": "die",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "{{Marcy and Robert ___ in a beautiful ceremony in Los Angeles last week.}}",
@@ -355,7 +398,10 @@
    "dogru": 0,
    "ipucu": "Güzel bir törenle ne yapılır? Kartta düğün pastası vardı.",
    "aciklama": "Törenle evlendiler: {{got married}}. (s. 61)",
-   "kavram": "get married"
+   "kavram": "get married",
+   "bolge": [
+    "{{Marcy and Robert ___ in a beautiful ceremony in Los Angeles last week.}}"
+   ]
   },
   {
    "soru": "{{Jack ___ three children alone. It was very difficult.}} Hangisi uygun?",
@@ -367,7 +413,13 @@
    "dogru": 1,
    "ipucu": "Üç çocukla tek başına ne yaptı?",
    "aciklama": "Üç çocuğu tek başına yetiştirdi: {{raised}}. (s. 46)",
-   "kavram": "raise"
+   "kavram": "raise",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "{{Jack ___ three children alone. It was very difficult.}} Hangisi uygun"
+   ]
   },
   {
    "soru": "{{A reward for winning a contest or competition}} tanımı hangi kelimenin?",
@@ -379,7 +431,13 @@
    "dogru": 2,
    "ipucu": "Yarışmayı kazanana verilen şey. Kartta kupa vardı.",
    "aciklama": "Yarışma için verilen ödül {{award}}dır. (s. 55)",
-   "kavram": "award"
+   "kavram": "award",
+   "tetik": [
+    "hangi kelimenin"
+   ],
+   "bolge": [
+    "{{A reward for winning a contest or competition}} tanımı hangi kelimenin"
+   ]
   },
   {
    "soru": "Bir çift için hangisi önce olur?",
@@ -391,7 +449,13 @@
    "dogru": 0,
    "ipucu": "Kartta: önce yüzük ve söz, sonra düğün.",
    "aciklama": "Önce nişanlanılır ({{get engaged}}), sonra evlenilir ({{get married}}).",
-   "kavram": "get engaged"
+   "kavram": "get engaged",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi önce olur"
+   ]
   },
   {
    "soru": "{{My friend James has an excellent ___ in photography.}}",
@@ -403,7 +467,10 @@
    "dogru": 1,
    "ipucu": "Fotoğrafçılıkta yıllar süren meslek hayatı: hangi kelimeydi?",
    "aciklama": "Meslek hayatı {{career}}: {{an excellent career in photography}}. (s. 46)",
-   "kavram": "career"
+   "kavram": "career",
+   "bolge": [
+    "{{My friend James has an excellent ___ in photography.}}"
+   ]
   },
   {
    "soru": "{{die}} kelimesinin geçmiş hâli hangisi?",
@@ -422,7 +489,13 @@
      "{{die}} sonuna {{-d}} alır.",
      "{{dead}} fiil değil, ölü demek."
     ]
-   }
+   },
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{die}} kelimesinin geçmiş hâli hangisi"
+   ]
   },
   {
    "soru": "{{Jessica Milton is a brilliant musician. She's got five music ___ so far.}}",
@@ -434,7 +507,10 @@
    "dogru": 0,
    "ipucu": "Başarılı bir müzisyen ne kazanır?",
    "aciklama": "Beş müzik ödülü: {{awards}}. (s. 62)",
-   "kavram": "award"
+   "kavram": "award",
+   "bolge": [
+    "{{Jessica Milton is a brilliant musician. She's got five music ___ so far.}}"
+   ]
   }
  ],
  "kelimeler": [
@@ -721,5 +797,157 @@
     ]
    }
   ]
- }
+ },
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Atatürk {died|was born|graduated} on 10th November, 1938.",
+   "s": "s. 46"
+  },
+  {
+   "c": "Jack {raised|died|got engaged} three children alone. It was very difficult.",
+   "s": "s. 46"
+  },
+  {
+   "c": "My friend James has an excellent {career|award|biography} in photography.",
+   "s": "s. 46"
+  },
+  {
+   "c": "Marcy and Robert {got married|graduated|raised two kids} in a beautiful ceremony in Los Angeles last week.",
+   "s": "s. 61"
+  },
+  {
+   "c": "Oliver met his wife, Helen, at a music festival in London. They {got married|graduated|grew up} and had a son.",
+   "s": "s. 59"
+  },
+  {
+   "c": "In 1911, she won the Nobel {Prize|career|biography} in Chemistry for discovering these elements.",
+   "s": "s. 58"
+  },
+  {
+   "c": "Jessica Milton is a brilliant musician. She's got five music {awards|careers|children} so far.",
+   "s": "s. 62"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Ailenden birinin hayatını iki İngilizce cümleyle anlat: ne zaman evlendi ve kaç çocuk yetiştirdi?",
+   "tetik": [
+    "ne zaman"
+   ],
+   "okut": [
+    "ailenden birinin ne zaman evlendiğini ve kaç çocuk yetiştirdiğini yazmanı",
+    "ailenden birinin nerede doğduğunu yazmanı",
+    "senin kaç kardeşin olduğunu söylemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "My grandmother",
+     "ornek": "got married in 1975.",
+     "havuz": [
+      "was born in 1975.",
+      "graduated in 1975."
+     ],
+     "k": [
+      "married"
+     ]
+    },
+    {
+     "bas": "She",
+     "ornek": "raised four children.",
+     "havuz": [
+      "moved to İzmir.",
+      "won an award."
+     ],
+     "k": [
+      "raise"
+     ]
+    }
+   ],
+   "kisa": "My grandmother got married in 1975. She raised four children.",
+   "cevap": "My grandmother got married in 1975. She raised four children, and she had a long career as a teacher.",
+   "anahtarlar": [
+    {
+     "ad": "got married",
+     "k": [
+      "married"
+     ]
+    },
+    {
+     "ad": "raised … children",
+     "k": [
+      "raise"
+     ]
+    }
+   ],
+   "sayfa": "s. 56",
+   "bolge": [
+    "ne zaman evlendi ve kaç çocuk yetiştirdi"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{I was born in London in 1987.}}",
+    "{{Oh! I met my wife in 2014, and we got married in the same year.}}"
+   ],
+   "soru": "Metne göre konuşan kişi ne zaman evlendi?",
+   "bolge": [
+    "ne zaman evlendi"
+   ],
+   "serit": "evlendiği yıl",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "in 2014",
+    "in 1987",
+    "in London"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“evlendi” İngilizcede “got married” demek. Bu cümlede yıl yazıyor mu, yoksa başka bir ifade mi var?",
+   "kanitIpucu": "“got married” hangi cümlede geçiyor?",
+   "aciklama": "“I met my wife in 2014, and we got married in the same year.” Aynı yıl, yani 2014'te evlendi. 1987 doğduğu yıldır (s. 57).",
+   "kavram": "get married"
+  },
+  {
+   "metin": [
+    "{{Oliver Bennett was born in Manchester on 12th March in 1938.}}",
+    "{{He worked in a small bookshop and helped his family.}}",
+    "{{In 1960, Oliver released his first record.}}",
+    "{{Oliver met his wife, Helen, at a music festival in London.}}",
+    "{{He gave concerts in many countries and won several music awards.}}",
+    "{{He died in 2010 at the age of 72.}}"
+   ],
+   "soru": "Metne göre Oliver kariyerinde ne kazandı?",
+   "bolge": [
+    "ne kazandı"
+   ],
+   "serit": "Oliver'ın kazandığı şey",
+   "kanit": [
+    4
+   ],
+   "secenekler": [
+    "several music awards",
+    "a small bookshop",
+    "his first record"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“kazandı” İngilizcede “won” demek.",
+   "kanitIpucu": "“won” kelimesi hangi cümlede?",
+   "aciklama": "“He gave concerts in many countries and won several music awards.” Birkaç müzik ödülü kazandı (s. 59).",
+   "kavram": "award"
+  }
+ ]
 }

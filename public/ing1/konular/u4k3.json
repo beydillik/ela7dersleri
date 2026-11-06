@@ -45,7 +45,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta yazıyordu: {{should}}'dan sonra fiil yalın hâliyle gelir.",
-    "aciklama": "{{should}} + yalın fiil: {{We should protect wild animals.}} (s. 75)"
+    "aciklama": "{{should}} + yalın fiil: {{We should protect wild animals.}} (s. 75)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "doğru yazılmış"
+    ]
    }
   },
   {
@@ -88,7 +94,10 @@
     ],
     "dogru": 2,
     "ipucu": "{{shouldn't}} olumsuz öneridir: -memeli, -mamalı.",
-    "aciklama": "{{shouldn't hunt}} avlamamalıyız. (s. 71)"
+    "aciklama": "{{shouldn't hunt}} avlamamalıyız. (s. 71)",
+    "bolge": [
+     "{{We shouldn't hunt animals.}} Bu cümle ne diyor"
+    ]
    }
   },
   {
@@ -135,7 +144,13 @@
     ],
     "dogru": 0,
     "ipucu": "Soru öneri istiyor. Cevapta {{should}} ya da {{shouldn't}} olmalı.",
-    "aciklama": "Öneri isteyen soruya öneriyle cevap verilir: {{We shouldn't hunt animals.}} (s. 71)"
+    "aciklama": "Öneri isteyen soruya öneriyle cevap verilir: {{We shouldn't hunt animals.}} (s. 71)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "{{What should we do to protect wildlife?}} sorusuna hangisi uygun cevaptır"
+    ]
    }
   },
   {
@@ -156,7 +171,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kartta karşıtı yazıyordu: yok etmek.",
-    "aciklama": "{{protect}} korumak, {{destroy}} yok etmek: zıt anlamlı. (s. 69, s. 75)"
+    "aciklama": "{{protect}} korumak, {{destroy}} yok etmek: zıt anlamlı. (s. 69, s. 75)",
+    "tetik": [
+     "hangi kelimenin"
+    ],
+    "bolge": [
+     "{{protect}} hangi kelimenin karşıtıdır"
+    ]
    }
   },
   {
@@ -199,7 +220,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kartta yazıyordu: {{stop}}'tan sonra fiil {{-ing}} alır.",
-    "aciklama": "{{stop}} + {{-ing}}: {{We should stop hunting.}} (s. 75)"
+    "aciklama": "{{stop}} + {{-ing}}: {{We should stop hunting.}} (s. 75)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "doğru yazılmış"
+    ]
    }
   },
   {
@@ -220,7 +247,10 @@
     ],
     "dogru": 2,
     "ipucu": "{{educate}} kartının anlamını hatırla.",
-    "aciklama": "{{educate}} eğitmek: hükümetler insanları eğitmeli. (s. 79)"
+    "aciklama": "{{educate}} eğitmek: hükümetler insanları eğitmeli. (s. 79)",
+    "bolge": [
+     "{{Governments should educate people.}} Hükümetler ne yapmalı"
+    ]
    }
   },
   {
@@ -241,7 +271,10 @@
     ],
     "dogru": 2,
     "ipucu": "{{feed}} kartındaki kaseyi hatırla.",
-    "aciklama": "{{feed}} beslemek: sokak hayvanlarını besleyin. (s. 70)"
+    "aciklama": "{{feed}} beslemek: sokak hayvanlarını besleyin. (s. 70)",
+    "bolge": [
+     "{{Feed the stray animals.}} Bu cümle ne öneriyor"
+    ]
    }
   }
  ],
@@ -325,7 +358,13 @@
    "ipucu": "{{should}} mu, {{shouldn't}} mı? Hangi fiil? Yavaş dinle düğmesini dene.",
    "aciklama": "Duyduğun cümle {{We shouldn't hunt animals.}} (s. 71)",
    "dinle": "We shouldn't hunt animals.",
-   "kavram": "shouldn't"
+   "kavram": "shouldn't",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi cümleyi duydun?",
@@ -338,7 +377,13 @@
    "ipucu": "Kim? {{should}} mu, {{shouldn't}} mı?",
    "aciklama": "Duyduğun cümle {{Governments should educate people.}} (s. 79)",
    "dinle": "Governments should educate people.",
-   "kavram": "educate"
+   "kavram": "educate",
+   "tetik": [
+    "Hangi cümleyi"
+   ],
+   "bolge": [
+    "Dinle. Hangi cümleyi duydun"
+   ]
   },
   {
    "soru": "Dinle. Hangi soruyu duydun?",
@@ -351,7 +396,13 @@
    "ipucu": "Soru kelimesi {{What}} mi, {{Why}} mı? {{should}} var mı?",
    "aciklama": "Duyduğun soru {{What should we do to protect wildlife?}} (s. 69)",
    "dinle": "What should we do to protect wildlife?",
-   "kavram": "What should we do?"
+   "kavram": "What should we do?",
+   "tetik": [
+    "Hangi soruyu"
+   ],
+   "bolge": [
+    "Dinle. Hangi soruyu duydun"
+   ]
   },
   {
    "soru": "{{Destroy the forests.}} Bu kötü bir davranış. Hangi öneri doğru?",
@@ -370,7 +421,13 @@
      "Kötüyse {{shouldn't}} kullanılır.",
      "{{shouldn't}}'dan sonra {{to}} gelmez."
     ]
-   }
+   },
+   "tetik": [
+    "Hangi öneri"
+   ],
+   "bolge": [
+    "Hangi öneri doğru"
+   ]
   },
   {
    "soru": "{{Protect wild animals.}} Hangisi bu cümlenin öneri hâlidir?",
@@ -382,7 +439,13 @@
    "dogru": 0,
    "ipucu": "Korumak iyi bir şey. Fiil yalın kalmalı.",
    "aciklama": "İyi davranış: {{We should protect wild animals.}} (s. 75)",
-   "kavram": "should"
+   "kavram": "should",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "öneri hâlidir"
+   ]
   },
   {
    "soru": "{{should}}'dan sonra fiil nasıl gelir?",
@@ -394,7 +457,13 @@
    "dogru": 1,
    "ipucu": "{{should}} kartındaki formül şeridine bak.",
    "aciklama": "{{should}} + yalın fiil: {{should protect}}. (s. 75)",
-   "kavram": "should"
+   "kavram": "should",
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "fiil nasıl gelir"
+   ]
   },
   {
    "soru": "{{Don't buy pets from the pet shops.}} Hangisi aynı anlamdadır?",
@@ -406,7 +475,13 @@
    "dogru": 2,
    "ipucu": "{{Don't}} olumsuz emir. Olumsuz öneri hangisi?",
    "aciklama": "{{Don't buy}} → {{We shouldn't buy}}. (s. 70)",
-   "kavram": "shouldn't"
+   "kavram": "shouldn't",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "{{Don't buy pets from the pet shops.}} Hangisi aynı anlamdadır"
+   ]
   },
   {
    "soru": "Sokak hayvanları ({{stray animals}}) için hangisi iyi bir öneridir?",
@@ -418,7 +493,13 @@
    "dogru": 0,
    "ipucu": "Hayvanlara yardım eden öneri hangisi?",
    "aciklama": "{{Feed the stray animals.}} → {{We should feed the stray animals.}} (s. 70)",
-   "kavram": "feed"
+   "kavram": "feed",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi iyi bir öneridir"
+   ]
   },
   {
    "soru": "\"Avlamayı bırakmalıyız.\" cümlesinin İngilizcesi hangisi?",
@@ -430,7 +511,13 @@
    "dogru": 1,
    "ipucu": "{{stop}}'tan sonra fiil {{-ing}} alır; {{should}} öznenin hemen arkasında.",
    "aciklama": "{{We should stop hunting.}} (s. 75)",
-   "kavram": "stop hunting"
+   "kavram": "stop hunting",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "İngilizcesi hangisi"
+   ]
   },
   {
    "soru": "{{Educate people about wildlife, so they can learn how to protect it.}} İnsanları neden eğitmeliyiz?",
@@ -442,7 +529,13 @@
    "dogru": 1,
    "ipucu": "{{so}}'dan sonrasını oku: {{learn how to protect it}}.",
    "aciklama": "{{so they can learn how to protect it}}: korumayı öğrensinler diye. (s. 69)",
-   "kavram": "protect"
+   "kavram": "protect",
+   "tetik": [
+    "neden"
+   ],
+   "bolge": [
+    "{{Educate people about wildlife, so they can learn how to protect it.}} İnsanları neden eğitmeliyiz"
+   ]
   }
  ],
  "kelimeler": [
@@ -715,5 +808,171 @@
     ]
    }
   ]
- }
+ },
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Protect wild animals. → We should {protect|protects|to protect} wild animals.",
+   "s": "s. 75"
+  },
+  {
+   "c": "What should we do to protect wildlife? — We {shouldn't|should|didn't} hunt animals.",
+   "s": "s. 71"
+  },
+  {
+   "c": "Stop {hunting|hunt|hunts} the animals for their skin, fur or teeth.",
+   "s": "s. 69"
+  },
+  {
+   "c": "Educate people about wildlife, so they can learn how to {protect|destroy|hunt} it.",
+   "s": "s. 69"
+  },
+  {
+   "c": "Don't destroy the animal habitats. → We {shouldn't destroy|should destroy|shouldn't destroys} the animal habitats.",
+   "s": "s. 70"
+  },
+  {
+   "c": "Governments should {educate|hunt|pollute} people.",
+   "s": "s. 79"
+  },
+  {
+   "c": "Protect animal habitats or they will all {die|grow|fly}.",
+   "s": "s. 69"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Yaban hayatını korumak için iki İngilizce öneri yaz: biri should, biri shouldn't ile olsun.",
+   "tetik": [
+    "öneri yaz"
+   ],
+   "okut": [
+    "yaban hayatını korumak için biri should, biri shouldn't ile iki öneri yazmanı",
+    "yaban hayatına zarar veren iki davranışı sıralamanı",
+    "should ile tek bir öneri yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "We should",
+     "ornek": "protect the forests.",
+     "havuz": [
+      "hunt the animals.",
+      "pollute the rivers."
+     ],
+     "k": [
+      "protect",
+      "feed",
+      "educate",
+      "stop"
+     ]
+    },
+    {
+     "bas": "We shouldn't",
+     "ornek": "hunt animals.",
+     "havuz": [
+      "feed the stray animals.",
+      "protect wildlife."
+     ],
+     "k": [
+      "hunt",
+      "destroy",
+      "pollut",
+      "kill"
+     ]
+    }
+   ],
+   "kisa": "We should protect the forests. We shouldn't hunt animals.",
+   "cevap": "We should protect the forests and feed the stray animals. We shouldn't hunt animals for their fur.",
+   "anahtarlar": [
+    {
+     "ad": "should + yapılması iyi olan (protect, feed…)",
+     "k": [
+      "protect",
+      "feed",
+      "educate",
+      "stop"
+     ]
+    },
+    {
+     "ad": "shouldn't + zararlı davranış (hunt, destroy…)",
+     "k": [
+      "hunt",
+      "destroy",
+      "pollut",
+      "kill"
+     ]
+    }
+   ],
+   "sayfa": "s. 71",
+   "bolge": [
+    "iki İngilizce öneri yaz",
+    "biri should, biri shouldn't ile olsun"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "{{Stop hunting the animals for their skin, fur or teeth.}}",
+    "{{Vaccinate them against diseases.}}",
+    "{{Educate people about wildlife, so they can learn how to protect it.}}"
+   ],
+   "soru": "Metne göre insanları neden eğitmeliyiz?",
+   "bolge": [
+    "neden eğitmeliyiz"
+   ],
+   "serit": "insanları eğitme sebebi",
+   "kanit": [
+    2
+   ],
+   "secenekler": [
+    "so they can learn how to protect wildlife",
+    "to stop hunting the animals",
+    "to vaccinate them against diseases"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "“eğitmek” İngilizcede “educate” demek. Bu cümlede “so”dan sonra ne yazıyor?",
+   "kanitIpucu": "“Educate” hangi cümlede?",
+   "aciklama": "“Educate people about wildlife, so they can learn how to protect it.” Yaban hayatını nasıl koruyacaklarını öğrensinler diye (s. 69).",
+   "kavram": "educate"
+  },
+  {
+   "metin": [
+    "{{Today, I'd like to talk about the extinction of animals.}}",
+    "{{They became extinct because people killed and hunted them for their furs, teeth or tusks.}}",
+    "{{Humans destroyed their habitats and damaged the forests.}}",
+    "{{I guess we should stop harming wildlife as soon as possible.}}",
+    "{{There should be justice not only for people but also for the animals.}}"
+   ],
+   "soru": "Metne göre konuşmacı ne öneriyor?",
+   "bolge": [
+    "ne öneriyor"
+   ],
+   "serit": "konuşmacının önerisi",
+   "kanit": [
+    3,
+    4
+   ],
+   "secenekler": [
+    "We should stop harming wildlife.",
+    "People hunted animals for their tusks.",
+    "Humans damaged the forests."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Öneri “should” ile yapılır. Olmuş olayları anlatan cümleler öneri değildir.",
+   "kanitIpucu": "“should” hangi cümlede geçiyor?",
+   "aciklama": "“I guess we should stop harming wildlife as soon as possible.” Diğer iki şık geçmişte olanları anlatıyor, öneri değil (s. 71).",
+   "kavram": "should"
+  }
+ ]
 }

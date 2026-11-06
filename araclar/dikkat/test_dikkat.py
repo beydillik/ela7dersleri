@@ -7,6 +7,7 @@ import os
 KOD, KONU = sys.argv[1], sys.argv[2]
 KOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 D = json.load(open(os.path.join(KOK, "public", KOD, "konular", KONU + ".json"), encoding="utf-8"))
+DIL_EN = json.load(open(os.path.join(KOK, "public", KOD, "ders.json"), encoding="utf-8")).get("dil") == "en"   # İngilizce: Öğren'de Kelime Duvarı adımı
 SONUC = []
 def ok(ad, kosul, ayrinti=""):
     SONUC.append((ad, bool(kosul))); print(("✓ " if kosul else "✗ ") + ad + (f"  [{ayrinti}]" if ayrinti and not kosul else ""))
@@ -15,10 +16,12 @@ TUM = [k["soru"] for k in D["kavramlar"]] + D["sorular"] + D.get("metinli", [])
 def bulmali(q):   # motordaki kalpTum ile aynı: bölge sorunun bütün kelimelerini kapsıyorsa bulma adımı yok
     kel = lambda x: re.findall(r"[^\W_]+", x)
     b = {w for x in q.get("bolge", []) for w in kel(x)}
-    return bool(q.get("bolge")) and not all(w in b for w in kel(q["soru"]))
+    return bool(q.get("bolge")) and not all(w in b for w in kel(EN.sub(" ", q["soru"])))   # İngilizce: {{…}} bağlamdır, sayılmaz
+EN = re.compile(r"\{\{(.+?)\}\}")
+duz = lambda t: EN.sub(r"\1", t)   # ekranda {{ }} görünmez
 def tam(t): return re.compile(r"^[a-d]\) " + re.escape(t) + r"$")
 def bul_q(metin):
-    es = [q for q in TUM if q["soru"] in metin]   # en uzun eşleşme ("Hangisi doğrudur?" başka sorunun içinde de geçer)
+    es = [q for q in TUM if duz(q["soru"]) in metin]   # en uzun eşleşme ("Hangisi doğrudur?" başka sorunun içinde de geçer)
     if es: return max(es, key=lambda q: len(q["soru"]))
     raise Exception("soru bulunamadı: " + metin[:80])
 # Matematik: tuş takımı (cevap) ve sayı doğrusu (nokta) soruları da sorunun kalbinden sonra açılır
@@ -67,7 +70,7 @@ with sync_playwright() as pw:
     adim = int(page.inner_text("#pgTxt").split("/")[1].split()[0])
     # Türkçe/Matematik: "Hazır mısın?" (hazirlik) ve kavramlardaki "Birlikte çözelim" (cozum) / "Sıra sende" (sende) birer adımdır
     ek_adim = (1 if (D.get("hazirlik") or {}).get("maddeler") else 0) + sum(bool(k.get("cozum")) + bool(k.get("sende")) for k in D["kavramlar"])
-    beklenen = 1 + 2 * len(D["kavramlar"]) + 3 + ek_adim
+    beklenen = 1 + 2 * len(D["kavramlar"]) + 3 + ek_adim + (1 if DIL_EN else 0)
     ok(f"Öğren: ara 'Hatırlayalım' adımı yok (adım sayısı {adim})", adim == beklenen, f"beklenen {beklenen}")
     SENDE = [a["soru"] for k in D["kavramlar"] for f in ("cozum", "sende") for a in (k.get(f) or {}).get("adimlar", []) if a.get("soru")]
     for _ in range(120):
@@ -119,7 +122,11 @@ with sync_playwright() as pw:
                 page.locator("#qbox .opt").nth(yanl).click(); ileri(50)
                 ok("Yanlış cevapta 'Sorunun kalbine tekrar bak' hatırlatması", page.is_visible("#qbox .kalp-hatir"))
             ileri(8000)
-            if not cevapla(page, "#qbox", q): page.locator("#qbox .opt").nth(q["dogru"]).click()
+            if "secenekler" in q:   # aynı metinli sorular (İngilizce: "Dinle. Hangi cümleyi duydun?"): şıkları ekrandakilerle uyuşanı seç
+                ekran = page.locator("#qbox .opt").all_inner_texts()
+                for x in [q] + [x for x in TUM if x is not q and x["soru"] == q["soru"] and "secenekler" in x]:
+                    if all(any(re.fullmatch(r"[a-d]\) " + re.escape(duz(o)), e) for e in ekran) for o in x["secenekler"]): q = x; break
+            if not cevapla(page, "#qbox", q): page.locator("#qbox .opt:not([disabled])", has_text=tam(duz(q["secenekler"][q["dogru"]]))).first.click()
             ileri(50)
         nx = page.query_selector("[data-next]:not([disabled])")
         if nx:
@@ -145,6 +152,9 @@ with sync_playwright() as pw:
         ileri(6000)
     ok("HT: tur bitti, Devam açık", page.get_attribute("[data-next]", "disabled") is None)
     page.click("[data-next]"); ileri(100)
+    if DIL_EN:   # Kelime Duvarı (İngilizce)
+        ok("Kelime Duvarı adımı geldi", page.query_selector("#kisaBox") is None)
+        ileri(16000); page.click("[data-next]"); ileri(100)
 
     # Kısa cevap
     ok("Kısa Cevap adımı geldi", page.query_selector("#kisaBox") is not None)
@@ -193,6 +203,10 @@ with sync_playwright() as pw:
                 metin_tz = q["secenekler"][q["tuzak"][0]]
                 page.locator("#sq .opt", has_text=tam(metin_tz)).click(); ileri(50); tuzak_gor = True
                 ok("Metinli: tuzak şık seçilince 'Bu bir tuzak şık!'", "tuzak şık" in page.inner_text("#sq .fb"))
+        if not met and "secenekler" in q and not q.get("ima") and page.is_visible("#sq .opts"):   # aynı metinli sorular: şıkları ekrandakilerle uyuşanı seç
+            ekran = page.locator("#sq .opt").all_inner_texts()
+            for x in [q] + [x for x in TUM if x is not q and x["soru"] == q["soru"] and "secenekler" in x]:
+                if all(any(re.fullmatch(r"[a-d]\) " + re.escape(duz(o)), e) for e in ekran) for o in x["secenekler"]): q = x; break
         dogru_metin = ["Metinde açıkça yazıyor.", "Metinde yazmıyor, ima ediliyor."][q["dogru"]] if q.get("ima") else q["secenekler"][q["dogru"]] if "secenekler" in q else None
         if not yanlis2 and not met and bulmali(q) and "secenekler" in q:
             yanlis2 = True
