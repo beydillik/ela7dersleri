@@ -1280,7 +1280,7 @@ html[data-dil="en"] .stage .kicker, html[data-dil="en"] .isinma-etiket, html[dat
 /* Kabuk (ANKUZEF Defteri görünümü): solda kara tahta menü, sağda çizgili defter sayfası */
 .yz-kabuk { display: none; }
 .yazili-mod .yz-kabuk { display: grid; grid-template-columns: 280px minmax(0, 1fr); min-height: 100vh; }
-.yazili-mod { background-color: #15232a; background-image: radial-gradient(1.4px 1.4px at 8% 14%, rgba(255,255,255,.55), transparent 60%), radial-gradient(1px 1px at 17% 63%, rgba(255,255,255,.4), transparent 60%),
+.yazili-mod, [data-tema] body.yazili-mod { background-color: #15232a; background-image: radial-gradient(1.4px 1.4px at 8% 14%, rgba(255,255,255,.55), transparent 60%), radial-gradient(1px 1px at 17% 63%, rgba(255,255,255,.4), transparent 60%),
   radial-gradient(1.2px 1.2px at 92% 9%, rgba(255,255,255,.5), transparent 60%), radial-gradient(1.3px 1.3px at 88% 86%, rgba(255,255,255,.45), transparent 60%),
   radial-gradient(ellipse 60% 40% at 20% 10%, rgba(255,255,255,.05), transparent 70%); background-attachment: fixed; }
 .yz-el { font-family: "Caveat", "Segoe Print", cursive; font-weight: 700; }

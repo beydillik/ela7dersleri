@@ -1,0 +1,3819 @@
+{
+ "id": "d1y1",
+ "baslik": "1. Dönem 1. Yazılı",
+ "ders": "Türkçe",
+ "senaryo": "Senaryo 5",
+ "sure": 40,
+ "tarih": "2026-11-10",
+ "dagilim": {
+  "T.O.7.21": 1,
+  "T.O.7.5": 2,
+  "T.O.7.4": 1,
+  "T.Y.7.21": 1,
+  "T.Y.7.3": 1
+ },
+ "mebToplam": 10,
+ "mebHaric": [
+  {
+   "no": 3,
+   "kazanim": "T.O.7.7",
+   "ad": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme"
+  },
+  {
+   "no": 4,
+   "kazanim": "T.Y.7.18",
+   "ad": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+   "sinir": true
+  },
+  {
+   "no": 5,
+   "kazanim": "T.O.7.8",
+   "ad": "Metnin derin anlamını belirlemeye yönelik üst düzey çıkarımlar yapabilme"
+  },
+  {
+   "no": 7,
+   "kazanim": "T.O.7.14",
+   "ad": "Bilgilendirici metinlerde metin yapılarından hareketle önemli bilgileri belirleme",
+   "sinir": true
+  },
+  {
+   "no": 8,
+   "kazanim": "T.O.7.15",
+   "ad": "Bilgilendirici metinde anahtar kelimeleri belirleme"
+  }
+ ],
+ "giris": "Okulun seçtiği senaryoda <b>6 soru</b> var: kelimenin anlamı 2, metnin konusu ve ana düşüncesi 2, yazım-noktalama 1, taslak ve metin yazma 1. Önce <b>★★★ Banko</b> soruları sağlamla: <b>ikilemeler ayrı ve çizgisiz</b>, noktalı virgülün ve üç noktanın <b>amacı</b>, konunun <b>kısa</b> yazılışı. Kelime sorularında <b>tahmin + metinden gerekçe</b> yeter; metin yazma sorusunda en azından <b>Giriş – Gelişme – Sonuç</b> taslağını yaz.",
+ "kapsamDisi": [
+  "Metinden çıkarım yapma (gizli anlam, örtük mesaj) — MEB örneğinin 3. ve 5. soruları",
+  "Verilen ifadelerle metni tamamlama ve benzetme kullanma — MEB 4. soru",
+  "Metin yapısından önemli bilgiyi bulma ve anahtar kelime — MEB 7. ve 8. sorular"
+ ],
+ "puanNotu": "Puanlar tahminidir: okul soruların puanını farklı dağıtabilir. Toplam 100. Provalarda senaryodaki gibi 6 soru var; T.O.7.5'in ikinci sorusu MEB örneğinde yok, ana düşünce ya da metindeki bilgiyi bulma olacağını tahmin ediyoruz.",
+ "kaynakNotu": "Sorular MEB'in yayımladığı 'Yazılıya Hazırlanıyorum 7. Sınıf Türkçe 1. Dönem 1. Yazılı' örneklerine, ders kitabına ve yazilihocam.com yazılı örneklerine dayanır. “Forsa” parçası MEB dokümanındaki Ömer Seyfettin alıntısıdır.",
+ "soruGiris": "Bunlar MEB'in örnek soruları; yazılıda <b>benzerleri</b> çıkacak. <b>★★★ Banko</b> olanlarla başla. Cevabı kısa ve kalıba uygun yaz.",
+ "kazanimAd": "konu",
+ "kazanimlar": [
+  {
+   "kod": "T.O.7.21",
+   "ad": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+   "kisa": "Kelimenin Anlamını Metinden Bulma",
+   "soru": 1,
+   "renk": "#1971c2",
+   "konular": [
+    "u1k1",
+    "u2k1"
+   ],
+   "sayfa": "s. 12, 16, 32",
+   "svg": "<svg viewBox='0 0 440 166' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Bilinmeyen kelimenin anlamını çevresindeki kelimelerden bulma' font-family='Nunito, sans-serif'><rect x='20' y='16' width='400' height='44' rx='12' fill='#59627f' fill-opacity='0.25' stroke='#59627f' stroke-width='2'/><text x='220' y='43' text-anchor='middle' font-size='14' font-weight='600' fill='#f5f6fa'>… eğitim ve <tspan fill='#f2c14e'>keşif</tspan> görevleri için tasarlanmış …</text><line x1='150' y1='66' x2='120' y2='92' stroke='#6fb3ff' stroke-width='2.5' stroke-linecap='round'/><polygon points='120,92 123.2,84.7 127.7,89.9' fill='#6fb3ff'/><line x1='290' y1='66' x2='320' y2='92' stroke='#6fb3ff' stroke-width='2.5' stroke-linecap='round'/><polygon points='320,92 312.3,89.9 316.8,84.7' fill='#6fb3ff'/><rect x='30' y='96' width='170' height='40' rx='12' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='115' y='121' text-anchor='middle' font-size='12' font-weight='700' fill='#6fb3ff'>İpucu: eğitim, görev</text><rect x='240' y='96' width='170' height='40' rx='12' fill='#5fd08f' fill-opacity='0.14' stroke='#5fd08f' stroke-width='2'/><text x='325' y='121' text-anchor='middle' font-size='12' font-weight='700' fill='#5fd08f'>Anlamı: inceleme</text><text x='220' y='156' text-anchor='middle' font-size='12' font-weight='600' fill='#a3abc6'>Kelimeyi başka kelimelerle açıkla.</text></svg>",
+   "maddeler": [
+    "<b>Bağlam</b>: bir kelimenin çevresindeki cümleler. Bilmediğin kelimenin anlamını çoğu zaman bağlam söyler. (s. 12)",
+    "Önce <b>tahmin et</b>, sonra sözlükle kontrol et. Sınavda sözlük yok: tahminin de puan alır, <b>boş bırakma</b>. (s. 32)",
+    "Bir kelimenin birden çok anlamı olabilir; <b>metindeki anlamını cümle seçer</b>: “ağır kutu” (kütlesi fazla) ≠ “ağır eleştiri” (kırıcı). (s. 16)",
+    "Yol: kelimenin geçtiği cümleyi oku → yanındaki <b>ipucu kelimeleri</b> bul → anlamı <b>başka kelimelerle</b> yaz. HÜRKUŞ: “eğitim ve <b>keşif</b> görevleri” → keşif = bir yeri inceleyip bilgi toplama. (MEB örnek sorusu)",
+    "Cevap kalıbı: <b>“kelime: … demek / … anlamında”</b>. Kelimeyi tekrar etme (“keşif: keşfetmek” olmaz).",
+    "Ters soru da çıkar: <b>anlamı verilir, kelimeyi metinden bulursun</b>. Anlamı oku, metinde ona uyan kelimeyi ara, aynen yaz."
+   ],
+   "kelimeler": [
+    "bağlam",
+    "ipucu kelime",
+    "… demek",
+    "başka kelimelerle açıkla",
+    "metindeki anlam",
+    "boş bırakma"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Kelimeyi tekrar etmek: “keşif: keşfetmek.”",
+     "dogru": "Başka kelimelerle açıkla: “bir yeri inceleyip bilgi toplamak.”"
+    },
+    {
+     "yanlis": "Metne bakmadan aklına gelen anlamı yazmak.",
+     "dogru": "Kelimenin çevresindeki cümleye bak: “eğitim ve keşif görevleri.”"
+    },
+    {
+     "yanlis": "Emin olmadığı maddeyi boş bırakmak.",
+     "dogru": "Tahminini yaz; yakın bir anlam da puan getirir."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Bir kelimenin çevresindeki cümlelere {bağlam|ana fikir|başlık} denir.",
+     "s": "s. 12"
+    },
+    {
+     "c": "Bilmediğin kelimenin anlamını önce {bağlamdan tahmin et|hiç yazma}.",
+     "s": "s. 32"
+    },
+    {
+     "c": "Bir kelimenin metindeki anlamını {cümle|kelimenin uzunluğu} seçer.",
+     "s": "s. 16"
+    },
+    {
+     "c": "“İşçiler ağır kutuları taşıdı.” cümlesinde ağır, {kütlesi fazla|kırıcı} demektir.",
+     "s": "yazilihocam örneği"
+    },
+    {
+     "c": "HÜRKUŞ'taki “teçhizat”, görev için gereken {araç gereçlerdir|pilotun adıdır}.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Anlamı yazarken kelimeyi {tekrar etme|aynen tekrar et}, başka kelimelerle açıkla.",
+     "s": "cevap kalıbı"
+    },
+    {
+     "c": "Emin olmasan da {tahminini yaz|maddeyi boş bırak}.",
+     "s": "cevap kalıbı"
+    }
+   ]
+  },
+  {
+   "kod": "T.O.7.5",
+   "ad": "Metnin yüzey anlamını belirleyebilme",
+   "kisa": "Metnin Konusu ve Ana Düşüncesi",
+   "soru": 2,
+   "renk": "#e67700",
+   "konular": [
+    "u1k3"
+   ],
+   "sayfa": "s. 17, 22",
+   "svg": "<svg viewBox='0 0 440 156' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Konu ve ana düşünce farkı' font-family='Nunito, sans-serif'><rect x='16' y='14' width='196' height='108' rx='12' fill='#f2c14e' fill-opacity='0.14' stroke='#f2c14e' stroke-width='2'/><text x='114' y='38' text-anchor='middle' font-size='15' font-weight='800' fill='#f2c14e'>KONU</text><text x='114' y='60' text-anchor='middle' font-size='12' font-weight='600' fill='#f5f6fa'>Metin neyi anlatıyor?</text><text x='114' y='84' text-anchor='middle' font-size='11' font-weight='600' fill='#a3abc6'>kısa: birkaç kelime</text><text x='114' y='106' text-anchor='middle' font-size='11' font-weight='700' fill='#f2c14e'>“Arıların doğadaki önemi”</text><rect x='228' y='14' width='196' height='108' rx='12' fill='#b197fc' fill-opacity='0.14' stroke='#b197fc' stroke-width='2'/><text x='326' y='38' text-anchor='middle' font-size='15' font-weight='800' fill='#b197fc'>ANA DÜŞÜNCE</text><text x='326' y='60' text-anchor='middle' font-size='12' font-weight='600' fill='#f5f6fa'>Yazar ne demek istiyor?</text><text x='326' y='84' text-anchor='middle' font-size='11' font-weight='600' fill='#a3abc6'>bir cümle, ders verir</text><text x='326' y='106' text-anchor='middle' font-size='11' font-weight='700' fill='#b197fc'>“Arıları korumalıyız.”</text><text x='220' y='146' text-anchor='middle' font-size='12' font-weight='600' fill='#a3abc6'>Konu ≠ ana düşünce</text></svg>",
+   "maddeler": [
+    "<b>Konu</b>: metinde <b>neyin anlatıldığı</b>. “Bu metin neyi anlatıyor?” sorusunun cevabı; <b>kısa</b> yazılır. (s. 22)",
+    "Konuyu bulmak için ipuçları: <b>başlık</b> ve metinde <b>sık geçen kelimeler</b>. Arılar metninde “arı” her cümlede geçiyor. (s. 22)",
+    "Konu kalıbı: <b>“… -ın/-in … önemi / … etkileri / … görevleri”</b>. Örnek: “Arıların doğadaki önemi.” (MEB örnek sorusu)",
+    "<b>Ana düşünce</b>: yazarın asıl söylemek istediği; <b>bir cümle</b>dir, çoğu zaman ders verir: “Arıları korumalıyız.” (s. 17)",
+    "Ana düşünce çoğu zaman metnin <b>sonunda</b>, “bu nedenle, bu yüzden, asıl önemli olan” sözlerinin ardındadır.",
+    "Metinde yazan bilgi soruları (ne zaman, nerede, ne amaçla): cevap <b>metinde açıkça yazar</b>; o cümleyi bul, kısaca yaz."
+   ],
+   "kelimeler": [
+    "neyi anlatıyor?",
+    "kısa: … önemi",
+    "sık geçen kelime",
+    "bir cümle",
+    "-malıyız",
+    "bu nedenle …"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Konu sorusuna uzun ders cümlesi yazmak: “Arıları korumalıyız.”",
+     "dogru": "Konu kısa yazılır: “Arıların doğadaki önemi.”"
+    },
+    {
+     "yanlis": "Konuya yalnız tek kelime yazmak: “Arılar.”",
+     "dogru": "Arılar hakkında ne anlatılıyor? “Arıların doğadaki önemi.”"
+    },
+    {
+     "yanlis": "Ana düşünce sorusuna konuyu yazmak: “Dil.”",
+     "dogru": "Ana düşünce bir cümledir: “Dilimize sahip çıkmalıyız.”"
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Konu, metinde {neyin anlatıldığıdır|yazarın adıdır}.",
+     "s": "s. 22"
+    },
+    {
+     "c": "Konu {kısa|çok uzun} yazılır: “Arıların doğadaki önemi.”",
+     "s": "s. 22"
+    },
+    {
+     "c": "Konuyu bulmak için metinde {sık geçen kelimelere|en uzun kelimeye} bakarız.",
+     "s": "s. 22"
+    },
+    {
+     "c": "Ana düşünce, yazarın {asıl söylemek istediği|ilk yazdığı} düşüncedir.",
+     "s": "s. 17"
+    },
+    {
+     "c": "Ana düşünce {bir cümledir|tek kelimedir}.",
+     "s": "s. 17"
+    },
+    {
+     "c": "“Arıları korumalıyız.” cümlesi {ana düşüncedir|konudur}.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Ana düşünce çoğu zaman “{bu nedenle|bir varmış bir yokmuş}” gibi sözlerin ardındadır.",
+     "s": "cevap kalıbı"
+    }
+   ]
+  },
+  {
+   "kod": "T.O.7.4",
+   "ad": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+   "kisa": "Anlam Tahmini ve Gerekçesi",
+   "soru": 1,
+   "renk": "#2f9e44",
+   "konular": [
+    "u1k1",
+    "u3k2"
+   ],
+   "sayfa": "s. 12, 32",
+   "svg": "<svg viewBox='0 0 440 164' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Kelimenin anlamını tahmin edip metinden gerekçe yazma' font-family='Nunito, sans-serif'><rect x='16' y='14' width='408' height='40' rx='12' fill='#59627f' fill-opacity='0.25' stroke='#59627f' stroke-width='2'/><text x='220' y='39' text-anchor='middle' font-size='12.5' font-weight='600' fill='#f5f6fa'>İhtiyarlamış, çok <tspan fill='#f2c14e'>bitap</tspan> düşmüştü. Kolları kuvvetini kaybetmiş…</text><rect x='16' y='70' width='196' height='62' rx='12' fill='#5fd08f' fill-opacity='0.14' stroke='#5fd08f' stroke-width='2'/><text x='114' y='93' text-anchor='middle' font-size='13' font-weight='800' fill='#5fd08f'>1) TAHMİNİM</text><text x='114' y='116' text-anchor='middle' font-size='12' font-weight='600' fill='#f5f6fa'>yorgun, güçsüz</text><rect x='228' y='70' width='196' height='62' rx='12' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='326' y='93' text-anchor='middle' font-size='13' font-weight='800' fill='#6fb3ff'>2) GEREKÇEM</text><text x='326' y='116' text-anchor='middle' font-size='12' font-weight='600' fill='#f5f6fa'>“kuvvetini kaybetmiş”</text><text x='220' y='154' text-anchor='middle' font-size='12' font-weight='600' fill='#a3abc6'>Gerekçe = metinden ipucu cümlesi (kendi fikrin değil)</text></svg>",
+   "maddeler": [
+    "Bu soru <b>iki parça</b> ister: 1) kelimenin anlamına dair <b>tahminin</b>, 2) seni bu tahmine götüren <b>metin içi gerekçe</b>. (MEB örnek sorusu)",
+    "<b>Gerekçe = metindeki ipucu ifade.</b> Kendi fikrini değil, metinden bir parçayı <b>tırnak içinde</b> yaz: “kolları eski kuvvetini kaybetmiş”.",
+    "İpucu çoğu zaman kelimenin <b>hemen yanındaki</b> cümlelerdedir: “bitap düşmüştü. Kolları eski kuvvetini kaybetmiş…” (MEB örnek sorusu; s. 12)",
+    "Forsa: <b>bitap</b> = yorgun, güçsüz · <b>iştiyak</b> = özlem, çok isteme · <b>teselli</b> = avuntu, acıyı hafifleten şey. (MEB örnek sorusu)",
+    "Deyim de sorulabilir: “burun kıvırmak” = beğenmemek, küçümsemek. Olaya bak: arkadaşları Ege'yi <b>tanımadan</b> yetersiz sanmış. (yazilihocam örneği)",
+    "Cevap kalıbı: <b>“Anlamı: … Gerekçe: Metinde ‘…’ yazıyor.”</b>"
+   ],
+   "kelimeler": [
+    "tahminim",
+    "gerekçem",
+    "metinde ‘…’ yazıyor",
+    "tırnak içinde",
+    "yanındaki cümle",
+    "kendi fikrin değil"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Gerekçeye kendi fikrini yazmak: “Bence yaşlılar yorulur.”",
+     "dogru": "Metinden ipucu yaz: “kolları eski kuvvetini kaybetmiş.”"
+    },
+    {
+     "yanlis": "Yalnız tahmini yazıp gerekçeyi unutmak.",
+     "dogru": "İki parça yaz: tahmin + metinden gerekçe."
+    },
+    {
+     "yanlis": "Kelimenin sözlükteki başka bir anlamını yazmak.",
+     "dogru": "Metindeki anlamı yaz; anlamı cümle seçer."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Bu soru tahmin ve {gerekçe|başlık} ister.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Gerekçe {metindeki ipucu ifadedir|kendi düşüncemdir}.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Metinden aldığın gerekçeyi {tırnak içinde|soru işaretiyle} yaz.",
+     "s": "cevap kalıbı"
+    },
+    {
+     "c": "Forsa'da “bitap” kelimesi {yorgun, güçsüz|neşeli, güçlü} demektir.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "“İştiyakla yanıp tutuşurdu” sözündeki iştiyak {özlem|korku} anlamındadır.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Dalga sesleri ona teselli verir, acısını {unuttururdu|artırırdı}.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "İpucu çoğu zaman kelimenin {hemen yanındaki cümlelerdedir|metnin başlığındadır}.",
+     "s": "s. 12"
+    }
+   ]
+  },
+  {
+   "kod": "T.Y.7.21",
+   "ad": "Yazım kuralları ve noktalama işaretlerini uygulayabilme",
+   "kisa": "İkilemeler, Noktalı Virgül, Üç Nokta",
+   "soru": 1,
+   "renk": "#c92a2a",
+   "konular": [
+    "u1k4",
+    "u1k5"
+   ],
+   "sayfa": "s. 34–35, 49",
+   "svg": "<svg viewBox='0 0 440 176' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='İkilemelerin yazımı, noktalı virgül ve üç nokta' font-family='Nunito, sans-serif'><rect x='16' y='12' width='408' height='40' rx='12' fill='#ff8a8a' fill-opacity='0.14' stroke='#ff8a8a' stroke-width='2'/><text x='220' y='37' text-anchor='middle' font-size='12.5' font-weight='700' fill='#f5f6fa'>apar-topar ✗   hızlıhızlı ✗   →   apar topar ✓   hızlı hızlı ✓</text><rect x='16' y='62' width='200' height='84' rx='12' fill='#f2c14e' fill-opacity='0.14' stroke='#f2c14e' stroke-width='2'/><text x='116' y='84' text-anchor='middle' font-size='14' font-weight='800' fill='#f2c14e'>;  noktalı virgül</text><text x='116' y='103' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>• özneden sonra</text><text x='116' y='119' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>• virgüllü sıralı cümleler</text><text x='116' y='135' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>• virgüllü gruplar</text><rect x='224' y='62' width='200' height='84' rx='12' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='324' y='84' text-anchor='middle' font-size='14' font-weight='800' fill='#6fb3ff'>…  üç nokta</text><text x='324' y='103' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>• cümle yarım kaldı</text><text x='324' y='119' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>• eksik bırakılan cevap</text><text x='324' y='135' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>• seslenmeyi pekiştirme</text><text x='220' y='166' text-anchor='middle' font-size='12' font-weight='600' fill='#a3abc6'>İşaret + amacı: ikisini de yaz.</text></svg>",
+   "maddeler": [
+    "<b>İkilemeler ayrı yazılır</b>, arasına <b>kısa çizgi ya da virgül konmaz</b>: apar topar, hızlı hızlı, teker teker, irili ufaklı. (s. 34)",
+    "Noktalı virgül 1: ikiden fazla eş değer öge arasında virgül olan cümlede <b>özneden sonra</b> konabilir: “Genç şairimiz<b>;</b> Necip Fazıl, Nâzım Hikmet ve Attilâ İlhan…” (s. 49)",
+    "Noktalı virgül 2: ögeleri arasında virgül bulunan <b>sıralı cümleleri ayırır</b>: “… güçlendirir, aktarır<b>;</b> … önem vermeyen toplumlar ise …” (s. 49)",
+    "Noktalı virgül 3: virgüllerle ayrılmış <b>tür ve takımları</b> (grupları) ayırır: “Ece su, sandviç<b>;</b> Kerem şapka, gözlük aldı.” (s. 49)",
+    "<b>Üç nokta</b>: tamamlanmamış cümlenin sonunda (sözün gerisi okura bırakılır), eksik bırakılan cevapta ve seslenmeyi pekiştirmede kullanılır. (s. 35)",
+    "Cevap kalıbı: <b>işaret + amaç</b> → “Noktalı virgül; özneden sonra konur.” Yalnız işareti yazmak yarım puan getirir."
+   ],
+   "kelimeler": [
+    "ayrı, çizgisiz",
+    "özneden sonra ;",
+    "virgüllü sıralı cümleler ;",
+    "virgüllü gruplar ;",
+    "cümle yarım kaldı …",
+    "işaret + amaç"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "İkilemenin arasına kısa çizgi koymak: “teker-teker.”",
+     "dogru": "Ayrı ve çizgisiz yaz: “teker teker.”"
+    },
+    {
+     "yanlis": "İkilemeyi bitişik yazmak ya da araya virgül koymak: “koşakoşa”, “irili, ufaklı.”",
+     "dogru": "“koşa koşa”, “irili ufaklı.”"
+    },
+    {
+     "yanlis": "Yalnız işareti yazıp amacını yazmamak.",
+     "dogru": "İşaret + amaç: “Noktalı virgül; özneden sonra konur.”"
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "İkilemeler {ayrı|bitişik} yazılır.",
+     "s": "s. 34"
+    },
+    {
+     "c": "İkilemelerin arasına {hiçbir işaret|kısa çizgi} konmaz: apar topar.",
+     "s": "s. 34"
+    },
+    {
+     "c": "“Genç şairimiz ( ) Necip Fazıl, Nâzım Hikmet…” cümlesinde boşluğa {noktalı virgül|üç nokta} gelir.",
+     "s": "s. 49"
+    },
+    {
+     "c": "Bu noktalı virgül {özneden sonra|cümle sonunda} konmuştur.",
+     "s": "s. 49"
+    },
+    {
+     "c": "Ögeleri arasında virgül bulunan {sıralı cümleleri|kelimenin hecelerini} noktalı virgül ayırır.",
+     "s": "s. 49"
+    },
+    {
+     "c": "Tamamlanmamış, yarım bırakılan cümlenin sonuna {üç nokta|noktalı virgül} konur.",
+     "s": "s. 35"
+    },
+    {
+     "c": "Noktalama sorusunda işaretin adını ve {amacını|rengini} yaz.",
+     "s": "cevap kalıbı"
+    }
+   ]
+  },
+  {
+   "kod": "T.Y.7.3",
+   "ad": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+   "kisa": "Taslak ve Bilgilendirici Metin",
+   "soru": 1,
+   "renk": "#7048e8",
+   "konular": [
+    "u3k3"
+   ],
+   "sayfa": "s. 167",
+   "svg": "<svg viewBox='0 0 440 144' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Giriş, gelişme ve sonuç taslağı' font-family='Nunito, sans-serif'><rect x='16' y='14' width='128' height='92' rx='12' fill='#5fd08f' fill-opacity='0.14' stroke='#5fd08f' stroke-width='2'/><text x='80' y='38' text-anchor='middle' font-size='14' font-weight='800' fill='#5fd08f'>GİRİŞ</text><text x='80' y='62' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>konuyu</text><text x='80' y='78' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>tanıt</text><line x1='148' y1='60' x2='166' y2='60' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='166,60 158.8,63.5 158.8,56.5' fill='#a3abc6'/><rect x='170' y='14' width='128' height='92' rx='12' fill='#f2c14e' fill-opacity='0.14' stroke='#f2c14e' stroke-width='2'/><text x='234' y='38' text-anchor='middle' font-size='14' font-weight='800' fill='#f2c14e'>GELİŞME</text><text x='234' y='62' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>açıkla,</text><text x='234' y='78' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>örnek ver</text><line x1='302' y1='60' x2='320' y2='60' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='320,60 312.8,63.5 312.8,56.5' fill='#a3abc6'/><rect x='324' y='14' width='100' height='92' rx='12' fill='#b197fc' fill-opacity='0.14' stroke='#b197fc' stroke-width='2'/><text x='374' y='38' text-anchor='middle' font-size='14' font-weight='800' fill='#b197fc'>SONUÇ</text><text x='374' y='62' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>toparla:</text><text x='374' y='78' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>Sonuç olarak…</text><text x='220' y='132' text-anchor='middle' font-size='12' font-weight='600' fill='#a3abc6'>Önce 3 satır taslak, sonra her bölüme 1–2 cümle.</text></svg>",
+   "maddeler": [
+    "Bilgilendirici metnin üç bölümü: <b>giriş, gelişme, sonuç</b>. (s. 167)",
+    "<b>Giriş</b> konuyu tanıtır: “Doğa, nefes aldığımız hava ve içtiğimiz sudur.” <b>Gelişme</b> açıklar ve örnek verir. <b>Sonuç</b> toparlar, ana düşünceyi vurgular. (s. 167)",
+    "<b>Taslak</b> = metni yazmadan önceki plan. Üç satır yeter: <b>“Giriş: … Gelişme: … Sonuç: …”</b> (MEB örnek sorusu)",
+    "Doğa sevgisi taslağı: Giriş: doğanın hayatımızdaki önemi · Gelişme: doğayı korumak için yapılacaklar (geri dönüşüm, fidan) · Sonuç: doğayı korumak hepimizin görevi. (MEB örnek sorusu)",
+    "Metni taslağa göre yaz: <b>her bölüme 1–2 cümle</b>. Sonucu “<b>Sonuç olarak …</b>” diye başlat. Örneği “<b>Örneğin …</b>” ile ver. (s. 167)",
+    "Metin yapısı seçme sorusu da çıkabilir: iki şeyin benzer ve farklı yönleri anlatılacaksa <b>karşılaştırma-zıtlık</b> yapısı uygundur. (yazilihocam örneği)"
+   ],
+   "kelimeler": [
+    "Giriş: konuyu tanıt",
+    "Gelişme: açıkla, örnek ver",
+    "Sonuç: toparla",
+    "Sonuç olarak …",
+    "Örneğin …",
+    "her bölüme 1–2 cümle"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Taslak istenince doğrudan uzun metin yazmak.",
+     "dogru": "Önce üç satırlık taslak: Giriş: … Gelişme: … Sonuç: …"
+    },
+    {
+     "yanlis": "Sonuç bölümünü unutmak.",
+     "dogru": "“Sonuç olarak …” diye toparla."
+    },
+    {
+     "yanlis": "Konudan çıkmak (doğa yerine tatil anısı yazmak).",
+     "dogru": "Her bölüm verilen tema hakkında olsun."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Bilgilendirici metnin üç bölümü giriş, gelişme ve {sonuçtur|başlıktır}.",
+     "s": "s. 167"
+    },
+    {
+     "c": "Giriş bölümü {konuyu tanıtır|metni bitirir}.",
+     "s": "s. 167"
+    },
+    {
+     "c": "Gelişme bölümünde konu açıklanır ve {örnekler verilir|metin kapanır}.",
+     "s": "s. 167"
+    },
+    {
+     "c": "Sonuç bölümü anlatılanları {toparlar|ilk kez tanıtır}.",
+     "s": "s. 167"
+    },
+    {
+     "c": "Sonuç bölümü çoğu zaman “{Sonuç olarak|Bir gün}” diye başlar.",
+     "s": "s. 167"
+    },
+    {
+     "c": "Taslak, metni {yazmadan önceki plandır|bitirdikten sonraki puandır}.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Metni yazarken taslaktaki her bölüme {1–2 cümle|tek kelime} yazarız.",
+     "s": "cevap kalıbı"
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "anlam",
+   "ad": "Kelimenin anlamı",
+   "kalip": "kelime: … demek (başka kelimelerle)",
+   "ne": "“Anlamını metinden hareketle tahmin ediniz” sorularında",
+   "ornek": "Keşif: bir yeri inceleyip bilgi toplamak."
+  },
+  {
+   "id": "bul",
+   "ad": "Anlamdan kelimeyi bul",
+   "kalip": "Anlamı oku → metinde ona uyan kelimeyi aynen yaz",
+   "ne": "“Anlamı verilen kelimeyi metinden bulunuz” sorularında",
+   "ornek": "Yeryüzüne çıkan erimiş kaya: lav."
+  },
+  {
+   "id": "gerekce",
+   "ad": "Tahmin + gerekçe",
+   "kalip": "Anlamı: … · Gerekçe: Metinde ‘…’ yazıyor.",
+   "ne": "“Tahminlerinizi ve gerekçelerinizi yazınız” sorularında",
+   "ornek": "Bitap: yorgun. Gerekçe: Metinde ‘kolları eski kuvvetini kaybetmiş’ yazıyor."
+  },
+  {
+   "id": "konu",
+   "ad": "Konu",
+   "kalip": "Metin neyi anlatıyor? → kısa: “… -ın … önemi / etkileri”",
+   "ne": "“Metnin konusunu yazınız” sorularında",
+   "ornek": "Arıların doğadaki önemi."
+  },
+  {
+   "id": "ana",
+   "ad": "Ana düşünce",
+   "kalip": "Yazar ne demek istiyor? → bir cümle: “… -malıyız / … önemlidir.”",
+   "ne": "“Ana düşüncesini yazınız”, “asıl anlatılmak istenen” sorularında",
+   "ornek": "Dilimize sahip çıkmalıyız, çünkü dil kimliğimizdir."
+  },
+  {
+   "id": "bilgi",
+   "ad": "Metinde yazan bilgi",
+   "kalip": "Soru kelimesi (ne zaman, nerede, ne amaçla) → metindeki cümleyi bul, kısaca yaz",
+   "ne": "Metinde açıkça yazan bilgiyi soran sorularda",
+   "ornek": "6 Nisan Cumartesi günü açıldı."
+  },
+  {
+   "id": "ikileme",
+   "ad": "İkilemenin yazımı",
+   "kalip": "İki kelime ayrı + arada çizgi ya da virgül yok",
+   "ne": "“Yazım yanlışı yapılmış ikilemeleri düzeltiniz” sorularında",
+   "ornek": "apar topar, hızlı hızlı"
+  },
+  {
+   "id": "isaret",
+   "ad": "İşaret + amaç",
+   "kalip": "İşaretin adı + amacı (özneden sonra / sıralı cümleleri ayırır / cümle yarım kaldı)",
+   "ne": "“Uygun işareti getiriniz, kullanım amacını belirtiniz” sorularında",
+   "ornek": "Noktalı virgül; özneden sonra konur."
+  },
+  {
+   "id": "taslak",
+   "ad": "Taslak",
+   "kalip": "Giriş: … · Gelişme: … · Sonuç: …",
+   "ne": "“Taslak hâlinde yazınız” sorularında",
+   "ornek": "Giriş: doğanın önemi. Gelişme: korumak için yapılacaklar. Sonuç: hepimizin görevi."
+  },
+  {
+   "id": "metin",
+   "ad": "Taslağa uygun metin",
+   "kalip": "Her bölüme 1–2 cümle; “Örneğin …”, “Sonuç olarak …”",
+   "ne": "“Taslağa uygun bir metin yazınız” sorularında",
+   "ornek": "Doğa hayatımız için önemlidir. Örneğin fidan dikebiliriz. Sonuç olarak doğayı korumak hepimizin görevidir."
+  },
+  {
+   "id": "yapi",
+   "ad": "Metin yapısı seçme",
+   "kalip": "Benzer + farklı yön → karşılaştırma-zıtlık; olay sırası → sıralı-kronolojik",
+   "ne": "“Amacınıza uygun metin yapısını belirleyiniz” sorularında",
+   "ornek": "Karşılaştırma-zıtlık: ikisi de …; oysa biri …, diğeri …"
+  }
+ ],
+ "mebSorular": [
+  {
+   "id": "m1",
+   "no": 1,
+   "kazanim": "T.O.7.21",
+   "oncelik": 2,
+   "metin": [
+    "Türkiye'nin yerli ve millî imkânlarla geliştirdiği HÜRKUŞ, eğitim ve keşif görevleri için tasarlanmış modern bir uçaktır. Güçlü motoru ve dayanıklı yapısı sayesinde güvenli uçuş imkânı sunar. Pilotların eğitim sürecinde ihtiyaç duyduğu birçok teçhizata sahip olan HÜRKUŞ, gelişmiş kontrol sistemleriyle kolay kullanım sağlar.",
+    "Farklı hava koşullarında görev yapabilen bu uçak, yüksek manevra kabiliyeti sayesinde eğitim uçuşlarında önemli bir avantaj sağlar. Yerli mühendisler tarafından tasarlanan HÜRKUŞ, Türkiye'nin havacılık alanındaki gelişimini gösteren önemli projelerden biridir.",
+    "Aşağıdaki kelimelerin anlamını metinden hareketle tahmin ediniz. Tahminlerinizi ilgili alanlara yazınız."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "keşif: Bu kelimenin metindeki anlamını tahmin edip yazınız.",
+     "formul": "anlam",
+     "cevap": "Keşif: Bilinmeyen bir yeri inceleyip bilgi toplama, araştırma.",
+     "anahtarlar": [
+      {
+       "ad": "İnceleyip bilgi toplama",
+       "k": [
+        "incele",
+        "bilgi",
+        "araştır",
+        "keşfet",
+        "öğren",
+        "bilinmeyen"
+       ]
+      }
+     ],
+     "kisaCevap": "Bir yeri inceleyip bilgi toplama.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Bir yeri inceleyip bilgi toplama.",
+        "Uçakla yapılan şey.",
+        "Çok hızlı uçmak."
+       ],
+       "dogru": 0,
+       "ipucu": "Kelimenin yanındaki “eğitim ve … görevleri” sözüne bak: uçak bir yeri neden gezer?",
+       "aciklama": "Keşif uçağı bir yeri inceler ve bilgi toplar. MEB de “gizli olan bir şey hakkında bilgi edinme, bir yeri inceleme” cevabını kabul ediyor. (MEB örnek sorusu; s. 12)"
+      },
+      "parcalar": [
+       {
+        "bas": "Keşif:",
+        "ornek": "bir yeri inceleyip bilgi toplamak",
+        "havuz": [
+         "uçağın rengi",
+         "pilotun adı"
+        ],
+        "k": [
+         "incele",
+         "bilgi",
+         "araştır",
+         "keşfet",
+         "öğren",
+         "bilinmeyen"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "anlamını tahmin edip yazınız"
+     ],
+     "kalipNot": "Anlamı → kelimeyi tekrar etme, başka kelimelerle kısaca açıkla: “… demek”."
+    },
+    {
+     "harf": "b",
+     "soru": "teçhizat: Bu kelimenin metindeki anlamını tahmin edip yazınız.",
+     "formul": "anlam",
+     "cevap": "Teçhizat: Bir görev için gerekli olan araç gereçlerin, donanımların tümü.",
+     "anahtarlar": [
+      {
+       "ad": "Görev için araç gereç",
+       "k": [
+        "araç",
+        "gereç",
+        "donanım",
+        "malzeme",
+        "alet",
+        "ekipman"
+       ]
+      }
+     ],
+     "kisaCevap": "Görev için gereken araç gereçler.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Görev için gereken araç gereçler.",
+        "Uçakta olan şeyler.",
+        "Pilotun eğitim süresi."
+       ],
+       "dogru": 0,
+       "ipucu": "Cümle “pilotların eğitimde ihtiyaç duyduğu birçok …” diyor: ihtiyaç duyulan ne olabilir?",
+       "aciklama": "Teçhizat, bir görev için gerekli araç gereç ve donanımlardır. (MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Teçhizat:",
+        "ornek": "görev için gereken araç gereçler",
+        "havuz": [
+         "uçuşun saati",
+         "havanın durumu"
+        ],
+        "k": [
+         "araç",
+         "gereç",
+         "donanım",
+         "malzeme",
+         "alet",
+         "ekipman"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "anlamını tahmin edip yazınız"
+     ],
+     "kalipNot": "Anlamı → kelimeyi tekrar etme, başka kelimelerle kısaca açıkla: “… demek”."
+    },
+    {
+     "harf": "c",
+     "soru": "manevra: Bu kelimenin metindeki anlamını tahmin edip yazınız.",
+     "formul": "anlam",
+     "cevap": "Manevra: Bir araca istenilen hareketi yaptırma, aracı yönlendirip yön değiştirme.",
+     "anahtarlar": [
+      {
+       "ad": "Araca hareket yaptırma, yön değiştirme",
+       "k": [
+        "hareket",
+        "yön",
+        "dön",
+        "kontrol",
+        "yönlendir"
+       ]
+      }
+     ],
+     "kisaCevap": "Aracı istenen yöne hareket ettirme.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Aracı istenen yöne hareket ettirme.",
+        "Uçağın bir özelliği.",
+        "Uçağı park etmek."
+       ],
+       "dogru": 0,
+       "ipucu": "Uçak havada dönerken, yön değiştirirken ne yapar?",
+       "aciklama": "Manevra, bir araca istenilen hareketi yaptırmaktır; yön değiştirmek de manevradır. (MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Manevra:",
+        "ornek": "aracı istenen yöne hareket ettirmek",
+        "havuz": [
+         "uçağı boyamak",
+         "yakıt almak"
+        ],
+        "k": [
+         "hareket",
+         "yön",
+         "dön",
+         "kontrol",
+         "yönlendir"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "anlamını tahmin edip yazınız"
+     ],
+     "kalipNot": "Anlamı → kelimeyi tekrar etme, başka kelimelerle kısaca açıkla: “… demek”."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Okulun bahçesinde uzun süredir bakımsız kalan alanı düzenlemek için öğrenciler birlikte çalışmaya karar verdi. Bazı öğrenciler toprağı kazarken bazıları yeni fidanlar dikti. Ece, arkadaşlarının yorulduğunu fark edince onlara destek oldu ve kendi görevini bitirdikten sonra diğerlerine de yardım etti. Öğretmenleri, öğrencilerin çevreyi güzelleştirmek için gösterdiği gayreti takdir etti."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "destek: Bu kelimenin metindeki anlamını tahmin edip yazınız.",
+       "formul": "anlam",
+       "cevap": "Destek: Birinin işini kolaylaştırmak için ona yardım etme, yanında olma.",
+       "anahtarlar": [
+        {
+         "ad": "Yardım etme, yanında olma",
+         "k": [
+          "yardım",
+          "yanında",
+          "kolaylaştır",
+          "el uzat"
+         ]
+        }
+       ],
+       "kisaCevap": "Yardım etme, yanında olma.",
+       "tetik": [
+        "anlamını tahmin edip yazınız"
+       ],
+       "kalipNot": "Anlamı → kelimeyi tekrar etme, başka kelimelerle kısaca açıkla: “… demek”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Destek:",
+          "ornek": "yardım etmek, yanında olmak",
+          "havuz": [
+           "kızmak",
+           "uzaklaşmak"
+          ],
+          "k": [
+           "yardım",
+           "yanında",
+           "kolaylaştır"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "gayret: Bu kelimenin metindeki anlamını tahmin edip yazınız.",
+       "formul": "anlam",
+       "cevap": "Gayret: Bir işi başarmak için gösterilen çaba, emek.",
+       "anahtarlar": [
+        {
+         "ad": "Çaba, emek",
+         "k": [
+          "çaba",
+          "emek",
+          "uğraş",
+          "çalışma"
+         ]
+        }
+       ],
+       "kisaCevap": "Çaba, emek.",
+       "tetik": [
+        "anlamını tahmin edip yazınız"
+       ],
+       "kalipNot": "Anlamı → kelimeyi tekrar etme, başka kelimelerle kısaca açıkla: “… demek”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Gayret:",
+          "ornek": "çaba, emek",
+          "havuz": [
+           "tembellik",
+           "uyku"
+          ],
+          "k": [
+           "çaba",
+           "emek",
+           "uğraş",
+           "çalışma"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.O.7.21",
+     "id": "m1i1"
+    },
+    {
+     "metin": [
+      "Yer kabuğunun derinliklerinde bulunan erimiş kayaçlara magma adı verilir. Magma, yer kabuğundaki çatlaklardan yukarı doğru ilerleyerek yüzeye ulaşabilir. Yeryüzüne çıkan magma artık lav olarak adlandırılır ve çevreye yayılır. Volkanın tepesinde bulunan çanak biçimindeki krater, lav ve gazların dışarı çıktığı bölümdür. Patlama sırasında çok küçük kaya ve mineral parçalarından oluşan kül de havaya karışabilir.",
+      "Aşağıda metinde geçen bazı kelimelerin anlamları verilmiştir. Bu kelimeleri metinden bularak yazınız."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yer kabuğunun altında bulunan erimiş kayaç maddesi: Bu anlama gelen kelimeyi metinden bulunuz.",
+       "formul": "bul",
+       "cevap": "Magma",
+       "anahtarlar": [
+        {
+         "ad": "magma",
+         "k": [
+          "magma"
+         ]
+        }
+       ],
+       "kisaCevap": "Magma",
+       "tetik": [
+        "kelimeyi metinden bulunuz"
+       ],
+       "kalipNot": "Anlamdan kelimeye → anlamı oku, metinde ona uyan kelimeyi bul, aynen yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Kelime:",
+          "ornek": "magma",
+          "havuz": [
+           "krater",
+           "kül"
+          ],
+          "k": [
+           "magma"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Yeryüzüne çıktıktan sonra akış hâlinde bulunan erimiş kaya: Bu anlama gelen kelimeyi metinden bulunuz.",
+       "formul": "bul",
+       "cevap": "Lav",
+       "anahtarlar": [
+        {
+         "ad": "lav",
+         "k": [
+          "lav"
+         ]
+        }
+       ],
+       "kisaCevap": "Lav",
+       "tetik": [
+        "kelimeyi metinden bulunuz"
+       ],
+       "kalipNot": "Anlamdan kelimeye → anlamı oku, metinde ona uyan kelimeyi bul, aynen yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Kelime:",
+          "ornek": "lav",
+          "havuz": [
+           "magma",
+           "krater"
+          ],
+          "k": [
+           "lav"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "c",
+       "soru": "Volkanın tepesinde bulunan çanak biçimindeki açıklık: Bu anlama gelen kelimeyi metinden bulunuz.",
+       "formul": "bul",
+       "cevap": "Krater",
+       "anahtarlar": [
+        {
+         "ad": "krater",
+         "k": [
+          "krater"
+         ]
+        }
+       ],
+       "kisaCevap": "Krater",
+       "tetik": [
+        "kelimeyi metinden bulunuz"
+       ],
+       "kalipNot": "Anlamdan kelimeye → anlamı oku, metinde ona uyan kelimeyi bul, aynen yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Kelime:",
+          "ornek": "krater",
+          "havuz": [
+           "magma",
+           "kül"
+          ],
+          "k": [
+           "krater"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.O.7.21",
+     "id": "m1i2"
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "no": 2,
+   "kazanim": "T.O.7.5",
+   "oncelik": 3,
+   "metin": [
+    "Arılar doğada önemli bir role sahiptir. Çiçeklerden topladıkları nektarı kovanlarına taşıyarak bal üretirler ancak arıların görevi sadece bal yapmak değildir. Çiçekler arasında dolaşırken bitkilerin tozlaşmasına da yardımcı olurlar. Bu sayede birçok bitki çoğalabilir ve doğadaki yaşam dengesi korunur. Son yıllarda yapılan araştırmalar, arıların sayısının azalmasının bitki çeşitliliğini ve tarımı olumsuz etkileyebileceğini göstermektedir. Bu nedenle arıların korunması doğa için büyük önem taşımaktadır."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Metnin konusunu yazınız.",
+     "formul": "konu",
+     "cevap": "Metnin konusu, arıların doğadaki önemi ve bitkilerin çoğalmasındaki rolüdür.",
+     "anahtarlar": [
+      {
+       "ad": "Kimi anlatıyor: arılar",
+       "k": [
+        "arı"
+       ]
+      },
+      {
+       "ad": "Ne anlatıyor: doğadaki önemi, görevi",
+       "k": [
+        "önem",
+        "görev",
+        "rol",
+        "katkı",
+        "fayda",
+        "yarar"
+       ]
+      }
+     ],
+     "kisaCevap": "Arıların doğadaki önemi.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Arıların doğadaki önemi.",
+        "Arılar.",
+        "Arıları korumalıyız, yoksa doğa bozulur."
+       ],
+       "dogru": 0,
+       "ipucu": "Konu kısa yazılır ama yalnız “Arılar” yetmez: arılar hakkında ne anlatılıyor?",
+       "aciklama": "Konu, metinde neyin anlatıldığıdır; kısa bir öbekle yazılır. “Arıları korumalıyız” bir ders cümlesidir, yani ana düşüncedir. (s. 22; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Hangi canlı?",
+        "ornek": "arıların",
+        "havuz": [
+         "çiçeklerin renklerini",
+         "balın fiyatını"
+        ],
+        "k": [
+         "arı"
+        ]
+       },
+       {
+        "bas": "Neyini anlatıyor?",
+        "ornek": "doğadaki önemini",
+        "havuz": [
+         "kanat sayısını",
+         "uyku saatlerini"
+        ],
+        "k": [
+         "önem",
+         "görev",
+         "rol",
+         "katkı",
+         "fayda",
+         "yarar"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "konusunu"
+     ],
+     "kalipNot": "Konu → “Metin neyi anlatıyor?” Kısa öbek: “… -ın … önemi”."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Her şehrin ana caddelerine bir çıkın ve tabelaları inceleyin. Türkiye'de olmadığınızı düşünebilirsiniz. Bir dil bu kadar özentiye kurban edilir mi? Kendi dilimizi zorla yabancı kelimelerin boyunduruğu altına sokuyoruz ve bunu bir marifetmiş gibi tabelalarımızda, tişörtlerimizde taşıyoruz. Dilimiz bizim öz kimliğimizdir ve dilimizi kaybedersek kendimize ait tüm kültürümüzü kaybederiz. Bu nedenle kendi kelimelerimize sahip çıkmak vatanımıza sahip çıkmak kadar önemlidir."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Metnin konusunu yazınız.",
+       "formul": "konu",
+       "cevap": "Dilimizde yabancı kelimelerin kullanılması ve Türkçeye sahip çıkmanın önemi.",
+       "anahtarlar": [
+        {
+         "ad": "Dil, Türkçe",
+         "k": [
+          "dil",
+          "türkçe",
+          "kelime"
+         ]
+        },
+        {
+         "ad": "Yabancı kelime / sahip çıkma",
+         "k": [
+          "yabancı",
+          "sahip çık",
+          "önem"
+         ]
+        }
+       ],
+       "kisaCevap": "Türkçeye sahip çıkmanın önemi.",
+       "tetik": [
+        "konusunu"
+       ],
+       "kalipNot": "Konu → “Metin neyi anlatıyor?” Kısa öbek: “… -ın … önemi”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Metin neyi anlatıyor?",
+          "ornek": "Türkçemizin",
+          "havuz": [
+           "tişört modasını",
+           "şehir trafiğini"
+          ],
+          "k": [
+           "dil",
+           "türkçe",
+           "kelime"
+          ]
+         },
+         {
+          "bas": "Onun hakkında ne?",
+          "ornek": "sahip çıkmanın önemi",
+          "havuz": [
+           "renkleri",
+           "fiyatları"
+          ],
+          "k": [
+           "yabancı",
+           "sahip çık",
+           "önem"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Metnin ana düşüncesini yazınız.",
+       "formul": "ana",
+       "cevap": "Dil, kimliğimizin ve kültürümüzün parçasıdır; bu nedenle yabancı kelimeler yerine Türkçe kelimeler kullanıp dilimize sahip çıkmalıyız.",
+       "anahtarlar": [
+        {
+         "ad": "Dilimize sahip çıkmalıyız",
+         "k": [
+          "sahip çık",
+          "korumalı",
+          "kullanmalı"
+         ]
+        },
+        {
+         "ad": "Çünkü dil kimliğimiz, kültürümüz",
+         "k": [
+          "kimli",
+          "kültür"
+         ]
+        }
+       ],
+       "kisaCevap": "Dilimize sahip çıkmalıyız, çünkü dil kimliğimizdir.",
+       "tetik": [
+        "ana düşüncesini"
+       ],
+       "kalipNot": "Ana düşünce → yazar ne demek istiyor? Bir cümle: “… -malıyız, çünkü …”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Ne yapmalıyız?",
+          "ornek": "dilimize sahip çıkmalıyız",
+          "havuz": [
+           "tabelaları sökmeliyiz",
+           "tişört almalıyız"
+          ],
+          "k": [
+           "sahip çık",
+           "korumalı",
+           "kullanmalı"
+          ]
+         },
+         {
+          "bas": "Çünkü dil",
+          "ornek": "kimliğimizdir",
+          "havuz": [
+           "çok zordur",
+           "yabancıdır"
+          ],
+          "k": [
+           "kimli",
+           "kültür"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.O.7.5",
+     "id": "m2i1"
+    },
+    {
+     "metin": [
+      "Günümüzde başarı çoğu zaman hiç hata yapmamakla ilişkilendiriliyor. Oysa insan yeni bir şey öğrenirken yanılabilir, eksik kalabilir ve bazen yeniden başlamak zorunda kalabilir. Hatalar doğru değerlendirildiğinde kişiye neyi değiştirmesi gerektiğini gösteren önemli birer işarettir. Bu nedenle başarısızlıktan kaçmak yerine ondan ders çıkarmak, gelişmenin en sağlam yollarından biridir. Asıl önemli olan hiç düşmemek değil, her denemeden yeni bir şey öğrenerek yoluna devam edebilmektir."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Metnin konusunu yazınız.",
+       "formul": "konu",
+       "cevap": "Hataların insanın gelişmesindeki önemi.",
+       "anahtarlar": [
+        {
+         "ad": "Hatalar, başarısızlık",
+         "k": [
+          "hata",
+          "başarısız",
+          "yanıl"
+         ]
+        },
+        {
+         "ad": "Gelişmedeki önemi, yararı",
+         "k": [
+          "önem",
+          "geliş",
+          "yarar",
+          "fayda",
+          "ders"
+         ]
+        }
+       ],
+       "kisaCevap": "Hataların gelişmemizdeki önemi.",
+       "tetik": [
+        "konusunu"
+       ],
+       "kalipNot": "Konu → “Metin neyi anlatıyor?” Kısa öbek: “… -ın … önemi”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Metin neyi anlatıyor?",
+          "ornek": "hataların",
+          "havuz": [
+           "sınav sonuçlarının",
+           "okul kurallarının"
+          ],
+          "k": [
+           "hata",
+           "başarısız",
+           "yanıl"
+          ]
+         },
+         {
+          "bas": "Onların neyini?",
+          "ornek": "gelişmemizdeki önemini",
+          "havuz": [
+           "sayısını",
+           "rengini"
+          ],
+          "k": [
+           "önem",
+           "geliş",
+           "yarar",
+           "fayda"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Bu metinde asıl anlatılmak istenen düşünceyi kendi cümlelerinizle yazınız.",
+       "formul": "ana",
+       "cevap": "Hatalar doğru değerlendirildiğinde insanı geliştirir; bu yüzden hatadan korkmamalı, ondan ders çıkarmalıyız.",
+       "anahtarlar": [
+        {
+         "ad": "Hatalardan ders çıkarmalıyız",
+         "k": [
+          "ders çıkar",
+          "öğren",
+          "korkmamalı",
+          "kaçmamalı"
+         ]
+        },
+        {
+         "ad": "Hatalar insanı geliştirir",
+         "k": [
+          "geliş",
+          "başarı",
+          "ilerle"
+         ]
+        }
+       ],
+       "kisaCevap": "Hatalardan ders çıkarmalıyız, çünkü hatalar bizi geliştirir.",
+       "tetik": [
+        "asıl anlatılmak istenen düşünceyi"
+       ],
+       "kalipNot": "Ana düşünce → yazar ne demek istiyor? Bir cümle: “… -malıyız, çünkü …”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Ne yapmalıyız?",
+          "ornek": "hatalardan ders çıkarmalıyız",
+          "havuz": [
+           "hiç denememeliyiz",
+           "hatayı saklamalıyız"
+          ],
+          "k": [
+           "ders çıkar",
+           "öğren",
+           "korkmamalı",
+           "kaçmamalı"
+          ]
+         },
+         {
+          "bas": "Çünkü hatalar bizi",
+          "ornek": "geliştirir",
+          "havuz": [
+           "üzer",
+           "durdurur"
+          ],
+          "k": [
+           "geliş",
+           "başarı",
+           "ilerle"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.O.7.5",
+     "id": "m2i2"
+    }
+   ]
+  },
+  {
+   "id": "m6",
+   "no": 6,
+   "kazanim": "T.O.7.4",
+   "oncelik": 2,
+   "metin": [
+    "Kırk yıllık bir esaret! Yıllarca kadırgalarda kürek çekmiş, Malta'nın karanlık zindanlarında yatmıştı. Şimdi yaşı altmışı geçmişti. İhtiyarlamış, çok bitap düşmüştü. Kolları eski kuvvetini kaybetmiş, o heybetli vücudu âdeta erimiş, bir kemik torbasına dönmüştü. Ama yıllar onun sadece bedenini yormuş, ruhundaki memleket ateşini söndürememişti. Geceleri rüyasında hep o sevgili yurdunu; yurdunun serin pınarlarını, ulu dağlarını görürdü. Gündüzleri ise engin denizlere bakarak ufukta belirecek bir Türk yelkenlisi görmenin iştiyakıyla yanıp tutuşurdu. Gözleri ufukta, kalbi memleket hasretiyle atarken rüzgârın getirdiği dalga sesleri ona ufak bir teselli verir, vatanından ayrı kalmanın acısını bir an olsun unuttururdu.",
+    "Ömer Seyfettin'in “Forsa” adlı hikâyesinden alınan metindeki kelimelerin anlamlarını metnin bağlamından yararlanarak tahmin ediniz. Tahminlerinizi ve gerekçelerinizi yazınız."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "bitap: Kelimenin anlamına dair tahmininizi ve sizi bu tahmine götüren metin içi gerekçeleri yazınız.",
+     "formul": "gerekce",
+     "cevap": "Tahminim: yorgun, güçsüz, bitkin. Gerekçem: Metinde “kolları eski kuvvetini kaybetmiş”, “bir kemik torbasına dönmüştü” ve “ihtiyarlamış” yazıyor.",
+     "anahtarlar": [
+      {
+       "ad": "Tahmin: yorgun, güçsüz",
+       "k": [
+        "yorgun",
+        "güçsüz",
+        "bitkin",
+        "halsiz",
+        "hâlsiz",
+        "dermansız",
+        "takatsiz"
+       ]
+      },
+      {
+       "ad": "Gerekçe: metindeki ipucu",
+       "k": [
+        "kuvvet",
+        "kemik",
+        "erimiş",
+        "ihtiyarla"
+       ]
+      }
+     ],
+     "kisaCevap": "Yorgun, güçsüz; çünkü metinde “kolları eski kuvvetini kaybetmiş” yazıyor.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Yorgun, güçsüz; çünkü metinde “kolları eski kuvvetini kaybetmiş” yazıyor.",
+        "Yorgun, güçsüz.",
+        "Mutlu; çünkü bence yaşlılar hep mutludur."
+       ],
+       "dogru": 0,
+       "ipucu": "Soru iki şey istiyor: anlam tahmini ve metinden gerekçe. Gerekçe senin fikrin değil, metindeki ipucu.",
+       "aciklama": "Bitap: yorgun, güçsüz. Ardından gelen “kolları eski kuvvetini kaybetmiş, bir kemik torbasına dönmüştü” ifadeleri bunu gösterir. (MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Tahminim:",
+        "ornek": "yorgun, güçsüz",
+        "havuz": [
+         "neşeli, güçlü",
+         "zengin, varlıklı"
+        ],
+        "k": [
+         "yorgun",
+         "güçsüz",
+         "bitkin",
+         "halsiz",
+         "hâlsiz",
+         "dermansız",
+         "takatsiz"
+        ]
+       },
+       {
+        "bas": "Gerekçem: Metinde",
+        "ornek": "“kolları eski kuvvetini kaybetmiş”",
+        "havuz": [
+         "“serin pınarlarını”",
+         "“engin denizlere”"
+        ],
+        "k": [
+         "kuvvet",
+         "kemik",
+         "erimiş",
+         "ihtiyarla"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "tahmininizi",
+      "metin içi gerekçeleri"
+     ],
+     "kalipNot": "Tahmin + gerekçe → “Anlamı: … Gerekçe: Metinde ‘…’ yazıyor.”"
+    },
+    {
+     "harf": "b",
+     "soru": "iştiyak: Kelimenin anlamına dair tahmininizi ve sizi bu tahmine götüren metin içi gerekçeleri yazınız.",
+     "formul": "gerekce",
+     "cevap": "Tahminim: özlem, çok isteme. Gerekçem: Metinde “yanıp tutuşurdu”, “kalbi memleket hasretiyle atarken” ve “rüyasında hep o sevgili yurdunu görürdü” yazıyor.",
+     "anahtarlar": [
+      {
+       "ad": "Tahmin: özlem, çok isteme",
+       "k": [
+        "özlem",
+        "özle",
+        "istek",
+        "arzu",
+        "çok iste",
+        "hasret"
+       ]
+      },
+      {
+       "ad": "Gerekçe: metindeki ipucu",
+       "k": [
+        "yanıp tutuş",
+        "rüyasında",
+        "kalbi memleket"
+       ]
+      }
+     ],
+     "kisaCevap": "Özlem; çünkü metinde “yanıp tutuşurdu” yazıyor.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Özlem; çünkü metinde “yanıp tutuşurdu” yazıyor.",
+        "Özlem.",
+        "Korku; çünkü denizler tehlikelidir."
+       ],
+       "dogru": 0,
+       "ipucu": "Kelimenin hemen arkasındaki “… yanıp tutuşurdu” sözüne bak.",
+       "aciklama": "İştiyak: özlem, çok isteme. “Yanıp tutuşurdu” ve “kalbi memleket hasretiyle atarken” ifadeleri büyük bir özlemi gösterir. (MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Tahminim:",
+        "ornek": "özlem, çok isteme",
+        "havuz": [
+         "korku, kaçma",
+         "uyku, dinlenme"
+        ],
+        "k": [
+         "özlem",
+         "özle",
+         "istek",
+         "arzu",
+         "çok iste",
+         "hasret"
+        ]
+       },
+       {
+        "bas": "Gerekçem: Metinde",
+        "ornek": "“yanıp tutuşurdu”",
+        "havuz": [
+         "“kürek çekmiş”",
+         "“ulu dağlarını”"
+        ],
+        "k": [
+         "yanıp tutuş",
+         "rüyasında",
+         "kalbi memleket"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "tahmininizi",
+      "metin içi gerekçeleri"
+     ],
+     "kalipNot": "Tahmin + gerekçe → “Anlamı: … Gerekçe: Metinde ‘…’ yazıyor.”"
+    },
+    {
+     "harf": "c",
+     "soru": "teselli: Kelimenin anlamına dair tahmininizi ve sizi bu tahmine götüren metin içi gerekçeleri yazınız.",
+     "formul": "gerekce",
+     "cevap": "Tahminim: avuntu, acıyı hafifleten şey. Gerekçem: Kelimenin hemen ardında “acısını bir an olsun unuttururdu” yazıyor.",
+     "anahtarlar": [
+      {
+       "ad": "Tahmin: avuntu, acıyı hafifletme",
+       "k": [
+        "avun",
+        "hafiflet",
+        "moral",
+        "rahatla",
+        "azalt",
+        "iyi gel"
+       ]
+      },
+      {
+       "ad": "Gerekçe: metindeki ipucu",
+       "k": [
+        "unuttur"
+       ]
+      }
+     ],
+     "kisaCevap": "Avuntu, rahatlama; çünkü metinde “bir an olsun unuttururdu” yazıyor.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Avuntu, rahatlama; çünkü metinde “bir an olsun unuttururdu” yazıyor.",
+        "Avuntu, rahatlama.",
+        "Rüzgâr; çünkü dalga sesini rüzgâr getirir."
+       ],
+       "dogru": 0,
+       "ipucu": "Teselli verdikten sonra dalga sesleri ona ne yapıyor? Cümlenin sonunu oku.",
+       "aciklama": "Teselli: avuntu, acıyı hafifleten şey. Hemen ardındaki “acısını bir an olsun unuttururdu” bunu gösterir. (MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Tahminim:",
+        "ornek": "avuntu, rahatlama",
+        "havuz": [
+         "kızgınlık, öfke",
+         "yorgunluk, uyku"
+        ],
+        "k": [
+         "avun",
+         "hafiflet",
+         "moral",
+         "rahatla",
+         "azalt",
+         "iyi gel"
+        ]
+       },
+       {
+        "bas": "Gerekçem: Metinde",
+        "ornek": "“bir an olsun unuttururdu”",
+        "havuz": [
+         "“yaşı altmışı geçmişti”",
+         "“karanlık zindanlarında”"
+        ],
+        "k": [
+         "unuttur"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "tahmininizi",
+      "metin içi gerekçeleri"
+     ],
+     "kalipNot": "Tahmin + gerekçe → “Anlamı: … Gerekçe: Metinde ‘…’ yazıyor.”"
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Okul takımına yeni katılan Ege, ilk antrenmanlarda birkaç kez pas hatası yaptı. Bazı arkadaşları onun takıma katkı sağlayamayacağını düşünmeye başladı. Ancak Ege sonraki günlerde düzenli çalıştı, kısa sürede oyuna uyum sağladı ve önemli maçlarda takımına büyük katkı sundu. Arkadaşları, başlangıçta Ege'yi yeterince tanımadan “burun kıvırdıklarını” anladı."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Burun kıvırmak” söz grubunun anlamını tahmin ediniz ve sizi bu tahmine götüren metin içi gerekçeyi yazınız.",
+       "formul": "gerekce",
+       "cevap": "Tahminim: beğenmemek, küçümsemek, yeterli görmemek. Gerekçem: Metinde arkadaşlarının “onun takıma katkı sağlayamayacağını düşünmeye başladı” ve onu “yeterince tanımadan” yargıladıkları yazıyor.",
+       "anahtarlar": [
+        {
+         "ad": "Tahmin: beğenmemek, küçümsemek",
+         "k": [
+          "beğenme",
+          "küçümse",
+          "yeterli görme",
+          "önemseme",
+          "hor gör"
+         ]
+        },
+        {
+         "ad": "Gerekçe: metindeki ipucu",
+         "k": [
+          "katkı sağlayamayacağını",
+          "tanımadan"
+         ]
+        }
+       ],
+       "kisaCevap": "Küçümsemek; çünkü metinde “katkı sağlayamayacağını düşünmeye başladı” yazıyor.",
+       "tetik": [
+        "anlamını tahmin ediniz",
+        "metin içi gerekçeyi"
+       ],
+       "kalipNot": "Tahmin + gerekçe → “Anlamı: … Gerekçe: Metinde ‘…’ yazıyor.”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Tahminim:",
+          "ornek": "beğenmemek, küçümsemek",
+          "havuz": [
+           "sevinmek, alkışlamak",
+           "hapşırmak, üşümek"
+          ],
+          "k": [
+           "beğenme",
+           "küçümse",
+           "yeterli görme",
+           "önemseme",
+           "hor gör"
+          ]
+         },
+         {
+          "bas": "Gerekçem: Metinde",
+          "ornek": "“katkı sağlayamayacağını düşünmeye başladı”",
+          "havuz": [
+           "“düzenli çalıştı”",
+           "“önemli maçlarda”"
+          ],
+          "k": [
+           "katkı sağlayamayacağını",
+           "tanımadan"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.O.7.4",
+     "id": "m6i1"
+    },
+    {
+     "metin": [
+      "Dağın zirvesine ulaşan Selin nefes nefese kalmıştı. Dizleri titriyor, bir adım daha atacak dermanı kalmamıştı. Yine de karşısındaki manzarayı görünce bütün yorgunluğunu unuttu. Gökyüzü masmavi, vadiler yemyeşildi; uzaklarda karlı tepeler parlıyordu. Bu ihtişam karşısında ağzı açık kaldı, uzun süre konuşamadı."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "derman: Kelimenin anlamına dair tahmininizi ve sizi bu tahmine götüren metin içi gerekçeyi yazınız.",
+       "formul": "gerekce",
+       "cevap": "Tahminim: güç, kuvvet. Gerekçem: Metinde “nefes nefese kalmıştı”, “dizleri titriyor” ve “yorgunluğunu” yazıyor.",
+       "anahtarlar": [
+        {
+         "ad": "Tahmin: güç, kuvvet",
+         "k": [
+          "güç",
+          "kuvvet",
+          "takat",
+          "enerji"
+         ]
+        },
+        {
+         "ad": "Gerekçe: metindeki ipucu",
+         "k": [
+          "nefes nefese",
+          "dizleri titri",
+          "yorgun"
+         ]
+        }
+       ],
+       "kisaCevap": "Güç, kuvvet; çünkü metinde “dizleri titriyor” yazıyor.",
+       "tetik": [
+        "tahmininizi",
+        "metin içi gerekçeyi"
+       ],
+       "kalipNot": "Tahmin + gerekçe → “Anlamı: … Gerekçe: Metinde ‘…’ yazıyor.”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Tahminim:",
+          "ornek": "güç, kuvvet",
+          "havuz": [
+           "manzara",
+           "neşe"
+          ],
+          "k": [
+           "güç",
+           "kuvvet",
+           "takat",
+           "enerji"
+          ]
+         },
+         {
+          "bas": "Gerekçem: Metinde",
+          "ornek": "“dizleri titriyor”",
+          "havuz": [
+           "“gökyüzü masmavi”",
+           "“karlı tepeler”"
+          ],
+          "k": [
+           "nefes nefese",
+           "dizleri titri",
+           "yorgun"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "ihtişam: Kelimenin anlamına dair tahmininizi ve sizi bu tahmine götüren metin içi gerekçeyi yazınız.",
+       "formul": "gerekce",
+       "cevap": "Tahminim: görkem, büyüklük, göz alıcı güzellik. Gerekçem: Metinde “ağzı açık kaldı”, “gökyüzü masmavi, vadiler yemyeşildi” yazıyor.",
+       "anahtarlar": [
+        {
+         "ad": "Tahmin: görkem, büyük güzellik",
+         "k": [
+          "görkem",
+          "güzellik",
+          "büyüklük",
+          "muhteşem",
+          "göz alıcı"
+         ]
+        },
+        {
+         "ad": "Gerekçe: metindeki ipucu",
+         "k": [
+          "ağzı açık",
+          "masmavi",
+          "yemyeşil",
+          "parlıyor"
+         ]
+        }
+       ],
+       "kisaCevap": "Görkem, büyük güzellik; çünkü metinde “ağzı açık kaldı” yazıyor.",
+       "tetik": [
+        "tahmininizi",
+        "metin içi gerekçeyi"
+       ],
+       "kalipNot": "Tahmin + gerekçe → “Anlamı: … Gerekçe: Metinde ‘…’ yazıyor.”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Tahminim:",
+          "ornek": "görkem, büyük güzellik",
+          "havuz": [
+           "yorgunluk",
+           "korku"
+          ],
+          "k": [
+           "görkem",
+           "güzellik",
+           "büyüklük",
+           "muhteşem"
+          ]
+         },
+         {
+          "bas": "Gerekçem: Metinde",
+          "ornek": "“ağzı açık kaldı”",
+          "havuz": [
+           "“dizleri titriyor”",
+           "“nefes nefese”"
+          ],
+          "k": [
+           "ağzı açık",
+           "masmavi",
+           "yemyeşil",
+           "parlıyor"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.O.7.4",
+     "id": "m6i2"
+    }
+   ]
+  },
+  {
+   "id": "m9",
+   "no": 9,
+   "kazanim": "T.Y.7.21",
+   "oncelik": 3,
+   "metin": [
+    "Aşağıda yer alan yazım ve noktalama ile ilgili soruları cevaplayınız."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "“Sınav kâğıtlarını apar-topar toplayıp hızlıhızlı sınıftan çıktı ancak dışarıda yağmur yağıyordu.” cümlesinde yazım yanlışı yapılmış ikilemeleri bulunuz ve cümlenin doğru hâlini yazınız.",
+     "formul": "ikileme",
+     "cevap": "Sınav kâğıtlarını apar topar toplayıp hızlı hızlı sınıftan çıktı ancak dışarıda yağmur yağıyordu. (İkilemeler ayrı yazılır, arasına kısa çizgi konmaz.)",
+     "anahtarlar": [
+      {
+       "ad": "apar topar (çizgisiz)",
+       "k": [
+        "apar topar"
+       ]
+      },
+      {
+       "ad": "hızlı hızlı (ayrı)",
+       "k": [
+        "hızlı hızlı"
+       ]
+      }
+     ],
+     "kisaCevap": "Sınav kâğıtlarını apar topar toplayıp hızlı hızlı sınıftan çıktı…",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Sınav kâğıtlarını apar topar toplayıp hızlı hızlı sınıftan çıktı…",
+        "Sınav kâğıtlarını apar topar toplayıp hızlıhızlı sınıftan çıktı…",
+        "Sınav kâğıtlarını apar-topar toplayıp hızlı-hızlı sınıftan çıktı…"
+       ],
+       "dogru": 0,
+       "ipucu": "Cümlede iki ikileme var; ikisinin de yazımına bak.",
+       "aciklama": "İkilemeler ayrı yazılır ve arasına kısa çizgi konmaz: apar topar, hızlı hızlı. (s. 34; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "1. ikileme:",
+        "ornek": "apar topar",
+        "havuz": [
+         "apar-topar",
+         "apartopar"
+        ],
+        "k": [
+         "apar topar"
+        ]
+       },
+       {
+        "bas": "2. ikileme:",
+        "ornek": "hızlı hızlı",
+        "havuz": [
+         "hızlıhızlı",
+         "hızlı-hızlı"
+        ],
+        "k": [
+         "hızlı hızlı"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "yazım yanlışı yapılmış ikilemeleri",
+      "doğru hâlini"
+     ],
+     "kalipNot": "İkileme yazımı → iki kelime ayrı, arada çizgi ya da virgül yok; cümleyi baştan yaz."
+    },
+    {
+     "harf": "b",
+     "soru": "“Genç şairimiz ( ) Necip Fazıl, Nâzım Hikmet ve Attilâ İlhan gibi isimlerden ilham alıyordu.” Boşluğa uygun işareti (noktalı virgül ya da üç nokta) getiriniz ve kullanım amacını belirtiniz.",
+     "formul": "isaret",
+     "cevap": "Noktalı virgül (;). Amacı: İkiden fazla eş değer öge (şair isimleri) arasında virgül bulunan cümlede özneyi (Genç şairimiz) diğer ögelerden ayırmak için özneden sonra konur.",
+     "anahtarlar": [
+      {
+       "ad": "İşaret: noktalı virgül",
+       "k": [
+        "noktalı virgül"
+       ]
+      },
+      {
+       "ad": "Amaç: özneden sonra konur",
+       "k": [
+        "özne"
+       ]
+      }
+     ],
+     "kisaCevap": "Noktalı virgül; özneden sonra konur.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Noktalı virgül; özneden sonra konur.",
+        "Noktalı virgül.",
+        "Üç nokta; cümle yarım kaldı."
+       ],
+       "dogru": 0,
+       "ipucu": "Boşluktan sonra virgülle sıralanan isimler var. Boşluktan önce kim var?",
+       "aciklama": "İkiden fazla eş değer öge arasında virgül bulunan cümlelerde özneden sonra noktalı virgül konabilir. (s. 49; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "İşaret:",
+        "ornek": "noktalı virgül",
+        "havuz": [
+         "üç nokta",
+         "ünlem işareti"
+        ],
+        "k": [
+         "noktalı virgül"
+        ]
+       },
+       {
+        "bas": "Amacı: isimler sıralanmadan önce",
+        "ornek": "özneyi ayırmak",
+        "havuz": [
+         "cümleyi bitirmek",
+         "soru sormak"
+        ],
+        "k": [
+         "özne"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "uygun işareti",
+      "kullanım amacını"
+     ],
+     "kalipNot": "İşaret + amaç → “Noktalı virgül / Üç nokta; çünkü …” İkisini de yaz."
+    },
+    {
+     "harf": "c",
+     "soru": "“Bahçemizde meyve ağaçları, rengârenk çiçekler, taze ot kokuları ( ) İçimiz huzurla doldu.” Boşluğa uygun işareti (noktalı virgül ya da üç nokta) getiriniz ve kullanım amacını belirtiniz.",
+     "formul": "isaret",
+     "cevap": "Üç nokta (...). Amacı: Anlatımı tamamlanmamış, yarım bırakılan cümlenin sonuna konur; sözün gerisi okuyucuya bırakılmıştır.",
+     "anahtarlar": [
+      {
+       "ad": "İşaret: üç nokta",
+       "k": [
+        "üç nokta",
+        "..."
+       ]
+      },
+      {
+       "ad": "Amaç: cümle tamamlanmamış",
+       "k": [
+        "tamamlanma",
+        "eksik",
+        "yarım",
+        "okuyucu",
+        "okura",
+        "bitmemiş",
+        "kesil",
+        "bitirilmemiş"
+       ]
+      }
+     ],
+     "kisaCevap": "Üç nokta; cümle tamamlanmamış, yarım kalmış.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Üç nokta; cümle tamamlanmamış, yarım kalmış.",
+        "Üç nokta.",
+        "Noktalı virgül; özneden sonra konur."
+       ],
+       "dogru": 0,
+       "ipucu": "Boşluktan önceki cümlenin yüklemi var mı? Cümle bitmiş mi?",
+       "aciklama": "Üç nokta, sözün bir yerde kesilip gerisinin okuyucuya bırakıldığını gösterir; MEB'in cevabı: anlatımı tamamlanmamış cümlenin sonuna konur. (s. 35; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "İşaret:",
+        "ornek": "üç nokta",
+        "havuz": [
+         "noktalı virgül",
+         "iki nokta"
+        ],
+        "k": [
+         "üç nokta"
+        ]
+       },
+       {
+        "bas": "Amacı: cümle",
+        "ornek": "tamamlanmamış, yarım kalmış",
+        "havuz": [
+         "soru soruyor",
+         "özneyle başlıyor"
+        ],
+        "k": [
+         "tamamlanma",
+         "eksik",
+         "yarım",
+         "okuyucu",
+         "okura",
+         "bitmemiş",
+         "kesil",
+         "bitirilmemiş"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "uygun işareti",
+      "kullanım amacını"
+     ],
+     "kalipNot": "İşaret + amaç → “Noktalı virgül / Üç nokta; çünkü …” İkisini de yaz."
+    },
+    {
+     "harf": "d",
+     "soru": "“Tarihî eserleri koruyan toplumlar geçmişleriyle bağlarını güçlendirir, kültürel miraslarını gelecek nesillere aktarır ( ) bu eserlere yeterince önem vermeyen toplumlar ise zamanla tarihî değerlerini kaybeder, kültürel kimliklerinden uzaklaşır.” Boşluğa uygun işareti getiriniz ve kullanım amacını belirtiniz.",
+     "formul": "isaret",
+     "cevap": "Noktalı virgül (;). Amacı: Ögeleri arasında virgül bulunan sıralı cümleleri birbirinden ayırmak için kullanılmıştır.",
+     "anahtarlar": [
+      {
+       "ad": "İşaret: noktalı virgül",
+       "k": [
+        "noktalı virgül"
+       ]
+      },
+      {
+       "ad": "Amaç: sıralı cümleleri ayırır",
+       "k": [
+        "sıralı cümle",
+        "cümleleri ayır",
+        "iki cümle",
+        "cümleler arasın"
+       ]
+      }
+     ],
+     "kisaCevap": "Noktalı virgül; virgüllü sıralı cümleleri ayırır.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Noktalı virgül; virgüllü sıralı cümleleri ayırır.",
+        "Noktalı virgül.",
+        "Üç nokta; söz okura bırakıldı."
+       ],
+       "dogru": 0,
+       "ipucu": "Boşluğun iki yanında ayrı yüklemli iki cümle var ve ikisinin içinde de virgül var.",
+       "aciklama": "Ögeleri arasında virgül bulunan sıralı cümleleri ayırmak için noktalı virgül konur. (s. 49; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "İşaret:",
+        "ornek": "noktalı virgül",
+        "havuz": [
+         "üç nokta",
+         "soru işareti"
+        ],
+        "k": [
+         "noktalı virgül"
+        ]
+       },
+       {
+        "bas": "Amacı: içinde virgül olan",
+        "ornek": "sıralı cümleleri ayırmak",
+        "havuz": [
+         "özneyi ayırmak",
+         "sözü okura bırakmak"
+        ],
+        "k": [
+         "sıralı cümle",
+         "cümleleri ayır",
+         "iki cümle",
+         "cümleler arasın"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "uygun işareti",
+      "kullanım amacını"
+     ],
+     "kalipNot": "İşaret + amaç → “Noktalı virgül / Üç nokta; çünkü …” İkisini de yaz."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Bir öğrenci aşağıdaki cümleleri yazarken yazım ve noktalama hataları yapmıştır."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Yarışmacılar sahneye teker-teker çağrıldı.” cümlesinde yanlış yazılan ikilemeyi bulup cümlenin doğru hâlini yazınız.",
+       "formul": "ikileme",
+       "cevap": "Yarışmacılar sahneye teker teker çağrıldı.",
+       "anahtarlar": [
+        {
+         "ad": "teker teker",
+         "k": [
+          "teker teker"
+         ]
+        }
+       ],
+       "kisaCevap": "Yarışmacılar sahneye teker teker çağrıldı.",
+       "tetik": [
+        "yanlış yazılan ikilemeyi",
+        "doğru hâlini"
+       ],
+       "kalipNot": "İkileme yazımı → iki kelime ayrı, arada çizgi ya da virgül yok; cümleyi baştan yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Doğrusu:",
+          "ornek": "teker teker",
+          "havuz": [
+           "teker-teker",
+           "tekerteker"
+          ],
+          "k": [
+           "teker teker"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "“Yağmur başlayınca insanlar koşakoşa durağa yöneldi.” cümlesinde yanlış yazılan ikilemeyi bulup cümlenin doğru hâlini yazınız.",
+       "formul": "ikileme",
+       "cevap": "Yağmur başlayınca insanlar koşa koşa durağa yöneldi.",
+       "anahtarlar": [
+        {
+         "ad": "koşa koşa",
+         "k": [
+          "koşa koşa"
+         ]
+        }
+       ],
+       "kisaCevap": "İnsanlar koşa koşa durağa yöneldi.",
+       "tetik": [
+        "yanlış yazılan ikilemeyi",
+        "doğru hâlini"
+       ],
+       "kalipNot": "İkileme yazımı → iki kelime ayrı, arada çizgi ya da virgül yok; cümleyi baştan yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Doğrusu:",
+          "ornek": "koşa koşa",
+          "havuz": [
+           "koşakoşa",
+           "koşa-koşa"
+          ],
+          "k": [
+           "koşa koşa"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "c",
+       "soru": "“Bahçedeki çocuklar irili, ufaklı taşları bir kutuda topladı.” cümlesinde yanlış yazılan ikilemeyi bulup cümlenin doğru hâlini yazınız.",
+       "formul": "ikileme",
+       "cevap": "Bahçedeki çocuklar irili ufaklı taşları bir kutuda topladı.",
+       "anahtarlar": [
+        {
+         "ad": "irili ufaklı (virgülsüz)",
+         "k": [
+          "irili ufaklı"
+         ]
+        }
+       ],
+       "kisaCevap": "Çocuklar irili ufaklı taşları topladı.",
+       "tetik": [
+        "yanlış yazılan ikilemeyi",
+        "doğru hâlini"
+       ],
+       "kalipNot": "İkileme yazımı → iki kelime ayrı, arada çizgi ya da virgül yok; cümleyi baştan yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Doğrusu:",
+          "ornek": "irili ufaklı",
+          "havuz": [
+           "irili, ufaklı",
+           "iriliufaklı"
+          ],
+          "k": [
+           "irili ufaklı"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "d",
+       "soru": "“Gezi için Ece su, sandviç, meyve hazırladı ( ) Kerem şapka, güneş kremi, gözlük aldı.” Boşluğa gelmesi gereken işareti ve kullanım amacını yazınız.",
+       "formul": "isaret",
+       "cevap": "Noktalı virgül (;). Amacı: Ögeleri arasında virgül bulunan sıralı cümleleri birbirinden ayırmak.",
+       "anahtarlar": [
+        {
+         "ad": "noktalı virgül",
+         "k": [
+          "noktalı virgül"
+         ]
+        },
+        {
+         "ad": "Amaç: sıralı cümleleri ayırır",
+         "k": [
+          "sıralı cümle",
+          "cümleleri ayır",
+          "iki cümle",
+          "cümleler arasın"
+         ]
+        }
+       ],
+       "kisaCevap": "Noktalı virgül; virgüllü sıralı cümleleri ayırır.",
+       "tetik": [
+        "gelmesi gereken işareti",
+        "kullanım amacını"
+       ],
+       "kalipNot": "İşaret + amaç → “Noktalı virgül / Üç nokta; çünkü …” İkisini de yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İşaret:",
+          "ornek": "noktalı virgül",
+          "havuz": [
+           "üç nokta",
+           "ünlem"
+          ],
+          "k": [
+           "noktalı virgül"
+          ]
+         },
+         {
+          "bas": "Amacı: içinde virgül olan",
+          "ornek": "sıralı cümleleri ayırmak",
+          "havuz": [
+           "özneyi ayırmak",
+           "cümleyi bitirmek"
+          ],
+          "k": [
+           "sıralı cümle",
+           "cümleleri ayır",
+           "iki cümle",
+           "cümleler arasın"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.Y.7.21",
+     "id": "m9i1"
+    },
+    {
+     "metin": [
+      "Aşağıda yer alan yazım ve noktalama ile ilgili soruları cevaplayınız."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Çocuklar bahçede koşa-koşa oynarken annem mutfakta ağırağır çay demledi.” cümlesinde yazım yanlışı yapılmış ikilemeleri bulunuz ve cümlenin doğru hâlini yazınız.",
+       "formul": "ikileme",
+       "cevap": "Çocuklar bahçede koşa koşa oynarken annem mutfakta ağır ağır çay demledi.",
+       "anahtarlar": [
+        {
+         "ad": "koşa koşa",
+         "k": [
+          "koşa koşa"
+         ]
+        },
+        {
+         "ad": "ağır ağır",
+         "k": [
+          "ağır ağır"
+         ]
+        }
+       ],
+       "kisaCevap": "koşa koşa … ağır ağır",
+       "tetik": [
+        "yazım yanlışı yapılmış ikilemeleri",
+        "doğru hâlini"
+       ],
+       "kalipNot": "İkileme yazımı → iki kelime ayrı, arada çizgi ya da virgül yok; cümleyi baştan yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1. ikileme:",
+          "ornek": "koşa koşa",
+          "havuz": [
+           "koşa-koşa",
+           "koşakoşa"
+          ],
+          "k": [
+           "koşa koşa"
+          ]
+         },
+         {
+          "bas": "2. ikileme:",
+          "ornek": "ağır ağır",
+          "havuz": [
+           "ağırağır",
+           "ağır-ağır"
+          ],
+          "k": [
+           "ağır ağır"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "“Öğretmenimiz ( ) Ali, Ayşe ve Can'ı tebrik etti.” Boşluğa uygun işareti getiriniz ve kullanım amacını belirtiniz.",
+       "formul": "isaret",
+       "cevap": "Noktalı virgül (;). Amacı: Sıralanan isimler arasında virgül olduğu için özneyi diğer ögelerden ayırmak üzere özneden sonra konur.",
+       "anahtarlar": [
+        {
+         "ad": "noktalı virgül",
+         "k": [
+          "noktalı virgül"
+         ]
+        },
+        {
+         "ad": "Amaç: özneden sonra",
+         "k": [
+          "özne"
+         ]
+        }
+       ],
+       "kisaCevap": "Noktalı virgül; özneden sonra konur.",
+       "tetik": [
+        "uygun işareti",
+        "kullanım amacını"
+       ],
+       "kalipNot": "İşaret + amaç → “Noktalı virgül / Üç nokta; çünkü …” İkisini de yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İşaret:",
+          "ornek": "noktalı virgül",
+          "havuz": [
+           "üç nokta",
+           "soru işareti"
+          ],
+          "k": [
+           "noktalı virgül"
+          ]
+         },
+         {
+          "bas": "Amacı: isimler sıralanmadan önce",
+          "ornek": "özneyi ayırmak",
+          "havuz": [
+           "cümleyi bitirmek",
+           "sözü okura bırakmak"
+          ],
+          "k": [
+           "özne"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "c",
+       "soru": "“Sınıfta yeni kitaplar, defterler, renkli kalemler ( ) Her şey yeni döneme hazırdı.” Boşluğa uygun işareti getiriniz ve kullanım amacını belirtiniz.",
+       "formul": "isaret",
+       "cevap": "Üç nokta (...). Amacı: Cümle tamamlanmamış, yarım bırakılmış; sözün gerisi okuyucuya bırakılmıştır.",
+       "anahtarlar": [
+        {
+         "ad": "üç nokta",
+         "k": [
+          "üç nokta",
+          "..."
+         ]
+        },
+        {
+         "ad": "Amaç: cümle tamamlanmamış",
+         "k": [
+          "tamamlanma",
+          "eksik",
+          "yarım",
+          "okuyucu",
+          "okura",
+          "bitmemiş",
+          "kesil",
+          "bitirilmemiş"
+         ]
+        }
+       ],
+       "kisaCevap": "Üç nokta; cümle tamamlanmamış.",
+       "tetik": [
+        "uygun işareti",
+        "kullanım amacını"
+       ],
+       "kalipNot": "İşaret + amaç → “Noktalı virgül / Üç nokta; çünkü …” İkisini de yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İşaret:",
+          "ornek": "üç nokta",
+          "havuz": [
+           "noktalı virgül",
+           "iki nokta"
+          ],
+          "k": [
+           "üç nokta"
+          ]
+         },
+         {
+          "bas": "Amacı: cümle",
+          "ornek": "tamamlanmamış, yarım kalmış",
+          "havuz": [
+           "soru soruyor",
+           "özneyle başlıyor"
+          ],
+          "k": [
+           "tamamlanma",
+           "eksik",
+           "yarım",
+           "okuyucu",
+           "okura",
+           "bitmemiş",
+           "kesil",
+           "bitirilmemiş"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.Y.7.21",
+     "id": "m9i2"
+    }
+   ]
+  },
+  {
+   "id": "m10",
+   "no": 10,
+   "kazanim": "T.Y.7.3",
+   "oncelik": 1,
+   "metin": [
+    "“Doğa sevgisi” temalı bilgilendirici bir metin yazmayı planladığınızı düşününüz."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Bu metnin giriş, gelişme ve sonuç bölümlerinde hangi içeriklere yer vereceğinizi taslak hâlinde yazınız.",
+     "formul": "taslak",
+     "cevap": "Giriş: Doğanın insan hayatındaki önemi belirtilerek konuya giriş yapılır. Gelişme: Doğayı korumak için yapılması gerekenler (geri dönüşüm, ağaçlandırma) örneklerle açıklanır. Sonuç: Doğayı korumanın hepimizin görevi olduğu vurgulanır.",
+     "anahtarlar": [
+      {
+       "ad": "Giriş: doğanın önemi",
+       "k": [
+        "önem",
+        "hayat",
+        "yaşam",
+        "nefes",
+        "yuva",
+        "değer"
+       ]
+      },
+      {
+       "ad": "Gelişme: korumak için yapılacaklar, örnek",
+       "k": [
+        "geri dönüşüm",
+        "fidan",
+        "ağaç",
+        "çöp",
+        "israf",
+        "tasarruf",
+        "temiz"
+       ]
+      },
+      {
+       "ad": "Sonuç: hepimizin görevi",
+       "k": [
+        "görev",
+        "sorumlu",
+        "hepimiz",
+        "geleceğ"
+       ]
+      }
+     ],
+     "kisaCevap": "Giriş: doğanın hayatımızdaki önemi. Gelişme: geri dönüşüm, fidan dikmek. Sonuç: doğayı korumak hepimizin görevi.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Giriş: doğanın hayatımızdaki önemi. Gelişme: geri dönüşüm, fidan dikmek. Sonuç: doğayı korumak hepimizin görevi.",
+        "Giriş: doğanın önemi. Gelişme: geri dönüşüm, fidan dikmek.",
+        "Geçen yaz ailemle denize gittik, çok eğlendik."
+       ],
+       "dogru": 0,
+       "ipucu": "Taslakta üç bölüm olmalı; her birine bir satır.",
+       "aciklama": "Giriş konuyu tanıtır, gelişme açıklar ve örnek verir, sonuç toparlar. (s. 167; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Giriş (konuyu tanıt):",
+        "ornek": "doğanın hayatımızdaki önemi",
+        "havuz": [
+         "en sevdiğim renk",
+         "bugünkü hava durumu"
+        ],
+        "k": [
+         "önem",
+         "hayat",
+         "yaşam",
+         "nefes",
+         "yuva",
+         "değer"
+        ]
+       },
+       {
+        "bas": "Gelişme (açıkla, örnek ver):",
+        "ornek": "geri dönüşüm, fidan dikmek",
+        "havuz": [
+         "televizyon izlemek",
+         "alışverişe gitmek"
+        ],
+        "k": [
+         "geri dönüşüm",
+         "fidan",
+         "ağaç",
+         "çöp",
+         "israf",
+         "tasarruf",
+         "temiz"
+        ]
+       },
+       {
+        "bas": "Sonuç (toparla):",
+        "ornek": "doğayı korumak hepimizin görevi",
+        "havuz": [
+         "ben bilmem",
+         "doğa çok uzakta"
+        ],
+        "k": [
+         "görev",
+         "sorumlu",
+         "hepimiz",
+         "geleceğ"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "taslak hâlinde"
+     ],
+     "kalipNot": "Taslak → 3 satır: “Giriş: … Gelişme: … Sonuç: …”"
+    },
+    {
+     "harf": "b",
+     "soru": "Taslağınıza uygun bir metin yazınız.",
+     "formul": "metin",
+     "cevap": "Doğa; nefes aldığımız hava, içtiğimiz su ve bizi doyuran topraktır, yani hayatımız için çok önemlidir. Ancak ormanlar yok ediliyor, denizler kirleniyor. Doğayı sevmek eylem ister: Örneğin çöplerimizi geri dönüşüme atabilir, suyu israf etmeyebilir, fidan dikebiliriz. Sonuç olarak doğayı korumak hepimizin görevidir; doğayı korumak aslında kendi geleceğimizi korumaktır.",
+     "anahtarlar": [
+      {
+       "ad": "Giriş: doğanın önemi",
+       "k": [
+        "önem",
+        "hayat",
+        "yaşam",
+        "nefes",
+        "yuva",
+        "değer"
+       ]
+      },
+      {
+       "ad": "Gelişme: yapılacaklar ve örnek",
+       "k": [
+        "geri dönüşüm",
+        "fidan",
+        "ağaç",
+        "çöp",
+        "israf",
+        "tasarruf",
+        "temiz"
+       ]
+      },
+      {
+       "ad": "Sonuç: hepimizin görevi",
+       "k": [
+        "görev",
+        "sorumlu",
+        "hepimiz",
+        "geleceğ"
+       ]
+      }
+     ],
+     "kisaCevap": "Doğa hayatımız için çok önemlidir. Örneğin fidan dikebilir, çöpleri geri dönüşüme atabiliriz. Sonuç olarak doğayı korumak hepimizin görevidir.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Doğa hayatımız için çok önemlidir. Örneğin fidan dikebilir, çöpleri geri dönüşüme atabiliriz. Sonuç olarak doğayı korumak hepimizin görevidir.",
+        "Doğa hayatımız için çok önemlidir. Örneğin fidan dikebiliriz.",
+        "Doğa. Ağaç. Deniz. Çiçek."
+       ],
+       "dogru": 0,
+       "ipucu": "Taslaktaki üç satırı üç kısa cümleye çevir.",
+       "aciklama": "Metin taslağa uymalı: giriş, gelişme, sonuç; her bölüme 1–2 cümle yeter. (s. 167; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Giriş: Doğa",
+        "ornek": "hayatımız için çok önemlidir",
+        "havuz": [
+         "bazen sıkıcıdır",
+         "bir resimdir"
+        ],
+        "k": [
+         "önem",
+         "hayat",
+         "yaşam",
+         "nefes",
+         "yuva",
+         "değer"
+        ]
+       },
+       {
+        "bas": "Gelişme: Örneğin",
+        "ornek": "fidan dikebilir, çöpleri geri dönüşüme atabiliriz",
+        "havuz": [
+         "oyun oynayabiliriz",
+         "uyuyabiliriz"
+        ],
+        "k": [
+         "geri dönüşüm",
+         "fidan",
+         "ağaç",
+         "çöp",
+         "israf",
+         "tasarruf",
+         "temiz"
+        ]
+       },
+       {
+        "bas": "Sonuç olarak doğayı korumak",
+        "ornek": "hepimizin görevidir",
+        "havuz": [
+         "zor bir iştir",
+         "gereksizdir"
+        ],
+        "k": [
+         "görev",
+         "sorumlu",
+         "hepimiz",
+         "geleceğ"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "Taslağınıza uygun bir metin"
+     ],
+     "kalipNot": "Metin → her bölüme 1–2 cümle; örneği “Örneğin …”, sonucu “Sonuç olarak …” ile yaz."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "“Kitap okumanın faydaları” temalı bilgilendirici bir metin yazmayı planladığınızı düşününüz."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu metnin giriş, gelişme ve sonuç bölümlerinde hangi içeriklere yer vereceğinizi taslak hâlinde yazınız.",
+       "formul": "taslak",
+       "cevap": "Giriş: Kitap okumanın hayatımızdaki yeri ve önemi. Gelişme: Okumanın faydaları; kelime hazinesi gelişir, hayal gücü artar, örneğin her gün 20 sayfa okumak. Sonuç: Kitap okumayı alışkanlık hâline getirmeliyiz.",
+       "anahtarlar": [
+        {
+         "ad": "Giriş: okumanın önemi",
+         "k": [
+          "önem",
+          "hayat",
+          "yeri"
+         ]
+        },
+        {
+         "ad": "Gelişme: faydalar",
+         "k": [
+          "kelime",
+          "hayal",
+          "bilgi"
+         ]
+        },
+        {
+         "ad": "Sonuç: alışkanlık edinmeliyiz",
+         "k": [
+          "alışkanlık",
+          "okumalıyız",
+          "edinmeli"
+         ]
+        }
+       ],
+       "kisaCevap": "Giriş: okumanın hayatımızdaki önemi. Gelişme: kelime ve hayal gücü gelişir, örnek. Sonuç: okumayı alışkanlık edinmeliyiz.",
+       "tetik": [
+        "taslak hâlinde"
+       ],
+       "kalipNot": "Taslak → 3 satır: “Giriş: … Gelişme: … Sonuç: …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Giriş (konuyu tanıt):",
+          "ornek": "okumanın hayatımızdaki önemi",
+          "havuz": [
+           "en sevdiğim yemek",
+           "dünkü maç"
+          ],
+          "k": [
+           "önem",
+           "hayat",
+           "yeri"
+          ]
+         },
+         {
+          "bas": "Gelişme (açıkla, örnek ver):",
+          "ornek": "kelime hazinesi ve hayal gücü gelişir",
+          "havuz": [
+           "televizyon çok güzel",
+           "oyun oynarım"
+          ],
+          "k": [
+           "kelime",
+           "hayal",
+           "bilgi"
+          ]
+         },
+         {
+          "bas": "Sonuç (toparla):",
+          "ornek": "okumayı alışkanlık hâline getirmeliyiz",
+          "havuz": [
+           "kitaplar ağırdır",
+           "yarın tatil"
+          ],
+          "k": [
+           "alışkanlık",
+           "okumalıyız",
+           "edinmeli"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Taslağınıza uygun bir metin yazınız.",
+       "formul": "metin",
+       "cevap": "Kitaplar bize yeni dünyaların kapısını açar; bu yüzden okumak hayatımızda çok önemlidir. Kitap okuyan kişinin kelime hazinesi gelişir, hayal gücü artar. Örneğin her gün yirmi sayfa okuyan biri yılda birçok kitap bitirir. Sonuç olarak kitap okumayı alışkanlık hâline getirmeliyiz.",
+       "anahtarlar": [
+        {
+         "ad": "Giriş: okumanın önemi",
+         "k": [
+          "önem",
+          "hayat"
+         ]
+        },
+        {
+         "ad": "Gelişme: faydalar ve örnek",
+         "k": [
+          "kelime",
+          "hayal",
+          "örne"
+         ]
+        },
+        {
+         "ad": "Sonuç: alışkanlık",
+         "k": [
+          "alışkanlık",
+          "okumalıyız"
+         ]
+        }
+       ],
+       "kisaCevap": "Okumak hayatımızda çok önemlidir. Kelime hazinemiz ve hayal gücümüz gelişir. Sonuç olarak okumayı alışkanlık hâline getirmeliyiz.",
+       "tetik": [
+        "Taslağınıza uygun bir metin"
+       ],
+       "kalipNot": "Metin → her bölüme 1–2 cümle; örneği “Örneğin …”, sonucu “Sonuç olarak …” ile yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Giriş: Okumak",
+          "ornek": "hayatımızda çok önemlidir",
+          "havuz": [
+           "bazen sıkıcıdır",
+           "pahalıdır"
+          ],
+          "k": [
+           "önem",
+           "hayat"
+          ]
+         },
+         {
+          "bas": "Gelişme: Okuyan kişinin",
+          "ornek": "kelime hazinesi ve hayal gücü gelişir",
+          "havuz": [
+           "gözleri yorulur",
+           "çantası ağırlaşır"
+          ],
+          "k": [
+           "kelime",
+           "hayal",
+           "örne"
+          ]
+         },
+         {
+          "bas": "Sonuç olarak",
+          "ornek": "okumayı alışkanlık hâline getirmeliyiz",
+          "havuz": [
+           "kitapları kaldırmalıyız",
+           "hiç açmamalıyız"
+          ],
+          "k": [
+           "alışkanlık",
+           "okumalıyız"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.Y.7.3",
+     "id": "m10i1"
+    },
+    {
+     "metin": [
+      "Bir öğrenci, sınava hazırlanırken önemli bilgileri küçük kartlara yazarak gün içinde tekrar ediyor. Başka bir öğrenci ise aynı konuları renkli kavram haritaları oluşturarak çalışıyor. Okulun bültende bu iki çalışma biçiminin ortak yönlerini ve birbirinden ayrılan özelliklerini açıklamanız isteniyor."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Karşılaştırma-zıtlık, tanıtıcı ve sıralı-kronolojik metin yapılarından amacınıza en uygun olanı belirleyip adını yazınız.",
+       "formul": "yapi",
+       "cevap": "Karşılaştırma-zıtlık metin yapısı; çünkü iki yöntemin benzer ve farklı yönleri anlatılacak.",
+       "anahtarlar": [
+        {
+         "ad": "Karşılaştırma-zıtlık",
+         "k": [
+          "karşılaştırma"
+         ]
+        },
+        {
+         "ad": "Çünkü benzer ve farklı yönler",
+         "k": [
+          "benzer",
+          "farklı",
+          "ortak"
+         ]
+        }
+       ],
+       "kisaCevap": "Karşılaştırma-zıtlık; çünkü benzer ve farklı yönler anlatılacak.",
+       "tetik": [
+        "amacınıza en uygun olanı"
+       ],
+       "kalipNot": "Yapı seç → benzer + farklı yön anlatılacaksa “karşılaştırma-zıtlık” + çünkü.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Yapı:",
+          "ornek": "karşılaştırma-zıtlık",
+          "havuz": [
+           "sıralı-kronolojik",
+           "tanıtıcı"
+          ],
+          "k": [
+           "karşılaştırma"
+          ]
+         },
+         {
+          "bas": "Çünkü iki yöntemin",
+          "ornek": "benzer ve farklı yönleri anlatılacak",
+          "havuz": [
+           "olay sırası anlatılacak",
+           "yalnız biri tanıtılacak"
+          ],
+          "k": [
+           "benzer",
+           "farklı",
+           "ortak"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Seçtiğiniz yapıya uygun, iki çalışma yönteminin benzer ve farklı yönlerini ele alan kısa bir bilgilendirici metin yazınız.",
+       "formul": "yapi",
+       "cevap": "Her iki öğrenci de bilgileri kalıcı hâle getirmek için çalışıyor. Bilgi kartları kısa tekrar yapmayı kolaylaştırır; kavram haritaları ise bilgiler arasındaki ilişkiyi gösterir. Sonuç olarak iki yöntem de öğrenmeyi destekler ama biri tekrara, diğeri ilişki kurmaya yardım eder.",
+       "anahtarlar": [
+        {
+         "ad": "Benzer yön: ikisi de",
+         "k": [
+          "ikisi de",
+          "her iki",
+          "ikisinde de"
+         ]
+        },
+        {
+         "ad": "Farklı yön: oysa / ise",
+         "k": [
+          "oysa",
+          " ise",
+          "ilişki"
+         ]
+        },
+        {
+         "ad": "Sonuç",
+         "k": [
+          "sonuç olarak",
+          "kısacası"
+         ]
+        }
+       ],
+       "kisaCevap": "İkisi de öğrenmeyi kolaylaştırır. Kartlar tekrara, kavram haritası ise ilişki kurmaya yardım eder. Sonuç olarak ikisi de işe yarar.",
+       "tetik": [
+        "benzer ve farklı yönlerini"
+       ],
+       "kalipNot": "Karşılaştırma metni → “İkisi de …” + “oysa / ise …” + “Sonuç olarak …”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Benzer yön:",
+          "ornek": "ikisi de öğrenmeyi kolaylaştırır",
+          "havuz": [
+           "kartlar kırmızıdır",
+           "harita çok büyüktür"
+          ],
+          "k": [
+           "ikisi de",
+           "her iki",
+           "ikisinde de"
+          ]
+         },
+         {
+          "bas": "Farklı yön:",
+          "ornek": "kartlar tekrara, kavram haritası ise ilişki kurmaya yardım eder",
+          "havuz": [
+           "ikisi aynı renktedir",
+           "ikisi de kâğıttır"
+          ],
+          "k": [
+           "oysa",
+           " ise",
+           "ilişki"
+          ]
+         },
+         {
+          "bas": "Toparla:",
+          "ornek": "sonuç olarak ikisi de işe yarar",
+          "havuz": [
+           "kartlar kayboldu",
+           "harita yırtıldı"
+          ],
+          "k": [
+           "sonuç olarak",
+           "kısacası"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "T.Y.7.3",
+     "id": "m10i2"
+    }
+   ]
+  }
+ ],
+ "kuarkHata": [
+  {
+   "kazanim": "T.O.7.21",
+   "tur": "eksik",
+   "soru": "HÜRKUŞ metnindeki “teçhizat” kelimesinin anlamını tahmin ediniz.",
+   "kuark": "Uçakta olan şeyler.",
+   "secenekler": [
+    "Eksik: anlam belirsiz; ne tür şeyler olduğu (araç gereç) yazılmalı.",
+    "Yanlış: “teçhizat: teçhizatlı olmak” yazmalı.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Cümle “pilotların ihtiyaç duyduğu birçok teçhizat” diyor.",
+   "aciklama": "Teçhizat, bir görev için gereken araç gereç ve donanımlardır. (MEB örnek sorusu)",
+   "dogruCevap": "Bir görev için gereken araç gereçler.",
+   "tamamla": {
+    "once": "Bir görev için gereken",
+    "ornek": "araç gereçler",
+    "sonra": ".",
+    "k": [
+     "araç",
+     "gereç",
+     "donanım",
+     "malzeme",
+     "alet",
+     "ekipman"
+    ],
+    "havuz": [
+     "uçuş saatleri",
+     "pilot isimleri"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.O.7.5",
+   "tur": "eksik",
+   "soru": "Arılar metninin konusunu yazınız.",
+   "kuark": "Arılar.",
+   "secenekler": [
+    "Eksik: arılar hakkında ne anlatıldığı yazılmamış.",
+    "Yanlış: konu bir ders cümlesi olmalı.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Arıların neyi anlatılıyor?",
+   "aciklama": "Konu kısa yazılır ama neyin anlatıldığını söyler: “Arıların doğadaki önemi.” (s. 22)",
+   "dogruCevap": "Arıların doğadaki önemi.",
+   "tamamla": {
+    "once": "Arıların",
+    "ornek": "doğadaki önemi",
+    "sonra": ".",
+    "k": [
+     "önem",
+     "görev",
+     "rol",
+     "katkı",
+     "fayda",
+     "yarar"
+    ],
+    "havuz": [
+     "kanat rengi",
+     "uyku saati"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.O.7.5",
+   "tur": "eksik",
+   "soru": "Tabelalar metninin ana düşüncesini yazınız.",
+   "kuark": "Dil.",
+   "secenekler": [
+    "Eksik: ana düşünce bir cümledir; yazarın ne demek istediği yazılmalı.",
+    "Yanlış: konu “tabelalar” olmalı.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Ana düşünce tek kelime mi, cümle mi?",
+   "aciklama": "Ana düşünce yazarın asıl söylemek istediği, bir cümledir. (s. 17)",
+   "dogruCevap": "Dilimize sahip çıkmalıyız, çünkü dil kimliğimizdir.",
+   "tamamla": {
+    "once": "Dilimize sahip çıkmalıyız, çünkü dil",
+    "ornek": "kimliğimizdir",
+    "sonra": ".",
+    "k": [
+     "kimli",
+     "kültür"
+    ],
+    "havuz": [
+     "çok zordur",
+     "yabancıdır"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.O.7.4",
+   "tur": "eksik",
+   "soru": "Forsa metnindeki “bitap” kelimesinin anlamını tahmin edip gerekçesini yazınız.",
+   "kuark": "Yorgun.",
+   "secenekler": [
+    "Eksik: gerekçe yok; metinden ipucu yazılmalı.",
+    "Yanlış: tahmin “neşeli” olmalı.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Soru kaç şey istiyor?",
+   "aciklama": "Tahmin + metin içi gerekçe: “kolları eski kuvvetini kaybetmiş.” (MEB örnek sorusu)",
+   "dogruCevap": "Yorgun; çünkü metinde “kolları eski kuvvetini kaybetmiş” yazıyor.",
+   "tamamla": {
+    "once": "Yorgun; çünkü metinde",
+    "ornek": "“kolları eski kuvvetini kaybetmiş”",
+    "sonra": "yazıyor.",
+    "k": [
+     "kuvvet",
+     "kemik",
+     "erimiş",
+     "ihtiyarla"
+    ],
+    "havuz": [
+     "“ufukta bir yelkenli”",
+     "“serin pınarlar”"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.O.7.4",
+   "tur": "eksik",
+   "soru": "Forsa metnindeki “iştiyak” kelimesinin anlamını tahmin edip gerekçesini yazınız.",
+   "kuark": "Çünkü metinde “yanıp tutuşurdu” yazıyor.",
+   "secenekler": [
+    "Eksik: gerekçe var ama tahmin (anlam) yazılmamış.",
+    "Yanlış: gerekçeye kendi fikrini yazmalı.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Kelimenin anlamı nerede?",
+   "aciklama": "İştiyak: özlem, çok isteme. (MEB örnek sorusu)",
+   "dogruCevap": "Anlamı özlem, çok isteme; çünkü “yanıp tutuşurdu” yazıyor.",
+   "tamamla": {
+    "once": "Anlamı",
+    "ornek": "özlem, çok isteme",
+    "sonra": "; çünkü “yanıp tutuşurdu” yazıyor.",
+    "k": [
+     "özlem",
+     "istek",
+     "arzu",
+     "hasret",
+     "çok iste"
+    ],
+    "havuz": [
+     "korku, kaçma",
+     "uyku, dinlenme"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.Y.7.21",
+   "tur": "eksik",
+   "soru": "“apar-topar … hızlıhızlı” ikilemelerini doğru yazınız.",
+   "kuark": "apar topar",
+   "secenekler": [
+    "Eksik: ikinci ikileme (hızlı hızlı) düzeltilmemiş.",
+    "Yanlış: “apar-topar” doğrudur.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Cümlede kaç ikileme vardı?",
+   "aciklama": "İkilemeler ayrı ve çizgisiz yazılır: apar topar, hızlı hızlı. (s. 34)",
+   "dogruCevap": "apar topar ve hızlı hızlı",
+   "tamamla": {
+    "once": "apar topar ve",
+    "ornek": "hızlı hızlı",
+    "sonra": "",
+    "k": [
+     "hızlı hızlı"
+    ],
+    "havuz": [
+     "hızlıhızlı",
+     "hızlı-hızlı"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.Y.7.21",
+   "tur": "eksik",
+   "soru": "“Genç şairimiz ( ) Necip Fazıl, Nâzım Hikmet…” Boşluğa gelen işareti ve amacını yazınız.",
+   "kuark": "Noktalı virgül.",
+   "secenekler": [
+    "Eksik: amacı yazılmamış.",
+    "Yanlış: buraya üç nokta gelir.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Soru “kullanım amacını” da istiyor.",
+   "aciklama": "Özneden sonra noktalı virgül konabilir. (s. 49)",
+   "dogruCevap": "Noktalı virgül; çünkü özneden sonra konur.",
+   "tamamla": {
+    "once": "Noktalı virgül; çünkü",
+    "ornek": "özneden sonra konur",
+    "sonra": ".",
+    "k": [
+     "özne"
+    ],
+    "havuz": [
+     "cümle bitti",
+     "soru soruluyor"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.Y.7.3",
+   "tur": "eksik",
+   "soru": "“Doğa sevgisi” metninin taslağını yazınız.",
+   "kuark": "Giriş: doğanın önemi. Gelişme: geri dönüşüm, fidan dikmek.",
+   "secenekler": [
+    "Eksik: sonuç bölümü yok.",
+    "Yanlış: taslakta yalnız giriş olur.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Taslakta kaç bölüm olmalı?",
+   "aciklama": "Bilgilendirici metin: giriş, gelişme, sonuç. (s. 167)",
+   "dogruCevap": "Sonuç: doğayı korumak hepimizin görevi.",
+   "tamamla": {
+    "once": "Sonuç:",
+    "ornek": "doğayı korumak hepimizin görevi",
+    "sonra": ".",
+    "k": [
+     "görev",
+     "sorumlu",
+     "hepimiz",
+     "geleceğ"
+    ],
+    "havuz": [
+     "bugün hava güzel",
+     "doğa resmi çizdim"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.Y.7.21",
+   "tur": "yanilgi",
+   "soru": "“Yarışmacılar sahneye teker-teker çağrıldı.” cümlesini düzeltiniz.",
+   "kuark": "Doğru yazılmış; ikilemelerin arasına kısa çizgi konur.",
+   "secenekler": [
+    "Yanlış: ikilemelerin arasına kısa çizgi konmaz; “teker teker” yazılır.",
+    "Yanlış: bitişik “tekerteker” yazılır.",
+    "Doğru, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "İkilemelerin arasına işaret konur mu?",
+   "aciklama": "İkilemeler ayrı yazılır, arasına kısa çizgi ya da virgül konmaz. (s. 34)",
+   "dogruCevap": "Ayrı ve çizgisiz: teker teker çağrıldı.",
+   "tamamla": {
+    "once": "Ayrı ve çizgisiz:",
+    "ornek": "teker teker",
+    "sonra": "çağrıldı.",
+    "k": [
+     "teker teker"
+    ],
+    "havuz": [
+     "teker-teker",
+     "tekerteker"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.O.7.5",
+   "tur": "yanilgi",
+   "soru": "Arılar metninin konusunu yazınız.",
+   "kuark": "Arıları korumalıyız, çünkü doğa için önemlidirler.",
+   "secenekler": [
+    "Yanlış: bu ana düşünce; konu kısa yazılır: “Arıların doğadaki önemi.”",
+    "Yanlış: konu “bal” olmalı.",
+    "Doğru, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Konu kısa mı, ders veren cümle mi?",
+   "aciklama": "Konu, metinde neyin anlatıldığıdır; kısa yazılır. Ders veren cümle ana düşüncedir. (s. 17, 22)",
+   "dogruCevap": "Konu kısa yazılır: arıların doğadaki önemi.",
+   "tamamla": {
+    "once": "Konu kısa yazılır: arıların",
+    "ornek": "doğadaki önemi",
+    "sonra": ".",
+    "k": [
+     "önem",
+     "görev",
+     "rol"
+    ],
+    "havuz": [
+     "korunması gerektiği",
+     "balı çok tatlıdır"
+    ]
+   }
+  },
+  {
+   "kazanim": "T.O.7.4",
+   "tur": "yanilgi",
+   "soru": "Forsa metnindeki “bitap” kelimesinin gerekçesini yazınız.",
+   "kuark": "Gerekçe: Bence yaşlı insanlar hep yorgun olur.",
+   "secenekler": [
+    "Yanlış: gerekçe kendi fikrin değil, metindeki ipucudur.",
+    "Yanlış: gerekçe yazmaya gerek yok.",
+    "Doğru, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Gerekçe nereden alınır?",
+   "aciklama": "Gerekçe metin içi ipucudur: “bir kemik torbasına dönmüştü.” (MEB örnek sorusu)",
+   "dogruCevap": "Gerekçe metinden alınır: “bir kemik torbasına dönmüştü”",
+   "tamamla": {
+    "once": "Gerekçe metinden alınır:",
+    "ornek": "“bir kemik torbasına dönmüştü”",
+    "sonra": "",
+    "k": [
+     "kuvvet",
+     "kemik",
+     "erimiş",
+     "ihtiyarla"
+    ],
+    "havuz": [
+     "“bence yaşlılar yorulur”",
+     "“dedem de yorgundur”"
+    ]
+   }
+  }
+ ],
+ "provalar": [
+  {
+   "id": "p1",
+   "ad": "Prova 1",
+   "sorular": [
+    {
+     "kazanim": "T.O.7.21",
+     "puan": 15,
+     "benzer": "m1",
+     "metin": [
+      "İşçiler, depoya getirilen ağır kutuları birlikte taşıdı.",
+      "Toplantıda herkes müdürün yaptığı ağır eleştiriler karşısında sessiz kaldı.",
+      "Yukarıdaki cümlelerde “ağır” sözcüğü farklı anlamlarda kullanılmıştır."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "1. cümlede “ağır” sözcüğünün anlamını yazınız.",
+       "formul": "anlam",
+       "cevap": "Kütlesi fazla olan, taşınması güç.",
+       "anahtarlar": [
+        {
+         "ad": "Kütlesi fazla, taşınması güç",
+         "k": [
+          "kütle",
+          "taşınması güç",
+          "zor taşın",
+          "kilo",
+          "hafif olmayan"
+         ]
+        }
+       ],
+       "puan": 7
+      },
+      {
+       "harf": "b",
+       "soru": "2. cümlede “ağır” sözcüğünün anlamını yazınız.",
+       "formul": "anlam",
+       "cevap": "Sert, kırıcı, etkisi güçlü.",
+       "anahtarlar": [
+        {
+         "ad": "Sert, kırıcı",
+         "k": [
+          "sert",
+          "kırıcı",
+          "incit",
+          "üzücü",
+          "etkisi güçlü"
+         ]
+        }
+       ],
+       "puan": 8
+      }
+     ]
+    },
+    {
+     "kazanim": "T.O.7.5",
+     "puan": 15,
+     "benzer": "m2",
+     "metin": [
+      "İlçenin yakınındaki yıllardır kullanılmayan taş değirmen, belediye tarafından onarılarak Doğa Tanıtım Merkezi hâline getirildi. Merkez, 6 Nisan Cumartesi günü ziyaretçilere açıldı. Alt katta bölgedeki bitki ve hayvanları tanıtan fotoğraflar sergilenirken üst katta çocukların inceleme yapabileceği küçük bir gözlem bölümü oluşturuldu. Bahçeye ise farklı kuş türlerinin yararlanması için ahşap yuvalar yerleştirildi. Merkez, pazartesi günleri dışında 10.00-17.00 saatleri arasında ziyaret edilebilecek."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Doğa Tanıtım Merkezi hangi gün ziyaretçilere açılmıştır?",
+       "formul": "bilgi",
+       "cevap": "6 Nisan Cumartesi günü açılmıştır.",
+       "anahtarlar": [
+        {
+         "ad": "6 Nisan Cumartesi",
+         "k": [
+          "6 nisan",
+          "cumartesi"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Bitki ve hayvanları tanıtan fotoğraflar binanın hangi bölümünde sergilenmektedir?",
+       "formul": "bilgi",
+       "cevap": "Binanın alt katında sergilenmektedir.",
+       "anahtarlar": [
+        {
+         "ad": "Alt kat",
+         "k": [
+          "alt kat"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "c",
+       "soru": "Merkez haftanın hangi günü ziyaret edilemeyecektir?",
+       "formul": "bilgi",
+       "cevap": "Pazartesi günü ziyaret edilemeyecektir.",
+       "anahtarlar": [
+        {
+         "ad": "Pazartesi",
+         "k": [
+          "pazartesi"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ]
+    },
+    {
+     "kazanim": "T.O.7.5",
+     "puan": 15,
+     "benzer": "m2",
+     "metin": [
+      "Bir iyiliğin değerini, onu kaç kişinin gördüğü değil hangi niyetle yapıldığı belirler. Bazı insanlar yardım ettiklerini sürekli anlatır, yaptıkları küçük bir iyiliğin bile herkes tarafından bilinmesini ister. Oysa gerçekten yardımsever olan kişi, karşılık ya da övgü beklemeden başkasının ihtiyacını gidermeye çalışır. İyilik, gösterişe dönüştüğünde samimiyetini kaybedebilir."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu metnin ana düşüncesini kendi cümlelerinizle yazınız.",
+       "formul": "ana",
+       "cevap": "Gerçek iyilik, övgü ve karşılık beklemeden samimi bir niyetle yapılır; gösteriş için yapılan iyilik değerini kaybeder.",
+       "anahtarlar": [
+        {
+         "ad": "Karşılık beklemeden, samimi niyetle",
+         "k": [
+          "karşılık",
+          "övgü",
+          "samimi",
+          "niyet"
+         ]
+        },
+        {
+         "ad": "Gösteriş iyiliğin değerini düşürür",
+         "k": [
+          "gösteriş",
+          "değerini kaybed",
+          "değer"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    },
+    {
+     "kazanim": "T.O.7.4",
+     "puan": 15,
+     "benzer": "m6",
+     "metin": [
+      "Okul korosunda solo söyleyecek olan Elif, sahneye çıkmadan önce çok heyecanlandı. Ancak şarkısını başarıyla tamamlayıp salondan büyük alkış alınca öğretmeninin yüzü güldü. Elif'in gösterdiği başarı öğretmenini çok sevindirmişti."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Yüzü gülmek” deyiminin anlamını tahmin ediniz ve sizi bu tahmine götüren metin içi gerekçeyi yazınız.",
+       "formul": "gerekce",
+       "cevap": "Tahminim: sevinmek, mutlu olmak. Gerekçem: Metinde “Elif'in gösterdiği başarı öğretmenini çok sevindirmişti” yazıyor.",
+       "anahtarlar": [
+        {
+         "ad": "Tahmin: sevinmek, mutlu olmak",
+         "k": [
+          "sevin",
+          "mutlu",
+          "memnun"
+         ]
+        },
+        {
+         "ad": "Gerekçe: metindeki ipucu",
+         "k": [
+          "sevindirmişti",
+          "başarı",
+          "alkış"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    },
+    {
+     "kazanim": "T.Y.7.21",
+     "puan": 20,
+     "benzer": "m9",
+     "metin": [
+      "Aşağıda yer alan yazım ve noktalama ile ilgili soruları cevaplayınız."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Rüzgâr esince yapraklar yavaş-yavaş, sallanasallana yere düştü.” cümlesindeki yanlış yazılmış ikilemeleri düzelterek cümleyi yeniden yazınız.",
+       "formul": "ikileme",
+       "cevap": "Rüzgâr esince yapraklar yavaş yavaş, sallana sallana yere düştü.",
+       "anahtarlar": [
+        {
+         "ad": "yavaş yavaş",
+         "k": [
+          "yavaş yavaş"
+         ]
+        },
+        {
+         "ad": "sallana sallana",
+         "k": [
+          "sallana sallana"
+         ]
+        }
+       ],
+       "puan": 8
+      },
+      {
+       "harf": "b",
+       "soru": "“Kardeşim ( ) kalemini, silgisini ve defterini çantasına koydu.” Boşluğa uygun işareti getiriniz ve kullanım amacını belirtiniz.",
+       "formul": "isaret",
+       "cevap": "Noktalı virgül (;). Amacı: Sıralanan ögeler arasında virgül olduğu için özneden sonra konur.",
+       "anahtarlar": [
+        {
+         "ad": "noktalı virgül",
+         "k": [
+          "noktalı virgül"
+         ]
+        },
+        {
+         "ad": "Amaç: özneden sonra",
+         "k": [
+          "özne"
+         ]
+        }
+       ],
+       "puan": 6
+      },
+      {
+       "harf": "c",
+       "soru": "“— Ödevini bitirdin mi? — Şey ( )” Boşluğa uygun işareti getiriniz ve kullanım amacını belirtiniz.",
+       "formul": "isaret",
+       "cevap": "Üç nokta (...). Amacı: Karşılıklı konuşmada yeterli olmayan, eksik bırakılan cevabı göstermek.",
+       "anahtarlar": [
+        {
+         "ad": "üç nokta",
+         "k": [
+          "üç nokta",
+          "..."
+         ]
+        },
+        {
+         "ad": "Amaç: eksik bırakılan cevap",
+         "k": [
+          "eksik",
+          "yarım",
+          "cevap",
+          "tamamlanma"
+         ]
+        }
+       ],
+       "puan": 6
+      }
+     ]
+    },
+    {
+     "kazanim": "T.Y.7.3",
+     "puan": 20,
+     "benzer": "m10",
+     "metin": [
+      "“Spor yapmanın faydaları” temalı bilgilendirici bir metin yazmayı planladığınızı düşününüz."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu metnin giriş, gelişme ve sonuç bölümlerinde hangi içeriklere yer vereceğinizi taslak hâlinde yazınız.",
+       "formul": "taslak",
+       "cevap": "Giriş: Sporun hayatımızdaki önemi. Gelişme: Sporun faydaları; kaslar güçlenir, uyku düzelir, örneğin her gün yürüyüş yapmak. Sonuç: Sporu her gün yapılan bir alışkanlık hâline getirmeliyiz.",
+       "anahtarlar": [
+        {
+         "ad": "Giriş: sporun önemi",
+         "k": [
+          "önem",
+          "hayat"
+         ]
+        },
+        {
+         "ad": "Gelişme: faydalar ve örnek",
+         "k": [
+          "güçlen",
+          "sağlık",
+          "uyku",
+          "örne",
+          "fayda"
+         ]
+        },
+        {
+         "ad": "Sonuç: alışkanlık",
+         "k": [
+          "alışkanlık",
+          "yapmalıyız",
+          "getirmeliyiz"
+         ]
+        }
+       ],
+       "puan": 10
+      },
+      {
+       "harf": "b",
+       "soru": "Taslağınıza uygun bir metin yazınız.",
+       "formul": "metin",
+       "cevap": "Spor, sağlıklı bir hayatın en önemli parçalarından biridir. Düzenli spor yapan kişinin kasları güçlenir, uykusu düzelir ve kendini daha mutlu hisseder. Örneğin her gün yarım saat yürümek bile vücudumuza iyi gelir. Sonuç olarak sporu alışkanlık hâline getirmeliyiz.",
+       "anahtarlar": [
+        {
+         "ad": "Giriş: sporun önemi",
+         "k": [
+          "önem",
+          "hayat"
+         ]
+        },
+        {
+         "ad": "Gelişme: faydalar ve örnek",
+         "k": [
+          "güçlen",
+          "sağlık",
+          "uyku",
+          "örne"
+         ]
+        },
+        {
+         "ad": "Sonuç",
+         "k": [
+          "sonuç olarak",
+          "alışkanlık"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "ad": "Prova 2",
+   "sorular": [
+    {
+     "kazanim": "T.O.7.21",
+     "puan": 15,
+     "benzer": "m1",
+     "metin": [
+      "Köyün girişindeki eski taş köprü yıllarca bakımsız kalmış, harap bir hâle gelmişti. Taşları yerinden oynamış, korkulukları kırılmıştı. Belediye köprüyü onarınca köprü yeniden sağlam ve güzel görünmeye başladı.",
+      "Aşağıdaki kelimelerin anlamını metinden hareketle tahmin ediniz."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "harap: Bu kelimenin metindeki anlamını tahmin edip yazınız.",
+       "formul": "anlam",
+       "cevap": "Harap: Yıkık dökük, çok kötü durumda, bakımsız.",
+       "anahtarlar": [
+        {
+         "ad": "Yıkık dökük, kötü durumda",
+         "k": [
+          "yıkık",
+          "kötü durum",
+          "bakımsız",
+          "bozuk",
+          "eskimiş",
+          "yıpran"
+         ]
+        }
+       ],
+       "puan": 8
+      },
+      {
+       "harf": "b",
+       "soru": "onarmak: Bu kelimenin metindeki anlamını tahmin edip yazınız.",
+       "formul": "anlam",
+       "cevap": "Onarmak: Bozulmuş bir şeyi tamir etmek, düzeltmek.",
+       "anahtarlar": [
+        {
+         "ad": "Tamir etmek, düzeltmek",
+         "k": [
+          "tamir",
+          "düzelt",
+          "yenile",
+          "sağlamlaştır"
+         ]
+        }
+       ],
+       "puan": 7
+      }
+     ]
+    },
+    {
+     "kazanim": "T.O.7.5",
+     "puan": 15,
+     "benzer": "m2",
+     "metin": [
+      "Mahalle kütüphanesine kitap ödünç alma işlemlerini hızlandırmak için otomatik işlem cihazları yerleştirildi. Okurlar artık kitaplarını birkaç dakika içinde alıp çıkabiliyordu. Bir süre sonra kütüphaneci, eskiden ziyaretçilerin kendisine kitap önerisi sorduğunu ve okudukları eserler hakkında sohbet ettiğini; şimdi ise çoğu kişinin cihazdan işlemini yapıp hemen ayrıldığını fark etti. Bir gün çalışma arkadaşına, “Kitaplar daha hızlı el değiştiriyor ama sohbetler raflarda kaldı.” dedi."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Metnin konusunu yazınız.",
+       "formul": "konu",
+       "cevap": "Teknolojinin kütüphanede insanlar arasındaki sohbeti azaltması.",
+       "anahtarlar": [
+        {
+         "ad": "Teknoloji, cihazlar",
+         "k": [
+          "teknoloji",
+          "cihaz",
+          "otomatik",
+          "makine"
+         ]
+        },
+        {
+         "ad": "Sohbetin, iletişimin azalması",
+         "k": [
+          "sohbet",
+          "iletişim",
+          "konuşma"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    },
+    {
+     "kazanim": "T.O.7.5",
+     "puan": 15,
+     "benzer": "m2",
+     "metin": [
+      "Dünyadaki suyun çok küçük bir bölümü içilebilir tatlı sudur. Üstelik nüfus arttıkça bu suya duyulan ihtiyaç da her geçen gün büyüyor. Dişlerimizi fırçalarken musluğu açık bırakmak, bulaşıkları akan suyun altında yıkamak gibi küçük alışkanlıklar her gün litrelerce suyun boşa gitmesine yol açıyor. Bu nedenle suyu dikkatli kullanmak, gelecek nesillere karşı hepimizin sorumluluğudur."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu metnin ana düşüncesini kendi cümlelerinizle yazınız.",
+       "formul": "ana",
+       "cevap": "Tatlı su azdır; bu yüzden suyu israf etmeden, dikkatli kullanmalıyız.",
+       "anahtarlar": [
+        {
+         "ad": "Suyu dikkatli kullanmalıyız",
+         "k": [
+          "dikkatli kullan",
+          "israf",
+          "boşa harca",
+          "tasarruf",
+          "korumalı"
+         ]
+        },
+        {
+         "ad": "Çünkü tatlı su az, gelecek için sorumluluk",
+         "k": [
+          "azdır",
+          "sınırlı",
+          "sorumlu",
+          "gelecek"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    },
+    {
+     "kazanim": "T.O.7.4",
+     "puan": 15,
+     "benzer": "m6",
+     "metin": [
+      "Zil çalınca öğrenciler büyük bir telaşla çantalarını toplayıp kapıya koştu. Birkaç dakika sonra koridorlar boşaldı ve okulda derin bir sükûnet başladı; yalnızca duvardaki saatin tik takları duyuluyordu."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "sükûnet: Kelimenin anlamına dair tahmininizi ve sizi bu tahmine götüren metin içi gerekçeyi yazınız.",
+       "formul": "gerekce",
+       "cevap": "Tahminim: sessizlik, sakinlik. Gerekçem: Metinde “koridorlar boşaldı” ve “yalnızca duvardaki saatin tik takları duyuluyordu” yazıyor.",
+       "anahtarlar": [
+        {
+         "ad": "Tahmin: sessizlik, sakinlik",
+         "k": [
+          "sessiz",
+          "sakin",
+          "huzur"
+         ]
+        },
+        {
+         "ad": "Gerekçe: metindeki ipucu",
+         "k": [
+          "boşaldı",
+          "tik tak",
+          "yalnızca"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    },
+    {
+     "kazanim": "T.Y.7.21",
+     "puan": 20,
+     "benzer": "m9",
+     "metin": [
+      "Aşağıda yer alan yazım ve noktalama ile ilgili soruları cevaplayınız."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "“Bayramda herkes güle-güle sohbet etti, çocuklar da ikişerikişer bahçeye çıktı.” cümlesindeki yanlış yazılmış ikilemeleri düzelterek cümleyi yeniden yazınız.",
+       "formul": "ikileme",
+       "cevap": "Bayramda herkes güle güle sohbet etti, çocuklar da ikişer ikişer bahçeye çıktı.",
+       "anahtarlar": [
+        {
+         "ad": "güle güle",
+         "k": [
+          "güle güle"
+         ]
+        },
+        {
+         "ad": "ikişer ikişer",
+         "k": [
+          "ikişer ikişer"
+         ]
+        }
+       ],
+       "puan": 8
+      },
+      {
+       "harf": "b",
+       "soru": "“Annem pazardan elma, armut aldı ( ) babam fırından ekmek, simit getirdi.” Boşluğa uygun işareti getiriniz ve kullanım amacını belirtiniz.",
+       "formul": "isaret",
+       "cevap": "Noktalı virgül (;). Amacı: Ögeleri arasında virgül bulunan sıralı cümleleri birbirinden ayırmak.",
+       "anahtarlar": [
+        {
+         "ad": "noktalı virgül",
+         "k": [
+          "noktalı virgül"
+         ]
+        },
+        {
+         "ad": "Amaç: sıralı cümleleri ayırır",
+         "k": [
+          "sıralı cümle",
+          "cümleleri ayır",
+          "iki cümle",
+          "cümleler arasın"
+         ]
+        }
+       ],
+       "puan": 6
+      },
+      {
+       "harf": "c",
+       "soru": "“Masada sıcak çorba, taze ekmek, mis kokulu börekler ( ) Herkes sofraya koştu.” Boşluğa uygun işareti getiriniz ve kullanım amacını belirtiniz.",
+       "formul": "isaret",
+       "cevap": "Üç nokta (...). Amacı: Cümle tamamlanmamış, yarım bırakılmış; sözün gerisi okuyucuya bırakılmıştır.",
+       "anahtarlar": [
+        {
+         "ad": "üç nokta",
+         "k": [
+          "üç nokta",
+          "..."
+         ]
+        },
+        {
+         "ad": "Amaç: cümle tamamlanmamış",
+         "k": [
+          "tamamlanma",
+          "eksik",
+          "yarım",
+          "okuyucu",
+          "okura",
+          "bitmemiş",
+          "kesil",
+          "bitirilmemiş"
+         ]
+        }
+       ],
+       "puan": 6
+      }
+     ]
+    },
+    {
+     "kazanim": "T.Y.7.3",
+     "puan": 20,
+     "benzer": "m10",
+     "metin": [
+      "“Teknolojiyi bilinçli kullanmak” temalı bilgilendirici bir metin yazmayı planladığınızı düşününüz."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu metnin giriş, gelişme ve sonuç bölümlerinde hangi içeriklere yer vereceğinizi taslak hâlinde yazınız.",
+       "formul": "taslak",
+       "cevap": "Giriş: Teknolojinin hayatımızdaki yeri ve önemi. Gelişme: Bilinçli kullanım yolları; ekran süresini sınırlamak, kişisel bilgileri paylaşmamak, örneğin akşamları telefonu bırakmak. Sonuç: Teknolojiyi kontrollü kullanmak hepimizin sorumluluğudur.",
+       "anahtarlar": [
+        {
+         "ad": "Giriş: teknolojinin önemi",
+         "k": [
+          "önem",
+          "hayat",
+          "yeri"
+         ]
+        },
+        {
+         "ad": "Gelişme: bilinçli kullanım yolları, örnek",
+         "k": [
+          "süre",
+          "sınırla",
+          "paylaşma",
+          "örne"
+         ]
+        },
+        {
+         "ad": "Sonuç: hepimizin sorumluluğu",
+         "k": [
+          "sorumlu",
+          "görev",
+          "hepimiz",
+          "kullanmalıyız"
+         ]
+        }
+       ],
+       "puan": 10
+      },
+      {
+       "harf": "b",
+       "soru": "Taslağınıza uygun bir metin yazınız.",
+       "formul": "metin",
+       "cevap": "Teknoloji, hayatımızı kolaylaştıran önemli bir araçtır. Ancak onu bilinçli kullanmazsak zarar görebiliriz. Ekran süremizi sınırlamalı ve kişisel bilgilerimizi paylaşmamalıyız. Örneğin akşam yemeğinde telefonu bırakıp ailemizle sohbet edebiliriz. Sonuç olarak teknolojiyi kontrollü kullanmak hepimizin sorumluluğudur.",
+       "anahtarlar": [
+        {
+         "ad": "Giriş: teknolojinin önemi",
+         "k": [
+          "önem",
+          "hayat"
+         ]
+        },
+        {
+         "ad": "Gelişme: yollar ve örnek",
+         "k": [
+          "sınırla",
+          "paylaşma",
+          "örne"
+         ]
+        },
+        {
+         "ad": "Sonuç",
+         "k": [
+          "sonuç olarak",
+          "sorumlu"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
