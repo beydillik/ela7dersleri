@@ -204,6 +204,10 @@ with sync_playwright() as pw:
             ok_k = page.is_visible(f"#sq {alan(q)}"); ileri(8000); cevapla(page, "#sq", q); ileri(50)
             if not ok_k: ok(f"Test: {alan(q)} sorunun kalbinden sonra açık", False, qtext[:60])
         else:
+            if not q.get("ima"):   # aynı metinli sorular: şıkları ekrandakilerle uyuşanı seç
+                ekran = page.locator("#sq .opt").all_inner_texts()
+                for x in [q] + [x for x in TUM if x is not q and x["soru"] == q["soru"] and "secenekler" in x]:
+                    if all(any(re.fullmatch(r"[a-d]\) " + re.escape(o), e) for e in ekran) for o in x["secenekler"]): q = x; dogru_metin = x["secenekler"][x["dogru"]]; break
             ileri(8000); loc = page.locator("#sq .opt:not([disabled])", has_text=tam(dogru_metin))
             if loc.count():
                 loc.first.click(); ileri(50)

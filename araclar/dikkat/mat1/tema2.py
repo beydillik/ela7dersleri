@@ -51,7 +51,7 @@ TEKRAR = {
  ("Hacim ölçülerinin temel birimi {metreküptür|litredir|metrekaredir}.", "s. 146"),
  ("Her ayrıtı 1 m olan küpün hacmi {1 m³|1 m²|1 L}'tür.", "s. 146"),
  ("Bahçeye gelecek kum gibi büyük hacimler {büyük|küçük|her} birimle ölçülür.", "s. 144"),
- ("1 m³ = {1000|100|10} dm³.", "s. 145"),
+ ("1 m³ = {1000|100|10} dm³.", "s. 146"),
  ("Hacim basamaklarında aşağı inerken her basamakta {1000 ile çarparız|1000'e böleriz|10 ile çarparız}.", "s. 146"),
  ("Hacim birimleri büyükten küçüğe: m³, {dm³|mm³|cm³}, cm³, mm³.", "s. 146"),
  ("Ayrıtlar farklı birimlerle verilmişse önce {aynı birime çeviririz|en büyüğünü alırız|toplarız}, sonra çarparız.", "s. 146"),

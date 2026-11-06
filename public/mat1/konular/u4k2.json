@@ -184,7 +184,13 @@
     ],
     "dogru": 2,
     "ipucu": "Bilgi kartındaki simetrik şekillere bak.",
-    "aciklama": "Yarım daire ortasından katlanınca iki yarısı üst üste gelir. (s. 205)"
+    "aciklama": "Yarım daire ortasından katlanınca iki yarısı üst üste gelir. (s. 205)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi simetrik bir şekildir"
+    ]
    }
   },
   {
@@ -264,7 +270,13 @@
       "Eşkenar üçgen düzgün bir çokgendir.",
       "Düzgün çokgende simetri doğrusu sayısı kenar sayısı kadardır."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç simetri doğrusu vardır"
+    ]
    }
   },
   {
@@ -283,7 +295,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartındaki iki şekli hatırla.",
-    "aciklama": "Çeşitkenar üçgenin hiçbir kenarı eş değil; simetri doğrusu yoktur. (s. 205)"
+    "aciklama": "Çeşitkenar üçgenin hiçbir kenarı eş değil; simetri doğrusu yoktur. (s. 205)",
+    "tetik": [
+     "Hangisinin"
+    ],
+    "bolge": [
+     "simetri doğrusu yoktur"
+    ]
    }
   },
   {
@@ -329,7 +347,13 @@
     ],
     "dogru": 2,
     "ipucu": "Bilgi kartı: parçalar nasıl olmalıydı?",
-    "aciklama": "Simetrik olsalardı parçalar paralel olurdu. (s. 206)"
+    "aciklama": "Simetrik olsalardı parçalar paralel olurdu. (s. 206)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğrudur"
+    ]
    }
   },
   {
@@ -369,7 +393,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bütün kenarlar eşit kalır ama açılar dik değil.",
-    "aciklama": "Dört kenarı eş, açıları dik olmayan dörtgen: eşkenar dörtgen. (s. 208)"
+    "aciklama": "Dört kenarı eş, açıları dik olmayan dörtgen: eşkenar dörtgen. (s. 208)",
+    "tetik": [
+     "nasıl"
+    ],
+    "bolge": [
+     "nasıl bir dörtgen oluşur"
+    ]
    }
   },
   {
@@ -388,7 +418,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartı: simetri ne sağlar?",
-    "aciklama": "Simetri denge, verimlilik ve güvenlik sağlar. (s. 207)"
+    "aciklama": "Simetri denge, verimlilik ve güvenlik sağlar. (s. 207)",
+    "tetik": [
+     "neden"
+    ],
+    "bolge": [
+     "neden önemlidir"
+    ]
    }
   }
  ],
@@ -476,7 +512,13 @@
      "Köşegenleri de say.",
      "İkisini topla."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç simetri doğrusu vardır"
+   ]
   },
   {
    "soru": "Görseldeki hangi şekilde kesikli çizgi bir simetri doğrusudur?",
@@ -489,7 +531,13 @@
    "ipucu": "Her şekli kesikli çizgiden katladığını düşün.",
    "aciklama": "Yalnız ikizkenar üçgen (2) katlanınca iki yarısı üst üste gelir. (s. 205)",
    "svg": "<svg viewBox='0 0 330 140' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='15.0,100.0 69.0,100.0 95.0,34.0 41.0,34.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='55.0' y1='24.0' x2='55.0' y2='110.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='55.0' cy='128' r='10' fill='#f2c14e'/><text x='55.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><polygon points='133.0,104.0 197.0,104.0 165.0,24.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='165.0' y1='14.0' x2='165.0' y2='112.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='165.0' cy='128' r='10' fill='#f2c14e'/><text x='165.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='112' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><polygon points='233.0,50.0 317.0,50.0 317.0,94.0 233.0,94.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='223.0' y1='44.8' x2='327.0' y2='99.2' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='275.0' cy='128' r='10' fill='#f2c14e'/><text x='275.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='112' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></svg>",
-   "kavram": "Simetrik Şekil"
+   "kavram": "Simetrik Şekil",
+   "tetik": [
+    "hangi şekilde"
+   ],
+   "bolge": [
+    "hangi şekilde kesikli çizgi bir simetri doğrusudur"
+   ]
   },
   {
    "soru": "Hangisinin simetri doğrusu yoktur?",
@@ -501,7 +549,13 @@
    "dogru": 2,
    "ipucu": "Bilgi kartındaki simetrik olmayan iki şekli hatırla.",
    "aciklama": "Paralelkenar hiçbir doğrudan katlanınca üst üste gelmez. (s. 205)",
-   "kavram": "Simetri Doğrusu Olmayan Şekiller"
+   "kavram": "Simetri Doğrusu Olmayan Şekiller",
+   "tetik": [
+    "Hangisinin"
+   ],
+   "bolge": [
+    "simetri doğrusu yoktur"
+   ]
   },
   {
    "soru": "Düzgün beşgenin kaç simetri doğrusu vardır?",
@@ -514,7 +568,13 @@
      "Beşgenin kaç kenarı var?",
      "Düzgün çokgende simetri doğrusu sayısı kenar sayısına eşittir."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç simetri doğrusu vardır"
+   ]
   },
   {
    "soru": "Görseldeki eş üçgenler bir doğruya göre simetrik midir?",
@@ -527,7 +587,10 @@
    "ipucu": "Kesikli parçalar birbirine paralel mi?",
    "aciklama": "Parçalar paralel değil; üçgen döndürülmüş, simetrik değil. (s. 206)",
    "svg": "<svg viewBox='0 0 330 150' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='40.0,120.0 90.0,120.0 40.0,40.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='205.0,95.0 243.3,127.1 256.4,33.7' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='40.0' y1='120.0' x2='205.0' y2='95.0' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='6 4'/><line x1='90.0' y1='120.0' x2='243.3' y2='127.1' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='6 4'/><line x1='40.0' y1='40.0' x2='256.4' y2='33.7' stroke='#f5f6fa' stroke-width='1.6' stroke-linecap='round' stroke-dasharray='6 4'/><circle cx='40.0' cy='120.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='40.0' y='111.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='90.0' cy='120.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='90.0' y='111.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>B</text><circle cx='40.0' cy='40.0' r='4' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='40.0' y='31.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>C</text><circle cx='205.0' cy='95.0' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='205.0' y='86.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>A′</text><circle cx='243.3' cy='127.1' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='243.3' y='118.1' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>B′</text><circle cx='256.4' cy='33.7' r='4' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='256.4' y='24.7' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#ffa26b'>C′</text></svg>",
-   "kavram": "Gizli Simetri Doğrusu"
+   "kavram": "Gizli Simetri Doğrusu",
+   "bolge": [
+    "bir doğruya göre simetrik midir"
+   ]
   },
   {
    "soru": "Görseldeki eş şekiller arasındaki gizli simetri doğrusu hangi numaralı çizgidir?",
@@ -540,7 +603,13 @@
    "ipucu": "Karşılıklı köşelerin tam ortası hangi çizgide?",
    "aciklama": "Her köşe 2 numaralı çizgiye eşit uzaklıkta; simetri doğrusu 2. (s. 206)",
    "svg": "<svg viewBox='0 0 264 154' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='22.0' y1='22.0' x2='22.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='44.0' y1='22.0' x2='44.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='66.0' y1='22.0' x2='66.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='88.0' y1='22.0' x2='88.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='110.0' y1='22.0' x2='110.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='132.0' y1='22.0' x2='132.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='154.0' y1='22.0' x2='154.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='176.0' y1='22.0' x2='176.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='198.0' y1='22.0' x2='198.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='220.0' y1='22.0' x2='220.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='242.0' y1='22.0' x2='242.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='22.0' x2='242.0' y2='22.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='44.0' x2='242.0' y2='44.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='66.0' x2='242.0' y2='66.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='88.0' x2='242.0' y2='88.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='110.0' x2='242.0' y2='110.0' stroke='#2f3a63' stroke-width='1'/><line x1='22.0' y1='132.0' x2='242.0' y2='132.0' stroke='#2f3a63' stroke-width='1'/><polygon points='44.0,44.0 88.0,66.0 44.0,110.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><polygon points='220.0,44.0 176.0,66.0 220.0,110.0' fill='#ffa26b' fill-opacity='0.55' stroke='#ffa26b' stroke-width='2.2' stroke-linejoin='round'/><line x1='110.0' y1='16.0' x2='110.0' y2='138.0' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='6 4'/><circle cx='110.0' cy='19.8' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='110.0' y='23.8' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>1</text><line x1='132.0' y1='16.0' x2='132.0' y2='138.0' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='6 4'/><circle cx='132.0' cy='19.8' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='132.0' y='23.8' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>2</text><line x1='154.0' y1='16.0' x2='154.0' y2='138.0' stroke='#9aa3bf' stroke-width='2' stroke-dasharray='6 4'/><circle cx='154.0' cy='19.8' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='154.0' y='23.8' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='11' fill='#1b2340'>3</text></svg>",
-   "kavram": "Gizli Simetri Doğrusu"
+   "kavram": "Gizli Simetri Doğrusu",
+   "tetik": [
+    "hangi numaralı"
+   ],
+   "bolge": [
+    "gizli simetri doğrusu hangi numaralı çizgidir"
+   ]
   },
   {
    "soru": "İkizkenar dik üçgeni uzun kenarına göre yansıtırsak hangi şekil oluşur?",
@@ -552,7 +621,13 @@
    "dogru": 1,
    "ipucu": "Dört kenar eş, köşeler dik olur.",
    "aciklama": "Dört kenarın hepsi dik kenarlara eş olur ve dört açı da dik olur: kare. (s. 208)",
-   "kavram": "Kenara Göre Yansıtma"
+   "kavram": "Kenara Göre Yansıtma",
+   "tetik": [
+    "hangi şekil"
+   ],
+   "bolge": [
+    "hangi şekil oluşur"
+   ]
   },
   {
    "soru": "Uzun kenarı kısa kenarından büyük bir dikdörtgenin kaç simetri doğrusu vardır?",
@@ -565,7 +640,13 @@
      "Karşılıklı kenarların ortalarını birleştiren doğruları say.",
      "Köşegenden katlayınca köşeler üst üste gelir mi? Düşün."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç simetri doğrusu vardır"
+   ]
   },
   {
    "soru": "Kilim ve halı desenlerinde simetri neden kullanılır?",
@@ -577,7 +658,13 @@
    "dogru": 2,
    "ipucu": "Simetri ne sağlar?",
    "aciklama": "Sanatçılar görsel bütünlük oluşturmak için simetriyi kullanır. (s. 207)",
-   "kavram": "Hayatta Simetri"
+   "kavram": "Hayatta Simetri",
+   "tetik": [
+    "neden"
+   ],
+   "bolge": [
+    "neden kullanılır"
+   ]
   },
   {
    "soru": "İkizkenar üçgenin simetri doğrusu hangisidir?",
@@ -589,7 +676,218 @@
    "dogru": 0,
    "ipucu": "Katlayınca iki eş kenar üst üste gelmeli.",
    "aciklama": "Simetri doğrusu tepe köşesinden geçer ve tabanı dik ortalar. (s. 205)",
-   "kavram": "Simetrik Şekil"
+   "kavram": "Simetrik Şekil",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "simetri doğrusu hangisidir"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bir şekil bir doğruyla ikiye ayrıldığında iki parça birbirinin {görüntüsüyse|yarısı kadarsa|rengindeyse} şekil simetriktir.",
+   "s": "s. 205"
+  },
+  {
+   "c": "İkizkenar üçgenin {1|3|0} simetri doğrusu vardır.",
+   "s": "s. 205"
+  },
+  {
+   "c": "Düzgün beşgenin {5|1|10} simetri doğrusu vardır.",
+   "s": "s. 205"
+  },
+  {
+   "c": "Çeşitkenar üçgenin ve paralelkenarın simetri doğrusu {yoktur|ikidir|dörttür}.",
+   "s": "s. 205"
+  },
+  {
+   "c": "Gizli simetri doğrusunu bulmak için karşılıklı noktaları birleştiren parçalar {paralel|dik değil|farklı uzunlukta} olmalıdır.",
+   "s": "s. 206"
+  },
+  {
+   "c": "Bir üçgeni bir kenarına göre yansıtınca üçgen ile görüntüsü birleşir ve bir {dörtgen|daire|doğru} oluşur.",
+   "s": "s. 208"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Paralelkenarı köşegeninden kesince iki eş parça oluşur. Paralelkenar yine de neden simetrik değildir? Yaz.",
+   "tetik": [
+    "neden simetrik değildir"
+   ],
+   "okut": [
+    "paralelkenarın neden simetrik olmadığını yazmanı",
+    "paralelkenarın köşegenini çizmeni",
+    "simetrik bir şekil örneği vermeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Çünkü:",
+     "ornek": "Köşegenden katlayınca parçalar üst üste gelmez.",
+     "havuz": [
+      "Parçalar eş değildir.",
+      "Paralelkenarın köşegeni yoktur."
+     ],
+     "k": [
+      "üst üste",
+      "katla"
+     ]
+    },
+    {
+     "bas": "Yani:",
+     "ornek": "Simetri için eş olmak yetmez; parçalar birbirinin görüntüsü olmalı.",
+     "havuz": [
+      "Her eş parça simetriktir.",
+      "Simetri için renk aynı olmalı."
+     ],
+     "k": [
+      "yetmez",
+      "görüntü"
+     ]
+    }
+   ],
+   "kisa": "Katlayınca üst üste gelmez; eş olmak yetmez.",
+   "cevap": "Köşegenden katlayınca iki parça üst üste gelmez. Simetri için parçaların eş olması yetmez; birbirinin görüntüsü olmaları gerekir.",
+   "anahtarlar": [
+    {
+     "ad": "üst üste gelmez",
+     "k": [
+      "üst üste"
+     ]
+    },
+    {
+     "ad": "eş olmak yetmez",
+     "k": [
+      "yetmez",
+      "görüntü"
+     ]
+    }
+   ],
+   "sayfa": "s. 205",
+   "bolge": [
+    "neden simetrik değildir"
+   ]
+  },
+  {
+   "soru": "İki eş şeklin gizli bir simetri doğrusuna göre simetrik olup olmadığını nasıl kontrol edersin? Yaz.",
+   "tetik": [
+    "nasıl kontrol edersin"
+   ],
+   "okut": [
+    "iki eş şeklin simetrik olup olmadığını nasıl kontrol edeceğini yazmanı",
+    "iki şekli üst üste çizmeni",
+    "şekillerin kaç köşesi olduğunu saymanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Önce:",
+     "ornek": "Karşılıklı noktaları birleştiririm; parçalar paralel mi bakarım.",
+     "havuz": [
+      "Şekillerin alanını hesaplarım.",
+      "Şekilleri renklerine göre ayırırım."
+     ],
+     "k": [
+      "paralel"
+     ]
+    },
+    {
+     "bas": "Sonra:",
+     "ornek": "Parçaların orta noktaları aynı doğru üzerinde mi bakarım.",
+     "havuz": [
+      "En uzun parçayı silerim.",
+      "Parçaları toplarım."
+     ],
+     "k": [
+      "orta nokta",
+      "aynı doğru"
+     ]
+    }
+   ],
+   "kisa": "Parçalar paralel mi, orta noktalar tek doğruda mı?",
+   "cevap": "Karşılıklı noktaları birleştiririm. Bu parçalar birbirine paralel olmalı ve hepsinin orta noktası aynı doğru üzerinde olmalı; o doğru gizli simetri doğrusudur.",
+   "anahtarlar": [
+    {
+     "ad": "parçalar paralel",
+     "k": [
+      "paralel"
+     ]
+    },
+    {
+     "ad": "orta noktalar aynı doğruda",
+     "k": [
+      "orta nokta"
+     ]
+    }
+   ],
+   "sayfa": "s. 206",
+   "bolge": [
+    "nasıl kontrol edersin"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Öğretmen tahtaya bir ikizkenar üçgen, bir düzgün beşgen ve bir yarım daire çizdi.",
+    "İkizkenar üçgenin 1, düzgün beşgenin 5, yarım dairenin 1 simetri doğrusu olduğunu gösterdi.",
+    "Sonra her şeklin altına adını yazdı."
+   ],
+   "soru": "Metne göre en çok simetri doğrusu olan şekil hangisidir?",
+   "bolge": [
+    "en çok simetri doğrusu olan şekil hangisidir"
+   ],
+   "serit": "En çok simetri doğrusu olan şekil",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Düzgün beşgen",
+    "İkizkenar üçgen",
+    "Yarım daire"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Sayıları karşılaştır; soru en çoğu soruyor.",
+   "kanitIpucu": "Simetri doğrusu sayılarını veren cümleyi bul.",
+   "aciklama": "Düzgün beşgenin 5, ikizkenar üçgenin ve yarım dairenin 1'er simetri doğrusu vardır; en çok düzgün beşgen. Kitap bu sayıları etkinlikte öğrenciye buldurur (s. 205).",
+   "kavram": "Birden Çok Simetri Doğrusu"
+  },
+  {
+   "metin": [
+    "Can kâğıttan bir paralelkenar kesti.",
+    "Paralelkenarı bir köşegeninden kesip ikiye ayırdı.",
+    "İki parçanın eş olduğunu gördü.",
+    "Sonra parçaları köşegenden katlayarak üst üste getirmeye çalıştı.",
+    "Parçalar tam üst üste gelmedi.",
+    "Can paralelkenarın simetrik olup olmadığını düşündü."
+   ],
+   "soru": "Metne göre paralelkenarın simetrik olmadığını gösteren bilgi hangisidir?",
+   "bolge": [
+    "simetrik olmadığını gösteren bilgi hangisidir"
+   ],
+   "serit": "Simetrik olmadığını gösteren bilgi",
+   "kanit": [
+    4
+   ],
+   "secenekler": [
+    "Katlayınca parçalar üst üste gelmedi.",
+    "İki parça eş çıktı.",
+    "Can kâğıttan kesti."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Simetri için eş olmak yetmez; parçalar katlayınca çakışmalı.",
+   "kanitIpucu": "Katlayınca ne olduğunu söyleyen cümleyi bul.",
+   "aciklama": "Paralelkenarın parçaları eş olsa da katlayınca çakışmaz; simetri doğrusu yoktur (s. 205). Hikâye kitap dışı.",
+   "kavram": "Simetri Doğrusu Olmayan Şekiller"
   }
  ]
 }

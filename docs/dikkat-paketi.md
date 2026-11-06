@@ -37,8 +37,16 @@ Bir sohbette bir tema/ünite (8–10 konu) yapılabilir. İki tema birden bağla
 
 ## Derse göre notlar (tahmin; uygularken doğrulanmalı)
 - **Türkçe (uygulandı: tr1 u3k1–u3k8, 5 Kasım 2026; veri `araclar/dikkat/tr1/`):** her konuda zaten 3 kanıtlı metinli soru var → yeni `METINLI` yazılmadı; var olanlara `SERIT` yazıldı. Kanıtlı sorularda bölge `"TUM"` olamaz (motor bulma adımını atlarsa önce-soru-sonra-metin akışı ve şerit de atlanır). Olumsuz kökler (`olumsuzVurgu`) seri ödülünde de bulmalı kalır. Türkçe'de "ne demektir, ne zaman, ne katar, ne gösterir…" gibi soru kelimeleri `GEN` kalıbında yok → `ELLE`'ye yazıldı. "Hazır mısın?" ve "Sıra sende" soruları üreticinin kapsamında değil, bulmasız kalır. `OKUT` şıkları harfle başlamalı (motor ilk harfi büyütür; tırnak ya da parantezle başlayan şık küçük harfle görünür). 145 sorunun 135'i bulmalı, 10'u bulmasız.
-- **Test betiği** (`test_dikkat.py`) "Hazır mısın?", "Birlikte çözelim / Sıra sende" adımlarını ve konudaki kanıtlı test sorularını (Türkçe) da geçer.
+- **Test betiği** (`test_dikkat.py`) "Hazır mısın?", "Birlikte çözelim / Sıra sende" adımlarını, konudaki kanıtlı test sorularını (Türkçe) ve Matematik'in tuş takımı / sayı doğrusu sorularını da geçer (aynı metinli, görseli farklı sorularda şıklara göre doğru soruyu seçer).
 - **Sosyal, Din, Teknoloji:** doğrudan uygulanabilir; metinli sorular `METINLI` ile yazılır.
-- **Matematik:** sorular çoğunlukla kesir/üs işaretli ve "tuş takımı" türünde; "sorunun kalbi" yalnız düz metinli sözel problemlerde çalışır. Kısa Cevap yerine işlem adımı daha uygun olabilir.
+- **Matematik (uygulandı: mat1 Tema 2–4, u2k1–u4k4 = 20 konu, 6 Kasım 2026; veri `araclar/dikkat/mat1/tema2.py`, `tema3.py`, `tema4.py`, bölgeler `bolge.py`):**
+  - Tema 2–4 sorularında `[[ ]]`/`<b>` yok, sorunun kalbi her soruda çalışır. Tema 1 (kesir, üs, devirli sayı) paketsiz; uygulanacaksa önce sembollü sorular ele alınmalı.
+  - **Motor (Kemal onayı):** tuş takımı (`cevap`) ve sayı doğrusu (`nokta`) sorularında da cevap alanı sorunun kalbi bulununca açılır; yanlışta "Sorunun kalbine tekrar bak" (`wireMathQuestion`, yalnız `d.dikkat`). Paketsiz konular değişmez.
+  - Bölge = istenen ölçü + birimi ("yüzey alanı kaç cm²", "kaç dm yüksekliğe çıkar"); verilen sayılar hariç; "en az, kapaksız, yalnızca, bütün, önden/arkadan" dahil. Birim çevirme soruları ("3 L kaç mL?") `TUM`.
+  - Soru metinleri bölünmez boşluk (`\xa0`, `bosluk()`) içerir: `BOLGE` anahtarlarını `TASLAK=1` çıktısından kopyala.
+  - Elle bölgesi yazılmış soruda soru kelimesi (tetik) gerekmez ("Açıklığa sayı doğrusunda dokun.") — `uret.py` artık bunu hata saymaz.
+  - Kısa Cevap hesap değil kavram açıklatır ("kaplamak için neden yüzey alanı?", hata bulma). Metinli sorular yeni nesil problem metni; kanıt = istenen ölçüyü veren cümle; tuzak yalnız şık metindeki kelimeleri gerçekten içeriyorsa (yalın sayı şıkları tuzak değil, motor "metindeki kelimeler var" der).
+  - **`gen_mat1.py` konu dosyalarını baştan yazar ve sonunda `uret.py mat1`'i çalıştırır**; soru metni değiştiyse "elle bölge eksik" uyarısı çıkar → `bolge.py`'yi güncelle.
+  - 20 konu: sorunun kalbi 361 soru (321 kavram/test + 40 kısa cevap; 323 bulmalı, 38 bulmasız), 40 metinli soru, 136 Hatırla ve Tekrarla cümlesi.
 - **İngilizce:** kalıplar İngilizce soru kelimelerine (what, which, why…) göre genişletilmeli; ön soru şıkları Türkçe kalabilir.
 - **Rozet:** her dersin MEB konu-soru dağılım tablosundan `ders.json` → `yaziliRozet` yazılır.

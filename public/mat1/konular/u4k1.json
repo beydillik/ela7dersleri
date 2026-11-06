@@ -166,7 +166,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartı: katlayınca parçalar ne yapar?",
-    "aciklama": "Simetri doğrusundan katlanan şeklin iki parçası tam üst üste gelir. (s. 203)"
+    "aciklama": "Simetri doğrusundan katlanan şeklin iki parçası tam üst üste gelir. (s. 203)",
+    "tetik": [
+     "ne olur"
+    ],
+    "bolge": [
+     "katlarsak ne olur"
+    ]
    }
   },
   {
@@ -185,7 +191,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartındaki tanımı oku.",
-    "aciklama": "Bir noktanın doğruya göre simetriği, yansıma dönüşümü altındaki görüntüsüdür. (s. 204)"
+    "aciklama": "Bir noktanın doğruya göre simetriği, yansıma dönüşümü altındaki görüntüsüdür. (s. 204)",
+    "tetik": [
+     "ne denir"
+    ],
+    "bolge": [
+     "simetriğine ne denir"
+    ]
    }
   },
   {
@@ -266,7 +278,13 @@
       "C doğruya kaç kare uzakta? Soruda yazıyor.",
       "Görüntü öbür yanda aynı uzaklıkta olur."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "C′ doğrunun kaç kare sağında olur"
+    ]
    }
   },
   {
@@ -306,7 +324,13 @@
     "dogru": 0,
     "ipucu": "Eşit uzak mı? Aynı hizada mı? İkisine de bak.",
     "aciklama": "1: doğruya 3 kare uzakta ve A ile aynı hizada. 2 aşağı kaymış, 3 bir kare fazla uzakta.",
-    "svg": "<svg viewBox='0 0 266 178' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='254.0' y1='12.0' x2='254.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='254.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='254.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='254.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='254.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='254.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='254.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='254.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='166.0' x2='254.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='6.0' x2='122.0' y2='172.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='56.0' cy='78.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='56.0' y='68.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='188.0' cy='78.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='82.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>1</text><circle cx='188.0' cy='122.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='126.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>2</text><circle cx='210.0' cy='78.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='210.0' y='82.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>3</text></svg>"
+    "svg": "<svg viewBox='0 0 266 178' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='254.0' y1='12.0' x2='254.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='254.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='254.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='254.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='254.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='254.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='254.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='254.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='166.0' x2='254.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='6.0' x2='122.0' y2='172.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='56.0' cy='78.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='56.0' y='68.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>A</text><circle cx='188.0' cy='78.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='82.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>1</text><circle cx='188.0' cy='122.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='188.0' y='126.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>2</text><circle cx='210.0' cy='78.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='210.0' y='82.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>3</text></svg>",
+    "tetik": [
+     "hangi numaralı"
+    ],
+    "bolge": [
+     "A noktasının görüntüsü hangi numaralı noktadır"
+    ]
    }
   },
   {
@@ -394,7 +418,13 @@
     ],
     "dogru": 1,
     "ipucu": "Üçgenin kaç köşesi var?",
-    "aciklama": "Üçgenin 3 köşesi var; 3 köşenin görüntüsünü bulup birleştiririz. (s. 204)"
+    "aciklama": "Üçgenin 3 köşesi var; 3 köşenin görüntüsünü bulup birleştiririz. (s. 204)",
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "en az kaç noktanın görüntüsünü bulmalıyız"
+    ]
    }
   },
   {
@@ -415,7 +445,13 @@
       "Yansıma şeklin boyunu değiştirir mi?",
       "Eş şekillerde kenarlar aynı uzunluktadır."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "görüntüsünde bu kenar kaç cm olur"
+    ]
    }
   },
   {
@@ -434,7 +470,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartında asetatın nasıl kullanıldığını oku.",
-    "aciklama": "Asetat kâğıdı simetri doğrusunun öbür yanına çevrilir. (s. 204)"
+    "aciklama": "Asetat kâğıdı simetri doğrusunun öbür yanına çevrilir. (s. 204)",
+    "tetik": [
+     "nereye"
+    ],
+    "bolge": [
+     "kâğıdı nereye çeviririz"
+    ]
    }
   }
  ],
@@ -522,7 +564,13 @@
    "ipucu": "Her şekli kesikli çizgiden katladığını düşün.",
    "aciklama": "Yalnız ikizkenar üçgen (3) kesikli çizgiden katlanınca iki yarısı üst üste gelir. (s. 203)",
    "svg": "<svg viewBox='0 0 330 140' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='13.0,50.0 97.0,50.0 97.0,94.0 13.0,94.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='3.0' y1='44.8' x2='107.0' y2='99.2' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='55.0' cy='128' r='10' fill='#f2c14e'/><text x='55.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>1</text><polygon points='131.0,102.0 203.0,102.0 139.0,36.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='165.0' y1='18.0' x2='165.0' y2='112.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='165.0' cy='128' r='10' fill='#f2c14e'/><text x='165.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>2</text><line x1='110.0' y1='8' x2='110.0' y2='112' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/><polygon points='243.0,104.0 307.0,104.0 275.0,24.0' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/><line x1='275.0' y1='14.0' x2='275.0' y2='112.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='275.0' cy='128' r='10' fill='#f2c14e'/><text x='275.0' y='133.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='13' fill='#1b2340'>3</text><line x1='220.0' y1='8' x2='220.0' y2='112' stroke='#3a4570' stroke-width='1.5' stroke-dasharray='4 4'/></svg>",
-   "kavram": "Simetri Doğrusu"
+   "kavram": "Simetri Doğrusu",
+   "tetik": [
+    "hangi şekilde"
+   ],
+   "bolge": [
+    "hangi şekilde kesikli çizgi bir simetri doğrusudur"
+   ]
   },
   {
    "soru": "A′ noktası simetri doğrusunun kaç kare sağında olur?",
@@ -536,7 +584,13 @@
      "A'dan doğruya kadar kareleri say.",
      "Görüntü öbür yanda aynı uzaklıkta olur."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç kare sağında olur"
+   ]
   },
   {
    "soru": "Görselde B noktasının yatay doğruya göre görüntüsü hangi numaralı noktadır?",
@@ -549,7 +603,13 @@
    "ipucu": "Eşit uzak mı? Aynı dikey hizada mı?",
    "aciklama": "B doğrunun 2 kare üstünde; 1 numara 2 kare altında ve aynı hizada. (s. 205)",
    "svg": "<svg viewBox='0 0 222 178' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='210.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='210.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='210.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='210.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='210.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='210.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='144.0' x2='210.0' y2='144.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='166.0' x2='210.0' y2='166.0' stroke='#2f3a63' stroke-width='1'/><line x1='6.0' y1='78.0' x2='216.0' y2='78.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><circle cx='100.0' cy='34.0' r='4.5' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.5'/><text x='100.0' y='24.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#4fc3a1'>B</text><circle cx='100.0' cy='122.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='100.0' y='126.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>1</text><circle cx='100.0' cy='144.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='100.0' y='148.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>2</text><circle cx='144.0' cy='122.0' r='9' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='144.0' y='126.3' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#1b2340'>3</text></svg>",
-   "kavram": "Dik Ortalar"
+   "kavram": "Dik Ortalar",
+   "tetik": [
+    "hangi numaralı"
+   ],
+   "bolge": [
+    "B noktasının yatay doğruya göre görüntüsü hangi numaralı noktadır"
+   ]
   },
   {
    "soru": "Simetri doğrusu, bir nokta ile görüntüsünü birleştiren doğru parçasını nasıl keser?",
@@ -561,7 +621,13 @@
    "dogru": 2,
    "ipucu": "Dik ortalar ne demek?",
    "aciklama": "Simetri doğrusu bu parçayı dik ortalar. (s. 205)",
-   "kavram": "Dik Ortalar"
+   "kavram": "Dik Ortalar",
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "nasıl keser"
+   ]
   },
   {
    "soru": "Bir üçgenin kenarları 3 cm, 4 cm ve 5 cm. Görüntüsünün en uzun kenarı kaç cm olur?",
@@ -575,7 +641,13 @@
      "Yansıma kenarların uzunluğunu değiştirir mi?",
      "Üçgenin en uzun kenarını bul."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Görüntüsünün en uzun kenarı kaç cm olur"
+   ]
   },
   {
    "soru": "Bir dörtgenin görüntüsünü çizmek için önce ne yaparız?",
@@ -587,7 +659,10 @@
    "dogru": 0,
    "ipucu": "Önce köşeler, sonra …",
    "aciklama": "Önce köşelerin görüntüsünü bulur, sonra birleştiririz. (s. 204)",
-   "kavram": "Köşe Köşe Yansıt"
+   "kavram": "Köşe Köşe Yansıt",
+   "bolge": [
+    "önce ne yaparız"
+   ]
   },
   {
    "soru": "C noktası simetri doğrusunun tam üzerinde. C′ nerededir?",
@@ -599,7 +674,13 @@
    "dogru": 1,
    "ipucu": "C'nin doğruya uzaklığı kaç kare?",
    "aciklama": "C doğruya 0 kare uzakta; görüntüsü de 0 kare uzakta, yani C ile aynı yerde. (s. 205)",
-   "kavram": "Eşit Uzaklık"
+   "kavram": "Eşit Uzaklık",
+   "tetik": [
+    "nerededir"
+   ],
+   "bolge": [
+    "C′ nerededir"
+   ]
   },
   {
    "soru": "Çizimini kontrol etmek için simetri aynasını nereye koyarız?",
@@ -611,7 +692,13 @@
    "dogru": 2,
    "ipucu": "Ayna şekille görüntünün arasında durmalı.",
    "aciklama": "Simetri aynası simetri doğrusunun üzerine konur. (s. 204)",
-   "kavram": "Simetri Aynası ve Asetat"
+   "kavram": "Simetri Aynası ve Asetat",
+   "tetik": [
+    "nereye"
+   ],
+   "bolge": [
+    "simetri aynasını nereye koyarız"
+   ]
   },
   {
    "soru": "Ayna önündeki bir oyuncak aynaya 20 cm uzakta. Görüntüsü aynaya kaç cm uzakta görünür?",
@@ -625,7 +712,13 @@
      "Ayna simetri doğrusu gibidir.",
      "Görüntü aynanın öbür yanında, aynı uzaklıktadır."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Görüntüsü aynaya kaç cm uzakta görünür"
+   ]
   },
   {
    "soru": "Yeşil bayrağın görüntüsünde bayrak hangi yönü gösterir?",
@@ -638,7 +731,224 @@
    "ipucu": "Şekil ile görüntüsü eştir ama yönü …",
    "aciklama": "Yansımada şekil eş kalır, yönü ters döner. (s. 203, 205)",
    "kavram": "Şekil ve Görüntü Eştir",
-   "svg": "<svg viewBox='0 0 244 134' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='6.0' x2='122.0' y2='128.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='56.0' y1='34.0' x2='56.0' y2='100.0' stroke='#4fc3a1' stroke-width='3' stroke-linecap='round'/><polygon points='56.0,34.0 100.0,47.2 56.0,60.4' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/></svg>"
+   "svg": "<svg viewBox='0 0 244 134' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='12.0' y1='12.0' x2='12.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='34.0' y1='12.0' x2='34.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='56.0' y1='12.0' x2='56.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='78.0' y1='12.0' x2='78.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='100.0' y1='12.0' x2='100.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='12.0' x2='122.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='144.0' y1='12.0' x2='144.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='166.0' y1='12.0' x2='166.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='188.0' y1='12.0' x2='188.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='210.0' y1='12.0' x2='210.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='232.0' y1='12.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='12.0' x2='232.0' y2='12.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='34.0' x2='232.0' y2='34.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='56.0' x2='232.0' y2='56.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='78.0' x2='232.0' y2='78.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='100.0' x2='232.0' y2='100.0' stroke='#2f3a63' stroke-width='1'/><line x1='12.0' y1='122.0' x2='232.0' y2='122.0' stroke='#2f3a63' stroke-width='1'/><line x1='122.0' y1='6.0' x2='122.0' y2='128.0' stroke='#f2c14e' stroke-width='2.5' stroke-dasharray='6 4'/><line x1='56.0' y1='34.0' x2='56.0' y2='100.0' stroke='#4fc3a1' stroke-width='3' stroke-linecap='round'/><polygon points='56.0,34.0 100.0,47.2 56.0,60.4' fill='#4fc3a1' fill-opacity='0.55' stroke='#4fc3a1' stroke-width='2.2' stroke-linejoin='round'/></svg>",
+   "tetik": [
+    "hangi yönü"
+   ],
+   "bolge": [
+    "hangi yönü gösterir"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bir şekli katlayınca iki parçayı tam üst üste getiren doğruya {simetri doğrusu|orta nokta|açıortay} denir.",
+   "s": "s. 203"
+  },
+  {
+   "c": "Bir noktanın bir doğruya göre simetriği, o noktanın {yansıma dönüşümü|öteleme|dönme} altındaki görüntüsüdür.",
+   "s": "s. 204"
+  },
+  {
+   "c": "Bir nokta ile görüntüsü simetri doğrusuna {eşit|farklı|iki kat} uzaklıktadır.",
+   "s": "s. 205"
+  },
+  {
+   "c": "Simetri doğrusu, nokta ile görüntüsünü birleştiren doğru parçasını {dik ortalar|eğik keser|hiç kesmez}.",
+   "s": "s. 205"
+  },
+  {
+   "c": "Bir çokgenin görüntüsünü çizmek için önce {köşelerin|kenar uzunluklarının|açılarının} görüntüsünü buluruz.",
+   "s": "s. 204"
+  },
+  {
+   "c": "Bir şekil ile yansıma dönüşümü altındaki görüntüsü {eştir|farklı büyüklüktedir|hiç benzemez}.",
+   "s": "s. 205"
+  },
+  {
+   "c": "Çizdiğimiz görüntüyü {simetri aynası|hesap makinesi|iletki} ya da asetat kâğıdıyla kontrol ederiz.",
+   "s": "s. 204"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Arkadaşın bir üçgenin görüntüsünü çizdi ama bir köşenin görüntüsü simetri doğrusuna daha yakın çıktı. Hatayı nasıl bulur ve düzeltirsin?",
+   "tetik": [
+    "nasıl bulur ve düzeltirsin"
+   ],
+   "okut": [
+    "arkadaşının hatasını nasıl bulup düzelteceğini yazmanı",
+    "üçgenin görüntüsünü çizmeni",
+    "simetri doğrusunu tanımlamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Hatayı bulmak için:",
+     "ornek": "Köşe ile görüntüsünün doğruya uzaklığını kare kare sayarım.",
+     "havuz": [
+      "Üçgenin rengine bakarım.",
+      "Üçgenin alanını hesaplarım."
+     ],
+     "k": [
+      "uzaklı",
+      "say"
+     ]
+    },
+    {
+     "bas": "Düzeltmek için:",
+     "ornek": "Görüntüyü doğrunun öbür yanına aynı uzaklıkta yeniden koyarım.",
+     "havuz": [
+      "Üçgeni silip hiç çizmem.",
+      "Görüntüyü doğrunun üstüne koyarım."
+     ],
+     "k": [
+      "aynı uzaklı",
+      "eşit uzaklı"
+     ]
+    }
+   ],
+   "kisa": "Uzaklıkları say; görüntüyü aynı uzaklığa koy.",
+   "cevap": "Köşe ile görüntüsünün simetri doğrusuna uzaklığını kare kare sayarım; eşit değilse hata oradadır. Görüntüyü doğrunun öbür yanına aynı uzaklıkta yeniden koyar, köşeleri birleştiririm.",
+   "anahtarlar": [
+    {
+     "ad": "uzaklıkları say",
+     "k": [
+      "uzaklı"
+     ]
+    },
+    {
+     "ad": "aynı uzaklığa koy",
+     "k": [
+      "aynı uzaklı",
+      "eşit uzaklı"
+     ]
+    }
+   ],
+   "sayfa": "s. 205",
+   "bolge": [
+    "nasıl bulur ve düzeltirsin"
+   ]
+  },
+  {
+   "soru": "Bir şekil ile yansıma dönüşümü altındaki görüntüsünde neler aynı kalır, ne değişir? Yaz.",
+   "tetik": [
+    "neler aynı kalır, ne değişir"
+   ],
+   "okut": [
+    "şekil ile görüntüsünde neyin aynı kaldığını ve neyin değiştiğini yazmanı",
+    "şeklin görüntüsünü çizmeni",
+    "yalnız neyin değiştiğini söylemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Aynı kalan:",
+     "ornek": "Kenar uzunlukları ve açılar aynı kalır; şekiller eştir.",
+     "havuz": [
+      "Şeklin yeri aynı kalır.",
+      "Hiçbir şey aynı kalmaz."
+     ],
+     "k": [
+      "eş",
+      "kenar",
+      "açı"
+     ]
+    },
+    {
+     "bas": "Değişen:",
+     "ornek": "Yönü ters döner: sağdaki parça solda görünür.",
+     "havuz": [
+      "Şekil iki kat büyür.",
+      "Şeklin rengi değişir."
+     ],
+     "k": [
+      "ters",
+      "yön"
+     ]
+    }
+   ],
+   "kisa": "Kenarlar ve açılar aynı; yönü ters.",
+   "cevap": "Kenar uzunlukları ve açılar aynı kalır; şekil ile görüntüsü eştir. Yalnızca yönü ters döner: şeklin sağında olan parça görüntüde solda görünür.",
+   "anahtarlar": [
+    {
+     "ad": "kenar/açı aynı",
+     "k": [
+      "kenar",
+      "açı"
+     ]
+    },
+    {
+     "ad": "yön ters",
+     "k": [
+      "ters",
+      "yön"
+     ]
+    }
+   ],
+   "sayfa": "s. 205",
+   "bolge": [
+    "neler aynı kalır, ne değişir"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Kareli kâğıtta dikey bir simetri doğrusu çizildi.",
+    "A noktası doğrunun 4 kare solunda.",
+    "B noktası ise doğrunun 2 kare sağında."
+   ],
+   "soru": "Metne göre A noktasının görüntüsü doğrunun kaç kare sağında olur?",
+   "bolge": [
+    "A noktasının görüntüsü",
+    "kaç kare sağında olur"
+   ],
+   "serit": "A′ noktasının doğruya uzaklığı",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "4 kare",
+    "2 kare",
+    "8 kare"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Nokta ile görüntüsü simetri doğrusuna eşit uzaklıktadır. Soru A'yı soruyor.",
+   "kanitIpucu": "A noktasından söz eden cümleyi bul.",
+   "aciklama": "A doğrunun 4 kare solunda, görüntüsü 4 kare sağında olur. 2 kare B'nin uzaklığı; 8 kare A ile A′ arası (s. 205).",
+   "kavram": "Eşit Uzaklık"
+  },
+  {
+   "metin": [
+    "Elif aynanın önüne bir oyuncak araba koydu.",
+    "Araba aynaya 15 cm uzaklıkta duruyordu.",
+    "Arabanın uzunluğu 10 cm idi.",
+    "Elif aynada arabanın görüntüsünü gördü.",
+    "Görüntüdeki arabanın burnu ters tarafa bakıyordu.",
+    "Elif bunu defterine çizdi."
+   ],
+   "soru": "Metne göre arabanın görüntüsü aynaya kaç cm uzaklıkta görünür?",
+   "bolge": [
+    "görüntüsü aynaya kaç cm uzaklıkta görünür"
+   ],
+   "serit": "Görüntünün aynaya uzaklığı",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "15 cm",
+    "10 cm",
+    "30 cm"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Nesne ile görüntüsü aynaya eşit uzaklıktadır.",
+   "kanitIpucu": "Arabanın aynaya uzaklığını veren cümleyi bul.",
+   "aciklama": "Nesne ile görüntüsü aynaya eşit uzaklıktadır: 15 cm. 10 cm arabanın uzunluğu, 30 cm araba ile görüntüsü arası (s. 204–205). Hikâye kitap dışı.",
+   "kavram": "Yansıma Dönüşümü"
   }
  ]
 }
