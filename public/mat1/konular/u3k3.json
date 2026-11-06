@@ -130,7 +130,10 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartındaki ilk cümleye bak.",
-    "aciklama": "Anket sorusu örneklemdeki her kişiye tek tek sorulur. (s. 169)"
+    "aciklama": "Anket sorusu örneklemdeki her kişiye tek tek sorulur. (s. 169)",
+    "bolge": [
+     "Anket sorusu kime sorulur"
+    ]
    }
   },
   {
@@ -149,7 +152,13 @@
     ],
     "dogru": 2,
     "ipucu": "“Nasıl” bir yöntemi sorar.",
-    "aciklama": "Mezurayla ölçmek bir yöntemdir; pazartesi “ne zaman”, sınıf “nerede” sorusunun cevabıdır. (s. 169)"
+    "aciklama": "Mezurayla ölçmek bir yöntemdir; pazartesi “ne zaman”, sınıf “nerede” sorusunun cevabıdır. (s. 169)",
+    "tetik": [
+     "Nasıl"
+    ],
+    "bolge": [
+     "“Nasıl?” sorusunun cevabı hangisi olabilir"
+    ]
    }
   },
   {
@@ -168,7 +177,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartındaki uzantılara bak.",
-    "aciklama": "gov.tr uzantılı resmî siteler güvenilir kaynaklardır. (s. 169)"
+    "aciklama": "gov.tr uzantılı resmî siteler güvenilir kaynaklardır. (s. 169)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "hangisi daha güvenilir bir kaynaktır"
+    ]
    }
   },
   {
@@ -243,7 +258,13 @@
     ],
     "dogru": 2,
     "ipucu": "Kişiye ait bilgiyi bul.",
-    "aciklama": "Ev adresi kişiye aittir: kişisel veri. (s. 170)"
+    "aciklama": "Ev adresi kişiye aittir: kişisel veri. (s. 170)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi kişisel veridir"
+    ]
    }
   },
   {
@@ -262,7 +283,13 @@
     ],
     "dogru": 0,
     "ipucu": "İzinsiz paylaşılan bilgi kime aittir?",
-    "aciklama": "İzinsiz paylaşmak kişisel verilerin gizliliğini ihlal eder. (s. 170)"
+    "aciklama": "İzinsiz paylaşmak kişisel verilerin gizliliğini ihlal eder. (s. 170)",
+    "tetik": [
+     "neye yol"
+    ],
+    "bolge": [
+     "neye yol açar"
+    ]
    }
   },
   {
@@ -281,7 +308,13 @@
     ],
     "dogru": 1,
     "ipucu": "Kanunun adında “korunması” geçiyor.",
-    "aciklama": "KVKK özel hayatın gizliliğini korur. (s. 193)"
+    "aciklama": "KVKK özel hayatın gizliliğini korur. (s. 193)",
+    "tetik": [
+     "nedir"
+    ],
+    "bolge": [
+     "KVKK'nin amacı nedir"
+    ]
    }
   }
  ],
@@ -362,7 +395,13 @@
    "dogru": 1,
    "ipucu": "Tek bir kişiye sorulan soruyu bul.",
    "aciklama": "“Dün gece kaç saat uyudun?” her kişiye tek tek sorulur. (s. 169)",
-   "kavram": "Anket Sorusu"
+   "kavram": "Anket Sorusu",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi anket sorusudur"
+   ]
   },
   {
    "soru": "Veri toplama planında “Ne zaman?” sorusunun cevabı hangisi olabilir?",
@@ -374,7 +413,13 @@
    "dogru": 1,
    "ipucu": "Zaman bildiren cevabı bul.",
    "aciklama": "“Salı günü ilk derste” zamanı söyler. (s. 169)",
-   "kavram": "Veri Toplama Planı"
+   "kavram": "Veri Toplama Planı",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "“Ne zaman?” sorusunun cevabı hangisi olabilir"
+   ]
   },
   {
    "soru": "Hazır veri ararken hangisi en güvenilir kaynaktır?",
@@ -386,7 +431,13 @@
    "dogru": 0,
    "ipucu": "Resmî uzantılı adresi bul.",
    "aciklama": "edu.tr uzantılı resmî siteler güvenilir kaynaklardır. (s. 169)",
-   "kavram": "Güvenilir Kaynak"
+   "kavram": "Güvenilir Kaynak",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi en güvenilir kaynaktır"
+   ]
   },
   {
    "soru": "Hangisinin cevabı kişisel veri içerir?",
@@ -398,7 +449,13 @@
    "dogru": 1,
    "ipucu": "Kişiye ait bilgiyi soran soruyu bul.",
    "aciklama": "Ailenin gelir düzeyi kişisel veridir. (s. 170)",
-   "kavram": "Kişisel Veri"
+   "kavram": "Kişisel Veri",
+   "tetik": [
+    "Hangisinin"
+   ],
+   "bolge": [
+    "Hangisinin cevabı kişisel veri içerir"
+   ]
   },
   {
    "soru": "Bu sorulardan kaç tanesinin cevabı kişisel veri içerir? Ev adresin ne? · Başkentimiz neresi? · Boyun kaç metre? · Banka hesabında ne kadar para var?",
@@ -412,7 +469,13 @@
      "Kişiye ait bilgileri işaretle.",
      "İşaretlediklerini say."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç tanesinin cevabı kişisel veri içerir"
+   ]
   },
   {
    "soru": "Ege bir oyunu indirmek için izin metnini okumadan onayladı. Ne yapmalıydı?",
@@ -424,7 +487,10 @@
    "dogru": 1,
    "ipucu": "İzin metni neden okunur?",
    "aciklama": "İzin metni okunmadan onaylanmamalı; hangi bilgilerin istendiği görülmeli. (s. 193)",
-   "kavram": "İzin ve Gizlilik"
+   "kavram": "İzin ve Gizlilik",
+   "bolge": [
+    "Ne yapmalıydı"
+   ]
   },
   {
    "soru": "Türkiye'de kişisel verilerin korunmasıyla ilgili temel kanun hangisidir?",
@@ -436,7 +502,13 @@
    "dogru": 0,
    "ipucu": "Kısaltmanın açılımını düşün: Kişisel Verilerin …",
    "aciklama": "Kişisel Verilerin Korunması Kanunu: KVKK. (s. 193)",
-   "kavram": "KVKK"
+   "kavram": "KVKK",
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "temel kanun hangisidir"
+   ]
   },
   {
    "soru": "Kaynağı belirtilmemiş “Su İçmek Zararlı!” başlıklı bir haber gördün. Ne yaparsın?",
@@ -448,7 +520,10 @@
    "dogru": 2,
    "ipucu": "Kaynağı belli olmayan habere hemen inanılır mı?",
    "aciklama": "Kaynağı belirtilmeyen haberi güvenilir bir kaynaktan kontrol ederiz. (s. 192)",
-   "kavram": "Güvenilir Kaynak"
+   "kavram": "Güvenilir Kaynak",
+   "bolge": [
+    "Ne yaparsın"
+   ]
   },
   {
    "soru": "Sınıfta 28 öğrenci var. 4 öğrenci ankete katılmak istemedi. Kaç öğrencinin verisi toplanır?",
@@ -463,7 +538,13 @@
      "Kaç kişi katılmak istemedi?",
      "Toplamdan katılmayanları çıkar."
     ]
-   }
+   },
+   "tetik": [
+    "Kaç"
+   ],
+   "bolge": [
+    "Kaç öğrencinin verisi toplanır"
+   ]
   },
   {
    "soru": "Araştırma sorusu: “Sınıfımızdaki öğrencilerin boy uzunluklarının eğilimi nasıldır?” Hangisi uygun bir anket sorusudur?",
@@ -475,7 +556,228 @@
    "dogru": 2,
    "ipucu": "Ölçülecek şey nedir?",
    "aciklama": "Araştırma boyu soruyor; anket sorusu da her kişinin boyunu sormalı. (s. 169)",
-   "kavram": "Anket Sorusu"
+   "kavram": "Anket Sorusu",
+   "tetik": [
+    "nasıldır"
+   ],
+   "bolge": [
+    "Hangisi uygun bir anket sorusudur"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Örneklemdeki her kişiye tek tek sorulan soruya {anket sorusu|araştırma sorusu|evren} denir.",
+   "s": "s. 169"
+  },
+  {
+   "c": "Veri toplamadan önce verilerin nerede, ne zaman ve {nasıl|kimden saklanarak|neden} toplanacağı planlanır.",
+   "s": "s. 169"
+  },
+  {
+   "c": "Toplanacak veriler araştırma sorusunun {amacına|uzunluğuna|harflerine} uygun olmalıdır.",
+   "s": "s. 169"
+  },
+  {
+   "c": "Hazır verileri {güvenilir|en eski|en kısa} kaynaklardan alırız.",
+   "s": "s. 169"
+  },
+  {
+   "c": "Sağlık, kimlik, banka ve adres bilgileri {kişisel|kategorik|sürekli} veridir.",
+   "s": "s. 170"
+  },
+  {
+   "c": "Ankette toplanan veriler {izin alınmadan|isim yazılmadan|grafikle} başkalarıyla paylaşılmaz.",
+   "s": "s. 170"
+  },
+  {
+   "c": "Türkiye'de kişisel verileri koruyan temel kanun {KVKK'dir|TÜİK'tir|anket formudur}.",
+   "s": "s. 193"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Sınıfında bir anket yapacaksın. Arkadaşlarının kişisel verilerini korumak için nelere dikkat edersin? İki şey yaz.",
+   "tetik": [
+    "nelere dikkat edersin"
+   ],
+   "okut": [
+    "kişisel verileri korumak için dikkat edeceğin iki şeyi yazmanı",
+    "bir anket sorusu yazmanı",
+    "arkadaşlarının adlarını listelemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Birincisi:",
+     "ornek": "Verileri izin almadan kimseyle paylaşmam.",
+     "havuz": [
+      "Cevapları panoya asarım.",
+      "Herkesin adresini sorarım."
+     ],
+     "k": [
+      "izin"
+     ]
+    },
+    {
+     "bas": "İkincisi:",
+     "ornek": "Gerekmeyen kişisel soruları sormam.",
+     "havuz": [
+      "Her soruyu ayrıntılı sorarım.",
+      "İsimleri büyük harfle yazarım."
+     ],
+     "k": [
+      "gerekme",
+      "gereksiz"
+     ]
+    }
+   ],
+   "kisa": "Verileri izinsiz paylaşmam; gereksiz kişisel soru sormam.",
+   "cevap": "Toplanan verileri izin almadan kimseyle paylaşmam. Araştırma için gerekmeyen kişisel soruları sormam; mümkünse isim de istemem.",
+   "anahtarlar": [
+    {
+     "ad": "izinsiz paylaşmamak",
+     "k": [
+      "izin"
+     ]
+    },
+    {
+     "ad": "gereksiz soru sormamak",
+     "k": [
+      "gerekme",
+      "gereksiz"
+     ]
+    }
+   ],
+   "sayfa": "s. 170",
+   "bolge": [
+    "nelere dikkat edersin",
+    "İki şey yaz"
+   ]
+  },
+  {
+   "soru": "Araştırma sorusu ile anket sorusu arasındaki fark nedir? Bir örnekle yaz.",
+   "tetik": [
+    "fark nedir"
+   ],
+   "okut": [
+    "araştırma sorusu ile anket sorusunun farkını örnekle yazmanı",
+    "boyunu santimetre olarak söylemeni",
+    "yalnız bir araştırma sorusu yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Araştırma sorusu:",
+     "ornek": "Bütün grubun verisiyle cevaplanır: boy uzunluklarının eğilimi nasıldır?",
+     "havuz": [
+      "Tek bir kişiye sorulur.",
+      "Cevabı her zaman evettir."
+     ],
+     "k": [
+      "grub",
+      "eğilim"
+     ]
+    },
+    {
+     "bas": "Anket sorusu:",
+     "ornek": "Her kişiye tek tek sorulur: Boyun kaç santimetre?",
+     "havuz": [
+      "Kimseye sorulmaz.",
+      "Yalnız öğretmene sorulur."
+     ],
+     "k": [
+      "kişi",
+      "tek tek"
+     ]
+    }
+   ],
+   "kisa": "Araştırma sorusu grubun eğilimini, anket sorusu kişinin cevabını ister.",
+   "cevap": "Araştırma sorusu bütün grubun verisiyle cevaplanır: “Sınıfımızdaki öğrencilerin boy uzunluklarının eğilimi nasıldır?” Anket sorusu her kişiye tek tek sorulur: “Boyun kaç santimetre?”",
+   "anahtarlar": [
+    {
+     "ad": "araştırma: grup",
+     "k": [
+      "grub",
+      "eğilim"
+     ]
+    },
+    {
+     "ad": "anket: kişi",
+     "k": [
+      "kişi"
+     ]
+    }
+   ],
+   "sayfa": "s. 169",
+   "bolge": [
+    "fark nedir",
+    "Bir örnekle yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Buse sınıfta boy ve kilo anketi yaptı.",
+    "Sonra arkadaşlarının bilgilerini onlara sormadan sınıfın mesaj grubunda paylaştı.",
+    "Bazı arkadaşları buna çok üzüldü."
+   ],
+   "soru": "Metne göre Buse'nin yaptığı yanlış hangisidir?",
+   "bolge": [
+    "yaptığı yanlış hangisidir"
+   ],
+   "serit": "Buse'nin yanlışı",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Bilgileri izinsiz paylaştı.",
+    "Sınıfta anket yaptı.",
+    "Arkadaşları üzüldü."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Ankette toplanan veriler izin alınmadan paylaşılmaz.",
+   "kanitIpucu": "Buse'nin bilgilerle ne yaptığını anlatan cümleyi bul.",
+   "aciklama": "Buse kişisel verileri izinsiz paylaşarak gizliliği ihlal etti. Anket yapmak yanlış değildir (s. 170).",
+   "kavram": "İzin ve Gizlilik"
+  },
+  {
+   "metin": [
+    "Mustafa Bey orman yangınları hakkında bir sunum hazırlıyor.",
+    "İnternette yangın sayılarıyla ilgili iki kaynak buldu.",
+    "Birincisi kaynağı yazmayan bir sosyal medya paylaşımıydı.",
+    "İkincisi uzantısı gov.tr olan resmî bir siteydi.",
+    "Paylaşımdaki sayılar çok daha büyüktü ve dikkat çekiciydi.",
+    "Mustafa Bey sunumunu iki gün içinde bitirmek istiyor."
+   ],
+   "soru": "Metne göre Mustafa Bey verileri hangi kaynaktan almalıdır?",
+   "bolge": [
+    "hangi kaynaktan almalıdır"
+   ],
+   "serit": "Verilerin alınacağı güvenilir kaynak",
+   "kanit": [
+    3
+   ],
+   "secenekler": [
+    "Uzantısı gov.tr olan resmî siteden",
+    "Sayıları daha büyük olan paylaşımdan",
+    "Kaynağı yazmayan sosyal medya paylaşımından"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Hazır veriler güvenilir kaynaklardan alınır.",
+   "kanitIpucu": "Resmî siteden söz eden cümleyi bul.",
+   "aciklama": "gov.tr, edu.tr, org.tr gibi resmî adresler güvenilirdir; kaynağı belli olmayan paylaşım güvenilir değildir (s. 169).",
+   "kavram": "Güvenilir Kaynak"
   }
  ]
 }

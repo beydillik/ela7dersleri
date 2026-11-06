@@ -168,7 +168,13 @@
       "Sayı doğrusunda 2'yi bul.",
       "Üstündeki noktaları tek tek say."
      ]
-    }
+    },
+    "tetik": [
+     "kaç"
+    ],
+    "bolge": [
+     "kaç öğrencinin 2 kardeşi var"
+    ]
    }
   },
   {
@@ -187,7 +193,10 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartına bak: değerler birbirini tekrar ediyor mu?",
-    "aciklama": "Fiyatlar hep farklıdır ve sürekli veridir; yığılma olmaz, değişim de görünmez. (s. 172)"
+    "aciklama": "Fiyatlar hep farklıdır ve sürekli veridir; yığılma olmaz, değişim de görünmez. (s. 172)",
+    "bolge": [
+     "nokta grafiğine uygun mu"
+    ]
    }
   },
   {
@@ -256,7 +265,13 @@
     ],
     "dogru": 0,
     "ipucu": "Çizgi grafiği neyin değişimini gösteriyordu?",
-    "aciklama": "Çizgi grafiği zamana bağlı değişimi gösterir; yatay eksende zaman olur. (s. 172)"
+    "aciklama": "Çizgi grafiği zamana bağlı değişimi gösterir; yatay eksende zaman olur. (s. 172)",
+    "tetik": [
+     "ne olur"
+    ],
+    "bolge": [
+     "yatay eksende genellikle ne olur"
+    ]
    }
   },
   {
@@ -335,7 +350,10 @@
     ],
     "dogru": 2,
     "ipucu": "Bilgi kartında “düz” kelimesine bak.",
-    "aciklama": "Düz çizgi: iki zaman arasında değer aynı kalmış."
+    "aciklama": "Düz çizgi: iki zaman arasında değer aynı kalmış.",
+    "bolge": [
+     "düz gidiyorsa ne anlarız"
+    ]
    }
   },
   {
@@ -354,7 +372,13 @@
     ],
     "dogru": 1,
     "ipucu": "Zamanla değişen sürekli bir veri mi?",
-    "aciklama": "Sıcaklık zamanla değişen sürekli veridir: çizgi grafiği. (s. 172)"
+    "aciklama": "Sıcaklık zamanla değişen sürekli veridir: çizgi grafiği. (s. 172)",
+    "tetik": [
+     "hangi grafikle"
+    ],
+    "bolge": [
+     "hangi grafikle en iyi gösterilir"
+    ]
    }
   }
  ],
@@ -444,7 +468,13 @@
      "Her sayının üstündeki noktaları say.",
      "En çok nokta hangi sayının üstünde?"
     ]
-   }
+   },
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "en çok tekrar eden kardeş sayısı hangisi"
+   ]
   },
   {
    "soru": "Nokta grafiğine göre kaç öğrencinin 3 ya da daha fazla kardeşi var?",
@@ -460,7 +490,13 @@
      "3'ün üstündeki noktaları say.",
      "4'ün üstündekileri de say ve topla."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç öğrencinin 3 ya da daha fazla kardeşi var"
+   ]
   },
   {
    "soru": "Altın grafiğine göre 5 Kasım'da 1 gram altın kaç TL?",
@@ -475,7 +511,13 @@
      "Yatay eksende 05.11'i bul.",
      "Yukarı çık, noktayı bul ve değerini oku."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "5 Kasım'da 1 gram altın kaç TL"
+   ]
   },
   {
    "soru": "Altın grafiğine göre en düşük fiyat hangi gün?",
@@ -488,7 +530,13 @@
    "ipucu": "En alttaki noktayı bul.",
    "aciklama": "En alttaki nokta 28.10: 5 258 TL. (s. 172)",
    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 200</text><line x1='50' y1='126.0' x2='322' y2='126.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='130.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 300</text><line x1='50' y1='102.0' x2='322' y2='102.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='106.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 400</text><line x1='50' y1='78.0' x2='322' y2='78.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='82.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 500</text><line x1='50' y1='54.0' x2='322' y2='54.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='58.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 600</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 700</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>27.10</text><text x='117.2' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>28.10</text><text x='166.4' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>31.10</text><text x='215.6' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>05.11</text><text x='264.8' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10.11</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11.11</text><polyline points='68.0,96.7 117.2,136.1 166.4,90.5 215.6,109.2 264.8,72.2 314.0,48.2' fill='none' stroke='#f2c14e' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='96.7' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='87.72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 422</text><circle cx='117.2' cy='136.1' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='117.2' y='127.08000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 258</text><circle cx='166.4' cy='90.5' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='166.4' y='81.47999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 448</text><circle cx='215.6' cy='109.2' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='215.6' y='100.2' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 370</text><circle cx='264.8' cy='72.2' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='264.8' y='63.239999999999995' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 524</text><circle cx='314.0' cy='48.2' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='39.239999999999995' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 624</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Gram altın alış fiyatı (TL, yaklaşık)</text></svg>",
-   "kavram": "Çizgi Grafiği"
+   "kavram": "Çizgi Grafiği",
+   "tetik": [
+    "hangi gün"
+   ],
+   "bolge": [
+    "en düşük fiyat hangi gün"
+   ]
   },
   {
    "soru": "Altın grafiğinde 5 Kasım'dan 11 Kasım'a fiyat nasıl değişmiş?",
@@ -501,7 +549,13 @@
    "ipucu": "Son üç noktada çizgi nereye gidiyor?",
    "aciklama": "5 370 → 5 524 → 5 624: çizgi hep yukarı, fiyat artmış.",
    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 200</text><line x1='50' y1='126.0' x2='322' y2='126.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='130.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 300</text><line x1='50' y1='102.0' x2='322' y2='102.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='106.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 400</text><line x1='50' y1='78.0' x2='322' y2='78.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='82.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 500</text><line x1='50' y1='54.0' x2='322' y2='54.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='58.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 600</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5 700</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>27.10</text><text x='117.2' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>28.10</text><text x='166.4' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>31.10</text><text x='215.6' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>05.11</text><text x='264.8' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10.11</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11.11</text><polyline points='68.0,96.7 117.2,136.1 166.4,90.5 215.6,109.2 264.8,72.2 314.0,48.2' fill='none' stroke='#f2c14e' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='96.7' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='87.72' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 422</text><circle cx='117.2' cy='136.1' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='117.2' y='127.08000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 258</text><circle cx='166.4' cy='90.5' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='166.4' y='81.47999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 448</text><circle cx='215.6' cy='109.2' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='215.6' y='100.2' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 370</text><circle cx='264.8' cy='72.2' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='264.8' y='63.239999999999995' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 524</text><circle cx='314.0' cy='48.2' r='4.5' fill='#f2c14e' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='39.239999999999995' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#f2c14e'>5 624</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Gram altın alış fiyatı (TL, yaklaşık)</text></svg>",
-   "kavram": "Artış, Azalış, Sabit"
+   "kavram": "Artış, Azalış, Sabit",
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "fiyat nasıl değişmiş"
+   ]
   },
   {
    "soru": "Fidan grafiğine göre fidan 1. haftadan 6. haftaya kadar toplam kaç cm uzamış?",
@@ -517,7 +571,13 @@
      "6. haftadaki boyu oku.",
      "Büyükten küçüğü çıkar."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "toplam kaç cm uzamış"
+   ]
   },
   {
    "soru": "Fidan grafiğinde en az uzama hangi iki hafta arasında?",
@@ -530,7 +590,13 @@
    "ipucu": "En yatık (en az eğimli) parçayı bul ya da farkları hesapla.",
    "aciklama": "17 → 18: sadece 1 cm. En yatık parça burası.",
    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>8</text><line x1='50' y1='136.7' x2='322' y2='136.7' stroke='#3a4570' stroke-width='1'/><text x='44' y='140.66666666666666' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10</text><line x1='50' y1='123.3' x2='322' y2='123.3' stroke='#3a4570' stroke-width='1'/><text x='44' y='127.33333333333333' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>14</text><line x1='50' y1='96.7' x2='322' y2='96.7' stroke='#3a4570' stroke-width='1'/><text x='44' y='100.66666666666666' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>16</text><line x1='50' y1='83.3' x2='322' y2='83.3' stroke='#3a4570' stroke-width='1'/><text x='44' y='87.33333333333333' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>18</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>20</text><line x1='50' y1='56.7' x2='322' y2='56.7' stroke='#3a4570' stroke-width='1'/><text x='44' y='60.66666666666667' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>22</text><line x1='50' y1='43.3' x2='322' y2='43.3' stroke='#3a4570' stroke-width='1'/><text x='44' y='47.33333333333333' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>24</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>26</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>1. hf</text><text x='117.2' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>2. hf</text><text x='166.4' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>3. hf</text><text x='215.6' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>4. hf</text><text x='264.8' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>5. hf</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>6. hf</text><polyline points='68.0,136.7 117.2,123.3 166.4,90.0 215.6,83.3 264.8,63.3 314.0,50.0' fill='none' stroke='#8ce99a' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='136.7' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='127.66666666666666' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>10</text><circle cx='117.2' cy='123.3' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='117.2' y='114.33333333333333' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>12</text><circle cx='166.4' cy='90.0' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='166.4' y='81.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>17</text><circle cx='215.6' cy='83.3' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='215.6' y='74.33333333333333' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>18</text><circle cx='264.8' cy='63.3' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='264.8' y='54.33333333333333' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>21</text><circle cx='314.0' cy='50.0' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>23</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Fidanın boyu (cm)</text></svg>",
-   "kavram": "Artış, Azalış, Sabit"
+   "kavram": "Artış, Azalış, Sabit",
+   "tetik": [
+    "hangi iki"
+   ],
+   "bolge": [
+    "en az uzama hangi iki hafta arasında"
+   ]
   },
   {
    "soru": "Hangi veri seti için çizgi grafiği en uygundur?",
@@ -542,7 +608,13 @@
    "dogru": 2,
    "ipucu": "Hangisi zamanla değişen sürekli bir veri?",
    "aciklama": "Bebeğin boyu zamanla değişen sürekli veridir: çizgi grafiği. (s. 172)",
-   "kavram": "Hangi Grafik?"
+   "kavram": "Hangi Grafik?",
+   "tetik": [
+    "Hangi veri"
+   ],
+   "bolge": [
+    "Hangi veri seti için çizgi grafiği en uygundur"
+   ]
   },
   {
    "soru": "Melis günlük altın fiyatlarını nokta grafiğiyle göstermek istiyor. Hangisi doğrudur?",
@@ -554,7 +626,13 @@
    "dogru": 0,
    "ipucu": "Fiyatlar tekrar ediyor mu?",
    "aciklama": "Sürekli verilerde değerler hep farklıdır; değişimi çizgi grafiği gösterir. (s. 172)",
-   "kavram": "Nokta Grafiği Ne Zaman Uymaz?"
+   "kavram": "Nokta Grafiği Ne Zaman Uymaz?",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Nokta grafiğinde en az öğrencinin olduğu kardeş sayılarından küçük olanına dokun.",
@@ -573,7 +651,226 @@
      "En az nokta olan sayıları bul.",
      "Bu sayılardan küçük olanı seç."
     ]
-   }
+   },
+   "bolge": [
+    "en az öğrencinin olduğu",
+    "küçük olanına dokun"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Nokta grafiğinde veriler {yığılmalı|çizgiyle birleştirilmiş|sütunlu} şekilde gösterilir.",
+   "s": "s. 172"
+  },
+  {
+   "c": "Sürekli veriler {yığılmalı|sayısal|sıralı} şekilde gösterilmek zorunda değildir.",
+   "s": "s. 172"
+  },
+  {
+   "c": "Altın fiyatları için {nokta grafiği|çizgi grafiği|sayı doğrusu} uygun değildir; değerler hep farklıdır.",
+   "s": "s. 172"
+  },
+  {
+   "c": "Çizgi grafiğinde noktalar bir {çizgiyle|daireyle|sütunla} birleştirilir.",
+   "s": "s. 172"
+  },
+  {
+   "c": "Çizgi grafiği bir değişkenin {zamana|renge|kişiye} bağlı değişimini göstermede etkilidir.",
+   "s": "s. 172"
+  },
+  {
+   "c": "Çizgi yukarı çıkıyorsa {artış|azalış|değişim yok} demektir.",
+   "s": "s. 172"
+  },
+  {
+   "c": "Çizgi grafiğiyle {artış-azalış|renk|isim} gibi değişimler rahatça yorumlanır.",
+   "s": "s. 172"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Kardeş sayıları için nokta grafiği, bir haftalık hava sıcaklığı için çizgi grafiği seçiliyor. Neden? İkisini de yaz.",
+   "tetik": [
+    "Neden"
+   ],
+   "okut": [
+    "iki grafiğin neden seçildiğini ikisi için de yazmanı",
+    "kardeş sayılarının grafiğini çizmeni",
+    "en sıcak günü bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Kardeş sayısı için:",
+     "ornek": "Aynı değerler çok tekrar eder, noktalar üst üste yığılır.",
+     "havuz": [
+      "Değerler zamanla değişir.",
+      "Kardeş sayısı ondalık sayıdır."
+     ],
+     "k": [
+      "yığıl",
+      "tekrar"
+     ]
+    },
+    {
+     "bas": "Sıcaklık için:",
+     "ornek": "Günden güne nasıl değiştiğini görmek isteriz.",
+     "havuz": [
+      "Her gün aynı sıcaklık olur.",
+      "Sıcaklık sözcükle yazılır."
+     ],
+     "k": [
+      "değiş",
+      "zaman"
+     ]
+    }
+   ],
+   "kisa": "Kardeş: yığılır. Sıcaklık: zamanla değişim.",
+   "cevap": "Kardeş sayısında aynı değerler çok tekrar eder; nokta grafiğinde üst üste yığılır. Sıcaklığın günden güne nasıl değiştiğini görmek isteriz; zamanla değişimi çizgi grafiği gösterir.",
+   "anahtarlar": [
+    {
+     "ad": "nokta: yığılma",
+     "k": [
+      "yığıl",
+      "tekrar"
+     ]
+    },
+    {
+     "ad": "çizgi: zamanla değişim",
+     "k": [
+      "değiş"
+     ]
+    }
+   ],
+   "sayfa": "s. 172",
+   "bolge": [
+    "Neden",
+    "İkisini de yaz"
+   ]
+  },
+  {
+   "soru": "Çizgi grafiğinde iki gün arasındaki değişimin artış mı azalış mı olduğunu nasıl anlarsın? Değişimin büyüklüğünü nasıl bulursun?",
+   "tetik": [
+    "nasıl anlarsın",
+    "nasıl bulursun"
+   ],
+   "okut": [
+    "artışı ya da azalışı nasıl anladığını ve değişimin büyüklüğünü nasıl bulduğunu yazmanı",
+    "iki günün değerlerini toplamanı",
+    "yalnız en büyük değeri söylemeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Artış mı, azalış mı:",
+     "ornek": "Çizgi yukarı çıkıyorsa artış, aşağı iniyorsa azalıştır.",
+     "havuz": [
+      "Çizginin rengine bakarım.",
+      "Çizgi uzunsa artıştır."
+     ],
+     "k": [
+      "yukarı",
+      "aşağı"
+     ]
+    },
+    {
+     "bas": "Büyüklüğü:",
+     "ornek": "Büyük değerden küçük değeri çıkarırım.",
+     "havuz": [
+      "İki değeri toplarım.",
+      "Günleri sayarım."
+     ],
+     "k": [
+      "çıkar",
+      "fark"
+     ]
+    }
+   ],
+   "kisa": "Yukarı artış, aşağı azalış; büyükten küçüğü çıkar.",
+   "cevap": "Çizgi yukarı çıkıyorsa artış, aşağı iniyorsa azalıştır. Değişimin büyüklüğünü bulmak için iki değerin farkını alırım: büyükten küçüğü çıkarırım.",
+   "anahtarlar": [
+    {
+     "ad": "yukarı/aşağı",
+     "k": [
+      "yukarı",
+      "aşağı"
+     ]
+    },
+    {
+     "ad": "farkı al",
+     "k": [
+      "çıkar",
+      "fark"
+     ]
+    }
+   ],
+   "sayfa": "s. 172",
+   "bolge": [
+    "artış mı azalış mı olduğunu nasıl anlarsın",
+    "büyüklüğünü nasıl bulursun"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Öğretmen sınıftaki öğrencilerin kardeş sayılarını topladı.",
+    "Aynı kardeş sayısına sahip çok öğrenci vardı.",
+    "Sonuçları bir grafikte göstermek istiyor."
+   ],
+   "soru": "Metne göre öğretmen hangi grafiği seçmelidir?",
+   "bolge": [
+    "hangi grafiği seçmelidir"
+   ],
+   "serit": "Kardeş sayıları için uygun grafik",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Nokta grafiği",
+    "Çizgi grafiği",
+    "Hiç grafik çizmemeli"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Aynı değerler çok tekrar ediyorsa noktalar üst üste yığılır.",
+   "kanitIpucu": "Aynı sayıdan çok olduğunu söyleyen cümleyi bul.",
+   "aciklama": "Aynı değerler tekrar ettiği için nokta grafiğinde üst üste yığılır. Çizgi grafiği zamanla değişimi gösterir (s. 171–172).",
+   "kavram": "Nokta Grafiği"
+  },
+  {
+   "metin": [
+    "Ece bir hafta boyunca her sabah balkondaki termometreyi okudu.",
+    "Pazartesi 12 °C, salı 15 °C, çarşamba 9 °C ölçtü.",
+    "Perşembe 10 °C, cuma 14 °C ölçtü.",
+    "Sonuçları çizgi grafiğinde gösterdi.",
+    "Ece en soğuk günde kalın montunu giydi.",
+    "Hafta sonu ise hava güneşliydi."
+   ],
+   "soru": "Metne göre en büyük azalış hangi iki gün arasındadır?",
+   "bolge": [
+    "en büyük azalış hangi iki gün arasındadır"
+   ],
+   "serit": "En büyük azalış (çizginin en çok indiği yer)",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Salı ile çarşamba",
+    "Perşembe ile cuma",
+    "Pazartesi ile salı"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Azalış: sıcaklık düşüyor. Hangi iki gün arasında en çok düştü?",
+   "kanitIpucu": "Sıcaklığın düştüğü günleri veren cümleyi bul.",
+   "aciklama": "Salıdan çarşambaya 15 − 9 = 6 °C azaldı. Perşembe–cuma ve pazartesi–salı arasında ise artış var (s. 172). Değerler kitap dışı.",
+   "kavram": "Artış, Azalış, Sabit"
   }
  ]
 }

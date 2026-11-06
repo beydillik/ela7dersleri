@@ -173,7 +173,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartı: küçük inişlere değil, genel yöne bak.",
-    "aciklama": "Genel yön yukarı: eğilim artıştır."
+    "aciklama": "Genel yön yukarı: eğilim artıştır.",
+    "tetik": [
+     "nedir"
+    ],
+    "bolge": [
+     "Eğilimi nedir"
+    ]
    }
   },
   {
@@ -192,7 +198,13 @@
     ],
     "dogru": 2,
     "ipucu": "Tahmin eğilime uymalı ama kesin konuşmamalı.",
-    "aciklama": "Eğilim azalış; tahmin “azalmaya devam edebilir” olur. Tahmin kesin değildir. (s. 174–175)"
+    "aciklama": "Eğilim azalış; tahmin “azalmaya devam edebilir” olur. Tahmin kesin değildir. (s. 174–175)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "en uygun tahmin hangisi"
+    ]
    }
   },
   {
@@ -231,7 +243,13 @@
     ],
     "dogru": 2,
     "ipucu": "Bilgi kartındaki tanıma bak.",
-    "aciklama": "Referans değeri, ölçümü karşılaştırmak için önceden belirlenmiş değerdir. (s. 177)"
+    "aciklama": "Referans değeri, ölçümü karşılaştırmak için önceden belirlenmiş değerdir. (s. 177)",
+    "tetik": [
+     "ne için"
+    ],
+    "bolge": [
+     "ne için kullanılır"
+    ]
    }
   },
   {
@@ -310,7 +328,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartındaki ilk cümleye bak.",
-    "aciklama": "Temsil değeri, veri setini tek sayıyla özetler."
+    "aciklama": "Temsil değeri, veri setini tek sayıyla özetler.",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "hangisi doğrudur"
+    ]
    }
   },
   {
@@ -329,7 +353,10 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartındaki ilk cümleye bak.",
-    "aciklama": "Temsil değeri veri setinde yer almayabilir. (s. 176)"
+    "aciklama": "Temsil değeri veri setinde yer almayabilir. (s. 176)",
+    "bolge": [
+     "Bu bir sorun mu"
+    ]
    }
   },
   {
@@ -410,7 +437,13 @@
     ],
     "dogru": 1,
     "ipucu": "İki ölçüyü 13 ile karşılaştır.",
-    "aciklama": "11,97 ve 12,1, 13'ten küçük: iddia doğrulanmaz. (s. 176)"
+    "aciklama": "11,97 ve 12,1, 13'ten küçük: iddia doğrulanmaz. (s. 176)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğrudur"
+    ]
    }
   }
  ],
@@ -500,7 +533,13 @@
    "ipucu": "İlk ve son değere bak: 30,0 ve 22,4.",
    "aciklama": "Arada küçük bir çıkış olsa da genel yön aşağı: azalış. (s. 175)",
    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>20,0</text><line x1='50' y1='130.0' x2='322' y2='130.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='134.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>22,0</text><line x1='50' y1='110.0' x2='322' y2='110.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='114.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>24,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>26,0</text><line x1='50' y1='70.0' x2='322' y2='70.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='74.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>28,0</text><line x1='50' y1='50.0' x2='322' y2='50.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='54.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>30,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1970–80</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1981–91</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1992–02</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2003–13</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2014–24</text><polyline points='68.0,50.0 129.5,54.0 191.0,50.0 252.5,79.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='129.5' cy='54.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='44.999999999999986' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>29,6</text><circle cx='191.0' cy='50.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='41.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>30,0</text><circle cx='252.5' cy='79.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='69.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>27,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='117.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>22,4</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Ortalama kar örtülü gün sayısı</text></svg>",
-   "kavram": "Eğilim"
+   "kavram": "Eğilim",
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "genel eğilimi nedir"
+   ]
   },
   {
    "soru": "Kar grafiğine göre 2003–2013 ile 2014–2024 dönemleri arasında kar örtülü gün sayısı kaç gün azalmış?",
@@ -516,7 +555,13 @@
      "İki dönemin değerlerini oku: 27,1 ve 22,4.",
      "Büyükten küçüğü çıkar; virgülleri alt alta yaz."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç gün azalmış"
+   ]
   },
   {
    "soru": "Bir çiftçi son 10 yılda yağışın azaldığını gördü. Veri ötesini yorumlayarak hangi kararı verebilir?",
@@ -528,7 +573,13 @@
    "dogru": 1,
    "ipucu": "Yağış azalmaya devam ederse ne olur?",
    "aciklama": "Yağış azalırsa az su isteyen ürün ve damla sulama verimi artırır. (s. 174)",
-   "kavram": "Veri Ötesi: Tahmin"
+   "kavram": "Veri Ötesi: Tahmin",
+   "tetik": [
+    "hangi kararı"
+   ],
+   "bolge": [
+    "hangi kararı verebilir"
+   ]
   },
   {
    "soru": "9 aylık bir bebeğin baş çevresi 44,9 cm. Referans değerlerine göre (P25 = 44,9 · P50 = 45,8 · P75 = 46,6) hangisi doğrudur?",
@@ -541,7 +592,13 @@
    "ipucu": "44,9 hangi değere eşit?",
    "aciklama": "44,9 cm, 9 ayda P25 değerine eşit. (s. 177)",
    "svg": "<svg viewBox='0 0 330 200' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='174.0' x2='322' y2='174.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='178.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>32</text><line x1='50' y1='157.8' x2='322' y2='157.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='161.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>34</text><line x1='50' y1='141.5' x2='322' y2='141.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='145.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>36</text><line x1='50' y1='125.2' x2='322' y2='125.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='129.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>38</text><line x1='50' y1='109.0' x2='322' y2='109.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='113.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>40</text><line x1='50' y1='92.8' x2='322' y2='92.8' stroke='#3a4570' stroke-width='1'/><text x='44' y='96.75' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>42</text><line x1='50' y1='76.5' x2='322' y2='76.5' stroke='#3a4570' stroke-width='1'/><text x='44' y='80.5' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>44</text><line x1='50' y1='60.2' x2='322' y2='60.2' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.25' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>46</text><line x1='50' y1='44.0' x2='322' y2='44.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='48.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>48</text><line x1='50' y1='174' x2='322' y2='174' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='174' x2='50' y2='40' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>Doğum</text><text x='109.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>1 ay</text><text x='150.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2 ay</text><text x='191.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>3 ay</text><text x='232.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>6 ay</text><text x='273.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>9 ay</text><text x='314.0' y='190' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>12 ay</text><polyline points='68.0,157.8 109.0,133.4 150.0,119.6 191.0,107.4 232.0,87.1 273.0,69.2 314.0,59.4' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='157.8' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='133.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='119.6' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='107.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='87.1' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='69.2' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='59.4' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,150.4 109.0,126.9 150.0,113.1 191.0,100.1 232.0,79.7 273.0,61.9 314.0,52.1' fill='none' stroke='#8ce99a' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='150.4' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='126.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='113.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='100.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='79.7' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='61.9' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='52.1' r='4.5' fill='#8ce99a' stroke='#1b2340' stroke-width='1.5'/><polyline points='68.0,142.3 109.0,119.6 150.0,104.1 191.0,92.8 232.0,72.4 273.0,55.4 314.0,44.8' fill='none' stroke='#ffa26b' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='142.3' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='109.0' cy='119.6' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='150.0' cy='104.1' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='191.0' cy='92.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='232.0' cy='72.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='273.0' cy='55.4' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><circle cx='314.0' cy='44.8' r='4.5' fill='#ffa26b' stroke='#1b2340' stroke-width='1.5'/><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Erkek bebeklerin baş çevresi (cm)</text><rect x='60' y='23' width='14' height='5' rx='2' fill='#6fb3ff'/><text x='78' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>P25</text><rect x='101.2' y='23' width='14' height='5' rx='2' fill='#8ce99a'/><text x='119.2' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#8ce99a'>P50</text><rect x='142.4' y='23' width='14' height='5' rx='2' fill='#ffa26b'/><text x='160.4' y='29' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#ffa26b'>P75</text></svg>",
-   "kavram": "Referans Değeri"
+   "kavram": "Referans Değeri",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğrudur"
+   ]
   },
   {
    "soru": "Esra Bayrak'ın 5 atlayışı (5,17 · 5,27 · 5,38 · 5,37 · 5,36) için ortanca kaç metredir?",
@@ -556,7 +613,13 @@
      "Sayıları küçükten büyüğe sırala.",
      "5 sayı var: 3. sıradakini bul."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "ortanca kaç metredir"
+   ]
   },
   {
    "soru": "Bir sınıftaki öğrencilerin evcil hayvan sayıları: 0, 2, 1, 1, 3, 1, 0. Tepe değere sayı doğrusunda dokun.",
@@ -573,7 +636,10 @@
      "Her sayının kaç kez yazıldığını say.",
      "En çok yazılan sayıyı seç."
     ]
-   }
+   },
+   "bolge": [
+    "Tepe değere sayı doğrusunda dokun"
+   ]
   },
   {
    "soru": "Veriler: 4, 1, 3, 2, 0. Ortancaya sayı doğrusunda dokun.",
@@ -590,7 +656,10 @@
      "Sayıları küçükten büyüğe sırala.",
      "Ortadaki sayıyı bul."
     ]
-   }
+   },
+   "bolge": [
+    "Ortancaya sayı doğrusunda dokun"
+   ]
   },
   {
    "soru": "3, 4, 6, 7 verilerinin ortalaması 5'tir. Hangisi doğrudur?",
@@ -602,7 +671,13 @@
    "dogru": 2,
    "ipucu": "Temsil değeri veri setinde olmak zorunda mı?",
    "aciklama": "Temsil değeri veri setinde yer almayabilir: 5 bu veriyi temsil eder. (s. 176)",
-   "kavram": "Temsil Değeri Listede Olmayabilir"
+   "kavram": "Temsil Değeri Listede Olmayabilir",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Bir pil üreticisi “Pillerimiz en az 10 saat dayanır.” diyor. 5 pilin süreleri: 11, 12, 10, 13, 9 saat. Ortalama 11 saat. Hangisi doğrudur?",
@@ -614,7 +689,13 @@
    "dogru": 2,
    "ipucu": "Ortalamayı 10 ile karşılaştır. Bütün piller 10 saat dayanmış mı?",
    "aciklama": "11 > 10: ortalama destekliyor. Ama 9 saatlik pil “en az 10” iddiasına uymuyor. (s. 176)",
-   "kavram": "Veriyle İddiayı Sınama"
+   "kavram": "Veriyle İddiayı Sınama",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Mühendisin 10 deneme sürüşünden kaç tanesinde araba 13 km ya da daha fazla gitmiş? (11,7 · 10,0 · 13,0 · 10,5 · 12,5 · 10,5 · 9,0 · 13,5 · 14,0 · 15,0)",
@@ -628,7 +709,230 @@
      "13'e eşit ya da büyük olanları işaretle.",
      "İşaretlediklerini say."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç tanesinde araba 13 km ya da daha fazla gitmiş"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Çizginin genel yönüne {eğilim|açıklık|referans değeri} denir.",
+   "s": "s. 173"
+  },
+  {
+   "c": "Eğilime bakarak gelecekte ne olabileceğini {tahmin ederiz|kesin biliriz|hiç söyleyemeyiz}.",
+   "s": "s. 174"
+  },
+  {
+   "c": "Tahmin kesin değildir; “… {olabilir|kesinlikle olacak|olmuştur}” deriz.",
+   "s": "s. 174"
+  },
+  {
+   "c": "Bir ölçümü karşılaştırmak için önceden belirlenmiş değere {referans değeri|temsil değeri|açıklık} denir.",
+   "s": "s. 177"
+  },
+  {
+   "c": "Bir veri setini tek bir sayıyla özetleyen değere {temsil değeri|açıklık|örneklem} denir.",
+   "s": "s. 176"
+  },
+  {
+   "c": "Temsil değeri veri setindeki sayılardan biri {olmayabilir|olmak zorundadır|hiç olamaz}.",
+   "s": "s. 176"
+  },
+  {
+   "c": "Bir iddiayı sınamak için ortalama, ortanca ve tepe değeri {iddiayla karşılaştırırız|toplayıp atarız|gizleriz}.",
+   "s": "s. 176"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Kar örtülü gün sayısının azalma eğiliminde olması kayak okulu açacak birine ne söyler? Tahminin kesin olup olmadığını da yaz.",
+   "tetik": [
+    "ne söyler",
+    "kesin olup olmadığını"
+   ],
+   "okut": [
+    "azalma eğiliminin ne söylediğini ve tahminin kesin olup olmadığını yazmanı",
+    "kayak okulunun adını bulmanı",
+    "kar örtülü gün sayısını hesaplamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Ne söyler:",
+     "ornek": "Eğilim sürerse gelecekte kar daha az günde olabilir.",
+     "havuz": [
+      "Her yıl kar artacak.",
+      "Kar örtüsünün rengi değişecek."
+     ],
+     "k": [
+      "az",
+      "olabilir"
+     ]
+    },
+    {
+     "bas": "Kesin mi:",
+     "ornek": "Tahmin kesin değildir; eğilim değişebilir.",
+     "havuz": [
+      "Tahmin her zaman kesindir.",
+      "Grafik hiç yanılmaz."
+     ],
+     "k": [
+      "kesin değil",
+      "değişebilir"
+     ]
+    }
+   ],
+   "kisa": "Kar daha az olabilir; tahmin kesin değil.",
+   "cevap": "Eğilim sürerse gelecekte kar örtülü gün sayısı daha az olabilir; bu kayak okulu için risk demektir. Ama tahmin kesin değildir, eğilim değişebilir.",
+   "anahtarlar": [
+    {
+     "ad": "kar azalabilir",
+     "k": [
+      "az"
+     ]
+    },
+    {
+     "ad": "kesin değil",
+     "k": [
+      "kesin değil",
+      "değişebilir"
+     ]
+    }
+   ],
+   "sayfa": "s. 174",
+   "bolge": [
+    "ne söyler",
+    "kesin olup olmadığını da yaz"
+   ]
+  },
+  {
+   "soru": "Bir mühendisin “Araba 1 litre benzinle en az 13 km gider.” iddiasını nasıl sınarsın? Yaz.",
+   "tetik": [
+    "nasıl sınarsın"
+   ],
+   "okut": [
+    "mühendisin iddiasını nasıl sınayacağını yazmanı",
+    "arabanın kaç km gittiğini hesaplamanı",
+    "benzinin fiyatını bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Önce:",
+     "ornek": "Deneme sürüşleri yapıp veri toplarım.",
+     "havuz": [
+      "Mühendise inanırım.",
+      "Arabanın rengine bakarım."
+     ],
+     "k": [
+      "veri",
+      "deneme"
+     ]
+    },
+    {
+     "bas": "Sonra:",
+     "ornek": "Ortalama, ortanca ve tepe değeri bulup 13 ile karşılaştırırım.",
+     "havuz": [
+      "En büyük değeri seçip bitiririm.",
+      "Sayıları toplayıp atarım."
+     ],
+     "k": [
+      "ortalama",
+      "karşılaştır"
+     ]
+    }
+   ],
+   "kisa": "Veri topla; ortalama, ortanca, tepe değeri 13 ile karşılaştır.",
+   "cevap": "Önce deneme sürüşleri yapıp veri toplarım. Sonra ortalama, ortanca ve tepe değeri hesaplar, bunları iddiadaki 13 km ile karşılaştırırım.",
+   "anahtarlar": [
+    {
+     "ad": "veri topla",
+     "k": [
+      "veri",
+      "deneme"
+     ]
+    },
+    {
+     "ad": "ölçüleri iddiayla karşılaştır",
+     "k": [
+      "ortalama",
+      "karşılaştır"
+     ]
+    }
+   ],
+   "sayfa": "s. 176",
+   "bolge": [
+    "nasıl sınarsın"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Türkiye'de ortalama kar örtülü gün sayısı 1970–1980 arasında 30,0 gündü.",
+    "Sonraki on yıllarda arada küçük bir artış olsa da sayı genel olarak azaldı.",
+    "2014–2024 arasında 22,4 güne indi."
+   ],
+   "soru": "Metne göre kar örtülü gün sayısının eğilimi nasıldır?",
+   "bolge": [
+    "eğilimi nasıldır"
+   ],
+   "serit": "Genel yön (eğilim)",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Azalma eğilimindedir.",
+    "Küçük bir artış olduğu için artma eğilimindedir.",
+    "Hiç değişmemiştir."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1
+   ],
+   "ipucu": "Eğilim çizginin genel yönüdür; küçük iniş çıkışlara takılma.",
+   "kanitIpucu": "“Genel olarak” ifadesinin geçtiği cümleyi bul.",
+   "aciklama": "Arada küçük bir artış olsa da genel yön azalıştır: azalma eğilimi (s. 173).",
+   "kavram": "Eğilim"
+  },
+  {
+   "metin": [
+    "Bir mühendis, yeni motorla arabanın 1 litre benzinle en az 13 km gideceğini iddia ediyor.",
+    "Deneme için 10 sürüş yapıldı.",
+    "Sürüşlerin ortalaması 12,1 km çıktı.",
+    "Ortanca 12 km, en uzun sürüş ise 13,4 km oldu.",
+    "Arabanın rengi beyaz ve deposu 50 litre.",
+    "Mühendis sonuçları bir rapora yazdı."
+   ],
+   "soru": "Metne göre verilere bakınca mühendisin iddiası için ne söylenebilir?",
+   "bolge": [
+    "mühendisin iddiası için ne söylenebilir"
+   ],
+   "serit": "İddia ile veriler uyuşuyor mu?",
+   "kanit": [
+    2,
+    3
+   ],
+   "secenekler": [
+    "Ortalama ve ortanca 13 km'den az; iddia desteklenmez.",
+    "En uzun sürüş 13,4 km olduğu için iddia doğrudur.",
+    "Depo 50 litre olduğu için iddia doğrudur."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "İddiayı ortalama ve ortancayla karşılaştır; tek bir sürüşe bakma.",
+   "kanitIpucu": "Ortalama ve ortancayı veren cümleleri bul.",
+   "aciklama": "Ortalama 12,1 ve ortanca 12 km; ikisi de 13'ten az. Tek bir sürüş iddiayı doğrulamaz (s. 176). Sayılar kitap dışı.",
+   "kavram": "Veriyle İddiayı Sınama"
   }
  ]
 }

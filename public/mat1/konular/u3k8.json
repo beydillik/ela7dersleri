@@ -144,7 +144,13 @@
     ],
     "dogru": 2,
     "ipucu": "Basketbol takımındakiler en çok hangi sporu sever?",
-    "aciklama": "Basketbolcular basketbolu seçer; örneklem okulu temsil etmez. (s. 190)"
+    "aciklama": "Basketbolcular basketbolu seçer; örneklem okulu temsil etmez. (s. 190)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğrudur"
+    ]
    }
   },
   {
@@ -202,7 +208,13 @@
     ],
     "dogru": 0,
     "ipucu": "Sayılara tek tek bak: en küçüğü hangisi?",
-    "aciklama": "İngilizce 4 kişiyle en az sevilen derstir. (s. 190)"
+    "aciklama": "İngilizce 4 kişiyle en az sevilen derstir. (s. 190)",
+    "tetik": [
+     "hangi yorum"
+    ],
+    "bolge": [
+     "hangi yorum verilerle uyuşur"
+    ]
    }
   },
   {
@@ -241,7 +253,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartı: Arada düşüş varsa “sürekli” denir mi?",
-    "aciklama": "6. gün düşüş var: “sürekli” denmez, “artma eğiliminde” denir."
+    "aciklama": "6. gün düşüş var: “sürekli” denmez, “artma eğiliminde” denir.",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "hangisi doğrudur"
+    ]
    }
   },
   {
@@ -260,7 +278,13 @@
     ],
     "dogru": 2,
     "ipucu": "Bütün grafiğe bak: ilk ve son değer?",
-    "aciklama": "2020–2021 arasında küçük bir artış var ama 2016–2024 boyunca eğilim azalıştır. (s. 191)"
+    "aciklama": "2020–2021 arasında küçük bir artış var ama 2016–2024 boyunca eğilim azalıştır. (s. 191)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğrudur"
+    ]
    }
   },
   {
@@ -279,7 +303,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartı: Bir yerin verisi başka yer için geçerli mi?",
-    "aciklama": "Ankara'nın verisi İzmir için kanıt değildir; İzmir'in verisine bakılmalıdır. (s. 195)"
+    "aciklama": "Ankara'nın verisi İzmir için kanıt değildir; İzmir'in verisine bakılmalıdır. (s. 195)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "hangisi doğrudur"
+    ]
    }
   },
   {
@@ -298,7 +328,13 @@
     ],
     "dogru": 1,
     "ipucu": "Hangisi bilgilerini başkalarından korur?",
-    "aciklama": "Güçlü şifre, hesabını ve kişisel verilerini korur. (s. 196)"
+    "aciklama": "Güçlü şifre, hesabını ve kişisel verilerini korur. (s. 196)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "doğru bir davranıştır"
+    ]
    }
   }
  ],
@@ -384,7 +420,13 @@
    "dogru": 0,
    "ipucu": "Bir okul bütün Türkiye'yi temsil eder mi?",
    "aciklama": "Tek okul Türkiye'deki bütün öğrencileri temsil etmeyebilir. (s. 190)",
-   "kavram": "Örneklemden Genellemek"
+   "kavram": "Örneklemden Genellemek",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Fulya'nın grafiğine göre fen bilimlerini seven kaç kişi, matematiği sevenlerden fazladır?",
@@ -399,7 +441,13 @@
      "Mat sütununu oku.",
      "Büyükten küçüğü çıkar."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç kişi, matematiği sevenlerden fazladır"
+   ]
   },
   {
    "soru": "Fulya'nın grafiğinde en az sevilen dersi seçen öğrenci sayısına sayı doğrusunda dokun.",
@@ -418,7 +466,10 @@
      "Ucundaki sayıyı oku.",
      "O sayıya dokun."
     ]
-   }
+   },
+   "bolge": [
+    "en az sevilen dersi seçen öğrenci sayısına"
+   ]
   },
   {
    "soru": "Fulya “Sosyal bilgileri sevenler Türkçeyi sevenlerden fazla.” dedi. Türkçeyi seven öğrenci sayısına sayı doğrusunda dokun.",
@@ -437,7 +488,10 @@
      "Ucundaki sayıyı oku.",
      "O sayıya dokun."
     ]
-   }
+   },
+   "bolge": [
+    "Türkçeyi seven öğrenci sayısına"
+   ]
   },
   {
    "soru": "Ali'nin günlük adım sayısı 6 gün art arda artıp 7. gün biraz düşmüş. Hangisi en doğru yorumdur?",
@@ -449,7 +503,13 @@
    "dogru": 1,
    "ipucu": "Arada düşüş varsa “sürekli” denir mi?",
    "aciklama": "7. gün düşüş var; doğru yorum “artma eğiliminde”.",
-   "kavram": "Eğilimi Doğru Söylemek"
+   "kavram": "Eğilimi Doğru Söylemek",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi en doğru yorumdur"
+   ]
   },
   {
    "soru": "Göl grafiğine göre hangisi doğrudur?",
@@ -462,7 +522,13 @@
    "ipucu": "Her yıla tek tek bak: hiç artış var mı?",
    "aciklama": "2018 ve 2021'de küçük artışlar var; genel eğilim azalış.",
    "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>9,0</text><line x1='50' y1='120.0' x2='322' y2='120.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='124.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11,0</text><line x1='50' y1='60.0' x2='322' y2='60.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2016</text><text x='98.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2018</text><text x='160.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2019</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2020</text><text x='221.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2021</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2022</text><text x='283.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2023</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2024</text><polyline points='68.0,60.0 98.8,72.0 129.5,66.0 160.2,87.0 191.0,93.0 221.8,84.0 252.5,108.0 283.2,117.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='60.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='51.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>12,0</text><circle cx='98.8' cy='72.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='98.75' y='63.000000000000014' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,6</text><circle cx='129.5' cy='66.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='56.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,8</text><circle cx='160.2' cy='87.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.25' y='78.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,1</text><circle cx='191.0' cy='93.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='83.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,9</text><circle cx='221.8' cy='84.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='221.75' y='75.00000000000003' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,2</text><circle cx='252.5' cy='108.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='98.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,4</text><circle cx='283.2' cy='117.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='283.25' y='108.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='116.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>9,8</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Bir gölün su seviyesi (m) · örnek</text></svg>",
-   "kavram": "Eğilimi Doğru Söylemek"
+   "kavram": "Eğilimi Doğru Söylemek",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğrudur"
+   ]
   },
   {
    "soru": "Göl grafiğine göre 2016'dan 2024'e su seviyesi kaç metre azalmıştır?",
@@ -479,7 +545,13 @@
      "2024'teki değeri oku.",
      "Büyükten küçüğü çıkar; virgülleri alt alta yaz."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç metre azalmıştır"
+   ]
   },
   {
    "soru": "Bir sporcunun 10 yıllık sonuçları genel olarak iyileşiyor; yalnızca bir yıl kötüleşmiş. O tek yıla bakıp “Sporcu kötüleşiyor.” demek için hangisi doğrudur?",
@@ -491,7 +563,13 @@
    "dogru": 1,
    "ipucu": "Bütün grafiğe mi, bir parçasına mı bakılmalı?",
    "aciklama": "Tek yıldan genel yorum yapılmaz; 10 yılın eğilimi iyileşme. (s. 191)",
-   "kavram": "Kısa Aralıkla Genelleme"
+   "kavram": "Kısa Aralıkla Genelleme",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğrudur"
+   ]
   },
   {
    "soru": "Burdur Gölü'nün verilerine bakan Sevgi “Eğirdir Gölü'nde de aynısı oluyor.” diyor. Hangisi doğrudur?",
@@ -503,7 +581,13 @@
    "dogru": 2,
    "ipucu": "Eğirdir Gölü'nün verisi toplandı mı?",
    "aciklama": "Bir gölün verisi başka göl için kanıt değildir. (s. 195)",
-   "kavram": "Başka Yere Genelleme"
+   "kavram": "Başka Yere Genelleme",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
   },
   {
    "soru": "Oğuz'un anketinde bazı öğrenciler hangi uygulamaları kullandığını söylemek istemedi. Oğuz ne yapmalı?",
@@ -515,7 +599,225 @@
    "dogru": 0,
    "ipucu": "Katılım zorunlu mu, gönüllü mü?",
    "aciklama": "Katılım gönüllüdür; isimsiz anket mahremiyeti korur. (s. 196)",
-   "kavram": "Gönüllülük ve Mahremiyet"
+   "kavram": "Gönüllülük ve Mahremiyet",
+   "tetik": [
+    "hangi uygulamaları"
+   ],
+   "bolge": [
+    "Oğuz ne yapmalı"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Örneklemden elde edilen sonuç, örneklem evreni {temsil ediyorsa|temsil etmiyorsa|çok küçükse} evrene genellenebilir.",
+   "s": "s. 190"
+  },
+  {
+   "c": "Yalnızca bir sınıfa sorup {bütün okul|o sınıf|o öğrenci} hakkında sonuç çıkarılamaz.",
+   "s": "s. 190"
+  },
+  {
+   "c": "Bir yorumu söylemeden önce {verilere|başlığa|renklere} tekrar bakarız.",
+   "s": "s. 190"
+  },
+  {
+   "c": "Çizgide arada çıkışlar varsa “sürekli azalıyor” yerine “{azalma eğiliminde|hep artıyor|sabit}” deriz.",
+   "s": "s. 191"
+  },
+  {
+   "c": "Grafiğin yalnızca {küçük bir parçasına|bütününe|başlığına} bakarak genel yorum yapılmaz.",
+   "s": "s. 191"
+  },
+  {
+   "c": "Burdur Gölü'nün verileri {Eğirdir Gölü|Burdur Gölü|aynı yıllar} için kanıt sayılmaz.",
+   "s": "s. 195"
+  },
+  {
+   "c": "Anket yaparken katılım {gönüllü|zorunlu|ücretli} olmalıdır.",
+   "s": "s. 196"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Fulya en sevilen dersi yalnızca 7/A'ya sordu. Okulda en çok sevilen dersi bulmak için ne değiştirmeli? Nedenini yaz.",
+   "tetik": [
+    "ne değiştirmeli"
+   ],
+   "okut": [
+    "Fulya'nın neyi değiştirmesi gerektiğini ve nedenini yazmanı",
+    "Fulya'nın sınıfında en sevilen dersi söylemeni",
+    "yeni bir araştırma konusu bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Değiştirmeli:",
+     "ornek": "Her sınıftan öğrencilere sormalı.",
+     "havuz": [
+      "Yalnız 7/A'ya iki kez sormalı.",
+      "Öğretmenlere sormalı."
+     ],
+     "k": [
+      "her sınıf",
+      "bütün sınıf"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "Tek sınıf bütün okulu temsil etmez.",
+     "havuz": [
+      "7/A çok kalabalıktır.",
+      "Dersler çok zordur."
+     ],
+     "k": [
+      "temsil"
+     ]
+    }
+   ],
+   "kisa": "Her sınıftan sormalı; tek sınıf okulu temsil etmez.",
+   "cevap": "Her sınıftan öğrencilerin bulunduğu bir örneklem seçmeli. Çünkü yalnızca 7/A bütün okulu temsil etmez; sonuç okula genellenemez.",
+   "anahtarlar": [
+    {
+     "ad": "her sınıftan sormak",
+     "k": [
+      "her sınıf"
+     ]
+    },
+    {
+     "ad": "temsil etmez",
+     "k": [
+      "temsil"
+     ]
+    }
+   ],
+   "sayfa": "s. 190",
+   "bolge": [
+    "ne değiştirmeli",
+    "Nedenini yaz"
+   ]
+  },
+  {
+   "soru": "Grafikte arada küçük çıkışlar olan bir çizgi için “sürekli azalıyor” demek neden doğru değildir? Doğrusunu yaz.",
+   "tetik": [
+    "neden doğru değildir"
+   ],
+   "okut": [
+    "çizgi için “sürekli azalıyor” demenin neden yanlış olduğunu ve doğrusunu yazmanı",
+    "çizginin en yüksek noktasını bulmanı",
+    "grafiğe yeni bir başlık yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Çünkü:",
+     "ornek": "Sürekli, her adımda azalma demektir; arada çıkışlar var.",
+     "havuz": [
+      "Çizgi çok uzundur.",
+      "Grafiğin başlığı yoktur."
+     ],
+     "k": [
+      "her adım",
+      "çıkış"
+     ]
+    },
+    {
+     "bas": "Doğrusu:",
+     "ornek": "“Azalma eğiliminde” demeliyiz.",
+     "havuz": [
+      "“Hep artıyor” demeliyiz.",
+      "Hiçbir şey dememeliyiz."
+     ],
+     "k": [
+      "eğilim"
+     ]
+    }
+   ],
+   "kisa": "Arada çıkış var; “azalma eğiliminde” denir.",
+   "cevap": "“Sürekli” her adımda azalma demektir; oysa çizgide arada çıkışlar var. Doğrusu “azalma eğiliminde” demektir.",
+   "anahtarlar": [
+    {
+     "ad": "arada çıkışlar var",
+     "k": [
+      "çıkış"
+     ]
+    },
+    {
+     "ad": "azalma eğiliminde",
+     "k": [
+      "eğilim"
+     ]
+    }
+   ],
+   "sayfa": "s. 191",
+   "bolge": [
+    "neden doğru değildir",
+    "Doğrusunu yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Fulya okulundaki öğrencilerin en sevdiği dersi merak ediyor.",
+    "Yalnızca kendi sınıfı olan 7/A'ya sordu.",
+    "En çok matematik çıktı."
+   ],
+   "soru": "Metne göre Fulya “Okulda en çok sevilen ders matematik.” diyebilir mi?",
+   "bolge": [
+    "diyebilir mi"
+   ],
+   "serit": "Sonuç bütün okula genellenebilir mi?",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Hayır, tek sınıf bütün okulu temsil etmez.",
+    "Evet, çünkü en çok matematik çıktı.",
+    "Evet, çünkü 7/A Fulya'nın sınıfı."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Örneklem evreni temsil etmiyorsa sonuç evrene genellenmez.",
+   "kanitIpucu": "Fulya'nın kimlere sorduğunu söyleyen cümleyi bul.",
+   "aciklama": "Evren bütün okul, örneklem tek sınıf; bu örneklem okulu temsil etmez (s. 190).",
+   "kavram": "Örneklemden Genellemek"
+  },
+  {
+   "metin": [
+    "Sevgi Burdur Gölü'nün yüzey alanını gösteren grafiği inceledi.",
+    "Göl 1973'ten bu yana genel olarak küçülmüş.",
+    "Arada bazı yıllarda küçük büyümeler de olmuş.",
+    "Sevgi “Göl 1973'ten beri sürekli küçülüyor.” dedi.",
+    "Ayrıca “Bu sonuç Eğirdir Gölü için de geçerli.” diye ekledi.",
+    "Ama Eğirdir Gölü'yle ilgili hiç veri incelemedi."
+   ],
+   "soru": "Metne göre Sevgi'nin Eğirdir Gölü hakkındaki yorumu neden hatalıdır?",
+   "bolge": [
+    "Eğirdir Gölü hakkındaki yorumu neden hatalıdır"
+   ],
+   "serit": "Eğirdir yorumunun hata nedeni",
+   "kanit": [
+    5
+   ],
+   "secenekler": [
+    "Eğirdir Gölü'nün verisi incelenmedi.",
+    "Burdur Gölü arada bazı yıllarda büyüdü.",
+    "Grafik 1973'te başlıyor."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Bir yerin verisi başka bir yer için kanıt değildir.",
+   "kanitIpucu": "Eğirdir Gölü'nün verisinden söz eden cümleyi bul.",
+   "aciklama": "Eğirdir hakkında yorum için oradan da veri toplanmalı. Arada büyüme olması ise “sürekli” sözcüğünün hatasıdır, Eğirdir'le ilgili değil (s. 195).",
+   "kavram": "Başka Yere Genelleme"
   }
  ]
 }

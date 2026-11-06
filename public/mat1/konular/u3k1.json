@@ -117,7 +117,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartındaki ikinci cümleye bak.",
-    "aciklama": "Toplanan verilerin hepsine birden veri seti denir. (s. 159)"
+    "aciklama": "Toplanan verilerin hepsine birden veri seti denir. (s. 159)",
+    "tetik": [
+     "ne denir"
+    ],
+    "bolge": [
+     "hepsine birden ne denir"
+    ]
    }
   },
   {
@@ -136,7 +142,13 @@
     ],
     "dogru": 2,
     "ipucu": "Cevaplar sayı mı, sözcük mü?",
-    "aciklama": "Cevaplar sözcüktür (mavi, yeşil …): kategorik veri."
+    "aciklama": "Cevaplar sözcüktür (mavi, yeşil …): kategorik veri.",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "cevapları hangi veri türüdür"
+    ]
    }
   },
   {
@@ -155,7 +167,13 @@
     ],
     "dogru": 0,
     "ipucu": "Sayıyla yazılanı bul.",
-    "aciklama": "Öğrenci sayısı sayıyla yazılır: nicel veri. (s. 163)"
+    "aciklama": "Öğrenci sayısı sayıyla yazılır: nicel veri. (s. 163)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi nicel veridir"
+    ]
    }
   },
   {
@@ -231,7 +249,13 @@
     ],
     "dogru": 2,
     "ipucu": "Hangisini sayarak buluruz?",
-    "aciklama": "Kitapları tek tek sayarız; 3,5 kitap olmaz: kesikli veri. (s. 163)"
+    "aciklama": "Kitapları tek tek sayarız; 3,5 kitap olmaz: kesikli veri. (s. 163)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi kesikli veridir"
+    ]
    }
   },
   {
@@ -295,7 +319,13 @@
     ],
     "dogru": 1,
     "ipucu": "Hangisini ölçerek buluruz?",
-    "aciklama": "Yağış miktarı ölçülür; arada sınırsız değer olabilir: sürekli veri. (s. 163)"
+    "aciklama": "Yağış miktarı ölçülür; arada sınırsız değer olabilir: sürekli veri. (s. 163)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi sürekli veridir"
+    ]
    }
   },
   {
@@ -314,7 +344,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartında 1 numaralı adıma bak.",
-    "aciklama": "Önce araştırma sorusu belirlenir, sonra veriler toplanır. (s. 164)"
+    "aciklama": "Önce araştırma sorusu belirlenir, sonra veriler toplanır. (s. 164)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "Araştırmanın ilk adımı hangisidir"
+    ]
    }
   }
  ],
@@ -400,7 +436,13 @@
    "dogru": 0,
    "ipucu": "Cevaplar sayı mı, sözcük mü?",
    "aciklama": "Cevaplar sözcüktür: kategorik veri.",
-   "kavram": "Kategorik Veri"
+   "kavram": "Kategorik Veri",
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "hangi veri türüdür"
+   ]
   },
   {
    "soru": "Bir sınıftaki öğrencilerin kardeş sayıları hangi veri türüdür?",
@@ -412,7 +454,13 @@
    "dogru": 2,
    "ipucu": "Kardeşleri sayar mıyız, ölçer miyiz?",
    "aciklama": "Kardeşler sayılır; 2,5 kardeş olmaz: kesikli veri. (s. 163)",
-   "kavram": "Kesikli Veri"
+   "kavram": "Kesikli Veri",
+   "tetik": [
+    "hangi veri"
+   ],
+   "bolge": [
+    "hangi veri türüdür"
+   ]
   },
   {
    "soru": "Vücut sıcaklığı hangi veri türüdür?",
@@ -424,7 +472,13 @@
    "dogru": 1,
    "ipucu": "36,5 °C ile 36,6 °C arasında başka değer olabilir mi?",
    "aciklama": "Vücut sıcaklığı ölçülür; arada sınırsız değer olabilir: sürekli veri. (s. 163)",
-   "kavram": "Sürekli Veri"
+   "kavram": "Sürekli Veri",
+   "tetik": [
+    "hangi veri"
+   ],
+   "bolge": [
+    "hangi veri türüdür"
+   ]
   },
   {
    "soru": "Şu verilerden kaç tanesi kesikli veridir? Gol sayısı · boy uzunluğu · kitap sayısı · yağış miktarı · öğrenci sayısı",
@@ -438,7 +492,13 @@
      "Sayarak bulunanları işaretle.",
      "İşaretlediklerini say."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç tanesi kesikli veridir"
+   ]
   },
   {
    "soru": "Nicel veri için hangisi doğrudur?",
@@ -450,7 +510,13 @@
    "dogru": 0,
    "ipucu": "Bilgi kartındaki tanıma bak.",
    "aciklama": "Nicel veriler sayısal olarak ifade edilir; 1,5 gibi ondalık da olabilir. (s. 163)",
-   "kavram": "Nicel Veri"
+   "kavram": "Nicel Veri",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğrudur"
+   ]
   },
   {
    "soru": "Bir bitkinin boyu 5,5 cm'den 8,7 cm'ye uzadı. Bu iki ölçüm arasında kaç farklı boy olabilir?",
@@ -462,7 +528,13 @@
    "dogru": 2,
    "ipucu": "Boy sürekli veridir.",
    "aciklama": "Sürekli veri iki ölçüm arasında sınırsız değer alabilir. (s. 163)",
-   "kavram": "Sürekli Veri"
+   "kavram": "Sürekli Veri",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "iki ölçüm arasında kaç farklı boy olabilir"
+   ]
   },
   {
    "soru": "Melis verilerini grafikle gösterdi ve veri setini temsil edecek değeri buldu. Melis hangi adımdadır?",
@@ -474,7 +546,13 @@
    "dogru": 1,
    "ipucu": "Grafik ve temsil değeri hangi adımda yapılır?",
    "aciklama": "Grafik çizmek ve temsil değeri bulmak 3. adım olan veri analizidir. (s. 164)",
-   "kavram": "Araştırmanın 4 Adımı"
+   "kavram": "Araştırmanın 4 Adımı",
+   "tetik": [
+    "hangi adımdadır"
+   ],
+   "bolge": [
+    "hangi adımdadır"
+   ]
   },
   {
    "soru": "Araştırma sürecinde “Yorumlama ve karar verme” kaçıncı adımdır?",
@@ -488,7 +566,10 @@
      "Sonra verileri toplama, sonra analiz.",
      "Analizden sonra gelen adımın sırasını say."
     ]
-   }
+   },
+   "bolge": [
+    "kaçıncı adımdır"
+   ]
   },
   {
    "soru": "Türkiye'nin 2021–2024 geri kazanım yüzdeleri (27,20 … 36,08) bir tabloya yazıldı. Bu sayıların hepsine birden ne denir?",
@@ -500,7 +581,13 @@
    "dogru": 1,
    "ipucu": "Toplanan verilerin hepsine birden ne deniyordu?",
    "aciklama": "Toplanan verilerin hepsine birden veri seti denir. (s. 163)",
-   "kavram": "Veri"
+   "kavram": "Veri",
+   "tetik": [
+    "ne denir"
+   ],
+   "bolge": [
+    "hepsine birden ne denir"
+   ]
   },
   {
    "soru": "Hangisinin cevabı kategorik veri olur?",
@@ -512,7 +599,232 @@
    "dogru": 2,
    "ipucu": "Cevabı sözcük olan soruyu bul.",
    "aciklama": "Spor adı sözcüktür (futbol, voleybol): kategorik veri.",
+   "kavram": "Kategorik Veri",
+   "tetik": [
+    "Hangisinin"
+   ],
+   "bolge": [
+    "Hangisinin cevabı kategorik veri olur"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Bir soruya cevap bulmak için topladığımız bilgilere {veri|grafik|tahmin} denir.",
+   "s": "s. 159"
+  },
+  {
+   "c": "En sevilen ders, göz rengi gibi sözcükle yazılan veriler {kategorik|nicel|sürekli} veridir.",
+   "s": "s. 163"
+  },
+  {
+   "c": "Sayısal olarak ifade edilebilen verilere {nicel|kategorik|kişisel} veri denir.",
+   "s": "s. 163"
+  },
+  {
+   "c": "Kardeş sayısı gibi sayarak bulunan veriler {kesikli|sürekli|kategorik} veridir.",
+   "s": "s. 163"
+  },
+  {
+   "c": "Boy uzunluğu gibi ölçerek bulunan veriler {sürekli|kesikli|kategorik} veridir.",
+   "s": "s. 163"
+  },
+  {
+   "c": "Sürekli veri, iki ölçüm arasında {sınırsız|hiç|yalnız bir} değer alabilir.",
+   "s": "s. 163"
+  },
+  {
+   "c": "Araştırmanın ilk adımı {araştırma sorusunu belirlemektir|verileri yorumlamaktır|grafik çizmektir}.",
+   "s": "s. 164"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Okuldaki kitap sayısı ile bir ayda yağan yağmur miktarı aynı veri türü müdür? Nedenini yaz.",
+   "tetik": [
+    "aynı veri türü müdür"
+   ],
+   "okut": [
+    "iki verinin aynı türde olup olmadığını ve nedenini yazmanı",
+    "okuldaki kitapları saymanı",
+    "yağmur miktarını ölçmeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Kitap sayısı:",
+     "ornek": "Kesikli veridir; sayarak bulunur.",
+     "havuz": [
+      "Kategorik veridir; sözcükle yazılır.",
+      "Hiç veri değildir."
+     ],
+     "k": [
+      "kesikli",
+      "sayarak"
+     ]
+    },
+    {
+     "bas": "Yağmur miktarı:",
+     "ornek": "Sürekli veridir; ölçerek bulunur.",
+     "havuz": [
+      "Kesikli veridir; tek tek sayılır.",
+      "Kişisel veridir."
+     ],
+     "k": [
+      "sürekli",
+      "ölçerek"
+     ]
+    }
+   ],
+   "kisa": "Hayır: kitap sayısı kesikli, yağmur sürekli.",
+   "cevap": "Aynı türde değildir. İkisi de nicel veridir ama kitap sayısı sayarak bulunur, kesiklidir; yağmur miktarı ölçerek bulunur, süreklidir.",
+   "anahtarlar": [
+    {
+     "ad": "kitap: kesikli",
+     "k": [
+      "kesikli"
+     ]
+    },
+    {
+     "ad": "yağmur: sürekli",
+     "k": [
+      "sürekli"
+     ]
+    }
+   ],
+   "sayfa": "s. 163",
+   "bolge": [
+    "aynı veri türü müdür",
+    "Nedenini yaz"
+   ]
+  },
+  {
+   "soru": "Bir verinin kesikli mi sürekli mi olduğunu anlamak için kendine hangi soruyu sorarsın? Bir örnek de yaz.",
+   "tetik": [
+    "hangi soruyu sorarsın"
+   ],
+   "okut": [
+    "kesikli ile sürekliyi ayırmak için sorulacak soruyu ve bir örneği yazmanı",
+    "bir veri seti toplamanı",
+    "kategorik veriye örnek vermeni"
+   ],
+   "parcalar": [
+    {
+     "bas": "Sorduğum soru:",
+     "ornek": "İki değer arasında başka değer olabilir mi?",
+     "havuz": [
+      "Bu veri kaç harften oluşur?",
+      "Bu veriyi kim topladı?"
+     ],
+     "k": [
+      "arada",
+      "arasında"
+     ]
+    },
+    {
+     "bas": "Örnek:",
+     "ornek": "2 ile 3 kardeş arasında değer olmaz; kardeş sayısı kesiklidir.",
+     "havuz": [
+      "Göz rengi bir sayıdır.",
+      "Her veri süreklidir."
+     ],
+     "k": [
+      "kardeş",
+      "boy",
+      "yağış"
+     ]
+    }
+   ],
+   "kisa": "Arada başka değer olabilir mi? Kardeş sayısında olmaz.",
+   "cevap": "“İki değer arasında başka değer olabilir mi?” diye sorarım. Kardeş sayısında 2 ile 3 arasında değer olmaz, kesiklidir; boy uzunluğunda olur, süreklidir.",
+   "anahtarlar": [
+    {
+     "ad": "arada değer sorusu",
+     "k": [
+      "arada",
+      "arasında"
+     ]
+    },
+    {
+     "ad": "örnek",
+     "k": [
+      "kardeş",
+      "boy",
+      "yağış"
+     ]
+    }
+   ],
+   "sayfa": "s. 163",
+   "bolge": [
+    "hangi soruyu sorarsın",
+    "Bir örnek de yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Deniz sınıfındaki öğrencilere üç soru sordu.",
+    "Birinci soru en sevdikleri renkti.",
+    "İkinci soru kardeş sayıları, üçüncü soru boy uzunluklarıydı."
+   ],
+   "soru": "Metne göre Deniz'in topladığı verilerden hangisi kategorik veridir?",
+   "bolge": [
+    "hangisi kategorik veridir"
+   ],
+   "serit": "Kategorik veri (sözcükle yazılan)",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "En sevilen renk",
+    "Kardeş sayısı",
+    "Boy uzunluğu"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Cevabı sözcük olan veri kategoriktir.",
+   "kanitIpucu": "Cevabı bir sözcük olan soruyu bul.",
+   "aciklama": "Renk sözcükle yazılır, kategoriktir. Kardeş sayısı ve boy uzunluğu sayıdır, nicel veridir (s. 163). Hikâye kitap dışı.",
    "kavram": "Kategorik Veri"
+  },
+  {
+   "metin": [
+    "Okul gazetesi için bir araştırma yapılıyor.",
+    "Kulüp üyeleri her sınıftaki öğrenci sayısını not etti.",
+    "Sonra öğrencilerin boy uzunluklarını ölçtüler.",
+    "Bir hafta boyunca okul bahçesine düşen yağmur miktarını da ölçtüler.",
+    "Ayrıca okul kütüphanesindeki kitapları saydılar.",
+    "Sonuçlar gazetenin son sayfasında yayımlanacak."
+   ],
+   "soru": "Metne göre kulübün topladığı verilerden hangisi sürekli veri değildir?",
+   "bolge": [
+    "hangisi sürekli veri değildir"
+   ],
+   "serit": "Sürekli OLMAYAN veri (sayarak bulunan)",
+   "kanit": [
+    1,
+    4
+   ],
+   "secenekler": [
+    "Kütüphanedeki kitap sayısı",
+    "Öğrencilerin boy uzunlukları",
+    "Bahçeye düşen yağmur miktarı"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Soru sürekli OLMAYANI soruyor. Hangisi sayarak bulunur?",
+   "kanitIpucu": "“Saydılar” ya da “sayısını” kelimesinin geçtiği cümleyi bul.",
+   "aciklama": "Kitap sayısı sayarak bulunur, kesiklidir. Boy uzunluğu ve yağmur miktarı ölçülür, süreklidir (s. 163). Hikâye kitap dışı.",
+   "kavram": "Kesikli Veri"
   }
  ]
 }

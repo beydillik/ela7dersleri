@@ -102,7 +102,13 @@
     ],
     "dogru": 0,
     "ipucu": "Bir grubun verileriyle cevaplanan soruyu bul.",
-    "aciklama": "Bu soru bütün sınıfın verileriyle cevaplanır. (s. 165)"
+    "aciklama": "Bu soru bütün sınıfın verileriyle cevaplanır. (s. 165)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi bir araştırma sorusudur"
+    ]
    }
   },
   {
@@ -177,7 +183,13 @@
     ],
     "dogru": 2,
     "ipucu": "İyi sorunun özelliklerine bak: ölçülecek şey belli mi?",
-    "aciklama": "Cevabı evet/hayır; neyi ölçeceğimiz belli değil. (s. 165)"
+    "aciklama": "Cevabı evet/hayır; neyi ölçeceğimiz belli değil. (s. 165)",
+    "tetik": [
+     "neden"
+    ],
+    "bolge": [
+     "neden iyi bir araştırma sorusu değildir"
+    ]
    }
   },
   {
@@ -196,7 +208,13 @@
     ],
     "dogru": 1,
     "ipucu": "Değişen şey Aras mı, termometre mi?",
-    "aciklama": "Aynı anda ölçülmüş; değişen tek şey termometre. Ölçüm aracı fark yaratır. (s. 168)"
+    "aciklama": "Aynı anda ölçülmüş; değişen tek şey termometre. Ölçüm aracı fark yaratır. (s. 168)",
+    "tetik": [
+     "nedir"
+    ],
+    "bolge": [
+     "Farkın sebebi nedir"
+    ]
    }
   },
   {
@@ -215,7 +233,13 @@
     ],
     "dogru": 0,
     "ipucu": "Soru kimleri kapsıyor? En geniş grup hangisi?",
-    "aciklama": "Soru Türkiye'deki bütün 7. sınıfları kapsıyor: evren budur. (s. 165)"
+    "aciklama": "Soru Türkiye'deki bütün 7. sınıfları kapsıyor: evren budur. (s. 165)",
+    "tetik": [
+     "hangisidir"
+    ],
+    "bolge": [
+     "evreni hangisidir"
+    ]
    }
   },
   {
@@ -290,7 +314,10 @@
     ],
     "dogru": 2,
     "ipucu": "Bilgi kartında küçük grubu anlatan cümleye bak.",
-    "aciklama": "Evreni temsil eden daha küçük bir grup, yani örneklem seçilir. (s. 165)"
+    "aciklama": "Evreni temsil eden daha küçük bir grup, yani örneklem seçilir. (s. 165)",
+    "bolge": [
+     "zor olduğunda ne yapılır"
+    ]
    }
   },
   {
@@ -309,7 +336,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bütün okula benzeyen grubu bul.",
-    "aciklama": "Her sınıftan seçilen öğrenciler bütün okulu temsil eder. (s. 166)"
+    "aciklama": "Her sınıftan seçilen öğrenciler bütün okulu temsil eder. (s. 166)",
+    "tetik": [
+     "Hangi örneklem"
+    ],
+    "bolge": [
+     "Hangi örneklem en uygundur"
+    ]
    }
   }
  ],
@@ -389,7 +422,13 @@
    "dogru": 1,
    "ipucu": "Bir grubun verileriyle cevaplanan soruyu bul.",
    "aciklama": "Bu soru bütün sınıfın spor sürelerini soruyor. (s. 165)",
-   "kavram": "Araştırma Sorusu"
+   "kavram": "Araştırma Sorusu",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi araştırma sorusu olarak uygundur"
+   ]
   },
   {
    "soru": "“İzmir'deki ortaokulların kütüphanelerindeki kitap sayıları nasıl bir eğilim gösterir?” sorusunun evreni hangisidir?",
@@ -401,7 +440,13 @@
    "dogru": 2,
    "ipucu": "Soru hangi şehri ve hangi okulları kapsıyor?",
    "aciklama": "Soru İzmir'deki bütün ortaokul kütüphanelerini kapsıyor. (s. 165)",
-   "kavram": "Evren"
+   "kavram": "Evren",
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "evreni hangisidir"
+   ]
   },
   {
    "soru": "Bir araştırmada evren “okuldaki bütün öğrenciler”dir. Hangisi bu evreni temsil etmez?",
@@ -413,7 +458,13 @@
    "dogru": 1,
    "ipucu": "Bütün okula benzemeyen grubu bul.",
    "aciklama": "Sadece takım üyeleri bütün okula benzemez; sonucu yanlış yorumlatır. (s. 166)",
-   "kavram": "Örneklem Evreni Temsil Etmeli"
+   "kavram": "Örneklem Evreni Temsil Etmeli",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "temsil etmez"
+   ]
   },
   {
    "soru": "Bir okulda 15 sınıf var. Her sınıftan 4 öğrenci seçildi. Örneklemde kaç öğrenci var?",
@@ -428,7 +479,13 @@
      "Her sınıftan kaç kişi seçildi?",
      "Sınıf sayısını her sınıftan seçilen kişi sayısıyla çarp."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Örneklemde kaç öğrenci var"
+   ]
   },
   {
    "soru": "Bir sınıftaki öğrencilerin boy uzunlukları birbirinden farklıdır. Bu duruma ne denir?",
@@ -440,7 +497,13 @@
    "dogru": 0,
    "ipucu": "Cevapların kişiden kişiye değişmesi …",
    "aciklama": "Verilerin kişiden kişiye değişmesine değişebilirlik denir. (s. 165)",
-   "kavram": "Değişebilirlik"
+   "kavram": "Değişebilirlik",
+   "tetik": [
+    "ne denir"
+   ],
+   "bolge": [
+    "Bu duruma ne denir"
+   ]
   },
   {
    "soru": "Hangisi iyi bir araştırma sorusunun özelliği değildir?",
@@ -452,7 +515,13 @@
    "dogru": 2,
    "ipucu": "İyi soruda cevaplar kişiden kişiye değişir mi?",
    "aciklama": "İyi araştırma sorusunun cevapları kişiden kişiye değişir. (s. 165)",
-   "kavram": "İyi Araştırma Sorusu"
+   "kavram": "İyi Araştırma Sorusu",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "özelliği değildir"
+   ]
   },
   {
    "soru": "Evren ile örneklem için hangisi doğrudur?",
@@ -464,7 +533,13 @@
    "dogru": 1,
    "ipucu": "Çorba ve kaşığı düşün.",
    "aciklama": "Örneklem, evreni temsil eden daha küçük bir gruptur. (s. 165)",
-   "kavram": "Örneklem"
+   "kavram": "Örneklem",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğrudur"
+   ]
   },
   {
    "soru": "Bir araştırmanın evreni 120 öğrenci, örneklemi bunlardan 30 öğrenci. Evrende olup örneklemde olmayan kaç öğrenci var?",
@@ -479,7 +554,13 @@
      "Örneklemde kaç öğrenci var?",
      "Evrendekilerden örneklemdekileri çıkar."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Evrende olup örneklemde olmayan kaç öğrenci var"
+   ]
   },
   {
    "soru": "Aynı anda iki farklı termometreyle ölçülen ateşin farklı çıkmasının sebebi nedir?",
@@ -491,7 +572,13 @@
    "dogru": 1,
    "ipucu": "Aynı anda ölçüldüyse değişen ne?",
    "aciklama": "Kişi aynı, zaman aynı; değişen termometre. (s. 168)",
-   "kavram": "Değişebilirlik"
+   "kavram": "Değişebilirlik",
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "farklı çıkmasının sebebi nedir"
+   ]
   },
   {
    "soru": "TÜİK bazı araştırmalarda neden örneklem kullanmaz?",
@@ -503,6 +590,229 @@
    "dogru": 2,
    "ipucu": "Evrenin tamamına ulaşabiliyorsa örneklem gerekir mi?",
    "aciklama": "TÜİK evrenin tamamına güvenilir kaynaklardan ulaşabilir. (s. 167)",
+   "kavram": "Örneklem Evreni Temsil Etmeli",
+   "tetik": [
+    "neden"
+   ],
+   "bolge": [
+    "neden örneklem kullanmaz"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Araştırma sorusu, bir {grubun|tek kişinin|öğretmenin} verileriyle cevaplanacak sorudur.",
+   "s": "s. 165"
+  },
+  {
+   "c": "Araştırma soruları çoğu zaman “… {eğilimi nasıldır|sever misin|kaç yaşındasın}?” diye yazılır.",
+   "s": "s. 165"
+  },
+  {
+   "c": "Aynı soruyu farklı kişilere sorunca {farklı|hep aynı|hiç} cevaplar alırız: değişebilirlik.",
+   "s": "s. 165"
+  },
+  {
+   "c": "Verilerin toplanabileceği en geniş gruba {evren|örneklem|anket} denir.",
+   "s": "s. 165"
+  },
+  {
+   "c": "Evreni temsil eden daha küçük gruba {örneklem|evren|veri seti} denir.",
+   "s": "s. 165"
+  },
+  {
+   "c": "Evrenin tamamından veri toplamak çoğu zaman {mümkün olmaz|çok kolaydır|gereksizdir}; bu yüzden örneklem seçilir.",
+   "s": "s. 165"
+  },
+  {
+   "c": "Örneklem evrenin {özelliklerini taşımalıdır|en küçük parçası olmalıdır|dışından seçilmelidir}.",
+   "s": "s. 165"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Okulundaki öğrencilerin kaç saat uyuduğunu araştıracaksın. Bu araştırmanın evreni ve örneklemi ne olabilir? Yaz.",
+   "tetik": [
+    "evreni ve örneklemi ne olabilir"
+   ],
+   "okut": [
+    "uyku araştırmasının evrenini ve örneklemini yazmanı",
+    "kaç saat uyuduğunu söylemeni",
+    "bir anket sorusu yazmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Evren:",
+     "ornek": "Okuldaki bütün öğrenciler.",
+     "havuz": [
+      "Yalnız benim ailem.",
+      "Türkiye'deki bütün öğretmenler."
+     ],
+     "k": [
+      "bütün öğrenci",
+      "tüm öğrenci",
+      "okuldaki"
+     ]
+    },
+    {
+     "bas": "Örneklem:",
+     "ornek": "Her sınıftan seçilen birkaç öğrenci.",
+     "havuz": [
+      "Yalnız kantindeki kişiler.",
+      "Okulun dışından bir grup."
+     ],
+     "k": [
+      "her sınıf",
+      "seçilen"
+     ]
+    }
+   ],
+   "kisa": "Evren: okuldaki bütün öğrenciler. Örneklem: her sınıftan seçilenler.",
+   "cevap": "Evren okuldaki bütün öğrencilerdir. Örneklem, evreni temsil etmesi için her sınıftan seçilen birkaç öğrenci olabilir.",
+   "anahtarlar": [
+    {
+     "ad": "evren: bütün öğrenciler",
+     "k": [
+      "bütün öğrenci",
+      "okuldaki"
+     ]
+    },
+    {
+     "ad": "örneklem: her sınıftan seçilenler",
+     "k": [
+      "her sınıf",
+      "seçilen"
+     ]
+    }
+   ],
+   "sayfa": "s. 165",
+   "bolge": [
+    "evreni ve örneklemi ne olabilir"
+   ]
+  },
+  {
+   "soru": "“Su içmeyi sever misin?” sorusu neden iyi bir araştırma sorusu değildir? İki neden yaz.",
+   "tetik": [
+    "neden iyi bir araştırma sorusu değildir"
+   ],
+   "okut": [
+    "bu sorunun neden iyi bir araştırma sorusu olmadığını iki nedenle yazmanı",
+    "su içmeyi sevip sevmediğini söylemeni",
+    "yeni bir anket yapmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Birinci neden:",
+     "ornek": "Cevabı yalnızca evet ya da hayır.",
+     "havuz": [
+      "Soru çok kısadır.",
+      "Soruda su kelimesi geçiyor."
+     ],
+     "k": [
+      "evet",
+      "hayır"
+     ]
+    },
+    {
+     "bas": "İkinci neden:",
+     "ornek": "Ne ölçeceğimiz belli değil.",
+     "havuz": [
+      "Herkes su içer.",
+      "Soru soru işaretiyle bitiyor."
+     ],
+     "k": [
+      "ölç"
+     ]
+    }
+   ],
+   "kisa": "Cevap evet/hayır; ne ölçüleceği belli değil.",
+   "cevap": "Cevabı yalnızca evet ya da hayır olur. Ayrıca ne ölçeceğimiz belli değildir; günlük kaç bardak su içildiği gibi ölçülebilir bir şey sorulmalı.",
+   "anahtarlar": [
+    {
+     "ad": "evet/hayır",
+     "k": [
+      "evet",
+      "hayır"
+     ]
+    },
+    {
+     "ad": "ne ölçüleceği belli değil",
+     "k": [
+      "ölç"
+     ]
+    }
+   ],
+   "sayfa": "s. 165",
+   "bolge": [
+    "neden iyi bir araştırma sorusu değildir",
+    "İki neden yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Ayşe, Denizli'deki ortaokul öğrencilerinin kantin sırasında bekleme süresini araştırıyor.",
+    "Bütün öğrencilere ulaşamadığı için üç okuldan 60 öğrenci seçti.",
+    "Seçtiği öğrenciler farklı sınıflardan."
+   ],
+   "soru": "Metne göre bu araştırmanın örneklemi hangisidir?",
+   "bolge": [
+    "örneklemi hangisidir"
+   ],
+   "serit": "Araştırmanın örneklemi (seçilen küçük grup)",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "Üç okuldan seçilen 60 öğrenci",
+    "Denizli'deki bütün ortaokul öğrencileri",
+    "Kantin sırası"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Örneklem evrenden seçilen küçük gruptur.",
+   "kanitIpucu": "“Seçti” kelimesinin geçtiği cümleyi bul.",
+   "aciklama": "Seçilen 60 öğrenci örneklemdir. Denizli'deki bütün ortaokul öğrencileri ise evrendir (s. 165).",
+   "kavram": "Örneklem"
+  },
+  {
+   "metin": [
+    "Okulda kantin sırasında ne kadar beklendiği merak ediliyor.",
+    "Sınıf başkanı Emre, kantine en yakın sınıftaki öğrencilere sordu.",
+    "Bu öğrenciler teneffüs başlar başlamaz sıraya giriyor.",
+    "Emre ortalama bekleme süresini 2 dakika buldu.",
+    "Sonra “Okulumuzda kantinde bekleme süresi 2 dakikadır.” dedi.",
+    "Arkadaşları bu sonuca şaşırdı, çünkü onlar daha uzun bekliyordu."
+   ],
+   "soru": "Metne göre Emre'nin sonucu neden bütün okulu göstermez?",
+   "bolge": [
+    "neden bütün okulu göstermez"
+   ],
+   "serit": "Sonucun bütün okulu göstermeme nedeni",
+   "kanit": [
+    1,
+    2
+   ],
+   "secenekler": [
+    "Örneklem kantine en yakın sınıftan seçildi.",
+    "Ortalama bekleme süresi 2 dakika çıktı.",
+    "Arkadaşları sonuca şaşırdı."
+   ],
+   "dogru": 0,
+   "tuzak": [
+    1,
+    2
+   ],
+   "ipucu": "Örneklem evrene benzemeli. Emre kimlere sordu?",
+   "kanitIpucu": "Emre'nin kimlere sorduğunu ve onların ne yaptığını anlatan cümleleri bul.",
+   "aciklama": "Kantine en yakın sınıf sıraya erken girer; bu örneklem bütün okulu temsil etmez (s. 166). Hikâye kitaptaki kantin örneğinden uyarlandı.",
    "kavram": "Örneklem Evreni Temsil Etmeli"
   }
  ]

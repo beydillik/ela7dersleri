@@ -164,7 +164,13 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartı: Verilerin merkezden ne kadar uzaklaştığını ne gösterir?",
-    "aciklama": "Yayılım ölçüsü, verilerin ne kadar dağınık olduğunu gösterir. (s. 181)"
+    "aciklama": "Yayılım ölçüsü, verilerin ne kadar dağınık olduğunu gösterir. (s. 181)",
+    "tetik": [
+     "hangisi"
+    ],
+    "bolge": [
+     "Aralarındaki farkı hangisi gösterir"
+    ]
    }
   },
   {
@@ -243,7 +249,10 @@
     ],
     "dogru": 1,
     "ipucu": "Bilgi kartı: en büyük − en küçük.",
-    "aciklama": "En büyük 12, en küçük 3: 12 − 3 = 9."
+    "aciklama": "En büyük 12, en küçük 3: 12 − 3 = 9.",
+    "bolge": [
+     "açıklığı kaçtır"
+    ]
    }
   },
   {
@@ -307,7 +316,10 @@
       "Hangisi büyük: 10 mu, 7 mi?",
       "Büyükten küçüğü çıkar."
      ]
-    }
+    },
+    "bolge": [
+     "ortalamadan uzaklığı kaçtır"
+    ]
    }
   },
   {
@@ -390,7 +402,10 @@
     ],
     "dogru": 0,
     "ipucu": "Bilgi kartındaki 3 adımın sonuncusuna bak.",
-    "aciklama": "Son adım: uzaklıkların toplamı veri sayısına bölünür. (s. 181)"
+    "aciklama": "Son adım: uzaklıkların toplamı veri sayısına bölünür. (s. 181)",
+    "bolge": [
+     "en son ne yapılır"
+    ]
    }
   },
   {
@@ -409,7 +424,13 @@
     ],
     "dogru": 2,
     "ipucu": "Küçük sapma ne demek?",
-    "aciklama": "Sapması küçük olan Ali'nin puanları birbirine yakın: Ali daha istikrarlı. (s. 182)"
+    "aciklama": "Sapması küçük olan Ali'nin puanları birbirine yakın: Ali daha istikrarlı. (s. 182)",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğrudur"
+    ]
    }
   },
   {
@@ -452,7 +473,13 @@
     ],
     "dogru": 1,
     "ipucu": "Ortalama aynı. Açıklığı büyük olan kim?",
-    "aciklama": "Açıklığı 40 olan Ece'nin notları daha çok değişiyor: daha dalgalı."
+    "aciklama": "Açıklığı 40 olan Ece'nin notları daha çok değişiyor: daha dalgalı.",
+    "tetik": [
+     "Hangisi"
+    ],
+    "bolge": [
+     "Hangisi doğrudur"
+    ]
    }
   }
  ],
@@ -538,7 +565,13 @@
    "dogru": 2,
    "ipucu": "Merkez ölçüleri: ortalama, ortanca, tepe değer.",
    "aciklama": "Açıklık ve ortalama mutlak sapma yayılım ölçüsüdür. (s. 181)",
-   "kavram": "Yayılım Ölçüsü"
+   "kavram": "Yayılım Ölçüsü",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bir yayılım ölçüsüdür"
+   ]
   },
   {
    "soru": "Bir haftanın en yüksek sıcaklıkları: 21, 25, 19, 28, 24 °C. Açıklık kaç °C?",
@@ -553,7 +586,13 @@
      "En küçük sıcaklığı bul.",
      "Büyükten küçüğü çıkar."
     ]
-   }
+   },
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Açıklık kaç °C"
+   ]
   },
   {
    "soru": "Veriler: 6, 2, 9, 4. Açıklığa sayı doğrusunda dokun.",
@@ -571,7 +610,10 @@
      "Büyükten küçüğü çıkar.",
      "Bulduğun sayıya dokun."
     ]
-   }
+   },
+   "bolge": [
+    "Açıklığa sayı doğrusunda dokun"
+   ]
   },
   {
    "soru": "Bir veri setinin ortalaması 20. 26 verisinin ortalamadan uzaklığı kaçtır?",
@@ -584,7 +626,10 @@
      "Hangisi büyük: 26 mı, 20 mi?",
      "Büyükten küçüğü çıkar."
     ]
-   }
+   },
+   "bolge": [
+    "ortalamadan uzaklığı kaçtır"
+   ]
   },
   {
    "soru": "Bir veri setinin ortalaması 8. 5 verisinin ortalamadan uzaklığına sayı doğrusunda dokun.",
@@ -602,7 +647,10 @@
      "Büyükten küçüğü çıkar.",
      "Bulduğun sayıya dokun."
     ]
-   }
+   },
+   "bolge": [
+    "ortalamadan uzaklığına sayı doğrusunda dokun"
+   ]
   },
   {
    "soru": "Veriler: 4, 6, 8, 10, 12. Ortalama 8. Ortalama mutlak sapma kaçtır?",
@@ -617,7 +665,10 @@
      "Uzaklıkları topla.",
      "Toplamı veri sayısına böl."
     ]
-   }
+   },
+   "bolge": [
+    "Ortalama mutlak sapma kaçtır"
+   ]
   },
   {
    "soru": "Veriler: 3, 5, 7, 9. Ortalama 6. Uzaklıklar: 3, 1, 1, 3. Ortalama mutlak sapma kaçtır?",
@@ -629,7 +680,10 @@
    "dogru": 1,
    "ipucu": "Uzaklıkları topla, sonra veri sayısına böl.",
    "aciklama": "3 + 1 + 1 + 3 = 8; 8 ÷ 4 = 2. (8 yalnızca toplamdır.)",
-   "kavram": "Ortalama Mutlak Sapma"
+   "kavram": "Ortalama Mutlak Sapma",
+   "bolge": [
+    "Ortalama mutlak sapma kaçtır"
+   ]
   },
   {
    "soru": "Bir koşucunun süreleri her gün birbirine çok yakın. Ortalama mutlak sapması için hangisi beklenir?",
@@ -641,7 +695,13 @@
    "dogru": 1,
    "ipucu": "Veriler birbirine yakınsa ortalamadan uzaklıklar nasıl olur?",
    "aciklama": "Uzaklıklar küçük olur; sapma küçüktür. Koşucu istikrarlıdır. (s. 182)",
-   "kavram": "İstikrarlı ve Dalgalı"
+   "kavram": "İstikrarlı ve Dalgalı",
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi beklenir"
+   ]
   },
   {
    "soru": "İki pastanenin günlük kek satışlarının ortalaması 50. A'nın ortalama mutlak sapması 2, B'ninki 15. Ertesi gün kaç kek satılacağını hangisi için tahmin etmek daha kolaydır?",
@@ -653,7 +713,13 @@
    "dogru": 2,
    "ipucu": "Hangisinin satışları birbirine daha yakın?",
    "aciklama": "A'nın sapması küçük: satışları her gün 50'ye yakın. Tahmin etmek daha kolay.",
-   "kavram": "Merkez ve Yayılım Birlikte"
+   "kavram": "Merkez ve Yayılım Birlikte",
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "hangisi için tahmin etmek daha kolaydır"
+   ]
   },
   {
    "soru": "Selma'nın açıklığı 27, Yasemin'inki 4. Hangisi doğrudur?",
@@ -665,7 +731,222 @@
    "dogru": 0,
    "ipucu": "Açıklık büyükse veriler nasıl dağılmıştır?",
    "aciklama": "Açıklık 27, Selma'nın sayılarının 5 ile 32 arasında geniş bir aralıkta değiştiğini gösterir. (s. 182)",
+   "kavram": "Açıklık",
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
+   ]
+  }
+ ],
+ "dikkat": true,
+ "isinma": false,
+ "eskiKonu": false,
+ "tekrar": [
+  {
+   "c": "Verilerin merkezden ne kadar uzaklaştığını {yayılım ölçüsü|tepe değer|ortanca} gösterir.",
+   "s": "s. 181"
+  },
+  {
+   "c": "Açıklık, en büyük veri ile en küçük verinin {farkıdır|toplamıdır|çarpımıdır}.",
+   "s": "s. 181"
+  },
+  {
+   "c": "Bir verinin ortalamadan uzaklığı hiç {eksi|sıfır|büyük} olmaz.",
+   "s": "s. 181"
+  },
+  {
+   "c": "Ortalama mutlak sapmada uzaklıklar toplanır ve {veri sayısına|en büyük veriye|ortalamaya} bölünür.",
+   "s": "s. 181"
+  },
+  {
+   "c": "Yayılım ölçüsü küçükse performans {istikrarlıdır|dalgalıdır|ölçülemez}.",
+   "s": "s. 182"
+  },
+  {
+   "c": "Yayılım ölçüsü büyükse veriler {çok değişir|birbirine çok yakındır|hep aynıdır}.",
+   "s": "s. 182"
+  },
+  {
+   "c": "Merkezî eğilim ölçüleri {yayılım ölçüleriyle|anket sorularıyla|referans değeriyle} desteklenmelidir.",
+   "s": "s. 181"
+  }
+ ],
+ "kisaCevap": [
+  {
+   "soru": "Takıma bir oyuncu seçeceksin: Selma mı, Yasemin mi? Ortalamaları aynı. Kararını ve gerekçeni yaz.",
+   "tetik": [
+    "Kararını ve gerekçeni yaz"
+   ],
+   "okut": [
+    "hangi oyuncuyu seçtiğini ve gerekçeni yazmanı",
+    "iki oyuncunun ortalamasını hesaplamanı",
+    "en çok sayı alan maçı bulmanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Kararım:",
+     "ornek": "Yasemin'i seçerim.",
+     "havuz": [
+      "İkisini de seçmem.",
+      "Seçmek için boylarına bakarım."
+     ],
+     "k": [
+      "Yasemin"
+     ]
+    },
+    {
+     "bas": "Çünkü:",
+     "ornek": "Açıklığı ve ortalama mutlak sapması küçük; istikrarlı oynuyor.",
+     "havuz": [
+      "Adı daha uzun.",
+      "Ortalaması çok daha büyük."
+     ],
+     "k": [
+      "istikrar",
+      "küçük",
+      "sapma"
+     ]
+    }
+   ],
+   "kisa": "Yasemin; yayılımı küçük, istikrarlı.",
+   "cevap": "Yasemin'i seçerim. Ortalamaları aynı ama Yasemin'in açıklığı ve ortalama mutlak sapması küçük; her maçta birbirine yakın sayı alıyor, istikrarlı.",
+   "anahtarlar": [
+    {
+     "ad": "Yasemin",
+     "k": [
+      "Yasemin"
+     ]
+    },
+    {
+     "ad": "yayılım küçük / istikrarlı",
+     "k": [
+      "istikrar",
+      "küçük"
+     ]
+    }
+   ],
+   "sayfa": "s. 182",
+   "bolge": [
+    "Kararını ve gerekçeni yaz"
+   ]
+  },
+  {
+   "soru": "Ortalama mutlak sapma nasıl bulunur? Adımları sırayla yaz.",
+   "tetik": [
+    "nasıl bulunur"
+   ],
+   "okut": [
+    "ortalama mutlak sapmanın adımlarını sırayla yazmanı",
+    "açıklığın tanımını yazmanı",
+    "bir veri setinin ortalamasını hesaplamanı"
+   ],
+   "parcalar": [
+    {
+     "bas": "Önce:",
+     "ornek": "Ortalamayı ve her verinin ortalamadan uzaklığını bulurum.",
+     "havuz": [
+      "En büyük veriyi seçerim.",
+      "Verileri sıraya dizip bitiririm."
+     ],
+     "k": [
+      "uzaklı"
+     ]
+    },
+    {
+     "bas": "Sonra:",
+     "ornek": "Uzaklıkları toplayıp veri sayısına bölerim.",
+     "havuz": [
+      "Uzaklıkları 2 ile çarparım.",
+      "En küçük uzaklığı yazarım."
+     ],
+     "k": [
+      "böl"
+     ]
+    }
+   ],
+   "kisa": "Uzaklıkları bul, topla, veri sayısına böl.",
+   "cevap": "Önce ortalamayı bulurum. Sonra her verinin ortalamadan uzaklığını bulurum. Uzaklıkları toplayıp veri sayısına bölerim.",
+   "anahtarlar": [
+    {
+     "ad": "uzaklıklar",
+     "k": [
+      "uzaklı"
+     ]
+    },
+    {
+     "ad": "veri sayısına böl",
+     "k": [
+      "böl"
+     ]
+    }
+   ],
+   "sayfa": "s. 181",
+   "bolge": [
+    "nasıl bulunur",
+    "Adımları sırayla yaz"
+   ]
+  }
+ ],
+ "metinli": [
+  {
+   "metin": [
+    "Ali'nin 5 sınavdaki puanları 70, 75, 80, 85 ve 90.",
+    "Ali'nin en yüksek puanı 90, en düşük puanı 70.",
+    "Ali'nin puanlarının ortalaması 80."
+   ],
+   "soru": "Metne göre Ali'nin puanlarının açıklığı kaçtır?",
+   "bolge": [
+    "açıklığı kaçtır"
+   ],
+   "serit": "Açıklık = en büyük − en küçük",
+   "kanit": [
+    1
+   ],
+   "secenekler": [
+    "20",
+    "80",
+    "160"
+   ],
+   "dogru": 0,
+   "tuzak": [],
+   "ipucu": "Açıklık için en büyük veriden en küçük veriyi çıkar.",
+   "kanitIpucu": "En yüksek ve en düşük puanı veren cümleyi bul.",
+   "aciklama": "90 − 70 = 20. 80 ortalamadır; 160 iki değerin toplamıdır (s. 181). Sayılar kitap dışı.",
    "kavram": "Açıklık"
+  },
+  {
+   "metin": [
+    "Selma ile Yasemin aynı basketbol takımında oynuyor.",
+    "İkisinin de son 5 maçta aldığı sayıların ortalaması 17.",
+    "Selma'nın sayıları 5 ile 32 arasında değişiyor.",
+    "Yasemin'in sayıları ise 15 ile 19 arasında.",
+    "Selma'nın ortalama mutlak sapması 6,4, Yasemin'inki 1,2.",
+    "Antrenör her maçta güvenebileceği bir oyuncu arıyor."
+   ],
+   "soru": "Metne göre hangi oyuncunun performansı daha istikrarlıdır?",
+   "bolge": [
+    "hangi oyuncunun performansı daha istikrarlıdır"
+   ],
+   "serit": "Daha istikrarlı oyuncu (yayılımı küçük)",
+   "kanit": [
+    3,
+    4
+   ],
+   "secenekler": [
+    "Yasemin",
+    "Selma",
+    "İkisi de aynı, çünkü ortalamaları 17"
+   ],
+   "dogru": 0,
+   "tuzak": [
+    2
+   ],
+   "ipucu": "Yayılım ölçüsü küçük olan istikrarlıdır.",
+   "kanitIpucu": "Ortalama mutlak sapmaları veren cümleyi bul.",
+   "aciklama": "Yasemin'in açıklığı ve ortalama mutlak sapması küçük: istikrarlı. Ortalamaların aynı olması yayılımın da aynı olduğunu göstermez (s. 181–182).",
+   "kavram": "İstikrarlı ve Dalgalı"
   }
  ]
 }
