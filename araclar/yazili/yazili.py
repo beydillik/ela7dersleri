@@ -177,6 +177,10 @@ class Yazili:
                 for x in d.get("mebHaric", []):
                     if not x.get("kazanim") or not x.get("ad"): h.append(f"MEB hariç {x.get('no')}: kazanim ve ad gerekli")
                     if x.get("kazanim") in senaryo: h.append(f"MEB hariç {x.get('no')}: {x['kazanim']} senaryoda var ({d['dagilim'][x['kazanim']]} soru) → bu soru dahil edilmeli")
+        if d.get("sozluk"):   # İngilizce metin sözlüğü: her kelime en az bir MEB/benzer metninde geçmeli
+            tum = " ".join(p for q in d["mebSorular"] + [z for q0 in d["mebSorular"] for z in q0.get("ikizler", [])] for p in q.get("metin", [])).lower()
+            for w, tr in d["sozluk"].items():
+                if not tr or not re.search(r"\b" + re.escape(w.lower()) + r"\b", tum): h.append(f"sözlük: '{w}' metinlerde yok")
         dag = {}
         ust = {k["kod"]: k["ust"] for k in d["kazanimlar"] if k.get("ust")}
         for p in d["provalar"]:

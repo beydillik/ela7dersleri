@@ -1,14 +1,14 @@
 """İngilizce (MEB) 7 · 1. Dönem 1. Yazılı — Yazılıya Hazırlık verisi.
-Kapsam: MEB senaryo tablosu, Senaryo 1 (okulun seçtiği): E7.1.R1 (1), E7.1.W1 (1), E7.2.R1 (1), E7.2.W1 (1) = 4 soru.
+Kapsam: MEB senaryo tablosu, Senaryo 1 (okulun seçtiği): E7.1.R1 (1), E7.1.W1 (2), E7.2.R1 (1), E7.2.W1 (1) = 5 soru (Kemal'in fotoğrafı, 8 Kasım 2026; 4 Kasım'daki veride E7.1.W1 1 yazılıydı).
 Kaynaklar: MEB "Yazılıya Hazırlanıyorum 7. Sınıf İngilizce 1. Dönem 1. Yazılı" (10 soru, cevap anahtarıyla; bütün senaryoları kapsıyor,
 Senaryo 1'in dört çıktısının hepsi bu 10 soruda), ders kitabı (Bilim Kültür Yayınları; sayfa atıflı; kaynaklar/ing1/unite1.md, unite2.md),
 yazilihocam.com 7. sınıf İngilizce 1. dönem 1. yazılı örnekleri (siyah, mavi, kırmızı; benzer sorularda, kimi birebir).
 Öncelik (Kemal, 4 Kasım 2026: banko soruya daha çok emek): tek kelimelik / kopyalanan cevaplar ★★★ (m1, m2, m3, m5, m7, m9, m10);
-cümleyle cevaplanan m4, m6, m8 ★★ Puan topla.
+m4 de ★★★ (8 Kasım: E7.1.W1 sınavda 2 soru, cevap çoğunlukla tek kelime değiştirip kopyalamak); cümleyle cevaplanan m6, m8 ★★ Puan topla.
 Not: MEB'in sıklık grafiği (usually %90, often %70, sometimes %50, rarely %10) kitaptaki tablodan (s. 38: usually %80, sometimes %40, seldom %20) farklı;
 MEB ölçeği öğretilir, "sorudaki grafiğe göre yaz" denir.
 Çalıştır: python3 araclar/yazili/ing1_d1y1.py"""
-import os, sys
+import os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from yazili import Yazili
 import cizim_ing as Z
@@ -40,6 +40,9 @@ N_SIFAT = "Davranış ipucu → kişilik sıfatı: “never late” → punctual
 N_ISIM = "Tarifteki ayrıntıyı bul (gözlük, kıvırcık, generous…) → kişinin adı."
 N_TABLO1 = "APPEARANCE → boy, saç, göz · PERSONALITY → kişilik sıfatı (metinden kopyala)."
 N_ER = "Tablodaki sayıya bak → kısa sıfat -er than, uzun sıfat more … than."
+N_FORM = "Parantezdeki sıfata bak → kısa: -er · uzun: more … · good → better."
+N_CUMLE = "Verilen sıfatla tam cümle: Kim + is + sıfat-er / more sıfat + than + kim."
+N_ISOLDER = "Is … older than …? → Tabloya bak: Yes / No + doğru cümle."
 N_DUZELT = "Metinde doğrusunu bul → yalnız yanlış kelimeyi değiştir, cümleyi yeniden yaz."
 N_WHAT = "What does … do (after school, on Sundays)? → She/He + fiil-s: “She plays …”"
 N_HOWOFTEN = "How often → kaç kez: “twice a week”, “every day”."
@@ -58,14 +61,14 @@ N_TABLO2 = "Sport · Equipment · Place · Frequency → diyalogdan kelimeleri k
 
 Y = Yazili("ing1", "d1y1",
     baslik="1. Dönem 1. Yazılı", ders="İngilizce (MEB)", senaryo="Senaryo 1", sure=40, tarih="2026-11-12",
-    dagilim={K1: 1, K2: 1, K3: 1, K4: 1},
+    dagilim={K1: 1, K2: 2, K3: 1, K4: 1},
     mebToplam=10, mebHaric=[],   # MEB dokümanının 10 sorusunun hepsi Senaryo 1'in çıktılarından (dosya başı notu)
-    giris="Okulun seçtiği Senaryo 1'de <b>4 soru</b> var: her konudan 1 soru, her soruda 4–5 küçük madde. "
+    giris="Okulun seçtiği Senaryo 1'de <b>5 soru</b> var: görünüş ve kişilik 1, <b>karşılaştırma 2</b>, spor metni 1, rutinler 1. Her soruda birkaç küçük madde olur. "
           "Önce <b>★★★ Banko</b> soruları sağlamla: cevap tek kelime ya da metinden kopyalanan bir parça. Kalıbını bilirsen puan kesin.",
     kapsamDisi=["Unit 3: Biographies, Unit 4: Wild Animals, Unit 5: Television", "Dinleme (Listening) ve konuşma (Speaking) etkinlikleri"],
-    puanNotu="Puanlar tahminidir: 4 soru × 25 puan varsaydık; okul farklı dağıtabilir. Her konudan hangi MEB soru tipinin geleceği bilinmiyor; bu yüzden her konunun 2–3 tipine çalışıyoruz.",
+    puanNotu="Puanlar tahminidir: 5 soru × 20 puan varsaydık; okul farklı dağıtabilir. Her konudan hangi MEB soru tipinin geleceği bilinmiyor; bu yüzden her konunun 2–3 tipine çalışıyoruz.",
     kaynakNotu="Sorular MEB'in yayımladığı 'Yazılıya Hazırlanıyorum 7. Sınıf İngilizce 1. Dönem 1. Yazılı' örneklerine, ders kitabına (Bilim Kültür Yayınları) ve yazilihocam.com yazılı örneklerine dayanır. Kişi çizimleri özgündür.",
-    soruGiris="Bunlar MEB'in örnek soruları; yazılıda <b>benzerleri</b> çıkacak. <b>★★★ Banko</b> olanlarla başla. Cevabı kısa yaz: tek kelime ya da metinden kopyaladığın parça yeter.",
+    soruGiris="Bunlar MEB'in örnek soruları; yazılıda <b>benzerleri</b> çıkacak. <b>★★★ Banko</b> olanlarla başla. Cevabı kısa yaz: tek kelime ya da metinden kopyaladığın parça yeter. Metinde altı noktalı kelimeye dokunursan Türkçesi çıkar.",
     kazanimAd="konu")
 
 # =====================================================================
@@ -89,10 +92,12 @@ Y.kazanim(kod=K1, ad="Students will be able to understand a simple text about ap
             {"c": "Helen likes meeting new people and she has a lot of friends. She is {outgoing|punctual|selfish}.", "s": "s. 15"},
             {"c": "Sally always studies hard for the exams. She is {hardworking|selfish|cute}.", "s": "s. 16"},
             {"c": "Kıvırcık saç İngilizcede {curly|straight} hair, düz saç {straight|curly} hair.", "s": "s. 14, 20"},
-            {"c": "Tablodaki APPEARANCE sütununa {tall, slim, dark hair|serious, hardworking} yazılır.", "s": "cevap kalıbı"}])
+            {"c": "Tablodaki APPEARANCE sütununa {tall, slim, dark hair|serious, hardworking} yazılır.", "s": "cevap kalıbı"},
+            {"c": "Complete the sentences with the correct words. = {Cümleleri doğru kelimelerle tamamla.|Yanlışları düzelt.|Soruları cevapla.}", "s": "sınav yönergesi"},
+            {"c": "Complete the table according to the dialogue. = {Diyaloğa göre tabloyu doldur.|Metne göre soruları cevapla.|Resimlere isim yaz.}", "s": "sınav yönergesi"}])
 
 Y.kazanim(kod=K2, ad="Students will be able to write simple pieces to compare people.",
-    kisa="Karşılaştırma (yazma)", soru=1, renk="#e8590c", konular=["u1k3"], sayfa="s. 11–24", svg=Z.h_karsilastir(),
+    kisa="Karşılaştırma (yazma)", soru=2, renk="#e8590c", konular=["u1k3"], sayfa="s. 11–24", svg=Z.h_karsilastir(),
     maddeler=["Kısa sıfat + <b>-er than</b>: old → <b>older</b>, young → <b>younger</b>, tall → <b>taller</b>, short → <b>shorter</b>. “Jim is taller than Mike.” (s. 13, 21)",
               "Harf değişen sıfatlar: slim → <b>slimmer</b>, thin → thinner; -y → <b>-ier</b>: heavy → heavier, funny → funnier. (s. 21, 23, 24)",
               "Uzun sıfat: <b>more + sıfat + than</b>: more generous, more outgoing, more punctual, more hardworking. (s. 13, 16, 21)",
@@ -109,7 +114,9 @@ Y.kazanim(kod=K2, ad="Students will be able to write simple pieces to compare pe
             {"c": "generous → {more generous|generouser}", "s": "s. 21"},
             {"c": "good → {better|gooder}", "s": "s. 11"},
             {"c": "Karşılaştırmada iki kişinin arasına {than|that|then} yazılır.", "s": "s. 13"},
-            {"c": "Yanlışı düzeltirken {yalnız yanlış kelimeyi değiştir|bütün cümleyi baştan uydur}.", "s": "cevap kalıbı"}])
+            {"c": "Yanlışı düzeltirken {yalnız yanlış kelimeyi değiştir|bütün cümleyi baştan uydur}.", "s": "cevap kalıbı"},
+            {"c": "Look at the table and complete the sentences. = {Tabloya bak, cümleleri tamamla.|Tabloyu doldur.|Doğru resmi seç.}", "s": "sınav yönergesi"},
+            {"c": "Correct the mistakes. Rewrite the sentences. = {Yanlışları düzelt, cümleleri yeniden yaz.|Boşlukları doldur.|Soruları cevapla.}", "s": "sınav yönergesi"}])
 
 Y.kazanim(kod=K3, ad="Students will be able to understand short and simple texts on sports.",
     kisa="Spor Metinlerini Anlama", soru=1, renk="#2f9e44", konular=["u2k1", "u2k2", "u2k3"], sayfa="s. 28–41", svg=Z.h_spor(),
@@ -129,7 +136,9 @@ Y.kazanim(kod=K3, ad="Students will be able to understand short and simple texts
             {"c": "How often does she go hiking? → {Twice a week.|In the mountains.|Yes, she does.}", "s": "s. 30"},
             {"c": "Does she go to bed early? → {Yes, she does.|Yes, she is.}", "s": "cevap kalıbı"},
             {"c": "I play volleyball. → She {plays|play} volleyball.", "s": "s. 30"},
-            {"c": "Swimming is an {individual|team} sport.", "s": "s. 32"}])
+            {"c": "Swimming is an {individual|team} sport.", "s": "s. 32"},
+            {"c": "Answer the questions according to the text. = {Metne göre soruları cevapla.|Tabloya göre cümleleri tamamla.|Metni yeniden yaz.}", "s": "sınav yönergesi"},
+            {"c": "Read the sentences and write the correct sports. = {Cümleleri oku, doğru spor adlarını yaz.|Sevdiğin sporları yaz.|Sporları resimlerle eşleştir.}", "s": "sınav yönergesi"}])
 
 Y.kazanim(kod=K4, ad="Students will be able to write pieces about routines/daily activities by using frequency adverbs.",
     kisa="Rutinler ve Sıklık Zarfları (yazma)", soru=1, renk="#7048e8", konular=["u2k3"], sayfa="s. 29–41", svg=Z.h_siklik(),
@@ -149,7 +158,9 @@ Y.kazanim(kod=K4, ad="Students will be able to write pieces about routines/daily
             {"c": "%90 → {usually|rarely|sometimes}", "s": "MEB örnek sorusu"},
             {"c": "%70 → {often|never|always}", "s": "MEB örnek sorusu"},
             {"c": "Haftada iki kez = {twice a week|two weeks}", "s": "s. 30"},
-            {"c": "Why sorusunun cevabı {Because|So|And} ile başlar.", "s": "cevap kalıbı"}])
+            {"c": "Why sorusunun cevabı {Because|So|And} ile başlar.", "s": "cevap kalıbı"},
+            {"c": "Fill in the blanks according to the chart. = {Grafiğe göre boşlukları doldur.|Diyaloğa göre tabloyu doldur.|Grafiği yeniden çiz.}", "s": "sınav yönergesi"},
+            {"c": "according to the dialogue = {diyaloğa göre|metne göre|grafiğe göre}", "s": "sınav yönergesi"}])
 
 # =====================================================================
 # CEVAP KALIPLARI (Özet'te liste; sorunun içinde tek satır kalıp notu)
@@ -166,7 +177,7 @@ Y.formul(id="tablo2", ad="Spor tablosu", kalip="Sport · Equipment · Place · F
 Y.formul(id="neden", ad="Why / What time / How long", kalip="Why → Because … · What time → At seven. · How long → four hours", ne="“Why …?”, “What time …?” sorularında", ornek="Because he wants to be a successful football player.")
 
 # =====================================================================
-# MEB SORULARI (10 soru) — öncelik: 7 banko, 3 puan topla
+# MEB SORULARI (10 soru) — öncelik: 8 banko, 2 puan topla
 # =====================================================================
 Y.meb(id="m1", no=1, kazanim=K1, oncelik=3,
     metin=["Complete the sentences with the correct words. (Cümleleri doğru kelimelerle tamamla.)",
@@ -323,9 +334,29 @@ Y.meb(id="m3", no=3, kazanim=K2, oncelik=3,
          "svg": Z.tablo_svg(["", "CAN", "MERT"], [["AGE", "13", "11"], ["HEIGHT", "1.50 m", "1.62 m"], ["WEIGHT", "48 kg", "40 kg"], ["PERSONALITY", "punctual **", "punctual *****"]], [110, 110, 110],
                             etiket="Can ve Mert tablosu: yaş 13 ve 11, boy 1.50 ve 1.62 m, kilo 48 ve 40 kg, dakiklik 2 ve 5 yıldız"),
          "maddeler": [M("a", "Look at the table and complete the sentences 1–5.", "1. Can is older than Mert. 2. Mert is younger than Can. 3. Mert is taller than Can. 4. Can is heavier than Mert. 5. Mert is more punctual than Can.",
-                        [A("1. older", "older"), A("2. younger", "younger"), A("3. taller", "taller"), A("4. heavier", "heavier", "fatter"), A("5. more punctual", "more punctual")], "er")]}])
+                        [A("1. older", "older"), A("2. younger", "younger"), A("3. taller", "taller"), A("4. heavier", "heavier", "fatter"), A("5. more punctual", "more punctual")], "er")]},
+        {"metin": ["Fill in the blanks using the comparative forms of the adjectives.",
+                   "1. Tayfun is ______ than Ahmet. (slim)",
+                   "2. Burak is ______ than Selim. (funny)",
+                   "3. My brother is a ______ football player than me. (good)",
+                   "4. Elif is ______ than her sister. (young)",
+                   "5. Zeynep is ______ than Selin. (generous)"],
+         "maddeler": [M("a", "Fill in the blanks 1–5 using the comparative forms.", "1. Tayfun is slimmer than Ahmet. 2. Burak is funnier than Selim. 3. My brother is a better football player than me. 4. Elif is younger than her sister. 5. Zeynep is more generous than Selin.",
+                        [A("1. slimmer", "slimmer"), A("2. funnier", "funnier"), A("3. better", "better"), A("4. younger", "younger"), A("5. more generous", "more generous")], "er")]},
+        {"metin": ["Look at the information about Berk and Efe. Write comparative sentences.",
+                   "Use these adjectives: old – tall – hardworking – punctual"],
+         "svg": Z.tablo_svg(["", "BERK", "EFE"], [["AGE", "14", "12"], ["HEIGHT", "150 cm", "162 cm"], ["STUDIES", "1 hour a day", "3 hours a day"], ["AT SCHOOL", "at 8.20", "at 7.50"]], [96, 117, 117],
+                            etiket="Berk ve Efe tablosu: yaş 14 ve 12, boy 150 ve 162 cm, ders çalışma 1 ve 3 saat, okula 8.20 ve 7.50'de gelir"),
+         "maddeler": [M("a", "Write a comparative sentence with “old”.", "Berk is older than Efe.",
+                        [A("older", "older"), A("than Efe", "than efe")], "er"),
+                      M("b", "Write a comparative sentence with “tall”.", "Efe is taller than Berk.",
+                        [A("taller", "taller"), A("than Berk", "than berk")], "er"),
+                      M("c", "Write a comparative sentence with “hardworking”.", "Efe is more hardworking than Berk.",
+                        [A("more hardworking", "more hardworking", "more hard-working"), A("than Berk", "than berk")], "er"),
+                      M("d", "Write a comparative sentence with “punctual”.", "Efe is more punctual than Berk.",
+                        [A("more punctual", "more punctual"), A("than Berk", "than berk")], "er")]}])
 
-Y.meb(id="m4", no=4, kazanim=K2, oncelik=2,
+Y.meb(id="m4", no=4, kazanim=K2, oncelik=3,
     metin=["Read the text and correct the mistakes. Rewrite the sentences. (Metni oku, yanlışları düzelt, cümleleri yeniden yaz.)",
            "Amy is 16 years old, and her sister Emma is 12 years old. Amy is 165 cm tall and Emma is 160 cm tall. Amy is slim with straight blonde hair and brown eyes. "
            "Emma has short wavy hair and green eyes. Amy is more hardworking; she always studies hard and does her homework. Emma is more outgoing than her sister; "
@@ -387,7 +418,14 @@ Y.meb(id="m4", no=4, kazanim=K2, oncelik=2,
                       M("b", "Correct the mistake and rewrite: Leo has straight black hair and green eyes.", "Leo has curly black hair and blue eyes.",
                         [A("curly (straight değil)", "curly"), A("blue eyes (green değil)", "blue")], "duzelt"),
                       M("c", "Correct the mistake and rewrite: Leo is more outgoing than Max.", "Max is more outgoing than Leo.",
-                        [AS("Max önce", ["max"], ["outgoing"]), A("than Leo", "than leo")], "duzelt")]}])
+                        [AS("Max önce", ["max"], ["outgoing"]), A("than Leo", "than leo")], "duzelt")]},
+        {"metin": ["Look at the table and answer each question in one full sentence."],
+         "svg": Z.tablo_svg(["Name", "Age", "Height"], [["Larry", "13", "1.60 m"], ["Nicole", "15", "1.67 m"]], [130, 100, 100],
+                            etiket="Larry ve Nicole tablosu: yaş 13 ve 15, boy 1.60 ve 1.67 m"),
+         "maddeler": [M("a", "Is Larry older than Nicole? Answer in one full sentence.", "No, Larry is not older than Nicole. Nicole is older than Larry.",
+                        [A("No", "no"), A("Nicole is older (ya da: Larry is younger)", "nicole is older", "larry is younger")], "duzelt"),
+                      M("b", "Is Nicole taller than Larry? Answer in one full sentence.", "Yes, Nicole is taller than Larry.",
+                        [A("Yes", "yes"), A("Nicole is taller", "nicole is taller", "larry is shorter")], "duzelt")]}])
 
 Y.meb(id="m6", no=6, kazanim=K3, oncelik=2,
     metin=["Answer the questions according to the text. (Metne göre soruları cevapla.)",
@@ -662,6 +700,24 @@ IKIZ = {
     P("3. Mert (height) →", "taller", ["shorter", "older"], k=["taller"]),
     P("4. Can (weight) →", "heavier", ["lighter", "thinner"], k=["heavier", "fatter"]),
     P("5. Mert (personality) →", "more punctual", ["very punctual", "less punctual"], k=["more punctual"])),
+ ("m3i3", "a"): IK("slimmer, funnier, better, younger, more generous", ["comparative forms"], N_FORM,
+    P("1. slim →", "slimmer", ["slimer", "more slim"], k=["slimmer"]),
+    P("2. funny →", "funnier", ["funnyer", "more funny"], k=["funnier"]),
+    P("3. good →", "better", ["gooder", "more good"], k=["better"]),
+    P("4. young →", "younger", ["youngest", "more young"], k=["younger"]),
+    P("5. generous →", "more generous", ["generouser", "very generous"], k=["more generous"])),
+ ("m3i4", "a"): IK("Berk is older than Efe.", ["comparative sentence"], N_CUMLE,
+    P("Berk is", "older", ["younger", "more old"], k=["older"]),
+    P("… than", "Efe", ["Berk", "Ali"], k=["than efe", "efe"])),
+ ("m3i4", "b"): IK("Efe is taller than Berk.", ["comparative sentence"], N_CUMLE,
+    P("Efe is", "taller", ["shorter", "more tall"], k=["taller"]),
+    P("… than", "Berk", ["Efe", "Ali"], k=["than berk", "berk"])),
+ ("m3i4", "c"): IK("Efe is more hardworking than Berk.", ["comparative sentence"], N_CUMLE,
+    P("Efe is", "more hardworking", ["hardworkinger", "very hardworking"], k=["more hardworking", "more hard-working"]),
+    P("… than", "Berk", ["Efe", "Ali"], k=["than berk", "berk"])),
+ ("m3i4", "d"): IK("Efe is more punctual than Berk.", ["comparative sentence"], N_CUMLE,
+    P("Efe is", "more punctual", ["punctualer", "very punctual"], k=["more punctual"]),
+    P("… than", "Berk", ["Efe", "Ali"], k=["than berk", "berk"])),
  ("m4i1", "a"): IK("Melis is tall and she has curly hair.", ["Correct the mistake"], N_DUZELT,
     P("Melis is", "tall", ["short", "plump"], k=["tall"]),
     P("and she has", "curly hair", ["straight hair", "short hair"], k=["curly"])),
@@ -677,6 +733,12 @@ IKIZ = {
  ("m4i2", "c"): IK("Max is more outgoing than Leo.", ["Correct the mistake"], N_DUZELT,
     P("Kim? →", "Max", ["Leo", "Emma"], k=["max"]),
     P("is more outgoing than", "Leo", ["Max", "Amy"], k=["leo"])),
+ ("m4i3", "a"): IK("No. Nicole is older than Larry.", ["Is Larry older"], N_ISOLDER,
+    P("Cevap:", "No", ["Yes", "Maybe"], k=["no"]),
+    P("Kim daha büyük? →", "Nicole is older than Larry", ["Larry is older than Nicole", "Nicole is taller than Larry"], k=["nicole is older"])),
+ ("m4i3", "b"): IK("Yes, Nicole is taller than Larry.", ["Is Nicole taller"], N_ISOLDER,
+    P("Cevap:", "Yes", ["No", "Maybe"], k=["yes"]),
+    P("Kim daha uzun? →", "Nicole is taller than Larry", ["Larry is taller than Nicole", "Nicole is older than Larry"], k=["nicole is taller"])),
  ("m6i1", "a"): IK("No, she doesn't.", ["Does"], N_DOES,
     P("Cevap:", "No, she doesn't", ["Yes, she does", "No, she isn't"], hepsi=[["no"], ["doesn't", "does not", "doesnt"]])),
  ("m6i1", "b"): IK("Every day.", ["How often"], N_HOWOFTEN,
@@ -752,6 +814,27 @@ for q in Y.d["mebSorular"]:
             b = IKIZ.get((zid, m["harf"]))
             if b: m.update(b)
             else: raise SystemExit(f"ikiz verisi eksik: {zid} {m['harf']}")
+        # Gerçek sınavda yönerge yalnız İngilizce (MEB örneği de öyle): benzerlerde Türkçe parantez yok, MEB sorularında kalır
+        z["metin"][0] = re.sub(r"\s*\((?!Kitap)[^()]*\)", "", z["metin"][0])
+
+# Metinde altı noktalı kelimeye dokununca Türkçesi (motor: yzMetin; prova hariç). Çok temel kelimeler bilerek yok: göz gezdirirken ekran kalabalıklaşmasın.
+Y.d["sozluk"] = {
+    "complete": "tamamla", "sentences": "cümleler", "correct words": "doğru kelimeler", "correct names": "doğru isimler", "correct sports": "doğru sporlar",
+    "correct personality adjective": "doğru kişilik sıfatı", "correct the mistakes": "yanlışları düzelt", "correct the wrong sentences": "yanlış cümleleri düzelt", "rewrite": "yeniden yaz",
+    "write them again": "yeniden yaz", "fill in": "doldur", "blanks": "boşluklar", "according to": "-e göre", "dialogue": "diyalog", "chart": "grafik", "clues": "ipuçları",
+    "comparative forms": "karşılaştırma halleri", "comparative sentences": "karşılaştırma cümleleri", "adjectives": "sıfatlar", "full sentence": "tam cümle",
+    "hardworking": "çalışkan", "punctual": "dakik", "selfish": "bencil", "outgoing": "sosyal", "generous": "cömert", "patient": "sabırlı", "helpful": "yardımsever",
+    "stubborn": "inatçı", "cheerful": "neşeli", "talkative": "konuşkan", "shy": "utangaç", "quiet": "sessiz", "serious": "ciddi", "cute": "sevimli",
+    "plump": "tombul", "slim": "ince", "thin": "zayıf", "curly": "kıvırcık", "wavy": "dalgalı", "straight": "düz", "ginger": "kızıl", "blonde": "sarışın", "blond": "sarışın", "glasses": "gözlük",
+    "than": "-den daha", "tells lies": "yalan söyler", "tells the truth": "doğruyu söyler", "sharing": "paylaşmak", "arrives": "gelir, varır", "on time": "zamanında",
+    "meeting new people": "yeni insanlarla tanışmak", "change her mind": "fikrini değiştirmek", "easily": "kolayca", "studies hard": "çok çalışır", "each other": "birbiri",
+    "classmates": "sınıf arkadaşları", "wears": "takar, giyer", "calmly": "sakince", "presents": "hediyeler", "regularly": "düzenli olarak", "unfinished": "bitmemiş",
+    "weekdays": "hafta içi", "after school": "okuldan sonra", "hiking": "doğa yürüyüşü", "relaxed": "rahatlamış", "cousin": "kuzen", "energetic": "enerjik",
+    "successful": "başarılı", "rests": "dinlenir", "healthy": "sağlıklı", "racket": "raket", "net": "file", "kick": "tekmelemek", "goal": "kale", "players": "oyuncular",
+    "bow": "yay", "arrows": "oklar", "target": "hedef", "individual": "bireysel", "sneakers": "spor ayakkabı", "backpack": "sırt çantası", "forests": "ormanlar",
+    "court": "kort, saha", "basket": "pota", "helmet": "kask", "gloves": "eldiven", "gold medal": "altın madalya", "indoor": "kapalı alan",
+    "outdoor": "açık alan", "spectators": "seyirciler", "referees": "hakemler", "coaches": "antrenörler",
+}
 
 # =====================================================================
 # POLLY'NİN CEVABINI DÜZELT: 8 eksik (yarım cevap) + 4 yanılgı (yalnız Hatırla'daki sık hatalardan)
@@ -814,70 +897,87 @@ KH(K1, "yanilgi", "My brother doesn't like sharing his things. He is ______.", "
 # PROVA YAZILILARI (2 deneme; Senaryo 1 dağılımı: her konudan 1 soru, 25'er puan; puanlar tahmini). Bağlamlar MEB ve benzerlerinden farklı.
 # =====================================================================
 Y.prova(id="p1", ad="Prova 1", sorular=[
-    {"kazanim": K1, "puan": 25, "benzer": "m1", "metin": ["Complete the sentences with the correct words.",
+    {"kazanim": K1, "puan": 20, "benzer": "m1", "metin": ["Complete the sentences with the correct words.",
         "1. Ali always shares his lunch with his friends. He is ______.", "2. Deniz is never late for lessons. She is ______.",
         "3. Burak always tells the truth. He is ______.", "4. Ayşe never changes her mind. She is ______.", "5. Can likes meeting new people. He has a lot of friends. He is ______."],
      "maddeler": [M("a", "Complete the sentences 1–5 with the correct words.", "1. generous 2. punctual 3. honest 4. stubborn 5. outgoing",
-                    [A("1. generous", "generous"), A("2. punctual", "punctual"), A("3. honest", "honest"), A("4. stubborn", "stubborn"), A("5. outgoing", "outgoing")], "sifat", puan=25)]},
-    {"kazanim": K2, "puan": 25, "benzer": "m3", "metin": ["Look at the table and complete the sentences.",
+                    [A("1. generous", "generous"), A("2. punctual", "punctual"), A("3. honest", "honest"), A("4. stubborn", "stubborn"), A("5. outgoing", "outgoing")], "sifat", puan=20)]},
+    {"kazanim": K2, "puan": 20, "benzer": "m3", "metin": ["Look at the table and complete the sentences.",
         "1. Veli is ______ than Ali. (age)", "2. Ali is ______ than Veli. (age)", "3. Ali is ______ than Veli. (height)", "4. Veli is ______ than Ali. (weight)", "5. Ali is ______ than Veli. (personality)"],
      "svg": Z.tablo_svg(["", "ALI", "VELI"], [["AGE", "14", "12"], ["HEIGHT", "1.60 m", "1.48 m"], ["WEIGHT", "52 kg", "40 kg"], ["PERSONALITY", "hardworking ****", "hardworking *"]], [110, 115, 115],
                         etiket="Ali ve Veli tablosu: yaş 14 ve 12, boy 1.60 ve 1.48 m, kilo 52 ve 40 kg, çalışkanlık 4 ve 1 yıldız"),
      "maddeler": [M("a", "Look at the table and complete the sentences 1–5.", "1. younger 2. older 3. taller 4. lighter 5. more hardworking",
-                    [A("1. younger", "younger"), A("2. older", "older"), A("3. taller", "taller"), A("4. lighter / thinner", "lighter", "thinner", "slimmer"), A("5. more hardworking", "more hardworking", "more hard-working")], "er", puan=25)]},
-    {"kazanim": K3, "puan": 25, "benzer": "m9", "metin": ["Read the sentences and write the correct sports.",
+                    [A("1. younger", "younger"), A("2. older", "older"), A("3. taller", "taller"), A("4. lighter / thinner", "lighter", "thinner", "slimmer"), A("5. more hardworking", "more hardworking", "more hard-working")], "er", puan=20)]},
+    {"kazanim": K2, "puan": 20, "benzer": "m4", "metin": ["Read the text and correct the mistakes. Rewrite the sentences.",
+        "Burak is 15 years old, and his brother Emir is 9 years old. Burak is 172 cm tall and Emir is 135 cm tall. Burak has short curly brown hair and green eyes. "
+        "Emir has short straight black hair and brown eyes. Burak is more punctual than Emir; he is never late. Emir is more generous; he always shares his toys."],
+     "maddeler": [M("a", "Correct the mistake and rewrite: Emir is older than Burak.", "Emir is younger than Burak.",
+                    [A("younger (ya da: Burak is older)", "younger", "burak is older"), A("than Burak / than Emir", "than burak", "than emir")], "duzelt", puan=5),
+                  M("b", "Correct the mistake and rewrite: Emir is taller than Burak.", "Emir is shorter than Burak.",
+                    [A("shorter (ya da: Burak is taller)", "shorter", "burak is taller"), A("than Burak / than Emir", "than burak", "than emir")], "duzelt", puan=5),
+                  M("c", "Correct the mistake and rewrite: Burak has straight brown hair and brown eyes.", "Burak has curly brown hair and green eyes.",
+                    [A("curly (straight değil)", "curly"), A("green eyes (brown değil)", "green")], "duzelt", puan=5),
+                  M("d", "Correct the mistake and rewrite: Burak is more generous than Emir.", "Emir is more generous than Burak.",
+                    [AS("Emir önce", ["emir"], ["generous"]), A("than Burak", "than burak")], "duzelt", puan=5)]},
+    {"kazanim": K3, "puan": 20, "benzer": "m9", "metin": ["Read the sentences and write the correct sports.",
         "a) You need a ball and a basket. You must throw the ball into the basket. There are five players in each team.",
         "b) You need a bike and a helmet. You can do it in the park or on the road.",
         "c) You need a racket and a small ball. You play it on a court with two or four players.",
         "d) You do it in a pool or in the sea. Breaststroke and freestyle are two styles of it.",
         "e) You need a board. You do this sport on the waves in the sea."],
      "maddeler": [M("a", "Write the correct sports (a–e).", "a) basketball b) cycling c) tennis d) swimming e) surfing",
-                    [A("a) basketball", "basketball"), A("b) cycling", "cycling"), A("c) tennis", "tennis"), A("d) swimming", "swimming"), A("e) surfing", "surfing")], "spor", puan=25)]},
-    {"kazanim": K4, "puan": 25, "benzer": "m7", "metin": ["Fill in the blanks according to the chart.",
+                    [A("a) basketball", "basketball"), A("b) cycling", "cycling"), A("c) tennis", "tennis"), A("d) swimming", "swimming"), A("e) surfing", "surfing")], "spor", puan=20)]},
+    {"kazanim": K4, "puan": 20, "benzer": "m7", "metin": ["Fill in the blanks according to the chart.",
         "1. I ______ brush my teeth before bed. (100%)", "2. My sister ______ eats fast food. (0%)", "3. We ______ play football after school. (70%)",
         "4. My dad ______ reads a newspaper in the morning. (90%)", "5. I ______ watch TV at night. (50%)"],
      "svg": Z.piramit(),
      "maddeler": [M("a", "Fill in the blanks 1–5 according to the chart.", "1. always 2. never 3. often 4. usually 5. sometimes",
-                    [A("1. always", "always"), A("2. never", "never"), A("3. often", "often"), A("4. usually", "usually"), A("5. sometimes", "sometimes")], "siklik", puan=25)]}])
+                    [A("1. always", "always"), A("2. never", "never"), A("3. often", "often"), A("4. usually", "usually"), A("5. sometimes", "sometimes")], "siklik", puan=20)]}])
 
 Y.prova(id="p2", ad="Prova 2", sorular=[
-    {"kazanim": K1, "puan": 25, "benzer": "m5", "metin": ["Complete the table according to the dialogue.",
+    {"kazanim": K1, "puan": 20, "benzer": "m5", "metin": ["Complete the table according to the dialogue.",
         "Ece: Do you know my cousins, Arda and Selin?", "Mert: No, I don't. What are they like?",
         "Ece: Arda is tall and thin. He has short black hair and green eyes. He is very honest and helpful.", "Mert: And Selin?",
         "Ece: Selin is short and she has long curly ginger hair. She is funny and outgoing. She loves parties.", "Mert: So, Selin is more social than Arda."],
      "maddeler": [M("a", "Complete the table for ARDA: APPEARANCE and PERSONALITY.", "Appearance: tall, thin, short black hair, green eyes. Personality: honest, helpful.",
-                    [A("tall", "tall"), A("thin", "thin"), A("green eyes / black hair", "green", "black"), A("honest", "honest"), A("helpful", "helpful")], "tablo1", puan=12),
+                    [A("tall", "tall"), A("thin", "thin"), A("green eyes / black hair", "green", "black"), A("honest", "honest"), A("helpful", "helpful")], "tablo1", puan=10),
                   M("b", "Complete the table for SELIN: APPEARANCE and PERSONALITY.", "Appearance: short, long curly ginger hair. Personality: funny, outgoing.",
-                    [A("short", "short"), A("curly", "curly"), A("ginger hair", "ginger"), A("funny", "funny"), A("outgoing", "outgoing", "social")], "tablo1", puan=13)]},
-    {"kazanim": K2, "puan": 25, "benzer": "m4", "metin": ["Read the text and correct the mistakes. Rewrite the sentences.",
+                    [A("short", "short"), A("curly", "curly"), A("ginger hair", "ginger"), A("funny", "funny"), A("outgoing", "outgoing", "social")], "tablo1", puan=10)]},
+    {"kazanim": K2, "puan": 20, "benzer": "m4", "metin": ["Read the text and correct the mistakes. Rewrite the sentences.",
         "Kerem is 13 years old, and his sister Zeynep is 10 years old. Kerem is 160 cm tall and Zeynep is 140 cm tall. Kerem has short straight black hair and brown eyes. "
         "Zeynep has long wavy brown hair and blue eyes. Zeynep is more outgoing than Kerem; she has a lot of friends. Kerem is more punctual; he is never late."],
      "maddeler": [M("a", "Correct the mistake and rewrite: Zeynep is older than Kerem.", "Zeynep is younger than Kerem.",
-                    [A("younger (ya da: Kerem is older)", "younger", "kerem is older"), A("than Kerem / than Zeynep", "than kerem", "than zeynep")], "duzelt", puan=6),
+                    [A("younger (ya da: Kerem is older)", "younger", "kerem is older"), A("than Kerem / than Zeynep", "than kerem", "than zeynep")], "duzelt", puan=5),
                   M("b", "Correct the mistake and rewrite: Kerem is shorter than Zeynep.", "Kerem is taller than Zeynep.",
-                    [A("taller (ya da: Zeynep is shorter)", "taller", "zeynep is shorter"), A("than Zeynep / than Kerem", "than zeynep", "than kerem")], "duzelt", puan=6),
+                    [A("taller (ya da: Zeynep is shorter)", "taller", "zeynep is shorter"), A("than Zeynep / than Kerem", "than zeynep", "than kerem")], "duzelt", puan=5),
                   M("c", "Correct the mistake and rewrite: Zeynep has short wavy hair and blue eyes.", "Zeynep has long wavy hair and blue eyes.",
-                    [A("long (short değil)", "long"), A("wavy hair and blue eyes", "blue")], "duzelt", puan=6),
+                    [A("long (short değil)", "long"), A("wavy hair and blue eyes", "blue")], "duzelt", puan=5),
                   M("d", "Correct the mistake and rewrite: Kerem is more outgoing than Zeynep.", "Zeynep is more outgoing than Kerem.",
-                    [AS("Zeynep önce", ["zeynep"], ["outgoing"]), A("than Kerem", "than kerem")], "duzelt", puan=7)]},
-    {"kazanim": K3, "puan": 25, "benzer": "m6", "metin": ["Answer the questions according to the text.",
+                    [AS("Zeynep önce", ["zeynep"], ["outgoing"]), A("than Kerem", "than kerem")], "duzelt", puan=5)]},
+    {"kazanim": K2, "puan": 20, "benzer": "m3", "metin": ["Look at the table and complete the sentences.",
+        "1. Aslı is ______ than Nehir. (age)", "2. Nehir is ______ than Aslı. (age)", "3. Aslı is ______ than Nehir. (height)", "4. Nehir is ______ than Aslı. (weight)", "5. Nehir is ______ than Aslı. (personality)"],
+     "svg": Z.tablo_svg(["", "ASLI", "NEHIR"], [["AGE", "16", "13"], ["HEIGHT", "1.58 m", "1.70 m"], ["WEIGHT", "55 kg", "49 kg"], ["PERSONALITY", "honest **", "honest *****"]], [110, 115, 115],
+                        etiket="Aslı ve Nehir tablosu: yaş 16 ve 13, boy 1.58 ve 1.70 m, kilo 55 ve 49 kg, dürüstlük 2 ve 5 yıldız"),
+     "maddeler": [M("a", "Look at the table and complete the sentences 1–5.", "1. older 2. younger 3. shorter 4. lighter 5. more honest",
+                    [A("1. older", "older"), A("2. younger", "younger"), A("3. shorter", "shorter"), A("4. lighter / thinner", "lighter", "thinner", "slimmer"), A("5. more honest", "more honest")], "er", puan=20)]},
+    {"kazanim": K3, "puan": 20, "benzer": "m6", "metin": ["Answer the questions according to the text.",
         "Hi! I'm Emre and I'm 13 years old. I get up at seven every day. After school, I play basketball with my classmates. I go swimming on Mondays and Wednesdays. "
         "On Saturdays, I usually go cycling with my dad. In the evenings, I do my homework. I never eat junk food because I want to be healthy."],
      "maddeler": [M("a", "What does Emre do after school?", "He plays basketball with his classmates.",
-                    [A("plays (play)", "plays", "play"), A("basketball", "basketball")], "soru", puan=6),
+                    [A("plays (play)", "plays", "play"), A("basketball", "basketball")], "soru", puan=5),
                   M("b", "How often does he go swimming?", "He goes swimming twice a week.",
-                    [A("twice (two times)", "twice", "two times", "2 times"), A("a week", "week")], "soru", puan=6),
+                    [A("twice (two times)", "twice", "two times", "2 times"), A("a week", "week")], "soru", puan=5),
                   M("c", "What does Emre do on Saturdays?", "He usually goes cycling with his dad.",
-                    [A("goes cycling", "cycling"), A("with his dad", "dad")], "soru", puan=6),
+                    [A("goes cycling", "cycling"), A("with his dad", "dad")], "soru", puan=5),
                   M("d", "Does he eat junk food?", "No, he doesn't.",
-                    [A("No", "no"), A("he doesn't", "doesn't", "does not", "doesnt")], "soru", puan=7)]},
-    {"kazanim": K4, "puan": 25, "benzer": "m10", "metin": ["Complete the table according to the dialogue.",
+                    [A("No", "no"), A("he doesn't", "doesn't", "does not", "doesnt")], "soru", puan=5)]},
+    {"kazanim": K4, "puan": 20, "benzer": "m10", "metin": ["Complete the table according to the dialogue.",
         "Ayşe: My favourite sport is football. I play it twice a week in the school garden. We need a ball and sports shoes.",
         "Tom: I love skiing. I go skiing once a week in winter. I do it in the mountains. I need skis and warm clothes.",
         "Ayşe: Wow! That sounds fun."],
      "maddeler": [M("a", "Complete the table for AYŞE: Sport, Equipment, Place, Frequency.", "Sport: football · Equipment: ball and sports shoes · Place: school garden · Frequency: twice a week",
-                    [A("Sport: football", "football"), A("Equipment: ball, sports shoes", "shoe"), A("Place: school garden", "garden"), A("Frequency: twice a week", "twice", "two times", "2 times")], "tablo2", puan=12),
+                    [A("Sport: football", "football"), A("Equipment: ball, sports shoes", "shoe"), A("Place: school garden", "garden"), A("Frequency: twice a week", "twice", "two times", "2 times")], "tablo2", puan=10),
                   M("b", "Complete the table for TOM: Sport, Equipment, Place, Frequency.", "Sport: skiing · Equipment: skis and warm clothes · Place: mountains · Frequency: once a week",
-                    [A("Sport: skiing", "skiing"), A("Equipment: skis, warm clothes", "skis", "clothes"), A("Place: mountains", "mountain"), A("Frequency: once a week", "once")], "tablo2", puan=13)]}])
+                    [A("Sport: skiing", "skiing"), A("Equipment: skis, warm clothes", "skis", "clothes"), A("Place: mountains", "mountain"), A("Frequency: once a week", "once")], "tablo2", puan=10)]}])
 
 Y.yaz()

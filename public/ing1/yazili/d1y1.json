@@ -7,20 +7,20 @@
  "tarih": "2026-11-12",
  "dagilim": {
   "E7.1.R1": 1,
-  "E7.1.W1": 1,
+  "E7.1.W1": 2,
   "E7.2.R1": 1,
   "E7.2.W1": 1
  },
  "mebToplam": 10,
  "mebHaric": [],
- "giris": "Okulun seçtiği Senaryo 1'de <b>4 soru</b> var: her konudan 1 soru, her soruda 4–5 küçük madde. Önce <b>★★★ Banko</b> soruları sağlamla: cevap tek kelime ya da metinden kopyalanan bir parça. Kalıbını bilirsen puan kesin.",
+ "giris": "Okulun seçtiği Senaryo 1'de <b>5 soru</b> var: görünüş ve kişilik 1, <b>karşılaştırma 2</b>, spor metni 1, rutinler 1. Her soruda birkaç küçük madde olur. Önce <b>★★★ Banko</b> soruları sağlamla: cevap tek kelime ya da metinden kopyalanan bir parça. Kalıbını bilirsen puan kesin.",
  "kapsamDisi": [
   "Unit 3: Biographies, Unit 4: Wild Animals, Unit 5: Television",
   "Dinleme (Listening) ve konuşma (Speaking) etkinlikleri"
  ],
- "puanNotu": "Puanlar tahminidir: 4 soru × 25 puan varsaydık; okul farklı dağıtabilir. Her konudan hangi MEB soru tipinin geleceği bilinmiyor; bu yüzden her konunun 2–3 tipine çalışıyoruz.",
+ "puanNotu": "Puanlar tahminidir: 5 soru × 20 puan varsaydık; okul farklı dağıtabilir. Her konudan hangi MEB soru tipinin geleceği bilinmiyor; bu yüzden her konunun 2–3 tipine çalışıyoruz.",
  "kaynakNotu": "Sorular MEB'in yayımladığı 'Yazılıya Hazırlanıyorum 7. Sınıf İngilizce 1. Dönem 1. Yazılı' örneklerine, ders kitabına (Bilim Kültür Yayınları) ve yazilihocam.com yazılı örneklerine dayanır. Kişi çizimleri özgündür.",
- "soruGiris": "Bunlar MEB'in örnek soruları; yazılıda <b>benzerleri</b> çıkacak. <b>★★★ Banko</b> olanlarla başla. Cevabı kısa yaz: tek kelime ya da metinden kopyaladığın parça yeter.",
+ "soruGiris": "Bunlar MEB'in örnek soruları; yazılıda <b>benzerleri</b> çıkacak. <b>★★★ Banko</b> olanlarla başla. Cevabı kısa yaz: tek kelime ya da metinden kopyaladığın parça yeter. Metinde altı noktalı kelimeye dokunursan Türkçesi çıkar.",
  "kazanimAd": "konu",
  "kazanimlar": [
   {
@@ -95,6 +95,14 @@
     {
      "c": "Tablodaki APPEARANCE sütununa {tall, slim, dark hair|serious, hardworking} yazılır.",
      "s": "cevap kalıbı"
+    },
+    {
+     "c": "Complete the sentences with the correct words. = {Cümleleri doğru kelimelerle tamamla.|Yanlışları düzelt.|Soruları cevapla.}",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "Complete the table according to the dialogue. = {Diyaloğa göre tabloyu doldur.|Metne göre soruları cevapla.|Resimlere isim yaz.}",
+     "s": "sınav yönergesi"
     }
    ]
   },
@@ -102,7 +110,7 @@
    "kod": "E7.1.W1",
    "ad": "Students will be able to write simple pieces to compare people.",
    "kisa": "Karşılaştırma (yazma)",
-   "soru": 1,
+   "soru": 2,
    "renk": "#e8590c",
    "konular": [
     "u1k3"
@@ -168,6 +176,14 @@
     {
      "c": "Yanlışı düzeltirken {yalnız yanlış kelimeyi değiştir|bütün cümleyi baştan uydur}.",
      "s": "cevap kalıbı"
+    },
+    {
+     "c": "Look at the table and complete the sentences. = {Tabloya bak, cümleleri tamamla.|Tabloyu doldur.|Doğru resmi seç.}",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "Correct the mistakes. Rewrite the sentences. = {Yanlışları düzelt, cümleleri yeniden yaz.|Boşlukları doldur.|Soruları cevapla.}",
+     "s": "sınav yönergesi"
     }
    ]
   },
@@ -242,6 +258,14 @@
     {
      "c": "Swimming is an {individual|team} sport.",
      "s": "s. 32"
+    },
+    {
+     "c": "Answer the questions according to the text. = {Metne göre soruları cevapla.|Tabloya göre cümleleri tamamla.|Metni yeniden yaz.}",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "Read the sentences and write the correct sports. = {Cümleleri oku, doğru spor adlarını yaz.|Sevdiğin sporları yaz.|Sporları resimlerle eşleştir.}",
+     "s": "sınav yönergesi"
     }
    ]
   },
@@ -316,6 +340,14 @@
     {
      "c": "Why sorusunun cevabı {Because|So|And} ile başlar.",
      "s": "cevap kalıbı"
+    },
+    {
+     "c": "Fill in the blanks according to the chart. = {Grafiğe göre boşlukları doldur.|Diyaloğa göre tabloyu doldur.|Grafiği yeniden çiz.}",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "according to the dialogue = {diyaloğa göre|metne göre|grafiğe göre}",
+     "s": "sınav yönergesi"
     }
    ]
   }
@@ -525,7 +557,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the clues and write the correct personality adjective. (İpuçlarını oku, doğru kişilik sıfatını yaz.)",
+      "Read the clues and write the correct personality adjective.",
       "Word bank: patient – helpful – punctual – generous – hardworking – selfish",
       "1. Mert waits calmly when something takes a long time. Mert is ______.",
       "2. Elif helps her classmates when they have difficulty with their homework. Elif is ______.",
@@ -644,7 +676,7 @@
     },
     {
      "metin": [
-      "Read the classroom notes and answer the questions. (Sınıf notlarını oku, soruları cevapla.)",
+      "Read the classroom notes and answer the questions.",
       "Our teacher gives us a group project. Ece always shares her materials with her friends and helps them. Kerem never arrives late for group meetings. Mert loves meeting new people and he has a lot of friends."
      ],
      "maddeler": [
@@ -855,7 +887,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the sentences and write the correct names. (Cümleleri oku, doğru isimleri yaz.)",
+      "Read the sentences and write the correct names.",
       "Mina has long wavy brown hair and brown eyes.",
       "Lara has short straight blonde hair and blue eyes.",
       "Bora is plump with short black hair.",
@@ -954,7 +986,7 @@
     },
     {
      "metin": [
-      "Read the text and answer the questions. (Metni oku, soruları cevapla.)",
+      "Read the text and answer the questions.",
       "Ali is tall and thin. He wears glasses. Ece is cute with long ginger hair. Can is plump with short black hair. Defne is beautiful with blue eyes and blonde hair."
      ],
      "maddeler": [
@@ -1253,7 +1285,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the text and complete the table. (Metni oku, tabloyu doldur.)",
+      "Read the text and complete the table.",
       "Kerem and Arda are classmates, but they are quite different. Kerem has short curly hair and brown eyes. He is cheerful and talkative, so he easily makes new friends. Arda has straight black hair and green eyes. He is quieter than Kerem, but he is very patient and helpful. Arda is also taller than Kerem."
      ],
      "maddeler": [
@@ -1411,7 +1443,7 @@
     },
     {
      "metin": [
-      "Read the text and complete the table. (Metni oku, tabloyu doldur.)",
+      "Read the text and complete the table.",
       "Betty and Lucy are sisters, but they are very different. Betty has long wavy blonde hair and brown eyes. Lucy is short with straight dark hair and blue eyes. Betty is more hardworking than Lucy. She always does her homework and studies hard. She is also more outgoing than Lucy. She has a lot of friends. Lucy is shy and quiet. She loves being alone. She is sometimes stubborn. She never changes her mind."
      ],
      "maddeler": [
@@ -1708,7 +1740,7 @@
    "ikizler": [
     {
      "metin": [
-      "Look at the table and complete the sentences. (Tabloya bak, cümleleri tamamla.)",
+      "Look at the table and complete the sentences.",
       "1. Duru is ______ than Ece. (young)",
       "2. Duru is ______ than Ece. (tall)",
       "3. Duru is ______ than Ece. (hardworking)",
@@ -1827,7 +1859,7 @@
     },
     {
      "metin": [
-      "Look at the table and complete the sentences. (Tabloya bak, cümleleri tamamla.)",
+      "Look at the table and complete the sentences.",
       "1. Can is ______ than Mert. (age)",
       "2. Mert is ______ than Can. (age)",
       "3. Mert is ______ than Can. (height)",
@@ -1943,6 +1975,343 @@
      ],
      "kazanim": "E7.1.W1",
      "id": "m3i2"
+    },
+    {
+     "metin": [
+      "Fill in the blanks using the comparative forms of the adjectives.",
+      "1. Tayfun is ______ than Ahmet. (slim)",
+      "2. Burak is ______ than Selim. (funny)",
+      "3. My brother is a ______ football player than me. (good)",
+      "4. Elif is ______ than her sister. (young)",
+      "5. Zeynep is ______ than Selin. (generous)"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Fill in the blanks 1–5 using the comparative forms.",
+       "formul": "er",
+       "cevap": "1. Tayfun is slimmer than Ahmet. 2. Burak is funnier than Selim. 3. My brother is a better football player than me. 4. Elif is younger than her sister. 5. Zeynep is more generous than Selin.",
+       "anahtarlar": [
+        {
+         "ad": "1. slimmer",
+         "k": [
+          "slimmer"
+         ]
+        },
+        {
+         "ad": "2. funnier",
+         "k": [
+          "funnier"
+         ]
+        },
+        {
+         "ad": "3. better",
+         "k": [
+          "better"
+         ]
+        },
+        {
+         "ad": "4. younger",
+         "k": [
+          "younger"
+         ]
+        },
+        {
+         "ad": "5. more generous",
+         "k": [
+          "more generous"
+         ]
+        }
+       ],
+       "kisaCevap": "slimmer, funnier, better, younger, more generous",
+       "tetik": [
+        "comparative forms"
+       ],
+       "kalipNot": "Parantezdeki sıfata bak → kısa: -er · uzun: more … · good → better.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1. slim →",
+          "ornek": "slimmer",
+          "havuz": [
+           "slimer",
+           "more slim"
+          ],
+          "k": [
+           "slimmer"
+          ]
+         },
+         {
+          "bas": "2. funny →",
+          "ornek": "funnier",
+          "havuz": [
+           "funnyer",
+           "more funny"
+          ],
+          "k": [
+           "funnier"
+          ]
+         },
+         {
+          "bas": "3. good →",
+          "ornek": "better",
+          "havuz": [
+           "gooder",
+           "more good"
+          ],
+          "k": [
+           "better"
+          ]
+         },
+         {
+          "bas": "4. young →",
+          "ornek": "younger",
+          "havuz": [
+           "youngest",
+           "more young"
+          ],
+          "k": [
+           "younger"
+          ]
+         },
+         {
+          "bas": "5. generous →",
+          "ornek": "more generous",
+          "havuz": [
+           "generouser",
+           "very generous"
+          ],
+          "k": [
+           "more generous"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "E7.1.W1",
+     "id": "m3i3"
+    },
+    {
+     "metin": [
+      "Look at the information about Berk and Efe. Write comparative sentences.",
+      "Use these adjectives: old – tall – hardworking – punctual"
+     ],
+     "svg": "<svg viewBox='0 0 340 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Berk ve Efe tablosu: yaş 14 ve 12, boy 150 ve 162 cm, ders çalışma 1 ve 3 saat, okula 8.20 ve 7.50'de gelir' font-family='Fredoka, Nunito, sans-serif'><rect x='5.0' y='6' width='330' height='32' rx='6' fill='#2b3560'/><text x='53.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'></text><text x='159.5' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>BERK</text><text x='276.5' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>EFE</text><text x='53.0' y='58.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>AGE</text><text x='159.5' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>14</text><text x='276.5' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>12</text><line x1='5.0' y1='69' x2='335.0' y2='69' stroke='#59627f' stroke-width='1'/><text x='53.0' y='89.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>HEIGHT</text><text x='159.5' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>150 cm</text><text x='276.5' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>162 cm</text><line x1='5.0' y1='100' x2='335.0' y2='100' stroke='#59627f' stroke-width='1'/><text x='53.0' y='120.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>STUDIES</text><text x='159.5' y='120.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>1 hour a day</text><text x='276.5' y='120.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>3 hours a day</text><line x1='5.0' y1='131' x2='335.0' y2='131' stroke='#59627f' stroke-width='1'/><text x='53.0' y='151.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>AT SCHOOL</text><text x='159.5' y='151.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>at 8.20</text><text x='276.5' y='151.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>at 7.50</text><line x1='5.0' y1='162' x2='335.0' y2='162' stroke='#59627f' stroke-width='1'/><line x1='101.0' y1='6' x2='101.0' y2='162' stroke='#59627f' stroke-width='1'/><line x1='218.0' y1='6' x2='218.0' y2='162' stroke='#59627f' stroke-width='1'/></svg>",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Write a comparative sentence with “old”.",
+       "formul": "er",
+       "cevap": "Berk is older than Efe.",
+       "anahtarlar": [
+        {
+         "ad": "older",
+         "k": [
+          "older"
+         ]
+        },
+        {
+         "ad": "than Efe",
+         "k": [
+          "than efe"
+         ]
+        }
+       ],
+       "kisaCevap": "Berk is older than Efe.",
+       "tetik": [
+        "comparative sentence"
+       ],
+       "kalipNot": "Verilen sıfatla tam cümle: Kim + is + sıfat-er / more sıfat + than + kim.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Berk is",
+          "ornek": "older",
+          "havuz": [
+           "younger",
+           "more old"
+          ],
+          "k": [
+           "older"
+          ]
+         },
+         {
+          "bas": "… than",
+          "ornek": "Efe",
+          "havuz": [
+           "Berk",
+           "Ali"
+          ],
+          "k": [
+           "than efe",
+           "efe"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Write a comparative sentence with “tall”.",
+       "formul": "er",
+       "cevap": "Efe is taller than Berk.",
+       "anahtarlar": [
+        {
+         "ad": "taller",
+         "k": [
+          "taller"
+         ]
+        },
+        {
+         "ad": "than Berk",
+         "k": [
+          "than berk"
+         ]
+        }
+       ],
+       "kisaCevap": "Efe is taller than Berk.",
+       "tetik": [
+        "comparative sentence"
+       ],
+       "kalipNot": "Verilen sıfatla tam cümle: Kim + is + sıfat-er / more sıfat + than + kim.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Efe is",
+          "ornek": "taller",
+          "havuz": [
+           "shorter",
+           "more tall"
+          ],
+          "k": [
+           "taller"
+          ]
+         },
+         {
+          "bas": "… than",
+          "ornek": "Berk",
+          "havuz": [
+           "Efe",
+           "Ali"
+          ],
+          "k": [
+           "than berk",
+           "berk"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "c",
+       "soru": "Write a comparative sentence with “hardworking”.",
+       "formul": "er",
+       "cevap": "Efe is more hardworking than Berk.",
+       "anahtarlar": [
+        {
+         "ad": "more hardworking",
+         "k": [
+          "more hardworking",
+          "more hard-working"
+         ]
+        },
+        {
+         "ad": "than Berk",
+         "k": [
+          "than berk"
+         ]
+        }
+       ],
+       "kisaCevap": "Efe is more hardworking than Berk.",
+       "tetik": [
+        "comparative sentence"
+       ],
+       "kalipNot": "Verilen sıfatla tam cümle: Kim + is + sıfat-er / more sıfat + than + kim.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Efe is",
+          "ornek": "more hardworking",
+          "havuz": [
+           "hardworkinger",
+           "very hardworking"
+          ],
+          "k": [
+           "more hardworking",
+           "more hard-working"
+          ]
+         },
+         {
+          "bas": "… than",
+          "ornek": "Berk",
+          "havuz": [
+           "Efe",
+           "Ali"
+          ],
+          "k": [
+           "than berk",
+           "berk"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "d",
+       "soru": "Write a comparative sentence with “punctual”.",
+       "formul": "er",
+       "cevap": "Efe is more punctual than Berk.",
+       "anahtarlar": [
+        {
+         "ad": "more punctual",
+         "k": [
+          "more punctual"
+         ]
+        },
+        {
+         "ad": "than Berk",
+         "k": [
+          "than berk"
+         ]
+        }
+       ],
+       "kisaCevap": "Efe is more punctual than Berk.",
+       "tetik": [
+        "comparative sentence"
+       ],
+       "kalipNot": "Verilen sıfatla tam cümle: Kim + is + sıfat-er / more sıfat + than + kim.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Efe is",
+          "ornek": "more punctual",
+          "havuz": [
+           "punctualer",
+           "very punctual"
+          ],
+          "k": [
+           "more punctual"
+          ]
+         },
+         {
+          "bas": "… than",
+          "ornek": "Berk",
+          "havuz": [
+           "Efe",
+           "Ali"
+          ],
+          "k": [
+           "than berk",
+           "berk"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "E7.1.W1",
+     "id": "m3i4"
     }
    ]
   },
@@ -1950,7 +2319,7 @@
    "id": "m4",
    "no": 4,
    "kazanim": "E7.1.W1",
-   "oncelik": 2,
+   "oncelik": 3,
    "metin": [
     "Read the text and correct the mistakes. Rewrite the sentences. (Metni oku, yanlışları düzelt, cümleleri yeniden yaz.)",
     "Amy is 16 years old, and her sister Emma is 12 years old. Amy is 165 cm tall and Emma is 160 cm tall. Amy is slim with straight blonde hair and brown eyes. Emma has short wavy hair and green eyes. Amy is more hardworking; she always studies hard and does her homework. Emma is more outgoing than her sister; she likes meeting new people. Amy can sometimes be stubborn. She doesn't change her mind easily."
@@ -2274,7 +2643,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the character clues. Correct the wrong sentences and write them again. (İpuçlarını oku, yanlış cümleleri düzeltip yeniden yaz.)",
+      "Read the character clues. Correct the wrong sentences and write them again.",
       "Melis: 165 cm (tall) · long curly brown hair · slim",
       "Bora: 150 cm (short) · short black hair · plump"
      ],
@@ -2387,7 +2756,7 @@
     },
     {
      "metin": [
-      "Read the text and correct the mistakes. Rewrite the sentences. (Metni oku, yanlışları düzelt, cümleleri yeniden yaz.)",
+      "Read the text and correct the mistakes. Rewrite the sentences.",
       "Leo is 14 years old, and his brother Max is 11 years old. Leo is 170 cm tall and Max is 150 cm tall. Leo has curly black hair and blue eyes. Max has straight brown hair and green eyes. Max is more outgoing than Leo; he has a lot of friends. Leo is more hardworking; he always does his homework."
      ],
      "maddeler": [
@@ -2554,6 +2923,120 @@
      ],
      "kazanim": "E7.1.W1",
      "id": "m4i2"
+    },
+    {
+     "metin": [
+      "Look at the table and answer each question in one full sentence."
+     ],
+     "svg": "<svg viewBox='0 0 340 108' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Larry ve Nicole tablosu: yaş 13 ve 15, boy 1.60 ve 1.67 m' font-family='Fredoka, Nunito, sans-serif'><rect x='5.0' y='6' width='330' height='32' rx='6' fill='#2b3560'/><text x='70.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Name</text><text x='185.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Age</text><text x='285.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Height</text><text x='70.0' y='58.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>Larry</text><text x='185.0' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>13</text><text x='285.0' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>1.60 m</text><line x1='5.0' y1='69' x2='335.0' y2='69' stroke='#59627f' stroke-width='1'/><text x='70.0' y='89.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>Nicole</text><text x='185.0' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>15</text><text x='285.0' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>1.67 m</text><line x1='5.0' y1='100' x2='335.0' y2='100' stroke='#59627f' stroke-width='1'/><line x1='135.0' y1='6' x2='135.0' y2='100' stroke='#59627f' stroke-width='1'/><line x1='235.0' y1='6' x2='235.0' y2='100' stroke='#59627f' stroke-width='1'/></svg>",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Is Larry older than Nicole? Answer in one full sentence.",
+       "formul": "duzelt",
+       "cevap": "No, Larry is not older than Nicole. Nicole is older than Larry.",
+       "anahtarlar": [
+        {
+         "ad": "No",
+         "k": [
+          "no"
+         ]
+        },
+        {
+         "ad": "Nicole is older (ya da: Larry is younger)",
+         "k": [
+          "nicole is older",
+          "larry is younger"
+         ]
+        }
+       ],
+       "kisaCevap": "No. Nicole is older than Larry.",
+       "tetik": [
+        "Is Larry older"
+       ],
+       "kalipNot": "Is … older than …? → Tabloya bak: Yes / No + doğru cümle.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Cevap:",
+          "ornek": "No",
+          "havuz": [
+           "Yes",
+           "Maybe"
+          ],
+          "k": [
+           "no"
+          ]
+         },
+         {
+          "bas": "Kim daha büyük? →",
+          "ornek": "Nicole is older than Larry",
+          "havuz": [
+           "Larry is older than Nicole",
+           "Nicole is taller than Larry"
+          ],
+          "k": [
+           "nicole is older"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Is Nicole taller than Larry? Answer in one full sentence.",
+       "formul": "duzelt",
+       "cevap": "Yes, Nicole is taller than Larry.",
+       "anahtarlar": [
+        {
+         "ad": "Yes",
+         "k": [
+          "yes"
+         ]
+        },
+        {
+         "ad": "Nicole is taller",
+         "k": [
+          "nicole is taller",
+          "larry is shorter"
+         ]
+        }
+       ],
+       "kisaCevap": "Yes, Nicole is taller than Larry.",
+       "tetik": [
+        "Is Nicole taller"
+       ],
+       "kalipNot": "Is … older than …? → Tabloya bak: Yes / No + doğru cümle.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Cevap:",
+          "ornek": "Yes",
+          "havuz": [
+           "No",
+           "Maybe"
+          ],
+          "k": [
+           "yes"
+          ]
+         },
+         {
+          "bas": "Kim daha uzun? →",
+          "ornek": "Nicole is taller than Larry",
+          "havuz": [
+           "Larry is taller than Nicole",
+           "Nicole is older than Larry"
+          ],
+          "k": [
+           "nicole is taller"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "E7.1.W1",
+     "id": "m4i3"
     }
    ]
   },
@@ -2811,7 +3294,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the text and answer the questions. (Metni oku, soruları cevapla.)",
+      "Read the text and answer the questions.",
       "Hello! I am Sue. I am a swimmer. I get up early every day. I eat healthy food. Then, I go to the swimming pool. I have training three hours every day. I want to win a gold medal at the Olympics."
      ],
      "maddeler": [
@@ -2959,7 +3442,7 @@
     },
     {
      "metin": [
-      "Read Deniz's sports diary and answer the questions. (Deniz'in spor günlüğünü oku, soruları cevapla.)",
+      "Read Deniz's sports diary and answer the questions.",
       "Hi! I'm Deniz. I am a young swimmer. I get up at half past six every morning. I have eggs, cheese and milk for breakfast because I want to stay healthy. I go to the swimming pool after school and practise for one and a half hours. I don't train on Sundays because I spend time with my family. My dream is to win a national swimming competition one day."
      ],
      "maddeler": [
@@ -3238,7 +3721,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the sentences and write the correct sports. (Cümleleri oku, doğru sporu yaz.)",
+      "Read the sentences and write the correct sports.",
       "a) You play it on a court. You hit a ball with a racket to throw it over the net.",
       "b) It is a team game. Five players in each team play the game. You throw the ball into the basket.",
       "c) It is an individual sport. You move in water using your arms and legs.",
@@ -3354,7 +3837,7 @@
     },
     {
      "metin": [
-      "Read the sports reporter's notes and answer the questions. (Spor muhabirinin notlarını oku, soruları cevapla.)",
+      "Read the sports reporter's notes and answer the questions.",
       "Today, I am at a basketball match. The players are playing on a court in a large sports hall. Basketball is usually an indoor sport. The players need a basketball and comfortable sports shoes. There are also two referees, coaches and many spectators in the hall."
      ],
      "maddeler": [
@@ -3614,7 +4097,7 @@
    "ikizler": [
     {
      "metin": [
-      "Look at Eren's sports habits. Fill in the blanks with always, usually, sometimes or never. (Eren'in spor alışkanlıklarına bak, boşlukları doldur.)",
+      "Look at Eren's sports habits. Fill in the blanks with always, usually, sometimes or never.",
       "1. Eren ______ brushes his teeth.",
       "2. He ______ plays basketball.",
       "3. He ______ goes swimming.",
@@ -3713,7 +4196,7 @@
     },
     {
      "metin": [
-      "Fill in the blanks according to the chart. (Grafiğe göre boşlukları doldur.)",
+      "Fill in the blanks according to the chart.",
       "1. I ______ eat breakfast. (100%)",
       "2. My brother ______ plays video games. (0%)",
       "3. We ______ go to the cinema. (50%)",
@@ -4058,7 +4541,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the sports card and complete the table. (Spor kartını oku, tabloyu doldur.)",
+      "Read the sports card and complete the table.",
       "Meet Leo. Leo enjoys outdoor sports. His favourite sport is cycling. He usually rides his bike in the park at weekends. He always wears a helmet to protect his head and uses gloves to keep his hands safe and comfortable."
      ],
      "maddeler": [
@@ -4158,7 +4641,7 @@
     },
     {
      "metin": [
-      "Complete the table according to the dialogue. (Diyaloğa göre tabloyu doldur.)",
+      "Complete the table according to the dialogue.",
       "Mert: My favourite sport is swimming. I go swimming three times a week. I swim at the swimming pool near my house. I need a swimsuit and a swimming cap.",
       "Elif: I love volleyball. I play it once a week in the school gym. We need a ball and a net.",
       "Mert: That's great!"
@@ -4553,7 +5036,7 @@
    "ikizler": [
     {
      "metin": [
-      "Read the text and answer the questions. (Metni oku, soruları cevapla.)",
+      "Read the text and answer the questions.",
       "Hello! My name is Daniel. I am a basketball player. I usually wake up at seven o'clock on weekdays. I have eggs and milk for breakfast because I want to stay healthy. After school, I go to the sports centre. I practise basketball for two hours four times a week. My dream is to become a successful basketball player in the future."
      ],
      "maddeler": [
@@ -4703,7 +5186,7 @@
     },
     {
      "metin": [
-      "Read Laura's interview and answer the questions. (Laura'nın röportajını oku, soruları cevapla.) (Kitap s. 41)",
+      "Read Laura's interview and answer the questions. (Kitap s. 41)",
       "I get up early every day. I have a big breakfast, and go to the gym to exercise. After lunch, I have a rest. Then, I meet my coach at the swimming pool for the second part of my exercise. I train four hours in a day and six days in a week. I always eat healthy food, never drink energy drinks."
      ],
      "maddeler": [
@@ -5153,7 +5636,7 @@
    "sorular": [
     {
      "kazanim": "E7.1.R1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m1",
      "metin": [
       "Complete the sentences with the correct words.",
@@ -5201,13 +5684,13 @@
          ]
         }
        ],
-       "puan": 25
+       "puan": 20
       }
      ]
     },
     {
      "kazanim": "E7.1.W1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m3",
      "metin": [
       "Look at the table and complete the sentences.",
@@ -5259,13 +5742,117 @@
          ]
         }
        ],
-       "puan": 25
+       "puan": 20
+      }
+     ]
+    },
+    {
+     "kazanim": "E7.1.W1",
+     "puan": 20,
+     "benzer": "m4",
+     "metin": [
+      "Read the text and correct the mistakes. Rewrite the sentences.",
+      "Burak is 15 years old, and his brother Emir is 9 years old. Burak is 172 cm tall and Emir is 135 cm tall. Burak has short curly brown hair and green eyes. Emir has short straight black hair and brown eyes. Burak is more punctual than Emir; he is never late. Emir is more generous; he always shares his toys."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Correct the mistake and rewrite: Emir is older than Burak.",
+       "formul": "duzelt",
+       "cevap": "Emir is younger than Burak.",
+       "anahtarlar": [
+        {
+         "ad": "younger (ya da: Burak is older)",
+         "k": [
+          "younger",
+          "burak is older"
+         ]
+        },
+        {
+         "ad": "than Burak / than Emir",
+         "k": [
+          "than burak",
+          "than emir"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "Correct the mistake and rewrite: Emir is taller than Burak.",
+       "formul": "duzelt",
+       "cevap": "Emir is shorter than Burak.",
+       "anahtarlar": [
+        {
+         "ad": "shorter (ya da: Burak is taller)",
+         "k": [
+          "shorter",
+          "burak is taller"
+         ]
+        },
+        {
+         "ad": "than Burak / than Emir",
+         "k": [
+          "than burak",
+          "than emir"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "c",
+       "soru": "Correct the mistake and rewrite: Burak has straight brown hair and brown eyes.",
+       "formul": "duzelt",
+       "cevap": "Burak has curly brown hair and green eyes.",
+       "anahtarlar": [
+        {
+         "ad": "curly (straight değil)",
+         "k": [
+          "curly"
+         ]
+        },
+        {
+         "ad": "green eyes (brown değil)",
+         "k": [
+          "green"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "d",
+       "soru": "Correct the mistake and rewrite: Burak is more generous than Emir.",
+       "formul": "duzelt",
+       "cevap": "Emir is more generous than Burak.",
+       "anahtarlar": [
+        {
+         "ad": "Emir önce",
+         "sira": [
+          [
+           "emir"
+          ],
+          [
+           "generous"
+          ]
+         ]
+        },
+        {
+         "ad": "than Burak",
+         "k": [
+          "than burak"
+         ]
+        }
+       ],
+       "puan": 5
       }
      ]
     },
     {
      "kazanim": "E7.2.R1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m9",
      "metin": [
       "Read the sentences and write the correct sports.",
@@ -5313,13 +5900,13 @@
          ]
         }
        ],
-       "puan": 25
+       "puan": 20
       }
      ]
     },
     {
      "kazanim": "E7.2.W1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m7",
      "metin": [
       "Fill in the blanks according to the chart.",
@@ -5368,7 +5955,7 @@
          ]
         }
        ],
-       "puan": 25
+       "puan": 20
       }
      ]
     }
@@ -5380,7 +5967,7 @@
    "sorular": [
     {
      "kazanim": "E7.1.R1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m5",
      "metin": [
       "Complete the table according to the dialogue.",
@@ -5430,7 +6017,7 @@
          ]
         }
        ],
-       "puan": 12
+       "puan": 10
       },
       {
        "harf": "b",
@@ -5470,13 +6057,13 @@
          ]
         }
        ],
-       "puan": 13
+       "puan": 10
       }
      ]
     },
     {
      "kazanim": "E7.1.W1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m4",
      "metin": [
       "Read the text and correct the mistakes. Rewrite the sentences.",
@@ -5504,7 +6091,7 @@
          ]
         }
        ],
-       "puan": 6
+       "puan": 5
       },
       {
        "harf": "b",
@@ -5527,7 +6114,7 @@
          ]
         }
        ],
-       "puan": 6
+       "puan": 5
       },
       {
        "harf": "c",
@@ -5548,7 +6135,7 @@
          ]
         }
        ],
-       "puan": 6
+       "puan": 5
       },
       {
        "harf": "d",
@@ -5574,13 +6161,70 @@
          ]
         }
        ],
-       "puan": 7
+       "puan": 5
+      }
+     ]
+    },
+    {
+     "kazanim": "E7.1.W1",
+     "puan": 20,
+     "benzer": "m3",
+     "metin": [
+      "Look at the table and complete the sentences.",
+      "1. Aslı is ______ than Nehir. (age)",
+      "2. Nehir is ______ than Aslı. (age)",
+      "3. Aslı is ______ than Nehir. (height)",
+      "4. Nehir is ______ than Aslı. (weight)",
+      "5. Nehir is ______ than Aslı. (personality)"
+     ],
+     "svg": "<svg viewBox='0 0 340 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Aslı ve Nehir tablosu: yaş 16 ve 13, boy 1.58 ve 1.70 m, kilo 55 ve 49 kg, dürüstlük 2 ve 5 yıldız' font-family='Fredoka, Nunito, sans-serif'><rect x='0.0' y='6' width='340' height='32' rx='6' fill='#2b3560'/><text x='55.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'></text><text x='167.5' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>ASLI</text><text x='282.5' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>NEHIR</text><text x='55.0' y='58.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>AGE</text><text x='167.5' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>16</text><text x='282.5' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>13</text><line x1='0.0' y1='69' x2='340.0' y2='69' stroke='#59627f' stroke-width='1'/><text x='55.0' y='89.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>HEIGHT</text><text x='167.5' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>1.58 m</text><text x='282.5' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>1.70 m</text><line x1='0.0' y1='100' x2='340.0' y2='100' stroke='#59627f' stroke-width='1'/><text x='55.0' y='120.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>WEIGHT</text><text x='167.5' y='120.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>55 kg</text><text x='282.5' y='120.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>49 kg</text><line x1='0.0' y1='131' x2='340.0' y2='131' stroke='#59627f' stroke-width='1'/><text x='55.0' y='151.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>PERSONALITY</text><text x='167.5' y='151.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>honest **</text><text x='282.5' y='151.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>honest *****</text><line x1='0.0' y1='162' x2='340.0' y2='162' stroke='#59627f' stroke-width='1'/><line x1='110.0' y1='6' x2='110.0' y2='162' stroke='#59627f' stroke-width='1'/><line x1='225.0' y1='6' x2='225.0' y2='162' stroke='#59627f' stroke-width='1'/></svg>",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Look at the table and complete the sentences 1–5.",
+       "formul": "er",
+       "cevap": "1. older 2. younger 3. shorter 4. lighter 5. more honest",
+       "anahtarlar": [
+        {
+         "ad": "1. older",
+         "k": [
+          "older"
+         ]
+        },
+        {
+         "ad": "2. younger",
+         "k": [
+          "younger"
+         ]
+        },
+        {
+         "ad": "3. shorter",
+         "k": [
+          "shorter"
+         ]
+        },
+        {
+         "ad": "4. lighter / thinner",
+         "k": [
+          "lighter",
+          "thinner",
+          "slimmer"
+         ]
+        },
+        {
+         "ad": "5. more honest",
+         "k": [
+          "more honest"
+         ]
+        }
+       ],
+       "puan": 20
       }
      ]
     },
     {
      "kazanim": "E7.2.R1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m6",
      "metin": [
       "Answer the questions according to the text.",
@@ -5607,7 +6251,7 @@
          ]
         }
        ],
-       "puan": 6
+       "puan": 5
       },
       {
        "harf": "b",
@@ -5630,7 +6274,7 @@
          ]
         }
        ],
-       "puan": 6
+       "puan": 5
       },
       {
        "harf": "c",
@@ -5651,7 +6295,7 @@
          ]
         }
        ],
-       "puan": 6
+       "puan": 5
       },
       {
        "harf": "d",
@@ -5674,13 +6318,13 @@
          ]
         }
        ],
-       "puan": 7
+       "puan": 5
       }
      ]
     },
     {
      "kazanim": "E7.2.W1",
-     "puan": 25,
+     "puan": 20,
      "benzer": "m10",
      "metin": [
       "Complete the table according to the dialogue.",
@@ -5722,7 +6366,7 @@
          ]
         }
        ],
-       "puan": 12
+       "puan": 10
       },
       {
        "harf": "b",
@@ -5756,11 +6400,105 @@
          ]
         }
        ],
-       "puan": 13
+       "puan": 10
       }
      ]
     }
    ]
   }
- ]
+ ],
+ "sozluk": {
+  "complete": "tamamla",
+  "sentences": "cümleler",
+  "correct words": "doğru kelimeler",
+  "correct names": "doğru isimler",
+  "correct sports": "doğru sporlar",
+  "correct personality adjective": "doğru kişilik sıfatı",
+  "correct the mistakes": "yanlışları düzelt",
+  "correct the wrong sentences": "yanlış cümleleri düzelt",
+  "rewrite": "yeniden yaz",
+  "write them again": "yeniden yaz",
+  "fill in": "doldur",
+  "blanks": "boşluklar",
+  "according to": "-e göre",
+  "dialogue": "diyalog",
+  "chart": "grafik",
+  "clues": "ipuçları",
+  "comparative forms": "karşılaştırma halleri",
+  "comparative sentences": "karşılaştırma cümleleri",
+  "adjectives": "sıfatlar",
+  "full sentence": "tam cümle",
+  "hardworking": "çalışkan",
+  "punctual": "dakik",
+  "selfish": "bencil",
+  "outgoing": "sosyal",
+  "generous": "cömert",
+  "patient": "sabırlı",
+  "helpful": "yardımsever",
+  "stubborn": "inatçı",
+  "cheerful": "neşeli",
+  "talkative": "konuşkan",
+  "shy": "utangaç",
+  "quiet": "sessiz",
+  "serious": "ciddi",
+  "cute": "sevimli",
+  "plump": "tombul",
+  "slim": "ince",
+  "thin": "zayıf",
+  "curly": "kıvırcık",
+  "wavy": "dalgalı",
+  "straight": "düz",
+  "ginger": "kızıl",
+  "blonde": "sarışın",
+  "blond": "sarışın",
+  "glasses": "gözlük",
+  "than": "-den daha",
+  "tells lies": "yalan söyler",
+  "tells the truth": "doğruyu söyler",
+  "sharing": "paylaşmak",
+  "arrives": "gelir, varır",
+  "on time": "zamanında",
+  "meeting new people": "yeni insanlarla tanışmak",
+  "change her mind": "fikrini değiştirmek",
+  "easily": "kolayca",
+  "studies hard": "çok çalışır",
+  "each other": "birbiri",
+  "classmates": "sınıf arkadaşları",
+  "wears": "takar, giyer",
+  "calmly": "sakince",
+  "presents": "hediyeler",
+  "regularly": "düzenli olarak",
+  "unfinished": "bitmemiş",
+  "weekdays": "hafta içi",
+  "after school": "okuldan sonra",
+  "hiking": "doğa yürüyüşü",
+  "relaxed": "rahatlamış",
+  "cousin": "kuzen",
+  "energetic": "enerjik",
+  "successful": "başarılı",
+  "rests": "dinlenir",
+  "healthy": "sağlıklı",
+  "racket": "raket",
+  "net": "file",
+  "kick": "tekmelemek",
+  "goal": "kale",
+  "players": "oyuncular",
+  "bow": "yay",
+  "arrows": "oklar",
+  "target": "hedef",
+  "individual": "bireysel",
+  "sneakers": "spor ayakkabı",
+  "backpack": "sırt çantası",
+  "forests": "ormanlar",
+  "court": "kort, saha",
+  "basket": "pota",
+  "helmet": "kask",
+  "gloves": "eldiven",
+  "gold medal": "altın madalya",
+  "indoor": "kapalı alan",
+  "outdoor": "açık alan",
+  "spectators": "seyirciler",
+  "referees": "hakemler",
+  "coaches": "antrenörler"
+ }
 }

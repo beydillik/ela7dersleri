@@ -2857,7 +2857,15 @@
   const yzSoruSay = () => Object.values(YZ.d.dagilim || {}).reduce((a, b) => a + b, 0);
   const yzUst = (baslik, ck) => ck ? `<div class="yz-h1-sat"><h1 class="yz-h1">${esc(baslik)}</h1><button class="btn ghost yz-ck-b" data-ck="${ck}">${ICON.yazdir}Çalışma kâğıdı</button></div>` : `<h1 class="yz-h1">${esc(baslik)}</h1>`;
   const yzGorsel = q => q.svg ? `<div class="q-gorsel">${q.svg}</div>` : "";
-  const yzMetin = q => (q.metin || []).length ? `<div class="pasaj">${q.metin.map(p => `<p class="pasaj-p">${esc(p)}</p>`).join("")}</div>` : "";
+  // İngilizce yazılı (veride sozluk varsa): altı noktalı kelimeye dokununca Türkçesi çıkar (glossify, Oku ve Dinle ile aynı), metin İngilizce sesle dinlenir.
+  // Prova sınav gibi kalsın diye orada ikisi de kapalı (yzMetin(q, true)).
+  const yzEnMetin = q => q.metin.map((p, i) => (i ? p : p.replace(/\s*\([^()]*\)/g, "")).replace(/_{2,}/g, ", ")).join(" ");   // ilk satırdaki Türkçe yönerge parantezi okunmaz
+  const yzMetin = (q, sade) => { if (!(q.metin || []).length) return ""; const soz = !sade && isEn() && YZ.d.sozluk;
+    return `<div class="pasaj${soz ? " yz-sozluklu" : ""}">${q.metin.map(p => `<p class="pasaj-p">${soz ? glossify(p, soz) : esc(p)}</p>`).join("")}${soz ? `<div class="q-listen"><button class="say-en big" type="button" data-say-en="${esc(yzEnMetin(q))}" ${tts.en ? "" : "hidden"}>${ICON.ses}<span>Dinle</span></button><button class="say-en slow" type="button" data-say-en="${esc(yzEnMetin(q))}" data-slow ${tts.en ? "" : "hidden"}>${ICON.yavas}<span>Yavaş</span></button></div>` : ""}</div>`; };
+  // İngilizce derste Hatırla kartını okurken İngilizce parçalar (kalın ve tırnaklı, Türkçe harfsiz) İngilizce sesle okunur.
+  const yzEnParca = x => /[çğıöşüÇĞİÖŞÜ]/.test(x) ? x : `{{${x.replace(/\s*(?:\/|→|\+)\s*/g, ", ")}}}`;
+  const yzOkuSes = s => isEn() ? yzDuz(String(s).replace(/<b>(.*?)<\/b>/g, (m, x) => yzEnParca(x)).replace(/“([^”]+)”/g, (m, x) => x.includes("{{") ? m : yzEnParca(x))) : yzDuz(s);
+  const yzOkuKelime = w => { if (!isEn()) return w; const [a, ...b] = String(w).split(/\s*=\s*/); return b.length ? `{{${a}}}, ${b.join(" ")}` : yzEnParca(w); };
   const yzKonuAd = id => (allTopics().find(t => t.id === id) || {}).baslik || id;
   // Ders defterine bağlantı yalnız özetin yetmediği yerde ve yeni sekmede: yazılıdaki yer kaybolmaz
   const yzDefterLink = z => (z.konular || []).length ? `<p class="yz-defter">Kartta yoksa konuyu ders defterinde aç (yeni sekmede): ${z.konular.map(c => `<a href="${esc(location.pathname)}#${esc(c)}" target="_blank" rel="noopener">${esc(yzKonuAd(c))}</a>`).join(", ")}</p>` : "";
@@ -2908,7 +2916,12 @@
         <aside class="yz-menu" id="yzMenu"></aside><main class="yz-ana"><div class="yz-defter" id="yzSayfa"></div></main>`;
       document.body.appendChild(k);
       yzFxIzle(k);
-      k.addEventListener("click", e => { const b = e.target.closest("[data-ck]"); if (b) yzKagitSec(b.dataset.ck); });
+      k.addEventListener("click", e => {
+        const g = e.target.closest(".gl"), ac = g && !g.classList.contains("open");   // metin sözlüğü: dokununca Türkçesi çıkar, kelime okunur; başka yere dokununca kapanır
+        $$(".gl.open", k).forEach(x => x.classList.remove("open"));
+        if (ac) { g.classList.add("open"); tts.sayEn(g.textContent); }
+        if (g) return;
+        const b = e.target.closest("[data-ck]"); if (b) yzKagitSec(b.dataset.ck); });
       const ac = $(".yz-menu-ac", k);
       ac.onclick = () => { const a = !k.classList.contains("menu-acik"); k.classList.toggle("menu-acik", a); ac.setAttribute("aria-expanded", a); };
       $("#yzMenu", k).onclick = e => {
@@ -3021,7 +3034,7 @@
     const D = YZ.d, z = D.kazanimlar[i], k = yzKayit.get(), son = i === D.kazanimlar.length - 1;
     k.hatirla[z.kod] = Date.now(); yzKayit.set(k);
     const meb = D.mebSorular.find(q => q.kazanim === z.kod);
-    const oku = `${z.kisa}. ${z.maddeler.map(yzDuz).join(" ")} Puan getiren kelimeler: ${(z.kelimeler || []).join(", ")}.`;
+    const oku = `${z.kisa}. ${z.maddeler.map(yzOkuSes).join(" ")} Puan getiren kelimeler: ${(z.kelimeler || []).map(yzOkuKelime).join(", ")}.`;
     root.innerHTML = `${yzUst(yzHTVar() ? "Hatırla ve Tekrarla" : "Hatırla", "hatirla")}<div class="stage yz-hatirla" style="--kr:${esc(z.renk || "#5a6280")}">
       <div class="progress"><span>${yzKazAd()[0].toLocaleUpperCase("tr") + yzKazAd().slice(1)} ${i + 1} / ${D.kazanimlar.length}</span><div class="bar"><i style="width:${(i + 1) / D.kazanimlar.length * 100}%"></i></div></div>
       <div class="kicker">${esc(z.kod)} · ${esc(z.soruNot || `Yazılıda ${z.soru} soru`)} · ${esc(z.sayfa || "")}</div><h3>${esc(z.kisa)}</h3><p class="ek yz-kazad">${esc(z.ad)}</p>
@@ -3584,7 +3597,7 @@
     document.body.classList.toggle("yz-sinav", sm);
     root.innerHTML = `${yzUst(p.ad + (sm ? " · Sınav modu" : ""))}<div class="stage yz-prova">
       <div class="yz-prova-bas"><div><b>${esc(S.ders.ders)} · ${esc(YZ.d.baslik)} · ${esc(p.ad)}</b><small>${yzSoruSay()} soru · toplam 100 puan · cevaplar açık uçlu</small></div><div class="yz-saat" aria-live="off"></div></div>
-      ${p.sorular.map((q, n) => `<section class="yz-p-soru"><div class="yz-p-no"><b>${n + 1}.</b><span class="pill">${q.puan} puan</span></div>${yzMetin(q)}${yzGorsel(q)}${sm ? "" : yzBenzerHTML(q)}
+      ${p.sorular.map((q, n) => `<section class="yz-p-soru"><div class="yz-p-no"><b>${n + 1}.</b><span class="pill">${q.puan} puan</span></div>${yzMetin(q, true)}${yzGorsel(q)}${sm ? "" : yzBenzerHTML(q)}
         ${q.maddeler.map(m => `<div class="yz-p-madde"><p class="q-text"><span class="qn">${m.harf})</span><span>${esc(m.soru)} <small class="yz-mp">(${m.puan} puan)</small></span></p>
           <textarea class="yz-ta" rows="3" data-c="${n}-${m.harf}" placeholder="Cevabını yaz…">${esc(t.c[`${n}-${m.harf}`] || "")}</textarea></div>`).join("")}</section>`).join("")}
       <div class="stage-nav">${sm ? "<span></span>" : `<button class="btn ghost" data-birak>Bırak (yazdıkların kalır)</button>`}<button class="btn primary" data-bitir>${sm ? "Kâğıdı teslim et" : "Sınavı bitir ve puanla"}</button></div></div>`;
