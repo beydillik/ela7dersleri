@@ -1,0 +1,4190 @@
+{
+ "id": "d1y1",
+ "baslik": "1. Dönem 1. Yazılı",
+ "ders": "Din Kültürü ve Ahlak Bilgisi",
+ "senaryo": "Senaryo 5",
+ "sure": 40,
+ "tarih": "2026-11-13",
+ "dagilim": {
+  "DKAB.7.1.1": 1,
+  "DKAB.7.1.2": 2,
+  "DKAB.7.1.3": 3
+ },
+ "mebToplam": 9,
+ "mebHaric": [
+  {
+   "no": 9,
+   "kazanim": "DKAB.7.1.4",
+   "ad": "Nâs suresini ve bu surenin anlamını okuyarak yorumlayabilme"
+  }
+ ],
+ "giris": "Okulun seçtiği senaryoda <b>6 soru</b> var: melekler 1, ahiret hayatının aşamaları 2, melek ve ahiret inancının kazandırdıkları 3. Önce <b>★★★ Banko</b> soruları sağlamla: <b>altı meleğin adı ve görevi</b>, <b>ayetten ahiret aşamasını bulma</b>, metinden <b>davranış yazma</b>. Soruların yarısı inancın kazandırdıklarından: <b>5 Hazır Cümle</b> üç soruya da yeter.",
+ "kapsamDisi": [
+  "Nâs suresi (okunuşu, anlamı, mesajı) — MEB örneğinin 9. sorusu",
+  "Hac, umre ve kurban — 2. ünite bu yazılıda yok"
+ ],
+ "puanNotu": "Puanlar tahminidir: okul soruların puanını farklı dağıtabilir. Toplam 100. Provalarda senaryodaki gibi 6 soru var (melekler 1, aşamalar 2, kazandırdıkları 3).",
+ "kaynakNotu": "Sorular MEB'in yayımladığı 'Yazılıya Hazırlanıyorum 7. Sınıf Din Kültürü ve Ahlak Bilgisi 1. Dönem 1. Yazılı' örneklerine, ders kitabına ve yazilihocam.com yazılı örneklerine dayanır. Ayet ve hadisler MEB dokümanı ve ders kitabındaki mealle verilmiştir. MEB'in 5. soru cevabında Kıyamet 'metinde yok' listesinde; oysa metinde 'Kıyametten sonra' geçiyor, bu yüzden burada zorunlu sayılmadı.",
+ "soruGiris": "Bunlar MEB'in örnek soruları; yazılıda <b>benzerleri</b> çıkacak. <b>★★★ Banko</b> olanlarla başla. Cevabı kısa ve kalıba uygun yaz.",
+ "kazanimAd": "konu",
+ "kazanimlar": [
+  {
+   "kod": "DKAB.7.1.1",
+   "ad": "Melekleri sınıflandırabilme",
+   "kisa": "Melekler: Özellikleri ve Görevleri",
+   "soru": 1,
+   "renk": "#1a7f86",
+   "konular": [
+    "u1k1",
+    "u1k2"
+   ],
+   "sayfa": "s. 16, 19",
+   "svg": "<svg viewBox='0 0 440 166' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Altı melek adı ve görevleri' font-family='Nunito, sans-serif'><rect x='14' y='14' width='132' height='66' rx='10' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='80' y='42' text-anchor='middle' font-size='13' font-weight='800' fill='#6fb3ff'>Cebrail</text><text x='80' y='64' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>vahiy getirir</text><rect x='153' y='14' width='132' height='66' rx='10' fill='#b197fc' fill-opacity='0.14' stroke='#b197fc' stroke-width='2'/><text x='219' y='42' text-anchor='middle' font-size='13' font-weight='800' fill='#b197fc'>Azrail</text><text x='219' y='64' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>can alır</text><rect x='292' y='14' width='132' height='66' rx='10' fill='#5fd08f' fill-opacity='0.14' stroke='#5fd08f' stroke-width='2'/><text x='358' y='42' text-anchor='middle' font-size='13' font-weight='800' fill='#5fd08f'>Mikâil</text><text x='358' y='64' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>tabiat olayları</text><rect x='14' y='90' width='132' height='66' rx='10' fill='#f2c14e' fill-opacity='0.14' stroke='#f2c14e' stroke-width='2'/><text x='80' y='118' text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'>İsrafil</text><text x='80' y='140' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>sûra üfler</text><rect x='153' y='90' width='132' height='66' rx='10' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='219' y='118' text-anchor='middle' font-size='13' font-weight='800' fill='#6fb3ff'>Kiramen Kâtibin</text><text x='219' y='140' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>iyilik, kötülük yazar</text><rect x='292' y='90' width='132' height='66' rx='10' fill='#b197fc' fill-opacity='0.14' stroke='#b197fc' stroke-width='2'/><text x='358' y='118' text-anchor='middle' font-size='13' font-weight='800' fill='#b197fc'>Münker ve Nekir</text><text x='358' y='140' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>kabirde sorgular</text></svg>",
+   "maddeler": [
+    "Melekleri <b>gözle göremeyiz</b>; onları ancak <b>Allah'ın haber vermesiyle</b> biliriz. (s. 16; MEB örnek sorusu)",
+    "Özellikleri: <b>nurdan yaratılmışlar</b>, <b>iradeleri yok</b>, <b>Allah'ın emrine karşı gelmezler</b>, hızlı ve güçlüler; <b>yemez, içmez, uyumazlar</b>. (s. 19)",
+    "Dört büyük melek: <b>Cebrail</b> vahiy getirir · <b>Azrail</b> can alır · <b>Mikâil</b> tabiat olayları ve rızık · <b>İsrafil</b> sûra üfler. (s. 19)",
+    "<b>Kiramen Kâtibin</b> (yazıcı melekler): sevap ve günahları amel defterine yazar. (s. 19)",
+    "<b>Münker ve Nekir</b> (sorgu melekleri): kabirde insanları sorguya çeker. (s. 19; MEB örnek sorusu)",
+    "Ayette ipucu ara: “canını alırlar” → <b>Azrail</b>; “değerli yazıcılar” → <b>Kiramen Kâtibin</b>."
+   ],
+   "kelimeler": [
+    "nurdan",
+    "iradeleri yok",
+    "vahiy: Cebrail",
+    "can: Azrail",
+    "tabiat: Mikâil",
+    "sûr: İsrafil",
+    "yazar: Kiramen Kâtibin",
+    "sorgu: Münker ve Nekir"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "“Vahyi Mikâil getirir.”",
+     "dogru": "Vahyi Cebrail getirir; Mikâil tabiat olaylarıyla görevlidir."
+    },
+    {
+     "yanlis": "“Sûra Azrail üfler.”",
+     "dogru": "Sûra İsrafil üfler; Azrail can alır."
+    },
+    {
+     "yanlis": "“Kiramen Kâtibin kabirde sorgular.”",
+     "dogru": "Sorguyu Münker ve Nekir yapar; Kiramen Kâtibin yazar."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Melekleri Allah'ın {haber vermesiyle|gözlerimizle bakarak} biliriz.",
+     "s": "s. 16"
+    },
+    {
+     "c": "Melekler {nurdan|topraktan|ateşten} yaratılmıştır.",
+     "s": "s. 19"
+    },
+    {
+     "c": "Meleklerin {iradeleri yoktur|istedikleri gibi davranma güçleri vardır}.",
+     "s": "s. 19"
+    },
+    {
+     "c": "Vahiy getiren melek: {Cebrail|Mikâil|Azrail}",
+     "s": "s. 19"
+    },
+    {
+     "c": "Can almakla görevli melek: {Azrail|İsrafil|Cebrail}",
+     "s": "s. 19"
+    },
+    {
+     "c": "Tabiat olaylarıyla görevli melek: {Mikâil|Cebrail|İsrafil}",
+     "s": "s. 19"
+    },
+    {
+     "c": "Sûra iki kez üfleyen melek: {İsrafil|Azrail|Mikâil}",
+     "s": "s. 19"
+    },
+    {
+     "c": "Sevap ve günahları yazan melekler: {Kiramen Kâtibin|Münker ve Nekir}",
+     "s": "s. 19"
+    },
+    {
+     "c": "İnsanları sorguya çeken melekler: {Münker ve Nekir|Kiramen Kâtibin}",
+     "s": "s. 19"
+    }
+   ]
+  },
+  {
+   "kod": "DKAB.7.1.2",
+   "ad": "Ahiret hayatının aşamalarını çözümleyebilme",
+   "kisa": "Ahiret Hayatının Aşamaları",
+   "soru": 2,
+   "renk": "#7048e8",
+   "konular": [
+    "u1k3",
+    "u1k4"
+   ],
+   "sayfa": "s. 25–29",
+   "svg": "<svg viewBox='0 0 440 136' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Ölüm, kıyamet, baas, mahşer, mizan, cennet ve cehennem sırası' font-family='Nunito, sans-serif'><rect x='10' y='18' width='72' height='40' rx='10' fill='#a3abc6' fill-opacity='0.14' stroke='#a3abc6' stroke-width='2'/><text x='46' y='43' text-anchor='middle' font-size='12' font-weight='800' fill='#a3abc6'>Ölüm</text><line x1='83' y1='38' x2='95' y2='38' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='95,38 87.8,41.5 87.8,34.5' fill='#a3abc6'/><rect x='96' y='18' width='72' height='40' rx='10' fill='#b197fc' fill-opacity='0.14' stroke='#b197fc' stroke-width='2'/><text x='132' y='43' text-anchor='middle' font-size='12' font-weight='800' fill='#b197fc'>Kıyamet</text><line x1='169' y1='38' x2='181' y2='38' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='181,38 173.8,41.5 173.8,34.5' fill='#a3abc6'/><rect x='182' y='18' width='72' height='40' rx='10' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='218' y='43' text-anchor='middle' font-size='12' font-weight='800' fill='#6fb3ff'>Baas</text><line x1='255' y1='38' x2='267' y2='38' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='267,38 259.8,41.5 259.8,34.5' fill='#a3abc6'/><rect x='268' y='18' width='72' height='40' rx='10' fill='#f2c14e' fill-opacity='0.14' stroke='#f2c14e' stroke-width='2'/><text x='304' y='43' text-anchor='middle' font-size='12' font-weight='800' fill='#f2c14e'>Mahşer</text><line x1='341' y1='38' x2='353' y2='38' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='353,38 345.8,41.5 345.8,34.5' fill='#a3abc6'/><rect x='354' y='18' width='72' height='40' rx='10' fill='#5fd08f' fill-opacity='0.14' stroke='#5fd08f' stroke-width='2'/><text x='390' y='43' text-anchor='middle' font-size='12' font-weight='800' fill='#5fd08f'>Mizan</text><line x1='390' y1='60' x2='390' y2='82' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='390,82 386.5,74.8 393.5,74.8' fill='#a3abc6'/><rect x='250' y='84' width='180' height='40' rx='10' fill='#5fd08f' fill-opacity='0.14' stroke='#5fd08f' stroke-width='2'/><text x='340' y='109' text-anchor='middle' font-size='13' font-weight='800' fill='#5fd08f'>Cennet / Cehennem</text><text x='116' y='96' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>İsrafil: 1. üfleyiş = kıyamet</text><text x='116' y='116' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>2. üfleyiş = baas (diriliş)</text></svg>",
+   "maddeler": [
+    "Sıra: <b>Ölüm → Kıyamet → Baas → Mahşer → Mizan → Cennet / Cehennem</b>. (s. 26, 29)",
+    "<b>Kıyamet</b>: İsrafil sûra <b>ilk</b> üfleyince her şey son bulur. <b>Baas</b>: sûra <b>ikinci</b> üfleyince insanlar yeniden dirilir. (s. 26–27)",
+    "<b>Mahşer</b>: insanların hesap vermek için <b>toplanacakları yer</b>. Amel defterleri burada verilir. (s. 27)",
+    "<b>Mizan</b>: sevap ve günahların tartılacağı <b>manevi adalet terazisi</b>. (s. 27)",
+    "Hesaptan sonra: <b>Cennet</b> mükâfat yeri, <b>Cehennem</b> ceza yeri. (s. 28–29)",
+    "Ayetten bul: diriltme, kabirden çıkma → <b>Baas</b> · toplanma → <b>Mahşer</b> · terazi, tartı → <b>Mizan</b> · mükâfat, ırmaklar → <b>Cennet</b> · sûr → <b>Kıyamet</b>.",
+    "<b>Ömür</b> yaşam süresi, <b>ecel</b> ölüm vakti, <b>amel defteri</b> yapılanların yazıldığı defterdir. (s. 25)"
+   ],
+   "kelimeler": [
+    "ölüm",
+    "kıyamet",
+    "baas: diriliş",
+    "mahşer: toplanma",
+    "mizan: terazi",
+    "cennet / cehennem",
+    "ömür, ecel, amel defteri"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "“Mahşer, sevap ve günahların tartıldığı terazidir.”",
+     "dogru": "Tartılan yer mizan; mahşer toplanma yeridir."
+    },
+    {
+     "yanlis": "“Sûra ikinci kez üflenince kıyamet kopar.”",
+     "dogru": "İlk üfleyiş kıyamet, ikinci üfleyiş baastır."
+    },
+    {
+     "yanlis": "“Metinde yer verilen” sorusuna metinde geçmeyeni yazmak.",
+     "dogru": "Önce kelime metinde geçiyor mu diye bak."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Ahiret aşamalarının ilki {ölümdür|mahşerdir}.",
+     "s": "s. 26"
+    },
+    {
+     "c": "İsrafil sûra ilk üfleyince {kıyamet|baas} gerçekleşir.",
+     "s": "s. 26"
+    },
+    {
+     "c": "Sûra ikinci kez üflenince yeniden diriliş olur; buna {baas|mizan} denir.",
+     "s": "s. 27"
+    },
+    {
+     "c": "İnsanların hesap vermek için toplanacakları yer: {mahşer|mizan}",
+     "s": "s. 27"
+    },
+    {
+     "c": "Sevap ve günahların tartıldığı manevi terazi: {mizan|mahşer}",
+     "s": "s. 27"
+    },
+    {
+     "c": "Mizandan sonra insanlar {cennete ya da cehenneme|yeniden dünyaya} gönderilir.",
+     "s": "s. 28"
+    },
+    {
+     "c": "Ayette “terazi” geçiyorsa aşama {mizan|baas} olur.",
+     "s": "cevap kalıbı"
+    },
+    {
+     "c": "Ayette “diriltileceksiniz” geçiyorsa aşama {baas|cennet} olur.",
+     "s": "cevap kalıbı"
+    }
+   ]
+  },
+  {
+   "kod": "DKAB.7.1.3",
+   "ad": "Melek ve ahiret inancının insana kazandırdıkları konusunda analitik düşünebilme",
+   "kisa": "İnancın İnsana Kazandırdıkları",
+   "soru": 3,
+   "renk": "#c2410c",
+   "konular": [
+    "u1k5"
+   ],
+   "sayfa": "s. 32, 34–35",
+   "svg": "<svg viewBox='0 0 440 184' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Melek ve ahiret inancı, bilmek ve davranış: beş hazır cümle' font-family='Nunito, sans-serif'><rect x='14' y='10' width='160' height='28' rx='8' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='94' y='29' text-anchor='middle' font-size='12' font-weight='800' fill='#6fb3ff'>Yazılıyor</text><line x1='178' y1='24' x2='206' y2='24' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='206,24 198.8,27.5 198.8,20.5' fill='#a3abc6'/><rect x='210' y='10' width='216' height='28' rx='8' fill='#6fb3ff' fill-opacity='0.08' stroke='#6fb3ff' stroke-width='2'/><text x='318' y='29' text-anchor='middle' font-size='12' font-weight='700' fill='#f5f6fa'>sorumlu olurum</text><rect x='14' y='44' width='160' height='28' rx='8' fill='#f2c14e' fill-opacity='0.14' stroke='#f2c14e' stroke-width='2'/><text x='94' y='63' text-anchor='middle' font-size='12' font-weight='800' fill='#f2c14e'>Hesap var</text><line x1='178' y1='58' x2='206' y2='58' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='206,58 198.8,61.5 198.8,54.5' fill='#a3abc6'/><rect x='210' y='44' width='216' height='28' rx='8' fill='#f2c14e' fill-opacity='0.08' stroke='#f2c14e' stroke-width='2'/><text x='318' y='63' text-anchor='middle' font-size='12' font-weight='700' fill='#f5f6fa'>kötülükten uzak dururum</text><rect x='14' y='78' width='160' height='28' rx='8' fill='#b197fc' fill-opacity='0.14' stroke='#b197fc' stroke-width='2'/><text x='94' y='97' text-anchor='middle' font-size='12' font-weight='800' fill='#b197fc'>Kimse görmese de</text><line x1='178' y1='92' x2='206' y2='92' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='206,92 198.8,95.5 198.8,88.5' fill='#a3abc6'/><rect x='210' y='78' width='216' height='28' rx='8' fill='#b197fc' fill-opacity='0.08' stroke='#b197fc' stroke-width='2'/><text x='318' y='97' text-anchor='middle' font-size='12' font-weight='700' fill='#f5f6fa'>vicdanlı davranırım</text><rect x='14' y='112' width='160' height='28' rx='8' fill='#5fd08f' fill-opacity='0.14' stroke='#5fd08f' stroke-width='2'/><text x='94' y='131' text-anchor='middle' font-size='12' font-weight='800' fill='#5fd08f'>Dünya imtihan</text><line x1='178' y1='126' x2='206' y2='126' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='206,126 198.8,129.5 198.8,122.5' fill='#a3abc6'/><rect x='210' y='112' width='216' height='28' rx='8' fill='#5fd08f' fill-opacity='0.08' stroke='#5fd08f' stroke-width='2'/><text x='318' y='131' text-anchor='middle' font-size='12' font-weight='700' fill='#f5f6fa'>pes etmem, sabrederim</text><rect x='14' y='146' width='160' height='28' rx='8' fill='#6fb3ff' fill-opacity='0.14' stroke='#6fb3ff' stroke-width='2'/><text x='94' y='165' text-anchor='middle' font-size='12' font-weight='800' fill='#6fb3ff'>Karşılığı var</text><line x1='178' y1='160' x2='206' y2='160' stroke='#a3abc6' stroke-width='2.5' stroke-linecap='round'/><polygon points='206,160 198.8,163.5 198.8,156.5' fill='#a3abc6'/><rect x='210' y='146' width='216' height='28' rx='8' fill='#6fb3ff' fill-opacity='0.08' stroke='#6fb3ff' stroke-width='2'/><text x='318' y='165' text-anchor='middle' font-size='12' font-weight='700' fill='#f5f6fa'>iyilik yaparım</text></svg>",
+   "maddeler": [
+    "<b>5 Hazır Cümle 1:</b> Yaptıklarımın yazıldığını bilirim, <b>sorumlu davranırım</b>. (s. 34; MEB örnek sorusu)",
+    "<b>5 Hazır Cümle 2:</b> Ahirette hesap vereceğimi bilirim, <b>kötülükten uzak dururum</b>. (s. 34–35)",
+    "<b>5 Hazır Cümle 3:</b> Kimse görmese de haksızlık yapmam, <b>vicdanlı davranırım</b>. (MEB örnek sorusu)",
+    "<b>5 Hazır Cümle 4:</b> Dünyanın imtihan olduğunu bilirim, <b>zorlukta pes etmem, sabrederim</b>. (s. 34)",
+    "<b>5 Hazır Cümle 5:</b> Güzel davranışların karşılığını ahirette göreceğimi bilirim, <b>iyilik yaparım</b>. (s. 34)",
+    "Davranış örnekleri: <b>komşusuna eziyet etmez, misafirine ikram eder, güzel söz söyler</b>, yardım eder, sözünü tutar. (s. 32, 34; MEB örnek sorusu)"
+   ],
+   "kelimeler": [
+    "yazılıyor → sorumlu",
+    "hesap → kötülükten uzak",
+    "kimse görmese de → vicdanlı",
+    "imtihan → pes etmem",
+    "karşılığı var → iyilik yaparım",
+    "çünkü …"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Yalnız “Sorumlu olur.” yazıp gerekçeyi unutmak.",
+     "dogru": "Gerekçesini ekle: “Sorumlu olur, çünkü yaptıklarının yazıldığını bilir.”"
+    },
+    {
+     "yanlis": "“Üç davranış” isteyen soruya tek davranış yazmak.",
+     "dogru": "Metindeki her öğüdü ayrı ayrı yaz: komşu, misafir, güzel söz."
+    },
+    {
+     "yanlis": "“Güzel şeyler kazandırır.” gibi belirsiz cevap yazmak.",
+     "dogru": "Kazancın adını yaz: sorumluluk, sabır, vicdan, iyilik."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "Yaptıklarının {kaydedildiğini|unutulduğunu} bilen insan sorumlu davranır.",
+     "s": "s. 34"
+    },
+    {
+     "c": "Ahirete inanan, yaptıklarının {hesabını vereceğini|karşılıksız kalacağını} bilir.",
+     "s": "s. 35"
+    },
+    {
+     "c": "Kimse görmese de haksızlık yapmayan kişi {vicdanlı|ilgisiz} davranır.",
+     "s": "MEB örnek sorusu"
+    },
+    {
+     "c": "Dünyanın bir {imtihan|oyun} yeri olduğunu bilen, zorlukta sabreder.",
+     "s": "s. 34"
+    },
+    {
+     "c": "Ahirete inanan, güzel davranışlarının karşılığını {ahirette|hiçbir zaman} göreceğini bilir.",
+     "s": "s. 34"
+    },
+    {
+     "c": "Allah'a ve ahiret gününe inanan kişi komşusunu {rahatsız etmez|rahatsız eder}.",
+     "s": "s. 32"
+    },
+    {
+     "c": "Allah'a ve ahiret gününe inanan kişi misafirine {ikram eder|kapıyı açmaz}.",
+     "s": "s. 32"
+    },
+    {
+     "c": "Cevapta kazancı yazdıktan sonra {çünkü|belki} ile gerekçesini ekle.",
+     "s": "cevap kalıbı"
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "ozellik",
+   "ad": "Meleklerin özellikleri",
+   "kalip": "Görülmezler + emre karşı gelmezler + iradeleri yok (+ nurdan, yemezler)",
+   "ne": "“Meleklerin özellikleri nelerdir?” sorularında",
+   "ornek": "Gözle görülmezler, emre karşı gelmezler, iradeleri yoktur."
+  },
+  {
+   "id": "isim",
+   "ad": "Görevden melek adı",
+   "kalip": "Görevi oku → meleğin adını yaz (Cebrail, Azrail, Mikâil, İsrafil, Kiramen Kâtibin, Münker ve Nekir)",
+   "ne": "“Meleklerin isimlerini yazınız” sorularında",
+   "ornek": "Vahiy getirir: Cebrail."
+  },
+  {
+   "id": "asama",
+   "ad": "Ayetten aşama",
+   "kalip": "Kilit kelime → aşama: dirilme = baas, toplanma = mahşer, terazi = mizan, mükâfat = cennet, sûr = kıyamet",
+   "ne": "“Hangi aşamadan bahsedilmektedir?” sorularında",
+   "ornek": "“Adalet terazileri” → Mizan."
+  },
+  {
+   "id": "metinde",
+   "ad": "Metinde olan / olmayan",
+   "kalip": "Kelime metinde geçiyor mu? Geçenler a), geçmeyenler b)",
+   "ne": "“Metinde yer verilen / verilmeyen aşamalar” sorularında",
+   "ornek": "Metinde: baas, mizan. Metinde yok: mahşer, cennet, cehennem."
+  },
+  {
+   "id": "iliski",
+   "ad": "Aşamalar arası ilişki",
+   "kalip": "Önce … (dirilme), sonra … (tartılma), sonunda … (karşılık)",
+   "ne": "“Aşamalar arasındaki ilişkiyi açıklayınız” sorularında",
+   "ornek": "Önce baas olur, sonra mizanda tartılır, sonunda cennet ya da cehennemde karşılığını görür."
+  },
+  {
+   "id": "davranis",
+   "ad": "Davranış yazma",
+   "kalip": "Metindeki öğütleri tek tek “yapar / yapmaz” diye yaz",
+   "ne": "“Üç davranış yazınız” sorularında",
+   "ornek": "Komşusuna eziyet etmez. Misafirine ikram eder. Güzel söz söyler."
+  },
+  {
+   "id": "etki",
+   "ad": "İnancın etkisi",
+   "kalip": "Bilir + bilir + bu yüzden davranış",
+   "ne": "“Etkisini üç cümleyle açıklayınız” sorularında",
+   "ornek": "Yaptıklarının yazıldığını bilir. Hesap vereceğini bilir. Bu yüzden kötülükten uzak durur."
+  },
+  {
+   "id": "kazanc",
+   "ad": "Kazandırdıkları",
+   "kalip": "Kazanç + çünkü + gerekçe (5 Hazır Cümle)",
+   "ne": "“Kazandırdıklarını gerekçeleriyle yazınız” sorularında",
+   "ornek": "Sorumlu olur, çünkü yaptıklarının yazıldığını bilir."
+  }
+ ],
+ "mebSorular": [
+  {
+   "id": "m1",
+   "no": 1,
+   "kazanim": "DKAB.7.1.1",
+   "oncelik": 2,
+   "metin": [
+    "Ahmet, “Gezegenimizdeki Canlılar” belgeselini izledikten sonra “Kâinatta farklı özelliklere sahip ne kadar çok varlık yaratılmış.” diye düşündü. Bu konuyla ilgili öğretmeninin tavsiye ettiği kaynaklardan yaptığı araştırmada; güneş, ay, yıldızlar, dağlar, denizler, bitkiler ve hayvanlar gibi görülebilen varlıkların yanı sıra melek, cin şeytan gibi gözle görülemeyen varlıkların olduğunu da öğrendi. Sadece vahiyle bilgi sahibi olunabilecek varlıklardan olan meleklerin hangi özelliklere sahip olduğuyla ilgili şu ayetlere ulaştı:",
+    "“Hamd, gökleri ve yeri yoktan var eden, melekleri ikişer, üçer, dörder kanatlı elçiler kılan Allah'a mahsustur.” (Fatır suresi 1. ayet)",
+    "“… Allah'ın kendilerine verdiği emirlere karşı gelmeyen ve kendilerine emredilen şeyi yapan melekler vardır.” (Tahrim suresi 6. ayet)"
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Buna göre melekleri diğer varlıklardan ayıran özellikler nelerdir? Yazınız.",
+     "formul": "ozellik",
+     "cevap": "Melekler duyu organlarıyla algılanamayan, sadece Allah'ın haber vermesiyle bilgi sahibi olunabilen varlıklardır. Allah'ın emir ve buyruklarına asla karşı gelmezler. Allah'ın buyurduğu şeyleri eksiksiz yerine getirirler. İradeleri yoktur ve kanatlı varlıklardır.",
+     "anahtarlar": [
+      {
+       "ad": "Gözle görülmez, Allah'ın haberiyle bilinir",
+       "k": [
+        "görülmez",
+        "görünmez",
+        "görülemez",
+        "algılan",
+        "haber",
+        "vahiy"
+       ]
+      },
+      {
+       "ad": "Emre karşı gelmez, buyrulanı eksiksiz yapar",
+       "k": [
+        "karşı gelmez",
+        "itaat",
+        "emre uy",
+        "emirlere uy",
+        "emirlerine uy",
+        "eksiksiz",
+        "yerine getir",
+        "emredileni yapar"
+       ]
+      },
+      {
+       "ad": "İradeleri yok, kanatlı",
+       "k": [
+        "irade",
+        "kanat"
+       ]
+      }
+     ],
+     "kisaCevap": "Gözle görülmezler, emre karşı gelmezler, iradeleri yoktur.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Gözle görülmezler, emre karşı gelmezler, iradeleri yoktur.",
+        "Gözle görülmezler.",
+        "İnsanlar gibi yer içerler, istediklerini yaparlar."
+       ],
+       "dogru": 0,
+       "ipucu": "Ayetler “emirlere karşı gelmeyen” diyor; metin “gözle görülemeyen” diyor. İkisini de kullan.",
+       "aciklama": "Melekler görülmez, emre karşı gelmez, iradeleri yoktur; MEB'in cevabı da bunlardır. (s. 19; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Görünme:",
+        "ornek": "gözle görülmezler",
+        "havuz": [
+         "her yerde görünürler",
+         "yemek yerler"
+        ],
+        "k": [
+         "görülmez",
+         "görünmez",
+         "görülemez",
+         "algılan",
+         "haber",
+         "vahiy"
+        ]
+       },
+       {
+        "bas": "Allah'ın buyrukları:",
+        "ornek": "emre karşı gelmezler",
+        "havuz": [
+         "bazen karşı gelirler",
+         "kendi bildiğini yaparlar"
+        ],
+        "k": [
+         "karşı gelmez",
+         "itaat",
+         "emre uy",
+         "emirlere uy",
+         "emirlerine uy"
+        ]
+       },
+       {
+        "bas": "Seçme gücü:",
+        "ornek": "iradeleri yoktur",
+        "havuz": [
+         "kendileri seçerler",
+         "istedikleri gibi davranırlar"
+        ],
+        "k": [
+         "irade"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "melekleri diğer varlıklardan ayıran özellikler"
+     ],
+     "kalipNot": "Özellik → melekleri ayıran yönleri yaz: görülmezler, emre karşı gelmezler, iradeleri yok."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Yüce Allah tarafından özel görevler verilerek yaratılan, görünmeyen ancak varlıklarına inanılması iman esaslarından biri olan varlıklar vardır. Kur'an-ı Kerim'de bu varlıklardan sıkça söz edilir."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu varlıkların adını yazınız ve onlara ait üç özelliği belirtiniz.",
+       "formul": "ozellik",
+       "cevap": "Melekler. Nurdan yaratılmışlardır, iradeleri yoktur, yeme içme uyuma gibi ihtiyaçları yoktur.",
+       "anahtarlar": [
+        {
+         "ad": "Adı: melekler",
+         "k": [
+          "melek"
+         ]
+        },
+        {
+         "ad": "Nurdan yaratılmış",
+         "k": [
+          "nur"
+         ]
+        },
+        {
+         "ad": "İradeleri yok",
+         "k": [
+          "irade"
+         ]
+        },
+        {
+         "ad": "Yemez, içmez, uyumaz",
+         "k": [
+          "yeme",
+          "içme",
+          "uyuma",
+          "uyumaz",
+          "hızlı"
+         ]
+        }
+       ],
+       "kisaCevap": "Melekler. Nurdan yaratılmışlardır, iradeleri yoktur, yemezler.",
+       "tetik": [
+        "adını",
+        "üç özelliği"
+       ],
+       "kalipNot": "Ad + üç özellik → önce adı, sonra üç kısa özellik.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Varlıkların adı:",
+          "ornek": "melekler",
+          "havuz": [
+           "cinler",
+           "insanlar"
+          ],
+          "k": [
+           "melek"
+          ]
+         },
+         {
+          "bas": "1. özellik:",
+          "ornek": "nurdan yaratılmışlardır",
+          "havuz": [
+           "ateşten yaratılmışlardır",
+           "topraktan yaratılmışlardır"
+          ],
+          "k": [
+           "nur"
+          ]
+         },
+         {
+          "bas": "2. özellik:",
+          "ornek": "iradeleri yoktur",
+          "havuz": [
+           "istedikleri gibi davranırlar",
+           "emirlere karşı gelirler"
+          ],
+          "k": [
+           "irade"
+          ]
+         },
+         {
+          "bas": "3. özellik:",
+          "ornek": "yemezler, içmezler, uyumazlar",
+          "havuz": [
+           "akşamları yemek yerler",
+           "yorulup dinlenirler"
+          ],
+          "k": [
+           "yemez",
+           "içmez",
+           "uyumaz",
+           "ihtiyaç"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.1",
+     "id": "m1i1"
+    },
+    {
+     "metin": [
+      "Melekler, Allah'ın yarattığı varlıklardandır ve onların diğer varlıklardan farklı özellikleri vardır."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Meleklerin özelliklerinden beş tanesini yazınız.",
+       "formul": "ozellik",
+       "cevap": "Nurdan yaratılmışlardır. İradeleri yoktur. Allah'ın emirlerine karşı gelmezler. Yemezler, içmezler, uyumazlar. Hızlı ve güçlüdürler.",
+       "anahtarlar": [
+        {
+         "ad": "Nurdan yaratılmış",
+         "k": [
+          "nur"
+         ]
+        },
+        {
+         "ad": "İradeleri yok",
+         "k": [
+          "irade"
+         ]
+        },
+        {
+         "ad": "Emre karşı gelmez",
+         "k": [
+          "karşı gelmez",
+          "itaat",
+          "emre uy",
+          "emirlere uy",
+          "emirlerine uy"
+         ]
+        },
+        {
+         "ad": "Yemez, içmez, uyumaz",
+         "k": [
+          "yemez",
+          "içmez",
+          "uyumaz"
+         ]
+        },
+        {
+         "ad": "Hızlı ve güçlü",
+         "k": [
+          "hızlı",
+          "güçlü",
+          "cinsiyet"
+         ]
+        }
+       ],
+       "kisaCevap": "Nurdan yaratılmışlardır, iradeleri yoktur, emre karşı gelmezler, yemezler, hızlı ve güçlüdürler.",
+       "tetik": [
+        "özelliklerinden beş tanesini"
+       ],
+       "kalipNot": "Beş özellik → kısa kısa yaz: nur, irade, emir, yemez, hızlı.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Nereden yaratıldılar:",
+          "ornek": "nurdan yaratılmışlardır",
+          "havuz": [
+           "ateşten yaratılmışlardır",
+           "topraktan yaratılmışlardır"
+          ],
+          "k": [
+           "nur"
+          ]
+         },
+         {
+          "bas": "Seçme gücü:",
+          "ornek": "iradeleri yoktur",
+          "havuz": [
+           "kendileri seçerler",
+           "istedikleri gibi yaşarlar"
+          ],
+          "k": [
+           "irade"
+          ]
+         },
+         {
+          "bas": "Allah'ın buyrukları:",
+          "ornek": "emre karşı gelmezler",
+          "havuz": [
+           "bazen karşı gelirler",
+           "kendi bildiğini yaparlar"
+          ],
+          "k": [
+           "karşı gelmez",
+           "itaat",
+           "emre uy",
+           "emirlere uy",
+           "emirlerine uy"
+          ]
+         },
+         {
+          "bas": "İhtiyaçları:",
+          "ornek": "yemezler, içmezler, uyumazlar",
+          "havuz": [
+           "akşamları yemek yerler",
+           "yorulup dinlenirler"
+          ],
+          "k": [
+           "yemez",
+           "içmez",
+           "uyumaz"
+          ]
+         },
+         {
+          "bas": "Hareketleri:",
+          "ornek": "hızlı ve güçlüdürler",
+          "havuz": [
+           "çok yavaştırlar",
+           "zayıftırlar"
+          ],
+          "k": [
+           "hızlı",
+           "güçlü"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.1",
+     "id": "m1i2"
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "no": 2,
+   "kazanim": "DKAB.7.1.1",
+   "oncelik": 3,
+   "metin": [
+    "Aşağıdaki tabloyu belirtilen meleklerin isimlerini yazarak doldurunuz."
+   ],
+   "svg": "<svg viewBox='0 0 340 136' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Dört büyük melek, yazıcı melekler ve sorgu meleklerinin boş tablosu' font-family='Nunito, sans-serif'><rect x='8' y='8' width='128' height='36' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='16' y='31' font-size='12' font-weight='700' fill='#f2c14e' font-family='inherit'>Dört Büyük Melek</text><rect x='136' y='8' width='196' height='36' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/><rect x='8' y='50' width='128' height='36' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='16' y='73' font-size='12' font-weight='700' fill='#f2c14e' font-family='inherit'>Yazıcı Melekler</text><rect x='136' y='50' width='196' height='36' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/><rect x='8' y='92' width='128' height='36' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='16' y='115' font-size='12' font-weight='700' fill='#f2c14e' font-family='inherit'>Sorgu Melekleri</text><rect x='136' y='92' width='196' height='36' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/></svg>",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "“Dört Büyük Melek” satırına gelecek isimleri yazınız.",
+     "formul": "isim",
+     "cevap": "Cebrail, Mikâil, Azrail, İsrafil",
+     "anahtarlar": [
+      {
+       "ad": "Cebrail",
+       "k": [
+        "cebrail"
+       ]
+      },
+      {
+       "ad": "Mikâil",
+       "k": [
+        "mikail"
+       ]
+      },
+      {
+       "ad": "Azrail",
+       "k": [
+        "azrail"
+       ]
+      },
+      {
+       "ad": "İsrafil",
+       "k": [
+        "israfil"
+       ]
+      }
+     ],
+     "iskele": {
+      "tur": "eslestir",
+      "soru": "Dört büyük meleği görevleriyle eşleştir.",
+      "ciftler": [
+       {
+        "sol": "Vahiy getirir",
+        "sag": "Cebrail"
+       },
+       {
+        "sol": "Can alır",
+        "sag": "Azrail"
+       },
+       {
+        "sol": "Tabiat olayları, rızık",
+        "sag": "Mikâil"
+       },
+       {
+        "sol": "Sûra üfler",
+        "sag": "İsrafil"
+       }
+      ],
+      "aciklama": "Dört büyük melek: Cebrail, Azrail, Mikâil ve İsrafil. (s. 19)"
+     },
+     "kisaCevap": "Cebrail, Azrail, Mikâil, İsrafil",
+     "tetik": [
+      "isimleri"
+     ],
+     "kalipNot": "Tablo → satırın adını oku, o gruptaki meleklerin isimlerini yaz."
+    },
+    {
+     "harf": "b",
+     "soru": "“Yazıcı Melekler” ve “Sorgu Melekleri” satırlarına gelecek isimleri yazınız.",
+     "formul": "isim",
+     "cevap": "Yazıcı melekler: Kiramen Kâtibin. Sorgu melekleri: Münker ve Nekir.",
+     "anahtarlar": [
+      {
+       "ad": "Kiramen Kâtibin",
+       "k": [
+        "kiramen",
+        "katibin"
+       ]
+      },
+      {
+       "ad": "Münker ve Nekir",
+       "k": [
+        "münker",
+        "nekir"
+       ]
+      }
+     ],
+     "iskele": {
+      "tur": "bosluk",
+      "cumleler": [
+       {
+        "c": "Yazıcı melekler: ___",
+        "cevap": "Kiramen Kâtibin"
+       },
+       {
+        "c": "Sorgu melekleri: ___",
+        "cevap": "Münker ve Nekir"
+       }
+      ],
+      "havuz": [
+       "Mikâil",
+       "Azrail"
+      ],
+      "aciklama": "Kiramen Kâtibin yazar, Münker ve Nekir sorgular. (s. 19)"
+     },
+     "kisaCevap": "Kiramen Kâtibin; Münker ve Nekir",
+     "tetik": [
+      "isimleri"
+     ]
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Kur'an-ı Kerim ve hadislerde en çok bilinen melekler dört büyük melek olarak adlandırılır."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Dört büyük meleğin isimlerini ve görevlerini yazınız.",
+       "formul": "isim",
+       "cevap": "Cebrail: vahiy getirir. Azrail: can alır. Mikâil: tabiat olaylarıyla görevlidir. İsrafil: sûra üfler.",
+       "anahtarlar": [
+        {
+         "ad": "Cebrail: vahiy",
+         "sira": [
+          [
+           "cebrail"
+          ],
+          [
+           "vahiy"
+          ]
+         ]
+        },
+        {
+         "ad": "Azrail: can alma",
+         "sira": [
+          [
+           "azrail"
+          ],
+          [
+           "can al",
+           "canını"
+          ]
+         ]
+        },
+        {
+         "ad": "Mikâil: tabiat olayları",
+         "sira": [
+          [
+           "mikail"
+          ],
+          [
+           "tabiat",
+           "rızı",
+           "yağmur"
+          ]
+         ]
+        },
+        {
+         "ad": "İsrafil: sûra üfleme",
+         "sira": [
+          [
+           "israfil"
+          ],
+          [
+           "üfle",
+           "sûr",
+           "sur"
+          ]
+         ]
+        }
+       ],
+       "kisaCevap": "Cebrail: vahiy getirir. Azrail: can alır. Mikâil: tabiat olayları. İsrafil: sûra üfler.",
+       "tetik": [
+        "isimlerini ve görevlerini"
+       ],
+       "kalipNot": "İsim + görev → her satıra bir melek: “Adı: görevi”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1. melek ve görevi:",
+          "ornek": "Cebrail: vahiy getirir",
+          "havuz": [
+           "Cebrail: can alır",
+           "Mikâil: vahiy getirir"
+          ],
+          "hepsi": [
+           [
+            "cebrail"
+           ],
+           [
+            "vahiy"
+           ]
+          ]
+         },
+         {
+          "bas": "2. melek ve görevi:",
+          "ornek": "Azrail: can alır",
+          "havuz": [
+           "Azrail: sûra üfler",
+           "İsrafil: can alır"
+          ],
+          "hepsi": [
+           [
+            "azrail"
+           ],
+           [
+            "can al",
+            "canını"
+           ]
+          ]
+         },
+         {
+          "bas": "3. melek ve görevi:",
+          "ornek": "Mikâil: tabiat olayları",
+          "havuz": [
+           "Mikâil: vahiy getirir",
+           "Azrail: tabiat olayları"
+          ],
+          "hepsi": [
+           [
+            "mikail"
+           ],
+           [
+            "tabiat",
+            "rızı",
+            "yağmur"
+           ]
+          ]
+         },
+         {
+          "bas": "4. melek ve görevi:",
+          "ornek": "İsrafil: sûra üfler",
+          "havuz": [
+           "İsrafil: can alır",
+           "Cebrail: sûra üfler"
+          ],
+          "hepsi": [
+           [
+            "israfil"
+           ],
+           [
+            "üfle"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.1",
+     "id": "m2i1"
+    },
+    {
+     "metin": [
+      "Dört büyük meleğin dışında kitabımızda adı geçen başka melekler de vardır."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Yazıcı meleklerin adını ve görevini yazınız.",
+       "formul": "isim",
+       "cevap": "Kiramen Kâtibin. Görevleri kişinin sevap ve günahlarını amel defterine yazmaktır.",
+       "anahtarlar": [
+        {
+         "ad": "Kiramen Kâtibin",
+         "k": [
+          "kiramen",
+          "katibin"
+         ]
+        },
+        {
+         "ad": "Sevap ve günahı yazar",
+         "k": [
+          "yazar",
+          "yazmak",
+          "kayded"
+         ]
+        }
+       ],
+       "kisaCevap": "Kiramen Kâtibin: sevap ve günahları yazar.",
+       "tetik": [
+        "adını ve görevini"
+       ],
+       "kalipNot": "Ad + görev → “Adı: görevi” diye yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Adı:",
+          "ornek": "Kiramen Kâtibin",
+          "havuz": [
+           "Münker ve Nekir",
+           "Azrail"
+          ],
+          "k": [
+           "kiramen",
+           "katibin"
+          ]
+         },
+         {
+          "bas": "Görevi:",
+          "ornek": "sevap ve günahları yazar",
+          "havuz": [
+           "vahiy getirir",
+           "sûra üfler"
+          ],
+          "k": [
+           "yazar",
+           "yazmak",
+           "kayded"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Sorgu meleklerinin adını ve görevini yazınız.",
+       "formul": "isim",
+       "cevap": "Münker ve Nekir. Görevleri insanları sorguya çekmektir.",
+       "anahtarlar": [
+        {
+         "ad": "Münker ve Nekir",
+         "k": [
+          "münker",
+          "nekir"
+         ]
+        },
+        {
+         "ad": "Sorguya çeker",
+         "k": [
+          "sorgu",
+          "hesaba çek"
+         ]
+        }
+       ],
+       "kisaCevap": "Münker ve Nekir: insanları sorguya çeker.",
+       "tetik": [
+        "adını ve görevini"
+       ],
+       "kalipNot": "Ad + görev → “Adı: görevi” diye yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Adı:",
+          "ornek": "Münker ve Nekir",
+          "havuz": [
+           "Kiramen Kâtibin",
+           "Mikâil"
+          ],
+          "k": [
+           "münker",
+           "nekir"
+          ]
+         },
+         {
+          "bas": "Görevi:",
+          "ornek": "insanları sorguya çeker",
+          "havuz": [
+           "yağmur yağdırır",
+           "can alır"
+          ],
+          "k": [
+           "sorgu",
+           "hesaba çek"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.1",
+     "id": "m2i2"
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "no": 3,
+   "kazanim": "DKAB.7.1.1",
+   "oncelik": 3,
+   "metin": [
+    "Aşağıda görevleri verilen meleklerin isimlerini yazınız.",
+    "1. Allah'ın (cc) emirlerini peygamberlere iletmekle görevlidir.",
+    "2. Yaşam süresini tamamlayanların canını almakla görevlidir.",
+    "3. Kabirde insanları hesaba çekmekle görevlidir.",
+    "4. İnsanların yaptıkları iyilik ve kötülükleri kaydetmekle görevlidir.",
+    "5. Tabiat olaylarıyla görevlidir.",
+    "6. Kıyamet günü sûra üflemekle görevlidir."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "1, 2 ve 3 numaralı görevleri yapan meleklerin isimlerini sırayla yazınız.",
+     "formul": "isim",
+     "cevap": "1. Cebrail 2. Azrail 3. Münker ve Nekir",
+     "anahtarlar": [
+      {
+       "ad": "1: Cebrail",
+       "k": [
+        "cebrail"
+       ]
+      },
+      {
+       "ad": "2: Azrail",
+       "k": [
+        "azrail"
+       ]
+      },
+      {
+       "ad": "3: Münker ve Nekir",
+       "k": [
+        "münker",
+        "nekir"
+       ]
+      }
+     ],
+     "iskele": {
+      "tur": "eslestir",
+      "soru": "Görevi meleğin adıyla eşleştir.",
+      "ciftler": [
+       {
+        "sol": "1. Emirleri peygamberlere iletir",
+        "sag": "Cebrail"
+       },
+       {
+        "sol": "2. Canını alır",
+        "sag": "Azrail"
+       },
+       {
+        "sol": "3. Kabirde hesaba çeker",
+        "sag": "Münker ve Nekir"
+       }
+      ],
+      "aciklama": "Vahiy Cebrail, can Azrail, kabirde sorgu Münker ve Nekir. (s. 19)"
+     },
+     "kisaCevap": "1 Cebrail, 2 Azrail, 3 Münker ve Nekir",
+     "tetik": [
+      "meleklerin isimlerini"
+     ],
+     "kalipNot": "İsim → görevi oku, o görevi yapan meleğin adını yaz."
+    },
+    {
+     "harf": "b",
+     "soru": "4, 5 ve 6 numaralı görevleri yapan meleklerin isimlerini sırayla yazınız.",
+     "formul": "isim",
+     "cevap": "4. Kiramen Kâtibin 5. Mikâil 6. İsrafil",
+     "anahtarlar": [
+      {
+       "ad": "4: Kiramen Kâtibin",
+       "k": [
+        "kiramen",
+        "katibin"
+       ]
+      },
+      {
+       "ad": "5: Mikâil",
+       "k": [
+        "mikail"
+       ]
+      },
+      {
+       "ad": "6: İsrafil",
+       "k": [
+        "israfil"
+       ]
+      }
+     ],
+     "iskele": {
+      "tur": "eslestir",
+      "soru": "Görevi meleğin adıyla eşleştir.",
+      "ciftler": [
+       {
+        "sol": "4. İyilik ve kötülükleri kaydeder",
+        "sag": "Kiramen Kâtibin"
+       },
+       {
+        "sol": "5. Tabiat olaylarıyla görevli",
+        "sag": "Mikâil"
+       },
+       {
+        "sol": "6. Kıyamet günü sûra üfler",
+        "sag": "İsrafil"
+       }
+      ],
+      "aciklama": "Yazan Kiramen Kâtibin, tabiat olayları Mikâil, sûr İsrafil. (s. 19)"
+     },
+     "kisaCevap": "4 Kiramen Kâtibin, 5 Mikâil, 6 İsrafil",
+     "tetik": [
+      "meleklerin isimlerini"
+     ]
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "I. “O, kullarının üstünde yegâne kudret ve tasarruf sahibidir. Size koruyucular gönderir. Nihayet birinize ölüm geldi mi elçilerimiz (görevli melekler) onun canını alırlar. Onlar vazifede kusur etmezler.” (En'am suresi 61. ayet)",
+      "II. “Şunu iyi bilin ki üzerinizde bekçiler, değerli yazıcılar vardır; onlar, yapmakta olduklarınızı bilir.” (İnfitâr suresi, 10-12. ayetler)"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "I. ayette hangi melekten bahsedilmiştir?",
+       "formul": "isim",
+       "cevap": "Azrail",
+       "anahtarlar": [
+        {
+         "ad": "Azrail",
+         "k": [
+          "azrail"
+         ]
+        }
+       ],
+       "kisaCevap": "Azrail",
+       "tetik": [
+        "hangi melekten"
+       ],
+       "kalipNot": "Ayetten melek → görevi anlatan kelimeyi bul: “canını alırlar”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Canı alan melek:",
+          "ornek": "Azrail",
+          "havuz": [
+           "Mikâil",
+           "İsrafil"
+          ],
+          "k": [
+           "azrail"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "II. ayette özellikleri bildirilen meleklerin adını yazınız.",
+       "formul": "isim",
+       "cevap": "Kiramen Kâtibin",
+       "anahtarlar": [
+        {
+         "ad": "Kiramen Kâtibin",
+         "k": [
+          "kiramen",
+          "katibin"
+         ]
+        }
+       ],
+       "kisaCevap": "Kiramen Kâtibin",
+       "tetik": [
+        "meleklerin adını"
+       ],
+       "kalipNot": "Ayetten melek → görevi anlatan kelimeyi bul: “değerli yazıcılar”.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Yazıcı melekler:",
+          "ornek": "Kiramen Kâtibin",
+          "havuz": [
+           "Münker ve Nekir",
+           "Cebrail"
+          ],
+          "k": [
+           "kiramen",
+           "katibin"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.1",
+     "id": "m3i1"
+    },
+    {
+     "metin": [
+      "Aşağıda görevleri verilen meleklerin isimlerini yazınız.",
+      "1. Rızıkların dağıtılması, yağmurların yağması ile görevlidir.",
+      "2. Allah'ın emir ve yasaklarını peygamberlerine bildirir.",
+      "3. Kıyametin kopması ve ölümden sonra diriliş sırasında sûra üfler.",
+      "4. İnsanları sorguya çeker."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Görevleri verilen meleklerin isimlerini sırayla yazınız.",
+       "formul": "isim",
+       "cevap": "1. Mikâil 2. Cebrail 3. İsrafil 4. Münker ve Nekir",
+       "anahtarlar": [
+        {
+         "ad": "1: Mikâil",
+         "k": [
+          "mikail"
+         ]
+        },
+        {
+         "ad": "2: Cebrail",
+         "k": [
+          "cebrail"
+         ]
+        },
+        {
+         "ad": "3: İsrafil",
+         "k": [
+          "israfil"
+         ]
+        },
+        {
+         "ad": "4: Münker ve Nekir",
+         "k": [
+          "münker",
+          "nekir"
+         ]
+        }
+       ],
+       "kisaCevap": "1 Mikâil, 2 Cebrail, 3 İsrafil, 4 Münker ve Nekir",
+       "tetik": [
+        "meleklerin isimlerini"
+       ],
+       "kalipNot": "İsim → görevi oku, o görevi yapan meleğin adını yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1:",
+          "ornek": "Mikâil",
+          "havuz": [
+           "Azrail",
+           "Cebrail"
+          ],
+          "k": [
+           "mikail"
+          ]
+         },
+         {
+          "bas": "2:",
+          "ornek": "Cebrail",
+          "havuz": [
+           "İsrafil",
+           "Azrail"
+          ],
+          "k": [
+           "cebrail"
+          ]
+         },
+         {
+          "bas": "3:",
+          "ornek": "İsrafil",
+          "havuz": [
+           "Azrail",
+           "Mikâil"
+          ],
+          "k": [
+           "israfil"
+          ]
+         },
+         {
+          "bas": "4:",
+          "ornek": "Münker ve Nekir",
+          "havuz": [
+           "Kiramen Kâtibin",
+           "Cebrail"
+          ],
+          "k": [
+           "münker",
+           "nekir"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.1",
+     "id": "m3i2"
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "no": 4,
+   "kazanim": "DKAB.7.1.2",
+   "oncelik": 3,
+   "metin": [
+    "Ayetlerde altı çizili yerlerde ahiret hayatının hangi aşamasından bahsedildiğini tespit ederek bu kavramları kutucuk içerisindeki boş bırakılan alanlara yazınız."
+   ],
+   "svg": "<svg viewBox='0 0 340 300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Altı çizili ifadeleri olan beş ayet ve yanlarında boş kutucuklar' font-family='Nunito, sans-serif'><rect x='8' y='8' width='252' height='52' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/><text x='14' y='29' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>“... Muhakkak siz, kıyamet gününde</text><text x='14' y='49' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'><tspan fill='#f2c14e' font-weight='800' text-decoration='underline'>diriltileceksiniz</tspan>.” (Müminun suresi 16. ayet)</text><rect x='260' y='8' width='72' height='52' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='296' y='39' text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'>1. ?</text><rect x='8' y='66' width='252' height='52' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/><text x='14' y='87' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>“Kıyamet günü için <tspan fill='#f2c14e' font-weight='800' text-decoration='underline'>adalet terazileri</tspan></text><text x='14' y='107' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>kuracağız… ” (Enbiya suresi 47. ayet)</text><rect x='260' y='66' width='72' height='52' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='296' y='97' text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'>2. ?</text><rect x='8' y='124' width='252' height='52' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/><text x='14' y='145' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>“... Ancak <tspan fill='#f2c14e' font-weight='800' text-decoration='underline'>O’nun huzurunda toplanacaksınız</tspan>.”</text><text x='14' y='165' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>Mülk suresi 24. ayet.</text><rect x='260' y='124' width='72' height='52' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='296' y='155' text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'>3. ?</text><rect x='8' y='182' width='252' height='52' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/><text x='14' y='203' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>“... Allah kendi katından büyük bir</text><text x='14' y='223' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'><tspan fill='#f2c14e' font-weight='800' text-decoration='underline'>mükâfat verir.</tspan>” (Nisa suresi 40. ayet)</text><rect x='260' y='182' width='72' height='52' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='296' y='213' text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'>4. ?</text><rect x='8' y='240' width='252' height='52' rx='4' fill='#a3abc6' fill-opacity='0.06' stroke='#a3abc6' stroke-width='2'/><text x='14' y='261' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>“(O gün) <tspan fill='#f2c14e' font-weight='800' text-decoration='underline'>sûra üflenecek</tspan>.”</text><text x='14' y='281' font-size='11' font-weight='600' fill='#f5f6fa' font-family='inherit'>(Zümer suresi 68. ayet)</text><rect x='260' y='240' width='72' height='52' rx='4' fill='#f2c14e' fill-opacity='0.12' stroke='#f2c14e' stroke-width='2'/><text x='296' y='271' text-anchor='middle' font-size='13' font-weight='800' fill='#f2c14e'>5. ?</text></svg>",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "1'den 5'e kadar kutucuklara gelecek kavramları sırayla yazınız.",
+     "formul": "asama",
+     "cevap": "1. Baas 2. Mizan 3. Haşir veya Mahşer 4. Cennet 5. Kıyamet",
+     "anahtarlar": [
+      {
+       "ad": "1: Baas",
+       "k": [
+        "baas",
+        "ba's"
+       ]
+      },
+      {
+       "ad": "2: Mizan",
+       "k": [
+        "mizan"
+       ]
+      },
+      {
+       "ad": "3: Mahşer",
+       "k": [
+        "mahşer",
+        "haşir",
+        "haşr"
+       ]
+      },
+      {
+       "ad": "4: Cennet",
+       "k": [
+        "cennet"
+       ]
+      },
+      {
+       "ad": "5: Kıyamet",
+       "k": [
+        "kıyamet"
+       ]
+      }
+     ],
+     "iskele": {
+      "tur": "eslestir",
+      "soru": "Altı çizili ifadeyi ahiret aşamasıyla eşleştir.",
+      "ciftler": [
+       {
+        "sol": "diriltileceksiniz",
+        "sag": "Baas"
+       },
+       {
+        "sol": "adalet terazileri",
+        "sag": "Mizan"
+       },
+       {
+        "sol": "O'nun huzurunda toplanacaksınız",
+        "sag": "Mahşer"
+       },
+       {
+        "sol": "mükâfat verir",
+        "sag": "Cennet"
+       },
+       {
+        "sol": "sûra üflenecek",
+        "sag": "Kıyamet"
+       }
+      ],
+      "aciklama": "Dirilme baas, terazi mizan, toplanma mahşer, mükâfat cennet, sûr kıyamet. (s. 26–28)"
+     },
+     "kisaCevap": "1 Baas, 2 Mizan, 3 Mahşer, 4 Cennet, 5 Kıyamet",
+     "tetik": [
+      "kutucuklara gelecek kavramları"
+     ],
+     "kalipNot": "Ayetten aşama → kilit kelimeye bak: dirilme = baas, toplanma = mahşer, terazi = mizan."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "I. “Allah onları topladığı vakit, sanki (dünyada) sadece günün bir saatinde, aralarında tanışacak kadar kısa bir süre kaldıklarını düşünürler…” (Yunus suresi 45. ayet)",
+      "II. “Biz, kıyamet günü için adalet terazileri kurarız; artık kimseye hiçbir şekilde haksızlık edilmez. Yapılan, bir hardal tanesi kadar dahi olsa onu getirir ortaya koyarız…” (Enbiyâ suresi, 47. ayet)"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "I. ayette ahiret hayatının aşamalarının hangisinden bahsedildiğini yazınız.",
+       "formul": "asama",
+       "cevap": "Mahşer (haşir)",
+       "anahtarlar": [
+        {
+         "ad": "Mahşer",
+         "k": [
+          "mahşer",
+          "haşir",
+          "haşr"
+         ]
+        }
+       ],
+       "kisaCevap": "Mahşer",
+       "tetik": [
+        "hangisinden bahsedildiğini"
+       ],
+       "kalipNot": "Ayetten aşama → kilit kelimeye bak: dirilme = baas, toplanma = mahşer, terazi = mizan.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "“Topladığı vakit”:",
+          "ornek": "mahşer",
+          "havuz": [
+           "mizan",
+           "baas"
+          ],
+          "k": [
+           "mahşer",
+           "haşir",
+           "haşr"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "II. ayetteki “adalet terazileri” ifadesinin ahiret hayatının hangi aşamasıyla ilgili olduğunu yazınız.",
+       "formul": "asama",
+       "cevap": "Mizan",
+       "anahtarlar": [
+        {
+         "ad": "Mizan",
+         "k": [
+          "mizan"
+         ]
+        }
+       ],
+       "kisaCevap": "Mizan",
+       "tetik": [
+        "hangi aşamasıyla"
+       ],
+       "kalipNot": "Ayetten aşama → kilit kelimeye bak: dirilme = baas, toplanma = mahşer, terazi = mizan.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Terazi:",
+          "ornek": "mizan",
+          "havuz": [
+           "mahşer",
+           "kıyamet"
+          ],
+          "k": [
+           "mizan"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "c",
+       "soru": "İnsanların dünya hayatında yaptıklarıyla ilgili hesap vermek için toplanacakları yerin adını yazınız.",
+       "formul": "asama",
+       "cevap": "Mahşer",
+       "anahtarlar": [
+        {
+         "ad": "Mahşer",
+         "k": [
+          "mahşer"
+         ]
+        }
+       ],
+       "kisaCevap": "Mahşer",
+       "tetik": [
+        "toplanacakları yerin adını"
+       ],
+       "kalipNot": "Yerin adı → toplanılan yer: mahşer.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Toplanma yeri:",
+          "ornek": "mahşer",
+          "havuz": [
+           "mizan",
+           "cennet"
+          ],
+          "k": [
+           "mahşer"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.2",
+     "id": "m4i1"
+    },
+    {
+     "metin": [
+      "I. “Kâfirler: ‘Allah, ölen kimseyi bir daha diriltmez!’ diye var güçleriyle yemin ediyorlar. Hayır, elbette diriltecek! Bu, O'nun gerçekleşmesini üzerine aldığı kesin bir sözüdür…” (Nahl suresi 38. ayet)",
+      "II. “O gün sûra üflenecek, ardından Allah'ın diledikleri dışında göklerde ve yerde bulunanların hepsi ölecek; sonra sûra yeniden üflenecek ve onlar birden ayağa kalkmış, etrafa bakıyor olacaklar.” (Zümer suresi, 68. ayet)"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "I. ayette ahiret hayatının aşamalarının hangisinden bahsedildiğini yazınız.",
+       "formul": "asama",
+       "cevap": "Baas",
+       "anahtarlar": [
+        {
+         "ad": "Baas",
+         "k": [
+          "baas",
+          "ba's",
+          "diriliş"
+         ]
+        }
+       ],
+       "kisaCevap": "Baas",
+       "tetik": [
+        "hangisinden bahsedildiğini"
+       ],
+       "kalipNot": "Ayetten aşama → kilit kelimeye bak: dirilme = baas, toplanma = mahşer, terazi = mizan.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "“Elbette diriltecek”:",
+          "ornek": "baas",
+          "havuz": [
+           "mizan",
+           "cennet"
+          ],
+          "k": [
+           "baas",
+           "ba's"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "II. ayetin ahiret hayatının aşamalarından hangileri ile ilgili olduğunu yazınız.",
+       "formul": "asama",
+       "cevap": "Kıyamet ve baas",
+       "anahtarlar": [
+        {
+         "ad": "Kıyamet",
+         "k": [
+          "kıyamet"
+         ]
+        },
+        {
+         "ad": "Baas",
+         "k": [
+          "baas",
+          "ba's",
+          "diriliş"
+         ]
+        }
+       ],
+       "kisaCevap": "Kıyamet ve baas",
+       "tetik": [
+        "hangileri ile ilgili"
+       ],
+       "kalipNot": "Hangileri → iki üfleyişe bak: ilki kıyamet, ikincisi baas.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İlk üfleyiş:",
+          "ornek": "kıyamet",
+          "havuz": [
+           "mizan",
+           "mahşer"
+          ],
+          "k": [
+           "kıyamet"
+          ]
+         },
+         {
+          "bas": "Yeniden üfleyiş:",
+          "ornek": "baas",
+          "havuz": [
+           "cennet",
+           "cehennem"
+          ],
+          "k": [
+           "baas",
+           "ba's"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.2",
+     "id": "m4i2"
+    }
+   ]
+  },
+  {
+   "id": "m5",
+   "no": 5,
+   "kazanim": "DKAB.7.1.2",
+   "oncelik": 2,
+   "metin": [
+    "Dünya hayatında, hiçbir canlının yaşam süresi sonsuz değildir. Her canlı için Allah (cc) tarafından belirlenmiş bir yaşam süresi vardır. Bu sürenin dolmasıyla gerçekleşen durum, insanoğlu için bir yok oluş değil sonsuz bir hayatın başlangıcıdır. Kıyametten sonra ahiret hayatında yeniden diriliş bir hakikattir. Bu durum Kur'an-ı Kerim'de “O … yeryüzünü ölümünün ardından canlandırıyor. İşte siz de böyle (diriltilip) çıkarılacaksınız.” (Rum suresi 19. ayet) ayetiyle insanın yeniden dirilişi doğanın baharda yeniden canlanmasına benzetilmiştir. İnsanın dünya hayatında yaptıklarını içeren kayıtların ilahi bir terazide değerlendirileceği ahiret hayatının aşamaları bunlarla sınırlı değildir."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Metinde ahiret hayatının aşamalarıyla ilgili yer verilen kavramları yazınız.",
+     "formul": "metinde",
+     "cevap": "Ömür, ecel, baas, amel defteri, mizan.",
+     "anahtarlar": [
+      {
+       "ad": "Ömür (yaşam süresi)",
+       "k": [
+        "ömür",
+        "yaşam süresi"
+       ]
+      },
+      {
+       "ad": "Ecel (sürenin dolması)",
+       "k": [
+        "ecel",
+        "ölüm"
+       ]
+      },
+      {
+       "ad": "Baas (yeniden diriliş)",
+       "k": [
+        "baas",
+        "ba's",
+        "diriliş"
+       ]
+      },
+      {
+       "ad": "Amel defteri (kayıtlar)",
+       "k": [
+        "amel",
+        "kayıt"
+       ]
+      },
+      {
+       "ad": "Mizan (ilahi terazi)",
+       "k": [
+        "mizan",
+        "terazi"
+       ]
+      }
+     ],
+     "kisaCevap": "Ömür, ecel, baas, amel defteri, mizan.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Ömür, ecel, baas, amel defteri, mizan.",
+        "Baas, mizan.",
+        "Mahşer, cennet, cehennem."
+       ],
+       "dogru": 0,
+       "ipucu": "Metindeki ifadeleri kavrama çevir: yaşam süresi, sürenin dolması, yeniden diriliş, kayıtlar, terazi.",
+       "aciklama": "MEB'in cevabı: ömür, ecel, baas, amel defteri, mizan. (s. 25, 27; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "“Belirlenmiş süre”:",
+        "ornek": "ömür",
+        "havuz": [
+         "mahşer",
+         "cennet"
+        ],
+        "k": [
+         "ömür"
+        ]
+       },
+       {
+        "bas": "“Sürenin dolması”:",
+        "ornek": "ecel",
+        "havuz": [
+         "mahşer",
+         "cehennem"
+        ],
+        "k": [
+         "ecel"
+        ]
+       },
+       {
+        "bas": "“Canlanma” sözü:",
+        "ornek": "baas",
+        "havuz": [
+         "cehennem",
+         "mahşer"
+        ],
+        "k": [
+         "baas",
+         "ba's"
+        ]
+       },
+       {
+        "bas": "“İçinde yaptıkları yazan”:",
+        "ornek": "amel defteri",
+        "havuz": [
+         "mizan",
+         "cennet"
+        ],
+        "k": [
+         "amel"
+        ]
+       },
+       {
+        "bas": "“İlahi tartı”:",
+        "ornek": "mizan",
+        "havuz": [
+         "baas",
+         "mahşer"
+        ],
+        "k": [
+         "mizan"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "yer verilen kavramları"
+     ],
+     "kalipNot": "Metinde olan → metinde kelimesi geçen kavramları yaz."
+    },
+    {
+     "harf": "b",
+     "soru": "Metinde yer verilmeyen ahiret hayatının aşamalarını tespit ederek yazınız.",
+     "formul": "metinde",
+     "cevap": "Mahşer, cennet, cehennem.",
+     "anahtarlar": [
+      {
+       "ad": "Mahşer",
+       "k": [
+        "mahşer"
+       ]
+      },
+      {
+       "ad": "Cennet",
+       "k": [
+        "cennet"
+       ]
+      },
+      {
+       "ad": "Cehennem",
+       "k": [
+        "cehennem"
+       ]
+      }
+     ],
+     "kisaCevap": "Mahşer, cennet, cehennem.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Mahşer, cennet, cehennem.",
+        "Mahşer.",
+        "Baas, mizan, amel defteri."
+       ],
+       "dogru": 0,
+       "ipucu": "Aşamaların sırasını aklından geçir: metinde olmayanları seç.",
+       "aciklama": "Metinde mahşer, cennet ve cehennem yok. (MEB'in cevabında kıyamet de var ama metinde “Kıyametten sonra” geçiyor; yazmak şart değil.) (s. 26–28; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Toplanma yeri:",
+        "ornek": "mahşer",
+        "havuz": [
+         "mizan",
+         "baas"
+        ],
+        "k": [
+         "mahşer"
+        ]
+       },
+       {
+        "bas": "Mükâfat yeri:",
+        "ornek": "cennet",
+        "havuz": [
+         "mizan",
+         "mahşer"
+        ],
+        "k": [
+         "cennet"
+        ]
+       },
+       {
+        "bas": "Ceza yeri:",
+        "ornek": "cehennem",
+        "havuz": [
+         "baas",
+         "mizan"
+        ],
+        "k": [
+         "cehennem"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "yer verilmeyen"
+     ],
+     "kalipNot": "Metinde olmayan → aşamaları tek tek düşün, metinde geçmeyenleri yaz."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Belirlenen süre dolunca her insan ölümü tadar. Dünya için takdir edilen süre bitince İsrafil sûra üfler ve kıyamet kopar. Sonra insanlar yaptıklarının hesabını vermek üzere mahşerde toplanır."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Metinde ahiret hayatının aşamalarıyla ilgili yer verilen kavramları yazınız.",
+       "formul": "metinde",
+       "cevap": "Ölüm, kıyamet, mahşer.",
+       "anahtarlar": [
+        {
+         "ad": "Ölüm",
+         "k": [
+          "ölüm"
+         ]
+        },
+        {
+         "ad": "Kıyamet",
+         "k": [
+          "kıyamet"
+         ]
+        },
+        {
+         "ad": "Mahşer",
+         "k": [
+          "mahşer"
+         ]
+        }
+       ],
+       "kisaCevap": "Ölüm, kıyamet, mahşer.",
+       "tetik": [
+        "yer verilen kavramları"
+       ],
+       "kalipNot": "Metinde olan → metinde kelimesi geçen kavramları yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Birinci aşama:",
+          "ornek": "ölüm",
+          "havuz": [
+           "cennet",
+           "mizan"
+          ],
+          "k": [
+           "ölüm"
+          ]
+         },
+         {
+          "bas": "Sûra üflenince:",
+          "ornek": "kıyamet",
+          "havuz": [
+           "mizan",
+           "cennet"
+          ],
+          "k": [
+           "kıyamet"
+          ]
+         },
+         {
+          "bas": "Toplanma:",
+          "ornek": "mahşer",
+          "havuz": [
+           "mizan",
+           "cehennem"
+          ],
+          "k": [
+           "mahşer"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Metinde yer verilmeyen ahiret hayatının aşamalarını yazınız.",
+       "formul": "metinde",
+       "cevap": "Baas, mizan, cennet, cehennem.",
+       "anahtarlar": [
+        {
+         "ad": "Baas",
+         "k": [
+          "baas",
+          "ba's"
+         ]
+        },
+        {
+         "ad": "Mizan",
+         "k": [
+          "mizan"
+         ]
+        },
+        {
+         "ad": "Cennet",
+         "k": [
+          "cennet"
+         ]
+        },
+        {
+         "ad": "Cehennem",
+         "k": [
+          "cehennem"
+         ]
+        }
+       ],
+       "kisaCevap": "Baas, mizan, cennet, cehennem.",
+       "tetik": [
+        "yer verilmeyen"
+       ],
+       "kalipNot": "Metinde olmayan → aşamaları tek tek düşün, metinde geçmeyenleri yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Diriliş:",
+          "ornek": "baas",
+          "havuz": [
+           "ölüm",
+           "kıyamet"
+          ],
+          "k": [
+           "baas",
+           "ba's"
+          ]
+         },
+         {
+          "bas": "Terazi:",
+          "ornek": "mizan",
+          "havuz": [
+           "mahşer",
+           "ölüm"
+          ],
+          "k": [
+           "mizan"
+          ]
+         },
+         {
+          "bas": "Sonuç yerleri:",
+          "ornek": "cennet, cehennem",
+          "havuz": [
+           "kıyamet, ölüm",
+           "mahşer, ölüm"
+          ],
+          "hepsi": [
+           [
+            "cennet"
+           ],
+           [
+            "cehennem"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.2",
+     "id": "m5i1"
+    },
+    {
+     "metin": [
+      "İsrafil sûra ikinci kez üflediğinde insanlar yeniden diriltilir. İnsanların sevap ve günahları manevi bir terazide tartılır. Sevabı ağır gelen kişi sonsuz mükâfat yerine gider."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Metinde ahiret hayatının aşamalarıyla ilgili yer verilen kavramları yazınız.",
+       "formul": "metinde",
+       "cevap": "Baas, mizan, cennet.",
+       "anahtarlar": [
+        {
+         "ad": "Baas",
+         "k": [
+          "baas",
+          "ba's",
+          "diriliş",
+          "diriltil"
+         ]
+        },
+        {
+         "ad": "Mizan",
+         "k": [
+          "mizan",
+          "terazi"
+         ]
+        },
+        {
+         "ad": "Cennet",
+         "k": [
+          "cennet",
+          "mükâfat"
+         ]
+        }
+       ],
+       "kisaCevap": "Baas, mizan, cennet.",
+       "tetik": [
+        "yer verilen kavramları"
+       ],
+       "kalipNot": "Metinde olan → metinde kelimesi geçen kavramları yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Yeniden canlanma:",
+          "ornek": "baas",
+          "havuz": [
+           "ölüm",
+           "mahşer"
+          ],
+          "k": [
+           "baas",
+           "ba's"
+          ]
+         },
+         {
+          "bas": "Tartılma:",
+          "ornek": "mizan",
+          "havuz": [
+           "mahşer",
+           "ölüm"
+          ],
+          "k": [
+           "mizan"
+          ]
+         },
+         {
+          "bas": "Sonsuz ödül yeri:",
+          "ornek": "cennet",
+          "havuz": [
+           "cehennem",
+           "ölüm"
+          ],
+          "k": [
+           "cennet"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Metinde yer verilmeyen ahiret hayatının aşamalarını yazınız.",
+       "formul": "metinde",
+       "cevap": "Ölüm, kıyamet, mahşer, cehennem.",
+       "anahtarlar": [
+        {
+         "ad": "Ölüm",
+         "k": [
+          "ölüm"
+         ]
+        },
+        {
+         "ad": "Kıyamet",
+         "k": [
+          "kıyamet"
+         ]
+        },
+        {
+         "ad": "Mahşer",
+         "k": [
+          "mahşer"
+         ]
+        },
+        {
+         "ad": "Cehennem",
+         "k": [
+          "cehennem"
+         ]
+        }
+       ],
+       "kisaCevap": "Ölüm, kıyamet, mahşer, cehennem.",
+       "tetik": [
+        "yer verilmeyen"
+       ],
+       "kalipNot": "Metinde olmayan → aşamaları tek tek düşün, metinde geçmeyenleri yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Dünya hayatının bitişi:",
+          "ornek": "ölüm",
+          "havuz": [
+           "baas",
+           "mizan"
+          ],
+          "k": [
+           "ölüm"
+          ]
+         },
+         {
+          "bas": "İlk üfleyiş:",
+          "ornek": "kıyamet",
+          "havuz": [
+           "baas",
+           "mizan"
+          ],
+          "k": [
+           "kıyamet"
+          ]
+         },
+         {
+          "bas": "Toplanma:",
+          "ornek": "mahşer",
+          "havuz": [
+           "mizan",
+           "cennet"
+          ],
+          "k": [
+           "mahşer"
+          ]
+         },
+         {
+          "bas": "Ceza yeri:",
+          "ornek": "cehennem",
+          "havuz": [
+           "cennet",
+           "mizan"
+          ],
+          "k": [
+           "cehennem"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.2",
+     "id": "m5i2"
+    }
+   ]
+  },
+  {
+   "id": "m6",
+   "no": 6,
+   "kazanim": "DKAB.7.1.2",
+   "oncelik": 1,
+   "metin": [
+    "Kur'an-ı Kerim'de “O gün insanlar amellerinin kendilerine gösterilmesi için bölük bölük kabirlerinden çıkacaklardır. Artık kim zerre ağırlığınca bir hayır işlerse onun mükafatını görecektir. Kim de zerre ağırlığınca bir kötülük işlerse onun cezasını görecektir.” (Zilzal suresi 6-8. ayetler) buyurulmaktadır."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Ahiret hayatının yukarıdaki ayetlerde bahsedilen aşamaları arasındaki ilişkiyi açıklayınız.",
+     "formul": "iliski",
+     "cevap": "İnsanların bölük bölük kabirlerinden çıkması yeniden dirilişi (baası) temsil eder. Baastan sonra kurulacak mizanda insanların yaptıkları tartılır; en küçük iyilik ve kötülük bile karşılıksız kalmaz. Mizandaki sonuca göre iyilikleri ağır gelenler cennetle ödüllendirilir, kötülükleri fazla olanlar cehennemle karşılaşır.",
+     "anahtarlar": [
+      {
+       "ad": "Baas: kabirlerden çıkma, dirilme",
+       "k": [
+        "baas",
+        "ba's",
+        "dirilir",
+        "dirilme",
+        "diriliş"
+       ]
+      },
+      {
+       "ad": "Mizan: yapılanların tartılması",
+       "k": [
+        "mizan",
+        "tartıl",
+        "terazi"
+       ]
+      },
+      {
+       "ad": "Karşılık: cennet ya da cehennem",
+       "k": [
+        "cennet",
+        "cehennem",
+        "karşılığ"
+       ]
+      }
+     ],
+     "kisaCevap": "Önce baas olur, insanlar dirilir. Sonra mizanda yaptıkları tartılır. Sonunda cennet ya da cehennemde karşılığını görür.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Önce baas olur, insanlar dirilir. Sonra mizanda yaptıkları tartılır. Sonunda cennet ya da cehennemde karşılığını görür.",
+        "Önce baas olur, insanlar dirilir.",
+        "Önce cennete girilir, sonra kıyamet kopar."
+       ],
+       "dogru": 0,
+       "ipucu": "Ayette üç şey var: kabirden çıkma, zerre ağırlığınca tartılma, karşılığını görme. Sırayla yaz.",
+       "aciklama": "Kabirden çıkma baas; ardından mizanda tartılma; sonra cennet ya da cehennem. (s. 27–28; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "Önce",
+        "ornek": "baas olur, insanlar dirilir",
+        "havuz": [
+         "okul biter",
+         "herkes uyur"
+        ],
+        "k": [
+         "baas",
+         "ba's",
+         "dirilir",
+         "dirilme",
+         "diriliş"
+        ]
+       },
+       {
+        "bas": "Sonra",
+        "ornek": "mizanda yaptıkları tartılır",
+        "havuz": [
+         "hiçbir şey sorulmaz",
+         "herkes unutulur"
+        ],
+        "k": [
+         "mizan",
+         "tartıl",
+         "terazi"
+        ]
+       },
+       {
+        "bas": "Sonunda",
+        "ornek": "cennet ya da cehennemde karşılığını görür",
+        "havuz": [
+         "hiçbir şey olmaz",
+         "her şey unutulur"
+        ],
+        "k": [
+         "cennet",
+         "cehennem",
+         "karşılığ"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "aşamaları arasındaki ilişkiyi"
+     ],
+     "kalipNot": "İlişki → “önce …, sonra …, sonunda …” diye sıraya göre anlat."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Ahiret hayatı aşamalardan oluşur."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Ahiret hayatının aşamalarını sırasına göre yazınız.",
+       "formul": "iliski",
+       "cevap": "Ölüm, kıyamet, baas, mahşer, mizan, cennet ve cehennem.",
+       "anahtarlar": [
+        {
+         "ad": "Doğru sıra",
+         "sira": [
+          [
+           "ölüm"
+          ],
+          [
+           "kıyamet"
+          ],
+          [
+           "baas",
+           "ba's",
+           "diriliş"
+          ],
+          [
+           "mahşer",
+           "haşir"
+          ],
+          [
+           "mizan"
+          ],
+          [
+           "cennet",
+           "cehennem"
+          ]
+         ]
+        }
+       ],
+       "kisaCevap": "Ölüm, kıyamet, baas, mahşer, mizan, cennet-cehennem.",
+       "tetik": [
+        "sırasına göre"
+       ],
+       "kalipNot": "Sıra → Ölüm, kıyamet, baas, mahşer, mizan, cennet-cehennem.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "İlk üç:",
+          "ornek": "ölüm, kıyamet, baas",
+          "havuz": [
+           "baas, ölüm, kıyamet",
+           "kıyamet, ölüm, baas"
+          ],
+          "sira": [
+           [
+            "ölüm"
+           ],
+           [
+            "kıyamet"
+           ],
+           [
+            "baas",
+            "ba's"
+           ]
+          ]
+         },
+         {
+          "bas": "Son üç:",
+          "ornek": "mahşer, mizan, cennet-cehennem",
+          "havuz": [
+           "cennet-cehennem, mizan, mahşer",
+           "mizan, mahşer, cennet-cehennem"
+          ],
+          "sira": [
+           [
+            "mahşer"
+           ],
+           [
+            "mizan"
+           ],
+           [
+            "cennet",
+            "cehennem"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.2",
+     "id": "m6i1"
+    },
+    {
+     "metin": [
+      "Ahiret gününde insanların dünyada yaptıkları davranışlar değerlendirilecektir."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Mizanın ne zaman kurulacağını ve bu sırada ne olacağını kısaca açıklayınız.",
+       "formul": "iliski",
+       "cevap": "Mizan, mahşerde amel defterleri verildikten sonra kurulur. Bu sırada sevap ve günahlar tartılır; sevabı ağır gelenler mükâfatlandırılır, günahı ağır gelenler cezalandırılır.",
+       "anahtarlar": [
+        {
+         "ad": "Ne zaman: amel defterleri verildikten sonra",
+         "k": [
+          "amel defter",
+          "mahşer",
+          "hesap"
+         ]
+        },
+        {
+         "ad": "Ne olur: sevap ve günahlar tartılır",
+         "k": [
+          "tartıl",
+          "tartı"
+         ]
+        },
+        {
+         "ad": "Sonuç: mükâfat ya da ceza",
+         "k": [
+          "mükâfat",
+          "ceza",
+          "cennet",
+          "cehennem"
+         ]
+        }
+       ],
+       "kisaCevap": "Amel defterleri verildikten sonra kurulur. Sevap ve günahlar tartılır, karşılığı cennet ya da cehennemdir.",
+       "tetik": [
+        "ne zaman kurulacağını",
+        "ne olacağını"
+       ],
+       "kalipNot": "İki soru → “Ne zaman: … Ne olur: …”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Ne zaman:",
+          "ornek": "amel defterleri verildikten sonra",
+          "havuz": [
+           "dünya hayatında",
+           "ölmeden önce"
+          ],
+          "k": [
+           "amel defter",
+           "mahşer",
+           "hesap"
+          ]
+         },
+         {
+          "bas": "Ne olur:",
+          "ornek": "sevap ve günahlar tartılır",
+          "havuz": [
+           "herkes uyur",
+           "kimse sorulmaz"
+          ],
+          "k": [
+           "tartıl",
+           "tartı"
+          ]
+         },
+         {
+          "bas": "Sonuç:",
+          "ornek": "mükâfat ya da ceza verilir",
+          "havuz": [
+           "kimseye bir şey olmaz",
+           "hepsi unutulur"
+          ],
+          "k": [
+           "mükâfat",
+           "ceza"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.2",
+     "id": "m6i2"
+    }
+   ]
+  },
+  {
+   "id": "m7",
+   "no": 7,
+   "kazanim": "DKAB.7.1.3",
+   "oncelik": 3,
+   "metin": [
+    "Din kültürü ve ahlak bilgisi dersinde “Melek ve ahiret inancının insana kazandırdıkları” konusunu işleyen öğretmen, tahtaya şu ayeti ve hadisi yazdı:",
+    "“…Asıl erdemli kişi Allah'a, âhiret gününe, meleklere, kitaba ve peygamberlere iman eden; sevdiği maldan yakınlara, yetimlere, yoksullara, yolda kalmışlara, yardım isteyenlere ve özgürlüğünü kaybetmiş olanlara harcayan; namazı kılıp zekâtı verendir. Böyleleri anlaşma yaptıklarında sözlerini tutarlar; darlıkta, hastalıkta ve savaş zamanında sabrederler. İşte doğru olanlar bunlardır ve işte takva sahipleri bunlardır.” (Bakara suresi 177. ayet)",
+    "“Allah'a ve ahiret gününe iman eden kimse, komşusuna eziyet etmesin! Allah'a ve ahiret gününe iman eden kimse, misafirine ikramda bulunsun! Allah'a ve ahiret gününe iman eden kimse, ya hayır söylesin ya da sussun!” (Buhari, “Edeb”, 31.)"
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Yukarıdaki ayet ve hadisi ilke edinen bireyin günlük yaşamında göstermesi beklenen üç davranışı yazınız.",
+     "formul": "davranis",
+     "cevap": "Komşularıyla iyi geçinir, karşılıklı saygıya dayalı ilişkiler kurar. Evine gelen misafirleri güler yüzle karşılayıp ikramda bulunur. Faydalı ve güzel konuşmaya özen gösterir. Yardımsever olur.",
+     "anahtarlar": [
+      {
+       "ad": "Komşusuna eziyet etmez",
+       "k": [
+        "komşu"
+       ]
+      },
+      {
+       "ad": "Misafirine ikram eder",
+       "k": [
+        "misafir",
+        "ikram"
+       ]
+      },
+      {
+       "ad": "Üçüncü davranış: güzel söz, yardım, sözünü tutma",
+       "k": [
+        "güzel söz",
+        "hayır söyle",
+        "güzel konuş",
+        "faydalı",
+        "sus",
+        "yardım",
+        "sözünü tut",
+        "sabr"
+       ]
+      }
+     ],
+     "kisaCevap": "Komşusuna eziyet etmez. Misafirine ikram eder. Güzel söz söyler.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Komşusuna eziyet etmez. Misafirine ikram eder. Güzel söz söyler.",
+        "Komşusuna eziyet etmez.",
+        "Çok çalışır. Erken uyur. Ödevini yapar."
+       ],
+       "dogru": 0,
+       "ipucu": "Üç davranış istiyor: hadiste üç öğüt var, sırayla yaz.",
+       "aciklama": "Hadisteki üç öğüt: komşuya eziyet etmemek, misafire ikram, hayır söylemek ya da susmak. Ayetteki yardım ve sözünde durma da olur. (s. 32, 34; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "1. davranış:",
+        "ornek": "komşusuna eziyet etmez",
+        "havuz": [
+         "çok televizyon izler",
+         "geç uyur"
+        ],
+        "k": [
+         "komşu"
+        ]
+       },
+       {
+        "bas": "2. davranış:",
+        "ornek": "misafirine ikram eder",
+        "havuz": [
+         "kapıyı kapatır",
+         "evden çıkmaz"
+        ],
+        "k": [
+         "misafir",
+         "ikram"
+        ]
+       },
+       {
+        "bas": "3. davranış:",
+        "ornek": "güzel söz söyler",
+        "havuz": [
+         "kötü söz söyler",
+         "bağırır"
+        ],
+        "k": [
+         "güzel söz",
+         "hayır söyle",
+         "güzel konuş"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "üç davranışı"
+     ],
+     "kalipNot": "Davranış → metindeki her öğüdü ayrı bir “yapar / yapmaz” cümlesi yap."
+    },
+    {
+     "harf": "b",
+     "soru": "Ayet ve hadiste bahsedilen davranışların ortaya çıkmasında melek ve ahiret inancının etkisini üç cümleyle açıklayınız.",
+     "formul": "etki",
+     "cevap": "Meleklerin ve ahiret hayatının varlığına inanan bir insan, yaptığı her davranışın görüldüğünü ve kaydedildiğini bilir. Ahirette bu davranışların hesabını vereceğini bildiği için sorumluluk bilinciyle hareket eder. Bu inanç sayesinde doğru davranışlar yapmaya yönelir ve kötülüklerden uzak durur.",
+     "anahtarlar": [
+      {
+       "ad": "Yapılanlar görülür, yazılır",
+       "k": [
+        "kaydedil",
+        "görül",
+        "yazıl"
+       ]
+      },
+      {
+       "ad": "Hesap verecek, sorumlu",
+       "k": [
+        "hesab",
+        "hesap",
+        "sorumlu"
+       ]
+      },
+      {
+       "ad": "Kötülükten uzak durur, iyiye yönelir",
+       "k": [
+        "kötü",
+        "iyi",
+        "doğru davran"
+       ]
+      }
+     ],
+     "kisaCevap": "Yaptıklarının yazıldığını bilir. Ahirette hesap vereceğini bilir. Bu yüzden kötülükten uzak durur.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Yaptıklarının yazıldığını bilir. Ahirette hesap vereceğini bilir. Bu yüzden kötülükten uzak durur.",
+        "Yaptıklarının yazıldığını bilir.",
+        "Meleklerin kanatları olduğunu bilir ve çok sevinir."
+       ],
+       "dogru": 0,
+       "ipucu": "Üç cümle istiyor: yazılıyor, hesap var, bu yüzden davranış.",
+       "aciklama": "Yapılanların kaydedildiğini ve hesabının verileceğini bilen insan sorumlu davranır, kötülükten uzak durur. (s. 34–35; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "1. cümle:",
+        "ornek": "yaptıklarının yazıldığını bilir",
+        "havuz": [
+         "bugün havanın güzel olduğunu bilir",
+         "hiçbir şey bilmez"
+        ],
+        "k": [
+         "yazıl",
+         "kaydedil",
+         "görül"
+        ]
+       },
+       {
+        "bas": "2. cümle:",
+        "ornek": "ahirette hesap vereceğini bilir",
+        "havuz": [
+         "ahiretin olmadığını düşünür",
+         "yarın tatil olduğunu bilir"
+        ],
+        "k": [
+         "hesab",
+         "hesap",
+         "sorumlu"
+        ]
+       },
+       {
+        "bas": "3. cümle:",
+        "ornek": "bu yüzden kötülükten uzak durur",
+        "havuz": [
+         "bu yüzden dilediğini yapar",
+         "bu yüzden umursamaz"
+        ],
+        "k": [
+         "uzak dur",
+         "kaçın",
+         "iyiliğe yönel"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "etkisini üç cümleyle"
+     ],
+     "kalipNot": "Etki → “… bilir” iki cümle + “bu yüzden …” bir cümle."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Ahiret inancına sahip bireylerin davranışları, yaptıklarının hesabını vereceklerini bildikleri için günlük hayata yansır."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Ahiret inancına sahip bireyler hangi davranışlarda bulunurlar? Üç örnek yazınız.",
+       "formul": "davranis",
+       "cevap": "Sorumluluk sahibi olurlar. İyilik yaparlar. İhtiyaç sahiplerine yardım ederler, adaleti savunurlar.",
+       "anahtarlar": [
+        {
+         "ad": "Sorumlu olur",
+         "k": [
+          "sorumlu"
+         ]
+        },
+        {
+         "ad": "İyilik yapar",
+         "k": [
+          "iyilik",
+          "yardım"
+         ]
+        },
+        {
+         "ad": "Adaletli, komşusuyla iyi geçinir",
+         "k": [
+          "adalet",
+          "komşu",
+          "dürüst",
+          "doğru"
+         ]
+        }
+       ],
+       "kisaCevap": "Sorumlu olurlar. İyilik yaparlar. Adaletli davranırlar.",
+       "tetik": [
+        "Üç örnek"
+       ],
+       "kalipNot": "Davranış → metindeki her öğüdü ayrı bir “yapar / yapmaz” cümlesi yap.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1. örnek:",
+          "ornek": "sorumlu olurlar",
+          "havuz": [
+           "ödevini unuturlar",
+           "her şeyi ertelerler"
+          ],
+          "k": [
+           "sorumlu"
+          ]
+         },
+         {
+          "bas": "2. örnek:",
+          "ornek": "iyilik yaparlar",
+          "havuz": [
+           "kavga ederler",
+           "kimseye bakmazlar"
+          ],
+          "k": [
+           "iyilik",
+           "yardım"
+          ]
+         },
+         {
+          "bas": "3. örnek:",
+          "ornek": "adaletli davranırlar",
+          "havuz": [
+           "haksızlık yaparlar",
+           "yalan söylerler"
+          ],
+          "k": [
+           "adalet",
+           "dürüst",
+           "doğru"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.3",
+     "id": "m7i1"
+    },
+    {
+     "metin": [
+      "H.E., boşalttığı bir evin dolabında para dolu bir çanta buldu. Kimsenin görmediği bu anda parayı almadı; sahibinin ailesine ulaştırıp teslim etti."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu kişinin davranışında melek ve ahiret inancının etkisini iki cümleyle açıklayınız.",
+       "formul": "etki",
+       "cevap": "Yaptıklarının melekler tarafından kaydedildiğini bilir. Ahirette hesap vereceğini bildiği için haksızlıktan uzak durur.",
+       "anahtarlar": [
+        {
+         "ad": "Yapılanlar yazılır",
+         "k": [
+          "kaydedil",
+          "yazıl",
+          "görül"
+         ]
+        },
+        {
+         "ad": "Hesap verecek, haksızlıktan uzak durur",
+         "k": [
+          "hesab",
+          "hesap",
+          "haksız",
+          "uzak dur"
+         ]
+        }
+       ],
+       "kisaCevap": "Yaptıklarının yazıldığını bilir. Hesap vereceği için haksızlıktan uzak durur.",
+       "tetik": [
+        "etkisini iki cümleyle"
+       ],
+       "kalipNot": "Etki iki cümle → “… yazıldığını bilir.” + “Hesap vereceği için … uzak durur.”",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1. cümle:",
+          "ornek": "yaptıklarının yazıldığını bilir",
+          "havuz": [
+           "parayı çok sevdiğini bilir",
+           "kimsenin görmediğini bilir"
+          ],
+          "k": [
+           "yazıl",
+           "kaydedil"
+          ]
+         },
+         {
+          "bas": "2. cümle: Bu yüzden",
+          "ornek": "hesap vereceği için haksızlıktan uzak durur",
+          "havuz": [
+           "parayı saklar",
+           "eve götürür"
+          ],
+          "k": [
+           "hesab",
+           "hesap",
+           "haksız"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Bu davranışta görülen iki ahlaki değeri yazınız.",
+       "formul": "davranis",
+       "cevap": "Doğruluk ve dürüstlük; merhamet.",
+       "anahtarlar": [
+        {
+         "ad": "Doğruluk, dürüstlük",
+         "k": [
+          "doğru",
+          "dürüst"
+         ]
+        },
+        {
+         "ad": "İkinci değer: emanet, merhamet, yardımseverlik",
+         "k": [
+          "merhamet",
+          "yardım",
+          "emanet",
+          "güven"
+         ]
+        }
+       ],
+       "kisaCevap": "Doğruluk ve merhamet.",
+       "tetik": [
+        "iki ahlaki değeri"
+       ],
+       "kalipNot": "Değer → davranışın adını yaz: doğruluk, merhamet, yardımseverlik.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1. değer:",
+          "ornek": "doğruluk",
+          "havuz": [
+           "kıskançlık",
+           "cimrilik"
+          ],
+          "k": [
+           "doğru",
+           "dürüst"
+          ]
+         },
+         {
+          "bas": "2. değer:",
+          "ornek": "merhamet",
+          "havuz": [
+           "bencillik",
+           "acımasızlık"
+          ],
+          "k": [
+           "merhamet",
+           "yardım",
+           "emanet"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.3",
+     "id": "m7i2"
+    }
+   ]
+  },
+  {
+   "id": "m8",
+   "no": 8,
+   "kazanim": "DKAB.7.1.3",
+   "oncelik": 2,
+   "metin": [
+    "Bir kulüp etkinliğinde Eren ve Selma, “İnanç ve İnsan Davranışı” konulu bir söyleşiden çıktıktan sonra okul bahçesinde sohbet ederler. Aralarında şöyle bir konuşma geçer:",
+    "Eren: “Söyleşideki konuşmacı, melek ve ahiret inancının davranışlarımızı doğrudan olumlu etkilediğini söyledi. Bir insan, kendisini koruyan ve amellerini kaydeden meleklerin varlığını bilirse hayata çok daha farklı bakar. Nitekim ayette, ‘Halbuki üzerinizde muhakkak bekçiler, değerli yazıcılar vardır.’ buyruluyor. Bu bilinçle ve her şeyin ahirette adaletle tartılacağına inanarak yaşayan birisi, zorluklar karşısında pes etmez. Bu inanç insana bir iç pusula verir ve onu sorumluluk sahibi yapar.”",
+    "Selma: “Çok doğru Eren. Bence de bu inancın asıl gücü, insanı sadece ‘ödül ve ceza’ mantığından kurtarıp gerçek bir vicdan sahibi yapmasında gizli. Bir kişi, kimsenin görmediği anlarda bile haksızlık yapmıyorsa gerçek ahlaka ulaşmıştır. Çünkü bilir ki dünyada yapılan hiçbir şey karşılıksız kalmaz. Başka bir ayette dendiği gibi: ‘Artık kim zerre ağırlığınca bir hayır işlerse onun mükâfatını görecektir. Kim de zerre ağırlığınca bir kötülük işlerse onun cezasını görecektir.’ İşte karşılık beklemeden iyilik yapma isteği de tam olarak bu bilinçten doğar.”"
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Selma ve Eren'in yukarıdaki konuşmalarından hareketle melek ve ahiret inancının insana kazandırdıklarını gerekçeleriyle anlatan dört cümle yazınız.",
+     "formul": "kazanc",
+     "cevap": "Meleklerin varlığına inanmak, insana sorumluluk bilinci kazandırır. Ahirete inanmak, insanın zorluklar karşısında pes etmesini engeller. Her davranışın karşılığı olacağını bilen kişi, gizlide dahi kötülükten uzak durur. Ahirete inanan kişi, kimse görmese bile vicdanıyla hareket edip haksızlıktan kaçınır.",
+     "anahtarlar": [
+      {
+       "ad": "Sorumluluk kazandırır",
+       "k": [
+        "sorumlu"
+       ]
+      },
+      {
+       "ad": "Zorlukta pes etmez",
+       "k": [
+        "pes etme",
+        "sabr",
+        "vazgeçme"
+       ]
+      },
+      {
+       "ad": "Her davranışın karşılığı var, kötülükten uzak durur",
+       "k": [
+        "kötülükten",
+        "gizli"
+       ]
+      },
+      {
+       "ad": "Kimse görmese de vicdanlı",
+       "k": [
+        "vicdan",
+        "haksızlık yapma",
+        "haksızlıktan"
+       ]
+      }
+     ],
+     "kisaCevap": "Meleklere inanan sorumlu olur, çünkü yaptıkları yazılır. Ahirete inanan pes etmez. Karşılık olduğunu bilen kötülükten uzak durur. Kimse görmese de vicdanlı davranır.",
+     "basamak": {
+      "sec": {
+       "secenekler": [
+        "Meleklere inanan sorumlu olur, çünkü yaptıkları yazılır. Ahirete inanan pes etmez. Karşılık olduğunu bilen kötülükten uzak durur. Kimse görmese de vicdanlı davranır.",
+        "Meleklere inanan sorumlu olur.",
+        "Meleklerin kanatları vardır. Eren ile Selma arkadaştır."
+       ],
+       "dogru": 0,
+       "ipucu": "Dört cümle: Eren'den iki kazanç (sorumluluk, pes etmemek), Selma'dan iki kazanç (kötülükten uzak durmak, vicdan).",
+       "aciklama": "Eren sorumluluk ve pes etmemeyi, Selma vicdanı ve kimse görmese de haksızlık yapmamayı söylüyor. (s. 34–35; MEB örnek sorusu)"
+      },
+      "parcalar": [
+       {
+        "bas": "1. Meleklere inanan",
+        "ornek": "sorumlu olur, çünkü yaptıkları yazılır",
+        "havuz": [
+         "tembel olur",
+         "kimseyi sevmez"
+        ],
+        "k": [
+         "sorumlu"
+        ]
+       },
+       {
+        "bas": "2. Ahirete inanan",
+        "ornek": "zorlukta pes etmez",
+        "havuz": [
+         "hemen bırakır",
+         "üzülüp oturur"
+        ],
+        "k": [
+         "pes etme",
+         "vazgeçme",
+         "sabr"
+        ]
+       },
+       {
+        "bas": "3. Karşılık olduğunu bilen",
+        "ornek": "kötülükten uzak durur",
+        "havuz": [
+         "dilediğini yapar",
+         "umursamaz"
+        ],
+        "k": [
+         "kötülükten",
+         "gizli"
+        ]
+       },
+       {
+        "bas": "4. Kimse görmese de",
+        "ornek": "vicdanlı davranır",
+        "havuz": [
+         "haksızlık yapar",
+         "kopya çeker"
+        ],
+        "k": [
+         "vicdan",
+         "haksızlıktan"
+        ]
+       }
+      ]
+     },
+     "tetik": [
+      "kazandırdıklarını gerekçeleriyle",
+      "dört cümle"
+     ],
+     "kalipNot": "Kazandırdıkları → kazancı yaz, “çünkü” ile gerekçesini ekle."
+    }
+   ],
+   "ikizler": [
+    {
+     "metin": [
+      "Ayşe: “Sınavda kimse görmese de kopya çekmem, çünkü meleklerin yaptıklarımı yazdığını biliyorum.”",
+      "Mert: “Çok zor bir dönem geçirdim ama pes etmedim. Dünyanın bir imtihan olduğunu ve emeğimin karşılıksız kalmayacağını biliyorum.”"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Ayşe ve Mert'in konuşmalarından hareketle melek ve ahiret inancının insana kazandırdıklarını gerekçeleriyle anlatan iki cümle yazınız.",
+       "formul": "kazanc",
+       "cevap": "Meleklere inanan kişi, kimse görmese de haksızlık yapmaz; çünkü yaptıklarının yazıldığını bilir. Ahirete inanan kişi zorlukta pes etmez; çünkü dünyanın bir imtihan olduğunu bilir.",
+       "anahtarlar": [
+        {
+         "ad": "Kimse görmese de haksızlık yapmaz (yazıldığını bilir)",
+         "k": [
+          "haksızlık yapma",
+          "kopya çekme",
+          "yazıl",
+          "vicdan"
+         ]
+        },
+        {
+         "ad": "Zorlukta pes etmez (imtihan)",
+         "k": [
+          "pes etme",
+          "sabr",
+          "imtihan"
+         ]
+        }
+       ],
+       "kisaCevap": "Yaptıklarının yazıldığını bilen haksızlık yapmaz. Dünyanın imtihan olduğunu bilen pes etmez.",
+       "tetik": [
+        "kazandırdıklarını gerekçeleriyle",
+        "iki cümle"
+       ],
+       "kalipNot": "Kazandırdıkları → kazancı yaz, “çünkü” ile gerekçesini ekle.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "1. cümle:",
+          "ornek": "yaptıklarının yazıldığını bilen haksızlık yapmaz",
+          "havuz": [
+           "sınavda kopya çeker",
+           "melekleri görür"
+          ],
+          "k": [
+           "haksızlık yapma",
+           "yazıl",
+           "vicdan"
+          ]
+         },
+         {
+          "bas": "2. cümle:",
+          "ornek": "dünyanın imtihan olduğunu bilen pes etmez",
+          "havuz": [
+           "dünyayı sevmez",
+           "bir an önce bırakır"
+          ],
+          "k": [
+           "pes etme",
+           "imtihan",
+           "sabr"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.3",
+     "id": "m8i1"
+    },
+    {
+     "metin": [
+      "Ders kitabındaki “İnanıyorum Çünkü” etkinliğindeki cümleleri tamamlayınız."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Ahiret inancı bana sorumluluk ve hesap verme bilinci kazandırır. Çünkü …",
+       "formul": "kazanc",
+       "cevap": "Çünkü yaptıklarımın hesabını vereceğimi biliyorum.",
+       "anahtarlar": [
+        {
+         "ad": "Yaptıklarının hesabını verir",
+         "k": [
+          "hesab",
+          "hesap"
+         ]
+        }
+       ],
+       "kisaCevap": "Çünkü yaptıklarımın hesabını vereceğimi biliyorum.",
+       "tetik": [
+        "Çünkü"
+       ],
+       "kalipNot": "Çünkü → cümleyi gerekçeyle tamamla.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Çünkü yaptıklarımın",
+          "ornek": "hesabını vereceğimi biliyorum",
+          "havuz": [
+           "hiç sorulmayacağını biliyorum",
+           "unutulacağını sanıyorum"
+          ],
+          "k": [
+           "hesab",
+           "hesap"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "b",
+       "soru": "Ahiret inancı hayatıma anlam katar. Çünkü …",
+       "formul": "kazanc",
+       "cevap": "Çünkü hayatın ölümle bitmediğini ve her şeyin bir yaratılış amacı olduğunu biliyorum.",
+       "anahtarlar": [
+        {
+         "ad": "Hayat ölümle bitmez, amaç var",
+         "k": [
+          "ölümle",
+          "amaç",
+          "sonsuz"
+         ]
+        }
+       ],
+       "kisaCevap": "Çünkü hayatın ölümle bitmediğini biliyorum.",
+       "tetik": [
+        "Çünkü"
+       ],
+       "kalipNot": "Çünkü → hayatın ölümle bitmediğini yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Çünkü hayatın",
+          "ornek": "ölümle bitmediğini biliyorum",
+          "havuz": [
+           "çok kısa olduğunu biliyorum",
+           "boşa geçtiğini düşünüyorum"
+          ],
+          "k": [
+           "ölümle",
+           "amaç",
+           "sonsuz"
+          ]
+         }
+        ]
+       }
+      },
+      {
+       "harf": "c",
+       "soru": "Meleklerin varlığına inanmak davranışlarımı düzeltmemde motivasyon sağlar. Çünkü …",
+       "formul": "kazanc",
+       "cevap": "Çünkü davranışlarımın melekler tarafından kaydedildiğini biliyorum.",
+       "anahtarlar": [
+        {
+         "ad": "Davranışları kaydedilir",
+         "k": [
+          "kaydedil",
+          "yazıl"
+         ]
+        }
+       ],
+       "kisaCevap": "Çünkü davranışlarımın kaydedildiğini biliyorum.",
+       "tetik": [
+        "Çünkü"
+       ],
+       "kalipNot": "Çünkü → yaptıklarının yazıldığını yaz.",
+       "basamak": {
+        "parcalar": [
+         {
+          "bas": "Çünkü davranışlarımın",
+          "ornek": "kaydedildiğini biliyorum",
+          "havuz": [
+           "kimse bilmeyeceğini düşünüyorum",
+           "önemsiz olduğunu düşünüyorum"
+          ],
+          "k": [
+           "kaydedil",
+           "yazıl"
+          ]
+         }
+        ]
+       }
+      }
+     ],
+     "kazanim": "DKAB.7.1.3",
+     "id": "m8i2"
+    }
+   ]
+  }
+ ],
+ "kuarkHata": [
+  {
+   "kazanim": "DKAB.7.1.1",
+   "tur": "eksik",
+   "soru": "Dört büyük meleğin isimlerini yazınız.",
+   "kuark": "Cebrail, Azrail, Mikâil.",
+   "secenekler": [
+    "Eksik: dördüncü melek (İsrafil) yazılmamış.",
+    "Yanlış: yalnız Cebrail yazmalı.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Dört melek istenmiş, kaç tane yazılmış?",
+   "aciklama": "Dört büyük melek: Cebrail, Azrail, Mikâil ve İsrafil. (s. 19)",
+   "dogruCevap": "Cebrail, Azrail, Mikâil ve İsrafil.",
+   "tamamla": {
+    "once": "Cebrail, Azrail, Mikâil ve",
+    "ornek": "İsrafil",
+    "sonra": ".",
+    "k": [
+     "israfil"
+    ],
+    "havuz": [
+     "Kiramen Kâtibin",
+     "Münker"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.1",
+   "tur": "eksik",
+   "soru": "Sorgu meleklerinin adını yazınız.",
+   "kuark": "Münker.",
+   "secenekler": [
+    "Eksik: iki melek var; Nekir de yazılmalı.",
+    "Yanlış: Kiramen Kâtibin yazmalı.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Sorgu melekleri kaç tane?",
+   "aciklama": "Sorgu melekleri Münker ve Nekir'dir. (s. 19)",
+   "dogruCevap": "Münker ve Nekir.",
+   "tamamla": {
+    "once": "Münker ve",
+    "ornek": "Nekir",
+    "sonra": ".",
+    "k": [
+     "nekir"
+    ],
+    "havuz": [
+     "Mikâil",
+     "Azrail"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.1",
+   "tur": "eksik",
+   "soru": "Melekleri diğer varlıklardan ayıran özellikler nelerdir?",
+   "kuark": "Melekler gözle görülmez.",
+   "secenekler": [
+    "Eksik: yalnız bir özellik var; başka özellikler de yazılmalı.",
+    "Yanlış: melekler görülür.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Soru “özellikler” diyor; birden çok yaz.",
+   "aciklama": "Melekler görülmez, iradeleri yoktur, emre karşı gelmez. (s. 19)",
+   "dogruCevap": "Melekler gözle görülmez, iradeleri yoktur.",
+   "tamamla": {
+    "once": "Melekler gözle görülmez,",
+    "ornek": "iradeleri yoktur",
+    "sonra": ".",
+    "k": [
+     "irade"
+    ],
+    "havuz": [
+     "yemek yerler",
+     "çok yavaştırlar"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.2",
+   "tur": "eksik",
+   "soru": "Ahiret hayatının aşamalarını sırasına göre yazınız.",
+   "kuark": "Ölüm, kıyamet, baas.",
+   "secenekler": [
+    "Eksik: mahşer, mizan, cennet-cehennem yazılmamış.",
+    "Yanlış: sıra karışık.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Aşamaların yarısı nerede kaldı?",
+   "aciklama": "Sıra: ölüm, kıyamet, baas, mahşer, mizan, cennet-cehennem. (s. 26, 29)",
+   "dogruCevap": "Ölüm, kıyamet, baas, mahşer, mizan, cennet-cehennem.",
+   "tamamla": {
+    "once": "Ölüm, kıyamet, baas,",
+    "ornek": "mahşer, mizan, cennet-cehennem",
+    "sonra": ".",
+    "k": [
+     "mahşer"
+    ],
+    "havuz": [
+     "uyku, oyun, tatil",
+     "okul, ders, sınav"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.2",
+   "tur": "eksik",
+   "soru": "Mizan nedir? Yazınız.",
+   "kuark": "Bir terazidir.",
+   "secenekler": [
+    "Eksik: ne tartıldığı yazılmamış.",
+    "Yanlış: mizan toplanma yeridir.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Bu terazide ne tartılır?",
+   "aciklama": "Mizan, sevap ve günahların tartıldığı manevi terazidir. (s. 27)",
+   "dogruCevap": "Mizan, sevap ve günahların tartıldığı manevi terazidir.",
+   "tamamla": {
+    "once": "Mizan,",
+    "ornek": "sevap ve günahların tartıldığı",
+    "sonra": "manevi terazidir.",
+    "k": [
+     "sevap",
+     "günah"
+    ],
+    "havuz": [
+     "yağmurun ölçüldüğü",
+     "suyun tartıldığı"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.3",
+   "tur": "eksik",
+   "soru": "Ayet ve hadisi ilke edinen bireyin göstermesi beklenen üç davranışı yazınız.",
+   "kuark": "Komşusuna eziyet etmez.",
+   "secenekler": [
+    "Eksik: üç davranış istenmiş, bir tane yazılmış.",
+    "Yanlış: komşu ile ilgili değil.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Hadiste kaç öğüt var?",
+   "aciklama": "Hadiste üç öğüt var: komşu, misafir, güzel söz. (s. 32; MEB örnek sorusu)",
+   "dogruCevap": "Komşusuna eziyet etmez, misafirine ikram eder, güzel söz söyler.",
+   "tamamla": {
+    "once": "Komşusuna eziyet etmez,",
+    "ornek": "misafirine ikram eder, güzel söz söyler",
+    "sonra": ".",
+    "k": [
+     "misafir"
+    ],
+    "havuz": [
+     "evden çıkmaz, bağırır",
+     "geç uyur, çok yer"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.3",
+   "tur": "eksik",
+   "soru": "Melek ve ahiret inancının insana kazandırdıklarını gerekçesiyle yazınız.",
+   "kuark": "Sorumlu olur.",
+   "secenekler": [
+    "Eksik: gerekçe (çünkü) yazılmamış.",
+    "Yanlış: sorumlu olmaz.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Soru “gerekçeleriyle” diyor.",
+   "aciklama": "Yaptıklarının yazıldığını bilen sorumlu olur. (s. 34)",
+   "dogruCevap": "Sorumlu olur, çünkü yaptıklarının yazıldığını bilir.",
+   "tamamla": {
+    "once": "Sorumlu olur, çünkü",
+    "ornek": "yaptıklarının yazıldığını bilir",
+    "sonra": ".",
+    "k": [
+     "yazıl",
+     "kaydedil",
+     "hesap",
+     "hesab"
+    ],
+    "havuz": [
+     "yemek yediğini bilir",
+     "çok yorulduğunu bilir"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.3",
+   "tur": "eksik",
+   "soru": "Ahirete inanmak insana ne kazandırır? Yazınız.",
+   "kuark": "Güzel şeyler kazandırır.",
+   "secenekler": [
+    "Eksik: belirsiz; kazancın adı yazılmalı.",
+    "Yanlış: hiçbir şey kazandırmaz.",
+    "Tam, eksik yok."
+   ],
+   "dogru": 0,
+   "ipucu": "“Güzel şeyler” ne demek? Adını söyle.",
+   "aciklama": "Ahirete inanan sorumlu olur, sabreder, kötülükten uzak durur. (s. 34–35)",
+   "dogruCevap": "Sorumluluk ve sabır kazandırır.",
+   "tamamla": {
+    "once": "Sorumluluk ve",
+    "ornek": "sabır",
+    "sonra": "kazandırır.",
+    "k": [
+     "sabır",
+     "sabr",
+     "pes etme",
+     "vicdan",
+     "huzur"
+    ],
+    "havuz": [
+     "uyku",
+     "yorgunluk"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.1",
+   "tur": "yanilgi",
+   "soru": "Vahyi peygamberlere getiren melek hangisidir?",
+   "kuark": "Mikâil.",
+   "secenekler": [
+    "Yanlış: vahyi Cebrail getirir; Mikâil tabiat olaylarıyla görevlidir.",
+    "Yanlış: Azrail getirir.",
+    "Doğru, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Mikâil'in görevi neydi?",
+   "aciklama": "Vahiy meleği Cebrail'dir; Mikâil tabiat olaylarıyla görevlidir. (s. 19)",
+   "dogruCevap": "Vahyi Cebrail getirir.",
+   "tamamla": {
+    "once": "Vahyi",
+    "ornek": "Cebrail",
+    "sonra": "getirir.",
+    "k": [
+     "cebrail"
+    ],
+    "havuz": [
+     "Azrail",
+     "İsrafil"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.2",
+   "tur": "yanilgi",
+   "soru": "Mahşer nedir? Yazınız.",
+   "kuark": "Sevap ve günahların tartıldığı terazidir.",
+   "secenekler": [
+    "Yanlış: bu mizandır; mahşer toplanma yeridir.",
+    "Yanlış: mahşer cennetin adıdır.",
+    "Doğru, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "Terazi hangi kelimeyle anılır?",
+   "aciklama": "Mahşer, insanların hesap vermek için toplanacakları yerdir. (s. 25, 27)",
+   "dogruCevap": "Mahşer, insanların hesap vermek için toplanacakları yerdir.",
+   "tamamla": {
+    "once": "Mahşer, insanların hesap vermek için",
+    "ornek": "toplanacakları yerdir",
+    "sonra": ".",
+    "k": [
+     "toplan"
+    ],
+    "havuz": [
+     "tartılacağı terazidir",
+     "dinleneceği yerdir"
+    ]
+   }
+  },
+  {
+   "kazanim": "DKAB.7.1.2",
+   "tur": "yanilgi",
+   "soru": "İsrafil sûra ikinci kez üfleyince ne olur?",
+   "kuark": "Kıyamet kopar.",
+   "secenekler": [
+    "Yanlış: ilk üfleyiş kıyamet; ikinci üfleyişte baas olur, insanlar dirilir.",
+    "Yanlış: hiçbir şey olmaz.",
+    "Doğru, hata yok."
+   ],
+   "dogru": 0,
+   "ipucu": "İki üfleyişi karıştırma.",
+   "aciklama": "İlk üfleyiş kıyamet, ikinci üfleyiş baastır. (s. 26–27)",
+   "dogruCevap": "İkinci üfleyişte baas olur, insanlar dirilir.",
+   "tamamla": {
+    "once": "İkinci üfleyişte",
+    "ornek": "baas olur, insanlar dirilir",
+    "sonra": ".",
+    "k": [
+     "baas",
+     "dirilir"
+    ],
+    "havuz": [
+     "kıyamet kopar",
+     "dünya başlar"
+    ]
+   }
+  }
+ ],
+ "provalar": [
+  {
+   "id": "p1",
+   "ad": "Prova 1",
+   "sorular": [
+    {
+     "kazanim": "DKAB.7.1.1",
+     "puan": 15,
+     "benzer": "m3",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Ölüm vakti gelenlerin canını almakla görevli melek hangisidir?",
+       "formul": "isim",
+       "cevap": "Azrail",
+       "anahtarlar": [
+        {
+         "ad": "Azrail",
+         "k": [
+          "azrail"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "b",
+       "soru": "İnsanın sağında ve solunda bulunup sevap ve günahlarını yazan melekler hangileridir?",
+       "formul": "isim",
+       "cevap": "Kiramen Kâtibin",
+       "anahtarlar": [
+        {
+         "ad": "Kiramen Kâtibin",
+         "k": [
+          "kiramen",
+          "katibin"
+         ]
+        }
+       ],
+       "puan": 5
+      },
+      {
+       "harf": "c",
+       "soru": "Melekleri insanlardan ayıran iki özelliği yazınız.",
+       "formul": "ozellik",
+       "cevap": "Nurdan yaratılmışlardır. İradeleri yoktur.",
+       "anahtarlar": [
+        {
+         "ad": "Birinci özellik",
+         "k": [
+          "nur",
+          "irade",
+          "görülmez",
+          "görünmez",
+          "görülemez",
+          "algılan",
+          "haber",
+          "vahiy"
+         ]
+        },
+        {
+         "ad": "İkinci özellik",
+         "k": [
+          "irade",
+          "karşı gelmez",
+          "itaat",
+          "emre uy",
+          "emirlere uy",
+          "emirlerine uy",
+          "yemez",
+          "içmez",
+          "uyumaz",
+          "ihtiyaç",
+          "hızlı"
+         ]
+        }
+       ],
+       "puan": 5
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.2",
+     "puan": 15,
+     "benzer": "m4",
+     "metin": [
+      "Aşağıdaki ayet meallerinde ahiret hayatının hangi aşamasından bahsedildiğini yazınız.",
+      "I. “Her nefis ölümü tadacaktır...”",
+      "II. “İşte o vakit, kimin tartıları ağır gelmişse, artık o, hoşnut olacağı bir hayat içinde olacaktır.”",
+      "III. “O gün onların ağızlarını mühürleriz; yapmış olduklarını elleri bize anlatır, ayakları da tanıklık eder.”",
+      "IV. “…içinden ırmaklar akan cennetler…”"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "I, II, III ve IV numaralı ayetlerde bahsedilen aşamaları sırayla yazınız.",
+       "formul": "asama",
+       "cevap": "I. Ölüm II. Mizan III. Mahşer IV. Cennet",
+       "anahtarlar": [
+        {
+         "ad": "I: Ölüm",
+         "k": [
+          "ölüm"
+         ]
+        },
+        {
+         "ad": "II: Mizan",
+         "k": [
+          "mizan"
+         ]
+        },
+        {
+         "ad": "III: Mahşer",
+         "k": [
+          "mahşer",
+          "haşir"
+         ]
+        },
+        {
+         "ad": "IV: Cennet",
+         "k": [
+          "cennet"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.2",
+     "puan": 15,
+     "benzer": "m5",
+     "metin": [
+      "Ölüm, insan için bir yok oluş değil, yeni ve sonsuz bir hayatın başlangıcıdır. Allah'ın emriyle İsrafil sûra üfleyince kıyamet kopar. Sûra ikinci defa üflenince gerçekleşen baas ile insanlar yeniden dirilir."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Metinde ahiret hayatının aşamalarıyla ilgili yer verilen kavramları yazınız.",
+       "formul": "metinde",
+       "cevap": "Ölüm, kıyamet, baas.",
+       "anahtarlar": [
+        {
+         "ad": "Ölüm",
+         "k": [
+          "ölüm"
+         ]
+        },
+        {
+         "ad": "Kıyamet",
+         "k": [
+          "kıyamet"
+         ]
+        },
+        {
+         "ad": "Baas",
+         "k": [
+          "baas",
+          "ba's"
+         ]
+        }
+       ],
+       "puan": 7
+      },
+      {
+       "harf": "b",
+       "soru": "Metinde yer verilmeyen ahiret hayatının aşamalarını yazınız.",
+       "formul": "metinde",
+       "cevap": "Mahşer, mizan, cennet, cehennem.",
+       "anahtarlar": [
+        {
+         "ad": "Mahşer",
+         "k": [
+          "mahşer"
+         ]
+        },
+        {
+         "ad": "Mizan",
+         "k": [
+          "mizan"
+         ]
+        },
+        {
+         "ad": "Cennet",
+         "k": [
+          "cennet"
+         ]
+        },
+        {
+         "ad": "Cehennem",
+         "k": [
+          "cehennem"
+         ]
+        }
+       ],
+       "puan": 8
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.3",
+     "puan": 20,
+     "benzer": "m7",
+     "metin": [
+      "“… İyi ve yararlı işleri en güzel şekilde yapın. Şüphesiz, Allah iyi ve yararlı işleri en güzel şekilde yapanları sever.” (Bakara suresi 195. ayet)",
+      "“Ey iman edenler! Allah için hakkı titizlikle ayakta tutan, adalet ile şahitlik eden kimseler olun…” (Maide suresi 8. ayet)"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Bu ayetleri ilke edinen bir kişinin günlük hayatında göstereceği iki davranışı yazınız.",
+       "formul": "davranis",
+       "cevap": "İyi ve yararlı işler yapar. Adaletli davranır, doğruyu söyler.",
+       "anahtarlar": [
+        {
+         "ad": "İyi ve yararlı işler yapar",
+         "k": [
+          "iyi",
+          "yararlı",
+          "yardım"
+         ]
+        },
+        {
+         "ad": "Adaletli davranır, doğruyu söyler",
+         "k": [
+          "adalet",
+          "doğru",
+          "haksız"
+         ]
+        }
+       ],
+       "puan": 10
+      },
+      {
+       "harf": "b",
+       "soru": "Bu davranışlarda melek ve ahiret inancının etkisini iki cümleyle açıklayınız.",
+       "formul": "etki",
+       "cevap": "Yaptıklarının melekler tarafından yazıldığını bilir. Ahirette hesap vereceğini bildiği için kötülükten uzak durur.",
+       "anahtarlar": [
+        {
+         "ad": "Yapılanlar yazılır",
+         "k": [
+          "yazıl",
+          "kaydedil",
+          "görül"
+         ]
+        },
+        {
+         "ad": "Hesap verir, kötülükten uzak durur",
+         "k": [
+          "hesab",
+          "hesap",
+          "kötülük",
+          "sorumlu"
+         ]
+        }
+       ],
+       "puan": 10
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.3",
+     "puan": 20,
+     "benzer": "m8",
+     "metin": [
+      "Can: “Okulun bahçesinde kimse görmese de çöp atmıyorum, çünkü yaptığım her şeyin kaydedildiğini biliyorum.”",
+      "Deniz: “Ben de kaybettiğim maçtan sonra hemen vazgeçmedim. Dünyanın bir imtihan olduğunu biliyorum. Bir de arkadaşlarıma yardım edince karşılığını ahirette göreceğime inanıyorum.”"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Can ve Deniz'in konuşmalarından hareketle melek ve ahiret inancının insana kazandırdıklarını gerekçeleriyle anlatan üç cümle yazınız.",
+       "formul": "kazanc",
+       "cevap": "Yaptıklarının kaydedildiğini bilen kişi sorumlu olur. Dünyanın imtihan olduğunu bilen zorlukta pes etmez. Karşılığını ahirette göreceğini bilen iyilik yapar.",
+       "anahtarlar": [
+        {
+         "ad": "Sorumluluk",
+         "k": [
+          "sorumlu",
+          "vicdan",
+          "yazıl",
+          "kaydedil"
+         ]
+        },
+        {
+         "ad": "Pes etmemek, sabır",
+         "k": [
+          "pes etme",
+          "sabr",
+          "imtihan",
+          "vazgeçme"
+         ]
+        },
+        {
+         "ad": "İyilik, yardım",
+         "k": [
+          "iyilik",
+          "yardım"
+         ]
+        }
+       ],
+       "puan": 20
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.3",
+     "puan": 15,
+     "benzer": "m7",
+     "metin": [
+      "Meleklerin varlığına inanmak, insanın davranışlarını etkiler."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Meleklerin varlığına inanmanın insana kazandırdıklarından iki tanesini yazınız.",
+       "formul": "kazanc",
+       "cevap": "İnsanın kötülükten kaçınmasını ve iyiliğe yönelmesini sağlar. İnsanı manevi olarak güçlü kılar.",
+       "anahtarlar": [
+        {
+         "ad": "Kötülükten kaçınır, iyiliğe yönelir",
+         "k": [
+          "kötülük",
+          "iyilik",
+          "sorumlu",
+          "haksız",
+          "yalan"
+         ]
+        },
+        {
+         "ad": "Manevi güç, güzel ahlak",
+         "k": [
+          "manevi",
+          "güçlü",
+          "doğru",
+          "merhamet",
+          "yardım",
+          "sevgi"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "ad": "Prova 2",
+   "sorular": [
+    {
+     "kazanim": "DKAB.7.1.1",
+     "puan": 15,
+     "benzer": "m2",
+     "metin": [
+      "Aşağıda bazı meleklerin görevleri verilmiştir.",
+      "I. Vahiy getirmek",
+      "II. Yağmurların yağması, bitkilerin gelişmesi gibi tabiat olayları",
+      "III. Kıyamet ve diriliş sırasında sûra üflemek"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "I, II ve III numaralı görevleri yapan melekleri sırayla yazınız.",
+       "formul": "isim",
+       "cevap": "I. Cebrail II. Mikâil III. İsrafil",
+       "anahtarlar": [
+        {
+         "ad": "I: Cebrail",
+         "k": [
+          "cebrail"
+         ]
+        },
+        {
+         "ad": "II: Mikâil",
+         "k": [
+          "mikail"
+         ]
+        },
+        {
+         "ad": "III: İsrafil",
+         "k": [
+          "israfil"
+         ]
+        }
+       ],
+       "puan": 9
+      },
+      {
+       "harf": "b",
+       "soru": "“Melekler nurdan yaratılmıştır.” Meleklerin başka iki özelliğini yazınız.",
+       "formul": "ozellik",
+       "cevap": "İradeleri yoktur. Yemezler, içmezler, uyumazlar.",
+       "anahtarlar": [
+        {
+         "ad": "Birinci özellik",
+         "k": [
+          "irade",
+          "karşı gelmez",
+          "itaat",
+          "emre uy",
+          "emirlere uy",
+          "emirlerine uy",
+          "görülmez",
+          "görünmez",
+          "görülemez",
+          "algılan",
+          "haber",
+          "vahiy"
+         ]
+        },
+        {
+         "ad": "İkinci özellik",
+         "k": [
+          "yemez",
+          "içmez",
+          "uyumaz",
+          "ihtiyaç",
+          "hızlı",
+          "güçlü",
+          "cinsiyet",
+          "irade"
+         ]
+        }
+       ],
+       "puan": 6
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.2",
+     "puan": 15,
+     "benzer": "m6",
+     "metin": [
+      "Ahiret hayatı belirli aşamalardan oluşur."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Ahiret hayatının aşamalarını sırasına göre yazınız.",
+       "formul": "iliski",
+       "cevap": "Ölüm, kıyamet, baas, mahşer, mizan, cennet ve cehennem.",
+       "anahtarlar": [
+        {
+         "ad": "Doğru sıra",
+         "sira": [
+          [
+           "ölüm"
+          ],
+          [
+           "kıyamet"
+          ],
+          [
+           "baas",
+           "ba's"
+          ],
+          [
+           "mahşer",
+           "haşir"
+          ],
+          [
+           "mizan"
+          ],
+          [
+           "cennet",
+           "cehennem"
+          ]
+         ]
+        }
+       ],
+       "puan": 8
+      },
+      {
+       "harf": "b",
+       "soru": "Mahşer ile mizan arasındaki farkı yazınız.",
+       "formul": "iliski",
+       "cevap": "Mahşer insanların toplanacağı yerdir; mizan ise sevap ve günahların tartıldığı manevi terazidir.",
+       "anahtarlar": [
+        {
+         "ad": "Mahşer: toplanma yeri",
+         "k": [
+          "toplan"
+         ]
+        },
+        {
+         "ad": "Mizan: tartılma, terazi",
+         "k": [
+          "tartıl",
+          "terazi"
+         ]
+        }
+       ],
+       "puan": 7
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.2",
+     "puan": 15,
+     "benzer": "m4",
+     "metin": [
+      "Aşağıdaki ayet meallerinde ahiret hayatının hangi aşamasından bahsedildiğini yazınız.",
+      "I. “Gök yarıldığı, yıldızlar saçıldığı, denizler kaynayıp fışkırtıldığı…”",
+      "II. “Onlar, ‘Allah, ölen bir kimseyi diriltmez.’ diye Allah adını anarak en kuvvetli yeminlerini ettiler. Hayır, diriltecek!…”",
+      "III. “…O, kızgın bir ateştir.”"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "I, II ve III numaralı ayetlerde bahsedilen aşamaları sırayla yazınız.",
+       "formul": "asama",
+       "cevap": "I. Kıyamet II. Baas III. Cehennem",
+       "anahtarlar": [
+        {
+         "ad": "I: Kıyamet",
+         "k": [
+          "kıyamet"
+         ]
+        },
+        {
+         "ad": "II: Baas",
+         "k": [
+          "baas",
+          "ba's"
+         ]
+        },
+        {
+         "ad": "III: Cehennem",
+         "k": [
+          "cehennem"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.3",
+     "puan": 20,
+     "benzer": "m8",
+     "metin": [
+      "Elif: “Komşumuzun poşetlerini taşıdım, kimse görmedi ama iyilik yapmak için görülmeye gerek yok. Her davranışımın kaydedildiğini biliyorum.”",
+      "Ali: “Ben de hastalandığımda çok zorlandım ama sabrettim. Hayatın ölümle bitmediğini ve ahirette sevdiklerimizle birlikte olacağımızı bilmek bana huzur veriyor.”"
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Elif ve Ali'nin konuşmalarından hareketle melek ve ahiret inancının insana kazandırdıklarını gerekçeleriyle anlatan üç cümle yazınız.",
+       "formul": "kazanc",
+       "cevap": "Davranışlarının kaydedildiğini bilen kişi kimse görmese de iyilik yapar. Dünyanın imtihan olduğunu bilen zorlukta sabreder. Hayatın ölümle bitmediğini bilen huzur bulur.",
+       "anahtarlar": [
+        {
+         "ad": "Kimse görmese de iyilik yapar",
+         "k": [
+          "iyilik",
+          "kaydedil",
+          "yazıl",
+          "vicdan"
+         ]
+        },
+        {
+         "ad": "Zorlukta sabreder",
+         "k": [
+          "sabr",
+          "sabır",
+          "pes etme"
+         ]
+        },
+        {
+         "ad": "Huzur bulur",
+         "k": [
+          "huzur",
+          "ölümle"
+         ]
+        }
+       ],
+       "puan": 20
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.3",
+     "puan": 20,
+     "benzer": "m7",
+     "metin": [
+      "Melek ve ahiret inancına sahip bir kişi aşağıdaki durumlarda nasıl davranır? Birer cümleyle yazınız."
+     ],
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Sokakta yere düşmüş bir cüzdan bulduğunda:",
+       "formul": "davranis",
+       "cevap": "Cüzdanı sahibine ulaştırır.",
+       "anahtarlar": [
+        {
+         "ad": "Sahibine verir",
+         "k": [
+          "sahib",
+          "teslim",
+          "götür",
+          "polis"
+         ]
+        }
+       ],
+       "puan": 7
+      },
+      {
+       "harf": "b",
+       "soru": "Bir arkadaşı hakkında kötü konuşulduğunda:",
+       "formul": "davranis",
+       "cevap": "Kötü konuşmaz, ya hayır söyler ya da susar.",
+       "anahtarlar": [
+        {
+         "ad": "Kötü konuşmaz, hayır söyler ya da susar",
+         "k": [
+          "sus",
+          "kötü konuşma",
+          "hayır söyle",
+          "savun",
+          "katılma",
+          "güzel söz"
+         ]
+        }
+       ],
+       "puan": 7
+      },
+      {
+       "harf": "c",
+       "soru": "Eve misafir geldiğinde:",
+       "formul": "davranis",
+       "cevap": "Misafirini güler yüzle karşılar, ikram eder.",
+       "anahtarlar": [
+        {
+         "ad": "İkram eder, güler yüzlü olur",
+         "k": [
+          "ikram",
+          "güler yüz"
+         ]
+        }
+       ],
+       "puan": 6
+      }
+     ]
+    },
+    {
+     "kazanim": "DKAB.7.1.3",
+     "puan": 15,
+     "benzer": "m8",
+     "maddeler": [
+      {
+       "harf": "a",
+       "soru": "Ahiret inancının insana kazandırdıklarından iki tanesini gerekçesiyle yazınız.",
+       "formul": "kazanc",
+       "cevap": "Sorumlu olur, çünkü yaptıklarının hesabını vereceğini bilir. Zorlukta sabreder, çünkü dünyanın bir imtihan olduğunu bilir.",
+       "anahtarlar": [
+        {
+         "ad": "Birinci kazanç ve gerekçe",
+         "k": [
+          "sorumlu",
+          "hesab",
+          "kötülük"
+         ]
+        },
+        {
+         "ad": "İkinci kazanç ve gerekçe",
+         "k": [
+          "sabr",
+          "imtihan",
+          "pes etme",
+          "huzur",
+          "anlam",
+          "iyilik"
+         ]
+        }
+       ],
+       "puan": 15
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
