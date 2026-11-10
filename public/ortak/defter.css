@@ -1682,3 +1682,23 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .og-okut-s { margin: 4px 0; font-weight: 700; }
 .kalp-kart { margin: 10px 0; }
 @media (prefers-reduced-motion: reduce) { .kk-run.kalp.yanip, .kalp-not.salla { animation: none; } .kk-run.kalp.yanip { outline: 2px dashed #e0544b; } }
+
+/* Yazılı: kâğıt biçimli "grupla" ve "doldur" (own1 d1y1) */
+.gr-pool { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.gr-boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 10px; }
+.gr-box { min-height: 120px; }
+.gr-box .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.gr-chip { cursor: grab; }
+.gr-chip.sel { outline: 3px solid var(--accent, #7a5ce0); outline-offset: 2px; }
+.gr-no { border-color: var(--bad); background: var(--bad-soft); }
+.gr-bos { color: var(--muted, #6b7280); }
+.dd-liste li { line-height: 2.4; margin-bottom: 6px; }
+.dd-in { font: inherit; font-weight: 700; border: 0; border-bottom: 2px dashed var(--line); background: var(--surface-2); border-radius: 6px 6px 0 0; padding: 2px 6px; margin: 0 3px; color: var(--ink); max-width: 100%; }
+.dd-in:focus { outline: none; border-bottom-color: var(--accent, #7a5ce0); background: var(--surface); }
+.dd-daireler { display: inline-flex; align-items: center; gap: 2px; margin: 0 3px; }
+.dd-daire { font: inherit; font-weight: 700; border: 2px solid transparent; border-radius: 999px; padding: 1px 9px; background: var(--surface-2); color: var(--ink); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.dd-daire[aria-pressed="true"] { border-color: var(--accent, #7a5ce0); background: transparent; text-decoration: none; }
+.dd-ayrac { color: var(--muted, #6b7280); font-weight: 700; }
+.dd-k { margin: 0 3px; }
+.dd-in { box-sizing: border-box; }
+.dd-liste, .dd-liste li { min-width: 0; overflow-wrap: anywhere; }

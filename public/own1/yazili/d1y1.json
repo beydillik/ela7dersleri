@@ -15,7 +15,7 @@
  "soruEtiket": "Soru",
  "kazanimAd": "konu",
  "ikizsiz": true,
- "soruGiris": "Bunlar öğretmeninin kâğıdındaki <b>8 soru</b>. Yazılıda <b>aynısı</b> çıkacak. İlk çözüşte önce kısa bir ısınma var, sonra cevabı <b>yazarak</b> ver. İkinci çözüşte ısınma yok: doğrudan aklından yaz.",
+ "soruGiris": "Bunlar öğretmeninin kâğıdındaki <b>8 soru</b>, kâğıttaki gibi. Yazılıda <b>aynısı</b> çıkacak. Kâğıtta ne yapacaksan burada da onu yap: kutulara yerleştir, boşluğa yaz, doğru kelimeyi seç.",
  "giris": "Öğretmeninin kâğıdındaki <b>8 soru</b> yazılıda <b>aynen</b> çıkacak. Önce 4 konu kartını oku ve boşlukları doldur. Sonra 8 soruyu sırayla çöz. En sonda Kısa Cevap Kartları ile her cevabı bir kez daha hatırla.",
  "kapsamDisi": [
   "Kâğıtta olmayan her şey: öğretmen bu 8 sorunun aynısını soracak",
@@ -23,27 +23,7 @@
  ],
  "puanNotu": "Kâğıtta yalnız 1. ve 7. sorunun puanı yazıyor (20'şer puan). Diğerlerinin puanı belli değil.",
  "kaynakNotu": "Sorular öğretmenin çalışma kâğıdından. Cevaplar: Own it! 3 Workbook s. 86 (sıklık zarfları, past simple), WB s. 9 (in 1992); İngilizce 7 ders kitabı (MEB) s. 10–16 (görünüş, kişilik, karşılaştırma). Karşılaştırma yazım kuralları (hotter, funnier, more expensive) ve düzensiz fiiller genel İngilizce kurallarıdır.",
- "sozluk": {
-  "categorize": "grupla, sınıflandır",
-  "appearance": "görünüş",
-  "personality": "kişilik",
-  "punctual": "dakik",
-  "stubborn": "inatçı",
-  "thoughtful": "düşünceli",
-  "overweight": "kilolu",
-  "adjectives": "sıfatlar",
-  "generous": "cömert",
-  "polite": "kibar",
-  "lazy": "tembel",
-  "comparatives": "karşılaştırma hâli (-er / more)",
-  "circle": "daire içine al",
-  "in words": "yazıyla",
-  "fill in the blanks": "boşlukları doldur",
-  "meanings": "anlamları",
-  "past forms": "geçmiş hâlleri (V2)",
-  "once a week": "haftada bir",
-  "according to": "-e göre"
- },
+ "beklemesiz": true,
  "kazanimlar": [
   {
    "kod": "Sıfatlar",
@@ -410,298 +390,119 @@
    "id": "m1",
    "no": 1,
    "kazanim": "Sıfatlar",
-   "metin": [
-    "Categorize the words. (Kelimeleri grupla.) Appearance / Personality",
-    "A. handsome · B. punctual · C. stubborn · D. slim · E. thoughtful · F. overweight · G. tall · H. honest · I. friendly · J. brown eyes"
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "Write the Appearance words. (Appearance kutusuna gelen 5 kelimeyi yaz.)",
-     "formul": "grup",
+     "soru": "1. Categorize the words. (Kelimeleri grupla.)",
      "iskele": {
-      "tur": "dytablo",
-      "soru": "Önce ısınalım: Bu kelime GÖRÜNÜŞ (Appearance) mü? Görünüşse D, kişilikse Y seç.",
-      "ifadeler": [
+      "tur": "grupla",
+      "soru": "Her kelimeyi doğru kutuya koy: Appearance (görünüş) ya da Personality (kişilik).",
+      "kelimeler": [
+       "handsome",
+       "punctual",
+       "stubborn",
+       "slim",
+       "thoughtful",
+       "overweight",
+       "tall",
+       "honest",
+       "friendly",
+       "brown eyes"
+      ],
+      "kutular": [
        {
-        "s": "handsome",
-        "d": true
+        "etiket": "Appearance",
+        "uyeler": [
+         "handsome",
+         "slim",
+         "overweight",
+         "tall",
+         "brown eyes"
+        ]
        },
        {
-        "s": "punctual",
-        "d": false
-       },
-       {
-        "s": "stubborn",
-        "d": false
-       },
-       {
-        "s": "slim",
-        "d": true
-       },
-       {
-        "s": "thoughtful",
-        "d": false
-       },
-       {
-        "s": "overweight",
-        "d": true
-       },
-       {
-        "s": "tall",
-        "d": true
-       },
-       {
-        "s": "honest",
-        "d": false
-       },
-       {
-        "s": "friendly",
-        "d": false
-       },
-       {
-        "s": "brown eyes",
-        "d": true
+        "etiket": "Personality",
+        "uyeler": [
+         "punctual",
+         "stubborn",
+         "thoughtful",
+         "honest",
+         "friendly"
+        ]
        }
       ],
-      "aciklama": "Fotoğrafta görünenler Appearance: handsome, slim, overweight, tall, brown eyes."
+      "aciklama": "Fotoğrafta görünenler Appearance: handsome, slim, overweight, tall, brown eyes. Davranış anlatanlar Personality: punctual, stubborn, thoughtful, honest, friendly."
      },
-     "cevap": "handsome, slim, overweight, tall, brown eyes",
-     "anahtarlar": [
-      {
-       "ad": "handsome",
-       "k": [
-        "handsome"
-       ]
-      },
-      {
-       "ad": "slim",
-       "k": [
-        "slim"
-       ]
-      },
-      {
-       "ad": "overweight",
-       "k": [
-        "overweight"
-       ]
-      },
-      {
-       "ad": "tall",
-       "k": [
-        "tall"
-       ]
-      },
-      {
-       "ad": "brown eyes",
-       "k": [
-        "brown eye"
-       ]
-      }
-     ],
-     "kisaCevap": "handsome, slim, overweight, tall, brown eyes",
-     "tetik": [
-      "Appearance"
-     ],
-     "kalipNot": "Fotoğrafta görünür mü? Görünürse Appearance, davranışsa Personality."
-    },
-    {
-     "harf": "b",
-     "soru": "Write the Personality words. (Personality kutusuna gelen 5 kelimeyi yaz.)",
-     "formul": "grup",
-     "iskele": {
-      "tur": "eslestir",
-      "soru": "Önce ısınalım: Kişilik sıfatlarını Türkçesiyle eşleştir.",
-      "ciftler": [
-       {
-        "sol": "punctual",
-        "sag": "dakik"
-       },
-       {
-        "sol": "stubborn",
-        "sag": "inatçı"
-       },
-       {
-        "sol": "thoughtful",
-        "sag": "düşünceli"
-       },
-       {
-        "sol": "honest",
-        "sag": "dürüst"
-       },
-       {
-        "sol": "friendly",
-        "sag": "arkadaş canlısı"
-       }
-      ],
-      "aciklama": "Bunlar davranış anlatır, fotoğrafta görünmez → Personality."
-     },
-     "cevap": "punctual, stubborn, thoughtful, honest, friendly",
-     "anahtarlar": [
-      {
-       "ad": "punctual",
-       "k": [
-        "punctual"
-       ]
-      },
-      {
-       "ad": "stubborn",
-       "k": [
-        "stubborn"
-       ]
-      },
-      {
-       "ad": "thoughtful",
-       "k": [
-        "thoughtful"
-       ]
-      },
-      {
-       "ad": "honest",
-       "k": [
-        "honest"
-       ]
-      },
-      {
-       "ad": "friendly",
-       "k": [
-        "friendly"
-       ]
-      }
-     ],
-     "kisaCevap": "punctual, stubborn, thoughtful, honest, friendly",
-     "tetik": [
-      "Personality"
-     ]
+     "kisaCevap": "Appearance: handsome, slim, overweight, tall, brown eyes · Personality: punctual, stubborn, thoughtful, honest, friendly"
     }
+   ],
+   "metin": [
+    "Kâğıtta: A. handsome · B. punctual · C. stubborn · D. slim · E. thoughtful · F. overweight · G. tall · H. honest · I. friendly · J. brown eyes"
    ]
   },
   {
    "id": "m2",
    "no": 2,
    "kazanim": "Sıfatlar",
-   "metin": [
-    "Complete the sentences with adjectives in the box. (Kutudaki sıfatlarla cümleleri tamamla.)",
-    "Box: honest · punctual · lazy · generous · polite"
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "My brother doesn't tell lies. He is ___.",
-     "formul": "sifat",
+     "soru": "2. Complete the sentences with adjectives in the box. (Kutudaki sıfatlarla cümleleri tamamla.)",
      "iskele": {
-      "tur": "eslestir",
-      "soru": "Önce ısınalım: Davranışı sıfatla eşleştir.",
-      "ciftler": [
+      "tur": "doldur",
+      "soru": "Kutudaki kelimelerden uygun olanı boşluğa yaz.",
+      "kutu": [
+       "honest",
+       "punctual",
+       "lazy",
+       "generous",
+       "polite"
+      ],
+      "cumleler": [
        {
-        "sol": "doesn't tell lies",
-        "sag": "honest"
+        "c": "My brother doesn't tell lies. He is ___.",
+        "b": [
+         {
+          "cevap": "honest"
+         }
+        ]
        },
        {
-        "sol": "helps poor people",
-        "sag": "generous"
+        "c": "Selin has got a lot of money and she helps poor people. She is ___.",
+        "b": [
+         {
+          "cevap": "generous"
+         }
+        ]
        },
        {
-        "sol": "always says “thank you”",
-        "sag": "polite"
+        "c": "My sister always says “thank you”. She is a ___ person.",
+        "b": [
+         {
+          "cevap": "polite"
+         }
+        ]
        },
        {
-        "sol": "is never late",
-        "sag": "punctual"
+        "c": "Sevda teacher is never late. She is very ___.",
+        "b": [
+         {
+          "cevap": "punctual"
+         }
+        ]
        },
        {
-        "sol": "never does homework",
-        "sag": "lazy"
+        "c": "My daughter never does his homework. She is ___.",
+        "b": [
+         {
+          "cevap": "lazy"
+         }
+        ]
        }
       ],
       "aciklama": "Yalan söylemeyen dürüst (honest), yardım eden cömert (generous), teşekkür eden kibar (polite), geç kalmayan dakik (punctual), ödev yapmayan tembel (lazy)."
      },
-     "cevap": "honest",
-     "anahtarlar": [
-      {
-       "ad": "honest",
-       "k": [
-        "honest"
-       ]
-      }
-     ],
-     "kisaCevap": "honest",
-     "tetik": [
-      "doesn't tell lies"
-     ],
-     "kalipNot": "Cümledeki davranışı bul → kutudan sıfat: never late → punctual."
-    },
-    {
-     "harf": "b",
-     "soru": "Selin has got a lot of money and she helps poor people. She is ___.",
-     "formul": "sifat",
-     "cevap": "generous",
-     "anahtarlar": [
-      {
-       "ad": "generous",
-       "k": [
-        "generous"
-       ]
-      }
-     ],
-     "kisaCevap": "generous",
-     "tetik": [
-      "helps poor people"
-     ]
-    },
-    {
-     "harf": "c",
-     "soru": "My sister always says “thank you”. She is a ___ person.",
-     "formul": "sifat",
-     "cevap": "polite",
-     "anahtarlar": [
-      {
-       "ad": "polite",
-       "k": [
-        "polite"
-       ]
-      }
-     ],
-     "kisaCevap": "polite",
-     "tetik": [
-      "says “thank you”"
-     ]
-    },
-    {
-     "harf": "d",
-     "soru": "Sevda teacher is never late. She is very ___.",
-     "formul": "sifat",
-     "cevap": "punctual",
-     "anahtarlar": [
-      {
-       "ad": "punctual",
-       "k": [
-        "punctual"
-       ]
-      }
-     ],
-     "kisaCevap": "punctual",
-     "tetik": [
-      "never late"
-     ]
-    },
-    {
-     "harf": "e",
-     "soru": "My daughter never does his homework. She is ___.",
-     "formul": "sifat",
-     "cevap": "lazy",
-     "anahtarlar": [
-      {
-       "ad": "lazy",
-       "k": [
-        "lazy"
-       ]
-      }
-     ],
-     "kisaCevap": "lazy",
-     "tetik": [
-      "never does his homework"
-     ]
+     "kisaCevap": "honest · generous · polite · punctual · lazy"
     }
    ]
   },
@@ -709,190 +510,66 @@
    "id": "m3",
    "no": 3,
    "kazanim": "Karşılaştırma",
-   "metin": [
-    "Write the comparatives of the adjectives. (Sıfatların karşılaştırma hâlini yaz.)"
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "Antalya is ___ (hot) than Ağrı.",
-     "formul": "comp",
+     "soru": "3. Write the comparatives of the adjectives. (Sıfatların karşılaştırma hâlini yaz.)",
      "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Hangisi doğru yazım?",
-      "secenekler": [
-       "hotter",
-       "hoter",
-       "more hot",
-       "hottest"
+      "tur": "doldur",
+      "soru": "Parantezdeki sıfatın karşılaştırma hâlini boşluğa yaz.",
+      "cumleler": [
+       {
+        "c": "Antalya is ___ (hot) than Ağrı.",
+        "b": [
+         {
+          "cevap": "hotter"
+         }
+        ]
+       },
+       {
+        "c": "A computer is ___ (expensive) than radio.",
+        "b": [
+         {
+          "cevap": "more expensive"
+         }
+        ]
+       },
+       {
+        "c": "Milk is ___ (good) than coffee.",
+        "b": [
+         {
+          "cevap": "better"
+         }
+        ]
+       },
+       {
+        "c": "My cousin is ___ (slim) than my sister.",
+        "b": [
+         {
+          "cevap": "slimmer"
+         }
+        ]
+       },
+       {
+        "c": "Ünal teacher is ___ (funny) than me.",
+        "b": [
+         {
+          "cevap": "funnier"
+         }
+        ]
+       },
+       {
+        "c": "My sister is ___ (selfish) than my brother.",
+        "b": [
+         {
+          "cevap": "more selfish"
+         }
+        ]
+       }
       ],
-      "dogru": 0,
-      "aciklama": "Kısa sıfat, son harf iki kez: hot → hotter."
+      "aciklama": "Kısa sıfat -er (hot → hotter, slim → slimmer: son harf iki kez), -y → -ier (funnier), uzun sıfat more … (more expensive, more selfish), good → better."
      },
-     "cevap": "hotter",
-     "anahtarlar": [
-      {
-       "ad": "hotter",
-       "k": [
-        "hotter"
-       ]
-      }
-     ],
-     "kisaCevap": "hotter",
-     "tetik": [
-      "(hot)"
-     ],
-     "kalipNot": "Parantezdeki sıfata bak: kısa → -er · uzun → more … · good → better."
-    },
-    {
-     "harf": "b",
-     "soru": "A computer is ___ (expensive) than radio.",
-     "formul": "comp",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Hangisi doğru yazım?",
-      "secenekler": [
-       "more expensive",
-       "expensiver",
-       "most expensive",
-       "expensivest"
-      ],
-      "dogru": 0,
-      "aciklama": "Uzun sıfat: more + expensive."
-     },
-     "cevap": "more expensive",
-     "anahtarlar": [
-      {
-       "ad": "more expensive",
-       "k": [
-        "more expensive"
-       ]
-      }
-     ],
-     "kisaCevap": "more expensive",
-     "tetik": [
-      "(expensive)"
-     ]
-    },
-    {
-     "harf": "c",
-     "soru": "Milk is ___ (good) than coffee.",
-     "formul": "comp",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Hangisi doğru yazım?",
-      "secenekler": [
-       "better",
-       "gooder",
-       "more good",
-       "best"
-      ],
-      "dogru": 0,
-      "aciklama": "Düzensiz: good → better."
-     },
-     "cevap": "better",
-     "anahtarlar": [
-      {
-       "ad": "better",
-       "k": [
-        "better"
-       ]
-      }
-     ],
-     "kisaCevap": "better",
-     "tetik": [
-      "(good)"
-     ]
-    },
-    {
-     "harf": "d",
-     "soru": "My cousin is ___ (slim) than my sister.",
-     "formul": "comp",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Hangisi doğru yazım?",
-      "secenekler": [
-       "slimmer",
-       "slimer",
-       "more slim",
-       "slimmest"
-      ],
-      "dogru": 0,
-      "aciklama": "Kısa sıfat, son harf iki kez: slim → slimmer."
-     },
-     "cevap": "slimmer",
-     "anahtarlar": [
-      {
-       "ad": "slimmer",
-       "k": [
-        "slimmer"
-       ]
-      }
-     ],
-     "kisaCevap": "slimmer",
-     "tetik": [
-      "(slim)"
-     ]
-    },
-    {
-     "harf": "e",
-     "soru": "Ünal teacher is ___ (funny) than me.",
-     "formul": "comp",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Hangisi doğru yazım?",
-      "secenekler": [
-       "funnier",
-       "funnyer",
-       "more funny",
-       "funniest"
-      ],
-      "dogru": 0,
-      "aciklama": "-y düşer, -ier gelir: funny → funnier."
-     },
-     "cevap": "funnier",
-     "anahtarlar": [
-      {
-       "ad": "funnier",
-       "k": [
-        "funnier"
-       ]
-      }
-     ],
-     "kisaCevap": "funnier",
-     "tetik": [
-      "(funny)"
-     ]
-    },
-    {
-     "harf": "f",
-     "soru": "My sister is ___ (selfish) than my brother.",
-     "formul": "comp",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Hangisi doğru yazım?",
-      "secenekler": [
-       "more selfish",
-       "selfisher",
-       "selfishest",
-       "most selfish"
-      ],
-      "dogru": 0,
-      "aciklama": "Uzun sıfat: more + selfish."
-     },
-     "cevap": "more selfish",
-     "anahtarlar": [
-      {
-       "ad": "more selfish",
-       "k": [
-        "more selfish"
-       ]
-      }
-     ],
-     "kisaCevap": "more selfish",
-     "tetik": [
-      "(selfish)"
-     ]
+     "kisaCevap": "hotter · more expensive · better · slimmer · funnier · more selfish"
     }
    ]
   },
@@ -900,130 +577,79 @@
    "id": "m4",
    "no": 4,
    "kazanim": "Geçmiş zaman",
-   "metin": [
-    "Circle the correct word. (Doğru kelimeyi daire içine al.)"
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "Timmy (wasn't / weren't) at party last night.",
-     "formul": "waswere",
+     "soru": "4. Circle the correct word. (Doğru kelimeyi daire içine al.)",
      "iskele": {
-      "tur": "dytablo",
-      "soru": "Önce ısınalım: Özne–fiil eşleşmesi doğru mu? D ya da Y seç.",
-      "ifadeler": [
+      "tur": "doldur",
+      "soru": "Doğru kelimeye dokun (kâğıtta onu daire içine alacaksın).",
+      "harfler": true,
+      "cumleler": [
        {
-        "s": "I → was",
-        "d": true
+        "c": "Timmy ___ at party last night.",
+        "b": [
+         {
+          "cevap": "wasn't",
+          "secenekler": [
+           "wasn't",
+           "weren't"
+          ]
+         }
+        ]
        },
        {
-        "s": "Timmy → weren't",
-        "d": false
+        "c": "Alex and Tom ___ in the school garden ten minutes ago.",
+        "b": [
+         {
+          "cevap": "were",
+          "secenekler": [
+           "was",
+           "were"
+          ]
+         }
+        ]
        },
        {
-        "s": "Alex and Tom → were",
-        "d": true
+        "c": "___ you in Antalya five years ago?",
+        "b": [
+         {
+          "cevap": "Were",
+          "secenekler": [
+           "Was",
+           "Were"
+          ]
+         }
+        ]
        },
        {
-        "s": "We → was",
-        "d": false
+        "c": "I ___ born in Ağrı in 2001.",
+        "b": [
+         {
+          "cevap": "was",
+          "secenekler": [
+           "was",
+           "were"
+          ]
+         }
+        ]
        },
        {
-        "s": "you → were",
-        "d": true
+        "c": "We ___ at the theatre yesterday.",
+        "b": [
+         {
+          "cevap": "were",
+          "secenekler": [
+           "was",
+           "were"
+          ]
+         }
+        ]
        }
       ],
       "aciklama": "I / he / she / Timmy → was · we / you / they / Alex and Tom → were."
      },
-     "cevap": "wasn't",
-     "anahtarlar": [
-      {
-       "ad": "wasn't",
-       "k": [
-        "wasn't",
-        "wasn’t",
-        "wasnt",
-        "was not"
-       ]
-      }
-     ],
-     "kisaCevap": "wasn't (Timmy → wasn't)",
-     "tetik": [
-      "Timmy"
-     ],
-     "kalipNot": "Özneye bak: I / he / she / Timmy → was · we / you / they → were."
-    },
-    {
-     "harf": "b",
-     "soru": "Alex and Tom (was / were) in the school garden ten minutes ago.",
-     "formul": "waswere",
-     "cevap": "were",
-     "anahtarlar": [
-      {
-       "ad": "were",
-       "k": [
-        "were"
-       ]
-      }
-     ],
-     "kisaCevap": "were (Alex and Tom → were)",
-     "tetik": [
-      "Alex and Tom"
-     ]
-    },
-    {
-     "harf": "c",
-     "soru": "(Was / Were) you in Antalya five years ago?",
-     "formul": "waswere",
-     "cevap": "Were",
-     "anahtarlar": [
-      {
-       "ad": "Were",
-       "k": [
-        "were"
-       ]
-      }
-     ],
-     "kisaCevap": "Were (you → were)",
-     "tetik": [
-      "you"
-     ]
-    },
-    {
-     "harf": "d",
-     "soru": "I (was / were) born in Ağrı in 2001.",
-     "formul": "waswere",
-     "cevap": "was",
-     "anahtarlar": [
-      {
-       "ad": "was",
-       "k": [
-        "was"
-       ]
-      }
-     ],
-     "kisaCevap": "was (I → was)",
-     "tetik": [
-      "I (was"
-     ]
-    },
-    {
-     "harf": "e",
-     "soru": "We (was / were) at the theatre yesterday.",
-     "formul": "waswere",
-     "cevap": "were",
-     "anahtarlar": [
-      {
-       "ad": "were",
-       "k": [
-        "were"
-       ]
-      }
-     ],
-     "kisaCevap": "were (We → were)",
-     "tetik": [
-      "We"
-     ]
+     "kisaCevap": "a wasn't · b were · c Were · d was · e were"
     }
    ]
   },
@@ -1031,115 +657,50 @@
    "id": "m5",
    "no": 5,
    "kazanim": "Geçmiş zaman",
-   "metin": [
-    "Write the years in words. (Yılları yazıyla yaz.)"
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "1992:",
-     "formul": "yil",
+     "soru": "5. Write the years in words. (Yılları yazıyla yaz.)",
      "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: 1992 nasıl yazılır?",
-      "secenekler": [
-       "nineteen ninety-two",
-       "nine nine two",
-       "nineteen ninety-twelve",
-       "ninety nineteen-two"
+      "tur": "doldur",
+      "soru": "Yılı İngilizce kelimelerle yaz.",
+      "cumleler": [
+       {
+        "c": "1992: ___",
+        "b": [
+         {
+          "cevap": "nineteen ninety-two",
+          "kabul": [
+           "nineteen ninety two"
+          ]
+         }
+        ]
+       },
+       {
+        "c": "2019: ___",
+        "b": [
+         {
+          "cevap": "twenty nineteen",
+          "kabul": [
+           "twenty-nineteen",
+           "two thousand and nineteen",
+           "two thousand nineteen"
+          ]
+         }
+        ]
+       },
+       {
+        "c": "2000: ___",
+        "b": [
+         {
+          "cevap": "two thousand"
+         }
+        ]
+       }
       ],
-      "dogru": 0,
-      "aciklama": "İkişer ikişer: 19 | 92 → nineteen ninety-two."
+      "aciklama": "Yıllar ikişer ikişer okunur: 19 | 92 → nineteen ninety-two, 20 | 19 → twenty nineteen. 2000 → two thousand."
      },
-     "cevap": "nineteen ninety-two",
-     "anahtarlar": [
-      {
-       "ad": "nineteen",
-       "k": [
-        "nineteen"
-       ]
-      },
-      {
-       "ad": "ninety-two",
-       "k": [
-        "ninety-two",
-        "ninety two",
-        "ninetytwo"
-       ]
-      }
-     ],
-     "kisaCevap": "nineteen ninety-two",
-     "tetik": [
-      "1992"
-     ],
-     "kalipNot": "Yılı ikişer ikişer oku: 19 | 92 → nineteen ninety-two."
-    },
-    {
-     "harf": "b",
-     "soru": "2019:",
-     "formul": "yil",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: 2019 nasıl yazılır?",
-      "secenekler": [
-       "twenty nineteen",
-       "two nineteen",
-       "twelve nineteen",
-       "twenty ninety"
-      ],
-      "dogru": 0,
-      "aciklama": "İkişer ikişer: 20 | 19 → twenty nineteen. (two thousand and nineteen da doğru)"
-     },
-     "cevap": "twenty nineteen",
-     "anahtarlar": [
-      {
-       "ad": "twenty / two thousand (and)",
-       "k": [
-        "twenty",
-        "two thousand"
-       ]
-      },
-      {
-       "ad": "nineteen",
-       "k": [
-        "nineteen"
-       ]
-      }
-     ],
-     "kisaCevap": "twenty nineteen",
-     "tetik": [
-      "2019"
-     ]
-    },
-    {
-     "harf": "c",
-     "soru": "2000:",
-     "formul": "yil",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: 2000 nasıl yazılır?",
-      "secenekler": [
-       "two thousand",
-       "twenty hundred",
-       "two hundred",
-       "twenty zero"
-      ],
-      "dogru": 0,
-      "aciklama": "2000 → two thousand (iki bin)."
-     },
-     "cevap": "two thousand",
-     "anahtarlar": [
-      {
-       "ad": "two thousand",
-       "k": [
-        "two thousand"
-       ]
-      }
-     ],
-     "kisaCevap": "two thousand",
-     "tetik": [
-      "2000"
-     ]
+     "kisaCevap": "nineteen ninety-two · twenty nineteen · two thousand"
     }
    ]
   },
@@ -1147,291 +708,73 @@
    "id": "m6",
    "no": 6,
    "kazanim": "Sıklık",
-   "metin": [
-    "Look at the table and fill in the blanks. (Tabloya bak, boşlukları doldur.)",
-    "Yonca: 4 dolu yaprak always · 3 usually · 2 often · 1 sometimes · 0 dolu rarely · yalnız çizgi never",
-    "a şıkkı kâğıtta örnek olarak çözülü: Amanda always plays tennis. Tabloda yalnız sorulan kutular var."
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "Amanda ___ . (play tennis)",
-     "formul": "siklik",
+     "soru": "6. Look at the table and fill in the blanks. (Tabloya bak, boşlukları doldur.)",
      "iskele": {
-      "tur": "eslestir",
-      "soru": "Önce ısınalım: Dolu yaprak sayısını sıklık zarfıyla eşleştir.",
-      "ciftler": [
+      "tur": "doldur",
+      "soru": "Yaprakları say, zarf + fiil-s yaz. (a kâğıtta örnek: Amanda always plays tennis.)",
+      "harfler": true,
+      "harfBas": 2,
+      "cumleler": [
        {
-        "sol": "4 dolu yaprak",
-        "sag": "always"
+        "c": "Amanda ___ . (go cycling)",
+        "b": [
+         {
+          "cevap": "often goes cycling"
+         }
+        ]
        },
        {
-        "sol": "3 dolu yaprak",
-        "sag": "usually"
+        "c": "Amanda ___ . (do powerlifting)",
+        "b": [
+         {
+          "cevap": "usually does powerlifting"
+         }
+        ]
        },
        {
-        "sol": "2 dolu yaprak",
-        "sag": "often"
+        "c": "Patty ___ . (play golf)",
+        "b": [
+         {
+          "cevap": "usually plays golf"
+         }
+        ]
        },
        {
-        "sol": "1 dolu yaprak",
-        "sag": "sometimes"
+        "c": "Patty ___ . (go cycling)",
+        "b": [
+         {
+          "cevap": "never goes cycling"
+         }
+        ]
        },
        {
-        "sol": "yalnız çizgi",
-        "sag": "never"
+        "c": "Stephen ___ . (play tennis)",
+        "b": [
+         {
+          "cevap": "sometimes plays tennis"
+         }
+        ]
+       },
+       {
+        "c": "Stephen ___ . (play golf)",
+        "b": [
+         {
+          "cevap": "always plays golf"
+         }
+        ]
        }
       ],
-      "aciklama": "4 always, 3 usually, 2 often, 1 sometimes, 0 dolu rarely, yalnız çizgi never. Amanda–tennis: 4 dolu → always (kâğıtta örnek)."
+      "aciklama": "4 dolu yaprak always, 3 usually, 2 often, 1 sometimes, 0 dolu rarely, yalnız çizgi never. Zarf fiilden önce, fiile -s: goes, does, plays."
      },
-     "cevap": "always plays tennis",
-     "anahtarlar": [
-      {
-       "ad": "always",
-       "k": [
-        "always"
-       ]
-      },
-      {
-       "ad": "plays tennis (zarftan sonra, -s ile)",
-       "sira": [
-        [
-         "always"
-        ],
-        [
-         "plays tennis"
-        ]
-       ]
-      }
-     ],
-     "kisaCevap": "always plays tennis",
-     "tetik": [
-      "(play tennis)"
-     ],
-     "kalipNot": "Yaprakları say → zarf + fiil-s: Amanda often goes cycling."
-    },
-    {
-     "harf": "b",
-     "soru": "Amanda ___ . (go cycling)",
-     "formul": "siklik",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Amanda–cycling 2 dolu yaprak. Hangisi doğru?",
-      "secenekler": [
-       "often goes cycling",
-       "goes often cycling",
-       "often go cycling",
-       "sometimes goes cycling"
-      ],
-      "dogru": 0,
-      "aciklama": "2 dolu → often; zarf fiilden önce, go → goes."
-     },
-     "cevap": "often goes cycling",
-     "anahtarlar": [
-      {
-       "ad": "often",
-       "k": [
-        "often"
-       ]
-      },
-      {
-       "ad": "goes cycling (zarftan sonra, -s ile)",
-       "sira": [
-        [
-         "often"
-        ],
-        [
-         "goes cycling"
-        ]
-       ]
-      }
-     ],
-     "kisaCevap": "often goes cycling",
-     "tetik": [
-      "(go cycling)"
-     ]
-    },
-    {
-     "harf": "c",
-     "soru": "Amanda ___ . (do powerlifting)",
-     "formul": "siklik",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Amanda–powerlifting 3 dolu yaprak. Hangisi doğru?",
-      "secenekler": [
-       "usually does powerlifting",
-       "does usually powerlifting",
-       "usually do powerlifting",
-       "usually doing powerlifting"
-      ],
-      "dogru": 0,
-      "aciklama": "3 dolu → usually; zarf fiilden önce, fiile -s: does."
-     },
-     "cevap": "usually does powerlifting",
-     "anahtarlar": [
-      {
-       "ad": "usually",
-       "k": [
-        "usually"
-       ]
-      },
-      {
-       "ad": "does powerlifting (zarftan sonra, -s ile)",
-       "sira": [
-        [
-         "usually"
-        ],
-        [
-         "does powerlifting"
-        ]
-       ]
-      }
-     ],
-     "kisaCevap": "usually does powerlifting",
-     "tetik": [
-      "(do powerlifting)"
-     ]
-    },
-    {
-     "harf": "d",
-     "soru": "Patty ___ . (play golf)",
-     "formul": "siklik",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Patty–golf 3 dolu yaprak. Hangisi doğru?",
-      "secenekler": [
-       "usually plays golf",
-       "usually play golf",
-       "plays usually golf",
-       "always plays golf"
-      ],
-      "dogru": 0,
-      "aciklama": "3 dolu → usually; play → plays."
-     },
-     "cevap": "usually plays golf",
-     "anahtarlar": [
-      {
-       "ad": "usually",
-       "k": [
-        "usually"
-       ]
-      },
-      {
-       "ad": "plays golf (zarftan sonra, -s ile)",
-       "sira": [
-        [
-         "usually"
-        ],
-        [
-         "plays golf"
-        ]
-       ]
-      }
-     ],
-     "kisaCevap": "usually plays golf",
-     "tetik": [
-      "(play golf)"
-     ]
-    },
-    {
-     "harf": "e",
-     "soru": "Patty ___ . (go cycling)",
-     "formul": "siklik",
-     "iskele": {
-      "tur": "secim",
-      "soru": "Önce ısınalım: Patty–cycling yalnız çizgi, hiç dolu yaprak yok. Hangisi doğru?",
-      "secenekler": [
-       "never goes cycling",
-       "never go cycling",
-       "goes never cycling",
-       "rarely goes cycling"
-      ],
-      "dogru": 0,
-      "aciklama": "Yalnız çizgi → never; go → goes."
-     },
-     "cevap": "never goes cycling",
-     "anahtarlar": [
-      {
-       "ad": "never",
-       "k": [
-        "never"
-       ]
-      },
-      {
-       "ad": "goes cycling (zarftan sonra, -s ile)",
-       "sira": [
-        [
-         "never"
-        ],
-        [
-         "goes cycling"
-        ]
-       ]
-      }
-     ],
-     "kisaCevap": "never goes cycling",
-     "tetik": [
-      "(go cycling)"
-     ]
-    },
-    {
-     "harf": "f",
-     "soru": "Stephen ___ . (play tennis)",
-     "formul": "siklik",
-     "cevap": "sometimes plays tennis",
-     "anahtarlar": [
-      {
-       "ad": "sometimes",
-       "k": [
-        "sometimes"
-       ]
-      },
-      {
-       "ad": "plays tennis (zarftan sonra, -s ile)",
-       "sira": [
-        [
-         "sometimes"
-        ],
-        [
-         "plays tennis"
-        ]
-       ]
-      }
-     ],
-     "kisaCevap": "sometimes plays tennis",
-     "tetik": [
-      "(play tennis)"
-     ]
-    },
-    {
-     "harf": "g",
-     "soru": "Stephen ___ . (play golf)",
-     "formul": "siklik",
-     "cevap": "always plays golf",
-     "anahtarlar": [
-      {
-       "ad": "always",
-       "k": [
-        "always"
-       ]
-      },
-      {
-       "ad": "plays golf (zarftan sonra, -s ile)",
-       "sira": [
-        [
-         "always"
-        ],
-        [
-         "plays golf"
-        ]
-       ]
-      }
-     ],
-     "kisaCevap": "always plays golf",
-     "tetik": [
-      "(play golf)"
-     ]
+     "kisaCevap": "b often goes cycling · c usually does powerlifting · d usually plays golf · e never goes cycling · f sometimes plays tennis · g always plays golf"
     }
+   ],
+   "metin": [
+    "Yonca: 4 dolu yaprak always · 3 usually · 2 often · 1 sometimes · 0 dolu rarely · yalnız çizgi never",
+    "a. Amanda always plays tennis. (kâğıtta örnek olarak yazılı)"
    ],
    "svg": "<svg viewBox='0 0 340 222' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Soru 6 tablosu: Amanda tennis 4, cycling 2, powerlifting 3 dolu yaprak; Patty golf 3, cycling yalnız çizgi; Stephen tennis 1, golf 4' font-family='Fredoka, Nunito, sans-serif'><rect x='104' y='8' width='240' height='26' rx='6' fill='#2b3560'/><text x='142.0' y='26' text-anchor='middle' font-size='12' font-weight='700' fill='#f2c14e'>Amanda</text><text x='224.0' y='26' text-anchor='middle' font-size='12' font-weight='700' fill='#f2c14e'>Patty</text><text x='306.0' y='26' text-anchor='middle' font-size='12' font-weight='700' fill='#f2c14e'>Stephen</text><text x='8' y='66.0' text-anchor='start' font-size='12' font-weight='700' fill='#6fb3ff'>Tennis</text><line x1='8' y1='84' x2='332' y2='84' stroke='#59627f' stroke-width='1'/><line x1='142.0' y1='56.0' x2='148.3' y2='72.8' stroke='#5fd08f' stroke-width='2' stroke-linecap='round'/><circle cx='147.95' cy='50.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='147.95' cy='61.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='136.05' cy='61.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='136.05' cy='50.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><text x='224.0' y='66.0' text-anchor='middle' font-size='14' font-weight='700' fill='#59627f'>·</text><line x1='306.0' y1='56.0' x2='312.3' y2='72.8' stroke='#5fd08f' stroke-width='2' stroke-linecap='round'/><circle cx='311.95' cy='50.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='311.95' cy='61.95' r='7' fill='none' stroke='#5fd08f' stroke-width='1.6' stroke-dasharray='3 2'/><circle cx='300.05' cy='61.95' r='7' fill='none' stroke='#5fd08f' stroke-width='1.6' stroke-dasharray='3 2'/><circle cx='300.05' cy='50.05' r='7' fill='none' stroke='#5fd08f' stroke-width='1.6' stroke-dasharray='3 2'/><text x='8' y='110.0' text-anchor='start' font-size='12' font-weight='700' fill='#6fb3ff'>Golfing</text><line x1='8' y1='128' x2='332' y2='128' stroke='#59627f' stroke-width='1'/><text x='142.0' y='110.0' text-anchor='middle' font-size='14' font-weight='700' fill='#59627f'>·</text><line x1='224.0' y1='100.0' x2='230.3' y2='116.8' stroke='#5fd08f' stroke-width='2' stroke-linecap='round'/><circle cx='229.95' cy='94.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='229.95' cy='105.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='218.05' cy='105.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='218.05' cy='94.05' r='7' fill='none' stroke='#5fd08f' stroke-width='1.6' stroke-dasharray='3 2'/><line x1='306.0' y1='100.0' x2='312.3' y2='116.8' stroke='#5fd08f' stroke-width='2' stroke-linecap='round'/><circle cx='311.95' cy='94.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='311.95' cy='105.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='300.05' cy='105.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='300.05' cy='94.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><text x='8' y='154.0' text-anchor='start' font-size='12' font-weight='700' fill='#6fb3ff'>Cycling</text><line x1='8' y1='172' x2='332' y2='172' stroke='#59627f' stroke-width='1'/><line x1='142.0' y1='144.0' x2='148.3' y2='160.8' stroke='#5fd08f' stroke-width='2' stroke-linecap='round'/><circle cx='147.95' cy='138.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='147.95' cy='149.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='136.05' cy='149.95' r='7' fill='none' stroke='#5fd08f' stroke-width='1.6' stroke-dasharray='3 2'/><circle cx='136.05' cy='138.05' r='7' fill='none' stroke='#5fd08f' stroke-width='1.6' stroke-dasharray='3 2'/><line x1='224.0' y1='144.0' x2='230.3' y2='160.8' stroke='#5fd08f' stroke-width='2' stroke-linecap='round'/><line x1='224.0' y1='144.0' x2='235.2' y2='144.0' stroke='#5fd08f' stroke-width='2' stroke-dasharray='3 2'/><line x1='224.0' y1='144.0' x2='212.8' y2='144.0' stroke='#5fd08f' stroke-width='2' stroke-dasharray='3 2'/><line x1='224.0' y1='144.0' x2='224.0' y2='155.2' stroke='#5fd08f' stroke-width='2' stroke-dasharray='3 2'/><line x1='224.0' y1='144.0' x2='224.0' y2='132.8' stroke='#5fd08f' stroke-width='2' stroke-dasharray='3 2'/><text x='306.0' y='154.0' text-anchor='middle' font-size='14' font-weight='700' fill='#59627f'>·</text><text x='8' y='198.0' text-anchor='start' font-size='12' font-weight='700' fill='#6fb3ff'>Powerlifting</text><line x1='8' y1='216' x2='332' y2='216' stroke='#59627f' stroke-width='1'/><line x1='142.0' y1='188.0' x2='148.3' y2='204.8' stroke='#5fd08f' stroke-width='2' stroke-linecap='round'/><circle cx='147.95' cy='182.05' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='147.95' cy='193.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='136.05' cy='193.95' r='7' fill='#5fd08f' stroke='#5fd08f' stroke-width='1.6'/><circle cx='136.05' cy='182.05' r='7' fill='none' stroke='#5fd08f' stroke-width='1.6' stroke-dasharray='3 2'/><text x='224.0' y='198.0' text-anchor='middle' font-size='14' font-weight='700' fill='#59627f'>·</text><text x='306.0' y='198.0' text-anchor='middle' font-size='14' font-weight='700' fill='#59627f'>·</text></svg>"
   },
@@ -1439,290 +782,163 @@
    "id": "m7",
    "no": 7,
    "kazanim": "Geçmiş zaman",
-   "metin": [
-    "Write the meanings and past forms of the verbs below. (Fiillerin anlamlarını ve geçmiş hâllerini yaz.)",
-    "1. Go · 2. Swim · 3. Give · 4. Do · 5. Become · 6. Hear · 7. Leave · 8. Know · 9. See · 10. Understand"
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "Go ve Swim: geçmiş hâlini (V2) ve anlamını yaz.",
-     "formul": "v2",
+     "soru": "7. Write the meanings and past forms of the verbs below. (Fiillerin geçmiş hâlini ve anlamını yaz.)",
      "iskele": {
-      "tur": "bosluk",
-      "soru": "Önce ısınalım: Geçmiş hâlini (V2) seç.",
+      "tur": "doldur",
+      "soru": "Her fiilin PAST (V2) hâlini ve Türkçe ANLAM'ını yaz.",
       "cumleler": [
        {
-        "c": "go → ___",
-        "cevap": "went"
+        "c": "Go → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "went"
+         },
+         {
+          "cevap": "gitmek",
+          "k": [
+           "git"
+          ]
+         }
+        ]
        },
        {
-        "c": "swim → ___",
-        "cevap": "swam"
-       }
-      ],
-      "havuz": [
-       "goed",
-       "swimmed"
-      ],
-      "aciklama": "Düzensiz fiiller: go → went, swim → swam. (-ed almaz)"
-     },
-     "cevap": "go → went (gitmek), swim → swam (yüzmek)",
-     "anahtarlar": [
-      {
-       "ad": "went",
-       "k": [
-        "went"
-       ]
-      },
-      {
-       "ad": "gitmek",
-       "k": [
-        "git"
-       ]
-      },
-      {
-       "ad": "swam",
-       "k": [
-        "swam"
-       ]
-      },
-      {
-       "ad": "yüzmek",
-       "k": [
-        "yüz"
-       ]
-      }
-     ],
-     "kisaCevap": "went (gitmek), swam (yüzmek)",
-     "tetik": [
-      "geçmiş hâlini (V2) ve anlamını"
-     ],
-     "kalipNot": "V1 → V2 + Türkçe anlam: go → went (gitmek)."
-    },
-    {
-     "harf": "b",
-     "soru": "Give ve Do: geçmiş hâlini (V2) ve anlamını yaz.",
-     "formul": "v2",
-     "iskele": {
-      "tur": "bosluk",
-      "soru": "Önce ısınalım: Geçmiş hâlini (V2) seç.",
-      "cumleler": [
-       {
-        "c": "give → ___",
-        "cevap": "gave"
+        "c": "Swim → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "swam"
+         },
+         {
+          "cevap": "yüzmek",
+          "k": [
+           "yüz"
+          ]
+         }
+        ]
        },
        {
-        "c": "do → ___",
-        "cevap": "did"
-       }
-      ],
-      "havuz": [
-       "gived",
-       "doed"
-      ],
-      "aciklama": "Düzensiz fiiller: give → gave, do → did. (-ed almaz)"
-     },
-     "cevap": "give → gave (vermek), do → did (yapmak)",
-     "anahtarlar": [
-      {
-       "ad": "gave",
-       "k": [
-        "gave"
-       ]
-      },
-      {
-       "ad": "vermek",
-       "k": [
-        "ver"
-       ]
-      },
-      {
-       "ad": "did",
-       "k": [
-        "did"
-       ]
-      },
-      {
-       "ad": "yapmak",
-       "k": [
-        "yap"
-       ]
-      }
-     ],
-     "kisaCevap": "gave (vermek), did (yapmak)",
-     "tetik": [
-      "geçmiş hâlini (V2) ve anlamını"
-     ]
-    },
-    {
-     "harf": "c",
-     "soru": "Become ve Hear: geçmiş hâlini (V2) ve anlamını yaz.",
-     "formul": "v2",
-     "iskele": {
-      "tur": "bosluk",
-      "soru": "Önce ısınalım: Geçmiş hâlini (V2) seç.",
-      "cumleler": [
-       {
-        "c": "become → ___",
-        "cevap": "became"
+        "c": "Give → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "gave"
+         },
+         {
+          "cevap": "vermek",
+          "k": [
+           "ver"
+          ]
+         }
+        ]
        },
        {
-        "c": "hear → ___",
-        "cevap": "heard"
-       }
-      ],
-      "havuz": [
-       "becomed",
-       "heared"
-      ],
-      "aciklama": "Düzensiz fiiller: become → became, hear → heard. (-ed almaz)"
-     },
-     "cevap": "become → became (olmak), hear → heard (duymak)",
-     "anahtarlar": [
-      {
-       "ad": "became",
-       "k": [
-        "became"
-       ]
-      },
-      {
-       "ad": "olmak",
-       "k": [
-        "ol"
-       ]
-      },
-      {
-       "ad": "heard",
-       "k": [
-        "heard"
-       ]
-      },
-      {
-       "ad": "duymak",
-       "k": [
-        "duy",
-        "işit"
-       ]
-      }
-     ],
-     "kisaCevap": "became (olmak), heard (duymak)",
-     "tetik": [
-      "geçmiş hâlini (V2) ve anlamını"
-     ]
-    },
-    {
-     "harf": "d",
-     "soru": "Leave ve Know: geçmiş hâlini (V2) ve anlamını yaz.",
-     "formul": "v2",
-     "iskele": {
-      "tur": "bosluk",
-      "soru": "Önce ısınalım: Geçmiş hâlini (V2) seç.",
-      "cumleler": [
-       {
-        "c": "leave → ___",
-        "cevap": "left"
+        "c": "Do → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "did"
+         },
+         {
+          "cevap": "yapmak",
+          "k": [
+           "yap",
+           "et"
+          ]
+         }
+        ]
        },
        {
-        "c": "know → ___",
-        "cevap": "knew"
-       }
-      ],
-      "havuz": [
-       "leaved",
-       "knowed"
-      ],
-      "aciklama": "Düzensiz fiiller: leave → left, know → knew. (-ed almaz)"
-     },
-     "cevap": "leave → left (ayrılmak), know → knew (bilmek)",
-     "anahtarlar": [
-      {
-       "ad": "left",
-       "k": [
-        "left"
-       ]
-      },
-      {
-       "ad": "ayrılmak",
-       "k": [
-        "ayrıl",
-        "terk",
-        "bırak",
-        "çık"
-       ]
-      },
-      {
-       "ad": "knew",
-       "k": [
-        "knew"
-       ]
-      },
-      {
-       "ad": "bilmek",
-       "k": [
-        "bil"
-       ]
-      }
-     ],
-     "kisaCevap": "left (ayrılmak), knew (bilmek)",
-     "tetik": [
-      "geçmiş hâlini (V2) ve anlamını"
-     ]
-    },
-    {
-     "harf": "e",
-     "soru": "See ve Understand: geçmiş hâlini (V2) ve anlamını yaz.",
-     "formul": "v2",
-     "iskele": {
-      "tur": "bosluk",
-      "soru": "Önce ısınalım: Geçmiş hâlini (V2) seç.",
-      "cumleler": [
-       {
-        "c": "see → ___",
-        "cevap": "saw"
+        "c": "Become → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "became"
+         },
+         {
+          "cevap": "olmak",
+          "k": [
+           "ol"
+          ]
+         }
+        ]
        },
        {
-        "c": "understand → ___",
-        "cevap": "understood"
+        "c": "Hear → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "heard"
+         },
+         {
+          "cevap": "duymak",
+          "k": [
+           "duy",
+           "işit"
+          ]
+         }
+        ]
+       },
+       {
+        "c": "Leave → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "left"
+         },
+         {
+          "cevap": "ayrılmak",
+          "k": [
+           "ayrıl",
+           "terk",
+           "bırak",
+           "çık"
+          ]
+         }
+        ]
+       },
+       {
+        "c": "Know → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "knew"
+         },
+         {
+          "cevap": "bilmek",
+          "k": [
+           "bil"
+          ]
+         }
+        ]
+       },
+       {
+        "c": "See → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "saw"
+         },
+         {
+          "cevap": "görmek",
+          "k": [
+           "gör"
+          ]
+         }
+        ]
+       },
+       {
+        "c": "Understand → PAST (V2): ___ ANLAM: ___",
+        "b": [
+         {
+          "cevap": "understood"
+         },
+         {
+          "cevap": "anlamak",
+          "k": [
+           "anla"
+          ]
+         }
+        ]
        }
       ],
-      "havuz": [
-       "seed",
-       "understanded"
-      ],
-      "aciklama": "Düzensiz fiiller: see → saw, understand → understood. (-ed almaz)"
+      "aciklama": "go-went (gitmek), swim-swam (yüzmek), give-gave (vermek), do-did (yapmak), become-became (olmak), hear-heard (duymak), leave-left (ayrılmak), know-knew (bilmek), see-saw (görmek), understand-understood (anlamak)."
      },
-     "cevap": "see → saw (görmek), understand → understood (anlamak)",
-     "anahtarlar": [
-      {
-       "ad": "saw",
-       "k": [
-        "saw"
-       ]
-      },
-      {
-       "ad": "görmek",
-       "k": [
-        "gör"
-       ]
-      },
-      {
-       "ad": "understood",
-       "k": [
-        "understood"
-       ]
-      },
-      {
-       "ad": "anlamak",
-       "k": [
-        "anla"
-       ]
-      }
-     ],
-     "kisaCevap": "saw (görmek), understood (anlamak)",
-     "tetik": [
-      "geçmiş hâlini (V2) ve anlamını"
-     ]
+     "kisaCevap": "went, swam, gave, did, became, heard, left, knew, saw, understood"
     }
    ]
   },
@@ -1730,95 +946,42 @@
    "id": "m8",
    "no": 8,
    "kazanim": "Karşılaştırma",
-   "metin": [
-    "Choose the correct options. (Doğru seçenekleri seç.)",
-    "Sol kutu: tablo (City · Yesterday · Today). Which one is TRUE?",
-    "Sağ kutu: Emma: ______? Jack: Once a week. What is the best question according to the answer?"
-   ],
    "maddeler": [
     {
      "harf": "a",
-     "soru": "Which one is TRUE? (Tabloya göre hangisi DOĞRU? Şıkkın harfini ve cümlesini yaz.)",
-     "formul": "comp",
+     "soru": "8. Choose the correct options. Which one is TRUE? (Tabloya göre hangisi DOĞRU?)",
      "iskele": {
-      "tur": "dytablo",
-      "soru": "Önce ısınalım: Tablodaki sayılara bak. Her cümle Doğru (D) mu, Yanlış (Y) mı?",
-      "ifadeler": [
-       {
-        "s": "A) Antalya is colder than İstanbul today.",
-        "d": false
-       },
-       {
-        "s": "B) Ağrı was hotter than İstanbul yesterday.",
-        "d": false
-       },
-       {
-        "s": "C) İstanbul is colder than Ağrı today.",
-        "d": false
-       },
-       {
-        "s": "D) Antalya was hotter than Ağrı yesterday.",
-        "d": true
-       }
+      "tur": "secim",
+      "sabit": true,
+      "soru": "Tablodaki sayılara bak. Hangisi DOĞRU?",
+      "secenekler": [
+       "Antalya is colder than İstanbul today.",
+       "Ağrı was hotter than İstanbul yesterday.",
+       "İstanbul is colder than Ağrı today.",
+       "Antalya was hotter than Ağrı yesterday."
       ],
-      "aciklama": "A: bugün 34 > 20, Antalya daha sıcak. B: dün 11 < 24, Ağrı daha soğuk. C: bugün 20 > 15, İstanbul daha sıcak. D: dün 29 > 11 → doğru."
+      "dogru": 3,
+      "aciklama": "Dün Antalya 29, Ağrı 11 → D doğru. A: bugün 34 > 20, B: dün 11 < 24, C: bugün 20 > 15 olduğu için yanlış."
      },
-     "cevap": "D) Antalya was hotter than Ağrı yesterday.",
-     "anahtarlar": [
-      {
-       "ad": "D şıkkı: Antalya was hotter than Ağrı",
-       "k": [
-        "antalya was hotter",
-        "d)"
-       ]
-      }
-     ],
-     "kisaCevap": "D) Antalya was hotter than Ağrı yesterday.",
-     "tetik": [
-      "TRUE"
-     ],
-     "kalipNot": "Sayıları karşılaştır: dün → was, bugün → is; “Once a week” → How often."
+     "kisaCevap": "D) Antalya was hotter than Ağrı yesterday."
     },
     {
      "harf": "b",
-     "soru": "Emma: ______? Jack: Once a week. What is the best question according to the answer? (Şıkkın harfini ve soruyu yaz.)",
-     "formul": "siklik",
+     "soru": "Emma: ______? Jack: Once a week. What is the best question according to the answer?",
      "iskele": {
-      "tur": "dytablo",
-      "soru": "Önce ısınalım: “Once a week” (haftada bir) cevabına uyan soru hangisi? Uyan D, uymayan Y.",
-      "ifadeler": [
-       {
-        "s": "A) Do you like indoor sports?",
-        "d": false
-       },
-       {
-        "s": "B) Why do you play football?",
-        "d": false
-       },
-       {
-        "s": "C) How often do you train?",
-        "d": true
-       },
-       {
-        "s": "D) Where do you play volleyball?",
-        "d": false
-       }
+      "tur": "secim",
+      "sabit": true,
+      "soru": "“Once a week” (haftada bir) cevabına en uygun soru hangisi?",
+      "secenekler": [
+       "Do you like indoor sports?",
+       "Why do you play football?",
+       "How often do you train?",
+       "Where do you play volleyball?"
       ],
+      "dogru": 2,
       "aciklama": "Once a week bir sıklık; sıklık “How often” ile sorulur. Why → Because, Where → yer, Do you …? → Yes/No."
      },
-     "cevap": "C) How often do you train?",
-     "anahtarlar": [
-      {
-       "ad": "C şıkkı: How often",
-       "k": [
-        "how often"
-       ]
-      }
-     ],
-     "kisaCevap": "C) How often do you train?",
-     "tetik": [
-      "Once a week"
-     ]
+     "kisaCevap": "C) How often do you train?"
     }
    ],
    "svg": "<svg viewBox='0 0 340 139' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Soru 8 tablosu: Antalya dün 29 bugün 34, Ağrı dün 11 bugün 15, İstanbul dün 24 bugün 20' font-family='Fredoka, Nunito, sans-serif'><rect x='10.0' y='6' width='320' height='32' rx='6' fill='#2b3560'/><text x='65.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>City</text><text x='175.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Yesterday</text><text x='280.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Today</text><text x='65.0' y='58.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>Antalya</text><text x='175.0' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>29</text><text x='280.0' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>34</text><line x1='10.0' y1='69' x2='330.0' y2='69' stroke='#59627f' stroke-width='1'/><text x='65.0' y='89.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>Ağrı</text><text x='175.0' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>11</text><text x='280.0' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>15</text><line x1='10.0' y1='100' x2='330.0' y2='100' stroke='#59627f' stroke-width='1'/><text x='65.0' y='120.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>İstanbul</text><text x='175.0' y='120.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>24</text><text x='280.0' y='120.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>20</text><line x1='10.0' y1='131' x2='330.0' y2='131' stroke='#59627f' stroke-width='1'/><line x1='120.0' y1='6' x2='120.0' y2='131' stroke='#59627f' stroke-width='1'/><line x1='230.0' y1='6' x2='230.0' y2='131' stroke='#59627f' stroke-width='1'/></svg>"

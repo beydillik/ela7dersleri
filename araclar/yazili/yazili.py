@@ -13,7 +13,7 @@ Madde (bir sorunun a, b, c… kısmı):
 import json, os, re, unicodedata
 
 KOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-ISKELE_TUR = {"secim", "dy", "dytablo", "bosluk", "eslestir", "kisa"}
+ISKELE_TUR = {"secim", "dy", "dytablo", "bosluk", "eslestir", "kisa", "grupla", "doldur"}
 
 
 def sade(s):
@@ -77,6 +77,14 @@ class Yazili:
             if not 3 <= len(q.get("ciftler", [])) <= 5: h.append(f"{yer}: eslestir 3–5 çift")
         elif t == "kisa":
             if not q.get("yanit"): h.append(f"{yer}: kisa yanit")
+        elif t == "grupla":   # kâğıt biçimi: kelimeleri kutulara yerleştir
+            uy = [m for b in q.get("kutular", []) for m in b.get("uyeler", [])]
+            if len(q.get("kutular", [])) < 2 or len(uy) != len(set(uy)) or (q.get("kelimeler") and sorted(q["kelimeler"]) != sorted(uy)): h.append(f"{yer}: grupla (2+ kutu, tekrarsız üye)")
+        elif t == "doldur":   # kâğıt biçimi: cümle içi boşluklar (yazı ya da daire)
+            for x in q.get("cumleler", []):
+                if x["c"].count("___") != len(x.get("b", [])) or not x.get("b") or any(not b.get("cevap") for b in x["b"]): h.append(f"{yer}: doldur '{x['c'][:30]}' boşluk/cevap")
+                for b in x.get("b", []):
+                    if b.get("secenekler") and b["cevap"] not in b["secenekler"]: h.append(f"{yer}: doldur seçeneklerde cevap yok")
         if not q.get("aciklama"): h.append(f"{yer}: iskele açıklaması yok")
 
     def _madde(self, m, yer, h, prova=False):

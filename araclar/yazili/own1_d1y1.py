@@ -33,18 +33,14 @@ Y = Yazili("own1", "d1y1",
     baslik="1. Dönem 1. Yazılı", ders="İngilizce (Own It)", senaryo="Öğretmenin çalışma kâğıdı", sure=40, tarih="2026-11-11",
     dagilim={K1: 2, K2: 2, K3: 3, K4: 1},
     soruBaslik="Öğretmenin Soruları", soruEtiket="Soru", kazanimAd="konu", ikizsiz=True,
-    soruGiris="Bunlar öğretmeninin kâğıdındaki <b>8 soru</b>. Yazılıda <b>aynısı</b> çıkacak. İlk çözüşte önce kısa bir ısınma var, sonra cevabı <b>yazarak</b> ver. İkinci çözüşte ısınma yok: doğrudan aklından yaz.",
+    soruGiris="Bunlar öğretmeninin kâğıdındaki <b>8 soru</b>, kâğıttaki gibi. Yazılıda <b>aynısı</b> çıkacak. Kâğıtta ne yapacaksan burada da onu yap: kutulara yerleştir, boşluğa yaz, doğru kelimeyi seç.",
     giris="Öğretmeninin kâğıdındaki <b>8 soru</b> yazılıda <b>aynen</b> çıkacak. Önce 4 konu kartını oku ve boşlukları doldur. Sonra 8 soruyu sırayla çöz. En sonda Kısa Cevap Kartları ile her cevabı bir kez daha hatırla.",
     kapsamDisi=["Kâğıtta olmayan her şey: öğretmen bu 8 sorunun aynısını soracak", "Own It ünitelerindeki diğer konular (present perfect, used to…)"],
     puanNotu="Kâğıtta yalnız 1. ve 7. sorunun puanı yazıyor (20'şer puan). Diğerlerinin puanı belli değil.",
     kaynakNotu=("Sorular öğretmenin çalışma kâğıdından. Cevaplar: Own it! 3 Workbook s. 86 (sıklık zarfları, past simple), WB s. 9 "
                 "(in 1992); İngilizce 7 ders kitabı (MEB) s. 10–16 (görünüş, kişilik, karşılaştırma). Karşılaştırma yazım kuralları "
                 "(hotter, funnier, more expensive) ve düzensiz fiiller genel İngilizce kurallarıdır."),
-    sozluk={"categorize": "grupla, sınıflandır", "appearance": "görünüş", "personality": "kişilik", "punctual": "dakik",
-            "stubborn": "inatçı", "thoughtful": "düşünceli", "overweight": "kilolu", "adjectives": "sıfatlar", "generous": "cömert",
-            "polite": "kibar", "lazy": "tembel", "comparatives": "karşılaştırma hâli (-er / more)", "circle": "daire içine al",
-            "in words": "yazıyla", "fill in the blanks": "boşlukları doldur", "meanings": "anlamları", "past forms": "geçmiş hâlleri (V2)",
-            "once a week": "haftada bir", "according to": "-e göre"})
+    beklemesiz=True)
 
 # =====================================================================
 # KONU KARTLARI (Hatırla ve Tekrarla)
@@ -145,145 +141,102 @@ Y.formul(id="siklik", ad="Sıklık cümlesi", kalip="Kim + zarf + fiil-s", ne="�
 Y.formul(id="v2", ad="V2 + anlam", kalip="V1 → V2 (anlam)", ne="“Write the meanings and past forms” sorusunda", ornek="go → went (gitmek)")
 
 # =====================================================================
-# ÖĞRETMENİN SORULARI (kâğıttaki sırayla)
+# ÖĞRETMENİN SORULARI — kâğıttaki biçimle (Kemal, 10 Kasım 2026 akşamı: "Ela yarın görünce şaşırmasın")
+# Her soru tek ekran, tek madde; iskele = kâğıttaki iş (grupla: sürükle-bırak, doldur: boşluğa yaz / daire içine al, secim: şık).
+# "Bu soru senden ne istiyor?" adımı yok (kalipNot yazılmadı); yanlıştan sonra okuma beklemesi yok (beklemesiz).
 # =====================================================================
-Q = {}
-def S(no, kazanim, maddeler, metin, svg=None):
-    q = {"id": f"m{no}", "no": no, "kazanim": kazanim, "metin": metin, "maddeler": maddeler}
+def S(no, kazanim, soru, iskele, kisa, metin=None, svg=None, harf="a", ek=None):
+    m = {"harf": harf, "soru": soru, "iskele": iskele, "kisaCevap": kisa}
+    q = {"id": f"m{no}", "no": no, "kazanim": kazanim, "maddeler": [m] + (ek or [])}
+    if metin: q["metin"] = metin
     if svg: q["svg"] = svg
-    Q[no] = Y.meb(**q)
+    return Y.meb(**q)
+def B(cevap, *kabul, k=None, sec=None):
+    b = {"cevap": cevap}
+    if kabul: b["kabul"] = list(kabul)
+    if k: b["k"] = k
+    if sec: b["secenekler"] = sec
+    return b
 
 GOR = ["handsome", "slim", "overweight", "tall", "brown eyes"]
 KIS = ["punctual", "stubborn", "thoughtful", "honest", "friendly"]
-S(1, K1, [
-    M("a", "Write the Appearance words. (Appearance kutusuna gelen 5 kelimeyi yaz.)", "handsome, slim, overweight, tall, brown eyes",
-      [A(w, w if w != "brown eyes" else "brown eye") for w in GOR],
-      {"tur": "dytablo", "soru": "Önce ısınalım: Bu kelime GÖRÜNÜŞ (Appearance) mü? Görünüşse D, kişilikse Y seç.",
-       "ifadeler": [{"s": "handsome", "d": True}, {"s": "punctual", "d": False}, {"s": "stubborn", "d": False}, {"s": "slim", "d": True},
-                    {"s": "thoughtful", "d": False}, {"s": "overweight", "d": True}, {"s": "tall", "d": True}, {"s": "honest", "d": False},
-                    {"s": "friendly", "d": False}, {"s": "brown eyes", "d": True}],
-       "aciklama": "Fotoğrafta görünenler Appearance: handsome, slim, overweight, tall, brown eyes."},
-      tetik=["Appearance"], notu="Fotoğrafta görünür mü? Görünürse Appearance, davranışsa Personality.", formul="grup"),
-    M("b", "Write the Personality words. (Personality kutusuna gelen 5 kelimeyi yaz.)", "punctual, stubborn, thoughtful, honest, friendly",
-      [A(w, w) for w in KIS],
-      {"tur": "eslestir", "soru": "Önce ısınalım: Kişilik sıfatlarını Türkçesiyle eşleştir.",
-       "ciftler": [{"sol": "punctual", "sag": "dakik"}, {"sol": "stubborn", "sag": "inatçı"}, {"sol": "thoughtful", "sag": "düşünceli"},
-                   {"sol": "honest", "sag": "dürüst"}, {"sol": "friendly", "sag": "arkadaş canlısı"}],
-       "aciklama": "Bunlar davranış anlatır, fotoğrafta görünmez → Personality."},
-      tetik=["Personality"], formul="grup")],
-  metin=["Categorize the words. (Kelimeleri grupla.) Appearance / Personality",
-         "A. handsome · B. punctual · C. stubborn · D. slim · E. thoughtful · F. overweight · G. tall · H. honest · I. friendly · J. brown eyes"])
+HARF10 = "ABCDEFGHIJ"
+KEL = ["handsome", "punctual", "stubborn", "slim", "thoughtful", "overweight", "tall", "honest", "friendly", "brown eyes"]
+S(1, K1, "1. Categorize the words. (Kelimeleri grupla.)",
+  {"tur": "grupla", "soru": "Her kelimeyi doğru kutuya koy: Appearance (görünüş) ya da Personality (kişilik).",
+   "kelimeler": KEL, "kutular": [{"etiket": "Appearance", "uyeler": GOR}, {"etiket": "Personality", "uyeler": KIS}],
+   "aciklama": "Fotoğrafta görünenler Appearance: handsome, slim, overweight, tall, brown eyes. Davranış anlatanlar Personality: punctual, stubborn, thoughtful, honest, friendly."},
+  "Appearance: handsome, slim, overweight, tall, brown eyes · Personality: punctual, stubborn, thoughtful, honest, friendly",
+  metin=["Kâğıtta: " + " · ".join(f"{HARF10[i]}. {w}" for i, w in enumerate(KEL))])
 
-S2 = [("My brother doesn't tell lies. He is ___.", "honest", "doesn't tell lies"),
-      ("Selin has got a lot of money and she helps poor people. She is ___.", "generous", "helps poor people"),
-      ("My sister always says “thank you”. She is a ___ person.", "polite", "says “thank you”"),
-      ("Sevda teacher is never late. She is very ___.", "punctual", "never late"),
-      ("My daughter never does his homework. She is ___.", "lazy", "never does his homework")]
-S(2, K1, [M("abcde"[i], s, c, [A(c, c)],
-            {"tur": "eslestir", "soru": "Önce ısınalım: Davranışı sıfatla eşleştir.",
-             "ciftler": [{"sol": "doesn't tell lies", "sag": "honest"}, {"sol": "helps poor people", "sag": "generous"},
-                         {"sol": "always says “thank you”", "sag": "polite"}, {"sol": "is never late", "sag": "punctual"},
-                         {"sol": "never does homework", "sag": "lazy"}],
-             "aciklama": "Yalan söylemeyen dürüst (honest), yardım eden cömert (generous), teşekkür eden kibar (polite), geç kalmayan dakik (punctual), ödev yapmayan tembel (lazy)."} if i == 0 else None,
-            tetik=[t], notu="Cümledeki davranışı bul → kutudan sıfat: never late → punctual." if i == 0 else None, formul="sifat")
-          for i, (s, c, t) in enumerate(S2)],
-  metin=["Complete the sentences with adjectives in the box. (Kutudaki sıfatlarla cümleleri tamamla.)", "Box: honest · punctual · lazy · generous · polite"])
+S(2, K1, "2. Complete the sentences with adjectives in the box. (Kutudaki sıfatlarla cümleleri tamamla.)",
+  {"tur": "doldur", "soru": "Kutudaki kelimelerden uygun olanı boşluğa yaz.", "kutu": ["honest", "punctual", "lazy", "generous", "polite"],
+   "cumleler": [{"c": "My brother doesn't tell lies. He is ___.", "b": [B("honest")]},
+                {"c": "Selin has got a lot of money and she helps poor people. She is ___.", "b": [B("generous")]},
+                {"c": "My sister always says “thank you”. She is a ___ person.", "b": [B("polite")]},
+                {"c": "Sevda teacher is never late. She is very ___.", "b": [B("punctual")]},
+                {"c": "My daughter never does his homework. She is ___.", "b": [B("lazy")]}],
+   "aciklama": "Yalan söylemeyen dürüst (honest), yardım eden cömert (generous), teşekkür eden kibar (polite), geç kalmayan dakik (punctual), ödev yapmayan tembel (lazy)."},
+  "honest · generous · polite · punctual · lazy")
 
-S3 = [("Antalya is ___ (hot) than Ağrı.", "hotter", ["hotter"], ["hotter", "hoter", "more hot", "hottest"], "Kısa sıfat, son harf iki kez: hot → hotter."),
-      ("A computer is ___ (expensive) than radio.", "more expensive", ["more expensive"], ["more expensive", "expensiver", "most expensive", "expensivest"], "Uzun sıfat: more + expensive."),
-      ("Milk is ___ (good) than coffee.", "better", ["better"], ["better", "gooder", "more good", "best"], "Düzensiz: good → better."),
-      ("My cousin is ___ (slim) than my sister.", "slimmer", ["slimmer"], ["slimmer", "slimer", "more slim", "slimmest"], "Kısa sıfat, son harf iki kez: slim → slimmer."),
-      ("Ünal teacher is ___ (funny) than me.", "funnier", ["funnier"], ["funnier", "funnyer", "more funny", "funniest"], "-y düşer, -ier gelir: funny → funnier."),
-      ("My sister is ___ (selfish) than my brother.", "more selfish", ["more selfish"], ["more selfish", "selfisher", "selfishest", "most selfish"], "Uzun sıfat: more + selfish.")]
-S(3, K2, [M("abcdef"[i], s, c, [A(c, *k)], SEC("Önce ısınalım: Hangisi doğru yazım?", sec, ac), tetik=[s[s.index("("):s.index(")") + 1]],
-            notu="Parantezdeki sıfata bak: kısa → -er · uzun → more … · good → better." if i == 0 else None, formul="comp")
-          for i, (s, c, k, sec, ac) in enumerate(S3)],
-  metin=["Write the comparatives of the adjectives. (Sıfatların karşılaştırma hâlini yaz.)"])
+S(3, K2, "3. Write the comparatives of the adjectives. (Sıfatların karşılaştırma hâlini yaz.)",
+  {"tur": "doldur", "soru": "Parantezdeki sıfatın karşılaştırma hâlini boşluğa yaz.",
+   "cumleler": [{"c": "Antalya is ___ (hot) than Ağrı.", "b": [B("hotter")]},
+                {"c": "A computer is ___ (expensive) than radio.", "b": [B("more expensive")]},
+                {"c": "Milk is ___ (good) than coffee.", "b": [B("better")]},
+                {"c": "My cousin is ___ (slim) than my sister.", "b": [B("slimmer")]},
+                {"c": "Ünal teacher is ___ (funny) than me.", "b": [B("funnier")]},
+                {"c": "My sister is ___ (selfish) than my brother.", "b": [B("more selfish")]}],
+   "aciklama": "Kısa sıfat -er (hot → hotter, slim → slimmer: son harf iki kez), -y → -ier (funnier), uzun sıfat more … (more expensive, more selfish), good → better."},
+  "hotter · more expensive · better · slimmer · funnier · more selfish")
 
-S4 = [("Timmy (wasn't / weren't) at party last night.", "wasn't", ["wasn't", f"wasn{AP}t", "wasnt", "was not"], "Timmy"),
-      ("Alex and Tom (was / were) in the school garden ten minutes ago.", "were", ["were"], "Alex and Tom"),
-      ("(Was / Were) you in Antalya five years ago?", "Were", ["were"], "you"),
-      ("I (was / were) born in Ağrı in 2001.", "was", ["was"], "I (was"),
-      ("We (was / were) at the theatre yesterday.", "were", ["were"], "We")]
-S(4, K3, [M("abcde"[i], s, c, [A(c, *k)],
-            {"tur": "dytablo", "soru": "Önce ısınalım: Özne–fiil eşleşmesi doğru mu? D ya da Y seç.",
-             "ifadeler": [{"s": "I → was", "d": True}, {"s": "Timmy → weren't", "d": False}, {"s": "Alex and Tom → were", "d": True},
-                          {"s": "We → was", "d": False}, {"s": "you → were", "d": True}],
-             "aciklama": "I / he / she / Timmy → was · we / you / they / Alex and Tom → were."} if i == 0 else None,
-            kisa=f"{c} ({t.replace(' (was', '')} → {c.lower()})", tetik=[t],
-            notu="Özneye bak: I / he / she / Timmy → was · we / you / they → were." if i == 0 else None, formul="waswere")
-          for i, (s, c, k, t) in enumerate(S4)],
-  metin=["Circle the correct word. (Doğru kelimeyi daire içine al.)"])
+S(4, K3, "4. Circle the correct word. (Doğru kelimeyi daire içine al.)",
+  {"tur": "doldur", "soru": "Doğru kelimeye dokun (kâğıtta onu daire içine alacaksın).", "harfler": True,
+   "cumleler": [{"c": "Timmy ___ at party last night.", "b": [B("wasn't", sec=["wasn't", "weren't"])]},
+                {"c": "Alex and Tom ___ in the school garden ten minutes ago.", "b": [B("were", sec=["was", "were"])]},
+                {"c": "___ you in Antalya five years ago?", "b": [B("Were", sec=["Was", "Were"])]},
+                {"c": "I ___ born in Ağrı in 2001.", "b": [B("was", sec=["was", "were"])]},
+                {"c": "We ___ at the theatre yesterday.", "b": [B("were", sec=["was", "were"])]}],
+   "aciklama": "I / he / she / Timmy → was · we / you / they / Alex and Tom → were."},
+  "a wasn't · b were · c Were · d was · e were")
 
-S(5, K3, [
-    M("a", "1992:", "nineteen ninety-two", [A("nineteen", "nineteen"), A("ninety-two", "ninety-two", "ninety two", "ninetytwo")],
-      SEC("Önce ısınalım: 1992 nasıl yazılır?", ["nineteen ninety-two", "nine nine two", "nineteen ninety-twelve", "ninety nineteen-two"], "İkişer ikişer: 19 | 92 → nineteen ninety-two."),
-      tetik=["1992"], notu="Yılı ikişer ikişer oku: 19 | 92 → nineteen ninety-two.", formul="yil"),
-    M("b", "2019:", "twenty nineteen", [A("twenty / two thousand (and)", "twenty", "two thousand"), A("nineteen", "nineteen")],
-      SEC("Önce ısınalım: 2019 nasıl yazılır?", ["twenty nineteen", "two nineteen", "twelve nineteen", "twenty ninety"], "İkişer ikişer: 20 | 19 → twenty nineteen. (two thousand and nineteen da doğru)"),
-      tetik=["2019"], formul="yil"),
-    M("c", "2000:", "two thousand", [A("two thousand", "two thousand")],
-      SEC("Önce ısınalım: 2000 nasıl yazılır?", ["two thousand", "twenty hundred", "two hundred", "twenty zero"], "2000 → two thousand (iki bin)."),
-      tetik=["2000"], formul="yil")],
-  metin=["Write the years in words. (Yılları yazıyla yaz.)"])
+S(5, K3, "5. Write the years in words. (Yılları yazıyla yaz.)",
+  {"tur": "doldur", "soru": "Yılı İngilizce kelimelerle yaz.",
+   "cumleler": [{"c": "1992: ___", "b": [B("nineteen ninety-two", "nineteen ninety two")]},
+                {"c": "2019: ___", "b": [B("twenty nineteen", "twenty-nineteen", "two thousand and nineteen", "two thousand nineteen")]},
+                {"c": "2000: ___", "b": [B("two thousand")]}],
+   "aciklama": "Yıllar ikişer ikişer okunur: 19 | 92 → nineteen ninety-two, 20 | 19 → twenty nineteen. 2000 → two thousand."},
+  "nineteen ninety-two · twenty nineteen · two thousand")
 
-S6 = [("a", "Amanda ___ . (play tennis)", "always plays tennis", "always", "plays tennis", "play tennis",
-       {"tur": "eslestir", "soru": "Önce ısınalım: Dolu yaprak sayısını sıklık zarfıyla eşleştir.",
-        "ciftler": [{"sol": "4 dolu yaprak", "sag": "always"}, {"sol": "3 dolu yaprak", "sag": "usually"}, {"sol": "2 dolu yaprak", "sag": "often"},
-                    {"sol": "1 dolu yaprak", "sag": "sometimes"}, {"sol": "yalnız çizgi", "sag": "never"}],
-        "aciklama": "4 always, 3 usually, 2 often, 1 sometimes, 0 dolu rarely, yalnız çizgi never. Amanda–tennis: 4 dolu → always (kâğıtta örnek)."}),
-      ("b", "Amanda ___ . (go cycling)", "often goes cycling", "often", "goes cycling", "go cycling",
-       SEC("Önce ısınalım: Amanda–cycling 2 dolu yaprak. Hangisi doğru?", ["often goes cycling", "goes often cycling", "often go cycling", "sometimes goes cycling"], "2 dolu → often; zarf fiilden önce, go → goes.")),
-      ("c", "Amanda ___ . (do powerlifting)", "usually does powerlifting", "usually", "does powerlifting", "do powerlifting",
-       SEC("Önce ısınalım: Amanda–powerlifting 3 dolu yaprak. Hangisi doğru?", ["usually does powerlifting", "does usually powerlifting", "usually do powerlifting", "usually doing powerlifting"], "3 dolu → usually; zarf fiilden önce, fiile -s: does.")),
-      ("d", "Patty ___ . (play golf)", "usually plays golf", "usually", "plays golf", "play golf",
-       SEC("Önce ısınalım: Patty–golf 3 dolu yaprak. Hangisi doğru?", ["usually plays golf", "usually play golf", "plays usually golf", "always plays golf"], "3 dolu → usually; play → plays.")),
-      ("e", "Patty ___ . (go cycling)", "never goes cycling", "never", "goes cycling", "go cycling",
-       SEC("Önce ısınalım: Patty–cycling yalnız çizgi, hiç dolu yaprak yok. Hangisi doğru?", ["never goes cycling", "never go cycling", "goes never cycling", "rarely goes cycling"], "Yalnız çizgi → never; go → goes.")),
-      ("f", "Stephen ___ . (play tennis)", "sometimes plays tennis", "sometimes", "plays tennis", "play tennis", None),
-      ("g", "Stephen ___ . (play golf)", "always plays golf", "always", "plays golf", "play golf", None)]
-S(6, K4, [M(h, s, c, [A(z, z), AS(f"{fiil} (zarftan sonra, -s ile)", [z], [fiil])], isk, tetik=[f"({t})"],
-            notu="Yaprakları say → zarf + fiil-s: Amanda often goes cycling." if i == 0 else None, formul="siklik")
-          for i, (h, s, c, z, fiil, t, isk) in enumerate(S6)],
-  metin=["Look at the table and fill in the blanks. (Tabloya bak, boşlukları doldur.)",
-         "Yonca: 4 dolu yaprak always · 3 usually · 2 often · 1 sometimes · 0 dolu rarely · yalnız çizgi never",
-         "a şıkkı kâğıtta örnek olarak çözülü: Amanda always plays tennis. Tabloda yalnız sorulan kutular var."],
-  svg=Z.tablo6())
+S6C = [("Amanda ___ . (go cycling)", "often goes cycling"), ("Amanda ___ . (do powerlifting)", "usually does powerlifting"),
+       ("Patty ___ . (play golf)", "usually plays golf"), ("Patty ___ . (go cycling)", "never goes cycling"),
+       ("Stephen ___ . (play tennis)", "sometimes plays tennis"), ("Stephen ___ . (play golf)", "always plays golf")]
+S(6, K4, "6. Look at the table and fill in the blanks. (Tabloya bak, boşlukları doldur.)",
+  {"tur": "doldur", "soru": "Yaprakları say, zarf + fiil-s yaz. (a kâğıtta örnek: Amanda always plays tennis.)", "harfler": True, "harfBas": 2,
+   "cumleler": [{"c": c, "b": [B(v)]} for c, v in S6C],
+   "aciklama": "4 dolu yaprak always, 3 usually, 2 often, 1 sometimes, 0 dolu rarely, yalnız çizgi never. Zarf fiilden önce, fiile -s: goes, does, plays."},
+  "b often goes cycling · c usually does powerlifting · d usually plays golf · e never goes cycling · f sometimes plays tennis · g always plays golf",
+  metin=["Yonca: 4 dolu yaprak always · 3 usually · 2 often · 1 sometimes · 0 dolu rarely · yalnız çizgi never",
+         "a. Amanda always plays tennis. (kâğıtta örnek olarak yazılı)"], svg=Z.tablo6())
 
-V2M = [V2[0:2], V2[2:4], V2[4:6], V2[6:8], V2[8:10]]
-YAN = {"went": "goed", "swam": "swimmed", "gave": "gived", "did": "doed", "became": "becomed", "heard": "heared", "left": "leaved",
-       "knew": "knowed", "saw": "seed", "understood": "understanded"}
-KOK_TR = {"gitmek": ["git"], "yüzmek": ["yüz"], "vermek": ["ver"], "yapmak": ["yap"], "olmak": ["ol"], "duymak": ["duy", "işit"],
+KOK_TR = {"gitmek": ["git"], "yüzmek": ["yüz"], "vermek": ["ver"], "yapmak": ["yap", "et"], "olmak": ["ol"], "duymak": ["duy", "işit"],
           "ayrılmak": ["ayrıl", "terk", "bırak", "çık"], "bilmek": ["bil"], "görmek": ["gör"], "anlamak": ["anla"]}
-S(7, K3, [M("abcde"[i], f"{a[0].capitalize()} ve {b[0].capitalize()}: geçmiş hâlini (V2) ve anlamını yaz.",
-            f"{a[0]} → {a[1]} ({a[2]}), {b[0]} → {b[1]} ({b[2]})",
-            [A(f"{a[1]}", a[1]), A(f"{a[2]}", *KOK_TR[a[2]]), A(f"{b[1]}", b[1]), A(f"{b[2]}", *KOK_TR[b[2]])],
-            {"tur": "bosluk", "soru": "Önce ısınalım: Geçmiş hâlini (V2) seç.", "cumleler": [{"c": f"{a[0]} → ___", "cevap": a[1]}, {"c": f"{b[0]} → ___", "cevap": b[1]}],
-             "havuz": [YAN[a[1]], YAN[b[1]]], "aciklama": f"Düzensiz fiiller: {a[0]} → {a[1]}, {b[0]} → {b[1]}. (-ed almaz)"},
-            kisa=f"{a[1]} ({a[2]}), {b[1]} ({b[2]})", tetik=["geçmiş hâlini (V2) ve anlamını"],
-            notu="V1 → V2 + Türkçe anlam: go → went (gitmek)." if i == 0 else None, formul="v2")
-          for i, (a, b) in enumerate(V2M)],
-  metin=["Write the meanings and past forms of the verbs below. (Fiillerin anlamlarını ve geçmiş hâllerini yaz.)",
-         "1. Go · 2. Swim · 3. Give · 4. Do · 5. Become · 6. Hear · 7. Leave · 8. Know · 9. See · 10. Understand"])
+S(7, K3, "7. Write the meanings and past forms of the verbs below. (Fiillerin geçmiş hâlini ve anlamını yaz.)",
+  {"tur": "doldur", "soru": "Her fiilin PAST (V2) hâlini ve Türkçe ANLAM'ını yaz.",
+   "cumleler": [{"c": f"{v1.capitalize()} → PAST (V2): ___ ANLAM: ___", "b": [B(v2), B(tr, k=KOK_TR[tr])]} for v1, v2, tr in V2],
+   "aciklama": "go-went (gitmek), swim-swam (yüzmek), give-gave (vermek), do-did (yapmak), become-became (olmak), hear-heard (duymak), leave-left (ayrılmak), know-knew (bilmek), see-saw (görmek), understand-understood (anlamak)."},
+  "went, swam, gave, did, became, heard, left, knew, saw, understood")
 
-S(8, K2, [
-    M("a", "Which one is TRUE? (Tabloya göre hangisi DOĞRU? Şıkkın harfini ve cümlesini yaz.)", "D) Antalya was hotter than Ağrı yesterday.",
-      [A("D şıkkı: Antalya was hotter than Ağrı", "antalya was hotter", "d)")],
-      {"tur": "dytablo", "soru": "Önce ısınalım: Tablodaki sayılara bak. Her cümle Doğru (D) mu, Yanlış (Y) mı?",
-       "ifadeler": [{"s": "A) Antalya is colder than İstanbul today.", "d": False}, {"s": "B) Ağrı was hotter than İstanbul yesterday.", "d": False},
-                    {"s": "C) İstanbul is colder than Ağrı today.", "d": False}, {"s": "D) Antalya was hotter than Ağrı yesterday.", "d": True}],
-       "aciklama": "A: bugün 34 > 20, Antalya daha sıcak. B: dün 11 < 24, Ağrı daha soğuk. C: bugün 20 > 15, İstanbul daha sıcak. D: dün 29 > 11 → doğru."},
-      kisa="D) Antalya was hotter than Ağrı yesterday.", tetik=["TRUE"],
-      notu="Sayıları karşılaştır: dün → was, bugün → is; “Once a week” → How often.", formul="comp"),
-    M("b", "Emma: ______? Jack: Once a week. What is the best question according to the answer? (Şıkkın harfini ve soruyu yaz.)", "C) How often do you train?",
-      [A("C şıkkı: How often", "how often")],
-      {"tur": "dytablo", "soru": "Önce ısınalım: “Once a week” (haftada bir) cevabına uyan soru hangisi? Uyan D, uymayan Y.",
-       "ifadeler": [{"s": "A) Do you like indoor sports?", "d": False}, {"s": "B) Why do you play football?", "d": False},
-                    {"s": "C) How often do you train?", "d": True}, {"s": "D) Where do you play volleyball?", "d": False}],
-       "aciklama": "Once a week bir sıklık; sıklık “How often” ile sorulur. Why → Because, Where → yer, Do you …? → Yes/No."},
-      kisa="C) How often do you train?", tetik=["Once a week"], formul="siklik")],
-  metin=["Choose the correct options. (Doğru seçenekleri seç.)", "Sol kutu: tablo (City · Yesterday · Today). Which one is TRUE?", "Sağ kutu: Emma: ______? Jack: Once a week. What is the best question according to the answer?"],
-  svg=Z.tablo8())
+S(8, K2, "8. Choose the correct options. Which one is TRUE? (Tabloya göre hangisi DOĞRU?)",
+  {"tur": "secim", "sabit": True, "soru": "Tablodaki sayılara bak. Hangisi DOĞRU?",
+   "secenekler": ["Antalya is colder than İstanbul today.", "Ağrı was hotter than İstanbul yesterday.", "İstanbul is colder than Ağrı today.", "Antalya was hotter than Ağrı yesterday."],
+   "dogru": 3, "aciklama": "Dün Antalya 29, Ağrı 11 → D doğru. A: bugün 34 > 20, B: dün 11 < 24, C: bugün 20 > 15 olduğu için yanlış."},
+  "D) Antalya was hotter than Ağrı yesterday.", svg=Z.tablo8(),
+  ek=[{"harf": "b", "soru": "Emma: ______? Jack: Once a week. What is the best question according to the answer?",
+       "iskele": {"tur": "secim", "sabit": True, "soru": "“Once a week” (haftada bir) cevabına en uygun soru hangisi?",
+                  "secenekler": ["Do you like indoor sports?", "Why do you play football?", "How often do you train?", "Where do you play volleyball?"],
+                  "dogru": 2, "aciklama": "Once a week bir sıklık; sıklık “How often” ile sorulur. Why → Because, Where → yer, Do you …? → Yes/No."},
+       "kisaCevap": "C) How often do you train?"}])
 
 # =====================================================================
 # HOOT'UN HATASI (aynı sorulara Ela'nın yapabileceği hatalar; eski biçim)

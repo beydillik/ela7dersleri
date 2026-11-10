@@ -2332,8 +2332,8 @@
     }
     return { ok: false };
   };
-  const sinavParca = q => q.tur === "dytablo" ? q.ifadeler.length : q.tur === "bosluk" ? q.cumleler.length : q.tur === "eslestir" ? q.ciftler.length : 1;
-  const sinavDolu = (q, c) => c !== undefined && c !== null && c !== "" && (typeof c !== "object" || Object.values(c).filter(x => x !== "" && x !== null && x !== undefined).length >= sinavParca(q));
+  const sinavParca = q => q.tur === "grupla" ? q.kutular.reduce((t, b) => t + b.uyeler.length, 0) : q.tur === "doldur" ? 1 : q.tur === "dytablo" ? q.ifadeler.length : q.tur === "bosluk" ? q.cumleler.length : q.tur === "eslestir" ? q.ciftler.length : 1;
+  const sinavDolu = (q, c) => q.tur === "doldur" ? !!c && Object.values(c).some(x => String(x || "").trim()) : c !== undefined && c !== null && c !== "" && (typeof c !== "object" || Object.values(c).filter(x => x !== "" && x !== null && x !== undefined).length >= sinavParca(q));
   function sinavPuan(it, c) {
     const q = it.q;
     if (c === undefined || c === null || c === "" || (typeof c === "object" && !Object.keys(c).length)) return { r: 0, bos: true, kismi: 0 };
@@ -2342,14 +2342,42 @@
     if (q.tur === "dytablo") return parca(q.ifadeler.filter((x, i) => c[i] === x.d).length, q.ifadeler.length);
     if (q.tur === "bosluk") return parca(q.cumleler.filter((x, i) => c[i] === x.cevap).length, q.cumleler.length);
     if (q.tur === "eslestir") return parca(q.ciftler.filter((x, i) => +c[i] === i).length, q.ciftler.length);
+    if (q.tur === "grupla") { const l = q.kutular.flatMap((b, bi) => b.uyeler.map(m => [m, bi])); return parca(l.filter(([m, bi]) => c[m] === bi).length, l.length); }
+    if (q.tur === "doldur") { const l = ddBosluklar(q); return parca(l.filter(x => ddDogru(x.b, c[x.a])).length, l.length); }
     if (q.tur === "kisa") { const k = kisaKontrol(q, c); return { r: k.ok ? 1 : 0, yazim: k.yazim }; }
     return { r: c === q.dogru ? 1 : 0 };
   }
   const tabloHTML = t => t ? `<div class="tablo-wrap"><table class="pasaj-tablo">${t.baslik ? `<caption>${esc(t.baslik)}</caption>` : ""}<thead><tr>${t.basliklar.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${t.satirlar.map(r => `<tr>${r.map(x => `<td>${rx(String(x))}</td>`).join("")}</tr>`).join("")}</tbody></table></div>` : "";
   const metinHTML = q => gorselHTML(q) + (q.metin || q.tablo ? `<div class="pasaj">${q.metinBaslik ? `<div class="pasaj-bas">${esc(q.metinBaslik)}</div>` : ""}${q.metin ? paragraflar(q.metin).map(p => `<p class="pasaj-p">${p.map(c => rx(cumleMetin(c))).join(" ")}</p>`).join("") : ""}${tabloHTML(q.tablo)}</div>` : "");
 
+  // Yazılı için kâğıt biçimli iki tür (İngilizce Own It d1y1, 10 Kasım 2026; başka veri kullanmıyor):
+  // "grupla": {soru, kutular:[{etiket, uyeler}]} kelimeleri kutulara sürükle ya da dokun-yerleştir; cevap {kelime: kutu no}.
+  // "doldur": {soru, cumleler:[{c: "… ___ …", b:[{cevap, kabul?, k?, secenekler?}]}]} her ___ bir boşluk; secenekler varsa
+  //   daire içine alma düğmeleri, yoksa yazı kutusu; k = kabul edilen kökler (Türkçe anlam). Cevap {"i.j": değer}.
+  const ddSade = v => String(v || "").replace(/İ/g, "i").toLowerCase().replace(/[’‘`´]/g, "'").replace(/[ıçğöşüâ]/g, h => "icgosua"["ıçğöşüâ".indexOf(h)]).replace(/[.!?\s]+$/, "").replace(/\s+/g, " ").trim();
+  const ddDogru = (b, v) => { const n = ddSade(v); return !!n && ((b.k || []).some(k => n.includes(ddSade(k))) || [b.cevap, ...(b.kabul || [])].some(x => ddSade(x) === n)); };
+  const ddBosluklar = q => q.cumleler.flatMap((x, i) => x.b.map((b, j) => ({ a: `${i}.${j}`, b })));
+  const gruplaHTML = (q, c, sel) => { c = c || {}; const tum = q.kelimeler || q.kutular.flatMap(b => b.uyeler);
+    const chip = m => `<span class="chip pick gr-chip${sel === m ? " sel" : ""}" role="button" tabindex="0" draggable="true" data-gm="${esc(m)}">${esc(m)}</span>`;
+    return `<div class="q sinav-q"><p class="q-text">${rx(q.soru || "Kelimeleri doğru kutuya yerleştir.")}</p>
+      <div class="pool chips gr-pool" data-gk="-1">${tum.filter(m => c[m] === undefined).map(chip).join("") || `<small class="gr-bos">Hepsi yerleştirildi. Kontrol etmeden önce kutulara bir daha bak.</small>`}</div>
+      <div class="boxes gr-boxes">${q.kutular.map((b, bi) => `<div class="box gr-box${sel ? " target" : ""}" data-gk="${bi}" role="button" tabindex="0"><div class="lbl">${esc(b.etiket)}</div><div class="chips">${tum.filter(m => c[m] === bi).map(chip).join("")}</div></div>`).join("")}</div>
+      <p class="ek">Bir kelimeye dokun, sonra kutusuna dokun (ya da sürükle). Yanlış koyduysan kelimeye dokunup geri al.</p></div>`; };
+  const ddSatir = (x, i, c, kontrol) => { let j = -1;
+    return x.c.split("___").map(esc).reduce((h, parca, n) => { if (!n) return parca; j++; const b = x.b[j], a = `${i}.${j}`, v = (c || {})[a];
+      if (kontrol) { const ok = ddDogru(b, v); return h + (ok ? `<b class="kd-dogru dd-k">${esc(v)}</b>` : `${v ? `<s class="kd-yanlis">${esc(v)}</s> ` : `<span class="kd-bos">boş</span> `}<b class="kd-dogru dd-k">${esc(b.cevap)}</b>`) + parca; }
+      const kutu = b.secenekler ? `<span class="dd-daireler">${b.secenekler.map((o, n2) => `${n2 ? `<span class="dd-ayrac">/</span>` : ""}<button type="button" class="dd-daire" data-dd="${a}" data-v="${esc(o)}" aria-pressed="${v === o}">${esc(o)}</button>`).join("")}</span>`
+        : `<input class="dd-in" data-dd="${a}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(v || "")}" size="${Math.max(6, Math.min(14, (b.cevap || "").length + 2))}" aria-label="Boşluk">`;
+      return h + kutu + parca; }, ""); };
+  const doldurHTML = (q, c, kontrol) => `<div class="q sinav-q${kontrol ? " kontrol" : ""}"><p class="q-text">${rx(q.soru || "Boşlukları doldur.")}</p>
+      ${q.kutu ? `<div class="kelime-havuz dd-kutu"><b>${esc(q.kutuBaslik || "Box")}:</b> ${q.kutu.map(w => `<span class="chip">${esc(w)}</span>`).join("")}</div>` : ""}
+      <ol class="bosluk-liste dd-liste${kontrol ? " kd-liste" : ""}"${q.harfler ? ` type="a" start="${q.harfBas || 1}"` : ""}>${q.cumleler.map((x, i) => { const ok = kontrol && x.b.every((b, j) => ddDogru(b, (c || {})[`${i}.${j}`]));
+        return `<li class="${kontrol ? (ok ? "kd-ok" : "kd-no") : ""}">${kontrol ? (ok ? `<b class="ok-i" aria-label="doğru">✓</b> ` : `<b class="no-i" aria-label="yanlış">✗</b> `) : ""}${ddSatir(x, i, c, kontrol)}</li>`; }).join("")}</ol></div>`;
+
   function sinavSoruHTML(it, c) {
     const q = it.q;
+    if (q.tur === "grupla") return gruplaHTML(q, c, it.sel);
+    if (q.tur === "doldur") return doldurHTML(q, c, false);
     if (q.tur === "dy") return `<div class="q sinav-q"><p class="q-text">Aşağıdaki ifade doğru mu, yanlış mı?</p>${gorselHTML(q)}<div class="dy-ifade">${rx(q.ifade)}</div>
       <div class="opts dy-opts"><button class="opt" data-v="1" aria-pressed="${c === true}">Doğru</button><button class="opt" data-v="0" aria-pressed="${c === false}">Yanlış</button></div></div>`;
     if (q.tur === "dytablo") return `<div class="q sinav-q">${metinHTML(q)}<p class="q-text">${rx(q.soru || "Her ifade için Doğru ya da Yanlış seç.")}</p>
@@ -2386,6 +2414,10 @@
     if (q.tur === "eslestir") return `<div class="q sinav-q kontrol"><p class="q-text">${rx(q.soru || "Kavramları açıklamalarıyla eşleştir.")}</p>
       <ul class="kd-liste kd-eslestir">${q.ciftler.map((x, i) => { const ok = !bosMu(o[i]) && +o[i] === i;
         return `<li class="${ok ? "kd-ok" : "kd-no"}">${isr(ok)} <span><b>${rx(x.sol)}</b> → ${rx(x.sag)}${ok ? "" : `<small>Senin seçtiğin: ${bosMu(o[i]) ? "boş" : rx(q.ciftler[+o[i]].sag)}</small>`}</span></li>`; }).join("")}</ul></div>`;
+    if (q.tur === "doldur") return doldurHTML(q, c, true);
+    if (q.tur === "grupla") { const l = q.kutular.flatMap((b, bi) => b.uyeler.map(m => [m, bi]));
+      return `<div class="q sinav-q kontrol"><p class="q-text">${rx(q.soru || "Kelimeleri doğru kutuya yerleştir.")}</p><div class="boxes gr-boxes">${q.kutular.map((b, bi) => `<div class="box gr-box"><div class="lbl">${esc(b.etiket)}</div><div class="chips">${b.uyeler.map(m => `<span class="chip ${o[m] === bi ? "okc" : "gr-no"}">${o[m] === bi ? "✓" : "✗"} ${esc(m)}</span>`).join("")}</div></div>`).join("")}</div>
+        ${l.some(([m, bi]) => o[m] !== bi) ? `<p class="sg-not">✗ olanları yanlış kutuya koymuştun; burada doğru kutularında görünüyorlar.</p>` : ""}</div>`; }
     if (q.tur === "kisa") return `<div class="q sinav-q kontrol">${metinHTML(q)}<p class="q-text">${rx(q.soru)}</p>
       <div class="kd-kisa ${p.r ? "kd-ok" : "kd-no"}">${isr(!!p.r)} Yazdığın: <b>${esc(bosMu(c) ? "boş" : c)}</b></div></div>`;
     return `<div class="q sinav-q kontrol">${metinHTML(q)}<p class="q-text">${soruMetni(q)}</p>
@@ -2405,6 +2437,29 @@
   // Soru girdilerini bağla (şık, D/Y, seçme kutusu, kısa cevap); al() o anki cevap, yaz(v) yeni cevap
   function sinavGirdi(ss, q, al, yaz) {
     const obj = () => ({ ...(al() || {}) });
+    if (q.tur === "grupla") {
+      let sel = null;
+      const ciz = () => { ss.innerHTML = gruplaHTML(q, al(), sel); };
+      const koy = (m, bi) => { const c = obj(); if (bi < 0) delete c[m]; else c[m] = bi; sel = null; yaz(c); ciz(); };
+      // Havuzdaki kelime: seç (ya da seçimi değiştir). Seçiliyken kutuya (içindeki bir kelimeye de) dokunmak: oraya koy.
+      // Seçim yokken kutudaki kelimeye dokunmak: havuza geri al.
+      ss.onclick = e => { const ch = e.target.closest("[data-gm]"), bx = e.target.closest("[data-gk]"), gk = bx ? +bx.dataset.gk : null;
+        if (ch && gk === -1) { sel = sel === ch.dataset.gm ? null : ch.dataset.gm; return ciz(); }
+        if (sel && bx) return koy(sel, gk);
+        if (ch && (al() || {})[ch.dataset.gm] !== undefined) return koy(ch.dataset.gm, -1); };
+      ss.ondragstart = e => { const ch = e.target.closest("[data-gm]"); if (ch) e.dataTransfer.setData("text/plain", ch.dataset.gm); };
+      ss.ondragover = e => { if (e.target.closest("[data-gk]")) e.preventDefault(); };
+      ss.ondrop = e => { const bx = e.target.closest("[data-gk]"), m = e.dataTransfer.getData("text/plain"); if (bx && m) { e.preventDefault(); koy(m, +bx.dataset.gk); } };
+      return;
+    }
+    if (q.tur === "doldur") {
+      ss.onclick = e => { const d = e.target.closest(".dd-daire"); if (!d) return; const c = obj(); c[d.dataset.dd] = d.dataset.v;
+        $$(`.dd-daire[data-dd="${d.dataset.dd}"]`, ss).forEach(x => x.setAttribute("aria-pressed", x === d)); yaz(c); };
+      ss.oninput = e => { const i = e.target.closest(".dd-in"); if (!i) return; const c = obj(); c[i.dataset.dd] = i.value; yaz(c); };
+      ss.onkeydown = e => { const i = e.target.closest(".dd-in"); if (!i || e.key !== "Enter") return; e.preventDefault(); const l = $$(".dd-in", ss), n = l.indexOf(i); if (l[n + 1]) l[n + 1].focus(); };
+      const ilk = $(".dd-in", ss); if (ilk && !ilk.value) ilk.focus({ preventScroll: true });
+      return;
+    }
     ss.onclick = e => {
       const o = e.target.closest(".opt"); if (o) { $$(".opt", ss).forEach(x => x.setAttribute("aria-pressed", x === o)); yaz(q.tur === "dy" ? o.dataset.v === "1" : +o.dataset.o); return; }
       const b = e.target.closest(".dy-b"); if (b) { const c = obj(); c[b.dataset.r] = b.dataset.v === "1"; $$(`.dy-b[data-r="${b.dataset.r}"]`, ss).forEach(x => x.setAttribute("aria-pressed", x === b)); yaz(c); }
@@ -2429,7 +2484,7 @@
         const ileri = $("[data-ileri]", root), gitler = $$("[data-git]", root);
         ileri.onclick = () => { tts.stop(); a.onIleri(); };
         gitler.forEach(b => b.onclick = () => gitKonu(b.dataset.git, b.dataset.kv));
-        if (!p.r && ayar().hataDur) hataDurak($("#sgBox", root), { neden: a.neden(), metin: `${q.aciklama || ""} ${sinavDogruYazi(q)}`, soru: q.soru || q.ifade || q.kok || "", kavram: q.kavram, tur: "sinav-" + q.tur }, [ileri, ...gitler], n => a.onNeden(n));
+        if (!p.r && ayar().hataDur && !a.beklemesiz) hataDurak($("#sgBox", root), { neden: a.neden(), metin: `${q.aciklama || ""} ${sinavDogruYazi(q)}`, soru: q.soru || q.ifade || q.kok || "", kavram: q.kavram, tur: "sinav-" + q.tur }, [ileri, ...gitler], n => a.onNeden(n));
         return;
       }
       const kb = $("[data-kontrol]", root);
@@ -3309,11 +3364,11 @@
       KAYIT.olay("yazili-madde", { soru: kisa(m.soru), kazanim: q.kazanim, tur: "yazili-" + ctx.tur, oran: +r.toFixed(2), otomatik: oto === undefined ? undefined : +oto.toFixed(2) });
     };
     const iskele = (kutu, m) => {
-      const t = m.iskele, it = { q: t.tur === "secim" ? karistir(t) : { ...t } };
+      const t = m.iskele, it = { q: t.tur === "secim" && !t.sabit ? karistir(t) : { ...t } };
       if (t.tur === "bosluk") it.havuz = shuffle([...new Set([...t.cumleler.map(x => x.cevap), ...(t.havuz || [])])]);
       if (t.tur === "eslestir") it.perm = shuffle(t.ciftler.map((x, j) => j));
       sinavTek(kutu, { it, ust: "", kicker: m.cevap ? `${m.harf}) Isınma · önce seçerek` : `${m.harf}) Cevapla`, ileriEt: m.cevap ? "Şimdi yazarak cevapla →" : st.i < q.maddeler.length - 1 ? "Sonraki madde →" : "Sonucu gör",
-        konuBtn: false, cevap: () => st.ic, kontrol: () => st.ik, neden: () => st.neden,
+        konuBtn: false, beklemesiz: !!YZ.d.beklemesiz, cevap: () => st.ic, kontrol: () => st.ik, neden: () => st.neden,
         onYaz: v => st.ic = v, onKontrol: p => { st.ik = true; st.ip = p; }, onNeden: n => st.neden = n,
         onIleri: () => { if (m.cevap) { st.faz = "yaz"; ciz(); $("#yzM", root).scrollIntoView({ block: "nearest", behavior: "smooth" }); } else { kaydet(m, st.ip.r ? 1 : st.ip.kismi || 0); ileri(); } } });
     };
