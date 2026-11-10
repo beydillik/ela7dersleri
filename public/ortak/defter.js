@@ -2972,7 +2972,7 @@
       <div class="yz-menu-grup">Araçlar</div><ol>
         <li><button class="yz-mi" data-git="eksik" ${ne === "eksik" ? 'aria-current="page"' : ""}><span class="yz-mno ikon">✎</span><span>Yanlış Defterim</span>${yzEksikSay() ? `<span class="yz-mini-y orta">${yzEksikSay()}</span>` : ""}</button></li>
         ${yzKartVar() ? `<li><button class="yz-mi" data-git="kart" ${ne === "kart" ? 'aria-current="page"' : ""}><span class="yz-mno ikon">◧</span><span>Sınav Sabahı Kartları</span></button></li>` : ""}
-        ${mi("prova", "✍", "Prova Yazılıları", D.provalar.every(p => (k.prova[p.id] || []).length), D.provalar.map(p => { const l = k.prova[p.id] || []; return al(`prova:${p.id}`, p.ad, `<span class="yz-mini-y${l.length ? "" : " bos"}">${l.length ? l[l.length - 1].puan : "–"}</span>`, alt === p.id); }).join(""))}
+        ${!D.provalar.length ? "" : mi("prova", "✍", "Prova Yazılıları", D.provalar.every(p => (k.prova[p.id] || []).length), D.provalar.map(p => { const l = k.prova[p.id] || []; return al(`prova:${p.id}`, p.ad, `<span class="yz-mini-y${l.length ? "" : " bos"}">${l.length ? l[l.length - 1].puan : "–"}</span>`, alt === p.id); }).join(""))}
         <li><button class="yz-mi" data-git="ozet" ${ne === "ozet" ? 'aria-current="page"' : ""}><span class="yz-mno ikon">☰</span><span>Sınav Öncesi Özet</span></button></li>
       </ol></nav>
       <div class="yz-menu-alt"><button data-defter>← Ders defterine dön</button></div>`;
@@ -3008,7 +3008,7 @@
       ...(yzTekrarVar() ? [["tekrar", "Konu Tekrarı", (() => { const l = D.kazanimlar.filter(z => yzTekrarSira(z.kod).length), b = l.filter(z => (k.tekrar || {})[z.kod]).length; return `${b} / ${l.length} konu · ısınma + MEB soruları + benzer sorular`; })(), D.kazanimlar.every(z => (k.tekrar || {})[z.kod] || !yzTekrarSira(z.kod).length)]] : []),
       ...(!yzTekrarVar() && yzKartVar() ? [["kart", "Kısa Cevap Kartları", `${yzKartOturdu(k)} / ${yzKartlar().length} kısa cevap oturdu · her gün bir tur`, yzKartOturdu(k) === yzKartlar().length]] : []),
       ["kuark", yzKuarkAd(), k.kuark ? `Son tur: ${k.kuark.d} / ${k.kuark.n}` : yzDuzeltVar() ? `${yzBot()} yarım ya da yanlış yazdı; düzelt, tamamla` : `${yzBot()} yanlış cevap yazdı, hatasını bul`, !!k.kuark],
-      ...(yzTekrarVar() ? [] : [["prova", "Prova Yazılıları", sonProva ? `${provaSon.length} / ${D.provalar.length} prova · son puan ${sonProva.s.puan}` : `${D.provalar.length} deneme · gerçek yazılı gibi ${D.sure || 40} dk`, provaSon.length === D.provalar.length]])
+      ...(yzTekrarVar() || !D.provalar.length ? [] : [["prova", "Prova Yazılıları", sonProva ? `${provaSon.length} / ${D.provalar.length} prova · son puan ${sonProva.s.puan}` : `${D.provalar.length} deneme · gerçek yazılı gibi ${D.sure || 40} dk`, provaSon.length === D.provalar.length]])
     ];
     const sirada = Math.max(0, adim.findIndex(a => !a[3]));
     root.innerHTML = `${yzUst("Yazılıya Hazırlık")}<section>${robotDer(yzHtml(D.giris), "buyuk")}</section>
@@ -3464,10 +3464,10 @@
       root.innerHTML = `${yzUst(ad)}<div class="stage"><div class="kicker">${esc(ad)} · Sonuç</div><h3>${d === liste.length ? "Öğretmen gibi okudun!" : "Tur bitti!"}</h3>
         ${robotDer(yeni ? "Yazılıda kendi cevabına da böyle bak: bilgi doğru mu, soru ne istiyorsa hepsini yazdın mı, “çünkü” var mı?" : "Hata bulmak dikkat ister, iyi çalıştın. Yazılıda kendi cevabını da böyle kontrol et.")}
         <div class="done-stats"><div class="stat"><b>${ilk}</b><span>ilk denemede buldun</span></div><div class="stat"><b>${d - ilk}</b><span>ipucuyla buldun</span></div>${yeni ? `<div class="stat"><b>${yazdi} / ${liste.length}</b><span>tam cevabı kendin tamamladın</span></div>` : `<div class="stat"><b>${liste.length - d}</b><span>birlikte öğrendik</span></div>`}</div>
-        <div class="row"><button class="btn" data-tekrar>Yeni tur</button><button class="btn primary" data-prova>${yzTekrarVar() ? "Yanlış Defterim →" : "Prova Yazılıları →"}</button></div></div>`;
+        <div class="row"><button class="btn" data-tekrar>Yeni tur</button><button class="btn primary" data-prova>${yzTekrarVar() || !YZ.d.provalar.length ? "Yanlış Defterim →" : "Prova Yazılıları →"}</button></div></div>`;
       yzAnaBagla(root);
       $("[data-tekrar]", root).onclick = () => yzKuark(root);
-      $("[data-prova]", root).onclick = () => yzGit(root, yzTekrarVar() ? "eksik" : "prova");
+      $("[data-prova]", root).onclick = () => yzGit(root, yzTekrarVar() || !YZ.d.provalar.length ? "eksik" : "prova");
     };
     ciz();
   }

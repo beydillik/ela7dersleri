@@ -120,7 +120,7 @@ class Yazili:
         if q.get("kazanim") not in self.kodlar: h.append(f"{yer}: kazanım yok '{q.get('kazanim')}'")
         if not q.get("maddeler"): h.append(f"{yer}: madde yok")
         harfler = [m.get("harf") for m in q.get("maddeler", [])]
-        if harfler != list("abcdef"[:len(harfler)]): h.append(f"{yer}: harfler {harfler}")
+        if harfler != list("abcdefgh"[:len(harfler)]): h.append(f"{yer}: harfler {harfler}")
         for m in q.get("maddeler", []): self._madde(m, f"{yer}{m.get('harf')}", h, prova)
         if prova and sum(m.get("puan", 0) for m in q["maddeler"]) != q.get("puan"): h.append(f"{yer}: madde puanları toplamı ≠ {q.get('puan')}")
         if "svg" in q and '"' in q["svg"]: h.append(f"{yer}: SVG'de çift tırnak")
