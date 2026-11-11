@@ -1,0 +1,1048 @@
+{
+ "id": "d1y2",
+ "baslik": "Seçmeli İngilizce Sınavı",
+ "ders": "İngilizce (Own It)",
+ "senaryo": "Öğretmenin çalışma kâğıdı",
+ "sure": 40,
+ "tarih": null,
+ "dagilim": {
+  "Tablo": 1,
+  "Sam ve Harry": 1,
+  "Ellie, Jenny, Jeremy, Rosa": 1,
+  "Sporlar": 1,
+  "Rutinler": 1
+ },
+ "soruBaslik": "Öğretmenin Soruları",
+ "soruEtiket": "Soru",
+ "kazanimAd": "konu",
+ "ikizsiz": true,
+ "beklemesiz": true,
+ "soruGiris": "Bunlar öğretmeninin kâğıdındaki sorular, kâğıttaki sırayla. Kâğıtta ne yapacaksan burada da onu yap: metni oku, <b>tam cümleyle</b> yaz, kelimeleri kutulara yerleştir.",
+ "giris": "Öğretmeninin kâğıdındaki <b>5 bölüm</b> sınavda çıkacak. Önce 5 konu kartını oku ve boşlukları doldur. Sonra soruları sırayla çöz. En sonda Kısa Cevap Kartları ile her cevabı bir kez daha hatırla. Cevapları hep <b>tam cümleyle</b> yaz: “Sam.” değil, “Sam is older than Jane.”",
+ "kapsamDisi": [
+  "Kâğıtta olmayan her şey"
+ ],
+ "puanNotu": "Kâğıttaki puanlar: Part B 24, Part C 20, Part D 20, Part E 21. Tablo sorusunun puanı yazmıyor.",
+ "kaynakNotu": "Sorular öğretmenin kâğıdından. Cevaplar metinlerden ve tablodan; tam cümle kalıpları ve sıklık zarfları Own it! 3 WB s. 86 (adverbs of frequency).",
+ "sozluk": {
+  "plump": "tombul",
+  "wavy": "dalgalı",
+  "curly": "kıvırcık",
+  "blond": "sarı (saç)",
+  "well-built": "yapılı, iri",
+  "look alike": "birbirine benzemek",
+  "gets along well": "iyi geçinir",
+  "shyer": "daha utangaç",
+  "nervous": "gergin, sinirli",
+  "on time": "zamanında",
+  "punctual": "dakik",
+  "generous": "cömert",
+  "share": "paylaşmak",
+  "support": "desteklemek",
+  "stubborn": "inatçı",
+  "respectful": "saygılı",
+  "open-minded": "açık fikirli",
+  "tells the truth": "doğruyu söyler",
+  "lies": "yalanlar",
+  "high marks": "yüksek notlar",
+  "by accident": "kazara",
+  "change her mind": "fikrini değiştirmek",
+  "elementary school": "ilkokul"
+ },
+ "kazanimlar": [
+  {
+   "kod": "Tablo",
+   "ad": "Tablodaki bilgileri karşılaştırma sıfatlarıyla tam cümle yazar.",
+   "kisa": "Tablo: older / taller / heavier",
+   "soru": 1,
+   "soruNot": "Kâğıtta: Comparing Students (tablo)",
+   "renk": "#d9480f",
+   "konular": [
+    "u1k1"
+   ],
+   "sayfa": "Kâğıt + genel kural",
+   "svg": "<svg viewBox='0 0 440 140' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Karşılaştırma: -er than, more … than' font-family='Fredoka, Nunito, sans-serif'><rect x='40' y='48' width='50' height='70' rx='8' fill='#6fb3ff' opacity='.85'/><text x='65' y='132' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>Helen</text><text x='65' y='42' text-anchor='middle' font-size='10' font-weight='500' fill='#a3abc6'>17 yaş</text><rect x='130' y='26' width='50' height='92' rx='8' fill='#ffa26b' opacity='.85'/><text x='155' y='132' text-anchor='middle' font-size='11' font-weight='600' fill='#f5f6fa'>Sally</text><text x='155' y='20' text-anchor='middle' font-size='10' font-weight='500' fill='#a3abc6'>15 yaş</text><text x='318' y='30' text-anchor='middle' font-size='12' font-weight='700' fill='#6fb3ff'>Helen is older than Sally.</text><text x='318' y='50' text-anchor='middle' font-size='12' font-weight='700' fill='#ffa26b'>Sally is taller than Helen.</text><text x='318' y='76' text-anchor='middle' font-size='11' font-weight='500' fill='#f5f6fa'>kısa sıfat → -er than</text><text x='318' y='96' text-anchor='middle' font-size='11' font-weight='500' fill='#f5f6fa'>uzun sıfat → more … than</text><text x='318' y='116' text-anchor='middle' font-size='11' font-weight='600' fill='#f2c14e'>good → better</text></svg>",
+   "maddeler": [
+    "Tablo: <b>Jane</b> 12 yaş, 58 kg, 1.52 m · <b>Sam</b> 13 yaş, 62 kg, 1.65 m.",
+    "Age (yaş) büyük → <b>older</b> · Height (boy) büyük → <b>taller</b> · Weight (kilo) büyük → <b>heavier</b>.",
+    "Cevap kalıbı: <b>İsim + is + sıfat-er + than + diğeri.</b>",
+    "1. <b>Sam is older than Jane.</b> 2. <b>Sam is taller than Jane.</b> 3. <b>Sam is heavier than Jane.</b>",
+    "heavy → y düşer, <b>-ier</b>: heavier. Tersi: younger, shorter, lighter."
+   ],
+   "kelimeler": [
+    "age = yaş",
+    "weight = kilo",
+    "height = boy",
+    "older",
+    "taller",
+    "heavier"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Sam.",
+     "dogru": "Sam is older than Jane. (tam cümle)"
+    },
+    {
+     "yanlis": "heavyer",
+     "dogru": "heavier"
+    },
+    {
+     "yanlis": "Jane is taller.",
+     "dogru": "1.65 > 1.52 → Sam is taller than Jane."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "“Look at the table and answer the questions.” = Tabloya bak ve {soruları cevapla|tabloyu çiz}.",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "“Who is older, Jane or Sam?” = Jane mi Sam mi daha {yaşlı (büyük)|uzun|kilolu}?",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "Sam 13, Jane 12 → {Sam|Jane} is older than {Jane|Sam}.",
+     "s": "tablo"
+    },
+    {
+     "c": "1.65 m > 1.52 m → Sam is {taller|shorter} than Jane.",
+     "s": "tablo"
+    },
+    {
+     "c": "62 kg > 58 kg → Sam is {heavier|heavyer|lighter} than Jane.",
+     "s": "tablo"
+    },
+    {
+     "c": "Tam cümle: {Sam is older than Jane.|Sam.|Older.}",
+     "s": "cevap kalıbı"
+    }
+   ]
+  },
+  {
+   "kod": "Sam ve Harry",
+   "ad": "Okuduğu metindeki kişilerin görünüşünü ve kişiliğini tam cümleyle anlatır.",
+   "kisa": "Part B: Sam ve Harry",
+   "soru": 1,
+   "soruNot": "Kâğıtta: Part B (6 soru, 24 puan)",
+   "renk": "#7a5ce0",
+   "konular": [
+    "u1k1",
+    "u1k2"
+   ],
+   "sayfa": "Kâğıt, Part B",
+   "maddeler": [
+    "Soru kalıpları: <b>Who is …?</b> → “<b>Harry is …</b>” · <b>Is Sam …?</b> → “<b>Yes, he is.</b> / <b>No, he isn't.</b>”",
+    "<b>What does Harry look like?</b> = görünüşü (saç, göz, boy) · <b>What is Sam like?</b> = kişiliği (nasıl biri).",
+    "<b>Sam</b> (anlatan): short, plump, dark wavy hair, brown eyes · <b>shy, nervous, punctual, generous, kind</b> · always on time.",
+    "<b>Harry</b> (kardeşi): younger, a little taller, <b>curly blond hair, green eyes, well-built</b> · lots of friends → <b>outgoing and social</b> · not punctual.",
+    "Cevaplar: 1 <b>Sam is shorter than Harry.</b> 2 <b>He is well-built with curly blond hair and green eyes.</b> 3 <b>Harry is outgoing and social.</b>",
+    "4 <b>Yes, he is.</b> 5 <b>He is shy, nervous, punctual, generous and kind.</b> 6 <b>Sam is older than Harry.</b>"
+   ],
+   "kelimeler": [
+    "plump = tombul",
+    "wavy = dalgalı",
+    "curly = kıvırcık",
+    "blond = sarı saç",
+    "well-built = yapılı",
+    "shy = utangaç",
+    "nervous = gergin",
+    "outgoing = dışa dönük"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "What is Sam like? → He is short and plump.",
+     "dogru": "“like” = kişilik → He is shy, nervous, punctual, generous and kind."
+    },
+    {
+     "yanlis": "Who is shorter? → Harry is shorter.",
+     "dogru": "Harry is a little taller than me (Sam) → Sam is shorter than Harry."
+    },
+    {
+     "yanlis": "Is Sam a punctual person? → Yes.",
+     "dogru": "Tam cümle: Yes, he is."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "“Read the text and answer the questions in full sentences.” = Metni oku, soruları {tam cümlelerle|tek kelimeyle} cevapla.",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "“What does Harry look like?” = Harry'nin {görünüşü nasıl|kişiliği nasıl}? “What is Sam like?” = Sam {nasıl biri (kişilik)|neye benziyor}?",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "“He is a little taller than me.” (Harry) → {Sam|Harry} is shorter. “He is younger than me.” → {Sam|Harry} is older.",
+     "s": "Part B"
+    },
+    {
+     "c": "Harry: {curly blond|dark wavy} hair, {green|brown} eyes, {well-built|plump}.",
+     "s": "Part B"
+    },
+    {
+     "c": "Harry has a lot of friends → Harry is {outgoing and social|shy and nervous}.",
+     "s": "Part B"
+    },
+    {
+     "c": "Sam: “I am always on time.” → Is Sam a punctual person? {Yes, he is.|No, he isn't.}",
+     "s": "Part B"
+    },
+    {
+     "c": "What is Sam like? → He is shy, nervous, {punctual|plump}, generous and {kind|tall}.",
+     "s": "Part B"
+    }
+   ]
+  },
+  {
+   "kod": "Ellie, Jenny, Jeremy, Rosa",
+   "ad": "Okuduğu metindeki kişilerin kişiliğini tam cümleyle anlatır.",
+   "kisa": "Part C: Ellie, Jenny, Jeremy, Rosa",
+   "soru": 1,
+   "soruNot": "Kâğıtta: Part C (5 soru, 20 puan)",
+   "renk": "#1d6fa3",
+   "konular": [
+    "u1k2"
+   ],
+   "sayfa": "Kâğıt, Part C",
+   "maddeler": [
+    "<b>Ellie</b>: fikrini kolay değiştirmez → <b>stubborn</b>; ama <b>respectful and kind</b>.",
+    "<b>Jenny</b>: open-minded, always tells the truth, hates lies → <b>honest</b>.",
+    "<b>Jeremy</b>: studies hard, high marks → çalışkan (hardworking), <b>lazy değil</b>.",
+    "<b>Rosa</b> = metni anlatan (“Me? I am Rosa.”): eşyaları düşürüp kırar → <b>clumsy</b> (sakar); “Thank you / Sorry” der → kibar.",
+    "Cevaplar: 1 <b>She is stubborn, respectful and kind.</b> 2 <b>Jenny is honest and never tells lies.</b> 3 <b>No, he isn't.</b>",
+    "4 <b>Rosa is clumsy.</b> 5 <b>Yes, they are.</b> (iki kişi → they)"
+   ],
+   "kelimeler": [
+    "stubborn = inatçı",
+    "respectful = saygılı",
+    "open-minded = açık fikirli",
+    "honest = dürüst",
+    "hardworking = çalışkan",
+    "lazy = tembel",
+    "clumsy = sakar",
+    "by accident = kazara"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "Who is clumsy? → Jeremy is clumsy.",
+     "dogru": "Rosa (anlatan) eşyaları düşürüp kırıyor → Rosa is clumsy."
+    },
+    {
+     "yanlis": "Is Jeremy a lazy person? → Yes, he is.",
+     "dogru": "Jeremy studies hard → No, he isn't."
+    },
+    {
+     "yanlis": "Are Ellie and Rosa kind people? → Yes, she is.",
+     "dogru": "İki kişi → Yes, they are."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "“Read the text and answer the questions in full sentences.” = Metni oku, soruları {tam cümlelerle|kısaca} cevapla.",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "“Is Jeremy a lazy person?” = Jeremy {tembel biri mi|çalışkan biri mi}?",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "Ellie doesn't change her mind easily → She is {stubborn|honest|clumsy}, respectful and kind.",
+     "s": "Part C"
+    },
+    {
+     "c": "Jenny always tells the truth → {Jenny|Ellie} is honest and never tells lies.",
+     "s": "Part C"
+    },
+    {
+     "c": "Jeremy studies hard → Is Jeremy lazy? {No, he isn't.|Yes, he is.}",
+     "s": "Part C"
+    },
+    {
+     "c": "“Me? I am Rosa. I always drop and break things.” → {Rosa|Jeremy} is clumsy.",
+     "s": "Part C"
+    },
+    {
+     "c": "Are Ellie and Rosa kind people? → Yes, {they are|she is|he is}.",
+     "s": "Part C"
+    }
+   ]
+  },
+  {
+   "kod": "Sporlar",
+   "ad": "Sporları bireysel ve takım sporları olarak gruplar.",
+   "kisa": "Part D: Sporlar",
+   "soru": 1,
+   "soruNot": "Kâğıtta: Part D (20 puan)",
+   "renk": "#2b8a3e",
+   "konular": [
+    "u0k2"
+   ],
+   "sayfa": "Kâğıt, Part D",
+   "maddeler": [
+    "<b>Individual sports</b> (tek başına): <b>running, archery, golf, karate, swimming, wrestling</b>.",
+    "<b>Team sports</b> (takımla): <b>football, basketball, handball, ice-hockey, baseball</b>.",
+    "Ayırma yolu: <b>Takım arkadaşın var mı?</b> Varsa team, yoksa individual.",
+    "Soru 2 + 2 istiyor; en kolayları: <b>swimming, running</b> · <b>football, basketball</b>.",
+    "archery = okçuluk · wrestling = güreş · ice-hockey = buz hokeyi."
+   ],
+   "kelimeler": [
+    "individual = bireysel",
+    "team = takım",
+    "archery = okçuluk",
+    "wrestling = güreş",
+    "swimming = yüzme",
+    "handball = hentbol"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "golf → Team",
+     "dogru": "golf tek başına oynanır → Individual"
+    },
+    {
+     "yanlis": "karate → Team",
+     "dogru": "karate → Individual"
+    },
+    {
+     "yanlis": "baseball → Individual",
+     "dogru": "baseball takımla oynanır → Team"
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "“Write the names of two individual sports and two team sports.” = İki {bireysel|kış} ve iki takım sporunun adını yaz.",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "“Individual Sports / Team Sports” = {Bireysel / Takım|Kapalı / Açık} sporlar",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "running, swimming, archery → {Individual|Team}",
+     "s": "Part D"
+    },
+    {
+     "c": "golf, karate, wrestling → {Individual|Team}",
+     "s": "Part D"
+    },
+    {
+     "c": "football, basketball, handball → {Team|Individual}",
+     "s": "Part D"
+    },
+    {
+     "c": "ice-hockey, baseball → {Team|Individual}",
+     "s": "Part D"
+    }
+   ]
+  },
+  {
+   "kod": "Rutinler",
+   "ad": "Günlük rutinlerini sıklık zarflarıyla yazar.",
+   "kisa": "Part E: Rutin cümleleri",
+   "soru": 1,
+   "soruNot": "Kâğıtta: Part E (21 puan)",
+   "renk": "#c2255c",
+   "konular": [
+    "u0k2"
+   ],
+   "sayfa": "WB s. 86",
+   "maddeler": [
+    "Sıklık zarfları: <b>always</b> (her zaman) · <b>usually</b> (genellikle) · <b>sometimes</b> (bazen) · <b>never</b> (asla).",
+    "Kalıp: <b>I + zarf + fiil + …</b> Zarf fiilden önce gelir. (WB s. 86: before the main verb)",
+    "Ezber cümle 1: <b>I usually do my homework after school.</b>",
+    "Ezber cümle 2: <b>I never go to bed late.</b>",
+    "Kâğıttaki örneği (I always watch TV after school) kopyalama; kendi iki cümleni yaz."
+   ],
+   "kelimeler": [
+    "always = her zaman",
+    "usually = genellikle",
+    "sometimes = bazen",
+    "never = asla",
+    "do my homework",
+    "go to bed"
+   ],
+   "hatalar": [
+    {
+     "yanlis": "I do usually my homework.",
+     "dogru": "I usually do my homework. (zarf fiilden önce)"
+    },
+    {
+     "yanlis": "I never goes to bed late.",
+     "dogru": "I never go to bed late. (I ile -s yok)"
+    },
+    {
+     "yanlis": "Usually homework.",
+     "dogru": "Tam cümle: I usually do my homework after school."
+    }
+   ],
+   "tekrar": [
+    {
+     "c": "“Write two sentences about your daily routines.” = Günlük {rutinlerin|tatilin} hakkında iki cümle yaz.",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "“using frequency adverbs” = {sıklık zarflarını|renkleri} kullanarak",
+     "s": "sınav yönergesi"
+    },
+    {
+     "c": "I {usually|usual} do my homework after school.",
+     "s": "WB s. 86"
+    },
+    {
+     "c": "I never {go|goes} to bed late.",
+     "s": "WB s. 86"
+    },
+    {
+     "c": "Zarf nerede? {I usually do|I do usually} my homework.",
+     "s": "WB s. 86"
+    },
+    {
+     "c": "never = {asla|her zaman}, always = {her zaman|bazen}",
+     "s": "WB s. 86"
+    }
+   ]
+  }
+ ],
+ "formuller": [
+  {
+   "id": "tam",
+   "ad": "Tam cümle",
+   "kalip": "İsim + is + sıfat (+ than …)",
+   "ne": "“Who is …?” sorularında",
+   "ornek": "Sam is older than Jane."
+  },
+  {
+   "id": "evet",
+   "ad": "Kısa cevap",
+   "kalip": "Yes, he/she is. · No, he/she isn't. · Yes, they are.",
+   "ne": "“Is … ? / Are … ?” sorularında",
+   "ornek": "Yes, he is."
+  },
+  {
+   "id": "rutin",
+   "ad": "Rutin cümlesi",
+   "kalip": "I + zarf + fiil",
+   "ne": "Part E",
+   "ornek": "I never go to bed late."
+  }
+ ],
+ "mebSorular": [
+  {
+   "id": "m1",
+   "no": 1,
+   "kazanim": "Tablo",
+   "metin": [
+    "Comparing Students (Table) — Look at the table and answer the questions."
+   ],
+   "svg": "<svg viewBox='0 0 340 108' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Tablo: Jane 12 yaş 58 kg 1.52 m, Sam 13 yaş 62 kg 1.65 m' font-family='Fredoka, Nunito, sans-serif'><rect x='0.0' y='6' width='340' height='32' rx='6' fill='#2b3560'/><text x='43.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Student</text><text x='121.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Age</text><text x='202.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Weight</text><text x='294.0' y='26.5' text-anchor='middle' font-size='13.5' font-weight='700' fill='#f2c14e'>Height</text><text x='43.0' y='58.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>Jane</text><text x='121.0' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>12</text><text x='202.0' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>58 kg</text><text x='294.0' y='58.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>1.52 m</text><line x1='0.0' y1='69' x2='340.0' y2='69' stroke='#59627f' stroke-width='1'/><text x='43.0' y='89.0' text-anchor='middle' font-size='12.5' font-weight='700' fill='#6fb3ff'>Sam</text><text x='121.0' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>13</text><text x='202.0' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>62 kg</text><text x='294.0' y='89.0' text-anchor='middle' font-size='13.5' font-weight='500' fill='#f5f6fa'>1.65 m</text><line x1='0.0' y1='100' x2='340.0' y2='100' stroke='#59627f' stroke-width='1'/><line x1='86.0' y1='6' x2='86.0' y2='100' stroke='#59627f' stroke-width='1'/><line x1='156.0' y1='6' x2='156.0' y2='100' stroke='#59627f' stroke-width='1'/><line x1='248.0' y1='6' x2='248.0' y2='100' stroke='#59627f' stroke-width='1'/></svg>",
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "1. Who is older, Jane or Sam?",
+     "kisaCevap": "Sam is older than Jane.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Tabloya bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Sam is older than Jane.",
+          "genis": true,
+          "hepsi": [
+           "sam is older"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Sam is older than Jane."
+     }
+    },
+    {
+     "harf": "b",
+     "soru": "2. Who is taller?",
+     "kisaCevap": "Sam is taller than Jane.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Tabloya bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Sam is taller than Jane.",
+          "genis": true,
+          "hepsi": [
+           "sam is taller"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Sam is taller than Jane."
+     }
+    },
+    {
+     "harf": "c",
+     "soru": "3. Who is heavier?",
+     "kisaCevap": "Sam is heavier than Jane.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Tabloya bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Sam is heavier than Jane.",
+          "genis": true,
+          "hepsi": [
+           "sam is heavier"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Sam is heavier than Jane."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "no": 2,
+   "kazanim": "Sam ve Harry",
+   "metin": [
+    "Part B. Read the text and answer the questions in full sentences. (24 points)",
+    "Hi, my name is Sam. I am fourteen years old. I am short and plump with dark, wavy hair and brown eyes. I like wearing colorful glasses. This is my young brother, Harry. He is younger than me. We don't look alike at all. He is a little taller than me, with curly blond hair and green eyes. He is well-built because he likes doing sports. Our personalities are very different as well. He has a lot of friends, and he gets along well with new people. I am usually shyer and more nervous than him. I have a few close friends. I am always on time; I don't like being late to meetings, but he is usually not punctual. We are both generous and kind people. We always share what we have and support each other. I love my brother."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "1. Who is shorter?",
+     "kisaCevap": "Sam is shorter than Harry.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Sam is shorter than Harry.",
+          "genis": true,
+          "hepsi": [
+           "sam is shorter"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Sam is shorter than Harry."
+     }
+    },
+    {
+     "harf": "b",
+     "soru": "2. What does Harry look like?",
+     "kisaCevap": "He is well-built with curly blond hair and green eyes.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "He is well-built with curly blond hair and green eyes.",
+          "genis": true,
+          "hepsi": [
+           "curly",
+           "blond",
+           "green"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: He is well-built with curly blond hair and green eyes."
+     }
+    },
+    {
+     "harf": "c",
+     "soru": "3. Who is outgoing and social?",
+     "kisaCevap": "Harry is outgoing and social.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Harry is outgoing and social.",
+          "genis": true,
+          "hepsi": [
+           "harry is"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Harry is outgoing and social."
+     }
+    },
+    {
+     "harf": "d",
+     "soru": "4. Is Sam a punctual person?",
+     "kisaCevap": "Yes, he is.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Yes, he is.",
+          "genis": true,
+          "hepsi": [
+           "yes",
+           "he is"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Yes, he is."
+     }
+    },
+    {
+     "harf": "e",
+     "soru": "5. What is Sam like?",
+     "kisaCevap": "He is shy, nervous, punctual, generous and kind.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "He is shy, nervous, punctual, generous and kind.",
+          "genis": true,
+          "hepsi": [
+           "shy",
+           "nervous",
+           "punctual",
+           "generous",
+           "kind"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: He is shy, nervous, punctual, generous and kind."
+     }
+    },
+    {
+     "harf": "f",
+     "soru": "6. Who is older?",
+     "kisaCevap": "Sam is older than Harry.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Sam is older than Harry.",
+          "genis": true,
+          "hepsi": [
+           "sam is older"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Sam is older than Harry."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "no": 3,
+   "kazanim": "Ellie, Jenny, Jeremy, Rosa",
+   "metin": [
+    "Part C. Read the text and answer the questions in full sentences. (20 Points)",
+    "These are my friends: Ellie, Jenny, and Jeremy. We met in elementary school, so we know each other very well. Ellie doesn't change her mind easily. She is very stubborn but respectful and kind to others, so we don't mind that much. Jenny is more open-minded than Ellie, and she always tells the truth. She hates telling lies. Jeremy studies hard and always gets high marks. He loves learning new things. Me? I am Rosa. Unfortunately, I always drop and break things by accident. I always say “Thank you” and “Sorry” when I need to."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "1. What is Ellie like?",
+     "kisaCevap": "She is stubborn, respectful and kind.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "She is stubborn, respectful and kind.",
+          "genis": true,
+          "hepsi": [
+           "stubborn",
+           "respectful",
+           "kind"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: She is stubborn, respectful and kind."
+     }
+    },
+    {
+     "harf": "b",
+     "soru": "2. Who is honest and never tells lies?",
+     "kisaCevap": "Jenny is honest and never tells lies.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Jenny is honest and never tells lies.",
+          "genis": true,
+          "hepsi": [
+           "jenny"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Jenny is honest and never tells lies."
+     }
+    },
+    {
+     "harf": "c",
+     "soru": "3. Is Jeremy a lazy person?",
+     "kisaCevap": "No, he isn't.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "No, he isn't.",
+          "genis": true,
+          "k": [
+           "no, he isn't",
+           "no he isn't",
+           "no, he is not",
+           "no he is not",
+           "no, he isnt",
+           "no he isnt"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: No, he isn't."
+     }
+    },
+    {
+     "harf": "d",
+     "soru": "4. Who is clumsy?",
+     "kisaCevap": "Rosa is clumsy.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Rosa is clumsy.",
+          "genis": true,
+          "hepsi": [
+           "rosa"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Rosa is clumsy."
+     }
+    },
+    {
+     "harf": "e",
+     "soru": "5. Are Ellie and Rosa kind people?",
+     "kisaCevap": "Yes, they are.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "Metne bak, tam cümleyle yaz.",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "Yes, they are.",
+          "genis": true,
+          "hepsi": [
+           "yes",
+           "they are"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "Tam cümle: Yes, they are."
+     }
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "no": 4,
+   "kazanim": "Sporlar",
+   "metin": [
+    "Part D. Sports & Vocabulary (Spor Kelimeleri) (20 points)",
+    "Kutudaki kelimeler: running, archery, football, golf, karate, swimming, basketball, handball, ice-hockey, baseball, wrestling"
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Write the names of two individual sports and two team sports.",
+     "iskele": {
+      "tur": "grupla",
+      "soru": "Kâğıttaki tablo gibi: her sporu doğru sütuna koy.",
+      "kelimeler": [
+       "running",
+       "archery",
+       "football",
+       "golf",
+       "karate",
+       "swimming",
+       "basketball",
+       "handball",
+       "ice-hockey",
+       "baseball",
+       "wrestling"
+      ],
+      "kutular": [
+       {
+        "etiket": "Individual Sports",
+        "uyeler": [
+         "running",
+         "archery",
+         "golf",
+         "karate",
+         "swimming",
+         "wrestling"
+        ]
+       },
+       {
+        "etiket": "Team Sports",
+        "uyeler": [
+         "football",
+         "basketball",
+         "handball",
+         "ice-hockey",
+         "baseball"
+        ]
+       }
+      ],
+      "aciklama": "Tek başına yapılanlar individual: running, archery, golf, karate, swimming, wrestling. Takımla oynananlar team: football, basketball, handball, ice-hockey, baseball."
+     },
+     "kisaCevap": "Individual: swimming, running (archery, golf, karate, wrestling) · Team: football, basketball (handball, ice-hockey, baseball)"
+    }
+   ]
+  },
+  {
+   "id": "m5",
+   "no": 5,
+   "kazanim": "Rutinler",
+   "metin": [
+    "Part E. (21 points) Soru 4: Writing about Routines (Frequency Adverbs)",
+    "Write two sentences about your daily routines using frequency adverbs (always, usually, sometimes, never).",
+    "Example: I always watch TV after school. / I always wake up early on weekdays."
+   ],
+   "maddeler": [
+    {
+     "harf": "a",
+     "soru": "Write two sentences about your daily routines.",
+     "iskele": {
+      "tur": "doldur",
+      "soru": "İki cümle yaz: I + zarf + fiil. (Ezber: I usually do my homework after school. / I never go to bed late.)",
+      "cumleler": [
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "I usually do my homework after school.",
+          "genis": true,
+          "hepsi": [
+           "i "
+          ],
+          "k": [
+           "always",
+           "usually",
+           "sometimes",
+           "never",
+           "often"
+          ]
+         }
+        ]
+       },
+       {
+        "c": "___",
+        "b": [
+         {
+          "cevap": "I never go to bed late.",
+          "genis": true,
+          "hepsi": [
+           "i "
+          ],
+          "k": [
+           "always",
+           "usually",
+           "sometimes",
+           "never",
+           "often"
+          ]
+         }
+        ]
+       }
+      ],
+      "aciklama": "I ile başlayıp bir sıklık zarfı (always, usually, sometimes, never) içeren anlamlı cümle doğru sayılır. Zarf fiilden önce gelir."
+     },
+     "kisaCevap": "I usually do my homework after school. / I never go to bed late."
+    }
+   ]
+  }
+ ],
+ "kuarkHata": [
+  {
+   "kazanim": "Tablo",
+   "soru": "Who is older, Jane or Sam?",
+   "kuark": "Sam.",
+   "secenekler": [
+    "Tam cümle olmalı: Sam is older than Jane.",
+    "Hoot haklı, tek kelime yeter.",
+    "Jane is older than Sam. olmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "Yönerge “in full sentences” diyor.",
+   "aciklama": "Tam cümle: İsim + is + older + than + diğeri.",
+   "dogruCevap": "Sam is older than Jane."
+  },
+  {
+   "kazanim": "Tablo",
+   "soru": "Who is heavier?",
+   "kuark": "Sam is heavyer than Jane.",
+   "secenekler": [
+    "heavy → heavier (y düşer, -ier).",
+    "Hoot haklı.",
+    "more heavy olmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "heavy -y ile bitiyor.",
+   "aciklama": "heavy → heavier.",
+   "dogruCevap": "Sam is heavier than Jane."
+  },
+  {
+   "kazanim": "Sam ve Harry",
+   "soru": "What is Sam like?",
+   "kuark": "He is short and plump.",
+   "secenekler": [
+    "“What is … like?” kişiliği sorar: He is shy, nervous, punctual, generous and kind.",
+    "Hoot haklı.",
+    "He has got brown eyes. olmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "“look like” görünüş, “like” kişilik.",
+   "aciklama": "Kişilik: shy, nervous, punctual, generous, kind.",
+   "dogruCevap": "He is shy, nervous, punctual, generous and kind."
+  },
+  {
+   "kazanim": "Sam ve Harry",
+   "soru": "Who is shorter?",
+   "kuark": "Harry is shorter.",
+   "secenekler": [
+    "Harry is a little taller than Sam → Sam is shorter than Harry.",
+    "Hoot haklı.",
+    "Both are short. olmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "“He is a little taller than me.” cümlesindeki “me” kim?",
+   "aciklama": "Anlatan Sam; Harry ondan uzun.",
+   "dogruCevap": "Sam is shorter than Harry."
+  },
+  {
+   "kazanim": "Ellie, Jenny, Jeremy, Rosa",
+   "soru": "Who is clumsy?",
+   "kuark": "Jeremy is clumsy.",
+   "secenekler": [
+    "Eşyaları düşürüp kıran Rosa (anlatan): Rosa is clumsy.",
+    "Hoot haklı.",
+    "Ellie is clumsy. olmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "“Me? I am Rosa.” sonrasındaki cümleye bak.",
+   "aciklama": "drop and break things by accident = sakar (clumsy).",
+   "dogruCevap": "Rosa is clumsy."
+  },
+  {
+   "kazanim": "Ellie, Jenny, Jeremy, Rosa",
+   "soru": "Are Ellie and Rosa kind people?",
+   "kuark": "Yes, she is.",
+   "secenekler": [
+    "İki kişi → Yes, they are.",
+    "Hoot haklı.",
+    "No, they aren't. olmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "Ellie ve Rosa = they.",
+   "aciklama": "Are … ? sorusuna: Yes, they are.",
+   "dogruCevap": "Yes, they are."
+  },
+  {
+   "kazanim": "Sporlar",
+   "soru": "Individual or team? golf",
+   "kuark": "Team",
+   "secenekler": [
+    "golf tek başına oynanır → Individual.",
+    "Hoot haklı.",
+    "Hiçbiri."
+   ],
+   "dogru": 0,
+   "ipucu": "Golfte takım arkadaşın var mı?",
+   "aciklama": "Individual: running, archery, golf, karate, swimming, wrestling.",
+   "dogruCevap": "Individual"
+  },
+  {
+   "kazanim": "Rutinler",
+   "soru": "Write a sentence with a frequency adverb.",
+   "kuark": "I do usually my homework.",
+   "secenekler": [
+    "Zarf fiilden önce: I usually do my homework.",
+    "Hoot haklı.",
+    "I usually does my homework. olmalı."
+   ],
+   "dogru": 0,
+   "ipucu": "Zarf nerede durur?",
+   "aciklama": "I + zarf + fiil (WB s. 86).",
+   "dogruCevap": "I usually do my homework after school."
+  }
+ ],
+ "provalar": []
+}

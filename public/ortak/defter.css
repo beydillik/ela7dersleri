@@ -1702,3 +1702,5 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .dd-k { margin: 0 3px; }
 .dd-in { box-sizing: border-box; }
 .dd-liste, .dd-liste li { min-width: 0; overflow-wrap: anywhere; }
+.dd-genis { display: block; width: 100%; margin: 4px 0 2px; }
+.dd-liste:has(> li:only-child) { list-style: none; padding-left: 0; }

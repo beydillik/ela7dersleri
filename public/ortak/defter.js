@@ -2355,7 +2355,10 @@
   // "doldur": {soru, cumleler:[{c: "… ___ …", b:[{cevap, kabul?, k?, secenekler?}]}]} her ___ bir boşluk; secenekler varsa
   //   daire içine alma düğmeleri, yoksa yazı kutusu; k = kabul edilen kökler (Türkçe anlam). Cevap {"i.j": değer}.
   const ddSade = v => String(v || "").replace(/İ/g, "i").toLowerCase().replace(/[’‘`´]/g, "'").replace(/[ıçğöşüâ]/g, h => "icgosua"["ıçğöşüâ".indexOf(h)]).replace(/[.!?\s]+$/, "").replace(/\s+/g, " ").trim();
-  const ddDogru = (b, v) => { const n = ddSade(v); return !!n && ((b.k || []).some(k => n.includes(ddSade(k))) || [b.cevap, ...(b.kabul || [])].some(x => ddSade(x) === n)); };
+  // hepsi: bu köklerin hepsi geçmeli (tam cümle cevaplar; own1 d1y2); k varsa ayrıca biri geçmeli.
+  const ddDogru = (b, v) => { const n = ddSade(v); if (!n) return false; const kk = (b.k || []).some(k => n.includes(ddSade(k)));
+    if (b.hepsi) return b.hepsi.every(k => n.includes(ddSade(k))) && (!b.k || kk);
+    return kk || [b.cevap, ...(b.kabul || [])].some(x => ddSade(x) === n); };
   const ddBosluklar = q => q.cumleler.flatMap((x, i) => x.b.map((b, j) => ({ a: `${i}.${j}`, b })));
   const gruplaHTML = (q, c, sel) => { c = c || {}; const tum = q.kelimeler || q.kutular.flatMap(b => b.uyeler);
     const chip = m => `<span class="chip pick gr-chip${sel === m ? " sel" : ""}" role="button" tabindex="0" draggable="true" data-gm="${esc(m)}">${esc(m)}</span>`;
@@ -2367,7 +2370,7 @@
     return x.c.split("___").map(esc).reduce((h, parca, n) => { if (!n) return parca; j++; const b = x.b[j], a = `${i}.${j}`, v = (c || {})[a];
       if (kontrol) { const ok = ddDogru(b, v); return h + (ok ? `<b class="kd-dogru dd-k">${esc(v)}</b>` : `${v ? `<s class="kd-yanlis">${esc(v)}</s> ` : `<span class="kd-bos">boş</span> `}<b class="kd-dogru dd-k">${esc(b.cevap)}</b>`) + parca; }
       const kutu = b.secenekler ? `<span class="dd-daireler">${b.secenekler.map((o, n2) => `${n2 ? `<span class="dd-ayrac">/</span>` : ""}<button type="button" class="dd-daire" data-dd="${a}" data-v="${esc(o)}" aria-pressed="${v === o}">${esc(o)}</button>`).join("")}</span>`
-        : `<input class="dd-in" data-dd="${a}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(v || "")}" size="${Math.max(6, Math.min(14, (b.cevap || "").length + 2))}" aria-label="Boşluk">`;
+        : `<input class="dd-in${b.genis ? " dd-genis" : ""}" data-dd="${a}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(v || "")}" size="${Math.max(6, Math.min(14, (b.cevap || "").length + 2))}" aria-label="Boşluk">`;
       return h + kutu + parca; }, ""); };
   const doldurHTML = (q, c, kontrol) => `<div class="q sinav-q${kontrol ? " kontrol" : ""}"><p class="q-text">${rx(q.soru || "Boşlukları doldur.")}</p>
       ${q.kutu ? `<div class="kelime-havuz dd-kutu"><b>${esc(q.kutuBaslik || "Box")}:</b> ${q.kutu.map(w => `<span class="chip">${esc(w)}</span>`).join("")}</div>` : ""}
@@ -2954,8 +2957,9 @@
     }
     S.konu = "yazili:" + y.id; S.data = null; S.durakAsil = null; S.botBaslik = "Yazılıya Hazırlık"; S.tab = "yazili"; renderNav();
     document.body.classList.add("yazili-mod");
-    if (location.hash.slice(1) !== "yazili") history.replaceState(null, "", "#yazili");
-    $$(".head-actions a").forEach(a => a.getAttribute("href") === "#yazili" ? a.setAttribute("aria-pressed", "true") : a.removeAttribute("aria-pressed"));
+    const yh = (S.ders.yazili.length > 1 && S.ders.yazili.some(x => x.hash)) ? yaziliHash(y) : "yazili";
+    if (location.hash.slice(1) !== yh) history.replaceState(null, "", "#" + yh);
+    $$(".head-actions a").forEach(a => a.getAttribute("href") === "#" + yh ? a.setAttribute("aria-pressed", "true") : a.removeAttribute("aria-pressed"));
     yzKabuk(); document.documentElement.classList.remove("yz-yukle");
     KAYIT.olay("yazili-ac");
     yzAna($("#yzSayfa")); scrollTo(0, 0);
@@ -3032,7 +3036,7 @@
       </ol></nav>
       <div class="yz-menu-alt"><button data-defter>← Ders defterine dön</button></div>`;
   }
-  const yazilidanCik = () => { document.body.classList.remove("yazili-mod", "yz-sinav"); $$(".head-actions a[href='#yazili']").forEach(a => a.removeAttribute("aria-pressed")); clearInterval(YZ.saat); };
+  const yazilidanCik = () => { document.body.classList.remove("yazili-mod", "yz-sinav"); $$(".head-actions a.yz-btn").forEach(a => a.removeAttribute("aria-pressed")); clearInterval(YZ.saat); };
   function yzGit(root, ne, ...a) {
     tts.stop(); clearInterval(YZ.saat); document.body.classList.remove("yz-sinav");
     ({ ana: yzAna, hatirla: yzHatirla, htekrar: yzHTekrar, kalip: yzKalip, meb: yzMebListe, tekrar: yzTekrar, kart: yzKart, kuark: yzKuark, prova: yzProvaListe, eksik: yzEksik, ozet: yzOzet })[ne](root, ...a);
@@ -4885,6 +4889,9 @@
   }
 
   const yaziliVar = () => !!(S.ders.yazili && S.ders.yazili.length);
+  // Birden çok yazılı (own1, 11 Kasım 2026): her kayıt isteğe bağlı "hash" ("yazili2") ve "dugme" (başlık düğmesi) taşır.
+  const yaziliHash = y => y.hash || "yazili";
+  const yaziliBul = h => { const l = S.ders.yazili || []; if (!/^yazili\d*$/.test(h || "")) return null; return l.find(y => y.hash === h) || (h === "yazili" ? l[l.length - 1] : null); };
   async function boot() {
     tts.init(); addEventListener("resize", drawStars);
     try {
@@ -4900,11 +4907,12 @@
     const applyClass = on => { document.body.classList.toggle("sinif", on); sb.setAttribute("aria-pressed", on); };
     applyClass(store.get("ela7:sinif", false));
     sb.onclick = () => { const on = !document.body.classList.contains("sinif"); store.set("ela7:sinif", on); applyClass(on); if (S.data && $("#panel")) setTab(S.tab); };
-    const yol = h => h === "rapor" ? openRapor() : h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : h === "yazili" && yaziliVar() ? openYazili() : openKonu(h, true);
+    const yol = h => h === "rapor" ? openRapor() : h === "gunluk" && isEn() ? openGunluk() : h === "defter" && isEn() ? openDefter() : h === "atolye" && S.ders.atolye ? openAtolye() : yaziliVar() && yaziliBul(h) ? openYazili(yaziliBul(h).id) : openKonu(h, true);
     addEventListener("hashchange", () => yol(location.hash.slice(1)));
     if (isEn()) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#gunluk">Günün Tekrarı</a><a class="head-btn" href="#defter">Kelime Defterim</a>`);
     if (S.ders.atolye) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn" href="#atolye">${ICON.okuma}Okuma Atölyesi</a>`);
-    if (yaziliVar()) $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn yz-btn" href="#yazili">${ICON.test}Yazılıya Hazırlık</a>`);
+    if (yaziliVar()) { const l = S.ders.yazili, tek = l.length === 1 || !l.some(y => y.hash);
+      (tek ? [l[l.length - 1]] : l).slice().reverse().forEach(y => $(".head-actions").insertAdjacentHTML("afterbegin", `<a class="head-btn yz-btn" href="#${tek ? "yazili" : yaziliHash(y)}">${ICON.test}${esc(y.dugme || "Yazılıya Hazırlık")}</a>`)); }
     $$(".head-actions a").forEach(l => l.onclick = e => { const h = l.getAttribute("href").slice(1); if (location.hash.slice(1) === h) { e.preventDefault(); yol(h); } });
     const ready = allTopics().filter(k => k.hazir);
     const want = [location.hash.slice(1), store.get(key("son"))].find(id => ready.some(k => k.id === id));
@@ -4912,9 +4920,9 @@
     setupYan(); renderNav(); setupBot(); setupSerit();
     const ozel = location.hash.slice(1);
     KDB.temizle();
-    if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye") || (yaziliVar() && ozel === "yazili")) yol(ozel);
+    if (ozel === "rapor" || (isEn() && (ozel === "gunluk" || ozel === "defter")) || (S.ders.atolye && ozel === "atolye") || (yaziliVar() && yaziliBul(ozel))) yol(ozel);
     else { document.documentElement.classList.remove("yz-yukle"); if (first) openKonu(first, false); else $("#content").innerHTML = `<div class="notice">Henüz eklenmiş konu yok.</div>`; }
-    if (ozel !== "rapor" && ozel !== "yazili") KOC.plan();
+    if (ozel !== "rapor" && !yaziliBul(ozel)) KOC.plan();
     if (BULUT.bilgi()) {
       BULUT.planla(3000);
       setInterval(() => { if (BULUT.kirli && !document.hidden) BULUT.esitle().catch(() => {}); }, 120000);
