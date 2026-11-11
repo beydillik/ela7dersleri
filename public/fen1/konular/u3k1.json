@@ -286,6 +286,10 @@
    ],
    "bolge": [
     "izlediği doğru yol hangisidir"
+   ],
+   "ne": [
+    "Besinin geçtiği organların sırasını",
+    "Sindirimin başladığı organı"
    ]
   },
   {
@@ -303,6 +307,10 @@
    ],
    "bolge": [
     "kimyasal sindirime faydası nedir"
+   ],
+   "ne": [
+    "Fiziksel sindirimin kimyasal sindirime nasıl yardım ettiğini",
+    "Fiziksel sindirimin ne olduğunu"
    ]
   },
   {
@@ -320,6 +328,10 @@
    ],
    "bolge": [
     "sindirime yardımcı olan bir organdır"
+   ],
+   "ne": [
+    "Sindirime yardım eden organı",
+    "Besinin içinden geçtiği organı"
    ]
   },
   {
@@ -337,6 +349,15 @@
    ],
    "bolge": [
     "nerede başlar"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Karbohidratların",
+    "nerede"
+   ],
+   "ne": [
+    "Karbohidratların sindiriminin başladığı yeri",
+    "Proteinlerin sindiriminin başladığı yeri"
    ]
   },
   {
@@ -354,6 +375,14 @@
    ],
    "bolge": [
     "hangi organda tamamlanır"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "hangi organda tamamlanır"
+   ],
+   "ne": [
+    "Sindirimin tamamlandığı organı",
+    "Sindirimin başladığı organı"
    ]
   },
   {
@@ -371,6 +400,14 @@
    ],
    "bolge": [
     "nereye gönderilir"
+   ],
+   "ikiz": "i4",
+   "vurgu": [
+    "nereye gönderilir"
+   ],
+   "ne": [
+    "Safranın gönderildiği yeri",
+    "Safranın toplandığı yeri"
    ]
   },
   {
@@ -388,6 +425,10 @@
    ],
    "bolge": [
     "Safra sıvısının görevi nedir"
+   ],
+   "ne": [
+    "Safranın ne işe yaradığını",
+    "Safrayı hangi organın salgıladığını"
    ]
   },
   {
@@ -405,6 +446,10 @@
    ],
    "bolge": [
     "mideye ulaşınca ne olur"
+   ],
+   "ne": [
+    "Elmaya midede ne olduğunu",
+    "Elmaya ağızda ne olduğunu"
    ]
   },
   {
@@ -422,6 +467,14 @@
    ],
    "bolge": [
     "Hangisi fiziksel sindirime örnektir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi fiziksel"
+   ],
+   "ne": [
+    "Fiziksel sindirime bir örneği",
+    "Kimyasal sindirime bir örneği"
    ]
   },
   {
@@ -439,6 +492,10 @@
    ],
    "bolge": [
     "hangi yapıyla uzaklaştırılır"
+   ],
+   "ne": [
+    "Atıkların vücuttan atıldığı yapıyı",
+    "Besinlerin emildiği yapıyı"
    ]
   },
   {
@@ -456,6 +513,111 @@
    ],
    "bolge": [
     "Enzim nedir"
+   ]
+  },
+  {
+   "soru": "Proteinlerin kimyasal sindirimi nerede başlar?",
+   "secenekler": [
+    "Ağızda",
+    "Midede",
+    "İnce bağırsakta"
+   ],
+   "dogru": 1,
+   "ipucu": "Mide öz suyundaki enzimler hangi besine etki ediyordu?",
+   "aciklama": "Mide öz suyundaki enzimlerle proteinlerin kimyasal sindirimi midede başlar. (s. 95)",
+   "kavram": "Mide",
+   "ikiz": "i1",
+   "vurgu": [
+    "Proteinlerin",
+    "nerede"
+   ],
+   "ne": [
+    "Proteinlerin sindiriminin başladığı yeri",
+    "Karbohidratların sindiriminin başladığı yeri"
+   ],
+   "tetik": [
+    "nerede"
+   ],
+   "bolge": [
+    "nerede başlar"
+   ]
+  },
+  {
+   "soru": "Besinlerin sindirimi hangi organda başlar?",
+   "secenekler": [
+    "Ağızda",
+    "Midede",
+    "İnce bağırsakta"
+   ],
+   "dogru": 0,
+   "ipucu": "Besinin vücuda alındığı ilk organı düşün.",
+   "aciklama": "Fiziksel ve kimyasal sindirim ağızda başlar. (s. 95)",
+   "kavram": "Ağız",
+   "ikiz": "i2",
+   "vurgu": [
+    "hangi organda başlar"
+   ],
+   "ne": [
+    "Sindirimin başladığı organı",
+    "Sindirimin tamamlandığı organı"
+   ],
+   "tetik": [
+    "hangi organda"
+   ],
+   "bolge": [
+    "hangi organda başlar"
+   ]
+  },
+  {
+   "soru": "Hangisi kimyasal sindirime örnektir?",
+   "secenekler": [
+    "Besinin dişlerle çiğnenmesi",
+    "Enzimlerin besini yapı taşlarına ayırması",
+    "Villusların besini emmesi"
+   ],
+   "dogru": 1,
+   "ipucu": "Kimyasal sindirimde besini ne ayrıştırıyordu?",
+   "aciklama": "Enzimler ve su besini yapı taşlarına ayırır; bu kimyasal sindirimdir. (s. 92)",
+   "kavram": "Sindirim",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi kimyasal"
+   ],
+   "ne": [
+    "Kimyasal sindirime bir örneği",
+    "Fiziksel sindirime bir örneği"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi kimyasal sindirime örnektir"
+   ]
+  },
+  {
+   "soru": "Karaciğerin salgıladığı safra sıvısı nerede toplanır?",
+   "secenekler": [
+    "Safra kesesinde",
+    "İnce bağırsakta",
+    "Midede"
+   ],
+   "dogru": 0,
+   "ipucu": "Karaciğerin altındaki küçük keseyi hatırla.",
+   "aciklama": "Safra sıvısı karaciğerin altındaki safra kesesinde toplanır; sonra ince bağırsağa gönderilir. (s. 92)",
+   "kavram": "Karaciğer ve Pankreas",
+   "ikiz": "i4",
+   "vurgu": [
+    "nerede toplanır"
+   ],
+   "ne": [
+    "Safranın toplandığı yeri",
+    "Safranın gönderildiği yeri"
+   ],
+   "tetik": [
+    "nerede"
+   ],
+   "bolge": [
+    "nerede toplanır"
    ]
   }
  ],
@@ -513,7 +675,11 @@
      ],
      "k": [
       "kas",
-      "çiğne"
+      "çiğne",
+      "diş",
+      "parça",
+      "öğüt",
+      "küçül"
      ]
     },
     {
@@ -532,10 +698,14 @@
    "cevap": "Fiziksel sindirimde besinler çiğneme, kas hareketleri ve özel sıvılarla küçük parçalara ayrılır. Kimyasal sindirimde ise besinler enzimler ve su yardımıyla kana geçebilecek kadar küçük yapı taşlarına ayrılır.",
    "anahtarlar": [
     {
-     "ad": "fiziksel: çiğneme / kas hareketi",
+     "ad": "fiziksel: çiğneme / kas hareketi / küçük parçalara ayırma",
      "k": [
       "kas",
-      "çiğne"
+      "çiğne",
+      "diş",
+      "parça",
+      "öğüt",
+      "küçül"
      ]
     },
     {
@@ -669,5 +839,6 @@
    "aciklama": "Besinlerin fiziksel ve kimyasal sindirimi ince bağırsakta tamamlanır. Kalın bağırsakta ise su ve bazı mineraller emilir (s. 94–95).",
    "kavram": "İnce Bağırsak"
   }
- ]
+ ],
+ "testSoru": 11
 }

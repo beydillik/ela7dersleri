@@ -12,11 +12,11 @@ KISA = {"u3k1": [
   "tetik": ["farkı"],
   "okut": ["İki sindirimi ayrı ayrı tanımla (iki parça).", "Neden-sonuç yaz: “… çünkü …”", "Yalnız bir organın adını yaz."],
   "parcalar": [
-   {"bas": "Fiziksel sindirim:", "ornek": "Besinler çiğneme ve kas hareketleriyle küçük parçalara ayrılır.", "havuz": ["Besinler enzimler ve su yardımıyla yapı taşlarına ayrılır.", "Besinler kana geçer."], "k": ["kas", "çiğne"]},
+   {"bas": "Fiziksel sindirim:", "ornek": "Besinler çiğneme ve kas hareketleriyle küçük parçalara ayrılır.", "havuz": ["Besinler enzimler ve su yardımıyla yapı taşlarına ayrılır.", "Besinler kana geçer."], "k": ["kas", "çiğne", "diş", "parça", "öğüt", "küçül"]},
    {"bas": "Kimyasal sindirim:", "ornek": "Besinler enzimler ve su yardımıyla yapı taşlarına ayrılır.", "havuz": ["Besinler çiğnenerek parçalanır.", "Besinler kas hareketleriyle ezilir."], "k": ["enzim"]}],
   "kisa": "Fiziksel: çiğneme ve kas hareketleriyle parçalama. Kimyasal: enzimler ve suyla yapı taşlarına ayırma.",
   "cevap": "Fiziksel sindirimde besinler çiğneme, kas hareketleri ve özel sıvılarla küçük parçalara ayrılır. Kimyasal sindirimde ise besinler enzimler ve su yardımıyla kana geçebilecek kadar küçük yapı taşlarına ayrılır.",
-  "anahtarlar": [{"ad": "fiziksel: çiğneme / kas hareketi", "k": ["kas", "çiğne"]}, {"ad": "kimyasal: enzim ve su", "k": ["enzim"]}],
+  "anahtarlar": [{"ad": "fiziksel: çiğneme / kas hareketi / küçük parçalara ayırma", "k": ["kas", "çiğne", "diş", "parça", "öğüt", "küçül"]}, {"ad": "kimyasal: enzim ve su", "k": ["enzim"]}],
   "sayfa": "s. 92"},
  {"soru": "İnce bağırsaktaki villuslar emilimi nasıl hızlandırır? Yazınız.",
   "tetik": ["nasıl"],

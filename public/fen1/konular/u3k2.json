@@ -243,6 +243,10 @@
    ],
    "bolge": [
     "neden kaynaklanır"
+   ],
+   "ne": [
+    "Rahatsızlıkların sebebini",
+    "Rahatsızlıkların sonucunu"
    ]
   },
   {
@@ -260,6 +264,10 @@
    ],
    "bolge": [
     "Hangi değişiklik ona iyi gelir"
+   ],
+   "ne": [
+    "Ruhi'ye iyi gelecek değişikliği",
+    "Ruhi'nin yaptığı hatayı"
    ]
   },
   {
@@ -278,6 +286,15 @@
    "bolge": [
     "hangi alışkanlığı",
     "hatalıdır"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "hangi alışkanlığı",
+    "hatalıdır"
+   ],
+   "ne": [
+    "Özden'in hatalı alışkanlığını",
+    "Özden'in doğru alışkanlığını"
    ]
   },
   {
@@ -295,6 +312,14 @@
    ],
    "bolge": [
     "hangi alışkanlığı doğrudur"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "hangi alışkanlığı doğrudur"
+   ],
+   "ne": [
+    "Özden'in doğru alışkanlığını",
+    "Özden'in hatalı alışkanlığını"
    ]
   },
   {
@@ -312,6 +337,10 @@
    ],
    "bolge": [
     "Bunun sindirime faydası nedir"
+   ],
+   "ne": [
+    "Kan dolaşımı artınca sindirime ne faydası olduğunu",
+    "Kan dolaşımının neden arttığını"
    ]
   },
   {
@@ -329,6 +358,10 @@
    ],
    "bolge": [
     "neye yol açabilir"
+   ],
+   "ne": [
+    "Öne eğilerek oturmanın sonucunu",
+    "Öne eğilerek oturmanın sebebini"
    ]
   },
   {
@@ -346,6 +379,10 @@
    ],
    "bolge": [
     "yemek yemeyi nasıl etkileyebilir"
+   ],
+   "ne": [
+    "Ekranın yemek yeme biçimine etkisini",
+    "Ekranın bağırsak hareketlerine etkisini"
    ]
   },
   {
@@ -363,6 +400,15 @@
    ],
    "bolge": [
     "doğru bir davranıştır"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "doğru"
+   ],
+   "ne": [
+    "Sindirim için doğru olan davranışı",
+    "Sindirim için yanlış olan davranışı"
    ]
   },
   {
@@ -380,6 +426,91 @@
    ],
    "bolge": [
     "nasıl etkiler"
+   ],
+   "ne": [
+    "Paketli gıdaların sindirime etkisini",
+    "Dengeli beslenmenin sindirime etkisini"
+   ]
+  },
+  {
+   "soru": "Düzenli egzersiz bağırsak hareketlerini nasıl etkiler?",
+   "secenekler": [
+    "Artırır",
+    "Yavaşlatır",
+    "Etkilemez"
+   ],
+   "dogru": 0,
+   "ipucu": "Sen hareket edince bağırsakların da çalışır.",
+   "aciklama": "Düzenli fiziksel aktivite bağırsakların kasılma ve gevşeme hareketlerini uyarır, hareketliliğini artırır. (s. 99)",
+   "kavram": "Düzenli Egzersiz",
+   "ikiz": "i1",
+   "vurgu": [
+    "Düzenli egzersiz",
+    "nasıl etkiler"
+   ],
+   "ne": [
+    "Egzersizin bağırsaklara etkisini",
+    "Hareketsizliğin bağırsaklara etkisini"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "bağırsak hareketlerini nasıl etkiler"
+   ]
+  },
+  {
+   "soru": "Uzun süre hareketsiz kalmak bağırsak hareketlerini nasıl etkiler?",
+   "secenekler": [
+    "Artırır",
+    "Yavaşlatır",
+    "Etkilemez"
+   ],
+   "dogru": 1,
+   "ipucu": "Sen durunca bağırsaklarına ne olur?",
+   "aciklama": "Uzun süre hareketsiz kalmak bağırsak hareketlerini yavaşlatır. (s. 99)",
+   "kavram": "Ekran Başında Hareketsizlik",
+   "ikiz": "i1",
+   "vurgu": [
+    "Uzun süre hareketsiz kalmak",
+    "nasıl etkiler"
+   ],
+   "ne": [
+    "Hareketsizliğin bağırsaklara etkisini",
+    "Egzersizin bağırsaklara etkisini"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "bağırsak hareketlerini nasıl etkiler"
+   ]
+  },
+  {
+   "soru": "Hangisi sindirim sistemi sağlığı için yanlış bir davranıştır?",
+   "secenekler": [
+    "Öğünleri atıştırmalıkla geçiştirmek",
+    "Yeterli su içmek",
+    "Düzenli egzersiz yapmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Su ve Düzenli Öğünler kartını hatırla.",
+   "aciklama": "Düzenli, dengeli ve yeterli öğünler sindirime yardım eder. Öğünleri atıştırmalıkla geçiştirmek bu düzeni bozar. (s. 99)",
+   "kavram": "Su ve Düzenli Öğünler",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "yanlış"
+   ],
+   "ne": [
+    "Sindirim için yanlış olan davranışı",
+    "Sindirim için doğru olan davranışı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "yanlış bir davranıştır"
    ]
   }
  ],
@@ -599,5 +730,6 @@
    "aciklama": "Yeterli su içmek; düzenli, dengeli ve yeterli öğünlerle beslenmek sindirim organlarının sağlıklı çalışmasına yardımcı olur (s. 96, 99).",
    "kavram": "Su ve Düzenli Öğünler"
   }
- ]
+ ],
+ "testSoru": 9
 }

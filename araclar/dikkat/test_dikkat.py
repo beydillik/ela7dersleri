@@ -8,6 +8,7 @@ KOD, KONU = sys.argv[1], sys.argv[2]
 KOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 D = json.load(open(os.path.join(KOK, "public", KOD, "konular", KONU + ".json"), encoding="utf-8"))
 DIL_EN = json.load(open(os.path.join(KOK, "public", KOD, "ders.json"), encoding="utf-8")).get("dil") == "en"   # İngilizce: Öğren'de Kelime Duvarı adımı
+PILOT = bool(json.load(open(os.path.join(KOK, "public", KOD, "ders.json"), encoding="utf-8")).get("okuPilot"))   # okuma pilotu: Öğren'de bulma yok (soru kelimesi sarı), Test'te "ne istiyor" + ikiz
 SONUC = []
 def ok(ad, kosul, ayrinti=""):
     SONUC.append((ad, bool(kosul))); print(("✓ " if kosul else "✗ ") + ad + (f"  [{ayrinti}]" if ayrinti and not kosul else ""))
@@ -66,7 +67,7 @@ with sync_playwright() as pw:
     ok("Rozet sade (yalnız 'Yazılıda çıkacak/çıkabilir' ya da hiç)", all(t in ("Yazılıda çıkacak", "Yazılıda çıkabilir") for t in rz), str(rz))
 
     # ---------- Öğren
-    ilk_kart = True; soru_say = 0; seri_test = None; kalp_ok = 0; ilk_bulmali = True; yanlis_test = False; tum_gor = False; kp_test = False
+    pilot_ogren = False; ilk_kart = True; soru_say = 0; seri_test = None; kalp_ok = 0; ilk_bulmali = True; yanlis_test = False; tum_gor = False; kp_test = False
     adim = int(page.inner_text("#pgTxt").split("/")[1].split()[0])
     # Türkçe/Matematik: "Hazır mısın?" (hazirlik) ve kavramlardaki "Birlikte çözelim" (cozum) / "Sıra sende" (sende) birer adımdır
     ek_adim = (1 if (D.get("hazirlik") or {}).get("maddeler") else 0) + sum(bool(k.get("cozum")) + bool(k.get("sende")) for k in D["kavramlar"])
@@ -94,7 +95,14 @@ with sync_playwright() as pw:
             kp_simdi = False
             if "cevap" in q and bulmali(q) and not serbest and not kp_test:
                 kp_test = kp_simdi = True; ok("Tuş takımı: sorunun kalbi bulunana kadar gizli", page.is_hidden("#qbox .kp"))
-            if not bulmali(q):
+            if PILOT and "secenekler" in q and not q.get("kanit"):
+                if not pilot_ogren:
+                    pilot_ogren = True
+                    ok("Pilot Öğren: bulma adımı yok, şıklar açık, soru kelimesi sarı vurgulu", page.is_visible("#qbox .opts") and page.query_selector("#qbox .kalp-not") is None and page.locator("#qbox .kk-run.vurgu").count() > 0)
+                    yanl = [j for j in range(len(q["secenekler"])) if j != q["dogru"]][0]
+                    page.locator("#qbox .opt").nth(yanl).click(); ileri(50)
+                    ok("Pilot Öğren: yanlış cevapta 'Sarı kelimeye tekrar bak'", "Sarı kelimeye tekrar bak" in page.inner_text("#qbox .fb"))
+            elif not bulmali(q):
                 if not tum_gor: tum_gor = True; ok("Kısa soru (bölge = sorunun tamamı): bulma adımı yok, şıklar açık", serbest and page.is_visible(f"#qbox {alan(q)}"))
             elif ilk_bulmali:
                 ilk_bulmali = False
@@ -181,14 +189,25 @@ with sync_playwright() as pw:
     page.click("[data-tab=test]"); ileri(300)
     page.click("[data-basla]"); ileri(200)
     toplam = int(re.search(r"/ (\d+)", page.inner_text(".akis .progress span")).group(1))
-    ok(f"Test: toplam soru sayısı değişmedi ({toplam})", toplam == len(D["sorular"]))
+    ok(f"Test: toplam soru sayısı değişmedi ({toplam})", toplam == D.get("testSoru", len(D["sorular"])))
     metinli_gor = 0; yanlis2 = False; tuzak_gor = False; sonuclar = []
-    seri_gor = False
+    seri_gor = False; ne_test = False; ne_say = 0; sira = []
     for _ in range(60):
         if page.query_selector(".akis") is None: break
         qtext = page.inner_text("#sq .q-text"); q = bul_q(qtext); met = bool(q.get("kanit")) and ("metin" in q or "tablo" in q)   # metinli alanı (Fen) ya da konudaki kanıtlı soru (Türkçe)
         no = int(re.search(r"Soru (\d+) /", page.inner_text(".akis .progress span")).group(1))
         if bulmali(q) and not met and page.query_selector("#sq .kalp-not") is None and page.locator("#sq .opt[disabled]").count() == 0: seri_gor = True
+        if page.query_selector(".akis .tekrar-etiket") is None: sira.append(q.get("ikiz"))
+        if page.query_selector("#sq .ne-adim:not(.tamam)"):   # okuma pilotu: "Bu soru senden ne istiyor?"
+            ne_say += 1
+            if not ne_test:
+                ne_test = True
+                ok("Pilot Test: 'Bu soru senden ne istiyor?' iki seçenek, şıklar gizli, dokunma adımı yok", page.locator("#sq .ne-opt").count() == 2 and page.is_hidden("#sq .opts") and page.query_selector("#sq .kalp-not") is None)
+                page.click("#sq .ne-opt[data-d='0']"); ileri(50)
+                ok("Pilot Test: yanlış seçimde 'Henüz değil', şıklar hâlâ gizli", "Henüz değil" in page.inner_text("#sq .ne-adim") and page.is_hidden("#sq .opts"))
+                page.click("#sq .ne-opt[data-d='1']"); ileri(50)
+                ok("Pilot Test: doğru seçimde şıklar açılır, soru kelimesi sarı olur", page.is_visible("#sq .opts") and page.locator("#sq .kk-run.vurgu").count() > 0 and "şunu istiyor" in page.inner_text("#sq .ne-adim"))
+            else: page.click("#sq .ne-opt[data-d='1']"); ileri(50)
         if page.query_selector("#sq .kalp-not") and "ok" not in (page.get_attribute("#sq .kalp-not", "class") or ""):
             if met: ok(f"Metinli: önce yalnız soru (metin gizli)", page.is_hidden("#sq .pasaj"))
             page.locator("#sq .kk-b").first.click(); ileri(50)
@@ -213,7 +232,7 @@ with sync_playwright() as pw:
             for t in [x for j, x in enumerate(q["secenekler"]) if j != q["dogru"]][:2]:
                 page.locator("#sq .opt", has_text=tam(t)).first.click(); ileri(50)
             ok("Test: iki yanlışta 'Neden yanlış yaptın?' sorulmuyor, Sonraki açık", page.query_selector("#sqEk .hn") is None and page.get_attribute("[data-sonraki]", "disabled") is None)
-            ok("Test: cevap gösterilince 'Sorunun kalbi' satırı", page.is_visible("#sq .kalp-hatir"))
+            ok("Test: cevap gösterilince 'Sorunun kalbi' satırı", page.is_visible("#sq .kalp-hatir") or PILOT)
         elif "cevap" in q or "nokta" in q:
             ok_k = page.is_visible(f"#sq {alan(q)}"); ileri(8000); cevapla(page, "#sq", q); ileri(50)
             if not ok_k: ok(f"Test: {alan(q)} sorunun kalbinden sonra açık", False, qtext[:60])
@@ -237,6 +256,9 @@ with sync_playwright() as pw:
             page.screenshot(path="/tmp/takildi.png"); break
         if not page.query_selector("[data-sonraki]"): print("DURUM:", page.inner_text("#panel")[:400]); break
         page.click("[data-sonraki]"); ileri(200)
+    if PILOT and any(x.get("ikiz") for x in D["sorular"]):
+        ciftler = sorted({k for k in sira if k and sira.count(k) == 2})   # çiftin tek üyesi de tek soru olarak gelebilir (çift sayısı sınırlı)
+        ok(f"Pilot Test: ikiz sorular art arda geldi ({len(ciftler)} çift) ve 'ne istiyor' adımı {ne_say} soruda çıktı", len(ciftler) >= 1 and all(sira[sira.index(k) + 1] == k for k in ciftler) and ne_say >= 2 * len(ciftler), str(sira))
     if kalp_ok >= 5: ok("Seri ödülü çalışıyor (5 üst üste bulunca bulmalı bir soru bulmasız geldi)", SERI_OGREN or seri_gor)
     else: print("   (bilgi) Öğren'de seri için yeterli bulmalı soru yok:", kalp_ok)
     beklenen_m = len(D.get("metinli", [])) + sum(1 for x in D["sorular"] if x.get("kanit") and ("metin" in x or "tablo" in x))

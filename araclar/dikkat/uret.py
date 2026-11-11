@@ -13,6 +13,15 @@ Veri:      araclar/dikkat/<kod>/<konu>.py  (bir dosyada birden çok konu olabili
   BOLGE   = {soru metni: [ifade, …] | "TUM"}   "sorunun kalbi" — HER soru için ZORUNLU, elle (ör. araclar/dikkat/fen1/bolge.py).
             "TUM": bölge sorunun tamamı → bulma adımı yok (≤4 kelimelik sorular; olumsuz/doğru-yanlış soruları hariç).
             Eksik soru varsa araç hata verir; TASLAK=1 ile eksikler için düzenlenecek taslak satırları basılır.
+Okuma pilotu (ders.json "okuPilot": true; fen1, 11 Kasım 2026) — hepsi isteğe bağlı:
+  VURGU   = {soru metni: [ifade, …]}          Öğren'de sarı fosforlu gösterilecek soru kelimesi; yoksa tetik kullanılır. Anlamı değiştiren
+                                              sözcük varsa birlikte yaz ("en az kaç", "ilk adım hangisidir").
+  NE      = {soru metni: [doğru, yanlış]}     Test'te iki seçenekli "Bu soru senden ne istiyor?" adımı; yanlış = Ela'nın tipik yanlış okuması.
+                                              İkisi de aynı kalıpta, isim cümleciği ("Sindirimin nerede başladığını").
+  EKSORU  = {konu: [ {soru, secenekler[3], dogru, ipucu, aciklama, kavram}, … ]}   konu testine eklenen sorular (ikizler için); soru metni
+                                              aynıysa yerindekini günceller. Bölgesi BOLGE'de olmalı.
+  IKIZ    = {konu: [[soru A, soru B], …]}     ikiz çift: aynı kök, tek kelime farkı; testte art arda gelir. İkisinde de NE zorunlu.
+  TESTSORU = {konu: sayı}                     testte sorulacak soru sayısı (havuz büyüdüyse); yoksa bütün sorular.
 Hata varsa hiçbir dosya yazılmaz. Sayıları yazdırır. Kitap sayfası kuralı: [s. N] işaretinin ÜSTÜNDEKİ metin N. sayfadadır.
 """
 import json, re, sys, os, glob
@@ -24,7 +33,7 @@ GEN = r"(?:hangisi\w*|hangileri\w*|hangi \w+|ne için|nedir|nelerdir|neler|ne ol
 def norm(s):
     return s.lower().replace("ı", "i").replace("İ", "i").replace("ş", "s").replace("ğ", "g").replace("ü", "u").replace("ö", "o").replace("ç", "c").replace("'", "").replace("’", "")
 
-veri = {k: {} for k in ("TEKRAR", "KISA", "OKUT", "METINLI", "ELLE", "BOLGE", "SERIT")}
+veri = {k: {} for k in ("TEKRAR", "KISA", "OKUT", "METINLI", "ELLE", "BOLGE", "SERIT", "VURGU", "NE", "EKSORU", "IKIZ", "TESTSORU")}
 for f in sorted(glob.glob(os.path.join(os.path.dirname(__file__), KOD, "*.py"))):
     g = {}; exec(open(f, encoding="utf-8").read(), g)
     for k in veri: veri[k].update(g.get(k, {}))
@@ -123,8 +132,42 @@ for kod in (ISTENEN or sorted(veri["TEKRAR"])):
     for q, ok in zip(kc, veri["OKUT"].get(kod, [])): q["okut"] = ok
     for q in kc: q["bolge"] = bolge_bul(q["soru"], q["tetik"])
     d["kisaCevap"] = kc
-    n = 0
+    # Okuma pilotu: ek sorular (ikizler) — aynı metinli soru varsa güncellenir, yoksa sona eklenir
+    for e in veri["EKSORU"].get(kod, []):
+        for a in ("soru", "secenekler", "dogru", "ipucu", "aciklama", "kavram"):
+            if a not in e: hata.append(f"{kod} EKSORU: {a} eksik ← {e.get('soru', '')[:50]}")
+        if len(e.get("secenekler", [])) != 3 or len(set(e.get("secenekler", []))) != 3 or e.get("dogru") not in range(3): hata.append(f"{kod} EKSORU: 3 farklı şık / doğru hatalı ← {e['soru'][:50]}")
+        if e.get("kavram") not in {k["ad"] for k in d["kavramlar"]}: hata.append(f"{kod} EKSORU: kavram yok: {e.get('kavram')}")
+        if not re.search(r"s\. \d+", e.get("aciklama", "")): hata.append(f"{kod} EKSORU: açıklamada sayfa yok ← {e['soru'][:50]}")
+        i = next((i for i, q in enumerate(d["sorular"]) if q["soru"] == e["soru"]), None)
+        if i is None: d["sorular"].append(dict(e))
+        else: d["sorular"][i] = dict(e)
+    test_soru = {q["soru"]: q for q in d["sorular"]}
+    for q in d["sorular"]: q.pop("ikiz", None)
+    for j, cift in enumerate(veri["IKIZ"].get(kod, [])):
+        if len(cift) != 2 or cift[0] == cift[1]: hata.append(f"{kod} IKIZ {j+1}: iki farklı soru olmalı"); continue
+        for sm in cift:
+            if sm not in test_soru: hata.append(f"{kod} IKIZ {j+1}: soru testte yok: {sm[:60]}")
+            elif sm not in veri["NE"]: hata.append(f"{kod} IKIZ {j+1}: ikiz soruya NE yazılmalı: {sm[:60]}")
+            else: test_soru[sm]["ikiz"] = f"i{j+1}"
+    if kod in veri["TESTSORU"]:
+        if not veri["METINLI"].get(kod): hata.append(f"{kod}: TESTSORU yalnız metinli sorusu olan konuda çalışır")
+        if veri["TESTSORU"][kod] > len(d["sorular"]): hata.append(f"{kod}: TESTSORU soru sayısından büyük")
+        d["testSoru"] = veri["TESTSORU"][kod]
+    else: d.pop("testSoru", None)
+    n = 0; nv = nn = 0
     for q in [k["soru"] for k in d["kavramlar"] if k.get("soru")] + d["sorular"]:
+        q.pop("vurgu", None); q.pop("ne", None)
+        if q["soru"] in veri["VURGU"]:
+            q["vurgu"] = veri["VURGU"][q["soru"]]; nv += 1
+            for b in q["vurgu"]:
+                if b not in q["soru"]: hata.append(f"{kod}: vurgu soruda yok: {b} ← {q['soru'][:60]}")
+                elif not kelime_sinir(q["soru"], b): hata.append(f"{kod}: vurgu kelimeyi ortadan kesiyor: {b} ← {q['soru'][:60]}")
+        if q["soru"] in veri["NE"]:
+            ne = veri["NE"][q["soru"]]; nn += 1
+            if len(ne) != 2 or ne[0] == ne[1] or not all(ne): hata.append(f"{kod}: NE iki farklı ifade olmalı ← {q['soru'][:60]}")
+            if q.get("kanit"): hata.append(f"{kod}: kanıtlı soruda NE kullanılmaz ← {q['soru'][:60]}")
+            q["ne"] = ne
         t = tetik_bul(q["soru"])
         if t: q["tetik"] = [t]
         q["bolge"] = bolge_bul(q["soru"], q.get("tetik")); n += 1
@@ -138,7 +181,8 @@ for kod in (ISTENEN or sorted(veri["TEKRAR"])):
     kontrol_kisa(kod, d, hata); kontrol_metinli(kod, d, hata)
     yaz.append((yol, d))
     print(f"{kod}: Hatırla ve Tekrarla {len(d['tekrar'])} cümle / {sum(len(re.findall(r'{[^{}]+}', t['c'])) for t in d['tekrar'])} boşluk"
-          f" | kısa cevap {len(kc)} | sorunun kalbi {n} soru | metinli {len(d.get('metinli', []))}")
+          f" | kısa cevap {len(kc)} | sorunun kalbi {n} soru | metinli {len(d.get('metinli', []))}"
+          + (f" | pilot: test havuzu {len(d['sorular'])} (testte {d.get('testSoru', len(d['sorular']))}), ikiz {len(veri['IKIZ'].get(kod, []))} çift, 'ne istiyor' {nn}, özel vurgu {nv}" if nn or nv or veri['IKIZ'].get(kod) else ""))
     if os.environ.get("GOSTER"):
         for q in [k["soru"] for k in d["kavramlar"] if k.get("soru")] + d["sorular"] + kc + d.get("metinli", []):
             print("    ", q.get("bolge"), "←", q["soru"])

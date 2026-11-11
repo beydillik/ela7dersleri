@@ -1717,3 +1717,30 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
   .ders-sayfa .konu-head h2 { font-size: clamp(26px, 2.5vw, 34px); line-height: 1.15; }
   .ders-sayfa .konu-head .meta .yz-rozet { display: inline-flex; }
 }
+
+/* Okuma pilotu (11 Kasım 2026): soru kelimesi sarı fosforlu; "Bu soru senden ne istiyor?" adımı */
+.kk-run.vurgu { background: #ffe45c; color: #1b2340; font-weight: 800; border-radius: 6px; padding: 0 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.kk-run.vurgu .kk { padding: 0; }
+:root[data-theme="dark"] .kk-run.vurgu { background: #f2c94c; color: #1b2340; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kk-run.vurgu { background: #f2c94c; color: #1b2340; } }
+.kk-run.vurgu.yanip { animation: vurguYan .45s ease-in-out 4 alternate; }
+@keyframes vurguYan { from { box-shadow: 0 0 0 0 #d9a400; } to { box-shadow: 0 0 0 3px #d9a400; } }
+.ne-adim { margin: 6px 0 12px; padding: 10px 12px; border-radius: 12px; background: var(--surface-2); display: grid; gap: 8px; }
+.ne-s { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 16px; }
+.ne-s svg { width: 18px; height: 18px; flex: none; }
+.ne-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ne-opt { text-align: left; border: 2px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 12px; padding: 10px 14px; font: inherit; font-weight: 600; cursor: pointer; }
+.ne-opt:hover:not(:disabled) { border-color: var(--accent); }
+.ne-opt.ne-x { opacity: .5; cursor: default; border-style: dashed; }
+.ne-not { margin: 0; font-size: 15px; }
+.ne-adim.tamam { display: flex; align-items: baseline; gap: 8px; padding: 8px 12px; font-size: 15px; background: #fff4d1; color: #4a3500; }
+.ne-tik { font-weight: 800; color: #1f8a5b; }
+:root[data-theme="dark"] .ne-adim.tamam { background: #3a2f12; color: #ffe6a8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ne-adim.tamam { background: #3a2f12; color: #ffe6a8; } }
+@media (max-width: 640px) { .ne-opts { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .kk-run.vurgu.yanip { animation: none; outline: 2px dashed #b58900; } }
+/* Kaldığın yer notu (ders açılınca) */
+.kal-yer { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 12px; background: var(--accent-soft); font-size: 15.5px; }
+.kal-yer svg { width: 34px; height: 34px; flex: none; }
+.kal-yer span { flex: 1 1 auto; }
+.kal-yer button { border: 0; background: none; color: var(--muted); font-size: 22px; line-height: 1; cursor: pointer; padding: 2px 6px; }
