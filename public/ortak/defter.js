@@ -2695,7 +2695,7 @@
       giris: (basla, devam) => {
         const gec = store.get(key("testler:" + S.konu), []), ilk = gec[0], son = gec[gec.length - 1];
         root.innerHTML = `<div class="stage"><div class="kicker">Konu testi</div><h3>${d.sorular.length} soru</h3>
-          ${robotDer(`Sorular tek tek gelecek. Her soruda 2 hakkın var; ilk yanlışta ipucu gelir. Yanlış yaptığın soru birkaç soru sonra, şıkları yer değiştirmiş olarak yeniden gelir.${TEKRAR.oncekiler().length ? " Araya önceki konulardan 2 soru da karışacak." : ""} Test, hepsini doğru yapınca biter.`)}
+          ${robotDer(`Sorular tek tek gelecek. Her soruda 2 hakkın var; ilk yanlışta ipucu gelir. Yanlış yaptığın soru birkaç soru sonra, şıkları yer değiştirmiş olarak yeniden gelir.${d.eskiKonu !== false && TEKRAR.oncekiler().length ? " Araya önceki konulardan 2 soru da karışacak." : ""} Test, hepsini doğru yapınca biter.`)}
           ${son ? `<div class="dk-durum"><b>İlk çözüşün:</b> ${tarihYaz(ilk.t)} · ${ilk.ilk1} / ${ilk.toplam} ilk denemede doğru${gec.length > 1 ? `<br><b>Son çözüşün:</b> ${tarihYaz(son.t)} · ${son.ilk1} / ${son.toplam} ilk denemede doğru` : ""}</div>` : ""}
           <div class="row">${devam ? `<button class="btn primary" data-devam>Kaldığın yerden devam et</button>` : `<button class="btn primary" data-basla>${son ? "Testi yeniden çöz" : "Başla"}</button>`}</div></div>`;
         const bb = $("[data-basla]", root); if (bb) bb.onclick = basla;
@@ -4523,10 +4523,10 @@
   // ---------- Konu menüsü (30 Ekim 2026): solda dikey ağaç menü ----------
   // Geniş ekranda (≥ 900 px) solda yapışkan ağaç: ünite başlıkları, yalnız açık ünite genişler. Dar ekranda aynı menü ☰ ile açılan çekmece.
   // Dar şerit ("menu-dar"): yalnız ünite numaraları + açık konunun numarası; ☰ ile menü üstte açılır (göz atma).
-  // Veli ayarı "menu": otomatik (Normal modda açık; Destekli/Odaklı modda konu açıkken dar) / acik / dar.
+  // Veli ayarı "menu": otomatik (Normal modda açık; Destekli/Odaklı/Özel modda konu açıkken dar) / acik / dar.
   // Ela'nın "« Daralt" / "Açık kalsın" seçimi bu cihazda saklanır (MENU_YEREL); veli ayarı ya da mod değişince geçersiz olur.
   const MENU_YEREL = "ela7:menu-el";
-  const MENU_SECENEK = [["otomatik", "Otomatik", "Normal modda açık; Destekli ve Odaklı modda konu açılınca dar şeride iner."],
+  const MENU_SECENEK = [["otomatik", "Otomatik", "Normal modda açık; Destekli, Odaklı ve Özel ayarlarda konu açılınca dar şeride iner."],
     ["acik", "Hep açık", "Konu listesi solda hep açık durur."], ["dar", "Hep dar", "Solda yalnız ünite numaraları; ☰ ile açılır."]];
   const genisEkran = () => matchMedia("(min-width: 900px)").matches;
   const menuImza = a => `${a.menu || "otomatik"}|${modBul(a)}`;
@@ -4535,7 +4535,7 @@
     if (y && y.imza === menuImza(a)) return y.v === "dar";
     if (a.menu === "acik") return false;
     if (a.menu === "dar") return true;
-    return ["destekli", "odakli"].includes(modBul(a)) && !!S.data;   // otomatik
+    return modBul(a) !== "normal" && !!S.data;   // otomatik: Normal dışındaki her mod (Destekli, Odaklı, Özel)
   }
   const menuSec = v => { store.set(MENU_YEREL, { v, imza: menuImza(ayar()) }); KAYIT.olay("menu", { secim: v }); };
   const uniteNo = (u, i) => u.no > 0 ? String(u.no) : u.no === 0 ? u.ad.trim()[0] : String(i + 1);
@@ -4664,9 +4664,9 @@
     const d = S.data; S.durakAsil = null;
     const donus = S.donus && allTopics().find(k => k.id === S.donus && isDurak(k));
     const vade = !donus && allTopics().find(k => isDurak(k) && k.hazir && durakKayit.zaman(k.id));
-    $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(d.unite)}</span><span class="pill">Konu ${no}</span><span class="pill">${esc(d.sayfalar)}</span>${donus ? `<button class="btn ghost dk-don" data-donus>← Ara Durak'a dön</button>` : ""}</div>
+    $("#content").innerHTML = `<section class="konu-head"><div class="meta"><span>${esc(d.unite)}</span><span class="pill">Konu ${no}</span><span class="pill">${esc(d.sayfalar)}</span>${yaziliRozet(S.konu)}${donus ? `<button class="btn ghost dk-don" data-donus>← Ara Durak'a dön</button>` : ""}</div>
       ${vade ? `<div class="dk-vade">${ICON.tekrar}<span><b>${esc(vade.baslik)}</b> için tekrar zamanı geldi.</span><button class="btn" data-vade="${esc(vade.id)}">Aç</button></div>` : ""}
-      <h2>${esc(d.baslik)}</h2>${yaziliRozet(S.konu)}
+      <h2>${esc(d.baslik)}</h2>
       <div class="tabs" role="tablist">
         <button class="tab" role="tab" data-tab="ogren">${ICON.ogren}Öğren</button>
         <button class="tab" role="tab" data-tab="bak">${ICON.bak}Konuya Bak</button>

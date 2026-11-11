@@ -1704,3 +1704,16 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .dd-liste, .dd-liste li { min-width: 0; overflow-wrap: anywhere; }
 .dd-genis { display: block; width: 100%; margin: 4px 0 2px; }
 .dd-liste:has(> li:only-child) { list-style: none; padding-left: 0; }
+
+/* Geniş ekran düzeni (11 Kasım 2026): robot düğmesi sağdaki boş şeritte durur, şıkların ve Devam'ın üstüne binmez;
+   konu başlığı kısalır, 1366×768'de Öğren kartının düğmeleri ilk ekranda kalır; koç balonu üstte, cevap alanından uzakta. */
+@media (min-width: 900px) {
+  .ders-sayfa .duzen > .wrap { padding-right: 104px; }
+  .ders-sayfa .bot-fab { flex-direction: column; gap: 2px; width: 76px; padding: 7px 6px 8px; border-radius: 22px; text-align: center; }
+  .ders-sayfa .bot-fab span { font-size: 12.5px; line-height: 1.15; }
+  .ders-sayfa .koc { top: 70px; bottom: auto; right: 104px; }
+  .ders-sayfa main { padding-top: 16px; gap: 16px; }
+  .ders-sayfa .konu-head { gap: 8px; }
+  .ders-sayfa .konu-head h2 { font-size: clamp(26px, 2.5vw, 34px); line-height: 1.15; }
+  .ders-sayfa .konu-head .meta .yz-rozet { display: inline-flex; }
+}
