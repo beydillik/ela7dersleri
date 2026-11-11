@@ -101,3 +101,8 @@ Gözden geçirmede görüldü: Fen'deki 194 bulmalı sorunun 194'ünde sorunun k
 - Ders adreste konu olmadan açılınca (`/fen1/`): son çalışılan konu (`son`); o konu tamam (yeşil tik) ise sıradaki tamamlanmamış hazır konu/durak; hiç kayıt yoksa ilk tamamlanmamış konu (eskiden son hazır konu açılıyordu). Sekme: yarım test → Test; Öğren bitmediyse Öğren (kaldığı adım); Öğren bitti ve son sekme Öğren ise Test (`kaldiginYer`).
 - Başlıkta robotlu tek satır not (`kalYerNot`, `.kal-yer`, × ile kapanır); olay `kal-yer`. Adreste konu varsa (ana sayfadaki ünite bağlantısı, menü) not çıkmaz.
 - Oturum başı `KOC.plan` önerisi ("önce şuna bakalım mı?") **çağrılmıyor**: tek öneri budur. Tekrar zamanı gelen Ara Durak başlıktaki şeritte ve menü rozetinde görünmeye devam eder.
+
+## Kalıplı yazma ipucu: doğru cümleyi seç (11 Kasım 2026; bütün dersler)
+- Kısa Cevap'ın "Kalıpla yaz" ekranındaki İpucu ve Yazılıya Hazırlık'taki 2. ipucu basamağı, her parçanın doğru cümlesini (`ornek`) iki çeldiriciyle (`havuz`) işaretsiz bir liste olarak "Sadece oku" diye gösteriyordu; Ela yanlış cümleleri de bilgi gibi okuyordu (Kemal fark etti: Fen u3k1 "Fiziksel sindirim" altında kimyasal sindirimin tanımı da vardı). Veri doğruydu, gösterim yanlıştı.
+- Artık `ipSecHTML`: her parça için "Hangisi doğru? Dokun."; yanlış dokunuş üstü çizili kapanır, 2. yanlışta doğru gösterilir, sonra yalnız doğru cümle kalır. Bütün parçalar bitince "Anladım, şimdi yazacağım" açılır. Olay `ipucu-sec` (parca, dogru 1/0). Tıklama belge düzeyinde dinlenir (yeniden çizimde bağlamaya gerek yok).
+- `havuz` alanının anlamı değişmedi: çeldirici cümleler (uret.py kontrolü aynı).

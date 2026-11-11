@@ -201,7 +201,7 @@
       "kart-bekle": "Odaklı mod: Öğren'de bilgi kartı okuma süresi dolmadan 'Sonraki'ye dokundu",
       "hedefli-tekrar": "Odaklı mod: testte tamamlanma eşiğinin altında kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
       "yazili-ac": "Yazılıya Hazırlık bölümü açıldı (konu: yazili:<id>)", "yazili-madde": "Yazılıya Hazırlık'ta bir sorunun bir maddesi bitti (tur: yazili-meb / yazili-ikiz; oran: işaretlenen parça oranı; otomatik: otomatik bulunan oran)",
-      "yazili-prova": "Prova yazılısı puanlandı (mod: ekran / sinav (sınav modu) / kagit; sureDk ekranda geçen süre)", "yazili-kuark": "Kuark'ın Hatası / Cevabını Düzelt turu bitti (dogru/toplam, ilk1; tamamladi: tam cevabı kendisi tamamladığı madde sayısı)", "yazili-kart": "Kısa Cevap Kartları'nda bir kart (sonuc 1 ilk denemede doğru şık, 2 ipucuyla/ikinci denemede, 0 gösterildi; tekrar: turda ikinci kez gelen)", "yazili-basamak": "Basamaklı maddede kalıpla yazma (basamak 3) kontrol edildi (oran)", "yazili-yazdir": "Prova soru kâğıdı, cevap anahtarı, sınav öncesi özet ya da bölüm çalışma kâğıdı yazdırıldı (mod: kagit / anahtar / ozet / ck-hatirla / ck-meb / ck-tekrar / ck-kuark; surum: ipuclu / sinav; konu: kazanım kodu ya da hepsi)", "yazili-sure": "Sınav modunda süre doldu, prova kendiliğinden puanlamaya geçti", "yazili-tekrar": "Konu Tekrarı bitti: konunun MEB soruları + benzerleri (kazanim, oran ortalaması, soru sayısı)", "ogren-ht": "Öğren'de Hatırla ve Tekrarla (bu konunun boşluklu cümleleri) turu bitti (ilk: ilk denemede doğru kelime, toplam, tur: 1 ya da 2, tamam:false: eşik altı, ikinci tura geçildi)", "ogren-kisa": "Öğren'de Kısa Cevap sorusu kontrol edildi (oran: puan getiren parçaların oranı, ipucu: ipucu kaç kez açıldı, serbest: kalıpsız deneme)", "ogren-kisa-oku": "Kısa Cevap'ta \"Bu soru senden ne istiyor?\" doğru seçildi (yanlis: önceki yanlış seçim, sureSn)", "hizli-tik": "Hızlı tık koruması: Hatırla ve Tekrarla'da cümleyi okumaya yetmeyecek kadar kısa sürede seçilen şık sayılmadı (sureSn, esikSn)", "konu-kagit": "Konu çalışma kâğıdı yazdırıldı (surum: ipuclu / sinav)", "ne-bul": "Okuma pilotu: iki seçenekli 'Bu soru senden ne istiyor?' adımı (sonuc 1 ilk seçimde, 2 ikinci seçimde; sureSn: soru açılınca doğru seçene kadar)", "kal-yer": "Ders açılınca kaldığı yer önerildi (tur: devam / siradaki / ilk; sekme)", "kalp-bul": "Dikkat pilotu: sorunun kalbini (asıl sorulan kısmı) bulma (sonuc 1 ilk dokunuşta, 2 ikinci dokunuşta, 0 gösterildi; yanlis: yanlış dokunuş sayısı; sureSn: soru açılınca bulana kadar)", "kalp-seri": "Dikkat pilotu: sorunun kalbini 5 kez üst üste ilk dokunuşta buldu; sonraki 3 soru bulmasız", "yazili-htekrar": "Hatırladığını Tekrarla'da bir konu bitti (ilk: ilk denemede doğru kelime, toplam)", "yazili-oku": "“Bu soru senden ne istiyor?” doğru seçildi (yanlis: önceki yanlış seçim sayısı)",
+      "yazili-prova": "Prova yazılısı puanlandı (mod: ekran / sinav (sınav modu) / kagit; sureDk ekranda geçen süre)", "yazili-kuark": "Kuark'ın Hatası / Cevabını Düzelt turu bitti (dogru/toplam, ilk1; tamamladi: tam cevabı kendisi tamamladığı madde sayısı)", "yazili-kart": "Kısa Cevap Kartları'nda bir kart (sonuc 1 ilk denemede doğru şık, 2 ipucuyla/ikinci denemede, 0 gösterildi; tekrar: turda ikinci kez gelen)", "yazili-basamak": "Basamaklı maddede kalıpla yazma (basamak 3) kontrol edildi (oran)", "yazili-yazdir": "Prova soru kâğıdı, cevap anahtarı, sınav öncesi özet ya da bölüm çalışma kâğıdı yazdırıldı (mod: kagit / anahtar / ozet / ck-hatirla / ck-meb / ck-tekrar / ck-kuark; surum: ipuclu / sinav; konu: kazanım kodu ya da hepsi)", "yazili-sure": "Sınav modunda süre doldu, prova kendiliğinden puanlamaya geçti", "yazili-tekrar": "Konu Tekrarı bitti: konunun MEB soruları + benzerleri (kazanim, oran ortalaması, soru sayısı)", "ogren-ht": "Öğren'de Hatırla ve Tekrarla (bu konunun boşluklu cümleleri) turu bitti (ilk: ilk denemede doğru kelime, toplam, tur: 1 ya da 2, tamam:false: eşik altı, ikinci tura geçildi)", "ogren-kisa": "Öğren'de Kısa Cevap sorusu kontrol edildi (oran: puan getiren parçaların oranı, ipucu: ipucu kaç kez açıldı, serbest: kalıpsız deneme)", "ogren-kisa-oku": "Kısa Cevap'ta \"Bu soru senden ne istiyor?\" doğru seçildi (yanlis: önceki yanlış seçim, sureSn)", "hizli-tik": "Hızlı tık koruması: Hatırla ve Tekrarla'da cümleyi okumaya yetmeyecek kadar kısa sürede seçilen şık sayılmadı (sureSn, esikSn)", "konu-kagit": "Konu çalışma kâğıdı yazdırıldı (surum: ipuclu / sinav)", "ipucu-sec": "Kalıplı yazma ipucunda bir parçanın doğru cümlesi seçildi (parca: cümle başı; dogru 1 ilk dokunuşta, 0 yanlıştan sonra ya da gösterildi)", "ne-bul": "Okuma pilotu: iki seçenekli 'Bu soru senden ne istiyor?' adımı (sonuc 1 ilk seçimde, 2 ikinci seçimde; sureSn: soru açılınca doğru seçene kadar)", "kal-yer": "Ders açılınca kaldığı yer önerildi (tur: devam / siradaki / ilk; sekme)", "kalp-bul": "Dikkat pilotu: sorunun kalbini (asıl sorulan kısmı) bulma (sonuc 1 ilk dokunuşta, 2 ikinci dokunuşta, 0 gösterildi; yanlis: yanlış dokunuş sayısı; sureSn: soru açılınca bulana kadar)", "kalp-seri": "Dikkat pilotu: sorunun kalbini 5 kez üst üste ilk dokunuşta buldu; sonraki 3 soru bulmasız", "yazili-htekrar": "Hatırladığını Tekrarla'da bir konu bitti (ilk: ilk denemede doğru kelime, toplam)", "yazili-oku": "“Bu soru senden ne istiyor?” doğru seçildi (yanlis: önceki yanlış seçim sayısı)",
       "sinav-soru": "Sınav Provası'nda bir sorunun sonucu (tur sinav-<tür>; sonuc 1 doğru 0 yanlış; kismi kısmi doğru oranı; cevap Ela'nın cevabı; kaynakKonu sorunun konusu)"
     }
   };
@@ -633,6 +633,28 @@
     alan.onclick = e => dok(e.target.closest(".kk"));
     alan.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { const k = e.target.closest(".kk"); if (k) { e.preventDefault(); dok(k); } } };
   }
+  // ---------- Kalıplı yazma ipucu: doğru cümleyi seçtir (11 Kasım 2026) ----------
+  // Eskiden doğru cümle iki çeldiriciyle karışık, işaretsiz bir liste olarak "Sadece oku" diye gösteriliyordu: Ela yanlış cümleleri de
+  // bilgi gibi okuyordu (Kemal fark etti). Artık her parça için "Hangisi doğru?" sorulur; yanlış dokunuş kapanır, 2. yanlışta doğru gösterilir.
+  // Bütün parçalar bitince "Anladım, şimdi yazacağım" açılır; yalnız doğru cümle ekranda kalır. Olay: ipucu-sec (dogru 1 ilk dokunuşta, 0 değil).
+  const ipSecHTML = (ps, sira) => ps.map((p, j) => `<div class="og-p-ip ip-sec"><b>${esc(p.bas)}</b> <span class="ip-sec-s">Hangisi doğru? Dokun.</span>
+    <div class="ip-sec-ops">${(sira[j] || [p.ornek]).map(x => `<button type="button" class="ip-sec-o" data-d="${x === p.ornek ? 1 : 0}">${esc(x)}</button>`).join("")}</div><p class="ip-sec-not" hidden></p></div>`).join("");
+  document.addEventListener("click", e => {
+    const b = e.target.closest(".ip-sec-o"); if (!b || b.disabled) return;
+    const kap = b.closest(".ip-sec"); if (!kap || kap.classList.contains("tamam")) return;
+    const bitir = ilk => {
+      kap.classList.add("tamam"); $$(".ip-sec-o", kap).forEach(x => { if (x.dataset.d === "1") { x.classList.add("ip-ok"); x.disabled = true; } else x.remove(); });
+      const s0 = $(".ip-sec-s", kap); if (s0) s0.textContent = ilk ? "✓ Doğru buldun." : "✓ Doğru cümle bu.";
+      const n = $(".ip-sec-not", kap); if (n) n.hidden = true;
+      KAYIT.olay("ipucu-sec", { parca: ($("b", kap) || {}).textContent || "", dogru: ilk ? 1 : 0 });
+      const kok = kap.parentElement; if (kok && !$(".ip-sec:not(.tamam)", kok)) { const a = $("[data-anladim]", kok.closest(".og-ipucu, .yz-ipucu-kutu") || kok); if (a) a.disabled = false; }
+    };
+    if (b.dataset.d === "1") return bitir(!$(".ip-x", kap));
+    b.disabled = true; b.classList.add("ip-x");
+    if ($$(".ip-x", kap).length >= 2) return bitir(false);
+    const n = $(".ip-sec-not", kap); n.hidden = false; n.textContent = "Bu değil. Parçanın başlığını bir daha oku.";
+  });
+
   // ---------- Okuma pilotu (ders.json "okuPilot": true; ilk kullanım fen1, 11 Kasım 2026; Kemal'in kararı) ----------
   // Sorunun kalbi hep cümle sonunda olduğu için dokunma adımı "sona dokun" refleksine dönebiliyordu. Pilot derste:
   //  • Öğren'deki kavram sorularında bulma adımı YOK: soru kelimesi (o.vurgu, yoksa o.tetik) sarı fosforlu gelir, şıklar açıktır (state.kalp = -2).
@@ -1114,9 +1136,9 @@
       const q = L[i], t0 = simdi(); let ipucu = 0;
       box.innerHTML = `${bas()}<h3>Kalıpla yaz</h3><p class="og-soru">${vurgu(q)}</p><p class="kn">💡 Soru senden şunu istiyor: ${esc(q.okut[0])}.</p>
         <div class="og-yaz">${q.parcalar.map((p, k) => `<label class="og-p"><span>${esc(p.bas)}</span><input type="text" data-p="${k}" autocomplete="off" placeholder="Buraya yaz…"></label>`).join("")}</div>
-        <div class="og-ipucu" hidden><p class="ek">Sadece oku. Yazarken bakmadan, aklında kalanı yazacaksın.</p>
-          ${q.parcalar.map(p => `<div class="og-p-ip"><b>${esc(p.bas)}</b><ul>${shuffle([p.ornek, ...p.havuz]).map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}
-          <button class="btn" type="button" data-anladim>Anladım, şimdi yazacağım</button></div>
+        <div class="og-ipucu" hidden><p class="ek">Her parça için doğru cümleye dokun. Sonra bakmadan, aklında kalanı yazacaksın.</p>
+          ${ipSecHTML(q.parcalar, q.parcalar.map(p => shuffle([p.ornek, ...p.havuz])))}
+          <button class="btn" type="button" data-anladim disabled>Anladım, şimdi yazacağım</button></div>
         <div class="row og-dug"><button class="btn ghost" type="button" data-ip>${ICON.ampul}İpucu</button><button class="btn primary" type="button" data-kontrol>Kontrol et</button></div>`;
       const yaz = $(".og-yaz", box), ip = $(".og-ipucu", box), dug = $(".og-dug", box);
       $("[data-ip]", box).onclick = () => { ipucu++; yaz.hidden = true; dug.hidden = true; ip.hidden = false; };
@@ -3380,8 +3402,8 @@
     const ipucuHTML = (m, seviye) => { const ps = m.basamak.parcalar; if (!seviye) return "";
       st.hvI = st.hvI || ps.map(p => shuffle([p.ornek, ...p.havuz]));
       return `<div class="yz-ipucu-kutu">${ICON.ampul}<div>${seviye >= 1 && st.faz === "yaz" ? `<p><b>Cümle başları:</b> ${ps.map(p => esc(p.bas)).join(" · ")}</p>` : ""}
-        ${seviye >= (st.faz === "yaz" ? 2 : 1) ? ps.map((p, j) => `<p class="yz-ipucu-hv"><b>${esc(p.bas)}</b> ${st.hvI[j].map(w => `<span class="chip">${esc(w)}</span>`).join(" ")}</p>`).join("") : ""}
-        <div class="row"><button class="btn primary" data-anladim>Anladım, şimdi yazacağım</button></div></div></div>`; };
+        ${seviye >= (st.faz === "yaz" ? 2 : 1) ? ipSecHTML(ps, st.hvI) : ""}
+        <div class="row"><button class="btn primary" data-anladim${seviye >= (st.faz === "yaz" ? 2 : 1) ? " disabled" : ""}>Anladım, şimdi yazacağım</button></div></div></div>`; };
     // İpucu açıkken yazı kutusu gizlenir (Kemal: ipucuna bakarak kopyalamasın); "Anladım" ile kapanır, Ela aklında kalanla yazar.
     const ipucuKapali = () => `<p class="yz-ipucu-not">${ICON.ampul}İpucuna baktın. Şimdi bakmadan, aklında kalanla yaz.</p>`;
     const ipucuMax = () => st.faz === "yaz" ? 2 : 1;
