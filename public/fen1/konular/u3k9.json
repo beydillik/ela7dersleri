@@ -266,6 +266,10 @@
    "bolge": [
     "hangi sırayla doğru verilmiştir"
    ],
+   "ne": [
+    "İdrarın geçtiği yapıların sırasını",
+    "İdrarın oluştuğu organı"
+   ],
    "vurgu": [
     "hangi sırayla",
     "doğru"
@@ -286,6 +290,10 @@
    ],
    "bolge": [
     "kaç temel yapı ve organdan oluşur"
+   ],
+   "ne": [
+    "Yapı ve organların sayısını",
+    "Yapı ve organların adlarını"
    ]
   },
   {
@@ -303,6 +311,10 @@
    ],
    "bolge": [
     "Kanı süzen (filtreleyen) organ hangisidir"
+   ],
+   "ne": [
+    "Kanı süzen organı",
+    "İdrarı depolayan organı"
    ]
   },
   {
@@ -320,6 +332,14 @@
    ],
    "bolge": [
     "depolandığı yer neresidir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "depolandığı yer neresidir"
+   ],
+   "ne": [
+    "İdrarın depolandığı yeri",
+    "İdrarın oluştuğu yeri"
    ]
   },
   {
@@ -337,6 +357,11 @@
    ],
    "bolge": [
     "uzaklaştırdığı maddelerden biri DEĞİLDİR"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Böbreklerin uzaklaştırmadığı maddeyi",
+    "Böbreklerin uzaklaştırdığı maddeyi"
    ],
    "vurgu": [
     "hangisi",
@@ -358,6 +383,10 @@
    ],
    "bolge": [
     "vücuda katkılarından biri hangisidir"
+   ],
+   "ne": [
+    "Terlemenin bir faydasını",
+    "Terlemeyi sağlayan organı"
    ]
   },
   {
@@ -375,6 +404,15 @@
    ],
    "bolge": [
     "vücuttan atılmasını sağlayan organ hangisidir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Sindirilmeyen besinlerin",
+    "organ hangisidir"
+   ],
+   "ne": [
+    "Sindirilmeyen besinleri atan organı",
+    "Karbon dioksit ve su buharını atan organı"
    ]
   },
   {
@@ -392,6 +430,10 @@
    ],
    "bolge": [
     "daha az zararlı hâle getiren organ hangisidir"
+   ],
+   "ne": [
+    "Zararlı maddeleri daha az zararlı yapan organı",
+    "Zararlı maddeleri vücuttan atan organı"
    ]
   },
   {
@@ -409,6 +451,15 @@
    ],
    "bolge": [
     "mesaneye ileten boru şeklindeki yapı hangisidir"
+   ],
+   "ikiz": "i4",
+   "vurgu": [
+    "mesaneye ileten",
+    "hangisidir"
+   ],
+   "ne": [
+    "İdrarı mesaneye ileten yapıyı",
+    "İdrarı vücuttan dışarı atan yapıyı"
    ]
   },
   {
@@ -426,6 +477,114 @@
    ],
    "bolge": [
     "Bunun nedeni ne olabilir"
+   ],
+   "ne": [
+    "Bora'nın idrara sıkışmamasının sebebini",
+    "Bora'nın neden çok terlediğini"
+   ]
+  },
+  {
+   "soru": "İdrarın oluştuğu yer neresidir?",
+   "secenekler": [
+    "Üreter (idrar borusu)",
+    "Böbrek",
+    "Mesane (idrar kesesi)"
+   ],
+   "dogru": 1,
+   "ipucu": "Kandan süzülen atıklar idrarı oluşturuyordu. Kanı kim süzüyordu?",
+   "aciklama": "Böbrekler kanı süzer; kandan süzülen atık maddeler idrarı oluşturur. (s. 132)",
+   "kavram": "Böbrekler",
+   "ikiz": "i1",
+   "vurgu": [
+    "oluştuğu yer neresidir"
+   ],
+   "ne": [
+    "İdrarın oluştuğu yeri",
+    "İdrarın depolandığı yeri"
+   ],
+   "bolge": [
+    "İdrarın oluştuğu yer neresidir"
+   ]
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi böbreklerin kandan uzaklaştırdığı maddelerden biridir?",
+   "secenekler": [
+    "Üre",
+    "Karbon dioksit",
+    "Sindirilmeyen besin"
+   ],
+   "dogru": 0,
+   "ipucu": "Böbrekler kartında fazla su, tuz, vitamin, hormon ve… vardı.",
+   "aciklama": "Böbrekler fazla su, tuz, vitamin, hormon ve üre gibi atıkları kandan uzaklaştırır. Karbon dioksidi akciğerler, sindirilmeyen besinleri kalın bağırsak atar. (s. 132, 133)",
+   "kavram": "Böbrekler",
+   "ikiz": "i2",
+   "vurgu": [
+    "hangisi",
+    "maddelerden biridir"
+   ],
+   "ne": [
+    "Böbreklerin uzaklaştırdığı maddeyi",
+    "Böbreklerin uzaklaştırmadığı maddeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "uzaklaştırdığı maddelerden biridir"
+   ]
+  },
+  {
+   "soru": "Karbon dioksit ve su buharının vücuttan atılmasını sağlayan organ hangisidir?",
+   "secenekler": [
+    "Kalın bağırsak",
+    "Deri",
+    "Akciğerler"
+   ],
+   "dogru": 2,
+   "ipucu": "Karbon dioksidi soluk verirken dışarı atarız.",
+   "aciklama": "Akciğerler, solunum sonucunda oluşan karbon dioksit ve su buharının vücuttan uzaklaştırılmasını sağlar. (s. 133)",
+   "kavram": "Diğer Yardımcı Organlar",
+   "ikiz": "i3",
+   "vurgu": [
+    "Karbon dioksit ve su buharının",
+    "organ hangisidir"
+   ],
+   "ne": [
+    "Karbon dioksit ve su buharını atan organı",
+    "Sindirilmeyen besinleri atan organı"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "vücuttan atılmasını sağlayan organ hangisidir"
+   ]
+  },
+  {
+   "soru": "Mesanede biriken idrarı vücuttan uzaklaştıran kanal hangisidir?",
+   "secenekler": [
+    "Üretra (idrar kanalı)",
+    "Kılcal damar",
+    "Üreter (idrar borusu)"
+   ],
+   "dogru": 0,
+   "ipucu": "İdrar kesesinden vücut dışına açılan kanalı düşün.",
+   "aciklama": "İdrar kesesinde biriktirilen idrar, üretra (idrar kanalı) yardımıyla vücuttan uzaklaştırılır. (s. 132)",
+   "kavram": "Üretra (İdrar Kanalı)",
+   "ikiz": "i4",
+   "vurgu": [
+    "vücuttan uzaklaştıran",
+    "hangisidir"
+   ],
+   "ne": [
+    "İdrarı vücuttan dışarı atan yapıyı",
+    "İdrarı mesaneye ileten yapıyı"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "vücuttan uzaklaştıran kanal hangisidir"
    ]
   }
  ],
@@ -660,5 +819,6 @@
    "aciklama": "Deri, vücuttaki su ve tuzun bir kısmını terleme yoluyla uzaklaştırır; bu yüzden Bora'nın idrarı az oldu (s. 129, 133).",
    "kavram": "Deri"
   }
- ]
+ ],
+ "testSoru": 10
 }

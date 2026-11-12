@@ -272,6 +272,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Tütünün hangi organa zarar verdiğini"
    ]
   },
   {
@@ -289,6 +293,10 @@
    ],
    "bolge": [
     "ifadesi neden yanlıştır"
+   ],
+   "ne": [
+    "Cümlenin yanlış olma sebebini",
+    "Tütünün solunuma nasıl zarar verdiğini"
    ],
    "vurgu": [
     "neden",
@@ -310,6 +318,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Havanın hangi organlardan geçtiğini"
    ]
   },
   {
@@ -327,6 +339,10 @@
    ],
    "bolge": [
     "ilk kurulduğunda hangi adı taşıyordu"
+   ],
+   "ne": [
+    "Yeşilay'ın ilk adını",
+    "Yeşilay'ın kurulduğu yılı"
    ],
    "vurgu": [
     "hangi adı",
@@ -348,6 +364,15 @@
    ],
    "bolge": [
     "ne için kullanılır"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Yeşil Dedektör",
+    "ne için"
+   ],
+   "ne": [
+    "Yeşil Dedektör'ün ne işe yaradığını",
+    "ALO 171'in ne işe yaradığını"
    ]
   },
   {
@@ -366,9 +391,14 @@
    "bolge": [
     "doğru bir davranış değildir"
    ],
+   "ikiz": "i2",
    "vurgu": [
     "Hangisi",
     "değildir"
+   ],
+   "ne": [
+    "Solunum için yanlış olan davranışı",
+    "Solunum için doğru olan davranışı"
    ]
   },
   {
@@ -386,6 +416,10 @@
    ],
    "bolge": [
     "hangisinden destek alabilir"
+   ],
+   "ne": [
+    "Bağımlıların destek alabileceği yeri",
+    "Bağımlılığın yol açtığı sorunları"
    ]
   },
   {
@@ -403,6 +437,10 @@
    ],
    "bolge": [
     "çalışma alanlarından biri hangisidir"
+   ],
+   "ne": [
+    "Yeşilay'ın çalıştığı bir alanı",
+    "Yeşilay Haftası'nın ne zaman olduğunu"
    ]
   },
   {
@@ -420,6 +458,15 @@
    ],
    "bolge": [
     "neden faydalıdır"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Spor yapmak",
+    "neden faydalıdır"
+   ],
+   "ne": [
+    "Sporun solunuma faydasını",
+    "Dengeli beslenmenin solunuma faydasını"
    ]
   },
   {
@@ -437,6 +484,10 @@
    ],
    "bolge": [
     "hangi rahatsızlıkları yaşadı"
+   ],
+   "ne": [
+    "Elif'in yaşadığı rahatsızlıkları",
+    "Hava kirliliğine neyin yol açtığını"
    ]
   },
   {
@@ -454,6 +505,10 @@
    ],
    "bolge": [
     "kimler, hangi yıl kurdu"
+   ],
+   "ne": [
+    "Yeşilay'ı kuranları ve kuruluş yılını",
+    "Yeşilay'ın ilk adını"
    ]
   },
   {
@@ -471,6 +526,91 @@
    ],
    "bolge": [
     "öğünlerde neye dikkat etmeliyiz"
+   ],
+   "ne": [
+    "Öğünlerde dikkat edilmesi gerekeni",
+    "Spor yaparken dikkat edilmesi gerekeni"
+   ]
+  },
+  {
+   "soru": "ALO 171 hattı ne için kullanılır?",
+   "secenekler": [
+    "Yasak alanda tütün kullanımını ihbar etmek için",
+    "Sigarayı bırakmak için uzmanlardan yardım almak için",
+    "Hava durumunu öğrenmek için"
+   ],
+   "dogru": 1,
+   "ipucu": "Hattın tam adı: ALO 171 Sigara Bırakma Danışma Hattı.",
+   "aciklama": "Tütün bağımlılığından kurtulmak isteyenler ALO 171 Sigara Bırakma Danışma Hattı'nı arayıp uzmanlardan yardım alabilir. (s. 126)",
+   "kavram": "Destek Hatları",
+   "ikiz": "i1",
+   "vurgu": [
+    "ALO 171",
+    "ne için"
+   ],
+   "ne": [
+    "ALO 171'in ne işe yaradığını",
+    "Yeşil Dedektör'ün ne işe yaradığını"
+   ],
+   "tetik": [
+    "ne için"
+   ],
+   "bolge": [
+    "ne için kullanılır"
+   ]
+  },
+  {
+   "soru": "Hangisi solunum sistemi sağlığı için doğru bir davranıştır?",
+   "secenekler": [
+    "Kirli ve tozlu ortamlarda uzun süre kalmak",
+    "Kapalı ortamları havalandırmak",
+    "Aşırı kilo almak"
+   ],
+   "dogru": 1,
+   "ipucu": "Havalandırma ve Maske kartını hatırla.",
+   "aciklama": "Solunum sistemi sağlığı için uzun süre vakit geçirilen kapalı mekânlar havalandırılmalıdır. (s. 125)",
+   "kavram": "Havalandırma ve Maske",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "doğru bir davranıştır"
+   ],
+   "ne": [
+    "Solunum için doğru olan davranışı",
+    "Solunum için yanlış olan davranışı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "doğru bir davranıştır"
+   ]
+  },
+  {
+   "soru": "Dengeli beslenmek solunum sistemi için neden faydalıdır?",
+   "secenekler": [
+    "Nefes ihtiyacını tamamen ortadan kaldırdığı için",
+    "Diyaframın hareketini kolaylaştırıp soluk alıp vermeyi rahatlattığı için",
+    "Akciğerleri küçülttüğü için"
+   ],
+   "dogru": 1,
+   "ipucu": "Dengeli Beslenme kartında diyafram geçiyordu.",
+   "aciklama": "Besinleri yeterli ve dengeli almak diyaframın hareketini kolaylaştırır, soluk alıp vermeyi rahatlatır. (s. 125)",
+   "kavram": "Dengeli Beslenme",
+   "ikiz": "i3",
+   "vurgu": [
+    "Dengeli beslenmek",
+    "neden faydalıdır"
+   ],
+   "ne": [
+    "Dengeli beslenmenin solunuma faydasını",
+    "Sporun solunuma faydasını"
+   ],
+   "tetik": [
+    "neden"
+   ],
+   "bolge": [
+    "neden faydalıdır"
    ]
   }
  ],
@@ -685,5 +825,6 @@
    "aciklama": "Yoğun araç trafiği ve fabrikalar hava kirliliğine yol açar; bu kirlilik solunum sistemi sağlığını olumsuz etkiler (s. 123).",
    "kavram": "Hava Kirliliği"
   }
- ]
+ ],
+ "testSoru": 12
 }

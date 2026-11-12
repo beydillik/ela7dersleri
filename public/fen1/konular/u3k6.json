@@ -251,6 +251,10 @@
    "bolge": [
     "Yetişkinlerin",
     "kaç saat uyuması gerekir"
+   ],
+   "ne": [
+    "Yetişkinlerin uyku süresini",
+    "Çocukların uyku süresini"
    ]
   },
   {
@@ -268,6 +272,15 @@
    ],
    "bolge": [
     "Hangisi sağlıklı yağlara örnektir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "sağlıklı yağlara"
+   ],
+   "ne": [
+    "Sağlıklı bir yağ örneğini",
+    "Kaçınılması gereken bir besin örneğini"
    ]
   },
   {
@@ -285,6 +298,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Egzersizin ne olduğunu"
    ]
   },
   {
@@ -302,6 +319,10 @@
    ],
    "bolge": [
     "kişiyi neden uzak tutar"
+   ],
+   "ne": [
+    "Faaliyetlerin kişiyi uzak tuttuğu şeyi",
+    "Faaliyetlerin neden yapıldığını"
    ]
   },
   {
@@ -319,6 +340,14 @@
    ],
    "bolge": [
     "hangisini önermedi"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "hangisini önermedi"
+   ],
+   "ne": [
+    "Doktorun önermediği şeyi",
+    "Doktorun önerdiği şeyi"
    ]
   },
   {
@@ -336,6 +365,10 @@
    ],
    "bolge": [
     "ne yapmalıdır"
+   ],
+   "ne": [
+    "Ekran başında kalan kişinin yapması gerekeni",
+    "Ekranın dolaşıma verdiği zararı"
    ]
   },
   {
@@ -354,9 +387,14 @@
    "bolge": [
     "hangisi doğrudur"
    ],
+   "ikiz": "i3",
    "vurgu": [
-    "hangisi",
-    "doğrudur"
+    "Sigara ve alkol",
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "Sigara ve alkolün etkisini",
+    "Sporun etkisini"
    ]
   },
   {
@@ -374,6 +412,90 @@
    ],
    "bolge": [
     "ne yapmalıyız"
+   ],
+   "ne": [
+    "Çevremizdekiler için yapmamız gerekeni",
+    "Kendi sağlığımız için yapmamız gerekeni"
+   ]
+  },
+  {
+   "soru": "Hangisi kaçınmamız gereken besinlere örnektir?",
+   "secenekler": [
+    "Zeytinyağı",
+    "Hazır gıdalar",
+    "Tam tahıllı gıdalar"
+   ],
+   "dogru": 1,
+   "ipucu": "Dengeli Beslenme kartında nelerden kaçınmamız gerekiyordu?",
+   "aciklama": "Kalp ve damar sağlığı için hazır gıdalardan, aşırı şeker ve tuzdan kaçınmalıyız. (s. 115)",
+   "kavram": "Dengeli Beslenme",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "kaçınmamız gereken"
+   ],
+   "ne": [
+    "Kaçınılması gereken bir besin örneğini",
+    "Sağlıklı bir yağ örneğini"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi kaçınmamız gereken besinlere örnektir"
+   ]
+  },
+  {
+   "soru": "Doktor, Mehmet'e hangisini önerdi?",
+   "secenekler": [
+    "Daha çok hazır gıda yemesini",
+    "Yeteri kadar su içmesini",
+    "Gün boyu hareketsiz kalmasını"
+   ],
+   "dogru": 1,
+   "ipucu": "Doktor Mehmet'e sağlıklı bir yaşam önerdi.",
+   "aciklama": "Doktor Mehmet'e yeteri kadar su içmesini; az yağlı, az tuzlu, taze yiyecekler yemesini ve spor yapmasını önerdi. (s. 113)",
+   "kavram": "Yağlı, Tuzlu ve Hazır Gıdalar",
+   "ikiz": "i2",
+   "vurgu": [
+    "hangisini önerdi"
+   ],
+   "ne": [
+    "Doktorun önerdiği şeyi",
+    "Doktorun önermediği şeyi"
+   ],
+   "tetik": [
+    "hangisini"
+   ],
+   "bolge": [
+    "hangisini önerdi"
+   ]
+  },
+  {
+   "soru": "Spor yapmak için hangisi doğrudur?",
+   "secenekler": [
+    "Kan dolaşımını yavaşlatır",
+    "Kan damarlarına zarar verir",
+    "Organlara daha fazla oksijen ve besin iletilmesini sağlar"
+   ],
+   "dogru": 2,
+   "ipucu": "Spor yapınca kan daha hızlı dolaşır. Organlara ne ulaşır?",
+   "aciklama": "Spor yapmak kanın vücutta hızlı dolaşımını sağlar; böylece organlara daha fazla oksijen ve besin iletilir. (s. 115)",
+   "kavram": "Spor ve Sosyal Faaliyetler",
+   "ikiz": "i3",
+   "vurgu": [
+    "Spor yapmak",
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "Sporun etkisini",
+    "Sigara ve alkolün etkisini"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğrudur"
    ]
   }
  ],
@@ -585,5 +707,6 @@
    "aciklama": "Doktor yeterince su içmesini; az yağlı, az tuzlu, taze ve sağlıklı yiyecekler yemesini önerdi. Hazır gıdalardan, aşırı şeker ve tuzdan kaçınılmalıdır (s. 113, 115).",
    "kavram": "Yağlı, Tuzlu ve Hazır Gıdalar"
   }
- ]
+ ],
+ "testSoru": 8
 }

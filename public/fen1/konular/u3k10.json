@@ -243,6 +243,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Tuzlu gıdaların hangi besinler olduğunu"
    ]
   },
   {
@@ -260,6 +264,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Suyun ne işe yaradığını"
    ]
   },
   {
@@ -277,6 +285,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Proteinin hangi besinlerde bulunduğunu"
    ]
   },
   {
@@ -294,6 +306,15 @@
    ],
    "bolge": [
     "faydalarından biridir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "faydalarından"
+   ],
+   "ne": [
+    "Yeterli su içmenin bir faydasını",
+    "Teknoloji bağımlılığının bir zararını"
    ]
   },
   {
@@ -312,6 +333,15 @@
    "bolge": [
     "Gereğinden fazla",
     "böbrekleri nasıl etkiler"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Gereğinden fazla",
+    "böbrekleri nasıl etkiler"
+   ],
+   "ne": [
+    "Fazla su içmenin böbreklere etkisini",
+    "Yeterli su içmenin böbrek taşına etkisini"
    ]
   },
   {
@@ -329,6 +359,15 @@
    ],
    "bolge": [
     "böbrekler için ne söylenebilir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Düzenli egzersiz yapan",
+    "ne söylenebilir"
+   ],
+   "ne": [
+    "Egzersizin böbreklere etkisini",
+    "Hareketsizliğin böbreklere etkisini"
    ]
   },
   {
@@ -346,6 +385,10 @@
    ],
    "bolge": [
     "hangi yolla engelleyebilir"
+   ],
+   "ne": [
+    "Böbreklerin çalışmasının hangi yolla engellendiğini",
+    "Teknoloji bağımlılığının ne olduğunu"
    ]
   },
   {
@@ -363,6 +406,10 @@
    ],
    "bolge": [
     "ona ne önerdi"
+   ],
+   "ne": [
+    "Doktorun Uygar Bey'e önerisini",
+    "Uygar Bey'in rahatsızlığının belirtisini"
    ]
   },
   {
@@ -381,9 +428,119 @@
    "bolge": [
     "doğru bir davranıştır"
    ],
+   "ikiz": "i4",
    "vurgu": [
     "Hangisi",
     "doğru"
+   ],
+   "ne": [
+    "Boşaltım için doğru olan davranışı",
+    "Boşaltım için yanlış olan davranışı"
+   ]
+  },
+  {
+   "soru": "Hangisi teknoloji bağımlılığının zararlarından biridir?",
+   "secenekler": [
+    "Vücut sıcaklığını düzenler",
+    "Kan akış hızını yavaşlatabilir",
+    "Böbreklerin daha sağlıklı çalışmasını sağlar"
+   ],
+   "dogru": 1,
+   "ipucu": "Ekran başında uzun süre hareketsiz kalınca kana ne olur?",
+   "aciklama": "Teknoloji bağımlısı bireyler ekran başında uzun süre hareketsiz kalabilir; hareketsizlik kan akış hızını yavaşlatabilir. (s. 137)",
+   "kavram": "Teknoloji Bağımlılığı",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "zararlarından"
+   ],
+   "ne": [
+    "Teknoloji bağımlılığının bir zararını",
+    "Yeterli su içmenin bir faydasını"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "zararlarından biridir"
+   ]
+  },
+  {
+   "soru": "Yeterli su içmek böbrek taşı oluşumunu nasıl etkiler?",
+   "secenekler": [
+    "Artırır",
+    "Azaltır",
+    "Etkilemez"
+   ],
+   "dogru": 1,
+   "ipucu": "Yeterli Su İçmek kartında azalan rahatsızlıklar vardı.",
+   "aciklama": "Gün içinde yeterli miktarda su içmek böbrek taşı oluşumu, idrar yolu enfeksiyonları gibi rahatsızlıkları azaltır. (s. 137)",
+   "kavram": "Yeterli Su İçmek",
+   "ikiz": "i2",
+   "vurgu": [
+    "Yeterli",
+    "böbrek taşı oluşumunu nasıl etkiler"
+   ],
+   "ne": [
+    "Yeterli su içmenin böbrek taşına etkisini",
+    "Fazla su içmenin böbreklere etkisini"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "böbrek taşı oluşumunu nasıl etkiler"
+   ]
+  },
+  {
+   "soru": "Uzun süre ekran başında hareketsiz kalan birinde böbrekler için ne söylenebilir?",
+   "secenekler": [
+    "Daha sağlıklı çalışır",
+    "Verimli çalışması engellenebilir",
+    "Çalışmayı tamamen bırakır"
+   ],
+   "dogru": 1,
+   "ipucu": "Teknoloji Bağımlılığı kartında böbreklerin çalışmasından söz ediliyordu.",
+   "aciklama": "Hareketsizlik kan akış hızını yavaşlatabilir. Ayrıca az su içmek, stres ve uyku bozukluğu böbreklerin verimli çalışmasını engelleyebilir. (s. 137)",
+   "kavram": "Teknoloji Bağımlılığı",
+   "ikiz": "i3",
+   "vurgu": [
+    "hareketsiz kalan",
+    "ne söylenebilir"
+   ],
+   "ne": [
+    "Hareketsizliğin böbreklere etkisini",
+    "Egzersizin böbreklere etkisini"
+   ],
+   "bolge": [
+    "böbrekler için ne söylenebilir"
+   ]
+  },
+  {
+   "soru": "Hangisi boşaltım sisteminin sağlığını korumak için yanlış bir davranıştır?",
+   "secenekler": [
+    "Ekran başında saatlerce oturmak",
+    "Arkadaşlarla sosyal faaliyetlere katılmak",
+    "Düzenli egzersiz yapmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Teknoloji Bağımlılığı kartını hatırla.",
+   "aciklama": "Ekran başında uzun süre hareketsiz kalmak boşaltım sistemini olumsuz etkiler; sosyal ve sportif faaliyetler ise korur. (s. 137)",
+   "kavram": "Teknoloji Bağımlılığı",
+   "ikiz": "i4",
+   "vurgu": [
+    "Hangisi",
+    "yanlış"
+   ],
+   "ne": [
+    "Boşaltım için yanlış olan davranışı",
+    "Boşaltım için doğru olan davranışı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "yanlış bir davranıştır"
    ]
   }
  ],
@@ -595,5 +752,6 @@
    "aciklama": "Doktor yeterince su içmesini önerdi. Yeterli su içmek böbrek taşı ve idrar yolu enfeksiyonu gibi rahatsızlıkları azaltır (s. 135, 137).",
    "kavram": "Yeterli Su İçmek"
   }
- ]
+ ],
+ "testSoru": 9
 }

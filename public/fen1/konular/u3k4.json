@@ -238,6 +238,10 @@
    ],
    "bolge": [
     "hangi iki bölümden oluşur"
+   ],
+   "ne": [
+    "Kanı oluşturan iki bölümü",
+    "Kanın iki görevini"
    ]
   },
   {
@@ -255,6 +259,15 @@
    ],
    "bolge": [
     "en az sayıda bulunan hücre hangisidir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "en az sayıda",
+    "hangisidir"
+   ],
+   "ne": [
+    "Kanda en az bulunan hücreyi",
+    "Kanda en çok bulunan hücreyi"
    ]
   },
   {
@@ -272,6 +285,15 @@
    ],
    "bolge": [
     "taşıyan kan hücresi hangisidir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Oksijen ve karbon dioksidi taşıyan",
+    "hangisidir"
+   ],
+   "ne": [
+    "Oksijen ve karbon dioksidi taşıyan hücreyi",
+    "Mikroplara karşı savunan hücreyi"
    ]
   },
   {
@@ -289,6 +311,10 @@
    ],
    "bolge": [
     "büyük bir kısmı neden oluşur"
+   ],
+   "ne": [
+    "Plazmanın çoğunu oluşturan maddeyi",
+    "Plazmanın neden önemli olduğunu"
    ]
   },
   {
@@ -306,6 +332,11 @@
    ],
    "bolge": [
     "kan hücresi değildir"
+   ],
+   "ikiz": "i3",
+   "ne": [
+    "Kan hücresi olmayanı",
+    "Kan hücresi olanı"
    ],
    "vurgu": [
     "hangisi",
@@ -327,6 +358,10 @@
    ],
    "bolge": [
     "atık maddeleri ne yapar"
+   ],
+   "ne": [
+    "Kanın atıklara ne yaptığını",
+    "Atıkların nerede oluştuğunu"
    ]
   },
   {
@@ -344,6 +379,91 @@
    ],
    "bolge": [
     "başka hangi adla anılır"
+   ],
+   "ne": [
+    "Akyuvarların diğer adını",
+    "Akyuvarların görevini"
+   ]
+  },
+  {
+   "soru": "Kanda en fazla sayıda bulunan hücre hangisidir?",
+   "secenekler": [
+    "Akyuvar",
+    "Alyuvar",
+    "Kan pulcuğu"
+   ],
+   "dogru": 1,
+   "ipucu": "Kana kırmızı rengi veren hücreyi düşün.",
+   "aciklama": "Alyuvarlar kana kırmızı rengi veren ve sayısı en fazla olan hücrelerdir. (s. 107)",
+   "kavram": "Alyuvar",
+   "ikiz": "i1",
+   "vurgu": [
+    "en fazla sayıda",
+    "hangisidir"
+   ],
+   "ne": [
+    "Kanda en çok bulunan hücreyi",
+    "Kanda en az bulunan hücreyi"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en fazla sayıda bulunan hücre hangisidir"
+   ]
+  },
+  {
+   "soru": "Mikroplara karşı savunmada görevli kan hücresi hangisidir?",
+   "secenekler": [
+    "Akyuvar",
+    "Kan pulcuğu",
+    "Alyuvar"
+   ],
+   "dogru": 0,
+   "ipucu": "Vücudun bekçileri hangi hücrelerdi?",
+   "aciklama": "Beyaz kan hücreleri olan akyuvarlar vücudun mikroplara karşı savunmasında görevlidir. (s. 107)",
+   "kavram": "Akyuvar",
+   "ikiz": "i2",
+   "vurgu": [
+    "Mikroplara karşı savunmada",
+    "hangisidir"
+   ],
+   "ne": [
+    "Mikroplara karşı savunan hücreyi",
+    "Oksijen ve karbon dioksidi taşıyan hücreyi"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "görevli kan hücresi hangisidir"
+   ]
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi bir kan hücresidir?",
+   "secenekler": [
+    "Plazma",
+    "Kan pulcuğu",
+    "Hormon"
+   ],
+   "dogru": 1,
+   "ipucu": "Kan hücreleri üç gruptu: alyuvar, akyuvar ve…",
+   "aciklama": "Kan hücreleri alyuvar, akyuvar ve kan pulcuklarıdır. Plazma kanın sıvı kısmıdır; hormonlar plazmada bulunur. (s. 107)",
+   "kavram": "Kan Pulcukları",
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi",
+    "kan hücresidir"
+   ],
+   "ne": [
+    "Kan hücresi olanı",
+    "Kan hücresi olmayanı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi bir kan hücresidir"
    ]
   }
  ],
@@ -553,5 +673,6 @@
    "aciklama": "Yaralanmalarda kan pulcukları damarların iç yüzeyinde pıhtılaşır, zedelenen kısmı tıkayarak kan kaybını önler (s. 107). (Zeynep'in hikâyesi kitap dışı bir örnektir; bilgi kitaptandır.)",
    "kavram": "Kan Pulcukları"
   }
- ]
+ ],
+ "testSoru": 7
 }

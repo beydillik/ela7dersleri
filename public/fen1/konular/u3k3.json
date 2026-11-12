@@ -272,6 +272,10 @@
    ],
    "bolge": [
     "hangi sistemin görevidir"
+   ],
+   "ne": [
+    "Atıkları uzaklaştıran sistemi",
+    "Atıkların oluştuğu yeri"
    ]
   },
   {
@@ -289,6 +293,10 @@
    ],
    "bolge": [
     "Kalp hangi dokudan oluşur"
+   ],
+   "ne": [
+    "Kalbin yapıldığı dokuyu",
+    "Kalbin ne işe yaradığını"
    ]
   },
   {
@@ -306,6 +314,10 @@
    ],
    "bolge": [
     "birbirine bağlayan damarlar hangileridir"
+   ],
+   "ne": [
+    "İki damar türünü birbirine bağlayan damarı",
+    "Kalpten çıkan kanı taşıyan damarı"
    ]
   },
   {
@@ -323,6 +335,15 @@
    ],
    "bolge": [
     "Hangi toplardamar oksijence zengin kan taşır"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangi toplardamar",
+    "oksijence zengin"
+   ],
+   "ne": [
+    "Oksijence zengin kan taşıyan toplardamarı",
+    "Oksijeni az kan taşıyan atardamarı"
    ]
   },
   {
@@ -340,6 +361,15 @@
    ],
    "bolge": [
     "akciğere ulaşan kanda ne olur"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "akciğere",
+    "ne olur"
+   ],
+   "ne": [
+    "Kanda akciğerde olan değişikliği",
+    "Kanda hücrelerde olan değişikliği"
    ]
   },
   {
@@ -357,6 +387,15 @@
    ],
    "bolge": [
     "kalbin hangi tarafına gelir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "vücuttan dönen",
+    "hangi tarafına"
+   ],
+   "ne": [
+    "Vücuttan dönen kanın geldiği tarafı",
+    "Akciğerden dönen kanın geldiği tarafı"
    ]
   },
   {
@@ -374,6 +413,10 @@
    ],
    "bolge": [
     "neyi temsil eder"
+   ],
+   "ne": [
+    "Kâğıt renklerinin anlamını",
+    "Oyunun nasıl oynandığını"
    ]
   },
   {
@@ -391,6 +434,15 @@
    ],
    "bolge": [
     "yolu hangi dolaşımdır"
+   ],
+   "ikiz": "i4",
+   "vurgu": [
+    "vücut",
+    "hangi dolaşımdır"
+   ],
+   "ne": [
+    "Kalp-vücut-kalp yolunun adını",
+    "Kalp-akciğer-kalp yolunun adını"
    ]
   },
   {
@@ -408,6 +460,118 @@
    ],
    "bolge": [
     "Nabız neyi gösterir"
+   ],
+   "ne": [
+    "Nabzın neyi gösterdiğini",
+    "Nabzın nasıl ölçüldüğünü"
+   ]
+  },
+  {
+   "soru": "Hangi atardamar oksijeni az kan taşır?",
+   "secenekler": [
+    "Kalpten akciğerlere giden atardamar",
+    "Kalpten bacaklara giden atardamar",
+    "Kalpten kollara giden atardamar"
+   ],
+   "dogru": 0,
+   "ipucu": "Atardamar kartında bir istisna vardı. Hangi atardamar farklıydı?",
+   "aciklama": "Kalpten akciğerlere giden atardamar dışındaki bütün atardamarlar oksijence zengin kan taşır. (s. 104)",
+   "kavram": "Atardamar",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangi atardamar",
+    "oksijeni az"
+   ],
+   "ne": [
+    "Oksijeni az kan taşıyan atardamarı",
+    "Oksijence zengin kan taşıyan toplardamarı"
+   ],
+   "tetik": [
+    "Hangi atardamar"
+   ],
+   "bolge": [
+    "Hangi atardamar oksijeni az kan taşır"
+   ]
+  },
+  {
+   "soru": "Büyük kan dolaşımında hücrelerde kullanılan kanda ne olur?",
+   "secenekler": [
+    "Oksijeni azalır, karbon dioksiti artar",
+    "Oksijeni artar, karbon dioksiti azalır",
+    "Hiçbir şey değişmez"
+   ],
+   "dogru": 0,
+   "ipucu": "Hücreler kandan oksijen alır, kana atık verir.",
+   "aciklama": "Vücuda yayılan kan hücrelerde kullanılınca oksijen oranı azalır, karbon dioksit oranı artar. (s. 105)",
+   "kavram": "Büyük Kan Dolaşımı",
+   "ikiz": "i2",
+   "vurgu": [
+    "hücrelerde",
+    "ne olur"
+   ],
+   "ne": [
+    "Kanda hücrelerde olan değişikliği",
+    "Kanda akciğerde olan değişikliği"
+   ],
+   "tetik": [
+    "ne olur"
+   ],
+   "bolge": [
+    "hücrelerde kullanılan kanda ne olur"
+   ]
+  },
+  {
+   "soru": "Küçük kan dolaşımında akciğerden dönen kan kalbin hangi tarafına gelir?",
+   "secenekler": [
+    "Sol tarafına",
+    "Hiçbir tarafına gelmez",
+    "Sağ tarafına"
+   ],
+   "dogru": 0,
+   "ipucu": "Küçük Kan Dolaşımı kartında oksijenlenen kan nereye dönüyordu?",
+   "aciklama": "Oksijenlenmiş kan, akciğerden toplardamarla kalbin sol tarafına gelir. (s. 105)",
+   "kavram": "Küçük Kan Dolaşımı",
+   "ikiz": "i3",
+   "vurgu": [
+    "akciğerden dönen",
+    "hangi tarafına"
+   ],
+   "ne": [
+    "Akciğerden dönen kanın geldiği tarafı",
+    "Vücuttan dönen kanın geldiği tarafı"
+   ],
+   "tetik": [
+    "hangi tarafına"
+   ],
+   "bolge": [
+    "kalbin hangi tarafına gelir"
+   ]
+  },
+  {
+   "soru": "\"Kalp → akciğer → kalp\" yolu hangi dolaşımdır?",
+   "secenekler": [
+    "Küçük kan dolaşımı",
+    "Büyük kan dolaşımı",
+    "Sindirim"
+   ],
+   "dogru": 0,
+   "ipucu": "Kan yalnız akciğere gidip dönüyorsa yol kısadır.",
+   "aciklama": "Kalpten çıkan kanın akciğerlere, oradan tekrar kalbe gelmesine küçük kan dolaşımı denir. (s. 105)",
+   "kavram": "Küçük Kan Dolaşımı",
+   "ikiz": "i4",
+   "vurgu": [
+    "akciğer",
+    "hangi dolaşımdır"
+   ],
+   "ne": [
+    "Kalp-akciğer-kalp yolunun adını",
+    "Kalp-vücut-kalp yolunun adını"
+   ],
+   "tetik": [
+    "hangi dolaşımdır"
+   ],
+   "bolge": [
+    "yolu hangi dolaşımdır"
    ]
   }
  ],
@@ -634,5 +798,6 @@
    "aciklama": "Barış maçta çok koştuğu için kalbi hızlı atıyor. Nabız (kalp atış hızı) yaşa, cinsiyete ve aktiviteye göre değişir (s. 101, 105).",
    "kavram": "Kalp"
   }
- ]
+ ],
+ "testSoru": 9
 }

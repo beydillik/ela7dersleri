@@ -279,6 +279,10 @@
    ],
    "bolge": [
     "nereye başvurabilir"
+   ],
+   "ne": [
+    "Kan bağışı için gidilecek yeri",
+    "Kimlerin kan verebileceğini"
    ]
   },
   {
@@ -296,6 +300,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Türk Kızılay'ın ne iş yaptığını"
    ]
   },
   {
@@ -313,6 +321,10 @@
    ],
    "bolge": [
     "Hangisi kan bağışçısı olabilir"
+   ],
+   "ne": [
+    "Kan verebilecek kişiyi",
+    "Kan veremeyecek kişiyi"
    ]
   },
   {
@@ -330,6 +342,10 @@
    ],
    "bolge": [
     "ne kadar dinlenmek faydalıdır"
+   ],
+   "ne": [
+    "Kan verdikten sonraki dinlenme süresini",
+    "Kaç ayda bir kan verilebileceğini"
    ]
   },
   {
@@ -347,6 +363,14 @@
    ],
    "bolge": [
     "sonraki adım hangisidir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "sonraki adım hangisidir"
+   ],
+   "ne": [
+    "Muayeneden sonraki adımı",
+    "Muayeneden önceki adımı"
    ]
   },
   {
@@ -354,11 +378,21 @@
    "secenekler": [
     "Doktor olmak",
     "18 yaşından büyük ve akli dengesi yerinde olmak",
-    "Sporcu olmak"
+    "18–65 yaş arasında ve 50 kilogramın üzerinde olmak"
    ],
    "dogru": 1,
    "ipucu": "Kuralların ilk maddesindeki yaşı hatırla.",
-   "aciklama": "18 yaşından büyük ve akli dengesi yerinde olan herkes organ bağışlayabilir. (s. 112)",
+   "aciklama": "18 yaşından büyük ve akli dengesi yerinde olan herkes organ bağışlayabilir. 18–65 yaş ve 50 kilogram şartı kan bağışı içindir. (s. 111, 112)",
+   "kavram": "Organ Bağışının Kuralları",
+   "ikiz": "i2",
+   "vurgu": [
+    "Organ bağışı",
+    "hangi şartı"
+   ],
+   "ne": [
+    "Organ bağışı için gereken şartı",
+    "Kan bağışı için gereken şartı"
+   ],
    "tetik": [
     "hangi şartı"
    ],
@@ -381,6 +415,14 @@
    ],
    "bolge": [
     "hangisine göre ayrım yapılmaz"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisine göre ayrım yapılmaz"
+   ],
+   "ne": [
+    "Organ verilirken ayrım yapılmayan durumu",
+    "Organ verilirken öncelikle bakılan durumu"
    ]
   },
   {
@@ -398,6 +440,10 @@
    ],
    "bolge": [
     "nereden alınabilir"
+   ],
+   "ne": [
+    "Nakledilecek organın alınabileceği kişiyi",
+    "Organ naklinin nasıl yapıldığını"
    ]
   },
   {
@@ -415,6 +461,145 @@
    ],
    "bolge": [
     "hangi duyguyu geliştirir"
+   ],
+   "ne": [
+    "Kan bağışının geliştirdiği duyguyu",
+    "Kan bağışının kime yardım ettiğini"
+   ]
+  },
+  {
+   "soru": "Kan bağışında doktor muayenesinden önceki adım hangisidir?",
+   "secenekler": [
+    "Kayıt",
+    "Organ nakli",
+    "Kan alma işlemi"
+   ],
+   "dogru": 0,
+   "ipucu": "4 adımın ilki neydi?",
+   "aciklama": "Kan bağışı kayıtla başlar: Bağışçı Bilgi Formu doldurulur, sonra doktor muayenesi yapılır. (s. 109)",
+   "kavram": "Kan Bağışında 4 Adım",
+   "ikiz": "i1",
+   "vurgu": [
+    "önceki adım hangisidir"
+   ],
+   "ne": [
+    "Muayeneden önceki adımı",
+    "Muayeneden sonraki adımı"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "önceki adım hangisidir"
+   ]
+  },
+  {
+   "soru": "Kan bağışı yapabilmek için kişinin hangi şartı taşıması gerekir?",
+   "secenekler": [
+    "Doktor olmak",
+    "18–65 yaş arasında, 50 kilogramın üzerinde ve sağlıklı olmak",
+    "Sporcu olmak"
+   ],
+   "dogru": 1,
+   "ipucu": "Kimler Kan Verebilir? kartında yaş ve kilo vardı.",
+   "aciklama": "18–65 yaş aralığında ve 50 kg üzerindeki sağlıklı her birey kan bağışçısı olabilir. (s. 111)",
+   "kavram": "Kimler Kan Verebilir?",
+   "ikiz": "i2",
+   "vurgu": [
+    "Kan bağışı",
+    "hangi şartı"
+   ],
+   "ne": [
+    "Kan bağışı için gereken şartı",
+    "Organ bağışı için gereken şartı"
+   ],
+   "tetik": [
+    "hangi şartı"
+   ],
+   "bolge": [
+    "hangi şartı taşıması gerekir"
+   ]
+  },
+  {
+   "soru": "Bağışlanan organlar ihtiyaç sahiplerine verilirken öncelikle hangisine bakılır?",
+   "secenekler": [
+    "Maddi duruma",
+    "Kan ve doku uyumuna",
+    "Cinsiyete"
+   ],
+   "dogru": 1,
+   "ipucu": "Organın hastanın vücuduna uyması gerekir.",
+   "aciklama": "Organ bağışında öncelikle kan ve doku uyumuna, ardından hastanın tıbbi aciliyetine bakılır. (s. 112)",
+   "kavram": "Organ Bağışının Kuralları",
+   "ikiz": "i3",
+   "vurgu": [
+    "öncelikle hangisine bakılır"
+   ],
+   "ne": [
+    "Organ verilirken öncelikle bakılan durumu",
+    "Organ verilirken ayrım yapılmayan durumu"
+   ],
+   "tetik": [
+    "hangisine"
+   ],
+   "bolge": [
+    "öncelikle hangisine bakılır"
+   ]
+  },
+  {
+   "soru": "Kadınlar kaç ayda bir kan verebilir?",
+   "secenekler": [
+    "Bir ayda",
+    "Üç ayda",
+    "Dört ayda"
+   ],
+   "dogru": 2,
+   "ipucu": "Kimler Kan Verebilir? kartında kadınlar ve erkekler için iki ayrı süre vardı.",
+   "aciklama": "Kadınlar dört ayda, erkekler üç ayda bir kan verebilir. (s. 111)",
+   "kavram": "Kimler Kan Verebilir?",
+   "ikiz": "i4",
+   "vurgu": [
+    "Kadınlar",
+    "kaç ayda"
+   ],
+   "ne": [
+    "Kadınların kan verme aralığını",
+    "Erkeklerin kan verme aralığını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Kadınlar",
+    "kaç ayda bir kan verebilir"
+   ]
+  },
+  {
+   "soru": "Erkekler kaç ayda bir kan verebilir?",
+   "secenekler": [
+    "Bir ayda",
+    "Üç ayda",
+    "Dört ayda"
+   ],
+   "dogru": 1,
+   "ipucu": "Kimler Kan Verebilir? kartında kadınlar ve erkekler için iki ayrı süre vardı.",
+   "aciklama": "Kadınlar dört ayda, erkekler üç ayda bir kan verebilir. (s. 111)",
+   "kavram": "Kimler Kan Verebilir?",
+   "ikiz": "i4",
+   "vurgu": [
+    "Erkekler",
+    "kaç ayda"
+   ],
+   "ne": [
+    "Erkeklerin kan verme aralığını",
+    "Kadınların kan verme aralığını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Erkekler",
+    "kaç ayda bir kan verebilir"
    ]
   }
  ],
@@ -622,5 +807,6 @@
    "aciklama": "Kan bağışçısı olmak için 18-65 yaş aralığında olmak gerekir; Özgür on sekiz yaşından küçüktür (s. 111, 116).",
    "kavram": "Kimler Kan Verebilir?"
   }
- ]
+ ],
+ "testSoru": 9
 }

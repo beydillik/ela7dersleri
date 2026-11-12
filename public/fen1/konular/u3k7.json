@@ -283,6 +283,10 @@
    "bolge": [
     "geçiş sırasına göre doğru dizilişi hangisidir"
    ],
+   "ne": [
+    "Havanın geçtiği organların sırasını",
+    "Solunumun başladığı organı"
+   ],
    "vurgu": [
     "hangisidir",
     "doğru"
@@ -303,6 +307,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Akciğerlerin ne işe yaradığını"
    ]
   },
   {
@@ -320,6 +328,15 @@
    ],
    "bolge": [
     "mukus sıvısının görevi nedir"
+   ],
+   "ikiz": "i4",
+   "vurgu": [
+    "mukus sıvısının",
+    "nedir"
+   ],
+   "ne": [
+    "Mukusun görevini",
+    "Burundaki kılların görevini"
    ]
   },
   {
@@ -327,11 +344,21 @@
    "secenekler": [
     "Sesi oluşturmak",
     "Havayı alveollere iletmek",
-    "Besinleri mideye iletmek"
+    "Soluk borusundaki havayı iki akciğere taşımak"
    ],
    "dogru": 1,
    "ipucu": "Bronşçuklar dalların en ucundaki küçük hava kanallarıdır; havayı nereye götürürler?",
-   "aciklama": "Bronşçuklar, havanın alveollere iletilmesini sağlayan küçük hava kanallarıdır. (s. 122)",
+   "aciklama": "Bronşçuklar, havanın alveollere iletilmesini sağlayan küçük hava kanallarıdır. Havayı iki akciğere taşıyan bronşlardır. (s. 122)",
+   "kavram": "Soluk Borusu ve Bronşlar",
+   "ikiz": "i3",
+   "vurgu": [
+    "Bronşçukların",
+    "nedir"
+   ],
+   "ne": [
+    "Bronşçukların görevini",
+    "Bronşların görevini"
+   ],
    "tetik": [
     "nedir"
    ],
@@ -354,6 +381,10 @@
    ],
    "bolge": [
     "ifadesi için ne söylenebilir"
+   ],
+   "ne": [
+    "Cümlenin doğru mu yanlış mı olduğunu",
+    "Kaburga kaslarının nerede olduğunu"
    ]
   },
   {
@@ -371,6 +402,15 @@
    ],
    "bolge": [
     "Soluk verirken hangisi olur"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Soluk verirken",
+    "hangisi"
+   ],
+   "ne": [
+    "Soluk verirken olan değişikliği",
+    "Soluk alırken olan değişikliği"
    ]
   },
   {
@@ -388,6 +428,10 @@
    ],
    "bolge": [
     "hangi iki boruyu birleştirir"
+   ],
+   "ne": [
+    "Yutağın birleştirdiği iki boruyu",
+    "Yutağın nerede bulunduğunu"
    ]
   },
   {
@@ -405,6 +449,15 @@
    ],
    "bolge": [
     "ağacın yaprakları hangi yapıya benzetilir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "yaprakları",
+    "hangi yapıya"
+   ],
+   "ne": [
+    "Yaprakların benzetildiği yapıyı",
+    "Dalların benzetildiği yapıyı"
    ]
   },
   {
@@ -422,6 +475,10 @@
    ],
    "bolge": [
     "soluk alıp verme hızımız neden artar"
+   ],
+   "ne": [
+    "Soluk hızının artma sebebini",
+    "Spor yapınca soluk hızına ne olduğunu"
    ]
   },
   {
@@ -439,6 +496,10 @@
    ],
    "bolge": [
     "hangisi doğrudur"
+   ],
+   "ne": [
+    "Diyafram hakkında doğru bilgiyi",
+    "Diyafram hakkında yanlış bilgiyi"
    ],
    "vurgu": [
     "hangisi",
@@ -460,6 +521,118 @@
    ],
    "bolge": [
     "hangisini yapmalıyız"
+   ],
+   "ne": [
+    "Nefes alırken yapılması gerekeni",
+    "Nefes verirken yapılması gerekeni"
+   ]
+  },
+  {
+   "soru": "Soluk alırken hangisi olur?",
+   "secenekler": [
+    "Göğüs boşluğu genişler",
+    "Akciğerlerin hacmi azalır",
+    "Göğüs boşluğu daralır"
+   ],
+   "dogru": 0,
+   "ipucu": "Soluk alınca akciğerler havayla dolar; göğüs boşluğuna ne olur?",
+   "aciklama": "Soluk alırken göğüs boşluğu genişler, akciğerlerin hacmi artar ve akciğerler hava ile dolar. (s. 122)",
+   "kavram": "Soluk Alma ve Verme",
+   "ikiz": "i1",
+   "vurgu": [
+    "Soluk alırken",
+    "hangisi"
+   ],
+   "ne": [
+    "Soluk alırken olan değişikliği",
+    "Soluk verirken olan değişikliği"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Soluk alırken hangisi olur"
+   ]
+  },
+  {
+   "soru": "Kitaptaki ağaç benzetmesinde ağacın dalları hangi yapıya benzetilir?",
+   "secenekler": [
+    "Bronşlara",
+    "Soluk borusuna",
+    "Alveollere"
+   ],
+   "dogru": 0,
+   "ipucu": "Ağacın dalları gövdeden ayrılır. Soluk borusu akciğere doğru hangi kollara ayrılıyordu?",
+   "aciklama": "Ağacın gövdesi soluk borusuna, dalları bronşlara, yaprakları alveollere benzetilebilir. (s. 120)",
+   "kavram": "Soluk Borusu ve Bronşlar",
+   "ikiz": "i2",
+   "vurgu": [
+    "dalları",
+    "hangi yapıya"
+   ],
+   "ne": [
+    "Dalların benzetildiği yapıyı",
+    "Yaprakların benzetildiği yapıyı"
+   ],
+   "tetik": [
+    "hangi yapıya"
+   ],
+   "bolge": [
+    "ağacın dalları hangi yapıya benzetilir"
+   ]
+  },
+  {
+   "soru": "Bronşların görevi nedir?",
+   "secenekler": [
+    "Sesi oluşturmak",
+    "Soluk borusundaki havayı iki akciğere taşımak",
+    "Kuru havayı nemlendirmek"
+   ],
+   "dogru": 1,
+   "ipucu": "Soluk borusu akciğere doğru iki kola ayrılıyordu.",
+   "aciklama": "Bronşlar, soluk borusunun akciğere doğru iki kola ayrılmasıyla oluşur ve her iki akciğere hava taşır. (s. 122)",
+   "kavram": "Soluk Borusu ve Bronşlar",
+   "ikiz": "i3",
+   "vurgu": [
+    "Bronşların",
+    "nedir"
+   ],
+   "ne": [
+    "Bronşların görevini",
+    "Bronşçukların görevini"
+   ],
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "Bronşların görevi nedir"
+   ]
+  },
+  {
+   "soru": "Burnun içindeki kılların görevi nedir?",
+   "secenekler": [
+    "Kuru havayı nemlendirmek",
+    "Toz ve mikropları tutmak",
+    "Havayı ısıtmak"
+   ],
+   "dogru": 1,
+   "ipucu": "Burun kartında mukus, kılcal damarlar ve kılların ayrı görevleri vardı.",
+   "aciklama": "Burundaki kıllar havadaki toz ve mikropları tutarak havayı temizlemeye yardım eder. (s. 121)",
+   "kavram": "Burun",
+   "ikiz": "i4",
+   "vurgu": [
+    "kılların",
+    "nedir"
+   ],
+   "ne": [
+    "Burundaki kılların görevini",
+    "Mukusun görevini"
+   ],
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "kılların görevi nedir"
    ]
   }
  ],
@@ -675,5 +848,6 @@
    "aciklama": "Doğru nefes için burundan nefes alınır, 3-4 saniye tutulur ve nefes yavaşça verilir (s. 117, 119).",
    "kavram": "Soluk Alma ve Verme"
   }
- ]
+ ],
+ "testSoru": 11
 }
