@@ -39,6 +39,31 @@ for f in sorted(glob.glob(os.path.join(os.path.dirname(__file__), KOD, "*.py")))
     for k in veri: veri[k].update(g.get(k, {}))
 
 EKSIK = []
+# Öğren vurgusu için yedek kalıp (11 Kasım 2026): GEN'in kaçırdığı soru kelimeleri; yalnız vurgu yazar, bölgeye/tetiğe karışmaz.
+VGEN = r"(?<![\wçğıöşüÇĞİÖŞÜ])(?:[Nn]e (?:zaman|kadar|demek|anlama gelir|anlatıyor|\w+)|[Kk]ime \w+|[Kk]imi \w+|[Kk]imin \w+|[Kk]im|[Nn]e)(?=[\s?.,]|$)"
+
+# Vurguya eklenen anlamı değiştiren sözcükler: soru kelimesinin hemen önünde/arkasında (en çok bir kelime ara) ya da yüklemde (son 3 kelime).
+# "doğrusu/doğruya/doğrunun" (geometri), "sonra/önce" bağlamı ("fethinden sonra") eklenmez.
+VMOD = r"(?<![\wçğıöşüÇĞİÖŞÜ])(?:en (?:az|çok|fazla|büyük|küçük|son|önce|doğru|uygun)|son olarak|ilk|son|önce|doğrudur|doğru|yanlıştır|yanlış|hatalıdır|hatalı|değildir|değil|yoktur|DEĞİLDİR|YANLIŞTIR)(?![\wçğıöşüÇĞİÖŞÜ])"
+def vurgu_ek(soru, taban):
+    taban = [t for t in taban if t and t in soru]
+    if not taban: return []
+    kel = [(m.start(), m.end()) for m in re.finditer(r"\S+", soru)]
+    sira = lambda ofs: next((i for i, (a, b) in enumerate(kel) if a <= ofs < b), len(kel))
+    araliklar = [(sira(soru.index(t)), sira(soru.index(t) + len(t) - 1)) for t in taban]
+    ek = []
+    for m in re.finditer(VMOD, soru):
+        if any(m.start() < soru.index(t) + len(t) and m.end() > soru.index(t) for t in taban): continue   # zaten vurgu içinde
+        if m.group(0) == "doğru" and re.match(r"\s+parça", soru[m.end():]): continue   # geometri: "doğru parçası"
+        i, j = sira(m.start()), sira(m.end() - 1)
+        ara = lambda x, y: not re.search(r"[.?!]\s", soru[min(x, y):max(x, y)])   # arada cümle sonu yok
+        yakin = any((i - b <= 2 and i > b and ara(kel[b][1], m.start())) or (a - j <= 2 and j < a and ara(m.end(), kel[a][0])) for a, b in araliklar)
+        if m.group(0) in ("önce",) and not any(a - j == 1 for a, b in araliklar): continue   # "önce" yalnız soru kelimesinin hemen önündeyse ("önce ne yaparız")
+        if m.group(0) == "son" and not yakin: continue
+        son_cumle = max(soru.rstrip(" ?.!").rfind(". "), soru.rstrip(" ?.!").rfind("? ")) + 2   # yüklem kuralı yalnız son cümlede
+        if yakin or (j >= len(kel) - 3 and m.start() >= son_cumle): ek.append(m.group(0))
+    return ek
+
 def tetik_bul(soru):
     a = re.escape(veri["ELLE"][soru]) if soru in veri["ELLE"] else GEN
     m = re.search(r"(?<!\w)" + a + r"(?!\w)", soru, re.I)
@@ -170,6 +195,12 @@ for kod in (ISTENEN or sorted(veri["TEKRAR"])):
             q["ne"] = ne
         t = tetik_bul(q["soru"])
         if t: q["tetik"] = [t]
+        elif "vurgu" not in q:   # soru kelimesi kalıbı (GEN) bulamadıysa Öğren vurgusu için geniş kalıp: "ne demek", "kime sorulur", "Ne yaptı"
+            m = re.search(VGEN, q["soru"])
+            if m: q["vurgu"] = [m.group(0)]; nv += 1
+        if q["soru"] not in veri["VURGU"] and not q.get("kanit"):   # anlamı değiştiren sözcük vurguya eklenir (Kemal'in sorunun kalbi ilkesi)
+            ek = vurgu_ek(q["soru"], q.get("vurgu") or q.get("tetik") or [])
+            if ek: q["vurgu"] = (q.get("vurgu") or q.get("tetik")) + ek; nv += 1
         q["bolge"] = bolge_bul(q["soru"], q.get("tetik")); n += 1
         for b in q["bolge"]:
             if b not in q["soru"]: hata.append(f"{kod}: bölge soruda yok: {b} ← {q['soru'][:60]}")

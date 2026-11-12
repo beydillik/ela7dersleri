@@ -89,7 +89,7 @@ Amaç: Ela soruyu anlayarak cevaplara baksın (asıl sorulan yerde durup düşü
 - **Test:** `araclar/dikkat/test_dikkat.py <kod> <konu>` (Playwright, sahte saat; Ela'nın ayarları: kartBekle, hataDur, sikBekle açık). Şık seçerken tam metin eşleştir (has_text kısmi ve harf duyarsızdır: "Doğrudur" ↔ "…doğrudur"). Açık Kuark balonları (.koc) tıklamayı engeller; testte kapat.
 - Eşikler (5/3 seri, %70, 1,5 sn) kalibre edilmedi; Ela kullandıktan sonra `kalp-bul` ve `hizli-tik` olaylarıyla ayarlanmalı.
 
-## Okuma pilotu (11 Kasım 2026; Kemal'in kararı; ilk kullanım fen1 — `ders.json` → `"okuPilot": true`)
+## Okuma yaklaşımı (11 Kasım 2026 Fen pilotu; 12 Kasım 2026'dan beri bütün derslerin dikkat paketli konularında varsayılan — kapatmak için `ders.json` → `"okuPilot": false`)
 Gözden geçirmede görüldü: Fen'deki 194 bulmalı sorunun 194'ünde sorunun kalbi cümlenin sonundaydı; dokunma adımı "sona dokun" refleksine dönebiliyordu. Pilot derste (yalnız dikkat paketli konularda):
 - **Öğren (kavram soruları):** bulma adımı yok. Soru kelimesi (`vurgu`, yoksa `tetik`: "nerede", "hangi organ", "ne denir") **sarı fosforlu** gelir, şıklar açıktır (`vurguCiz`, `.kk-run.vurgu`). Yanlış cevapta "Sarı kelimeye tekrar bak". Kayıt: `soru` olayında `kalp: -2`. Metinli sorular ve Kısa Cevap eskisi gibi.
 - **Test:** `ne: [doğru, yanlış]` olan soruda dokunma yerine iki seçenekli **"Bu soru senden ne istiyor?"** (`neAdim`). Doğru seçilince "Soruyu çok iyi okudun" (yalnız ilk seçimde), soru kelimesi sarı olur, şıklar açılır. Kayıt: `ne` (1/2), olay `ne-bul`. `ne` yoksa eski sorunun kalbi adımı (yön ipucundan "asıl soru çoğu zaman sondadır" çıkarıldı — bütün derslerde).
@@ -106,3 +106,9 @@ Gözden geçirmede görüldü: Fen'deki 194 bulmalı sorunun 194'ünde sorunun k
 - Kısa Cevap'ın "Kalıpla yaz" ekranındaki İpucu ve Yazılıya Hazırlık'taki 2. ipucu basamağı, her parçanın doğru cümlesini (`ornek`) iki çeldiriciyle (`havuz`) işaretsiz bir liste olarak "Sadece oku" diye gösteriyordu; Ela yanlış cümleleri de bilgi gibi okuyordu (Kemal fark etti: Fen u3k1 "Fiziksel sindirim" altında kimyasal sindirimin tanımı da vardı). Veri doğruydu, gösterim yanlıştı.
 - Artık `ipSecHTML`: her parça için "Hangisi doğru? Dokun."; yanlış dokunuş üstü çizili kapanır, 2. yanlışta doğru gösterilir, sonra yalnız doğru cümle kalır. Bütün parçalar bitince "Anladım, şimdi yazacağım" açılır. Olay `ipucu-sec` (parca, dogru 1/0). Tıklama belge düzeyinde dinlenir (yeniden çizimde bağlamaya gerek yok).
 - `havuz` alanının anlamı değişmedi: çeldirici cümleler (uret.py kontrolü aynı).
+
+### Öğren vurgusu — bütün dersler (12 Kasım 2026)
+- Vurgu kaynağı sırası: `VURGU` (elle) > `tetik` (GEN kalıbı) > `VGEN` yedek kalıbı ("ne demek", "ne yaparız", "kime sorulur", "Ne yaptı"). Üretici (`uret.py`) ayrıca anlamı değiştiren sözcükleri ekler (`vurgu_ek`, `VMOD`): en az/en çok/en son/en doğru, ilk, son olarak, önce (yalnız soru kelimesinin hemen önünde), doğru/doğrudur, yanlış, hatalı, değildir, yoktur — soru kelimesine en çok bir kelime arayla ya da son cümlenin son 3 kelimesinde; cümle sınırını geçmez; geometrideki "doğru parçası" hariç.
+- Uygulandığı yer: fen1, tr1, mat1, sos1, ing1, own1'in dikkat paketli 72 konusu. Paketsiz konular (bil1, din1 ve diğer derslerin eski konuları) Kemal'in kararıyla kapsam dışı: onlarda soru eskisi gibi düz.
+- İçinde `<b>` ya da `[[ ]]` olan sorularda vurgu yok (düz görünür). `{{İngilizce}}` parçaları tek blok kalır, vurgu Türkçe soru kısmına düşer.
+- Test'te `ne` verisi olmayan sorularda sorunun kalbine dokunma adımı sürüyor; `ne` + ikiz verisi ünite ünite yazılıyor (ilk: fen1 u3k1–u3k2).

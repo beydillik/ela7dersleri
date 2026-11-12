@@ -661,7 +661,7 @@
   //  • Test'te o.ne = [doğru, yanlış] olan sorularda dokunma yerine iki seçenekli "Bu soru senden ne istiyor?" adımı (state.ne: 1 ilk seçimde, 2 ikincide).
   //    Doğru seçilince soru kelimesi sarı olur, şıklar açılır. o.ne yoksa eski sorunun kalbi adımı çalışır.
   //  • İkiz sorular (o.ikiz aynı olan iki soru: aynı kök, tek kelime farkı) testte art arda gelir (ikizYanyana, testSec).
-  const okuPilot = () => !!(S.ders && S.ders.okuPilot);
+  const okuPilot = () => !(S.ders && S.ders.okuPilot === false);   // 12 Kasım 2026: bütün derslerin dikkat paketli konularında varsayılan; kapatmak için ders.json "okuPilot": false
   const vurguBolge = o => ((o.vurgu && o.vurgu.length ? o.vurgu : o.tetik) || []).filter(t => t && String(o.soru || "").includes(t));
   const vurguDuz = o => !!o.soru && !/[<\[]/.test(o.soru);
   function vurguCiz(alan, o) {

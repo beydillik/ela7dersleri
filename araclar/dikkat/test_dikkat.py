@@ -8,7 +8,7 @@ KOD, KONU = sys.argv[1], sys.argv[2]
 KOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 D = json.load(open(os.path.join(KOK, "public", KOD, "konular", KONU + ".json"), encoding="utf-8"))
 DIL_EN = json.load(open(os.path.join(KOK, "public", KOD, "ders.json"), encoding="utf-8")).get("dil") == "en"   # İngilizce: Öğren'de Kelime Duvarı adımı
-PILOT = bool(json.load(open(os.path.join(KOK, "public", KOD, "ders.json"), encoding="utf-8")).get("okuPilot"))   # okuma pilotu: Öğren'de bulma yok (soru kelimesi sarı), Test'te "ne istiyor" + ikiz
+PILOT = bool(json.load(open(os.path.join(KOK, "public", KOD, "ders.json"), encoding="utf-8")).get("okuPilot", True) is not False)   # okuma pilotu: Öğren'de bulma yok (soru kelimesi sarı), Test'te "ne istiyor" + ikiz
 SONUC = []
 def ok(ad, kosul, ayrinti=""):
     SONUC.append((ad, bool(kosul))); print(("✓ " if kosul else "✗ ") + ad + (f"  [{ayrinti}]" if ayrinti and not kosul else ""))
