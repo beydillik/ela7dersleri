@@ -449,6 +449,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{Kazue sometimes ___ photos of him online.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Kazue'nin internette yaptığını",
+    "Kazue'nin kulağa yaptığını"
    ]
   },
   {
@@ -485,6 +490,14 @@
    ],
    "bolge": [
     "Hangisi zıt anlamlı iki kelimedir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "zıt anlamlı"
+   ],
+   "ne": [
+    "Zıt anlamlı çifti",
+    "Benzer anlamlı çifti"
    ]
   },
   {
@@ -539,6 +552,89 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{I asked Luis to ___ the area where he lives.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Bir yerin nasıl olduğunu anlatmayı",
+    "Konuşmayı başka dile çevirmeyi"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Kazue quietly ___ in my ear that Japanese people don't usually do that.}}",
+   "secenekler": [
+    "shouted",
+    "posted",
+    "whispered"
+   ],
+   "dogru": 2,
+   "ipucu": "{{quietly}}: sessizce. {{in my ear}}: kulağıma.",
+   "aciklama": "Kazue kulağına sessizce fısıldadı: {{whispered}} (WB s. 24).",
+   "kavram": "whisper",
+   "ikiz": "i1",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Kazue'nin kulağa yaptığını",
+    "Kazue'nin internette yaptığını"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Kazue quietly ___ in my ear that Japanese people don't usually do that.}}"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{In the 1950s, machines could translate written texts, but they could not ___ spoken language.}}",
+   "secenekler": [
+    "describe",
+    "whisper",
+    "interpret"
+   ],
+   "dogru": 2,
+   "ipucu": "Yazılı metin değil, konuşma çevriliyor. Konuşmayı başka dile aktaran kelimeyi düşün.",
+   "aciklama": "Makineler yazıyı çevirebiliyordu ama konuşmayı çeviremiyordu: {{they could not interpret spoken language}} (SB s. 36).",
+   "kavram": "interpret",
+   "ikiz": "i2",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Konuşmayı başka dile çevirmeyi",
+    "Bir yerin nasıl olduğunu anlatmayı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{In the 1950s, machines could translate written texts, but they could not ___ spoken language.}}"
+   ]
+  },
+  {
+   "soru": "Hangisi benzer anlamlı iki kelimedir?",
+   "secenekler": [
+    "shout – whisper",
+    "post – describe",
+    "translate – interpret"
+   ],
+   "dogru": 2,
+   "ipucu": "İkisi de bir dili başka dile aktarmakla ilgili olan çifti bul.",
+   "aciklama": "{{translate}} ve {{interpret}} ikisi de başka dile çevirmek demek (yazı / konuşma) (SB s. 35–36).",
+   "kavram": "translate",
+   "ikiz": "i3",
+   "vurgu": [
+    "benzer anlamlı"
+   ],
+   "ne": [
+    "Benzer anlamlı çifti",
+    "Zıt anlamlı çifti"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "benzer anlamlı"
    ]
   }
  ],
@@ -704,5 +800,6 @@
    "aciklama": "“…they can't always understand people when they whisper or tell jokes.” Fısıldayınca ya da şaka yapınca her zaman anlayamazlar. Açık konuşunca anlarlar (SB s. 36).",
    "kavram": "whisper"
   }
- ]
+ ],
+ "testSoru": 9
 }

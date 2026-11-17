@@ -22,6 +22,8 @@ def bulmali(q):   # motordaki kalpTum ile aynı: bölge sorunun bütün kelimele
     b = {w for x in q.get("bolge", []) for w in kel(x)}
     return bool(q.get("bolge")) and not all(w in b for w in kel(EN.sub(" ", q["soru"])))   # İngilizce: {{…}} bağlamdır, sayılmaz
 EN = re.compile(r"\{\{(.+?)\}\}")
+def tr_var(q):   # İngilizce: {{…}} ve baştaki konuşan adı ("Robby:") dışında vurgulanacak Türkçe var mı
+    return bool(re.search(r"[^\W\d_]", re.sub(r"^[A-ZÇĞİÖŞÜ]\w*:\s*", "", EN.sub(" ", q["soru"]))))
 duz = lambda t: EN.sub(r"\1", t)   # ekranda {{ }} görünmez
 def tam(t): return re.compile(r"^[a-d]\) " + re.escape(t) + r"$")
 def bul_q(metin):
@@ -103,7 +105,7 @@ with sync_playwright() as pw:
             if "cevap" in q and bulmali(q) and not serbest and not kp_test:
                 kp_test = kp_simdi = True; ok("Tuş takımı: sorunun kalbi bulunana kadar gizli", page.is_hidden("#qbox .kp"))
             if PILOT and "secenekler" in q and not q.get("kanit"):
-                if not pilot_ogren:
+                if not pilot_ogren and tr_var(q):   # yalnız İngilizce soruda vurgulanacak Türkçe yok
                     pilot_ogren = True
                     ok("Pilot Öğren: bulma adımı yok, şıklar açık, soru kelimesi sarı vurgulu", page.is_visible("#qbox .opts") and page.query_selector("#qbox .kalp-not") is None and page.locator("#qbox .kk-run.vurgu").count() > 0)
                     yanl = [j for j in range(len(q["secenekler"])) if j != q["dogru"]][0]
@@ -216,7 +218,7 @@ with sync_playwright() as pw:
                 page.click("#sq .ne-opt[data-d='0']"); ileri(50)
                 ok("Pilot Test: yanlış seçimde 'Henüz değil', şıklar hâlâ gizli", "Henüz değil" in page.inner_text("#sq .ne-adim") and page.is_hidden("#sq .opts"))
                 page.click("#sq .ne-opt[data-d='1']"); ileri(50)
-                ok("Pilot Test: doğru seçimde şıklar açılır, soru kelimesi sarı olur", page.is_visible("#sq .opts") and (page.locator("#sq .kk-run.vurgu").count() > 0 or not re.search(r"[^\W\d_]", EN.sub(" ", q["soru"]))) and "şunu istiyor" in page.inner_text("#sq .ne-adim"))   # İngilizce: yalnız {{…}} olan soruda vurgulanacak Türkçe yok
+                ok("Pilot Test: doğru seçimde şıklar açılır, soru kelimesi sarı olur", page.is_visible("#sq .opts") and (page.locator("#sq .kk-run.vurgu").count() > 0 or not tr_var(q)) and "şunu istiyor" in page.inner_text("#sq .ne-adim"))   # İngilizce: yalnız {{…}} olan soruda vurgulanacak Türkçe yok
             else: page.click("#sq .ne-opt[data-d='1']"); ileri(50)
             if ONADIM == "kapanis" and not kapanis_gor:
                 kapanis_gor = True

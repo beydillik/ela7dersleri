@@ -48,6 +48,9 @@
     "aciklama": "Past simple bitmiş işi anlatır: haziranda gitti, iş bitti. (WB s. 92)",
     "bolge": [
      "{{I went to Liverpool in June.}} Bu iş bitti mi"
+    ],
+    "vurgu": [
+     "bitti mi"
     ]
    }
   },
@@ -785,6 +788,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{I can't play football this afternoon because I ___ off my bike yesterday.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Dün olup biten işi anlatan fiili",
+    "Hâlâ süren işi anlatan fiili"
    ]
   },
   {
@@ -803,6 +811,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{I ___ in London for about ten years – I love it here.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Hâlâ süren işi anlatan fiili",
+    "Dün olup biten işi anlatan fiili"
    ]
   },
   {
@@ -821,6 +834,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{They ___ much Russian in Moscow – they were only there for two months.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Bitmiş bir dönemi anlatan fiili",
+    "Hâlâ süren durumu anlatan fiili"
    ]
   },
   {
@@ -857,6 +875,11 @@
    ],
    "bolge": [
     "aynı anlama gelir"
+   ],
+   "ikiz": "i3",
+   "ne": [
+    "these days ile aynı anlamı",
+    "before ile aynı anlamı"
    ]
   },
   {
@@ -933,6 +956,58 @@
    ],
    "vurgu": [
     "ne anlatıyor"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Sorry! I ___ so busy since I got here.}}",
+   "secenekler": [
+    "was",
+    "'ve been",
+    "am"
+   ],
+   "dogru": 1,
+   "ipucu": "{{since I got here}}: buraya geldiğimden beri. Durum hâlâ sürüyor mu?",
+   "aciklama": "Mario buraya geldiğinden beri hâlâ çok meşgul → present perfect: {{I've been so busy since I got here.}} (SB s. 39).",
+   "kavram": "present perfect",
+   "ikiz": "i1",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Hâlâ süren durumu anlatan fiili",
+    "Bitmiş bir dönemi anlatan fiili"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Sorry! I ___ so busy since I got here.}}"
+   ]
+  },
+  {
+   "soru": "Hangisi {{before}} ile aynı anlama gelir?",
+   "secenekler": [
+    "earlier",
+    "since I was born",
+    "at the moment"
+   ],
+   "dogru": 0,
+   "ipucu": "{{before}} eskiden demek. Şimdiden önceki zamanı anlatan ifadeyi bul.",
+   "aciklama": "{{before}} = {{earlier}}: eskiden, daha önce. {{Before, I didn't use to think about intonation, but now …}} (WB s. 29).",
+   "kavram": "before / later on",
+   "ikiz": "i3",
+   "vurgu": [
+    "aynı anlama gelir"
+   ],
+   "ne": [
+    "before ile aynı anlamı",
+    "these days ile aynı anlamı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "aynı anlama gelir"
    ]
   }
  ],
@@ -1112,5 +1187,6 @@
    "aciklama": "“Perhaps most interesting of all, there is no way to talk about the past.” En ilginci geçmişten söz etmenin bir yolunun olmaması. Renk ve sayma da yok, ama “en ilginç” denen bu (SB s. 43).",
    "kavram": "past simple"
   }
- ]
+ ],
+ "testSoru": 12
 }

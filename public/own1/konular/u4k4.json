@@ -529,12 +529,17 @@
    "secenekler": [
     "vitamins",
     "carbohydrates",
-    "fat"
+    "fibre"
    ],
    "dogru": 1,
    "ipucu": "Ekmek ve makarna: enerji.",
    "aciklama": "Enerjinin çoğu {{carbohydrates}}'tan. (WB s. 35)",
    "kavram": "carbohydrates",
+   "ikiz": "i1",
+   "ne": [
+    "Enerjinin çoğunu veren besini",
+    "Yiyeceğin vücuttan geçmesine yardım edeni"
+   ],
    "bolge": [
     "{{We get most of our energy from these. You find them in bread and pasta.}}"
    ]
@@ -552,12 +557,17 @@
    "kavram": "fat",
    "bolge": [
     "{{There is a lot of this in cheese and chocolate.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Peynir ve çikolatada bol olanı",
+    "Tofuda bol olan besini"
    ]
   },
   {
    "soru": "{{This helps food pass through the body.}}",
    "secenekler": [
-    "calories",
+    "carbohydrates",
     "protein",
     "fibre"
    ],
@@ -565,6 +575,11 @@
    "ipucu": "Sindirime yardım eden.",
    "aciklama": "Yiyeceğin vücuttan geçmesine yardım eder: {{fibre}}. (WB s. 35)",
    "kavram": "fibre",
+   "ikiz": "i1",
+   "ne": [
+    "Yiyeceğin vücuttan geçmesine yardım edeni",
+    "Enerjinin çoğunu veren besini"
+   ],
    "bolge": [
     "{{This helps food pass through the body.}}"
    ]
@@ -627,6 +642,11 @@
    "kavram": "a balanced diet",
    "bolge": [
     "{{I try to eat ___ with plenty of protein and fibre.}}"
+   ],
+   "ikiz": "i3",
+   "ne": [
+    "Bol proteinli ve lifli beslenmeyi",
+    "Süt ve peynir gibi yiyecekleri"
    ]
   },
   {
@@ -642,6 +662,46 @@
    "kavram": "protein",
    "bolge": [
     "{{Protein helps our bodies to grow and be healthy and ___.}}"
+   ]
+  },
+  {
+   "soru": "{{The food tofu is very high in this.}}",
+   "secenekler": [
+    "fat",
+    "fibre",
+    "protein"
+   ],
+   "dogru": 2,
+   "ipucu": "Tofu, kasları ve vücudu güçlendiren besin bakımından zengindir.",
+   "aciklama": "Tofuda bol protein vardır: {{tofu … is full of protein}} (WB s. 35, WB s. 36).",
+   "kavram": "protein",
+   "ikiz": "i2",
+   "ne": [
+    "Tofuda bol olan besini",
+    "Peynir ve çikolatada bol olanı"
+   ],
+   "bolge": [
+    "{{The food tofu is very high in this.}}"
+   ]
+  },
+  {
+   "soru": "{{Her doctor told her not to eat ___ such as milk or cheese.}}",
+   "secenekler": [
+    "a balanced diet",
+    "dairy products",
+    "calories"
+   ],
+   "dogru": 1,
+   "ipucu": "{{milk}} ve {{cheese}}: süt ve peynir. Sütten yapılan yiyecekler hangisi?",
+   "aciklama": "Süt ve peynir süt ürünleridir: {{dairy products}} (SB s. 131).",
+   "kavram": "dairy products",
+   "ikiz": "i3",
+   "ne": [
+    "Süt ve peynir gibi yiyecekleri",
+    "Bol proteinli ve lifli beslenmeyi"
+   ],
+   "bolge": [
+    "{{Her doctor told her not to eat ___ such as milk or cheese.}}"
    ]
   }
  ],
@@ -838,5 +898,6 @@
    "aciklama": "“Protein helps our bodies to grow…” Büyümeye protein yardım eder. Karbonhidrat enerji verir, lif mideye iyi gelir (WB s. 38; cümleler kitaptaki eşleştirmenin doğru eşleriyle).",
    "kavram": "protein"
   }
- ]
+ ],
+ "testSoru": 10
 }

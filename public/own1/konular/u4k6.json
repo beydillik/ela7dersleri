@@ -716,6 +716,11 @@
    "kavram": "You could always/just …",
    "bolge": [
     "Robby: {{Jogging isn't your thing? You could just ___ for a walk.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "You could kalıbından sonraki fiilin hâlini",
+    "recommend kelimesinden sonraki fiilin hâlini"
    ]
   },
   {
@@ -756,6 +761,11 @@
    "kavram": "I recommend + -ing",
    "bolge": [
     "{{I can recommend ___ a therapy dog.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "recommend kelimesinden sonraki fiilin hâlini",
+    "You could kalıbından sonraki fiilin hâlini"
    ]
   },
   {
@@ -771,6 +781,11 @@
    "kavram": "Have you tried + -ing?",
    "bolge": [
     "{{Have you ever tried ___ with a cat when you're stressed?}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Have you tried kalıbından sonraki fiilin hâlini",
+    "Why don't you kalıbından sonraki fiilin hâlini"
    ]
   },
   {
@@ -789,6 +804,15 @@
    ],
    "bolge": [
     "Hangi kalıptan sonra"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "fiil",
+    "alır"
+   ],
+   "ne": [
+    "Arkasından -ing gelen kalıbı",
+    "Arkasından yalın fiil gelen kalıbı"
    ]
   },
   {
@@ -837,6 +861,52 @@
    "kavram": "Make sure you …",
    "bolge": [
     "{{Tomorrow, ___ sure you don't post more than 200 photos.}}"
+   ]
+  },
+  {
+   "soru": "{{Why don't you ___ a sports club after school?}}",
+   "secenekler": [
+    "joining",
+    "join",
+    "joined"
+   ],
+   "dogru": 1,
+   "ipucu": "{{Why don't you}} kalıbından sonra fiil nasıl geliyordu? Forumdaki öneriyi hatırla.",
+   "aciklama": "{{Why don't you}} + fiil yalın: {{Why don't you join a sports club?}} Kitaptaki örnek: {{Why don't you look online for some ideas?}} (SB s. 53).",
+   "kavram": "Why don't you …?",
+   "ikiz": "i2",
+   "ne": [
+    "Why don't you kalıbından sonraki fiilin hâlini",
+    "Have you tried kalıbından sonraki fiilin hâlini"
+   ],
+   "bolge": [
+    "{{Why don't you ___ a sports club after school?}}"
+   ]
+  },
+  {
+   "soru": "Hangi kalıptan sonra fiil yalın gelir?",
+   "secenekler": [
+    "How about …?",
+    "Have you tried …?",
+    "Make sure you …"
+   ],
+   "dogru": 2,
+   "ipucu": "Robby'nin uyarısını hatırla: {{… listen to something gentle.}}",
+   "aciklama": "{{Make sure you}} + fiil yalın: {{Make sure you listen to something gentle.}} (SB s. 52).",
+   "kavram": "Make sure you …",
+   "ikiz": "i3",
+   "vurgu": [
+    "fiil yalın gelir"
+   ],
+   "ne": [
+    "Arkasından yalın fiil gelen kalıbı",
+    "Arkasından -ing gelen kalıbı"
+   ],
+   "tetik": [
+    "Hangi kalıptan"
+   ],
+   "bolge": [
+    "fiil yalın gelir"
    ]
   }
  ],
@@ -1001,5 +1071,6 @@
    "aciklama": "“…but now I make healthy sandwiches and take them to school.” Şimdi sağlıklı sandviçler götürüyor. Cips ve şekerleri eskiden alıyordu (SB s. 53).",
    "kavram": "Have you tried + -ing?"
   }
- ]
+ ],
+ "testSoru": 10
 }

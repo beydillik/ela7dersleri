@@ -26,6 +26,9 @@
     "aciklama": "Koşuya çıkmak: {{go jogging}}. (SB s. 47)",
     "bolge": [
      "Parkta hafif tempoda koşuya çıkmak:"
+    ],
+    "vurgu": [
+     "hafif tempoda koşuya çıkmak"
     ]
    }
   },
@@ -469,6 +472,11 @@
    "kavram": "relax",
    "bolge": [
     "Astronotlar: {{If they get stressed, they ___ by enjoying the views.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Astronotların stresliyken yaptığını",
+    "Astronotların uzaya gitmeden önce yaptığını"
    ]
   },
   {
@@ -484,6 +492,11 @@
    "kavram": "sweat",
    "bolge": [
     "{{He ___ a lot when he exercises. His clothes get very wet!}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Egzersizde kıyafeti ıslatan şeyi",
+    "Eğlenmekle birlikte gereken şeyi"
    ]
   },
   {
@@ -505,13 +518,18 @@
    "soru": "{{Some astronauts go ___! One astronaut even ran a marathon in space.}}",
    "secenekler": [
     "jogging",
-    "training",
-    "sleeping"
+    "sweating",
+    "sleep"
    ],
    "dogru": 0,
    "ipucu": "{{go}} ile hangi kelime gelir?",
    "aciklama": "{{Some astronauts go jogging!}} (SB s. 48)",
    "kavram": "go jogging",
+   "ikiz": "i3",
+   "ne": [
+    "Astronotların uzayda yaptığı sporu",
+    "Uzayda yeterince almanın zor olduğu şeyi"
+   ],
    "bolge": [
     "{{Some astronauts go ___! One astronaut even ran a marathon in space.}}"
    ]
@@ -529,6 +547,51 @@
    "kavram": "train",
    "bolge": [
     "{{Astronauts ___ a lot on Earth before they go into space.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Astronotların uzaya gitmeden önce yaptığını",
+    "Astronotların stresliyken yaptığını"
+   ]
+  },
+  {
+   "soru": "{{After a stressful week, we all need to ___ and have a little fun.}}",
+   "secenekler": [
+    "relax",
+    "sweat",
+    "sneeze"
+   ],
+   "dogru": 0,
+   "ipucu": "{{have a little fun}}: biraz eğlenmek. Eğlenmeye benzeyen, dinlenmeyi anlatan kelimeyi düşün.",
+   "aciklama": "Yorucu bir haftadan sonra dinlenmek gerekir. Kitapta: {{We all need to relax and have a little fun.}} (WB s. 38).",
+   "kavram": "relax",
+   "ikiz": "i2",
+   "ne": [
+    "Eğlenmekle birlikte gereken şeyi",
+    "Egzersizde kıyafeti ıslatan şeyi"
+   ],
+   "bolge": [
+    "{{After a stressful week, we all need to ___ and have a little fun.}}"
+   ]
+  },
+  {
+   "soru": "{{We all need to get enough ___, but in space, that's not easy.}}",
+   "secenekler": [
+    "jogging",
+    "sweating",
+    "sleep"
+   ],
+   "dogru": 2,
+   "ipucu": "{{get enough}}: yeterince almak. Uzayda günde 16 kez güneş doğar; bu neyi zorlaştırır?",
+   "aciklama": "{{We all need to get enough sleep, but in space, that's not easy.}} (SB s. 48).",
+   "kavram": "get enough sleep",
+   "ikiz": "i3",
+   "ne": [
+    "Uzayda yeterince almanın zor olduğu şeyi",
+    "Astronotların uzayda yaptığı sporu"
+   ],
+   "bolge": [
+    "{{We all need to get enough ___, but in space, that's not easy.}}"
    ]
   }
  ],
@@ -696,5 +759,6 @@
    "aciklama": "“…worked out for at least two hours every day.” Her gün en az iki saat egzersiz yaptı. 188 gün uzay istasyonunda kaldığı süre (SB s. 48).",
    "kavram": "work out"
   }
- ]
+ ],
+ "testSoru": 9
 }

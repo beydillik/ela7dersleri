@@ -437,7 +437,7 @@
   {
    "soru": "Doktor: {{Does your chest hurt? You're ___ a lot.}} Boşluğa hangisi?",
    "secenekler": [
-    "relaxing",
+    "sneezing",
     "coughing",
     "training"
    ],
@@ -445,6 +445,11 @@
    "ipucu": "Göğüs ağrısıyla hangi belirti birlikte olur?",
    "aciklama": "Göğüs ağrısı ve öksürük: {{You're coughing a lot.}} (SB s. 56)",
    "kavram": "cough",
+   "ikiz": "i2",
+   "ne": [
+    "Göğsü ağrıyan kişinin yaptığını",
+    "Burnu kızaran kişinin yaptığını"
+   ],
    "tetik": [
     "hangisi"
    ],
@@ -460,9 +465,14 @@
     "have a fever"
    ],
    "dogru": 0,
-   "ipucu": "{{relax}} kelimesinin zıddını düşün.",
+   "ipucu": "Sınavdan önce insanın hissettiği gerginliği anlatan kelimeyi düşün.",
    "aciklama": "{{Don't get stressed about your exams.}} (WB s. 32)",
    "kavram": "get stressed",
+   "ikiz": "i3",
+   "ne": [
+    "Sınavdan önce yapma denen şeyi",
+    "Hasta birinin istediği durumu"
+   ],
    "bolge": [
     "{{Don't ___ about your exams – relax, you'll be OK!}}"
    ]
@@ -483,21 +493,83 @@
    ],
    "bolge": [
     "{{get ill}} kelimesinin zıt anlamlısı hangisi"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Hasta olmanın zıddını",
+    "Rahatlamanın zıddını"
    ]
   },
   {
    "soru": "Tom: {{I think I'm getting ill. Look at my red nose! I'm ___ all the time.}}",
    "secenekler": [
     "sneezing",
-    "relaxing",
+    "coughing",
     "getting better"
    ],
    "dogru": 0,
    "ipucu": "Kırmızı burun hangi belirtiyle olur?",
    "aciklama": "Burnu kızaran Tom sürekli hapşırıyor: {{sneezing}}. (SB s. 56)",
    "kavram": "sneeze",
+   "ikiz": "i2",
+   "ne": [
+    "Burnu kızaran kişinin yaptığını",
+    "Göğsü ağrıyan kişinin yaptığını"
+   ],
    "bolge": [
     "Tom: {{I think I'm getting ill. Look at my red nose! I'm ___ all the time.}}"
+   ]
+  },
+  {
+   "soru": "{{relax}} kelimesinin zıt anlamlısı hangisi?",
+   "secenekler": [
+    "get stressed",
+    "sneeze",
+    "get better"
+   ],
+   "dogru": 0,
+   "ipucu": "{{relax}} rahatlamak demek. Rahatlamanın tersi olan duyguyu bul.",
+   "aciklama": "{{relax}} ↔ {{get stressed}}: {{If they get stressed, they relax.}} (SB s. 48).",
+   "kavram": "get stressed",
+   "ikiz": "i1",
+   "vurgu": [
+    "zıt anlamlısı hangisi"
+   ],
+   "ne": [
+    "Rahatlamanın zıddını",
+    "Hasta olmanın zıddını"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{relax}} kelimesinin zıt anlamlısı hangisi"
+   ]
+  },
+  {
+   "soru": "Azra'nın ateşi var. {{It isn't a good idea to do school work if you want to ___.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "get stressed",
+    "get better",
+    "have a fever"
+   ],
+   "dogru": 1,
+   "ipucu": "Ateşi olan biri ne ister? Hastalığın bitmesini anlatan kelimeyi düşün.",
+   "aciklama": "Ders çalışmak iyi bir fikir değil, Azra iyileşmek istiyorsa: {{if you want to get better}} (WB s. 32).",
+   "kavram": "get better",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Hasta birinin istediği durumu",
+    "Sınavdan önce yapma denen şeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir"
    ]
   }
  ],
@@ -661,5 +733,6 @@
    "aciklama": "“…let's take your temperature. Hmm, 39 degrees. You have a fever.” Ateşini ölçtü: 39 derece. Göğüs ağrısı öksürükle ilgili (SB s. 56; boşluklar kitaptaki kelimelerle dolduruldu).",
    "kavram": "have a fever"
   }
- ]
+ ],
+ "testSoru": 8
 }

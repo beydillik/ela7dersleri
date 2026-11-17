@@ -819,6 +819,11 @@
    ],
    "bolge": [
     "{{I have some time to do my homework but not much.}} Altı çizili {{some time}} yerine hangisi"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Sayılamayan isimle kullanılanı",
+    "Sayılabilen isimle kullanılanı"
    ]
   },
   {
@@ -837,6 +842,11 @@
    ],
    "bolge": [
     "{{The team has three or four good players.}} {{three or four}} yerine hangisi"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Sayılabilen isimle kullanılanı",
+    "Sayılamayan isimle kullanılanı"
    ]
   },
   {
@@ -878,9 +888,13 @@
    "bolge": [
     "Hangisi doğru"
    ],
+   "ikiz": "i3",
    "vurgu": [
-    "Hangisi",
-    "doğru"
+    "Hangisi doğru"
+   ],
+   "ne": [
+    "Dışarı çıkmayı engelleyen durumu anlatan cümleyi",
+    "Sorun olmayan duyguyu anlatan cümleyi"
    ]
   },
   {
@@ -911,6 +925,11 @@
    "kavram": "too much",
    "bolge": [
     "{{We spent too ___ time defending.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "time ile kullanılanı",
+    "games ile kullanılanı"
    ]
   },
   {
@@ -926,6 +945,11 @@
    "kavram": "too many",
    "bolge": [
     "{{If you lose too ___ games, you'll be out of the competition.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "games ile kullanılanı",
+    "time ile kullanılanı"
    ]
   },
   {
@@ -936,18 +960,22 @@
     "I'm happy very. Let's celebrate."
    ],
    "dogru": 1,
-   "ipucu": "{{too}} bir sorun anlatır; mutluluk sorun değil.",
+   "ipucu": "Mutluluk bir sorun mu? Duyguyu güçlendiren kelimeyi seç.",
    "aciklama": "Güçlendirmek için {{very}}: {{I'm very happy.}} (SB s. 49)",
    "kavram": "too + adjective",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi doğru"
+   ],
+   "ne": [
+    "Sorun olmayan duyguyu anlatan cümleyi",
+    "Dışarı çıkmayı engelleyen durumu anlatan cümleyi"
+   ],
    "tetik": [
     "Hangisi"
    ],
    "bolge": [
     "Hangisi doğru"
-   ],
-   "vurgu": [
-    "Hangisi",
-    "doğru"
    ]
   },
   {
@@ -1124,5 +1152,6 @@
    "aciklama": "“The list is too long to answer all of them…” Liste hepsini cevaplamak için çok uzun. Dört tanesini cevapladılar (SB s. 48).",
    "kavram": "too + adjective"
   }
- ]
+ ],
+ "testSoru": 11
 }

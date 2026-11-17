@@ -558,6 +558,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{Paula didn't ___ hello to me at the party.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "hello ile kullanılan fiili",
+    "jokes ile kullanılan fiili"
    ]
   },
   {
@@ -612,6 +617,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{Mike ___ a really terrible joke and no one laughed.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "joke ile kullanılan fiilin geçmişini",
+    "sorry ile kullanılan fiilin geçmişini"
    ]
   },
   {
@@ -630,6 +640,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{I'm not very good at telling ___ – my face always goes red!}}"
+   ],
+   "ikiz": "i3",
+   "ne": [
+    "Söylerken yüzün kızardığı şeyi",
+    "Konuşanın söylemediği şeyi"
    ]
   },
   {
@@ -666,6 +681,84 @@
    ],
    "vurgu": [
     "ne demek"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I like ___ jokes, but I can never make them sound funny.}}",
+   "secenekler": [
+    "saying",
+    "telling",
+    "say"
+   ],
+   "dogru": 1,
+   "ipucu": "{{jokes}} hangi fiille kullanılıyordu? {{like}}'tan sonra fiil {{-ing}} alıyor.",
+   "aciklama": "Şaka anlatmak {{tell a joke}}: {{I like telling jokes.}} (WB s. 27).",
+   "kavram": "tell a joke",
+   "ikiz": "i1",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "jokes ile kullanılan fiili",
+    "hello ile kullanılan fiili"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I like ___ jokes, but I can never make them sound funny.}}"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I ___ sorry to Luisa yesterday.}}",
+   "secenekler": [
+    "told",
+    "said",
+    "spoke"
+   ],
+   "dogru": 1,
+   "ipucu": "{{sorry}} hangi fiille kullanılıyordu? Geçmiş hâlini düşün.",
+   "aciklama": "{{say sorry}} → {{said}}: {{I said sorry to Luisa.}} (SB s. 130).",
+   "kavram": "say sorry",
+   "ikiz": "i2",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "sorry ile kullanılan fiilin geçmişini",
+    "joke ile kullanılan fiilin geçmişini"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I ___ sorry to Luisa yesterday.}}"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{I know I said I was 16, but I wasn't telling ___.}}",
+   "secenekler": [
+    "the truth",
+    "lies",
+    "hello"
+   ],
+   "dogru": 0,
+   "ipucu": "Konuşan kişi 16 yaşında olduğunu söylemiş ama bu doğru değilmiş. {{wasn't}} olumsuz: neyi söylemiyormuş?",
+   "aciklama": "16 yaşında olduğunu söyledi ama doğruyu söylemiyordu: {{I wasn't telling the truth.}} (WB s. 30).",
+   "kavram": "tell the truth",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Konuşanın söylemediği şeyi",
+    "Söylerken yüzün kızardığı şeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{I know I said I was 16, but I wasn't telling ___.}}"
    ]
   }
  ],
@@ -821,5 +914,6 @@
    "aciklama": "“My friend told me a funny joke this morning.” Şakayı bir arkadaşı anlattı; kız ve babası şakanın içindeki kişilerdir (WB s. 28; fiiller kitaptaki zamanlarla dolduruldu).",
    "kavram": "tell a joke"
   }
- ]
+ ],
+ "testSoru": 9
 }

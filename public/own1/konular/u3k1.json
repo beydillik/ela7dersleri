@@ -364,13 +364,18 @@
    "soru": "Boşluğa hangisi gelir? {{Mr Hicks ___ everyone: 'Welcome to the school.'}}",
    "secenekler": [
     "greeted",
-    "waved",
+    "smiled",
     "shook"
    ],
    "dogru": 0,
    "ipucu": "{{Welcome}} demek: gelenleri karşılamak.",
    "aciklama": "Gelenlere {{Welcome!}} demek {{greet}}: {{Mr Hicks greeted everyone.}} (SB s. 44)",
    "kavram": "greet",
+   "ikiz": "i2",
+   "ne": [
+    "Gelenleri karşılarken yapılanı",
+    "Cana yakın birinin yüzüyle yaptığını"
+   ],
    "tetik": [
     "hangisi"
    ],
@@ -394,6 +399,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{In my country, we ___ hands when we meet someone new.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Tanışırken yapılan hareketi",
+    "Vedalaşırken yapılan hareketi"
    ]
   },
   {
@@ -428,8 +438,14 @@
    "bolge": [
     "tanışırken genelde ne yapmadığını söyledi"
    ],
+   "ikiz": "i3",
    "vurgu": [
+    "tanışırken",
     "ne yapmadığını"
+   ],
+   "ne": [
+    "Japonların tanışırken yapmadığını",
+    "Yazarın havalimanında yaptığını"
    ]
   },
   {
@@ -466,6 +482,83 @@
    ],
    "bolge": [
     "Hangisi vedalaşırken yapılır"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{When their guests left, they came outside to ___ goodbye.}}",
+   "secenekler": [
+    "wave",
+    "smile",
+    "shake"
+   ],
+   "dogru": 0,
+   "ipucu": "{{goodbye}} ile birlikte kullanılan hareketi düşün: ayrılırken elle yapılır.",
+   "aciklama": "Misafirler giderken dışarı çıkıp el salladılar: {{wave goodbye}} (SB s. 130).",
+   "kavram": "wave",
+   "ikiz": "i1",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Vedalaşırken yapılan hareketi",
+    "Tanışırken yapılan hareketi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{When their guests left, they came outside to ___ goodbye.}}"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Kazue's brother was very friendly and he ___ a lot.}}",
+   "secenekler": [
+    "greeted",
+    "smiled",
+    "shook"
+   ],
+   "dogru": 1,
+   "ipucu": "{{very friendly}}: çok cana yakın. Cana yakın biri yüzüyle ne yapar?",
+   "aciklama": "Kazue'nin kardeşi çok cana yakındı ve çok gülümsedi: {{he smiled a lot}} (WB s. 24).",
+   "kavram": "smile",
+   "ikiz": "i2",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Cana yakın birinin yüzüyle yaptığını",
+    "Gelenleri karşılarken yapılanı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Kazue's brother was very friendly and he ___ a lot.}}"
+   ]
+  },
+  {
+   "soru": "Hikâyeye göre Kazue havalimanına gelince yazar ne yaptı?",
+   "secenekler": [
+    "Onunla el sıkıştı.",
+    "Ona gülümsedi.",
+    "Onu selamladı."
+   ],
+   "dogru": 2,
+   "ipucu": "Hikâyenin ilk cümlelerine bak: {{I ___ her at the airport when she arrived.}}",
+   "aciklama": "{{I greeted her at the airport when she arrived.}} Yazar Kazue'yi havalimanında selamladı (WB s. 24).",
+   "kavram": "greet",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hikâyeye göre",
+    "havalimanına gelince",
+    "ne yaptı"
+   ],
+   "ne": [
+    "Yazarın havalimanında yaptığını",
+    "Japonların tanışırken yapmadığını"
+   ],
+   "bolge": [
+    "havalimanına gelince yazar ne yaptı"
    ]
   }
  ],
@@ -622,5 +715,6 @@
    "aciklama": "“We waved goodbye as they drove away in a taxi.” El sallayarak vedalaştılar. Selamlama (greet) havaalanında, karşılaşınca oldu; el sıkışmadılar (WB s. 24; boşluklar kitaptaki kelimelerle dolduruldu).",
    "kavram": "wave"
   }
- ]
+ ],
+ "testSoru": 8
 }

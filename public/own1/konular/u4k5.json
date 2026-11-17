@@ -677,6 +677,14 @@
    ],
    "bolge": [
     "{{My team loses every game!}} Tavsiye hangisi"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Tavsiye hangisi"
+   ],
+   "ne": [
+    "Takımı hep kaybedene tavsiyeyi",
+    "Yazın çok hapşırana tavsiyeyi"
    ]
   },
   {
@@ -695,6 +703,14 @@
    ],
    "bolge": [
     "{{I sneeze a lot in the summer.}} Tavsiye hangisi"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Tavsiye hangisi"
+   ],
+   "ne": [
+    "Yazın çok hapşırana tavsiyeyi",
+    "Takımı hep kaybedene tavsiyeyi"
    ]
   },
   {
@@ -710,6 +726,11 @@
    "kavram": "Should I …?",
    "bolge": [
     "{{___ Paula stay at home if she's feeling ill?}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Soru cümlesinin başına gelen kelimeyi",
+    "Arkasından to gelen kelimeyi"
    ]
   },
   {
@@ -725,6 +746,11 @@
    "kavram": "Should I …?",
    "bolge": [
     "{{Should I drink more water?}} — {{Yes, you ___.}}"
+   ],
+   "ikiz": "i3",
+   "ne": [
+    "Olumlu kısa cevabı",
+    "Olumsuz kısa cevabı"
    ]
   },
   {
@@ -740,6 +766,11 @@
    "kavram": "ought to",
    "bolge": [
     "{{We ___ to eat lots of fruit and vegetables every day.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Arkasından to gelen kelimeyi",
+    "Soru cümlesinin başına gelen kelimeyi"
    ]
   },
   {
@@ -810,6 +841,26 @@
    "kavram": "should",
    "bolge": [
     "{{If you're always late for class, you ___ get up earlier.}}"
+   ]
+  },
+  {
+   "soru": "{{Should I drink coffee at night?}} — {{No, you ___.}}",
+   "secenekler": [
+    "should",
+    "shouldn't",
+    "ought"
+   ],
+   "dogru": 1,
+   "ipucu": "Kısa cevap {{No}} ile başlıyor: olumsuz.",
+   "aciklama": "{{No, you shouldn't.}} Kahve gece uykuyu kaçırır: {{You shouldn't drink coffee at night.}} (WB s. 39).",
+   "kavram": "Should I …?",
+   "ikiz": "i3",
+   "ne": [
+    "Olumsuz kısa cevabı",
+    "Olumlu kısa cevabı"
+   ],
+   "bolge": [
+    "{{Should I drink coffee at night?}} — {{No, you ___.}}"
    ]
   }
  ],
@@ -979,5 +1030,6 @@
    "aciklama": "“Every lesson should have a short break in the middle.” Her derste kısa bir mola olmalı. Diğer şıklar sınav ve bilgisayar sorunlarının önerileri (SB s. 54).",
    "kavram": "should"
   }
- ]
+ ],
+ "testSoru": 11
 }

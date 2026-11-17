@@ -711,14 +711,19 @@
   {
    "soru": "Hangisi {{since}} ile kullanılır?",
    "secenekler": [
-    "two months",
+    "three weeks",
     "my birthday",
     "a while"
    ],
    "dogru": 1,
    "ipucu": "{{since}} bir başlangıç anı ister. Hangisi süre değil, bir gün?",
-   "aciklama": "{{since my birthday}}: doğum günümden beri. {{two months}} ve {{a while}} süre: {{for}}. (SB s. 120)",
+   "aciklama": "{{since my birthday}}: doğum günümden beri. {{three weeks}} ve {{a while}} süredir: {{for}} ile kullanılır (SB s. 120).",
    "kavram": "since",
+   "ikiz": "i1",
+   "ne": [
+    "since ile kullanılan ifadeyi",
+    "for ile kullanılan ifadeyi"
+   ],
    "tetik": [
     "Hangisi"
    ],
@@ -729,14 +734,19 @@
   {
    "soru": "Hangisi {{for}} ile kullanılır?",
    "secenekler": [
-    "last week",
+    "my birthday",
     "yesterday",
     "three weeks"
    ],
    "dogru": 2,
    "ipucu": "{{for}} bir süre ister: kaç gün, kaç hafta?",
-   "aciklama": "{{for three weeks}}: üç haftadır. (SB s. 120)",
+   "aciklama": "{{for three weeks}}: üç haftadır. {{my birthday}} ve {{yesterday}} bir an gösterir: {{since}} ile kullanılır (SB s. 120).",
    "kavram": "for",
+   "ikiz": "i1",
+   "ne": [
+    "for ile kullanılan ifadeyi",
+    "since ile kullanılan ifadeyi"
+   ],
    "tetik": [
     "Hangisi"
    ],
@@ -760,6 +770,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{A: How long have you known your best friend? B: ___ we were seven years old.}}"
+   ],
+   "ikiz": "i3",
+   "ne": [
+    "Bir cümleden önce gelen kelimeyi",
+    "Bir süreden önce gelen kelimeyi"
    ]
   },
   {
@@ -814,6 +829,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{She hasn't seen her grandparents ___ a long time.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "a long time ifadesinden önce gelen kelimeyi",
+    "2010 yılından önce gelen kelimeyi"
    ]
   },
   {
@@ -832,6 +852,11 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{We've lived in this apartment ___ 2010.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "2010 yılından önce gelen kelimeyi",
+    "a long time ifadesinden önce gelen kelimeyi"
    ]
   },
   {
@@ -850,6 +875,32 @@
    ],
    "bolge": [
     "Doğru cevap"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{A: How long have you lived here? B: ___ about six months.}}",
+   "secenekler": [
+    "Since",
+    "For",
+    "Ago"
+   ],
+   "dogru": 1,
+   "ipucu": "Cevaptan sonra bir süre geliyor: {{about six months}}.",
+   "aciklama": "Süre → {{for}}: {{For about six months.}} (WB s. 28).",
+   "kavram": "for",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Bir süreden önce gelen kelimeyi",
+    "Bir cümleden önce gelen kelimeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{A: How long have you lived here? B: ___ about six months.}}"
    ]
   }
  ],
@@ -1005,5 +1056,6 @@
    "aciklama": "“The Japanese have used emoji since 1999.” 1999'dan beri kullanıyorlar. 3,000 emoji sayısıdır, yıl değil (WB s. 25).",
    "kavram": "since"
   }
- ]
+ ],
+ "testSoru": 10
 }

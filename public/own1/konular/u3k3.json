@@ -737,6 +737,11 @@
    ],
    "bolge": [
     "{{Most people couldn't send each other quick messages 30 years ago.}} Bu cümle hangi zamanı anlatıyor"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "couldn't geçen cümlenin zamanını",
+    "will be able to geçen cümlenin zamanını"
    ]
   },
   {
@@ -755,6 +760,11 @@
    ],
    "bolge": [
     "{{It's possible that we will be able to interpret any language on a smartphone app.}} Bu cümle hangi zamanı anlatıyor"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "will be able to geçen cümlenin zamanını",
+    "couldn't geçen cümlenin zamanını"
    ]
   },
   {
@@ -773,19 +783,29 @@
    ],
    "bolge": [
     "Boşluğa hangisi gelir? {{Today, you ___ see the Rosetta Stone in the British Museum.}}"
+   ],
+   "ikiz": "i2",
+   "ne": [
+    "Bugün yapılabileni anlatan kelimeyi",
+    "Yüzyıllarca yapılamayanı anlatan kelimeyi"
    ]
   },
   {
    "soru": "Boşluğa hangisi gelir? {{When she was younger, she ___ speak Spanish, but she studied it at school.}}",
    "secenekler": [
     "can",
-    "will be able to",
+    "won't be able to",
     "couldn't"
    ],
    "dogru": 2,
    "ipucu": "Küçükken konuşamıyordu, sonra okulda öğrendi.",
    "aciklama": "Geçmişte yapamamak: {{couldn't}}. (WB s. 93)",
    "kavram": "couldn't",
+   "ikiz": "i3",
+   "ne": [
+    "Geçmişte yapamadığını anlatan kelimeyi",
+    "Yarın yapamayacağını anlatan kelimeyi"
+   ],
    "tetik": [
     "hangisi"
    ],
@@ -895,6 +915,58 @@
    ],
    "bolge": [
     "Arkadaşın {{I broke my phone!}} dedi. Hangisini söylersin"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{For centuries, nobody ___ read Egyptian hieroglyphics.}}",
+   "secenekler": [
+    "could",
+    "can",
+    "won't be able to"
+   ],
+   "dogru": 0,
+   "ipucu": "{{For centuries}}: yüzyıllar boyunca. Bu cümle geçmişi anlatıyor.",
+   "aciklama": "Kitapta: {{For centuries, nobody could read Egyptian hieroglyphics.}} Geçmiş: {{could}} (SB s. 37).",
+   "kavram": "could",
+   "ikiz": "i2",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Yüzyıllarca yapılamayanı anlatan kelimeyi",
+    "Bugün yapılabileni anlatan kelimeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{For centuries, nobody ___ read Egyptian hieroglyphics.}}"
+   ]
+  },
+  {
+   "soru": "Boşluğa hangisi gelir? {{Don't speak too quietly during the presentation tomorrow. People ___ hear you.}}",
+   "secenekler": [
+    "can",
+    "won't be able to",
+    "couldn't"
+   ],
+   "dogru": 1,
+   "ipucu": "{{tomorrow}}: yarın. Çok sessiz konuşursan ne olur?",
+   "aciklama": "Yarınki sunumda çok sessiz konuşursan insanlar seni duyamayacak: {{won't be able to}} (SB s. 37).",
+   "kavram": "won't be able to",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Yarın yapamayacağını anlatan kelimeyi",
+    "Geçmişte yapamadığını anlatan kelimeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelir? {{Don't speak too quietly during the presentation tomorrow. People ___ hear you.}}"
    ]
   }
  ],
@@ -1052,5 +1124,6 @@
    "aciklama": "“Now I've got an electric piano and I can use headphones.” Şimdi kulaklık kullanabiliyor; bu yüzden ailesi onu duymuyor (WB s. 26; boşluklar bağlamdan dolduruldu).",
    "kavram": "can"
   }
- ]
+ ],
+ "testSoru": 11
 }
