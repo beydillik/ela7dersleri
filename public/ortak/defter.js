@@ -180,7 +180,7 @@
       neden: "Ela'nın seçtiği yanlış nedeni: bilmiyordum, yanlis-okudum (soruyu yanlış okudum), karistirdim (iki şeyi karıştırdım), acele (acele ettim)",
       mod: "Sınav Provası biçimi: anlik (her soruda sonuç hemen) ya da sonda (sonuçlar sınav sonunda)", yeniden: "true: Sınav Provası'ndan sonra yanlışları yeniden çözerken verilen cevap",
       hazir: "hata-acele olayında: okuma beklemesi bitmişti, yalnızca neden seçilmemişti",
-      kalp: "soru olayında (dikkat paketli konu): sorunun kalbi — 1 ilk dokunuşta, 2 ikinci, 0 gösterildi, -1 bulmasız (seri ödülü), -2 bulmasız (okuma yaklaşımı: Öğren, metinli sorular ve Kısa Cevap; soru kelimesi sarı vurgulu), -3 bulmasız (Test: soru öncesi adım kapalı — veli ayarı ya da kademeli); alan yoksa adım yok", ne: "soru olayında (okuma pilotu): 'Bu soru senden ne istiyor?' adımı — 1 ilk seçimde doğru, 2 ikinci seçimde", ikiz: "soru olayında: ikiz sorunun çift adı (aynı kök, tek kelime farkı; testte art arda gelir)",
+      kalp: "soru olayında (dikkat paketli konu): sorunun kalbi — 1 ilk dokunuşta, 2 ikinci, 0 gösterildi, -1 bulmasız (seri ödülü), -2 bulmasız (okuma yaklaşımı: Öğren, metinli sorular, Kısa Cevap ve ne-istiyor verisi olmayan Test soruları; soru kelimesi sarı vurgulu), -3 bulmasız (Test: soru öncesi adım kapalı — veli ayarı ya da kademeli); alan yoksa adım yok", ne: "soru olayında (okuma pilotu): 'Bu soru senden ne istiyor?' adımı — 1 ilk seçimde doğru, 2 ikinci seçimde", ikiz: "soru olayında: ikiz sorunun çift adı (aynı kök, tek kelime farkı; testte art arda gelir)",
       kullanimModu: "mod olayında: yeni kullanım modu (normal, destekli, odakli, ozel); once: önceki mod", kavramlar: "hedefli-tekrar olayında: tekrar gösterilen kavramlar",
       oran: "hedefli-tekrar olayında: testte ilk denemede doğru oranı (0–1); yazili-madde olayında: maddede işaretlenen puanlı parça oranı (0–1)", esik: "hedefli-tekrar olayında: tamamlanma eşiği (0–1)",
       kazanim: "Yazılıya Hazırlık: MEB öğrenme çıktısı kodu (ör. FB.7.2.1)", otomatik: "Yazılıya Hazırlık: anahtar kelimelerin otomatik bulduğu oran (madde) ya da puan (prova); Ela'nın işaretlediğiyle karşılaştırmak için",
@@ -780,6 +780,9 @@
     const okuMetin = dikkat && okuPilot() && kanitli(o) && vurguDuz(o);
     if (pilot && opts.ogren) { vurguCiz($(".q-text > span:last-child", el), o); state.kalp = -2; }   // Öğren: bulma yok, soru kelimesi fosforlu
     else if (onKapali) { vurguCiz($(".q-text > span:last-child", el), o); state.kalp = -3; }
+    // "Ne istiyor" verisi olmayan Test sorusu (17 Kasım 2026, Kemal'in onayı): sorunun kalbine dokunma yok, soru kelimesi sarı, şıklar açık (state.kalp = -2).
+    // Ön adım yalnız "ne istiyor" verisi yazılmış sorularda (ikizler) çıkar. Matematik tuş takımı / sayı doğrusu soruları ayrı (wireMathQuestion: dokunma kalır).
+    else if (pilot && opts.test && !(o.ne && o.ne.length === 2)) { vurguCiz($(".q-text > span:last-child", el), o); if (state.kalp === undefined) state.kalp = -2; }
     else if (okuMetin) {
       const pas = $(".pasaj", el), ka = $(".kanit-adim", el), qt = $(".q-text", el);
       vurguCiz($(".q-text > span:last-child", el), o); if (state.kalp === undefined) state.kalp = -2;

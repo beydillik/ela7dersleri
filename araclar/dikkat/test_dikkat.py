@@ -200,7 +200,7 @@ with sync_playwright() as pw:
     toplam = int(re.search(r"/ (\d+)", page.inner_text(".akis .progress span")).group(1))
     ok(f"Test: toplam soru sayısı değişmedi ({toplam})", toplam == D.get("testSoru", len(D["sorular"])))
     metinli_gor = 0; yanlis2 = False; tuzak_gor = False; sonuclar = []
-    seri_gor = False; ne_test = False; ne_say = 0; sira = []; kapali_test = False; kapanis_gor = False
+    seri_gor = False; ne_test = False; ne_say = 0; sira = []; kapali_test = False; kapanis_gor = False; nesiz_test = False
     for _ in range(60):
         if page.query_selector(".akis") is None: break
         qtext = page.inner_text("#sq .q-text"); q = bul_q(qtext); met = bool(q.get("kanit")) and ("metin" in q or "tablo" in q)   # metinli alanı (Fen) ya da konudaki kanıtlı soru (Türkçe)
@@ -224,6 +224,9 @@ with sync_playwright() as pw:
         elif PILOT and not met and q in D["sorular"] and ONADIM in ("kapali", "kapanis") and not kapali_test and (ONADIM == "kapali" or kapanis_gor):
             kapali_test = True
             ok(f"Ön adım kapalı ({ONADIM}): 'ne istiyor' yok, dokunma yok, soru kelimesi sarı, şıklar açık", page.query_selector("#sq .ne-adim") is None and page.query_selector("#sq .kalp-not") is None and page.locator("#sq .q-text .kk-run.vurgu").count() > 0 and page.is_visible(f"#sq {alan(q)}"), qtext[:80])
+        elif PILOT and not met and q in D["sorular"] and not q.get("ne") and not nesiz_test and ONADIM in ("kademeli", "acik") and "cevap" not in q and "nokta" not in q:
+            nesiz_test = True
+            ok("Test: 'ne istiyor' verisi olmayan soruda dokunma yok, soru kelimesi sarı, şıklar açık", page.query_selector("#sq .kalp-not") is None and page.query_selector("#sq .ne-adim") is None and page.is_visible("#sq .opts") and (page.locator("#sq .q-text .kk-run.vurgu").count() > 0 or not q.get("tetik")), qtext[:80])
         if met and PILOT:
             ok("Metinli: dokunma yok, soru kelimesi sarı, metin hemen açık", page.query_selector("#sq .kalp-not") is None and page.locator("#sq .q-text .kk-run.vurgu").count() > 0 and page.is_visible("#sq .pasaj"))
         if page.query_selector("#sq .kalp-not") and "ok" not in (page.get_attribute("#sq .kalp-not", "class") or ""):
