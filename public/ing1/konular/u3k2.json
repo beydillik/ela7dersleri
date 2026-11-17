@@ -437,13 +437,21 @@
    "soru": "{{A reward for winning a contest or competition}} tanımı hangi kelimenin?",
    "secenekler": [
     "career",
-    "alone",
+    "die",
     "award"
    ],
    "dogru": 2,
    "ipucu": "Yarışmayı kazanana verilen şey. Kartta kupa vardı.",
    "aciklama": "Yarışma için verilen ödül {{award}}dır. (s. 55)",
    "kavram": "award",
+   "ikiz": "i1",
+   "vurgu": [
+    "tanımı hangi kelimenin"
+   ],
+   "ne": [
+    "Yarışmada kazanılanı anlatan kelimeyi",
+    "Yaşamın sona ermesini anlatan kelimeyi"
+   ],
    "tetik": [
     "hangi kelimenin"
    ],
@@ -467,6 +475,14 @@
    ],
    "bolge": [
     "hangisi önce olur"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi önce olur"
+   ],
+   "ne": [
+    "En önce olanı",
+    "En son olanı"
    ]
   },
   {
@@ -477,9 +493,14 @@
     "biography"
    ],
    "dogru": 1,
-   "ipucu": "Fotoğrafçılıkta yıllar süren meslek hayatı: hangi kelimeydi?",
+   "ipucu": "{{has}} “sahip” demek. James yıllardır fotoğrafçılık yapıyor: bir işte yıllar içinde ilerlemeyi anlatan kelimeyi düşün.",
    "aciklama": "Meslek hayatı {{career}}: {{an excellent career in photography}}. (s. 46)",
    "kavram": "career",
+   "ikiz": "i2",
+   "ne": [
+    "James'in fotoğrafçılıkta sahip olduğu şeyi",
+    "James'in fotoğrafçılıkta kazandığı şeyi"
+   ],
    "bolge": [
     "{{My friend James has an excellent ___ in photography.}}"
    ]
@@ -522,6 +543,78 @@
    "kavram": "award",
    "bolge": [
     "{{Jessica Milton is a brilliant musician. She's got five music ___ so far.}}"
+   ]
+  },
+  {
+   "soru": "{{To stop living, to pass away}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "award",
+    "die",
+    "career"
+   ],
+   "dogru": 1,
+   "ipucu": "{{stop living}} “yaşamayı bırakmak” demek. Biyografiler genelde bu olayla biter.",
+   "aciklama": "{{To stop living, to pass away}}: ölmek, yani {{die}} (s. 55).",
+   "kavram": "die",
+   "ikiz": "i1",
+   "vurgu": [
+    "tanımı hangi kelimenin"
+   ],
+   "ne": [
+    "Yaşamın sona ermesini anlatan kelimeyi",
+    "Yarışmada kazanılanı anlatan kelimeyi"
+   ],
+   "tetik": [
+    "hangi kelimenin"
+   ],
+   "bolge": [
+    "{{To stop living, to pass away}} tanımı hangi kelimenin"
+   ]
+  },
+  {
+   "soru": "{{My friend James won an excellent ___ in photography.}}",
+   "secenekler": [
+    "award",
+    "career",
+    "biography"
+   ],
+   "dogru": 0,
+   "ipucu": "{{won}} “kazandı” demek. Kazanılan bir şey hangisi?",
+   "aciklama": "{{win an award}}: ödül kazanmak. James fotoğrafçılıkta bir ödül kazandı (s. 46, s. 55).",
+   "kavram": "award",
+   "ikiz": "i2",
+   "ne": [
+    "James'in fotoğrafçılıkta kazandığı şeyi",
+    "James'in fotoğrafçılıkta sahip olduğu şeyi"
+   ],
+   "bolge": [
+    "{{My friend James won an excellent ___ in photography.}}"
+   ]
+  },
+  {
+   "soru": "Bir çift için hangisi en son olur?",
+   "secenekler": [
+    "get engaged",
+    "get married",
+    "raise children"
+   ],
+   "dogru": 2,
+   "ipucu": "Bill'in hayatında sıra: önce evlendi, sonra ne oldu?",
+   "aciklama": "Önce nişanlanılır, sonra evlenilir, çocuk yetiştirmek en sonda gelir. Bill 2012'de evlendi, 2015'te oğlu oldu (s. 56).",
+   "kavram": "raise",
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi en son olur"
+   ],
+   "ne": [
+    "En son olanı",
+    "En önce olanı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi en son olur"
    ]
   }
  ],
@@ -961,5 +1054,6 @@
    "aciklama": "“He gave concerts in many countries and won several music awards.” Birkaç müzik ödülü kazandı (s. 59).",
    "kavram": "award"
   }
- ]
+ ],
+ "testSoru": 10
 }

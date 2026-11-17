@@ -343,9 +343,14 @@
    "bolge": [
     "hangisi doğru"
    ],
+   "ikiz": "i1",
    "vurgu": [
-    "hangisi",
-    "doğru"
+    "Dodo kuşu",
+    "hangisi doğru"
+   ],
+   "ne": [
+    "Dünyada hiç kalmayan hayvanın durumunu",
+    "Dünyada az kalan hayvanın durumunu"
    ]
   },
   {
@@ -400,12 +405,20 @@
    "secenekler": [
     "tusks",
     "wings",
-    "milk"
+    "fur"
    ],
    "dogru": 0,
-   "ipucu": "Filin ağzının iki yanındaki beyaz dişler?",
+   "ipucu": "Fillerin ağzının iki yanından çıkan uzun beyaz dişleri düşün.",
    "aciklama": "Filler fildişi için öldürülür: {{tusks}}. (s. 75)",
    "kavram": "tusk",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Fillerin hangi parçası için öldürüldüğünü",
+    "Kaplanların hangi parçası için öldürüldüğünü"
+   ],
    "tetik": [
     "hangisi"
    ],
@@ -447,6 +460,15 @@
    ],
    "bolge": [
     "hangi kelimeyle anlatılır"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Ormanları kesip tarla yapmak",
+    "hangi kelimeyle"
+   ],
+   "ne": [
+    "Ormanı kesmeyi anlatan kelimeyi",
+    "Kirletmeyi anlatan kelimeyi"
    ]
   },
   {
@@ -469,6 +491,86 @@
    "vurgu": [
     "hangisi",
     "DEĞİLDİR"
+   ]
+  },
+  {
+   "soru": "{{There aren't many tigers in the world.}} Kaplan için hangisi doğru?",
+   "secenekler": [
+    "It is extinct.",
+    "It is endangered.",
+    "It is poisonous."
+   ],
+   "dogru": 1,
+   "ipucu": "{{many}} “çok” demek. {{aren't many}}: çok yok, az var.",
+   "aciklama": "{{This means there aren't many tigers in the world.}} Kaplanların nesli tehlikede: {{endangered}} (s. 70).",
+   "kavram": "endangered",
+   "ikiz": "i1",
+   "vurgu": [
+    "Kaplan için",
+    "hangisi doğru"
+   ],
+   "ne": [
+    "Dünyada az kalan hayvanın durumunu",
+    "Dünyada hiç kalmayan hayvanın durumunu"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Kaplan için hangisi doğru"
+   ]
+  },
+  {
+   "soru": "Havayı ve suyu kirli hâle getirmek hangi kelimeyle anlatılır?",
+   "secenekler": [
+    "pollute",
+    "hunt",
+    "destroy"
+   ],
+   "dogru": 0,
+   "ipucu": "Kirli hâle getirmeyi anlatan kelimeyi düşün.",
+   "aciklama": "{{pollute}}: kirletmek. {{They also polluted the environment.}} (s. 68).",
+   "kavram": "pollute",
+   "ikiz": "i2",
+   "vurgu": [
+    "kirli hâle getirmek",
+    "hangi kelimeyle"
+   ],
+   "ne": [
+    "Kirletmeyi anlatan kelimeyi",
+    "Ormanı kesmeyi anlatan kelimeyi"
+   ],
+   "tetik": [
+    "hangi kelimeyle"
+   ],
+   "bolge": [
+    "hangi kelimeyle anlatılır"
+   ]
+  },
+  {
+   "soru": "{{Don't kill the tigers for their ___.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "tusks",
+    "fur",
+    "wings"
+   ],
+   "dogru": 1,
+   "ipucu": "Kaplanların vücudu siyah ve turuncu çizgilerle kaplıdır.",
+   "aciklama": "Kaplanların güzel, çizgili kürkleri vardır. {{Don't kill the animals for their fur.}} (s. 70).",
+   "kavram": "fur",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Kaplanların hangi parçası için öldürüldüğünü",
+    "Fillerin hangi parçası için öldürüldüğünü"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{Don't kill the tigers for their ___.}} Boşluğa hangisi gelir"
    ]
   }
  ],
@@ -909,5 +1011,6 @@
    "aciklama": "“They destroyed their habitats to make fields.” Tarla yapmak için hayvanların yaşam alanlarını yok ettiler (s. 68).",
    "kavram": "destroy"
   }
- ]
+ ],
+ "testSoru": 10
 }

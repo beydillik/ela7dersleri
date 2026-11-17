@@ -429,7 +429,7 @@
     "We shouldn't to destroy the forests."
    ],
    "dogru": 1,
-   "ipucu": "Kötü davranış yapılmamalı. Bir de yazımına dikkat et.",
+   "ipucu": "Bu davranışı yapmalı mıyız, yapmamalı mı? Fiilin yazımına da bak.",
    "aciklama": "Yapılmaması gereken: {{We shouldn't destroy the forests.}} (s. 75)",
    "kavram": "shouldn't",
    "yardim": {
@@ -439,15 +439,20 @@
      "{{shouldn't}}'dan sonra {{to}} gelmez."
     ]
    },
+   "ikiz": "i3",
+   "vurgu": [
+    "kötü bir davranış",
+    "Hangi öneri"
+   ],
+   "ne": [
+    "Kötü davranış için doğru öneriyi",
+    "İyi davranış için doğru öneriyi"
+   ],
    "tetik": [
     "Hangi öneri"
    ],
    "bolge": [
     "Hangi öneri doğru"
-   ],
-   "vurgu": [
-    "Hangi öneri",
-    "doğru"
    ]
   },
   {
@@ -473,12 +478,20 @@
    "secenekler": [
     "to ile: should to protect",
     "Yalın hâliyle: should protect",
-    "-s ile: should protects"
+    "-ing ile: should protecting"
    ],
    "dogru": 1,
    "ipucu": "{{should}} kartındaki formül şeridine bak.",
    "aciklama": "{{should}} + yalın fiil: {{should protect}}. (s. 75)",
    "kavram": "should",
+   "ikiz": "i2",
+   "vurgu": [
+    "sonra fiil nasıl gelir"
+   ],
+   "ne": [
+    "should'dan sonraki fiilin hâlini",
+    "stop'tan sonraki fiilin hâlini"
+   ],
    "tetik": [
     "nasıl"
    ],
@@ -520,6 +533,14 @@
    ],
    "bolge": [
     "hangisi iyi bir öneridir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "hangisi iyi bir öneridir"
+   ],
+   "ne": [
+    "İyi olan öneriyi",
+    "Kötü olan öneriyi"
    ]
   },
   {
@@ -556,6 +577,86 @@
    ],
    "bolge": [
     "{{Educate people about wildlife, so they can learn how to protect it.}} İnsanları neden eğitmeliyiz"
+   ]
+  },
+  {
+   "soru": "Sokak hayvanları ({{stray animals}}) için hangisi kötü bir öneridir?",
+   "secenekler": [
+    "We should feed the stray animals.",
+    "We should hunt the stray animals.",
+    "We should protect the stray animals."
+   ],
+   "dogru": 1,
+   "ipucu": "Hayvanlara zarar veren öneriyi bul.",
+   "aciklama": "Sokak hayvanlarını avlamak kötü bir öneridir. Kitap onları beslemeyi öneriyor: {{Feed the stray animals.}} (s. 70).",
+   "kavram": "feed",
+   "ikiz": "i1",
+   "vurgu": [
+    "hangisi kötü bir öneridir"
+   ],
+   "ne": [
+    "Kötü olan öneriyi",
+    "İyi olan öneriyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi kötü bir öneridir"
+   ]
+  },
+  {
+   "soru": "{{stop}}'tan sonra fiil nasıl gelir?",
+   "secenekler": [
+    "Yalın hâliyle: stop hunt",
+    "-ing ile: stop hunting",
+    "-s ile: stop hunts"
+   ],
+   "dogru": 1,
+   "ipucu": "Kitaptaki öneriyi hatırla: {{Stop … the animals for their skin, fur or teeth.}}",
+   "aciklama": "{{stop}}'tan sonra fiil {{-ing}} alır: {{Stop hunting the animals for their skin, fur or teeth.}} (s. 69, s. 75).",
+   "kavram": "stop hunting",
+   "ikiz": "i2",
+   "vurgu": [
+    "sonra fiil nasıl gelir"
+   ],
+   "ne": [
+    "stop'tan sonraki fiilin hâlini",
+    "should'dan sonraki fiilin hâlini"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "sonra fiil nasıl gelir"
+   ]
+  },
+  {
+   "soru": "{{Protect the forests.}} Bu iyi bir davranış. Hangi öneri doğru?",
+   "secenekler": [
+    "We should protect the forests.",
+    "We shouldn't protect the forests.",
+    "We shouldn't to protect the forests."
+   ],
+   "dogru": 0,
+   "ipucu": "Bu davranışı yapmalı mıyız, yapmamalı mı? Fiilin yazımına da bak.",
+   "aciklama": "İyi davranış {{should}} ile önerilir: {{We should protect the forests.}} (s. 69, s. 75).",
+   "kavram": "should",
+   "ikiz": "i3",
+   "vurgu": [
+    "iyi bir davranış",
+    "Hangi öneri"
+   ],
+   "ne": [
+    "İyi davranış için doğru öneriyi",
+    "Kötü davranış için doğru öneriyi"
+   ],
+   "tetik": [
+    "Hangi öneri"
+   ],
+   "bolge": [
+    "iyi bir davranış",
+    "Hangi öneri doğru"
    ]
   }
  ],
@@ -995,5 +1096,6 @@
    "aciklama": "“I guess we should stop harming wildlife as soon as possible.” Diğer iki şık geçmişte olanları anlatıyor, öneri değil (s. 71).",
    "kavram": "should"
   }
- ]
+ ],
+ "testSoru": 10
 }

@@ -462,9 +462,13 @@
    "bolge": [
     "doğrudur"
    ],
+   "ikiz": "i3",
    "vurgu": [
-    "Hangisi",
-    "doğrudur"
+    "Hangisi doğrudur"
+   ],
+   "ne": [
+    "Cümleye uyan seçeneği",
+    "Cümleye uymayan seçeneği"
    ]
   },
   {
@@ -509,8 +513,16 @@
    ],
    "dogru": 1,
    "ipucu": "En sevdiği program için olumlu bir sıfat gerekir.",
-   "aciklama": "Sevdiği program eğlenceli: {{They're amusing.}} (s. 93)",
+   "aciklama": "Sevdiği program eğlenceli: {{They're amusing.}} Kitapta: {{I think they are amusing.}} (s. 90).",
    "kavram": "amusing",
+   "ikiz": "i1",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Sevilen programı anlatan kelimeyi",
+    "Hiç izlenmeyen programı anlatan kelimeyi"
+   ],
    "tetik": [
     "hangisi"
    ],
@@ -534,6 +546,92 @@
    ],
    "bolge": [
     "{{Nora: I find them boring. I prefer amusing programmes.}} Nora nasıl programları sever"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "nasıl programları sever"
+   ],
+   "ne": [
+    "Nora'nın sevdiği programları",
+    "Nora'nın sevmediği programları"
+   ]
+  },
+  {
+   "soru": "{{I never watch soap operas. They're ___.}} Boşluğa hangisi gelir?",
+   "secenekler": [
+    "amusing",
+    "boring",
+    "educational"
+   ],
+   "dogru": 1,
+   "ipucu": "{{never watch}} “hiç izlemem” demek. Sevmediğimiz bir programı nasıl anlatırız?",
+   "aciklama": "{{I never watch soap operas. They are boring.}} Pembe dizileri sıkıcı bulur (s. 84).",
+   "kavram": "boring",
+   "ikiz": "i1",
+   "vurgu": [
+    "Boşluğa hangisi gelir"
+   ],
+   "ne": [
+    "Hiç izlenmeyen programı anlatan kelimeyi",
+    "Sevilen programı anlatan kelimeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "{{I never watch soap operas. They're ___.}} Boşluğa hangisi gelir"
+   ]
+  },
+  {
+   "soru": "{{Nora: I find them boring. I prefer amusing programmes.}} Nora nasıl programları sevmez?",
+   "secenekler": [
+    "Eğlenceli programları",
+    "Sıkıcı programları",
+    "Komik programları"
+   ],
+   "dogru": 1,
+   "ipucu": "{{I find them …}} “onları … buluyorum” demek. Sevmediği programları nasıl buluyor?",
+   "aciklama": "{{I find them boring.}} Nora sıkıcı programları sevmez (s. 85).",
+   "kavram": "boring",
+   "ikiz": "i2",
+   "vurgu": [
+    "nasıl programları sevmez"
+   ],
+   "ne": [
+    "Nora'nın sevmediği programları",
+    "Nora'nın sevdiği programları"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "nasıl programları sevmez"
+   ]
+  },
+  {
+   "soru": "{{Lisa: I prefer soap operas. They have more drama and emotional depth.}} Hangisi yanlıştır?",
+   "secenekler": [
+    "Lisa pembe dizileri sevmiyor.",
+    "Lisa pembe dizileri tercih ediyor.",
+    "Lisa'ya göre pembe dizilerde daha çok dram var."
+   ],
+   "dogru": 0,
+   "ipucu": "Her seçeneği cümleyle karşılaştır. Cümleye uymayanı bul.",
+   "aciklama": "{{I prefer soap operas.}} Lisa pembe dizileri tercih ediyor, yani seviyor. {{more drama}}: daha çok dram (s. 97).",
+   "kavram": "prefer",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi yanlıştır"
+   ],
+   "ne": [
+    "Cümleye uymayan seçeneği",
+    "Cümleye uyan seçeneği"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "yanlıştır"
    ]
   }
  ],
@@ -1012,5 +1110,6 @@
    "aciklama": "“I prefer watching such educational TV programmes to those reality shows or soap operas.” “to”dan önceki eğitici programları tercih ediyor (s. 94).",
    "kavram": "prefer … to …"
   }
- ]
+ ],
+ "testSoru": 10
 }

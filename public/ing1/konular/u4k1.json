@@ -26,6 +26,9 @@
     "aciklama": "{{They feed on milk when they are born.}} Doğunca sütle beslenirler. (s. 67)",
     "bolge": [
      "doğunca neyle beslenir"
+    ],
+    "vurgu": [
+     "neyle beslenir"
     ]
    }
   },
@@ -333,25 +336,30 @@
     "whale"
    ],
    "dogru": 1,
-   "ipucu": "Memeliler sütle beslenir ve tüylüdür. Hangisinin kanatları var?",
+   "ipucu": "Memeliler sütle beslenir, vücutlarında kıl vardır. Hangisinin kanatları var?",
    "aciklama": "Kartal ({{eagle}}) bir kuştur. Fil ve balina memelidir. (s. 64, s. 67)",
    "kavram": "mammal",
    "yardim": {
     "adimlar": [
-     "Memeliler tüylüdür, yavruları sütle beslenir.",
+     "Memelilerin vücudunda kıl vardır, yavruları sütle beslenir.",
      "Kuşların kanadı vardır.",
      "Şıklardan hangisi kanatlı ve uçuyor?"
     ]
    },
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "memeli değildir"
+   ],
+   "ne": [
+    "Memeli olmayan hayvanı",
+    "Memeli olan hayvanı"
+   ],
    "tetik": [
     "Hangisi"
    ],
    "bolge": [
     "memeli değildir"
-   ],
-   "vurgu": [
-    "Hangisi",
-    "değildir"
    ]
   },
   {
@@ -447,6 +455,15 @@
    ],
    "bolge": [
     "Hangisi bir kuştur ({{bird}})"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "bir kuştur"
+   ],
+   "ne": [
+    "Kuş olan hayvanı",
+    "Kuş olmayan hayvanı"
    ]
   },
   {
@@ -465,6 +482,94 @@
    ],
    "bolge": [
     "{{It's an animal. Does it live in the jungle? Yes, it does.}} Hangi hayvan olabilir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangi hayvan"
+   ],
+   "ne": [
+    "Ormanda yaşayan hayvanı",
+    "Çölde yaşayan hayvanı"
+   ]
+  },
+  {
+   "soru": "Hangisi memelidir?",
+   "secenekler": [
+    "eagle",
+    "lizard",
+    "whale"
+   ],
+   "dogru": 2,
+   "ipucu": "Memeliler sıcakkanlıdır ve yavruları sütle beslenir. Kuş ve sürüngen olanı ele.",
+   "aciklama": "{{whale}} (balina) bir memelidir. {{eagle}} kuş, {{lizard}} sürüngendir (s. 64, s. 67).",
+   "kavram": "mammal",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "memelidir"
+   ],
+   "ne": [
+    "Memeli olan hayvanı",
+    "Memeli olmayan hayvanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi memelidir"
+   ]
+  },
+  {
+   "soru": "Hangisi bir kuş değildir ({{bird}})?",
+   "secenekler": [
+    "owl",
+    "eagle",
+    "horse"
+   ],
+   "dogru": 2,
+   "ipucu": "Kuşların kanatları vardır. Kanadı olmayan hayvanı bul.",
+   "aciklama": "{{horse}} (at) bir memelidir. {{owl}} ve {{eagle}} kuştur (s. 64, s. 67).",
+   "kavram": "bird",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "bir kuş değildir"
+   ],
+   "ne": [
+    "Kuş olmayan hayvanı",
+    "Kuş olan hayvanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "bir kuş değildir"
+   ]
+  },
+  {
+   "soru": "{{It's an animal. Does it live in the desert? Yes, it does.}} Hangi hayvan olabilir?",
+   "secenekler": [
+    "tiger",
+    "camel",
+    "whale"
+   ],
+   "dogru": 1,
+   "ipucu": "{{desert}} kumlu ve susuz bir yerdir. Orada yaşayabilen hayvanı düşün.",
+   "aciklama": "{{Camels can survive in the deserts for a long time.}} Deve çölde yaşar (s. 74).",
+   "kavram": "desert",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangi hayvan"
+   ],
+   "ne": [
+    "Çölde yaşayan hayvanı",
+    "Ormanda yaşayan hayvanı"
+   ],
+   "tetik": [
+    "Hangi hayvan"
+   ],
+   "bolge": [
+    "{{It's an animal. Does it live in the desert? Yes, it does.}} Hangi hayvan olabilir"
    ]
   }
  ],
@@ -940,5 +1045,6 @@
    "aciklama": "“…some like lions live in family groups.” Aslanlar aile grupları hâlinde yaşar; tek başına (on their own) yaşayanlar kaplanlardır (s. 67).",
    "kavram": "mammal"
   }
- ]
+ ],
+ "testSoru": 10
 }

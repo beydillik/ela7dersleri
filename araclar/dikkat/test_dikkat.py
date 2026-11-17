@@ -216,7 +216,7 @@ with sync_playwright() as pw:
                 page.click("#sq .ne-opt[data-d='0']"); ileri(50)
                 ok("Pilot Test: yanlış seçimde 'Henüz değil', şıklar hâlâ gizli", "Henüz değil" in page.inner_text("#sq .ne-adim") and page.is_hidden("#sq .opts"))
                 page.click("#sq .ne-opt[data-d='1']"); ileri(50)
-                ok("Pilot Test: doğru seçimde şıklar açılır, soru kelimesi sarı olur", page.is_visible("#sq .opts") and page.locator("#sq .kk-run.vurgu").count() > 0 and "şunu istiyor" in page.inner_text("#sq .ne-adim"))
+                ok("Pilot Test: doğru seçimde şıklar açılır, soru kelimesi sarı olur", page.is_visible("#sq .opts") and (page.locator("#sq .kk-run.vurgu").count() > 0 or not re.search(r"[^\W\d_]", EN.sub(" ", q["soru"]))) and "şunu istiyor" in page.inner_text("#sq .ne-adim"))   # İngilizce: yalnız {{…}} olan soruda vurgulanacak Türkçe yok
             else: page.click("#sq .ne-opt[data-d='1']"); ileri(50)
             if ONADIM == "kapanis" and not kapanis_gor:
                 kapanis_gor = True

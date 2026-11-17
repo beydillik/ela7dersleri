@@ -462,8 +462,13 @@
    "bolge": [
     "{{___ did you get married?}} — {{In 2014.}} Boşluğa ne gelir"
    ],
+   "ikiz": "i2",
    "vurgu": [
-    "ne gelir"
+    "Boşluğa ne gelir"
+   ],
+   "ne": [
+    "Cevabı bir yıl olan sorunun kelimesini",
+    "Cevabı bir sebep olan sorunun kelimesini"
    ]
   },
   {
@@ -526,6 +531,11 @@
    "kavram": "in / on + tarih",
    "bolge": [
     "{{Mehmed II died ___ 3rd May, 1481.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Gün, ay ve yıldan önce gelen kelimeyi",
+    "Yalnız yıldan önce gelen kelimeyi"
    ]
   },
   {
@@ -541,6 +551,11 @@
    "kavram": "in / on + tarih",
    "bolge": [
     "{{Louis Braille was born ___ 1809.}}"
+   ],
+   "ikiz": "i1",
+   "ne": [
+    "Yalnız yıldan önce gelen kelimeyi",
+    "Gün, ay ve yıldan önce gelen kelimeyi"
    ]
   },
   {
@@ -577,6 +592,63 @@
    ],
    "bolge": [
     "{{When were you born?}} Hangisi uygun cevap"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi uygun cevap"
+   ],
+   "ne": [
+    "Doğduğu zamanı söyleyen cevabı",
+    "Doğduğu yeri söyleyen cevabı"
+   ]
+  },
+  {
+   "soru": "{{___ did you move to New York?}} — {{Because I wanted to make music in New York.}} Boşluğa ne gelir?",
+   "secenekler": [
+    "Why",
+    "When",
+    "Where"
+   ],
+   "dogru": 0,
+   "ipucu": "Cevaba bak: {{Because}} ile başlıyor.",
+   "aciklama": "Cevap {{Because}} ile başlıyorsa soru {{Why}} ile sorulur: {{Why did you move to New York?}} (s. 57).",
+   "kavram": "Why did you …?",
+   "ikiz": "i2",
+   "vurgu": [
+    "Boşluğa ne gelir"
+   ],
+   "ne": [
+    "Cevabı bir sebep olan sorunun kelimesini",
+    "Cevabı bir yıl olan sorunun kelimesini"
+   ],
+   "bolge": [
+    "{{___ did you move to New York?}} — {{Because I wanted to make music in New York.}} Boşluğa ne gelir"
+   ]
+  },
+  {
+   "soru": "{{Where were you born?}} Hangisi uygun cevap?",
+   "secenekler": [
+    "In Phoenix, Arizona.",
+    "Well... A long time ago, in 1944.",
+    "To find a better job."
+   ],
+   "dogru": 0,
+   "ipucu": "{{Where}} bir yer sorar. Hangi cevap bir yer söylüyor?",
+   "aciklama": "{{Where were you born?}} — {{In Phoenix, Arizona.}} Doğduğu yeri söyler (s. 61).",
+   "kavram": "When / Where were you born?",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi uygun cevap"
+   ],
+   "ne": [
+    "Doğduğu yeri söyleyen cevabı",
+    "Doğduğu zamanı söyleyen cevabı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "{{Where were you born?}} Hangisi uygun cevap"
    ]
   }
  ],
@@ -1020,5 +1092,6 @@
    "aciklama": "“It was also the year he appeared in his first film.” “O yıl”, ilk plağını çıkardığı 1960'tır (s. 59).",
    "kavram": "in / on + tarih"
   }
- ]
+ ],
+ "testSoru": 10
 }

@@ -552,14 +552,22 @@
   {
    "soru": "{{Helen ___ in New York till 2015. She lives in Miami now.}} Hangisi uygun?",
    "secenekler": [
-    "graduated",
+    "moved",
     "stayed",
     "was born"
    ],
    "dogru": 1,
-   "ipucu": "2015'e kadar New York'ta ne yaptı? Orada durdu.",
+   "ipucu": "{{till 2015}} “2015'e kadar” demek. Helen o zamana kadar New York'tan ayrılmadı.",
    "aciklama": "2015'e kadar New York'ta kaldı: {{stayed}}. (s. 46)",
    "kavram": "stay",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi uygun"
+   ],
+   "ne": [
+    "Helen'in 2015'e kadar ne yaptığını",
+    "Helen'in 2015'te ne yaptığını"
+   ],
    "tetik": [
     "Hangisi"
    ],
@@ -600,14 +608,19 @@
     "studied"
    ],
    "dogru": 2,
-   "ipucu": "Üniversitede bir bölümde eğitim almak: hangi kelimeydi?",
+   "ipucu": "{{chemistry}} bir derstir, bir bölümdür. Bir bölümde eğitim almayı anlatan kelimeyi bul.",
    "aciklama": "Kimya okudu: {{Bill studied chemistry at university.}} (s. 56)",
    "kavram": "study",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa ne gelir"
+   ],
+   "ne": [
+    "Bill'in kimyayla ilgili ne yaptığını",
+    "Bill'in 2008'de ne yaptığını"
+   ],
    "bolge": [
     "{{Bill ___ chemistry at university.}} Boşluğa ne gelir"
-   ],
-   "vurgu": [
-    "ne gelir"
    ]
   },
   {
@@ -615,17 +628,100 @@
    "secenekler": [
     "stay",
     "move",
-    "grow up"
+    "graduate"
    ],
    "dogru": 1,
    "ipucu": "Bir yerden başka bir yere gitmek. Kartta bir evden ötekine ok vardı.",
    "aciklama": "Bir yerden başka yere gitmek {{move}}dur. (s. 55)",
    "kavram": "move",
+   "ikiz": "i1",
+   "vurgu": [
+    "tanımı hangi kelimenin"
+   ],
+   "ne": [
+    "Başka bir yere gitmeyi anlatan kelimeyi",
+    "Diploma almayı anlatan kelimeyi"
+   ],
    "tetik": [
     "hangi kelimenin"
    ],
    "bolge": [
     "{{To go from one residence or location to another}} tanımı hangi kelimenin"
+   ]
+  },
+  {
+   "soru": "{{To receive a diploma}} tanımı hangi kelimenin?",
+   "secenekler": [
+    "move",
+    "graduate",
+    "study"
+   ],
+   "dogru": 1,
+   "ipucu": "{{diploma}} okulu bitirince verilir. Okulu bitirmeyi anlatan kelimeyi düşün.",
+   "aciklama": "{{To receive a diploma}}: diploma almak, yani {{graduate}} (mezun olmak) (s. 55).",
+   "kavram": "graduate",
+   "ikiz": "i1",
+   "vurgu": [
+    "tanımı hangi kelimenin"
+   ],
+   "ne": [
+    "Diploma almayı anlatan kelimeyi",
+    "Başka bir yere gitmeyi anlatan kelimeyi"
+   ],
+   "tetik": [
+    "hangi kelimenin"
+   ],
+   "bolge": [
+    "{{To receive a diploma}} tanımı hangi kelimenin"
+   ]
+  },
+  {
+   "soru": "{{Helen ___ to Miami in 2015. She lives there now.}} Hangisi uygun?",
+   "secenekler": [
+    "stayed",
+    "moved",
+    "was born"
+   ],
+   "dogru": 1,
+   "ipucu": "{{to Miami}} “Miami'ye” demek. Bir yerden başka bir yere gitmeyi anlatan kelimeyi bul.",
+   "aciklama": "{{Helen moved to Miami in 2015.}} 2015'te Miami'ye taşındı; şimdi orada yaşıyor. {{move}}: taşınmak (s. 46, s. 55).",
+   "kavram": "move",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi uygun"
+   ],
+   "ne": [
+    "Helen'in 2015'te ne yaptığını",
+    "Helen'in 2015'e kadar ne yaptığını"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "{{Helen ___ to Miami in 2015. She lives there now.}} Hangisi uygun"
+   ]
+  },
+  {
+   "soru": "{{Bill ___ from university in 2008.}} Boşluğa ne gelir?",
+   "secenekler": [
+    "studied",
+    "graduated",
+    "grew up"
+   ],
+   "dogru": 1,
+   "ipucu": "{{from university}} kalıbına bak: okul kelimesinden önce {{from}} alan kelimeyi düşün.",
+   "aciklama": "Bill 2008'de üniversiteden mezun oldu: {{graduated from university}} (s. 56).",
+   "kavram": "graduate",
+   "ikiz": "i3",
+   "vurgu": [
+    "Boşluğa ne gelir"
+   ],
+   "ne": [
+    "Bill'in 2008'de ne yaptığını",
+    "Bill'in kimyayla ilgili ne yaptığını"
+   ],
+   "bolge": [
+    "{{Bill ___ from university in 2008.}} Boşluğa ne gelir"
    ]
   }
  ],
@@ -1046,5 +1142,6 @@
    "aciklama": "“…so he left school and stayed at home most of the time.” Çoğu zaman evde kaldı. Gazete bayisinde (newsagent's) 12 yaşından sonra çalıştı (s. 51; cümleler kitaptaki sıralama etkinliğinin doğru sırasıyla).",
    "kavram": "stay"
   }
- ]
+ ],
+ "testSoru": 10
 }

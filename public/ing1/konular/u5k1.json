@@ -342,13 +342,21 @@
    "soru": "{{A group of people usually appear in funny situations in every episode.}} Bu hangi program?",
    "secenekler": [
     "sitcom",
-    "news",
+    "soap opera",
     "documentary"
    ],
    "dogru": 0,
    "ipucu": "{{funny situations}}: komik durumlar.",
    "aciklama": "Komik durumlar anlatan dizi {{sitcom}}. (s. 87)",
    "kavram": "sitcom",
+   "ikiz": "i3",
+   "vurgu": [
+    "Bu hangi program"
+   ],
+   "ne": [
+    "Komik durumları anlatan programı",
+    "Duygusal olayları anlatan programı"
+   ],
    "tetik": [
     "hangi program"
    ],
@@ -390,6 +398,14 @@
    ],
    "bolge": [
     "{{Companies try to sell their products by introducing them in very short films.}} Bu hangi program"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Bu hangi program"
+   ],
+   "ne": [
+    "Ürün satmaya çalışan programı",
+    "En son olayları anlatan programı"
    ]
   },
   {
@@ -426,6 +442,15 @@
    ],
    "bolge": [
     "en sevdiği program hangisidir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "en sevdiği program",
+    "hangisidir"
+   ],
+   "ne": [
+    "Maria'nın en sevdiği programı",
+    "Maria'nın hiç izlemediği programı"
    ]
   },
   {
@@ -444,6 +469,67 @@
    ],
    "bolge": [
     "{{It is a kind of TV show. You can watch it daytime. It is usually melodramatic.}} Bu hangi program"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Bu hangi program"
+   ],
+   "ne": [
+    "Duygusal olayları anlatan programı",
+    "Komik durumları anlatan programı"
+   ]
+  },
+  {
+   "soru": "Maria'nın hiç izlemediği program hangisidir? {{I never watch soap operas.}}",
+   "secenekler": [
+    "Haberler",
+    "Pembe diziler",
+    "Gerçeklik şovları"
+   ],
+   "dogru": 1,
+   "ipucu": "{{never}} “asla, hiç” demek. Cümlede hangi program geçiyor?",
+   "aciklama": "{{I never watch soap operas.}} Maria pembe dizileri hiç izlemez (s. 84).",
+   "kavram": "soap opera",
+   "ikiz": "i1",
+   "vurgu": [
+    "hiç izlemediği program",
+    "hangisidir"
+   ],
+   "ne": [
+    "Maria'nın hiç izlemediği programı",
+    "Maria'nın en sevdiği programı"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "hiç izlemediği program hangisidir"
+   ]
+  },
+  {
+   "soru": "{{It informs people about the latest events happening all over the world.}} Bu hangi program?",
+   "secenekler": [
+    "news",
+    "commercial",
+    "sitcom"
+   ],
+   "dogru": 0,
+   "ipucu": "{{latest events}} “en son olaylar” demek.",
+   "aciklama": "Dünyadaki en son olayları anlatan program haberlerdir: {{news}} (s. 87).",
+   "kavram": "news",
+   "ikiz": "i2",
+   "vurgu": [
+    "Bu hangi program"
+   ],
+   "ne": [
+    "En son olayları anlatan programı",
+    "Ürün satmaya çalışan programı"
+   ],
+   "tetik": [
+    "hangi program"
+   ],
+   "bolge": [
+    "{{It informs people about the latest events happening all over the world.}} Bu hangi program"
    ]
   }
  ],
@@ -897,5 +983,6 @@
    "aciklama": "“In the evenings, I usually watch a documentary on animals or space.” Yemek yarışmasını pazartesi, haberleri ara sıra izliyor (s. 98).",
    "kavram": "documentary"
   }
- ]
+ ],
+ "testSoru": 10
 }
