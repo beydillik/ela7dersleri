@@ -1738,6 +1738,9 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 :root[data-theme="dark"] .ne-adim.tamam { background: #3a2f12; color: #ffe6a8; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ne-adim.tamam { background: #3a2f12; color: #ffe6a8; } }
 @media (max-width: 640px) { .ne-opts { grid-template-columns: 1fr; } }
+/* Soru öncesi adım (kademeli): kapanınca övgü, yeniden açılınca kısa not (17 Kasım 2026) */
+.ne-adim.tamam { flex-wrap: wrap; }
+.on-adim-not { flex: 1 1 100%; margin: 0; padding: 6px 10px; border-radius: 10px; background: var(--accent-soft); color: var(--ink); font-size: 14.5px; }
 @media (prefers-reduced-motion: reduce) { .kk-run.vurgu.yanip { animation: none; outline: 2px dashed #b58900; } }
 /* Kaldığın yer notu (ders açılınca) */
 .kal-yer { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 12px; background: var(--accent-soft); font-size: 15.5px; }
@@ -1756,3 +1759,11 @@ mark.yz-tetik-yanip { animation: yzYanip 1s ease-in-out infinite; }
 .ip-sec-o.ip-ok { background: var(--ok-soft); border-color: var(--ok); cursor: default; }
 .ip-sec-not { margin: 0; font-size: 14.5px; }
 .og-ipucu [data-anladim]:disabled, .yz-ipucu-kutu [data-anladim]:disabled { opacity: .5; cursor: default; }
+
+/* Veli Paneli: soru öncesi adım tablosu (17 Kasım 2026) */
+.on-adim-sec { display: block; }
+.on-adim-tablo { width: 100%; border-collapse: collapse; margin-top: 6px; }
+.on-adim-tablo th, .on-adim-tablo td { padding: 6px 8px; border-top: 1px solid var(--line); text-align: left; vertical-align: middle; }
+.on-adim-tablo th { white-space: nowrap; font-weight: 700; }
+.on-adim-tablo td.ek { font-size: 13.5px; }
+@media (max-width: 640px) { .on-adim-tablo tr { display: grid; grid-template-columns: 1fr auto; } .on-adim-tablo td.ek { grid-column: 1 / -1; border-top: 0; } }

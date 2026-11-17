@@ -180,7 +180,7 @@
       neden: "Ela'nın seçtiği yanlış nedeni: bilmiyordum, yanlis-okudum (soruyu yanlış okudum), karistirdim (iki şeyi karıştırdım), acele (acele ettim)",
       mod: "Sınav Provası biçimi: anlik (her soruda sonuç hemen) ya da sonda (sonuçlar sınav sonunda)", yeniden: "true: Sınav Provası'ndan sonra yanlışları yeniden çözerken verilen cevap",
       hazir: "hata-acele olayında: okuma beklemesi bitmişti, yalnızca neden seçilmemişti",
-      kalp: "soru olayında (dikkat paketli konu): sorunun kalbi — 1 ilk dokunuşta, 2 ikinci, 0 gösterildi, -1 bulmasız (seri ödülü), -2 bulmasız (okuma pilotu: soru kelimesi sarı vurgulu); alan yoksa adım yok", ne: "soru olayında (okuma pilotu): 'Bu soru senden ne istiyor?' adımı — 1 ilk seçimde doğru, 2 ikinci seçimde", ikiz: "soru olayında: ikiz sorunun çift adı (aynı kök, tek kelime farkı; testte art arda gelir)",
+      kalp: "soru olayında (dikkat paketli konu): sorunun kalbi — 1 ilk dokunuşta, 2 ikinci, 0 gösterildi, -1 bulmasız (seri ödülü), -2 bulmasız (okuma yaklaşımı: Öğren, metinli sorular ve Kısa Cevap; soru kelimesi sarı vurgulu), -3 bulmasız (Test: soru öncesi adım kapalı — veli ayarı ya da kademeli); alan yoksa adım yok", ne: "soru olayında (okuma pilotu): 'Bu soru senden ne istiyor?' adımı — 1 ilk seçimde doğru, 2 ikinci seçimde", ikiz: "soru olayında: ikiz sorunun çift adı (aynı kök, tek kelime farkı; testte art arda gelir)",
       kullanimModu: "mod olayında: yeni kullanım modu (normal, destekli, odakli, ozel); once: önceki mod", kavramlar: "hedefli-tekrar olayında: tekrar gösterilen kavramlar",
       oran: "hedefli-tekrar olayında: testte ilk denemede doğru oranı (0–1); yazili-madde olayında: maddede işaretlenen puanlı parça oranı (0–1)", esik: "hedefli-tekrar olayında: tamamlanma eşiği (0–1)",
       kazanim: "Yazılıya Hazırlık: MEB öğrenme çıktısı kodu (ör. FB.7.2.1)", otomatik: "Yazılıya Hazırlık: anahtar kelimelerin otomatik bulduğu oran (madde) ya da puan (prova); Ela'nın işaretlediğiyle karşılaştırmak için",
@@ -201,7 +201,7 @@
       "kart-bekle": "Odaklı mod: Öğren'de bilgi kartı okuma süresi dolmadan 'Sonraki'ye dokundu",
       "hedefli-tekrar": "Odaklı mod: testte tamamlanma eşiğinin altında kalınca yanlış yapılan kavramların kısa tekrarı gösterildi (kavramlar, oran)",
       "yazili-ac": "Yazılıya Hazırlık bölümü açıldı (konu: yazili:<id>)", "yazili-madde": "Yazılıya Hazırlık'ta bir sorunun bir maddesi bitti (tur: yazili-meb / yazili-ikiz; oran: işaretlenen parça oranı; otomatik: otomatik bulunan oran)",
-      "yazili-prova": "Prova yazılısı puanlandı (mod: ekran / sinav (sınav modu) / kagit; sureDk ekranda geçen süre)", "yazili-kuark": "Kuark'ın Hatası / Cevabını Düzelt turu bitti (dogru/toplam, ilk1; tamamladi: tam cevabı kendisi tamamladığı madde sayısı)", "yazili-kart": "Kısa Cevap Kartları'nda bir kart (sonuc 1 ilk denemede doğru şık, 2 ipucuyla/ikinci denemede, 0 gösterildi; tekrar: turda ikinci kez gelen)", "yazili-basamak": "Basamaklı maddede kalıpla yazma (basamak 3) kontrol edildi (oran)", "yazili-yazdir": "Prova soru kâğıdı, cevap anahtarı, sınav öncesi özet ya da bölüm çalışma kâğıdı yazdırıldı (mod: kagit / anahtar / ozet / ck-hatirla / ck-meb / ck-tekrar / ck-kuark; surum: ipuclu / sinav; konu: kazanım kodu ya da hepsi)", "yazili-sure": "Sınav modunda süre doldu, prova kendiliğinden puanlamaya geçti", "yazili-tekrar": "Konu Tekrarı bitti: konunun MEB soruları + benzerleri (kazanim, oran ortalaması, soru sayısı)", "ogren-ht": "Öğren'de Hatırla ve Tekrarla (bu konunun boşluklu cümleleri) turu bitti (ilk: ilk denemede doğru kelime, toplam, tur: 1 ya da 2, tamam:false: eşik altı, ikinci tura geçildi)", "ogren-kisa": "Öğren'de Kısa Cevap sorusu kontrol edildi (oran: puan getiren parçaların oranı, ipucu: ipucu kaç kez açıldı, serbest: kalıpsız deneme)", "ogren-kisa-oku": "Kısa Cevap'ta \"Bu soru senden ne istiyor?\" doğru seçildi (yanlis: önceki yanlış seçim, sureSn)", "hizli-tik": "Hızlı tık koruması: Hatırla ve Tekrarla'da cümleyi okumaya yetmeyecek kadar kısa sürede seçilen şık sayılmadı (sureSn, esikSn)", "konu-kagit": "Konu çalışma kâğıdı yazdırıldı (surum: ipuclu / sinav)", "ipucu-sec": "Kalıplı yazma ipucunda bir parçanın doğru cümlesi seçildi (parca: cümle başı; dogru 1 ilk dokunuşta, 0 yanlıştan sonra ya da gösterildi)", "ne-bul": "Okuma pilotu: iki seçenekli 'Bu soru senden ne istiyor?' adımı (sonuc 1 ilk seçimde, 2 ikinci seçimde; sureSn: soru açılınca doğru seçene kadar)", "kal-yer": "Ders açılınca kaldığı yer önerildi (tur: devam / siradaki / ilk; sekme)", "kalp-bul": "Dikkat pilotu: sorunun kalbini (asıl sorulan kısmı) bulma (sonuc 1 ilk dokunuşta, 2 ikinci dokunuşta, 0 gösterildi; yanlis: yanlış dokunuş sayısı; sureSn: soru açılınca bulana kadar)", "kalp-seri": "Dikkat pilotu: sorunun kalbini 5 kez üst üste ilk dokunuşta buldu; sonraki 3 soru bulmasız", "yazili-htekrar": "Hatırladığını Tekrarla'da bir konu bitti (ilk: ilk denemede doğru kelime, toplam)", "yazili-oku": "“Bu soru senden ne istiyor?” doğru seçildi (yanlis: önceki yanlış seçim sayısı)",
+      "yazili-prova": "Prova yazılısı puanlandı (mod: ekran / sinav (sınav modu) / kagit; sureDk ekranda geçen süre)", "yazili-kuark": "Kuark'ın Hatası / Cevabını Düzelt turu bitti (dogru/toplam, ilk1; tamamladi: tam cevabı kendisi tamamladığı madde sayısı)", "yazili-kart": "Kısa Cevap Kartları'nda bir kart (sonuc 1 ilk denemede doğru şık, 2 ipucuyla/ikinci denemede, 0 gösterildi; tekrar: turda ikinci kez gelen)", "yazili-basamak": "Basamaklı maddede kalıpla yazma (basamak 3) kontrol edildi (oran)", "yazili-yazdir": "Prova soru kâğıdı, cevap anahtarı, sınav öncesi özet ya da bölüm çalışma kâğıdı yazdırıldı (mod: kagit / anahtar / ozet / ck-hatirla / ck-meb / ck-tekrar / ck-kuark; surum: ipuclu / sinav; konu: kazanım kodu ya da hepsi)", "yazili-sure": "Sınav modunda süre doldu, prova kendiliğinden puanlamaya geçti", "yazili-tekrar": "Konu Tekrarı bitti: konunun MEB soruları + benzerleri (kazanim, oran ortalaması, soru sayısı)", "ogren-ht": "Öğren'de Hatırla ve Tekrarla (bu konunun boşluklu cümleleri) turu bitti (ilk: ilk denemede doğru kelime, toplam, tur: 1 ya da 2, tamam:false: eşik altı, ikinci tura geçildi)", "ogren-kisa": "Öğren'de Kısa Cevap sorusu kontrol edildi (oran: puan getiren parçaların oranı, ipucu: ipucu kaç kez açıldı, serbest: kalıpsız deneme)", "ogren-kisa-oku": "Kısa Cevap'ta \"Bu soru senden ne istiyor?\" doğru seçildi (yanlis: önceki yanlış seçim, sureSn)", "hizli-tik": "Hızlı tık koruması: Hatırla ve Tekrarla'da cümleyi okumaya yetmeyecek kadar kısa sürede seçilen şık sayılmadı (sureSn, esikSn)", "konu-kagit": "Konu çalışma kâğıdı yazdırıldı (surum: ipuclu / sinav)", "ipucu-sec": "Kalıplı yazma ipucunda bir parçanın doğru cümlesi seçildi (parca: cümle başı; dogru 1 ilk dokunuşta, 0 yanlıştan sonra ya da gösterildi)", "ne-bul": "Okuma pilotu: iki seçenekli 'Bu soru senden ne istiyor?' adımı (sonuc 1 ilk seçimde, 2 ikinci seçimde; sureSn: soru açılınca doğru seçene kadar)", "kal-yer": "Ders açılınca kaldığı yer önerildi (tur: devam / siradaki / ilk; sekme)", "kalp-bul": "Dikkat pilotu: sorunun kalbini (asıl sorulan kısmı) bulma (sonuc 1 ilk dokunuşta, 2 ikinci dokunuşta, 0 gösterildi; yanlis: yanlış dokunuş sayısı; sureSn: soru açılınca bulana kadar)", "kalp-seri": "Dikkat pilotu: sorunun kalbini 5 kez üst üste ilk dokunuşta buldu; sonraki 3 soru bulmasız", "onadim": "Soru öncesi adım (kademeli) o derste kendiliğinden değişti (durum: kapali = son 'pencere' adımın en az %75'i ilk seferde bulundu; acik = adım kapalıyken son 'pencere' sorunun ilk deneme doğruluğu %60'ın altına düştü; oran)", "yazili-htekrar": "Hatırladığını Tekrarla'da bir konu bitti (ilk: ilk denemede doğru kelime, toplam)", "yazili-oku": "“Bu soru senden ne istiyor?” doğru seçildi (yanlis: önceki yanlış seçim sayısı)",
       "sinav-soru": "Sınav Provası'nda bir sorunun sonucu (tur sinav-<tür>; sonuc 1 doğru 0 yanlış; kismi kısmi doğru oranı; cevap Ela'nın cevabı; kaynakKonu sorunun konusu)"
     }
   };
@@ -350,7 +350,7 @@
   // Veli ayarları (Veli Paneli'nden değiştirilir; bağlı cihazda buluttan gelir). Varsayılan = Normal mod.
   // Ayarı hiç yapılmamış ve bağlı olmayan cihaz (öğretmen, arkadaş) her zaman Normal moddadır.
   const AYAR_VARSAYILAN = { mod: "normal", robotUyari: true, sikBekle: false, oyunKilit: false, ogrenKilit: false, hataDur: true, sinavAnlik: true,
-    kartBekle: false, hedefliTekrar: false, tamamEsik: 80, menu: "acik", isaretler: [] };
+    kartBekle: false, hedefliTekrar: false, tamamEsik: 80, menu: "acik", onAdim: {}, isaretler: [] };
   // Bağlı (Ela'nın) cihazında, veli henüz mod seçmemişse (ayarda "mod" alanı yoksa) varsayılan Destekli'dir (Kemal'in kararı, 25 Ekim 2026).
   // Bağlı olmayan cihaz (öğretmen, arkadaş) ayarı yoksa Normal'dir.
   const ayarCoz = (a, bagli) => { a = a || {}; const eski = bagli && !a.mod;
@@ -459,10 +459,11 @@
       KAYIT.olay("soru", { soru: kisa(o.soru), tur: qKind(o), sonuc: r, sureSn: +sn.toFixed(1), ilkSn: +ilkSn.toFixed(1), esikSn: +esik.toFixed(1),
         ipucu: st.yardim || 0, yanlis: (st.wrong || []).map(j => kisa((o.secenekler || [])[j], 40)), kanit: st.kanit,
         tekrar: !!opts.tekrar, eski: !!opts.eski, kavram: (opts.kavram && opts.kavram.ad) || o.kavram || "", bayrak,
-        // Dikkat paketi: aynı kayıtta analiz için — kalp: 1 ilk dokunuşta, 2 ikinci, 0 gösterildi, -1 bulmasız (seri ödülü), -2 bulmasız (okuma pilotu: soru kelimesi vurgulu);
+        // Dikkat paketi: aynı kayıtta analiz için — kalp: 1 ilk dokunuşta, 2 ikinci, 0 gösterildi, -1 bulmasız (seri ödülü), -2 bulmasız (okuma yaklaşımı: Öğren ve metinli sorular, soru kelimesi sarı), -3 bulmasız (Test: soru öncesi adım kapalı);
         // ne: "Bu soru senden ne istiyor?" adımı (1 ilk seçimde, 2 ikincide); ikiz: ikiz sorunun çift adı; metinli; tuzak: seçilen tuzak şık sayısı
         ...(S.data && S.data.dikkat ? { dikkat: true, kalp: st.kalp, ne: st.ne, ikiz: o.ikiz, metinli: !!(o.serit && kanitli(o)), tuzak: (st.wrong || []).filter(j => (o.tuzak || []).includes(j)).length } : {}) });
       KAYIT.sayac(s => { s.soru = (s.soru || 0) + 1; if (r === 1) s.ilk = (s.ilk || 0) + 1; if (r === 2 && st.yardim) s.ipucu = (s.ipucu || 0) + 1; });
+      if (st.kalp === -3 && S.data && S.data.dikkat) onAdimKaydet("soru", r === 1);   // soru öncesi adım kapalıyken (kademeli: geri açılma ölçüsü)
       asil && asil(r);
       KOC.soruSonrasi(o, r, bayrak, opts);
     };
@@ -662,27 +663,63 @@
   //    Doğru seçilince soru kelimesi sarı olur, şıklar açılır. o.ne yoksa eski sorunun kalbi adımı çalışır.
   //  • İkiz sorular (o.ikiz aynı olan iki soru: aynı kök, tek kelime farkı) testte art arda gelir (ikizYanyana, testSec).
   const okuPilot = () => !(S.ders && S.ders.okuPilot === false);   // 12 Kasım 2026: bütün derslerin dikkat paketli konularında varsayılan; kapatmak için ders.json "okuPilot": false
-  const vurguBolge = o => ((o.vurgu && o.vurgu.length ? o.vurgu : o.tetik) || []).filter(t => t && String(o.soru || "").includes(t));
+  const vurguBolge0 = o => ((o.vurgu && o.vurgu.length ? o.vurgu : o.tetik) || []).filter(t => t && String(o.soru || "").includes(t));
+  const vurguBolge = o => { const v = vurguBolge0(o); return v.length || !kanitli(o) ? v : kalpBolge(o); };   // metinli/kanıtlı soru: vurgu yoksa sorunun kalbi bölgesi sarı
   const vurguDuz = o => !!o.soru && !/[<\[]/.test(o.soru);
   function vurguCiz(alan, o) {
     if (!alan || !vurguDuz(o)) return;
     if (vurguBolge(o).length) kalpCiz(alan, o, false, vurguBolge(o), "vurgu");
     alan.classList.remove("kalp-tamam"); alan.classList.add("vurgu-alan");
   }
-  function neAdim(el, o, state, onTamam) {
+  // ---------- Soru öncesi adım (17 Kasım 2026, Kemal'in kararı) ----------
+  // Test'te şıklardan önceki adım ("Bu soru senden ne istiyor?", o.ne yoksa sorunun kalbine dokunma) ders ders Veli Paneli'nden seçilir:
+  //  kademeli (varsayılan): adım açık başlar; son 10 adımın en az %75'i ilk denemede bulunursa o derste kapanır (soru kelimesi sarı, şıklar açık).
+  //    Kapalıyken son 10 sorunun ilk deneme doğruluğu %60'ın altına düşerse yeniden açılır. Durum ela7:<kod>:onadim (buluta eşitlenir), olay "onadim".
+  //  acik: hep açık · kapali: hiç yok (Öğren'deki gibi soru kelimesi sarı). Ayar ayar().onAdim[kod]. İkiz sorular her durumda kalır.
+  //  Eşikler kalibre değil: Ela'nın kayıtları geldikçe ON_ADIM ile ayarlanır.
+  const ON_ADIM = { pencere: 10, kapan: 0.75, acil: 0.60 };
+  const ON_ADIM_SECENEK = [["kademeli", "Kademeli (varsayılan)", "Ela ne istendiğini son 10 soruda en az %75 ilk seferde bulunca adım kendiliğinden kapanır; ilk denemede doğruları %60'ın altına düşerse geri gelir."],
+    ["acik", "Hep açık", "Her test sorusunda önce “Bu soru senden ne istiyor?” adımı gelir."],
+    ["kapali", "Kapalı", "Ön adım yok: soru kelimesi sarı vurgulu gelir, şıklar hemen açılır."]];
+  const onAdimSecim = (kod, a) => { const v = ((a || ayar()).onAdim || {})[kod || (S.ders && S.ders.kod)]; return ON_ADIM_SECENEK.some(x => x[0] === v) ? v : "kademeli"; };
+  const onAdimDurum = () => store.get(key("onadim"), null) || { durum: "acik", son: [] };
+  const onAdimAcik = () => { const s = onAdimSecim(); return s === "acik" || (s === "kademeli" && onAdimDurum().durum !== "kapali"); };
+  // tur "adim": ön adımın sonucu (adım açıkken; basari = ilk denemede bulundu). tur "soru": sorunun ilk deneme sonucu (adım kapalıyken).
+  // Durum değişirse "kapandi" / "acildi" döner.
+  function onAdimKaydet(tur, basari) {
+    if (!S.ders || onAdimSecim() !== "kademeli") return "";
+    const d = onAdimDurum(), acik = d.durum !== "kapali";
+    if ((tur === "adim") !== acik) return "";
+    d.son = [...(d.son || []), basari ? 1 : 0].slice(-ON_ADIM.pencere);
+    let deg = "";
+    if (d.son.length >= ON_ADIM.pencere) {
+      const oran = d.son.reduce((a, b) => a + b, 0) / d.son.length;
+      if (acik && oran >= ON_ADIM.kapan) deg = "kapandi";
+      else if (!acik && oran < ON_ADIM.acil) deg = "acildi";
+      if (deg) { d.durum = deg === "kapandi" ? "kapali" : "acik"; d.ts = simdi(); d.son = []; d.not = deg === "acildi";
+        KAYIT.olay("onadim", { durum: d.durum, oran: +oran.toFixed(2), pencere: ON_ADIM.pencere }); }
+    }
+    store.set(key("onadim"), d);
+    return deg;
+  }
+  const ON_KAPANDI = `<div class="on-adim-not"><b>★ Son ${ON_ADIM.pencere} soruda ne istendiğini çok iyi buldun!</b> Bu adım artık dinlenecek: soru kelimesi sarı gelecek, şıklar hemen açılacak.</div>`;
+  function neAdim(el, o, state, onTamam, say) {   // say: Test sorusu (kademeli sayaca yazılır)
     const qt = $(".q-text", el), kut = document.createElement("div"); kut.className = "ne-adim"; qt.after(kut);
     const [dogru, yanlis] = o.ne;
     const bitti = () => {
       kut.classList.add("tamam");
-      kut.innerHTML = `<span class="ne-tik">✓</span><span>${state.ne === 1 ? "<b>Soruyu çok iyi okudun.</b> " : ""}Soru senden şunu istiyor: <b>${rx(dogru)}</b></span>`;
+      kut.innerHTML = `<span class="ne-tik">✓</span><span>${state.ne === 1 ? "<b>Soruyu çok iyi okudun.</b> " : ""}Soru senden şunu istiyor: <b>${rx(dogru)}</b></span>${deg === "kapandi" ? ON_KAPANDI : ""}`;
       vurguCiz($(".q-text > span:last-child", el), o); onTamam();
     };
+    let deg = "";
     if (state.ne !== undefined) return bitti();
+    const dn = say && S.ders && onAdimSecim() === "kademeli" ? onAdimDurum() : null;   // adım yeniden açıldıysa ilk soruda kısa not
+    const yeniden = !!(dn && dn.not); if (yeniden) { dn.not = false; store.set(key("onadim"), dn); }
     const sira = shuffle([[dogru, 1], [yanlis, 0]]), t0 = simdi(); let hata = 0;
-    kut.innerHTML = `<p class="ne-s">${ICON.bak}<b>Bu soru senden ne istiyor?</b></p><div class="ne-opts">${sira.map(([t, d]) => `<button class="ne-opt" type="button" data-d="${d}">${rx(t)}</button>`).join("")}</div><p class="ne-not" hidden></p>`;
+    kut.innerHTML = `${yeniden ? `<p class="on-adim-not">Bir süre bu adımı yeniden yapalım. Soruyu yavaşça oku.</p>` : ""}<p class="ne-s">${ICON.bak}<b>Bu soru senden ne istiyor?</b></p><div class="ne-opts">${sira.map(([t, d]) => `<button class="ne-opt" type="button" data-d="${d}">${rx(t)}</button>`).join("")}</div><p class="ne-not" hidden></p>`;
     kut.onclick = e => {
       const b = e.target.closest(".ne-opt"); if (!b || b.disabled) return;
-      if (b.dataset.d === "1") { state.ne = hata ? 2 : 1; KAYIT.olay("ne-bul", { soru: kisa(o.soru), sonuc: state.ne, sureSn: +((simdi() - t0) / 1000).toFixed(1) }); return bitti(); }
+      if (b.dataset.d === "1") { state.ne = hata ? 2 : 1; KAYIT.olay("ne-bul", { soru: kisa(o.soru), sonuc: state.ne, sureSn: +((simdi() - t0) / 1000).toFixed(1) }); deg = say ? onAdimKaydet("adim", state.ne === 1) : ""; return bitti(); }
       hata++; b.disabled = true; b.classList.add("ne-x");
       const n = $(".ne-not", kut); n.hidden = false; n.innerHTML = "<b>Henüz değil.</b> Soruyu baştan, yavaşça bir daha oku.";
     };
@@ -737,12 +774,26 @@
       setTimeout(() => { ob.classList.remove("bekle"); $$(".opt", ob).forEach(b => { if (!b.classList.contains("wrong") && !finished) b.disabled = false; }); }, ms);
     }
     const pilot = dikkat && okuPilot() && !kanitli(o) && vurguDuz(o);
+    // Soru öncesi adım kapalı (veli ayarı ya da kademeli): Test sorusu Öğren'deki gibi gelir — soru kelimesi sarı, şıklar açık (state.kalp = -3)
+    const onKapali = pilot && opts.test && (state.kalp === -3 || (state.ne === undefined && state.kalp === undefined && state.result === undefined && !state.wrong.length && !onAdimAcik()));
+    // Metinli/kanıtlı soru (17 Kasım 2026): dokunma yok — soru kelimesi sarı, metin + "Aradığın" şeridi + "Kanıtı bul" hemen açık (state.kalp = -2)
+    const okuMetin = dikkat && okuPilot() && kanitli(o) && vurguDuz(o);
     if (pilot && opts.ogren) { vurguCiz($(".q-text > span:last-child", el), o); state.kalp = -2; }   // Öğren: bulma yok, soru kelimesi fosforlu
+    else if (onKapali) { vurguCiz($(".q-text > span:last-child", el), o); state.kalp = -3; }
+    else if (okuMetin) {
+      const pas = $(".pasaj", el), ka = $(".kanit-adim", el), qt = $(".q-text", el);
+      vurguCiz($(".q-text > span:last-child", el), o); if (state.kalp === undefined) state.kalp = -2;
+      if (pas && qt && !$(".kalp-serit", el)) {
+        const sr = document.createElement("div"); sr.className = "kalp-serit";
+        sr.innerHTML = `<b>Aradığın:</b> ${esc(o.serit || vurguBolge(o).join(" … "))}`;
+        qt.after(sr); sr.after(pas); if (ka) pas.after(ka);
+      }
+    }
     else if (pilot && o.ne && o.ne.length === 2) {   // Test: "Bu soru senden ne istiyor?" (iki seçenek)
       const ob = $(".opts", el), taze = state.ne === undefined && state.result === undefined && !state.wrong.length;
       if (taze) ob.hidden = true; else if (state.ne === undefined) state.ne = 0;
       if (state.ne === 0) vurguCiz($(".q-text > span:last-child", el), o);
-      else neAdim(el, o, state, () => { ob.hidden = false; if (taze) ob.scrollIntoView({ block: "nearest", behavior: "smooth" }); });
+      else neAdim(el, o, state, () => { ob.hidden = false; if (taze) ob.scrollIntoView({ block: "nearest", behavior: "smooth" }); }, !!opts.test);
     }
     else if (dikkat && kalpDuz(o)) {
       const ob = $(".opts", el), pas = $(".pasaj", el), ka = $(".kanit-adim", el), qt = $(".q-text", el), kl0 = kanitli(o);
@@ -758,7 +809,7 @@
       if (!tazeSoru || !kalpGerek(o, state)) { if (state.kalp >= 0) kalpCiz($(".q-text > span:last-child", el), o, false); ac(); }
       else {
         ob.hidden = true; if (kl0) { if (pas) pas.hidden = true; if (ka) ka.hidden = true; }
-        kalpBul($(".q-text > span:last-child", el), o, state, () => { ac(); const h = kl0 ? (ka || pas) : ob; if (h) h.scrollIntoView({ block: "nearest", behavior: "smooth" }); });
+        kalpBul($(".q-text > span:last-child", el), o, state, sonuc => { if (sonuc >= 0 && opts.test && okuPilot()) onAdimKaydet("adim", sonuc === 1); ac(); const h = kl0 ? (ka || pas) : ob; if (h) h.scrollIntoView({ block: "nearest", behavior: "smooth" }); });
       }
     }
     const fb = $(".fb", el), yr = wireYardim(el, o, opts, state);
@@ -1101,23 +1152,26 @@
     kart();
   }
 
-  // Kısa Cevap: (1) "Bu soru senden ne istiyor?" (okuma süresinden sonra açılır) → (2) kalıpla yaz (cümle başları hazır, İpucu açıkken yazı alanı gizli)
+  // Kısa Cevap: (1) "Bu soru senden ne istiyor?" (soru kelimesi sarı, şıklar hemen açık) → (2) kalıpla yaz (cümle başları hazır, İpucu açıkken yazı alanı gizli)
   // → (3) kontrol (anahtar parçalar + "Bu kadarı yeter" + katlı uzun örnek) → isteğe bağlı kalıpsız yaz. Yapay zekâ yok; Ela kendi kendini kontrol eder.
   function ogrenKisa(box, d, onDone) {
     const L = d.kisaCevap, biten = new Set(); let i = 0;
-    const vurgu = q => { const t = document.createElement("span"); t.className = "og-soru-m"; kalpCiz(t, q, false); return t.outerHTML; };
+    const vurgu = q => { const t = document.createElement("span"); t.className = "og-soru-m"; if (okuPilot()) vurguCiz(t, q); else kalpCiz(t, q, false); return t.outerHTML; };
     const bas = () => `<div class="kicker">Kısa cevap · ${i + 1} / ${L.length}</div>`;
-    // Ön soru: önce sorunun kalbi (çubuk yok), sonra "Soru senden ne istiyor?" — şıklar sorunun yeniden söylenmiş halleri (doğrusu okut[0])
+    // Ön soru: "Soru senden ne istiyor?" — şıklar sorunun yeniden söylenmiş halleri (doğrusu okut[0]). Okuma yaklaşımında (17 Kasım 2026)
+    // sorunun kalbine dokunma yok: soru kelimesi sarı, şıklar hemen açık (iki ön adım tek adıma indi). okuPilot: false olan derste eski dokunma sürer.
     const okut = () => {
       const q = L[i], t0 = simdi(), st = {}; let yanlis = 0;
       box.innerHTML = `${bas()}<h3>Bu soru senden ne istiyor?</h3><p class="og-soru"><span class="og-soru-m">${esc(q.soru)}</span></p>
         <div class="opts og-okut" hidden></div><div class="fb" hidden></div>`;
       const ob = $(".opts", box), fb = $(".fb", box);
-      kalpBul($(".og-soru-m", box), q, st, () => {
+      const okutAc = kaydir => {
         ob.hidden = false;
         ob.innerHTML = `<p class="ek og-okut-s">Soru senden ne istiyor?</p>` + shuffle(q.okut.map((t, j) => [t, j])).map(([t, j]) => `<button class="opt" type="button" data-j="${j}">${esc(t.charAt(0).toLocaleUpperCase("tr") + t.slice(1))}</button>`).join("");
-        ob.scrollIntoView({ block: "nearest", behavior: "smooth" });
-      });
+        if (kaydir) ob.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      };
+      if (okuPilot()) { vurguCiz($(".og-soru-m", box), q); st.kalp = -2; okutAc(false); }
+      else kalpBul($(".og-soru-m", box), q, st, () => okutAc(true));
       ob.onclick = e => {
         const b = e.target.closest(".opt"); if (!b || b.disabled) return;
         if (b.dataset.j === "0") {
@@ -1128,7 +1182,7 @@
         } else {
           yanlis++; b.disabled = true; b.classList.add("wrong");
           fb.hidden = false; fb.className = "fb hint";
-          fb.innerHTML = `<div><b>Henüz değil.</b> Kırmızı kısmı tekrar oku. Soru tam olarak ne yapmanı istiyor?</div>${kalpHatirlat(box, q)}`;
+          fb.innerHTML = `<div><b>Henüz değil.</b> ${okuPilot() ? "Soruyu baştan, yavaşça bir daha oku." : "Kırmızı kısmı tekrar oku."} Soru tam olarak ne yapmanı istiyor?</div>${kalpHatirlat(box, q)}`;
         }
       };
     };
@@ -1863,10 +1917,13 @@
     // Dikkat paketi (S.data.dikkat): tuş takımı / sayı doğrusu, "sorunun kalbi" bulununca açılır (seçmeli sorulardaki gibi; yalnız düz metinli sorularda).
     const dikkat = !!(S.data && S.data.dikkat) && !opts.classMode && !document.body.classList.contains("sinif");
     const cevapAlan = kind === "nokta" ? $(".sd-pick", el) : $(".kp", el), kalpAlan = $(".q-text > span:last-child", el);
-    if (dikkat && cevapAlan && kalpAlan && kalpDuz(o)) {
-      const taze = state.result === undefined && !(state.wrong || []).length;
+    const taze = state.result === undefined && !(state.wrong || []).length;
+    // Soru öncesi adım kapalıyken (veli ayarı ya da kademeli) Test'te dokunma yok, soru kelimesi sarı (17 Kasım 2026). Öğren'deki matematik soruları değişmedi.
+    const vurgulu = dikkat && kalpAlan && okuPilot() && vurguDuz(o) && opts.test && (state.kalp === -3 || (taze && state.kalp === undefined && !onAdimAcik()));
+    if (vurgulu) { vurguCiz(kalpAlan, o); state.kalp = -3; }
+    else if (dikkat && cevapAlan && kalpAlan && kalpDuz(o)) {
       if (!taze || !kalpGerek(o, state)) { if (state.kalp >= 0) kalpCiz(kalpAlan, o, false); }
-      else { cevapAlan.hidden = true; kalpBul(kalpAlan, o, state, () => { cevapAlan.hidden = false; cevapAlan.scrollIntoView({ block: "nearest", behavior: "smooth" }); }); }
+      else { cevapAlan.hidden = true; kalpBul(kalpAlan, o, state, sonuc => { if (sonuc >= 0 && opts.test && okuPilot()) onAdimKaydet("adim", sonuc === 1); cevapAlan.hidden = false; cevapAlan.scrollIntoView({ block: "nearest", behavior: "smooth" }); }); }
     }
     // denk: true → değeri aynı olan her yazım kabul (2/4 = 1/2); yoksa yalnızca cevap ve kabul listesi
     const dogruMu = v => kind === "nokta" ? ayniSayi(v, o.nokta) : [o.cevap, ...(o.kabul || [])].some(c => normSayi(c) === normSayi(v) || (o.denk && ayniSayi(c, v)));
@@ -2368,7 +2425,7 @@
         if (r === 0 && ayar().hataDur && !(S.data && S.data.dikkat))   // dikkat pilotunda "Neden yanlış yaptın?" yok (bilgi vermiyordu)
           hataDurak(ek, { neden: qs.neden, metin: [it.q.aciklama || "", it.q.soru || ""].join(" "), soru: it.q.soru, kavram: it.q.kavram || it.kavramAd || "", tur: c.tur }, [sonraki], n => { qs.neden = n; kaydet(); });
       };
-      wireQuestion($("#sq .q", root), it.q, { state: qs, kavram: c.kavram ? c.kavram(it) : null, tekrar: !!it.tekrar, eski: !!it.eski, davet: true, onDone: r => bitti(r, true) });
+      wireQuestion($("#sq .q", root), it.q, { state: qs, kavram: c.kavram ? c.kavram(it) : null, tekrar: !!it.tekrar, eski: !!it.eski, davet: true, test: true, onDone: r => bitti(r, true) });
       $("#sq", root).addEventListener("click", () => setTimeout(kaydet, 0));   // yanlış şık / kanıt / ipucu durumu da saklansın
       if (qs.result !== undefined) bitti(qs.result, false);
       sonraki.onclick = () => {
@@ -4461,7 +4518,10 @@
   }
   // Veli Paneli bölümü: kullanım modu, seviye önerisi, değişiklik işaretleri ve önce/sonra karşılaştırması
   function gelisimHTML(olaylar, ay, kilit) {
-    const m = modBul(ay), on = seviyeOneri(olaylar, ay), is = [...(ay.isaretler || [])].sort((a, b) => b.ts - a.ts);
+    // Kademeli soru öncesi adımın kendiliğinden değiştiği anlar da işaret olarak görünür (silinemez; olay "onadim")
+    const otoIs = olaylar.filter(o => o.olay === "onadim").map(o => ({ g: String(o.t || "").slice(0, 10) || gunKey(o.ts), ts: o.ts, oto: true,
+      not: `Soru öncesi adım ${o.durum === "kapali" ? "kendiliğinden kapandı" : "yeniden açıldı"} (${dersAd(o.ders)}, kademeli)` }));
+    const m = modBul(ay), on = seviyeOneri(olaylar, ay), is = [...(ay.isaretler || []), ...otoIs].sort((a, b) => b.ts - a.ts);
     const secK = is.length ? (VELI.karsSec && is.find(x => String(x.ts) === VELI.karsSec)) || is[0] : null;
     return `<section><div class="sec-title"><h3>Kullanım modu</h3><span>${VELI.bulut ? `${esc(VELI.bulut.ogr.takmaAd)} · bağlı bütün cihazlar` : "Bu cihaz"} · bağlı olmayan cihazlar (öğretmen, arkadaş) hep Normal</span></div>
       ${kilit ? `<p class="ek">Bu cihaz bağlı: mod veli hesabından gelir. Değiştirmek için veli girişi yap.</p>` : ""}
@@ -4470,14 +4530,29 @@
         <select id="esikSec" ${kilit ? "disabled" : ""}>${ESIKLER.map(e => `<option value="${e}" ${Math.round(esikOf(ay) * 100) === e ? "selected" : ""}>%${e}</option>`).join("")}</select></div>
       <div class="esik-sec"><label for="menuSec"><b>Konu menüsü</b> <small>${esc((MENU_SECENEK.find(x => x[0] === (ay.menu || "acik")) || MENU_SECENEK[0])[2])} Ela menüdeki “« Daralt” düğmesiyle kendi cihazında değiştirebilir; bu ayar değişince onun seçimi sıfırlanır.</small></label>
         <select id="menuSec" ${kilit ? "disabled" : ""}>${MENU_SECENEK.map(([v, a]) => `<option value="${v}" ${(ay.menu || "acik") === v ? "selected" : ""}>${a}</option>`).join("")}</select></div>
+      ${onAdimHTML(ay, kilit)}
       ${VELI.bulut && !(VELI.bulut.ogr.ayar || {}).mod ? `<p class="ek">Henüz mod seçilmediği için Ela'nın bağlı cihazlarında <b>Destekli</b> mod varsayılan olarak açık.</p>` : ""}
       ${m === "ozel" ? `<p class="ek">Şu an <b>Özel</b> ayarlar kullanılıyor (aşağıdaki Ayarlar bölümünde tek tek değiştirildi). Bir moda dokununca o modun ayarları uygulanır.</p>` : ""}
       <div class="oneri oneri-${on.tur}"><b>Seviye önerisi:</b> ${on.metin}${on.hedef && !kilit ? ` <button class="btn" data-mod="${on.hedef}">${modAdi(on.hedef)} moda geç</button>` : ""}</div></section>
       <section><div class="sec-title"><h3>Değişiklik işaretleri</h3><span>Önce/sonra karşılaştırması için tarih işaretle</span></div>
-      <div class="rp-kart">${is.length ? `<ul class="isaret-liste">${is.map(i => `<li><b>${tarihYaz(i.g)}</b> <span>${esc(i.not)}</span>${kilit ? "" : `<button class="btn ghost" data-is-sil="${i.ts}" aria-label="İşareti sil">×</button>`}</li>`).join("")}</ul>` : `<p class="ek">Henüz işaret yok. Mod değişince işaret kendiliğinden eklenir. Okulda, evde ya da tedavide bir değişiklik olduğunda da buraya tarih koyabilirsin.</p>`}
+      <div class="rp-kart">${is.length ? `<ul class="isaret-liste">${is.map(i => `<li><b>${tarihYaz(i.g)}</b> <span>${esc(i.not)}</span>${kilit || i.oto ? "" : `<button class="btn ghost" data-is-sil="${i.ts}" aria-label="İşareti sil">×</button>`}</li>`).join("")}</ul>` : `<p class="ek">Henüz işaret yok. Mod değişince işaret kendiliğinden eklenir. Okulda, evde ya da tedavide bir değişiklik olduğunda da buraya tarih koyabilirsin.</p>`}
         ${kilit ? "" : `<div class="row isaret-ekle"><input type="date" id="isG" value="${gun()}" max="${gun()}" aria-label="Tarih"><input type="text" id="isNot" maxlength="80" placeholder="Ne değişti? (kısa not)" aria-label="Not"><button class="btn" id="isEkle">İşaret ekle</button></div>`}
         ${secK ? `<h4 class="rp-unite">Karşılaştırma ${is.length > 1 ? `<select id="karsSec" aria-label="İşaret seç">${is.map(i => `<option value="${i.ts}" ${i === secK ? "selected" : ""}>${tarihYaz(i.g)} · ${esc(kisa(i.not, 40))}</option>`).join("")}</select>` : `· ${tarihYaz(secK.g)} · ${esc(secK.not)}`}</h4>${karsTabloHTML(karsilastir(olaylar, secK.ts))}` : ""}
         <div class="row"><button class="btn" id="ozetYaz">Yazdırılabilir özet</button></div></div></section>`;
+  }
+  // Veli Paneli: soru öncesi adım, ders ders (17 Kasım 2026). Yalnız dikkat paketli konuların Test'inde çalışır.
+  function onAdimHTML(ay, kilit) {
+    const kodlar = DERS_LISTE.map(x => x[0]).filter(k => VELI.dersler[k] && VELI.dersler[k].okuPilot !== false);
+    if (!kodlar.length) return "";
+    const durum = kod => {
+      const sec = onAdimSecim(kod, ay);
+      if (sec !== "kademeli") return sec === "acik" ? "Her soruda var." : "Yok; soru kelimesi sarı.";
+      const d = VELI.oku(`ela7:${kod}:onadim`), son = (d && d.son) || [], x = son.filter(Boolean).length, n = ON_ADIM.pencere;
+      if (d && d.durum === "kapali") return `<b>Şu an kapalı</b>${d.ts ? ` (${tarihYaz(gunKey(d.ts))} itibarıyla)` : ""}. Kapalıyken ilk denemede doğru: ${x}/${son.length} soru (son ${n} soruda %${Math.round(ON_ADIM.acil * 100)}'ın altına düşerse geri açılır).`;
+      return `<b>Şu an açık.</b> ${son.length ? `Son ${son.length} adımda ilk seferde: ${x}/${son.length}` : "Henüz ölçüm yok"} (son ${n} adımda en az %${Math.round(ON_ADIM.kapan * 100)} olunca kapanır).`;
+    };
+    return `<div class="esik-sec on-adim-sec"><label><b>Soru öncesi adım (Test)</b> <small>Şıklardan önce “Bu soru senden ne istiyor?” (verisi olmayan soruda sorunun kalbine dokunma). Ders ders seçilir; yalnız dikkat paketli konuların testinde çalışır. İkiz sorular her durumda kalır. ${esc(ON_ADIM_SECENEK[0][2])}</small></label>
+      <table class="on-adim-tablo"><tbody>${kodlar.map(k => `<tr><th scope="row">${esc(dersAd(k))}</th><td><select data-onadim="${k}" aria-label="${esc(dersAd(k))}: soru öncesi adım" ${kilit ? "disabled" : ""}>${ON_ADIM_SECENEK.map(([v, a]) => `<option value="${v}" ${onAdimSecim(k, ay) === v ? "selected" : ""}>${a}</option>`).join("")}</select></td><td class="ek">${durum(k)}</td></tr>`).join("")}</tbody></table></div>`;
   }
   function gelisimBagla(p, olaylar, kodlar, yenile) {
     const yaz = async a => { await VELI.ayarYaz(a); yenile(); };
@@ -4491,6 +4566,10 @@
     const ms = $("#menuSec", p); if (ms) ms.onchange = () => { const a = { ...VELI.ayar() }, once = a.menu || "acik", yeni = ms.value; if (once === yeni) return;
       const ad = v => (MENU_SECENEK.find(x => x[0] === v) || [, v])[1];
       a.menu = yeni; a.mod = modBul(a); a.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Konu menüsü: ${ad(once)} → ${ad(yeni)}`, tur: "menu" }]; yaz(a); };
+    $$("[data-onadim]", p).forEach(sel => sel.onchange = () => { const kod = sel.dataset.onadim, a = { ...VELI.ayar() }, once = onAdimSecim(kod, a), yeni = sel.value; if (once === yeni) return;
+      const ad = v => (ON_ADIM_SECENEK.find(x => x[0] === v) || [, v])[1].replace(" (varsayılan)", "");
+      a.onAdim = { ...(a.onAdim || {}), [kod]: yeni }; a.mod = modBul(a);
+      a.isaretler = [...(a.isaretler || []), { g: gun(), ts: simdi(), not: `Soru öncesi adım (${dersAd(kod)}): ${ad(once)} → ${ad(yeni)}`, tur: "onadim" }]; yaz(a); });
     $("#ozetYaz", p).onclick = () => ozetYazdir(olaylar, kodlar);
   }
 
