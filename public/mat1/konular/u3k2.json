@@ -440,7 +440,7 @@
   {
    "soru": "“İzmir'deki ortaokulların kütüphanelerindeki kitap sayıları nasıl bir eğilim gösterir?” sorusunun evreni hangisidir?",
    "secenekler": [
-    "Bir okulun kütüphanesi",
+    "İzmir'in her ilçesinden seçilen birkaç ortaokulun kütüphanesi",
     "Türkiye'deki bütün kütüphaneler",
     "İzmir'deki bütün ortaokulların kütüphaneleri"
    ],
@@ -448,6 +448,14 @@
    "ipucu": "Soru hangi şehri ve hangi okulları kapsıyor?",
    "aciklama": "Soru İzmir'deki bütün ortaokul kütüphanelerini kapsıyor. (s. 165)",
    "kavram": "Evren",
+   "ikiz": "i1",
+   "vurgu": [
+    "evreni hangisidir"
+   ],
+   "ne": [
+    "Araştırmanın evrenini",
+    "Araştırmanın örneklemini"
+   ],
    "tetik": [
     "nasıl"
    ],
@@ -471,6 +479,15 @@
    ],
    "bolge": [
     "temsil etmez"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "temsil etmez"
+   ],
+   "ne": [
+    "Evreni temsil etmeyen grubu",
+    "Evreni temsil eden grubu"
    ]
   },
   {
@@ -515,23 +532,28 @@
   {
    "soru": "Hangisi iyi bir araştırma sorusunun özelliği değildir?",
    "secenekler": [
-    "Amacı nettir.",
+    "Cevapları kişiden kişiye değişir.",
     "Veri toplamaya uygundur.",
     "Cevabı herkes için aynıdır."
    ],
    "dogru": 2,
-   "ipucu": "İyi soruda cevaplar kişiden kişiye değişir mi?",
-   "aciklama": "İyi araştırma sorusunun cevapları kişiden kişiye değişir. (s. 165)",
+   "ipucu": "Herkes aynı cevabı verirse veri toplamanın anlamı kalır mı?",
+   "aciklama": "Cevabı herkes için aynı olan soru araştırmaya uygun değildir (s. 165).",
    "kavram": "İyi Araştırma Sorusu",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi",
+    "özelliği değildir"
+   ],
+   "ne": [
+    "İyi soruda olmayan özelliği",
+    "İyi soruda olan özelliği"
+   ],
    "tetik": [
     "Hangisi"
    ],
    "bolge": [
     "özelliği değildir"
-   ],
-   "vurgu": [
-    "Hangisi",
-    "değildir"
    ]
   },
   {
@@ -611,6 +633,86 @@
    ],
    "bolge": [
     "neden örneklem kullanmaz"
+   ]
+  },
+  {
+   "soru": "“İzmir'deki ortaokulların kütüphanelerindeki kitap sayıları nasıl bir eğilim gösterir?” sorusunun örneklemi hangisi olabilir?",
+   "secenekler": [
+    "İzmir'deki bütün ortaokulların kütüphaneleri",
+    "İzmir'in her ilçesinden seçilen birkaç ortaokulun kütüphanesi",
+    "Türkiye'deki bütün kütüphaneler"
+   ],
+   "dogru": 1,
+   "ipucu": "Örneklem, en geniş gruptan seçilen daha küçük bir gruptur.",
+   "aciklama": "Her ilçeden seçilen birkaç okul, İzmir'deki bütün ortaokulları temsil eden küçük bir gruptur: örneklem (s. 165).",
+   "kavram": "Örneklem",
+   "ikiz": "i1",
+   "vurgu": [
+    "örneklemi hangisi olabilir"
+   ],
+   "ne": [
+    "Araştırmanın örneklemini",
+    "Araştırmanın evrenini"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "örneklemi hangisi olabilir"
+   ]
+  },
+  {
+   "soru": "Bir araştırmada evren “okuldaki bütün öğrenciler”dir. Hangisi bu evreni temsil eder?",
+   "secenekler": [
+    "Sadece basketbol takımındaki öğrenciler",
+    "Her sınıftan rastgele seçilen öğrenciler",
+    "Sadece 7/A sınıfındaki öğrenciler"
+   ],
+   "dogru": 1,
+   "ipucu": "Bütün okula benzeyen grubu bul.",
+   "aciklama": "Her sınıftan rastgele seçilen öğrenciler bütün okula benzer; evreni temsil eder (s. 166).",
+   "kavram": "Örneklem Evreni Temsil Etmeli",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "temsil eder"
+   ],
+   "ne": [
+    "Evreni temsil eden grubu",
+    "Evreni temsil etmeyen grubu"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bu evreni temsil eder"
+   ]
+  },
+  {
+   "soru": "Hangisi iyi bir araştırma sorusunun özelliğidir?",
+   "secenekler": [
+    "Cevabı herkes için aynıdır.",
+    "Cevabı evet ya da hayırdır.",
+    "Cevapları kişiden kişiye değişir."
+   ],
+   "dogru": 2,
+   "ipucu": "Bilgi kartındaki iyi soru özelliklerini hatırla.",
+   "aciklama": "İyi araştırma sorusunun cevapları kişiden kişiye değişir (s. 165).",
+   "kavram": "İyi Araştırma Sorusu",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi",
+    "özelliğidir"
+   ],
+   "ne": [
+    "İyi soruda olan özelliği",
+    "İyi soruda olmayan özelliği"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "özelliğidir"
    ]
   }
  ],
@@ -830,5 +932,6 @@
    "aciklama": "Kantine en yakın sınıf sıraya erken girer; bu örneklem bütün okulu temsil etmez (s. 166). Hikâye kitaptaki kantin örneğinden uyarlandı.",
    "kavram": "Örneklem Evreni Temsil Etmeli"
   }
- ]
+ ],
+ "testSoru": 10
 }

@@ -131,7 +131,7 @@ with sync_playwright() as pw:
                 yanlis_s = "9" if str(q["cevap"]) != "9" else "8"
                 page.locator("#qbox .kp-k[data-k='" + yanlis_s + "']").first.click(); page.locator("#qbox .kp-ok").first.click(); ileri(50)
                 ok("Tuş takımı: yanlış cevapta 'Sorunun kalbine tekrar bak'", page.is_visible("#qbox .kalp-hatir")); ileri(800)
-            if bulmali(q) and "secenekler" in q and not yanlis_test and not ilk_bulmali and page.query_selector("#qbox .kk-run"):   # bir yanlış cevap: sorunun kalbi hatırlatması
+            if bulmali(q) and "secenekler" in q and not yanlis_test and not ilk_bulmali and page.query_selector("#qbox .kk-run") and not (PILOT and not q.get("kanit")):   # bir yanlış cevap: sorunun kalbi hatırlatması (okuma yaklaşımında Öğren seçmeli sorusunda kalp yok; yanlış cevap yukarıda denendi)
                 yanlis_test = True
                 yanl = [j for j in range(len(q["secenekler"])) if j != q["dogru"]][0]
                 page.locator("#qbox .opt").nth(yanl).click(); ileri(50)

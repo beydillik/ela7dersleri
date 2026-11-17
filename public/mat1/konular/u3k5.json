@@ -611,9 +611,14 @@
    "bolge": [
     "hangisi doğrudur"
    ],
+   "ikiz": "i1",
    "vurgu": [
-    "hangisi",
-    "doğrudur"
+    "44,9 cm",
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "44,9 cm'lik baş çevresinin yerini",
+    "45,8 cm'lik baş çevresinin yerini"
    ]
   },
   {
@@ -694,15 +699,19 @@
    "bolge": [
     "Hangisi doğrudur"
    ],
+   "ikiz": "i2",
    "vurgu": [
-    "Hangisi",
-    "doğrudur"
+    "Hangisi doğrudur"
+   ],
+   "ne": [
+    "Doğru olan yargıyı",
+    "Yanlış olan yargıyı"
    ]
   },
   {
    "soru": "Bir pil üreticisi “Pillerimiz en az 10 saat dayanır.” diyor. 5 pilin süreleri: 11, 12, 10, 13, 9 saat. Ortalama 11 saat. Hangisi doğrudur?",
    "secenekler": [
-    "İddia kesinlikle yanlıştır.",
+    "Ortalama iddiadaki sayıdan az; iddiayı desteklemiyor.",
     "Veriler iddiayla ilgili değildir.",
     "Ortalama iddiayı destekliyor ama 9 saatlik bir pil var; daha çok veri gerekebilir."
    ],
@@ -710,15 +719,20 @@
    "ipucu": "Ortalamayı 10 ile karşılaştır. Bütün piller 10 saat dayanmış mı?",
    "aciklama": "11 > 10: ortalama destekliyor. Ama 9 saatlik pil “en az 10” iddiasına uymuyor. (s. 176)",
    "kavram": "Veriyle İddiayı Sınama",
+   "ikiz": "i3",
+   "vurgu": [
+    "en az 10 saat",
+    "Hangisi doğrudur"
+   ],
+   "ne": [
+    "“En az 10 saat” iddiasıyla ilgili doğru yorumu",
+    "“En az 12 saat” iddiasıyla ilgili doğru yorumu"
+   ],
    "tetik": [
     "Hangisi"
    ],
    "bolge": [
     "Hangisi doğrudur"
-   ],
-   "vurgu": [
-    "Hangisi",
-    "doğrudur"
    ]
   },
   {
@@ -739,6 +753,86 @@
    ],
    "bolge": [
     "kaç tanesinde araba 13 km ya da daha fazla gitmiş"
+   ]
+  },
+  {
+   "soru": "9 aylık bir bebeğin baş çevresi 45,8 cm. Referans değerlerine göre (P25 = 44,9 · P50 = 45,8 · P75 = 46,6) hangisi doğrudur?",
+   "secenekler": [
+    "P25 değerinde",
+    "P50 değerinde",
+    "P75'in üstünde"
+   ],
+   "dogru": 1,
+   "ipucu": "Baş çevresini üç referans değeriyle tek tek karşılaştır.",
+   "aciklama": "45,8 cm, 9 ayda P50 değerine eşit (s. 177).",
+   "kavram": "Referans Değeri",
+   "ikiz": "i1",
+   "vurgu": [
+    "45,8 cm",
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "45,8 cm'lik baş çevresinin yerini",
+    "44,9 cm'lik baş çevresinin yerini"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi doğrudur"
+   ]
+  },
+  {
+   "soru": "3, 4, 6, 7 verilerinin ortalaması 5'tir. Hangisi yanlıştır?",
+   "secenekler": [
+    "5 veri setinde olmadığı için temsil değeri olamaz.",
+    "Ortalama doğru hesaplanmıştır.",
+    "5 veri setinde olmasa da temsil değeri olabilir."
+   ],
+   "dogru": 0,
+   "ipucu": "Önce ortalamayı kendin hesapla. Sonra temsil değeri veri setinde olmak zorunda mı, düşün.",
+   "aciklama": "3 + 4 + 6 + 7 = 20, 20 ÷ 4 = 5: ortalama doğru. Temsil değeri veri setinde olmayabilir; “olamaz” demek yanlıştır (s. 176).",
+   "kavram": "Temsil Değeri Listede Olmayabilir",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi yanlıştır"
+   ],
+   "ne": [
+    "Yanlış olan yargıyı",
+    "Doğru olan yargıyı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi yanlıştır"
+   ]
+  },
+  {
+   "soru": "Bir pil üreticisi “Pillerimiz en az 12 saat dayanır.” diyor. 5 pilin süreleri: 11, 12, 10, 13, 9 saat. Ortalama 11 saat. Hangisi doğrudur?",
+   "secenekler": [
+    "Ortalama iddiadaki sayıdan az; iddiayı desteklemiyor.",
+    "Ortalama iddiayı destekliyor ama 9 saatlik bir pil var; daha çok veri gerekebilir.",
+    "Veriler iddiayla ilgili değildir."
+   ],
+   "dogru": 0,
+   "ipucu": "İddiadaki sayıyı ortalamayla karşılaştır.",
+   "aciklama": "Ortalama 11 saat, iddia en az 12 saat: 11 < 12, ortalama iddiayı desteklemiyor (s. 176).",
+   "kavram": "Veriyle İddiayı Sınama",
+   "ikiz": "i3",
+   "vurgu": [
+    "en az 12 saat",
+    "Hangisi doğrudur"
+   ],
+   "ne": [
+    "“En az 12 saat” iddiasıyla ilgili doğru yorumu",
+    "“En az 10 saat” iddiasıyla ilgili doğru yorumu"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi doğrudur"
    ]
   }
  ],
@@ -958,5 +1052,6 @@
    "aciklama": "Ortalama 12,1 ve ortanca 12 km; ikisi de 13'ten az. Tek bir sürüş iddiayı doğrulamaz (s. 176). Sayılar kitap dışı.",
    "kavram": "Veriyle İddiayı Sınama"
   }
- ]
+ ],
+ "testSoru": 10
 }

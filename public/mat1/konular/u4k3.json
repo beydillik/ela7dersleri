@@ -513,6 +513,15 @@
    ],
    "bolge": [
     "Hangisi orta dikmenin özelliğidir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "özelliğidir"
+   ],
+   "ne": [
+    "Orta dikmenin bir özelliğini",
+    "Orta dikmenin özelliği olmayanı"
    ]
   },
   {
@@ -589,6 +598,15 @@
    ],
    "bolge": [
     "Hangi pergel açıklığıyla orta dikme inşa edilebilir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangi pergel açıklığıyla",
+    "inşa edilebilir"
+   ],
+   "ne": [
+    "İnşaya uygun pergel açıklığını",
+    "İnşaya uygun olmayan pergel açıklığını"
    ]
   },
   {
@@ -664,6 +682,14 @@
    ],
    "bolge": [
     "hangisi yapılmaz"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi yapılmaz"
+   ],
+   "ne": [
+    "İnşada yapılmayan işi",
+    "İnşada yapılan işi"
    ]
   },
   {
@@ -683,6 +709,86 @@
    ],
    "bolge": [
     "hangi numaralı çizgi AB'nin orta dikmesidir"
+   ]
+  },
+  {
+   "soru": "Hangisi orta dikmenin özelliği değildir?",
+   "secenekler": [
+    "Doğru parçasını dik keser ve tam ortadan böler.",
+    "Doğru parçasına paraleldir.",
+    "Üzerindeki her nokta iki uca eşit uzaktır."
+   ],
+   "dogru": 1,
+   "ipucu": "Her şıkkı orta dikmenin tanımıyla karşılaştır.",
+   "aciklama": "Orta dikme doğru parçasını dik keser; paralel değildir (s. 212–213).",
+   "kavram": "Orta Dikme",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "özelliği değildir"
+   ],
+   "ne": [
+    "Orta dikmenin özelliği olmayanı",
+    "Orta dikmenin bir özelliğini"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "orta dikmenin özelliği değildir"
+   ]
+  },
+  {
+   "soru": "AB 10 cm. Hangi pergel açıklığıyla orta dikme inşa edilemez?",
+   "secenekler": [
+    "6 cm",
+    "12 cm",
+    "4 cm"
+   ],
+   "dogru": 2,
+   "ipucu": "Açıklık AB'nin yarısından uzun olmalı. Yarısından kısa olan hangisi?",
+   "aciklama": "Yarısı 5 cm; 4 cm yarıdan kısa, yaylar birbirine değmez (s. 212).",
+   "kavram": "Eş Çemberler",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangi pergel açıklığıyla",
+    "inşa edilemez"
+   ],
+   "ne": [
+    "İnşaya uygun olmayan pergel açıklığını",
+    "İnşaya uygun pergel açıklığını"
+   ],
+   "tetik": [
+    "Hangi pergel"
+   ],
+   "bolge": [
+    "orta dikme inşa edilemez"
+   ]
+  },
+  {
+   "soru": "İnşada hangisi yapılır?",
+   "secenekler": [
+    "Cetvelle uzunluk ölçmek",
+    "Açıölçerle açı ölçmek",
+    "Pergelle yay çizmek"
+   ],
+   "dogru": 2,
+   "ipucu": "İnşada ölçme yoktur.",
+   "aciklama": "İnşada pergelle yay, ölçüsüz cetvelle düz çizgi çizilir (s. 211).",
+   "kavram": "Pergel ve Ölçüsüz Cetvel",
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi yapılır"
+   ],
+   "ne": [
+    "İnşada yapılan işi",
+    "İnşada yapılmayan işi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "İnşada hangisi yapılır"
    ]
   }
  ],
@@ -898,5 +1004,6 @@
    "aciklama": "Orta dikmenin üzerindeki her nokta A'ya ve B'ye eşit uzaklıktadır (s. 212). Hikâye kitap dışı.",
    "kavram": "İki Uca Eşit Uzak"
   }
- ]
+ ],
+ "testSoru": 10
 }

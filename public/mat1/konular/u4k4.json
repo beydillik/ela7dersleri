@@ -167,8 +167,7 @@
      "hangisi doğrudur"
     ],
     "vurgu": [
-     "hangisi",
-     "doğrudur"
+     "hangisi doğrudur"
     ]
    }
   },
@@ -569,9 +568,13 @@
    "bolge": [
     "hangisi doğrudur"
    ],
+   "ikiz": "i1",
    "vurgu": [
-    "hangisi",
-    "doğrudur"
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "Açıortayla ilgili doğru yargıyı",
+    "Açıortayla ilgili yanlış yargıyı"
    ]
   },
   {
@@ -667,8 +670,14 @@
    "bolge": [
     "Ne çizeriz"
    ],
+   "ikiz": "i2",
    "vurgu": [
+    "Bir doğru parçasının",
     "Ne çizeriz"
+   ],
+   "ne": [
+    "Doğru parçası için çizilecek doğruyu",
+    "Açı için çizilecek doğruyu"
    ]
   },
   {
@@ -684,6 +693,108 @@
    "kavram": "Açının Simetri Doğrusu",
    "bolge": [
     "açıortay açının neyidir"
+   ]
+  },
+  {
+   "soru": "Açıortay için hangisi yanlıştır?",
+   "secenekler": [
+    "Açının köşesinden geçer.",
+    "Açıyı iki eş açıya ayırır.",
+    "Açının köşesinden geçmez."
+   ],
+   "dogru": 2,
+   "ipucu": "Tanımı hatırla, sonra her şıkkı tek tek kontrol et.",
+   "aciklama": "Açıortay açının köşesinden geçer; “geçmez” yanlıştır (s. 214).",
+   "kavram": "Açıortay",
+   "ikiz": "i1",
+   "vurgu": [
+    "hangisi yanlıştır"
+   ],
+   "ne": [
+    "Açıortayla ilgili yanlış yargıyı",
+    "Açıortayla ilgili doğru yargıyı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi yanlıştır"
+   ]
+  },
+  {
+   "soru": "Bir açının simetri doğrusunu inşa edeceğiz. Ne çizeriz?",
+   "secenekler": [
+    "Köşegen",
+    "Orta dikme",
+    "Açıortay"
+   ],
+   "dogru": 2,
+   "ipucu": "Şekil bir açı.",
+   "aciklama": "Açının simetri doğrusu açıortaydır (s. 215).",
+   "kavram": "Orta Dikme mi, Açıortay mı?",
+   "ikiz": "i2",
+   "vurgu": [
+    "Bir açının",
+    "Ne çizeriz"
+   ],
+   "ne": [
+    "Açı için çizilecek doğruyu",
+    "Doğru parçası için çizilecek doğruyu"
+   ],
+   "bolge": [
+    "Ne çizeriz"
+   ]
+  },
+  {
+   "soru": "Açıortay 80°'lik bir açıyı ikiye ayırdı. Oluşan açılardan biri kaç derecedir?",
+   "secenekler": [
+    "40°",
+    "80°",
+    "160°"
+   ],
+   "dogru": 0,
+   "ipucu": "Açıortay açıyı iki eş parçaya böler. Bütün açı verildi.",
+   "aciklama": "80 ÷ 2 = 40°. Oluşan her açı bütün açının yarısıdır (s. 214).",
+   "kavram": "İki Eş Açı",
+   "ikiz": "i3",
+   "vurgu": [
+    "Oluşan açılardan biri kaç derecedir"
+   ],
+   "ne": [
+    "Oluşan açılardan birinin ölçüsünü",
+    "Bütün açının ölçüsünü"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Oluşan açılardan biri kaç derecedir"
+   ]
+  },
+  {
+   "soru": "Açıortay bir açıyı ikiye ayırdı. Oluşan açılardan biri 80°'dir. Bütün açı kaç derecedir?",
+   "secenekler": [
+    "160°",
+    "40°",
+    "80°"
+   ],
+   "dogru": 0,
+   "ipucu": "Açıortay açıyı iki eş parçaya böler. Parçalardan biri verildi.",
+   "aciklama": "İki eş açı: 80 + 80 = 160° (s. 214).",
+   "kavram": "İki Eş Açı",
+   "ikiz": "i3",
+   "vurgu": [
+    "Bütün açı kaç derecedir"
+   ],
+   "ne": [
+    "Bütün açının ölçüsünü",
+    "Oluşan açılardan birinin ölçüsünü"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Bütün açı kaç derecedir"
    ]
   }
  ],
@@ -895,5 +1006,6 @@
    "aciklama": "E noktası köşeyle birleştirilince açıortay çıkar. K ile L'yi birleştirmek açıortay değil, KL parçasını verir (s. 213–214).",
    "kavram": "Açıortay İnşası"
   }
- ]
+ ],
+ "testSoru": 10
 }

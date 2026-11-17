@@ -583,6 +583,15 @@
    ],
    "bolge": [
     "Hangisi bir yayılım ölçüsüdür"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "yayılım ölçüsüdür"
+   ],
+   "ne": [
+    "Yayılım ölçüsü olanı",
+    "Yayılım ölçüsü olmayanı"
    ]
   },
   {
@@ -691,8 +700,16 @@
    ],
    "dogru": 1,
    "ipucu": "Uzaklıkları topla, sonra veri sayısına böl.",
-   "aciklama": "3 + 1 + 1 + 3 = 8; 8 ÷ 4 = 2. (8 yalnızca toplamdır.)",
+   "aciklama": "3 + 1 + 1 + 3 = 8; 8 ÷ 4 = 2 (s. 181).",
    "kavram": "Ortalama Mutlak Sapma",
+   "ikiz": "i2",
+   "vurgu": [
+    "Ortalama mutlak sapma kaçtır"
+   ],
+   "ne": [
+    "Ortalama mutlak sapmayı",
+    "Uzaklıkların toplamını"
+   ],
    "bolge": [
     "Ortalama mutlak sapma kaçtır"
    ]
@@ -700,7 +717,7 @@
   {
    "soru": "Bir koşucunun süreleri her gün birbirine çok yakın. Ortalama mutlak sapması için hangisi beklenir?",
    "secenekler": [
-    "Çok büyük olur.",
+    "Büyük olur.",
     "Küçük olur.",
     "Ortalamaya eşit olur."
    ],
@@ -708,6 +725,15 @@
    "ipucu": "Veriler birbirine yakınsa ortalamadan uzaklıklar nasıl olur?",
    "aciklama": "Uzaklıklar küçük olur; sapma küçüktür. Koşucu istikrarlıdır. (s. 182)",
    "kavram": "İstikrarlı ve Dalgalı",
+   "ikiz": "i3",
+   "vurgu": [
+    "birbirine çok yakın",
+    "hangisi beklenir"
+   ],
+   "ne": [
+    "Süreleri birbirine yakın koşucunun sapmasını",
+    "Süreleri çok değişen koşucunun sapmasını"
+   ],
    "tetik": [
     "hangisi"
    ],
@@ -753,6 +779,83 @@
    "vurgu": [
     "Hangisi",
     "doğrudur"
+   ]
+  },
+  {
+   "soru": "Hangisi bir yayılım ölçüsü değildir?",
+   "secenekler": [
+    "Açıklık",
+    "Ortalama mutlak sapma",
+    "Ortanca"
+   ],
+   "dogru": 2,
+   "ipucu": "Merkez ölçülerini hatırla: ortalama, ortanca, tepe değer.",
+   "aciklama": "Ortanca bir merkez ölçüsüdür, yayılım ölçüsü değildir (s. 181).",
+   "kavram": "Yayılım Ölçüsü",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "yayılım ölçüsü değildir"
+   ],
+   "ne": [
+    "Yayılım ölçüsü olmayanı",
+    "Yayılım ölçüsü olanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "yayılım ölçüsü değildir"
+   ]
+  },
+  {
+   "soru": "Veriler: 3, 5, 7, 9. Ortalama 6. Uzaklıklar: 3, 1, 1, 3. Uzaklıkların toplamı kaçtır?",
+   "secenekler": [
+    "8",
+    "2",
+    "4"
+   ],
+   "dogru": 0,
+   "ipucu": "Yalnızca uzaklıkları topla. Bölme yok.",
+   "aciklama": "3 + 1 + 1 + 3 = 8 (s. 181).",
+   "kavram": "Ortalama Mutlak Sapma",
+   "ikiz": "i2",
+   "vurgu": [
+    "Uzaklıkların toplamı kaçtır"
+   ],
+   "ne": [
+    "Uzaklıkların toplamını",
+    "Ortalama mutlak sapmayı"
+   ],
+   "bolge": [
+    "Uzaklıkların toplamı kaçtır"
+   ]
+  },
+  {
+   "soru": "Bir koşucunun süreleri her gün çok değişiyor. Ortalama mutlak sapması için hangisi beklenir?",
+   "secenekler": [
+    "Küçük olur.",
+    "Ortalamaya eşit olur.",
+    "Büyük olur."
+   ],
+   "dogru": 2,
+   "ipucu": "Veriler çok değişiyorsa ortalamadan uzaklıklar nasıl olur?",
+   "aciklama": "Uzaklıklar büyük olur; sapma büyüktür. Koşucu dalgalıdır (s. 182).",
+   "kavram": "İstikrarlı ve Dalgalı",
+   "ikiz": "i3",
+   "vurgu": [
+    "çok değişiyor",
+    "hangisi beklenir"
+   ],
+   "ne": [
+    "Süreleri çok değişen koşucunun sapmasını",
+    "Süreleri birbirine yakın koşucunun sapmasını"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Ortalama mutlak sapması için hangisi beklenir"
    ]
   }
  ],
@@ -964,5 +1067,6 @@
    "aciklama": "Yasemin'in açıklığı ve ortalama mutlak sapması küçük: istikrarlı. Ortalamaların aynı olması yayılımın da aynı olduğunu göstermez (s. 181–182).",
    "kavram": "İstikrarlı ve Dalgalı"
   }
- ]
+ ],
+ "testSoru": 10
 }

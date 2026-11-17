@@ -565,6 +565,15 @@
    "bolge": [
     "Hangisi",
     "uygun bir birimdir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "uygun bir birimdir"
+   ],
+   "ne": [
+    "Yüzey alanına uygun birimi",
+    "Yüzey alanına uygun olmayan birimi"
    ]
   },
   {
@@ -583,6 +592,14 @@
    ],
    "bolge": [
     "Yüzey alanı kaç cm²'dir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Yüzey alanı kaç"
+   ],
+   "ne": [
+    "Prizmanın yüzey alanını",
+    "Üç yüzün alanları toplamını"
    ]
   },
   {
@@ -613,7 +630,7 @@
    "secenekler": [
     "150",
     "60",
-    "360"
+    "5"
    ],
    "dogru": 0,
    "ipucu": "Küpün 12 eş ayrıtı var. Önce bir ayrıtı bul.",
@@ -626,6 +643,14 @@
      "Bir yüzün alanını bul, 6 ile çarp."
     ]
    },
+   "ikiz": "i3",
+   "vurgu": [
+    "yüzey alanı kaç"
+   ],
+   "ne": [
+    "Küpün yüzey alanını",
+    "Küpün bir ayrıtının uzunluğunu"
+   ],
    "tetik": [
     "kaç"
    ],
@@ -675,6 +700,85 @@
    ],
    "bolge": [
     "En az kaç cm² kâğıt gerekir"
+   ]
+  },
+  {
+   "soru": "Hangisi yüzey alanı için uygun bir birim değildir?",
+   "secenekler": [
+    "cm²",
+    "m²",
+    "cm"
+   ],
+   "dogru": 2,
+   "ipucu": "Yüzey alanı bir alandır. Hangisi uzunluk birimi?",
+   "aciklama": "cm bir uzunluk birimidir; yüzey alanı için uygun değildir (s. 129).",
+   "kavram": "Yüzey Alanı",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "uygun bir birim değildir"
+   ],
+   "ne": [
+    "Yüzey alanına uygun olmayan birimi",
+    "Yüzey alanına uygun birimi"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "uygun bir birim değildir"
+   ]
+  },
+  {
+   "soru": "Bir dikdörtgenler prizmasının birbirinden farklı üç yüzünün alanları 20 cm², 30 cm² ve 40 cm²'dir. Bu üç yüzün alanları toplamı kaç cm²'dir?",
+   "secenekler": [
+    "90",
+    "180",
+    "60"
+   ],
+   "dogru": 0,
+   "ipucu": "Soru yalnız bu üç yüzün toplamını istiyor. Verilen üç sayıyı topla.",
+   "aciklama": "20 + 30 + 40 = 90 cm². Bu, üç farklı yüzün toplamıdır; yüzey alanı değildir (s. 129).",
+   "kavram": "Üç Çift Eş Yüz",
+   "ikiz": "i2",
+   "vurgu": [
+    "alanları toplamı kaç"
+   ],
+   "ne": [
+    "Üç yüzün alanları toplamını",
+    "Prizmanın yüzey alanını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Bu üç yüzün alanları toplamı kaç cm²'dir"
+   ]
+  },
+  {
+   "soru": "Bir küpün bütün ayrıtlarının uzunlukları toplamı 60 cm'dir. Bu küpün bir ayrıtı kaç cm'dir?",
+   "secenekler": [
+    "5",
+    "150",
+    "10"
+   ],
+   "dogru": 0,
+   "ipucu": "Küpün kaç eş ayrıtı var? Toplamı ayrıt sayısına böl.",
+   "aciklama": "Küpün 12 eş ayrıtı var: 60 ÷ 12 = 5 cm (s. 132).",
+   "kavram": "Küp",
+   "ikiz": "i3",
+   "vurgu": [
+    "bir ayrıtı kaç"
+   ],
+   "ne": [
+    "Küpün bir ayrıtının uzunluğunu",
+    "Küpün yüzey alanını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "bir ayrıtı kaç cm'dir"
    ]
   }
  ],
@@ -883,5 +987,6 @@
    "aciklama": "Sandığın kapağı yok, yani üst yüz yok; tabanla birlikte 5 yüz boyanır (s. 129). Hikâye kitap dışı.",
    "kavram": "Hangi Yüzler Kaplanacak?"
   }
- ]
+ ],
+ "testSoru": 10
 }

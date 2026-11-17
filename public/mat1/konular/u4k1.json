@@ -657,19 +657,24 @@
    "soru": "Bir dörtgenin görüntüsünü çizmek için önce ne yaparız?",
    "secenekler": [
     "Her köşenin görüntüsünü buluruz.",
-    "Dörtgeni boyarız.",
+    "Bu noktaları sırayla birleştiririz.",
     "Simetri doğrusunu sileriz."
    ],
    "dogru": 0,
    "ipucu": "Önce köşeler, sonra …",
-   "aciklama": "Önce köşelerin görüntüsünü bulur, sonra birleştiririz. (s. 204)",
+   "aciklama": "Önce her köşenin görüntüsünü buluruz (s. 204).",
    "kavram": "Köşe Köşe Yansıt",
+   "ikiz": "i2",
+   "vurgu": [
+    "çizmek için önce",
+    "ne yaparız"
+   ],
+   "ne": [
+    "Görüntü çizmenin ilk adımını",
+    "Köşeler bulunduktan sonraki adımı"
+   ],
    "bolge": [
     "önce ne yaparız"
-   ],
-   "vurgu": [
-    "ne yaparız",
-    "önce"
    ]
   },
   {
@@ -688,6 +693,15 @@
    ],
    "bolge": [
     "C′ nerededir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "tam üzerinde",
+    "nerededir"
+   ],
+   "ne": [
+    "Doğrunun üzerindeki noktanın görüntüsünü",
+    "Doğrunun solundaki noktanın görüntüsünü"
    ]
   },
   {
@@ -745,6 +759,111 @@
    ],
    "bolge": [
     "hangi yönü gösterir"
+   ]
+  },
+  {
+   "soru": "C noktası simetri doğrusunun 1 kare solunda. C′ nerededir?",
+   "secenekler": [
+    "Doğrunun 1 kare solunda",
+    "C ile aynı yerde",
+    "Doğrunun 1 kare sağında"
+   ],
+   "dogru": 2,
+   "ipucu": "Nokta ile görüntüsü doğrunun iki yanındadır ve doğruya eşit uzaklıktadır.",
+   "aciklama": "C doğrunun 1 kare solunda; görüntüsü öbür yanda, 1 kare sağda (s. 205).",
+   "kavram": "Eşit Uzaklık",
+   "ikiz": "i1",
+   "vurgu": [
+    "1 kare solunda",
+    "nerededir"
+   ],
+   "ne": [
+    "Doğrunun solundaki noktanın görüntüsünü",
+    "Doğrunun üzerindeki noktanın görüntüsünü"
+   ],
+   "tetik": [
+    "nerededir"
+   ],
+   "bolge": [
+    "C′ nerededir"
+   ]
+  },
+  {
+   "soru": "Bir dörtgenin görüntüsünü çizerken köşelerin görüntülerini bulduktan sonra ne yaparız?",
+   "secenekler": [
+    "Her köşenin görüntüsünü buluruz.",
+    "Bu noktaları sırayla birleştiririz.",
+    "Simetri doğrusunu sileriz."
+   ],
+   "dogru": 1,
+   "ipucu": "Köşeler bulundu. Şekli tamamlamak için ne kaldı?",
+   "aciklama": "Köşelerin görüntüleri bulununca bu noktaları sırayla birleştiririz (s. 204).",
+   "kavram": "Köşe Köşe Yansıt",
+   "ikiz": "i2",
+   "vurgu": [
+    "bulduktan sonra",
+    "ne yaparız"
+   ],
+   "ne": [
+    "Köşeler bulunduktan sonraki adımı",
+    "Görüntü çizmenin ilk adımını"
+   ],
+   "bolge": [
+    "bulduktan sonra ne yaparız"
+   ]
+  },
+  {
+   "soru": "Simetri doğrusu dikeyse bir nokta ile görüntüsü nasıl durur?",
+   "secenekler": [
+    "Aynı yatay hizada",
+    "Aynı dikey hizada",
+    "Çapraz hizada"
+   ],
+   "dogru": 0,
+   "ipucu": "Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı dik keser.",
+   "aciklama": "Doğru dikeyse onu dik kesen parça yataydır: nokta ile görüntüsü aynı yatay hizada durur (s. 205).",
+   "kavram": "Dik Ortalar",
+   "ikiz": "i3",
+   "vurgu": [
+    "dikeyse",
+    "nasıl durur"
+   ],
+   "ne": [
+    "Doğru dikeyken nokta ile görüntüsünün hizasını",
+    "Doğru yatayken nokta ile görüntüsünün hizasını"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "nokta ile görüntüsü nasıl durur"
+   ]
+  },
+  {
+   "soru": "Simetri doğrusu yataysa bir nokta ile görüntüsü nasıl durur?",
+   "secenekler": [
+    "Aynı yatay hizada",
+    "Aynı dikey hizada",
+    "Çapraz hizada"
+   ],
+   "dogru": 1,
+   "ipucu": "Simetri doğrusu, nokta ile görüntüsünü birleştiren parçayı dik keser.",
+   "aciklama": "Doğru yataysa onu dik kesen parça dikeydir: nokta ile görüntüsü aynı dikey hizada durur (s. 205).",
+   "kavram": "Dik Ortalar",
+   "ikiz": "i3",
+   "vurgu": [
+    "yataysa",
+    "nasıl durur"
+   ],
+   "ne": [
+    "Doğru yatayken nokta ile görüntüsünün hizasını",
+    "Doğru dikeyken nokta ile görüntüsünün hizasını"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "nokta ile görüntüsü nasıl durur"
    ]
   }
  ],
@@ -958,5 +1077,6 @@
    "aciklama": "Nesne ile görüntüsü aynaya eşit uzaklıktadır: 15 cm. 10 cm arabanın uzunluğu, 30 cm araba ile görüntüsü arası (s. 204–205). Hikâye kitap dışı.",
    "kavram": "Yansıma Dönüşümü"
   }
- ]
+ ],
+ "testSoru": 10
 }

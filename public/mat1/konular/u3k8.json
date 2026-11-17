@@ -447,9 +447,13 @@
    "bolge": [
     "Hangisi doğrudur"
    ],
+   "ikiz": "i1",
    "vurgu": [
-    "Hangisi",
-    "doğrudur"
+    "Hangisi doğrudur"
+   ],
+   "ne": [
+    "Doğru olan yargıyı",
+    "Yanlış olan yargıyı"
    ]
   },
   {
@@ -522,21 +526,27 @@
    "secenekler": [
     "Adım sayısı sürekli artmıştır.",
     "Adım sayısı artma eğilimindedir.",
-    "Adım sayısı hiç değişmemiştir."
+    "Adım sayısı azalma eğilimindedir."
    ],
    "dogru": 1,
    "ipucu": "Arada düşüş varsa “sürekli” denir mi?",
-   "aciklama": "7. gün düşüş var; doğru yorum “artma eğiliminde”.",
+   "aciklama": "7. gün düşüş var; doğru yorum “artma eğiliminde”. (s. 191)",
    "kavram": "Eğilimi Doğru Söylemek",
+   "ikiz": "i2",
+   "vurgu": [
+    "art arda artıp",
+    "biraz düşmüş",
+    "Hangisi en doğru yorumdur"
+   ],
+   "ne": [
+    "Sonunda düşen adım sayısının yorumunu",
+    "Sonunda artan adım sayısının yorumunu"
+   ],
    "tetik": [
     "Hangisi"
    ],
    "bolge": [
     "Hangisi en doğru yorumdur"
-   ],
-   "vurgu": [
-    "Hangisi",
-    "en doğru"
    ]
   },
   {
@@ -557,9 +567,13 @@
    "bolge": [
     "hangisi doğrudur"
    ],
+   "ikiz": "i3",
    "vurgu": [
-    "hangisi",
-    "doğrudur"
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "Grafiğe göre doğru olan yargıyı",
+    "Grafiğe göre yanlış olan yargıyı"
    ]
   },
   {
@@ -645,6 +659,87 @@
    ],
    "bolge": [
     "Oğuz ne yapmalı"
+   ]
+  },
+  {
+   "soru": "Bir araştırmacı Türkiye'deki öğrencilerin kitap okuma süresini araştırıyor ama yalnızca bir şehirdeki bir okula soruyor. Hangisi yanlıştır?",
+   "secenekler": [
+    "Örneklem Türkiye'yi temsil etmeyebilir; sonuç dikkatle genellenmelidir.",
+    "Sonuç bütün Türkiye için kesindir.",
+    "Evren Türkiye'deki bütün öğrencilerdir."
+   ],
+   "dogru": 1,
+   "ipucu": "Her şıkkı tek tek kontrol et. Bir okul bütün Türkiye'yi temsil eder mi?",
+   "aciklama": "Tek okul Türkiye'deki bütün öğrencileri temsil etmeyebilir; sonuç kesin değildir (s. 190).",
+   "kavram": "Örneklemden Genellemek",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi yanlıştır"
+   ],
+   "ne": [
+    "Yanlış olan yargıyı",
+    "Doğru olan yargıyı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi yanlıştır"
+   ]
+  },
+  {
+   "soru": "Ali'nin günlük adım sayısı 6 gün art arda azalıp 7. gün biraz artmış. Hangisi en doğru yorumdur?",
+   "secenekler": [
+    "Adım sayısı sürekli azalmıştır.",
+    "Adım sayısı azalma eğilimindedir.",
+    "Adım sayısı artma eğilimindedir."
+   ],
+   "dogru": 1,
+   "ipucu": "Arada bir artış varsa “sürekli” denir mi? Genel yön hangisi?",
+   "aciklama": "7. gün artış var; doğru yorum “azalma eğiliminde” (s. 191).",
+   "kavram": "Eğilimi Doğru Söylemek",
+   "ikiz": "i2",
+   "vurgu": [
+    "art arda azalıp",
+    "biraz artmış",
+    "Hangisi en doğru yorumdur"
+   ],
+   "ne": [
+    "Sonunda artan adım sayısının yorumunu",
+    "Sonunda düşen adım sayısının yorumunu"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi en doğru yorumdur"
+   ]
+  },
+  {
+   "soru": "Göl grafiğine göre hangisi yanlıştır?",
+   "secenekler": [
+    "Su seviyesi her yıl azalmıştır.",
+    "2016'dan 2024'e su seviyesi azalmıştır.",
+    "Su seviyesi azalma eğilimindedir ama bazı yıllar artmıştır."
+   ],
+   "dogru": 0,
+   "ipucu": "Her yıla tek tek bak: hiç artış var mı?",
+   "aciklama": "2018 ve 2021'de küçük artışlar var; “her yıl azalmıştır” demek yanlıştır (s. 191).",
+   "kavram": "Eğilimi Doğru Söylemek",
+   "svg": "<svg viewBox='0 0 330 176' xmlns='http://www.w3.org/2000/svg' role='img'><line x1='50' y1='150.0' x2='322' y2='150.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='154.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>9,0</text><line x1='50' y1='120.0' x2='322' y2='120.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='124.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>10,0</text><line x1='50' y1='90.0' x2='322' y2='90.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='94.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>11,0</text><line x1='50' y1='60.0' x2='322' y2='60.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='64.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>12,0</text><line x1='50' y1='30.0' x2='322' y2='30.0' stroke='#3a4570' stroke-width='1'/><text x='44' y='34.0' text-anchor='end' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='10' fill='#f5f6fa'>13,0</text><line x1='50' y1='150' x2='322' y2='150' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><line x1='50' y1='150' x2='50' y2='26' stroke='#f5f6fa' stroke-width='2.5' stroke-linecap='round'/><text x='68.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2016</text><text x='98.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2017</text><text x='129.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2018</text><text x='160.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2019</text><text x='191.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2020</text><text x='221.75' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2021</text><text x='252.5' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2022</text><text x='283.25' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2023</text><text x='314.0' y='166' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='600' font-size='9' fill='#f5f6fa'>2024</text><polyline points='68.0,60.0 98.8,72.0 129.5,66.0 160.2,87.0 191.0,93.0 221.8,84.0 252.5,108.0 283.2,117.0 314.0,126.0' fill='none' stroke='#6fb3ff' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/><circle cx='68.0' cy='60.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='68.0' y='51.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>12,0</text><circle cx='98.8' cy='72.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='98.75' y='63.000000000000014' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,6</text><circle cx='129.5' cy='66.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='129.5' y='56.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,8</text><circle cx='160.2' cy='87.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='160.25' y='78.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,1</text><circle cx='191.0' cy='93.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='191.0' y='83.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,9</text><circle cx='221.8' cy='84.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='221.75' y='75.00000000000003' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>11,2</text><circle cx='252.5' cy='108.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='252.5' y='98.99999999999999' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,4</text><circle cx='283.2' cy='117.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='283.25' y='108.00000000000001' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>10,1</text><circle cx='314.0' cy='126.0' r='4.5' fill='#6fb3ff' stroke='#1b2340' stroke-width='1.5'/><text x='314.0' y='116.99999999999997' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='10' fill='#6fb3ff'>9,8</text><text x='165.0' y='15' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='800' font-size='12' fill='#f2c14e'>Bir gölün su seviyesi (m) · örnek</text></svg>",
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi yanlıştır"
+   ],
+   "ne": [
+    "Grafiğe göre yanlış olan yargıyı",
+    "Grafiğe göre doğru olan yargıyı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi yanlıştır"
    ]
   }
  ],
@@ -859,5 +954,6 @@
    "aciklama": "Eğirdir hakkında yorum için oradan da veri toplanmalı. Arada büyüme olması ise “sürekli” sözcüğünün hatasıdır, Eğirdir'le ilgili değil (s. 195).",
    "kavram": "Başka Yere Genelleme"
   }
- ]
+ ],
+ "testSoru": 10
 }

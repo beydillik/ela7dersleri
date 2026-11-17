@@ -556,9 +556,14 @@
    "bolge": [
     "en uygun birim hangisidir"
    ],
+   "ikiz": "i1",
    "vurgu": [
-    "hangisidir",
-    "en uygun"
+    "yüzme havuzundaki",
+    "hangisidir"
+   ],
+   "ne": [
+    "Havuzdaki su için uygun birimi",
+    "Silgi için uygun birimi"
    ]
   },
   {
@@ -635,8 +640,14 @@
    "bolge": [
     "cm³'ü m³'e çevirirken ne yaparız"
    ],
+   "ikiz": "i2",
    "vurgu": [
+    "cm³'ü m³'e",
     "ne yaparız"
+   ],
+   "ne": [
+    "cm³'ten m³'e çevirme yolunu",
+    "m³'ten cm³'e çevirme yolunu"
    ]
   },
   {
@@ -729,17 +740,104 @@
    "secenekler": [
     "1 m²",
     "1 m³",
-    "3 m"
+    "1 dm³"
    ],
    "dogru": 1,
    "ipucu": "Hacim küp birimle yazılır.",
    "aciklama": "1 · 1 · 1 = 1 m³. (s. 146)",
    "kavram": "Metreküp",
+   "ikiz": "i3",
+   "vurgu": [
+    "1 m olan",
+    "hangisidir"
+   ],
+   "ne": [
+    "Ayrıtı 1 m olan küpün hacmini",
+    "Ayrıtı 1 dm olan küpün hacmini"
+   ],
    "tetik": [
     "hangisidir"
    ],
    "bolge": [
     "hacmi hangisidir"
+   ]
+  },
+  {
+   "soru": "Bir silginin hacmi için en uygun birim hangisidir?",
+   "secenekler": [
+    "m³",
+    "cm³",
+    "dm³"
+   ],
+   "dogru": 1,
+   "ipucu": "Silgi küçük mü, büyük mü? Küçük cisme küçük birim.",
+   "aciklama": "Silgi küçük bir cisimdir; küçük birim cm³ uygundur (s. 144).",
+   "kavram": "Hangi Birim Uygun?",
+   "ikiz": "i1",
+   "vurgu": [
+    "silginin",
+    "hangisidir"
+   ],
+   "ne": [
+    "Silgi için uygun birimi",
+    "Havuzdaki su için uygun birimi"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en uygun birim hangisidir"
+   ]
+  },
+  {
+   "soru": "m³'ü cm³'e çevirirken ne yaparız?",
+   "secenekler": [
+    "Her basamakta 1000 ile çarparız.",
+    "Her basamakta 1000'e böleriz.",
+    "Her basamakta 10'a böleriz."
+   ],
+   "dogru": 0,
+   "ipucu": "m³ büyük, cm³ küçük birim. Merdivende aşağı mı iniyoruz, yukarı mı çıkıyoruz?",
+   "aciklama": "Aşağı iniyoruz: her basamakta 1000 ile çarparız (s. 146).",
+   "kavram": "Hacim Basamakları",
+   "ikiz": "i2",
+   "vurgu": [
+    "m³'ü cm³'e",
+    "ne yaparız"
+   ],
+   "ne": [
+    "m³'ten cm³'e çevirme yolunu",
+    "cm³'ten m³'e çevirme yolunu"
+   ],
+   "bolge": [
+    "m³'ü cm³'e çevirirken ne yaparız"
+   ]
+  },
+  {
+   "soru": "Her ayrıtı 1 dm olan küpün hacmi hangisidir?",
+   "secenekler": [
+    "1 dm³",
+    "1 m³",
+    "1 dm²"
+   ],
+   "dogru": 0,
+   "ipucu": "Ayrıtın birimine bak. Hacim küp birimle yazılır.",
+   "aciklama": "1 dm · 1 dm · 1 dm = 1 dm³ (s. 146).",
+   "kavram": "Metreküp",
+   "ikiz": "i3",
+   "vurgu": [
+    "1 dm olan",
+    "hangisidir"
+   ],
+   "ne": [
+    "Ayrıtı 1 dm olan küpün hacmini",
+    "Ayrıtı 1 m olan küpün hacmini"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "küpün hacmi hangisidir"
    ]
   }
  ],
@@ -949,5 +1047,6 @@
    "aciklama": "20 · 10 · 4 = 800 dm³. 80, 40 cm'yi çevirmeden çarpınca (2 · 1 · 40); 34 ayrıtları toplayınca çıkar (s. 146). Ölçüler kitap dışı.",
    "kavram": "Önce Birimleri Eşitle"
   }
- ]
+ ],
+ "testSoru": 10
 }

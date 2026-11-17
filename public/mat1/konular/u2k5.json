@@ -536,6 +536,14 @@
    ],
    "bolge": [
     "hacmi kaç br³'tür"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "küpün hacmi kaç"
+   ],
+   "ne": [
+    "Küpün hacmini",
+    "Küpün bir yüzünün alanını"
    ]
   },
   {
@@ -594,6 +602,15 @@
    "bolge": [
     "Hangisi",
     "ayrıtları olamaz"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "olamaz"
+   ],
+   "ne": [
+    "18 küple yapılamayan prizmayı",
+    "18 küple yapılabilen prizmayı"
    ]
   },
   {
@@ -601,7 +618,7 @@
    "secenekler": [
     "120",
     "60",
-    "480"
+    "30"
    ],
    "dogru": 0,
    "ipucu": "Önce eski hacmi bul. Yükseklik 2 katı olunca hacim ne olur?",
@@ -614,6 +631,15 @@
      "Eski hacmi 2 ile çarp."
     ]
    },
+   "ikiz": "i3",
+   "vurgu": [
+    "2 katına çıkarıldı",
+    "kaç br³"
+   ],
+   "ne": [
+    "Yükseklik 2 katı olunca yeni hacmi",
+    "Yükseklik yarıya inince yeni hacmi"
+   ],
    "tetik": [
     "kaç"
    ],
@@ -680,6 +706,86 @@
    ],
    "bolge": [
     "Kaç birim küp gerekir"
+   ]
+  },
+  {
+   "soru": "Bir ayrıtı 5 br olan küpün bir yüzünün alanı kaç br²'dir?",
+   "secenekler": [
+    "25",
+    "125",
+    "15"
+   ],
+   "dogru": 0,
+   "ipucu": "Küpün bir yüzü karedir. Karenin alanı: kenar × kenar.",
+   "aciklama": "Bir yüz 5 br × 5 br'lik karedir: 5 · 5 = 25 br² (s. 142).",
+   "kavram": "Kare Prizma ve Küp",
+   "ikiz": "i1",
+   "vurgu": [
+    "bir yüzünün alanı kaç"
+   ],
+   "ne": [
+    "Küpün bir yüzünün alanını",
+    "Küpün hacmini"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "bir yüzünün alanı kaç br²'dir"
+   ]
+  },
+  {
+   "soru": "Hangisi 18 eş birim küpten yapılabilen bir prizmanın ayrıtlarıdır?",
+   "secenekler": [
+    "2 br, 2 br, 4 br",
+    "1 br, 1 br, 9 br",
+    "1 br, 2 br, 9 br"
+   ],
+   "dogru": 2,
+   "ipucu": "Her birinde üç sayıyı çarp. Hangisi 18 ediyor?",
+   "aciklama": "1 · 2 · 9 = 18. Öbürleri 2 · 2 · 4 = 16 ve 1 · 1 · 9 = 9 (s. 141).",
+   "kavram": "Aynı Hacim, Farklı Prizma",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "yapılabilen"
+   ],
+   "ne": [
+    "18 küple yapılabilen prizmayı",
+    "18 küple yapılamayan prizmayı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "yapılabilen bir prizmanın ayrıtlarıdır"
+   ]
+  },
+  {
+   "soru": "Ayrıtları 3 br, 4 br ve 5 br olan bir prizmanın yalnızca yüksekliği yarıya indirildi. Yeni hacim kaç br³?",
+   "secenekler": [
+    "30",
+    "120",
+    "60"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce eski hacmi bul. Yükseklik yarıya inince hacim ne olur?",
+   "aciklama": "Eski hacim 3 · 4 · 5 = 60 br³. Yükseklik yarıya inince hacim de yarıya iner: 60 ÷ 2 = 30 br³ (s. 143).",
+   "kavram": "Ayrıt Değişince Hacim",
+   "ikiz": "i3",
+   "vurgu": [
+    "yarıya indirildi",
+    "kaç br³"
+   ],
+   "ne": [
+    "Yükseklik yarıya inince yeni hacmi",
+    "Yükseklik 2 katı olunca yeni hacmi"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Yeni hacim kaç br³"
    ]
   }
  ],
@@ -897,5 +1003,6 @@
    "aciklama": "Bir ayrıt 2 katına çıkınca hacim 2 katına çıkar: 24 · 2 = 48 dm³. 192, üç ayrıt birden 2 katına çıksaydı olurdu (s. 143).",
    "kavram": "Ayrıt Değişince Hacim"
   }
- ]
+ ],
+ "testSoru": 10
 }

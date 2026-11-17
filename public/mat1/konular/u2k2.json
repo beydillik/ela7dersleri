@@ -370,6 +370,14 @@
    ],
    "bolge": [
     "kaç yüzü vardır"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "kaç yüzü"
+   ],
+   "ne": [
+    "Prizmanın yüz sayısını",
+    "Bir yüzün köşe sayısını"
    ]
   },
   {
@@ -434,13 +442,22 @@
    "soru": "Açınımda aynı renkle boyanan iki yüz, kutu kapanınca nasıl durur?",
    "secenekler": [
     "Karşılıklı",
-    "Yan yana",
+    "Komşu",
     "Üst üste"
    ],
    "dogru": 0,
    "ipucu": "Aynı renk = eş yüz. Eş yüzler kutunun neresinde?",
    "aciklama": "Aynı renkli yüzler eştir ve kutu kapanınca karşılıklı durur. (s. 128)",
    "kavram": "Karşılıklı Yüzler Eştir",
+   "ikiz": "i2",
+   "vurgu": [
+    "aynı renkle boyanan",
+    "nasıl durur"
+   ],
+   "ne": [
+    "Aynı renkli iki yüzün kutudaki yerini",
+    "Yan yana duran iki yüzün kutudaki yerini"
+   ],
    "tetik": [
     "nasıl"
    ],
@@ -539,9 +556,14 @@
    "bolge": [
     "biçiminde değildir"
    ],
+   "ikiz": "i3",
    "vurgu": [
     "Hangisi",
     "değildir"
+   ],
+   "ne": [
+    "Dikdörtgenler prizması olmayanı",
+    "Dikdörtgenler prizması olanı"
    ]
   },
   {
@@ -560,6 +582,86 @@
    ],
    "bolge": [
     "hangisi aynı kalır"
+   ]
+  },
+  {
+   "soru": "Dikdörtgenler prizmasının bir yüzünün kaç köşesi vardır?",
+   "secenekler": [
+    "4",
+    "6",
+    "8"
+   ],
+   "dogru": 0,
+   "ipucu": "Prizmanın her yüzü hangi şekil? O şeklin köşelerini say.",
+   "aciklama": "Her yüz bir dikdörtgendir; dikdörtgenin 4 köşesi vardır (s. 128).",
+   "kavram": "Yüz, Ayrıt, Köşe",
+   "ikiz": "i1",
+   "vurgu": [
+    "bir yüzünün kaç köşesi"
+   ],
+   "ne": [
+    "Bir yüzün köşe sayısını",
+    "Prizmanın yüz sayısını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "bir yüzünün kaç köşesi vardır"
+   ]
+  },
+  {
+   "soru": "Açınımda yan yana duran iki yüz, kutu kapanınca nasıl durur?",
+   "secenekler": [
+    "Komşu",
+    "Karşılıklı",
+    "Üst üste"
+   ],
+   "dogru": 0,
+   "ipucu": "Açınımda bir kenarı ortak olan iki yüz, kutuda da o kenarda birleşir.",
+   "aciklama": "Açınımda yan yana duran iki yüz, kutu kapanınca komşu olur (s. 127).",
+   "kavram": "Açınım Kapanır mı?",
+   "ikiz": "i2",
+   "vurgu": [
+    "yan yana duran",
+    "nasıl durur"
+   ],
+   "ne": [
+    "Yan yana duran iki yüzün kutudaki yerini",
+    "Aynı renkli iki yüzün kutudaki yerini"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "kutu kapanınca nasıl durur"
+   ]
+  },
+  {
+   "soru": "Hangisi dikdörtgenler prizması biçimindedir?",
+   "secenekler": [
+    "Ayakkabı kutusu",
+    "Konserve kutusu",
+    "Top"
+   ],
+   "dogru": 0,
+   "ipucu": "Hangisinin 6 yüzünün hepsi dikdörtgen?",
+   "aciklama": "Ayakkabı kutusunun 6 yüzü de dikdörtgendir; dikdörtgenler prizmasıdır (s. 128).",
+   "kavram": "Dikdörtgenler Prizması",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi",
+    "biçimindedir"
+   ],
+   "ne": [
+    "Dikdörtgenler prizması olanı",
+    "Dikdörtgenler prizması olmayanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "dikdörtgenler prizması biçimindedir"
    ]
   }
  ],
@@ -775,5 +877,6 @@
    "aciklama": "Açınımın kapanması için eş yüzler karşılıklı gelmeli, hiçbir yüz başka bir yüzün üstüne binmemeli. 6 yüz olması tek başına yetmez (s. 128). Hikâye kitap dışı.",
    "kavram": "Açınım Kapanır mı?"
   }
- ]
+ ],
+ "testSoru": 11
 }

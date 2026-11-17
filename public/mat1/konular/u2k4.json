@@ -521,6 +521,15 @@
    ],
    "bolge": [
     "Hangisinde hacmi bulmamız gerekir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisinde",
+    "hacmi"
+   ],
+   "ne": [
+    "Hacim gereken durumu",
+    "Yüzey alanı gereken durumu"
    ]
   },
   {
@@ -589,6 +598,15 @@
    ],
    "bolge": [
     "Hangi kutunun hacmi daha büyük"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangi kutunun",
+    "daha büyük"
+   ],
+   "ne": [
+    "Hacmi daha büyük olan kutuyu",
+    "Hacmi daha küçük olan kutuyu"
    ]
   },
   {
@@ -646,6 +664,14 @@
    ],
    "bolge": [
     "Hacmi ölçmek için hangisi daha uygun"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi daha uygun"
+   ],
+   "ne": [
+    "Hacmi ölçmeye daha uygun olanı",
+    "Hacmi ölçmeye daha az uygun olanı"
    ]
   },
   {
@@ -676,6 +702,86 @@
    "vurgu": [
     "Hangisi",
     "doğrudur"
+   ]
+  },
+  {
+   "soru": "Hangisinde yüzey alanını bulmamız gerekir?",
+   "secenekler": [
+    "Kutuyu paket kâğıdıyla kaplamak",
+    "Kutuya kaç oyuncak sığacağını bulmak",
+    "Kutunun bir kenarını ölçmek"
+   ],
+   "dogru": 0,
+   "ipucu": "Kaplamak mı, doldurmak mı? Yüzey alanı kutunun dışıyla ilgilidir.",
+   "aciklama": "Paket kâğıdı kutunun dışını kaplar; bunun için yüzey alanı gerekir. Hacim ise kutunun içine ne kadar şey sığacağını anlatır (s. 136).",
+   "kavram": "Kaplamak mı, Doldurmak mı?",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisinde",
+    "yüzey alanını"
+   ],
+   "ne": [
+    "Yüzey alanı gereken durumu",
+    "Hacim gereken durumu"
+   ],
+   "tetik": [
+    "Hangisinde"
+   ],
+   "bolge": [
+    "yüzey alanını bulmamız gerekir"
+   ]
+  },
+  {
+   "soru": "Mert kutusuna her katta 6 tahta olacak biçimde 5 kat, Elif aynı tahtalardan her katta 4 tane olacak biçimde 8 kat yerleştirdi. Kutular tam doldu. Hangi kutunun hacmi daha küçük?",
+   "secenekler": [
+    "Mert'in",
+    "Elif'in",
+    "İkisi eşit"
+   ],
+   "dogru": 0,
+   "ipucu": "Tahtalar aynı. Her kutuya kaç tahta sığdığını bul ve karşılaştır.",
+   "aciklama": "Mert 6 · 5 = 30, Elif 4 · 8 = 32 tahta. 30 < 32: Mert'in kutusu daha küçük (s. 136).",
+   "kavram": "Eş Nesnelerle Ölçme",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangi kutunun",
+    "daha küçük"
+   ],
+   "ne": [
+    "Hacmi daha küçük olan kutuyu",
+    "Hacmi daha büyük olan kutuyu"
+   ],
+   "tetik": [
+    "Hangi kutunun"
+   ],
+   "bolge": [
+    "Hangi kutunun hacmi daha küçük"
+   ]
+  },
+  {
+   "soru": "Cam bir kap bir kez kibrit kutularıyla, bir kez eş küplerle dolduruldu. Kutularla doldurunca arada boşluk kaldı. Hacmi ölçmek için hangisi daha az uygun?",
+   "secenekler": [
+    "Eş küpler",
+    "Kibrit kutuları",
+    "İkisi de aynı sonucu verir"
+   ],
+   "dogru": 1,
+   "ipucu": "Hangisi kabı doldururken boşluk bıraktı?",
+   "aciklama": "Kibrit kutuları arada boşluk bıraktı; boşluk kalınca hacim yanlış ölçülür (s. 138).",
+   "kavram": "Daha Uygun Birim",
+   "ikiz": "i3",
+   "vurgu": [
+    "hangisi daha az uygun"
+   ],
+   "ne": [
+    "Hacmi ölçmeye daha az uygun olanı",
+    "Hacmi ölçmeye daha uygun olanı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi daha az uygun"
    ]
   }
  ],
@@ -891,5 +997,6 @@
    "aciklama": "Hacmi ölçerken arada boşluk bırakmayan nesne daha uygundur; eş küpler kabı boşluksuz doldurdu (s. 138). Hikâye kitaptaki cam kap etkinliğinden uyarlandı.",
    "kavram": "Daha Uygun Birim"
   }
- ]
+ ],
+ "testSoru": 10
 }

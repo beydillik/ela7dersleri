@@ -404,6 +404,15 @@
    ],
    "bolge": [
     "Hangisi anket sorusudur"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "anket sorusudur"
+   ],
+   "ne": [
+    "Anket sorusu olanı",
+    "Araştırma sorusu olanı"
    ]
   },
   {
@@ -422,6 +431,15 @@
    ],
    "bolge": [
     "“Ne zaman?” sorusunun cevabı hangisi olabilir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "“Ne zaman?”",
+    "hangisi olabilir"
+   ],
+   "ne": [
+    "“Ne zaman?” sorusunun cevabını",
+    "“Nerede?” sorusunun cevabını"
    ]
   },
   {
@@ -458,6 +476,15 @@
    ],
    "bolge": [
     "Hangisinin cevabı kişisel veri içerir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisinin",
+    "içerir"
+   ],
+   "ne": [
+    "Kişisel veri isteyen soruyu",
+    "Kişisel veri istemeyen soruyu"
    ]
   },
   {
@@ -571,6 +598,87 @@
    ],
    "bolge": [
     "Hangisi uygun bir anket sorusudur"
+   ]
+  },
+  {
+   "soru": "Hangisi araştırma sorusudur?",
+   "secenekler": [
+    "Okulumuzdaki öğrencilerin uyku sürelerinin eğilimi nasıldır?",
+    "Dün gece kaç saat uyudun?",
+    "Uyku neden önemlidir?"
+   ],
+   "dogru": 0,
+   "ipucu": "Bir grubun verileriyle cevaplanan soruyu bul.",
+   "aciklama": "Araştırma sorusu bütün grubun verisiyle cevaplanır; çoğu zaman “… eğilimi nasıldır?” diye yazılır (s. 169).",
+   "kavram": "Anket Sorusu",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "araştırma sorusudur"
+   ],
+   "ne": [
+    "Araştırma sorusu olanı",
+    "Anket sorusu olanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi araştırma sorusudur"
+   ]
+  },
+  {
+   "soru": "Veri toplama planında “Nerede?” sorusunun cevabı hangisi olabilir?",
+   "secenekler": [
+    "Mezurayla",
+    "Salı günü ilk derste",
+    "Okul bahçesinde"
+   ],
+   "dogru": 2,
+   "ipucu": "Yer bildiren cevabı bul.",
+   "aciklama": "“Okul bahçesinde” yeri söyler (s. 169).",
+   "kavram": "Veri Toplama Planı",
+   "ikiz": "i2",
+   "vurgu": [
+    "“Nerede?”",
+    "hangisi olabilir"
+   ],
+   "ne": [
+    "“Nerede?” sorusunun cevabını",
+    "“Ne zaman?” sorusunun cevabını"
+   ],
+   "tetik": [
+    "Nerede"
+   ],
+   "bolge": [
+    "sorusunun cevabı hangisi olabilir"
+   ]
+  },
+  {
+   "soru": "Hangisinin cevabı kişisel veri içermez?",
+   "secenekler": [
+    "Ailenizin gelir düzeyi nasıldır?",
+    "Ev adresiniz nedir?",
+    "Bir yılda kaç ay vardır?"
+   ],
+   "dogru": 2,
+   "ipucu": "Herkes için aynı olan, kişiye ait olmayan bilgiyi soran soruyu bul.",
+   "aciklama": "Bir yıldaki ay sayısı herkes için aynıdır; kişiye ait bilgi değildir (s. 170).",
+   "kavram": "Kişisel Veri",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisinin",
+    "içermez"
+   ],
+   "ne": [
+    "Kişisel veri istemeyen soruyu",
+    "Kişisel veri isteyen soruyu"
+   ],
+   "tetik": [
+    "Hangisinin"
+   ],
+   "bolge": [
+    "cevabı kişisel veri içermez"
    ]
   }
  ],
@@ -788,5 +896,6 @@
    "aciklama": "gov.tr, edu.tr, org.tr gibi resmî adresler güvenilirdir; kaynağı belli olmayan paylaşım güvenilir değildir (s. 169).",
    "kavram": "Güvenilir Kaynak"
   }
- ]
+ ],
+ "testSoru": 10
 }

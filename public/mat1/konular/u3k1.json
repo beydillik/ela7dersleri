@@ -464,6 +464,15 @@
    ],
    "bolge": [
     "hangi veri türüdür"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "kardeş sayıları",
+    "hangi veri türüdür"
+   ],
+   "ne": [
+    "Kardeş sayısının veri türünü",
+    "Boy uzunluğunun veri türünü"
    ]
   },
   {
@@ -560,6 +569,15 @@
    ],
    "bolge": [
     "hangi adımdadır"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "grafikle gösterdi",
+    "hangi adımdadır"
+   ],
+   "ne": [
+    "Grafik çizip temsil değeri bulmanın adımını",
+    "Anket sorup cevapları yazmanın adımını"
    ]
   },
   {
@@ -613,6 +631,96 @@
    ],
    "bolge": [
     "Hangisinin cevabı kategorik veri olur"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisinin",
+    "kategorik"
+   ],
+   "ne": [
+    "Cevabı kategorik veri olan soruyu",
+    "Cevabı nicel veri olan soruyu"
+   ]
+  },
+  {
+   "soru": "Bir sınıftaki öğrencilerin boy uzunlukları hangi veri türüdür?",
+   "secenekler": [
+    "Sürekli veri",
+    "Kategorik veri",
+    "Kesikli veri"
+   ],
+   "dogru": 0,
+   "ipucu": "Boyu sayar mıyız, ölçer miyiz?",
+   "aciklama": "Boy ölçülür; iki ölçüm arasında sınırsız değer olabilir: sürekli veri (s. 163).",
+   "kavram": "Sürekli Veri",
+   "ikiz": "i1",
+   "vurgu": [
+    "boy uzunlukları",
+    "hangi veri türüdür"
+   ],
+   "ne": [
+    "Boy uzunluğunun veri türünü",
+    "Kardeş sayısının veri türünü"
+   ],
+   "tetik": [
+    "hangi veri"
+   ],
+   "bolge": [
+    "hangi veri türüdür"
+   ]
+  },
+  {
+   "soru": "Hangisinin cevabı nicel veri olur?",
+   "secenekler": [
+    "Hangi sporu seversin?",
+    "Göz rengin ne?",
+    "Boyun kaç cm?"
+   ],
+   "dogru": 2,
+   "ipucu": "Cevabı sayı olan soruyu bul.",
+   "aciklama": "Boy sayıyla söylenir (148 cm gibi): nicel veri (s. 163).",
+   "kavram": "Nicel Veri",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisinin",
+    "nicel"
+   ],
+   "ne": [
+    "Cevabı nicel veri olan soruyu",
+    "Cevabı kategorik veri olan soruyu"
+   ],
+   "tetik": [
+    "Hangisinin"
+   ],
+   "bolge": [
+    "cevabı nicel veri olur"
+   ]
+  },
+  {
+   "soru": "Melis anket sorusunu hazırlayıp sınıftaki arkadaşlarına sordu ve cevapları tabloya yazdı. Melis hangi adımdadır?",
+   "secenekler": [
+    "Veri analizi",
+    "Veri toplama",
+    "Yorumlama ve karar verme"
+   ],
+   "dogru": 1,
+   "ipucu": "Anket sorup cevapları kaydetmek hangi adımda yapılır?",
+   "aciklama": "Anket sorup cevapları tabloya yazmak 2. adım olan veri toplamadır (s. 164).",
+   "kavram": "Araştırmanın 4 Adımı",
+   "ikiz": "i3",
+   "vurgu": [
+    "arkadaşlarına sordu",
+    "hangi adımdadır"
+   ],
+   "ne": [
+    "Anket sorup cevapları yazmanın adımını",
+    "Grafik çizip temsil değeri bulmanın adımını"
+   ],
+   "tetik": [
+    "hangi adımdadır"
+   ],
+   "bolge": [
+    "Melis hangi adımdadır"
    ]
   }
  ],
@@ -834,5 +942,6 @@
    "aciklama": "Kitap sayısı sayarak bulunur, kesiklidir. Boy uzunluğu ve yağmur miktarı ölçülür, süreklidir (s. 163). Hikâye kitap dışı.",
    "kavram": "Kesikli Veri"
   }
- ]
+ ],
+ "testSoru": 10
 }

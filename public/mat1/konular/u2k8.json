@@ -554,18 +554,23 @@
    "secenekler": [
     "Hemen sayıları çarparız.",
     "Ne verildiğini ve ne istendiğini buluruz.",
-    "Bütün sayıları toplarız."
+    "Hesaplayıp birimi yazarız."
    ],
    "dogru": 1,
    "ipucu": "Dört sorunun ilki.",
-   "aciklama": "Önce ne verildiğini ve ne istendiğini buluruz; sonra kaplamak mı doldurmak mı diye sorarız.",
+   "aciklama": "Önce ne verildiğini ve ne istendiğini buluruz; sonra kaplamak mı doldurmak mı diye sorarız. (s. 152–155)",
    "kavram": "Problem İskeleti",
+   "ikiz": "i1",
+   "vurgu": [
+    "başlarken ilk",
+    "ne yaparız"
+   ],
+   "ne": [
+    "Problemde ilk yapılacak işi",
+    "Problemde en son yapılacak işi"
+   ],
    "bolge": [
     "ilk ne yaparız"
-   ],
-   "vurgu": [
-    "ne yaparız",
-    "ilk"
    ]
   },
   {
@@ -679,7 +684,7 @@
    "secenekler": [
     "4",
     "8",
-    "16"
+    "32"
    ],
    "dogru": 0,
    "ipucu": "İki hacmi bul, büyüğü küçüğe böl.",
@@ -692,6 +697,14 @@
      "Büyük hacmi küçük hacme böl."
     ]
    },
+   "ikiz": "i2",
+   "vurgu": [
+    "Kaç kutu sığar"
+   ],
+   "ne": [
+    "Koliye sığan kutu sayısını",
+    "Kolinin hacmini"
+   ],
    "tetik": [
     "Kaç"
    ],
@@ -713,8 +726,14 @@
    "bolge": [
     "suyun yüksekliği için ne söylenebilir"
    ],
+   "ikiz": "i3",
    "vurgu": [
+    "2 katı su kondu",
     "ne söylenebilir"
+   ],
+   "ne": [
+    "Su 2 katı olunca suyun yüksekliğini",
+    "Taban 2 katı olunca suyun yüksekliğini"
    ]
   },
   {
@@ -755,6 +774,80 @@
    ],
    "bolge": [
     "Kumun hacmi kaç cm³'tür"
+   ]
+  },
+  {
+   "soru": "Bir problemi çözerken en son ne yaparız?",
+   "secenekler": [
+    "Hesaplayıp birimi yazarız.",
+    "Ne verildiğini ve ne istendiğini buluruz.",
+    "Bütün sayıları toplarız."
+   ],
+   "dogru": 0,
+   "ipucu": "Dört sorunun sonuncusu.",
+   "aciklama": "Problem iskeletinin son adımı: hesapla ve birimi yaz (s. 152–155).",
+   "kavram": "Problem İskeleti",
+   "ikiz": "i1",
+   "vurgu": [
+    "en son",
+    "ne yaparız"
+   ],
+   "ne": [
+    "Problemde en son yapılacak işi",
+    "Problemde ilk yapılacak işi"
+   ],
+   "bolge": [
+    "en son ne yaparız"
+   ]
+  },
+  {
+   "soru": "Bir kolinin ayrıtları 4 dm, 4 dm ve 2 dm. Ayrıtları 4 dm, 2 dm ve 1 dm olan kutular koliye boşluk kalmadan dizilecek. Kolinin hacmi kaç dm³?",
+   "secenekler": [
+    "32",
+    "4",
+    "8"
+   ],
+   "dogru": 0,
+   "ipucu": "Yalnız kolinin üç ayrıtını çarp.",
+   "aciklama": "Koli 4 · 4 · 2 = 32 dm³. (Kaç kutu sığacağı ayrı bir sorudur.) (s. 152)",
+   "kavram": "Kaç Kutu Sığar?",
+   "ikiz": "i2",
+   "vurgu": [
+    "Kolinin hacmi kaç"
+   ],
+   "ne": [
+    "Kolinin hacmini",
+    "Koliye sığan kutu sayısını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "Kolinin hacmi kaç dm³"
+   ]
+  },
+  {
+   "soru": "Su miktarları aynı olan iki akvaryumdan ikincisinin taban alanı birincinin taban alanının 2 katı. İkinci akvaryumdaki suyun yüksekliği için ne söylenebilir?",
+   "secenekler": [
+    "Aynı kalır.",
+    "Yarısı olur.",
+    "2 katı olur."
+   ],
+   "dogru": 1,
+   "ipucu": "Yükseklik = hacim ÷ taban alanı. Hangisi değişti: su mu, taban mı?",
+   "aciklama": "Su aynı, taban alanı 2 katı: suyun yüksekliği yarıya iner (s. 154).",
+   "kavram": "Suyun Yüksekliği",
+   "ikiz": "i3",
+   "vurgu": [
+    "taban alanı birincinin taban alanının 2 katı",
+    "ne söylenebilir"
+   ],
+   "ne": [
+    "Taban 2 katı olunca suyun yüksekliğini",
+    "Su 2 katı olunca suyun yüksekliğini"
+   ],
+   "bolge": [
+    "suyun yüksekliği için ne söylenebilir"
    ]
   }
  ],
@@ -962,5 +1055,6 @@
    "aciklama": "Taban alanı 50 · 30 = 1500 cm²; 1500 · 2 = 3000 cm³. 30 000 cm³ suyun hacmi (1500 · 20); soru kumu soruyor (s. 154). Ölçüler kitap dışı.",
    "kavram": "Eklenen Cismin Hacmi"
   }
- ]
+ ],
+ "testSoru": 10
 }

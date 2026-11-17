@@ -564,9 +564,14 @@
    "bolge": [
     "simetri doğrusu yoktur"
    ],
+   "ikiz": "i1",
    "vurgu": [
     "Hangisinin",
     "yoktur"
+   ],
+   "ne": [
+    "Simetri doğrusu olmayan şekli",
+    "Simetri doğrusu olan şekli"
    ]
   },
   {
@@ -628,12 +633,21 @@
    "secenekler": [
     "Çeşitkenar üçgen",
     "Kare",
-    "Eşkenar üçgen"
+    "İkizkenar üçgen"
    ],
    "dogru": 1,
    "ipucu": "Dört kenar eş, köşeler dik olur.",
    "aciklama": "Dört kenarın hepsi dik kenarlara eş olur ve dört açı da dik olur: kare. (s. 208)",
    "kavram": "Kenara Göre Yansıtma",
+   "ikiz": "i2",
+   "vurgu": [
+    "uzun kenarına",
+    "hangi şekil oluşur"
+   ],
+   "ne": [
+    "Uzun kenara göre yansıtınca oluşan şekli",
+    "Dik kenara göre yansıtınca oluşan şekli"
+   ],
    "tetik": [
     "hangi şekil"
    ],
@@ -694,6 +708,114 @@
    ],
    "bolge": [
     "simetri doğrusu hangisidir"
+   ]
+  },
+  {
+   "soru": "Hangisinin simetri doğrusu vardır?",
+   "secenekler": [
+    "Paralelkenar",
+    "Çeşitkenar üçgen",
+    "Dikdörtgen"
+   ],
+   "dogru": 2,
+   "ipucu": "Katlayınca iki yarısı üst üste gelen şekli bul.",
+   "aciklama": "Simetri doğrusu olan şekil katlanınca iki yarısı üst üste gelir (s. 205). Dikdörtgen, kenarlarının orta noktalarından katlanınca böyle olur.",
+   "kavram": "Birden Çok Simetri Doğrusu",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisinin",
+    "vardır"
+   ],
+   "ne": [
+    "Simetri doğrusu olan şekli",
+    "Simetri doğrusu olmayan şekli"
+   ],
+   "tetik": [
+    "Hangisinin"
+   ],
+   "bolge": [
+    "simetri doğrusu vardır"
+   ]
+  },
+  {
+   "soru": "Dik üçgeni dik kenarına göre yansıtırsak hangi şekil oluşur?",
+   "secenekler": [
+    "Kare",
+    "İkizkenar üçgen",
+    "Çeşitkenar üçgen"
+   ],
+   "dogru": 1,
+   "ipucu": "Üçgen ile görüntüsü dik kenarda birleşir. Yeni şeklin kaç kenarı olur, hangi kenarlar eş olur?",
+   "aciklama": "Dik üçgen dik kenarına göre yansıtılınca iki eş kenarlı bir üçgen oluşur: ikizkenar üçgen (s. 208).",
+   "kavram": "Kenara Göre Yansıtma",
+   "ikiz": "i2",
+   "vurgu": [
+    "dik kenarına",
+    "hangi şekil oluşur"
+   ],
+   "ne": [
+    "Dik kenara göre yansıtınca oluşan şekli",
+    "Uzun kenara göre yansıtınca oluşan şekli"
+   ],
+   "tetik": [
+    "hangi şekil"
+   ],
+   "bolge": [
+    "hangi şekil oluşur"
+   ]
+  },
+  {
+   "soru": "Yarım dairenin kaç simetri doğrusu vardır?",
+   "secenekler": [
+    "0",
+    "1",
+    "2"
+   ],
+   "dogru": 1,
+   "ipucu": "Yarım daireyi katlayarak iki yarısını üst üste getirebileceğin kaç yol var?",
+   "aciklama": "Yarım daire simetrik bir şekildir; tek simetri doğrusu düz kenarını dik ortalar (s. 205).",
+   "kavram": "Simetrik Şekil",
+   "ikiz": "i3",
+   "vurgu": [
+    "Yarım dairenin",
+    "kaç simetri doğrusu"
+   ],
+   "ne": [
+    "Yarım dairenin simetri doğrusu sayısını",
+    "Paralelkenarın simetri doğrusu sayısını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç simetri doğrusu vardır"
+   ]
+  },
+  {
+   "soru": "Paralelkenarın kaç simetri doğrusu vardır?",
+   "secenekler": [
+    "0",
+    "1",
+    "2"
+   ],
+   "dogru": 0,
+   "ipucu": "Bilgi kartındaki simetrik olmayan şekilleri hatırla.",
+   "aciklama": "Paralelkenar hiçbir doğrudan katlanınca üst üste gelmez: 0 simetri doğrusu (s. 205).",
+   "kavram": "Simetri Doğrusu Olmayan Şekiller",
+   "ikiz": "i3",
+   "vurgu": [
+    "Paralelkenarın",
+    "kaç simetri doğrusu"
+   ],
+   "ne": [
+    "Paralelkenarın simetri doğrusu sayısını",
+    "Yarım dairenin simetri doğrusu sayısını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç simetri doğrusu vardır"
    ]
   }
  ],
@@ -901,5 +1023,6 @@
    "aciklama": "Paralelkenarın parçaları eş olsa da katlayınca çakışmaz; simetri doğrusu yoktur (s. 205). Hikâye kitap dışı.",
    "kavram": "Simetri Doğrusu Olmayan Şekiller"
   }
- ]
+ ],
+ "testSoru": 10
 }

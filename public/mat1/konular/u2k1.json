@@ -582,19 +582,36 @@
    ],
    "bolge": [
     "hangi görünüm değişmez"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "hangi görünüm değişmez"
+   ],
+   "ne": [
+    "Değişmeyen görünümü",
+    "Değişen görünümü"
    ]
   },
   {
    "soru": "Bir yapının ön tarafının tam karşısında hangi taraf vardır?",
    "secenekler": [
     "Arka",
-    "Sağ",
+    "Sol",
     "Üst"
    ],
    "dogru": 0,
    "ipucu": "Altı yönü çiftler hâlinde düşün: ön-…, sağ-…, üst-…",
-   "aciklama": "Yönler çiftler hâlindedir: ön-arka, sağ-sol, üst-alt. (s. 121–122)",
+   "aciklama": "Ön ile arka karşılıklıdır; ön tarafın tam karşısında arka taraf vardır (s. 121–122).",
    "kavram": "Altı Yön",
+   "ikiz": "i1",
+   "vurgu": [
+    "ön tarafının",
+    "hangi taraf"
+   ],
+   "ne": [
+    "Ön tarafın karşısındaki tarafı",
+    "Sağ tarafın karşısındaki tarafı"
+   ],
    "tetik": [
     "hangi taraf"
    ],
@@ -619,6 +636,114 @@
    ],
    "bolge": [
     "hangi yapıya aittir"
+   ]
+  },
+  {
+   "soru": "Bir yapının sağ tarafının tam karşısında hangi taraf vardır?",
+   "secenekler": [
+    "Sol",
+    "Arka",
+    "Alt"
+   ],
+   "dogru": 0,
+   "ipucu": "Yönler çiftler hâlindedir. Sağın eşini düşün.",
+   "aciklama": "Sağ ile sol karşılıklıdır; sağ tarafın tam karşısında sol taraf vardır (s. 121–122).",
+   "kavram": "Altı Yön",
+   "ikiz": "i1",
+   "vurgu": [
+    "sağ tarafının",
+    "hangi taraf"
+   ],
+   "ne": [
+    "Sağ tarafın karşısındaki tarafı",
+    "Ön tarafın karşısındaki tarafı"
+   ],
+   "tetik": [
+    "hangi taraf"
+   ],
+   "bolge": [
+    "tam karşısında hangi taraf vardır"
+   ]
+  },
+  {
+   "soru": "Görseldeki yapıdan en üstteki küp çıkarılırsa hangi görünüm değişir?",
+   "secenekler": [
+    "Üstten görünüm",
+    "Önden görünüm",
+    "Alttan görünüm"
+   ],
+   "dogru": 1,
+   "ipucu": "Üstteki küp kalkınca hangi yönden bakan biri bir karenin kaybolduğunu görür?",
+   "aciklama": "Üstteki küp kalkınca önden bakınca o kare kaybolur. Altında küp olduğu için üstten ve alttan yine aynı kareler görünür (s. 124).",
+   "kavram": "Görünüm Kare Gösterir",
+   "svg": "<svg viewBox='0 0 330 160' xmlns='http://www.w3.org/2000/svg' role='img'><polygon points='112.5,138.0 142.5,138.0 142.5,108.0 112.5,108.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='112.5,108.0 142.5,108.0 157.5,93.0 127.5,93.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,138.0 157.5,123.0 157.5,93.0 142.5,108.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,138.0 172.5,138.0 172.5,108.0 142.5,108.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,108.0 172.5,108.0 187.5,93.0 157.5,93.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.5,138.0 187.5,123.0 187.5,93.0 172.5,108.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.5,138.0 202.5,138.0 202.5,108.0 172.5,108.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='172.5,108.0 202.5,108.0 217.5,93.0 187.5,93.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='202.5,138.0 217.5,123.0 217.5,93.0 202.5,108.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='112.5,108.0 142.5,108.0 142.5,78.0 112.5,78.0' fill='#4fc3a1' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='112.5,78.0 142.5,78.0 157.5,63.0 127.5,63.0' fill='#9fe6cf' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><polygon points='142.5,108.0 157.5,93.0 157.5,63.0 142.5,78.0' fill='#2f8f73' stroke='#1b2340' stroke-width='1.6' stroke-linejoin='round'/><text x='157.5' y='152.0' text-anchor='middle' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Ön</text><text x='221.5' y='134.0' text-anchor='start' font-family='Lexend, Baloo 2, sans-serif' font-weight='700' font-size='11' fill='#9aa3bf'>Sağ</text></svg>",
+   "ikiz": "i2",
+   "vurgu": [
+    "hangi görünüm değişir"
+   ],
+   "ne": [
+    "Değişen görünümü",
+    "Değişmeyen görünümü"
+   ],
+   "tetik": [
+    "hangi görünüm"
+   ],
+   "bolge": [
+    "hangi görünüm değişir"
+   ]
+  },
+  {
+   "soru": "Üst üste duran 2 küpe üstten bakınca kaç kare görürsün?",
+   "secenekler": [
+    "1",
+    "2",
+    "3"
+   ],
+   "dogru": 0,
+   "ipucu": "Yukarıdan bakınca üstteki küp alttakini görmeni engeller mi?",
+   "aciklama": "Üstteki küp alttakini örter; yukarıdan yalnız 1 kare görünür (s. 120–121).",
+   "kavram": "Görünüm Kare Gösterir",
+   "ikiz": "i3",
+   "vurgu": [
+    "Üst üste",
+    "kaç kare"
+   ],
+   "ne": [
+    "Üst üste duran küplerin üstten görünümünü",
+    "Yan yana duran küplerin üstten görünümünü"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "üstten bakınca kaç kare görürsün"
+   ]
+  },
+  {
+   "soru": "Yan yana duran 2 küpe üstten bakınca kaç kare görürsün?",
+   "secenekler": [
+    "1",
+    "2",
+    "3"
+   ],
+   "dogru": 1,
+   "ipucu": "İki küp de yerde mi? Yukarıdan bakınca her küpün üst yüzü görünür mü?",
+   "aciklama": "İki küp de yerde; yukarıdan iki kare yan yana görünür (s. 120–121).",
+   "kavram": "Görünüm Kare Gösterir",
+   "ikiz": "i3",
+   "vurgu": [
+    "Yan yana",
+    "kaç kare"
+   ],
+   "ne": [
+    "Yan yana duran küplerin üstten görünümünü",
+    "Üst üste duran küplerin üstten görünümünü"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "üstten bakınca kaç kare görürsün"
    ]
   }
  ],
@@ -833,5 +958,6 @@
    "aciklama": "Önden 2 + 1 = 3 kare görünüyor ama bir küp saklı: 3 + 1 = 4 küp. Öndeki küp arkasındaki küpü saklar (s. 119). Hikâye kitap dışı.",
    "kavram": "Saklanan Küpler"
   }
- ]
+ ],
+ "testSoru": 10
 }

@@ -577,6 +577,14 @@
    ],
    "bolge": [
     "1 L kaç cL'dir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "kaç cL'dir"
+   ],
+   "ne": [
+    "1 L'nin kaç cL olduğunu",
+    "1 L'nin kaç dL olduğunu"
    ]
   },
   {
@@ -584,12 +592,20 @@
    "secenekler": [
     "50",
     "500",
-    "5000"
+    "0,5"
    ],
    "dogru": 1,
    "ipucu": "1 mL = 1 cm³.",
    "aciklama": "500 cm³ = 500 mL. (s. 147–148)",
    "kavram": "1 mL = 1 cm³",
+   "ikiz": "i2",
+   "vurgu": [
+    "kaç mL"
+   ],
+   "ne": [
+    "Kabın aldığı suyu mL olarak",
+    "Kabın aldığı suyu L olarak"
+   ],
    "tetik": [
     "kaç"
    ],
@@ -620,6 +636,15 @@
    ],
    "bolge": [
     "en az su alan hangisidir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "en az su alan",
+    "hangisidir"
+   ],
+   "ne": [
+    "En az su alan şişeyi",
+    "En çok su alan şişeyi"
    ]
   },
   {
@@ -681,6 +706,85 @@
    ],
    "bolge": [
     "Taşın hacmi neye eşittir"
+   ]
+  },
+  {
+   "soru": "1 L kaç dL'dir?",
+   "secenekler": [
+    "10",
+    "100",
+    "1000"
+   ],
+   "dogru": 0,
+   "ipucu": "L → dL: bir basamak aşağı.",
+   "aciklama": "Sıvıda her basamak 10 katıdır: 1 L = 10 dL (s. 148).",
+   "kavram": "Sıvı Basamakları",
+   "ikiz": "i1",
+   "vurgu": [
+    "kaç dL'dir"
+   ],
+   "ne": [
+    "1 L'nin kaç dL olduğunu",
+    "1 L'nin kaç cL olduğunu"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "1 L kaç dL'dir"
+   ]
+  },
+  {
+   "soru": "Hacmi 500 cm³ olan bir kap kaç L su alır?",
+   "secenekler": [
+    "0,5",
+    "500",
+    "5"
+   ],
+   "dogru": 0,
+   "ipucu": "Önce cm³'ü mL'ye çevir. Sonra 1 L = 1000 mL'yi düşün.",
+   "aciklama": "500 cm³ = 500 mL. 500 ÷ 1000 = 0,5 L (s. 147–148).",
+   "kavram": "1 mL = 1 cm³",
+   "ikiz": "i2",
+   "vurgu": [
+    "kaç L"
+   ],
+   "ne": [
+    "Kabın aldığı suyu L olarak",
+    "Kabın aldığı suyu mL olarak"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç L su alır"
+   ]
+  },
+  {
+   "soru": "1,5 L, 1200 mL ve 140 cL'lik üç şişeden en çok su alan hangisidir?",
+   "secenekler": [
+    "140 cL",
+    "1,5 L",
+    "1200 mL"
+   ],
+   "dogru": 1,
+   "ipucu": "Hepsini mL'ye çevir, sonra karşılaştır.",
+   "aciklama": "1,5 L = 1500 mL, 140 cL = 1400 mL. En büyüğü 1500 mL, yani 1,5 L (s. 151).",
+   "kavram": "Aynı Birime Çevir, Sırala",
+   "ikiz": "i3",
+   "vurgu": [
+    "en çok su alan",
+    "hangisidir"
+   ],
+   "ne": [
+    "En çok su alan şişeyi",
+    "En az su alan şişeyi"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en çok su alan hangisidir"
    ]
   }
  ],
@@ -894,5 +998,6 @@
    "aciklama": "45 L = 45 000 mL; 4800 dL = 480 L = 480 000 mL; 52 000 mL. En büyük: ikinci araba. 52 000 sayısı büyük görünür ama birimi küçük (s. 151). Miktarlar kitap dışı.",
    "kavram": "Aynı Birime Çevir, Sırala"
   }
- ]
+ ],
+ "testSoru": 10
 }
