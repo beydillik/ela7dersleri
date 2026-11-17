@@ -308,7 +308,8 @@
    ],
    "bolge": [
     "Anadolu'da ne oldu"
-   ]
+   ],
+   "kavram": "Malazgirt ve Türk Beylikleri"
   },
   {
    "soru": "Osmanlı başkentlerinin doğru sırası hangisidir?",
@@ -326,6 +327,7 @@
    "bolge": [
     "doğru sırası hangisidir"
    ],
+   "kavram": "Orhan Bey ve I. Murad Dönemleri",
    "vurgu": [
     "hangisidir",
     "doğru"
@@ -346,18 +348,32 @@
    ],
    "bolge": [
     "hangi beyliğin katılmasıyla başladı"
-   ]
+   ],
+   "kavram": "Orhan Bey ve I. Murad Dönemleri"
   },
   {
    "soru": "Hangi padişah döneminde kutsal toprakların yönetimi Osmanlı'ya geçti?",
    "secenekler": [
-    "Osman Bey",
+    "Fatih Sultan Mehmed",
     "Orhan Bey",
     "Yavuz Sultan Selim"
    ],
    "dogru": 2,
    "ipucu": "Kutsal topraklar Mısır'ın fethiyle Osmanlı'ya geçti. Mısır'ı kim fethetti?",
    "aciklama": "Yavuz Sultan Selim Dönemi'nde Mısır'ın fethedilmesiyle kutsal toprakların yönetimi Osmanlı Devleti'ne geçti. (s. 89)",
+   "kavram": "Fatih, Yavuz ve Kanuni Dönemleri",
+   "yardim": {
+    "hatirla": "Mısır'ı fetheden padişah döneminde kutsal toprakların yönetimi Osmanlı'ya geçti."
+   },
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangi padişah",
+    "kutsal toprakların"
+   ],
+   "ne": [
+    "Kutsal toprakların geçtiği dönemi",
+    "İstanbul'un fethedildiği dönemi"
+   ],
    "tetik": [
     "Hangi padişah"
    ],
@@ -381,7 +397,8 @@
    ],
    "bolge": [
     "savaş dışında hangi yollarla kazanıldı"
-   ]
+   ],
+   "kavram": "Orhan Bey ve I. Murad Dönemleri"
   },
   {
    "soru": "Küçük bir beylik olan Osmanlı'nın kısa sürede büyümesinde hangileri etkili oldu?",
@@ -398,7 +415,8 @@
    ],
    "bolge": [
     "kısa sürede büyümesinde hangileri etkili oldu"
-   ]
+   ],
+   "kavram": "Osmanlı Beyliği'nin Kuruluşu"
   },
   {
    "soru": "\"Tarih, bir milletin ortak hafızasıdır.\" Tarihimizi bilmek bize ne sağlar?",
@@ -415,18 +433,29 @@
    ],
    "bolge": [
     "Tarihimizi bilmek bize ne sağlar"
-   ]
+   ],
+   "kavram": "Tarih Bilinci ve Millî Kimlik"
   },
   {
    "soru": "İslamiyet'ten önce Türk devletlerinin cihan hâkimiyeti anlayışında amaç neydi?",
    "secenekler": [
     "Dünyada adalet ve düzeni sağlamak",
-    "Yeni okyanuslar keşfetmek",
+    "İslam dinini yaymak",
     "Sadece ticaret yapmak"
    ],
    "dogru": 0,
    "ipucu": "Cihan Devleti kartının akılda kalsın kısmına bak.",
    "aciklama": "İslamiyet'ten önce Türk devletleri dünyada adalet ve düzeni sağlamayı amaçladı (Türk Cihan Hâkimiyeti Mefkûresi). (s. 93)",
+   "kavram": "Cihan Devleti",
+   "ikiz": "i1",
+   "vurgu": [
+    "İslamiyet'ten önce",
+    "amaç neydi"
+   ],
+   "ne": [
+    "İslamiyet'ten önceki amacı",
+    "Sonradan eklenen düşünceyi"
+   ],
    "tetik": [
     "neydi"
    ],
@@ -438,13 +467,23 @@
   {
    "soru": "İslamiyet'in kabulünden sonra cihan hâkimiyeti anlayışına hangi düşünce eklendi?",
    "secenekler": [
-    "Fabrika kurma düşüncesi",
+    "Dünyada adalet ve düzeni sağlama düşüncesi",
     "İslam dinini yayma düşüncesi",
     "Denizlerden uzak durma düşüncesi"
    ],
    "dogru": 1,
-   "ipucu": "Eklenen düşünce dinle ilgili.",
+   "ipucu": "Soru önceden var olan amacı değil, sonradan eklenen düşünceyi soruyor.",
    "aciklama": "İslamiyet'in kabulünden sonra bu amaca İslam dinini yayma düşüncesi de eklendi. (s. 93)",
+   "kavram": "Cihan Devleti",
+   "ikiz": "i1",
+   "vurgu": [
+    "kabulünden sonra",
+    "hangi düşünce eklendi"
+   ],
+   "ne": [
+    "Sonradan eklenen düşünceyi",
+    "İslamiyet'ten önceki amacı"
+   ],
    "tetik": [
     "hangi düşünce"
    ],
@@ -468,6 +507,97 @@
    ],
    "bolge": [
     "kimler uygulardı"
+   ],
+   "kavram": "Merkezî Otorite"
+  },
+  {
+   "soru": "Hangi padişah döneminde İstanbul fethedilip başkent oldu?",
+   "secenekler": [
+    "Osman Bey",
+    "Fatih Sultan Mehmed",
+    "Yavuz Sultan Selim"
+   ],
+   "dogru": 1,
+   "ipucu": "Fethi 1453'te gerçekleştiren padişahı düşün.",
+   "aciklama": "Fatih Sultan Mehmed 1453'te İstanbul'u fethetti ve şehir başkent oldu (s. 89).",
+   "kavram": "Fatih, Yavuz ve Kanuni Dönemleri",
+   "yardim": {
+    "hatirla": "İstanbul 1453'te fethedildi ve Osmanlı'nın başkenti oldu."
+   },
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangi padişah",
+    "İstanbul"
+   ],
+   "ne": [
+    "İstanbul'un fethedildiği dönemi",
+    "Kutsal toprakların geçtiği dönemi"
+   ],
+   "tetik": [
+    "Hangi padişah"
+   ],
+   "bolge": [
+    "Hangi padişah döneminde"
+   ]
+  },
+  {
+   "soru": "Orhan Bey Dönemi'nde hangi şehir fethedilip başkent oldu?",
+   "secenekler": [
+    "Bursa",
+    "Edirne",
+    "İstanbul"
+   ],
+   "dogru": 0,
+   "ipucu": "Orhan Bey, I. Murad'dan önce padişah oldu. Önce fethedilen başkenti düşün.",
+   "aciklama": "Orhan Bey Dönemi'nde Bursa fethedildi ve başkent oldu (s. 89).",
+   "kavram": "Orhan Bey ve I. Murad Dönemleri",
+   "yardim": {
+    "hatirla": "Orhan Bey ve I. Murad dönemlerinde fethedilen iki şehir sırayla başkent oldu."
+   },
+   "ikiz": "i3",
+   "vurgu": [
+    "Orhan Bey",
+    "hangi şehir"
+   ],
+   "ne": [
+    "Orhan Bey Dönemi'ndeki başkenti",
+    "I. Murad Dönemi'ndeki başkenti"
+   ],
+   "tetik": [
+    "hangi şehir"
+   ],
+   "bolge": [
+    "hangi şehir fethedilip başkent oldu"
+   ]
+  },
+  {
+   "soru": "I. Murad Dönemi'nde hangi şehir fethedilip başkent oldu?",
+   "secenekler": [
+    "Bursa",
+    "Edirne",
+    "İstanbul"
+   ],
+   "dogru": 1,
+   "ipucu": "I. Murad, Orhan Bey'den sonra padişah oldu. Rumeli'ye geçildikten sonra fethedilen başkenti düşün.",
+   "aciklama": "I. Murad Dönemi'nde Edirne fethedildi ve başkent oldu (s. 89).",
+   "kavram": "Orhan Bey ve I. Murad Dönemleri",
+   "yardim": {
+    "hatirla": "Orhan Bey ve I. Murad dönemlerinde fethedilen iki şehir sırayla başkent oldu."
+   },
+   "ikiz": "i3",
+   "vurgu": [
+    "I. Murad",
+    "hangi şehir"
+   ],
+   "ne": [
+    "I. Murad Dönemi'ndeki başkenti",
+    "Orhan Bey Dönemi'ndeki başkenti"
+   ],
+   "tetik": [
+    "hangi şehir"
+   ],
+   "bolge": [
+    "hangi şehir fethedilip başkent oldu"
    ]
   }
  ],
@@ -690,5 +820,6 @@
    "aciklama": "Karesioğulları Beyliği'nin katılmasıyla denizcilik faaliyetleri başladı ve Rumeli'ye geçildi (s. 89).",
    "kavram": "Orhan Bey ve I. Murad Dönemleri"
   }
- ]
+ ],
+ "testSoru": 10
 }

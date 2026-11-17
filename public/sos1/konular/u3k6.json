@@ -308,7 +308,8 @@
    ],
    "bolge": [
     "neye önem vermeye başladı"
-   ]
+   ],
+   "kavram": "Rönesans"
   },
   {
    "soru": "Hangisi Rönesans'ın ortaya çıkmasında etkili olmuştur?",
@@ -326,7 +327,8 @@
    "bolge": [
     "Hangisi",
     "ortaya çıkmasında etkili olmuştur"
-   ]
+   ],
+   "kavram": "Rönesans'ın Nedenleri"
   },
   {
    "soru": "Galileo ve Kopernik hangi konuda çalıştı?",
@@ -343,7 +345,8 @@
    ],
    "bolge": [
     "hangi konuda çalıştı"
-   ]
+   ],
+   "kavram": "Rönesans'ın Sonuçları"
   },
   {
    "soru": "Rönesans'la birlikte kilisenin toplum üzerindeki etkisine ne oldu?",
@@ -360,6 +363,16 @@
    ],
    "bolge": [
     "etkisine ne oldu"
+   ],
+   "kavram": "Rönesans'ın Sonuçları",
+   "ikiz": "i1",
+   "vurgu": [
+    "kilisenin",
+    "ne oldu"
+   ],
+   "ne": [
+    "Kilisenin etkisine olanı",
+    "Kralların otoritesine olanı"
    ]
   },
   {
@@ -378,21 +391,37 @@
    "bolge": [
     "ilk olarak hangi ülkede başladı"
    ],
+   "kavram": "Martin Luther",
+   "ikiz": "i2",
    "vurgu": [
-    "hangi ülkede",
-    "ilk"
+    "Reform",
+    "hangi ülkede"
+   ],
+   "ne": [
+    "Reform'un başladığı ülkeyi",
+    "Rönesans'ın başladığı ülkeyi"
    ]
   },
   {
    "soru": "Hangisi Reform hareketlerinin sonuçlarından biridir?",
    "secenekler": [
     "Kilisenin baskısı arttı",
-    "Papa'nın gücü arttı",
+    "Modern bilimlerin temelleri atıldı",
     "Yeni mezhepler ortaya çıktı"
    ],
    "dogru": 2,
    "ipucu": "Martin Luther kartındaki sonuçları hatırla.",
    "aciklama": "Reform sonucunda Avrupa'da yeni mezhepler ortaya çıktı ve mezhep savaşları yaşandı. (s. 119)",
+   "kavram": "Martin Luther",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi",
+    "Reform"
+   ],
+   "ne": [
+    "Reform'un bir sonucunu",
+    "Rönesans'ın bir sonucunu"
+   ],
    "tetik": [
     "Hangisi"
    ],
@@ -416,7 +445,8 @@
    ],
    "bolge": [
     "önem kazanan kavramlar hangileridir"
-   ]
+   ],
+   "kavram": "Aydınlanma Çağı"
   },
   {
    "soru": "Aydınlanma Çağı hangi olaya zemin hazırladı?",
@@ -433,7 +463,8 @@
    ],
    "bolge": [
     "hangi olaya zemin hazırladı"
-   ]
+   ],
+   "kavram": "Aydınlanma Çağı"
   },
   {
    "soru": "Rönesans'tan sonra Osmanlı en çok hangi alanlarda yenilik yapmaya yöneldi?",
@@ -451,6 +482,7 @@
    "bolge": [
     "en çok hangi alanlarda yenilik yapmaya yöneldi"
    ],
+   "kavram": "Osmanlı'ya Etkileri",
    "vurgu": [
     "hangi alanlarda",
     "en çok"
@@ -471,6 +503,85 @@
    ],
    "bolge": [
     "gayrimüslimler nasıl yaşadı"
+   ],
+   "kavram": "Osmanlı'ya Etkileri"
+  },
+  {
+   "soru": "Reform hareketleriyle birlikte kralların otoritesine ne oldu?",
+   "secenekler": [
+    "Azaldı",
+    "Arttı",
+    "Hiç değişmedi"
+   ],
+   "dogru": 1,
+   "ipucu": "Martin Luther kartındaki sonuçlarda Papa ve krallar ayrı ayrı geçiyor.",
+   "aciklama": "Reform sonucunda kralların otoritesi güçlendi (s. 119).",
+   "kavram": "Martin Luther",
+   "ikiz": "i1",
+   "vurgu": [
+    "kralların",
+    "ne oldu"
+   ],
+   "ne": [
+    "Kralların otoritesine olanı",
+    "Kilisenin etkisine olanı"
+   ],
+   "bolge": [
+    "kralların otoritesine ne oldu"
+   ]
+  },
+  {
+   "soru": "Rönesans ilk olarak hangi ülkede başladı?",
+   "secenekler": [
+    "İtalya",
+    "Almanya",
+    "İspanya"
+   ],
+   "dogru": 0,
+   "ipucu": "Rönesans kartının ek kısmının ilk cümlesine bak.",
+   "aciklama": "Rönesans İtalya'da başladı, sonra başka ülkelere yayıldı (s. 116).",
+   "kavram": "Rönesans",
+   "ikiz": "i2",
+   "vurgu": [
+    "Rönesans",
+    "hangi ülkede"
+   ],
+   "ne": [
+    "Rönesans'ın başladığı ülkeyi",
+    "Reform'un başladığı ülkeyi"
+   ],
+   "tetik": [
+    "hangi ülkede"
+   ],
+   "bolge": [
+    "hangi ülkede başladı"
+   ]
+  },
+  {
+   "soru": "Hangisi Rönesans'ın sonuçlarından biridir?",
+   "secenekler": [
+    "Yeni mezhepler ortaya çıktı",
+    "Modern bilimlerin temelleri atıldı",
+    "Kilisenin etkisi arttı"
+   ],
+   "dogru": 1,
+   "ipucu": "Rönesans'ın Sonuçları kartında akıl, deney ve gözlemle ilgili cümleyi bul.",
+   "aciklama": "Rönesans ile akıl, deney ve gözlem öne çıktı; modern bilimlerin temelleri atıldı (s. 117).",
+   "kavram": "Rönesans'ın Sonuçları",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi",
+    "Rönesans'ın"
+   ],
+   "ne": [
+    "Rönesans'ın bir sonucunu",
+    "Reform'un bir sonucunu"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Rönesans'ın sonuçlarından biridir"
    ]
   }
  ],
@@ -697,5 +808,6 @@
    "aciklama": "Matbaa ile kutsal kitapların çoğalması, insanların kilisenin uygulamalarını sorgulamasını kolaylaştırdı. Luther'in bildirisi ve fikirlerin yayılması bundan sonra geldi (s. 118–119).",
    "kavram": "Reform"
   }
- ]
+ ],
+ "testSoru": 10
 }

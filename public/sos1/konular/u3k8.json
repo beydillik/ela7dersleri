@@ -274,7 +274,8 @@
    ],
    "bolge": [
     "hangi antlaşma ile başladı"
-   ]
+   ],
+   "kavram": "Lale Devri"
   },
   {
    "soru": "Lale Devri'nde Batı ile yakın ilişkilere öncülük eden padişah kimdir?",
@@ -291,18 +292,38 @@
    ],
    "bolge": [
     "öncülük eden padişah kimdir"
+   ],
+   "kavram": "Batı ile Yakın İlişkiler",
+   "ikiz": "i1",
+   "vurgu": [
+    "Lale Devri'nde",
+    "kimdir"
+   ],
+   "ne": [
+    "Lale Devri'ndeki padişahı",
+    "Nizâm-ı Cedîd'i başlatan padişahı"
    ]
   },
   {
    "soru": "Lale Devri'nde İstanbul'da hangi yapılar inşa edildi?",
    "secenekler": [
     "Kütüphaneler, çeşmeler, köşkler",
-    "Fabrikalar ve tersaneler",
+    "Fabrikalar",
     "Demir yolları ve köprüler"
    ],
    "dogru": 0,
    "ipucu": "Lale Devri kartının ek kısmını hatırla.",
    "aciklama": "Lale Devri'nde İstanbul'da kütüphaneler, çeşmeler, köşkler ve bahçeler inşa edildi. (s. 125)",
+   "kavram": "Lale Devri",
+   "ikiz": "i3",
+   "vurgu": [
+    "Lale Devri'nde",
+    "hangi yapılar"
+   ],
+   "ne": [
+    "Lale Devri'nde yapılanları",
+    "III. Selim Dönemi'nde kurulanları"
+   ],
    "tetik": [
     "hangi yapılar"
    ],
@@ -325,7 +346,8 @@
    ],
    "bolge": [
     "hangi adla şehir hâline getirdi"
-   ]
+   ],
+   "kavram": "Batı ile Yakın İlişkiler"
   },
   {
    "soru": "Tulumbacılar Ocağı kurulmadan önce yangınlara kim müdahale ediyordu?",
@@ -343,7 +365,8 @@
    "bolge": [
     "kurulmadan önce",
     "kim müdahale ediyordu"
-   ]
+   ],
+   "kavram": "Tulumbacılar Ocağı"
   },
   {
    "soru": "Lale Devri'nde sağlık alanında hangi uygulama yaygınlaştı?",
@@ -360,7 +383,8 @@
    ],
    "bolge": [
     "sağlık alanında hangi uygulama yaygınlaştı"
-   ]
+   ],
+   "kavram": "Tulumbacılar Ocağı"
   },
   {
    "soru": "III. Selim neden köklü yeniliklere yöneldi?",
@@ -377,7 +401,8 @@
    ],
    "bolge": [
     "neden köklü yeniliklere yöneldi"
-   ]
+   ],
+   "kavram": "Nizâm-ı Cedîd"
   },
   {
    "soru": "Islahatların giderlerini karşılamak için ne kuruldu?",
@@ -394,6 +419,16 @@
    ],
    "bolge": [
     "ne kuruldu"
+   ],
+   "kavram": "III. Selim'in Diğer Yenilikleri",
+   "ikiz": "i2",
+   "vurgu": [
+    "giderlerini karşılamak",
+    "ne kuruldu"
+   ],
+   "ne": [
+    "Islahat giderleri için kurulanı",
+    "Yangınlar için kurulanı"
    ]
   },
   {
@@ -411,7 +446,8 @@
    ],
    "bolge": [
     "ne amaçla açıldı"
-   ]
+   ],
+   "kavram": "III. Selim'in Diğer Yenilikleri"
   },
   {
    "soru": "Nizâm-ı Cedîd Ordusu, disiplinini yitiren hangi ocağın yanında kuruldu?",
@@ -428,6 +464,82 @@
    ],
    "bolge": [
     "hangi ocağın yanında kuruldu"
+   ],
+   "kavram": "Nizâm-ı Cedîd Ordusu"
+  },
+  {
+   "soru": "Nizâm-ı Cedîd adlı yenilik çalışmalarını başlatan padişah kimdir?",
+   "secenekler": [
+    "III. Selim",
+    "II. Mahmud",
+    "III. Ahmed"
+   ],
+   "dogru": 0,
+   "ipucu": "Nizâm-ı Cedîd kartının ilk cümlesine bak.",
+   "aciklama": "Nizâm-ı Cedîd, Sultan III. Selim'in başlattığı yenilik çalışmalarının adıdır (s. 126).",
+   "kavram": "Nizâm-ı Cedîd",
+   "ikiz": "i1",
+   "vurgu": [
+    "Nizâm-ı Cedîd",
+    "kimdir"
+   ],
+   "ne": [
+    "Nizâm-ı Cedîd'i başlatan padişahı",
+    "Lale Devri'ndeki padişahı"
+   ],
+   "bolge": [
+    "başlatan padişah kimdir"
+   ]
+  },
+  {
+   "soru": "Yangınlarla mücadele etmek için ne kuruldu?",
+   "secenekler": [
+    "Tulumbacılar Ocağı",
+    "Kara Mühendishanesi",
+    "İrâd-ı Cedîd Hazinesi"
+   ],
+   "dogru": 0,
+   "ipucu": "Osmanlı'nın ilk itfaiye teşkilatını hatırla.",
+   "aciklama": "1720'de kurulan Tulumbacılar Ocağı Osmanlı'nın ilk itfaiye teşkilatıdır (s. 126).",
+   "kavram": "Tulumbacılar Ocağı",
+   "ikiz": "i2",
+   "vurgu": [
+    "Yangınlarla",
+    "ne kuruldu"
+   ],
+   "ne": [
+    "Yangınlar için kurulanı",
+    "Islahat giderleri için kurulanı"
+   ],
+   "bolge": [
+    "ne kuruldu"
+   ]
+  },
+  {
+   "soru": "III. Selim Dönemi'nde Azatlı ve Beykoz'da hangi yapılar kuruldu?",
+   "secenekler": [
+    "Kütüphaneler, çeşmeler, köşkler",
+    "Fabrikalar",
+    "Demir yolları ve köprüler"
+   ],
+   "dogru": 1,
+   "ipucu": "III. Selim'in Diğer Yenilikleri kartında kumaş ve kâğıtla ilgili cümleyi bul.",
+   "aciklama": "Azatlı'da kumaş, Beykoz'da kâğıt fabrikası kuruldu (s. 127).",
+   "kavram": "III. Selim'in Diğer Yenilikleri",
+   "ikiz": "i3",
+   "vurgu": [
+    "III. Selim Dönemi'nde",
+    "hangi yapılar"
+   ],
+   "ne": [
+    "III. Selim Dönemi'nde kurulanları",
+    "Lale Devri'nde yapılanları"
+   ],
+   "tetik": [
+    "hangi yapılar"
+   ],
+   "bolge": [
+    "hangi yapılar kuruldu"
    ]
   }
  ],
@@ -649,5 +761,6 @@
    "aciklama": "Yirmisekiz Mehmed Çelebi Efendi'den Avrupa'daki bilimsel, kültürel ve teknik gelişmeleri rapor etmesi istendi. Matbaayı ise İbrahim Müteferrika açtı (s. 125).",
    "kavram": "Batı ile Yakın İlişkiler"
   }
- ]
+ ],
+ "testSoru": 10
 }

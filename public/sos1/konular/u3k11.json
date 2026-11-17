@@ -331,7 +331,8 @@
    ],
    "bolge": [
     "Sıbyan mekteplerinde ne öğretilirdi"
-   ]
+   ],
+   "kavram": "Sıbyan Mektebi"
   },
   {
    "soru": "Medreseler hangi görevlileri yetiştirirdi?",
@@ -348,7 +349,8 @@
    ],
    "bolge": [
     "Medreseler hangi görevlileri yetiştirirdi"
-   ]
+   ],
+   "kavram": "Medrese"
   },
   {
    "soru": "Enderun'daki başarılı öğrenciler ileride ne olurdu?",
@@ -365,7 +367,8 @@
    ],
    "bolge": [
     "ileride ne olurdu"
-   ]
+   ],
+   "kavram": "Enderun Mektebi"
   },
   {
    "soru": "Mühendishane-i Berri-i Hümayun'un Türkçesi nedir?",
@@ -375,8 +378,18 @@
     "Kara Mühendislik Okulu"
    ],
    "dogru": 2,
-   "ipucu": "'Bahri' deniz demektir; 'Berri' ise öbürü.",
+   "ipucu": "Adındaki “Berri” kelimesine bak: “berr” kara (deniz olmayan yer) demektir.",
    "aciklama": "Mühendishane-i Berri-i Hümayun, Kara Mühendislik Okulu'dur. (s. 142)",
+   "kavram": "Batı Tarzı Okullar",
+   "ikiz": "i1",
+   "vurgu": [
+    "Berri",
+    "Türkçesi nedir"
+   ],
+   "ne": [
+    "“Berri” okulunun Türkçesini",
+    "“Bahri” okulunun Türkçesini"
+   ],
    "tetik": [
     "nedir"
    ],
@@ -388,12 +401,22 @@
    "soru": "Rüştiyeler hangi düzeyde okullardı?",
    "secenekler": [
     "Ortaokul",
-    "İlkokul",
+    "Lise",
     "Üniversite"
    ],
    "dogru": 0,
    "ipucu": "Batı Tarzı Okullar kartında parantez içine bak.",
-   "aciklama": "Rüştiyeler ortaokul düzeyinde, idadîler lise düzeyinde okullardı. (s. 143)",
+   "aciklama": "Rüştiyeler ortaokul düzeyinde okullardı (s. 143).",
+   "kavram": "Batı Tarzı Okullar",
+   "ikiz": "i2",
+   "vurgu": [
+    "Rüştiyeler",
+    "hangi düzeyde"
+   ],
+   "ne": [
+    "Rüştiyelerin düzeyini",
+    "İdadîlerin düzeyini"
+   ],
    "tetik": [
     "hangi düzeyde"
    ],
@@ -416,7 +439,8 @@
    ],
    "bolge": [
     "hangi alanda uzman yetiştirmek için açıldı"
-   ]
+   ],
+   "kavram": "Meslek Okulları"
   },
   {
    "soru": "Osmanlı'da adalet işlerini kim yürütürdü?",
@@ -433,6 +457,16 @@
    ],
    "bolge": [
     "kim yürütürdü"
+   ],
+   "kavram": "Şer'i ve Örfi Hukuk",
+   "ikiz": "i3",
+   "vurgu": [
+    "adalet işlerini",
+    "kim yürütürdü"
+   ],
+   "ne": [
+    "Adalet işlerini yürütenleri",
+    "Meslek ve ahlak öğretenleri"
    ]
   },
   {
@@ -450,7 +484,8 @@
    ],
    "bolge": [
     "hangi şekilde ortaya çıkmıştır"
-   ]
+   ],
+   "kavram": "Kanunname"
   },
   {
    "soru": "Mecelle kimin öncülüğünde hazırlandı?",
@@ -467,7 +502,8 @@
    ],
    "bolge": [
     "Mecelle kimin öncülüğünde hazırlandı"
-   ]
+   ],
+   "kavram": "Mecelle ve Kanun-ı Esasi"
   },
   {
    "soru": "Kanun-ı Esasi hangi padişah döneminde ilan edildi?",
@@ -484,6 +520,85 @@
    ],
    "bolge": [
     "hangi padişah döneminde ilan edildi"
+   ],
+   "kavram": "Mecelle ve Kanun-ı Esasi"
+  },
+  {
+   "soru": "Mühendishane-i Bahri-i Hümayun'un Türkçesi nedir?",
+   "secenekler": [
+    "Deniz Mühendislik Okulu",
+    "Güzel Sanatlar Okulu",
+    "Kara Mühendislik Okulu"
+   ],
+   "dogru": 0,
+   "ipucu": "Adındaki “Bahri” kelimesine bak: “bahr” deniz demektir.",
+   "aciklama": "Mühendishane-i Bahri-i Hümayun, Deniz Mühendislik Okulu'dur (s. 142).",
+   "kavram": "Batı Tarzı Okullar",
+   "ikiz": "i1",
+   "vurgu": [
+    "Bahri",
+    "Türkçesi nedir"
+   ],
+   "ne": [
+    "“Bahri” okulunun Türkçesini",
+    "“Berri” okulunun Türkçesini"
+   ],
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "Türkçesi nedir"
+   ]
+  },
+  {
+   "soru": "İdadîler hangi düzeyde okullardı?",
+   "secenekler": [
+    "Ortaokul",
+    "Lise",
+    "Üniversite"
+   ],
+   "dogru": 1,
+   "ipucu": "Batı Tarzı Okullar kartında parantez içine bak.",
+   "aciklama": "İdadîler lise düzeyinde okullardı (s. 143).",
+   "kavram": "Batı Tarzı Okullar",
+   "ikiz": "i2",
+   "vurgu": [
+    "İdadîler",
+    "hangi düzeyde"
+   ],
+   "ne": [
+    "İdadîlerin düzeyini",
+    "Rüştiyelerin düzeyini"
+   ],
+   "tetik": [
+    "hangi düzeyde"
+   ],
+   "bolge": [
+    "hangi düzeyde okullardı"
+   ]
+  },
+  {
+   "soru": "Osmanlı'da gençlere başlangıçta meslek ve ahlakı kim öğretiyordu?",
+   "secenekler": [
+    "Kadılar",
+    "Loncalar",
+    "Defterdarlar"
+   ],
+   "dogru": 1,
+   "ipucu": "Meslek Okulları kartının ek kısmının ilk cümlesine bak.",
+   "aciklama": "Başlangıçta gençlere meslek ve ahlakı lonca teşkilatları öğretiyordu (s. 143).",
+   "kavram": "Meslek Okulları",
+   "ikiz": "i3",
+   "vurgu": [
+    "meslek ve ahlakı",
+    "kim öğretiyordu"
+   ],
+   "ne": [
+    "Meslek ve ahlak öğretenleri",
+    "Adalet işlerini yürütenleri"
+   ],
+   "bolge": [
+    "kim öğretiyordu"
    ]
   }
  ],
@@ -707,5 +822,6 @@
    "aciklama": "Devletin sınırları genişledikçe idari, askerî ve mali alanlarda yetişmiş insana ihtiyaç arttı; Enderun Mektebi bu ihtiyacı karşılamak için saray içinde açıldı (s. 142).",
    "kavram": "Enderun Mektebi"
   }
- ]
+ ],
+ "testSoru": 10
 }

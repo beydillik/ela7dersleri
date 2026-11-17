@@ -299,6 +299,16 @@
    ],
    "bolge": [
     "hangi yıl tahta çıktı"
+   ],
+   "kavram": "II. Mahmud",
+   "ikiz": "i3",
+   "vurgu": [
+    "II. Mahmud",
+    "hangi yıl"
+   ],
+   "ne": [
+    "II. Mahmud'un tahta çıktığı yılı",
+    "Tanzimat Fermanı'nın ilan yılını"
    ]
   },
   {
@@ -316,7 +326,8 @@
    ],
    "bolge": [
     "Vaka-i Hayriye ne anlama gelir"
-   ]
+   ],
+   "kavram": "Vaka-i Hayriye"
   },
   {
    "soru": "Yeniçeri Ocağı'nın yerine hangi ordu kuruldu?",
@@ -333,7 +344,8 @@
    ],
    "bolge": [
     "yerine hangi ordu kuruldu"
-   ]
+   ],
+   "kavram": "Vaka-i Hayriye"
   },
   {
    "soru": "II. Mahmud döneminde ilk kez ne yapıldı?",
@@ -351,6 +363,7 @@
    "bolge": [
     "ilk kez ne yapıldı"
    ],
+   "kavram": "Nazırlıklar",
    "vurgu": [
     "ne yapıldı",
     "ilk"
@@ -372,6 +385,16 @@
    "bolge": [
     "Subay yetiştirmek için",
     "hangi okul açıldı"
+   ],
+   "kavram": "II. Mahmud",
+   "ikiz": "i1",
+   "vurgu": [
+    "Subay",
+    "hangi okul"
+   ],
+   "ne": [
+    "Subay yetiştiren okulu",
+    "Doktor yetiştiren okulu"
    ]
   },
   {
@@ -389,7 +412,8 @@
    ],
    "bolge": [
     "en önemli özelliği hangisidir"
-   ]
+   ],
+   "kavram": "Tanzimat Fermanı"
   },
   {
    "soru": "Tanzimat Dönemi'nde eğitim işlerini düzene sokmak için ne kuruldu?",
@@ -406,7 +430,8 @@
    ],
    "bolge": [
     "eğitim işlerini düzene sokmak için ne kuruldu"
-   ]
+   ],
+   "kavram": "Tanzimat Fermanı"
   },
   {
    "soru": "Tanzimat Dönemi'nde yayımlanan özel gazetelerden biri hangisidir?",
@@ -416,8 +441,21 @@
     "Tercümân-ı Ahvâl"
    ],
    "dogru": 2,
-   "ipucu": "Takvim-i Vekayi resmî gazeteydi; özel olanı ara.",
-   "aciklama": "Takvim-i Vekayi'nin ardından Tercümân-ı Ahvâl, Tasvîr-i Efkâr gibi özel gazeteler yayın hayatına başladı. (s. 129)",
+   "ipucu": "Özel gazeteler Tanzimat Dönemi'nde çıktı. Takvim-i Vekayi kartının ek kısmında adları geçiyor.",
+   "aciklama": "Tanzimat Dönemi'nde Tercümân-ı Ahvâl, Tasvîr-i Efkâr gibi özel gazeteler yayımlandı (s. 129).",
+   "kavram": "Takvim-i Vekayi",
+   "yardim": {
+    "hatirla": "Tanzimat Dönemi'nde resmî gazetenin yanında özel gazeteler de yayımlanmaya başladı."
+   },
+   "ikiz": "i2",
+   "vurgu": [
+    "özel gazetelerden",
+    "hangisidir"
+   ],
+   "ne": [
+    "Özel gazetelerden birini",
+    "İlk resmî gazeteyi"
+   ],
    "tetik": [
     "hangisidir"
    ],
@@ -440,7 +478,8 @@
    ],
    "bolge": [
     "hangi alanlarda eğitim verildi"
-   ]
+   ],
+   "kavram": "Sanayileşme Çabaları"
   },
   {
    "soru": "Türk Modası ile Avrupa'ya hangi alışkanlık yayıldı?",
@@ -457,6 +496,88 @@
    ],
    "bolge": [
     "Avrupa'ya hangi alışkanlık yayıldı"
+   ],
+   "kavram": "Türk Modası"
+  },
+  {
+   "soru": "Doktor yetiştirmek için II. Mahmud döneminde hangi okul açıldı?",
+   "secenekler": [
+    "Mekteb-i Tıbbiye",
+    "Muzıka-yi Hümâyun",
+    "Mekteb-i Harbiye"
+   ],
+   "dogru": 0,
+   "ipucu": "Doktor tıpla ilgilidir. Adında tıp geçen okulu bul.",
+   "aciklama": "Doktor yetiştirmek için Mekteb-i Tıbbiye açıldı (s. 128).",
+   "kavram": "II. Mahmud",
+   "ikiz": "i1",
+   "vurgu": [
+    "Doktor",
+    "hangi okul"
+   ],
+   "ne": [
+    "Doktor yetiştiren okulu",
+    "Subay yetiştiren okulu"
+   ],
+   "tetik": [
+    "hangi okul"
+   ],
+   "bolge": [
+    "hangi okul açıldı"
+   ]
+  },
+  {
+   "soru": "1831'de çıkarılan ilk resmî gazete hangisidir?",
+   "secenekler": [
+    "Takvim-i Vekayi",
+    "Nizâm-ı Cedîd",
+    "Tercümân-ı Ahvâl"
+   ],
+   "dogru": 0,
+   "ipucu": "Takvim-i Vekayi kartının ilk cümlesine bak.",
+   "aciklama": "1831'de çıkarılan Takvim-i Vekayi ilk resmî gazetedir (s. 128).",
+   "kavram": "Takvim-i Vekayi",
+   "ikiz": "i2",
+   "vurgu": [
+    "ilk resmî gazete",
+    "hangisidir"
+   ],
+   "ne": [
+    "İlk resmî gazeteyi",
+    "Özel gazetelerden birini"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "ilk resmî gazete hangisidir"
+   ]
+  },
+  {
+   "soru": "Tanzimat Fermanı hangi yıl ilan edildi?",
+   "secenekler": [
+    "1789",
+    "1808",
+    "1839"
+   ],
+   "dogru": 2,
+   "ipucu": "Tanzimat Fermanı kartının ilk cümlesine bak.",
+   "aciklama": "Tanzimat Fermanı 3 Kasım 1839'da ilan edildi (s. 129).",
+   "kavram": "Tanzimat Fermanı",
+   "ikiz": "i3",
+   "vurgu": [
+    "Tanzimat Fermanı",
+    "hangi yıl"
+   ],
+   "ne": [
+    "Tanzimat Fermanı'nın ilan yılını",
+    "II. Mahmud'un tahta çıktığı yılı"
+   ],
+   "tetik": [
+    "hangi yıl"
+   ],
+   "bolge": [
+    "hangi yıl ilan edildi"
    ]
   }
  ],
@@ -685,5 +806,6 @@
    "aciklama": "Tanzimat Fermanı ile padişah ilk kez kendi yetkilerini kendi eliyle sınırladı; devlet halkına temel hak ve güvenceler sağlamayı kabul etti (s. 129).",
    "kavram": "Tanzimat Fermanı"
   }
- ]
+ ],
+ "testSoru": 10
 }

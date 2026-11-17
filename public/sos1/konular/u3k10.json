@@ -279,7 +279,8 @@
    ],
    "bolge": [
     "hangi dönemde yapıldı"
-   ]
+   ],
+   "kavram": "Külliye"
   },
   {
    "soru": "Süleymaniye Külliyesi'ni kim inşa etti?",
@@ -296,7 +297,8 @@
    ],
    "bolge": [
     "kim inşa etti"
-   ]
+   ],
+   "kavram": "Külliye"
   },
   {
    "soru": "Hangisi Balkan ülkelerinde rastlanan bir Osmanlı izidir?",
@@ -314,7 +316,8 @@
    "bolge": [
     "Hangisi",
     "Balkan ülkelerinde rastlanan"
-   ]
+   ],
+   "kavram": "Osmanlı'nın Yaşayan İzleri"
   },
   {
    "soru": "Saray ve Divan-ı Hümayun'un bulunduğu başkent yönetimine ne denir?",
@@ -331,6 +334,16 @@
    ],
    "bolge": [
     "başkent yönetimine ne denir"
+   ],
+   "kavram": "Merkez ve Taşra Yönetimi",
+   "ikiz": "i3",
+   "vurgu": [
+    "başkent yönetimine",
+    "ne denir"
+   ],
+   "ne": [
+    "Başkent yönetiminin adını",
+    "Uzak yerlerin yönetiminin adını"
    ]
   },
   {
@@ -350,6 +363,7 @@
     "Hangisi",
     "temel görevlerinden biri değildir"
    ],
+   "kavram": "Padişah",
    "vurgu": [
     "Hangisi",
     "değildir"
@@ -370,18 +384,29 @@
    ],
    "bolge": [
     "hangi padişah döneminde kaldırıldı"
-   ]
+   ],
+   "kavram": "Divan-ı Hümayun"
   },
   {
    "soru": "Kadı ve müderrislerin atamalarını hangi Divan üyesi yapardı?",
    "secenekler": [
     "Nişancı",
     "Kazasker",
-    "Kaptanıderya"
+    "Defterdar"
    ],
    "dogru": 1,
    "ipucu": "Büyük davalara da bakan üyeyi düşün.",
    "aciklama": "Kazasker Divan'a gelen büyük davalara bakar, kadı ve müderrislerin atamalarını yapardı. (s. 141)",
+   "kavram": "Divan Üyeleri",
+   "ikiz": "i1",
+   "vurgu": [
+    "Kadı ve müderrislerin",
+    "hangi Divan üyesi"
+   ],
+   "ne": [
+    "Kadı ve müderris atayan üyeyi",
+    "Mali işleri yürüten üyeyi"
+   ],
    "tetik": [
     "hangi Divan"
    ],
@@ -404,7 +429,8 @@
    ],
    "bolge": [
     "hangi Divan üyesi sorumluydu"
-   ]
+   ],
+   "kavram": "Divan Üyeleri"
   },
   {
    "soru": "Diğer devletlerle yapılan antlaşmaların yazışmalarını kim yürütürdü?",
@@ -421,6 +447,94 @@
    ],
    "bolge": [
     "kim yürütürdü"
+   ],
+   "kavram": "Divan Üyeleri",
+   "ikiz": "i2",
+   "vurgu": [
+    "antlaşmaların",
+    "kim yürütürdü"
+   ],
+   "ne": [
+    "Antlaşma yazışmalarını yürüteni",
+    "Fetva vereni"
+   ]
+  },
+  {
+   "soru": "Mali işleri hangi Divan üyesi yürütürdü?",
+   "secenekler": [
+    "Kazasker",
+    "Defterdar",
+    "Nişancı"
+   ],
+   "dogru": 1,
+   "ipucu": "Divan Üyeleri kartında “gelir ve gider” sözünü bul.",
+   "aciklama": "Defterdar devletin gelir ve giderlerini denetler, mali işleri yürütürdü (s. 141).",
+   "kavram": "Divan Üyeleri",
+   "ikiz": "i1",
+   "vurgu": [
+    "Mali işleri",
+    "hangi Divan üyesi"
+   ],
+   "ne": [
+    "Mali işleri yürüten üyeyi",
+    "Kadı ve müderris atayan üyeyi"
+   ],
+   "tetik": [
+    "hangi Divan"
+   ],
+   "bolge": [
+    "hangi Divan üyesi yürütürdü"
+   ]
+  },
+  {
+   "soru": "Kararların İslam dinine uygunluğu konusunda kim fetva verirdi?",
+   "secenekler": [
+    "Nişancı",
+    "Şeyhülislam",
+    "Defterdar"
+   ],
+   "dogru": 1,
+   "ipucu": "Fetva dinî bir görüştür. Dinî konulardan sorumlu üyeyi düşün.",
+   "aciklama": "Şeyhülislam kararların İslam dinine uygunluğu konusunda fetva verirdi (s. 141).",
+   "kavram": "Divan Üyeleri",
+   "ikiz": "i2",
+   "vurgu": [
+    "fetva",
+    "kim"
+   ],
+   "ne": [
+    "Fetva vereni",
+    "Antlaşma yazışmalarını yürüteni"
+   ],
+   "bolge": [
+    "kim fetva verirdi"
+   ]
+  },
+  {
+   "soru": "Ülkenin merkezden uzak eyalet ve sancaklarının yönetimine ne denir?",
+   "secenekler": [
+    "Taşra yönetimi",
+    "Merkez yönetimi",
+    "Saray yönetimi"
+   ],
+   "dogru": 0,
+   "ipucu": "Merkez ve Taşra Yönetimi kartında başkentten uzak yerleri bul.",
+   "aciklama": "Ülkenin merkezden uzak eyalet ve sancaklarının yönetimine taşra yönetimi denir (s. 139).",
+   "kavram": "Merkez ve Taşra Yönetimi",
+   "ikiz": "i3",
+   "vurgu": [
+    "merkezden uzak",
+    "ne denir"
+   ],
+   "ne": [
+    "Uzak yerlerin yönetiminin adını",
+    "Başkent yönetiminin adını"
+   ],
+   "tetik": [
+    "ne denir"
+   ],
+   "bolge": [
+    "yönetimine ne denir"
    ]
   }
  ],
@@ -656,5 +770,6 @@
    "aciklama": "Tunus, Cezayir, Libya, Mısır gibi ülkelerin orkestralarında kanun, ud, ney gibi Türk müziği sazları kullanılır; bu, müzikteki bir Osmanlı izidir (s. 138).",
    "kavram": "Osmanlı'nın Yaşayan İzleri"
   }
- ]
+ ],
+ "testSoru": 9
 }

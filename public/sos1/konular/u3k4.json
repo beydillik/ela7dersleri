@@ -289,20 +289,26 @@
    "secenekler": [
     "Batı sınırını",
     "Doğu sınırını",
-    "Kuzey sınırını"
+    "Güney sınırını"
    ],
    "dogru": 1,
    "ipucu": "Çaldıran Savaşı'nın sonucunu hatırla.",
    "aciklama": "Yavuz 1514'te Çaldıran Savaşı'nı kazanarak doğu sınırlarını güçlendirdi. (s. 103)",
+   "kavram": "Yavuz Sultan Selim",
+   "ikiz": "i3",
+   "vurgu": [
+    "Mısır Seferi'nden önce",
+    "hangi sınırı"
+   ],
+   "ne": [
+    "Mısır Seferi'nden önce güçlenen sınırı",
+    "Mısır Seferi'yle güvenceye alınan sınırı"
+   ],
    "tetik": [
     "hangi sınırı"
    ],
    "bolge": [
     "ilk olarak hangi sınırı güçlendirdi"
-   ],
-   "vurgu": [
-    "hangi sınırı",
-    "ilk"
    ]
   },
   {
@@ -322,6 +328,7 @@
     "Mısır Seferi'nden önce",
     "hangi devletin korumasındaydı"
    ],
+   "kavram": "Memlük Devleti",
    "vurgu": [
     "hangi devletin",
     "önce"
@@ -343,9 +350,15 @@
    "bolge": [
     "hangisi en önce yapıldı"
    ],
+   "kavram": "Mercidabık ve Ridaniye",
+   "ikiz": "i1",
    "vurgu": [
     "hangisi",
     "en önce"
+   ],
+   "ne": [
+    "En önce yapılan savaşı",
+    "En son yapılan savaşı"
    ]
   },
   {
@@ -363,7 +376,8 @@
    ],
    "bolge": [
     "hangi şehre girdi"
-   ]
+   ],
+   "kavram": "Mercidabık ve Ridaniye"
   },
   {
    "soru": "Aşağıdakilerden hangisi Mısır Seferi'nin ekonomik sonuçlarından biridir?",
@@ -381,6 +395,16 @@
    "bolge": [
     "hangisi",
     "ekonomik sonuçlarından biridir"
+   ],
+   "kavram": "Mısır Seferi'nin Sonuçları",
+   "ikiz": "i2",
+   "vurgu": [
+    "hangisi",
+    "ekonomik"
+   ],
+   "ne": [
+    "Ekonomik sonucu",
+    "Dinî sonucu"
    ]
   },
   {
@@ -398,7 +422,8 @@
    ],
    "bolge": [
     "saygınlığı neden arttı"
-   ]
+   ],
+   "kavram": "Halifelik ve Kutsal Emanetler"
   },
   {
    "soru": "Osmanlı Devleti'nin en parlak ve güçlü dönemi hangi padişahın dönemi olarak bilinir?",
@@ -416,7 +441,8 @@
    "bolge": [
     "en parlak ve güçlü dönemi",
     "hangi padişahın dönemi olarak bilinir"
-   ]
+   ],
+   "kavram": "Barbaros Hayreddin Paşa"
   },
   {
    "soru": "Haçlı donanmasının başına kim getirildi?",
@@ -433,7 +459,8 @@
    ],
    "bolge": [
     "başına kim getirildi"
-   ]
+   ],
+   "kavram": "Preveze Deniz Zaferi"
   },
   {
    "soru": "Aşağıdakilerden hangisi Preveze Deniz Zaferi'nin sonuçlarından biridir?",
@@ -451,7 +478,8 @@
    "bolge": [
     "hangisi",
     "sonuçlarından biridir"
-   ]
+   ],
+   "kavram": "Preveze Deniz Zaferi"
   },
   {
    "soru": "27 Eylül günü bugün hangi adla kutlanıyor?",
@@ -468,6 +496,88 @@
    ],
    "bolge": [
     "hangi adla kutlanıyor"
+   ],
+   "kavram": "Preveze Deniz Zaferi"
+  },
+  {
+   "soru": "Aşağıdaki savaşlardan hangisi en son yapıldı?",
+   "secenekler": [
+    "Ridaniye",
+    "Mercidabık",
+    "Turnadağ"
+   ],
+   "dogru": 0,
+   "ipucu": "Üç savaşın yıllarını sırala; en büyük yıl hangisi?",
+   "aciklama": "Turnadağ 1515, Mercidabık 1516, Ridaniye 1517: en son Ridaniye (s. 103).",
+   "kavram": "Mercidabık ve Ridaniye",
+   "ikiz": "i1",
+   "vurgu": [
+    "hangisi",
+    "en son"
+   ],
+   "ne": [
+    "En son yapılan savaşı",
+    "En önce yapılan savaşı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hangisi en son yapıldı"
+   ]
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Mısır Seferi'nin dinî sonuçlarından biridir?",
+   "secenekler": [
+    "Halife unvanı alındı.",
+    "Mısır'dan alınan vergiler ekonomiyi güçlendirdi.",
+    "Güney sınırları güvenceye alındı."
+   ],
+   "dogru": 0,
+   "ipucu": "Din ve İslam dünyasıyla ilgili olan seçeneği bul.",
+   "aciklama": "Halife unvanının Osmanlı padişahlarına geçmesi dinî bir sonuçtur (s. 104).",
+   "kavram": "Halifelik ve Kutsal Emanetler",
+   "ikiz": "i2",
+   "vurgu": [
+    "hangisi",
+    "dinî"
+   ],
+   "ne": [
+    "Dinî sonucu",
+    "Ekonomik sonucu"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "dinî sonuçlarından biridir"
+   ]
+  },
+  {
+   "soru": "Mısır Seferi ile Osmanlı hangi sınırını güvence altına aldı?",
+   "secenekler": [
+    "Doğu sınırını",
+    "Güney sınırını",
+    "Batı sınırını"
+   ],
+   "dogru": 1,
+   "ipucu": "Mısır, Osmanlı'nın hangi yönündeydi?",
+   "aciklama": "Mısır Seferi ile Suriye, Mısır ve Arap Yarımadası katıldı; güney sınırları güvence altına alındı (s. 104).",
+   "kavram": "Mısır Seferi'nin Sonuçları",
+   "ikiz": "i3",
+   "vurgu": [
+    "Mısır Seferi ile",
+    "hangi sınırını"
+   ],
+   "ne": [
+    "Mısır Seferi'yle güvenceye alınan sınırı",
+    "Mısır Seferi'nden önce güçlenen sınırı"
+   ],
+   "tetik": [
+    "hangi sınırını"
+   ],
+   "bolge": [
+    "hangi sınırını güvence altına aldı"
    ]
   }
  ],
@@ -683,5 +793,6 @@
    "aciklama": "Osmanlı'nın denizlerde güçlenmesinden rahatsız olan İspanya, Portekiz, Venedik ve Papalık birleşerek Haçlı donanması kurdu (s. 105).",
    "kavram": "Preveze Deniz Zaferi"
   }
- ]
+ ],
+ "testSoru": 10
 }

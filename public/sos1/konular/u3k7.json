@@ -297,18 +297,29 @@
    ],
    "bolge": [
     "üretimi değiştiren buluş hangisidir"
-   ]
+   ],
+   "kavram": "Sanayi İnkılabı"
   },
   {
    "soru": "Sanayi İnkılabı'ndan önce üretim nerede yapılıyordu?",
    "secenekler": [
-    "Büyük fabrikalarda",
+    "Makineli fabrikalarda",
     "Gemilerde",
     "Küçük atölyelerde"
    ],
    "dogru": 2,
    "ipucu": "Fabrikalar neyin yerini aldı?",
    "aciklama": "Küçük atölyelerde el emeğine dayalı üretim yerini makinelerin kullanıldığı fabrikalara bıraktı. (s. 121)",
+   "kavram": "Sanayi İnkılabı",
+   "ikiz": "i1",
+   "vurgu": [
+    "önce",
+    "nerede"
+   ],
+   "ne": [
+    "Sanayi İnkılabı'ndan önceki üretim yerini",
+    "Sanayi İnkılabı'ndan sonraki üretim yerini"
+   ],
    "tetik": [
     "nerede"
    ],
@@ -332,7 +343,8 @@
    ],
    "bolge": [
     "nasıl mal üretildi"
-   ]
+   ],
+   "kavram": "Sanayi İnkılabı"
   },
   {
    "soru": "Fabrikalarda çalışma koşulları nasıldı?",
@@ -349,7 +361,8 @@
    ],
    "bolge": [
     "Fabrikalarda çalışma koşulları nasıldı"
-   ]
+   ],
+   "kavram": "İşçi Sınıfı"
   },
   {
    "soru": "Ekonomideki gerileme Osmanlı'yı başka hangi alanlarda etkiledi?",
@@ -366,18 +379,28 @@
    ],
    "bolge": [
     "başka hangi alanlarda etkiledi"
-   ]
+   ],
+   "kavram": "Sanayi İnkılabı ve Osmanlı"
   },
   {
    "soru": "İhtilalden önce Fransa'da vergi yükü kimin üzerindeydi?",
    "secenekler": [
     "Soyluların",
-    "Din görevlilerinin",
+    "Soyluların ve din görevlilerinin",
     "Halkın"
    ],
    "dogru": 2,
-   "ipucu": "Soylular ve din görevlileri vergi veriyor muydu?",
-   "aciklama": "Soylular ve din görevlileri vergi vermezken vergi yükü büyük ölçüde halkın üzerindeydi. (s. 123)",
+   "ipucu": "Fransız İhtilali kartının ek kısmında “vergi yükü” sözünü bul.",
+   "aciklama": "Vergi yükü büyük ölçüde halkın üzerindeydi (s. 123).",
+   "kavram": "Fransız İhtilali",
+   "ikiz": "i3",
+   "vurgu": [
+    "vergi yükü kimin üzerindeydi"
+   ],
+   "ne": [
+    "Vergiyi ödeyenleri",
+    "Vergi ödemeyenleri"
+   ],
    "tetik": [
     "kimin"
    ],
@@ -400,7 +423,8 @@
    ],
    "bolge": [
     "değişim isteğini artıran düşünceler hangileridir"
-   ]
+   ],
+   "kavram": "Fransız İhtilali"
   },
   {
    "soru": "İnsan ve Yurttaş Hakları Bildirgesi ile ne kabul edildi?",
@@ -417,7 +441,8 @@
    ],
    "bolge": [
     "ne kabul edildi"
-   ]
+   ],
+   "kavram": "İhtilalin Sonuçları"
   },
   {
    "soru": "1856'da gayrimüslimlere yeni haklar veren belge hangisidir?",
@@ -434,6 +459,16 @@
    ],
    "bolge": [
     "yeni haklar veren belge hangisidir"
+   ],
+   "kavram": "Fransız İhtilali ve Osmanlı",
+   "ikiz": "i2",
+   "vurgu": [
+    "1856'da",
+    "hangisidir"
+   ],
+   "ne": [
+    "1856'daki belgeyi",
+    "1839'daki belgeyi"
    ]
   },
   {
@@ -451,6 +486,84 @@
    ],
    "bolge": [
     "hangi meclis açıldı"
+   ],
+   "kavram": "Fransız İhtilali ve Osmanlı"
+  },
+  {
+   "soru": "Sanayi İnkılabı'ndan sonra üretim nerede yapılmaya başlandı?",
+   "secenekler": [
+    "Küçük atölyelerde",
+    "Makineli fabrikalarda",
+    "Gemilerde"
+   ],
+   "dogru": 1,
+   "ipucu": "Buhar makinesi üretimi nereye taşıdı?",
+   "aciklama": "Küçük atölyelerin yerini makinelerin kullanıldığı fabrikalar aldı (s. 121).",
+   "kavram": "Sanayi İnkılabı",
+   "ikiz": "i1",
+   "vurgu": [
+    "sonra",
+    "nerede"
+   ],
+   "ne": [
+    "Sanayi İnkılabı'ndan sonraki üretim yerini",
+    "Sanayi İnkılabı'ndan önceki üretim yerini"
+   ],
+   "tetik": [
+    "nerede"
+   ],
+   "bolge": [
+    "sonra üretim nerede yapılmaya başlandı"
+   ]
+  },
+  {
+   "soru": "1839'da herkesin can ve mal güvenliğinin korunacağını açıklayan belge hangisidir?",
+   "secenekler": [
+    "Islahat Fermanı",
+    "Tanzimat Fermanı",
+    "Kanun-i Esasi"
+   ],
+   "dogru": 1,
+   "ipucu": "Kartın çizimindeki ilk yılı düşün.",
+   "aciklama": "1839'da Tanzimat Fermanı ile herkesin can ve mal güvenliğinin korunacağı açıklandı (s. 124).",
+   "kavram": "Fransız İhtilali ve Osmanlı",
+   "ikiz": "i2",
+   "vurgu": [
+    "1839'da",
+    "hangisidir"
+   ],
+   "ne": [
+    "1839'daki belgeyi",
+    "1856'daki belgeyi"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "belge hangisidir"
+   ]
+  },
+  {
+   "soru": "İhtilalden önce Fransa'da kimler vergi vermiyordu?",
+   "secenekler": [
+    "Halk",
+    "Soylular ve din görevlileri",
+    "Yalnızca kral"
+   ],
+   "dogru": 1,
+   "ipucu": "Fransız İhtilali kartının ek kısmında vergiyle ilgili cümleyi bul.",
+   "aciklama": "Soylular ve din görevlileri vergi vermiyordu (s. 123).",
+   "kavram": "Fransız İhtilali",
+   "ikiz": "i3",
+   "vurgu": [
+    "kimler vergi vermiyordu"
+   ],
+   "ne": [
+    "Vergi ödemeyenleri",
+    "Vergiyi ödeyenleri"
+   ],
+   "bolge": [
+    "kimler vergi vermiyordu"
    ]
   }
  ],
@@ -672,5 +785,6 @@
    "aciklama": "Soylular ve din görevlileri vergi vermezken vergi yükü büyük ölçüde halkın üzerindeydi (s. 123).",
    "kavram": "Fransız İhtilali"
   }
- ]
+ ],
+ "testSoru": 10
 }

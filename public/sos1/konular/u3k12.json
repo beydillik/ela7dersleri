@@ -312,7 +312,8 @@
    ],
    "bolge": [
     "neden özgün bir kimlik kazandı"
-   ]
+   ],
+   "kavram": "Osmanlı Mimarisi"
   },
   {
    "soru": "Minyatürlerde neler resmedilirdi?",
@@ -329,7 +330,8 @@
    ],
    "bolge": [
     "Minyatürlerde neler resmedilirdi"
-   ]
+   ],
+   "kavram": "Süsleme Sanatları"
   },
   {
    "soru": "Mozart'ın Türk Marşı neyin örneğidir?",
@@ -346,7 +348,8 @@
    ],
    "bolge": [
     "Mozart'ın Türk Marşı neyin örneğidir"
-   ]
+   ],
+   "kavram": "Mehter Takımı"
   },
   {
    "soru": "Osmanlı evlerinde sofraya önce kimler otururdu?",
@@ -364,6 +367,7 @@
    "bolge": [
     "önce kimler otururdu"
    ],
+   "kavram": "Günlük Hayat",
    "vurgu": [
     "kimler",
     "önce"
@@ -384,7 +388,8 @@
    ],
    "bolge": [
     "köylerde geçim kaynağı neydi"
-   ]
+   ],
+   "kavram": "Günlük Hayat"
   },
   {
    "soru": "Vakıf yapılarının giderleri nasıl karşılanırdı?",
@@ -401,18 +406,29 @@
    ],
    "bolge": [
     "giderleri nasıl karşılanırdı"
-   ]
+   ],
+   "kavram": "Vakıf"
   },
   {
    "soru": "Vakıf anlayışının temelleri hangi devlet zamanında atıldı?",
    "secenekler": [
     "Bizans",
     "Selçuklular",
-    "Memlükler"
+    "Osmanlı"
    ],
    "dogru": 1,
    "ipucu": "Osmanlı'dan önce Anadolu'da hangi Türk devleti vardı?",
    "aciklama": "Selçukluların temellerini attığı vakıf anlayışı Osmanlı Devleti zamanında altın çağını yaşadı. (s. 148)",
+   "kavram": "Vakıf",
+   "ikiz": "i3",
+   "vurgu": [
+    "temelleri",
+    "hangi devlet"
+   ],
+   "ne": [
+    "Temellerin atıldığı devleti",
+    "Altın çağın yaşandığı devleti"
+   ],
    "tetik": [
     "hangi devlet"
    ],
@@ -435,6 +451,16 @@
    ],
    "bolge": [
     "ne anlama gelir"
+   ],
+   "kavram": "Ahilik",
+   "ikiz": "i2",
+   "vurgu": [
+    "kapısı açık olmalı",
+    "ne anlama gelir"
+   ],
+   "ne": [
+    "“Kapısı açık” kuralının anlamını",
+    "“Eli açık” kuralının anlamını"
    ]
   },
   {
@@ -452,6 +478,16 @@
    ],
    "bolge": [
     "Hangisi loncaların görevlerinden biridir"
+   ],
+   "kavram": "Lonca",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "biridir"
+   ],
+   "ne": [
+    "Loncaların görevi olanı",
+    "Loncaların görevi olmayanı"
    ]
   },
   {
@@ -469,6 +505,85 @@
    ],
    "bolge": [
     "hangi değerlerin etkisi vardı"
+   ],
+   "kavram": "Vakıf"
+  },
+  {
+   "soru": "Hangisi loncaların görevlerinden biri değildir?",
+   "secenekler": [
+    "Kaliteyi denetlemek",
+    "Fiyatları kontrol altında tutmak",
+    "Fetva vermek"
+   ],
+   "dogru": 2,
+   "ipucu": "Lonca bir meslek örgütüdür. Hangisi meslekle ilgili değil?",
+   "aciklama": "Loncalar meslekle ilgili işler yapardı; fetva vermek onların görevi değildi (s. 150).",
+   "kavram": "Lonca",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "biri değildir"
+   ],
+   "ne": [
+    "Loncaların görevi olmayanı",
+    "Loncaların görevi olanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "görevlerinden biri değildir"
+   ]
+  },
+  {
+   "soru": "Ahilikte \"eli açık olmalı\" kuralı ne anlama gelir?",
+   "secenekler": [
+    "Cömert olmak",
+    "Kusur görmemek",
+    "Misafirperver olmak"
+   ],
+   "dogru": 0,
+   "ipucu": "Eli açık olan kişi sahip olduklarını paylaşır.",
+   "aciklama": "Eli açık olmalı: cömert olmak (s. 150).",
+   "kavram": "Ahilik",
+   "ikiz": "i2",
+   "vurgu": [
+    "eli açık olmalı",
+    "ne anlama gelir"
+   ],
+   "ne": [
+    "“Eli açık” kuralının anlamını",
+    "“Kapısı açık” kuralının anlamını"
+   ],
+   "bolge": [
+    "ne anlama gelir"
+   ]
+  },
+  {
+   "soru": "Vakıf anlayışı hangi devlet zamanında altın çağını yaşadı?",
+   "secenekler": [
+    "Selçuklular",
+    "Osmanlı",
+    "Bizans"
+   ],
+   "dogru": 1,
+   "ipucu": "Temelleri atıldıktan sonra vakıf anlayışını en çok geliştiren devleti düşün.",
+   "aciklama": "Vakıf anlayışı Osmanlı Devleti zamanında altın çağını yaşadı (s. 148).",
+   "kavram": "Vakıf",
+   "ikiz": "i3",
+   "vurgu": [
+    "altın çağını",
+    "hangi devlet"
+   ],
+   "ne": [
+    "Altın çağın yaşandığı devleti",
+    "Temellerin atıldığı devleti"
+   ],
+   "tetik": [
+    "hangi devlet"
+   ],
+   "bolge": [
+    "hangi devlet zamanında altın çağını yaşadı"
    ]
   }
  ],
@@ -693,5 +808,6 @@
    "aciklama": "Osmanlı şehirlerinde yaşam cami, çarşı ve mahalle etrafında örgütlendi. Tarım ve hayvancılık köylerin geçim kaynağıydı (s. 147).",
    "kavram": "Günlük Hayat"
   }
- ]
+ ],
+ "testSoru": 10
 }

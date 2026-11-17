@@ -305,7 +305,8 @@
    "bolge": [
     "Fetihten önce",
     "nerede kalıyordu"
-   ]
+   ],
+   "kavram": "Fethin Nedenleri"
   },
   {
    "soru": "Doğu Roma'nın Anadolu'daki Türk beyliklerini Osmanlı'ya karşı kışkırtması fethin hangi nedenidir?",
@@ -322,6 +323,16 @@
    ],
    "bolge": [
     "fethin hangi nedenidir"
+   ],
+   "kavram": "Fethin Nedenleri",
+   "ikiz": "i1",
+   "vurgu": [
+    "kışkırtması",
+    "hangi nedenidir"
+   ],
+   "ne": [
+    "Beylikleri kışkırtmanın neden türünü",
+    "Ticaret yollarının neden türünü"
    ]
   },
   {
@@ -341,9 +352,15 @@
     "hangisi",
     "Osmanlı'nın fetih için yaptığı hazırlıklardan biri DEĞİLDİR"
    ],
+   "kavram": "Doğu Roma'nın Savunması",
+   "ikiz": "i2",
    "vurgu": [
     "hangisi",
     "DEĞİLDİR"
+   ],
+   "ne": [
+    "Osmanlı'nın yapmadığı hazırlığı",
+    "Osmanlı'nın yaptığı hazırlığı"
    ]
   },
   {
@@ -361,7 +378,8 @@
    ],
    "bolge": [
     "Grejuva (Rum ateşi) neydi"
-   ]
+   ],
+   "kavram": "Doğu Roma'nın Savunması"
   },
   {
    "soru": "Osmanlı ordusu İstanbul önüne hangi tarihte harekete geçti?",
@@ -378,6 +396,16 @@
    ],
    "bolge": [
     "hangi tarihte harekete geçti"
+   ],
+   "kavram": "Gemilerin Karadan Yürütülmesi",
+   "ikiz": "i3",
+   "vurgu": [
+    "harekete geçti",
+    "hangi tarihte"
+   ],
+   "ne": [
+    "Kuşatmanın başladığı tarihi",
+    "Son hücumun başladığı tarihi"
    ]
   },
   {
@@ -395,7 +423,8 @@
    ],
    "bolge": [
     "kaç gün sürdü"
-   ]
+   ],
+   "kavram": "Fethin Sonuçları"
   },
   {
    "soru": "Zor günlerde manevi destek vererek ordunun fetih azmini güçlendiren hoca kimdi?",
@@ -413,7 +442,8 @@
    "bolge": [
     "manevi destek vererek",
     "hoca kimdi"
-   ]
+   ],
+   "kavram": "Gemilerin Karadan Yürütülmesi"
   },
   {
    "soru": "Aşağıdakilerden hangisi fethin DÜNYA tarihi açısından sonuçlarındandır?",
@@ -431,7 +461,8 @@
    "bolge": [
     "hangisi",
     "DÜNYA tarihi açısından sonuçlarındandır"
-   ]
+   ],
+   "kavram": "Fethin Sonuçları"
   },
   {
    "soru": "İstanbul'un fethiyle hangi devlet yıkıldı?",
@@ -448,7 +479,8 @@
    ],
    "bolge": [
     "hangi devlet yıkıldı"
-   ]
+   ],
+   "kavram": "Fethin Sonuçları"
   },
   {
    "soru": "Fatih'in, şehre girince halkın hayatına ve hürriyetine güvence vermesi hangi politikaya örnektir?",
@@ -465,6 +497,87 @@
    ],
    "bolge": [
     "hangi politikaya örnektir"
+   ]
+  },
+  {
+   "soru": "İstanbul'un ticaret yolları üzerinde bulunması fethin hangi nedenidir?",
+   "secenekler": [
+    "Ekonomik",
+    "Siyasi",
+    "Dinî"
+   ],
+   "dogru": 0,
+   "ipucu": "Ticaret yolu para kazanmakla mı, devletler arası ilişkilerle mi ilgili?",
+   "aciklama": "Ticaret yolları üzerinde bulunmak ekonomik bir nedendir (s. 97).",
+   "kavram": "Fethin Nedenleri",
+   "ikiz": "i1",
+   "vurgu": [
+    "ticaret yolları",
+    "hangi nedenidir"
+   ],
+   "ne": [
+    "Ticaret yollarının neden türünü",
+    "Beylikleri kışkırtmanın neden türünü"
+   ],
+   "tetik": [
+    "hangi nedenidir"
+   ],
+   "bolge": [
+    "fethin hangi nedenidir"
+   ]
+  },
+  {
+   "soru": "Aşağıdakilerden hangisi Osmanlı'nın fetih için yaptığı hazırlıklardan biridir?",
+   "secenekler": [
+    "Surları onarmak",
+    "Haliç girişine zincir çekmek",
+    "Şahi topları döktürmek"
+   ],
+   "dogru": 2,
+   "ipucu": "Önce her hazırlığı hangi tarafın yaptığını düşün: Osmanlı mı, Doğu Roma mı?",
+   "aciklama": "Şahi toplarını Osmanlı, Macar usta Urban'a döktürdü. Surları onarmak Doğu Roma'nın savunmasıydı (s. 98–99).",
+   "kavram": "Şahi Topları",
+   "ikiz": "i2",
+   "vurgu": [
+    "hangisi",
+    "biridir"
+   ],
+   "ne": [
+    "Osmanlı'nın yaptığı hazırlığı",
+    "Osmanlı'nın yapmadığı hazırlığı"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "hazırlıklardan biridir"
+   ]
+  },
+  {
+   "soru": "Osmanlı ordusu son büyük hücuma hangi tarihte başladı?",
+   "secenekler": [
+    "29 Mayıs 1453",
+    "6 Nisan 1453",
+    "1451"
+   ],
+   "dogru": 0,
+   "ipucu": "Fethin Sonuçları kartının ilk cümlesine bak.",
+   "aciklama": "Son büyük hücum 29 Mayıs 1453'te başladı ve şehir fethedildi (s. 101).",
+   "kavram": "Fethin Sonuçları",
+   "ikiz": "i3",
+   "vurgu": [
+    "son büyük hücuma",
+    "hangi tarihte"
+   ],
+   "ne": [
+    "Son hücumun başladığı tarihi",
+    "Kuşatmanın başladığı tarihi"
+   ],
+   "tetik": [
+    "hangi tarihte"
+   ],
+   "bolge": [
+    "son büyük hücuma hangi tarihte başladı"
    ]
   }
  ],
@@ -684,5 +797,6 @@
    "aciklama": "9 Nisan'da Haliç'teki zinciri aşma girişimi başarısız olunca gemiler kızaklarla karadan Haliç'e indirildi. Son hücum ve fetih bundan sonra gerçekleşti (s. 101).",
    "kavram": "Gemilerin Karadan Yürütülmesi"
   }
- ]
+ ],
+ "testSoru": 10
 }
