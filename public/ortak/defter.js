@@ -1918,12 +1918,11 @@
     const dikkat = !!(S.data && S.data.dikkat) && !opts.classMode && !document.body.classList.contains("sinif");
     const cevapAlan = kind === "nokta" ? $(".sd-pick", el) : $(".kp", el), kalpAlan = $(".q-text > span:last-child", el);
     const taze = state.result === undefined && !(state.wrong || []).length;
-    // Soru öncesi adım kapalıyken (veli ayarı ya da kademeli) Test'te dokunma yok, soru kelimesi sarı (17 Kasım 2026). Öğren'deki matematik soruları değişmedi.
-    const vurgulu = dikkat && kalpAlan && okuPilot() && vurguDuz(o) && opts.test && (state.kalp === -3 || (taze && state.kalp === undefined && !onAdimAcik()));
-    if (vurgulu) { vurguCiz(kalpAlan, o); state.kalp = -3; }
-    else if (dikkat && cevapAlan && kalpAlan && kalpDuz(o)) {
+    // Tuş takımı ve sayı doğrusu sorularında sorunun kalbine dokunma her zaman kalır (Kemal'in kararı, 17 Kasım 2026: problemde ne istendiğini
+    // bulmak çözümün parçası). Soru öncesi adım ayarından etkilenmez, kademeli sayaca yazılmaz; seçmeli matematik soruları genel kurala uyar.
+    if (dikkat && cevapAlan && kalpAlan && kalpDuz(o)) {
       if (!taze || !kalpGerek(o, state)) { if (state.kalp >= 0) kalpCiz(kalpAlan, o, false); }
-      else { cevapAlan.hidden = true; kalpBul(kalpAlan, o, state, sonuc => { if (sonuc >= 0 && opts.test && okuPilot()) onAdimKaydet("adim", sonuc === 1); cevapAlan.hidden = false; cevapAlan.scrollIntoView({ block: "nearest", behavior: "smooth" }); }); }
+      else { cevapAlan.hidden = true; kalpBul(kalpAlan, o, state, () => { cevapAlan.hidden = false; cevapAlan.scrollIntoView({ block: "nearest", behavior: "smooth" }); }); }
     }
     // denk: true → değeri aynı olan her yazım kabul (2/4 = 1/2); yoksa yalnızca cevap ve kabul listesi
     const dogruMu = v => kind === "nokta" ? ayniSayi(v, o.nokta) : [o.cevap, ...(o.kabul || [])].some(c => normSayi(c) === normSayi(v) || (o.denk && ayniSayi(c, v)));
