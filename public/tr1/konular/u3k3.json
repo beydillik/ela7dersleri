@@ -374,9 +374,14 @@
    "bolge": [
     "giriş bölümüyle ilgili hangisi doğrudur"
    ],
+   "ikiz": "i1",
    "vurgu": [
-    "hangisi",
-    "doğrudur"
+    "giriş bölümüyle",
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "Giriş bölümü hakkında doğru bilgiyi",
+    "Sonuç bölümü hakkında doğru bilgiyi"
    ]
   },
   {
@@ -431,6 +436,16 @@
    ],
    "bolge": [
     "hangisi gelirse akış bozulmaz"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Kış geldi",
+    "karla kaplandı",
+    "Boşluğa hangisi"
+   ],
+   "ne": [
+    "Kış ve kar cümlelerini bağlayan ifadeyi",
+    "Soğuk ve mont cümlelerini bağlayan ifadeyi"
    ]
   },
   {
@@ -449,6 +464,15 @@
    ],
    "bolge": [
     "hangi yol kullanılmıştır"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "göre daha uzundur",
+    "hangi yol"
+   ],
+   "ne": [
+    "“Daha uzundur” cümlesindeki yolu",
+    "“Pamuk gibi” cümlesindeki yolu"
    ]
   },
   {
@@ -601,6 +625,88 @@
     "anlatıma katkısı nedir"
    ],
    "serit": "Sayıların metinde ne işe yaradığı"
+  },
+  {
+   "soru": "Bir metnin sonuç bölümüyle ilgili hangisi doğrudur?",
+   "secenekler": [
+    "Konuyu tanıtır, ilgi çeker.",
+    "Ana fikri toparlayarak bitirir.",
+    "Metnin en uzun bölümüdür."
+   ],
+   "dogru": 1,
+   "ipucu": "“Sonuç olarak” ile başlayan paragraf ne yapıyordu?",
+   "aciklama": "Sonuç anlatılanları toparlar ve ana fikri bir kez daha vurgular (s. 167).",
+   "kavram": "Sonuç",
+   "ikiz": "i1",
+   "vurgu": [
+    "sonuç bölümüyle",
+    "hangisi doğrudur"
+   ],
+   "ne": [
+    "Sonuç bölümü hakkında doğru bilgiyi",
+    "Giriş bölümü hakkında doğru bilgiyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "sonuç bölümüyle ilgili hangisi doğrudur"
+   ]
+  },
+  {
+   "soru": "“Bulutlar pamuk gibi beyazdı.” cümlesinde hangi yol kullanılmıştır?",
+   "secenekler": [
+    "Benzetme",
+    "Karşılaştırma",
+    "Tanımlama"
+   ],
+   "dogru": 0,
+   "ipucu": "Cümledeki ipucu kelimeyi bul.",
+   "aciklama": "“gibi” benzetmenin ipucudur: Bulutlar beyazlıkta pamuğa benzetilmiş (s. 137).",
+   "kavram": "Yolu Metinde Bulma",
+   "ikiz": "i2",
+   "vurgu": [
+    "pamuk gibi",
+    "hangi yol"
+   ],
+   "ne": [
+    "“Pamuk gibi” cümlesindeki yolu",
+    "“Daha uzundur” cümlesindeki yolu"
+   ],
+   "tetik": [
+    "hangi yol"
+   ],
+   "bolge": [
+    "hangi yol kullanılmıştır"
+   ]
+  },
+  {
+   "soru": "“Hava çok soğuktu. ___ Ali montunu giymedi.” Boşluğa hangisi gelirse akış bozulmaz?",
+   "secenekler": [
+    "Bu yüzden",
+    "Oysa",
+    "Örneğin"
+   ],
+   "dogru": 1,
+   "ipucu": "Soğukta mont giymemek beklenen bir şey mi?",
+   "aciklama": "Soğukta mont giymemek beklenenin tersidir; karşıt düşünceyi “oysa” bağlar (s. 167).",
+   "kavram": "Bölümler Arası Akış",
+   "ikiz": "i3",
+   "vurgu": [
+    "çok soğuktu",
+    "giymedi",
+    "Boşluğa hangisi"
+   ],
+   "ne": [
+    "Soğuk ve mont cümlelerini bağlayan ifadeyi",
+    "Kış ve kar cümlelerini bağlayan ifadeyi"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "Boşluğa hangisi gelirse akış bozulmaz"
+   ]
   }
  ],
  "dikkat": true,
@@ -756,5 +862,6 @@
     "anlatıma ne katar"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }

@@ -369,6 +369,14 @@
    ],
    "bolge": [
     "pekiştirmeli bir kelime vardır"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "pekiştirmeli"
+   ],
+   "ne": [
+    "Pekiştirmeli kelimenin geçtiği cümleyi",
+    "İkilemenin geçtiği cümleyi"
    ]
   },
   {
@@ -387,6 +395,14 @@
    ],
    "bolge": [
     "pekiştirilmiş hâli hangisidir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "pekiştirilmiş hâli"
+   ],
+   "ne": [
+    "“Mavi”nin pekiştirilmiş hâlini",
+    "“Mavi”nin ikilemeli hâlini"
    ]
   },
   {
@@ -405,6 +421,14 @@
    ],
    "bolge": [
     "yazım yanlışı vardır"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "yazım yanlışı vardır"
+   ],
+   "ne": [
+    "Yazım yanlışı olan cümleyi",
+    "Yazım yanlışı olmayan cümleyi"
    ]
   },
   {
@@ -600,6 +624,84 @@
     "hangisi söylenemez"
    ],
    "serit": "Metinde yazanlarla çelişen yargı"
+  },
+  {
+   "soru": "Hangi cümlede ikileme vardır?",
+   "secenekler": [
+    "Odası tertemiz olmuştu.",
+    "Odası temiz temiz kokuyordu.",
+    "Odası çok güzeldi."
+   ],
+   "dogru": 1,
+   "ipucu": "Aynı kelimenin ayrı ayrı iki kez yazıldığı cümleyi ara.",
+   "aciklama": "“temiz temiz” ikilemedir, ayrı yazılır; “tertemiz” pekiştirmedir, bitişik yazılır (pekiştirme: s. 131; ikileme: 1. Tema).",
+   "kavram": "Pekiştirmeler Bitişik Yazılır",
+   "ikiz": "i1",
+   "vurgu": [
+    "ikileme"
+   ],
+   "ne": [
+    "İkilemenin geçtiği cümleyi",
+    "Pekiştirmeli kelimenin geçtiği cümleyi"
+   ],
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "Hangi cümlede ikileme vardır"
+   ]
+  },
+  {
+   "soru": "“Mavi” kelimesinin ikilemeli hâli hangisidir?",
+   "secenekler": [
+    "mavi mavi",
+    "masmavi",
+    "mavimsi"
+   ],
+   "dogru": 0,
+   "ipucu": "İkilemede kelime ayrı ayrı iki kez söylenir.",
+   "aciklama": "“mavi mavi” ikilemedir, ayrı yazılır; “masmavi” pekiştirmedir (pekiştirme: s. 131; ikileme: 1. Tema).",
+   "kavram": "Pekiştirmeler Bitişik Yazılır",
+   "ikiz": "i2",
+   "vurgu": [
+    "ikilemeli hâli"
+   ],
+   "ne": [
+    "“Mavi”nin ikilemeli hâlini",
+    "“Mavi”nin pekiştirilmiş hâlini"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "ikilemeli hâli hangisidir"
+   ]
+  },
+  {
+   "soru": "Hangi cümlede yazım yanlışı yoktur?",
+   "secenekler": [
+    "Düşüncelerini dos doğru anlattı.",
+    "Kitabın sayfaları sap sarı olmuştu.",
+    "Gökyüzü masmavi görünüyordu."
+   ],
+   "dogru": 2,
+   "ipucu": "Pekiştirmeler nasıl yazılıyordu: ayrı mı, bitişik mi?",
+   "aciklama": "Pekiştirmeler bitişik yazılır: dosdoğru, sapsarı, masmavi (s. 131).",
+   "kavram": "Pekiştirmeler Bitişik Yazılır",
+   "ikiz": "i3",
+   "vurgu": [
+    "yazım yanlışı yoktur"
+   ],
+   "ne": [
+    "Yazım yanlışı olmayan cümleyi",
+    "Yazım yanlışı olan cümleyi"
+   ],
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "yazım yanlışı yoktur"
+   ]
   }
  ],
  "dikkat": true,
@@ -758,5 +860,6 @@
     "(!) işaretinin görevini yazınız"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }

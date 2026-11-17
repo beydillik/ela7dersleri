@@ -21,7 +21,7 @@ Okuma pilotu (ders.json "okuPilot": true; fen1, 11 Kasım 2026) — hepsi isteğ
   EKSORU  = {konu: [ {soru, secenekler[3], dogru, ipucu, aciklama, kavram}, … ]}   konu testine eklenen sorular (ikizler için); soru metni
                                               aynıysa yerindekini günceller. Bölgesi BOLGE'de olmalı.
   IKIZ    = {konu: [[soru A, soru B], …]}     ikiz çift: aynı kök, tek kelime farkı; testte art arda gelir. İkisinde de NE zorunlu.
-  TESTSORU = {konu: sayı}                     testte sorulacak soru sayısı (havuz büyüdüyse); yoksa bütün sorular.
+  TESTSORU = {konu: sayı}                     testte sorulacak soru sayısı (havuz büyüdüyse); yoksa bütün sorular. Metinli bölümü yoksa kanıtlı sorular hep sorulur.
 Hata varsa hiçbir dosya yazılmaz. Sayıları yazdırır. Kitap sayfası kuralı: [s. N] işaretinin ÜSTÜNDEKİ metin N. sayfadadır.
 """
 import json, re, sys, os, glob
@@ -176,11 +176,12 @@ for kod in (ISTENEN or sorted(veri["TEKRAR"])):
             elif sm not in veri["NE"]: hata.append(f"{kod} IKIZ {j+1}: ikiz soruya NE yazılmalı: {sm[:60]}")
             else: test_soru[sm]["ikiz"] = f"i{j+1}"
     if kod in veri["TESTSORU"]:
-        if not veri["METINLI"].get(kod): hata.append(f"{kod}: TESTSORU yalnız metinli sorusu olan konuda çalışır")
+        # metinli bölümü olmayan konuda (Türkçe) motor kanıtlı soruları her zaman sorar, kalanı TESTSORU'ya tamamlar (17 Kasım 2026)
         if veri["TESTSORU"][kod] > len(d["sorular"]): hata.append(f"{kod}: TESTSORU soru sayısından büyük")
         d["testSoru"] = veri["TESTSORU"][kod]
     else: d.pop("testSoru", None)
     n = 0; nv = nn = 0
+    test_idler = {id(x) for x in d["sorular"]}
     for q in [k["soru"] for k in d["kavramlar"] if k.get("soru")] + d["sorular"]:
         q.pop("vurgu", None); q.pop("ne", None)
         if q["soru"] in veri["VURGU"]:
@@ -188,7 +189,7 @@ for kod in (ISTENEN or sorted(veri["TEKRAR"])):
             for b in q["vurgu"]:
                 if b not in q["soru"]: hata.append(f"{kod}: vurgu soruda yok: {b} ← {q['soru'][:60]}")
                 elif not kelime_sinir(q["soru"], b): hata.append(f"{kod}: vurgu kelimeyi ortadan kesiyor: {b} ← {q['soru'][:60]}")
-        if q["soru"] in veri["NE"]:
+        if q["soru"] in veri["NE"] and id(q) in test_idler:   # NE yalnız Test sorularına (aynı metinli kart sorusuna yapışmaz; 17 Kasım 2026)
             ne = veri["NE"][q["soru"]]; nn += 1
             if len(ne) != 2 or ne[0] == ne[1] or not all(ne): hata.append(f"{kod}: NE iki farklı ifade olmalı ← {q['soru'][:60]}")
             if q.get("kanit"): hata.append(f"{kod}: kanıtlı soruda NE kullanılmaz ← {q['soru'][:60]}")

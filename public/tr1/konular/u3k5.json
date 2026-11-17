@@ -417,6 +417,14 @@
    ],
    "bolge": [
     "gerçekleşme anında oluyor"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "gerçekleşme anında"
+   ],
+   "ne": [
+    "Şu an olan işi anlatan cümleyi",
+    "Sonra olacak işi anlatan cümleyi"
    ]
   },
   {
@@ -435,6 +443,15 @@
    ],
    "bolge": [
     "gerçekleşme anından sonrasını gösterir"
+   ],
+   "ikiz": "i3",
+   "vurgu": [
+    "Bu akşam",
+    "sonrasını"
+   ],
+   "ne": [
+    "Akşam olacak işi gösteren fiili",
+    "Dün olmuş işi gösteren fiili"
    ]
   },
   {
@@ -453,6 +470,15 @@
    ],
    "bolge": [
     "yargının sürekliliğini anlatır"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "alışkanlığı",
+    "sürekliliğini"
+   ],
+   "ne": [
+    "Her zaman olan işi anlatan cümleyi",
+    "Önceden olmuş işi anlatan cümleyi"
    ]
   },
   {
@@ -622,6 +648,85 @@
     "hangisi söylenemez"
    ],
    "serit": "Metinde yazanlarla çelişen yargı"
+  },
+  {
+   "soru": "Hangi cümlede yargı gerçekleşme anından sonrasını gösteriyor?",
+   "secenekler": [
+    "Kardeşim dün resim yaptı.",
+    "Kardeşim şu an resim yapıyor.",
+    "Kardeşim yarın resim yapacak."
+   ],
+   "dogru": 2,
+   "ipucu": "Henüz olmamış işi anlatan fiil ekini bul.",
+   "aciklama": "“yap-acak” ve “yarın”: İş henüz olmadı, sonra olacak (s. 141).",
+   "kavram": "Gerçekleşme Anından Sonrası",
+   "ikiz": "i1",
+   "vurgu": [
+    "gerçekleşme anından sonrasını"
+   ],
+   "ne": [
+    "Sonra olacak işi anlatan cümleyi",
+    "Şu an olan işi anlatan cümleyi"
+   ],
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "gerçekleşme anından sonrasını gösteriyor"
+   ]
+  },
+  {
+   "soru": "Hangi cümle yargının gerçekleşme anından öncesini anlatır?",
+   "secenekler": [
+    "Ali bu sabah erken kalktı.",
+    "Ali şimdi kahvaltı ediyor.",
+    "Ali her sabah erken kalkar."
+   ],
+   "dogru": 0,
+   "ipucu": "Konuştuğumuz andan önce olmuş, bitmiş işi bul.",
+   "aciklama": "“kalk-tı” ve “bu sabah”: İş konuştuğumuz andan önce olmuş (s. 141).",
+   "kavram": "Gerçekleşme Anından Öncesi",
+   "ikiz": "i2",
+   "vurgu": [
+    "gerçekleşme anından öncesini"
+   ],
+   "ne": [
+    "Önceden olmuş işi anlatan cümleyi",
+    "Her zaman olan işi anlatan cümleyi"
+   ],
+   "tetik": [
+    "Hangi cümle"
+   ],
+   "bolge": [
+    "gerçekleşme anından öncesini anlatır"
+   ]
+  },
+  {
+   "soru": "“Dün akşam komşularımız bize .......” Boşluğa hangisi gelirse yargı gerçekleşme anından öncesini gösterir?",
+   "secenekler": [
+    "geldi",
+    "gelir",
+    "gelecek"
+   ],
+   "dogru": 0,
+   "ipucu": "“Dün akşam” ne zamanı gösterir? Fiilin eki de aynı zamanı göstermeli.",
+   "aciklama": "“gel-di” ve “dün akşam”: İş önceden olmuş; gerçekleşme anından öncesi (s. 141).",
+   "kavram": "Gerçekleşme Anından Öncesi",
+   "ikiz": "i3",
+   "vurgu": [
+    "Dün akşam",
+    "öncesini"
+   ],
+   "ne": [
+    "Dün olmuş işi gösteren fiili",
+    "Akşam olacak işi gösteren fiili"
+   ],
+   "tetik": [
+    "hangisi"
+   ],
+   "bolge": [
+    "gerçekleşme anından öncesini gösterir"
+   ]
   }
  ],
  "dikkat": true,
@@ -780,5 +885,6 @@
     "arasındaki zaman farkını yazınız"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }

@@ -430,12 +430,20 @@
    "secenekler": [
     "Dört",
     "İki",
-    "Altı"
+    "Beş"
    ],
    "dogru": 0,
    "ipucu": "Kitap “Söz Söyle”yi dörtlüklerle verir. Dörtlükte kaç mısra olur?",
    "aciklama": "Her bölüm bir dörtlüktür; dört mısra vardır (s. 159).",
    "kavram": "Şiirin Bölümleri ve Mısra Sayısı",
+   "ikiz": "i3",
+   "vurgu": [
+    "bir bölümde kaç mısra"
+   ],
+   "ne": [
+    "Bir bölümdeki mısra sayısını",
+    "Şiirdeki bölüm sayısını"
+   ],
    "tetik": [
     "kaç"
    ],
@@ -495,6 +503,14 @@
    ],
    "bolge": [
     "Hangi dizede benzetme vardır"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "benzetme"
+   ],
+   "ne": [
+    "Benzetme olan dizeyi",
+    "Kişileştirme olan dizeyi"
    ]
   },
   {
@@ -531,6 +547,15 @@
    ],
    "bolge": [
     "söz sanatı hangisidir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "ırmaklar aktı",
+    "söz sanatı"
+   ],
+   "ne": [
+    "Irmak cümlesindeki söz sanatını",
+    "Melek cümlesindeki söz sanatını"
    ]
   },
   {
@@ -667,6 +692,85 @@
     "hangisi söylenemez"
    ],
    "serit": "Dörtlükte yazanlarla çelişen yargı"
+  },
+  {
+   "soru": "Hangi dizede kişileştirme vardır?",
+   "secenekler": [
+    "Bulutlar pamuk gibi yumuşacıktı.",
+    "Yıldızlar bize göz kırptı.",
+    "Bin yıl bekledim seni."
+   ],
+   "dogru": 1,
+   "ipucu": "İnsana ait bir davranış hangi varlığa verilmiş?",
+   "aciklama": "Göz kırpmak insana aittir; yıldızlara verilmiş: kişileştirme (s. 160).",
+   "kavram": "Dizede Kişileştirme",
+   "ikiz": "i1",
+   "vurgu": [
+    "kişileştirme"
+   ],
+   "ne": [
+    "Kişileştirme olan dizeyi",
+    "Benzetme olan dizeyi"
+   ],
+   "tetik": [
+    "Hangi dizede"
+   ],
+   "bolge": [
+    "Hangi dizede kişileştirme vardır"
+   ]
+  },
+  {
+   "soru": "“Annem bir melek gibi uyuyordu.” cümlesindeki söz sanatı hangisidir?",
+   "secenekler": [
+    "Benzetme",
+    "Kişileştirme",
+    "Abartma"
+   ],
+   "dogru": 0,
+   "ipucu": "Cümlede “gibi” var mı?",
+   "aciklama": "“gibi” var; anne uyurken meleğe benzetilmiş: benzetme (s. 160).",
+   "kavram": "Dizede Benzetme",
+   "ikiz": "i2",
+   "vurgu": [
+    "melek",
+    "söz sanatı"
+   ],
+   "ne": [
+    "Melek cümlesindeki söz sanatını",
+    "Irmak cümlesindeki söz sanatını"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "söz sanatı hangisidir"
+   ]
+  },
+  {
+   "soru": "Karacaoğlan'ın “Öğüt” şiiri kaç dörtlükten oluşur?",
+   "secenekler": [
+    "Dört",
+    "Beş",
+    "Altı"
+   ],
+   "dogru": 1,
+   "ipucu": "Soru bir dörtlükteki mısraları değil, dörtlüklerin sayısını soruyor.",
+   "aciklama": "“Öğüt” 5 dörtlükten oluşur; her dörtlükte 4 mısra vardır (s. 156).",
+   "kavram": "Şiirin Bölümleri ve Mısra Sayısı",
+   "ikiz": "i3",
+   "vurgu": [
+    "kaç dörtlükten"
+   ],
+   "ne": [
+    "Şiirdeki dörtlük sayısını",
+    "Bir dörtlükteki mısra sayısını"
+   ],
+   "tetik": [
+    "kaç"
+   ],
+   "bolge": [
+    "kaç dörtlükten oluşur"
+   ]
   }
  ],
  "dikkat": true,
@@ -825,5 +929,6 @@
     "söz sanatını adıyla yazıp nedenini açıklayınız"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }

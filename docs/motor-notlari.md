@@ -107,6 +107,14 @@ Kemal taslakta Fen u3k1 testini denedi: son 2 soru (metinli) hâlâ "sorunun kal
 - Eşikler kalibre değil: pencere kısa (bir testte kapanabilir). Kayıt gelince bak: kapanmadan önce/sonra ilk deneme doğruluğu, soru başına süre, kaç kez geri açıldı.
 - Test: `ONADIM=kademeli|acik|kapali|kapanis|acilis python3 araclar/dikkat/test_dikkat.py <kod> <konu>`.
 
+### İlk dönem kapsamı diğer derslerde (17 Kasım 2026; Kemal'in onayı)
+- **"Ne istiyor" verisi olmayan Test sorusunda dokunma yok:** soru kelimesi sarı, şıklar açık (`kalp: -2`). Ön adım yalnız `ne` yazılmış sorularda (ikizler) çıkar. Matematik tuş takımı / sayı doğrusu soruları ayrı (dokunma kalır).
+- Diğer derslerde yalnız Ela'nın henüz çalışmadığı ünitelere, konu başına 3 ikiz çift; `ne` yalnız ikizlere. Paketsiz konular (tr1 u2, din1, bil1) kapsam dışı: dikkat paketi olmadan motor bunlara dokunmaz, zaten dokunma adımı da yok.
+- **Metinli bölümü olmayan konuda `testSoru`** (Türkçe): `testSec(d.sorular, d.testSoru, kanitli)` — kanıtlı sorular her zaman sorulur, kalan yer ikiz çiftleri ve tek sorularla dolar. Üretici artık `TESTSORU`'yu metinlisiz konuda da kabul eder.
+- Üretici: `NE` yalnız Test sorularına yazılır; aynı metinli kart sorusuna yapışmaz (Türkçe u3k2'de "Hangisi nesnel bir ifadedir?" kart sorusuyla çakıştı).
+- Veri dosyasında `_eski(konu, soru başı, {eski çeldirici: yeni})` yardımcısı: eski sorunun bir çeldiricisini ikiz eşinin cevabıyla değiştirir (örnek `araclar/dikkat/tr1/pilot_u3.py`). Soru başları benzersiz olmalı (ikiz eklenince "Hangisi bir hikâye unsuru" iki soruya uyar).
+- Durum: tr1 3. tema tamam (u3k1–u3k8: 24 ikiz, 25 yeni soru, 48 `ne`). Sırada mat1 u2–u4, sos1 u3 (+ `kavram`), ing1 u3–u5, own1 u3–u4.
+
 ## Kaldığın yer (11 Kasım 2026; bütün dersler)
 - Ders adreste konu olmadan açılınca (`/fen1/`): son çalışılan konu (`son`); o konu tamam (yeşil tik) ise sıradaki tamamlanmamış hazır konu/durak; hiç kayıt yoksa ilk tamamlanmamış konu (eskiden son hazır konu açılıyordu). Sekme: yarım test → Test; Öğren bitmediyse Öğren (kaldığı adım); Öğren bitti ve son sekme Öğren ise Test (`kaldiginYer`).
 - Başlıkta robotlu tek satır not (`kalYerNot`, `.kal-yer`, × ile kapanır); olay `kal-yer`. Adreste konu varsa (ana sayfadaki ünite bağlantısı, menü) not çıkmaz.

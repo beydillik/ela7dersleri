@@ -416,6 +416,15 @@
    ],
    "bolge": [
     "Hangisi bir farklılık cümlesidir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "farklılık"
+   ],
+   "ne": [
+    "Farklılık anlatan cümleyi",
+    "Benzerlik anlatan cümleyi"
    ]
   },
   {
@@ -552,6 +561,15 @@
    ],
    "bolge": [
     "en yüksek olduğu yıl hangisidir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "en yüksek",
+    "hangisidir"
+   ],
+   "ne": [
+    "Arama sayısının en yüksek olduğu yılı",
+    "Arama sayısının en düşük olduğu yılı"
    ]
   },
   {
@@ -664,6 +682,108 @@
    "vurgu": [
     "hangisi",
     "doğrudur"
+   ]
+  },
+  {
+   "soru": "Kitaptaki grafiğe göre arama sayısının en düşük olduğu yıl hangisidir?",
+   "secenekler": [
+    "2016",
+    "2014",
+    "2010"
+   ],
+   "dogru": 0,
+   "ipucu": "En kısa çubuğa bak.",
+   "aciklama": "En düşük değer 2016'daki 2.223'tür; en yüksek 2010'daki 45.172'dir (s. 151).",
+   "kavram": "Grafik Okuma",
+   "ikiz": "i1",
+   "vurgu": [
+    "en düşük",
+    "hangisidir"
+   ],
+   "ne": [
+    "Arama sayısının en düşük olduğu yılı",
+    "Arama sayısının en yüksek olduğu yılı"
+   ],
+   "tetik": [
+    "hangisidir"
+   ],
+   "bolge": [
+    "en düşük olduğu yıl hangisidir"
+   ]
+  },
+  {
+   "soru": "Hangisi bir benzerlik cümlesidir?",
+   "secenekler": [
+    "İki metin de saygıyı önemser.",
+    "Birinci metin aileyi anlatır; ikincisi ise sanal ortamı.",
+    "Birinci metin kısa, ikincisi ise uzundur."
+   ],
+   "dogru": 0,
+   "ipucu": "Ortak yönü gösteren kelimeyi ara.",
+   "aciklama": "“İki metin de” ortak bir yönü gösterir; bu bir benzerliktir. “ise” ile kurulanlar farklılıktır (s. 150).",
+   "kavram": "Benzerlik ve Farklılık",
+   "ikiz": "i2",
+   "vurgu": [
+    "Hangisi",
+    "benzerlik"
+   ],
+   "ne": [
+    "Benzerlik anlatan cümleyi",
+    "Farklılık anlatan cümleyi"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bir benzerlik cümlesidir"
+   ]
+  },
+  {
+   "soru": "Kitaptaki grafikte yatay eksende ne gösterilir?",
+   "secenekler": [
+    "Yıllar",
+    "Arama sayısı",
+    "Grafiğin başlığı"
+   ],
+   "dogru": 0,
+   "ipucu": "Yatay eksen grafiğin altında, soldan sağa uzanır. Altında ne yazıyordu?",
+   "aciklama": "Kitaptaki grafikte yatay eksende yıllar, dikey eksende arama sayısı vardır (s. 151).",
+   "kavram": "Grafik Okuma",
+   "ikiz": "i3",
+   "vurgu": [
+    "yatay eksende",
+    "ne gösterilir"
+   ],
+   "ne": [
+    "Yatay eksenin gösterdiğini",
+    "Dikey eksenin gösterdiğini"
+   ],
+   "bolge": [
+    "yatay eksende ne gösterilir"
+   ]
+  },
+  {
+   "soru": "Kitaptaki grafikte dikey eksende ne gösterilir?",
+   "secenekler": [
+    "Yıllar",
+    "Arama sayısı",
+    "Grafiğin başlığı"
+   ],
+   "dogru": 1,
+   "ipucu": "Dikey eksen grafiğin solunda, aşağıdan yukarı uzanır. Üzerinde hangi sayılar vardı?",
+   "aciklama": "Kitaptaki grafikte yatay eksende yıllar, dikey eksende arama sayısı vardır (s. 151).",
+   "kavram": "Grafik Okuma",
+   "ikiz": "i3",
+   "vurgu": [
+    "dikey eksende",
+    "ne gösterilir"
+   ],
+   "ne": [
+    "Dikey eksenin gösterdiğini",
+    "Yatay eksenin gösterdiğini"
+   ],
+   "bolge": [
+    "dikey eksende ne gösterilir"
    ]
   }
  ],
@@ -822,5 +942,6 @@
     "Sayılarla yazınız"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }

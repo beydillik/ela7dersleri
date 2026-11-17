@@ -388,7 +388,7 @@
   {
    "soru": "Hasan'ın eskici gidince ağlamasının sebebi nedir?",
    "secenekler": [
-    "Ayakkabıları beğenmemesi",
+    "Kalan yolcuların bilmediği bir dilde konuşması",
     "Bir daha Türkçe konuşacak kimse bulamayacağını düşünmesi",
     "Halasının ona kızması"
    ],
@@ -396,6 +396,15 @@
    "ipucu": "Metin, Hasan'ın neden ağladığını açıkça söyler.",
    "aciklama": "Hasan bir daha Türkçe konuşacak adam bulamayacağına ağlar (s. 125).",
    "kavram": "Duygunun Sebebi",
+   "ikiz": "i2",
+   "vurgu": [
+    "eskici gidince",
+    "sebebi nedir"
+   ],
+   "ne": [
+    "Hasan'ın eskici gidince ağlama sebebini",
+    "Hasan'ın vapurda durgunlaşma sebebini"
+   ],
    "tetik": [
     "nedir"
    ],
@@ -407,13 +416,22 @@
    "soru": "Yalnız ve kırgın hisseden biri çoğunlukla nasıl davranır?",
    "secenekler": [
     "Herkese şaka yapar.",
-    "Sürekli şarkı söyler.",
+    "Konuşur, anlatır.",
     "Susar, az konuşur."
    ],
    "dogru": 2,
    "ipucu": "Hasan halasının evinde nasıl davranıyordu?",
    "aciklama": "Yalnız ve kırgın olan çoğunlukla susar; Hasan da haftalarca sustu (s. 123).",
    "kavram": "Duygunun İletişime Etkisi",
+   "ikiz": "i3",
+   "vurgu": [
+    "Yalnız ve kırgın",
+    "nasıl davranır"
+   ],
+   "ne": [
+    "Yalnız ve kırgın birinin davranışını",
+    "Sevinen ve güvenen birinin davranışını"
+   ],
    "tetik": [
     "nasıl"
    ],
@@ -492,9 +510,14 @@
    "bolge": [
     "hikâye unsuru değildir"
    ],
+   "ikiz": "i1",
    "vurgu": [
     "Hangisi",
     "değildir"
+   ],
+   "ne": [
+    "Hikâye unsuru olmayanı",
+    "Hikâye unsuru olanı"
    ]
   },
   {
@@ -628,6 +651,87 @@
     "düğümün başladığı cümle hangisidir"
    ],
    "serit": "Sorunun başladığı, olayların yönünün değiştiği cümle"
+  },
+  {
+   "soru": "Hangisi bir hikâye unsurudur?",
+   "secenekler": [
+    "Sayfa numarası",
+    "Zaman",
+    "Kitabın fiyatı"
+   ],
+   "dogru": 1,
+   "ipucu": "Hikâye Unsurları kartındaki dört soruyu hatırla: Ne, kim, nerede, ne zaman?",
+   "aciklama": "Hikâyenin dört unsuru vardır: olay, şahıs ve varlık kadrosu, mekân ve zaman (s. 130).",
+   "kavram": "Hikâye Unsurları",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "hikâye unsurudur"
+   ],
+   "ne": [
+    "Hikâye unsuru olanı",
+    "Hikâye unsuru olmayanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bir hikâye unsurudur"
+   ]
+  },
+  {
+   "soru": "Hasan'ın vapurda bir durgunluk yaşamasının sebebi nedir?",
+   "secenekler": [
+    "Kalan yolcuların bilmediği bir dilde konuşması",
+    "Bir daha Türkçe konuşacak kimse bulamayacağını düşünmesi",
+    "Halasının ona kızması"
+   ],
+   "dogru": 0,
+   "ipucu": "Vapurda önce eğleniyordu. Çevresinde ne değişti?",
+   "aciklama": "Kalan yolcular bilmediği bir dilde konuşmaya başlayınca Hasan'ı bir durgunluk alır (s. 122).",
+   "kavram": "Duygunun Sebebi",
+   "ikiz": "i2",
+   "vurgu": [
+    "vapurda",
+    "sebebi nedir"
+   ],
+   "ne": [
+    "Hasan'ın vapurda durgunlaşma sebebini",
+    "Hasan'ın eskici gidince ağlama sebebini"
+   ],
+   "tetik": [
+    "nedir"
+   ],
+   "bolge": [
+    "durgunluk yaşamasının sebebi nedir"
+   ]
+  },
+  {
+   "soru": "Sevinen ve kendini güvende hisseden biri çoğunlukla nasıl davranır?",
+   "secenekler": [
+    "Konuşur, anlatır.",
+    "Susar, az konuşur.",
+    "Herkesten saklanır."
+   ],
+   "dogru": 0,
+   "ipucu": "Eskici Türkçe konuşunca Hasan ne yaptı?",
+   "aciklama": "Sevinen ve güvenen kişi konuşur; eskici Türkçe konuşunca altı aydır susan Hasan durmadan konuştu (s. 125).",
+   "kavram": "Duygunun İletişime Etkisi",
+   "ikiz": "i3",
+   "vurgu": [
+    "Sevinen ve kendini güvende",
+    "nasıl davranır"
+   ],
+   "ne": [
+    "Sevinen ve güvenen birinin davranışını",
+    "Yalnız ve kırgın birinin davranışını"
+   ],
+   "tetik": [
+    "nasıl"
+   ],
+   "bolge": [
+    "çoğunlukla nasıl davranır"
+   ]
   }
  ],
  "dikkat": true,
@@ -784,5 +888,6 @@
     "yeni bir bölümün başladığını nasıl anlarız"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }

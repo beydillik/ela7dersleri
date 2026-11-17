@@ -281,6 +281,10 @@
     ],
     "bolge": [
      "Hangisi nesnel bir ifadedir"
+    ],
+    "vurgu": [
+     "Hangisi",
+     "nesnel"
     ]
    }
   }
@@ -407,6 +411,14 @@
    "bolge": [
     "Hangi cümlede",
     "sayı anlamında kullanılmıştır"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "sayı anlamında"
+   ],
+   "ne": [
+    "“Yüz”ün sayı anlamında geçtiği cümleyi",
+    "“Yüz”ün surat anlamında geçtiği cümleyi"
    ]
   },
   {
@@ -414,12 +426,21 @@
    "secenekler": [
     "göz kulak olmak",
     "kitap okumak",
-    "su içmek"
+    "Geçmiş olsun"
    ],
    "dogru": 0,
    "ipucu": "Gerçek anlamından ayrı bir anlam taşıyan sözü ara.",
-   "aciklama": "“Göz kulak olmak” korumak, kollamak demektir; kalıplaşmış bir deyimdir.",
+   "aciklama": "“Göz kulak olmak” korumak, kollamak demektir; kalıplaşmış bir deyimdir. “Geçmiş olsun” ise kalıp ifadedir; yazar metinde dilek sözlerine “deyim” dese de kitap bu ikisini ayırır (s. 134, 138).",
    "kavram": "Deyim",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi",
+    "deyimdir"
+   ],
+   "ne": [
+    "Deyim olanı",
+    "Kalıp ifade olanı"
+   ],
    "tetik": [
     "Hangisi"
    ],
@@ -461,6 +482,15 @@
    ],
    "bolge": [
     "Hangisi öznel bir ifadedir"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "öznel"
+   ],
+   "ne": [
+    "Öznel olan ifadeyi",
+    "Nesnel olan ifadeyi"
    ]
   },
   {
@@ -606,6 +636,86 @@
     "deyim hangisidir"
    ],
    "serit": "Kalıplaşmış, mecaz anlamlı söz (deyim)"
+  },
+  {
+   "soru": "Hangisi nesnel bir ifadedir?",
+   "secenekler": [
+    "Bu şiir okuduğum en etkileyici şiir.",
+    "Şiir dört dörtlükten oluşuyor.",
+    "Bence bu şiirin başlığı çok güzel."
+   ],
+   "dogru": 1,
+   "ipucu": "Hangisinin doğruluğunu herkes sayarak kontrol edebilir?",
+   "aciklama": "Dörtlük sayısı herkesçe kontrol edilebilir; nesneldir. “En etkileyici” ve “bence” kişisel görüştür (s. 138).",
+   "kavram": "Öznel ve Nesnel İfade",
+   "ikiz": "i1",
+   "vurgu": [
+    "Hangisi",
+    "nesnel"
+   ],
+   "ne": [
+    "Nesnel olan ifadeyi",
+    "Öznel olan ifadeyi"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi nesnel bir ifadedir"
+   ]
+  },
+  {
+   "soru": "Hangi cümlede “yüz” kelimesi surat anlamında kullanılmıştır?",
+   "secenekler": [
+    "Yüz sayfalık kitabı bitirdi.",
+    "Yüzünü soğuk suyla yıkadı.",
+    "Yüz metre koştu."
+   ],
+   "dogru": 1,
+   "ipucu": "Hangisinde “yüz” bir sayı değil?",
+   "aciklama": "“Yüzünü yıkadı”da yüz surat demektir; öbürlerinde sayıdır. Yazılışı aynı, anlamı farklı: eş sesli (s. 136).",
+   "kavram": "Eş Sesli Kelimeler",
+   "ikiz": "i2",
+   "vurgu": [
+    "surat anlamında"
+   ],
+   "ne": [
+    "“Yüz”ün surat anlamında geçtiği cümleyi",
+    "“Yüz”ün sayı anlamında geçtiği cümleyi"
+   ],
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "surat anlamında kullanılmıştır"
+   ]
+  },
+  {
+   "soru": "Hangisi bir kalıp ifadedir?",
+   "secenekler": [
+    "göz kulak olmak",
+    "Geçmiş olsun",
+    "kitap okumak"
+   ],
+   "dogru": 1,
+   "ipucu": "Belli bir durumda hep aynı biçimde söylenen hazır söz hangisi?",
+   "aciklama": "“Geçmiş olsun” hasta birine hep aynı biçimde söylenen hazır bir sözdür; “göz kulak olmak” deyimdir. Kitapta «hayırlı olsun», «günaydın» gibi kalıp ifadeler var (s. 134–135); ayrım s. 138'de.",
+   "kavram": "Kalıp İfade",
+   "ikiz": "i3",
+   "vurgu": [
+    "Hangisi",
+    "kalıp ifadedir"
+   ],
+   "ne": [
+    "Kalıp ifade olanı",
+    "Deyim olanı"
+   ],
+   "tetik": [
+    "Hangisi"
+   ],
+   "bolge": [
+    "Hangisi bir kalıp ifadedir"
+   ]
   }
  ],
  "dikkat": true,
@@ -762,5 +872,6 @@
     "öznel mi nesnel mi olduğunu nasıl anlarız"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }

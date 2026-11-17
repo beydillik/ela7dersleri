@@ -732,15 +732,17 @@
     return out;
   }
   // Test için n soru seç: ikiz çiftleri bölünmez; en çok ⌊n/3⌋ çift, kalanı tek sorular (havuz n'den büyükse her çözüşte sorular değişir).
-  function testSec(sorular, n) {
-    const it = sorular.map((q, i) => ({ q, n: i })), cift = {}, tek = [];
+  // sabitMi (isteğe bağlı): her zaman sorulacak sorular (metinli bölümü olmayan Türkçe konularında kanıtlı sorular); n'ye dahil.
+  function testSec(sorular, n, sabitMi) {
+    const hepsi = sorular.map((q, i) => ({ q, n: i })), sabit = sabitMi ? hepsi.filter(x => sabitMi(x.q)) : [], it = hepsi.filter(x => !sabit.includes(x)), cift = {}, tek = [];
+    n = Math.max(1, n - sabit.length);
     it.forEach(x => { if (x.q.ikiz) (cift[x.q.ikiz] = cift[x.q.ikiz] || []).push(x); else tek.push(x); });
     const ciftler = shuffle(Object.values(cift).filter(c => c.length === 2)); Object.values(cift).filter(c => c.length !== 2).forEach(c => tek.push(...c));
     const sec = [], kalanCift = [];
     ciftler.forEach(c => { if (sec.length / 2 < Math.floor(n / 3) && sec.length + 2 <= n) sec.push(...shuffle(c)); else kalanCift.push(c); });
     const yedek = shuffle([...tek, ...kalanCift.map(c => shuffle(c)[0])]);
     while (sec.length < n && yedek.length) sec.push(yedek.shift());
-    return sec;
+    return [...sec, ...sabit];
   }
 
   // Yanlış cevaptan sonra: bölgeyi (gerekirse yeniden) kırmızı gösterip yanıp söndürür; hatırlatma satırını döndürür.
@@ -2838,7 +2840,9 @@
       anahtar: "akis:test:" + S.konu, tur: "test",
       hazirla: () => [...(d.dikkat && d.metinli && d.metinli.length   // metinli sorular kısa soruların yerine geçer; toplam soru sayısı aynı
           ? [...testSec(d.sorular, Math.max(1, (d.testSoru || d.sorular.length) - d.metinli.length)), ...d.metinli.map((q, i) => ({ q, n: 500 + i, son: true }))]
-          : d.sorular.map((q, n) => ({ q, n }))),
+          : d.dikkat && d.testSoru && d.testSoru < d.sorular.length   // metinli bölümü yok ama havuz ikizlerle büyüdü (Türkçe): kanıtlı sorular hep sorulur
+            ? testSec(d.sorular, d.testSoru, kanitli)
+            : d.sorular.map((q, n) => ({ q, n }))),
         ...(d.eskiKonu === false ? [] : TEKRAR.sec(2, new Set((S.isinma && S.isinma[S.konu] || []).map(x => x.q.soru)))).map((x, i) => ({ q: x.q, n: 1000 + i, eski: true, konu: x.konu, kavramAd: x.kavram.ad }))],
       kicker: it => it.eski ? `<span class="eski-etiket">${ICON.tekrar}Eski konudan · ${konuNoOf(it.konu)}. konu</span>` : "Konu testi",
       kavram: it => it.eski ? ((S.cache[it.konu] || {}).kavramlar || []).find(x => x.ad === it.kavramAd) || null : it.q.kavram ? d.kavramlar.find(x => x.ad === it.q.kavram) || null : null,

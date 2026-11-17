@@ -385,6 +385,15 @@
    ],
    "bolge": [
     "“ile” anlamında kullanılmıştır"
+   ],
+   "ikiz": "i1",
+   "vurgu": [
+    "kısa çizgi",
+    "“ile” anlamında"
+   ],
+   "ne": [
+    "Kısa çizginin “ile” anlamında geçtiği cümleyi",
+    "Eğik çizginin adreste geçtiği cümleyi"
    ]
   },
   {
@@ -465,6 +474,14 @@
    ],
    "bolge": [
     "bir ekin farklı biçimlerini göstermektedir"
+   ],
+   "ikiz": "i2",
+   "vurgu": [
+    "ekin farklı biçimlerini"
+   ],
+   "ne": [
+    "Bir ekin biçimlerini gösteren eğik çizgiyi",
+    "Bir tarihi gösteren eğik çizgiyi"
    ]
   },
   {
@@ -484,9 +501,13 @@
    "bolge": [
     "yanlış kullanılmıştır"
    ],
+   "ikiz": "i3",
    "vurgu": [
-    "Hangi cümlede",
-    "yanlış"
+    "yanlış kullanılmıştır"
+   ],
+   "ne": [
+    "İşaretin yanlış kullanıldığı cümleyi",
+    "İşaretin doğru kullanıldığı cümleyi"
    ]
   },
   {
@@ -637,6 +658,85 @@
     "hangisi söylenemez"
    ],
    "serit": "Davetiyede yazanlarla çelişen yargı"
+  },
+  {
+   "soru": "Hangi cümlede eğik çizgi adreste kullanılmıştır?",
+   "secenekler": [
+    "Türk-Japon dostluğu çok eskidir.",
+    "Öğretmen kelimeyi a-ğaç diye heceledi.",
+    "Adresi Kızılay/Ankara diye yazdı."
+   ],
+   "dogru": 2,
+   "ipucu": "Adreste semt ile şehir arasına hangi işaret konuyordu?",
+   "aciklama": "Adreste semt ile şehir arasına eğik çizgi konur: Kızılay/Ankara (s. 163).",
+   "kavram": "Eğik Çizgi: Adres",
+   "ikiz": "i1",
+   "vurgu": [
+    "eğik çizgi",
+    "adreste"
+   ],
+   "ne": [
+    "Eğik çizginin adreste geçtiği cümleyi",
+    "Kısa çizginin “ile” anlamında geçtiği cümleyi"
+   ],
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "eğik çizgi adreste kullanılmıştır"
+   ]
+  },
+  {
+   "soru": "Hangisinde eğik çizgi bir tarihi göstermektedir?",
+   "secenekler": [
+    "-madan/-meden",
+    "Kurtuluş/Ankara",
+    "12/04/2025"
+   ],
+   "dogru": 2,
+   "ipucu": "Gün, ay ve yıl hangisinde var?",
+   "aciklama": "12/04/2025 gün, ay ve yılı gösterir: 12 Nisan 2025 (s. 163).",
+   "kavram": "Eğik Çizgi: Tarih",
+   "ikiz": "i2",
+   "vurgu": [
+    "tarihi"
+   ],
+   "ne": [
+    "Bir tarihi gösteren eğik çizgiyi",
+    "Bir ekin biçimlerini gösteren eğik çizgiyi"
+   ],
+   "tetik": [
+    "Hangisinde"
+   ],
+   "bolge": [
+    "eğik çizgi bir tarihi göstermektedir"
+   ]
+  },
+  {
+   "soru": "Hangi cümlede işaret doğru kullanılmıştır?",
+   "secenekler": [
+    "Toplantı 10.00/12.00 arasında yapılacak.",
+    "İstanbul/İzmir otobüsü kalktı.",
+    "Mektubu 05/09/2026 tarihinde yazdım."
+   ],
+   "dogru": 2,
+   "ipucu": "Saat aralığı ve iki şehir arası hangi işaretle yazılıyordu?",
+   "aciklama": "Tarihte eğik çizgi kullanılır. Saat aralığı ve iki şehir arası kısa çizgiyle yazılır: 10.00-12.00, İstanbul-İzmir (s. 142, 163).",
+   "kavram": "Kısa Çizgi mi, Eğik Çizgi mi?",
+   "ikiz": "i3",
+   "vurgu": [
+    "doğru kullanılmıştır"
+   ],
+   "ne": [
+    "İşaretin doğru kullanıldığı cümleyi",
+    "İşaretin yanlış kullanıldığı cümleyi"
+   ],
+   "tetik": [
+    "Hangi cümlede"
+   ],
+   "bolge": [
+    "işaret doğru kullanılmıştır"
+   ]
   }
  ],
  "dikkat": true,
@@ -799,5 +899,6 @@
     "eğik çizgilerin ne gösterdiğini yazınız"
    ]
   }
- ]
+ ],
+ "testSoru": 10
 }
